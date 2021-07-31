@@ -2,65 +2,63 @@ package typings.sendgrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Asm extends StObject {
     
-    var asm: js.Any = js.native
+    var asm: js.Any
     
-    var attachments: js.Array[_] = js.native
+    var attachments: js.Array[js.Any]
     
-    var batch_id: String = js.native
+    var batch_id: String
     
-    var categories: js.Array[_] = js.native
+    var categories: js.Array[js.Any]
     
-    var content: String = js.native
+    var content: String
     
-    var custom_args: js.Array[_] = js.native
+    var custom_args: js.Array[js.Any]
     
-    var from: js.Any = js.native
+    var from: js.Any
     
-    var headers: js.Array[_] = js.native
+    var headers: js.Array[js.Any]
     
-    var ip_pool_name: String = js.native
+    var ip_pool_name: String
     
-    var mail_settings: js.Any = js.native
+    var mail_settings: js.Any
     
-    var personalizations: js.Array[_] = js.native
+    var personalizations: js.Array[js.Any]
     
-    var reply_to: js.Any = js.native
+    var reply_to: js.Any
     
-    var sections: js.Array[_] = js.native
+    var sections: js.Array[js.Any]
     
-    var send_at: Double = js.native
+    var send_at: Double
     
-    var subject: String = js.native
+    var subject: String
     
-    var template_id: String = js.native
+    var template_id: String
     
-    var tracking_settings: js.Any = js.native
+    var tracking_settings: js.Any
   }
   object Asm {
     
     @scala.inline
     def apply(
       asm: js.Any,
-      attachments: js.Array[_],
+      attachments: js.Array[js.Any],
       batch_id: String,
-      categories: js.Array[_],
+      categories: js.Array[js.Any],
       content: String,
-      custom_args: js.Array[_],
+      custom_args: js.Array[js.Any],
       from: js.Any,
-      headers: js.Array[_],
+      headers: js.Array[js.Any],
       ip_pool_name: String,
       mail_settings: js.Any,
-      personalizations: js.Array[_],
+      personalizations: js.Array[js.Any],
       reply_to: js.Any,
-      sections: js.Array[_],
+      sections: js.Array[js.Any],
       send_at: Double,
       subject: String,
       template_id: String,
@@ -77,7 +75,7 @@ object anon {
       def setAsm(value: js.Any): Self = StObject.set(x, "asm", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
@@ -86,7 +84,7 @@ object anon {
       def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCategories(value: js.Array[_]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      def setCategories(value: js.Array[js.Any]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCategoriesVarargs(value: js.Any*): Self = StObject.set(x, "categories", js.Array(value :_*))
@@ -95,7 +93,7 @@ object anon {
       def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCustom_args(value: js.Array[_]): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
+      def setCustom_args(value: js.Array[js.Any]): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustom_argsVarargs(value: js.Any*): Self = StObject.set(x, "custom_args", js.Array(value :_*))
@@ -104,7 +102,7 @@ object anon {
       def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
@@ -116,7 +114,7 @@ object anon {
       def setMail_settings(value: js.Any): Self = StObject.set(x, "mail_settings", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPersonalizations(value: js.Array[_]): Self = StObject.set(x, "personalizations", value.asInstanceOf[js.Any])
+      def setPersonalizations(value: js.Array[js.Any]): Self = StObject.set(x, "personalizations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPersonalizationsVarargs(value: js.Any*): Self = StObject.set(x, "personalizations", js.Array(value :_*))
@@ -125,7 +123,7 @@ object anon {
       def setReply_to(value: js.Any): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSections(value: js.Array[_]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      def setSections(value: js.Array[js.Any]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSectionsVarargs(value: js.Any*): Self = StObject.set(x, "sections", js.Array(value :_*))
@@ -144,18 +142,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Bcc extends StObject {
     
-    var bcc: js.Any = js.native
+    var bcc: js.Any
     
-    var bypass_list_management: js.Any = js.native
+    var bypass_list_management: js.Any
     
-    var footer: js.Any = js.native
+    var footer: js.Any
     
-    var sandbox_mode: js.Any = js.native
+    var sandbox_mode: js.Any
     
-    var spam_check: js.Any = js.native
+    var spam_check: js.Any
   }
   object Bcc {
     
@@ -191,24 +188,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Cc extends StObject {
     
-    var bcc: js.Any = js.native
+    var bcc: js.Any
     
-    var cc: js.Any = js.native
+    var cc: js.Any
     
-    var custom_args: js.Any = js.native
+    var custom_args: js.Any
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var send_at: Double = js.native
+    var send_at: Double
     
-    var subject: String = js.native
+    var subject: String
     
-    var substitutions: js.Any = js.native
+    var substitutions: js.Any
     
-    var to: js.Any = js.native
+    var to: js.Any
   }
   object Cc {
     
@@ -256,16 +252,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Clicktracking extends StObject {
     
-    var click_tracking: js.Any = js.native
+    var click_tracking: js.Any
     
-    var ganalytics: js.Any = js.native
+    var ganalytics: js.Any
     
-    var open_tracking: js.Any = js.native
+    var open_tracking: js.Any
     
-    var subscription_tracking: js.Any = js.native
+    var subscription_tracking: js.Any
   }
   object Clicktracking {
     
@@ -292,18 +287,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var content_id: String = js.native
+    var content_id: String
     
-    var disposition: String = js.native
+    var disposition: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Content {
     
@@ -334,12 +328,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.Any = js.native
+    var email: js.Any
     
-    var enable: Boolean = js.native
+    var enable: Boolean
   }
   object Email {
     
@@ -360,12 +353,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Enable extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var enable_text: Boolean = js.native
+    var enable_text: Boolean
   }
   object Enable {
     
@@ -386,10 +378,9 @@ object anon {
     }
   }
   
-  @js.native
   trait EnableBoolean extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
   }
   object EnableBoolean {
     
@@ -407,16 +398,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var html: String = js.native
+    var html: String
     
-    var substitution_tag: String = js.native
+    var substitution_tag: String
     
-    var text: String = js.native
+    var text: String
   }
   object Html {
     
@@ -443,14 +433,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Posttourl extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var post_to_url: String = js.native
+    var post_to_url: String
     
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object Posttourl {
     
@@ -474,12 +463,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Substitutiontag extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var substitution_tag: String = js.native
+    var substitution_tag: String
   }
   object Substitutiontag {
     
@@ -500,14 +488,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var html: String = js.native
+    var html: String
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     
@@ -531,20 +518,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Utmcampaign extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var utm_campaign: String = js.native
+    var utm_campaign: String
     
-    var utm_content: String = js.native
+    var utm_content: String
     
-    var utm_medium: String = js.native
+    var utm_medium: String
     
-    var utm_source: String = js.native
+    var utm_source: String
     
-    var utm_term: String = js.native
+    var utm_term: String
   }
   object Utmcampaign {
     

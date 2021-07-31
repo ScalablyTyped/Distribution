@@ -7,10 +7,13 @@ import typings.std.AddEventListenerOptions
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("event-iterator/lib/dom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("event-iterator/lib/dom", JSImport.Default)
   @js.native
@@ -28,16 +31,12 @@ object mod {
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
   }
   
-  @JSImport("event-iterator/lib/dom", "subscribe")
-  @js.native
-  def subscribe(event: String): typings.eventIterator.eventIteratorMod.EventIterator[Event] = js.native
-  @JSImport("event-iterator/lib/dom", "subscribe")
-  @js.native
-  def subscribe(event: String, options: js.UndefOr[scala.Nothing], evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = js.native
-  @JSImport("event-iterator/lib/dom", "subscribe")
-  @js.native
-  def subscribe(event: String, options: AddEventListenerOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = js.native
-  @JSImport("event-iterator/lib/dom", "subscribe")
-  @js.native
-  def subscribe(event: String, options: AddEventListenerOptions, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = js.native
+  @scala.inline
+  def subscribe(event: String): typings.eventIterator.eventIteratorMod.EventIterator[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  @scala.inline
+  def subscribe(event: String, options: Unit, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  @scala.inline
+  def subscribe(event: String, options: AddEventListenerOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  @scala.inline
+  def subscribe(event: String, options: AddEventListenerOptions, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
 }

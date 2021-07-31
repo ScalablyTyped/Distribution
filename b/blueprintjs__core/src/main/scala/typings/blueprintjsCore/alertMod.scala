@@ -12,7 +12,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertMod {
@@ -50,9 +49,9 @@ object alertMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IAlertProps
-    extends IOverlayLifecycleProps
+    extends StObject
+       with IOverlayLifecycleProps
        with IProps {
     
     /**
@@ -60,41 +59,41 @@ object alertMod {
       * If this prop is enabled, then either `onCancel` or `onClose` must also be defined.
       * @default false
       */
-    var canEscapeKeyCancel: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyCancel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether clicking outside the Alert should cancel the alert.
       * If this prop is enabled, then either `onCancel` or `onClose` must also be defined.
       * @default false
       */
-    var canOutsideClickCancel: js.UndefOr[Boolean] = js.native
+    var canOutsideClickCancel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The text for the cancel button.
       * If this prop is defined, then either `onCancel` or `onClose` must also be defined.
       */
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * The text for the confirm (right-most) button.
       * This button will always appear, and uses the value of the `intent` prop below.
       * @default "OK"
       */
-    var confirmButtonText: js.UndefOr[String] = js.native
+    var confirmButtonText: js.UndefOr[String] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to display on the left side. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /**
       * The intent to be applied to the confirm (right-most) button and the icon (if provided).
       */
-    var intent: js.UndefOr[Intent] = js.native
+    var intent: js.UndefOr[Intent] = js.undefined
     
     /**
       * Toggles the visibility of the alert.
       * This prop is required because the component is controlled.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Handler invoked when the alert is canceled. Alerts can be **canceled** in the following ways:
@@ -104,7 +103,7 @@ object alertMod {
       *
       * If any of the `cancel` props are defined, then either `onCancel` or `onClose` must be defined.
       */
-    var onCancel: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
     
     /**
       * Handler invoked when the Alert is confirmed or canceled; see `onConfirm` and `onCancel` for more details.
@@ -117,26 +116,26 @@ object alertMod {
           /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Handler invoked when the confirm button is clicked. Alerts can be **confirmed** in the following ways:
       * - clicking the confirm button
       * - focusing on the confirm button and pressing `enter` or `space`
       */
-    var onConfirm: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
+    var onConfirm: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
     
     /**
       * The container element into which the overlay renders its contents, when `usePortal` is `true`.
       * This prop is ignored if `usePortal` is `false`.
       * @default document.body
       */
-    var portalContainer: js.UndefOr[HTMLElement] = js.native
+    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * CSS styles to apply to the alert.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
@@ -145,7 +144,7 @@ object alertMod {
       * transitions with new transitions of a different length.
       * @default 300
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object IAlertProps {
     

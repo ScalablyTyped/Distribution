@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceconsumermanagementMod {
+  
+  @JSImport("googleapis/build/src/apis/serviceconsumermanagement", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object serviceconsumermanagementMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/serviceconsumermanagement", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/serviceconsumermanagement", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object serviceconsumermanagementMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/serviceconsumermanagement", "serviceconsumermanagement")
-  @js.native
-  def serviceconsumermanagement(options: Options): Serviceconsumermanagement = js.native
-  @JSImport("googleapis/build/src/apis/serviceconsumermanagement", "serviceconsumermanagement")
-  @js.native
-  def serviceconsumermanagement_v1(version: v1): Serviceconsumermanagement = js.native
+  @scala.inline
+  def serviceconsumermanagement(options: Options): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(options.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
+  
+  @scala.inline
+  def serviceconsumermanagement_v1(version: v1): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(version.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
 }

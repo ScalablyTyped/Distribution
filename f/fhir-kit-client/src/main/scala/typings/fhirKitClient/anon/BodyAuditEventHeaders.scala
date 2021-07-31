@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.AuditEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyAuditEventHeaders extends StObject {
   
-  var body: AuditEvent = js.native
+  var body: AuditEvent
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AuditEvent = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AuditEvent
 }
 object BodyAuditEventHeaders {
   
   @scala.inline
-  def apply(body: AuditEvent, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.AuditEvent): BodyAuditEventHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: AuditEvent, id: String): BodyAuditEventHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "AuditEvent")
     __obj.asInstanceOf[BodyAuditEventHeaders]
   }
   

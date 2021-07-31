@@ -12,80 +12,76 @@ import typings.luaparse.luaparseStrings.`5Dot2`
 import typings.luaparse.luaparseStrings.`5Dot3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("luaparse", "parse")
+  @JSImport("luaparse", JSImport.Namespace)
   @js.native
-  def parse(): Parser = js.native
-  @JSImport("luaparse", "parse")
-  @js.native
-  def parse(code: String): Chunk = js.native
-  @JSImport("luaparse", "parse")
-  @js.native
-  def parse(code: String, options: PartialOptions): Chunk = js.native
-  @JSImport("luaparse", "parse")
-  @js.native
-  def parse(code: String, options: PartialOptionswaittrue): Parser = js.native
-  @JSImport("luaparse", "parse")
-  @js.native
-  def parse(options: PartialOptions): Parser = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Parser]
+  @scala.inline
+  def parse(code: String): Chunk = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[Chunk]
+  @scala.inline
+  def parse(code: String, options: PartialOptions): Chunk = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chunk]
+  @scala.inline
+  def parse(code: String, options: PartialOptionswaittrue): Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def parse(options: PartialOptions): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  
   trait Options extends StObject {
     
     /** Store comments as an array in the chunk object. */
-    var comments: Boolean = js.native
+    var comments: Boolean
     
     /**
       * Whether to allow code points ≥ U+0080 in identifiers, like LuaJIT does.
       * See 'Note on character encodings' below if you wish to use this option.
       * Note: setting luaVersion: 'LuaJIT' currently does not enable this option; this may change in the future.
       */
-    var extendedIdentifiers: `false` = js.native
+    var extendedIdentifiers: `false`
     
     /** Store location information on each syntax node. */
-    var locations: Boolean = js.native
+    var locations: Boolean
     
     /** The version of Lua the parser will target; supported values are '5.1', '5.2', '5.3' and 'LuaJIT'. */
-    var luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT = js.native
+    var luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT
     
     /**
       * A callback which will be invoked when a syntax node has been completed.
       * The node which has been created will be passed as the only parameter.
       */
-    def onCreateNode(node: Node): Unit = js.native
+    def onCreateNode(node: Node): Unit
     
     /** A callback which will be invoked when a new scope is created. */
-    def onCreateScope(): Unit = js.native
+    def onCreateScope(): Unit
     
     /** A callback which will be invoked when the current scope is destroyed. */
-    def onDestroyScope(): Unit = js.native
+    def onDestroyScope(): Unit
     
     /**
       * A callback which will be invoked when a local variable is declared.
       * The identifier will be passed as the only parameter.
       */
-    def onLocalDeclaration(identifier: Identifier): Unit = js.native
+    def onLocalDeclaration(identifier: Identifier): Unit
     
     /** Store the start and end character locations on each syntax node. */
-    var ranges: Boolean = js.native
+    var ranges: Boolean
     
     /** Track identifier scopes. */
-    var scope: Boolean = js.native
+    var scope: Boolean
     
     /** Explicitly tell the parser when the input ends. */
     @JSName("wait")
-    var wait_FOptions: Boolean = js.native
+    var wait_FOptions: Boolean
   }
   object Options {
     
     @scala.inline
     def apply(
       comments: Boolean,
-      extendedIdentifiers: `false`,
       locations: Boolean,
       luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT,
       onCreateNode: Node => Unit,
@@ -96,7 +92,7 @@ object mod {
       scope: Boolean,
       wait_ : Boolean
     ): Options = {
-      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], extendedIdentifiers = extendedIdentifiers.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], luaVersion = luaVersion.asInstanceOf[js.Any], onCreateNode = js.Any.fromFunction1(onCreateNode), onCreateScope = js.Any.fromFunction0(onCreateScope), onDestroyScope = js.Any.fromFunction0(onDestroyScope), onLocalDeclaration = js.Any.fromFunction1(onLocalDeclaration), ranges = ranges.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], extendedIdentifiers = false, locations = locations.asInstanceOf[js.Any], luaVersion = luaVersion.asInstanceOf[js.Any], onCreateNode = js.Any.fromFunction1(onCreateNode), onCreateScope = js.Any.fromFunction0(onCreateScope), onDestroyScope = js.Any.fromFunction0(onDestroyScope), onLocalDeclaration = js.Any.fromFunction1(onLocalDeclaration), ranges = ranges.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -139,14 +135,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Parser extends StObject {
     
-    def end(segment: String): Chunk = js.native
+    def end(segment: String): Chunk
     
-    def lex(): Token = js.native
+    def lex(): Token
     
-    def write(segment: String): Unit = js.native
+    def write(segment: String): Unit
   }
   object Parser {
     
@@ -170,18 +165,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var line: Double = js.native
+    var line: Double
     
-    var lineStart: Double = js.native
+    var lineStart: Double
     
-    var range: js.Tuple2[Double, Double] = js.native
+    var range: js.Tuple2[Double, Double]
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     

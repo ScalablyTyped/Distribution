@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Binding extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Binding extends StObject {
     * then this binding does not apply to the current request. However, a different role binding might grant the same role to one or more of the members in this binding. To learn which
     * resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
     */
-  var condition: js.UndefOr[Expr] = js.native
+  var condition: js.UndefOr[Expr] = js.undefined
   
   /**
     * Specifies the identities requesting access for a Cloud Platform resource. `members` can have the following values: * `allUsers`: A special identifier that represents anyone who is
@@ -28,10 +26,10 @@ trait Binding extends StObject {
     * deleted. For example, `admins@example.com?uid=123456789012345678901`. If the group is recovered, this value reverts to `group:{emailid}` and the recovered group retains the role in
     * the binding. * `domain:{domain}`: The G Suite domain (primary) that represents all the users of that domain. For example, `google.com` or `example.com`.
     */
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Role that is assigned to `members`. For example, `roles/viewer`, `roles/editor`, or `roles/owner`. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object Binding {
   

@@ -2,31 +2,29 @@ package typings.antvPathUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArcFlag extends StObject {
     
-    var arcFlag: js.Any = js.native
+    var arcFlag: js.Any
     
-    var cx: Double = js.native
+    var cx: Double
     
-    var cy: Double = js.native
+    var cy: Double
     
-    var endAngle: Double = js.native
+    var endAngle: Double
     
-    var rx: js.Any = js.native
+    var rx: js.Any
     
-    var ry: js.Any = js.native
+    var ry: js.Any
     
-    var startAngle: Double = js.native
+    var startAngle: Double
     
-    var sweepFlag: js.Any = js.native
+    var sweepFlag: js.Any
     
-    var xRotation: Double = js.native
+    var xRotation: Double
   }
   object ArcFlag {
     

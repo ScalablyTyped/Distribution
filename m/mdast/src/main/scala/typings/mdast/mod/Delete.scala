@@ -3,26 +3,25 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete
-  extends Parent
+  extends StObject
+     with Parent
      with StaticPhrasingContent {
   
   @JSName("children")
-  var children_Delete: js.Array[PhrasingContent] = js.native
+  var children_Delete: js.Array[PhrasingContent]
   
   @JSName("type")
-  var type_Delete: delete = js.native
+  var type_Delete: delete
 }
 object Delete {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], `type`: delete): Delete = {
+  def apply(children: js.Array[PhrasingContent]): Delete = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[Delete]
   }
   

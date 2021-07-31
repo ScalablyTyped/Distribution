@@ -2,46 +2,44 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutExternalModelRequest extends StObject {
   
   /**
     * The model endpoint input configuration.
     */
-  var inputConfiguration: ModelInputConfiguration = js.native
+  var inputConfiguration: ModelInputConfiguration
   
   /**
     * The IAM role used to invoke the model endpoint.
     */
-  var invokeModelEndpointRoleArn: String = js.native
+  var invokeModelEndpointRoleArn: String
   
   /**
     * The model endpoints name.
     */
-  var modelEndpoint: sageMakerEndpointIdentifier = js.native
+  var modelEndpoint: sageMakerEndpointIdentifier
   
   /**
     * The model endpoint’s status in Amazon Fraud Detector.
     */
-  var modelEndpointStatus: ModelEndpointStatus = js.native
+  var modelEndpointStatus: ModelEndpointStatus
   
   /**
     * The source of the model.
     */
-  var modelSource: ModelSource = js.native
+  var modelSource: ModelSource
   
   /**
     * The model endpoint output configuration.
     */
-  var outputConfiguration: ModelOutputConfiguration = js.native
+  var outputConfiguration: ModelOutputConfiguration
   
   /**
     * A collection of key and value pairs.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
 }
 object PutExternalModelRequest {
   

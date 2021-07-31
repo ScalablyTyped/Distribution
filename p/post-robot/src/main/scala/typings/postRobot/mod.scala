@@ -7,70 +7,58 @@ import typings.std.RegExp
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("post-robot", "on")
+  @JSImport("post-robot", JSImport.Namespace)
   @js.native
-  def on(name: String, options: HandlerType): CancelableType = js.native
-  @JSImport("post-robot", "on")
-  @js.native
-  def on(name: String, options: HandlerType, handler: HandlerType): CancelableType = js.native
-  @JSImport("post-robot", "on")
-  @js.native
-  def on(name: String, options: ServerOptionsType): CancelableType = js.native
-  @JSImport("post-robot", "on")
-  @js.native
-  def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String): ZalgoPromise[Data] = js.native
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String, options: js.UndefOr[scala.Nothing], handler: HandlerType): ZalgoPromise[Data] = js.native
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String, options: HandlerType): ZalgoPromise[Data] = js.native
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Data] = js.native
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String, options: ServerOptionsType): ZalgoPromise[Data] = js.native
-  @JSImport("post-robot", "once")
-  @js.native
-  def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Data] = js.native
+  @scala.inline
+  def on(name: String, options: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  @scala.inline
+  def on(name: String, options: HandlerType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  @scala.inline
+  def on(name: String, options: ServerOptionsType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  @scala.inline
+  def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   
-  @JSImport("post-robot", "send")
-  @js.native
-  def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = js.native
-  @JSImport("post-robot", "send")
-  @js.native
-  def send(
-    win: CrossDomainWindowType,
-    name: String,
-    data: js.UndefOr[scala.Nothing],
-    options: FireAndForgetRequestOptionsType with RegularRequestOptionsType
-  ): ZalgoPromise[ResponseMessageEvent] = js.native
-  @JSImport("post-robot", "send")
-  @js.native
-  def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = js.native
-  @JSImport("post-robot", "send")
-  @js.native
+  @scala.inline
+  def once(name: String): ZalgoPromise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Data]]
+  @scala.inline
+  def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  @scala.inline
+  def once(name: String, options: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  @scala.inline
+  def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  @scala.inline
+  def once(name: String, options: ServerOptionsType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  @scala.inline
+  def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  
+  @scala.inline
+  def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  @scala.inline
+  def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  @scala.inline
   def send(
     win: CrossDomainWindowType,
     name: String,
     data: js.Object,
-    options: FireAndForgetRequestOptionsType with RegularRequestOptionsType
-  ): ZalgoPromise[ResponseMessageEvent] = js.native
+    options: FireAndForgetRequestOptionsType & RegularRequestOptionsType
+  ): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  @scala.inline
+  def send(
+    win: CrossDomainWindowType,
+    name: String,
+    data: Unit,
+    options: FireAndForgetRequestOptionsType & RegularRequestOptionsType
+  ): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
   
-  @js.native
   trait CancelableType extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object CancelableType {
     
@@ -95,14 +83,13 @@ object mod {
   
   type ErrorHandlerType = js.Function1[/* err */ js.Any, Unit]
   
-  @js.native
   trait FireAndForgetRequestOptionsType extends StObject {
     
-    var domain: js.UndefOr[DomainMatcher] = js.native
+    var domain: js.UndefOr[DomainMatcher] = js.undefined
     
-    var fireAndForget: js.UndefOr[`true`] = js.native
+    var fireAndForget: js.UndefOr[`true`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object FireAndForgetRequestOptionsType {
     
@@ -145,14 +132,13 @@ object mod {
     Unit | ZalgoPromise[js.Any]
   ]
   
-  @js.native
   trait RegularRequestOptionsType extends StObject {
     
-    var domain: js.UndefOr[DomainMatcher] = js.native
+    var domain: js.UndefOr[DomainMatcher] = js.undefined
     
-    var fireAndForget: js.UndefOr[`false`] = js.native
+    var fireAndForget: js.UndefOr[`false`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RegularRequestOptionsType {
     
@@ -188,20 +174,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseMessageEvent extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var origin: String = js.native
+    var origin: String
     
-    var source: CrossDomainWindowType = js.native
+    var source: CrossDomainWindowType
   }
   object ResponseMessageEvent {
     
     @scala.inline
     def apply(data: js.Object, origin: String): ResponseMessageEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], source = null)
       __obj.asInstanceOf[ResponseMessageEvent]
     }
     
@@ -222,22 +207,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerOptionsType extends StObject {
     
-    var domain: js.UndefOr[DomainMatcher] = js.native
+    var domain: js.UndefOr[DomainMatcher] = js.undefined
     
-    var errorHandler: js.UndefOr[ErrorHandlerType] = js.native
+    var errorHandler: js.UndefOr[ErrorHandlerType] = js.undefined
     
-    var errorOnClose: js.UndefOr[Boolean] = js.native
+    var errorOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var handler: js.UndefOr[HandlerType] = js.native
+    var handler: js.UndefOr[HandlerType] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
-    var window: js.UndefOr[CrossDomainWindowType] = js.native
+    var window: js.UndefOr[CrossDomainWindowType] = js.undefined
   }
   object ServerOptionsType {
     

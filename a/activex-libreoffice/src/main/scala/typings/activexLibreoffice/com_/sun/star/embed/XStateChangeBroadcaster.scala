@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** broadcasts message in case embedded object object changes it's state. */
-@js.native
-trait XStateChangeBroadcaster extends XInterface {
+trait XStateChangeBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive events about states change */
-  def addStateChangeListener(xListener: XStateChangeListener): Unit = js.native
+  def addStateChangeListener(xListener: XStateChangeListener): Unit
   
   /** removes the specified listener */
-  def removeStateChangeListener(xListener: XStateChangeListener): Unit = js.native
+  def removeStateChangeListener(xListener: XStateChangeListener): Unit
 }
 object XStateChangeBroadcaster {
   

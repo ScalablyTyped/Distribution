@@ -12,7 +12,7 @@ cookies module for egg
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 5 |
-| # downloads        | 382618 |
+| # downloads        | 689464 |
 | # stars            | 0 |
 
 ## Links

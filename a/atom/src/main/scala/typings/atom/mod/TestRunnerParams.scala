@@ -2,10 +2,8 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRunnerParams extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait TestRunnerParams extends StObject {
     *  No atom global will be explicitly assigned, but you can assign one in your
     *  runner if desired.
     */
-  def buildAtomEnvironment(options: BuildEnvironmentOptions): AtomEnvironment = js.native
+  def buildAtomEnvironment(options: BuildEnvironmentOptions): AtomEnvironment
   
   /**
     *  A function that builds a default instance of the application delegate, suitable
     *  to be passed as the applicationDelegate parameter to buildAtomEnvironment.
     */
-  def buildDefaultApplicationDelegate(): js.Object = js.native
+  def buildDefaultApplicationDelegate(): js.Object
   
   /**
     *  A boolean indicating whether or not the tests are being run from the command
     *  line via atom --test.
     */
-  var headless: Boolean = js.native
+  var headless: Boolean
   
   /** An optional path to a log file to which test output should be logged. */
-  var logFile: String = js.native
+  var logFile: String
   
   /** An array of paths to tests to run. Could be paths to files or directories. */
-  var testPaths: js.Array[String] = js.native
+  var testPaths: js.Array[String]
 }
 object TestRunnerParams {
   

@@ -2,14 +2,12 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the FHIR BigQuery schema. Determines how the server
   * generates the schema.
   */
-@js.native
 trait SchemaSchemaConfig extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaSchemaConfig extends StObject {
     * called `concept.concept` but not `concept.concept.concept`. If not
     * specified or set to 0, the server will use the default value 2.
     */
-  var recursiveStructureDepth: js.UndefOr[String] = js.native
+  var recursiveStructureDepth: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the output schema type. If unspecified, the default is
     * `LOSSLESS`.
     */
-  var schemaType: js.UndefOr[String] = js.native
+  var schemaType: js.UndefOr[String] = js.undefined
 }
 object SchemaSchemaConfig {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStackRequest extends StObject {
   
   /**
     * The list of interface VPC endpoint (interface endpoint) objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
     */
-  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.native
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
   
   /**
     * The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
     */
-  var ApplicationSettings: js.UndefOr[typings.awsSdk.appstreamMod.ApplicationSettings] = js.native
+  var ApplicationSettings: js.UndefOr[typings.awsSdk.appstreamMod.ApplicationSettings] = js.undefined
   
   /**
     * The stack attributes to delete.
     */
-  var AttributesToDelete: js.UndefOr[StackAttributes] = js.native
+  var AttributesToDelete: js.UndefOr[StackAttributes] = js.undefined
   
   /**
     * Deletes the storage connectors currently enabled for the stack.
     */
-  var DeleteStorageConnectors: js.UndefOr[Boolean] = js.native
+  var DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The description to display.
     */
-  var Description: js.UndefOr[typings.awsSdk.appstreamMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appstreamMod.Description] = js.undefined
   
   /**
     * The stack name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.appstreamMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.appstreamMod.DisplayName] = js.undefined
   
   /**
     * The domains where AppStream 2.0 streaming sessions can be embedded in an iframe. You must approve the domains that you want to host embedded AppStream 2.0 streaming sessions. 
     */
-  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.native
+  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.undefined
   
   /**
     * The URL that users are redirected to after they choose the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
     */
-  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.native
+  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.undefined
   
   /**
     * The name of the stack.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The URL that users are redirected to after their streaming session ends.
     */
-  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.native
+  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.undefined
   
   /**
     * The storage connectors to enable.
     */
-  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.native
+  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
     * The actions that are enabled or disabled for users during their streaming sessions. By default, these actions are enabled.
     */
-  var UserSettings: js.UndefOr[UserSettingList] = js.native
+  var UserSettings: js.UndefOr[UserSettingList] = js.undefined
 }
 object UpdateStackRequest {
   

@@ -2,17 +2,15 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blocksize extends StObject {
   
   /**
     * Blocksize for pixelate
     * @default 4
     */
-  var blocksize: js.UndefOr[Double] = js.native
+  var blocksize: js.UndefOr[Double] = js.undefined
 }
 object Blocksize {
   

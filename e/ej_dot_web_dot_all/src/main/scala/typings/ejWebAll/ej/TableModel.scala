@@ -2,41 +2,39 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableModel extends StObject {
   
-  def bindTo(element: js.Any): Unit = js.native
+  def bindTo(element: js.Any): Unit
   
-  def get(index: Double): Unit = js.native
+  def get(index: Double): Unit
   
-  def getChanges(): Changes = js.native
+  def getChanges(): Changes
   
-  def insert(json: js.Any): Unit = js.native
+  def insert(json: js.Any): Unit
   
-  def isDirty(): Boolean = js.native
+  def isDirty(): Boolean
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def off(eventName: String, handler: js.Any): Unit = js.native
+  def off(eventName: String, handler: js.Any): Unit
   
-  def on(eventName: String, handler: js.Any): Unit = js.native
+  def on(eventName: String, handler: js.Any): Unit
   
-  def rejectChanges(): Unit = js.native
+  def rejectChanges(): Unit
   
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
   
-  def saveChanges(): Unit = js.native
+  def saveChanges(): Unit
   
-  def setDataManager(dataManager: DataManager): Unit = js.native
+  def setDataManager(dataManager: DataManager): Unit
   
-  def setDirty(dirty: js.Any, model: js.Any): Unit = js.native
+  def setDirty(dirty: js.Any, model: js.Any): Unit
   
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any]
   
-  def update(value: js.Any): Unit = js.native
+  def update(value: js.Any): Unit
 }
 object TableModel {
   
@@ -55,7 +53,7 @@ object TableModel {
     saveChanges: () => Unit,
     setDataManager: DataManager => Unit,
     setDirty: (js.Any, js.Any) => Unit,
-    toArray: () => js.Array[_],
+    toArray: () => js.Array[js.Any],
     update: js.Any => Unit
   ): TableModel = {
     val __obj = js.Dynamic.literal(bindTo = js.Any.fromFunction1(bindTo), get = js.Any.fromFunction1(get), getChanges = js.Any.fromFunction0(getChanges), insert = js.Any.fromFunction1(insert), isDirty = js.Any.fromFunction0(isDirty), length = js.Any.fromFunction0(length), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), rejectChanges = js.Any.fromFunction0(rejectChanges), remove = js.Any.fromFunction1(remove), saveChanges = js.Any.fromFunction0(saveChanges), setDataManager = js.Any.fromFunction1(setDataManager), setDirty = js.Any.fromFunction2(setDirty), toArray = js.Any.fromFunction0(toArray), update = js.Any.fromFunction1(update))
@@ -105,7 +103,7 @@ object TableModel {
     def setSetDirty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToArray(value: () => js.Array[_]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
     def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))

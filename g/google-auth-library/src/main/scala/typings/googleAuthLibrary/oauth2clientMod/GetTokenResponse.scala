@@ -4,21 +4,19 @@ import typings.gaxios.commonMod.GaxiosResponse
 import typings.googleAuthLibrary.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTokenResponse extends StObject {
   
-  var res: GaxiosResponse[_] | Null = js.native
+  var res: GaxiosResponse[js.Any] | Null
   
-  var tokens: Credentials = js.native
+  var tokens: Credentials
 }
 object GetTokenResponse {
   
   @scala.inline
   def apply(tokens: Credentials): GetTokenResponse = {
-    val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any], res = null)
     __obj.asInstanceOf[GetTokenResponse]
   }
   
@@ -26,7 +24,7 @@ object GetTokenResponse {
   implicit class GetTokenResponseMutableBuilder[Self <: GetTokenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setRes(value: GaxiosResponse[_]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResNull: Self = StObject.set(x, "res", null)

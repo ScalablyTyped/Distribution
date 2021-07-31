@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies the location of a custom souce.
   */
-@js.native
 trait SchemaCustomSourceLocation extends StObject {
   
   /**
     * Whether this source is stateful.
     */
-  var stateful: js.UndefOr[Boolean] = js.native
+  var stateful: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCustomSourceLocation {
   

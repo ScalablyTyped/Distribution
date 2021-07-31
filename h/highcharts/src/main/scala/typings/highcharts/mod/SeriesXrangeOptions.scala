@@ -3,12 +3,12 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.xrange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesXrangeOptions extends PlotXrangeOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesXrangeOptions
+  extends StObject
+     with PlotXrangeOptions {
   
   /**
     * (Highcharts, Highstock, Gantt) An array of data points for the series.
@@ -18,55 +18,55 @@ trait SeriesXrangeOptions extends PlotXrangeOptions {
     * configuration objects as seen below. (see online documentation for
     * example)
     */
-  var data: js.UndefOr[js.Array[XrangePointOptionsObject]] = js.native
+  var data: js.UndefOr[js.Array[XrangePointOptionsObject]] = js.undefined
   
   /**
     * Not available
     */
-  var depth: js.UndefOr[scala.Nothing] = js.native
+  var depth: Unit
   
   /**
     * Not available
     */
-  var edgeColor: js.UndefOr[scala.Nothing] = js.native
+  var edgeColor: Unit
   
   /**
     * Not available
     */
-  var edgeWidth: js.UndefOr[scala.Nothing] = js.native
+  var edgeWidth: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -74,14 +74,14 @@ trait SeriesXrangeOptions extends PlotXrangeOptions {
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | xrange = js.native
+  var `type`: String | xrange
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -89,7 +89,7 @@ trait SeriesXrangeOptions extends PlotXrangeOptions {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -97,13 +97,13 @@ trait SeriesXrangeOptions extends PlotXrangeOptions {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesXrangeOptions {
   
   @scala.inline
-  def apply(`type`: String | xrange): SeriesXrangeOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(depth: Unit, edgeColor: Unit, edgeWidth: Unit, `type`: String | xrange): SeriesXrangeOptions = {
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], edgeColor = edgeColor.asInstanceOf[js.Any], edgeWidth = edgeWidth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesXrangeOptions]
   }
@@ -119,6 +119,15 @@ object SeriesXrangeOptions {
     
     @scala.inline
     def setDataVarargs(value: XrangePointOptionsObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    
+    @scala.inline
+    def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEdgeColor(value: Unit): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEdgeWidth(value: Unit): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

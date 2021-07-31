@@ -2,23 +2,21 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadableSpecification extends StObject {
   
   /** A Database. */
-  var db: Database = js.native
+  var db: Database
   
   /** Whether the object is a materialized view (default false). */
-  var is_matview: js.UndefOr[Boolean] = js.native
+  var is_matview: js.UndefOr[Boolean] = js.undefined
   
   /** The table or view's name. */
-  var name: String = js.native
+  var name: String
   
   /** The name of the schema owning the table or view. */
-  var schema: String = js.native
+  var schema: String
 }
 object ReadableSpecification {
   

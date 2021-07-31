@@ -7,7 +7,6 @@ import typings.postmanCollection.anon.Format
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -37,9 +36,9 @@ class Response protected () extends Property[ResponseDefinition] {
   var headers: HeaderList = js.native
   
   def json(): js.Any = js.native
-  def json(reviver: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
   def json(reviver: js.Any): js.Any = js.native
   def json(reviver: js.Any, strict: Boolean): js.Any = js.native
+  def json(reviver: Unit, strict: Boolean): js.Any = js.native
   
   var originalRequest: js.UndefOr[Request | RequestDefinition] = js.native
   
@@ -62,11 +61,13 @@ class Response protected () extends Property[ResponseDefinition] {
 /* static members */
 object Response {
   
-  @JSImport("postman-collection", "Response.createFromNode")
+  @JSImport("postman-collection", "Response")
   @js.native
-  def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("postman-collection", "Response.isResponse")
-  @js.native
-  def isResponse(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromNode")(response.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[Response]
+  
+  @scala.inline
+  def isResponse(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

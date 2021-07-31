@@ -11,8 +11,8 @@ Gulp plugin for compiling Pug templates
 | Full name          | gulp-pug |
 | Keywords           | jade, pug, gulpplugin, stream, compile |
 | # releases         | 1 |
-| # dependents       | 156 |
-| # downloads        | 833009 |
+| # dependents       | 173 |
+| # downloads        | 833180 |
 | # stars            | 55 |
 
 ## Links

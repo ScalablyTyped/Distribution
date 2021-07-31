@@ -6,19 +6,19 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
+import typings.std.Node
 import typings.strange.strangeNumbers.`-1`
 import typings.strange.strangeNumbers.`0`
 import typings.strange.strangeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("strange", JSImport.Namespace)
   @js.native
-  val ^ : RangeConstructor = js.native
+  val ^ : js.Object & RangeConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("strange", JSImport.Namespace)
@@ -30,20 +30,51 @@ object mod extends Shortcut {
     * @param bounds Range's bounds.
     */
   class Class[T /* <: Endpoint */] ()
-    extends typings.std.Range {
+    extends StObject
+       with typings.std.Range {
     def this(begin: T) = this()
     def this(begin: T, end: T) = this()
-    def this(begin: js.UndefOr[scala.Nothing], end: T) = this()
     def this(begin: Null, end: T) = this()
+    def this(begin: Unit, end: T) = this()
     def this(begin: T, end: T, bounds: Bounds) = this()
-    def this(begin: T, end: js.UndefOr[scala.Nothing], bounds: Bounds) = this()
     def this(begin: T, end: Null, bounds: Bounds) = this()
-    def this(begin: js.UndefOr[scala.Nothing], end: T, bounds: Bounds) = this()
-    def this(begin: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], bounds: Bounds) = this()
-    def this(begin: js.UndefOr[scala.Nothing], end: Null, bounds: Bounds) = this()
+    def this(begin: T, end: Unit, bounds: Bounds) = this()
     def this(begin: Null, end: T, bounds: Bounds) = this()
-    def this(begin: Null, end: js.UndefOr[scala.Nothing], bounds: Bounds) = this()
     def this(begin: Null, end: Null, bounds: Bounds) = this()
+    def this(begin: Null, end: Unit, bounds: Bounds) = this()
+    def this(begin: Unit, end: T, bounds: Bounds) = this()
+    def this(begin: Unit, end: Null, bounds: Bounds) = this()
+    def this(begin: Unit, end: Unit, bounds: Bounds) = this()
+    
+    /**
+      * Returns true if range is collapsed, and false otherwise.
+      */
+    /* CompleteClass */
+    override val collapsed: Boolean = js.native
+    
+    /**
+      * Returns range's end node.
+      */
+    /* CompleteClass */
+    override val endContainer: Node = js.native
+    
+    /**
+      * Returns range's end offset.
+      */
+    /* CompleteClass */
+    override val endOffset: Double = js.native
+    
+    /**
+      * Returns range's start node.
+      */
+    /* CompleteClass */
+    override val startContainer: Node = js.native
+    
+    /**
+      * Returns range's start offset.
+      */
+    /* CompleteClass */
+    override val startOffset: Double = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -238,7 +269,8 @@ object mod extends Shortcut {
   
   @js.native
   trait RangeConstructor
-    extends /**
+    extends StObject
+       with /**
     *
     * @param begin Range's beginning, or left endpoint.
     * @param end Range's end, or right endpoint.
@@ -247,13 +279,13 @@ object mod extends Shortcut {
   Instantiable0[typings.std.Range]
        with Instantiable1[/* begin */ Endpoint, typings.std.Range]
        with Instantiable2[
-          js.UndefOr[(/* begin */ Endpoint) | (/* begin */ Null)], 
+          (/* begin */ Endpoint) | (/* begin */ Null) | (/* begin */ Unit), 
           /* end */ Endpoint, 
           typings.std.Range
         ]
        with Instantiable3[
-          js.UndefOr[(/* begin */ Endpoint) | (/* begin */ Null)], 
-          js.UndefOr[(/* end */ Endpoint) | (/* end */ Null)], 
+          (/* begin */ Endpoint) | (/* begin */ Null) | (/* begin */ Unit), 
+          (/* end */ Endpoint) | (/* end */ Null) | (/* end */ Unit), 
           /* bounds */ Bounds, 
           typings.std.Range
         ] {
@@ -268,16 +300,16 @@ object mod extends Shortcut {
     def apply[T /* <: Endpoint */](begin: T): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: T, end: T): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: T, end: T, bounds: Bounds): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: T, end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: T, end: Null, bounds: Bounds): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: T): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: T, bounds: Bounds): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: Null, bounds: Bounds): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: T, end: Unit, bounds: Bounds): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: Null, end: T): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: Null, end: T, bounds: Bounds): typings.std.Range = js.native
-    def apply[T /* <: Endpoint */](begin: Null, end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
     def apply[T /* <: Endpoint */](begin: Null, end: Null, bounds: Bounds): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: Null, end: Unit, bounds: Bounds): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: Unit, end: T): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: Unit, end: T, bounds: Bounds): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: Unit, end: Null, bounds: Bounds): typings.std.Range = js.native
+    def apply[T /* <: Endpoint */](begin: Unit, end: Unit, bounds: Bounds): typings.std.Range = js.native
     
     /**
       * Compares two range's beginnings.
@@ -361,8 +393,8 @@ object mod extends Shortcut {
     def union[U /* <: Endpoint */](a: typings.std.Range, b: typings.std.Range): typings.std.Range = js.native
   }
   
-  type _To = RangeConstructor
+  type _To = js.Object & RangeConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: RangeConstructor = ^
+  override def _to: js.Object & RangeConstructor = ^
 }

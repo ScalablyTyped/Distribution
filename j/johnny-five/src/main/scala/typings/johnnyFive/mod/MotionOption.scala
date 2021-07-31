@@ -2,13 +2,11 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotionOption extends StObject {
   
-  var pin: Double | String = js.native
+  var pin: Double | String
 }
 object MotionOption {
   

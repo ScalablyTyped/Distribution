@@ -5,25 +5,23 @@ import typings.devextreme.mod.DevExpress.ui.dxScheduler
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldData extends StObject {
   
   var cancel: js.UndefOr[
     Boolean | typings.devextreme.mod.global.Promise[Boolean] | JQueryPromise[Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var component: js.UndefOr[dxScheduler] = js.native
+  var component: js.UndefOr[dxScheduler] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var newData: js.UndefOr[js.Any] = js.native
+  var newData: js.UndefOr[js.Any] = js.undefined
   
-  var oldData: js.UndefOr[js.Any] = js.native
+  var oldData: js.UndefOr[js.Any] = js.undefined
 }
 object OldData {
   

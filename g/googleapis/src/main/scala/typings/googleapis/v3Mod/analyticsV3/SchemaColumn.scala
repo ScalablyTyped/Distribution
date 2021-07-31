@@ -3,29 +3,27 @@ package typings.googleapis.v3Mod.analyticsV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a metadata column.
   */
-@js.native
 trait SchemaColumn extends StObject {
   
   /**
     * Map of attribute name and value for this column.
     */
-  var attributes: js.UndefOr[StringDictionary[String]] = js.native
+  var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Column id.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for Analytics column.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaColumn {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequestCreatedEventMetadata extends StObject {
   
   /**
     * The commit ID of the tip of the branch specified as the destination branch when the pull request was created.
     */
-  var destinationCommitId: js.UndefOr[CommitId] = js.native
+  var destinationCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The commit ID of the most recent commit that the source branch and the destination branch have in common.
     */
-  var mergeBase: js.UndefOr[CommitId] = js.native
+  var mergeBase: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The name of the repository where the pull request was created.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
   
   /**
     * The commit ID on the source branch used when the pull request was created.
     */
-  var sourceCommitId: js.UndefOr[CommitId] = js.native
+  var sourceCommitId: js.UndefOr[CommitId] = js.undefined
 }
 object PullRequestCreatedEventMetadata {
   

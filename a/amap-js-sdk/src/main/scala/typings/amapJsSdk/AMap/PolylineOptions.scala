@@ -2,35 +2,33 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylineOptions extends StObject {
   
-  var extData: js.UndefOr[js.Any] = js.native
+  var extData: js.UndefOr[js.Any] = js.undefined
   
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
-  var isOutline: js.UndefOr[Boolean] = js.native
+  var isOutline: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var outlineColor: js.UndefOr[String] = js.native
+  var outlineColor: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[js.Array[LngLat]] = js.native
+  var path: js.UndefOr[js.Array[LngLat]] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeDasharray: js.UndefOr[js.Array[Double]] = js.native
+  var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object PolylineOptions {
   

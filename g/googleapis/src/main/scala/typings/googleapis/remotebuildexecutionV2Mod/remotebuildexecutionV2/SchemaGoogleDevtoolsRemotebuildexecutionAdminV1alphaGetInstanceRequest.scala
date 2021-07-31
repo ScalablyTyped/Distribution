@@ -2,20 +2,18 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request used for `GetInstance`.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaGetInstanceRequest extends StObject {
   
   /**
     * Name of the instance to retrieve. Format:
     * `projects/[PROJECT_ID]/instances/[INSTANCE_ID]`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaGetInstanceRequest {
   

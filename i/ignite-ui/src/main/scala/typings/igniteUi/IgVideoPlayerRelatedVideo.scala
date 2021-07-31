@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgVideoPlayerRelatedVideo
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,43 +16,43 @@ trait IgVideoPlayerRelatedVideo
     * Gets/Sets custom CSS class to be applied on the related video element.
     *
     */
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the height of the related video image.
     *
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the URL of the related video image.
     *
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets a link to a page that will play the related video. It will be opened in a new window. If there are sources also, the link property has a priority.
     *
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the sources of the related video.
     *
     */
-  var sources: js.UndefOr[js.Array[_]] = js.native
+  var sources: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets the title of the video.
     *
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the width of the related video image.
     *
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IgVideoPlayerRelatedVideo {
   
@@ -91,7 +90,7 @@ object IgVideoPlayerRelatedVideo {
     def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setSources(value: js.Array[_]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)

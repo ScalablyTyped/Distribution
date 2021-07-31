@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualServiceSpecProviderVirtualNode extends StObject {
   
   /**
     * The name of the virtual node that is acting as a service provider. Must be between 1 and 255 characters in length.
     */
-  var virtualNodeName: Input[String] = js.native
+  var virtualNodeName: Input[String]
 }
 object VirtualServiceSpecProviderVirtualNode {
   

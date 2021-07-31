@@ -10,9 +10,9 @@ URL rewrite middleware for express
 | ------------------ | :-------------: |
 | Full name          | express-urlrewrite |
 | Keywords           | express, middleware, rewrite, redirect, url |
-| # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 6251598 |
+| # releases         | 3 |
+| # dependents       | 60 |
+| # downloads        | 7061518 |
 | # stars            | 10 |
 
 ## Links

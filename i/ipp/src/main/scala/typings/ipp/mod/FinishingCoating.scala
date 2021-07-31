@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingCoating extends StObject {
   
-  var `coating-sides`: js.UndefOr[FinishingSides] = js.native
+  var `coating-sides`: js.UndefOr[FinishingSides] = js.undefined
   
-  var `coating-type`: js.UndefOr[CoatingType] = js.native
+  var `coating-type`: js.UndefOr[CoatingType] = js.undefined
 }
 object FinishingCoating {
   

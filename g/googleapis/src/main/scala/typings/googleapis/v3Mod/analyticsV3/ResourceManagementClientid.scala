@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Clientid")
@@ -30,7 +29,7 @@ class ResourceManagementClientid protected () extends StObject {
     */
   def hashClientId(): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(callback: BodyResponseCallback[SchemaHashClientIdResponse]): Unit = js.native
-  def hashClientId(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHashClientIdResponse] = js.native
+  def hashClientId(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(params: ParamsResourceManagementClientidHashclientid): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(
     params: ParamsResourceManagementClientidHashclientid,

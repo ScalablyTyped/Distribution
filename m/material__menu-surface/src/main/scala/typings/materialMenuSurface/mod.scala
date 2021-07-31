@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,23 +22,23 @@ object mod {
   object Corner extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.Corner with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.Corner & Double] = js.native
     
-    /* 13 */ val BOTTOM_END: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_END with Double = js.native
+    /* 13 */ val BOTTOM_END: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_END & Double = js.native
     
-    /* 1 */ val BOTTOM_LEFT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_LEFT with Double = js.native
+    /* 1 */ val BOTTOM_LEFT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_LEFT & Double = js.native
     
-    /* 5 */ val BOTTOM_RIGHT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_RIGHT with Double = js.native
+    /* 5 */ val BOTTOM_RIGHT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_RIGHT & Double = js.native
     
-    /* 9 */ val BOTTOM_START: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_START with Double = js.native
+    /* 9 */ val BOTTOM_START: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_START & Double = js.native
     
-    /* 12 */ val TOP_END: typings.materialMenuSurface.constantsMod.Corner.TOP_END with Double = js.native
+    /* 12 */ val TOP_END: typings.materialMenuSurface.constantsMod.Corner.TOP_END & Double = js.native
     
-    /* 0 */ val TOP_LEFT: typings.materialMenuSurface.constantsMod.Corner.TOP_LEFT with Double = js.native
+    /* 0 */ val TOP_LEFT: typings.materialMenuSurface.constantsMod.Corner.TOP_LEFT & Double = js.native
     
-    /* 4 */ val TOP_RIGHT: typings.materialMenuSurface.constantsMod.Corner.TOP_RIGHT with Double = js.native
+    /* 4 */ val TOP_RIGHT: typings.materialMenuSurface.constantsMod.Corner.TOP_RIGHT & Double = js.native
     
-    /* 8 */ val TOP_START: typings.materialMenuSurface.constantsMod.Corner.TOP_START with Double = js.native
+    /* 8 */ val TOP_START: typings.materialMenuSurface.constantsMod.Corner.TOP_START & Double = js.native
   }
   
   /**
@@ -50,22 +49,22 @@ object mod {
   object CornerBit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.CornerBit with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.CornerBit & Double] = js.native
     
-    /* 1 */ val BOTTOM: typings.materialMenuSurface.constantsMod.CornerBit.BOTTOM with Double = js.native
+    /* 1 */ val BOTTOM: typings.materialMenuSurface.constantsMod.CornerBit.BOTTOM & Double = js.native
     
-    /* 2 */ val CENTER: typings.materialMenuSurface.constantsMod.CornerBit.CENTER with Double = js.native
+    /* 2 */ val CENTER: typings.materialMenuSurface.constantsMod.CornerBit.CENTER & Double = js.native
     
-    /* 8 */ val FLIP_RTL: typings.materialMenuSurface.constantsMod.CornerBit.FLIP_RTL with Double = js.native
+    /* 8 */ val FLIP_RTL: typings.materialMenuSurface.constantsMod.CornerBit.FLIP_RTL & Double = js.native
     
-    /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT with Double = js.native
+    /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT & Double = js.native
   }
   
   @JSImport("@material/menu-surface", "MDCMenuSurface")
   @js.native
   class MDCMenuSurface protected ()
     extends typings.materialMenuSurface.componentMod.MDCMenuSurface {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation,
@@ -75,9 +74,12 @@ object mod {
   /* static members */
   object MDCMenuSurface {
     
-    @JSImport("@material/menu-surface", "MDCMenuSurface.attachTo")
+    @JSImport("@material/menu-surface", "MDCMenuSurface")
     @js.native
-    def attachTo(root: Element): typings.materialMenuSurface.componentMod.MDCMenuSurface = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialMenuSurface.componentMod.MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialMenuSurface.componentMod.MDCMenuSurface]
   }
   
   @JSImport("@material/menu-surface", "MDCMenuSurfaceFoundation")
@@ -220,14 +222,16 @@ object mod {
   
   object util {
     
+    @JSImport("@material/menu-surface", "util")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the name of the correct transform property to use on the current browser.
       */
-    @JSImport("@material/menu-surface", "util.getTransformPropertyName")
-    @js.native
-    def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = js.native
-    @JSImport("@material/menu-surface", "util.getTransformPropertyName")
-    @js.native
-    def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = js.native
+    @scala.inline
+    def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any]).asInstanceOf[CssTransformPropertyName]
+    @scala.inline
+    def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[CssTransformPropertyName]
   }
 }

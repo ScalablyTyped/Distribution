@@ -11,8 +11,8 @@ Generate the origin from an URL or check if two URL/Origins are the same
 | Full name          | original |
 | Keywords           | origin, url, parse |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 301233008 |
+| # dependents       | 40 |
+| # downloads        | 352698516 |
 | # stars            | 1 |
 
 ## Links

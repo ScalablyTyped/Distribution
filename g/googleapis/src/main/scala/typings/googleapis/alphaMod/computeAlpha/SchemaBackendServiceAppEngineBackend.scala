@@ -2,31 +2,29 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of a App Engine backend.
   */
-@js.native
 trait SchemaBackendServiceAppEngineBackend extends StObject {
   
   /**
     * Optional. App Engine app service name.
     */
-  var appEngineService: js.UndefOr[String] = js.native
+  var appEngineService: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Project ID of the project hosting the app. This is the project
     * ID of this project. Reference to another project is not allowed.
     */
-  var targetProject: js.UndefOr[String] = js.native
+  var targetProject: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Version of App Engine app service. When empty, App Engine will
     * do its normal traffic split.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendServiceAppEngineBackend {
   

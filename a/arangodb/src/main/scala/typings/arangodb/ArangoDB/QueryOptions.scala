@@ -2,39 +2,37 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var count: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Boolean] = js.undefined
   
-  var failOnWarning: js.UndefOr[Boolean] = js.native
+  var failOnWarning: js.UndefOr[Boolean] = js.undefined
   
-  var fullCount: js.UndefOr[Boolean] = js.native
+  var fullCount: js.UndefOr[Boolean] = js.undefined
   
-  var intermediateCommitCount: js.UndefOr[Double] = js.native
+  var intermediateCommitCount: js.UndefOr[Double] = js.undefined
   
-  var intermediateCommitSize: js.UndefOr[Double] = js.native
+  var intermediateCommitSize: js.UndefOr[Double] = js.undefined
   
-  var maxNumberOfPlans: js.UndefOr[Double] = js.native
+  var maxNumberOfPlans: js.UndefOr[Double] = js.undefined
   
   // RocksDB
-  var maxTransactionsSize: js.UndefOr[Double] = js.native
+  var maxTransactionsSize: js.UndefOr[Double] = js.undefined
   
-  var maxWarningCount: js.UndefOr[Double] = js.native
+  var maxWarningCount: js.UndefOr[Double] = js.undefined
   
-  var memoryLimit: js.UndefOr[Double] = js.native
+  var memoryLimit: js.UndefOr[Double] = js.undefined
   
-  var profile: js.UndefOr[Boolean] = js.native
+  var profile: js.UndefOr[Boolean] = js.undefined
   
   // enterprise
-  var skipInaccessibleCollections: js.UndefOr[Boolean] = js.native
+  var skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined
   
-  var stream: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.undefined
 }
 object QueryOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateHostsResult extends StObject {
   
   /**
     * The ID of the allocated Dedicated Host. This is used to launch an instance onto a specific host.
     */
-  var HostIds: js.UndefOr[ResponseHostIdList] = js.native
+  var HostIds: js.UndefOr[ResponseHostIdList] = js.undefined
 }
 object AllocateHostsResult {
   

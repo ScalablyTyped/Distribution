@@ -2,19 +2,17 @@ package typings.jsforce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpApiMod {
   
-  @js.native
   trait HttpApiOptions extends StObject {
     
-    var noContentResponse: js.UndefOr[js.Object] = js.native
+    var noContentResponse: js.UndefOr[js.Object] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[js.Object] = js.native
+    var transport: js.UndefOr[js.Object] = js.undefined
   }
   object HttpApiOptions {
     

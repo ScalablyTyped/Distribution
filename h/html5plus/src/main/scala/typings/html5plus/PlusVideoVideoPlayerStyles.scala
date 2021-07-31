@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
-@js.native
 trait PlusVideoVideoPlayerStyles extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示默认播放控件
@@ -28,7 +26,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示弹幕按钮
@@ -37,7 +35,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `danmu-btn`: js.UndefOr[Boolean] = js.native
+  var `danmu-btn`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 弹幕列表
@@ -45,7 +43,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `danmu-list`: js.UndefOr[js.Array[_]] = js.native
+  var `danmu-list`: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 设置全屏时视频的方向
@@ -55,7 +53,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
   /**
     * 视频长度
@@ -64,7 +62,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否展示弹幕
@@ -73,7 +71,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `enable-danmu`: js.UndefOr[Boolean] = js.native
+  var `enable-danmu`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否开启控制进度的手势
@@ -81,7 +79,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `enable-progress-gesture`: js.UndefOr[Boolean] = js.native
+  var `enable-progress-gesture`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * VideoPlayer控件的高度
@@ -92,7 +90,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 视频初始播放位置
@@ -101,7 +99,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `initial-time`: js.UndefOr[Double] = js.native
+  var `initial-time`: js.UndefOr[Double] = js.undefined
   
   /**
     * VideoPlayer控件左上角的水平偏移量
@@ -113,7 +111,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * 是否循环播放
@@ -121,7 +119,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否静音播放
@@ -129,7 +127,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 当视频大小与 video 容器大小不一致时，视频的表现形式
@@ -139,7 +137,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var objectFit: js.UndefOr[String] = js.native
+  var objectFit: js.UndefOr[String] = js.undefined
   
   /**
     * VideoPlayer控件在Webview窗口的布局模式
@@ -150,7 +148,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * 视频封面的图片网络资源地址
@@ -158,7 +156,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
   /**
     * 是否显示视频中间的播放按钮
@@ -166,7 +164,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `show-center-play-btn`: js.UndefOr[Boolean] = js.native
+  var `show-center-play-btn`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示全屏按钮
@@ -174,7 +172,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `show-fullscreen-btn`: js.UndefOr[Boolean] = js.native
+  var `show-fullscreen-btn`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示视频底部控制栏的播放按钮
@@ -182,7 +180,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `show-play-btn`: js.UndefOr[Boolean] = js.native
+  var `show-play-btn`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示播放进度
@@ -190,7 +188,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `show-progress`: js.UndefOr[Boolean] = js.native
+  var `show-progress`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 视频资源地址
@@ -198,7 +196,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * VideoPlayer控件左上角的垂直偏移量
@@ -209,7 +207,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * VideoPlayer控件的宽度
@@ -220,7 +218,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusVideoVideoPlayerStyles {
   
@@ -252,7 +250,7 @@ object PlusVideoVideoPlayerStyles {
     def `setDanmu-btnUndefined`: Self = StObject.set(x, "danmu-btn", js.undefined)
     
     @scala.inline
-    def `setDanmu-list`(value: js.Array[_]): Self = StObject.set(x, "danmu-list", value.asInstanceOf[js.Any])
+    def `setDanmu-list`(value: js.Array[js.Any]): Self = StObject.set(x, "danmu-list", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setDanmu-listUndefined`: Self = StObject.set(x, "danmu-list", js.undefined)

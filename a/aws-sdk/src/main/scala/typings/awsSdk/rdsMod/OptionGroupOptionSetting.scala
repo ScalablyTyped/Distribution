@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionGroupOptionSetting extends StObject {
   
   /**
     * Indicates the acceptable values for the option group option.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * The DB engine specific parameter type for the option group option.
     */
-  var ApplyType: js.UndefOr[String] = js.native
+  var ApplyType: js.UndefOr[String] = js.undefined
   
   /**
     * The default value for the option group option.
     */
-  var DefaultValue: js.UndefOr[String] = js.native
+  var DefaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean value where true indicates that this option group option can be changed from the default value.
     */
-  var IsModifiable: js.UndefOr[Boolean] = js.native
+  var IsModifiable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean value where true indicates that a value must be specified for this option setting of the option group option.
     */
-  var IsRequired: js.UndefOr[Boolean] = js.native
+  var IsRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The minimum DB engine version required for the corresponding allowed value for this option setting.
     */
-  var MinimumEngineVersionPerAllowedValue: js.UndefOr[MinimumEngineVersionPerAllowedValueList] = js.native
+  var MinimumEngineVersionPerAllowedValue: js.UndefOr[MinimumEngineVersionPerAllowedValueList] = js.undefined
   
   /**
     * The description of the option group option.
     */
-  var SettingDescription: js.UndefOr[String] = js.native
+  var SettingDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the option group option.
     */
-  var SettingName: js.UndefOr[String] = js.native
+  var SettingName: js.UndefOr[String] = js.undefined
 }
 object OptionGroupOptionSetting {
   

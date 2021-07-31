@@ -2,19 +2,17 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of Display Device options
   */
-@js.native
 trait SchemaDisplayDevice extends StObject {
   
   /**
     * Defines whether the instance has Display enabled.
     */
-  var enableDisplay: js.UndefOr[Boolean] = js.native
+  var enableDisplay: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDisplayDevice {
   

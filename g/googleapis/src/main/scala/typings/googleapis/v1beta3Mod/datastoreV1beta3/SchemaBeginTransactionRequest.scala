@@ -2,19 +2,17 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Datastore.BeginTransaction.
   */
-@js.native
 trait SchemaBeginTransactionRequest extends StObject {
   
   /**
     * Options for a new transaction.
     */
-  var transactionOptions: js.UndefOr[SchemaTransactionOptions] = js.native
+  var transactionOptions: js.UndefOr[SchemaTransactionOptions] = js.undefined
 }
 object SchemaBeginTransactionRequest {
   

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaterfallChartSeries extends StObject {
   
   /** Custom subtotal columns appearing in this series. The order in which subtotals are defined is not significant. Only one subtotal may be defined for each data point. */
-  var customSubtotals: js.UndefOr[js.Array[WaterfallChartCustomSubtotal]] = js.native
+  var customSubtotals: js.UndefOr[js.Array[WaterfallChartCustomSubtotal]] = js.undefined
   
   /** The data being visualized in this series. */
-  var data: js.UndefOr[ChartData] = js.native
+  var data: js.UndefOr[ChartData] = js.undefined
   
   /**
     * True to hide the subtotal column from the end of the series. By default, a subtotal column will appear at the end of each series. Setting this field to true will hide that subtotal
     * column for this series.
     */
-  var hideTrailingSubtotal: js.UndefOr[Boolean] = js.native
+  var hideTrailingSubtotal: js.UndefOr[Boolean] = js.undefined
   
   /** Styles for all columns in this series with negative values. */
-  var negativeColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+  var negativeColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
   
   /** Styles for all columns in this series with positive values. */
-  var positiveColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+  var positiveColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
   
   /** Styles for all subtotal columns in this series. */
-  var subtotalColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+  var subtotalColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
 }
 object WaterfallChartSeries {
   

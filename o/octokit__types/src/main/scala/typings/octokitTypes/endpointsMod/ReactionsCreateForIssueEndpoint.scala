@@ -1,8 +1,9 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
+import typings.octokitTypes.octokitTypesStrings.`squirrel-girl`
 import typings.octokitTypes.octokitTypesStrings.confused
 import typings.octokitTypes.octokitTypesStrings.eyes
 import typings.octokitTypes.octokitTypesStrings.heart
@@ -11,25 +12,22 @@ import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   issue_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
-@js.native
-trait ReactionsCreateForIssueEndpoint extends StObject {
+trait ReactionsCreateForIssueEndpoint
+  extends StObject
+     with RequiredPreview[`squirrel-girl`] {
   
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue.
     */
-  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes = js.native
+  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
   
-  var issue_number: Double = js.native
+  var issue_number: Double
   
-  var mediaType: `9` = js.native
+  var owner: String
   
-  var owner: String = js.native
-  
-  var repo: String = js.native
+  var repo: String
 }
 object ReactionsCreateForIssueEndpoint {
   
@@ -37,7 +35,7 @@ object ReactionsCreateForIssueEndpoint {
   def apply(
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     issue_number: Double,
-    mediaType: `9`,
+    mediaType: `0`[`squirrel-girl`],
     owner: String,
     repo: String
   ): ReactionsCreateForIssueEndpoint = {
@@ -53,9 +51,6 @@ object ReactionsCreateForIssueEndpoint {
     
     @scala.inline
     def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

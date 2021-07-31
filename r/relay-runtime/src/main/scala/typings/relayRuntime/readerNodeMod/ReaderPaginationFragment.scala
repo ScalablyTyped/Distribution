@@ -3,14 +3,14 @@ package typings.relayRuntime.readerNodeMod
 import typings.relayRuntime.anon.ConnectionRefetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderPaginationFragment extends ReaderFragment {
+trait ReaderPaginationFragment
+  extends StObject
+     with ReaderFragment {
   
   @JSName("metadata")
-  val metadata_ReaderPaginationFragment: ConnectionRefetch = js.native
+  val metadata_ReaderPaginationFragment: ConnectionRefetch
 }
 object ReaderPaginationFragment {
   

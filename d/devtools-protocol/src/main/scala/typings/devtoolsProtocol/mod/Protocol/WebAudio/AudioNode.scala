@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioNode extends StObject {
   
-  var channelCount: Double = js.native
+  var channelCount: Double
   
-  var channelCountMode: ChannelCountMode = js.native
+  var channelCountMode: ChannelCountMode
   
-  var channelInterpretation: ChannelInterpretation = js.native
+  var channelInterpretation: ChannelInterpretation
   
-  var contextId: GraphObjectId = js.native
+  var contextId: GraphObjectId
   
-  var nodeId: GraphObjectId = js.native
+  var nodeId: GraphObjectId
   
-  var nodeType: NodeType = js.native
+  var nodeType: NodeType
   
-  var numberOfInputs: Double = js.native
+  var numberOfInputs: Double
   
-  var numberOfOutputs: Double = js.native
+  var numberOfOutputs: Double
 }
 object AudioNode {
   

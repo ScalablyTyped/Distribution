@@ -2,42 +2,42 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextareaHTMLAttributes[T] extends HTMLAttributes[T] {
+trait TextareaHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
-  var dirName: js.UndefOr[String] = js.native
+  var dirName: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   @JSName("onChange")
-  var onChange_TextareaHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
+  var onChange_TextareaHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
-  var wrap: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.undefined
 }
 object TextareaHTMLAttributes {
   
@@ -48,7 +48,7 @@ object TextareaHTMLAttributes {
   }
   
   @scala.inline
-  implicit class TextareaHTMLAttributesMutableBuilder[Self <: TextareaHTMLAttributes[_], T] (val x: Self with TextareaHTMLAttributes[T]) extends AnyVal {
+  implicit class TextareaHTMLAttributesMutableBuilder[Self <: TextareaHTMLAttributes[?], T] (val x: Self & TextareaHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])

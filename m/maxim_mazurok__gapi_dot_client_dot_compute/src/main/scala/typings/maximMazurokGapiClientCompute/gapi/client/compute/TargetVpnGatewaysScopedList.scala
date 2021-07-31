@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetVpnGatewaysScopedList extends StObject {
   
   /** [Output Only] A list of target VPN gateways contained in this scope. */
-  var targetVpnGateways: js.UndefOr[js.Array[TargetVpnGateway]] = js.native
+  var targetVpnGateways: js.UndefOr[js.Array[TargetVpnGateway]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of addresses when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object TargetVpnGatewaysScopedList {
   

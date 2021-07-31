@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getShaderPrecisionFormat() method. */
-@js.native
 trait WebGLShaderPrecisionFormat extends StObject {
   
-  val precision: GLint = js.native
+  val precision: GLint
   
-  val rangeMax: GLint = js.native
+  val rangeMax: GLint
   
-  val rangeMin: GLint = js.native
+  val rangeMin: GLint
 }
 object WebGLShaderPrecisionFormat {
   

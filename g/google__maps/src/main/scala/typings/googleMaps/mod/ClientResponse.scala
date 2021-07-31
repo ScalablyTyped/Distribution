@@ -3,20 +3,18 @@ package typings.googleMaps.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientResponse[T] extends StObject {
   
   /** The HTTP headers. */
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
   /** Deserialized JSON object for the API response. */
-  var json: T = js.native
+  var json: T
   
   /** The HTTP status. */
-  var status: Double = js.native
+  var status: Double
 }
 object ClientResponse {
   
@@ -27,7 +25,7 @@ object ClientResponse {
   }
   
   @scala.inline
-  implicit class ClientResponseMutableBuilder[Self <: ClientResponse[_], T] (val x: Self with ClientResponse[T]) extends AnyVal {
+  implicit class ClientResponseMutableBuilder[Self <: ClientResponse[?], T] (val x: Self & ClientResponse[T]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

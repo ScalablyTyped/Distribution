@@ -3,52 +3,50 @@ package typings.lyricist.mod
 import typings.lyricist.anon.ExcludedpermissionsInteractions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Album =================================================
-@js.native
 trait Album extends StObject {
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var artist: ArtistBrief = js.native
+  var artist: ArtistBrief
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var cover_art_url: String = js.native
+  var cover_art_url: String
   
-  var cover_arts: js.Array[_] = js.native
+  var cover_arts: js.Array[js.Any]
   
-  var current_user_metadata: ExcludedpermissionsInteractions = js.native
+  var current_user_metadata: ExcludedpermissionsInteractions
   
-  var custom_header_image_url: js.UndefOr[js.Any] = js.native
+  var custom_header_image_url: js.UndefOr[js.Any] = js.undefined
   
-  var description_annotation: DescriptionAnnotation = js.native
+  var description_annotation: DescriptionAnnotation
   
-  var full_title: String = js.native
+  var full_title: String
   
-  var header_image_url: String = js.native
+  var header_image_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var lock_state: String = js.native
+  var lock_state: String
   
-  var name: String = js.native
+  var name: String
   
-  var performance_groups: js.Array[_] = js.native
+  var performance_groups: js.Array[js.Any]
   
-  var pyongs_count: Double = js.native
+  var pyongs_count: Double
   
-  var release_date: js.UndefOr[js.Any] = js.native
+  var release_date: js.UndefOr[js.Any] = js.undefined
   
-  var release_date_components: js.UndefOr[js.Any] = js.native
+  var release_date_components: js.UndefOr[js.Any] = js.undefined
   
-  var song_pageviews: Double = js.native
+  var song_pageviews: Double
   
-  var song_performances: js.Array[_] = js.native
+  var song_performances: js.Array[js.Any]
   
-  var url: String = js.native
+  var url: String
 }
 object Album {
   
@@ -58,7 +56,7 @@ object Album {
     artist: ArtistBrief,
     comment_count: Double,
     cover_art_url: String,
-    cover_arts: js.Array[_],
+    cover_arts: js.Array[js.Any],
     current_user_metadata: ExcludedpermissionsInteractions,
     description_annotation: DescriptionAnnotation,
     full_title: String,
@@ -66,10 +64,10 @@ object Album {
     id: Double,
     lock_state: String,
     name: String,
-    performance_groups: js.Array[_],
+    performance_groups: js.Array[js.Any],
     pyongs_count: Double,
     song_pageviews: Double,
-    song_performances: js.Array[_],
+    song_performances: js.Array[js.Any],
     url: String
   ): Album = {
     val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], artist = artist.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], cover_art_url = cover_art_url.asInstanceOf[js.Any], cover_arts = cover_arts.asInstanceOf[js.Any], current_user_metadata = current_user_metadata.asInstanceOf[js.Any], description_annotation = description_annotation.asInstanceOf[js.Any], full_title = full_title.asInstanceOf[js.Any], header_image_url = header_image_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lock_state = lock_state.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], performance_groups = performance_groups.asInstanceOf[js.Any], pyongs_count = pyongs_count.asInstanceOf[js.Any], song_pageviews = song_pageviews.asInstanceOf[js.Any], song_performances = song_performances.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -92,7 +90,7 @@ object Album {
     def setCover_art_url(value: String): Self = StObject.set(x, "cover_art_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover_arts(value: js.Array[_]): Self = StObject.set(x, "cover_arts", value.asInstanceOf[js.Any])
+    def setCover_arts(value: js.Array[js.Any]): Self = StObject.set(x, "cover_arts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCover_artsVarargs(value: js.Any*): Self = StObject.set(x, "cover_arts", js.Array(value :_*))
@@ -125,7 +123,7 @@ object Album {
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance_groups(value: js.Array[_]): Self = StObject.set(x, "performance_groups", value.asInstanceOf[js.Any])
+    def setPerformance_groups(value: js.Array[js.Any]): Self = StObject.set(x, "performance_groups", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPerformance_groupsVarargs(value: js.Any*): Self = StObject.set(x, "performance_groups", js.Array(value :_*))
@@ -149,7 +147,7 @@ object Album {
     def setSong_pageviews(value: Double): Self = StObject.set(x, "song_pageviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSong_performances(value: js.Array[_]): Self = StObject.set(x, "song_performances", value.asInstanceOf[js.Any])
+    def setSong_performances(value: js.Array[js.Any]): Self = StObject.set(x, "song_performances", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSong_performancesVarargs(value: js.Any*): Self = StObject.set(x, "song_performances", js.Array(value :_*))

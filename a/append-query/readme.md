@@ -11,8 +11,8 @@ Append querystring params to a URL.
 | Full name          | append-query |
 | Keywords           | string, url, querystring, query params, query, append |
 | # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 789662 |
+| # dependents       | 37 |
+| # downloads        | 983917 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelDetection extends StObject {
   
   /**
     * Details about the detected label.
     */
-  var Label: js.UndefOr[typings.awsSdk.rekognitionMod.Label] = js.native
+  var Label: js.UndefOr[typings.awsSdk.rekognitionMod.Label] = js.undefined
   
   /**
     * Time, in milliseconds from the start of the video, that the label was detected.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object LabelDetection {
   

@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigatorCategoryAxisLabelsDateFormats extends StObject {
   
-  var days: js.UndefOr[String] = js.native
+  var days: js.UndefOr[String] = js.undefined
   
-  var hours: js.UndefOr[String] = js.native
+  var hours: js.UndefOr[String] = js.undefined
   
-  var months: js.UndefOr[String] = js.native
+  var months: js.UndefOr[String] = js.undefined
   
-  var weeks: js.UndefOr[String] = js.native
+  var weeks: js.UndefOr[String] = js.undefined
   
-  var years: js.UndefOr[String] = js.native
+  var years: js.UndefOr[String] = js.undefined
 }
 object StockChartNavigatorCategoryAxisLabelsDateFormats {
   

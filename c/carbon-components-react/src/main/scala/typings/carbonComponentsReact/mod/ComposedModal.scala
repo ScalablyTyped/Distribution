@@ -1,0 +1,10 @@
+package typings.carbonComponentsReact.mod
+
+import typings.carbonComponentsReact.composedModalMod.default
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("carbon-components-react", "ComposedModal")
+@js.native
+class ComposedModal () extends default

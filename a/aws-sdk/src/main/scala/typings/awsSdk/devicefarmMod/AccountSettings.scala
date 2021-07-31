@@ -2,51 +2,49 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSettings extends StObject {
   
   /**
     * The AWS account number specified in the AccountSettings container.
     */
-  var awsAccountNumber: js.UndefOr[AWSAccountNumber] = js.native
+  var awsAccountNumber: js.UndefOr[AWSAccountNumber] = js.undefined
   
   /**
     * The default number of minutes (at the account level) a test run executes before it times out. The default value is 150 minutes.
     */
-  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * The maximum number of minutes a test run executes before it times out.
     */
-  var maxJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var maxJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * The maximum number of device slots that the AWS account can purchase. Each maximum is expressed as an offering-id:number pair, where the offering-id represents one of the IDs returned by the ListOfferings command.
     */
-  var maxSlots: js.UndefOr[MaxSlotMap] = js.native
+  var maxSlots: js.UndefOr[MaxSlotMap] = js.undefined
   
   /**
     * When set to true, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again. For more information about how Device Farm re-signs your apps, see Do you modify my app? in the AWS Device Farm FAQs.
     */
-  var skipAppResign: js.UndefOr[SkipAppResign] = js.native
+  var skipAppResign: js.UndefOr[SkipAppResign] = js.undefined
   
   /**
     * Information about an AWS account's usage of free trial device minutes.
     */
-  var trialMinutes: js.UndefOr[TrialMinutes] = js.native
+  var trialMinutes: js.UndefOr[TrialMinutes] = js.undefined
   
   /**
     * Returns the unmetered devices you have purchased or want to purchase.
     */
-  var unmeteredDevices: js.UndefOr[PurchasedDevicesMap] = js.native
+  var unmeteredDevices: js.UndefOr[PurchasedDevicesMap] = js.undefined
   
   /**
     * Returns the unmetered remote access devices you have purchased or want to purchase.
     */
-  var unmeteredRemoteAccessDevices: js.UndefOr[PurchasedDevicesMap] = js.native
+  var unmeteredRemoteAccessDevices: js.UndefOr[PurchasedDevicesMap] = js.undefined
 }
 object AccountSettings {
   

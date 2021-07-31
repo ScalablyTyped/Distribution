@@ -2,91 +2,89 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceRouteRequest extends StObject {
   
   /**
     * [IPv4 traffic only] The ID of a carrier gateway.
     */
-  var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.native
+  var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
     * The IPv4 CIDR address block used for the destination match. The value that you provide must match the CIDR of an existing route in the table.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR address block used for the destination match. The value that you provide must match the CIDR of an existing route in the table.
     */
-  var DestinationIpv6CidrBlock: js.UndefOr[String] = js.native
+  var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the prefix list for the route.
     */
-  var DestinationPrefixListId: js.UndefOr[PrefixListResourceId] = js.native
+  var DestinationPrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [IPv6 traffic only] The ID of an egress-only internet gateway.
     */
-  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.EgressOnlyInternetGatewayId] = js.native
+  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.EgressOnlyInternetGatewayId] = js.undefined
   
   /**
     * The ID of an internet gateway or virtual private gateway.
     */
-  var GatewayId: js.UndefOr[RouteGatewayId] = js.native
+  var GatewayId: js.UndefOr[RouteGatewayId] = js.undefined
   
   /**
     * The ID of a NAT instance in your VPC.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.undefined
   
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.undefined
   
   /**
     * Specifies whether to reset the local route to its default target (local).
     */
-  var LocalTarget: js.UndefOr[Boolean] = js.native
+  var LocalTarget: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [IPv4 traffic only] The ID of a NAT gateway.
     */
-  var NatGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.NatGatewayId] = js.native
+  var NatGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.NatGatewayId] = js.undefined
   
   /**
     * The ID of a network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.undefined
   
   /**
     * The ID of the route table.
     */
-  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId
   
   /**
     * The ID of a transit gateway.
     */
-  var TransitGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayId] = js.native
+  var TransitGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayId] = js.undefined
   
   /**
     * The ID of a VPC endpoint. Supported for Gateway Load Balancer endpoints only.
     */
-  var VpcEndpointId: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointId] = js.native
+  var VpcEndpointId: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointId] = js.undefined
   
   /**
     * The ID of a VPC peering connection.
     */
-  var VpcPeeringConnectionId: js.UndefOr[typings.awsSdk.ec2Mod.VpcPeeringConnectionId] = js.native
+  var VpcPeeringConnectionId: js.UndefOr[typings.awsSdk.ec2Mod.VpcPeeringConnectionId] = js.undefined
 }
 object ReplaceRouteRequest {
   

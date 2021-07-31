@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,26 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * credential requirements.
   *
   */
-@js.native
-trait OAuthCredential extends AuthCredential {
+trait OAuthCredential
+  extends StObject
+     with AuthCredential {
   
   /**
     * The OAuth access token associated with the credential if it belongs to
     * an OAuth provider, such as `facebook.com`, `twitter.com`, etc.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth ID token associated with the credential if it belongs to an
     * OIDC provider, such as `google.com`.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth access token secret associated with the credential if it
     * belongs to an OAuth 1.0 provider, such as `twitter.com`.
     */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
 }
 object OAuthCredential {
   

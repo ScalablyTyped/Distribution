@@ -2,61 +2,59 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeEnvironmentDetail extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the compute environment.
     */
-  var computeEnvironmentArn: String = js.native
+  var computeEnvironmentArn: String
   
   /**
     * The name of the compute environment.
     */
-  var computeEnvironmentName: String = js.native
+  var computeEnvironmentName: String
   
   /**
     * The compute resources defined for the compute environment.
     */
-  var computeResources: js.UndefOr[ComputeResource] = js.native
+  var computeResources: js.UndefOr[ComputeResource] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */
-  var ecsClusterArn: String = js.native
+  var ecsClusterArn: String
   
   /**
     * The service role associated with the compute environment that allows AWS Batch to make calls to AWS API operations on your behalf.
     */
-  var serviceRole: js.UndefOr[String] = js.native
+  var serviceRole: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the compute environment. The valid values are ENABLED or DISABLED. If the state is ENABLED, then the AWS Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the AWS Batch scheduler does not attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state do not scale out. However, they scale in to minvCpus value after instances become idle.
     */
-  var state: js.UndefOr[CEState] = js.native
+  var state: js.UndefOr[CEState] = js.undefined
   
   /**
     * The current status of the compute environment (for example, CREATING or VALID).
     */
-  var status: js.UndefOr[CEStatus] = js.native
+  var status: js.UndefOr[CEStatus] = js.undefined
   
   /**
     * A short, human-readable string to provide additional details about the current status of the compute environment.
     */
-  var statusReason: js.UndefOr[String] = js.native
+  var statusReason: js.UndefOr[String] = js.undefined
   
   /**
     * The tags applied to the compute environment.
     */
-  var tags: js.UndefOr[TagrisTagsMap] = js.native
+  var tags: js.UndefOr[TagrisTagsMap] = js.undefined
   
   /**
     * The type of the compute environment.
     */
-  var `type`: js.UndefOr[CEType] = js.native
+  var `type`: js.UndefOr[CEType] = js.undefined
 }
 object ComputeEnvironmentDetail {
   

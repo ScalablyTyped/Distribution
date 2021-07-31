@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an application on a remote system. */
-@js.native
 trait RemoteSystemApp extends StObject {
   
   /** The app-specific attributes of this application. */
-  var Attributes: IMapView[String, String] = js.native
+  var Attributes: IMapView[String, String]
   
   /** The display-friendly name for this application. This is the name used by the device for Bluetooth identification. If this hasn't been set or the device doesn't support Bluetooth, this field will be empty. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** The unique identifier for this application. */
-  var id: String = js.native
+  var id: String
   
   /** Indicates whether this application is currently available for proximal connection. */
-  var isAvailableByProximity: Boolean = js.native
+  var isAvailableByProximity: Boolean
   
   /** Indicates whether this application is currently available for spatial sharing connection. */
-  var isAvailableBySpatialProximity: Boolean = js.native
+  var isAvailableBySpatialProximity: Boolean
 }
 object RemoteSystemApp {
   

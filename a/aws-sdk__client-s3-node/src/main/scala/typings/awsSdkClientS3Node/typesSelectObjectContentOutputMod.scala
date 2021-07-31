@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSelectObjectContentOutputMod {
   
-  @js.native
   trait SelectObjectContentOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _SelectObjectContentEventStream shape
       */
-    var Payload: js.UndefOr[UnmarshalledSelectObjectContentEventStream] = js.native
+    var Payload: js.UndefOr[UnmarshalledSelectObjectContentEventStream] = js.undefined
   }
   object SelectObjectContentOutput {
     

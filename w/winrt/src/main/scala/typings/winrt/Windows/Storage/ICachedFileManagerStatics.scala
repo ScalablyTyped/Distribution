@@ -4,15 +4,13 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Provider.FileUpdateStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICachedFileManagerStatics extends StObject {
   
-  def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = js.native
+  def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus]
   
-  def deferUpdates(file: IStorageFile): Unit = js.native
+  def deferUpdates(file: IStorageFile): Unit
 }
 object ICachedFileManagerStatics {
   

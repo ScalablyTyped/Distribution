@@ -1,6 +1,5 @@
 package typings.tar
 
-import typings.minipass.mod.^
 import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.WritableStream
@@ -16,127 +15,104 @@ import typings.tar.anon.ListOptionsFileOptionssyn
 import typings.tar.tarBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tar", "Extract")
+  @JSImport("tar", JSImport.Namespace)
   @js.native
-  def Extract_(opts: String): ParseStream = js.native
-  @JSImport("tar", "Extract")
-  @js.native
-  def Extract_(opts: ExtractOptions): ParseStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tar", "Pack")
-  @js.native
-  def Pack(): PackStream = js.native
-  @JSImport("tar", "Pack")
-  @js.native
-  def Pack(props: HeaderProperties): PackStream = js.native
+  @scala.inline
+  def Extract_(opts: String): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
+  @scala.inline
+  def Extract_(opts: ExtractOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
   
-  @JSImport("tar", "Parse")
-  @js.native
-  def Parse(): ParseStream = js.native
+  @scala.inline
+  def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
+  @scala.inline
+  def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
+  
+  @scala.inline
+  def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
   
   @JSImport("tar", "blockSize")
   @js.native
   val blockSize: Double = js.native
   
-  @JSImport("tar", "c")
-  @js.native
-  def c(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "c")
-  @js.native
+  @scala.inline
+  def c(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def c(
-    options: CreateOptions with FileOptions,
+    options: CreateOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "c")
-  @js.native
-  def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "c")
-  @js.native
-  def c_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = js.native
-  @JSImport("tar", "c")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def c_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def c_Readable(
     options: CreateOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Readable = js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
-  @JSImport("tar", "create")
-  @js.native
-  def create(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "create")
-  @js.native
+  @scala.inline
+  def create(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def create(
-    options: CreateOptions with FileOptions,
+    options: CreateOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "create")
-  @js.native
-  def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "create")
-  @js.native
-  def create_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = js.native
-  @JSImport("tar", "create")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def create_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def create_Readable(
     options: CreateOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Readable = js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
-  @JSImport("tar", "extract")
-  @js.native
-  def extract(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "extract")
-  @js.native
+  @scala.inline
+  def extract(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def extract(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def extract(
-    options: ExtractOptions with FileOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract(
-    options: ExtractOptions with FileOptions,
+    options: ExtractOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract(options: ExtractOptionsFileOptions): Unit = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract_Writable(options: ExtractOptions): Writable = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract_Writable(
-    options: ExtractOptions,
-    fileList: js.UndefOr[scala.Nothing],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def extract(
+    options: ExtractOptions & FileOptions,
+    fileList: Unit,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "extract")
-  @js.native
-  def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
-  @JSImport("tar", "extract")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def extract(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def extract_Writable(options: ExtractOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  @scala.inline
+  def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def extract_Writable(
     options: ExtractOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def extract_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   @JSImport("tar", "fieldEnds")
   @js.native
@@ -245,58 +221,43 @@ object mod {
     def uname_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uname")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tar", "list")
-  @js.native
-  def list(): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "list")
-  @js.native
+  @scala.inline
+  def list(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[Writable]
+  @scala.inline
+  def list(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def list(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def list(
-    options: ListOptions with FileOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(
-    options: ListOptions with FileOptions,
+    options: ListOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def list(
-    options: js.UndefOr[scala.Nothing],
-    fileList: js.UndefOr[scala.Nothing],
+    options: ListOptions & FileOptions,
+    fileList: Unit,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(options: js.UndefOr[scala.Nothing], fileList: js.Array[String]): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def list(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def list(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(options: ListOptionsFileOptionssyn): Unit = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list_Writable(options: ListOptions with FileOptions): Writable = js.native
-  @JSImport("tar", "list")
-  @js.native
-  def list_Writable(options: ListOptions with FileOptions, fileList: js.Array[String]): Writable = js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def list(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def list_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  @scala.inline
+  def list_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   object modes {
     
@@ -462,106 +423,107 @@ object mod {
     def uid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uid")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tar", "r")
-  @js.native
-  def r(options: ReplaceOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "r")
-  @js.native
-  def r(
-    options: ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
-  @JSImport("tar", "r")
-  @js.native
-  def r(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "r")
-  @js.native
+  @scala.inline
+  def r(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def r(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def r(
     options: ReplaceOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def r(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tar", "replace")
-  @js.native
-  def replace(options: ReplaceOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "replace")
-  @js.native
-  def replace(
-    options: ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
-  @JSImport("tar", "replace")
-  @js.native
-  def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "replace")
-  @js.native
+  @scala.inline
+  def replace(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def replace(
     options: ReplaceOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def replace(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tar", "t")
-  @js.native
-  def t(): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "t")
-  @js.native
+  @scala.inline
+  def t(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Writable]
+  @scala.inline
+  def t(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def t(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def t(
-    options: ListOptions with FileOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(
-    options: ListOptions with FileOptions,
+    options: ListOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def t(
-    options: js.UndefOr[scala.Nothing],
-    fileList: js.UndefOr[scala.Nothing],
+    options: ListOptions & FileOptions,
+    fileList: Unit,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(options: js.UndefOr[scala.Nothing], fileList: js.Array[String]): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def t(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def t(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(options: ListOptionsFileOptionssyn): Unit = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t_Writable(options: ListOptions with FileOptions): Writable = js.native
-  @JSImport("tar", "t")
-  @js.native
-  def t_Writable(options: ListOptions with FileOptions, fileList: js.Array[String]): Writable = js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def t(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def t_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  @scala.inline
+  def t_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   object types {
     
     @JSImport("tar", "types")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("tar", "types.0")
+    @js.native
+    val `0`: String = js.native
+    
+    @JSImport("tar", "types.1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("tar", "types.2")
+    @js.native
+    val `2`: String = js.native
+    
+    @JSImport("tar", "types.3")
+    @js.native
+    val `3`: String = js.native
+    
+    @JSImport("tar", "types.4")
+    @js.native
+    val `4`: String = js.native
+    
+    @JSImport("tar", "types.5")
+    @js.native
+    val `5`: String = js.native
+    
+    @JSImport("tar", "types.6")
+    @js.native
+    val `6`: String = js.native
+    
+    @JSImport("tar", "types.7")
+    @js.native
+    val `7`: String = js.native
     
     @JSImport("tar", "types.A")
     @js.native
@@ -764,224 +726,162 @@ object mod {
     def x: String = js.native
     @scala.inline
     def x_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
-    
-    @JSImport("tar", "types.0")
-    @js.native
-    val `0`: String = js.native
-    
-    @JSImport("tar", "types.1")
-    @js.native
-    val `1`: String = js.native
-    
-    @JSImport("tar", "types.2")
-    @js.native
-    val `2`: String = js.native
-    
-    @JSImport("tar", "types.3")
-    @js.native
-    val `3`: String = js.native
-    
-    @JSImport("tar", "types.4")
-    @js.native
-    val `4`: String = js.native
-    
-    @JSImport("tar", "types.5")
-    @js.native
-    val `5`: String = js.native
-    
-    @JSImport("tar", "types.6")
-    @js.native
-    val `6`: String = js.native
-    
-    @JSImport("tar", "types.7")
-    @js.native
-    val `7`: String = js.native
   }
   
-  @JSImport("tar", "u")
-  @js.native
-  def u(options: ReplaceOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "u")
-  @js.native
-  def u(
-    options: ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
-  @JSImport("tar", "u")
-  @js.native
-  def u(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "u")
-  @js.native
+  @scala.inline
+  def u(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def u(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def u(
     options: ReplaceOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def u(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tar", "update")
-  @js.native
-  def update(options: ReplaceOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "update")
-  @js.native
-  def update(
-    options: ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
-  @JSImport("tar", "update")
-  @js.native
-  def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "update")
-  @js.native
+  @scala.inline
+  def update(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def update(
     options: ReplaceOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def update(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tar", "x")
-  @js.native
-  def x(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
-  @JSImport("tar", "x")
-  @js.native
+  @scala.inline
+  def x(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def x(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def x(
-    options: ExtractOptions with FileOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x(
-    options: ExtractOptions with FileOptions,
+    options: ExtractOptions & FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x(options: ExtractOptionsFileOptions): Unit = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x_Writable(options: ExtractOptions): Writable = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x_Writable(
-    options: ExtractOptions,
-    fileList: js.UndefOr[scala.Nothing],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def x(
+    options: ExtractOptions & FileOptions,
+    fileList: Unit,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  @JSImport("tar", "x")
-  @js.native
-  def x_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
-  @JSImport("tar", "x")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def x(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def x_Writable(options: ExtractOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  @scala.inline
+  def x_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
   def x_Writable(
     options: ExtractOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  @scala.inline
+  def x_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
-  @js.native
   trait CreateOptions extends StObject {
     
     /**
       * Alias for cwd.
       */
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
     /**
       * Alias for follow.
       */
-    var L: js.UndefOr[Boolean] = js.native
+    var L: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for presevePaths.
       */
-    var P: js.UndefOr[Boolean] = js.native
+    var P: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The current working directory for creating the archive. Defaults to process.cwd().
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * A function that gets called with (path, stat) for each entry being
       * added. Return true to add the entry to the archive, or false to omit it.
       */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.undefined
     
     /**
       * Set to true to pack the targets of symbolic links. Without this
       * option, symbolic links are archived as such.
       */
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to any truthy value to create a gzipped archive,
       * or an object with settings for zlib.Gzip()
       */
-    var gzip: js.UndefOr[Boolean | ZlibOptions] = js.native
+    var gzip: js.UndefOr[Boolean | ZlibOptions] = js.undefined
     
     /**
       * Alias for follow.
       */
-    var h: js.UndefOr[Boolean] = js.native
+    var h: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The mode to set on the created file archive.
       */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /**
       * Do not recursively archive the contents of directories.
       */
-    var noDirRecurse: js.UndefOr[Boolean] = js.native
+    var noDirRecurse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress pax extended headers. Note that this means that long paths and
       * linkpaths will be truncated, and large or negative numeric values
       * may be interpreted incorrectly.
       */
-    var noPax: js.UndefOr[Boolean] = js.native
+    var noPax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that will get called with (message, data)
       * for any warnings encountered.
       */
-    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.native
+    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.undefined
     
     /**
       * Omit metadata that is system-specific: ctime, atime, uid, gid, uname,
       * gname, dev, ino, and nlink. Note that mtime is still included,
       * because this is necessary other time-based operations.
       */
-    var portable: js.UndefOr[Boolean] = js.native
+    var portable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A path portion to prefix onto the entries in the archive.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Allow absolute paths. By default, / is stripped from absolute paths.
       */
-    var preservePaths: js.UndefOr[Boolean] = js.native
+    var preservePaths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Treat warnings as crash-worthy errors. Default false.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for gzip.
       */
-    var z: js.UndefOr[Boolean | ZlibOptions] = js.native
+    var z: js.UndefOr[Boolean | ZlibOptions] = js.undefined
   }
   object CreateOptions {
     
@@ -1098,27 +998,26 @@ object mod {
     }
   }
   
-  @js.native
   trait ExtractOptions extends StObject {
     
     /**
       * Alias for cwd.
       */
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
-    var Directory: js.UndefOr[Boolean] = js.native
+    var Directory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extract files relative to the specified directory. Defaults to
       * process.cwd(). If provided, this must exist and must be a directory.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * A function that gets called with (path, stat) for each entry being
       * added. Return true to emit the entry from the archive, or false to skip it.
       */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.undefined
     
     /**
       * Set to a number to force ownership of all extracted files and folders,
@@ -1126,80 +1025,80 @@ object mod {
       * group id, regardless of the gid field in the archive. Cannot be used
       * along with preserveOwner. Requires also setting a uid option
       */
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
     /**
       * Alias for keep.
       */
-    var k: js.UndefOr[Boolean] = js.native
+    var k: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not overwrite existing files. In particular, if a file appears more
       * than once in an archive, later copies will not overwrite earlier copies
       */
-    var keep: js.UndefOr[Boolean] = js.native
+    var keep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for keep.
       */
-    var `keep-existing`: js.UndefOr[Boolean] = js.native
+    var `keep-existing`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for newer.
       */
-    var `keep-newer`: js.UndefOr[Boolean] = js.native
+    var `keep-newer`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for newer.
       */
-    var `keep-newer-files`: js.UndefOr[Boolean] = js.native
+    var `keep-newer-files`: js.UndefOr[Boolean] = js.undefined
     
-    var m: js.UndefOr[Boolean] = js.native
+    var m: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum size of meta entries that is supported. Defaults to 1 MB.
       */
-    var maxMetaEntrySize: js.UndefOr[Double] = js.native
+    var maxMetaEntrySize: js.UndefOr[Double] = js.undefined
     
     // The following options are mostly internal, but can be modified in some
     // advanced use cases, such as re-using caches between runs.
     /**
       * The maximum buffer size for fs.read() operations (in bytes). Defaults to 16 MB.
       */
-    var maxReadSize: js.UndefOr[Double] = js.native
+    var maxReadSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to true to keep the existing file on disk if it's newer than
       * the file in the archive.
       */
-    var newer: js.UndefOr[Boolean] = js.native
+    var newer: js.UndefOr[Boolean] = js.undefined
     
-    var `no-mtime`: js.UndefOr[Boolean] = js.native
+    var `no-mtime`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to omit writing mtime value for extracted entries.
       * [Alias: m, no-mtime]
       */
-    var noMtime: js.UndefOr[Boolean] = js.native
+    var noMtime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that gets called with (entry) for each entry that passes the
       * filter.
       */
-    var onentry: js.UndefOr[js.Function1[/* entry */ ReadEntry, Unit]] = js.native
+    var onentry: js.UndefOr[js.Function1[/* entry */ ReadEntry, Unit]] = js.undefined
     
     /**
       * A function that will get called with (message, data)
       * for any warnings encountered.
       */
-    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.native
+    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.undefined
     
     /**
       * Alias for preserveOwner.
       */
-    var p: js.UndefOr[Boolean] = js.native
+    var p: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * If true, tar will set the uid and gid of extracted entries to the uid
@@ -1210,29 +1109,29 @@ object mod {
       * never unpacked in this implementation, and modes
       * are set by default already.
       */
-    var preserveOwner: js.UndefOr[Boolean] = js.native
+    var preserveOwner: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Treat warnings as crash-worthy errors. Default false.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove the specified number of leading path elements. Pathnames with
       * fewer elements will be silently skipped. Note that the pathname
       * is edited after applying the filter, but before security checks.
       */
-    var strip: js.UndefOr[Double] = js.native
+    var strip: js.UndefOr[Double] = js.undefined
     
     /**
       * Alias for strip.
       */
-    var `strip-components`: js.UndefOr[Double] = js.native
+    var `strip-components`: js.UndefOr[Double] = js.undefined
     
     /**
       * Alias for strip.
       */
-    var stripComponents: js.UndefOr[Double] = js.native
+    var stripComponents: js.UndefOr[Double] = js.undefined
     
     /**
       * Provide a function that takes an entry object, and returns a stream,
@@ -1241,9 +1140,9 @@ object mod {
       * falsey value is provided, then the entry is written to disk as normal.
       * (To exclude items from extraction, use the filter option described above.)
       */
-    var transform: js.UndefOr[js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream | `false` | Null]]] = js.native
+    var transform: js.UndefOr[js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream | `false` | Null]]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Set to a number to force ownership of all extracted files and folders,
@@ -1251,7 +1150,7 @@ object mod {
       * user id, regardless of the uid field in the archive. Cannot be used
       * along with preserveOwner. Requires also setting a gid option.
       */
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
     /**
       * Unlink files before creating them. Without this option, tar overwrites
@@ -1259,7 +1158,7 @@ object mod {
       * existing hardlinks will be broken, as will any symlink that would
       * affect the location of an extracted file.
       */
-    var unlink: js.UndefOr[Boolean] = js.native
+    var unlink: js.UndefOr[Boolean] = js.undefined
   }
   object ExtractOptions {
     
@@ -1448,42 +1347,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Fields_ extends StObject {
     
-    var cksum: Double = js.native
+    var cksum: Double
     
-    var devmaj: Double = js.native
+    var devmaj: Double
     
-    var devmin: Double = js.native
+    var devmin: Double
     
-    var fill: Double = js.native
+    var fill: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var gname: Double = js.native
+    var gname: Double
     
-    var linkpath: Double = js.native
+    var linkpath: Double
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Double = js.native
+    var mtime: Double
     
-    var path: Double = js.native
+    var path: Double
     
-    var prefix: Double = js.native
+    var prefix: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var uid: Double = js.native
+    var uid: Double
     
-    var uname: Double = js.native
+    var uname: Double
     
-    var ustar: Double = js.native
+    var ustar: Double
     
-    var ustarvar: Double = js.native
+    var ustarvar: Double
   }
   object Fields_ {
     
@@ -1568,18 +1466,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
     /**
       * Alias for file.
       */
-    var f: js.UndefOr[String] = js.native
+    var f: js.UndefOr[String] = js.undefined
     
     /**
       * Uses the given file as the input or output of this function.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
   }
   object FileOptions {
     
@@ -1629,32 +1526,31 @@ object mod {
     var startBlockSize: Double = js.native
   }
   
-  @js.native
   trait HeaderProperties extends StObject {
     
-    var devmaj: js.UndefOr[Double] = js.native
+    var devmaj: js.UndefOr[Double] = js.undefined
     
-    var devmin: js.UndefOr[Double] = js.native
+    var devmin: js.UndefOr[Double] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var gname: js.UndefOr[String] = js.native
+    var gname: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Double] = js.native
+    var mtime: js.UndefOr[Double] = js.undefined
     
-    var noProprietary: js.UndefOr[Boolean] = js.native
+    var noProprietary: js.UndefOr[Boolean] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
-    var uname: js.UndefOr[String] = js.native
+    var uname: js.UndefOr[String] = js.undefined
   }
   object HeaderProperties {
     
@@ -1738,30 +1634,29 @@ object mod {
     }
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
     /**
       * Alias for cwd.
       */
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
     /**
       * Extract files relative to the specified directory. Defaults to
       * process.cwd(). If provided, this must exist and must be a directory.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * A function that gets called with (path, stat) for each entry being
       * added. Return true to emit the entry from the archive, or false to skip it.
       */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* entry */ FileStat, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* entry */ FileStat, Boolean]] = js.undefined
     
     /**
       * The maximum buffer size for fs.read() operations. Defaults to 16 MB.
       */
-    var maxReadSize: js.UndefOr[Double] = js.native
+    var maxReadSize: js.UndefOr[Double] = js.undefined
     
     /**
       * By default, entry streams are resumed immediately after the call to
@@ -1769,19 +1664,19 @@ object mod {
       * opting into this, the stream will never complete until the entry
       * data is consumed.
       */
-    var noResume: js.UndefOr[Boolean] = js.native
+    var noResume: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that gets called with (entry) for each entry that passes the
       * filter. This is important for when both file and sync are set, because
       * it will be called synchronously.
       */
-    var onentry: js.UndefOr[js.Function1[/* entry */ FileStat, Unit]] = js.native
+    var onentry: js.UndefOr[js.Function1[/* entry */ FileStat, Unit]] = js.undefined
     
     /**
       * Treat warnings as crash-worthy errors. Default false.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ListOptions {
     
@@ -1839,7 +1734,9 @@ object mod {
   }
   
   @js.native
-  trait PackStream extends ReadWriteStream {
+  trait PackStream
+    extends StObject
+       with ReadWriteStream {
     
     var _buffer: js.Array[Stream] = js.native
     
@@ -1867,7 +1764,9 @@ object mod {
   }
   
   @js.native
-  trait ParseStream extends ReadWriteStream {
+  trait ParseStream
+    extends StObject
+       with ReadWriteStream {
     
     var _ended: Boolean = js.native
     
@@ -1884,7 +1783,7 @@ object mod {
   
   @js.native
   trait ReadEntry
-    extends ^
+    extends typings.minipass.mod.^
        with HeaderProperties {
     
     /** The number of 512-byte blocks remaining to be written into the stream. */
@@ -1909,96 +1808,95 @@ object mod {
     var remain: Double = js.native
   }
   
-  @js.native
   trait ReplaceOptions extends StObject {
     
     /**
       * Alias for cwd.
       */
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
     /**
       * Alias for follow.
       */
-    var L: js.UndefOr[Boolean] = js.native
+    var L: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extract files relative to the specified directory. Defaults to
       * process.cwd(). If provided, this must exist and must be a directory.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Required. Write the tarball archive to the specified filename.
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * A function that gets called with (path, stat) for each entry being
       * added. Return true to emit the entry from the archive, or false to skip it.
       */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ FileStat, Boolean]] = js.undefined
     
     /**
       * Set to true to pack the targets of symbolic links. Without this
       * option, symbolic links are archived as such.
       */
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to any truthy value to create a gzipped archive,
       * or an object with settings for zlib.Gzip()
       */
-    var gzip: js.UndefOr[Boolean | ZlibOptions] = js.native
+    var gzip: js.UndefOr[Boolean | ZlibOptions] = js.undefined
     
     /**
       * Alias for follow.
       */
-    var h: js.UndefOr[Boolean] = js.native
+    var h: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum buffer size for fs.read() operations. Defaults to 16 MB.
       */
-    var maxReadSize: js.UndefOr[Double] = js.native
+    var maxReadSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Do not recursively archive the contents of directories.
       */
-    var noDirRecurse: js.UndefOr[Boolean] = js.native
+    var noDirRecurse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * uppress pax extended headers. Note that this means that long paths and
       * linkpaths will be truncated, and large or negative numeric values
       * may be interpreted incorrectly.
       */
-    var noPax: js.UndefOr[Boolean] = js.native
+    var noPax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that will get called with (message, data)
       * for any warnings encountered.
       */
-    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.native
+    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.undefined
     
     /**
       * A path portion to prefix onto the entries in the archive.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Allow absolute paths. By default, / is stripped from absolute paths.
       */
-    var preservePaths: js.UndefOr[Boolean] = js.native
+    var preservePaths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Treat warnings as crash-worthy errors. Default false.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Act synchronously. If this is set, then any provided file will be
       * fully written after the call to tar.c.
       */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object ReplaceOptions {
     

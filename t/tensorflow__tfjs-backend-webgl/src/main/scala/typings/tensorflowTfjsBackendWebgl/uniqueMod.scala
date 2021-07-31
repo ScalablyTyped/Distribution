@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniqueMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Unique", "unique")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Unique", JSImport.Namespace)
   @js.native
-  def unique(args: AttrsUniqueAttrs): js.Array[TensorInfo] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unique(args: AttrsUniqueAttrs): js.Array[TensorInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[TensorInfo]]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Unique", "uniqueConfig")
   @js.native

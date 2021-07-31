@@ -17,20 +17,48 @@ import typings.unsplashJs.mod.UnsplashApi.Users
 import typings.unsplashJs.unsplashJsStrings.days
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("unsplash-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("unsplash-js", JSImport.Default)
   @js.native
-  class default protected () extends Unsplash {
+  class default protected ()
+    extends StObject
+       with Unsplash {
     def this(options: AccessKey) = this()
+    
+    /* CompleteClass */
+    var auth: Auth = js.native
+    
+    /* CompleteClass */
+    var collections: Collections = js.native
+    
+    /* CompleteClass */
+    var currentUser: CurrentUser = js.native
+    
+    /* CompleteClass */
+    var photos: Photo = js.native
+    
+    /* CompleteClass */
+    override def request(requestOptions: Body): js.Promise[Response] = js.native
+    
+    /* CompleteClass */
+    var search: Search = js.native
+    
+    /* CompleteClass */
+    var stats: Stats = js.native
+    
+    /* CompleteClass */
+    var users: Users = js.native
   }
   
-  @JSImport("unsplash-js", "toJson")
-  @js.native
-  def toJson(response: js.Any): js.Any = js.native
+  @scala.inline
+  def toJson(response: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(response.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type CollectionIds = js.Array[Double | String]
   
@@ -564,24 +592,23 @@ object mod {
     def write_user: typings.unsplashJs.unsplashJsStrings.write_user = "write_user".asInstanceOf[typings.unsplashJs.unsplashJsStrings.write_user]
   }
   
-  @js.native
   trait Unsplash extends StObject {
     
-    var auth: Auth = js.native
+    var auth: Auth
     
-    var collections: Collections = js.native
+    var collections: Collections
     
-    var currentUser: CurrentUser = js.native
+    var currentUser: CurrentUser
     
-    var photos: Photo = js.native
+    var photos: Photo
     
-    def request(requestOptions: Body): js.Promise[Response] = js.native
+    def request(requestOptions: Body): js.Promise[Response]
     
-    var search: Search = js.native
+    var search: Search
     
-    var stats: Stats = js.native
+    var stats: Stats
     
-    var users: Users = js.native
+    var users: Users
   }
   object Unsplash {
     
@@ -648,73 +675,22 @@ object mod {
       def addPhotoToCollection(collectionId: Double, photoId: String): js.Promise[Response] = js.native
       
       def createCollection(title: String): js.Promise[Response] = js.native
-      def createCollection(title: String, description: js.UndefOr[scala.Nothing], isPrivate: Boolean): js.Promise[Response] = js.native
       def createCollection(title: String, description: String): js.Promise[Response] = js.native
       def createCollection(title: String, description: String, isPrivate: Boolean): js.Promise[Response] = js.native
+      def createCollection(title: String, description: Unit, isPrivate: Boolean): js.Promise[Response] = js.native
       
       def deleteCollection(id: Double): js.Promise[Response] = js.native
       
       def getCollection(id: Double): js.Promise[Response] = js.native
       
       def getCollectionPhotos(id: Double): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy
-      ): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
-      def getCollectionPhotos(id: Double, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
-      def getCollectionPhotos(id: Double, page: js.UndefOr[scala.Nothing], perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
       def getCollectionPhotos(id: Double, page: Double): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
-      def getCollectionPhotos(id: Double, page: Double, perPage: js.UndefOr[scala.Nothing], orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def getCollectionPhotos(
-        id: Double,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Orientation
-      ): js.Promise[Response] = js.native
       def getCollectionPhotos(id: Double, page: Double, perPage: Double): js.Promise[Response] = js.native
       def getCollectionPhotos(
         id: Double,
         page: Double,
         perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
+        orderBy: Unit,
         options: typings.unsplashJs.anon.Orientation
       ): js.Promise[Response] = js.native
       def getCollectionPhotos(id: Double, page: Double, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
@@ -725,37 +701,71 @@ object mod {
         orderBy: PhotoOrderBy,
         options: typings.unsplashJs.anon.Orientation
       ): js.Promise[Response] = js.native
+      def getCollectionPhotos(
+        id: Double,
+        page: Double,
+        perPage: Unit,
+        orderBy: Unit,
+        options: typings.unsplashJs.anon.Orientation
+      ): js.Promise[Response] = js.native
+      def getCollectionPhotos(id: Double, page: Double, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def getCollectionPhotos(
+        id: Double,
+        page: Double,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Orientation
+      ): js.Promise[Response] = js.native
+      def getCollectionPhotos(id: Double, page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def getCollectionPhotos(
+        id: Double,
+        page: Unit,
+        perPage: Double,
+        orderBy: Unit,
+        options: typings.unsplashJs.anon.Orientation
+      ): js.Promise[Response] = js.native
+      def getCollectionPhotos(id: Double, page: Unit, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def getCollectionPhotos(
+        id: Double,
+        page: Unit,
+        perPage: Double,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Orientation
+      ): js.Promise[Response] = js.native
+      def getCollectionPhotos(id: Double, page: Unit, perPage: Unit, orderBy: Unit, options: typings.unsplashJs.anon.Orientation): js.Promise[Response] = js.native
+      def getCollectionPhotos(id: Double, page: Unit, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def getCollectionPhotos(
+        id: Double,
+        page: Unit,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Orientation
+      ): js.Promise[Response] = js.native
       
       def listCollections(): js.Promise[Response] = js.native
-      def listCollections(page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
       def listCollections(page: Double): js.Promise[Response] = js.native
       def listCollections(page: Double, perPage: Double): js.Promise[Response] = js.native
+      def listCollections(page: Unit, perPage: Double): js.Promise[Response] = js.native
       
       def listRelatedCollections(collectionId: Double): js.Promise[Response] = js.native
       
       def removePhotoFromCollection(collectionId: Double, photoId: String): js.Promise[Response] = js.native
       
       def updateCollection(id: Double): js.Promise[Response] = js.native
-      def updateCollection(
-        id: Double,
-        title: js.UndefOr[scala.Nothing],
-        description: js.UndefOr[scala.Nothing],
-        isPrivate: Boolean
-      ): js.Promise[Response] = js.native
-      def updateCollection(id: Double, title: js.UndefOr[scala.Nothing], description: String): js.Promise[Response] = js.native
-      def updateCollection(id: Double, title: js.UndefOr[scala.Nothing], description: String, isPrivate: Boolean): js.Promise[Response] = js.native
       def updateCollection(id: Double, title: String): js.Promise[Response] = js.native
-      def updateCollection(id: Double, title: String, description: js.UndefOr[scala.Nothing], isPrivate: Boolean): js.Promise[Response] = js.native
       def updateCollection(id: Double, title: String, description: String): js.Promise[Response] = js.native
       def updateCollection(id: Double, title: String, description: String, isPrivate: Boolean): js.Promise[Response] = js.native
+      def updateCollection(id: Double, title: String, description: Unit, isPrivate: Boolean): js.Promise[Response] = js.native
+      def updateCollection(id: Double, title: Unit, description: String): js.Promise[Response] = js.native
+      def updateCollection(id: Double, title: Unit, description: String, isPrivate: Boolean): js.Promise[Response] = js.native
+      def updateCollection(id: Double, title: Unit, description: Unit, isPrivate: Boolean): js.Promise[Response] = js.native
     }
     
-    @js.native
     trait CurrentUser extends StObject {
       
-      def profile(): js.Promise[Response] = js.native
+      def profile(): js.Promise[Response]
       
-      def updateProfile(options: Bio): js.Promise[Response] = js.native
+      def updateProfile(options: Bio): js.Promise[Response]
     }
     object CurrentUser {
       
@@ -790,13 +800,13 @@ object mod {
       def likePhoto(id: String): js.Promise[Response] = js.native
       
       def listPhotos(): js.Promise[Response] = js.native
-      def listPhotos(page: js.UndefOr[scala.Nothing], perPage: js.UndefOr[scala.Nothing], orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def listPhotos(page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def listPhotos(page: js.UndefOr[scala.Nothing], perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
       def listPhotos(page: Double): js.Promise[Response] = js.native
-      def listPhotos(page: Double, perPage: js.UndefOr[scala.Nothing], orderBy: PhotoOrderBy): js.Promise[Response] = js.native
       def listPhotos(page: Double, perPage: Double): js.Promise[Response] = js.native
       def listPhotos(page: Double, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def listPhotos(page: Double, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def listPhotos(page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def listPhotos(page: Unit, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def listPhotos(page: Unit, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
       
       def trackDownload(photo: Links): js.Promise[Response] = js.native
       
@@ -807,44 +817,28 @@ object mod {
     trait Search extends StObject {
       
       def collections(keyword: String): js.Promise[Response] = js.native
-      def collections(keyword: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
       def collections(keyword: String, page: Double): js.Promise[Response] = js.native
       def collections(keyword: String, page: Double, perPage: Double): js.Promise[Response] = js.native
+      def collections(keyword: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
       
       def photos(keyword: String): js.Promise[Response] = js.native
-      def photos(
-        keyword: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        filters: typings.unsplashJs.anon.Collections
-      ): js.Promise[Response] = js.native
-      def photos(keyword: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def photos(
-        keyword: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        filters: typings.unsplashJs.anon.Collections
-      ): js.Promise[Response] = js.native
       def photos(keyword: String, page: Double): js.Promise[Response] = js.native
-      def photos(
-        keyword: String,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        filters: typings.unsplashJs.anon.Collections
-      ): js.Promise[Response] = js.native
       def photos(keyword: String, page: Double, perPage: Double): js.Promise[Response] = js.native
       def photos(keyword: String, page: Double, perPage: Double, filters: typings.unsplashJs.anon.Collections): js.Promise[Response] = js.native
+      def photos(keyword: String, page: Double, perPage: Unit, filters: typings.unsplashJs.anon.Collections): js.Promise[Response] = js.native
+      def photos(keyword: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def photos(keyword: String, page: Unit, perPage: Double, filters: typings.unsplashJs.anon.Collections): js.Promise[Response] = js.native
+      def photos(keyword: String, page: Unit, perPage: Unit, filters: typings.unsplashJs.anon.Collections): js.Promise[Response] = js.native
       
       def users(keyword: String): js.Promise[Response] = js.native
-      def users(keyword: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
       def users(keyword: String, page: Double): js.Promise[Response] = js.native
       def users(keyword: String, page: Double, perPage: Double): js.Promise[Response] = js.native
+      def users(keyword: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
     }
     
-    @js.native
     trait Stats extends StObject {
       
-      def total(): js.Promise[Response] = js.native
+      def total(): js.Promise[Response]
     }
     object Stats {
       
@@ -866,80 +860,18 @@ object mod {
     trait Users extends StObject {
       
       def collections(username: String): js.Promise[Response] = js.native
-      def collections(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: String
-      ): js.Promise[Response] = js.native
-      def collections(username: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def collections(username: String, page: js.UndefOr[scala.Nothing], perPage: Double, orderBy: String): js.Promise[Response] = js.native
       def collections(username: String, page: Double): js.Promise[Response] = js.native
-      def collections(username: String, page: Double, perPage: js.UndefOr[scala.Nothing], orderBy: String): js.Promise[Response] = js.native
       def collections(username: String, page: Double, perPage: Double): js.Promise[Response] = js.native
       def collections(username: String, page: Double, perPage: Double, orderBy: String): js.Promise[Response] = js.native
+      def collections(username: String, page: Double, perPage: Unit, orderBy: String): js.Promise[Response] = js.native
+      def collections(username: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def collections(username: String, page: Unit, perPage: Double, orderBy: String): js.Promise[Response] = js.native
+      def collections(username: String, page: Unit, perPage: Unit, orderBy: String): js.Promise[Response] = js.native
       
       def likes(username: String): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy
-      ): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
-      def likes(username: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
-      def likes(username: String, page: js.UndefOr[scala.Nothing], perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: PhotoOrderBy,
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
       def likes(username: String, page: Double): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
-      def likes(username: String, page: Double, perPage: js.UndefOr[scala.Nothing], orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
       def likes(username: String, page: Double, perPage: Double): js.Promise[Response] = js.native
-      def likes(
-        username: String,
-        page: Double,
-        perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
-        options: OrientationOrientation
-      ): js.Promise[Response] = js.native
+      def likes(username: String, page: Double, perPage: Double, orderBy: Unit, options: OrientationOrientation): js.Promise[Response] = js.native
       def likes(username: String, page: Double, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
       def likes(
         username: String,
@@ -948,66 +880,43 @@ object mod {
         orderBy: PhotoOrderBy,
         options: OrientationOrientation
       ): js.Promise[Response] = js.native
+      def likes(username: String, page: Double, perPage: Unit, orderBy: Unit, options: OrientationOrientation): js.Promise[Response] = js.native
+      def likes(username: String, page: Double, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def likes(
+        username: String,
+        page: Double,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: OrientationOrientation
+      ): js.Promise[Response] = js.native
+      def likes(username: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def likes(username: String, page: Unit, perPage: Double, orderBy: Unit, options: OrientationOrientation): js.Promise[Response] = js.native
+      def likes(username: String, page: Unit, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def likes(
+        username: String,
+        page: Unit,
+        perPage: Double,
+        orderBy: PhotoOrderBy,
+        options: OrientationOrientation
+      ): js.Promise[Response] = js.native
+      def likes(username: String, page: Unit, perPage: Unit, orderBy: Unit, options: OrientationOrientation): js.Promise[Response] = js.native
+      def likes(username: String, page: Unit, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def likes(
+        username: String,
+        page: Unit,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: OrientationOrientation
+      ): js.Promise[Response] = js.native
       
       def photos(username: String): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy
-      ): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
-      def photos(username: String, page: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
-      def photos(username: String, page: js.UndefOr[scala.Nothing], perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: js.UndefOr[scala.Nothing],
-        perPage: Double,
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
       def photos(username: String, page: Double): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: js.UndefOr[scala.Nothing],
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
-      def photos(username: String, page: Double, perPage: js.UndefOr[scala.Nothing], orderBy: PhotoOrderBy): js.Promise[Response] = js.native
-      def photos(
-        username: String,
-        page: Double,
-        perPage: js.UndefOr[scala.Nothing],
-        orderBy: PhotoOrderBy,
-        options: typings.unsplashJs.anon.Stats
-      ): js.Promise[Response] = js.native
       def photos(username: String, page: Double, perPage: Double): js.Promise[Response] = js.native
       def photos(
         username: String,
         page: Double,
         perPage: Double,
-        orderBy: js.UndefOr[scala.Nothing],
+        orderBy: Unit,
         options: typings.unsplashJs.anon.Stats
       ): js.Promise[Response] = js.native
       def photos(username: String, page: Double, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
@@ -1018,11 +927,51 @@ object mod {
         orderBy: PhotoOrderBy,
         options: typings.unsplashJs.anon.Stats
       ): js.Promise[Response] = js.native
+      def photos(
+        username: String,
+        page: Double,
+        perPage: Unit,
+        orderBy: Unit,
+        options: typings.unsplashJs.anon.Stats
+      ): js.Promise[Response] = js.native
+      def photos(username: String, page: Double, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def photos(
+        username: String,
+        page: Double,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Stats
+      ): js.Promise[Response] = js.native
+      def photos(username: String, page: Unit, perPage: Double): js.Promise[Response] = js.native
+      def photos(
+        username: String,
+        page: Unit,
+        perPage: Double,
+        orderBy: Unit,
+        options: typings.unsplashJs.anon.Stats
+      ): js.Promise[Response] = js.native
+      def photos(username: String, page: Unit, perPage: Double, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def photos(
+        username: String,
+        page: Unit,
+        perPage: Double,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Stats
+      ): js.Promise[Response] = js.native
+      def photos(username: String, page: Unit, perPage: Unit, orderBy: Unit, options: typings.unsplashJs.anon.Stats): js.Promise[Response] = js.native
+      def photos(username: String, page: Unit, perPage: Unit, orderBy: PhotoOrderBy): js.Promise[Response] = js.native
+      def photos(
+        username: String,
+        page: Unit,
+        perPage: Unit,
+        orderBy: PhotoOrderBy,
+        options: typings.unsplashJs.anon.Stats
+      ): js.Promise[Response] = js.native
       
       def profile(username: String): js.Promise[Response] = js.native
       
       def statistics(username: String): js.Promise[Response] = js.native
-      def statistics(username: String, resolution: js.UndefOr[scala.Nothing], quantity: Double): js.Promise[Response] = js.native
+      def statistics(username: String, resolution: Unit, quantity: Double): js.Promise[Response] = js.native
       @JSName("statistics")
       def statistics_days(username: String, resolution: days): js.Promise[Response] = js.native
       @JSName("statistics")

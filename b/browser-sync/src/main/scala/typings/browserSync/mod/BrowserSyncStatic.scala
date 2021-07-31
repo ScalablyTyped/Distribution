@@ -4,32 +4,30 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserSyncStatic extends BrowserSyncInstance {
+trait BrowserSyncStatic
+  extends StObject
+     with BrowserSyncInstance {
   
   /**
     * Start the Browsersync service. This will launch a server, proxy or start the snippet mode
     * depending on your use-case.
     */
   def apply(): BrowserSyncInstance = js.native
-  def apply(
-    config: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, _]
-  ): BrowserSyncInstance = js.native
+  def apply(config: Unit, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, js.Any]): BrowserSyncInstance = js.native
   def apply(config: Options): BrowserSyncInstance = js.native
-  def apply(config: Options, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, _]): BrowserSyncInstance = js.native
+  def apply(config: Options, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, js.Any]): BrowserSyncInstance = js.native
   
   /**
     * Create a Browsersync instance
     * @param name an identifier that can used for retrieval later
     */
   def create(): BrowserSyncInstance = js.native
-  def create(name: js.UndefOr[scala.Nothing], emitter: EventEmitter): BrowserSyncInstance = js.native
   def create(name: String): BrowserSyncInstance = js.native
   def create(name: String, emitter: EventEmitter): BrowserSyncInstance = js.native
+  def create(name: Unit, emitter: EventEmitter): BrowserSyncInstance = js.native
   
   /**
     * Get a single instance by name. This is useful if you have your build scripts in separate files

@@ -2,13 +2,13 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrackButtonOptions extends MenuButtonOptions {
+trait TrackButtonOptions
+  extends StObject
+     with MenuButtonOptions {
   
-  var track: js.Array[Track] = js.native
+  var track: js.Array[Track]
 }
 object TrackButtonOptions {
   

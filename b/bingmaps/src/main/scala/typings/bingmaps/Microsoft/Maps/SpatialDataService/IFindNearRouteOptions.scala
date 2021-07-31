@@ -2,11 +2,11 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFindNearRouteOptions extends ISpatialFilterOptions {
+trait IFindNearRouteOptions
+  extends StObject
+     with ISpatialFilterOptions {
   
   /**
     * A list of values that limit the use of highways and toll roads in the route.
@@ -16,21 +16,21 @@ trait IFindNearRouteOptions extends ISpatialFilterOptions {
     * • minimizeHighways - Minimizes (tries to avoid) the use of highways in the route.
     * • minimizeTolls - Minimizes (tries to avoid) the use of toll roads in the route.
     */
-  var avoid: js.UndefOr[js.Array[String]] = js.native
+  var avoid: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An integer distance specified in meters.
     * Use this parameter to make sure that the moving vehicle has enough distance 
     * to make the first turn
     */
-  var distanceBeforeFirstTurn: js.UndefOr[Double] = js.native
+  var distanceBeforeFirstTurn: js.UndefOr[Double] = js.undefined
   
   /** 
     * An integer value between 0 and 359 that represents degrees from north 
     * where north is 0 degrees and the heading is specified clockwise from north. 
     * For example, setting the heading of 270 degrees creates a route that initially heads west 
     */
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   /**
     * One of the following values:
@@ -38,14 +38,14 @@ trait IFindNearRouteOptions extends ISpatialFilterOptions {
     * • time[default] - The route is calculated to minimize the time.Traffic information is not used.
     * • timeWithTraffic - The route is calculated to minimize the time and uses current traffic information.
     */
-  var optimize: js.UndefOr[String] = js.native
+  var optimize: js.UndefOr[String] = js.undefined
   
   /** 
     * One of the following values:
     *  • Driving [default]
     *  • Walking
     */
-  var travelMode: js.UndefOr[String] = js.native
+  var travelMode: js.UndefOr[String] = js.undefined
 }
 object IFindNearRouteOptions {
   

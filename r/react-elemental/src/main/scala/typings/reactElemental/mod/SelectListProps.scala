@@ -3,25 +3,23 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectListProps extends StObject {
   
-  val error: js.UndefOr[String] = js.native
+  val error: js.UndefOr[String] = js.undefined
   
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
-  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   
-  val options: js.UndefOr[js.Array[typings.reactElemental.anon.Label]] = js.native
+  val options: js.UndefOr[js.Array[typings.reactElemental.anon.Label]] = js.undefined
   
-  val placeholder: js.UndefOr[String] = js.native
+  val placeholder: js.UndefOr[String] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val width: js.UndefOr[Double | String] = js.native
+  val width: js.UndefOr[Double | String] = js.undefined
 }
 object SelectListProps {
   

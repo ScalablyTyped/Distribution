@@ -21,24 +21,30 @@ import typings.std.AbortSignal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
   @JSImport("gaxios/build/src/common", "GaxiosError")
   @js.native
-  class GaxiosError[T] protected () extends Error {
+  class GaxiosError[T] protected ()
+    extends StObject
+       with Error {
     def this(message: String, options: GaxiosOptions, response: GaxiosResponse[T]) = this()
     
     var code: js.UndefOr[String] = js.native
     
     var config: GaxiosOptions = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     var response: js.UndefOr[GaxiosResponse[T]] = js.native
   }
   
-  @js.native
   trait GaxiosOptions extends StObject {
     
     /**
@@ -48,58 +54,58 @@ object commonMod {
     var adapter: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* defaultAdapter */ js.Function1[/* options */ this.type, GaxiosPromise[_]], 
-          GaxiosPromise[_]
+          /* defaultAdapter */ js.Function1[/* options */ this.type, GaxiosPromise[js.Any]], 
+          GaxiosPromise[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.native
+    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.undefined
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /**
       * The maximum size of the http response content in bytes allowed.
       */
-    var maxContentLength: js.UndefOr[Double] = js.native
+    var maxContentLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of redirects to follow. Defaults to 20.
       */
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[GET | HEAD | POST | DELETE | PUT | CONNECT | OPTIONS | TRACE | PATCH] = js.native
+    var method: js.UndefOr[GET | HEAD | POST | DELETE | PUT | CONNECT | OPTIONS | TRACE | PATCH] = js.undefined
     
-    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var paramsSerializer: js.UndefOr[js.Function1[/* params */ StringDictionary[String | Double], String]] = js.native
+    var paramsSerializer: js.UndefOr[js.Function1[/* params */ StringDictionary[String | Double], String]] = js.undefined
     
-    var responseType: js.UndefOr[arraybuffer | blob | json | text | stream] = js.native
+    var responseType: js.UndefOr[arraybuffer | blob | json | text | stream] = js.undefined
     
-    var retry: js.UndefOr[Boolean] = js.native
+    var retry: js.UndefOr[Boolean] = js.undefined
     
-    var retryConfig: js.UndefOr[RetryConfig] = js.native
+    var retryConfig: js.UndefOr[RetryConfig] = js.undefined
     
-    var signal: js.UndefOr[AbortSignal] = js.native
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var validateStatus: js.UndefOr[js.Function1[/* status */ Double, Boolean]] = js.native
+    var validateStatus: js.UndefOr[js.Function1[/* status */ Double, Boolean]] = js.undefined
   }
   object GaxiosOptions {
     
@@ -114,7 +120,7 @@ object commonMod {
       
       @scala.inline
       def setAdapter(
-        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[_]]) => GaxiosPromise[_]
+        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[js.Any]]) => GaxiosPromise[js.Any]
       ): Self = StObject.set(x, "adapter", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -247,20 +253,19 @@ object commonMod {
   
   type GaxiosPromise[T] = js.Promise[GaxiosResponse[T]]
   
-  @js.native
   trait GaxiosResponse[T] extends StObject {
     
-    var config: GaxiosOptions = js.native
+    var config: GaxiosOptions
     
-    var data: T = js.native
+    var data: T
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var request: GaxiosXMLHttpRequest = js.native
+    var request: GaxiosXMLHttpRequest
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object GaxiosResponse {
     
@@ -278,7 +283,7 @@ object commonMod {
     }
     
     @scala.inline
-    implicit class GaxiosResponseMutableBuilder[Self <: GaxiosResponse[_], T] (val x: Self with GaxiosResponse[T]) extends AnyVal {
+    implicit class GaxiosResponseMutableBuilder[Self <: GaxiosResponse[?], T] (val x: Self & GaxiosResponse[T]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -300,10 +305,9 @@ object commonMod {
     }
   }
   
-  @js.native
   trait GaxiosXMLHttpRequest extends StObject {
     
-    var responseURL: String = js.native
+    var responseURL: String
   }
   object GaxiosXMLHttpRequest {
     
@@ -323,50 +327,49 @@ object commonMod {
   
   type Headers = StringDictionary[js.Any]
   
-  @js.native
   trait RetryConfig extends StObject {
     
     /**
       * The number of retries already attempted.
       */
-    var currentRetryAttempt: js.UndefOr[Double] = js.native
+    var currentRetryAttempt: js.UndefOr[Double] = js.undefined
     
     /**
       * The HTTP Methods that will be automatically retried.
       * Defaults to ['GET','PUT','HEAD','OPTIONS','DELETE']
       */
-    var httpMethodsToRetry: js.UndefOr[js.Array[String]] = js.native
+    var httpMethodsToRetry: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * When there is no response, the number of retries to attempt. Defaults to 2.
       */
-    var noResponseRetries: js.UndefOr[Double] = js.native
+    var noResponseRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to invoke when a retry attempt is made.
       */
-    var onRetryAttempt: js.UndefOr[js.Function1[/* err */ GaxiosError[_], js.Promise[Unit] | Unit]] = js.native
+    var onRetryAttempt: js.UndefOr[js.Function1[/* err */ GaxiosError[js.Any], js.Promise[Unit] | Unit]] = js.undefined
     
     /**
       * The number of times to retry the request.  Defaults to 3.
       */
-    var retry: js.UndefOr[Double] = js.native
+    var retry: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of time to initially delay the retry, in ms.  Defaults to 100ms.
       */
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to invoke which determines if you should retry
       */
-    var shouldRetry: js.UndefOr[js.Function1[/* err */ GaxiosError[_], js.Promise[Boolean] | Boolean]] = js.native
+    var shouldRetry: js.UndefOr[js.Function1[/* err */ GaxiosError[js.Any], js.Promise[Boolean] | Boolean]] = js.undefined
     
     /**
       * The HTTP response status codes that will automatically be retried.
       * Defaults to: [[100, 199], [429, 429], [500, 599]]
       */
-    var statusCodesToRetry: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+    var statusCodesToRetry: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   }
   object RetryConfig {
     
@@ -401,7 +404,7 @@ object commonMod {
       def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
       
       @scala.inline
-      def setOnRetryAttempt(value: /* err */ GaxiosError[_] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
+      def setOnRetryAttempt(value: /* err */ GaxiosError[js.Any] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
@@ -419,7 +422,7 @@ object commonMod {
       def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
       @scala.inline
-      def setShouldRetry(value: /* err */ GaxiosError[_] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
+      def setShouldRetry(value: /* err */ GaxiosError[js.Any] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
       
       @scala.inline
       def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)

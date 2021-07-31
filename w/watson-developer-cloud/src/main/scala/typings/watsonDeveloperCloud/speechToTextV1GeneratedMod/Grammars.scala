@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Grammars. */
-@js.native
 trait Grammars extends StObject {
   
   /** An array of `Grammar` objects that provides information about the grammars for the custom model. The array is empty if the custom model has no grammars. */
-  var grammars: js.Array[Grammar] = js.native
+  var grammars: js.Array[Grammar]
 }
 object Grammars {
   

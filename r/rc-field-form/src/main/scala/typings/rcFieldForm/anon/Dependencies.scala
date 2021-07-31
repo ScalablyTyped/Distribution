@@ -4,19 +4,17 @@ import typings.rcFieldForm.interfaceMod.NamePath
 import typings.rcFieldForm.interfaceMod.Rule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dependencies extends StObject {
   
-  var dependencies: js.UndefOr[js.Array[NamePath]] = js.native
+  var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
   
-  var initialValue: js.UndefOr[js.Any] = js.native
+  var initialValue: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[NamePath] = js.native
+  var name: js.UndefOr[NamePath] = js.undefined
   
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
 }
 object Dependencies {
   

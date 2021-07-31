@@ -2,13 +2,13 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultObservable extends Destroyable {
+trait DefaultObservable
+  extends StObject
+     with Destroyable {
   
-  def setToDefault(): js.Any = js.native
+  def setToDefault(): js.Any
 }
 object DefaultObservable {
   

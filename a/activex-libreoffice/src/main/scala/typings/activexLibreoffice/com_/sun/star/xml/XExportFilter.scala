@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * interface to implement for an XML-based import filter. i
   * @since OOo 1.1.2
   */
-@js.native
-trait XExportFilter extends XInterface {
+trait XExportFilter
+  extends StObject
+     with XInterface {
   
   /**
     * performs the import.
@@ -25,7 +25,7 @@ trait XExportFilter extends XInterface {
     * @param msUserData Sequence of strings which contains the user data defined in the TypeDetection.xml (???)
     * @returns `TRUE` if import process is successful
     */
-  def exporter(aSourceData: SeqEquiv[PropertyValue], msUserData: SeqEquiv[String]): Boolean = js.native
+  def exporter(aSourceData: SeqEquiv[PropertyValue], msUserData: SeqEquiv[String]): Boolean
 }
 object XExportFilter {
   

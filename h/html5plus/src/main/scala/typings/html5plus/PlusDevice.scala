@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,9 +28,9 @@ trait PlusDevice extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   def dial(): Unit = js.native
-  def dial(number: js.UndefOr[scala.Nothing], confirm: Boolean): Unit = js.native
   def dial(number: String): Unit = js.native
   def dial(number: String, confirm: Boolean): Unit = js.native
+  def dial(number: Unit, confirm: Boolean): Unit = js.native
   
   /**
     * 获取设备的系统音量
@@ -59,7 +58,7 @@ trait PlusDevice extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var imsi: js.UndefOr[js.Array[_]] = js.native
+  var imsi: js.UndefOr[js.Array[js.Any]] = js.native
   
   /**
     * 获取程序是否一直保持唤醒（屏幕常亮）状态

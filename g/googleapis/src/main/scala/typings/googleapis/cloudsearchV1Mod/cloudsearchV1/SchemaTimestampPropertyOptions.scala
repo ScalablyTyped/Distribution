@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for timestamp properties.
   */
-@js.native
 trait SchemaTimestampPropertyOptions extends StObject {
   
   /**
     * If set, describes how the timestamp should be used as a search operator.
     */
-  var operatorOptions: js.UndefOr[SchemaTimestampOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[SchemaTimestampOperatorOptions] = js.undefined
 }
 object SchemaTimestampPropertyOptions {
   

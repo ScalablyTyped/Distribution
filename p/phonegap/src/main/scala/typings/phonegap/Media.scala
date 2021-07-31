@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.MediaError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
@@ -19,7 +18,8 @@ interface InAppBrowser {
 */
 @js.native
 trait Media
-  extends Instantiable2[/* src */ String, /* mediaSuccess */ js.Function, Media]
+  extends StObject
+     with Instantiable2[/* src */ String, /* mediaSuccess */ js.Function, Media]
      with Instantiable3[
       /* src */ String, 
       /* mediaSuccess */ js.Function, 
@@ -29,13 +29,13 @@ trait Media
      with Instantiable4[
       /* src */ String, 
       /* mediaSuccess */ js.Function, 
-      js.UndefOr[/* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any]], 
+      (/* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any]) | (/* mediaError */ Unit), 
       /* mediaStatus */ js.Function, 
       Media
     ] {
   
   def getCurrentPosition(mediaSuccess: js.Function): Unit = js.native
-  def getCurrentPosition(mediaSuccess: js.Function, mediaError: js.Function1[/* mediaError */ MediaError, _]): Unit = js.native
+  def getCurrentPosition(mediaSuccess: js.Function, mediaError: js.Function1[/* mediaError */ MediaError, js.Any]): Unit = js.native
   
   def getDuration(): js.Any = js.native
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to manipulations on accordion groups.
   */
-@js.native
-trait BootstrapClientAccordionGroupCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+trait BootstrapClientAccordionGroupCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
   
   /**
     * Gets the group object related to the event.
     */
-  var group: BootstrapClientAccordionGroup = js.native
+  var group: BootstrapClientAccordionGroup
 }
 object BootstrapClientAccordionGroupCancelEventArgs {
   

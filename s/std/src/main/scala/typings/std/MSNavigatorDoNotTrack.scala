@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSNavigatorDoNotTrack extends StObject {
   
-  def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
+  def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean
   
-  def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean = js.native
+  def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean
   
-  def removeSiteSpecificTrackingException(args: ExceptionInformation): Unit = js.native
+  def removeSiteSpecificTrackingException(args: ExceptionInformation): Unit
   
-  def removeWebWideTrackingException(args: ExceptionInformation): Unit = js.native
+  def removeWebWideTrackingException(args: ExceptionInformation): Unit
   
-  def storeSiteSpecificTrackingException(args: StoreSiteSpecificExceptionsInformation): Unit = js.native
+  def storeSiteSpecificTrackingException(args: StoreSiteSpecificExceptionsInformation): Unit
   
-  def storeWebWideTrackingException(args: StoreExceptionsInformation): Unit = js.native
+  def storeWebWideTrackingException(args: StoreExceptionsInformation): Unit
 }
 object MSNavigatorDoNotTrack {
   

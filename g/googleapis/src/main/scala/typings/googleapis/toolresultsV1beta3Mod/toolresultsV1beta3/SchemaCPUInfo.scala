@@ -2,27 +2,25 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCPUInfo extends StObject {
   
   /**
     * description of the device processor ie &#39;1.8 GHz hexa core 64-bit
     * ARMv8-A&#39;
     */
-  var cpuProcessor: js.UndefOr[String] = js.native
+  var cpuProcessor: js.UndefOr[String] = js.undefined
   
   /**
     * the CPU clock speed in GHz
     */
-  var cpuSpeedInGhz: js.UndefOr[Double] = js.native
+  var cpuSpeedInGhz: js.UndefOr[Double] = js.undefined
   
   /**
     * the number of CPU cores
     */
-  var numberOfCores: js.UndefOr[Double] = js.native
+  var numberOfCores: js.UndefOr[Double] = js.undefined
 }
 object SchemaCPUInfo {
   

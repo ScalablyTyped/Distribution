@@ -10,9 +10,9 @@ Typings are for version 0.1.0
 | ------------------ | :-------------: |
 | Full name          | wonder.js |
 | Keywords           | wonder, webgl, functional-programming, high-performance, 3d, engine, reasonml, reason, bucklescript |
-| # releases         | 235 |
-| # dependents       | 2 |
-| # downloads        | 37122 |
+| # releases         | 33 |
+| # dependents       | 3 |
+| # downloads        | 12590 |
 | # stars            | 1 |
 
 ## Links

@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleLiteral
-  extends Literal
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with Literal {
   
-  var raw: js.UndefOr[String] = js.native
+  var raw: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_SimpleLiteral: typings.estree.estreeStrings.Literal = js.native
+  var type_SimpleLiteral: typings.estree.estreeStrings.Literal
   
-  var value: String | Boolean | Double | Null = js.native
+  var value: String | Boolean | Double | Null
 }
 object SimpleLiteral {
   
   @scala.inline
-  def apply(`type`: typings.estree.estreeStrings.Literal): SimpleLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): SimpleLiteral = {
+    val __obj = js.Dynamic.literal(value = null)
+    __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[SimpleLiteral]
   }
   

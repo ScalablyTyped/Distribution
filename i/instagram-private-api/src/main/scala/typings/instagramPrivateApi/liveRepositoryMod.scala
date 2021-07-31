@@ -23,7 +23,6 @@ import typings.instagramPrivateApi.liveViewerListResponseMod.LiveViewerListRespo
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveRepositoryMod {
@@ -33,22 +32,22 @@ object liveRepositoryMod {
   class LiveRepository protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    def activateQuestion(broadcastId: String, questionId: String): js.Promise[_] = js.native
+    def activateQuestion(broadcastId: String, questionId: String): js.Promise[js.Any] = js.native
     
     def addPostLiveToIgtv(hasBroadcastIdTitleDescriptionCoverUploadIdIgtvSharePreviewToFeed: CoverUploadId): js.Promise[LiveAddPostLiveToIgtvResponseRootObject] = js.native
     
     def addToPostLive(broadcastId: String): js.Promise[LiveAddToPostResponse] = js.native
     
-    def comment(broadcastId: String, message: String): js.Promise[_] = js.native
+    def comment(broadcastId: String, message: String): js.Promise[js.Any] = js.native
     
     def create(hasPreviewHeightPreviewWidthMessage: Message): js.Promise[LiveCreateBroadcastResponseRootObject] = js.native
     
-    def createQuestion(broadcastId: String, question: String): js.Promise[_] = js.native
+    def createQuestion(broadcastId: String, question: String): js.Promise[js.Any] = js.native
     
-    def deactivateQuestion(broadcastId: String, questionId: String): js.Promise[_] = js.native
+    def deactivateQuestion(broadcastId: String, questionId: String): js.Promise[js.Any] = js.native
     
-    def endBroadcast(broadcastId: String): js.Promise[_] = js.native
-    def endBroadcast(broadcastId: String, endAfterCopyrightWarning: Boolean): js.Promise[_] = js.native
+    def endBroadcast(broadcastId: String): js.Promise[js.Any] = js.native
+    def endBroadcast(broadcastId: String, endAfterCopyrightWarning: Boolean): js.Promise[js.Any] = js.native
     
     def getComment(hasBroadcastIdCommentsRequestedLastCommentTs: BroadcastId_): js.Promise[LiveCommentsResponseRootObject] = js.native
     
@@ -60,9 +59,9 @@ object liveRepositoryMod {
     def getLikeCount(broadcastId: String, likeTs: String): js.Promise[LiveLikeCountResponseRootObject] = js.native
     def getLikeCount(broadcastId: String, likeTs: Double): js.Promise[LiveLikeCountResponseRootObject] = js.native
     
-    def getLivePresence(): js.Promise[_] = js.native
+    def getLivePresence(): js.Promise[js.Any] = js.native
     
-    def getLiveQuestions(broadcastId: String): js.Promise[_] = js.native
+    def getLiveQuestions(broadcastId: String): js.Promise[js.Any] = js.native
     
     def getPostLiveThumbnails(broadcastId: String): js.Promise[LivePostLiveThumbnailsResponseRootObject] = js.native
     
@@ -79,17 +78,17 @@ object liveRepositoryMod {
     
     def muteComment(broadcastId: String): js.Promise[LiveSwitchCommentsResponseRootObject] = js.native
     
-    def pinComment(broadcastId: String, commentId: String): js.Promise[_] = js.native
+    def pinComment(broadcastId: String, commentId: String): js.Promise[js.Any] = js.native
     
-    def resumeBroadcastAfterContentMatch(broadcastId: String): js.Promise[_] = js.native
+    def resumeBroadcastAfterContentMatch(broadcastId: String): js.Promise[js.Any] = js.native
     
     def start(broadcastId: String): js.Promise[LiveStartBroadcastResponseRootObject] = js.native
     def start(broadcastId: String, sendNotifications: Boolean): js.Promise[LiveStartBroadcastResponseRootObject] = js.native
     
     def unmuteComment(broadcastId: String): js.Promise[LiveSwitchCommentsResponseRootObject] = js.native
     
-    def unpinComment(broadcastId: String, commentId: String): js.Promise[_] = js.native
+    def unpinComment(broadcastId: String, commentId: String): js.Promise[js.Any] = js.native
     
-    def wave(broadcastId: String, viewerId: String): js.Promise[_] = js.native
+    def wave(broadcastId: String, viewerId: String): js.Promise[js.Any] = js.native
   }
 }

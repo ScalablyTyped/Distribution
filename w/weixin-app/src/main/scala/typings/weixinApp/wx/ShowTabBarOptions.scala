@@ -2,15 +2,14 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowTabBarOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 是否需要动画效果，默认无 */
-  var aniamtion: js.UndefOr[Boolean] = js.native
+  var aniamtion: js.UndefOr[Boolean] = js.undefined
 }
 object ShowTabBarOptions {
   

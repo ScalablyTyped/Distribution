@@ -3,19 +3,17 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisputeStatusHistory extends StObject {
   
-  var disbursementDate: Date = js.native
+  var disbursementDate: Date
   
-  var effectiveDate: Date = js.native
+  var effectiveDate: Date
   
-  var status: DisputeStatus = js.native
+  var status: DisputeStatus
   
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object DisputeStatusHistory {
   

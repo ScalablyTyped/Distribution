@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.UIComponent")
 @js.native
 abstract class UIComponent protected ()
-  extends typings.openui5.sap.ui.core.UIComponent {
+  extends StObject
+     with typings.openui5.sap.ui.core.UIComponent {
   /**
     * Base Class for UIComponent.If you are extending an UIComponent make sure you read the {@link
     * #.extend} documentation since the metadata is special.Accepts an object literal

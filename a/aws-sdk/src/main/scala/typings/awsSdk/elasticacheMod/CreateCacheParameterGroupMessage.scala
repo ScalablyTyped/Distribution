@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCacheParameterGroupMessage extends StObject {
   
   /**
     * The name of the cache parameter group family that the cache parameter group can be used with. Valid values are: memcached1.4 | memcached1.5 | memcached1.6 | redis2.6 | redis2.8 | redis3.2 | redis4.0 | redis5.0 | redis6.x | 
     */
-  var CacheParameterGroupFamily: String = js.native
+  var CacheParameterGroupFamily: String
   
   /**
     * A user-specified name for the cache parameter group.
     */
-  var CacheParameterGroupName: String = js.native
+  var CacheParameterGroupName: String
   
   /**
     * A user-specified description for the cache parameter group.
     */
-  var Description: String = js.native
+  var Description: String
 }
 object CreateCacheParameterGroupMessage {
   

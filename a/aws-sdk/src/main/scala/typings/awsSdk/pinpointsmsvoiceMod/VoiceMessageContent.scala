@@ -2,17 +2,15 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceMessageContent extends StObject {
   
-  var CallInstructionsMessage: js.UndefOr[CallInstructionsMessageType] = js.native
+  var CallInstructionsMessage: js.UndefOr[CallInstructionsMessageType] = js.undefined
   
-  var PlainTextMessage: js.UndefOr[PlainTextMessageType] = js.native
+  var PlainTextMessage: js.UndefOr[PlainTextMessageType] = js.undefined
   
-  var SSMLMessage: js.UndefOr[SSMLMessageType] = js.native
+  var SSMLMessage: js.UndefOr[SSMLMessageType] = js.undefined
 }
 object VoiceMessageContent {
   

@@ -2,13 +2,13 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseModuleSpecifier extends BaseNode {
+trait BaseModuleSpecifier
+  extends StObject
+     with BaseNode {
   
-  var local: Identifier = js.native
+  var local: Identifier
 }
 object BaseModuleSpecifier {
   

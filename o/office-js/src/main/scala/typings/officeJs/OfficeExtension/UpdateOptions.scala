@@ -2,19 +2,17 @@ package typings.officeJs.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an option for suppressing an error when the object that is used to set multiple properties tries to set read-only properties.
   */
-@js.native
 trait UpdateOptions extends StObject {
   
   /**
     * Throw an error if the passed-in property list includes read-only properties (default = true).
     */
-  var throwOnReadOnly: js.UndefOr[Boolean] = js.native
+  var throwOnReadOnly: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateOptions {
   

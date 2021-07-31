@@ -4,14 +4,15 @@ import typings.pgPromise.mod.errors.PreparedStatementError
 import typings.pgPromise.pgPromiseStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // PreparedStatement class;
 // API: http://vitaly-t.github.io/pg-promise/PreparedStatement.html
 @JSImport("pg-promise", "PreparedStatement")
 @js.native
-class PreparedStatement () extends _QueryParam {
+class PreparedStatement ()
+  extends StObject
+     with _QueryParam {
   def this(options: IPreparedStatement) = this()
   
   // advanced properties:
@@ -30,5 +31,5 @@ class PreparedStatement () extends _QueryParam {
   
   def toString(level: Double): String = js.native
   
-  var values: js.Array[_] = js.native
+  var values: js.Array[js.Any] = js.native
 }

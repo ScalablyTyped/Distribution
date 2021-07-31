@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceGroupResponse extends StObject {
   
   /**
     * The ARN that specifies the resource group that is created.
     */
-  var resourceGroupArn: Arn = js.native
+  var resourceGroupArn: Arn
 }
 object CreateResourceGroupResponse {
   

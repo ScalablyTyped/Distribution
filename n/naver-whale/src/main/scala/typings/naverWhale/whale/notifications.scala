@@ -3,7 +3,6 @@ package typings.naverWhale.whale
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -17,12 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object notifications {
   
-  @js.native
   trait ButtonOptions extends StObject {
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object ButtonOptions {
     
@@ -46,14 +44,13 @@ object notifications {
     }
   }
   
-  @js.native
   trait ItemOptions extends StObject {
     
     /** Additional details about this item. */
-    var message: String = js.native
+    var message: String
     
     /** Title of one item of a list notification. */
-    var title: String = js.native
+    var title: String
   }
   object ItemOptions {
     
@@ -80,7 +77,6 @@ object notifications {
   
   type NotificationClosedEvent = Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]
   
-  @js.native
   trait NotificationOptions extends StObject {
     
     /**
@@ -88,73 +84,73 @@ object notifications {
       * A URL to the app icon mask. URLs have the same restrictions as iconUrl. The app icon mask should be in alpha channel, as only the alpha channel of the image will be considered.
       * @since Chrome 38.
       */
-    var appIconMaskUrl: js.UndefOr[String] = js.native
+    var appIconMaskUrl: js.UndefOr[String] = js.undefined
     
     /** Optional. Text and icons for up to two notification action buttons. */
-    var buttons: js.UndefOr[js.Array[typings.chrome.chrome.notifications.ButtonOptions]] = js.native
+    var buttons: js.UndefOr[js.Array[typings.chrome.chrome.notifications.ButtonOptions]] = js.undefined
     
     /**
       * Optional.
       * Alternate notification content with a lower-weight font.
       * @since Chrome 31.
       */
-    var contextMessage: js.UndefOr[String] = js.native
+    var contextMessage: js.UndefOr[String] = js.undefined
     
     /** Optional. A timestamp associated with the notification, in milliseconds past the epoch (e.g. Date.now() + n). */
-    var eventTime: js.UndefOr[Double] = js.native
+    var eventTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional.
       * A URL to the sender's avatar, app icon, or a thumbnail for image notifications.
       * URLs can be a data URL, a blob URL, or a URL relative to a resource within this extension's .crx file Required for notifications.create method.
       */
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
     /** Optional. A URL to the image thumbnail for image-type notifications. URLs have the same restrictions as iconUrl. */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Whether to show UI indicating that the app will visibly respond to clicks on the body of a notification.
       * @since Chrome 32.
       */
-    var isClickable: js.UndefOr[Boolean] = js.native
+    var isClickable: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Items for multi-item notifications. */
-    var items: js.UndefOr[js.Array[typings.chrome.chrome.notifications.ItemOptions]] = js.native
+    var items: js.UndefOr[js.Array[typings.chrome.chrome.notifications.ItemOptions]] = js.undefined
     
     /** Optional. Main notification content. Required for notifications.create method. */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** Optional. Priority ranges from -2 to 2. -2 is lowest priority. 2 is highest. Zero is default. */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional.
       * Current progress ranges from 0 to 100.
       * @since Chrome 30.
       */
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates that the notification should remain visible on screen until the user activates or dismisses the notification.
       * This defaults to false.
       * @since Chrome 50
       */
-    var requireInteraction: js.UndefOr[Boolean] = js.native
+    var requireInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional.
       * Indicates that no sounds or vibrations should be made when the notification is being shown. This defaults to false.
       * @since Chrome 70
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Title of the notification (e.g. sender name for email). Required for notifications.create method. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Optional. Which type of notification to display. Required for notifications.create method. */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NotificationOptions {
     

@@ -3,25 +3,24 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSVoidKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSVoidKeyword_
-  extends TSBaseType
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSVoidKeyword_
+  extends StObject
      with BaseNode
+     with TSBaseType
      with TSType {
   
   @JSName("type")
-  var type_TSVoidKeyword_ : TSVoidKeyword = js.native
+  var type_TSVoidKeyword_ : TSVoidKeyword
 }
 object TSVoidKeyword_ {
   
   @scala.inline
-  def apply(`type`: TSVoidKeyword): TSVoidKeyword_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): TSVoidKeyword_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSVoidKeyword")
     __obj.asInstanceOf[TSVoidKeyword_]
   }
   

@@ -2,16 +2,16 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IComposite extends ISprite {
+trait IComposite
+  extends StObject
+     with ISprite {
   
   /** [Method] Adds a sprite to the composite
     * @param sprite Object
     */
-  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[js.Any], Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Renders all sprites contained in the composite to the surface
     * @param surface Object
@@ -26,7 +26,7 @@ trait IComposite extends ISprite {
       /* region */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IComposite {
   

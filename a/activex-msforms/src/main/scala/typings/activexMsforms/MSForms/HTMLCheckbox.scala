@@ -2,22 +2,20 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLCheckbox extends StObject {
   
-  var Checked: Boolean = js.native
+  var Checked: Boolean
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLCheckbox_typekey")
-  var MSFormsDotHTMLCheckbox_typekey: HTMLCheckbox = js.native
+  var MSFormsDotHTMLCheckbox_typekey: HTMLCheckbox
   
-  var Value: String = js.native
+  var Value: String
 }
 object HTMLCheckbox {
   

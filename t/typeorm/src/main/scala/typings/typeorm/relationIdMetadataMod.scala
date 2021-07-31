@@ -7,7 +7,6 @@ import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationIdMetadataMod {
@@ -41,7 +40,7 @@ object relationIdMetadataMod {
     /**
       * Extra condition applied to "ON" section of join.
       */
-    var queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]] = js.native
+    var queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]] = js.native
     
     /**
       * Relation from which ids will be extracted.
@@ -51,7 +50,7 @@ object relationIdMetadataMod {
     /**
       * Relation name which need to count.
       */
-    var relationNameOrFactory: String | (js.Function1[/* object */ js.Any, _]) = js.native
+    var relationNameOrFactory: String | (js.Function1[/* object */ js.Any, js.Any]) = js.native
     
     /**
       * Sets relation id value from the given entity.

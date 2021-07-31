@@ -4,19 +4,19 @@ import typings.kendoUi.JQueryEventObject
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextMenuOpenEvent extends ContextMenuEvent {
+trait ContextMenuOpenEvent
+  extends StObject
+     with ContextMenuEvent {
   
-  var event: js.UndefOr[JQueryEventObject] = js.native
+  var event: js.UndefOr[JQueryEventObject] = js.undefined
   
-  var item: js.UndefOr[Element] = js.native
+  var item: js.UndefOr[Element] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ContextMenuOpenEvent {
   

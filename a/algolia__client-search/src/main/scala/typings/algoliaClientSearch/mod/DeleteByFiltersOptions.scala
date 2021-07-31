@@ -2,53 +2,51 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteByFiltersOptions extends StObject {
   
   /**
     * Search for entries around a central geolocation, enabling a geo search within a circular area.
     */
-  val aroundLatLng: js.UndefOr[String] = js.native
+  val aroundLatLng: js.UndefOr[String] = js.undefined
   
   /**
     * Search for entries around a given location automatically computed from the requester’s IP address.
     */
-  val aroundLatLngViaIP: js.UndefOr[Boolean] = js.native
+  val aroundLatLngViaIP: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Filter hits by facet value.
     */
-  val facetFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  val facetFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
   /**
     * Filter the query with numeric, facet and/or tag filters.
     */
-  val filters: js.UndefOr[String] = js.native
+  val filters: js.UndefOr[String] = js.undefined
   
   /**
     * Search inside a rectangular area (in geo coordinates).
     */
-  val insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  val insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
     * Search inside a polygon (in geo coordinates).
     */
-  val insidePolygon: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  val insidePolygon: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
     * Filter on numeric attributes.
     */
-  val numericFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  val numericFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
   /**
     * Filter hits by tags. tagFilters is a different way of filtering, which relies on the _tags
     * attribute. It uses a simpler syntax than filters. You can use it when you want to do
     * simple filtering based on tags.
     */
-  val tagFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  val tagFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
 }
 object DeleteByFiltersOptions {
   

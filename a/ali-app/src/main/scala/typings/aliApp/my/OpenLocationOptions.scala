@@ -2,27 +2,26 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenLocationOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 地址的详细说明 */
-  var address: String = js.native
+  var address: String
   
   /** 纬度 */
-  var latitude: Double | String = js.native
+  var latitude: Double | String
   
   /** 经度 */
-  var longitude: Double | String = js.native
+  var longitude: Double | String
   
   /** 位置名称 */
-  var name: String = js.native
+  var name: String
   
   /** 缩放比例，范围 3~19，默认为 15 */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object OpenLocationOptions {
   

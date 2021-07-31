@@ -13,52 +13,50 @@ import typings.typedoc.serializersMod.DecoratorWrapper
 import typings.typedoc.serializersMod.SourceReferenceWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.ProjectReflection> */
-@js.native
 trait PartialProjectReflection extends StObject {
   
   var categories: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[ReflectionCategory]]] | js.Array[ReflectionCategory]
-  ] = js.native
+  ] = js.undefined
   
-  var children: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var children: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var comment: js.UndefOr[ModelToObject[js.UndefOr[Comment]] | Comment] = js.native
+  var comment: js.UndefOr[ModelToObject[js.UndefOr[Comment]] | Comment] = js.undefined
   
-  var decorates: js.UndefOr[ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]] = js.native
+  var decorates: js.UndefOr[ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]] = js.undefined
   
-  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.native
+  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.undefined
   
-  var flags: js.UndefOr[ReflectionFlags] = js.native
+  var flags: js.UndefOr[ReflectionFlags] = js.undefined
   
-  var getSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var getSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var groups: js.UndefOr[ModelToObject[js.UndefOr[js.Array[ReflectionGroup]]] | js.Array[ReflectionGroup]] = js.native
+  var groups: js.UndefOr[ModelToObject[js.UndefOr[js.Array[ReflectionGroup]]] | js.Array[ReflectionGroup]] = js.undefined
   
-  var id: js.UndefOr[ModelToObject[Double] | Double] = js.native
+  var id: js.UndefOr[ModelToObject[Double] | Double] = js.undefined
   
-  var indexSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var indexSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var kind: js.UndefOr[ModelToObject[ReflectionKind] | ReflectionKind] = js.native
+  var kind: js.UndefOr[ModelToObject[ReflectionKind] | ReflectionKind] = js.undefined
   
-  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.native
+  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
   
-  var name: js.UndefOr[ModelToObject[String] | String] = js.native
+  var name: js.UndefOr[ModelToObject[String] | String] = js.undefined
   
-  var originalName: js.UndefOr[String] = js.native
+  var originalName: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var parameters: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var setSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var setSignature: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var signatures: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var signatures: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
   
-  var sources: js.UndefOr[ModelToObject[js.Array[SourceReferenceWrapper]]] = js.native
+  var sources: js.UndefOr[ModelToObject[js.Array[SourceReferenceWrapper]]] = js.undefined
   
-  var typeParameter: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
+  var typeParameter: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.undefined
 }
 object PartialProjectReflection {
   

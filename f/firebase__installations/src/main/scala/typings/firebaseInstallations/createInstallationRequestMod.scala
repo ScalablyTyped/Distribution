@@ -5,12 +5,14 @@ import typings.firebaseInstallations.installationEntryMod.InProgressInstallation
 import typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createInstallationRequestMod {
   
-  @JSImport("@firebase/installations/dist/src/api/create-installation-request", "createInstallationRequest")
+  @JSImport("@firebase/installations/dist/src/api/create-installation-request", JSImport.Namespace)
   @js.native
-  def createInstallationRequest(appConfig: AppConfig, hasFid: InProgressInstallationEntry): js.Promise[RegisteredInstallationEntry] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createInstallationRequest(appConfig: AppConfig, hasFid: InProgressInstallationEntry): js.Promise[RegisteredInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstallationRequest")(appConfig.asInstanceOf[js.Any], hasFid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RegisteredInstallationEntry]]
 }

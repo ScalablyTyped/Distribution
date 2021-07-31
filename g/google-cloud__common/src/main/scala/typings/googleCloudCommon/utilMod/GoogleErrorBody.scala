@@ -3,24 +3,22 @@ package typings.googleCloudCommon.utilMod
 import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleErrorBody extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.native
+  var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var response: Response[_] = js.native
+  var response: Response[js.Any]
 }
 object GoogleErrorBody {
   
   @scala.inline
-  def apply(code: Double, response: Response[_]): GoogleErrorBody = {
+  def apply(code: Double, response: Response[js.Any]): GoogleErrorBody = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleErrorBody]
   }
@@ -47,6 +45,6 @@ object GoogleErrorBody {
     def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setResponse(value: Response[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: Response[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

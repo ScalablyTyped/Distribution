@@ -3,19 +3,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReleaseDefinitionApprovalStep extends ReleaseDefinitionEnvironmentStep {
+trait ReleaseDefinitionApprovalStep
+  extends StObject
+     with ReleaseDefinitionEnvironmentStep {
   
-  var approver: IdentityRef = js.native
+  var approver: IdentityRef
   
-  var isAutomated: Boolean = js.native
+  var isAutomated: Boolean
   
-  var isNotificationOn: Boolean = js.native
+  var isNotificationOn: Boolean
   
-  var rank: Double = js.native
+  var rank: Double
 }
 object ReleaseDefinitionApprovalStep {
   

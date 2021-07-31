@@ -5,7 +5,6 @@ import typings.agGrid.iCellEditorMod.ICellEditor
 import typings.agGrid.iCellEditorMod.ICellEditorParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textCellEditorMod {
@@ -27,6 +26,10 @@ object textCellEditorMod {
     def focusIn_MTextCellEditor(): Unit = js.native
     
     /* private */ def getStartValue(params: js.Any): js.Any = js.native
+    
+    /** Return the final value - called by the grid once after editing is complete */
+    /* CompleteClass */
+    override def getValue(): js.Any = js.native
     
     var highlightAllOnFocus: js.Any = js.native
     
@@ -50,7 +53,9 @@ object textCellEditorMod {
   }
   
   @js.native
-  trait ITextCellEditorParams extends ICellEditorParams {
+  trait ITextCellEditorParams
+    extends StObject
+       with ICellEditorParams {
     
     var useFormatter: Boolean = js.native
   }

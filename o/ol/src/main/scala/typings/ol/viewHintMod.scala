@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewHintMod {
@@ -12,11 +11,11 @@ object viewHintMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ViewHint with Double] = js.native
+    def apply(value: Double): js.UndefOr[ViewHint & Double] = js.native
     
-    /* 0 */ val ANIMATING: typings.ol.viewHintMod.ViewHint.ANIMATING with Double = js.native
+    /* 0 */ val ANIMATING: typings.ol.viewHintMod.ViewHint.ANIMATING & Double = js.native
     
-    /* 1 */ val INTERACTING: typings.ol.viewHintMod.ViewHint.INTERACTING with Double = js.native
+    /* 1 */ val INTERACTING: typings.ol.viewHintMod.ViewHint.INTERACTING & Double = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object viewHintMod {
   object ViewHint extends StObject {
     
     @js.native
-    sealed trait ANIMATING extends ViewHint
+    sealed trait ANIMATING
+      extends StObject
+         with ViewHint
     
     @js.native
-    sealed trait INTERACTING extends ViewHint
+    sealed trait INTERACTING
+      extends StObject
+         with ViewHint
   }
 }

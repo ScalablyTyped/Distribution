@@ -2,31 +2,29 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSiteRequest extends StObject {
   
   /**
     * A description of your site. Length Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The site location. This information is used for visualization in the Network Manager console. If you specify the address, the latitude and longitude are automatically calculated.    Address: The physical address of the site.    Latitude: The latitude of the site.     Longitude: The longitude of the site.  
     */
-  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.undefined
   
   /**
     * The tags to apply to the resource during creation.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateSiteRequest {
   

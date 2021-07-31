@@ -7,11 +7,12 @@ import typings.std.Blob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spreadsheet extends Widget {
+trait Spreadsheet
+  extends StObject
+     with Widget {
   
   def activeSheet(): Sheet = js.native
   def activeSheet(sheet: Sheet): Unit = js.native
@@ -24,8 +25,8 @@ trait Spreadsheet extends Widget {
   
   def defineName(name: String, value: String, hidden: Boolean): Unit = js.native
   
-  def fromFile(blob: Blob): JQueryPromise[_] = js.native
-  def fromFile(blob: File): JQueryPromise[_] = js.native
+  def fromFile(blob: Blob): JQueryPromise[js.Any] = js.native
+  def fromFile(blob: File): JQueryPromise[js.Any] = js.native
   
   def fromJSON(data: js.Any): Unit = js.native
   
@@ -46,7 +47,7 @@ trait Spreadsheet extends Widget {
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def sheetByIndex(index: Double): Sheet = js.native
   

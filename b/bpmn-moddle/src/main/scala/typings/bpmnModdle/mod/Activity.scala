@@ -2,33 +2,33 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Activity extends FlowNode {
+trait Activity
+  extends StObject
+     with FlowNode {
   
-  var default: SequenceFlow = js.native
+  var default: SequenceFlow
   
-  var boundaryEventRefs: js.Array[BoundaryEvent] = js.native
+  var boundaryEventRefs: js.Array[BoundaryEvent]
   
-  var completionQuantity: Double = js.native
+  var completionQuantity: Double
   
-  var dataInputAssociations: js.Array[DataInputAssociation] = js.native
+  var dataInputAssociations: js.Array[DataInputAssociation]
   
-  var dataOutputAssociations: js.Array[DataOutputAssociation] = js.native
+  var dataOutputAssociations: js.Array[DataOutputAssociation]
   
-  var ioSpecification: InputOutputSpecification = js.native
+  var ioSpecification: InputOutputSpecification
   
-  var isForCompensation: Boolean = js.native
+  var isForCompensation: Boolean
   
-  var loopCharacteristics: LoopCharacteristics = js.native
+  var loopCharacteristics: LoopCharacteristics
   
-  var properties: js.Array[Property] = js.native
+  var properties: js.Array[Property]
   
-  var resources: ResourceRole = js.native
+  var resources: ResourceRole
   
-  var startQuantity: Double = js.native
+  var startQuantity: Double
 }
 object Activity {
   

@@ -2,26 +2,24 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListExclusions.
   */
-@js.native
 trait SchemaListExclusionsResponse extends StObject {
   
   /**
     * A list of exclusions.
     */
-  var exclusions: js.UndefOr[js.Array[SchemaLogExclusion]] = js.native
+  var exclusions: js.UndefOr[js.Array[SchemaLogExclusion]] = js.undefined
   
   /**
     * If there might be more results than appear in this response, then
     * nextPageToken is included. To get the next set of results, call the same
     * method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListExclusionsResponse {
   

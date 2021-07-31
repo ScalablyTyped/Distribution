@@ -10,9 +10,9 @@ Terminal utils for NodeJS
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-terminal |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 6 |
-| # downloads        | 3254856 |
+| # releases         | 28 |
+| # dependents       | 8 |
+| # downloads        | 3657959 |
 | # stars            | 0 |
 
 ## Links

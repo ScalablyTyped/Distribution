@@ -2,41 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of records from the dashboard data source.
   */
-@js.native
 trait ASPxClientDashboardItemUnderlyingData extends StObject {
   
   /**
     * Returns an array of data members available in a data source.
     */
-  def GetDataMembers(): js.Array[String] = js.native
+  def GetDataMembers(): js.Array[String]
   
   /**
     * Returns a callstack containing the error caused by an unsuccessful request for underlying data.
     */
-  def GetRequestDataError(): String = js.native
+  def GetRequestDataError(): String
   
   /**
     * Gets the number of rows in the underlying data set.
     */
-  def GetRowCount(): Double = js.native
+  def GetRowCount(): Double
   
   /**
     * Returns the value of the specified cell within the underlying data set. An object that represents the value of the specified cell.
     * @param rowIndex An integer value that specifies the zero-based index of the required row.
     * @param dataMember A String that specifies the required data member.
     */
-  def GetRowValue(rowIndex: Double, dataMember: String): js.Any = js.native
+  def GetRowValue(rowIndex: Double, dataMember: String): js.Any
   
   /**
     * Returns whether a request for underlying data was successful.
     */
-  def IsDataReceived(): Boolean = js.native
+  def IsDataReceived(): Boolean
 }
 object ASPxClientDashboardItemUnderlyingData {
   

@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.igClientErrorMod.IgClientError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igResponseErrorMod {

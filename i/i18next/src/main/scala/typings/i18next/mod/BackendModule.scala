@@ -3,18 +3,18 @@ package typings.i18next.mod
 import typings.i18next.i18nextStrings.backend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackendModule[TOptions] extends Module {
+trait BackendModule[TOptions]
+  extends StObject
+     with Module {
   
   /** Save the missing translation */
-  def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
+  def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit
   
-  def init(services: Services, backendOptions: TOptions, i18nextOptions: InitOptions): Unit = js.native
+  def init(services: Services, backendOptions: TOptions, i18nextOptions: InitOptions): Unit
   
-  def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
+  def read(language: String, namespace: String, callback: ReadCallback): Unit
   
   /** Load multiple languages and namespaces. For backends supporting multiple resources loading */
   var readMulti: js.UndefOr[
@@ -24,15 +24,15 @@ trait BackendModule[TOptions] extends Module {
       /* callback */ ReadCallback, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Store the translation. For backends acting as cache layer */
   var save: js.UndefOr[
     js.Function3[/* language */ String, /* namespace */ String, /* data */ ResourceLanguage, Unit]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_BackendModule: backend = js.native
+  var type_BackendModule: backend
 }
 object BackendModule {
   
@@ -40,16 +40,15 @@ object BackendModule {
   def apply[TOptions](
     create: (js.Array[String], String, String, String) => Unit,
     init: (Services, TOptions, InitOptions) => Unit,
-    read: (String, String, ReadCallback) => Unit,
-    `type`: backend
+    read: (String, String, ReadCallback) => Unit
   ): BackendModule[TOptions] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), init = js.Any.fromFunction3(init), read = js.Any.fromFunction3(read))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("backend")
     __obj.asInstanceOf[BackendModule[TOptions]]
   }
   
   @scala.inline
-  implicit class BackendModuleMutableBuilder[Self <: BackendModule[_], TOptions] (val x: Self with BackendModule[TOptions]) extends AnyVal {
+  implicit class BackendModuleMutableBuilder[Self <: BackendModule[?], TOptions] (val x: Self & BackendModule[TOptions]) extends AnyVal {
     
     @scala.inline
     def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))

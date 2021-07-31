@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the text in a control. */
-@js.native
-trait XTextArea extends XInterface {
+trait XTextArea
+  extends StObject
+     with XInterface {
   
   /** returns the text lines as a single string with line separators. */
-  val TextLines: String = js.native
+  val TextLines: String
   
   /** returns the text lines as a single string with line separators. */
-  def getTextLines(): String = js.native
+  def getTextLines(): String
 }
 object XTextArea {
   

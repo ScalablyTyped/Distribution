@@ -25,7 +25,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,14 +37,14 @@ object mod extends Shortcut {
   }
   @JSImport("simple-peer", JSImport.Namespace)
   @js.native
-  val ^ : SimplePeer = js.native
+  val ^ : js.Object & SimplePeer = js.native
   
   @js.native
   trait Instance extends Duplex {
     
-    def _debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     // used for debug logging
     def _debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def _debug(message: Unit, optionalParams: js.Any*): Unit = js.native
     
     // https://github.com/feross/simple-peer/tree/v9.6.1#peeraddstreamstream
     def addStream(stream: MediaStream): Unit = js.native
@@ -75,43 +74,42 @@ object mod extends Shortcut {
     def signal(data: SignalData): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     // custom offer constraints (used by createOffer method)
-    var answerConstraints: js.UndefOr[js.Object] = js.native
+    var answerConstraints: js.UndefOr[js.Object] = js.undefined
     
     // set to true if this is the initiating peer
-    var channelConfig: js.UndefOr[js.Object] = js.native
+    var channelConfig: js.UndefOr[js.Object] = js.undefined
     
     // custom webrtc data channel configuration (used by createDataChannel)
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
     // custom webrtc data channel name
-    var config: js.UndefOr[js.Object] = js.native
+    var config: js.UndefOr[js.Object] = js.undefined
     
     // custom webrtc configuration (used by RTCPeerConnection constructor)
-    var constraints: js.UndefOr[js.Object] = js.native
+    var constraints: js.UndefOr[js.Object] = js.undefined
     
-    var initiator: js.UndefOr[Boolean] = js.native
+    var initiator: js.UndefOr[Boolean] = js.undefined
     
     // RTCPeerConnection/RTCSessionDescription/RTCIceCandidate
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     // custom webrtc video/voice constraints (used by RTCPeerConnection constructor)
-    var offerConstraints: js.UndefOr[js.Object] = js.native
+    var offerConstraints: js.UndefOr[js.Object] = js.undefined
     
     // custom answer constraints (used by createAnswer method)
-    var sdpTransform: js.UndefOr[js.Function1[/* sdp */ js.Any, _]] = js.native
+    var sdpTransform: js.UndefOr[js.Function1[/* sdp */ js.Any, js.Any]] = js.undefined
     
     // function to transform the generated SDP signaling data (for advanced users)
-    var stream: js.UndefOr[MediaStream] = js.native
+    var stream: js.UndefOr[MediaStream] = js.undefined
     
     // if video/voice is desired, pass stream returned from getUserMedia
-    var trickle: js.UndefOr[Boolean] = js.native
+    var trickle: js.UndefOr[Boolean] = js.undefined
     
     // set to false to disable trickle ICE and get a single 'signal' event (slower)
-    var wrtc: js.UndefOr[js.Object] = js.native
+    var wrtc: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     
@@ -173,7 +171,7 @@ object mod extends Shortcut {
       def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
       
       @scala.inline
-      def setSdpTransform(value: /* sdp */ js.Any => _): Self = StObject.set(x, "sdpTransform", js.Any.fromFunction1(value))
+      def setSdpTransform(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransform", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
@@ -198,14 +196,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SignalData extends StObject {
     
-    var candidate: js.UndefOr[js.Any] = js.native
+    var candidate: js.UndefOr[js.Any] = js.undefined
     
-    var sdp: js.UndefOr[js.Any] = js.native
+    var sdp: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[offer | pranswer | answer | rollback] = js.native
+    var `type`: js.UndefOr[offer | pranswer | answer | rollback] = js.undefined
   }
   object SignalData {
     
@@ -241,7 +238,8 @@ object mod extends Shortcut {
   // https://github.com/feross/simple-peer/tree/v6.1.5#peer--new-simplepeeropts
   @js.native
   trait SimplePeer
-    extends Instantiable0[Instance]
+    extends StObject
+       with Instantiable0[Instance]
        with Instantiable1[/* opts */ Options, Instance] {
     
     def apply(): Instance = js.native
@@ -255,8 +253,8 @@ object mod extends Shortcut {
   
   type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
   
-  type _To = SimplePeer
+  type _To = js.Object & SimplePeer
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SimplePeer = ^
+  override def _to: js.Object & SimplePeer = ^
 }

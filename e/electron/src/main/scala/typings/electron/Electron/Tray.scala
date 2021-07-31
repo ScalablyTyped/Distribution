@@ -20,7 +20,6 @@ import typings.electron.electronStrings.drop
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -328,7 +327,7 @@ trait Tray extends EventEmitter {
     * @platform darwin,win32
     */
   def popUpContextMenu(): Unit = js.native
-  def popUpContextMenu(menu: js.UndefOr[scala.Nothing], position: Point): Unit = js.native
+  def popUpContextMenu(menu: Unit, position: Point): Unit = js.native
   def popUpContextMenu(menu: Menu): Unit = js.native
   def popUpContextMenu(menu: Menu, position: Point): Unit = js.native
   

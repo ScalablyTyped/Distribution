@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlatformVersionsRequest extends StObject {
   
   /**
     * Criteria for restricting the resulting list of platform versions. The filter is interpreted as a logical conjunction (AND) of the separate PlatformFilter terms.
     */
-  var Filters: js.UndefOr[PlatformFilters] = js.native
+  var Filters: js.UndefOr[PlatformFilters] = js.undefined
   
   /**
     * The maximum number of platform version values returned in one call.
     */
-  var MaxRecords: js.UndefOr[PlatformMaxRecords] = js.native
+  var MaxRecords: js.UndefOr[PlatformMaxRecords] = js.undefined
   
   /**
     * For a paginated request. Specify a token from a previous response page to retrieve the next response page. All other parameter values must be identical to the ones specified in the initial request. If no NextToken is specified, the first page is retrieved.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListPlatformVersionsRequest {
   

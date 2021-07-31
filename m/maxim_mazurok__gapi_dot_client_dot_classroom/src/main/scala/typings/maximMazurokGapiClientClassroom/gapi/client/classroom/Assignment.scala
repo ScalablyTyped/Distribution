@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assignment extends StObject {
   
   /** Drive folder where attachments from student submissions are placed. This is only populated for course teachers and administrators. */
-  var studentWorkFolder: js.UndefOr[DriveFolder] = js.native
+  var studentWorkFolder: js.UndefOr[DriveFolder] = js.undefined
 }
 object Assignment {
   

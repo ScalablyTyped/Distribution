@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,12 +13,11 @@ object mod {
   class default ()
     extends Component[Props, scala.Nothing, js.Any]
   
-  @js.native
   trait Algorithm extends StObject {
     
-    def getPosition(value: Double, min: Double, max: Double): Double = js.native
+    def getPosition(value: Double, min: Double, max: Double): Double
     
-    def getValue(pos: Double, min: Double, max: Double): Double = js.native
+    def getValue(pos: Double, min: Double, max: Double): Double
   }
   object Algorithm {
     
@@ -40,24 +38,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var getNextHandlePosition: js.UndefOr[js.Function2[/* handleIdx */ Double, /* percentPosition */ Double, Double]] = js.native
+    var getNextHandlePosition: js.UndefOr[js.Function2[/* handleIdx */ Double, /* percentPosition */ Double, Double]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* publicState */ PublicState, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* publicState */ PublicState, js.Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[_]] = js.native
+    var onClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function0[_]] = js.native
+    var onKeyPress: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onSliderDragEnd: js.UndefOr[js.Function0[_]] = js.native
+    var onSliderDragEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onSliderDragMove: js.UndefOr[js.Function0[_]] = js.native
+    var onSliderDragMove: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onSliderDragStart: js.UndefOr[js.Function0[_]] = js.native
+    var onSliderDragStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onValuesUpdated: js.UndefOr[js.Function1[/* publicState */ PublicState, _]] = js.native
+    var onValuesUpdated: js.UndefOr[js.Function1[/* publicState */ PublicState, js.Any]] = js.undefined
   }
   object Events {
     
@@ -77,43 +74,43 @@ object mod {
       def setGetNextHandlePositionUndefined: Self = StObject.set(x, "getNextHandlePosition", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* publicState */ PublicState => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* publicState */ PublicState => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnClick(value: () => _): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnKeyPress(value: () => _): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction0(value))
+      def setOnKeyPress(value: () => js.Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
       @scala.inline
-      def setOnSliderDragEnd(value: () => _): Self = StObject.set(x, "onSliderDragEnd", js.Any.fromFunction0(value))
+      def setOnSliderDragEnd(value: () => js.Any): Self = StObject.set(x, "onSliderDragEnd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSliderDragEndUndefined: Self = StObject.set(x, "onSliderDragEnd", js.undefined)
       
       @scala.inline
-      def setOnSliderDragMove(value: () => _): Self = StObject.set(x, "onSliderDragMove", js.Any.fromFunction0(value))
+      def setOnSliderDragMove(value: () => js.Any): Self = StObject.set(x, "onSliderDragMove", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSliderDragMoveUndefined: Self = StObject.set(x, "onSliderDragMove", js.undefined)
       
       @scala.inline
-      def setOnSliderDragStart(value: () => _): Self = StObject.set(x, "onSliderDragStart", js.Any.fromFunction0(value))
+      def setOnSliderDragStart(value: () => js.Any): Self = StObject.set(x, "onSliderDragStart", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSliderDragStartUndefined: Self = StObject.set(x, "onSliderDragStart", js.undefined)
       
       @scala.inline
-      def setOnValuesUpdated(value: /* publicState */ PublicState => _): Self = StObject.set(x, "onValuesUpdated", js.Any.fromFunction1(value))
+      def setOnValuesUpdated(value: /* publicState */ PublicState => js.Any): Self = StObject.set(x, "onValuesUpdated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValuesUpdatedUndefined: Self = StObject.set(x, "onValuesUpdated", js.undefined)
@@ -134,38 +131,39 @@ object mod {
     def vertical: typings.rheostat.rheostatStrings.vertical = "vertical".asInstanceOf[typings.rheostat.rheostatStrings.vertical]
   }
   
-  @js.native
-  trait Props extends Events {
+  trait Props
+    extends StObject
+       with Events {
     
-    var algorithm: js.UndefOr[Algorithm] = js.native
+    var algorithm: js.UndefOr[Algorithm] = js.undefined
     
-    var autoAdjustVerticalPosition: js.UndefOr[Boolean] = js.native
+    var autoAdjustVerticalPosition: js.UndefOr[Boolean] = js.undefined
     
-    var background: js.UndefOr[ReactType[_]] = js.native
+    var background: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handle: js.UndefOr[ReactType[_]] = js.native
+    var handle: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[Orientation] = js.native
+    var orientation: js.UndefOr[Orientation] = js.undefined
     
-    var pitComponent: js.UndefOr[ReactType[_]] = js.native
+    var pitComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var pitPoints: js.UndefOr[js.Array[Double]] = js.native
+    var pitPoints: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var progressBar: js.UndefOr[ReactType[_]] = js.native
+    var progressBar: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var snap: js.UndefOr[Boolean] = js.native
+    var snap: js.UndefOr[Boolean] = js.undefined
     
-    var snapPoints: js.UndefOr[js.Array[Double]] = js.native
+    var snapPoints: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var values: js.UndefOr[js.Array[Double]] = js.native
+    var values: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Props {
     
@@ -191,7 +189,7 @@ object mod {
       def setAutoAdjustVerticalPositionUndefined: Self = StObject.set(x, "autoAdjustVerticalPosition", js.undefined)
       
       @scala.inline
-      def setBackground(value: ReactType[_]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      def setBackground(value: ReactType[js.Any]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
@@ -209,7 +207,7 @@ object mod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setHandle(value: ReactType[_]): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      def setHandle(value: ReactType[js.Any]): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
@@ -233,7 +231,7 @@ object mod {
       def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
       @scala.inline
-      def setPitComponent(value: ReactType[_]): Self = StObject.set(x, "pitComponent", value.asInstanceOf[js.Any])
+      def setPitComponent(value: ReactType[js.Any]): Self = StObject.set(x, "pitComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPitComponentUndefined: Self = StObject.set(x, "pitComponent", js.undefined)
@@ -248,7 +246,7 @@ object mod {
       def setPitPointsVarargs(value: Double*): Self = StObject.set(x, "pitPoints", js.Array(value :_*))
       
       @scala.inline
-      def setProgressBar(value: ReactType[_]): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+      def setProgressBar(value: ReactType[js.Any]): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
@@ -279,14 +277,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PublicState extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object PublicState {
     

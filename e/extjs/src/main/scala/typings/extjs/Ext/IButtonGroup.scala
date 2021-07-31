@@ -2,24 +2,23 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IButtonGroup
-  extends typings.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typings.extjs.Ext.panel.IPanel {
   
   /** [Config Option] (Number) */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var defaultButtonUI: js.UndefOr[java.lang.String] = js.native
+  var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] private
     * @param component Object
     */
   @JSName("onBeforeAdd")
-  var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.native
+  var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IButtonGroup {
   

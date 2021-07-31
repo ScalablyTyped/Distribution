@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsTableCardColumnProperties extends StObject {
   
   /**
     * Header text for the column.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * Horizontal alignment of content w.r.t column. If unspecified, content
     * will be aligned to the leading edge.
     */
-  var horizontalAlignment: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.native
+  var horizontalAlignment: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.undefined
 }
 object GoogleActionsV2UiElementsTableCardColumnProperties {
   

@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebviewPanelOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait WebviewPanelOptions extends StObject {
     *
     * Defaults to false.
     */
-  val enableFindWidget: js.UndefOr[Boolean] = js.native
+  val enableFindWidget: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if the webview panel's content (iframe) is kept around even when the panel
@@ -31,7 +29,7 @@ trait WebviewPanelOptions extends StObject {
     * `retainContextWhenHidden` has a high memory overhead and should only be used if
     * your panel's context cannot be quickly saved and restored.
     */
-  val retainContextWhenHidden: js.UndefOr[Boolean] = js.native
+  val retainContextWhenHidden: js.UndefOr[Boolean] = js.undefined
 }
 object WebviewPanelOptions {
   

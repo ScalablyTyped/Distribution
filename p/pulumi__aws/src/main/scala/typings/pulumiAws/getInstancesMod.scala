@@ -5,25 +5,23 @@ import typings.pulumiAws.inputMod.ec2.GetInstancesFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstancesMod {
   
-  @JSImport("@pulumi/aws/ec2/getInstances", "getInstances")
+  @JSImport("@pulumi/aws/ec2/getInstances", JSImport.Namespace)
   @js.native
-  def getInstances(): js.Promise[GetInstancesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstances", "getInstances")
-  @js.native
-  def getInstances(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetInstancesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstances", "getInstances")
-  @js.native
-  def getInstances(args: GetInstancesArgs): js.Promise[GetInstancesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstances", "getInstances")
-  @js.native
-  def getInstances(args: GetInstancesArgs, opts: InvokeOptions): js.Promise[GetInstancesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstances(): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")().asInstanceOf[js.Promise[GetInstancesResult]]
+  @scala.inline
+  def getInstances(args: Unit, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
+  @scala.inline
+  def getInstances(args: GetInstancesArgs): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstancesResult]]
+  @scala.inline
+  def getInstances(args: GetInstancesArgs, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
+  
   trait GetInstancesArgs extends StObject {
     
     /**
@@ -31,18 +29,18 @@ object getInstancesMod {
       * several valid keys, for a full reference, check out
       * [describe-instances in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.undefined
     
     /**
       * A list of instance states that should be applicable to the desired instances. The permitted values are: `pending, running, shutting-down, stopped, stopping, terminated`. The default value is `running`.
       */
-    val instanceStateNames: js.UndefOr[js.Array[String]] = js.native
+    val instanceStateNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A map of tags, each pair of which must
       * exactly match a pair on desired instances.
       */
-    val instanceTags: js.UndefOr[StringDictionary[String]] = js.native
+    val instanceTags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetInstancesArgs {
     
@@ -81,34 +79,33 @@ object getInstancesMod {
     }
   }
   
-  @js.native
   trait GetInstancesResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstancesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstancesFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * IDs of instances found through the filter
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val instanceStateNames: js.UndefOr[js.Array[String]] = js.native
+    val instanceStateNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    val instanceTags: StringDictionary[String] = js.native
+    val instanceTags: StringDictionary[String]
     
     /**
       * Private IP addresses of instances found through the filter
       */
-    val privateIps: js.Array[String] = js.native
+    val privateIps: js.Array[String]
     
     /**
       * Public IP addresses of instances found through the filter
       */
-    val publicIps: js.Array[String] = js.native
+    val publicIps: js.Array[String]
   }
   object GetInstancesResult {
     

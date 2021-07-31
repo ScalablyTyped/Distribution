@@ -2,25 +2,23 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing my customers.
   */
-@js.native
 trait SchemaCustomerListCustomersResponse extends StObject {
   
   /**
     * The customer accounts the calling user is a member of.
     */
-  var customers: js.UndefOr[js.Array[SchemaCompany]] = js.native
+  var customers: js.UndefOr[js.Array[SchemaCompany]] = js.undefined
   
   /**
     * A token used to access the next page of results. Omitted if no further
     * results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerListCustomersResponse {
   

@@ -10,19 +10,17 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectTriggerMod extends Shortcut {
   
   @JSImport("rc-select/lib/SelectTrigger", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[SelectTriggerProps with RefAttributes[RefTriggerProps]] = js.native
+  val default: ForwardRefExoticComponent[SelectTriggerProps & RefAttributes[RefTriggerProps]] = js.native
   
-  @js.native
   trait RefTriggerProps extends StObject {
     
-    def getPopupElement(): HTMLDivElement = js.native
+    def getPopupElement(): HTMLDivElement
   }
   object RefTriggerProps {
     
@@ -40,42 +38,41 @@ object selectTriggerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SelectTriggerProps extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var containerWidth: Double = js.native
+    var containerWidth: Double
     
-    var direction: String = js.native
+    var direction: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var dropdownAlign: js.Object = js.native
+    var dropdownAlign: js.Object
     
-    var dropdownClassName: String = js.native
+    var dropdownClassName: String
     
-    var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.native
+    var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.undefined
     
-    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.native
+    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.undefined
     
-    var dropdownStyle: CSSProperties = js.native
+    var dropdownStyle: CSSProperties
     
-    var empty: Boolean = js.native
+    var empty: Boolean
     
-    var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.native
+    var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.undefined
     
-    def getTriggerDOMNode(): HTMLElement = js.native
+    def getTriggerDOMNode(): HTMLElement
     
-    var popupElement: ReactElement = js.native
+    var popupElement: ReactElement
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object SelectTriggerProps {
     
@@ -169,8 +166,8 @@ object selectTriggerMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[SelectTriggerProps with RefAttributes[RefTriggerProps]]
+  type _To = ForwardRefExoticComponent[SelectTriggerProps & RefAttributes[RefTriggerProps]]
   
   /* This means you don't have to write `default`, but can instead just say `selectTriggerMod.foo` */
-  override def _to: ForwardRefExoticComponent[SelectTriggerProps with RefAttributes[RefTriggerProps]] = default
+  override def _to: ForwardRefExoticComponent[SelectTriggerProps & RefAttributes[RefTriggerProps]] = default
 }

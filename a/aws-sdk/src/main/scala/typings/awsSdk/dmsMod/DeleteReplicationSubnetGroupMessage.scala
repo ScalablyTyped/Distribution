@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicationSubnetGroupMessage extends StObject {
   
   /**
     * The subnet group name of the replication instance.
     */
-  var ReplicationSubnetGroupIdentifier: String = js.native
+  var ReplicationSubnetGroupIdentifier: String
 }
 object DeleteReplicationSubnetGroupMessage {
   

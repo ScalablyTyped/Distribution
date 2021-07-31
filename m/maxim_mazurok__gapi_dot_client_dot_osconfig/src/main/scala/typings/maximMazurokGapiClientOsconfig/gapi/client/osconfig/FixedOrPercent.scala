@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedOrPercent extends StObject {
   
   /** Specifies a fixed value. */
-  var fixed: js.UndefOr[Double] = js.native
+  var fixed: js.UndefOr[Double] = js.undefined
   
   /** Specifies the relative value defined as a percentage, which will be multiplied by a reference value. */
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
 }
 object FixedOrPercent {
   

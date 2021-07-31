@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JourneyLimits extends StObject {
   
   /**
     * The maximum number of messages that the journey can send to a single participant during a 24-hour period. The maximum value is 100.
     */
-  var DailyCap: js.UndefOr[integer] = js.native
+  var DailyCap: js.UndefOr[integer] = js.undefined
   
   /**
     * The maximum number of times that a participant can enter the journey. The maximum value is 100. To allow participants to enter the journey an unlimited number of times, set this value to 0.
     */
-  var EndpointReentryCap: js.UndefOr[integer] = js.native
+  var EndpointReentryCap: js.UndefOr[integer] = js.undefined
   
   /**
     * The maximum number of messages that the journey can send each second.
     */
-  var MessagesPerSecond: js.UndefOr[integer] = js.native
+  var MessagesPerSecond: js.UndefOr[integer] = js.undefined
 }
 object JourneyLimits {
   

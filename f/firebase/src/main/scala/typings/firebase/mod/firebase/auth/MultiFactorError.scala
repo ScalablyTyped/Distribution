@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,13 +32,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     });
   * ```
   */
-@js.native
-trait MultiFactorError extends AuthError {
+trait MultiFactorError
+  extends StObject
+     with AuthError {
   
   /**
     * The multi-factor resolver to complete second factor sign-in.
     */
-  var resolver: MultiFactorResolver = js.native
+  var resolver: MultiFactorResolver
 }
 object MultiFactorError {
   

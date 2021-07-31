@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a message to be sent either as a text message or an iMessage.
   * @see https://docs.scriptable.app/message/#-new-message
   */
-@js.native
 trait Message extends StObject {
   
   /**
@@ -24,21 +22,21 @@ trait Message extends StObject {
     * @param filename - Name of the file represented by the data.
     * @see https://docs.scriptable.app/message/#-adddataattachment
     */
-  def addDataAttachment(data: Data, uti: String, filename: String): Unit = js.native
+  def addDataAttachment(data: Data, uti: String, filename: String): Unit
   
   /**
     * _Adds a file attachment to the message._
     * @param filePath - Path of file to add to the message.
     * @see https://docs.scriptable.app/message/#-addfileattachment
     */
-  def addFileAttachment(filePath: String): Unit = js.native
+  def addFileAttachment(filePath: String): Unit
   
   /**
     * _Adds an image attachment to the message._
     * @param image - Image to add to the message.
     * @see https://docs.scriptable.app/message/#-addimageattachment
     */
-  def addImageAttachment(image: Image): Unit = js.native
+  def addImageAttachment(image: Image): Unit
   
   /**
     * _Body of the message._
@@ -46,7 +44,7 @@ trait Message extends StObject {
     * Body of the message to send. You will have a chance to modify this before the message is sent.
     * @see https://docs.scriptable.app/message/#body
     */
-  var body: String = js.native
+  var body: String
   
   /**
     * _Recipients of the message._
@@ -54,7 +52,7 @@ trait Message extends StObject {
     * Array of recipients to send the message to. Elements in the array should be phone numbers. You will have a chance to modify this before the message is sent.
     * @see https://docs.scriptable.app/message/#recipients
     */
-  var recipients: js.Array[String] = js.native
+  var recipients: js.Array[String]
   
   /**
     * _Send the message._
@@ -62,7 +60,7 @@ trait Message extends StObject {
     * Presents a screen from which the message can be sent. The message will not be sent until you have confirmed it from the presented screen.
     * @see https://docs.scriptable.app/message/#-send
     */
-  def send(): js.Promise[Unit] = js.native
+  def send(): js.Promise[Unit]
 }
 object Message {
   

@@ -2,19 +2,17 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookOptions extends StObject {
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var includeHelpers: js.UndefOr[Boolean] = js.native
+  var includeHelpers: js.UndefOr[Boolean] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var validate: js.UndefOr[Boolean] = js.native
+  var validate: js.UndefOr[Boolean] = js.undefined
 }
 object WebhookOptions {
   

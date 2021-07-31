@@ -10,9 +10,9 @@ Generates and consumes source maps
 | ------------------ | :-------------: |
 | Full name          | source-map |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1936 |
-| # downloads        | 2230480080 |
+| # releases         | 0 |
+| # dependents       | 2076 |
+| # downloads        | 2746070168 |
 | # stars            | 34 |
 
 ## Links

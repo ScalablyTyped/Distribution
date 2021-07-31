@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamingConventionOptions extends StObject {
   
-  var clientPropertyNameToServer: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+  var clientPropertyNameToServer: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
   
-  var serverPropertyNameToClient: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+  var serverPropertyNameToClient: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
 }
 object NamingConventionOptions {
   

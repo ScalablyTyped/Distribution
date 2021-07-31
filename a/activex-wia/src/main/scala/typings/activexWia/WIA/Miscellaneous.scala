@@ -4,7 +4,6 @@ import typings.activexWia.activexWiaStrings.Asterisk
 import typings.activexWia.activexWiaStrings.`Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Miscellaneous string constants */

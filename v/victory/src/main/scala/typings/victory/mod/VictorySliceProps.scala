@@ -10,11 +10,11 @@ import typings.victory.victoryStrings.sliceEndAngle
 import typings.victory.victoryStrings.sliceStartAngle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictorySliceProps extends VictoryCommonProps {
+trait VictorySliceProps
+  extends StObject
+     with VictoryCommonProps {
   
   /**
     * the corner radius to apply to this slice.
@@ -23,19 +23,19 @@ trait VictorySliceProps extends VictoryCommonProps {
     */
   var cornerRadius: js.UndefOr[
     SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.cornerRadius]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * the data point corresponding to this slice
     */
-  var datum: js.UndefOr[js.Object] = js.native
+  var datum: js.UndefOr[js.Object] = js.undefined
   
   /**
     * the inner radius of the slice.
     * When this prop is given as a function
     * it will be called with datum and active.
     */
-  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ Active, Double])] = js.native
+  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ Active, Double])] = js.undefined
   
   /**
     * the angular padding to add to the slice.
@@ -44,32 +44,32 @@ trait VictorySliceProps extends VictoryCommonProps {
     */
   var padAngle: js.UndefOr[
     SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.padAngle]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * the rendered path element
     * @default pathComponent={<Path/>}
     */
-  var pathComponent: js.UndefOr[ReactElement] = js.native
+  var pathComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * a function that calculates the path of a given slice.
     * When given, this prop will be called with the slice object
     */
-  var pathFunction: js.UndefOr[js.Function1[/* props */ this.type, String]] = js.native
+  var pathFunction: js.UndefOr[js.Function1[/* props */ this.type, String]] = js.undefined
   
   /**
     * the outer radius of the slice.
     * When this prop is given as a function it will be called with
     * the rest of the props supplied to Slice.
     */
-  var radius: js.UndefOr[SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.radius]] = js.native
+  var radius: js.UndefOr[SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.radius]] = js.undefined
   
   /**
     * an object specifying the `startAngle`, `endAngle`, `padAngle`,
     * and `data` of the slice
     */
-  var slice: EndAngle = js.native
+  var slice: EndAngle
   
   /**
     * the end angle the slice.
@@ -78,7 +78,7 @@ trait VictorySliceProps extends VictoryCommonProps {
     */
   var sliceEndAngle: js.UndefOr[
     SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.sliceEndAngle]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * the start angle the slice.
@@ -87,7 +87,7 @@ trait VictorySliceProps extends VictoryCommonProps {
     */
   var sliceStartAngle: js.UndefOr[
     SliceNumberOrCallback[VictorySliceProps, typings.victory.victoryStrings.sliceStartAngle]
-  ] = js.native
+  ] = js.undefined
 }
 object VictorySliceProps {
   

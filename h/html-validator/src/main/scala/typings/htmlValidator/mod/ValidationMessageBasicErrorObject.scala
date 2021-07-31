@@ -4,22 +4,20 @@ import typings.htmlValidator.htmlValidatorStrings.error
 import typings.htmlValidator.htmlValidatorStrings.fatal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationMessageBasicErrorObject extends StObject {
   
-  var subType: js.UndefOr[fatal] = js.native
+  var subType: js.UndefOr[fatal] = js.undefined
   
-  var `type`: error = js.native
+  var `type`: error
 }
 object ValidationMessageBasicErrorObject {
   
   @scala.inline
-  def apply(`type`: error): ValidationMessageBasicErrorObject = {
+  def apply(): ValidationMessageBasicErrorObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ValidationMessageBasicErrorObject]
   }
   

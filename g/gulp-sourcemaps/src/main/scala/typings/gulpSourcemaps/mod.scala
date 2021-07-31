@@ -3,40 +3,35 @@ package typings.gulpSourcemaps
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-sourcemaps", "init")
+  @JSImport("gulp-sourcemaps", JSImport.Namespace)
   @js.native
-  def init(): ReadWriteStream = js.native
-  @JSImport("gulp-sourcemaps", "init")
-  @js.native
-  def init(opts: InitOptions): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gulp-sourcemaps", "write")
-  @js.native
-  def write(): ReadWriteStream = js.native
-  @JSImport("gulp-sourcemaps", "write")
-  @js.native
-  def write(opts: WriteOptions): ReadWriteStream = js.native
-  @JSImport("gulp-sourcemaps", "write")
-  @js.native
-  def write(path: js.UndefOr[scala.Nothing], opts: WriteOptions): ReadWriteStream = js.native
-  @JSImport("gulp-sourcemaps", "write")
-  @js.native
-  def write(path: String): ReadWriteStream = js.native
-  @JSImport("gulp-sourcemaps", "write")
-  @js.native
-  def write(path: String, opts: WriteOptions): ReadWriteStream = js.native
+  @scala.inline
+  def init(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def init(opts: InitOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @js.native
+  @scala.inline
+  def write(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def write(opts: WriteOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def write(path: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def write(path: String, opts: WriteOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def write(path: Unit, opts: WriteOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  
   trait CloneOptions extends StObject {
     
-    var contents: js.UndefOr[Boolean] = js.native
+    var contents: js.UndefOr[Boolean] = js.undefined
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
   }
   object CloneOptions {
     
@@ -63,12 +58,11 @@ object mod {
     }
   }
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var loadMaps: js.UndefOr[Boolean] = js.native
+    var loadMaps: js.UndefOr[Boolean] = js.undefined
   }
   object InitOptions {
     
@@ -97,19 +91,18 @@ object mod {
   
   type WriteMapper = js.Function1[/* file */ String, String]
   
-  @js.native
   trait WriteOptions extends StObject {
     
-    var addComment: js.UndefOr[Boolean] = js.native
+    var addComment: js.UndefOr[Boolean] = js.undefined
     
     @JSName("clone")
-    var clone_FWriteOptions: js.UndefOr[Boolean | CloneOptions] = js.native
+    var clone_FWriteOptions: js.UndefOr[Boolean | CloneOptions] = js.undefined
     
-    var includeContent: js.UndefOr[Boolean] = js.native
+    var includeContent: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMappingURLPrefix: js.UndefOr[String | WriteMapper] = js.native
+    var sourceMappingURLPrefix: js.UndefOr[String | WriteMapper] = js.undefined
     
-    var sourceRoot: js.UndefOr[String | WriteMapper] = js.native
+    var sourceRoot: js.UndefOr[String | WriteMapper] = js.undefined
   }
   object WriteOptions {
     

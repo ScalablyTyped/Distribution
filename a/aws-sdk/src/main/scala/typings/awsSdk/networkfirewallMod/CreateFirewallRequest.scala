@@ -2,56 +2,54 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFirewallRequest extends StObject {
   
   /**
     * A flag indicating whether it is possible to delete the firewall. A setting of TRUE indicates that the firewall is protected against deletion. Use this setting to protect against accidentally deleting a firewall that is in use. When you create a firewall, the operation initializes this flag to TRUE.
     */
-  var DeleteProtection: js.UndefOr[Boolean] = js.native
+  var DeleteProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A description of the firewall.
     */
-  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.undefined
   
   /**
     * The descriptive name of the firewall. You can't change the name of a firewall after you create it.
     */
-  var FirewallName: ResourceName = js.native
+  var FirewallName: ResourceName
   
   /**
     * The Amazon Resource Name (ARN) of the FirewallPolicy that you want to use for the firewall.
     */
-  var FirewallPolicyArn: ResourceArn = js.native
+  var FirewallPolicyArn: ResourceArn
   
   /**
     * A setting indicating whether the firewall is protected against a change to the firewall policy association. Use this setting to protect against accidentally modifying the firewall policy for a firewall that is in use. When you create a firewall, the operation initializes this setting to TRUE.
     */
-  var FirewallPolicyChangeProtection: js.UndefOr[Boolean] = js.native
+  var FirewallPolicyChangeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A setting indicating whether the firewall is protected against changes to the subnet associations. Use this setting to protect against accidentally modifying the subnet associations for a firewall that is in use. When you create a firewall, the operation initializes this setting to TRUE.
     */
-  var SubnetChangeProtection: js.UndefOr[Boolean] = js.native
+  var SubnetChangeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The public subnets to use for your Network Firewall firewalls. Each subnet must belong to a different Availability Zone in the VPC. Network Firewall creates a firewall endpoint in each subnet. 
     */
-  var SubnetMappings: typings.awsSdk.networkfirewallMod.SubnetMappings = js.native
+  var SubnetMappings: typings.awsSdk.networkfirewallMod.SubnetMappings
   
   /**
     * The key:value pairs to associate with the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The unique identifier of the VPC where Network Firewall should create the firewall.  You can't change this setting after you create the firewall. 
     */
-  var VpcId: typings.awsSdk.networkfirewallMod.VpcId = js.native
+  var VpcId: typings.awsSdk.networkfirewallMod.VpcId
 }
 object CreateFirewallRequest {
   

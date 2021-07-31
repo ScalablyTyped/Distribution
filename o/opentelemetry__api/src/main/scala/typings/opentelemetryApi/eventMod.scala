@@ -3,19 +3,17 @@ package typings.opentelemetryApi
 import typings.opentelemetryApi.attributesMod.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
-  @js.native
   trait Event extends StObject {
     
     /** The attributes of the event. */
-    var attributes: js.UndefOr[Attributes] = js.native
+    var attributes: js.UndefOr[Attributes] = js.undefined
     
     /** The name of the event. */
-    var name: String = js.native
+    var name: String
   }
   object Event {
     

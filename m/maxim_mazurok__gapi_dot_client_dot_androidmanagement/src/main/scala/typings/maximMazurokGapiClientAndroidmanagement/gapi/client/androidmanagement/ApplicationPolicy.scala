@@ -3,38 +3,36 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationPolicy extends StObject {
   
   /**
     * List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible
     * tracks. If the list contains no track IDs, devices only have access to the app’s production track. More details about each track are available in AppTrackInfo.
     */
-  var accessibleTrackIds: js.UndefOr[js.Array[String]] = js.native
+  var accessibleTrackIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Controls whether the app can communicate with itself across a device’s work and personal profiles, subject to user consent. */
-  var connectedWorkAndPersonalApp: js.UndefOr[String] = js.native
+  var connectedWorkAndPersonalApp: js.UndefOr[String] = js.undefined
   
   /**
     * The default policy for all permissions requested by the app. If specified, this overrides the policy-level default_permission_policy which applies to all apps. It does not override
     * the permission_grants which applies to all apps.
     */
-  var defaultPermissionPolicy: js.UndefOr[String] = js.native
+  var defaultPermissionPolicy: js.UndefOr[String] = js.undefined
   
   /** The scopes delegated to the app from Android Device Policy. */
-  var delegatedScopes: js.UndefOr[js.Array[String]] = js.native
+  var delegatedScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the app is disabled. When disabled, the app data is still preserved. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** The type of installation to perform. */
-  var installType: js.UndefOr[String] = js.native
+  var installType: js.UndefOr[String] = js.undefined
   
   /** Whether the app is allowed to lock itself in full-screen mode. DEPRECATED. Use InstallType KIOSK or kioskCustomLauncherEnabled to to configure a dedicated device. */
-  var lockTaskAllowed: js.UndefOr[Boolean] = js.native
+  var lockTaskAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Managed configuration applied to the app. The format for the configuration is dictated by the ManagedProperty values supported by the app. Each field name in the managed
@@ -44,24 +42,24 @@ trait ApplicationPolicy extends StObject {
   var managedConfiguration: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The managed configurations template for the app, saved from the managed configurations iframe. This field is ignored if managed_configuration is set. */
-  var managedConfigurationTemplate: js.UndefOr[ManagedConfigurationTemplate] = js.native
+  var managedConfigurationTemplate: js.UndefOr[ManagedConfigurationTemplate] = js.undefined
   
   /**
     * The minimum version of the app that runs on the device. If set, the device attempts to update the app to at least this version code. If the app is not up-to-date, the device will
     * contain a NonComplianceDetail with non_compliance_reason set to APP_NOT_UPDATED. The app must already be published to Google Play with a version code greater than or equal to this
     * value. At most 20 apps may specify a minimum version code per policy.
     */
-  var minimumVersionCode: js.UndefOr[Double] = js.native
+  var minimumVersionCode: js.UndefOr[Double] = js.undefined
   
   /** The package name of the app. For example, com.google.android.youtube for the YouTube app. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /** Explicit permission grants or denials for the app. These values override the default_permission_policy and permission_grants which apply to all apps. */
-  var permissionGrants: js.UndefOr[js.Array[PermissionGrant]] = js.native
+  var permissionGrants: js.UndefOr[js.Array[PermissionGrant]] = js.undefined
 }
 object ApplicationPolicy {
   
@@ -126,7 +124,7 @@ object ApplicationPolicy {
     def setManagedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[js.Any]
     ): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline

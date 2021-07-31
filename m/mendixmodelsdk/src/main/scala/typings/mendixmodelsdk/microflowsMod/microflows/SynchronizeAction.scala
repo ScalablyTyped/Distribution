@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,9 +52,8 @@ object SynchronizeAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SynchronizeAction.create")
-  @js.native
-  def create(model: IModel): SynchronizeAction = js.native
+  @scala.inline
+  def create(model: IModel): SynchronizeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SynchronizeAction]
   
   /**
     * Creates and returns a new SynchronizeAction instance in the SDK and on the server.
@@ -66,9 +64,8 @@ object SynchronizeAction {
     *  7.22.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SynchronizeAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): SynchronizeAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): SynchronizeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SynchronizeAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SynchronizeAction.structureTypeName")

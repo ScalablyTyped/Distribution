@@ -2,17 +2,15 @@ package typings.rascal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encryption extends StObject {
   
-  var algorithm: String = js.native
+  var algorithm: String
   
-  var ivLength: Double = js.native
+  var ivLength: Double
   
-  var key: String = js.native
+  var key: String
 }
 object Encryption {
   

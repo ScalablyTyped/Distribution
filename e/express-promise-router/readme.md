@@ -11,8 +11,8 @@ A lightweight wrapper for Express 4's Router that allows middleware to return pr
 | Full name          | express-promise-router |
 | Keywords           | express, promise, router |
 | # releases         | 3 |
-| # dependents       | 54 |
-| # downloads        | 1662399 |
+| # dependents       | 60 |
+| # downloads        | 2166910 |
 | # stars            | 11 |
 
 ## Links

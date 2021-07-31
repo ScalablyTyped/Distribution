@@ -4,19 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryFileUploadChunkObject
-  extends JQueryFileInputOptions
+  extends StObject
+     with JQueryFileInputOptions
      with JQueryFileUploadXhr {
   
-  var blob: js.Any = js.native
+  var blob: js.Any
   
-  var chunkSize: Double = js.native
+  var chunkSize: Double
   
-  var contentRange: String = js.native
+  var contentRange: String
 }
 object JQueryFileUploadChunkObject {
   

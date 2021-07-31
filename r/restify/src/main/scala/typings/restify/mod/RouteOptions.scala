@@ -3,25 +3,23 @@ package typings.restify.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteOptions extends StObject {
   
-  var contentType: js.UndefOr[String | js.Array[String]] = js.native
+  var contentType: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String | RegExp] = js.native
+  var path: js.UndefOr[String | RegExp] = js.undefined
   
-  var url: js.UndefOr[String | RegExp] = js.native
+  var url: js.UndefOr[String | RegExp] = js.undefined
   
-  var urlParamPattern: js.UndefOr[RegExp] = js.native
+  var urlParamPattern: js.UndefOr[RegExp] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var versions: js.UndefOr[js.Array[String]] = js.native
+  var versions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RouteOptions {
   

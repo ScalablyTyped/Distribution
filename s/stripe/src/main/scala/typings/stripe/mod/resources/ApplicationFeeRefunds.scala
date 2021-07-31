@@ -13,7 +13,6 @@ import typings.stripe.mod.applicationFees.IApplicationFeeRefund
 import typings.stripe.mod.applicationFees.IApplicationFeeRefundCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.ApplicationFeeRefunds")

@@ -2,37 +2,35 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
-  var center: js.UndefOr[js.Array[Double]] = js.native
+  var center: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var glyphs: js.UndefOr[String] = js.native
+  var glyphs: js.UndefOr[String] = js.undefined
   
-  var layers: js.UndefOr[js.Array[Layer]] = js.native
+  var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   
-  var light: js.UndefOr[Light] = js.native
+  var light: js.UndefOr[Light] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var sources: js.UndefOr[Sources] = js.native
+  var sources: js.UndefOr[Sources] = js.undefined
   
-  var sprite: js.UndefOr[String] = js.native
+  var sprite: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[Transition] = js.native
+  var transition: js.UndefOr[Transition] = js.undefined
   
-  var version: Double = js.native
+  var version: Double
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object Style {
   

@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LimitRangeSpec defines a min/max usage limit for resources that match on kind.
   */
-@js.native
 trait LimitRangeSpec extends StObject {
   
   /**
     * Limits is the list of LimitRangeItem objects that are enforced.
     */
-  var limits: Input[js.Array[Input[LimitRangeItem]]] = js.native
+  var limits: Input[js.Array[Input[LimitRangeItem]]]
 }
 object LimitRangeSpec {
   

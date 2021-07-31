@@ -2,10 +2,13 @@ package typings.reactNativeSquareInAppPayments.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SQIPApplePay {
+  
+  @JSImport("react-native-square-in-app-payments", "SQIPApplePay")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ApplePayPaymentType extends StObject
@@ -15,17 +18,21 @@ object SQIPApplePay {
   object ApplePayPaymentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ApplePayPaymentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ApplePayPaymentType & Double] = js.native
     
     /** A summary item representing the known, final cost. */
     @js.native
-    sealed trait PaymentTypeFinal extends ApplePayPaymentType
-    /* 2 */ val PaymentTypeFinal: typings.reactNativeSquareInAppPayments.mod.SQIPApplePay.ApplePayPaymentType.PaymentTypeFinal with Double = js.native
+    sealed trait PaymentTypeFinal
+      extends StObject
+         with ApplePayPaymentType
+    /* 2 */ val PaymentTypeFinal: typings.reactNativeSquareInAppPayments.mod.SQIPApplePay.ApplePayPaymentType.PaymentTypeFinal & Double = js.native
     
     /** A summary item representing an estimated or unknown cost. */
     @js.native
-    sealed trait PaymentTypePending extends ApplePayPaymentType
-    /* 1 */ val PaymentTypePending: typings.reactNativeSquareInAppPayments.mod.SQIPApplePay.ApplePayPaymentType.PaymentTypePending with Double = js.native
+    sealed trait PaymentTypePending
+      extends StObject
+         with ApplePayPaymentType
+    /* 1 */ val PaymentTypePending: typings.reactNativeSquareInAppPayments.mod.SQIPApplePay.ApplePayPaymentType.PaymentTypePending & Double = js.native
   }
   
   /**
@@ -33,9 +40,8 @@ object SQIPApplePay {
     * Not all brands supported by Apple Pay are supported by Square.
     * @platform IOS
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPApplePay.canUseApplePay")
-  @js.native
-  def canUseApplePay(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def canUseApplePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseApplePay")().asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Notifies the native layer to close the Apple Pay sheet with success or failure status.
@@ -44,12 +50,10 @@ object SQIPApplePay {
     * @param [errorMessage] - The error message that Apple Pay displays in the native layer card entry view controller.
     * @throws ex
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPApplePay.completeApplePayAuthorization")
-  @js.native
-  def completeApplePayAuthorization(isSuccess: Boolean): js.Promise[Unit] = js.native
-  @JSImport("react-native-square-in-app-payments", "SQIPApplePay.completeApplePayAuthorization")
-  @js.native
-  def completeApplePayAuthorization(isSuccess: Boolean, errorMessage: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def completeApplePayAuthorization(isSuccess: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def completeApplePayAuthorization(isSuccess: Boolean, errorMessage: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   // Functions
   /**
@@ -59,9 +63,8 @@ object SQIPApplePay {
     * @platform IOS
     * @param applePayMerchantId - Registered Apple Pay merchant ID
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPApplePay.initializeApplePay")
-  @js.native
-  def initializeApplePay(applePayMerchantId: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def initializeApplePay(applePayMerchantId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApplePay")(applePayMerchantId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Starts the Apple Pay payment authorization and returns a nonce based on the authorized Apple Pay payment token.
@@ -72,14 +75,13 @@ object SQIPApplePay {
     * @param onApplePayComplete - Invoked when Apple Pay sheet is closed after success, failure, or cancellation.
     * @throws ex
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPApplePay.requestApplePayNonce")
-  @js.native
+  @scala.inline
   def requestApplePayNonce(
     applePayConfig: ApplePayConfig,
     onApplePayNonceRequestSuccess: ApplePayNonceRequestSuccessCallback,
     onApplePayNonceRequestFailure: ApplePayNonceRequestFailureCallback,
     onApplePayComplete: ApplePayCompleteCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestApplePayNonce")(applePayConfig.asInstanceOf[js.Any], onApplePayNonceRequestSuccess.asInstanceOf[js.Any], onApplePayNonceRequestFailure.asInstanceOf[js.Any], onApplePayComplete.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Callback invoked when the native iOS Apple Pay payment authorization sheet is closed with success, failure, or cancellation.
@@ -89,23 +91,22 @@ object SQIPApplePay {
   type ApplePayCompleteCallback = js.Function0[Unit]
   
   /** Represents the Apple Pay configuration. */
-  @js.native
   trait ApplePayConfig extends StObject {
     
     /** The Apple Pay country code. */
-    var countryCode: String = js.native
+    var countryCode: String
     
     /** ISO currency code of the payment amount. */
-    var currencyCode: String = js.native
+    var currencyCode: String
     
     /** Type of the payment summary item, PaymentTypeFinal for default */
-    var paymentType: js.UndefOr[ApplePayPaymentType] = js.native
+    var paymentType: js.UndefOr[ApplePayPaymentType] = js.undefined
     
     /** The payment authorization amount as a string. */
-    var price: String = js.native
+    var price: String
     
     /** A label that displays the checkout summary in the Apple Pay view. */
-    var summaryLabel: String = js.native
+    var summaryLabel: String
   }
   object ApplePayConfig {
     

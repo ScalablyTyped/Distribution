@@ -5,92 +5,73 @@ import typings.loadjs.anon.Typeofloadjs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleIdOrLoaded: String): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleIdOrLoaded: LoadOptions): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleIdOrLoaded: LoadedFn): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleId: String, optionsOrCallback: LoadOptions): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleId: String, optionsOrCallback: LoadedFn): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleIdOrLoaded: String): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleIdOrLoaded: LoadOptions): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleIdOrLoaded: LoadedFn): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadOptions): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadedFn): Unit = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = js.native
-  @JSImport("loadjs", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], options: LoadOptionsreturnPromiset): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(files: String, bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: String, bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: String, bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: String, bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: String, bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: String, bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(files: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(files: js.Array[String], bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[String], bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[String], bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[String], bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(files: js.Array[String], options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("loadjs", "done")
+  @JSImport("loadjs", JSImport.Namespace)
   @js.native
-  def done(bundleId: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("loadjs", "isDefined")
-  @js.native
-  def isDefined(bundleId: String): Boolean = js.native
+  @scala.inline
+  def done(bundleId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("loadjs", "ready")
-  @js.native
-  def ready(bundleIds: String, optionsOrCallback: LoadedFn): Typeofloadjs = js.native
-  @JSImport("loadjs", "ready")
-  @js.native
-  def ready(bundleIds: String, optionsOrCallback: ReadyOptions): Typeofloadjs = js.native
-  @JSImport("loadjs", "ready")
-  @js.native
-  def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): Typeofloadjs = js.native
-  @JSImport("loadjs", "ready")
-  @js.native
-  def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): Typeofloadjs = js.native
+  @scala.inline
+  def isDefined(bundleId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("loadjs", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def ready(bundleIds: String, optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  @scala.inline
+  def ready(bundleIds: String, optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  @scala.inline
+  def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  @scala.inline
+  def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
   
-  @js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
   trait LoadOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.native
+    var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.undefined
     
     // Arguments provided are different in case of returnPromise: true / false
-    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.undefined
     
-    var numRetries: js.UndefOr[Double] = js.native
+    var numRetries: js.UndefOr[Double] = js.undefined
     
-    var success: js.UndefOr[js.Function0[Unit]] = js.native
+    var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object LoadOptions {
     
@@ -137,12 +118,11 @@ object mod {
   
   type LoadedFn = js.Function0[Unit]
   
-  @js.native
   trait ReadyOptions extends StObject {
     
-    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.undefined
     
-    var success: js.UndefOr[js.Function0[Unit]] = js.native
+    var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ReadyOptions {
     

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnLoadReque
 import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnLoadResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeAddScriptToEvaluateOnLoadResponse extends StObject {
   
-  var paramsType: js.Array[AddScriptToEvaluateOnLoadRequest] = js.native
+  var paramsType: js.Array[AddScriptToEvaluateOnLoadRequest]
   
-  var returnType: AddScriptToEvaluateOnLoadResponse = js.native
+  var returnType: AddScriptToEvaluateOnLoadResponse
 }
 object ReturnTypeAddScriptToEvaluateOnLoadResponse {
   

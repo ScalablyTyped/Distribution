@@ -10,9 +10,9 @@ Transforms between XML string and JavaScript object trees.
 | ------------------ | :-------------: |
 | Full name          | x2js |
 | Keywords           | xml, convert, transform, mapping, map |
-| # releases         | 8 |
-| # dependents       | 57 |
-| # downloads        | 562403 |
+| # releases         | 4 |
+| # dependents       | 63 |
+| # downloads        | 586466 |
 | # stars            | 4 |
 
 ## Links

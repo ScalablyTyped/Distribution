@@ -3,104 +3,102 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInfo extends StObject {
   
   /**
     * Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to
     * cause poor quality of the audio sent.
     */
-  var bandwidthLowEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var bandwidthLowEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
-  var basicServiceSetIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var basicServiceSetIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Type of network used by the media endpoint. Possible values are: unknown, wired, wifi, mobile, tunnel,
     * unknownFutureValue.
     */
-  var connectionType: js.UndefOr[NetworkConnectionType] = js.native
+  var connectionType: js.UndefOr[NetworkConnectionType] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to
     * have real-time two-way communication.
     */
-  var delayEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var delayEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // DNS suffix associated with the network adapter of the media endpoint.
-  var dnsSuffix: js.UndefOr[NullableOption[String]] = js.native
+  var dnsSuffix: js.UndefOr[NullableOption[String]] = js.undefined
   
   // IP address of the media endpoint.
-  var ipAddress: js.UndefOr[NullableOption[String]] = js.native
+  var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Link speed in bits per second reported by the network adapter used by the media endpoint.
-  var linkSpeed: js.UndefOr[NullableOption[Double]] = js.native
+  var linkSpeed: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The media access control (MAC) address of the media endpoint's network device.
-  var macAddress: js.UndefOr[NullableOption[String]] = js.native
+  var macAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network port number used by media endpoint.
-  var port: js.UndefOr[NullableOption[Double]] = js.native
+  var port: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
-  var receivedQualityEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var receivedQualityEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address
     * associated to the endpoint.
     */
-  var reflexiveIPAddress: js.UndefOr[NullableOption[String]] = js.native
+  var reflexiveIPAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // IP address of the media relay server allocated by the media endpoint.
-  var relayIPAddress: js.UndefOr[NullableOption[String]] = js.native
+  var relayIPAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network port number allocated on the media relay server by the media endpoint.
-  var relayPort: js.UndefOr[NullableOption[Double]] = js.native
+  var relayPort: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
-  var sentQualityEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var sentQualityEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Subnet used for media stream by the media endpoint.
-  var subnet: js.UndefOr[NullableOption[String]] = js.native
+  var subnet: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * WiFi band used by the media endpoint. Possible values are: unknown, frequency24GHz, frequency50GHz, frequency60GHz,
     * unknownFutureValue.
     */
-  var wifiBand: js.UndefOr[WifiBand] = js.native
+  var wifiBand: js.UndefOr[WifiBand] = js.undefined
   
   // Estimated remaining battery charge in percentage reported by the media endpoint.
-  var wifiBatteryCharge: js.UndefOr[NullableOption[Double]] = js.native
+  var wifiBatteryCharge: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // WiFi channel used by the media endpoint.
-  var wifiChannel: js.UndefOr[NullableOption[Double]] = js.native
+  var wifiChannel: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Name of the Microsoft WiFi driver used by the media endpoint. Value may be localized based on the language used by
     * endpoint.
     */
-  var wifiMicrosoftDriver: js.UndefOr[NullableOption[String]] = js.native
+  var wifiMicrosoftDriver: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the Microsoft WiFi driver used by the media endpoint.
-  var wifiMicrosoftDriverVersion: js.UndefOr[NullableOption[String]] = js.native
+  var wifiMicrosoftDriverVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Type of WiFi radio used by the media endpoint. Possible values are: unknown, wifi80211a, wifi80211b, wifi80211g,
     * wifi80211n, wifi80211ac, wifi80211ax, unknownFutureValue.
     */
-  var wifiRadioType: js.UndefOr[WifiRadioType] = js.native
+  var wifiRadioType: js.UndefOr[WifiRadioType] = js.undefined
   
   // WiFi signal strength in percentage reported by the media endpoint.
-  var wifiSignalStrength: js.UndefOr[NullableOption[Double]] = js.native
+  var wifiSignalStrength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.
-  var wifiVendorDriver: js.UndefOr[NullableOption[String]] = js.native
+  var wifiVendorDriver: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the WiFi driver used by the media endpoint.
-  var wifiVendorDriverVersion: js.UndefOr[NullableOption[String]] = js.native
+  var wifiVendorDriverVersion: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object NetworkInfo {
   

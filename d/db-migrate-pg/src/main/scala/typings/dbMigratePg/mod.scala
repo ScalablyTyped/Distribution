@@ -7,7 +7,6 @@ import typings.dbMigrateBase.mod.^
 import typings.pg.mod.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,46 +23,45 @@ object mod {
     def createDatabase(dbName: String, optionsOrCb: CreateDatabaseOptions): Unit = js.native
     def createDatabase(dbName: String, optionsOrCb: CreateDatabaseOptions, callback: CallbackFunction): Unit = js.native
     
-    def createDatabaseAsync(dbName: String): typings.bluebird.mod.^[_] = js.native
-    def createDatabaseAsync(dbName: String, options: CreateDatabaseOptions): typings.bluebird.mod.^[_] = js.native
+    def createDatabaseAsync(dbName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def createDatabaseAsync(dbName: String, options: CreateDatabaseOptions): typings.bluebird.mod.^[js.Any] = js.native
     
     def createSequence(sqName: String, optionsOrCb: CallbackFunction): Unit = js.native
     def createSequence(sqName: String, optionsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     def createSequence(sqName: String, optionsOrCb: CreateSequenceOptions): Unit = js.native
     def createSequence(sqName: String, optionsOrCb: CreateSequenceOptions, callback: CallbackFunction): Unit = js.native
     
-    def createSequenceAsync(sqName: String): typings.bluebird.mod.^[_] = js.native
-    def createSequenceAsync(sqName: String, options: CreateSequenceOptions): typings.bluebird.mod.^[_] = js.native
+    def createSequenceAsync(sqName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def createSequenceAsync(sqName: String, options: CreateSequenceOptions): typings.bluebird.mod.^[js.Any] = js.native
     
     def dropDatabase(dbName: String, optionsOrCb: CallbackFunction): Unit = js.native
     def dropDatabase(dbName: String, optionsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     def dropDatabase(dbName: String, optionsOrCb: DropDatabaseOptions): Unit = js.native
     def dropDatabase(dbName: String, optionsOrCb: DropDatabaseOptions, callback: CallbackFunction): Unit = js.native
     
-    def dropDatabaseAsync(dbName: String): typings.bluebird.mod.^[_] = js.native
-    def dropDatabaseAsync(dbName: String, options: DropDatabaseOptions): typings.bluebird.mod.^[_] = js.native
+    def dropDatabaseAsync(dbName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dropDatabaseAsync(dbName: String, options: DropDatabaseOptions): typings.bluebird.mod.^[js.Any] = js.native
     
     def dropSequence(dbName: String, optionsOrCb: CallbackFunction): Unit = js.native
     def dropSequence(dbName: String, optionsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     def dropSequence(dbName: String, optionsOrCb: DropSequenceOptions): Unit = js.native
     def dropSequence(dbName: String, optionsOrCb: DropSequenceOptions, callback: CallbackFunction): Unit = js.native
     
-    def dropSequenceAsync(dbName: String): typings.bluebird.mod.^[_] = js.native
-    def dropSequenceAsync(dbName: String, options: DropSequenceOptions): typings.bluebird.mod.^[_] = js.native
+    def dropSequenceAsync(dbName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def dropSequenceAsync(dbName: String, options: DropSequenceOptions): typings.bluebird.mod.^[js.Any] = js.native
     
     def switchDatabase(options: String, callback: CallbackFunction): Unit = js.native
     def switchDatabase(options: SwitchDatabaseOptions, callback: CallbackFunction): Unit = js.native
     
-    def switchDatabaseAsync(options: String): typings.bluebird.mod.^[_] = js.native
-    def switchDatabaseAsync(options: SwitchDatabaseOptions): typings.bluebird.mod.^[_] = js.native
+    def switchDatabaseAsync(options: String): typings.bluebird.mod.^[js.Any] = js.native
+    def switchDatabaseAsync(options: SwitchDatabaseOptions): typings.bluebird.mod.^[js.Any] = js.native
   }
   
-  @js.native
   trait ColumnConstraint extends StObject {
     
-    var constraints: String = js.native
+    var constraints: String
     
-    def foreignKey(callback: CallbackFunction): Unit = js.native
+    def foreignKey(callback: CallbackFunction): Unit
   }
   object ColumnConstraint {
     
@@ -84,10 +82,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ColumnConstraintOptions extends StObject {
     
-    var emitPrimaryKey: js.UndefOr[Boolean] = js.native
+    var emitPrimaryKey: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnConstraintOptions {
     
@@ -108,13 +105,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateDatabaseOptions extends StObject
   
-  @js.native
   trait CreateSequenceOptions extends StObject {
     
-    var temp: js.UndefOr[Boolean] = js.native
+    var temp: js.UndefOr[Boolean] = js.undefined
   }
   object CreateSequenceOptions {
     
@@ -135,10 +130,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DropDatabaseOptions extends StObject {
     
-    var ifExists: js.UndefOr[Boolean] = js.native
+    var ifExists: js.UndefOr[Boolean] = js.undefined
   }
   object DropDatabaseOptions {
     
@@ -159,14 +153,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DropSequenceOptions extends StObject {
     
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
-    var ifExists: js.UndefOr[Boolean] = js.native
+    var ifExists: js.UndefOr[Boolean] = js.undefined
     
-    var restrict: js.UndefOr[Boolean] = js.native
+    var restrict: js.UndefOr[Boolean] = js.undefined
   }
   object DropSequenceOptions {
     
@@ -199,10 +192,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SwitchDatabaseOptions extends StObject {
     
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
   }
   object SwitchDatabaseOptions {
     

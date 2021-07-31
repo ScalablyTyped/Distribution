@@ -5,7 +5,6 @@ import typings.playcanvas.pc.callbacks.ConfigureApp
 import typings.playcanvas.pc.callbacks.PreloadApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,7 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.scriptsOrder] - Scripts in order of loading first.
   */
 @js.native
-trait Application extends EventHandler {
+trait Application
+  extends StObject
+     with EventHandler {
   
   /**
     * Apply scene settings to the current scene. Useful when your scene settings are parsed or generated from a non-URL source.
@@ -269,13 +270,7 @@ trait Application extends EventHandler {
     * to {@link pc.LAYERID_IMMEDIATE}.
     */
   def renderLine(start: Vec3, end: Vec3, color: Color): Unit = js.native
-  def renderLine(
-    start: Vec3,
-    end: Vec3,
-    color: Color,
-    endColor: js.UndefOr[scala.Nothing],
-    options: typings.playcanvas.anon.Layer
-  ): Unit = js.native
+  def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Unit, options: typings.playcanvas.anon.Layer): Unit = js.native
   def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color): Unit = js.native
   def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color, options: typings.playcanvas.anon.Layer): Unit = js.native
   
@@ -339,9 +334,9 @@ trait Application extends EventHandler {
     * @returns A object containing the values calculated to use as width and height.
     */
   def resizeCanvas(): js.Any = js.native
-  def resizeCanvas(width: js.UndefOr[scala.Nothing], height: Double): js.Any = js.native
   def resizeCanvas(width: Double): js.Any = js.native
   def resizeCanvas(width: Double, height: Double): js.Any = js.native
+  def resizeCanvas(width: Unit, height: Double): js.Any = js.native
   
   /**
     * The current resolution mode of the canvas, Can be:
@@ -394,9 +389,9 @@ trait Application extends EventHandler {
     * @param [height] - The height of the canvas (only used when mode is pc.FILLMODE_NONE).
     */
   def setCanvasFillMode(mode: String): Unit = js.native
-  def setCanvasFillMode(mode: String, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setCanvasFillMode(mode: String, width: Double): Unit = js.native
   def setCanvasFillMode(mode: String, width: Double, height: Double): Unit = js.native
+  def setCanvasFillMode(mode: String, width: Unit, height: Double): Unit = js.native
   
   /**
     * Change the resolution of the canvas, and set the way it behaves when the window is resized.
@@ -408,9 +403,9 @@ trait Application extends EventHandler {
     * @param [height] - The vertical resolution, optional in AUTO mode, if not provided canvas clientHeight is used.
     */
   def setCanvasResolution(mode: String): Unit = js.native
-  def setCanvasResolution(mode: String, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setCanvasResolution(mode: String, width: Double): Unit = js.native
   def setCanvasResolution(mode: String, width: Double, height: Double): Unit = js.native
+  def setCanvasResolution(mode: String, width: Unit, height: Double): Unit = js.native
   
   /**
     * Sets the skybox asset to current scene, and subscribes to asset load/change events.

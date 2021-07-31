@@ -3,17 +3,15 @@ package typings.pubnub.mod
 import typings.pubnub.anon.CustomFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetUUIDMetadataParameters[Custom /* <: ObjectCustom */] extends StObject {
   
-  var data: UUIDMetadata[Custom] = js.native
+  var data: UUIDMetadata[Custom]
   
-  var include: js.UndefOr[CustomFields] = js.native
+  var include: js.UndefOr[CustomFields] = js.undefined
   
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object SetUUIDMetadataParameters {
   
@@ -24,7 +22,7 @@ object SetUUIDMetadataParameters {
   }
   
   @scala.inline
-  implicit class SetUUIDMetadataParametersMutableBuilder[Self <: SetUUIDMetadataParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetUUIDMetadataParameters[Custom]) extends AnyVal {
+  implicit class SetUUIDMetadataParametersMutableBuilder[Self <: SetUUIDMetadataParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetUUIDMetadataParameters[Custom]) extends AnyVal {
     
     @scala.inline
     def setData(value: UUIDMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

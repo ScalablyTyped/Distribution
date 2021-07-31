@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
@@ -60,29 +59,34 @@ object commonMod {
   object SesType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SesType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SesType & Double] = js.native
     
     @js.native
-    sealed trait Add extends SesType
-    /* 1 */ val Add: typings.devexpressUtils.commonMod.SesType.Add with Double = js.native
+    sealed trait Add
+      extends StObject
+         with SesType
+    /* 1 */ val Add: typings.devexpressUtils.commonMod.SesType.Add & Double = js.native
     
     @js.native
-    sealed trait Common extends SesType
-    /* 0 */ val Common: typings.devexpressUtils.commonMod.SesType.Common with Double = js.native
+    sealed trait Common
+      extends StObject
+         with SesType
+    /* 0 */ val Common: typings.devexpressUtils.commonMod.SesType.Common & Double = js.native
     
     @js.native
-    sealed trait Delete extends SesType
-    /* -1 */ val Delete: typings.devexpressUtils.commonMod.SesType.Delete with Double = js.native
+    sealed trait Delete
+      extends StObject
+         with SesType
+    /* -1 */ val Delete: typings.devexpressUtils.commonMod.SesType.Delete & Double = js.native
   }
   
-  @js.native
   trait ISequenceComparatorItertor[T] extends StObject {
     
-    def getByIndex(index: Double): T = js.native
+    def getByIndex(index: Double): T
     
-    def getComparer(): js.Function2[/* a */ T, /* b */ T, Boolean] = js.native
+    def getComparer(): js.Function2[/* a */ T, /* b */ T, Boolean]
     
-    var length: Double = js.native
+    var length: Double
   }
   object ISequenceComparatorItertor {
     
@@ -97,7 +101,7 @@ object commonMod {
     }
     
     @scala.inline
-    implicit class ISequenceComparatorItertorMutableBuilder[Self <: ISequenceComparatorItertor[_], T] (val x: Self with ISequenceComparatorItertor[T]) extends AnyVal {
+    implicit class ISequenceComparatorItertorMutableBuilder[Self <: ISequenceComparatorItertor[?], T] (val x: Self & ISequenceComparatorItertor[T]) extends AnyVal {
       
       @scala.inline
       def setGetByIndex(value: Double => T): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
@@ -110,20 +114,19 @@ object commonMod {
     }
   }
   
-  @js.native
   trait PathElem extends StObject {
     
-    var k: Double | Null = js.native
+    var k: Double | Null
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object PathElem {
     
     @scala.inline
     def apply(x: Double, y: Double): PathElem = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], k = null)
       __obj.asInstanceOf[PathElem]
     }
     

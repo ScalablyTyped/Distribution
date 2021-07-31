@@ -3,41 +3,41 @@ package typings.extjs.Ext
 import typings.extjs.Ext.panel.IHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tab {
   
-  @js.native
-  trait IBar extends IHeader {
+  trait IBar
+    extends StObject
+       with IHeader {
     
     /** [Method] Called by the layout system after the Component has been laid out
       * @param width Object
       */
     @JSName("afterComponentLayout")
-    var afterComponentLayout_IBar: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.native
+    var afterComponentLayout_IBar: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isTabBar: js.UndefOr[Boolean] = js.native
+    var isTabBar: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxTabWidth: js.UndefOr[Double] = js.native
+    var maxTabWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minTabWidth: js.UndefOr[Double] = js.native
+    var minTabWidth: js.UndefOr[Double] = js.undefined
     
     /** [Method] This method is invoked after a new Component has been removed
       * @param tab Object
       */
     @JSName("onRemove")
-    var onRemove_IBar: js.UndefOr[js.Function1[/* tab */ js.UndefOr[js.Any], Unit]] = js.native
+    var onRemove_IBar: js.UndefOr[js.Function1[/* tab */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_IBar: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_IBar: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
   }
   object IBar {
     
@@ -94,52 +94,52 @@ object tab {
     }
   }
   
-  @js.native
   trait IPanel
-    extends typings.extjs.Ext.panel.IPanel {
+    extends StObject
+       with typings.extjs.Ext.panel.IPanel {
     
     /** [Config Option] (String/Number/Ext.Component) */
-    var activeTab: js.UndefOr[js.Any] = js.native
+    var activeTab: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var deferredRender: js.UndefOr[Boolean] = js.native
+    var deferredRender: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the item that is currently active inside this TabPanel
       * @returns Ext.Component The currently active item.
       */
-    var getActiveTab: js.UndefOr[js.Function0[IComponent]] = js.native
+    var getActiveTab: js.UndefOr[js.Function0[IComponent]] = js.undefined
     
     /** [Method] Returns the Ext tab Bar currently used in this TabPanel
       * @returns Ext.tab.Bar The TabBar
       */
-    var getTabBar: js.UndefOr[js.Function0[IBar]] = js.native
+    var getTabBar: js.UndefOr[js.Function0[IBar]] = js.undefined
     
     /** [Config Option] (String) */
-    var itemCls: js.UndefOr[java.lang.String] = js.native
+    var itemCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxTabWidth: js.UndefOr[Double] = js.native
+    var maxTabWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minTabWidth: js.UndefOr[Double] = js.native
+    var minTabWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var removePanelHeader: js.UndefOr[Boolean] = js.native
+    var removePanelHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Makes the given card active
       * @param card String/Number/Ext.Component The card to make active. Either an ID, index or the component itself.
       * @returns Ext.Component The resulting active child Component. The call may have been vetoed, or otherwise modified by an event listener.
       */
-    var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.native
+    var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.undefined
     
     /** [Config Option] (Object) */
-    var tabBar: js.UndefOr[js.Any] = js.native
+    var tabBar: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] ("top"/"bottom"/"left"/"right") */
-    var tabPosition: js.UndefOr[js.Any] = js.native
+    var tabPosition: js.UndefOr[js.Any] = js.undefined
   }
   object IPanel {
     
@@ -226,37 +226,37 @@ object tab {
     }
   }
   
-  @js.native
   trait ITab
-    extends typings.extjs.Ext.button.IButton {
+    extends StObject
+       with typings.extjs.Ext.button.IButton {
     
     /** [Property] (Boolean) */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var activeCls: js.UndefOr[java.lang.String] = js.native
+    var activeCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var closableCls: js.UndefOr[java.lang.String] = js.native
+    var closableCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var closeText: js.UndefOr[java.lang.String] = js.native
+    var closeText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Boolean) */
-    var isTab: js.UndefOr[Boolean] = js.native
+    var isTab: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets this tab s attached card
       * @param card Ext.Component The card to set
       */
-    var setCard: js.UndefOr[js.Function1[/* card */ js.UndefOr[IComponent], Unit]] = js.native
+    var setCard: js.UndefOr[js.Function1[/* card */ js.UndefOr[IComponent], Unit]] = js.undefined
     
     /** [Method] Sets the tab as either closable or not
       * @param closable Boolean Pass false to make the tab not closable. Otherwise the tab will be made closable (eg a close button will appear on the tab)
       */
-    var setClosable: js.UndefOr[js.Function1[/* closable */ js.UndefOr[Boolean], Unit]] = js.native
+    var setClosable: js.UndefOr[js.Function1[/* closable */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ITab {
     

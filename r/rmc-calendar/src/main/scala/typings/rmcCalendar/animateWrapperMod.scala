@@ -3,7 +3,6 @@ package typings.rmcCalendar
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animateWrapperMod {
@@ -29,14 +28,13 @@ object animateWrapperMod {
   trait AnimateWrapper
     extends PureComponent[PropsType, js.Object, js.Any]
   
-  @js.native
   trait PropsType extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var displayType: js.UndefOr[String] = js.native
+    var displayType: js.UndefOr[String] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object PropsType {
     

@@ -2,28 +2,27 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectRotate
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The amount of rotation for the symbol.
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectRotate: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate = js.native
+  var type_CIMGeometricEffectRotate: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate
 }
 object CIMGeometricEffectRotate {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate): CIMGeometricEffectRotate = {
+  def apply(): CIMGeometricEffectRotate = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectRotate")
     __obj.asInstanceOf[CIMGeometricEffectRotate]
   }
   

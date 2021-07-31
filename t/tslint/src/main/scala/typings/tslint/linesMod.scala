@@ -2,10 +2,13 @@ package typings.tslint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linesMod {
+  
+  @JSImport("tslint/lib/verify/lines", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tslint/lib/verify/lines", "CodeLine")
   @js.native
@@ -57,14 +60,11 @@ object linesMod {
   @js.native
   val ZERO_LENGTH_ERROR: /* "~nil" */ String = js.native
   
-  @JSImport("tslint/lib/verify/lines", "parseLine")
-  @js.native
-  def parseLine(text: String): Line = js.native
+  @scala.inline
+  def parseLine(text: String): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLine")(text.asInstanceOf[js.Any]).asInstanceOf[Line]
   
-  @JSImport("tslint/lib/verify/lines", "printLine")
-  @js.native
-  def printLine(fileName: String, line: Line): js.UndefOr[String] = js.native
-  @JSImport("tslint/lib/verify/lines", "printLine")
-  @js.native
-  def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def printLine(fileName: String, line: Line): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

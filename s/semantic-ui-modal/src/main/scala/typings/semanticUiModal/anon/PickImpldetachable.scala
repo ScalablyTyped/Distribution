@@ -2,14 +2,12 @@ package typings.semanticUiModal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.ModalSettings._Impl, 'detachable'> */
-@js.native
 trait PickImpldetachable extends StObject {
   
-  var detachable: Boolean = js.native
+  var detachable: Boolean
 }
 object PickImpldetachable {
   

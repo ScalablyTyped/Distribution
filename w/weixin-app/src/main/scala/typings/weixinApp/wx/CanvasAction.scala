@@ -2,17 +2,15 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // 界面-----绘图
-@js.native
 trait CanvasAction extends StObject {
   
-  var data: js.Array[CanvasAction | Double | String] = js.native
+  var data: js.Array[CanvasAction | Double | String]
   
-  var method: String = js.native
+  var method: String
 }
 object CanvasAction {
   

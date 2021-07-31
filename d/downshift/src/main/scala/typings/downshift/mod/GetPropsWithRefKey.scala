@@ -2,13 +2,11 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPropsWithRefKey extends StObject {
   
-  var refKey: js.UndefOr[String] = js.native
+  var refKey: js.UndefOr[String] = js.undefined
 }
 object GetPropsWithRefKey {
   

@@ -5,37 +5,35 @@ import typings.std.HTMLMediaElement
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectionController extends StObject {
   
-  def closeKeySession(session: SessionToken): Unit = js.native
+  def closeKeySession(session: SessionToken): Unit
   
-  def createKeySession(initData: ArrayBuffer, cdmData: Uint8Array): Unit = js.native
+  def createKeySession(initData: ArrayBuffer, cdmData: Uint8Array): Unit
   
-  def getKeySystems(): js.Array[KeySystem] = js.native
+  def getKeySystems(): js.Array[KeySystem]
   
-  def getSupportedKeySystemsFromContentProtection(cps: js.Array[_]): js.Array[SupportedKeySystem] = js.native
+  def getSupportedKeySystemsFromContentProtection(cps: js.Array[js.Any]): js.Array[SupportedKeySystem]
   
-  def initializeForMedia(mediaInfo: ProtectionMediaInfo): Unit = js.native
+  def initializeForMedia(mediaInfo: ProtectionMediaInfo): Unit
   
-  def removeKeySession(session: SessionToken): Unit = js.native
+  def removeKeySession(session: SessionToken): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def setMediaElement(element: HTMLMediaElement): Unit = js.native
+  def setMediaElement(element: HTMLMediaElement): Unit
   
-  def setProtectionData(protData: ProtectionData): Unit = js.native
+  def setProtectionData(protData: ProtectionData): Unit
   
-  def setRobustnessLevel(level: String): Unit = js.native
+  def setRobustnessLevel(level: String): Unit
   
-  def setServerCertificate(serverCertificate: ArrayBuffer): Unit = js.native
+  def setServerCertificate(serverCertificate: ArrayBuffer): Unit
   
-  def setSessionType(`type`: String): Unit = js.native
+  def setSessionType(`type`: String): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object ProtectionController {
   
@@ -44,7 +42,7 @@ object ProtectionController {
     closeKeySession: SessionToken => Unit,
     createKeySession: (ArrayBuffer, Uint8Array) => Unit,
     getKeySystems: () => js.Array[KeySystem],
-    getSupportedKeySystemsFromContentProtection: js.Array[_] => js.Array[SupportedKeySystem],
+    getSupportedKeySystemsFromContentProtection: js.Array[js.Any] => js.Array[SupportedKeySystem],
     initializeForMedia: ProtectionMediaInfo => Unit,
     removeKeySession: SessionToken => Unit,
     reset: () => Unit,
@@ -72,7 +70,7 @@ object ProtectionController {
     def setGetKeySystems(value: () => js.Array[KeySystem]): Self = StObject.set(x, "getKeySystems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSupportedKeySystemsFromContentProtection(value: js.Array[_] => js.Array[SupportedKeySystem]): Self = StObject.set(x, "getSupportedKeySystemsFromContentProtection", js.Any.fromFunction1(value))
+    def setGetSupportedKeySystemsFromContentProtection(value: js.Array[js.Any] => js.Array[SupportedKeySystem]): Self = StObject.set(x, "getSupportedKeySystemsFromContentProtection", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitializeForMedia(value: ProtectionMediaInfo => Unit): Self = StObject.set(x, "initializeForMedia", js.Any.fromFunction1(value))

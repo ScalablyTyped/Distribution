@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2NetworkInterfaceDetails extends StObject {
   
   /**
     * The network interface attachment.
     */
-  var Attachment: js.UndefOr[AwsEc2NetworkInterfaceAttachment] = js.native
+  var Attachment: js.UndefOr[AwsEc2NetworkInterfaceAttachment] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[NonEmptyString] = js.native
+  var NetworkInterfaceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Security groups for the network interface.
     */
-  var SecurityGroups: js.UndefOr[AwsEc2NetworkInterfaceSecurityGroupList] = js.native
+  var SecurityGroups: js.UndefOr[AwsEc2NetworkInterfaceSecurityGroupList] = js.undefined
   
   /**
     * Indicates whether traffic to or from the instance is validated.
     */
-  var SourceDestCheck: js.UndefOr[Boolean] = js.native
+  var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
 }
 object AwsEc2NetworkInterfaceDetails {
   

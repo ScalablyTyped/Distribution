@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm extends StObject {
   
   /**
     * One or more ACM Amazon Resource Name (ARN)s.
     */
-  var certificateAuthorityArns: js.Array[String] = js.native
+  var certificateAuthorityArns: js.Array[String]
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
   

@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: AddressObject = js.native
+    var address: AddressObject
     
-    var bidModifier: Double = js.native
+    var bidModifier: Double
   }
   object Address {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Double = js.native
+    var id: Double
   }
   object Id {
     

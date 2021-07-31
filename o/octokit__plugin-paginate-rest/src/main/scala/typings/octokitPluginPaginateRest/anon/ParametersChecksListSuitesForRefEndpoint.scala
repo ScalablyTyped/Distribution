@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersChecksListSuitesForRefEndpoint extends StObject {
   
-  var parameters: ChecksListSuitesForRefEndpoint = js.native
+  var parameters: ChecksListSuitesForRefEndpoint
   
-  var response: OctokitResponse[ChecksListSuitesForRefResponseData] with `14` = js.native
+  var response: OctokitResponse[ChecksListSuitesForRefResponseData] & `14`
 }
 object ParametersChecksListSuitesForRefEndpoint {
   
   @scala.inline
   def apply(
     parameters: ChecksListSuitesForRefEndpoint,
-    response: OctokitResponse[ChecksListSuitesForRefResponseData] with `14`
+    response: OctokitResponse[ChecksListSuitesForRefResponseData] & `14`
   ): ParametersChecksListSuitesForRefEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersChecksListSuitesForRefEndpoint]
@@ -33,6 +31,6 @@ object ParametersChecksListSuitesForRefEndpoint {
     def setParameters(value: ChecksListSuitesForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[ChecksListSuitesForRefResponseData] with `14`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ChecksListSuitesForRefResponseData] & `14`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

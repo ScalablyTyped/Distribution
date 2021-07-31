@@ -6,10 +6,8 @@ import typings.nodeRedRuntime.anon.Settings
 import typings.nodeRedRuntime.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettingsModule extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the id of the generated key
     */
-  def generateUserKey(opts: Comment): js.Promise[String] = js.native
+  def generateUserKey(opts: Comment): js.Promise[String]
   
   /**
     * Gets the runtime settings object
@@ -32,7 +30,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the runtime settings
     */
-  def getRuntimeSettings(opts: `1`): js.Promise[js.Object] = js.native
+  def getRuntimeSettings(opts: `1`): js.Promise[js.Object]
   
   /**
     * Gets a user's ssh public key
@@ -42,7 +40,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the user's ssh public key
     */
-  def getUserKey(opts: IdReqUser): js.Promise[String] = js.native
+  def getUserKey(opts: IdReqUser): js.Promise[String]
   
   /**
     * Gets a list of a user's ssh keys
@@ -51,7 +49,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the user's ssh keys
     */
-  def getUserKeys(opts: `1`): js.Promise[js.Object] = js.native
+  def getUserKeys(opts: `1`): js.Promise[js.Object]
   
   /**
     * Gets an individual user's settings object
@@ -60,7 +58,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the user settings
     */
-  def getUserSettings(opts: `1`): js.Promise[js.Object] = js.native
+  def getUserSettings(opts: `1`): js.Promise[js.Object]
   
   /**
     * Deletes a user's ssh key pair
@@ -70,7 +68,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when deleted
     */
-  def removeUserKey(opts: IdReqUser): js.Promise[Unit] = js.native
+  def removeUserKey(opts: IdReqUser): js.Promise[Unit]
   
   /**
     * Updates an individual user's settings object.
@@ -80,7 +78,7 @@ trait SettingsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the user settings
     */
-  def updateUserSettings(opts: Settings): js.Promise[js.Object] = js.native
+  def updateUserSettings(opts: Settings): js.Promise[js.Object]
 }
 object SettingsModule {
   

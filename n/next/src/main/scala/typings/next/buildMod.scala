@@ -7,61 +7,46 @@ import typings.next.nextNumbers.`2`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildMod {
   
-  @JSImport("next/dist/build", JSImport.Default)
+  @JSImport("next/dist/build", JSImport.Namespace)
   @js.native
-  def default(dir: String): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(
-    dir: String,
-    conf: js.UndefOr[scala.Nothing],
-    reactProductionProfiling: js.UndefOr[scala.Nothing],
-    debugOutput: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(dir: String, conf: js.UndefOr[scala.Nothing], reactProductionProfiling: Boolean): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(
-    dir: String,
-    conf: js.UndefOr[scala.Nothing],
-    reactProductionProfiling: Boolean,
-    debugOutput: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(dir: String, conf: Null, reactProductionProfiling: js.UndefOr[scala.Nothing], debugOutput: Boolean): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(dir: String, conf: Null, reactProductionProfiling: Boolean): js.Promise[Unit] = js.native
-  @JSImport("next/dist/build", JSImport.Default)
-  @js.native
-  def default(dir: String, conf: Null, reactProductionProfiling: Boolean, debugOutput: Boolean): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Null, reactProductionProfiling: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Null, reactProductionProfiling: Boolean, debugOutput: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any], debugOutput.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Null, reactProductionProfiling: Unit, debugOutput: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any], debugOutput.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Unit, reactProductionProfiling: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Unit, reactProductionProfiling: Boolean, debugOutput: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any], debugOutput.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(dir: String, conf: Unit, reactProductionProfiling: Unit, debugOutput: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], conf.asInstanceOf[js.Any], reactProductionProfiling.asInstanceOf[js.Any], debugOutput.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   type ClientSsgManifest = Set[String]
   
-  @js.native
   trait DynamicSsgRoute extends StObject {
     
-    var dataRoute: String = js.native
+    var dataRoute: String
     
-    var dataRouteRegex: String = js.native
+    var dataRouteRegex: String
     
-    var fallback: String | Null | `false` = js.native
+    var fallback: String | Null | `false`
     
-    var routeRegex: String = js.native
+    var routeRegex: String
   }
   object DynamicSsgRoute {
     
     @scala.inline
     def apply(dataRoute: String, dataRouteRegex: String, routeRegex: String): DynamicSsgRoute = {
-      val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], dataRouteRegex = dataRouteRegex.asInstanceOf[js.Any], routeRegex = routeRegex.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], dataRouteRegex = dataRouteRegex.asInstanceOf[js.Any], routeRegex = routeRegex.asInstanceOf[js.Any], fallback = null)
       __obj.asInstanceOf[DynamicSsgRoute]
     }
     
@@ -85,18 +70,17 @@ object buildMod {
     }
   }
   
-  @js.native
   trait PrerenderManifest extends StObject {
     
-    var dynamicRoutes: StringDictionary[DynamicSsgRoute] = js.native
+    var dynamicRoutes: StringDictionary[DynamicSsgRoute]
     
-    var notFoundRoutes: js.Array[String] = js.native
+    var notFoundRoutes: js.Array[String]
     
-    var preview: ApiPreviewProps = js.native
+    var preview: ApiPreviewProps
     
-    var routes: StringDictionary[SsgRoute] = js.native
+    var routes: StringDictionary[SsgRoute]
     
-    var version: `2` = js.native
+    var version: `2`
   }
   object PrerenderManifest {
     
@@ -105,10 +89,9 @@ object buildMod {
       dynamicRoutes: StringDictionary[DynamicSsgRoute],
       notFoundRoutes: js.Array[String],
       preview: ApiPreviewProps,
-      routes: StringDictionary[SsgRoute],
-      version: `2`
+      routes: StringDictionary[SsgRoute]
     ): PrerenderManifest = {
-      val __obj = js.Dynamic.literal(dynamicRoutes = dynamicRoutes.asInstanceOf[js.Any], notFoundRoutes = notFoundRoutes.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dynamicRoutes = dynamicRoutes.asInstanceOf[js.Any], notFoundRoutes = notFoundRoutes.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], version = 2)
       __obj.asInstanceOf[PrerenderManifest]
     }
     
@@ -135,20 +118,19 @@ object buildMod {
     }
   }
   
-  @js.native
   trait SsgRoute extends StObject {
     
-    var dataRoute: String = js.native
+    var dataRoute: String
     
-    var initialRevalidateSeconds: Double | `false` = js.native
+    var initialRevalidateSeconds: Double | `false`
     
-    var srcRoute: String | Null = js.native
+    var srcRoute: String | Null
   }
   object SsgRoute {
     
     @scala.inline
     def apply(dataRoute: String, initialRevalidateSeconds: Double | `false`): SsgRoute = {
-      val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], initialRevalidateSeconds = initialRevalidateSeconds.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], initialRevalidateSeconds = initialRevalidateSeconds.asInstanceOf[js.Any], srcRoute = null)
       __obj.asInstanceOf[SsgRoute]
     }
     

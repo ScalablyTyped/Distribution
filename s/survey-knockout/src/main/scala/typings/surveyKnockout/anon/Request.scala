@@ -3,13 +3,11 @@ package typings.surveyKnockout.anon
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
-  var request: XMLHttpRequest = js.native
+  var request: XMLHttpRequest
 }
 object Request {
   

@@ -10,7 +10,6 @@ import typings.reactSpringShared.typesMod.InterpolatorArgs
 import typings.reactSpringShared.typesMod.InterpolatorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalsMod {
@@ -19,9 +18,8 @@ object globalsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@react-spring/shared/cjs/globals", "assign")
-  @js.native
-  def assign(globals: AnimatedGlobals): AnimatedGlobals = js.native
+  @scala.inline
+  def assign(globals: AnimatedGlobals): AnimatedGlobals = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(globals.asInstanceOf[js.Any]).asInstanceOf[AnimatedGlobals]
   
   @JSImport("@react-spring/shared/cjs/globals", "batchedUpdates")
   @js.native
@@ -87,37 +85,36 @@ object globalsMod {
   @scala.inline
   def willAdvance_=(x: js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("willAdvance")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AnimatedGlobals extends StObject {
     
     /** Event props are called with `batchedUpdates` to reduce extraneous renders */
-    var batchedUpdates: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+    var batchedUpdates: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
     
     /** Provide custom color names for interpolation */
-    var colorNames: js.UndefOr[StringDictionary[Double] | Null] = js.native
+    var colorNames: js.UndefOr[StringDictionary[Double] | Null] = js.undefined
     
     /** Provide custom logic for string interpolation */
     var createStringInterpolator: js.UndefOr[
         js.Function1[/* config */ InterpolatorConfig[String], js.Function1[/* input */ Double, String]]
-      ] = js.native
+      ] = js.undefined
     
     /** Provide a custom `FrameLoop` instance */
-    var frameLoop: js.UndefOr[FrameLoop] = js.native
+    var frameLoop: js.UndefOr[FrameLoop] = js.undefined
     
     /** Used to measure frame length. Read more [here](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) */
-    var now: js.UndefOr[js.Function0[Double]] = js.native
+    var now: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** Schedule a function to run on the next frame */
-    var requestAnimationFrame: js.UndefOr[js.Function1[/* cb */ js.Function1[/* time */ Double, Unit], Unit]] = js.native
+    var requestAnimationFrame: js.UndefOr[js.Function1[/* cb */ js.Function1[/* time */ Double, Unit], Unit]] = js.undefined
     
     /** Make all animations instant and skip the frameloop entirely */
-    var skipAnimation: js.UndefOr[Boolean] = js.native
+    var skipAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Returns a new `Interpolation` object */
-    var to: js.UndefOr[FnCall] = js.native
+    var to: js.UndefOr[FnCall] = js.undefined
     
     /** @internal Exposed for testing purposes */
-    var willAdvance: js.UndefOr[js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]] = js.native
+    var willAdvance: js.UndefOr[js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]] = js.undefined
   }
   object AnimatedGlobals {
     

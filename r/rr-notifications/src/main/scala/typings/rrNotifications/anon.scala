@@ -6,34 +6,32 @@ import typings.rrNotifications.rrNotificationsStrings.left
 import typings.rrNotifications.rrNotificationsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnimationDuration extends StObject {
     
     /** Duration of the show and hide animations in milliseconds */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /** Animation timing function / cubic-bezier */
-    var animationEasing: js.UndefOr[String] = js.native
+    var animationEasing: js.UndefOr[String] = js.undefined
     
     /** Time in milliseconds after which the notification is automatically dismissed */
-    var dismissAfter: js.UndefOr[Double] = js.native
+    var dismissAfter: js.UndefOr[Double] = js.undefined
     
     /** Fixed position where all notifications are displayed */
-    var position: js.UndefOr[js.Tuple4[String, String, String, String]] = js.native
+    var position: js.UndefOr[js.Tuple4[String, String, String, String]] = js.undefined
     
     /** Render prop which passes down removeNotification function and notification payload */
-    def renderNotification(args: Payload): Element = js.native
+    def renderNotification(args: Payload): Element
     
     /**
       * Horizontal direction which notification appears from. If not provided, the notification will
       * appear from top or bottom, depending on position prop
       */
-    var slideFromSide: js.UndefOr[right | left] = js.native
+    var slideFromSide: js.UndefOr[right | left] = js.undefined
   }
   object AnimationDuration {
     
@@ -81,12 +79,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var payload: NotificationPayload = js.native
+    var payload: NotificationPayload
     
-    def removeNotification(): Unit = js.native
+    def removeNotification(): Unit
   }
   object Payload {
     

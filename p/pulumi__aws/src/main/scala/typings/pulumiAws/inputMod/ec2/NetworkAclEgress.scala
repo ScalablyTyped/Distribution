@@ -3,58 +3,56 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAclEgress extends StObject {
   
   /**
     * The action to take.
     */
-  var action: Input[String] = js.native
+  var action: Input[String]
   
   /**
     * The CIDR block to match. This must be a
     * valid network mask.
     */
-  var cidrBlock: js.UndefOr[Input[String]] = js.native
+  var cidrBlock: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The from port to match.
     */
-  var fromPort: Input[Double] = js.native
+  var fromPort: Input[Double]
   
   /**
     * The ICMP type code to be used. Default 0.
     */
-  var icmpCode: js.UndefOr[Input[Double]] = js.native
+  var icmpCode: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The ICMP type to be used. Default 0.
     */
-  var icmpType: js.UndefOr[Input[Double]] = js.native
+  var icmpType: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The IPv6 CIDR block.
     */
-  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The protocol to match. If using the -1 'all'
     * protocol, you must specify a from and to port of 0.
     */
-  var protocol: Input[String] = js.native
+  var protocol: Input[String]
   
   /**
     * The rule number. Used for ordering.
     */
-  var ruleNo: Input[Double] = js.native
+  var ruleNo: Input[Double]
   
   /**
     * The to port to match.
     */
-  var toPort: Input[Double] = js.native
+  var toPort: Input[Double]
 }
 object NetworkAclEgress {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,10 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * .
   */
-@js.native
-trait PrintableStateEvent extends EventObject {
+trait PrintableStateEvent
+  extends StObject
+     with EventObject {
   
-  var State: PrintableState = js.native
+  var State: PrintableState
 }
 object PrintableStateEvent {
   

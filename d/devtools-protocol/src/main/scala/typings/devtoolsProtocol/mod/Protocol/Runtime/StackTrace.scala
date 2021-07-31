@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackTrace extends StObject {
   
   /**
     * JavaScript function name.
     */
-  var callFrames: js.Array[CallFrame] = js.native
+  var callFrames: js.Array[CallFrame]
   
   /**
     * String label of this stack trace. For async traces this may be a name of the function that
     * initiated the async call.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Asynchronous JavaScript stack trace that preceded this stack, if available.
     */
-  var parent: js.UndefOr[StackTrace] = js.native
+  var parent: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Asynchronous JavaScript stack trace that preceded this stack, if available.
     */
-  var parentId: js.UndefOr[StackTraceId] = js.native
+  var parentId: js.UndefOr[StackTraceId] = js.undefined
 }
 object StackTrace {
   

@@ -7,11 +7,12 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GardenMinigame extends Minigame {
+trait GardenMinigame
+  extends StObject
+     with Minigame {
   
   /**
     * Creates a dialogue which asks if the user wants to sacrifice their garden
@@ -106,7 +107,7 @@ trait GardenMinigame extends Minigame {
     * @param manual Unused
     * @returns If the operation was successful
     */
-  def harvest(x: Double, y: Double, manual: js.UndefOr[scala.Nothing]): Boolean = js.native
+  def harvest(x: Double, y: Double, manual: Unit): Boolean = js.native
   
   /**
     * Harvests all plants
@@ -115,20 +116,20 @@ trait GardenMinigame extends Minigame {
     * @param mortal If set and true, filters to only harvesting mortal plants
     */
   def harvestAll(): Unit = js.native
-  def harvestAll(`type`: js.UndefOr[scala.Nothing], mature: js.UndefOr[scala.Nothing], mortal: Boolean): Unit = js.native
-  def harvestAll(`type`: js.UndefOr[scala.Nothing], mature: Boolean): Unit = js.native
-  def harvestAll(`type`: js.UndefOr[scala.Nothing], mature: Boolean, mortal: Boolean): Unit = js.native
-  def harvestAll(`type`: Null, mature: js.UndefOr[scala.Nothing], mortal: Boolean): Unit = js.native
   def harvestAll(`type`: Null, mature: Boolean): Unit = js.native
   def harvestAll(`type`: Null, mature: Boolean, mortal: Boolean): Unit = js.native
+  def harvestAll(`type`: Null, mature: Unit, mortal: Boolean): Unit = js.native
+  def harvestAll(`type`: Unit, mature: Boolean): Unit = js.native
+  def harvestAll(`type`: Unit, mature: Boolean, mortal: Boolean): Unit = js.native
+  def harvestAll(`type`: Unit, mature: Unit, mortal: Boolean): Unit = js.native
   def harvestAll(`type`: GardenPlant): Unit = js.native
-  def harvestAll(`type`: GardenPlant, mature: js.UndefOr[scala.Nothing], mortal: Boolean): Unit = js.native
   def harvestAll(`type`: GardenPlant, mature: Boolean): Unit = js.native
   def harvestAll(`type`: GardenPlant, mature: Boolean, mortal: Boolean): Unit = js.native
+  def harvestAll(`type`: GardenPlant, mature: Unit, mortal: Boolean): Unit = js.native
   def harvestAll(`type`: PseudoNull): Unit = js.native
-  def harvestAll(`type`: PseudoNull, mature: js.UndefOr[scala.Nothing], mortal: Boolean): Unit = js.native
   def harvestAll(`type`: PseudoNull, mature: Boolean): Unit = js.native
   def harvestAll(`type`: PseudoNull, mature: Boolean, mortal: Boolean): Unit = js.native
+  def harvestAll(`type`: PseudoNull, mature: Unit, mortal: Boolean): Unit = js.native
   
   /**
     * The amount of harvested plants this ascension

@@ -5,7 +5,6 @@ import typings.angular.mod.IPromise
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * included in the $watch documentation.
   */
 @js.native
-trait AngularFireArray extends Array[AngularFireSimpleObject] {
+trait AngularFireArray
+  extends StObject
+     with Array[AngularFireSimpleObject] {
   
   /**
     * Create a new record with a unique ID and add it to the end of the array.
@@ -37,7 +38,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$add")
   def $add(newData: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   /**
@@ -94,14 +95,14 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   @JSName("$loaded")
   def $loaded(): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
-  def $loaded(resolve: js.UndefOr[scala.Nothing], reject: js.Function1[/* err */ js.Any, _]): IPromise[AngularFireArray] = js.native
-  @JSName("$loaded")
   def $loaded(resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit]): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
-    reject: js.Function1[/* err */ js.Any, _]
+    reject: js.Function1[/* err */ js.Any, js.Any]
   ): IPromise[AngularFireArray] = js.native
+  @JSName("$loaded")
+  def $loaded(resolve: Unit, reject: js.Function1[/* err */ js.Any, js.Any]): IPromise[AngularFireArray] = js.native
   
   /**
     * @returns {Firebase} the original Firebase ref used to create this object.
@@ -125,7 +126,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$remove")
   def $remove(recordOrIndex: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   /**
@@ -144,7 +145,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$save")
   def $save(recordOrIndex: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   /**

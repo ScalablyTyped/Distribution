@@ -17,7 +17,6 @@ import typings.grammarkdown.typesMod.Range
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkerMod {
@@ -26,7 +25,7 @@ object checkerMod {
   @js.native
   class Checker () extends StObject {
     def this(options: CompilerOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], lineOffsetMap: LineOffsetMap) = this()
+    def this(options: Unit, lineOffsetMap: LineOffsetMap) = this()
     def this(options: CompilerOptions, lineOffsetMap: LineOffsetMap) = this()
     
     var bindings: js.Any = js.native

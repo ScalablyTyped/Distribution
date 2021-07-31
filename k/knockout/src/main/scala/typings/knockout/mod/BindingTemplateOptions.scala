@@ -4,29 +4,28 @@ import typings.knockout.mod.utils.MappingOptions
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingTemplateOptions
-  extends TemplateOptions[js.Any]
+  extends StObject
+     with TemplateOptions[js.Any]
      with MappingOptions[js.Any] {
   
-  var as: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var foreach: js.UndefOr[js.Array[_]] = js.native
+  var foreach: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var `if`: js.UndefOr[Boolean] = js.native
+  var `if`: js.UndefOr[Boolean] = js.undefined
   
-  var ifnot: js.UndefOr[Boolean] = js.native
+  var ifnot: js.UndefOr[Boolean] = js.undefined
   
-  var includeDestroyed: js.UndefOr[Boolean] = js.native
+  var includeDestroyed: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String | (js.Function1[/* val */ js.Any, String])] = js.native
+  var name: js.UndefOr[String | (js.Function1[/* val */ js.Any, String])] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[Node]] = js.native
+  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
 }
 object BindingTemplateOptions {
   
@@ -52,7 +51,7 @@ object BindingTemplateOptions {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setForeach(value: js.Array[_]): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
+    def setForeach(value: js.Array[js.Any]): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setForeachUndefined: Self = StObject.set(x, "foreach", js.undefined)

@@ -9,32 +9,33 @@ import typings.formatjsEcma402Abstract.numberMod.NumberFormatPart
 import typings.std.Intl.PluralRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatToPartsMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/NumberFormat/format_to_parts", JSImport.Default)
+  @JSImport("@formatjs/ecma402-abstract/lib/NumberFormat/format_to_parts", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     numberResult: NumberResult,
     data: NumberFormatLocaleInternalData,
     pl: PluralRules,
     options: Currency
-  ): js.Array[NumberFormatPart] = js.native
+  ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(numberResult.asInstanceOf[js.Any], data.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
-  @js.native
   trait NumberResult extends StObject {
     
-    var exponent: Double = js.native
+    var exponent: Double
     
-    var formattedString: String = js.native
+    var formattedString: String
     
-    var magnitude: Double = js.native
+    var magnitude: Double
     
-    var roundedNumber: Double = js.native
+    var roundedNumber: Double
     
-    var sign: `-1` | `0` | `1` = js.native
+    var sign: `-1` | `0` | `1`
   }
   object NumberResult {
     

@@ -3,7 +3,6 @@ package typings.akuminaCore.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AddIn {
@@ -17,20 +16,21 @@ object AddIn {
   class Cache () extends StObject
   object Cache {
     
-    /* static member */
-    @JSImport("akumina-core", "AddIn.Cache.Get")
+    @JSImport("akumina-core", "AddIn.Cache")
     @js.native
-    def Get(m: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Cache.Remove")
-    @js.native
-    def Remove(m: String): Unit = js.native
+    @scala.inline
+    def Get(m: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Get")(m.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Cache.Set")
-    @js.native
-    def Set(m: String, `object`: js.Any, interval: Double): Unit = js.native
+    @scala.inline
+    def Remove(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
+    def Set(m: String, `object`: js.Any, interval: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(m.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("akumina-core", "AddIn.Configuration")
@@ -38,15 +38,17 @@ object AddIn {
   class Configuration () extends StObject
   object Configuration {
     
-    /* static member */
-    @JSImport("akumina-core", "AddIn.Configuration.containsInExcludeField")
+    @JSImport("akumina-core", "AddIn.Configuration")
     @js.native
-    def containsInExcludeField(field: String): Boolean = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Configuration.getSelectFields")
-    @js.native
-    def getSelectFields(widget: String): js.Array[String] = js.native
+    @scala.inline
+    def containsInExcludeField(field: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containsInExcludeField")(field.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    /* static member */
+    @scala.inline
+    def getSelectFields(widget: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectFields")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("akumina-core", "AddIn.Constants")
@@ -140,7 +142,7 @@ object AddIn {
   @js.native
   class Instructions () extends StObject {
     
-    def executeAsync(widget: js.Any, instructionSet: String, propName: String): js.Promise[_] = js.native
+    def executeAsync(widget: js.Any, instructionSet: String, propName: String): js.Promise[js.Any] = js.native
   }
   
   @JSImport("akumina-core", "AddIn.Location")
@@ -152,35 +154,33 @@ object AddIn {
   class Logger () extends StObject
   object Logger {
     
-    /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.StartTraceLog")
+    @JSImport("akumina-core", "AddIn.Logger")
     @js.native
-    def StartTraceLog(m: String): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.StopTraceLog")
-    @js.native
-    def StopTraceLog(m: String): Unit = js.native
+    @scala.inline
+    def StartTraceLog(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("StartTraceLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.WriteErrorLog")
-    @js.native
-    def WriteErrorLog(m: js.Any): Unit = js.native
+    @scala.inline
+    def StopTraceLog(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("StopTraceLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.WriteInfoLog")
-    @js.native
-    def WriteInfoLog(m: js.Any): Unit = js.native
+    @scala.inline
+    def WriteErrorLog(m: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteErrorLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.logConnectorCall")
-    @js.native
-    def logConnectorCall(m: String): Unit = js.native
+    @scala.inline
+    def WriteInfoLog(m: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteInfoLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Logger.logSPCall")
-    @js.native
-    def logSPCall(m: String): Unit = js.native
+    @scala.inline
+    def logConnectorCall(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logConnectorCall")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
+    def logSPCall(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logSPCall")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("akumina-core", "AddIn.Utilities")
@@ -188,64 +188,56 @@ object AddIn {
   class Utilities () extends StObject
   object Utilities {
     
-    /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.GetFriendlyUrl")
+    @JSImport("akumina-core", "AddIn.Utilities")
     @js.native
-    def GetFriendlyUrl(url: String): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.GetIcon")
-    @js.native
-    def GetIcon(iconName: String): String = js.native
+    @scala.inline
+    def GetFriendlyUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFriendlyUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.IsNullOrEmpty")
-    @js.native
-    def IsNullOrEmpty(value: String): Boolean = js.native
+    @scala.inline
+    def GetIcon(iconName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIcon")(iconName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.ItemExpired")
-    @js.native
-    def ItemExpired(date: String): Boolean = js.native
+    @scala.inline
+    def IsNullOrEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.TryParseInt")
-    @js.native
-    def TryParseInt(`val`: js.Any, defaultValue: js.Any): Double | Null = js.native
+    @scala.inline
+    def ItemExpired(date: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ItemExpired")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.addRecurringEvents")
-    @js.native
-    def addRecurringEvents(data: js.Any, month: Double, year: Double): js.Any = js.native
+    @scala.inline
+    def TryParseInt(`val`: js.Any, defaultValue: js.Any): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInt")(`val`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.getEditMode")
-    @js.native
-    def getEditMode(): Boolean = js.native
+    @scala.inline
+    def addRecurringEvents(data: js.Any, month: Double, year: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addRecurringEvents")(data.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.getQueryStringParameter")
-    @js.native
-    def getQueryStringParameter(url: String): String = js.native
+    @scala.inline
+    def getEditMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditMode")().asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.isInDST")
-    @js.native
-    def isInDST(date: Date): Boolean = js.native
+    @scala.inline
+    def getQueryStringParameter(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryStringParameter")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.isInMonth")
-    @js.native
-    def isInMonth(item: js.Any, month: Double, year: Double): js.Any = js.native
+    @scala.inline
+    def isInDST(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDST")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.setDateValues")
-    @js.native
-    def setDateValues(data: js.Any, startDate: Date, endDate: Date): js.Any = js.native
+    @scala.inline
+    def isInMonth(item: js.Any, month: Double, year: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isInMonth")(item.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSImport("akumina-core", "AddIn.Utilities.substring")
-    @js.native
-    def substring(str: String, maxChar: Double): String = js.native
+    @scala.inline
+    def setDateValues(data: js.Any, startDate: Date, endDate: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDateValues")(data.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    /* static member */
+    @scala.inline
+    def substring(str: String, maxChar: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substring")(str.asInstanceOf[js.Any], maxChar.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

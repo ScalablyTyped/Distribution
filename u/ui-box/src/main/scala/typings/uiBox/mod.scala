@@ -16,14 +16,16 @@ import typings.uiBox.typesEnhancersMod.PropTypesMapping
 import typings.uiBox.typesEnhancersMod.PropValidators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ui-box", JSImport.Default)
+  @JSImport("ui-box", JSImport.Namespace)
   @js.native
-  def default[E /* <: ElementType[_] */](props: BoxProps[E]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[E /* <: ElementType[js.Any] */](props: BoxProps[E]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object background {
     
@@ -138,13 +140,11 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @JSImport("ui-box", "clearStyles")
-  @js.native
-  def clearStyles(): Unit = js.native
+  @scala.inline
+  def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
   
-  @JSImport("ui-box", "configureSafeHref")
-  @js.native
-  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = js.native
+  @scala.inline
+  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object dimensions {
     
@@ -165,9 +165,8 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @JSImport("ui-box", "extractStyles")
-  @js.native
-  def extractStyles(): Cache = js.native
+  @scala.inline
+  def extractStyles(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyles")().asInstanceOf[Cache]
   
   object flex {
     
@@ -322,9 +321,8 @@ object mod {
   @js.native
   val propTypes: PropTypesMapping = js.native
   
-  @JSImport("ui-box", "setClassNamePrefix")
-  @js.native
-  def setClassNamePrefix(prefix: String): Unit = js.native
+  @scala.inline
+  def setClassNamePrefix(prefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClassNamePrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object spacing {
     
@@ -345,13 +343,11 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @JSImport("ui-box", "splitBoxProps")
-  @js.native
-  def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = js.native
+  @scala.inline
+  def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBoxProps")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
   
-  @JSImport("ui-box", "splitProps")
-  @js.native
-  def splitProps[P /* <: Dictionary[_] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = js.native
+  @scala.inline
+  def splitProps[P /* <: Dictionary[js.Any] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitProps")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[SplitProps[P, K]]
   
   object text {
     

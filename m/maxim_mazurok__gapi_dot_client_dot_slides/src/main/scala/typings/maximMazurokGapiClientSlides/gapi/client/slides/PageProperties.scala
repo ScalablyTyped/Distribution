@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageProperties extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait PageProperties extends StObject {
     * update the field, a color scheme containing mappings from all the first 12 ThemeColorTypes to their concrete colors must be provided. Colors for the remaining ThemeColorTypes will
     * be ignored.
     */
-  var colorScheme: js.UndefOr[ColorScheme] = js.native
+  var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
     * The background fill of the page. If unset, the background fill is inherited from a parent page if it exists. If the page has no parent, then the background fill defaults to the
     * corresponding fill in the Slides editor.
     */
-  var pageBackgroundFill: js.UndefOr[PageBackgroundFill] = js.native
+  var pageBackgroundFill: js.UndefOr[PageBackgroundFill] = js.undefined
 }
 object PageProperties {
   

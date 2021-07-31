@@ -14,54 +14,39 @@ import typings.reactJoyride.reactJoyrideStrings.stop
 import typings.reactJoyride.reactJoyrideStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait actions extends StObject {
   
-  var CLOSE: close = js.native
+  var CLOSE: close
   
-  var GO: go = js.native
+  var GO: go
   
-  var INDEX: index = js.native
+  var INDEX: index
   
-  var INIT: init = js.native
+  var INIT: init
   
-  var NEXT: next = js.native
+  var NEXT: next
   
-  var PREV: prev = js.native
+  var PREV: prev
   
-  var RESET: reset = js.native
+  var RESET: reset
   
-  var RESTART: restart = js.native
+  var RESTART: restart
   
-  var SKIP: skip = js.native
+  var SKIP: skip
   
-  var START: start = js.native
+  var START: start
   
-  var STOP: stop = js.native
+  var STOP: stop
   
-  var UPDATE: update = js.native
+  var UPDATE: update
 }
 object actions {
   
   @scala.inline
-  def apply(
-    CLOSE: close,
-    GO: go,
-    INDEX: index,
-    INIT: init,
-    NEXT: next,
-    PREV: prev,
-    RESET: reset,
-    RESTART: restart,
-    SKIP: skip,
-    START: start,
-    STOP: stop,
-    UPDATE: update
-  ): actions = {
-    val __obj = js.Dynamic.literal(CLOSE = CLOSE.asInstanceOf[js.Any], GO = GO.asInstanceOf[js.Any], INDEX = INDEX.asInstanceOf[js.Any], INIT = INIT.asInstanceOf[js.Any], NEXT = NEXT.asInstanceOf[js.Any], PREV = PREV.asInstanceOf[js.Any], RESET = RESET.asInstanceOf[js.Any], RESTART = RESTART.asInstanceOf[js.Any], SKIP = SKIP.asInstanceOf[js.Any], START = START.asInstanceOf[js.Any], STOP = STOP.asInstanceOf[js.Any], UPDATE = UPDATE.asInstanceOf[js.Any])
+  def apply(): actions = {
+    val __obj = js.Dynamic.literal(CLOSE = "close", GO = "go", INDEX = "index", INIT = "init", NEXT = "next", PREV = "prev", RESET = "reset", RESTART = "restart", SKIP = "skip", START = "start", STOP = "stop", UPDATE = "update")
     __obj.asInstanceOf[actions]
   }
   

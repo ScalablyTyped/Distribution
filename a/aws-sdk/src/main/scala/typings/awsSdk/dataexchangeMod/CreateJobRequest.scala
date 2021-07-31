@@ -2,21 +2,19 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobRequest extends StObject {
   
   /**
     * The details for the CreateJob request.
     */
-  var Details: RequestDetails = js.native
+  var Details: RequestDetails
   
   /**
     * The type of job to be created.
     */
-  var Type: typings.awsSdk.dataexchangeMod.Type = js.native
+  var Type: typings.awsSdk.dataexchangeMod.Type
 }
 object CreateJobRequest {
   

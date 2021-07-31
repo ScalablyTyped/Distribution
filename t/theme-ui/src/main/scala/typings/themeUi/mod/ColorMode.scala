@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorMode
-  extends /* k */ StringDictionary[
+  extends StObject
+     with /* k */ StringDictionary[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any) | (ObjectOrArray[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
       ])
     ] {
   
@@ -20,19 +19,19 @@ trait ColorMode
     */
   var accent: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Body background color
     */
-  var background: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any = js.native
+  var background: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
   
   /**
     * A background color for highlighting text
     */
   var highlight: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A faint color for backgrounds, borders, and accents that do not require
@@ -40,26 +39,26 @@ trait ColorMode
     */
   var muted: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Primary brand color for links, buttons, etc.
     */
   var primary: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A secondary brand color for alternative styling
     */
   var secondary: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Body foreground color
     */
-  var text: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any = js.native
+  var text: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
 }
 object ColorMode {
   

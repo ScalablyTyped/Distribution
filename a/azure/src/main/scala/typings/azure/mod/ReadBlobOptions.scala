@@ -2,19 +2,19 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReadBlobOptions extends GetBlobPropertiesOptions {
+trait ReadBlobOptions
+  extends StObject
+     with GetBlobPropertiesOptions {
   
-  var disableContentMD5Validation: js.UndefOr[Boolean] = js.native
+  var disableContentMD5Validation: js.UndefOr[Boolean] = js.undefined
   
-  var rangeEnd: js.UndefOr[String] = js.native
+  var rangeEnd: js.UndefOr[String] = js.undefined
   
-  var rangeStart: js.UndefOr[String] = js.native
+  var rangeStart: js.UndefOr[String] = js.undefined
   
-  var useTransactionalMD5: js.UndefOr[Boolean] = js.native
+  var useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
 }
 object ReadBlobOptions {
   

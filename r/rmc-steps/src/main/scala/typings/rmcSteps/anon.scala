@@ -2,29 +2,27 @@ package typings.rmcSteps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var direction: String = js.native
+    var direction: String
     
-    var iconPrefix: String = js.native
+    var iconPrefix: String
     
-    var labelPlacement: String = js.native
+    var labelPlacement: String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var progressDot: Boolean = js.native
+    var progressDot: Boolean
     
-    var size: String = js.native
+    var size: String
     
-    var status: String = js.native
+    var status: String
   }
   object Current {
     

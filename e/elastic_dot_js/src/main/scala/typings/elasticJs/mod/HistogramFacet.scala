@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "HistogramFacet")
 @js.native
-class HistogramFacet protected () extends Facet {
+class HistogramFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet which returns the N most frequent terms within a collection
     or set of collections.

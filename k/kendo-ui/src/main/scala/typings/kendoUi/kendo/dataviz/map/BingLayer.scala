@@ -3,16 +3,16 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.dataviz.ui.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BingLayer extends TileLayer {
+trait BingLayer
+  extends StObject
+     with TileLayer {
   
-  def imagerySet(): Unit = js.native
+  def imagerySet(): Unit
   
   @JSName("options")
-  var options_BingLayer: BingLayerOptions = js.native
+  var options_BingLayer: BingLayerOptions
 }
 object BingLayer {
   

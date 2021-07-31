@@ -2,36 +2,34 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPullRequestsInput extends StObject {
   
   /**
     * Optional. The Amazon Resource Name (ARN) of the user who created the pull request. If used, this filters the results to pull requests created by that user.
     */
-  var authorArn: js.UndefOr[Arn] = js.native
+  var authorArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * A non-zero, non-negative integer used to limit the number of returned results.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * An enumeration token that, when provided in a request, returns the next batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Optional. The status of the pull request. If used, this refines the results to the pull requests that match the specified status.
     */
-  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.native
+  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.undefined
   
   /**
     * The name of the repository for which you want to list pull requests.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object ListPullRequestsInput {
   

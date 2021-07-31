@@ -4,24 +4,24 @@ import typings.voximplantWebsdk.mod.RosterItem
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when roster data received
   */
-@js.native
-trait RosterReceived extends VoxImplantIMEvent {
+trait RosterReceived
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    Array contains VoxImplant.RosterItem elements
     */
-  var roster: js.Array[RosterItem] = js.native
+  var roster: js.Array[RosterItem]
 }
 object RosterReceived {
   

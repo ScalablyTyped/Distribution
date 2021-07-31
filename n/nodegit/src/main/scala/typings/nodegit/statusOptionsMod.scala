@@ -4,22 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusOptionsMod {
   
-  @js.native
   trait StatusOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var pathspec: js.UndefOr[Strarray | String | js.Array[String]] = js.native
+    var pathspec: js.UndefOr[Strarray | String | js.Array[String]] = js.undefined
     
-    var show: js.UndefOr[Double] = js.native
+    var show: js.UndefOr[Double] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object StatusOptions {
     

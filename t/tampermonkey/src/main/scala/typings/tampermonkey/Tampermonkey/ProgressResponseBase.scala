@@ -2,23 +2,21 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressResponseBase extends StObject {
   
-  var done: Double = js.native
+  var done: Double
   
-  var lengthComputable: Boolean = js.native
+  var lengthComputable: Boolean
   
-  var loaded: Double = js.native
+  var loaded: Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var total: Double = js.native
+  var total: Double
   
-  var totalSize: Double = js.native
+  var totalSize: Double
 }
 object ProgressResponseBase {
   

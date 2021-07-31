@@ -19,80 +19,78 @@ import typings.reactAliceCarousel.typesMod.RootElement
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-alice-carousel.react-alice-carousel/lib/types.Props> */
-@js.native
 trait ReadonlyProps extends StObject {
   
-  val activeIndex: js.UndefOr[Double] = js.native
+  val activeIndex: js.UndefOr[Double] = js.undefined
   
-  val animationDuration: js.UndefOr[Double] = js.native
+  val animationDuration: js.UndefOr[Double] = js.undefined
   
-  val animationEasingFunction: js.UndefOr[String] = js.native
+  val animationEasingFunction: js.UndefOr[String] = js.undefined
   
-  val animationType: js.UndefOr[slide | fadeout | AnimationType] = js.native
+  val animationType: js.UndefOr[slide | fadeout | AnimationType] = js.undefined
   
-  val autoHeight: js.UndefOr[Boolean] = js.native
+  val autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  val autoPlay: js.UndefOr[Boolean] = js.native
+  val autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  val autoPlayControls: js.UndefOr[Boolean] = js.native
+  val autoPlayControls: js.UndefOr[Boolean] = js.undefined
   
-  val autoPlayDirection: js.UndefOr[rtl | ltr | AutoplayDirection] = js.native
+  val autoPlayDirection: js.UndefOr[rtl | ltr | AutoplayDirection] = js.undefined
   
-  val autoPlayInterval: js.UndefOr[Double] = js.native
+  val autoPlayInterval: js.UndefOr[Double] = js.undefined
   
-  val autoPlayStrategy: js.UndefOr[default | all | action | none | AutoPlayStrategy] = js.native
+  val autoPlayStrategy: js.UndefOr[default | all | action | none | AutoPlayStrategy] = js.undefined
   
-  val autoWidth: js.UndefOr[Boolean] = js.native
+  val autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[js.Any] = js.native
+  val children: js.UndefOr[js.Any] = js.undefined
   
   val controlsStrategy: js.UndefOr[
     default | typings.reactAliceCarousel.reactAliceCarouselStrings.responsive | ControlsStrategy
-  ] = js.native
+  ] = js.undefined
   
-  val disableButtonsControls: js.UndefOr[Boolean] = js.native
+  val disableButtonsControls: js.UndefOr[Boolean] = js.undefined
   
-  val disableDotsControls: js.UndefOr[Boolean] = js.native
+  val disableDotsControls: js.UndefOr[Boolean] = js.undefined
   
-  val disableSlideInfo: js.UndefOr[Boolean] = js.native
+  val disableSlideInfo: js.UndefOr[Boolean] = js.undefined
   
-  val infinite: js.UndefOr[Boolean] = js.native
+  val infinite: js.UndefOr[Boolean] = js.undefined
   
-  val items: js.UndefOr[js.Array[_]] = js.native
+  val items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val mouseTracking: js.UndefOr[Boolean] = js.native
+  val mouseTracking: js.UndefOr[Boolean] = js.undefined
   
-  val onInitialized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  val onInitialized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
   val onResizeEvent: js.UndefOr[
     js.Function3[/* e */ Event, /* prevProps */ RootElement, /* nextProps */ RootElement, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  val onResized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  val onResized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  val onSlideChange: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  val onSlideChange: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  val onSlideChanged: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  val onSlideChanged: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  val paddingLeft: js.UndefOr[Double] = js.native
+  val paddingLeft: js.UndefOr[Double] = js.undefined
   
-  val paddingRight: js.UndefOr[Double] = js.native
+  val paddingRight: js.UndefOr[Double] = js.undefined
   
-  val preservePosition: js.UndefOr[Boolean] = js.native
+  val preservePosition: js.UndefOr[Boolean] = js.undefined
   
-  val responsive: js.UndefOr[Responsive] = js.native
+  val responsive: js.UndefOr[Responsive] = js.undefined
   
-  val swipeDelta: js.UndefOr[Double] = js.native
+  val swipeDelta: js.UndefOr[Double] = js.undefined
   
-  val swipeExtraPadding: js.UndefOr[Double] = js.native
+  val swipeExtraPadding: js.UndefOr[Double] = js.undefined
   
-  val touchMoveDefaultEvents: js.UndefOr[Boolean] = js.native
+  val touchMoveDefaultEvents: js.UndefOr[Boolean] = js.undefined
   
-  val touchTracking: js.UndefOr[Boolean] = js.native
+  val touchTracking: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyProps {
   
@@ -208,7 +206,7 @@ object ReadonlyProps {
     def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

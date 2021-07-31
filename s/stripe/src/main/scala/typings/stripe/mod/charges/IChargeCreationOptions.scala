@@ -6,11 +6,11 @@ import typings.stripe.mod.IShippingInformation
 import typings.stripe.mod.cards.ICardSourceCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChargeCreationOptions extends IDataOptionsWithMetadata {
+trait IChargeCreationOptions
+  extends StObject
+     with IDataOptionsWithMetadata {
   
   /**
     * A positive integer in the smallest currency unit (e.g 100 cents to charge
@@ -18,7 +18,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * charge the card. The minimum amount is £0.50 (or equivalent in charge
     * currency).
     */
-  var amount: Double = js.native
+  var amount: Double
   
   /**
     * A fee in cents that will be applied to the charge and transferred
@@ -27,7 +27,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * take an application fee. For more information, see the
     * application fees documentation.
     */
-  var application_fee_amount: js.UndefOr[Double] = js.native
+  var application_fee_amount: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not to immediately capture the charge. When false, the charge
@@ -35,17 +35,17 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * captured later. Uncaptured charges expire in 7 days. For more information,
     * see authorizing charges and settling later.
     */
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * The ID of an existing customer that will be charged in this request.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * An arbitrary string which you can attach to a charge object. It is displayed
@@ -53,7 +53,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * to send automatic email receipts to your customers, your receipt emails
     * will include the description of the charge(s) that they are describing.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The Stripe account ID that these funds are intended for.
@@ -62,7 +62,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     *
     * Connect only.
     */
-  var on_behalf_of: js.UndefOr[String] = js.native
+  var on_behalf_of: js.UndefOr[String] = js.undefined
   
   /**
     * The email address to send this charge's receipt to. The receipt will not be
@@ -72,14 +72,14 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * specified for a charge in live mode, a receipt will be sent regardless of your
     * email settings.
     */
-  var receipt_email: js.UndefOr[String] = js.native
+  var receipt_email: js.UndefOr[String] = js.undefined
   
   /**
     * Shipping information for the charge. Helps prevent fraud on charges for
     * physical goods. For more information, see the Charge object
     * documentation.
     */
-  var shipping: js.UndefOr[IShippingInformation] = js.native
+  var shipping: js.UndefOr[IShippingInformation] = js.undefined
   
   /**
     * A payment source to be charged, such as a credit card. If you also pass a
@@ -90,14 +90,14 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * below. Although not all information is required, the extra info helps
     * prevent fraud.
     */
-  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.native
+  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   
   /**
     * For card charges, use statement_descriptor_suffix instead. Otherwise, you
     * can use this value as the complete description of a charge on your customers’
     * statements. Must contain at least one letter, maximum 22 characters.
     */
-  var statement_descriptor: js.UndefOr[String] = js.native
+  var statement_descriptor: js.UndefOr[String] = js.undefined
   
   /**
     * Provides information about the charge that customers see on their statements.
@@ -105,13 +105,13 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     * that’s set on the account to form the complete statement descriptor. Maximum
     * 22 characters for the concatenated descriptor.
     */
-  var statement_descriptor_suffix: js.UndefOr[String] = js.native
+  var statement_descriptor_suffix: js.UndefOr[String] = js.undefined
   
   /**
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[AmountDestination] = js.native
+  var transfer_data: js.UndefOr[AmountDestination] = js.undefined
   
   /**
     * A string that identifies this transaction as part of a group.
@@ -119,7 +119,7 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     *
     * Connect only.
     */
-  var transfer_group: js.UndefOr[String] = js.native
+  var transfer_group: js.UndefOr[String] = js.undefined
 }
 object IChargeCreationOptions {
   

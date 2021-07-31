@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,13 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LinkedDataTypeRefreshMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode & String] = js.native
   
-  /* "Manual" */ val manual: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.manual with String = js.native
+  /* "Manual" */ val manual: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.manual & String = js.native
   
-  /* "OnLoad" */ val onLoad: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.onLoad with String = js.native
+  /* "OnLoad" */ val onLoad: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.onLoad & String = js.native
   
-  /* "Periodic" */ val periodic: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.periodic with String = js.native
+  /* "Periodic" */ val periodic: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.periodic & String = js.native
   
-  /* "Unknown" */ val unknown: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.unknown with String = js.native
+  /* "Unknown" */ val unknown: typings.officeJsPreview.Excel.LinkedDataTypeRefreshMode.unknown & String = js.native
 }

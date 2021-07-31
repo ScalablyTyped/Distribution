@@ -7,7 +7,6 @@ import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This provider defines the interface for loading data, such as geometries or coordinates, from a local or remote data file in GeoJSON or CSV format
   */
 @js.native
-trait RawDataProvider extends RemoteTileProvider {
+trait RawDataProvider
+  extends StObject
+     with RemoteTileProvider {
   
   /**
     * Updates the data url. Note that new data will be fetched only after the reload method is called.
@@ -40,7 +41,6 @@ object RawDataProvider {
     * A helper class used in the worker thread
     * This helper class provides convenience functions you can use in the worker thread
     */
-  @js.native
   trait Helpers extends StObject {
     
     /** Translates geographical coordinates (latitude, longitude) to world pixel coordinates. */
@@ -52,15 +52,15 @@ object RawDataProvider {
           /* tileSize */ TileSize, 
           PixelCoordinates
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Takes CSV data as input, parses it, and return the parsed result. */
-    var parseCSV: js.UndefOr[js.Function1[/* obj */ js.Any, js.Array[_]]] = js.native
+    var parseCSV: js.UndefOr[js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.undefined
     
     /** Translates world pixel coordinates to geographical coordinates (latitude, longitude). */
     var pixelToLatLng: js.UndefOr[
         js.Function4[/* x */ PX, /* y */ PY, /* z */ Zoom, /* tileSize */ TileSize, GeoCoordinates]
-      ] = js.native
+      ] = js.undefined
   }
   object Helpers {
     
@@ -82,7 +82,7 @@ object RawDataProvider {
       def setLatLngToPixelUndefined: Self = StObject.set(x, "latLngToPixel", js.undefined)
       
       @scala.inline
-      def setParseCSV(value: /* obj */ js.Any => js.Array[_]): Self = StObject.set(x, "parseCSV", js.Any.fromFunction1(value))
+      def setParseCSV(value: /* obj */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "parseCSV", js.Any.fromFunction1(value))
       
       @scala.inline
       def setParseCSVUndefined: Self = StObject.set(x, "parseCSV", js.undefined)
@@ -107,14 +107,13 @@ object RawDataProvider {
     */
   type Longitude = Double
   
-  @js.native
   trait Options extends StObject {
     
     /** Defines how the input data is mapped to an array of GeoJSON features */
-    var dataToFeatures: js.UndefOr[js.Function1[/* obj */ js.Any, js.Array[Feature]]] = js.native
+    var dataToFeatures: js.UndefOr[js.Function1[/* obj */ js.Any, js.Array[Feature]]] = js.undefined
     
     /** The data url to fetch */
-    var dataUrl: js.UndefOr[String] = js.native
+    var dataUrl: js.UndefOr[String] = js.undefined
     
     /** Defines how GeoJSON features on a tile should be mapped to data rows, which are inputs to layers such as ObjectLayer and HeatmapLayer */
     var featuresToRows: js.UndefOr[
@@ -127,7 +126,7 @@ object RawDataProvider {
           /* helpers */ Helpers, 
           js.Array[Row]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.left
 import typings.html5plus.html5plusStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjRichTextStyles extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait PlusNativeObjRichTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * 富文本默认使用的字体名称
@@ -39,7 +37,7 @@ trait PlusNativeObjRichTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
   /**
     * 富文本默认使用的字体文件路径
@@ -47,7 +45,7 @@ trait PlusNativeObjRichTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var fontSrc: js.UndefOr[String] = js.native
+  var fontSrc: js.UndefOr[String] = js.undefined
   
   /**
     * 点击事件回调函数
@@ -56,7 +54,7 @@ trait PlusNativeObjRichTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onClick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
 }
 object PlusNativeObjRichTextStyles {
   

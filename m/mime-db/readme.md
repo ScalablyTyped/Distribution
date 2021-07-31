@@ -10,9 +10,9 @@ Media Type Database
 | ------------------ | :-------------: |
 | Full name          | mime-db |
 | Keywords           | mime, db, type, types, database, charset, charsets |
-| # releases         | 8 |
-| # dependents       | 233 |
-| # downloads        | 1181093596 |
+| # releases         | 7 |
+| # dependents       | 281 |
+| # downloads        | 1418027787 |
 | # stars            | 11 |
 
 ## Links

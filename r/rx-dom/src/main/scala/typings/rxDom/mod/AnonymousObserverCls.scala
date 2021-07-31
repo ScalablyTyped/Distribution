@@ -2,7 +2,6 @@ package typings.rxDom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -17,26 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class AnonymousObserverCls[T] ()
   extends typings.rx.mod.AnonymousObserverCls[T] {
   def this(onNext: js.Function1[/* value */ T, Unit]) = this()
-  def this(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]) = this()
   def this(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]) = this()
-  def this(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ) = this()
-  def this(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ js.Any, Unit],
-    onCompleted: js.Function0[Unit]
-  ) = this()
-  def this(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ) = this()
+  def this(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]) = this()
   def this(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ) = this()
+  def this(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]) = this()
+  def this(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]) = this()
+  def this(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]) = this()
 }

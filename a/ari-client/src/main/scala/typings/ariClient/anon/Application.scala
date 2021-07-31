@@ -3,19 +3,17 @@ package typings.ariClient.anon
 import typings.ariClient.mod.Containers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
-  var application: String = js.native
+  var application: String
   
-  var eventName: String = js.native
+  var eventName: String
   
-  var source: js.UndefOr[String | js.Array[String]] = js.native
+  var source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var variables: js.UndefOr[Containers] = js.native
+  var variables: js.UndefOr[Containers] = js.undefined
 }
 object Application {
   

@@ -13,40 +13,38 @@ import typings.awsSdkClientDynamodbBrowser.typesTimeToLiveDescriptionMod.Unmarsh
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSourceTableFeatureDetailsMod {
   
-  @js.native
   trait SourceTableFeatureDetails extends StObject {
     
     /**
       * <p>Represents the GSI properties for the table when the backup was created. It includes the IndexName, KeySchema, Projection and ProvisionedThroughput for the GSIs on the table at the time of backup. </p>
       */
-    var GlobalSecondaryIndexes: js.UndefOr[js.Array[GlobalSecondaryIndexInfo] | Iterable[GlobalSecondaryIndexInfo]] = js.native
+    var GlobalSecondaryIndexes: js.UndefOr[js.Array[GlobalSecondaryIndexInfo] | Iterable[GlobalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>Represents the LSI properties for the table when the backup was created. It includes the IndexName, KeySchema and Projection for the LSIs on the table at the time of backup. </p>
       */
-    var LocalSecondaryIndexes: js.UndefOr[js.Array[LocalSecondaryIndexInfo] | Iterable[LocalSecondaryIndexInfo]] = js.native
+    var LocalSecondaryIndexes: js.UndefOr[js.Array[LocalSecondaryIndexInfo] | Iterable[LocalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>The description of the server-side encryption status on the table when the backup was created.</p>
       */
-    var SSEDescription: js.UndefOr[typings.awsSdkClientDynamodbBrowser.typesSsedescriptionMod.SSEDescription] = js.native
+    var SSEDescription: js.UndefOr[typings.awsSdkClientDynamodbBrowser.typesSsedescriptionMod.SSEDescription] = js.undefined
     
     /**
       * <p>Stream settings on the table when the backup was created.</p>
       */
-    var StreamDescription: js.UndefOr[StreamSpecification] = js.native
+    var StreamDescription: js.UndefOr[StreamSpecification] = js.undefined
     
     /**
       * <p>Time to Live settings on the table when the backup was created.</p>
       */
     var TimeToLiveDescription: js.UndefOr[
         typings.awsSdkClientDynamodbBrowser.typesTimeToLiveDescriptionMod.TimeToLiveDescription
-      ] = js.native
+      ] = js.undefined
   }
   object SourceTableFeatureDetails {
     
@@ -97,38 +95,39 @@ object typesSourceTableFeatureDetailsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSourceTableFeatureDetails extends SourceTableFeatureDetails {
+  trait UnmarshalledSourceTableFeatureDetails
+    extends StObject
+       with SourceTableFeatureDetails {
     
     /**
       * <p>Represents the GSI properties for the table when the backup was created. It includes the IndexName, KeySchema, Projection and ProvisionedThroughput for the GSIs on the table at the time of backup. </p>
       */
     @JSName("GlobalSecondaryIndexes")
-    var GlobalSecondaryIndexes_UnmarshalledSourceTableFeatureDetails: js.UndefOr[js.Array[UnmarshalledGlobalSecondaryIndexInfo]] = js.native
+    var GlobalSecondaryIndexes_UnmarshalledSourceTableFeatureDetails: js.UndefOr[js.Array[UnmarshalledGlobalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>Represents the LSI properties for the table when the backup was created. It includes the IndexName, KeySchema and Projection for the LSIs on the table at the time of backup. </p>
       */
     @JSName("LocalSecondaryIndexes")
-    var LocalSecondaryIndexes_UnmarshalledSourceTableFeatureDetails: js.UndefOr[js.Array[UnmarshalledLocalSecondaryIndexInfo]] = js.native
+    var LocalSecondaryIndexes_UnmarshalledSourceTableFeatureDetails: js.UndefOr[js.Array[UnmarshalledLocalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>The description of the server-side encryption status on the table when the backup was created.</p>
       */
     @JSName("SSEDescription")
-    var SSEDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledSSEDescription] = js.native
+    var SSEDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledSSEDescription] = js.undefined
     
     /**
       * <p>Stream settings on the table when the backup was created.</p>
       */
     @JSName("StreamDescription")
-    var StreamDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledStreamSpecification] = js.native
+    var StreamDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledStreamSpecification] = js.undefined
     
     /**
       * <p>Time to Live settings on the table when the backup was created.</p>
       */
     @JSName("TimeToLiveDescription")
-    var TimeToLiveDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledTimeToLiveDescription] = js.native
+    var TimeToLiveDescription_UnmarshalledSourceTableFeatureDetails: js.UndefOr[UnmarshalledTimeToLiveDescription] = js.undefined
   }
   object UnmarshalledSourceTableFeatureDetails {
     

@@ -2,35 +2,33 @@ package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Normalized bounding box. The normalized vertex coordinates are relative to
   * the original image. Range: [0, 1].
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1NormalizedBoundingBox extends StObject {
   
   /**
     * Bottom Y coordinate.
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Left X coordinate.
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * Right X coordinate.
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     * Top Y coordinate.
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1NormalizedBoundingBox {
   

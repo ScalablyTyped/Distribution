@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpHeader extends StObject {
   
   /**
     * The header name
     */
-  var headerName: js.UndefOr[StringType] = js.native
+  var headerName: js.UndefOr[StringType] = js.undefined
   
   /**
     * The header value.
     */
-  var headerValue: js.UndefOr[StringType] = js.native
+  var headerValue: js.UndefOr[StringType] = js.undefined
 }
 object HttpHeader {
   

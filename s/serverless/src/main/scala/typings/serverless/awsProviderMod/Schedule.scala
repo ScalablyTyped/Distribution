@@ -2,25 +2,23 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var input: js.UndefOr[Input] = js.native
+  var input: js.UndefOr[Input] = js.undefined
   
-  var inputPath: js.UndefOr[String] = js.native
+  var inputPath: js.UndefOr[String] = js.undefined
   
-  var inputTransformer: js.UndefOr[InputTransformer] = js.native
+  var inputTransformer: js.UndefOr[InputTransformer] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var rate: String = js.native
+  var rate: String
 }
 object Schedule {
   

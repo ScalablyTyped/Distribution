@@ -12,7 +12,6 @@ import typings.konva.typesMod.IRect
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformerMod {
@@ -25,9 +24,9 @@ object transformerMod {
     def __getNodeRect(): RotationWidth = js.native
     
     def __getNodeShape(node: Node[NodeConfig]): HeightRotation = js.native
-    def __getNodeShape(node: Node[NodeConfig], rot: js.UndefOr[scala.Nothing], relative: Node[NodeConfig]): HeightRotation = js.native
     def __getNodeShape(node: Node[NodeConfig], rot: Double): HeightRotation = js.native
     def __getNodeShape(node: Node[NodeConfig], rot: Double, relative: Node[NodeConfig]): HeightRotation = js.native
+    def __getNodeShape(node: Node[NodeConfig], rot: Unit, relative: Node[NodeConfig]): HeightRotation = js.native
     
     var _anchorDragOffset: Vector2d = js.native
     
@@ -212,10 +211,11 @@ object transformerMod {
     def update(): Unit = js.native
   }
   
-  @js.native
-  trait Box extends IRect {
+  trait Box
+    extends StObject
+       with IRect {
     
-    var rotation: Double = js.native
+    var rotation: Double
   }
   object Box {
     
@@ -233,46 +233,47 @@ object transformerMod {
     }
   }
   
-  @js.native
-  trait TransformerConfig extends ContainerConfig {
+  trait TransformerConfig
+    extends StObject
+       with ContainerConfig {
     
-    var anchorFill: js.UndefOr[String] = js.native
+    var anchorFill: js.UndefOr[String] = js.undefined
     
-    var anchorSize: js.UndefOr[Double] = js.native
+    var anchorSize: js.UndefOr[Double] = js.undefined
     
-    var anchorStroke: js.UndefOr[String] = js.native
+    var anchorStroke: js.UndefOr[String] = js.undefined
     
-    var anchorStrokeWidth: js.UndefOr[Double] = js.native
+    var anchorStrokeWidth: js.UndefOr[Double] = js.undefined
     
-    var borderDash: js.UndefOr[js.Array[Double]] = js.native
+    var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var borderEnabled: js.UndefOr[Boolean] = js.native
+    var borderEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var borderStroke: js.UndefOr[String] = js.native
+    var borderStroke: js.UndefOr[String] = js.undefined
     
-    var borderStrokeWidth: js.UndefOr[Double] = js.native
+    var borderStrokeWidth: js.UndefOr[Double] = js.undefined
     
-    var boundBoxFunc: js.UndefOr[js.Function2[/* oldBox */ Box, /* newBox */ Box, Box]] = js.native
+    var boundBoxFunc: js.UndefOr[js.Function2[/* oldBox */ Box, /* newBox */ Box, Box]] = js.undefined
     
-    var centeredScaling: js.UndefOr[Boolean] = js.native
+    var centeredScaling: js.UndefOr[Boolean] = js.undefined
     
-    var enabledAnchors: js.UndefOr[js.Array[String]] = js.native
+    var enabledAnchors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreStroke: js.UndefOr[Boolean] = js.native
+    var ignoreStroke: js.UndefOr[Boolean] = js.undefined
     
-    var keepRatio: js.UndefOr[Boolean] = js.native
+    var keepRatio: js.UndefOr[Boolean] = js.undefined
     
-    var node: js.UndefOr[Rect] = js.native
+    var node: js.UndefOr[Rect] = js.undefined
     
-    var resizeEnabled: js.UndefOr[Boolean] = js.native
+    var resizeEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var rotateAnchorOffset: js.UndefOr[Double] = js.native
+    var rotateAnchorOffset: js.UndefOr[Double] = js.undefined
     
-    var rotateEnabled: js.UndefOr[Boolean] = js.native
+    var rotateEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var rotationSnapTolerance: js.UndefOr[Double] = js.native
+    var rotationSnapTolerance: js.UndefOr[Double] = js.undefined
     
-    var rotationSnaps: js.UndefOr[js.Array[Double]] = js.native
+    var rotationSnaps: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object TransformerConfig {
     

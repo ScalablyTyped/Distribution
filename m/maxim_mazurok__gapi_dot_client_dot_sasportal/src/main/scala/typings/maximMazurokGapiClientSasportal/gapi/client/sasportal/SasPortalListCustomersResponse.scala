@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalListCustomersResponse extends StObject {
   
   /** The list of customers that match the request. */
-  var customers: js.UndefOr[js.Array[SasPortalCustomer]] = js.native
+  var customers: js.UndefOr[js.Array[SasPortalCustomer]] = js.undefined
   
   /**
     * A pagination token returned from a previous call to ListCustomers method that indicates from where listing should continue. If the field is missing or empty, it means there are no
     * more customers.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SasPortalListCustomersResponse {
   

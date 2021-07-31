@@ -4,34 +4,32 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FieldNameSize extends StObject {
     
     /** Maximum size of each form field name in bytes. (Default: 100) */
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
     /** Maximum size of each form field value in bytes. (Default: 1048576) */
-    var fieldSize: js.UndefOr[Double] = js.native
+    var fieldSize: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of non-file form fields. (Default: Infinity) */
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
     /** Maximum size of each file in bytes. (Default: Infinity) */
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of file fields. (Default: Infinity) */
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of headers. (Default: 2000) */
-    var headerPairs: js.UndefOr[Double] = js.native
+    var headerPairs: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of parts (non-file fields + files). (Default: Infinity) */
-    var parts: js.UndefOr[Double] = js.native
+    var parts: js.UndefOr[Double] = js.undefined
   }
   object FieldNameSize {
     
@@ -89,28 +87,27 @@ object anon {
   }
   
   /* Inlined std.Partial<multer.multer.<global>.Express.Multer.File> */
-  @js.native
   trait PartialFile extends StObject {
     
-    var buffer: js.UndefOr[Buffer] = js.native
+    var buffer: js.UndefOr[Buffer] = js.undefined
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fieldname: js.UndefOr[String] = js.native
+    var fieldname: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var mimetype: js.UndefOr[String] = js.native
+    var mimetype: js.UndefOr[String] = js.undefined
     
-    var originalname: js.UndefOr[String] = js.native
+    var originalname: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Readable] = js.native
+    var stream: js.UndefOr[Readable] = js.undefined
   }
   object PartialFile {
     

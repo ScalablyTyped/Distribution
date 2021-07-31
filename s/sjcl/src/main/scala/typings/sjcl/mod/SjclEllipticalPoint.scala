@@ -2,25 +2,23 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclEllipticalPoint extends StObject {
   
-  def isValid(): Boolean = js.native
+  def isValid(): Boolean
   
-  def mult(k: BigNumber): SjclEllipticalPoint = js.native
+  def mult(k: BigNumber): SjclEllipticalPoint
   
-  def mult2(k: BigNumber, k2: BigNumber, affine2: SjclEllipticalPoint): SjclEllipticalPoint = js.native
+  def mult2(k: BigNumber, k2: BigNumber, affine2: SjclEllipticalPoint): SjclEllipticalPoint
   
-  def multiples(): js.Array[SjclEllipticalPoint] = js.native
+  def multiples(): js.Array[SjclEllipticalPoint]
   
-  def negate(): SjclEllipticalPoint = js.native
+  def negate(): SjclEllipticalPoint
   
-  def toBits(): BitArray_ = js.native
+  def toBits(): BitArray_
   
-  def toJac(): SjclPointJacobian = js.native
+  def toJac(): SjclPointJacobian
 }
 object SjclEllipticalPoint {
   

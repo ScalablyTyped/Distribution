@@ -10,9 +10,9 @@ A simple webpack plugin to support dotenv.
 | ------------------ | :-------------: |
 | Full name          | dotenv-webpack |
 | Keywords           | dotenv, env, safe, environment, dotenv-safe, variables, process, process.env, webpack, plugin |
-| # releases         | 4 |
-| # dependents       | 175 |
-| # downloads        | 76319976 |
+| # releases         | 8 |
+| # dependents       | 201 |
+| # downloads        | 96710786 |
 | # stars            | 10 |
 
 ## Links

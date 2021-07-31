@@ -2,19 +2,17 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var rowKey: String = js.native
+  var rowKey: String
 }
 object Disabled {
   

@@ -12,7 +12,7 @@ Generate cryptographically secure token strings
 | Keywords           | string, generator, random, crypto, token |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 15125 |
+| # downloads        | 11967 |
 | # stars            | 0 |
 
 ## Links

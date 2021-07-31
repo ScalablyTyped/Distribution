@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3ReferenceDataSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the S3 bucket.
     */
-  var BucketARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.BucketARN] = js.native
+  var BucketARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.BucketARN] = js.undefined
   
   /**
     * The object key name containing the reference data.
     */
-  var FileKey: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FileKey] = js.native
+  var FileKey: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FileKey] = js.undefined
 }
 object S3ReferenceDataSource {
   

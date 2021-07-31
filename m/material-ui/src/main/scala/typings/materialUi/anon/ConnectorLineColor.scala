@@ -2,27 +2,25 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorLineColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var connectorLineColor: js.UndefOr[String] = js.native
+  var connectorLineColor: js.UndefOr[String] = js.undefined
   
-  var disabledTextColor: js.UndefOr[String] = js.native
+  var disabledTextColor: js.UndefOr[String] = js.undefined
   
-  var hoverBackgroundColor: js.UndefOr[String] = js.native
+  var hoverBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var hoveredIconColor: js.UndefOr[String] = js.native
+  var hoveredIconColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var inactiveIconColor: js.UndefOr[String] = js.native
+  var inactiveIconColor: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object ConnectorLineColor {
   

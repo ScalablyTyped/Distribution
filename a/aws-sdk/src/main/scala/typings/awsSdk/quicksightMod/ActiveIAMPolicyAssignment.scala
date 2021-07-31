@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveIAMPolicyAssignment extends StObject {
   
   /**
     * A name for the IAM policy assignment.
     */
-  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.native
+  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var PolicyArn: js.UndefOr[Arn] = js.native
+  var PolicyArn: js.UndefOr[Arn] = js.undefined
 }
 object ActiveIAMPolicyAssignment {
   

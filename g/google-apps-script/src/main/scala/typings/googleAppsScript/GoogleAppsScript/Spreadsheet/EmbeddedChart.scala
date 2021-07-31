@@ -7,7 +7,6 @@ import typings.googleAppsScript.GoogleAppsScript.Charts.ChartOptions
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,30 +36,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       sheet.insertChart(chartBuilder.build());
   *     }
   */
-@js.native
 trait EmbeddedChart extends StObject {
   
-  def getAs(contentType: String): Blob = js.native
+  def getAs(contentType: String): Blob
   
-  def getBlob(): Blob = js.native
+  def getBlob(): Blob
   
-  def getChartId(): Integer | Null = js.native
+  def getChartId(): Integer | Null
   
-  def getContainerInfo(): ContainerInfo = js.native
+  def getContainerInfo(): ContainerInfo
   
-  def getHiddenDimensionStrategy(): ChartHiddenDimensionStrategy = js.native
+  def getHiddenDimensionStrategy(): ChartHiddenDimensionStrategy
   
-  def getMergeStrategy(): ChartMergeStrategy = js.native
+  def getMergeStrategy(): ChartMergeStrategy
   
-  def getNumHeaders(): Integer = js.native
+  def getNumHeaders(): Integer
   
-  def getOptions(): ChartOptions = js.native
+  def getOptions(): ChartOptions
   
-  def getRanges(): js.Array[Range] = js.native
+  def getRanges(): js.Array[Range]
   
-  def getTransposeRowsAndColumns(): Boolean = js.native
+  def getTransposeRowsAndColumns(): Boolean
   
-  def modify(): EmbeddedChartBuilder = js.native
+  def modify(): EmbeddedChartBuilder
 }
 object EmbeddedChart {
   

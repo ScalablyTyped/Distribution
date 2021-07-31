@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListArchivesResponse extends StObject {
   
   /**
     * An array of Archive objects that include details about an archive.
     */
-  var Archives: js.UndefOr[ArchiveResponseList] = js.native
+  var Archives: js.UndefOr[ArchiveResponseList] = js.undefined
   
   /**
     * The token returned by a previous call to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.undefined
 }
 object ListArchivesResponse {
   

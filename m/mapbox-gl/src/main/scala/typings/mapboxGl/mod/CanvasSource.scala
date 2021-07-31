@@ -1,16 +1,29 @@
 package typings.mapboxGl.mod
 
+import typings.mapboxGl.mapboxGlStrings.`raster-dem`
+import typings.mapboxGl.mapboxGlStrings.canvas
+import typings.mapboxGl.mapboxGlStrings.geojson
+import typings.mapboxGl.mapboxGlStrings.image_
+import typings.mapboxGl.mapboxGlStrings.raster
+import typings.mapboxGl.mapboxGlStrings.vector
+import typings.mapboxGl.mapboxGlStrings.video
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "CanvasSource")
 @js.native
 class CanvasSource ()
-  extends CanvasSourceRaw
+  extends StObject
+     with CanvasSourceRaw
      with AnySourceImpl {
+  
+  /* CompleteClass */
+  var canvas: String | HTMLCanvasElement = js.native
+  
+  /* CompleteClass */
+  var coordinates: js.Array[js.Array[Double]] = js.native
   
   def getCanvas(): HTMLCanvasElement = js.native
   
@@ -19,4 +32,10 @@ class CanvasSource ()
   def play(): Unit = js.native
   
   def setCoordinates(coordinates: js.Array[js.Array[Double]]): this.type = js.native
+  
+  /* CompleteClass */
+  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
+  /* CompleteClass */
+  @JSName("type")
+  var type_CanvasSourceRaw: canvas = js.native
 }

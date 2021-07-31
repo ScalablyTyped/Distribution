@@ -3,27 +3,25 @@ package typings.paypalPayoutsSdk.mod
 import typings.paypalPayoutsSdk.anon.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayoutItem extends StObject {
   
-  var alternate_notification_method: js.UndefOr[Phone] = js.native
+  var alternate_notification_method: js.UndefOr[Phone] = js.undefined
   
-  var amount: typings.paypalPayoutsSdk.anon.Currency = js.native
+  var amount: typings.paypalPayoutsSdk.anon.Currency
   
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
-  var notification_language: js.UndefOr[String] = js.native
+  var notification_language: js.UndefOr[String] = js.undefined
   
-  var receiver: String = js.native
+  var receiver: String
   
-  var recipient_type: js.UndefOr[RecipientType] = js.native
+  var recipient_type: js.UndefOr[RecipientType] = js.undefined
   
-  var recipient_wallet: js.UndefOr[RecipientWallet] = js.native
+  var recipient_wallet: js.UndefOr[RecipientWallet] = js.undefined
   
-  var sender_item_id: js.UndefOr[String] = js.native
+  var sender_item_id: js.UndefOr[String] = js.undefined
 }
 object PayoutItem {
   

@@ -5,7 +5,6 @@ import typings.antDesignReactNative.textareaItemMod.TextareaItemProps
 import typings.antDesignReactNative.textareaItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "TextareaItem")

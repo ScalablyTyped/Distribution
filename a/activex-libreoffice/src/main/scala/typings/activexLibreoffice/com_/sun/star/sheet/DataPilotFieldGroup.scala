@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,12 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DataPilotFieldGroups
   * @see DataPilotFieldGroupItem
   */
-@js.native
 trait DataPilotFieldGroup
-  extends XNameContainer
+  extends StObject
      with XNamed
      with XIndexAccess
      with XEnumerationAccess
+     with XNameContainer
 object DataPilotFieldGroup {
   
   @scala.inline

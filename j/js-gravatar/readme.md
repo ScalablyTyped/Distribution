@@ -12,7 +12,7 @@ A vanilla JS library to get a user's gravatar and if it doesn't exist provides o
 | Keywords           | gravatar, avatar, javascript, angular-avatar, angular-gravatar, react-gravatar, react-avatar, vue-gravatar, vue-avatar |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 1308 |
+| # downloads        | 2538 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var colors: js.UndefOr[js.Array[typings.reactNativeChartsWrapper.mod.Color]] = js.native
+  var colors: js.UndefOr[js.Array[typings.reactNativeChartsWrapper.mod.Color]] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Colors {
   

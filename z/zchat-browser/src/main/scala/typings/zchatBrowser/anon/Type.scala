@@ -6,24 +6,24 @@ import typings.zchatBrowser.mod.ChatEvent.StructuredMessage
 import typings.zchatBrowser.zchatBrowserStrings.LIST_TEMPLATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type extends StructuredMessage {
+trait Type
+  extends StObject
+     with StructuredMessage {
   
-  var buttons: js.Array[Button] = js.native
+  var buttons: js.Array[Button]
   
-  var items: js.Array[ListItem] = js.native
+  var items: js.Array[ListItem]
   
-  var `type`: LIST_TEMPLATE = js.native
+  var `type`: LIST_TEMPLATE
 }
 object Type {
   
   @scala.inline
-  def apply(buttons: js.Array[Button], items: js.Array[ListItem], `type`: LIST_TEMPLATE): Type = {
+  def apply(buttons: js.Array[Button], items: js.Array[ListItem]): Type = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LIST_TEMPLATE")
     __obj.asInstanceOf[Type]
   }
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteResponse extends StObject {
   
   /** The status of applying the writes. This i-th write status corresponds to the i-th write in the request. */
-  var status: js.UndefOr[js.Array[Status]] = js.native
+  var status: js.UndefOr[js.Array[Status]] = js.undefined
   
   /** The result of applying the writes. This i-th write result corresponds to the i-th write in the request. */
-  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.native
+  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.undefined
 }
 object BatchWriteResponse {
   

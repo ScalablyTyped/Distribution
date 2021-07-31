@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingTrimming extends StObject {
   
-  var `trimming-offset`: js.UndefOr[Double] = js.native
+  var `trimming-offset`: js.UndefOr[Double] = js.undefined
   
-  var `trimming-reference-edge`: js.UndefOr[ReferenceEdge] = js.native
+  var `trimming-reference-edge`: js.UndefOr[ReferenceEdge] = js.undefined
   
-  var `trimming-type`: js.UndefOr[TrimmingType] = js.native
+  var `trimming-type`: js.UndefOr[TrimmingType] = js.undefined
   
-  var `trimming-when`: js.UndefOr[String] = js.native
+  var `trimming-when`: js.UndefOr[String] = js.undefined
 }
 object FinishingTrimming {
   

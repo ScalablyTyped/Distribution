@@ -2,15 +2,13 @@ package typings.giphyApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseOptions extends StObject {
   
-  var fmt: js.UndefOr[Format] = js.native
+  var fmt: js.UndefOr[Format] = js.undefined
   
-  var rating: Rating = js.native
+  var rating: Rating
 }
 object BaseOptions {
   

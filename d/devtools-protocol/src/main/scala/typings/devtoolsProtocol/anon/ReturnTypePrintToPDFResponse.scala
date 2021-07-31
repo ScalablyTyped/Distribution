@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypePrintToPDFResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[PrintToPDFRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[PrintToPDFRequest]]
   
-  var returnType: PrintToPDFResponse = js.native
+  var returnType: PrintToPDFResponse
 }
 object ReturnTypePrintToPDFResponse {
   

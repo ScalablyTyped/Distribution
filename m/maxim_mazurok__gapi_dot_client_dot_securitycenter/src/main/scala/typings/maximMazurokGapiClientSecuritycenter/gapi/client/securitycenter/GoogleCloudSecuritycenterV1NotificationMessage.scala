@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSecuritycenterV1NotificationMessage extends StObject {
   
   /** If it's a Finding based notification config, this field will be populated. */
-  var finding: js.UndefOr[Finding] = js.native
+  var finding: js.UndefOr[Finding] = js.undefined
   
   /** Name of the notification config that generated current notification. */
-  var notificationConfigName: js.UndefOr[String] = js.native
+  var notificationConfigName: js.UndefOr[String] = js.undefined
   
   /** The Cloud resource tied to this notification's Finding. */
-  var resource: js.UndefOr[GoogleCloudSecuritycenterV1Resource] = js.native
+  var resource: js.UndefOr[GoogleCloudSecuritycenterV1Resource] = js.undefined
 }
 object GoogleCloudSecuritycenterV1NotificationMessage {
   

@@ -2,137 +2,135 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangNavigationPopupOptions extends StObject {
   
-  var addButton: js.UndefOr[String] = js.native
+  var addButton: js.UndefOr[String] = js.undefined
   
-  var arrowLine: js.UndefOr[String] = js.native
+  var arrowLine: js.UndefOr[String] = js.undefined
   
-  var arrowRay: js.UndefOr[String] = js.native
+  var arrowRay: js.UndefOr[String] = js.undefined
   
-  var arrowSegment: js.UndefOr[String] = js.native
+  var arrowSegment: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var backgroundColors: js.UndefOr[String] = js.native
+  var backgroundColors: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderRadius: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[String] = js.undefined
   
-  var circle: js.UndefOr[String] = js.native
+  var circle: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var connector: js.UndefOr[String] = js.native
+  var connector: js.UndefOr[String] = js.undefined
   
-  var crooked3: js.UndefOr[String] = js.native
+  var crooked3: js.UndefOr[String] = js.undefined
   
-  var crooked5: js.UndefOr[String] = js.native
+  var crooked5: js.UndefOr[String] = js.undefined
   
-  var crosshairX: js.UndefOr[String] = js.native
+  var crosshairX: js.UndefOr[String] = js.undefined
   
-  var crosshairY: js.UndefOr[String] = js.native
+  var crosshairY: js.UndefOr[String] = js.undefined
   
-  var editButton: js.UndefOr[String] = js.native
+  var editButton: js.UndefOr[String] = js.undefined
   
-  var elliott3: js.UndefOr[String] = js.native
+  var elliott3: js.UndefOr[String] = js.undefined
   
-  var elliott5: js.UndefOr[String] = js.native
+  var elliott5: js.UndefOr[String] = js.undefined
   
-  var fibonacci: js.UndefOr[String] = js.native
+  var fibonacci: js.UndefOr[String] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var horizontalLine: js.UndefOr[String] = js.native
+  var horizontalLine: js.UndefOr[String] = js.undefined
   
-  var infinityLine: js.UndefOr[String] = js.native
+  var infinityLine: js.UndefOr[String] = js.undefined
   
-  var innerBackground: js.UndefOr[String] = js.native
+  var innerBackground: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelOptions: js.UndefOr[String] = js.native
+  var labelOptions: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
-  var lines: js.UndefOr[String] = js.native
+  var lines: js.UndefOr[String] = js.undefined
   
-  var measure: js.UndefOr[String] = js.native
+  var measure: js.UndefOr[String] = js.undefined
   
-  var measureX: js.UndefOr[String] = js.native
+  var measureX: js.UndefOr[String] = js.undefined
   
-  var measureXY: js.UndefOr[String] = js.native
+  var measureXY: js.UndefOr[String] = js.undefined
   
-  var measureY: js.UndefOr[String] = js.native
+  var measureY: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var outerBackground: js.UndefOr[String] = js.native
+  var outerBackground: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
-  var parallelChannel: js.UndefOr[String] = js.native
+  var parallelChannel: js.UndefOr[String] = js.undefined
   
-  var pitchfork: js.UndefOr[String] = js.native
+  var pitchfork: js.UndefOr[String] = js.undefined
   
-  var ray: js.UndefOr[String] = js.native
+  var ray: js.UndefOr[String] = js.undefined
   
-  var rectangle: js.UndefOr[String] = js.native
+  var rectangle: js.UndefOr[String] = js.undefined
   
-  var removeButton: js.UndefOr[String] = js.native
+  var removeButton: js.UndefOr[String] = js.undefined
   
-  var saveButton: js.UndefOr[String] = js.native
+  var saveButton: js.UndefOr[String] = js.undefined
   
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
-  var series: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.undefined
   
-  var shapeOptions: js.UndefOr[String] = js.native
+  var shapeOptions: js.UndefOr[String] = js.undefined
   
-  var shapes: js.UndefOr[String] = js.native
+  var shapes: js.UndefOr[String] = js.undefined
   
-  var simpleShapes: js.UndefOr[String] = js.native
+  var simpleShapes: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[String] = js.native
+  var strokeWidth: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var tunnel: js.UndefOr[String] = js.native
+  var tunnel: js.UndefOr[String] = js.undefined
   
-  var typeOptions: js.UndefOr[String] = js.native
+  var typeOptions: js.UndefOr[String] = js.undefined
   
-  var verticalArrow: js.UndefOr[String] = js.native
+  var verticalArrow: js.UndefOr[String] = js.undefined
   
-  var verticalCounter: js.UndefOr[String] = js.native
+  var verticalCounter: js.UndefOr[String] = js.undefined
   
-  var verticalLabel: js.UndefOr[String] = js.native
+  var verticalLabel: js.UndefOr[String] = js.undefined
   
-  var verticalLine: js.UndefOr[String] = js.native
+  var verticalLine: js.UndefOr[String] = js.undefined
   
-  var volume: js.UndefOr[String] = js.native
+  var volume: js.UndefOr[String] = js.undefined
 }
 object LangNavigationPopupOptions {
   

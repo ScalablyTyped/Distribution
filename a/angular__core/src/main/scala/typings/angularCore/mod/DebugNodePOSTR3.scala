@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugNodePOSTR3 extends DebugNode {
+trait DebugNodePOSTR3
+  extends StObject
+     with DebugNode {
   
   @JSName("componentInstance")
   def componentInstance_MDebugNodePOSTR3: js.Any = js.native
@@ -29,7 +30,7 @@ trait DebugNodePOSTR3 extends DebugNode {
   def parent_MDebugNodePOSTR3: DebugElement | Null = js.native
   
   @JSName("providerTokens")
-  def providerTokens_MDebugNodePOSTR3: js.Array[_] = js.native
+  def providerTokens_MDebugNodePOSTR3: js.Array[js.Any] = js.native
   
   @JSName("references")
   def references_MDebugNodePOSTR3: StringDictionary[js.Any] = js.native

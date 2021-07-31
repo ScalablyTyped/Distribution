@@ -5,35 +5,37 @@ import typings.awsSdkSharedIniFileLoader.mod.SharedConfigInit
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/credential-provider-process", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-process", "ENV_PROFILE")
   @js.native
   val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
   
-  @JSImport("@aws-sdk/credential-provider-process", "fromProcess")
-  @js.native
-  def fromProcess(): CredentialProvider = js.native
-  @JSImport("@aws-sdk/credential-provider-process", "fromProcess")
-  @js.native
-  def fromProcess(init: FromProcessInit): CredentialProvider = js.native
+  @scala.inline
+  def fromProcess(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProcess")().asInstanceOf[CredentialProvider]
+  @scala.inline
+  def fromProcess(init: FromProcessInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProcess")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @js.native
-  trait FromProcessInit extends SharedConfigInit {
+  trait FromProcessInit
+    extends StObject
+       with SharedConfigInit {
     
     /**
       * A promise that will be resolved with loaded and parsed credentials files.
       * Used to avoid loading shared config files multiple times.
       */
-    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.native
+    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.undefined
     
     /**
       * The configuration profile to use.
       */
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
   }
   object FromProcessInit {
     

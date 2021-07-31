@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceProperties extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConferenceProperties extends StObject {
     * - "eventNamedHangout"
     * - "hangoutsMeet"  Optional.
     */
-  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.native
+  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConferenceProperties {
   

@@ -2,17 +2,15 @@ package typings.pgPromise.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFormattingOptions extends StObject {
   
-  var capSQL: js.UndefOr[Boolean] = js.native
+  var capSQL: js.UndefOr[Boolean] = js.undefined
   
-  var `def`: js.UndefOr[js.Any] = js.native
+  var `def`: js.UndefOr[js.Any] = js.undefined
   
-  var partial: js.UndefOr[Boolean] = js.native
+  var partial: js.UndefOr[Boolean] = js.undefined
 }
 object IFormattingOptions {
   

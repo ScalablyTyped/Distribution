@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLStyleSheetPage extends StObject {
   
   @JSName("MSHTML.IHTMLStyleSheetPage_typekey")
-  var MSHTMLDotIHTMLStyleSheetPage_typekey: IHTMLStyleSheetPage = js.native
+  var MSHTMLDotIHTMLStyleSheetPage_typekey: IHTMLStyleSheetPage
   
-  val pseudoClass: String = js.native
+  val pseudoClass: String
   
-  val selector: String = js.native
+  val selector: String
 }
 object IHTMLStyleSheetPage {
   

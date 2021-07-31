@@ -9,14 +9,16 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMenuTargetMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/components/context-menu/contextMenuTarget", "ContextMenuTarget")
+  @JSImport("@blueprintjs/core/lib/esm/components/context-menu/contextMenuTarget", JSImport.Namespace)
   @js.native
-  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): Instantiable with T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): Instantiable & T = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable & T]
   
   @js.native
   trait IContextMenuTargetComponent

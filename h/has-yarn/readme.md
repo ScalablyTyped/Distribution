@@ -11,8 +11,8 @@ Check if a project is using Yarn
 | Full name          | has-yarn |
 | Keywords           | yarn, has, detect, is, project, app, module, package, manager, npm |
 | # releases         | 3 |
-| # dependents       | 94 |
-| # downloads        | 83083045 |
+| # dependents       | 115 |
+| # downloads        | 150651823 |
 | # stars            | 0 |
 
 ## Links

@@ -15,7 +15,6 @@ import typings.std.HTMLVideoElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -91,7 +90,7 @@ class Resource protected () extends StObject {
     * @readonly
     * @member {string}
     */
-  val extension: String = js.native
+  val `extension`: String = js.native
   
   /**
     * Describes if this resource has finished loading. Is true when the resource has completely
@@ -244,6 +243,10 @@ class Resource protected () extends StObject {
 }
 object Resource {
   
+  @JSImport("resource-loader", "Resource")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait LOAD_TYPE extends StObject
   /**
@@ -258,23 +261,31 @@ object Resource {
   object LOAD_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LOAD_TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[LOAD_TYPE & Double] = js.native
     
     @js.native
-    sealed trait AUDIO extends LOAD_TYPE
-    /* 2 */ val AUDIO: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.AUDIO with Double = js.native
+    sealed trait AUDIO
+      extends StObject
+         with LOAD_TYPE
+    /* 2 */ val AUDIO: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.AUDIO & Double = js.native
     
     @js.native
-    sealed trait IMAGE extends LOAD_TYPE
-    /* 1 */ val IMAGE: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.IMAGE with Double = js.native
+    sealed trait IMAGE
+      extends StObject
+         with LOAD_TYPE
+    /* 1 */ val IMAGE: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.IMAGE & Double = js.native
     
     @js.native
-    sealed trait VIDEO extends LOAD_TYPE
-    /* 3 */ val VIDEO: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.VIDEO with Double = js.native
+    sealed trait VIDEO
+      extends StObject
+         with LOAD_TYPE
+    /* 3 */ val VIDEO: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.VIDEO & Double = js.native
     
     @js.native
-    sealed trait XHR extends LOAD_TYPE
-    /* 0 */ val XHR: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.XHR with Double = js.native
+    sealed trait XHR
+      extends StObject
+         with LOAD_TYPE
+    /* 0 */ val XHR: typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE.XHR & Double = js.native
   }
   
   @js.native
@@ -291,23 +302,31 @@ object Resource {
   object STATUS_FLAGS extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[STATUS_FLAGS with Double] = js.native
+    def apply(value: Double): js.UndefOr[STATUS_FLAGS & Double] = js.native
     
     @js.native
-    sealed trait COMPLETE extends STATUS_FLAGS
-    /* 2 */ val COMPLETE: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.COMPLETE with Double = js.native
+    sealed trait COMPLETE
+      extends StObject
+         with STATUS_FLAGS
+    /* 2 */ val COMPLETE: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.COMPLETE & Double = js.native
     
     @js.native
-    sealed trait DATA_URL extends STATUS_FLAGS
-    /* 1 */ val DATA_URL: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.DATA_URL with Double = js.native
+    sealed trait DATA_URL
+      extends StObject
+         with STATUS_FLAGS
+    /* 1 */ val DATA_URL: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.DATA_URL & Double = js.native
     
     @js.native
-    sealed trait LOADING extends STATUS_FLAGS
-    /* 3 */ val LOADING: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.LOADING with Double = js.native
+    sealed trait LOADING
+      extends StObject
+         with STATUS_FLAGS
+    /* 3 */ val LOADING: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.LOADING & Double = js.native
     
     @js.native
-    sealed trait NONE extends STATUS_FLAGS
-    /* 0 */ val NONE: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with STATUS_FLAGS
+    /* 0 */ val NONE: typings.resourceLoader.resourceLoaderMod.Resource.STATUS_FLAGS.NONE & Double = js.native
   }
   
   @js.native
@@ -324,35 +343,49 @@ object Resource {
   object TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[TYPE & Double] = js.native
     
     @js.native
-    sealed trait AUDIO extends TYPE
-    /* 4 */ val AUDIO: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.AUDIO with Double = js.native
+    sealed trait AUDIO
+      extends StObject
+         with TYPE
+    /* 4 */ val AUDIO: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.AUDIO & Double = js.native
     
     @js.native
-    sealed trait IMAGE extends TYPE
-    /* 3 */ val IMAGE: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.IMAGE with Double = js.native
+    sealed trait IMAGE
+      extends StObject
+         with TYPE
+    /* 3 */ val IMAGE: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.IMAGE & Double = js.native
     
     @js.native
-    sealed trait JSON extends TYPE
-    /* 1 */ val JSON: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.JSON with Double = js.native
+    sealed trait JSON
+      extends StObject
+         with TYPE
+    /* 1 */ val JSON: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.JSON & Double = js.native
     
     @js.native
-    sealed trait TEXT extends TYPE
-    /* 6 */ val TEXT: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.TEXT with Double = js.native
+    sealed trait TEXT
+      extends StObject
+         with TYPE
+    /* 6 */ val TEXT: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.TEXT & Double = js.native
     
     @js.native
-    sealed trait UNKNOWN extends TYPE
-    /* 0 */ val UNKNOWN: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.UNKNOWN with Double = js.native
+    sealed trait UNKNOWN
+      extends StObject
+         with TYPE
+    /* 0 */ val UNKNOWN: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.UNKNOWN & Double = js.native
     
     @js.native
-    sealed trait VIDEO extends TYPE
-    /* 5 */ val VIDEO: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.VIDEO with Double = js.native
+    sealed trait VIDEO
+      extends StObject
+         with TYPE
+    /* 5 */ val VIDEO: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.VIDEO & Double = js.native
     
     @js.native
-    sealed trait XML extends TYPE
-    /* 2 */ val XML: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.XML with Double = js.native
+    sealed trait XML
+      extends StObject
+         with TYPE
+    /* 2 */ val XML: typings.resourceLoader.resourceLoaderMod.Resource.TYPE.XML & Double = js.native
   }
   
   @js.native
@@ -369,31 +402,43 @@ object Resource {
   object XHR_RESPONSE_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[XHR_RESPONSE_TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[XHR_RESPONSE_TYPE & Double] = js.native
     
     @js.native
-    sealed trait BLOB extends XHR_RESPONSE_TYPE
-    /* 2 */ val BLOB: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.BLOB with Double = js.native
+    sealed trait BLOB
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 2 */ val BLOB: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.BLOB & Double = js.native
     
     @js.native
-    sealed trait BUFFER extends XHR_RESPONSE_TYPE
-    /* 1 */ val BUFFER: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.BUFFER with Double = js.native
+    sealed trait BUFFER
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 1 */ val BUFFER: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.BUFFER & Double = js.native
     
     @js.native
-    sealed trait DEFAULT extends XHR_RESPONSE_TYPE
-    /* 0 */ val DEFAULT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.DEFAULT with Double = js.native
+    sealed trait DEFAULT
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 0 */ val DEFAULT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.DEFAULT & Double = js.native
     
     @js.native
-    sealed trait DOCUMENT extends XHR_RESPONSE_TYPE
-    /* 3 */ val DOCUMENT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.DOCUMENT with Double = js.native
+    sealed trait DOCUMENT
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 3 */ val DOCUMENT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.DOCUMENT & Double = js.native
     
     @js.native
-    sealed trait JSON extends XHR_RESPONSE_TYPE
-    /* 4 */ val JSON: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.JSON with Double = js.native
+    sealed trait JSON
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 4 */ val JSON: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.JSON & Double = js.native
     
     @js.native
-    sealed trait TEXT extends XHR_RESPONSE_TYPE
-    /* 5 */ val TEXT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.TEXT with Double = js.native
+    sealed trait TEXT
+      extends StObject
+         with XHR_RESPONSE_TYPE
+    /* 5 */ val TEXT: typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE.TEXT & Double = js.native
   }
   
   /**
@@ -404,9 +449,8 @@ object Resource {
     * @param {Resource.LOAD_TYPE} loadType - The load type to set it to.
     */
   /* static member */
-  @JSImport("resource-loader", "Resource.setExtensionLoadType")
-  @js.native
-  def setExtensionLoadType(extname: String, loadType: LOAD_TYPE): Unit = js.native
+  @scala.inline
+  def setExtensionLoadType(extname: String, loadType: LOAD_TYPE): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionLoadType")(extname.asInstanceOf[js.Any], loadType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the load type to be used for a specific extension.
@@ -416,9 +460,8 @@ object Resource {
     * @param {Resource.XHR_RESPONSE_TYPE} xhrType - The xhr type to set it to.
     */
   /* static member */
-  @JSImport("resource-loader", "Resource.setExtensionXhrType")
-  @js.native
-  def setExtensionXhrType(extname: String, xhrType: XHR_RESPONSE_TYPE): Unit = js.native
+  @scala.inline
+  def setExtensionXhrType(extname: String, xhrType: XHR_RESPONSE_TYPE): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionXhrType")(extname.asInstanceOf[js.Any], xhrType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @memberof Resource
@@ -431,14 +474,13 @@ object Resource {
     *      of a video/audio elment. If the urls are an array, you can pass this as an array as well
     *      where each index is the mime type to use for the corresponding url index.
     */
-  @js.native
   trait IMetadata extends StObject {
     
-    var loadElement: js.UndefOr[HTMLImageElement | HTMLAudioElement | HTMLVideoElement] = js.native
+    var loadElement: js.UndefOr[HTMLImageElement | HTMLAudioElement | HTMLVideoElement] = js.undefined
     
-    var mimeType: js.UndefOr[String | js.Array[String]] = js.native
+    var mimeType: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var skipSource: js.UndefOr[Boolean] = js.native
+    var skipSource: js.UndefOr[Boolean] = js.undefined
   }
   object IMetadata {
     

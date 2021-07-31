@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends StObject {
   
   /**
     * Information about the command(s) to execute.
     */
-  var comment: js.UndefOr[Input[String]] = js.native
+  var comment: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
     */
-  var documentHash: js.UndefOr[Input[String]] = js.native
+  var documentHash: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
     */
-  var documentHashType: js.UndefOr[Input[String]] = js.native
+  var documentHashType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
@@ -31,17 +29,17 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends 
     Input[
       MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the Amazon S3 bucket.
     */
-  var outputS3Bucket: js.UndefOr[Input[String]] = js.native
+  var outputS3Bucket: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Amazon S3 bucket subfolder.
     */
-  var outputS3KeyPrefix: js.UndefOr[Input[String]] = js.native
+  var outputS3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The parameters for the RUN_COMMAND task execution. Documented below.
@@ -52,17 +50,17 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends 
         Input[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The IAM service role to assume during task execution.
     */
-  var serviceRoleArn: js.UndefOr[Input[String]] = js.native
+  var serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * If this time is reached and the command has not already started executing, it doesn't run.
     */
-  var timeoutSeconds: js.UndefOr[Input[Double]] = js.native
+  var timeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
   

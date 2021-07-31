@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects")
@@ -32,7 +31,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getSettings(): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
-  def getSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
+  def getSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(params: ParamsResourceProjectsGetsettings): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(params: ParamsResourceProjectsGetsettings, callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
   def getSettings(
@@ -82,7 +81,7 @@ class ResourceProjects protected () extends StObject {
     */
   def initializeSettings(): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
-  def initializeSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
+  def initializeSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(params: ParamsResourceProjectsInitializesettings): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(
     params: ParamsResourceProjectsInitializesettings,

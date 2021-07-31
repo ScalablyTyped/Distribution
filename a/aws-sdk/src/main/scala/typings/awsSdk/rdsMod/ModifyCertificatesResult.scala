@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyCertificatesResult extends StObject {
   
-  var Certificate: js.UndefOr[typings.awsSdk.rdsMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.rdsMod.Certificate] = js.undefined
 }
 object ModifyCertificatesResult {
   

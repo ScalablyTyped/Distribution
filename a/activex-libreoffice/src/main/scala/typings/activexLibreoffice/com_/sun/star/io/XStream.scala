@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers read and write access to the same stream. */
-@js.native
-trait XStream extends XInterface {
+trait XStream
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link XInputStream} part of the stream. Closing the returned {@link XInputStream} also closes any {@link XOutputStream} part. */
-  val InputStream: XInputStream = js.native
+  val InputStream: XInputStream
   
   /** @returns the {@link XInputStream} part of the stream. Closing the returned {@link XOutputStream} also closes the {@link XInputStream} part. */
-  val OutputStream: XOutputStream = js.native
+  val OutputStream: XOutputStream
   
   /** @returns the {@link XInputStream} part of the stream. Closing the returned {@link XInputStream} also closes any {@link XOutputStream} part. */
-  def getInputStream(): XInputStream = js.native
+  def getInputStream(): XInputStream
   
   /** @returns the {@link XInputStream} part of the stream. Closing the returned {@link XOutputStream} also closes the {@link XInputStream} part. */
-  def getOutputStream(): XOutputStream = js.native
+  def getOutputStream(): XOutputStream
 }
 object XStream {
   

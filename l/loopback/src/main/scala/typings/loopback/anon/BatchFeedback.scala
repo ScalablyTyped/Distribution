@@ -2,19 +2,17 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchFeedback extends StObject {
   
-  var batchFeedback: Boolean = js.native
+  var batchFeedback: Boolean
   
-  var gateway: String = js.native
+  var gateway: String
   
-  var interval: Double = js.native
+  var interval: Double
   
-  var port: Double = js.native
+  var port: Double
 }
 object BatchFeedback {
   

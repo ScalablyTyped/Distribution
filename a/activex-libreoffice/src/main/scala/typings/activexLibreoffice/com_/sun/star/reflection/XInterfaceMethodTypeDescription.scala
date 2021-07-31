@@ -5,54 +5,54 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reflects an interface method type. The type class of this type is TypeClass_INTERFACE_METHOD. */
-@js.native
-trait XInterfaceMethodTypeDescription extends XInterfaceMemberTypeDescription {
+trait XInterfaceMethodTypeDescription
+  extends StObject
+     with XInterfaceMemberTypeDescription {
   
   /**
     * Returns declared exceptions that may occur upon invocations of the method.
     * @returns declared exceptions of method
     */
-  val Exceptions: SafeArray[XTypeDescription] = js.native
+  val Exceptions: SafeArray[XTypeDescription]
   
   /**
     * Returns all parameters of the method in order of IDL declaration.
     * @returns method parameters
     */
-  val Parameters: SafeArray[XMethodParameter] = js.native
+  val Parameters: SafeArray[XMethodParameter]
   
   /**
     * Returns the method's return type.
     * @returns method's return type
     */
-  val ReturnType: XTypeDescription = js.native
+  val ReturnType: XTypeDescription
   
   /**
     * Returns declared exceptions that may occur upon invocations of the method.
     * @returns declared exceptions of method
     */
-  def getExceptions(): SafeArray[XTypeDescription] = js.native
+  def getExceptions(): SafeArray[XTypeDescription]
   
   /**
     * Returns all parameters of the method in order of IDL declaration.
     * @returns method parameters
     */
-  def getParameters(): SafeArray[XMethodParameter] = js.native
+  def getParameters(): SafeArray[XMethodParameter]
   
   /**
     * Returns the method's return type.
     * @returns method's return type
     */
-  def getReturnType(): XTypeDescription = js.native
+  def getReturnType(): XTypeDescription
   
   /**
     * Returns true, if this method is declared oneway.
     * @returns true, if this method is declared oneway
     */
-  def isOneway(): Boolean = js.native
+  def isOneway(): Boolean
 }
 object XInterfaceMethodTypeDescription {
   

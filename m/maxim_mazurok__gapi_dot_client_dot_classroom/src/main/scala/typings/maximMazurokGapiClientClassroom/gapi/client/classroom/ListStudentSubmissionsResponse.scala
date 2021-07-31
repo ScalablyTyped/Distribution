@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStudentSubmissionsResponse extends StObject {
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Student work that matches the request. */
-  var studentSubmissions: js.UndefOr[js.Array[StudentSubmission]] = js.native
+  var studentSubmissions: js.UndefOr[js.Array[StudentSubmission]] = js.undefined
 }
 object ListStudentSubmissionsResponse {
   

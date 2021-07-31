@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Overlay.GetSourceOrderHighlightObje
 import typings.devtoolsProtocol.mod.Protocol.Overlay.GetSourceOrderHighlightObjectForTestResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetSourceOrderHighlightObjectForTestResponse extends StObject {
   
-  var paramsType: js.Array[GetSourceOrderHighlightObjectForTestRequest] = js.native
+  var paramsType: js.Array[GetSourceOrderHighlightObjectForTestRequest]
   
-  var returnType: GetSourceOrderHighlightObjectForTestResponse = js.native
+  var returnType: GetSourceOrderHighlightObjectForTestResponse
 }
 object ReturnTypeGetSourceOrderHighlightObjectForTestResponse {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicalConnectionRequirements extends StObject {
   
   /**
     * The connection's Availability Zone. This field is redundant because the specified subnet implies the Availability Zone to be used. Currently the field must be populated, but it will be deprecated in the future.
     */
-  var AvailabilityZone: js.UndefOr[NameString] = js.native
+  var AvailabilityZone: js.UndefOr[NameString] = js.undefined
   
   /**
     * The security group ID list used by the connection.
     */
-  var SecurityGroupIdList: js.UndefOr[typings.awsSdk.glueMod.SecurityGroupIdList] = js.native
+  var SecurityGroupIdList: js.UndefOr[typings.awsSdk.glueMod.SecurityGroupIdList] = js.undefined
   
   /**
     * The subnet ID used by the connection.
     */
-  var SubnetId: js.UndefOr[NameString] = js.native
+  var SubnetId: js.UndefOr[NameString] = js.undefined
 }
 object PhysicalConnectionRequirements {
   

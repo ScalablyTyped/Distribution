@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FsGetFileInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var filePath: String = js.native
+  var filePath: String
   
   // 要读取的文件路径
   @JSName("success")
-  var success_FsGetFileInfoOptions: js.UndefOr[js.Function1[/* res */ Size, Unit]] = js.native
+  var success_FsGetFileInfoOptions: js.UndefOr[js.Function1[/* res */ Size, Unit]] = js.undefined
 }
 object FsGetFileInfoOptions {
   

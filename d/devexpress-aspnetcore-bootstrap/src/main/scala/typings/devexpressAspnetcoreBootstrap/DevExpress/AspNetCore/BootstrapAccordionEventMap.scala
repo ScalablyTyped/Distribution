@@ -2,25 +2,25 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapAccordionEventMap extends ControlEventMap {
+trait BootstrapAccordionEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var expandedChanged: AccordionGroupEventArgs = js.native
+  var expandedChanged: AccordionGroupEventArgs
   
-  var expandedChanging: AccordionGroupCancelEventArgs = js.native
+  var expandedChanging: AccordionGroupCancelEventArgs
   
-  var headerClick: AccordionGroupClickEventArgs = js.native
+  var headerClick: AccordionGroupClickEventArgs
   
-  var itemClick: AccordionItemEventArgs = js.native
+  var itemClick: AccordionItemEventArgs
 }
 object BootstrapAccordionEventMap {
   

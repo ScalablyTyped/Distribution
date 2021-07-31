@@ -2,35 +2,33 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch shipping settings response.
   */
-@js.native
 trait SchemaShippingsettingsCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry to which this entry responds.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if, and only if, the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#shippingsettingsCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The retrieved or updated account shipping settings.
     */
-  var shippingSettings: js.UndefOr[SchemaShippingSettings] = js.native
+  var shippingSettings: js.UndefOr[SchemaShippingSettings] = js.undefined
 }
 object SchemaShippingsettingsCustomBatchResponseEntry {
   

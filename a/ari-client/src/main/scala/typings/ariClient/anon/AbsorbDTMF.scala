@@ -2,21 +2,19 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbsorbDTMF extends StObject {
   
-  var absorbDTMF: js.UndefOr[Boolean] = js.native
+  var absorbDTMF: js.UndefOr[Boolean] = js.undefined
   
-  var bridgeId: String = js.native
+  var bridgeId: String
   
-  var channel: String | js.Array[String] = js.native
+  var channel: String | js.Array[String]
   
-  var mute: js.UndefOr[Boolean] = js.native
+  var mute: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object AbsorbDTMF {
   

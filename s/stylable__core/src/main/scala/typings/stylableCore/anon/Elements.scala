@@ -4,17 +4,15 @@ import typings.stylableCore.selectorUtilsMod.SelectorAstNode
 import typings.stylableCore.stylableTransformerMod.ResolvedElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Elements extends StObject {
   
-  var elements: js.Array[js.Array[ResolvedElement]] = js.native
+  var elements: js.Array[js.Array[ResolvedElement]]
   
-  var selector: String = js.native
+  var selector: String
   
-  var targetSelectorAst: SelectorAstNode = js.native
+  var targetSelectorAst: SelectorAstNode
 }
 object Elements {
   

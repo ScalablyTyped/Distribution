@@ -4,7 +4,6 @@ import typings.karmaViewport.anon.PartialViewportConfigurat
 import typings.karmaViewport.viewportMod.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,10 +26,9 @@ object mod {
     */
   object karmaAugmentingMod {
     
-    @js.native
     trait ConfigOptions extends StObject {
       
-      var viewport: js.UndefOr[PartialViewportConfigurat] = js.native
+      var viewport: js.UndefOr[PartialViewportConfigurat] = js.undefined
     }
     object ConfigOptions {
       

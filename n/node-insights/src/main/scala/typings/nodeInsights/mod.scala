@@ -3,14 +3,15 @@ package typings.nodeInsights
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-insights", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Insights {
+  class ^ protected ()
+    extends StObject
+       with Insights {
     /**
       * Insights
       */
@@ -43,24 +44,23 @@ object mod {
   
   type CallbackFunc = js.Function2[/* err */ js.UndefOr[Error | Null], /* responseBody */ String, Unit]
   
-  @js.native
   trait Config extends StObject {
     
-    var accountId: String = js.native
+    var accountId: String
     
-    var defaultEventType: js.UndefOr[String] = js.native
+    var defaultEventType: js.UndefOr[String] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var insertKey: String = js.native
+    var insertKey: String
     
-    var maxPending: js.UndefOr[Double] = js.native
+    var maxPending: js.UndefOr[Double] = js.undefined
     
-    var queryKey: String = js.native
+    var queryKey: String
     
-    var timerInterval: js.UndefOr[Double] = js.native
+    var timerInterval: js.UndefOr[Double] = js.undefined
   }
   object Config {
     

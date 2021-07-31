@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
@@ -18,7 +17,9 @@ object stackMod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class default[T] () extends Stack[T]
+  class default[T] ()
+    extends StObject
+       with Stack[T]
   
   @js.native
   trait Stack[T] extends StObject {

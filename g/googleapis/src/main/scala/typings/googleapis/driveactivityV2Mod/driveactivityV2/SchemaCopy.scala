@@ -2,19 +2,17 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object was created by copying an existing object.
   */
-@js.native
 trait SchemaCopy extends StObject {
   
   /**
     * The the original object.
     */
-  var originalObject: js.UndefOr[SchemaTargetReference] = js.native
+  var originalObject: js.UndefOr[SchemaTargetReference] = js.undefined
 }
 object SchemaCopy {
   

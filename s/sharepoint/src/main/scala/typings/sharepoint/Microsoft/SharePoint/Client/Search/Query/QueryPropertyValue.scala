@@ -5,31 +5,31 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryPropertyValue extends ClientValueObject {
+trait QueryPropertyValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_boolVal(): Boolean = js.native
+  def get_boolVal(): Boolean
   
-  def get_intVal(): Double = js.native
+  def get_intVal(): Double
   
-  def get_queryPropertyValueTypeIndex(): Double = js.native
+  def get_queryPropertyValueTypeIndex(): Double
   
-  def get_strArray(): js.Array[String] = js.native
+  def get_strArray(): js.Array[String]
   
-  def get_strVal(): String = js.native
+  def get_strVal(): String
   
-  def set_boolVal(value: Boolean): Boolean = js.native
+  def set_boolVal(value: Boolean): Boolean
   
-  def set_intVal(value: Double): Double = js.native
+  def set_intVal(value: Double): Double
   
-  def set_queryPropertyValueTypeIndex(value: Double): Unit = js.native
+  def set_queryPropertyValueTypeIndex(value: Double): Unit
   
-  def set_strArray(value: js.Array[String]): js.Array[String] = js.native
+  def set_strArray(value: js.Array[String]): js.Array[String]
   
-  def set_strVal(value: String): String = js.native
+  def set_strVal(value: String): String
 }
 object QueryPropertyValue {
   

@@ -2,35 +2,35 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdTokenClaims extends UserinfoResponse {
+trait IdTokenClaims
+  extends StObject
+     with UserinfoResponse {
   
-  var acr: js.UndefOr[String] = js.native
+  var acr: js.UndefOr[String] = js.undefined
   
-  var amr: js.UndefOr[js.Array[String]] = js.native
+  var amr: js.UndefOr[js.Array[String]] = js.undefined
   
-  var at_hash: js.UndefOr[String] = js.native
+  var at_hash: js.UndefOr[String] = js.undefined
   
-  var aud: String | js.Array[String] = js.native
+  var aud: String | js.Array[String]
   
-  var auth_time: js.UndefOr[Double] = js.native
+  var auth_time: js.UndefOr[Double] = js.undefined
   
-  var azp: js.UndefOr[String] = js.native
+  var azp: js.UndefOr[String] = js.undefined
   
-  var c_hash: js.UndefOr[String] = js.native
+  var c_hash: js.UndefOr[String] = js.undefined
   
-  var exp: Double = js.native
+  var exp: Double
   
-  var iat: Double = js.native
+  var iat: Double
   
-  var iss: String = js.native
+  var iss: String
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var s_hash: js.UndefOr[String] = js.native
+  var s_hash: js.UndefOr[String] = js.undefined
 }
 object IdTokenClaims {
   

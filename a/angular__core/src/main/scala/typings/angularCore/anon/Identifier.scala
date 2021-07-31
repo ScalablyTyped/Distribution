@@ -3,15 +3,13 @@ package typings.angularCore.anon
 import typings.typescript.mod.ClassDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identifier extends StObject {
   
-  var identifier: typings.typescript.mod.Identifier = js.native
+  var identifier: typings.typescript.mod.Identifier
   
-  var node: ClassDeclaration = js.native
+  var node: ClassDeclaration
 }
 object Identifier {
   

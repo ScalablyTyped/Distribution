@@ -2,56 +2,54 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The given name of the user.
     */
-  var GivenName: js.UndefOr[UserAttributeValueType] = js.native
+  var GivenName: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * Boolean value to determine whether the user is granted Poweruser privileges.
     */
-  var GrantPoweruserPrivileges: js.UndefOr[BooleanEnumType] = js.native
+  var GrantPoweruserPrivileges: js.UndefOr[BooleanEnumType] = js.undefined
   
   /**
     * The locale of the user.
     */
-  var Locale: js.UndefOr[LocaleType] = js.native
+  var Locale: js.UndefOr[LocaleType] = js.undefined
   
   /**
     * The amount of storage for the user.
     */
-  var StorageRule: js.UndefOr[StorageRuleType] = js.native
+  var StorageRule: js.UndefOr[StorageRuleType] = js.undefined
   
   /**
     * The surname of the user.
     */
-  var Surname: js.UndefOr[UserAttributeValueType] = js.native
+  var Surname: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * The time zone ID of the user.
     */
-  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.native
+  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.undefined
   
   /**
     * The type of the user.
     */
-  var Type: js.UndefOr[UserType] = js.native
+  var Type: js.UndefOr[UserType] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var UserId: IdType = js.native
+  var UserId: IdType
 }
 object UpdateUserRequest {
   

@@ -3,7 +3,6 @@ package typings.schemaRegistry
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,11 +17,11 @@ object mod {
     
     def fromBuffer(buffer: Buffer): js.Any = js.native
     
-    def on(args: js.Any*): js.UndefOr[scala.Nothing] = js.native
+    def on(args: js.Any*): Unit = js.native
     
-    def removeListener(args: js.Any*): js.UndefOr[scala.Nothing] = js.native
+    def removeListener(args: js.Any*): Unit = js.native
     
-    def stop(): js.UndefOr[scala.Nothing] = js.native
+    def stop(): Unit = js.native
     
     def toBuffer(`object`: js.Object): Buffer = js.native
   }
@@ -69,16 +68,15 @@ object mod {
     var `type`: String = js.native
   }
   
-  @js.native
   trait AvroSchemaResponseInterface extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var schema: js.Any = js.native
+    var schema: js.Any
     
-    var subject: String = js.native
+    var subject: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object AvroSchemaResponseInterface {
     
@@ -105,18 +103,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RegistryClientConfig extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var logger: js.UndefOr[js.Object] = js.native
+    var logger: js.UndefOr[js.Object] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RegistryClientConfig {
     

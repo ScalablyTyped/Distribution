@@ -11,8 +11,8 @@ fs-extra contains methods that aren't included in the vanilla Node.js fs package
 | Full name          | fs-extra |
 | Keywords           | fs, file, file system, copy, directory, extra, mkdirp, mkdir, mkdirs, recursive, json, read, write, extra, delete, remove, touch, create, text, output, move, promise |
 | # releases         | 7 |
-| # dependents       | 30948 |
-| # downloads        | 1248255686 |
+| # dependents       | 32931 |
+| # downloads        | 1497605822 |
 | # stars            | 425 |
 
 ## Links

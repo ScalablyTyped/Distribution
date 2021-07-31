@@ -3,11 +3,11 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintCustomItemListOptionDetails extends IPrintCustomItemListOptionDetails
+trait PrintCustomItemListOptionDetails
+  extends StObject
+     with IPrintCustomItemListOptionDetails
 object PrintCustomItemListOptionDetails {
   
   @scala.inline
@@ -15,7 +15,7 @@ object PrintCustomItemListOptionDetails {
     addItem: (String, String) => Unit,
     displayName: String,
     errorText: String,
-    items: IVectorView[_],
+    items: IVectorView[js.Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,

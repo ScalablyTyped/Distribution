@@ -2,34 +2,32 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for Identitytoolkit-SendVerificationCode
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartySendVerificationCodeRequest extends StObject {
   
   /**
     * Receipt of successful app token validation with APNS.
     */
-  var iosReceipt: js.UndefOr[String] = js.native
+  var iosReceipt: js.UndefOr[String] = js.undefined
   
   /**
     * Secret delivered to iOS app via APNS.
     */
-  var iosSecret: js.UndefOr[String] = js.native
+  var iosSecret: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number to send the verification code to in E.164 format.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Recaptcha solution.
     */
-  var recaptchaToken: js.UndefOr[String] = js.native
+  var recaptchaToken: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartySendVerificationCodeRequest {
   

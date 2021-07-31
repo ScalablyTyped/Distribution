@@ -2,26 +2,24 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Note holding the version of the provider&#39;s builder and the signature of
   * the provenance message in linked BuildDetails.
   */
-@js.native
 trait SchemaBuildType extends StObject {
   
   /**
     * Version of the builder which produced this Note.
     */
-  var builderVersion: js.UndefOr[String] = js.native
+  var builderVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Signature of the build in Occurrences pointing to the Note containing
     * this `BuilderDetails`.
     */
-  var signature: js.UndefOr[SchemaBuildSignature] = js.native
+  var signature: js.UndefOr[SchemaBuildSignature] = js.undefined
 }
 object SchemaBuildType {
   

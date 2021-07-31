@@ -7,6 +7,7 @@ import typings.mocha.Mocha.HookFunction
 import typings.mocha.Mocha.MochaOptions
 import typings.mocha.Mocha.PendingTestFunction
 import typings.mocha.Mocha.RunnerConstants
+import typings.mocha.Mocha.Stats
 import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
 import typings.mocha.Mocha.SuiteFunction
@@ -15,14 +16,16 @@ import typings.mocha.Mocha.TestFunction
 import typings.mocha.Mocha.reporters.Base_.ColorMap
 import typings.mocha.Mocha.reporters.Base_.SymbolMap
 import typings.std.Error
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Mocha")
 @js.native
-class Mocha_ () extends Mocha {
+class Mocha_ ()
+  extends StObject
+     with Mocha {
   def this(options: MochaOptions) = this()
 }
 object Mocha_ {
@@ -40,7 +43,8 @@ object Mocha_ {
   @JSGlobal("Mocha.Context")
   @js.native
   class Context ()
-    extends typings.mocha.Mocha.Context
+    extends StObject
+       with typings.mocha.Mocha.Context
   
   // #endregion Runner untyped events
   /**
@@ -51,7 +55,8 @@ object Mocha_ {
   @JSGlobal("Mocha.Hook")
   @js.native
   class Hook ()
-    extends typings.mocha.Mocha.Hook
+    extends StObject
+       with typings.mocha.Mocha.Hook
   
   // #endregion Runnable "error" event
   // #region Runnable untyped events
@@ -64,7 +69,8 @@ object Mocha_ {
   @JSGlobal("Mocha.Runnable")
   @js.native
   class Runnable protected ()
-    extends typings.mocha.Mocha.Runnable {
+    extends StObject
+       with typings.mocha.Mocha.Runnable {
     def this(title: String) = this()
     def this(title: String, fn: AsyncFunc) = this()
     def this(title: String, fn: Func) = this()
@@ -103,10 +109,15 @@ object Mocha_ {
   @JSGlobal("Mocha.Runner")
   @js.native
   class Runner protected ()
-    extends typings.mocha.Mocha.Runner {
+    extends StObject
+       with typings.mocha.Mocha.Runner {
     def this(suite: Suite, delay: Boolean) = this()
   }
   object Runner {
+    
+    @JSGlobal("Mocha.Runner")
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     @JSGlobal("Mocha.Runner.constants")
@@ -117,9 +128,8 @@ object Mocha_ {
       * Wrapper for setImmediate, process.nextTick, or browser polyfill.
       */
     /* static member */
-    @JSGlobal("Mocha.Runner.immediately")
-    @js.native
-    def immediately(callback: js.Function): Unit = js.native
+    @scala.inline
+    def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   // #endregion Suite "post-require" event
@@ -150,11 +160,17 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Suite")
   @js.native
-  class Suite_ protected () extends Suite {
+  class Suite_ protected ()
+    extends StObject
+       with Suite {
     def this(title: String) = this()
     def this(title: String, parentContext: typings.mocha.Mocha.Context) = this()
   }
   object Suite_ {
+    
+    @JSGlobal("Mocha.Suite")
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     @JSGlobal("Mocha.Suite.constants")
@@ -169,9 +185,8 @@ object Mocha_ {
       * @see https://mochajs.org/api/mocha#.exports.create
       */
     /* static member */
-    @JSGlobal("Mocha.Suite.create")
-    @js.native
-    def create(parent: Suite, title: String): Suite = js.native
+    @scala.inline
+    def create(parent: Suite, title: String): Suite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Suite]
   }
   
   /**
@@ -181,7 +196,9 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Test")
   @js.native
-  class Test_ () extends Test
+  class Test_ ()
+    extends StObject
+       with Test
   
   /**
     * Execute after running tests.
@@ -250,21 +267,21 @@ object Mocha_ {
   
   object interfaces {
     
-    @JSGlobal("Mocha.interfaces.bdd")
+    @JSGlobal("Mocha.interfaces")
     @js.native
-    def bdd(suite: Suite): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Mocha.interfaces.exports")
-    @js.native
-    def exports(suite: Suite): Unit = js.native
+    @scala.inline
+    def bdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Mocha.interfaces.qunit")
-    @js.native
-    def qunit(suite: Suite): Unit = js.native
+    @scala.inline
+    def exports(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exports")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Mocha.interfaces.tdd")
-    @js.native
-    def tdd(suite: Suite): Unit = js.native
+    @scala.inline
+    def qunit(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("qunit")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def tdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -292,9 +309,36 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Base")
     @js.native
     class Base_ protected ()
-      extends typings.mocha.Mocha.reporters.Base_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: MochaOptions) = this()
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
     }
     object Base_ {
       
@@ -307,9 +351,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.color
         */
-      @JSGlobal("Mocha.reporters.Base.color")
-      @js.native
-      def color(`type`: String, str: String): String = js.native
+      @scala.inline
+      def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Default color map
@@ -327,40 +370,39 @@ object Mocha_ {
         */
       object cursor {
         
+        @JSGlobal("Mocha.reporters.Base.cursor")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Clears the line and moves to the beginning of the line.
           */
-        @JSGlobal("Mocha.reporters.Base.cursor.CR")
-        @js.native
-        def CR(): Unit = js.native
+        @scala.inline
+        def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
         
         /**
           * Moves to the beginning of the line
           */
-        @JSGlobal("Mocha.reporters.Base.cursor.beginningOfLine")
-        @js.native
-        def beginningOfLine(): Unit = js.native
+        @scala.inline
+        def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
         
         /**
           * Deletes the current line
           */
-        @JSGlobal("Mocha.reporters.Base.cursor.deleteLine")
-        @js.native
-        def deleteLine(): Unit = js.native
+        @scala.inline
+        def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
         
         /**
           * Hides the cursor
           */
-        @JSGlobal("Mocha.reporters.Base.cursor.hide")
-        @js.native
-        def hide(): Unit = js.native
+        @scala.inline
+        def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
         
         /**
           * Shows the cursor
           */
-        @JSGlobal("Mocha.reporters.Base.cursor.show")
-        @js.native
-        def show(): Unit = js.native
+        @scala.inline
+        def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
       }
       
       /**
@@ -368,9 +410,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.generateDiff
         */
-      @JSGlobal("Mocha.reporters.Base.generateDiff")
-      @js.native
-      def generateDiff(actual: String, expected: String): String = js.native
+      @scala.inline
+      def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Inline diffs instead of +/-
@@ -388,9 +429,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
         */
-      @JSGlobal("Mocha.reporters.Base.list")
-      @js.native
-      def list(failures: js.Array[Test]): Unit = js.native
+      @scala.inline
+      def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Default symbol map
@@ -439,7 +479,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Doc")
     @js.native
     class Doc_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Dot` matrix test reporter.
@@ -449,7 +517,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Dot")
     @js.native
     class Dot_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `HTML` reporter.
@@ -461,7 +557,59 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.HTML")
     @js.native
     class HTML_ ()
-      extends typings.mocha.Mocha.reporters.HTML_
+      extends StObject
+         with typings.mocha.Mocha.reporters.HTML_ {
+      
+      /**
+        * Adds code toggle functionality for the provided test's list element.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#addCodeToggle
+        */
+      /* CompleteClass */
+      override def addCodeToggle(el: HTMLLIElement, contents: String): Unit = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /**
+        * Provide suite URL.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#suiteURL
+        */
+      /* CompleteClass */
+      override def suiteURL(suite: Suite): String = js.native
+      
+      /**
+        * Provide test URL.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#testURL
+        */
+      /* CompleteClass */
+      override def testURL(test: Test): String = js.native
+    }
     
     /**
       * Initialize a new `JSONStream` test reporter.
@@ -471,7 +619,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.JSONStream")
     @js.native
     class JSONStream ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `JSON` reporter
@@ -481,7 +657,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.JSON")
     @js.native
     class JSON_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Landing` reporter.
@@ -491,7 +695,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Landing")
     @js.native
     class Landing_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `List` test reporter.
@@ -501,7 +733,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.List")
     @js.native
     class List_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Markdown` test reporter.
@@ -511,7 +771,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Markdown")
     @js.native
     class Markdown_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Min` minimal test reporter (best used with --watch).
@@ -521,7 +809,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Min")
     @js.native
     class Min ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `NyanCat` test reporter.
@@ -531,7 +847,86 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Nyan")
     @js.native
     class Nyan_ ()
-      extends typings.mocha.Mocha.reporters.Nyan_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Nyan_ {
+      
+      /* CompleteClass */
+      var appendRainbow: js.Any = js.native
+      
+      /* CompleteClass */
+      var colorIndex: js.Any = js.native
+      
+      /* CompleteClass */
+      var cursorDown: js.Any = js.native
+      
+      /* CompleteClass */
+      var cursorUp: js.Any = js.native
+      
+      /* CompleteClass */
+      var draw: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawNyanCat: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawRainbow: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawScoreboard: js.Any = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /* CompleteClass */
+      var face: js.Any = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /* CompleteClass */
+      var generateColors: js.Any = js.native
+      
+      /* CompleteClass */
+      var numberOfLines: js.Any = js.native
+      
+      /* CompleteClass */
+      var rainbowColors: js.Any = js.native
+      
+      /* CompleteClass */
+      var rainbowify: js.Any = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /* CompleteClass */
+      var scoreboardWidth: js.Any = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /* CompleteClass */
+      var tick: js.Any = js.native
+      
+      /* CompleteClass */
+      var trajectories: js.Any = js.native
+      
+      /* CompleteClass */
+      var trajectoryWidthMax: js.Any = js.native
+    }
     
     /**
       * Initialize a new `Progress` bar test reporter.
@@ -541,9 +936,36 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Progress")
     @js.native
     class Progress_ protected ()
-      extends typings.mocha.Mocha.reporters.Base_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: typings.mocha.Mocha.reporters.Progress_.MochaOptions) = this()
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
     }
     
     /**
@@ -554,7 +976,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.Spec")
     @js.native
     class Spec_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `TAP` test reporter.
@@ -564,7 +1014,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.TAP")
     @js.native
     class TAP_ ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `XUnit` test reporter.
@@ -574,9 +1052,61 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.XUnit")
     @js.native
     class XUnit_ protected ()
-      extends typings.mocha.Mocha.reporters.XUnit_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.XUnit_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: typings.mocha.Mocha.reporters.XUnit_.MochaOptions) = this()
+      
+      /**
+        * Override done to close the stream (if it's a file).
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#done
+        */
+      /* CompleteClass */
+      @JSName("done")
+      override def done_MXUnit_(failures: Double, fn: js.Function1[/* failures */ Double, Unit]): Unit = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /**
+        * Output tag for the given `test.`
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#test
+        */
+      /* CompleteClass */
+      override def test(test: Test): Unit = js.native
+      
+      /**
+        * Write out the given line.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#write
+        */
+      /* CompleteClass */
+      override def write(line: String): Unit = js.native
     }
     
     /**
@@ -591,9 +1121,36 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.base")
     @js.native
     class base protected ()
-      extends typings.mocha.Mocha.reporters.Base_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: MochaOptions) = this()
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
     }
     /* was `typeof Base` */
     object base {
@@ -607,9 +1164,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.color
         */
-      @JSGlobal("Mocha.reporters.base.color")
-      @js.native
-      def color(`type`: String, str: String): String = js.native
+      @scala.inline
+      def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Default color map
@@ -627,40 +1183,39 @@ object Mocha_ {
         */
       object cursor {
         
+        @JSGlobal("Mocha.reporters.base.cursor")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Clears the line and moves to the beginning of the line.
           */
-        @JSGlobal("Mocha.reporters.base.cursor.CR")
-        @js.native
-        def CR(): Unit = js.native
+        @scala.inline
+        def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
         
         /**
           * Moves to the beginning of the line
           */
-        @JSGlobal("Mocha.reporters.base.cursor.beginningOfLine")
-        @js.native
-        def beginningOfLine(): Unit = js.native
+        @scala.inline
+        def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
         
         /**
           * Deletes the current line
           */
-        @JSGlobal("Mocha.reporters.base.cursor.deleteLine")
-        @js.native
-        def deleteLine(): Unit = js.native
+        @scala.inline
+        def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
         
         /**
           * Hides the cursor
           */
-        @JSGlobal("Mocha.reporters.base.cursor.hide")
-        @js.native
-        def hide(): Unit = js.native
+        @scala.inline
+        def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
         
         /**
           * Shows the cursor
           */
-        @JSGlobal("Mocha.reporters.base.cursor.show")
-        @js.native
-        def show(): Unit = js.native
+        @scala.inline
+        def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
       }
       
       /**
@@ -668,9 +1223,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.generateDiff
         */
-      @JSGlobal("Mocha.reporters.base.generateDiff")
-      @js.native
-      def generateDiff(actual: String, expected: String): String = js.native
+      @scala.inline
+      def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Inline diffs instead of +/-
@@ -688,9 +1242,8 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
         */
-      @JSGlobal("Mocha.reporters.base.list")
-      @js.native
-      def list(failures: js.Array[Test]): Unit = js.native
+      @scala.inline
+      def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Default symbol map
@@ -740,7 +1293,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.doc")
     @js.native
     class doc ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Dot` matrix test reporter.
@@ -751,7 +1332,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.dot")
     @js.native
     class dot ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `HTML` reporter.
@@ -764,7 +1373,59 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.html")
     @js.native
     class html ()
-      extends typings.mocha.Mocha.reporters.HTML_
+      extends StObject
+         with typings.mocha.Mocha.reporters.HTML_ {
+      
+      /**
+        * Adds code toggle functionality for the provided test's list element.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#addCodeToggle
+        */
+      /* CompleteClass */
+      override def addCodeToggle(el: HTMLLIElement, contents: String): Unit = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /**
+        * Provide suite URL.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#suiteURL
+        */
+      /* CompleteClass */
+      override def suiteURL(suite: Suite): String = js.native
+      
+      /**
+        * Provide test URL.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.HTML.html#testURL
+        */
+      /* CompleteClass */
+      override def testURL(test: Test): String = js.native
+    }
     
     /**
       * Initialize a new `JSON` reporter
@@ -775,7 +1436,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.json")
     @js.native
     class json ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Landing` reporter.
@@ -786,7 +1475,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.landing")
     @js.native
     class landing ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `List` test reporter.
@@ -797,7 +1514,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.list")
     @js.native
     class list ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `Markdown` test reporter.
@@ -808,7 +1553,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.markdown")
     @js.native
     class markdown ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `NyanCat` test reporter.
@@ -819,7 +1592,86 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.nyan")
     @js.native
     class nyan ()
-      extends typings.mocha.Mocha.reporters.Nyan_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Nyan_ {
+      
+      /* CompleteClass */
+      var appendRainbow: js.Any = js.native
+      
+      /* CompleteClass */
+      var colorIndex: js.Any = js.native
+      
+      /* CompleteClass */
+      var cursorDown: js.Any = js.native
+      
+      /* CompleteClass */
+      var cursorUp: js.Any = js.native
+      
+      /* CompleteClass */
+      var draw: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawNyanCat: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawRainbow: js.Any = js.native
+      
+      /* CompleteClass */
+      var drawScoreboard: js.Any = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /* CompleteClass */
+      var face: js.Any = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /* CompleteClass */
+      var generateColors: js.Any = js.native
+      
+      /* CompleteClass */
+      var numberOfLines: js.Any = js.native
+      
+      /* CompleteClass */
+      var rainbowColors: js.Any = js.native
+      
+      /* CompleteClass */
+      var rainbowify: js.Any = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /* CompleteClass */
+      var scoreboardWidth: js.Any = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /* CompleteClass */
+      var tick: js.Any = js.native
+      
+      /* CompleteClass */
+      var trajectories: js.Any = js.native
+      
+      /* CompleteClass */
+      var trajectoryWidthMax: js.Any = js.native
+    }
     
     /**
       * Initialize a new `Progress` bar test reporter.
@@ -830,9 +1682,36 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.progress")
     @js.native
     class progress protected ()
-      extends typings.mocha.Mocha.reporters.Base_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: typings.mocha.Mocha.reporters.Progress_.MochaOptions) = this()
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
     }
     /* was `typeof Progress` */
     object progress
@@ -846,7 +1725,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.spec")
     @js.native
     class spec ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `TAP` test reporter.
@@ -857,7 +1764,35 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.tap")
     @js.native
     class tap ()
-      extends typings.mocha.Mocha.reporters.Base_
+      extends StObject
+         with typings.mocha.Mocha.reporters.Base_ {
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+    }
     
     /**
       * Initialize a new `XUnit` test reporter.
@@ -868,9 +1803,61 @@ object Mocha_ {
     @JSGlobal("Mocha.reporters.xunit")
     @js.native
     class xunit protected ()
-      extends typings.mocha.Mocha.reporters.XUnit_ {
+      extends StObject
+         with typings.mocha.Mocha.reporters.XUnit_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
       def this(runner: typings.mocha.Mocha.Runner, options: typings.mocha.Mocha.reporters.XUnit_.MochaOptions) = this()
+      
+      /**
+        * Override done to close the stream (if it's a file).
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#done
+        */
+      /* CompleteClass */
+      @JSName("done")
+      override def done_MXUnit_(failures: Double, fn: js.Function1[/* failures */ Double, Unit]): Unit = js.native
+      
+      /**
+        * Output common epilogue used by many of the bundled reporters.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
+        */
+      /* CompleteClass */
+      override def epilogue(): Unit = js.native
+      
+      /**
+        * Test failures
+        */
+      /* CompleteClass */
+      var failures: js.Array[Test] = js.native
+      
+      /**
+        * The configured runner
+        */
+      /* CompleteClass */
+      var runner: typings.mocha.Mocha.Runner = js.native
+      
+      /**
+        * Test run statistics
+        */
+      /* CompleteClass */
+      var stats: Stats = js.native
+      
+      /**
+        * Output tag for the given `test.`
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#test
+        */
+      /* CompleteClass */
+      override def test(test: Test): Unit = js.native
+      
+      /**
+        * Write out the given line.
+        *
+        * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#write
+        */
+      /* CompleteClass */
+      override def write(line: String): Unit = js.native
     }
     /* was `typeof XUnit` */
     object xunit
@@ -884,9 +1871,8 @@ object Mocha_ {
     *
     * @see https://mochajs.org/api/global.html#runWithSuite
     */
-  @JSGlobal("Mocha.run")
-  @js.native
-  def run(): Unit = js.native
+  @scala.inline
+  def run(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")().asInstanceOf[Unit]
   
   /**
     * Execute before each test case.
@@ -965,6 +1951,10 @@ object Mocha_ {
   
   object utils {
     
+    @JSGlobal("Mocha.utils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Return a new Thing that has the keys in sorted order. Recursive.
       *
@@ -979,64 +1969,54 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.canonicalize
       */
-    @JSGlobal("Mocha.utils.canonicalize")
-    @js.native
-    def canonicalize(value: js.Any, stack: js.Array[_], typeHint: String): js.Any = js.native
+    @scala.inline
+    def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Strip the function definition from `str`, and re-indent for pre whitespace.
       *
       * @see https://mochajs.org/api/module-utils.html#.clean
       */
-    @JSGlobal("Mocha.utils.clean")
-    @js.native
-    def clean(str: String): String = js.native
+    @scala.inline
+    def clean(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Generate an undefined error if `err` is not defined.
       *
       * @see https://mochajs.org/api/module-utils.html#.getError
       */
-    @JSGlobal("Mocha.utils.getError")
-    @js.native
-    def getError(): Error = js.native
-    @JSGlobal("Mocha.utils.getError")
-    @js.native
-    def getError(err: Error): Error = js.native
+    @scala.inline
+    def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
+    @scala.inline
+    def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
     
     /**
       * Highlight the given string of `js`.
       */
-    @JSGlobal("Mocha.utils.highlight")
-    @js.native
-    def highlight(js_ : String): String = js.native
+    @scala.inline
+    def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Lookup file names at the given `path`.
       *
       * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
       */
-    @JSGlobal("Mocha.utils.lookupFiles")
-    @js.native
-    def lookupFiles(filepath: String): js.Array[String] = js.native
-    @JSGlobal("Mocha.utils.lookupFiles")
-    @js.native
-    def lookupFiles(filepath: String, extensions: js.UndefOr[scala.Nothing], recursive: Boolean): js.Array[String] = js.native
-    @JSGlobal("Mocha.utils.lookupFiles")
-    @js.native
-    def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = js.native
-    @JSGlobal("Mocha.utils.lookupFiles")
-    @js.native
-    def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = js.native
+    @scala.inline
+    def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Compute a slug from the given `str`.
       *
       * @see https://mochajs.org/api/module-utils.html#.slug
       */
-    @JSGlobal("Mocha.utils.slug")
-    @js.native
-    def slug(str: String): String = js.native
+    @scala.inline
+    def slug(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * When invoking this function you get a filter function that get the Error.stack as an
@@ -1045,9 +2025,8 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.stackTraceFilter
       */
-    @JSGlobal("Mocha.utils.stackTraceFilter")
-    @js.native
-    def stackTraceFilter(): js.Function1[/* stack */ String, String] = js.native
+    @scala.inline
+    def stackTraceFilter(): js.Function1[/* stack */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTraceFilter")().asInstanceOf[js.Function1[/* stack */ String, String]]
     
     /**
       * Stringify `value`. Different behavior depending on type of value:
@@ -1059,25 +2038,22 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.stringify
       */
-    @JSGlobal("Mocha.utils.stringify")
-    @js.native
-    def stringify(value: js.Any): String = js.native
+    @scala.inline
+    def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
+      * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
+      */
+    @scala.inline
+    def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Generate an undefined error with a message warning the user.
       *
       * @see https://mochajs.org/api/module-utils.html#.undefinedError
       */
-    @JSGlobal("Mocha.utils.undefinedError")
-    @js.native
-    def undefinedError(): Error = js.native
-    
-    /**
-      * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
-      */
-    @JSGlobal("Mocha.utils.type")
-    @js.native
-    def `type`(value: js.Any): String = js.native
+    @scala.inline
+    def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
   }
   
   /**

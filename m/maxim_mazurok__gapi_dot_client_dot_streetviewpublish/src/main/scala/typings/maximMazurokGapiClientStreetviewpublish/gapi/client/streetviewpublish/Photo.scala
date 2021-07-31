@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Photo extends StObject {
   
   /** Absolute time when the photo was captured. When the photo has no exif timestamp, this is used to set a timestamp in the photo metadata. */
-  var captureTime: js.UndefOr[String] = js.native
+  var captureTime: js.UndefOr[String] = js.undefined
   
   /** Connections to other photos. A connection represents the link from this photo to another photo. */
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
   /** Output only. The download URL for the photo bytes. This field is set only when GetPhotoRequest.view is set to PhotoView.INCLUDE_DOWNLOAD_URL. */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. Status in Google Maps, whether this photo was published or rejected. Not currently populated. */
-  var mapsPublishStatus: js.UndefOr[String] = js.native
+  var mapsPublishStatus: js.UndefOr[String] = js.undefined
   
   /** Required when updating a photo. Output only when creating a photo. Identifier for the photo, which is unique among all photos in Google. */
-  var photoId: js.UndefOr[PhotoId] = js.native
+  var photoId: js.UndefOr[PhotoId] = js.undefined
   
   /** Places where this photo belongs. */
-  var places: js.UndefOr[js.Array[Place]] = js.native
+  var places: js.UndefOr[js.Array[Place]] = js.undefined
   
   /** Pose of the photo. */
-  var pose: js.UndefOr[Pose] = js.native
+  var pose: js.UndefOr[Pose] = js.undefined
   
   /** Output only. The share link for the photo. */
-  var shareLink: js.UndefOr[String] = js.native
+  var shareLink: js.UndefOr[String] = js.undefined
   
   /** Output only. The thumbnail URL for showing a preview of the given photo. */
-  var thumbnailUrl: js.UndefOr[String] = js.native
+  var thumbnailUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. Status of rights transfer on this photo. */
-  var transferStatus: js.UndefOr[String] = js.native
+  var transferStatus: js.UndefOr[String] = js.undefined
   
   /** Required when creating a photo. Input only. The resource URL where the photo bytes are uploaded to. */
-  var uploadReference: js.UndefOr[UploadRef] = js.native
+  var uploadReference: js.UndefOr[UploadRef] = js.undefined
   
   /** Output only. View count of the photo. */
-  var viewCount: js.UndefOr[String] = js.native
+  var viewCount: js.UndefOr[String] = js.undefined
 }
 object Photo {
   

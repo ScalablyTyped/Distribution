@@ -2,23 +2,21 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMerchantOrderReturnItem extends StObject {
   
-  var customerReturnReason: js.UndefOr[SchemaCustomerReturnReason] = js.native
+  var customerReturnReason: js.UndefOr[SchemaCustomerReturnReason] = js.undefined
   
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
-  var merchantReturnReason: js.UndefOr[SchemaRefundReason] = js.native
+  var merchantReturnReason: js.UndefOr[SchemaRefundReason] = js.undefined
   
-  var product: js.UndefOr[SchemaOrderLineItemProduct] = js.native
+  var product: js.UndefOr[SchemaOrderLineItemProduct] = js.undefined
   
-  var returnShipmentIds: js.UndefOr[js.Array[String]] = js.native
+  var returnShipmentIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaMerchantOrderReturnItem {
   

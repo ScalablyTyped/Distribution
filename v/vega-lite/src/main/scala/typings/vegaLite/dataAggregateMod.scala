@@ -8,7 +8,6 @@ import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.transformMod.AggregateTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataAggregateMod {
@@ -37,13 +36,15 @@ object dataAggregateMod {
   /* static members */
   object AggregateNode {
     
-    @JSImport("vega-lite/build/src/compile/data/aggregate", "AggregateNode.makeFromEncoding")
+    @JSImport("vega-lite/build/src/compile/data/aggregate", "AggregateNode")
     @js.native
-    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): AggregateNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("vega-lite/build/src/compile/data/aggregate", "AggregateNode.makeFromTransform")
-    @js.native
-    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.AggregateTransform): AggregateNode = js.native
+    @scala.inline
+    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
+    
+    @scala.inline
+    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.AggregateTransform): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
   }
   
   type Measures = Dict[PartialRecordAggregateOpS]

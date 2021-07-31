@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the object is already initialized the mentioned methods should throw {@link DoubleInitializationException} .
   * @since OOo 1.1.2
   */
-@js.native
-trait XLoadable extends XInterface {
+trait XLoadable
+  extends StObject
+     with XInterface {
   
   /** creates a component from scratch */
-  def initNew(): Unit = js.native
+  def initNew(): Unit
   
   /**
     * loads a component from an URL
     * @param lArguments parameters for saving (see {@link com.sun.star.document.MediaDescriptor} for further details) the FileName parameter must be specified
     */
-  def load(lArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def load(lArguments: SeqEquiv[PropertyValue]): Unit
 }
 object XLoadable {
   

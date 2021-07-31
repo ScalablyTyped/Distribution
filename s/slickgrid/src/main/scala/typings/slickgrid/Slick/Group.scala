@@ -2,25 +2,25 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Group[T /* <: SlickData */] extends NonDataRow {
+trait Group[T /* <: SlickData */]
+  extends StObject
+     with NonDataRow {
   
   /***
     * Whether a group is collapsed.
     * @property collapsed
     * @type {Boolean}
     */
-  var collapsed: Boolean = js.native
+  var collapsed: Boolean
   
   /***
     * Number of rows in the group.
     * @property count
     * @type {Integer}
     */
-  var count: Double = js.native
+  var count: Double
   
   /***
     * Compares two Group instances.
@@ -29,7 +29,7 @@ trait Group[T /* <: SlickData */] extends NonDataRow {
     * @param group {Group} Group instance to compare to.
     * todo: this is on the prototype (NonDataRow()) instance, not Group, maybe doesn't matter?
     */
-  def equals(group: Group[T]): Boolean = js.native
+  def equals(group: Group[T]): Boolean
   
   /**
     * A unique key used to identify the group.  This key can be used in calls to DataView
@@ -37,49 +37,49 @@ trait Group[T /* <: SlickData */] extends NonDataRow {
     * @property groupingKey
     * @type {Object}
     */
-  var groupingKey: js.Any = js.native
+  var groupingKey: js.Any
   
   /**
     * Sub-groups that are part of the group.
     * @property groups
     * @type {Array}
     */
-  var groups: js.Array[Group[T]] = js.native
+  var groups: js.Array[Group[T]]
   
   /**
     * Grouping level, starting with 0.
     * @property level
     * @type {Number}
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * Rows that are part of the group.
     * @property rows
     * @type {Array}
     */
-  var rows: js.Array[T] = js.native
+  var rows: js.Array[T]
   
   /***
     * Formatted display value of the group.
     * @property title
     * @type {String}
     */
-  var title: String = js.native
+  var title: String
   
   /***
     * GroupTotals, if any.
     * @property totals
     * @type {GroupTotals}
     */
-  var totals: GroupTotals[T] = js.native
+  var totals: GroupTotals[T]
   
   /***
     * Grouping value.
     * @property value
     * @type {Object}
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Group {
   
@@ -102,7 +102,7 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group[_], T /* <: SlickData */] (val x: Self with Group[T]) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group[?], T /* <: SlickData */] (val x: Self & Group[T]) extends AnyVal {
     
     @scala.inline
     def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])

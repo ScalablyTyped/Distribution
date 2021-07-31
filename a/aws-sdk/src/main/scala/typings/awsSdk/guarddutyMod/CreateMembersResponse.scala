@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMembersResponse extends StObject {
   
   /**
     * A list of objects that include the accountIds of the unprocessed accounts and a result string that explains why each was unprocessed.
     */
-  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
+  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts
 }
 object CreateMembersResponse {
   

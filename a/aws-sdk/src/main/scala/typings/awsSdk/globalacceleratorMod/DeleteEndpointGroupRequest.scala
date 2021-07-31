@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEndpointGroupRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint group to delete.
     */
-  var EndpointGroupArn: GenericString = js.native
+  var EndpointGroupArn: GenericString
 }
 object DeleteEndpointGroupRequest {
   

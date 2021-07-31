@@ -4,33 +4,31 @@ import typings.tablesorter.sortDefinitionOrderMod.SortDefinitionOrder
 import typings.tablesorter.sortInitiatorMod.SortInitiator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableSortingMod {
   
-  @js.native
   trait TableSorting extends StObject {
     
     /**
       * The number of times the sorting has been applied.
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * A value indicating whether the order is locked.
       */
-    var lockedOrder: Boolean = js.native
+    var lockedOrder: Boolean
     
     /**
       * The order to apply the sorting.
       */
-    var order: js.Array[SortDefinitionOrder] = js.native
+    var order: js.Array[SortDefinitionOrder]
     
     /**
       * The initiator of the sorting.
       */
-    var sortedBy: SortInitiator = js.native
+    var sortedBy: SortInitiator
   }
   object TableSorting {
     

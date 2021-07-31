@@ -8,63 +8,61 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Helper extends StObject {
   
   var Asm: Instantiable2[
     /* group_id */ Double, 
     /* groups_to_display */ js.Array[Double], 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Asm
-  ] = js.native
+  ]
   
-  var Attachment: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Attachment] = js.native
+  var Attachment: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Attachment]
   
   var Bcc: Instantiable2[
     /* enable */ Boolean, 
     /* email */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Bcc
-  ] = js.native
+  ]
   
   var BypassListManagement: Instantiable1[
     /* enable */ Boolean, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.BypassListManagement
-  ] = js.native
+  ]
   
-  var Category: Instantiable1[/* name */ String, typings.sendgrid.mod.SendGrid.Helpers.Mail.Category] = js.native
+  var Category: Instantiable1[/* name */ String, typings.sendgrid.mod.SendGrid.Helpers.Mail.Category]
   
   var ClickTracking: Instantiable2[
     /* enable */ Boolean, 
     /* enableText */ Boolean, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.ClickTracking
-  ] = js.native
+  ]
   
   var Content: Instantiable2[
     /* mimetype */ String, 
     /* text */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Content
-  ] = js.native
+  ]
   
   var CustomArgs: Instantiable2[
     /* key */ String, 
     /* value */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.CustomArgs
-  ] = js.native
+  ]
   
   var Email: Instantiable2[
     /* address */ String, 
     /* name */ js.UndefOr[String], 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Email
-  ] = js.native
+  ]
   
   var Footer: Instantiable3[
     /* enable */ Boolean, 
     /* text */ String, 
     /* html */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Footer
-  ] = js.native
+  ]
   
   var Ganalytics: Instantiable6[
     /* enable */ Boolean, 
@@ -74,40 +72,40 @@ trait Helper extends StObject {
     /* utm_content */ String, 
     /* utm_campaign */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Ganalytics
-  ] = js.native
+  ]
   
   var Header: Instantiable2[
     /* key */ String, 
     /* value */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Header
-  ] = js.native
+  ]
   
-  var Mail: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail] = js.native
+  var Mail: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail]
   
-  var MailSettings: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.MailSettings] = js.native
+  var MailSettings: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.MailSettings]
   
   var OpenTracking: Instantiable2[
     /* enable */ Boolean, 
     /* subscriptionTag */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.OpenTracking
-  ] = js.native
+  ]
   
-  var Personalization: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Personalization] = js.native
+  var Personalization: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Personalization]
   
-  var SandBoxMode: Instantiable1[/* enable */ Boolean, typings.sendgrid.mod.SendGrid.Helpers.Mail.SandBoxMode] = js.native
+  var SandBoxMode: Instantiable1[/* enable */ Boolean, typings.sendgrid.mod.SendGrid.Helpers.Mail.SandBoxMode]
   
   var Section: Instantiable2[
     /* key */ String, 
     /* value */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Section
-  ] = js.native
+  ]
   
   var SpamCheck: Instantiable3[
     /* enable */ Boolean, 
     /* threshold */ Double, 
     /* post_to_url */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.SpamCheck
-  ] = js.native
+  ]
   
   var SubscriptionTracking: Instantiable4[
     /* enable */ Boolean, 
@@ -115,15 +113,15 @@ trait Helper extends StObject {
     /* html */ String, 
     /* substitution_tag */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.SubscriptionTracking
-  ] = js.native
+  ]
   
   var Substitution: Instantiable2[
     /* key */ String, 
     /* value */ String, 
     typings.sendgrid.mod.SendGrid.Helpers.Mail.Substitution
-  ] = js.native
+  ]
   
-  var TrackingSettings: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.TrackingSettings] = js.native
+  var TrackingSettings: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.TrackingSettings]
 }
 object Helper {
   

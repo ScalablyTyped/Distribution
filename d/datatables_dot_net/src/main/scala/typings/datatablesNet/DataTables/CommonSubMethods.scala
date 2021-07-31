@@ -2,11 +2,9 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "util-methods"
-@js.native
 trait CommonSubMethods extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait CommonSubMethods extends StObject {
     *
     * @param t Specify which cache the data should be read from. Can take one of two values: search or order
     */
-  def cache(t: String): Api = js.native
+  def cache(t: String): Api
 }
 object CommonSubMethods {
   

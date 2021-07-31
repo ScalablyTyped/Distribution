@@ -5,7 +5,6 @@ import typings.vegaLite.selectionMod.SelectionCompiler
 import typings.vegaLite.vegaLiteStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object singleMod extends Shortcut {

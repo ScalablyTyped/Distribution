@@ -18,14 +18,15 @@ import typings.playable.volumeTypesMod.IVolumeControl
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bottomBlockMod {
   
   @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", JSImport.Default)
   @js.native
-  class default protected () extends BottomBlock {
+  class default protected ()
+    extends StObject
+       with BottomBlock {
     def this(dependencies: IDependencies) = this()
   }
   object default {
@@ -65,7 +66,9 @@ object bottomBlockMod {
   }
   
   @js.native
-  trait BottomBlock extends IBottomBlock {
+  trait BottomBlock
+    extends StObject
+       with IBottomBlock {
     
     var _bindEvents: js.Any = js.native
     
@@ -109,10 +112,9 @@ object bottomBlockMod {
     var view: typings.playable.bottomBlockViewMod.default = js.native
   }
   
-  @js.native
   trait IAddControllOptions extends StObject {
     
-    var position: js.UndefOr[left | right] = js.native
+    var position: js.UndefOr[left | right] = js.undefined
   }
   object IAddControllOptions {
     
@@ -133,28 +135,27 @@ object bottomBlockMod {
     }
   }
   
-  @js.native
   trait IDependencies extends StObject {
     
-    var chromecastButton: IChromecastButton = js.native
+    var chromecastButton: IChromecastButton
     
-    var downloadButton: IDownloadButton = js.native
+    var downloadButton: IDownloadButton
     
-    var eventEmitter: IEventEmitter = js.native
+    var eventEmitter: IEventEmitter
     
-    var fullScreenControl: IFullScreenControl = js.native
+    var fullScreenControl: IFullScreenControl
     
-    var logo: ILogoControl = js.native
+    var logo: ILogoControl
     
-    var pictureInPictureControl: IPictureInPictureControl = js.native
+    var pictureInPictureControl: IPictureInPictureControl
     
-    var playControl: IPlayControl = js.native
+    var playControl: IPlayControl
     
-    var progressControl: IProgressControl = js.native
+    var progressControl: IProgressControl
     
-    var timeControl: ITimeControl = js.native
+    var timeControl: ITimeControl
     
-    var volumeControl: IVolumeControl = js.native
+    var volumeControl: IVolumeControl
   }
   object IDependencies {
     

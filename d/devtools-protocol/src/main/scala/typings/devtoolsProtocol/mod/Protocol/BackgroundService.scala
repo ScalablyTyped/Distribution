@@ -4,48 +4,46 @@ import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.RegistrationID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BackgroundService {
   
-  @js.native
   trait BackgroundServiceEvent extends StObject {
     
     /**
       * A list of event-specific information.
       */
-    var eventMetadata: js.Array[EventMetadata] = js.native
+    var eventMetadata: js.Array[EventMetadata]
     
     /**
       * A description of the event.
       */
-    var eventName: String = js.native
+    var eventName: String
     
     /**
       * An identifier that groups related events together.
       */
-    var instanceId: String = js.native
+    var instanceId: String
     
     /**
       * The origin this event belongs to.
       */
-    var origin: String = js.native
+    var origin: String
     
     /**
       * The Background Service this event belongs to.
       */
-    var service: ServiceName = js.native
+    var service: ServiceName
     
     /**
       * The Service Worker ID that initiated the event.
       */
-    var serviceWorkerRegistrationId: RegistrationID = js.native
+    var serviceWorkerRegistrationId: RegistrationID
     
     /**
       * Timestamp of the event (in seconds).
       */
-    var timestamp: TimeSinceEpoch = js.native
+    var timestamp: TimeSinceEpoch
   }
   object BackgroundServiceEvent {
     
@@ -92,10 +90,9 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait BackgroundServiceEventReceivedEvent extends StObject {
     
-    var backgroundServiceEvent: BackgroundServiceEvent = js.native
+    var backgroundServiceEvent: BackgroundServiceEvent
   }
   object BackgroundServiceEventReceivedEvent {
     
@@ -113,10 +110,9 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait ClearEventsRequest extends StObject {
     
-    var service: ServiceName = js.native
+    var service: ServiceName
   }
   object ClearEventsRequest {
     
@@ -134,12 +130,11 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait EventMetadata extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object EventMetadata {
     
@@ -160,12 +155,11 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait RecordingStateChangedEvent extends StObject {
     
-    var isRecording: Boolean = js.native
+    var isRecording: Boolean
     
-    var service: ServiceName = js.native
+    var service: ServiceName
   }
   object RecordingStateChangedEvent {
     
@@ -216,12 +210,11 @@ object BackgroundService {
     def pushMessaging: typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging = "pushMessaging".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging]
   }
   
-  @js.native
   trait SetRecordingRequest extends StObject {
     
-    var service: ServiceName = js.native
+    var service: ServiceName
     
-    var shouldRecord: Boolean = js.native
+    var shouldRecord: Boolean
   }
   object SetRecordingRequest {
     
@@ -242,10 +235,9 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait StartObservingRequest extends StObject {
     
-    var service: ServiceName = js.native
+    var service: ServiceName
   }
   object StartObservingRequest {
     
@@ -263,10 +255,9 @@ object BackgroundService {
     }
   }
   
-  @js.native
   trait StopObservingRequest extends StObject {
     
-    var service: ServiceName = js.native
+    var service: ServiceName
   }
   object StopObservingRequest {
     

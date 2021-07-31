@@ -4,7 +4,6 @@ import typings.officeJsPreview.Office.MailboxEnums.RecipientType
 import typings.officeJsPreview.Office.MailboxEnums.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait EmailAddressDetails extends StObject {
   
   /**
@@ -24,22 +22,22 @@ trait EmailAddressDetails extends StObject {
     * This property applies to only an attendee of an appointment, as represented by the `optionalAttendees` or `requiredAttendees` property.
     * This property returns undefined in other scenarios.
     */
-  var appointmentResponse: ResponseType | String = js.native
+  var appointmentResponse: ResponseType | String
   
   /**
     * Gets the display name associated with an email address.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Gets the SMTP email address.
     */
-  var emailAddress: String = js.native
+  var emailAddress: String
   
   /**
     * Gets the email address type of a recipient.
     */
-  var recipientType: RecipientType | String = js.native
+  var recipientType: RecipientType | String
 }
 object EmailAddressDetails {
   

@@ -2,13 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionPropertiesBase[T] extends StObject {
   
-  var items: js.UndefOr[js.Array[T]] = js.native
+  var items: js.UndefOr[js.Array[T]] = js.undefined
 }
 object CollectionPropertiesBase {
   
@@ -19,7 +17,7 @@ object CollectionPropertiesBase {
   }
   
   @scala.inline
-  implicit class CollectionPropertiesBaseMutableBuilder[Self <: CollectionPropertiesBase[_], T] (val x: Self with CollectionPropertiesBase[T]) extends AnyVal {
+  implicit class CollectionPropertiesBaseMutableBuilder[Self <: CollectionPropertiesBase[?], T] (val x: Self & CollectionPropertiesBase[T]) extends AnyVal {
     
     @scala.inline
     def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])

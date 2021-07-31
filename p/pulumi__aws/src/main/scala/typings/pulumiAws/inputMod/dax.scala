@@ -3,24 +3,22 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dax {
   
-  @js.native
   trait ClusterNode extends StObject {
     
-    var address: js.UndefOr[Input[String]] = js.native
+    var address: js.UndefOr[Input[String]] = js.undefined
     
-    var availabilityZone: js.UndefOr[Input[String]] = js.native
+    var availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port used by the configuration endpoint
       */
-    var port: js.UndefOr[Input[Double]] = js.native
+    var port: js.UndefOr[Input[Double]] = js.undefined
   }
   object ClusterNode {
     
@@ -59,13 +57,12 @@ object dax {
     }
   }
   
-  @js.native
   trait ClusterServerSideEncryption extends StObject {
     
     /**
       * Whether to enable encryption at rest. Defaults to `false`.
       */
-    var enabled: js.UndefOr[Input[Boolean]] = js.native
+    var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ClusterServerSideEncryption {
     
@@ -86,18 +83,17 @@ object dax {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
       * The name of the parameter.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value for the parameter.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object ParameterGroupParameter {
     

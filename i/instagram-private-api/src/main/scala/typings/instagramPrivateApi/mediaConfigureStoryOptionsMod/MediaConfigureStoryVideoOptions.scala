@@ -15,64 +15,64 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.story
 import typings.instagramPrivateApi.mediaConfigureVideoOptionsMod.MediaConfigureVideoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.MediaConfigureStoryBaseOptions because var conflicts: geotag_enabled, media_latitude, media_longitude, posting_latitude, posting_longitude. Inlined story_media_creation_date, client_shared_at, audience, configure_mode, camera_position, allow_multi_configures, thread_ids, recipient_users, client_context, view_mode, reply_type, caption, mas_opt_in, story_sticker_ids, story_hashtags, story_locations, reel_mentions, story_polls, internal_features, story_sliders, story_questions, story_countdowns, attached_media, story_chats, story_quizs, story_cta */ @js.native
-trait MediaConfigureStoryVideoOptions extends MediaConfigureVideoOptions {
+- typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.MediaConfigureStoryBaseOptions because var conflicts: geotag_enabled, media_latitude, media_longitude, posting_latitude, posting_longitude. Inlined story_media_creation_date, client_shared_at, audience, configure_mode, camera_position, allow_multi_configures, thread_ids, recipient_users, client_context, view_mode, reply_type, caption, mas_opt_in, story_sticker_ids, story_hashtags, story_locations, reel_mentions, story_polls, internal_features, story_sliders, story_questions, story_countdowns, attached_media, story_chats, story_quizs, story_cta */ trait MediaConfigureStoryVideoOptions
+  extends StObject
+     with MediaConfigureVideoOptions {
   
-  var allow_multi_configures: js.UndefOr[`0` | `1`] = js.native
+  var allow_multi_configures: js.UndefOr[`0` | `1`] = js.undefined
   
-  var attached_media: js.UndefOr[js.Array[StoryAttachedMedia] | String] = js.native
+  var attached_media: js.UndefOr[js.Array[StoryAttachedMedia] | String] = js.undefined
   
-  var audience: js.UndefOr[besties] = js.native
+  var audience: js.UndefOr[besties] = js.undefined
   
-  var camera_position: js.UndefOr[String] = js.native
+  var camera_position: js.UndefOr[String] = js.undefined
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var client_context: js.UndefOr[String] = js.native
+  var client_context: js.UndefOr[String] = js.undefined
   
-  var client_shared_at: js.UndefOr[String] = js.native
+  var client_shared_at: js.UndefOr[String] = js.undefined
   
-  var configure_mode: `1` | `2` = js.native
+  var configure_mode: `1` | `2`
   
-  var internal_features: js.UndefOr[polling_sticker] = js.native
+  var internal_features: js.UndefOr[polling_sticker] = js.undefined
   
-  var mas_opt_in: js.UndefOr[NOT_PROMPTED] = js.native
+  var mas_opt_in: js.UndefOr[NOT_PROMPTED] = js.undefined
   
-  var recipient_users: js.UndefOr[js.Array[String] | String] = js.native
+  var recipient_users: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var reel_mentions: js.UndefOr[js.Array[StoryMention] | String] = js.native
+  var reel_mentions: js.UndefOr[js.Array[StoryMention] | String] = js.undefined
   
-  var reply_type: js.UndefOr[story | String] = js.native
+  var reply_type: js.UndefOr[story | String] = js.undefined
   
-  var story_chats: js.UndefOr[js.Array[StoryChat] | String] = js.native
+  var story_chats: js.UndefOr[js.Array[StoryChat] | String] = js.undefined
   
-  var story_countdowns: js.UndefOr[js.Array[StoryCountdown] | String] = js.native
+  var story_countdowns: js.UndefOr[js.Array[StoryCountdown] | String] = js.undefined
   
-  var story_cta: js.UndefOr[js.Array[StoryCta] | String] = js.native
+  var story_cta: js.UndefOr[js.Array[StoryCta] | String] = js.undefined
   
-  var story_hashtags: js.UndefOr[js.Array[StoryHashtag] | String] = js.native
+  var story_hashtags: js.UndefOr[js.Array[StoryHashtag] | String] = js.undefined
   
-  var story_locations: js.UndefOr[js.Array[StoryLocation] | String] = js.native
+  var story_locations: js.UndefOr[js.Array[StoryLocation] | String] = js.undefined
   
-  var story_media_creation_date: js.UndefOr[String] = js.native
+  var story_media_creation_date: js.UndefOr[String] = js.undefined
   
-  var story_polls: js.UndefOr[js.Array[StoryPoll] | String] = js.native
+  var story_polls: js.UndefOr[js.Array[StoryPoll] | String] = js.undefined
   
-  var story_questions: js.UndefOr[js.Array[StoryQuestion] | String] = js.native
+  var story_questions: js.UndefOr[js.Array[StoryQuestion] | String] = js.undefined
   
-  var story_quizs: js.UndefOr[js.Array[StoryQuiz] | String] = js.native
+  var story_quizs: js.UndefOr[js.Array[StoryQuiz] | String] = js.undefined
   
-  var story_sliders: js.UndefOr[js.Array[StorySlider] | String] = js.native
+  var story_sliders: js.UndefOr[js.Array[StorySlider] | String] = js.undefined
   
-  var story_sticker_ids: js.UndefOr[String | question_sticker_ma | countdown_sticker_time | chat_sticker_id] = js.native
+  var story_sticker_ids: js.UndefOr[String | question_sticker_ma | countdown_sticker_time | chat_sticker_id] = js.undefined
   
-  var thread_ids: js.UndefOr[js.Array[String] | String] = js.native
+  var thread_ids: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var view_mode: js.UndefOr[replayable | once | String] = js.native
+  var view_mode: js.UndefOr[replayable | once | String] = js.undefined
 }
 object MediaConfigureStoryVideoOptions {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A {@link DragGestureEvent} is passed to the method {@link XDragGestureListener.dragGestureRecognized()} when a particular {@link
   * XDragGestureRecognizer} detects that a platform dependent drag initiating gesture has occurred on the component that it is tracking.
   */
-@js.native
-trait DragGestureEvent extends EventObject {
+trait DragGestureEvent
+  extends StObject
+     with EventObject {
   
   /**
     * The action selected by the user.
@@ -24,16 +24,16 @@ trait DragGestureEvent extends EventObject {
     * action.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  var DragAction: Double = js.native
+  var DragAction: Double
   
   /** The x coordinate where the drag originated in component coordinates. */
-  var DragOriginX: Double = js.native
+  var DragOriginX: Double
   
   /** The y coordinate where the drag originated in component coordinates. */
-  var DragOriginY: Double = js.native
+  var DragOriginY: Double
   
   /** The DragSource associated with this drag action. */
-  var DragSource: XDragSource = js.native
+  var DragSource: XDragSource
   
   /**
     * The last event comprising the gesture.
@@ -41,7 +41,7 @@ trait DragGestureEvent extends EventObject {
     * The initial trigger event will presumably be a {@link com.sun.star.awt.MouseEvent} event. If it is not, the implementation should either react
     * accordingly or presume that the left mouse button was clicked.
     */
-  var Event: js.Any = js.native
+  var Event: js.Any
 }
 object DragGestureEvent {
   

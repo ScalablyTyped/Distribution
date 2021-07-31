@@ -3,7 +3,6 @@ package typings.reactSelect
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nonceProviderMod {
@@ -20,10 +19,9 @@ object nonceProviderMod {
     def this(props: NonceProviderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait NonceProviderProps extends StObject {
     
-    var nonce: String = js.native
+    var nonce: String
   }
   object NonceProviderProps {
     

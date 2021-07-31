@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Location extends StObject {
   
   /** Capabilities available in the location. */
-  var capabilities: js.UndefOr[js.Array[GoogleCloudMlV1Capability]] = js.native
+  var capabilities: js.UndefOr[js.Array[GoogleCloudMlV1Capability]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1Location {
   

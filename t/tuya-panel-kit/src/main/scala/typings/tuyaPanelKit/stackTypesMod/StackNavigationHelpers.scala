@@ -21,7 +21,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionStart
 import typings.tuyaPanelKit.typesMod.EventArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native.NavigationHelpers<tuya-panel-kit.tuya-panel-kit/@react-navigation/native.ParamListBase, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap> & tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackActionHelpers<tuya-panel-kit.tuya-panel-kit/@react-navigation/native.ParamListBase> */
@@ -82,7 +81,7 @@ trait StackNavigationHelpers extends StObject {
   def emit[EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
-  ] */](options: `18`[EventName] with (js.Object | `3`) with (`20`[EventName] | `19`[EventName])): EventArg[
+  ] */](options: `18`[EventName] & (js.Object | `3`) & (`20`[EventName] | `19`[EventName])): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['canPreventDefault'] */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['data'] */ js.Any

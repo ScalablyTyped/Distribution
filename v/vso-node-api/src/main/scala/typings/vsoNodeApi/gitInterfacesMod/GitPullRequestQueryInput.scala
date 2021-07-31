@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPullRequestQueryInput extends StObject {
   
   /**
     * The list of commit IDs to search for.
     */
-  var items: js.Array[String] = js.native
+  var items: js.Array[String]
   
   /**
     * The type of query to perform.
     */
-  var `type`: GitPullRequestQueryType = js.native
+  var `type`: GitPullRequestQueryType
 }
 object GitPullRequestQueryInput {
   

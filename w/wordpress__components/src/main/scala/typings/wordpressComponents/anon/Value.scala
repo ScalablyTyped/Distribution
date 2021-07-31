@@ -4,21 +4,21 @@ import typings.wordpressComponents.autocompleteMod.Autocomplete._OptionCompletio
 import typings.wordpressComponents.wordpressComponentsStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Value extends _OptionCompletion {
+trait Value
+  extends StObject
+     with _OptionCompletion {
   
-  var action: replace = js.native
+  var action: replace
   
-  var value: typings.wordpressRichText.mod.Value = js.native
+  var value: typings.wordpressRichText.mod.Value
 }
 object Value {
   
   @scala.inline
-  def apply(action: replace, value: typings.wordpressRichText.mod.Value): Value = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(value: typings.wordpressRichText.mod.Value): Value = {
+    val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   

@@ -6,11 +6,12 @@ import typings.storybookAddonKnobs.dateMod.DateTypeProps
 import typings.storybookAddonKnobs.dateMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDateType extends Instantiable0[default] {
+trait TypeofDateType
+  extends StObject
+     with Instantiable0[default] {
   
   var defaultProps: DateTypeProps = js.native
   

@@ -8,7 +8,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -74,26 +73,25 @@ object notificationMod {
     /**
       * An options object for creating a notification.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The message to show on notification.
         */
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
       /**
         * The placement of the notification.
         *
         * The default is `'bottom'`.
         */
-      var placement: js.UndefOr[Placement] = js.native
+      var placement: js.UndefOr[Placement] = js.undefined
       
       /**
         * Target element to attach notification to.
         *
         */
-      var target: HTMLElement = js.native
+      var target: HTMLElement
       
       /**
         * Duration in ms after which to close notification popup.
@@ -101,7 +99,7 @@ object notificationMod {
         * The default is undefined, and notification is kept visible
         * Timeout value needs to be greater than zero
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

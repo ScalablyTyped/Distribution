@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, 'containExactly'> */
-@js.native
 trait PickImplcontainExactly extends StObject {
   
-  var containExactly: String = js.native
+  var containExactly: String
 }
 object PickImplcontainExactly {
   

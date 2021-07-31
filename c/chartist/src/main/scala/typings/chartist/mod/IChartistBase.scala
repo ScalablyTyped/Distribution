@@ -2,7 +2,6 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait IChartistBase[T /* <: IChartOptions */] extends StObject {
   
   var options: T = js.native
   
-  var plugins: js.UndefOr[js.Array[_]] = js.native
+  var plugins: js.UndefOr[js.Array[js.Any]] = js.native
   
   var resizeListener: js.Any = js.native
   
@@ -54,5 +53,5 @@ trait IChartistBase[T /* <: IChartOptions */] extends StObject {
   def update(data: js.Object): Unit = js.native
   def update(data: js.Object, options: T): Unit = js.native
   def update(data: js.Object, options: T, `override`: Boolean): Unit = js.native
-  def update(data: js.Object, options: js.UndefOr[scala.Nothing], `override`: Boolean): Unit = js.native
+  def update(data: js.Object, options: Unit, `override`: Boolean): Unit = js.native
 }

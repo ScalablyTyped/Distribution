@@ -2,17 +2,15 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFRenderImageLayer extends StObject {
   
-  def appendImage(): Unit = js.native
+  def appendImage(): Unit
   
-  def beginLayout(): Unit = js.native
+  def beginLayout(): Unit
   
-  def endLayout(): Unit = js.native
+  def endLayout(): Unit
 }
 object PDFRenderImageLayer {
   

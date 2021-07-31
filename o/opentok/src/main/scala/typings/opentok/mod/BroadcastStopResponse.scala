@@ -2,23 +2,21 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BroadcastStopResponse extends StObject {
   
-  var createdAt: Double = js.native
+  var createdAt: Double
   
-  var id: String = js.native
+  var id: String
   
-  var projectId: Double = js.native
+  var projectId: Double
   
-  var resolution: String = js.native
+  var resolution: String
   
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var updatedAt: Double = js.native
+  var updatedAt: Double
 }
 object BroadcastStopResponse {
   

@@ -5,18 +5,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolylineDrawActionProperties extends DrawActionProperties {
+trait PolylineDrawActionProperties
+  extends StObject
+     with DrawActionProperties {
   
   /**
     * The drawing mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolylineDrawAction.html#mode)
     */
-  var mode: js.UndefOr[hybrid | freehand | click] = js.native
+  var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 object PolylineDrawActionProperties {
   

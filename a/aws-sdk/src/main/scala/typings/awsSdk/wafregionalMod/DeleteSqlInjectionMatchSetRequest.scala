@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSqlInjectionMatchSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken
   
   /**
     * The SqlInjectionMatchSetId of the SqlInjectionMatchSet that you want to delete. SqlInjectionMatchSetId is returned by CreateSqlInjectionMatchSet and by ListSqlInjectionMatchSets.
     */
-  var SqlInjectionMatchSetId: ResourceId = js.native
+  var SqlInjectionMatchSetId: ResourceId
 }
 object DeleteSqlInjectionMatchSetRequest {
   

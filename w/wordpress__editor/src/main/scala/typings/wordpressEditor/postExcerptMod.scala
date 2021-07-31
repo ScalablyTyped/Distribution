@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postExcerptMod.PostExcerpt.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postExcerptMod {
@@ -24,10 +23,9 @@ object postExcerptMod {
   
   object PostExcerpt {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
     }
   }
 }

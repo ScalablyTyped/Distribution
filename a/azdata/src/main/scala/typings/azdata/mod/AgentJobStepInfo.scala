@@ -2,59 +2,57 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentJobStepInfo extends StObject {
   
-  var appendLogToTable: Boolean = js.native
+  var appendLogToTable: Boolean
   
-  var appendToLogFile: Boolean = js.native
+  var appendToLogFile: Boolean
   
-  var appendToStepHist: Boolean = js.native
+  var appendToStepHist: Boolean
   
-  var command: String = js.native
+  var command: String
   
-  var commandExecutionSuccessCode: Double = js.native
+  var commandExecutionSuccessCode: Double
   
-  var databaseName: String = js.native
+  var databaseName: String
   
-  var databaseUserName: String = js.native
+  var databaseUserName: String
   
-  var failStepId: Double = js.native
+  var failStepId: Double
   
-  var failureAction: StepCompletionAction = js.native
+  var failureAction: StepCompletionAction
   
-  var id: Double = js.native
+  var id: Double
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var outputFileName: String = js.native
+  var outputFileName: String
   
-  var proxyName: String = js.native
+  var proxyName: String
   
-  var retryAttempts: Double = js.native
+  var retryAttempts: Double
   
-  var retryInterval: Double = js.native
+  var retryInterval: Double
   
-  var script: String = js.native
+  var script: String
   
-  var scriptName: String = js.native
+  var scriptName: String
   
-  var server: String = js.native
+  var server: String
   
-  var stepName: String = js.native
+  var stepName: String
   
-  var subSystem: AgentSubSystem = js.native
+  var subSystem: AgentSubSystem
   
-  var successAction: StepCompletionAction = js.native
+  var successAction: StepCompletionAction
   
-  var successStepId: Double = js.native
+  var successStepId: Double
   
-  var writeLogToTable: Boolean = js.native
+  var writeLogToTable: Boolean
 }
 object AgentJobStepInfo {
   

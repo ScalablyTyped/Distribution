@@ -4,42 +4,41 @@ import typings.reactBeautifulDnd.reactBeautifulDndBooleans.`true`
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.COLLECTING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-beautiful-dnd.react-beautiful-dnd.Omit<react-beautiful-dnd.react-beautiful-dnd.DraggingState, 'phase'> */
-@js.native
 trait CollectingState
-  extends State
+  extends StObject
+     with State
      with StateWhenUpdatesAllowed {
   
-  var afterCritical: LiftEffect = js.native
+  var afterCritical: LiftEffect
   
-  var critical: Critical = js.native
+  var critical: Critical
   
-  var current: DragPositions = js.native
+  var current: DragPositions
   
-  var dimensions: DimensionMap = js.native
+  var dimensions: DimensionMap
   
-  var forceShouldAnimate: js.UndefOr[Boolean] = js.native
+  var forceShouldAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var impact: DragImpact = js.native
+  var impact: DragImpact
   
-  var initial: DragPositions = js.native
+  var initial: DragPositions
   
-  var isDragging: `true` = js.native
+  var isDragging: `true`
   
-  var isWindowScrollAllowed: Boolean = js.native
+  var isWindowScrollAllowed: Boolean
   
-  var movementMode: MovementMode = js.native
+  var movementMode: MovementMode
   
-  var onLiftImpact: DragImpact = js.native
+  var onLiftImpact: DragImpact
   
-  var phase: COLLECTING = js.native
+  var phase: COLLECTING
   
-  var scrollJumpRequest: js.UndefOr[Position] = js.native
+  var scrollJumpRequest: js.UndefOr[Position] = js.undefined
   
-  var viewport: Viewport = js.native
+  var viewport: Viewport
 }
 object CollectingState {
   
@@ -51,14 +50,12 @@ object CollectingState {
     dimensions: DimensionMap,
     impact: DragImpact,
     initial: DragPositions,
-    isDragging: `true`,
     isWindowScrollAllowed: Boolean,
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
-    phase: COLLECTING,
     viewport: Viewport
   ): CollectingState = {
-    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = true, isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = "COLLECTING", viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectingState]
   }
   

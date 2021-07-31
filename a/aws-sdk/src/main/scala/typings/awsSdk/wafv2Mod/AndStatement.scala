@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndStatement extends StObject {
   
   /**
     * The statements to combine with AND logic. You can use any statements that can be nested. 
     */
-  var Statements: typings.awsSdk.wafv2Mod.Statements = js.native
+  var Statements: typings.awsSdk.wafv2Mod.Statements
 }
 object AndStatement {
   

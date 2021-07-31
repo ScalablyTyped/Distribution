@@ -13,10 +13,13 @@ import typings.std.RTCConfiguration
 import typings.std.RTCSessionDescriptionInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webMod {
+  
+  @JSImport("sip.js/lib/platform/web", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sip.js/lib/platform/web", "SessionDescriptionHandler")
   @js.native
@@ -89,56 +92,44 @@ object webMod {
     def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("sip.js/lib/platform/web", "addMidLines")
-  @js.native
-  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMidLines")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "cleanJitsiSdpImageattr")
-  @js.native
-  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanJitsiSdpImageattr")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "defaultMediaStreamFactory")
-  @js.native
-  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
+  @scala.inline
+  def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
   
-  @JSImport("sip.js/lib/platform/web", "defaultPeerConnectionConfiguration")
-  @js.native
-  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
+  @scala.inline
+  def defaultPeerConnectionConfiguration(): RTCConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultPeerConnectionConfiguration")().asInstanceOf[RTCConfiguration]
   
-  @JSImport("sip.js/lib/platform/web", "defaultSessionDescriptionHandlerFactory")
-  @js.native
-  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
-  @JSImport("sip.js/lib/platform/web", "defaultSessionDescriptionHandlerFactory")
-  @js.native
+  @scala.inline
+  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")().asInstanceOf[SessionDescriptionHandlerFactory]
+  @scala.inline
   def defaultSessionDescriptionHandlerFactory(
     mediaStreamFactory: js.Function2[
       /* constraints */ MediaStreamConstraints, 
       /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
       js.Promise[MediaStream]
     ]
-  ): SessionDescriptionHandlerFactory = js.native
+  ): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")(mediaStreamFactory.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerFactory]
   
-  @JSImport("sip.js/lib/platform/web", "holdModifier")
-  @js.native
-  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("holdModifier")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "stripG722")
-  @js.native
-  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripG722")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "stripRtpPayload")
-  @js.native
-  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = js.native
+  @scala.inline
+  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stripRtpPayload")(payload.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerModifier]
   
-  @JSImport("sip.js/lib/platform/web", "stripTcpCandidates")
-  @js.native
-  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTcpCandidates")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "stripTelephoneEvent")
-  @js.native
-  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTelephoneEvent")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
-  @JSImport("sip.js/lib/platform/web", "stripVideo")
-  @js.native
-  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  @scala.inline
+  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripVideo")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
 }

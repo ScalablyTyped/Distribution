@@ -2,10 +2,8 @@ package typings.styledComponents.styledComponentsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyledConfig[O /* <: js.Object */] extends StObject {
   
   // TODO: Add all types from the original StyledComponentWrapperProperties
@@ -15,7 +13,7 @@ trait StyledConfig[O /* <: js.Object */] extends StObject {
       /* defaultValidatorFn */ js.Function1[/* keyof O */ /* prop */ String, Boolean], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object StyledConfig {
   
@@ -26,7 +24,7 @@ object StyledConfig {
   }
   
   @scala.inline
-  implicit class StyledConfigMutableBuilder[Self <: StyledConfig[_], O /* <: js.Object */] (val x: Self with StyledConfig[O]) extends AnyVal {
+  implicit class StyledConfigMutableBuilder[Self <: StyledConfig[?], O /* <: js.Object */] (val x: Self & StyledConfig[O]) extends AnyVal {
     
     @scala.inline
     def setShouldForwardProp(

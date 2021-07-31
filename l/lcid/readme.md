@@ -11,8 +11,8 @@ Mapping between standard locale identifiers and Windows locale identifiers (LCID
 | Full name          | lcid |
 | Keywords           | lcid, locale, string, id, identifier, windows, language, lang, map, mapping, convert, json, bcp47, ietf, tag |
 | # releases         | 4 |
-| # dependents       | 75 |
-| # downloads        | 714320489 |
+| # dependents       | 81 |
+| # downloads        | 673681346 |
 | # stars            | 1 |
 
 ## Links

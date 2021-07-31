@@ -2,35 +2,29 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait BinaryOperation
-  extends Expression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: BinOp = js.native
+  var operator: BinOp
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_BinaryOperation: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation = js.native
+  var type_BinaryOperation: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation
 }
 object BinaryOperation {
   
   @scala.inline
-  def apply(
-    left: Expression,
-    operator: BinOp,
-    right: Expression,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation
-  ): BinaryOperation = {
+  def apply(left: Expression, operator: BinOp, right: Expression): BinaryOperation = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BinaryOperation")
     __obj.asInstanceOf[BinaryOperation]
   }
   

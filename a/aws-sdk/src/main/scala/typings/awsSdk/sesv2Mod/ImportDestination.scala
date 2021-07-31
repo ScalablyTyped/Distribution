@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDestination extends StObject {
   
   /**
     * An object that contains the action of the import job towards a contact list.
     */
-  var ContactListDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListDestination] = js.native
+  var ContactListDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListDestination] = js.undefined
   
   /**
     * An object that contains the action of the import job towards suppression list.
     */
-  var SuppressionListDestination: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressionListDestination] = js.native
+  var SuppressionListDestination: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressionListDestination] = js.undefined
 }
 object ImportDestination {
   

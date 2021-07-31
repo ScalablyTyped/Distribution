@@ -2,15 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var value: String = js.native
+  var value: String
 }
 object Value {
   

@@ -3,11 +3,11 @@ package typings.winrt.Windows.Media.Capture
 import typings.winrt.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CameraCaptureUIPhotoCaptureSettings extends ICameraCaptureUIPhotoCaptureSettings
+trait CameraCaptureUIPhotoCaptureSettings
+  extends StObject
+     with ICameraCaptureUIPhotoCaptureSettings
 object CameraCaptureUIPhotoCaptureSettings {
   
   @scala.inline

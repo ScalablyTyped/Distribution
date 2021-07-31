@@ -3,15 +3,13 @@ package typings.three.anon
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Holes extends StObject {
   
-  var holes: js.Array[js.Array[Vector2]] = js.native
+  var holes: js.Array[js.Array[Vector2]]
   
-  var shape: js.Array[Vector2] = js.native
+  var shape: js.Array[Vector2]
 }
 object Holes {
   

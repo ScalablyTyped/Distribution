@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait CephFSVolumeSource extends StObject {
   
   /**
     * Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var monitors: Input[js.Array[Input[String]]] = js.native
+  var monitors: Input[js.Array[Input[String]]]
   
   /**
     * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var secretFile: js.UndefOr[Input[String]] = js.native
+  var secretFile: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.native
+  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
   
   /**
     * Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var user: js.UndefOr[Input[String]] = js.native
+  var user: js.UndefOr[Input[String]] = js.undefined
 }
 object CephFSVolumeSource {
   

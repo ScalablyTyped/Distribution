@@ -3,25 +3,25 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.subsystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubsystemChannelRequest extends ChannelRequest {
+trait SubsystemChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: subsystem = js.native
+  var request: subsystem
   
-  var subsystem: String = js.native
+  var subsystem: String
   
-  var wantReply: Boolean = js.native
+  var wantReply: Boolean
 }
 object SubsystemChannelRequest {
   
   @scala.inline
-  def apply(recipient: Double, request: subsystem, subsystem: String, wantReply: Boolean): SubsystemChannelRequest = {
-    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], subsystem = subsystem.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+  def apply(recipient: Double, subsystem: String, wantReply: Boolean): SubsystemChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "subsystem", subsystem = subsystem.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubsystemChannelRequest]
   }
   

@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configurable extends StObject {
   
-  var configurable: Boolean = js.native
+  var configurable: Boolean
   
-  def get(): js.Any = js.native
+  def get(): js.Any
 }
 object Configurable {
   

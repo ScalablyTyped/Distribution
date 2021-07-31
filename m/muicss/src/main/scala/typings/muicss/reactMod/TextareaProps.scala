@@ -10,23 +10,23 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextareaProps extends TextareaHTMLAttributes[HTMLTextAreaElement] {
+trait TextareaProps
+  extends StObject
+     with TextareaHTMLAttributes[HTMLTextAreaElement] {
   
-  var floatingLabel: js.UndefOr[Boolean] = js.native
+  var floatingLabel: js.UndefOr[Boolean] = js.undefined
   
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
-  var inputRef: js.UndefOr[Ref[HTMLTextAreaElement]] = js.native
+  var inputRef: js.UndefOr[Ref[HTMLTextAreaElement]] = js.undefined
   
-  var invalid: js.UndefOr[Boolean] = js.native
+  var invalid: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var onLabelClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onLabelClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
 }
 object TextareaProps {
   

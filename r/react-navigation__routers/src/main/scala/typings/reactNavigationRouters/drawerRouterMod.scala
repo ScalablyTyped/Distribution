@@ -5,12 +5,12 @@ import typings.reactNavigationRouters.anon.NameParams
 import typings.reactNavigationRouters.anon.`0`
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.CLOSE_DRAWER
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.JUMP_TO
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.OPEN_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.TOGGLE_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.drawer
-import typings.reactNavigationRouters.tabRouterMod.BackBehavior
+import typings.reactNavigationRouters.tabRouterMod.TabActionHelpers
 import typings.reactNavigationRouters.tabRouterMod.TabActionType
+import typings.reactNavigationRouters.tabRouterMod.TabRouterOptions
 import typings.reactNavigationRouters.typesMod.CommonNavigationAction
 import typings.reactNavigationRouters.typesMod.NavigationRoute
 import typings.reactNavigationRouters.typesMod.ParamListBase
@@ -18,68 +18,56 @@ import typings.reactNavigationRouters.typesMod.Router
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerRouterMod {
   
-  @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", JSImport.Default)
+  @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", JSImport.Namespace)
   @js.native
-  def default(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   object DrawerActions {
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions.closeDrawer")
+    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions")
     @js.native
-    def closeDrawer(): DrawerActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    @scala.inline
+    def closeDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[DrawerActionType]
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions.openDrawer")
-    @js.native
-    def openDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/DrawerRouter", "DrawerActions.toggleDrawer")
-    @js.native
-    def toggleDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def openDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[DrawerActionType]
+    
+    @scala.inline
+    def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  /* Inlined @react-navigation/routers.@react-navigation/routers/lib/typescript/src/TabRouter.TabActionHelpers<ParamList> & {openDrawer (): void, closeDrawer (): void, toggleDrawer (): void} */
-  @js.native
-  trait DrawerActionHelpers[ParamList /* <: ParamListBase */] extends StObject {
+  trait DrawerActionHelpers[ParamList /* <: ParamListBase */]
+    extends StObject
+       with TabActionHelpers[ParamList] {
     
     /**
       * Close the drawer sidebar.
       */
-    def closeDrawer(): Unit = js.native
-    
-    /**
-      * Jump to an existing tab.
-      *
-      * @param name Name of the route for the tab.
-      * @param [params] Params object for the route.
-      */
-    def jumpTo[RouteName /* <: Extract[/* keyof ParamList */ String, String] */](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
-          RouteName, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[RouteName]
-    ): Unit = js.native
+    def closeDrawer(): Unit
     
     /**
       * Open the drawer sidebar.
       */
-    def openDrawer(): Unit = js.native
+    def openDrawer(): Unit
     
     /**
       * Open the drawer sidebar if closed, or close if opened.
       */
-    def toggleDrawer(): Unit = js.native
+    def toggleDrawer(): Unit
   }
   object DrawerActionHelpers {
     
@@ -98,18 +86,10 @@ object drawerRouterMod {
     }
     
     @scala.inline
-    implicit class DrawerActionHelpersMutableBuilder[Self <: DrawerActionHelpers[_], ParamList /* <: ParamListBase */] (val x: Self with DrawerActionHelpers[ParamList]) extends AnyVal {
+    implicit class DrawerActionHelpersMutableBuilder[Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerActionHelpers[ParamList]) extends AnyVal {
       
       @scala.inline
       def setCloseDrawer(value: () => Unit): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setJumpTo(
-        value: (js.Tuple2[
-              js.Any, 
-              /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-            ]) | js.Array[js.Any] => Unit
-      ): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOpenDrawer(value: () => Unit): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
@@ -134,36 +114,35 @@ object drawerRouterMod {
     }
     
     @scala.inline
-    def TabActionType(payload: NameParams, `type`: JUMP_TO): typings.reactNavigationRouters.tabRouterMod.TabActionType = {
+    def TabActionType(payload: NameParams): typings.reactNavigationRouters.tabRouterMod.TabActionType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("JUMP_TO")
       __obj.asInstanceOf[typings.reactNavigationRouters.tabRouterMod.TabActionType]
     }
   }
   
   /* Inlined std.Omit<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/TabRouter.TabNavigationState<ParamList>, 'type' | 'history'> & {  type :'drawer',   history :std.Array<{  type :'route',   key :string} | {  type :'drawer'}>} */
-  @js.native
   trait DrawerNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
     /**
       * List of previously visited route keys and drawer open status.
       */
-    var history: js.Array[KeyType | `0`] = js.native
+    var history: js.Array[KeyType | `0`]
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: String = js.native
+    var key: String
     
-    var routeNames: js.Array[Extract[/* keyof ParamList */ String, String]] = js.native
+    var routeNames: js.Array[Extract[/* keyof ParamList */ String, String]]
     
-    var routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]] = js.native
+    var routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     
-    var stale: `false` = js.native
+    var stale: `false`
     
     /**
       * Type of the router, in this case, it's drawer.
       */
-    var `type`: drawer = js.native
+    var `type`: drawer
   }
   object DrawerNavigationState {
     
@@ -173,17 +152,15 @@ object drawerRouterMod {
       index: Double,
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
-      routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      stale: `false`,
-      `type`: drawer
+      routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     ): DrawerNavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
+      __obj.updateDynamic("type")("drawer")
       __obj.asInstanceOf[DrawerNavigationState[ParamList]]
     }
     
     @scala.inline
-    implicit class DrawerNavigationStateMutableBuilder[Self <: DrawerNavigationState[_], ParamList /* <: ParamListBase */] (val x: Self with DrawerNavigationState[ParamList]) extends AnyVal {
+    implicit class DrawerNavigationStateMutableBuilder[Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerNavigationState[ParamList]) extends AnyVal {
       
       @scala.inline
       def setHistory(value: js.Array[KeyType | `0`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
@@ -217,19 +194,11 @@ object drawerRouterMod {
     }
   }
   
-  /* Inlined @react-navigation/routers.@react-navigation/routers/lib/typescript/src/TabRouter.TabRouterOptions & {  openByDefault :boolean | undefined} */
-  @js.native
-  trait DrawerRouterOptions extends StObject {
+  trait DrawerRouterOptions
+    extends StObject
+       with TabRouterOptions {
     
-    var backBehavior: js.UndefOr[BackBehavior] = js.native
-    
-    /**
-      * Name of the route to focus by on initial render.
-      * If not specified, usually the first route is used.
-      */
-    var initialRouteName: js.UndefOr[String] = js.native
-    
-    var openByDefault: js.UndefOr[Boolean] = js.native
+    var openByDefault: js.UndefOr[Boolean] = js.undefined
   }
   object DrawerRouterOptions {
     
@@ -241,18 +210,6 @@ object drawerRouterMod {
     
     @scala.inline
     implicit class DrawerRouterOptionsMutableBuilder[Self <: DrawerRouterOptions] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setBackBehavior(value: BackBehavior): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
-      
-      @scala.inline
-      def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
       @scala.inline
       def setOpenByDefault(value: Boolean): Self = StObject.set(x, "openByDefault", value.asInstanceOf[js.Any])

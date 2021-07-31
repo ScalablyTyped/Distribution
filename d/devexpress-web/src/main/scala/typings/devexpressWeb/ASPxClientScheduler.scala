@@ -3,14 +3,15 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxScheduler control.
   */
 @js.native
-trait ASPxClientScheduler extends ASPxClientControl {
+trait ASPxClientScheduler
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Client-side event. Occurs after the active view of the ASPxScheduler has been changed.
@@ -381,13 +382,9 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * @param scrollToSelection true, to scroll the scheduler content to make the selection visible; otherwise, false.
     */
   def SetSelection(interval: ASPxClientTimeInterval): Unit = js.native
-  def SetSelection(
-    interval: ASPxClientTimeInterval,
-    resourceId: js.UndefOr[scala.Nothing],
-    scrollToSelection: Boolean
-  ): Unit = js.native
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String): Unit = js.native
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String, scrollToSelection: Boolean): Unit = js.native
+  def SetSelection(interval: ASPxClientTimeInterval, resourceId: Unit, scrollToSelection: Boolean): Unit = js.native
   
   /**
     * Specifies whether the toolbar is visible.

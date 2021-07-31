@@ -3,23 +3,21 @@ package typings.memfs.volumeMod
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWriteStreamOptions extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var fd: js.UndefOr[Double] = js.native
+  var fd: js.UndefOr[Double] = js.undefined
   
-  var flags: js.UndefOr[TFlags] = js.native
+  var flags: js.UndefOr[TFlags] = js.undefined
   
-  var mode: js.UndefOr[TMode] = js.native
+  var mode: js.UndefOr[TMode] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object IWriteStreamOptions {
   

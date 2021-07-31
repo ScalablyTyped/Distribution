@@ -4,10 +4,8 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.moveColumns.columnPositionChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnPositionChanged extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait ColumnPositionChanged extends StObject {
     */
   var columnPositionChanged: js.UndefOr[
     js.Function2[/* scope */ IScope, /* handler */ columnPositionChangedHandler, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object ColumnPositionChanged {
   

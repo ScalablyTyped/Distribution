@@ -3,25 +3,23 @@ package typings.msRestAzure
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
   
-  @js.native
   trait Location extends StObject {
     
-    val displayName: js.UndefOr[String] = js.native
+    val displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val latitude: js.UndefOr[String] = js.native
+    val latitude: js.UndefOr[String] = js.undefined
     
-    val longitude: js.UndefOr[String] = js.native
+    val longitude: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val subscriptionId: js.UndefOr[String] = js.native
+    val subscriptionId: js.UndefOr[String] = js.undefined
   }
   object Location {
     
@@ -73,27 +71,28 @@ object modelsMod {
   }
   
   @js.native
-  trait LocationListResult extends Array[Location] {
+  trait LocationListResult
+    extends StObject
+       with Array[Location] {
     
     var value: js.UndefOr[js.Array[Location]] = js.native
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    var authorizationSource: js.UndefOr[String] = js.native
+    var authorizationSource: js.UndefOr[String] = js.undefined
     
-    val displayName: js.UndefOr[String] = js.native
+    val displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
-    val subscriptionId: js.UndefOr[String] = js.native
+    val subscriptionId: js.UndefOr[String] = js.undefined
     
-    var subscriptionPolicies: js.UndefOr[SubscriptionPolicies] = js.native
+    var subscriptionPolicies: js.UndefOr[SubscriptionPolicies] = js.undefined
     
-    val tenantId: js.UndefOr[String] = js.native
+    val tenantId: js.UndefOr[String] = js.undefined
   }
   object Subscription {
     
@@ -151,21 +150,22 @@ object modelsMod {
   }
   
   @js.native
-  trait SubscriptionListResult extends Array[Subscription] {
+  trait SubscriptionListResult
+    extends StObject
+       with Array[Subscription] {
     
     var nextLink: String = js.native
     
     var value: js.UndefOr[js.Array[Subscription]] = js.native
   }
   
-  @js.native
   trait SubscriptionPolicies extends StObject {
     
-    val locationPlacementId: js.UndefOr[String] = js.native
+    val locationPlacementId: js.UndefOr[String] = js.undefined
     
-    val quotaId: js.UndefOr[String] = js.native
+    val quotaId: js.UndefOr[String] = js.undefined
     
-    val spendingLimit: js.UndefOr[String] = js.native
+    val spendingLimit: js.UndefOr[String] = js.undefined
   }
   object SubscriptionPolicies {
     
@@ -198,12 +198,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait TenantIdDescription extends StObject {
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val tenantId: js.UndefOr[String] = js.native
+    val tenantId: js.UndefOr[String] = js.undefined
   }
   object TenantIdDescription {
     
@@ -231,7 +230,9 @@ object modelsMod {
   }
   
   @js.native
-  trait TenantListResult extends Array[TenantIdDescription] {
+  trait TenantListResult
+    extends StObject
+       with Array[TenantIdDescription] {
     
     var nextLink: String = js.native
     

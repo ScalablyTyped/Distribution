@@ -2,12 +2,14 @@ package typings.baconjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lastMod {
   
-  @JSImport("baconjs/types/last", JSImport.Default)
+  @JSImport("baconjs/types/last", JSImport.Namespace)
   @js.native
-  def default[V](src: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.default[V] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[V](src: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[V]]
 }

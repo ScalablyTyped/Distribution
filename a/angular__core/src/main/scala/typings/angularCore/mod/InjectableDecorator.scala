@@ -5,13 +5,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.anon.ProvidedIn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InjectableDecorator
-  extends Instantiable0[Injectable]
-     with Instantiable1[/* options */ ProvidedIn with InjectableProvider, Injectable] {
+  extends StObject
+     with Instantiable0[Injectable]
+     with Instantiable1[/* options */ ProvidedIn & InjectableProvider, Injectable] {
   
   /**
     * Decorator that marks a class as available to be
@@ -33,5 +33,5 @@ trait InjectableDecorator
     *
     */
   def apply(): TypeDecorator = js.native
-  def apply(options: ProvidedIn with InjectableProvider): TypeDecorator = js.native
+  def apply(options: ProvidedIn & InjectableProvider): TypeDecorator = js.native
 }

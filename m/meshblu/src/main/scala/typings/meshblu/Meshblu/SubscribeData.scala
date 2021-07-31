@@ -2,17 +2,15 @@ package typings.meshblu.Meshblu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeData extends StObject {
   
-  var topics: js.UndefOr[js.Array[String]] = js.native
+  var topics: js.UndefOr[js.Array[String]] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object SubscribeData {
   

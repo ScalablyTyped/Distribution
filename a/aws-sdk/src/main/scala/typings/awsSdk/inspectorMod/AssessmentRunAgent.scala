@@ -2,46 +2,44 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentRunAgent extends StObject {
   
   /**
     * The current health state of the agent.
     */
-  var agentHealth: AgentHealth = js.native
+  var agentHealth: AgentHealth
   
   /**
     * The detailed health state of the agent.
     */
-  var agentHealthCode: AgentHealthCode = js.native
+  var agentHealthCode: AgentHealthCode
   
   /**
     * The description for the agent health code.
     */
-  var agentHealthDetails: js.UndefOr[Message] = js.native
+  var agentHealthDetails: js.UndefOr[Message] = js.undefined
   
   /**
     * The AWS account of the EC2 instance where the agent is installed.
     */
-  var agentId: AgentId = js.native
+  var agentId: AgentId
   
   /**
     * The ARN of the assessment run that is associated with the agent.
     */
-  var assessmentRunArn: Arn = js.native
+  var assessmentRunArn: Arn
   
   /**
     * The Auto Scaling group of the EC2 instance that is specified by the agent ID.
     */
-  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.native
+  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.undefined
   
   /**
     * The Amazon Inspector application data metrics that are collected by the agent.
     */
-  var telemetryMetadata: TelemetryMetadataList = js.native
+  var telemetryMetadata: TelemetryMetadataList
 }
 object AssessmentRunAgent {
   

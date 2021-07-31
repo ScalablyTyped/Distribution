@@ -2,19 +2,18 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Survey")
 @js.native
 class Survey () extends SurveyModel {
   def this(jsonObj: js.Any) = this()
-  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any) = this()
-  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.UndefOr[scala.Nothing], css: js.Any) = this()
-  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.Any, css: js.Any) = this()
-  def this(jsonObj: js.Any, renderedElement: js.UndefOr[scala.Nothing], css: js.Any) = this()
+  def this(jsonObj: Unit, renderedElement: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any, css: js.Any) = this()
+  def this(jsonObj: js.Any, renderedElement: Unit, css: js.Any) = this()
+  def this(jsonObj: Unit, renderedElement: js.Any, css: js.Any) = this()
+  def this(jsonObj: Unit, renderedElement: Unit, css: js.Any) = this()
   
   var dummyObservable: js.Any = js.native
   
@@ -44,10 +43,10 @@ class Survey () extends SurveyModel {
   
   var koTitleTemplate: js.Any = js.native
   
-  def loadSurveyFromService(surveyId: js.UndefOr[scala.Nothing], clientId: js.UndefOr[scala.Nothing], renderedElement: js.Any): Unit = js.native
-  def loadSurveyFromService(surveyId: js.UndefOr[scala.Nothing], clientId: String, renderedElement: js.Any): Unit = js.native
-  def loadSurveyFromService(surveyId: String, clientId: js.UndefOr[scala.Nothing], renderedElement: js.Any): Unit = js.native
   def loadSurveyFromService(surveyId: String, clientId: String, renderedElement: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: String, clientId: Unit, renderedElement: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: Unit, clientId: String, renderedElement: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: Unit, clientId: Unit, renderedElement: js.Any): Unit = js.native
   
   def nextPageMouseDown(): Boolean = js.native
   

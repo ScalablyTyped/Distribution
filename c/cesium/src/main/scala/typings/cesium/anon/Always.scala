@@ -2,21 +2,19 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Always extends StObject {
   
-  def always(e: js.Any, t: js.Any): js.Any = js.native
+  def always(e: js.Any, t: js.Any): js.Any
   
-  def otherwise(e: js.Any): js.Any = js.native
+  def otherwise(e: js.Any): js.Any
   
-  def spread(t: js.Any): js.Any = js.native
+  def spread(t: js.Any): js.Any
   
-  def `then`(e: js.Any): js.Any = js.native
+  def `then`(e: js.Any): js.Any
   
-  def `yield`(e: js.Any): js.Any = js.native
+  def `yield`(e: js.Any): js.Any
 }
 object Always {
   

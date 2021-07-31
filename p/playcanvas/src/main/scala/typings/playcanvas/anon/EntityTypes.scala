@@ -6,21 +6,19 @@ import typings.playcanvas.pc.callbacks.XrHitTestStart
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityTypes extends StObject {
   
-  var callback: js.UndefOr[XrHitTestStart] = js.native
+  var callback: js.UndefOr[XrHitTestStart] = js.undefined
   
-  var entityTypes: js.UndefOr[js.Array[String]] = js.native
+  var entityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var offsetRay: js.UndefOr[Ray] = js.native
+  var offsetRay: js.UndefOr[Ray] = js.undefined
   
-  var profile: js.UndefOr[String] = js.native
+  var profile: js.UndefOr[String] = js.undefined
   
-  var spaceType: js.UndefOr[String] = js.native
+  var spaceType: js.UndefOr[String] = js.undefined
 }
 object EntityTypes {
   

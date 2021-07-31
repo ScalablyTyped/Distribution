@@ -8,22 +8,23 @@ import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceMembershipMod {
   
-  @JSImport("contentful-management/dist/typings/entities/space-membership", "wrapSpaceMembership")
+  @JSImport("contentful-management/dist/typings/entities/space-membership", JSImport.Namespace)
   @js.native
-  def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/space-membership", "wrapSpaceMembershipCollection")
-  @js.native
-  def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps] = js.native
+  @scala.inline
+  def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[SpaceMembership]
   
-  @js.native
+  @scala.inline
+  def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[SpaceMembership, SpaceMembershipProps]]
+  
   trait SpaceMembership
-    extends SpaceMembershipProps
+    extends StObject
+       with SpaceMembershipProps
        with DefaultElements[SpaceMembershipProps] {
     
     /**
@@ -43,7 +44,7 @@ object spaceMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -64,7 +65,7 @@ object spaceMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[SpaceMembership] = js.native
+    def update(): js.Promise[SpaceMembership]
   }
   object SpaceMembership {
     
@@ -93,19 +94,18 @@ object spaceMembershipMod {
     }
   }
   
-  @js.native
   trait SpaceMembershipProps extends StObject {
     
     /**
       * User is an admin
       */
-    var admin: Boolean = js.native
+    var admin: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var roles: js.Array[MetaLinkProps] = js.native
+    var roles: js.Array[MetaLinkProps]
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object SpaceMembershipProps {
     

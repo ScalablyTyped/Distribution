@@ -10,65 +10,63 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentImportResourceMod.Segment
 import typings.awsSdkClientPinpointBrowser.typesSegmentImportResourceMod.UnmarshalledSegmentImportResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentResponseMod {
   
-  @js.native
   trait SegmentResponse extends StObject {
     
     /**
       * The ID of the application that the segment applies to.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when the segment was created.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The segment dimensions attributes.
       */
-    var Dimensions: js.UndefOr[SegmentDimensions] = js.native
+    var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
     
     /**
       * The unique segment ID.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * The import job settings.
       */
-    var ImportDefinition: js.UndefOr[SegmentImportResource] = js.native
+    var ImportDefinition: js.UndefOr[SegmentImportResource] = js.undefined
     
     /**
       * The date and time when the segment was last modified.
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the segment.
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments.
       */
-    var SegmentGroups: js.UndefOr[SegmentGroupList] = js.native
+    var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
     
     /**
       * The segment type:
       * DIMENSIONAL - A dynamic segment built from selection criteria based on endpoint data reported by your app. You create this type of segment by using the segment builder in the Amazon Pinpoint console or by making a POST request to the segments resource.
       * IMPORT - A static segment built from an imported set of endpoint definitions. You create this type of segment by importing a segment in the Amazon Pinpoint console or by making a POST request to the jobs/import resource.
       */
-    var SegmentType: js.UndefOr[DIMENSIONAL | IMPORT | String] = js.native
+    var SegmentType: js.UndefOr[DIMENSIONAL | IMPORT | String] = js.undefined
     
     /**
       * The segment version number.
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object SegmentResponse {
     
@@ -143,26 +141,27 @@ object typesSegmentResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentResponse extends SegmentResponse {
+  trait UnmarshalledSegmentResponse
+    extends StObject
+       with SegmentResponse {
     
     /**
       * The segment dimensions attributes.
       */
     @JSName("Dimensions")
-    var Dimensions_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentDimensions] = js.native
+    var Dimensions_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentDimensions] = js.undefined
     
     /**
       * The import job settings.
       */
     @JSName("ImportDefinition")
-    var ImportDefinition_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentImportResource] = js.native
+    var ImportDefinition_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentImportResource] = js.undefined
     
     /**
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments.
       */
     @JSName("SegmentGroups")
-    var SegmentGroups_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentGroupList] = js.native
+    var SegmentGroups_UnmarshalledSegmentResponse: js.UndefOr[UnmarshalledSegmentGroupList] = js.undefined
   }
   object UnmarshalledSegmentResponse {
     

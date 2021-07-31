@@ -5,34 +5,31 @@ import typings.mobxStateTree.nodeUtilsMod.IAnyStateTreeNode
 import typings.mobxStateTree.utilsMod.IDisposer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onActionMod {
   
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "applyAction")
+  @JSImport("mobx-state-tree/dist/middlewares/on-action", JSImport.Namespace)
   @js.native
-  def applyAction(target: IAnyStateTreeNode, actions: js.Array[ISerializedActionCall]): Unit = js.native
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "applyAction")
-  @js.native
-  def applyAction(target: IAnyStateTreeNode, actions: ISerializedActionCall): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "onAction")
-  @js.native
-  def onAction(target: IAnyStateTreeNode, listener: js.Function1[/* call */ ISerializedActionCall, Unit]): IDisposer = js.native
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "onAction")
-  @js.native
+  @scala.inline
+  def applyAction(target: IAnyStateTreeNode, actions: js.Array[ISerializedActionCall]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyAction(target: IAnyStateTreeNode, actions: ISerializedActionCall): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def onAction(target: IAnyStateTreeNode, listener: js.Function1[/* call */ ISerializedActionCall, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  @scala.inline
   def onAction(
     target: IAnyStateTreeNode,
     listener: js.Function1[/* call */ ISerializedActionCall, Unit],
     attachAfter: Boolean
-  ): IDisposer = js.native
+  ): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], attachAfter.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "recordActions")
-  @js.native
-  def recordActions(subject: IAnyStateTreeNode): IActionRecorder = js.native
-  @JSImport("mobx-state-tree/dist/middlewares/on-action", "recordActions")
-  @js.native
+  @scala.inline
+  def recordActions(subject: IAnyStateTreeNode): IActionRecorder = ^.asInstanceOf[js.Dynamic].applyDynamic("recordActions")(subject.asInstanceOf[js.Any]).asInstanceOf[IActionRecorder]
+  @scala.inline
   def recordActions(
     subject: IAnyStateTreeNode,
     filter: js.Function2[
@@ -40,20 +37,19 @@ object onActionMod {
       /* actionContext */ js.UndefOr[IActionContext], 
       Boolean
     ]
-  ): IActionRecorder = js.native
+  ): IActionRecorder = (^.asInstanceOf[js.Dynamic].applyDynamic("recordActions")(subject.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[IActionRecorder]
   
-  @js.native
   trait IActionRecorder extends StObject {
     
-    var actions: js.Array[ISerializedActionCall] = js.native
+    var actions: js.Array[ISerializedActionCall]
     
-    val recording: Boolean = js.native
+    val recording: Boolean
     
-    def replay(target: IAnyStateTreeNode): Unit = js.native
+    def replay(target: IAnyStateTreeNode): Unit
     
-    def resume(): Unit = js.native
+    def resume(): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object IActionRecorder {
     
@@ -92,14 +88,13 @@ object onActionMod {
     }
   }
   
-  @js.native
   trait ISerializedActionCall extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object ISerializedActionCall {
     
@@ -113,7 +108,7 @@ object onActionMod {
     implicit class ISerializedActionCallMutableBuilder[Self <: ISerializedActionCall] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

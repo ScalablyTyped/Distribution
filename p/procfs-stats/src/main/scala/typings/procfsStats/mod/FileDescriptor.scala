@@ -2,19 +2,17 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileDescriptor extends StObject {
   
-  var fd: js.UndefOr[String] = js.native
+  var fd: js.UndefOr[String] = js.undefined
   
-  var info: FileDescriptorInfo = js.native
+  var info: FileDescriptorInfo
   
-  var path: String = js.native
+  var path: String
   
-  var stat: FileDescriptorStat | Boolean = js.native
+  var stat: FileDescriptorStat | Boolean
 }
 object FileDescriptor {
   

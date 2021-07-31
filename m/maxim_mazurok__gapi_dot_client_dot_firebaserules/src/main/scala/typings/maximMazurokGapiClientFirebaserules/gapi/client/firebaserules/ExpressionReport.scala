@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionReport extends StObject {
   
   /** Subexpressions */
-  var children: js.UndefOr[js.Array[ExpressionReport]] = js.native
+  var children: js.UndefOr[js.Array[ExpressionReport]] = js.undefined
   
   /** Position of expression in original rules source. */
-  var sourcePosition: js.UndefOr[SourcePosition] = js.native
+  var sourcePosition: js.UndefOr[SourcePosition] = js.undefined
   
   /** Values that this expression evaluated to when encountered. */
-  var values: js.UndefOr[js.Array[ValueCount]] = js.native
+  var values: js.UndefOr[js.Array[ValueCount]] = js.undefined
 }
 object ExpressionReport {
   

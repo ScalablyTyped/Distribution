@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,92 +48,91 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *          .build();
   *     }
   */
-@js.native
 trait CardService extends StObject {
   
-  var ComposedEmailType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ComposedEmailType */ js.Any = js.native
+  var ComposedEmailType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ComposedEmailType */ js.Any
   
-  var ContentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any = js.native
+  var ContentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any
   
-  var Icon: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ js.Any = js.native
+  var Icon: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ js.Any
   
-  var ImageStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImageStyle */ js.Any = js.native
+  var ImageStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImageStyle */ js.Any
   
-  var LoadIndicator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LoadIndicator */ js.Any = js.native
+  var LoadIndicator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LoadIndicator */ js.Any
   
-  var OnClose: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OnClose */ js.Any = js.native
+  var OnClose: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OnClose */ js.Any
   
-  var OpenAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OpenAs */ js.Any = js.native
+  var OpenAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OpenAs */ js.Any
   
-  var SelectionInputType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionInputType */ js.Any = js.native
+  var SelectionInputType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionInputType */ js.Any
   
-  var SwitchControlType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwitchControlType */ js.Any = js.native
+  var SwitchControlType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwitchControlType */ js.Any
   
-  var TextButtonStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextButtonStyle */ js.Any = js.native
+  var TextButtonStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextButtonStyle */ js.Any
   
-  var UpdateDraftBodyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UpdateDraftBodyType */ js.Any = js.native
+  var UpdateDraftBodyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UpdateDraftBodyType */ js.Any
   
-  def newAction(): Action = js.native
+  def newAction(): Action
   
-  def newActionResponseBuilder(): ActionResponseBuilder = js.native
+  def newActionResponseBuilder(): ActionResponseBuilder
   
-  def newAuthorizationAction(): AuthorizationAction = js.native
+  def newAuthorizationAction(): AuthorizationAction
   
-  def newAuthorizationException(): AuthorizationException = js.native
+  def newAuthorizationException(): AuthorizationException
   
-  def newButtonSet(): ButtonSet = js.native
+  def newButtonSet(): ButtonSet
   
-  def newCalendarEventActionResponseBuilder(): CalendarEventActionResponseBuilder = js.native
+  def newCalendarEventActionResponseBuilder(): CalendarEventActionResponseBuilder
   
-  def newCardAction(): CardAction = js.native
+  def newCardAction(): CardAction
   
-  def newCardBuilder(): CardBuilder = js.native
+  def newCardBuilder(): CardBuilder
   
-  def newCardHeader(): CardHeader = js.native
+  def newCardHeader(): CardHeader
   
-  def newCardSection(): CardSection = js.native
+  def newCardSection(): CardSection
   
-  def newComposeActionResponseBuilder(): ComposeActionResponseBuilder = js.native
+  def newComposeActionResponseBuilder(): ComposeActionResponseBuilder
   
-  def newDatePicker(): DatePicker = js.native
+  def newDatePicker(): DatePicker
   
-  def newDateTimePicker(): DateTimePicker = js.native
+  def newDateTimePicker(): DateTimePicker
   
-  def newDriveItemsSelectedActionResponseBuilder(): DriveItemsSelectedActionResponseBuilder = js.native
+  def newDriveItemsSelectedActionResponseBuilder(): DriveItemsSelectedActionResponseBuilder
   
-  def newFixedFooter(): FixedFooter = js.native
+  def newFixedFooter(): FixedFooter
   
-  def newImage(): Image = js.native
+  def newImage(): Image
   
-  def newImageButton(): ImageButton = js.native
+  def newImageButton(): ImageButton
   
-  def newKeyValue(): KeyValue = js.native
+  def newKeyValue(): KeyValue
   
-  def newNavigation(): Navigation = js.native
+  def newNavigation(): Navigation
   
-  def newNotification(): Notification = js.native
+  def newNotification(): Notification
   
-  def newOpenLink(): OpenLink = js.native
+  def newOpenLink(): OpenLink
   
-  def newSelectionInput(): SelectionInput = js.native
+  def newSelectionInput(): SelectionInput
   
-  def newSuggestions(): Suggestions = js.native
+  def newSuggestions(): Suggestions
   
-  def newSuggestionsResponseBuilder(): SuggestionsResponseBuilder = js.native
+  def newSuggestionsResponseBuilder(): SuggestionsResponseBuilder
   
-  def newSwitch(): Switch = js.native
+  def newSwitch(): Switch
   
-  def newTextButton(): TextButton = js.native
+  def newTextButton(): TextButton
   
-  def newTextInput(): TextInput = js.native
+  def newTextInput(): TextInput
   
-  def newTextParagraph(): TextParagraph = js.native
+  def newTextParagraph(): TextParagraph
   
-  def newUniversalActionResponseBuilder(): UniversalActionResponseBuilder = js.native
+  def newUniversalActionResponseBuilder(): UniversalActionResponseBuilder
   
-  def newUpdateDraftActionResponseBuilder(): UpdateDraftActionResponseBuilder = js.native
+  def newUpdateDraftActionResponseBuilder(): UpdateDraftActionResponseBuilder
   
-  def newUpdateDraftBodyAction(): UpdateDraftBodyAction = js.native
+  def newUpdateDraftBodyAction(): UpdateDraftBodyAction
 }
 object CardService {
   

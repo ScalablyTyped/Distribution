@@ -12,7 +12,7 @@ NODE_ENV accessor
 | Keywords           | NODE_ENV |
 | # releases         | 2 |
 | # dependents       | 18 |
-| # downloads        | 76345 |
+| # downloads        | 48254 |
 | # stars            | 0 |
 
 ## Links

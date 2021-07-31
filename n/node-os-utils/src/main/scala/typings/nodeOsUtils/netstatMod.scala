@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodeOsUtils.anon.InputMb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object netstatMod {
   
   @JSImport("node-os-utils/lib/netstat", JSImport.Default)
   @js.native
-  class default () extends NetStat
+  class default ()
+    extends StObject
+       with NetStat
   
   @js.native
   trait NetStat extends StObject {
@@ -22,14 +23,13 @@ object netstatMod {
     def stats(): js.Promise[js.Array[NetStatInfo]] = js.native
   }
   
-  @js.native
   trait NetStatInfo extends StObject {
     
-    var inputBytes: String = js.native
+    var inputBytes: String
     
-    var interface: String = js.native
+    var interface: String
     
-    var outputBytes: String = js.native
+    var outputBytes: String
   }
   object NetStatInfo {
     
@@ -53,10 +53,11 @@ object netstatMod {
     }
   }
   
-  @js.native
-  trait NetStatMetrics extends /* key */ StringDictionary[InputMb] {
+  trait NetStatMetrics
+    extends StObject
+       with /* key */ StringDictionary[InputMb] {
     
-    var total: InputMb = js.native
+    var total: InputMb
   }
   object NetStatMetrics {
     

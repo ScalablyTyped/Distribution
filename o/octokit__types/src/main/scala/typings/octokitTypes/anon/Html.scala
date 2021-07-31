@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Html extends StObject {
   
-  var html: HrefString = js.native
+  var html: HrefString
   
-  var pull_request: HrefString = js.native
+  var pull_request: HrefString
   
-  var self: HrefString = js.native
+  var self: HrefString
 }
 object Html {
   

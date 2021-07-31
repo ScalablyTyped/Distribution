@@ -2,13 +2,11 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for automatically scaling a model.
   */
-@js.native
 trait SchemaGoogleCloudMlV1AutoScaling extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait SchemaGoogleCloudMlV1AutoScaling extends StObject {
     * https://ml.googleapis.com/v1/{name=projects/x/models/x/versions/ *}?update_mask=autoScaling.minNodes
     * -d @./update_body.json &lt;/pre&gt;
     */
-  var minNodes: js.UndefOr[Double] = js.native
+  var minNodes: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudMlV1AutoScaling {
   

@@ -6,76 +6,65 @@ import typings.xml2json.anon.objectfalseundefinedJsonO
 import typings.xml2json.anon.objecttrueJsonOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xml2json", "toJson")
+  @JSImport("xml2json", JSImport.Namespace)
   @js.native
-  def toJson(xml: String): String = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson(xml: String, options: objectfalseundefinedJsonO): String = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[js.Any] = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson(xml: Buffer): String = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson(xml: Buffer, options: objectfalseundefinedJsonO): String = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[js.Any] = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson_StringDictionary(xml: String): StringDictionary[js.Any] = js.native
-  @JSImport("xml2json", "toJson")
-  @js.native
-  def toJson_StringDictionary(xml: Buffer): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: String): String = js.native
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: String, options: XmlOptions): String = js.native
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: StringDictionary[js.Any]): String = js.native
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: StringDictionary[js.Any], options: XmlOptions): String = js.native
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: Buffer): String = js.native
-  @JSImport("xml2json", "toXml")
-  @js.native
-  def toXml(json: Buffer, options: XmlOptions): String = js.native
+  @scala.inline
+  def toJson(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toJson(xml: String, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toJson(xml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toJson(xml: Buffer, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @js.native
+  @scala.inline
+  def toJson_StringDictionary(xml: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toJson_StringDictionary(xml: Buffer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  
+  @scala.inline
+  def toXml(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toXml(json: String, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toXml(json: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toXml(json: StringDictionary[js.Any], options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toXml(json: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toXml(json: Buffer, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait JsonOptions extends StObject {
     
     /**
       * Changes the default textNode property from $t to _t when option is set to true.
       * Alternatively a string can be specified which will override $t to what ever the string is.
       */
-    var alternateTextNode: js.UndefOr[Boolean | String] = js.native
+    var alternateTextNode: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * XML child nodes are always treated as arrays.
       * You can specify a selective array of nodes for this to apply to instead of the whole document.
       */
-    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Makes type coercion.
       * i.e.: numbers and booleans present in attributes and element values are converted from string to its correspondent data types.
       * Coerce can be optionally defined as an object with specific methods of coercion based on attribute name or tag name, with fallback to default coercion.
       */
-    var coerce: js.UndefOr[Boolean] = js.native
+    var coerce: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns a Javascript object instead of a JSON string.
@@ -85,7 +74,7 @@ object mod {
       * Makes the JSON reversible to XML.
       * xml2json tranforms CDATA content to JSON, but it doesn't generate a reversible structure.
       */
-    var reversible: js.UndefOr[Boolean] = js.native
+    var reversible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sanitizes the following characters present in element values (default true):
@@ -102,13 +91,13 @@ object mod {
       * };
       * @example
       */
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Removes leading and trailing whitespaces as well as line terminators in element values.
       * Defaults to true.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object JsonOptions {
     
@@ -162,13 +151,12 @@ object mod {
     }
   }
   
-  @js.native
   trait XmlOptions extends StObject {
     
     /**
       * Ignores all null values.
       */
-    var ignoreNull: js.UndefOr[Boolean] = js.native
+    var ignoreNull: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sanitizes the following characters present in element values (default false):
@@ -185,7 +173,7 @@ object mod {
       * };
       * @example
       */
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
   }
   object XmlOptions {
     

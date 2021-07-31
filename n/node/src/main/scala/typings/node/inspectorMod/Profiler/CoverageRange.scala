@@ -2,29 +2,27 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coverage data for a source range.
   */
-@js.native
 trait CoverageRange extends StObject {
   
   /**
     * Collected execution count of the source range.
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * JavaScript script source offset for the range end.
     */
-  var endOffset: Double = js.native
+  var endOffset: Double
   
   /**
     * JavaScript script source offset for the range start.
     */
-  var startOffset: Double = js.native
+  var startOffset: Double
 }
 object CoverageRange {
   

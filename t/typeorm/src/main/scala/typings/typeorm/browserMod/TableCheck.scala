@@ -4,7 +4,6 @@ import typings.typeorm.checkMetadataMod.CheckMetadata
 import typings.typeorm.tableCheckOptionsMod.TableCheckOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser", "TableCheck")
@@ -16,10 +15,13 @@ class TableCheck protected ()
 /* static members */
 object TableCheck {
   
+  @JSImport("typeorm/browser", "TableCheck")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates checks from the check metadata object.
     */
-  @JSImport("typeorm/browser", "TableCheck.create")
-  @js.native
-  def create(checkMetadata: CheckMetadata): typings.typeorm.tableCheckMod.TableCheck = js.native
+  @scala.inline
+  def create(checkMetadata: CheckMetadata): typings.typeorm.tableCheckMod.TableCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableCheckMod.TableCheck]
 }

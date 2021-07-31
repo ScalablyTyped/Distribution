@@ -2,13 +2,11 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single cell in the terminal's buffer.
   */
-@js.native
 trait IBufferCell extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait IBufferCell extends StObject {
     * - RGB: A hex value representing a 'true color': 0xRRGGBB
     *   (CSI 4 8 ; 2 ; Pi ; Pr ; Pg ; Pb)
     */
-  def getBgColor(): Double = js.native
+  def getBgColor(): Double
   
   /**
     * Gets the number representation of the background color mode, this can be
@@ -30,7 +28,7 @@ trait IBufferCell extends StObject {
     * Use `isBgRGB`, `isBgPalette` and `isBgDefault` to check what color mode
     * a cell is.
     */
-  def getBgColorMode(): Double = js.native
+  def getBgColorMode(): Double
   
   /**
     * The character(s) within the cell. Examples of what this can contain:
@@ -39,13 +37,13 @@ trait IBufferCell extends StObject {
     * - A wide character (eg. CJK)
     * - An emoji
     */
-  def getChars(): String = js.native
+  def getChars(): String
   
   /**
     * Gets the UTF32 codepoint of single characters, if content is a combined
     * string it returns the codepoint of the last character in the string.
     */
-  def getCode(): Double = js.native
+  def getCode(): Double
   
   /**
     * Gets a cell's foreground color number, this differs depending on what the
@@ -58,7 +56,7 @@ trait IBufferCell extends StObject {
     * - RGB: A hex value representing a 'true color': 0xRRGGBB.
     *   (CSI 3 8 ; 2 ; Pi ; Pr ; Pg ; Pb)
     */
-  def getFgColor(): Double = js.native
+  def getFgColor(): Double
   
   /**
     * Gets the number representation of the foreground color mode, this can be
@@ -66,7 +64,7 @@ trait IBufferCell extends StObject {
     * Use `isFgRGB`, `isFgPalette` and `isFgDefault` to check what color mode
     * a cell is.
     */
-  def getFgColorMode(): Double = js.native
+  def getFgColorMode(): Double
   
   /**
     * The width of the character. Some examples:
@@ -75,49 +73,49 @@ trait IBufferCell extends StObject {
     * - `2` for wide character like CJK glyphs.
     * - `0` for cells immediately following cells with a width of `2`.
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
   /** Whether the cell has the default attribute (no color or style). */
-  def isAttributeDefault(): Boolean = js.native
+  def isAttributeDefault(): Boolean
   
   /** Whether the cell is using the default background color mode. */
-  def isBgDefault(): Boolean = js.native
+  def isBgDefault(): Boolean
   
   /** Whether the cell is using the palette background color mode. */
-  def isBgPalette(): Boolean = js.native
+  def isBgPalette(): Boolean
   
   /** Whether the cell is using the RGB background color mode. */
-  def isBgRGB(): Boolean = js.native
+  def isBgRGB(): Boolean
   
   /** Whether the cell has the inverse attribute (CSI 5 m). */
-  def isBlink(): Double = js.native
+  def isBlink(): Double
   
   /** Whether the cell has the bold attribute (CSI 1 m). */
-  def isBold(): Double = js.native
+  def isBold(): Double
   
   /** Whether the cell has the inverse attribute (CSI 2 m). */
-  def isDim(): Double = js.native
+  def isDim(): Double
   
   /** Whether the cell is using the default foreground color mode. */
-  def isFgDefault(): Boolean = js.native
+  def isFgDefault(): Boolean
   
   /** Whether the cell is using the palette foreground color mode. */
-  def isFgPalette(): Boolean = js.native
+  def isFgPalette(): Boolean
   
   /** Whether the cell is using the RGB foreground color mode. */
-  def isFgRGB(): Boolean = js.native
+  def isFgRGB(): Boolean
   
   /** Whether the cell has the inverse attribute (CSI 7 m). */
-  def isInverse(): Double = js.native
+  def isInverse(): Double
   
   /** Whether the cell has the inverse attribute (CSI 8 m). */
-  def isInvisible(): Double = js.native
+  def isInvisible(): Double
   
   /** Whether the cell has the inverse attribute (CSI 3 m). */
-  def isItalic(): Double = js.native
+  def isItalic(): Double
   
   /** Whether the cell has the underline attribute (CSI 4 m). */
-  def isUnderline(): Double = js.native
+  def isUnderline(): Double
 }
 object IBufferCell {
   

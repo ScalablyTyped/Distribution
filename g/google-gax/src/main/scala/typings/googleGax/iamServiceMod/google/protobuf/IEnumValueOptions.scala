@@ -2,18 +2,16 @@ package typings.googleGax.iamServiceMod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EnumValueOptions. */
-@js.native
 trait IEnumValueOptions extends StObject {
   
   /** EnumValueOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** EnumValueOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IEnumValueOptions {
   

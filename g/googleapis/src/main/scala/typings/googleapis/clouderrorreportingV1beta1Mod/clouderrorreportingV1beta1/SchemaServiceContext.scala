@@ -2,14 +2,12 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a running service that sends errors. Its version changes over
   * time and multiple versions can run in parallel.
   */
-@js.native
 trait SchemaServiceContext extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaServiceContext extends StObject {
     * automatically for incoming errors and must not be set when reporting
     * errors.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier of the service, such as the name of the executable, job, or
@@ -28,7 +26,7 @@ trait SchemaServiceContext extends StObject {
     * the service name for error reports extracted from Google App Engine logs
     * or `default` if the App Engine default service is used.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the source code version that the developer provided, which
@@ -36,7 +34,7 @@ trait SchemaServiceContext extends StObject {
     * Engine standard environment, the version is set to the version of the
     * app.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceContext {
   

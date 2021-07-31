@@ -5,29 +5,30 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeMod {
   
-  @JSImport("@storybook/ui/dist/components/preview/iframe", "IFrame")
+  @JSImport("@storybook/ui/dist/components/preview/iframe", JSImport.Namespace)
   @js.native
-  def IFrame(props: IFrameProps with IframeHTMLAttributes[HTMLIFrameElement]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def IFrame(props: IFrameProps & IframeHTMLAttributes[HTMLIFrameElement]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IFrame")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait IFrameProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var allowFullScreen: Boolean = js.native
+    var allowFullScreen: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var src: String = js.native
+    var src: String
     
-    var title: String = js.native
+    var title: String
   }
   object IFrameProps {
     

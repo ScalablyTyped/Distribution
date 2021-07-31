@@ -2,27 +2,25 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentOptions extends StObject {
   
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
-  var documentsByUserid: js.UndefOr[String] = js.native
+  var documentsByUserid: js.UndefOr[String] = js.undefined
   
-  var encrypt: js.UndefOr[String] = js.native
+  var encrypt: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
-  var sharedUserId: js.UndefOr[String] = js.native
+  var sharedUserId: js.UndefOr[String] = js.undefined
   
-  var showChanges: js.UndefOr[String] = js.native
+  var showChanges: js.UndefOr[String] = js.undefined
   
-  var watermark: js.UndefOr[String] = js.native
+  var watermark: js.UndefOr[String] = js.undefined
 }
 object DocumentOptions {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOobConfirmationCodeResponse extends StObject {
   
   /** The email address that the email is sent to. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** The fixed string "identitytoolkit#GetOobConfirmationCodeResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The code to be send to the user. */
-  var oobCode: js.UndefOr[String] = js.native
+  var oobCode: js.UndefOr[String] = js.undefined
 }
 object GetOobConfirmationCodeResponse {
   

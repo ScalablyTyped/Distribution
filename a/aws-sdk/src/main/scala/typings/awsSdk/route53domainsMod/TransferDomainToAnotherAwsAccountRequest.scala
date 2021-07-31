@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferDomainToAnotherAwsAccountRequest extends StObject {
   
   /**
     * The account ID of the AWS account that you want to transfer the domain to, for example, 111122223333.
     */
-  var AccountId: typings.awsSdk.route53domainsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.route53domainsMod.AccountId
   
   /**
     * The name of the domain that you want to transfer from the current AWS account to another account.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
 }
 object TransferDomainToAnotherAwsAccountRequest {
   

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1Index extends StObject {
   
   /** Required. The index's ancestor mode. Must not be ANCESTOR_MODE_UNSPECIFIED. */
-  var ancestor: js.UndefOr[String] = js.native
+  var ancestor: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource ID of the index. */
-  var indexId: js.UndefOr[String] = js.native
+  var indexId: js.UndefOr[String] = js.undefined
   
   /** Required. The entity kind to which this index applies. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Output only. Project ID. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Required. An ordered sequence of property names and their index attributes. */
-  var properties: js.UndefOr[js.Array[GoogleDatastoreAdminV1IndexedProperty]] = js.native
+  var properties: js.UndefOr[js.Array[GoogleDatastoreAdminV1IndexedProperty]] = js.undefined
   
   /** Output only. The state of the index. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object GoogleDatastoreAdminV1Index {
   

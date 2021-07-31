@@ -2,27 +2,27 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldGeolocationValue extends ClientValueObject {
+trait FieldGeolocationValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_altitude(): Double = js.native
+  def get_altitude(): Double
   
-  def get_latitude(): Double = js.native
+  def get_latitude(): Double
   
-  def get_longitude(): Double = js.native
+  def get_longitude(): Double
   
-  def get_measure(): Double = js.native
+  def get_measure(): Double
   
-  def set_altitude(value: Double): Unit = js.native
+  def set_altitude(value: Double): Unit
   
-  def set_latitude(value: Double): Unit = js.native
+  def set_latitude(value: Double): Unit
   
-  def set_longitude(value: Double): Unit = js.native
+  def set_longitude(value: Double): Unit
   
-  def set_measure(value: Double): Unit = js.native
+  def set_measure(value: Double): Unit
 }
 object FieldGeolocationValue {
   

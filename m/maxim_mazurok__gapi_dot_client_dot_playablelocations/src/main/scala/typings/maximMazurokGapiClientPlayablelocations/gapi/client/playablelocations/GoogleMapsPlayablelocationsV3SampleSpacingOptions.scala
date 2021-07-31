@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SampleSpacingOptions extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait GoogleMapsPlayablelocationsV3SampleSpacingOptions extends StObject {
     * Finally, add locations for Z within 200m of each other as well X and Y. The distance diagram between those locations end up as: * From->To. * X->X: 400m * Y->X, Y->Y: unspecified. *
     * Z->X, Z->Y, Z->Z: 200m.
     */
-  var minSpacingMeters: js.UndefOr[Double] = js.native
+  var minSpacingMeters: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies whether the minimum spacing constraint applies to the center-point or to the snapped point of playable locations. The default value is `CENTER_POINT`. If a snapped point
     * is not available for a playable location, its center-point is used instead. Set this to the point type used in your game.
     */
-  var pointType: js.UndefOr[String] = js.native
+  var pointType: js.UndefOr[String] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SampleSpacingOptions {
   

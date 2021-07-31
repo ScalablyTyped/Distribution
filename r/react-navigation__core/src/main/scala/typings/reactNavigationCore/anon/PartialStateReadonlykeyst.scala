@@ -4,20 +4,18 @@ import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
 import typings.reactNavigationRouters.typesMod.PartialRoute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @react-navigation/routers.@react-navigation/routers.PartialState<std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | @react-navigation/routers.@react-navigation/routers.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}>> */
-@js.native
 trait PartialStateReadonlykeyst extends StObject {
   
-  var history: js.UndefOr[js.Array[_]] = js.native
+  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var routeNames: js.UndefOr[js.Array[String]] = js.native
+  var routeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   val routes: js.Array[
     PartialRoute[
@@ -26,11 +24,11 @@ trait PartialStateReadonlykeyst extends StObject {
         js.UndefOr[js.Object]
       ]
     ]
-  ] = js.native
+  ]
   
-  val stale: js.UndefOr[`true`] = js.native
+  val stale: js.UndefOr[`true`] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PartialStateReadonlykeyst {
   
@@ -53,7 +51,7 @@ object PartialStateReadonlykeyst {
   implicit class PartialStateReadonlykeystMutableBuilder[Self <: PartialStateReadonlykeyst] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

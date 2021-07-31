@@ -4,26 +4,25 @@ import typings.appBuilderLib.commonWindowsInstallerConfigurationMod.CommonWindow
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object msiOptionsMod {
   
-  @js.native
   trait MsiOptions
-    extends CommonWindowsInstallerConfiguration
+    extends StObject
+       with CommonWindowsInstallerConfiguration
        with TargetSpecificOptions {
     
     /**
       * The [upgrade code](https://msdn.microsoft.com/en-us/library/windows/desktop/aa372375(v=vs.85).aspx). Optional, by default generated using app id.
       */
-    val upgradeCode: js.UndefOr[String | Null] = js.native
+    val upgradeCode: js.UndefOr[String | Null] = js.undefined
     
     /**
       * If `warningsAsErrors` is `true` (default): treat warnings as errors. If `warningsAsErrors` is `false`: allow warnings.
       * @default true
       */
-    val warningsAsErrors: js.UndefOr[Boolean] = js.native
+    val warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   }
   object MsiOptions {
     

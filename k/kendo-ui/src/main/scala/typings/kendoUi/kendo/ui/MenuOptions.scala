@@ -3,51 +3,49 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.HierarchicalDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuOptions extends StObject {
   
-  var activate: js.UndefOr[js.Function1[/* e */ MenuActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ MenuActivateEvent, Unit]] = js.undefined
   
-  var animation: js.UndefOr[Boolean | MenuAnimation] = js.native
+  var animation: js.UndefOr[Boolean | MenuAnimation] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ MenuCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ MenuCloseEvent, Unit]] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var dataContentField: js.UndefOr[String] = js.native
+  var dataContentField: js.UndefOr[String] = js.undefined
   
-  var dataImageUrlField: js.UndefOr[String] = js.native
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
   
-  var dataSpriteCssClassField: js.UndefOr[String] = js.native
+  var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var dataUrlField: js.UndefOr[String] = js.native
+  var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var deactivate: js.UndefOr[js.Function1[/* e */ MenuDeactivateEvent, Unit]] = js.native
+  var deactivate: js.UndefOr[js.Function1[/* e */ MenuDeactivateEvent, Unit]] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var hoverDelay: js.UndefOr[Double] = js.native
+  var hoverDelay: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ MenuOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ MenuOpenEvent, Unit]] = js.undefined
   
-  var openOnClick: js.UndefOr[Boolean | MenuOpenOnClick] = js.native
+  var openOnClick: js.UndefOr[Boolean | MenuOpenOnClick] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var popupCollision: js.UndefOr[String] = js.native
+  var popupCollision: js.UndefOr[String] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | MenuScrollable] = js.native
+  var scrollable: js.UndefOr[Boolean | MenuScrollable] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ MenuSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ MenuSelectEvent, Unit]] = js.undefined
 }
 object MenuOptions {
   

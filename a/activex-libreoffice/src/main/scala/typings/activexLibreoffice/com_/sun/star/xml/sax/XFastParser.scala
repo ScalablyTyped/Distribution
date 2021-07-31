@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,28 +46,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XFastDocumentHandler.endDocument()} .
   * @see http://wiki.openoffice.org/wiki/FastParser
   */
-@js.native
-trait XFastParser extends XInterface {
+trait XFastParser
+  extends StObject
+     with XInterface {
   
   /** Gets the namespace url string. */
-  def getNamespaceURL(prefix: String): String = js.native
+  def getNamespaceURL(prefix: String): String
   
   /**
     * parses an XML document from a stream.
     *
     * Set the desired handlers before calling this method.
     */
-  def parseStream(aInputSource: InputSource): Unit = js.native
+  def parseStream(aInputSource: InputSource): Unit
   
   /**
     * registers a known namespace url with the given integer token. ;
     * @param NamespaceURL the namespace URL.
     * @param NamespaceToken an integer token that must be greater than {@link FastToken.NAMESPACE} .
     */
-  def registerNamespace(NamespaceURL: String, NamespaceToken: Double): Unit = js.native
+  def registerNamespace(NamespaceURL: String, NamespaceToken: Double): Unit
   
   /** allows an application to register a DTD-Handler. */
-  def setEntityResolver(Resolver: XEntityResolver): Unit = js.native
+  def setEntityResolver(Resolver: XEntityResolver): Unit
   
   /**
     * allows an application to register an error event handler.
@@ -76,23 +76,23 @@ trait XFastParser extends XInterface {
     * Note that the error handler can throw an exception when an error or warning occurs. Note that an exception is thrown by the parser when an
     * unrecoverable (fatal) error occurs.
     */
-  def setErrorHandler(Handler: XErrorHandler): Unit = js.native
+  def setErrorHandler(Handler: XErrorHandler): Unit
   
   /** Application must register a document event handler to get sax events for the parsed stream. */
-  def setFastDocumentHandler(Handler: XFastDocumentHandler): Unit = js.native
+  def setFastDocumentHandler(Handler: XFastDocumentHandler): Unit
   
   /**
     * sets a locale specified for localization of warnings and error messages.
     *
     * Set the language of the error messages. Useful when the parsing errors will be presented to the user.
     */
-  def setLocale(locale: Locale): Unit = js.native
+  def setLocale(locale: Locale): Unit
   
   /** @since LibreOffice 5.3 */
-  def setNamespaceHandler(Handler: XFastNamespaceHandler): Unit = js.native
+  def setNamespaceHandler(Handler: XFastNamespaceHandler): Unit
   
   /** must be registered to translate known XML names to integer tokens. */
-  def setTokenHandler(Handler: XFastTokenHandler): Unit = js.native
+  def setTokenHandler(Handler: XFastTokenHandler): Unit
 }
 object XFastParser {
   

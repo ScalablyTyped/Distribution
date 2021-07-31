@@ -21,417 +21,322 @@ import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.int32
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object util {
   
-  @JSImport("@tensorflow/tfjs-node", "util.arraysEqual")
+  @JSImport("@tensorflow/tfjs-node", "util")
   @js.native
-  def arraysEqual(n1: FlatVector, n2: FlatVector): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-node", "util.assert")
-  @js.native
-  def assert(expr: Boolean, msg: js.Function0[String]): Unit = js.native
+  @scala.inline
+  def arraysEqual(n1: FlatVector, n2: FlatVector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(n1.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.assertNonNegativeIntegerDimensions")
-  @js.native
-  def assertNonNegativeIntegerDimensions(shape: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def assert(expr: Boolean, msg: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expr.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.assertNonNull")
-  @js.native
-  def assertNonNull(a: TensorLike): Unit = js.native
+  @scala.inline
+  def assertNonNegativeIntegerDimensions(shape: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNonNegativeIntegerDimensions")(shape.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.assertShapesMatch")
-  @js.native
-  def assertShapesMatch(shapeA: js.Array[Double], shapeB: js.Array[Double]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.assertShapesMatch")
-  @js.native
-  def assertShapesMatch(shapeA: js.Array[Double], shapeB: js.Array[Double], errorMessagePrefix: String): Unit = js.native
+  @scala.inline
+  def assertNonNull(a: TensorLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNonNull")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.bytesFromStringArray")
-  @js.native
-  def bytesFromStringArray(arr: js.Array[Uint8Array]): Double = js.native
+  @scala.inline
+  def assertShapesMatch(shapeA: js.Array[Double], shapeB: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertShapesMatch")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assertShapesMatch(shapeA: js.Array[Double], shapeB: js.Array[Double], errorMessagePrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertShapesMatch")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], errorMessagePrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.bytesPerElement")
-  @js.native
-  def bytesPerElement(dtype: DataType): Double = js.native
+  @scala.inline
+  def bytesFromStringArray(arr: js.Array[Uint8Array]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesFromStringArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_bool(vals: js.Array[Double], dtype: bool): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_bool(vals: Uint8Array, dtype: bool): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_complex64(vals: js.Array[Double], dtype: complex64): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_complex64(vals: Float32Array, dtype: complex64): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_float32(vals: js.Array[Double], dtype: float32): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_float32(vals: Float32Array, dtype: float32): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_int32(vals: js.Array[Double], dtype: int32): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_int32(vals: Int32Array, dtype: int32): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.checkConversionForErrors")
-  @js.native
-  def checkConversionForErrors_string(vals: js.Array[Double | String], dtype: string): Unit = js.native
+  @scala.inline
+  def bytesPerElement(dtype: DataType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesPerElement")(dtype.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.clamp")
-  @js.native
-  def clamp(min: Double, x: Double, max: Double): Double = js.native
+  @scala.inline
+  def checkConversionForErrors_bool(vals: js.Array[Double], dtype: bool): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkConversionForErrors_bool(vals: Uint8Array, dtype: bool): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.computeStrides")
-  @js.native
-  def computeStrides(shape: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def checkConversionForErrors_complex64(vals: js.Array[Double], dtype: complex64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkConversionForErrors_complex64(vals: Float32Array, dtype: complex64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.createScalarValue")
-  @js.native
-  def createScalarValue(value: DataType, dtype: DataType): BackendValues = js.native
+  @scala.inline
+  def checkConversionForErrors_float32(vals: js.Array[Double], dtype: float32): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkConversionForErrors_float32(vals: Float32Array, dtype: float32): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.createShuffledIndices")
-  @js.native
-  def createShuffledIndices(n: Double): Uint32Array = js.native
+  @scala.inline
+  def checkConversionForErrors_int32(vals: js.Array[Double], dtype: int32): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkConversionForErrors_int32(vals: Int32Array, dtype: int32): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.decodeString")
-  @js.native
-  def decodeString(bytes: Uint8Array): String = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.decodeString")
-  @js.native
-  def decodeString(bytes: Uint8Array, encoding: String): String = js.native
+  @scala.inline
+  def checkConversionForErrors_string(vals: js.Array[Double | String], dtype: string): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkConversionForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.distSquared")
-  @js.native
-  def distSquared(a: FlatVector, b: FlatVector): Double = js.native
+  @scala.inline
+  def clamp(min: Double, x: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], x.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.encodeString")
-  @js.native
-  def encodeString(s: String): Uint8Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.encodeString")
-  @js.native
-  def encodeString(s: String, encoding: String): Uint8Array = js.native
+  @scala.inline
+  def computeStrides(shape: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStrides")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.fetch")
-  @js.native
-  def fetch(path: String): js.Promise[Response] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.fetch")
-  @js.native
-  def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
+  @scala.inline
+  def createScalarValue(value: DataType, dtype: DataType): BackendValues = (^.asInstanceOf[js.Dynamic].applyDynamic("createScalarValue")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[BackendValues]
   
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: String): js.Array[String] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: String, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[String] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: String, result: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: String, result: js.Array[String], skipTypedArray: Boolean): js.Array[String] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: js.Promise[Double]): js.Array[js.Promise[Double]] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: js.Promise[Double], result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[js.Promise[Double]] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]]): js.Array[js.Promise[Double]] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]], skipTypedArray: Boolean): js.Array[js.Promise[Double]] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Boolean): js.Array[Boolean] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Boolean, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Boolean] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Boolean, result: js.Array[Boolean]): js.Array[Boolean] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Boolean, result: js.Array[Boolean], skipTypedArray: Boolean): js.Array[Boolean] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Double): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Double, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Double, result: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Double, result: js.Array[Double], skipTypedArray: Boolean): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Float32Array): js.Array[Float32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Float32Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Float32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Float32Array, result: js.Array[Float32Array]): js.Array[Float32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Float32Array, result: js.Array[Float32Array], skipTypedArray: Boolean): js.Array[Float32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Int32Array): js.Array[Int32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Int32Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Int32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Int32Array, result: js.Array[Int32Array]): js.Array[Int32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Int32Array, result: js.Array[Int32Array], skipTypedArray: Boolean): js.Array[Int32Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Uint8Array): js.Array[Uint8Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Uint8Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Uint8Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Uint8Array, result: js.Array[Uint8Array]): js.Array[Uint8Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten(arr: Uint8Array, result: js.Array[Uint8Array], skipTypedArray: Boolean): js.Array[Uint8Array] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T]): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T]): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.flatten")
-  @js.native
-  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T], skipTypedArray: Boolean): js.Array[T] = js.native
+  @scala.inline
+  def createShuffledIndices(n: Double): Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createShuffledIndices")(n.asInstanceOf[js.Any]).asInstanceOf[Uint32Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.getArrayFromDType")
-  @js.native
-  def getArrayFromDType_bool(dtype: bool, size: Double): Uint8Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.getArrayFromDType")
-  @js.native
-  def getArrayFromDType_complex64(dtype: complex64, size: Double): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.getArrayFromDType")
-  @js.native
-  def getArrayFromDType_float32(dtype: float32, size: Double): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.getArrayFromDType")
-  @js.native
-  def getArrayFromDType_int32(dtype: int32, size: Double): Int32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.getArrayFromDType")
-  @js.native
-  def getArrayFromDType_string(dtype: string, size: Double): js.Array[String] = js.native
+  @scala.inline
+  def decodeString(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decodeString(bytes: Uint8Array, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeString")(bytes.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-node", "util.getTypedArrayFromDType")
-  @js.native
-  def getTypedArrayFromDType[D /* <: NumericDataType */](dtype: D, size: Double): /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = js.native
+  @scala.inline
+  def distSquared(a: FlatVector, b: FlatVector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distSquared")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.hasEncodingLoss")
-  @js.native
-  def hasEncodingLoss(oldType: DataType, newType: DataType): Boolean = js.native
+  @scala.inline
+  def encodeString(s: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeString")(s.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def encodeString(s: String, encoding: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeString")(s.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.indexToLoc")
-  @js.native
-  def indexToLoc(index: Double, rank: Double, strides: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def fetch(path: String): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any], requestInits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.inferDtype")
-  @js.native
-  def inferDtype(values: TensorLike): DataType = js.native
+  @scala.inline
+  def flatten(arr: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def flatten(arr: String, result: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def flatten(arr: String, result: js.Array[String], skipTypedArray: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def flatten(arr: String, result: Unit, skipTypedArray: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def flatten(arr: js.Promise[Double]): js.Array[js.Promise[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Promise[Double]]]
+  @scala.inline
+  def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]]): js.Array[js.Promise[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Promise[Double]]]
+  @scala.inline
+  def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]], skipTypedArray: Boolean): js.Array[js.Promise[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Promise[Double]]]
+  @scala.inline
+  def flatten(arr: js.Promise[Double], result: Unit, skipTypedArray: Boolean): js.Array[js.Promise[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Promise[Double]]]
+  @scala.inline
+  def flatten(arr: Boolean): js.Array[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def flatten(arr: Boolean, result: js.Array[Boolean]): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def flatten(arr: Boolean, result: js.Array[Boolean], skipTypedArray: Boolean): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def flatten(arr: Boolean, result: Unit, skipTypedArray: Boolean): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def flatten(arr: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def flatten(arr: Double, result: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def flatten(arr: Double, result: js.Array[Double], skipTypedArray: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def flatten(arr: Double, result: Unit, skipTypedArray: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def flatten(arr: Float32Array): js.Array[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Float32Array]]
+  @scala.inline
+  def flatten(arr: Float32Array, result: js.Array[Float32Array]): js.Array[Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Float32Array]]
+  @scala.inline
+  def flatten(arr: Float32Array, result: js.Array[Float32Array], skipTypedArray: Boolean): js.Array[Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Float32Array]]
+  @scala.inline
+  def flatten(arr: Float32Array, result: Unit, skipTypedArray: Boolean): js.Array[Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Float32Array]]
+  @scala.inline
+  def flatten(arr: Int32Array): js.Array[Int32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Int32Array]]
+  @scala.inline
+  def flatten(arr: Int32Array, result: js.Array[Int32Array]): js.Array[Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Int32Array]]
+  @scala.inline
+  def flatten(arr: Int32Array, result: js.Array[Int32Array], skipTypedArray: Boolean): js.Array[Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Int32Array]]
+  @scala.inline
+  def flatten(arr: Int32Array, result: Unit, skipTypedArray: Boolean): js.Array[Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Int32Array]]
+  @scala.inline
+  def flatten(arr: Uint8Array): js.Array[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Uint8Array]]
+  @scala.inline
+  def flatten(arr: Uint8Array, result: js.Array[Uint8Array]): js.Array[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Uint8Array]]
+  @scala.inline
+  def flatten(arr: Uint8Array, result: js.Array[Uint8Array], skipTypedArray: Boolean): js.Array[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Uint8Array]]
+  @scala.inline
+  def flatten(arr: Uint8Array, result: Unit, skipTypedArray: Boolean): js.Array[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[Uint8Array]]
+  @scala.inline
+  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T], skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: Unit, skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.inferFromImplicitShape")
-  @js.native
-  def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = js.native
+  @scala.inline
+  def getArrayFromDType_bool(dtype: bool, size: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isBoolean")
-  @js.native
-  def isBoolean(value: js.Object): Boolean = js.native
+  @scala.inline
+  def getArrayFromDType_complex64(dtype: complex64, size: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isFunction")
-  @js.native
-  def isFunction(f: js.Function): Boolean = js.native
+  @scala.inline
+  def getArrayFromDType_float32(dtype: float32, size: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isInt")
-  @js.native
-  def isInt(a: Double): Boolean = js.native
+  @scala.inline
+  def getArrayFromDType_int32(dtype: int32, size: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isNumber")
-  @js.native
-  def isNumber(value: js.Object): Boolean = js.native
+  @scala.inline
+  def getArrayFromDType_string(dtype: string, size: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isPromise")
-  @js.native
-  def isPromise(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def getTypedArrayFromDType[D /* <: NumericDataType */](dtype: D, size: Double): /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypedArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isScalarShape")
-  @js.native
-  def isScalarShape(shape: js.Array[Double]): Boolean = js.native
+  @scala.inline
+  def hasEncodingLoss(oldType: DataType, newType: DataType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasEncodingLoss")(oldType.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isString")
-  @js.native
-  def isString(value: js.Object): /* is string */ Boolean = js.native
+  @scala.inline
+  def indexToLoc(index: Double, rank: Double, strides: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToLoc")(index.asInstanceOf[js.Any], rank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isTypedArray")
-  @js.native
-  def isTypedArray(a: js.Object): Boolean = js.native
+  @scala.inline
+  def inferDtype(values: TensorLike): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
-  @JSImport("@tensorflow/tfjs-node", "util.isValidDtype")
-  @js.native
-  def isValidDtype(dtype: DataType): Boolean = js.native
+  @scala.inline
+  def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferFromImplicitShape")(shape.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.locToIndex")
-  @js.native
-  def locToIndex(locs: js.Array[Double], rank: Double, strides: js.Array[Double]): Double = js.native
+  @scala.inline
+  def isBoolean(value: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.makeOnesTypedArray")
-  @js.native
-  def makeOnesTypedArray_bool(size: Double, dtype: bool): Uint8Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeOnesTypedArray")
-  @js.native
-  def makeOnesTypedArray_complex64(size: Double, dtype: complex64): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeOnesTypedArray")
-  @js.native
-  def makeOnesTypedArray_float32(size: Double, dtype: float32): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeOnesTypedArray")
-  @js.native
-  def makeOnesTypedArray_int32(size: Double, dtype: int32): Int32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeOnesTypedArray")
-  @js.native
-  def makeOnesTypedArray_string(size: Double, dtype: string): js.Array[String] = js.native
+  @scala.inline
+  def isFunction(f: js.Function): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(f.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosNestedTypedArray")
-  @js.native
-  def makeZerosNestedTypedArray_bool(shape: js.Array[Double], dtype: bool): Double | js.Array[_] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosNestedTypedArray")
-  @js.native
-  def makeZerosNestedTypedArray_complex64(shape: js.Array[Double], dtype: complex64): Double | js.Array[_] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosNestedTypedArray")
-  @js.native
-  def makeZerosNestedTypedArray_float32(shape: js.Array[Double], dtype: float32): Double | js.Array[_] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosNestedTypedArray")
-  @js.native
-  def makeZerosNestedTypedArray_int32(shape: js.Array[Double], dtype: int32): Double | js.Array[_] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosNestedTypedArray")
-  @js.native
-  def makeZerosNestedTypedArray_string(shape: js.Array[Double], dtype: string): Double | js.Array[_] = js.native
+  @scala.inline
+  def isInt(a: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosTypedArray")
-  @js.native
-  def makeZerosTypedArray_bool(size: Double, dtype: bool): Uint8Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosTypedArray")
-  @js.native
-  def makeZerosTypedArray_complex64(size: Double, dtype: complex64): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosTypedArray")
-  @js.native
-  def makeZerosTypedArray_float32(size: Double, dtype: float32): Float32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosTypedArray")
-  @js.native
-  def makeZerosTypedArray_int32(size: Double, dtype: int32): Int32Array = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.makeZerosTypedArray")
-  @js.native
-  def makeZerosTypedArray_string(size: Double, dtype: string): js.Array[String] = js.native
+  @scala.inline
+  def isNumber(value: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.nearestDivisor")
-  @js.native
-  def nearestDivisor(size: Double, start: Double): Double = js.native
+  @scala.inline
+  def isPromise(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.nearestLargerEven")
-  @js.native
-  def nearestLargerEven(`val`: Double): Double = js.native
+  @scala.inline
+  def isScalarShape(shape: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalarShape")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def isString(value: js.Object): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.parseAxisParam")
-  @js.native
-  def parseAxisParam(axis: js.Array[Double], shape: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.parseAxisParam")
-  @js.native
-  def parseAxisParam(axis: Double, shape: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def isTypedArray(a: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedArray")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.randUniform")
-  @js.native
-  def randUniform(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def isValidDtype(dtype: DataType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDtype")(dtype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-node", "util.repeatedTry")
-  @js.native
-  def repeatedTry(checkFn: js.Function0[Boolean]): js.Promise[Unit] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.repeatedTry")
-  @js.native
-  def repeatedTry(checkFn: js.Function0[Boolean], delayFn: js.UndefOr[scala.Nothing], maxCounter: Double): js.Promise[Unit] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.repeatedTry")
-  @js.native
-  def repeatedTry(checkFn: js.Function0[Boolean], delayFn: js.Function1[/* counter */ Double, Double]): js.Promise[Unit] = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.repeatedTry")
-  @js.native
+  @scala.inline
+  def locToIndex(locs: js.Array[Double], rank: Double, strides: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("locToIndex")(locs.asInstanceOf[js.Any], rank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def makeOnesTypedArray_bool(size: Double, dtype: bool): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOnesTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def makeOnesTypedArray_complex64(size: Double, dtype: complex64): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOnesTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
+  def makeOnesTypedArray_float32(size: Double, dtype: float32): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOnesTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
+  def makeOnesTypedArray_int32(size: Double, dtype: int32): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOnesTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  
+  @scala.inline
+  def makeOnesTypedArray_string(size: Double, dtype: string): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOnesTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def makeZerosNestedTypedArray_bool(shape: js.Array[Double], dtype: bool): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosNestedTypedArray")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
+  
+  @scala.inline
+  def makeZerosNestedTypedArray_complex64(shape: js.Array[Double], dtype: complex64): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosNestedTypedArray")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
+  
+  @scala.inline
+  def makeZerosNestedTypedArray_float32(shape: js.Array[Double], dtype: float32): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosNestedTypedArray")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
+  
+  @scala.inline
+  def makeZerosNestedTypedArray_int32(shape: js.Array[Double], dtype: int32): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosNestedTypedArray")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
+  
+  @scala.inline
+  def makeZerosNestedTypedArray_string(shape: js.Array[Double], dtype: string): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosNestedTypedArray")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
+  
+  @scala.inline
+  def makeZerosTypedArray_bool(size: Double, dtype: bool): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def makeZerosTypedArray_complex64(size: Double, dtype: complex64): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
+  def makeZerosTypedArray_float32(size: Double, dtype: float32): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
+  def makeZerosTypedArray_int32(size: Double, dtype: int32): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  
+  @scala.inline
+  def makeZerosTypedArray_string(size: Double, dtype: string): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeZerosTypedArray")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def nearestDivisor(size: Double, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestDivisor")(size.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def nearestLargerEven(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestLargerEven")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  
+  @scala.inline
+  def parseAxisParam(axis: js.Array[Double], shape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAxisParam")(axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def parseAxisParam(axis: Double, shape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAxisParam")(axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def randUniform(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randUniform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def repeatedTry(checkFn: js.Function0[Boolean]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def repeatedTry(checkFn: js.Function0[Boolean], delayFn: js.Function1[/* counter */ Double, Double]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def repeatedTry(
     checkFn: js.Function0[Boolean],
     delayFn: js.Function1[/* counter */ Double, Double],
     maxCounter: Double
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def repeatedTry(checkFn: js.Function0[Boolean], delayFn: Unit, maxCounter: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.rightPad")
-  @js.native
-  def rightPad(a: String, size: Double): String = js.native
+  @scala.inline
+  def rightPad(a: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(a.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-node", "util.shuffle")
-  @js.native
-  def shuffle(array: js.Array[_]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.shuffle")
-  @js.native
-  def shuffle(array: Float32Array): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.shuffle")
-  @js.native
-  def shuffle(array: Int32Array): Unit = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.shuffle")
-  @js.native
-  def shuffle(array: Uint32Array): Unit = js.native
+  @scala.inline
+  def shuffle(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shuffle(array: Float32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shuffle(array: Int32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shuffle(array: Uint32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node", "util.sizeFromShape")
-  @js.native
-  def sizeFromShape(shape: js.Array[Double]): Double = js.native
+  @scala.inline
+  def sizeFromShape(shape: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeFromShape")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.sizeToSquarishShape")
-  @js.native
-  def sizeToSquarishShape(size: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def sizeToSquarishShape(size: Double): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeToSquarishShape")(size.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.squeezeShape")
-  @js.native
-  def squeezeShape(shape: js.Array[Double]): KeptDims = js.native
-  @JSImport("@tensorflow/tfjs-node", "util.squeezeShape")
-  @js.native
-  def squeezeShape(shape: js.Array[Double], axis: js.Array[Double]): KeptDims = js.native
+  @scala.inline
+  def squeezeShape(shape: js.Array[Double]): KeptDims = ^.asInstanceOf[js.Dynamic].applyDynamic("squeezeShape")(shape.asInstanceOf[js.Any]).asInstanceOf[KeptDims]
+  @scala.inline
+  def squeezeShape(shape: js.Array[Double], axis: js.Array[Double]): KeptDims = (^.asInstanceOf[js.Dynamic].applyDynamic("squeezeShape")(shape.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[KeptDims]
   
-  @JSImport("@tensorflow/tfjs-node", "util.sum")
-  @js.native
-  def sum(arr: js.Array[Double]): Double = js.native
+  @scala.inline
+  def sum(arr: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.tanh")
-  @js.native
-  def tanh(x: Double): Double = js.native
+  @scala.inline
+  def tanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node", "util.toNestedArray")
-  @js.native
-  def toNestedArray(shape: js.Array[Double], a: TypedArray): Double | js.Array[_] = js.native
+  @scala.inline
+  def toNestedArray(shape: js.Array[Double], a: TypedArray): Double | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toNestedArray")(shape.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[js.Any]]
   
-  @JSImport("@tensorflow/tfjs-node", "util.toTypedArray")
-  @js.native
-  def toTypedArray(a: TensorLike, dtype: DataType): TypedArray = js.native
+  @scala.inline
+  def toTypedArray(a: TensorLike, dtype: DataType): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("toTypedArray")(a.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
 }

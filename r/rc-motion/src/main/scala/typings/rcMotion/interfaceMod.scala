@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.std.TransitionEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -58,7 +57,7 @@ object interfaceMod {
   
   type MotionEndEventHandler = js.Function2[/* element */ HTMLElement, /* event */ MotionEvent, Boolean | Unit]
   
-  type MotionEvent = (TransitionEvent | AnimationEvent) with Deadline
+  type MotionEvent = (TransitionEvent | AnimationEvent) & Deadline
   
   type MotionEventHandler = js.Function2[/* element */ HTMLElement, /* event */ MotionEvent, CSSProperties | Unit]
   

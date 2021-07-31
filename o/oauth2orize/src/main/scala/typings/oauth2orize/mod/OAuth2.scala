@@ -2,23 +2,21 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuth2 extends StObject {
   
-  var client: js.Any = js.native
+  var client: js.Any
   
-  var info: OAuth2Info = js.native
+  var info: OAuth2Info
   
-  var redirectURI: String = js.native
+  var redirectURI: String
   
-  var req: OAuth2Req = js.native
+  var req: OAuth2Req
   
-  var transactionID: String = js.native
+  var transactionID: String
   
-  var user: js.Any = js.native
+  var user: js.Any
 }
 object OAuth2 {
   

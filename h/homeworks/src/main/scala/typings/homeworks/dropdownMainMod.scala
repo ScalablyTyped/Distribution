@@ -4,7 +4,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMainMod {
@@ -13,6 +12,6 @@ object dropdownMainMod {
   @js.native
   class WorksDropdown protected ()
     extends typings.homeworks.componentDropdownMod.WorksDropdown {
-    def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
   }
 }

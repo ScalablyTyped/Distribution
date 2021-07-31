@@ -2,33 +2,31 @@ package typings.jui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
   /**
     * @cfg {Integer} [count=0]
     * Total number of data records subject to paging)
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [pageCount=10]
     * Number of data records per page
     */
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Integer} [screenCount=5]
     * Number of pages shown on the paging screen
     */
-  var screenCount: js.UndefOr[Double] = js.native
+  var screenCount: js.UndefOr[Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object Count {
   

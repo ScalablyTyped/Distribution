@@ -2,7 +2,6 @@ package typings.heap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,127 +9,170 @@ object mod {
   @JSImport("heap", JSImport.Namespace)
   @js.native
   // Constructor
-  class ^[T] () extends Heap[T] {
+  class ^[T] ()
+    extends StObject
+       with Heap[T] {
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
-  }
-  
-  // Build the heap.
-  /* static member */
-  @JSImport("heap", "heapify")
-  @js.native
-  def heapify[T](array: js.Array[T]): Heap[T] = js.native
-  @JSImport("heap", "heapify")
-  @js.native
-  def heapify[T](array: js.Array[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): Heap[T] = js.native
-  
-  // Find the n largest elements in a dataset.
-  /* static member */
-  @JSImport("heap", "nlargest")
-  @js.native
-  def nlargest[T](array: js.Array[T], n: Double): js.Array[T] = js.native
-  @JSImport("heap", "nlargest")
-  @js.native
-  def nlargest[T](array: js.Array[T], n: Double, cmp: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
-  
-  // Find the n smallest elements in a dataset.
-  /* static member */
-  @JSImport("heap", "nsmallest")
-  @js.native
-  def nsmallest[T](array: js.Array[T], n: Double): js.Array[T] = js.native
-  @JSImport("heap", "nsmallest")
-  @js.native
-  def nsmallest[T](array: js.Array[T], n: Double, cmp: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
-  
-  // Pop the smallest item off the array, maintaining the heap invariant.
-  /* static member */
-  @JSImport("heap", "pop")
-  @js.native
-  def pop[T](array: js.Array[T]): T = js.native
-  @JSImport("heap", "pop")
-  @js.native
-  def pop[T](array: js.Array[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = js.native
-  
-  // Static Methods
-  // Push item onto array, maintaining the heap invariant.
-  /* static member */
-  @JSImport("heap", "push")
-  @js.native
-  def push[T](array: js.Array[T], item: T): Unit = js.native
-  @JSImport("heap", "push")
-  @js.native
-  def push[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): Unit = js.native
-  
-  // Fast version of a heappush followed by a heappop.
-  /* static member */
-  @JSImport("heap", "pushpop")
-  @js.native
-  def pushpop[T](array: js.Array[T], item: T): T = js.native
-  @JSImport("heap", "pushpop")
-  @js.native
-  def pushpop[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = js.native
-  
-  // Pop and return the current smallest value, and add the new item.
-  // This is more efficient than heappop() followed by heappush(), and can be more appropriate when using a fixed size heap. Note that the value returned may be larger than item!
-  /* static member */
-  @JSImport("heap", "replace")
-  @js.native
-  def replace[T](array: js.Array[T], item: T): T = js.native
-  @JSImport("heap", "replace")
-  @js.native
-  def replace[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = js.native
-  
-  // Update the position of the given item in the heap. This function should be called every time the item is being modified.
-  /* static member */
-  @JSImport("heap", "updateItem")
-  @js.native
-  def updateItem[T](array: js.Array[T], item: T): Unit = js.native
-  @JSImport("heap", "updateItem")
-  @js.native
-  def updateItem[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): Unit = js.native
-  
-  @js.native
-  trait Heap[T] extends StObject {
     
-    def copy(): Heap[T] = js.native
+    /* CompleteClass */
+    override def copy(): Heap[T] = js.native
     
     // Determine whether the heap is empty.
-    def empty(): Boolean = js.native
+    /* CompleteClass */
+    override def empty(): Boolean = js.native
     
-    def front(): T = js.native
+    /* CompleteClass */
+    override def front(): T = js.native
     
     // Rebuild the heap. This method may come handy when the priority of the internal data is being modified.
-    def heapify(): Unit = js.native
+    /* CompleteClass */
+    override def heapify(): Unit = js.native
     
-    def insert(item: T): Unit = js.native
+    /* CompleteClass */
+    override def insert(item: T): Unit = js.native
     
     // Return the smallest item of the heap.
-    def peek(): T = js.native
+    /* CompleteClass */
+    override def peek(): T = js.native
     
     // Pop the smallest item off the heap and return it.
-    def pop(): T = js.native
+    /* CompleteClass */
+    override def pop(): T = js.native
     
     // Instance Methods
     // Push item onto heap.
-    def push(item: T): Unit = js.native
+    /* CompleteClass */
+    override def push(item: T): Unit = js.native
     
     // Fast version of a push followed by a pop.
-    def pushpop(item: T): T = js.native
+    /* CompleteClass */
+    override def pushpop(item: T): T = js.native
     
     // Pop and return the current smallest value, and add the new item.
     // This is more efficient than pop() followed by push(), and can be more appropriate when using a fixed size heap.
     // Note that the value returned may be larger than item!
-    def replace(item: T): T = js.native
+    /* CompleteClass */
+    override def replace(item: T): T = js.native
     
     // Get the number of elements stored in the heap.
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
     
     // Return the array representation of the heap. (note: the array is a shallow copy of the heap's internal nodes)
-    def toArray(): js.Array[T] = js.native
+    /* CompleteClass */
+    override def toArray(): js.Array[T] = js.native
     
-    def top(): T = js.native
+    /* CompleteClass */
+    override def top(): T = js.native
     
     // Update the position of the given item in the heap. This function should be called every time the item is being modified.
-    def updateItem(item: T): Unit = js.native
+    /* CompleteClass */
+    override def updateItem(item: T): Unit = js.native
+  }
+  @JSImport("heap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // Build the heap.
+  /* static member */
+  @scala.inline
+  def heapify[T](array: js.Array[T]): Heap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("heapify")(array.asInstanceOf[js.Any]).asInstanceOf[Heap[T]]
+  @scala.inline
+  def heapify[T](array: js.Array[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): Heap[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapify")(array.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[Heap[T]]
+  
+  // Find the n largest elements in a dataset.
+  /* static member */
+  @scala.inline
+  def nlargest[T](array: js.Array[T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nlargest")(array.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def nlargest[T](array: js.Array[T], n: Double, cmp: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nlargest")(array.asInstanceOf[js.Any], n.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  // Find the n smallest elements in a dataset.
+  /* static member */
+  @scala.inline
+  def nsmallest[T](array: js.Array[T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsmallest")(array.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def nsmallest[T](array: js.Array[T], n: Double, cmp: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsmallest")(array.asInstanceOf[js.Any], n.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  // Pop the smallest item off the array, maintaining the heap invariant.
+  /* static member */
+  @scala.inline
+  def pop[T](array: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(array.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def pop[T](array: js.Array[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pop")(array.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  // Static Methods
+  // Push item onto array, maintaining the heap invariant.
+  /* static member */
+  @scala.inline
+  def push[T](array: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def push[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  // Fast version of a heappush followed by a heappop.
+  /* static member */
+  @scala.inline
+  def pushpop[T](array: js.Array[T], item: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pushpop")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pushpop[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pushpop")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  // Pop and return the current smallest value, and add the new item.
+  // This is more efficient than heappop() followed by heappush(), and can be more appropriate when using a fixed size heap. Note that the value returned may be larger than item!
+  /* static member */
+  @scala.inline
+  def replace[T](array: js.Array[T], item: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def replace[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  // Update the position of the given item in the heap. This function should be called every time the item is being modified.
+  /* static member */
+  @scala.inline
+  def updateItem[T](array: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateItem[T](array: js.Array[T], item: T, cmp: js.Function2[/* a */ T, /* b */ T, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait Heap[T] extends StObject {
+    
+    def copy(): Heap[T]
+    
+    // Determine whether the heap is empty.
+    def empty(): Boolean
+    
+    def front(): T
+    
+    // Rebuild the heap. This method may come handy when the priority of the internal data is being modified.
+    def heapify(): Unit
+    
+    def insert(item: T): Unit
+    
+    // Return the smallest item of the heap.
+    def peek(): T
+    
+    // Pop the smallest item off the heap and return it.
+    def pop(): T
+    
+    // Instance Methods
+    // Push item onto heap.
+    def push(item: T): Unit
+    
+    // Fast version of a push followed by a pop.
+    def pushpop(item: T): T
+    
+    // Pop and return the current smallest value, and add the new item.
+    // This is more efficient than pop() followed by push(), and can be more appropriate when using a fixed size heap.
+    // Note that the value returned may be larger than item!
+    def replace(item: T): T
+    
+    // Get the number of elements stored in the heap.
+    def size(): Double
+    
+    // Return the array representation of the heap. (note: the array is a shallow copy of the heap's internal nodes)
+    def toArray(): js.Array[T]
+    
+    def top(): T
+    
+    // Update the position of the given item in the heap. This function should be called every time the item is being modified.
+    def updateItem(item: T): Unit
   }
   object Heap {
     
@@ -156,7 +198,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HeapMutableBuilder[Self <: Heap[_], T] (val x: Self with Heap[T]) extends AnyVal {
+    implicit class HeapMutableBuilder[Self <: Heap[?], T] (val x: Self & Heap[T]) extends AnyVal {
       
       @scala.inline
       def setCopy(value: () => Heap[T]): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))

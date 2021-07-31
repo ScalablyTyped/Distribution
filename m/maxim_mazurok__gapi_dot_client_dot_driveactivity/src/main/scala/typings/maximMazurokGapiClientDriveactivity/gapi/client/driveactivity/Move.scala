@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Move extends StObject {
   
   /** The added parent object(s). */
-  var addedParents: js.UndefOr[js.Array[TargetReference]] = js.native
+  var addedParents: js.UndefOr[js.Array[TargetReference]] = js.undefined
   
   /** The removed parent object(s). */
-  var removedParents: js.UndefOr[js.Array[TargetReference]] = js.native
+  var removedParents: js.UndefOr[js.Array[TargetReference]] = js.undefined
 }
 object Move {
   

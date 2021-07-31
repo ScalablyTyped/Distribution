@@ -4,42 +4,40 @@ import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.officeUiFabricReact.shadesMod.Shade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ithemeslotruleMod {
   
-  @js.native
   trait IThemeSlotRule extends StObject {
     
     /** If set, this slot is the specified shade of the slot it inherits from. */
-    var asShade: js.UndefOr[Shade] = js.native
+    var asShade: js.UndefOr[Shade] = js.undefined
     
     /** The actual color this theme slot is if it is a color. */
-    var color: js.UndefOr[IColor] = js.native
+    var color: js.UndefOr[IColor] = js.undefined
     
     /**
       * A collection of rules that inherit from this one. It is the responsibility of the inheriting rule to add
       * itself to its parent's dependentRules collection.
       */
-    var dependentRules: js.Array[IThemeSlotRule] = js.native
+    var dependentRules: js.Array[IThemeSlotRule]
     
     /** The theme slot this slot is based on. */
-    var inherits: js.UndefOr[IThemeSlotRule] = js.native
+    var inherits: js.UndefOr[IThemeSlotRule] = js.undefined
     
     /**
       * Whether this slot is a background shade, which uses different logic for generating its inheriting-as-shade value.
       */
-    var isBackgroundShade: js.UndefOr[Boolean] = js.native
+    var isBackgroundShade: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this slot has been manually overridden (else, it was automatically generated based on inheritance). */
-    var isCustomized: js.UndefOr[Boolean] = js.native
+    var isCustomized: js.UndefOr[Boolean] = js.undefined
     
     /** The name of this theme slot. */
-    var name: String = js.native
+    var name: String
     
     /** The value of this slot if it is NOT a color. Must be falsey if not a color. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IThemeSlotRule {
     

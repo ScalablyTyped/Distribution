@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowAddingEventUIParam extends StObject {
   
   /**
     * Gets the default value (before editing) for the column with the specified key.
     */
-  var oldValues: js.UndefOr[js.Any] = js.native
+  var oldValues: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the value for the column with the specified key.
     */
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object RowAddingEventUIParam {
   

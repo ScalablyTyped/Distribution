@@ -3,11 +3,12 @@ package typings.codemirror.mod
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorFromTextArea extends Editor {
+trait EditorFromTextArea
+  extends StObject
+     with Editor {
   
   /** Returns the textarea that the instance was based on. */
   def getTextArea(): HTMLTextAreaElement = js.native

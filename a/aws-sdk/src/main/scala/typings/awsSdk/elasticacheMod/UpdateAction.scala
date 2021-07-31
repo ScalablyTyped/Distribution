@@ -2,96 +2,94 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAction extends StObject {
   
   /**
     * The ID of the cache cluster
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the service update on the cache node
     */
-  var CacheNodeUpdateStatus: js.UndefOr[CacheNodeUpdateStatusList] = js.native
+  var CacheNodeUpdateStatus: js.UndefOr[CacheNodeUpdateStatusList] = js.undefined
   
   /**
     * The Elasticache engine to which the update applies. Either Redis or Memcached
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The estimated length of time for the update to complete
     */
-  var EstimatedUpdateTime: js.UndefOr[String] = js.native
+  var EstimatedUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the service update on the node group
     */
-  var NodeGroupUpdateStatus: js.UndefOr[NodeGroupUpdateStatusList] = js.native
+  var NodeGroupUpdateStatus: js.UndefOr[NodeGroupUpdateStatusList] = js.undefined
   
   /**
     * The progress of the service update on the replication group
     */
-  var NodesUpdated: js.UndefOr[String] = js.native
+  var NodesUpdated: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the replication group
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: js.UndefOr[String] = js.native
+  var ServiceUpdateName: js.UndefOr[String] = js.undefined
   
   /**
     * The recommended date to apply the service update to ensure compliance. For information on compliance, see Self-Service Security Updates for Compliance.
     */
-  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.native
+  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date the update is first available
     */
-  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.native
+  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The severity of the service update
     */
-  var ServiceUpdateSeverity: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateSeverity] = js.native
+  var ServiceUpdateSeverity: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateSeverity] = js.undefined
   
   /**
     * The status of the service update
     */
-  var ServiceUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateStatus] = js.native
+  var ServiceUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateStatus] = js.undefined
   
   /**
     * Reflects the nature of the service update 
     */
-  var ServiceUpdateType: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateType] = js.native
+  var ServiceUpdateType: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateType] = js.undefined
   
   /**
     * If yes, all nodes in the replication group have been updated by the recommended apply-by date. If no, at least one node in the replication group have not been updated by the recommended apply-by date. If N/A, the replication group was created after the recommended apply-by date.
     */
-  var SlaMet: js.UndefOr[typings.awsSdk.elasticacheMod.SlaMet] = js.native
+  var SlaMet: js.UndefOr[typings.awsSdk.elasticacheMod.SlaMet] = js.undefined
   
   /**
     * The date that the service update is available to a replication group
     */
-  var UpdateActionAvailableDate: js.UndefOr[TStamp] = js.native
+  var UpdateActionAvailableDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The status of the update action
     */
-  var UpdateActionStatus: js.UndefOr[typings.awsSdk.elasticacheMod.UpdateActionStatus] = js.native
+  var UpdateActionStatus: js.UndefOr[typings.awsSdk.elasticacheMod.UpdateActionStatus] = js.undefined
   
   /**
     * The date when the UpdateActionStatus was last modified
     */
-  var UpdateActionStatusModifiedDate: js.UndefOr[TStamp] = js.native
+  var UpdateActionStatusModifiedDate: js.UndefOr[TStamp] = js.undefined
 }
 object UpdateAction {
   

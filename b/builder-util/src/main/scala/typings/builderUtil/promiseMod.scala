@@ -3,31 +3,38 @@ package typings.builderUtil
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseMod {
   
+  @JSImport("builder-util/out/promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("builder-util/out/promise", "NestedError")
   @js.native
-  class NestedError protected () extends Error {
+  class NestedError protected ()
+    extends StObject
+       with Error {
     def this(errors: js.Array[Error]) = this()
     def this(errors: js.Array[Error], message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @JSImport("builder-util/out/promise", "executeFinally")
-  @js.native
-  def executeFinally[T](promise: js.Promise[T], task: js.Function1[/* isErrorOccurred */ Boolean, js.Promise[_]]): js.Promise[T] = js.native
+  @scala.inline
+  def executeFinally[T](promise: js.Promise[T], task: js.Function1[/* isErrorOccurred */ Boolean, js.Promise[js.Any]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeFinally")(promise.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("builder-util/out/promise", "orIfFileNotExist")
-  @js.native
-  def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = js.native
+  @scala.inline
+  def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("orIfFileNotExist")(promise.asInstanceOf[js.Any], fallbackValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("builder-util/out/promise", "orNullIfFileNotExist")
-  @js.native
-  def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | Null] = js.native
+  @scala.inline
+  def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("orNullIfFileNotExist")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   
-  @JSImport("builder-util/out/promise", "printErrorAndExit")
-  @js.native
-  def printErrorAndExit(error: Error): Unit = js.native
+  @scala.inline
+  def printErrorAndExit(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printErrorAndExit")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

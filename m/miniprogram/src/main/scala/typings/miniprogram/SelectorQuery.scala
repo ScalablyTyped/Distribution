@@ -2,10 +2,8 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectorQuery extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SelectorQuery extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-boundingclientrect)
     */
-  def boundingClientRect(): SelectorQuery = js.native
+  def boundingClientRect(): SelectorQuery
   
   /**
     * Put the query result into callback function. The query result
@@ -26,7 +24,7 @@ trait SelectorQuery extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-exec)
     */
-  def exec(callback: SelectorQueryExecCallback): Unit = js.native
+  def exec(callback: SelectorQueryExecCallback): Unit
   
   /**
     * Put the scroll information of current selected node into the
@@ -34,7 +32,7 @@ trait SelectorQuery extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-scrolloffset)
     */
-  def scrollOffset(): SelectorQuery = js.native
+  def scrollOffset(): SelectorQuery
   
   /**
     * Select the first node that matches the selector, the selector
@@ -42,7 +40,7 @@ trait SelectorQuery extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-select)
     */
-  def select(value: String): SelectorQuery = js.native
+  def select(value: String): SelectorQuery
   
   /**
     * Select all the nodes that match the selector, the selector can
@@ -50,14 +48,14 @@ trait SelectorQuery extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-selectall)
     */
-  def selectAll(value: String): SelectorQuery = js.native
+  def selectAll(value: String): SelectorQuery
   
   /**
     * The object of select window.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_selector-query_query_selectorquery-selectviewport)
     */
-  def selectViewport(): SelectorQuery = js.native
+  def selectViewport(): SelectorQuery
 }
 object SelectorQuery {
   

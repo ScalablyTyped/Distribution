@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contact of an order.
   */
-@js.native
 trait SchemaOrderContact extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait SchemaOrderContact extends StObject {
     * related to this contact in addition to type, title, name, and signature
     * user profile ID.
     */
-  var contactInfo: js.UndefOr[String] = js.native
+  var contactInfo: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this contact.
     */
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
   /**
     * Title of this contact.
     */
-  var contactTitle: js.UndefOr[String] = js.native
+  var contactTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Type of this contact.
     */
-  var contactType: js.UndefOr[String] = js.native
+  var contactType: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the user profile containing the signature that will be embedded
     * into order documents.
     */
-  var signatureUserProfileId: js.UndefOr[String] = js.native
+  var signatureUserProfileId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderContact {
   

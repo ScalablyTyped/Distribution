@@ -10,9 +10,9 @@ Official validator for AMP HTML (www.ampproject.org)
 | ------------------ | :-------------: |
 | Full name          | amphtml-validator |
 | Keywords           | AMP, validator, validate, AMP HTML, Accelerated Mobile Pages |
-| # releases         | 9 |
-| # dependents       | 36 |
-| # downloads        | 12703894 |
+| # releases         | 12 |
+| # dependents       | 40 |
+| # downloads        | 10135406 |
 | # stars            | 5 |
 
 ## Links

@@ -2,13 +2,11 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandsRelationshipsObject extends StObject {
   
-  var resources: CommandsRelationshipsResourceObject = js.native
+  var resources: CommandsRelationshipsResourceObject
 }
 object CommandsRelationshipsObject {
   

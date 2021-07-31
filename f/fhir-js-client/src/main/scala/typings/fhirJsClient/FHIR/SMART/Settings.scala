@@ -2,13 +2,11 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SMART client settings for browser behaviour
   */
-@js.native
 trait Settings extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait Settings extends StObject {
     * instances instantiated on a single thread to continue to function without having sessionStorage data shared
     * across the embedded IE instances.
     */
-  var fullSessionStorageSupport: Boolean = js.native
+  var fullSessionStorageSupport: Boolean
   
   /**
     * Replaces the browser's current URL using window.history.replaceState API.
     * Default to true
     */
-  var replaceBrowserHistory: Boolean = js.native
+  var replaceBrowserHistory: Boolean
 }
 object Settings {
   

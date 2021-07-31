@@ -16,7 +16,6 @@ import typings.reactLottie.reactLottieStrings.loopComplete
 import typings.reactLottie.reactLottieStrings.segmentStart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,18 +28,17 @@ object mod {
   class default ()
     extends Component[LottieProps, js.Any, js.Any]
   
-  @js.native
   trait EventListener extends StObject {
     
     /**
       * A callback that will be executed when the given eventName is received
       */
-    def callback(): Unit = js.native
+    def callback(): Unit
     
     /**
       * The event sent by Lottie
       */
-    var eventName: complete | loopComplete | enterFrame | segmentStart | config_ready | data_ready | loaded_images | DOMLoaded | destroy = js.native
+    var eventName: complete | loopComplete | enterFrame | segmentStart | config_ready | data_ready | loaded_images | DOMLoaded | destroy
   }
   object EventListener {
     
@@ -71,57 +69,56 @@ object mod {
     */
   type Lottie = Component[LottieProps, js.Any, js.Any]
   
-  @js.native
   trait LottieProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String | animation] = js.native
+    var ariaLabel: js.UndefOr[String | animation] = js.undefined
     
-    var ariaRole: js.UndefOr[String | button] = js.native
+    var ariaRole: js.UndefOr[String | button] = js.undefined
     
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of objects containing eventName and a callback function that will be registered as eventListeners on the animation object.
       * Refer to Lottie documentation for a list of available events.
       */
-    var eventListeners: js.UndefOr[js.Array[EventListener]] = js.native
+    var eventListeners: js.UndefOr[js.Array[EventListener]] = js.undefined
     
     /**
       * Height size in pixels
       * @default '100%'
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var isClickToPauseDisabled: js.UndefOr[Boolean] = js.native
+    var isClickToPauseDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Describes if the animation must be in paused mode
       */
-    var isPaused: js.UndefOr[Boolean] = js.native
+    var isPaused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Describes if the animation must be in stopped mode
       */
-    var isStopped: js.UndefOr[Boolean] = js.native
+    var isStopped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Object representing animation settings
       */
-    var options: Options = js.native
+    var options: Options
     
-    var segments: js.UndefOr[js.Array[Double]] = js.native
+    var segments: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * Width size in pixels
       * @default '100%'
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object LottieProps {
     
@@ -223,26 +220,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The JSON data exported from Adobe After Effects using the Bodymovin plugin
       */
-    var animationData: js.Any = js.native
+    var animationData: js.Any
     
     /**
       * Defines if the animation should immediately play when the component enters the DOM
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if the animation should play only once or repeatedly in an endless loop
       * or the number of loops that should be completed before the animation ends
       */
-    var loop: js.UndefOr[Boolean | Double] = js.native
+    var loop: js.UndefOr[Boolean | Double] = js.undefined
     
-    var rendererSettings: js.UndefOr[ClassName] = js.native
+    var rendererSettings: js.UndefOr[ClassName] = js.undefined
   }
   object Options {
     

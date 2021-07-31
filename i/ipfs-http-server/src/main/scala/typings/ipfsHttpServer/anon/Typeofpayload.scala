@@ -2,15 +2,13 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofpayload extends StObject {
   
-  val output: String = js.native
+  val output: String
   
-  val parse: Boolean = js.native
+  val parse: Boolean
 }
 object Typeofpayload {
   

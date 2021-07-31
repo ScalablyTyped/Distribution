@@ -1,25 +1,25 @@
 package typings.reactLeaflet.mod
 
-import typings.leaflet.mod.Direction
+import typings.leaflet.mod.TooltipOptions
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.DivOverlayOptions because Already inherited
-- typings.leaflet.mod.TooltipOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined permanent, interactive, sticky, direction, opacity */ @js.native
-trait TooltipProps extends DivOverlayProps {
+- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typings.reactLeaflet.mod.DivOverlayProps because var conflicts: className, offset, pane, zoomAnimation. Inlined children, onClose, onOpen */ trait TooltipProps
+  extends StObject
+     with TooltipOptions {
   
-  var direction: js.UndefOr[Direction] = js.native
+  var children: Children
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var permanent: js.UndefOr[Boolean] = js.native
-  
-  var sticky: js.UndefOr[Boolean] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object TooltipProps {
   
@@ -33,33 +33,30 @@ object TooltipProps {
   implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
     
     @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
+    def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
   }
 }

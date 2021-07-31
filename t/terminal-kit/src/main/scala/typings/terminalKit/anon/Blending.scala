@@ -3,13 +3,11 @@ package typings.terminalKit.anon
 import typings.terminalKit.screenBufferHDMod.IsBlending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blending extends StObject {
   
-  var blending: IsBlending = js.native
+  var blending: IsBlending
 }
 object Blending {
   

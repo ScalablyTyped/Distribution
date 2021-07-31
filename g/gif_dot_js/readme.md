@@ -12,7 +12,7 @@ JavaScript GIF encoding library
 | Keywords           | gif, animation, encoder |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 33380 |
+| # downloads        | 43147 |
 | # stars            | 2 |
 
 ## Links

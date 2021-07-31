@@ -2,18 +2,16 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Promise error response arguments
   */
-@js.native
 trait ErrorResponse extends StObject {
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var message: String = js.native
+  var message: String
 }
 object ErrorResponse {
   

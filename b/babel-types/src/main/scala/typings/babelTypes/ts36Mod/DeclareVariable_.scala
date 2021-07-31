@@ -3,28 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DeclareVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclareVariable_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
   @JSName("type")
-  var type_DeclareVariable_ : DeclareVariable = js.native
+  var type_DeclareVariable_ : DeclareVariable
 }
 object DeclareVariable_ {
   
   @scala.inline
-  def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double, `type`: DeclareVariable): DeclareVariable_ = {
+  def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double): DeclareVariable_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DeclareVariable")
     __obj.asInstanceOf[DeclareVariable_]
   }
   

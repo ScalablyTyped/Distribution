@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeModelVersionsResult extends StObject {
   
   /**
     * The model version details.
     */
-  var modelVersionDetails: js.UndefOr[modelVersionDetailList] = js.native
+  var modelVersionDetails: js.UndefOr[modelVersionDetailList] = js.undefined
   
   /**
     * The next token.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeModelVersionsResult {
   

@@ -2,7 +2,6 @@ package typings.ioredis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,7 +11,7 @@ trait OverloadedEvalCommand[T, U] extends StObject {
   // All arguments are by default flattened, declaring all possible permuatations
   // would be unreasonable (and probably impossible)
   def apply(args: js.Array[ValueType]): js.Any = js.native
-  def apply(args: js.Array[ValueType], callback: Callback[_]): js.Any = js.native
+  def apply(args: js.Array[ValueType], callback: Callback[js.Any]): js.Any = js.native
   def apply(
     script: String,
     numKeys: Double,

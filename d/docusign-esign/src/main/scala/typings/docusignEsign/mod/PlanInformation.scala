@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanInformation extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var addOns: js.UndefOr[js.Array[/* Contains information about add ons. */ AddOn]] = js.native
+  var addOns: js.UndefOr[js.Array[/* Contains information about add ons. */ AddOn]] = js.undefined
   
   /**
     * Specifies the ISO currency code for the account.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var freeTrialDaysOverride: js.UndefOr[String] = js.native
+  var freeTrialDaysOverride: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
@@ -30,14 +28,14 @@ trait PlanInformation extends StObject {
     js.Array[
       /* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */ FeatureSet
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * DocuSign's id for the account plan.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
-  var recipientDomains: js.UndefOr[js.Array[RecipientDomain]] = js.native
+  var recipientDomains: js.UndefOr[js.Array[RecipientDomain]] = js.undefined
 }
 object PlanInformation {
   

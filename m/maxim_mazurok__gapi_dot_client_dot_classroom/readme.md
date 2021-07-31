@@ -10,9 +10,9 @@ TypeScript typings for Google Classroom API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.classroom |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 279 |
+| # downloads        | 4069 |
 | # stars            | 0 |
 
 ## Links

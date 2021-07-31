@@ -3,26 +3,26 @@ package typings.mangopay2NodejsSdk.mod.user
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserData extends EntityBaseData {
+trait UserData
+  extends StObject
+     with EntityBaseData {
   
   /**
     * The person's email address (not more than 12 consecutive numbers) - must be a valid email
     */
-  var Email: String = js.native
+  var Email: String
   
   /**
     * KYC Level (LIGHT or REGULAR)
     */
-  var KYCLevel: typings.mangopay2NodejsSdk.mod.user.KYCLevel = js.native
+  var KYCLevel: typings.mangopay2NodejsSdk.mod.user.KYCLevel
   
   /**
     * Type of user
     */
-  var PersonType: typings.mangopay2NodejsSdk.mod.user.PersonType = js.native
+  var PersonType: typings.mangopay2NodejsSdk.mod.user.PersonType
 }
 object UserData {
   

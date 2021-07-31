@@ -3,22 +3,20 @@ package typings.oauth2Server
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<oauth2-server.oauth2-server.AuthorizationCode, 'authorizationCode' | 'expiresAt' | 'redirectUri' | 'scope'> */
-  @js.native
   trait PickAuthorizationCodeauth extends StObject {
     
-    var authorizationCode: String = js.native
+    var authorizationCode: String
     
-    var expiresAt: Date = js.native
+    var expiresAt: Date
     
-    var redirectUri: String = js.native
+    var redirectUri: String
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object PickAuthorizationCodeauth {
     

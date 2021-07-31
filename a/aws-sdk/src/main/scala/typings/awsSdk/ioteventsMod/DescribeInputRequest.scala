@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInputRequest extends StObject {
   
   /**
     * The name of the input.
     */
-  var inputName: InputName = js.native
+  var inputName: InputName
 }
 object DescribeInputRequest {
   

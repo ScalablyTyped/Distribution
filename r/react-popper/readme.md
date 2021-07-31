@@ -10,13 +10,13 @@ Official library to use Popper on React projects
 | ------------------ | :-------------: |
 | Full name          | react-popper |
 | Keywords           | react, react-popper, popperjs, component, drop, tooltip, popover |
-| # releases         | 17 |
-| # dependents       | 531 |
-| # downloads        | 127217284 |
+| # releases         | 13 |
+| # dependents       | 652 |
+| # downloads        | 159871769 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/popperjs/react-popper)
+- [Homepage](https://popper.js.org/react-popper)
 - [Bugs](https://github.com/popperjs/react-popper/issues)
 - [Repository](https://github.com/popperjs/react-popper)
 - [Npm](https://www.npmjs.com/package/react-popper)

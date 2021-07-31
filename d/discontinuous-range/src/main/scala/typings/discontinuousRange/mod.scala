@@ -2,14 +2,15 @@ package typings.discontinuousRange
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("discontinuous-range", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DiscontinuousRange {
+  class ^ protected ()
+    extends StObject
+       with DiscontinuousRange {
     /**
       * Creates a discontinuous range at rangeStart, and ending at
       * rangeEnd. If rangeEnd is not specified, a range containing

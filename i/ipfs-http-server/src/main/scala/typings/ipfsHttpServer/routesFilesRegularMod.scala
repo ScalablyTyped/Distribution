@@ -5,7 +5,6 @@ import typings.ipfsHttpServer.anon.Path
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routesFilesRegularMod {
@@ -14,44 +13,38 @@ object routesFilesRegularMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "concat")
-  @js.native
-  def concat(items: ((js.Array[MethodOptions | Path]) | MethodOptions | Path)*): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def concat(items: ((js.Array[MethodOptions | Path]) | MethodOptions | Path)*): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "copyWithin")
-  @js.native
-  def copyWithin(target: Double, start: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "copyWithin")
-  @js.native
-  def copyWithin(target: Double, start: Double, end: Double): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def copyWithin(target: Double, start: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(target.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def copyWithin(target: Double, start: Double, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(target.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "entries")
-  @js.native
-  def entries(): IterableIterator[js.Tuple2[Double, Path | MethodOptions]] = js.native
+  @scala.inline
+  def entries(): IterableIterator[js.Tuple2[Double, Path | MethodOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")().asInstanceOf[IterableIterator[js.Tuple2[Double, Path | MethodOptions]]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "every")
-  @js.native
+  @scala.inline
   def every(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ]
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "every")
-  @js.native
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
   def every(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "every")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
   def every_S_UnionPathMethodOptions[S /* <: Path | MethodOptions */](
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -59,9 +52,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       /* is S */ Boolean
     ]
-  ): /* is std.Array<S> */ Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "every")
-  @js.native
+  ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
+  @scala.inline
   def every_S_UnionPathMethodOptions[S /* <: Path | MethodOptions */](
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -70,56 +62,46 @@ object routesFilesRegularMod {
       /* is S */ Boolean
     ],
     thisArg: js.Any
-  ): /* is std.Array<S> */ Boolean = js.native
+  ): /* is std.Array<S> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[/* is std.Array<S> */ Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: MethodOptions): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: MethodOptions, start: js.UndefOr[scala.Nothing], end: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: MethodOptions, start: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: MethodOptions, start: Double, end: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: Path): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: Path, start: js.UndefOr[scala.Nothing], end: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: Path, start: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "fill")
-  @js.native
-  def fill(value: Path, start: Double, end: Double): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def fill(value: MethodOptions): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: MethodOptions, start: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: MethodOptions, start: Double, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: MethodOptions, start: Unit, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: Path): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: Path, start: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: Path, start: Double, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def fill(value: Path, start: Unit, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "filter")
-  @js.native
+  @scala.inline
   def filter(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ]
-  ): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "filter")
-  @js.native
+  ): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
   def filter(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "filter")
-  @js.native
+  ): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  
+  @scala.inline
   def filter_S_1_UnionPathMethodOptions[S_1 /* <: Path | MethodOptions */](
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -127,9 +109,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       /* is S_1 */ Boolean
     ]
-  ): js.Array[S_1] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "filter")
-  @js.native
+  ): js.Array[S_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S_1]]
+  @scala.inline
   def filter_S_1_UnionPathMethodOptions[S_1 /* <: Path | MethodOptions */](
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -138,31 +119,28 @@ object routesFilesRegularMod {
       /* is S_1 */ Boolean
     ],
     thisArg: js.Any
-  ): js.Array[S_1] = js.native
+  ): js.Array[S_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[S_1]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "find")
-  @js.native
+  @scala.inline
   def find(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* obj */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ]
-  ): js.UndefOr[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "find")
-  @js.native
+  ): js.UndefOr[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Path | MethodOptions]]
+  @scala.inline
   def find(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* obj */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): js.UndefOr[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "find")
-  @js.native
+  ): js.UndefOr[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Path | MethodOptions]]
+  @scala.inline
   def find[S_2 /* <: Path | MethodOptions */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -171,9 +149,8 @@ object routesFilesRegularMod {
       /* obj */ js.Array[Path | MethodOptions], 
       /* is S_2 */ Boolean
     ]
-  ): js.UndefOr[S_2] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "find")
-  @js.native
+  ): js.UndefOr[S_2] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[S_2]]
+  @scala.inline
   def find[S_2 /* <: Path | MethodOptions */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -183,32 +160,29 @@ object routesFilesRegularMod {
       /* is S_2 */ Boolean
     ],
     thisArg: js.Any
-  ): js.UndefOr[S_2] = js.native
+  ): js.UndefOr[S_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[S_2]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "findIndex")
-  @js.native
+  @scala.inline
   def findIndex(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* obj */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ]
-  ): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "findIndex")
-  @js.native
+  ): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def findIndex(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* obj */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "forEach")
-  @js.native
+  @scala.inline
   def forEach(
     callbackfn: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -216,9 +190,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "forEach")
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def forEach(
     callbackfn: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -227,57 +200,42 @@ object routesFilesRegularMod {
       Unit
     ],
     thisArg: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "includes")
-  @js.native
-  def includes(searchElement: MethodOptions): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "includes")
-  @js.native
-  def includes(searchElement: MethodOptions, fromIndex: Double): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "includes")
-  @js.native
-  def includes(searchElement: Path): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "includes")
-  @js.native
-  def includes(searchElement: Path, fromIndex: Double): Boolean = js.native
+  @scala.inline
+  def includes(searchElement: MethodOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def includes(searchElement: MethodOptions, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def includes(searchElement: Path): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def includes(searchElement: Path, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "indexOf")
-  @js.native
-  def indexOf(searchElement: MethodOptions): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "indexOf")
-  @js.native
-  def indexOf(searchElement: MethodOptions, fromIndex: Double): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "indexOf")
-  @js.native
-  def indexOf(searchElement: Path): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "indexOf")
-  @js.native
-  def indexOf(searchElement: Path, fromIndex: Double): Double = js.native
+  @scala.inline
+  def indexOf(searchElement: MethodOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(searchElement: MethodOptions, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(searchElement: Path): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(searchElement: Path, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "join")
-  @js.native
-  def join(): String = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "join")
-  @js.native
-  def join(separator: String): String = js.native
+  @scala.inline
+  def join(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")().asInstanceOf[String]
+  @scala.inline
+  def join(separator: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(separator.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "keys")
-  @js.native
-  def keys(): IterableIterator[Double] = js.native
+  @scala.inline
+  def keys(): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[IterableIterator[Double]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: MethodOptions): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: MethodOptions, fromIndex: Double): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: Path): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: Path, fromIndex: Double): Double = js.native
+  @scala.inline
+  def lastIndexOf(searchElement: MethodOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def lastIndexOf(searchElement: MethodOptions, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def lastIndexOf(searchElement: Path): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def lastIndexOf(searchElement: Path, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "length")
   @js.native
@@ -285,8 +243,7 @@ object routesFilesRegularMod {
   @scala.inline
   def length_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("length")(x.asInstanceOf[js.Any])
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "map")
-  @js.native
+  @scala.inline
   def map[U](
     callbackfn: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -294,9 +251,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       U
     ]
-  ): js.Array[U] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "map")
-  @js.native
+  ): js.Array[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[js.Array[U]]
+  @scala.inline
   def map[U](
     callbackfn: js.Function3[
       /* value */ Path | MethodOptions, 
@@ -305,18 +261,15 @@ object routesFilesRegularMod {
       U
     ],
     thisArg: js.Any
-  ): js.Array[U] = js.native
+  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "pop")
-  @js.native
-  def pop(): js.UndefOr[Path | MethodOptions] = js.native
+  @scala.inline
+  def pop(): js.UndefOr[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[js.UndefOr[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "push")
-  @js.native
-  def push(items: (Path | MethodOptions)*): Double = js.native
+  @scala.inline
+  def push(items: (Path | MethodOptions)*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduce")
-  @js.native
+  @scala.inline
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -325,9 +278,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       Path | MethodOptions
     ]
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduce")
-  @js.native
+  ): Path | MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -337,9 +289,8 @@ object routesFilesRegularMod {
       Path | MethodOptions
     ],
     initialValue: MethodOptions
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduce")
-  @js.native
+  ): Path | MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -349,9 +300,8 @@ object routesFilesRegularMod {
       Path | MethodOptions
     ],
     initialValue: Path
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduce")
-  @js.native
+  ): Path | MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduce[U_1](
     callbackfn: js.Function4[
       /* previousValue */ U_1, 
@@ -361,10 +311,9 @@ object routesFilesRegularMod {
       U_1
     ],
     initialValue: U_1
-  ): U_1 = js.native
+  ): U_1 = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U_1]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduceRight")
-  @js.native
+  @scala.inline
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -373,9 +322,8 @@ object routesFilesRegularMod {
       /* array */ js.Array[Path | MethodOptions], 
       Path | MethodOptions
     ]
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduceRight")
-  @js.native
+  ): Path | MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -385,9 +333,8 @@ object routesFilesRegularMod {
       Path | MethodOptions
     ],
     initialValue: MethodOptions
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduceRight")
-  @js.native
+  ): Path | MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Path | MethodOptions, 
@@ -397,9 +344,8 @@ object routesFilesRegularMod {
       Path | MethodOptions
     ],
     initialValue: Path
-  ): Path | MethodOptions = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reduceRight")
-  @js.native
+  ): Path | MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Path | MethodOptions]
+  @scala.inline
   def reduceRight[U_2](
     callbackfn: js.Function4[
       /* previousValue */ U_2, 
@@ -409,81 +355,64 @@ object routesFilesRegularMod {
       U_2
     ],
     initialValue: U_2
-  ): U_2 = js.native
+  ): U_2 = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U_2]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "reverse")
-  @js.native
-  def reverse(): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def reverse(): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")().asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "shift")
-  @js.native
-  def shift(): js.UndefOr[Path | MethodOptions] = js.native
+  @scala.inline
+  def shift(): js.UndefOr[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.UndefOr[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "slice")
-  @js.native
-  def slice(): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "slice")
-  @js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "slice")
-  @js.native
-  def slice(start: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "slice")
-  @js.native
-  def slice(start: Double, end: Double): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def slice(): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")().asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def slice(start: Double): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def slice(start: Double, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def slice(start: Unit, end: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "some")
-  @js.native
+  @scala.inline
   def some(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ]
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "some")
-  @js.native
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
   def some(
     predicate: js.Function3[
       /* value */ Path | MethodOptions, 
       /* index */ Double, 
       /* array */ js.Array[Path | MethodOptions], 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "sort")
-  @js.native
-  def sort(): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "sort")
-  @js.native
-  def sort(compareFn: js.Function2[/* a */ Path | MethodOptions, /* b */ Path | MethodOptions, Double]): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def sort(): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")().asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def sort(compareFn: js.Function2[/* a */ Path | MethodOptions, /* b */ Path | MethodOptions, Double]): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(compareFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "splice")
-  @js.native
-  def splice(start: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "splice")
-  @js.native
-  def splice(start: Double, deleteCount: Double): js.Array[Path | MethodOptions] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "splice")
-  @js.native
-  def splice(start: Double, deleteCount: Double, items: (Path | MethodOptions)*): js.Array[Path | MethodOptions] = js.native
+  @scala.inline
+  def splice(start: Double): js.Array[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def splice(start: Double, deleteCount: Double): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
+  @scala.inline
+  def splice(start: Double, deleteCount: Double, items: (Path | MethodOptions)*): js.Array[Path | MethodOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[js.Array[Path | MethodOptions]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "toLocaleString")
-  @js.native
-  def toLocaleString_(): String = js.native
+  @scala.inline
+  def toLocaleString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocaleString")().asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "toString")
-  @js.native
-  def toString_(): String = js.native
+  @scala.inline
+  def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "unshift")
-  @js.native
-  def unshift(items: (Path | MethodOptions)*): Double = js.native
+  @scala.inline
+  def unshift(items: (Path | MethodOptions)*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/files-regular", "values")
-  @js.native
-  def values(): IterableIterator[Path | MethodOptions] = js.native
+  @scala.inline
+  def values(): IterableIterator[Path | MethodOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[IterableIterator[Path | MethodOptions]]
 }

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direct extends StObject {
   
-  var direct: scala.Double = js.native
+  var direct: scala.Double
   
-  var expanded: scala.Double = js.native
+  var expanded: scala.Double
   
-  var expandedDown: scala.Double = js.native
+  var expandedDown: scala.Double
   
-  var expandedUp: scala.Double = js.native
+  var expandedUp: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object Direct {
   

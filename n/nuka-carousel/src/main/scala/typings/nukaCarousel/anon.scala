@@ -3,33 +3,31 @@ package typings.nukaCarousel
 import typings.nukaCarousel.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContainerClassName extends StObject {
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var nextButtonClassName: js.UndefOr[String] = js.native
+    var nextButtonClassName: js.UndefOr[String] = js.undefined
     
-    var nextButtonStyle: js.UndefOr[CSSProperties] = js.native
+    var nextButtonStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var nextButtonText: js.UndefOr[String] = js.native
+    var nextButtonText: js.UndefOr[String] = js.undefined
     
-    var pagingDotsClassName: js.UndefOr[String] = js.native
+    var pagingDotsClassName: js.UndefOr[String] = js.undefined
     
-    var pagingDotsContainerClassName: js.UndefOr[String] = js.native
+    var pagingDotsContainerClassName: js.UndefOr[String] = js.undefined
     
-    var pagingDotsStyle: js.UndefOr[CSSProperties] = js.native
+    var pagingDotsStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prevButtonClassName: js.UndefOr[String] = js.native
+    var prevButtonClassName: js.UndefOr[String] = js.undefined
     
-    var prevButtonStyle: js.UndefOr[CSSProperties] = js.native
+    var prevButtonStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prevButtonText: js.UndefOr[String] = js.native
+    var prevButtonText: js.UndefOr[String] = js.undefined
   }
   object ContainerClassName {
     
@@ -105,18 +103,17 @@ object anon {
   }
   
   /* Inlined {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>} */
-  @js.native
   trait slideActioninCarouselSlid extends StObject {
     
-    var firstSlide: js.UndefOr[js.Array[Double]] = js.native
+    var firstSlide: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lastSlide: js.UndefOr[js.Array[Double]] = js.native
+    var lastSlide: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var nextSlide: js.UndefOr[js.Array[Double]] = js.native
+    var nextSlide: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var pause: js.UndefOr[js.Array[Double]] = js.native
+    var pause: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var previousSlide: js.UndefOr[js.Array[Double]] = js.native
+    var previousSlide: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object slideActioninCarouselSlid {
     

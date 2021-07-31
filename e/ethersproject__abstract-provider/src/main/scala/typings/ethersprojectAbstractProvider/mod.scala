@@ -8,10 +8,10 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectNetworks.typesMod.Network
 import typings.ethersprojectProperties.mod.Description
 import typings.ethersprojectTransactions.mod.Transaction
+import typings.ethersprojectWeb.ethersprojectWebStrings.block
 import typings.ethersprojectWeb.mod.OnceBlockable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,7 +34,7 @@ object mod {
        with _EventType {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: any[K]}
-      */ typings.ethersprojectAbstractProvider.ethersprojectAbstractProviderStrings.ForkEvent with TopLevel[js.Any]) = this()
+      */ typings.ethersprojectAbstractProvider.ethersprojectAbstractProviderStrings.ForkEvent & TopLevel[js.Any]) = this()
     
     val _isForkEvent: js.UndefOr[Boolean] = js.native
     
@@ -43,14 +43,19 @@ object mod {
   /* static members */
   object ForkEvent {
     
-    @JSImport("@ethersproject/abstract-provider", "ForkEvent.isForkEvent")
+    @JSImport("@ethersproject/abstract-provider", "ForkEvent")
     @js.native
-    def isForkEvent(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isForkEvent(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "Provider")
   @js.native
-  abstract class Provider () extends OnceBlockable {
+  abstract class Provider ()
+    extends StObject
+       with OnceBlockable {
     
     val _isProvider: Boolean = js.native
     
@@ -137,6 +142,9 @@ object mod {
     def on(eventName: EventType, listener: Listener): Provider = js.native
     
     def once(eventName: EventType, listener: Listener): Provider = js.native
+    /* CompleteClass */
+    @JSName("once")
+    override def once_block(eventName: block, handler: js.Function0[Unit]): Unit = js.native
     
     def removeAllListeners(): Provider = js.native
     def removeAllListeners(eventName: EventType): Provider = js.native
@@ -150,16 +158,19 @@ object mod {
     def sendTransaction(signedTransaction: js.Promise[String]): js.Promise[TransactionResponse] = js.native
     
     def waitForTransaction(transactionHash: String): js.Promise[TransactionReceipt] = js.native
-    def waitForTransaction(transactionHash: String, confirmations: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[TransactionReceipt] = js.native
     def waitForTransaction(transactionHash: String, confirmations: Double): js.Promise[TransactionReceipt] = js.native
     def waitForTransaction(transactionHash: String, confirmations: Double, timeout: Double): js.Promise[TransactionReceipt] = js.native
+    def waitForTransaction(transactionHash: String, confirmations: Unit, timeout: Double): js.Promise[TransactionReceipt] = js.native
   }
   /* static members */
   object Provider {
     
-    @JSImport("@ethersproject/abstract-provider", "Provider.isProvider")
+    @JSImport("@ethersproject/abstract-provider", "Provider")
     @js.native
-    def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "TransactionForkEvent")
@@ -184,10 +195,11 @@ object mod {
     val beforeHash: String = js.native
   }
   
-  @js.native
-  trait Block extends _Block {
+  trait Block
+    extends StObject
+       with _Block {
     
-    var transactions: js.Array[String] = js.native
+    var transactions: js.Array[String]
   }
   object Block {
     
@@ -222,10 +234,11 @@ object mod {
   
   type BlockTag = String | Double
   
-  @js.native
-  trait BlockWithTransactions extends _Block {
+  trait BlockWithTransactions
+    extends StObject
+       with _Block {
     
-    var transactions: js.Array[TransactionResponse] = js.native
+    var transactions: js.Array[TransactionResponse]
   }
   object BlockWithTransactions {
     
@@ -258,12 +271,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait EventFilter extends _EventType {
+  trait EventFilter
+    extends StObject
+       with _EventType {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var topics: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+    var topics: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object EventFilter {
     
@@ -301,12 +315,13 @@ object mod {
   */
   type EventType = _EventType | (js.Array[String | js.Array[String]]) | String
   
-  @js.native
-  trait Filter extends EventFilter {
+  trait Filter
+    extends StObject
+       with EventFilter {
     
-    var fromBlock: js.UndefOr[BlockTag] = js.native
+    var fromBlock: js.UndefOr[BlockTag] = js.undefined
     
-    var toBlock: js.UndefOr[BlockTag] = js.native
+    var toBlock: js.UndefOr[BlockTag] = js.undefined
   }
   object Filter {
     
@@ -333,10 +348,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FilterByBlockHash extends EventFilter {
+  trait FilterByBlockHash
+    extends StObject
+       with EventFilter {
     
-    var blockHash: js.UndefOr[String] = js.native
+    var blockHash: js.UndefOr[String] = js.undefined
   }
   object FilterByBlockHash {
     
@@ -357,28 +373,31 @@ object mod {
     }
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
+  
   trait Log extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var blockHash: String = js.native
+    var blockHash: String
     
-    var blockNumber: Double = js.native
+    var blockNumber: Double
     
-    var data: String = js.native
+    var data: String
     
-    var logIndex: Double = js.native
+    var logIndex: Double
     
-    var removed: Boolean = js.native
+    var removed: Boolean
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
     
-    var transactionHash: String = js.native
+    var transactionHash: String
     
-    var transactionIndex: Double = js.native
+    var transactionIndex: Double
   }
   object Log {
     
@@ -433,38 +452,37 @@ object mod {
     }
   }
   
-  @js.native
   trait TransactionReceipt extends StObject {
     
-    var blockHash: String = js.native
+    var blockHash: String
     
-    var blockNumber: Double = js.native
+    var blockNumber: Double
     
-    var byzantium: Boolean = js.native
+    var byzantium: Boolean
     
-    var confirmations: Double = js.native
+    var confirmations: Double
     
-    var contractAddress: String = js.native
+    var contractAddress: String
     
-    var cumulativeGasUsed: BigNumber = js.native
+    var cumulativeGasUsed: BigNumber
     
-    var from: String = js.native
+    var from: String
     
-    var gasUsed: BigNumber = js.native
+    var gasUsed: BigNumber
     
-    var logs: js.Array[Log] = js.native
+    var logs: js.Array[Log]
     
-    var logsBloom: String = js.native
+    var logsBloom: String
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var to: String = js.native
+    var to: String
     
-    var transactionHash: String = js.native
+    var transactionHash: String
     
-    var transactionIndex: Double = js.native
+    var transactionIndex: Double
   }
   object TransactionReceipt {
     
@@ -547,24 +565,23 @@ object mod {
     }
   }
   
-  @js.native
   trait TransactionRequest extends StObject {
     
-    var chainId: js.UndefOr[Double] = js.native
+    var chainId: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[BytesLike] = js.native
+    var data: js.UndefOr[BytesLike] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var gasLimit: js.UndefOr[BigNumberish] = js.native
+    var gasLimit: js.UndefOr[BigNumberish] = js.undefined
     
-    var gasPrice: js.UndefOr[BigNumberish] = js.native
+    var gasPrice: js.UndefOr[BigNumberish] = js.undefined
     
-    var nonce: js.UndefOr[BigNumberish] = js.native
+    var nonce: js.UndefOr[BigNumberish] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[BigNumberish] = js.native
+    var value: js.UndefOr[BigNumberish] = js.undefined
   }
   object TransactionRequest {
     
@@ -628,7 +645,9 @@ object mod {
   }
   
   @js.native
-  trait TransactionResponse extends Transaction {
+  trait TransactionResponse
+    extends StObject
+       with Transaction {
     
     var blockHash: js.UndefOr[String] = js.native
     
@@ -649,28 +668,27 @@ object mod {
     def wait(confirmations: Double): js.Promise[TransactionReceipt] = js.native
   }
   
-  @js.native
   trait _Block extends StObject {
     
-    var difficulty: Double = js.native
+    var difficulty: Double
     
-    var extraData: String = js.native
+    var extraData: String
     
-    var gasLimit: BigNumber = js.native
+    var gasLimit: BigNumber
     
-    var gasUsed: BigNumber = js.native
+    var gasUsed: BigNumber
     
-    var hash: String = js.native
+    var hash: String
     
-    var miner: String = js.native
+    var miner: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var number: Double = js.native
+    var number: Double
     
-    var parentHash: String = js.native
+    var parentHash: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object _Block {
     

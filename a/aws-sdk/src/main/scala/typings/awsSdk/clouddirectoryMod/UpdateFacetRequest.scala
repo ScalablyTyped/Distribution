@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFacetRequest extends StObject {
   
   /**
     * List of attributes that need to be updated in a given schema Facet. Each attribute is followed by AttributeAction, which specifies the type of update operation to perform. 
     */
-  var AttributeUpdates: js.UndefOr[FacetAttributeUpdateList] = js.native
+  var AttributeUpdates: js.UndefOr[FacetAttributeUpdateList] = js.undefined
   
   /**
     * The name of the facet.
     */
-  var Name: FacetName = js.native
+  var Name: FacetName
   
   /**
     * The object type that is associated with the facet. See CreateFacetRequest$ObjectType for more details.
     */
-  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.native
+  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Facet. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object UpdateFacetRequest {
   

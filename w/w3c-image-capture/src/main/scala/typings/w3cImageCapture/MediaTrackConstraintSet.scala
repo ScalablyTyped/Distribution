@@ -6,39 +6,37 @@ import typings.webrtc.W3C.ConstrainDouble
 import typings.webrtc.W3C.ConstrainString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackConstraintSet extends StObject {
   
-  var brightness: js.UndefOr[ConstrainDouble] = js.native
+  var brightness: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var colorTemperature: js.UndefOr[ConstrainDouble] = js.native
+  var colorTemperature: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var contrast: js.UndefOr[ConstrainDouble] = js.native
+  var contrast: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var exposureCompensation: js.UndefOr[ConstrainDouble] = js.native
+  var exposureCompensation: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var exposureMode: js.UndefOr[ConstrainString] = js.native
+  var exposureMode: js.UndefOr[ConstrainString] = js.undefined
   
-  var focusDistance: js.UndefOr[ConstrainDouble] = js.native
+  var focusDistance: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var focusMode: js.UndefOr[ConstrainString] = js.native
+  var focusMode: js.UndefOr[ConstrainString] = js.undefined
   
-  var iso: js.UndefOr[ConstrainDouble] = js.native
+  var iso: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var pointsOfInterest: js.UndefOr[ConstrainPoint2D] = js.native
+  var pointsOfInterest: js.UndefOr[ConstrainPoint2D] = js.undefined
   
-  var saturation: js.UndefOr[ConstrainDouble] = js.native
+  var saturation: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var sharpness: js.UndefOr[ConstrainDouble] = js.native
+  var sharpness: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var torch: js.UndefOr[ConstrainBoolean] = js.native
+  var torch: js.UndefOr[ConstrainBoolean] = js.undefined
   
-  var whiteBalanceMode: js.UndefOr[ConstrainString] = js.native
+  var whiteBalanceMode: js.UndefOr[ConstrainString] = js.undefined
   
-  var zoom: js.UndefOr[ConstrainDouble] = js.native
+  var zoom: js.UndefOr[ConstrainDouble] = js.undefined
 }
 object MediaTrackConstraintSet {
   

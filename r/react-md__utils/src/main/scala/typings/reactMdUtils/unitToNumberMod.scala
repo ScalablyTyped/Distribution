@@ -3,30 +3,28 @@ package typings.reactMdUtils
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitToNumberMod {
   
-  @JSImport("@react-md/utils/types/unitToNumber", "unitToNumber")
+  @JSImport("@react-md/utils/types/unitToNumber", JSImport.Namespace)
   @js.native
-  def unitToNumber(unit: String): Double = js.native
-  @JSImport("@react-md/utils/types/unitToNumber", "unitToNumber")
-  @js.native
-  def unitToNumber(unit: String, options: UnitToNumberOptions): Double = js.native
-  @JSImport("@react-md/utils/types/unitToNumber", "unitToNumber")
-  @js.native
-  def unitToNumber(unit: Double): Double = js.native
-  @JSImport("@react-md/utils/types/unitToNumber", "unitToNumber")
-  @js.native
-  def unitToNumber(unit: Double, options: UnitToNumberOptions): Double = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def unitToNumber(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def unitToNumber(unit: String, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unitToNumber(unit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def unitToNumber(unit: Double, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait UnitToNumberOptions extends StObject {
     
-    var element: js.UndefOr[Element] = js.native
+    var element: js.UndefOr[Element] = js.undefined
     
-    var fontSizeFallback: js.UndefOr[Double] = js.native
+    var fontSizeFallback: js.UndefOr[Double] = js.undefined
   }
   object UnitToNumberOptions {
     

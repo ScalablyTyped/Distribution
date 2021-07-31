@@ -9,64 +9,64 @@ import typings.devextreme.devextremeStrings.Single
 import typings.devextreme.devextremeStrings.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ODataStoreOptions extends StoreOptions[ODataStore] {
+trait ODataStoreOptions
+  extends StObject
+     with StoreOptions[ODataStore] {
   
   /**
     * [descr:ODataStore.Options.beforeSend]
     */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, _]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, js.Any]] = js.undefined
   
   /**
     * [descr:ODataStore.Options.deserializeDates]
     */
-  var deserializeDates: js.UndefOr[Boolean] = js.native
+  var deserializeDates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataStore.Options.errorHandler]
     */
   @JSName("errorHandler")
-  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ ErrorDetails, _]] = js.native
+  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ ErrorDetails, js.Any]] = js.undefined
   
   /**
     * [descr:ODataStore.Options.fieldTypes]
     */
-  var fieldTypes: js.UndefOr[js.Any] = js.native
+  var fieldTypes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:ODataStore.Options.filterToLower]
     */
-  var filterToLower: js.UndefOr[Boolean] = js.native
+  var filterToLower: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataStore.Options.jsonp]
     */
-  var jsonp: js.UndefOr[Boolean] = js.native
+  var jsonp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataStore.Options.keyType]
     */
   var keyType: js.UndefOr[
     String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * [descr:ODataStore.Options.url]
     */
-  var url: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [descr:ODataStore.Options.version]
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:ODataStore.Options.withCredentials]
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ODataStoreOptions {
   
@@ -80,7 +80,7 @@ object ODataStoreOptions {
   implicit class ODataStoreOptionsMutableBuilder[Self <: ODataStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBeforeSend(value: /* options */ Async => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    def setBeforeSend(value: /* options */ Async => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
@@ -92,7 +92,7 @@ object ODataStoreOptions {
     def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
     
     @scala.inline
-    def setErrorHandler(value: /* e */ ErrorDetails => _): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    def setErrorHandler(value: /* e */ ErrorDetails => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
     def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)

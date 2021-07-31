@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetail extends StObject {
   
   /**
     * The error code that identifies the type of error.
     */
-  var ErrorCode: js.UndefOr[StringValue] = js.native
+  var ErrorCode: js.UndefOr[StringValue] = js.undefined
   
   /**
     * The message for the error.
     */
-  var ErrorMessage: js.UndefOr[StringValue] = js.native
+  var ErrorMessage: js.UndefOr[StringValue] = js.undefined
 }
 object ErrorDetail {
   

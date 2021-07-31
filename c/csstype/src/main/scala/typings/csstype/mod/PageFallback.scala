@@ -2,13 +2,11 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageFallback[TLength] extends StObject {
   
-  var size: js.UndefOr[PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]] = js.native
+  var size: js.UndefOr[PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]] = js.undefined
 }
 object PageFallback {
   
@@ -19,7 +17,7 @@ object PageFallback {
   }
   
   @scala.inline
-  implicit class PageFallbackMutableBuilder[Self <: PageFallback[_], TLength] (val x: Self with PageFallback[TLength]) extends AnyVal {
+  implicit class PageFallbackMutableBuilder[Self <: PageFallback[?], TLength] (val x: Self & PageFallback[TLength]) extends AnyVal {
     
     @scala.inline
     def setSize(value: PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])

@@ -6,32 +6,30 @@ import typings.jui.juiStrings.simple
 import typings.jui.juiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animated extends StObject {
   
   // or true
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   // or vertical,
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   // simple or flat
-  var orient: js.UndefOr[horizontal | vertical] = js.native
+  var orient: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var striped: js.UndefOr[Boolean] = js.native
+  var striped: js.UndefOr[Boolean] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[simple | flat] = js.native
+  var `type`: js.UndefOr[simple | flat] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Animated {
   

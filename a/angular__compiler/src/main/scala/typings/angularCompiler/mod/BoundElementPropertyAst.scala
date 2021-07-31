@@ -4,7 +4,6 @@ import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.templateAstMod.PropertyBindingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "BoundElementPropertyAst")
@@ -31,7 +30,10 @@ class BoundElementPropertyAst protected ()
 /* static members */
 object BoundElementPropertyAst {
   
-  @JSImport("@angular/compiler", "BoundElementPropertyAst.fromBoundProperty")
+  @JSImport("@angular/compiler", "BoundElementPropertyAst")
   @js.native
-  def fromBoundProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): typings.angularCompiler.templateAstMod.BoundElementPropertyAst = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromBoundProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): typings.angularCompiler.templateAstMod.BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.BoundElementPropertyAst]
 }

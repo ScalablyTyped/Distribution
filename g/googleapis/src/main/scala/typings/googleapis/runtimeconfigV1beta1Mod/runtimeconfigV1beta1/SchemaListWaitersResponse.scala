@@ -2,14 +2,12 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListWaiters()` method. Order of returned waiter objects
   * is arbitrary.
   */
-@js.native
 trait SchemaListWaitersResponse extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaListWaitersResponse extends StObject {
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Found waiters in the project.
     */
-  var waiters: js.UndefOr[js.Array[SchemaWaiter]] = js.native
+  var waiters: js.UndefOr[js.Array[SchemaWaiter]] = js.undefined
 }
 object SchemaListWaitersResponse {
   

@@ -6,32 +6,30 @@ import typings.ebml.ebmlStrings.s
 import typings.ebml.ebmlStrings.u
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagMetadata extends StObject {
   
   /** Size of data in bytes */
-  var dataSize: Double = js.native
+  var dataSize: Double
   
   /** End byte offset if known, else `-1` */
-  var end: Double = js.native
+  var end: Double
   
   /** Element name */
-  var name: String = js.native
+  var name: String
   
   /** Start byte offset */
-  var start: Double = js.native
+  var start: Double
   
   /** EBML ID */
-  var tag: Double = js.native
+  var tag: Double
   
   /** EBML ID as a hex string */
-  var tagStr: String = js.native
+  var tagStr: String
   
   /** Data type */
-  var `type`: TagType | u | i | f | s = js.native
+  var `type`: TagType | u | i | f | s
 }
 object TagMetadata {
   

@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContactFolder extends Entity {
+trait ContactFolder
+  extends StObject
+     with Entity {
   
   // The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  var childFolders: js.UndefOr[NullableOption[js.Array[ContactFolder]]] = js.native
+  var childFolders: js.UndefOr[NullableOption[js.Array[ContactFolder]]] = js.undefined
   
   // The contacts in the folder. Navigation property. Read-only. Nullable.
-  var contacts: js.UndefOr[NullableOption[js.Array[Contact]]] = js.native
+  var contacts: js.UndefOr[NullableOption[js.Array[Contact]]] = js.undefined
   
   // The folder's display name.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // The ID of the folder's parent folder.
-  var parentFolderId: js.UndefOr[NullableOption[String]] = js.native
+  var parentFolderId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
 }
 object ContactFolder {
   

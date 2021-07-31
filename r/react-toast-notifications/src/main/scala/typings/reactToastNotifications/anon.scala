@@ -11,23 +11,21 @@ import typings.reactToastNotifications.mod.ToastProps
 import typings.reactToastNotifications.mod.UpdateToast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddToast extends StObject {
     
-    var addToast: typings.reactToastNotifications.mod.AddToast = js.native
+    var addToast: typings.reactToastNotifications.mod.AddToast
     
-    var removeAllToasts: RemoveAllToasts = js.native
+    var removeAllToasts: RemoveAllToasts
     
-    var removeToast: RemoveToast = js.native
+    var removeToast: RemoveToast
     
-    var toastStack: js.Array[Appearance] = js.native
+    var toastStack: js.Array[Appearance]
     
-    var updateToast: UpdateToast = js.native
+    var updateToast: UpdateToast
   }
   object AddToast {
     
@@ -70,14 +68,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Appearance extends StObject {
     
-    var appearance: AppearanceTypes = js.native
+    var appearance: AppearanceTypes
     
-    var content: ReactNode = js.native
+    var content: ReactNode
     
-    var id: String = js.native
+    var id: String
   }
   object Appearance {
     
@@ -104,12 +101,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Toast extends StObject {
     
-    var Toast: js.UndefOr[ComponentType[ToastProps]] = js.native
+    var Toast: js.UndefOr[ComponentType[ToastProps]] = js.undefined
     
-    var ToastContainer: js.UndefOr[ComponentType[ToastContainerProps]] = js.native
+    var ToastContainer: js.UndefOr[ComponentType[ToastContainerProps]] = js.undefined
   }
   object Toast {
     

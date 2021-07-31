@@ -2,15 +2,14 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWifiListOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 提供预设的 Wi-Fi 信息列表 */
-  var wifiList: js.Array[SetWifiList] = js.native
+  var wifiList: js.Array[SetWifiList]
 }
 object SetWifiListOptions {
   

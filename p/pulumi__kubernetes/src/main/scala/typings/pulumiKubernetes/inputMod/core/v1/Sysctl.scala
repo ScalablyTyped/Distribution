@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sysctl defines a kernel parameter to be set
   */
-@js.native
 trait Sysctl extends StObject {
   
   /**
     * Name of a property to set
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * Value of a property to set
     */
-  var value: Input[String] = js.native
+  var value: Input[String]
 }
 object Sysctl {
   

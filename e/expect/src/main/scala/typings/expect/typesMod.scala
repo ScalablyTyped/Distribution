@@ -13,7 +13,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -24,10 +23,13 @@ object typesMod {
   
   @js.native
   trait Constructable
-    extends Instantiable1[/* args (repeated) */ js.Any, js.Any]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, js.Any]
   
   @js.native
-  trait Expect extends /* id */ StringDictionary[AsymmetricMatcher] {
+  trait Expect
+    extends StObject
+       with /* id */ StringDictionary[AsymmetricMatcher] {
     
     def apply[T](actual: T): Matchers[T] = js.native
     
@@ -37,7 +39,7 @@ object typesMod {
     
     def anything(): AsymmetricMatcher = js.native
     
-    def arrayContaining(sample: js.Array[_]): AsymmetricMatcher = js.native
+    def arrayContaining(sample: js.Array[js.Any]): AsymmetricMatcher = js.native
     
     def assertions(arg0: Double): Unit = js.native
     
@@ -51,7 +53,7 @@ object typesMod {
     
     var not: StringDictionary[AsymmetricMatcher] = js.native
     
-    def objectContaining(sample: Record[String, _]): AsymmetricMatcher = js.native
+    def objectContaining(sample: Record[String, js.Any]): AsymmetricMatcher = js.native
     
     def setState(state: PartialMatcherState): Unit = js.native
     
@@ -75,9 +77,9 @@ object typesMod {
     var dontThrow: js.UndefOr[js.Function0[Unit]] = js.native
     
     def equals(a: js.Any, b: js.Any): Boolean = js.native
-    def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
     def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
     def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native
+    def equals(a: js.Any, b: js.Any, customTesters: Unit, strictCheck: Boolean): Boolean = js.native
     
     var error: js.UndefOr[Error] = js.native
     
@@ -354,16 +356,16 @@ object typesMod {
       */
     def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof R ]: unknown}
-      */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
+      */ typings.expect.expectStrings.Matchers & TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
     def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof R ]: unknown}
-      */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshot: String): R = js.native
+      */ typings.expect.expectStrings.Matchers & TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshot: String): R = js.native
     
-    def toMatchObject(expected: js.Array[_]): R = js.native
+    def toMatchObject(expected: js.Array[js.Any]): R = js.native
     /**
       * Used to check that a JavaScript object matches a subset of the properties of an object
       */
-    def toMatchObject(expected: Record[String, _]): R = js.native
+    def toMatchObject(expected: Record[String, js.Any]): R = js.native
     
     /**
       * This ensures that a value matches the most recent snapshot.
@@ -377,10 +379,10 @@ object typesMod {
       */
     def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof R ]: unknown}
-      */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
+      */ typings.expect.expectStrings.Matchers & TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
     def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof R ]: unknown}
-      */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
+      */ typings.expect.expectStrings.Matchers & TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
     
     /**
       * Ensure that a mock function has returned (as opposed to thrown) at least once.
@@ -444,12 +446,11 @@ object typesMod {
     def apply(received: js.Any, expected: js.Any, options: js.Any): ExpectationResult = js.native
   }
   
-  @js.native
   trait SyncExpectationResult extends StObject {
     
-    def message(): String = js.native
+    def message(): String
     
-    var pass: Boolean = js.native
+    var pass: Boolean
   }
   object SyncExpectationResult {
     

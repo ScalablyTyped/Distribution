@@ -4,7 +4,6 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.ICollisionData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.SAT")
 @js.native
 class SAT ()
-  extends typings.phaser.MatterJS.SAT
+  extends StObject
+     with typings.phaser.MatterJS.SAT
 object SAT {
+  
+  @JSGlobal("MatterJS.SAT")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Detect collision between two bodies using the Separating Axis Theorem.
@@ -27,7 +31,6 @@ object SAT {
     * @return {ICollisionData} collision
     */
   /* static member */
-  @JSGlobal("MatterJS.SAT.collides")
-  @js.native
-  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = js.native
+  @scala.inline
+  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = (^.asInstanceOf[js.Dynamic].applyDynamic("collides")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any], previousCollision.asInstanceOf[js.Any])).asInstanceOf[ICollisionData]
 }

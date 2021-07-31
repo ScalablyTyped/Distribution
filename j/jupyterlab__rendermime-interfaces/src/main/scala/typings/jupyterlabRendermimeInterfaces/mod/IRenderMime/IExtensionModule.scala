@@ -2,20 +2,18 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a module that exports an extension or extensions as
   * the default value.
   */
-@js.native
 trait IExtensionModule extends StObject {
   
   /**
     * The default export.
     */
-  val default: IExtension | js.Array[IExtension] = js.native
+  val default: IExtension | js.Array[IExtension]
 }
 object IExtensionModule {
   

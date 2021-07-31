@@ -3,16 +3,14 @@ package typings.vueCompilerSfc.mod
 import typings.babelParser.mod.ParserPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCScriptCompileOptions extends StObject {
   
   /**
     * https://babeljs.io/docs/en/babel-parser#plugins
     */
-  var babelParserPlugins: js.UndefOr[js.Array[ParserPlugin]] = js.native
+  var babelParserPlugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
 }
 object SFCScriptCompileOptions {
   

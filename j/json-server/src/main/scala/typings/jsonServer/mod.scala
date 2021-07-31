@@ -10,81 +10,75 @@ import typings.expressServeStaticCore.mod.Query
 import typings.jsonServer.anon.ForeignKeySuffix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("json-server", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("json-server", "bodyParser")
   @js.native
   val bodyParser: js.Tuple2[NextHandleFunction, NextHandleFunction] = js.native
   
-  @JSImport("json-server", "create")
-  @js.native
-  def create(): Application_ = js.native
+  @scala.inline
+  def create(): Application_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Application_]
   
-  @JSImport("json-server", "defaults")
-  @js.native
-  def defaults(): js.Array[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-  @JSImport("json-server", "defaults")
-  @js.native
-  def defaults(options: MiddlewaresOptions): js.Array[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+  @scala.inline
+  def defaults(): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  @scala.inline
+  def defaults(options: MiddlewaresOptions): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
   
-  @JSImport("json-server", "rewriter")
-  @js.native
-  def rewriter(rules: StringDictionary[String]): Router = js.native
+  @scala.inline
+  def rewriter(rules: StringDictionary[String]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("rewriter")(rules.asInstanceOf[js.Any]).asInstanceOf[Router]
   
-  @JSImport("json-server", "router")
-  @js.native
-  def router(source: String): Router = js.native
-  @JSImport("json-server", "router")
-  @js.native
-  def router(source: String, options: ForeignKeySuffix): Router = js.native
-  @JSImport("json-server", "router")
-  @js.native
-  def router(source: js.Object): Router = js.native
-  @JSImport("json-server", "router")
-  @js.native
-  def router(source: js.Object, options: ForeignKeySuffix): Router = js.native
+  @scala.inline
+  def router(source: String): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def router(source: String, options: ForeignKeySuffix): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def router(source: js.Object): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def router(source: js.Object, options: ForeignKeySuffix): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Router]
   
-  @js.native
   trait MiddlewaresOptions extends StObject {
     
     /**
       * Enable body-parser middleware
       * @default true
       */
-    var bodyParser: js.UndefOr[Boolean] = js.native
+    var bodyParser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable logger middleware
       * @default true
       */
-    var logger: js.UndefOr[Boolean] = js.native
+    var logger: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable CORS
       * @default false
       */
-    var noCors: js.UndefOr[Boolean] = js.native
+    var noCors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable compression
       * @default false
       */
-    var noGzip: js.UndefOr[Boolean] = js.native
+    var noGzip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept only GET requests
       * @default false
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path to static files
       * @default "public" (if folder exists)
       */
-    var static: js.UndefOr[String] = js.native
+    var static: js.UndefOr[String] = js.undefined
   }
   object MiddlewaresOptions {
     

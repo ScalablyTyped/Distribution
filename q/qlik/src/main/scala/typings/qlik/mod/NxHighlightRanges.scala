@@ -2,13 +2,11 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxHighlightRanges extends StObject {
   
-  var qRanges: js.Array[CharRange] = js.native
+  var qRanges: js.Array[CharRange]
 }
 object NxHighlightRanges {
   

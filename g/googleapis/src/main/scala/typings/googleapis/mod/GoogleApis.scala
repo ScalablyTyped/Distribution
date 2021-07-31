@@ -3,7 +3,6 @@ package typings.googleapis.mod
 import typings.googleapisCommon.apiMod.GlobalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis", "GoogleApis")

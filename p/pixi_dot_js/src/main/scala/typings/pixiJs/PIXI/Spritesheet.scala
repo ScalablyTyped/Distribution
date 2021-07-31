@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,7 +68,7 @@ trait Spritesheet extends StObject {
     * @param {Function} callback - Callback when complete returns
     *        a map of the Textures for this spritesheet.
     */
-  def parse(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def parse(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     * The resolution of the spritesheet.

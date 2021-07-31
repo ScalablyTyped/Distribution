@@ -5,7 +5,6 @@ import typings.consul.mod.Event.ListOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,18 +60,19 @@ trait Event extends StObject {
 }
 object Event {
   
-  @js.native
-  trait FireOptions extends CommonOptions {
+  trait FireOptions
+    extends StObject
+       with CommonOptions {
     
-    var name: String = js.native
+    var name: String
     
-    var node: js.UndefOr[String] = js.native
+    var node: js.UndefOr[String] = js.undefined
     
-    var payload: String | Buffer = js.native
+    var payload: String | Buffer
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object FireOptions {
     
@@ -111,10 +111,11 @@ object Event {
     }
   }
   
-  @js.native
-  trait ListOptions extends CommonOptions {
+  trait ListOptions
+    extends StObject
+       with CommonOptions {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ListOptions {
     

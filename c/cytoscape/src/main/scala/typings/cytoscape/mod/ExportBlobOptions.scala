@@ -3,16 +3,16 @@ package typings.cytoscape.mod
 import typings.cytoscape.cytoscapeStrings.blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportBlobOptions extends ExportOptions {
+trait ExportBlobOptions
+  extends StObject
+     with ExportOptions {
   
   /**
     * output Whether the output should be 'base64uri' (default), 'base64', or 'blob'.
     */
-  var output: js.UndefOr[blob] = js.native
+  var output: js.UndefOr[blob] = js.undefined
 }
 object ExportBlobOptions {
   

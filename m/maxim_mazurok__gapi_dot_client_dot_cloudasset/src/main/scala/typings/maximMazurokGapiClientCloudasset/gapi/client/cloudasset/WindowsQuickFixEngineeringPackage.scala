@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsQuickFixEngineeringPackage extends StObject {
   
   /** A short textual description of the QFE update. */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /** A textual description of the QFE update. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Unique identifier associated with a particular QFE update. */
-  var hotFixId: js.UndefOr[String] = js.native
+  var hotFixId: js.UndefOr[String] = js.undefined
   
   /** Date that the QFE update was installed. Mapped from installed_on field. */
-  var installTime: js.UndefOr[String] = js.native
+  var installTime: js.UndefOr[String] = js.undefined
 }
 object WindowsQuickFixEngineeringPackage {
   

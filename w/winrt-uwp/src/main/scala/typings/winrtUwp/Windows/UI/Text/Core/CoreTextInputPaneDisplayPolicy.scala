@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object CoreTextInputPaneDisplayPolicy extends StObject {
   
   /** The input pane will be shown automatically when focus enters your text input control. */
   @js.native
-  sealed trait automatic extends CoreTextInputPaneDisplayPolicy
+  sealed trait automatic
+    extends StObject
+       with CoreTextInputPaneDisplayPolicy
   
   /** Your app is responsible for showing and hiding the input pane. */
   @js.native
-  sealed trait manual extends CoreTextInputPaneDisplayPolicy
+  sealed trait manual
+    extends StObject
+       with CoreTextInputPaneDisplayPolicy
 }

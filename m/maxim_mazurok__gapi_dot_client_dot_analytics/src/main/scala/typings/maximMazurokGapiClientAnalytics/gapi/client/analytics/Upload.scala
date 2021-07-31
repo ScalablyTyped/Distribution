@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Upload extends StObject {
   
   /** Account Id to which this upload belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Custom data source Id to which this data import belongs. */
-  var customDataSourceId: js.UndefOr[String] = js.native
+  var customDataSourceId: js.UndefOr[String] = js.undefined
   
   /** Data import errors collection. */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A unique ID for this upload. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics upload. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING, DELETED. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Time this file is uploaded. */
-  var uploadTime: js.UndefOr[String] = js.native
+  var uploadTime: js.UndefOr[String] = js.undefined
 }
 object Upload {
   

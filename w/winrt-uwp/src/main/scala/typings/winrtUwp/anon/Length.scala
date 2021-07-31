@@ -2,15 +2,13 @@ package typings.winrtUwp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length extends StObject {
   
-  /** The length in bytes of the HTTP content. */ var length: Double = js.native
+  /** The length in bytes of the HTTP content. */ var length: Double
   
-  /** true if length is a valid length; otherwise, false. */ var returnValue: Boolean = js.native
+  /** true if length is a valid length; otherwise, false. */ var returnValue: Boolean
 }
 object Length {
   

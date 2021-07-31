@@ -3,66 +3,64 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerInfo extends StObject {
   
   /**
     * The version of Azure that the instance is running on, if applicable.
     */
-  var azureVersion: Double = js.native
+  var azureVersion: Double
   
   /**
     * The ID of the engine edition of the instance.
     */
-  var engineEditionId: Double = js.native
+  var engineEditionId: Double
   
   /**
     * Whether the instance is running in the cloud (Azure) or not.
     */
-  var isCloud: Boolean = js.native
+  var isCloud: Boolean
   
   /**
     * options for all new server properties.
     */
-  var options: StringDictionary[js.Any] = js.native
+  var options: StringDictionary[js.Any]
   
   /**
     * The Operating System version string of the machine running the instance.
     */
-  var osVersion: String = js.native
+  var osVersion: String
   
   /**
     * The edition of the instance.
     */
-  var serverEdition: String = js.native
+  var serverEdition: String
   
   /**
     * String describing the product level of the server.
     */
-  var serverLevel: String = js.native
+  var serverLevel: String
   
   /**
     * The major version of the instance.
     */
-  var serverMajorVersion: Double = js.native
+  var serverMajorVersion: Double
   
   /**
     * The minor version of the instance.
     */
-  var serverMinorVersion: Double = js.native
+  var serverMinorVersion: Double
   
   /**
     * The build of the instance.
     */
-  var serverReleaseVersion: Double = js.native
+  var serverReleaseVersion: Double
   
   /**
     * String containing the full server version text.
     */
-  var serverVersion: String = js.native
+  var serverVersion: String
 }
 object ServerInfo {
   

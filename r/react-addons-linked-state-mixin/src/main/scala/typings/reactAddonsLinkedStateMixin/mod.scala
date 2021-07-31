@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Mixin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,11 +12,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : LinkedStateMixin = js.native
   
-  @js.native
   trait LinkedStateMixin
-    extends Mixin[js.Any, js.Any] {
+    extends StObject
+       with Mixin[js.Any, js.Any] {
     
-    def linkState[T](key: String): ReactLink[T] = js.native
+    def linkState[T](key: String): ReactLink[T]
   }
   object LinkedStateMixin {
     
@@ -35,12 +34,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ReactLink[T] extends StObject {
     
-    def requestChange(newValue: T): Unit = js.native
+    def requestChange(newValue: T): Unit
     
-    var value: T = js.native
+    var value: T
   }
   object ReactLink {
     
@@ -51,7 +49,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ReactLinkMutableBuilder[Self <: ReactLink[_], T] (val x: Self with ReactLink[T]) extends AnyVal {
+    implicit class ReactLinkMutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
       
       @scala.inline
       def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
@@ -69,12 +67,11 @@ object mod extends Shortcut {
   /* augmented module */
   object reactAugmentingMod {
     
-    @js.native
     trait HTMLAttributes[T] extends StObject {
       
-      var checkedLink: js.UndefOr[ReactLink[Boolean]] = js.native
+      var checkedLink: js.UndefOr[ReactLink[Boolean]] = js.undefined
       
-      var valueLink: js.UndefOr[ReactLink[Boolean | String | Double]] = js.native
+      var valueLink: js.UndefOr[ReactLink[Boolean | String | Double]] = js.undefined
     }
     object HTMLAttributes {
       
@@ -85,7 +82,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[_], T] (val x: Self with HTMLAttributes[T]) extends AnyVal {
+      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setCheckedLink(value: ReactLink[Boolean]): Self = StObject.set(x, "checkedLink", value.asInstanceOf[js.Any])

@@ -24,14 +24,17 @@ import typings.prosemirrorTransform.mod.Mappable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("prosemirror-tables", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("prosemirror-tables", "CellSelection")
   @js.native
-  class CellSelection[S /* <: Schema[_, _] */] protected () extends StObject {
+  class CellSelection[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     def this($anchorCell: ResolvedPos[S]) = this()
     def this($anchorCell: ResolvedPos[S], $headCell: ResolvedPos[S]) = this()
     
@@ -88,30 +91,27 @@ object mod {
   /* static members */
   object CellSelection {
     
-    @JSImport("prosemirror-tables", "CellSelection.colSelection")
+    @JSImport("prosemirror-tables", "CellSelection")
     @js.native
-    def colSelection[S /* <: Schema[_, _] */](anchorCell: ResolvedPos[S]): CellSelection[S] = js.native
-    @JSImport("prosemirror-tables", "CellSelection.colSelection")
-    @js.native
-    def colSelection[S /* <: Schema[_, _] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("prosemirror-tables", "CellSelection.create")
-    @js.native
-    def create[S /* <: Schema[_, _] */](doc: Node[S], anchorCell: Double): CellSelection[S] = js.native
-    @JSImport("prosemirror-tables", "CellSelection.create")
-    @js.native
-    def create[S /* <: Schema[_, _] */](doc: Node[S], anchorCell: Double, headCell: Double): CellSelection[S] = js.native
+    @scala.inline
+    def colSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S]): CellSelection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection[S]]
+    @scala.inline
+    def colSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
     
-    @JSImport("prosemirror-tables", "CellSelection.fromJSON")
-    @js.native
-    def fromJSON[S /* <: Schema[_, _] */](doc: Node[S], json: CellSelectionJSON): CellSelection[S] = js.native
+    @scala.inline
+    def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchorCell: Double): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    @scala.inline
+    def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchorCell: Double, headCell: Double): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
     
-    @JSImport("prosemirror-tables", "CellSelection.rowSelection")
-    @js.native
-    def rowSelection[S /* <: Schema[_, _] */](anchorCell: ResolvedPos[S]): CellSelection[S] = js.native
-    @JSImport("prosemirror-tables", "CellSelection.rowSelection")
-    @js.native
-    def rowSelection[S /* <: Schema[_, _] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = js.native
+    @scala.inline
+    def fromJSON[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], json: CellSelectionJSON): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    
+    @scala.inline
+    def rowSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S]): CellSelection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection[S]]
+    @scala.inline
+    def rowSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
   }
   
   @JSImport("prosemirror-tables", "TableMap")
@@ -130,7 +130,7 @@ object mod {
     
     def nextCell(pos: Double, axis: String, dir: Double): Double = js.native
     
-    def positionAt(row: Double, col: Double, table: Node[_]): Double = js.native
+    def positionAt(row: Double, col: Double, table: Node[js.Any]): Double = js.native
     
     var problems: js.UndefOr[js.Array[js.Object]] = js.native
     
@@ -141,287 +141,259 @@ object mod {
   /* static members */
   object TableMap {
     
-    @JSImport("prosemirror-tables", "TableMap.get")
+    @JSImport("prosemirror-tables", "TableMap")
     @js.native
-    def get(table: Node[_]): TableMap = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def get(table: Node[js.Any]): TableMap = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(table.asInstanceOf[js.Any]).asInstanceOf[TableMap]
   }
   
-  @JSImport("prosemirror-tables", "addColSpan")
-  @js.native
-  def addColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = js.native
-  @JSImport("prosemirror-tables", "addColSpan")
-  @js.native
-  def addColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = js.native
+  @scala.inline
+  def addColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def addColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("prosemirror-tables", "addColumn")
-  @js.native
-  def addColumn[S /* <: Schema[_, _] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = js.native
+  @scala.inline
+  def addColumn[S /* <: Schema[js.Any, js.Any] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumn")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
   
-  @JSImport("prosemirror-tables", "addColumnAfter")
-  @js.native
-  def addColumnAfter[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "addColumnAfter")
-  @js.native
-  def addColumnAfter[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def addColumnAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def addColumnAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "addColumnBefore")
-  @js.native
-  def addColumnBefore[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "addColumnBefore")
-  @js.native
-  def addColumnBefore[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def addColumnBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def addColumnBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "addRow")
-  @js.native
-  def addRow[S /* <: Schema[_, _] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = js.native
+  @scala.inline
+  def addRow[S /* <: Schema[js.Any, js.Any] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("addRow")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
   
-  @JSImport("prosemirror-tables", "addRowAfter")
-  @js.native
-  def addRowAfter[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "addRowAfter")
-  @js.native
-  def addRowAfter[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def addRowAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def addRowAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "addRowBefore")
-  @js.native
-  def addRowBefore[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "addRowBefore")
-  @js.native
-  def addRowBefore[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def addRowBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def addRowBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "cellAround")
-  @js.native
-  def cellAround[S /* <: Schema[_, _] */](pos: ResolvedPos[S]): ResolvedPos[S] | Null = js.native
+  @scala.inline
+  def cellAround[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S]): ResolvedPos[S] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cellAround")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos[S] | Null]
   
-  @JSImport("prosemirror-tables", "colCount")
-  @js.native
-  def colCount(pos: ResolvedPos[_]): Double = js.native
+  @scala.inline
+  def colCount(pos: ResolvedPos[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colCount")(pos.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("prosemirror-tables", "columnIsHeader")
-  @js.native
-  def columnIsHeader(map: TableMap, table: Node[_], col: Double): Boolean = js.native
+  @scala.inline
+  def columnIsHeader(map: TableMap, table: Node[js.Any], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("columnIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "columnResizing")
-  @js.native
-  def columnResizing[S /* <: Schema[_, _] */](props: CellMinWidth[S]): Plugin[S, _] = js.native
+  @scala.inline
+  def columnResizing[S /* <: Schema[js.Any, js.Any] */](props: CellMinWidth[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnResizing")(props.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
   
   @JSImport("prosemirror-tables", "columnResizingPluginKey")
   @js.native
   val columnResizingPluginKey: PluginKey[js.Any, js.Any] = js.native
   
-  @JSImport("prosemirror-tables", "deleteColumn")
-  @js.native
-  def deleteColumn[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "deleteColumn")
-  @js.native
-  def deleteColumn[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def deleteColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def deleteColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "deleteRow")
-  @js.native
-  def deleteRow[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "deleteRow")
-  @js.native
-  def deleteRow[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def deleteRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def deleteRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "deleteTable")
-  @js.native
-  def deleteTable[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "deleteTable")
-  @js.native
-  def deleteTable[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def deleteTable[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def deleteTable[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "findCell")
-  @js.native
-  def findCell(pos: ResolvedPos[_]): Buttom = js.native
+  @scala.inline
+  def findCell(pos: ResolvedPos[js.Any]): Buttom = ^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(pos.asInstanceOf[js.Any]).asInstanceOf[Buttom]
   
-  @JSImport("prosemirror-tables", "fixTables")
-  @js.native
-  def fixTables[S /* <: Schema[_, _] */](state: EditorState[S]): Null | Transaction[S] = js.native
-  @JSImport("prosemirror-tables", "fixTables")
-  @js.native
-  def fixTables[S /* <: Schema[_, _] */](state: EditorState[S], oldState: EditorState[S]): Null | Transaction[S] = js.native
+  @scala.inline
+  def fixTables[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Null | Transaction[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any]).asInstanceOf[Null | Transaction[S]]
+  @scala.inline
+  def fixTables[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], oldState: EditorState[S]): Null | Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any], oldState.asInstanceOf[js.Any])).asInstanceOf[Null | Transaction[S]]
   
   @JSImport("prosemirror-tables", "fixTablesKey")
   @js.native
   val fixTablesKey: PluginKey[js.Any, js.Any] = js.native
   
-  @JSImport("prosemirror-tables", "goToNextCell")
-  @js.native
-  def goToNextCell[S /* <: Schema[_, _] */](direction: Double): js.Function2[
+  @scala.inline
+  def goToNextCell[S /* <: Schema[js.Any, js.Any] */](direction: Double): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
-  
-  @JSImport("prosemirror-tables", "inSameTable")
-  @js.native
-  def inSameTable[S /* <: Schema[_, _] */]($a: ResolvedPos[S], $b: ResolvedPos[S]): Boolean = js.native
-  
-  @JSImport("prosemirror-tables", "isInTable")
-  @js.native
-  def isInTable(state: EditorState[_]): Boolean = js.native
-  
-  @JSImport("prosemirror-tables", "mergeCells")
-  @js.native
-  def mergeCells[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "mergeCells")
-  @js.native
-  def mergeCells[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
-  
-  @JSImport("prosemirror-tables", "moveCellForward")
-  @js.native
-  def moveCellForward[S /* <: Schema[_, _] */](pos: ResolvedPos[S]): ResolvedPos[S] = js.native
-  
-  @JSImport("prosemirror-tables", "nextCell")
-  @js.native
-  def nextCell[S /* <: Schema[_, _] */](pos: ResolvedPos[S], axis: String, dir: Double): Null | ResolvedPos[S] = js.native
-  
-  @JSImport("prosemirror-tables", "removeColSpan")
-  @js.native
-  def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = js.native
-  @JSImport("prosemirror-tables", "removeColSpan")
-  @js.native
-  def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = js.native
-  
-  @JSImport("prosemirror-tables", "rowIsHeader")
-  @js.native
-  def rowIsHeader[S /* <: Schema[_, _] */](map: TableMap, table: Node[S], row: Double): Boolean = js.native
-  
-  @JSImport("prosemirror-tables", "selectedRect")
-  @js.native
-  def selectedRect[S /* <: Schema[_, _] */](state: EditorState[S]): TableRect = js.native
-  
-  @JSImport("prosemirror-tables", "selectionCell")
-  @js.native
-  def selectionCell[S /* <: Schema[_, _] */](state: EditorState[S]): js.UndefOr[ResolvedPos[S] | Null] = js.native
-  
-  @JSImport("prosemirror-tables", "setCellAttr")
-  @js.native
-  def setCellAttr[S /* <: Schema[_, _] */](name: String, value: js.Any): js.Function2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("goToNextCell")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ]]
   
-  @JSImport("prosemirror-tables", "splitCell")
-  @js.native
-  def splitCell[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "splitCell")
-  @js.native
-  def splitCell[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def inSameTable[S /* <: Schema[js.Any, js.Any] */]($a: ResolvedPos[S], $b: ResolvedPos[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inSameTable")($a.asInstanceOf[js.Any], $b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "splitCellWithType")
-  @js.native
-  def splitCellWithType[S /* <: Schema[_, _] */](getCellType: js.Function1[/* options */ GetCellTypeOptions, NodeType[S]]): js.Function2[
+  @scala.inline
+  def isInTable(state: EditorState[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def mergeCells[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def mergeCells[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def moveCellForward[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S]): ResolvedPos[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveCellForward")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos[S]]
+  
+  @scala.inline
+  def nextCell[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S], axis: String, dir: Double): Null | ResolvedPos[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextCell")(pos.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Null | ResolvedPos[S]]
+  
+  @scala.inline
+  def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def rowIsHeader[S /* <: Schema[js.Any, js.Any] */](map: TableMap, table: Node[S], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rowIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def selectedRect[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): TableRect = ^.asInstanceOf[js.Dynamic].applyDynamic("selectedRect")(state.asInstanceOf[js.Any]).asInstanceOf[TableRect]
+  
+  @scala.inline
+  def selectionCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): js.UndefOr[ResolvedPos[S] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionCell")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResolvedPos[S] | Null]]
+  
+  @scala.inline
+  def setCellAttr[S /* <: Schema[js.Any, js.Any] */](name: String, value: js.Any): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellAttr")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
   
-  @JSImport("prosemirror-tables", "tableEditing")
-  @js.native
-  def tableEditing(): Plugin[_, _] = js.native
-  @JSImport("prosemirror-tables", "tableEditing")
-  @js.native
-  def tableEditing(options: TableEditingOptions): Plugin[_, _] = js.native
+  @scala.inline
+  def splitCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def splitCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def splitCellWithType[S /* <: Schema[js.Any, js.Any] */](getCellType: js.Function1[/* options */ GetCellTypeOptions, NodeType[S]]): js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCellWithType")(getCellType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
+  
+  @scala.inline
+  def tableEditing(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")().asInstanceOf[Plugin[js.Any, js.Any]]
+  @scala.inline
+  def tableEditing(options: TableEditingOptions): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
   
   @JSImport("prosemirror-tables", "tableEditingKey")
   @js.native
   val tableEditingKey: PluginKey[js.Any, js.Any] = js.native
   
-  @JSImport("prosemirror-tables", "tableNodeTypes")
-  @js.native
-  def tableNodeTypes(schema: Schema[_, _]): RecordTableRolesNodeTypea = js.native
+  @scala.inline
+  def tableNodeTypes(schema: Schema[js.Any, js.Any]): RecordTableRolesNodeTypea = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNodeTypes")(schema.asInstanceOf[js.Any]).asInstanceOf[RecordTableRolesNodeTypea]
   
-  @JSImport("prosemirror-tables", "tableNodes")
-  @js.native
-  def tableNodes(options: TableNodesOptions): TableNodes_ = js.native
+  @scala.inline
+  def tableNodes(options: TableNodesOptions): TableNodes_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNodes")(options.asInstanceOf[js.Any]).asInstanceOf[TableNodes_]
   
-  @JSImport("prosemirror-tables", "toggleHeaderCell")
-  @js.native
-  def toggleHeaderCell[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "toggleHeaderCell")
-  @js.native
-  def toggleHeaderCell[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def toggleHeaderCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def toggleHeaderCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "toggleHeaderColumn")
-  @js.native
-  def toggleHeaderColumn[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "toggleHeaderColumn")
-  @js.native
-  def toggleHeaderColumn[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def toggleHeaderColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def toggleHeaderColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "toggleHeaderRow")
-  @js.native
-  def toggleHeaderRow[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  @JSImport("prosemirror-tables", "toggleHeaderRow")
-  @js.native
-  def toggleHeaderRow[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
+  @scala.inline
+  def toggleHeaderRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def toggleHeaderRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-tables", "toggleHeader")
-  @js.native
-  def toggleHeader_column[S /* <: Schema[_, _] */](`type`: column): js.Function2[
+  @scala.inline
+  def toggleHeader_column[S /* <: Schema[js.Any, js.Any] */](`type`: column): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
-  @JSImport("prosemirror-tables", "toggleHeader")
-  @js.native
-  def toggleHeader_column[S /* <: Schema[_, _] */](`type`: column, options: UseDeprecatedLogic): js.Function2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
-  @JSImport("prosemirror-tables", "toggleHeader")
-  @js.native
-  def toggleHeader_row[S /* <: Schema[_, _] */](`type`: row): js.Function2[
+  ]]
+  @scala.inline
+  def toggleHeader_column[S /* <: Schema[js.Any, js.Any] */](`type`: column, options: UseDeprecatedLogic): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
-  @JSImport("prosemirror-tables", "toggleHeader")
-  @js.native
-  def toggleHeader_row[S /* <: Schema[_, _] */](`type`: row, options: UseDeprecatedLogic): js.Function2[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
-  ] = js.native
+  ]]
   
-  @JSImport("prosemirror-tables", "updateColumnsOnResize")
-  @js.native
-  def updateColumnsOnResize(node: Node[_], colgroup: Element, table: Element, cellMinWidth: Double): Unit = js.native
-  @JSImport("prosemirror-tables", "updateColumnsOnResize")
-  @js.native
+  @scala.inline
+  def toggleHeader_row[S /* <: Schema[js.Any, js.Any] */](`type`: row): js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
+  @scala.inline
+  def toggleHeader_row[S /* <: Schema[js.Any, js.Any] */](`type`: row, options: UseDeprecatedLogic): js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    Boolean
+  ]]
+  
+  @scala.inline
+  def updateColumnsOnResize(node: Node[js.Any], colgroup: Element, table: Element, cellMinWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateColumnsOnResize(node: Node[js.Any], colgroup: Element, table: Element, cellMinWidth: Double, overrideCol: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def updateColumnsOnResize(
-    node: Node[_],
-    colgroup: Element,
-    table: Element,
-    cellMinWidth: Double,
-    overrideCol: js.UndefOr[scala.Nothing],
-    overrideValue: Double
-  ): Unit = js.native
-  @JSImport("prosemirror-tables", "updateColumnsOnResize")
-  @js.native
-  def updateColumnsOnResize(node: Node[_], colgroup: Element, table: Element, cellMinWidth: Double, overrideCol: Double): Unit = js.native
-  @JSImport("prosemirror-tables", "updateColumnsOnResize")
-  @js.native
-  def updateColumnsOnResize(
-    node: Node[_],
+    node: Node[js.Any],
     colgroup: Element,
     table: Element,
     cellMinWidth: Double,
     overrideCol: Double,
     overrideValue: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any], overrideValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateColumnsOnResize(
+    node: Node[js.Any],
+    colgroup: Element,
+    table: Element,
+    cellMinWidth: Double,
+    overrideCol: Unit,
+    overrideValue: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any], overrideValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CellAttributes extends StObject {
     
-    var default: js.Any = js.native
+    var default: js.Any
     
-    var getFromDOM: js.UndefOr[typings.prosemirrorTables.mod.getFromDOM] = js.native
+    var getFromDOM: js.UndefOr[typings.prosemirrorTables.mod.getFromDOM] = js.undefined
     
-    var setDOMAttr: js.UndefOr[typings.prosemirrorTables.mod.setDOMAttr] = js.native
+    var setDOMAttr: js.UndefOr[typings.prosemirrorTables.mod.setDOMAttr] = js.undefined
   }
   object CellAttributes {
     
@@ -451,14 +423,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CellSelectionJSON extends StObject {
     
-    var anchor: Double = js.native
+    var anchor: Double
     
-    var head: Double = js.native
+    var head: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CellSelectionJSON {
     
@@ -483,19 +454,18 @@ object mod {
     }
   }
   
-  @js.native
   trait GetCellTypeOptions extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var node: Node[_] = js.native
+    var node: Node[js.Any]
     
-    var row: Double = js.native
+    var row: Double
   }
   object GetCellTypeOptions {
     
     @scala.inline
-    def apply(col: Double, node: Node[_], row: Double): GetCellTypeOptions = {
+    def apply(col: Double, node: Node[js.Any], row: Double): GetCellTypeOptions = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCellTypeOptions]
     }
@@ -507,23 +477,22 @@ object mod {
       def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNode(value: Node[_]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      def setNode(value: Node[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Rect {
     
@@ -550,10 +519,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TableEditingOptions extends StObject {
     
-    var allowTableNodeSelection: js.UndefOr[Boolean] = js.native
+    var allowTableNodeSelection: js.UndefOr[Boolean] = js.undefined
   }
   object TableEditingOptions {
     
@@ -574,14 +542,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TableNodesOptions extends StObject {
     
-    var cellAttributes: StringDictionary[CellAttributes] = js.native
+    var cellAttributes: StringDictionary[CellAttributes]
     
-    var cellContent: String = js.native
+    var cellContent: String
     
-    var tableGroup: js.UndefOr[String] = js.native
+    var tableGroup: js.UndefOr[String] = js.undefined
   }
   object TableNodesOptions {
     
@@ -608,16 +575,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TableNodes_ extends StObject {
     
-    var table: NodeSpec = js.native
+    var table: NodeSpec
     
-    var table_cell: NodeSpec = js.native
+    var table_cell: NodeSpec
     
-    var table_header: NodeSpec = js.native
+    var table_header: NodeSpec
     
-    var table_row: NodeSpec = js.native
+    var table_row: NodeSpec
   }
   object TableNodes_ {
     
@@ -644,14 +610,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait TableRect extends Rect {
+  trait TableRect
+    extends StObject
+       with Rect {
     
-    var map: TableMap = js.native
+    var map: TableMap
     
-    var table: Node[_] = js.native
+    var table: Node[js.Any]
     
-    var tableStart: Double = js.native
+    var tableStart: Double
   }
   object TableRect {
     
@@ -661,7 +628,7 @@ object mod {
       left: Double,
       map: TableMap,
       right: Double,
-      table: Node[_],
+      table: Node[js.Any],
       tableStart: Double,
       top: Double
     ): TableRect = {
@@ -676,7 +643,7 @@ object mod {
       def setMap(value: TableMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTable(value: Node[_]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      def setTable(value: Node[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTableStart(value: Double): Self = StObject.set(x, "tableStart", value.asInstanceOf[js.Any])

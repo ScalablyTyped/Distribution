@@ -5,59 +5,92 @@ import typings.redis.mod.RedisClient
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("redis-scripto", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Scripto {
+  class ^ protected ()
+    extends StObject
+       with Scripto {
     def this(redisClient: RedisClient) = this()
+    
+    /* CompleteClass */
+    override def eval(
+      scriptName: String,
+      keys: js.Array[String],
+      args: js.Array[js.Any],
+      callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def evalSha(
+      scriptName: String,
+      keys: js.Array[String],
+      args: js.Array[js.Any],
+      callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def load(scripts: Scripts): Unit = js.native
+    
+    /* CompleteClass */
+    override def loadFromDir(scriptsDir: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def loadFromFile(name: String, filepath: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def run(
+      scriptName: String,
+      keys: js.Array[String],
+      args: js.Array[js.Any],
+      callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
+    ): Unit = js.native
   }
   
   type Script = String
   
-  @js.native
   trait Scripto extends StObject {
     
     def eval(
       scriptName: String,
       keys: js.Array[String],
-      args: js.Array[_],
+      args: js.Array[js.Any],
       callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def evalSha(
       scriptName: String,
       keys: js.Array[String],
-      args: js.Array[_],
+      args: js.Array[js.Any],
       callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def load(scripts: Scripts): Unit = js.native
+    def load(scripts: Scripts): Unit
     
-    def loadFromDir(scriptsDir: String): Unit = js.native
+    def loadFromDir(scriptsDir: String): Unit
     
-    def loadFromFile(name: String, filepath: String): Unit = js.native
+    def loadFromFile(name: String, filepath: String): Unit
     
     def run(
       scriptName: String,
       keys: js.Array[String],
-      args: js.Array[_],
+      args: js.Array[js.Any],
       callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Scripto {
     
     @scala.inline
     def apply(
-      eval: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
-      evalSha: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
+      eval: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
+      evalSha: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
       load: Scripts => Unit,
       loadFromDir: String => Unit,
       loadFromFile: (String, String) => Unit,
-      run: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
+      run: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
     ): Scripto = {
       val __obj = js.Dynamic.literal(eval = js.Any.fromFunction4(eval), evalSha = js.Any.fromFunction4(evalSha), load = js.Any.fromFunction1(load), loadFromDir = js.Any.fromFunction1(loadFromDir), loadFromFile = js.Any.fromFunction2(loadFromFile), run = js.Any.fromFunction4(run))
       __obj.asInstanceOf[Scripto]
@@ -68,12 +101,12 @@ object mod {
       
       @scala.inline
       def setEval(
-        value: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
+        value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "eval", js.Any.fromFunction4(value))
       
       @scala.inline
       def setEvalSha(
-        value: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
+        value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "evalSha", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -87,7 +120,7 @@ object mod {
       
       @scala.inline
       def setRun(
-        value: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
+        value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
     }
   }

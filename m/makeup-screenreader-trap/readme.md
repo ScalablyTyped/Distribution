@@ -10,9 +10,9 @@ Restricts screen reader virtual cursor to a single subtree in the DOM
 | ------------------ | :-------------: |
 | Full name          | makeup-screenreader-trap |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 3 |
-| # downloads        | 18935 |
+| # downloads        | 22133 |
 | # stars            | 0 |
 
 ## Links

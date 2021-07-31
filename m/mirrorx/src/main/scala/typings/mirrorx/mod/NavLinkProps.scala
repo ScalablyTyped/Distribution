@@ -7,25 +7,25 @@ import typings.react.mod.CSSProperties
 import typings.reactRouter.mod.`match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavLinkProps extends LinkProps {
+trait NavLinkProps
+  extends StObject
+     with LinkProps {
   
-  var activeClassName: js.UndefOr[String] = js.native
+  var activeClassName: js.UndefOr[String] = js.undefined
   
-  var activeStyle: js.UndefOr[CSSProperties] = js.native
+  var activeStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var exact: js.UndefOr[Boolean] = js.native
+  var exact: js.UndefOr[Boolean] = js.undefined
   
   var isActive: js.UndefOr[
-    js.Function2[/* match */ `match`[_], /* location */ Location[LocationState], Boolean]
-  ] = js.native
+    js.Function2[/* match */ `match`[js.Any], /* location */ Location[LocationState], Boolean]
+  ] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState]] = js.native
+  var location: js.UndefOr[Location[LocationState]] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object NavLinkProps {
   
@@ -57,7 +57,7 @@ object NavLinkProps {
     def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def setIsActive(value: (/* match */ `match`[_], /* location */ Location[LocationState]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
+    def setIsActive(value: (/* match */ `match`[js.Any], /* location */ Location[LocationState]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
     
     @scala.inline
     def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)

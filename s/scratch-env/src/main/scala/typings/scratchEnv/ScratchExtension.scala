@@ -2,14 +2,12 @@ package typings.scratchEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScratchExtension extends StObject {
   
   /** Returns data about the extension. */
-  def getInfo(): ExtensionMetadata = js.native
+  def getInfo(): ExtensionMetadata
 }
 object ScratchExtension {
   

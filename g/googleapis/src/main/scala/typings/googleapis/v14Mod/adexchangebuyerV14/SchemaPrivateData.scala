@@ -2,15 +2,13 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPrivateData extends StObject {
   
-  var referenceId: js.UndefOr[String] = js.native
+  var referenceId: js.UndefOr[String] = js.undefined
   
-  var referencePayload: js.UndefOr[String] = js.native
+  var referencePayload: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivateData {
   

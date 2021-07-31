@@ -2,29 +2,27 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attached extends StObject {
   
-  var attached: Boolean = js.native
+  var attached: Boolean
   
-  var checkAlways: Boolean = js.native
+  var checkAlways: Boolean
   
-  var creationMode: Boolean = js.native
+  var creationMode: Boolean
   
-  var destroyed: Boolean = js.native
+  var destroyed: Boolean
   
-  var dirty: Boolean = js.native
+  var dirty: Boolean
   
-  var firstViewPass: Boolean = js.native
+  var firstViewPass: Boolean
   
-  var indexWithinInitPhase: Double = js.native
+  var indexWithinInitPhase: Double
   
-  var initPhaseState: Double = js.native
+  var initPhaseState: Double
   
-  var isRoot: Boolean = js.native
+  var isRoot: Boolean
 }
 object Attached {
   

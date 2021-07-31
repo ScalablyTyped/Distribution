@@ -3,31 +3,29 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildMetric extends StObject {
   
   /**
     * The date for the scope.
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * The value.
     */
-  var intValue: Double = js.native
+  var intValue: Double
   
   /**
     * The name of the metric.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The scope.
     */
-  var scope: String = js.native
+  var scope: String
 }
 object BuildMetric {
   

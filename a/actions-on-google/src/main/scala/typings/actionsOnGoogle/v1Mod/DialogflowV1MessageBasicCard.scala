@@ -1,32 +1,30 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.basic_card
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageBasicCard
-  extends DialogflowV1BaseGoogleMessage[basic_card]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[basic_card]
      with DialogflowV1Message {
   
-  var buttons: js.UndefOr[js.Array[DialogflowV1MessageBasicCardButton]] = js.native
+  var buttons: js.UndefOr[js.Array[DialogflowV1MessageBasicCardButton]] = js.undefined
   
-  var formattedText: js.UndefOr[String] = js.native
+  var formattedText: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[DialogflowV1MessageImage] = js.native
+  var image: js.UndefOr[DialogflowV1MessageImage] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageBasicCard {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageBasicCard = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageBasicCard = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageBasicCard]
   }
   

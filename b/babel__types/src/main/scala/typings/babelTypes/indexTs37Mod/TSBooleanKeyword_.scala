@@ -3,25 +3,24 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSBooleanKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSBooleanKeyword_
-  extends TSBaseType
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSBooleanKeyword_
+  extends StObject
      with BaseNode
+     with TSBaseType
      with TSType {
   
   @JSName("type")
-  var type_TSBooleanKeyword_ : TSBooleanKeyword = js.native
+  var type_TSBooleanKeyword_ : TSBooleanKeyword
 }
 object TSBooleanKeyword_ {
   
   @scala.inline
-  def apply(`type`: TSBooleanKeyword): TSBooleanKeyword_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): TSBooleanKeyword_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSBooleanKeyword")
     __obj.asInstanceOf[TSBooleanKeyword_]
   }
   

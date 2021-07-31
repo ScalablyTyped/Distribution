@@ -3,34 +3,33 @@ package typings.gsap.gsap
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TweenConfig
-  extends /** Any tweenable property */
+  extends StObject
+     with /** Any tweenable property */
 /* p */ StringDictionary[js.Any] {
   
   /** If true atuomatically populates the css property for tween on DOM elements */
-  var autoCSS: js.UndefOr[Boolean] = js.native
+  var autoCSS: js.UndefOr[Boolean] = js.undefined
   
   /** The scope to be used for all of the callbacks (onStart, onUpdate, onComplete, etc.). The scope is what "this" refers to inside any of the callbacks. */
-  var callbackScope: js.UndefOr[js.Object] = js.native
+  var callbackScope: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Amount of delay in seconds (or frames for frames-based tweens) before the animation should begin.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /** Ease (or () => void or String) - You can choose from various eases to control the rate of change during the animation, giving it a specific "feel". */
-  var ease: js.UndefOr[Ease] = js.native
+  var ease: js.UndefOr[Ease] = js.undefined
   
   /**
     * Normally when you create a tween, it begins rendering on the very next frame (update cycle) unless you specify a delay. However, if you prefer to force the tween to render
     * immediately when it is created, setimmediateRender to true. Or to prevent a from() from rendering immediately, set immediateRender to false. By default, from() tweens set
     * immediateRender to true.
     */
-  var immediateRender: js.UndefOr[Boolean] = js.native
+  var immediateRender: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When a tween renders for the very first time and reads its starting values, GSAP will automatically "lazy render" that particular tick by default, meaning it will try to delay the
@@ -39,73 +38,73 @@ trait TweenConfig
     * If you would like to disable lazy rendering for a particular tween, you can set lazy:false. Or, since zero-duration tweens do not lazy-render by default, you can specifically give it
     * permission to lazy-render by setting lazy:true like TweenLite.set(element, {opacity:0, lazy:true});. In most cases, you won't need to set lazy.
     */
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
   
   /**  A () => void that should be called when the animation has completed. */
-  var onComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /** An Array of parameters to pass the onComplete () => void */
-  var onCompleteParams: js.UndefOr[js.Array[_]] = js.native
+  var onCompleteParams: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** Defines the scope of the onComplete () => void (what "this" refers to inside that () => void). */
-  var onCompleteScope: js.UndefOr[js.Object] = js.native
+  var onCompleteScope: js.UndefOr[js.Object] = js.undefined
   
   /** A () => void that should be called when the tween gets overwritten by another tween. */
-  var onOverwrite: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onOverwrite: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var onRepeat: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onRepeat: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var onRepeatScope: js.UndefOr[js.Object] = js.native
+  var onRepeatScope: js.UndefOr[js.Object] = js.undefined
   
   /** A () => void that should be called when the tween has reached its beginning again from the reverse direction. */
-  var onReverseComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onReverseComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /** An Array of parameters to pass the onReverseComplete () => void. */
-  var onReverseCompleteParams: js.UndefOr[js.Array[_]] = js.native
+  var onReverseCompleteParams: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** Defines the scope of the onReverseComplete () => void (what "this" refers to inside that () => void). */
-  var onReverseCompleteScope: js.UndefOr[js.Object] = js.native
+  var onReverseCompleteScope: js.UndefOr[js.Object] = js.undefined
   
   /** A () => void that should be called when the tween begins (when its time changes from 0 to some other value which can happen more than once if the tween is restarted multiple times). */
-  var onStart: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onStart: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /** An Array of parameters to pass the onStart () => void. */
-  var onStartParams: js.UndefOr[js.Array[_]] = js.native
+  var onStartParams: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** Defines the scope of the onStart () => void (what "this" refers to inside that () => void). */
-  var onStartScope: js.UndefOr[js.Object] = js.native
+  var onStartScope: js.UndefOr[js.Object] = js.undefined
   
   /** A () => void that should be called every time the animation updates (on every frame while the animation is active). */
-  var onUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /** An Array of parameters to pass the onUpdate () => void. */
-  var onUpdateParams: js.UndefOr[js.Array[_]] = js.native
+  var onUpdateParams: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** Defines the scope of the onUpdate () => void (what "this" refers to inside that () => void). */
-  var onUpdateScope: js.UndefOr[js.Object] = js.native
+  var onUpdateScope: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Controls how (and if) other tweens of the same target are overwritten. There are several modes to choose from, but "auto" is the default (although you can change the default mode using
     * theTweenLite.defaultOverwrite property)
     */
-  var overwrite: js.UndefOr[String | Double] = js.native
+  var overwrite: js.UndefOr[String | Double] = js.undefined
   
   /** If true, the tween will pause itself immediately upon creation. */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
-  var repeat: js.UndefOr[Double] = js.native
+  var repeat: js.UndefOr[Double] = js.undefined
   
-  var repeatDelay: js.UndefOr[Double] = js.native
+  var repeatDelay: js.UndefOr[Double] = js.undefined
   
-  var startAt: js.UndefOr[js.Object] = js.native
+  var startAt: js.UndefOr[js.Object] = js.undefined
   
   /**
     * If useFrames is true, the tweens's timing will be based on frames instead of seconds because it is intially added to the root frames-based timeline. This causes both its duration and
     * delay to be based on frames. An animations's timing mode is always determined by its parent timeline.
     */
-  var useFrames: js.UndefOr[Boolean] = js.native
+  var useFrames: js.UndefOr[Boolean] = js.undefined
   
-  var yoyo: js.UndefOr[Boolean] = js.native
+  var yoyo: js.UndefOr[Boolean] = js.undefined
 }
 object TweenConfig {
   
@@ -158,7 +157,7 @@ object TweenConfig {
     def setOnComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCompleteParams(value: js.Array[_]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+    def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
@@ -197,7 +196,7 @@ object TweenConfig {
     def setOnReverseComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onReverseComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReverseCompleteParams(value: js.Array[_]): Self = StObject.set(x, "onReverseCompleteParams", value.asInstanceOf[js.Any])
+    def setOnReverseCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onReverseCompleteParams", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnReverseCompleteParamsUndefined: Self = StObject.set(x, "onReverseCompleteParams", js.undefined)
@@ -218,7 +217,7 @@ object TweenConfig {
     def setOnStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStartParams(value: js.Array[_]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+    def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
@@ -239,7 +238,7 @@ object TweenConfig {
     def setOnUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnUpdateParams(value: js.Array[_]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+    def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)

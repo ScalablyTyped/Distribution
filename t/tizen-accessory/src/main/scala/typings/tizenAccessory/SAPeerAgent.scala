@@ -2,23 +2,21 @@ package typings.tizenAccessory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAPeerAgent extends StObject {
   
-  val appName: String = js.native
+  val appName: String
   
-  val feature: js.Array[String] = js.native
+  val feature: js.Array[String]
   
-  val maxAllowedDataSize: Double = js.native
+  val maxAllowedDataSize: Double
   
-  val peerAccessory: SAPeerAccessory = js.native
+  val peerAccessory: SAPeerAccessory
   
-  val peerId: String = js.native
+  val peerId: String
   
-  val profileVersion: String = js.native
+  val profileVersion: String
 }
 object SAPeerAgent {
   

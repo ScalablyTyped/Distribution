@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserRolePermission extends StObject {
   
   /** Levels of availability for a user role permission. */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /** ID of this user role permission. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#userRolePermission". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Name of this user role permission. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** ID of the permission group that this user role permission belongs to. */
-  var permissionGroupId: js.UndefOr[String] = js.native
+  var permissionGroupId: js.UndefOr[String] = js.undefined
 }
 object UserRolePermission {
   

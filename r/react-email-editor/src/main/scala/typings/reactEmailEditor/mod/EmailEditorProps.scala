@@ -3,25 +3,23 @@ package typings.reactEmailEditor.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailEditorProps extends StObject {
   
-  val appearance: js.UndefOr[AppearanceConfig] = js.native
+  val appearance: js.UndefOr[AppearanceConfig] = js.undefined
   
-  val minHeight: js.UndefOr[Double] = js.native
+  val minHeight: js.UndefOr[Double] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val options: js.UndefOr[UnlayerOptions] = js.native
+  val options: js.UndefOr[UnlayerOptions] = js.undefined
   
-  val projectId: js.UndefOr[Double] = js.native
+  val projectId: js.UndefOr[Double] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val tools: js.UndefOr[ToolsConfig] = js.native
+  val tools: js.UndefOr[ToolsConfig] = js.undefined
 }
 object EmailEditorProps {
   

@@ -3,7 +3,6 @@ package typings.nodeXmppClient
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,7 @@ object mod {
     
     def disconnect(): Unit = js.native
     
-    def on(event: String, c: js.Function2[/* e */ js.Any, /* d */ js.Any, _]): Unit = js.native
+    def on(event: String, c: js.Function2[/* e */ js.Any, /* d */ js.Any, js.Any]): Unit = js.native
     
     def send(stanza: js.Any): Unit = js.native
   }
@@ -35,12 +34,11 @@ object mod {
     def Stanza_=(x: Stanza): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stanza")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Bosh extends StObject {
     
-    var prebind: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ js.Any, Unit]] = js.native
+    var prebind: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ js.Any, Unit]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Bosh {
     
@@ -102,7 +100,8 @@ object mod {
   
   @js.native
   trait Stanza
-    extends Element
+    extends StObject
+       with Element
        with // This has to be used for the static class initializer new Client.Stanza(..). If there is a better way feel free to
   // contribute.
   // tslint:disable-next-line:no-misused-new
@@ -117,41 +116,40 @@ object mod {
     var `type`: String = js.native
   }
   
-  @js.native
   trait XmppOptions extends StObject {
     
     // Dictionary (optional) - TLS or SSL key and certificate credentials
-    var actAs: js.UndefOr[String] = js.native
+    var actAs: js.UndefOr[String] = js.undefined
     
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
     // Preferred SASL mechanism to use
-    var bosh: js.UndefOr[Bosh] = js.native
+    var bosh: js.UndefOr[Bosh] = js.undefined
     
     // connect to the legacy SSL port, requires at least the host to be specified
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
     // if admin user act on behalf of another user (just user)
-    var disallowTLS: js.UndefOr[Boolean] = js.native
+    var disallowTLS: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var jid: String = js.native
+    var jid: String
     
     // register account before authentication
-    var legacySSL: js.UndefOr[Boolean] = js.native
+    var legacySSL: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     // prevent upgrading the connection to a secure one via TLS
-    var preferred: js.UndefOr[String] = js.native
+    var preferred: js.UndefOr[String] = js.undefined
     
-    var reconnect: js.UndefOr[Boolean] = js.native
+    var reconnect: js.UndefOr[Boolean] = js.undefined
     
     // if we start connecting to a given port
-    var register: js.UndefOr[Boolean] = js.native
+    var register: js.UndefOr[Boolean] = js.undefined
   }
   object XmppOptions {
     

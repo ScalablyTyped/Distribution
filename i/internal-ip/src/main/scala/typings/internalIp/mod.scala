@@ -2,7 +2,6 @@ package typings.internalIp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,18 +35,20 @@ object mod {
     	*/
     def sync(): js.UndefOr[String] = js.native
   }
-  /**
-  	@returns The IPv4 address of the internet-facing interface, as determined from the default gateway. When the address cannot be determined for any reason, `undefined` will be returned.
-  	@example
-  	```
-  	import internalIp = require('internal-ip');
-  	console.log(await internalIp.v4())
-  	//=> '10.0.0.79'
-  	```
-  	*/
-  @JSImport("internal-ip", "v4")
-  @js.native
-  def v4(): js.Promise[js.UndefOr[String]] = js.native
+  object v4 {
+    
+    /**
+    	@returns The IPv4 address of the internet-facing interface, as determined from the default gateway. When the address cannot be determined for any reason, `undefined` will be returned.
+    	@example
+    	```
+    	import internalIp = require('internal-ip');
+    	console.log(await internalIp.v4())
+    	//=> '10.0.0.79'
+    	```
+    	*/
+    @scala.inline
+    def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  }
   @JSImport("internal-ip", "v4")
   @js.native
   def v4_Fmod: v4 = js.native
@@ -80,18 +81,20 @@ object mod {
     	*/
     def sync(): js.UndefOr[String] = js.native
   }
-  /**
-  	@returns The IPv6 address of the internet-facing interface, as determined from the default gateway. When the address cannot be determined for any reason, `undefined` will be returned.
-  	@example
-  	```
-  	import internalIp = require('internal-ip');
-  	console.log(await internalIp.v6());
-  	//=> 'fe80::1'
-  	```
-  	*/
-  @JSImport("internal-ip", "v6")
-  @js.native
-  def v6(): js.Promise[js.UndefOr[String]] = js.native
+  object v6 {
+    
+    /**
+    	@returns The IPv6 address of the internet-facing interface, as determined from the default gateway. When the address cannot be determined for any reason, `undefined` will be returned.
+    	@example
+    	```
+    	import internalIp = require('internal-ip');
+    	console.log(await internalIp.v6());
+    	//=> 'fe80::1'
+    	```
+    	*/
+    @scala.inline
+    def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  }
   @JSImport("internal-ip", "v6")
   @js.native
   def v6_Fmod: v6 = js.native

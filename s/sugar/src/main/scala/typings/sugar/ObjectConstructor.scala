@@ -8,11 +8,12 @@ import typings.sugar.sugarjs.Object.searchFn
 import typings.sugar.sugarjs._NativeConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectConstructor extends _NativeConstructor {
+trait ObjectConstructor
+  extends StObject
+     with _NativeConstructor {
   
   def add[T](instance: js.Object, obj: js.Object): js.Object = js.native
   def add[T](instance: js.Object, obj: js.Object, options: ObjectMergeOptions[T]): js.Object = js.native
@@ -95,11 +96,11 @@ trait ObjectConstructor extends _NativeConstructor {
   def keys[T](instance: js.Object): Array[T] = js.native
   
   def least[T, U](instance: js.Object): T = js.native
-  def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def least[T, U](instance: js.Object, all: Boolean): T = js.native
   def least[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def least[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+  def least[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+  def least[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
   def least[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def least[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   
@@ -107,11 +108,11 @@ trait ObjectConstructor extends _NativeConstructor {
   def map[T, U](instance: js.Object, map: mapFn[T, U]): js.Object = js.native
   
   def max[T, U](instance: js.Object): T = js.native
-  def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def max[T, U](instance: js.Object, all: Boolean): T = js.native
   def max[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def max[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+  def max[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+  def max[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
   def max[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def max[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   
@@ -126,20 +127,20 @@ trait ObjectConstructor extends _NativeConstructor {
   def mergeAll[T](instance: js.Object, sources: Array[js.Object], options: ObjectMergeOptions[T]): js.Object = js.native
   
   def min[T, U](instance: js.Object): T = js.native
-  def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def min[T, U](instance: js.Object, all: Boolean): T = js.native
   def min[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def min[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+  def min[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+  def min[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
   def min[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def min[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   
   def most[T, U](instance: js.Object): T = js.native
-  def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Object, all: Boolean): T = js.native
   def most[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def most[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
+  def most[T, U](instance: js.Object, all: Unit, map: java.lang.String): T = js.native
+  def most[T, U](instance: js.Object, all: Unit, map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def most[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   
@@ -182,7 +183,7 @@ trait ObjectConstructor extends _NativeConstructor {
   def sum[T, U](instance: js.Object, map: java.lang.String): Double = js.native
   def sum[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
   
-  def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, _]): js.Object = js.native
+  def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, js.Any]): js.Object = js.native
   
   def toQueryString[T, U](instance: js.Object): js.Object = js.native
   def toQueryString[T, U](instance: js.Object, options: QueryStringOptions[T, U]): js.Object = js.native

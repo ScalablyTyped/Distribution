@@ -3,7 +3,6 @@ package typings.grpc.mod
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "ClientWritableStream")
@@ -32,7 +31,7 @@ class ClientWritableStream[RequestType] protected () extends Writable {
     * @return As defined for [Writable]{@link external:Writable}
     */
   def write(message: RequestType): Boolean = js.native
-  def write(message: RequestType, flags: js.Any with writeFlags): Boolean = js.native
-  def write(message: RequestType, flags: js.Any with writeFlags, callback: js.Function): Boolean = js.native
-  def write(message: RequestType, flags: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
+  def write(message: RequestType, flags: js.Any & writeFlags): Boolean = js.native
+  def write(message: RequestType, flags: js.Any & writeFlags, callback: js.Function): Boolean = js.native
+  def write(message: RequestType, flags: Unit, callback: js.Function): Boolean = js.native
 }

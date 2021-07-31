@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersResource extends StObject {
   
-  var sessions: SessionsResource = js.native
+  var sessions: SessionsResource
 }
 object UsersResource {
   

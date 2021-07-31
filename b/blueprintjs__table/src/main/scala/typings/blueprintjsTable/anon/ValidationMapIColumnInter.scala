@@ -3,14 +3,12 @@ package typings.blueprintjsTable.anon
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ValidationMap<@blueprintjs/table.@blueprintjs/table/lib/esm/common/context.IColumnInteractionBarContextTypes> */
-@js.native
 trait ValidationMapIColumnInter extends StObject {
   
-  var enableColumnInteractionBar: js.UndefOr[Validator[Boolean]] = js.native
+  var enableColumnInteractionBar: js.UndefOr[Validator[Boolean]] = js.undefined
 }
 object ValidationMapIColumnInter {
   

@@ -2,29 +2,27 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamic Links warning messages.
   */
-@js.native
 trait SchemaDynamicLinkWarning extends StObject {
   
   /**
     * The warning code.
     */
-  var warningCode: js.UndefOr[String] = js.native
+  var warningCode: js.UndefOr[String] = js.undefined
   
   /**
     * The document describing the warning, and helps resolve.
     */
-  var warningDocumentLink: js.UndefOr[String] = js.native
+  var warningDocumentLink: js.UndefOr[String] = js.undefined
   
   /**
     * The warning message to help developers improve their requests.
     */
-  var warningMessage: js.UndefOr[String] = js.native
+  var warningMessage: js.UndefOr[String] = js.undefined
 }
 object SchemaDynamicLinkWarning {
   

@@ -2,19 +2,17 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Group {
   
-  @js.native
   trait GetGroupsParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetGroupsParams {
     
@@ -47,12 +45,11 @@ object Group {
     }
   }
   
-  @js.native
   trait PatchGroupParams extends StObject {
     
-    var members: js.UndefOr[js.Array[String]] = js.native
+    var members: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object PatchGroupParams {
     
@@ -82,12 +79,11 @@ object Group {
     }
   }
   
-  @js.native
   trait PostGroupsParams extends StObject {
     
-    var members: js.UndefOr[js.Array[String]] = js.native
+    var members: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object PostGroupsParams {
     

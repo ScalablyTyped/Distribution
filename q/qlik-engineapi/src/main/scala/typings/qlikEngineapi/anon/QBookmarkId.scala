@@ -2,15 +2,13 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QBookmarkId extends StObject {
   
-  var qBookmarkId: js.UndefOr[String] = js.native
+  var qBookmarkId: js.UndefOr[String] = js.undefined
   
-  var qExpires: js.UndefOr[Double] = js.native
+  var qExpires: js.UndefOr[Double] = js.undefined
 }
 object QBookmarkId {
   

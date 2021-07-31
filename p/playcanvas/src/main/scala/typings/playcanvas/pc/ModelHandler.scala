@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.AddParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param defaultMaterial - The shared default material that is used in any place that a material is not specified.
   */
 @js.native
-trait ModelHandler extends ResourceHandler {
+trait ModelHandler
+  extends StObject
+     with ResourceHandler {
   
   /**
     * Add a parser that converts raw data into a {@link pc.Model}

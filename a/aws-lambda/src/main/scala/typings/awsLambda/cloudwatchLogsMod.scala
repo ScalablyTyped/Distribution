@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudwatchLogsMod {
   
-  @js.native
   trait CloudWatchLogsDecodedData extends StObject {
     
-    var logEvents: js.Array[CloudWatchLogsLogEvent] = js.native
+    var logEvents: js.Array[CloudWatchLogsLogEvent]
     
-    var logGroup: String = js.native
+    var logGroup: String
     
-    var logStream: String = js.native
+    var logStream: String
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var owner: String = js.native
+    var owner: String
     
-    var subscriptionFilters: js.Array[String] = js.native
+    var subscriptionFilters: js.Array[String]
   }
   object CloudWatchLogsDecodedData {
     
@@ -68,10 +66,9 @@ object cloudwatchLogsMod {
     }
   }
   
-  @js.native
   trait CloudWatchLogsEvent extends StObject {
     
-    var awslogs: CloudWatchLogsEventData = js.native
+    var awslogs: CloudWatchLogsEventData
   }
   object CloudWatchLogsEvent {
     
@@ -89,10 +86,9 @@ object cloudwatchLogsMod {
     }
   }
   
-  @js.native
   trait CloudWatchLogsEventData extends StObject {
     
-    var data: String = js.native
+    var data: String
   }
   object CloudWatchLogsEventData {
     
@@ -112,16 +108,15 @@ object cloudwatchLogsMod {
   
   type CloudWatchLogsHandler = Handler[CloudWatchLogsEvent, Unit]
   
-  @js.native
   trait CloudWatchLogsLogEvent extends StObject {
     
-    var extractedFields: js.UndefOr[StringDictionary[String]] = js.native
+    var extractedFields: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object CloudWatchLogsLogEvent {
     

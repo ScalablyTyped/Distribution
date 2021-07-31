@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kgsearchMod {
+  
+  @JSImport("googleapis/build/src/apis/kgsearch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object kgsearchMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/kgsearch", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/kgsearch", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object kgsearchMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/kgsearch", "kgsearch")
-  @js.native
-  def kgsearch(options: Options): Kgsearch = js.native
-  @JSImport("googleapis/build/src/apis/kgsearch", "kgsearch")
-  @js.native
-  def kgsearch_v1(version: v1): Kgsearch = js.native
+  @scala.inline
+  def kgsearch(options: Options): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
+  
+  @scala.inline
+  def kgsearch_v1(version: v1): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
 }

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermsAggregation")
 @js.native
-class TermsAggregation protected () extends Aggregation {
+class TermsAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Defines an aggregation of unique values/terms.
     */

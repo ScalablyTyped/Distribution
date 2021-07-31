@@ -4,7 +4,6 @@ import typings.rcRate.rateMod.RateProps
 import typings.rcRate.rateMod.RateState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,6 +15,10 @@ object mod {
     def this(props: RateProps) = this()
   }
   object default {
+    
+    @JSImport("rc-rate", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     object defaultProps {
@@ -86,8 +89,7 @@ object mod {
     }
     
     /* static member */
-    @JSImport("rc-rate", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: RateProps, state: RateState): RateState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: RateProps, state: RateState): RateState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RateState]
   }
 }

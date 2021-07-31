@@ -2,22 +2,20 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPayments extends StObject {
   
   /**
     * The list of Payments for the account. One or both of a) the account&#39;s
     * most recent payment; and b) the account&#39;s upcoming payment.
     */
-  var items: js.UndefOr[js.Array[SchemaPayment]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPayment]] = js.undefined
   
   /**
     * Kind of list this is, in this case adsense#payments.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPayments {
   

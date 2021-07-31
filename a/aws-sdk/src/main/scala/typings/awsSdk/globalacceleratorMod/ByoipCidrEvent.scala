@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByoipCidrEvent extends StObject {
   
   /**
     * A string that contains an Event message describing changes that you make in the status of an IP address range that you bring to AWS Global Accelerator through bring your own IP address (BYOIP).
     */
-  var Message: js.UndefOr[GenericString] = js.native
+  var Message: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A timestamp when you make a status change for an IP address range that you bring to AWS Global Accelerator through bring your own IP address (BYOIP).
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.globalacceleratorMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.globalacceleratorMod.Timestamp] = js.undefined
 }
 object ByoipCidrEvent {
   

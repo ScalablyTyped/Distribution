@@ -12,7 +12,7 @@ Image Quantization Library in **TypeScript** *(MIT Licensed)*
 | Keywords           | image, palette, quantization, quantizer, color, neuquant, rgbquant, xiaolin wu, cie94 distance, ciede2000, dithering, floyd-steinberg |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 921738 |
+| # downloads        | 8397032 |
 | # stars            | 0 |
 
 ## Links

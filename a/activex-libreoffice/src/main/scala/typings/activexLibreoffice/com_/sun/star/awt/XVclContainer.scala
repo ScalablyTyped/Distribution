@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a VCL container window.
   * @deprecated Deprecated
   */
-@js.native
-trait XVclContainer extends XInterface {
+trait XVclContainer
+  extends StObject
+     with XInterface {
   
   /** returns all windows. */
-  val Windows: SafeArray[XWindow] = js.native
+  val Windows: SafeArray[XWindow]
   
   /** adds the specified container listener to receive container events from this container. */
-  def addVclContainerListener(l: XVclContainerListener): Unit = js.native
+  def addVclContainerListener(l: XVclContainerListener): Unit
   
   /** returns all windows. */
-  def getWindows(): SafeArray[XWindow] = js.native
+  def getWindows(): SafeArray[XWindow]
   
   /** removes the specified container listener so that it no longer receives container events from this container. */
-  def removeVclContainerListener(l: XVclContainerListener): Unit = js.native
+  def removeVclContainerListener(l: XVclContainerListener): Unit
 }
 object XVclContainer {
   

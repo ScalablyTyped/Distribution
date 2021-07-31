@@ -5,23 +5,21 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3BatchMod {
   
   type S3BatchCallback = Callback[S3BatchResult]
   
-  @js.native
   trait S3BatchEvent extends StObject {
     
-    var invocationId: String = js.native
+    var invocationId: String
     
-    var invocationSchemaVersion: String = js.native
+    var invocationSchemaVersion: String
     
-    var job: S3BatchEventJob = js.native
+    var job: S3BatchEventJob
     
-    var tasks: js.Array[S3BatchEventTask] = js.native
+    var tasks: js.Array[S3BatchEventTask]
   }
   object S3BatchEvent {
     
@@ -56,10 +54,9 @@ object s3BatchMod {
     }
   }
   
-  @js.native
   trait S3BatchEventJob extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object S3BatchEventJob {
     
@@ -77,22 +74,21 @@ object s3BatchMod {
     }
   }
   
-  @js.native
   trait S3BatchEventTask extends StObject {
     
-    var s3BucketArn: String = js.native
+    var s3BucketArn: String
     
-    var s3Key: String = js.native
+    var s3Key: String
     
-    var s3VersionId: String | Null = js.native
+    var s3VersionId: String | Null
     
-    var taskId: String = js.native
+    var taskId: String
   }
   object S3BatchEventTask {
     
     @scala.inline
     def apply(s3BucketArn: String, s3Key: String, taskId: String): S3BatchEventTask = {
-      val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Key = s3Key.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Key = s3Key.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], s3VersionId = null)
       __obj.asInstanceOf[S3BatchEventTask]
     }
     
@@ -118,16 +114,15 @@ object s3BatchMod {
   
   type S3BatchHandler = Handler[S3BatchEvent, S3BatchResult]
   
-  @js.native
   trait S3BatchResult extends StObject {
     
-    var invocationId: String = js.native
+    var invocationId: String
     
-    var invocationSchemaVersion: String = js.native
+    var invocationSchemaVersion: String
     
-    var results: js.Array[S3BatchResultResult] = js.native
+    var results: js.Array[S3BatchResultResult]
     
-    var treatMissingKeysAs: S3BatchResultResultCode = js.native
+    var treatMissingKeysAs: S3BatchResultResultCode
   }
   object S3BatchResult {
     
@@ -162,14 +157,13 @@ object s3BatchMod {
     }
   }
   
-  @js.native
   trait S3BatchResultResult extends StObject {
     
-    var resultCode: S3BatchResultResultCode = js.native
+    var resultCode: S3BatchResultResultCode
     
-    var resultString: String = js.native
+    var resultString: String
     
-    var taskId: String = js.native
+    var taskId: String
   }
   object S3BatchResultResult {
     

@@ -5,25 +5,23 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaEncodingProfileStatics extends StObject {
   
-  def createFromFileAsync(file: IStorageFile): IAsyncOperation[MediaEncodingProfile] = js.native
+  def createFromFileAsync(file: IStorageFile): IAsyncOperation[MediaEncodingProfile]
   
-  def createFromStreamAsync(stream: IRandomAccessStream): IAsyncOperation[MediaEncodingProfile] = js.native
+  def createFromStreamAsync(stream: IRandomAccessStream): IAsyncOperation[MediaEncodingProfile]
   
-  def createM4a(quality: AudioEncodingQuality): MediaEncodingProfile = js.native
+  def createM4a(quality: AudioEncodingQuality): MediaEncodingProfile
   
-  def createMp3(quality: AudioEncodingQuality): MediaEncodingProfile = js.native
+  def createMp3(quality: AudioEncodingQuality): MediaEncodingProfile
   
-  def createMp4(quality: VideoEncodingQuality): MediaEncodingProfile = js.native
+  def createMp4(quality: VideoEncodingQuality): MediaEncodingProfile
   
-  def createWma(quality: AudioEncodingQuality): MediaEncodingProfile = js.native
+  def createWma(quality: AudioEncodingQuality): MediaEncodingProfile
   
-  def createWmv(quality: VideoEncodingQuality): MediaEncodingProfile = js.native
+  def createWmv(quality: VideoEncodingQuality): MediaEncodingProfile
 }
 object IMediaEncodingProfileStatics {
   

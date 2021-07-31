@@ -3,67 +3,65 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an uncompressed bitmap. */
-@js.native
 trait SoftwareBitmap extends StObject {
   
   /** Gets the alpha mode of the software bitmap. */
-  var bitmapAlphaMode: BitmapAlphaMode = js.native
+  var bitmapAlphaMode: BitmapAlphaMode
   
   /** Gets the pixel format of the software bitmap. */
-  var bitmapPixelFormat: BitmapPixelFormat = js.native
+  var bitmapPixelFormat: BitmapPixelFormat
   
   /** Disposes of the object and associated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Copies the pixel data from an IBuffer into the SoftwareBitmap .
     * @param buffer The buffer containing the pixel data to be copied.
     */
-  def copyFromBuffer(buffer: IBuffer): Unit = js.native
+  def copyFromBuffer(buffer: IBuffer): Unit
   
   /**
     * Copies the current SoftwareBitmap into the provided SoftwareBitmap object.
     * @param bitmap The target software bitmap into which the data will be copied.
     */
-  def copyTo(bitmap: SoftwareBitmap): Unit = js.native
+  def copyTo(bitmap: SoftwareBitmap): Unit
   
   /**
     * Copies the software bitmap pixel data into the specified IBuffer .
     * @param buffer The target buffer to which the pixel data will be copied.
     */
-  def copyToBuffer(buffer: IBuffer): Unit = js.native
+  def copyToBuffer(buffer: IBuffer): Unit
   
   /** Gets or sets the dots per inch of the software bitmap in the X direction. */
-  var dpiX: Double = js.native
+  var dpiX: Double
   
   /** Gets or sets the dots per inch of the software bitmap in the Y direction. */
-  var dpiY: Double = js.native
+  var dpiY: Double
   
   /**
     * Gets a read-only representation of the SoftwareBitmap object.
     * @return A read-only representation of the SoftwareBitmap object.
     */
-  def getReadOnlyView(): SoftwareBitmap = js.native
+  def getReadOnlyView(): SoftwareBitmap
   
   /** Gets a value indicating whether the software bitmap can be modified. */
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
   /**
     * Gets a BitmapBuffer object that allows you to operate directly on the software bitmap's pixel data.
     * @param mode A value indicating the access mode of the returned buffer.
     * @return The buffer containing pixel data.
     */
-  def lockBuffer(mode: BitmapBufferAccessMode): BitmapBuffer = js.native
+  def lockBuffer(mode: BitmapBufferAccessMode): BitmapBuffer
   
   /** Gets the height of the software bitmap, in pixels. */
-  var pixelHeight: Double = js.native
+  var pixelHeight: Double
   
   /** Gets the width of the software bitmap, in pixels. */
-  var pixelWidth: Double = js.native
+  var pixelWidth: Double
 }
 object SoftwareBitmap {
   

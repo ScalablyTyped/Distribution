@@ -6,11 +6,12 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataModel extends Model {
+trait ODataModel
+  extends StObject
+     with Model {
   
   /**
     * Adds (a) new URL(s) to the be parsed for OData annotations, which are then merged into the
@@ -25,8 +26,8 @@ trait ODataModel extends Model {
     * metadata object reached by the getServiceMetadata() method.                                 For non $metadata requests the
     * array will be empty.
     */
-  def addAnnotationUrl(vUrl: String): JQueryPromise[_] = js.native
-  def addAnnotationUrl(vUrl: js.Array[String]): JQueryPromise[_] = js.native
+  def addAnnotationUrl(vUrl: String): JQueryPromise[js.Any] = js.native
+  def addAnnotationUrl(vUrl: js.Array[String]): JQueryPromise[js.Any] = js.native
   
   /**
     * Adds new xml content to be parsed for OData annotations, which are then merged into the annotations
@@ -36,8 +37,8 @@ trait ODataModel extends Model {
     * @returns The Promise to parse the given XML-String, resolved if parsed without errors, rejected if
     * errors occur
     */
-  def addAnnotationXML(sXMLContent: String): JQueryPromise[_] = js.native
-  def addAnnotationXML(sXMLContent: String, bSuppressEvents: Boolean): JQueryPromise[_] = js.native
+  def addAnnotationXML(sXMLContent: String): JQueryPromise[js.Any] = js.native
+  def addAnnotationXML(sXMLContent: String, bSuppressEvents: Boolean): JQueryPromise[js.Any] = js.native
   
   /**
     * Appends the change batch operations to the end of the batch stack. Only PUT, POST or DELETE batch
@@ -48,7 +49,7 @@ trait ODataModel extends Model {
     * @param aChangeOperations an array of change batch operations created via
     * <code>createBatchOperation</code> and <code>sMethod</code> = POST, PUT, MERGE or DELETE
     */
-  def addBatchChangeOperations(aChangeOperations: js.Array[_]): Unit = js.native
+  def addBatchChangeOperations(aChangeOperations: js.Array[js.Any]): Unit = js.native
   
   /**
     * Appends the read batch operations to the end of the batch stack. Only GET batch operations should be
@@ -57,7 +58,7 @@ trait ODataModel extends Model {
     * @param aReadOperations an array of read batch operations created via
     * <code>createBatchOperation</code> and <code>sMethod</code> = GET
     */
-  def addBatchReadOperations(aReadOperations: js.Array[_]): Unit = js.native
+  def addBatchReadOperations(aReadOperations: js.Array[js.Any]): Unit = js.native
   
   /**
     * Attach event-handler <code>fnFunction</code> to the 'annotationsFailed' event of this
@@ -149,9 +150,9 @@ trait ODataModel extends Model {
     * @param oParameters optional parameter for additional information introduced in SAPUI5 1.9.1,
     */
   def createBatchOperation(sPath: String, sMethod: String): Unit = js.native
-  def createBatchOperation(sPath: String, sMethod: String, oData: js.UndefOr[scala.Nothing], oParameters: js.Any): Unit = js.native
   def createBatchOperation(sPath: String, sMethod: String, oData: js.Any): Unit = js.native
   def createBatchOperation(sPath: String, sMethod: String, oData: js.Any, oParameters: js.Any): Unit = js.native
+  def createBatchOperation(sPath: String, sMethod: String, oData: Unit, oParameters: js.Any): Unit = js.native
   
   def createEntry(sPath: String, vProperties: js.Any): Context = js.native
   /**
@@ -170,7 +171,7 @@ trait ODataModel extends Model {
     * @param vProperties An array that specifies a set of properties or the entry
     * @returns oContext A Context object that point to the new created entry.
     */
-  def createEntry(sPath: String, vProperties: js.Array[_]): Context = js.native
+  def createEntry(sPath: String, vProperties: js.Array[js.Any]): Context = js.native
   
   /**
     * Creates the key from the given collection name and property map
@@ -272,9 +273,9 @@ trait ODataModel extends Model {
     * @returns oData Object containing the requested data if the path is valid.
     */
   def getData(sPath: String): js.Any = js.native
-  def getData(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getData(sPath: String, oContext: js.Any): js.Any = js.native
   def getData(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+  def getData(sPath: String, oContext: Unit, bIncludeExpandEntries: Boolean): js.Any = js.native
   
   /**
     * Returns the default count mode for retrieving the count of collections
@@ -296,8 +297,8 @@ trait ODataModel extends Model {
   def getKey(oObject: js.Any, bDecode: Boolean): Unit = js.native
   def getKey(oObject: Context, bDecode: Boolean): Unit = js.native
   
-  def getProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getProperty(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+  def getProperty(sPath: String, oContext: Unit, bIncludeExpandEntries: Boolean): js.Any = js.native
   
   /**
     * Returns the current security token. If the token has not been requested from the server it will be
@@ -364,13 +365,13 @@ trait ODataModel extends Model {
     * @returns an object which has an <code>abort</code> function to abort the current request.
     */
   def refreshSecurityToken(): js.Any = js.native
-  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.UndefOr[scala.Nothing], bAsync: Boolean): js.Any = js.native
-  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.Any): js.Any = js.native
-  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.Any, bAsync: Boolean): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any): js.Any = js.native
-  def refreshSecurityToken(fnSuccess: js.Any, fnError: js.UndefOr[scala.Nothing], bAsync: Boolean): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any, fnError: js.Any): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any, fnError: js.Any, bAsync: Boolean): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: js.Any, fnError: Unit, bAsync: Boolean): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: Unit, fnError: js.Any): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: Unit, fnError: js.Any, bAsync: Boolean): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: Unit, fnError: Unit, bAsync: Boolean): js.Any = js.native
   
   /**
     * Trigger a DELETE request to the odata service that was specified in the model constructor.
@@ -437,9 +438,9 @@ trait ODataModel extends Model {
     * found or another entry was already updated.
     */
   def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
-  def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+  def setProperty(sPath: String, oValue: js.Any, oContext: Unit, bAsyncUpdate: Boolean): Boolean = js.native
   
   /**
     * Enable/Disable automatic updates of all Bindings after change operations
@@ -493,9 +494,9 @@ trait ODataModel extends Model {
     * @returns an object which has an <code>abort</code> function to abort the current request.
     */
   def submitChanges(fnSuccess: js.Any): js.Any = js.native
-  def submitChanges(fnSuccess: js.Any, fnError: js.UndefOr[scala.Nothing], oParameters: js.Any): js.Any = js.native
   def submitChanges(fnSuccess: js.Any, fnError: js.Any): js.Any = js.native
   def submitChanges(fnSuccess: js.Any, fnError: js.Any, oParameters: js.Any): js.Any = js.native
+  def submitChanges(fnSuccess: js.Any, fnError: Unit, oParameters: js.Any): js.Any = js.native
   
   /**
     * Trigger a PUT/MERGE request to the odata service that was specified in the model constructor. Please

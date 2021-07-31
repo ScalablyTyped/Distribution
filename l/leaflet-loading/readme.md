@@ -11,8 +11,8 @@ A simple loading control for Leaflet
 | Full name          | leaflet-loading |
 | Keywords           | leaflet, map, maps, gis, geoweb, loading |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 36936 |
+| # dependents       | 4 |
+| # downloads        | 48489 |
 | # stars            | 0 |
 
 ## Links

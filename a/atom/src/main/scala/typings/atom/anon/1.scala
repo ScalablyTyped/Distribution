@@ -5,15 +5,13 @@ import typings.atom.atomStrings.no
 import typings.atom.atomStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var newValue: no | yes | always = js.native
+  var newValue: no | yes | always
   
-  var oldValue: js.UndefOr[no | yes | always] = js.native
+  var oldValue: js.UndefOr[no | yes | always] = js.undefined
 }
 object `1` {
   

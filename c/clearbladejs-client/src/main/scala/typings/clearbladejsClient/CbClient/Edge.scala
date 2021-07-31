@@ -2,29 +2,27 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  def columns(callback: CbCallback): Unit = js.native
+  def columns(callback: CbCallback): Unit
   
-  def count(query: Query, callback: CbCallback): Unit = js.native
+  def count(query: Query, callback: CbCallback): Unit
   
-  def create(newEdge: js.Object, name: String, callback: CbCallback): Unit = js.native
+  def create(newEdge: js.Object, name: String, callback: CbCallback): Unit
   
-  def deleteEdgeByName(name: String, callback: CbCallback): Unit = js.native
+  def deleteEdgeByName(name: String, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def updateEdgeByName(name: String, `object`: js.Object, callback: CbCallback): Unit = js.native
+  def updateEdgeByName(name: String, `object`: js.Object, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Edge {
   

@@ -3,12 +3,13 @@ package typings.vscode.mod
 import typings.vscode.anon.Authority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Uri")
 @js.native
-class Uri protected () extends ConfigurationScope {
+class Uri protected ()
+  extends StObject
+     with ConfigurationScope {
   /**
     * Use the `file` and `parse` factory functions to create new `Uri` objects.
     */
@@ -91,6 +92,10 @@ class Uri protected () extends ConfigurationScope {
 /* static members */
 object Uri {
   
+  @JSImport("vscode", "Uri")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create an URI from a file system path. The [scheme](#Uri.scheme)
     * will be `file`.
@@ -113,9 +118,8 @@ object Uri {
     * @param path A file system or UNC path.
     * @return A new Uri instance.
     */
-  @JSImport("vscode", "Uri.file")
-  @js.native
-  def file(path: String): Uri = js.native
+  @scala.inline
+  def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
   /**
     * Create a new uri which path is the result of joining
@@ -137,9 +141,8 @@ object Uri {
     * @param pathSegments One more more path fragments
     * @returns A new uri which path is joined with the given fragments
     */
-  @JSImport("vscode", "Uri.joinPath")
-  @js.native
-  def joinPath(base: Uri, pathSegments: String*): Uri = js.native
+  @scala.inline
+  def joinPath(base: Uri, pathSegments: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(base.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   /**
     * Create an URI from a string, e.g. `http://www.msft.com/some/path`,
@@ -154,10 +157,8 @@ object Uri {
     * @param strict Throw an error when `value` is empty or when no `scheme` can be parsed.
     * @return A new Uri instance.
     */
-  @JSImport("vscode", "Uri.parse")
-  @js.native
-  def parse(value: String): Uri = js.native
-  @JSImport("vscode", "Uri.parse")
-  @js.native
-  def parse(value: String, strict: Boolean): Uri = js.native
+  @scala.inline
+  def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  @scala.inline
+  def parse(value: String, strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
 }

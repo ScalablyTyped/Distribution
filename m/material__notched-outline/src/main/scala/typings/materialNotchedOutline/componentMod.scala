@@ -5,7 +5,6 @@ import typings.materialNotchedOutline.foundationMod.MDCNotchedOutlineFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -13,7 +12,7 @@ object componentMod {
   @JSImport("@material/notched-outline/component", "MDCNotchedOutline")
   @js.native
   class MDCNotchedOutline protected () extends MDCComponent[MDCNotchedOutlineFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCNotchedOutlineFoundation, args: js.Any*) = this()
     
     /**
@@ -30,9 +29,12 @@ object componentMod {
   /* static members */
   object MDCNotchedOutline {
     
-    @JSImport("@material/notched-outline/component", "MDCNotchedOutline.attachTo")
+    @JSImport("@material/notched-outline/component", "MDCNotchedOutline")
     @js.native
-    def attachTo(root: Element): MDCNotchedOutline = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCNotchedOutline = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCNotchedOutline]
   }
   
   type MDCNotchedOutlineFactory = js.Function2[

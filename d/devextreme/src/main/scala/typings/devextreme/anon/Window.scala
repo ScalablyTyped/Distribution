@@ -2,13 +2,11 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var window: js.UndefOr[typings.std.Window] = js.native
+  var window: js.UndefOr[typings.std.Window] = js.undefined
 }
 object Window {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastModifiedInfo extends StObject {
   
   /** Timestamp of the last change in milliseconds since epoch. */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object LastModifiedInfo {
   

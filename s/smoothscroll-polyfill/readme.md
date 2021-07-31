@@ -11,12 +11,13 @@ Smooth Scroll behavior polyfill
 | Full name          | smoothscroll-polyfill |
 | Keywords           | smooth, scroll, CSSOM, polyfill |
 | # releases         | 2 |
-| # dependents       | 167 |
-| # downloads        | 15510691 |
+| # dependents       | 193 |
+| # downloads        | 21084770 |
 | # stars            | 16 |
 
 ## Links
 - [Homepage](https://github.com/iamdustan/smoothscroll#readme)
+- [Bugs](https://github.com/iamdustan/smoothscroll/issues)
 - [Repository](https://github.com/iamdustan/smoothscroll)
 - [Npm](https://www.npmjs.com/package/smoothscroll-polyfill)
     

@@ -3,14 +3,12 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The producer representation of a product which is a child resource of
   * `Catalog` with display metadata and a list of `Version` resources.
   */
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Product extends StObject {
   
   /**
@@ -25,12 +23,12 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Product extends StObject {
     * isn&#39;t allowed to be added under the
     * `google.cloudprivatecatalog.ListingOnly` type.
     */
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the product was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user-supplied display metadata to describe the product. The JSON
@@ -66,14 +64,14 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Product extends StObject {
     * required: - name - description - signup_url additionalProperties: false
     * ```
     */
-  var displayMetadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var displayMetadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. The public accessible URI of the icon uploaded by
     * PrivateCatalogProducer.UploadIcon.  If no icon is uploaded, it will be
     * the default icon&#39;s URI.
     */
-  var iconUri: js.UndefOr[String] = js.native
+  var iconUri: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The resource name of the product in the format
@@ -82,12 +80,12 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Product extends StObject {
     * product is created. The final segment of the name must between 1 and 256
     * characters in length.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the product was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1Product {
   

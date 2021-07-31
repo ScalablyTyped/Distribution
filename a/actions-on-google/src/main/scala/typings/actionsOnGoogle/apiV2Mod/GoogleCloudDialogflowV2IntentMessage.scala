@@ -3,35 +3,33 @@ package typings.actionsOnGoogle.apiV2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessage extends StObject {
   
-  var basicCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBasicCard] = js.native
+  var basicCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBasicCard] = js.undefined
   
-  var card: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCard] = js.native
+  var card: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCard] = js.undefined
   
-  var carouselSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.native
+  var carouselSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.undefined
   
-  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
-  var linkOutSuggestion: js.UndefOr[GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.native
+  var linkOutSuggestion: js.UndefOr[GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.undefined
   
-  var listSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageListSelect] = js.native
+  var listSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageListSelect] = js.undefined
   
-  var payload: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var payload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var platform: js.UndefOr[GoogleCloudDialogflowV2IntentMessagePlatform] = js.native
+  var platform: js.UndefOr[GoogleCloudDialogflowV2IntentMessagePlatform] = js.undefined
   
-  var quickReplies: js.UndefOr[GoogleCloudDialogflowV2IntentMessageQuickReplies] = js.native
+  var quickReplies: js.UndefOr[GoogleCloudDialogflowV2IntentMessageQuickReplies] = js.undefined
   
-  var simpleResponses: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.native
+  var simpleResponses: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.undefined
   
-  var suggestions: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSuggestions] = js.native
+  var suggestions: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSuggestions] = js.undefined
   
-  var text: js.UndefOr[GoogleCloudDialogflowV2IntentMessageText] = js.native
+  var text: js.UndefOr[GoogleCloudDialogflowV2IntentMessageText] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessage {
   
@@ -81,7 +79,7 @@ object GoogleCloudDialogflowV2IntentMessage {
     def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
     
     @scala.inline
-    def setPayload(value: ApiClientObjectMap[_]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

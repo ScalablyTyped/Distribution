@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBuildOutput extends StObject {
   
   /**
     * The newly created build resource, including a unique build IDs and status. 
     */
-  var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.native
+  var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.undefined
   
   /**
     * Amazon S3 location for your game build file, including bucket name and key.
     */
-  var StorageLocation: js.UndefOr[S3Location] = js.native
+  var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
     * This element is returned only when the operation is called without a storage location. It contains credentials to use when you are uploading a build file to an S3 bucket that is owned by Amazon GameLift. Credentials have a limited life span. To refresh these credentials, call RequestUploadCredentials. 
     */
-  var UploadCredentials: js.UndefOr[AwsCredentials] = js.native
+  var UploadCredentials: js.UndefOr[AwsCredentials] = js.undefined
 }
 object CreateBuildOutput {
   

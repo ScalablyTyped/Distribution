@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -120,9 +119,8 @@ object ProxyConfiguration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.create")
-  @js.native
-  def create(model: IModel): ProxyConfiguration = js.native
+  @scala.inline
+  def create(model: IModel): ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ProxyConfiguration]
   
   /**
     * Creates and returns a new ProxyConfiguration instance in the SDK and on the server.
@@ -133,9 +131,8 @@ object ProxyConfiguration {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.createInRestCallActionUnderProxyConfiguration")
-  @js.native
-  def createInRestCallActionUnderProxyConfiguration(container: RestCallAction): ProxyConfiguration = js.native
+  @scala.inline
+  def createInRestCallActionUnderProxyConfiguration(container: RestCallAction): ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderProxyConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[ProxyConfiguration]
   
   /**
     * Creates and returns a new ProxyConfiguration instance in the SDK and on the server.
@@ -146,9 +143,8 @@ object ProxyConfiguration {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.createInWebServiceCallActionUnderProxyConfiguration")
-  @js.native
-  def createInWebServiceCallActionUnderProxyConfiguration(container: WebServiceCallAction): ProxyConfiguration = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderProxyConfiguration(container: WebServiceCallAction): ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderProxyConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[ProxyConfiguration]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.structureTypeName")

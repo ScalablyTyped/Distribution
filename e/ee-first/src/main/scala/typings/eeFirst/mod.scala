@@ -3,7 +3,6 @@ package typings.eeFirst
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,9 +20,12 @@ object mod {
     * - `event`: the string event name that fired
     * - `args`: an array of the arguments that were emitted on the event
     */
+  @scala.inline
+  def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = (^.asInstanceOf[js.Dynamic].apply(eventSpec.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Thunk[TEmitter]]
+  
   @JSImport("ee-first", JSImport.Namespace)
   @js.native
-  def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
+  val ^ : js.Any = js.native
   
   type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
     /* err */ js.Any, 

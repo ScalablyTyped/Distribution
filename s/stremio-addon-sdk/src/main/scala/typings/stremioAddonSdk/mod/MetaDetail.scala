@@ -3,7 +3,6 @@ package typings.stremioAddonSdk.mod
 import typings.stremioAddonSdk.anon.DefaultVideo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,15 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This description is displayed when the user selects an item form the catalog.
   */
-@js.native
-trait MetaDetail extends MetaPreview {
+trait MetaDetail
+  extends StObject
+     with MetaPreview {
   
   /**
     * Human-readable that describes all the significant awards.
     */
-  var awards: js.UndefOr[String] = js.native
+  var awards: js.UndefOr[String] = js.undefined
   
-  var behaviourHints: js.UndefOr[DefaultVideo] = js.native
+  var behaviourHints: js.UndefOr[DefaultVideo] = js.undefined
   
   /**
     * Array of members of the cast.
@@ -28,12 +28,12 @@ trait MetaDetail extends MetaPreview {
     *
     * @deprecated
     */
-  var cast: js.UndefOr[js.Array[String]] = js.native
+  var cast: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Official country of origin.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Array of directors.
@@ -42,7 +42,7 @@ trait MetaDetail extends MetaPreview {
     *
     * @deprecated
     */
-  var director: js.UndefOr[js.Array[String]] = js.native
+  var director: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * genre/categories of the content.
@@ -51,26 +51,26 @@ trait MetaDetail extends MetaPreview {
     *
     * **WARNING: this will soon be deprecated, use 'links' instead**
     */
-  var genres: js.UndefOr[js.Array[String]] = js.native
+  var genres: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * IMDb rating, which should be a number from 0.0 to 10.0.
     */
-  var imdbRating: js.UndefOr[String] = js.native
+  var imdbRating: js.UndefOr[String] = js.undefined
   
   /**
     * Spoken language.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Can be used to link to internal pages of Stremio.
     *
     * example: array of actor / genre / director links.
     */
-  var links: js.UndefOr[js.Array[MetaLink]] = js.native
+  var links: js.UndefOr[js.Array[MetaLink]] = js.undefined
   
-  var releaseInfo: js.UndefOr[String] = js.native
+  var releaseInfo: js.UndefOr[String] = js.undefined
   
   /**
     * ISO 8601, initial release date.
@@ -79,26 +79,26 @@ trait MetaDetail extends MetaPreview {
     *
     * e.g. "2010-12-06T05:00:00.000Z"
     */
-  var released: js.UndefOr[String] = js.native
+  var released: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable expected runtime.
     *
     * e.g. "120m"
     */
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
   /**
     * Used for channel and series.
     *
     * If you do not provide this (e.g. for movie), Stremio assumes this meta item has one video, and it's ID is equal to the meta item id.
     */
-  var videos: js.UndefOr[js.Array[MetaVideo]] = js.native
+  var videos: js.UndefOr[js.Array[MetaVideo]] = js.undefined
   
   /**
     * URL to official website.
     */
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object MetaDetail {
   

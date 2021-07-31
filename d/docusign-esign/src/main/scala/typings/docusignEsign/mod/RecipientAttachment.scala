@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientAttachment extends StObject {
   
   /**
     * The unique identifier for the attachment.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of the attachment for the recipient. Possible values are:
@@ -19,28 +17,28 @@ trait RecipientAttachment extends StObject {
     * - `.htm`
     * - `.xml`
     */
-  var attachmentType: js.UndefOr[String] = js.native
+  var attachmentType: js.UndefOr[String] = js.undefined
   
   /**
     * A Base64-encoded representation of the attachment that is used to upload and download the file. File attachments may be up to 50 MB in size.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * An optional label for the attachment.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the attachment.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of a previously staged chunked upload. Using a chunked upload enables you to stage a large, chunkable temp file. You then use the `remoteUrl`
     * property to reference the chunked upload as the content in attachment and document-related requests. The `remoteUrl` property cannot be used for downloads.
     */
-  var remoteUrl: js.UndefOr[String] = js.native
+  var remoteUrl: js.UndefOr[String] = js.undefined
 }
 object RecipientAttachment {
   

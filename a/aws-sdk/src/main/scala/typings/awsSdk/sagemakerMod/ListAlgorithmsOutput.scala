@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAlgorithmsOutput extends StObject {
   
   /**
     * &gt;An array of AlgorithmSummary objects, each of which lists an algorithm.
     */
-  var AlgorithmSummaryList: typings.awsSdk.sagemakerMod.AlgorithmSummaryList = js.native
+  var AlgorithmSummaryList: typings.awsSdk.sagemakerMod.AlgorithmSummaryList
   
   /**
     * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of algorithms, use it in the subsequent request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListAlgorithmsOutput {
   

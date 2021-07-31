@@ -11,8 +11,8 @@ minimal pull stream
 | Full name          | pull-stream |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 666 |
-| # downloads        | 2058387 |
+| # dependents       | 688 |
+| # downloads        | 2056979 |
 | # stars            | 8 |
 
 ## Links

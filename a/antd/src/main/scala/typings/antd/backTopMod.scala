@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backTopMod extends Shortcut {
@@ -21,26 +20,25 @@ object backTopMod extends Shortcut {
   @js.native
   val default: NamedExoticComponent[BackTopProps] = js.native
   
-  @js.native
   trait BackTopProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: js.UndefOr[js.Function0[HTMLElement | Window | Document]] = js.native
+    var target: js.UndefOr[js.Function0[HTMLElement | Window | Document]] = js.undefined
     
-    var visibilityHeight: js.UndefOr[Double] = js.native
+    var visibilityHeight: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object BackTopProps {
     

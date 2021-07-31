@@ -2,60 +2,58 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMath extends StObject {
   
-  var AlignPoint: Double = js.native
+  var AlignPoint: Double
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val ArgIndex: Double = js.native
+  val ArgIndex: Double
   
-  var ArgSize: Double = js.native
+  var ArgSize: Double
   
-  val Breaks: OMathBreaks = js.native
+  val Breaks: OMathBreaks
   
-  def BuildUp(): Unit = js.native
+  def BuildUp(): Unit
   
-  def ConvertToLiteralText(): Unit = js.native
+  def ConvertToLiteralText(): Unit
   
-  def ConvertToMathText(): Unit = js.native
+  def ConvertToMathText(): Unit
   
-  def ConvertToNormalText(): Unit = js.native
+  def ConvertToNormalText(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Functions: OMathFunctions = js.native
+  val Functions: OMathFunctions
   
-  var Justification: WdOMathJc = js.native
+  var Justification: WdOMathJc
   
-  def Linearize(): Unit = js.native
+  def Linearize(): Unit
   
-  val NestingLevel: Double = js.native
+  val NestingLevel: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val ParentArg: OMath = js.native
+  val ParentArg: OMath
   
-  val ParentCol: OMathMatCol = js.native
+  val ParentCol: OMathMatCol
   
-  val ParentFunction: OMathFunction = js.native
+  val ParentFunction: OMathFunction
   
-  val ParentOMath: OMath = js.native
+  val ParentOMath: OMath
   
-  val ParentRow: OMathMatRow = js.native
+  val ParentRow: OMathMatRow
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  def Remove(): Unit = js.native
+  def Remove(): Unit
   
-  var Type: WdOMathType = js.native
+  var Type: WdOMathType
   
   @JSName("Word.OMath_typekey")
-  var WordDotOMath_typekey: OMath = js.native
+  var WordDotOMath_typekey: OMath
 }
 object OMath {
   

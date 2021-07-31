@@ -2,21 +2,19 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedUser extends StObject {
   
   /**
     * The user name. This could be a display name or a GUID.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The user type: 'user', 'servicePrincipal'.
     */
-  var `type`: UserType = js.native
+  var `type`: UserType
 }
 object LinkedUser {
   

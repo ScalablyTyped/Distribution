@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainControllersRequest extends StObject {
   
   /**
     * Identifier of the directory for which to retrieve the domain controller information.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * A list of identifiers for the domain controllers whose information will be provided.
     */
-  var DomainControllerIds: js.UndefOr[typings.awsSdk.directoryserviceMod.DomainControllerIds] = js.native
+  var DomainControllerIds: js.UndefOr[typings.awsSdk.directoryserviceMod.DomainControllerIds] = js.undefined
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.undefined
   
   /**
     * The DescribeDomainControllers.NextToken value from a previous call to DescribeDomainControllers. Pass null if this is the first call. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
 }
 object DescribeDomainControllersRequest {
   

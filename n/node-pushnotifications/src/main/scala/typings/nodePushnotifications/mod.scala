@@ -11,131 +11,131 @@ import typings.webPush.mod.PushSubscription
 import typings.webPush.mod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-pushnotifications", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PushNotifications {
+  class ^ protected ()
+    extends StObject
+       with PushNotifications {
     def this(settings: Settings) = this()
   }
   
   type Callback = js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
   
-  @js.native
   trait Data extends StObject {
     
     /** apn and gcm for ios */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** apn, will take precedence over title and body. It is also accepted a text message in alert */
-    var alert: js.UndefOr[js.Object | String] = js.native
+    var alert: js.UndefOr[js.Object | String] = js.undefined
     
     /** gcm for ios, apn */
-    var badge: js.UndefOr[Double] = js.native
+    var badge: js.UndefOr[Double] = js.undefined
     
     /** REQUIRED */
-    var body: String = js.native
+    var body: String
     
     /** gcm, apn */
-    var bodyLocArgs: js.UndefOr[String] = js.native
+    var bodyLocArgs: js.UndefOr[String] = js.undefined
     
     /** apn and gcm for ios */
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
     /** gcm for android. In ios, category will be used if not supplied */
-    var clickAction: js.UndefOr[String] = js.native
+    var clickAction: js.UndefOr[String] = js.undefined
     
     /** gcm for android, used as collapseId in apn */
-    var collapseKey: js.UndefOr[String] = js.native
+    var collapseKey: js.UndefOr[String] = js.undefined
     
     /** gcm for android */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** ADM */
-    var consolidationKey: js.UndefOr[String] = js.native
+    var consolidationKey: js.UndefOr[String] = js.undefined
     
     /** gcm for android */
-    var contentAvailable: js.UndefOr[Boolean | String] = js.native
+    var contentAvailable: js.UndefOr[Boolean | String] = js.undefined
     
-    var custom: js.UndefOr[(StringDictionary[String | Double]) | String] = js.native
-    
-    /** gcm for android */
-    var delayWhileIdle: js.UndefOr[Boolean] = js.native
+    var custom: js.UndefOr[(StringDictionary[String | Double]) | String] = js.undefined
     
     /** gcm for android */
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var delayWhileIdle: js.UndefOr[Boolean] = js.undefined
+    
+    /** gcm for android */
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
     /** wns */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** apn */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** seconds */
-    var expiry: js.UndefOr[Double] = js.native
+    var expiry: js.UndefOr[Double] = js.undefined
     
     /** wns */
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
     /** gcm for android */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** wns */
-    var launch: js.UndefOr[String] = js.native
+    var launch: js.UndefOr[String] = js.undefined
     
     /** apn and gcm for ios */
-    var launchImage: js.UndefOr[String] = js.native
+    var launchImage: js.UndefOr[String] = js.undefined
     
     /** gcm, apn */
-    var locKey: js.UndefOr[String] = js.native
+    var locKey: js.UndefOr[String] = js.undefined
     
     /** apn and gcm for ios */
-    var mdm: js.UndefOr[String] = js.native
+    var mdm: js.UndefOr[String] = js.undefined
     
     /** apn */
-    var mutableContent: js.UndefOr[Double] = js.native
+    var mutableContent: js.UndefOr[Double] = js.undefined
     
     /**
       * gcm, apn. Supported values are 'high' or 'normal' (gcm). Will be translated to 10 and 5 for apn. Defaults
       * to 'high'
       */
-    var priority: js.UndefOr[String] = js.native
+    var priority: js.UndefOr[String] = js.undefined
     
     /** gcm for android */
-    var restrictedPackageName: js.UndefOr[String] = js.native
+    var restrictedPackageName: js.UndefOr[String] = js.undefined
     
     /** gcm, apn */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
     /** gcm, apn */
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
     /** gcm for android */
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
     /** if both expiry and timeToLive are given, expiry will take precedency */
-    var timeToLive: js.UndefOr[Double] = js.native
+    var timeToLive: js.UndefOr[Double] = js.undefined
     
     /** REQUIRED */
-    var title: String = js.native
+    var title: String
     
     /** gcm, apn */
-    var titleLocArgs: js.UndefOr[String] = js.native
+    var titleLocArgs: js.UndefOr[String] = js.undefined
     
     /** gcm, apn */
-    var titleLocKey: js.UndefOr[String] = js.native
+    var titleLocKey: js.UndefOr[String] = js.undefined
     
     /** apn and gcm for ios */
-    var topic: js.UndefOr[String] = js.native
+    var topic: js.UndefOr[String] = js.undefined
     
     /** apn and gcm for ios */
-    var truncateAtWordEnd: js.UndefOr[Boolean] = js.native
+    var truncateAtWordEnd: js.UndefOr[Boolean] = js.undefined
     
     /** apn and gcm for ios */
-    var urlArgs: js.UndefOr[String] = js.native
+    var urlArgs: js.UndefOr[String] = js.undefined
   }
   object Data {
     
@@ -363,18 +363,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var error: js.UndefOr[Error | Null] = js.native
+    var error: js.UndefOr[Error | Null] = js.undefined
     
-    var errorMsg: js.UndefOr[String] = js.native
+    var errorMsg: js.UndefOr[String] = js.undefined
     
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
-    var originalRegId: js.UndefOr[String] = js.native
+    var originalRegId: js.UndefOr[String] = js.undefined
     
-    var regId: String = js.native
+    var regId: String
   }
   object Message {
     
@@ -436,16 +435,15 @@ object mod {
   
   type RegistrationId = String | PushSubscription
   
-  @js.native
   trait Result extends StObject {
     
-    var failure: Double = js.native
+    var failure: Double
     
-    var message: js.Array[Message] = js.native
+    var message: js.Array[Message]
     
-    var method: String = js.native
+    var method: String
     
-    var success: Double = js.native
+    var success: Double
   }
   object Result {
     
@@ -475,29 +473,28 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /** Amazon Device Messaging */
-    var adm: js.UndefOr[Clientid] = js.native
+    var adm: js.UndefOr[Clientid] = js.undefined
     
     /** Apple Push Notifications */
-    var apn: js.UndefOr[Address] = js.native
+    var apn: js.UndefOr[Address] = js.undefined
     
     /** Google Cloud Messaging  */
-    var gcm: js.UndefOr[Id] = js.native
+    var gcm: js.UndefOr[Id] = js.undefined
     
     /** Always use FCM? */
-    var isAlwaysUseFCM: js.UndefOr[Boolean] = js.native
+    var isAlwaysUseFCM: js.UndefOr[Boolean] = js.undefined
     
     /** Microsoft Push Notification Service */
-    var mpns: js.UndefOr[Options] = js.native
+    var mpns: js.UndefOr[Options] = js.undefined
     
     /** Web */
-    var web: js.UndefOr[RequestOptions] = js.native
+    var web: js.UndefOr[RequestOptions] = js.undefined
     
     /** Windows Push Notifications */
-    var wns: js.UndefOr[AccessToken] = js.native
+    var wns: js.UndefOr[AccessToken] = js.undefined
   }
   object Settings {
     

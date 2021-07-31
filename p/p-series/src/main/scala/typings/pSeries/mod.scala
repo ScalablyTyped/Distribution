@@ -4,7 +4,6 @@ import typings.pSeries.anon.Call
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,9 +26,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-series", JSImport.Namespace)
-  @js.native
-  def apply[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
+  @scala.inline
+  def apply[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ValueType]]]
   
   @JSImport("p-series", JSImport.Namespace)
   @js.native
@@ -66,9 +64,8 @@ object mod {
   // 	tasks: Iterable<() => Promise<ValueType> | ValueType>
   // ): Promise<ValueType[]>;
   // export = pSeries;
-  @JSImport("p-series", "default")
-  @js.native
-  def default[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
+  @scala.inline
+  def default[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ValueType]]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

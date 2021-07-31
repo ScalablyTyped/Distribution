@@ -2,46 +2,44 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypicalBasedOnEventUIParam extends StObject {
   
   /**
     * Used to specify which columns changing will invalidate the series and cause it to be recalculated.
     */
-  var basedOn: js.UndefOr[js.Any] = js.native
+  var basedOn: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get the number of positions that should be calculated from the start.
     */
-  var count: js.UndefOr[js.Any] = js.native
+  var count: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get the data to use for the calculation.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get the beginning position that should be calculated from.
     */
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to current series object.
     */
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get the supporting calculations to use in the calculation.
     */
-  var supportingCalculations: js.UndefOr[js.Any] = js.native
+  var supportingCalculations: js.UndefOr[js.Any] = js.undefined
 }
 object TypicalBasedOnEventUIParam {
   

@@ -7,10 +7,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.destination
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipProperties extends StObject {
   
   /**
@@ -18,63 +16,63 @@ trait RelationshipProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#cardinality)
     */
-  var cardinality: js.UndefOr[`one-to-one` | `one-to-many` | `many-to-many`] = js.native
+  var cardinality: js.UndefOr[`one-to-one` | `one-to-many` | `many-to-many`] = js.undefined
   
   /**
     * Indicates whether the relationship is composite.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#composite)
     */
-  var composite: js.UndefOr[Boolean] = js.native
+  var composite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique ID for the relationship.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#id)
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * The field used to establish the relate within the [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#keyField)
     */
-  var keyField: js.UndefOr[String] = js.native
+  var keyField: js.UndefOr[String] = js.undefined
   
   /**
     * The key field in an attributed relationship class table that matches the [keyField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#keyField).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#keyFieldInRelationshipTable)
     */
-  var keyFieldInRelationshipTable: js.UndefOr[String] = js.native
+  var keyFieldInRelationshipTable: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the relationship.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the related [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#relatedTableId)
     */
-  var relatedTableId: js.UndefOr[Double] = js.native
+  var relatedTableId: js.UndefOr[Double] = js.undefined
   
   /**
     * The relationship table id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#relationshipTableId)
     */
-  var relationshipTableId: js.UndefOr[Double] = js.native
+  var relationshipTableId: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the table participating in the relationship is the `origin` or `destination` table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#role)
     */
-  var role: js.UndefOr[origin | destination] = js.native
+  var role: js.UndefOr[origin | destination] = js.undefined
 }
 object RelationshipProperties {
   

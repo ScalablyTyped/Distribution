@@ -3,22 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** defines a lock. */
-@js.native
-trait Lock extends LockEntry {
+trait Lock
+  extends StObject
+     with LockEntry {
   
   /** defines the lock's depth. */
-  var Depth: LockDepth = js.native
+  var Depth: LockDepth
   
   /**
     * the lock tokens.
     *
     * Each lock token is a URI.
     */
-  var LockTokens: SafeArray[String] = js.native
+  var LockTokens: SafeArray[String]
   
   /**
     * the owner of the lock.
@@ -26,7 +26,7 @@ trait Lock extends LockEntry {
     * This element provides information sufficient for either directly contacting a principal (such as a telephone number or email URI), or for discovering
     * the principal (such as the URL of a homepage) who owns the lock.
     */
-  var Owner: js.Any = js.native
+  var Owner: js.Any
   
   /**
     * a timeout value for the lock.
@@ -34,7 +34,7 @@ trait Lock extends LockEntry {
     * This element specifies the number of seconds between granting of the lock and the automatic removal of that lock. The value must not be greater than
     * `2^32-1` . A value of `-1` stands for an infinite lock, that will never be removed automatically.
     */
-  var Timeout: Double = js.native
+  var Timeout: Double
 }
 object Lock {
   

@@ -2,17 +2,15 @@ package typings.fuzzaldrin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key[K /* <: /* keyof T */ String */, T] extends StObject {
     
-    var key: K = js.native
+    var key: K
     
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
   }
   object Key {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[_, _], K /* <: /* keyof T */ String */, T] (val x: Self with (Key[K, T])) extends AnyVal {
+    implicit class KeyMutableBuilder[Self <: Key[?, ?], K /* <: /* keyof T */ String */, T] (val x: Self & (Key[K, T])) extends AnyVal {
       
       @scala.inline
       def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxResults extends StObject {
     
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
   }
   object MaxResults {
     

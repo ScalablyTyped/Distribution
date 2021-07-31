@@ -2,62 +2,60 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side dashboard parameter.
   */
-@js.native
 trait ASPxClientDashboardParameter extends StObject {
   
   /**
     * Returns a default parameter value.
     */
-  def GetDefaultValue(): js.Any = js.native
+  def GetDefaultValue(): js.Any
   
   /**
     * Returns the parameter's description displayed to an end-user.
     */
-  def GetDescription(): String = js.native
+  def GetDescription(): String
   
   /**
     * Returns a parameter name.
     */
-  def GetName(): String = js.native
+  def GetName(): String
   
   /**
     * Returns a parameter type.
     */
-  def GetType(): String = js.native
+  def GetType(): String
   
   /**
     * Returns a current parameter value(s).
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
   
   /**
     * Returns possible parameter values.
     */
-  def GetValues(): js.Array[ASPxClientDashboardParameterValue] = js.native
+  def GetValues(): js.Array[ASPxClientDashboardParameterValue]
   
   /** @deprecated Use the GetName method instead. */
   /**
     * Gets the dashboard parameter name on the client side.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Specifies the current parameter value(s).
     * @param value The current parameter value(s).
     */
-  def SetValue(value: js.Any): Unit = js.native
+  def SetValue(value: js.Any): Unit
   
   /** @deprecated Use the GetValue method instead. */
   /**
     * Gets the dashboard parameter value on the client side.
     */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object ASPxClientDashboardParameter {
   

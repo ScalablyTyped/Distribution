@@ -2,15 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InvalidateSizeOptions extends ZoomPanOptions {
+trait InvalidateSizeOptions
+  extends StObject
+     with ZoomPanOptions {
   
-  var debounceMoveend: js.UndefOr[Boolean] = js.native
+  var debounceMoveend: js.UndefOr[Boolean] = js.undefined
   
-  var pan: js.UndefOr[Boolean] = js.native
+  var pan: js.UndefOr[Boolean] = js.undefined
 }
 object InvalidateSizeOptions {
   

@@ -2,27 +2,25 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the location(s) to which data should be exported.
   */
-@js.native
 trait SchemaOutputConfig extends StObject {
   
   /**
     * BigQueryDestination requires two IAM roles: `roles/bigquery.dataEditor`
     * and `roles/bigquery.jobUser`.
     */
-  var bigQueryDestination: js.UndefOr[SchemaBigQueryDestination] = js.native
+  var bigQueryDestination: js.UndefOr[SchemaBigQueryDestination] = js.undefined
   
   /**
     * GcsDestination requires `roles/storage.objectAdmin` Cloud IAM role. Note
     * that writing a file to the same destination multiple times will result in
     * the previous version of the file being overwritten.
     */
-  var gcsDestination: js.UndefOr[SchemaGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[SchemaGcsDestination] = js.undefined
 }
 object SchemaOutputConfig {
   

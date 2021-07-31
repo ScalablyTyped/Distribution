@@ -4,12 +4,10 @@ import typings.typeorm.optionsColumnOptionsMod.ColumnOptions
 import typings.typeorm.typesColumnModeMod.ColumnMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsColumnMetadataArgsMod {
   
-  @js.native
   trait ColumnMetadataArgs extends StObject {
     
     /**
@@ -17,22 +15,22 @@ object metadataArgsColumnMetadataArgsMod {
       *
       * todo: find name better then "mode".
       */
-    val mode: ColumnMode = js.native
+    val mode: ColumnMode
     
     /**
       * Extra column options.
       */
-    val options: ColumnOptions = js.native
+    val options: ColumnOptions
     
     /**
       * Class's property name to which column is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Class to which column is applied.
       */
-    val target: js.Function | String = js.native
+    val target: js.Function | String
   }
   object ColumnMetadataArgs {
     

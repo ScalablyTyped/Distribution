@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the response to describe the detailed outcome. It will only be included
   * when the operation finishes successfully.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse extends
     * format
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
     */
-  var fhirStore: js.UndefOr[String] = js.native
+  var fhirStore: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of resources included in the source data.
     */
-  var inputSize: js.UndefOr[String] = js.native
+  var inputSize: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse {
   

@@ -3,47 +3,45 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignedAxis extends StObject {
   
-  var alignedAxis: js.UndefOr[Property] = js.native
+  var alignedAxis: js.UndefOr[Property] = js.undefined
   
-  var color: js.UndefOr[Property] = js.native
+  var color: js.UndefOr[Property] = js.undefined
   
-  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.native
+  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.undefined
   
-  var eyeOffset: js.UndefOr[Property] = js.native
+  var eyeOffset: js.UndefOr[Property] = js.undefined
   
-  var height: js.UndefOr[Property] = js.native
+  var height: js.UndefOr[Property] = js.undefined
   
-  var heightReference: js.UndefOr[Property] = js.native
+  var heightReference: js.UndefOr[Property] = js.undefined
   
-  var horizontalOrigin: js.UndefOr[Property] = js.native
+  var horizontalOrigin: js.UndefOr[Property] = js.undefined
   
-  var image: js.UndefOr[Property] = js.native
+  var image: js.UndefOr[Property] = js.undefined
   
-  var imageSubRegion: js.UndefOr[Property] = js.native
+  var imageSubRegion: js.UndefOr[Property] = js.undefined
   
-  var pixelOffset: js.UndefOr[Property] = js.native
+  var pixelOffset: js.UndefOr[Property] = js.undefined
   
-  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.undefined
   
-  var rotation: js.UndefOr[Property] = js.native
+  var rotation: js.UndefOr[Property] = js.undefined
   
-  var scale: js.UndefOr[Property] = js.native
+  var scale: js.UndefOr[Property] = js.undefined
   
-  var scaleByDistance: js.UndefOr[Property] = js.native
+  var scaleByDistance: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
   
-  var translucencyByDistance: js.UndefOr[Property] = js.native
+  var translucencyByDistance: js.UndefOr[Property] = js.undefined
   
-  var verticalOrigin: js.UndefOr[Property] = js.native
+  var verticalOrigin: js.UndefOr[Property] = js.undefined
   
-  var width: js.UndefOr[Property] = js.native
+  var width: js.UndefOr[Property] = js.undefined
 }
 object AlignedAxis {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBus extends StObject {
   
   /**
     * The ARN of the event bus.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the event bus.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The permissions policy of the event bus, describing which other AWS accounts can write events to this event bus.
     */
-  var Policy: js.UndefOr[String] = js.native
+  var Policy: js.UndefOr[String] = js.undefined
 }
 object EventBus {
   

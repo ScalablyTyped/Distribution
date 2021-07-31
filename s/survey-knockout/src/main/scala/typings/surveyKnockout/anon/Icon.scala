@@ -2,21 +2,19 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var item: String = js.native
+  var item: String
   
-  var locationBottom: String = js.native
+  var locationBottom: String
   
-  var locationTop: String = js.native
+  var locationTop: String
   
-  var root: String = js.native
+  var root: String
 }
 object Icon {
   

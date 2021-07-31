@@ -2,20 +2,18 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of audio data to be recognized.
   */
-@js.native
 trait SchemaRecognitionMetadata extends StObject {
   
   /**
     * Description of the content. Eg. &quot;Recordings of federal supreme court
     * hearings from 2012&quot;.
     */
-  var audioTopic: js.UndefOr[String] = js.native
+  var audioTopic: js.UndefOr[String] = js.undefined
   
   /**
     * The industry vertical to which this speech recognition request most
@@ -23,28 +21,28 @@ trait SchemaRecognitionMetadata extends StObject {
     * audio.  Use the 6-digit NAICS code to identify the industry vertical -
     * see https://www.naics.com/search/.
     */
-  var industryNaicsCodeOfAudio: js.UndefOr[Double] = js.native
+  var industryNaicsCodeOfAudio: js.UndefOr[Double] = js.undefined
   
   /**
     * The use case most closely describing the audio content to be recognized.
     */
-  var interactionType: js.UndefOr[String] = js.native
+  var interactionType: js.UndefOr[String] = js.undefined
   
   /**
     * The audio type that most closely describes the audio being recognized.
     */
-  var microphoneDistance: js.UndefOr[String] = js.native
+  var microphoneDistance: js.UndefOr[String] = js.undefined
   
   /**
     * Obfuscated (privacy-protected) ID of the user, to identify number of
     * unique users using the service.
     */
-  var obfuscatedId: js.UndefOr[String] = js.native
+  var obfuscatedId: js.UndefOr[String] = js.undefined
   
   /**
     * The original media the speech was recorded on.
     */
-  var originalMediaType: js.UndefOr[String] = js.native
+  var originalMediaType: js.UndefOr[String] = js.undefined
   
   /**
     * Mime type of the original audio file.  For example `audio/m4a`,
@@ -52,19 +50,19 @@ trait SchemaRecognitionMetadata extends StObject {
     * mime types is maintained at
     * http://www.iana.org/assignments/media-types/media-types.xhtml#audio
     */
-  var originalMimeType: js.UndefOr[String] = js.native
+  var originalMimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The device used to make the recording.  Examples &#39;Nexus 5X&#39; or
     * &#39;Polycom SoundStation IP 6000&#39; or &#39;POTS&#39; or
     * &#39;VoIP&#39; or &#39;Cardioid Microphone&#39;.
     */
-  var recordingDeviceName: js.UndefOr[String] = js.native
+  var recordingDeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of device the speech was recorded with.
     */
-  var recordingDeviceType: js.UndefOr[String] = js.native
+  var recordingDeviceType: js.UndefOr[String] = js.undefined
 }
 object SchemaRecognitionMetadata {
   

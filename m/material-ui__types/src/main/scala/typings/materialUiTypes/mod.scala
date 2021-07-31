@@ -9,14 +9,13 @@ import typings.std.Extract
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.materialUiTypes.materialUiTypesStrings.ConsistentWith with TopLevel[js.Any]
+    */ typings.materialUiTypes.materialUiTypesStrings.ConsistentWith & TopLevel[js.Any]
   
   type GenerateStringUnion[T] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: true extends T[Key]? Key : never}[keyof T] */ js.Any, 
@@ -27,12 +26,15 @@ object mod {
   
   type OverridableStringUnion[T, U] = GenerateStringUnion[Overwrite[T, U]]
   
-  type Overwrite[T, U] = (Omit[T, /* keyof U */ String]) with U
+  type Overwrite[T, U] = (Omit[T, /* keyof U */ String]) & U
   
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
     /* component */ js.Any, 
     ComponentType[
-      (Omit[LibraryManagedAttributes[_, ComponentProps[_]], /* keyof InjectedProps */ String]) with AdditionalProps
+      (Omit[
+        LibraryManagedAttributes[js.Any, ComponentProps[js.Any]], 
+        /* keyof InjectedProps */ String
+      ]) & AdditionalProps
     ]
   ]
 }

@@ -7,7 +7,6 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,11 @@ object mod {
     /**
       * Auto-initializes all MDC components on a page.
       */
-    @JSImport("@material/auto-init", JSImport.Default)
-    @js.native
-    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = js.native
-    @JSImport("@material/auto-init", JSImport.Default)
-    @js.native
-    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = js.native
+    @scala.inline
+    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    @scala.inline
+    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    
     @JSImport("@material/auto-init", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -64,12 +62,11 @@ object mod {
     /**
       * Auto-initializes all MDC components on a page.
       */
-    @JSImport("@material/auto-init", "mdcAutoInit")
-    @js.native
-    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = js.native
-    @JSImport("@material/auto-init", "mdcAutoInit")
-    @js.native
-    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = js.native
+    @scala.inline
+    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    @scala.inline
+    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    
     @JSImport("@material/auto-init", "mdcAutoInit")
     @js.native
     val ^ : js.Any = js.native
@@ -108,9 +105,10 @@ object mod {
   
   @js.native
   trait MDCAttachable
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           /* root */ Element, 
-          js.UndefOr[/* foundation */ MDCFoundation[js.Object]], 
+          (/* foundation */ MDCFoundation[js.Object]) | (/* foundation */ Unit), 
           /* args (repeated) */ js.Any, 
           MDCComponent[MDCFoundation[js.Object]]
         ] {

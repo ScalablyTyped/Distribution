@@ -12,22 +12,20 @@ import typings.exceljs.exceljsStrings.stdDev
 import typings.exceljs.exceljsStrings.sum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<exceljs.exceljs.TableColumnProperties> */
-@js.native
 trait TableColumn extends StObject {
   
-  var filterButton: Boolean = js.native
+  var filterButton: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var totalsRowFormula: String = js.native
+  var totalsRowFormula: String
   
-  var totalsRowFunction: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom = js.native
+  var totalsRowFunction: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom
   
-  var totalsRowLabel: String = js.native
+  var totalsRowLabel: String
 }
 object TableColumn {
   

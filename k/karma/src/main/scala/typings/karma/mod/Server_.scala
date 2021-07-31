@@ -4,7 +4,6 @@ import typings.karma.karmaStrings.run_complete
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("karma", "Server")
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Server_ () extends EventEmitter {
   def this(options: ConfigFile) = this()
   def this(options: ConfigOptions) = this()
-  def this(options: js.UndefOr[scala.Nothing], callback: ServerCallback) = this()
+  def this(options: Unit, callback: ServerCallback) = this()
   def this(options: ConfigFile, callback: ServerCallback) = this()
   def this(options: ConfigOptions, callback: ServerCallback) = this()
   
@@ -34,7 +33,7 @@ class Server_ () extends EventEmitter {
   /**
     * Force a refresh of the file list
     */
-  def refreshFiles(): js.Promise[_] = js.native
+  def refreshFiles(): js.Promise[js.Any] = js.native
   
   /**
     * Start the server

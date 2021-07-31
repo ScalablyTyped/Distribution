@@ -2,21 +2,21 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISpacer extends IComponent {
+trait ISpacer
+  extends StObject
+     with IComponent {
   
   /** [Method] Sets the value of width
     * @param width Number The new value.
     */
   @JSName("setWidth")
-  var setWidth_ISpacer: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], Unit]] = js.native
+  var setWidth_ISpacer: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   @JSName("width")
-  var width_ISpacer: js.UndefOr[Double] = js.native
+  var width_ISpacer: js.UndefOr[Double] = js.undefined
 }
 object ISpacer {
   

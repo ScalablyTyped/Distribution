@@ -9,10 +9,13 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmDropdownToggleMod {
+  
+  @JSImport("react-overlays/esm/DropdownToggle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -22,9 +25,9 @@ object esmDropdownToggleMod {
       * @displayName DropdownToggle
       * @memberOf Dropdown
       */
-    @JSImport("react-overlays/esm/DropdownToggle", JSImport.Default)
-    @js.native
-    def apply(hasChildren: DropdownToggleProps): Element = js.native
+    @scala.inline
+    def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-overlays/esm/DropdownToggle", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -64,14 +67,12 @@ object esmDropdownToggleMod {
     }
   }
   
-  @JSImport("react-overlays/esm/DropdownToggle", "useDropdownToggle")
-  @js.native
-  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = js.native
+  @scala.inline
+  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
   
-  @js.native
   trait DropdownToggleProps extends StObject {
     
-    def children(args: UseDropdownToggleHelperspProps): ReactNode = js.native
+    def children(args: UseDropdownToggleHelperspProps): ReactNode
   }
   object DropdownToggleProps {
     
@@ -89,16 +90,15 @@ object esmDropdownToggleMod {
     }
   }
   
-  @js.native
   trait UseDropdownToggleHelpers extends StObject {
     
-    var show: Boolean = js.native
+    var show: Boolean
     
     var toggle: js.Function2[
         /* nextShow */ Boolean, 
         /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event], 
         Unit
-      ] = js.native
+      ]
   }
   object UseDropdownToggleHelpers {
     
@@ -124,14 +124,13 @@ object esmDropdownToggleMod {
     }
   }
   
-  @js.native
   trait UseDropdownToggleProps extends StObject {
     
-    var `aria-expanded`: Boolean = js.native
+    var `aria-expanded`: Boolean
     
-    var `aria-haspopup`: Boolean = js.native
+    var `aria-haspopup`: Boolean
     
-    var ref: js.Function1[/* ref */ HTMLElement | Null, Unit] = js.native
+    var ref: js.Function1[/* ref */ HTMLElement | Null, Unit]
   }
   object UseDropdownToggleProps {
     

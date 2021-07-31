@@ -2,46 +2,44 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TextMacro...
   */
-@js.native
 trait ITextMacro extends StObject {
   
   /**
     * Variable value.
     */
-  var qDisplayString: String = js.native
+  var qDisplayString: String
   
   /**
     * Is set to true if the variable is a reserved variable.
     */
-  var qIsReserved: Boolean = js.native
+  var qIsReserved: Boolean
   
   /**
     * Is set to true if the variable is a system variable.
     */
-  var qIsSystem: Boolean = js.native
+  var qIsSystem: Boolean
   
   /**
     * Order in which the variable was referenced during the script execution.
     * The same number sequence is used for both qRefSeqNo and qSetSeqNo.
     */
-  var qRefSeqNo: Double = js.native
+  var qRefSeqNo: Double
   
   /**
     * Order in which the variable was updated during the script execution.
     * The same number sequence is used for both qRefSeqNo and qSetSeqNo.
     */
-  var qSetSeqNo: Double = js.native
+  var qSetSeqNo: Double
   
   /**
     * Name of the variable.
     */
-  var qTag: String = js.native
+  var qTag: String
 }
 object ITextMacro {
   

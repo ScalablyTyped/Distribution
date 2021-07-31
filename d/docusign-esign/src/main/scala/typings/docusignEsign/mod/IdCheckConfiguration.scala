@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdCheckConfiguration extends StObject {
   
   /**
     * A list of ID check security steps, each specifying an authorization type.
     */
-  var authSteps: js.UndefOr[js.Array[IdCheckSecurityStep]] = js.native
+  var authSteps: js.UndefOr[js.Array[IdCheckSecurityStep]] = js.undefined
   
   /**
     * Boolean that specifies whether the signature is the default signature for the user.
     */
-  var isDefault: js.UndefOr[String] = js.native
+  var isDefault: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the signature.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object IdCheckConfiguration {
   

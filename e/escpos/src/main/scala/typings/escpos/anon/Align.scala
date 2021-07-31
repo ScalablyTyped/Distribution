@@ -5,17 +5,15 @@ import typings.escpos.escposStrings.LEFT
 import typings.escpos.escposStrings.RIGHT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: LEFT | CENTER | RIGHT = js.native
+  var align: LEFT | CENTER | RIGHT
   
-  var text: String = js.native
+  var text: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Align {
   

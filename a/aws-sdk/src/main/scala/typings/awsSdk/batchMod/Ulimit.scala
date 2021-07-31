@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ulimit extends StObject {
   
   /**
     * The hard limit for the ulimit type.
     */
-  var hardLimit: Integer = js.native
+  var hardLimit: Integer
   
   /**
     * The type of the ulimit.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The soft limit for the ulimit type.
     */
-  var softLimit: Integer = js.native
+  var softLimit: Integer
 }
 object Ulimit {
   

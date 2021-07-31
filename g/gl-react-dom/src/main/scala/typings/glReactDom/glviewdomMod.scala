@@ -19,7 +19,6 @@ import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glviewdomMod {
@@ -40,16 +39,12 @@ object glviewdomMod {
     var canvas: js.UndefOr[HTMLCanvasElement] = js.native
     
     def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit]): js.Promise[Blob] = js.native
-    def captureAsBlob(
-      callback: js.Function1[/* data */ Blob, Unit],
-      `type`: js.UndefOr[scala.Nothing],
-      quality: ValidQuality
-    ): js.Promise[Blob] = js.native
+    def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit], `type`: Unit, quality: ValidQuality): js.Promise[Blob] = js.native
     def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit], `type`: SupportedImage): js.Promise[Blob] = js.native
     def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit], `type`: SupportedImage, quality: ValidQuality): js.Promise[Blob] = js.native
     
     def captureAsDataURL(): String = js.native
-    def captureAsDataURL(`type`: js.UndefOr[scala.Nothing], quality: ValidQuality): String = js.native
+    def captureAsDataURL(`type`: Unit, quality: ValidQuality): String = js.native
     def captureAsDataURL(`type`: SupportedImage): String = js.native
     def captureAsDataURL(`type`: SupportedImage, quality: ValidQuality): String = js.native
     
@@ -62,28 +57,27 @@ object glviewdomMod {
     var webglContextAttributes: WebGLContextAttributes = js.native
   }
   
-  @js.native
   trait GLViewDOMProps extends StObject {
     
-    var debug: js.UndefOr[Double] = js.native
+    var debug: js.UndefOr[Double] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.native
+    var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var onContextLost: js.UndefOr[js.Function0[Unit]] = js.native
+    var onContextLost: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onContextRestored: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.native
+    var onContextRestored: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var webglContextAttributes: js.UndefOr[WebGLContextAttributes] = js.native
+    var webglContextAttributes: js.UndefOr[WebGLContextAttributes] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object GLViewDOMProps {
     
@@ -152,10 +146,9 @@ object glviewdomMod {
     }
   }
   
-  @js.native
   trait GLViewDOMState extends StObject {
     
-    var error: Error = js.native
+    var error: Error
   }
   object GLViewDOMState {
     

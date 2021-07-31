@@ -2,32 +2,30 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Edits> */
-@js.native
 trait PartialEdits extends StObject {
   
-  var annotationPosition: js.UndefOr[Boolean] = js.native
+  var annotationPosition: js.UndefOr[Boolean] = js.undefined
   
-  var annotationTail: js.UndefOr[Boolean] = js.native
+  var annotationTail: js.UndefOr[Boolean] = js.undefined
   
-  var annotationText: js.UndefOr[Boolean] = js.native
+  var annotationText: js.UndefOr[Boolean] = js.undefined
   
-  var axisTitleText: js.UndefOr[Boolean] = js.native
+  var axisTitleText: js.UndefOr[Boolean] = js.undefined
   
-  var colorbarPosition: js.UndefOr[Boolean] = js.native
+  var colorbarPosition: js.UndefOr[Boolean] = js.undefined
   
-  var colorbarTitleText: js.UndefOr[Boolean] = js.native
+  var colorbarTitleText: js.UndefOr[Boolean] = js.undefined
   
-  var legendPosition: js.UndefOr[Boolean] = js.native
+  var legendPosition: js.UndefOr[Boolean] = js.undefined
   
-  var legendText: js.UndefOr[Boolean] = js.native
+  var legendText: js.UndefOr[Boolean] = js.undefined
   
-  var shapePosition: js.UndefOr[Boolean] = js.native
+  var shapePosition: js.UndefOr[Boolean] = js.undefined
   
-  var titleText: js.UndefOr[Boolean] = js.native
+  var titleText: js.UndefOr[Boolean] = js.undefined
 }
 object PartialEdits {
   

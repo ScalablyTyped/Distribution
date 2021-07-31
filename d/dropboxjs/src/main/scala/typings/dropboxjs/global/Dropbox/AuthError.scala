@@ -3,14 +3,23 @@ package typings.dropboxjs.global.Dropbox
 import typings.dropboxjs.Dropbox.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dropbox.AuthError")
 @js.native
 class AuthError protected ()
-  extends typings.dropboxjs.Dropbox.AuthError {
+  extends StObject
+     with typings.dropboxjs.Dropbox.AuthError {
   def this(queryString: QueryParams) = this()
+  
+  /* CompleteClass */
+  var code: String = js.native
+  
+  /* CompleteClass */
+  var description: String = js.native
+  
+  /* CompleteClass */
+  var uri: String = js.native
 }
 object AuthError {
   

@@ -3,7 +3,6 @@ package typings.pForever
 import typings.pForever.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,26 +34,23 @@ object mod {
   	});
   	```
   	*/
-  @JSImport("p-forever", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
       ValueType | js.Thenable[ValueType] | js.Symbol
     ]
-  ): js.Promise[Unit] = js.native
-  @JSImport("p-forever", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: ValueType
-  ): js.Promise[Unit] = js.native
-  @JSImport("p-forever", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: js.Thenable[ValueType]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("p-forever", JSImport.Namespace)
   @js.native
@@ -92,33 +88,30 @@ object mod {
   	```
   	*/
   // TODO: Remove this for the next major release
-  @JSImport("p-forever", "default")
-  @js.native
+  @scala.inline
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   // TODO: Remove this for the next major release
-  @JSImport("p-forever", "default")
-  @js.native
+  @scala.inline
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: ValueType
-  ): js.Promise[Unit] = js.native
-  @JSImport("p-forever", "default")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: js.Thenable[ValueType]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   

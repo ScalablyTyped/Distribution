@@ -4,15 +4,15 @@
 Typings are for version 9.0.0
 
 ## Library description:
-A functional, reactive motion library.
+The animator's toolbox
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | popmotion |
 | Keywords           | animation, ux, ui, popmotion, canvas animation, dom animation, dom, pointer tracking, mouse, mouse tracking, touch, touch tracking, physics, interaction, interface, svg |
-| # releases         | 52 |
-| # dependents       | 76 |
-| # downloads        | 9404588 |
+| # releases         | 47 |
+| # dependents       | 92 |
+| # downloads        | 14380013 |
 | # stars            | 8 |
 
 ## Links

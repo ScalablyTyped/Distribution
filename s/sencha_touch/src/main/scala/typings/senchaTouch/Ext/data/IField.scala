@@ -3,174 +3,174 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IField extends IBase {
+trait IField
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean) */
-  var allowNull: js.UndefOr[Boolean] = js.native
+  var allowNull: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var convert: js.UndefOr[js.Any] = js.native
+  var convert: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of allowNull
     * @returns Boolean
     */
-  var getAllowNull: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowNull: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of bubbleEvents
     * @returns String
     */
-  var getBubbleEvents: js.UndefOr[js.Function0[String]] = js.native
+  var getBubbleEvents: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of convert
     * @returns Function
     */
-  var getConvert: js.UndefOr[js.Function0[_]] = js.native
+  var getConvert: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of dateFormat
     * @returns String
     */
-  var getDateFormat: js.UndefOr[js.Function0[String]] = js.native
+  var getDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of decode
     * @returns Object
     */
-  var getDecode: js.UndefOr[js.Function0[_]] = js.native
+  var getDecode: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of defaultValue
     * @returns Object
     */
-  var getDefaultValue: js.UndefOr[js.Function0[_]] = js.native
+  var getDefaultValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of encode
     * @returns Object
     */
-  var getEncode: js.UndefOr[js.Function0[_]] = js.native
+  var getEncode: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of mapping
     * @returns String/Number
     */
-  var getMapping: js.UndefOr[js.Function0[_]] = js.native
+  var getMapping: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of name
     * @returns String
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.native
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of persist
     * @returns Boolean
     */
-  var getPersist: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getPersist: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of sortDir
     * @returns String
     */
-  var getSortDir: js.UndefOr[js.Function0[String]] = js.native
+  var getSortDir: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of sortType
     * @returns Function
     */
-  var getSortType: js.UndefOr[js.Function0[_]] = js.native
+  var getSortType: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of type
     * @returns String/Object
     */
-  var getType: js.UndefOr[js.Function0[_]] = js.native
+  var getType: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var mapping: js.UndefOr[js.Any] = js.native
+  var mapping: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the value of allowNull
     * @param allowNull Boolean The new value.
     */
-  var setAllowNull: js.UndefOr[js.Function1[/* allowNull */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowNull: js.UndefOr[js.Function1[/* allowNull */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of bubbleEvents
     * @param bubbleEvents String The new value.
     */
-  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[String], Unit]] = js.native
+  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of convert
     * @param convert Function The new value.
     */
-  var setConvert: js.UndefOr[js.Function1[/* convert */ js.UndefOr[js.Any], Unit]] = js.native
+  var setConvert: js.UndefOr[js.Function1[/* convert */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of dateFormat
     * @param dateFormat String The new value.
     */
-  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[String], Unit]] = js.native
+  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of decode
     * @param decode Object The new value.
     */
-  var setDecode: js.UndefOr[js.Function1[/* decode */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDecode: js.UndefOr[js.Function1[/* decode */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultValue
     * @param defaultValue Object The new value.
     */
-  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of encode
     * @param encode Object The new value.
     */
-  var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[js.Any], Unit]] = js.native
+  var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of mapping
     * @param mapping String/Number The new value.
     */
-  var setMapping: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMapping: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of name
     * @param name String The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of persist
     * @param persist Boolean The new value.
     */
-  var setPersist: js.UndefOr[js.Function1[/* persist */ js.UndefOr[Boolean], Unit]] = js.native
+  var setPersist: js.UndefOr[js.Function1[/* persist */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of sortDir
     * @param sortDir String The new value.
     */
-  var setSortDir: js.UndefOr[js.Function1[/* sortDir */ js.UndefOr[String], Unit]] = js.native
+  var setSortDir: js.UndefOr[js.Function1[/* sortDir */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of sortType
     * @param sortType Function The new value.
     */
-  var setSortType: js.UndefOr[js.Function1[/* sortType */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSortType: js.UndefOr[js.Function1[/* sortType */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of type
     * @param type String/Object The new value.
     */
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.native
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var sortDir: js.UndefOr[String] = js.native
+  var sortDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function) */
-  var sortType: js.UndefOr[js.Any] = js.native
+  var sortType: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useNull: js.UndefOr[Boolean] = js.native
+  var useNull: js.UndefOr[Boolean] = js.undefined
 }
 object IField {
   
@@ -220,7 +220,7 @@ object IField {
     def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
     
     @scala.inline
-    def setGetConvert(value: () => _): Self = StObject.set(x, "getConvert", js.Any.fromFunction0(value))
+    def setGetConvert(value: () => js.Any): Self = StObject.set(x, "getConvert", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetConvertUndefined: Self = StObject.set(x, "getConvert", js.undefined)
@@ -232,25 +232,25 @@ object IField {
     def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
     
     @scala.inline
-    def setGetDecode(value: () => _): Self = StObject.set(x, "getDecode", js.Any.fromFunction0(value))
+    def setGetDecode(value: () => js.Any): Self = StObject.set(x, "getDecode", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDecodeUndefined: Self = StObject.set(x, "getDecode", js.undefined)
     
     @scala.inline
-    def setGetDefaultValue(value: () => _): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
+    def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDefaultValueUndefined: Self = StObject.set(x, "getDefaultValue", js.undefined)
     
     @scala.inline
-    def setGetEncode(value: () => _): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
+    def setGetEncode(value: () => js.Any): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
     
     @scala.inline
-    def setGetMapping(value: () => _): Self = StObject.set(x, "getMapping", js.Any.fromFunction0(value))
+    def setGetMapping(value: () => js.Any): Self = StObject.set(x, "getMapping", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMappingUndefined: Self = StObject.set(x, "getMapping", js.undefined)
@@ -274,13 +274,13 @@ object IField {
     def setGetSortDirUndefined: Self = StObject.set(x, "getSortDir", js.undefined)
     
     @scala.inline
-    def setGetSortType(value: () => _): Self = StObject.set(x, "getSortType", js.Any.fromFunction0(value))
+    def setGetSortType(value: () => js.Any): Self = StObject.set(x, "getSortType", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSortTypeUndefined: Self = StObject.set(x, "getSortType", js.undefined)
     
     @scala.inline
-    def setGetType(value: () => _): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    def setGetType(value: () => js.Any): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)

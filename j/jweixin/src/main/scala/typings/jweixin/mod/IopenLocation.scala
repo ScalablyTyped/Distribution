@@ -2,30 +2,30 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================设备信息================================*/
 /*=============================地理位置================================*/
-@js.native
-trait IopenLocation extends BaseParams {
+trait IopenLocation
+  extends StObject
+     with BaseParams {
   
   // 位置名
-  var address: String = js.native
+  var address: String
   
   // 地图缩放级别,整形值,范围从1~28。默认为最大
-  var infoUrl: String = js.native
+  var infoUrl: String
   
-  var latitude: Double = js.native
+  var latitude: Double
   
   // 纬度，浮点数，范围为90 ~ -90
-  var longitude: Double = js.native
+  var longitude: Double
   
   // 经度，浮点数，范围为180 ~ -180。
-  var name: String = js.native
+  var name: String
   
   // 地址详情说明
-  var scale: Double = js.native
+  var scale: Double
 }
 object IopenLocation {
   

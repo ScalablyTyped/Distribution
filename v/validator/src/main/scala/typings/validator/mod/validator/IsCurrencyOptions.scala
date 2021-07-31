@@ -2,88 +2,86 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsCurrencyOptions extends StObject {
   
   /**
     * @default true
     */
-  var allow_decimal: js.UndefOr[Boolean] = js.native
+  var allow_decimal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_negative_sign_placeholder: js.UndefOr[Boolean] = js.native
+  var allow_negative_sign_placeholder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default true
     */
-  var allow_negatives: js.UndefOr[Boolean] = js.native
+  var allow_negatives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_space_after_digits: js.UndefOr[Boolean] = js.native
+  var allow_space_after_digits: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_space_after_symbol: js.UndefOr[Boolean] = js.native
+  var allow_space_after_symbol: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default '.'
     */
-  var decimal_separator: js.UndefOr[String] = js.native
+  var decimal_separator: js.UndefOr[String] = js.undefined
   
   /**
     * The array `digits_after_decimal` is filled with the exact number of digits allowed not a range, for example a range `1` to `3` will be given as `[1, 2, 3]`.
     *
     * @default [2]
     */
-  var digits_after_decimal: js.UndefOr[js.Array[Double]] = js.native
+  var digits_after_decimal: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * @default false
     */
-  var negative_sign_after_digits: js.UndefOr[Boolean] = js.native
+  var negative_sign_after_digits: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var negative_sign_before_digits: js.UndefOr[Boolean] = js.native
+  var negative_sign_before_digits: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var parens_for_negatives: js.UndefOr[Boolean] = js.native
+  var parens_for_negatives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var require_decimal: js.UndefOr[Boolean] = js.native
+  var require_decimal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var require_symbol: js.UndefOr[Boolean] = js.native
+  var require_symbol: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default '$'
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * @default false
     */
-  var symbol_after_digits: js.UndefOr[Boolean] = js.native
+  var symbol_after_digits: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default ','
     */
-  var thousands_separator: js.UndefOr[String] = js.native
+  var thousands_separator: js.UndefOr[String] = js.undefined
 }
 object IsCurrencyOptions {
   

@@ -2,17 +2,17 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClickQueryOptions extends QueryOptions {
+trait ClickQueryOptions
+  extends StObject
+     with QueryOptions {
   
   /**
     *  A boolean to indicate if script runner should expect the page to reload.
     *  If set to true, the script execution will pause after executing the click. It will resume after the page reloads. The default value is false.
     */
-  var expectReload: js.UndefOr[Boolean] = js.native
+  var expectReload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows to select an element with different methods:
@@ -24,7 +24,7 @@ trait ClickQueryOptions extends QueryOptions {
     * * by_query_selector - finds the target element using a query selector
     *
     */
-  var method: js.UndefOr[clickQueryMethods] = js.native
+  var method: js.UndefOr[clickQueryMethods] = js.undefined
 }
 object ClickQueryOptions {
   

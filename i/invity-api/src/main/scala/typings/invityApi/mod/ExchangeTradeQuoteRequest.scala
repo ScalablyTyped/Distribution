@@ -2,19 +2,17 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeTradeQuoteRequest extends StObject {
   
   // BTC
-  var receive: String = js.native
+  var receive: String
   
-  var send: String = js.native
+  var send: String
   
   // LTC
-  var sendStringAmount: String = js.native
+  var sendStringAmount: String
 }
 object ExchangeTradeQuoteRequest {
   

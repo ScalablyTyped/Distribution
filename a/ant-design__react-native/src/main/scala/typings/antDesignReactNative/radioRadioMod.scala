@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioRadioMod {
@@ -42,12 +41,12 @@ object radioRadioMod {
     def handleClick(): Unit = js.native
   }
   
-  @js.native
   trait RadioNativeProps
-    extends RadioPropsType
+    extends StObject
+       with RadioPropsType
        with WithThemeStyles[RadioStyle] {
     
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object RadioNativeProps {
     

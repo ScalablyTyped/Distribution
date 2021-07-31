@@ -7,10 +7,13 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.min
 import typings.tensorflowTfjsLayers.trainingMod.LayersModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callbacksMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/callbacks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "Callback")
   @js.native
@@ -55,12 +58,10 @@ object callbacksMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "callbacks.earlyStopping")
-    @js.native
-    def earlyStopping(): EarlyStopping_ = js.native
-    @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "callbacks.earlyStopping")
-    @js.native
-    def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = js.native
+    @scala.inline
+    def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+    @scala.inline
+    def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
     @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "callbacks.earlyStopping")
     @js.native
     def earlyStopping_Fcallbacks: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_] = js.native
@@ -69,14 +70,11 @@ object callbacksMod {
     def earlyStopping_Fcallbacks_=(x: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("earlyStopping")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "earlyStopping")
-  @js.native
-  def earlyStopping(): EarlyStopping_ = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "earlyStopping")
-  @js.native
-  def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = js.native
+  @scala.inline
+  def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+  @scala.inline
+  def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
   
-  @js.native
   trait EarlyStoppingCallbackArgs extends StObject {
     
     /**
@@ -85,7 +83,7 @@ object callbacksMod {
       * If specified, training will be stopped if the model doesn't show
       * improvement over the baseline.
       */
-    var baseline: js.UndefOr[Double] = js.native
+    var baseline: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum change in the monitored quantity to qualify as improvement,
@@ -94,7 +92,7 @@ object callbacksMod {
       *
       * Defaults to 0.
       */
-    var minDelta: js.UndefOr[Double] = js.native
+    var minDelta: js.UndefOr[Double] = js.undefined
     
     /**
       * Mode: one of 'min', 'max', and 'auto'.
@@ -107,21 +105,21 @@ object callbacksMod {
       *
       * Defaults to 'auto'.
       */
-    var mode: js.UndefOr[auto | min | max] = js.native
+    var mode: js.UndefOr[auto | min | max] = js.undefined
     
     /**
       * Quantity to be monitored.
       *
       * Defaults to 'val_loss'.
       */
-    var monitor: js.UndefOr[String] = js.native
+    var monitor: js.UndefOr[String] = js.undefined
     
     /**
       * Number of epochs with no improvement after which training will be stopped.
       *
       * Defaults to 0.
       */
-    var patience: js.UndefOr[Double] = js.native
+    var patience: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to restore model weights from the epoch with the best value
@@ -130,10 +128,10 @@ object callbacksMod {
       *
       * **`True` is not supported yet.**
       */
-    var restoreBestWeights: js.UndefOr[Boolean] = js.native
+    var restoreBestWeights: js.UndefOr[Boolean] = js.undefined
     
     /** Verbosity mode. */
-    var verbose: js.UndefOr[Double] = js.native
+    var verbose: js.UndefOr[Double] = js.undefined
   }
   object EarlyStoppingCallbackArgs {
     

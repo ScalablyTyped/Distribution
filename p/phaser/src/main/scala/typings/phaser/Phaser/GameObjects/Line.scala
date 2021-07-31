@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * between two points and want the x1/y1 values to match the x/y values, then set the origin to 0.
   */
 @js.native
-trait Line extends Shape {
+trait Line
+  extends StObject
+     with Shape {
   
   /**
     * Sets the width of the line.
@@ -46,24 +47,19 @@ trait Line extends Shape {
     * @param y2 The vertical position of the end of the line. Default 0.
     */
   def setTo(): this.type = js.native
-  def setTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: Double
-  ): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double): this.type = js.native
-  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double): this.type = js.native
   def setTo(x1: Double): this.type = js.native
-  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
-  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
-  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double): this.type = js.native
-  def setTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double, x2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
+  def setTo(x1: Double, y1: Double, x2: Unit, y2: Double): this.type = js.native
+  def setTo(x1: Double, y1: Unit, x2: Double): this.type = js.native
+  def setTo(x1: Double, y1: Unit, x2: Double, y2: Double): this.type = js.native
+  def setTo(x1: Double, y1: Unit, x2: Unit, y2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Double, x2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Double, x2: Double, y2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Double, x2: Unit, y2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Unit, x2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Unit, x2: Double, y2: Double): this.type = js.native
+  def setTo(x1: Unit, y1: Unit, x2: Unit, y2: Double): this.type = js.native
 }

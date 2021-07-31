@@ -10,9 +10,9 @@ A set of commonly used icons for the Wix UI design system.
 | ------------------ | :-------------: |
 | Full name          | wix-ui-icons-common |
 | Keywords           | - |
-| # releases         | 267 |
+| # releases         | 274 |
 | # dependents       | 6 |
-| # downloads        | 117444 |
+| # downloads        | 127152 |
 | # stars            | 0 |
 
 ## Links

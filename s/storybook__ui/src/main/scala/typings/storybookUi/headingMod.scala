@@ -11,7 +11,6 @@ import typings.storybookUi.anon.PickDetailedHTMLPropsHTML
 import typings.storybookUi.menuMod.MenuList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headingMod {
@@ -19,7 +18,7 @@ object headingMod {
   @JSImport("@storybook/ui/dist/components/sidebar/Heading", "Heading")
   @js.native
   val Heading: FunctionComponent[
-    HeadingProps with (ComponentProps[
+    HeadingProps & (ComponentProps[
       StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         PickDetailedHTMLPropsHTML, 
@@ -28,12 +27,11 @@ object headingMod {
     ])
   ] = js.native
   
-  @js.native
   trait HeadingProps extends StObject {
     
-    var menu: MenuList = js.native
+    var menu: MenuList
     
-    var menuHighlighted: js.UndefOr[Boolean] = js.native
+    var menuHighlighted: js.UndefOr[Boolean] = js.undefined
   }
   object HeadingProps {
     

@@ -9,14 +9,19 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-core/dist/io/http", "HTTPRequest")
   @js.native
-  class HTTPRequest protected () extends IOHandler {
+  class HTTPRequest protected ()
+    extends StObject
+       with IOHandler {
     def this(path: String) = this()
     def this(path: String, loadOptions: LoadOptions) = this()
     
@@ -58,29 +63,23 @@ object httpMod {
     val URL_SCHEME_REGEX: RegExp = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "browserHTTPRequest")
-  @js.native
-  def browserHTTPRequest(path: String): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "browserHTTPRequest")
-  @js.native
-  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  @scala.inline
+  def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "http")
-  @js.native
-  def http(path: String): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "http")
-  @js.native
-  def http(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  @scala.inline
+  def http(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  @scala.inline
+  def http(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/http", "httpRouter")
   @js.native
   val httpRouter: IORouter = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "isHTTPScheme")
-  @js.native
-  def isHTTPScheme(url: String): Boolean = js.native
+  @scala.inline
+  def isHTTPScheme(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTTPScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/http", "parseUrl")
-  @js.native
-  def parseUrl(url: String): js.Tuple2[String, String] = js.native
+  @scala.inline
+  def parseUrl(url: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
 }

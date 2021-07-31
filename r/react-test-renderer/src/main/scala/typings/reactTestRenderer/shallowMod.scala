@@ -4,14 +4,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shallowMod {
   
-  @JSImport("react-test-renderer/shallow", "createRenderer")
+  @JSImport("react-test-renderer/shallow", JSImport.Namespace)
   @js.native
-  def createRenderer(): ShallowRenderer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   
   @js.native
   trait ShallowRenderer extends StObject {

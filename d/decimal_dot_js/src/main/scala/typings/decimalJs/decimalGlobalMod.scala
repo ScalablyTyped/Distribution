@@ -14,7 +14,6 @@ import typings.decimalJs.decimalJsNumbers.`8`
 import typings.decimalJs.decimalJsNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decimalGlobalMod {
@@ -25,8 +24,11 @@ object decimalGlobalMod {
     def this(n: DecimalValue) = this()
   }
   /* static members */
-  object default extends Shortcut {
+  object default {
     
+    @JSImport("decimal.js/decimal.global", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     @JSImport("decimal.js/decimal.global", "default.default")
     @js.native
     val default: js.UndefOr[DecimalConstructor] = js.native
@@ -75,196 +77,154 @@ object decimalGlobalMod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.abs")
-    @js.native
-    def abs(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def abs(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.acos")
-    @js.native
-    def acos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def acos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.acosh")
-    @js.native
-    def acosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def acosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.add")
-    @js.native
-    def add(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def add(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.asin")
-    @js.native
-    def asin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def asin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.asinh")
-    @js.native
-    def asinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def asinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.atan")
-    @js.native
-    def atan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.atan2")
-    @js.native
-    def atan2(y: DecimalValue, x: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atan2(y: DecimalValue, x: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.atanh")
-    @js.native
-    def atanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.cbrt")
-    @js.native
-    def cbrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cbrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.ceil")
-    @js.native
-    def ceil(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def ceil(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.clone")
-    @js.native
-    def clone(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def clone(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "default.config")
-    @js.native
-    def config(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def config(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "default.cos")
-    @js.native
-    def cos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.cosh")
-    @js.native
-    def cosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.crypto")
     @js.native
     val crypto: Boolean = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.div")
-    @js.native
-    def div(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def div(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.exp")
-    @js.native
-    def exp(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def exp(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.floor")
-    @js.native
-    def floor(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def floor(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.hypot")
-    @js.native
-    def hypot(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def hypot(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.isDecimal")
-    @js.native
-    def isDecimal(`object`: js.Any): Boolean = js.native
+    @scala.inline
+    def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("decimal.js/decimal.global", "default.ln")
-    @js.native
-    def ln(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def ln(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.log")
-    @js.native
-    def log(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
-    @JSImport("decimal.js/decimal.global", "default.log")
-    @js.native
-    def log(n: DecimalValue, base: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
+    @scala.inline
+    def log(n: DecimalValue, base: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.log10")
-    @js.native
-    def log10(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log10(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.log2")
-    @js.native
-    def log2(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log2(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.max")
-    @js.native
-    def max(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def max(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.maxE")
     @js.native
     val maxE: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.min")
-    @js.native
-    def min(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def min(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.minE")
     @js.native
     val minE: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.mod")
-    @js.native
-    def mod(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def mod(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.modulo")
     @js.native
     val modulo: DecimalModulo = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.mul")
-    @js.native
-    def mul(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def mul(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.noConflict")
-    @js.native
-    def noConflict(): DecimalConstructor = js.native
+    @scala.inline
+    def noConflict(): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[DecimalConstructor]
     
     // Browser only
-    @JSImport("decimal.js/decimal.global", "default.pow")
-    @js.native
-    def pow(base: DecimalValue, exponent: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def pow(base: DecimalValue, exponent: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.precision")
     @js.native
     val precision: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.random")
-    @js.native
-    def random(): typings.decimalJs.decimalGlobalMod.Decimal = js.native
-    @JSImport("decimal.js/decimal.global", "default.random")
-    @js.native
-    def random(significantDigits: Double): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def random(): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
+    @scala.inline
+    def random(significantDigits: Double): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.round")
-    @js.native
-    def round(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def round(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.rounding")
     @js.native
     val rounding: DecimalRounding = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.set")
-    @js.native
-    def set(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def set(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "default.sign")
-    @js.native
-    def sign(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sign(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.sin")
-    @js.native
-    def sin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.sinh")
-    @js.native
-    def sinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.sqrt")
-    @js.native
-    def sqrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sqrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.sub")
-    @js.native
-    def sub(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sub(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.tan")
-    @js.native
-    def tan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def tan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "default.tanh")
-    @js.native
-    def tanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def tanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "default.toExpNeg")
     @js.native
@@ -274,14 +234,8 @@ object decimalGlobalMod {
     @js.native
     val toExpPos: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "default.trunc")
-    @js.native
-    def trunc(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
-    
-    type _To = js.UndefOr[DecimalConstructor]
-    
-    /* This means you don't have to write `default`, but can instead just say `default.foo` */
-    override def _to: js.UndefOr[DecimalConstructor] = default
+    @scala.inline
+    def trunc(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
   }
   
   @JSImport("decimal.js/decimal.global", "Decimal")
@@ -338,10 +292,6 @@ object decimalGlobalMod {
     def dp(): Double = js.native
     
     val e: Double = js.native
-    
-    def eq(n: DecimalValue): Boolean = js.native
-    
-    def equals(n: DecimalValue): Boolean = js.native
     
     def exp(): Decimal = js.native
     
@@ -520,7 +470,11 @@ object decimalGlobalMod {
     def truncated(): Decimal = js.native
   }
   /* static members */
-  object Decimal extends Shortcut {
+  object Decimal {
+    
+    @JSImport("decimal.js/decimal.global", "Decimal")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("decimal.js/decimal.global", "Decimal.default")
     @js.native
@@ -570,196 +524,154 @@ object decimalGlobalMod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.abs")
-    @js.native
-    def abs(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def abs(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.acos")
-    @js.native
-    def acos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def acos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.acosh")
-    @js.native
-    def acosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def acosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.add")
-    @js.native
-    def add(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def add(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.asin")
-    @js.native
-    def asin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def asin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.asinh")
-    @js.native
-    def asinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def asinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.atan")
-    @js.native
-    def atan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.atan2")
-    @js.native
-    def atan2(y: DecimalValue, x: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atan2(y: DecimalValue, x: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.atanh")
-    @js.native
-    def atanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def atanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.cbrt")
-    @js.native
-    def cbrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cbrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.ceil")
-    @js.native
-    def ceil(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def ceil(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.clone")
-    @js.native
-    def clone(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def clone(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.config")
-    @js.native
-    def config(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def config(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.cos")
-    @js.native
-    def cos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cos(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.cosh")
-    @js.native
-    def cosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def cosh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.crypto")
     @js.native
     val crypto: Boolean = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.div")
-    @js.native
-    def div(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def div(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.exp")
-    @js.native
-    def exp(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def exp(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.floor")
-    @js.native
-    def floor(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def floor(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.hypot")
-    @js.native
-    def hypot(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def hypot(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.isDecimal")
-    @js.native
-    def isDecimal(`object`: js.Any): Boolean = js.native
+    @scala.inline
+    def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.ln")
-    @js.native
-    def ln(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def ln(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.log")
-    @js.native
-    def log(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
-    @JSImport("decimal.js/decimal.global", "Decimal.log")
-    @js.native
-    def log(n: DecimalValue, base: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
+    @scala.inline
+    def log(n: DecimalValue, base: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.log10")
-    @js.native
-    def log10(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log10(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.log2")
-    @js.native
-    def log2(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def log2(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.max")
-    @js.native
-    def max(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def max(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.maxE")
     @js.native
     val maxE: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.min")
-    @js.native
-    def min(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def min(n: DecimalValue*): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.minE")
     @js.native
     val minE: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.mod")
-    @js.native
-    def mod(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def mod(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.modulo")
     @js.native
     val modulo: DecimalModulo = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.mul")
-    @js.native
-    def mul(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def mul(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.noConflict")
-    @js.native
-    def noConflict(): DecimalConstructor = js.native
+    @scala.inline
+    def noConflict(): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[DecimalConstructor]
     
     // Browser only
-    @JSImport("decimal.js/decimal.global", "Decimal.pow")
-    @js.native
-    def pow(base: DecimalValue, exponent: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def pow(base: DecimalValue, exponent: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.precision")
     @js.native
     val precision: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.random")
-    @js.native
-    def random(): typings.decimalJs.decimalGlobalMod.Decimal = js.native
-    @JSImport("decimal.js/decimal.global", "Decimal.random")
-    @js.native
-    def random(significantDigits: Double): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def random(): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
+    @scala.inline
+    def random(significantDigits: Double): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.round")
-    @js.native
-    def round(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def round(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.rounding")
     @js.native
     val rounding: DecimalRounding = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.set")
-    @js.native
-    def set(`object`: DecimalConfig): DecimalConstructor = js.native
+    @scala.inline
+    def set(`object`: DecimalConfig): DecimalConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[DecimalConstructor]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.sign")
-    @js.native
-    def sign(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sign(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.sin")
-    @js.native
-    def sin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sin(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.sinh")
-    @js.native
-    def sinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sinh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.sqrt")
-    @js.native
-    def sqrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sqrt(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.sub")
-    @js.native
-    def sub(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def sub(x: DecimalValue, y: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.tan")
-    @js.native
-    def tan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def tan(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
-    @JSImport("decimal.js/decimal.global", "Decimal.tanh")
-    @js.native
-    def tanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def tanh(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     @JSImport("decimal.js/decimal.global", "Decimal.toExpNeg")
     @js.native
@@ -769,9 +681,8 @@ object decimalGlobalMod {
     @js.native
     val toExpPos: Double = js.native
     
-    @JSImport("decimal.js/decimal.global", "Decimal.trunc")
-    @js.native
-    def trunc(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = js.native
+    @scala.inline
+    def trunc(n: DecimalValue): typings.decimalJs.decimalGlobalMod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.decimalGlobalMod.Decimal]
     
     type Config = DecimalConfig
     
@@ -784,11 +695,6 @@ object decimalGlobalMod {
     type Rounding = DecimalRounding
     
     type Value = DecimalValue
-    
-    type _To = js.UndefOr[DecimalConstructor]
-    
-    /* This means you don't have to write `default`, but can instead just say `Decimal.foo` */
-    override def _to: js.UndefOr[DecimalConstructor] = default
   }
   
   object global {
@@ -828,26 +734,25 @@ object decimalGlobalMod {
   }
   
   // http://mikemcl.github.io/decimal.js/#constructor-properties
-  @js.native
   trait DecimalConfig extends StObject {
     
-    var crypto: js.UndefOr[Boolean] = js.native
+    var crypto: js.UndefOr[Boolean] = js.undefined
     
-    var defaults: js.UndefOr[Boolean] = js.native
+    var defaults: js.UndefOr[Boolean] = js.undefined
     
-    var maxE: js.UndefOr[Double] = js.native
+    var maxE: js.UndefOr[Double] = js.undefined
     
-    var minE: js.UndefOr[Double] = js.native
+    var minE: js.UndefOr[Double] = js.undefined
     
-    var modulo: js.UndefOr[DecimalModulo] = js.native
+    var modulo: js.UndefOr[DecimalModulo] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var rounding: js.UndefOr[DecimalRounding] = js.native
+    var rounding: js.UndefOr[DecimalRounding] = js.undefined
     
-    var toExpNeg: js.UndefOr[Double] = js.native
+    var toExpNeg: js.UndefOr[Double] = js.undefined
     
-    var toExpPos: js.UndefOr[Double] = js.native
+    var toExpPos: js.UndefOr[Double] = js.undefined
   }
   object DecimalConfig {
     
@@ -918,7 +823,8 @@ object decimalGlobalMod {
   
   @js.native
   trait DecimalConstructor
-    extends Instantiable1[/* n */ DecimalValue, typings.decimalJs.decimalGlobalMod.Decimal] {
+    extends StObject
+       with Instantiable1[/* n */ DecimalValue, typings.decimalJs.decimalGlobalMod.Decimal] {
     
     val default: js.UndefOr[DecimalConstructor] = js.native
     

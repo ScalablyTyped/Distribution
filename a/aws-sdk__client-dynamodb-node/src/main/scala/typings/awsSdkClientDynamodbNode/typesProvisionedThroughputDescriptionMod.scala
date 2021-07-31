@@ -3,38 +3,36 @@ package typings.awsSdkClientDynamodbNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesProvisionedThroughputDescriptionMod {
   
-  @js.native
   trait ProvisionedThroughputDescription extends StObject {
     
     /**
       * <p>The date and time of the last provisioned throughput decrease for this table.</p>
       */
-    var LastDecreaseDateTime: js.UndefOr[Date | String | Double] = js.native
+    var LastDecreaseDateTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The date and time of the last provisioned throughput increase for this table.</p>
       */
-    var LastIncreaseDateTime: js.UndefOr[Date | String | Double] = js.native
+    var LastIncreaseDateTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The number of provisioned throughput decreases for this table during this UTC calendar day. For current maximums on provisioned throughput decreases, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
-    var NumberOfDecreasesToday: js.UndefOr[Double] = js.native
+    var NumberOfDecreasesToday: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The maximum number of strongly consistent reads consumed per second before DynamoDB returns a <code>ThrottlingException</code>. Eventually consistent reads require less effort than strongly consistent reads, so a setting of 50 <code>ReadCapacityUnits</code> per second provides 100 eventually consistent <code>ReadCapacityUnits</code> per second.</p>
       */
-    var ReadCapacityUnits: js.UndefOr[Double] = js.native
+    var ReadCapacityUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The maximum number of writes consumed per second before DynamoDB returns a <code>ThrottlingException</code>.</p>
       */
-    var WriteCapacityUnits: js.UndefOr[Double] = js.native
+    var WriteCapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object ProvisionedThroughputDescription {
     
@@ -79,20 +77,21 @@ object typesProvisionedThroughputDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledProvisionedThroughputDescription extends ProvisionedThroughputDescription {
+  trait UnmarshalledProvisionedThroughputDescription
+    extends StObject
+       with ProvisionedThroughputDescription {
     
     /**
       * <p>The date and time of the last provisioned throughput decrease for this table.</p>
       */
     @JSName("LastDecreaseDateTime")
-    var LastDecreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.native
+    var LastDecreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The date and time of the last provisioned throughput increase for this table.</p>
       */
     @JSName("LastIncreaseDateTime")
-    var LastIncreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.native
+    var LastIncreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledProvisionedThroughputDescription {
     

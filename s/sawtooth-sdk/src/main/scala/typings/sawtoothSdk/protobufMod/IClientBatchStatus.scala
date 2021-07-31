@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.ClientBatchStatus.IInvalidTransaction
 import typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientBatchStatus extends StObject {
   
   /** ClientBatchStatus batchId */
-  var batchId: js.UndefOr[String | Null] = js.native
+  var batchId: js.UndefOr[String | Null] = js.undefined
   
   /** ClientBatchStatus invalidTransactions */
-  var invalidTransactions: js.UndefOr[js.Array[IInvalidTransaction] | Null] = js.native
+  var invalidTransactions: js.UndefOr[js.Array[IInvalidTransaction] | Null] = js.undefined
   
   /** ClientBatchStatus status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientBatchStatus {
   

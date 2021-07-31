@@ -9,10 +9,10 @@ Client-side loader for the PayPal JS SDK
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @paypal/paypal-js |
-| Keywords           | paypal, async, script, loader |
-| # releases         | 8 |
+| Keywords           | paypal, async, script, loader, types, typescript-definitions |
+| # releases         | 27 |
 | # dependents       | 1 |
-| # downloads        | 5885 |
+| # downloads        | 41806 |
 | # stars            | 0 |
 
 ## Links

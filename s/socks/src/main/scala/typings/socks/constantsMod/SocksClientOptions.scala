@@ -4,28 +4,26 @@ import typings.node.netMod.SocketConnectOpts
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SocksClient connection options.
   */
-@js.native
 trait SocksClientOptions extends StObject {
   
-  var command: SocksCommandOption = js.native
+  var command: SocksCommandOption
   
-  var destination: SocksRemoteHost = js.native
+  var destination: SocksRemoteHost
   
-  var existing_socket: js.UndefOr[Duplex] = js.native
+  var existing_socket: js.UndefOr[Duplex] = js.undefined
   
-  var proxy: SocksProxy = js.native
+  var proxy: SocksProxy
   
-  var set_tcp_nodelay: js.UndefOr[Boolean] = js.native
+  var set_tcp_nodelay: js.UndefOr[Boolean] = js.undefined
   
-  var socket_options: js.UndefOr[SocketConnectOpts] = js.native
+  var socket_options: js.UndefOr[SocketConnectOpts] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object SocksClientOptions {
   

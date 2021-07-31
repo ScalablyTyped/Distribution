@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupManagersCreateInstancesRequest extends StObject {
   
   /** [Required] List of specifications of per-instance configs. */
-  var instances: js.UndefOr[js.Array[PerInstanceConfig]] = js.native
+  var instances: js.UndefOr[js.Array[PerInstanceConfig]] = js.undefined
 }
 object InstanceGroupManagersCreateInstancesRequest {
   

@@ -2,18 +2,16 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesChangeMessageVisibilityBatchResultEntryMod {
   
-  @js.native
   trait ChangeMessageVisibilityBatchResultEntry extends StObject {
     
     /**
       * <p>Represents a message whose visibility timeout has been changed successfully.</p>
       */
-    var Id: String = js.native
+    var Id: String
   }
   object ChangeMessageVisibilityBatchResultEntry {
     

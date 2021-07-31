@@ -2,79 +2,77 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s physical address. May be a P.O. box or street address. All
   * fields are optional.
   */
-@js.native
 trait SchemaAddress extends StObject {
   
   /**
     * The city of the address.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * The country of the address.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes.htm)
     * country code of the address.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * The extended address of the address; for example, the apartment number.
     */
-  var extendedAddress: js.UndefOr[String] = js.native
+  var extendedAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only type of the address translated and formatted in the
     * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /**
     * The unstructured value of the address. If this is not set by the user it
     * will be automatically constructed from structured values.
     */
-  var formattedValue: js.UndefOr[String] = js.native
+  var formattedValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the address.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The P.O. box of the address.
     */
-  var poBox: js.UndefOr[String] = js.native
+  var poBox: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code of the address.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * The region of the address; for example, the state or province.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * The street address.
     */
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the address. The type can be custom or one of these
     * predefined values:  * `home` * `work` * `other`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAddress {
   

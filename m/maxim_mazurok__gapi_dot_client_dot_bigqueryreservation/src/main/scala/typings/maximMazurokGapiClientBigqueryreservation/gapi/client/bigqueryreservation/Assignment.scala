@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assignment extends StObject {
   
   /** The resource which will use the reservation. E.g. `projects/myproject`, `folders/123`, or `organizations/456`. */
-  var assignee: js.UndefOr[String] = js.native
+  var assignee: js.UndefOr[String] = js.undefined
   
   /** Which type of jobs will use the reservation. */
-  var jobType: js.UndefOr[String] = js.native
+  var jobType: js.UndefOr[String] = js.undefined
   
   /** Output only. Name of the resource. E.g.: `projects/myproject/locations/US/reservations/team1-prod/assignments/123`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. State of the assignment. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Assignment {
   

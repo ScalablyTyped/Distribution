@@ -2,14 +2,12 @@ package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `ServicePerimeterConfig` specifies a set of GCP resources that describe
   * specific Service Perimeter configuration.
   */
-@js.native
 trait SchemaServicePerimeterConfig extends StObject {
   
   /**
@@ -22,13 +20,13 @@ trait SchemaServicePerimeterConfig extends StObject {
     * `&quot;accessPolicies/MY_POLICY/accessLevels/MY_LEVEL&quot;`. For Service
     * Perimeter Bridge, must be empty.
     */
-  var accessLevels: js.UndefOr[js.Array[String]] = js.native
+  var accessLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of GCP resources that are inside of the service perimeter.
     * Currently only projects are allowed. Format: `projects/{project_number}`
     */
-  var resources: js.UndefOr[js.Array[String]] = js.native
+  var resources: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * GCP services that are subject to the Service Perimeter restrictions. For
@@ -36,7 +34,7 @@ trait SchemaServicePerimeterConfig extends StObject {
     * buckets inside the perimeter must meet the perimeter&#39;s access
     * restrictions.
     */
-  var restrictedServices: js.UndefOr[js.Array[String]] = js.native
+  var restrictedServices: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServicePerimeterConfig {
   

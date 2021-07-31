@@ -12,10 +12,13 @@ import typings.reduxPack.reduxPackStrings.start
 import typings.reduxPack.reduxPackStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("redux-pack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object KEY {
     
@@ -43,33 +46,32 @@ object mod {
     val SUCCESS: success = js.native
   }
   
-  @JSImport("redux-pack", "handle")
-  @js.native
+  @scala.inline
   def handle[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
     state: TState,
     action: Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload],
     handlers: Handlers[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
-  ): TState = js.native
+  ): TState = (^.asInstanceOf[js.Dynamic].applyDynamic("handle")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[TState]
   
   @JSImport("redux-pack", "middleware")
   @js.native
   val middleware: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
   
-  @js.native
   trait Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
-    extends typings.redux.mod.Action[js.Any] {
+    extends StObject
+       with typings.redux.mod.Action[js.Any] {
     
     // add optional error key to conform to FSA design: https://github.com/redux-utilities/flux-standard-action
     // note that users of this middleware (using our types) must conform to FSA shaped actions or code will not compile
-    var error: js.UndefOr[Boolean | Null] = js.native
+    var error: js.UndefOr[Boolean | Null] = js.undefined
     
     var meta: js.UndefOr[
-        (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) with TMetaPayload
-      ] = js.native
+        (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) & TMetaPayload
+      ] = js.undefined
     
-    var payload: js.UndefOr[TSuccessPayload | TErrorPayload | TStartPayload] = js.native
+    var payload: js.UndefOr[TSuccessPayload | TErrorPayload | TStartPayload] = js.undefined
     
-    var promise: js.UndefOr[js.Promise[TSuccessPayload]] = js.native
+    var promise: js.UndefOr[js.Promise[TSuccessPayload]] = js.undefined
   }
   object Action {
     
@@ -81,7 +83,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_, _, _, _, _], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self with (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?, ?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
       
       @scala.inline
       def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -93,7 +95,7 @@ object mod {
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setMeta(value: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) with TMetaPayload): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      def setMeta(value: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) & TMetaPayload): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -112,30 +114,29 @@ object mod {
     }
   }
   
-  @js.native
   trait ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] extends StObject {
     
     var onFailure: js.UndefOr[
         js.Function2[/* error */ TErrorPayload, /* getState */ GetState[TFullState], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFinish: js.UndefOr[js.Function2[/* resolved */ Boolean, /* getState */ GetState[TFullState], Unit]] = js.native
+    var onFinish: js.UndefOr[js.Function2[/* resolved */ Boolean, /* getState */ GetState[TFullState], Unit]] = js.undefined
     
     var onStart: js.UndefOr[
         js.Function2[/* payload */ TStartPayload, /* getState */ GetState[TFullState], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onSuccess: js.UndefOr[
         js.Function2[/* response */ TSuccessPayload, /* getState */ GetState[TFullState], Unit]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("redux-pack/LIFECYCLE")
-    var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.native
+    var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.undefined
     
     @JSName("redux-pack/TRANSACTION")
-    var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.native
+    var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.undefined
     
-    var startPayload: js.UndefOr[TStartPayload] = js.native
+    var startPayload: js.UndefOr[TStartPayload] = js.undefined
   }
   object ActionMeta {
     
@@ -146,7 +147,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMetaMutableBuilder[Self <: ActionMeta[_, _, _, _], TFullState, TSuccessPayload, TErrorPayload, TStartPayload] (val x: Self with (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) extends AnyVal {
+    implicit class ActionMetaMutableBuilder[Self <: ActionMeta[?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload] (val x: Self & (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) extends AnyVal {
       
       @scala.inline
       def setOnFailure(value: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
@@ -194,18 +195,17 @@ object mod {
   
   type GetState[S] = js.Function0[S]
   
-  @js.native
   trait Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] extends StObject {
     
-    var always: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[_]]] = js.native
+    var always: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[js.Any]]] = js.undefined
     
-    var failure: js.UndefOr[handlerReducer[S, PackActionPayload[TErrorPayload, TMetaPayload]]] = js.native
+    var failure: js.UndefOr[handlerReducer[S, PackActionPayload[TErrorPayload, TMetaPayload]]] = js.undefined
     
-    var finish: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[_]]] = js.native
+    var finish: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[js.Any]]] = js.undefined
     
-    var start: js.UndefOr[handlerReducer[S, PackActionPayload[TStartPayload, TMetaPayload]]] = js.native
+    var start: js.UndefOr[handlerReducer[S, PackActionPayload[TStartPayload, TMetaPayload]]] = js.undefined
     
-    var success: js.UndefOr[handlerReducer[S, PackActionPayload[TSuccessPayload, TMetaPayload]]] = js.native
+    var success: js.UndefOr[handlerReducer[S, PackActionPayload[TSuccessPayload, TMetaPayload]]] = js.undefined
   }
   object Handlers {
     
@@ -216,10 +216,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class HandlersMutableBuilder[Self <: Handlers[_, _, _, _, _], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self with (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
+    implicit class HandlersMutableBuilder[Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
       
       @scala.inline
-      def setAlways(value: (S, typings.redux.mod.Action[_]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+      def setAlways(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
@@ -231,7 +231,7 @@ object mod {
       def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
       @scala.inline
-      def setFinish(value: (S, typings.redux.mod.Action[_]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
+      def setFinish(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
@@ -268,17 +268,15 @@ object mod {
     def success: typings.reduxPack.reduxPackStrings.success = "success".asInstanceOf[typings.reduxPack.reduxPackStrings.success]
   }
   
-  type MetaPayload[M] = M with ReduxpackLIFECYCLE
+  type MetaPayload[M] = M & ReduxpackLIFECYCLE
   
-  /* Inlined redux.redux.Action<any> & {  payload :Payload,   meta :redux-pack.redux-pack.MetaPayload<M>} */
-  @js.native
-  trait PackActionPayload[Payload, M] extends StObject {
+  trait PackActionPayload[Payload, M]
+    extends StObject
+       with typings.redux.mod.Action[js.Any] {
     
-    var meta: MetaPayload[M] = js.native
+    var meta: MetaPayload[M]
     
-    var payload: Payload = js.native
-    
-    var `type`: js.Any = js.native
+    var payload: Payload
   }
   object PackActionPayload {
     
@@ -290,25 +288,21 @@ object mod {
     }
     
     @scala.inline
-    implicit class PackActionPayloadMutableBuilder[Self <: PackActionPayload[_, _], Payload, M] (val x: Self with (PackActionPayload[Payload, M])) extends AnyVal {
+    implicit class PackActionPayloadMutableBuilder[Self <: PackActionPayload[?, ?], Payload, M] (val x: Self & (PackActionPayload[Payload, M])) extends AnyVal {
       
       @scala.inline
       def setMeta(value: MetaPayload[M]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PackError extends StObject {
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var payload: js.Any = js.native
+    var payload: js.Any
   }
   object PackError {
     

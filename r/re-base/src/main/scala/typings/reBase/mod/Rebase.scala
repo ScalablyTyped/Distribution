@@ -2,14 +2,13 @@ package typings.reBase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Rebase extends StObject {
   
-  def addToCollection(refOrPath: String, data: js.Object): js.Promise[_] = js.native
-  def addToCollection(refOrPath: String, data: js.Object, id: String): js.Promise[_] = js.native
+  def addToCollection(refOrPath: String, data: js.Object): js.Promise[js.Any] = js.native
+  def addToCollection(refOrPath: String, data: js.Object, id: String): js.Promise[js.Any] = js.native
   /**
     * Add a new Document to a Collection.
     * @param refOrPath CollectionReference or path.
@@ -20,8 +19,8 @@ trait Rebase extends StObject {
     * if the document/collection does not exist or there are any read
     * errors.
     */
-  def addToCollection(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
-  def addToCollection(refOrPath: js.Object, data: js.Object, id: String): js.Promise[_] = js.native
+  def addToCollection(refOrPath: js.Object, data: js.Object): js.Promise[js.Any] = js.native
+  def addToCollection(refOrPath: js.Object, data: js.Object, id: String): js.Promise[js.Any] = js.native
   
   def bindCollection(refOrPath: String, options: bindCollectionOptions): RebaseBinding = js.native
   /**
@@ -69,9 +68,9 @@ trait Rebase extends StObject {
     * which resolves when the write is complete and rejects if there is an
     * error.
     */
-  def fetch(endpoint: String, options: FetchOptions): js.Promise[_] = js.native
+  def fetch(endpoint: String, options: FetchOptions): js.Promise[js.Any] = js.native
   
-  def get(refOrPath: String, options: listenToCollectionOptions): js.Promise[_] = js.native
+  def get(refOrPath: String, options: listenToCollectionOptions): js.Promise[js.Any] = js.native
   /**
     * Fetch either a Collection or Document.
     * @param refOrPath CollectionReference, DocumentReference or path.
@@ -80,7 +79,7 @@ trait Rebase extends StObject {
     * if the document/collection does not exist or there are any read
     * errors.
     */
-  def get(refOrPath: js.Object, options: listenToCollectionOptions): js.Promise[_] = js.native
+  def get(refOrPath: js.Object, options: listenToCollectionOptions): js.Promise[js.Any] = js.native
   
   /**
     * This property contains the initialized firebase app that was passed
@@ -136,7 +135,7 @@ trait Rebase extends StObject {
     * which resolves when the write is complete and rejects if there is an
     * error.
     */
-  def post(endpoint: String, options: PostOptions): js.Promise[_] = js.native
+  def post(endpoint: String, options: PostOptions): js.Promise[js.Any] = js.native
   
   /**
     * Allows you to add data to a Firebase endpoint. *Adds data to a child
@@ -149,7 +148,7 @@ trait Rebase extends StObject {
     * resolves when write is complete, but can be used immediately as the
     * reference to the child location."
     */
-  def push(endpoint: String, options: PushOptions): js.Promise[_] = js.native
+  def push(endpoint: String, options: PushOptions): js.Promise[js.Any] = js.native
   
   /**
     * Allows you to delete all data at the endpoint location.
@@ -162,8 +161,8 @@ trait Rebase extends StObject {
     * which resolves when the write is complete and rejects if there is an
     * error.
     */
-  def remove(endpoint: String): js.Promise[_] = js.native
-  def remove(endpoint: String, callback: js.Function1[/* result */ js.Promise[_], Unit]): js.Promise[_] = js.native
+  def remove(endpoint: String): js.Promise[js.Any] = js.native
+  def remove(endpoint: String, callback: js.Function1[/* result */ js.Promise[js.Any], Unit]): js.Promise[js.Any] = js.native
   
   /**
     * Clean up a listener. Listeners are automatically cleaned up when
@@ -177,7 +176,7 @@ trait Rebase extends StObject {
     */
   def removeBinding(ref: js.Object): Unit = js.native
   
-  def removeDoc(refOrPath: String, data: js.Object): js.Promise[_] = js.native
+  def removeDoc(refOrPath: String, data: js.Object): js.Promise[js.Any] = js.native
   /**
     * Deletes a document.
     * @param refOrPath DocumentReference or path.
@@ -186,9 +185,9 @@ trait Rebase extends StObject {
     * if the document/collection does not exist or there are any read
     * errors.
     */
-  def removeDoc(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
+  def removeDoc(refOrPath: js.Object, data: js.Object): js.Promise[js.Any] = js.native
   
-  def removeFromCollection(refOrPath: String, options: removeFromCollectionOptions): js.Promise[_] = js.native
+  def removeFromCollection(refOrPath: String, options: removeFromCollectionOptions): js.Promise[js.Any] = js.native
   /**
     * Removes documents from a collection. If no query is supplied, it
     * will remove all the documents. If a query is supplied, it will only
@@ -199,7 +198,7 @@ trait Rebase extends StObject {
     * if the document/collection does not exist or there are any read
     * errors.
     */
-  def removeFromCollection(refOrPath: js.Object, options: removeFromCollectionOptions): js.Promise[_] = js.native
+  def removeFromCollection(refOrPath: js.Object, options: removeFromCollectionOptions): js.Promise[js.Any] = js.native
   
   /**
     * Removes every Firebase/Firestore listener.
@@ -250,9 +249,9 @@ trait Rebase extends StObject {
     * which resolves when the write is complete and rejects if there is an
     * error.
     */
-  def update(endpoint: String, options: UpdateOptions): js.Promise[_] = js.native
+  def update(endpoint: String, options: UpdateOptions): js.Promise[js.Any] = js.native
   
-  def updateDoc(refOrPath: String, data: js.Object): js.Promise[_] = js.native
+  def updateDoc(refOrPath: String, data: js.Object): js.Promise[js.Any] = js.native
   /**
     * Update an existing document.
     * @param refOrPath DocumentReference or path.
@@ -261,5 +260,5 @@ trait Rebase extends StObject {
     * if the document/collection does not exist or there are any read
     * errors.
     */
-  def updateDoc(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
+  def updateDoc(refOrPath: js.Object, data: js.Object): js.Promise[js.Any] = js.native
 }

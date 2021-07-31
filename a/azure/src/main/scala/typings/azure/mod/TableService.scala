@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "TableService")
@@ -38,13 +37,8 @@ class TableService () extends BatchServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
-  def this(
-    storageAccount: String,
-    storageAccessKey: String,
-    host: js.UndefOr[scala.Nothing],
-    authenticationProvider: String
-  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, authenticationProvider: String) = this()
+  def this(storageAccount: String, storageAccessKey: String, host: Unit, authenticationProvider: String) = this()
   
   def createTable(table: String): Unit = js.native
   def createTable(table: String, callback: TableRequestCallback): Unit = js.native

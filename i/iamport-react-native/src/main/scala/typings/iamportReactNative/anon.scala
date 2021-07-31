@@ -2,15 +2,13 @@ package typings.iamportReactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cardquota extends StObject {
     
-    var card_quota: js.UndefOr[Double] = js.native
+    var card_quota: js.UndefOr[Double] = js.undefined
   }
   object Cardquota {
     

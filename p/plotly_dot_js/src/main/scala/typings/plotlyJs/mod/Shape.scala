@@ -12,49 +12,47 @@ import typings.plotlyJs.plotlyJsStrings.rect
 import typings.plotlyJs.plotlyJsStrings.scaled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var fillcolor: String = js.native
+  var fillcolor: String
   
-  var layer: below | above = js.native
+  var layer: below | above
   
-  var line: PartialShapeLine = js.native
+  var line: PartialShapeLine
   
-  var name: String = js.native
+  var name: String
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var path: String = js.native
+  var path: String
   
-  var templateitemname: String = js.native
+  var templateitemname: String
   
-  var `type`: rect | circle | line | path = js.native
+  var `type`: rect | circle | line | path
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x0: Datum = js.native
+  var x0: Datum
   
-  var x1: Datum = js.native
+  var x1: Datum
   
-  var xanchor: Double | String = js.native
+  var xanchor: Double | String
   
-  var xref: paper | XAxisName = js.native
+  var xref: paper | XAxisName
   
-  var xsizemode: scaled | pixel = js.native
+  var xsizemode: scaled | pixel
   
-  var y0: Datum = js.native
+  var y0: Datum
   
-  var y1: Datum = js.native
+  var y1: Datum
   
-  var yanchor: Double | String = js.native
+  var yanchor: Double | String
   
-  var yref: paper | YAxisName = js.native
+  var yref: paper | YAxisName
   
-  var ysizemode: scaled | pixel = js.native
+  var ysizemode: scaled | pixel
 }
 object Shape {
   
@@ -76,7 +74,7 @@ object Shape {
     yref: paper | YAxisName,
     ysizemode: scaled | pixel
   ): Shape = {
-    val __obj = js.Dynamic.literal(fillcolor = fillcolor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], xsizemode = xsizemode.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any], ysizemode = ysizemode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fillcolor = fillcolor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], xsizemode = xsizemode.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any], ysizemode = ysizemode.asInstanceOf[js.Any], x0 = null, x1 = null, y0 = null, y1 = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }

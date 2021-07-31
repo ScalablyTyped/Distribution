@@ -3,15 +3,13 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeyDerivationParametersStatics extends StObject {
   
-  def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): KeyDerivationParameters = js.native
+  def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): KeyDerivationParameters
   
-  def buildForSP800108(label: IBuffer, context: IBuffer): KeyDerivationParameters = js.native
+  def buildForSP800108(label: IBuffer, context: IBuffer): KeyDerivationParameters
   
   def buildForSP80056a(
     algorithmId: IBuffer,
@@ -19,7 +17,7 @@ trait IKeyDerivationParametersStatics extends StObject {
     partyVInfo: IBuffer,
     suppPubInfo: IBuffer,
     suppPrivInfo: IBuffer
-  ): KeyDerivationParameters = js.native
+  ): KeyDerivationParameters
 }
 object IKeyDerivationParametersStatics {
   

@@ -3,25 +3,23 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchShardsResponseShard extends StObject {
   
-  var allocation_id: Id = js.native
+  var allocation_id: Id
   
-  var index: String = js.native
+  var index: String
   
-  var node: String = js.native
+  var node: String
   
-  var primary: Boolean = js.native
+  var primary: Boolean
   
-  var relocating_node: js.Any = js.native
+  var relocating_node: js.Any
   
-  var share: Double = js.native
+  var share: Double
   
-  var state: String = js.native
+  var state: String
 }
 object SearchShardsResponseShard {
   

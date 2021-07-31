@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOpenIDConnectProviderRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM OpenID Connect provider resource object to delete. You can get a list of OpenID Connect provider resource ARNs by using the ListOpenIDConnectProviders operation.
     */
-  var OpenIDConnectProviderArn: arnType = js.native
+  var OpenIDConnectProviderArn: arnType
 }
 object DeleteOpenIDConnectProviderRequest {
   

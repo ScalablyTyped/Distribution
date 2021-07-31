@@ -3,25 +3,23 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationVpcConfiguration extends StObject {
   
   /**
     * The [Security Group](https://www.terraform.io/docs/providers/aws/r/security_group.html) IDs used by the VPC configuration.
     */
-  var securityGroupIds: Input[js.Array[Input[String]]] = js.native
+  var securityGroupIds: Input[js.Array[Input[String]]]
   
   /**
     * The [Subnet](https://www.terraform.io/docs/providers/aws/r/subnet.html) IDs used by the VPC configuration.
     */
-  var subnetIds: Input[js.Array[Input[String]]] = js.native
+  var subnetIds: Input[js.Array[Input[String]]]
   
-  var vpcConfigurationId: js.UndefOr[Input[String]] = js.native
+  var vpcConfigurationId: js.UndefOr[Input[String]] = js.undefined
   
-  var vpcId: js.UndefOr[Input[String]] = js.native
+  var vpcId: js.UndefOr[Input[String]] = js.undefined
 }
 object ApplicationApplicationConfigurationVpcConfiguration {
   

@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class GraphLinksModel () extends Model {
   def this(nodedataarray: js.Array[js.Object]) = this()
-  def this(nodedataarray: js.UndefOr[scala.Nothing], linkdataarray: js.Array[js.Object]) = this()
   def this(nodedataarray: js.Array[js.Object], linkdataarray: js.Array[js.Object]) = this()
+  def this(nodedataarray: Unit, linkdataarray: js.Array[js.Object]) = this()
   
   /**
     * Adds a node key value that identifies a node data acting as a new label node on the given link data.

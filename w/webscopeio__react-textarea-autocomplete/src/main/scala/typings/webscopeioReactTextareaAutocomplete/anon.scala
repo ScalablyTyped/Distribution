@@ -2,17 +2,15 @@ package typings.webscopeioReactTextareaAutocomplete
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait SelectionEnd extends StObject {
     
-    var selectionEnd: Double = js.native
+    var selectionEnd: Double
     
-    var selectionStart: Double = js.native
+    var selectionStart: Double
   }
   object SelectionEnd {
     

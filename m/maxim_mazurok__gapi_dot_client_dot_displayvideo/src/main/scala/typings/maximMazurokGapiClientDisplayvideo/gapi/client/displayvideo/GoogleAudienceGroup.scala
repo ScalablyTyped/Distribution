@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAudienceGroup extends StObject {
   
   /** Required. All Google audience targeting settings in Google audience group. Repeated settings with same id will be ignored. */
-  var settings: js.UndefOr[js.Array[GoogleAudienceTargetingSetting]] = js.native
+  var settings: js.UndefOr[js.Array[GoogleAudienceTargetingSetting]] = js.undefined
 }
 object GoogleAudienceGroup {
   

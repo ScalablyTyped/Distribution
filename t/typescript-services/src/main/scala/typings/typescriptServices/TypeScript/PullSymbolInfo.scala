@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullSymbolInfo extends StObject {
   
-  var aliasSymbol: PullTypeAliasSymbol = js.native
+  var aliasSymbol: PullTypeAliasSymbol
   
-  var ast: AST = js.native
+  var ast: AST
   
-  var enclosingScopeSymbol: PullSymbol = js.native
+  var enclosingScopeSymbol: PullSymbol
   
-  var symbol: PullSymbol = js.native
+  var symbol: PullSymbol
 }
 object PullSymbolInfo {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputSerialization extends StObject {
   
   /**
     * Describes the serialization of CSV-encoded Select results.
     */
-  var CSV: js.UndefOr[CSVOutput] = js.native
+  var CSV: js.UndefOr[CSVOutput] = js.undefined
   
   /**
     * Specifies JSON as request's output serialization format.
     */
-  var JSON: js.UndefOr[JSONOutput] = js.native
+  var JSON: js.UndefOr[JSONOutput] = js.undefined
 }
 object OutputSerialization {
   

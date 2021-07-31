@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormAction extends StObject {
   
   /**
     * The method name is used to identify which part of the form triggered the form submission. This information is echoed back to the bot as part of the card click event. The same method
     * name can be used for several elements that trigger a common behavior if desired.
     */
-  var actionMethodName: js.UndefOr[String] = js.native
+  var actionMethodName: js.UndefOr[String] = js.undefined
   
   /** List of action parameters. */
-  var parameters: js.UndefOr[js.Array[ActionParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[ActionParameter]] = js.undefined
 }
 object FormAction {
   

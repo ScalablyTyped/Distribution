@@ -4,26 +4,26 @@ import typings.rollup.rollupStrings.asset
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmittedAsset extends EmittedFile {
+trait EmittedAsset
+  extends StObject
+     with EmittedFile {
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String | Uint8Array] = js.native
+  var source: js.UndefOr[String | Uint8Array] = js.undefined
   
-  var `type`: asset = js.native
+  var `type`: asset
 }
 object EmittedAsset {
   
   @scala.inline
-  def apply(`type`: asset): EmittedAsset = {
+  def apply(): EmittedAsset = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[EmittedAsset]
   }
   

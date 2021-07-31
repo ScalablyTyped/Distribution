@@ -4,41 +4,41 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.systemMod.DayOfWeek
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamSetting extends TeamSettingsDataContractBase {
+trait TeamSetting
+  extends StObject
+     with TeamSettingsDataContractBase {
   
   /**
     * Backlog Iteration
     */
-  var backlogIteration: TeamSettingsIteration = js.native
+  var backlogIteration: TeamSettingsIteration
   
   /**
     * Information about categories that are visible on the backlog.
     */
-  var backlogVisibilities: StringDictionary[Boolean] = js.native
+  var backlogVisibilities: StringDictionary[Boolean]
   
   /**
     * BugsBehavior (Off, AsTasks, AsRequirements, ...)
     */
-  var bugsBehavior: BugsBehavior = js.native
+  var bugsBehavior: BugsBehavior
   
   /**
     * Default Iteration, the iteration used when creating a new work item on the queries page.
     */
-  var defaultIteration: TeamSettingsIteration = js.native
+  var defaultIteration: TeamSettingsIteration
   
   /**
     * Default Iteration macro (if any)
     */
-  var defaultIterationMacro: String = js.native
+  var defaultIterationMacro: String
   
   /**
     * Days that the team is working
     */
-  var workingDays: js.Array[DayOfWeek] = js.native
+  var workingDays: js.Array[DayOfWeek]
 }
 object TeamSetting {
   

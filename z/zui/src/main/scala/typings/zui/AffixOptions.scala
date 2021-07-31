@@ -2,15 +2,13 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AffixOptions extends StObject {
   
-  var offset: js.UndefOr[Double | CallBack | js.Object] = js.native
+  var offset: js.UndefOr[Double | CallBack | js.Object] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object AffixOptions {
   

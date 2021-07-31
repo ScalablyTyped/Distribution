@@ -12,7 +12,7 @@ Browserify version of Switchery
 | Keywords           | switchery |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 93670 |
+| # downloads        | 98857 |
 | # stars            | 0 |
 
 ## Links

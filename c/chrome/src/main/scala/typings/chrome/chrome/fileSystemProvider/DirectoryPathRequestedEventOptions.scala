@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectoryPathRequestedEventOptions extends RequestedEventOptions {
+trait DirectoryPathRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The path of the directory which is to be operated on. */
-  var directoryPath: String = js.native
+  var directoryPath: String
 }
 object DirectoryPathRequestedEventOptions {
   

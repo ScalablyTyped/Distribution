@@ -134,7 +134,6 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeReferenceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -189,7 +188,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -205,7 +204,7 @@ object anon {
     
     val modifiers: js.UndefOr[ModifiersArray] = js.native
     
-    val name: BindingName with Identifier = js.native
+    val name: BindingName & Identifier = js.native
     
     val parent: BindingPattern = js.native
     
@@ -214,12 +213,13 @@ object anon {
     val propertyName: js.UndefOr[PropertyName] = js.native
   }
   
-  @js.native
   trait Body extends StObject
   
   /* Inlined typescript.typescript.CallExpression & {  expression :typescript.typescript.Token<typescript.typescript.SyntaxKind.ImportKeyword> | typescript.typescript.Identifier & {  text :'require'},   arguments :[typescript.typescript.Expression]} */
   @js.native
-  trait CallExpressionexpressionT extends _ImportLike {
+  trait CallExpressionexpressionT
+    extends StObject
+       with _ImportLike {
     
     var _declarationBrand: js.Any = js.native
     
@@ -231,13 +231,13 @@ object anon {
     
     var _updateExpressionBrand: js.Any = js.native
     
-    val arguments: NodeArray[Expression] with js.Array[Expression] = js.native
+    val arguments: NodeArray[Expression] & js.Array[Expression] = js.native
     
     val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
     
     val end: Double = js.native
     
-    val expression: LeftHandSideExpression with (Token[ImportKeyword] | Identifiertextrequire) = js.native
+    val expression: LeftHandSideExpression & (Token[ImportKeyword] | Identifiertextrequire) = js.native
     
     val flags: NodeFlags = js.native
     
@@ -277,7 +277,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -302,7 +302,9 @@ object anon {
   
   /* Inlined typescript.typescript.ExportDeclaration & {  moduleSpecifier :{}} */
   @js.native
-  trait ExportDeclarationmoduleSp extends _ImportLike {
+  trait ExportDeclarationmoduleSp
+    extends StObject
+       with _ImportLike {
     
     var _declarationBrand: js.Any = js.native
     
@@ -353,7 +355,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -370,7 +372,7 @@ object anon {
     val modifiers: js.UndefOr[ModifiersArray] = js.native
     
     /** If this is not a StringLiteral it will be a grammar error. */
-    val moduleSpecifier: js.UndefOr[Expression] with js.Object = js.native
+    val moduleSpecifier: js.UndefOr[Expression] & js.Object = js.native
     
     val name: js.UndefOr[Identifier | StringLiteral | NumericLiteral] = js.native
     
@@ -405,7 +407,7 @@ object anon {
       * Prefer to use `id.unescapedText`. (Note: This is available only in services, not internally to the TypeScript compiler.)
       * Text of identifier, but if the identifier begins with two underscores, this will begin with three.
       */
-    val escapedText: typings.typescript.mod.String with symbol_ = js.native
+    val escapedText: typings.typescript.mod.String & symbol_ = js.native
     
     val flags: NodeFlags = js.native
     
@@ -445,7 +447,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -467,7 +469,7 @@ object anon {
     
     val pos: Double = js.native
     
-    val text: String with Symbol = js.native
+    val text: String & Symbol = js.native
   }
   
   /* Inlined typescript.typescript.Identifier & {  text :'require'} */
@@ -536,7 +538,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -558,12 +560,14 @@ object anon {
     
     val pos: Double = js.native
     
-    val text: String with require = js.native
+    val text: String & require = js.native
   }
   
   /* Inlined typescript.typescript.ImportEqualsDeclaration & {  moduleReference :typescript.typescript.ExternalModuleReference} */
   @js.native
-  trait ImportEqualsDeclarationmo extends _ImportLike {
+  trait ImportEqualsDeclarationmo
+    extends StObject
+       with _ImportLike {
     
     var _declarationBrand: js.Any = js.native
     
@@ -611,7 +615,7 @@ object anon {
     def getSourceFile(): SourceFile = js.native
     
     def getStart(): Double = js.native
-    def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
     def getStart(sourceFile: SourceFile): Double = js.native
     def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
     
@@ -625,7 +629,7 @@ object anon {
     
     val modifiers: js.UndefOr[ModifiersArray] = js.native
     
-    val moduleReference: ModuleReference with ExternalModuleReference = js.native
+    val moduleReference: ModuleReference & ExternalModuleReference = js.native
     
     val name: Identifier = js.native
     
@@ -635,184 +639,183 @@ object anon {
   }
   
   /* Inlined {[ K in keyof typescript.typescript.CompilerOptions ]: std.NonNullable<typescript.typescript.CompilerOptions[K]> extends boolean? K : never} */
-  @js.native
   trait KinkeyofCompilerOptionsNo extends StObject {
     
-    var allowJs: js.UndefOr[typings.tsutils.tsutilsStrings.allowJs] = js.native
+    var allowJs: js.UndefOr[typings.tsutils.tsutilsStrings.allowJs] = js.undefined
     
-    var allowSyntheticDefaultImports: js.UndefOr[typings.tsutils.tsutilsStrings.allowSyntheticDefaultImports] = js.native
+    var allowSyntheticDefaultImports: js.UndefOr[typings.tsutils.tsutilsStrings.allowSyntheticDefaultImports] = js.undefined
     
-    var allowUmdGlobalAccess: js.UndefOr[typings.tsutils.tsutilsStrings.allowUmdGlobalAccess] = js.native
+    var allowUmdGlobalAccess: js.UndefOr[typings.tsutils.tsutilsStrings.allowUmdGlobalAccess] = js.undefined
     
-    var allowUnreachableCode: js.UndefOr[typings.tsutils.tsutilsStrings.allowUnreachableCode] = js.native
+    var allowUnreachableCode: js.UndefOr[typings.tsutils.tsutilsStrings.allowUnreachableCode] = js.undefined
     
-    var allowUnusedLabels: js.UndefOr[typings.tsutils.tsutilsStrings.allowUnusedLabels] = js.native
+    var allowUnusedLabels: js.UndefOr[typings.tsutils.tsutilsStrings.allowUnusedLabels] = js.undefined
     
-    var alwaysStrict: js.UndefOr[typings.tsutils.tsutilsStrings.alwaysStrict] = js.native
+    var alwaysStrict: js.UndefOr[typings.tsutils.tsutilsStrings.alwaysStrict] = js.undefined
     
-    var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[typings.tsutils.tsutilsStrings.assumeChangesOnlyAffectDirectDependencies] = js.native
+    var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[typings.tsutils.tsutilsStrings.assumeChangesOnlyAffectDirectDependencies] = js.undefined
     
-    var baseUrl: js.UndefOr[typings.tsutils.tsutilsStrings.baseUrl] = js.native
+    var baseUrl: js.UndefOr[typings.tsutils.tsutilsStrings.baseUrl] = js.undefined
     
-    var charset: js.UndefOr[typings.tsutils.tsutilsStrings.charset] = js.native
+    var charset: js.UndefOr[typings.tsutils.tsutilsStrings.charset] = js.undefined
     
-    var checkJs: js.UndefOr[typings.tsutils.tsutilsStrings.checkJs] = js.native
+    var checkJs: js.UndefOr[typings.tsutils.tsutilsStrings.checkJs] = js.undefined
     
-    var composite: js.UndefOr[typings.tsutils.tsutilsStrings.composite] = js.native
+    var composite: js.UndefOr[typings.tsutils.tsutilsStrings.composite] = js.undefined
     
-    var declaration: js.UndefOr[typings.tsutils.tsutilsStrings.declaration] = js.native
+    var declaration: js.UndefOr[typings.tsutils.tsutilsStrings.declaration] = js.undefined
     
-    var declarationDir: js.UndefOr[typings.tsutils.tsutilsStrings.declarationDir] = js.native
+    var declarationDir: js.UndefOr[typings.tsutils.tsutilsStrings.declarationDir] = js.undefined
     
-    var declarationMap: js.UndefOr[typings.tsutils.tsutilsStrings.declarationMap] = js.native
+    var declarationMap: js.UndefOr[typings.tsutils.tsutilsStrings.declarationMap] = js.undefined
     
-    var disableReferencedProjectLoad: js.UndefOr[typings.tsutils.tsutilsStrings.disableReferencedProjectLoad] = js.native
+    var disableReferencedProjectLoad: js.UndefOr[typings.tsutils.tsutilsStrings.disableReferencedProjectLoad] = js.undefined
     
-    var disableSizeLimit: js.UndefOr[typings.tsutils.tsutilsStrings.disableSizeLimit] = js.native
+    var disableSizeLimit: js.UndefOr[typings.tsutils.tsutilsStrings.disableSizeLimit] = js.undefined
     
-    var disableSolutionSearching: js.UndefOr[typings.tsutils.tsutilsStrings.disableSolutionSearching] = js.native
+    var disableSolutionSearching: js.UndefOr[typings.tsutils.tsutilsStrings.disableSolutionSearching] = js.undefined
     
-    var disableSourceOfProjectReferenceRedirect: js.UndefOr[typings.tsutils.tsutilsStrings.disableSourceOfProjectReferenceRedirect] = js.native
+    var disableSourceOfProjectReferenceRedirect: js.UndefOr[typings.tsutils.tsutilsStrings.disableSourceOfProjectReferenceRedirect] = js.undefined
     
-    var downlevelIteration: js.UndefOr[typings.tsutils.tsutilsStrings.downlevelIteration] = js.native
+    var downlevelIteration: js.UndefOr[typings.tsutils.tsutilsStrings.downlevelIteration] = js.undefined
     
-    var emitBOM: js.UndefOr[typings.tsutils.tsutilsStrings.emitBOM] = js.native
+    var emitBOM: js.UndefOr[typings.tsutils.tsutilsStrings.emitBOM] = js.undefined
     
-    var emitDeclarationOnly: js.UndefOr[typings.tsutils.tsutilsStrings.emitDeclarationOnly] = js.native
+    var emitDeclarationOnly: js.UndefOr[typings.tsutils.tsutilsStrings.emitDeclarationOnly] = js.undefined
     
-    var emitDecoratorMetadata: js.UndefOr[typings.tsutils.tsutilsStrings.emitDecoratorMetadata] = js.native
+    var emitDecoratorMetadata: js.UndefOr[typings.tsutils.tsutilsStrings.emitDecoratorMetadata] = js.undefined
     
-    var esModuleInterop: js.UndefOr[typings.tsutils.tsutilsStrings.esModuleInterop] = js.native
+    var esModuleInterop: js.UndefOr[typings.tsutils.tsutilsStrings.esModuleInterop] = js.undefined
     
-    var experimentalDecorators: js.UndefOr[typings.tsutils.tsutilsStrings.experimentalDecorators] = js.native
+    var experimentalDecorators: js.UndefOr[typings.tsutils.tsutilsStrings.experimentalDecorators] = js.undefined
     
-    var forceConsistentCasingInFileNames: js.UndefOr[typings.tsutils.tsutilsStrings.forceConsistentCasingInFileNames] = js.native
+    var forceConsistentCasingInFileNames: js.UndefOr[typings.tsutils.tsutilsStrings.forceConsistentCasingInFileNames] = js.undefined
     
-    var importHelpers: js.UndefOr[typings.tsutils.tsutilsStrings.importHelpers] = js.native
+    var importHelpers: js.UndefOr[typings.tsutils.tsutilsStrings.importHelpers] = js.undefined
     
-    var importsNotUsedAsValues: js.UndefOr[typings.tsutils.tsutilsStrings.importsNotUsedAsValues] = js.native
+    var importsNotUsedAsValues: js.UndefOr[typings.tsutils.tsutilsStrings.importsNotUsedAsValues] = js.undefined
     
-    var incremental: js.UndefOr[typings.tsutils.tsutilsStrings.incremental] = js.native
+    var incremental: js.UndefOr[typings.tsutils.tsutilsStrings.incremental] = js.undefined
     
-    var inlineSourceMap: js.UndefOr[typings.tsutils.tsutilsStrings.inlineSourceMap] = js.native
+    var inlineSourceMap: js.UndefOr[typings.tsutils.tsutilsStrings.inlineSourceMap] = js.undefined
     
-    var inlineSources: js.UndefOr[typings.tsutils.tsutilsStrings.inlineSources] = js.native
+    var inlineSources: js.UndefOr[typings.tsutils.tsutilsStrings.inlineSources] = js.undefined
     
-    var isolatedModules: js.UndefOr[typings.tsutils.tsutilsStrings.isolatedModules] = js.native
+    var isolatedModules: js.UndefOr[typings.tsutils.tsutilsStrings.isolatedModules] = js.undefined
     
-    var jsx: js.UndefOr[typings.tsutils.tsutilsStrings.jsx] = js.native
+    var jsx: js.UndefOr[typings.tsutils.tsutilsStrings.jsx] = js.undefined
     
-    var jsxFactory: js.UndefOr[typings.tsutils.tsutilsStrings.jsxFactory] = js.native
+    var jsxFactory: js.UndefOr[typings.tsutils.tsutilsStrings.jsxFactory] = js.undefined
     
-    var jsxFragmentFactory: js.UndefOr[typings.tsutils.tsutilsStrings.jsxFragmentFactory] = js.native
+    var jsxFragmentFactory: js.UndefOr[typings.tsutils.tsutilsStrings.jsxFragmentFactory] = js.undefined
     
-    var jsxImportSource: js.UndefOr[typings.tsutils.tsutilsStrings.jsxImportSource] = js.native
+    var jsxImportSource: js.UndefOr[typings.tsutils.tsutilsStrings.jsxImportSource] = js.undefined
     
-    var keyofStringsOnly: js.UndefOr[typings.tsutils.tsutilsStrings.keyofStringsOnly] = js.native
+    var keyofStringsOnly: js.UndefOr[typings.tsutils.tsutilsStrings.keyofStringsOnly] = js.undefined
     
-    var lib: js.UndefOr[typings.tsutils.tsutilsStrings.lib] = js.native
+    var lib: js.UndefOr[typings.tsutils.tsutilsStrings.lib] = js.undefined
     
-    var locale: js.UndefOr[typings.tsutils.tsutilsStrings.locale] = js.native
+    var locale: js.UndefOr[typings.tsutils.tsutilsStrings.locale] = js.undefined
     
-    var mapRoot: js.UndefOr[typings.tsutils.tsutilsStrings.mapRoot] = js.native
+    var mapRoot: js.UndefOr[typings.tsutils.tsutilsStrings.mapRoot] = js.undefined
     
-    var maxNodeModuleJsDepth: js.UndefOr[typings.tsutils.tsutilsStrings.maxNodeModuleJsDepth] = js.native
+    var maxNodeModuleJsDepth: js.UndefOr[typings.tsutils.tsutilsStrings.maxNodeModuleJsDepth] = js.undefined
     
-    var module: js.UndefOr[typings.tsutils.tsutilsStrings.module] = js.native
+    var module: js.UndefOr[typings.tsutils.tsutilsStrings.module] = js.undefined
     
-    var moduleResolution: js.UndefOr[typings.tsutils.tsutilsStrings.moduleResolution] = js.native
+    var moduleResolution: js.UndefOr[typings.tsutils.tsutilsStrings.moduleResolution] = js.undefined
     
-    var newLine: js.UndefOr[typings.tsutils.tsutilsStrings.newLine] = js.native
+    var newLine: js.UndefOr[typings.tsutils.tsutilsStrings.newLine] = js.undefined
     
-    var noEmit: js.UndefOr[typings.tsutils.tsutilsStrings.noEmit] = js.native
+    var noEmit: js.UndefOr[typings.tsutils.tsutilsStrings.noEmit] = js.undefined
     
-    var noEmitHelpers: js.UndefOr[typings.tsutils.tsutilsStrings.noEmitHelpers] = js.native
+    var noEmitHelpers: js.UndefOr[typings.tsutils.tsutilsStrings.noEmitHelpers] = js.undefined
     
-    var noEmitOnError: js.UndefOr[typings.tsutils.tsutilsStrings.noEmitOnError] = js.native
+    var noEmitOnError: js.UndefOr[typings.tsutils.tsutilsStrings.noEmitOnError] = js.undefined
     
-    var noErrorTruncation: js.UndefOr[typings.tsutils.tsutilsStrings.noErrorTruncation] = js.native
+    var noErrorTruncation: js.UndefOr[typings.tsutils.tsutilsStrings.noErrorTruncation] = js.undefined
     
-    var noFallthroughCasesInSwitch: js.UndefOr[typings.tsutils.tsutilsStrings.noFallthroughCasesInSwitch] = js.native
+    var noFallthroughCasesInSwitch: js.UndefOr[typings.tsutils.tsutilsStrings.noFallthroughCasesInSwitch] = js.undefined
     
-    var noImplicitAny: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitAny] = js.native
+    var noImplicitAny: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitAny] = js.undefined
     
-    var noImplicitReturns: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitReturns] = js.native
+    var noImplicitReturns: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitReturns] = js.undefined
     
-    var noImplicitThis: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitThis] = js.native
+    var noImplicitThis: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitThis] = js.undefined
     
-    var noImplicitUseStrict: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitUseStrict] = js.native
+    var noImplicitUseStrict: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitUseStrict] = js.undefined
     
-    var noLib: js.UndefOr[typings.tsutils.tsutilsStrings.noLib] = js.native
+    var noLib: js.UndefOr[typings.tsutils.tsutilsStrings.noLib] = js.undefined
     
-    var noResolve: js.UndefOr[typings.tsutils.tsutilsStrings.noResolve] = js.native
+    var noResolve: js.UndefOr[typings.tsutils.tsutilsStrings.noResolve] = js.undefined
     
-    var noStrictGenericChecks: js.UndefOr[typings.tsutils.tsutilsStrings.noStrictGenericChecks] = js.native
+    var noStrictGenericChecks: js.UndefOr[typings.tsutils.tsutilsStrings.noStrictGenericChecks] = js.undefined
     
-    var noUncheckedIndexedAccess: js.UndefOr[typings.tsutils.tsutilsStrings.noUncheckedIndexedAccess] = js.native
+    var noUncheckedIndexedAccess: js.UndefOr[typings.tsutils.tsutilsStrings.noUncheckedIndexedAccess] = js.undefined
     
-    var noUnusedLocals: js.UndefOr[typings.tsutils.tsutilsStrings.noUnusedLocals] = js.native
+    var noUnusedLocals: js.UndefOr[typings.tsutils.tsutilsStrings.noUnusedLocals] = js.undefined
     
-    var noUnusedParameters: js.UndefOr[typings.tsutils.tsutilsStrings.noUnusedParameters] = js.native
+    var noUnusedParameters: js.UndefOr[typings.tsutils.tsutilsStrings.noUnusedParameters] = js.undefined
     
-    var out: js.UndefOr[typings.tsutils.tsutilsStrings.out] = js.native
+    var out: js.UndefOr[typings.tsutils.tsutilsStrings.out] = js.undefined
     
-    var outDir: js.UndefOr[typings.tsutils.tsutilsStrings.outDir] = js.native
+    var outDir: js.UndefOr[typings.tsutils.tsutilsStrings.outDir] = js.undefined
     
-    var outFile: js.UndefOr[typings.tsutils.tsutilsStrings.outFile] = js.native
+    var outFile: js.UndefOr[typings.tsutils.tsutilsStrings.outFile] = js.undefined
     
-    var paths: js.UndefOr[typings.tsutils.tsutilsStrings.paths] = js.native
+    var paths: js.UndefOr[typings.tsutils.tsutilsStrings.paths] = js.undefined
     
-    var preserveConstEnums: js.UndefOr[typings.tsutils.tsutilsStrings.preserveConstEnums] = js.native
+    var preserveConstEnums: js.UndefOr[typings.tsutils.tsutilsStrings.preserveConstEnums] = js.undefined
     
-    var preserveSymlinks: js.UndefOr[typings.tsutils.tsutilsStrings.preserveSymlinks] = js.native
+    var preserveSymlinks: js.UndefOr[typings.tsutils.tsutilsStrings.preserveSymlinks] = js.undefined
     
-    var project: js.UndefOr[typings.tsutils.tsutilsStrings.project] = js.native
+    var project: js.UndefOr[typings.tsutils.tsutilsStrings.project] = js.undefined
     
-    var reactNamespace: js.UndefOr[typings.tsutils.tsutilsStrings.reactNamespace] = js.native
+    var reactNamespace: js.UndefOr[typings.tsutils.tsutilsStrings.reactNamespace] = js.undefined
     
-    var removeComments: js.UndefOr[typings.tsutils.tsutilsStrings.removeComments] = js.native
+    var removeComments: js.UndefOr[typings.tsutils.tsutilsStrings.removeComments] = js.undefined
     
-    var resolveJsonModule: js.UndefOr[typings.tsutils.tsutilsStrings.resolveJsonModule] = js.native
+    var resolveJsonModule: js.UndefOr[typings.tsutils.tsutilsStrings.resolveJsonModule] = js.undefined
     
-    var rootDir: js.UndefOr[typings.tsutils.tsutilsStrings.rootDir] = js.native
+    var rootDir: js.UndefOr[typings.tsutils.tsutilsStrings.rootDir] = js.undefined
     
-    var rootDirs: js.UndefOr[typings.tsutils.tsutilsStrings.rootDirs] = js.native
+    var rootDirs: js.UndefOr[typings.tsutils.tsutilsStrings.rootDirs] = js.undefined
     
-    var skipDefaultLibCheck: js.UndefOr[typings.tsutils.tsutilsStrings.skipDefaultLibCheck] = js.native
+    var skipDefaultLibCheck: js.UndefOr[typings.tsutils.tsutilsStrings.skipDefaultLibCheck] = js.undefined
     
-    var skipLibCheck: js.UndefOr[typings.tsutils.tsutilsStrings.skipLibCheck] = js.native
+    var skipLibCheck: js.UndefOr[typings.tsutils.tsutilsStrings.skipLibCheck] = js.undefined
     
-    var sourceMap: js.UndefOr[typings.tsutils.tsutilsStrings.sourceMap] = js.native
+    var sourceMap: js.UndefOr[typings.tsutils.tsutilsStrings.sourceMap] = js.undefined
     
-    var sourceRoot: js.UndefOr[typings.tsutils.tsutilsStrings.sourceRoot] = js.native
+    var sourceRoot: js.UndefOr[typings.tsutils.tsutilsStrings.sourceRoot] = js.undefined
     
-    var strict: js.UndefOr[typings.tsutils.tsutilsStrings.strict] = js.native
+    var strict: js.UndefOr[typings.tsutils.tsutilsStrings.strict] = js.undefined
     
-    var strictBindCallApply: js.UndefOr[typings.tsutils.tsutilsStrings.strictBindCallApply] = js.native
+    var strictBindCallApply: js.UndefOr[typings.tsutils.tsutilsStrings.strictBindCallApply] = js.undefined
     
-    var strictFunctionTypes: js.UndefOr[typings.tsutils.tsutilsStrings.strictFunctionTypes] = js.native
+    var strictFunctionTypes: js.UndefOr[typings.tsutils.tsutilsStrings.strictFunctionTypes] = js.undefined
     
-    var strictNullChecks: js.UndefOr[typings.tsutils.tsutilsStrings.strictNullChecks] = js.native
+    var strictNullChecks: js.UndefOr[typings.tsutils.tsutilsStrings.strictNullChecks] = js.undefined
     
-    var strictPropertyInitialization: js.UndefOr[typings.tsutils.tsutilsStrings.strictPropertyInitialization] = js.native
+    var strictPropertyInitialization: js.UndefOr[typings.tsutils.tsutilsStrings.strictPropertyInitialization] = js.undefined
     
-    var stripInternal: js.UndefOr[typings.tsutils.tsutilsStrings.stripInternal] = js.native
+    var stripInternal: js.UndefOr[typings.tsutils.tsutilsStrings.stripInternal] = js.undefined
     
-    var suppressExcessPropertyErrors: js.UndefOr[typings.tsutils.tsutilsStrings.suppressExcessPropertyErrors] = js.native
+    var suppressExcessPropertyErrors: js.UndefOr[typings.tsutils.tsutilsStrings.suppressExcessPropertyErrors] = js.undefined
     
-    var suppressImplicitAnyIndexErrors: js.UndefOr[typings.tsutils.tsutilsStrings.suppressImplicitAnyIndexErrors] = js.native
+    var suppressImplicitAnyIndexErrors: js.UndefOr[typings.tsutils.tsutilsStrings.suppressImplicitAnyIndexErrors] = js.undefined
     
-    var target: js.UndefOr[typings.tsutils.tsutilsStrings.target] = js.native
+    var target: js.UndefOr[typings.tsutils.tsutilsStrings.target] = js.undefined
     
-    var traceResolution: js.UndefOr[typings.tsutils.tsutilsStrings.traceResolution] = js.native
+    var traceResolution: js.UndefOr[typings.tsutils.tsutilsStrings.traceResolution] = js.undefined
     
-    var tsBuildInfoFile: js.UndefOr[typings.tsutils.tsutilsStrings.tsBuildInfoFile] = js.native
+    var tsBuildInfoFile: js.UndefOr[typings.tsutils.tsutilsStrings.tsBuildInfoFile] = js.undefined
     
-    var typeRoots: js.UndefOr[typings.tsutils.tsutilsStrings.typeRoots] = js.native
+    var typeRoots: js.UndefOr[typings.tsutils.tsutilsStrings.typeRoots] = js.undefined
     
-    var types: js.UndefOr[typings.tsutils.tsutilsStrings.types] = js.native
+    var types: js.UndefOr[typings.tsutils.tsutilsStrings.types] = js.undefined
     
-    var useDefineForClassFields: js.UndefOr[typings.tsutils.tsutilsStrings.useDefineForClassFields] = js.native
+    var useDefineForClassFields: js.UndefOr[typings.tsutils.tsutilsStrings.useDefineForClassFields] = js.undefined
   }
   object KinkeyofCompilerOptionsNo {
     
@@ -1355,10 +1358,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: Identifier = js.native
+    var name: Identifier
   }
   object Name {
     
@@ -1377,70 +1379,69 @@ object anon {
   }
   
   /* Inlined typescript.typescript.TypeReference & {  target :typescript.typescript.TupleType} */
-  @js.native
   trait TypeReferencetargetTupleT extends StObject {
     
-    var aliasSymbol: js.UndefOr[typings.typescript.mod.Symbol] = js.native
+    var aliasSymbol: js.UndefOr[typings.typescript.mod.Symbol] = js.undefined
     
-    var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.native
+    var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined
     
-    var flags: TypeFlags = js.native
+    var flags: TypeFlags
     
-    def getApparentProperties(): js.Array[typings.typescript.mod.Symbol] = js.native
+    def getApparentProperties(): js.Array[typings.typescript.mod.Symbol]
     
-    def getBaseTypes(): js.UndefOr[js.Array[BaseType]] = js.native
+    def getBaseTypes(): js.UndefOr[js.Array[BaseType]]
     
-    def getCallSignatures(): js.Array[Signature] = js.native
+    def getCallSignatures(): js.Array[Signature]
     
-    def getConstraint(): js.UndefOr[Type] = js.native
+    def getConstraint(): js.UndefOr[Type]
     
-    def getConstructSignatures(): js.Array[Signature] = js.native
+    def getConstructSignatures(): js.Array[Signature]
     
-    def getDefault(): js.UndefOr[Type] = js.native
+    def getDefault(): js.UndefOr[Type]
     
-    def getFlags(): TypeFlags = js.native
+    def getFlags(): TypeFlags
     
-    def getNonNullableType(): Type = js.native
+    def getNonNullableType(): Type
     
-    def getNumberIndexType(): js.UndefOr[Type] = js.native
+    def getNumberIndexType(): js.UndefOr[Type]
     
-    def getProperties(): js.Array[typings.typescript.mod.Symbol] = js.native
+    def getProperties(): js.Array[typings.typescript.mod.Symbol]
     
-    def getProperty(propertyName: String): js.UndefOr[typings.typescript.mod.Symbol] = js.native
+    def getProperty(propertyName: String): js.UndefOr[typings.typescript.mod.Symbol]
     
-    def getStringIndexType(): js.UndefOr[Type] = js.native
+    def getStringIndexType(): js.UndefOr[Type]
     
-    def getSymbol(): js.UndefOr[typings.typescript.mod.Symbol] = js.native
+    def getSymbol(): js.UndefOr[typings.typescript.mod.Symbol]
     
-    def isClass(): /* is typescript.typescript.InterfaceType */ Boolean = js.native
+    def isClass(): /* is typescript.typescript.InterfaceType */ Boolean
     
-    def isClassOrInterface(): /* is typescript.typescript.InterfaceType */ Boolean = js.native
+    def isClassOrInterface(): /* is typescript.typescript.InterfaceType */ Boolean
     
-    def isIntersection(): /* is typescript.typescript.IntersectionType */ Boolean = js.native
+    def isIntersection(): /* is typescript.typescript.IntersectionType */ Boolean
     
-    def isLiteral(): /* is typescript.typescript.LiteralType */ Boolean = js.native
+    def isLiteral(): /* is typescript.typescript.LiteralType */ Boolean
     
-    def isNumberLiteral(): /* is typescript.typescript.NumberLiteralType */ Boolean = js.native
+    def isNumberLiteral(): /* is typescript.typescript.NumberLiteralType */ Boolean
     
-    def isStringLiteral(): /* is typescript.typescript.StringLiteralType */ Boolean = js.native
+    def isStringLiteral(): /* is typescript.typescript.StringLiteralType */ Boolean
     
-    def isTypeParameter(): /* is typescript.typescript.TypeParameter */ Boolean = js.native
+    def isTypeParameter(): /* is typescript.typescript.TypeParameter */ Boolean
     
-    def isUnion(): /* is typescript.typescript.UnionType */ Boolean = js.native
+    def isUnion(): /* is typescript.typescript.UnionType */ Boolean
     
-    def isUnionOrIntersection(): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = js.native
+    def isUnionOrIntersection(): /* is typescript.typescript.UnionOrIntersectionType */ Boolean
     
-    var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.native
+    var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
     
-    var objectFlags: ObjectFlags = js.native
+    var objectFlags: ObjectFlags
     
-    var pattern: js.UndefOr[DestructuringPattern] = js.native
+    var pattern: js.UndefOr[DestructuringPattern] = js.undefined
     
-    var symbol: typings.typescript.mod.Symbol = js.native
+    var symbol: typings.typescript.mod.Symbol
     
-    var target: GenericType with TupleType = js.native
+    var target: GenericType & TupleType
     
-    var typeArguments: js.UndefOr[js.Array[Type]] = js.native
+    var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
   }
   object TypeReferencetargetTupleT {
     
@@ -1471,7 +1472,7 @@ object anon {
       isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
       objectFlags: ObjectFlags,
       symbol: typings.typescript.mod.Symbol,
-      target: GenericType with TupleType
+      target: GenericType & TupleType
     ): TypeReferencetargetTupleT = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeReferencetargetTupleT]
@@ -1583,7 +1584,7 @@ object anon {
       def setSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTarget(value: GenericType with TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      def setTarget(value: GenericType & TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
@@ -1597,360 +1598,359 @@ object anon {
   }
   
   /* Inlined {[ _ in keyof typescript.typescript.CompilerOptions ]: infer U} */
-  @js.native
   trait inkeyofCompilerOptionsinf extends StObject {
     
     var allowJs: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var allowSyntheticDefaultImports: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var allowUmdGlobalAccess: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var allowUnreachableCode: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var allowUnusedLabels: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var alwaysStrict: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var baseUrl: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var charset: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var checkJs: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var composite: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var declaration: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var declarationDir: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var declarationMap: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var disableReferencedProjectLoad: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var disableSizeLimit: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var disableSolutionSearching: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var disableSourceOfProjectReferenceRedirect: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var downlevelIteration: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var emitBOM: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var emitDeclarationOnly: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var emitDecoratorMetadata: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var esModuleInterop: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var experimentalDecorators: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var forceConsistentCasingInFileNames: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var importHelpers: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var importsNotUsedAsValues: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var incremental: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var inlineSourceMap: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var inlineSources: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var isolatedModules: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var jsx: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var jsxFactory: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var jsxFragmentFactory: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var jsxImportSource: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var keyofStringsOnly: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var lib: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var locale: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var mapRoot: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var maxNodeModuleJsDepth: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var module: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var moduleResolution: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var newLine: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noEmit: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noEmitHelpers: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noEmitOnError: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noErrorTruncation: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noFallthroughCasesInSwitch: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noImplicitAny: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noImplicitReturns: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noImplicitThis: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noImplicitUseStrict: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noLib: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noResolve: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noStrictGenericChecks: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noUncheckedIndexedAccess: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noUnusedLocals: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var noUnusedParameters: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var out: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var outDir: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var outFile: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var paths: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var preserveConstEnums: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var preserveSymlinks: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var project: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var reactNamespace: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var removeComments: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var resolveJsonModule: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var rootDir: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var rootDirs: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var skipDefaultLibCheck: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var skipLibCheck: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var sourceMap: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var sourceRoot: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var strict: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var strictBindCallApply: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var strictFunctionTypes: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var strictNullChecks: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var strictPropertyInitialization: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var stripInternal: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var suppressExcessPropertyErrors: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var suppressImplicitAnyIndexErrors: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var target: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var traceResolution: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var tsBuildInfoFile: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var typeRoots: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var types: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var useDefineForClassFields: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object inkeyofCompilerOptionsinf {
     

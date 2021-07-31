@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait UserProfile extends StObject {
   
   /**
@@ -55,7 +53,7 @@ trait UserProfile extends StObject {
     *   </tr>
     * </table>
     */
-  var accountType: String = js.native
+  var accountType: String
   
   /**
     * Gets the user's display name.
@@ -66,7 +64,7 @@ trait UserProfile extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Gets the user's SMTP email address.
@@ -77,7 +75,7 @@ trait UserProfile extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var emailAddress: String = js.native
+  var emailAddress: String
   
   /**
     * Gets the user's time zone in Windows format.
@@ -90,7 +88,7 @@ trait UserProfile extends StObject {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var timeZone: String = js.native
+  var timeZone: String
 }
 object UserProfile {
   

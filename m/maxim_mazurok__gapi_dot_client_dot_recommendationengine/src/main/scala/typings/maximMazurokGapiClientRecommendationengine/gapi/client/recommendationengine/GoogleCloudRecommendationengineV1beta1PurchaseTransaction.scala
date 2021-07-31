@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject {
   
   /**
@@ -17,27 +15,27 @@ trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject
   var costs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. Currency code. Use three-character ISO-4217 code. This field is not required if the event type is `refund`. */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /** Optional. The transaction ID with a length limit of 128 bytes. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Total revenue or grand total associated with the transaction. This value include shipping, tax, or other adjustments to total revenue that you want to include as part of
     * your revenue calculations. This field is not required if the event type is `refund`.
     */
-  var revenue: js.UndefOr[Double] = js.native
+  var revenue: js.UndefOr[Double] = js.undefined
   
   /** Optional. All the taxes associated with the transaction. */
   var taxes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
   
@@ -54,7 +52,7 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
     def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -82,7 +80,7 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
     def setTaxes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
     ): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -4,24 +4,23 @@ import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathSupportOption
-  extends BaseSupportOption[path]
+  extends StObject
+     with BaseSupportOption[path]
      with _SupportOption {
   
-  var default: String = js.native
+  var default: String
   
-  var array: js.UndefOr[`false`] = js.native
+  var array: js.UndefOr[`false`] = js.undefined
 }
 object PathSupportOption {
   
   @scala.inline
-  def apply(category: String, default: String, since: String, `type`: path): PathSupportOption = {
+  def apply(category: String, default: String, since: String): PathSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PathSupportOption]
   }
   

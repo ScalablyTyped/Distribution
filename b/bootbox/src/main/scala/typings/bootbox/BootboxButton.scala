@@ -2,17 +2,15 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootboxButton extends StObject {
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object BootboxButton {
   
@@ -26,7 +24,7 @@ object BootboxButton {
   implicit class BootboxButtonMutableBuilder[Self <: BootboxButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

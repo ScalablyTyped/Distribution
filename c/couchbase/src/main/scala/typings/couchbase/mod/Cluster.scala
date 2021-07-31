@@ -2,7 +2,6 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Cluster () extends StObject {
   def this(cnstr: String) = this()
-  def this(cnstr: js.UndefOr[scala.Nothing], options: ClusterConstructorOptions) = this()
   def this(cnstr: String, options: ClusterConstructorOptions) = this()
+  def this(cnstr: Unit, options: ClusterConstructorOptions) = this()
   
   /**
     * Authenticate to the cluster using a specific authentication type.
@@ -48,13 +47,13 @@ class Cluster () extends StObject {
     * @param name The name of the bucket to open.
     */
   def openBucket(): Bucket = js.native
-  def openBucket(name: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
-  def openBucket(name: js.UndefOr[scala.Nothing], password: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
-  def openBucket(name: js.UndefOr[scala.Nothing], password: String): Bucket = js.native
-  def openBucket(name: js.UndefOr[scala.Nothing], password: String, callback: js.Function): Bucket = js.native
   def openBucket(name: String): Bucket = js.native
   def openBucket(name: String, callback: js.Function): Bucket = js.native
-  def openBucket(name: String, password: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
   def openBucket(name: String, password: String): Bucket = js.native
   def openBucket(name: String, password: String, callback: js.Function): Bucket = js.native
+  def openBucket(name: String, password: Unit, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, password: String): Bucket = js.native
+  def openBucket(name: Unit, password: String, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, password: Unit, callback: js.Function): Bucket = js.native
 }

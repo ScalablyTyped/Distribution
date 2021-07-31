@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpansionFilesUploadResponse extends StObject {
   
   /** The uploaded expansion file configuration. */
-  var expansionFile: js.UndefOr[ExpansionFile] = js.native
+  var expansionFile: js.UndefOr[ExpansionFile] = js.undefined
 }
 object ExpansionFilesUploadResponse {
   

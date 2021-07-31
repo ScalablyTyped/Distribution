@@ -9,34 +9,33 @@ import typings.iron.ironStrings.sha256
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("iron", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("iron", "algorithms")
   @js.native
   val algorithms: Algorithms_ = js.native
   
-  @JSImport("iron", "decrypt")
-  @js.native
-  def decrypt(password: String, options: GenerateKeyOptions, data: String): js.Promise[Buffer] = js.native
+  @scala.inline
+  def decrypt(password: String, options: GenerateKeyOptions, data: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   @JSImport("iron", "defaults")
   @js.native
   val defaults: SealOptions = js.native
   
-  @JSImport("iron", "encrypt")
-  @js.native
-  def encrypt(password: String, options: GenerateKeyOptions, data: String): js.Promise[Data] = js.native
+  @scala.inline
+  def encrypt(password: String, options: GenerateKeyOptions, data: String): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
   
-  @JSImport("iron", "generateKey")
-  @js.native
-  def generateKey(password: String, options: GenerateKeyOptions): js.Promise[Key] = js.native
+  @scala.inline
+  def generateKey(password: String, options: GenerateKeyOptions): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
-  @JSImport("iron", "hmacWithPassword")
-  @js.native
-  def hmacWithPassword(password: String, options: GenerateKeyOptions, data: String): js.Promise[HMacResult] = js.native
+  @scala.inline
+  def hmacWithPassword(password: String, options: GenerateKeyOptions, data: String): js.Promise[HMacResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacWithPassword")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HMacResult]]
   
   @JSImport("iron", "macFormatVersion")
   @js.native
@@ -46,22 +45,19 @@ object mod {
   @js.native
   val macPrefix: String = js.native
   
-  @JSImport("iron", "seal")
-  @js.native
-  def seal(obj: js.Object, password: String, options: SealOptions): js.Promise[String] = js.native
+  @scala.inline
+  def seal(obj: js.Object, password: String, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("iron", "unseal")
-  @js.native
-  def unseal(data: String, password: String, options: SealOptions): js.Promise[js.Object] = js.native
+  @scala.inline
+  def unseal(data: String, password: String, options: SealOptions): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(data.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @js.native
   trait Algorithms_ extends StObject {
     
-    var `aes-128-ctr`: IvBits = js.native
+    var `aes-128-ctr`: IvBits
     
-    var `aes-256-cbc`: IvBits = js.native
+    var `aes-256-cbc`: IvBits
     
-    var sha256: KeyBits = js.native
+    var sha256: KeyBits
   }
   object Algorithms_ {
     
@@ -88,20 +84,19 @@ object mod {
   }
   
   /* Inlined parent std.Pick<iron.iron.SealOptionsSub, 'algorithm' | 'iterations' | 'minPasswordlength'> */
-  @js.native
   trait GenerateKeyOptions extends StObject {
     
-    var algorithm: `aes-128-ctr` | `aes-256-cbc` | sha256 = js.native
+    var algorithm: `aes-128-ctr` | `aes-256-cbc` | sha256
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var iv: js.UndefOr[String] = js.native
+    var iv: js.UndefOr[String] = js.undefined
     
-    var minPasswordlength: Double = js.native
+    var minPasswordlength: Double
     
-    var salt: js.UndefOr[String] = js.native
+    var salt: js.UndefOr[String] = js.undefined
     
-    var saltBits: js.UndefOr[Double] = js.native
+    var saltBits: js.UndefOr[Double] = js.undefined
   }
   object GenerateKeyOptions {
     
@@ -143,12 +138,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HMacResult extends StObject {
     
-    var digest: String = js.native
+    var digest: String
     
-    var salt: String = js.native
+    var salt: String
   }
   object HMacResult {
     
@@ -169,14 +163,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var iv: String = js.native
+    var iv: String
     
-    var key: Buffer = js.native
+    var key: Buffer
     
-    var salt: String = js.native
+    var salt: String
   }
   object Key {
     
@@ -200,33 +193,32 @@ object mod {
     }
   }
   
-  @js.native
   trait SealOptions extends StObject {
     
     /**
       * defines the options used by the encryption process.
       */
-    var encryption: SealOptionsSub = js.native
+    var encryption: SealOptionsSub
     
     /**
       * defines the options used by the HMAC integrity verification process.
       */
-    var integrity: SealOptionsSub = js.native
+    var integrity: SealOptionsSub
     
     /**
       * local clock time offset, expressed in number of milliseconds (positive or negative). Defaults to 0.
       */
-    var localtimeOffsetMsec: Double = js.native
+    var localtimeOffsetMsec: Double
     
     /**
       * number of seconds of permitted clock skew for incoming expirations. Defaults to 60 seconds.
       */
-    var timestampSkewSec: Double = js.native
+    var timestampSkewSec: Double
     
     /**
       * sealed object lifetime in milliseconds where 0 means forever. Defaults to 0.
       */
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object SealOptions {
     
@@ -262,29 +254,28 @@ object mod {
     }
   }
   
-  @js.native
   trait SealOptionsSub extends StObject {
     
     /**
       * the algorithm used ('aes-256-cbc' for encryption and 'sha256' for integrity are the only two supported at this time).
       */
-    var algorithm: `aes-128-ctr` | `aes-256-cbc` | sha256 = js.native
+    var algorithm: `aes-128-ctr` | `aes-256-cbc` | sha256
     
     /**
       * the number of iterations used to derive a key from the password. Set to 1 by default. The number of ideal iterations
       * to use is dependent on your application's performance requirements. More iterations means it takes longer to generate the key.
       */
-    var iterations: Double = js.native
+    var iterations: Double
     
     /**
       * minimum password size
       */
-    var minPasswordlength: Double = js.native
+    var minPasswordlength: Double
     
     /**
       * the size of the salt (random buffer used to ensure that two identical objects will generate a different encrypted result.
       */
-    var saltBits: Double = js.native
+    var saltBits: Double
   }
   object SealOptionsSub {
     

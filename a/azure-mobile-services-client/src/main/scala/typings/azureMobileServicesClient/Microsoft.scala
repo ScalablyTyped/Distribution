@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Microsoft {
@@ -24,7 +23,7 @@ object Microsoft {
       def read(): asyncPromise = js.native
       def read(paramsQS: js.Object): asyncPromise = js.native
       
-      def select(funcProjectionFromThis: js.Function0[_]): IQuery = js.native
+      def select(funcProjectionFromThis: js.Function0[js.Any]): IQuery = js.native
       def select(propNameSelected: String*): IQuery = js.native
       
       def skip(n: Double): IQuery = js.native
@@ -35,16 +34,15 @@ object Microsoft {
       def where(mapObjFilterCriteria: js.Any): IQuery = js.native
     }
     
-    @js.native
     trait InvokeApiOptions extends StObject {
       
-      var body: js.UndefOr[js.Any] = js.native
+      var body: js.UndefOr[js.Any] = js.undefined
       
-      var headers: js.UndefOr[js.Object] = js.native
+      var headers: js.UndefOr[js.Object] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var parameters: js.UndefOr[js.Object] = js.native
+      var parameters: js.UndefOr[js.Object] = js.undefined
     }
     object InvokeApiOptions {
       
@@ -86,7 +84,8 @@ object Microsoft {
     // MobileServiceClient object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554219.aspx
     @js.native
     trait MobileServiceClient
-      extends Instantiable1[/* applicationUrl */ String, MobileServiceClient]
+      extends StObject
+         with Instantiable1[/* applicationUrl */ String, MobileServiceClient]
          with Instantiable2[/* applicationUrl */ String, /* applicationKey */ String, MobileServiceClient] {
       
       var applicationKey: String = js.native
@@ -111,7 +110,7 @@ object Microsoft {
       def invokeApi(apiName: String): asyncPromise = js.native
       def invokeApi(
         apiName: String,
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
       ): asyncPromise = js.native
       def invokeApi(apiName: String, options: InvokeApiOptions): asyncPromise = js.native
@@ -148,7 +147,8 @@ object Microsoft {
     // MobileServiceTable object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554239.aspx
     @js.native
     trait MobileServiceTable
-      extends IQuery
+      extends StObject
+         with IQuery
          with Instantiable2[/* tableName */ String, /* client */ MobileServiceClient, MobileServiceTable] {
       
       def del(instance: js.Any): asyncPromise = js.native
@@ -168,7 +168,7 @@ object Microsoft {
       def insert(
         instance: js.Any,
         paramsQS: js.Object,
-        callback: js.Function2[/* error */ js.Any, /* retInserted */ js.Any, _]
+        callback: js.Function2[/* error */ js.Any, /* retInserted */ js.Any, js.Any]
       ): Unit = js.native
       
       def lookup(id: Double): asyncPromise = js.native
@@ -176,7 +176,7 @@ object Microsoft {
       def lookup(
         id: Double,
         paramsQS: js.Object,
-        callback: js.Function2[/* error */ js.Any, /* retValue */ js.Any, _]
+        callback: js.Function2[/* error */ js.Any, /* retValue */ js.Any, js.Any]
       ): Unit = js.native
       
       def read(query: IQuery): asyncPromise = js.native
@@ -184,7 +184,7 @@ object Microsoft {
       def read(
         query: IQuery,
         paramsQS: js.Object,
-        callback: js.Function2[/* error */ js.Any, /* retValues */ js.Any, _]
+        callback: js.Function2[/* error */ js.Any, /* retValues */ js.Any, js.Any]
       ): Unit = js.native
       
       def update(instance: js.Any): asyncPromise = js.native
@@ -192,7 +192,7 @@ object Microsoft {
       def update(
         instance: js.Any,
         paramsQS: js.Object,
-        callback: js.Function2[/* error */ js.Any, /* retUpdated */ js.Any, _]
+        callback: js.Function2[/* error */ js.Any, /* retUpdated */ js.Any, js.Any]
       ): Unit = js.native
     }
     
@@ -209,40 +209,35 @@ object Microsoft {
         * @param callback Optional callback accepting (error, results) parameters.
         */
       def register(platform: String, pushChannel: String): Unit = js.native
-      def register(
-        platform: String,
-        pushChannel: String,
-        templates: js.UndefOr[scala.Nothing],
-        secondaryTiles: js.UndefOr[scala.Nothing],
-        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
-      ): Unit = js.native
-      def register(
-        platform: String,
-        pushChannel: String,
-        templates: js.UndefOr[scala.Nothing],
-        secondaryTiles: js.Any
-      ): Unit = js.native
-      def register(
-        platform: String,
-        pushChannel: String,
-        templates: js.UndefOr[scala.Nothing],
-        secondaryTiles: js.Any,
-        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
-      ): Unit = js.native
       def register(platform: String, pushChannel: String, templates: js.Any): Unit = js.native
-      def register(
-        platform: String,
-        pushChannel: String,
-        templates: js.Any,
-        secondaryTiles: js.UndefOr[scala.Nothing],
-        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
-      ): Unit = js.native
       def register(platform: String, pushChannel: String, templates: js.Any, secondaryTiles: js.Any): Unit = js.native
       def register(
         platform: String,
         pushChannel: String,
         templates: js.Any,
         secondaryTiles: js.Any,
+        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+      ): Unit = js.native
+      def register(
+        platform: String,
+        pushChannel: String,
+        templates: js.Any,
+        secondaryTiles: Unit,
+        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+      ): Unit = js.native
+      def register(platform: String, pushChannel: String, templates: Unit, secondaryTiles: js.Any): Unit = js.native
+      def register(
+        platform: String,
+        pushChannel: String,
+        templates: Unit,
+        secondaryTiles: js.Any,
+        callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+      ): Unit = js.native
+      def register(
+        platform: String,
+        pushChannel: String,
+        templates: Unit,
+        secondaryTiles: Unit,
         callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
       ): Unit = js.native
       
@@ -257,21 +252,20 @@ object Microsoft {
     }
     
     // User object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554220.aspx
-    @js.native
     trait User extends StObject {
       
       // { [providerName: string]: { userId: string, accessToken: string, accessTokenSecret?: string }; };
-      var accessTokens: js.Any = js.native
+      var accessTokens: js.Any
       
-      def getIdentities(): js.Any = js.native
+      def getIdentities(): js.Any
       
       // { [providerName: string]: string; }
-      var level: String = js.native
+      var level: String
       
-      var mobileServiceAuthenticationToken: String = js.native
+      var mobileServiceAuthenticationToken: String
       
       //for level:string use one of LevelEnum: 'admin','anonymous','authenticated'
-      var userId: String = js.native
+      var userId: String
     }
     object User {
       
@@ -307,10 +301,9 @@ object Microsoft {
       }
     }
     
-    @js.native
     trait WindowsAzureStatic extends StObject {
       
-      var MobileServiceClient: typings.azureMobileServicesClient.Microsoft.WindowsAzure.MobileServiceClient = js.native
+      var MobileServiceClient: typings.azureMobileServicesClient.Microsoft.WindowsAzure.MobileServiceClient
     }
     object WindowsAzureStatic {
       
@@ -333,15 +326,18 @@ object Microsoft {
     trait asyncPromise extends StObject {
       
       def done(): Unit = js.native
-      def done(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
       def done(onSuccess: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
       def done(
         onSuccess: js.Function1[/* result */ js.Any, Unit],
         onError: js.Function1[/* error */ js.Any, Unit]
       ): Unit = js.native
+      def done(onSuccess: Unit, onError: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
       
-      def `then`(onSuccess: js.Function1[/* result */ js.Any, _]): asyncPromise = js.native
-      def `then`(onSuccess: js.Function1[/* result */ js.Any, _], onError: js.Function1[/* error */ js.Any, _]): asyncPromise = js.native
+      def `then`(onSuccess: js.Function1[/* result */ js.Any, js.Any]): asyncPromise = js.native
+      def `then`(
+        onSuccess: js.Function1[/* result */ js.Any, js.Any],
+        onError: js.Function1[/* error */ js.Any, js.Any]
+      ): asyncPromise = js.native
     }
   }
 }

@@ -10,19 +10,17 @@ import typings.tensorflowTfjsCore.distTensorMod.Variable
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorTypesMod {
   
   type GradSaveFunc = js.Function1[/* save */ js.Array[Tensor[Rank]], Unit]
   
-  @js.native
   trait NamedTensor extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var tensor: Tensor[Rank] = js.native
+    var tensor: Tensor[Rank]
   }
   object NamedTensor {
     
@@ -63,12 +61,13 @@ object tensorTypesMod {
   
   @js.native
   trait TensorContainerArray
-    extends Array[TensorContainer]
+    extends StObject
+       with Array[TensorContainer]
        with _TensorContainer
   
-  @js.native
   trait TensorContainerObject
-    extends /* x */ StringDictionary[TensorContainer]
+    extends StObject
+       with /* x */ StringDictionary[TensorContainer]
        with _TensorContainer
   object TensorContainerObject {
     

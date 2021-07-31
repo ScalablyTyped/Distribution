@@ -12,7 +12,6 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequence of event fields and provides methods for adding fields to the sequence. */

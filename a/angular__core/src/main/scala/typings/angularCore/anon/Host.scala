@@ -5,17 +5,15 @@ import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Host extends StObject {
   
-  var host: CompilerHost = js.native
+  var host: CompilerHost
   
-  var parsed: ParsedCommandLine = js.native
+  var parsed: ParsedCommandLine
   
-  var program: Program = js.native
+  var program: Program
 }
 object Host {
   

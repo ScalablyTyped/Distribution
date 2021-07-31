@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Response_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Response () extends StObject {
   def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Response_[_]) = this()
+  def this(options: Response_[js.Any]) = this()
   
   var body: js.UndefOr[js.Any] = js.native
   

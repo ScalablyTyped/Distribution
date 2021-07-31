@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceTypeInferenceAccelerator extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var name: String = js.native
+  var name: String
 }
 object GetInstanceTypeInferenceAccelerator {
   

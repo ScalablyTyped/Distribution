@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type SD<K extends ResourceConstant> = {
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //   energy: number;
 // }
 /* Inlined std.Partial<std.Record<screeps.ExitKey, string>> */
-@js.native
 trait ExitsInformation extends StObject {
   
-  var `1`: js.UndefOr[String] = js.native
+  var `1`: js.UndefOr[String] = js.undefined
   
-  var `3`: js.UndefOr[String] = js.native
+  var `3`: js.UndefOr[String] = js.undefined
   
-  var `5`: js.UndefOr[String] = js.native
+  var `5`: js.UndefOr[String] = js.undefined
   
-  var `7`: js.UndefOr[String] = js.native
+  var `7`: js.UndefOr[String] = js.undefined
 }
 object ExitsInformation {
   

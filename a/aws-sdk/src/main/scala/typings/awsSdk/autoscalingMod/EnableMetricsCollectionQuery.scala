@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableMetricsCollectionQuery extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The granularity to associate with the metrics to collect. The only valid value is 1Minute.
     */
-  var Granularity: XmlStringMaxLen255 = js.native
+  var Granularity: XmlStringMaxLen255
   
   /**
     * Specifies which group-level metrics to start collecting. You can specify one or more of the following metrics:    GroupMinSize     GroupMaxSize     GroupDesiredCapacity     GroupInServiceInstances     GroupPendingInstances     GroupStandbyInstances     GroupTerminatingInstances     GroupTotalInstances    The instance weighting feature supports the following additional metrics:     GroupInServiceCapacity     GroupPendingCapacity     GroupStandbyCapacity     GroupTerminatingCapacity     GroupTotalCapacity    If you omit this parameter, all metrics are enabled. 
     */
-  var Metrics: js.UndefOr[typings.awsSdk.autoscalingMod.Metrics] = js.native
+  var Metrics: js.UndefOr[typings.awsSdk.autoscalingMod.Metrics] = js.undefined
 }
 object EnableMetricsCollectionQuery {
   

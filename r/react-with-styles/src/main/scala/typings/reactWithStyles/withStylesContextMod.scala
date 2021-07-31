@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.reactWithStyles.anon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withStylesContextMod extends Shortcut {

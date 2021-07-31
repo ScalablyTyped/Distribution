@@ -2,29 +2,27 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
   */
-@js.native
 trait ApplePayError extends StObject {
   
   /**
     * The error code for this instance.
     */
-  var code: ApplePayErrorCode = js.native
+  var code: ApplePayErrorCode
   
   /**
     * The name of the field that contains the error.
     */
-  var contactField: js.UndefOr[ApplePayErrorContactField] = js.native
+  var contactField: js.UndefOr[ApplePayErrorContactField] = js.undefined
   
   /**
     * A localized, user-facing string that describes the error.
     */
-  var message: String = js.native
+  var message: String
 }
 object ApplePayError {
   

@@ -6,10 +6,13 @@ import typings.firebaseDatabase.transportMod.Transport
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webSocketConnectionMod {
+  
+  @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection")
   @js.native
@@ -24,24 +27,12 @@ object webSocketConnectionMod {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
-    def this(
-      connId: String,
-      repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
-      transportSessionId: String
-    ) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: Unit, transportSessionId: String) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
-      transportSessionId: js.UndefOr[scala.Nothing],
-      lastSessionId: String
-    ) = this()
-    def this(
-      connId: String,
-      repoInfo: RepoInfo,
-      applicationId: js.UndefOr[scala.Nothing],
+      applicationId: String,
       transportSessionId: String,
       lastSessionId: String
     ) = this()
@@ -49,14 +40,21 @@ object webSocketConnectionMod {
       connId: String,
       repoInfo: RepoInfo,
       applicationId: String,
-      transportSessionId: js.UndefOr[scala.Nothing],
+      transportSessionId: Unit,
       lastSessionId: String
     ) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
-      applicationId: String,
+      applicationId: Unit,
       transportSessionId: String,
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: Unit,
+      transportSessionId: Unit,
       lastSessionId: String
     ) = this()
     
@@ -148,9 +146,8 @@ object webSocketConnectionMod {
     @scala.inline
     def connectionURL__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionURL_")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.forceDisallow")
-    @js.native
-    def forceDisallow(): Unit = js.native
+    @scala.inline
+    def forceDisallow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDisallow")().asInstanceOf[Unit]
     
     @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.forceDisallow_")
     @js.native
@@ -168,17 +165,15 @@ object webSocketConnectionMod {
     @scala.inline
     def healthyTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("healthyTimeout")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
     
     /**
       * Returns true if we previously failed to connect with this transport.
       * @return {boolean}
       */
-    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.previouslyFailed")
-    @js.native
-    def previouslyFailed(): Boolean = js.native
+    @scala.inline
+    def previouslyFailed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("previouslyFailed")().asInstanceOf[Boolean]
     
     /**
       * Number of response before we consider the connection "healthy."
@@ -191,7 +186,6 @@ object webSocketConnectionMod {
     def responsesRequiredToBeHealthy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responsesRequiredToBeHealthy")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "setWebSocketImpl")
-  @js.native
-  def setWebSocketImpl(impl: js.Any): Unit = js.native
+  @scala.inline
+  def setWebSocketImpl(impl: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebSocketImpl")(impl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

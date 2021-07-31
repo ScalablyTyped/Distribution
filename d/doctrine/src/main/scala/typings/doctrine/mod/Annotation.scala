@@ -2,19 +2,17 @@ package typings.doctrine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a parsed jsdoc comment.
   */
-@js.native
 trait Annotation extends StObject {
   
   /** The overall description of the thing being documented. */
-  var description: String = js.native
+  var description: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
 }
 object Annotation {
   

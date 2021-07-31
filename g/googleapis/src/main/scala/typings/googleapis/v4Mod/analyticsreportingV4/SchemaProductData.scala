@@ -2,35 +2,33 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of the products in an e-commerce transaction.
   */
-@js.native
 trait SchemaProductData extends StObject {
   
   /**
     * The total revenue from purchased product items.
     */
-  var itemRevenue: js.UndefOr[Double] = js.native
+  var itemRevenue: js.UndefOr[Double] = js.undefined
   
   /**
     * The product name, supplied by the e-commerce tracking application, for
     * the purchased items.
     */
-  var productName: js.UndefOr[String] = js.native
+  var productName: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of this product units in the transaction.
     */
-  var productQuantity: js.UndefOr[String] = js.native
+  var productQuantity: js.UndefOr[String] = js.undefined
   
   /**
     * Unique code that represents the product.
     */
-  var productSku: js.UndefOr[String] = js.native
+  var productSku: js.UndefOr[String] = js.undefined
 }
 object SchemaProductData {
   

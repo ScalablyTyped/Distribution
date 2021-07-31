@@ -6,24 +6,23 @@ import typings.storybookReactNative.anon.TransformArray
 import typings.storybookReactNative.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationMod {
   
-  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/animation", "getAddonPanelPosition")
+  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/animation", JSImport.Namespace)
   @js.native
-  def getAddonPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/animation", "getNavigatorPanelPosition")
-  @js.native
-  def getNavigatorPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = js.native
+  @scala.inline
+  def getAddonPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAddonPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
   
-  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/animation", "getPreviewPosition")
-  @js.native
-  def getPreviewPosition(animatedValue: Value, previewWidth: Double, previewHeight: Double, slideBetweenAnimation: Boolean): TransformArray = js.native
+  @scala.inline
+  def getNavigatorPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
   
-  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/animation", "getPreviewScale")
-  @js.native
-  def getPreviewScale(animatedValue: Value, slideBetweenAnimation: Boolean): `0` = js.native
+  @scala.inline
+  def getPreviewPosition(animatedValue: Value, previewWidth: Double, previewHeight: Double, slideBetweenAnimation: Boolean): TransformArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any], previewHeight.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[TransformArray]
+  
+  @scala.inline
+  def getPreviewScale(animatedValue: Value, slideBetweenAnimation: Boolean): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewScale")(animatedValue.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[`0`]
 }

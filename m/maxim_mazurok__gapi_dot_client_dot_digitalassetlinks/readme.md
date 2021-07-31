@@ -10,9 +10,9 @@ TypeScript typings for Digital Asset Links API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.digitalassetlinks |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 56 |
+| # downloads        | 1280 |
 | # stars            | 0 |
 
 ## Links

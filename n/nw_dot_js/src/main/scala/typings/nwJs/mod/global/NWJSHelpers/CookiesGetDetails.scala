@@ -2,29 +2,27 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coockies.get() details argument object
   */
-@js.native
 trait CookiesGetDetails extends StObject {
   
   /**
     * The name of the cookie to retrieve.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The ID of the cookie store in which to look for the cookie.
     */
-  var storeId: String = js.native
+  var storeId: String
   
   /**
     * The URL with which the cookie to retrieve is associated.
     */
-  var url: String = js.native
+  var url: String
 }
 object CookiesGetDetails {
   

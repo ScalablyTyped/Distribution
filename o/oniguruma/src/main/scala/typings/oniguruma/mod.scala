@@ -4,7 +4,6 @@ import typings.oniguruma.anon.CaptureIndexmatchstring
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -156,20 +155,19 @@ object mod {
   
   type Callback[T] = js.Function2[/* error */ Error, /* match */ T, Unit]
   
-  @js.native
   trait CaptureIndex extends StObject {
     
     /** The position in the search string where the capture ends */
-    var end: Double = js.native
+    var end: Double
     
     /** The index of the capturing group, or 0 for a full-string match */
-    var index: Double = js.native
+    var index: Double
     
     /** The total character length of the capture */
-    var length: Double = js.native
+    var length: Double
     
     /** The position in the search string where the capture begins */
-    var start: Double = js.native
+    var start: Double
   }
   object CaptureIndex {
     
@@ -196,14 +194,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Match extends StObject {
     
     /** An array holding all of the captures (full match + capturing groups) */
-    var captureIndices: js.Array[CaptureIndex] = js.native
+    var captureIndices: js.Array[CaptureIndex]
     
     /** The index of the best pattern match */
-    var index: Double = js.native
+    var index: Double
   }
   object Match {
     

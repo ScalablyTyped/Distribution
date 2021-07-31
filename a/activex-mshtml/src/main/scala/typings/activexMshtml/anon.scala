@@ -3,19 +3,17 @@ package typings.activexMshtml
 import typings.activexMshtml.MSHTML.IHTMLEventObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Description extends StObject {
     
-    val description: String = js.native
+    val description: String
     
-    val line: Double = js.native
+    val line: Double
     
-    val url: String = js.native
+    val url: String
   }
   object Description {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EventData extends StObject {
     
-    val eventData: js.Any = js.native
+    val eventData: js.Any
     
-    val name: String = js.native
+    val name: String
   }
   object EventData {
     
@@ -65,10 +62,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PEvtObj extends StObject {
     
-    val pEvtObj: IHTMLEventObj = js.native
+    val pEvtObj: IHTMLEventObj
   }
   object PEvtObj {
     

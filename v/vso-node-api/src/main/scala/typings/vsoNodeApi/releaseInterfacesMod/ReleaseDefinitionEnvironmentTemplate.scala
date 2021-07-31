@@ -2,29 +2,27 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionEnvironmentTemplate extends StObject {
   
-  var canDelete: Boolean = js.native
+  var canDelete: Boolean
   
-  var category: String = js.native
+  var category: String
   
-  var description: String = js.native
+  var description: String
   
-  var environment: ReleaseDefinitionEnvironment = js.native
+  var environment: ReleaseDefinitionEnvironment
   
-  var iconTaskId: String = js.native
+  var iconTaskId: String
   
-  var iconUri: String = js.native
+  var iconUri: String
   
-  var id: String = js.native
+  var id: String
   
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object ReleaseDefinitionEnvironmentTemplate {
   

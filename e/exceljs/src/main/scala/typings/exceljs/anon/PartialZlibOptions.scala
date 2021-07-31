@@ -6,28 +6,26 @@ import typings.std.ArrayBuffer
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.ZlibOptions> */
-@js.native
 trait PartialZlibOptions extends StObject {
   
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var dictionary: js.UndefOr[Buffer | TypedArray | DataView | ArrayBuffer] = js.native
+  var dictionary: js.UndefOr[Buffer | TypedArray | DataView | ArrayBuffer] = js.undefined
   
-  var finishFlush: js.UndefOr[Double] = js.native
+  var finishFlush: js.UndefOr[Double] = js.undefined
   
-  var flush: js.UndefOr[Double] = js.native
+  var flush: js.UndefOr[Double] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var memLevel: js.UndefOr[Double] = js.native
+  var memLevel: js.UndefOr[Double] = js.undefined
   
-  var strategy: js.UndefOr[Double] = js.native
+  var strategy: js.UndefOr[Double] = js.undefined
   
-  var windowBits: js.UndefOr[Double] = js.native
+  var windowBits: js.UndefOr[Double] = js.undefined
 }
 object PartialZlibOptions {
   

@@ -4,7 +4,6 @@ import typings.std.Set
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object productSwitcherMod {
@@ -47,6 +46,6 @@ object productSwitcherMod {
     
     def release(): js.Any = js.native
     
-    var triggerButtonIds: Set[_] = js.native
+    var triggerButtonIds: Set[js.Any] = js.native
   }
 }

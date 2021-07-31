@@ -2,84 +2,68 @@ package typings.reactNativeMixpanel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-mixpanel", "addPushDeviceToken")
+  @JSImport("react-native-mixpanel", JSImport.Namespace)
   @js.native
-  def addPushDeviceToken(token: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-mixpanel", "clearPushRegistrationId")
-  @js.native
-  def clearPushRegistrationId(): Unit = js.native
+  @scala.inline
+  def addPushDeviceToken(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPushDeviceToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "createAlias")
-  @js.native
-  def createAlias(id: String): Unit = js.native
+  @scala.inline
+  def clearPushRegistrationId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPushRegistrationId")().asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "getDistinctId")
-  @js.native
-  def getDistinctId(handler: js.Function1[/* id */ String, Unit]): Unit = js.native
+  @scala.inline
+  def createAlias(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "identify")
-  @js.native
-  def identify(id: String): Unit = js.native
+  @scala.inline
+  def getDistinctId(handler: js.Function1[/* id */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistinctId")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "increment")
-  @js.native
-  def increment(property: String, value: Double): Unit = js.native
+  @scala.inline
+  def identify(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "initPushHandling")
-  @js.native
-  def initPushHandling(token: String): Unit = js.native
+  @scala.inline
+  def increment(property: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "registerSuperProperties")
-  @js.native
-  def registerSuperProperties(property: js.Object): Unit = js.native
+  @scala.inline
+  def initPushHandling(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initPushHandling")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "registerSuperPropertiesOnce")
-  @js.native
-  def registerSuperPropertiesOnce(property: js.Object): Unit = js.native
+  @scala.inline
+  def registerSuperProperties(property: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSuperProperties")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def registerSuperPropertiesOnce(property: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSuperPropertiesOnce")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "set")
-  @js.native
-  def set(property: js.Object): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "setOnce")
-  @js.native
-  def setOnce(property: js.Object): Unit = js.native
+  @scala.inline
+  def set(property: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "setPushRegistrationId")
-  @js.native
-  def setPushRegistrationId(token: String): Unit = js.native
+  @scala.inline
+  def setOnce(property: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnce")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "sharedInstanceWithToken")
-  @js.native
-  def sharedInstanceWithToken(token: String): Unit = js.native
+  @scala.inline
+  def setPushRegistrationId(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushRegistrationId")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "timeEvent")
-  @js.native
-  def timeEvent(event: String): Unit = js.native
+  @scala.inline
+  def sharedInstanceWithToken(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sharedInstanceWithToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "track")
-  @js.native
-  def track(event: String): Unit = js.native
+  @scala.inline
+  def timeEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "trackCharge")
-  @js.native
-  def trackCharge(id: Double): Unit = js.native
+  @scala.inline
+  def track(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "trackChargeWithProperties")
-  @js.native
-  def trackChargeWithProperties(id: Double, property: js.Object): Unit = js.native
+  @scala.inline
+  def trackCharge(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackCharge")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-mixpanel", "trackWithProperties")
-  @js.native
-  def trackWithProperties(event: String, property: js.Object): Unit = js.native
+  @scala.inline
+  def trackChargeWithProperties(id: Double, property: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackChargeWithProperties")(id.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def trackWithProperties(event: String, property: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackWithProperties")(event.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

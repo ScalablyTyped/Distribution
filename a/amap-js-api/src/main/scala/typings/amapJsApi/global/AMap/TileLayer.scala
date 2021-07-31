@@ -3,7 +3,6 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.TileLayer.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.TileLayer")
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options 图层选项
   */
 class TileLayer ()
-  extends typings.amapJsApi.AMap.TileLayer {
+  extends StObject
+     with typings.amapJsApi.AMap.TileLayer {
   def this(options: Options) = this()
 }
 object TileLayer {
@@ -25,7 +25,8 @@ object TileLayer {
     * @param options 图层选项
     */
   class Flexible ()
-    extends typings.amapJsApi.AMap.TileLayer {
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer {
     def this(options: typings.amapJsApi.AMap.TileLayer.Flexible.Options) = this()
   }
   
@@ -35,7 +36,8 @@ object TileLayer {
   @JSGlobal("AMap.TileLayer.RoadNet")
   @js.native
   class RoadNet ()
-    extends typings.amapJsApi.AMap.TileLayer
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer
   
   /**
     * 卫星图层
@@ -43,7 +45,8 @@ object TileLayer {
   @JSGlobal("AMap.TileLayer.Satellite")
   @js.native
   class Satellite ()
-    extends typings.amapJsApi.AMap.TileLayer
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer
   
   @JSGlobal("AMap.TileLayer.Traffic")
   @js.native
@@ -52,14 +55,16 @@ object TileLayer {
     * @param options 图层选项
     */
   class Traffic ()
-    extends typings.amapJsApi.AMap.TileLayer {
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer {
     def this(options: typings.amapJsApi.AMap.TileLayer.Traffic.Options) = this()
   }
   
   @JSGlobal("AMap.TileLayer.WMS")
   @js.native
   class WMS protected ()
-    extends typings.amapJsApi.AMap.TileLayer.WMS {
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer.WMS {
     /**
       * WMS图层
       * @param options 图层选项
@@ -70,7 +75,8 @@ object TileLayer {
   @JSGlobal("AMap.TileLayer.WMTS")
   @js.native
   class WMTS protected ()
-    extends typings.amapJsApi.AMap.TileLayer.WMTS {
+    extends StObject
+       with typings.amapJsApi.AMap.TileLayer.WMTS {
     /**
       * WMTS图层
       * @param options 图层选项

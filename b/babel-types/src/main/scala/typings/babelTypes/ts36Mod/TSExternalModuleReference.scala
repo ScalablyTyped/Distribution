@@ -2,16 +2,16 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TSExternalModuleReference extends Node {
+trait TSExternalModuleReference
+  extends StObject
+     with Node {
   
-  var expression: StringLiteral_ = js.native
+  var expression: StringLiteral_
   
   @JSName("type")
-  var type_TSExternalModuleReference: typings.babelTypes.babelTypesStrings.TSExternalModuleReference = js.native
+  var type_TSExternalModuleReference: typings.babelTypes.babelTypesStrings.TSExternalModuleReference
 }
 object TSExternalModuleReference {
   

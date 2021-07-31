@@ -8,15 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.drawing.FillProperties
 import typings.activexLibreoffice.com_.sun.star.drawing.LineProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a legend for a {@link Diagram} . */
 @js.native
 trait Legend
-  extends PropertySet
+  extends StObject
      with FillProperties
-     with LineProperties {
+     with LineProperties
+     with PropertySet {
   
   /** Provides an automated position */
   var AnchorPosition: LegendPosition = js.native

@@ -3,25 +3,24 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockStatement
-  extends SSRCodegenNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with SSRCodegenNode {
   
-  var body: js.Array[JSChildNode | IfStatement] = js.native
+  var body: js.Array[JSChildNode | IfStatement]
   
   @JSName("type")
-  var type_BlockStatement: `21` = js.native
+  var type_BlockStatement: `21`
 }
 object BlockStatement {
   
   @scala.inline
-  def apply(body: js.Array[JSChildNode | IfStatement], loc: SourceLocation, `type`: `21`): BlockStatement = {
+  def apply(body: js.Array[JSChildNode | IfStatement], loc: SourceLocation): BlockStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(21)
     __obj.asInstanceOf[BlockStatement]
   }
   

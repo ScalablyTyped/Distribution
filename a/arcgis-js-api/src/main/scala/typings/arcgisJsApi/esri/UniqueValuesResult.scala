@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UniqueValuesResult extends Object {
+trait UniqueValuesResult
+  extends StObject
+     with Object {
   
   /**
     * An array of objects, each containing a unique value/type/category present in the field specified in the [uniqueValues()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#uniqueValues) query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#UniqueValuesResult)
     */
-  var uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos] = js.native
+  var uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos]
 }
 object UniqueValuesResult {
   

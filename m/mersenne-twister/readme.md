@@ -11,8 +11,8 @@ Mersenne twister pseudorandom number generator
 | Full name          | mersenne-twister |
 | Keywords           | random, mersenne, twister, mersennetwister, generator, seed |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 3464616 |
+| # dependents       | 67 |
+| # downloads        | 4988918 |
 | # stars            | 3 |
 
 ## Links

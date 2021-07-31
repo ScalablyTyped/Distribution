@@ -2,7 +2,6 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,17 +12,27 @@ sealed trait ReadyState extends StObject
 object ReadyState extends StObject {
   
   @js.native
-  sealed trait Done extends ReadyState
+  sealed trait Done
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait HeadersReceived extends ReadyState
+  sealed trait HeadersReceived
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Loading extends ReadyState
+  sealed trait Loading
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Opened extends ReadyState
+  sealed trait Opened
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Unsent extends ReadyState
+  sealed trait Unsent
+    extends StObject
+       with ReadyState
 }

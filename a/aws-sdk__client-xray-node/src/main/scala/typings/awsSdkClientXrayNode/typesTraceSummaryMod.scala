@@ -12,12 +12,10 @@ import typings.awsSdkClientXrayNode.typesValueWithServiceIdsMod.ValueWithService
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTraceSummaryMod {
   
-  @js.native
   trait TraceSummary extends StObject {
     
     /**
@@ -25,57 +23,57 @@ object typesTraceSummaryMod {
       */
     var Annotations: js.UndefOr[
         (StringDictionary[js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]) | (Iterable[js.Tuple2[String, js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.</p>
       */
-    var Duration: js.UndefOr[Double] = js.native
+    var Duration: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>One or more of the segment documents has a 400 series error.</p>
       */
-    var HasError: js.UndefOr[Boolean] = js.native
+    var HasError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>One or more of the segment documents has a 500 series error.</p>
       */
-    var HasFault: js.UndefOr[Boolean] = js.native
+    var HasFault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>One or more of the segment documents has a 429 throttling error.</p>
       */
-    var HasThrottle: js.UndefOr[Boolean] = js.native
+    var HasThrottle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>Information about the HTTP request served by the trace.</p>
       */
-    var Http: js.UndefOr[typings.awsSdkClientXrayNode.typesHttpMod.Http] = js.native
+    var Http: js.UndefOr[typings.awsSdkClientXrayNode.typesHttpMod.Http] = js.undefined
     
     /**
       * <p>The unique identifier for the request that generated the trace's segments and subsegments.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * <p>One or more of the segment documents is in progress.</p>
       */
-    var IsPartial: js.UndefOr[Boolean] = js.native
+    var IsPartial: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>The length of time in seconds between the start and end times of the root segment. If the service performs work asynchronously, the response time measures the time before the response is sent to the user, while the duration measures the amount of time before the last traced activity completes.</p>
       */
-    var ResponseTime: js.UndefOr[Double] = js.native
+    var ResponseTime: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Service IDs from the trace's segment documents.</p>
       */
-    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.native
+    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.undefined
     
     /**
       * <p>Users from the trace's segment documents.</p>
       */
-    var Users: js.UndefOr[js.Array[TraceUser] | Iterable[TraceUser]] = js.native
+    var Users: js.UndefOr[js.Array[TraceUser] | Iterable[TraceUser]] = js.undefined
   }
   object TraceSummary {
     
@@ -164,32 +162,33 @@ object typesTraceSummaryMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTraceSummary extends TraceSummary {
+  trait UnmarshalledTraceSummary
+    extends StObject
+       with TraceSummary {
     
     /**
       * <p>Annotations from the trace's segment documents.</p>
       */
     @JSName("Annotations")
-    var Annotations_UnmarshalledTraceSummary: js.UndefOr[StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]] = js.native
+    var Annotations_UnmarshalledTraceSummary: js.UndefOr[StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]] = js.undefined
     
     /**
       * <p>Information about the HTTP request served by the trace.</p>
       */
     @JSName("Http")
-    var Http_UnmarshalledTraceSummary: js.UndefOr[UnmarshalledHttp] = js.native
+    var Http_UnmarshalledTraceSummary: js.UndefOr[UnmarshalledHttp] = js.undefined
     
     /**
       * <p>Service IDs from the trace's segment documents.</p>
       */
     @JSName("ServiceIds")
-    var ServiceIds_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.native
+    var ServiceIds_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.undefined
     
     /**
       * <p>Users from the trace's segment documents.</p>
       */
     @JSName("Users")
-    var Users_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledTraceUser]] = js.native
+    var Users_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledTraceUser]] = js.undefined
   }
   object UnmarshalledTraceSummary {
     

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Frame
   * @since OOo 1.1.2
   */
-@js.native
-trait Task extends XTask
+trait Task
+  extends StObject
+     with XTask
 object Task {
   
   @scala.inline

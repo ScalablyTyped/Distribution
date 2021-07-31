@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseRequest
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetEncodedResponseResponse extends StObject {
   
-  var paramsType: js.Array[GetEncodedResponseRequest] = js.native
+  var paramsType: js.Array[GetEncodedResponseRequest]
   
-  var returnType: GetEncodedResponseResponse = js.native
+  var returnType: GetEncodedResponseResponse
 }
 object ReturnTypeGetEncodedResponseResponse {
   

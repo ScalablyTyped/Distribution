@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICallExpression extends IASTSpan {
+trait ICallExpression
+  extends StObject
+     with IASTSpan {
   
-  var argumentList: ArgumentList = js.native
+  var argumentList: ArgumentList
   
-  var expression: AST = js.native
+  var expression: AST
 }
 object ICallExpression {
   

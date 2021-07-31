@@ -5,14 +5,15 @@ import typings.apolloServerCaching.anon.Ttl
 import typings.apolloServerCaching.keyValueCacheMod.TestableKeyValueCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inMemoryLRUCacheMod {
   
   @JSImport("apollo-server-caching/dist/InMemoryLRUCache", "InMemoryLRUCache")
   @js.native
-  class InMemoryLRUCache[V] () extends TestableKeyValueCache[V] {
+  class InMemoryLRUCache[V] ()
+    extends StObject
+       with TestableKeyValueCache[V] {
     def this(hasMaxSizeSizeCalculatorOnDispose: MaxSize[V]) = this()
     
     @JSName("flush")

@@ -2,36 +2,34 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnNumericOptionsMod {
   
-  @js.native
   trait ColumnNumericOptions extends StObject {
     
     /**
       * The precision for a decimal (exact numeric) column (applies only for decimal column), which is the maximum
       * number of digits that are stored for the values.
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * The scale for a decimal (exact numeric) column (applies only for decimal column), which represents the number
       * of digits to the right of the decimal point and must not be greater than precision.
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Puts UNSIGNED attribute on to numeric column. Works only for MySQL.
       */
-    var unsigned: js.UndefOr[Boolean] = js.native
+    var unsigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Puts ZEROFILL attribute on to numeric column. Works only for MySQL.
       * If you specify ZEROFILL for a numeric column, MySQL automatically adds the UNSIGNED attribute to the column
       */
-    var zerofill: js.UndefOr[Boolean] = js.native
+    var zerofill: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnNumericOptions {
     

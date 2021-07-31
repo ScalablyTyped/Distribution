@@ -2,19 +2,17 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestedWarpOutputOptions extends StObject {
   
-  var maxError: js.UndefOr[Double] = js.native
+  var maxError: js.UndefOr[Double] = js.undefined
   
-  var s_srs: SpatialReference = js.native
+  var s_srs: SpatialReference
   
-  var src: Dataset = js.native
+  var src: Dataset
   
-  var t_srs: SpatialReference = js.native
+  var t_srs: SpatialReference
 }
 object SuggestedWarpOutputOptions {
   

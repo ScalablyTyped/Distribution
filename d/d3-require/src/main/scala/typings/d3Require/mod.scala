@@ -4,19 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("d3-require", "RequireError")
   @js.native
-  class RequireError () extends Error
+  class RequireError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @js.native
   trait require extends StObject {
     
-    def apply(name: String, names: String*): js.Promise[_] = js.native
+    def apply(name: String, names: String*): js.Promise[js.Any] = js.native
     
     /**
       * Returns a `require` with the specified *aliases*.

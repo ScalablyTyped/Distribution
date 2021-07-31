@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackInfo extends StObject {
   
   /**
     * The ID of the deployment rollback.
     */
-  var rollbackDeploymentId: js.UndefOr[DeploymentId] = js.native
+  var rollbackDeploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     * Information that describes the status of a deployment rollback (for example, whether the deployment can't be rolled back, is in progress, failed, or succeeded). 
     */
-  var rollbackMessage: js.UndefOr[Description] = js.native
+  var rollbackMessage: js.UndefOr[Description] = js.undefined
   
   /**
     * The deployment ID of the deployment that was underway and triggered a rollback deployment because it failed or was stopped.
     */
-  var rollbackTriggeringDeploymentId: js.UndefOr[DeploymentId] = js.native
+  var rollbackTriggeringDeploymentId: js.UndefOr[DeploymentId] = js.undefined
 }
 object RollbackInfo {
   

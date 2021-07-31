@@ -6,33 +6,29 @@ import typings.reactAliceCarousel.typesMod.Props
 import typings.reactAliceCarousel.typesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  @JSImport("react-alice-carousel/lib/utils/common", "calculateInitialState")
+  @JSImport("react-alice-carousel/lib/utils/common", JSImport.Namespace)
   @js.native
-  def calculateInitialState(props: PartialProps, el: js.Any): State = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-alice-carousel/lib/utils/common", "getIsStageContentPartial")
-  @js.native
-  def getIsStageContentPartial(): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/common", "getIsStageContentPartial")
-  @js.native
-  def getIsStageContentPartial(stageWidth: js.UndefOr[scala.Nothing], contentWidth: Double): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/common", "getIsStageContentPartial")
-  @js.native
-  def getIsStageContentPartial(stageWidth: Double): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/common", "getIsStageContentPartial")
-  @js.native
-  def getIsStageContentPartial(stageWidth: Double, contentWidth: Double): Boolean = js.native
+  @scala.inline
+  def calculateInitialState(props: PartialProps, el: js.Any): State = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateInitialState")(props.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[State]
   
-  @JSImport("react-alice-carousel/lib/utils/common", "getItemsInSlide")
-  @js.native
-  def getItemsInSlide(itemsCount: Double, props: Props): Double = js.native
+  @scala.inline
+  def getIsStageContentPartial(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsStageContentPartial")().asInstanceOf[Boolean]
+  @scala.inline
+  def getIsStageContentPartial(stageWidth: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsStageContentPartial")(stageWidth.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def getIsStageContentPartial(stageWidth: Double, contentWidth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getIsStageContentPartial")(stageWidth.asInstanceOf[js.Any], contentWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def getIsStageContentPartial(stageWidth: Unit, contentWidth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getIsStageContentPartial")(stageWidth.asInstanceOf[js.Any], contentWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-alice-carousel/lib/utils/common", "getStageContentWidth")
-  @js.native
-  def getStageContentWidth(state: PartialState): Double = js.native
+  @scala.inline
+  def getItemsInSlide(itemsCount: Double, props: Props): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemsInSlide")(itemsCount.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getStageContentWidth(state: PartialState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStageContentWidth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

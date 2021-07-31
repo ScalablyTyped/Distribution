@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Harsh extends StObject {
   
-  var harsh: Boolean = js.native
+  var harsh: Boolean
   
-  var wave_girth: Double = js.native
+  var wave_girth: Double
   
-  var wave_height: Double = js.native
+  var wave_height: Double
   
-  var wave_width: Double = js.native
+  var wave_width: Double
 }
 object Harsh {
   

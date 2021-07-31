@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssociationExecutionTargetsRequest extends StObject {
   
   /**
     * The association ID that includes the execution for which you want to view details.
     */
-  var AssociationId: typings.awsSdk.ssmMod.AssociationId = js.native
+  var AssociationId: typings.awsSdk.ssmMod.AssociationId
   
   /**
     * The execution ID for which you want to view details.
     */
-  var ExecutionId: AssociationExecutionId = js.native
+  var ExecutionId: AssociationExecutionId
   
   /**
     * Filters for the request. You can specify the following filters and values. Status (EQUAL) ResourceId (EQUAL) ResourceType (EQUAL)
     */
-  var Filters: js.UndefOr[AssociationExecutionTargetsFilterList] = js.native
+  var Filters: js.UndefOr[AssociationExecutionTargetsFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeAssociationExecutionTargetsRequest {
   

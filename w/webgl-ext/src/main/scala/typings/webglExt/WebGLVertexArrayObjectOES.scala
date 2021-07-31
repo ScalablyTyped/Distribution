@@ -2,13 +2,13 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebGLVertexArrayObjectOES extends WebGLObject {
+trait WebGLVertexArrayObjectOES
+  extends StObject
+     with WebGLObject {
   
-  val __WebGLVertexArrayObjectOES: Unit = js.native
+  val __WebGLVertexArrayObjectOES: Unit
 }
 object WebGLVertexArrayObjectOES {
   

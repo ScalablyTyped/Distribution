@@ -6,7 +6,6 @@ import typings.reactAliceCarousel.typesMod.AutoplayDirection
 import typings.reactAliceCarousel.typesMod.ControlsStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultPropsMod {
@@ -86,9 +85,9 @@ object defaultPropsMod {
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.children")
     @js.native
-    def children: js.UndefOr[scala.Nothing] = js.native
+    def children: Unit = js.native
     @scala.inline
-    def children_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+    def children_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.controlsStrategy")
     @js.native
@@ -122,9 +121,9 @@ object defaultPropsMod {
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.items")
     @js.native
-    def items: js.UndefOr[scala.Nothing] = js.native
+    def items: Unit = js.native
     @scala.inline
-    def items_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
+    def items_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.mouseTracking")
     @js.native
@@ -132,27 +131,23 @@ object defaultPropsMod {
     @scala.inline
     def mouseTracking_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseTracking")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.onInitialized")
-    @js.native
-    def onInitialized(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def onInitialized(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInitialized")().asInstanceOf[Unit]
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.onResizeEvent")
     @js.native
-    def onResizeEvent: js.UndefOr[scala.Nothing] = js.native
+    def onResizeEvent: Unit = js.native
     @scala.inline
-    def onResizeEvent_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResizeEvent")(x.asInstanceOf[js.Any])
+    def onResizeEvent_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResizeEvent")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.onResized")
-    @js.native
-    def onResized(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def onResized(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResized")().asInstanceOf[Unit]
     
-    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.onSlideChange")
-    @js.native
-    def onSlideChange(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def onSlideChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSlideChange")().asInstanceOf[Unit]
     
-    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.onSlideChanged")
-    @js.native
-    def onSlideChanged(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def onSlideChanged(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSlideChanged")().asInstanceOf[Unit]
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.paddingLeft")
     @js.native
@@ -168,9 +163,9 @@ object defaultPropsMod {
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.responsive")
     @js.native
-    def responsive: js.UndefOr[scala.Nothing] = js.native
+    def responsive: Unit = js.native
     @scala.inline
-    def responsive_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responsive")(x.asInstanceOf[js.Any])
+    def responsive_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responsive")(x.asInstanceOf[js.Any])
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.swipeDelta")
     @js.native

@@ -14,7 +14,6 @@ import typings.chrome.chromeStrings.right
 import typings.chrome.chromeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -27,20 +26,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object display {
   
-  @js.native
   trait Bounds extends StObject {
     
     /** The height of the display in pixels. */
-    var height: Double = js.native
+    var height: Double
     
     /**  The x-coordinate of the upper-left corner. */
-    var left: Double = js.native
+    var left: Double
     
     /**  The y-coordinate of the upper-left corner. */
-    var top: Double = js.native
+    var top: Double
     
     /** The width of the display in pixels. */
-    var width: Double = js.native
+    var width: Double
   }
   object Bounds {
     
@@ -67,46 +65,45 @@ object display {
     }
   }
   
-  @js.native
   trait DisplayInfo extends StObject {
     
     /** A list of zoom factor values that can be set for the display. */
-    var availableDisplayZoomFactors: js.Array[Double] = js.native
+    var availableDisplayZoomFactors: js.Array[Double]
     
     /** The display's logical bounds. */
-    var bounds: Bounds = js.native
+    var bounds: Bounds
     
     /**
       * The ratio between the display's current and default zoom.
       * For example, value 1 is equivalent to 100% zoom, and value 1.5 is equivalent to 150% zoom.
       * */
-    var displayZoomFactor: Double = js.native
+    var displayZoomFactor: Double
     
     /** The number of pixels per inch along the x-axis. */
-    var dpiX: Double = js.native
+    var dpiX: Double
     
     /** The number of pixels per inch along the y-axis. */
-    var dpiY: Double = js.native
+    var dpiY: Double
     
     /**
       * requires(CrOS Kiosk app) Only available in Chrome OS Kiosk apps
       */
-    var edid: js.UndefOr[ManufacturerId] = js.native
+    var edid: js.UndefOr[ManufacturerId] = js.undefined
     
     /** True if this display has a touch input device associated with it. */
-    var hasTouchSupport: Boolean = js.native
+    var hasTouchSupport: Boolean
     
     /** The unique identifier of the display. */
-    var id: String = js.native
+    var id: String
     
     /** True if this display is enabled. */
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
     /** True if this is an internal display. */
-    var isInternal: Boolean = js.native
+    var isInternal: Boolean
     
     /** True if this is the primary display. */
-    var isPrimary: Boolean = js.native
+    var isPrimary: Boolean
     
     /**
       * requires(CrOS) Only available on Chrome OS.
@@ -115,7 +112,7 @@ object display {
       * for all displays.
       * ❗ This must not include *mirroringSourceId*. ❗
       */
-    var mirroringDestinationIds: js.Array[String] = js.native
+    var mirroringDestinationIds: js.Array[String]
     
     /**
       * requires(CrOS) Only working properly on Chrome OS.
@@ -124,7 +121,7 @@ object display {
       * Currently exposed only on ChromeOS.
       * Will be empty string on other platforms.
       */
-    var mirroringSourceId: String = js.native
+    var mirroringSourceId: String
     
     /**
       * requires(CrOS) Only available on Chrome OS.
@@ -133,19 +130,19 @@ object display {
       * Only available on Chrome OS.
       * Will be set to an empty array on other platforms.
       */
-    var modes: js.Array[DisplayMode] = js.native
+    var modes: js.Array[DisplayMode]
     
     /** The user-friendly name (e.g. 'HP LCD monitor'). */
-    var name: String = js.native
+    var name: String
     
     /** The display's insets within its screen's bounds. Currently exposed only on ChromeOS. Will be set to empty insets on other platforms. */
-    var overscan: Insets = js.native
+    var overscan: Insets
     
     /** The display's clockwise rotation in degrees relative to the vertical position. Currently exposed only on ChromeOS. Will be set to 0 on other platforms. */
-    var rotation: Double = js.native
+    var rotation: Double
     
     /** The usable work area of the display within the display bounds. The work area excludes areas of the display reserved for OS, for example taskbar and launcher. */
-    var workArea: Bounds = js.native
+    var workArea: Bounds
   }
   object DisplayInfo {
     
@@ -244,7 +241,6 @@ object display {
     }
   }
   
-  @js.native
   trait DisplayInfoFlags extends StObject {
     
     /**
@@ -252,7 +248,7 @@ object display {
       * @see[enableUnifiedDesktop]
       * @default false
       */
-    var singleUnified: js.UndefOr[Boolean] = js.native
+    var singleUnified: js.UndefOr[Boolean] = js.undefined
   }
   object DisplayInfoFlags {
     
@@ -273,24 +269,23 @@ object display {
     }
   }
   
-  @js.native
   trait DisplayLayout extends StObject {
     
     /** The unique identifier of the display. */
-    var id: String = js.native
+    var id: String
     
     /** The offset of the display along the connected edge. 0 indicates that the topmost or leftmost corners are aligned. */
-    var offset: Double = js.native
+    var offset: Double
     
     /** The unique identifier of the parent display. Empty if this is the root. */
-    var parentId: String = js.native
+    var parentId: String
     
     /**
       * The layout position of this display relative to the parent.
       * This will be ignored for the root.
       * @see enum
       */
-    var position: top | right | bottom | left = js.native
+    var position: top | right | bottom | left
   }
   object DisplayLayout {
     
@@ -317,41 +312,40 @@ object display {
     }
   }
   
-  @js.native
   trait DisplayMode extends StObject {
     
     /** The display mode device scale factor. */
-    var deviceScaleFactor: Double = js.native
+    var deviceScaleFactor: Double
     
     /** The display mode height in device independent (user visible) pixels. */
-    var height: Double = js.native
+    var height: Double
     
     /** The display mode height in native pixels. */
-    var heightInNativePixels: Double = js.native
+    var heightInNativePixels: Double
     
     /** True if the mode is the display's native mode. */
-    var isNative: Boolean = js.native
+    var isNative: Boolean
     
     /** True if the display mode is currently selected. */
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
     /**
       * The display mode refresh rate in hertz.
       * @since Chrome 67
       */
-    var refreshRate: Double = js.native
+    var refreshRate: Double
     
     /**
       * @deprecated Deprecated since Chrome 70. Use `displayZoomFactor`
       * @description The display mode UI scale factor.
       **/
-    var uiScale: Double = js.native
+    var uiScale: Double
     
     /** The display mode width in device independent (user visible) pixels. */
-    var width: Double = js.native
+    var width: Double
     
     /** The display mode width in native pixels. */
-    var widthInNativePixels: Double = js.native
+    var widthInNativePixels: Double
   }
   object DisplayMode {
     
@@ -403,7 +397,6 @@ object display {
     }
   }
   
-  @js.native
   trait DisplayPropertiesInfo extends StObject {
     
     /**
@@ -416,19 +409,19 @@ object display {
       * Note that is also invalid to set bounds origin values if isPrimary is also set
       * (as isPrimary parameter is applied first).
       */
-    var boundsOriginX: js.UndefOr[Double] = js.native
+    var boundsOriginX: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, updates the display's logical bounds origin along y-axis.
       * @see[See documentation for boundsOriginX parameter.]
       */
-    var boundsOriginY: js.UndefOr[Double] = js.native
+    var boundsOriginY: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, updates the display mode to the mode matching this value.
       * @since Chrome 52
       */
-    var displayMode: js.UndefOr[DisplayMode] = js.native
+    var displayMode: js.UndefOr[DisplayMode] = js.undefined
     
     /**
       * @since Chrome 65.
@@ -438,13 +431,13 @@ object display {
       * in a better quality zoom than just performing
       * a pixel by pixel stretch enlargement.
       */
-    var displayZoomFactor: js.UndefOr[Double] = js.native
+    var displayZoomFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to true, makes the display primary.
       * No-op if set to false.
       */
-    var isPrimary: js.UndefOr[Boolean] = js.native
+    var isPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * requires(CrOS) Chrome OS only.
@@ -457,7 +450,7 @@ object display {
       * @see(See `enableUnifiedDesktop` for details).
       * @since Chrome 59
       * */
-    var isUnified: js.UndefOr[Boolean] = js.native
+    var isUnified: js.UndefOr[Boolean] = js.undefined
     
     /**
       * requires(CrOS) Chrome OS only.
@@ -470,14 +463,14 @@ object display {
       * which must not be the same as the id passed to setDisplayProperties.
       * If set, no other property may be set.
       */
-    var mirroringSourceId: js.UndefOr[String] = js.native
+    var mirroringSourceId: js.UndefOr[String] = js.undefined
     
     /**
       * If set, sets the display's overscan insets to the provided values.
       * Note that overscan values may not be negative or larger than a half of the screen's size.
       * Overscan cannot be changed on the internal monitor. It's applied after isPrimary parameter.
       */
-    var overscan: js.UndefOr[Insets] = js.native
+    var overscan: js.UndefOr[Insets] = js.undefined
     
     /**
       * If set, updates the display's rotation.
@@ -485,7 +478,7 @@ object display {
       * The rotation is set clockwise, relative to the display's vertical position.
       * It's applied after overscan parameter.
       */
-    var rotation: js.UndefOr[`0` | `90` | `180` | `270`] = js.native
+    var rotation: js.UndefOr[`0` | `90` | `180` | `270`] = js.undefined
   }
   object DisplayPropertiesInfo {
     
@@ -554,20 +547,19 @@ object display {
     }
   }
   
-  @js.native
   trait Insets extends StObject {
     
     /** The y-axis distance from the bottom bound. */
-    var bottom: Double = js.native
+    var bottom: Double
     
     /** The x-axis distance from the left bound. */
-    var left: Double = js.native
+    var left: Double
     
     /** The x-axis distance from the right bound. */
-    var right: Double = js.native
+    var right: Double
     
     /** The y-axis distance from the top bound. */
-    var top: Double = js.native
+    var top: Double
   }
   object Insets {
     
@@ -594,7 +586,6 @@ object display {
     }
   }
   
-  @js.native
   trait MirrorModeInfo extends StObject {
     
     /**
@@ -606,7 +597,7 @@ object display {
       * **mixed**
       * The specified source display will be mirrored to the provided destination displays. All other connected displays will be extended.
       */
-    var mode: js.UndefOr[off | normal | mixed] = js.native
+    var mode: js.UndefOr[off | normal | mixed] = js.undefined
   }
   object MirrorModeInfo {
     
@@ -627,22 +618,23 @@ object display {
     }
   }
   
-  @js.native
-  trait MirrorModeInfoMixed extends MirrorModeInfo {
+  trait MirrorModeInfoMixed
+    extends StObject
+       with MirrorModeInfo {
     
     /** The ids of the mirroring destination displays. */
-    var mirroringDestinationIds: js.UndefOr[js.Array[String]] = js.native
+    var mirroringDestinationIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var mirroringSourceId: js.UndefOr[String] = js.native
+    var mirroringSourceId: js.UndefOr[String] = js.undefined
     
     @JSName("mode")
-    var mode_MirrorModeInfoMixed: mixed = js.native
+    var mode_MirrorModeInfoMixed: mixed
   }
   object MirrorModeInfoMixed {
     
     @scala.inline
-    def apply(mode: mixed): MirrorModeInfoMixed = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    def apply(): MirrorModeInfoMixed = {
+      val __obj = js.Dynamic.literal(mode = "mixed")
       __obj.asInstanceOf[MirrorModeInfoMixed]
     }
     
@@ -669,14 +661,13 @@ object display {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
     /** The x-coordinate of the point. */
-    var x: Double = js.native
+    var x: Double
     
     /** The y-coordinate of the point. */
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -697,14 +688,13 @@ object display {
     }
   }
   
-  @js.native
   trait TouchCalibrationPair extends StObject {
     
     /** The coordinates of the display point. */
-    var displayPoint: Point = js.native
+    var displayPoint: Point
     
     /** The coordinates of the touch point corresponding to the display point. */
-    var touchPoint: Point = js.native
+    var touchPoint: Point
   }
   object TouchCalibrationPair {
     
@@ -725,20 +715,19 @@ object display {
     }
   }
   
-  @js.native
   trait TouchCalibrationPairs extends StObject {
     
     /** First pair of touch and display point required for touch calibration. */
-    var pair1: TouchCalibrationPair = js.native
+    var pair1: TouchCalibrationPair
     
     /** Second pair of touch and display point required for touch calibration. */
-    var pair2: TouchCalibrationPair = js.native
+    var pair2: TouchCalibrationPair
     
     /** Third pair of touch and display point required for touch calibration. */
-    var pair3: TouchCalibrationPair = js.native
+    var pair3: TouchCalibrationPair
     
     /** Fourth pair of touch and display point required for touch calibration. */
-    var pair4: TouchCalibrationPair = js.native
+    var pair4: TouchCalibrationPair
   }
   object TouchCalibrationPairs {
     

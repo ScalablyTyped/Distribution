@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseInput extends StObject {
   
   /**
     * Creates a set of default permissions on the table for principals. 
     */
-  var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.native
+  var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
   
   /**
     * A description of the database.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The location of the database (for example, an HDFS path). 
     */
-  var LocationUri: js.UndefOr[URI] = js.native
+  var LocationUri: js.UndefOr[URI] = js.undefined
   
   /**
     * The name of the database. For Hive compatibility, this is folded to lowercase when it is stored.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * These key-value pairs define parameters and properties of the database. These key-value pairs define parameters and properties of the database.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * A DatabaseIdentifier structure that describes a target database for resource linking.
     */
-  var TargetDatabase: js.UndefOr[DatabaseIdentifier] = js.native
+  var TargetDatabase: js.UndefOr[DatabaseIdentifier] = js.undefined
 }
 object DatabaseInput {
   

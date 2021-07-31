@@ -3,23 +3,21 @@ package typings.readableStream.mod
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WritableStateOptions extends StObject {
   
-  var decodeStrings: js.UndefOr[Boolean] = js.native
+  var decodeStrings: js.UndefOr[Boolean] = js.undefined
   
-  var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
-  var objectMode: js.UndefOr[Boolean] = js.native
+  var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var writableHighWaterMark: js.UndefOr[Double] = js.native
+  var writableHighWaterMark: js.UndefOr[Double] = js.undefined
   
-  var writableObjectMode: js.UndefOr[Boolean] = js.native
+  var writableObjectMode: js.UndefOr[Boolean] = js.undefined
 }
 object WritableStateOptions {
   

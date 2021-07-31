@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `profile` operation. */
@@ -16,51 +15,73 @@ object ProfileConstants {
   object AcceptLanguage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AcceptLanguage with String] = js.native
+    def apply(value: String): js.UndefOr[AcceptLanguage & String] = js.native
     
     @js.native
-    sealed trait AR extends AcceptLanguage
-    /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.AR with String = js.native
+    sealed trait AR
+      extends StObject
+         with AcceptLanguage
+    /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.AR & String = js.native
     
     @js.native
-    sealed trait DE extends AcceptLanguage
-    /* "de" */ val DE: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.DE with String = js.native
+    sealed trait DE
+      extends StObject
+         with AcceptLanguage
+    /* "de" */ val DE: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.DE & String = js.native
     
     @js.native
-    sealed trait EN extends AcceptLanguage
-    /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.EN with String = js.native
+    sealed trait EN
+      extends StObject
+         with AcceptLanguage
+    /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.EN & String = js.native
     
     @js.native
-    sealed trait ES extends AcceptLanguage
-    /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ES with String = js.native
+    sealed trait ES
+      extends StObject
+         with AcceptLanguage
+    /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ES & String = js.native
     
     @js.native
-    sealed trait FR extends AcceptLanguage
-    /* "fr" */ val FR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.FR with String = js.native
+    sealed trait FR
+      extends StObject
+         with AcceptLanguage
+    /* "fr" */ val FR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.FR & String = js.native
     
     @js.native
-    sealed trait IT extends AcceptLanguage
-    /* "it" */ val IT: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.IT with String = js.native
+    sealed trait IT
+      extends StObject
+         with AcceptLanguage
+    /* "it" */ val IT: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.IT & String = js.native
     
     @js.native
-    sealed trait JA extends AcceptLanguage
-    /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.JA with String = js.native
+    sealed trait JA
+      extends StObject
+         with AcceptLanguage
+    /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.JA & String = js.native
     
     @js.native
-    sealed trait KO extends AcceptLanguage
-    /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.KO with String = js.native
+    sealed trait KO
+      extends StObject
+         with AcceptLanguage
+    /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.KO & String = js.native
     
     @js.native
-    sealed trait PT_BR extends AcceptLanguage
-    /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.PT_BR with String = js.native
+    sealed trait PT_BR
+      extends StObject
+         with AcceptLanguage
+    /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.PT_BR & String = js.native
     
     @js.native
-    sealed trait ZH_CN extends AcceptLanguage
-    /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_CN with String = js.native
+    sealed trait ZH_CN
+      extends StObject
+         with AcceptLanguage
+    /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_CN & String = js.native
     
     @js.native
-    sealed trait ZH_TW extends AcceptLanguage
-    /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_TW with String = js.native
+    sealed trait ZH_TW
+      extends StObject
+         with AcceptLanguage
+    /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_TW & String = js.native
   }
   
   @js.native
@@ -71,27 +92,37 @@ object ProfileConstants {
   object ContentLanguage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContentLanguage with String] = js.native
+    def apply(value: String): js.UndefOr[ContentLanguage & String] = js.native
     
     @js.native
-    sealed trait AR extends ContentLanguage
-    /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.AR with String = js.native
+    sealed trait AR
+      extends StObject
+         with ContentLanguage
+    /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.AR & String = js.native
     
     @js.native
-    sealed trait EN extends ContentLanguage
-    /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.EN with String = js.native
+    sealed trait EN
+      extends StObject
+         with ContentLanguage
+    /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.EN & String = js.native
     
     @js.native
-    sealed trait ES extends ContentLanguage
-    /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.ES with String = js.native
+    sealed trait ES
+      extends StObject
+         with ContentLanguage
+    /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.ES & String = js.native
     
     @js.native
-    sealed trait JA extends ContentLanguage
-    /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.JA with String = js.native
+    sealed trait JA
+      extends StObject
+         with ContentLanguage
+    /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.JA & String = js.native
     
     @js.native
-    sealed trait KO extends ContentLanguage
-    /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.KO with String = js.native
+    sealed trait KO
+      extends StObject
+         with ContentLanguage
+    /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.KO & String = js.native
   }
   
   @js.native
@@ -102,18 +133,24 @@ object ProfileConstants {
   object ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContentType with String] = js.native
+    def apply(value: String): js.UndefOr[ContentType & String] = js.native
     
     @js.native
-    sealed trait APPLICATION_JSON extends ContentType
-    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON with String = js.native
+    sealed trait APPLICATION_JSON
+      extends StObject
+         with ContentType
+    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON & String = js.native
     
     @js.native
-    sealed trait TEXT_HTML extends ContentType
-    /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_HTML with String = js.native
+    sealed trait TEXT_HTML
+      extends StObject
+         with ContentType
+    /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_HTML & String = js.native
     
     @js.native
-    sealed trait TEXT_PLAIN extends ContentType
-    /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN with String = js.native
+    sealed trait TEXT_PLAIN
+      extends StObject
+         with ContentType
+    /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN & String = js.native
   }
 }

@@ -7,27 +7,25 @@ import typings.hapiHawk.hapiHawkStrings.sha256
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
   
-  @JSImport("@hapi/hawk/lib/server", "authenticate")
+  @JSImport("@hapi/hawk/lib/server", JSImport.Namespace)
   @js.native
-  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[Authentication] = js.native
-  @JSImport("@hapi/hawk/lib/server", "authenticate")
-  @js.native
-  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateOptions): js.Promise[Authentication] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@hapi/hawk/lib/server", "authenticateBewit")
-  @js.native
-  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): AuthenticatedBewit = js.native
-  @JSImport("@hapi/hawk/lib/server", "authenticateBewit")
-  @js.native
-  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): AuthenticatedBewit = js.native
+  @scala.inline
+  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
+  @scala.inline
+  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateOptions): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
   
-  @JSImport("@hapi/hawk/lib/server", "authenticateMessage")
-  @js.native
+  @scala.inline
+  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
+  @scala.inline
+  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
+  
+  @scala.inline
   def authenticateMessage(
     host: String,
     port: Double,
@@ -35,34 +33,29 @@ object serverMod {
     authorization: Message_,
     credentialsFunc: CredentialsFunc,
     options: AuthenticateMessageOptions
-  ): js.Promise[AuthenticatedMessage] = js.native
+  ): js.Promise[AuthenticatedMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateMessage")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], message.asInstanceOf[js.Any], authorization.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticatedMessage]]
   
-  @JSImport("@hapi/hawk/lib/server", "authenticatePayload")
-  @js.native
-  def authenticatePayload(payload: String, credentials: Credentials, artifacts: Artifacts, contentType: String): Unit = js.native
+  @scala.inline
+  def authenticatePayload(payload: String, credentials: Credentials, artifacts: Artifacts, contentType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayload")(payload.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@hapi/hawk/lib/server", "authenticatePayloadHash")
-  @js.native
-  def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = js.native
+  @scala.inline
+  def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayloadHash")(calculatedHash.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@hapi/hawk/lib/server", "header")
-  @js.native
-  def header(credentials: Credentials, artifacts: Artifacts): String = js.native
-  @JSImport("@hapi/hawk/lib/server", "header")
-  @js.native
-  def header(credentials: Credentials, artifacts: Artifacts, options: HeaderOptions): String = js.native
+  @scala.inline
+  def header(credentials: Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def header(credentials: Credentials, artifacts: Artifacts, options: HeaderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Inlined std.Pick<@hapi/hawk.@hapi/hawk/lib/server.AuthenticateOptions, 'hostHeaderName' | 'localtimeOffsetMsec' | 'host' | 'port'> */
-  @js.native
   trait AuthenticateBewitOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostHeaderName: js.UndefOr[String] = js.native
+    var hostHeaderName: js.UndefOr[String] = js.undefined
     
-    var localtimeOffsetMsec: js.UndefOr[Double] = js.native
+    var localtimeOffsetMsec: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object AuthenticateBewitOptions {
     
@@ -102,14 +95,13 @@ object serverMod {
   }
   
   /* Inlined std.Pick<@hapi/hawk.@hapi/hawk/lib/server.AuthenticateOptions, 'nonceFunc' | 'timestampSkewSec' | 'localtimeOffsetMsec'> */
-  @js.native
   trait AuthenticateMessageOptions extends StObject {
     
-    var localtimeOffsetMsec: js.UndefOr[Double] = js.native
+    var localtimeOffsetMsec: js.UndefOr[Double] = js.undefined
     
-    var nonceFunc: js.UndefOr[NonceFunc] = js.native
+    var nonceFunc: js.UndefOr[NonceFunc] = js.undefined
     
-    var timestampSkewSec: js.UndefOr[Double] = js.native
+    var timestampSkewSec: js.UndefOr[Double] = js.undefined
   }
   object AuthenticateMessageOptions {
     
@@ -142,13 +134,12 @@ object serverMod {
     }
   }
   
-  @js.native
   trait AuthenticateOptions extends StObject {
     
     /**
       * optional host name override. Only used when passed a node request object.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * optional header field name, used to override the default 'Host' header when used
@@ -156,19 +147,19 @@ object serverMod {
       * the original (which is what the module must verify) in the 'x-forwarded-host' header field.
       * Only used when passed a node `http.ServerRequest` object.
       */
-    var hostHeaderName: js.UndefOr[String] = js.native
+    var hostHeaderName: js.UndefOr[String] = js.undefined
     
     /**
       * Optional local clock time offset express in a number of milliseconds (positive or negative).
       * Defaults to 0.
       */
-    var localtimeOffsetMsec: js.UndefOr[Double] = js.native
+    var localtimeOffsetMsec: js.UndefOr[Double] = js.undefined
     
     /**
       * optional nonce validation function. The function signature is `async function(key, nonce, ts)`
       * and it must return no value for success or throw an error for invalid state.
       */
-    var nonceFunc: js.UndefOr[NonceFunc] = js.native
+    var nonceFunc: js.UndefOr[NonceFunc] = js.undefined
     
     /**
       * optional payload for validation. The client calculates the hash value and includes it via the 'hash'
@@ -179,18 +170,18 @@ object serverMod {
       * of authentication, the `authenticatePayload()` method can be used by passing it the credentials and
       * `attributes.hash` returned from `authenticate()`.
       */
-    var payload: js.UndefOr[String] = js.native
+    var payload: js.UndefOr[String] = js.undefined
     
     /**
       * optional port override. Only used when passed a node request object.
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * optional number of seconds of permitted clock skew for incoming timestamps. Defaults to 60 seconds.
       * Provides a +/- skew which means actual allowed window is double the number of seconds.
       */
-    var timestampSkewSec: js.UndefOr[Double] = js.native
+    var timestampSkewSec: js.UndefOr[Double] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -247,10 +238,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait AuthenticatedBewit extends AuthenticatedMessage {
+  trait AuthenticatedBewit
+    extends StObject
+       with AuthenticatedMessage {
     
-    var bewit: Bewit = js.native
+    var bewit: Bewit
   }
   object AuthenticatedBewit {
     
@@ -268,10 +260,9 @@ object serverMod {
     }
   }
   
-  @js.native
   trait AuthenticatedMessage extends StObject {
     
-    var credentials: Credentials = js.native
+    var credentials: Credentials
   }
   object AuthenticatedMessage {
     
@@ -289,12 +280,11 @@ object serverMod {
     }
   }
   
-  @js.native
   trait Authentication extends StObject {
     
-    var artifacts: Artifacts = js.native
+    var artifacts: Artifacts
     
-    var credentials: Credentials = js.native
+    var credentials: Credentials
   }
   object Authentication {
     
@@ -315,16 +305,15 @@ object serverMod {
     }
   }
   
-  @js.native
   trait Bewit extends StObject {
     
-    var exp: String = js.native
+    var exp: String
     
-    var ext: String = js.native
+    var ext: String
     
-    var id: String = js.native
+    var id: String
     
-    var mac: String = js.native
+    var mac: String
   }
   object Bewit {
     
@@ -351,14 +340,13 @@ object serverMod {
     }
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var algorithm: sha1 | sha256 = js.native
+    var algorithm: sha1 | sha256
     
-    var key: String = js.native
+    var key: String
     
-    var user: String = js.native
+    var user: String
   }
   object Credentials {
     
@@ -384,20 +372,19 @@ object serverMod {
   
   type CredentialsFunc = js.Function1[/* id */ String, js.Promise[Credentials] | Credentials]
   
-  @js.native
   trait HeaderOptions extends StObject {
     
     /** Payload content-type (ignored if hash provided) */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** Application specific data sent via the ext attribute */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /** Pre-calculated payload hash */
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
     /** UTF-8 encoded string for body hash generation (ignored if hash provided) */
-    var payload: js.UndefOr[String] = js.native
+    var payload: js.UndefOr[String] = js.undefined
   }
   object HeaderOptions {
     

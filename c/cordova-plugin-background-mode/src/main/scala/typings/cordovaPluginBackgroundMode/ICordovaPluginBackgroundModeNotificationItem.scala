@@ -2,36 +2,34 @@ package typings.cordovaPluginBackgroundMode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICordovaPluginBackgroundModeNotificationItem extends StObject {
   
   /**
     * Handles if app is coming to foreground when tapping on the notification
     */
-  var resume: js.UndefOr[Boolean] = js.native
+  var resume: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Handles if there is a notification when background is activated
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The body of the notification displayed in background mode
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The ticker of the notification displayed in background mode
     */
-  var ticker: js.UndefOr[String] = js.native
+  var ticker: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the notification displayed in background mode
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ICordovaPluginBackgroundModeNotificationItem {
   

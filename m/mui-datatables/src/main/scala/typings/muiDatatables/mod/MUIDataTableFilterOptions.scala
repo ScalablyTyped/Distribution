@@ -2,10 +2,8 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableFilterOptions extends StObject {
   
   /**
@@ -28,24 +26,24 @@ trait MUIDataTableFilterOptions extends StObject {
       /* filterData */ js.Array[js.Array[String]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Will force a filter option to take up the grid's full width. */
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * custom filter logic.
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
     */
-  var logic: js.UndefOr[js.Function2[/* prop */ String, /* filterValue */ js.Array[_], Boolean]] = js.native
+  var logic: js.UndefOr[js.Function2[/* prop */ String, /* filterValue */ js.Array[js.Any], Boolean]] = js.undefined
   
   /**
     * Custom names for the filter fields.
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/column-filters/index.js)
     */
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A function to customize filter choices.
@@ -53,7 +51,7 @@ trait MUIDataTableFilterOptions extends StObject {
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
     */
-  var renderValue: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+  var renderValue: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
 }
 object MUIDataTableFilterOptions {
   
@@ -86,7 +84,7 @@ object MUIDataTableFilterOptions {
     def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[_]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
+    def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[js.Any]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
     
     @scala.inline
     def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)

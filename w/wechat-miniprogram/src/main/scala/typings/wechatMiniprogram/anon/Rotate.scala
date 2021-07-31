@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rotate extends StObject {
   
   /** 旋转程度，最低基础库 2.3.0 */
-  var rotate: Double = js.native
+  var rotate: Double
   
   /** 缩放程度，最低基础库 2.3.0 */
-  var skew: Double = js.native
+  var skew: Double
 }
 object Rotate {
   

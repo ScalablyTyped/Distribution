@@ -9,7 +9,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioStyleIndexNativeMod {
@@ -59,20 +58,19 @@ object radioStyleIndexNativeMod {
     def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IRadioStyle extends StObject {
     
-    var icon: ViewStyle = js.native
+    var icon: ViewStyle
     
-    var radioItem: ViewStyle = js.native
+    var radioItem: ViewStyle
     
-    var radioItemContent: TextStyle = js.native
+    var radioItemContent: TextStyle
     
-    var radioItemContentDisable: TextStyle = js.native
+    var radioItemContentDisable: TextStyle
     
-    var radioItemRadio: ViewStyle = js.native
+    var radioItemRadio: ViewStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object IRadioStyle {
     

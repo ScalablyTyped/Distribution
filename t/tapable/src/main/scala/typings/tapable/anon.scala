@@ -7,17 +7,15 @@ import typings.tapable.tapableStrings.promise
 import typings.tapable.tapableStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] extends StObject {
     
-    var fn: js.UndefOr[TapFunction[TTapType, TArg1, TArg2, TArg3, THookResult]] = js.native
+    var fn: js.UndefOr[TapFunction[TTapType, TArg1, TArg2, TArg3, THookResult]] = js.undefined
     
-    var `type`: js.UndefOr[TTapType] = js.native
+    var `type`: js.UndefOr[TTapType] = js.undefined
   }
   object `0` {
     
@@ -28,7 +26,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_, _, _, _, _], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] (val x: Self with (`0`[TTapType, TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?, ?, ?, ?, ?], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] (val x: Self & (`0`[TTapType, TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
       
       @scala.inline
       def setFn(
@@ -46,16 +44,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Before extends StObject {
     
-    var before: js.UndefOr[String | js.Array[String]] = js.native
+    var before: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var context: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var stage: js.UndefOr[Double] = js.native
+    var stage: js.UndefOr[Double] = js.undefined
   }
   object Before {
     
@@ -94,12 +91,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fn[TArg1, TArg2, TArg3, THookResult] extends StObject {
     
-    var fn: js.UndefOr[TapFunction[sync, TArg1, TArg2, TArg3, THookResult]] = js.native
+    var fn: js.UndefOr[TapFunction[sync, TArg1, TArg2, TArg3, THookResult]] = js.undefined
     
-    var `type`: js.UndefOr[sync] = js.native
+    var `type`: js.UndefOr[sync] = js.undefined
   }
   object Fn {
     
@@ -110,7 +106,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FnMutableBuilder[Self <: Fn[_, _, _, _], TArg1, TArg2, TArg3, THookResult] (val x: Self with (Fn[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    implicit class FnMutableBuilder[Self <: Fn[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult] (val x: Self & (Fn[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
       
       @scala.inline
       def setFn(
@@ -128,12 +124,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FnType[TArg1, TArg2, TArg3, THookResult] extends StObject {
     
-    var fn: js.UndefOr[TapFunction[promise, TArg1, TArg2, TArg3, THookResult]] = js.native
+    var fn: js.UndefOr[TapFunction[promise, TArg1, TArg2, TArg3, THookResult]] = js.undefined
     
-    var `type`: js.UndefOr[promise] = js.native
+    var `type`: js.UndefOr[promise] = js.undefined
   }
   object FnType {
     
@@ -144,7 +139,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FnTypeMutableBuilder[Self <: FnType[_, _, _, _], TArg1, TArg2, TArg3, THookResult] (val x: Self with (FnType[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    implicit class FnTypeMutableBuilder[Self <: FnType[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult] (val x: Self & (FnType[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
       
       @scala.inline
       def setFn(
@@ -162,12 +157,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type[TArg1, TArg2, TArg3, THookResult] extends StObject {
     
-    var fn: js.UndefOr[TapFunction[async, TArg1, TArg2, TArg3, THookResult]] = js.native
+    var fn: js.UndefOr[TapFunction[async, TArg1, TArg2, TArg3, THookResult]] = js.undefined
     
-    var `type`: js.UndefOr[async] = js.native
+    var `type`: js.UndefOr[async] = js.undefined
   }
   object Type {
     
@@ -178,7 +172,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[_, _, _, _], TArg1, TArg2, TArg3, THookResult] (val x: Self with (Type[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    implicit class TypeMutableBuilder[Self <: Type[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult] (val x: Self & (Type[TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
       
       @scala.inline
       def setFn(

@@ -10,9 +10,9 @@ Load SVG icon sprites safely and asynchronously
 | ------------------ | :-------------: |
 | Full name          | loadicons |
 | Keywords           | svg, sprite |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4229 |
+| # downloads        | 6059 |
 | # stars            | 0 |
 
 ## Links

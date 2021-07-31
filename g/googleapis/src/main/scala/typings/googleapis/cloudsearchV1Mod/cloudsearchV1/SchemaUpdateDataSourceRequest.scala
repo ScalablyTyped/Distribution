@@ -2,18 +2,16 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUpdateDataSourceRequest extends StObject {
   
   /**
     * Common debug options.
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
-  var source: js.UndefOr[SchemaDataSource] = js.native
+  var source: js.UndefOr[SchemaDataSource] = js.undefined
 }
 object SchemaUpdateDataSourceRequest {
   

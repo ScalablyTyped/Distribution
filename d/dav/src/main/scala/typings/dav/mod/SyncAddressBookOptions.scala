@@ -5,27 +5,25 @@ import typings.dav.davStrings.webdav
 import typings.dav.mod.transport.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncAddressBookOptions extends StObject {
   
   /**
     * request sandbox.
     */
-  var sandbox: js.UndefOr[Sandbox] = js.native
+  var sandbox: js.UndefOr[Sandbox] = js.undefined
   
   /**
     * either 'basic' or 'webdav'.If unspecified, will try to do webdav sync
     * and failover to basic sync if rfc 6578 is not supported by the server.
     */
-  var syncMethod: js.UndefOr[basic | webdav] = js.native
+  var syncMethod: js.UndefOr[basic | webdav] = js.undefined
   
   /**
     * request sender.
     */
-  var xhr: js.UndefOr[Transport] = js.native
+  var xhr: js.UndefOr[Transport] = js.undefined
 }
 object SyncAddressBookOptions {
   

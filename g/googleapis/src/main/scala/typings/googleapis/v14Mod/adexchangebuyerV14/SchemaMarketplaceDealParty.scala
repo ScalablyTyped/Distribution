@@ -2,23 +2,21 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMarketplaceDealParty extends StObject {
   
   /**
     * The buyer/seller associated with the deal. One of buyer/seller is
     * specified for a deal-party.
     */
-  var buyer: js.UndefOr[SchemaBuyer] = js.native
+  var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * The buyer/seller associated with the deal. One of buyer/seller is
     * specified for a deal party.
     */
-  var seller: js.UndefOr[SchemaSeller] = js.native
+  var seller: js.UndefOr[SchemaSeller] = js.undefined
 }
 object SchemaMarketplaceDealParty {
   

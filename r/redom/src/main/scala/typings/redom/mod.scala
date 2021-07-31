@@ -36,67 +36,73 @@ import typings.std.SVGElement
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("redom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redom", "ListPool")
   @js.native
   class ListPool_ protected () extends StObject {
     def this(View: RedomComponentConstructor) = this()
     def this(View: RedomComponentConstructor, key: String) = this()
-    def this(View: RedomComponentConstructor, key: js.UndefOr[scala.Nothing], initData: js.Any) = this()
     def this(View: RedomComponentConstructor, key: String, initData: js.Any) = this()
+    def this(View: RedomComponentConstructor, key: Unit, initData: js.Any) = this()
     
-    def update(data: js.Array[_]): Unit = js.native
-    def update(data: js.Array[_], context: js.Any): Unit = js.native
+    def update(data: js.Array[js.Any]): Unit = js.native
+    def update(data: js.Array[js.Any], context: js.Any): Unit = js.native
   }
   
   @JSImport("redom", "List")
   @js.native
-  class List_ protected () extends RedomComponent {
+  class List_ protected ()
+    extends StObject
+       with RedomComponent {
     def this(parent: RedomQuery, View: RedomComponentCreator) = this()
     def this(parent: RedomQuery, View: RedomComponentCreator, key: String) = this()
-    def this(parent: RedomQuery, View: RedomComponentCreator, key: js.UndefOr[scala.Nothing], initData: js.Any) = this()
     def this(parent: RedomQuery, View: RedomComponentCreator, key: String, initData: js.Any) = this()
+    def this(parent: RedomQuery, View: RedomComponentCreator, key: Unit, initData: js.Any) = this()
     
+    /* CompleteClass */
+    var el: HTMLElement | SVGElement | RedomComponent = js.native
     @JSName("el")
     var el_List_ : HTMLElement | SVGElement = js.native
     
     @JSName("update")
-    def update_MList_(data: js.Array[_]): Unit = js.native
+    def update_MList_(data: js.Array[js.Any]): Unit = js.native
     @JSName("update")
-    def update_MList_(data: js.Array[_], context: js.Any): Unit = js.native
+    def update_MList_(data: js.Array[js.Any], context: js.Any): Unit = js.native
   }
   /* static members */
   object List_ {
     
-    @JSImport("redom", "List.extend")
+    @JSImport("redom", "List")
     @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor): RedomComponentConstructor = js.native
-    @JSImport("redom", "List.extend")
-    @js.native
-    def extend(
-      parent: RedomQuery,
-      View: RedomComponentConstructor,
-      key: js.UndefOr[scala.Nothing],
-      initData: js.Any
-    ): RedomComponentConstructor = js.native
-    @JSImport("redom", "List.extend")
-    @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String): RedomComponentConstructor = js.native
-    @JSImport("redom", "List.extend")
-    @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: Unit, initData: js.Any): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
   }
   
   @JSImport("redom", "Place")
   @js.native
-  class Place_ protected () extends RedomComponent {
+  class Place_ protected ()
+    extends StObject
+       with RedomComponent {
     def this(View: RedomComponentConstructor) = this()
     def this(View: RedomComponentConstructor, initData: js.Any) = this()
     
+    /* CompleteClass */
+    var el: HTMLElement | SVGElement | RedomComponent = js.native
     @JSName("el")
     var el_Place_ : HTMLElement | SVGElement = js.native
     
@@ -108,10 +114,14 @@ object mod {
   
   @JSImport("redom", "Router")
   @js.native
-  class Router_ protected () extends RedomComponent {
+  class Router_ protected ()
+    extends StObject
+       with RedomComponent {
     def this(parent: RedomQuery, Views: RouterDictionary) = this()
     def this(parent: RedomQuery, Views: RouterDictionary, initData: js.Any) = this()
     
+    /* CompleteClass */
+    var el: HTMLElement | SVGElement | RedomComponent = js.native
     @JSName("el")
     var el_Router_ : HTMLElement | SVGElement = js.native
     
@@ -121,186 +131,140 @@ object mod {
     def update_MRouter_(route: String, data: js.Any): Unit = js.native
   }
   
-  @JSImport("redom", "el")
-  @js.native
-  def el(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = js.native
-  @JSImport("redom", "el")
-  @js.native
-  def el(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = js.native
-  @JSImport("redom", "el")
-  @js.native
-  def el(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = js.native
-  @JSImport("redom", "el")
-  @js.native
-  def el[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = js.native
+  @scala.inline
+  def el(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("el")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[String]]
+  @scala.inline
+  def el(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = (^.asInstanceOf[js.Dynamic].applyDynamic("el")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  @scala.inline
+  def el(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("el")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Node]]
+  @scala.inline
+  def el[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = (^.asInstanceOf[js.Dynamic].applyDynamic("el")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Q]]
   
-  @JSImport("redom", "h")
-  @js.native
-  def h(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = js.native
-  @JSImport("redom", "h")
-  @js.native
-  def h(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = js.native
-  @JSImport("redom", "h")
-  @js.native
-  def h(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = js.native
-  @JSImport("redom", "h")
-  @js.native
-  def h[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = js.native
+  @scala.inline
+  def h(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[String]]
+  @scala.inline
+  def h(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  @scala.inline
+  def h(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Node]]
+  @scala.inline
+  def h[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Q]]
   
-  @JSImport("redom", "html")
-  @js.native
-  def html(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = js.native
-  @JSImport("redom", "html")
-  @js.native
-  def html(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = js.native
-  @JSImport("redom", "html")
-  @js.native
-  def html(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = js.native
-  @JSImport("redom", "html")
-  @js.native
-  def html[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = js.native
+  @scala.inline
+  def html(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[String]]
+  @scala.inline
+  def html(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  @scala.inline
+  def html(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Node]]
+  @scala.inline
+  def html[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedomElementOfElQuery[Q]]
   
   object list {
     
-    @JSImport("redom", "list")
-    @js.native
-    def apply(parent: RedomQuery, View: RedomComponentConstructor): List_ = js.native
-    @JSImport("redom", "list")
-    @js.native
-    def apply(
-      parent: RedomQuery,
-      View: RedomComponentConstructor,
-      key: js.UndefOr[scala.Nothing],
-      initData: js.Any
-    ): List_ = js.native
-    @JSImport("redom", "list")
-    @js.native
-    def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String): List_ = js.native
-    @JSImport("redom", "list")
-    @js.native
-    def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): List_ = js.native
+    @scala.inline
+    def apply(parent: RedomQuery, View: RedomComponentConstructor): List_ = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any])).asInstanceOf[List_]
+    @scala.inline
+    def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String): List_ = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[List_]
+    @scala.inline
+    def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): List_ = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[List_]
+    @scala.inline
+    def apply(parent: RedomQuery, View: RedomComponentConstructor, key: Unit, initData: js.Any): List_ = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[List_]
     
-    @JSImport("redom", "list.extend")
+    @JSImport("redom", "list")
     @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor): RedomComponentConstructor = js.native
-    @JSImport("redom", "list.extend")
-    @js.native
-    def extend(
-      parent: RedomQuery,
-      View: RedomComponentConstructor,
-      key: js.UndefOr[scala.Nothing],
-      initData: js.Any
-    ): RedomComponentConstructor = js.native
-    @JSImport("redom", "list.extend")
-    @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String): RedomComponentConstructor = js.native
-    @JSImport("redom", "list.extend")
-    @js.native
-    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
+    @scala.inline
+    def extend(parent: RedomQuery, View: RedomComponentConstructor, key: Unit, initData: js.Any): RedomComponentConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parent.asInstanceOf[js.Any], View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[RedomComponentConstructor]
   }
   
-  @JSImport("redom", "listPool")
-  @js.native
-  def listPool(View: RedomComponentConstructor): ListPool_ = js.native
-  @JSImport("redom", "listPool")
-  @js.native
-  def listPool(View: RedomComponentConstructor, key: js.UndefOr[scala.Nothing], initData: js.Any): ListPool_ = js.native
-  @JSImport("redom", "listPool")
-  @js.native
-  def listPool(View: RedomComponentConstructor, key: String): ListPool_ = js.native
-  @JSImport("redom", "listPool")
-  @js.native
-  def listPool(View: RedomComponentConstructor, key: String, initData: js.Any): ListPool_ = js.native
+  @scala.inline
+  def listPool(View: RedomComponentConstructor): ListPool_ = ^.asInstanceOf[js.Dynamic].applyDynamic("listPool")(View.asInstanceOf[js.Any]).asInstanceOf[ListPool_]
+  @scala.inline
+  def listPool(View: RedomComponentConstructor, key: String): ListPool_ = (^.asInstanceOf[js.Dynamic].applyDynamic("listPool")(View.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ListPool_]
+  @scala.inline
+  def listPool(View: RedomComponentConstructor, key: String, initData: js.Any): ListPool_ = (^.asInstanceOf[js.Dynamic].applyDynamic("listPool")(View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[ListPool_]
+  @scala.inline
+  def listPool(View: RedomComponentConstructor, key: Unit, initData: js.Any): ListPool_ = (^.asInstanceOf[js.Dynamic].applyDynamic("listPool")(View.asInstanceOf[js.Any], key.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[ListPool_]
   
-  @JSImport("redom", "mount")
-  @js.native
-  def mount(parent: RedomElement, child: RedomElement): RedomElement = js.native
-  @JSImport("redom", "mount")
-  @js.native
-  def mount(parent: RedomElement, child: RedomElement, before: js.UndefOr[RedomElement], replace: Boolean): RedomElement = js.native
-  @JSImport("redom", "mount")
-  @js.native
-  def mount(parent: RedomElement, child: RedomElement, before: RedomElement): RedomElement = js.native
+  @scala.inline
+  def mount(parent: RedomElement, child: RedomElement): RedomElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[RedomElement]
+  @scala.inline
+  def mount(parent: RedomElement, child: RedomElement, before: Unit, replace: Boolean): RedomElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], before.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[RedomElement]
+  @scala.inline
+  def mount(parent: RedomElement, child: RedomElement, before: RedomElement): RedomElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[RedomElement]
+  @scala.inline
+  def mount(parent: RedomElement, child: RedomElement, before: RedomElement, replace: Boolean): RedomElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], before.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[RedomElement]
   
-  @JSImport("redom", "place")
-  @js.native
-  def place(View: RedomComponentConstructor): Place_ = js.native
-  @JSImport("redom", "place")
-  @js.native
-  def place(View: RedomComponentConstructor, initData: js.Any): Place_ = js.native
+  @scala.inline
+  def place(View: RedomComponentConstructor): Place_ = ^.asInstanceOf[js.Dynamic].applyDynamic("place")(View.asInstanceOf[js.Any]).asInstanceOf[Place_]
+  @scala.inline
+  def place(View: RedomComponentConstructor, initData: js.Any): Place_ = (^.asInstanceOf[js.Dynamic].applyDynamic("place")(View.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[Place_]
   
-  @JSImport("redom", "router")
-  @js.native
-  def router(parent: RedomQuery, Views: RouterDictionary): Router_ = js.native
-  @JSImport("redom", "router")
-  @js.native
-  def router(parent: RedomQuery, Views: RouterDictionary, initData: js.Any): Router_ = js.native
+  @scala.inline
+  def router(parent: RedomQuery, Views: RouterDictionary): Router_ = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(parent.asInstanceOf[js.Any], Views.asInstanceOf[js.Any])).asInstanceOf[Router_]
+  @scala.inline
+  def router(parent: RedomQuery, Views: RouterDictionary, initData: js.Any): Router_ = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(parent.asInstanceOf[js.Any], Views.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[Router_]
   
-  @JSImport("redom", "s")
-  @js.native
-  def s(query: RedomQuery, args: RedomQueryArgument*): SVGElement = js.native
+  @scala.inline
+  def s(query: RedomQuery, args: RedomQueryArgument*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("s")(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
   
-  @JSImport("redom", "setAttr")
-  @js.native
-  def setAttr(view: RedomElement, arg1: String): Unit = js.native
-  @JSImport("redom", "setAttr")
-  @js.native
-  def setAttr(view: RedomElement, arg1: String, arg2: String): Unit = js.native
-  @JSImport("redom", "setAttr")
-  @js.native
-  def setAttr(view: RedomElement, arg1: js.Object): Unit = js.native
-  @JSImport("redom", "setAttr")
-  @js.native
-  def setAttr(view: RedomElement, arg1: js.Object, arg2: String): Unit = js.native
+  @scala.inline
+  def setAttr(view: RedomElement, arg1: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setAttr(view: RedomElement, arg1: String, arg2: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setAttr(view: RedomElement, arg1: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setAttr(view: RedomElement, arg1: js.Object, arg2: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("redom", "setChildren")
-  @js.native
-  def setChildren(parent: RedomElement, children: js.Array[RedomElement]): Unit = js.native
+  @scala.inline
+  def setChildren(parent: RedomElement, children: js.Array[RedomElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChildren")(parent.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("redom", "setStyle")
-  @js.native
-  def setStyle(view: RedomElement, arg1: String): Unit = js.native
-  @JSImport("redom", "setStyle")
-  @js.native
-  def setStyle(view: RedomElement, arg1: String, arg2: String): Unit = js.native
-  @JSImport("redom", "setStyle")
-  @js.native
-  def setStyle(view: RedomElement, arg1: js.Object): Unit = js.native
-  @JSImport("redom", "setStyle")
-  @js.native
-  def setStyle(view: RedomElement, arg1: js.Object, arg2: String): Unit = js.native
+  @scala.inline
+  def setStyle(view: RedomElement, arg1: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setStyle(view: RedomElement, arg1: String, arg2: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setStyle(view: RedomElement, arg1: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setStyle(view: RedomElement, arg1: js.Object, arg2: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object svg {
     
+    @scala.inline
+    def apply(query: RedomQuery, args: RedomQueryArgument*): SVGElement = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    
     @JSImport("redom", "svg")
     @js.native
-    def apply(query: RedomQuery, args: RedomQueryArgument*): SVGElement = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("redom", "svg.extend")
-    @js.native
-    def extend(query: RedomQuery): RedomComponentConstructor = js.native
+    @scala.inline
+    def extend(query: RedomQuery): RedomComponentConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(query.asInstanceOf[js.Any]).asInstanceOf[RedomComponentConstructor]
   }
   
-  @JSImport("redom", "text")
-  @js.native
-  def text(str: String): Text = js.native
+  @scala.inline
+  def text(str: String): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(str.asInstanceOf[js.Any]).asInstanceOf[Text]
   
-  @JSImport("redom", "unmount")
-  @js.native
-  def unmount(parent: RedomElement, child: RedomElement): RedomElement = js.native
+  @scala.inline
+  def unmount(parent: RedomElement, child: RedomElement): RedomElement = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[RedomElement]
   
   type HTMLElementOfStringLiteral[Q /* <: String */] = HTMLElement | SVGElement | HTMLStyleElement | HTMLTableHeaderCellElement | HTMLTableSectionElement | HTMLTableCellElement | HTMLTableRowElement | HTMLTableElement | HTMLHeadingElement | HTMLButtonElement | HTMLOptionElement | HTMLSelectElement | HTMLTextAreaElement | HTMLLabelElement | HTMLInputElement | HTMLFormElement | HTMLOListElement | HTMLLIElement | HTMLUListElement | HTMLIFrameElement | HTMLImageElement | HTMLBRElement | HTMLHRElement | HTMLParagraphElement | HTMLPreElement | HTMLSpanElement | HTMLAnchorElement | HTMLDivElement
   
-  @js.native
   trait RedomComponent extends StObject {
     
-    var el: HTMLElement | SVGElement | RedomComponent = js.native
+    var el: HTMLElement | SVGElement | RedomComponent
     
-    var onmount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onmount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onremount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onremount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onunmount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onunmount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var update: js.UndefOr[
         js.Function4[
@@ -310,7 +274,7 @@ object mod {
           /* context */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object RedomComponent {
     
@@ -355,7 +319,9 @@ object mod {
   }
   
   @js.native
-  trait RedomComponentClass extends Instantiable0[RedomComponent]
+  trait RedomComponentClass
+    extends StObject
+       with Instantiable0[RedomComponent]
   
   type RedomComponentConstructor = RedomComponentClass
   

@@ -3,26 +3,24 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.mod.MoneyData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.PayOut.CreatePayOut> */
-@js.native
 trait PartialCreatePayOut extends StObject {
   
-  var AuthorId: js.UndefOr[String] = js.native
+  var AuthorId: js.UndefOr[String] = js.undefined
   
-  var BankAccountId: js.UndefOr[String] = js.native
+  var BankAccountId: js.UndefOr[String] = js.undefined
   
-  var BankWireRef: js.UndefOr[String] = js.native
+  var BankWireRef: js.UndefOr[String] = js.undefined
   
-  var DebitedFunds: js.UndefOr[MoneyData] = js.native
+  var DebitedFunds: js.UndefOr[MoneyData] = js.undefined
   
-  var DebitedWalletId: js.UndefOr[String] = js.native
+  var DebitedWalletId: js.UndefOr[String] = js.undefined
   
-  var Fees: js.UndefOr[MoneyData] = js.native
+  var Fees: js.UndefOr[MoneyData] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object PartialCreatePayOut {
   

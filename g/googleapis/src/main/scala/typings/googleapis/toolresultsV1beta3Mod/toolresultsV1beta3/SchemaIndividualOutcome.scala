@@ -2,19 +2,17 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Step Id and outcome of each individual step that was run as a group with
   * other steps with the same configuration.
   */
-@js.native
 trait SchemaIndividualOutcome extends StObject {
   
-  var outcomeSummary: js.UndefOr[String] = js.native
+  var outcomeSummary: js.UndefOr[String] = js.undefined
   
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object SchemaIndividualOutcome {
   

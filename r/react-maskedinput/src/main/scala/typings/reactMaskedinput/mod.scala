@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.InputHTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,11 @@ object mod {
   
   type CharsFormatters = StringDictionary[FormatCharacter]
   
-  @js.native
   trait FormatCharacter extends StObject {
     
-    var transform: js.UndefOr[js.Function1[/* char */ String, String]] = js.native
+    var transform: js.UndefOr[js.Function1[/* char */ String, String]] = js.undefined
     
-    def validate(char: String): String = js.native
+    def validate(char: String): String
   }
   object FormatCharacter {
     
@@ -48,15 +46,15 @@ object mod {
   
   type MaskedInput = Component[MaskedInputProps, js.Object, js.Any]
   
-  @js.native
   trait MaskedInputProps
-    extends InputHTMLAttributes[js.Any] {
+    extends StObject
+       with InputHTMLAttributes[js.Any] {
     
-    var formatCharacters: js.UndefOr[CharsFormatters] = js.native
+    var formatCharacters: js.UndefOr[CharsFormatters] = js.undefined
     
-    var mask: String = js.native
+    var mask: String
     
-    var placeholderChar: js.UndefOr[String] = js.native
+    var placeholderChar: js.UndefOr[String] = js.undefined
   }
   object MaskedInputProps {
     

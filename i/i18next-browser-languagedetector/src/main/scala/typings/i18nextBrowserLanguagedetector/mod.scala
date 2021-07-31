@@ -1,10 +1,17 @@
 package typings.i18nextBrowserLanguagedetector
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18next.i18nextStrings.`3rdParty`
+import typings.i18next.i18nextStrings.backend
+import typings.i18next.i18nextStrings.i18nFormat
+import typings.i18next.i18nextStrings.languageDetector
+import typings.i18next.i18nextStrings.logger
+import typings.i18next.i18nextStrings.postProcessor
+import typings.i18next.mod.InitOptions
 import typings.i18next.mod.LanguageDetectorModule
+import typings.i18next.mod.Services
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.cookie
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.htmlTag
-import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.languageDetector
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.localStorage
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.navigator
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.querystring
@@ -12,27 +19,43 @@ import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("i18next-browser-languagedetector", JSImport.Default)
   @js.native
-  class default () extends I18nextBrowserLanguageDetector {
+  class default ()
+    extends StObject
+       with I18nextBrowserLanguageDetector {
     def this(services: js.Any) = this()
-    def this(services: js.UndefOr[scala.Nothing], options: DetectorOptions) = this()
     def this(services: js.Any, options: DetectorOptions) = this()
+    def this(services: Unit, options: DetectorOptions) = this()
+    
+    /* CompleteClass */
+    override def cacheUserLanguage(lng: String): Unit = js.native
+    
+    /** Must return detected language */
+    /* CompleteClass */
+    override def detect(): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit = js.native
+    
+    /* CompleteClass */
+    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    /* CompleteClass */
+    @JSName("type")
+    var type_LanguageDetectorModule: languageDetector = js.native
   }
   
-  @js.native
   trait CustomDetector extends StObject {
     
-    var cacheUserLanguage: js.UndefOr[js.Function2[/* lng */ String, /* options */ DetectorOptions, Unit]] = js.native
+    var cacheUserLanguage: js.UndefOr[js.Function2[/* lng */ String, /* options */ DetectorOptions, Unit]] = js.undefined
     
-    def lookup(options: DetectorOptions): js.UndefOr[String] = js.native
+    def lookup(options: DetectorOptions): js.UndefOr[String]
     
-    var name: String = js.native
+    var name: String
   }
   object CustomDetector {
     
@@ -59,47 +82,46 @@ object mod {
     }
   }
   
-  @js.native
   trait DetectorOptions extends StObject {
     
     /**
       * cache user language on
       */
-    var caches: js.UndefOr[js.Array[String]] = js.native
+    var caches: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
     /**
       * optional expire and domain for set cookie
       * @default 10
       */
-    var cookieMinutes: js.UndefOr[Double] = js.native
+    var cookieMinutes: js.UndefOr[Double] = js.undefined
     
     /**
       * languages to not persist (cookie, localStorage)
       */
-    var excludeCacheFor: js.UndefOr[js.Array[String]] = js.native
+    var excludeCacheFor: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * optional htmlTag with lang attribute
       * @default document.documentElement
       */
-    var htmlTag: js.UndefOr[HTMLElement | Null] = js.native
+    var htmlTag: js.UndefOr[HTMLElement | Null] = js.undefined
     
-    var lookupCookie: js.UndefOr[String] = js.native
+    var lookupCookie: js.UndefOr[String] = js.undefined
     
-    var lookupFromPathIndex: js.UndefOr[Double] = js.native
+    var lookupFromPathIndex: js.UndefOr[Double] = js.undefined
     
-    var lookupFromSubdomainIndex: js.UndefOr[Double] = js.native
+    var lookupFromSubdomainIndex: js.UndefOr[Double] = js.undefined
     
-    var lookupLocalStorage: js.UndefOr[String] = js.native
+    var lookupLocalStorage: js.UndefOr[String] = js.undefined
     
     /**
       * keys or params to lookup language from
       */
-    var lookupQuerystring: js.UndefOr[String] = js.native
+    var lookupQuerystring: js.UndefOr[String] = js.undefined
     
-    var lookupSessionStorage: js.UndefOr[String] = js.native
+    var lookupSessionStorage: js.UndefOr[String] = js.undefined
     
     /**
       * order and from where user language should be detected
@@ -108,7 +130,7 @@ object mod {
         js.Array[
           querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DetectorOptions {
     
@@ -212,7 +234,9 @@ object mod {
   }
   
   @js.native
-  trait I18nextBrowserLanguageDetector extends LanguageDetectorModule {
+  trait I18nextBrowserLanguageDetector
+    extends StObject
+       with LanguageDetectorModule {
     
     /**
       * Adds detector.
@@ -237,13 +261,13 @@ object mod {
       * Initializes detector.
       */
     def init(): Unit = js.native
-    def init(services: js.UndefOr[scala.Nothing], options: DetectorOptions): Unit = js.native
     def init(services: js.Any): Unit = js.native
     def init(services: js.Any, options: DetectorOptions): Unit = js.native
+    def init(services: Unit, options: DetectorOptions): Unit = js.native
     
     var services: js.Any = js.native
     
     @JSName("type")
-    var type_I18nextBrowserLanguageDetector: languageDetector = js.native
+    var type_I18nextBrowserLanguageDetector: typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.languageDetector = js.native
   }
 }

@@ -2,18 +2,16 @@ package typings.algoliasearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined algoliasearch.algoliasearch/dist/algoliasearch.OptionalCredentials<@algolia/client-recommendation.@algolia/client-recommendation.RecommendationClientOptions> */
-@js.native
 trait OptionalCredentialsRecomm extends StObject {
   
-  var apiKey: js.UndefOr[String] = js.native
+  var apiKey: js.UndefOr[String] = js.undefined
   
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object OptionalCredentialsRecomm {
   

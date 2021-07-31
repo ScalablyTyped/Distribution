@@ -2,49 +2,47 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanChangeCopyRequiresWriterPermissionRestriction extends StObject {
   
-  var canAddChildren: js.UndefOr[Boolean] = js.native
+  var canAddChildren: js.UndefOr[Boolean] = js.undefined
   
-  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.undefined
   
-  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
-  var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.native
+  var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.undefined
   
-  var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
-  var canCopy: js.UndefOr[Boolean] = js.native
+  var canCopy: js.UndefOr[Boolean] = js.undefined
   
-  var canDeleteChildren: js.UndefOr[Boolean] = js.native
+  var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
   
-  var canDeleteTeamDrive: js.UndefOr[Boolean] = js.native
+  var canDeleteTeamDrive: js.UndefOr[Boolean] = js.undefined
   
-  var canDownload: js.UndefOr[Boolean] = js.native
+  var canDownload: js.UndefOr[Boolean] = js.undefined
   
-  var canEdit: js.UndefOr[Boolean] = js.native
+  var canEdit: js.UndefOr[Boolean] = js.undefined
   
-  var canListChildren: js.UndefOr[Boolean] = js.native
+  var canListChildren: js.UndefOr[Boolean] = js.undefined
   
-  var canManageMembers: js.UndefOr[Boolean] = js.native
+  var canManageMembers: js.UndefOr[Boolean] = js.undefined
   
-  var canReadRevisions: js.UndefOr[Boolean] = js.native
+  var canReadRevisions: js.UndefOr[Boolean] = js.undefined
   
-  var canRemoveChildren: js.UndefOr[Boolean] = js.native
+  var canRemoveChildren: js.UndefOr[Boolean] = js.undefined
   
-  var canRename: js.UndefOr[Boolean] = js.native
+  var canRename: js.UndefOr[Boolean] = js.undefined
   
-  var canRenameTeamDrive: js.UndefOr[Boolean] = js.native
+  var canRenameTeamDrive: js.UndefOr[Boolean] = js.undefined
   
-  var canShare: js.UndefOr[Boolean] = js.native
+  var canShare: js.UndefOr[Boolean] = js.undefined
   
-  var canTrashChildren: js.UndefOr[Boolean] = js.native
+  var canTrashChildren: js.UndefOr[Boolean] = js.undefined
 }
 object CanChangeCopyRequiresWriterPermissionRestriction {
   

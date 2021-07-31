@@ -2,49 +2,47 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Method represents a method of an API interface.
   */
-@js.native
 trait SchemaMethod extends StObject {
   
   /**
     * The simple name of this method.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Any metadata attached to the method.
     */
-  var options: js.UndefOr[js.Array[SchemaOption]] = js.native
+  var options: js.UndefOr[js.Array[SchemaOption]] = js.undefined
   
   /**
     * If true, the request is streamed.
     */
-  var requestStreaming: js.UndefOr[Boolean] = js.native
+  var requestStreaming: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A URL of the input message type.
     */
-  var requestTypeUrl: js.UndefOr[String] = js.native
+  var requestTypeUrl: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the response is streamed.
     */
-  var responseStreaming: js.UndefOr[Boolean] = js.native
+  var responseStreaming: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL of the output message type.
     */
-  var responseTypeUrl: js.UndefOr[String] = js.native
+  var responseTypeUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The source syntax of this method.
     */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
 }
 object SchemaMethod {
   

@@ -5,7 +5,6 @@ import typings.angular.mod.IServiceProvider
 import typings.angular.mod.global.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -13,15 +12,16 @@ object mod {
   
   object locker {
     
-    @js.native
-    trait ILockerProvider extends IServiceProvider {
+    trait ILockerProvider
+      extends StObject
+         with IServiceProvider {
       
       /**
         * Allow the defaults to be specified via the `lockerProvider`
         *
         * @param  lockerSettings  The defaults to override
         */
-      def defaults(lockerSettings: ILockerSettings): Unit = js.native
+      def defaults(lockerSettings: ILockerSettings): Unit
     }
     object ILockerProvider {
       
@@ -203,18 +203,17 @@ object mod {
     
     type ILockerServicePutFunction = js.Function1[/* current */ js.Any, js.Any]
     
-    @js.native
     trait ILockerSettings extends StObject {
       
-      var driver: js.UndefOr[String] = js.native
+      var driver: js.UndefOr[String] = js.undefined
       
-      var eventsEnabled: js.UndefOr[Boolean] = js.native
+      var eventsEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var extend: js.UndefOr[js.Object] = js.native
+      var extend: js.UndefOr[js.Object] = js.undefined
       
-      var namespace: js.UndefOr[String | Boolean] = js.native
+      var namespace: js.UndefOr[String | Boolean] = js.undefined
       
-      var separator: js.UndefOr[String] = js.native
+      var separator: js.UndefOr[String] = js.undefined
     }
     object ILockerSettings {
       

@@ -3,15 +3,13 @@ package typings.reactNative.anon
 import typings.reactNative.mod.ScaledSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screen extends StObject {
   
-  var screen: ScaledSize = js.native
+  var screen: ScaledSize
   
-  var window: ScaledSize = js.native
+  var window: ScaledSize
 }
 object Screen {
   

@@ -27,7 +27,6 @@ import typings.reactNotificationsComponent.reactNotificationsComponentStrings.to
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,31 +45,32 @@ object mod {
   
   object store {
     
-    @JSImport("react-notifications-component", "store.addNotification")
+    @JSImport("react-notifications-component", "store")
     @js.native
-    def addNotification(options: ReactNotificationOptions): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-notifications-component", "store.removeNotification")
-    @js.native
-    def removeNotification(id: String): Unit = js.native
+    @scala.inline
+    def addNotification(options: ReactNotificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def removeNotification(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNotification")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait DismissOptions extends StObject {
     
-    var click: js.UndefOr[Boolean] = js.native
+    var click: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var onScreen: js.UndefOr[Boolean] = js.native
+    var onScreen: js.UndefOr[Boolean] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var waitForAnimation: js.UndefOr[Boolean] = js.native
+    var waitForAnimation: js.UndefOr[Boolean] = js.undefined
   }
   object DismissOptions {
     
@@ -127,44 +127,43 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactNotificationOptions extends StObject {
     
-    var animationIn: js.UndefOr[js.Array[String]] = js.native
+    var animationIn: js.UndefOr[js.Array[String]] = js.undefined
     
-    var animationOut: js.UndefOr[js.Array[String]] = js.native
+    var animationOut: js.UndefOr[js.Array[String]] = js.undefined
     
-    var container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center` = js.native
+    var container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
     
     var content: js.UndefOr[
         (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode
-      ] = js.native
+      ] = js.undefined
     
-    var dismiss: js.UndefOr[DismissOptions] = js.native
+    var dismiss: js.UndefOr[DismissOptions] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var insert: js.UndefOr[top | bottom] = js.native
+    var insert: js.UndefOr[top | bottom] = js.undefined
     
-    var message: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.native
+    var message: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.undefined
     
-    var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ js.Any, Unit]] = js.native
+    var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ js.Any, Unit]] = js.undefined
     
-    var slidingEnter: js.UndefOr[TransitionOptions] = js.native
+    var slidingEnter: js.UndefOr[TransitionOptions] = js.undefined
     
-    var slidingExit: js.UndefOr[TransitionOptions] = js.native
+    var slidingExit: js.UndefOr[TransitionOptions] = js.undefined
     
-    var title: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.native
+    var title: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.undefined
     
-    var touchRevert: js.UndefOr[TransitionOptions] = js.native
+    var touchRevert: js.UndefOr[TransitionOptions] = js.undefined
     
-    var touchSlidingExit: js.UndefOr[TransitionOptions] = js.native
+    var touchSlidingExit: js.UndefOr[TransitionOptions] = js.undefined
     
     var `type`: js.UndefOr[
         success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning
-      ] = js.native
+      ] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ReactNotificationOptions {
     
@@ -284,18 +283,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactNotificationProps extends StObject {
     
-    var breakpoint: js.UndefOr[Double] = js.native
+    var breakpoint: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isMobile: js.UndefOr[Boolean] = js.native
+    var isMobile: js.UndefOr[Boolean] = js.undefined
     
-    var types: js.UndefOr[js.Array[String]] = js.native
+    var types: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ReactNotificationProps {
     
@@ -343,16 +341,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TransitionOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     var timingFunction: js.UndefOr[
         ease | linear | `ease-in` | `ease-out` | `ease-in-out` | `step-start` | `step-end`
-      ] = js.native
+      ] = js.undefined
   }
   object TransitionOptions {
     

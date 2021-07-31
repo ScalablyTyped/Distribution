@@ -9,58 +9,56 @@ import typings.devtoolsProtocol.mod.Protocol.Memory.SimulatePressureNotification
 import typings.devtoolsProtocol.mod.Protocol.Memory.StartSamplingRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryApi extends StObject {
   
   /**
     * Simulate OomIntervention by purging V8 memory.
     */
-  def forciblyPurgeJavaScriptMemory(): js.Promise[Unit] = js.native
+  def forciblyPurgeJavaScriptMemory(): js.Promise[Unit]
   
   /**
     * Retrieve native memory allocations profile
     * collected since renderer process startup.
     */
-  def getAllTimeSamplingProfile(): js.Promise[GetAllTimeSamplingProfileResponse] = js.native
+  def getAllTimeSamplingProfile(): js.Promise[GetAllTimeSamplingProfileResponse]
   
   /**
     * Retrieve native memory allocations profile
     * collected since browser process startup.
     */
-  def getBrowserSamplingProfile(): js.Promise[GetBrowserSamplingProfileResponse] = js.native
+  def getBrowserSamplingProfile(): js.Promise[GetBrowserSamplingProfileResponse]
   
-  def getDOMCounters(): js.Promise[GetDOMCountersResponse] = js.native
+  def getDOMCounters(): js.Promise[GetDOMCountersResponse]
   
   /**
     * Retrieve native memory allocations profile collected since last
     * `startSampling` call.
     */
-  def getSamplingProfile(): js.Promise[GetSamplingProfileResponse] = js.native
+  def getSamplingProfile(): js.Promise[GetSamplingProfileResponse]
   
-  def prepareForLeakDetection(): js.Promise[Unit] = js.native
+  def prepareForLeakDetection(): js.Promise[Unit]
   
   /**
     * Enable/disable suppressing memory pressure notifications in all processes.
     */
-  def setPressureNotificationsSuppressed(params: SetPressureNotificationsSuppressedRequest): js.Promise[Unit] = js.native
+  def setPressureNotificationsSuppressed(params: SetPressureNotificationsSuppressedRequest): js.Promise[Unit]
   
   /**
     * Simulate a memory pressure notification in all processes.
     */
-  def simulatePressureNotification(params: SimulatePressureNotificationRequest): js.Promise[Unit] = js.native
+  def simulatePressureNotification(params: SimulatePressureNotificationRequest): js.Promise[Unit]
   
   /**
     * Start collecting native memory profile.
     */
-  def startSampling(params: StartSamplingRequest): js.Promise[Unit] = js.native
+  def startSampling(params: StartSamplingRequest): js.Promise[Unit]
   
   /**
     * Stop collecting native memory profile.
     */
-  def stopSampling(): js.Promise[Unit] = js.native
+  def stopSampling(): js.Promise[Unit]
 }
 object MemoryApi {
   

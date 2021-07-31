@@ -5,28 +5,27 @@ import typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.checkbox
 import typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.confirm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ionic/cli-framework-prompts", "createPromptChoiceSeparator")
+  @JSImport("@ionic/cli-framework-prompts", JSImport.Namespace)
   @js.native
-  def createPromptChoiceSeparator(): Separator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/cli-framework-prompts", "createPromptModule")
-  @js.native
-  def createPromptModule(): js.Promise[PromptModule] = js.native
-  @JSImport("@ionic/cli-framework-prompts", "createPromptModule")
-  @js.native
-  def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = js.native
+  @scala.inline
+  def createPromptChoiceSeparator(): Separator = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptChoiceSeparator")().asInstanceOf[Separator]
   
-  @js.native
+  @scala.inline
+  def createPromptModule(): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")().asInstanceOf[js.Promise[PromptModule]]
+  @scala.inline
+  def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(hasInteractiveOnFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromptModule]]
+  
   trait CreatePromptModuleOptions extends StObject {
     
-    val interactive: js.UndefOr[Boolean] = js.native
+    val interactive: js.UndefOr[Boolean] = js.undefined
     
-    val onFallback: js.UndefOr[js.Function1[/* question */ PromptQuestion, PromptValue | Unit]] = js.native
+    val onFallback: js.UndefOr[js.Function1[/* question */ PromptQuestion, PromptValue | Unit]] = js.undefined
   }
   object CreatePromptModuleOptions {
     
@@ -95,26 +94,26 @@ object mod {
     }
   }
   
-  @js.native
   trait PromptQuestionBase
-    extends typings.inquirer.mod.Question[Answers] {
+    extends StObject
+       with typings.inquirer.mod.Question[Answers] {
     
     /**
       * Default value to use if nothing is entered.
       */
     @JSName("default")
-    var default_PromptQuestionBase: js.UndefOr[PromptValue] = js.native
+    var default_PromptQuestionBase: js.UndefOr[PromptValue] = js.undefined
     
     /**
       * The fallback value to use in non-TTY mode.
       */
-    var fallback: js.UndefOr[PromptValue] = js.native
+    var fallback: js.UndefOr[PromptValue] = js.undefined
     
     /**
       * The question to print.
       */
     @JSName("message")
-    var message_PromptQuestionBase: String = js.native
+    var message_PromptQuestionBase: String
     
     /**
       * The prompt type for this question.
@@ -125,7 +124,7 @@ object mod {
       *    - 'list': Single-value selection.
       */
     @JSName("type")
-    var type_PromptQuestionBase: PromptType = js.native
+    var type_PromptQuestionBase: PromptType
   }
   object PromptQuestionBase {
     
@@ -165,19 +164,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PromptQuestionCheckbox
-    extends PromptQuestionBase
+    extends StObject
+       with PromptQuestionBase
        with PromptQuestion {
     
     @JSName("default")
-    var default_PromptQuestionCheckbox: js.UndefOr[PromptValueCheckbox] = js.native
+    var default_PromptQuestionCheckbox: js.UndefOr[PromptValueCheckbox] = js.undefined
     
     @JSName("fallback")
-    var fallback_PromptQuestionCheckbox: js.UndefOr[PromptValueCheckbox] = js.native
+    var fallback_PromptQuestionCheckbox: js.UndefOr[PromptValueCheckbox] = js.undefined
     
     @JSName("type")
-    var type_PromptQuestionCheckbox: PromptTypeCheckbox = js.native
+    var type_PromptQuestionCheckbox: PromptTypeCheckbox
   }
   object PromptQuestionCheckbox {
     
@@ -214,19 +213,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PromptQuestionConfirm
-    extends PromptQuestionBase
+    extends StObject
+       with PromptQuestionBase
        with PromptQuestion {
     
     @JSName("default")
-    var default_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.native
+    var default_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.undefined
     
     @JSName("fallback")
-    var fallback_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.native
+    var fallback_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.undefined
     
     @JSName("type")
-    var type_PromptQuestionConfirm: PromptTypeConfirm = js.native
+    var type_PromptQuestionConfirm: PromptTypeConfirm
   }
   object PromptQuestionConfirm {
     
@@ -257,19 +256,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PromptQuestionOther
-    extends PromptQuestionBase
+    extends StObject
+       with PromptQuestionBase
        with PromptQuestion {
     
     @JSName("default")
-    var default_PromptQuestionOther: js.UndefOr[PromptValueOther] = js.native
+    var default_PromptQuestionOther: js.UndefOr[PromptValueOther] = js.undefined
     
     @JSName("fallback")
-    var fallback_PromptQuestionOther: js.UndefOr[PromptValueOther] = js.native
+    var fallback_PromptQuestionOther: js.UndefOr[PromptValueOther] = js.undefined
     
     @JSName("type")
-    var type_PromptQuestionOther: PromptTypeOther = js.native
+    var type_PromptQuestionOther: PromptTypeOther
   }
   object PromptQuestionOther {
     

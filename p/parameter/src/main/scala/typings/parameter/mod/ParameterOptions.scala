@@ -2,35 +2,33 @@ package typings.parameter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterOptions extends StObject {
   
   /**
     * convert primitive params to specific type.
     * @default false
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * translate function
     */
-  var translate: js.UndefOr[ParameterTranslateFunction] = js.native
+  var translate: js.UndefOr[ParameterTranslateFunction] = js.undefined
   
   /**
     * config whether to validate the passed in value must be a object
     * @default false
     */
-  var validateRoot: js.UndefOr[Boolean] = js.native
+  var validateRoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * convert empty string(''), NaN, Null to undefined, this option can make rule.required more powerful,
     * **This may change the original input params.**
     * @default false
     */
-  var widelyUndefined: js.UndefOr[Boolean] = js.native
+  var widelyUndefined: js.UndefOr[Boolean] = js.undefined
 }
 object ParameterOptions {
   

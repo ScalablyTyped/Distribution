@@ -3,64 +3,56 @@ package typings.lockfile
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lockfile", "check")
+  @JSImport("lockfile", JSImport.Namespace)
   @js.native
-  def check(path: String, callback: js.Function2[/* err */ Error | Null, /* isLocked */ Boolean, Unit]): Unit = js.native
-  @JSImport("lockfile", "check")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def check(path: String, callback: js.Function2[/* err */ Error | Null, /* isLocked */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def check(
     path: String,
     opts: Options,
     callback: js.Function2[/* err */ Error | Null, /* isLocked */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lockfile", "checkSync")
-  @js.native
-  def checkSync(path: String): Boolean = js.native
-  @JSImport("lockfile", "checkSync")
-  @js.native
-  def checkSync(path: String, opts: Options): Boolean = js.native
+  @scala.inline
+  def checkSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def checkSync(path: String, opts: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("lockfile", "lock")
-  @js.native
-  def lock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  @JSImport("lockfile", "lock")
-  @js.native
-  def lock(path: String, opts: Options, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @scala.inline
+  def lock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lock(path: String, opts: Options, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lockfile", "lockSync")
-  @js.native
-  def lockSync(path: String): Unit = js.native
-  @JSImport("lockfile", "lockSync")
-  @js.native
-  def lockSync(path: String, opts: Options): Unit = js.native
+  @scala.inline
+  def lockSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def lockSync(path: String, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lockfile", "unlock")
-  @js.native
-  def unlock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @scala.inline
+  def unlock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lockfile", "unlockSync")
-  @js.native
-  def unlockSync(path: String): Unit = js.native
+  @scala.inline
+  def unlockSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var pollPeriod: js.UndefOr[Double] = js.native
+    var pollPeriod: js.UndefOr[Double] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retryWait: js.UndefOr[Double] = js.native
+    var retryWait: js.UndefOr[Double] = js.undefined
     
-    var stale: js.UndefOr[Double] = js.native
+    var stale: js.UndefOr[Double] = js.undefined
     
     @JSName("wait")
-    var wait_FOptions: js.UndefOr[Double] = js.native
+    var wait_FOptions: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

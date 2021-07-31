@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAccountCustomizationRequest extends StObject {
   
   /**
     * The QuickSight customizations you're updating in the current AWS Region. 
     */
-  var AccountCustomization: typings.awsSdk.quicksightMod.AccountCustomization = js.native
+  var AccountCustomization: typings.awsSdk.quicksightMod.AccountCustomization
   
   /**
     * The ID for the AWS account that you want to update QuickSight customizations for.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The namespace that you want to update QuickSight customizations for.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
 }
 object UpdateAccountCustomizationRequest {
   

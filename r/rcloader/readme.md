@@ -10,8 +10,8 @@ For build system plugins that need to fetch relative config files (like .jshintr
 | Full name          | rcloader |
 | Keywords           | find, rcfile, rc, search, defaults, config |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 5471324 |
+| # dependents       | 33 |
+| # downloads        | 5380640 |
 | # stars            | 2 |
 
 ## Links

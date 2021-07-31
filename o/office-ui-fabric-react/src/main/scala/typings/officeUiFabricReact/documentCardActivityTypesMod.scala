@@ -10,15 +10,12 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardActivityTypesMod {
   
-  @js.native
   trait IDocumentCardActivity extends StObject
   
-  @js.native
   trait IDocumentCardActivityPerson extends StObject {
     
     /**
@@ -26,28 +23,28 @@ object documentCardActivityTypesMod {
       * Example: Set property to true to get initials for project names consisting of numbers only.
       * @defaultvalue false
       */
-    var allowPhoneInitials: js.UndefOr[Boolean] = js.native
+    var allowPhoneInitials: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The user's initials to display in the profile photo area when there is no image.
       */
-    var initials: js.UndefOr[String] = js.native
+    var initials: js.UndefOr[String] = js.undefined
     
     /**
       * The background color when the user's initials are displayed.
       * @defaultvalue PersonaInitialsColor.blue
       */
-    var initialsColor: js.UndefOr[PersonaInitialsColor] = js.native
+    var initialsColor: js.UndefOr[PersonaInitialsColor] = js.undefined
     
     /**
       * The name of the person.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Path to the profile photo of the person.
       */
-    var profileImageSrc: String = js.native
+    var profileImageSrc: String
   }
   object IDocumentCardActivityPerson {
     
@@ -86,40 +83,41 @@ object documentCardActivityTypesMod {
     }
   }
   
-  @js.native
-  trait IDocumentCardActivityProps extends ClassAttributes[DocumentCardActivityBase] {
+  trait IDocumentCardActivityProps
+    extends StObject
+       with ClassAttributes[DocumentCardActivityBase] {
     
     /**
       * Describes the activity that has taken place, such as "Created Feb 23, 2016".
       */
-    var activity: String = js.native
+    var activity: String
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardActivity]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardActivity]] = js.undefined
     
     /**
       * One or more people who are involved in this activity.
       */
-    var people: js.Array[IDocumentCardActivityPerson] = js.native
+    var people: js.Array[IDocumentCardActivityPerson]
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IDocumentCardActivityStyleProps, IDocumentCardActivityStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardActivityProps {
     
@@ -173,23 +171,22 @@ object documentCardActivityTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardActivityStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if multiple people are being shown.
       */
-    var multiplePeople: js.UndefOr[Boolean] = js.native
+    var multiplePeople: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardActivityStyleProps {
     
@@ -219,20 +216,19 @@ object documentCardActivityTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardActivityStyles extends StObject {
     
-    var activity: IStyle = js.native
+    var activity: IStyle
     
-    var avatar: IStyle = js.native
+    var avatar: IStyle
     
-    var avatars: IStyle = js.native
+    var avatars: IStyle
     
-    var details: IStyle = js.native
+    var details: IStyle
     
-    var name: IStyle = js.native
+    var name: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardActivityStyles {
     

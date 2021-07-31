@@ -6,15 +6,13 @@ import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvatarPairProps extends StObject {
   
-  var collaborators: js.Array[Name] = js.native
+  var collaborators: js.Array[Name]
   
-  var size: js.UndefOr[md | lg | fit] = js.native
+  var size: js.UndefOr[md | lg | fit] = js.undefined
 }
 object AvatarPairProps {
   

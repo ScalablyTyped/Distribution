@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * type of the field bucketed. FacetBucket is currently used only for
   * returning the response object.
   */
-@js.native
 trait SchemaFacetBucket extends StObject {
   
   /**
     * Number of results that match the bucket value. Counts are only returned
     * for searches when count accuracy is ensured. Can be empty.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * Percent of results that match the bucket value. This value is between
@@ -26,9 +24,9 @@ trait SchemaFacetBucket extends StObject {
     * Because percentages are always returned, you should render percentages
     * instead of counts.
     */
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[SchemaValue] = js.native
+  var value: js.UndefOr[SchemaValue] = js.undefined
 }
 object SchemaFacetBucket {
   

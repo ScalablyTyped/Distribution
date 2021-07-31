@@ -12,10 +12,8 @@ import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityPropsAndroid extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait AccessibilityPropsAndroid extends StObject {
     * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
     * @platform android
     */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
@@ -33,7 +31,7 @@ trait AccessibilityPropsAndroid extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
@@ -46,7 +44,7 @@ trait AccessibilityPropsAndroid extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
 }
 object AccessibilityPropsAndroid {
   

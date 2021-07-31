@@ -4,20 +4,18 @@ import typings.rockset.rocksetStrings.FAIL
 import typings.rockset.rocksetStrings.SKIP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputField extends StObject {
   
   // The name of a field, parsed as a SQL qualified name
-  var field_name: js.UndefOr[String] = js.native
+  var field_name: js.UndefOr[String] = js.undefined
   
   // Error in Mapping execution: 'skip' or 'fail'
-  var on_error: js.UndefOr[SKIP | FAIL] = js.native
+  var on_error: js.UndefOr[SKIP | FAIL] = js.undefined
   
   // The name of a sql function
-  var value: js.UndefOr[SqlExpression] = js.native
+  var value: js.UndefOr[SqlExpression] = js.undefined
 }
 object OutputField {
   

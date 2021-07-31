@@ -4,24 +4,22 @@ import typings.exceljs.exceljsStrings.image
 import typings.exceljs.mod.ImageRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageId extends StObject {
   
-  var imageId: String = js.native
+  var imageId: String
   
-  var range: ImageRange = js.native
+  var range: ImageRange
   
-  var `type`: image = js.native
+  var `type`: image
 }
 object ImageId {
   
   @scala.inline
-  def apply(imageId: String, range: ImageRange, `type`: image): ImageId = {
+  def apply(imageId: String, range: ImageRange): ImageId = {
     val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageId]
   }
   

@@ -2,40 +2,38 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/layout
   */
-@js.native
 trait CollectionSelection extends StObject {
   
-  def deselect(): this.type = js.native
+  def deselect(): this.type
   
   /**
     * Make the elements selected (NB other elements outside the collection are not affected).
     * http://js.cytoscape.org/#eles.select
     */
-  def select(): this.type = js.native
+  def select(): this.type
   
   /**
     * Make the selection states of the elements mutable.
     * http://js.cytoscape.org/#eles.selectify
     */
-  def selectify(): this.type = js.native
+  def selectify(): this.type
   
   /**
     * Make the elements not selected (NB other elements outside the collection are not affected).
     * http://js.cytoscape.org/#eles.unselect
     */
-  def unselect(): this.type = js.native
+  def unselect(): this.type
   
   /**
     * Make the selection states of the elements immutable.
     * http://js.cytoscape.org/#eles.unselectify
     */
-  def unselectify(): this.type = js.native
+  def unselectify(): this.type
 }
 object CollectionSelection {
   

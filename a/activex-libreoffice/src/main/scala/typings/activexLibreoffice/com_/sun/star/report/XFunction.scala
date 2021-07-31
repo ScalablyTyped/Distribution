@@ -12,30 +12,29 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a format condition for a control. */
-@js.native
 trait XFunction
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XComponent
      with XChild {
   
   /** specifies if sub reports should be traversed as well. */
-  var DeepTraversing: Boolean = js.native
+  var DeepTraversing: Boolean
   
   /** defines the formula of this function */
-  var Formula: String = js.native
+  var Formula: String
   
   /** defines the formula for the initial value */
-  var InitialFormula: Optional[String] = js.native
+  var InitialFormula: Optional[String]
   
   /** defines the name of the function */
-  var Name: String = js.native
+  var Name: String
   
   /** specifies if the function should be evaluated before the report element will be executed. */
-  var PreEvaluated: Boolean = js.native
+  var PreEvaluated: Boolean
 }
 object XFunction {
   

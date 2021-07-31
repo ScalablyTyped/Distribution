@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReusableConfigWrapper extends StObject {
   
   /** Required. A resource path to a ReusableConfig in the format `projects/∗/locations/∗/reusableConfigs/ *`. */
-  var reusableConfig: js.UndefOr[String] = js.native
+  var reusableConfig: js.UndefOr[String] = js.undefined
   
   /** Required. A user-specified inline ReusableConfigValues. */
-  var reusableConfigValues: js.UndefOr[ReusableConfigValues] = js.native
+  var reusableConfigValues: js.UndefOr[ReusableConfigValues] = js.undefined
 }
 object ReusableConfigWrapper {
   

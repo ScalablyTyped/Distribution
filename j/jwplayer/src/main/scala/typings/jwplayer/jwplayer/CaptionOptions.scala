@@ -2,29 +2,27 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionOptions extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var backgroundOpacity: Double = js.native
+  var backgroundOpacity: Double
   
-  var color: String = js.native
+  var color: String
   
-  var edgeStyle: String = js.native
+  var edgeStyle: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontOpacity: Double = js.native
+  var fontOpacity: Double
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var windowColor: String = js.native
+  var windowColor: String
   
-  var windowOpacity: Double = js.native
+  var windowOpacity: Double
 }
 object CaptionOptions {
   

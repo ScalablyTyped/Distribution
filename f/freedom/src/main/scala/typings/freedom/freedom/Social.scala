@@ -6,23 +6,21 @@ import typings.freedom.freedomStrings.onMessage
 import typings.freedom.freedomStrings.onUserProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Social {
   
   // Status of a client connected to a social network.
-  @js.native
   trait ClientState extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var status: String = js.native
+    var status: String
     
     // Either ONLINE, OFFLINE, or ONLINE_WITH_OTHER_APP
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var userId: String = js.native
+    var userId: String
   }
   object ClientState {
     
@@ -52,14 +50,13 @@ object Social {
   type Clients = StringDictionary[ClientState]
   
   // Event for an incoming messages
-  @js.native
   trait IncomingMessage extends StObject {
     
     // UserID/ClientID/status of user from whom the message comes from.
-    var from: ClientState = js.native
+    var from: ClientState
     
     // Message contents.
-    var message: String = js.native
+    var message: String
   }
   object IncomingMessage {
     
@@ -81,29 +78,28 @@ object Social {
   }
   
   // A request to login to a specific network as a specific agent
-  @js.native
   trait LoginRequest extends StObject {
     
     // Name of the application connecting to the network. Other logins with
     // the same agent field will be listed as having status |ONLINE|, where
     // those with different agents will be listed as
     // |ONLINE_WITH_OTHER_CLIENT|
-    var agent: String = js.native
+    var agent: String
     
     // When |interactive === true| social will always prompt user for login.
     // Promise fails if the user did not login or provided invalid
     // credentials. When |interactive === false|, promise fails unless the
     // social provider has  cached tokens/credentials.
-    var interactive: Boolean = js.native
+    var interactive: Boolean
     
     // When true, social provider will remember the token/credentials.
-    var rememberLogin: Boolean = js.native
+    var rememberLogin: Boolean
     
     // URL of application
-    var url: String = js.native
+    var url: String
     
     // Version of application
-    var version: String = js.native
+    var version: String
   }
   object LoginRequest {
     
@@ -180,21 +176,20 @@ object Social {
   }
   
   // The profile of a user on a social network.
-  @js.native
   trait UserProfile extends StObject {
     
     // Image URI (e.g. data:image/png;base64,adkwe329...)
-    var imageData: js.UndefOr[String] = js.native
+    var imageData: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var userId: String = js.native
+    var userId: String
   }
   object UserProfile {
     

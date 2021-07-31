@@ -2,7 +2,6 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xregexp.xregexpStrings.astral
   - typings.xregexp.xregexpStrings.namespacing
 */
-trait Feature extends FeatureOptions
+trait Feature
+  extends StObject
+     with FeatureOptions
 object Feature {
   
   @scala.inline

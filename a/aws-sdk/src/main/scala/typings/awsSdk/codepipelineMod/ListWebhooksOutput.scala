@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWebhooksOutput extends StObject {
   
   /**
     * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent ListWebhooks call to return the next set of webhooks in the list. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codepipelineMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codepipelineMod.NextToken] = js.undefined
   
   /**
     * The JSON detail returned for each webhook in the list output for the ListWebhooks call.
     */
-  var webhooks: js.UndefOr[WebhookList] = js.native
+  var webhooks: js.UndefOr[WebhookList] = js.undefined
 }
 object ListWebhooksOutput {
   

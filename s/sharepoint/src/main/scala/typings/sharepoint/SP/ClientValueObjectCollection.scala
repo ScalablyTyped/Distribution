@@ -4,15 +4,14 @@ import typings.sharepoint.IEnumerable
 import typings.sharepoint.IEnumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientValueObjectCollection[T]
-  extends ClientValueObject
+  extends StObject
+     with ClientValueObject
      with IEnumerable[T] {
   
-  def get_count(): Double = js.native
+  def get_count(): Double
 }
 object ClientValueObjectCollection {
   
@@ -31,7 +30,7 @@ object ClientValueObjectCollection {
   }
   
   @scala.inline
-  implicit class ClientValueObjectCollectionMutableBuilder[Self <: ClientValueObjectCollection[_], T] (val x: Self with ClientValueObjectCollection[T]) extends AnyVal {
+  implicit class ClientValueObjectCollectionMutableBuilder[Self <: ClientValueObjectCollection[?], T] (val x: Self & ClientValueObjectCollection[T]) extends AnyVal {
     
     @scala.inline
     def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))

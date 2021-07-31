@@ -10,9 +10,9 @@ Promise-based transporter layer with embedded retry strategy.
 | ------------------ | :-------------: |
 | Full name          | @algolia/transporter |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 9 |
-| # downloads        | 4094432 |
+| # releases         | 37 |
+| # dependents       | 11 |
+| # downloads        | 6776025 |
 | # stars            | 0 |
 
 ## Links

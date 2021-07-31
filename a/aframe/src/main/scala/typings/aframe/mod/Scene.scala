@@ -6,12 +6,12 @@ import typings.three.mod.Camera
 import typings.three.mod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Scene
-  extends Entity[ObjectMap[Component[js.Any, System[js.Any]]]] {
+  extends StObject
+     with Entity[ObjectMap[Component[js.Any, System[js.Any]]]] {
   
   def addEventListener(`type`: SceneEvents, listener: EventListener): Unit = js.native
   def addEventListener(`type`: SceneEvents, listener: EventListener, useCapture: Boolean): Unit = js.native
@@ -40,7 +40,7 @@ trait Scene
   var renderer: WebGLRenderer = js.native
   
   // THREE.VREffect
-  var systems: ObjectMap[System[_]] = js.native
+  var systems: ObjectMap[System[js.Any]] = js.native
   
   var time: Double = js.native
 }

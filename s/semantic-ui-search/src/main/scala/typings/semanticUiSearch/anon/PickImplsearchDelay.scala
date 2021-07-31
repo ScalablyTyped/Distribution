@@ -2,14 +2,12 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, 'searchDelay'> */
-@js.native
 trait PickImplsearchDelay extends StObject {
   
-  var searchDelay: Double = js.native
+  var searchDelay: Double
 }
 object PickImplsearchDelay {
   

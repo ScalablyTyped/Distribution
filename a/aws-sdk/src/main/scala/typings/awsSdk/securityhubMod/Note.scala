@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Note extends StObject {
   
   /**
     * The text of a note.
     */
-  var Text: NonEmptyString = js.native
+  var Text: NonEmptyString
   
   /**
     * The timestamp of when the note was updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var UpdatedAt: NonEmptyString = js.native
+  var UpdatedAt: NonEmptyString
   
   /**
     * The principal that created a note.
     */
-  var UpdatedBy: NonEmptyString = js.native
+  var UpdatedBy: NonEmptyString
 }
 object Note {
   

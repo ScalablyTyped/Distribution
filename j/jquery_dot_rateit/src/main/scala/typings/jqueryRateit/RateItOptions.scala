@@ -2,35 +2,33 @@ package typings.jqueryRateit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateItOptions extends StObject {
   
-  var backingfld: js.UndefOr[String] = js.native
+  var backingfld: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var ispreset: js.UndefOr[Boolean] = js.native
+  var ispreset: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[RateItMode] = js.native
+  var mode: js.UndefOr[RateItMode] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var resetable: js.UndefOr[Boolean] = js.native
+  var resetable: js.UndefOr[Boolean] = js.undefined
   
-  var starheight: js.UndefOr[Double] = js.native
+  var starheight: js.UndefOr[Double] = js.undefined
   
-  var starwidth: js.UndefOr[Double] = js.native
+  var starwidth: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object RateItOptions {
   

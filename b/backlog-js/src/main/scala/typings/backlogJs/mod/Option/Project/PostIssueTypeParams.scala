@@ -2,15 +2,13 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostIssueTypeParams extends StObject {
   
-  var color: IssueTypeColor = js.native
+  var color: IssueTypeColor
   
-  var name: String = js.native
+  var name: String
 }
 object PostIssueTypeParams {
   

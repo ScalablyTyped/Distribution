@@ -3,7 +3,6 @@ package typings.uuidjs
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,37 @@ object mod {
   
   @JSImport("uuidjs", JSImport.Default)
   @js.native
-  class default () extends UUIDClass
+  class default ()
+    extends StObject
+       with UUIDClass {
+    
+    /* CompleteClass */
+    override val bitFields: UUIDFields[String] = js.native
+    
+    /* CompleteClass */
+    override val bitString: String = js.native
+    
+    /* CompleteClass */
+    override def equals(uuid: UUIDClass): Boolean = js.native
+    
+    /* CompleteClass */
+    override val hexFields: UUIDFields[String] = js.native
+    
+    /* CompleteClass */
+    override val hexNoDelim: String = js.native
+    
+    /* CompleteClass */
+    override val hexString: String = js.native
+    
+    /* CompleteClass */
+    override val intFields: UUIDFields[Double] = js.native
+    
+    /* CompleteClass */
+    override val urn: String = js.native
+    
+    /* CompleteClass */
+    override val version: Double = js.native
+  }
   /* static members */
   object default {
     
@@ -34,17 +63,14 @@ object mod {
     @js.native
     val NIL: UUIDClass = js.native
     
-    @JSImport("uuidjs", "default.genV1")
-    @js.native
-    def genV1(): UUIDClass = js.native
+    @scala.inline
+    def genV1(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUIDClass]
     
-    @JSImport("uuidjs", "default.genV4")
-    @js.native
-    def genV4(): UUIDClass = js.native
+    @scala.inline
+    def genV4(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUIDClass]
     
-    @JSImport("uuidjs", "default.generate")
-    @js.native
-    def generate(): String = js.native
+    @scala.inline
+    def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
     
     // Hide unnecessary methods
     @JSImport("uuidjs", "default.overwrittenUUID")
@@ -53,17 +79,14 @@ object mod {
     @scala.inline
     def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
     
-    @JSImport("uuidjs", "default.parse")
-    @js.native
-    def parse(strId: String): UUIDClass = js.native
+    @scala.inline
+    def parse(strId: String): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUIDClass]
     
-    @JSImport("uuidjs", "default.resetState")
-    @js.native
-    def resetState(): Unit = js.native
+    @scala.inline
+    def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
     
-    @JSImport("uuidjs", "default.useMathRandom")
-    @js.native
-    def useMathRandom(): Unit = js.native
+    @scala.inline
+    def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
   }
   
   @JSImport("uuidjs", "FIELD_NAMES")
@@ -78,17 +101,14 @@ object mod {
   @js.native
   val NIL: UUID = js.native
   
-  @JSImport("uuidjs", "genV1")
-  @js.native
-  def genV1(): UUID = js.native
+  @scala.inline
+  def genV1(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUID]
   
-  @JSImport("uuidjs", "genV4")
-  @js.native
-  def genV4(): UUID = js.native
+  @scala.inline
+  def genV4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUID]
   
-  @JSImport("uuidjs", "generate")
-  @js.native
-  def generate(): String = js.native
+  @scala.inline
+  def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
   
   @JSImport("uuidjs", "overwrittenUUID")
   @js.native
@@ -96,39 +116,35 @@ object mod {
   @scala.inline
   def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
   
-  @JSImport("uuidjs", "parse")
-  @js.native
-  def parse(strId: String): UUID = js.native
+  @scala.inline
+  def parse(strId: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUID]
   
-  @JSImport("uuidjs", "resetState")
-  @js.native
-  def resetState(): Unit = js.native
+  @scala.inline
+  def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
   
-  @JSImport("uuidjs", "useMathRandom")
-  @js.native
-  def useMathRandom(): Unit = js.native
+  @scala.inline
+  def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
   
   /** @deprecated Use class-based API */
-  @js.native
   trait UUID extends StObject {
     
-    var bitFields: UUIDFields[String] = js.native
+    var bitFields: UUIDFields[String]
     
-    var bitString: String = js.native
+    var bitString: String
     
-    def equals(uuid: UUID): Boolean = js.native
+    def equals(uuid: UUID): Boolean
     
-    var hexFields: UUIDFields[String] = js.native
+    var hexFields: UUIDFields[String]
     
-    var hexNoDelim: String = js.native
+    var hexNoDelim: String
     
-    var hexString: String = js.native
+    var hexString: String
     
-    var intFields: UUIDFields[Double] = js.native
+    var intFields: UUIDFields[Double]
     
-    var urn: String = js.native
+    var urn: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object UUID {
     
@@ -181,26 +197,25 @@ object mod {
     }
   }
   
-  @js.native
   trait UUIDClass extends StObject {
     
-    val bitFields: UUIDFields[String] = js.native
+    val bitFields: UUIDFields[String]
     
-    val bitString: String = js.native
+    val bitString: String
     
-    def equals(uuid: UUIDClass): Boolean = js.native
+    def equals(uuid: UUIDClass): Boolean
     
-    val hexFields: UUIDFields[String] = js.native
+    val hexFields: UUIDFields[String]
     
-    val hexNoDelim: String = js.native
+    val hexNoDelim: String
     
-    val hexString: String = js.native
+    val hexString: String
     
-    val intFields: UUIDFields[Double] = js.native
+    val intFields: UUIDFields[Double]
     
-    val urn: String = js.native
+    val urn: String
     
-    val version: Double = js.native
+    val version: Double
   }
   object UUIDClass {
     
@@ -254,7 +269,9 @@ object mod {
   }
   
   @js.native
-  trait UUIDFields[T] extends Array[T] {
+  trait UUIDFields[T]
+    extends StObject
+       with Array[T] {
     
     var clockSeqHiAndReserved: T = js.native
     

@@ -3,29 +3,27 @@ package typings.vsoNodeApi.vssinterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrappedException extends StObject {
   
-  var customProperties: StringDictionary[js.Any] = js.native
+  var customProperties: StringDictionary[js.Any]
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var eventId: Double = js.native
+  var eventId: Double
   
-  var helpLink: String = js.native
+  var helpLink: String
   
-  var innerException: WrappedException = js.native
+  var innerException: WrappedException
   
-  var message: String = js.native
+  var message: String
   
-  var stackTrace: String = js.native
+  var stackTrace: String
   
-  var typeKey: String = js.native
+  var typeKey: String
   
-  var typeName: String = js.native
+  var typeName: String
 }
 object WrappedException {
   

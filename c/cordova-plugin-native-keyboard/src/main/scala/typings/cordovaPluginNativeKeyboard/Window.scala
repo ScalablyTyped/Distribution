@@ -2,13 +2,11 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var NativeKeyboard: typings.cordovaPluginNativeKeyboard.NativeKeyboard = js.native
+  var NativeKeyboard: typings.cordovaPluginNativeKeyboard.NativeKeyboard
 }
 object Window {
   

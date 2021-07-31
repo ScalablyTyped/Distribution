@@ -4,36 +4,34 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentUpdate extends StObject {
   
   /**
     * The current state of this agent update
     */
-  var currentState: String = js.native
+  var currentState: String
   
   /**
     * Gets the date on which this agent update was requested.
     */
-  var requestTime: Date = js.native
+  var requestTime: Date
   
   /**
     * The identity that request the agent update
     */
-  var requestedBy: IdentityRef = js.native
+  var requestedBy: IdentityRef
   
   /**
     * Gets or sets the source agent version of the agent update
     */
-  var sourceVersion: PackageVersion = js.native
+  var sourceVersion: PackageVersion
   
   /**
     * Gets or sets the target agent version of the agent update
     */
-  var targetVersion: PackageVersion = js.native
+  var targetVersion: PackageVersion
 }
 object TaskAgentUpdate {
   

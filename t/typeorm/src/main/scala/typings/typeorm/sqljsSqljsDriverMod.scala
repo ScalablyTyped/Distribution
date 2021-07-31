@@ -6,7 +6,6 @@ import typings.typeorm.sqliteAbstractAbstractSqliteDriverMod.AbstractSqliteDrive
 import typings.typeorm.sqljsSqljsConnectionOptionsMod.SqljsConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqljsSqljsDriverMod {
@@ -28,22 +27,22 @@ object sqljsSqljsDriverMod {
       * Creates connection with an optional database.
       * If database is specified it is loaded, otherwise a new empty database is created.
       */
-    /* protected */ def createDatabaseConnectionWithImport(): js.Promise[_] = js.native
-    /* protected */ def createDatabaseConnectionWithImport(database: Uint8Array): js.Promise[_] = js.native
+    /* protected */ def createDatabaseConnectionWithImport(): js.Promise[js.Any] = js.native
+    /* protected */ def createDatabaseConnectionWithImport(database: Uint8Array): js.Promise[js.Any] = js.native
     
     /**
       * Returns the current database as Uint8Array.
       */
-    def export(): Uint8Array = js.native
+    def `export`(): Uint8Array = js.native
     
     /**
       * Loads a database from a given file (Node.js), local storage key (browser) or array.
       * This will delete the current database!
       */
-    def load(fileNameOrLocalStorageOrData: String): js.Promise[_] = js.native
-    def load(fileNameOrLocalStorageOrData: String, checkIfFileOrLocalStorageExists: Boolean): js.Promise[_] = js.native
-    def load(fileNameOrLocalStorageOrData: Uint8Array): js.Promise[_] = js.native
-    def load(fileNameOrLocalStorageOrData: Uint8Array, checkIfFileOrLocalStorageExists: Boolean): js.Promise[_] = js.native
+    def load(fileNameOrLocalStorageOrData: String): js.Promise[js.Any] = js.native
+    def load(fileNameOrLocalStorageOrData: String, checkIfFileOrLocalStorageExists: Boolean): js.Promise[js.Any] = js.native
+    def load(fileNameOrLocalStorageOrData: Uint8Array): js.Promise[js.Any] = js.native
+    def load(fileNameOrLocalStorageOrData: Uint8Array, checkIfFileOrLocalStorageExists: Boolean): js.Promise[js.Any] = js.native
     
     @JSName("options")
     var options_SqljsDriver: SqljsConnectionOptions = js.native

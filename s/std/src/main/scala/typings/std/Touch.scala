@@ -2,42 +2,40 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A single contact point on a touch-sensitive device. The contact point is commonly a finger or stylus and the device may be a touchscreen or trackpad. */
-@js.native
 trait Touch extends StObject {
   
-  val altitudeAngle: Double = js.native
+  val altitudeAngle: Double
   
-  val azimuthAngle: Double = js.native
+  val azimuthAngle: Double
   
-  val clientX: Double = js.native
+  val clientX: Double
   
-  val clientY: Double = js.native
+  val clientY: Double
   
-  val force: Double = js.native
+  val force: Double
   
-  val identifier: Double = js.native
+  val identifier: Double
   
-  val pageX: Double = js.native
+  val pageX: Double
   
-  val pageY: Double = js.native
+  val pageY: Double
   
-  val radiusX: Double = js.native
+  val radiusX: Double
   
-  val radiusY: Double = js.native
+  val radiusY: Double
   
-  val rotationAngle: Double = js.native
+  val rotationAngle: Double
   
-  val screenX: Double = js.native
+  val screenX: Double
   
-  val screenY: Double = js.native
+  val screenY: Double
   
-  val target: EventTarget = js.native
+  val target: EventTarget
   
-  val touchType: TouchType = js.native
+  val touchType: TouchType
 }
 object Touch {
   

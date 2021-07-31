@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1BigQuerySource extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GoogleCloudDatalabelingV1beta1BigQuerySource extends StObject {
     * schema](/ml-engine/docs/continuous-evaluation/create-job#table-schema). Provide the table URI in the following format: "bq://{your_project_id}/
     * {your_dataset_name}/{your_table_name}" [Learn more](/ml-engine/docs/continuous-evaluation/create-job#table-schema).
     */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1BigQuerySource {
   

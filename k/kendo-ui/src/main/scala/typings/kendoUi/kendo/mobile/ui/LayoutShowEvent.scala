@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayoutShowEvent extends LayoutEvent {
+trait LayoutShowEvent
+  extends StObject
+     with LayoutEvent {
   
-  var layout: js.UndefOr[JQuery] = js.native
+  var layout: js.UndefOr[JQuery] = js.undefined
   
-  var view: js.UndefOr[JQuery] = js.native
+  var view: js.UndefOr[JQuery] = js.undefined
 }
 object LayoutShowEvent {
   

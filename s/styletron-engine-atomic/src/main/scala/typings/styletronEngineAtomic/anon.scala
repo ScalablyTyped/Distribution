@@ -2,17 +2,15 @@ package typings.styletronEngineAtomic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Block extends StObject {
     
-    var block: String = js.native
+    var block: String
     
-    var pseudo: String = js.native
+    var pseudo: String
   }
   object Block {
     

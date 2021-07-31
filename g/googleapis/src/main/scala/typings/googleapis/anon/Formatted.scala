@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formatted extends StObject {
   
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
-  var formatted: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.undefined
   
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
-  var honorificPrefix: js.UndefOr[String] = js.native
+  var honorificPrefix: js.UndefOr[String] = js.undefined
   
-  var honorificSuffix: js.UndefOr[String] = js.native
+  var honorificSuffix: js.UndefOr[String] = js.undefined
   
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
 }
 object Formatted {
   

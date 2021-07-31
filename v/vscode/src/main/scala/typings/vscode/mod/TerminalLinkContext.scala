@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminalLinkContext extends StObject {
   
   /**
     * This is the text from the unwrapped line in the terminal.
     */
-  var line: String = js.native
+  var line: String
   
   /**
     * The terminal the link belongs to.
     */
-  var terminal: Terminal = js.native
+  var terminal: Terminal
 }
 object TerminalLinkContext {
   

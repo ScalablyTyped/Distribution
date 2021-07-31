@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSchemaRequest extends StObject {
   
   /**
     * The name that is associated with the schema. This is unique to each account and in each region.
     */
-  var Name: SchemaName = js.native
+  var Name: SchemaName
 }
 object CreateSchemaRequest {
   

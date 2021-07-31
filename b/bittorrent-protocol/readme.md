@@ -10,9 +10,9 @@ Simple, robust, BitTorrent peer wire protocol implementation
 | ------------------ | :-------------: |
 | Full name          | bittorrent-protocol |
 | Keywords           | bittorrent, p2p, peer, peer-to-peer, protocol, stream, torrent, wire |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 140982 |
+| # releases         | 4 |
+| # dependents       | 8 |
+| # downloads        | 160788 |
 | # stars            | 1 |
 
 ## Links

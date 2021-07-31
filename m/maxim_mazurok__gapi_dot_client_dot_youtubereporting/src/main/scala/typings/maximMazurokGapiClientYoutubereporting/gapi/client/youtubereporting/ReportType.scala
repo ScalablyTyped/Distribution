@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportType extends StObject {
   
   /** The date/time when this report type was/will be deprecated. */
-  var deprecateTime: js.UndefOr[String] = js.native
+  var deprecateTime: js.UndefOr[String] = js.undefined
   
   /** The ID of the report type (max. 100 characters). */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The name of the report type (max. 100 characters). */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * True if this a system-managed report type; otherwise false. Reporting jobs for system-managed report types are created automatically and can thus not be used in the `CreateJob`
     * method.
     */
-  var systemManaged: js.UndefOr[Boolean] = js.native
+  var systemManaged: js.UndefOr[Boolean] = js.undefined
 }
 object ReportType {
   

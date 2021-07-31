@@ -7,7 +7,6 @@ import typings.arcgisRestApi.mod.SymbolType
 import typings.arcgisRestApi.mod.esriGeometryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcgisRestApiStrings {
@@ -38,157 +37,219 @@ object arcgisRestApiStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait esriGeometryEnvelope extends esriGeometryType
+  sealed trait esriGeometryEnvelope
+    extends StObject
+       with esriGeometryType
   @scala.inline
   def esriGeometryEnvelope: esriGeometryEnvelope = "esriGeometryEnvelope".asInstanceOf[esriGeometryEnvelope]
   
   @js.native
-  sealed trait esriGeometryMultipoint extends esriGeometryType
+  sealed trait esriGeometryMultipoint
+    extends StObject
+       with esriGeometryType
   @scala.inline
   def esriGeometryMultipoint: esriGeometryMultipoint = "esriGeometryMultipoint".asInstanceOf[esriGeometryMultipoint]
   
   @js.native
-  sealed trait esriGeometryPoint extends esriGeometryType
+  sealed trait esriGeometryPoint
+    extends StObject
+       with esriGeometryType
   @scala.inline
   def esriGeometryPoint: esriGeometryPoint = "esriGeometryPoint".asInstanceOf[esriGeometryPoint]
   
   @js.native
-  sealed trait esriGeometryPolygon extends esriGeometryType
+  sealed trait esriGeometryPolygon
+    extends StObject
+       with esriGeometryType
   @scala.inline
   def esriGeometryPolygon: esriGeometryPolygon = "esriGeometryPolygon".asInstanceOf[esriGeometryPolygon]
   
   @js.native
-  sealed trait esriGeometryPolyline extends esriGeometryType
+  sealed trait esriGeometryPolyline
+    extends StObject
+       with esriGeometryType
   @scala.inline
   def esriGeometryPolyline: esriGeometryPolyline = "esriGeometryPolyline".asInstanceOf[esriGeometryPolyline]
   
   @js.native
-  sealed trait esriPFS extends SymbolType
+  sealed trait esriPFS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriPFS: esriPFS = "esriPFS".asInstanceOf[esriPFS]
   
   @js.native
-  sealed trait esriPMS extends SymbolType
+  sealed trait esriPMS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriPMS: esriPMS = "esriPMS".asInstanceOf[esriPMS]
   
   @js.native
-  sealed trait esriSFS extends SymbolType
+  sealed trait esriSFS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriSFS: esriSFS = "esriSFS".asInstanceOf[esriSFS]
   
   @js.native
-  sealed trait esriSFSBackwardDiagonal extends SimpleFillSymbolStyle
+  sealed trait esriSFSBackwardDiagonal
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSBackwardDiagonal: esriSFSBackwardDiagonal = "esriSFSBackwardDiagonal".asInstanceOf[esriSFSBackwardDiagonal]
   
   @js.native
-  sealed trait esriSFSCross extends SimpleFillSymbolStyle
+  sealed trait esriSFSCross
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSCross: esriSFSCross = "esriSFSCross".asInstanceOf[esriSFSCross]
   
   @js.native
-  sealed trait esriSFSDiagonalCross extends SimpleFillSymbolStyle
+  sealed trait esriSFSDiagonalCross
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSDiagonalCross: esriSFSDiagonalCross = "esriSFSDiagonalCross".asInstanceOf[esriSFSDiagonalCross]
   
   @js.native
-  sealed trait esriSFSForwardDiagonal extends SimpleFillSymbolStyle
+  sealed trait esriSFSForwardDiagonal
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSForwardDiagonal: esriSFSForwardDiagonal = "esriSFSForwardDiagonal".asInstanceOf[esriSFSForwardDiagonal]
   
   @js.native
-  sealed trait esriSFSHorizontal extends SimpleFillSymbolStyle
+  sealed trait esriSFSHorizontal
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSHorizontal: esriSFSHorizontal = "esriSFSHorizontal".asInstanceOf[esriSFSHorizontal]
   
   @js.native
-  sealed trait esriSFSNull extends SimpleFillSymbolStyle
+  sealed trait esriSFSNull
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSNull: esriSFSNull = "esriSFSNull".asInstanceOf[esriSFSNull]
   
   @js.native
-  sealed trait esriSFSSolid extends SimpleFillSymbolStyle
+  sealed trait esriSFSSolid
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSSolid: esriSFSSolid = "esriSFSSolid".asInstanceOf[esriSFSSolid]
   
   @js.native
-  sealed trait esriSFSVertical extends SimpleFillSymbolStyle
+  sealed trait esriSFSVertical
+    extends StObject
+       with SimpleFillSymbolStyle
   @scala.inline
   def esriSFSVertical: esriSFSVertical = "esriSFSVertical".asInstanceOf[esriSFSVertical]
   
   @js.native
-  sealed trait esriSLS extends SymbolType
+  sealed trait esriSLS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriSLS: esriSLS = "esriSLS".asInstanceOf[esriSLS]
   
   @js.native
-  sealed trait esriSLSDash extends SimpleLineSymbolStyle
+  sealed trait esriSLSDash
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSDash: esriSLSDash = "esriSLSDash".asInstanceOf[esriSLSDash]
   
   @js.native
-  sealed trait esriSLSDashDot extends SimpleLineSymbolStyle
+  sealed trait esriSLSDashDot
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSDashDot: esriSLSDashDot = "esriSLSDashDot".asInstanceOf[esriSLSDashDot]
   
   @js.native
-  sealed trait esriSLSDashDotDot extends SimpleLineSymbolStyle
+  sealed trait esriSLSDashDotDot
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSDashDotDot: esriSLSDashDotDot = "esriSLSDashDotDot".asInstanceOf[esriSLSDashDotDot]
   
   @js.native
-  sealed trait esriSLSDot extends SimpleLineSymbolStyle
+  sealed trait esriSLSDot
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSDot: esriSLSDot = "esriSLSDot".asInstanceOf[esriSLSDot]
   
   @js.native
-  sealed trait esriSLSNull extends SimpleLineSymbolStyle
+  sealed trait esriSLSNull
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSNull: esriSLSNull = "esriSLSNull".asInstanceOf[esriSLSNull]
   
   @js.native
-  sealed trait esriSLSSolid extends SimpleLineSymbolStyle
+  sealed trait esriSLSSolid
+    extends StObject
+       with SimpleLineSymbolStyle
   @scala.inline
   def esriSLSSolid: esriSLSSolid = "esriSLSSolid".asInstanceOf[esriSLSSolid]
   
   @js.native
-  sealed trait esriSMS extends SymbolType
+  sealed trait esriSMS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriSMS: esriSMS = "esriSMS".asInstanceOf[esriSMS]
   
   @js.native
-  sealed trait esriSMSCircle extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSCircle
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSCircle: esriSMSCircle = "esriSMSCircle".asInstanceOf[esriSMSCircle]
   
   @js.native
-  sealed trait esriSMSCross extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSCross
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSCross: esriSMSCross = "esriSMSCross".asInstanceOf[esriSMSCross]
   
   @js.native
-  sealed trait esriSMSDiamond extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSDiamond
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSDiamond: esriSMSDiamond = "esriSMSDiamond".asInstanceOf[esriSMSDiamond]
   
   @js.native
-  sealed trait esriSMSSquare extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSSquare
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSSquare: esriSMSSquare = "esriSMSSquare".asInstanceOf[esriSMSSquare]
   
   @js.native
-  sealed trait esriSMSTriangle extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSTriangle
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSTriangle: esriSMSTriangle = "esriSMSTriangle".asInstanceOf[esriSMSTriangle]
   
   @js.native
-  sealed trait esriSMSX extends SimpleMarkerSymbolStyle
+  sealed trait esriSMSX
+    extends StObject
+       with SimpleMarkerSymbolStyle
   @scala.inline
   def esriSMSX: esriSMSX = "esriSMSX".asInstanceOf[esriSMSX]
   
   @js.native
-  sealed trait esriTS extends SymbolType
+  sealed trait esriTS
+    extends StObject
+       with SymbolType
   @scala.inline
   def esriTS: esriTS = "esriTS".asInstanceOf[esriTS]
   

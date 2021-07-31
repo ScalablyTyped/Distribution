@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetSettingsResponse extends StObject {
   
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  var taskID: Double = js.native
+  var taskID: Double
   
   /**
     * When the settings got updated.
     */
-  var updatedAt: Double = js.native
+  var updatedAt: Double
 }
 object SetSettingsResponse {
   

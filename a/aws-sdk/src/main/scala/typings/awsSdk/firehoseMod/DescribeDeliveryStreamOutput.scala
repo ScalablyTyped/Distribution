@@ -2,16 +2,14 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeliveryStreamOutput extends StObject {
   
   /**
     * Information about the delivery stream.
     */
-  var DeliveryStreamDescription: typings.awsSdk.firehoseMod.DeliveryStreamDescription = js.native
+  var DeliveryStreamDescription: typings.awsSdk.firehoseMod.DeliveryStreamDescription
 }
 object DescribeDeliveryStreamOutput {
   

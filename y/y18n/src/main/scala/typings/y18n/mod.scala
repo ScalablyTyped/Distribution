@@ -2,7 +2,6 @@ package typings.y18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,33 +11,34 @@ object mod {
   /**
     * Create an instance of y18n with the config provided
     */
-  class ^ () extends Y18N {
+  class ^ ()
+    extends StObject
+       with Y18N {
     def this(config: Config) = this()
   }
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * The locale directory, default ./locales.
       */
-    var directory: String = js.native
+    var directory: String
     
     /**
       * Should fallback to a language-only file (e.g. en.json) be allowed
       * if a file matching the locale does not exist (e.g. en_US.json), default true.
       */
-    var fallbackToLanguage: Boolean = js.native
+    var fallbackToLanguage: Boolean
     
     /**
       * What locale should be used.
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * Should newly observed strings be updated in file, default true.
       */
-    var updateFiles: Boolean = js.native
+    var updateFiles: Boolean
   }
   object Config {
     
@@ -72,51 +72,20 @@ object mod {
       * Print a localized string, %s will be replaced with args.
       */
     def __(str: String): String = js.native
-    def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: String): String = js.native
-    def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: String): String = js.native
-    def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: String, arg3: String): String = js.native
     def __(str: String, arg1: String): String = js.native
-    def __(str: String, arg1: String, arg2: js.UndefOr[scala.Nothing], arg3: String): String = js.native
     def __(str: String, arg1: String, arg2: String): String = js.native
     def __(str: String, arg1: String, arg2: String, arg3: String): String = js.native
+    def __(str: String, arg1: String, arg2: Unit, arg3: String): String = js.native
+    def __(str: String, arg1: Unit, arg2: String): String = js.native
+    def __(str: String, arg1: Unit, arg2: String, arg3: String): String = js.native
+    def __(str: String, arg1: Unit, arg2: Unit, arg3: String): String = js.native
     
     /**
       * Print a localized string with appropriate pluralization.
       * If %d is provided in the string, the count will replace this placeholder.
       */
     def __n(singularString: String, pluralString: String, count: Double): String = js.native
-    def __n(
-      singularString: String,
-      pluralString: String,
-      count: Double,
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: js.UndefOr[scala.Nothing],
-      arg3: String
-    ): String = js.native
-    def __n(
-      singularString: String,
-      pluralString: String,
-      count: Double,
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: String
-    ): String = js.native
-    def __n(
-      singularString: String,
-      pluralString: String,
-      count: Double,
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: String,
-      arg3: String
-    ): String = js.native
     def __n(singularString: String, pluralString: String, count: Double, arg1: String): String = js.native
-    def __n(
-      singularString: String,
-      pluralString: String,
-      count: Double,
-      arg1: String,
-      arg2: js.UndefOr[scala.Nothing],
-      arg3: String
-    ): String = js.native
     def __n(singularString: String, pluralString: String, count: Double, arg1: String, arg2: String): String = js.native
     def __n(
       singularString: String,
@@ -126,6 +95,24 @@ object mod {
       arg2: String,
       arg3: String
     ): String = js.native
+    def __n(
+      singularString: String,
+      pluralString: String,
+      count: Double,
+      arg1: String,
+      arg2: Unit,
+      arg3: String
+    ): String = js.native
+    def __n(singularString: String, pluralString: String, count: Double, arg1: Unit, arg2: String): String = js.native
+    def __n(
+      singularString: String,
+      pluralString: String,
+      count: Double,
+      arg1: Unit,
+      arg2: String,
+      arg3: String
+    ): String = js.native
+    def __n(singularString: String, pluralString: String, count: Double, arg1: Unit, arg2: Unit, arg3: String): String = js.native
     
     /**
       * What locale is currently being used?

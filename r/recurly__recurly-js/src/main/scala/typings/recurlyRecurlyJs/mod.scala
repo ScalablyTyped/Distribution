@@ -3,7 +3,6 @@ package typings.recurlyRecurlyJs
 import typings.recurlyRecurlyJs.recurlyMod.Recurly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,10 +13,9 @@ object mod {
     @js.native
     val recurly: Recurly = js.native
     
-    @js.native
     trait Window extends StObject {
       
-      var recurly: Recurly = js.native
+      var recurly: Recurly
     }
     object Window {
       

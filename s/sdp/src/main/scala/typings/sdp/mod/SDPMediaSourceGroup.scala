@@ -2,15 +2,13 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPMediaSourceGroup extends StObject {
   
-  var semantics: String = js.native
+  var semantics: String
   
-  var ssrcs: js.Array[Double] = js.native
+  var ssrcs: js.Array[Double]
 }
 object SDPMediaSourceGroup {
   

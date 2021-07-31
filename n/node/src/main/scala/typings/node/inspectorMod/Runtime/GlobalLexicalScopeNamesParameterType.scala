@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalLexicalScopeNamesParameterType extends StObject {
   
   /**
     * Specifies in which execution context to lookup global scope variables.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
 }
 object GlobalLexicalScopeNamesParameterType {
   

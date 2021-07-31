@@ -4,67 +4,65 @@ import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlayToReceiver extends StObject {
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  def notifyDurationChange(duration: Double): Unit = js.native
+  def notifyDurationChange(duration: Double): Unit
   
-  def notifyEnded(): Unit = js.native
+  def notifyEnded(): Unit
   
-  def notifyError(): Unit = js.native
+  def notifyError(): Unit
   
-  def notifyLoadedMetadata(): Unit = js.native
+  def notifyLoadedMetadata(): Unit
   
-  def notifyPaused(): Unit = js.native
+  def notifyPaused(): Unit
   
-  def notifyPlaying(): Unit = js.native
+  def notifyPlaying(): Unit
   
-  def notifyRateChange(rate: Double): Unit = js.native
+  def notifyRateChange(rate: Double): Unit
   
-  def notifySeeked(): Unit = js.native
+  def notifySeeked(): Unit
   
-  def notifySeeking(): Unit = js.native
+  def notifySeeking(): Unit
   
-  def notifyStopped(): Unit = js.native
+  def notifyStopped(): Unit
   
-  def notifyTimeUpdate(currentTime: Double): Unit = js.native
+  def notifyTimeUpdate(currentTime: Double): Unit
   
-  def notifyVolumeChange(volume: Double, mute: Boolean): Unit = js.native
+  def notifyVolumeChange(volume: Double, mute: Boolean): Unit
   
-  var oncurrenttimechangerequested: js.Any = js.native
+  var oncurrenttimechangerequested: js.Any
   
-  var onmutechangerequested: js.Any = js.native
+  var onmutechangerequested: js.Any
   
-  var onpauserequested: js.Any = js.native
+  var onpauserequested: js.Any
   
-  var onplaybackratechangerequested: js.Any = js.native
+  var onplaybackratechangerequested: js.Any
   
-  var onplayrequested: js.Any = js.native
+  var onplayrequested: js.Any
   
-  var onsourcechangerequested: js.Any = js.native
+  var onsourcechangerequested: js.Any
   
-  var onstoprequested: js.Any = js.native
+  var onstoprequested: js.Any
   
-  var ontimeupdaterequested: js.Any = js.native
+  var ontimeupdaterequested: js.Any
   
-  var onvolumechangerequested: js.Any = js.native
+  var onvolumechangerequested: js.Any
   
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
-  def startAsync(): IAsyncAction = js.native
+  def startAsync(): IAsyncAction
   
-  def stopAsync(): IAsyncAction = js.native
+  def stopAsync(): IAsyncAction
   
-  var supportsAudio: Boolean = js.native
+  var supportsAudio: Boolean
   
-  var supportsImage: Boolean = js.native
+  var supportsImage: Boolean
   
-  var supportsVideo: Boolean = js.native
+  var supportsVideo: Boolean
 }
 object IPlayToReceiver {
   

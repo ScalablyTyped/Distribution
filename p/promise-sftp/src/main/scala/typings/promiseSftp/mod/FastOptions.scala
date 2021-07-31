@@ -2,29 +2,27 @@ package typings.promiseSftp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for `PromiseSftp#fast{Get,Put}` */
-@js.native
 trait FastOptions extends StObject {
   
   /**
     * Size of each read in bytes
     * @default 32768
     */
-  var chunkSize: Double = js.native
+  var chunkSize: Double
   
   /**
     * Number of concurrent reads
     * @default 25
     */
-  var concurrency: js.UndefOr[Double] = js.native
+  var concurrency: js.UndefOr[Double] = js.undefined
   
   /** Called every time a part of a file is transferred */
   var step: js.UndefOr[
     js.Function3[/* totalTransferred */ Double, /* chunk */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object FastOptions {
   

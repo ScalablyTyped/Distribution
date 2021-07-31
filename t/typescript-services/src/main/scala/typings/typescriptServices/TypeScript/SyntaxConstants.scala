@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait SyntaxConstants extends StObject
 object SyntaxConstants extends StObject {
   
   @js.native
-  sealed trait IsVariableWidthKeyword extends SyntaxConstants
+  sealed trait IsVariableWidthKeyword
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeDataComputed extends SyntaxConstants
+  sealed trait NodeDataComputed
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeFullWidthShift extends SyntaxConstants
+  sealed trait NodeFullWidthShift
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeIncrementallyUnusableMask extends SyntaxConstants
+  sealed trait NodeIncrementallyUnusableMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeParsedInStrictModeMask extends SyntaxConstants
+  sealed trait NodeParsedInStrictModeMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaCommentMask extends SyntaxConstants
+  sealed trait TriviaCommentMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaFullWidthShift extends SyntaxConstants
+  sealed trait TriviaFullWidthShift
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaNewLineMask extends SyntaxConstants
+  sealed trait TriviaNewLineMask
+    extends StObject
+       with SyntaxConstants
 }

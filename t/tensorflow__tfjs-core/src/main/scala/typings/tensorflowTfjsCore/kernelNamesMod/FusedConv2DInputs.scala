@@ -4,19 +4,19 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.NamedTensorInfoMap
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FusedConv2DInputs extends NamedTensorInfoMap {
+trait FusedConv2DInputs
+  extends StObject
+     with NamedTensorInfoMap {
   
-  var bias: js.UndefOr[TensorInfo] = js.native
+  var bias: js.UndefOr[TensorInfo] = js.undefined
   
-  var filter: TensorInfo = js.native
+  var filter: TensorInfo
   
-  var preluActivationWeights: js.UndefOr[TensorInfo] = js.native
+  var preluActivationWeights: js.UndefOr[TensorInfo] = js.undefined
   
-  var x: TensorInfo = js.native
+  var x: TensorInfo
 }
 object FusedConv2DInputs {
   

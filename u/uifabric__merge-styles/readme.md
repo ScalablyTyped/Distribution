@@ -10,9 +10,9 @@ Style loading utilities.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/merge-styles |
 | Keywords           | - |
-| # releases         | 112 |
-| # dependents       | 24 |
-| # downloads        | 3537509 |
+| # releases         | 97 |
+| # dependents       | 28 |
+| # downloads        | 4414040 |
 | # stars            | 0 |
 
 ## Links

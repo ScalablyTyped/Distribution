@@ -2,13 +2,11 @@ package typings.jsSchema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionConstructor extends StObject {
   
-  def reference(func: js.Function): FunctionConstructor = js.native
+  def reference(func: js.Function): FunctionConstructor
 }
 object FunctionConstructor {
   

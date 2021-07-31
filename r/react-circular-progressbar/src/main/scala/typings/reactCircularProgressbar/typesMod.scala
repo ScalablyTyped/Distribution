@@ -4,35 +4,33 @@ import typings.react.mod.CSSProperties
 import typings.reactCircularProgressbar.anon.Background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CircularProgressbarDefaultProps extends StObject {
     
-    var background: Boolean = js.native
+    var background: Boolean
     
-    var backgroundPadding: Double = js.native
+    var backgroundPadding: Double
     
-    var circleRatio: Double = js.native
+    var circleRatio: Double
     
-    var className: String = js.native
+    var className: String
     
-    var classes: Background = js.native
+    var classes: Background
     
-    var counterClockwise: Boolean = js.native
+    var counterClockwise: Boolean
     
-    var maxValue: Double = js.native
+    var maxValue: Double
     
-    var minValue: Double = js.native
+    var minValue: Double
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
     
-    var styles: CircularProgressbarStyles = js.native
+    var styles: CircularProgressbarStyles
     
-    var text: String = js.native
+    var text: String
   }
   object CircularProgressbarDefaultProps {
     
@@ -92,33 +90,11 @@ object typesMod {
     }
   }
   
-  /* Inlined react-circular-progressbar.react-circular-progressbar/dist/types.CircularProgressbarDefaultProps & {  value :number} */
-  @js.native
-  trait CircularProgressbarProps extends StObject {
+  trait CircularProgressbarProps
+    extends StObject
+       with CircularProgressbarDefaultProps {
     
-    var background: Boolean = js.native
-    
-    var backgroundPadding: Double = js.native
-    
-    var circleRatio: Double = js.native
-    
-    var className: String = js.native
-    
-    var classes: Background = js.native
-    
-    var counterClockwise: Boolean = js.native
-    
-    var maxValue: Double = js.native
-    
-    var minValue: Double = js.native
-    
-    var strokeWidth: Double = js.native
-    
-    var styles: CircularProgressbarStyles = js.native
-    
-    var text: String = js.native
-    
-    var value: Double = js.native
+    var value: Double
   }
   object CircularProgressbarProps {
     
@@ -145,55 +121,21 @@ object typesMod {
     implicit class CircularProgressbarPropsMutableBuilder[Self <: CircularProgressbarProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBackgroundPadding(value: Double): Self = StObject.set(x, "backgroundPadding", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCircleRatio(value: Double): Self = StObject.set(x, "circleRatio", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClasses(value: Background): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCounterClockwise(value: Boolean): Self = StObject.set(x, "counterClockwise", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStyles(value: CircularProgressbarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait CircularProgressbarStyles extends StObject {
     
-    var background: js.UndefOr[CSSProperties] = js.native
+    var background: js.UndefOr[CSSProperties] = js.undefined
     
-    var path: js.UndefOr[CSSProperties] = js.native
+    var path: js.UndefOr[CSSProperties] = js.undefined
     
-    var root: js.UndefOr[CSSProperties] = js.native
+    var root: js.UndefOr[CSSProperties] = js.undefined
     
-    var text: js.UndefOr[CSSProperties] = js.native
+    var text: js.UndefOr[CSSProperties] = js.undefined
     
-    var trail: js.UndefOr[CSSProperties] = js.native
+    var trail: js.UndefOr[CSSProperties] = js.undefined
   }
   object CircularProgressbarStyles {
     
@@ -238,32 +180,31 @@ object typesMod {
     }
   }
   
-  @js.native
   trait CircularProgressbarWrapperProps extends StObject {
     
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundPadding: js.UndefOr[Double] = js.native
+    var backgroundPadding: js.UndefOr[Double] = js.undefined
     
-    var circleRatio: js.UndefOr[Double] = js.native
+    var circleRatio: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[Background] = js.native
+    var classes: js.UndefOr[Background] = js.undefined
     
-    var counterClockwise: js.UndefOr[Boolean] = js.native
+    var counterClockwise: js.UndefOr[Boolean] = js.undefined
     
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var styles: js.UndefOr[CircularProgressbarStyles] = js.native
+    var styles: js.UndefOr[CircularProgressbarStyles] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object CircularProgressbarWrapperProps {
     

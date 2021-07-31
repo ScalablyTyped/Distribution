@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Types.Plugins.CorePluginContainer
 import typings.phaser.Phaser.Types.Plugins.CustomPluginContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plugins {
@@ -20,7 +19,8 @@ object Plugins {
   @JSImport("phaser", "Plugins.BasePlugin")
   @js.native
   class BasePlugin protected ()
-    extends typings.phaser.Phaser.Plugins.BasePlugin {
+    extends StObject
+       with typings.phaser.Phaser.Plugins.BasePlugin {
     /**
       * 
       * @param pluginManager A reference to the Plugin Manager.
@@ -69,62 +69,59 @@ object Plugins {
   
   object PluginCache {
     
+    @JSImport("phaser", "Plugins.PluginCache")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Removes all Core Plugins.
       * 
       * This includes all of the internal system plugins that Phaser needs, like the Input Plugin and Loader Plugin.
       * So be sure you only call this if you do not wish to run Phaser again.
       */
-    @JSImport("phaser", "Plugins.PluginCache.destroyCorePlugins")
-    @js.native
-    def destroyCorePlugins(): Unit = js.native
+    @scala.inline
+    def destroyCorePlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCorePlugins")().asInstanceOf[Unit]
     
     /**
       * Removes all Custom Plugins.
       */
-    @JSImport("phaser", "Plugins.PluginCache.destroyCustomPlugins")
-    @js.native
-    def destroyCustomPlugins(): Unit = js.native
+    @scala.inline
+    def destroyCustomPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCustomPlugins")().asInstanceOf[Unit]
     
     /**
       * Returns the core plugin object from the cache based on the given key.
       * @param key The key of the core plugin to get.
       */
-    @JSImport("phaser", "Plugins.PluginCache.getCore")
-    @js.native
-    def getCore(key: String): CorePluginContainer = js.native
+    @scala.inline
+    def getCore(key: String): CorePluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[CorePluginContainer]
     
     /**
       * Returns the custom plugin object from the cache based on the given key.
       * @param key The key of the custom plugin to get.
       */
-    @JSImport("phaser", "Plugins.PluginCache.getCustom")
-    @js.native
-    def getCustom(key: String): CustomPluginContainer = js.native
+    @scala.inline
+    def getCustom(key: String): CustomPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustom")(key.asInstanceOf[js.Any]).asInstanceOf[CustomPluginContainer]
     
     /**
       * Returns an object from the custom cache based on the given key that can be instantiated.
       * @param key The key of the custom plugin to get.
       */
-    @JSImport("phaser", "Plugins.PluginCache.getCustomClass")
-    @js.native
-    def getCustomClass(key: String): js.Function = js.native
+    @scala.inline
+    def getCustomClass(key: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomClass")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
     /**
       * Checks if the given key is already being used in the core plugin cache.
       * @param key The key to check for.
       */
-    @JSImport("phaser", "Plugins.PluginCache.hasCore")
-    @js.native
-    def hasCore(key: String): Boolean = js.native
+    @scala.inline
+    def hasCore(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCore")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Checks if the given key is already being used in the custom plugin cache.
       * @param key The key to check for.
       */
-    @JSImport("phaser", "Plugins.PluginCache.hasCustom")
-    @js.native
-    def hasCustom(key: String): Boolean = js.native
+    @scala.inline
+    def hasCustom(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Static method called directly by the Core internal Plugins.
@@ -136,12 +133,10 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param custom Core Scene plugin or a Custom Scene plugin? Default false.
       */
-    @JSImport("phaser", "Plugins.PluginCache.register")
-    @js.native
-    def register(key: String, plugin: js.Function, mapping: String): Unit = js.native
-    @JSImport("phaser", "Plugins.PluginCache.register")
-    @js.native
-    def register(key: String, plugin: js.Function, mapping: String, custom: Boolean): Unit = js.native
+    @scala.inline
+    def register(key: String, plugin: js.Function, mapping: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(key: String, plugin: js.Function, mapping: String, custom: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], custom.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores a custom plugin in the global plugin cache.
@@ -151,25 +146,22 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param data A value to be passed to the plugin's `init` method.
       */
-    @JSImport("phaser", "Plugins.PluginCache.registerCustom")
-    @js.native
-    def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = js.native
+    @scala.inline
+    def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a core plugin based on the given key.
       * @param key The key of the core plugin to remove.
       */
-    @JSImport("phaser", "Plugins.PluginCache.remove")
-    @js.native
-    def remove(key: String): Unit = js.native
+    @scala.inline
+    def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes a custom plugin based on the given key.
       * @param key The key of the custom plugin to remove.
       */
-    @JSImport("phaser", "Plugins.PluginCache.removeCustom")
-    @js.native
-    def removeCustom(key: String): Unit = js.native
+    @scala.inline
+    def removeCustom(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -208,7 +200,8 @@ object Plugins {
   @JSImport("phaser", "Plugins.PluginManager")
   @js.native
   class PluginManager protected ()
-    extends typings.phaser.Phaser.Plugins.PluginManager {
+    extends StObject
+       with typings.phaser.Phaser.Plugins.PluginManager {
     /**
       * 
       * @param game The game instance that owns this Plugin Manager.
@@ -224,7 +217,8 @@ object Plugins {
   @JSImport("phaser", "Plugins.ScenePlugin")
   @js.native
   class ScenePlugin protected ()
-    extends typings.phaser.Phaser.Plugins.ScenePlugin {
+    extends StObject
+       with typings.phaser.Phaser.Plugins.ScenePlugin {
     /**
       * 
       * @param scene A reference to the Scene that has installed this plugin.

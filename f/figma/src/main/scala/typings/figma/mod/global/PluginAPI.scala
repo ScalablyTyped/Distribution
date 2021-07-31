@@ -7,7 +7,6 @@ import typings.figma.figmaStrings.selectionchange
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -63,13 +62,13 @@ trait PluginAPI extends StObject {
   
   var currentPage: PageNode = js.native
   
-  def exclude(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): BooleanOperationNode = js.native
-  def exclude(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): BooleanOperationNode = js.native
+  def exclude(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): BooleanOperationNode = js.native
+  def exclude(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): BooleanOperationNode = js.native
   
   def flatten(nodes: js.Array[BaseNode]): VectorNode = js.native
-  def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): VectorNode = js.native
-  def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): VectorNode = js.native
-  def flatten(nodes: js.Array[BaseNode], parent: js.UndefOr[scala.Nothing], index: Double): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: Unit, index: Double): VectorNode = js.native
   
   def getImageByHash(hash: String): Image = js.native
   
@@ -87,8 +86,8 @@ trait PluginAPI extends StObject {
   
   def getStyleById(id: String): BaseStyle | Null = js.native
   
-  def group(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): GroupNode = js.native
-  def group(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): GroupNode = js.native
+  def group(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): GroupNode = js.native
+  def group(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): GroupNode = js.native
   
   val hasMissingFont: Boolean = js.native
   
@@ -96,8 +95,8 @@ trait PluginAPI extends StObject {
   
   def importStyleByKeyAsync(key: String): js.Promise[BaseStyle] = js.native
   
-  def intersect(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): BooleanOperationNode = js.native
-  def intersect(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): BooleanOperationNode = js.native
+  def intersect(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): BooleanOperationNode = js.native
+  def intersect(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): BooleanOperationNode = js.native
   
   def listAvailableFontsAsync(): js.Promise[js.Array[Font]] = js.native
   
@@ -134,13 +133,13 @@ trait PluginAPI extends StObject {
   def showUI(html: String): Unit = js.native
   def showUI(html: String, options: ShowUIOptions): Unit = js.native
   
-  def subtract(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): BooleanOperationNode = js.native
-  def subtract(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): BooleanOperationNode = js.native
+  def subtract(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): BooleanOperationNode = js.native
+  def subtract(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): BooleanOperationNode = js.native
   
   val ui: UIAPI = js.native
   
-  def union(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): BooleanOperationNode = js.native
-  def union(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): BooleanOperationNode = js.native
+  def union(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin): BooleanOperationNode = js.native
+  def union(nodes: js.Array[BaseNode], parent: BaseNode & ChildrenMixin, index: Double): BooleanOperationNode = js.native
   
   val viewport: ViewportAPI = js.native
 }

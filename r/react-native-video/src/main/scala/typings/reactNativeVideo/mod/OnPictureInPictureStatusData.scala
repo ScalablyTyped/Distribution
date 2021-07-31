@@ -2,13 +2,11 @@ package typings.reactNativeVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPictureInPictureStatusData extends StObject {
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
 }
 object OnPictureInPictureStatusData {
   

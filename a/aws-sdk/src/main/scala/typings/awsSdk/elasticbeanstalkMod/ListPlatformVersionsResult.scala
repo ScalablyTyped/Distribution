@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlatformVersionsResult extends StObject {
   
   /**
     * In a paginated request, if this value isn't null, it's the token that you can pass in a subsequent request to get the next response page.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * Summary information about the platform versions.
     */
-  var PlatformSummaryList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformSummaryList] = js.native
+  var PlatformSummaryList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformSummaryList] = js.undefined
 }
 object ListPlatformVersionsResult {
   

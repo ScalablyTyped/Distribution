@@ -2,15 +2,13 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableData extends StObject {
   
-  var data: js.Array[js.Object | (js.Array[Double | String])] = js.native
+  var data: js.Array[js.Object | (js.Array[Double | String])]
   
-  var index: Double = js.native
+  var index: Double
 }
 object MUIDataTableData {
   

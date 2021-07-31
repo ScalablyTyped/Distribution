@@ -3,13 +3,13 @@ package typings.nano.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewDocument[D] extends IdentifiedDocument {
+trait ViewDocument[D]
+  extends StObject
+     with IdentifiedDocument {
   
-  var views: StringDictionary[View[D]] = js.native
+  var views: StringDictionary[View[D]]
 }
 object ViewDocument {
   
@@ -20,7 +20,7 @@ object ViewDocument {
   }
   
   @scala.inline
-  implicit class ViewDocumentMutableBuilder[Self <: ViewDocument[_], D] (val x: Self with ViewDocument[D]) extends AnyVal {
+  implicit class ViewDocumentMutableBuilder[Self <: ViewDocument[?], D] (val x: Self & ViewDocument[D]) extends AnyVal {
     
     @scala.inline
     def setViews(value: StringDictionary[View[D]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])

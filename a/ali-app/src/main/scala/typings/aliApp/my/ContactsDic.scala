@@ -2,36 +2,34 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactsDic extends StObject {
   
   /**
     * 账号的头像链接
     */
-  var avatar: String = js.native
+  var avatar: String
   
   /**
     * 账号的显示名称：也即支付宝设置的备注名称，默认为朋友圈里面的昵称
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * 账号对应的手机号码
     */
-  var mobile: String = js.native
+  var mobile: String
   
   /**
     * 账号的真实姓名
     */
-  var realName: String = js.native
+  var realName: String
   
   /**
     * 支付宝账号唯一 userId
     */
-  var userId: String = js.native
+  var userId: String
 }
 object ContactsDic {
   

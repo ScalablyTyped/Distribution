@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For details see method {@link XIntrospection.inspect()} .
   * @see XIntrospectionAccess
   */
-@js.native
-trait XIntrospection extends XInterface {
+trait XIntrospection
+  extends StObject
+     with XInterface {
   
   /**
     * inspects the given object.
@@ -46,7 +46,7 @@ trait XIntrospection extends XInterface {
     * considered to be normal methods.
     * @see XIntrospectionAccess
     */
-  def inspect(aObject: js.Any): XIntrospectionAccess = js.native
+  def inspect(aObject: js.Any): XIntrospectionAccess
 }
 object XIntrospection {
   

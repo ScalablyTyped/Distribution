@@ -11,19 +11,17 @@ import typings.cloudflareApps.cloudflareAppsStrings.replace
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CloudflareApps {
   
-  @js.native
   trait App extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    var options: InstallOptions = js.native
+    var options: InstallOptions
     
-    var scope: InstallScope = js.native
+    var scope: InstallScope
   }
   object App {
     
@@ -48,7 +46,9 @@ object CloudflareApps {
   }
   
   @js.native
-  trait CloudflareApps extends CloudflareAppsMethods {
+  trait CloudflareApps
+    extends StObject
+       with CloudflareAppsMethods {
     
     var installs: StringDictionary[js.UndefOr[App]] = js.native
     
@@ -69,14 +69,13 @@ object CloudflareApps {
     def querySelector[K /* <: /* keyof cloudflare-apps.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](selectors: K): (/* import warning: importer.ImportType#apply Failed type conversion: cloudflare-apps.anon.ElementTagNameMap[K] */ js.Any) | Null = js.native
   }
   
-  @js.native
   trait CloudflareAppsProxy extends StObject {
     
-    var embedSiteId: String = js.native
+    var embedSiteId: String
     
-    var hasRocketEmbed: Boolean = js.native
+    var hasRocketEmbed: Boolean
     
-    var originalURL: OriginalURL = js.native
+    var originalURL: OriginalURL
   }
   object CloudflareAppsProxy {
     
@@ -100,12 +99,11 @@ object CloudflareApps {
     }
   }
   
-  @js.native
   trait ElementLocation extends StObject {
     
-    var method: before | prepend | append | after | replace = js.native
+    var method: before | prepend | append | after | replace
     
-    var selector: String = js.native
+    var selector: String
   }
   object ElementLocation {
     
@@ -128,10 +126,9 @@ object CloudflareApps {
   
   type InstallOptions = StringDictionary[js.Any]
   
-  @js.native
   trait InstallProduct extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object InstallProduct {
     
@@ -151,12 +148,11 @@ object CloudflareApps {
   
   type InstallScope = StringDictionary[js.Any]
   
-  @js.native
   trait OriginalURL extends StObject {
     
-    var parsed: OriginalURLParsed = js.native
+    var parsed: OriginalURLParsed
     
-    var raw: String = js.native
+    var raw: String
   }
   object OriginalURL {
     
@@ -177,18 +173,17 @@ object CloudflareApps {
     }
   }
   
-  @js.native
   trait OriginalURLParsed extends StObject {
     
-    var fragment: String = js.native
+    var fragment: String
     
-    var host: String = js.native
+    var host: String
     
-    var path: String = js.native
+    var path: String
     
-    var query: URLQuery = js.native
+    var query: URLQuery
     
-    var scheme: https | http = js.native
+    var scheme: https | http
   }
   object OriginalURLParsed {
     

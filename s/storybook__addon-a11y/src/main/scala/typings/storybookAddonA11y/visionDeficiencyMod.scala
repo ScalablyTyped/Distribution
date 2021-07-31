@@ -4,7 +4,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visionDeficiencyMod {
@@ -13,18 +12,17 @@ object visionDeficiencyMod {
   @js.native
   val VisionDeficiency: FunctionComponent[js.Object] = js.native
   
-  @js.native
   trait Link extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var right: js.UndefOr[ReactNode] = js.native
+    var right: js.UndefOr[ReactNode] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object Link {
     

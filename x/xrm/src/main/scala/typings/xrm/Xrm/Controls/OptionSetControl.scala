@@ -3,7 +3,6 @@ package typings.xrm.Xrm.Controls
 import typings.xrm.Xrm.OptionSetValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link StandardControl}
   */
 @js.native
-trait OptionSetControl extends StandardControl {
+trait OptionSetControl
+  extends StObject
+     with StandardControl {
   
   /**
     * Adds an option.

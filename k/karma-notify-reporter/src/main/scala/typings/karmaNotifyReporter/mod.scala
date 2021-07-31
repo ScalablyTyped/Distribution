@@ -2,20 +2,18 @@ package typings.karmaNotifyReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Report test results using OSX Notification Center, Growl or notify-send.
       * {@link https://github.com/jdcataldo/karma-notify-reporter#karma-notify-reporter}
       */
-    var notifyReporter: js.UndefOr[NotifyReporterOptions] = js.native
+    var notifyReporter: js.UndefOr[NotifyReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -36,26 +34,25 @@ object mod {
     }
   }
   
-  @js.native
   trait NotifyReporterOptions extends StObject {
     
     /**
       * Will notify when a suite was back to successful
       * @default true
       */
-    var reportBackToSuccess: js.UndefOr[Boolean] = js.native
+    var reportBackToSuccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will notify on every failed spec
       * @default false
       */
-    var reportEachFailure: js.UndefOr[Boolean] = js.native
+    var reportEachFailure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will notify when a suite was successful
       * @default true
       */
-    var reportSuccess: js.UndefOr[Boolean] = js.native
+    var reportSuccess: js.UndefOr[Boolean] = js.undefined
   }
   object NotifyReporterOptions {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildGroup extends StObject {
   
   /**
     * A BuildSummary object that contains a summary of the current build group.
     */
-  var currentBuildSummary: js.UndefOr[BuildSummary] = js.native
+  var currentBuildSummary: js.UndefOr[BuildSummary] = js.undefined
   
   /**
     * An array of strings that contain the identifiers of the build groups that this build group depends on.
     */
-  var dependsOn: js.UndefOr[Identifiers] = js.native
+  var dependsOn: js.UndefOr[Identifiers] = js.undefined
   
   /**
     * Contains the identifier of the build group.
     */
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if failures in this build group can be ignored.
     */
-  var ignoreFailure: js.UndefOr[Boolean] = js.native
+  var ignoreFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of BuildSummary objects that contain summaries of previous build groups.
     */
-  var priorBuildSummaryList: js.UndefOr[BuildSummaries] = js.native
+  var priorBuildSummaryList: js.UndefOr[BuildSummaries] = js.undefined
 }
 object BuildGroup {
   

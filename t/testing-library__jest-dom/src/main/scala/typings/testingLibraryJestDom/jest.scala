@@ -9,7 +9,6 @@ import typings.testingLibraryJestDom.anon.Exact
 import typings.testingLibraryJestDom.anon.NormalizeWhitespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jest {
@@ -409,7 +408,7 @@ object jest {
     def toHaveDescription(text: RegExp): R = js.native
     def toHaveDescription(
       text: ReturnType[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof expect.stringContaining */ _
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof expect.stringContaining */ js.Any
         ]
     ): R = js.native
     
@@ -496,7 +495,7 @@ object jest {
       * @see
       * [testing-library/jest-dom#tohaveformvalues](https:github.com/testing-library/jest-dom#tohaveformvalues)
       */
-    def toHaveFormValues(expectedValues: Record[String, _]): R = js.native
+    def toHaveFormValues(expectedValues: Record[String, js.Any]): R = js.native
     
     /**
       * @description
@@ -521,7 +520,7 @@ object jest {
       * [testing-library/jest-dom#tohavestyle](https:github.com/testing-library/jest-dom#tohavestyle)
       */
     def toHaveStyle(css: String): R = js.native
-    def toHaveStyle(css: Record[String, _]): R = js.native
+    def toHaveStyle(css: Record[String, js.Any]): R = js.native
     
     /**
       * @description

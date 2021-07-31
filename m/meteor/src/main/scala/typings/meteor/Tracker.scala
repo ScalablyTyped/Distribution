@@ -3,27 +3,25 @@ package typings.meteor
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tracker {
   
-  @js.native
   trait Computation extends StObject {
     
-    var firstRun: Boolean = js.native
+    var firstRun: Boolean
     
-    def invalidate(): Unit = js.native
+    def invalidate(): Unit
     
-    var invalidated: Boolean = js.native
+    var invalidated: Boolean
     
-    def onInvalidate(callback: js.Function): Unit = js.native
+    def onInvalidate(callback: js.Function): Unit
     
-    def onStop(callback: js.Function): Unit = js.native
+    def onStop(callback: js.Function): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
   }
   object Computation {
     
@@ -79,5 +77,7 @@ object Tracker {
   }
   
   @js.native
-  trait DependencyStatic extends Instantiable0[Dependency]
+  trait DependencyStatic
+    extends StObject
+       with Instantiable0[Dependency]
 }

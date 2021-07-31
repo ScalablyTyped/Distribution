@@ -5,23 +5,23 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyndicationLink extends ISyndicationNode {
+trait ISyndicationLink
+  extends StObject
+     with ISyndicationNode {
   
-  var length: Double = js.native
+  var length: Double
   
-  var mediaType: String = js.native
+  var mediaType: String
   
-  var relationship: String = js.native
+  var relationship: String
   
-  var resourceLanguage: String = js.native
+  var resourceLanguage: String
   
-  var title: String = js.native
+  var title: String
   
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object ISyndicationLink {
   

@@ -4,7 +4,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,14 +30,15 @@ object mod {
     def fail(res: ServerResponse): Unit = js.native
   }
   
-  @js.native
-  trait BearerOptions extends PermitOptions {
+  trait BearerOptions
+    extends StObject
+       with PermitOptions {
     
-    var basic: js.UndefOr[String] = js.native
+    var basic: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
   }
   object BearerOptions {
     
@@ -71,14 +71,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PermitOptions extends StObject {
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
   }
   object PermitOptions {
     

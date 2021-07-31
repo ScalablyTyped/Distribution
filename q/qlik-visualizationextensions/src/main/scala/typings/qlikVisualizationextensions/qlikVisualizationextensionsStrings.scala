@@ -13,42 +13,51 @@ import typings.qlikVisualizationextensions.NavigationAPI.NavigationModeType
 import typings.qlikVisualizationextensions.VisualizationAPI.VisualizationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qlikVisualizationextensionsStrings {
   
   @js.native
   sealed trait A
-    extends FieldAttributesType
+    extends StObject
+       with FieldAttributesType
        with SortIndicatorType
        with StateType
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait ANALYSIS extends NavigationModeType
+  sealed trait ANALYSIS
+    extends StObject
+       with NavigationModeType
   @scala.inline
   def ANALYSIS: ANALYSIS = "ANALYSIS".asInstanceOf[ANALYSIS]
   
   @js.native
-  sealed trait Add extends PatchType
+  sealed trait Add
+    extends StObject
+       with PatchType
   @scala.inline
   def Add: Add = "Add".asInstanceOf[Add]
   
   @js.native
-  sealed trait C extends GroupingType
+  sealed trait C
+    extends StObject
+       with GroupingType
   @scala.inline
   def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait CONFIRM extends SelectionModeType
+  sealed trait CONFIRM
+    extends StObject
+       with SelectionModeType
   @scala.inline
   def CONFIRM: CONFIRM = "CONFIRM".asInstanceOf[CONFIRM]
   
   @js.native
   sealed trait D
-    extends DimensionType
+    extends StObject
+       with DimensionType
        with FieldAttributesType
        with SortIndicatorType
        with StateType
@@ -56,127 +65,173 @@ object qlikVisualizationextensionsStrings {
   def D: D = "D".asInstanceOf[D]
   
   @js.native
-  sealed trait EDIT extends NavigationModeType
+  sealed trait EDIT
+    extends StObject
+       with NavigationModeType
   @scala.inline
   def EDIT: EDIT = "EDIT".asInstanceOf[EDIT]
   
   @js.native
-  sealed trait F extends FieldAttributesType
+  sealed trait F
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def F: F = "F".asInstanceOf[F]
   
   @js.native
-  sealed trait H extends GroupingType
+  sealed trait H
+    extends StObject
+       with GroupingType
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait I extends FieldAttributesType
+  sealed trait I
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait IV extends FieldAttributesType
+  sealed trait IV
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def IV: IV = "IV".asInstanceOf[IV]
   
   @js.native
-  sealed trait L extends StateType
+  sealed trait L
+    extends StObject
+       with StateType
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait M extends FieldAttributesType
+  sealed trait M
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait N
-    extends DimensionType
+    extends StObject
+       with DimensionType
        with GroupingType
        with SortIndicatorType
   @scala.inline
   def N: N = "N".asInstanceOf[N]
   
   @js.native
-  sealed trait NOCURRENTSHEET extends NavigationErrorType
+  sealed trait NOCURRENTSHEET
+    extends StObject
+       with NavigationErrorType
   @scala.inline
   def NOCURRENTSHEET: NOCURRENTSHEET = "NOCURRENTSHEET".asInstanceOf[NOCURRENTSHEET]
   
   @js.native
-  sealed trait NOSUCHSHEET extends NavigationErrorType
+  sealed trait NOSUCHSHEET
+    extends StObject
+       with NavigationErrorType
   @scala.inline
   def NOSUCHSHEET: NOSUCHSHEET = "NOSUCHSHEET".asInstanceOf[NOSUCHSHEET]
   
   @js.native
-  sealed trait NOSUCHSTORY extends NavigationErrorType
+  sealed trait NOSUCHSTORY
+    extends StObject
+       with NavigationErrorType
   @scala.inline
   def NOSUCHSTORY: NOSUCHSTORY = "NOSUCHSTORY".asInstanceOf[NOSUCHSTORY]
   
   @js.native
-  sealed trait O extends StateType
+  sealed trait O
+    extends StObject
+       with StateType
   @scala.inline
   def O: O = "O".asInstanceOf[O]
   
   @js.native
-  sealed trait QUICK extends SelectionModeType
+  sealed trait QUICK
+    extends StObject
+       with SelectionModeType
   @scala.inline
   def QUICK: QUICK = "QUICK".asInstanceOf[QUICK]
   
   @js.native
-  sealed trait R extends FieldAttributesType
+  sealed trait R
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def R: R = "R".asInstanceOf[R]
   
   @js.native
-  sealed trait Remove extends PatchType
+  sealed trait Remove
+    extends StObject
+       with PatchType
   @scala.inline
   def Remove: Remove = "Remove".asInstanceOf[Remove]
   
   @js.native
-  sealed trait Replace extends PatchType
+  sealed trait Replace
+    extends StObject
+       with PatchType
   @scala.inline
   def Replace: Replace = "Replace".asInstanceOf[Replace]
   
   @js.native
-  sealed trait S extends StateType
+  sealed trait S
+    extends StObject
+       with StateType
   @scala.inline
   def S: S = "S".asInstanceOf[S]
   
   @js.native
   sealed trait T
-    extends DimensionType
+    extends StObject
+       with DimensionType
        with FieldAttributesType
   @scala.inline
   def T: T = "T".asInstanceOf[T]
   
   @js.native
-  sealed trait TS extends FieldAttributesType
+  sealed trait TS
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def TS: TS = "TS".asInstanceOf[TS]
   
   @js.native
-  sealed trait U extends FieldAttributesType
+  sealed trait U
+    extends StObject
+       with FieldAttributesType
   @scala.inline
   def U: U = "U".asInstanceOf[U]
   
   @js.native
-  sealed trait X extends StateType
+  sealed trait X
+    extends StObject
+       with StateType
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   
   @js.native
-  sealed trait XL extends StateType
+  sealed trait XL
+    extends StObject
+       with StateType
   @scala.inline
   def XL: XL = "XL".asInstanceOf[XL]
   
   @js.native
-  sealed trait XS extends StateType
+  sealed trait XS
+    extends StObject
+       with StateType
   @scala.inline
   def XS: XS = "XS".asInstanceOf[XS]
   
   @js.native
-  sealed trait _empty extends ExpressionType
+  sealed trait _empty
+    extends StObject
+       with ExpressionType
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -191,7 +246,9 @@ object qlikVisualizationextensionsStrings {
   def addons: addons = "addons".asInstanceOf[addons]
   
   @js.native
-  sealed trait always extends ExpressionType
+  sealed trait always
+    extends StObject
+       with ExpressionType
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
@@ -201,7 +258,9 @@ object qlikVisualizationextensionsStrings {
   def analysis_ : analysis_ = "analysis".asInstanceOf[analysis_]
   
   @js.native
-  sealed trait barchart extends VisualizationType
+  sealed trait barchart
+    extends StObject
+       with VisualizationType
   @scala.inline
   def barchart: barchart = "barchart".asInstanceOf[barchart]
   
@@ -236,7 +295,9 @@ object qlikVisualizationextensionsStrings {
   def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
   
   @js.native
-  sealed trait combochart extends VisualizationType
+  sealed trait combochart
+    extends StObject
+       with VisualizationType
   @scala.inline
   def combochart: combochart = "combochart".asInstanceOf[combochart]
   
@@ -256,12 +317,16 @@ object qlikVisualizationextensionsStrings {
   def edit_ : edit_ = "edit".asInstanceOf[edit_]
   
   @js.native
-  sealed trait extension extends VisualizationType
+  sealed trait `extension`
+    extends StObject
+       with VisualizationType
   @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
+  def `extension`: `extension` = "extension".asInstanceOf[`extension`]
   
   @js.native
-  sealed trait gauge extends VisualizationType
+  sealed trait gauge
+    extends StObject
+       with VisualizationType
   @scala.inline
   def gauge: gauge = "gauge".asInstanceOf[gauge]
   
@@ -271,12 +336,16 @@ object qlikVisualizationextensionsStrings {
   def items: items = "items".asInstanceOf[items]
   
   @js.native
-  sealed trait kpi extends VisualizationType
+  sealed trait kpi
+    extends StObject
+       with VisualizationType
   @scala.inline
   def kpi: kpi = "kpi".asInstanceOf[kpi]
   
   @js.native
-  sealed trait linechart extends VisualizationType
+  sealed trait linechart
+    extends StObject
+       with VisualizationType
   @scala.inline
   def linechart: linechart = "linechart".asInstanceOf[linechart]
   
@@ -296,17 +365,23 @@ object qlikVisualizationextensionsStrings {
   def media: media = "media".asInstanceOf[media]
   
   @js.native
-  sealed trait optional extends ExpressionType
+  sealed trait optional
+    extends StObject
+       with ExpressionType
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait piechart extends VisualizationType
+  sealed trait piechart
+    extends StObject
+       with VisualizationType
   @scala.inline
   def piechart: piechart = "piechart".asInstanceOf[piechart]
   
   @js.native
-  sealed trait `pivot-table` extends VisualizationType
+  sealed trait `pivot-table`
+    extends StObject
+       with VisualizationType
   @scala.inline
   def `pivot-table`: `pivot-table` = "pivot-table".asInstanceOf[`pivot-table`]
   
@@ -316,7 +391,9 @@ object qlikVisualizationextensionsStrings {
   def radiobuttons: radiobuttons = "radiobuttons".asInstanceOf[radiobuttons]
   
   @js.native
-  sealed trait scatterplot extends VisualizationType
+  sealed trait scatterplot
+    extends StObject
+       with VisualizationType
   @scala.inline
   def scatterplot: scatterplot = "scatterplot".asInstanceOf[scatterplot]
   
@@ -341,7 +418,9 @@ object qlikVisualizationextensionsStrings {
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait table extends VisualizationType
+  sealed trait table
+    extends StObject
+       with VisualizationType
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
@@ -356,7 +435,9 @@ object qlikVisualizationextensionsStrings {
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait treemap extends VisualizationType
+  sealed trait treemap
+    extends StObject
+       with VisualizationType
   @scala.inline
   def treemap: treemap = "treemap".asInstanceOf[treemap]
 }

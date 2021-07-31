@@ -4,25 +4,25 @@ import typings.pulumiAws.outputMod.iam.GetGroupUser
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamGetGroupMod {
   
-  @JSImport("@pulumi/aws/iam/getGroup", "getGroup")
+  @JSImport("@pulumi/aws/iam/getGroup", JSImport.Namespace)
   @js.native
-  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = js.native
-  @JSImport("@pulumi/aws/iam/getGroup", "getGroup")
-  @js.native
-  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
+  @scala.inline
+  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
+  
   trait GetGroupArgs extends StObject {
     
     /**
       * The friendly IAM group name to match.
       */
-    val groupName: String = js.native
+    val groupName: String
   }
   object GetGroupArgs {
     
@@ -40,35 +40,34 @@ object iamGetGroupMod {
     }
   }
   
-  @js.native
   trait GetGroupResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the iam user.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The stable and unique string identifying the group.
       */
-    val groupId: String = js.native
+    val groupId: String
     
-    val groupName: String = js.native
+    val groupName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The path to the iam user.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * List of objects containing group member information. See supported fields below.
       */
-    val users: js.Array[GetGroupUser] = js.native
+    val users: js.Array[GetGroupUser]
   }
   object GetGroupResult {
     

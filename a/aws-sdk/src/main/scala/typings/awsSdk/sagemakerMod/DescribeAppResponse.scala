@@ -2,66 +2,64 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAppResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the app.
     */
-  var AppArn: js.UndefOr[typings.awsSdk.sagemakerMod.AppArn] = js.native
+  var AppArn: js.UndefOr[typings.awsSdk.sagemakerMod.AppArn] = js.undefined
   
   /**
     * The name of the app.
     */
-  var AppName: js.UndefOr[typings.awsSdk.sagemakerMod.AppName] = js.native
+  var AppName: js.UndefOr[typings.awsSdk.sagemakerMod.AppName] = js.undefined
   
   /**
     * The type of app.
     */
-  var AppType: js.UndefOr[typings.awsSdk.sagemakerMod.AppType] = js.native
+  var AppType: js.UndefOr[typings.awsSdk.sagemakerMod.AppType] = js.undefined
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * The domain ID.
     */
-  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
+  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.undefined
   
   /**
     * The failure reason.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The timestamp of the last health check.
     */
-  var LastHealthCheckTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastHealthCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The timestamp of the last user's activity.
     */
-  var LastUserActivityTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUserActivityTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     */
-  var ResourceSpec: js.UndefOr[typings.awsSdk.sagemakerMod.ResourceSpec] = js.native
+  var ResourceSpec: js.UndefOr[typings.awsSdk.sagemakerMod.ResourceSpec] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[AppStatus] = js.native
+  var Status: js.UndefOr[AppStatus] = js.undefined
   
   /**
     * The user profile name.
     */
-  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.native
+  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.undefined
 }
 object DescribeAppResponse {
   

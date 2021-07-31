@@ -10,7 +10,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,7 +18,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : S3Storage = js.native
   
-  @js.native
   trait Options extends StObject {
     
     var acl: js.UndefOr[
@@ -29,14 +27,14 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* error */ js.Any, /* acl */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
-      ] = js.native
+      ] = js.undefined
     
     var bucket: (js.Function3[
         /* req */ Request, 
         /* file */ File, 
         /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit], 
         Unit
-      ]) | String = js.native
+      ]) | String
     
     var cacheControl: js.UndefOr[
         (js.Function3[
@@ -45,7 +43,7 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
-      ] = js.native
+      ] = js.undefined
     
     var contentType: js.UndefOr[
         js.Function3[
@@ -59,7 +57,7 @@ object mod extends Shortcut {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var key: js.UndefOr[
         js.Function3[
@@ -68,7 +66,7 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[String], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var metadata: js.UndefOr[
         js.Function3[
@@ -77,9 +75,9 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var s3: S3 = js.native
+    var s3: S3
     
     var serverSideEncryption: js.UndefOr[
         (js.Function3[
@@ -88,7 +86,7 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* error */ js.Any, /* serverSideEncryption */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -247,29 +245,29 @@ object mod extends Shortcut {
       
       object MulterS3 {
         
-        @js.native
         trait File
-          extends typings.multer.mod.global.Express.Multer.File {
+          extends StObject
+             with typings.multer.mod.global.Express.Multer.File {
           
-          var acl: String = js.native
+          var acl: String
           
-          var bucket: String = js.native
+          var bucket: String
           
-          var contentDisposition: Null = js.native
+          var contentDisposition: Null
           
-          var contentType: String = js.native
+          var contentType: String
           
-          var etag: String = js.native
+          var etag: String
           
-          var key: String = js.native
+          var key: String
           
-          var location: String = js.native
+          var location: String
           
-          var metadata: js.Any = js.native
+          var metadata: js.Any
           
-          var serverSideEncryption: Null = js.native
+          var serverSideEncryption: Null
           
-          var storageClass: String = js.native
+          var storageClass: String
         }
         object File {
           

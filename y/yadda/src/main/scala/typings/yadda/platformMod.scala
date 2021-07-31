@@ -2,28 +2,45 @@ package typings.yadda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
   
   @JSImport("yadda/lib/Platform", JSImport.Namespace)
   @js.native
-  class ^ () extends Platform
-  
-  @js.native
-  trait Platform extends StObject {
+  class ^ ()
+    extends StObject
+       with Platform {
     
-    def get_container(): js.Any = js.native
+    /* CompleteClass */
+    override def get_container(): js.Any = js.native
     
-    def is_browser(): Boolean = js.native
+    /* CompleteClass */
+    override def is_browser(): Boolean = js.native
     
-    def is_karma(): Boolean = js.native
+    /* CompleteClass */
+    override def is_karma(): Boolean = js.native
     
     // Window | NodeJS.Global | Phantom
-    def is_node(): Boolean = js.native
+    /* CompleteClass */
+    override def is_node(): Boolean = js.native
     
-    def is_phantom(): Boolean = js.native
+    /* CompleteClass */
+    override def is_phantom(): Boolean = js.native
+  }
+  
+  trait Platform extends StObject {
+    
+    def get_container(): js.Any
+    
+    def is_browser(): Boolean
+    
+    def is_karma(): Boolean
+    
+    // Window | NodeJS.Global | Phantom
+    def is_node(): Boolean
+    
+    def is_phantom(): Boolean
   }
   object Platform {
     

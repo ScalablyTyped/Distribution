@@ -2,41 +2,39 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessPolicySummary extends StObject {
   
   /**
     * The date the access policy was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the access policy.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The identity (an AWS SSO user, an AWS SSO group, or an IAM user).
     */
-  var identity: Identity = js.native
+  var identity: Identity
   
   /**
     * The date the access policy was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The permissions for the access policy. Note that a project ADMINISTRATOR is also known as a project owner.
     */
-  var permission: Permission = js.native
+  var permission: Permission
   
   /**
     * The AWS IoT SiteWise Monitor resource (a portal or project).
     */
-  var resource: Resource = js.native
+  var resource: Resource
 }
 object AccessPolicySummary {
   

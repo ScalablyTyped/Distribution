@@ -29,7 +29,6 @@ import typings.std.Exclude
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,164 +47,24 @@ trait Range extends StObject {
   
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def Address(RowAbsolute: js.UndefOr[scala.Nothing], ColumnAbsolute: Boolean): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def Address(RowAbsolute: js.UndefOr[scala.Nothing], ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
   def Address(RowAbsolute: Boolean): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def Address(RowAbsolute: Boolean, ColumnAbsolute: js.UndefOr[scala.Nothing], ReferenceStyle: XlReferenceStyle): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
   def Address(RowAbsolute: Boolean, ColumnAbsolute: Boolean): String = js.native
+  def Address(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: Unit, External: Boolean): String = js.native
   def Address(
     RowAbsolute: Boolean,
     ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
+    ReferenceStyle: Unit,
+    External: Boolean,
     RelativeTo: Range
   ): String = js.native
   def Address(
     RowAbsolute: Boolean,
     ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
+    ReferenceStyle: Unit,
+    External: Unit,
     RelativeTo: Range
   ): String = js.native
   def Address(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
-  def Address(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
   def Address(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
   def Address(
     RowAbsolute: Boolean,
@@ -214,167 +73,122 @@ trait Range extends StObject {
     External: Boolean,
     RelativeTo: Range
   ): String = js.native
+  def Address(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle): String = js.native
+  def Address(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Boolean): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: Unit,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Unit, RelativeTo: Range): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle): String = js.native
+  def Address(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def Address(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
   
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(RowAbsolute: js.UndefOr[scala.Nothing], ColumnAbsolute: Boolean): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(RowAbsolute: js.UndefOr[scala.Nothing], ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: js.UndefOr[scala.Nothing],
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
   def AddressLocal(RowAbsolute: Boolean): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: js.UndefOr[scala.Nothing], ReferenceStyle: XlReferenceStyle): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: js.UndefOr[scala.Nothing],
-    ReferenceStyle: XlReferenceStyle,
-    External: Boolean,
-    RelativeTo: Range
-  ): String = js.native
   def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Boolean): String = js.native
+  def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: Unit, External: Boolean): String = js.native
   def AddressLocal(
     RowAbsolute: Boolean,
     ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: js.UndefOr[scala.Nothing],
+    ReferenceStyle: Unit,
+    External: Boolean,
     RelativeTo: Range
   ): String = js.native
   def AddressLocal(
     RowAbsolute: Boolean,
     ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean
-  ): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: js.UndefOr[scala.Nothing],
-    External: Boolean,
+    ReferenceStyle: Unit,
+    External: Unit,
     RelativeTo: Range
   ): String = js.native
   def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
-  def AddressLocal(
-    RowAbsolute: Boolean,
-    ColumnAbsolute: Boolean,
-    ReferenceStyle: XlReferenceStyle,
-    External: js.UndefOr[scala.Nothing],
-    RelativeTo: Range
-  ): String = js.native
   def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
   def AddressLocal(
     RowAbsolute: Boolean,
@@ -383,38 +197,118 @@ trait Range extends StObject {
     External: Boolean,
     RelativeTo: Range
   ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle): String = js.native
+  def AddressLocal(RowAbsolute: Boolean, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Boolean,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Boolean): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: Unit,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Boolean, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Boolean,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: Unit,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: Unit, External: Unit, RelativeTo: Range): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle): String = js.native
+  def AddressLocal(RowAbsolute: Unit, ColumnAbsolute: Unit, ReferenceStyle: XlReferenceStyle, External: Boolean): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Boolean,
+    RelativeTo: Range
+  ): String = js.native
+  def AddressLocal(
+    RowAbsolute: Unit,
+    ColumnAbsolute: Unit,
+    ReferenceStyle: XlReferenceStyle,
+    External: Unit,
+    RelativeTo: Range
+  ): String = js.native
   
   def AdvancedFilter(Action: XlFilterAction): js.Any = js.native
-  def AdvancedFilter(
-    Action: XlFilterAction,
-    CriteriaRange: js.UndefOr[scala.Nothing],
-    CopyToRange: js.UndefOr[scala.Nothing],
-    Unique: Boolean
-  ): js.Any = js.native
+  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
   def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range): js.Any = js.native
-  def AdvancedFilter(
-    Action: XlFilterAction,
-    CriteriaRange: Range,
-    CopyToRange: js.UndefOr[scala.Nothing],
-    Unique: Boolean
-  ): js.Any = js.native
+  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
   @JSName("AdvancedFilter")
   def AdvancedFilter_2(Action: `2`): js.Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(
-    Action: `2`,
-    CriteriaRange: js.UndefOr[scala.Nothing],
-    CopyToRange: js.UndefOr[scala.Nothing],
-    Unique: Boolean
-  ): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: js.UndefOr[scala.Nothing], CopyToRange: Range): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range): js.Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: js.UndefOr[scala.Nothing], CopyToRange: Range, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range, Unique: Boolean): js.Any = js.native
   @JSName("AdvancedFilter")
   def AdvancedFilter_2(Action: `2`, CriteriaRange: Range): js.Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: js.UndefOr[scala.Nothing], Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
   @JSName("AdvancedFilter")
   def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range): js.Any = js.native
   @JSName("AdvancedFilter")
@@ -451,35 +345,23 @@ trait Range extends StObject {
   
   /** @param Operator [Operator=1] */
   def AutoFilter(Field: Double, Criteria1: String): js.Any = js.native
-  def AutoFilter(
-    Field: Double,
-    Criteria1: String,
-    Operator: js.UndefOr[scala.Nothing],
-    Criteria2: js.UndefOr[scala.Nothing],
-    VisibleDropDown: Boolean
-  ): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: js.UndefOr[scala.Nothing], Criteria2: String): js.Any = js.native
-  def AutoFilter(
-    Field: Double,
-    Criteria1: String,
-    Operator: js.UndefOr[scala.Nothing],
-    Criteria2: String,
-    VisibleDropDown: Boolean
-  ): js.Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String): js.Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String, VisibleDropDown: Boolean): js.Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: Unit, VisibleDropDown: Boolean): js.Any = js.native
   def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator): js.Any = js.native
-  def AutoFilter(
-    Field: Double,
-    Criteria1: String,
-    Operator: XlAutoFilterOperator,
-    Criteria2: js.UndefOr[scala.Nothing],
-    VisibleDropDown: Boolean
-  ): js.Any = js.native
   def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator, Criteria2: String): js.Any = js.native
   def AutoFilter(
     Field: Double,
     Criteria1: String,
     Operator: XlAutoFilterOperator,
     Criteria2: String,
+    VisibleDropDown: Boolean
+  ): js.Any = js.native
+  def AutoFilter(
+    Field: Double,
+    Criteria1: String,
+    Operator: XlAutoFilterOperator,
+    Criteria2: Unit,
     VisibleDropDown: Boolean
   ): js.Any = js.native
   
@@ -503,260 +385,96 @@ trait Range extends StObject {
     * @param ColorIndex [ColorIndex=-4105]
     */
   def BorderAround(): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
   def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: js.UndefOr[scala.Nothing], Weight: js.UndefOr[scala.Nothing], ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
+    LineStyle: Unit,
+    Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: Double
   ): js.Any = js.native
   def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: js.UndefOr[scala.Nothing],
+    LineStyle: Unit,
+    Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
-  def BorderAround(LineStyle: js.UndefOr[scala.Nothing], Weight: XlBorderWeight): js.Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
   def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: js.UndefOr[scala.Nothing], Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
+    LineStyle: Unit,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: js.UndefOr[scala.Nothing],
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: Double,
+    Color: Unit,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
   def BorderAround(LineStyle: XlLineStyle): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
+    Weight: Unit,
+    ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: js.UndefOr[scala.Nothing], ColorIndex: XlColorIndex): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
+    Weight: Unit,
     ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: js.UndefOr[scala.Nothing], ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: XlColorIndex,
-    Color: Double,
+    Color: Unit,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
+    ColorIndex: Unit,
+    Color: Double,
     ThemeColor: Double
   ): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.UndefOr[scala.Nothing],
+    ColorIndex: Unit,
+    Color: Double,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: XlBorderWeight,
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: Double,
+    ColorIndex: Unit,
+    Color: Unit,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: Double
-  ): js.Any = js.native
-  def BorderAround(
-    LineStyle: XlLineStyle,
-    Weight: XlBorderWeight,
-    ColorIndex: XlColorIndex,
-    Color: js.UndefOr[scala.Nothing],
-    ThemeColor: XlThemeColor
-  ): js.Any = js.native
   def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
@@ -770,6 +488,20 @@ trait Range extends StObject {
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
+    ThemeColor: XlThemeColor
+  ): js.Any = js.native
+  def BorderAround(
+    LineStyle: XlLineStyle,
+    Weight: XlBorderWeight,
+    ColorIndex: XlColorIndex,
+    Color: Unit,
+    ThemeColor: Double
+  ): js.Any = js.native
+  def BorderAround(
+    LineStyle: XlLineStyle,
+    Weight: XlBorderWeight,
+    ColorIndex: XlColorIndex,
+    Color: Unit,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
   
@@ -788,63 +520,13 @@ trait Range extends StObject {
   val Cells_Original: Range = js.native
   
   def Characters(): typings.activexExcel.Excel.Characters = js.native
-  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: Unit, Length: Double): typings.activexExcel.Excel.Characters = js.native
   
   def CheckSpelling(): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean
-  ): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: String): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: js.UndefOr[scala.Nothing], AlwaysSuggest: Boolean): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean): js.Any = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): js.Any = js.native
   def CheckSpelling(
     CustomDictionary: String,
@@ -852,6 +534,17 @@ trait Range extends StObject {
     AlwaysSuggest: Boolean,
     SpellLang: MsoLanguageID
   ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): js.Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
   
   def Clear(): js.Any = js.native
   
@@ -882,164 +575,77 @@ trait Range extends StObject {
   val Comment: typings.activexExcel.Excel.Comment = js.native
   
   def Consolidate(): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean, CreateLinks: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean, CreateLinks: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
   def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean,
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: js.UndefOr[scala.Nothing], Function: js.UndefOr[scala.Nothing], TopRow: Boolean): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: Boolean,
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: Boolean,
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: Boolean,
-    LeftColumn: Boolean,
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: js.UndefOr[scala.Nothing], Function: XlConsolidationFunction): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean,
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: js.UndefOr[scala.Nothing], Function: XlConsolidationFunction, TopRow: Boolean): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: XlConsolidationFunction,
-    TopRow: Boolean,
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
-    Function: XlConsolidationFunction,
-    TopRow: Boolean,
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: js.UndefOr[scala.Nothing],
+    Sources: Unit,
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Boolean,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(
+    Sources: Unit,
+    Function: XlConsolidationFunction,
+    TopRow: Boolean,
+    LeftColumn: Unit,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(
+    Sources: Unit,
+    Function: XlConsolidationFunction,
+    TopRow: Unit,
+    LeftColumn: Boolean,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(
+    Sources: Unit,
+    Function: XlConsolidationFunction,
+    TopRow: Unit,
+    LeftColumn: Unit,
     CreateLinks: Boolean
   ): js.Any = js.native
   def Consolidate(Sources: SafeArray[String]): js.Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean): js.Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean,
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: js.UndefOr[scala.Nothing], TopRow: Boolean): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: Boolean,
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
-    TopRow: Boolean,
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: js.UndefOr[scala.Nothing],
+    Function: Unit,
     TopRow: Boolean,
     LeftColumn: Boolean,
     CreateLinks: Boolean
   ): js.Any = js.native
+  def Consolidate(
+    Sources: SafeArray[String],
+    Function: Unit,
+    TopRow: Boolean,
+    LeftColumn: Unit,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(
+    Sources: SafeArray[String],
+    Function: Unit,
+    TopRow: Unit,
+    LeftColumn: Boolean,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
   def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: XlConsolidationFunction,
-    TopRow: js.UndefOr[scala.Nothing],
-    LeftColumn: Boolean,
-    CreateLinks: Boolean
-  ): js.Any = js.native
   def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Boolean): js.Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Boolean,
-    LeftColumn: js.UndefOr[scala.Nothing],
-    CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(
-    Sources: SafeArray[String],
-    Function: XlConsolidationFunction,
-    TopRow: Boolean,
     LeftColumn: Boolean
   ): js.Any = js.native
   def Consolidate(
@@ -1047,6 +653,28 @@ trait Range extends StObject {
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Boolean,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(
+    Sources: SafeArray[String],
+    Function: XlConsolidationFunction,
+    TopRow: Boolean,
+    LeftColumn: Unit,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(
+    Sources: SafeArray[String],
+    Function: XlConsolidationFunction,
+    TopRow: Unit,
+    LeftColumn: Boolean,
+    CreateLinks: Boolean
+  ): js.Any = js.native
+  def Consolidate(
+    Sources: SafeArray[String],
+    Function: XlConsolidationFunction,
+    TopRow: Unit,
+    LeftColumn: Unit,
     CreateLinks: Boolean
   ): js.Any = js.native
   
@@ -1054,20 +682,20 @@ trait Range extends StObject {
   def Copy(Destination: Range): js.Any = js.native
   
   def CopyFromRecordset(Data: Recordset): Double = js.native
-  def CopyFromRecordset(Data: Recordset, MaxRows: js.UndefOr[scala.Nothing], MaxColumns: Double): Double = js.native
   def CopyFromRecordset(Data: Recordset, MaxRows: Double): Double = js.native
   def CopyFromRecordset(Data: Recordset, MaxRows: Double, MaxColumns: Double): Double = js.native
+  def CopyFromRecordset(Data: Recordset, MaxRows: Unit, MaxColumns: Double): Double = js.native
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset): Double = js.native
-  def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: js.UndefOr[scala.Nothing], MaxColumns: Double): Double = js.native
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: Double): Double = js.native
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: Double, MaxColumns: Double): Double = js.native
+  def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: Unit, MaxColumns: Double): Double = js.native
   
   /**
     * @param Appearance [Appearance=1]
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   
@@ -1076,220 +704,103 @@ trait Range extends StObject {
   val CountLarge: Double = js.native
   
   def CreateNames(): js.Any = js.native
-  def CreateNames(
-    Top: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[scala.Nothing],
-    Bottom: js.UndefOr[scala.Nothing],
-    Right: Boolean
-  ): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Bottom: Boolean, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: Boolean): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: Boolean, Bottom: js.UndefOr[scala.Nothing], Right: Boolean): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: Boolean, Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: js.UndefOr[scala.Nothing], Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: js.UndefOr[scala.Nothing], Bottom: js.UndefOr[scala.Nothing], Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: js.UndefOr[scala.Nothing], Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: js.UndefOr[scala.Nothing], Bottom: Boolean, Right: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean, Left: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Boolean, Bottom: js.UndefOr[scala.Nothing], Right: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Unit, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean): js.Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Unit, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Unit, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean, Right: Boolean): js.Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Unit, Right: Boolean): js.Any = js.native
   
   /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: js.Any, ContainsRTF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: js.Any,
+    ContainsBIFF: js.Any,
+    ContainsRTF: js.Any,
     ContainsVALU: js.Any
   ): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any
+    Appearance: Unit,
+    ContainsPICT: js.Any,
+    ContainsBIFF: js.Any,
+    ContainsRTF: Unit,
+    ContainsVALU: js.Any
   ): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: Unit, ContainsRTF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: js.Any,
+    ContainsBIFF: Unit,
     ContainsRTF: js.Any,
     ContainsVALU: js.Any
   ): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: js.Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
     ContainsVALU: js.Any
   ): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: js.Any): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: js.Any, ContainsRTF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: Unit,
     ContainsBIFF: js.Any,
     ContainsRTF: js.Any,
     ContainsVALU: js.Any
   ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: js.UndefOr[scala.Nothing], ContainsPICT: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: Unit,
+    ContainsBIFF: js.Any,
+    ContainsRTF: Unit,
     ContainsVALU: js.Any
   ): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: Unit, ContainsRTF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
     ContainsRTF: js.Any,
     ContainsVALU: js.Any
   ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: js.UndefOr[scala.Nothing], ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.UndefOr[scala.Nothing],
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
+    Appearance: Unit,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
     ContainsVALU: js.Any
   ): js.Any = js.native
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.UndefOr[scala.Nothing],
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.UndefOr[scala.Nothing],
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.UndefOr[scala.Nothing],
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.UndefOr[scala.Nothing],
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.UndefOr[scala.Nothing],
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
   def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
   def CreatePublisher(
     Edition: js.Any,
     Appearance: XlPictureAppearance,
     ContainsPICT: js.Any,
     ContainsBIFF: js.Any,
-    ContainsRTF: js.UndefOr[scala.Nothing],
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
     ContainsRTF: js.Any
   ): js.Any = js.native
   def CreatePublisher(
@@ -1298,6 +809,84 @@ trait Range extends StObject {
     ContainsPICT: js.Any,
     ContainsBIFF: js.Any,
     ContainsRTF: js.Any,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: js.Any,
+    ContainsBIFF: js.Any,
+    ContainsRTF: Unit,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: js.Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: js.Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: js.Any,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: js.Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: Unit, ContainsBIFF: js.Any): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: js.Any,
+    ContainsRTF: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: js.Any,
+    ContainsRTF: js.Any,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: js.Any,
+    ContainsRTF: Unit,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: js.Any,
+    ContainsVALU: js.Any
+  ): js.Any = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
     ContainsVALU: js.Any
   ): js.Any = js.native
   
@@ -1324,182 +913,31 @@ trait Range extends StObject {
     * @param Step [Step=1]
     */
   def DataSeries(Rowcol: XlRowCol): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: js.UndefOr[scala.Nothing], Date: js.UndefOr[scala.Nothing], Step: Double): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: js.UndefOr[scala.Nothing], Date: XlDataSeriesDate): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: js.UndefOr[scala.Nothing], Date: XlDataSeriesDate, Step: Double): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: Double,
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: Double,
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: js.UndefOr[scala.Nothing],
-    Date: XlDataSeriesDate,
-    Step: Double,
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: js.UndefOr[scala.Nothing], Step: Double): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: js.UndefOr[scala.Nothing],
-    Step: Double,
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double
-  ): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: XlDataSeriesDate,
-    Step: js.UndefOr[scala.Nothing],
-    Stop: Double,
-    Trend: Boolean
-  ): js.Any = js.native
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double): js.Any = js.native
-  def DataSeries(
-    Rowcol: XlRowCol,
-    Type: XlDataSeriesType,
-    Date: XlDataSeriesDate,
-    Step: Double,
-    Stop: js.UndefOr[scala.Nothing],
-    Trend: Boolean
-  ): js.Any = js.native
   def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double, Stop: Double): js.Any = js.native
   def DataSeries(
     Rowcol: XlRowCol,
@@ -1507,6 +945,31 @@ trait Range extends StObject {
     Date: XlDataSeriesDate,
     Step: Double,
     Stop: Double,
+    Trend: Boolean
+  ): js.Any = js.native
+  def DataSeries(
+    Rowcol: XlRowCol,
+    Type: XlDataSeriesType,
+    Date: XlDataSeriesDate,
+    Step: Double,
+    Stop: Unit,
+    Trend: Boolean
+  ): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Unit, Stop: Double): js.Any = js.native
+  def DataSeries(
+    Rowcol: XlRowCol,
+    Type: XlDataSeriesType,
+    Date: XlDataSeriesDate,
+    Step: Unit,
+    Stop: Double,
+    Trend: Boolean
+  ): js.Any = js.native
+  def DataSeries(
+    Rowcol: XlRowCol,
+    Type: XlDataSeriesType,
+    Date: XlDataSeriesDate,
+    Step: Unit,
+    Stop: Unit,
     Trend: Boolean
   ): js.Any = js.native
   
@@ -1549,8 +1012,8 @@ trait Range extends StObject {
     Option: XlEditionOptionsOption,
     Name: js.Any,
     Reference: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
-    ChartSize: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
+    ChartSize: Unit,
     Format: js.Any
   ): js.Any = js.native
   def EditionOptions(
@@ -1558,7 +1021,7 @@ trait Range extends StObject {
     Option: XlEditionOptionsOption,
     Name: js.Any,
     Reference: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
     ChartSize: XlPictureAppearance
   ): js.Any = js.native
   def EditionOptions(
@@ -1566,7 +1029,7 @@ trait Range extends StObject {
     Option: XlEditionOptionsOption,
     Name: js.Any,
     Reference: js.Any,
-    Appearance: js.UndefOr[scala.Nothing],
+    Appearance: Unit,
     ChartSize: XlPictureAppearance,
     Format: js.Any
   ): js.Any = js.native
@@ -1583,7 +1046,7 @@ trait Range extends StObject {
     Name: js.Any,
     Reference: js.Any,
     Appearance: XlPictureAppearance,
-    ChartSize: js.UndefOr[scala.Nothing],
+    ChartSize: Unit,
     Format: js.Any
   ): js.Any = js.native
   def EditionOptions(
@@ -1688,41 +1151,21 @@ trait Range extends StObject {
   def GoalSeek(Goal: js.Any, ChangingCell: Range): Boolean = js.native
   
   def Group(): js.Any = js.native
-  def Group(
-    Start: js.UndefOr[scala.Nothing],
-    End: js.UndefOr[scala.Nothing],
-    By: js.UndefOr[scala.Nothing],
-    Periods: SafeArray[Boolean]
-  ): js.Any = js.native
-  def Group(Start: js.UndefOr[scala.Nothing], End: js.UndefOr[scala.Nothing], By: Double): js.Any = js.native
-  def Group(
-    Start: js.UndefOr[scala.Nothing],
-    End: js.UndefOr[scala.Nothing],
-    By: Double,
-    Periods: SafeArray[Boolean]
-  ): js.Any = js.native
-  def Group(Start: js.UndefOr[scala.Nothing], End: js.Any): js.Any = js.native
-  def Group(
-    Start: js.UndefOr[scala.Nothing],
-    End: js.Any,
-    By: js.UndefOr[scala.Nothing],
-    Periods: SafeArray[Boolean]
-  ): js.Any = js.native
-  def Group(Start: js.UndefOr[scala.Nothing], End: js.Any, By: Double): js.Any = js.native
-  def Group(Start: js.UndefOr[scala.Nothing], End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
   def Group(Start: js.Any): js.Any = js.native
-  def Group(
-    Start: js.Any,
-    End: js.UndefOr[scala.Nothing],
-    By: js.UndefOr[scala.Nothing],
-    Periods: SafeArray[Boolean]
-  ): js.Any = js.native
-  def Group(Start: js.Any, End: js.UndefOr[scala.Nothing], By: Double): js.Any = js.native
-  def Group(Start: js.Any, End: js.UndefOr[scala.Nothing], By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
   def Group(Start: js.Any, End: js.Any): js.Any = js.native
-  def Group(Start: js.Any, End: js.Any, By: js.UndefOr[scala.Nothing], Periods: SafeArray[Boolean]): js.Any = js.native
   def Group(Start: js.Any, End: js.Any, By: Double): js.Any = js.native
   def Group(Start: js.Any, End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: js.Any, End: js.Any, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: js.Any, End: Unit, By: Double): js.Any = js.native
+  def Group(Start: js.Any, End: Unit, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: js.Any, End: Unit, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: Unit, End: js.Any): js.Any = js.native
+  def Group(Start: Unit, End: js.Any, By: Double): js.Any = js.native
+  def Group(Start: Unit, End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: Unit, End: js.Any, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: Unit, End: Unit, By: Double): js.Any = js.native
+  def Group(Start: Unit, End: Unit, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(Start: Unit, End: Unit, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
   
   val HasArray: Boolean = js.native
   
@@ -1744,7 +1187,7 @@ trait Range extends StObject {
   var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
   
   def Insert(): js.Any = js.native
-  def Insert(Shift: js.UndefOr[scala.Nothing], CopyOrigin: js.Any): js.Any = js.native
+  def Insert(Shift: Unit, CopyOrigin: js.Any): js.Any = js.native
   def Insert(Shift: XlInsertShiftDirection): js.Any = js.native
   def Insert(Shift: XlInsertShiftDirection, CopyOrigin: js.Any): js.Any = js.native
   
@@ -1786,17 +1229,13 @@ trait Range extends StObject {
   var Name: String | typings.activexExcel.Excel.Name = js.native
   
   def NavigateArrow(): js.Any = js.native
-  def NavigateArrow(
-    TowardPrecedent: js.UndefOr[scala.Nothing],
-    ArrowNumber: js.UndefOr[scala.Nothing],
-    LinkNumber: Double
-  ): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: js.UndefOr[scala.Nothing], ArrowNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: js.UndefOr[scala.Nothing], ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
   def NavigateArrow(TowardPrecedent: Boolean): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: js.UndefOr[scala.Nothing], LinkNumber: Double): js.Any = js.native
   def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double): js.Any = js.native
   def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
+  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Unit, LinkNumber: Double): js.Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double): js.Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Unit, LinkNumber: Double): js.Any = js.native
   
   def Next(Address: String): Range = js.native
   def Next(RowIndex: Double): Range = js.native
@@ -1805,22 +1244,22 @@ trait Range extends StObject {
   val Next_Original: Range = js.native
   
   def NoteText(): String = js.native
-  def NoteText(Text: js.UndefOr[scala.Nothing], Start: js.UndefOr[scala.Nothing], Length: Double): String = js.native
-  def NoteText(Text: js.UndefOr[scala.Nothing], Start: Double): String = js.native
-  def NoteText(Text: js.UndefOr[scala.Nothing], Start: Double, Length: Double): String = js.native
   def NoteText(Text: String): String = js.native
-  def NoteText(Text: String, Start: js.UndefOr[scala.Nothing], Length: Double): String = js.native
   def NoteText(Text: String, Start: Double): String = js.native
   def NoteText(Text: String, Start: Double, Length: Double): String = js.native
+  def NoteText(Text: String, Start: Unit, Length: Double): String = js.native
+  def NoteText(Text: Unit, Start: Double): String = js.native
+  def NoteText(Text: Unit, Start: Double, Length: Double): String = js.native
+  def NoteText(Text: Unit, Start: Unit, Length: Double): String = js.native
   
   var NumberFormat: String | Null = js.native
   
   var NumberFormatLocal: String | Null = js.native
   
   def Offset(): Range = js.native
-  def Offset(RowOffset: js.UndefOr[scala.Nothing], ColumnOffset: Double): Range = js.native
   def Offset(RowOffset: Double): Range = js.native
   def Offset(RowOffset: Double, ColumnOffset: Double): Range = js.native
+  def Offset(RowOffset: Unit, ColumnOffset: Double): Range = js.native
   
   var Orientation: Double | XlOrientation = js.native
   
@@ -1831,60 +1270,30 @@ trait Range extends StObject {
   val Parent: js.Any = js.native
   
   def Parse(): js.Any = js.native
-  def Parse(ParseLine: js.UndefOr[scala.Nothing], Destination: Range): js.Any = js.native
   def Parse(ParseLine: String): js.Any = js.native
   def Parse(ParseLine: String, Destination: Range): js.Any = js.native
+  def Parse(ParseLine: Unit, Destination: Range): js.Any = js.native
   
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
     */
   def PasteSpecial(): js.Any = js.native
-  def PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: Boolean
-  ): js.Any = js.native
-  def PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: js.UndefOr[scala.Nothing], SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: Boolean,
-    Transpose: Boolean
-  ): js.Any = js.native
-  def PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: XlPasteSpecialOperation): js.Any = js.native
-  def PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: Boolean
-  ): js.Any = js.native
-  def PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: Boolean,
-    Transpose: Boolean
-  ): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  def PasteSpecial(
-    Paste: XlPasteType,
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: Boolean
-  ): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: js.UndefOr[scala.Nothing], SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: js.UndefOr[scala.Nothing], SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def PasteSpecial(
-    Paste: XlPasteType,
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: Boolean
-  ): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
   
   val Phonetic: typings.activexExcel.Excel.Phonetic = js.native
   
@@ -1957,9 +1366,9 @@ trait Range extends StObject {
   ): Boolean = js.native
   
   def Resize(): Range = js.native
-  def Resize(RowSize: js.UndefOr[scala.Nothing], ColumnSize: Double): Range = js.native
   def Resize(RowSize: Double): Range = js.native
   def Resize(RowSize: Double, ColumnSize: Double): Range = js.native
+  def Resize(RowSize: Unit, ColumnSize: Double): Range = js.native
   
   val Row: Double = js.native
   
@@ -2098,7 +1507,7 @@ trait Range extends StObject {
   val SparklineGroups_Original: SparklineGroups = js.native
   
   def Speak(): Unit = js.native
-  def Speak(SpeakDirection: js.UndefOr[scala.Nothing], SpeakFormulas: Boolean): Unit = js.native
+  def Speak(SpeakDirection: Unit, SpeakFormulas: Boolean): Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection): Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection, SpeakFormulas: Boolean): Unit = js.native
   
@@ -2138,7 +1547,7 @@ trait Range extends StObject {
   val Summary: Boolean = js.native
   
   def Table(): js.Any = js.native
-  def Table(RowInput: js.UndefOr[scala.Nothing], ColumnInput: Range): js.Any = js.native
+  def Table(RowInput: Unit, ColumnInput: Range): js.Any = js.native
   def Table(RowInput: Range): js.Any = js.native
   def Table(RowInput: Range, ColumnInput: Range): js.Any = js.native
   
@@ -2159,7 +1568,7 @@ trait Range extends StObject {
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[Boolean],
     OtherChar: js.UndefOr[String],
-    FieldInfo: js.UndefOr[SafeArray[_]],
+    FieldInfo: js.UndefOr[SafeArray[js.Any]],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
     TrailingMinusNumbers: js.UndefOr[js.Any]
@@ -2185,7 +1594,7 @@ trait Range extends StObject {
   
   // tslint:disable-next-line: ban-types
   @JSName("Value")
-  var Value_Original: (Exclude[_, js.Function]) with (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], _]) = js.native
+  var Value_Original: (Exclude[js.Any, js.Function]) & (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], js.Any]) = js.native
   
   var VerticalAlignment: VerticalAlignments = js.native
   
@@ -2202,74 +1611,39 @@ trait Range extends StObject {
     * @param ColorIndex [ColorIndex=-4105]
     */
   def _BorderAround(LineStyle: js.Any): js.Any = js.native
-  def _BorderAround(
-    LineStyle: js.Any,
-    Weight: js.UndefOr[scala.Nothing],
-    ColorIndex: js.UndefOr[scala.Nothing],
-    Color: js.Any
-  ): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: js.UndefOr[scala.Nothing], ColorIndex: XlColorIndex): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: js.UndefOr[scala.Nothing], ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
+  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: Unit, Color: js.Any): js.Any = js.native
+  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
+  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: js.UndefOr[scala.Nothing], Color: js.Any): js.Any = js.native
+  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: Unit, Color: js.Any): js.Any = js.native
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
   
   def _Default(): js.Any = js.native
-  def _Default(RowIndex: js.UndefOr[scala.Nothing], ColumnIndex: js.Any): js.Any = js.native
   def _Default(RowIndex: js.Any): js.Any = js.native
   def _Default(RowIndex: js.Any, ColumnIndex: js.Any): js.Any = js.native
+  def _Default(RowIndex: Unit, ColumnIndex: js.Any): js.Any = js.native
   
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
     */
   def _PasteSpecial(): js.Any = js.native
-  def _PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: js.Any
-  ): js.Any = js.native
-  def _PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: js.UndefOr[scala.Nothing], SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: js.Any,
-    Transpose: js.Any
-  ): js.Any = js.native
-  def _PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: XlPasteSpecialOperation): js.Any = js.native
-  def _PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: js.Any
-  ): js.Any = js.native
-  def _PasteSpecial(Paste: js.UndefOr[scala.Nothing], Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(
-    Paste: js.UndefOr[scala.Nothing],
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: js.Any,
-    Transpose: js.Any
-  ): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  def _PasteSpecial(
-    Paste: XlPasteType,
-    Operation: js.UndefOr[scala.Nothing],
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: js.Any
-  ): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: js.UndefOr[scala.Nothing], SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: js.UndefOr[scala.Nothing], SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def _PasteSpecial(
-    Paste: XlPasteType,
-    Operation: XlPasteSpecialOperation,
-    SkipBlanks: js.UndefOr[scala.Nothing],
-    Transpose: js.Any
-  ): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
   
   def _PrintOut(
     From: js.UndefOr[js.Any],

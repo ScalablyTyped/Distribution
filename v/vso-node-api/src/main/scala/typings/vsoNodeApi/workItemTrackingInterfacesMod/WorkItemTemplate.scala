@@ -3,16 +3,16 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemTemplate extends WorkItemTemplateReference {
+trait WorkItemTemplate
+  extends StObject
+     with WorkItemTemplateReference {
   
   /**
     * Mapping of field and its templated value.
     */
-  var fields: StringDictionary[String] = js.native
+  var fields: StringDictionary[String]
 }
 object WorkItemTemplate {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyAction extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup. For example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
     */
-  var DestinationBackupVaultArn: ARN = js.native
+  var DestinationBackupVaultArn: ARN
   
-  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.native
+  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
 }
 object CopyAction {
   

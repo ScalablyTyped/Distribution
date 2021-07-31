@@ -12,7 +12,7 @@ React flexbox grid made simple.
 | Keywords           | react, grid, flex, flexbox, react-component |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 3759 |
+| # downloads        | 3395 |
 | # stars            | 1 |
 
 ## Links

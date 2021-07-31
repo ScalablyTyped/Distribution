@@ -2,7 +2,6 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,14 +20,18 @@ trait DataLoader extends StObject {
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   
-  def filter(text: WebixCallback | WebixTemplate): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
-  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: String, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback): Unit = js.native
+  def filter(text: WebixCallback, value: String): Unit = js.native
+  def filter(text: WebixCallback, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate): Unit = js.native
+  def filter(text: WebixTemplate, value: String): Unit = js.native
+  def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
@@ -52,12 +55,12 @@ trait DataLoader extends StObject {
   def getPrevId(id: String, step: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
   
   def parse(data: js.Any, `type`: String): Unit = js.native
   
@@ -66,23 +69,23 @@ trait DataLoader extends StObject {
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(all: Boolean): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(all: Boolean): js.Array[js.Any] = js.native
   
   def sort(by: String): Unit = js.native
-  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
+  def sort(by: String, dir: Unit, as: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def updateItem(id: String, data: js.Any): Unit = js.native
   def updateItem(id: Double, data: js.Any): Unit = js.native
   
-  var waitData: js.Promise[_] = js.native
+  var waitData: js.Promise[js.Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
 }

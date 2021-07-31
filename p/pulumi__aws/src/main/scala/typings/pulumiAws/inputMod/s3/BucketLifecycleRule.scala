@@ -4,56 +4,54 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLifecycleRule extends StObject {
   
   /**
     * Specifies the number of days after initiating a multipart upload when the multipart upload must be completed.
     */
-  var abortIncompleteMultipartUploadDays: js.UndefOr[Input[Double]] = js.native
+  var abortIncompleteMultipartUploadDays: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Specifies lifecycle rule status.
     */
-  var enabled: Input[Boolean] = js.native
+  var enabled: Input[Boolean]
   
   /**
     * Specifies a period in the object's expire (documented below).
     */
-  var expiration: js.UndefOr[Input[BucketLifecycleRuleExpiration]] = js.native
+  var expiration: js.UndefOr[Input[BucketLifecycleRuleExpiration]] = js.undefined
   
   /**
     * Unique identifier for the rule. Must be less than or equal to 255 characters in length.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies when noncurrent object versions expire (documented below).
     */
-  var noncurrentVersionExpiration: js.UndefOr[Input[BucketLifecycleRuleNoncurrentVersionExpiration]] = js.native
+  var noncurrentVersionExpiration: js.UndefOr[Input[BucketLifecycleRuleNoncurrentVersionExpiration]] = js.undefined
   
   /**
     * Specifies when noncurrent object versions transitions (documented below).
     */
-  var noncurrentVersionTransitions: js.UndefOr[Input[js.Array[Input[BucketLifecycleRuleNoncurrentVersionTransition]]]] = js.native
+  var noncurrentVersionTransitions: js.UndefOr[Input[js.Array[Input[BucketLifecycleRuleNoncurrentVersionTransition]]]] = js.undefined
   
   /**
     * Object key prefix identifying one or more objects to which the rule applies.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies object tags key and value.
     */
-  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Specifies a period in the object's transitions (documented below).
     */
-  var transitions: js.UndefOr[Input[js.Array[Input[BucketLifecycleRuleTransition]]]] = js.native
+  var transitions: js.UndefOr[Input[js.Array[Input[BucketLifecycleRuleTransition]]]] = js.undefined
 }
 object BucketLifecycleRule {
   

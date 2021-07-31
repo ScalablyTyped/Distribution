@@ -7,21 +7,22 @@ import typings.std.DocumentFragment
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object components {
   
-  @JSImport("knockout", "components.clearCachedDefinition")
+  @JSImport("knockout", "components")
   @js.native
-  def clearCachedDefinition(componentName: String): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def clearCachedDefinition(componentName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCachedDefinition")(componentName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("knockout", "components.defaultLoader")
   @js.native
   val defaultLoader: DefaultLoader_ = js.native
   
-  @JSImport("knockout", "components.get")
-  @js.native
+  @scala.inline
   def get(
     componentName: String,
     callback: js.Function2[
@@ -29,37 +30,31 @@ object components {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Config */ /* config */ js.Any, 
       Unit
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(componentName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("knockout", "components.getComponentNameForNode")
-  @js.native
-  def getComponentNameForNode(node: Node): String = js.native
+  @scala.inline
+  def getComponentNameForNode(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentNameForNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("knockout", "components.isRegistered")
-  @js.native
-  def isRegistered(componentName: String): Boolean = js.native
+  @scala.inline
+  def isRegistered(componentName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistered")(componentName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("knockout", "components.loaders")
   @js.native
   val loaders: js.Array[Loader] = js.native
   
-  @JSImport("knockout", "components.register")
-  @js.native
-  def register(componentName: String, config: js.Object): Unit = js.native
-  @JSImport("knockout", "components.register")
-  @js.native
-  def register(componentName: String, config: Config): Unit = js.native
+  @scala.inline
+  def register(componentName: String, config: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(componentName.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def register(componentName: String, config: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(componentName.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "components.unregister")
-  @js.native
-  def unregister(componentName: String): Unit = js.native
+  @scala.inline
+  def unregister(componentName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(componentName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Component extends StObject {
     
-    var createViewModel: js.UndefOr[CreateViewModel] = js.native
+    var createViewModel: js.UndefOr[CreateViewModel] = js.undefined
     
-    var template: js.Array[Node] = js.native
+    var template: js.Array[Node]
   }
   object Component {
     
@@ -86,12 +81,11 @@ object components {
     }
   }
   
-  @js.native
   trait ComponentInfo extends StObject {
     
-    var element: Node = js.native
+    var element: Node
     
-    var templateNodes: js.Array[Node] = js.native
+    var templateNodes: js.Array[Node]
   }
   object ComponentInfo {
     
@@ -115,16 +109,15 @@ object components {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var require: js.UndefOr[String] = js.native
+    var require: js.UndefOr[String] = js.undefined
     
-    var synchronous: js.UndefOr[Boolean] = js.native
+    var synchronous: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[RequireConfig | TemplateConfig | js.Any] = js.native
+    var template: js.UndefOr[RequireConfig | TemplateConfig | js.Any] = js.undefined
     
-    var viewModel: js.UndefOr[RequireConfig | ViewModelConfig | js.Any] = js.native
+    var viewModel: js.UndefOr[RequireConfig | ViewModelConfig | js.Any] = js.undefined
   }
   object Config {
     
@@ -168,28 +161,29 @@ object components {
   
   type CreateViewModel = js.Function2[/* params */ ViewModelParams, /* componentInfo */ ComponentInfo, ViewModel]
   
-  @js.native
-  trait DefaultLoader_ extends Loader {
+  trait DefaultLoader_
+    extends StObject
+       with Loader {
     
     @JSName("getConfig")
-    def getConfig_MDefaultLoader_(componentName: String, callback: js.Function1[/* config */ Config | js.Object, Unit]): Unit = js.native
+    def getConfig_MDefaultLoader_(componentName: String, callback: js.Function1[/* config */ Config | js.Object, Unit]): Unit
     
     @JSName("loadComponent")
-    def loadComponent_MDefaultLoader_(componentName: String, config: Config, callback: js.Function1[/* component */ Component, Unit]): Unit = js.native
+    def loadComponent_MDefaultLoader_(componentName: String, config: Config, callback: js.Function1[/* component */ Component, Unit]): Unit
     
     @JSName("loadTemplate")
     def loadTemplate_MDefaultLoader_(
       componentName: String,
       config: TemplateConfig,
       callback: js.Function1[/* resolvedTemplate */ js.Array[Node], Unit]
-    ): Unit = js.native
+    ): Unit
     
     @JSName("loadViewModel")
     def loadViewModel_MDefaultLoader_(
       componentName: String,
       config: ViewModelConfig,
       callback: js.Function1[/* resolvedViewModel */ CreateViewModel, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object DefaultLoader_ {
     
@@ -223,7 +217,6 @@ object components {
     }
   }
   
-  @js.native
   trait Loader extends StObject {
     
     var getConfig: js.UndefOr[
@@ -232,7 +225,7 @@ object components {
           /* callback */ js.Function1[/* config */ Config | js.Object, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadComponent: js.UndefOr[
         js.Function3[
@@ -241,7 +234,7 @@ object components {
           /* callback */ js.Function1[/* component */ Component | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadTemplate: js.UndefOr[
         js.Function3[
@@ -250,7 +243,7 @@ object components {
           /* callback */ js.Function1[/* resolvedTemplate */ js.Array[Node] | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadViewModel: js.UndefOr[
         js.Function3[
@@ -259,7 +252,7 @@ object components {
           /* callback */ js.Function1[/* resolvedViewModel */ CreateViewModel | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Loader {
     
@@ -306,10 +299,9 @@ object components {
     }
   }
   
-  @js.native
   trait RequireConfig extends StObject {
     
-    var require: String = js.native
+    var require: String
   }
   object RequireConfig {
     
@@ -329,10 +321,9 @@ object components {
   
   type TemplateConfig = String | js.Array[Node] | DocumentFragment | TemplateElement
   
-  @js.native
   trait TemplateElement extends StObject {
     
-    var element: String | Node = js.native
+    var element: String | Node
   }
   object TemplateElement {
     
@@ -350,12 +341,11 @@ object components {
     }
   }
   
-  @js.native
   trait ViewModel extends StObject {
     
-    var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+    var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var koDescendantsComplete: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var koDescendantsComplete: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   }
   object ViewModel {
     
@@ -391,24 +381,42 @@ object components {
   
   @js.native
   trait ViewModelConstructor
-    extends ViewModelConfig
+    extends StObject
        with Instantiable0[ViewModel]
        with Instantiable1[/* params */ ViewModelParams, ViewModel]
+       with ViewModelConfig
   
-  @js.native
-  trait ViewModelFactory extends ViewModelConfig {
+  trait ViewModelFactory
+    extends StObject
+       with ViewModelConfig {
     
-    def createViewModel(params: ViewModelParams, componentInfo: ComponentInfo): ViewModel = js.native
+    def createViewModel(params: ViewModelParams, componentInfo: ComponentInfo): ViewModel
     @JSName("createViewModel")
-    var createViewModel_Original: CreateViewModel = js.native
+    var createViewModel_Original: CreateViewModel
+  }
+  object ViewModelFactory {
+    
+    @scala.inline
+    def apply(createViewModel: (/* params */ ViewModelParams, /* componentInfo */ ComponentInfo) => ViewModel): ViewModelFactory = {
+      val __obj = js.Dynamic.literal(createViewModel = js.Any.fromFunction2(createViewModel))
+      __obj.asInstanceOf[ViewModelFactory]
+    }
+    
+    @scala.inline
+    implicit class ViewModelFactoryMutableBuilder[Self <: ViewModelFactory] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCreateViewModel(value: (/* params */ ViewModelParams, /* componentInfo */ ComponentInfo) => ViewModel): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
+    }
   }
   
   type ViewModelParams = StringDictionary[js.Any]
   
-  @js.native
-  trait ViewModelStatic extends ViewModelConfig {
+  trait ViewModelStatic
+    extends StObject
+       with ViewModelConfig {
     
-    var instance: js.Any = js.native
+    var instance: js.Any
   }
   object ViewModelStatic {
     

@@ -2,15 +2,13 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontName extends StObject {
   
-  val family: String = js.native
+  val family: String
   
-  val style: String = js.native
+  val style: String
 }
 object FontName {
   

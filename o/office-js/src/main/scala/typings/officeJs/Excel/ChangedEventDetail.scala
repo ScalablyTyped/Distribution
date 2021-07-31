@@ -10,7 +10,6 @@ import typings.officeJs.officeJsStrings.String
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait ChangedEventDetail extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait ChangedEventDetail extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueAfter: js.Any = js.native
+  var valueAfter: js.Any
   
   /**
     *
@@ -36,7 +34,7 @@ trait ChangedEventDetail extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueBefore: js.Any = js.native
+  var valueBefore: js.Any
   
   /**
     *
@@ -44,7 +42,7 @@ trait ChangedEventDetail extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeAfter: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue = js.native
+  var valueTypeAfter: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
   
   /**
     *
@@ -52,7 +50,7 @@ trait ChangedEventDetail extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeBefore: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue = js.native
+  var valueTypeBefore: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
 }
 object ChangedEventDetail {
   

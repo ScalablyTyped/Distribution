@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgram extends StObject {
   
   /**
     * The MediaLive channel associated with the program.
     */
-  var ChannelId: js.UndefOr[string] = js.native
+  var ChannelId: js.UndefOr[string] = js.undefined
   
   /**
     * The settings for this multiplex program.
     */
-  var MultiplexProgramSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexProgramSettings] = js.native
+  var MultiplexProgramSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexProgramSettings] = js.undefined
   
   /**
     * The packet identifier map for this multiplex program.
     */
-  var PacketIdentifiersMap: js.UndefOr[MultiplexProgramPacketIdentifiersMap] = js.native
+  var PacketIdentifiersMap: js.UndefOr[MultiplexProgramPacketIdentifiersMap] = js.undefined
   
   /**
     * Contains information about the current sources for the specified program in the specified multiplex. Keep in mind that each multiplex pipeline connects to both pipelines in a given source channel (the channel identified by the program). But only one of those channel pipelines is ever active at one time.
     */
-  var PipelineDetails: js.UndefOr[listOfMultiplexProgramPipelineDetail] = js.native
+  var PipelineDetails: js.UndefOr[listOfMultiplexProgramPipelineDetail] = js.undefined
   
   /**
     * The name of the multiplex program.
     */
-  var ProgramName: js.UndefOr[string] = js.native
+  var ProgramName: js.UndefOr[string] = js.undefined
 }
 object MultiplexProgram {
   

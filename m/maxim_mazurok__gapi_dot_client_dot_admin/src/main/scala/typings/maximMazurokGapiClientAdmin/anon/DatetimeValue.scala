@@ -3,35 +3,33 @@ package typings.maximMazurokGapiClientAdmin.anon
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatetimeValue extends StObject {
   
   /** Output only. Boolean value of the parameter. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** The RFC 3339 formatted value of the parameter, for example 2010-10-28T10:26:35.000Z. */
-  var datetimeValue: js.UndefOr[String] = js.native
+  var datetimeValue: js.UndefOr[String] = js.undefined
   
   /** Output only. Integer value of the parameter. */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /** Output only. Nested message value of the parameter. */
   var msgValue: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Name of the parameter. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. String value of the parameter. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object DatetimeValue {
   
@@ -67,7 +65,7 @@ object DatetimeValue {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
     
@@ -78,7 +76,7 @@ object DatetimeValue {
     def setMsgValueVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any])*
     ): Self = StObject.set(x, "msgValue", js.Array(value :_*))
     
     @scala.inline

@@ -2,23 +2,23 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelSeriesPoint extends AbstractSeriesPoint {
+trait LabelSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var label: String = js.native
+  var label: String
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var x: Double = js.native
+  var x: Double
   
-  var xOffset: js.UndefOr[Double] = js.native
+  var xOffset: js.UndefOr[Double] = js.undefined
   
-  var y: Double = js.native
+  var y: Double
   
-  var yOffset: js.UndefOr[Double] = js.native
+  var yOffset: js.UndefOr[Double] = js.undefined
 }
 object LabelSeriesPoint {
   

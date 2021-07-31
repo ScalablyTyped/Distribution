@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotVectorClusterStatesHoverOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PlotVectorClusterStatesHoverOptions extends StObject {
     * state. When `undefined`, the series' or point's fillColor for normal
     * state is used.
     */
-  var fillColor: js.UndefOr[ColorType] = js.native
+  var fillColor: js.UndefOr[ColorType] = js.undefined
 }
 object PlotVectorClusterStatesHoverOptions {
   

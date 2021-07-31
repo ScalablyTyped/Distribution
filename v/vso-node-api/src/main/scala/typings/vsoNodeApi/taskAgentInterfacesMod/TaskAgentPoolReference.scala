@@ -2,27 +2,25 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentPoolReference extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets or sets a value indicating whether or not this pool is managed by the service.
     */
-  var isHosted: Boolean = js.native
+  var isHosted: Boolean
   
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets or sets the type of the pool
     */
-  var poolType: TaskAgentPoolType = js.native
+  var poolType: TaskAgentPoolType
   
-  var scope: String = js.native
+  var scope: String
 }
 object TaskAgentPoolReference {
   

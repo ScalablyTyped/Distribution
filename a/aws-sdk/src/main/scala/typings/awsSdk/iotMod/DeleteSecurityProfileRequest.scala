@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSecurityProfileRequest extends StObject {
   
   /**
     * The expected version of the security profile. A new version is generated whenever the security profile is updated. If you specify a value that is different from the actual version, a VersionConflictException is thrown.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
     * The name of the security profile to be deleted.
     */
-  var securityProfileName: SecurityProfileName = js.native
+  var securityProfileName: SecurityProfileName
 }
 object DeleteSecurityProfileRequest {
   

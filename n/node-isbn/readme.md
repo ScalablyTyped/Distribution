@@ -12,7 +12,7 @@ Find books by ISBN
 | Keywords           | isbn, book, google, openlibrary, api, worldcat, isbndb |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 2239 |
+| # downloads        | 5573 |
 | # stars            | 2 |
 
 ## Links

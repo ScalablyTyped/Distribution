@@ -2,13 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintSubmitEvent extends StObject {
   
-  var results: PrintSubmitEventResults = js.native
+  var results: PrintSubmitEventResults
 }
 object PrintSubmitEvent {
   

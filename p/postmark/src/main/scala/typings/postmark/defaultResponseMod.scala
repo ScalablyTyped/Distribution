@@ -2,17 +2,15 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultResponseMod {
   
-  @js.native
   trait DefaultResponse extends StObject {
     
-    var ErrorCode: Double = js.native
+    var ErrorCode: Double
     
-    var Message: String = js.native
+    var Message: String
   }
   object DefaultResponse {
     

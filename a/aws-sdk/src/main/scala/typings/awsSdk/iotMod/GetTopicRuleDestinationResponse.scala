@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTopicRuleDestinationResponse extends StObject {
   
   /**
     * The topic rule destination.
     */
-  var topicRuleDestination: js.UndefOr[TopicRuleDestination] = js.native
+  var topicRuleDestination: js.UndefOr[TopicRuleDestination] = js.undefined
 }
 object GetTopicRuleDestinationResponse {
   

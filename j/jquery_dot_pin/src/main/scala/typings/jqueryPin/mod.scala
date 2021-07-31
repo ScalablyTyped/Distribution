@@ -3,21 +3,19 @@ package typings.jqueryPin
 import typings.jqueryPin.anon.Bottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Options extends StObject {
     
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
-    var containerSelector: js.UndefOr[String] = js.native
+    var containerSelector: js.UndefOr[String] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Bottom] = js.native
+    var padding: js.UndefOr[Bottom] = js.undefined
   }
   object Options {
     

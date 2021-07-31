@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleEmail extends StObject {
   
   /**
     * The body of the email message, in HTML format. We recommend using HTML format for email clients that render HTML content. You can include links, formatted text, and more in an HTML message.
     */
-  var HtmlPart: js.UndefOr[SimpleEmailPart] = js.native
+  var HtmlPart: js.UndefOr[SimpleEmailPart] = js.undefined
   
   /**
     * The subject line, or title, of the email.
     */
-  var Subject: js.UndefOr[SimpleEmailPart] = js.native
+  var Subject: js.UndefOr[SimpleEmailPart] = js.undefined
   
   /**
     * The body of the email message, in plain text format. We recommend using plain text format for email clients that don't render HTML content and clients that are connected to high-latency networks, such as mobile devices.
     */
-  var TextPart: js.UndefOr[SimpleEmailPart] = js.native
+  var TextPart: js.UndefOr[SimpleEmailPart] = js.undefined
 }
 object SimpleEmail {
   

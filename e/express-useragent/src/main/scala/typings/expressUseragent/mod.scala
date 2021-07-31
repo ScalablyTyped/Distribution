@@ -11,10 +11,13 @@ import typings.expressUseragent.expressUseragentStrings.CaptiveNetwork
 import typings.expressUseragent.expressUseragentStrings.Silk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("express-useragent", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-useragent", "Agent")
   @js.native
@@ -69,181 +72,167 @@ object mod {
     var version: String = js.native
   }
   
-  @JSImport("express-useragent", "express")
-  @js.native
+  @scala.inline
   def express(): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ js.UndefOr[NextFunction], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("express")().asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ js.UndefOr[NextFunction], 
+    Unit
+  ]]
   
-  @JSImport("express-useragent", "getBrowser")
-  @js.native
-  def getBrowser(string: String): String = js.native
+  @scala.inline
+  def getBrowser(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowser")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("express-useragent", "getBrowserVersion")
-  @js.native
-  def getBrowserVersion(string: String): String = js.native
+  @scala.inline
+  def getBrowserVersion(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserVersion")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("express-useragent", "getOS")
-  @js.native
-  def getOS(string: String): String = js.native
+  @scala.inline
+  def getOS(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOS")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("express-useragent", "getPlatform")
-  @js.native
-  def getPlatform(string: String): String = js.native
+  @scala.inline
+  def getPlatform(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("express-useragent", "parse")
-  @js.native
-  def parse(source: String): Details = js.native
+  @scala.inline
+  def parse(source: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Details]
   
-  @JSImport("express-useragent", "reset")
-  @js.native
-  def reset(): Details = js.native
+  @scala.inline
+  def reset(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Details]
   
-  @JSImport("express-useragent", "testAndroidTablet")
-  @js.native
-  def testAndroidTablet(): Unit = js.native
+  @scala.inline
+  def testAndroidTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAndroidTablet")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testBot")
-  @js.native
-  def testBot(): Unit = js.native
+  @scala.inline
+  def testBot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testBot")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testCaptiveNetwork")
-  @js.native
-  def testCaptiveNetwork(): CaptiveNetwork | `false` = js.native
+  @scala.inline
+  def testCaptiveNetwork(): CaptiveNetwork | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testCaptiveNetwork")().asInstanceOf[CaptiveNetwork | `false`]
   
-  @JSImport("express-useragent", "testCompatibilityMode")
-  @js.native
-  def testCompatibilityMode(): Unit = js.native
+  @scala.inline
+  def testCompatibilityMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCompatibilityMode")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testKindleFire")
-  @js.native
-  def testKindleFire(): String | `false` = js.native
+  @scala.inline
+  def testKindleFire(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testKindleFire")().asInstanceOf[String | `false`]
   
-  @JSImport("express-useragent", "testMobile")
-  @js.native
-  def testMobile(): Unit = js.native
+  @scala.inline
+  def testMobile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testMobile")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testNginxGeoIP")
-  @js.native
-  def testNginxGeoIP(): Unit = js.native
+  @scala.inline
+  def testNginxGeoIP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testNginxGeoIP")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testSilk")
-  @js.native
-  def testSilk(): Silk | `false` = js.native
+  @scala.inline
+  def testSilk(): Silk | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testSilk")().asInstanceOf[Silk | `false`]
   
-  @JSImport("express-useragent", "testSmartTV")
-  @js.native
-  def testSmartTV(): Unit = js.native
+  @scala.inline
+  def testSmartTV(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSmartTV")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testTablet")
-  @js.native
-  def testTablet(): Unit = js.native
+  @scala.inline
+  def testTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testTablet")().asInstanceOf[Unit]
   
-  @JSImport("express-useragent", "testWebkit")
-  @js.native
-  def testWebkit(): Unit = js.native
+  @scala.inline
+  def testWebkit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWebkit")().asInstanceOf[Unit]
   
   @JSImport("express-useragent", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait Details extends StObject {
     
-    var browser: String = js.native
+    var browser: String
     
-    var geoIp: StringDictionary[js.Any] = js.native
+    var geoIp: StringDictionary[js.Any]
     
-    var isAmaya: Boolean = js.native
+    var isAmaya: Boolean
     
-    var isAndroid: Boolean = js.native
+    var isAndroid: Boolean
     
-    var isAndroidTablet: Boolean = js.native
+    var isAndroidTablet: Boolean
     
-    var isBada: Boolean = js.native
+    var isBada: Boolean
     
-    var isBlackberry: Boolean = js.native
+    var isBlackberry: Boolean
     
-    var isBot: Boolean = js.native
+    var isBot: Boolean
     
-    var isCaptive: Boolean = js.native
+    var isCaptive: Boolean
     
-    var isChrome: Boolean = js.native
+    var isChrome: Boolean
     
-    var isChromeOS: Boolean = js.native
+    var isChromeOS: Boolean
     
-    var isCurl: Boolean = js.native
+    var isCurl: Boolean
     
-    var isDesktop: Boolean = js.native
+    var isDesktop: Boolean
     
-    var isEdge: Boolean = js.native
+    var isEdge: Boolean
     
-    var isEpiphany: Boolean = js.native
+    var isEpiphany: Boolean
     
-    var isFirefox: Boolean = js.native
+    var isFirefox: Boolean
     
-    var isFlock: Boolean = js.native
+    var isFlock: Boolean
     
-    var isIE: Boolean = js.native
+    var isIE: Boolean
     
-    var isIECompatibilityMode: Boolean = js.native
+    var isIECompatibilityMode: Boolean
     
-    var isKindleFire: Boolean = js.native
+    var isKindleFire: Boolean
     
-    var isKonqueror: Boolean = js.native
+    var isKonqueror: Boolean
     
-    var isLinux: Boolean = js.native
+    var isLinux: Boolean
     
-    var isLinux64: Boolean = js.native
+    var isLinux64: Boolean
     
-    var isMac: Boolean = js.native
+    var isMac: Boolean
     
-    var isMobile: Boolean = js.native
+    var isMobile: Boolean
     
-    var isOmniWeb: Boolean = js.native
+    var isOmniWeb: Boolean
     
-    var isOpera: Boolean = js.native
+    var isOpera: Boolean
     
-    var isRaspberry: Boolean = js.native
+    var isRaspberry: Boolean
     
-    var isSafari: Boolean = js.native
+    var isSafari: Boolean
     
-    var isSamsung: Boolean = js.native
+    var isSamsung: Boolean
     
-    var isSeaMonkey: Boolean = js.native
+    var isSeaMonkey: Boolean
     
-    var isSilk: Boolean = js.native
+    var isSilk: Boolean
     
-    var isSmartTV: Boolean = js.native
+    var isSmartTV: Boolean
     
-    var isTablet: Boolean = js.native
+    var isTablet: Boolean
     
-    var isWebkit: Boolean = js.native
+    var isWebkit: Boolean
     
-    var isWinJs: Boolean = js.native
+    var isWinJs: Boolean
     
-    var isWindows: Boolean = js.native
+    var isWindows: Boolean
     
-    var isWindowsPhone: Boolean = js.native
+    var isWindowsPhone: Boolean
     
-    var isiPad: Boolean = js.native
+    var isiPad: Boolean
     
-    var isiPhone: Boolean = js.native
+    var isiPhone: Boolean
     
-    var isiPod: Boolean = js.native
+    var isiPod: Boolean
     
-    var os: String = js.native
+    var os: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var silkAccelerated: Boolean = js.native
+    var silkAccelerated: Boolean
     
-    var source: String = js.native
+    var source: String
     
-    var version: String = js.native
+    var version: String
   }
   object Details {
     
@@ -447,10 +436,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var useragent: js.UndefOr[Details] = js.native
+        var useragent: js.UndefOr[Details] = js.undefined
       }
       object Request {
         

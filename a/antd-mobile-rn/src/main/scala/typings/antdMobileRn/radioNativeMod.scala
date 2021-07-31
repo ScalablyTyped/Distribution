@@ -8,7 +8,6 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioNativeMod {
@@ -48,12 +47,13 @@ object radioNativeMod {
     def handleClick(): Unit = js.native
   }
   
-  @js.native
-  trait RadioNativeProps extends RadioPropsType {
+  trait RadioNativeProps
+    extends StObject
+       with RadioPropsType {
     
-    var style: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var styles: js.UndefOr[IRadioStyle] = js.native
+    var styles: js.UndefOr[IRadioStyle] = js.undefined
   }
   object RadioNativeProps {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to register.
     */
-  var ResourceArn: ResourceArnString = js.native
+  var ResourceArn: ResourceArnString
   
   /**
     * The identifier for the role that registers the resource.
     */
-  var RoleArn: js.UndefOr[IAMRoleArn] = js.native
+  var RoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
     * Designates an AWS Identity and Access Management (IAM) service-linked role by registering this role with the Data Catalog. A service-linked role is a unique type of IAM role that is linked directly to Lake Formation. For more information, see Using Service-Linked Roles for Lake Formation.
     */
-  var UseServiceLinkedRole: js.UndefOr[NullableBoolean] = js.native
+  var UseServiceLinkedRole: js.UndefOr[NullableBoolean] = js.undefined
 }
 object RegisterResourceRequest {
   

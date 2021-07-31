@@ -10,7 +10,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardHeaderMod {
@@ -36,12 +35,13 @@ object cardHeaderMod {
   trait CardHeader
     extends Component[CardHeaderProps, js.Any, js.Any]
   
-  @js.native
-  trait CardHeaderProps extends CardHeaderPropsType {
+  trait CardHeaderProps
+    extends StObject
+       with CardHeaderPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var thumbStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var thumbStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   }
   object CardHeaderProps {
     
@@ -74,15 +74,16 @@ object cardHeaderMod {
     }
   }
   
-  @js.native
-  trait CardHeaderPropsType extends WithThemeStyles[PickCardStyleheaderConten] {
+  trait CardHeaderPropsType
+    extends StObject
+       with WithThemeStyles[PickCardStyleheaderConten] {
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
     /** need url of img, if this is string. */
-    var thumb: js.UndefOr[ReactNode] = js.native
+    var thumb: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object CardHeaderPropsType {
     

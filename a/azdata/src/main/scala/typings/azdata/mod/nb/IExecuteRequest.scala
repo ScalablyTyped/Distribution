@@ -2,13 +2,13 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IExecuteRequest extends IExecuteOptions {
+trait IExecuteRequest
+  extends StObject
+     with IExecuteOptions {
   
-  var code: String | js.Array[String] = js.native
+  var code: String | js.Array[String]
 }
 object IExecuteRequest {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventSubscriptionMod {
@@ -63,6 +62,10 @@ object eventSubscriptionMod {
   /* static members */
   object EventSubscription {
     
+    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventSubscription resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,62 +75,56 @@ object eventSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventSubscription = js.native
-    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventSubscription = js.native
-    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState): EventSubscription = js.native
-    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): EventSubscription = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventSubscriptionState): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
     
     /**
       * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean]
   }
   
-  @js.native
   trait EventSubscriptionArgs extends StObject {
     
     /**
       * Whether the event subscription should be enabled.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of event categories to listen for, see `DescribeEventCategories` for a canonical list.
       */
-    val eventCategories: Input[js.Array[Input[String]]] = js.native
+    val eventCategories: Input[js.Array[Input[String]]]
     
     /**
       * Name of event subscription.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS topic arn to send events on.
       */
-    val snsTopicArn: Input[String] = js.native
+    val snsTopicArn: Input[String]
     
     /**
       * Ids of sources to listen to.
       */
-    val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Type of source for events. Valid values: `replication-instance` or `replication-task`
       */
-    val sourceType: js.UndefOr[Input[String]] = js.native
+    val sourceType: js.UndefOr[Input[String]] = js.undefined
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EventSubscriptionArgs {
     
@@ -184,42 +181,41 @@ object eventSubscriptionMod {
     }
   }
   
-  @js.native
   trait EventSubscriptionState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the event subscription should be enabled.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of event categories to listen for, see `DescribeEventCategories` for a canonical list.
       */
-    val eventCategories: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val eventCategories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Name of event subscription.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS topic arn to send events on.
       */
-    val snsTopicArn: js.UndefOr[Input[String]] = js.native
+    val snsTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Ids of sources to listen to.
       */
-    val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val sourceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Type of source for events. Valid values: `replication-instance` or `replication-task`
       */
-    val sourceType: js.UndefOr[Input[String]] = js.native
+    val sourceType: js.UndefOr[Input[String]] = js.undefined
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EventSubscriptionState {
     

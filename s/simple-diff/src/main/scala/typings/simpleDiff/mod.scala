@@ -11,37 +11,39 @@ import typings.simpleDiff.simpleDiffStrings.change
 import typings.simpleDiff.simpleDiffStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("simple-diff", JSImport.Namespace)
-  @js.native
-  def apply(oldObj: js.Any, newObj: js.Any): js.Array[Event] = js.native
-  @JSImport("simple-diff", JSImport.Namespace)
-  @js.native
-  def apply(oldObj: js.Any, newObj: js.Any, options: Options): js.Array[Event] = js.native
+  @scala.inline
+  def apply(oldObj: js.Any, newObj: js.Any): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  @scala.inline
+  def apply(oldObj: js.Any, newObj: js.Any, options: Options): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
   
+  @JSImport("simple-diff", JSImport.Namespace)
   @js.native
-  trait AddEvent extends Event {
+  val ^ : js.Any = js.native
+  
+  trait AddEvent
+    extends StObject
+       with Event {
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var oldValue: js.UndefOr[scala.Nothing] = js.native
+    var oldValue: Unit
     
-    var `type`: add = js.native
+    var `type`: add
   }
   object AddEvent {
     
     @scala.inline
-    def apply(newPath: Path, newValue: js.Any, oldPath: Path, `type`: add): AddEvent = {
-      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): AddEvent = {
+      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[AddEvent]
     }
     
@@ -64,41 +66,37 @@ object mod {
       def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
       @scala.inline
+      def setOldValue(value: Unit): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait AddItemEvent extends Event {
+  trait AddItemEvent
+    extends StObject
+       with Event {
     
-    var curIndex: `-1` = js.native
+    var curIndex: `-1`
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
     
-    var oldIndex: `-1` = js.native
+    var oldIndex: `-1`
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var `type`: `add-item` = js.native
+    var `type`: `add-item`
   }
   object AddItemEvent {
     
     @scala.inline
-    def apply(
-      curIndex: `-1`,
-      newIndex: Double,
-      newPath: Path,
-      newValue: js.Any,
-      oldIndex: `-1`,
-      oldPath: Path,
-      `type`: `add-item`
-    ): AddItemEvent = {
-      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): AddItemEvent = {
+      val __obj = js.Dynamic.literal(curIndex = -1, newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = -1, oldPath = oldPath.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("add-item")
       __obj.asInstanceOf[AddItemEvent]
     }
     
@@ -134,25 +132,26 @@ object mod {
     }
   }
   
-  @js.native
-  trait ChangeEvent extends Event {
+  trait ChangeEvent
+    extends StObject
+       with Event {
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
     
-    var `type`: change = js.native
+    var `type`: change
   }
   object ChangeEvent {
     
     @scala.inline
-    def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any, `type`: change): ChangeEvent = {
+    def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): ChangeEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("change")
       __obj.asInstanceOf[ChangeEvent]
     }
     
@@ -194,99 +193,70 @@ object mod {
   object Event {
     
     @scala.inline
-    def AddEvent(newPath: Path, newValue: js.Any, oldPath: Path, `type`: add): typings.simpleDiff.mod.AddEvent = {
-      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def AddEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): typings.simpleDiff.mod.AddEvent = {
+      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[typings.simpleDiff.mod.AddEvent]
     }
     
     @scala.inline
-    def AddItemEvent(
-      curIndex: `-1`,
-      newIndex: Double,
-      newPath: Path,
-      newValue: js.Any,
-      oldIndex: `-1`,
-      oldPath: Path,
-      `type`: `add-item`
-    ): typings.simpleDiff.mod.AddItemEvent = {
-      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def AddItemEvent(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): typings.simpleDiff.mod.AddItemEvent = {
+      val __obj = js.Dynamic.literal(curIndex = -1, newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = -1, oldPath = oldPath.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("add-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.AddItemEvent]
     }
     
     @scala.inline
-    def ChangeEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any, `type`: change): typings.simpleDiff.mod.ChangeEvent = {
+    def ChangeEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.ChangeEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("change")
       __obj.asInstanceOf[typings.simpleDiff.mod.ChangeEvent]
     }
     
     @scala.inline
-    def MoveItemEvent(
-      curIndex: Double,
-      newIndex: Double,
-      newPath: Path,
-      oldIndex: Double,
-      oldPath: Path,
-      `type`: `move-item`
-    ): typings.simpleDiff.mod.MoveItemEvent = {
+    def MoveItemEvent(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): typings.simpleDiff.mod.MoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("move-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.MoveItemEvent]
     }
     
     @scala.inline
-    def RemoveEvent(newPath: Path, oldPath: Path, oldValue: js.Any, `type`: remove): typings.simpleDiff.mod.RemoveEvent = {
-      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def RemoveEvent(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveEvent = {
+      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("remove")
       __obj.asInstanceOf[typings.simpleDiff.mod.RemoveEvent]
     }
     
     @scala.inline
-    def RemoveItemEvent(
-      curIndex: Double,
-      newIndex: `-1`,
-      newPath: Path,
-      oldIndex: Double,
-      oldPath: Path,
-      oldValue: js.Any,
-      `type`: `remove-item`
-    ): typings.simpleDiff.mod.RemoveItemEvent = {
-      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def RemoveItemEvent(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveItemEvent = {
+      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = -1, newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("remove-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.RemoveItemEvent]
     }
   }
   
-  @js.native
-  trait MoveItemEvent extends Event {
+  trait MoveItemEvent
+    extends StObject
+       with Event {
     
-    var curIndex: Double = js.native
+    var curIndex: Double
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var `type`: `move-item` = js.native
+    var `type`: `move-item`
   }
   object MoveItemEvent {
     
     @scala.inline
-    def apply(
-      curIndex: Double,
-      newIndex: Double,
-      newPath: Path,
-      oldIndex: Double,
-      oldPath: Path,
-      `type`: `move-item`
-    ): MoveItemEvent = {
+    def apply(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): MoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("move-item")
       __obj.asInstanceOf[MoveItemEvent]
     }
     
@@ -319,39 +289,38 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var addEvent: js.UndefOr[String] = js.native
+    var addEvent: js.UndefOr[String] = js.undefined
     
-    var addItemEvent: js.UndefOr[String] = js.native
+    var addItemEvent: js.UndefOr[String] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var changeEvent: js.UndefOr[String] = js.native
+    var changeEvent: js.UndefOr[String] = js.undefined
     
     var comparators: js.UndefOr[
         js.Array[
           js.Tuple2[
-            _, 
-            js.Function3[/* oldValue */ _, /* newValue */ _, /* options */ NewPath, Boolean]
+            js.Any, 
+            js.Function3[/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath, Boolean]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var idProp: js.UndefOr[String] = js.native
+    var idProp: js.UndefOr[String] = js.undefined
     
-    var idProps: js.UndefOr[StringDictionary[String]] = js.native
+    var idProps: js.UndefOr[StringDictionary[String]] = js.undefined
     
     var ignore: js.UndefOr[
         js.Function3[/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var moveItemEvent: js.UndefOr[String] = js.native
+    var moveItemEvent: js.UndefOr[String] = js.undefined
     
-    var removeEvent: js.UndefOr[String] = js.native
+    var removeEvent: js.UndefOr[String] = js.undefined
     
-    var removeItemEvent: js.UndefOr[String] = js.native
+    var removeItemEvent: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -392,8 +361,8 @@ object mod {
       def setComparators(
         value: js.Array[
               js.Tuple2[
-                _, 
-                js.Function3[/* oldValue */ _, /* newValue */ _, /* options */ NewPath, Boolean]
+                js.Any, 
+                js.Function3[/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath, Boolean]
               ]
             ]
       ): Self = StObject.set(x, "comparators", value.asInstanceOf[js.Any])
@@ -402,7 +371,12 @@ object mod {
       def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
       
       @scala.inline
-      def setComparatorsVarargs(value: (js.Tuple2[js.Any, js.Function3[js.Any, js.Any, /* options */ NewPath, Boolean]])*): Self = StObject.set(x, "comparators", js.Array(value :_*))
+      def setComparatorsVarargs(
+        value: (js.Tuple2[
+              js.Any, 
+              js.Function3[/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath, Boolean]
+            ])*
+      ): Self = StObject.set(x, "comparators", js.Array(value :_*))
       
       @scala.inline
       def setIdProp(value: String): Self = StObject.set(x, "idProp", value.asInstanceOf[js.Any])
@@ -444,25 +418,26 @@ object mod {
   
   type Path = js.Array[String | Double]
   
-  @js.native
-  trait RemoveEvent extends Event {
+  trait RemoveEvent
+    extends StObject
+       with Event {
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var newValue: js.UndefOr[scala.Nothing] = js.native
+    var newValue: Unit
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
     
-    var `type`: remove = js.native
+    var `type`: remove
   }
   object RemoveEvent {
     
     @scala.inline
-    def apply(newPath: Path, oldPath: Path, oldValue: js.Any, `type`: remove): RemoveEvent = {
-      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): RemoveEvent = {
+      val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("remove")
       __obj.asInstanceOf[RemoveEvent]
     }
     
@@ -474,6 +449,9 @@ object mod {
       
       @scala.inline
       def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      
+      @scala.inline
+      def setNewValue(value: Unit): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
@@ -489,37 +467,30 @@ object mod {
     }
   }
   
-  @js.native
-  trait RemoveItemEvent extends Event {
+  trait RemoveItemEvent
+    extends StObject
+       with Event {
     
-    var curIndex: Double = js.native
+    var curIndex: Double
     
-    var newIndex: `-1` = js.native
+    var newIndex: `-1`
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
     
-    var oldPath: Path = js.native
+    var oldPath: Path
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
     
-    var `type`: `remove-item` = js.native
+    var `type`: `remove-item`
   }
   object RemoveItemEvent {
     
     @scala.inline
-    def apply(
-      curIndex: Double,
-      newIndex: `-1`,
-      newPath: Path,
-      oldIndex: Double,
-      oldPath: Path,
-      oldValue: js.Any,
-      `type`: `remove-item`
-    ): RemoveItemEvent = {
-      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): RemoveItemEvent = {
+      val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = -1, newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("remove-item")
       __obj.asInstanceOf[RemoveItemEvent]
     }
     

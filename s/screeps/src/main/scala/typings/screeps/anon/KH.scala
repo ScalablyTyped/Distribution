@@ -2,17 +2,15 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KH extends StObject {
   
-  var KH: Capacity = js.native
+  var KH: Capacity
   
-  var KH2O: `8` = js.native
+  var KH2O: `8`
   
-  var XKH2O: `9` = js.native
+  var XKH2O: `9`
 }
 object KH {
   

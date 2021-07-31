@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XController
   * @see XStatusListener
   */
-@js.native
-trait FeatureStateEvent extends EventObject {
+trait FeatureStateEvent
+  extends StObject
+     with EventObject {
   
   /** contains a descriptor of the feature for the user interface. */
-  var FeatureDescriptor: String = js.native
+  var FeatureDescriptor: String
   
   /** contains the URL of the feature. */
-  var FeatureURL: URL = js.native
+  var FeatureURL: URL
   
   /** specifies whether the feature is currently enabled or disabled. */
-  var IsEnabled: Boolean = js.native
+  var IsEnabled: Boolean
   
   /**
     * specifies whether the {@link XDispatch} has to be requeried.
     *
     * Interest code should listen for {@link FrameActionEvent} too, to update own feature states and dispatch listener on FrameAction::CONTEXT_CHANGED.
     */
-  var Requery: Boolean = js.native
+  var Requery: Boolean
   
   /**
     * contains the state of the feature in this dispatch.
@@ -38,7 +38,7 @@ trait FeatureStateEvent extends EventObject {
     * This can be, for example, simply `TRUE` for a boolean feature like underline on/off. Some simple types like `string` or `boolean` are useful here for
     * generic UI elements, like a checkmark in a menu.
     */
-  var State: js.Any = js.native
+  var State: js.Any
 }
 object FeatureStateEvent {
   

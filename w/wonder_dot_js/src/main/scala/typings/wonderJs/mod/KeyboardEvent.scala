@@ -1,18 +1,22 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "KeyboardEvent")
 @js.native
-class KeyboardEvent ()
-  extends typings.wonderJs.keyboardEventMod.KeyboardEvent
-
-/* static members */
-@JSImport("wonder.js/dist/es2015", "KeyboardEvent")
-@js.native
-object KeyboardEvent extends js.Object {
-  def create(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = js.native
+class KeyboardEvent protected ()
+  extends typings.wonderJs.keyboardEventMod.KeyboardEvent {
+  def this(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
 }
-
+/* static members */
+object KeyboardEvent {
+  
+  @JSImport("wonder.js/dist/es2015", "KeyboardEvent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.keyboardEventMod.KeyboardEvent]
+}

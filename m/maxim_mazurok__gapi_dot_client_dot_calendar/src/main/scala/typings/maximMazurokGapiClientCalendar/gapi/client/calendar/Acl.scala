@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acl extends StObject {
   
   /** ETag of the collection. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** List of rules on the access control list. */
-  var items: js.UndefOr[js.Array[AclRule]] = js.native
+  var items: js.UndefOr[js.Array[AclRule]] = js.undefined
   
   /** Type of the collection ("calendar#acl"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Token used to access the next page of this result. Omitted if no further results are available, in which case nextSyncToken is provided. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Token used at a later point in time to retrieve only the entries that have changed since this result was returned. Omitted if further results are available, in which case
     * nextPageToken is provided.
     */
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
 }
 object Acl {
   

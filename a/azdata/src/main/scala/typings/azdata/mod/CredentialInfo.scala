@@ -2,23 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialInfo extends StObject {
   
-  var createDate: String = js.native
+  var createDate: String
   
-  var dateLastModified: String = js.native
+  var dateLastModified: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var identity: String = js.native
+  var identity: String
   
-  var name: String = js.native
+  var name: String
   
-  var providerName: String = js.native
+  var providerName: String
 }
 object CredentialInfo {
   

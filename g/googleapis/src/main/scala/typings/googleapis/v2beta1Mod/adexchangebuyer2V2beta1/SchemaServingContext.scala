@@ -2,45 +2,43 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The serving context for this restriction.
   */
-@js.native
 trait SchemaServingContext extends StObject {
   
   /**
     * Matches all contexts.
     */
-  var all: js.UndefOr[String] = js.native
+  var all: js.UndefOr[String] = js.undefined
   
   /**
     * Matches impressions for a particular app type.
     */
-  var appType: js.UndefOr[SchemaAppContext] = js.native
+  var appType: js.UndefOr[SchemaAppContext] = js.undefined
   
   /**
     * Matches impressions for a particular auction type.
     */
-  var auctionType: js.UndefOr[SchemaAuctionContext] = js.native
+  var auctionType: js.UndefOr[SchemaAuctionContext] = js.undefined
   
   /**
     * Matches impressions coming from users *or* publishers in a specific
     * location.
     */
-  var location: js.UndefOr[SchemaLocationContext] = js.native
+  var location: js.UndefOr[SchemaLocationContext] = js.undefined
   
   /**
     * Matches impressions coming from a particular platform.
     */
-  var platform: js.UndefOr[SchemaPlatformContext] = js.native
+  var platform: js.UndefOr[SchemaPlatformContext] = js.undefined
   
   /**
     * Matches impressions for a particular security type.
     */
-  var securityType: js.UndefOr[SchemaSecurityContext] = js.native
+  var securityType: js.UndefOr[SchemaSecurityContext] = js.undefined
 }
 object SchemaServingContext {
   

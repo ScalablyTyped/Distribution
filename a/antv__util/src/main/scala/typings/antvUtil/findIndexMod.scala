@@ -2,19 +2,20 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findIndexMod {
   
-  @JSImport("@antv/util/lib/find-index", JSImport.Default)
+  @JSImport("@antv/util/lib/find-index", JSImport.Namespace)
   @js.native
-  def default[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = js.native
-  @JSImport("@antv/util/lib/find-index", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def default[T](
     arr: js.Array[T],
     predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean],
     fromIndex: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

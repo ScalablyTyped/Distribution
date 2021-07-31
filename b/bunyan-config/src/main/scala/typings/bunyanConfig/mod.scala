@@ -6,7 +6,6 @@ import typings.bunyanConfig.anon.Host
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,31 +15,32 @@ object mod {
     * @param {Configuration} [jsonConfig] A JSON configuration.
     * @return {LoggerOptions} A logger options.
     */
+  @scala.inline
+  def apply(): LoggerOptions = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LoggerOptions]
+  @scala.inline
+  def apply(jsonConfig: Configuration): LoggerOptions = ^.asInstanceOf[js.Dynamic].apply(jsonConfig.asInstanceOf[js.Any]).asInstanceOf[LoggerOptions]
+  
   @JSImport("bunyan-config", JSImport.Namespace)
   @js.native
-  def apply(): LoggerOptions = js.native
-  @JSImport("bunyan-config", JSImport.Namespace)
-  @js.native
-  def apply(jsonConfig: Configuration): LoggerOptions = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Configuration.
     * @interface
     */
-  @js.native
   trait Configuration extends StObject {
     
-    var level: js.UndefOr[String | Double] = js.native
+    var level: js.UndefOr[String | Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var serializers: js.UndefOr[js.Object] = js.native
+    var serializers: js.UndefOr[js.Object] = js.undefined
     
-    var src: js.UndefOr[Boolean] = js.native
+    var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
-    var streams: js.UndefOr[js.Array[Stream]] = js.native
+    var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
   object Configuration {
     
@@ -91,22 +91,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var closeOnExit: js.UndefOr[Boolean] = js.native
+    var closeOnExit: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var period: js.UndefOr[String] = js.native
+    var period: js.UndefOr[String] = js.undefined
     
-    var stream: js.UndefOr[String | StreamConfiguration] = js.native
+    var stream: js.UndefOr[String | StreamConfiguration] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Stream {
     
@@ -163,12 +162,11 @@ object mod {
     }
   }
   
-  @js.native
   trait StreamConfiguration extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.UndefOr[Host] = js.native
+    var params: js.UndefOr[Host] = js.undefined
   }
   object StreamConfiguration {
     

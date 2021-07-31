@@ -3,19 +3,17 @@ package typings.koaBouncer
 import typings.koa.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ctx extends StObject {
     
-    var ctx: Context = js.native
+    var ctx: Context
     
-    var key: String = js.native
+    var key: String
     
-    var vals: js.Any = js.native
+    var vals: js.Any
   }
   object Ctx {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var message: String = js.native
+    var message: String
   }
   object Key {
     

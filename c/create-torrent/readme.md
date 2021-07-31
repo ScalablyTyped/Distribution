@@ -10,9 +10,9 @@ Create .torrent files
 | ------------------ | :-------------: |
 | Full name          | create-torrent |
 | Keywords           | .torrent, bittorrent, create, create torrent, make, new, peer-to-peer, torrent, torrent file, torrent files, webtorrent |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 40 |
-| # downloads        | 157042 |
+| # downloads        | 179306 |
 | # stars            | 3 |
 
 ## Links

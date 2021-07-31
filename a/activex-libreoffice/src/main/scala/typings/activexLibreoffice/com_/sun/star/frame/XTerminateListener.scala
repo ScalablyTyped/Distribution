@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDesktop.addTerminateListener()
   * @see XDesktop.removeTerminateListener()
   */
-@js.native
-trait XTerminateListener extends XEventListener {
+trait XTerminateListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when the master environment is finally terminated. No veto will be accepted then.
     * @param Event describe the source of the event (e.g., the desktop)
     */
-  def notifyTermination(Event: EventObject): Unit = js.native
+  def notifyTermination(Event: EventObject): Unit
   
   /**
     * is called when the master environment (e.g., desktop) is about to terminate.
@@ -31,7 +31,7 @@ trait XTerminateListener extends XEventListener {
     * @param Event describe the source of the event (e.g., the desktop)
     * @throws TerminationVetoException listener can disagree with this query by throwing this veto exception
     */
-  def queryTermination(Event: EventObject): Unit = js.native
+  def queryTermination(Event: EventObject): Unit
 }
 object XTerminateListener {
   

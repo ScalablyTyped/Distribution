@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestCasesResponse extends StObject {
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of test cases. */
-  var testCases: js.UndefOr[js.Array[TestCase]] = js.native
+  var testCases: js.UndefOr[js.Array[TestCase]] = js.undefined
 }
 object ListTestCasesResponse {
   

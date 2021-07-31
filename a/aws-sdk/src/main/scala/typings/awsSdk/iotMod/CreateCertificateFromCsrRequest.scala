@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateFromCsrRequest extends StObject {
   
   /**
     * The certificate signing request (CSR).
     */
-  var certificateSigningRequest: CertificateSigningRequest = js.native
+  var certificateSigningRequest: CertificateSigningRequest
   
   /**
     * Specifies whether the certificate is active.
     */
-  var setAsActive: js.UndefOr[SetAsActive] = js.native
+  var setAsActive: js.UndefOr[SetAsActive] = js.undefined
 }
 object CreateCertificateFromCsrRequest {
   

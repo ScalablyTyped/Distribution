@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Invitation extends Entity {
+trait Invitation
+  extends StObject
+     with Entity {
   
   // The URL the user can use to redeem their invitation. Read-only
-  var inviteRedeemUrl: js.UndefOr[NullableOption[String]] = js.native
+  var inviteRedeemUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The URL the user should be redirected to once the invitation is redeemed. Required.
-  var inviteRedirectUrl: js.UndefOr[String] = js.native
+  var inviteRedirectUrl: js.UndefOr[String] = js.undefined
   
   // The user created as part of the invitation creation. Read-Only
-  var invitedUser: js.UndefOr[NullableOption[User]] = js.native
+  var invitedUser: js.UndefOr[NullableOption[User]] = js.undefined
   
   // The display name of the user being invited.
-  var invitedUserDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var invitedUserDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The email address of the user being invited. Required. The following special characters are not permitted in the email
@@ -28,25 +28,25 @@ trait Invitation extends Entity {
     * exceptions apply:A period (.) or a hyphen (-) is permitted anywhere in the user name, except at the beginning or end of
     * the name.An underscore (_) is permitted anywhere in the user name. This includes at the beginning or end of the name.
     */
-  var invitedUserEmailAddress: js.UndefOr[String] = js.native
+  var invitedUserEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Additional configuration for the message being sent to the invited user, including customizing message text, language
     * and cc recipient list.
     */
-  var invitedUserMessageInfo: js.UndefOr[NullableOption[InvitedUserMessageInfo]] = js.native
+  var invitedUserMessageInfo: js.UndefOr[NullableOption[InvitedUserMessageInfo]] = js.undefined
   
   /**
     * The userType of the user being invited. By default, this is Guest. You can invite as Member if you are a company
     * administrator.
     */
-  var invitedUserType: js.UndefOr[NullableOption[String]] = js.native
+  var invitedUserType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether an email should be sent to the user being invited or not. The default is false.
-  var sendInvitationMessage: js.UndefOr[NullableOption[Boolean]] = js.native
+  var sendInvitationMessage: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error
-  var status: js.UndefOr[NullableOption[String]] = js.native
+  var status: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Invitation {
   

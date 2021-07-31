@@ -2,13 +2,11 @@ package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The syntax analysis response message.
   */
-@js.native
 trait SchemaAnalyzeSyntaxResponse extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaAnalyzeSyntaxResponse extends StObject {
     * specified in the request or, if not specified, the automatically-detected
     * language. See Document.language field for more details.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Sentences in the input document.
     */
-  var sentences: js.UndefOr[js.Array[SchemaSentence]] = js.native
+  var sentences: js.UndefOr[js.Array[SchemaSentence]] = js.undefined
   
   /**
     * Tokens, along with their syntactic information, in the input document.
     */
-  var tokens: js.UndefOr[js.Array[SchemaToken]] = js.native
+  var tokens: js.UndefOr[js.Array[SchemaToken]] = js.undefined
 }
 object SchemaAnalyzeSyntaxResponse {
   

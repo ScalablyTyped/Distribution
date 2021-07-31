@@ -4,7 +4,6 @@ import typings.cliSpinner.anon.TypeofSpinner
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,26 +35,26 @@ object mod {
   /* static members */
   object Spinner {
     
-    @JSImport("cli-spinner", "Spinner.setDefaultSpinnerDelay")
+    @JSImport("cli-spinner", "Spinner")
     @js.native
-    def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofSpinner = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("cli-spinner", "Spinner.setDefaultSpinnerString")
-    @js.native
-    def setDefaultSpinnerString(spinnerString: String): TypeofSpinner = js.native
-    @JSImport("cli-spinner", "Spinner.setDefaultSpinnerString")
-    @js.native
-    def setDefaultSpinnerString(spinnerString: Double): TypeofSpinner = js.native
+    @scala.inline
+    def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerDelay")(spinnerDelay.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
+    
+    @scala.inline
+    def setDefaultSpinnerString(spinnerString: String): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
+    @scala.inline
+    def setDefaultSpinnerString(spinnerString: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var onTick: js.UndefOr[js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]] = js.native
+    var onTick: js.UndefOr[js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Options {
     

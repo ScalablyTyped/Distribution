@@ -3,25 +3,23 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.QueryExpr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Predicate extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var nodes: js.Array[QueryExpr] = js.native
+  var nodes: js.Array[QueryExpr]
   
-  var predicate: String = js.native
+  var predicate: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Predicate {
   

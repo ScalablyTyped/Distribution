@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element - The element to attach listen for events on.
   */
 @js.native
-trait TouchDevice extends EventHandler {
+trait TouchDevice
+  extends StObject
+     with EventHandler {
   
   /**
     * Attach a device to an element in the DOM.

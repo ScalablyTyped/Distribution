@@ -7,55 +7,55 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersMessagesImport extends StandardParameters {
+trait ParamsResourceUsersMessagesImport
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Mark the email as permanently deleted (not TRASH) and only visible in
     * Google Vault to a Vault administrator. Only used for G Suite accounts.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Source for Gmail's internal date of the message.
     */
-  var internalDateSource: js.UndefOr[String] = js.native
+  var internalDateSource: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Ignore the Gmail spam classifier decision and never mark this email as
     * SPAM in the mailbox.
     */
-  var neverMarkSpam: js.UndefOr[Boolean] = js.native
+  var neverMarkSpam: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Process calendar invites in the email and add any extracted meetings to
     * the Google Calendar for this user.
     */
-  var processForCalendar: js.UndefOr[Boolean] = js.native
+  var processForCalendar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaMessage] = js.native
+  var requestBody: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
     * The user's email address. The special value me can be used to indicate
     * the authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersMessagesImport {
   

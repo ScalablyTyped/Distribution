@@ -2,86 +2,84 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.Base> */
-@js.native
 trait CustomBase extends StObject {
   
-  var borderRadius: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.undefined
   
-  var boxShadowActionable: js.UndefOr[String] = js.native
+  var boxShadowActionable: js.UndefOr[String] = js.undefined
   
-  var boxShadowColorActionable: js.UndefOr[String] = js.native
+  var boxShadowColorActionable: js.UndefOr[String] = js.undefined
   
-  var boxShadowColorElevated: js.UndefOr[String] = js.native
+  var boxShadowColorElevated: js.UndefOr[String] = js.undefined
   
-  var boxShadowColorModal: js.UndefOr[String] = js.native
+  var boxShadowColorModal: js.UndefOr[String] = js.undefined
   
-  var boxShadowColorStatic: js.UndefOr[String] = js.native
+  var boxShadowColorStatic: js.UndefOr[String] = js.undefined
   
-  var boxShadowElevated: js.UndefOr[String] = js.native
+  var boxShadowElevated: js.UndefOr[String] = js.undefined
   
-  var boxShadowModal: js.UndefOr[String] = js.native
+  var boxShadowModal: js.UndefOr[String] = js.undefined
   
-  var boxShadowStatic: js.UndefOr[String] = js.native
+  var boxShadowStatic: js.UndefOr[String] = js.undefined
   
-  var durationFast: js.UndefOr[String] = js.native
+  var durationFast: js.UndefOr[String] = js.undefined
   
-  var durationNormal: js.UndefOr[String] = js.native
+  var durationNormal: js.UndefOr[String] = js.undefined
   
-  var durationSlow: js.UndefOr[String] = js.native
+  var durationSlow: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSizeLg: js.UndefOr[String] = js.native
+  var fontSizeLg: js.UndefOr[String] = js.undefined
   
-  var fontSizeMd: js.UndefOr[String] = js.native
+  var fontSizeMd: js.UndefOr[String] = js.undefined
   
-  var fontSizeSm: js.UndefOr[String] = js.native
+  var fontSizeSm: js.UndefOr[String] = js.undefined
   
-  var fontWeightBold: js.UndefOr[String] = js.native
+  var fontWeightBold: js.UndefOr[String] = js.undefined
   
-  var fontWeightMedium: js.UndefOr[String] = js.native
+  var fontWeightMedium: js.UndefOr[String] = js.undefined
   
-  var fontWeightNormal: js.UndefOr[String] = js.native
+  var fontWeightNormal: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[String] = js.undefined
   
-  var opacityLarge: js.UndefOr[String] = js.native
+  var opacityLarge: js.UndefOr[String] = js.undefined
   
-  var opacityMedium: js.UndefOr[String] = js.native
+  var opacityMedium: js.UndefOr[String] = js.undefined
   
-  var opacitySmall: js.UndefOr[String] = js.native
+  var opacitySmall: js.UndefOr[String] = js.undefined
   
-  var size2xl: js.UndefOr[String] = js.native
+  var size2xl: js.UndefOr[String] = js.undefined
   
-  var sizeLg: js.UndefOr[String] = js.native
+  var sizeLg: js.UndefOr[String] = js.undefined
   
-  var sizeMd: js.UndefOr[String] = js.native
+  var sizeMd: js.UndefOr[String] = js.undefined
   
-  var sizeSm: js.UndefOr[String] = js.native
+  var sizeSm: js.UndefOr[String] = js.undefined
   
-  var sizeXl: js.UndefOr[String] = js.native
+  var sizeXl: js.UndefOr[String] = js.undefined
   
-  var space2xl: js.UndefOr[String] = js.native
+  var space2xl: js.UndefOr[String] = js.undefined
   
-  var space2xs: js.UndefOr[String] = js.native
+  var space2xs: js.UndefOr[String] = js.undefined
   
-  var space3xl: js.UndefOr[String] = js.native
+  var space3xl: js.UndefOr[String] = js.undefined
   
-  var spaceLg: js.UndefOr[String] = js.native
+  var spaceLg: js.UndefOr[String] = js.undefined
   
-  var spaceMd: js.UndefOr[String] = js.native
+  var spaceMd: js.UndefOr[String] = js.undefined
   
-  var spaceSm: js.UndefOr[String] = js.native
+  var spaceSm: js.UndefOr[String] = js.undefined
   
-  var spaceXl: js.UndefOr[String] = js.native
+  var spaceXl: js.UndefOr[String] = js.undefined
   
-  var spaceXs: js.UndefOr[String] = js.native
+  var spaceXs: js.UndefOr[String] = js.undefined
   
-  var transitionDefault: js.UndefOr[String] = js.native
+  var transitionDefault: js.UndefOr[String] = js.undefined
 }
 object CustomBase {
   

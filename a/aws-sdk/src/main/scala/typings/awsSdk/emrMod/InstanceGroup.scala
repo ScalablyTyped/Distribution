@@ -2,96 +2,94 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroup extends StObject {
   
   /**
     * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
     */
-  var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.native
+  var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.undefined
   
   /**
     * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
     */
-  var BidPrice: js.UndefOr[String] = js.native
+  var BidPrice: js.UndefOr[String] = js.undefined
   
   /**
     *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
     */
-  var Configurations: js.UndefOr[ConfigurationList] = js.native
+  var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
     * The version number of the requested configuration specification for this instance group.
     */
-  var ConfigurationsVersion: js.UndefOr[Long] = js.native
+  var ConfigurationsVersion: js.UndefOr[Long] = js.undefined
   
   /**
     * The EBS block devices that are mapped to this instance group.
     */
-  var EbsBlockDevices: js.UndefOr[EbsBlockDeviceList] = js.native
+  var EbsBlockDevices: js.UndefOr[EbsBlockDeviceList] = js.undefined
   
   /**
     * If the instance group is EBS-optimized. An Amazon EBS-optimized instance uses an optimized configuration stack and provides additional, dedicated capacity for Amazon EBS I/O.
     */
-  var EbsOptimized: js.UndefOr[BooleanObject] = js.native
+  var EbsOptimized: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The identifier of the instance group.
     */
-  var Id: js.UndefOr[InstanceGroupId] = js.native
+  var Id: js.UndefOr[InstanceGroupId] = js.undefined
   
   /**
     * The type of the instance group. Valid values are MASTER, CORE or TASK.
     */
-  var InstanceGroupType: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupType] = js.native
+  var InstanceGroupType: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupType] = js.undefined
   
   /**
     * The EC2 instance type for all instances in the instance group.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.emrMod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.emrMod.InstanceType] = js.undefined
   
   /**
     * A list of configurations that were successfully applied for an instance group last time.
     */
-  var LastSuccessfullyAppliedConfigurations: js.UndefOr[ConfigurationList] = js.native
+  var LastSuccessfullyAppliedConfigurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
     * The version number of a configuration specification that was successfully applied for an instance group last time. 
     */
-  var LastSuccessfullyAppliedConfigurationsVersion: js.UndefOr[Long] = js.native
+  var LastSuccessfullyAppliedConfigurationsVersion: js.UndefOr[Long] = js.undefined
   
   /**
     * The marketplace to provision instances for this group. Valid values are ON_DEMAND or SPOT.
     */
-  var Market: js.UndefOr[MarketType] = js.native
+  var Market: js.UndefOr[MarketType] = js.undefined
   
   /**
     * The name of the instance group.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The target number of instances for the instance group.
     */
-  var RequestedInstanceCount: js.UndefOr[Integer] = js.native
+  var RequestedInstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances currently running in this instance group.
     */
-  var RunningInstanceCount: js.UndefOr[Integer] = js.native
+  var RunningInstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * Policy for customizing shrink operations.
     */
-  var ShrinkPolicy: js.UndefOr[typings.awsSdk.emrMod.ShrinkPolicy] = js.native
+  var ShrinkPolicy: js.UndefOr[typings.awsSdk.emrMod.ShrinkPolicy] = js.undefined
   
   /**
     * The current status of the instance group.
     */
-  var Status: js.UndefOr[InstanceGroupStatus] = js.native
+  var Status: js.UndefOr[InstanceGroupStatus] = js.undefined
 }
 object InstanceGroup {
   

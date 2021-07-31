@@ -15,16 +15,15 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShapes
 import typings.activexLibreoffice.com_.sun.star.view.PaperOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the service provided by a {@link com.sun.star.drawing.DrawPage} inside a {@link PresentationDocument} .
   * @see PresentationDocument
   */
-@js.native
 trait DrawPage
-  extends typings.activexLibreoffice.com_.sun.star.drawing.DrawPage
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.drawing.DrawPage
      with LinkTarget {
   
   /**
@@ -33,55 +32,55 @@ trait DrawPage
     * If this is 0, the user must click to start each object animation and to change the page. If set to 1, the page is automatically switched. If it is set
     * to 2, all object effects run automatically, but the user has to click on the page to change it.
     */
-  var Change: Double = js.native
+  var Change: Double
   
   /** defines the format that is used to format a date and time text field on this page. This is only used if `IsDateTimeFixed` is `FALSE` . */
-  var DateTimeFormat: Double = js.native
+  var DateTimeFormat: Double
   
   /** defines the text that is displayed in a date and time textfield rendered on this page. This value is only used if `IsDateTimeFixed` is `TRUE` . */
-  var DateTimeText: String = js.native
+  var DateTimeText: String
   
   /**
     * If the property com::sun::star::drawing::DrawPage::Change is set to 1, this is the time in seconds this page is shown before switching to the next
     * page.
     */
-  var Duration: Double = js.native
+  var Duration: Double
   
   /** This is the effect that is used to fade in this page. */
-  var Effect: FadeEffect = js.native
+  var Effect: FadeEffect
   
   /** defines the text that is displayed in a footer textfield rendered on this page. */
-  var FooterText: String = js.native
+  var FooterText: String
   
   /** defines the text that is displayed in a header textfield rendered on this page. */
-  var HeaderText: String = js.native
+  var HeaderText: String
   
   /**
     * If the property com::sun::star::drawing::DrawPage::Change is set to 1, this is the time in seconds this page is shown before switching to the next
     * page, also permitting sub-second precision here.
     */
-  var HighResDuration: Double = js.native
+  var HighResDuration: Double
   
   /** defines if a date and time text field shows a fixed string value or the current date on this page. */
-  var IsDateTimeFixed: Boolean = js.native
+  var IsDateTimeFixed: Boolean
   
   /** defines if a date and time presentation shape from the master page is visible on this page. */
-  var IsDateTimeVisible: Boolean = js.native
+  var IsDateTimeVisible: Boolean
   
   /** defines if a footer presentation shape from the master page is visible on this page. */
-  var IsFooterVisible: Boolean = js.native
+  var IsFooterVisible: Boolean
   
   /** defines if a header presentation shape from the master page is visible on this page. */
-  var IsHeaderVisible: Boolean = js.native
+  var IsHeaderVisible: Boolean
   
   /** defines if a page number presentation shape from the master page is visible on this page. */
-  var IsPageNumberVisible: Boolean = js.native
+  var IsPageNumberVisible: Boolean
   
   /** If this property is not ZERO, this number specifies a presentation layout for this page. */
-  var Layout: Double = js.native
+  var Layout: Double
   
   /** defines the speed of the fade-in effect of this page. */
-  var Speed: AnimationSpeed = js.native
+  var Speed: AnimationSpeed
 }
 object DrawPage {
   

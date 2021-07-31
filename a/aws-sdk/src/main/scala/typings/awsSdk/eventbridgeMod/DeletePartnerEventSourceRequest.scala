@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePartnerEventSourceRequest extends StObject {
   
   /**
     * The AWS account ID of the AWS customer that the event source was created for.
     */
-  var Account: AccountId = js.native
+  var Account: AccountId
   
   /**
     * The name of the event source to delete.
     */
-  var Name: EventSourceName = js.native
+  var Name: EventSourceName
 }
 object DeletePartnerEventSourceRequest {
   

@@ -3,16 +3,17 @@ package typings.wonderFrp
 import typings.wonderFrp.idisposableMod.IDisposable
 import typings.wonderFrp.iobserverMod.IObserver
 import typings.wonderFrp.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/AnonymousStream", JSImport.Namespace)
-@js.native
-object anonymousStreamMod extends js.Object {
+object anonymousStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/AnonymousStream", "AnonymousStream")
   @js.native
   class AnonymousStream protected () extends Stream {
     def this(subscribeFunc: js.Function) = this()
+    
     def subscribe(observer: IObserver): IDisposable = js.native
     def subscribe(onNext: js.Function1[/* value */ js.Any, Unit]): IDisposable = js.native
     def subscribe(onNext: js.Function1[/* value */ js.Any, Unit], onError: js.Function1[/* e */ js.Any, Unit]): IDisposable = js.native
@@ -22,12 +23,14 @@ object anonymousStreamMod extends js.Object {
       onComplete: js.Function0[Unit]
     ): IDisposable = js.native
   }
-  
   /* static members */
-  @js.native
-  object AnonymousStream extends js.Object {
-    def create(subscribeFunc: js.Function): AnonymousStream = js.native
+  object AnonymousStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/AnonymousStream", "AnonymousStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(subscribeFunc: js.Function): AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(subscribeFunc.asInstanceOf[js.Any]).asInstanceOf[AnonymousStream]
   }
-  
 }
-

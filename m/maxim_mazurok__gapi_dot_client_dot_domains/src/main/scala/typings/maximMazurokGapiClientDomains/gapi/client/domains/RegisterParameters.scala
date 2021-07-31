@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterParameters extends StObject {
   
   /**
     * Indicates whether the domain is available for registration. This value is accurate when obtained by calling `RetrieveRegisterParameters`, but is approximate when obtained by calling
     * `SearchDomains`.
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /** The domain name. Unicode domain names are expressed in Punycode format. */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /** Notices about special properties of the domain. */
-  var domainNotices: js.UndefOr[js.Array[String]] = js.native
+  var domainNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Contact privacy options that the domain supports. */
-  var supportedPrivacy: js.UndefOr[js.Array[String]] = js.native
+  var supportedPrivacy: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Price to register or renew the domain for one year. */
-  var yearlyPrice: js.UndefOr[Money] = js.native
+  var yearlyPrice: js.UndefOr[Money] = js.undefined
 }
 object RegisterParameters {
   

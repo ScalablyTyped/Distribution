@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FontHintingEnumValues extends EmbindEnum {
+trait FontHintingEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Full: FontHinting = js.native
+  var Full: FontHinting
   
-  var None: FontHinting = js.native
+  var None: FontHinting
   
-  var Normal: FontHinting = js.native
+  var Normal: FontHinting
   
-  var Slight: FontHinting = js.native
+  var Slight: FontHinting
 }
 object FontHintingEnumValues {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionConfiguration extends StObject {
   
   /**
     * The expected encoding type of the input payload for the function. The default is ''json''.
     */
-  var EncodingType: js.UndefOr[typings.awsSdk.greengrassMod.EncodingType] = js.native
+  var EncodingType: js.UndefOr[typings.awsSdk.greengrassMod.EncodingType] = js.undefined
   
   /**
     * The environment configuration of the function.
     */
-  var Environment: js.UndefOr[FunctionConfigurationEnvironment] = js.native
+  var Environment: js.UndefOr[FunctionConfigurationEnvironment] = js.undefined
   
   /**
     * The execution arguments.
     */
-  var ExecArgs: js.UndefOr[string] = js.native
+  var ExecArgs: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the function executable.
     */
-  var Executable: js.UndefOr[string] = js.native
+  var Executable: js.UndefOr[string] = js.undefined
   
   /**
     * The memory size, in KB, which the function requires. This setting is not applicable and should be cleared when you run the Lambda function without containerization.
     */
-  var MemorySize: js.UndefOr[integer] = js.native
+  var MemorySize: js.UndefOr[integer] = js.undefined
   
   /**
     * True if the function is pinned. Pinned means the function is long-lived and starts when the core starts.
     */
-  var Pinned: js.UndefOr[boolean] = js.native
+  var Pinned: js.UndefOr[boolean] = js.undefined
   
   /**
     * The allowed function execution time, after which Lambda should terminate the function. This timeout still applies to pinned Lambda functions for each request.
     */
-  var Timeout: js.UndefOr[integer] = js.native
+  var Timeout: js.UndefOr[integer] = js.undefined
 }
 object FunctionConfiguration {
   

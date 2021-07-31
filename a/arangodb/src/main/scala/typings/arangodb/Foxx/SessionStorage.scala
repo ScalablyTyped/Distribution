@@ -2,17 +2,15 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionStorage extends StObject {
   
-  def forClient(session: Session): String | Null = js.native
+  def forClient(session: Session): String | Null
   
-  def fromClient(sid: String): Session | Null = js.native
+  def fromClient(sid: String): Session | Null
   
-  var `new`: js.UndefOr[js.Function0[Session]] = js.native
+  var `new`: js.UndefOr[js.Function0[Session]] = js.undefined
 }
 object SessionStorage {
   

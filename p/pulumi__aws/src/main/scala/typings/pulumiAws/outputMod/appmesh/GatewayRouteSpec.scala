@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteSpec extends StObject {
   
   /**
     * The specification of a gRPC gateway route.
     */
-  var grpcRoute: js.UndefOr[GatewayRouteSpecGrpcRoute] = js.native
+  var grpcRoute: js.UndefOr[GatewayRouteSpecGrpcRoute] = js.undefined
   
   /**
     * The specification of an HTTP/2 gateway route.
     */
-  var http2Route: js.UndefOr[GatewayRouteSpecHttp2Route] = js.native
+  var http2Route: js.UndefOr[GatewayRouteSpecHttp2Route] = js.undefined
   
   /**
     * The specification of an HTTP gateway route.
     */
-  var httpRoute: js.UndefOr[GatewayRouteSpecHttpRoute] = js.native
+  var httpRoute: js.UndefOr[GatewayRouteSpecHttpRoute] = js.undefined
 }
 object GatewayRouteSpec {
   

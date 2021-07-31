@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the format of a bitmap plane. */
-@js.native
 trait BitmapPlaneDescription extends StObject {
   
   /** The height of the plane, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** The start index of the pixel data within the plane. */
-  var startIndex: Double = js.native
+  var startIndex: Double
   
   /** The stride of the bitmap data. */
-  var stride: Double = js.native
+  var stride: Double
   
   /** The width of the plane, in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object BitmapPlaneDescription {
   

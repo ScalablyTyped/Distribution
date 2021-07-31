@@ -3,21 +3,19 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddedItems[T] extends StObject {
   
-  var addedItems: js.UndefOr[js.Array[_]] = js.native
+  var addedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var removedItems: js.UndefOr[js.Array[_]] = js.native
+  var removedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object AddedItems {
   
@@ -28,10 +26,10 @@ object AddedItems {
   }
   
   @scala.inline
-  implicit class AddedItemsMutableBuilder[Self <: AddedItems[_], T] (val x: Self with AddedItems[T]) extends AnyVal {
+  implicit class AddedItemsMutableBuilder[Self <: AddedItems[?], T] (val x: Self & AddedItems[T]) extends AnyVal {
     
     @scala.inline
-    def setAddedItems(value: js.Array[_]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
+    def setAddedItems(value: js.Array[js.Any]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAddedItemsUndefined: Self = StObject.set(x, "addedItems", js.undefined)
@@ -58,7 +56,7 @@ object AddedItems {
     def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def setRemovedItems(value: js.Array[_]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
+    def setRemovedItems(value: js.Array[js.Any]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRemovedItemsUndefined: Self = StObject.set(x, "removedItems", js.undefined)

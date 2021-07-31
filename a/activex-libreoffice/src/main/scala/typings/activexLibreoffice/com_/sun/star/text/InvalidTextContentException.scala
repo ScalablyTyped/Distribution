@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is thrown whenever a method gets a {@link TextContent} as an actual argument when the text content cannot be used for that operation. */
-@js.native
-trait InvalidTextContentException extends Exception {
+trait InvalidTextContentException
+  extends StObject
+     with Exception {
   
   /** contains the interface of the text content that caused the exception. */
-  var TextContent: XTextContent = js.native
+  var TextContent: XTextContent
 }
 object InvalidTextContentException {
   

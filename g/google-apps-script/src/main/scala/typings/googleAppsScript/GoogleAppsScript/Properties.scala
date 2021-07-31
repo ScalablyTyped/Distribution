@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Properties {
@@ -48,14 +47,13 @@ object Properties {
     *     scriptProperties.setProperty('SERVER_URL', 'http://www.example.com/MyWeatherService/');
     *     userProperties.setProperty('DISPLAY_UNITS', 'metric');
     */
-  @js.native
   trait PropertiesService extends StObject {
     
-    def getDocumentProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
+    def getDocumentProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
     
-    def getScriptProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
+    def getScriptProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
     
-    def getUserProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
+    def getUserProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
   }
   object PropertiesService {
     

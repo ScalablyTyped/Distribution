@@ -2,22 +2,20 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jsrsasign.jsrsasign.KJUR.asn1.x509.X500NameParam & {  certissuer :string | undefined,   certsubject :string | undefined} */
-@js.native
 trait X500NameParamcertissuerst extends StObject {
   
-  var C: String = js.native
+  var C: String
   
-  var CN: String = js.native
+  var CN: String
   
-  var O: String = js.native
+  var O: String
   
-  var certissuer: js.UndefOr[String] = js.native
+  var certissuer: js.UndefOr[String] = js.undefined
   
-  var certsubject: js.UndefOr[String] = js.native
+  var certsubject: js.UndefOr[String] = js.undefined
 }
 object X500NameParamcertissuerst {
   

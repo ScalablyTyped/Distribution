@@ -2,37 +2,35 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerspectiveTransform extends StObject {
   
-  var a11: Double = js.native
+  var a11: Double
   
-  var a12: Double = js.native
+  var a12: Double
   
-  var a13: Double = js.native
+  var a13: Double
   
-  var a21: Double = js.native
+  var a21: Double
   
-  var a22: Double = js.native
+  var a22: Double
   
-  var a23: Double = js.native
+  var a23: Double
   
-  var a31: Double = js.native
+  var a31: Double
   
-  var a32: Double = js.native
+  var a32: Double
   
-  var a33: Double = js.native
+  var a33: Double
   
-  def buildAdjoint(): PerspectiveTransform = js.native
+  def buildAdjoint(): PerspectiveTransform
   
-  def times(other: PerspectiveTransform): PerspectiveTransform = js.native
+  def times(other: PerspectiveTransform): PerspectiveTransform
   
-  def transformPoints1(points: js.Array[Double]): Unit = js.native
+  def transformPoints1(points: js.Array[Double]): Unit
   
-  def transformPoints2(xValues: js.Array[Double], yValues: js.Array[Double]): Unit = js.native
+  def transformPoints2(xValues: js.Array[Double], yValues: js.Array[Double]): Unit
 }
 object PerspectiveTransform {
   

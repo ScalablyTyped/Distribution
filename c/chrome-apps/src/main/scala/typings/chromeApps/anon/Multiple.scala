@@ -3,15 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.usb.DeviceFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Multiple extends StObject {
   
-  var filters: js.UndefOr[js.Array[DeviceFilter]] = js.native
+  var filters: js.UndefOr[js.Array[DeviceFilter]] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
 }
 object Multiple {
   

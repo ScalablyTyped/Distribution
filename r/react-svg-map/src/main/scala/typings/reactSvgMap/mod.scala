@@ -5,7 +5,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,28 +37,27 @@ object mod {
   @js.native
   val SVGMap: SFC[SVGMapProps] = js.native
   
-  @js.native
   trait BaseMapProps extends StObject {
     
-    var childrenAfter: js.UndefOr[ReactElement] = js.native
+    var childrenAfter: js.UndefOr[ReactElement] = js.undefined
     
-    var childrenBefore: js.UndefOr[ReactElement] = js.native
+    var childrenBefore: js.UndefOr[ReactElement] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var locationClassName: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var locationClassName: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var map: Map = js.native
+    var map: Map
     
-    var onLocationBlur: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationBlur: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onLocationFocus: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationFocus: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onLocationMouseMove: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationMouseMove: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onLocationMouseOut: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationMouseOut: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onLocationMouseOver: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationMouseOver: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object BaseMapProps {
     
@@ -91,10 +89,10 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setLocationClassName(value: String | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "locationClassName", value.asInstanceOf[js.Any])
+      def setLocationClassName(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationClassName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLocationClassNameFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "locationClassName", js.Any.fromFunction1(value))
+      def setLocationClassNameFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationClassName", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLocationClassNameUndefined: Self = StObject.set(x, "locationClassName", js.undefined)
@@ -103,45 +101,44 @@ object mod {
       def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLocationBlur(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationBlur", js.Any.fromFunction1(value))
+      def setOnLocationBlur(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationBlurUndefined: Self = StObject.set(x, "onLocationBlur", js.undefined)
       
       @scala.inline
-      def setOnLocationFocus(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationFocus", js.Any.fromFunction1(value))
+      def setOnLocationFocus(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationFocus", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationFocusUndefined: Self = StObject.set(x, "onLocationFocus", js.undefined)
       
       @scala.inline
-      def setOnLocationMouseMove(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationMouseMove", js.Any.fromFunction1(value))
+      def setOnLocationMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseMove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationMouseMoveUndefined: Self = StObject.set(x, "onLocationMouseMove", js.undefined)
       
       @scala.inline
-      def setOnLocationMouseOut(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationMouseOut", js.Any.fromFunction1(value))
+      def setOnLocationMouseOut(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOut", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationMouseOutUndefined: Self = StObject.set(x, "onLocationMouseOut", js.undefined)
       
       @scala.inline
-      def setOnLocationMouseOver(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationMouseOver", js.Any.fromFunction1(value))
+      def setOnLocationMouseOver(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOver", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationMouseOverUndefined: Self = StObject.set(x, "onLocationMouseOver", js.undefined)
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Location {
     
@@ -168,14 +165,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var locations: js.Array[Location] = js.native
+    var locations: js.Array[Location]
     
-    var viewBox: String = js.native
+    var viewBox: String
   }
   object Map {
     
@@ -205,10 +201,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait OnChangeMapProps extends BaseMapProps {
+  trait OnChangeMapProps
+    extends StObject
+       with BaseMapProps {
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object OnChangeMapProps {
     
@@ -222,27 +219,28 @@ object mod {
     implicit class OnChangeMapPropsMutableBuilder[Self <: OnChangeMapProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
   
-  @js.native
-  trait SVGMapProps extends BaseMapProps {
+  trait SVGMapProps
+    extends StObject
+       with BaseMapProps {
     
-    var isLocationSelected: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var isLocationSelected: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var locationRole: js.UndefOr[String] = js.native
+    var locationRole: js.UndefOr[String] = js.undefined
     
-    var locationTabIndex: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var locationTabIndex: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var onLocationClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onLocationKeyDown: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onLocationKeyDown: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object SVGMapProps {
     
@@ -256,7 +254,7 @@ object mod {
     implicit class SVGMapPropsMutableBuilder[Self <: SVGMapProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIsLocationSelected(value: /* repeated */ js.Any => _): Self = StObject.set(x, "isLocationSelected", js.Any.fromFunction1(value))
+      def setIsLocationSelected(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "isLocationSelected", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIsLocationSelectedUndefined: Self = StObject.set(x, "isLocationSelected", js.undefined)
@@ -268,22 +266,22 @@ object mod {
       def setLocationRoleUndefined: Self = StObject.set(x, "locationRole", js.undefined)
       
       @scala.inline
-      def setLocationTabIndex(value: String | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "locationTabIndex", value.asInstanceOf[js.Any])
+      def setLocationTabIndex(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationTabIndex", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLocationTabIndexFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "locationTabIndex", js.Any.fromFunction1(value))
+      def setLocationTabIndexFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationTabIndex", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLocationTabIndexUndefined: Self = StObject.set(x, "locationTabIndex", js.undefined)
       
       @scala.inline
-      def setOnLocationClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationClick", js.Any.fromFunction1(value))
+      def setOnLocationClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationClickUndefined: Self = StObject.set(x, "onLocationClick", js.undefined)
       
       @scala.inline
-      def setOnLocationKeyDown(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onLocationKeyDown", js.Any.fromFunction1(value))
+      def setOnLocationKeyDown(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLocationKeyDownUndefined: Self = StObject.set(x, "onLocationKeyDown", js.undefined)

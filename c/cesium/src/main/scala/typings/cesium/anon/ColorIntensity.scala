@@ -2,15 +2,13 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorIntensity extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var intensity: js.UndefOr[Double] = js.native
+  var intensity: js.UndefOr[Double] = js.undefined
 }
 object ColorIntensity {
   

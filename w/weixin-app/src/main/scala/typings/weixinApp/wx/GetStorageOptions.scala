@@ -3,19 +3,18 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 本地缓存中的指定的 key */
-  var key: String = js.native
+  var key: String
   
   /** 接口调用的回调函数,res = {data: key对应的内容} */
   @JSName("success")
-  def success_MGetStorageOptions(res: `0`): Unit = js.native
+  def success_MGetStorageOptions(res: `0`): Unit
 }
 object GetStorageOptions {
   

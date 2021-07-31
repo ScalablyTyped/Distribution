@@ -2,26 +2,24 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enterprise signup URL.
   */
-@js.native
 trait SchemaSignupUrl extends StObject {
   
   /**
     * The name of the resource. Use this value in the signupUrl field when
     * calling enterprises.create to complete the enterprise signup flow.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A URL where an enterprise admin can register their enterprise. The page
     * can&#39;t be rendered in an iframe.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaSignupUrl {
   

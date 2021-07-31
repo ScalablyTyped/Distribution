@@ -4,18 +4,18 @@ import typings.stripe.anon.Document
 import typings.stripe.mod.IOptionsMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPersonCreateUpdateOptions extends IPersonShared {
+trait IPersonCreateUpdateOptions
+  extends StObject
+     with IPersonShared {
   
   /**
     * The person’s ID number, as appropriate for their country. For example, a social security number
     * in the U.S., social insurance number in Canada, etc. Instead of the number itself,
     * you can also provide a PII token provided by Stripe.js.
     */
-  var id_number: js.UndefOr[String] = js.native
+  var id_number: js.UndefOr[String] = js.undefined
   
   /**
     * Set of key-value pairs that you can attach to an object.
@@ -23,22 +23,22 @@ trait IPersonCreateUpdateOptions extends IPersonShared {
     * Individual keys can be unset by posting an empty value to them.
     * All keys can be unset by posting an empty value to metadata.
     */
-  var metadata: js.UndefOr[IOptionsMetadata] = js.native
+  var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
   
   /**
     * A person token, used to securely provide details to the person.
     */
-  var person_token: js.UndefOr[String] = js.native
+  var person_token: js.UndefOr[String] = js.undefined
   
   /**
     * The last four digits of the person’s Social Security Number (U.S. only).
     */
-  var ssn_last_4: js.UndefOr[String] = js.native
+  var ssn_last_4: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s verification document information.
     */
-  var verification: js.UndefOr[Document] = js.native
+  var verification: js.UndefOr[Document] = js.undefined
 }
 object IPersonCreateUpdateOptions {
   

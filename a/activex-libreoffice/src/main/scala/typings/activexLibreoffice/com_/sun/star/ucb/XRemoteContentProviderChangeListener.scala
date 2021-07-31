@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderChangeListener extends XEventListener {
+trait XRemoteContentProviderChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called whenever changes to a {@link com.sun.star.ucb.XRemoteContentProviderSupplier} occur.
     * @param Event describes the change that has occurred.
     */
-  def remoteContentProviderChange(Event: RemoteContentProviderChangeEvent): Unit = js.native
+  def remoteContentProviderChange(Event: RemoteContentProviderChangeEvent): Unit
 }
 object XRemoteContentProviderChangeListener {
   

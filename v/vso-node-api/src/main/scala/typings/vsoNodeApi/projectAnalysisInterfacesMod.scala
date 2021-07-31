@@ -5,7 +5,6 @@ import typings.vsoNodeApi.anon.EnumValuesHourly
 import typings.vsoNodeApi.anon.EnumValuesPreliminary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectAnalysisInterfacesMod {
@@ -17,15 +16,19 @@ object projectAnalysisInterfacesMod {
   object AggregationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AggregationType with Double] = js.native
+    def apply(value: Double): js.UndefOr[AggregationType & Double] = js.native
     
     @js.native
-    sealed trait Daily extends AggregationType
-    /* 1 */ val Daily: typings.vsoNodeApi.projectAnalysisInterfacesMod.AggregationType.Daily with Double = js.native
+    sealed trait Daily
+      extends StObject
+         with AggregationType
+    /* 1 */ val Daily: typings.vsoNodeApi.projectAnalysisInterfacesMod.AggregationType.Daily & Double = js.native
     
     @js.native
-    sealed trait Hourly extends AggregationType
-    /* 0 */ val Hourly: typings.vsoNodeApi.projectAnalysisInterfacesMod.AggregationType.Hourly with Double = js.native
+    sealed trait Hourly
+      extends StObject
+         with AggregationType
+    /* 0 */ val Hourly: typings.vsoNodeApi.projectAnalysisInterfacesMod.AggregationType.Hourly & Double = js.native
   }
   
   @js.native
@@ -35,15 +38,19 @@ object projectAnalysisInterfacesMod {
   object ResultPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ResultPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[ResultPhase & Double] = js.native
     
     @js.native
-    sealed trait Full extends ResultPhase
-    /* 1 */ val Full: typings.vsoNodeApi.projectAnalysisInterfacesMod.ResultPhase.Full with Double = js.native
+    sealed trait Full
+      extends StObject
+         with ResultPhase
+    /* 1 */ val Full: typings.vsoNodeApi.projectAnalysisInterfacesMod.ResultPhase.Full & Double = js.native
     
     @js.native
-    sealed trait Preliminary extends ResultPhase
-    /* 0 */ val Preliminary: typings.vsoNodeApi.projectAnalysisInterfacesMod.ResultPhase.Preliminary with Double = js.native
+    sealed trait Preliminary
+      extends StObject
+         with ResultPhase
+    /* 0 */ val Preliminary: typings.vsoNodeApi.projectAnalysisInterfacesMod.ResultPhase.Preliminary & Double = js.native
   }
   
   object TypeInfo {
@@ -95,20 +102,19 @@ object projectAnalysisInterfacesMod {
     def ResultPhase_=(x: EnumValuesPreliminary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResultPhase")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AnalyzerDescriptor extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var id: String = js.native
+    var id: String
     
-    var majorVersion: Double = js.native
+    var majorVersion: Double
     
-    var minorVersion: Double = js.native
+    var minorVersion: Double
     
-    var name: String = js.native
+    var name: String
     
-    var patchVersion: Double = js.native
+    var patchVersion: Double
   }
   object AnalyzerDescriptor {
     
@@ -148,12 +154,11 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait CodeChangeTrendItem extends StObject {
     
-    var time: Date = js.native
+    var time: Date
     
-    var value: Double = js.native
+    var value: Double
   }
   object CodeChangeTrendItem {
     
@@ -174,18 +179,17 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait LanguageStatistics extends StObject {
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var files: Double = js.native
+    var files: Double
     
-    var filesPercentage: Double = js.native
+    var filesPercentage: Double
     
-    var languagePercentage: Double = js.native
+    var languagePercentage: Double
     
-    var name: String = js.native
+    var name: String
   }
   object LanguageStatistics {
     
@@ -215,20 +219,19 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait ProjectActivityMetrics extends StObject {
     
-    var authorsCount: Double = js.native
+    var authorsCount: Double
     
-    var codeChangesCount: Double = js.native
+    var codeChangesCount: Double
     
-    var codeChangesTrend: js.Array[CodeChangeTrendItem] = js.native
+    var codeChangesTrend: js.Array[CodeChangeTrendItem]
     
-    var projectId: String = js.native
+    var projectId: String
     
-    var pullRequestsCompletedCount: Double = js.native
+    var pullRequestsCompletedCount: Double
     
-    var pullRequestsCreatedCount: Double = js.native
+    var pullRequestsCreatedCount: Double
   }
   object ProjectActivityMetrics {
     
@@ -271,18 +274,17 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait ProjectLanguageAnalytics extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var languageBreakdown: js.Array[LanguageStatistics] = js.native
+    var languageBreakdown: js.Array[LanguageStatistics]
     
-    var repositoryLanguageAnalytics: js.Array[RepositoryLanguageAnalytics] = js.native
+    var repositoryLanguageAnalytics: js.Array[RepositoryLanguageAnalytics]
     
-    var resultPhase: ResultPhase = js.native
+    var resultPhase: ResultPhase
     
-    var url: String = js.native
+    var url: String
   }
   object ProjectLanguageAnalytics {
     
@@ -324,14 +326,13 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait RepositoryActivityMetrics extends StObject {
     
-    var codeChangesCount: Double = js.native
+    var codeChangesCount: Double
     
-    var codeChangesTrend: js.Array[CodeChangeTrendItem] = js.native
+    var codeChangesTrend: js.Array[CodeChangeTrendItem]
     
-    var repositoryId: String = js.native
+    var repositoryId: String
   }
   object RepositoryActivityMetrics {
     
@@ -358,18 +359,17 @@ object projectAnalysisInterfacesMod {
     }
   }
   
-  @js.native
   trait RepositoryLanguageAnalytics extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var languageBreakdown: js.Array[LanguageStatistics] = js.native
+    var languageBreakdown: js.Array[LanguageStatistics]
     
-    var name: String = js.native
+    var name: String
     
-    var resultPhase: ResultPhase = js.native
+    var resultPhase: ResultPhase
     
-    var updatedTime: Date = js.native
+    var updatedTime: Date
   }
   object RepositoryLanguageAnalytics {
     

@@ -2,13 +2,11 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityDeleteThreadSubscriptionEndpoint extends StObject {
   
-  var thread_id: Double = js.native
+  var thread_id: Double
 }
 object ActivityDeleteThreadSubscriptionEndpoint {
   

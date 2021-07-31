@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -18,12 +17,12 @@ class Group ()
   extends Object
      with ICollection[Group] {
   def this(objects: js.Array[Object]) = this()
-  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions) = this()
   def this(objects: js.Array[Object], options: IGroupOptions) = this()
-  def this(objects: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], isAlreadyGrouped: Boolean) = this()
-  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
-  def this(objects: js.Array[Object], options: js.UndefOr[scala.Nothing], isAlreadyGrouped: Boolean) = this()
+  def this(objects: Unit, options: IGroupOptions) = this()
+  def this(objects: js.Array[Object], options: Unit, isAlreadyGrouped: Boolean) = this()
   def this(objects: js.Array[Object], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
+  def this(objects: Unit, options: Unit, isAlreadyGrouped: Boolean) = this()
+  def this(objects: Unit, options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
   
   /**
     * @private
@@ -136,12 +135,15 @@ class Group ()
 /* static members */
 object Group {
   
+  @JSImport("fabric/fabric-impl", "Group")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns {@link fabric.Group} instance from an object representation
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an group instance is created
     */
-  @JSImport("fabric/fabric-impl", "Group.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): Unit = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

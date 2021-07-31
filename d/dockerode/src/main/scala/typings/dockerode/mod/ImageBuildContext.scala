@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageBuildContext extends StObject {
   
-  var context: String = js.native
+  var context: String
   
-  var src: js.Array[String] = js.native
+  var src: js.Array[String]
 }
 object ImageBuildContext {
   

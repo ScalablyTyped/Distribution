@@ -3,17 +3,15 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Types[T /* <: Base */, Base] extends StObject {
   
-  var base: Constructor[Base] | js.Function = js.native
+  var base: Constructor[Base] | js.Function
   
-  var key: String | (js.Function1[/* obj */ js.Any, String]) = js.native
+  var key: String | (js.Function1[/* obj */ js.Any, String])
   
-  var typeMap: HashMap[Constructor[T]] = js.native
+  var typeMap: HashMap[Constructor[T]]
 }
 object Types {
   
@@ -28,7 +26,7 @@ object Types {
   }
   
   @scala.inline
-  implicit class TypesMutableBuilder[Self <: Types[_, _], T /* <: Base */, Base] (val x: Self with (Types[T, Base])) extends AnyVal {
+  implicit class TypesMutableBuilder[Self <: Types[?, ?], T /* <: Base */, Base] (val x: Self & (Types[T, Base])) extends AnyVal {
     
     @scala.inline
     def setBase(value: Constructor[Base] | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])

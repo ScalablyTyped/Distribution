@@ -4,16 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style {@link FolderPicker} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XFolderPicker2
-  extends XFolderPicker
+  extends StObject
+     with XFolderPicker
      with XCancellable
 object XFolderPicker2 {
   

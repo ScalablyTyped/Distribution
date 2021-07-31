@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenu extends Widget {
+trait ContextMenu
+  extends StObject
+     with Widget {
   
   def append(item: js.Any): ContextMenu = js.native
   def append(item: js.Any, referenceItem: String): ContextMenu = js.native

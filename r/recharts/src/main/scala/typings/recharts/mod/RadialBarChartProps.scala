@@ -3,23 +3,23 @@ package typings.recharts.mod
 import typings.recharts.rechartsStrings.radial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RadialBarChartProps extends CategoricalChartWrapper[radial] {
+trait RadialBarChartProps
+  extends StObject
+     with CategoricalChartWrapper[radial] {
   
-  var cx: js.UndefOr[String | Double] = js.native
+  var cx: js.UndefOr[String | Double] = js.undefined
   
-  var cy: js.UndefOr[String | Double] = js.native
+  var cy: js.UndefOr[String | Double] = js.undefined
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var innerRadius: js.UndefOr[String | Double] = js.native
+  var innerRadius: js.UndefOr[String | Double] = js.undefined
   
-  var outerRadius: js.UndefOr[String | Double] = js.native
+  var outerRadius: js.UndefOr[String | Double] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object RadialBarChartProps {
   

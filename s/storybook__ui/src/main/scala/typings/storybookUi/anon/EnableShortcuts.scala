@@ -6,7 +6,6 @@ import typings.downshift.mod.GetPropsCommonOptions
 import typings.storybookUi.sidebarTypesMod.DownshiftItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait EnableShortcuts extends StObject {
   def getItemProps(options: GetItemPropsOptions[DownshiftItem]): js.Any = js.native
   
   def getMenuProps(): js.Any = js.native
-  def getMenuProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getMenuProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getMenuProps(options: GetMenuPropsOptions): js.Any = js.native
   def getMenuProps(options: GetMenuPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   

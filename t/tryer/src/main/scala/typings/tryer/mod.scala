@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.tryer.anon.ReadonlyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : TryerStatic = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -24,49 +22,51 @@ object mod extends Shortcut {
       *
       * If action is not set, it defaults to an empty function.
       */
-    var action: js.UndefOr[js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _])] = js.native
+    var action: js.UndefOr[
+        js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])
+      ] = js.undefined
     
     /**
       * fail: The error handler.
       * A function that will be called if limit falsey values are returned by when or until.
       * Defaults to an empty function.
       */
-    var fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
     /**
       * interval: The retry interval, in milliseconds.
       * A negative number indicates that each subsequent retry should wait for twice the interval from the preceding iteration (i.e. exponential backoff).
       * The default value is -1000, signifying that the initial retry interval should be one second and that each subsequent attempt should wait for double the length of the previous interval.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * limit: Failure limit, representing the maximum number of falsey returns from when or until that will be permitted before invocation is deemed to have failed.
       * A negative number indicates that the attempt should never fail, instead continuing for as long as when and until have returned truthy values.
       * Defaults to -1.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * pass: Success handler.
       * A function that will be called after until has returned truthily.
       * Defaults to an empty function.
       */
-    var pass: js.UndefOr[js.Function0[Unit]] = js.native
+    var pass: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * until: A predicate that tests the post-condition for invoking action.
       * After until returns true (or a truthy value), action will no longer be called.
       * Defaults to a function that immediately returns true.
       */
-    var until: js.UndefOr[js.Function0[Boolean]] = js.native
+    var until: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /**
       * when: A predicate that tests the pre-condition for invoking action.
       * Until when returns true (or a truthy value), action will not be called.
       * Defaults to a function that immediately returns true.
       */
-    var when: js.UndefOr[js.Function0[Boolean]] = js.native
+    var when: js.UndefOr[js.Function0[Boolean]] = js.undefined
   }
   object Options {
     
@@ -80,13 +80,13 @@ object mod extends Shortcut {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAction(value: js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      def setAction(value: js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setActionFunction0(value: () => js.Promise[_]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
+      def setActionFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setActionFunction1(value: /* done */ js.Function0[Unit] => _): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      def setActionFunction1(value: /* done */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionUndefined: Self = StObject.set(x, "action", js.undefined)

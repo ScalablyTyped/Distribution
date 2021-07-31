@@ -4,10 +4,13 @@ import typings.ol.extentMod.Extent
 import typings.ol.projectionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object epsg3857Mod {
+  
+  @JSImport("ol/proj/epsg3857", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/proj/epsg3857", "EXTENT")
   @js.native
@@ -29,29 +32,21 @@ object epsg3857Mod {
   @js.native
   val WORLD_EXTENT: Extent = js.native
   
-  @JSImport("ol/proj/epsg3857", "fromEPSG4326")
-  @js.native
-  def fromEPSG4326(input: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "fromEPSG4326")
-  @js.native
-  def fromEPSG4326(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "fromEPSG4326")
-  @js.native
-  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "fromEPSG4326")
-  @js.native
-  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
+  @scala.inline
+  def fromEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def fromEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/proj/epsg3857", "toEPSG4326")
-  @js.native
-  def toEPSG4326(input: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "toEPSG4326")
-  @js.native
-  def toEPSG4326(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "toEPSG4326")
-  @js.native
-  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj/epsg3857", "toEPSG4326")
-  @js.native
-  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
+  @scala.inline
+  def toEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def toEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

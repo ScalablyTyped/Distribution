@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationsResource extends StObject {
   
-  var jobTemplates: JobTemplatesResource = js.native
+  var jobTemplates: JobTemplatesResource
   
-  var jobs: JobsResource = js.native
+  var jobs: JobsResource
 }
 object LocationsResource {
   

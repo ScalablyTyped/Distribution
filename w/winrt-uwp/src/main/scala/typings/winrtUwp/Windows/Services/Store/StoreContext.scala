@@ -9,7 +9,6 @@ import typings.winrtUwp.Windows.System.User
 import typings.winrtUwp.Windows.WinRTEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides members you can use to access and manage Windows Store-related data for the current app. For example, you can use members of this class to get Windows Store listing and license info for the current app, purchase the current app or products that are offered by the app, or download and install package updates for the app. */
@@ -113,7 +112,7 @@ trait StoreContext extends StObject {
   def getUserCollectionWithPagingAsync(productKinds: IIterable[String], maxItemsToRetrievePerPage: Double): IPromiseWithIAsyncOperation[StoreProductPagedQueryResult] = js.native
   
   /** Raised when the status of the app's license changes (for example, the trial period has expired or the user has purchased the full version of the app). */
-  def onofflinelicenseschanged(ev: js.Object with WinRTEvent[StoreContext]): Unit = js.native
+  def onofflinelicenseschanged(ev: js.Object & WinRTEvent[StoreContext]): Unit = js.native
   /** Raised when the status of the app's license changes (for example, the trial period has expired or the user has purchased the full version of the app). */
   @JSName("onofflinelicenseschanged")
   var onofflinelicenseschanged_Original: TypedEventHandler[StoreContext, js.Object] = js.native

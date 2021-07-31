@@ -4,35 +4,33 @@ import typings.mfiles.MFiles.MFEmailImportance
 import typings.mfiles.MFiles.MFEmailSensitivity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEmailMessageInformation extends StObject {
   
-  var Cc: IStrings = js.native
+  var Cc: IStrings
   
-  def Clone(): IEmailMessageInformation = js.native
+  def Clone(): IEmailMessageInformation
   
-  def CloneFrom(EmailMessageInformation: IEmailMessageInformation): Unit = js.native
+  def CloneFrom(EmailMessageInformation: IEmailMessageInformation): Unit
   
-  var From: String = js.native
+  var From: String
   
-  var Importance: MFEmailImportance = js.native
+  var Importance: MFEmailImportance
   
-  var InReplyTo: String = js.native
+  var InReplyTo: String
   
-  var MessageID: String = js.native
+  var MessageID: String
   
-  var Received: ITimestamp = js.native
+  var Received: ITimestamp
   
-  var Sensitivity: MFEmailSensitivity = js.native
+  var Sensitivity: MFEmailSensitivity
   
-  var Sent: ITimestamp = js.native
+  var Sent: ITimestamp
   
-  var Subject: String = js.native
+  var Subject: String
   
-  var To: IStrings = js.native
+  var To: IStrings
 }
 object IEmailMessageInformation {
   

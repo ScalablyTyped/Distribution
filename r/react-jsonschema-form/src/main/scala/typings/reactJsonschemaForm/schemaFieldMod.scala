@@ -8,7 +8,6 @@ import typings.reactJsonschemaForm.mod.IdSchema
 import typings.reactJsonschemaForm.mod.UiSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaFieldMod {
@@ -21,22 +20,21 @@ object schemaFieldMod {
   type SchemaField = Component[SchemaFieldProps[js.Any], js.Object, js.Any]
   
   /* Inlined std.Pick<react-jsonschema-form.react-jsonschema-form.FieldProps<T>, 'schema' | 'uiSchema' | 'idSchema' | 'formData' | 'errorSchema' | 'registry' | 'formContext'> */
-  @js.native
   trait SchemaFieldProps[T] extends StObject {
     
-    var errorSchema: ErrorSchema = js.native
+    var errorSchema: ErrorSchema
     
-    var formContext: js.Any = js.native
+    var formContext: js.Any
     
-    var formData: T = js.native
+    var formData: T
     
-    var idSchema: IdSchema[_] = js.native
+    var idSchema: IdSchema[js.Any]
     
-    var registry: Definitions = js.native
+    var registry: Definitions
     
-    var schema: JSONSchema6 = js.native
+    var schema: JSONSchema6
     
-    var uiSchema: UiSchema = js.native
+    var uiSchema: UiSchema
   }
   object SchemaFieldProps {
     
@@ -45,7 +43,7 @@ object schemaFieldMod {
       errorSchema: ErrorSchema,
       formContext: js.Any,
       formData: T,
-      idSchema: IdSchema[_],
+      idSchema: IdSchema[js.Any],
       registry: Definitions,
       schema: JSONSchema6,
       uiSchema: UiSchema
@@ -55,7 +53,7 @@ object schemaFieldMod {
     }
     
     @scala.inline
-    implicit class SchemaFieldPropsMutableBuilder[Self <: SchemaFieldProps[_], T] (val x: Self with SchemaFieldProps[T]) extends AnyVal {
+    implicit class SchemaFieldPropsMutableBuilder[Self <: SchemaFieldProps[?], T] (val x: Self & SchemaFieldProps[T]) extends AnyVal {
       
       @scala.inline
       def setErrorSchema(value: ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
@@ -67,7 +65,7 @@ object schemaFieldMod {
       def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+      def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])

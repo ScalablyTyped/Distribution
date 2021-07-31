@@ -2,17 +2,15 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoomMember extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var joinDate: js.UndefOr[Double] = js.native
+  var joinDate: js.UndefOr[Double] = js.undefined
   
-  var owner: js.UndefOr[Boolean] = js.native
+  var owner: js.UndefOr[Boolean] = js.undefined
 }
 object RoomMember {
   

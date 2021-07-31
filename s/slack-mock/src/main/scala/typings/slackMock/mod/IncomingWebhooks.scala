@@ -2,17 +2,15 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingWebhooks[T] extends StObject {
   
-  def addResponse(opts: IncomingWebhookOptions[T]): Unit = js.native
+  def addResponse(opts: IncomingWebhookOptions[T]): Unit
   
-  var calls: js.Array[IncomingWebhookCall[T]] = js.native
+  var calls: js.Array[IncomingWebhookCall[T]]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object IncomingWebhooks {
   
@@ -27,7 +25,7 @@ object IncomingWebhooks {
   }
   
   @scala.inline
-  implicit class IncomingWebhooksMutableBuilder[Self <: IncomingWebhooks[_], T] (val x: Self with IncomingWebhooks[T]) extends AnyVal {
+  implicit class IncomingWebhooksMutableBuilder[Self <: IncomingWebhooks[?], T] (val x: Self & IncomingWebhooks[T]) extends AnyVal {
     
     @scala.inline
     def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))

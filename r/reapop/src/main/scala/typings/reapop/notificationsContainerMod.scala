@@ -6,25 +6,26 @@ import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsContainerMod {
   
-  @JSImport("reapop/dist/components/NotificationsContainer", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationsContainer", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var dismissNotification: DismissNotification = js.native
+    var dismissNotification: DismissNotification
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
     
-    var position: Position = js.native
+    var position: Position
     
-    var singleContainer: Boolean = js.native
+    var singleContainer: Boolean
   }
   object Props {
     

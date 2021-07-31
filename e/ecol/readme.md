@@ -12,7 +12,7 @@ Event Collections
 | Keywords           | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 33466 |
+| # downloads        | 57557 |
 | # stars            | 0 |
 
 ## Links

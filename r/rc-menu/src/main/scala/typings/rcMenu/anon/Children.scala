@@ -3,17 +3,15 @@ package typings.rcMenu.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var defaultActiveFirst: js.UndefOr[Boolean] = js.native
+  var defaultActiveFirst: js.UndefOr[Boolean] = js.undefined
   
-  var eventKey: js.UndefOr[typings.react.mod.Key] = js.native
+  var eventKey: js.UndefOr[typings.react.mod.Key] = js.undefined
 }
 object Children {
   

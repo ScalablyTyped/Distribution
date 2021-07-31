@@ -6,63 +6,63 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceGroupsList extends StandardParameters {
+trait ParamsResourceGroupsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Immutable ID of the G Suite account. In case of multi-domain, to fetch
     * all groups for a customer, fill this field instead of domain.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the domain. Fill this field to get groups from only this domain.
     * To return all groups in a multi-domain fill customer field instead.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return. Default is 200
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Column to use for sorting results
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Token to specify next page in the list
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Query string search. Should be of the form "". Complete documentation is
     * at
     * https://developers.google.com/admin-sdk/directory/v1/guides/search-groups
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to return results in ascending or descending order. Only of use
     * when orderBy is also used
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Email or immutable Id of the user if only those groups are to be listed,
     * the given user is a member of. If Id, it should match with id of user
     * object
     */
-  var userKey: js.UndefOr[String] = js.native
+  var userKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceGroupsList {
   

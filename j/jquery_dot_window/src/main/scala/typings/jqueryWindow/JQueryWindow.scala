@@ -4,38 +4,36 @@ import typings.jqueryWindow.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryWindow {
   
   // Button definition
-  @js.native
   trait Button extends StObject {
     
     /**
       **/
-    def callback(btn: Button, wnd: Window): Unit = js.native
+    def callback(btn: Button, wnd: Window): Unit
     
     /**
       **/
-    var clazz: js.UndefOr[String] = js.native
+    var clazz: js.UndefOr[String] = js.undefined
     
     /**
       **/
-    var id: String = js.native
+    var id: String
     
     /**
       **/
-    var image: String = js.native
+    var image: String
     
     /**
       **/
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /**
       **/
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Button {
     
@@ -122,43 +120,42 @@ object JQueryWindow {
   }
   
   // Static options
-  @js.native
   trait StaticOptions extends StObject {
     
     /**
       the speed of animations: maximize, minimize, restore, shift, in milliseconds
       **/
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /**
       the direction of minimized window dock at. the available values are [left, right, top, bottom]
       **/
-    var dock: js.UndefOr[String] = js.native
+    var dock: js.UndefOr[String] = js.undefined
     
     /**
       the area which the windows will dock at
       **/
-    var dockArea: js.UndefOr[JQuery | HTMLElement] = js.native
+    var dockArea: js.UndefOr[JQuery | HTMLElement] = js.undefined
     
     /**
       to handle browser scrollbar when window status changed(maximize, minimize, cascade)
       **/
-    var handleScrollbar: js.UndefOr[Boolean] = js.native
+    var handleScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /**
       the long dimension of minimized window
       **/
-    var minWinLong: js.UndefOr[Double] = js.native
+    var minWinLong: js.UndefOr[Double] = js.undefined
     
     /**
       the narrow dimension of minimized window
       **/
-    var minWinNarrow: js.UndefOr[Double] = js.native
+    var minWinNarrow: js.UndefOr[Double] = js.undefined
     
     /**
       to decide show log in firebug, IE8, chrome console
       **/
-    var showLog: js.UndefOr[Boolean] = js.native
+    var showLog: js.UndefOr[Boolean] = js.undefined
   }
   object StaticOptions {
     
@@ -390,268 +387,267 @@ object JQueryWindow {
   }
   
   // Instance options
-  @js.native
   trait WindowOptions extends StObject {
     
     /**
       a callback function after window cascaded
       **/
-    var afterCascade: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var afterCascade: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function after window dragged
       **/
-    var afterDrag: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var afterDrag: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function after window maximized
       **/
-    var afterMaximize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var afterMaximize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function after window minimized
       **/
-    var afterMinimize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var afterMinimize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function after window resized
       **/
-    var afterResize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var afterResize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       to control window with remote url could be bookmarked
       **/
-    var bookmarkable: js.UndefOr[Boolean] = js.native
+    var bookmarkable: js.UndefOr[Boolean] = js.undefined
     
     /**
       to check window dialog overflow html body or caller element
       **/
-    var checkBoundary: js.UndefOr[Boolean] = js.native
+    var checkBoundary: js.UndefOr[Boolean] = js.undefined
     
     /**
       to control window closable
       **/
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
     /**
       container extra class
       **/
-    var containerClass: js.UndefOr[String] = js.native
+    var containerClass: js.UndefOr[String] = js.undefined
     
     /**
       this attribute only works when url is null. when passing a jquery object or a element, it will clone the original one to append.
       **/
-    var content: js.UndefOr[String | JQuery | HTMLElement] = js.native
+    var content: js.UndefOr[String | JQuery | HTMLElement] = js.undefined
     
     /**
       random the new created window position, it only works when options x,y value both are -1
       **/
-    var createRandomOffset: js.UndefOr[X] = js.native
+    var createRandomOffset: js.UndefOr[X] = js.undefined
     
     /**
       to describe the customized button display and callback function
       **/
-    var custBtns: js.UndefOr[js.Array[Button]] = js.native
+    var custBtns: js.UndefOr[js.Array[Button]] = js.undefined
     
     /**
       to control window draggable
       **/
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       footer extra class
       **/
-    var footerClass: js.UndefOr[String] = js.native
+    var footerClass: js.UndefOr[String] = js.undefined
     
     /**
       same as content attribute, but it's put on footer panel.
       **/
-    var footerContent: js.UndefOr[String | JQuery | HTMLElement] = js.native
+    var footerContent: js.UndefOr[String | JQuery | HTMLElement] = js.undefined
     
     /**
       frame extra class
       **/
-    var frameClass: js.UndefOr[String] = js.native
+    var frameClass: js.UndefOr[String] = js.undefined
     
     /**
       header extra class
       **/
-    var headerClass: js.UndefOr[String] = js.native
+    var headerClass: js.UndefOr[String] = js.undefined
     
     /**
       window height
       **/
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       an icon image url string. if this attribute is given, it will force to replace the original favicon of remote page on window. or you can set it as null to hide icon.
       **/
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       if null means no check, or pass a string to show warning message while iframe is going to redirect current top page
       **/
-    var iframeRedirectCheckMsg: js.UndefOr[String] = js.native
+    var iframeRedirectCheckMsg: js.UndefOr[String] = js.undefined
     
     /**
       the maximum height, if -1 means no checking
       **/
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       the maximum width, if -1 means no checking
       **/
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       to control window maximizable
       **/
-    var maximizable: js.UndefOr[Boolean] = js.native
+    var maximizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       the minimum height, if -1 means no checking
       **/
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /**
       the minimum width, if -1 means no checking
       **/
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       to control window minimizable
       **/
-    var minimizable: js.UndefOr[Boolean] = js.native
+    var minimizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       the opacity of modal dialog
       **/
-    var modalOpacity: js.UndefOr[Double] = js.native
+    var modalOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       a callback function while window is going to cascade
       **/
-    var onCascade: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onCascade: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while user click close button
       **/
-    var onClose: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while window is going to drag
       **/
-    var onDrag: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onDrag: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while iframe load finished. this attribute only works while url attribute is given
       **/
-    var onIframeEnd: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onIframeEnd: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while iframe ready to connect remoting url. this attribute only works while url attribute is given
       **/
-    var onIframeStart: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onIframeStart: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while window is going to maximize
       **/
-    var onMaximize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onMaximize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while window is going to minimize
       **/
-    var onMinimize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onMinimize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while container is added into body
       **/
-    var onOpen: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while window is going to resize
       **/
-    var onResize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while user select the window
       **/
-    var onSelect: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while whole window display routine is finished
       **/
-    var onShow: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       a callback function while window unselected
       **/
-    var onUnselect: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.native
+    var onUnselect: js.UndefOr[js.Function1[/* wnd */ Window, Unit]] = js.undefined
     
     /**
       to control window resizable
       **/
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       to show scroll bar or not
       **/
-    var scrollable: js.UndefOr[Boolean] = js.native
+    var scrollable: js.UndefOr[Boolean] = js.undefined
     
     /**
       selected header extra class
       **/
-    var selectedHeaderClass: js.UndefOr[String] = js.native
+    var selectedHeaderClass: js.UndefOr[String] = js.undefined
     
     /**
       to control show footer panel
       **/
-    var showFooter: js.UndefOr[Boolean] = js.native
+    var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /**
       to control show modal on background
       **/
-    var showModal: js.UndefOr[Boolean] = js.native
+    var showModal: js.UndefOr[Boolean] = js.undefined
     
     /**
       to control display window as round corner
       **/
-    var showRoundCorner: js.UndefOr[Boolean] = js.native
+    var showRoundCorner: js.UndefOr[Boolean] = js.undefined
     
     /**
       the title text of window
       **/
-    var title: String = js.native
+    var title: String
     
     /**
       the target url of iframe ready to load.
       **/
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       window width
       **/
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       to limit window only can be dragged within browser window. this attribute only works when checkBoundary is true and caller is null.
       **/
-    var withinBrowserWindow: js.UndefOr[Boolean] = js.native
+    var withinBrowserWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       the x-axis value on screen(or caller element), if -1 means put on screen(or caller element) center
       **/
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       the y-axis value on screen(or caller element), if -1 means put on screen(or caller element) center
       **/
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
     /**
       the css z-index value
       **/
-    var z: js.UndefOr[Double] = js.native
+    var z: js.UndefOr[Double] = js.undefined
   }
   object WindowOptions {
     

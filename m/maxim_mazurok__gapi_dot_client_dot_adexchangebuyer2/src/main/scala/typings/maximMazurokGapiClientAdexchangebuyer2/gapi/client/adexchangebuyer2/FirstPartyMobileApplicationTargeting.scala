@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstPartyMobileApplicationTargeting extends StObject {
   
   /** A list of application IDs to be excluded. */
-  var excludedAppIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedAppIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of application IDs to be included. */
-  var targetedAppIds: js.UndefOr[js.Array[String]] = js.native
+  var targetedAppIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FirstPartyMobileApplicationTargeting {
   

@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeriodicWaveOptions extends PeriodicWaveConstraints {
+trait PeriodicWaveOptions
+  extends StObject
+     with PeriodicWaveConstraints {
   
-  var imag: js.UndefOr[js.Array[Double] | Float32Array] = js.native
+  var imag: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
   
-  var real: js.UndefOr[js.Array[Double] | Float32Array] = js.native
+  var real: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
 }
 object PeriodicWaveOptions {
   

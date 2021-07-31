@@ -2,81 +2,79 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupDetail extends StObject {
   
   /**
     * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
     */
-  var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.native
+  var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The date/time the instance group was created.
     */
-  var CreationDateTime: Date = js.native
+  var CreationDateTime: Date
   
   /**
     * The date/time the instance group was terminated.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Unique identifier for the instance group.
     */
-  var InstanceGroupId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var InstanceGroupId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * Target number of instances to run in the instance group.
     */
-  var InstanceRequestCount: Integer = js.native
+  var InstanceRequestCount: Integer
   
   /**
     * Instance group role in the cluster
     */
-  var InstanceRole: InstanceRoleType = js.native
+  var InstanceRole: InstanceRoleType
   
   /**
     * Actual count of running instances.
     */
-  var InstanceRunningCount: Integer = js.native
+  var InstanceRunningCount: Integer
   
   /**
     * EC2 instance type.
     */
-  var InstanceType: typings.awsSdk.emrMod.InstanceType = js.native
+  var InstanceType: typings.awsSdk.emrMod.InstanceType
   
   /**
     * Details regarding the state of the instance group.
     */
-  var LastStateChangeReason: js.UndefOr[XmlString] = js.native
+  var LastStateChangeReason: js.UndefOr[XmlString] = js.undefined
   
   /**
     * Market type of the EC2 instances used to create a cluster node.
     */
-  var Market: MarketType = js.native
+  var Market: MarketType
   
   /**
     * Friendly name for the instance group.
     */
-  var Name: js.UndefOr[XmlStringMaxLen256] = js.native
+  var Name: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The date/time the instance group was available to the cluster.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.native
+  var ReadyDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date/time the instance group was started.
     */
-  var StartDateTime: js.UndefOr[Date] = js.native
+  var StartDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * State of instance group. The following values are deprecated: STARTING, TERMINATED, and FAILED.
     */
-  var State: InstanceGroupState = js.native
+  var State: InstanceGroupState
 }
 object InstanceGroupDetail {
   

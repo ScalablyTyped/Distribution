@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShutdownEventConfiguration extends StObject {
   
   /**
     * Whether to enable Elastic Load Balancing connection draining. For more information, see Connection Draining 
     */
-  var DelayUntilElbConnectionsDrained: js.UndefOr[Boolean] = js.native
+  var DelayUntilElbConnectionsDrained: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time, in seconds, that AWS OpsWorks Stacks will wait after triggering a Shutdown event before shutting down an instance.
     */
-  var ExecutionTimeout: js.UndefOr[Integer] = js.native
+  var ExecutionTimeout: js.UndefOr[Integer] = js.undefined
 }
 object ShutdownEventConfiguration {
   

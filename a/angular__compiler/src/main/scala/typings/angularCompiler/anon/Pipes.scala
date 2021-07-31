@@ -4,15 +4,13 @@ import typings.angularCompiler.compileMetadataMod.CompilePipeSummary
 import typings.angularCompiler.templateAstMod.TemplateAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pipes extends StObject {
   
-  var pipes: js.Array[CompilePipeSummary] = js.native
+  var pipes: js.Array[CompilePipeSummary]
   
-  var template: js.Array[TemplateAst] = js.native
+  var template: js.Array[TemplateAst]
 }
 object Pipes {
   

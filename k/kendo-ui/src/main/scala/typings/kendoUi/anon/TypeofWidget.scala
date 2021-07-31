@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofWidget extends StObject {
   
   /* static member */
-  def extend(prototype: js.Object): Widget = js.native
+  def extend(prototype: js.Object): Widget
   
   /* static member */
-  var fn: js.Any = js.native
+  var fn: js.Any
 }
 object TypeofWidget {
   

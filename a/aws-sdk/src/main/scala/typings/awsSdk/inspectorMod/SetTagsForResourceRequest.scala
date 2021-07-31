@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTagsForResourceRequest extends StObject {
   
   /**
     * The ARN of the assessment template that you want to set tags to.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * A collection of key and value pairs that you want to set to the assessment template.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object SetTagsForResourceRequest {
   

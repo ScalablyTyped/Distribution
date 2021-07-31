@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTargetedPublishersRequest extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait AddTargetedPublishersRequest extends StObject {
     * PretargetingConfig.publisherTargeting.values. Publishers are identified by their publisher ID from ads.txt / app-ads.txt. See https://iabtechlab.com/ads-txt/ and
     * https://iabtechlab.com/app-ads-txt/ for more details.
     */
-  var publisherIds: js.UndefOr[js.Array[String]] = js.native
+  var publisherIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The targeting mode that should be applied to the list of publisher IDs. If are existing publisher IDs, must be equal to the existing
     * PretargetingConfig.publisherTargeting.targetingMode or a 400 bad request error will be returned.
     */
-  var targetingMode: js.UndefOr[String] = js.native
+  var targetingMode: js.UndefOr[String] = js.undefined
 }
 object AddTargetedPublishersRequest {
   

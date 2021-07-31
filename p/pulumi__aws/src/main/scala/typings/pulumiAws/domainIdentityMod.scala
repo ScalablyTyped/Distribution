@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainIdentityMod {
@@ -49,6 +48,10 @@ object domainIdentityMod {
   /* static members */
   object DomainIdentity {
     
+    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainIdentity resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,35 +61,29 @@ object domainIdentityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainIdentity = js.native
-    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainIdentity = js.native
-    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainIdentityState): DomainIdentity = js.native
-    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainIdentityState, opts: CustomResourceOptions): DomainIdentity = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainIdentityState): DomainIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainIdentity]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainIdentityState, opts: CustomResourceOptions): DomainIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentity]
     
     /**
       * Returns true if the given object is an instance of DomainIdentity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ Boolean]
   }
   
-  @js.native
   trait DomainIdentityArgs extends StObject {
     
     /**
       * The domain name to assign to SES
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
   }
   object DomainIdentityArgs {
     
@@ -104,18 +101,17 @@ object domainIdentityMod {
     }
   }
   
-  @js.native
   trait DomainIdentityState extends StObject {
     
     /**
       * The ARN of the domain identity.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain name to assign to SES
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A code which when added to the domain as a TXT record
@@ -126,7 +122,7 @@ object domainIdentityMod {
       * more about verifying domains in Amazon SES in the [AWS SES
       * docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-domains.html).
       */
-    val verificationToken: js.UndefOr[Input[String]] = js.native
+    val verificationToken: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainIdentityState {
     

@@ -10,9 +10,9 @@ Transform into a lower case with spaces between words, then capitalize the strin
 | ------------------ | :-------------: |
 | Full name          | sentence-case |
 | Keywords           | sentence, case, lower, capitalize, convert, transform |
-| # releases         | 5 |
-| # dependents       | 28 |
-| # downloads        | 66210879 |
+| # releases         | 6 |
+| # dependents       | 29 |
+| # downloads        | 80427137 |
 | # stars            | 0 |
 
 ## Links

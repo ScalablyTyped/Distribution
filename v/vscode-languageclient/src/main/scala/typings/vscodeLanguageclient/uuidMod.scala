@@ -2,40 +2,38 @@ package typings.vscodeLanguageclient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uuidMod {
+  
+  @JSImport("vscode-languageclient/lib/utils/uuid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vscode-languageclient/lib/utils/uuid", "empty")
   @js.native
   val empty: UUID = js.native
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", "generateUuid")
-  @js.native
-  def generateUuid(): String = js.native
+  @scala.inline
+  def generateUuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUuid")().asInstanceOf[String]
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", "isUUID")
-  @js.native
-  def isUUID(value: String): Boolean = js.native
+  @scala.inline
+  def isUUID(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", "parse")
-  @js.native
-  def parse(value: String): UUID = js.native
+  @scala.inline
+  def parse(value: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[UUID]
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", "v4")
-  @js.native
-  def v4(): UUID = js.native
+  @scala.inline
+  def v4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[UUID]
   
-  @js.native
   trait UUID extends StObject {
     
     /**
       * @returns the canonical representation in sets of hexadecimal numbers separated by dashes.
       */
-    def asHex(): String = js.native
+    def asHex(): String
     
-    def equals(other: UUID): Boolean = js.native
+    def equals(other: UUID): Boolean
   }
   object UUID {
     

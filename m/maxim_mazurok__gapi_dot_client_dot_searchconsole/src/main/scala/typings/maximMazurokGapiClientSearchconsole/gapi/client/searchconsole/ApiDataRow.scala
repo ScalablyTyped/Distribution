@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiDataRow extends StObject {
   
-  var clicks: js.UndefOr[Double] = js.native
+  var clicks: js.UndefOr[Double] = js.undefined
   
-  var ctr: js.UndefOr[Double] = js.native
+  var ctr: js.UndefOr[Double] = js.undefined
   
-  var impressions: js.UndefOr[Double] = js.native
+  var impressions: js.UndefOr[Double] = js.undefined
   
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
 }
 object ApiDataRow {
   

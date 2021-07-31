@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait On extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var on: js.Array[Events] = js.native
+  var on: js.Array[Events]
 }
 object On {
   

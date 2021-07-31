@@ -2,7 +2,6 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,19 +23,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a description of IAM and its features, see the [IAM developer&#39;s
   * guide](https://cloud.google.com/iam/docs).
   */
-@js.native
 trait SchemaPolicy extends StObject {
   
   /**
     * Specifies cloud audit logging configuration for this policy.
     */
-  var auditConfigs: js.UndefOr[js.Array[SchemaAuditConfig]] = js.native
+  var auditConfigs: js.UndefOr[js.Array[SchemaAuditConfig]] = js.undefined
   
   /**
     * Associates a list of `members` to a `role`. `bindings` with no members
     * will result in an error.
     */
-  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.native
+  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help
@@ -49,9 +47,9 @@ trait SchemaPolicy extends StObject {
     * policy.  If no `etag` is provided in the call to `setIamPolicy`, then the
     * existing policy is overwritten blindly.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var iamOwned: js.UndefOr[Boolean] = js.native
+  var iamOwned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If more than one rule is specified, the rules are applied in the
@@ -62,12 +60,12 @@ trait SchemaPolicy extends StObject {
     * will be applied if one or more matching rule requires logging. -
     * Otherwise, if no rule applies, permission is denied.
     */
-  var rules: js.UndefOr[js.Array[SchemaRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaRule]] = js.undefined
   
   /**
     * Deprecated.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaPolicy {
   

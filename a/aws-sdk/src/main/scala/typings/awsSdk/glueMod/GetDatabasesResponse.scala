@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDatabasesResponse extends StObject {
   
   /**
     * A list of Database objects from the specified catalog.
     */
-  var DatabaseList: typings.awsSdk.glueMod.DatabaseList = js.native
+  var DatabaseList: typings.awsSdk.glueMod.DatabaseList
   
   /**
     * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetDatabasesResponse {
   

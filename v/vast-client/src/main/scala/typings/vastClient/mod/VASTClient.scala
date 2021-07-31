@@ -3,7 +3,6 @@ package typings.vastClient.mod
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vast-client", "VASTClient")
@@ -19,18 +18,6 @@ class VASTClient () extends StObject {
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0
     */
-  cappingFreeLunch: js.UndefOr[scala.Nothing],
-    /**
-    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
-    * Default: 0
-    */
-  cappingMinimumTimeInterval: Double
-  ) = this()
-  def this(
-    /**
-    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
-    * Default: 0
-    */
   cappingFreeLunch: Double,
     /**
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
@@ -43,23 +30,19 @@ class VASTClient () extends StObject {
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0
     */
-  cappingFreeLunch: js.UndefOr[scala.Nothing],
+  cappingFreeLunch: Unit,
     /**
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
     * Default: 0
     */
-  cappingMinimumTimeInterval: js.UndefOr[scala.Nothing],
-    /**
-    * Optional custom storage to be used instead of the default one
-    */
-  customStorage: VASTClientCustomStorage
+  cappingMinimumTimeInterval: Double
   ) = this()
   def this(
     /**
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0
     */
-  cappingFreeLunch: js.UndefOr[scala.Nothing],
+  cappingFreeLunch: Double,
     /**
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
     * Default: 0
@@ -80,7 +63,7 @@ class VASTClient () extends StObject {
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
     * Default: 0
     */
-  cappingMinimumTimeInterval: js.UndefOr[scala.Nothing],
+  cappingMinimumTimeInterval: Unit,
     /**
     * Optional custom storage to be used instead of the default one
     */
@@ -91,12 +74,28 @@ class VASTClient () extends StObject {
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0
     */
-  cappingFreeLunch: Double,
+  cappingFreeLunch: Unit,
     /**
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
     * Default: 0
     */
   cappingMinimumTimeInterval: Double,
+    /**
+    * Optional custom storage to be used instead of the default one
+    */
+  customStorage: VASTClientCustomStorage
+  ) = this()
+  def this(
+    /**
+    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
+    * Default: 0
+    */
+  cappingFreeLunch: Unit,
+    /**
+    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
+    * Default: 0
+    */
+  cappingMinimumTimeInterval: Unit,
     /**
     * Optional custom storage to be used instead of the default one
     */

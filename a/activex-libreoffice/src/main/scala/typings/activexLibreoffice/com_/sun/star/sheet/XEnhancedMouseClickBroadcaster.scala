@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.awt.XEnhancedMouseClickHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to add and remove EnhancedMouseClickHandler
   * @since OOo 2.0
   */
-@js.native
-trait XEnhancedMouseClickBroadcaster extends XInterface {
+trait XEnhancedMouseClickBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * allows a component supporting the XEnhancedMouseClickHandler interface to register as listener. The component will be notified with a
@@ -24,13 +24,13 @@ trait XEnhancedMouseClickBroadcaster extends XInterface {
     * @see XShape
     * @see XCell
     */
-  def addEnhancedMouseClickHandler(aListener: XEnhancedMouseClickHandler): Unit = js.native
+  def addEnhancedMouseClickHandler(aListener: XEnhancedMouseClickHandler): Unit
   
   /**
     * removes a previously registered listener.
     * @param aListener the component that is to be removed
     */
-  def removeEnhancedMouseClickHandler(aListener: XEnhancedMouseClickHandler): Unit = js.native
+  def removeEnhancedMouseClickHandler(aListener: XEnhancedMouseClickHandler): Unit
 }
 object XEnhancedMouseClickBroadcaster {
   

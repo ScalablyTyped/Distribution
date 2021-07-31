@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ListKeyboardMode extends StObject
 object ListKeyboardMode extends StObject {
   
   @js.native
-  sealed trait Edit extends ListKeyboardMode
+  sealed trait Edit
+    extends StObject
+       with ListKeyboardMode
   
   @js.native
-  sealed trait Navigation extends ListKeyboardMode
+  sealed trait Navigation
+    extends StObject
+       with ListKeyboardMode
 }

@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Tethering.BindRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `198` extends StObject {
   
-  var paramsType: js.Array[BindRequest] = js.native
+  var paramsType: js.Array[BindRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `198` {
   

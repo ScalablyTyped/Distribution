@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Payments")
@@ -29,7 +28,7 @@ class ResourcePayments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPayments] = js.native
   def list(callback: BodyResponseCallback[SchemaPayments]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPayments] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPayments] = js.native
   def list(params: ParamsResourcePaymentsList): GaxiosPromise[SchemaPayments] = js.native
   def list(params: ParamsResourcePaymentsList, callback: BodyResponseCallback[SchemaPayments]): Unit = js.native
   def list(

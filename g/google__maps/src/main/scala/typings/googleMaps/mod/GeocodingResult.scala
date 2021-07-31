@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocodingResult extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait GeocodingResult extends StObject {
     *    over time for the same address. A component can change position in the array.
     *    The type of the component can change. A particular component may be missing in a later response.
     */
-  var address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]] = js.native
+  var address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]
   
   /**
     * is a string containing the human-readable address of this location.
@@ -36,10 +34,10 @@ trait GeocodingResult extends StObject {
     * Do not parse the formatted address programmatically. Instead you should use the individual address components,
     * which the API response includes in addition to the formatted address field.
     */
-  var formatted_address: String = js.native
+  var formatted_address: String
   
   /** address geometry. */
-  var geometry: AddressGeometry = js.native
+  var geometry: AddressGeometry
   
   /**
     * indicates that the geocoder did not return an exact match for the original request,
@@ -52,10 +50,10 @@ trait GeocodingResult extends StObject {
     * Note that if a request includes a misspelled address component, the geocoding service may suggest an alternative address.
     * Suggestions triggered in this way will also be marked as a partial match.
     */
-  var partial_match: Boolean = js.native
+  var partial_match: Boolean
   
   /** is a unique identifier that can be used with other Google APIs. */
-  var place_id: String = js.native
+  var place_id: String
   
   /**
     * is an encoded location reference, derived from latitude and longitude coordinates,
@@ -72,13 +70,13 @@ trait GeocodingResult extends StObject {
     * @see [Open Location Code](https://en.wikipedia.org/wiki/Open_Location_Code)
     * @see [plus codes](https://plus.codes/)
     */
-  var plus_code: PlusCode = js.native
+  var plus_code: PlusCode
   
   /**
     * is an array denoting all the localities contained in a postal code.
     * This is only present when the result is a postal code that contains multiple localities.
     */
-  var postcode_localities: js.Array[String] = js.native
+  var postcode_localities: js.Array[String]
   
   /**
     * array indicates the type of the returned result.
@@ -86,7 +84,7 @@ trait GeocodingResult extends StObject {
     * For example, a geocode of "Chicago" returns "locality" which indicates that "Chicago" is a city,
     * and also returns "political" which indicates it is a political entity.
     */
-  var types: js.Array[AddressType] = js.native
+  var types: js.Array[AddressType]
 }
 object GeocodingResult {
   

@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldersRequest extends StObject {
   
   /**
     * A comma-separated list of envelope IDs.
     */
-  var envelopeIds: js.UndefOr[js.Array[String]] = js.native
+  var envelopeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of folder objects.
     */
-  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.native
+  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.undefined
   
   /**
     *  The id of the folder that the envelope is being moved from.
     */
-  var fromFolderId: js.UndefOr[String] = js.native
+  var fromFolderId: js.UndefOr[String] = js.undefined
 }
 object FoldersRequest {
   

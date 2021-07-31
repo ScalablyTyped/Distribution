@@ -3,10 +3,8 @@ package typings.googleMaps.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeZoneRequest extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait TimeZoneRequest extends StObject {
     *
     * @default Language.English
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /** a comma-separated `lat,lng` tuple (eg. `location=-33.86,151.20`), representing the location to look up. */
-  var location: LatLng = js.native
+  var location: LatLng
   
   /**
     * specifies the desired time as seconds since midnight, January 1, 1970 UTC.
@@ -27,7 +25,7 @@ trait TimeZoneRequest extends StObject {
     * That is, if you specify a past timestamp, the API does not take into account the possibility that
     * the location was previously in a different time zone.
     */
-  var timestamp: js.UndefOr[Date | Double] = js.native
+  var timestamp: js.UndefOr[Date | Double] = js.undefined
 }
 object TimeZoneRequest {
   

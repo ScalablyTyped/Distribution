@@ -1,0 +1,210 @@
+package typings.wdioUtils
+
+import typings.std.Error
+import typings.std.Record
+import typings.wdioUtils.anon.FnCall
+import typings.wdioUtils.shimMod.Retries
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object typesMod {
+  
+  trait AfterHookParam[T] extends StObject {
+    
+    var afterFn: js.Function
+    
+    def afterFnArgs(ctx: T): js.Tuple2[js.Any, T]
+    @JSName("afterFnArgs")
+    var afterFnArgs_Original: HookFnArgs[T]
+  }
+  object AfterHookParam {
+    
+    @scala.inline
+    def apply[T](afterFn: js.Function, afterFnArgs: T => js.Tuple2[js.Any, T]): AfterHookParam[T] = {
+      val __obj = js.Dynamic.literal(afterFn = afterFn.asInstanceOf[js.Any], afterFnArgs = js.Any.fromFunction1(afterFnArgs))
+      __obj.asInstanceOf[AfterHookParam[T]]
+    }
+    
+    @scala.inline
+    implicit class AfterHookParamMutableBuilder[Self <: AfterHookParam[?], T] (val x: Self & AfterHookParam[T]) extends AnyVal {
+      
+      @scala.inline
+      def setAfterFn(value: js.Function): Self = StObject.set(x, "afterFn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAfterFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "afterFnArgs", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait BeforeHookParam[T] extends StObject {
+    
+    var beforeFn: js.Function
+    
+    def beforeFnArgs(ctx: T): js.Tuple2[js.Any, T]
+    @JSName("beforeFnArgs")
+    var beforeFnArgs_Original: HookFnArgs[T]
+  }
+  object BeforeHookParam {
+    
+    @scala.inline
+    def apply[T](beforeFn: js.Function, beforeFnArgs: T => js.Tuple2[js.Any, T]): BeforeHookParam[T] = {
+      val __obj = js.Dynamic.literal(beforeFn = beforeFn.asInstanceOf[js.Any], beforeFnArgs = js.Any.fromFunction1(beforeFnArgs))
+      __obj.asInstanceOf[BeforeHookParam[T]]
+    }
+    
+    @scala.inline
+    implicit class BeforeHookParamMutableBuilder[Self <: BeforeHookParam[?], T] (val x: Self & BeforeHookParam[T]) extends AnyVal {
+      
+      @scala.inline
+      def setBeforeFn(value: js.Function): Self = StObject.set(x, "beforeFn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBeforeFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "beforeFnArgs", js.Any.fromFunction1(value))
+    }
+  }
+  
+  type HookFnArgs[T] = js.Function1[/* ctx */ T, js.Tuple2[js.Any, T]]
+  
+  trait JasmineContext extends StObject {
+    
+    var failedExpectations: js.Array[Record[String, js.Any]]
+  }
+  object JasmineContext {
+    
+    @scala.inline
+    def apply(failedExpectations: js.Array[Record[String, js.Any]]): JasmineContext = {
+      val __obj = js.Dynamic.literal(failedExpectations = failedExpectations.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JasmineContext]
+    }
+    
+    @scala.inline
+    implicit class JasmineContextMutableBuilder[Self <: JasmineContext] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFailedExpectations(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFailedExpectationsVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
+    }
+  }
+  
+  type SpecArguments = js.Array[js.Function] | (js.Tuple2[js.Function | String, Double | js.Function]) | (js.Tuple3[String, js.Function, Double])
+  
+  trait SpecFunction extends StObject {
+    
+    var specFn: js.Function
+    
+    var specFnArgs: js.Array[js.Any]
+  }
+  object SpecFunction {
+    
+    @scala.inline
+    def apply(specFn: js.Function, specFnArgs: js.Array[js.Any]): SpecFunction = {
+      val __obj = js.Dynamic.literal(specFn = specFn.asInstanceOf[js.Any], specFnArgs = specFnArgs.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SpecFunction]
+    }
+    
+    @scala.inline
+    implicit class SpecFunctionMutableBuilder[Self <: SpecFunction] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSpecFn(value: js.Function): Self = StObject.set(x, "specFn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecFnArgs(value: js.Array[js.Any]): Self = StObject.set(x, "specFnArgs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecFnArgsVarargs(value: js.Any*): Self = StObject.set(x, "specFnArgs", js.Array(value :_*))
+    }
+  }
+  
+  trait WrapperMethods extends StObject {
+    
+    def executeAsync(fn: js.Function, retries: Retries): js.Promise[js.Any]
+    def executeAsync(fn: js.Function, retries: Retries, args: js.Array[js.Any]): js.Promise[js.Any]
+    @JSName("executeAsync")
+    var executeAsync_Original: js.ThisFunction3[
+        /* this */ js.Any, 
+        /* fn */ js.Function, 
+        /* retries */ Retries, 
+        /* args */ js.UndefOr[js.Array[js.Any]], 
+        js.Promise[js.Any]
+      ]
+    
+    def executeHooksWithArgs[T](): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Array[js.Function]): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Array[js.Function], args: js.Any): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Array[js.Function], args: js.Array[js.Any]): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Function): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Function, args: js.Any): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: js.Function, args: js.Array[js.Any]): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: Unit, args: js.Any): js.Promise[js.Array[Error | T]]
+    def executeHooksWithArgs[T](hooks: Unit, args: js.Array[js.Any]): js.Promise[js.Array[Error | T]]
+    @JSName("executeHooksWithArgs")
+    var executeHooksWithArgs_Original: FnCall
+    
+    def runSync(fn: js.Function, repeatTest: js.Any, args: js.Array[js.Any]): js.Function2[/* resolve */ js.Function, /* reject */ js.Function, js.Any]
+    @JSName("runSync")
+    var runSync_Original: js.ThisFunction3[
+        /* this */ js.Any, 
+        /* fn */ js.Function, 
+        /* repeatTest */ js.Any, 
+        /* args */ js.Array[js.Any], 
+        js.Function2[/* resolve */ js.Function, /* reject */ js.Function, js.Any]
+      ]
+  }
+  object WrapperMethods {
+    
+    @scala.inline
+    def apply(
+      executeAsync: js.ThisFunction3[
+          /* this */ js.Any, 
+          /* fn */ js.Function, 
+          /* retries */ Retries, 
+          /* args */ js.UndefOr[js.Array[js.Any]], 
+          js.Promise[js.Any]
+        ],
+      executeHooksWithArgs: FnCall,
+      runSync: js.ThisFunction3[
+          /* this */ js.Any, 
+          /* fn */ js.Function, 
+          /* repeatTest */ js.Any, 
+          /* args */ js.Array[js.Any], 
+          js.Function2[/* resolve */ js.Function, /* reject */ js.Function, js.Any]
+        ]
+    ): WrapperMethods = {
+      val __obj = js.Dynamic.literal(executeAsync = executeAsync.asInstanceOf[js.Any], executeHooksWithArgs = executeHooksWithArgs.asInstanceOf[js.Any], runSync = runSync.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WrapperMethods]
+    }
+    
+    @scala.inline
+    implicit class WrapperMethodsMutableBuilder[Self <: WrapperMethods] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setExecuteAsync(
+        value: js.ThisFunction3[
+              /* this */ js.Any, 
+              /* fn */ js.Function, 
+              /* retries */ Retries, 
+              /* args */ js.UndefOr[js.Array[js.Any]], 
+              js.Promise[js.Any]
+            ]
+      ): Self = StObject.set(x, "executeAsync", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExecuteHooksWithArgs(value: FnCall): Self = StObject.set(x, "executeHooksWithArgs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRunSync(
+        value: js.ThisFunction3[
+              /* this */ js.Any, 
+              /* fn */ js.Function, 
+              /* repeatTest */ js.Any, 
+              /* args */ js.Array[js.Any], 
+              js.Function2[/* resolve */ js.Function, /* reject */ js.Function, js.Any]
+            ]
+      ): Self = StObject.set(x, "runSync", value.asInstanceOf[js.Any])
+    }
+  }
+}

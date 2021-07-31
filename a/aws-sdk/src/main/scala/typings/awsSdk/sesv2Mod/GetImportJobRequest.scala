@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImportJobRequest extends StObject {
   
   /**
     * The ID of the import job.
     */
-  var JobId: typings.awsSdk.sesv2Mod.JobId = js.native
+  var JobId: typings.awsSdk.sesv2Mod.JobId
 }
 object GetImportJobRequest {
   

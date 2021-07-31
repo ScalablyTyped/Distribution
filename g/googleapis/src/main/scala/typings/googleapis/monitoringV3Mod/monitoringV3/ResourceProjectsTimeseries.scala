@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Timeseries")
@@ -81,7 +80,7 @@ class ResourceProjectsTimeseries protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaEmpty] = js.native
   def create(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceProjectsTimeseriesCreate): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceProjectsTimeseriesCreate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(
@@ -175,7 +174,7 @@ class ResourceProjectsTimeseries protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTimeSeriesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(params: ParamsResourceProjectsTimeseriesList): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(
     params: ParamsResourceProjectsTimeseriesList,

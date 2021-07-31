@@ -6,27 +6,27 @@ import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.hook_failure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Test extends AsyncEvent {
+trait Test
+  extends StObject
+     with AsyncEvent {
   
-  var describeBlock: js.UndefOr[typings.jestTypes.circusMod.DescribeBlock] = js.native
+  var describeBlock: js.UndefOr[typings.jestTypes.circusMod.DescribeBlock] = js.undefined
   
-  var error: String | Exception = js.native
+  var error: String | Exception
   
-  var hook: typings.jestTypes.circusMod.Hook = js.native
+  var hook: typings.jestTypes.circusMod.Hook
   
-  var name: hook_failure = js.native
+  var name: hook_failure
   
-  var test: js.UndefOr[TestEntry] = js.native
+  var test: js.UndefOr[TestEntry] = js.undefined
 }
 object Test {
   
   @scala.inline
-  def apply(error: String | Exception, hook: typings.jestTypes.circusMod.Hook, name: hook_failure): Test = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(error: String | Exception, hook: typings.jestTypes.circusMod.Hook): Test = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], name = "hook_failure")
     __obj.asInstanceOf[Test]
   }
   

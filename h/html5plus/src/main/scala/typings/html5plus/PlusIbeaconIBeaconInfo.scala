@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
   */
-@js.native
 trait PlusIbeaconIBeaconInfo extends StObject {
   
   /**
@@ -18,42 +16,42 @@ trait PlusIbeaconIBeaconInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * iBeacon设备的主id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var major: js.UndefOr[String] = js.native
+  var major: js.UndefOr[String] = js.undefined
   
   /**
     * iBeacon设备的次id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var minor: js.UndefOr[String] = js.native
+  var minor: js.UndefOr[String] = js.undefined
   
   /**
     * iBeacon设备的距离
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var proximity: js.UndefOr[Double] = js.native
+  var proximity: js.UndefOr[Double] = js.undefined
   
   /**
     * iBeacon设备的信号强度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var rssi: js.UndefOr[String] = js.native
+  var rssi: js.UndefOr[String] = js.undefined
   
   /**
     * iBeacon设备广播的uuid
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object PlusIbeaconIBeaconInfo {
   

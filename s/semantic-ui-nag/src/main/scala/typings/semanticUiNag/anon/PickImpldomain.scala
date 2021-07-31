@@ -3,14 +3,12 @@ package typings.semanticUiNag.anon
 import typings.semanticUiNag.semanticUiNagBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, 'domain'> */
-@js.native
 trait PickImpldomain extends StObject {
   
-  var domain: `false` | String = js.native
+  var domain: `false` | String
 }
 object PickImpldomain {
   

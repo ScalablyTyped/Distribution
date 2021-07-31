@@ -2,16 +2,14 @@ package typings.glaze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<std.Console, glaze.glaze/dist-types/logger.LogLevel> */
-@js.native
 trait PickConsoleLogLevel extends StObject {
   
-  var error: js.Function1[/* repeated */ js.Any, Unit] = js.native
+  var error: js.Function1[/* repeated */ js.Any, Unit]
   
-  var warn: js.Function1[/* repeated */ js.Any, Unit] = js.native
+  var warn: js.Function1[/* repeated */ js.Any, Unit]
 }
 object PickConsoleLogLevel {
   

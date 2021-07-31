@@ -5,20 +5,20 @@ import typings.tweetnacl.mod.BoxKeyPair
 import typings.tweetnacl.mod.SignKeyPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ed2curve", "convertKeyPair")
+  @JSImport("ed2curve", JSImport.Namespace)
   @js.native
-  def convertKeyPair(keyPair: SignKeyPair): BoxKeyPair | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ed2curve", "convertPublicKey")
-  @js.native
-  def convertPublicKey(publicKey: Uint8Array): Uint8Array | Null = js.native
+  @scala.inline
+  def convertKeyPair(keyPair: SignKeyPair): BoxKeyPair | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPair")(keyPair.asInstanceOf[js.Any]).asInstanceOf[BoxKeyPair | Null]
   
-  @JSImport("ed2curve", "convertSecretKey")
-  @js.native
-  def convertSecretKey(secretKey: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def convertPublicKey(publicKey: Uint8Array): Uint8Array | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array | Null]
+  
+  @scala.inline
+  def convertSecretKey(secretKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSecretKey")(secretKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

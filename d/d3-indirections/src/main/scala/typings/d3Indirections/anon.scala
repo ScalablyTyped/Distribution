@@ -2,15 +2,13 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: String = js.native
+    var error: String
   }
   object Error {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ResourceIndex extends StObject {
     
     /** The index of the resource list currently being used. */
-    var resourceIndex: Double = js.native
+    var resourceIndex: Double
     
     /** List of resources available to pick from. */
-    var resourceUids: js.Array[String] = js.native
+    var resourceUids: js.Array[String]
   }
   object ResourceIndex {
     
@@ -59,11 +56,10 @@ object anon {
     }
   }
   
-  @js.native
   trait ResourceUid extends StObject {
     
     /** The resource currently in use. */
-    var resourceUid: String = js.native
+    var resourceUid: String
   }
   object ResourceUid {
     

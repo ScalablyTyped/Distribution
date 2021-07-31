@@ -3,23 +3,21 @@ package typings.cometd
 import typings.cometd.mod.ReconnectAdvice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hosts extends StObject {
     
-    var hosts: js.UndefOr[js.Array[String]] = js.native
+    var hosts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var `multiple-clients`: js.UndefOr[Boolean] = js.native
+    var `multiple-clients`: js.UndefOr[Boolean] = js.undefined
     
-    var reconnect: js.UndefOr[ReconnectAdvice] = js.native
+    var reconnect: js.UndefOr[ReconnectAdvice] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Hosts {
     

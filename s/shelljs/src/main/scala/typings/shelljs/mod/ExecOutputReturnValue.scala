@@ -2,20 +2,18 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecOutputReturnValue extends StObject {
   
   /** The process exit code. */
-  var code: Double = js.native
+  var code: Double
   
   /** The process standard error output. */
-  var stderr: String = js.native
+  var stderr: String
   
   /** The process standard output. */
-  var stdout: String = js.native
+  var stdout: String
 }
 object ExecOutputReturnValue {
   

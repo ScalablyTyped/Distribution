@@ -11,8 +11,8 @@ React's ExecutionEnvironment module extracted for use in other packages & compon
 | Full name          | exenv |
 | Keywords           | react, browser, server, environment, env, execution, executionenvironment |
 | # releases         | 0 |
-| # dependents       | 300 |
-| # downloads        | 76856296 |
+| # dependents       | 301 |
+| # downloads        | 82368549 |
 | # stars            | 7 |
 
 ## Links

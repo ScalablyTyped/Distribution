@@ -2,36 +2,34 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAlias extends StObject {
   
   /**
     * The identifier of the connection alias.
     */
-  var AliasId: js.UndefOr[ConnectionAliasId] = js.native
+  var AliasId: js.UndefOr[ConnectionAliasId] = js.undefined
   
   /**
     * The association status of the connection alias.
     */
-  var Associations: js.UndefOr[ConnectionAliasAssociationList] = js.native
+  var Associations: js.UndefOr[ConnectionAliasAssociationList] = js.undefined
   
   /**
     * The connection string specified for the connection alias. The connection string must be in the form of a fully qualified domain name (FQDN), such as www.example.com.
     */
-  var ConnectionString: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionString] = js.native
+  var ConnectionString: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionString] = js.undefined
   
   /**
     * The identifier of the AWS account that owns the connection alias.
     */
-  var OwnerAccountId: js.UndefOr[AwsAccount] = js.native
+  var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   
   /**
     * The current state of the connection alias.
     */
-  var State: js.UndefOr[ConnectionAliasState] = js.native
+  var State: js.UndefOr[ConnectionAliasState] = js.undefined
 }
 object ConnectionAlias {
   

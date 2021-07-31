@@ -3,7 +3,6 @@ package typings.screepsProfiler
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,10 +17,9 @@ object mod extends Shortcut {
       * screeps-profiler extends the Game interface with itself
       * @see http://docs.screeps.com/api/#Game
       */
-    @js.native
     trait Game extends StObject {
       
-      var profiler: ScreepsGameProfiler = js.native
+      var profiler: ScreepsGameProfiler
     }
     object Game {
       

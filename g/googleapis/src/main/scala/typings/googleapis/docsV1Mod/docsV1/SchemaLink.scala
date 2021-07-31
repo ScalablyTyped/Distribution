@@ -2,29 +2,27 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to another portion of a document or an external URL resource.
   */
-@js.native
 trait SchemaLink extends StObject {
   
   /**
     * The ID of a bookmark in this document.
     */
-  var bookmarkId: js.UndefOr[String] = js.native
+  var bookmarkId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of a heading in this document.
     */
-  var headingId: js.UndefOr[String] = js.native
+  var headingId: js.UndefOr[String] = js.undefined
   
   /**
     * An external URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaLink {
   

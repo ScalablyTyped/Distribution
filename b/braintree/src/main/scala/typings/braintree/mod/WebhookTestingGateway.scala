@@ -2,13 +2,11 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookTestingGateway extends StObject {
   
-  def sampleNotification(kind: WebhookNotificationKind, id: String): js.Promise[SampleNotification] = js.native
+  def sampleNotification(kind: WebhookNotificationKind, id: String): js.Promise[SampleNotification]
 }
 object WebhookTestingGateway {
   

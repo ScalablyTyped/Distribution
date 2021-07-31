@@ -5,22 +5,24 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterInit extends StObject {
   
-  var after: js.Array[String] = js.native
+  var after: js.Array[String]
   
-  def init(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[_]], allBindings: AllBindings): Unit = js.native
+  def init(
+    element: HTMLElement,
+    valueAccessor: js.Function0[MaybeSubscribable[js.Any]],
+    allBindings: AllBindings
+  ): Unit
 }
 object AfterInit {
   
   @scala.inline
   def apply(
     after: js.Array[String],
-    init: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit
+    init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit
   ): AfterInit = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], init = js.Any.fromFunction3(init))
     __obj.asInstanceOf[AfterInit]
@@ -36,6 +38,6 @@ object AfterInit {
     def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
   }
 }

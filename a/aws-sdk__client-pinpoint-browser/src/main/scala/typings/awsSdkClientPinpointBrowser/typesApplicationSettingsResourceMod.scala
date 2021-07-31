@@ -8,38 +8,36 @@ import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime
 import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.UnmarshalledQuietTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesApplicationSettingsResourceMod {
   
-  @js.native
   trait ApplicationSettingsResource extends StObject {
     
     /**
       * The unique ID for the application.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * Default campaign hook.
       */
-    var CampaignHook: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesCampaignHookMod.CampaignHook] = js.native
+    var CampaignHook: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesCampaignHookMod.CampaignHook] = js.undefined
     
     /**
       * The date that the settings were last updated in ISO 8601 format.
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own.
       */
-    var Limits: js.UndefOr[CampaignLimits] = js.native
+    var Limits: js.UndefOr[CampaignLimits] = js.undefined
     
     /**
       * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
       */
-    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.native
+    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.undefined
   }
   object ApplicationSettingsResource {
     
@@ -84,26 +82,27 @@ object typesApplicationSettingsResourceMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledApplicationSettingsResource extends ApplicationSettingsResource {
+  trait UnmarshalledApplicationSettingsResource
+    extends StObject
+       with ApplicationSettingsResource {
     
     /**
       * Default campaign hook.
       */
     @JSName("CampaignHook")
-    var CampaignHook_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignHook] = js.native
+    var CampaignHook_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignHook] = js.undefined
     
     /**
       * The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own.
       */
     @JSName("Limits")
-    var Limits_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignLimits] = js.native
+    var Limits_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignLimits] = js.undefined
     
     /**
       * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
       */
     @JSName("QuietTime")
-    var QuietTime_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledQuietTime] = js.native
+    var QuietTime_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledQuietTime] = js.undefined
   }
   object UnmarshalledApplicationSettingsResource {
     

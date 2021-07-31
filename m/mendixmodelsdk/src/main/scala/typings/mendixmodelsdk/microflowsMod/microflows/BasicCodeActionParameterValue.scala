@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -55,9 +54,8 @@ object BasicCodeActionParameterValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BasicCodeActionParameterValue.create")
-  @js.native
-  def create(model: IModel): BasicCodeActionParameterValue = js.native
+  @scala.inline
+  def create(model: IModel): BasicCodeActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BasicCodeActionParameterValue]
   
   /**
     * Creates and returns a new BasicCodeActionParameterValue instance in the SDK and on the server.
@@ -68,9 +66,8 @@ object BasicCodeActionParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BasicCodeActionParameterValue.createInJavaActionParameterMappingUnderParameterValue")
-  @js.native
-  def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): BasicCodeActionParameterValue = js.native
+  @scala.inline
+  def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): BasicCodeActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[BasicCodeActionParameterValue]
   
   /**
     * Creates and returns a new BasicCodeActionParameterValue instance in the SDK and on the server.
@@ -81,9 +78,8 @@ object BasicCodeActionParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BasicCodeActionParameterValue.createInJavaScriptActionParameterMappingUnderParameterValue")
-  @js.native
-  def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): BasicCodeActionParameterValue = js.native
+  @scala.inline
+  def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): BasicCodeActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[BasicCodeActionParameterValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BasicCodeActionParameterValue.structureTypeName")

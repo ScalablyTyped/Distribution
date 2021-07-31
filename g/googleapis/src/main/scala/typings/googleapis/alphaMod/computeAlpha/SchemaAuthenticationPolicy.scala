@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The authentication settings for the backend service.
   */
-@js.native
 trait SchemaAuthenticationPolicy extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaAuthenticationPolicy extends StObject {
     * error (401). Leave the list empty if origin authentication is not
     * required.
     */
-  var origins: js.UndefOr[js.Array[SchemaOriginAuthenticationMethod]] = js.native
+  var origins: js.UndefOr[js.Array[SchemaOriginAuthenticationMethod]] = js.undefined
   
   /**
     * List of authentication methods that can be used for peer authentication.
@@ -28,7 +26,7 @@ trait SchemaAuthenticationPolicy extends StObject {
     * rejected with authentication failed error (401). Leave the list empty if
     * peer authentication is not required.
     */
-  var peers: js.UndefOr[js.Array[SchemaPeerAuthenticationMethod]] = js.native
+  var peers: js.UndefOr[js.Array[SchemaPeerAuthenticationMethod]] = js.undefined
   
   /**
     * Define whether peer or origin identity should be used for principal.
@@ -40,13 +38,13 @@ trait SchemaAuthenticationPolicy extends StObject {
     * from peer authentication. USE_ORIGIN: Principal will be set to the
     * identity from origin authentication.
     */
-  var principalBinding: js.UndefOr[String] = js.native
+  var principalBinding: js.UndefOr[String] = js.undefined
   
   /**
     * Configures the mechanism to obtain server-side security certificates and
     * identity information.
     */
-  var serverTlsContext: js.UndefOr[SchemaTlsContext] = js.native
+  var serverTlsContext: js.UndefOr[SchemaTlsContext] = js.undefined
 }
 object SchemaAuthenticationPolicy {
   

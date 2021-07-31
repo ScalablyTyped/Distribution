@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayHeight extends StObject {
   
-  var display: String = js.native
+  var display: String
   
-  var height: Double = js.native
+  var height: Double
 }
 object DisplayHeight {
   

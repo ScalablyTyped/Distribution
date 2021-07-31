@@ -3,7 +3,6 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is created when needed and shared with the appropriate data source service
   * account.
   */
-@js.native
 trait SchemaTransferConfig extends StObject {
   
   /**
@@ -24,33 +22,33 @@ trait SchemaTransferConfig extends StObject {
     * just [today-1]. Only valid if the data source supports the feature. Set
     * the value to  0 to use the default value.
     */
-  var dataRefreshWindowDays: js.UndefOr[Double] = js.native
+  var dataRefreshWindowDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Data source id. Cannot be changed once data transfer is created.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Region in which BigQuery dataset is located.
     */
-  var datasetRegion: js.UndefOr[String] = js.native
+  var datasetRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The BigQuery target dataset id.
     */
-  var destinationDatasetId: js.UndefOr[String] = js.native
+  var destinationDatasetId: js.UndefOr[String] = js.undefined
   
   /**
     * Is this config disabled. When set to true, no runs are scheduled for a
     * given transfer.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User specified display name for the data transfer.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the transfer config. Transfer config names have the
@@ -61,17 +59,17 @@ trait SchemaTransferConfig extends StObject {
     * config_id is not provided, usually a uuid, even though it is not
     * guaranteed or required, will be generated for config_id.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Next time when data transfer will run.
     */
-  var nextRunTime: js.UndefOr[String] = js.native
+  var nextRunTime: js.UndefOr[String] = js.undefined
   
   /**
     * Data transfer specific parameters.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Data transfer schedule. If the data source does not support a custom
@@ -83,27 +81,27 @@ trait SchemaTransferConfig extends StObject {
     * https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cron-yaml#the_schedule_format
     * NOTE: the granularity should be at least 8 hours, or less frequent.
     */
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
   
   /**
     * Options customizing the data transfer schedule.
     */
-  var scheduleOptions: js.UndefOr[SchemaScheduleOptions] = js.native
+  var scheduleOptions: js.UndefOr[SchemaScheduleOptions] = js.undefined
   
   /**
     * Output only. State of the most recently updated transfer run.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Data transfer modification time. Ignored by server on input.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Unique ID of the user on whose behalf transfer is done.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaTransferConfig {
   

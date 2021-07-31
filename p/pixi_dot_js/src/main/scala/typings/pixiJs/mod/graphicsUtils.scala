@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,7 +36,8 @@ object graphicsUtils {
   @JSImport("pixi.js", "graphicsUtils.BatchPart")
   @js.native
   class BatchPart ()
-    extends typings.pixiJs.PIXI.graphicsUtils.BatchPart
+    extends StObject
+       with typings.pixiJs.PIXI.graphicsUtils.BatchPart
   
   /**
     * Draw call pool, stores unused draw calls for preventing allocations.
@@ -80,17 +80,48 @@ object graphicsUtils {
   @JSImport("pixi.js", "graphicsUtils.Star")
   @js.native
   class Star protected ()
-    extends typings.pixiJs.PIXI.graphicsUtils.Star {
+    extends StObject
+       with typings.pixiJs.PIXI.graphicsUtils.Star {
     def this(x: Double, y: Double, points: Double, radius: Double) = this()
     def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double) = this()
-    def this(
-      x: Double,
-      y: Double,
-      points: Double,
-      radius: Double,
-      innerRadius: js.UndefOr[scala.Nothing],
-      rotation: Double
-    ) = this()
     def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double) = this()
+    def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Unit, rotation: Double) = this()
+    
+    /**
+      * `false` after moveTo, `true` after `closePath`. In all other cases it is `true`.
+      * @member {boolean} PIXI.Polygon#closeStroke
+      * @default true
+      */
+    /* CompleteClass */
+    var closeStroke: Boolean = js.native
+    
+    /**
+      * Checks whether the x and y coordinates passed to this function are contained within this polygon
+      *
+      * @param {number} x - The X coordinate of the point to test
+      * @param {number} y - The Y coordinate of the point to test
+      * @return {boolean} Whether the x/y coordinates are within this polygon
+      */
+    /* CompleteClass */
+    override def contains(x: Double, y: Double): Boolean = js.native
+    
+    /**
+      * An array of the points of this polygon
+      *
+      * @member {number[]} PIXI.Polygon#points
+      */
+    /* CompleteClass */
+    var points: js.Array[Double] = js.native
+    
+    /**
+      * The type of the object, mainly used to avoid `instanceof` checks
+      *
+      * @member {number} PIXI.Polygon#type
+      * @readOnly
+      * @default PIXI.SHAPES.POLY
+      * @see PIXI.SHAPES
+      */
+    /* CompleteClass */
+    override val `type`: Double = js.native
   }
 }

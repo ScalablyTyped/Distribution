@@ -2,15 +2,15 @@ package typings.reactNativeSvgCharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BarChartProps[T] extends ChartProps[T] {
+trait BarChartProps[T]
+  extends StObject
+     with ChartProps[T] {
   
-  var spacingInner: js.UndefOr[Double] = js.native
+  var spacingInner: js.UndefOr[Double] = js.undefined
   
-  var spacingOuter: js.UndefOr[Double] = js.native
+  var spacingOuter: js.UndefOr[Double] = js.undefined
 }
 object BarChartProps {
   
@@ -21,7 +21,7 @@ object BarChartProps {
   }
   
   @scala.inline
-  implicit class BarChartPropsMutableBuilder[Self <: BarChartProps[_], T] (val x: Self with BarChartProps[T]) extends AnyVal {
+  implicit class BarChartPropsMutableBuilder[Self <: BarChartProps[?], T] (val x: Self & BarChartProps[T]) extends AnyVal {
     
     @scala.inline
     def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])

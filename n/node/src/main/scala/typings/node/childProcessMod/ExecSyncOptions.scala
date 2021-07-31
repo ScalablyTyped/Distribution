@@ -11,23 +11,23 @@ import typings.node.streamMod.Stream
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecSyncOptions extends CommonOptions {
+trait ExecSyncOptions
+  extends StObject
+     with CommonOptions {
   
-  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.native
+  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
   
-  var input: js.UndefOr[String | Uint8Array] = js.native
+  var input: js.UndefOr[String | Uint8Array] = js.undefined
   
-  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var shell: js.UndefOr[String] = js.native
+  var shell: js.UndefOr[String] = js.undefined
   
-  var stdio: js.UndefOr[StdioOptions] = js.native
+  var stdio: js.UndefOr[StdioOptions] = js.undefined
 }
 object ExecSyncOptions {
   

@@ -2,19 +2,17 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Commute details related to this job.
   */
-@js.native
 trait SchemaCommuteInfo extends StObject {
   
   /**
     * Location used as the destination in the commute calculation.
     */
-  var jobLocation: js.UndefOr[SchemaLocation] = js.native
+  var jobLocation: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
     * The number of seconds required to travel to the job location from the
@@ -22,7 +20,7 @@ trait SchemaCommuteInfo extends StObject {
     * reachable within the requested duration, but was returned as part of an
     * expanded query.
     */
-  var travelDuration: js.UndefOr[String] = js.native
+  var travelDuration: js.UndefOr[String] = js.undefined
 }
 object SchemaCommuteInfo {
   

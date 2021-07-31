@@ -2,35 +2,63 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oscmdMod {
   
   @JSImport("node-os-utils/lib/oscmd", JSImport.Default)
   @js.native
-  class default () extends OsCmd
+  class default ()
+    extends StObject
+       with OsCmd {
+    
+    /* CompleteClass */
+    override def diskUsage(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def ifconfig(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def openPorts(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def processesUsers(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def topCpu(): js.Function0[js.Promise[String]] = js.native
+    
+    /* CompleteClass */
+    override def topMem(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def vmstats(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def who(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def whoami(): js.Promise[String] = js.native
+  }
   
-  @js.native
   trait OsCmd extends StObject {
     
-    def diskUsage(): js.Promise[String] = js.native
+    def diskUsage(): js.Promise[String]
     
-    def ifconfig(): js.Promise[String] = js.native
+    def ifconfig(): js.Promise[String]
     
-    def openPorts(): js.Promise[String] = js.native
+    def openPorts(): js.Promise[String]
     
-    def processesUsers(): js.Promise[String] = js.native
+    def processesUsers(): js.Promise[String]
     
-    def topCpu(): js.Function0[js.Promise[String]] = js.native
+    def topCpu(): js.Function0[js.Promise[String]]
     
-    def topMem(): js.Promise[String] = js.native
+    def topMem(): js.Promise[String]
     
-    def vmstats(): js.Promise[String] = js.native
+    def vmstats(): js.Promise[String]
     
-    def who(): js.Promise[String] = js.native
+    def who(): js.Promise[String]
     
-    def whoami(): js.Promise[String] = js.native
+    def whoami(): js.Promise[String]
   }
   object OsCmd {
     

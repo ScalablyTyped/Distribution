@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -57,6 +56,14 @@ class DocumentTemplateParameter protected ()
   @JSName("parameterType")
   val parameterType_FDocumentTemplateParameter: IDataType = js.native
   
+  /**
+    * Returns the qualified name of this element, or
+    * null if this element is not a part of the model,
+    * or if it or one of its namespace containers does not have a
+    * valid name.
+    */
+  /* CompleteClass */
+  override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MDocumentTemplateParameter: String | Null = js.native
   

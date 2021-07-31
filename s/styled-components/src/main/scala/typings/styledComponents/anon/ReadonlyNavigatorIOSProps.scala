@@ -6,32 +6,30 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.NavigatorIOSProps> */
-@js.native
 trait ReadonlyNavigatorIOSProps extends StObject {
   
-  val barTintColor: js.UndefOr[ColorValue] = js.native
+  val barTintColor: js.UndefOr[ColorValue] = js.undefined
   
-  val initialRoute: Route = js.native
+  val initialRoute: Route
   
-  val interactivePopGestureEnabled: js.UndefOr[Boolean] = js.native
+  val interactivePopGestureEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val itemWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val itemWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val navigationBarHidden: js.UndefOr[Boolean] = js.native
+  val navigationBarHidden: js.UndefOr[Boolean] = js.undefined
   
-  val shadowHidden: js.UndefOr[Boolean] = js.native
+  val shadowHidden: js.UndefOr[Boolean] = js.undefined
   
-  val style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val tintColor: js.UndefOr[ColorValue] = js.native
+  val tintColor: js.UndefOr[ColorValue] = js.undefined
   
-  val titleTextColor: js.UndefOr[ColorValue] = js.native
+  val titleTextColor: js.UndefOr[ColorValue] = js.undefined
   
-  val translucent: js.UndefOr[Boolean] = js.native
+  val translucent: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyNavigatorIOSProps {
   

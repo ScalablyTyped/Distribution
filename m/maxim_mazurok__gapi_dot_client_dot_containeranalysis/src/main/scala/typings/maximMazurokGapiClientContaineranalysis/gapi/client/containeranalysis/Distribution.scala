@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distribution extends StObject {
   
   /** The CPU architecture for which packages in this distribution channel were built. */
-  var architecture: js.UndefOr[String] = js.native
+  var architecture: js.UndefOr[String] = js.undefined
   
   /** Required. The cpe_uri in [CPE format](https://cpe.mitre.org/specification/) denoting the package manager version distributing a package. */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /** The distribution channel-specific description of this package. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The latest available version of this package in this distribution channel. */
-  var latestVersion: js.UndefOr[Version] = js.native
+  var latestVersion: js.UndefOr[Version] = js.undefined
   
   /** A freeform string denoting the maintainer of this package. */
-  var maintainer: js.UndefOr[String] = js.native
+  var maintainer: js.UndefOr[String] = js.undefined
   
   /** The distribution channel-specific homepage for this package. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Distribution {
   

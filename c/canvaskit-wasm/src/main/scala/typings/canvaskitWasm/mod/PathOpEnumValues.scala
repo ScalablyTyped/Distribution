@@ -2,21 +2,21 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathOpEnumValues extends EmbindEnum {
+trait PathOpEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Difference: PathOp = js.native
+  var Difference: PathOp
   
-  var Intersect: PathOp = js.native
+  var Intersect: PathOp
   
-  var ReverseDifference: PathOp = js.native
+  var ReverseDifference: PathOp
   
-  var Union: PathOp = js.native
+  var Union: PathOp
   
-  var XOR: PathOp = js.native
+  var XOR: PathOp
 }
 object PathOpEnumValues {
   

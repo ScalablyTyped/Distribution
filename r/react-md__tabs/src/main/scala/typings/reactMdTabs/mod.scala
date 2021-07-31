@@ -14,22 +14,25 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/tabs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/tabs", "Tab")
   @js.native
-  val Tab: ForwardRefExoticComponent[TabProps with RefAttributes[HTMLButtonElement]] = js.native
+  val Tab: ForwardRefExoticComponent[TabProps & RefAttributes[HTMLButtonElement]] = js.native
   
   @JSImport("@react-md/tabs", "TabPanel")
   @js.native
-  val TabPanel: ForwardRefExoticComponent[TabPanelProps with RefAttributes[HTMLDivElement]] = js.native
+  val TabPanel: ForwardRefExoticComponent[TabPanelProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/tabs", "TabPanels")
   @js.native
-  val TabPanels: ForwardRefExoticComponent[TabPanelsProps with RefAttributes[HTMLDivElement]] = js.native
+  val TabPanels: ForwardRefExoticComponent[TabPanelsProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/tabs", "Tabs")
   @js.native
@@ -37,15 +40,13 @@ object mod {
   
   @JSImport("@react-md/tabs", "TabsList")
   @js.native
-  val TabsList: ForwardRefExoticComponent[TabsListProps with RefAttributes[HTMLDivElement]] = js.native
+  val TabsList: ForwardRefExoticComponent[TabsListProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @JSImport("@react-md/tabs", "TabsManager")
-  @js.native
+  @scala.inline
   def TabsManager(
-    hasTabsIdDefaultActiveIndexActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
-  ): ReactElement = js.native
+    hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TabsManager")(hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@react-md/tabs", "useTabs")
-  @js.native
-  def useTabs(): InitializedTabsManagerContext = js.native
+  @scala.inline
+  def useTabs(): InitializedTabsManagerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabs")().asInstanceOf[InitializedTabsManagerContext]
 }

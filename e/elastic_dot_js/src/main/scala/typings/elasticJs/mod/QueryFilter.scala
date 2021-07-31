@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "QueryFilter")
 @js.native
-class QueryFilter protected () extends Filter {
+class QueryFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filters documents matching the wrapped query.
     */

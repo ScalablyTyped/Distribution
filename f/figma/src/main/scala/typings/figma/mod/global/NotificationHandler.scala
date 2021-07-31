@@ -2,13 +2,11 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationHandler extends StObject {
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
 }
 object NotificationHandler {
   

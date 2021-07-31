@@ -4,7 +4,6 @@ import typings.exceljs.anon.PartialAddWorksheetOption
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("exceljs", "Workbook")
@@ -20,9 +19,9 @@ class Workbook () extends StObject {
   	 * Add a new worksheet and return a reference to it
   	 */
   def addWorksheet(): Worksheet = js.native
-  def addWorksheet(name: js.UndefOr[scala.Nothing], options: PartialAddWorksheetOption): Worksheet = js.native
   def addWorksheet(name: String): Worksheet = js.native
   def addWorksheet(name: String, options: PartialAddWorksheetOption): Worksheet = js.native
+  def addWorksheet(name: Unit, options: PartialAddWorksheetOption): Worksheet = js.native
   
   /**
   	 * Workbook calculation Properties

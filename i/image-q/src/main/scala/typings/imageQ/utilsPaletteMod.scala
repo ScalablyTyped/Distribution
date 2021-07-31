@@ -5,10 +5,13 @@ import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsPaletteMod {
+  
+  @JSImport("image-q/dist/utils/palette", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("image-q/dist/utils/palette", "Palette")
   @js.native
@@ -35,7 +38,6 @@ object utilsPaletteMod {
     def sort(): Unit = js.native
   }
   
-  @JSImport("image-q/dist/utils/palette", "hueGroup")
-  @js.native
-  def hueGroup(hue: Double, segmentsNumber: Double): Double = js.native
+  @scala.inline
+  def hueGroup(hue: Double, segmentsNumber: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hueGroup")(hue.asInstanceOf[js.Any], segmentsNumber.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

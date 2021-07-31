@@ -8,7 +8,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,13 +15,15 @@ object mod {
   object default {
     
     /* was `typeof fetch` */
-    @JSImport("isomorphic-unfetch", JSImport.Default)
-    @js.native
-    def apply(input: RequestInfo): js.Promise[Response] = js.native
+    @scala.inline
+    def apply(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
     /* was `typeof fetch` */
+    @scala.inline
+    def apply(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+    
     @JSImport("isomorphic-unfetch", JSImport.Default)
     @js.native
-    def apply(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
+    val ^ : js.Any = js.native
   }
   
   object unfetch {

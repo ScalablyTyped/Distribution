@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Enum")
@@ -20,76 +19,12 @@ class Enum protected () extends ReflectionObject {
     */
   def this(name: String) = this()
   def this(name: String, values: StringDictionary[Double]) = this()
-  def this(name: String, values: js.UndefOr[scala.Nothing], options: StringDictionary[js.Any]) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any]) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    values: StringDictionary[Double],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
+  def this(name: String, values: Unit, options: StringDictionary[js.Any]) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any], comment: String) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: js.UndefOr[scala.Nothing],
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: String,
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any],
-    comment: js.UndefOr[scala.Nothing],
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any],
-    comment: String,
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: StringDictionary[Double],
-    options: js.UndefOr[scala.Nothing],
-    comment: js.UndefOr[scala.Nothing],
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: StringDictionary[Double],
-    options: js.UndefOr[scala.Nothing],
-    comment: String,
-    comments: StringDictionary[String]
-  ) = this()
-  def this(
-    name: String,
-    values: StringDictionary[Double],
-    options: StringDictionary[js.Any],
-    comment: js.UndefOr[scala.Nothing],
-    comments: StringDictionary[String]
-  ) = this()
+  def this(name: String, values: StringDictionary[Double], options: Unit, comment: String) = this()
+  def this(name: String, values: Unit, options: StringDictionary[js.Any], comment: String) = this()
+  def this(name: String, values: Unit, options: Unit, comment: String) = this()
   def this(
     name: String,
     values: StringDictionary[Double],
@@ -97,6 +32,43 @@ class Enum protected () extends ReflectionObject {
     comment: String,
     comments: StringDictionary[String]
   ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[js.Any],
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[js.Any],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[js.Any],
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(name: String, values: Unit, options: Unit, comment: String, comments: StringDictionary[String]) = this()
+  def this(name: String, values: Unit, options: Unit, comment: Unit, comments: StringDictionary[String]) = this()
   
   /**
     * Adds a value to this enum.
@@ -150,6 +122,10 @@ class Enum protected () extends ReflectionObject {
 /* static members */
 object Enum {
   
+  @JSImport("protobufjs", "Enum")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs an enum from an enum descriptor.
     * @param name Enum name
@@ -157,7 +133,6 @@ object Enum {
     * @returns Created enum
     * @throws {TypeError} If arguments are invalid
     */
-  @JSImport("protobufjs", "Enum.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IEnum): Enum = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IEnum): Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Enum]
 }

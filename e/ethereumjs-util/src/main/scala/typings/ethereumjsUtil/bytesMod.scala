@@ -1,90 +1,71 @@
 package typings.ethereumjsUtil
 
-import typings.bnJs.mod.^
 import typings.ethereumjsUtil.typesMod.TransformableToArray
 import typings.ethereumjsUtil.typesMod.TransformableToBuffer
 import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bytesMod {
   
-  @JSImport("ethereumjs-util/dist/bytes", "addHexPrefix")
+  @JSImport("ethereumjs-util/dist/bytes", JSImport.Namespace)
   @js.native
-  def addHexPrefix(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-util/dist/bytes", "baToJSON")
-  @js.native
-  def baToJSON(ba: js.Any): js.Any = js.native
+  @scala.inline
+  def addHexPrefix(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addHexPrefix")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethereumjs-util/dist/bytes", "bufferToHex")
-  @js.native
-  def bufferToHex(buf: Buffer): String = js.native
+  @scala.inline
+  def baToJSON(ba: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("baToJSON")(ba.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ethereumjs-util/dist/bytes", "bufferToInt")
-  @js.native
-  def bufferToInt(buf: Buffer): Double = js.native
+  @scala.inline
+  def bufferToHex(buf: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToHex")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethereumjs-util/dist/bytes", "fromSigned")
-  @js.native
-  def fromSigned(num: Buffer): ^ = js.native
+  @scala.inline
+  def bufferToInt(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToInt")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ethereumjs-util/dist/bytes", "setLengthLeft")
-  @js.native
-  def setLengthLeft(msg: Buffer, length: Double): Buffer = js.native
+  @scala.inline
+  def fromSigned(num: Buffer): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSigned")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
   
-  @JSImport("ethereumjs-util/dist/bytes", "setLengthRight")
-  @js.native
-  def setLengthRight(msg: Buffer, length: Double): Buffer = js.native
+  @scala.inline
+  def setLengthLeft(msg: Buffer, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("setLengthLeft")(msg.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: String): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: js.Array[Double]): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: Double): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: ^): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: TransformableToArray): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: TransformableToBuffer): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: Buffer): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/bytes", "toBuffer")
-  @js.native
-  def toBuffer(v: Uint8Array): Buffer = js.native
+  @scala.inline
+  def setLengthRight(msg: Buffer, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("setLengthRight")(msg.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/bytes", "toUnsigned")
-  @js.native
-  def toUnsigned(num: ^): Buffer = js.native
+  @scala.inline
+  def toBuffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")().asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: js.Array[Double]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: TransformableToArray): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: TransformableToBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(v: Uint8Array): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/bytes", "unpadArray")
-  @js.native
-  def unpadArray(a: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toUnsigned(num: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnsigned")(num.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/bytes", "unpadBuffer")
-  @js.native
-  def unpadBuffer(a: Buffer): Buffer = js.native
+  @scala.inline
+  def unpadArray(a: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("unpadArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ethereumjs-util/dist/bytes", "unpadHexString")
-  @js.native
-  def unpadHexString(a: String): String = js.native
+  @scala.inline
+  def unpadBuffer(a: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("unpadBuffer")(a.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/bytes", "zeros")
-  @js.native
-  def zeros(bytes: Double): Buffer = js.native
+  @scala.inline
+  def unpadHexString(a: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unpadHexString")(a.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def zeros(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

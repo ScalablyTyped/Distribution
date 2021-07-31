@@ -8,12 +8,12 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofEmscripten
-  extends Instantiable1[/* _FS */ js.Any, default] {
+  extends StObject
+     with Instantiable1[/* _FS */ js.Any, default] {
   
   /**
     * Create an EmscriptenFileSystem instance with the given options.

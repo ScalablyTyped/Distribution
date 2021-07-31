@@ -17,232 +17,230 @@ import typings.ezPlus.ezPlusStrings.width
 import typings.ezPlus.ezPlusStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Attribute to plugin use for zoom
       */
-    var attrImageZoomSrc: js.UndefOr[String] = js.native
+    var attrImageZoomSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Border Colour
       */
-    var borderColour: js.UndefOr[String] = js.native
+    var borderColour: js.UndefOr[String] = js.undefined
     
     /**
       * Border Size of the ZoomBox
       */
-    var borderSize: js.UndefOr[Double] = js.native
+    var borderSize: js.UndefOr[Double] = js.undefined
     
     /**
       * In pixels the dimensions you want to constrain on
       */
-    var constrainSize: js.UndefOr[Double | `false`] = js.native
+    var constrainSize: js.UndefOr[Double | `false`] = js.undefined
     
-    var constrainType: js.UndefOr[width | height] = js.native
+    var constrainType: js.UndefOr[width | height] = js.undefined
     
-    var containLensZoom: js.UndefOr[Boolean] = js.native
+    var containLensZoom: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     /**
       * Type of cursor
       */
-    var cursor: js.UndefOr[default | typings.ezPlus.ezPlusStrings.cursor | crosshair] = js.native
+    var cursor: js.UndefOr[default | typings.ezPlus.ezPlusStrings.cursor | crosshair] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Activate easing
       */
-    var easing: js.UndefOr[Boolean] = js.native
+    var easing: js.UndefOr[Boolean] = js.undefined
     
-    var easingAmount: js.UndefOr[Double] = js.native
+    var easingAmount: js.UndefOr[Double] = js.undefined
     
-    var easingDuration: js.UndefOr[Double] = js.native
+    var easingDuration: js.UndefOr[Double] = js.undefined
     
-    var easingType: js.UndefOr[String] = js.native
+    var easingType: js.UndefOr[String] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This assigns a set of gallery links to the zoom image
       */
-    var gallery: js.UndefOr[String] = js.native
+    var gallery: js.UndefOr[String] = js.undefined
     
-    var galleryActiveClass: js.UndefOr[String] = js.native
+    var galleryActiveClass: js.UndefOr[String] = js.undefined
     
-    var galleryEvent: js.UndefOr[String] = js.native
+    var galleryEvent: js.UndefOr[String] = js.undefined
     
-    var galleryItem: js.UndefOr[String] = js.native
+    var galleryItem: js.UndefOr[String] = js.undefined
     
-    var gallerySelector: js.UndefOr[String | `false`] = js.native
+    var gallerySelector: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Activate simultaneous crossfade of images on gallery change
       */
-    var imageCrossfade: js.UndefOr[Boolean] = js.native
+    var imageCrossfade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width in pixels of the lens border
       */
-    var lensBorder: js.UndefOr[Double] = js.native
+    var lensBorder: js.UndefOr[Double] = js.undefined
     
     /**
       * Colour of the lens background
       */
-    var lensColour: js.UndefOr[String] = js.native
+    var lensColour: js.UndefOr[String] = js.undefined
     
     /**
       * Speed of Lens fadeIn
       */
-    var lensFadeIn: js.UndefOr[Double] = js.native
+    var lensFadeIn: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed of Lens fadeOut
       */
-    var lensFadeOut: js.UndefOr[Double] = js.native
+    var lensFadeOut: js.UndefOr[Double] = js.undefined
     
     /**
       * Opacity of lens
       */
-    var lensOpacity: js.UndefOr[Double] = js.native
+    var lensOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Type of lens
       */
-    var lensShape: js.UndefOr[square | round] = js.native
+    var lensShape: js.UndefOr[square | round] = js.undefined
     
     /**
       * Used when zoomType set to lens
       */
-    var lensSize: js.UndefOr[Double] = js.native
+    var lensSize: js.UndefOr[Double] = js.undefined
     
-    var lenszoom: js.UndefOr[Boolean] = js.native
+    var lenszoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Activate spinner icon or url
       */
-    var loadingIcon: js.UndefOr[Boolean | String] = js.native
+    var loadingIcon: js.UndefOr[Boolean | String] = js.undefined
     
-    var mantainZoomAspectRatio: js.UndefOr[Boolean] = js.native
+    var mantainZoomAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var maxZoomLevel: js.UndefOr[Double | `false`] = js.native
+    var maxZoomLevel: js.UndefOr[Double | `false`] = js.undefined
     
-    var minZoomLevel: js.UndefOr[Double] = js.native
+    var minZoomLevel: js.UndefOr[Double] = js.undefined
     
-    var preloading: js.UndefOr[`0` | `1`] = js.native
+    var preloading: js.UndefOr[`0` | `1`] = js.undefined
     
-    var respond: js.UndefOr[js.Array[_]] = js.native
+    var respond: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Activate responsivenes
       */
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Activate zoom on mouse scroll
       */
-    var scrollZoom: js.UndefOr[Boolean] = js.native
+    var scrollZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Steps of the scrollzoom
       */
-    var scrollZoomIncrement: js.UndefOr[Double] = js.native
+    var scrollZoomIncrement: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable a tint overlay
       */
-    var tint: js.UndefOr[Boolean] = js.native
+    var tint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Colour of the tin
       */
-    var tintColour: js.UndefOr[String] = js.native
+    var tintColour: js.UndefOr[String] = js.undefined
     
     /**
       * Opacity of the tint
       */
-    var tintOpacity: js.UndefOr[Double] = js.native
+    var tintOpacity: js.UndefOr[Double] = js.undefined
     
-    var touchEnabled: js.UndefOr[Boolean] = js.native
+    var touchEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
-    var zoomActivation: js.UndefOr[click | hover] = js.native
+    var zoomActivation: js.UndefOr[click | hover] = js.undefined
     
     /**
       * Zoom container parent selector
       */
-    var zoomContainerAppendTo: js.UndefOr[String] = js.native
+    var zoomContainerAppendTo: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier for the zoom container
       */
-    var zoomId: js.UndefOr[Double] = js.native
+    var zoomId: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable Lens
       */
-    var zoomLens: js.UndefOr[Boolean] = js.native
+    var zoomLens: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Zoom level of image
       */
-    var zoomLevel: js.UndefOr[Double] = js.native
+    var zoomLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed of Tint fadeIn
       */
-    var zoomTintFadeIn: js.UndefOr[Double] = js.native
+    var zoomTintFadeIn: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed of Tint fadeOut
       */
-    var zoomTintFadeOut: js.UndefOr[Double] = js.native
+    var zoomTintFadeOut: js.UndefOr[Double] = js.undefined
     
     /**
       * Type of zoom
       */
-    var zoomType: js.UndefOr[lens | window | inner] = js.native
+    var zoomType: js.UndefOr[lens | window | inner] = js.undefined
     
     /**
       * Speed of Window fadeIn
       */
-    var zoomWindowFadeIn: js.UndefOr[Double] = js.native
+    var zoomWindowFadeIn: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed of Window fadeOut
       */
-    var zoomWindowFadeOut: js.UndefOr[Double] = js.native
+    var zoomWindowFadeOut: js.UndefOr[Double] = js.undefined
     
     /**
       * Height of the zoomWindow
       */
-    var zoomWindowHeight: js.UndefOr[Double] = js.native
+    var zoomWindowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * x-axis offset of the zoom window
       */
-    var zoomWindowOffsetX: js.UndefOr[Double] = js.native
+    var zoomWindowOffsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * y-axis offset of the zoom window
       */
-    var zoomWindowOffsetY: js.UndefOr[Double] = js.native
+    var zoomWindowOffsetY: js.UndefOr[Double] = js.undefined
     
-    var zoomWindowPosition: js.UndefOr[Double | String] = js.native
+    var zoomWindowPosition: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Width of the zoomWindow
       */
-    var zoomWindowWidth: js.UndefOr[Double] = js.native
+    var zoomWindowWidth: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -454,7 +452,7 @@ object mod {
       def setPreloadingUndefined: Self = StObject.set(x, "preloading", js.undefined)
       
       @scala.inline
-      def setRespond(value: js.Array[_]): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
+      def setRespond(value: js.Array[js.Any]): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRespondUndefined: Self = StObject.set(x, "respond", js.undefined)

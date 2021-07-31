@@ -10,28 +10,29 @@ import typings.preactI18n.anon.Fields
 import typings.preactI18n.anon.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("preact-i18n", JSImport.Default)
+  @JSImport("preact-i18n", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     Child: Component[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ js.Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
     ]
-  ): VNode[js.Object] = js.native
-  @JSImport("preact-i18n", JSImport.Default)
-  @js.native
+  ): VNode[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Child.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Object]]
+  @scala.inline
   def default(
     Child: Component[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ js.Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
     ],
     options: Scope
-  ): VNode[js.Object] = js.native
+  ): VNode[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(Child.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VNode[js.Object]]
   
   @JSImport("preact-i18n", "IntlProvider")
   @js.native
@@ -41,7 +42,7 @@ object mod {
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
         ] {
     def this(props: Definition) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: Definition, context: js.Any) = this()
   }
   
@@ -53,7 +54,7 @@ object mod {
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
         ] {
     def this(props: Children) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: Children, context: js.Any) = this()
   }
   
@@ -61,7 +62,7 @@ object mod {
   @js.native
   class MarkupText () extends TextComponent {
     def this(props: Fields) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: Fields, context: js.Any) = this()
   }
   
@@ -69,7 +70,7 @@ object mod {
   @js.native
   class Text () extends TextComponent {
     def this(props: Fields) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: Fields, context: js.Any) = this()
   }
   
@@ -81,14 +82,16 @@ object mod {
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
         ] {
     def this(props: Fields) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: Fields, context: js.Any) = this()
   }
   
-  @JSImport("preact-i18n", "withText")
-  @js.native
+  @scala.inline
   def withText[Props, Context](mapping: js.Object): js.Function1[
     /* Child */ ComponentChild, 
     Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withText")(mapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* Child */ ComponentChild, 
+    Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
+  ]]
 }

@@ -2,13 +2,11 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Protection extends StObject {
   
-  var locked: Boolean = js.native
+  var locked: Boolean
 }
 object Protection {
   

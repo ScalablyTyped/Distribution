@@ -5,17 +5,15 @@ import typings.iobroker.anon.Cpus
 import typings.iobroker.anon.Env
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostNative extends StObject {
   
-  var hardware: Cpus = js.native
+  var hardware: Cpus
   
-  var os: Arch = js.native
+  var os: Arch
   
-  var process: Env = js.native
+  var process: Env
 }
 object HostNative {
   

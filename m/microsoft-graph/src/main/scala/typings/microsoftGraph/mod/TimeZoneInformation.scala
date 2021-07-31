@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeZoneInformation extends StObject {
   
   // An identifier for the time zone.
-  var alias: js.UndefOr[NullableOption[String]] = js.native
+  var alias: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A display string that represents the time zone.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TimeZoneInformation {
   

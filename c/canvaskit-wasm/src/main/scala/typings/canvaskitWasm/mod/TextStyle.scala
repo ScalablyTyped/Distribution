@@ -2,45 +2,43 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStyle extends StObject {
   
-  var backgroundColor: js.UndefOr[InputColor] = js.native
+  var backgroundColor: js.UndefOr[InputColor] = js.undefined
   
-  var color: js.UndefOr[InputColor] = js.native
+  var color: js.UndefOr[InputColor] = js.undefined
   
-  var decoration: js.UndefOr[Double] = js.native
+  var decoration: js.UndefOr[Double] = js.undefined
   
-  var decorationColor: js.UndefOr[InputColor] = js.native
+  var decorationColor: js.UndefOr[InputColor] = js.undefined
   
-  var decorationThickness: js.UndefOr[Double] = js.native
+  var decorationThickness: js.UndefOr[Double] = js.undefined
   
-  var decrationStyle: js.UndefOr[DecorationStyle] = js.native
+  var decrationStyle: js.UndefOr[DecorationStyle] = js.undefined
   
-  var fontFamilies: js.UndefOr[js.Array[String]] = js.native
+  var fontFamilies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fontFeatures: js.UndefOr[js.Array[TextFontFeatures]] = js.native
+  var fontFeatures: js.UndefOr[js.Array[TextFontFeatures]] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
-  var foregroundColor: js.UndefOr[InputColor] = js.native
+  var foregroundColor: js.UndefOr[InputColor] = js.undefined
   
-  var heightMultiplier: js.UndefOr[Double] = js.native
+  var heightMultiplier: js.UndefOr[Double] = js.undefined
   
-  var letterSpacing: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var shadows: js.UndefOr[js.Array[TextShadow]] = js.native
+  var shadows: js.UndefOr[js.Array[TextShadow]] = js.undefined
   
-  var textBaseline: js.UndefOr[TextBaseline] = js.native
+  var textBaseline: js.UndefOr[TextBaseline] = js.undefined
   
-  var wordSpacing: js.UndefOr[Double] = js.native
+  var wordSpacing: js.UndefOr[Double] = js.undefined
 }
 object TextStyle {
   

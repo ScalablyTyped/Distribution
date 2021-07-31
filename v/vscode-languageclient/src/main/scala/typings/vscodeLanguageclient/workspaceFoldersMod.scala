@@ -13,15 +13,19 @@ import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.Workspac
 import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersRequest.MiddlewareSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaceFoldersMod {
   
+  @JSImport("vscode-languageclient/lib/workspaceFolders", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("vscode-languageclient/lib/workspaceFolders", "WorkspaceFoldersFeature")
   @js.native
   class WorkspaceFoldersFeature protected ()
-    extends DynamicFeature[js.UndefOr[scala.Nothing]] {
+    extends StObject
+       with DynamicFeature[Unit] {
     def this(_client: BaseLanguageClient) = this()
     
     var _client: js.Any = js.native
@@ -47,16 +51,14 @@ object workspaceFoldersMod {
     /* protected */ def sendInitialEvent(currentWorkspaceFolders: js.Array[WorkspaceFolder]): Unit = js.native
   }
   
-  @JSImport("vscode-languageclient/lib/workspaceFolders", "arrayDiff")
-  @js.native
-  def arrayDiff[T](left: js.Array[T], right: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def arrayDiff[T](left: js.Array[T], right: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayDiff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @js.native
   trait WorkspaceFolderWorkspaceMiddleware extends StObject {
     
-    var didChangeWorkspaceFolders: js.UndefOr[NextSignature[WorkspaceFoldersChangeEvent, Unit]] = js.native
+    var didChangeWorkspaceFolders: js.UndefOr[NextSignature[WorkspaceFoldersChangeEvent, Unit]] = js.undefined
     
-    var workspaceFolders: js.UndefOr[MiddlewareSignature] = js.native
+    var workspaceFolders: js.UndefOr[MiddlewareSignature] = js.undefined
   }
   object WorkspaceFolderWorkspaceMiddleware {
     

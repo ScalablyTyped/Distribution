@@ -17,7 +17,6 @@ import typings.minappEnv.WXNS.IDownloadFileTask
 import typings.minappEnv.WXNS.IUploadFileTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,36 +2,34 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The position and orientation of the unique person listening to the audio scene, and is used in audio spatialization. All PannerNodes spatialize in relation to the AudioListener stored in the BaseAudioContext.listener attribute. */
-@js.native
 trait AudioListener extends StObject {
   
-  val forwardX: AudioParam = js.native
+  val forwardX: AudioParam
   
-  val forwardY: AudioParam = js.native
+  val forwardY: AudioParam
   
-  val forwardZ: AudioParam = js.native
+  val forwardZ: AudioParam
   
-  val positionX: AudioParam = js.native
+  val positionX: AudioParam
   
-  val positionY: AudioParam = js.native
+  val positionY: AudioParam
   
-  val positionZ: AudioParam = js.native
-  
-  /** @deprecated */
-  def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit = js.native
+  val positionZ: AudioParam
   
   /** @deprecated */
-  def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+  def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit
   
-  val upX: AudioParam = js.native
+  /** @deprecated */
+  def setPosition(x: Double, y: Double, z: Double): Unit
   
-  val upY: AudioParam = js.native
+  val upX: AudioParam
   
-  val upZ: AudioParam = js.native
+  val upY: AudioParam
+  
+  val upZ: AudioParam
 }
 object AudioListener {
   

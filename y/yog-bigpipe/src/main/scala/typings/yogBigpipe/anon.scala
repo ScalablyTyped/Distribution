@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.yogBigpipe.mod.Pagelet.mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var _default: js.UndefOr[String] = js.native
+    var _default: js.UndefOr[String] = js.undefined
     
-    var quickling: js.UndefOr[String] = js.native
+    var quickling: js.UndefOr[String] = js.undefined
   }
   object Default {
     
@@ -41,11 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var mode: typings.yogBigpipe.mod.Pagelet.mode = js.native
+    var mode: typings.yogBigpipe.mod.Pagelet.mode
   }
   object Dictkey {
     

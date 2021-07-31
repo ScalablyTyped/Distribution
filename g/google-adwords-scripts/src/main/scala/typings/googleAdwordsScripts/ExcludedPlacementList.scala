@@ -2,26 +2,26 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Shared Sets
-@js.native
-trait ExcludedPlacementList extends AdWordsEntity {
+trait ExcludedPlacementList
+  extends StObject
+     with AdWordsEntity {
   
-  def addExcludedPlacement(url: String): Unit = js.native
+  def addExcludedPlacement(url: String): Unit
   
-  def addExcludedPlacements(urls: js.Array[String]): Unit = js.native
+  def addExcludedPlacements(urls: js.Array[String]): Unit
   
-  def campaigns(): AdWordsSelector[Campaign] = js.native
+  def campaigns(): AdWordsSelector[Campaign]
   
-  def excludedPlacements(): AdWordsSelector[SharedExcludedPlacement] = js.native
+  def excludedPlacements(): AdWordsSelector[SharedExcludedPlacement]
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def setName(name: String): Unit = js.native
+  def setName(name: String): Unit
 }
 object ExcludedPlacementList {
   

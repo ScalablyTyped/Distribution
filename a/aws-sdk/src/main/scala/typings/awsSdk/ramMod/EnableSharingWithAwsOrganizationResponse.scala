@@ -2,16 +2,14 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableSharingWithAwsOrganizationResponse extends StObject {
   
   /**
     * Indicates whether the request succeeded.
     */
-  var returnValue: js.UndefOr[Boolean] = js.native
+  var returnValue: js.UndefOr[Boolean] = js.undefined
 }
 object EnableSharingWithAwsOrganizationResponse {
   

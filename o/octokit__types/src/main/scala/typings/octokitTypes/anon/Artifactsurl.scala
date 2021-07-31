@@ -2,59 +2,57 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifactsurl extends StObject {
   
-  var artifacts_url: String = js.native
+  var artifacts_url: String
   
-  var cancel_url: String = js.native
+  var cancel_url: String
   
-  var check_suite_url: String = js.native
+  var check_suite_url: String
   
-  var conclusion: String = js.native
+  var conclusion: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var event: String = js.native
+  var event: String
   
-  var head_branch: String = js.native
+  var head_branch: String
   
-  var head_commit: Author = js.native
+  var head_commit: Author
   
-  var head_repository: Assigneesurl = js.native
+  var head_repository: Assigneesurl
   
-  var head_sha: String = js.native
+  var head_sha: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var jobs_url: String = js.native
+  var jobs_url: String
   
-  var logs_url: String = js.native
+  var logs_url: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var pull_requests: js.Array[_] = js.native
+  var pull_requests: js.Array[js.Any]
   
-  var repository: Archiveurl = js.native
+  var repository: Archiveurl
   
-  var rerun_url: String = js.native
+  var rerun_url: String
   
-  var run_number: Double = js.native
+  var run_number: Double
   
-  var status: String = js.native
+  var status: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var workflow_id: Double = js.native
+  var workflow_id: Double
   
-  var workflow_url: String = js.native
+  var workflow_url: String
 }
 object Artifactsurl {
   
@@ -75,7 +73,7 @@ object Artifactsurl {
     jobs_url: String,
     logs_url: String,
     node_id: String,
-    pull_requests: js.Array[_],
+    pull_requests: js.Array[js.Any],
     repository: Archiveurl,
     rerun_url: String,
     run_number: Double,
@@ -138,7 +136,7 @@ object Artifactsurl {
     def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requests(value: js.Array[_]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    def setPull_requests(value: js.Array[js.Any]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPull_requestsVarargs(value: js.Any*): Self = StObject.set(x, "pull_requests", js.Array(value :_*))

@@ -2,22 +2,20 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTextConfig extends StObject {
   
   /**
     * Experimental de-identification config to use. For internal use only. If
     * not specified, it is ignored and standard DLP is used.
     */
-  var experimentalConfig: js.UndefOr[String] = js.native
+  var experimentalConfig: js.UndefOr[String] = js.undefined
   
   /**
     * The transformations to apply to the detected data.
     */
-  var transformations: js.UndefOr[js.Array[SchemaInfoTypeTransformation]] = js.native
+  var transformations: js.UndefOr[js.Array[SchemaInfoTypeTransformation]] = js.undefined
 }
 object SchemaTextConfig {
   

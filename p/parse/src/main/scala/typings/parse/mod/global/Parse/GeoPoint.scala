@@ -4,7 +4,6 @@ import typings.parse.anon.Latitude
 import typings.parse.mod.global.Parse.Schema._FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.GeoPoint")
 @js.native
-class GeoPoint () extends _FieldType {
+class GeoPoint ()
+  extends StObject
+     with _FieldType {
   def this(coords: js.Tuple2[Double, Double]) = this()
   def this(coords: Latitude) = this()
   def this(latitude: Double, longitude: Double) = this()

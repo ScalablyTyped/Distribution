@@ -2,27 +2,25 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonSize extends StObject {
   
-  var buttonSize: js.UndefOr[Double] = js.native
+  var buttonSize: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabledColor: js.UndefOr[String] = js.native
+  var disabledColor: js.UndefOr[String] = js.undefined
   
-  var disabledTextColor: js.UndefOr[String] = js.native
+  var disabledTextColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var miniSize: js.UndefOr[Double] = js.native
+  var miniSize: js.UndefOr[Double] = js.undefined
   
-  var secondaryColor: js.UndefOr[String] = js.native
+  var secondaryColor: js.UndefOr[String] = js.undefined
   
-  var secondaryIconColor: js.UndefOr[String] = js.native
+  var secondaryIconColor: js.UndefOr[String] = js.undefined
 }
 object ButtonSize {
   

@@ -2,15 +2,13 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object Callback {
   
@@ -24,7 +22,7 @@ object Callback {
   implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: /* repeated */ js.Any => _): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

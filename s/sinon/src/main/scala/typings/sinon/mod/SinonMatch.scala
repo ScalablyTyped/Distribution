@@ -3,7 +3,6 @@ package typings.sinon.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -103,7 +102,7 @@ trait SinonMatch extends StObject {
   /**
     * Requires the value to be in the specified array.
     */
-  def in(allowed: js.Array[_]): SinonMatcher = js.native
+  def in(allowed: js.Array[js.Any]): SinonMatcher = js.native
   
   /**
     * Requires the value to be an instance of the given type.

@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascaderCascaderMod {
@@ -53,7 +52,7 @@ object cascaderCascaderMod {
     
     def getCols(): js.Array[Element] = js.native
     
-    def getValue(d: js.Any, `val`: js.Any): js.Array[_] = js.native
+    def getValue(d: js.Any, `val`: js.Any): js.Array[js.Any] = js.native
     
     def onValueChange(value: js.Any, index: js.Any): Unit = js.native
     

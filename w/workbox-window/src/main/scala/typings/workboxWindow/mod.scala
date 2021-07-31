@@ -4,10 +4,13 @@ import typings.std.RegistrationOptions
 import typings.std.ServiceWorker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("workbox-window", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("workbox-window", "Workbox")
   @js.native
@@ -17,7 +20,6 @@ object mod {
     def this(scriptURL: String, registerOptions: RegistrationOptions) = this()
   }
   
-  @JSImport("workbox-window", "messageSW")
-  @js.native
-  def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[_] = js.native
+  @scala.inline
+  def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("messageSW")(sw.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

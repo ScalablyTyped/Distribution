@@ -8,33 +8,32 @@ import typings.ctrlTinycolor.distMod.ColorInput
 import typings.ctrlTinycolor.distMod.TinyColor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readabilityMod {
   
-  @JSImport("@ctrl/tinycolor/dist/readability", "isReadable")
+  @JSImport("@ctrl/tinycolor/dist/readability", JSImport.Namespace)
   @js.native
-  def isReadable(color1: ColorInput, color2: ColorInput): Boolean = js.native
-  @JSImport("@ctrl/tinycolor/dist/readability", "isReadable")
-  @js.native
-  def isReadable(color1: ColorInput, color2: ColorInput, wcag2: WCAG2Parms): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ctrl/tinycolor/dist/readability", "mostReadable")
-  @js.native
-  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput]): TinyColor_ | Null = js.native
-  @JSImport("@ctrl/tinycolor/dist/readability", "mostReadable")
-  @js.native
-  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput], args: WCAG2FallbackParms): TinyColor_ | Null = js.native
+  @scala.inline
+  def isReadable(color1: ColorInput, color2: ColorInput): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isReadable(color1: ColorInput, color2: ColorInput, wcag2: WCAG2Parms): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], wcag2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@ctrl/tinycolor/dist/readability", "readability")
-  @js.native
-  def readability(color1: ColorInput, color2: ColorInput): Double = js.native
+  @scala.inline
+  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput]): TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any])).asInstanceOf[TinyColor_ | Null]
+  @scala.inline
+  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput], args: WCAG2FallbackParms): TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TinyColor_ | Null]
   
-  @js.native
-  trait WCAG2FallbackParms extends WCAG2Parms {
+  @scala.inline
+  def readability(color1: ColorInput, color2: ColorInput): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readability")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  trait WCAG2FallbackParms
+    extends StObject
+       with WCAG2Parms {
     
-    var includeFallbackColors: js.UndefOr[Boolean] = js.native
+    var includeFallbackColors: js.UndefOr[Boolean] = js.undefined
   }
   object WCAG2FallbackParms {
     
@@ -55,12 +54,11 @@ object readabilityMod {
     }
   }
   
-  @js.native
   trait WCAG2Parms extends StObject {
     
-    var level: js.UndefOr[AA | AAA] = js.native
+    var level: js.UndefOr[AA | AAA] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
   }
   object WCAG2Parms {
     

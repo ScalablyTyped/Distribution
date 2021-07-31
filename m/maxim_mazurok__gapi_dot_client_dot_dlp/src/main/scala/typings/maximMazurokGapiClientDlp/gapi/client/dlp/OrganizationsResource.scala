@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationsResource extends StObject {
   
-  var deidentifyTemplates: DeidentifyTemplatesResource = js.native
+  var deidentifyTemplates: DeidentifyTemplatesResource
   
-  var inspectTemplates: InspectTemplatesResource = js.native
+  var inspectTemplates: InspectTemplatesResource
   
-  var locations: LocationsResource = js.native
+  var locations: LocationsResource
   
-  var storedInfoTypes: StoredInfoTypesResource = js.native
+  var storedInfoTypes: StoredInfoTypesResource
 }
 object OrganizationsResource {
   

@@ -2,15 +2,13 @@ package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Truncated extends StObject {
   
-  var truncated: Boolean = js.native
+  var truncated: Boolean
   
-  var wrapText: Boolean = js.native
+  var wrapText: Boolean
 }
 object Truncated {
   

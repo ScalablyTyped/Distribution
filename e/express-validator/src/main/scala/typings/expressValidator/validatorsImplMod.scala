@@ -5,14 +5,15 @@ import typings.expressValidator.optionsMod.MinMaxOptions
 import typings.expressValidator.validatorsMod.Validators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorsImplMod {
   
   @JSImport("express-validator/src/chain/validators-impl", "ValidatorsImpl")
   @js.native
-  class ValidatorsImpl[Chain] protected () extends Validators[Chain] {
+  class ValidatorsImpl[Chain] protected ()
+    extends StObject
+       with Validators[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
     var addItem: js.Any = js.native

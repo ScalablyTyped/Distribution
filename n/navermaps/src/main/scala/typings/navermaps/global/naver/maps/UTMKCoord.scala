@@ -3,29 +3,27 @@ package typings.navermaps.global.naver.maps
 import typings.navermaps.naver.maps.Coord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UTMKCoord {
   
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  
   @JSGlobal("naver.maps.UTMKCoord")
   @js.native
-  def apply(): Unit = js.native
+  val ^ : js.Any = js.native
   
   // extends UTMK
-  @JSGlobal("naver.maps.UTMKCoord.fromCoordToLatLng")
-  @js.native
-  def fromCoordToLatLng(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = js.native
+  @scala.inline
+  def fromCoordToLatLng(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToLatLng")(utmk.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
   
-  @JSGlobal("naver.maps.UTMKCoord.fromCoordToPoint")
-  @js.native
-  def fromCoordToPoint(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = js.native
+  @scala.inline
+  def fromCoordToPoint(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToPoint")(utmk.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @JSGlobal("naver.maps.UTMKCoord.fromLatLngToCoord")
-  @js.native
-  def fromLatLngToCoord(latlng: Coord): typings.navermaps.naver.maps.Point = js.native
+  @scala.inline
+  def fromLatLngToCoord(latlng: Coord): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngToCoord")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @JSGlobal("naver.maps.UTMKCoord.fromPointToCoord")
-  @js.native
-  def fromPointToCoord(point: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = js.native
+  @scala.inline
+  def fromPointToCoord(point: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPointToCoord")(point.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
 }

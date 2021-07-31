@@ -5,7 +5,6 @@ import typings.joi.mod.PresenceMode
 import typings.joi.mod.Types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joiStrings {
@@ -46,17 +45,23 @@ object joiStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait alternatives extends Types
+  sealed trait alternatives
+    extends StObject
+       with Types
   @scala.inline
   def alternatives: alternatives = "alternatives".asInstanceOf[alternatives]
   
   @js.native
-  sealed trait any extends Types
+  sealed trait any
+    extends StObject
+       with Types
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait array extends Types
+  sealed trait array
+    extends StObject
+       with Types
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
@@ -66,17 +71,23 @@ object joiStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
-  sealed trait binary extends Types
+  sealed trait binary
+    extends StObject
+       with Types
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait boolean extends Types
+  sealed trait boolean
+    extends StObject
+       with Types
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait date extends Types
+  sealed trait date
+    extends StObject
+       with Types
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -86,12 +97,16 @@ object joiStrings {
   def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
-  sealed trait forbidden extends PresenceMode
+  sealed trait forbidden
+    extends StObject
+       with PresenceMode
   @scala.inline
   def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   
   @js.native
-  sealed trait function extends Types
+  sealed trait function
+    extends StObject
+       with Types
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   
@@ -111,7 +126,9 @@ object joiStrings {
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait link extends Types
+  sealed trait link
+    extends StObject
+       with Types
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
@@ -136,12 +153,16 @@ object joiStrings {
   def now: now = "now".asInstanceOf[now]
   
   @js.native
-  sealed trait number extends Types
+  sealed trait number
+    extends StObject
+       with Types
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends Types
+  sealed trait `object`
+    extends StObject
+       with Types
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -151,7 +172,9 @@ object joiStrings {
   def one: one = "one".asInstanceOf[one]
   
   @js.native
-  sealed trait optional extends PresenceMode
+  sealed trait optional
+    extends StObject
+       with PresenceMode
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   
@@ -166,7 +189,9 @@ object joiStrings {
   def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait required extends PresenceMode
+  sealed trait required
+    extends StObject
+       with PresenceMode
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   
@@ -186,12 +211,16 @@ object joiStrings {
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait string extends Types
+  sealed trait string
+    extends StObject
+       with Types
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait symbol extends Types
+  sealed trait symbol
+    extends StObject
+       with Types
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
@@ -216,27 +245,37 @@ object joiStrings {
   def utc: utc = "utc".asInstanceOf[utc]
   
   @js.native
-  sealed trait uuidv1 extends GuidVersions
+  sealed trait uuidv1
+    extends StObject
+       with GuidVersions
   @scala.inline
   def uuidv1: uuidv1 = "uuidv1".asInstanceOf[uuidv1]
   
   @js.native
-  sealed trait uuidv2 extends GuidVersions
+  sealed trait uuidv2
+    extends StObject
+       with GuidVersions
   @scala.inline
   def uuidv2: uuidv2 = "uuidv2".asInstanceOf[uuidv2]
   
   @js.native
-  sealed trait uuidv3 extends GuidVersions
+  sealed trait uuidv3
+    extends StObject
+       with GuidVersions
   @scala.inline
   def uuidv3: uuidv3 = "uuidv3".asInstanceOf[uuidv3]
   
   @js.native
-  sealed trait uuidv4 extends GuidVersions
+  sealed trait uuidv4
+    extends StObject
+       with GuidVersions
   @scala.inline
   def uuidv4: uuidv4 = "uuidv4".asInstanceOf[uuidv4]
   
   @js.native
-  sealed trait uuidv5 extends GuidVersions
+  sealed trait uuidv5
+    extends StObject
+       with GuidVersions
   @scala.inline
   def uuidv5: uuidv5 = "uuidv5".asInstanceOf[uuidv5]
 }

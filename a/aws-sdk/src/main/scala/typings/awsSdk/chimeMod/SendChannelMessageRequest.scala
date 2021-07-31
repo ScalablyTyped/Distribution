@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendChannelMessageRequest extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The Idempotency token for each client request.
     */
-  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken = js.native
+  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
   
   /**
     * The content of the message.
     */
-  var Content: NonEmptyContent = js.native
+  var Content: NonEmptyContent
   
   /**
     * The optional metadata for each message. 
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * Boolean that controls whether the message is persisted on the back end. Required.
     */
-  var Persistence: ChannelMessagePersistenceType = js.native
+  var Persistence: ChannelMessagePersistenceType
   
   /**
     * The type of message, STANDARD or CONTROL.
     */
-  var Type: ChannelMessageType = js.native
+  var Type: ChannelMessageType
 }
 object SendChannelMessageRequest {
   

@@ -5,41 +5,74 @@ import typings.fastGlob.typesMod.MicromatchOptions
 import typings.fastGlob.typesMod.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deepMod {
   
   @JSImport("fast-glob/out/providers/filters/deep", JSImport.Default)
   @js.native
-  class default protected () extends DeepFilter {
+  class default protected ()
+    extends StObject
+       with DeepFilter {
     def this(_settings: typings.fastGlob.settingsMod.default, _micromatchOptions: MicromatchOptions) = this()
-  }
-  
-  @js.native
-  trait DeepFilter extends StObject {
     
+    /* CompleteClass */
     var _filter: js.Any = js.native
     
+    /* CompleteClass */
     var _getEntryLevel: js.Any = js.native
     
+    /* CompleteClass */
     var _getMatcher: js.Any = js.native
     
+    /* CompleteClass */
     var _getNegativePatternsRe: js.Any = js.native
     
+    /* CompleteClass */
     var _isSkippedByDeep: js.Any = js.native
     
+    /* CompleteClass */
     var _isSkippedByNegativePatterns: js.Any = js.native
     
+    /* CompleteClass */
     var _isSkippedByPositivePatterns: js.Any = js.native
     
+    /* CompleteClass */
     var _isSkippedSymbolicLink: js.Any = js.native
     
-    val _micromatchOptions: js.Any = js.native
+    /* CompleteClass */
+    override val _micromatchOptions: js.Any = js.native
     
-    val _settings: js.Any = js.native
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
     
-    def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
+    /* CompleteClass */
+    override def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
+  }
+  
+  trait DeepFilter extends StObject {
+    
+    var _filter: js.Any
+    
+    var _getEntryLevel: js.Any
+    
+    var _getMatcher: js.Any
+    
+    var _getNegativePatternsRe: js.Any
+    
+    var _isSkippedByDeep: js.Any
+    
+    var _isSkippedByNegativePatterns: js.Any
+    
+    var _isSkippedByPositivePatterns: js.Any
+    
+    var _isSkippedSymbolicLink: js.Any
+    
+    val _micromatchOptions: js.Any
+    
+    val _settings: js.Any
+    
+    def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
   }
   object DeepFilter {
     

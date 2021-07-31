@@ -5,16 +5,17 @@ import typings.asmcryptoJs.asmcryptoJsNumbers.`0`
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha512AsmMod {
   
-  @JSImport("asmcrypto.js/dist_es8/hash/sha512/sha512.asm", "sha512_asm")
+  @JSImport("asmcrypto.js/dist_es8/hash/sha512/sha512.asm", JSImport.Namespace)
   @js.native
-  def sha512Asm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): sha512result = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sha512Asm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): sha512result = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_asm")(stdlib.asInstanceOf[js.Any], foreign.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[sha512result]
+  
   trait sha512result extends StObject {
     
     /**
@@ -23,7 +24,7 @@ object sha512AsmMod {
       * @param output - multiple of 32
       * @returns hashed
       */
-    def finish(offset: Double, length: Double, output: Double): Double = js.native
+    def finish(offset: Double, length: Double, output: Double): Double
     
     /**
       * @param offset - multiple of 64
@@ -31,7 +32,7 @@ object sha512AsmMod {
       * @param output - multiple of 32
       * @returns hashed
       */
-    def hmac_finish(offset: Double, length: Double, output: Double): Double = js.native
+    def hmac_finish(offset: Double, length: Double, output: Double): Double
     
     def hmac_init(
       p0h: Double,
@@ -66,12 +67,12 @@ object sha512AsmMod {
       p14l: Double,
       p15h: Double,
       p15l: Double
-    ): Unit = js.native
+    ): Unit
     
     // HMAC-SHA;
-    def hmac_reset(): Unit = js.native
+    def hmac_reset(): Unit
     
-    def init(h0: Double, h1: Double, h2: Double, h3: Double, h4: Double, total0: Double, total1: Double): Unit = js.native
+    def init(h0: Double, h1: Double, h2: Double, h3: Double, h4: Double, total0: Double, total1: Double): Unit
     
     // ;
     /**
@@ -82,17 +83,17 @@ object sha512AsmMod {
       * @param count
       * @param output - multiple of 32
       */
-    def pbkdf2_generate_block(offset: Double, length: Double, block: Double, count: Double, output: Double): `0` | `-1` = js.native
+    def pbkdf2_generate_block(offset: Double, length: Double, block: Double, count: Double, output: Double): `0` | `-1`
     
     /**
       * @param offset - multiple of 64
       * @param length
       * @returns hashed
       */
-    def process(offset: Double, length: Double): Double = js.native
+    def process(offset: Double, length: Double): Double
     
     // SHA1
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object sha512result {
     

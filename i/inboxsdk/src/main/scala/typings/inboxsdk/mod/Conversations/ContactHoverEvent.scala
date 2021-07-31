@@ -5,19 +5,17 @@ import typings.inboxsdk.inboxsdkStrings.sender
 import typings.inboxsdk.mod.Common.Contact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactHoverEvent extends StObject {
   
-  var contact: Contact = js.native
+  var contact: Contact
   
-  var contactType: sender | recipient = js.native
+  var contactType: sender | recipient
   
-  var messageView: MessageView = js.native
+  var messageView: MessageView
   
-  var threadView: ThreadView = js.native
+  var threadView: ThreadView
 }
 object ContactHoverEvent {
   

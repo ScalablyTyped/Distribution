@@ -2,15 +2,13 @@ package typings.node.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectorNotification[T] extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var params: T = js.native
+  var params: T
 }
 object InspectorNotification {
   
@@ -21,7 +19,7 @@ object InspectorNotification {
   }
   
   @scala.inline
-  implicit class InspectorNotificationMutableBuilder[Self <: InspectorNotification[_], T] (val x: Self with InspectorNotification[T]) extends AnyVal {
+  implicit class InspectorNotificationMutableBuilder[Self <: InspectorNotification[?], T] (val x: Self & InspectorNotification[T]) extends AnyVal {
     
     @scala.inline
     def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ import typings.regexpp.regexppStrings.word
 import typings.regexpp.validatorMod.RegExpValidator.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorMod {
@@ -24,62 +23,61 @@ object validatorMod {
     def this(options: Options) = this()
     
     def validateFlags(source: String): Unit = js.native
-    def validateFlags(source: String, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
     def validateFlags(source: String, start: Double): Unit = js.native
     def validateFlags(source: String, start: Double, end: Double): Unit = js.native
+    def validateFlags(source: String, start: Unit, end: Double): Unit = js.native
     
     def validateLiteral(source: String): Unit = js.native
-    def validateLiteral(source: String, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
     def validateLiteral(source: String, start: Double): Unit = js.native
     def validateLiteral(source: String, start: Double, end: Double): Unit = js.native
+    def validateLiteral(source: String, start: Unit, end: Double): Unit = js.native
     
     def validatePattern(source: String): Unit = js.native
-    def validatePattern(source: String, start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], uFlag: Boolean): Unit = js.native
-    def validatePattern(source: String, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
-    def validatePattern(source: String, start: js.UndefOr[scala.Nothing], end: Double, uFlag: Boolean): Unit = js.native
     def validatePattern(source: String, start: Double): Unit = js.native
-    def validatePattern(source: String, start: Double, end: js.UndefOr[scala.Nothing], uFlag: Boolean): Unit = js.native
     def validatePattern(source: String, start: Double, end: Double): Unit = js.native
     def validatePattern(source: String, start: Double, end: Double, uFlag: Boolean): Unit = js.native
+    def validatePattern(source: String, start: Double, end: Unit, uFlag: Boolean): Unit = js.native
+    def validatePattern(source: String, start: Unit, end: Double): Unit = js.native
+    def validatePattern(source: String, start: Unit, end: Double, uFlag: Boolean): Unit = js.native
+    def validatePattern(source: String, start: Unit, end: Unit, uFlag: Boolean): Unit = js.native
   }
   object RegExpValidator {
     
-    @js.native
     trait Options extends StObject {
       
-      var ecmaVersion: js.UndefOr[EcmaVersion] = js.native
+      var ecmaVersion: js.UndefOr[EcmaVersion] = js.undefined
       
-      var onAlternativeEnter: js.UndefOr[js.Function2[/* start */ Double, /* index */ Double, Unit]] = js.native
+      var onAlternativeEnter: js.UndefOr[js.Function2[/* start */ Double, /* index */ Double, Unit]] = js.undefined
       
-      var onAlternativeLeave: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* index */ Double, Unit]] = js.native
+      var onAlternativeLeave: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* index */ Double, Unit]] = js.undefined
       
-      var onAnyCharacterSet: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, any, Unit]] = js.native
+      var onAnyCharacterSet: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, any, Unit]] = js.undefined
       
       var onBackreference: js.UndefOr[
             js.Function3[/* start */ Double, /* end */ Double, /* ref */ Double | String, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var onCapturingGroupEnter: js.UndefOr[js.Function2[/* start */ Double, /* name */ String | Null, Unit]] = js.native
+      var onCapturingGroupEnter: js.UndefOr[js.Function2[/* start */ Double, /* name */ String | Null, Unit]] = js.undefined
       
       var onCapturingGroupLeave: js.UndefOr[
             js.Function3[/* start */ Double, /* end */ Double, /* name */ String | Null, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var onCharacter: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* value */ Double, Unit]] = js.native
+      var onCharacter: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* value */ Double, Unit]] = js.undefined
       
-      var onCharacterClassEnter: js.UndefOr[js.Function2[/* start */ Double, /* negate */ Boolean, Unit]] = js.native
+      var onCharacterClassEnter: js.UndefOr[js.Function2[/* start */ Double, /* negate */ Boolean, Unit]] = js.undefined
       
-      var onCharacterClassLeave: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* negate */ Boolean, Unit]] = js.native
+      var onCharacterClassLeave: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* negate */ Boolean, Unit]] = js.undefined
       
       var onCharacterClassRange: js.UndefOr[
             js.Function4[/* start */ Double, /* end */ Double, /* min */ Double, /* max */ Double, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var onDisjunctionEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.native
+      var onDisjunctionEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.undefined
       
-      var onDisjunctionLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.native
+      var onDisjunctionLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.undefined
       
-      var onEdgeAssertion: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* kind */ start | end, Unit]] = js.native
+      var onEdgeAssertion: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* kind */ start | end, Unit]] = js.undefined
       
       var onEscapeCharacterSet: js.UndefOr[
             js.Function4[
@@ -89,7 +87,7 @@ object validatorMod {
               /* negate */ Boolean, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var onFlags: js.UndefOr[
             js.Function8[
@@ -103,19 +101,19 @@ object validatorMod {
               /* dotAll */ Boolean, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var onGroupEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.native
+      var onGroupEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.undefined
       
-      var onGroupLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.native
+      var onGroupLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.undefined
       
-      var onLiteralEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.native
+      var onLiteralEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.undefined
       
-      var onLiteralLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.native
+      var onLiteralLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.undefined
       
       var onLookaroundAssertionEnter: js.UndefOr[
             js.Function3[/* start */ Double, /* kind */ lookahead | lookbehind, /* negate */ Boolean, Unit]
-          ] = js.native
+          ] = js.undefined
       
       var onLookaroundAssertionLeave: js.UndefOr[
             js.Function4[
@@ -125,11 +123,11 @@ object validatorMod {
               /* negate */ Boolean, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var onPatternEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.native
+      var onPatternEnter: js.UndefOr[js.Function1[/* start */ Double, Unit]] = js.undefined
       
-      var onPatternLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.native
+      var onPatternLeave: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.undefined
       
       var onQuantifier: js.UndefOr[
             js.Function5[
@@ -140,7 +138,7 @@ object validatorMod {
               /* greedy */ Boolean, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var onUnicodePropertyCharacterSet: js.UndefOr[
             js.Function6[
@@ -152,13 +150,13 @@ object validatorMod {
               /* negate */ Boolean, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var onWordBoundaryAssertion: js.UndefOr[
             js.Function4[/* start */ Double, /* end */ Double, word, /* negate */ Boolean, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var strict: js.UndefOr[Boolean] = js.native
+      var strict: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

@@ -3,14 +3,15 @@ package typings.xhrMock
 import typings.xhrMock.mockHeadersMod.MockHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockResponseMod {
   
   @JSImport("xhr-mock/lib/MockResponse", JSImport.Default)
   @js.native
-  class default () extends MockResponse
+  class default ()
+    extends StObject
+       with MockResponse
   
   @js.native
   trait MockResponse extends StObject {

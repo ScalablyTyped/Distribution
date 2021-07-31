@@ -2,7 +2,6 @@ package typings.saml2Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,12 +50,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait AuthnContextClassRef extends StObject {
     
-    var class_refs: js.Array[String] = js.native
+    var class_refs: js.Array[String]
     
-    var comparison: String = js.native
+    var comparison: String
   }
   object AuthnContextClassRef {
     
@@ -80,18 +78,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateLoginRequestUrlOptions extends StObject {
     
-    var auth_context: js.UndefOr[AuthnContextClassRef] = js.native
+    var auth_context: js.UndefOr[AuthnContextClassRef] = js.undefined
     
-    var force_authn: js.UndefOr[Boolean] = js.native
+    var force_authn: js.UndefOr[Boolean] = js.undefined
     
-    var nameid_format: js.UndefOr[String] = js.native
+    var nameid_format: js.UndefOr[String] = js.undefined
     
-    var relay_state: js.UndefOr[String] = js.native
+    var relay_state: js.UndefOr[String] = js.undefined
     
-    var sign_get_request: js.UndefOr[Boolean] = js.native
+    var sign_get_request: js.UndefOr[Boolean] = js.undefined
   }
   object CreateLoginRequestUrlOptions {
     
@@ -136,18 +133,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateLogoutRequestUrlOptions extends StObject {
     
-    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.native
+    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.undefined
     
-    var name_id: js.UndefOr[String] = js.native
+    var name_id: js.UndefOr[String] = js.undefined
     
-    var relay_state: js.UndefOr[String] = js.native
+    var relay_state: js.UndefOr[String] = js.undefined
     
-    var session_index: js.UndefOr[String] = js.native
+    var session_index: js.UndefOr[String] = js.undefined
     
-    var sign_get_request: js.UndefOr[Boolean] = js.native
+    var sign_get_request: js.UndefOr[Boolean] = js.undefined
   }
   object CreateLogoutRequestUrlOptions {
     
@@ -192,14 +188,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateLogoutResponseUrlOptions extends StObject {
     
-    var in_response_to: js.UndefOr[String] = js.native
+    var in_response_to: js.UndefOr[String] = js.undefined
     
-    var relay_state: js.UndefOr[String] = js.native
+    var relay_state: js.UndefOr[String] = js.undefined
     
-    var sign_get_request: js.UndefOr[Boolean] = js.native
+    var sign_get_request: js.UndefOr[Boolean] = js.undefined
   }
   object CreateLogoutResponseUrlOptions {
     
@@ -232,12 +227,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GetAssertOptions extends StObject {
     
-    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.native
+    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.undefined
     
-    var request_body: js.UndefOr[js.Any] = js.native
+    var request_body: js.UndefOr[js.Any] = js.undefined
   }
   object GetAssertOptions {
     
@@ -264,20 +258,19 @@ object mod {
     }
   }
   
-  @js.native
   trait IdentityProviderOptions extends StObject {
     
-    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.native
+    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.undefined
     
-    var certificates: js.Array[String] = js.native
+    var certificates: js.Array[String]
     
-    var force_authn: js.UndefOr[Boolean] = js.native
+    var force_authn: js.UndefOr[Boolean] = js.undefined
     
-    var sign_get_request: js.UndefOr[Boolean] = js.native
+    var sign_get_request: js.UndefOr[Boolean] = js.undefined
     
-    var sso_login_url: String = js.native
+    var sso_login_url: String
     
-    var sso_logout_url: String = js.native
+    var sso_logout_url: String
   }
   object IdentityProviderOptions {
     
@@ -322,30 +315,29 @@ object mod {
     }
   }
   
-  @js.native
   trait ServiceProviderOptions extends StObject {
     
-    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.native
+    var allow_unencrypted_assertion: js.UndefOr[Boolean] = js.undefined
     
-    var alt_certs: js.UndefOr[js.Array[String]] = js.native
+    var alt_certs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var alt_private_keys: js.UndefOr[js.Array[String]] = js.native
+    var alt_private_keys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var assert_endpoint: String = js.native
+    var assert_endpoint: String
     
-    var auth_context: js.UndefOr[AuthnContextClassRef] = js.native
+    var auth_context: js.UndefOr[AuthnContextClassRef] = js.undefined
     
-    var certificate: String = js.native
+    var certificate: String
     
-    var entity_id: String = js.native
+    var entity_id: String
     
-    var force_authn: js.UndefOr[Boolean] = js.native
+    var force_authn: js.UndefOr[Boolean] = js.undefined
     
-    var nameid_format: js.UndefOr[String] = js.native
+    var nameid_format: js.UndefOr[String] = js.undefined
     
-    var private_key: String = js.native
+    var private_key: String
     
-    var sign_get_request: js.UndefOr[Boolean] = js.native
+    var sign_get_request: js.UndefOr[Boolean] = js.undefined
   }
   object ServiceProviderOptions {
     

@@ -2,15 +2,13 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
-  var level: js.UndefOr[Boolean] = js.native
+  var level: js.UndefOr[Boolean] = js.undefined
   
-  var tag: js.UndefOr[Boolean] = js.native
+  var tag: js.UndefOr[Boolean] = js.undefined
 }
 object Tag {
   

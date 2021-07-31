@@ -2,19 +2,17 @@ package typings.googleapis.cloudidentityV1Mod.cloudidentityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource representing a Membership within a Group
   */
-@js.native
 trait SchemaMembership extends StObject {
   
   /**
     * Creation timestamp of the Membership. Output only.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Resource name](https://cloud.google.com/apis/design/resource_names) of
@@ -24,25 +22,25 @@ trait SchemaMembership extends StObject {
     * the unique ID assigned to the member  Must be left blank while creating a
     * Membership.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * EntityKey of the entity to be added as the member. Must be set while
     * creating a Membership, read-only afterwards.  Currently allowed entity
     * types: `Users`, `Groups`.
     */
-  var preferredMemberKey: js.UndefOr[SchemaEntityKey] = js.native
+  var preferredMemberKey: js.UndefOr[SchemaEntityKey] = js.undefined
   
   /**
     * Roles for a member within the Group.  Currently supported
     * MembershipRoles: `&quot;MEMBER&quot;`.
     */
-  var roles: js.UndefOr[js.Array[SchemaMembershipRole]] = js.native
+  var roles: js.UndefOr[js.Array[SchemaMembershipRole]] = js.undefined
   
   /**
     * Last updated timestamp of the Membership. Output only.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaMembership {
   

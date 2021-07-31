@@ -2,7 +2,6 @@ package typings.heremaps.H.map
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property label {string} - A short textual representation of the copyright note, e.g. "DigitalGlobe 2009"
   * @property alt {string} - A detailed textual representation of the copyright note, e.g. "copyright 2009 DigitalGlobe, Inc."
   */
-@js.native
 trait ICopyright extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var label: String = js.native
+  var label: String
 }
 object ICopyright {
   

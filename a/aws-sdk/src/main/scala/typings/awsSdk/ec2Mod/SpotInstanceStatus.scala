@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotInstanceStatus extends StObject {
   
   /**
     * The status code. For a list of status codes, see Spot status codes in the Amazon EC2 User Guide for Linux Instances.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * The description for the status code.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time of the most recent status update, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.native
+  var UpdateTime: js.UndefOr[DateTime] = js.undefined
 }
 object SpotInstanceStatus {
   

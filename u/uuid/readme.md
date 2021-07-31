@@ -10,9 +10,9 @@ RFC4122 (v1, v4, and v5) UUIDs
 | ------------------ | :-------------: |
 | Full name          | uuid |
 | Keywords           | uuid, guid, rfc4122 |
-| # releases         | 17 |
-| # dependents       | 17902 |
-| # downloads        | 1487838722 |
+| # releases         | 19 |
+| # dependents       | 18643 |
+| # downloads        | 1634711595 |
 | # stars            | 313 |
 
 ## Links

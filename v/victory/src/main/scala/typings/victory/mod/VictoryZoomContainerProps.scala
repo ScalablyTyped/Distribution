@@ -9,32 +9,32 @@ import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryZoomContainerProps extends VictoryContainerProps {
+trait VictoryZoomContainerProps
+  extends StObject
+     with VictoryContainerProps {
   
   /**
     * The optional allowPan prop accepts a boolean that enables the panning
     * functionality. Zooming will still be enabled when the allowPan prop is set to false.
     * @default true
     */
-  var allowPan: js.UndefOr[Boolean] = js.native
+  var allowPan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The optional allowZoom prop accepts a boolean that enables the zoom
     * functionality. Panning will still be enabled when the allowZoom prop is set to false.
     * @default true
     */
-  var allowZoom: js.UndefOr[Boolean] = js.native
+  var allowZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The brushStyle adds custom styles to the brushComponent. This prop
     * should be given as an object of SVG style attributes.
     * @default "brushStyle={{ stroke: 'transparent', fill: 'black', fillOpacity: 0.1 }}"
     */
-  var brushStyle: js.UndefOr[CSSProperties] = js.native
+  var brushStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * VictoryZoomContainer works by clipping data outside of a given domain.
@@ -43,7 +43,7 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * props on VictoryClipContainer, such as clipPadding.
     * @example clipContainerComponent={<VictoryClipContainer clipPadding={{top: 10, right: 10}}}/>}
     */
-  var clipContainerComponent: js.UndefOr[ReactElement] = js.native
+  var clipContainerComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The defaultBrushArea prop specifies how the container will behave when a
@@ -52,17 +52,17 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * no new region will be selected, and any existing active brush will be cleared. When
     * the prop is set to "disable" the new selected region will default to the current active brush.
     */
-  var defaultBrushArea: js.UndefOr[all | none | disable] = js.native
+  var defaultBrushArea: js.UndefOr[all | none | disable] = js.undefined
   
   /**
     * When the disable prop is set to true, VictoryBrushContainer events will not fire.
     */
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When the disable prop is set to true, VictoryZoomContainer events will not fire.
     */
-  var downsample: js.UndefOr[Double | Boolean] = js.native
+  var downsample: js.UndefOr[Double | Boolean] = js.undefined
   
   /**
     * The minimumZoom prop sets a minimum domain extent for the zoomed chart.
@@ -73,14 +73,14 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * with numeric values for x and y.
     * @example minimumZoom={{x: 1, y: 0.01}}
     */
-  var minimumZoom: js.UndefOr[CursorData] = js.native
+  var minimumZoom: js.UndefOr[CursorData] = js.undefined
   
   /**
     * The optional onZoomDomainChange prop accepts an function to be called on each update to the visible domain.
     * The function accepts the parameters domain (the updated domain) and props (the props used by VictoryZoomContainer).
     * @example onZoomDomainChange={(domain, props) => handleDomainChange(domain, props)}
     */
-  var onZoomDomainChange: js.UndefOr[js.Function2[/* domain */ DomainPropType, /* props */ this.type, Unit]] = js.native
+  var onZoomDomainChange: js.UndefOr[js.Function2[/* domain */ DomainPropType, /* props */ this.type, Unit]] = js.undefined
   
   /**
     * When the zoomDimension prop is set, panning and zooming will be restricted to
@@ -88,7 +88,7 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * remain static. When this prop is not specified, both x and y dimensions will pan and zoom.
     * @example zoomDimension="x"
     */
-  var zoomDimension: js.UndefOr[x | y] = js.native
+  var zoomDimension: js.UndefOr[x | y] = js.undefined
   
   /**
     * The zoomDomain prop describes the zoomed state. This prop is an object that
@@ -98,7 +98,7 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * zoomDomain will trigger a re-render of the chart with the new domain.
     * @example zoomDomain={{x: [0, 100]}}
     */
-  var zoomDomain: js.UndefOr[DomainPropType] = js.native
+  var zoomDomain: js.UndefOr[DomainPropType] = js.undefined
 }
 object VictoryZoomContainerProps {
   

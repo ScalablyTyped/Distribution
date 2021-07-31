@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript
 import typings.googleAppsScript.GoogleAppsScript.Base.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Groups {
@@ -22,19 +21,29 @@ object Groups {
   object Role extends StObject {
     
     @js.native
-    sealed trait INVITED extends Role
+    sealed trait INVITED
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait MANAGER extends Role
+    sealed trait MANAGER
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait MEMBER extends Role
+    sealed trait MEMBER
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait OWNER extends Role
+    sealed trait OWNER
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait PENDING extends Role
+    sealed trait PENDING
+      extends StObject
+         with Role
   }
   
   /**
@@ -84,14 +93,13 @@ object Groups {
     *     var groups = GroupsApp.getGroups();
     *     Logger.log('You belong to ' + groups.length + ' groups.');
     */
-  @js.native
   trait GroupsApp extends StObject {
     
-    var Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any = js.native
+    var Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any
     
-    def getGroupByEmail(email: String): Group = js.native
+    def getGroupByEmail(email: String): Group
     
-    def getGroups(): js.Array[Group] = js.native
+    def getGroups(): js.Array[Group]
   }
   object GroupsApp {
     

@@ -16,7 +16,6 @@ import typings.reactNativeNavigation.eventsMod.BottomTabSelectedEvent
 import typings.reactNativeNavigation.eventsMod.CommandCompletedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeEventsReceiverMod {

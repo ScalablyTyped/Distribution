@@ -5,48 +5,46 @@ import typings.pulumiAws.inputMod.ec2.GetLocalGatewayFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2/getLocalGateway", "getLocalGateway")
+  @JSImport("@pulumi/aws/ec2/getLocalGateway", JSImport.Namespace)
   @js.native
-  def getLocalGateway(): js.Promise[GetLocalGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateway", "getLocalGateway")
-  @js.native
-  def getLocalGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateway", "getLocalGateway")
-  @js.native
-  def getLocalGateway(args: GetLocalGatewayArgs): js.Promise[GetLocalGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateway", "getLocalGateway")
-  @js.native
-  def getLocalGateway(args: GetLocalGatewayArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalGateway(): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")().asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  @scala.inline
+  def getLocalGateway(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  @scala.inline
+  def getLocalGateway(args: GetLocalGatewayArgs): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  @scala.inline
+  def getLocalGateway(args: GetLocalGatewayArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  
   trait GetLocalGatewayArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetLocalGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLocalGatewayFilter]] = js.undefined
     
     /**
       * The id of the specific Local Gateway to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The current state of the desired Local Gateway.
       * Can be either `"pending"` or `"available"`.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired Local Gateway.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLocalGatewayArgs {
     
@@ -88,29 +86,28 @@ object getLocalGatewayMod {
     }
   }
   
-  @js.native
   trait GetLocalGatewayResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
     /**
       * Amazon Resource Name (ARN) of Outpost
       */
-    val outpostArn: String = js.native
+    val outpostArn: String
     
     /**
       * AWS account identifier that owns the Local Gateway.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * State of the local gateway.
       */
-    val state: String = js.native
+    val state: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLocalGatewayResult {
     

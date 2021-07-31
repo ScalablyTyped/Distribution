@@ -6,12 +6,12 @@ import typings.konva.pathMod.Path
 import typings.konva.pathMod.PathConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPath
-  extends Instantiable0[Path]
+  extends StObject
+     with Instantiable0[Path]
      with Instantiable1[/* config */ PathConfig, Path] {
   
   def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = js.native
@@ -26,7 +26,7 @@ trait TypeofPath
     rx: js.Any,
     ry: js.Any,
     psiDeg: js.Any
-  ): js.Array[_] = js.native
+  ): js.Array[js.Any] = js.native
   
   def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = js.native
   
@@ -45,19 +45,11 @@ trait TypeofPath
   def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = js.native
   
   def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = js.native
-  def getPointOnLine(
-    dist: js.Any,
-    P1x: js.Any,
-    P1y: js.Any,
-    P2x: js.Any,
-    P2y: js.Any,
-    fromX: js.UndefOr[scala.Nothing],
-    fromY: js.Any
-  ): js.Any = js.native
   def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = js.native
   def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = js.native
+  def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: Unit, fromY: js.Any): js.Any = js.native
   
   def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = js.native
   
-  def parsePathData(data: js.Any): js.Array[_] = js.native
+  def parsePathData(data: js.Any): js.Array[js.Any] = js.native
 }

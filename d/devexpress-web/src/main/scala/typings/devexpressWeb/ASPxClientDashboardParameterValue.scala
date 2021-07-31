@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to the parameter value and display text.
   */
-@js.native
 trait ASPxClientDashboardParameterValue extends StObject {
   
   /**
     * Returns the parameter display text.
     */
-  def GetDisplayText(): String = js.native
+  def GetDisplayText(): String
   
   /**
     * Returns a parameter value.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
 }
 object ASPxClientDashboardParameterValue {
   

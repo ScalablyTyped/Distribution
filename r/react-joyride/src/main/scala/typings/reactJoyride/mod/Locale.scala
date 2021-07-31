@@ -3,23 +3,21 @@ package typings.reactJoyride.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var back: js.UndefOr[ReactNode] = js.native
+  var back: js.UndefOr[ReactNode] = js.undefined
   
-  var close: js.UndefOr[ReactNode] = js.native
+  var close: js.UndefOr[ReactNode] = js.undefined
   
-  var last: js.UndefOr[ReactNode] = js.native
+  var last: js.UndefOr[ReactNode] = js.undefined
   
-  var next: js.UndefOr[ReactNode] = js.native
+  var next: js.UndefOr[ReactNode] = js.undefined
   
-  var open: js.UndefOr[ReactNode] = js.native
+  var open: js.UndefOr[ReactNode] = js.undefined
   
-  var skip: js.UndefOr[ReactNode] = js.native
+  var skip: js.UndefOr[ReactNode] = js.undefined
 }
 object Locale {
   

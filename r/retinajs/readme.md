@@ -12,7 +12,7 @@ Typings are for version 2.1
 | Keywords           | retina, images, @2x, @3x, retina.js |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 222184 |
+| # downloads        | 158176 |
 | # stars            | 0 |
 
 ## Links

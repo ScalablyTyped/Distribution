@@ -2,31 +2,29 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingBox extends StObject {
   
   /**
     * The height of the bounding box as a ratio of the overall document page height.
     */
-  var Height: js.UndefOr[Float] = js.native
+  var Height: js.UndefOr[Float] = js.undefined
   
   /**
     * The left coordinate of the bounding box as a ratio of overall document page width.
     */
-  var Left: js.UndefOr[Float] = js.native
+  var Left: js.UndefOr[Float] = js.undefined
   
   /**
     * The top coordinate of the bounding box as a ratio of overall document page height.
     */
-  var Top: js.UndefOr[Float] = js.native
+  var Top: js.UndefOr[Float] = js.undefined
   
   /**
     * The width of the bounding box as a ratio of the overall document page width.
     */
-  var Width: js.UndefOr[Float] = js.native
+  var Width: js.UndefOr[Float] = js.undefined
 }
 object BoundingBox {
   

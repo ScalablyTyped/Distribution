@@ -5,36 +5,34 @@ import typings.mfiles.MFiles.MFFullTextSearchFlags
 import typings.mfiles.MFiles.MFSearchFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultObjectSearchOperations extends StObject {
   
-  def FindFile(RelativePath: String, UpdateFromServer: Boolean): IObjectFileAndVersion = js.native
+  def FindFile(RelativePath: String, UpdateFromServer: Boolean): IObjectFileAndVersion
   
-  def FindObjectVersionAndProperties(RelativePath: String, UpdateFromServer: Boolean): IObjectVersionAndProperties = js.native
+  def FindObjectVersionAndProperties(RelativePath: String, UpdateFromServer: Boolean): IObjectVersionAndProperties
   
   def GetFacetValues(
     SearchConditions: ISearchConditions,
     Facets: IExpressions,
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags
-  ): IStringData = js.native
+  ): IStringData
   
-  def GetFacetValuesByPath(RelativePath: String, Facets: IExpressions, FacetValuesMaxCount: Double, Flags: MFFacetSearchFlags): IStringData = js.native
+  def GetFacetValuesByPath(RelativePath: String, Facets: IExpressions, FacetValuesMaxCount: Double, Flags: MFFacetSearchFlags): IStringData
   
-  def GetObjectCountInSearch(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags): Double = js.native
+  def GetObjectCountInSearch(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags): Double
   
-  def GetObjectsInPath(RelativePath: String, SortResults: Boolean, UpdateFromServer: Boolean): IObjectSearchResults = js.native
+  def GetObjectsInPath(RelativePath: String, SortResults: Boolean, UpdateFromServer: Boolean): IObjectSearchResults
   
-  def GetSearchHits(Input: String, SearchCondition: ISearchCondition): IStrings = js.native
+  def GetSearchHits(Input: String, SearchCondition: ISearchCondition): IStrings
   
-  def IsObjectPathInMFiles(RelativePath: String): Boolean = js.native
+  def IsObjectPathInMFiles(RelativePath: String): Boolean
   
-  def SearchForObjectsByCondition(SearchCondition: ISearchCondition, SortResults: Boolean): IObjectSearchResults = js.native
+  def SearchForObjectsByCondition(SearchCondition: ISearchCondition, SortResults: Boolean): IObjectSearchResults
   
-  def SearchForObjectsByConditions(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags, SortResults: Boolean): IObjectSearchResults = js.native
+  def SearchForObjectsByConditions(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags, SortResults: Boolean): IObjectSearchResults
   
   def SearchForObjectsByConditionsEx(
     SearchConditions: ISearchConditions,
@@ -42,15 +40,15 @@ trait IVaultObjectSearchOperations extends StObject {
     SortResults: Boolean,
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double
-  ): IObjectSearchResults = js.native
+  ): IObjectSearchResults
   
-  def SearchForObjectsByConditionsXML(SearchConditions: ISearchConditions, SortResults: Boolean): IXMLSearchResult = js.native
+  def SearchForObjectsByConditionsXML(SearchConditions: ISearchConditions, SortResults: Boolean): IXMLSearchResult
   
-  def SearchForObjectsByExportedSearchConditions(ExportedSearchString: String, SortResults: Boolean): IObjectSearchResults = js.native
+  def SearchForObjectsByExportedSearchConditions(ExportedSearchString: String, SortResults: Boolean): IObjectSearchResults
   
-  def SearchForObjectsByExportedSearchConditionsXML(SearchString: String, SortResults: Boolean): IXMLSearchResult = js.native
+  def SearchForObjectsByExportedSearchConditionsXML(SearchString: String, SortResults: Boolean): IXMLSearchResult
   
-  def SearchForObjectsByString(SearchString: String, SortResults: Boolean, FullTextSearchFlags: MFFullTextSearchFlags): IObjectSearchResults = js.native
+  def SearchForObjectsByString(SearchString: String, SortResults: Boolean, FullTextSearchFlags: MFFullTextSearchFlags): IObjectSearchResults
 }
 object IVaultObjectSearchOperations {
   

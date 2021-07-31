@@ -3,22 +3,21 @@ package typings.trezorConnect.mod
 import typings.trezorConnect.trezorConnectBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error
-  extends ResponseMessage[js.Any] {
+  extends StObject
+     with ResponseMessage[js.Any] {
   
-  var payload: typings.trezorConnect.anon.Error = js.native
+  var payload: typings.trezorConnect.anon.Error
   
-  var success: `false` = js.native
+  var success: `false`
 }
 object Error {
   
   @scala.inline
-  def apply(payload: typings.trezorConnect.anon.Error, success: `false`): Error = {
-    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+  def apply(payload: typings.trezorConnect.anon.Error): Error = {
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], success = false)
     __obj.asInstanceOf[Error]
   }
   

@@ -5,44 +5,42 @@ import typings.tensorflowTfjsConverter.compiledApiMod.OpDef.IAttrDef
 import typings.tensorflowTfjsConverter.compiledApiMod.OpDef.IOpDeprecation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOpDef extends StObject {
   
   /** OpDef allowsUninitializedInput */
-  var allowsUninitializedInput: js.UndefOr[Boolean | Null] = js.native
+  var allowsUninitializedInput: js.UndefOr[Boolean | Null] = js.undefined
   
   /** OpDef attr */
-  var attr: js.UndefOr[js.Array[IAttrDef] | Null] = js.native
+  var attr: js.UndefOr[js.Array[IAttrDef] | Null] = js.undefined
   
   /** OpDef deprecation */
-  var deprecation: js.UndefOr[IOpDeprecation | Null] = js.native
+  var deprecation: js.UndefOr[IOpDeprecation | Null] = js.undefined
   
   /** OpDef description */
-  var description: js.UndefOr[String | Null] = js.native
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /** OpDef inputArg */
-  var inputArg: js.UndefOr[js.Array[IArgDef] | Null] = js.native
+  var inputArg: js.UndefOr[js.Array[IArgDef] | Null] = js.undefined
   
   /** OpDef isAggregate */
-  var isAggregate: js.UndefOr[Boolean | Null] = js.native
+  var isAggregate: js.UndefOr[Boolean | Null] = js.undefined
   
   /** OpDef isCommutative */
-  var isCommutative: js.UndefOr[Boolean | Null] = js.native
+  var isCommutative: js.UndefOr[Boolean | Null] = js.undefined
   
   /** OpDef isStateful */
-  var isStateful: js.UndefOr[Boolean | Null] = js.native
+  var isStateful: js.UndefOr[Boolean | Null] = js.undefined
   
   /** OpDef name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** OpDef outputArg */
-  var outputArg: js.UndefOr[js.Array[IArgDef] | Null] = js.native
+  var outputArg: js.UndefOr[js.Array[IArgDef] | Null] = js.undefined
   
   /** OpDef summary */
-  var summary: js.UndefOr[String | Null] = js.native
+  var summary: js.UndefOr[String | Null] = js.undefined
 }
 object IOpDef {
   

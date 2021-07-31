@@ -2,31 +2,29 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsSuccess extends StObject {
   
   /**
     * 卡券的扩展参数，值为一个 JSON 字符串
     */
-  var cardExt: String = js.native
+  var cardExt: String
   
   /**
     * 用户领取到卡券的 ID
     */
-  var cardId: String = js.native
+  var cardId: String
   
   /**
     * 加密 code，为用户领取到卡券的code加密后的字符串，解密请参照：code 解码接口
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * 是否成功
     */
-  var isSuccess: Boolean = js.native
+  var isSuccess: Boolean
 }
 object IsSuccess {
   

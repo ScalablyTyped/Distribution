@@ -2,14 +2,15 @@ package typings.eventsource
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("eventsource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends EventSource {
+  class ^ protected ()
+    extends StObject
+       with EventSource {
     def this(url: String) = this()
     def this(url: String, eventSourceInitDict: EventSourceInitDict) = this()
   }
@@ -36,19 +37,25 @@ object mod {
   object ReadyState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ReadyState & Double] = js.native
     
     @js.native
-    sealed trait CLOSED extends ReadyState
-    /* 2 */ val CLOSED: typings.eventsource.mod.ReadyState.CLOSED with Double = js.native
+    sealed trait CLOSED
+      extends StObject
+         with ReadyState
+    /* 2 */ val CLOSED: typings.eventsource.mod.ReadyState.CLOSED & Double = js.native
     
     @js.native
-    sealed trait CONNECTING extends ReadyState
-    /* 0 */ val CONNECTING: typings.eventsource.mod.ReadyState.CONNECTING with Double = js.native
+    sealed trait CONNECTING
+      extends StObject
+         with ReadyState
+    /* 0 */ val CONNECTING: typings.eventsource.mod.ReadyState.CONNECTING & Double = js.native
     
     @js.native
-    sealed trait OPEN extends ReadyState
-    /* 1 */ val OPEN: typings.eventsource.mod.ReadyState.OPEN with Double = js.native
+    sealed trait OPEN
+      extends StObject
+         with ReadyState
+    /* 1 */ val OPEN: typings.eventsource.mod.ReadyState.OPEN & Double = js.native
   }
   
   @js.native
@@ -66,11 +73,11 @@ object mod {
     
     def dispatchEvent(evt: Event): Boolean = js.native
     
-    def onerror(evt: MessageEvent[_]): js.Any = js.native
+    def onerror(evt: MessageEvent[js.Any]): js.Any = js.native
     
-    def onmessage(evt: MessageEvent[_]): js.Any = js.native
+    def onmessage(evt: MessageEvent[js.Any]): js.Any = js.native
     
-    def onopen(evt: MessageEvent[_]): js.Any = js.native
+    def onopen(evt: MessageEvent[js.Any]): js.Any = js.native
     
     val readyState: Double = js.native
     
@@ -82,18 +89,17 @@ object mod {
     val withCredentials: Boolean = js.native
   }
   
-  @js.native
   trait EventSourceInitDict extends StObject {
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var https: js.UndefOr[js.Object] = js.native
+    var https: js.UndefOr[js.Object] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object EventSourceInitDict {
     

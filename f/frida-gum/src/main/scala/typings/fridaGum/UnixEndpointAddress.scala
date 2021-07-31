@@ -2,16 +2,16 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnixEndpointAddress extends SocketEndpointAddress {
+trait UnixEndpointAddress
+  extends StObject
+     with SocketEndpointAddress {
   
   /**
     * UNIX socket path.
     */
-  var path: String = js.native
+  var path: String
 }
 object UnixEndpointAddress {
   

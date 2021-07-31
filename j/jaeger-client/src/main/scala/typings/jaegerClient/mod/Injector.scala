@@ -3,13 +3,11 @@ package typings.jaegerClient.mod
 import typings.opentracing.mod.SpanContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Injector extends StObject {
   
-  def inject(spanContext: SpanContext, carrier: js.Any): Unit = js.native
+  def inject(spanContext: SpanContext, carrier: js.Any): Unit
 }
 object Injector {
   

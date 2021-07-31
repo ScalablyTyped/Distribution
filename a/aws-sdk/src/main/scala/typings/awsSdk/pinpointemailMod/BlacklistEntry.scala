@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlacklistEntry extends StObject {
   
   /**
     * Additional information about the blacklisting event, as provided by the blacklist maintainer.
     */
-  var Description: js.UndefOr[BlacklistingDescription] = js.native
+  var Description: js.UndefOr[BlacklistingDescription] = js.undefined
   
   /**
     * The time when the blacklisting event occurred, shown in Unix time format.
     */
-  var ListingTime: js.UndefOr[Timestamp] = js.native
+  var ListingTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the blacklist that the IP address appears on.
     */
-  var RblName: js.UndefOr[typings.awsSdk.pinpointemailMod.RblName] = js.native
+  var RblName: js.UndefOr[typings.awsSdk.pinpointemailMod.RblName] = js.undefined
 }
 object BlacklistEntry {
   

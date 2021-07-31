@@ -2,35 +2,33 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitSlideshowOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var `autoplay-interval`: js.UndefOr[Double] = js.native
+  var `autoplay-interval`: js.UndefOr[Double] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var finite: js.UndefOr[Boolean] = js.native
+  var finite: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var `max-height`: js.UndefOr[Boolean | Double] = js.native
+  var `max-height`: js.UndefOr[Boolean | Double] = js.undefined
   
-  var `min-height`: js.UndefOr[Boolean | Double] = js.native
+  var `min-height`: js.UndefOr[Boolean | Double] = js.undefined
   
-  var `pause-on-hover`: js.UndefOr[Boolean] = js.native
+  var `pause-on-hover`: js.UndefOr[Boolean] = js.undefined
   
-  var ratio: js.UndefOr[String | Double] = js.native
+  var ratio: js.UndefOr[String | Double] = js.undefined
   
-  var velocity: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.undefined
 }
 object UIkitSlideshowOptions {
   

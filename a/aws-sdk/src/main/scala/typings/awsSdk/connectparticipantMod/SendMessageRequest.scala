@@ -2,31 +2,29 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageRequest extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.connectparticipantMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.connectparticipantMod.ClientToken] = js.undefined
   
   /**
     * The authentication token associated with the connection.
     */
-  var ConnectionToken: ParticipantToken = js.native
+  var ConnectionToken: ParticipantToken
   
   /**
     * The content of the message.
     */
-  var Content: ChatContent = js.native
+  var Content: ChatContent
   
   /**
     * The type of the content. Supported types are text/plain.
     */
-  var ContentType: ChatContentType = js.native
+  var ContentType: ChatContentType
 }
 object SendMessageRequest {
   

@@ -11,8 +11,8 @@ Finds countries by various country codes
 | Full name          | country-code-lookup |
 | Keywords           | fips, iso, country, code, countries |
 | # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 345550 |
+| # dependents       | 10 |
+| # downloads        | 496096 |
 | # stars            | 2 |
 
 ## Links

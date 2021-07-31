@@ -2,25 +2,25 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AtRuleNewProps extends ContainerNewProps {
+trait AtRuleNewProps
+  extends StObject
+     with ContainerNewProps {
   
   /**
     * The identifier that immediately follows the @.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * These are the values that follow the at-rule's name, but precede any {}
     * block. The spec refers to this area as the at-rule's "prelude".
     */
-  var params: js.UndefOr[String | Double] = js.native
+  var params: js.UndefOr[String | Double] = js.undefined
   
   @JSName("raws")
-  var raws_AtRuleNewProps: js.UndefOr[AtRuleRaws] = js.native
+  var raws_AtRuleNewProps: js.UndefOr[AtRuleRaws] = js.undefined
 }
 object AtRuleNewProps {
   

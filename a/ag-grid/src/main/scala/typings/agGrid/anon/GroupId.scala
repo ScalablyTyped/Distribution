@@ -2,15 +2,13 @@ package typings.agGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupId extends StObject {
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var open: Boolean = js.native
+  var open: Boolean
 }
 object GroupId {
   

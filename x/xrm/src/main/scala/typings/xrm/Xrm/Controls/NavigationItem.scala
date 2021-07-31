@@ -2,7 +2,6 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link UiFocusable}
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui-navigation External Link: formContext.ui.navigation item (Client API reference)}
   */
-@js.native
 trait NavigationItem
-  extends UiStandardElement
+  extends StObject
+     with UiStandardElement
      with UiFocusable {
   
   /**
     * Gets the name of the item.
     * @returns The identifier.
     */
-  def getId(): String = js.native
+  def getId(): String
 }
 object NavigationItem {
   

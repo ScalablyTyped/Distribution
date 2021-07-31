@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** this interface converts graphic object URLs from one URL space to another. */
-@js.native
-trait XGraphicObjectResolver extends XInterface {
+trait XGraphicObjectResolver
+  extends StObject
+     with XInterface {
   
   /** converts the given URL from the source URL namespace to the destination URL space of this instance. */
-  def resolveGraphicObjectURL(aURL: String): String = js.native
+  def resolveGraphicObjectURL(aURL: String): String
 }
 object XGraphicObjectResolver {
   

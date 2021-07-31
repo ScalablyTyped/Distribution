@@ -3,7 +3,6 @@ package typings.reactSpringShared
 import typings.reactSpringShared.esmTypesMod.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmFrameLoopMod {
@@ -48,14 +47,13 @@ object esmFrameLoopMod {
     def start(animation: OpaqueAnimation): Unit = js.native
   }
   
-  @js.native
   trait OpaqueAnimation extends StObject {
     
-    def advance(dt: Double): Unit = js.native
+    def advance(dt: Double): Unit
     
-    var idle: Boolean = js.native
+    var idle: Boolean
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object OpaqueAnimation {
     
@@ -81,14 +79,13 @@ object esmFrameLoopMod {
   
   type RequestFrameFn = js.Function1[/* cb */ FrameRequestCallback, Double | Unit]
   
-  @js.native
   trait Timeout extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def handler(): Unit = js.native
+    def handler(): Unit
     
-    var time: Double = js.native
+    var time: Double
   }
   object Timeout {
     

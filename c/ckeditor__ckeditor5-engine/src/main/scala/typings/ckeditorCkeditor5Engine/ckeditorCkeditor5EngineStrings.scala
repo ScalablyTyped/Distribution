@@ -7,7 +7,6 @@ import typings.ckeditorCkeditor5Engine.mod.view.ChangeType
 import typings.ckeditorCkeditor5Engine.mod.view.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ckeditorCkeditor5EngineStrings {
@@ -19,7 +18,8 @@ object ckeditorCkeditor5EngineStrings {
   
   @js.native
   sealed trait after
-    extends PositionRelation
+    extends StObject
+       with PositionRelation
        with typings.ckeditorCkeditor5Engine.mod.view.PositionRelation
   @scala.inline
   def after: after = "after".asInstanceOf[after]
@@ -30,29 +30,38 @@ object ckeditorCkeditor5EngineStrings {
   def attributeElement: attributeElement = "attributeElement".asInstanceOf[attributeElement]
   
   @js.native
-  sealed trait attributes extends ChangeType
+  sealed trait attributes
+    extends StObject
+       with ChangeType
   @scala.inline
   def attributes: attributes = "attributes".asInstanceOf[attributes]
   
   @js.native
-  sealed trait backward extends TreeWalkerDirection
+  sealed trait backward
+    extends StObject
+       with TreeWalkerDirection
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
   sealed trait before
-    extends PositionRelation
+    extends StObject
+       with PositionRelation
        with typings.ckeditorCkeditor5Engine.mod.view.PositionRelation
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait character extends TreeWalkerValueType
+  sealed trait character
+    extends StObject
+       with TreeWalkerValueType
   @scala.inline
   def character: character = "character".asInstanceOf[character]
   
   @js.native
-  sealed trait children extends ChangeType
+  sealed trait children
+    extends StObject
+       with ChangeType
   @scala.inline
   def children: children = "children".asInstanceOf[children]
   
@@ -68,7 +77,8 @@ object ckeditorCkeditor5EngineStrings {
   
   @js.native
   sealed trait different
-    extends typings.ckeditorCkeditor5Engine.mod.view.PositionRelation
+    extends StObject
+       with typings.ckeditorCkeditor5Engine.mod.view.PositionRelation
   @scala.inline
   def different: different = "different".asInstanceOf[different]
   
@@ -84,14 +94,16 @@ object ckeditorCkeditor5EngineStrings {
   
   @js.native
   sealed trait elementEnd
-    extends TreeWalkerValueType
+    extends StObject
+       with TreeWalkerValueType
        with typings.ckeditorCkeditor5Engine.mod.view.TreeWalkerValueType
   @scala.inline
   def elementEnd: elementEnd = "elementEnd".asInstanceOf[elementEnd]
   
   @js.native
   sealed trait elementStart
-    extends TreeWalkerValueType
+    extends StObject
+       with TreeWalkerValueType
        with typings.ckeditorCkeditor5Engine.mod.view.TreeWalkerValueType
   @scala.inline
   def elementStart: elementStart = "elementStart".asInstanceOf[elementStart]
@@ -107,7 +119,9 @@ object ckeditorCkeditor5EngineStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait forward extends TreeWalkerDirection
+  sealed trait forward
+    extends StObject
+       with TreeWalkerDirection
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   
@@ -118,14 +132,16 @@ object ckeditorCkeditor5EngineStrings {
   
   @js.native
   sealed trait same
-    extends PositionRelation
+    extends StObject
+       with PositionRelation
        with typings.ckeditorCkeditor5Engine.mod.view.PositionRelation
   @scala.inline
   def same: same = "same".asInstanceOf[same]
   
   @js.native
   sealed trait text
-    extends ChangeType
+    extends StObject
+       with ChangeType
        with TreeWalkerValueType
        with typings.ckeditorCkeditor5Engine.mod.view.TreeWalkerValueType
   @scala.inline
@@ -137,17 +153,23 @@ object ckeditorCkeditor5EngineStrings {
   def textProxy: textProxy = "textProxy".asInstanceOf[textProxy]
   
   @js.native
-  sealed trait toNext extends PositionStickiness
+  sealed trait toNext
+    extends StObject
+       with PositionStickiness
   @scala.inline
   def toNext: toNext = "toNext".asInstanceOf[toNext]
   
   @js.native
-  sealed trait toNone extends PositionStickiness
+  sealed trait toNone
+    extends StObject
+       with PositionStickiness
   @scala.inline
   def toNone: toNone = "toNone".asInstanceOf[toNone]
   
   @js.native
-  sealed trait toPrevious extends PositionStickiness
+  sealed trait toPrevious
+    extends StObject
+       with PositionStickiness
   @scala.inline
   def toPrevious: toPrevious = "toPrevious".asInstanceOf[toPrevious]
   

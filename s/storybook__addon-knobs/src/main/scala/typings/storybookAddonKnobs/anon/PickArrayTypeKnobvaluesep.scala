@@ -3,16 +3,14 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.ArrayTypeKnob, 'value' | 'separator'> */
-@js.native
 trait PickArrayTypeKnobvaluesep extends StObject {
   
-  var separator: String = js.native
+  var separator: String
   
-  var value: ArrayTypeKnobValue = js.native
+  var value: ArrayTypeKnobValue
 }
 object PickArrayTypeKnobvaluesep {
   

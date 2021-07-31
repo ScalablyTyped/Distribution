@@ -3,13 +3,13 @@ package typings.bmapgl.anon
 import typings.bmapgl.BMapGL.MapStyleV2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StyleId extends MapStyleV2 {
+trait StyleId
+  extends StObject
+     with MapStyleV2 {
   
-  var styleId: String = js.native
+  var styleId: String
 }
 object StyleId {
   

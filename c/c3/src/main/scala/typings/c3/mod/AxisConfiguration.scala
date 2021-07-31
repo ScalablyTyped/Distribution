@@ -3,38 +3,36 @@ package typings.c3.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisConfiguration extends StObject {
   
   /**
     * Show the axis inside of the chart.
     */
-  var inner: js.UndefOr[Boolean] = js.native
+  var inner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set max value of the axis.
     */
-  var max: js.UndefOr[String | Double | Date] = js.native
+  var max: js.UndefOr[String | Double | Date] = js.undefined
   
   /**
     * Set min value of the axis.
     */
-  var min: js.UndefOr[String | Double | Date] = js.native
+  var min: js.UndefOr[String | Double | Date] = js.undefined
   
   /**
     * Set padding for axis.
     * If this option is set, the range of axis will increase/decrease according to the values. If no padding is needed in the range of axis, `0` should be set. On category axis, this option
     * will be ignored.
     */
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
   /**
     * Show or hide the axis.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object AxisConfiguration {
   

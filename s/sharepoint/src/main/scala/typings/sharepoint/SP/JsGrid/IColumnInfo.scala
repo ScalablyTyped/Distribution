@@ -2,49 +2,47 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnInfo extends StObject {
   
   /** Column identifier */
-  var columnKey: String = js.native
+  var columnKey: String
   
   /** Column identifier */
-  var fieldKey: String = js.native
+  var fieldKey: String
   
   /** Field keys of the fields, that are displayed in this column */
-  var fieldKeys: js.Array[String] = js.native
+  var fieldKeys: js.Array[String]
   
   /** Column image URL.
     If not null, the column header cell will show the image instead of title text.
     If the title is defined at the same time as the imgSrc, the title will be shown as a tooltip. */
-  var imgSrc: js.UndefOr[String] = js.native
+  var imgSrc: js.UndefOr[String] = js.undefined
   
   /** true by default */
-  var isAutoFilterable: js.UndefOr[Boolean] = js.native
+  var isAutoFilterable: js.UndefOr[Boolean] = js.undefined
   
   /** false by default */
-  var isFooter: js.UndefOr[Boolean] = js.native
+  var isFooter: js.UndefOr[Boolean] = js.undefined
   
   /** true by default */
-  var isHidable: js.UndefOr[Boolean] = js.native
+  var isHidable: js.UndefOr[Boolean] = js.undefined
   
   /** true by default */
-  var isResizable: js.UndefOr[Boolean] = js.native
+  var isResizable: js.UndefOr[Boolean] = js.undefined
   
   /** true by default */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** true by default */
-  var isVisible: js.UndefOr[Boolean] = js.native
+  var isVisible: js.UndefOr[Boolean] = js.undefined
   
   /** Column title */
-  var name: String = js.native
+  var name: String
   
   /** Width of the column */
-  var width: Double = js.native
+  var width: Double
 }
 object IColumnInfo {
   

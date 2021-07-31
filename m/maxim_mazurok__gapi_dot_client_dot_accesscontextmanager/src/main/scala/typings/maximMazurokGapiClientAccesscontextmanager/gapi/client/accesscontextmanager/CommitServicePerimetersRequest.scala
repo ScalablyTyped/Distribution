@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitServicePerimetersRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CommitServicePerimetersRequest extends StObject {
     * Context Manager is different from the specified etag, then the commit operation will not be performed and the call will fail. This field is not required. If etag is not provided,
     * the operation will be performed as if a valid etag is provided.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object CommitServicePerimetersRequest {
   

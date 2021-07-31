@@ -5,13 +5,11 @@ import typings.ejs.ejsBooleans.`true`
 import typings.ejs.mod.EscapeCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined ejs.ejs.Options & {  async :false} */
-  @js.native
   trait Optionsasyncfalse extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -29,14 +27,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with `false` = js.native
+    var async: js.UndefOr[Boolean] & `false`
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -48,7 +46,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -57,7 +55,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -66,7 +64,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -74,27 +72,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -102,7 +100,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -110,7 +108,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -118,14 +116,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -134,10 +132,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -147,7 +145,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -155,7 +153,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -163,12 +161,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasyncfalse {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with `false`): Optionsasyncfalse = {
+    def apply(async: js.UndefOr[Boolean] & `false`): Optionsasyncfalse = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncfalse]
     }
@@ -177,7 +175,7 @@ object anon {
     implicit class OptionsasyncfalseMutableBuilder[Self <: Optionsasyncfalse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -293,7 +291,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :false | undefined,   client :false | undefined} */
-  @js.native
   trait Optionsasyncfalseundefine extends StObject {
     
     /**
@@ -303,7 +300,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -311,14 +308,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -330,7 +327,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -339,7 +336,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var client: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -348,7 +345,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -356,27 +353,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -384,7 +381,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -392,7 +389,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -400,14 +397,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -416,10 +413,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -429,7 +426,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -437,7 +434,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -445,14 +442,14 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasyncfalseundefine {
     
     @scala.inline
     def apply(
-      async: js.UndefOr[Boolean] with js.UndefOr[`false`],
-      client: js.UndefOr[Boolean] with js.UndefOr[`false`]
+      async: js.UndefOr[Boolean] & js.UndefOr[`false`],
+      client: js.UndefOr[Boolean] & js.UndefOr[`false`]
     ): Optionsasyncfalseundefine = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncfalseundefine]
@@ -462,7 +459,7 @@ object anon {
     implicit class OptionsasyncfalseundefineMutableBuilder[Self <: Optionsasyncfalseundefine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -477,7 +474,7 @@ object anon {
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       @scala.inline
-      def setClient(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
@@ -575,7 +572,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :false | undefined,   client :true} */
-  @js.native
   trait OptionsasyncfalseundefineAsync extends StObject {
     
     /**
@@ -585,7 +581,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -593,14 +589,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -612,7 +608,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -621,7 +617,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] with `true` = js.native
+    var client: js.UndefOr[Boolean] & `true`
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -630,7 +626,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -638,27 +634,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -666,7 +662,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -674,7 +670,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -682,14 +678,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -698,10 +694,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -711,7 +707,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -719,7 +715,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -727,12 +723,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsasyncfalseundefineAsync {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with js.UndefOr[`false`], client: js.UndefOr[Boolean] with `true`): OptionsasyncfalseundefineAsync = {
+    def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`], client: js.UndefOr[Boolean] & `true`): OptionsasyncfalseundefineAsync = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsasyncfalseundefineAsync]
     }
@@ -741,7 +737,7 @@ object anon {
     implicit class OptionsasyncfalseundefineAsyncMutableBuilder[Self <: OptionsasyncfalseundefineAsync] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -756,7 +752,7 @@ object anon {
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       @scala.inline
-      def setClient(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
@@ -854,7 +850,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :never | undefined} */
-  @js.native
   trait Optionsasyncneverundefine extends StObject {
     
     /**
@@ -864,7 +859,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -872,14 +867,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with js.UndefOr[scala.Nothing] = js.native
+    var async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -891,7 +886,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -900,7 +895,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -909,7 +904,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -917,27 +912,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -945,7 +940,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -953,7 +948,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -961,14 +956,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -977,10 +972,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -990,7 +985,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -998,7 +993,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -1006,12 +1001,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasyncneverundefine {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with js.UndefOr[scala.Nothing]): Optionsasyncneverundefine = {
+    def apply(async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Optionsasyncneverundefine = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncneverundefine]
     }
@@ -1020,7 +1015,7 @@ object anon {
     implicit class OptionsasyncneverundefineMutableBuilder[Self <: Optionsasyncneverundefine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with js.UndefOr[scala.Nothing]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -1136,7 +1131,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :true} */
-  @js.native
   trait Optionsasynctrue extends StObject {
     
     /**
@@ -1146,7 +1140,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -1154,14 +1148,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with `true` = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -1173,7 +1167,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -1182,7 +1176,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -1191,7 +1185,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -1199,27 +1193,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -1227,7 +1221,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -1235,7 +1229,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -1243,14 +1237,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -1259,10 +1253,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -1272,7 +1266,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -1280,7 +1274,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -1288,12 +1282,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasynctrue {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with `true`): Optionsasynctrue = {
+    def apply(async: js.UndefOr[Boolean] & `true`): Optionsasynctrue = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrue]
     }
@@ -1302,7 +1296,7 @@ object anon {
     implicit class OptionsasynctrueMutableBuilder[Self <: Optionsasynctrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -1418,7 +1412,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :true,   client :false | undefined} */
-  @js.native
   trait Optionsasynctrueclientfal extends StObject {
     
     /**
@@ -1428,7 +1421,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -1436,14 +1429,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with `true` = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -1455,7 +1448,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -1464,7 +1457,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var client: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -1473,7 +1466,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -1481,27 +1474,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -1509,7 +1502,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -1517,7 +1510,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -1525,14 +1518,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -1541,10 +1534,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -1554,7 +1547,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -1562,7 +1555,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -1570,12 +1563,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasynctrueclientfal {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with `true`, client: js.UndefOr[Boolean] with js.UndefOr[`false`]): Optionsasynctrueclientfal = {
+    def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsasynctrueclientfal = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrueclientfal]
     }
@@ -1584,7 +1577,7 @@ object anon {
     implicit class OptionsasynctrueclientfalMutableBuilder[Self <: Optionsasynctrueclientfal] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -1599,7 +1592,7 @@ object anon {
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       @scala.inline
-      def setClient(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
@@ -1697,7 +1690,6 @@ object anon {
   }
   
   /* Inlined ejs.ejs.Options & {  async :true,   client :true} */
-  @js.native
   trait Optionsasynctrueclienttru extends StObject {
     
     /**
@@ -1707,7 +1699,7 @@ object anon {
       *
       * @default true
       */
-    var _with: js.UndefOr[Boolean] = js.native
+    var _with: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to create an async function instead of a regular function.
@@ -1715,14 +1707,14 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with `true` = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
       * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
       * @default true
       */
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to enable caching of template functions. Beware that
@@ -1734,7 +1726,7 @@ object anon {
       *
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to compile a `ClientFunction` that can be rendered
@@ -1743,7 +1735,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] with `true` = js.native
+    var client: js.UndefOr[Boolean] & `true`
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -1752,7 +1744,7 @@ object anon {
       *
       * @default ejs.closeDelimiter
       */
-    var closeDelimiter: js.UndefOr[String] = js.native
+    var closeDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Include additional runtime debugging information in generated template
@@ -1760,27 +1752,27 @@ object anon {
       *
       * @default true
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Object to which `this` is set during rendering.
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Character to use with angle brackets for open/close
       * @default '%'
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of local variables that are always destructured from `localsName`,
@@ -1788,7 +1780,7 @@ object anon {
       *
       * @default []
       */
-    var destructuredLocals: js.UndefOr[js.Array[String]] = js.native
+    var destructuredLocals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The escaping function used with `<%=` construct. It is used in rendering
@@ -1796,7 +1788,7 @@ object anon {
       *
       * @default ejs.escapeXML
       */
-    var escape: js.UndefOr[EscapeCallback] = js.native
+    var escape: js.UndefOr[EscapeCallback] = js.undefined
     
     /**
       * The filename of the template. Required for inclusion and caching unless
@@ -1804,14 +1796,14 @@ object anon {
       *
       * @default undefined
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
       *
       * @default ejs.localsName
       */
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
     /**
       * The opening delimiter for all statements. This allows you to clearly delinate
@@ -1820,10 +1812,10 @@ object anon {
       *
       * @default ejs.openDelimiter
       */
-    var openDelimiter: js.UndefOr[String] = js.native
+    var openDelimiter: js.UndefOr[String] = js.undefined
     
     /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
-    var outputFunctionName: js.UndefOr[String] = js.native
+    var outputFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all safe-to-remove whitespace, including leading and trailing
@@ -1833,7 +1825,7 @@ object anon {
       *
       * @default false
       */
-    var rmWhitespace: js.UndefOr[Boolean] = js.native
+    var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to the project root. When this is set, absolute paths for includes
@@ -1841,7 +1833,7 @@ object anon {
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -1849,12 +1841,12 @@ object anon {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsasynctrueclienttru {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with `true`, client: js.UndefOr[Boolean] with `true`): Optionsasynctrueclienttru = {
+    def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & `true`): Optionsasynctrueclienttru = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrueclienttru]
     }
@@ -1863,7 +1855,7 @@ object anon {
     implicit class OptionsasynctrueclienttruMutableBuilder[Self <: Optionsasynctrueclienttru] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
@@ -1878,7 +1870,7 @@ object anon {
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       @scala.inline
-      def setClient(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
@@ -1975,6 +1967,5 @@ object anon {
     }
   }
   
-  @js.native
   trait ToString extends StObject
 }

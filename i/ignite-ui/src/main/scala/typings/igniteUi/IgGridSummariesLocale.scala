@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridSummariesLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,37 +16,37 @@ trait IgGridSummariesLocale
     * Text of the button Cancel in the summaries dropdown
     *
     */
-  var dialogButtonCancelText: js.UndefOr[String] = js.native
+  var dialogButtonCancelText: js.UndefOr[String] = js.undefined
   
   /**
     * Text of the button OK in the summaries dropdown
     *
     */
-  var dialogButtonOKText: js.UndefOr[String] = js.native
+  var dialogButtonOKText: js.UndefOr[String] = js.undefined
   
   /**
     * Empty text template to be shown for empty cells
     *
     */
-  var emptyCellText: js.UndefOr[String] = js.native
+  var emptyCellText: js.UndefOr[String] = js.undefined
   
   /**
     * Get or set text that is shown in the feature chooser dropdown when summaries are hidden
     *
     */
-  var featureChooserText: js.UndefOr[String] = js.native
+  var featureChooserText: js.UndefOr[String] = js.undefined
   
   /**
     * Get or set text that is shown in the feauture chooser dropdown when summaries are shown
     *
     */
-  var featureChooserTextHide: js.UndefOr[String] = js.native
+  var featureChooserTextHide: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for header cell button
     *
     */
-  var summariesHeaderButtonTooltip: js.UndefOr[String] = js.native
+  var summariesHeaderButtonTooltip: js.UndefOr[String] = js.undefined
 }
 object IgGridSummariesLocale {
   

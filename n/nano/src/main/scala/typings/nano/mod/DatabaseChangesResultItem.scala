@@ -3,24 +3,22 @@ package typings.nano.mod
 import typings.nano.anon.Rev
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
-@js.native
 trait DatabaseChangesResultItem extends StObject {
   
   // List of document’s leaves with single field rev.
-  var changes: js.Array[Rev] = js.native
+  var changes: js.Array[Rev]
   
   // true if the document is deleted.
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
   // Document ID.
-  var id: String = js.native
+  var id: String
   
   // Update sequence.
-  var seq: js.Any = js.native
+  var seq: js.Any
 }
 object DatabaseChangesResultItem {
   

@@ -3,14 +3,13 @@ package typings.sharepoint.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictname
-  extends /* name */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[js.Any] {
   
-  var Key: String = js.native
+  var Key: String
 }
 object Dictname {
   

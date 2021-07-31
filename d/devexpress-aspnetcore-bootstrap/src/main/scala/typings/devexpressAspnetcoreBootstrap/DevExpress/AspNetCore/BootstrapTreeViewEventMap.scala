@@ -2,25 +2,25 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapTreeViewEventMap extends ControlEventMap {
+trait BootstrapTreeViewEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var checkedChanged: TreeViewNodeProcessingModeEventArgs = js.native
+  var checkedChanged: TreeViewNodeProcessingModeEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var expandedChanged: TreeViewNodeEventArgs = js.native
+  var expandedChanged: TreeViewNodeEventArgs
   
-  var expandedChanging: TreeViewNodeCancelEventArgs = js.native
+  var expandedChanging: TreeViewNodeCancelEventArgs
   
-  var nodeClick: TreeViewNodeClickEventArgs = js.native
+  var nodeClick: TreeViewNodeClickEventArgs
 }
 object BootstrapTreeViewEventMap {
   

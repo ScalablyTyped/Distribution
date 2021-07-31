@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,8 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * //     signatureAlgorithm   AlgorithmIdentifier,
   * //     signatureValue       BIT STRING  }
   */
-@js.native
-trait CRL extends ASN1Object {
+trait CRL
+  extends StObject
+     with ASN1Object {
   
   /**
     * get PEM formatted CRL string after signed
@@ -41,7 +41,7 @@ trait CRL extends ASN1Object {
     * cert.sign();
     * var sPEM =  cert.getPEMString();
     */
-  def getPEMString(): String = js.native
+  def getPEMString(): String
   
   /**
     * sign TBSCertList and set signature value internally
@@ -49,7 +49,7 @@ trait CRL extends ASN1Object {
     * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'prvkeyobj': prvKey});
     * cert.sign();
     */
-  def sign(): Unit = js.native
+  def sign(): Unit
 }
 object CRL {
   

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vectorTileRenderTypeMod {
@@ -12,13 +11,13 @@ object vectorTileRenderTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[VectorTileRenderType with String] = js.native
+    def apply(value: String): js.UndefOr[VectorTileRenderType & String] = js.native
     
-    /* "hybrid" */ val HYBRID: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.HYBRID with String = js.native
+    /* "hybrid" */ val HYBRID: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.HYBRID & String = js.native
     
-    /* "image" */ val IMAGE: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.IMAGE with String = js.native
+    /* "image" */ val IMAGE: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.IMAGE & String = js.native
     
-    /* "vector" */ val VECTOR: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.VECTOR with String = js.native
+    /* "vector" */ val VECTOR: typings.ol.vectorTileRenderTypeMod.VectorTileRenderType.VECTOR & String = js.native
   }
   
   @js.native
@@ -28,12 +27,18 @@ object vectorTileRenderTypeMod {
   object VectorTileRenderType extends StObject {
     
     @js.native
-    sealed trait HYBRID extends VectorTileRenderType
+    sealed trait HYBRID
+      extends StObject
+         with VectorTileRenderType
     
     @js.native
-    sealed trait IMAGE extends VectorTileRenderType
+    sealed trait IMAGE
+      extends StObject
+         with VectorTileRenderType
     
     @js.native
-    sealed trait VECTOR extends VectorTileRenderType
+    sealed trait VECTOR
+      extends StObject
+         with VectorTileRenderType
   }
 }

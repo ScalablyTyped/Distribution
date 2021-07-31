@@ -2,18 +2,18 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait ParagraphToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait ParagraphToken
+  extends StObject
+     with TagToken {
   
   /**
     * Absence of empty line before current tag: `true` if absent, `false`
     * if present. List is tight if any list item is tight.
     */
-  var tight: Boolean = js.native
+  var tight: Boolean
 }
 object ParagraphToken {
   

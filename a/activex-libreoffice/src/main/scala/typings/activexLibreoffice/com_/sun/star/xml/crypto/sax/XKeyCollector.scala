@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate key materials.
   */
-@js.native
-trait XKeyCollector extends XInterface {
+trait XKeyCollector
+  extends StObject
+     with XInterface {
   
   /**
     * Set the keeper id of the key element.
     * @param id the keeper id of the key element. If the id is 0, then it represents that this security entity has included its key material internally.
     */
-  def setKeyId(id: Double): Unit = js.native
+  def setKeyId(id: Double): Unit
 }
 object XKeyCollector {
   

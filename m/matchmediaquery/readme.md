@@ -11,8 +11,8 @@ Media queries for your client and server
 | Full name          | matchmediaquery |
 | Keywords           | media, query, matchmedia, isomorphic, mq, responsive |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 9336605 |
+| # dependents       | 5 |
+| # downloads        | 11509719 |
 | # stars            | 0 |
 
 ## Links

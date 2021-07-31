@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait beginsWith extends LabelFilterCondition
+  sealed trait beginsWith
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Between `lowerBound` and `upperBound` criteria.
@@ -37,7 +38,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait between extends LabelFilterCondition
+  sealed trait between
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Label contains substring criterion.
@@ -47,7 +50,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait contains extends LabelFilterCondition
+  sealed trait contains
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Label ends with substring criterion.
@@ -57,7 +62,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait endsWith extends LabelFilterCondition
+  sealed trait endsWith
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Equals comparator criterion.
@@ -67,7 +74,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait equals extends LabelFilterCondition
+  sealed trait equals
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Greater than comparator criterion.
@@ -76,7 +85,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait greaterThan extends LabelFilterCondition
+  sealed trait greaterThan
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Greater than or equal to comparator criterion.
@@ -85,7 +96,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait greaterThanOrEqualTo extends LabelFilterCondition
+  sealed trait greaterThanOrEqualTo
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Less than comparator criterion.
@@ -94,7 +107,9 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait lessThan extends LabelFilterCondition
+  sealed trait lessThan
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * Less than or equal to comparator criterion.
@@ -103,12 +118,16 @@ object LabelFilterCondition extends StObject {
     *
     */
   @js.native
-  sealed trait lessThanOrEqualTo extends LabelFilterCondition
+  sealed trait lessThanOrEqualTo
+    extends StObject
+       with LabelFilterCondition
   
   /**
     * LabelFilterCondition is unknown or unsupported.
     *
     */
   @js.native
-  sealed trait unknown extends LabelFilterCondition
+  sealed trait unknown
+    extends StObject
+       with LabelFilterCondition
 }

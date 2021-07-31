@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityDetails extends StObject {
   
   /**
     * The EntityInfo object that contains details about the entity (user or role).
     */
-  var EntityInfo: typings.awsSdk.iamMod.EntityInfo = js.native
+  var EntityInfo: typings.awsSdk.iamMod.EntityInfo
   
   /**
     * The date and time, in ISO 8601 date-time format, when the authenticated entity last attempted to access AWS. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
-  var LastAuthenticated: js.UndefOr[dateType] = js.native
+  var LastAuthenticated: js.UndefOr[dateType] = js.undefined
 }
 object EntityDetails {
   

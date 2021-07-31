@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelMaintenanceWindowExecutionResult extends StObject {
   
   /**
     * The ID of the maintenance window execution that has been stopped.
     */
-  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.native
+  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
 }
 object CancelMaintenanceWindowExecutionResult {
   

@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data from the ImagePreviewReceived event. */
-@js.native
 trait BarcodeScannerImagePreviewReceivedEventArgs extends StObject {
   
   /** Gets the BitmapImage from the device representing a preview frame. */
-  var preview: IRandomAccessStreamWithContentType = js.native
+  var preview: IRandomAccessStreamWithContentType
 }
 object BarcodeScannerImagePreviewReceivedEventArgs {
   

@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'encodeParameters'> */
-@js.native
 trait PickImplencodeParameters extends StObject {
   
-  var encodeParameters: Boolean = js.native
+  var encodeParameters: Boolean
 }
 object PickImplencodeParameters {
   

@@ -4,7 +4,6 @@ import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
 import typings.awsSdk.s3Mod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "S3")

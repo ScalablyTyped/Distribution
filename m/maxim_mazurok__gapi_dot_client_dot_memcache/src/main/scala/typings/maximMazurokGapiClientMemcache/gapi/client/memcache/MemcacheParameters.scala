@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemcacheParameters extends StObject {
   
   /**
     * Output only. The unique ID associated with this set of parameters. Users can use this id to determine if the parameters associated with the instance differ from the parameters
     * associated with the nodes and any action needs to be taken to apply parameters on nodes.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** User defined set of parameters to use in the memcached process. */
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[js.Any]
+  ] = js.undefined
 }
 object MemcacheParameters {
   
@@ -43,7 +41,7 @@ object MemcacheParameters {
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline

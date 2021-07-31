@@ -2,106 +2,104 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDevEndpointResponse extends StObject {
   
   /**
     * The map of arguments used to configure this DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
-  var Arguments: js.UndefOr[MapValue] = js.native
+  var Arguments: js.UndefOr[MapValue] = js.undefined
   
   /**
     * The AWS Availability Zone where this DevEndpoint is located.
     */
-  var AvailabilityZone: js.UndefOr[GenericString] = js.native
+  var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The point in time at which this DevEndpoint was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampValue] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The name assigned to the new DevEndpoint.
     */
-  var EndpointName: js.UndefOr[GenericString] = js.native
+  var EndpointName: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Path to one or more Java .jar files in an S3 bucket that will be loaded in your DevEndpoint.
     */
-  var ExtraJarsS3Path: js.UndefOr[GenericString] = js.native
+  var ExtraJarsS3Path: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The paths to one or more Python libraries in an S3 bucket that will be loaded in your DevEndpoint.
     */
-  var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.native
+  var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The reason for a current failure in this DevEndpoint.
     */
-  var FailureReason: js.UndefOr[GenericString] = js.native
+  var FailureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints. 
     */
-  var GlueVersion: js.UndefOr[GlueVersionString] = js.native
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   
   /**
     * The number of AWS Glue Data Processing Units (DPUs) allocated to this DevEndpoint.
     */
-  var NumberOfNodes: js.UndefOr[IntegerValue] = js.native
+  var NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined
   
   /**
     * The number of workers of a defined workerType that are allocated to the development endpoint.
     */
-  var NumberOfWorkers: js.UndefOr[NullableInteger] = js.native
+  var NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role assigned to the new DevEndpoint.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.glueMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.glueMod.RoleArn] = js.undefined
   
   /**
     * The name of the SecurityConfiguration structure being used with this DevEndpoint.
     */
-  var SecurityConfiguration: js.UndefOr[NameString] = js.native
+  var SecurityConfiguration: js.UndefOr[NameString] = js.undefined
   
   /**
     * The security groups assigned to the new DevEndpoint.
     */
-  var SecurityGroupIds: js.UndefOr[StringList] = js.native
+  var SecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * The current status of the new DevEndpoint.
     */
-  var Status: js.UndefOr[GenericString] = js.native
+  var Status: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The subnet ID assigned to the new DevEndpoint.
     */
-  var SubnetId: js.UndefOr[GenericString] = js.native
+  var SubnetId: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The ID of the virtual private cloud (VPC) used by this DevEndpoint.
     */
-  var VpcId: js.UndefOr[GenericString] = js.native
+  var VpcId: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The type of predefined worker that is allocated to the development endpoint. May be a value of Standard, G.1X, or G.2X.
     */
-  var WorkerType: js.UndefOr[typings.awsSdk.glueMod.WorkerType] = js.native
+  var WorkerType: js.UndefOr[typings.awsSdk.glueMod.WorkerType] = js.undefined
   
   /**
     * The address of the YARN endpoint used by this DevEndpoint.
     */
-  var YarnEndpointAddress: js.UndefOr[GenericString] = js.native
+  var YarnEndpointAddress: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The Apache Zeppelin port for the remote Apache Spark interpreter.
     */
-  var ZeppelinRemoteSparkInterpreterPort: js.UndefOr[IntegerValue] = js.native
+  var ZeppelinRemoteSparkInterpreterPort: js.UndefOr[IntegerValue] = js.undefined
 }
 object CreateDevEndpointResponse {
   

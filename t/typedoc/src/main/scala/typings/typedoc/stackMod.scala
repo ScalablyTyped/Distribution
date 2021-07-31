@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
@@ -13,7 +12,7 @@ object stackMod {
   @JSImport("typedoc/dist/lib/output/utils/resources/stack", "Resource")
   @js.native
   abstract class Resource protected () extends StObject {
-    def this(origin: ResourceOrigin[_], name: String, fileName: String) = this()
+    def this(origin: ResourceOrigin[js.Any], name: String, fileName: String) = this()
     
     var fileName: String = js.native
     
@@ -21,7 +20,7 @@ object stackMod {
     
     var name: String = js.native
     
-    var origin: ResourceOrigin[_] = js.native
+    var origin: ResourceOrigin[js.Any] = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/stack", "ResourceOrigin")

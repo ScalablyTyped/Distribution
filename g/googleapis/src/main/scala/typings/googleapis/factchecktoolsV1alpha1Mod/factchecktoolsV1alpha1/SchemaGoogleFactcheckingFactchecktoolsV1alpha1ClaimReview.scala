@@ -2,45 +2,43 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a claim review.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends StObject {
   
   /**
     * The language this review was written in. For instance, &quot;en&quot; or
     * &quot;de&quot;.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The publisher of this claim review.
     */
-  var publisher: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher] = js.native
+  var publisher: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher] = js.undefined
   
   /**
     * The date the claim was reviewed.
     */
-  var reviewDate: js.UndefOr[String] = js.native
+  var reviewDate: js.UndefOr[String] = js.undefined
   
   /**
     * Textual rating. For instance, &quot;Mostly false&quot;.
     */
-  var textualRating: js.UndefOr[String] = js.native
+  var textualRating: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this claim review, if it can be determined.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of this claim review.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview {
   

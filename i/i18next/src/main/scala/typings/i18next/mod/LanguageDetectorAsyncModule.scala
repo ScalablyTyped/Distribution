@@ -4,37 +4,35 @@ import typings.i18next.i18nextBooleans.`true`
 import typings.i18next.i18nextStrings.languageDetector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanguageDetectorAsyncModule extends Module {
+trait LanguageDetectorAsyncModule
+  extends StObject
+     with Module {
   
   /** Set to true to enable async detection */
-  var async: `true` = js.native
+  var async: `true`
   
-  def cacheUserLanguage(lng: String): Unit = js.native
+  def cacheUserLanguage(lng: String): Unit
   
   /** Must call callback passing detected language */
-  def detect(callback: js.Function1[/* lng */ String, Unit]): Unit = js.native
+  def detect(callback: js.Function1[/* lng */ String, Unit]): Unit
   
-  def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit = js.native
+  def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit
   
   @JSName("type")
-  var type_LanguageDetectorAsyncModule: languageDetector = js.native
+  var type_LanguageDetectorAsyncModule: languageDetector
 }
 object LanguageDetectorAsyncModule {
   
   @scala.inline
   def apply(
-    async: `true`,
     cacheUserLanguage: String => Unit,
     detect: js.Function1[/* lng */ String, Unit] => Unit,
-    init: (Services, js.Object, InitOptions) => Unit,
-    `type`: languageDetector
+    init: (Services, js.Object, InitOptions) => Unit
   ): LanguageDetectorAsyncModule = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction1(detect), init = js.Any.fromFunction3(init))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = true, cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction1(detect), init = js.Any.fromFunction3(init))
+    __obj.updateDynamic("type")("languageDetector")
     __obj.asInstanceOf[LanguageDetectorAsyncModule]
   }
   

@@ -2,16 +2,14 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GestureResponderHandlers extends StObject {
   
   /**
     * Called for every touch move on the View when it is not the responder: does this view want to "claim" touch responsiveness?
     */
-  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   /**
     * onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
@@ -26,18 +24,18 @@ trait GestureResponderHandlers extends StObject {
     * So if a parent View wants to prevent the child from becoming responder on a touch start,
     * it should have a onStartShouldSetResponderCapture handler which returns true.
     */
-  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   /**
     * If the View returns true and attempts to become the responder, one of the following will happen:
     */
-  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * The View is now responding for touch events.
     * This is the time to highlight and show the user what is happening
     */
-  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * If the view is responding, the following handlers can be called:
@@ -45,32 +43,32 @@ trait GestureResponderHandlers extends StObject {
   /**
     * The user is moving their finger
     */
-  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * Something else is the responder right now and will not release it
     */
-  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * Fired at the end of the touch, ie "touchUp"
     */
-  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * The responder has been taken from the View.
     * Might be taken by other views after a call to onResponderTerminationRequest,
     * or might be taken by the OS without asking (happens with control center/ notification center on iOS)
     */
-  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     *  Something else wants to become responder.
     *  Should this view release the responder? Returning true allows release
     */
-  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   /**
     * A view can become the touch responder by implementing the correct negotiation methods.
@@ -79,7 +77,7 @@ trait GestureResponderHandlers extends StObject {
   /**
     * Does this view want to become responder on the start of a touch?
     */
-  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   /**
     * onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
@@ -94,7 +92,7 @@ trait GestureResponderHandlers extends StObject {
     * So if a parent View wants to prevent the child from becoming responder on a touch start,
     * it should have a onStartShouldSetResponderCapture handler which returns true.
     */
-  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
 }
 object GestureResponderHandlers {
   

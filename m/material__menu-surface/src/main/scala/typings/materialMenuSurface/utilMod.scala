@@ -3,20 +3,21 @@ package typings.materialMenuSurface
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
+  @JSImport("@material/menu-surface/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns the name of the correct transform property to use on the current browser.
     */
-  @JSImport("@material/menu-surface/util", "getTransformPropertyName")
-  @js.native
-  def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = js.native
-  @JSImport("@material/menu-surface/util", "getTransformPropertyName")
-  @js.native
-  def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = js.native
+  @scala.inline
+  def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any]).asInstanceOf[CssTransformPropertyName]
+  @scala.inline
+  def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[CssTransformPropertyName]
   
   /**
     * @license

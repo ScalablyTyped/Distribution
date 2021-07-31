@@ -2,50 +2,48 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ribbon's RibbonTab object.
   */
-@js.native
 trait ASPxClientRibbonTab extends StObject {
   
   /**
     * Returns a value indicating whether a ribbon tab is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Returns the text displayed in the tab.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Returns a value specifying whether a ribbon tab is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Sets a value specifying whether the tab is enabled.
     * @param enabled true to enable the tab; false to disable it.
     */
-  def SetEnabled(enabled: Boolean): Unit = js.native
+  def SetEnabled(enabled: Boolean): Unit
   
   /**
     * Gets or sets the tab's index within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name of the current ribbon tab.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the client ribbon object to which the current tab belongs.
     */
-  var ribbon: ASPxClientRibbon = js.native
+  var ribbon: ASPxClientRibbon
 }
 object ASPxClientRibbonTab {
   

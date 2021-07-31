@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardExt extends StObject {
   
   /**
     * 卡券的扩展参数。需将 CardExt 对象 JSON 序列化为字符串传入
     */
-  var cardExt: String = js.native
+  var cardExt: String
   
   /**
     * 卡券 ID
     */
-  var cardId: String = js.native
+  var cardId: String
 }
 object CardExt {
   

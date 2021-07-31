@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitConfigSourceResponse extends StObject {
   
   /** The generated service configuration. */
-  var serviceConfig: js.UndefOr[Service] = js.native
+  var serviceConfig: js.UndefOr[Service] = js.undefined
 }
 object SubmitConfigSourceResponse {
   

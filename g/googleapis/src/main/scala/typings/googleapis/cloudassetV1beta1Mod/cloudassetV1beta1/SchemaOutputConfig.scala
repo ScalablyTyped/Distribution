@@ -2,19 +2,17 @@ package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output configuration for export assets destination.
   */
-@js.native
 trait SchemaOutputConfig extends StObject {
   
   /**
     * Destination on Cloud Storage.
     */
-  var gcsDestination: js.UndefOr[SchemaGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[SchemaGcsDestination] = js.undefined
 }
 object SchemaOutputConfig {
   

@@ -4,20 +4,18 @@ import typings.freedom.anon.RemoveEventListener
 import typings.freedom.anon.Views
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This is the first argument given to a core provider's constructor. It is an
 // object that describes the parent module the core provider instance has been
 // created for.
-@js.native
 trait CoreProviderParentApp extends StObject {
   
-  var config: Views = js.native
+  var config: Views
   
-  var global: RemoveEventListener = js.native
+  var global: RemoveEventListener
   
-  var manifestId: String = js.native
+  var manifestId: String
 }
 object CoreProviderParentApp {
   

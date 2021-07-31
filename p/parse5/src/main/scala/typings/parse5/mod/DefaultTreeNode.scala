@@ -2,16 +2,14 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultTreeNode extends StObject {
   
   /**
     * The name of the node. E.g. {@link Document} will have `nodeName` equal to '#document'`.
     */
-  var nodeName: String = js.native
+  var nodeName: String
 }
 object DefaultTreeNode {
   

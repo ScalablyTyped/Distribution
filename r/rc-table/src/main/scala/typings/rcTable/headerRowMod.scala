@@ -10,16 +10,15 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerRowMod {
   
   object default {
     
-    @JSImport("rc-table/lib/Header/HeaderRow", JSImport.Default)
-    @js.native
-    def apply[RecordType](hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex: RowProps[RecordType]): Element = js.native
+    @scala.inline
+    def apply[RecordType](hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex: RowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("rc-table/lib/Header/HeaderRow", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -31,22 +30,21 @@ object headerRowMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait RowProps[RecordType] extends StObject {
     
-    var cellComponent: CustomizeComponent = js.native
+    var cellComponent: CustomizeComponent
     
-    var cells: js.Array[CellType[RecordType]] = js.native
+    var cells: js.Array[CellType[RecordType]]
     
-    var flattenColumns: js.Array[ColumnType[RecordType]] = js.native
+    var flattenColumns: js.Array[ColumnType[RecordType]]
     
-    var index: Double = js.native
+    var index: Double
     
-    var onHeaderRow: GetComponentProps[js.Array[ColumnType[RecordType]]] = js.native
+    var onHeaderRow: GetComponentProps[js.Array[ColumnType[RecordType]]]
     
-    var rowComponent: CustomizeComponent = js.native
+    var rowComponent: CustomizeComponent
     
-    var stickyOffsets: StickyOffsets = js.native
+    var stickyOffsets: StickyOffsets
   }
   object RowProps {
     
@@ -65,7 +63,7 @@ object headerRowMod {
     }
     
     @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps[_], RecordType] (val x: Self with RowProps[RecordType]) extends AnyVal {
+    implicit class RowPropsMutableBuilder[Self <: RowProps[?], RecordType] (val x: Self & RowProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])

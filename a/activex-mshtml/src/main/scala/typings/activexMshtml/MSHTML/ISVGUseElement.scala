@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGUseElement extends StObject {
   
   @JSName("MSHTML.ISVGUseElement_typekey")
-  var MSHTMLDotISVGUseElement_typekey: ISVGUseElement = js.native
+  var MSHTMLDotISVGUseElement_typekey: ISVGUseElement
   
-  var animatedInstanceRoot: ISVGElementInstance = js.native
+  var animatedInstanceRoot: ISVGElementInstance
   
-  var height: SVGAnimatedLength = js.native
+  var height: SVGAnimatedLength
   
-  var instanceRoot: ISVGElementInstance = js.native
+  var instanceRoot: ISVGElementInstance
   
-  var width: SVGAnimatedLength = js.native
+  var width: SVGAnimatedLength
   
-  var x: SVGAnimatedLength = js.native
+  var x: SVGAnimatedLength
   
-  var y: SVGAnimatedLength = js.native
+  var y: SVGAnimatedLength
 }
 object ISVGUseElement {
   

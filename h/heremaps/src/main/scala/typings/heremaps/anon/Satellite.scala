@@ -3,17 +3,15 @@ package typings.heremaps.anon
 import typings.heremaps.H.service.MapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Satellite extends StObject {
   
-  var normal: MapType = js.native
+  var normal: MapType
   
-  var satellite: MapType = js.native
+  var satellite: MapType
   
-  var terrain: MapType = js.native
+  var terrain: MapType
 }
 object Satellite {
   

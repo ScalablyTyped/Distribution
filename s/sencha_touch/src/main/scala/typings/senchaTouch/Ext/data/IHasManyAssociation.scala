@@ -2,96 +2,95 @@ package typings.senchaTouch.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHasManyAssociation
-  extends typings.senchaTouch.Ext.data.association.IAssociation {
+  extends StObject
+     with typings.senchaTouch.Ext.data.association.IAssociation {
   
   /** [Config Option] (Boolean) */
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoSync: js.UndefOr[Boolean] = js.native
+  var autoSync: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var filterProperty: js.UndefOr[String] = js.native
+  var filterProperty: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[String] = js.native
+  var foreignKey: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of autoLoad
     * @returns Boolean
     */
-  var getAutoLoad: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of autoSync
     * @returns Boolean
     */
-  var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of filterProperty
     * @returns String
     */
-  var getFilterProperty: js.UndefOr[js.Function0[String]] = js.native
+  var getFilterProperty: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of foreignKey
     * @returns String
     */
-  var getForeignKey: js.UndefOr[js.Function0[String]] = js.native
+  var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of store
     * @returns Object
     */
-  var getStore: js.UndefOr[js.Function0[_]] = js.native
+  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of storeName
     * @returns String
     */
-  var getStoreName: js.UndefOr[js.Function0[String]] = js.native
+  var getStoreName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of autoLoad
     * @param autoLoad Boolean The new value.
     */
-  var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoSync
     * @param autoSync Boolean The new value.
     */
-  var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of filterProperty
     * @param filterProperty String The new value.
     */
-  var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.native
+  var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of foreignKey
     * @param foreignKey String The new value.
     */
-  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.native
+  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of store
     * @param store Object The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.native
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of storeName
     * @param storeName String The new value.
     */
-  var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.native
+  var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var store: js.UndefOr[js.Any] = js.native
+  var store: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var storeConfig: js.UndefOr[js.Any] = js.native
+  var storeConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var storeName: js.UndefOr[String] = js.native
+  var storeName: js.UndefOr[String] = js.undefined
 }
 object IHasManyAssociation {
   
@@ -153,7 +152,7 @@ object IHasManyAssociation {
     def setGetForeignKeyUndefined: Self = StObject.set(x, "getForeignKey", js.undefined)
     
     @scala.inline
-    def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))

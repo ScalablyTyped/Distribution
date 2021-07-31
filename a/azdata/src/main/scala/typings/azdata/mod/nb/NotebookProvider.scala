@@ -4,23 +4,21 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookProvider extends StObject {
   
-  def getNotebookManager(notebookUri: Uri): Thenable[NotebookManager] = js.native
+  def getNotebookManager(notebookUri: Uri): Thenable[NotebookManager]
   
-  def handleNotebookClosed(notebookUri: Uri): Unit = js.native
+  def handleNotebookClosed(notebookUri: Uri): Unit
   
-  val providerId: String = js.native
+  val providerId: String
   
   /**
     * @deprecated standardKernels will be removed in an upcoming release. Standard kernel contribution
     * should happen via JSON for extensions. Until this is removed, notebook providers can safely return an empty array.
     */
-  val standardKernels: js.Array[IStandardKernel] = js.native
+  val standardKernels: js.Array[IStandardKernel]
 }
 object NotebookProvider {
   

@@ -2,13 +2,11 @@ package typings.wechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICloudMetaData extends StObject {
   
-  var session_id: String = js.native
+  var session_id: String
 }
 object ICloudMetaData {
   

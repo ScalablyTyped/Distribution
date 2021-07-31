@@ -2,25 +2,23 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hierarchy extends StObject {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
-  var levels: js.UndefOr[js.Array[Level]] = js.native
+  var levels: js.UndefOr[js.Array[Level]] = js.undefined
   
-  var sortName: js.UndefOr[String] = js.native
+  var sortName: js.UndefOr[String] = js.undefined
   
-  var sortOrder: js.UndefOr[js.Array[String]] = js.native
+  var sortOrder: js.UndefOr[js.Array[String]] = js.undefined
   
-  var uniqueName: js.UndefOr[String] = js.native
+  var uniqueName: js.UndefOr[String] = js.undefined
 }
 object Hierarchy {
   

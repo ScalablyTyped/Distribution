@@ -3,21 +3,19 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`cursor-update`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolygonDrawActionCursorUpdateEvent extends StObject {
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `cursor-update` = js.native
+  var `type`: `cursor-update`
   
-  var vertexIndex: Double = js.native
+  var vertexIndex: Double
   
-  var vertices: js.Array[js.Array[Double]] = js.native
+  var vertices: js.Array[js.Array[Double]]
 }
 object PolygonDrawActionCursorUpdateEvent {
   
@@ -25,12 +23,11 @@ object PolygonDrawActionCursorUpdateEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: `cursor-update`,
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): PolygonDrawActionCursorUpdateEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cursor-update")
     __obj.asInstanceOf[PolygonDrawActionCursorUpdateEvent]
   }
   

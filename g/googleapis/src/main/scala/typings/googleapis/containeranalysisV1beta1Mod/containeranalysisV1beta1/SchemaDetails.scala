@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of an attestation occurrence.
   */
-@js.native
 trait SchemaDetails extends StObject {
   
   /**
     * Required. Attestation for the resource.
     */
-  var attestation: js.UndefOr[SchemaAttestation] = js.native
+  var attestation: js.UndefOr[SchemaAttestation] = js.undefined
 }
 object SchemaDetails {
   

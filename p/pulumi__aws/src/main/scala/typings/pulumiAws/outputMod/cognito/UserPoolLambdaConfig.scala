@@ -2,61 +2,59 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolLambdaConfig extends StObject {
   
   /**
     * The ARN of the lambda creating an authentication challenge.
     */
-  var createAuthChallenge: js.UndefOr[String] = js.native
+  var createAuthChallenge: js.UndefOr[String] = js.undefined
   
   /**
     * A custom Message AWS Lambda trigger.
     */
-  var customMessage: js.UndefOr[String] = js.native
+  var customMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the authentication challenge.
     */
-  var defineAuthChallenge: js.UndefOr[String] = js.native
+  var defineAuthChallenge: js.UndefOr[String] = js.undefined
   
   /**
     * A post-authentication AWS Lambda trigger.
     */
-  var postAuthentication: js.UndefOr[String] = js.native
+  var postAuthentication: js.UndefOr[String] = js.undefined
   
   /**
     * A post-confirmation AWS Lambda trigger.
     */
-  var postConfirmation: js.UndefOr[String] = js.native
+  var postConfirmation: js.UndefOr[String] = js.undefined
   
   /**
     * A pre-authentication AWS Lambda trigger.
     */
-  var preAuthentication: js.UndefOr[String] = js.native
+  var preAuthentication: js.UndefOr[String] = js.undefined
   
   /**
     * A pre-registration AWS Lambda trigger.
     */
-  var preSignUp: js.UndefOr[String] = js.native
+  var preSignUp: js.UndefOr[String] = js.undefined
   
   /**
     * Allow to customize identity token claims before token generation.
     */
-  var preTokenGeneration: js.UndefOr[String] = js.native
+  var preTokenGeneration: js.UndefOr[String] = js.undefined
   
   /**
     * The user migration Lambda config type.
     */
-  var userMigration: js.UndefOr[String] = js.native
+  var userMigration: js.UndefOr[String] = js.undefined
   
   /**
     * Verifies the authentication challenge response.
     */
-  var verifyAuthChallengeResponse: js.UndefOr[String] = js.native
+  var verifyAuthChallengeResponse: js.UndefOr[String] = js.undefined
 }
 object UserPoolLambdaConfig {
   

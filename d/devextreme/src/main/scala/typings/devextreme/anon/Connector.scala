@@ -13,37 +13,35 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connector extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ColorDashStyle] = js.native
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   
-  var connector: js.UndefOr[ColorOpacity] = js.native
+  var connector: js.UndefOr[ColorOpacity] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Percent, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Percent, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[left | right] = js.native
+  var horizontalAlignment: js.UndefOr[left | right] = js.undefined
   
-  var horizontalOffset: js.UndefOr[Double] = js.native
+  var horizontalOffset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[columns | inside | outside] = js.native
+  var position: js.UndefOr[columns | inside | outside] = js.undefined
   
-  var showForZeroValues: js.UndefOr[Boolean] = js.native
+  var showForZeroValues: js.UndefOr[Boolean] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 object Connector {
   

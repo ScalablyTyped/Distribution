@@ -8,7 +8,6 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,5 +22,5 @@ object mod {
   
   @JSImport("@react-md/overlay", "Overlay")
   @js.native
-  val Overlay: ForwardRefExoticComponent[OverlayProps with RefAttributes[HTMLDivElement]] = js.native
+  val Overlay: ForwardRefExoticComponent[OverlayProps & RefAttributes[HTMLDivElement]] = js.native
 }

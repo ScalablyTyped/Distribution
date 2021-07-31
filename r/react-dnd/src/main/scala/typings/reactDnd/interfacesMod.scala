@@ -19,7 +19,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -28,12 +27,12 @@ object interfacesMod {
   trait DndComponent[Props]
     extends Component[Props, js.Object, js.Any] {
     
-    def getDecoratedComponentInstance(): (Component[Props, js.Object, _]) | Null = js.native
+    def getDecoratedComponentInstance(): (Component[Props, js.Object, js.Any]) | Null = js.native
     
     def getHandlerId(): Identifier = js.native
   }
   
-  type DndComponentClass[C /* <: ComponentType[_] */, P] = (ComponentClass[LibraryManagedAttributes[C, P], ComponentState]) with (NonReactStatics[C, js.Object]) with DecoratedComponent[C]
+  type DndComponentClass[C /* <: ComponentType[js.Any] */, P] = (ComponentClass[LibraryManagedAttributes[C, P], ComponentState]) & (NonReactStatics[C, js.Object]) & DecoratedComponent[C]
   
   type DndComponentEnhancer[CollectedProps] = js.Function1[
     /* component */ js.Any, 
@@ -55,7 +54,6 @@ object interfacesMod {
     CollectedProps
   ]
   
-  @js.native
   trait DragSourceConnector extends StObject {
     
     /**
@@ -69,7 +67,7 @@ object interfacesMod {
       * from a lifecycle method like componentDidMount. This lets you use the actual images for drag previews. (Note that IE does not
       * support this customization). See the example code below for the different usage examples.
       */
-    def dragPreview(): ConnectDragPreview = js.native
+    def dragPreview(): ConnectDragPreview
     
     /**
       * Returns a function that must be used inside the component to assign the drag source role to a node. By
@@ -77,7 +75,7 @@ object interfacesMod {
       * element as the draggable node. To do that, replace any element with this.props.connectDragSource(element) inside
       * the render function.
       */
-    def dragSource(): ConnectDragSource = js.native
+    def dragSource(): ConnectDragSource
   }
   object DragSourceConnector {
     
@@ -98,7 +96,6 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait DragSourceSpec[Props, DragObject] extends StObject {
     
     /**
@@ -109,7 +106,7 @@ object interfacesMod {
       * to the component into it, but you should try very hard to avoid doing this because it couples the drag
       * sources and drop targets. It's a good idea to return something like { id: props.id } from this method.
       */
-    def beginDrag(props: Props, monitor: DragSourceMonitor, component: js.Any): DragObject = js.native
+    def beginDrag(props: Props, monitor: DragSourceMonitor, component: js.Any): DragObject
     
     /**
       * Optional.
@@ -117,7 +114,7 @@ object interfacesMod {
       * Specifying it is handy if you'd like to disable dragging based on some predicate over props. Note: You may not call
       * monitor.canDrag() inside this method.
       */
-    var canDrag: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DragSourceMonitor, Boolean]] = js.native
+    var canDrag: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DragSourceMonitor, Boolean]] = js.undefined
     
     /**
       * Optional.
@@ -129,7 +126,7 @@ object interfacesMod {
       */
     var endDrag: js.UndefOr[
         js.Function3[/* props */ Props, /* monitor */ DragSourceMonitor, /* component */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional.
@@ -141,7 +138,7 @@ object interfacesMod {
       *
       * Note: You may not call monitor.isDragging() inside this method.
       */
-    var isDragging: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DragSourceMonitor, Boolean]] = js.native
+    var isDragging: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DragSourceMonitor, Boolean]] = js.undefined
   }
   object DragSourceSpec {
     
@@ -152,7 +149,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class DragSourceSpecMutableBuilder[Self <: DragSourceSpec[_, _], Props, DragObject] (val x: Self with (DragSourceSpec[Props, DragObject])) extends AnyVal {
+    implicit class DragSourceSpecMutableBuilder[Self <: DragSourceSpec[?, ?], Props, DragObject] (val x: Self & (DragSourceSpec[Props, DragObject])) extends AnyVal {
       
       @scala.inline
       def setBeginDrag(value: (Props, DragSourceMonitor, js.Any) => DragObject): Self = StObject.set(x, "beginDrag", js.Any.fromFunction3(value))
@@ -184,7 +181,6 @@ object interfacesMod {
     CollectedProps
   ]
   
-  @js.native
   trait DropTargetConnector extends StObject {
     
     /**
@@ -192,7 +188,7 @@ object interfacesMod {
       * By returning { connectDropTarget: connect.dropTarget() } from your collecting function, you can mark any React element
       * as the droppable node. To do that, replace any element with this.props.connectDropTarget(element) inside the render function.
       */
-    def dropTarget(): ConnectDropTarget = js.native
+    def dropTarget(): ConnectDropTarget
   }
   object DropTargetConnector {
     
@@ -210,7 +206,6 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait DropTargetSpec[Props] extends StObject {
     
     /**
@@ -218,7 +213,7 @@ object interfacesMod {
       * omit this method. Specifying it is handy if you'd like to disable dropping based on some predicate over props or
       * monitor.getItem(). Note: You may not call monitor.canDrop() inside this method.
       */
-    var canDrop: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DropTargetMonitor, Boolean]] = js.native
+    var canDrop: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DropTargetMonitor, Boolean]] = js.undefined
     
     /**
       * Optional.
@@ -231,8 +226,8 @@ object interfacesMod {
       * is defined and returns false.
       */
     var drop: js.UndefOr[
-        js.Function3[/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any, _]
-      ] = js.native
+        js.Function3[/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any, js.Any]
+      ] = js.undefined
     
     /**
       * Optional.
@@ -242,7 +237,7 @@ object interfacesMod {
       */
     var hover: js.UndefOr[
         js.Function3[/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object DropTargetSpec {
     
@@ -253,7 +248,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class DropTargetSpecMutableBuilder[Self <: DropTargetSpec[_], Props] (val x: Self with DropTargetSpec[Props]) extends AnyVal {
+    implicit class DropTargetSpecMutableBuilder[Self <: DropTargetSpec[?], Props] (val x: Self & DropTargetSpec[Props]) extends AnyVal {
       
       @scala.inline
       def setCanDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
@@ -262,7 +257,7 @@ object interfacesMod {
       def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
       
       @scala.inline
-      def setDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => _): Self = StObject.set(x, "drop", js.Any.fromFunction3(value))
+      def setDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction3(value))
       
       @scala.inline
       def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
@@ -279,11 +274,11 @@ object interfacesMod {
   
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.reactDnd.reactDndStrings.Matching with TopLevel[js.Any]
+    */ typings.reactDnd.reactDndStrings.Matching & TopLevel[js.Any]
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.reactDnd.reactDndStrings.Shared with TopLevel[js.Any]
+    */ typings.reactDnd.reactDndStrings.Shared & TopLevel[js.Any]
 }

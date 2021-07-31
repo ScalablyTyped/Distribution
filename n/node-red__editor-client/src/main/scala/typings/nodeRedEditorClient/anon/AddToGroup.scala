@@ -3,29 +3,27 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.move
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddToGroup extends StObject {
   
-  var addToGroup: js.UndefOr[js.Object] = js.native
+  var addToGroup: js.UndefOr[js.Object] = js.undefined
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var nodes: js.Array[js.Object] = js.native
+  var nodes: js.Array[js.Object]
   
-  var removeFromGroup: js.UndefOr[js.Object] = js.native
+  var removeFromGroup: js.UndefOr[js.Object] = js.undefined
   
-  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var removedLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: move = js.native
+  var t: move
 }
 object AddToGroup {
   
   @scala.inline
-  def apply(nodes: js.Array[js.Object], t: move): AddToGroup = {
-    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+  def apply(nodes: js.Array[js.Object]): AddToGroup = {
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], t = "move")
     __obj.asInstanceOf[AddToGroup]
   }
   

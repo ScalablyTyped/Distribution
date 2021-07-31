@@ -2,33 +2,31 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFace extends StObject {
   
-  var MozFontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.native
+  var MozFontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
   
-  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty] = js.native
+  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.native
+  var fontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
   
-  var fontStretch: js.UndefOr[FontFaceFontStretchProperty] = js.native
+  var fontStretch: js.UndefOr[FontFaceFontStretchProperty] = js.undefined
   
-  var fontStyle: js.UndefOr[FontFaceFontStyleProperty] = js.native
+  var fontStyle: js.UndefOr[FontFaceFontStyleProperty] = js.undefined
   
-  var fontVariant: js.UndefOr[FontFaceFontVariantProperty] = js.native
+  var fontVariant: js.UndefOr[FontFaceFontVariantProperty] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[FontFaceFontVariationSettingsProperty] = js.native
+  var fontVariationSettings: js.UndefOr[FontFaceFontVariationSettingsProperty] = js.undefined
   
-  var fontWeight: js.UndefOr[FontFaceFontWeightProperty] = js.native
+  var fontWeight: js.UndefOr[FontFaceFontWeightProperty] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var unicodeRange: js.UndefOr[String] = js.native
+  var unicodeRange: js.UndefOr[String] = js.undefined
 }
 object FontFace {
   

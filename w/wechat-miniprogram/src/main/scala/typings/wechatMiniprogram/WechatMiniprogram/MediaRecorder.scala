@@ -4,7 +4,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.start
 import typings.wechatMiniprogram.wechatMiniprogramStrings.stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,9 +21,12 @@ trait MediaRecorder extends StObject {
     * 取消监听录制事件。当对应事件触发时，该回调函数不再执行。
     *
     * 最低基础库： `2.11.0` */
-  def off(/** 事件名 */
-  eventName: String, /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def off(
+    /** 事件名 */
+  eventName: String,
+    /** 事件触发时执行的回调函数 */
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
   
   /** [MediaRecorder.on(string eventName, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/media-recorder/MediaRecorder.on.html)
     *
@@ -40,7 +42,7 @@ trait MediaRecorder extends StObject {
     * - 'stop': 录制结束事件。返回 {tempFilePath, duration, fileSize}; */
   eventName: start,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   @JSName("on")
   def on_stop(
@@ -51,7 +53,7 @@ trait MediaRecorder extends StObject {
     * - 'stop': 录制结束事件。返回 {tempFilePath, duration, fileSize}; */
   eventName: stop,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   /** [MediaRecorder.pause()](https://developers.weixin.qq.com/miniprogram/dev/api/media/media-recorder/MediaRecorder.pause.html)
@@ -66,7 +68,7 @@ trait MediaRecorder extends StObject {
     * 请求下一帧录制，在 callback 里完成一帧渲染后开始录制当前帧
     *
     * 最低基础库： `2.11.0` */
-  def requestFrame(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def requestFrame(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [MediaRecorder.resume()](https://developers.weixin.qq.com/miniprogram/dev/api/media/media-recorder/MediaRecorder.resume.html)
     *

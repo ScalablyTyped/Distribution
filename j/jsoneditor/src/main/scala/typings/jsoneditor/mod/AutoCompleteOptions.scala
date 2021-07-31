@@ -2,22 +2,20 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCompleteOptions extends StObject {
   
   /**
     * Indicate if the autocomplete is going to be strict case-sensitive to match the options.
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate the KeyCodes for trigger confirm completion, by default those keys are: `[39, 35, 9]` which are the code for `[right, end, tab]`.
     * @default [39, 35, 9]
     */
-  var confirmKeys: js.UndefOr[js.Array[Double]] = js.native
+  var confirmKeys: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Pick one of the two strategies, or define a custom filter function.
@@ -26,7 +24,7 @@ trait AutoCompleteOptions extends StObject {
     *
     * 'contain': Contains the user's input or not, e.g. 'pl' matches 'apple' too.
     */
-  var filter: js.UndefOr[AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])] = js.native
+  var filter: js.UndefOr[AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])] = js.undefined
   
   /**
     * This function will return your possible options for create the autocomplete selection,
@@ -44,7 +42,7 @@ trait AutoCompleteOptions extends StObject {
       /* editor */ JSONEditor, 
       AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicate the way to trigger autocomplete menu.
@@ -54,7 +52,7 @@ trait AutoCompleteOptions extends StObject {
     * 'focus': When you focus in the field or value, it will trigger the autocomplete.
     * @default 'keydown'
     */
-  var trigger: js.UndefOr[AutoCompleteTrigger] = js.native
+  var trigger: js.UndefOr[AutoCompleteTrigger] = js.undefined
 }
 object AutoCompleteOptions {
   

@@ -2,41 +2,39 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMatchedStylesForNodeResponse extends StObject {
   
   /**
     * Attribute-defined element style (e.g. resulting from "width=20 height=100%").
     */
-  var attributesStyle: js.UndefOr[CSSStyle] = js.native
+  var attributesStyle: js.UndefOr[CSSStyle] = js.undefined
   
   /**
     * A list of CSS keyframed animations matching this node.
     */
-  var cssKeyframesRules: js.UndefOr[js.Array[CSSKeyframesRule]] = js.native
+  var cssKeyframesRules: js.UndefOr[js.Array[CSSKeyframesRule]] = js.undefined
   
   /**
     * A chain of inherited styles (from the immediate node parent up to the DOM tree root).
     */
-  var inherited: js.UndefOr[js.Array[InheritedStyleEntry]] = js.native
+  var inherited: js.UndefOr[js.Array[InheritedStyleEntry]] = js.undefined
   
   /**
     * Inline style for the specified DOM node.
     */
-  var inlineStyle: js.UndefOr[CSSStyle] = js.native
+  var inlineStyle: js.UndefOr[CSSStyle] = js.undefined
   
   /**
     * CSS rules matching this node, from all applicable stylesheets.
     */
-  var matchedCSSRules: js.UndefOr[js.Array[RuleMatch]] = js.native
+  var matchedCSSRules: js.UndefOr[js.Array[RuleMatch]] = js.undefined
   
   /**
     * Pseudo style matches for this node.
     */
-  var pseudoElements: js.UndefOr[js.Array[PseudoElementMatches]] = js.native
+  var pseudoElements: js.UndefOr[js.Array[PseudoElementMatches]] = js.undefined
 }
 object GetMatchedStylesForNodeResponse {
   

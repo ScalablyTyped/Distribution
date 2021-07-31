@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule extends StObject {
   
   /** Can this scheduled update be rescheduled? By default, it's true and API needs to do explicitly check whether it's set, if it's set as false explicitly, it's false */
-  var canReschedule: js.UndefOr[Boolean] = js.native
+  var canReschedule: js.UndefOr[Boolean] = js.undefined
   
   /** The scheduled end time for the maintenance. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The rollout management policy this maintenance schedule is associated with. When doing reschedule update request, the reschedule should be against this given policy. */
-  var rolloutManagementPolicy: js.UndefOr[String] = js.native
+  var rolloutManagementPolicy: js.UndefOr[String] = js.undefined
   
   /** The scheduled start time for the maintenance. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule {
   

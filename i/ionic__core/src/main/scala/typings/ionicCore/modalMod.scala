@@ -11,7 +11,6 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -19,7 +18,8 @@ object modalMod {
   @JSImport("@ionic/core/dist/types/components/modal/modal", "Modal")
   @js.native
   class Modal ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with OverlayInterface {
     
     var animation: js.UndefOr[Animation] = js.native

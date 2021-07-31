@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedRect extends StObject {
   
   @JSName("MSHTML.SVGAnimatedRect_typekey")
-  var MSHTMLDotSVGAnimatedRect_typekey: SVGAnimatedRect = js.native
+  var MSHTMLDotSVGAnimatedRect_typekey: SVGAnimatedRect
   
-  var animVal: SVGRect = js.native
+  var animVal: SVGRect
   
-  var baseVal: SVGRect = js.native
+  var baseVal: SVGRect
 }
 object SVGAnimatedRect {
   

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a color material used in the 3D model. */
-@js.native
 trait Printing3DColorMaterial extends StObject {
   
   /** Gets or sets the color of the material. */
-  var color: Color = js.native
+  var color: Color
   
   /** Gets or sets the color value of the material. */
-  var value: Double = js.native
+  var value: Double
 }
 object Printing3DColorMaterial {
   

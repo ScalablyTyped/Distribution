@@ -3,13 +3,13 @@ package typings.seatsio.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DictticketType extends /* ticketType */ StringDictionary[Double] {
+trait DictticketType
+  extends StObject
+     with /* ticketType */ StringDictionary[Double] {
   
-  var NO_TICKET_TYPE: Double = js.native
+  var NO_TICKET_TYPE: Double
 }
 object DictticketType {
   

@@ -11,8 +11,8 @@ The coordinate module for G2
 | Full name          | @antv/coord |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 1875074 |
+| # dependents       | 5 |
+| # downloads        | 2222752 |
 | # stars            | 0 |
 
 ## Links

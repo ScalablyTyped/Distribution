@@ -21,13 +21,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the {@link com.sun.star.sdbcx.ResultSet} by a more sophisticated access to the result sets data. */
-@js.native
 trait ResultSet
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet
      with XColumnsSupplier
 object ResultSet {
   
@@ -60,7 +59,7 @@ object ResultSet {
     close: () => Unit,
     compareBookmarks: (js.Any, js.Any) => Double,
     deleteRow: () => Unit,
-    deleteRows: SeqEquiv[_] => SafeArray[Double],
+    deleteRows: SeqEquiv[js.Any] => SafeArray[Double],
     dispose: () => Unit,
     findColumn: String => Double,
     first: () => Boolean,

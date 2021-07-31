@@ -2,7 +2,6 @@ package typings.officeJsPreview.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait EventType extends StObject
 object EventType extends StObject {
   
   @js.native
-  sealed trait notebookChanged extends EventType
+  sealed trait notebookChanged
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait pageSelectionChanged extends EventType
+  sealed trait pageSelectionChanged
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait sectionSelectionChanged extends EventType
+  sealed trait sectionSelectionChanged
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait stickyNotesContextMenuExecuted extends EventType
+  sealed trait stickyNotesContextMenuExecuted
+    extends StObject
+       with EventType
 }

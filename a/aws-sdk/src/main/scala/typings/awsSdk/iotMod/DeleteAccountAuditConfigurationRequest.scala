@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAccountAuditConfigurationRequest extends StObject {
   
   /**
     * If true, all scheduled audits are deleted.
     */
-  var deleteScheduledAudits: js.UndefOr[DeleteScheduledAudits] = js.native
+  var deleteScheduledAudits: js.UndefOr[DeleteScheduledAudits] = js.undefined
 }
 object DeleteAccountAuditConfigurationRequest {
   

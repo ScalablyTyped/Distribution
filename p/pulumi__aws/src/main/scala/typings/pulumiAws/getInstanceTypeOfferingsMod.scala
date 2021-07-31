@@ -4,36 +4,34 @@ import typings.pulumiAws.inputMod.ec2.GetInstanceTypeOfferingsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstanceTypeOfferingsMod {
   
-  @JSImport("@pulumi/aws/ec2/getInstanceTypeOfferings", "getInstanceTypeOfferings")
+  @JSImport("@pulumi/aws/ec2/getInstanceTypeOfferings", JSImport.Namespace)
   @js.native
-  def getInstanceTypeOfferings(): js.Promise[GetInstanceTypeOfferingsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstanceTypeOfferings", "getInstanceTypeOfferings")
-  @js.native
-  def getInstanceTypeOfferings(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstanceTypeOfferings", "getInstanceTypeOfferings")
-  @js.native
-  def getInstanceTypeOfferings(args: GetInstanceTypeOfferingsArgs): js.Promise[GetInstanceTypeOfferingsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstanceTypeOfferings", "getInstanceTypeOfferings")
-  @js.native
-  def getInstanceTypeOfferings(args: GetInstanceTypeOfferingsArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstanceTypeOfferings(): js.Promise[GetInstanceTypeOfferingsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfferings")().asInstanceOf[js.Promise[GetInstanceTypeOfferingsResult]]
+  @scala.inline
+  def getInstanceTypeOfferings(args: Unit, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfferings")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingsResult]]
+  @scala.inline
+  def getInstanceTypeOfferings(args: GetInstanceTypeOfferingsArgs): js.Promise[GetInstanceTypeOfferingsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfferings")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeOfferingsResult]]
+  @scala.inline
+  def getInstanceTypeOfferings(args: GetInstanceTypeOfferingsArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfferings")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingsResult]]
+  
   trait GetInstanceTypeOfferingsArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. See the [EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceTypeOfferings.html) for supported filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetInstanceTypeOfferingsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetInstanceTypeOfferingsFilter]] = js.undefined
     
     /**
       * Location type. Defaults to `region`. Valid values: `availability-zone`, `availability-zone-id`, and `region`.
       */
-    val locationType: js.UndefOr[String] = js.native
+    val locationType: js.UndefOr[String] = js.undefined
   }
   object GetInstanceTypeOfferingsArgs {
     
@@ -63,22 +61,21 @@ object getInstanceTypeOfferingsMod {
     }
   }
   
-  @js.native
   trait GetInstanceTypeOfferingsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of EC2 Instance Types.
       */
-    val instanceTypes: js.Array[String] = js.native
+    val instanceTypes: js.Array[String]
     
-    val locationType: js.UndefOr[String] = js.native
+    val locationType: js.UndefOr[String] = js.undefined
   }
   object GetInstanceTypeOfferingsResult {
     

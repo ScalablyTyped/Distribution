@@ -2,19 +2,17 @@ package typings.redisInfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Calls extends StObject {
     
-    var calls: Double = js.native
+    var calls: Double
     
-    var usec: Double = js.native
+    var usec: Double
     
-    var usec_per_call: Double = js.native
+    var usec_per_call: Double
   }
   object Calls {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Expires extends StObject {
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var keys: Double = js.native
+    var keys: Double
   }
   object Expires {
     

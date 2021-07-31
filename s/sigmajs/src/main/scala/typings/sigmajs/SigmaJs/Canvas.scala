@@ -3,19 +3,17 @@ package typings.sigmajs.SigmaJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canvas extends StObject {
   
   var edges: StringDictionary[
     js.Function4[/* edge */ Edge, /* source */ Node, /* target */ Node, /* repeated */ js.Any, Unit]
-  ] = js.native
+  ]
   
-  var labels: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]] = js.native
+  var labels: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]
   
-  var nodes: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]] = js.native
+  var nodes: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]
 }
 object Canvas {
   

@@ -2,11 +2,9 @@ package typings.officeJs.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains debug information about the request context. */
-@js.native
 trait RequestContextDebugInfo extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait RequestContextDebugInfo extends StObject {
     *
     * These statements may not match the code exactly as written, but will be a close approximation.
     */
-  var pendingStatements: js.Array[String] = js.native
+  var pendingStatements: js.Array[String]
 }
 object RequestContextDebugInfo {
   

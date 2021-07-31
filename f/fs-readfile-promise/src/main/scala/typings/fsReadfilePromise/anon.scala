@@ -2,17 +2,15 @@ package typings.fsReadfilePromise
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     

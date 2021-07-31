@@ -2,15 +2,13 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionName extends StObject {
   
-  var FunctionName: String = js.native
+  var FunctionName: String
   
-  var UserParameters: String = js.native
+  var UserParameters: String
 }
 object FunctionName {
   

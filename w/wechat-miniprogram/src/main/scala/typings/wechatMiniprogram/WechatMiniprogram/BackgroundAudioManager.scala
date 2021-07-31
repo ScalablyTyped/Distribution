@@ -2,7 +2,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** BackgroundAudioManager 实例，可通过 [wx.getBackgroundAudioManager](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/wx.getBackgroundAudioManager.html) 获取。
@@ -19,144 +18,143 @@ backgroundAudioManager.coverImgUrl = 'http://y.gtimg.cn/music/photo_new/T002R300
 // 设置了 src 之后会自动播放
 backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46'
 ``` */
-@js.native
 trait BackgroundAudioManager extends StObject {
   
   /** 音频已缓冲的时间，仅保证当前播放时间点到此时间点内容已缓冲。（只读） */
-  var buffered: Double = js.native
+  var buffered: Double
   
   /** 封面图 URL，用于做原生音频播放器背景图。原生音频播放器中的分享功能，分享出去的卡片配图及背景也将使用该图。 */
-  var coverImgUrl: String = js.native
+  var coverImgUrl: String
   
   /** 当前音频的播放位置（单位：s），只有在有合法 src 时返回。（只读） */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
   /** 当前音频的长度（单位：s），只有在有合法 src 时返回。（只读） */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 专辑名，原生音频播放器中的分享功能，分享出去的卡片简介，也将使用该值。 */
-  var epname: String = js.native
+  var epname: String
   
   /** [BackgroundAudioManager.onCanplay(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onCanplay.html)
     *
     * 监听背景音频进入可播放状态事件。 但不保证后面可以流畅播放 */
   def onCanplay(/** 背景音频进入可播放状态事件的回调函数 */
-  callback: OnCanplayCallback): Unit = js.native
+  callback: OnCanplayCallback): Unit
   
   /** [BackgroundAudioManager.onEnded(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onEnded.html)
     *
     * 监听背景音频自然播放结束事件 */
   def onEnded(/** 背景音频自然播放结束事件的回调函数 */
-  callback: OnEndedCallback): Unit = js.native
+  callback: OnEndedCallback): Unit
   
   /** [BackgroundAudioManager.onError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onError.html)
     *
     * 监听背景音频播放错误事件 */
   def onError(/** 背景音频播放错误事件的回调函数 */
-  callback: BackgroundAudioManagerOnErrorCallback): Unit = js.native
+  callback: BackgroundAudioManagerOnErrorCallback): Unit
   
   /** [BackgroundAudioManager.onNext(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onNext.html)
     *
     * 监听用户在系统音乐播放面板点击下一曲事件（仅iOS） */
   def onNext(/** 用户在系统音乐播放面板点击下一曲事件的回调函数 */
-  callback: OnNextCallback): Unit = js.native
+  callback: OnNextCallback): Unit
   
   /** [BackgroundAudioManager.onPause(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onPause.html)
     *
     * 监听背景音频暂停事件 */
   def onPause(/** 背景音频暂停事件的回调函数 */
-  callback: OnPauseCallback): Unit = js.native
+  callback: OnPauseCallback): Unit
   
   /** [BackgroundAudioManager.onPlay(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onPlay.html)
     *
     * 监听背景音频播放事件 */
   def onPlay(/** 背景音频播放事件的回调函数 */
-  callback: OnPlayCallback): Unit = js.native
+  callback: OnPlayCallback): Unit
   
   /** [BackgroundAudioManager.onPrev(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onPrev.html)
     *
     * 监听用户在系统音乐播放面板点击上一曲事件（仅iOS） */
   def onPrev(/** 用户在系统音乐播放面板点击上一曲事件的回调函数 */
-  callback: OnPrevCallback): Unit = js.native
+  callback: OnPrevCallback): Unit
   
   /** [BackgroundAudioManager.onSeeked(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onSeeked.html)
     *
     * 监听背景音频完成跳转操作事件 */
   def onSeeked(/** 背景音频完成跳转操作事件的回调函数 */
-  callback: OnSeekedCallback): Unit = js.native
+  callback: OnSeekedCallback): Unit
   
   /** [BackgroundAudioManager.onSeeking(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onSeeking.html)
     *
     * 监听背景音频开始跳转操作事件 */
   def onSeeking(/** 背景音频开始跳转操作事件的回调函数 */
-  callback: OnSeekingCallback): Unit = js.native
+  callback: OnSeekingCallback): Unit
   
   /** [BackgroundAudioManager.onStop(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onStop.html)
     *
     * 监听背景音频停止事件 */
   def onStop(/** 背景音频停止事件的回调函数 */
-  callback: InnerAudioContextOnStopCallback): Unit = js.native
+  callback: InnerAudioContextOnStopCallback): Unit
   
   /** [BackgroundAudioManager.onTimeUpdate(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onTimeUpdate.html)
     *
     * 监听背景音频播放进度更新事件，只有小程序在前台时会回调。 */
   def onTimeUpdate(/** 背景音频播放进度更新事件的回调函数 */
-  callback: OnTimeUpdateCallback): Unit = js.native
+  callback: OnTimeUpdateCallback): Unit
   
   /** [BackgroundAudioManager.onWaiting(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.onWaiting.html)
     *
     * 监听音频加载中事件。当音频因为数据不足，需要停下来加载时会触发 */
   def onWaiting(/** 音频加载中事件的回调函数 */
-  callback: OnWaitingCallback): Unit = js.native
+  callback: OnWaitingCallback): Unit
   
   /** [BackgroundAudioManager.pause()](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.pause.html)
     *
     * 暂停音乐 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** 当前是否暂停或停止。（只读） */
-  var paused: Boolean = js.native
+  var paused: Boolean
   
   /** [BackgroundAudioManager.play()](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.play.html)
     *
     * 播放音乐 */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /** 播放速度。范围 0.5-2.0，默认为 1。（Android 需要 6 及以上版本）
     *
     * 最低基础库： `2.11.0` */
-  var playbackRate: Double = js.native
+  var playbackRate: Double
   
   /** 音频协议。默认值为 'http'，设置 'hls' 可以支持播放 HLS 协议的直播音频。
     *
     * 最低基础库： `1.9.94` */
-  var protocol: String = js.native
+  var protocol: String
   
   /** [BackgroundAudioManager.seek(number currentTime)](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.seek.html)
     *
     * 跳转到指定位置 */
   def seek(/** 跳转的位置，单位 s。精确到小数点后 3 位，即支持 ms 级别精确度 */
-  currentTime: Double): Unit = js.native
+  currentTime: Double): Unit
   
   /** 歌手名，原生音频播放器中的分享功能，分享出去的卡片简介，也将使用该值。 */
-  var singer: String = js.native
+  var singer: String
   
   /** 音频的数据源（[2.2.3](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 开始支持云文件ID）。默认为空字符串，**当设置了新的 src 时，会自动开始播放**，目前支持的格式有 m4a, aac, mp3, wav。 */
-  var src: String = js.native
+  var src: String
   
   /** 音频开始播放的位置（单位：s）。 */
-  var startTime: Double = js.native
+  var startTime: Double
   
   /** [BackgroundAudioManager.stop()](https://developers.weixin.qq.com/miniprogram/dev/api/media/background-audio/BackgroundAudioManager.stop.html)
     *
     * 停止音乐 */
-  def stop(): Unit = js.native
+  def stop(): Unit
   
   /** 音频标题，用于原生音频播放器音频标题（必填）。原生音频播放器中的分享功能，分享出去的卡片标题，也将使用该值。 */
-  var title: String = js.native
+  var title: String
   
   /** 页面链接，原生音频播放器中的分享功能，分享出去的卡片简介，也将使用该值。 */
-  var webUrl: String = js.native
+  var webUrl: String
 }
 object BackgroundAudioManager {
   

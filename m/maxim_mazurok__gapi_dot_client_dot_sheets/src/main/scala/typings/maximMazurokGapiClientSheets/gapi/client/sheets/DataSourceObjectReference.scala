@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceObjectReference extends StObject {
   
   /** References to a data source chart. */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /** References to a cell containing DataSourceFormula. */
-  var dataSourceFormulaCell: js.UndefOr[GridCoordinate] = js.native
+  var dataSourceFormulaCell: js.UndefOr[GridCoordinate] = js.undefined
   
   /** References to a data source PivotTable anchored at the cell. */
-  var dataSourcePivotTableAnchorCell: js.UndefOr[GridCoordinate] = js.native
+  var dataSourcePivotTableAnchorCell: js.UndefOr[GridCoordinate] = js.undefined
   
   /** References to a DataSourceTable anchored at the cell. */
-  var dataSourceTableAnchorCell: js.UndefOr[GridCoordinate] = js.native
+  var dataSourceTableAnchorCell: js.UndefOr[GridCoordinate] = js.undefined
   
   /** References to a DATA_SOURCE sheet. */
-  var sheetId: js.UndefOr[String] = js.native
+  var sheetId: js.UndefOr[String] = js.undefined
 }
 object DataSourceObjectReference {
   

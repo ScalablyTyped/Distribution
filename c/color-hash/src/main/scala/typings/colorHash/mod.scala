@@ -2,19 +2,16 @@ package typings.colorHash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("color-hash", JSImport.Namespace)
   @js.native
-  class ^ () extends ColorHash {
+  class ^ ()
+    extends StObject
+       with ColorHash {
     def this(options: ColorHashOptions) = this()
-  }
-  
-  @js.native
-  trait ColorHash extends StObject {
     
     /**
       * Returns the hash in hex.
@@ -22,7 +19,8 @@ object mod {
       * @param input string to hash
       * @returns hex with #
       */
-    def hex(input: String): String = js.native
+    /* CompleteClass */
+    override def hex(input: String): String = js.native
     
     /**
       * Returns the hash in [h, s, l].
@@ -31,7 +29,8 @@ object mod {
       * @param input string to hash
       * @returns [h, s, l]
       */
-    def hsl(input: String): ColorValueArray = js.native
+    /* CompleteClass */
+    override def hsl(input: String): ColorValueArray = js.native
     
     /**
       * Returns the hash in [r, g, b].
@@ -40,7 +39,37 @@ object mod {
       * @param input string to hash
       * @returns [r, g, b]
       */
-    def rgb(input: String): ColorValueArray = js.native
+    /* CompleteClass */
+    override def rgb(input: String): ColorValueArray = js.native
+  }
+  
+  trait ColorHash extends StObject {
+    
+    /**
+      * Returns the hash in hex.
+      *
+      * @param input string to hash
+      * @returns hex with #
+      */
+    def hex(input: String): String
+    
+    /**
+      * Returns the hash in [h, s, l].
+      * Note that H ∈ [0, 360); S ∈ [0, 1]; L ∈ [0, 1];
+      *
+      * @param input string to hash
+      * @returns [h, s, l]
+      */
+    def hsl(input: String): ColorValueArray
+    
+    /**
+      * Returns the hash in [r, g, b].
+      * Note that R, G, B ∈ [0, 255]
+      *
+      * @param input string to hash
+      * @returns [r, g, b]
+      */
+    def rgb(input: String): ColorValueArray
   }
   object ColorHash {
     
@@ -64,16 +93,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ColorHashOptions extends StObject {
     
-    var hash: js.UndefOr[HashFunction] = js.native
+    var hash: js.UndefOr[HashFunction] = js.undefined
     
-    var hue: js.UndefOr[Hue] = js.native
+    var hue: js.UndefOr[Hue] = js.undefined
     
-    var lightness: js.UndefOr[Lightness] = js.native
+    var lightness: js.UndefOr[Lightness] = js.undefined
     
-    var saturation: js.UndefOr[Saturation] = js.native
+    var saturation: js.UndefOr[Saturation] = js.undefined
   }
   object ColorHashOptions {
     
@@ -121,12 +149,11 @@ object mod {
   
   type Hue = Double | HueObject | js.Array[HueObject]
   
-  @js.native
   trait HueObject extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object HueObject {
     

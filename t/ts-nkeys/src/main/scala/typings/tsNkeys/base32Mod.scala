@@ -3,7 +3,6 @@ package typings.tsNkeys
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object base32Mod {
@@ -24,12 +23,10 @@ object base32Mod {
     @scala.inline
     def alphabet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphabet")(x.asInstanceOf[js.Any])
     
-    @JSImport("ts-nkeys/lib/base32", "base32.decode")
-    @js.native
-    def decode(src: Buffer): Buffer = js.native
+    @scala.inline
+    def decode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/base32", "base32.encode")
-    @js.native
-    def encode(src: Buffer): Buffer = js.native
+    @scala.inline
+    def encode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
 }

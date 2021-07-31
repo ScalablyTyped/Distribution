@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalingSettings extends StObject {
   
   /** The algorithm to use for autoscaling. */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /** The maximum number of workers to cap scaling at. */
-  var maxNumWorkers: js.UndefOr[Double] = js.native
+  var maxNumWorkers: js.UndefOr[Double] = js.undefined
 }
 object AutoscalingSettings {
   

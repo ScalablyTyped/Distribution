@@ -3,17 +3,15 @@ package typings.thrift.mod
 import typings.thrift.mod.Thrift.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TField extends StObject {
   
-  var fid: Double = js.native
+  var fid: Double
   
-  var fname: String = js.native
+  var fname: String
   
-  var ftype: Type = js.native
+  var ftype: Type
 }
 object TField {
   

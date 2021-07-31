@@ -7,10 +7,13 @@ import typings.rrule.totextMod.DateFormatter
 import typings.rrule.totextMod.GetText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nlpMod {
+  
+  @JSImport("rrule/dist/esm/src/nlp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /*!
   * rrule.js - Library for working with recurrence rules for calendar dates.
@@ -98,102 +101,59 @@ object nlpMod {
     * @param {String} text
     * @return {Object, Boolean} the rule, or null.
     */
-  @JSImport("rrule/dist/esm/src/nlp", "fromText")
-  @js.native
-  def fromText(text: String): default = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "fromText")
-  @js.native
-  def fromText(text: String, language: Language): default = js.native
+  @scala.inline
+  def fromText(text: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def fromText(text: String, language: Language): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[default]
   
   @JSImport("rrule/dist/esm/src/nlp", "isFullyConvertible")
   @js.native
   val isFullyConvertible: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof ToText.isFullyConvertible */ js.Any = js.native
   
-  @JSImport("rrule/dist/esm/src/nlp", "parseText")
-  @js.native
-  def parseText(text: String): PartialOptions | Null = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "parseText")
-  @js.native
-  def parseText(text: String, language: Language): PartialOptions | Null = js.native
+  @scala.inline
+  def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+  @scala.inline
+  def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
   
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(rrule: default): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(
-    rrule: default,
-    gettext: js.UndefOr[scala.Nothing],
-    language: js.UndefOr[scala.Nothing],
-    dateFormatter: DateFormatter
-  ): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(rrule: default, gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(
-    rrule: default,
-    gettext: js.UndefOr[scala.Nothing],
-    language: Language,
-    dateFormatter: DateFormatter
-  ): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(rrule: default, gettext: GetText): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(
-    rrule: default,
-    gettext: GetText,
-    language: js.UndefOr[scala.Nothing],
-    dateFormatter: DateFormatter
-  ): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(rrule: default, gettext: GetText, language: Language): String = js.native
-  @JSImport("rrule/dist/esm/src/nlp", "toText")
-  @js.native
-  def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
+  @scala.inline
+  def toText(rrule: default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: Unit, language: Unit, dateFormatter: DateFormatter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: Unit, language: Language): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: Unit, language: Language, dateFormatter: DateFormatter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: GetText): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: GetText, language: Unit, dateFormatter: DateFormatter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: GetText, language: Language): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toText")(rrule.asInstanceOf[js.Any], gettext.asInstanceOf[js.Any], language.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Nlp extends StObject {
     
-    def fromText(text: String): default = js.native
-    def fromText(text: String, language: Language): default = js.native
+    def fromText(text: String): default
+    def fromText(text: String, language: Language): default
     @JSName("fromText")
-    var fromText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], default] = js.native
+    var fromText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], default]
     
-    var isFullyConvertible: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof ToText.isFullyConvertible */ js.Any = js.native
+    var isFullyConvertible: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof ToText.isFullyConvertible */ js.Any
     
-    def parseText(text: String): PartialOptions | Null = js.native
-    def parseText(text: String, language: Language): PartialOptions | Null = js.native
+    def parseText(text: String): PartialOptions | Null
+    def parseText(text: String, language: Language): PartialOptions | Null
     @JSName("parseText")
-    var parseText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], PartialOptions | Null] = js.native
+    var parseText_Original: js.Function2[/* text */ String, /* language */ js.UndefOr[Language], PartialOptions | Null]
     
-    def toText(rrule: default): String = js.native
-    def toText(
-      rrule: default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ): String = js.native
-    def toText(rrule: default, gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
-    def toText(
-      rrule: default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: Language,
-      dateFormatter: DateFormatter
-    ): String = js.native
-    def toText(rrule: default, gettext: GetText): String = js.native
-    def toText(
-      rrule: default,
-      gettext: GetText,
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ): String = js.native
-    def toText(rrule: default, gettext: GetText, language: Language): String = js.native
-    def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
+    def toText(rrule: default): String
+    def toText(rrule: default, gettext: Unit, language: Unit, dateFormatter: DateFormatter): String
+    def toText(rrule: default, gettext: Unit, language: Language): String
+    def toText(rrule: default, gettext: Unit, language: Language, dateFormatter: DateFormatter): String
+    def toText(rrule: default, gettext: GetText): String
+    def toText(rrule: default, gettext: GetText, language: Unit, dateFormatter: DateFormatter): String
+    def toText(rrule: default, gettext: GetText, language: Language): String
+    def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String
     @JSName("toText")
     var toText_Original: js.Function4[
         /* rrule */ default, 
@@ -201,6 +161,39 @@ object nlpMod {
         /* language */ js.UndefOr[Language], 
         /* dateFormatter */ js.UndefOr[DateFormatter], 
         String
-      ] = js.native
+      ]
+  }
+  object Nlp {
+    
+    @scala.inline
+    def apply(
+      fromText: (/* text */ String, /* language */ js.UndefOr[Language]) => default,
+      isFullyConvertible: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof ToText.isFullyConvertible */ js.Any,
+      parseText: (/* text */ String, /* language */ js.UndefOr[Language]) => PartialOptions | Null,
+      toText: (/* rrule */ default, /* gettext */ js.UndefOr[GetText], /* language */ js.UndefOr[Language], /* dateFormatter */ js.UndefOr[DateFormatter]) => String
+    ): Nlp = {
+      val __obj = js.Dynamic.literal(fromText = js.Any.fromFunction2(fromText), isFullyConvertible = isFullyConvertible.asInstanceOf[js.Any], parseText = js.Any.fromFunction2(parseText), toText = js.Any.fromFunction4(toText))
+      __obj.asInstanceOf[Nlp]
+    }
+    
+    @scala.inline
+    implicit class NlpMutableBuilder[Self <: Nlp] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFromText(value: (/* text */ String, /* language */ js.UndefOr[Language]) => default): Self = StObject.set(x, "fromText", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setIsFullyConvertible(
+        value: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof ToText.isFullyConvertible */ js.Any
+      ): Self = StObject.set(x, "isFullyConvertible", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParseText(value: (/* text */ String, /* language */ js.UndefOr[Language]) => PartialOptions | Null): Self = StObject.set(x, "parseText", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setToText(
+        value: (/* rrule */ default, /* gettext */ js.UndefOr[GetText], /* language */ js.UndefOr[Language], /* dateFormatter */ js.UndefOr[DateFormatter]) => String
+      ): Self = StObject.set(x, "toText", js.Any.fromFunction4(value))
+    }
   }
 }

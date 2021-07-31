@@ -6,27 +6,27 @@ import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Topic extends ExtendedBase {
+trait Topic
+  extends StObject
+     with ExtendedBase {
   
-  var AccessedAt: DateString = js.native
+  var AccessedAt: DateString
   
-  var CountDetails: StringDictionary[String] = js.native
+  var CountDetails: StringDictionary[String]
   
-  var EnableSubscriptionPartitioning: String = js.native
+  var EnableSubscriptionPartitioning: String
   
-  var FilteringMessagesBeforePublishing: String = js.native
+  var FilteringMessagesBeforePublishing: String
   
-  var IsExpress: String = js.native
+  var IsExpress: String
   
-  var SubscriptionCount: String = js.native
+  var SubscriptionCount: String
   
-  var SupportOrdering: String = js.native
+  var SupportOrdering: String
   
-  var TopicName: String = js.native
+  var TopicName: String
 }
 object Topic {
   

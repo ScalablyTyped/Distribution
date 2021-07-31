@@ -2,17 +2,15 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Streamingbuffer extends StObject {
   
-  var estimatedBytes: js.UndefOr[String] = js.native
+  var estimatedBytes: js.UndefOr[String] = js.undefined
   
-  var estimatedRows: js.UndefOr[String] = js.native
+  var estimatedRows: js.UndefOr[String] = js.undefined
   
-  var oldestEntryTime: js.UndefOr[String] = js.native
+  var oldestEntryTime: js.UndefOr[String] = js.undefined
 }
 object Streamingbuffer {
   

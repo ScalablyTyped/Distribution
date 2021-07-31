@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineRouting extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait AppEngineRouting extends StObject {
     * version when the job is attempted. If instance is empty, then the job will be sent to an instance which is available when the job is attempted. If service, version, or instance is
     * invalid, then the job will be sent to the default version of the default service when the job is attempted.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * App instance. By default, the job is sent to an instance which is available when the job is attempted. Requests can only be sent to a specific instance if [manual scaling is used in
@@ -28,13 +26,13 @@ trait AppEngineRouting extends StObject {
     * instances. For more information, see [App Engine Standard request routing](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed) and [App Engine Flex
     * request routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** App service. By default, the job is sent to the service which is the default service when the job is attempted. */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /** App version. By default, the job is sent to the version which is the default version when the job is attempted. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object AppEngineRouting {
   

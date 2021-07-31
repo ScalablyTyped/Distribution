@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.ckeditor.CKEDITOR.dom.domObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait keystrokeHandler extends StObject {
   
-  def attach(domObject: domObject): Unit = js.native
+  def attach(domObject: domObject): Unit
   
-  var blockedKeystrokes: NumberDictionary[String | Boolean] = js.native
+  var blockedKeystrokes: NumberDictionary[String | Boolean]
   
-  var keystrokes: NumberDictionary[String | Boolean] = js.native
+  var keystrokes: NumberDictionary[String | Boolean]
 }
 object keystrokeHandler {
   

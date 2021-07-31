@@ -3,7 +3,6 @@ package typings.hyperlorisTyson
 import typings.hyperlorisTyson.jsonPropertyMetadataMod.JsonPropertyMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionUtilsMod {
@@ -14,6 +13,10 @@ object reflectionUtilsMod {
   /* static members */
   object ReflectionUtils {
     
+    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the {@link JsonProperty} metadata of the specified property, or undefined if they are not present.
       *
@@ -23,9 +26,8 @@ object reflectionUtilsMod {
       * @returns the metadata value for the metadata key if found; otherwise, undefined.
       * @memberof ReflectionUtils
       */
-    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getJsonPropertyMetadata")
-    @js.native
-    def getJsonPropertyMetadata(target: js.Any, propertyKey: String): js.UndefOr[JsonPropertyMetadata] = js.native
+    @scala.inline
+    def getJsonPropertyMetadata(target: js.Any, propertyKey: String): js.UndefOr[JsonPropertyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsonPropertyMetadata")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[JsonPropertyMetadata]]
     
     /**
       * This method returns the type of the specified object as injected by the compiler at design-time.
@@ -36,9 +38,8 @@ object reflectionUtilsMod {
       * @returns the injected type
       * @memberof ReflectionUtils
       */
-    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getType")
-    @js.native
-    def getType(target: js.Any, propertyKey: String): js.Any = js.native
+    @scala.inline
+    def getType(target: js.Any, propertyKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getType")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * This method generate a "readable hash" of the specified object.
@@ -56,9 +57,8 @@ object reflectionUtilsMod {
       * @returns the generated hash of the target
       * @memberof ReflectionUtils
       */
-    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getTypeHash")
-    @js.native
-    def getTypeHash(target: js.Any): String = js.native
+    @scala.inline
+    def getTypeHash(target: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeHash")(target.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * This method returns the type name of the specified object.
@@ -69,8 +69,7 @@ object reflectionUtilsMod {
       * @returns the type name
       * @memberof ReflectionUtils
       */
-    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getTypeName")
-    @js.native
-    def getTypeName(target: js.Any): String = js.native
+    @scala.inline
+    def getTypeName(target: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeName")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

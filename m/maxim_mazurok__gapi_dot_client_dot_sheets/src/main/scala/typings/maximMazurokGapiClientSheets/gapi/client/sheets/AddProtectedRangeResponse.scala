@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddProtectedRangeResponse extends StObject {
   
   /** The newly added protected range. */
-  var protectedRange: js.UndefOr[ProtectedRange] = js.native
+  var protectedRange: js.UndefOr[ProtectedRange] = js.undefined
 }
 object AddProtectedRangeResponse {
   

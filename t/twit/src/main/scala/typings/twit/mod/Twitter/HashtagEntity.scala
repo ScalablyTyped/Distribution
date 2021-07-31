@@ -2,15 +2,13 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HashtagEntity extends StObject {
   
-  var indices: js.Tuple2[Double, Double] = js.native
+  var indices: js.Tuple2[Double, Double]
   
-  var text: String = js.native
+  var text: String
 }
 object HashtagEntity {
   

@@ -2,15 +2,13 @@ package typings.jsprintmanager.mod.JSPM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientPrinter extends StObject {
   
-  var Id: js.Any = js.native
+  var Id: js.Any
   
-  def serialize(): js.Any = js.native
+  def serialize(): js.Any
 }
 object IClientPrinter {
   

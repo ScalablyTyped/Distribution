@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait TimelineStyleCollection extends ClientObject {
+trait TimelineStyleCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a blank TimelineStyle with the specified name.
@@ -80,7 +81,7 @@ trait TimelineStyleCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TimelineStyleCollection = js.native
-  def load(options: TimelineStyleCollectionLoadOptions with CollectionLoadOptions): TimelineStyleCollection = js.native
+  def load(options: TimelineStyleCollectionLoadOptions & CollectionLoadOptions): TimelineStyleCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TimelineStyleCollection = js.native
   def load(propertyNames: String): TimelineStyleCollection = js.native
   def load(propertyNames: js.Array[String]): TimelineStyleCollection = js.native

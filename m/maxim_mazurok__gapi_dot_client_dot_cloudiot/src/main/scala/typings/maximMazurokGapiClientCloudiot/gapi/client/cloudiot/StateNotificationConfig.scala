@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateNotificationConfig extends StObject {
   
   /** A Cloud Pub/Sub topic name. For example, `projects/myProject/topics/deviceEvents`. */
-  var pubsubTopicName: js.UndefOr[String] = js.native
+  var pubsubTopicName: js.UndefOr[String] = js.undefined
 }
 object StateNotificationConfig {
   

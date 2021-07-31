@@ -5,10 +5,13 @@ import typings.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProvider
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/credential-provider-imds", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-imds", "DEFAULT_MAX_RETRIES")
   @js.native
@@ -30,21 +33,16 @@ object mod {
   @js.native
   val ENV_CMDS_RELATIVE_URI: /* "AWS_CONTAINER_CREDENTIALS_RELATIVE_URI" */ String = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds", "fromContainerMetadata")
-  @js.native
-  def fromContainerMetadata(): CredentialProvider = js.native
-  @JSImport("@aws-sdk/credential-provider-imds", "fromContainerMetadata")
-  @js.native
-  def fromContainerMetadata(init: RemoteProviderInit): CredentialProvider = js.native
+  @scala.inline
+  def fromContainerMetadata(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromContainerMetadata")().asInstanceOf[CredentialProvider]
+  @scala.inline
+  def fromContainerMetadata(init: RemoteProviderInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromContainerMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @JSImport("@aws-sdk/credential-provider-imds", "fromInstanceMetadata")
-  @js.native
-  def fromInstanceMetadata(): CredentialProvider = js.native
-  @JSImport("@aws-sdk/credential-provider-imds", "fromInstanceMetadata")
-  @js.native
-  def fromInstanceMetadata(init: RemoteProviderInit): CredentialProvider = js.native
+  @scala.inline
+  def fromInstanceMetadata(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")().asInstanceOf[CredentialProvider]
+  @scala.inline
+  def fromInstanceMetadata(init: RemoteProviderInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @JSImport("@aws-sdk/credential-provider-imds", "providerConfigFromInit")
-  @js.native
-  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = js.native
+  @scala.inline
+  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
 }

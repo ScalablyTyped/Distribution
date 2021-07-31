@@ -4,7 +4,6 @@ import typings.monacoEditor.anon.ArgumentsInColorFunction
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object css {
@@ -21,12 +20,11 @@ object css {
   @js.native
   val scssDefaults: LanguageServiceDefaults = js.native
   
-  @js.native
   trait DiagnosticsOptions extends StObject {
     
-    val lint: js.UndefOr[ArgumentsInColorFunction] = js.native
+    val lint: js.UndefOr[ArgumentsInColorFunction] = js.undefined
     
-    val validate: js.UndefOr[Boolean] = js.native
+    val validate: js.UndefOr[Boolean] = js.undefined
   }
   object DiagnosticsOptions {
     
@@ -62,71 +60,70 @@ object css {
     
     val modeConfiguration: ModeConfiguration = js.native
     
-    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _]): IDisposable = js.native
-    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _], thisArg: js.Any): IDisposable = js.native
+    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, js.Any]): IDisposable = js.native
+    def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, js.Any], thisArg: js.Any): IDisposable = js.native
     
     def setDiagnosticsOptions(options: DiagnosticsOptions): Unit = js.native
     
     def setModeConfiguration(modeConfiguration: ModeConfiguration): Unit = js.native
   }
   
-  @js.native
   trait ModeConfiguration extends StObject {
     
     /**
       * Defines whether the built-in color provider is enabled.
       */
-    val colors: js.UndefOr[Boolean] = js.native
+    val colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in completionItemProvider is enabled.
       */
-    val completionItems: js.UndefOr[Boolean] = js.native
+    val completionItems: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in definitions provider is enabled.
       */
-    val definitions: js.UndefOr[Boolean] = js.native
+    val definitions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in diagnostic provider is enabled.
       */
-    val diagnostics: js.UndefOr[Boolean] = js.native
+    val diagnostics: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in references provider is enabled.
       */
-    val documentHighlights: js.UndefOr[Boolean] = js.native
+    val documentHighlights: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in documentSymbolProvider is enabled.
       */
-    val documentSymbols: js.UndefOr[Boolean] = js.native
+    val documentSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in foldingRange provider is enabled.
       */
-    val foldingRanges: js.UndefOr[Boolean] = js.native
+    val foldingRanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in hoverProvider is enabled.
       */
-    val hovers: js.UndefOr[Boolean] = js.native
+    val hovers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in references provider is enabled.
       */
-    val references: js.UndefOr[Boolean] = js.native
+    val references: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in rename provider is enabled.
       */
-    val rename: js.UndefOr[Boolean] = js.native
+    val rename: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the built-in selection range provider is enabled.
       */
-    val selectionRanges: js.UndefOr[Boolean] = js.native
+    val selectionRanges: js.UndefOr[Boolean] = js.undefined
   }
   object ModeConfiguration {
     

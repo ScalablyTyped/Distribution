@@ -2,13 +2,11 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remarketing List Population Rule Term.
   */
-@js.native
 trait SchemaListPopulationTerm extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait SchemaListPopulationTerm extends StObject {
     * is only relevant when type is set to LIST_MEMBERSHIP_TERM. False by
     * default.
     */
-  var contains: js.UndefOr[Boolean] = js.native
+  var contains: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to negate the comparison result of this term during rule
     * evaluation. This field is only relevant when type is left unset or set to
     * CUSTOM_VARIABLE_TERM or REFERRER_TERM.
     */
-  var negation: js.UndefOr[Boolean] = js.native
+  var negation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comparison operator of this term. This field is only relevant when type
     * is left unset or set to CUSTOM_VARIABLE_TERM or REFERRER_TERM.
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the list in question. This field is only relevant when type is set
     * to LIST_MEMBERSHIP_TERM.
     */
-  var remarketingListId: js.UndefOr[String] = js.native
+  var remarketingListId: js.UndefOr[String] = js.undefined
   
   /**
     * List population term type determines the applicable fields in this
@@ -46,27 +44,27 @@ trait SchemaListPopulationTerm extends StObject {
     * applicable. If set to REFERRER_TERM then operator, value, and negation
     * are applicable.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Literal to compare the variable to. This field is only relevant when type
     * is left unset or set to CUSTOM_VARIABLE_TERM or REFERRER_TERM.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Friendly name of this term&#39;s variable. This is a read-only,
     * auto-generated field. This field is only relevant when type is left unset
     * or set to CUSTOM_VARIABLE_TERM.
     */
-  var variableFriendlyName: js.UndefOr[String] = js.native
+  var variableFriendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the variable (U1, U2, etc.) being compared in this term. This
     * field is only relevant when type is set to null, CUSTOM_VARIABLE_TERM or
     * REFERRER_TERM.
     */
-  var variableName: js.UndefOr[String] = js.native
+  var variableName: js.UndefOr[String] = js.undefined
 }
 object SchemaListPopulationTerm {
   

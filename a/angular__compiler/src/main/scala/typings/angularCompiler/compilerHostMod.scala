@@ -4,14 +4,14 @@ import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolverHost
 import typings.angularCompiler.summaryResolverMod.AotSummaryResolverHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerHostMod {
   
   @js.native
   trait AotCompilerHost
-    extends StaticSymbolResolverHost
+    extends StObject
+       with StaticSymbolResolverHost
        with AotSummaryResolverHost {
     
     /**

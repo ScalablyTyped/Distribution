@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TaggedTemplateExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TaggedTemplateExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TaggedTemplateExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var quasi: TemplateLiteral_ = js.native
+  var quasi: TemplateLiteral_
   
-  var tag: Expression = js.native
+  var tag: Expression
   
-  var typeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TaggedTemplateExpression_ : TaggedTemplateExpression = js.native
+  var type_TaggedTemplateExpression_ : TaggedTemplateExpression
 }
 object TaggedTemplateExpression_ {
   
   @scala.inline
-  def apply(quasi: TemplateLiteral_, tag: Expression, `type`: TaggedTemplateExpression): TaggedTemplateExpression_ = {
-    val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(quasi: TemplateLiteral_, tag: Expression): TaggedTemplateExpression_ = {
+    val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TaggedTemplateExpression")
     __obj.asInstanceOf[TaggedTemplateExpression_]
   }
   

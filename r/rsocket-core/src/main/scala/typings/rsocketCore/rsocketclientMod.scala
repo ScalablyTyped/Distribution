@@ -11,31 +11,37 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketclientMod {
   
   @JSImport("rsocket-core/RSocketClient", JSImport.Default)
   @js.native
-  class default[D, M] protected () extends RSocketClient[D, M] {
+  class default[D, M] protected ()
+    extends StObject
+       with RSocketClient[D, M] {
     def this(config: ClientConfig[D, M]) = this()
+    
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* CompleteClass */
+    override def connect(): Single[ReactiveSocket[D, M]] = js.native
   }
   
-  @js.native
   trait ClientConfig[D, M] extends StObject {
     
-    var errorHandler: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var leases: js.UndefOr[js.Function0[Leases[_]]] = js.native
+    var leases: js.UndefOr[js.Function0[Leases[js.Any]]] = js.undefined
     
-    var responder: js.UndefOr[Partial[Responder[D, M]]] = js.native
+    var responder: js.UndefOr[Partial[Responder[D, M]]] = js.undefined
     
-    var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.native
+    var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.undefined
     
-    var setup: DataMimeType[D, M] = js.native
+    var setup: DataMimeType[D, M]
     
-    var transport: DuplexConnection = js.native
+    var transport: DuplexConnection
   }
   object ClientConfig {
     
@@ -46,7 +52,7 @@ object rsocketclientMod {
     }
     
     @scala.inline
-    implicit class ClientConfigMutableBuilder[Self <: ClientConfig[_, _], D, M] (val x: Self with (ClientConfig[D, M])) extends AnyVal {
+    implicit class ClientConfigMutableBuilder[Self <: ClientConfig[?, ?], D, M] (val x: Self & (ClientConfig[D, M])) extends AnyVal {
       
       @scala.inline
       def setErrorHandler(value: /* error */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
@@ -55,7 +61,7 @@ object rsocketclientMod {
       def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
       @scala.inline
-      def setLeases(value: () => Leases[_]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
+      def setLeases(value: () => Leases[js.Any]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
       
       @scala.inline
       def setLeasesUndefined: Self = StObject.set(x, "leases", js.undefined)
@@ -80,12 +86,11 @@ object rsocketclientMod {
     }
   }
   
-  @js.native
   trait RSocketClient[D, M] extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def connect(): Single[ReactiveSocket[D, M]] = js.native
+    def connect(): Single[ReactiveSocket[D, M]]
   }
   object RSocketClient {
     
@@ -96,7 +101,7 @@ object rsocketclientMod {
     }
     
     @scala.inline
-    implicit class RSocketClientMutableBuilder[Self <: RSocketClient[_, _], D, M] (val x: Self with (RSocketClient[D, M])) extends AnyVal {
+    implicit class RSocketClientMutableBuilder[Self <: RSocketClient[?, ?], D, M] (val x: Self & (RSocketClient[D, M])) extends AnyVal {
       
       @scala.inline
       def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))

@@ -4,13 +4,12 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports random access of data in input and output streams for a specified data format. */
-@js.native
 trait IRandomAccessStreamWithContentType
-  extends IRandomAccessStream
+  extends StObject
+     with IRandomAccessStream
      with IContentTypeProvider
 object IRandomAccessStreamWithContentType {
   

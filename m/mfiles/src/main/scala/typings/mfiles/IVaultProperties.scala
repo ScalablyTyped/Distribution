@@ -3,35 +3,33 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFileDataStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultProperties extends StObject {
   
-  def Clone(): IVaultProperties = js.native
+  def Clone(): IVaultProperties
   
-  var DisplayName: String = js.native
+  var DisplayName: String
   
-  var EncryptionOfFileDataAtRest: Boolean = js.native
+  var EncryptionOfFileDataAtRest: Boolean
   
-  var ExtendedMetadataDrivenPermissions: Boolean = js.native
+  var ExtendedMetadataDrivenPermissions: Boolean
   
-  var FileDataConnectionString: String = js.native
+  var FileDataConnectionString: String
   
-  var FileDataStorageType: MFFileDataStorage = js.native
+  var FileDataStorageType: MFFileDataStorage
   
-  var FullTextSearchLanguage: String = js.native
+  var FullTextSearchLanguage: String
   
-  var Icon: js.Array[Double] = js.native
+  var Icon: js.Array[Double]
   
-  var MainDataFolder: String = js.native
+  var MainDataFolder: String
   
-  var SQLDatabase: ISQLDatabase = js.native
+  var SQLDatabase: ISQLDatabase
   
-  var SeparateLocationForFileData: IAdditionalFolders = js.native
+  var SeparateLocationForFileData: IAdditionalFolders
   
-  var VaultGUID: String = js.native
+  var VaultGUID: String
 }
 object IVaultProperties {
   

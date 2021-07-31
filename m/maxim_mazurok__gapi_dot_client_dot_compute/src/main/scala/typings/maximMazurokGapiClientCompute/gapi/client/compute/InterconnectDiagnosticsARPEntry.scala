@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectDiagnosticsARPEntry extends StObject {
   
   /** The IP address of this ARP neighbor. */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /** The MAC address of this ARP neighbor. */
-  var macAddress: js.UndefOr[String] = js.native
+  var macAddress: js.UndefOr[String] = js.undefined
 }
 object InterconnectDiagnosticsARPEntry {
   

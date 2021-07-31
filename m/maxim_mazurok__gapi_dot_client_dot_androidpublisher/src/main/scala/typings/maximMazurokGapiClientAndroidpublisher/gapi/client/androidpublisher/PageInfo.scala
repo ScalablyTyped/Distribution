@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageInfo extends StObject {
   
   /** Maximum number of results returned in one page. ! The number of results included in the API response. */
-  var resultPerPage: js.UndefOr[Double] = js.native
+  var resultPerPage: js.UndefOr[Double] = js.undefined
   
   /** Index of the first result returned in the current page. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /** Total number of results available on the backend ! The total number of results in the result set. */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object PageInfo {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInput extends StObject {
   
   /** Required. The `Input.key` that identifies the input file. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Required. The zero-based index of the track in the input file. */
-  var track: js.UndefOr[Double] = js.native
+  var track: js.UndefOr[Double] = js.undefined
 }
 object TextInput {
   

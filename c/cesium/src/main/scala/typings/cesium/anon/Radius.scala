@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Radius extends StObject {
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var slicePartitions: js.UndefOr[Double] = js.native
+  var slicePartitions: js.UndefOr[Double] = js.undefined
   
-  var stackPartitions: js.UndefOr[Double] = js.native
+  var stackPartitions: js.UndefOr[Double] = js.undefined
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object Radius {
   

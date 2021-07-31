@@ -2,19 +2,19 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchCampaignAudienceBuilder[SearchCampaignAudience] extends AdWordsBuilder[SearchCampaignAudience] {
+trait SearchCampaignAudienceBuilder[SearchCampaignAudience]
+  extends StObject
+     with AdWordsBuilder[SearchCampaignAudience] {
   
-  def exclude(): AdWordsOperation[SearchCampaignAudience] = js.native
+  def exclude(): AdWordsOperation[SearchCampaignAudience]
   
-  def withAudience(userList: UserList): SearchCampaignAudienceBuilder[SearchCampaignAudience] = js.native
+  def withAudience(userList: UserList): SearchCampaignAudienceBuilder[SearchCampaignAudience]
   
-  def withAudienceId(audienceId: Double): SearchCampaignAudienceBuilder[SearchCampaignAudience] = js.native
+  def withAudienceId(audienceId: Double): SearchCampaignAudienceBuilder[SearchCampaignAudience]
   
-  def withBidModifier(modifier: Double): SearchCampaignAudienceBuilder[SearchCampaignAudience] = js.native
+  def withBidModifier(modifier: Double): SearchCampaignAudienceBuilder[SearchCampaignAudience]
 }
 object SearchCampaignAudienceBuilder {
   
@@ -31,7 +31,7 @@ object SearchCampaignAudienceBuilder {
   }
   
   @scala.inline
-  implicit class SearchCampaignAudienceBuilderMutableBuilder[Self <: SearchCampaignAudienceBuilder[_], SearchCampaignAudience] (val x: Self with SearchCampaignAudienceBuilder[SearchCampaignAudience]) extends AnyVal {
+  implicit class SearchCampaignAudienceBuilderMutableBuilder[Self <: SearchCampaignAudienceBuilder[?], SearchCampaignAudience] (val x: Self & SearchCampaignAudienceBuilder[SearchCampaignAudience]) extends AnyVal {
     
     @scala.inline
     def setExclude(value: () => AdWordsOperation[SearchCampaignAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))

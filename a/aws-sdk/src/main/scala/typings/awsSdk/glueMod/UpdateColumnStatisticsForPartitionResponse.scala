@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateColumnStatisticsForPartitionResponse extends StObject {
   
   /**
     * Error occurred during updating column statistics data.
     */
-  var Errors: js.UndefOr[ColumnStatisticsErrors] = js.native
+  var Errors: js.UndefOr[ColumnStatisticsErrors] = js.undefined
 }
 object UpdateColumnStatisticsForPartitionResponse {
   

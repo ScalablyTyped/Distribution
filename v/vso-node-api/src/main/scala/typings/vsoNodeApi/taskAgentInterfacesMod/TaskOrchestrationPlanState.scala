@@ -2,7 +2,6 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait TaskOrchestrationPlanState extends StObject
 object TaskOrchestrationPlanState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TaskOrchestrationPlanState with Double] = js.native
+  def apply(value: Double): js.UndefOr[TaskOrchestrationPlanState & Double] = js.native
   
   @js.native
-  sealed trait Completed extends TaskOrchestrationPlanState
-  /* 4 */ val Completed: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.Completed with Double = js.native
+  sealed trait Completed
+    extends StObject
+       with TaskOrchestrationPlanState
+  /* 4 */ val Completed: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.Completed & Double = js.native
   
   @js.native
-  sealed trait InProgress extends TaskOrchestrationPlanState
-  /* 1 */ val InProgress: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.InProgress with Double = js.native
+  sealed trait InProgress
+    extends StObject
+       with TaskOrchestrationPlanState
+  /* 1 */ val InProgress: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.InProgress & Double = js.native
   
   @js.native
-  sealed trait Queued extends TaskOrchestrationPlanState
-  /* 2 */ val Queued: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.Queued with Double = js.native
+  sealed trait Queued
+    extends StObject
+       with TaskOrchestrationPlanState
+  /* 2 */ val Queued: typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlanState.Queued & Double = js.native
 }

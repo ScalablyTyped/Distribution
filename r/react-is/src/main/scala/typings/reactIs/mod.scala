@@ -2,10 +2,13 @@ package typings.reactIs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-is", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-is", "AsyncMode")
   @js.native
@@ -55,59 +58,45 @@ object mod {
   @js.native
   val Suspense: js.Symbol = js.native
   
-  @JSImport("react-is", "isAsyncMode")
-  @js.native
-  def isAsyncMode(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isAsyncMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isContextConsumer")
-  @js.native
-  def isContextConsumer(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isContextConsumer(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextConsumer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isContextProvider")
-  @js.native
-  def isContextProvider(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isContextProvider(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isElement")
-  @js.native
-  def isElement(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isElement(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isForwardRef")
-  @js.native
-  def isForwardRef(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isForwardRef(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForwardRef")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isFragment")
-  @js.native
-  def isFragment(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isFragment(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isLazy")
-  @js.native
-  def isLazy(value: js.Any): /* is react.react.LazyExoticComponent<any> */ Boolean = js.native
+  @scala.inline
+  def isLazy(value: js.Any): /* is react.react.LazyExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazy")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.LazyExoticComponent<any> */ Boolean]
   
-  @JSImport("react-is", "isMemo")
-  @js.native
-  def isMemo(value: js.Any): /* is react.react.MemoExoticComponent<any> */ Boolean = js.native
+  @scala.inline
+  def isMemo(value: js.Any): /* is react.react.MemoExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMemo")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.MemoExoticComponent<any> */ Boolean]
   
-  @JSImport("react-is", "isPortal")
-  @js.native
-  def isPortal(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isPortal(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortal")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isProfiler")
-  @js.native
-  def isProfiler(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isProfiler(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProfiler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isStrictMode")
-  @js.native
-  def isStrictMode(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isStrictMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrictMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isSuspense")
-  @js.native
-  def isSuspense(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isSuspense(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuspense")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("react-is", "isValidElementType")
-  @js.native
-  def isValidElementType(value: js.Any): /* is react.react.ReactType<any> */ Boolean = js.native
+  @scala.inline
+  def isValidElementType(value: js.Any): /* is react.react.ReactType<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElementType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactType<any> */ Boolean]
   
-  @JSImport("react-is", "typeOf")
-  @js.native
-  def typeOf(value: js.Any): js.UndefOr[js.Symbol] = js.native
+  @scala.inline
+  def typeOf(value: js.Any): js.UndefOr[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Symbol]]
 }

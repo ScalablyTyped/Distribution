@@ -2,14 +2,12 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure representing a Marker icon image.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon Maps JavaScript API}
   */
-@js.native
 trait Icon extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Icon extends StObject {
     * along the center point of the bottom of the image.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.anchor Maps JavaScript API}
     */
-  var anchor: js.UndefOr[Point] = js.native
+  var anchor: js.UndefOr[Point] = js.undefined
   
   /**
     * The origin of the label relative to the top-left corner of the icon
@@ -26,21 +24,21 @@ trait Icon extends StObject {
     * located in the center point of the image.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.labelOrigin Maps JavaScript API}
     */
-  var labelOrigin: js.UndefOr[Point] = js.native
+  var labelOrigin: js.UndefOr[Point] = js.undefined
   
   /**
     * The position of the image within a sprite, if any.
     * @default new google.maps.Point(0, 0)
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.origin Maps JavaScript API}
     */
-  var origin: js.UndefOr[Point] = js.native
+  var origin: js.UndefOr[Point] = js.undefined
   
   /**
     * The size of the entire image after scaling, if any. Use this property to
     * stretch/shrink an image or a sprite.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.scaledSize Maps JavaScript API}
     */
-  var scaledSize: js.UndefOr[Size] = js.native
+  var scaledSize: js.UndefOr[Size] = js.undefined
   
   /**
     * The display size of the sprite or image. When using sprites, you must
@@ -48,13 +46,13 @@ trait Icon extends StObject {
     * the image loads.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.size Maps JavaScript API}
     */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /**
     * The URL of the image or sprite sheet.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon.url Maps JavaScript API}
     */
-  var url: String = js.native
+  var url: String
 }
 object Icon {
   

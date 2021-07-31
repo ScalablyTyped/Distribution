@@ -2,17 +2,15 @@ package typings.stylableCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namespace extends StObject {
   
-  var namespace: String = js.native
+  var namespace: String
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var stylesheetPath: String = js.native
+  var stylesheetPath: String
 }
 object Namespace {
   

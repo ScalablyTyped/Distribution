@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,14 +50,14 @@ object mod {
     def portal(children: ReactNode): ReactElement = js.native
   }
   
-  @js.native
   trait PortalProps
-    extends Props[js.Any] {
+    extends StObject
+       with Props[js.Any] {
     
     @JSName("children")
-    var children_PortalProps: ReactNode = js.native
+    var children_PortalProps: ReactNode
     
-    var node: js.UndefOr[Element | Null] = js.native
+    var node: js.UndefOr[Element | Null] = js.undefined
   }
   object PortalProps {
     
@@ -88,26 +87,26 @@ object mod {
     }
   }
   
-  @js.native
   trait PortalWithStateProps
-    extends Props[js.Any] {
+    extends StObject
+       with Props[js.Any] {
     
     @JSName("children")
-    def children_MPortalWithStateProps(params: PortalFunctionParams): ReactNode = js.native
+    def children_MPortalWithStateProps(params: PortalFunctionParams): ReactNode
     
-    var closeOnEsc: js.UndefOr[Boolean] = js.native
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnOutsideClick: js.UndefOr[Boolean] = js.native
+    var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var node: js.UndefOr[Element | Null] = js.native
+    var node: js.UndefOr[Element | Null] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var openByClickOn: js.UndefOr[ReactElement] = js.native
+    var openByClickOn: js.UndefOr[ReactElement] = js.undefined
   }
   object PortalWithStateProps {
     

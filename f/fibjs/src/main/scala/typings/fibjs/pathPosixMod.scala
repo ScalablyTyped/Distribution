@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,63 +11,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pathPosixMod {
   
-  @JSImport("path_posix", "basename")
+  @JSImport("path_posix", JSImport.Namespace)
   @js.native
-  def basename(path: String): String = js.native
-  @JSImport("path_posix", "basename")
-  @js.native
-  def basename(path: String, ext: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("path_posix", "delimiter")
   @js.native
   val delimiter: String = js.native
   
-  @JSImport("path_posix", "dirname")
-  @js.native
-  def dirname(path: String): String = js.native
+  @scala.inline
+  def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("path_posix", "extname")
-  @js.native
-  def extname(path: String): String = js.native
+  @scala.inline
+  def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("path_posix", "fullpath")
-  @js.native
-  def fullpath(path: String): String = js.native
+  @scala.inline
+  def fullpath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullpath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("path_posix", "isAbsolute")
-  @js.native
-  def isAbsolute(path: String): Boolean = js.native
+  @scala.inline
+  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("path_posix", "join")
-  @js.native
-  def join(ps: js.Any*): String = js.native
+  @scala.inline
+  def join(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("path_posix", "normalize")
-  @js.native
-  def normalize(path: String): String = js.native
+  @scala.inline
+  def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("path_posix", "posix")
   @js.native
   val posix: js.Object = js.native
   
-  @JSImport("path_posix", "relative")
-  @js.native
-  def relative(_from: String, to: String): String = js.native
+  @scala.inline
+  def relative(_from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(_from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("path_posix", "resolve")
-  @js.native
-  def resolve(ps: js.Any*): String = js.native
+  @scala.inline
+  def resolve(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("path_posix", "sep")
   @js.native
   val sep: String = js.native
   
-  @JSImport("path_posix", "toNamespacedPath")
-  @js.native
-  def toNamespacedPath(): js.Any = js.native
-  @JSImport("path_posix", "toNamespacedPath")
-  @js.native
-  def toNamespacedPath(path: js.Any): js.Any = js.native
+  @scala.inline
+  def toNamespacedPath(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")().asInstanceOf[js.Any]
+  @scala.inline
+  def toNamespacedPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("path_posix", "win32")
   @js.native

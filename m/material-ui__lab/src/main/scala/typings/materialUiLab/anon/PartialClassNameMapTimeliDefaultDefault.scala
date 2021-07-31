@@ -2,26 +2,24 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/TimelineDot/TimelineDot.TimelineDotClassKey>> */
-@js.native
 trait PartialClassNameMapTimeliDefaultDefault extends StObject {
   
-  var defaultDefault: js.UndefOr[String] = js.native
+  var defaultDefault: js.UndefOr[String] = js.undefined
   
-  var defaultPrimary: js.UndefOr[String] = js.native
+  var defaultPrimary: js.UndefOr[String] = js.undefined
   
-  var defaultSecondary: js.UndefOr[String] = js.native
+  var defaultSecondary: js.UndefOr[String] = js.undefined
   
-  var outlinedDefault: js.UndefOr[String] = js.native
+  var outlinedDefault: js.UndefOr[String] = js.undefined
   
-  var outlinedPrimary: js.UndefOr[String] = js.native
+  var outlinedPrimary: js.UndefOr[String] = js.undefined
   
-  var outlinedSecondary: js.UndefOr[String] = js.native
+  var outlinedSecondary: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapTimeliDefaultDefault {
   

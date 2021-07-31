@@ -2,18 +2,16 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericBaseLayout...
   */
-@js.native
 trait IGenericBaseLayout extends StObject {
   
-  var qInfo: INxInfo = js.native
+  var qInfo: INxInfo
   
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
 }
 object IGenericBaseLayout {
   

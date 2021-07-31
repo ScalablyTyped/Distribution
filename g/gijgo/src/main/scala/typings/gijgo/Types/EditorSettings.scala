@@ -2,27 +2,25 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Editor
-@js.native
 trait EditorSettings extends StObject {
   
-  var changed: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var changed: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
   //Events
-  var changing: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var changing: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var iconsLibrary: js.UndefOr[String] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object EditorSettings {
   
@@ -36,13 +34,13 @@ object EditorSettings {
   implicit class EditorSettingsMutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChanged(value: /* e */ js.Any => _): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
+    def setChanged(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
     @scala.inline
-    def setChanging(value: /* e */ js.Any => _): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
+    def setChanging(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)

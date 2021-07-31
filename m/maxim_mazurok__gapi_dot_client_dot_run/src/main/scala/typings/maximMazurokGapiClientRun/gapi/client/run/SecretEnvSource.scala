@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecretEnvSource extends StObject {
   
   /** This field should not be used directly as it is meant to be inlined directly into the message. Use the "name" field instead. */
-  var localObjectReference: js.UndefOr[LocalObjectReference] = js.native
+  var localObjectReference: js.UndefOr[LocalObjectReference] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported The Secret to select from. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Specify whether the Secret must be defined */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object SecretEnvSource {
   

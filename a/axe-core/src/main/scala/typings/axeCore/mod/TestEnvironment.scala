@@ -2,21 +2,19 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestEnvironment extends StObject {
   
-  var orientationAngle: js.UndefOr[Double] = js.native
+  var orientationAngle: js.UndefOr[Double] = js.undefined
   
-  var orientationType: js.UndefOr[String] = js.native
+  var orientationType: js.UndefOr[String] = js.undefined
   
-  var userAgent: String = js.native
+  var userAgent: String
   
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object TestEnvironment {
   

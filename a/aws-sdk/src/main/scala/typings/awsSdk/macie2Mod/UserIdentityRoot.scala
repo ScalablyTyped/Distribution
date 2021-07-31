@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIdentityRoot extends StObject {
   
   /**
     * The unique identifier for the AWS account.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the principal that performed the action. The last section of the ARN contains the name of the user or role that performed the action.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the entity that performed the action.
     */
-  var principalId: js.UndefOr[string] = js.native
+  var principalId: js.UndefOr[string] = js.undefined
 }
 object UserIdentityRoot {
   

@@ -4,7 +4,6 @@ import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGElement")
@@ -58,21 +57,17 @@ class SVGElement () extends StObject {
     * @return Returns the SVGElement for chaining.
     */
   def align(): SVGElement = js.native
-  def align(alignOptions: js.UndefOr[scala.Nothing], alignByTranslate: js.UndefOr[scala.Nothing], box: String): SVGElement = js.native
-  def align(
-    alignOptions: js.UndefOr[scala.Nothing],
-    alignByTranslate: js.UndefOr[scala.Nothing],
-    box: BBoxObject
-  ): SVGElement = js.native
-  def align(alignOptions: js.UndefOr[scala.Nothing], alignByTranslate: Boolean): SVGElement = js.native
-  def align(alignOptions: js.UndefOr[scala.Nothing], alignByTranslate: Boolean, box: String): SVGElement = js.native
-  def align(alignOptions: js.UndefOr[scala.Nothing], alignByTranslate: Boolean, box: BBoxObject): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean, box: String): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean, box: BBoxObject): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Unit, box: String): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Unit, box: BBoxObject): SVGElement = js.native
   def align(alignOptions: AlignObject): SVGElement = js.native
-  def align(alignOptions: AlignObject, alignByTranslate: js.UndefOr[scala.Nothing], box: String): SVGElement = js.native
-  def align(alignOptions: AlignObject, alignByTranslate: js.UndefOr[scala.Nothing], box: BBoxObject): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean, box: String): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean, box: BBoxObject): SVGElement = js.native
+  def align(alignOptions: AlignObject, alignByTranslate: Unit, box: String): SVGElement = js.native
+  def align(alignOptions: AlignObject, alignByTranslate: Unit, box: BBoxObject): SVGElement = js.native
   
   /**
     * Animate to given attributes or CSS properties.
@@ -89,9 +84,9 @@ class SVGElement () extends StObject {
     * @return Returns the SVGElement for chaining.
     */
   def animate(params: SVGAttributes): SVGElement = js.native
-  def animate(params: SVGAttributes, options: js.UndefOr[scala.Nothing], complete: js.Function): SVGElement = js.native
   def animate(params: SVGAttributes, options: Boolean): SVGElement = js.native
   def animate(params: SVGAttributes, options: Boolean, complete: js.Function): SVGElement = js.native
+  def animate(params: SVGAttributes, options: Unit, complete: js.Function): SVGElement = js.native
   def animate(params: SVGAttributes, options: PartialAnimationOptionsOb): SVGElement = js.native
   def animate(params: SVGAttributes, options: PartialAnimationOptionsOb, complete: js.Function): SVGElement = js.native
   
@@ -130,112 +125,52 @@ class SVGElement () extends StObject {
     *         value of the attribute is returned.
     */
   def attr(): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: js.UndefOr[scala.Nothing],
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: js.UndefOr[scala.Nothing], complete: js.Function): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: js.UndefOr[scala.Nothing],
-    complete: js.Function,
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: String): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: String,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: String, complete: js.Function): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: Double): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: Double,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: Double, complete: js.Function): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: SVGPathArray): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: SVGPathArray,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: js.UndefOr[scala.Nothing], `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
-  def attr(
-    hash: js.UndefOr[scala.Nothing],
-    `val`: SVGPathArray,
-    complete: js.Function,
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(
-    hash: String,
-    `val`: js.UndefOr[scala.Nothing],
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: String, `val`: js.UndefOr[scala.Nothing], complete: js.Function): SVGElement = js.native
-  def attr(hash: String, `val`: js.UndefOr[scala.Nothing], complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: String): SVGElement = js.native
-  def attr(hash: String, `val`: String, complete: js.UndefOr[scala.Nothing], continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: Double): SVGElement = js.native
-  def attr(hash: String, `val`: Double, complete: js.UndefOr[scala.Nothing], continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: Double, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: SVGPathArray): SVGElement = js.native
-  def attr(hash: String, `val`: SVGPathArray, complete: js.UndefOr[scala.Nothing], continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: String, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: String): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: SVGAttributes): SVGElement = js.native
-  def attr(
-    hash: SVGAttributes,
-    `val`: js.UndefOr[scala.Nothing],
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
-  def attr(hash: SVGAttributes, `val`: js.UndefOr[scala.Nothing], complete: js.Function): SVGElement = js.native
-  def attr(
-    hash: SVGAttributes,
-    `val`: js.UndefOr[scala.Nothing],
-    complete: js.Function,
-    continueAnimation: Boolean
-  ): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String): SVGElement = js.native
-  def attr(
-    hash: SVGAttributes,
-    `val`: String,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: Double): SVGElement = js.native
-  def attr(
-    hash: SVGAttributes,
-    `val`: Double,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: Double, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: SVGPathArray): SVGElement = js.native
-  def attr(
-    hash: SVGAttributes,
-    `val`: SVGPathArray,
-    complete: js.UndefOr[scala.Nothing],
-    continueAnimation: Boolean
-  ): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(key: String): Double | String = js.native
   @JSName("attr")
   def attr_SVGElement(hash: String): SVGElement = js.native
@@ -330,9 +265,9 @@ class SVGElement () extends StObject {
     * @return The bounding box with `x`, `y`, `width` and `height` properties.
     */
   def getBBox(): BBoxObject = js.native
-  def getBBox(reload: js.UndefOr[scala.Nothing], rot: Double): BBoxObject = js.native
   def getBBox(reload: Boolean): BBoxObject = js.native
   def getBBox(reload: Boolean, rot: Double): BBoxObject = js.native
+  def getBBox(reload: Unit, rot: Double): BBoxObject = js.native
   
   /**
     * Get the computed style. Only in styled mode.
@@ -458,15 +393,15 @@ class SVGElement () extends StObject {
     * @return Returns the SVGElement for chaining.
     */
   def shadow(): SVGElement = js.native
-  def shadow(shadowOptions: js.UndefOr[scala.Nothing], group: js.UndefOr[scala.Nothing], cutOff: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: js.UndefOr[scala.Nothing], group: SVGElement): SVGElement = js.native
-  def shadow(shadowOptions: js.UndefOr[scala.Nothing], group: SVGElement, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: Boolean, group: js.UndefOr[scala.Nothing], cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Boolean, group: Unit, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: Boolean, group: SVGElement): SVGElement = js.native
   def shadow(shadowOptions: Boolean, group: SVGElement, cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: Unit, cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: SVGElement): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: SVGElement, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject): SVGElement = js.native
-  def shadow(shadowOptions: ShadowOptionsObject, group: js.UndefOr[scala.Nothing], cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: ShadowOptionsObject, group: Unit, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement, cutOff: Boolean): SVGElement = js.native
   

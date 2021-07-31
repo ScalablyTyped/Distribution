@@ -11,8 +11,8 @@ simple date math util
 | Full name          | date-arithmetic |
 | Keywords           | moment, date, math |
 | # releases         | 4 |
-| # dependents       | 183 |
-| # downloads        | 6536966 |
+| # dependents       | 191 |
+| # downloads        | 7326644 |
 | # stars            | 5 |
 
 ## Links

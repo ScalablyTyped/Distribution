@@ -23,7 +23,6 @@ import typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode
 import typings.ecmarkdown.tokenizerMod.Tokenizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -37,10 +36,10 @@ object parserMod {
     
     var _t: Tokenizer = js.native
     
-    def finish[T /* <: Unlocated[Node] */](node: T): T with Location = js.native
-    def finish[T /* <: Unlocated[Node] */](node: T, start: js.UndefOr[scala.Nothing], end: Position): T with Location = js.native
-    def finish[T /* <: Unlocated[Node] */](node: T, start: Position): T with Location = js.native
-    def finish[T /* <: Unlocated[Node] */](node: T, start: Position, end: Position): T with Location = js.native
+    def finish[T /* <: Unlocated[Node] */](node: T): T & Location = js.native
+    def finish[T /* <: Unlocated[Node] */](node: T, start: Unit, end: Position): T & Location = js.native
+    def finish[T /* <: Unlocated[Node] */](node: T, start: Position): T & Location = js.native
+    def finish[T /* <: Unlocated[Node] */](node: T, start: Position, end: Position): T & Location = js.native
     
     def getEnd(node: Node): Position = js.native
     def getEnd(node: Token): Position = js.native
@@ -73,19 +72,20 @@ object parserMod {
   /* static members */
   object Parser {
     
-    @JSImport("ecmarkdown/dist/parser", "Parser.parseAlgorithm")
+    @JSImport("ecmarkdown/dist/parser", "Parser")
     @js.native
-    def parseAlgorithm(str: String): Contents = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ecmarkdown/dist/parser", "Parser.parseFragment")
-    @js.native
-    def parseFragment(str: String): js.Array[FragmentNode] = js.native
+    @scala.inline
+    def parseAlgorithm(str: String): Contents = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAlgorithm")(str.asInstanceOf[js.Any]).asInstanceOf[Contents]
+    
+    @scala.inline
+    def parseFragment(str: String): js.Array[FragmentNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFragment")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FragmentNode]]
   }
   
-  @js.native
   trait ParseFragmentOpts extends StObject {
     
-    var inList: js.UndefOr[Boolean] = js.native
+    var inList: js.UndefOr[Boolean] = js.undefined
   }
   object ParseFragmentOpts {
     

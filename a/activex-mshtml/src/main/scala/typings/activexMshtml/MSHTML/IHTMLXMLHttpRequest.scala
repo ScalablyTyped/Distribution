@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,15 +19,9 @@ trait IHTMLXMLHttpRequest extends StObject {
   var onreadystatechange: js.Any = js.native
   
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrURL: String,
-    varAsync: js.Any,
-    varUser: js.UndefOr[scala.Nothing],
-    varPassword: js.Any
-  ): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any, varPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: Unit, varPassword: js.Any): Unit = js.native
   
   val readyState: Double = js.native
   

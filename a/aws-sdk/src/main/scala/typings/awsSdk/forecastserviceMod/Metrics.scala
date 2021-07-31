@@ -2,26 +2,24 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metrics extends StObject {
   
   /**
     *  Provides detailed error metrics on forecast type, root-mean square-error (RMSE), and weighted average percentage error (WAPE). 
     */
-  var ErrorMetrics: js.UndefOr[typings.awsSdk.forecastserviceMod.ErrorMetrics] = js.native
+  var ErrorMetrics: js.UndefOr[typings.awsSdk.forecastserviceMod.ErrorMetrics] = js.undefined
   
   /**
     * The root-mean-square error (RMSE).
     */
-  var RMSE: js.UndefOr[Double] = js.native
+  var RMSE: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of weighted quantile losses. Quantiles divide a probability distribution into regions of equal probability. The distribution in this case is the loss function.
     */
-  var WeightedQuantileLosses: js.UndefOr[typings.awsSdk.forecastserviceMod.WeightedQuantileLosses] = js.native
+  var WeightedQuantileLosses: js.UndefOr[typings.awsSdk.forecastserviceMod.WeightedQuantileLosses] = js.undefined
 }
 object Metrics {
   

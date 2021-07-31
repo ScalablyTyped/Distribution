@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpnGatewayRoutePropagationMod {
@@ -38,6 +37,10 @@ object vpnGatewayRoutePropagationMod {
   /* static members */
   object VpnGatewayRoutePropagation {
     
+    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpnGatewayRoutePropagation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object vpnGatewayRoutePropagationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpnGatewayRoutePropagation = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpnGatewayRoutePropagation = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayRoutePropagationState): VpnGatewayRoutePropagation = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayRoutePropagationState, opts: CustomResourceOptions): VpnGatewayRoutePropagation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpnGatewayRoutePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayRoutePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnGatewayRoutePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayRoutePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayRoutePropagationState): VpnGatewayRoutePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayRoutePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayRoutePropagationState, opts: CustomResourceOptions): VpnGatewayRoutePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayRoutePropagation]
     
     /**
       * Returns true if the given object is an instance of VpnGatewayRoutePropagation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayRoutePropagation.VpnGatewayRoutePropagation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayRoutePropagation.VpnGatewayRoutePropagation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayRoutePropagation.VpnGatewayRoutePropagation */ Boolean]
   }
   
-  @js.native
   trait VpnGatewayRoutePropagationArgs extends StObject {
     
     /**
       * The id of the `aws.ec2.RouteTable` to propagate routes into.
       */
-    val routeTableId: Input[String] = js.native
+    val routeTableId: Input[String]
     
     /**
       * The id of the `aws.ec2.VpnGateway` to propagate routes from.
       */
-    val vpnGatewayId: Input[String] = js.native
+    val vpnGatewayId: Input[String]
   }
   object VpnGatewayRoutePropagationArgs {
     
@@ -101,18 +98,17 @@ object vpnGatewayRoutePropagationMod {
     }
   }
   
-  @js.native
   trait VpnGatewayRoutePropagationState extends StObject {
     
     /**
       * The id of the `aws.ec2.RouteTable` to propagate routes into.
       */
-    val routeTableId: js.UndefOr[Input[String]] = js.native
+    val routeTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the `aws.ec2.VpnGateway` to propagate routes from.
       */
-    val vpnGatewayId: js.UndefOr[Input[String]] = js.native
+    val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpnGatewayRoutePropagationState {
     

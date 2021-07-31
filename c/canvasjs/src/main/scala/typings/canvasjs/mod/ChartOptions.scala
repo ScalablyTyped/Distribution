@@ -2,10 +2,8 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartOptions extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait ChartOptions extends StObject {
     * Default: 1200
     * Example: 1000, 500 etc.
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables Animation while rendering the Chart.
     * Default: true
     * Example: false, true
     */
-  var animationEnabled: js.UndefOr[Boolean] = js.native
+  var animationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * axisX object lets you set various parameters of X Axis like interval, grid lines, etc. It is mostly horizontal, except when we are working with Bar Charts, where axisX is vertical.
     */
-  var axisX: js.UndefOr[ChartAxisXOptions | js.Array[ChartAxisXOptions]] = js.native
+  var axisX: js.UndefOr[ChartAxisXOptions | js.Array[ChartAxisXOptions]] = js.undefined
   
   /**
     * axisX2 is the secondary axis which renders on the opposite of primary axis (axisX).
     * It is mostly horizontal on top, except when we are working with Bar Charts, where axisX2 is vertical on right.
     */
-  var axisX2: js.UndefOr[ChartAxisXOptions | js.Array[ChartAxisXOptions]] = js.native
+  var axisX2: js.UndefOr[ChartAxisXOptions | js.Array[ChartAxisXOptions]] = js.undefined
   
   /**
     * axisY object lets you set various parameters of Y Axis like interval, grid lines, etc. It is mostly vertical, except when we are working with Bar Charts, where axisY is horizontal.
     */
-  var axisY: js.UndefOr[ChartAxisYOptions | js.Array[ChartAxisYOptions]] = js.native
+  var axisY: js.UndefOr[ChartAxisYOptions | js.Array[ChartAxisYOptions]] = js.undefined
   
   /**
     * axisY2 is the secondary axis which renders on the opposite of primary axis (axisY). It is mostly vertical, except when we are working with Bar Charts, where axisY2 is horizontal.
     */
-  var axisY2: js.UndefOr[ChartAxisYOptions | js.Array[ChartAxisYOptions]] = js.native
+  var axisY2: js.UndefOr[ChartAxisYOptions | js.Array[ChartAxisYOptions]] = js.undefined
   
   /**
     * Sets the background color of entire Chart Area. Values can be "HTML Color Name", "hex code" or "rgba values"
     * Default: "white"
     * Example: "yellow", "#F5DEB3"..
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the colorSet of the Chart. Color Set is an array of colors that are used to render data. Various predefined Color Sets are bundled along with the library.
@@ -56,7 +54,7 @@ trait ChartOptions extends StObject {
     * Default: "colorset1" or as defined in the selected theme
     * Example: "colorSet1", "colorSet2", "colorSet3"
     */
-  var colorSet: js.UndefOr[String] = js.native
+  var colorSet: js.UndefOr[String] = js.undefined
   
   /**
     * CanvasJS allows you to localize various culture / language / country specific elements in the Chart like number formatting style – where you can choose
@@ -64,12 +62,12 @@ trait ChartOptions extends StObject {
     * By default CanvasJS is set to Neutral English Culture – "en".
     * Default: "en"
     */
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
   /**
     * data is an array of dataSeries Objects.
     */
-  var data: js.Array[ChartDataSeriesOptions] = js.native
+  var data: js.Array[ChartDataSeriesOptions]
   
   /**
     * dataPointMaxWidth sets the maximum width of dataPoints in column / bar, ohlc and candlestick, charts.
@@ -78,7 +76,7 @@ trait ChartOptions extends StObject {
     * Default : Automatically calculated based on the chart size.
     * Example : 10, 20, 30, etc.
     */
-  var dataPointMaxWidth: js.UndefOr[Double] = js.native
+  var dataPointMaxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * dataPointMinWidth sets the minimum width of dataPoints in column / bar, ohlc and candlestick, charts.
@@ -87,7 +85,7 @@ trait ChartOptions extends StObject {
     * Default : 1.
     * Example : 2, 10, 25, etc.
     */
-  var dataPointMinWidth: js.UndefOr[Double] = js.native
+  var dataPointMinWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * dataPointWidth sets the width of dataPoints in column / bar, ohlc and candlestick, charts.
@@ -97,34 +95,34 @@ trait ChartOptions extends StObject {
     * Default : Automatically calculated based on the chart size.
     * Example : 10, 20, 30, etc.
     */
-  var dataPointWidth: js.UndefOr[Double] = js.native
+  var dataPointWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting exportEnabled to true enables the export feature. As of now JPG & PNG formats are supported. Export feature is available in all Chart Types.
     * Default: false
     * Options: true, false
     */
-  var exportEnabled: js.UndefOr[Boolean] = js.native
+  var exportEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * While exporting any chart, "Chart" is used as the default fine name with corresponding extension "jpg" or "png". You can override this name using exportFileName property.
     * Default: Chart
     */
-  var exportFileName: js.UndefOr[String] = js.native
+  var exportFileName: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the Chart
     * Default: Takes chart container’s height by default. If the height is not set for the chart container, defaults to 400.
     * Example: 260, 300, 400
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables / Disables Chart interactivity like toolTip, mouse and touch events.
     * Default: true
     * Example: false, true
     */
-  var interactivityEnabled: js.UndefOr[Boolean] = js.native
+  var interactivityEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whenever the chart contains multiple dataSeries, it is recommended to represent each dataSeries in a legend.
@@ -132,38 +130,38 @@ trait ChartOptions extends StObject {
     * In case of Pie and Doughnut charts, an entry is created for each dataPoint and in rest of the chart types entries are created for each dataSeries.
     * You can selectively show or hide a dataSeries in the Legend using showInLegend property of dataSeries.
     */
-  var legend: js.UndefOr[ChartLegendOptions] = js.native
+  var legend: js.UndefOr[ChartLegendOptions] = js.undefined
   
   /**
     * subtitles is a collection of subtitle elements. This allows you to have as many subtitles as you want in a chart.
     * subtitle allows you to set content, appearance and position of Chart’s subtitle. subtitle is very much like title except that its font size is lesser than title by default.
     */
-  var subtitles: js.UndefOr[js.Array[ChartTitleOptions]] = js.native
+  var subtitles: js.UndefOr[js.Array[ChartTitleOptions]] = js.undefined
   
   /**
     * Sets the theme of the Chart. Various predefined themes are bundled along with the library. User can easily switch these themes by changing theme property to the below mentioned options.
     * Default: "theme1"
     * Options: "theme1","theme2", "theme3"
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
   /**
     * Title allows you to set content, appearance and position of Chart’s Title.
     */
-  var title: ChartTitleOptions = js.native
+  var title: ChartTitleOptions
   
   /**
     * toolTip object lets user set behaviour of toolTip at global level like enabling/disabling animation, setting Border Color, sharing toolTip between multiple dataSeries, etc.
     * You can also disable the toolTip by setting enabled property to false.
     */
-  var toolTip: js.UndefOr[ChartToolTipOptions] = js.native
+  var toolTip: js.UndefOr[ChartToolTipOptions] = js.undefined
   
   /**
     * Sets the width of the Chart.
     * Default: Takes chart container’s width by default. If the width is not set for the chart container, defaults to 500.
     * Example: 380, 500, 720
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting zoomEnabled to true enables zooming and panning feature of Chart.
@@ -174,7 +172,7 @@ trait ChartOptions extends StObject {
     * Default: false
     * Options: true, false
     */
-  var zoomEnabled: js.UndefOr[Boolean] = js.native
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ChartOptions {
   

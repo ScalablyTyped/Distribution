@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGroupRequest extends StObject {
   
   /**
     * The ID of the Greengrass group.
     */
-  var GroupId: string = js.native
+  var GroupId: string
   
   /**
     * The name of the definition.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
 }
 object UpdateGroupRequest {
   

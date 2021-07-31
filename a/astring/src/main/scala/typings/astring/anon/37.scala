@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.ArrayPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `37` extends StObject {
   
-  var `type`: ArrayPattern = js.native
+  var `type`: ArrayPattern
 }
 object `37` {
   
   @scala.inline
-  def apply(`type`: ArrayPattern): `37` = {
+  def apply(): `37` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[`37`]
   }
   

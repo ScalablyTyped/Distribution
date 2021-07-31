@@ -4,25 +4,23 @@ import typings.reactRelay.entryPointTypesMod.PreloadedQueries
 import typings.relayRuntime.relayRuntimeTypesMod.DisposeFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dispose[TEntryPointComponent] extends StObject {
   
-  var dispose: DisposeFn = js.native
+  var dispose: DisposeFn
   
-  var entryPoints: js.Any = js.native
+  var entryPoints: js.Any
   
-  var extraProps: js.Any = js.native
+  var extraProps: js.Any
   
-  def getComponent(): TEntryPointComponent = js.native
+  def getComponent(): TEntryPointComponent
   
-  var isDisposed: Boolean = js.native
+  var isDisposed: Boolean
   
-  var queries: PreloadedQueries[_] = js.native
+  var queries: PreloadedQueries[js.Any]
   
-  var rootModuleID: String = js.native
+  var rootModuleID: String
 }
 object Dispose {
   
@@ -33,7 +31,7 @@ object Dispose {
     extraProps: js.Any,
     getComponent: () => TEntryPointComponent,
     isDisposed: Boolean,
-    queries: PreloadedQueries[_],
+    queries: PreloadedQueries[js.Any],
     rootModuleID: String
   ): Dispose[TEntryPointComponent] = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), entryPoints = entryPoints.asInstanceOf[js.Any], extraProps = extraProps.asInstanceOf[js.Any], getComponent = js.Any.fromFunction0(getComponent), isDisposed = isDisposed.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], rootModuleID = rootModuleID.asInstanceOf[js.Any])
@@ -41,7 +39,7 @@ object Dispose {
   }
   
   @scala.inline
-  implicit class DisposeMutableBuilder[Self <: Dispose[_], TEntryPointComponent] (val x: Self with Dispose[TEntryPointComponent]) extends AnyVal {
+  implicit class DisposeMutableBuilder[Self <: Dispose[?], TEntryPointComponent] (val x: Self & Dispose[TEntryPointComponent]) extends AnyVal {
     
     @scala.inline
     def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
@@ -59,7 +57,7 @@ object Dispose {
     def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: PreloadedQueries[_]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    def setQueries(value: PreloadedQueries[js.Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRootModuleID(value: String): Self = StObject.set(x, "rootModuleID", value.asInstanceOf[js.Any])

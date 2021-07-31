@@ -3,25 +3,23 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Execution.Execute, which will be contained in the
   * response field of the Operation.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends StObject {
   
   /**
     * True if the result was served from cache, false if it was executed.
     */
-  var cachedResult: js.UndefOr[Boolean] = js.native
+  var cachedResult: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The result of the action.
     */
-  var result: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testActionResult] = js.native
+  var result: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testActionResult] = js.undefined
   
   /**
     * An optional list of additional log outputs the server wishes to provide.
@@ -32,7 +30,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends StObject 
     * worker&#39;s setup phase. The keys SHOULD be human readable so that a
     * client can display them to a user.
     */
-  var serverLogs: js.UndefOr[StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]] = js.native
+  var serverLogs: js.UndefOr[StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]] = js.undefined
   
   /**
     * If the status has a code other than `OK`, it indicates that the action
@@ -45,7 +43,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends StObject 
     * stderr-related fields if it has any information available, such as the
     * stdout and stderr of a timed-out action.
     */
-  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse {
   

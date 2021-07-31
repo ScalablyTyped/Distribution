@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.semanticUiReact.headerHeaderMod.HeaderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod extends Shortcut {

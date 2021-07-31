@@ -2,19 +2,17 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Port extends StObject {
   
-  var IP: String = js.native
+  var IP: String
   
-  var PrivatePort: Double = js.native
+  var PrivatePort: Double
   
-  var PublicPort: Double = js.native
+  var PublicPort: Double
   
-  var Type: String = js.native
+  var Type: String
 }
 object Port {
   

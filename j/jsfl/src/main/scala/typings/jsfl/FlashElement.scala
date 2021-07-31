@@ -2,114 +2,113 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.jsfl.FlashSymbolInstance because var conflicts: accName, actionScript, description, forceSimple, shortcut, silent, tabIndex. Inlined backgroundColor, bitmapRenderMode, blendMode, buttonTracking, cacheAsBitmap, colorAlphaAmount, colorAlphaPercent, colorBlueAmount, colorBluePercent, colorGreenAmount, colorGreenPercent, colorMode, colorRedAmount, colorRedPercent, filters, firstFrame, loop, symbolType, useBackgroundColor, visible */ @js.native
-trait FlashElement
-  extends FlashShape
+- typings.jsfl.FlashSymbolInstance because var conflicts: accName, actionScript, description, forceSimple, shortcut, silent, tabIndex. Inlined backgroundColor, bitmapRenderMode, blendMode, buttonTracking, cacheAsBitmap, colorAlphaAmount, colorAlphaPercent, colorBlueAmount, colorBluePercent, colorGreenAmount, colorGreenPercent, colorMode, colorRedAmount, colorRedPercent, filters, firstFrame, loop, symbolType, useBackgroundColor, visible */ trait FlashElement
+  extends StObject
      with FlashInstance
      with FlashBitmapInstance
      with FlashCompiledClipInstance
-     with FlashComponentInstance {
+     with FlashComponentInstance
+     with FlashShape {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var bitmapRenderMode: String = js.native
+  var bitmapRenderMode: String
   
-  var blendMode: String = js.native
+  var blendMode: String
   
-  var buttonTracking: String = js.native
+  var buttonTracking: String
   
-  var cacheAsBitmap: Boolean = js.native
+  var cacheAsBitmap: Boolean
   
-  var colorAlphaAmount: Double = js.native
+  var colorAlphaAmount: Double
   
-  var colorAlphaPercent: Double = js.native
+  var colorAlphaPercent: Double
   
-  var colorBlueAmount: Double = js.native
+  var colorBlueAmount: Double
   
-  var colorBluePercent: Double = js.native
+  var colorBluePercent: Double
   
-  var colorGreenAmount: Double = js.native
+  var colorGreenAmount: Double
   
-  var colorGreenPercent: Double = js.native
+  var colorGreenPercent: Double
   
-  var colorMode: String = js.native
+  var colorMode: String
   
-  var colorRedAmount: Double = js.native
+  var colorRedAmount: Double
   
-  var colorRedPercent: Double = js.native
+  var colorRedPercent: Double
   
-  var depth: Double = js.native
+  var depth: Double
   
   /**
     * Read-only property; a string that represents the type of the specified element.
     * The value is one of the following: "shape", "text", "instance", or "shapeObj".
     * A "shapeObj" is created with an extensible tool.
     */
-  var elementType: String = js.native
+  var elementType: String
   
-  var filters: js.Array[FlashFilter] = js.native
+  var filters: js.Array[FlashFilter]
   
-  var firstFrame: Double = js.native
+  var firstFrame: Double
   
-  def getPersistentData(name: String): js.Any = js.native
+  def getPersistentData(name: String): js.Any
   
-  def getTransformationPoint(): FlashPoint = js.native
+  def getTransformationPoint(): FlashPoint
   
-  def hasPersistentData(name: String): Boolean = js.native
+  def hasPersistentData(name: String): Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var layer: FlashLayer = js.native
+  var layer: FlashLayer
   
-  var left: Double = js.native
+  var left: Double
   
-  var locked: Boolean = js.native
+  var locked: Boolean
   
-  var loop: String = js.native
+  var loop: String
   
-  var matrix: FlashMatrix = js.native
+  var matrix: FlashMatrix
   
-  var name: String = js.native
+  var name: String
   
-  def removePersistentData(name: String): Unit = js.native
+  def removePersistentData(name: String): Unit
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  def setPersistentData(name: String, `type`: String, value: js.Any): Unit = js.native
+  def setPersistentData(name: String, `type`: String, value: js.Any): Unit
   
-  def setTransformationPoint(transformationPoint: FlashPoint): Unit = js.native
+  def setTransformationPoint(transformationPoint: FlashPoint): Unit
   
-  var skewX: Double = js.native
+  var skewX: Double
   
-  var skewY: Double = js.native
+  var skewY: Double
   
-  var symbolType: String = js.native
+  var symbolType: String
   
-  var top: Double = js.native
+  var top: Double
   
-  var transformX: Double = js.native
+  var transformX: Double
   
-  var transformY: Double = js.native
+  var transformY: Double
   
-  var useBackgroundColor: Boolean = js.native
+  var useBackgroundColor: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object FlashElement {
   
@@ -164,7 +163,7 @@ object FlashElement {
     members: js.Array[FlashShape],
     name: String,
     numCubicSegments: Double,
-    parameters: js.Array[_],
+    parameters: js.Array[js.Any],
     removePersistentData: String => Unit,
     rotation: Double,
     scaleX: Double,

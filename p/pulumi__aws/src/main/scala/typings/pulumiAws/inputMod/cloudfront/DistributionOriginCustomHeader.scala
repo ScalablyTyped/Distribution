@@ -3,15 +3,13 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginCustomHeader extends StObject {
   
-  var name: Input[String] = js.native
+  var name: Input[String]
   
-  var value: Input[String] = js.native
+  var value: Input[String]
 }
 object DistributionOriginCustomHeader {
   

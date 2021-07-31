@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.SearchReposResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersSearchReposEndpoint extends StObject {
   
-  var parameters: SearchReposEndpoint = js.native
+  var parameters: SearchReposEndpoint
   
-  var request: SearchReposRequestOptions = js.native
+  var request: SearchReposRequestOptions
   
-  var response: OctokitResponse[SearchReposResponseData] = js.native
+  var response: OctokitResponse[SearchReposResponseData]
 }
 object ParametersSearchReposEndpoint {
   

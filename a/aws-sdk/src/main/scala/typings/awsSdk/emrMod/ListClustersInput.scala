@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersInput extends StObject {
   
   /**
     * The cluster state filters to apply when listing clusters.
     */
-  var ClusterStates: js.UndefOr[ClusterStateList] = js.native
+  var ClusterStates: js.UndefOr[ClusterStateList] = js.undefined
   
   /**
     * The creation date and time beginning value filter for listing clusters.
     */
-  var CreatedAfter: js.UndefOr[Date] = js.native
+  var CreatedAfter: js.UndefOr[Date] = js.undefined
   
   /**
     * The creation date and time end value filter for listing clusters.
     */
-  var CreatedBefore: js.UndefOr[Date] = js.native
+  var CreatedBefore: js.UndefOr[Date] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
 }
 object ListClustersInput {
   

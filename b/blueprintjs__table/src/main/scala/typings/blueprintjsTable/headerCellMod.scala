@@ -10,7 +10,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerCellMod {
@@ -32,20 +31,21 @@ object headerCellMod {
     def shouldComponentUpdate_MHeaderCell(nextProps: IHeaderCellProps): Boolean = js.native
   }
   
-  @js.native
-  trait IHeaderCellProps extends IProps {
+  trait IHeaderCellProps
+    extends StObject
+       with IProps {
     
     /**
       * The index of the cell in the header. If provided, this will be passed as an argument to any
       * callbacks when they are invoked.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, will apply the active class to the header to indicate it is
       * part of an external operation.
       */
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the row/column `name` will be replaced with a fixed-height skeleton, and the
@@ -53,34 +53,34 @@ object headerCellMod {
       * will also want to conditionally apply `Classes.SKELETON` where appropriate.
       * @default false
       */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback that returns an element, like a `<Menu>`, which is displayed by right-clicking
       * anywhere in the header. The callback will receive the cell index if it was provided via
       * props.
       */
-    var menuRenderer: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Element]] = js.native
+    var menuRenderer: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Element]] = js.undefined
     
     /**
       * The name displayed in the header of the row/column.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A `ReorderHandle` React component that allows users to drag-reorder the column header.
       */
-    var reorderHandle: js.UndefOr[Element] = js.native
+    var reorderHandle: js.UndefOr[Element] = js.undefined
     
     /**
       * A `ResizeHandle` React component that allows users to drag-resize the header.
       */
-    var resizeHandle: js.UndefOr[ResizeHandle] = js.native
+    var resizeHandle: js.UndefOr[ResizeHandle] = js.undefined
     
     /**
       * CSS styles for the top level element.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IHeaderCellProps {
     
@@ -143,10 +143,9 @@ object headerCellMod {
     }
   }
   
-  @js.native
   trait IHeaderCellState extends StObject {
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
   }
   object IHeaderCellState {
     
@@ -164,13 +163,14 @@ object headerCellMod {
     }
   }
   
-  @js.native
-  trait IInternalHeaderCellProps extends IHeaderCellProps {
+  trait IInternalHeaderCellProps
+    extends StObject
+       with IHeaderCellProps {
     
     /**
       * Specifies if the cell is selected.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
   }
   object IInternalHeaderCellProps {
     

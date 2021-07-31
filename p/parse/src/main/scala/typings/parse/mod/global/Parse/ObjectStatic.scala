@@ -7,7 +7,6 @@ import typings.parse.mod.global.Parse.Object.FetchAllOptions
 import typings.parse.mod.global.Parse.Object.SaveAllOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,13 +18,13 @@ trait ObjectStatic extends StObject {
   def destroyAll[T /* <: Object[Attributes] */](list: js.Array[T], options: DestroyAllOptions): js.Promise[js.Array[T]] = js.native
   
   def extend(className: String): js.Any = js.native
-  def extend(className: String, protoProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
   def extend(className: String, protoProps: js.Any): js.Any = js.native
   def extend(className: String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
+  def extend(className: String, protoProps: Unit, classProps: js.Any): js.Any = js.native
   def extend(className: ClassName): js.Any = js.native
-  def extend(className: ClassName, protoProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
   def extend(className: ClassName, protoProps: js.Any): js.Any = js.native
   def extend(className: ClassName, protoProps: js.Any, classProps: js.Any): js.Any = js.native
+  def extend(className: ClassName, protoProps: Unit, classProps: js.Any): js.Any = js.native
   
   def fetchAll[T /* <: Object[Attributes] */](list: js.Array[T], options: FetchAllOptions): js.Promise[js.Array[T]] = js.native
   

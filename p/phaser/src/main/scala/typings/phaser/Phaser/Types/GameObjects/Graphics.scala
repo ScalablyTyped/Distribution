@@ -2,7 +2,6 @@ package typings.phaser.Phaser.Types.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Graphics {
@@ -10,18 +9,17 @@ object Graphics {
   /**
     * Graphics fill style settings.
     */
-  @js.native
   trait FillStyle extends StObject {
     
     /**
       * The fill alpha.
       */
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
     /**
       * The fill color.
       */
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
   }
   object FillStyle {
     
@@ -51,23 +49,22 @@ object Graphics {
   /**
     * Graphics line style (or stroke style) settings.
     */
-  @js.native
   trait LineStyle extends StObject {
     
     /**
       * The stroke alpha.
       */
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke color.
       */
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke width.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LineStyle {
     
@@ -103,29 +100,19 @@ object Graphics {
   /**
     * Options for the Graphics game Object.
     */
-  /* Inlined phaser.Phaser.Types.GameObjects.Graphics.Styles & {  x :number | undefined,   y :number | undefined} */
-  @js.native
-  trait Options extends StObject {
-    
-    /**
-      * The style applied to shape areas.
-      */
-    var fillStyle: js.UndefOr[FillStyle] = js.native
-    
-    /**
-      * The style applied to shape outlines.
-      */
-    var lineStyle: js.UndefOr[LineStyle] = js.native
+  trait Options
+    extends StObject
+       with Styles {
     
     /**
       * The x coordinate of the Graphics.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The y coordinate of the Graphics.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -137,18 +124,6 @@ object Graphics {
     
     @scala.inline
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
-      
-      @scala.inline
-      def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
       
       @scala.inline
       def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
@@ -164,28 +139,27 @@ object Graphics {
     }
   }
   
-  @js.native
   trait RoundedRectRadius extends StObject {
     
     /**
       * Bottom left
       */
-    var bl: js.UndefOr[Double] = js.native
+    var bl: js.UndefOr[Double] = js.undefined
     
     /**
       * Bottom right
       */
-    var br: js.UndefOr[Double] = js.native
+    var br: js.UndefOr[Double] = js.undefined
     
     /**
       * Top left
       */
-    var tl: js.UndefOr[Double] = js.native
+    var tl: js.UndefOr[Double] = js.undefined
     
     /**
       * Top right
       */
-    var tr: js.UndefOr[Double] = js.native
+    var tr: js.UndefOr[Double] = js.undefined
   }
   object RoundedRectRadius {
     
@@ -227,18 +201,17 @@ object Graphics {
   /**
     * Graphics style settings.
     */
-  @js.native
   trait Styles extends StObject {
     
     /**
       * The style applied to shape areas.
       */
-    var fillStyle: js.UndefOr[FillStyle] = js.native
+    var fillStyle: js.UndefOr[FillStyle] = js.undefined
     
     /**
       * The style applied to shape outlines.
       */
-    var lineStyle: js.UndefOr[LineStyle] = js.native
+    var lineStyle: js.UndefOr[LineStyle] = js.undefined
   }
   object Styles {
     

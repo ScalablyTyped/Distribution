@@ -5,22 +5,22 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * listener for results of {@link XNotifyingDispatch.dispatchWithNotification()}
   * @see XNotifyingDispatch
   */
-@js.native
-trait XDispatchResultListener extends XEventListener {
+trait XDispatchResultListener
+  extends StObject
+     with XEventListener {
   
   /**
     * indicates finished dispatch
     * @param Result contains the result of the dispatch action
     * @see DispatchResultEvent
     */
-  def dispatchFinished(Result: DispatchResultEvent): Unit = js.native
+  def dispatchFinished(Result: DispatchResultEvent): Unit
 }
 object XDispatchResultListener {
   

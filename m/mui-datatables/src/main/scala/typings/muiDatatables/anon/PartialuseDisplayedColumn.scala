@@ -2,16 +2,14 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  useDisplayedColumnsOnly :boolean,   useDisplayedRowsOnly :boolean}> */
-@js.native
 trait PartialuseDisplayedColumn extends StObject {
   
-  var useDisplayedColumnsOnly: js.UndefOr[Boolean] = js.native
+  var useDisplayedColumnsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var useDisplayedRowsOnly: js.UndefOr[Boolean] = js.native
+  var useDisplayedRowsOnly: js.UndefOr[Boolean] = js.undefined
 }
 object PartialuseDisplayedColumn {
   

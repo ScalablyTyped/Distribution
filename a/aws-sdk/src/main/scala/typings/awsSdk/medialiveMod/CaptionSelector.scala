@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionSelector extends StObject {
   
   /**
     * When specified this field indicates the three letter language code of the caption track to extract from the source.
     */
-  var LanguageCode: js.UndefOr[string] = js.native
+  var LanguageCode: js.UndefOr[string] = js.undefined
   
   /**
     * Name identifier for a caption selector.  This name is used to associate this caption selector with one or more caption descriptions.  Names must be unique within an event.
     */
-  var Name: stringMin1 = js.native
+  var Name: stringMin1
   
   /**
     * Caption selector settings.
     */
-  var SelectorSettings: js.UndefOr[CaptionSelectorSettings] = js.native
+  var SelectorSettings: js.UndefOr[CaptionSelectorSettings] = js.undefined
 }
 object CaptionSelector {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InforNexusConnectorProfileCredentials extends StObject {
   
   /**
     *  The Access Key portion of the credentials. 
     */
-  var accessKeyId: AccessKeyId = js.native
+  var accessKeyId: AccessKeyId
   
   /**
     *  The encryption keys used to encrypt data. 
     */
-  var datakey: Key = js.native
+  var datakey: Key
   
   /**
     *  The secret key used to sign requests. 
     */
-  var secretAccessKey: Key = js.native
+  var secretAccessKey: Key
   
   /**
     *  The identifier for the user. 
     */
-  var userId: Username = js.native
+  var userId: Username
 }
 object InforNexusConnectorProfileCredentials {
   

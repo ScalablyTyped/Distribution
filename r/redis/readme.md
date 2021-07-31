@@ -11,8 +11,8 @@ A high performance Redis client.
 | Full name          | redis |
 | Keywords           | database, redis, transaction, pipelining, performance, queue, nodejs, pubsub, backpressure |
 | # releases         | 4 |
-| # dependents       | 4781 |
-| # downloads        | 73392256 |
+| # dependents       | 4985 |
+| # downloads        | 83598905 |
 | # stars            | 447 |
 
 ## Links

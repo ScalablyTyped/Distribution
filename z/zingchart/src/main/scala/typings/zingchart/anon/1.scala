@@ -2,42 +2,40 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var `1`: js.UndefOr[js.Any] = js.native
+  var `1`: js.UndefOr[js.Any] = js.undefined
   
-  var `10`: js.UndefOr[js.Any] = js.native
+  var `10`: js.UndefOr[js.Any] = js.undefined
   
-  var `11`: js.UndefOr[js.Any] = js.native
+  var `11`: js.UndefOr[js.Any] = js.undefined
   
-  var `12`: js.UndefOr[js.Any] = js.native
+  var `12`: js.UndefOr[js.Any] = js.undefined
   
-  var `13`: js.UndefOr[js.Any] = js.native
+  var `13`: js.UndefOr[js.Any] = js.undefined
   
-  var `2`: js.UndefOr[js.Any] = js.native
+  var `2`: js.UndefOr[js.Any] = js.undefined
   
-  var `3`: js.UndefOr[js.Any] = js.native
+  var `3`: js.UndefOr[js.Any] = js.undefined
   
-  var `4`: js.UndefOr[js.Any] = js.native
+  var `4`: js.UndefOr[js.Any] = js.undefined
   
-  var `5`: js.UndefOr[js.Any] = js.native
+  var `5`: js.UndefOr[js.Any] = js.undefined
   
-  var `6`: js.UndefOr[js.Any] = js.native
+  var `6`: js.UndefOr[js.Any] = js.undefined
   
-  var `7`: js.UndefOr[js.Any] = js.native
+  var `7`: js.UndefOr[js.Any] = js.undefined
   
-  var `8`: js.UndefOr[js.Any] = js.native
+  var `8`: js.UndefOr[js.Any] = js.undefined
   
-  var `9`: js.UndefOr[js.Any] = js.native
+  var `9`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the delay in milliseconds between each step of the animation. 5 | 10 | ...
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the animation effect. Numeric Code String Name 1 `ANIMGATION_FADE_IN` 2 `ANIMATION_EXPAND_VERTICAL` 3 `ANIMATION_EXPAND_TOP`
@@ -45,15 +43,15 @@ trait `1` extends StObject {
     * EFT` 9 `ANIMATION_SLIDE_RIGHT` 10 `ANIMATION_SLIDE_TOP` 11 `ANIMATION_SLIDE_BOTTOM` 12 `ANIMATION_UNFOLD_HORIZONTAL` 13 `ANIMATION
     * _UNFOLD_VERTICAL`
     */
-  var effect: js.UndefOr[Double] = js.native
+  var effect: js.UndefOr[Double] = js.undefined
   
   /**
     * Determines whether or not animation occurs when a change is made to the chart via an API event (e.g., adding node, adding plot, re
     * moving node). true (default) | false | 1 | 0
     */
-  var `on-change`: js.UndefOr[Boolean] = js.native
+  var `on-change`: js.UndefOr[Boolean] = js.undefined
   
-  var `on-legend-toggle`: js.UndefOr[js.Any] = js.native
+  var `on-legend-toggle`: js.UndefOr[js.Any] = js.undefined
 }
 object `1` {
   

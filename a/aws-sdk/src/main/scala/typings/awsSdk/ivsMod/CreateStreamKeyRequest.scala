@@ -2,21 +2,19 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamKeyRequest extends StObject {
   
   /**
     * ARN of the channel for which to create the stream key.
     */
-  var channelArn: ChannelArn = js.native
+  var channelArn: ChannelArn
   
   /**
     * See Channel$tags.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateStreamKeyRequest {
   

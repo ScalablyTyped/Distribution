@@ -11,21 +11,21 @@ import typings.appBuilderLib.fileAssociationMod.FileAssociation
 import typings.appBuilderLib.integrityMod.AsarIntegrityOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformSpecificBuildOptionsMod {
   
-  @js.native
-  trait AsarOptions extends AsarIntegrityOptions {
+  trait AsarOptions
+    extends StObject
+       with AsarIntegrityOptions {
     
-    var ordering: js.UndefOr[String | Null] = js.native
+    var ordering: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to automatically unpack executables files.
       * @default true
       */
-    var smartUnpack: js.UndefOr[Boolean] = js.native
+    var smartUnpack: js.UndefOr[Boolean] = js.undefined
   }
   object AsarOptions {
     
@@ -55,23 +55,22 @@ object platformSpecificBuildOptionsMod {
     }
   }
   
-  @js.native
   trait FileSet extends StObject {
     
     /**
       * The [glob patterns](/file-patterns).
       */
-    var filter: js.UndefOr[js.Array[String] | String] = js.native
+    var filter: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * The source path relative to the project directory.
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /**
       * The destination path relative to the app's content directory for `extraFiles` and the app's resource directory for `extraResources`.
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object FileSet {
     
@@ -107,15 +106,16 @@ object platformSpecificBuildOptionsMod {
     }
   }
   
-  @js.native
-  trait PlatformSpecificBuildOptions extends TargetSpecificOptions {
+  trait PlatformSpecificBuildOptions
+    extends StObject
+       with TargetSpecificOptions {
     
     /**
       * The application id. Used as [CFBundleIdentifier](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-102070) for MacOS and as
       * [Application User Model ID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx) for Windows (NSIS target only, Squirrel.Windows not supported). It is strongly recommended that an explicit ID is set.
       * @default com.electron.${name}
       */
-    val appId: js.UndefOr[String | Null] = js.native
+    val appId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to package the application's source code into an archive, using [Electron's archive format](http://electron.atom.io/docs/tutorial/application-packaging/).
@@ -123,65 +123,65 @@ object platformSpecificBuildOptionsMod {
       * Node modules, that must be unpacked, will be detected automatically, you don't need to explicitly set [asarUnpack](#configuration-asarUnpack) - please file an issue if this doesn't work.
       * @default true
       */
-    val asar: js.UndefOr[AsarOptions | Boolean | Null] = js.native
+    val asar: js.UndefOr[AsarOptions | Boolean | Null] = js.undefined
     
     /**
       * A [glob patterns](/file-patterns) relative to the [app directory](#MetadataDirectories-app), which specifies which files to unpack when creating the [asar](http://electron.atom.io/docs/tutorial/application-packaging/) archive.
       */
-    val asarUnpack: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val asarUnpack: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * The compression level. If you want to rapidly test build, `store` can reduce build time significantly. `maximum` doesn't lead to noticeable size difference, but increase build time.
       * @default normal
       */
-    val compression: js.UndefOr[CompressionLevel | Null] = js.native
+    val compression: js.UndefOr[CompressionLevel | Null] = js.undefined
     
     /** @private */
-    var cscKeyPassword: js.UndefOr[String | Null] = js.native
+    var cscKeyPassword: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    var cscLink: js.UndefOr[String | Null] = js.native
+    var cscLink: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to infer update channel from application version pre-release components. e.g. if version `0.12.1-alpha.1`, channel will be set to `alpha`. Otherwise to `latest`.
       * @default true
       */
-    val detectUpdateChannel: js.UndefOr[Boolean] = js.native
+    val detectUpdateChannel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The [electron-updater compatibility](/auto-update#compatibility) semver range.
       */
-    val electronUpdaterCompatibility: js.UndefOr[String | Null] = js.native
+    val electronUpdaterCompatibility: js.UndefOr[String | Null] = js.undefined
     
-    var extraFiles: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.native
+    var extraFiles: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.undefined
     
-    var extraResources: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.native
+    var extraResources: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.undefined
     
     /**
       * The file associations.
       */
-    val fileAssociations: js.UndefOr[js.Array[FileAssociation] | FileAssociation] = js.native
+    val fileAssociations: js.UndefOr[js.Array[FileAssociation] | FileAssociation] = js.undefined
     
-    var files: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.native
+    var files: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.undefined
     
     /**
       * Whether to fail if app will be not code signed.
       */
-    val forceCodeSigning: js.UndefOr[Boolean] = js.native
+    val forceCodeSigning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Please see [Building and Releasing using Channels](https://github.com/electron-userland/electron-builder/issues/1182#issuecomment-324947139).
       * @default false
       */
-    val generateUpdatesFilesForAllChannels: js.UndefOr[Boolean] = js.native
+    val generateUpdatesFilesForAllChannels: js.UndefOr[Boolean] = js.undefined
     
     /** @private */
-    val icon: js.UndefOr[String | Null] = js.native
+    val icon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The URL protocol schemes.
       */
-    val protocols: js.UndefOr[js.Array[Protocol] | Protocol] = js.native
+    val protocols: js.UndefOr[js.Array[Protocol] | Protocol] = js.undefined
     
     /**
       * The release info. Intended for command line usage:
@@ -190,9 +190,9 @@ object platformSpecificBuildOptionsMod {
       * -c.releaseInfo.releaseNotes="new features"
       * ```
       */
-    val releaseInfo: js.UndefOr[ReleaseInfo] = js.native
+    val releaseInfo: js.UndefOr[ReleaseInfo] = js.undefined
     
-    val target: js.UndefOr[(js.Array[String | TargetConfiguration]) | String | TargetConfiguration | Null] = js.native
+    val target: js.UndefOr[(js.Array[String | TargetConfiguration]) | String | TargetConfiguration | Null] = js.undefined
   }
   object PlatformSpecificBuildOptions {
     
@@ -372,24 +372,23 @@ object platformSpecificBuildOptionsMod {
     }
   }
   
-  @js.native
   trait Protocol extends StObject {
     
     /**
       * The name. e.g. `IRC server URL`.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * *macOS-only* The app’s role with respect to the type.
       * @default Editor
       */
-    val role: js.UndefOr[Editor | Viewer | Shell | None] = js.native
+    val role: js.UndefOr[Editor | Viewer | Shell | None] = js.undefined
     
     /**
       * The schemes. e.g. `["irc", "ircs"]`.
       */
-    val schemes: js.Array[String] = js.native
+    val schemes: js.Array[String]
   }
   object Protocol {
     
@@ -419,28 +418,27 @@ object platformSpecificBuildOptionsMod {
     }
   }
   
-  @js.native
   trait ReleaseInfo extends StObject {
     
     /**
       * The release date.
       */
-    var releaseDate: js.UndefOr[String] = js.native
+    var releaseDate: js.UndefOr[String] = js.undefined
     
     /**
       * The release name.
       */
-    var releaseName: js.UndefOr[String | Null] = js.native
+    var releaseName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The release notes.
       */
-    var releaseNotes: js.UndefOr[String | Null] = js.native
+    var releaseNotes: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to release notes file. Defaults to `release-notes-${platform}.md` (where `platform` it is current platform — `mac`, `linux` or `windows`) or `release-notes.md` in the [build resources](#MetadataDirectories-buildResources).
       */
-    var releaseNotesFile: js.UndefOr[String | Null] = js.native
+    var releaseNotesFile: js.UndefOr[String | Null] = js.undefined
   }
   object ReleaseInfo {
     

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketPublicAccessBlockMod {
@@ -58,6 +57,10 @@ object bucketPublicAccessBlockMod {
   /* static members */
   object BucketPublicAccessBlock {
     
+    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketPublicAccessBlock resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,29 +70,23 @@ object bucketPublicAccessBlockMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketPublicAccessBlock = js.native
-    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketPublicAccessBlock = js.native
-    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState): BucketPublicAccessBlock = js.native
-    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState, opts: CustomResourceOptions): BucketPublicAccessBlock = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketPublicAccessBlock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketPublicAccessBlock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState): BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketPublicAccessBlock]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState, opts: CustomResourceOptions): BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketPublicAccessBlock]
     
     /**
       * Returns true if the given object is an instance of BucketPublicAccessBlock.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean]
   }
   
-  @js.native
   trait BucketPublicAccessBlockArgs extends StObject {
     
     /**
@@ -97,30 +94,30 @@ object bucketPublicAccessBlockMod {
       * * PUT Bucket acl and PUT Object acl calls will fail if the specified ACL allows public access.
       * * PUT Object calls will fail if the request includes an object ACL.
       */
-    val blockPublicAcls: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicAcls: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether Amazon S3 should block public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the existing bucket policy. When set to `true` causes Amazon S3 to:
       * * Reject calls to PUT Bucket policy if the specified bucket policy allows public access.
       */
-    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * S3 Bucket to which this Public Access Block configuration should be applied.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to `false`. Enabling this setting does not affect the persistence of any existing ACLs and doesn't prevent new public ACLs from being set. When set to `true` causes Amazon S3 to:
       * * Ignore public ACLs on this bucket and any objects that it contains.
       */
-    val ignorePublicAcls: js.UndefOr[Input[Boolean]] = js.native
+    val ignorePublicAcls: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to `true`:
       * * Only the bucket owner and AWS Services can access this buckets if it has a public policy.
       */
-    val restrictPublicBuckets: js.UndefOr[Input[Boolean]] = js.native
+    val restrictPublicBuckets: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BucketPublicAccessBlockArgs {
     
@@ -162,7 +159,6 @@ object bucketPublicAccessBlockMod {
     }
   }
   
-  @js.native
   trait BucketPublicAccessBlockState extends StObject {
     
     /**
@@ -170,30 +166,30 @@ object bucketPublicAccessBlockMod {
       * * PUT Bucket acl and PUT Object acl calls will fail if the specified ACL allows public access.
       * * PUT Object calls will fail if the request includes an object ACL.
       */
-    val blockPublicAcls: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicAcls: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether Amazon S3 should block public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the existing bucket policy. When set to `true` causes Amazon S3 to:
       * * Reject calls to PUT Bucket policy if the specified bucket policy allows public access.
       */
-    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val blockPublicPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * S3 Bucket to which this Public Access Block configuration should be applied.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to `false`. Enabling this setting does not affect the persistence of any existing ACLs and doesn't prevent new public ACLs from being set. When set to `true` causes Amazon S3 to:
       * * Ignore public ACLs on this bucket and any objects that it contains.
       */
-    val ignorePublicAcls: js.UndefOr[Input[Boolean]] = js.native
+    val ignorePublicAcls: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to `true`:
       * * Only the bucket owner and AWS Services can access this buckets if it has a public policy.
       */
-    val restrictPublicBuckets: js.UndefOr[Input[Boolean]] = js.native
+    val restrictPublicBuckets: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BucketPublicAccessBlockState {
     

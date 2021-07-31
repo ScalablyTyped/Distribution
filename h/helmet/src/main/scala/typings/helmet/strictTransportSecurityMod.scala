@@ -5,36 +5,46 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strictTransportSecurityMod {
   
-  @JSImport("helmet/dist/middlewares/strict-transport-security", JSImport.Default)
+  @JSImport("helmet/dist/middlewares/strict-transport-security", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
-  @JSImport("helmet/dist/middlewares/strict-transport-security", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  @scala.inline
   def default(options: ReadonlyStrictTransportSe): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @js.native
   trait StrictTransportSecurityOptions extends StObject {
     
-    var includeSubDomains: js.UndefOr[Boolean] = js.native
+    var includeSubDomains: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Boolean] = js.native
+    var preload: js.UndefOr[Boolean] = js.undefined
   }
   object StrictTransportSecurityOptions {
     

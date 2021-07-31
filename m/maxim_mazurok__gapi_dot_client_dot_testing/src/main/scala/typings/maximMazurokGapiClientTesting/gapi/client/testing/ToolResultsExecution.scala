@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolResultsExecution extends StObject {
   
   /** Output only. A tool results execution ID. */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** Output only. A tool results history ID. */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** Output only. The cloud project that owns the tool results execution. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ToolResultsExecution {
   

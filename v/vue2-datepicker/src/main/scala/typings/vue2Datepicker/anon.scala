@@ -14,91 +14,89 @@ import typings.vue2Datepicker.vue2DatepickerStrings.week
 import typings.vue2Datepicker.vue2DatepickerStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppendToBody extends StObject {
     
-    var appendToBody: js.UndefOr[Boolean] = js.native
+    var appendToBody: js.UndefOr[Boolean] = js.undefined
     
-    var clearable: js.UndefOr[Boolean] = js.native
+    var clearable: js.UndefOr[Boolean] = js.undefined
     
-    var confirm: js.UndefOr[Boolean] = js.native
+    var confirm: js.UndefOr[Boolean] = js.undefined
     
-    var confirmText: js.UndefOr[String] = js.native
+    var confirmText: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
     
-    var disabledTime: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
+    var disabledTime: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hourOptions: js.UndefOr[js.Array[Double]] = js.native
+    var hourOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputAttr: js.UndefOr[js.Function0[js.Object]] = js.native
+    var inputAttr: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var inputClass: js.UndefOr[String] = js.native
+    var inputClass: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String | Lang] = js.native
+    var lang: js.UndefOr[String | Lang] = js.undefined
     
-    var minuteOptions: js.UndefOr[js.Array[Double]] = js.native
+    var minuteOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var partialUpdate: js.UndefOr[Boolean] = js.native
+    var partialUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popupClass: js.UndefOr[String] = js.native
+    var popupClass: js.UndefOr[String] = js.undefined
     
-    var popupStyle: js.UndefOr[js.Function0[js.Object]] = js.native
+    var popupStyle: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var rangeSeparator: js.UndefOr[String] = js.native
+    var rangeSeparator: js.UndefOr[String] = js.undefined
     
-    var secondOptions: js.UndefOr[js.Array[Double]] = js.native
+    var secondOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var shortcuts: js.UndefOr[js.Array[Shortcuts]] = js.native
+    var shortcuts: js.UndefOr[js.Array[Shortcuts]] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var showTimeHeader: js.UndefOr[Boolean] = js.native
+    var showTimeHeader: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekNumber: js.UndefOr[Boolean] = js.native
+    var showWeekNumber: js.UndefOr[Boolean] = js.undefined
     
-    var timePickerOptions: js.UndefOr[TimePickerOptions] = js.native
+    var timePickerOptions: js.UndefOr[TimePickerOptions] = js.undefined
     
-    var timeTitleFormat: js.UndefOr[String] = js.native
+    var timeTitleFormat: js.UndefOr[String] = js.undefined
     
-    var titleFormat: js.UndefOr[String] = js.native
+    var titleFormat: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[date | datetime | year | month | time | week] = js.native
+    var `type`: js.UndefOr[date | datetime | year | month | time | week] = js.undefined
     
-    var use12h: js.UndefOr[Boolean] = js.native
+    var use12h: js.UndefOr[Boolean] = js.undefined
     
-    var valueType: js.UndefOr[ValueType] = js.native
+    var valueType: js.UndefOr[ValueType] = js.undefined
   }
   object AppendToBody {
     
@@ -359,28 +357,27 @@ object anon {
     }
   }
   
-  @js.native
   trait FirstDayOfWeek extends StObject {
     
-    var firstDayOfWeek: Double = js.native
+    var firstDayOfWeek: Double
     
-    var firstWeekContainsDate: Double = js.native
+    var firstWeekContainsDate: Double
     
-    def isPM(input: String): Boolean = js.native
+    def isPM(input: String): Boolean
     
-    def meridiem(h: Double, _underscore: Double, isLowercase: Boolean): Boolean = js.native
+    def meridiem(h: Double, _underscore: Double, isLowercase: Boolean): Boolean
     
-    var meridiemParse: RegExp = js.native
+    var meridiemParse: RegExp
     
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
-    var monthsShort: js.Array[String] = js.native
+    var monthsShort: js.Array[String]
     
-    var weekdays: js.Array[String] = js.native
+    var weekdays: js.Array[String]
     
-    var weekdaysMin: js.Array[String] = js.native
+    var weekdaysMin: js.Array[String]
     
-    var weekdaysShort: js.Array[String] = js.native
+    var weekdaysShort: js.Array[String]
   }
   object FirstDayOfWeek {
     

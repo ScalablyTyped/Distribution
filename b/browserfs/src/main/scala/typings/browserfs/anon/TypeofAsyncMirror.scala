@@ -9,12 +9,12 @@ import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAsyncMirror
-  extends Instantiable2[/* sync */ FileSystem, /* async */ FileSystem, default]
+  extends StObject
+     with Instantiable2[/* sync */ FileSystem, /* async */ FileSystem, default]
      with Instantiable3[/* sync */ FileSystem, /* async */ FileSystem, /* deprecateMsg */ Boolean, default] {
   
   /**

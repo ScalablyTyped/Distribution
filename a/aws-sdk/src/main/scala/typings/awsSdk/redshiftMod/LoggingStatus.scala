@@ -2,41 +2,39 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingStatus extends StObject {
   
   /**
     * The name of the S3 bucket where the log files are stored.
     */
-  var BucketName: js.UndefOr[String] = js.native
+  var BucketName: js.UndefOr[String] = js.undefined
   
   /**
     * The message indicating that logs failed to be delivered.
     */
-  var LastFailureMessage: js.UndefOr[String] = js.native
+  var LastFailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The last time when logs failed to be delivered.
     */
-  var LastFailureTime: js.UndefOr[TStamp] = js.native
+  var LastFailureTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The last time that logs were delivered.
     */
-  var LastSuccessfulDeliveryTime: js.UndefOr[TStamp] = js.native
+  var LastSuccessfulDeliveryTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     *  true if logging is on, false if logging is off.
     */
-  var LoggingEnabled: js.UndefOr[Boolean] = js.native
+  var LoggingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The prefix applied to the log file names.
     */
-  var S3KeyPrefix: js.UndefOr[String] = js.native
+  var S3KeyPrefix: js.UndefOr[String] = js.undefined
 }
 object LoggingStatus {
   

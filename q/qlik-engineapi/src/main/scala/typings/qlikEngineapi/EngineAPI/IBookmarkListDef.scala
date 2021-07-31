@@ -3,30 +3,28 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.bookmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BookmarkListDef
   */
-@js.native
 trait IBookmarkListDef extends StObject {
   
   /**
     * Data typ JSON
     */
-  var qData: js.Any = js.native
+  var qData: js.Any
   
   /**
     * Type of the list
     */
-  var qType: bookmark = js.native
+  var qType: bookmark
 }
 object IBookmarkListDef {
   
   @scala.inline
-  def apply(qData: js.Any, qType: bookmark): IBookmarkListDef = {
-    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
+  def apply(qData: js.Any): IBookmarkListDef = {
+    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = "bookmark")
     __obj.asInstanceOf[IBookmarkListDef]
   }
   

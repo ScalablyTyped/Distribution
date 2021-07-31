@@ -12,7 +12,7 @@ A native node module for accessing the windows registry
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 421992 |
+| # downloads        | 551279 |
 | # stars            | 0 |
 
 ## Links

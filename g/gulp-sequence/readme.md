@@ -11,8 +11,8 @@ Run a series of gulp tasks in order.
 | Full name          | gulp-sequence |
 | Keywords           | gulpplugin, sequence, sync, thunk, thunks, flow |
 | # releases         | 1 |
-| # dependents       | 204 |
-| # downloads        | 1620950 |
+| # dependents       | 207 |
+| # downloads        | 1570670 |
 | # stars            | 56 |
 
 ## Links

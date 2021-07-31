@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApprovalRuleTemplateInput extends StObject {
   
   /**
     * The name of the approval rule template for which you want to get information.
     */
-  var approvalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var approvalRuleTemplateName: ApprovalRuleTemplateName
 }
 object GetApprovalRuleTemplateInput {
   

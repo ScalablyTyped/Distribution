@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bagpipes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bagpipes", "Bagpipes")
   @js.native
@@ -89,12 +92,10 @@ object mod {
     def siphon(pipe: Fitting): Pipe = js.native
   }
   
-  @JSImport("bagpipes", "create")
-  @js.native
-  def create(pipesDefs: PipeDefMap): Bagpipes = js.native
-  @JSImport("bagpipes", "create")
-  @js.native
-  def create(pipesDefs: PipeDefMap, conf: Config): Bagpipes = js.native
+  @scala.inline
+  def create(pipesDefs: PipeDefMap): Bagpipes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any]).asInstanceOf[Bagpipes]
+  @scala.inline
+  def create(pipesDefs: PipeDefMap, conf: Config): Bagpipes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any], conf.asInstanceOf[js.Any])).asInstanceOf[Bagpipes]
   
   /* Rewritten from type alias, can be one of: 
     - typings.bagpipes.bagpipesStrings.hoist
@@ -110,15 +111,15 @@ object mod {
     def sink: typings.bagpipes.bagpipesStrings.sink = "sink".asInstanceOf[typings.bagpipes.bagpipesStrings.sink]
   }
   
-  @js.native
   trait Config
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
-    var connectMiddlewareDirs: js.UndefOr[js.Array[String]] = js.native
+    var connectMiddlewareDirs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var userFittingsDirs: js.UndefOr[js.Array[String]] = js.native
+    var userFittingsDirs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var userViewsDirs: js.UndefOr[js.Array[String]] = js.native
+    var userViewsDirs: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Config {
     
@@ -166,18 +167,18 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait FittingContext
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
     /**
       * The input defined in the fitting definition
       * (string, number, object, array)
       */
-    var input: js.Any = js.native
+    var input: js.Any
     
     /** Output to be delivered to the next fitting or client */
-    var output: js.Any = js.native
+    var output: js.Any
   }
   object FittingContext {
     
@@ -198,21 +199,21 @@ object mod {
     }
   }
   
-  @js.native
   trait FittingDef
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
     /** Static values passed to the fitting during construction */
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
     /** Dynamic values passed to the fitting during execution */
-    var input: js.UndefOr[js.Any] = js.native
+    var input: js.UndefOr[js.Any] = js.undefined
     
     /** The name of the fitting of the type specified */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The name of the context key to which the output value is assigned */
-    var output: js.UndefOr[js.Any] = js.native
+    var output: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If type is omitted (as it must be for in-line usage), Bagpipes will
@@ -222,7 +223,7 @@ object mod {
       * Thus be aware that if you define a fitting with the same name as a
       * system one, your fitting will override it.
       */
-    var `type`: js.UndefOr[FittingType] = js.native
+    var `type`: js.UndefOr[FittingType] = js.undefined
   }
   object FittingDef {
     
@@ -282,14 +283,13 @@ object mod {
   
   type PipeDefMap = StringDictionary[PipeDef]
   
-  @js.native
   trait PipeworksOptions extends StObject {
     
     /**
       * Adds to the pre and post queues, respectively.
       * Ensures a pipe gets fitted before or after the main execution pipeline.
       */
-    var affinity: Affinity = js.native
+    var affinity: Affinity
   }
   object PipeworksOptions {
     

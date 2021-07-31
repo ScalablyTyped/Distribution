@@ -3,15 +3,13 @@ package typings.overlayscrollbars.anon
 import typings.overlayscrollbars.mod.ScrollBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Y extends StObject {
   
-  var x: js.UndefOr[ScrollBehavior] = js.native
+  var x: js.UndefOr[ScrollBehavior] = js.undefined
   
-  var y: js.UndefOr[ScrollBehavior] = js.native
+  var y: js.UndefOr[ScrollBehavior] = js.undefined
 }
 object Y {
   

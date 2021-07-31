@@ -2,7 +2,6 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods for adding data to the record. To create ILabelSetRecord instance,
   * use dymo.label.framework.LabelSetBuilder.prototype.addRecord method.
   */
-@js.native
 trait ILabelSetRecord extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ILabelSetRecord extends StObject {
     *
     * @returns self
     */
-  def setBase64Image(objectName: String, base64Image: String): ILabelSetRecord = js.native
+  def setBase64Image(objectName: String, base64Image: String): ILabelSetRecord
   
   /** Adds data to the record specified as plain text.
     *
@@ -30,7 +28,7 @@ trait ILabelSetRecord extends StObject {
     *
     * @returns self
     */
-  def setText(objectName: String, text: String): ILabelSetRecord = js.native
+  def setText(objectName: String, text: String): ILabelSetRecord
   
   /**
     * Adds data to the record specified as text markup.
@@ -40,7 +38,7 @@ trait ILabelSetRecord extends StObject {
     *
     * @returns self
     */
-  def setTextMarkup(objectName: String, textMarkup: String): ILabelSetRecord = js.native
+  def setTextMarkup(objectName: String, textMarkup: String): ILabelSetRecord
 }
 object ILabelSetRecord {
   

@@ -3,29 +3,28 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSNamedTupleMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSNamedTupleMember_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var elementType: TSType = js.native
+  var elementType: TSType
   
-  var label: Identifier_ = js.native
+  var label: Identifier_
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
   @JSName("type")
-  var type_TSNamedTupleMember_ : TSNamedTupleMember = js.native
+  var type_TSNamedTupleMember_ : TSNamedTupleMember
 }
 object TSNamedTupleMember_ {
   
   @scala.inline
-  def apply(elementType: TSType, label: Identifier_, optional: Boolean, `type`: TSNamedTupleMember): TSNamedTupleMember_ = {
-    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(elementType: TSType, label: Identifier_, optional: Boolean): TSNamedTupleMember_ = {
+    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSNamedTupleMember")
     __obj.asInstanceOf[TSNamedTupleMember_]
   }
   

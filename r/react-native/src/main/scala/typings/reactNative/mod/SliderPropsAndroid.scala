@@ -2,16 +2,16 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderPropsAndroid extends ViewProps {
+trait SliderPropsAndroid
+  extends StObject
+     with ViewProps {
   
   /**
     * Color of the foreground switch grip.
     */
-  var thumbTintColor: js.UndefOr[ColorValue] = js.native
+  var thumbTintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object SliderPropsAndroid {
   

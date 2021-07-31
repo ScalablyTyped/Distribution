@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetUICustomizationResponse extends StObject {
   
   /**
     * The UI customization information.
     */
-  var UICustomization: UICustomizationType = js.native
+  var UICustomization: UICustomizationType
 }
 object SetUICustomizationResponse {
   

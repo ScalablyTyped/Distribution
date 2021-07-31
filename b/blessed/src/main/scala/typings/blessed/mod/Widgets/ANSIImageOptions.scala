@@ -4,32 +4,32 @@ import typings.blessed.blessedStrings.cpu
 import typings.blessed.blessedStrings.mem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ANSIImageOptions extends BoxOptions {
+trait ANSIImageOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Whether to animate if the image is an APNG/animating GIF. If false, only
     * display the first frame or IDAT (Default: true).
     */
-  var animate: Boolean = js.native
+  var animate: Boolean
   
   /**
     * Add various "density" ASCII characters over the rendering to give the
     * image more detail, similar to libcaca/libcucul (the library mplayer uses
     * to display videos in the terminal).
     */
-  var ascii: String = js.native
+  var ascii: String
   
   /**
     * URL or path to PNG/GIF file. Can also be a buffer.
     */
-  var file: String = js.native
+  var file: String
   
   @JSName("height")
-  var height_ANSIImageOptions: Double | String = js.native
+  var height_ANSIImageOptions: Double | String
   
   /**
     * mem or cpu. If optimizing for memory, animation frames will be rendered to
@@ -37,18 +37,18 @@ trait ANSIImageOptions extends BoxOptions {
     * precompile all bitmaps beforehand, which may be faster, but might also OOM
     * the process on large images. (Default: mem).
     */
-  var optimization: mem | cpu = js.native
+  var optimization: mem | cpu
   
   /**
     * Scale cellmap down (0-1.0) from its original pixel width/height (Default: 1.0).
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * Set the speed of animation. Slower: 0.0-1.0. Faster: 1-1000. It cannot go
     * faster than 1 frame per millisecond, so 1000 is the fastest. (Default: 1.0)
     */
-  var speed: Double = js.native
+  var speed: Double
   
   /**
     * This differs from other element's width or height in that only one
@@ -58,7 +58,7 @@ trait ANSIImageOptions extends BoxOptions {
     * height is not given.
     */
   @JSName("width")
-  var width_ANSIImageOptions: Double | String = js.native
+  var width_ANSIImageOptions: Double | String
 }
 object ANSIImageOptions {
   

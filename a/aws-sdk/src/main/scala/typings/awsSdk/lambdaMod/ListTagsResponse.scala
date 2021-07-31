@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /**
     * The function's tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.undefined
 }
 object ListTagsResponse {
   

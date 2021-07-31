@@ -4,17 +4,15 @@ import typings.braintree.mod.AddOnAddRequest
 import typings.braintree.mod.AddOnUpdateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Add extends StObject {
   
-  var add: js.UndefOr[js.Array[AddOnAddRequest]] = js.native
+  var add: js.UndefOr[js.Array[AddOnAddRequest]] = js.undefined
   
-  var remove: js.UndefOr[js.Array[String]] = js.native
+  var remove: js.UndefOr[js.Array[String]] = js.undefined
   
-  var update: js.UndefOr[js.Array[AddOnUpdateRequest]] = js.native
+  var update: js.UndefOr[js.Array[AddOnUpdateRequest]] = js.undefined
 }
 object Add {
   

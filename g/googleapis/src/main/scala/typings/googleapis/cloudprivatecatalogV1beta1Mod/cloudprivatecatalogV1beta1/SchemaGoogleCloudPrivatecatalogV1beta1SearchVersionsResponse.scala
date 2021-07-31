@@ -2,25 +2,23 @@ package typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for PrivateCatalog.SearchVersions.
   */
-@js.native
 trait SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse extends StObject {
   
   /**
     * A pagination token returned from a previous call to SearchVersions that
     * indicates from where the listing should continue. This field is optional.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The `Version` resources computed from the resource context.
     */
-  var versions: js.UndefOr[js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Version]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Version]] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse {
   

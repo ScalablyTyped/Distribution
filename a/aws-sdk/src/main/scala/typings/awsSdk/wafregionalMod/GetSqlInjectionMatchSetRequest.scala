@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSqlInjectionMatchSetRequest extends StObject {
   
   /**
     * The SqlInjectionMatchSetId of the SqlInjectionMatchSet that you want to get. SqlInjectionMatchSetId is returned by CreateSqlInjectionMatchSet and by ListSqlInjectionMatchSets.
     */
-  var SqlInjectionMatchSetId: ResourceId = js.native
+  var SqlInjectionMatchSetId: ResourceId
 }
 object GetSqlInjectionMatchSetRequest {
   

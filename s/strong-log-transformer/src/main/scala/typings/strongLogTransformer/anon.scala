@@ -2,22 +2,20 @@ package typings.strongLogTransformer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<strong-log-transformer.strong-log-transformer.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var mergeMultiline: js.UndefOr[Boolean] = js.native
+    var mergeMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var timeStamp: js.UndefOr[Boolean] = js.native
+    var timeStamp: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

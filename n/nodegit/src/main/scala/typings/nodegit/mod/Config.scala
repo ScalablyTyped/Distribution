@@ -2,7 +2,6 @@ package typings.nodegit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Config")
@@ -12,28 +11,26 @@ class Config ()
 /* static members */
 object Config {
   
-  @JSImport("nodegit", "Config.findGlobal")
+  @JSImport("nodegit", "Config")
   @js.native
-  def findGlobal(): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def findGlobal(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findGlobal")().asInstanceOf[js.Promise[String]]
   
   // the docs says it's a buff but it's actually a string
-  @JSImport("nodegit", "Config.findProgramdata")
-  @js.native
-  def findProgramdata(): js.Promise[typings.nodegit.bufMod.Buf] = js.native
+  @scala.inline
+  def findProgramdata(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProgramdata")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @JSImport("nodegit", "Config.findSystem")
-  @js.native
-  def findSystem(): js.Promise[typings.nodegit.bufMod.Buf] = js.native
+  @scala.inline
+  def findSystem(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSystem")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @JSImport("nodegit", "Config.findXdg")
-  @js.native
-  def findXdg(): js.Promise[typings.nodegit.bufMod.Buf] = js.native
+  @scala.inline
+  def findXdg(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findXdg")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @JSImport("nodegit", "Config.openDefault")
-  @js.native
-  def openDefault(): js.Promise[typings.nodegit.configMod.Config] = js.native
+  @scala.inline
+  def openDefault(): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDefault")().asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
   
-  @JSImport("nodegit", "Config.openOndisk")
-  @js.native
-  def openOndisk(path: String): js.Promise[typings.nodegit.configMod.Config] = js.native
+  @scala.inline
+  def openOndisk(path: String): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOndisk")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
 }

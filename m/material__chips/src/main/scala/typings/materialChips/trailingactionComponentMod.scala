@@ -7,7 +7,6 @@ import typings.materialRipple.componentMod.MDCRippleFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trailingactionComponentMod {
@@ -16,7 +15,7 @@ object trailingactionComponentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/chips/trailingaction/component", "MDCChipTrailingAction")
   @js.native
   class MDCChipTrailingAction protected () extends MDCComponent[MDCChipTrailingActionFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCChipTrailingActionFoundation, args: js.Any*) = this()
     
     var disabled: js.UndefOr[Boolean] = js.native
@@ -37,9 +36,12 @@ object trailingactionComponentMod {
   /* static members */
   object MDCChipTrailingAction {
     
-    @JSImport("@material/chips/trailingaction/component", "MDCChipTrailingAction.attachTo")
+    @JSImport("@material/chips/trailingaction/component", "MDCChipTrailingAction")
     @js.native
-    def attachTo(root: Element): MDCChipTrailingAction = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChipTrailingAction]
   }
   
   type MDCChipTrailingActionFactory = js.Function2[

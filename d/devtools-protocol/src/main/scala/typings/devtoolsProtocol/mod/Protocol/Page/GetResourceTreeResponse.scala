@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceTreeResponse extends StObject {
   
   /**
     * Present frame / resource tree structure.
     */
-  var frameTree: FrameResourceTree = js.native
+  var frameTree: FrameResourceTree
 }
 object GetResourceTreeResponse {
   

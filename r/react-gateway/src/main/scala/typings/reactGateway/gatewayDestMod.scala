@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gatewayDestMod {
@@ -16,14 +15,13 @@ object gatewayDestMod {
   
   type GatewayDest = Component[GatewayDestProps, js.Object, js.Any]
   
-  @js.native
   trait GatewayDestProps extends StObject {
     
-    var component: js.UndefOr[String | ComponentType[js.Object]] = js.native
+    var component: js.UndefOr[String | ComponentType[js.Object]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
   }
   object GatewayDestProps {
     

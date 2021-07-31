@@ -3,7 +3,6 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.ContextMenu.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.ContextMenu")
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options 选项
   */
 class ContextMenu[ExtraData] ()
-  extends typings.amapJsApi.AMap.ContextMenu[ExtraData] {
+  extends StObject
+     with typings.amapJsApi.AMap.ContextMenu[ExtraData] {
   def this(options: Options) = this()
 }

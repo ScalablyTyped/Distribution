@@ -2,23 +2,21 @@ package typings.paypalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Authorizationid extends StObject {
     
-    var authorization_id: String = js.native
+    var authorization_id: String
     
-    var create_time: String = js.native
+    var create_time: String
     
-    var id: String = js.native
+    var id: String
     
-    var intent: String = js.native
+    var intent: String
     
-    var state: String = js.native
+    var state: String
   }
   object Authorizationid {
     
@@ -48,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
   }
   object Code {
     

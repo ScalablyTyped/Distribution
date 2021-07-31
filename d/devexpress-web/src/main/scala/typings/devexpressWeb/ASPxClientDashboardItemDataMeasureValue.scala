@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the measure value and display text.
   */
-@js.native
 trait ASPxClientDashboardItemDataMeasureValue extends StObject {
   
   /**
     * Gets the measure display text.
     */
-  def GetDisplayText(): String = js.native
+  def GetDisplayText(): String
   
   /**
     * Gets the measure value.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
 }
 object ASPxClientDashboardItemDataMeasureValue {
   

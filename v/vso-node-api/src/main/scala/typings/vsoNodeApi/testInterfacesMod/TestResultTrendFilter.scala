@@ -3,27 +3,25 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultTrendFilter extends StObject {
   
-  var branchNames: js.Array[String] = js.native
+  var branchNames: js.Array[String]
   
-  var buildCount: Double = js.native
+  var buildCount: Double
   
-  var definitionIds: js.Array[Double] = js.native
+  var definitionIds: js.Array[Double]
   
-  var envDefinitionIds: js.Array[Double] = js.native
+  var envDefinitionIds: js.Array[Double]
   
-  var maxCompleteDate: Date = js.native
+  var maxCompleteDate: Date
   
-  var publishContext: String = js.native
+  var publishContext: String
   
-  var testRunTitles: js.Array[String] = js.native
+  var testRunTitles: js.Array[String]
   
-  var trendDays: Double = js.native
+  var trendDays: Double
 }
 object TestResultTrendFilter {
   

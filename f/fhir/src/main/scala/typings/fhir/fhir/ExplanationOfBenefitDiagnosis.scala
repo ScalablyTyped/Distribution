@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of Diagnosis
   */
-@js.native
-trait ExplanationOfBenefitDiagnosis extends BackboneElement {
+trait ExplanationOfBenefitDiagnosis
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Patient's diagnosis
     */
-  var diagnosisCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var diagnosisCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Patient's diagnosis
     */
-  var diagnosisReference: js.UndefOr[Reference] = js.native
+  var diagnosisReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Package billing code
     */
-  var packageCode: js.UndefOr[CodeableConcept] = js.native
+  var packageCode: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Number to covey order of diagnosis
     */
-  var sequence: positiveInt = js.native
+  var sequence: positiveInt
   
   /**
     * Timing or nature of the diagnosis
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object ExplanationOfBenefitDiagnosis {
   

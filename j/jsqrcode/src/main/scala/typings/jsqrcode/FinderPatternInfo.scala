@@ -2,17 +2,15 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinderPatternInfo extends StObject {
   
-  val BottomLeft: AlignmentPattern = js.native
+  val BottomLeft: AlignmentPattern
   
-  val TopLeft: AlignmentPattern = js.native
+  val TopLeft: AlignmentPattern
   
-  val TopRight: AlignmentPattern = js.native
+  val TopRight: AlignmentPattern
 }
 object FinderPatternInfo {
   

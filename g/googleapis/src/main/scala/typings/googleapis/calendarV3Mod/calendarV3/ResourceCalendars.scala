@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Calendars")
@@ -29,7 +28,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def clear(): GaxiosPromise[Unit] = js.native
   def clear(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def clear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def clear(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceCalendarsClear): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceCalendarsClear, callback: BodyResponseCallback[Unit]): Unit = js.native
   def clear(
@@ -57,7 +56,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCalendarsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCalendarsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -86,7 +85,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCalendar] = js.native
   def get(callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
   def get(params: ParamsResourceCalendarsGet): GaxiosPromise[SchemaCalendar] = js.native
   def get(params: ParamsResourceCalendarsGet, callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
   def get(
@@ -115,7 +114,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCalendar] = js.native
   def insert(callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
   def insert(params: ParamsResourceCalendarsInsert): GaxiosPromise[SchemaCalendar] = js.native
   def insert(params: ParamsResourceCalendarsInsert, callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
   def insert(
@@ -146,7 +145,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCalendar] = js.native
   def patch(callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
   def patch(params: ParamsResourceCalendarsPatch): GaxiosPromise[SchemaCalendar] = js.native
   def patch(params: ParamsResourceCalendarsPatch, callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
   def patch(
@@ -176,7 +175,7 @@ class ResourceCalendars protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCalendar] = js.native
   def update(callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendar] = js.native
   def update(params: ParamsResourceCalendarsUpdate): GaxiosPromise[SchemaCalendar] = js.native
   def update(params: ParamsResourceCalendarsUpdate, callback: BodyResponseCallback[SchemaCalendar]): Unit = js.native
   def update(

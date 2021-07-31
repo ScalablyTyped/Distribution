@@ -2,56 +2,54 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartArea extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def Clear(): js.Any = js.native
+  def Clear(): js.Any
   
-  def ClearContents(): js.Any = js.native
+  def ClearContents(): js.Any
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  def Copy(): js.Any = js.native
+  def Copy(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.ChartArea_typekey")
-  var ExcelDotChartArea_typekey: ChartArea = js.native
+  var ExcelDotChartArea_typekey: ChartArea
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RoundedCorners: Boolean = js.native
+  var RoundedCorners: Boolean
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Shadow: Boolean = js.native
+  var Shadow: Boolean
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object ChartArea {
   

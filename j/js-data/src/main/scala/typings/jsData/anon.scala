@@ -8,55 +8,53 @@ import typings.jsData.mod.Record
 import typings.jsData.mod.SchemaValidationError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllOf extends StObject {
     
-    def allOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def allOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def anyOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def anyOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def dependencies(value: js.Any, schema: js.Any, opts: js.Any): Unit = js.native
+    def dependencies(value: js.Any, schema: js.Any, opts: js.Any): Unit
     
-    def enum(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def `enum`(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def items(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def items(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def maxItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def maxItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def maxLength(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def maxLength(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def maxProperties(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def maxProperties(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def maximum(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def maximum(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def minItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def minItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def minLength(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def minLength(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def minProperties(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def minProperties(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def minimum(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def minimum(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def multipleOf(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def multipleOf(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def not(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def not(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def oneOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def oneOf(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def pattern(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def pattern(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def properties(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def properties(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def required(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def required(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def `type`(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def `type`(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
     
-    def uniqueItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError = js.native
+    def uniqueItems(value: js.Any, schema: js.Any, opts: js.Any): SchemaValidationError
   }
   object AllOf {
     
@@ -65,7 +63,7 @@ object anon {
       allOf: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       anyOf: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       dependencies: (js.Any, js.Any, js.Any) => Unit,
-      enum: (js.Any, js.Any, js.Any) => SchemaValidationError,
+      `enum`: (js.Any, js.Any, js.Any) => SchemaValidationError,
       items: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       maxItems: (js.Any, js.Any, js.Any) => SchemaValidationError,
       maxLength: (js.Any, js.Any, js.Any) => SchemaValidationError,
@@ -84,7 +82,8 @@ object anon {
       `type`: (js.Any, js.Any, js.Any) => SchemaValidationError,
       uniqueItems: (js.Any, js.Any, js.Any) => SchemaValidationError
     ): AllOf = {
-      val __obj = js.Dynamic.literal(allOf = js.Any.fromFunction3(allOf), anyOf = js.Any.fromFunction3(anyOf), dependencies = js.Any.fromFunction3(dependencies), enum = js.Any.fromFunction3(enum), items = js.Any.fromFunction3(items), maxItems = js.Any.fromFunction3(maxItems), maxLength = js.Any.fromFunction3(maxLength), maxProperties = js.Any.fromFunction3(maxProperties), maximum = js.Any.fromFunction3(maximum), minItems = js.Any.fromFunction3(minItems), minLength = js.Any.fromFunction3(minLength), minProperties = js.Any.fromFunction3(minProperties), minimum = js.Any.fromFunction3(minimum), multipleOf = js.Any.fromFunction3(multipleOf), not = js.Any.fromFunction3(not), oneOf = js.Any.fromFunction3(oneOf), pattern = js.Any.fromFunction3(pattern), properties = js.Any.fromFunction3(properties), required = js.Any.fromFunction3(required), uniqueItems = js.Any.fromFunction3(uniqueItems))
+      val __obj = js.Dynamic.literal(allOf = js.Any.fromFunction3(allOf), anyOf = js.Any.fromFunction3(anyOf), dependencies = js.Any.fromFunction3(dependencies), items = js.Any.fromFunction3(items), maxItems = js.Any.fromFunction3(maxItems), maxLength = js.Any.fromFunction3(maxLength), maxProperties = js.Any.fromFunction3(maxProperties), maximum = js.Any.fromFunction3(maximum), minItems = js.Any.fromFunction3(minItems), minLength = js.Any.fromFunction3(minLength), minProperties = js.Any.fromFunction3(minProperties), minimum = js.Any.fromFunction3(minimum), multipleOf = js.Any.fromFunction3(multipleOf), not = js.Any.fromFunction3(not), oneOf = js.Any.fromFunction3(oneOf), pattern = js.Any.fromFunction3(pattern), properties = js.Any.fromFunction3(properties), required = js.Any.fromFunction3(required), uniqueItems = js.Any.fromFunction3(uniqueItems))
+      __obj.updateDynamic("enum")(js.Any.fromFunction3(`enum`))
       __obj.updateDynamic("type")(js.Any.fromFunction3(`type`))
       __obj.asInstanceOf[AllOf]
     }
@@ -157,22 +156,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Array extends StObject {
     
-    def array(value: js.Any): Boolean = js.native
+    def array(value: js.Any): Boolean
     
-    def boolean(value: js.Any): Boolean = js.native
+    def boolean(value: js.Any): Boolean
     
-    def integer(value: js.Any): Boolean = js.native
+    def integer(value: js.Any): Boolean
     
-    def `null`(value: js.Any): Boolean = js.native
+    def `null`(value: js.Any): Boolean
     
-    def number(value: js.Any): Boolean = js.native
+    def number(value: js.Any): Boolean
     
-    def `object`(value: js.Any): Boolean = js.native
+    def `object`(value: js.Any): Boolean
     
-    def string(value: js.Any): Boolean = js.native
+    def string(value: js.Any): Boolean
   }
   object Array {
     
@@ -218,20 +216,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Integer extends StObject {
     
-    def array(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def array(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def integer(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def integer(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def number(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def number(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def numeric(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def numeric(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def `object`(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def `object`(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
     
-    def string(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    def string(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError]
   }
   object Integer {
     
@@ -274,51 +271,51 @@ object anon {
   
   @js.native
   trait TypeofRecord
-    extends Instantiable0[Record]
+    extends StObject
+       with Instantiable0[Record]
        with Instantiable1[/* props */ js.Any, Record]
-       with Instantiable2[js.UndefOr[/* props */ js.Any], /* opts */ js.Any, Record] {
+       with Instantiable2[(/* props */ js.Any) | (/* props */ Unit), /* opts */ js.Any, Record] {
     
     var mapper: Mapper = js.native
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("==")
-    def EqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def EqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName("===")
-    def EqualssignEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def EqualssignEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName("!=")
-    def ExclamationmarkEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def ExclamationmarkEqualssign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName("!==")
-    def ExclamationmarkEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def ExclamationmarkEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName(">")
-    def Greaterthansign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def Greaterthansign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName(">=")
-    def GreaterthansignEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def GreaterthansignEqualssign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName("<")
-    def Lessthansign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def Lessthansign(value: js.Any, predicate: js.Any): Boolean
     
     @JSName("<=")
-    def LessthansignEqualssign(value: js.Any, predicate: js.Any): Boolean = js.native
+    def LessthansignEqualssign(value: js.Any, predicate: js.Any): Boolean
     
-    def contains(value: js.Any, predicate: js.Any): Boolean = js.native
+    def contains(value: js.Any, predicate: js.Any): Boolean
     
-    def in(value: js.Any, predicate: js.Any): Boolean = js.native
+    def in(value: js.Any, predicate: js.Any): Boolean
     
-    def isectEmpty(value: js.Any, predicate: js.Any): Boolean = js.native
+    def isectEmpty(value: js.Any, predicate: js.Any): Boolean
     
-    def isectNotEmpty(value: js.Any, predicate: js.Any): Double = js.native
+    def isectNotEmpty(value: js.Any, predicate: js.Any): Double
     
-    def notContains(value: js.Any, predicate: js.Any): Boolean = js.native
+    def notContains(value: js.Any, predicate: js.Any): Boolean
     
-    def notIn(value: js.Any, predicate: js.Any): Boolean = js.native
+    def notIn(value: js.Any, predicate: js.Any): Boolean
   }
   object _empty {
     

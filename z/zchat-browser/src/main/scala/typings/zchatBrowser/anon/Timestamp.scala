@@ -4,24 +4,24 @@ import typings.zchatBrowser.mod.EventData
 import typings.zchatBrowser.zchatBrowserStrings.last_read
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Timestamp extends EventData {
+trait Timestamp
+  extends StObject
+     with EventData {
   
-  var nick: String = js.native
+  var nick: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: last_read = js.native
+  var `type`: last_read
 }
 object Timestamp {
   
   @scala.inline
-  def apply(nick: String, timestamp: Double, `type`: last_read): Timestamp = {
+  def apply(nick: String, timestamp: Double): Timestamp = {
     val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("last_read")
     __obj.asInstanceOf[Timestamp]
   }
   

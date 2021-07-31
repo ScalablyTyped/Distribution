@@ -2,16 +2,14 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionAdminSettings extends StObject {
   
   /**
     * If true, members of the group subscribed to the associated subscription cannot opt (choose not to get notified)
     */
-  var blockUserOptOut: Boolean = js.native
+  var blockUserOptOut: Boolean
 }
 object SubscriptionAdminSettings {
   

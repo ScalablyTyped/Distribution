@@ -5,22 +5,22 @@ import typings.blessed.blessedStrings.overlay
 import typings.blessed.blessedStrings.w3m
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageOptions extends BoxOptions {
+trait ImageOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * path to image.
     */
-  var file: String = js.native
+  var file: String
   
   /**
     * path to w3mimgdisplay. if a proper w3mimgdisplay path is not given, blessed will search the
     * entire disk for the binary.
     */
-  var `type`: ansi | overlay | w3m = js.native
+  var `type`: ansi | overlay | w3m
 }
 object ImageOptions {
   

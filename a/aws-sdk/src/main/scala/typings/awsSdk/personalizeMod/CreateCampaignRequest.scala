@@ -2,31 +2,29 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCampaignRequest extends StObject {
   
   /**
     * The configuration details of a campaign.
     */
-  var campaignConfig: js.UndefOr[CampaignConfig] = js.native
+  var campaignConfig: js.UndefOr[CampaignConfig] = js.undefined
   
   /**
     * Specifies the requested minimum provisioned transactions (recommendations) per second that Amazon Personalize will support.
     */
-  var minProvisionedTPS: TransactionsPerSecond = js.native
+  var minProvisionedTPS: TransactionsPerSecond
   
   /**
     * A name for the new campaign. The campaign name must be unique within your account.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The Amazon Resource Name (ARN) of the solution version to deploy.
     */
-  var solutionVersionArn: Arn = js.native
+  var solutionVersionArn: Arn
 }
 object CreateCampaignRequest {
   

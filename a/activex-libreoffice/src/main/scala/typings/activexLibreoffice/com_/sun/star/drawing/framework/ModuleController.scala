@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.com_.sun.star.frame.XController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The {@link ModuleController} object for an application can be obtained via the {@link XControllerManager} interface.
   */
-@js.native
-trait ModuleController extends XModuleController {
+trait ModuleController
+  extends StObject
+     with XModuleController {
   
   /** Create a new instance of a {@link ModuleController} as sub controller of the given XController object. */
-  def create(xController: XController): Unit = js.native
+  def create(xController: XController): Unit
 }
 object ModuleController {
   

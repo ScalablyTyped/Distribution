@@ -27,46 +27,44 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilitySelected: js.UndefOr[Boolean] = js.native
+  var accessibilitySelected: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var hoverStyle: js.UndefOr[none | underline] = js.native
+  var hoverStyle: js.UndefOr[none | underline] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var onBlur: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLAnchorElement], js.Object]] = js.native
+  var onBlur: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLAnchorElement], js.Object]] = js.undefined
   
   var onClick: js.UndefOr[
     AbstractEventHandler[
       (MouseEvent[HTMLAnchorElement, NativeMouseEvent]) | KeyboardEvent[HTMLAnchorElement], 
       js.Object
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onFocus: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLAnchorElement], js.Object]] = js.native
+  var onFocus: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLAnchorElement], js.Object]] = js.undefined
   
-  var rel: js.UndefOr[none | nofollow] = js.native
+  var rel: js.UndefOr[none | nofollow] = js.undefined
   
-  var role: js.UndefOr[tab] = js.native
+  var role: js.UndefOr[tab] = js.undefined
   
-  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.native
+  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
   
-  var tapStyle: js.UndefOr[none | compress] = js.native
+  var tapStyle: js.UndefOr[none | compress] = js.undefined
   
-  var target: js.UndefOr[Null | self | blank] = js.native
+  var target: js.UndefOr[Null | self | blank] = js.undefined
 }
 object LinkProps {
   
@@ -119,14 +117,14 @@ object LinkProps {
     def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* arg */ js.Object & Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
     def setOnClick(
-      value: /* arg */ js.Object with (Event[
+      value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLAnchorElement, NativeMouseEvent]) | KeyboardEvent[HTMLAnchorElement]
         ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
@@ -135,7 +133,7 @@ object LinkProps {
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* arg */ js.Object & Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)

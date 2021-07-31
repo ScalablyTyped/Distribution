@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -11,46 +10,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/query-types.js
 //
-@js.native
 trait QueryTypes extends StObject {
   
   // 'BULKUPDATE'
-  var BULKDELETE: String = js.native
+  var BULKDELETE: String
   
   // 'UPDATE'
-  var BULKUPDATE: String = js.native
+  var BULKUPDATE: String
   
   // 'BULKDELETE'
-  var DELETE: String = js.native
+  var DELETE: String
   
   // 'SHOWINDEXES'
-  var DESCRIBE: String = js.native
+  var DESCRIBE: String
   
   // 'RAW'
-  var FOREIGNKEYS: String = js.native
+  var FOREIGNKEYS: String
   
   // 'SELECT'
-  var INSERT: String = js.native
+  var INSERT: String
   
   // 'DESCRIBE'
-  var RAW: String = js.native
+  var RAW: String
   
-  var SELECT: String = js.native
+  var SELECT: String
   
   // 'SHOWTABLES'
-  var SHOWINDEXES: String = js.native
+  var SHOWINDEXES: String
   
   // 'VERSION'
-  var SHOWTABLES: String = js.native
+  var SHOWTABLES: String
   
   // 'INSERT'
-  var UPDATE: String = js.native
+  var UPDATE: String
   
   // 'DELETE'
-  var UPSERT: String = js.native
+  var UPSERT: String
   
   // 'UPSERT'
-  var VERSION: String = js.native
+  var VERSION: String
 }
 object QueryTypes {
   

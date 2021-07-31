@@ -2,34 +2,32 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joinColumnMetadataArgsMod {
   
-  @js.native
   trait JoinColumnMetadataArgs extends StObject {
     
     /**
       * Name of the column.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Class's property name to which this column is applied.
       */
-    var propertyName: String = js.native
+    var propertyName: String
     
     /**
       * Name of the column in the entity to which this column is referenced.
       * This is column property name, not a column database name.
       */
-    var referencedColumnName: js.UndefOr[String] = js.native
+    var referencedColumnName: js.UndefOr[String] = js.undefined
     
     /**
       * Class to which this column is applied.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
   }
   object JoinColumnMetadataArgs {
     

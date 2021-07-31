@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContainerInstancesResponse extends StObject {
   
   /**
     * The list of container instances.
     */
-  var containerInstances: js.UndefOr[ContainerInstances] = js.native
+  var containerInstances: js.UndefOr[ContainerInstances] = js.undefined
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[Failures] = js.native
+  var failures: js.UndefOr[Failures] = js.undefined
 }
 object DescribeContainerInstancesResponse {
   

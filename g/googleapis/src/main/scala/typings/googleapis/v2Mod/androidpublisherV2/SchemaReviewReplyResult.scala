@@ -2,21 +2,19 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReviewReplyResult extends StObject {
   
   /**
     * The time at which the reply took effect.
     */
-  var lastEdited: js.UndefOr[SchemaTimestamp] = js.native
+  var lastEdited: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * The reply text that was applied.
     */
-  var replyText: js.UndefOr[String] = js.native
+  var replyText: js.UndefOr[String] = js.undefined
 }
 object SchemaReviewReplyResult {
   

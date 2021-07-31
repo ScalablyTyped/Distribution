@@ -2,30 +2,28 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceReview extends StObject {
   
-  var aspects: js.Array[PlaceAspectRating] = js.native
+  var aspects: js.Array[PlaceAspectRating]
   
-  var author_name: String = js.native
+  var author_name: String
   
-  var author_url: js.UndefOr[String] = js.native
+  var author_url: js.UndefOr[String] = js.undefined
   
-  var language: String = js.native
+  var language: String
   
-  var profile_photo_url: String = js.native
+  var profile_photo_url: String
   
   // TODO rating is documented in the HTTP API (https://developers.google.com/places/web-service/details#PlaceDetailsResults) but not in the Javascript API.
-  var rating: Double = js.native
+  var rating: Double
   
-  var relative_time_description: String = js.native
+  var relative_time_description: String
   
-  var text: String = js.native
+  var text: String
   
-  var time: Double = js.native
+  var time: Double
 }
 object PlaceReview {
   

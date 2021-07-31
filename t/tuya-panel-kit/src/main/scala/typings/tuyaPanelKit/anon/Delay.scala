@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var isInteraction: js.UndefOr[Boolean] = js.native
+  var isInteraction: js.UndefOr[Boolean] = js.undefined
   
-  var useNativeDriver: js.UndefOr[Boolean] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
 }
 object Delay {
   

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOfSightTargetProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait LineOfSightTargetProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html#location)
     */
-  var location: js.UndefOr[PointProperties] = js.native
+  var location: js.UndefOr[PointProperties] = js.undefined
 }
 object LineOfSightTargetProperties {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTextTranslationJobResponse extends StObject {
   
   /**
     * The job ID of the stopped batch translation job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.undefined
   
   /**
     * The status of the designated job. Upon successful completion, the job's status will be STOPPED.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.undefined
 }
 object StopTextTranslationJobResponse {
   

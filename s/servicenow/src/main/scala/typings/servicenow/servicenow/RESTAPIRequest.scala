@@ -3,27 +3,25 @@ package typings.servicenow.servicenow
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTAPIRequest[T] extends StObject {
   
-  val body: RESTAPIRequestBody[T] = js.native
+  val body: RESTAPIRequestBody[T]
   
-  def getHeader(header: String): String = js.native
+  def getHeader(header: String): String
   
-  def getSupportedResponseContentTypes(): js.Array[String] = js.native
+  def getSupportedResponseContentTypes(): js.Array[String]
   
-  val headers: StringDictionary[String] = js.native
+  val headers: StringDictionary[String]
   
-  val pathParams: StringDictionary[String] = js.native
+  val pathParams: StringDictionary[String]
   
-  val queryParams: StringDictionary[js.Array[String]] = js.native
+  val queryParams: StringDictionary[js.Array[String]]
   
-  val queryString: String = js.native
+  val queryString: String
   
-  val url: String = js.native
+  val url: String
 }
 object RESTAPIRequest {
   
@@ -43,7 +41,7 @@ object RESTAPIRequest {
   }
   
   @scala.inline
-  implicit class RESTAPIRequestMutableBuilder[Self <: RESTAPIRequest[_], T] (val x: Self with RESTAPIRequest[T]) extends AnyVal {
+  implicit class RESTAPIRequestMutableBuilder[Self <: RESTAPIRequest[?], T] (val x: Self & RESTAPIRequest[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: RESTAPIRequestBody[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

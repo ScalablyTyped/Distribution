@@ -2,19 +2,17 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProofSchemaPredicate extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var p_type: String = js.native
+  var p_type: String
   
-  var p_value: Double = js.native
+  var p_value: Double
   
-  var restrictions: js.Array[Restriction] = js.native
+  var restrictions: js.Array[Restriction]
 }
 object ProofSchemaPredicate {
   

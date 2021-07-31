@@ -2,66 +2,64 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStageRequest extends StObject {
   
   /**
     * Whether cache clustering is enabled for the stage.
     */
-  var cacheClusterEnabled: js.UndefOr[Boolean] = js.native
+  var cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The stage's cache cluster size.
     */
-  var cacheClusterSize: js.UndefOr[CacheClusterSize] = js.native
+  var cacheClusterSize: js.UndefOr[CacheClusterSize] = js.undefined
   
   /**
     * The canary deployment settings of this stage.
     */
-  var canarySettings: js.UndefOr[CanarySettings] = js.native
+  var canarySettings: js.UndefOr[CanarySettings] = js.undefined
   
   /**
     * [Required] The identifier of the Deployment resource for the Stage resource.
     */
-  var deploymentId: String = js.native
+  var deploymentId: String
   
   /**
     * The description of the Stage resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the associated API documentation.
     */
-  var documentationVersion: js.UndefOr[String] = js.native
+  var documentationVersion: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * [Required] The name for the Stage resource. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
-  var stageName: String = js.native
+  var stageName: String
   
   /**
     * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * Specifies whether active tracing with X-ray is enabled for the Stage.
     */
-  var tracingEnabled: js.UndefOr[Boolean] = js.native
+  var tracingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A map that defines the stage variables for the new Stage resource. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
     */
-  var variables: js.UndefOr[MapOfStringToString] = js.native
+  var variables: js.UndefOr[MapOfStringToString] = js.undefined
 }
 object CreateStageRequest {
   

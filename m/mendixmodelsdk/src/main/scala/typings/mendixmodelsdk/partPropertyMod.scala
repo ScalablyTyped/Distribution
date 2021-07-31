@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.unitsMod.ModelUnit
 import typings.mobx.observablevalueMod.IObservableValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object partPropertyMod {

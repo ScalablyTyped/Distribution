@@ -3,12 +3,13 @@ package typings.kdbxweb.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Group")
 @js.native
-class Group () extends KdbxObject {
+class Group ()
+  extends StObject
+     with KdbxObject {
   
   def copyFrom(group: Group): Unit = js.native
   
@@ -56,11 +57,13 @@ class Group () extends KdbxObject {
 /* static members */
 object Group {
   
-  @JSImport("kdbxweb", "Group.create")
+  @JSImport("kdbxweb", "Group")
   @js.native
-  def create(name: StringProtected, parentGroup: Group): Group = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Group.read")
-  @js.native
-  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Group = js.native
+  @scala.inline
+  def create(name: StringProtected, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
+  
+  @scala.inline
+  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
 }

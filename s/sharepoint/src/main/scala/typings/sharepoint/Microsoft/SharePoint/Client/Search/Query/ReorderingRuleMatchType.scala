@@ -2,7 +2,6 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait ReorderingRuleMatchType extends StObject
 object ReorderingRuleMatchType extends StObject {
   
   @js.native
-  sealed trait contentTypeIs extends ReorderingRuleMatchType
+  sealed trait contentTypeIs
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait fileExtensionMatches extends ReorderingRuleMatchType
+  sealed trait fileExtensionMatches
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait manualCondition extends ReorderingRuleMatchType
+  sealed trait manualCondition
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait resultContainsKeyword extends ReorderingRuleMatchType
+  sealed trait resultContainsKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait resultHasTag extends ReorderingRuleMatchType
+  sealed trait resultHasTag
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait titleContainsKeyword extends ReorderingRuleMatchType
+  sealed trait titleContainsKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait titleMatchesKeyword extends ReorderingRuleMatchType
+  sealed trait titleMatchesKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait urlExactlyMatches extends ReorderingRuleMatchType
+  sealed trait urlExactlyMatches
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait urlStartsWith extends ReorderingRuleMatchType
+  sealed trait urlStartsWith
+    extends StObject
+       with ReorderingRuleMatchType
 }

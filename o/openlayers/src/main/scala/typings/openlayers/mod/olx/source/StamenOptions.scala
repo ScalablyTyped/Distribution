@@ -4,27 +4,25 @@ import typings.openlayers.mod.Tile
 import typings.openlayers.mod.TileLoadFunctionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StamenOptions extends StObject {
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var layer: String = js.native
+  var layer: String
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var opaque: js.UndefOr[Boolean] = js.native
+  var opaque: js.UndefOr[Boolean] = js.undefined
   
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object StamenOptions {
   

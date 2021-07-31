@@ -4,7 +4,6 @@ import typings.amapJsApi.AMap.MediaLayer.Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.MediaLayer")
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options 图层选项
   */
 abstract class MediaLayer[E /* <: HTMLElement */] ()
-  extends typings.amapJsApi.AMap.MediaLayer[E] {
+  extends StObject
+     with typings.amapJsApi.AMap.MediaLayer[E] {
   def this(options: Options) = this()
 }

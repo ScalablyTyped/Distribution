@@ -59,25 +59,23 @@ import typings.plugapi.plugapiStrings.userUpdate
 import typings.plugapi.plugapiStrings.vote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Enum {
   
-  @js.native
   trait Ban extends StObject {
     
-    var DAY: d = js.native
+    var DAY: d
     
-    var HOUR: h = js.native
+    var HOUR: h
     
-    var PERMA: f = js.native
+    var PERMA: f
   }
   object Ban {
     
     @scala.inline
-    def apply(DAY: d, HOUR: h, PERMA: f): Ban = {
-      val __obj = js.Dynamic.literal(DAY = DAY.asInstanceOf[js.Any], HOUR = HOUR.asInstanceOf[js.Any], PERMA = PERMA.asInstanceOf[js.Any])
+    def apply(): Ban = {
+      val __obj = js.Dynamic.literal(DAY = "d", HOUR = "h", PERMA = "f")
       __obj.asInstanceOf[Ban]
     }
     
@@ -95,18 +93,17 @@ object Enum {
     }
   }
   
-  @js.native
   trait BanReason extends StObject {
     
-    var INAPPROPRIATE_GENRE: Double = js.native
+    var INAPPROPRIATE_GENRE: Double
     
-    var NEGATIVE_ATTITUDE: Double = js.native
+    var NEGATIVE_ATTITUDE: Double
     
-    var OFFENSIVE_MEDIA: Double = js.native
+    var OFFENSIVE_MEDIA: Double
     
-    var SPAMMING_TROLLING: Double = js.native
+    var SPAMMING_TROLLING: Double
     
-    var VERBAL_ABUSE: Double = js.native
+    var VERBAL_ABUSE: Double
   }
   object BanReason {
     
@@ -142,171 +139,117 @@ object Enum {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var ADVANCE: advance = js.native
+    var ADVANCE: advance
     
-    var BAN: ban = js.native
+    var BAN: ban
     
-    var BOOTH_LOCKED: boothLocked = js.native
+    var BOOTH_LOCKED: boothLocked
     
-    var CHAT: chat = js.native
+    var CHAT: chat
     
-    var CHAT_COMMAND: command = js.native
+    var CHAT_COMMAND: command
     
-    var CHAT_DELETE: chatDelete = js.native
+    var CHAT_DELETE: chatDelete
     
-    var CHAT_LEVEL_UPDATE: roomMinChatLevelUpdate = js.native
+    var CHAT_LEVEL_UPDATE: roomMinChatLevelUpdate
     
-    var COMMAND: command = js.native
+    var COMMAND: command
     
-    var DJ_LIST_CYCLE: djListCycle = js.native
+    var DJ_LIST_CYCLE: djListCycle
     
-    var DJ_LIST_LOCKED: djListLocked = js.native
+    var DJ_LIST_LOCKED: djListLocked
     
-    var DJ_LIST_UPDATE: djListUpdate = js.native
+    var DJ_LIST_UPDATE: djListUpdate
     
-    var EARN: earn = js.native
+    var EARN: earn
     
-    var FLOOD_CHAT: floodChat = js.native
+    var FLOOD_CHAT: floodChat
     
-    var FOLLOW_JOIN: followJoin = js.native
+    var FOLLOW_JOIN: followJoin
     
-    var FRIEND_REQUEST: friendRequest = js.native
+    var FRIEND_REQUEST: friendRequest
     
-    var GIFTED: gifted = js.native
+    var GIFTED: gifted
     
-    var GRAB: grab = js.native
+    var GRAB: grab
     
-    var KILL_SESSION: killSession = js.native
+    var KILL_SESSION: killSession
     
-    var MAINT_MODE: plugMaintenance = js.native
+    var MAINT_MODE: plugMaintenance
     
-    var MAINT_MODE_ALERT: plugMaintenanceAlert = js.native
+    var MAINT_MODE_ALERT: plugMaintenanceAlert
     
-    var MODERATE_ADD_DJ: modAddDJ = js.native
+    var MODERATE_ADD_DJ: modAddDJ
     
-    var MODERATE_ADD_WAITLIST: modAddWaitList = js.native
+    var MODERATE_ADD_WAITLIST: modAddWaitList
     
-    var MODERATE_AMBASSADOR: modAmbassador = js.native
+    var MODERATE_AMBASSADOR: modAmbassador
     
-    var MODERATE_BAN: modBan = js.native
+    var MODERATE_BAN: modBan
     
-    var MODERATE_MOVE_DJ: modMoveDJ = js.native
+    var MODERATE_MOVE_DJ: modMoveDJ
     
-    var MODERATE_MUTE: modMute = js.native
+    var MODERATE_MUTE: modMute
     
-    var MODERATE_REMOVE_DJ: modRemoveDJ = js.native
+    var MODERATE_REMOVE_DJ: modRemoveDJ
     
-    var MODERATE_REMOVE_WAITLIST: modRemoveWaitList = js.native
+    var MODERATE_REMOVE_WAITLIST: modRemoveWaitList
     
-    var MODERATE_SKIP: modSkip = js.native
+    var MODERATE_SKIP: modSkip
     
-    var MODERATE_STAFF: modStaff = js.native
+    var MODERATE_STAFF: modStaff
     
-    var NOTIFY: notify = js.native
+    var NOTIFY: notify
     
-    var PDJ_MESSAGE: pdjMessage = js.native
+    var PDJ_MESSAGE: pdjMessage
     
-    var PDJ_UPDATE: pdjUpdate = js.native
+    var PDJ_UPDATE: pdjUpdate
     
-    var PING: ping = js.native
+    var PING: ping
     
-    var PLAYLIST_CYCLE: playlistCycle = js.native
+    var PLAYLIST_CYCLE: playlistCycle
     
-    var REQUEST_DURATION: requestDuration = js.native
+    var REQUEST_DURATION: requestDuration
     
-    var REQUEST_DURATION_RETRY: requestDurationRetry = js.native
+    var REQUEST_DURATION_RETRY: requestDurationRetry
     
-    var ROOM_CHANGE: roomChanged = js.native
+    var ROOM_CHANGE: roomChanged
     
-    var ROOM_DESCRIPTION_UPDATE: roomDescriptionUpdate = js.native
+    var ROOM_DESCRIPTION_UPDATE: roomDescriptionUpdate
     
-    var ROOM_JOIN: roomJoin = js.native
+    var ROOM_JOIN: roomJoin
     
-    var ROOM_NAME_UPDATE: roomNameUpdate = js.native
+    var ROOM_NAME_UPDATE: roomNameUpdate
     
-    var ROOM_VOTE_SKIP: roomVoteSkip = js.native
+    var ROOM_VOTE_SKIP: roomVoteSkip
     
-    var ROOM_WELCOME_UPDATE: roomWelcomeUpdate = js.native
+    var ROOM_WELCOME_UPDATE: roomWelcomeUpdate
     
-    var SESSION_CLOSE: sessionClose = js.native
+    var SESSION_CLOSE: sessionClose
     
-    var SKIP: skip = js.native
+    var SKIP: skip
     
-    var STROBE_TOGGLE: strobeToggle = js.native
+    var STROBE_TOGGLE: strobeToggle
     
-    var USER_COUNTER_UPDATE: userCounterUpdate = js.native
+    var USER_COUNTER_UPDATE: userCounterUpdate
     
-    var USER_FOLLOW: userFollow = js.native
+    var USER_FOLLOW: userFollow
     
-    var USER_JOIN: userJoin = js.native
+    var USER_JOIN: userJoin
     
-    var USER_LEAVE: userLeave = js.native
+    var USER_LEAVE: userLeave
     
-    var USER_UPDATE: userUpdate = js.native
+    var USER_UPDATE: userUpdate
     
-    var VOTE: vote = js.native
+    var VOTE: vote
   }
   object Events {
     
     @scala.inline
-    def apply(
-      ADVANCE: advance,
-      BAN: ban,
-      BOOTH_LOCKED: boothLocked,
-      CHAT: chat,
-      CHAT_COMMAND: command,
-      CHAT_DELETE: chatDelete,
-      CHAT_LEVEL_UPDATE: roomMinChatLevelUpdate,
-      COMMAND: command,
-      DJ_LIST_CYCLE: djListCycle,
-      DJ_LIST_LOCKED: djListLocked,
-      DJ_LIST_UPDATE: djListUpdate,
-      EARN: earn,
-      FLOOD_CHAT: floodChat,
-      FOLLOW_JOIN: followJoin,
-      FRIEND_REQUEST: friendRequest,
-      GIFTED: gifted,
-      GRAB: grab,
-      KILL_SESSION: killSession,
-      MAINT_MODE: plugMaintenance,
-      MAINT_MODE_ALERT: plugMaintenanceAlert,
-      MODERATE_ADD_DJ: modAddDJ,
-      MODERATE_ADD_WAITLIST: modAddWaitList,
-      MODERATE_AMBASSADOR: modAmbassador,
-      MODERATE_BAN: modBan,
-      MODERATE_MOVE_DJ: modMoveDJ,
-      MODERATE_MUTE: modMute,
-      MODERATE_REMOVE_DJ: modRemoveDJ,
-      MODERATE_REMOVE_WAITLIST: modRemoveWaitList,
-      MODERATE_SKIP: modSkip,
-      MODERATE_STAFF: modStaff,
-      NOTIFY: notify,
-      PDJ_MESSAGE: pdjMessage,
-      PDJ_UPDATE: pdjUpdate,
-      PING: ping,
-      PLAYLIST_CYCLE: playlistCycle,
-      REQUEST_DURATION: requestDuration,
-      REQUEST_DURATION_RETRY: requestDurationRetry,
-      ROOM_CHANGE: roomChanged,
-      ROOM_DESCRIPTION_UPDATE: roomDescriptionUpdate,
-      ROOM_JOIN: roomJoin,
-      ROOM_NAME_UPDATE: roomNameUpdate,
-      ROOM_VOTE_SKIP: roomVoteSkip,
-      ROOM_WELCOME_UPDATE: roomWelcomeUpdate,
-      SESSION_CLOSE: sessionClose,
-      SKIP: skip,
-      STROBE_TOGGLE: strobeToggle,
-      USER_COUNTER_UPDATE: userCounterUpdate,
-      USER_FOLLOW: userFollow,
-      USER_JOIN: userJoin,
-      USER_LEAVE: userLeave,
-      USER_UPDATE: userUpdate,
-      VOTE: vote
-    ): Events = {
-      val __obj = js.Dynamic.literal(ADVANCE = ADVANCE.asInstanceOf[js.Any], BAN = BAN.asInstanceOf[js.Any], BOOTH_LOCKED = BOOTH_LOCKED.asInstanceOf[js.Any], CHAT = CHAT.asInstanceOf[js.Any], CHAT_COMMAND = CHAT_COMMAND.asInstanceOf[js.Any], CHAT_DELETE = CHAT_DELETE.asInstanceOf[js.Any], CHAT_LEVEL_UPDATE = CHAT_LEVEL_UPDATE.asInstanceOf[js.Any], COMMAND = COMMAND.asInstanceOf[js.Any], DJ_LIST_CYCLE = DJ_LIST_CYCLE.asInstanceOf[js.Any], DJ_LIST_LOCKED = DJ_LIST_LOCKED.asInstanceOf[js.Any], DJ_LIST_UPDATE = DJ_LIST_UPDATE.asInstanceOf[js.Any], EARN = EARN.asInstanceOf[js.Any], FLOOD_CHAT = FLOOD_CHAT.asInstanceOf[js.Any], FOLLOW_JOIN = FOLLOW_JOIN.asInstanceOf[js.Any], FRIEND_REQUEST = FRIEND_REQUEST.asInstanceOf[js.Any], GIFTED = GIFTED.asInstanceOf[js.Any], GRAB = GRAB.asInstanceOf[js.Any], KILL_SESSION = KILL_SESSION.asInstanceOf[js.Any], MAINT_MODE = MAINT_MODE.asInstanceOf[js.Any], MAINT_MODE_ALERT = MAINT_MODE_ALERT.asInstanceOf[js.Any], MODERATE_ADD_DJ = MODERATE_ADD_DJ.asInstanceOf[js.Any], MODERATE_ADD_WAITLIST = MODERATE_ADD_WAITLIST.asInstanceOf[js.Any], MODERATE_AMBASSADOR = MODERATE_AMBASSADOR.asInstanceOf[js.Any], MODERATE_BAN = MODERATE_BAN.asInstanceOf[js.Any], MODERATE_MOVE_DJ = MODERATE_MOVE_DJ.asInstanceOf[js.Any], MODERATE_MUTE = MODERATE_MUTE.asInstanceOf[js.Any], MODERATE_REMOVE_DJ = MODERATE_REMOVE_DJ.asInstanceOf[js.Any], MODERATE_REMOVE_WAITLIST = MODERATE_REMOVE_WAITLIST.asInstanceOf[js.Any], MODERATE_SKIP = MODERATE_SKIP.asInstanceOf[js.Any], MODERATE_STAFF = MODERATE_STAFF.asInstanceOf[js.Any], NOTIFY = NOTIFY.asInstanceOf[js.Any], PDJ_MESSAGE = PDJ_MESSAGE.asInstanceOf[js.Any], PDJ_UPDATE = PDJ_UPDATE.asInstanceOf[js.Any], PING = PING.asInstanceOf[js.Any], PLAYLIST_CYCLE = PLAYLIST_CYCLE.asInstanceOf[js.Any], REQUEST_DURATION = REQUEST_DURATION.asInstanceOf[js.Any], REQUEST_DURATION_RETRY = REQUEST_DURATION_RETRY.asInstanceOf[js.Any], ROOM_CHANGE = ROOM_CHANGE.asInstanceOf[js.Any], ROOM_DESCRIPTION_UPDATE = ROOM_DESCRIPTION_UPDATE.asInstanceOf[js.Any], ROOM_JOIN = ROOM_JOIN.asInstanceOf[js.Any], ROOM_NAME_UPDATE = ROOM_NAME_UPDATE.asInstanceOf[js.Any], ROOM_VOTE_SKIP = ROOM_VOTE_SKIP.asInstanceOf[js.Any], ROOM_WELCOME_UPDATE = ROOM_WELCOME_UPDATE.asInstanceOf[js.Any], SESSION_CLOSE = SESSION_CLOSE.asInstanceOf[js.Any], SKIP = SKIP.asInstanceOf[js.Any], STROBE_TOGGLE = STROBE_TOGGLE.asInstanceOf[js.Any], USER_COUNTER_UPDATE = USER_COUNTER_UPDATE.asInstanceOf[js.Any], USER_FOLLOW = USER_FOLLOW.asInstanceOf[js.Any], USER_JOIN = USER_JOIN.asInstanceOf[js.Any], USER_LEAVE = USER_LEAVE.asInstanceOf[js.Any], USER_UPDATE = USER_UPDATE.asInstanceOf[js.Any], VOTE = VOTE.asInstanceOf[js.Any])
+    def apply(): Events = {
+      val __obj = js.Dynamic.literal(ADVANCE = "advance", BAN = "ban", BOOTH_LOCKED = "boothLocked", CHAT = "chat", CHAT_COMMAND = "command", CHAT_DELETE = "chatDelete", CHAT_LEVEL_UPDATE = "roomMinChatLevelUpdate", COMMAND = "command", DJ_LIST_CYCLE = "djListCycle", DJ_LIST_LOCKED = "djListLocked", DJ_LIST_UPDATE = "djListUpdate", EARN = "earn", FLOOD_CHAT = "floodChat", FOLLOW_JOIN = "followJoin", FRIEND_REQUEST = "friendRequest", GIFTED = "gifted", GRAB = "grab", KILL_SESSION = "killSession", MAINT_MODE = "plugMaintenance", MAINT_MODE_ALERT = "plugMaintenanceAlert", MODERATE_ADD_DJ = "modAddDJ", MODERATE_ADD_WAITLIST = "modAddWaitList", MODERATE_AMBASSADOR = "modAmbassador", MODERATE_BAN = "modBan", MODERATE_MOVE_DJ = "modMoveDJ", MODERATE_MUTE = "modMute", MODERATE_REMOVE_DJ = "modRemoveDJ", MODERATE_REMOVE_WAITLIST = "modRemoveWaitList", MODERATE_SKIP = "modSkip", MODERATE_STAFF = "modStaff", NOTIFY = "notify", PDJ_MESSAGE = "pdjMessage", PDJ_UPDATE = "pdjUpdate", PING = "ping", PLAYLIST_CYCLE = "playlistCycle", REQUEST_DURATION = "requestDuration", REQUEST_DURATION_RETRY = "requestDurationRetry", ROOM_CHANGE = "roomChanged", ROOM_DESCRIPTION_UPDATE = "roomDescriptionUpdate", ROOM_JOIN = "roomJoin", ROOM_NAME_UPDATE = "roomNameUpdate", ROOM_VOTE_SKIP = "roomVoteSkip", ROOM_WELCOME_UPDATE = "roomWelcomeUpdate", SESSION_CLOSE = "sessionClose", SKIP = "skip", STROBE_TOGGLE = "strobeToggle", USER_COUNTER_UPDATE = "userCounterUpdate", USER_FOLLOW = "userFollow", USER_JOIN = "userJoin", USER_LEAVE = "userLeave", USER_UPDATE = "userUpdate", VOTE = "vote")
       __obj.asInstanceOf[Events]
     }
     
@@ -471,18 +414,17 @@ object Enum {
     }
   }
   
-  @js.native
   trait GlobalRole extends StObject {
     
-    var ADMIN: Double = js.native
+    var ADMIN: Double
     
-    var AMBASSADOR: Double = js.native
+    var AMBASSADOR: Double
     
-    var LEADER: Double = js.native
+    var LEADER: Double
     
-    var NONE: Double = js.native
+    var NONE: Double
     
-    var VOLUNTEER: Double = js.native
+    var VOLUNTEER: Double
   }
   object GlobalRole {
     
@@ -512,20 +454,19 @@ object Enum {
     }
   }
   
-  @js.native
   trait Mute extends StObject {
     
-    var LONG: l = js.native
+    var LONG: l
     
-    var MEDIUM: m = js.native
+    var MEDIUM: m
     
-    var SHORT: s = js.native
+    var SHORT: s
   }
   object Mute {
     
     @scala.inline
-    def apply(LONG: l, MEDIUM: m, SHORT: s): Mute = {
-      val __obj = js.Dynamic.literal(LONG = LONG.asInstanceOf[js.Any], MEDIUM = MEDIUM.asInstanceOf[js.Any], SHORT = SHORT.asInstanceOf[js.Any])
+    def apply(): Mute = {
+      val __obj = js.Dynamic.literal(LONG = "l", MEDIUM = "m", SHORT = "s")
       __obj.asInstanceOf[Mute]
     }
     
@@ -543,18 +484,17 @@ object Enum {
     }
   }
   
-  @js.native
   trait MuteReason extends StObject {
     
-    var NEGATIVE_ATTITUDE: Double = js.native
+    var NEGATIVE_ATTITUDE: Double
     
-    var OFFENSIVE_LANGUAGE: Double = js.native
+    var OFFENSIVE_LANGUAGE: Double
     
-    var SPAMMING_TROLLING: Double = js.native
+    var SPAMMING_TROLLING: Double
     
-    var VERBAL_ABUSE: Double = js.native
+    var VERBAL_ABUSE: Double
     
-    var VIOLATING_COMMUNITY_RULES: Double = js.native
+    var VIOLATING_COMMUNITY_RULES: Double
   }
   object MuteReason {
     
@@ -590,20 +530,19 @@ object Enum {
     }
   }
   
-  @js.native
   trait RoomRole extends StObject {
     
-    var BOUNCER: Double = js.native
+    var BOUNCER: Double
     
-    var COHOST: Double = js.native
+    var COHOST: Double
     
-    var HOST: Double = js.native
+    var HOST: Double
     
-    var MANAGER: Double = js.native
+    var MANAGER: Double
     
-    var NONE: Double = js.native
+    var NONE: Double
     
-    var RESIDENTDJ: Double = js.native
+    var RESIDENTDJ: Double
   }
   object RoomRole {
     
@@ -636,12 +575,11 @@ object Enum {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var OFFLINE: Double = js.native
+    var OFFLINE: Double
     
-    var ONLINE: Double = js.native
+    var ONLINE: Double
   }
   object Status {
     

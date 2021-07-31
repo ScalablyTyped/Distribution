@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** Behavior. */
-@js.native
 trait Behavior extends StObject {
   
   /** The category of the characteristic: `behavior` for temporal data. */
-  var category: String = js.native
+  var category: String
   
   /** The user-visible, localized name of the characteristic. */
-  var name: String = js.native
+  var name: String
   
   /** For JSON content that is timestamped, the percentage of timestamped input data that occurred during that day of the week or hour of the day. The range is 0 to 1. */
-  var percentage: Double = js.native
+  var percentage: Double
   
   /** The unique, non-localized identifier of the characteristic to which the results pertain. IDs have the form `behavior_{value}`. */
-  var trait_id: String = js.native
+  var trait_id: String
 }
 object Behavior {
   

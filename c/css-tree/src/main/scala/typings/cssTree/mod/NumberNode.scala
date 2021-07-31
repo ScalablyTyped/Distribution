@@ -3,26 +3,25 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberNode
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_NumberNode: Number = js.native
+  var type_NumberNode: Number
   
-  var value: String = js.native
+  var value: String
 }
 object NumberNode {
   
   @scala.inline
-  def apply(`type`: Number, value: String): NumberNode = {
+  def apply(value: String): NumberNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Number")
     __obj.asInstanceOf[NumberNode]
   }
   

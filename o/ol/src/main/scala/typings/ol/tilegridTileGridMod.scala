@@ -6,35 +6,35 @@ import typings.ol.sizeMod.Size
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilegridTileGridMod {
   
   @JSImport("ol/tilegrid/TileGrid", JSImport.Default)
   @js.native
-  class default protected () extends TileGrid {
+  class default protected ()
+    extends StObject
+       with TileGrid {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[Coordinate] = js.native
+    var origin: js.UndefOr[Coordinate] = js.undefined
     
-    var origins: js.UndefOr[js.Array[Coordinate]] = js.native
+    var origins: js.UndefOr[js.Array[Coordinate]] = js.undefined
     
-    var resolutions: js.Array[Double] = js.native
+    var resolutions: js.Array[Double]
     
-    var sizes: js.UndefOr[js.Array[Size]] = js.native
+    var sizes: js.UndefOr[js.Array[Size]] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
     
-    var tileSizes: js.UndefOr[js.Array[Size]] = js.native
+    var tileSizes: js.UndefOr[js.Array[Size]] = js.undefined
   }
   object Options {
     
@@ -124,7 +124,7 @@ object tilegridTileGridMod {
     def forEachTileCoordParentTileRange(
       tileCoord: TileCoord,
       callback: js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
-      opt_tileRange: js.UndefOr[scala.Nothing],
+      opt_tileRange: Unit,
       opt_extent: Extent
     ): Boolean = js.native
     def forEachTileCoordParentTileRange(
@@ -174,7 +174,7 @@ object tilegridTileGridMod {
     def getTileCoordCenter(tileCoord: TileCoord): Coordinate = js.native
     
     def getTileCoordChildTileRange(tileCoord: TileCoord): typings.ol.tileRangeMod.default = js.native
-    def getTileCoordChildTileRange(tileCoord: TileCoord, opt_tileRange: js.UndefOr[scala.Nothing], opt_extent: Extent): typings.ol.tileRangeMod.default = js.native
+    def getTileCoordChildTileRange(tileCoord: TileCoord, opt_tileRange: Unit, opt_extent: Extent): typings.ol.tileRangeMod.default = js.native
     def getTileCoordChildTileRange(tileCoord: TileCoord, opt_tileRange: typings.ol.tileRangeMod.default): typings.ol.tileRangeMod.default = js.native
     def getTileCoordChildTileRange(tileCoord: TileCoord, opt_tileRange: typings.ol.tileRangeMod.default, opt_extent: Extent): typings.ol.tileRangeMod.default = js.native
     

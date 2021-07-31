@@ -13,7 +13,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -98,40 +97,40 @@ object tabsMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedTabId.asInstanceOf[js.Any]).asInstanceOf[SelectedTabId | Null]
   }
   
-  @js.native
-  trait ITabsProps extends IProps {
+  trait ITabsProps
+    extends StObject
+       with IProps {
     
     /**
       * Whether the selected tab indicator should animate its movement.
       * @default true
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial selected tab `id`, for uncontrolled usage.
       * Note that this prop refers only to `<Tab>` children; other types of elements are ignored.
       * @default first tab
       */
-    var defaultSelectedTabId: js.UndefOr[TabId] = js.native
+    var defaultSelectedTabId: js.UndefOr[TabId] = js.undefined
     
     /**
       * Unique identifier for this `Tabs` container. This will be combined with the `id` of each
       * `Tab` child to generate ARIA accessibility attributes. IDs are required and should be
       * unique on the page to support server-side rendering.
       */
-    var id: TabId = js.native
+    var id: TabId
     
     /**
       * If set to `true`, the tab titles will display with larger styling.
       * This will apply large styles only to the tabs at this level, not to nested tabs.
       * @default false
       */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback function that is invoked when a tab in the tab list is clicked.
@@ -143,7 +142,7 @@ object tabsMod {
           /* event */ MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether inactive tab panels should be removed from the DOM and unmounted in React.
@@ -151,20 +150,20 @@ object tabsMod {
       * careful support for unmounting and remounting.
       * @default false
       */
-    var renderActiveTabPanelOnly: js.UndefOr[Boolean] = js.native
+    var renderActiveTabPanelOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Selected tab `id`, for controlled usage.
       * Providing this prop will put the component in controlled mode.
       * Unknown ids will result in empty selection (no errors).
       */
-    var selectedTabId: js.UndefOr[TabId] = js.native
+    var selectedTabId: js.UndefOr[TabId] = js.undefined
     
     /**
       * Whether to show tabs stacked vertically on the left side.
       * @default false
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ITabsProps {
     
@@ -226,12 +225,11 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait ITabsState extends StObject {
     
-    var indicatorWrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var indicatorWrapperStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var selectedTabId: js.UndefOr[TabId] = js.native
+    var selectedTabId: js.UndefOr[TabId] = js.undefined
   }
   object ITabsState {
     

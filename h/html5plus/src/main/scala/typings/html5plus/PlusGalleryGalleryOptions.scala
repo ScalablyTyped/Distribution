@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.none
 import typings.html5plus.html5plusStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
   */
-@js.native
 trait PlusGalleryGalleryOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 选择文件保存的路径
@@ -31,7 +29,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * 相册中选择文件类型过滤器
@@ -42,7 +40,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var filter: js.UndefOr[image | video | none] = js.native
+  var filter: js.UndefOr[image | video | none] = js.undefined
   
   /**
     * 最多选择的图片数量
@@ -51,7 +49,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否支持多选图片
@@ -59,7 +57,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 超过最多选择图片数量事件
@@ -67,7 +65,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var onmaxed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onmaxed: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 相册选择界面弹出指示区域
@@ -76,7 +74,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var popover: js.UndefOr[PlusGalleryPopPosition] = js.native
+  var popover: js.UndefOr[PlusGalleryPopPosition] = js.undefined
   
   /**
     * 已选择的图片路径列表
@@ -85,7 +83,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var selected: js.UndefOr[js.Array[_]] = js.native
+  var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 是否使用系统相册文件选择界面
@@ -94,7 +92,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var system: js.UndefOr[Boolean] = js.native
+  var system: js.UndefOr[Boolean] = js.undefined
 }
 object PlusGalleryGalleryOptions {
   
@@ -150,7 +148,7 @@ object PlusGalleryGalleryOptions {
     def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
     @scala.inline
-    def setSelected(value: js.Array[_]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)

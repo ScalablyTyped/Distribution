@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopFleetActionsInput extends StObject {
   
   /**
     * List of actions to suspend on the fleet. 
     */
-  var Actions: FleetActionList = js.native
+  var Actions: FleetActionList
   
   /**
     * A unique identifier for a fleet to stop actions on. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
 }
 object StopFleetActionsInput {
   

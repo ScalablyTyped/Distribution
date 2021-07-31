@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyInfo extends StObject {
   
   /** For a direct proxy, the hosts for which the proxy is bypassed. The host names may contain wildcards such as *.example.com. */
-  var excludedHosts: js.UndefOr[js.Array[String]] = js.native
+  var excludedHosts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The host of the direct proxy. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** The URI of the PAC script used to configure the proxy. */
-  var pacUri: js.UndefOr[String] = js.native
+  var pacUri: js.UndefOr[String] = js.undefined
   
   /** The port of the direct proxy. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object ProxyInfo {
   

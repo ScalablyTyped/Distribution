@@ -6,20 +6,20 @@ import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Slot extends IModel {
+trait Slot
+  extends StObject
+     with IModel {
   
   @JSName("models")
-  var models_Slot: IModelMap = js.native
+  var models_Slot: IModelMap
   
   @JSName("origin")
-  var origin_Slot: IPoint = js.native
+  var origin_Slot: IPoint
   
   @JSName("paths")
-  var paths_Slot: IPathMap = js.native
+  var paths_Slot: IPathMap
 }
 object Slot {
   

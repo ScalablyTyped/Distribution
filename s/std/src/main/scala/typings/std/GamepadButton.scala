@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An individual button of a gamepad or other controller, allowing access to the current state of different types of buttons available on the control device. */
-@js.native
 trait GamepadButton extends StObject {
   
-  val pressed: scala.Boolean = js.native
+  val pressed: scala.Boolean
   
-  val touched: scala.Boolean = js.native
+  val touched: scala.Boolean
   
-  val value: Double = js.native
+  val value: Double
 }
 object GamepadButton {
   

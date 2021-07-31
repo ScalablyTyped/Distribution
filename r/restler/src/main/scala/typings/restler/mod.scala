@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,111 +17,110 @@ object mod extends Shortcut {
     * Interface for restler options.
     * @interface
     */
-  @js.native
   trait RestlerOptions extends StObject {
     
     /**
       * OAuth Bearer Token.
       * @type {string}
       */
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
     /**
       *  HTTP Agent instance to use. If not defined globalAgent will be used. If false opts out of connection pooling with an Agent, defaults request to Connection: close.
       * @type {any}
       */
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A http.Client instance if you want to reuse or implement some kind of connection pooling.
       * @type {any}
       */
-    var client: js.UndefOr[js.Any] = js.native
+    var client: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Data to be added to the body of the request.
       * @type {any}
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Encoding of the response body
       * @type {string}
       */
-    var decoding: js.UndefOr[String] = js.native
+    var decoding: js.UndefOr[String] = js.undefined
     
     /**
       * Encoding of the request body.
       * @type {string}
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * If set will recursively follow redirects.
       * @type {boolean}
       */
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A hash of HTTP headers to be sent.
       * @type {RestlerOptionsHeader}
       */
-    var headers: js.UndefOr[RestlerOptionsHeader] = js.native
+    var headers: js.UndefOr[RestlerOptionsHeader] = js.undefined
     
     /**
       * Request method
       * @type {string}
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * If set the data passed will be formatted as <code>multipart/form-encoded</code>.
       * @type {boolean}
       */
-    var multipart: js.UndefOr[Boolean] = js.native
+    var multipart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that will be called on the returned data. Use any of predefined <code>restler.parsers</code>.
       * @type {any}
       */
-    var parser: js.UndefOr[js.Any] = js.native
+    var parser: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Basic auth password.
       * @type {string}
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * Query string variables as a javascript object, will override the querystring in the URL.
       * @type {any}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
       * An 'error' event is emitted if verification fails. Verification happens at the connection level, before the HTTP request is sent.
       * @type {boolean}
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Emit the timeout event when the response does not return within the said value (in ms).
       * @type {number}
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Basic auth username.
       * @type {string}
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * Options for xml2js.
       * @type {any}
       */
-    var xml2js: js.UndefOr[js.Any] = js.native
+    var xml2js: js.UndefOr[js.Any] = js.undefined
   }
   object RestlerOptions {
     
@@ -249,7 +247,6 @@ object mod extends Shortcut {
     * Interface for restler result.
     * @interface
     */
-  @js.native
   trait RestlerResult extends StObject {
     
     /**
@@ -260,7 +257,7 @@ object mod extends Shortcut {
     def on(
       eventName: String,
       listener: js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]
-    ): RestlerResult = js.native
+    ): RestlerResult
   }
   object RestlerResult {
     
@@ -324,13 +321,13 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def json(url: String): RestlerResult = js.native
-    def json(url: String, data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], method: String): RestlerResult = js.native
-    def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
-    def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions, method: String): RestlerResult = js.native
     def json(url: String, data: js.Any): RestlerResult = js.native
-    def json(url: String, data: js.Any, options: js.UndefOr[scala.Nothing], method: String): RestlerResult = js.native
+    def json(url: String, data: js.Any, options: Unit, method: String): RestlerResult = js.native
     def json(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
     def json(url: String, data: js.Any, options: RestlerOptions, method: String): RestlerResult = js.native
+    def json(url: String, data: Unit, options: Unit, method: String): RestlerResult = js.native
+    def json(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
+    def json(url: String, data: Unit, options: RestlerOptions, method: String): RestlerResult = js.native
     
     /**
       * Create a PATCH request.
@@ -349,9 +346,9 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def patchJson(url: String): RestlerResult = js.native
-    def patchJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
     def patchJson(url: String, data: js.Any): RestlerResult = js.native
     def patchJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def patchJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**
       * Create a POST request.
@@ -370,9 +367,9 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def postJson(url: String): RestlerResult = js.native
-    def postJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
     def postJson(url: String, data: js.Any): RestlerResult = js.native
     def postJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def postJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**
       * Create a PUT request.
@@ -391,9 +388,9 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def putJson(url: String): RestlerResult = js.native
-    def putJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
     def putJson(url: String, data: js.Any): RestlerResult = js.native
     def putJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def putJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**
       * Create a PUT request.

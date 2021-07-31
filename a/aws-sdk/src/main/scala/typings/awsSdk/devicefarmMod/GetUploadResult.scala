@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUploadResult extends StObject {
   
   /**
     * An app or a set of one or more tests to upload or that have been uploaded.
     */
-  var upload: js.UndefOr[Upload] = js.native
+  var upload: js.UndefOr[Upload] = js.undefined
 }
 object GetUploadResult {
   

@@ -3,29 +3,27 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSRect extends StObject {
   
-  var _class: rect = js.native
+  var _class: rect
   
-  var constrainProportions: Boolean = js.native
+  var constrainProportions: Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object SketchMSRect {
   
   @scala.inline
-  def apply(_class: rect, constrainProportions: Boolean, height: Double, width: Double, x: Double, y: Double): SketchMSRect = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], constrainProportions = constrainProportions.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  def apply(constrainProportions: Boolean, height: Double, width: Double, x: Double, y: Double): SketchMSRect = {
+    val __obj = js.Dynamic.literal(_class = "rect", constrainProportions = constrainProportions.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSRect]
   }
   

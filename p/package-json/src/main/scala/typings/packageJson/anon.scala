@@ -3,17 +3,17 @@ package typings.packageJson
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Dictversion extends /* tagName */ StringDictionary[String] {
+  trait Dictversion
+    extends StObject
+       with /* tagName */ StringDictionary[String] {
     
-    val created: String = js.native
+    val created: String
     
-    val modified: String = js.native
+    val modified: String
   }
   object Dictversion {
     
@@ -34,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    val email: js.UndefOr[String] = js.native
+    val email: js.UndefOr[String] = js.undefined
     
-    val url: String = js.native
+    val url: String
   }
   object Email {
     
@@ -63,14 +62,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Integrity extends StObject {
     
-    val integrity: js.UndefOr[String] = js.native
+    val integrity: js.UndefOr[String] = js.undefined
     
-    val shasum: String = js.native
+    val shasum: String
     
-    val tarball: String = js.native
+    val tarball: String
   }
   object Integrity {
     
@@ -97,12 +95,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    val `type`: String = js.native
+    val `type`: String
     
-    val url: String = js.native
+    val url: String
   }
   object Type {
     
@@ -124,12 +121,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    val email: String = js.native
+    val email: String
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object Url {
     

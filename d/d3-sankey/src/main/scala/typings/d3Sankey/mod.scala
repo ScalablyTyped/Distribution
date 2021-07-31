@@ -5,59 +5,54 @@ import typings.d3Sankey.anon.SankeyLinkIndex
 import typings.d3Shape.mod.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-sankey", "sankey")
+  @JSImport("d3-sankey", JSImport.Namespace)
   @js.native
-  def sankey(): SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-sankey", "sankeyCenter")
-  @js.native
-  def sankeyCenter(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = js.native
+  @scala.inline
+  def sankey(): SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object]]
   
-  @JSImport("d3-sankey", "sankeyJustify")
-  @js.native
-  def sankeyJustify(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = js.native
+  @scala.inline
+  def sankeyCenter(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyCenter")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("d3-sankey", "sankeyLeft")
-  @js.native
-  def sankeyLeft(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = js.native
+  @scala.inline
+  def sankeyJustify(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyJustify")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("d3-sankey", "sankeyLinkHorizontal")
-  @js.native
-  def sankeyLinkHorizontal(): Link[_, SankeyLinkIndex, js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-sankey", "sankeyLinkHorizontal")
-  @js.native
-  def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link[_, SankeyLink[N, L], js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def sankeyLeft(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLeft")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("d3-sankey", "sankeyRight")
-  @js.native
-  def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = js.native
+  @scala.inline
+  def sankeyLinkHorizontal(): Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-sankey", "sankey")
-  @js.native
-  def sankey_DataN_SankeyExtraPropertiesL_SankeyExtraProperties[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = js.native
-  @JSImport("d3-sankey", "sankey")
-  @js.native
-  def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = js.native
+  @scala.inline
+  def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
+  
+  @scala.inline
+  def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyRight")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def sankey_DataN_SankeyExtraPropertiesL_SankeyExtraProperties[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[Data, N, L]]
+  
+  @scala.inline
+  def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
   
   type SankeyExtraProperties = StringDictionary[js.Any]
   
-  @js.native
   trait SankeyGraph[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends StObject {
     
     /**
       * Array of Sankey diagram links
       */
-    var links: js.Array[SankeyLink[N, L]] = js.native
+    var links: js.Array[SankeyLink[N, L]]
     
     /**
       * Array of Sankey diagram nodes
       */
-    var nodes: js.Array[SankeyNode[N, L]] = js.native
+    var nodes: js.Array[SankeyNode[N, L]]
   }
   object SankeyGraph {
     
@@ -68,7 +63,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SankeyGraphMutableBuilder[Self <: SankeyGraph[_, _], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self with (SankeyGraph[N, L])) extends AnyVal {
+    implicit class SankeyGraphMutableBuilder[Self <: SankeyGraph[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyGraph[N, L])) extends AnyVal {
       
       @scala.inline
       def setLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
@@ -244,15 +239,14 @@ object mod {
     def update(graph: SankeyGraph[N, L]): SankeyGraph[N, L] = js.native
   }
   
-  type SankeyLink[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] = L with (SankeyLinkMinimal[N, L])
+  type SankeyLink[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] = L & (SankeyLinkMinimal[N, L])
   
-  @js.native
   trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends StObject {
     
     /**
       * Link's zero-based index within the array of links calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's source node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -263,7 +257,7 @@ object mod {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding source node object.
       */
-    var source: Double | String | (SankeyNode[N, L]) = js.native
+    var source: Double | String | (SankeyNode[N, L])
     
     /**
       * Link's target node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -274,27 +268,27 @@ object mod {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding target node object.
       */
-    var target: Double | String | (SankeyNode[N, L]) = js.native
+    var target: Double | String | (SankeyNode[N, L])
     
     /**
       * Link's numeric value
       */
-    var value: Double = js.native
+    var value: Double
     
     /**
       * Link's width (proportional to its value) calculated by Sankey layout generator.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical starting position (at source node) calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical end position (at target node) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyLinkMinimal {
     
@@ -309,7 +303,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SankeyLinkMinimalMutableBuilder[Self <: SankeyLinkMinimal[_, _], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self with (SankeyLinkMinimal[N, L])) extends AnyVal {
+    implicit class SankeyLinkMinimalMutableBuilder[Self <: SankeyLinkMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyLinkMinimal[N, L])) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -346,63 +340,62 @@ object mod {
     }
   }
   
-  type SankeyNode[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] = N with (SankeyNodeMinimal[N, L])
+  type SankeyNode[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] = N & (SankeyNodeMinimal[N, L])
   
-  @js.native
   trait SankeyNodeMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends StObject {
     
     /**
       * Node’s zero-based graph depth, derived from the graph topology calculated by Sankey layout generator.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based graph height, derived from the graph topology calculated by Sankey layout generator.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based index within the array of nodes calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of outgoing links which have this node as their source.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var sourceLinks: js.UndefOr[js.Array[SankeyLink[N, L]]] = js.native
+    var sourceLinks: js.UndefOr[js.Array[SankeyLink[N, L]]] = js.undefined
     
     /**
       * Array of incoming links which have this node as their target.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var targetLinks: js.UndefOr[js.Array[SankeyLink[N, L]]] = js.native
+    var targetLinks: js.UndefOr[js.Array[SankeyLink[N, L]]] = js.undefined
     
     /**
       * Node's value calculated by Sankey layout Generator;
       * the sum of link.value for the node’s incoming links.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum horizontal position (derived from the node.depth) calculated by Sankey layout generator.
       */
-    var x0: js.UndefOr[Double] = js.native
+    var x0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s maximum horizontal position (node.x0 + sankey.nodeWidth) calculated by Sankey layout generator.
       */
-    var x1: js.UndefOr[Double] = js.native
+    var x1: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum vertical position calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's maximum vertical position (node.y1 - node.y0 is proportional to node.value) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyNodeMinimal {
     
@@ -413,7 +406,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SankeyNodeMinimalMutableBuilder[Self <: SankeyNodeMinimal[_, _], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self with (SankeyNodeMinimal[N, L])) extends AnyVal {
+    implicit class SankeyNodeMinimalMutableBuilder[Self <: SankeyNodeMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyNodeMinimal[N, L])) extends AnyVal {
       
       @scala.inline
       def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])

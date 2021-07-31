@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTypedLinkFacetInformationRequest extends StObject {
   
   /**
     * The unique name of the typed link facet.
     */
-  var Name: TypedLinkName = js.native
+  var Name: TypedLinkName
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the schema. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object GetTypedLinkFacetInformationRequest {
   

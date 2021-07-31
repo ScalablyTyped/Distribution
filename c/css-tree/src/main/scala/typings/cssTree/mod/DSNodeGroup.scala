@@ -3,36 +3,29 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSNodeGroup
-  extends DSNode
+  extends StObject
+     with DSNode
      with DSNodeMultiplied {
   
-  var combinator: DSNodeCombinator = js.native
+  var combinator: DSNodeCombinator
   
-  var disallowEmpty: Boolean = js.native
+  var disallowEmpty: Boolean
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var terms: js.Array[DSNode] = js.native
+  var terms: js.Array[DSNode]
   
-  var `type`: Group = js.native
+  var `type`: Group
 }
 object DSNodeGroup {
   
   @scala.inline
-  def apply(
-    combinator: DSNodeCombinator,
-    disallowEmpty: Boolean,
-    explicit: Boolean,
-    terms: js.Array[DSNode],
-    `type`: Group
-  ): DSNodeGroup = {
+  def apply(combinator: DSNodeCombinator, disallowEmpty: Boolean, explicit: Boolean, terms: js.Array[DSNode]): DSNodeGroup = {
     val __obj = js.Dynamic.literal(combinator = combinator.asInstanceOf[js.Any], disallowEmpty = disallowEmpty.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], terms = terms.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Group")
     __obj.asInstanceOf[DSNodeGroup]
   }
   

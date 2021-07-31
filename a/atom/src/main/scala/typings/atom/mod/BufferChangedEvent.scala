@@ -3,29 +3,27 @@ package typings.atom.mod
 import typings.atom.anon.NewRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferChangedEvent extends StObject {
   
   /**
     *  An array of objects summarizing the aggregated changes that occurred
     *  during the transaction.
     */
-  var changes: js.Array[NewRange] = js.native
+  var changes: js.Array[NewRange]
   
   /** Range of the new text. */
-  var newRange: Range = js.native
+  var newRange: Range
   
   /** String containing the text that was inserted. */
-  var newText: String = js.native
+  var newText: String
   
   /** Range of the old text. */
-  var oldRange: Range = js.native
+  var oldRange: Range
   
   /** String containing the text that was replaced. */
-  var oldText: String = js.native
+  var oldText: String
 }
 object BufferChangedEvent {
   

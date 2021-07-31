@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorViewModelProperties extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait EditorViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#allowedWorkflows)
     */
-  var allowedWorkflows: js.UndefOr[js.Array[String]] = js.native
+  var allowedWorkflows: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The [FeatureFormViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html) for supporting the editor widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#featureFormViewModel)
     */
-  var featureFormViewModel: js.UndefOr[FeatureFormViewModelProperties] = js.native
+  var featureFormViewModel: js.UndefOr[FeatureFormViewModelProperties] = js.undefined
   
   /**
     * The [FeatureTemplatesViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html) for supporting the editor widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#featureTemplatesViewModel)
     */
-  var featureTemplatesViewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.native
+  var featureTemplatesViewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.undefined
   
   /**
     * An array of editing configurations for individual layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#layerInfos)
     */
-  var layerInfos: js.UndefOr[js.Array[LayerInfo]] = js.native
+  var layerInfos: js.UndefOr[js.Array[LayerInfo]] = js.undefined
   
   /**
     * The [SketchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html) for supporting the editor widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#sketchViewModel)
     */
-  var sketchViewModel: js.UndefOr[SketchViewModelProperties] = js.native
+  var sketchViewModel: js.UndefOr[SketchViewModelProperties] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object EditorViewModelProperties {
   

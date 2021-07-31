@@ -4,7 +4,6 @@ import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ElementEvents")
@@ -31,18 +30,13 @@ class ElementEvents protected () extends StObject {
     * @param cancelable
     */
   def publish(eventName: String): js.Any = js.native
-  def publish(
-    eventName: String,
-    detail: js.UndefOr[scala.Nothing],
-    bubbles: js.UndefOr[scala.Nothing],
-    cancelable: Boolean
-  ): js.Any = js.native
-  def publish(eventName: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean): js.Any = js.native
-  def publish(eventName: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean, cancelable: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object): js.Any = js.native
-  def publish(eventName: String, detail: js.Object, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object, bubbles: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object, bubbles: Boolean, cancelable: Boolean): js.Any = js.native
+  def publish(eventName: String, detail: js.Object, bubbles: Unit, cancelable: Boolean): js.Any = js.native
+  def publish(eventName: String, detail: Unit, bubbles: Boolean): js.Any = js.native
+  def publish(eventName: String, detail: Unit, bubbles: Boolean, cancelable: Boolean): js.Any = js.native
+  def publish(eventName: String, detail: Unit, bubbles: Unit, cancelable: Boolean): js.Any = js.native
   
   /**
     * Adds and Event Listener on the context element.

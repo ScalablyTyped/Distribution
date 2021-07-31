@@ -2,26 +2,24 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderField extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var IsDescending: Boolean = js.native
+  var IsDescending: Boolean
   
   @JSName("Outlook.OrderField_typekey")
-  var OutlookDotOrderField_typekey: OrderField = js.native
+  var OutlookDotOrderField_typekey: OrderField
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val ViewXMLSchemaName: String = js.native
+  val ViewXMLSchemaName: String
 }
 object OrderField {
   

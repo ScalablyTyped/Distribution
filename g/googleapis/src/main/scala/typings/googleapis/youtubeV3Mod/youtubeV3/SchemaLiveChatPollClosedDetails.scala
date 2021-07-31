@@ -2,16 +2,14 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatPollClosedDetails extends StObject {
   
   /**
     * The id of the poll that was closed.
     */
-  var pollId: js.UndefOr[String] = js.native
+  var pollId: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveChatPollClosedDetails {
   

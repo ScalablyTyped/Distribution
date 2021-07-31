@@ -2,32 +2,31 @@ package typings.genyusCountryCode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@genyus/country-code", "find")
+  @JSImport("@genyus/country-code", JSImport.Namespace)
   @js.native
-  def find(opts: Options): js.UndefOr[Country] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@genyus/country-code", "nameIncludes")
-  @js.native
-  def nameIncludes(name: String): js.Array[Country] = js.native
-  @JSImport("@genyus/country-code", "nameIncludes")
-  @js.native
-  def nameIncludes(name: String, opts: Options): js.Array[Country] = js.native
+  @scala.inline
+  def find(opts: Options): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(opts.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @js.native
+  @scala.inline
+  def nameIncludes(name: String): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameIncludes")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
+  @scala.inline
+  def nameIncludes(name: String, opts: Options): js.Array[Country] = (^.asInstanceOf[js.Dynamic].applyDynamic("nameIncludes")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Country]]
+  
   trait Country extends StObject {
     
-    val alpha2: String = js.native
+    val alpha2: String
     
-    val alpha3: String = js.native
+    val alpha3: String
     
-    var isoNumeric: String = js.native
+    var isoNumeric: String
     
-    val name: String = js.native
+    val name: String
   }
   object Country {
     
@@ -54,16 +53,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * number from 0 - 1, a percentage of accuracy for the search
       * @default 1
       */
-    var accuracy: js.UndefOr[Double] = js.native
+    var accuracy: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Options {
     

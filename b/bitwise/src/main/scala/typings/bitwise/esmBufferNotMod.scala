@@ -3,12 +3,14 @@ package typings.bitwise
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmBufferNotMod {
   
-  @JSImport("bitwise/esm/buffer/not", JSImport.Default)
+  @JSImport("bitwise/esm/buffer/not", JSImport.Namespace)
   @js.native
-  def default(buffer: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.itemimported
 import typings.winrtUwp.winrtUwpStrings.selectionchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a operation that finds media items on a source. */
 @js.native
 trait PhotoImportFindItemsResult extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_itemimported(
     `type`: itemimported,
@@ -45,13 +44,13 @@ trait PhotoImportFindItemsResult extends StObject {
   var importMode: PhotoImportImportMode = js.native
   
   /** Occurs when an item is imported. */
-  def onitemimported(ev: PhotoImportItemImportedEventArgs with WinRTEvent[PhotoImportFindItemsResult]): Unit = js.native
+  def onitemimported(ev: PhotoImportItemImportedEventArgs & WinRTEvent[PhotoImportFindItemsResult]): Unit = js.native
   /** Occurs when an item is imported. */
   @JSName("onitemimported")
   var onitemimported_Original: TypedEventHandler[PhotoImportFindItemsResult, PhotoImportItemImportedEventArgs] = js.native
   
   /** Occurs when the set of items selected to be included in the ImportItemsAsync operation changes. */
-  def onselectionchanged(ev: PhotoImportSelectionChangedEventArgs with WinRTEvent[PhotoImportFindItemsResult]): Unit = js.native
+  def onselectionchanged(ev: PhotoImportSelectionChangedEventArgs & WinRTEvent[PhotoImportFindItemsResult]): Unit = js.native
   /** Occurs when the set of items selected to be included in the ImportItemsAsync operation changes. */
   @JSName("onselectionchanged")
   var onselectionchanged_Original: TypedEventHandler[PhotoImportFindItemsResult, PhotoImportSelectionChangedEventArgs] = js.native
@@ -62,7 +61,7 @@ trait PhotoImportFindItemsResult extends StObject {
   /** Gets the size of the photos found on the source, in bytes. */
   var photosSizeInBytes: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_itemimported(
     `type`: itemimported,

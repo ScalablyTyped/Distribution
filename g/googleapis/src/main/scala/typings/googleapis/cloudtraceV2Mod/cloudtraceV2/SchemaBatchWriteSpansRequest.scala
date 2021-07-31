@@ -2,20 +2,18 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for the `BatchWriteSpans` method.
   */
-@js.native
 trait SchemaBatchWriteSpansRequest extends StObject {
   
   /**
     * A list of new spans. The span names must not match existing spans, or the
     * results are undefined.
     */
-  var spans: js.UndefOr[js.Array[SchemaSpan]] = js.native
+  var spans: js.UndefOr[js.Array[SchemaSpan]] = js.undefined
 }
 object SchemaBatchWriteSpansRequest {
   

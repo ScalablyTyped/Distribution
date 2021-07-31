@@ -3,14 +3,14 @@ package typings.googleMaps.mod
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateClientOptionsWithPromise extends CreateClientOptions {
+trait CreateClientOptionsWithPromise
+  extends StObject
+     with CreateClientOptions {
   
   /** Promise constructor */
-  var Promise: PromiseConstructor = js.native
+  var Promise: PromiseConstructor
 }
 object CreateClientOptionsWithPromise {
   

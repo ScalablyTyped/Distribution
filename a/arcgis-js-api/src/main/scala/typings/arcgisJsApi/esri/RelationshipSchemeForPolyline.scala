@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipSchemeForPolyline
-  extends Object
+  extends StObject
+     with Object
      with RelationshipScheme {
   
   /**
@@ -17,49 +16,49 @@ trait RelationshipSchemeForPolyline
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var colorsForClassBreaks: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks]
   
   /**
     * The ID uniquely identifying the color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the line symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the line symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * The width of the line symbol in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolyline)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object RelationshipSchemeForPolyline {
   

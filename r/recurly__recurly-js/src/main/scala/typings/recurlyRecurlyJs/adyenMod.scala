@@ -3,7 +3,6 @@ package typings.recurlyRecurlyJs
 import typings.recurlyRecurlyJs.emitterMod.Emitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adyenMod {
@@ -25,7 +24,9 @@ object adyenMod {
   }
   
   @js.native
-  trait AdyenInstance extends Emitter[AdyenEvent] {
+  trait AdyenInstance
+    extends StObject
+       with Emitter[AdyenEvent] {
     
     /**
       * Invokes the Adyen Payment Modal
@@ -33,28 +34,27 @@ object adyenMod {
     def start(adyenOptions: AdyenOptions): Unit = js.native
   }
   
-  @js.native
   trait AdyenOptions extends StObject {
     
     /**
       * 2 Digit Country Code
       */
-    var countryCode: js.UndefOr[String] = js.native
+    var countryCode: js.UndefOr[String] = js.undefined
     
     /**
       * Invoice Uuid from PendingPurchase
       */
-    var invoiceUuid: String = js.native
+    var invoiceUuid: String
     
     /**
       * Shopper locale for Payment Modal
       */
-    var shopperLocale: js.UndefOr[String] = js.native
+    var shopperLocale: js.UndefOr[String] = js.undefined
     
     /**
       * Skin code provided by Adyen
       */
-    var skinCode: js.UndefOr[String] = js.native
+    var skinCode: js.UndefOr[String] = js.undefined
   }
   object AdyenOptions {
     

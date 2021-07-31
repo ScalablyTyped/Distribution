@@ -2,36 +2,34 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Read-replica configuration specific to MySQL databases.
   */
-@js.native
 trait SchemaMySqlReplicaConfiguration extends StObject {
   
   /**
     * PEM representation of the trusted CA&#39;s x509 certificate.
     */
-  var caCertificate: js.UndefOr[String] = js.native
+  var caCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * PEM representation of the slave&#39;s x509 certificate.
     */
-  var clientCertificate: js.UndefOr[String] = js.native
+  var clientCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * PEM representation of the slave&#39;s private key. The corresponsing
     * public key is encoded in the client&#39;s certificate.
     */
-  var clientKey: js.UndefOr[String] = js.native
+  var clientKey: js.UndefOr[String] = js.undefined
   
   /**
     * Seconds to wait between connect retries. MySQL&#39;s default is 60
     * seconds.
     */
-  var connectRetryInterval: js.UndefOr[Double] = js.native
+  var connectRetryInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Path to a SQL dump file in Google Cloud Storage from which the slave
@@ -41,38 +39,38 @@ trait SchemaMySqlReplicaConfiguration extends StObject {
     * begin. This can be accomplished by setting --master-data to 1 when using
     * mysqldump.
     */
-  var dumpFilePath: js.UndefOr[String] = js.native
+  var dumpFilePath: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#mysqlReplicaConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Interval in milliseconds between replication heartbeats.
     */
-  var masterHeartbeatPeriod: js.UndefOr[String] = js.native
+  var masterHeartbeatPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * The password for the replication connection.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * A list of permissible ciphers to use for SSL encryption.
     */
-  var sslCipher: js.UndefOr[String] = js.native
+  var sslCipher: js.UndefOr[String] = js.undefined
   
   /**
     * The username for the replication connection.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to check the master&#39;s Common Name value in the
     * certificate that it sends during the SSL handshake.
     */
-  var verifyServerCertificate: js.UndefOr[Boolean] = js.native
+  var verifyServerCertificate: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMySqlReplicaConfiguration {
   

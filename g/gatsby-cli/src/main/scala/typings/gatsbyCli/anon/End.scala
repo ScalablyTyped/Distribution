@@ -3,15 +3,13 @@ package typings.gatsbyCli.anon
 import typings.gatsbyCli.structuredErrorsTypesMod.ILocationPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: js.UndefOr[ILocationPosition] = js.native
+  var end: js.UndefOr[ILocationPosition] = js.undefined
   
-  var start: ILocationPosition = js.native
+  var start: ILocationPosition
 }
 object End {
   

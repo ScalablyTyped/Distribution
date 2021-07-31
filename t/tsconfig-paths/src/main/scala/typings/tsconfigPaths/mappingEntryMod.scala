@@ -3,21 +3,22 @@ package typings.tsconfigPaths
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mappingEntryMod {
   
-  @JSImport("tsconfig-paths/lib/mapping-entry", "getAbsoluteMappingEntries")
+  @JSImport("tsconfig-paths/lib/mapping-entry", JSImport.Namespace)
   @js.native
-  def getAbsoluteMappingEntries(absoluteBaseUrl: String, paths: Paths, addMatchAll: Boolean): js.Array[MappingEntry] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAbsoluteMappingEntries(absoluteBaseUrl: String, paths: Paths, addMatchAll: Boolean): js.Array[MappingEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteMappingEntries")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[js.Array[MappingEntry]]
+  
   trait MappingEntry extends StObject {
     
-    val paths: js.Array[String] = js.native
+    val paths: js.Array[String]
     
-    val pattern: String = js.native
+    val pattern: String
   }
   object MappingEntry {
     

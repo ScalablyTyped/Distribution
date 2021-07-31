@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersShipLineItemsRequest extends StObject {
   
   /** Line items to ship. */
-  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
   
   /** The ID of the operation. Unique across all operations for a given order. */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /** ID of the shipment group. Required for orders that use the orderinvoices service. */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
   
   /** Shipment information. This field is repeated because a single line item can be shipped in several packages (and have several tracking IDs). */
-  var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.native
+  var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.undefined
 }
 object OrdersShipLineItemsRequest {
   

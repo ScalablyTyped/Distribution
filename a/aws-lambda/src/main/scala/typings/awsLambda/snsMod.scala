@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snsMod {
   
-  @js.native
   trait SNSEvent extends StObject {
     
-    var Records: js.Array[SNSEventRecord] = js.native
+    var Records: js.Array[SNSEventRecord]
   }
   object SNSEvent {
     
@@ -33,16 +31,15 @@ object snsMod {
     }
   }
   
-  @js.native
   trait SNSEventRecord extends StObject {
     
-    var EventSource: String = js.native
+    var EventSource: String
     
-    var EventSubscriptionArn: String = js.native
+    var EventSubscriptionArn: String
     
-    var EventVersion: String = js.native
+    var EventVersion: String
     
-    var Sns: SNSMessage = js.native
+    var Sns: SNSMessage
   }
   object SNSEventRecord {
     
@@ -71,30 +68,29 @@ object snsMod {
   
   type SNSHandler = Handler[SNSEvent, Unit]
   
-  @js.native
   trait SNSMessage extends StObject {
     
-    var Message: String = js.native
+    var Message: String
     
-    var MessageAttributes: SNSMessageAttributes = js.native
+    var MessageAttributes: SNSMessageAttributes
     
-    var MessageId: String = js.native
+    var MessageId: String
     
-    var Signature: String = js.native
+    var Signature: String
     
-    var SignatureVersion: String = js.native
+    var SignatureVersion: String
     
-    var SigningCertUrl: String = js.native
+    var SigningCertUrl: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var Timestamp: String = js.native
+    var Timestamp: String
     
-    var TopicArn: String = js.native
+    var TopicArn: String
     
-    var Type: String = js.native
+    var Type: String
     
-    var UnsubscribeUrl: String = js.native
+    var UnsubscribeUrl: String
   }
   object SNSMessage {
     
@@ -154,12 +150,11 @@ object snsMod {
     }
   }
   
-  @js.native
   trait SNSMessageAttribute extends StObject {
     
-    var Type: String = js.native
+    var Type: String
     
-    var Value: String = js.native
+    var Value: String
   }
   object SNSMessageAttribute {
     

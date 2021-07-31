@@ -10,9 +10,9 @@ Sørensen–Dice coefficient
 | ------------------ | :-------------: |
 | Full name          | dice-coefficient |
 | Keywords           | sorensen, index, dice, coefficient, cli, bin, string, comparison, difference |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 23703 |
+| # downloads        | 19047 |
 | # stars            | 2 |
 
 ## Links

@@ -8,12 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.round
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LineSymbol3DLayer
-  extends Symbol3DLayer
+  extends StObject
+     with Symbol3DLayer
      with typings.arcgisJsApi.esri.symbols.Symbol3DLayer
      with symbolsSymbol3DLayer {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceLinkedRoleDeletionStatusResponse extends StObject {
   
   /**
     * An object that contains details about the reason the deletion failed.
     */
-  var Reason: js.UndefOr[DeletionTaskFailureReasonType] = js.native
+  var Reason: js.UndefOr[DeletionTaskFailureReasonType] = js.undefined
   
   /**
     * The status of the deletion.
     */
-  var Status: DeletionTaskStatusType = js.native
+  var Status: DeletionTaskStatusType
 }
 object GetServiceLinkedRoleDeletionStatusResponse {
   

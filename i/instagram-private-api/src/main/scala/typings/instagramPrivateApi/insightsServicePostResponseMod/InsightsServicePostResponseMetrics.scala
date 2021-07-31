@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.insightsServicePostResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServicePostResponseMetrics extends StObject {
   
-  var hashtags_impressions: InsightsServicePostResponseHashtagsImpressions = js.native
+  var hashtags_impressions: InsightsServicePostResponseHashtagsImpressions
   
-  var impression_count: Double = js.native
+  var impression_count: Double
   
-  var impressions: InsightsServicePostResponseImpressions = js.native
+  var impressions: InsightsServicePostResponseImpressions
   
-  var owner_account_follows_count: Double = js.native
+  var owner_account_follows_count: Double
   
-  var owner_profile_views_count: Double = js.native
+  var owner_profile_views_count: Double
   
-  var profile_actions: InsightsServicePostResponseProfileActions = js.native
+  var profile_actions: InsightsServicePostResponseProfileActions
   
-  var reach: InsightsServicePostResponseReach = js.native
+  var reach: InsightsServicePostResponseReach
   
-  var reach_count: Double = js.native
+  var reach_count: Double
   
-  var share_count: InsightsServicePostResponseShareCount = js.native
+  var share_count: InsightsServicePostResponseShareCount
 }
 object InsightsServicePostResponseMetrics {
   

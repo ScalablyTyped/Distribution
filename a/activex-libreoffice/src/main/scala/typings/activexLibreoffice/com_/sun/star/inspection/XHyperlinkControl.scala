@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XActionListener
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Hyperlink controls exchange their value ( {@link XPropertyControl.Value} ) as strings.
   * @since OOo 2.0.3
   */
-@js.native
-trait XHyperlinkControl extends XPropertyControl {
+trait XHyperlinkControl
+  extends StObject
+     with XPropertyControl {
   
   /**
     * adds a listener which will be notified when the user clicked the hyperlink text in the control
     * @param listener the listener to notify of hyperlink clicks
     */
-  def addActionListener(listener: XActionListener): Unit = js.native
+  def addActionListener(listener: XActionListener): Unit
   
   /**
     * removes a listener which was previously added via {@link addActionListener()}
     * @param listener the listener to revoke
     */
-  def removeActionListener(listener: XActionListener): Unit = js.native
+  def removeActionListener(listener: XActionListener): Unit
 }
 object XHyperlinkControl {
   

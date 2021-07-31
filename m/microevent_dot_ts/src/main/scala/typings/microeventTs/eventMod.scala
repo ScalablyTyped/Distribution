@@ -4,17 +4,20 @@ import typings.microeventTs.eventInterfaceMod.EventInterface
 import typings.microeventTs.eventInterfaceMod.EventInterface.HandlerInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
   @JSImport("microevent/lib/Event", JSImport.Default)
   @js.native
-  class default[EventPayload] () extends Event[EventPayload]
+  class default[EventPayload] ()
+    extends StObject
+       with Event[EventPayload]
   
   @js.native
-  trait Event[EventPayload] extends EventInterface[EventPayload] {
+  trait Event[EventPayload]
+    extends StObject
+       with EventInterface[EventPayload] {
     
     var _contexts: js.Any = js.native
     

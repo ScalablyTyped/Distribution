@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Example. */
-@js.native
 trait Example extends StObject {
   
   /** The timestamp for creation of the object. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** An array of contextual entity mentions. */
-  var mentions: js.UndefOr[js.Array[Mention]] = js.native
+  var mentions: js.UndefOr[js.Array[Mention]] = js.undefined
   
   /** The text of a user input example. This string must conform to the following restrictions: - It cannot contain carriage return, newline, or tab characters. - It cannot consist of only whitespace characters. - It must be no longer than 1024 characters. */
-  var text: String = js.native
+  var text: String
   
   /** The timestamp for the most recent update to the object. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Example {
   

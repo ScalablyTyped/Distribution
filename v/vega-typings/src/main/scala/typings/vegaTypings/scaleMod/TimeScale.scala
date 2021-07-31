@@ -5,18 +5,17 @@ import typings.vegaTypings.vegaTypingsStrings.time
 import typings.vegaTypings.vegaTypingsStrings.utc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeScale
-  extends ContinuousScale
+  extends StObject
+     with ContinuousScale
      with Scale {
   
-  var nice: js.UndefOr[Boolean | TimeInterval | TimeIntervalStep | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | TimeInterval | TimeIntervalStep | SignalRef] = js.undefined
   
   @JSName("type")
-  var type_TimeScale: time | utc = js.native
+  var type_TimeScale: time | utc
 }
 object TimeScale {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThingRegistrationTaskResponse extends StObject {
   
   /**
     * The task creation date.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The number of things that failed to be provisioned.
     */
-  var failureCount: js.UndefOr[Count] = js.native
+  var failureCount: js.UndefOr[Count] = js.undefined
   
   /**
     * The S3 bucket that contains the input file.
     */
-  var inputFileBucket: js.UndefOr[RegistryS3BucketName] = js.native
+  var inputFileBucket: js.UndefOr[RegistryS3BucketName] = js.undefined
   
   /**
     * The input file key.
     */
-  var inputFileKey: js.UndefOr[RegistryS3KeyName] = js.native
+  var inputFileKey: js.UndefOr[RegistryS3KeyName] = js.undefined
   
   /**
     * The date when the task was last modified.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
   
   /**
     * The message.
     */
-  var message: js.UndefOr[ErrorMessage] = js.native
+  var message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The progress of the bulk provisioning task expressed as a percentage.
     */
-  var percentageProgress: js.UndefOr[Percentage] = js.native
+  var percentageProgress: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The role ARN that grants access to the input file bucket.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The status of the bulk thing provisioning task.
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     * The number of things successfully provisioned.
     */
-  var successCount: js.UndefOr[Count] = js.native
+  var successCount: js.UndefOr[Count] = js.undefined
   
   /**
     * The task ID.
     */
-  var taskId: js.UndefOr[TaskId] = js.native
+  var taskId: js.UndefOr[TaskId] = js.undefined
   
   /**
     * The task's template.
     */
-  var templateBody: js.UndefOr[TemplateBody] = js.native
+  var templateBody: js.UndefOr[TemplateBody] = js.undefined
 }
 object DescribeThingRegistrationTaskResponse {
   

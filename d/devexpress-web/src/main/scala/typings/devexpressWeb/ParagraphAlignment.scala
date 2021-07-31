@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,31 @@ object ParagraphAlignment extends StObject {
     * Text is aligned to the center of the paragraph.
     */
   @js.native
-  sealed trait Center extends ParagraphAlignment
+  sealed trait Center
+    extends StObject
+       with ParagraphAlignment
   
   /**
     * Text is justified to the entire width of the paragraph.
     */
   @js.native
-  sealed trait Justify extends ParagraphAlignment
+  sealed trait Justify
+    extends StObject
+       with ParagraphAlignment
   
   /**
     * Text is aligned to the left of the paragraph.
     */
   @js.native
-  sealed trait Left extends ParagraphAlignment
+  sealed trait Left
+    extends StObject
+       with ParagraphAlignment
   
   /**
     * Text is aligned to the right of the paragraph.
     */
   @js.native
-  sealed trait Right extends ParagraphAlignment
+  sealed trait Right
+    extends StObject
+       with ParagraphAlignment
 }

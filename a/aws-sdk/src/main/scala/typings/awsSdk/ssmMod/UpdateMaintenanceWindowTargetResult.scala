@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMaintenanceWindowTargetResult extends StObject {
   
   /**
     * The updated description.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   
   /**
     * The updated name.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * The updated owner.
     */
-  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.native
+  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
   /**
     * The updated targets.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The maintenance window ID specified in the update request.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   
   /**
     * The target ID specified in the update request.
     */
-  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.native
+  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.undefined
 }
 object UpdateMaintenanceWindowTargetResult {
   

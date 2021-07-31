@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerFormData extends StObject {
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of powerform recipients.
     */
-  var recipients: js.UndefOr[js.Array[PowerFormFormDataRecipient]] = js.native
+  var recipients: js.UndefOr[js.Array[PowerFormFormDataRecipient]] = js.undefined
 }
 object PowerFormData {
   

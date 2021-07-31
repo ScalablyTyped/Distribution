@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileDownloadSession extends StObject {
   
-  val DownloadID: Double = js.native
+  val DownloadID: Double
   
-  val FileSize: Double = js.native
+  val FileSize: Double
   
-  val FileSize32: Double = js.native
+  val FileSize32: Double
 }
 object IFileDownloadSession {
   

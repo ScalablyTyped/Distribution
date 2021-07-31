@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated to show a specified time frame on the user’s calendar. */
-@js.native
 trait AppointmentsProviderShowTimeFrameActivatedEventArgs extends StObject {
   
   /** Gets the duration of the time frame to be shown. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object, which provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the starting date and time of the time frame to be shown. */
-  var timeToShow: Date = js.native
+  var timeToShow: Date
   
   /** Gets the action to be performed by the appointments provider. */
-  var verb: String = js.native
+  var verb: String
 }
 object AppointmentsProviderShowTimeFrameActivatedEventArgs {
   

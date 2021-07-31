@@ -2,27 +2,25 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @js.native
   trait EmitterAugmentation1[Name /* <: String | js.Symbol */, Arg] extends StObject {
     
-    def addListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def addListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
     
-    def emit(event: Name, arg1: Arg): Boolean = js.native
+    def emit(event: Name, arg1: Arg): Boolean
     
-    def on(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def on(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
     
-    def once(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def once(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
     
-    def prependListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def prependListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
     
-    def prependOnceListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def prependOnceListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
     
-    def removeListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type = js.native
+    def removeListener(event: Name, listener: js.Function1[/* arg1 */ Arg, Unit]): this.type
   }
   object EmitterAugmentation1 {
     
@@ -41,7 +39,7 @@ object eventsMod {
     }
     
     @scala.inline
-    implicit class EmitterAugmentation1MutableBuilder[Self <: EmitterAugmentation1[_, _], Name /* <: String | js.Symbol */, Arg] (val x: Self with (EmitterAugmentation1[Name, Arg])) extends AnyVal {
+    implicit class EmitterAugmentation1MutableBuilder[Self <: EmitterAugmentation1[?, ?], Name /* <: String | js.Symbol */, Arg] (val x: Self & (EmitterAugmentation1[Name, Arg])) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))

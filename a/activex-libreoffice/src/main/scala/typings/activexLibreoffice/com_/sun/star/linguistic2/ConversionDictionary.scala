@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XConversionPropertyType
   * @since OOo 1.1.2
   */
-@js.native
 trait ConversionDictionary
-  extends XConversionDictionary
+  extends StObject
+     with XConversionDictionary
      with XFlushable
      with XConversionPropertyType
 object ConversionDictionary {

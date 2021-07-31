@@ -4,12 +4,14 @@ import typings.std.IterableIterator
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iterableMod {
   
-  @JSImport("mobx/lib/utils/iterable", "makeIterable")
+  @JSImport("mobx/lib/utils/iterable", JSImport.Namespace)
   @js.native
-  def makeIterable[T](iterator: Iterator[T, _, js.UndefOr[scala.Nothing]]): IterableIterator[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makeIterable[T](iterator: Iterator[T, js.Any, Unit]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeIterable")(iterator.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
 }

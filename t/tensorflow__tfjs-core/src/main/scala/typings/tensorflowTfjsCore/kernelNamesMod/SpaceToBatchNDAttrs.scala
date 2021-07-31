@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpaceToBatchNDAttrs extends StObject {
   
-  var blockShape: js.Array[Double] = js.native
+  var blockShape: js.Array[Double]
   
-  var paddings: js.Array[js.Array[Double]] = js.native
+  var paddings: js.Array[js.Array[Double]]
 }
 object SpaceToBatchNDAttrs {
   

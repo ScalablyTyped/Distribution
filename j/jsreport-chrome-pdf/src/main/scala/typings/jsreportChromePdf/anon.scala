@@ -14,21 +14,19 @@ import typings.jsreportChromePdf.jsreportChromePdfStrings.print
 import typings.jsreportChromePdf.jsreportChromePdfStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[String | Double] = js.native
+    var bottom: js.UndefOr[String | Double] = js.undefined
     
-    var left: js.UndefOr[String | Double] = js.native
+    var left: js.UndefOr[String | Double] = js.undefined
     
-    var right: js.UndefOr[String | Double] = js.native
+    var right: js.UndefOr[String | Double] = js.undefined
     
-    var top: js.UndefOr[String | Double] = js.native
+    var top: js.UndefOr[String | Double] = js.undefined
   }
   object Bottom {
     
@@ -67,16 +65,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -104,56 +101,55 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-chrome-pdf.jsreport-chrome-pdf.Chrome> */
-  @js.native
   trait PartialChrome extends StObject {
     
-    var displayHeaderFooter: js.UndefOr[Boolean] = js.native
+    var displayHeaderFooter: js.UndefOr[Boolean] = js.undefined
     
-    var footerTemplate: js.UndefOr[String] = js.native
+    var footerTemplate: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var landscape: js.UndefOr[Boolean] = js.native
+    var landscape: js.UndefOr[Boolean] = js.undefined
     
-    var margin: js.UndefOr[Bottom] = js.native
+    var margin: js.UndefOr[Bottom] = js.undefined
     
-    var marginBottom: js.UndefOr[String | Double] = js.native
+    var marginBottom: js.UndefOr[String | Double] = js.undefined
     
-    var marginLeft: js.UndefOr[String | Double] = js.native
+    var marginLeft: js.UndefOr[String | Double] = js.undefined
     
-    var marginRight: js.UndefOr[String | Double] = js.native
+    var marginRight: js.UndefOr[String | Double] = js.undefined
     
-    var marginTop: js.UndefOr[String | Double] = js.native
+    var marginTop: js.UndefOr[String | Double] = js.undefined
     
-    var mediaType: js.UndefOr[screen | print] = js.native
+    var mediaType: js.UndefOr[screen | print] = js.undefined
     
-    var pageNumber: js.UndefOr[Double] = js.native
+    var pageNumber: js.UndefOr[Double] = js.undefined
     
-    var pageRanges: js.UndefOr[String] = js.native
+    var pageRanges: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var preferCSSPageSize: js.UndefOr[Boolean] = js.native
+    var preferCSSPageSize: js.UndefOr[Boolean] = js.undefined
     
-    var printBackground: js.UndefOr[Boolean] = js.native
+    var printBackground: js.UndefOr[Boolean] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var totalPages: js.UndefOr[Double] = js.native
+    var totalPages: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var waitForJS: js.UndefOr[Boolean] = js.native
+    var waitForJS: js.UndefOr[Boolean] = js.undefined
     
-    var waitForNetworkIddle: js.UndefOr[Boolean] = js.native
+    var waitForNetworkIddle: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object PartialChrome {
     
@@ -313,22 +309,21 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-chrome-pdf.jsreport-chrome-pdf.ChromeImage> */
-  @js.native
   trait PartialChromeImage extends StObject {
     
-    var clip: js.UndefOr[Height] = js.native
+    var clip: js.UndefOr[Height] = js.undefined
     
-    var encoding: js.UndefOr[base64 | binary] = js.native
+    var encoding: js.UndefOr[base64 | binary] = js.undefined
     
-    var fullPage: js.UndefOr[Boolean] = js.native
+    var fullPage: js.UndefOr[Boolean] = js.undefined
     
-    var omitBackground: js.UndefOr[Boolean] = js.native
+    var omitBackground: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[jpeg | png] = js.native
+    var `type`: js.UndefOr[jpeg | png] = js.undefined
   }
   object PartialChromeImage {
     
@@ -386,44 +381,43 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-chrome-pdf.jsreport-chrome-pdf.LaunchOptions> */
-  @js.native
   trait PartialLaunchOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var defaultViewport: js.UndefOr[Partialwidthstringheights] = js.native
+    var defaultViewport: js.UndefOr[Partialwidthstringheights] = js.undefined
     
-    var devtools: js.UndefOr[Boolean] = js.native
+    var devtools: js.UndefOr[Boolean] = js.undefined
     
-    var dumpio: js.UndefOr[Boolean] = js.native
+    var dumpio: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[StringDictionary[String]] = js.native
+    var env: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var executablePath: js.UndefOr[String] = js.native
+    var executablePath: js.UndefOr[String] = js.undefined
     
-    var extraPrefsFirefox: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var extraPrefsFirefox: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var handleSIGHUP: js.UndefOr[Boolean] = js.native
+    var handleSIGHUP: js.UndefOr[Boolean] = js.undefined
     
-    var handleSIGINT: js.UndefOr[Boolean] = js.native
+    var handleSIGINT: js.UndefOr[Boolean] = js.undefined
     
-    var handleSIGTERM: js.UndefOr[Boolean] = js.native
+    var handleSIGTERM: js.UndefOr[Boolean] = js.undefined
     
-    var headless: js.UndefOr[Boolean] = js.native
+    var headless: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.native
+    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
     
-    var pipe: js.UndefOr[Boolean] = js.native
+    var pipe: js.UndefOr[Boolean] = js.undefined
     
-    var product: js.UndefOr[chrome | firefox] = js.native
+    var product: js.UndefOr[chrome | firefox] = js.undefined
     
-    var slowMo: js.UndefOr[Double] = js.native
+    var slowMo: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var userDataDir: js.UndefOr[String] = js.native
+    var userDataDir: js.UndefOr[String] = js.undefined
   }
   object PartialLaunchOptions {
     
@@ -553,26 +547,25 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-chrome-pdf.jsreport-chrome-pdf.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var allowLocalFilesAccess: js.UndefOr[Boolean] = js.native
+    var allowLocalFilesAccess: js.UndefOr[Boolean] = js.undefined
     
-    var allowedModules: js.UndefOr[js.Array[String]] = js.native
+    var allowedModules: js.UndefOr[js.Array[String]] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var launchOptions: js.UndefOr[PartialLaunchOptions] = js.native
+    var launchOptions: js.UndefOr[PartialLaunchOptions] = js.undefined
     
-    var numberOfWorkers: js.UndefOr[Double] = js.native
+    var numberOfWorkers: js.UndefOr[Double] = js.undefined
     
-    var portLeftBoundary: js.UndefOr[Double] = js.native
+    var portLeftBoundary: js.UndefOr[Double] = js.undefined
     
-    var portRightBoundary: js.UndefOr[Double] = js.native
+    var portRightBoundary: js.UndefOr[Double] = js.undefined
     
-    var strategy: js.UndefOr[`dedicated-process` | `http-server` | `in-process`] = js.native
+    var strategy: js.UndefOr[`dedicated-process` | `http-server` | `in-process`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     
@@ -645,20 +638,19 @@ object anon {
   }
   
   /* Inlined std.Partial<{  width :string,   height :string,   deviceScaleFactor :string,   isMobile :boolean,   hasTouch :boolean,   isLandscape :boolean}> */
-  @js.native
   trait Partialwidthstringheights extends StObject {
     
-    var deviceScaleFactor: js.UndefOr[String] = js.native
+    var deviceScaleFactor: js.UndefOr[String] = js.undefined
     
-    var hasTouch: js.UndefOr[Boolean] = js.native
+    var hasTouch: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var isLandscape: js.UndefOr[Boolean] = js.native
+    var isLandscape: js.UndefOr[Boolean] = js.undefined
     
-    var isMobile: js.UndefOr[Boolean] = js.native
+    var isMobile: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Partialwidthstringheights {
     

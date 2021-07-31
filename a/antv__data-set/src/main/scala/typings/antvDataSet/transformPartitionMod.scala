@@ -2,17 +2,15 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformPartitionMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var groupBy: js.Array[String] = js.native
+    var groupBy: js.Array[String]
     
-    var orderBy: js.UndefOr[js.Array[String]] = js.native
+    var orderBy: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

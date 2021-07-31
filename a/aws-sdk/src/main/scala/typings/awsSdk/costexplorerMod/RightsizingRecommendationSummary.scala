@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightsizingRecommendationSummary extends StObject {
   
   /**
     *  Estimated total savings resulting from modifications, on a monthly basis.
     */
-  var EstimatedTotalMonthlySavingsAmount: js.UndefOr[GenericString] = js.native
+  var EstimatedTotalMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The currency code that AWS used to calculate the savings.
     */
-  var SavingsCurrencyCode: js.UndefOr[GenericString] = js.native
+  var SavingsCurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Savings percentage based on the recommended modifications, relative to the total On-Demand costs associated with these instances.
     */
-  var SavingsPercentage: js.UndefOr[GenericString] = js.native
+  var SavingsPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Total number of instance recommendations.
     */
-  var TotalRecommendationCount: js.UndefOr[GenericString] = js.native
+  var TotalRecommendationCount: js.UndefOr[GenericString] = js.undefined
 }
 object RightsizingRecommendationSummary {
   

@@ -2,65 +2,65 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MacOSCompliancePolicy extends DeviceCompliancePolicy {
+trait MacOSCompliancePolicy
+  extends StObject
+     with DeviceCompliancePolicy {
   
   // Require that devices have enabled device threat protection.
-  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.native
+  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
     * low, medium, high, notSet.
     */
-  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.native
+  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
   
   // Corresponds to the 'Block all incoming connections' option.
-  var firewallBlockAllIncoming: js.UndefOr[Boolean] = js.native
+  var firewallBlockAllIncoming: js.UndefOr[Boolean] = js.undefined
   
   // Corresponds to 'Enable stealth mode.'
-  var firewallEnableStealthMode: js.UndefOr[Boolean] = js.native
+  var firewallEnableStealthMode: js.UndefOr[Boolean] = js.undefined
   
   // Whether the firewall should be enabled or not.
-  var firewallEnabled: js.UndefOr[Boolean] = js.native
+  var firewallEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Maximum MacOS version.
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum MacOS version.
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to block simple passwords.
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires. Valid values 1 to 65535
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of password. Valid values 4 to 14
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 1 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Whether or not to require a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // Require encryption on Mac OS devices.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Require that devices have enabled system integrity protection.
-  var systemIntegrityProtectionEnabled: js.UndefOr[Boolean] = js.native
+  var systemIntegrityProtectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object MacOSCompliancePolicy {
   

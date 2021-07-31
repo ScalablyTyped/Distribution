@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To implement inaccurate name access, support the {@link com.sun.star.beans.XExactName} interface.
   * @see com.sun.star.beans.XExactName
   */
-@js.native
-trait XNameAccess extends XElementAccess {
+trait XNameAccess
+  extends StObject
+     with XElementAccess {
   
   /** @returns a sequence of all element names in this container.  The order of the names is not specified. */
-  val ElementNames: SafeArray[String] = js.native
+  val ElementNames: SafeArray[String]
   
   /**
     * @param aName the name of the object.
@@ -25,16 +25,16 @@ trait XNameAccess extends XElementAccess {
     * @throws NoSuchElementException if an element under Name does not exist.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByName(aName: String): js.Any = js.native
+  def getByName(aName: String): js.Any
   
   /** @returns a sequence of all element names in this container.  The order of the names is not specified. */
-  def getElementNames(): SafeArray[String] = js.native
+  def getElementNames(): SafeArray[String]
   
   /**
     * @param aName the name of the object.
     * @returns `TRUE` if an element with this name is in the container, `FALSE` otherwise.  In many cases the next call is {@link XNameAccess.getByName()} . You
     */
-  def hasByName(aName: String): Boolean = js.native
+  def hasByName(aName: String): Boolean
 }
 object XNameAccess {
   

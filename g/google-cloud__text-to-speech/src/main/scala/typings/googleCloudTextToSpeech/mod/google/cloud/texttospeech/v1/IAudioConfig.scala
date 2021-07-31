@@ -2,32 +2,30 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an AudioConfig. */
-@js.native
 trait IAudioConfig extends StObject {
   
   /** AudioConfig audioEncoding */
   var audioEncoding: js.UndefOr[
     AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.texttospeech.v1.AudioEncoding * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** AudioConfig effectsProfileId */
-  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.native
+  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** AudioConfig pitch */
-  var pitch: js.UndefOr[Double | Null] = js.native
+  var pitch: js.UndefOr[Double | Null] = js.undefined
   
   /** AudioConfig sampleRateHertz */
-  var sampleRateHertz: js.UndefOr[Double | Null] = js.native
+  var sampleRateHertz: js.UndefOr[Double | Null] = js.undefined
   
   /** AudioConfig speakingRate */
-  var speakingRate: js.UndefOr[Double | Null] = js.native
+  var speakingRate: js.UndefOr[Double | Null] = js.undefined
   
   /** AudioConfig volumeGainDb */
-  var volumeGainDb: js.UndefOr[Double | Null] = js.native
+  var volumeGainDb: js.UndefOr[Double | Null] = js.undefined
 }
 object IAudioConfig {
   

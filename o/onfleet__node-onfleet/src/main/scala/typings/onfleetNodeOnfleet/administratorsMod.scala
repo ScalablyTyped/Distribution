@@ -5,25 +5,38 @@ import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.`super`
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object administratorsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Administrators", JSImport.Namespace)
   @js.native
-  class ^ () extends Admin
+  class ^ ()
+    extends StObject
+       with Admin {
+    
+    /* CompleteClass */
+    override def create(obj: CreateAdminProps): js.Promise[OnfleetAdmin] = js.native
+    
+    /* CompleteClass */
+    override def deleteOne(id: String): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def get(): js.Promise[js.Array[OnfleetAdmin]] = js.native
+    
+    /* CompleteClass */
+    override def update(id: String, obj: UpdateAdminProps): js.Promise[OnfleetAdmin] = js.native
+  }
   
-  @js.native
   trait Admin extends StObject {
     
-    def create(obj: CreateAdminProps): js.Promise[OnfleetAdmin] = js.native
+    def create(obj: CreateAdminProps): js.Promise[OnfleetAdmin]
     
-    def deleteOne(id: String): js.Promise[Unit] = js.native
+    def deleteOne(id: String): js.Promise[Unit]
     
-    def get(): js.Promise[js.Array[OnfleetAdmin]] = js.native
+    def get(): js.Promise[js.Array[OnfleetAdmin]]
     
-    def update(id: String, obj: UpdateAdminProps): js.Promise[OnfleetAdmin] = js.native
+    def update(id: String, obj: UpdateAdminProps): js.Promise[OnfleetAdmin]
   }
   object Admin {
     
@@ -61,16 +74,15 @@ object administratorsMod {
     * @prop phone - Optional. The administrator's phone number.
     * @prop isReadOnly - Optional. Whether this administrator can perform write operations.
     */
-  @js.native
   trait CreateAdminProps extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var isReadOnly: js.UndefOr[Boolean] = js.native
+    var isReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
   }
   object CreateAdminProps {
     
@@ -103,28 +115,27 @@ object administratorsMod {
     }
   }
   
-  @js.native
   trait OnfleetAdmin extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var metadata: OnfleetMetadata = js.native
+    var metadata: OnfleetMetadata
     
-    var name: String = js.native
+    var name: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var `type`: `super` | standard = js.native
+    var `type`: `super` | standard
   }
   object OnfleetAdmin {
     
@@ -181,14 +192,13 @@ object administratorsMod {
     }
   }
   
-  @js.native
   trait UpdateAdminProps extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var metadata: js.UndefOr[OnfleetMetadata] = js.native
+    var metadata: js.UndefOr[OnfleetMetadata] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object UpdateAdminProps {
     

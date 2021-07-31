@@ -5,7 +5,6 @@ import typings.leafletPancontrol.mod.Control_.Pan
 import typings.leafletPancontrol.mod.Control_.PanControlOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -23,10 +22,11 @@ object mod {
       var options_Pan: PanControlOptions = js.native
     }
     
-    @js.native
-    trait PanControlOptions extends ControlOptions {
+    trait PanControlOptions
+      extends StObject
+         with ControlOptions {
       
-      var panOffset: js.UndefOr[Double] = js.native
+      var panOffset: js.UndefOr[Double] = js.undefined
     }
     object PanControlOptions {
       
@@ -50,18 +50,19 @@ object mod {
   
   object control {
     
-    @JSImport("leaflet", "control.pan")
+    @JSImport("leaflet", "control")
     @js.native
-    def pan(): Pan = js.native
-    @JSImport("leaflet", "control.pan")
-    @js.native
-    def pan(options: PanControlOptions): Pan = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def pan(): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")().asInstanceOf[Pan]
+    @scala.inline
+    def pan(options: PanControlOptions): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")(options.asInstanceOf[js.Any]).asInstanceOf[Pan]
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var panControl: js.UndefOr[Boolean] = js.native
+    var panControl: js.UndefOr[Boolean] = js.undefined
   }
   object MapOptions {
     

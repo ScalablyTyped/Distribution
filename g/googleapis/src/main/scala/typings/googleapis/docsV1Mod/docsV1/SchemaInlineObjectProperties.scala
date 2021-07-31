@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties of an InlineObject.
   */
-@js.native
 trait SchemaInlineObjectProperties extends StObject {
   
   /**
     * The embedded object of this inline object.
     */
-  var embeddedObject: js.UndefOr[SchemaEmbeddedObject] = js.native
+  var embeddedObject: js.UndefOr[SchemaEmbeddedObject] = js.undefined
 }
 object SchemaInlineObjectProperties {
   

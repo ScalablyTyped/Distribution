@@ -6,19 +6,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies common implementation for embedded objects and links persistence. */
-@js.native
-trait XCommonEmbedPersist extends XInterface {
+trait XCommonEmbedPersist
+  extends StObject
+     with XInterface {
   
   /**
     * allows to detect if the data store is read-only.
     * @returns `TRUE` if the data store is readonly or opened readonly `FALSE` otherwise
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state ( has no entry )
     */
-  def isReadonly(): Boolean = js.native
+  def isReadonly(): Boolean
   
   /**
     * lets the object or the link reload itself.
@@ -31,7 +31,7 @@ trait XCommonEmbedPersist extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def reload(aMediaArgs: SeqEquiv[PropertyValue], aObjectArgs: SeqEquiv[PropertyValue]): Unit = js.native
+  def reload(aMediaArgs: SeqEquiv[PropertyValue], aObjectArgs: SeqEquiv[PropertyValue]): Unit
   
   /**
     * lets the object or the link store itself.
@@ -39,7 +39,7 @@ trait XCommonEmbedPersist extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems during saving
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def storeOwn(): Unit = js.native
+  def storeOwn(): Unit
 }
 object XCommonEmbedPersist {
   

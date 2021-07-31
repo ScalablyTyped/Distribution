@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Histogram extends StObject {
   
   /**
     * Buckets.
     */
-  var buckets: js.Array[Bucket] = js.native
+  var buckets: js.Array[Bucket]
   
   /**
     * Total number of samples.
     */
-  var count: integer = js.native
+  var count: integer
   
   /**
     * Name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Sum of sample values.
     */
-  var sum: integer = js.native
+  var sum: integer
 }
 object Histogram {
   

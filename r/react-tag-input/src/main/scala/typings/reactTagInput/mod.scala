@@ -10,7 +10,6 @@ import typings.reactTagInput.reactTagInputStrings.bottom
 import typings.reactTagInput.reactTagInputStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,30 +49,29 @@ object mod {
     def this(props: ReactTagsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ReactTagsProps extends StObject {
     
-    var allowAdditionFromPaste: js.UndefOr[Boolean] = js.native
+    var allowAdditionFromPaste: js.UndefOr[Boolean] = js.undefined
     
-    var allowDeleteFromEmptyInput: js.UndefOr[Boolean] = js.native
+    var allowDeleteFromEmptyInput: js.UndefOr[Boolean] = js.undefined
     
-    var allowDragDrop: js.UndefOr[Boolean] = js.native
+    var allowDragDrop: js.UndefOr[Boolean] = js.undefined
     
-    var allowUnique: js.UndefOr[Boolean] = js.native
+    var allowUnique: js.UndefOr[Boolean] = js.undefined
     
-    var autocomplete: js.UndefOr[Boolean | `1`] = js.native
+    var autocomplete: js.UndefOr[Boolean | `1`] = js.undefined
     
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
-    var classNames: js.UndefOr[ActiveSuggestion] = js.native
+    var classNames: js.UndefOr[ActiveSuggestion] = js.undefined
     
-    var delimiters: js.UndefOr[js.Array[Double]] = js.native
+    var delimiters: js.UndefOr[js.Array[Double]] = js.undefined
     
-    def handleAddition(tag: Id): Unit = js.native
+    def handleAddition(tag: Id): Unit
     
-    def handleDelete(i: Double): Unit = js.native
+    def handleDelete(i: Double): Unit
     
-    var handleDrag: js.UndefOr[js.Function3[/* tag */ Id, /* currPos */ Double, /* newPos */ Double, Unit]] = js.native
+    var handleDrag: js.UndefOr[js.Function3[/* tag */ Id, /* currPos */ Double, /* newPos */ Double, Unit]] = js.undefined
     
     var handleFilterSuggestions: js.UndefOr[
         js.Function2[
@@ -81,47 +79,47 @@ object mod {
           /* possibleSuggestionsArray */ js.Array[Tag], 
           js.Array[Tag]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var handleInputBlur: js.UndefOr[js.Function1[/* textInputValue */ String, Unit]] = js.native
+    var handleInputBlur: js.UndefOr[js.Function1[/* textInputValue */ String, Unit]] = js.undefined
     
-    var handleInputChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var handleInputChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var handleInputFocus: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var handleInputFocus: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var handleTagClick: js.UndefOr[js.Function1[/* i */ Double, Unit]] = js.native
+    var handleTagClick: js.UndefOr[js.Function1[/* i */ Double, Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputFieldPosition: js.UndefOr[top | bottom | `inline`] = js.native
+    var inputFieldPosition: js.UndefOr[top | bottom | `inline`] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
-    var labelField: js.UndefOr[String] = js.native
+    var labelField: js.UndefOr[String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var minQueryLength: js.UndefOr[Double] = js.native
+    var minQueryLength: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var removeComponent: js.UndefOr[Component[_, _, _]] = js.native
+    var removeComponent: js.UndefOr[Component[js.Any, js.Any, js.Any]] = js.undefined
     
-    var renderSuggestion: js.UndefOr[js.Function2[/* tag */ Tag, /* query */ String, ReactChild | Unit]] = js.native
+    var renderSuggestion: js.UndefOr[js.Function2[/* tag */ Tag, /* query */ String, ReactChild | Unit]] = js.undefined
     
-    var resetInputOnDelete: js.UndefOr[Boolean] = js.native
+    var resetInputOnDelete: js.UndefOr[Boolean] = js.undefined
     
-    var shouldRenderSuggestions: js.UndefOr[js.Function1[/* query */ String, Boolean]] = js.native
+    var shouldRenderSuggestions: js.UndefOr[js.Function1[/* query */ String, Boolean]] = js.undefined
     
-    var suggestions: js.UndefOr[js.Array[Tag]] = js.native
+    var suggestions: js.UndefOr[js.Array[Tag]] = js.undefined
     
-    var tags: js.UndefOr[js.Array[Tag]] = js.native
+    var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   }
   object ReactTagsProps {
     
@@ -290,7 +288,7 @@ object mod {
       def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
       @scala.inline
-      def setRemoveComponent(value: Component[_, _, _]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
+      def setRemoveComponent(value: Component[js.Any, js.Any, js.Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemoveComponentUndefined: Self = StObject.set(x, "removeComponent", js.undefined)
@@ -333,12 +331,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var text: String = js.native
+    var text: String
   }
   object Tag {
     

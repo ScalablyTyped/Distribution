@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,19 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *          (straight, pivot or stacked table) and on the method called
   *          (GetLayout, GetHyperCubeData, GetHyperCubePivotData, GetHyperCubeStackData).
   */
-@js.native
 trait IHyperCube extends StObject {
   
   /**
     * Set of data.
     * Is empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.
     */
-  var qDataPages: js.Array[INxDataPage] = js.native
+  var qDataPages: js.Array[INxDataPage]
   
   /**
     * Information on the dimension.
     */
-  var qDimensionInfo: js.Array[INxDimensionInfo] = js.native
+  var qDimensionInfo: js.Array[INxDimensionInfo]
   
   /**
     * Sort order of the columns in the hypercube.
@@ -33,47 +31,47 @@ trait IHyperCube extends StObject {
     * Example: [1,0,2] means that the first column to be sorted was the column 1,
     * followed by the column 0 and the column 2.
     */
-  var qEffectiveInterColumnSortOrder: js.Array[Double] = js.native
+  var qEffectiveInterColumnSortOrder: js.Array[Double]
   
   /**
     * This parameter is optional and is displayed in case of error.
     */
-  var qError: js.UndefOr[INxValidationError] = js.native
+  var qError: js.UndefOr[INxValidationError] = js.undefined
   
   /**
     * Aggregate for measures of all values in the field.
     * The result value depends on the qAggrFunc defined in HyperCubeDef.
     */
-  var qGrandTotalRow: js.Array[INxCell] = js.native
+  var qGrandTotalRow: js.Array[INxCell]
   
   /**
     * ...
     */
-  var qHasOtherValues: Boolean = js.native
+  var qHasOtherValues: Boolean
   
   /**
     * Is used for pivot tables only.
     * If set to true, the formatting of the results is slightly different.
     * >> This property is optional.
     */
-  var qIndentMode: js.UndefOr[Boolean] = js.native
+  var qIndentMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is used for pivot tables only.
     * Position of the last expended cell.
     * >> This property is optional.
     */
-  var qLastExpandedPos: js.UndefOr[INxCellPosition] = js.native
+  var qLastExpandedPos: js.UndefOr[INxCellPosition] = js.undefined
   
   /**
     * Information on the measure.
     */
-  var qMeasureInfo: js.Array[INxMeasureInfo] = js.native
+  var qMeasureInfo: js.Array[INxMeasureInfo]
   
   /**
     * Information about the mode of the visualization.
     */
-  var qMode: NxHypercubeMode = js.native
+  var qMode: NxHypercubeMode
   
   /**
     * Number of left dimensions
@@ -106,30 +104,30 @@ trait IHyperCube extends StObject {
     * - The index 2 corresponds to the left dimension Product
     * - Category is a top dimension.
     */
-  var qNoOfLeftDims: Double = js.native
+  var qNoOfLeftDims: Double
   
   /**
     * Set of data for pivot tables.
     * Is empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.
     */
-  var qPivotDataPages: js.Array[INxPivotPage] = js.native
+  var qPivotDataPages: js.Array[INxPivotPage]
   
   /**
     * Defines the size of the hypercube.
     */
-  var qSize: ISize = js.native
+  var qSize: ISize
   
   /**
     * Set of data for stacked tables.
     * Is empty if nothing has been defined in qInitialDataFetch in HyperCubeDef.
     */
-  var qStackedDataPages: js.Array[INxStackPage] = js.native
+  var qStackedDataPages: js.Array[INxStackPage]
   
   /**
     * Name of the alternate state.
     * Default is current selections $.
     */
-  var qStateName: String = js.native
+  var qStateName: String
 }
 object IHyperCube {
   

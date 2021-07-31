@@ -3,12 +3,14 @@ package typings.reactDndHtml5Backend
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEmptyImageMod {
   
-  @JSImport("react-dnd-html5-backend/lib/getEmptyImage", "getEmptyImage")
+  @JSImport("react-dnd-html5-backend/lib/getEmptyImage", JSImport.Namespace)
   @js.native
-  def getEmptyImage(): HTMLImageElement = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getEmptyImage(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyImage")().asInstanceOf[HTMLImageElement]
 }

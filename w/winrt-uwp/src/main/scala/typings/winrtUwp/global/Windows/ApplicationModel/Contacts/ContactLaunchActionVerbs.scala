@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is launched to perform an action to a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs")
 @js.native
 abstract class ContactLaunchActionVerbs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs
 object ContactLaunchActionVerbs {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs")

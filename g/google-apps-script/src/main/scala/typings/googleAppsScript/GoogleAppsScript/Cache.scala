@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cache {
@@ -56,14 +55,13 @@ object Cache {
     * The data you write to the cache is not guaranteed to persist until its expiration time. You
     * must be prepared to get back null from all reads.
     */
-  @js.native
   trait CacheService extends StObject {
     
-    def getDocumentCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null = js.native
+    def getDocumentCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
     
-    def getScriptCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null = js.native
+    def getScriptCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
     
-    def getUserCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null = js.native
+    def getUserCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
   }
   object CacheService {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmSelectionConfig extends StObject {
   
   /** Required. The Google Cloud Platform zone the VM is located. */
-  var vmZone: js.UndefOr[String] = js.native
+  var vmZone: js.UndefOr[String] = js.undefined
 }
 object VmSelectionConfig {
   

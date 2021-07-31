@@ -4,11 +4,11 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPath extends IBase {
+trait IPath
+  extends StObject
+     with IBase {
   
   /** [Method] Create an circular arc
     * @param x Number
@@ -28,7 +28,7 @@ trait IPath extends IBase {
       /* anticlockwise */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] http  www w3 org TR SVG implnote html ArcImplementationNotes
     * @param rx Number
@@ -50,7 +50,7 @@ trait IPath extends IBase {
       /* y2 */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Create a elliptic arc curve compatible with SVG s arc to instruction
     * @param x1 Number
@@ -72,7 +72,7 @@ trait IPath extends IBase {
       /* rotation */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] A cubic bezier curve to a position
     * @param cx1 Number
@@ -92,19 +92,19 @@ trait IPath extends IBase {
       /* y */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Clear the path  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Clone this path
     * @returns Ext.draw.Path
     */
   @JSName("clone")
-  var clone_FIPath: js.UndefOr[js.Function0[this.type]] = js.native
+  var clone_FIPath: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Close this path with a straight line  */
-  var closePath: js.UndefOr[js.Function0[Unit]] = js.native
+  var closePath: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Create an elliptic arc
     * @param cx Number
@@ -128,23 +128,23 @@ trait IPath extends IBase {
       /* anticlockwise */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Reconstruct path from cubic bezier curve stripes
     * @param stripes Array
     */
-  var fromStripes: js.UndefOr[js.Function1[/* stripes */ js.UndefOr[Array], Unit]] = js.native
+  var fromStripes: js.UndefOr[js.Function1[/* stripes */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Feed the path from svg path string
     * @param pathString String
     */
-  var fromSvgString: js.UndefOr[js.Function1[/* pathString */ js.UndefOr[String], Unit]] = js.native
+  var fromSvgString: js.UndefOr[js.Function1[/* pathString */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Get the bounding box of this matrix
     * @param target Object Optional object to receive the result.
     * @returns Object Object with x, y, width and height
     */
-  var getDimension: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], _]] = js.native
+  var getDimension: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Get the bounding box as if the path is transformed by a matrix
     * @param matrix Ext.draw.Matrix
@@ -152,27 +152,27 @@ trait IPath extends IBase {
     * @returns Object An object with x, y, width and height.
     */
   var getDimensionWithTransform: js.UndefOr[
-    js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Test whether the given point is on or inside the path
     * @param x Number
     * @param y Number
     * @returns Boolean
     */
-  var isPointInPath: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.native
+  var isPointInPath: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.undefined
   
   /** [Method] A straight line to a position
     * @param x Number
     * @param y Number
     */
-  var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+  var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Move to a position
     * @param x Number
     * @param y Number
     */
-  var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+  var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] A quadratic bezier curve to a position
     * @param cx Number
@@ -188,7 +188,7 @@ trait IPath extends IBase {
       /* y */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Draw a rectangle and close it
     * @param x Number
@@ -204,24 +204,24 @@ trait IPath extends IBase {
       /* height */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Return an svg path string for this path
     * @returns String
     */
   @JSName("toString")
-  var toString_FIPath: js.UndefOr[js.Function0[String]] = js.native
+  var toString_FIPath: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Convert path to bezier curve stripes
     * @param target Array The optional array to receive the result.
     * @returns Array
     */
-  var toStripes: js.UndefOr[js.Function1[/* target */ js.UndefOr[Array], Array]] = js.native
+  var toStripes: js.UndefOr[js.Function1[/* target */ js.UndefOr[Array], Array]] = js.undefined
   
   /** [Method] Transform the current path by a matrix
     * @param matrix Ext.draw.Matrix
     */
-  var transform: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[IMatrix], Unit]] = js.native
+  var transform: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[IMatrix], Unit]] = js.undefined
 }
 object IPath {
   
@@ -305,13 +305,13 @@ object IPath {
     def setFromSvgStringUndefined: Self = StObject.set(x, "fromSvgString", js.undefined)
     
     @scala.inline
-    def setGetDimension(value: /* target */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
+    def setGetDimension(value: /* target */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetDimensionUndefined: Self = StObject.set(x, "getDimension", js.undefined)
     
     @scala.inline
-    def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
+    def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetDimensionWithTransformUndefined: Self = StObject.set(x, "getDimensionWithTransform", js.undefined)

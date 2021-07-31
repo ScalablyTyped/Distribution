@@ -3,7 +3,6 @@ package typings.validateJs
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,14 +11,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : ValidateJS = js.native
   
-  @js.native
   trait AsyncValidateOption extends StObject {
     
-    var cleanAttributes: js.UndefOr[Boolean] = js.native
+    var cleanAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var prettify: js.UndefOr[js.Function] = js.native
+    var prettify: js.UndefOr[js.Function] = js.undefined
     
-    var wrapErrors: js.UndefOr[js.Function] = js.native
+    var wrapErrors: js.UndefOr[js.Function] = js.undefined
   }
   object AsyncValidateOption {
     
@@ -52,12 +50,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CollectFormValuesOption extends StObject {
     
-    var nullify: js.UndefOr[Boolean] = js.native
+    var nullify: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object CollectFormValuesOption {
     
@@ -90,8 +87,8 @@ object mod extends Shortcut {
     def apply(attributes: js.Any, constraints: js.Any): js.Any = js.native
     def apply(attributes: js.Any, constraints: js.Any, options: ValidateOption): js.Any = js.native
     
-    def async(attributes: js.Any, constraints: js.Any): js.Promise[_] = js.native
-    def async(attributes: js.Any, constraints: js.Any, options: AsyncValidateOption): js.Promise[_] = js.native
+    def async(attributes: js.Any, constraints: js.Any): js.Promise[js.Any] = js.native
+    def async(attributes: js.Any, constraints: js.Any, options: AsyncValidateOption): js.Promise[js.Any] = js.native
     
     def capitalize(value: String): String = js.native
     
@@ -149,14 +146,13 @@ object mod extends Shortcut {
     var validators: js.Any = js.native
   }
   
-  @js.native
   trait ValidateOption extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var fullMessages: js.UndefOr[Boolean] = js.native
+    var fullMessages: js.UndefOr[Boolean] = js.undefined
     
-    var prettify: js.UndefOr[js.Function] = js.native
+    var prettify: js.UndefOr[js.Function] = js.undefined
   }
   object ValidateOption {
     

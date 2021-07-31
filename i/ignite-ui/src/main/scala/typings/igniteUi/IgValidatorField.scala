@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgValidatorField
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -21,7 +20,7 @@ trait IgValidatorField
     * "string" A valid jQuery selector for the element
     * "object" A reference to a jQuery object
     */
-  var selector: js.UndefOr[String | js.Object] = js.native
+  var selector: js.UndefOr[String | js.Object] = js.undefined
 }
 object IgValidatorField {
   

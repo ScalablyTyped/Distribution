@@ -10,7 +10,6 @@ import typings.winjs.winjsStrings.right
 import typings.winjs.winjsStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,44 +21,36 @@ object XYFocus {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("WinJS.UI.XYFocus.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, handler: EventListener): Unit = js.native
+  @scala.inline
+  def addEventListener(`type`: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("WinJS.UI.XYFocus.dispatchEvent")
-  @js.native
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  @scala.inline
+  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement(direction: String): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement(direction: String, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_down(direction: down): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_down(direction: down, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_left(direction: left): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_left(direction: left, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_right(direction: right): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_right(direction: right, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_up(direction: up): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.findNextFocusElement")
-  @js.native
-  def findNextFocusElement_up(direction: up, options: XYFocusOptions): HTMLElement = js.native
+  @scala.inline
+  def findNextFocusElement(direction: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def findNextFocusElement(direction: String, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def findNextFocusElement_down(direction: down): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def findNextFocusElement_down(direction: down, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def findNextFocusElement_left(direction: left): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def findNextFocusElement_left(direction: left, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def findNextFocusElement_right(direction: right): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def findNextFocusElement_right(direction: right, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def findNextFocusElement_up(direction: up): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def findNextFocusElement_up(direction: up, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   @JSGlobal("WinJS.UI.XYFocus.focusRoot")
   @js.native
@@ -128,46 +119,37 @@ object XYFocus {
     def up_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus(direction: String): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus(direction: String, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_down(direction: down): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_down(direction: down, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_left(direction: left): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_left(direction: left, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_right(direction: right): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_right(direction: right, options: XYFocusOptions): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_up(direction: up): HTMLElement = js.native
-  @JSGlobal("WinJS.UI.XYFocus.moveFocus")
-  @js.native
-  def moveFocus_up(direction: up, options: XYFocusOptions): HTMLElement = js.native
+  @scala.inline
+  def moveFocus(direction: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def moveFocus(direction: String, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @JSGlobal("WinJS.UI.XYFocus.onfocuschanged")
-  @js.native
-  def onfocuschanged(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def moveFocus_down(direction: down): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def moveFocus_down(direction: down, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @JSGlobal("WinJS.UI.XYFocus.onfocuschanging")
-  @js.native
-  def onfocuschanging(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def moveFocus_left(direction: left): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def moveFocus_left(direction: left, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @JSGlobal("WinJS.UI.XYFocus.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, handler: EventListener): Unit = js.native
+  @scala.inline
+  def moveFocus_right(direction: right): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def moveFocus_right(direction: right, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def moveFocus_up(direction: up): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def moveFocus_up(direction: up, options: XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def onfocuschanged(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanged")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def onfocuschanging(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanging")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def removeEventListener(`type`: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

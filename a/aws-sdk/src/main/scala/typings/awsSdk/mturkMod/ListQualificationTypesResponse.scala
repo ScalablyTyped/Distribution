@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQualificationTypesResponse extends StObject {
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The number of Qualification types on this page in the filtered results list, equivalent to the number of types this operation returns. 
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The list of QualificationType elements returned by the query. 
     */
-  var QualificationTypes: js.UndefOr[QualificationTypeList] = js.native
+  var QualificationTypes: js.UndefOr[QualificationTypeList] = js.undefined
 }
 object ListQualificationTypesResponse {
   

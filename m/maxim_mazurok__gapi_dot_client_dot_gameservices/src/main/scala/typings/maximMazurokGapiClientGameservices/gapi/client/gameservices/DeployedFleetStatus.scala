@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployedFleetStatus extends StObject {
   
   /** The number of GameServer replicas in the ALLOCATED state in this fleet. */
-  var allocatedReplicas: js.UndefOr[String] = js.native
+  var allocatedReplicas: js.UndefOr[String] = js.undefined
   
   /** The number of GameServer replicas in the READY state in this fleet. */
-  var readyReplicas: js.UndefOr[String] = js.native
+  var readyReplicas: js.UndefOr[String] = js.undefined
   
   /** The total number of current GameServer replicas in this fleet. */
-  var replicas: js.UndefOr[String] = js.native
+  var replicas: js.UndefOr[String] = js.undefined
   
   /** The number of GameServer replicas in the RESERVED state in this fleet. Reserved instances won't be deleted on scale down, but won't cause an autoscaler to scale up. */
-  var reservedReplicas: js.UndefOr[String] = js.native
+  var reservedReplicas: js.UndefOr[String] = js.undefined
 }
 object DeployedFleetStatus {
   

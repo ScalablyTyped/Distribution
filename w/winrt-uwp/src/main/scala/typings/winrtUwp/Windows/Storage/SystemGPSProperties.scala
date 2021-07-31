@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for GPS file properties. */
-@js.native
 trait SystemGPSProperties extends StObject {
   
   /** Gets the name of the System.GPS.LatitudeDecimal property (one of the GPS file properties). */
-  var latitudeDecimal: String = js.native
+  var latitudeDecimal: String
   
   /** Gets the name of the System.GPS.LongitudeDecimal property (one of the GPS file properties). */
-  var longitudeDecimal: String = js.native
+  var longitudeDecimal: String
 }
 object SystemGPSProperties {
   

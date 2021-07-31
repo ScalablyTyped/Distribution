@@ -11,8 +11,8 @@ JSONSchema TypeScript definitions.
 | Full name          | json-schema-typed |
 | Keywords           | jsonschema, typescript |
 | # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 10554688 |
+| # dependents       | 11 |
+| # downloads        | 9720851 |
 | # stars            | 0 |
 
 ## Links

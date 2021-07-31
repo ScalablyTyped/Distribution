@@ -2,13 +2,11 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var baseFontSize: js.UndefOr[js.Object] = js.native
+  var baseFontSize: js.UndefOr[js.Object] = js.undefined
 }
 object `9` {
   

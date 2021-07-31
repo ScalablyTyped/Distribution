@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEdit extends StObject {
   
   /** Output only. The time (as seconds since Epoch) at which the edit will expire and will be no longer valid for use. */
-  var expiryTimeSeconds: js.UndefOr[String] = js.native
+  var expiryTimeSeconds: js.UndefOr[String] = js.undefined
   
   /** Output only. Identifier of the edit. Can be used in subsequent API calls. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object AppEdit {
   

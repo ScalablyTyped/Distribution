@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsCreateColumnRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: POST = js.native
+  var method: POST
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashprojectsSlashColonproject_idSlashcolumns = js.native
+  var url: SlashprojectsSlashColonproject_idSlashcolumns
 }
 object ProjectsCreateColumnRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: POST,
-    request: RequestRequestOptions,
-    url: SlashprojectsSlashColonproject_idSlashcolumns
-  ): ProjectsCreateColumnRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsCreateColumnRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/projects/:project_id/columns")
     __obj.asInstanceOf[ProjectsCreateColumnRequestOptions]
   }
   

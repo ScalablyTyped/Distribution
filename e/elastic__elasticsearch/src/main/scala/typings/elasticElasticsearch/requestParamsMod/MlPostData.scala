@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlPostData[T] extends Generic {
+trait MlPostData[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var reset_end: js.UndefOr[String] = js.native
+  var reset_end: js.UndefOr[String] = js.undefined
   
-  var reset_start: js.UndefOr[String] = js.native
+  var reset_start: js.UndefOr[String] = js.undefined
 }
 object MlPostData {
   
@@ -25,7 +25,7 @@ object MlPostData {
   }
   
   @scala.inline
-  implicit class MlPostDataMutableBuilder[Self <: MlPostData[_], T] (val x: Self with MlPostData[T]) extends AnyVal {
+  implicit class MlPostDataMutableBuilder[Self <: MlPostData[?], T] (val x: Self & MlPostData[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

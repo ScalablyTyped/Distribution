@@ -10,11 +10,12 @@ import typings.std.RTCDataChannelState
 import typings.std.RTCErrorEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCDataChannel extends EventTarget {
+trait RTCDataChannel
+  extends StObject
+     with EventTarget {
   
   var binaryType: String = js.native
   
@@ -40,7 +41,7 @@ trait RTCDataChannel extends EventTarget {
   
   var onerror: DataChannelEventHandler[RTCErrorEvent] = js.native
   
-  var onmessage: DataChannelEventHandler[MessageEvent[_]] = js.native
+  var onmessage: DataChannelEventHandler[MessageEvent[js.Any]] = js.native
   
   var onopen: DataChannelEventHandler[Event] = js.native
   

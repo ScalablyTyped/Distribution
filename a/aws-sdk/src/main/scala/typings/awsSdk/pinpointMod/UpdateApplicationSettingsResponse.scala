@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationSettingsResponse extends StObject {
   
-  var ApplicationSettingsResource: typings.awsSdk.pinpointMod.ApplicationSettingsResource = js.native
+  var ApplicationSettingsResource: typings.awsSdk.pinpointMod.ApplicationSettingsResource
 }
 object UpdateApplicationSettingsResponse {
   

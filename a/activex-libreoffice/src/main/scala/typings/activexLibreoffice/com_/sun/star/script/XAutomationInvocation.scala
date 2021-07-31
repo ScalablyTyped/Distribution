@@ -5,25 +5,25 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XIntrospectionAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAutomationInvocation extends XInvocation {
+trait XAutomationInvocation
+  extends StObject
+     with XInvocation {
   
   def invokeGetProperty(
     aFunctionName: String,
-    aParams: SeqEquiv[_],
+    aParams: SeqEquiv[js.Any],
     aOutParamIndex: js.Array[SeqEquiv[Double]],
-    aOutParam: js.Array[SeqEquiv[_]]
-  ): js.Any = js.native
+    aOutParam: js.Array[SeqEquiv[js.Any]]
+  ): js.Any
   
   def invokePutProperty(
     aFunctionName: String,
-    aParams: SeqEquiv[_],
+    aParams: SeqEquiv[js.Any],
     aOutParamIndex: js.Array[SeqEquiv[Double]],
-    aOutParam: js.Array[SeqEquiv[_]]
-  ): js.Any = js.native
+    aOutParam: js.Array[SeqEquiv[js.Any]]
+  ): js.Any
 }
 object XAutomationInvocation {
   
@@ -35,9 +35,9 @@ object XAutomationInvocation {
     getValue: String => js.Any,
     hasMethod: String => Boolean,
     hasProperty: String => Boolean,
-    invoke: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
-    invokeGetProperty: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
-    invokePutProperty: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+    invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
+    invokeGetProperty: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
+    invokePutProperty: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setValue: (String, js.Any) => Unit
@@ -50,9 +50,13 @@ object XAutomationInvocation {
   implicit class XAutomationInvocationMutableBuilder[Self <: XAutomationInvocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInvokeGetProperty(value: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any): Self = StObject.set(x, "invokeGetProperty", js.Any.fromFunction4(value))
+    def setInvokeGetProperty(
+      value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
+    ): Self = StObject.set(x, "invokeGetProperty", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInvokePutProperty(value: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any): Self = StObject.set(x, "invokePutProperty", js.Any.fromFunction4(value))
+    def setInvokePutProperty(
+      value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
+    ): Self = StObject.set(x, "invokePutProperty", js.Any.fromFunction4(value))
   }
 }

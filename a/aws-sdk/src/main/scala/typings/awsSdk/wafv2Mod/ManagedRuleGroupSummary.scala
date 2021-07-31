@@ -2,26 +2,24 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedRuleGroupSummary extends StObject {
   
   /**
     * The description of the managed rule group, provided by AWS Managed Rules or the AWS Marketplace seller who manages it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the managed rule group. You use this, along with the vendor name, to identify the rule group.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The name of the managed rule group vendor. You use this, along with the rule group name, to identify the rule group.
     */
-  var VendorName: js.UndefOr[typings.awsSdk.wafv2Mod.VendorName] = js.native
+  var VendorName: js.UndefOr[typings.awsSdk.wafv2Mod.VendorName] = js.undefined
 }
 object ManagedRuleGroupSummary {
   

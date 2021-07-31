@@ -3,17 +3,18 @@ package typings.confit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(optionsOrBaseDir: String): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
+  @scala.inline
+  def apply(optionsOrBaseDir: options): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
+  
   @JSImport("confit", JSImport.Namespace)
   @js.native
-  def apply(optionsOrBaseDir: String): ConfigFactory = js.native
-  @JSImport("confit", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrBaseDir: options): ConfigFactory = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait ConfigFactory extends StObject {
@@ -24,17 +25,16 @@ object mod {
     def addOverride(filepathOrSettingsObj: String): this.type = js.native
     def addOverride(filepathOrSettingsObj: js.Object): this.type = js.native
     
-    def create(callback: js.Function2[/* err */ js.Any, /* config */ ConfigStore, _]): Unit = js.native
+    def create(callback: js.Function2[/* err */ js.Any, /* config */ ConfigStore, js.Any]): Unit = js.native
   }
   
-  @js.native
   trait ConfigStore extends StObject {
     
-    def get(name: String): js.Any = js.native
+    def get(name: String): js.Any
     
-    def set[T](name: String, newValue: T): T = js.native
+    def set[T](name: String, newValue: T): T
     
-    def use(newSettings: js.Object): Unit = js.native
+    def use(newSettings: js.Object): Unit
   }
   object ConfigStore {
     
@@ -62,12 +62,11 @@ object mod {
   
   type ProtocolsSetPrivate = StringDictionary[js.Function2[/* value */ js.Any, /* callback */ js.UndefOr[js.Any], Unit]]
   
-  @js.native
   trait options extends StObject {
     
-    var basedir: String = js.native
+    var basedir: String
     
-    var protocols: ProtocolsSetPrivate = js.native
+    var protocols: ProtocolsSetPrivate
   }
   object options {
     

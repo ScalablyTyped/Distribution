@@ -17,7 +17,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,24 +25,23 @@ object mod extends Shortcut {
   @js.native
   val default: FastifyPlugin[FastifyMultipartOptions] = js.native
   
-  @js.native
   trait BodyEntry extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var limit: `false` = js.native
+    var limit: `false`
     
-    var mimetype: String = js.native
+    var mimetype: String
   }
   object BodyEntry {
     
     @scala.inline
-    def apply(data: Buffer, encoding: String, filename: String, limit: `false`, mimetype: String): BodyEntry = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any])
+    def apply(data: Buffer, encoding: String, filename: String, mimetype: String): BodyEntry = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], limit = false, mimetype = mimetype.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyEntry]
     }
     
@@ -67,20 +65,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FastifyMultipartOptions extends StObject {
     
     /**
       * Append the multipart parameters to the body object
       */
-    var addToBody: js.UndefOr[Boolean] = js.native
+    var addToBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only valid in the promise api. Append the multipart parameters to the body object.
       */
-    var attachFieldsToBody: js.UndefOr[Boolean] = js.native
+    var attachFieldsToBody: js.UndefOr[Boolean] = js.undefined
     
-    var limits: js.UndefOr[FieldNameSize] = js.native
+    var limits: js.UndefOr[FieldNameSize] = js.undefined
     
     /**
       * Manage the file stream like you need
@@ -95,12 +92,12 @@ object mod extends Shortcut {
           /* body */ Record[String, BodyEntry], 
           Unit | js.Promise[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Add a shared schema to validate the input fields
       */
-    var sharedSchemaId: js.UndefOr[String] = js.native
+    var sharedSchemaId: js.UndefOr[String] = js.undefined
   }
   object FastifyMultipartOptions {
     
@@ -176,20 +173,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MultipartErrors extends StObject {
     
-    var FieldsLimitError: FastifyError = js.native
+    var FieldsLimitError: FastifyError
     
-    var FilesLimitError: FastifyError = js.native
+    var FilesLimitError: FastifyError
     
-    var InvalidMultipartContentTypeError: FastifyError = js.native
+    var InvalidMultipartContentTypeError: FastifyError
     
-    var PartsLimitError: FastifyError = js.native
+    var PartsLimitError: FastifyError
     
-    var PrototypeViolationError: FastifyError = js.native
+    var PrototypeViolationError: FastifyError
     
-    var RequestFileTooLargeError: FastifyError = js.native
+    var RequestFileTooLargeError: FastifyError
   }
   object MultipartErrors {
     
@@ -231,25 +227,25 @@ object mod extends Shortcut {
   
   type MultipartFields = StringDictionary[Multipart[`true`] | js.Array[Multipart[`true`]]]
   
-  @js.native
   trait MultipartFile
-    extends Multipart[js.Any] {
+    extends StObject
+       with Multipart[js.Any] {
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var fieldname: String = js.native
+    var fieldname: String
     
-    var fields: MultipartFields = js.native
+    var fields: MultipartFields
     
-    var file: ReadableStream = js.native
+    var file: ReadableStream
     
-    var filename: String = js.native
+    var filename: String
     
-    var filepath: String = js.native
+    var filepath: String
     
-    var mimetype: String = js.native
+    var mimetype: String
     
-    def toBuffer(): js.Promise[Buffer] = js.native
+    def toBuffer(): js.Promise[Buffer]
   }
   object MultipartFile {
     
@@ -306,10 +302,11 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
-  trait MultipartValue[T] extends Multipart[T] {
+  trait MultipartValue[T]
+    extends StObject
+       with Multipart[T] {
     
-    var value: T = js.native
+    var value: T
   }
   object MultipartValue {
     
@@ -320,7 +317,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class MultipartValueMutableBuilder[Self <: MultipartValue[_], T] (val x: Self with MultipartValue[T]) extends AnyVal {
+    implicit class MultipartValueMutableBuilder[Self <: MultipartValue[?], T] (val x: Self & MultipartValue[T]) extends AnyVal {
       
       @scala.inline
       def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
@@ -335,10 +332,9 @@ object mod extends Shortcut {
   /* augmented module */
   object fastifyAugmentingMod {
     
-    @js.native
     trait FastifyInstance extends StObject {
       
-      var multipartErrors: MultipartErrors = js.native
+      var multipartErrors: MultipartErrors
     }
     object FastifyInstance {
       

@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payload extends StObject {
   
-  var payload: String = js.native
+  var payload: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var signature: String = js.native
+  var signature: String
   
-  var verified: Boolean = js.native
+  var verified: Boolean
 }
 object Payload {
   

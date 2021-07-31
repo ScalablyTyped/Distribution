@@ -2,72 +2,139 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliceMod {
   
   @JSImport("amcharts/Slice", JSImport.Default)
   @js.native
-  class default () extends Slice
-  
-  @js.native
-  trait Slice extends StObject {
+  class default ()
+    extends StObject
+       with Slice {
     
     /**
       * Opacity of a slice.
       */
+    /* CompleteClass */
     var alpha: Double = js.native
     
     /**
       * Color of a slice.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Original object from data provider.
       */
+    /* CompleteClass */
     var dataContext: js.Object = js.native
     
     /**
       * Slice description.
       */
+    /* CompleteClass */
     var description: String = js.native
     
     /**
       * Specifies whether the slice is hidden
       */
+    /* CompleteClass */
     var hidden: Boolean = js.native
     
     /**
       * Percent value of a slice.
       */
+    /* CompleteClass */
     var percents: Double = js.native
     
     /**
       * Specifies whether the slice is pulled or not.
       */
+    /* CompleteClass */
     var pulled: Boolean = js.native
     
     /**
       * Slice title
       */
+    /* CompleteClass */
     var title: String = js.native
     
     /**
       * Url of a slice
       */
+    /* CompleteClass */
     var url: String = js.native
     
     /**
       * Value of a slice
       */
+    /* CompleteClass */
     var value: Double = js.native
     
     /**
       * specifies whether this slice has a legend entry
       */
+    /* CompleteClass */
     var visibleInLegend: Boolean = js.native
+  }
+  
+  trait Slice extends StObject {
+    
+    /**
+      * Opacity of a slice.
+      */
+    var alpha: Double
+    
+    /**
+      * Color of a slice.
+      */
+    var color: String
+    
+    /**
+      * Original object from data provider.
+      */
+    var dataContext: js.Object
+    
+    /**
+      * Slice description.
+      */
+    var description: String
+    
+    /**
+      * Specifies whether the slice is hidden
+      */
+    var hidden: Boolean
+    
+    /**
+      * Percent value of a slice.
+      */
+    var percents: Double
+    
+    /**
+      * Specifies whether the slice is pulled or not.
+      */
+    var pulled: Boolean
+    
+    /**
+      * Slice title
+      */
+    var title: String
+    
+    /**
+      * Url of a slice
+      */
+    var url: String
+    
+    /**
+      * Value of a slice
+      */
+    var value: Double
+    
+    /**
+      * specifies whether this slice has a legend entry
+      */
+    var visibleInLegend: Boolean
   }
   object Slice {
     

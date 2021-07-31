@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeAppliance extends StObject {
   
   /**
     * The description of the smart home appliance.
     */
-  var Description: js.UndefOr[ApplianceDescription] = js.native
+  var Description: js.UndefOr[ApplianceDescription] = js.undefined
   
   /**
     * The friendly name of the smart home appliance.
     */
-  var FriendlyName: js.UndefOr[ApplianceFriendlyName] = js.native
+  var FriendlyName: js.UndefOr[ApplianceFriendlyName] = js.undefined
   
   /**
     * The name of the manufacturer of the smart home appliance.
     */
-  var ManufacturerName: js.UndefOr[ApplianceManufacturerName] = js.native
+  var ManufacturerName: js.UndefOr[ApplianceManufacturerName] = js.undefined
 }
 object SmartHomeAppliance {
   

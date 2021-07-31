@@ -10,53 +10,51 @@ import typings.dashjs.dashjsStrings.video
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentRequest extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var availabilityEndTime: Double = js.native
+  var availabilityEndTime: Double
   
-  var availabilityStartTime: Date = js.native
+  var availabilityStartTime: Date
   
-  var bytesLoaded: Double = js.native
+  var bytesLoaded: Double
   
-  var bytesTotal: Double = js.native
+  var bytesTotal: Double
   
-  var delayLoadingTime: Double = js.native
+  var delayLoadingTime: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var firstByteDate: Date = js.native
+  var firstByteDate: Date
   
-  var index: Double = js.native
+  var index: Double
   
-  var mediaInfo: MediaInfo = js.native
+  var mediaInfo: MediaInfo
   
-  var mediaType: video | audio | text | fragmentedText | embeddedText = js.native
+  var mediaType: video | audio | text | fragmentedText | embeddedText
   
-  var quality: Double = js.native
+  var quality: Double
   
-  var representationId: String = js.native
+  var representationId: String
   
-  var requestEndDate: Date | Null = js.native
+  var requestEndDate: Date | Null
   
-  var requestStartDate: Date = js.native
+  var requestStartDate: Date
   
-  var responseType: String = js.native
+  var responseType: String
   
-  var serviceLocation: String = js.native
+  var serviceLocation: String
   
-  var startTime: Double = js.native
+  var startTime: Double
   
-  var timescale: Double = js.native
+  var timescale: Double
   
-  var `type`: InitializationSegment | MediaSegment = js.native
+  var `type`: InitializationSegment | MediaSegment
   
-  var url: String = js.native
+  var url: String
 }
 object FragmentRequest {
   
@@ -83,7 +81,7 @@ object FragmentRequest {
     `type`: InitializationSegment | MediaSegment,
     url: String
   ): FragmentRequest = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], availabilityEndTime = availabilityEndTime.asInstanceOf[js.Any], availabilityStartTime = availabilityStartTime.asInstanceOf[js.Any], bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], delayLoadingTime = delayLoadingTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], firstByteDate = firstByteDate.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mediaInfo = mediaInfo.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], representationId = representationId.asInstanceOf[js.Any], requestStartDate = requestStartDate.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], serviceLocation = serviceLocation.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], availabilityEndTime = availabilityEndTime.asInstanceOf[js.Any], availabilityStartTime = availabilityStartTime.asInstanceOf[js.Any], bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], delayLoadingTime = delayLoadingTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], firstByteDate = firstByteDate.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mediaInfo = mediaInfo.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], representationId = representationId.asInstanceOf[js.Any], requestStartDate = requestStartDate.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], serviceLocation = serviceLocation.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], requestEndDate = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentRequest]
   }

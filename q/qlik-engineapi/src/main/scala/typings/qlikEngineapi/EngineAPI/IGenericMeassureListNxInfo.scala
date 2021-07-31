@@ -3,23 +3,23 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.MeasureList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IGenericMeassureListNxInfo
   */
-@js.native
-trait IGenericMeassureListNxInfo extends INxInfo {
+trait IGenericMeassureListNxInfo
+  extends StObject
+     with INxInfo {
   
   @JSName("qType")
-  var qType_IGenericMeassureListNxInfo: MeasureList = js.native
+  var qType_IGenericMeassureListNxInfo: MeasureList
 }
 object IGenericMeassureListNxInfo {
   
   @scala.inline
-  def apply(qType: MeasureList): IGenericMeassureListNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+  def apply(): IGenericMeassureListNxInfo = {
+    val __obj = js.Dynamic.literal(qType = "MeasureList")
     __obj.asInstanceOf[IGenericMeassureListNxInfo]
   }
   

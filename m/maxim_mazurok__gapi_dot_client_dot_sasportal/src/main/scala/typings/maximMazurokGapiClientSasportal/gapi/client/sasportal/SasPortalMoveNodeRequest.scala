@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalMoveNodeRequest extends StObject {
   
   /** Required. The name of the new parent resource node or Customer) to reparent the node under. */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
 }
 object SasPortalMoveNodeRequest {
   

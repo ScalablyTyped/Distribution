@@ -51,10 +51,13 @@ import typings.typedoc.typedocStrings.tsconfig
 import typings.typedoc.typedocStrings.version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libUtilsMod {
+  
+  @JSImport("typedoc/dist/lib/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("typedoc/dist/lib/utils", "AbstractComponent")
   @js.native
@@ -64,282 +67,437 @@ object libUtilsMod {
     def this(owner: js.Symbol) = this()
   }
   
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
-  def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  @scala.inline
+  def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit]]
+  
+  @scala.inline
   def BindOption_categorizeByGroup(name: categorizeByGroup): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_categoryOrder(name: categoryOrder): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_defaultCategory(name: defaultCategory): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_disableOutputCheck(name: disableOutputCheck): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_disableSources(name: disableSources): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_entryPoint(name: entryPoint): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_exclude(name: exclude): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeExternals(name: excludeExternals): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeNotDocumented(name: excludeNotDocumented): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeNotExported(name: excludeNotExported): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludePrivate(name: excludePrivate): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeProtected(name: excludeProtected): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeTags(name: excludeTags): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_externalPattern(name: externalPattern): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gaID(name: gaID): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gaSite(name: gaSite): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gitRemote(name: gitRemote): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gitRevision(name: gitRevision): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_help(name: help): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_hideGenerator(name: hideGenerator): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_ignoreCompilerErrors(name: ignoreCompilerErrors): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includeDeclarations(name: includeDeclarations): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includeVersion(name: includeVersion): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includes(name: includes): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_inputFiles(name: inputFiles): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_json(name: json): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_logger(name: logger): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_media(name: media): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_mode(name: mode): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_name(name: name): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_options(name: options): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_out(name: out): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_plugin(name: plugin): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_readme(name: readme): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_theme(name: theme): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_toc(name: toc): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_tsconfig(name: tsconfig): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_version(name: version): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
   
   @JSImport("typedoc/dist/lib/utils", "CallbackLogger")
   @js.native
@@ -356,9 +514,8 @@ object libUtilsMod {
     def this(owner: js.Symbol) = this()
   }
   
-  @JSImport("typedoc/dist/lib/utils", "Component")
-  @js.native
-  def Component(options: ComponentOptions): ClassDecorator = js.native
+  @scala.inline
+  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/utils", "ConsoleLogger")
   @js.native
@@ -382,17 +539,17 @@ object libUtilsMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.typedoc.loggersMod.LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.typedoc.loggersMod.LogLevel & Double] = js.native
     
-    /* 3 */ val Error: typings.typedoc.loggersMod.LogLevel.Error with Double = js.native
+    /* 3 */ val Error: typings.typedoc.loggersMod.LogLevel.Error & Double = js.native
     
-    /* 1 */ val Info: typings.typedoc.loggersMod.LogLevel.Info with Double = js.native
+    /* 1 */ val Info: typings.typedoc.loggersMod.LogLevel.Info & Double = js.native
     
-    /* 4 */ val Success: typings.typedoc.loggersMod.LogLevel.Success with Double = js.native
+    /* 4 */ val Success: typings.typedoc.loggersMod.LogLevel.Success & Double = js.native
     
-    /* 0 */ val Verbose: typings.typedoc.loggersMod.LogLevel.Verbose with Double = js.native
+    /* 0 */ val Verbose: typings.typedoc.loggersMod.LogLevel.Verbose & Double = js.native
     
-    /* 2 */ val Warn: typings.typedoc.loggersMod.LogLevel.Warn with Double = js.native
+    /* 2 */ val Warn: typings.typedoc.loggersMod.LogLevel.Warn & Double = js.native
   }
   
   @JSImport("typedoc/dist/lib/utils", "Logger")
@@ -412,11 +569,11 @@ object libUtilsMod {
   object ParameterHint extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterHint with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterHint & Double] = js.native
     
-    /* 1 */ val Directory: typings.typedoc.optionsDeclarationMod.ParameterHint.Directory with Double = js.native
+    /* 1 */ val Directory: typings.typedoc.optionsDeclarationMod.ParameterHint.Directory & Double = js.native
     
-    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.ParameterHint.File with Double = js.native
+    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.ParameterHint.File & Double = js.native
   }
   
   @JSImport("typedoc/dist/lib/utils", "ParameterScope")
@@ -424,11 +581,11 @@ object libUtilsMod {
   object ParameterScope extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterScope with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterScope & Double] = js.native
     
-    /* 0 */ val TypeDoc: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeDoc with Double = js.native
+    /* 0 */ val TypeDoc: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeDoc & Double = js.native
     
-    /* 1 */ val TypeScript: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeScript with Double = js.native
+    /* 1 */ val TypeScript: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeScript & Double = js.native
   }
   
   @JSImport("typedoc/dist/lib/utils", "ParameterType")
@@ -436,19 +593,19 @@ object libUtilsMod {
   object ParameterType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType & Double] = js.native
     
-    /* 5 */ val Array: typings.typedoc.optionsDeclarationMod.ParameterType.Array with Double = js.native
+    /* 5 */ val Array: typings.typedoc.optionsDeclarationMod.ParameterType.Array & Double = js.native
     
-    /* 2 */ val Boolean: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean with Double = js.native
+    /* 2 */ val Boolean: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean & Double = js.native
     
-    /* 3 */ val Map: typings.typedoc.optionsDeclarationMod.ParameterType.Map with Double = js.native
+    /* 3 */ val Map: typings.typedoc.optionsDeclarationMod.ParameterType.Map & Double = js.native
     
-    /* 4 */ val Mixed: typings.typedoc.optionsDeclarationMod.ParameterType.Mixed with Double = js.native
+    /* 4 */ val Mixed: typings.typedoc.optionsDeclarationMod.ParameterType.Mixed & Double = js.native
     
-    /* 1 */ val Number: typings.typedoc.optionsDeclarationMod.ParameterType.Number with Double = js.native
+    /* 1 */ val Number: typings.typedoc.optionsDeclarationMod.ParameterType.Number & Double = js.native
     
-    /* 0 */ val String: typings.typedoc.optionsDeclarationMod.ParameterType.String with Double = js.native
+    /* 0 */ val String: typings.typedoc.optionsDeclarationMod.ParameterType.String & Double = js.native
   }
   
   @JSImport("typedoc/dist/lib/utils", "PluginHost")
@@ -464,51 +621,42 @@ object libUtilsMod {
   object SourceFileMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.SourceFileMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.SourceFileMode & Double] = js.native
     
-    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.SourceFileMode.File with Double = js.native
+    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.SourceFileMode.File & Double = js.native
     
-    /* 1 */ val Modules: typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules with Double = js.native
+    /* 1 */ val Modules: typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules & Double = js.native
   }
   
-  @JSImport("typedoc/dist/lib/utils", "directoryExists")
-  @js.native
-  def directoryExists(directoryPath: String): Boolean = js.native
+  @scala.inline
+  def directoryExists(directoryPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("directoryExists")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typedoc/dist/lib/utils", "ensureDirectoriesExist")
-  @js.native
-  def ensureDirectoriesExist(directoryPath: String): Unit = js.native
+  @scala.inline
+  def ensureDirectoriesExist(directoryPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirectoriesExist")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedoc/dist/lib/utils", "insertPrioritySorted")
-  @js.native
-  def insertPrioritySorted[T /* <: Priority */](arr: js.Array[T], item: T): js.Array[T] = js.native
+  @scala.inline
+  def insertPrioritySorted[T /* <: Priority */](arr: js.Array[T], item: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPrioritySorted")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("typedoc/dist/lib/utils", "normalizePath")
-  @js.native
-  def normalizePath(path: String): String = js.native
+  @scala.inline
+  def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typedoc/dist/lib/utils", "readFile")
-  @js.native
-  def readFile(file: String): String = js.native
+  @scala.inline
+  def readFile(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typedoc/dist/lib/utils", "removeIfPresent")
-  @js.native
-  def removeIfPresent[T](arr: js.UndefOr[scala.Nothing], item: T): Unit = js.native
-  @JSImport("typedoc/dist/lib/utils", "removeIfPresent")
-  @js.native
-  def removeIfPresent[T](arr: js.Array[T], item: T): Unit = js.native
+  @scala.inline
+  def removeIfPresent[T](arr: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeIfPresent[T](arr: Unit, item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("typedoc/dist/lib/utils", "writeFile")
-  @js.native
-  def writeFile(fileName: String, data: String, writeByteOrderMark: Boolean): Unit = js.native
-  @JSImport("typedoc/dist/lib/utils", "writeFile")
-  @js.native
+  @scala.inline
+  def writeFile(fileName: String, data: String, writeByteOrderMark: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(fileName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], writeByteOrderMark.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def writeFile(
     fileName: String,
     data: String,
     writeByteOrderMark: Boolean,
     onError: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(fileName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], writeByteOrderMark.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type IfInternal[T, F] = F | T
   

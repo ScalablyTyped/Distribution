@@ -3,71 +3,69 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateNetworkInterface extends StObject {
   
   /**
     * Associate a public ip address with the network interface.  Boolean value.
     */
-  var associatePublicIpAddress: js.UndefOr[Input[String]] = js.native
+  var associatePublicIpAddress: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Whether the network interface should be destroyed on instance termination. Defaults to `false` if not set.
     */
-  var deleteOnTermination: js.UndefOr[Input[String]] = js.native
+  var deleteOnTermination: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Description of the network interface.
     */
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The integer index of the network interface attachment.
     */
-  var deviceIndex: js.UndefOr[Input[Double]] = js.native
+  var deviceIndex: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4Addresses`
     */
-  var ipv4AddressCount: js.UndefOr[Input[Double]] = js.native
+  var ipv4AddressCount: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * One or more private IPv4 addresses to associate. Conflicts with `ipv4AddressCount`
     */
-  var ipv4Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var ipv4Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6Addresses`
     */
-  var ipv6AddressCount: js.UndefOr[Input[Double]] = js.native
+  var ipv6AddressCount: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6AddressCount`
     */
-  var ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The ID of the network interface to attach.
     */
-  var networkInterfaceId: js.UndefOr[Input[String]] = js.native
+  var networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The primary private IPv4 address.
     */
-  var privateIpAddress: js.UndefOr[Input[String]] = js.native
+  var privateIpAddress: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A list of security group IDs to associate.
     */
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The VPC Subnet ID to associate.
     */
-  var subnetId: js.UndefOr[Input[String]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.undefined
 }
 object LaunchTemplateNetworkInterface {
   

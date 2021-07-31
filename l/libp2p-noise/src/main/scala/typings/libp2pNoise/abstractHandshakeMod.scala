@@ -10,7 +10,6 @@ import typings.libp2pNoise.handshakeMod.MessageBuffer
 import typings.libp2pNoise.handshakeMod.SymmetricState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractHandshakeMod {

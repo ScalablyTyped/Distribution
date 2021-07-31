@@ -2,17 +2,15 @@ package typings.openlayers.mod.olx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameState extends StObject {
   
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
-  var time: Double = js.native
+  var time: Double
   
-  var viewState: ViewState = js.native
+  var viewState: ViewState
 }
 object FrameState {
   

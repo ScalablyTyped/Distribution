@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.StructureMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyStructureMap extends StObject {
   
-  var body: StructureMap = js.native
+  var body: StructureMap
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.StructureMap = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.StructureMap
 }
 object BodyStructureMap {
   
   @scala.inline
-  def apply(body: StructureMap, resourceType: typings.fhirKitClient.fhirKitClientStrings.StructureMap): BodyStructureMap = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: StructureMap): BodyStructureMap = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "StructureMap")
     __obj.asInstanceOf[BodyStructureMap]
   }
   

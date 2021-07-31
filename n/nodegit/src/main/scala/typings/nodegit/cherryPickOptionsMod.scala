@@ -4,21 +4,19 @@ import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.mergeOptionsMod.MergeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cherryPickOptionsMod {
   
-  @js.native
   trait CherrypickOptions extends StObject {
     
-    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.native
+    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
     
-    var mainline: js.UndefOr[Double] = js.native
+    var mainline: js.UndefOr[Double] = js.undefined
     
-    var mergeOpts: js.UndefOr[MergeOptions] = js.native
+    var mergeOpts: js.UndefOr[MergeOptions] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object CherrypickOptions {
     

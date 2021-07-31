@@ -2,13 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateOneOptions extends ReplaceOneOptions {
+trait UpdateOneOptions
+  extends StObject
+     with ReplaceOneOptions {
   
-  var arrayFilters: js.UndefOr[js.Array[js.Object]] = js.native
+  var arrayFilters: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object UpdateOneOptions {
   

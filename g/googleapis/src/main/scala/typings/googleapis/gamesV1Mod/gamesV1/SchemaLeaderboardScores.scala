@@ -2,35 +2,33 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a ListScores response.
   */
-@js.native
 trait SchemaLeaderboardScores extends StObject {
   
   /**
     * The scores in the leaderboard.
     */
-  var items: js.UndefOr[js.Array[SchemaLeaderboardEntry]] = js.native
+  var items: js.UndefOr[js.Array[SchemaLeaderboardEntry]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#leaderboardScores.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination token for the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of scores in the leaderboard.
     */
-  var numScores: js.UndefOr[String] = js.native
+  var numScores: js.UndefOr[String] = js.undefined
   
   /**
     * The score of the requesting player on the leaderboard. The player&#39;s
@@ -39,12 +37,12 @@ trait SchemaLeaderboardScores extends StObject {
     * information publicly, the scoreRank and formattedScoreRank values will
     * not be present.
     */
-  var playerScore: js.UndefOr[SchemaLeaderboardEntry] = js.native
+  var playerScore: js.UndefOr[SchemaLeaderboardEntry] = js.undefined
   
   /**
     * The pagination token for the previous page of results.
     */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaderboardScores {
   

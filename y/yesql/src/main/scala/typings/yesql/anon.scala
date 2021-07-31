@@ -4,17 +4,15 @@ import typings.yesql.yesqlStrings.mysql
 import typings.yesql.yesqlStrings.pg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Pg extends StObject {
     
-    var pg: js.UndefOr[Boolean] = js.native
+    var pg: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[pg | mysql] = js.native
+    var `type`: js.UndefOr[pg | mysql] = js.undefined
   }
   object Pg {
     
@@ -41,14 +39,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sql[TParams /* <: js.Object */] extends StObject {
     
-    var sql: String = js.native
+    var sql: String
     
     var values: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
-      ] = js.native
+      ]
   }
   object Sql {
     
@@ -64,7 +61,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SqlMutableBuilder[Self <: Sql[_], TParams /* <: js.Object */] (val x: Self with Sql[TParams]) extends AnyVal {
+    implicit class SqlMutableBuilder[Self <: Sql[?], TParams /* <: js.Object */] (val x: Self & Sql[TParams]) extends AnyVal {
       
       @scala.inline
       def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
@@ -83,14 +80,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Text[TParams /* <: js.Object */] extends StObject {
     
-    var text: String = js.native
+    var text: String
     
     var values: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
-      ] = js.native
+      ]
   }
   object Text {
     
@@ -106,7 +102,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TextMutableBuilder[Self <: Text[_], TParams /* <: js.Object */] (val x: Self with Text[TParams]) extends AnyVal {
+    implicit class TextMutableBuilder[Self <: Text[?], TParams /* <: js.Object */] (val x: Self & Text[TParams]) extends AnyVal {
       
       @scala.inline
       def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])

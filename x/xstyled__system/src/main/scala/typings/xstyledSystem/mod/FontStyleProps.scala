@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyleProps extends StObject {
   
   val fontStyle: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FontStyleProps {
   
@@ -28,7 +26,7 @@ object FontStyleProps {
     @scala.inline
     def setFontStyle(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
         ]
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object FontStyleProps {
     def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFontStyleVarargs(value: js.Any*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+    def setFontStyleVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any)*
+    ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
   }
 }

@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeMod {
@@ -30,16 +29,15 @@ object iframeMod {
     def shouldComponentUpdate_MIFrame(nextProps: IFrameProps): Boolean = js.native
   }
   
-  @js.native
   trait BodyStyle extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var transform: String = js.native
+    var transform: String
     
-    var transformOrigin: String = js.native
+    var transformOrigin: String
     
-    var width: String = js.native
+    var width: String
   }
   object BodyStyle {
     
@@ -66,22 +64,21 @@ object iframeMod {
     }
   }
   
-  @js.native
   trait IFrameProps extends StObject {
     
-    var allowFullScreen: Boolean = js.native
+    var allowFullScreen: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var src: String = js.native
+    var src: String
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object IFrameProps {
     

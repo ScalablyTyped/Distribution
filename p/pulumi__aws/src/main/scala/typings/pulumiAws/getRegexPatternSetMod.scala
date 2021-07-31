@@ -4,30 +4,30 @@ import typings.pulumiAws.outputMod.wafv2.GetRegexPatternSetRegularExpression
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRegexPatternSetMod {
   
-  @JSImport("@pulumi/aws/wafv2/getRegexPatternSet", "getRegexPatternSet")
+  @JSImport("@pulumi/aws/wafv2/getRegexPatternSet", JSImport.Namespace)
   @js.native
-  def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = js.native
-  @JSImport("@pulumi/aws/wafv2/getRegexPatternSet", "getRegexPatternSet")
-  @js.native
-  def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
+  @scala.inline
+  def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
+  
   trait GetRegexPatternSetArgs extends StObject {
     
     /**
       * The name of the WAFv2 Regex Pattern Set.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: String = js.native
+    val scope: String
   }
   object GetRegexPatternSetArgs {
     
@@ -48,32 +48,31 @@ object getRegexPatternSetMod {
     }
   }
   
-  @js.native
   trait GetRegexPatternSetResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the entity.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The description of the set that helps with identification.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * One or more blocks of regular expression patterns that AWS WAF is searching for. See Regular Expression below for details.
       */
-    val regularExpressions: js.Array[GetRegexPatternSetRegularExpression] = js.native
+    val regularExpressions: js.Array[GetRegexPatternSetRegularExpression]
     
-    val scope: String = js.native
+    val scope: String
   }
   object GetRegexPatternSetResult {
     

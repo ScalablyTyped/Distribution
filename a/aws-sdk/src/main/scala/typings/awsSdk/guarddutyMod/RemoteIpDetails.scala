@@ -2,36 +2,34 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteIpDetails extends StObject {
   
   /**
     * The city information of the remote IP address.
     */
-  var City: js.UndefOr[typings.awsSdk.guarddutyMod.City] = js.native
+  var City: js.UndefOr[typings.awsSdk.guarddutyMod.City] = js.undefined
   
   /**
     * The country code of the remote IP address.
     */
-  var Country: js.UndefOr[typings.awsSdk.guarddutyMod.Country] = js.native
+  var Country: js.UndefOr[typings.awsSdk.guarddutyMod.Country] = js.undefined
   
   /**
     * The location information of the remote IP address.
     */
-  var GeoLocation: js.UndefOr[typings.awsSdk.guarddutyMod.GeoLocation] = js.native
+  var GeoLocation: js.UndefOr[typings.awsSdk.guarddutyMod.GeoLocation] = js.undefined
   
   /**
     * The IPv4 remote address of the connection.
     */
-  var IpAddressV4: js.UndefOr[String] = js.native
+  var IpAddressV4: js.UndefOr[String] = js.undefined
   
   /**
     * The ISP organization information of the remote IP address.
     */
-  var Organization: js.UndefOr[typings.awsSdk.guarddutyMod.Organization] = js.native
+  var Organization: js.UndefOr[typings.awsSdk.guarddutyMod.Organization] = js.undefined
 }
 object RemoteIpDetails {
   

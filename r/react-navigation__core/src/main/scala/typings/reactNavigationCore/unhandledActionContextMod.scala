@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.reactNavigationRouters.typesMod.NavigationAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unhandledActionContextMod extends Shortcut {

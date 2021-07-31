@@ -3,23 +3,23 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.stderr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StandardErrorAppender extends Appender {
+trait StandardErrorAppender
+  extends StObject
+     with Appender {
   
   // (defaults to colouredLayout)
-  var layout: js.UndefOr[Layout] = js.native
+  var layout: js.UndefOr[Layout] = js.undefined
   
-  var `type`: stderr = js.native
+  var `type`: stderr
 }
 object StandardErrorAppender {
   
   @scala.inline
-  def apply(`type`: stderr): StandardErrorAppender = {
+  def apply(): StandardErrorAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stderr")
     __obj.asInstanceOf[StandardErrorAppender]
   }
   

@@ -2,19 +2,17 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of files.
   */
-@js.native
 trait SchemaFileList extends StObject {
   
   /**
     * The ETag of the list.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the search process was incomplete. If true, then some search
@@ -25,23 +23,23 @@ trait SchemaFileList extends StObject {
     * query by choosing a different corpus such as &quot;default&quot; or
     * &quot;teamDrive&quot;.
     */
-  var incompleteSearch: js.UndefOr[Boolean] = js.native
+  var incompleteSearch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The list of files. If nextPageToken is populated, then this list may be
     * incomplete and an additional page of results should be fetched.
     */
-  var items: js.UndefOr[js.Array[SchemaFile]] = js.native
+  var items: js.UndefOr[js.Array[SchemaFile]] = js.undefined
   
   /**
     * This is always drive#fileList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the next page of files.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of files. This will be absent if the end
@@ -49,12 +47,12 @@ trait SchemaFileList extends StObject {
     * reason, it should be discarded, and pagination should be restarted from
     * the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaFileList {
   

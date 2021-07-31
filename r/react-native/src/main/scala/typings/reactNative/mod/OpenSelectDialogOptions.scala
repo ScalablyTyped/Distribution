@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenSelectDialogOptions extends StObject {
   
   /** Defaults to true */
-  var showImages: js.UndefOr[Boolean] = js.native
+  var showImages: js.UndefOr[Boolean] = js.undefined
   
   /** Defaults to false */
-  var showVideos: js.UndefOr[Boolean] = js.native
+  var showVideos: js.UndefOr[Boolean] = js.undefined
 }
 object OpenSelectDialogOptions {
   

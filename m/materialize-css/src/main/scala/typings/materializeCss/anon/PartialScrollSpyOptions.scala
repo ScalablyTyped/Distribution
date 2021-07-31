@@ -2,20 +2,18 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ScrollSpyOptions> */
-@js.native
 trait PartialScrollSpyOptions extends StObject {
   
-  var activeClass: js.UndefOr[String] = js.native
+  var activeClass: js.UndefOr[String] = js.undefined
   
-  var getActiveElement: js.UndefOr[js.Function1[/* id */ String, String]] = js.native
+  var getActiveElement: js.UndefOr[js.Function1[/* id */ String, String]] = js.undefined
   
-  var scrollOffset: js.UndefOr[Double] = js.native
+  var scrollOffset: js.UndefOr[Double] = js.undefined
   
-  var throttle: js.UndefOr[Double] = js.native
+  var throttle: js.UndefOr[Double] = js.undefined
 }
 object PartialScrollSpyOptions {
   

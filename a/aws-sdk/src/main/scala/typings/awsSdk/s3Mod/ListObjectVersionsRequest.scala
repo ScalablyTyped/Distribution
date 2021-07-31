@@ -2,48 +2,46 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectVersionsRequest extends StObject {
   
   /**
     * The bucket name that contains the objects. 
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * A delimiter is a character that you specify to group keys. All keys that contain the same string between the prefix and the first occurrence of the delimiter are grouped under a single result element in CommonPrefixes. These groups are counted as one result against the max-keys limitation. These keys are not returned elsewhere in the response.
     */
-  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.native
+  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.undefined
   
-  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.native
+  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Specifies the key to start with when listing objects in a bucket.
     */
-  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.native
+  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.undefined
   
   /**
     * Sets the maximum number of keys returned in the response. By default the API returns up to 1,000 key names. The response might contain fewer keys but will never contain more. If additional keys satisfy the search criteria, but were not returned because max-keys was exceeded, the response contains &lt;isTruncated&gt;true&lt;/isTruncated&gt;. To return the additional keys, see key-marker and version-id-marker.
     */
-  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
+  var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.undefined
   
   /**
     * Use this parameter to select only those keys that begin with the specified prefix. You can use prefixes to separate a bucket into different groupings of keys. (You can think of using prefix to make groups in the same way you'd use a folder in a file system.) You can use prefix with delimiter to roll up numerous objects into a single result under CommonPrefixes. 
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * Specifies the object version you want to start listing from.
     */
-  var VersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.VersionIdMarker] = js.native
+  var VersionIdMarker: js.UndefOr[typings.awsSdk.s3Mod.VersionIdMarker] = js.undefined
 }
 object ListObjectVersionsRequest {
   

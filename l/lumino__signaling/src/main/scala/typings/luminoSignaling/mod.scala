@@ -3,14 +3,15 @@ package typings.luminoSignaling
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@lumino/signaling", "Signal")
   @js.native
-  class Signal[T, U] protected () extends ISignal[T, U] {
+  class Signal[T, U] protected ()
+    extends StObject
+       with ISignal[T, U] {
     /**
       * Construct a new signal.
       *
@@ -37,6 +38,10 @@ object mod {
   }
   object Signal {
     
+    @JSImport("@lumino/signaling", "Signal")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clear all signal data associated with the given object.
       *
@@ -46,9 +51,8 @@ object mod {
       * This removes all signal connections and any other signal data
       * associated with the object.
       */
-    @JSImport("@lumino/signaling", "Signal.clearData")
-    @js.native
-    def clearData(`object`: js.Any): Unit = js.native
+    @scala.inline
+    def clearData(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where an object is the sender or receiver.
@@ -60,9 +64,8 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @JSImport("@lumino/signaling", "Signal.disconnectAll")
-    @js.native
-    def disconnectAll(`object`: js.Any): Unit = js.native
+    @scala.inline
+    def disconnectAll(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections between a sender and receiver.
@@ -76,9 +79,8 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @JSImport("@lumino/signaling", "Signal.disconnectBetween")
-    @js.native
-    def disconnectBetween(sender: js.Any, receiver: js.Any): Unit = js.native
+    @scala.inline
+    def disconnectBetween(sender: js.Any, receiver: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnectBetween")(sender.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the receiver.
@@ -90,18 +92,16 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @JSImport("@lumino/signaling", "Signal.disconnectReceiver")
-    @js.native
-    def disconnectReceiver(receiver: js.Any): Unit = js.native
+    @scala.inline
+    def disconnectReceiver(receiver: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectReceiver")(receiver.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the sender.
       *
       * @param sender - The sender object of interest.
       */
-    @JSImport("@lumino/signaling", "Signal.disconnectSender")
-    @js.native
-    def disconnectSender(sender: js.Any): Unit = js.native
+    @scala.inline
+    def disconnectSender(sender: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSender")(sender.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Get the signal exception handler.
@@ -111,9 +111,8 @@ object mod {
       * #### Notes
       * The default exception handler is `console.error`.
       */
-    @JSImport("@lumino/signaling", "Signal.getExceptionHandler")
-    @js.native
-    def getExceptionHandler(): ExceptionHandler = js.native
+    @scala.inline
+    def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
     
     /**
       * Set the signal exception handler.
@@ -125,9 +124,8 @@ object mod {
       * #### Notes
       * The exception handler is invoked when a slot throws an exception.
       */
-    @JSImport("@lumino/signaling", "Signal.setExceptionHandler")
-    @js.native
-    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = js.native
+    @scala.inline
+    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
     
     /**
       * A type alias for the exception handler function.

@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateSkillWithSkillGroupRequest extends StObject {
   
   /**
     * The ARN of the skill group to associate the skill to. Required.
     */
-  var SkillGroupArn: js.UndefOr[Arn] = js.native
+  var SkillGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The unique identifier of the skill.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object AssociateSkillWithSkillGroupRequest {
   

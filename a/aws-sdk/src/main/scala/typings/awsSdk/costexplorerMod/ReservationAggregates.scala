@@ -2,81 +2,79 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationAggregates extends StObject {
   
   /**
     * The monthly cost of your reservation, amortized over the reservation period.
     */
-  var AmortizedRecurringFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedRecurringFee] = js.native
+  var AmortizedRecurringFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedRecurringFee] = js.undefined
   
   /**
     * The upfront cost of your reservation, amortized over the reservation period.
     */
-  var AmortizedUpfrontFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedUpfrontFee] = js.native
+  var AmortizedUpfrontFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedUpfrontFee] = js.undefined
   
   /**
     * How much you saved due to purchasing and utilizing reservation. AWS calculates this by subtracting TotalAmortizedFee from OnDemandCostOfRIHoursUsed.
     */
-  var NetRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.NetRISavings] = js.native
+  var NetRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.NetRISavings] = js.undefined
   
   /**
     * How much your reservation would cost if charged On-Demand rates.
     */
-  var OnDemandCostOfRIHoursUsed: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCostOfRIHoursUsed] = js.native
+  var OnDemandCostOfRIHoursUsed: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCostOfRIHoursUsed] = js.undefined
   
   /**
     * How many reservation hours that you purchased.
     */
-  var PurchasedHours: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedHours] = js.native
+  var PurchasedHours: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedHours] = js.undefined
   
   /**
     * How many Amazon EC2 reservation hours that you purchased, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
-  var PurchasedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedUnits] = js.native
+  var PurchasedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedUnits] = js.undefined
   
   /**
     * The total number of reservation hours that you used.
     */
-  var TotalActualHours: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualHours] = js.native
+  var TotalActualHours: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualHours] = js.undefined
   
   /**
     * The total number of Amazon EC2 reservation hours that you used, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
-  var TotalActualUnits: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualUnits] = js.native
+  var TotalActualUnits: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualUnits] = js.undefined
   
   /**
     * The total cost of your reservation, amortized over the reservation period.
     */
-  var TotalAmortizedFee: js.UndefOr[typings.awsSdk.costexplorerMod.TotalAmortizedFee] = js.native
+  var TotalAmortizedFee: js.UndefOr[typings.awsSdk.costexplorerMod.TotalAmortizedFee] = js.undefined
   
   /**
     * How much you could save if you use your entire reservation.
     */
-  var TotalPotentialRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.TotalPotentialRISavings] = js.native
+  var TotalPotentialRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.TotalPotentialRISavings] = js.undefined
   
   /**
     * The number of reservation hours that you didn't use.
     */
-  var UnusedHours: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedHours] = js.native
+  var UnusedHours: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedHours] = js.undefined
   
   /**
     * The number of Amazon EC2 reservation hours that you didn't use, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
-  var UnusedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedUnits] = js.native
+  var UnusedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedUnits] = js.undefined
   
   /**
     * The percentage of reservation time that you used.
     */
-  var UtilizationPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentage] = js.native
+  var UtilizationPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentage] = js.undefined
   
   /**
     * The percentage of Amazon EC2 reservation time that you used, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
-  var UtilizationPercentageInUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentageInUnits] = js.native
+  var UtilizationPercentageInUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentageInUnits] = js.undefined
 }
 object ReservationAggregates {
   

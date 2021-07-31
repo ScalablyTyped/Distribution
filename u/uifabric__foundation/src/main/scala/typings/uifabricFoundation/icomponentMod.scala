@@ -15,32 +15,30 @@ import typings.uifabricFoundation.libIslotsMod.ISlottableProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icomponentMod {
   
   /* Inlined std.Required<@uifabric/foundation.@uifabric/foundation/lib/next/IComponent.IComponentOptions<TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics>> */
-  @js.native
   trait IComponent[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var factoryOptions: IFactoryOptions[TComponentProps] = js.native
+    var factoryOptions: IFactoryOptions[TComponentProps]
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
-    var slots: ISlotComponent[TComponentProps, TComponentSlots] = js.native
+    var slots: ISlotComponent[TComponentProps, TComponentSlots]
     
-    var state: IStateComponentType[TComponentProps, TViewProps] = js.native
+    var state: IStateComponentType[TComponentProps, TViewProps]
     
-    var statics: TStatics = js.native
+    var statics: TStatics
     
-    var styles: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet] = js.native
+    var styles: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]
     
-    var tokens: ITokenFunctionOrObject[TViewProps, TTokens] = js.native
+    var tokens: ITokenFunctionOrObject[TViewProps, TTokens]
     
-    var view: IViewComponent[TViewProps, TComponentSlots] = js.native
+    var view: IViewComponent[TViewProps, TComponentSlots]
   }
   object IComponent {
     
@@ -61,7 +59,7 @@ object icomponentMod {
     }
     
     @scala.inline
-    implicit class IComponentMutableBuilder[Self <: IComponent[_, _, _, _, _, _], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self with (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
+    implicit class IComponentMutableBuilder[Self <: IComponent[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       @scala.inline
       def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
@@ -103,19 +101,19 @@ object icomponentMod {
     }
   }
   
-  @js.native
   trait IComponentOptions[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics]
-    extends typings.uifabricFoundation.libIcomponentMod.IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] {
+    extends StObject
+       with typings.uifabricFoundation.libIcomponentMod.IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] {
     
     /**
       * Slot definition object defining the slot component for each slot.
       */
-    var slots: js.UndefOr[ISlotComponent[TComponentProps, TComponentSlots]] = js.native
+    var slots: js.UndefOr[ISlotComponent[TComponentProps, TComponentSlots]] = js.undefined
     
     /**
       * Stateless pure function that receives props to render the output of the component.
       */
-    var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.native
+    var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.undefined
   }
   object IComponentOptions {
     
@@ -126,7 +124,7 @@ object icomponentMod {
     }
     
     @scala.inline
-    implicit class IComponentOptionsMutableBuilder[Self <: IComponentOptions[_, _, _, _, _, _], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self with (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
+    implicit class IComponentOptionsMutableBuilder[Self <: IComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       @scala.inline
       def setSlots(value: ISlotComponent[TComponentProps, TComponentSlots]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
@@ -149,19 +147,19 @@ object icomponentMod {
   
   type IPartialSlotComponent[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots] = ISlotDefinition[TComponentSlots] | (js.Function1[/* props */ TComponentProps, ISlotDefinition[TComponentSlots]])
   
-  @js.native
   trait IRecompositionComponentOptions[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics]
-    extends typings.uifabricFoundation.libIcomponentMod.IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] {
+    extends StObject
+       with typings.uifabricFoundation.libIcomponentMod.IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] {
     
     /**
       * Slot definition object defining the slot component for each slot.
       */
-    var slots: js.UndefOr[IPartialSlotComponent[TComponentProps, TComponentSlots]] = js.native
+    var slots: js.UndefOr[IPartialSlotComponent[TComponentProps, TComponentSlots]] = js.undefined
     
     /**
       * Stateless pure function that receives props to render the output of the component.
       */
-    var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.native
+    var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.undefined
   }
   object IRecompositionComponentOptions {
     
@@ -172,7 +170,7 @@ object icomponentMod {
     }
     
     @scala.inline
-    implicit class IRecompositionComponentOptionsMutableBuilder[Self <: IRecompositionComponentOptions[_, _, _, _, _, _], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self with (IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
+    implicit class IRecompositionComponentOptionsMutableBuilder[Self <: IRecompositionComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       @scala.inline
       def setSlots(value: IPartialSlotComponent[TComponentProps, TComponentSlots]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])

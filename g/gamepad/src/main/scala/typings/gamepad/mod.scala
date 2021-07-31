@@ -9,7 +9,6 @@ import typings.gamepad.gamepadStrings.up
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,20 +17,19 @@ object mod extends Shortcut {
   @js.native
   val ^ : NodeGamepad = js.native
   
-  @js.native
   trait GamepadInstance extends StObject {
     
-    var axisStates: js.Array[Double] = js.native
+    var axisStates: js.Array[Double]
     
-    var buttonStates: js.Array[Boolean] = js.native
+    var buttonStates: js.Array[Boolean]
     
-    var description: String = js.native
+    var description: String
     
-    var deviceID: Double = js.native
+    var deviceID: Double
     
-    var productID: Double = js.native
+    var productID: Double
     
-    var vendorID: Double = js.native
+    var vendorID: Double
   }
   object GamepadInstance {
     

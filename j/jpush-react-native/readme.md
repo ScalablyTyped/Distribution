@@ -10,9 +10,9 @@ React Native JPush component for Android and iOS
 | ------------------ | :-------------: |
 | Full name          | jpush-react-native |
 | Keywords           | react-native, JPush |
-| # releases         | 30 |
+| # releases         | 24 |
 | # dependents       | 7 |
-| # downloads        | 26472 |
+| # downloads        | 21388 |
 | # stars            | 2 |
 
 ## Links

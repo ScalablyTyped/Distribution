@@ -3,7 +3,6 @@ package typings.popmotion
 import typings.popmotion.stepsMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popmotionStrings {
@@ -14,7 +13,9 @@ object popmotionStrings {
   def decay: decay = "decay".asInstanceOf[decay]
   
   @js.native
-  sealed trait end extends Direction
+  sealed trait end
+    extends StObject
+       with Direction
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -44,7 +45,9 @@ object popmotionStrings {
   def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait start extends Direction
+  sealed trait start
+    extends StObject
+       with Direction
   @scala.inline
   def start: start = "start".asInstanceOf[start]
 }

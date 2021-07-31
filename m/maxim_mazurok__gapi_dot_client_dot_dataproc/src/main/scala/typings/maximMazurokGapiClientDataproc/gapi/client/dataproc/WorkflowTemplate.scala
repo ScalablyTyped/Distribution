@@ -3,19 +3,17 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowTemplate extends StObject {
   
   /** Output only. The time template was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Required. The Directed Acyclic Graph of Jobs to submit. */
-  var jobs: js.UndefOr[js.Array[OrderedJob]] = js.native
+  var jobs: js.UndefOr[js.Array[OrderedJob]] = js.undefined
   
   /**
     * Optional. The labels to associate with this template. These labels will be propagated to all jobs and clusters created by the workflow instance.Label keys must contain 1 to 63
@@ -25,31 +23,31 @@ trait WorkflowTemplate extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates, the resource
     * name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For projects.locations.workflowTemplates, the resource name of
     * the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Optional. Template parameters whose values are substituted into the template. Values for parameters must be provided when the template is instantiated. */
-  var parameters: js.UndefOr[js.Array[TemplateParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[TemplateParameter]] = js.undefined
   
   /** Required. WorkflowTemplate scheduling information. */
-  var placement: js.UndefOr[WorkflowTemplatePlacement] = js.native
+  var placement: js.UndefOr[WorkflowTemplatePlacement] = js.undefined
   
   /** Output only. The time template was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Used to perform a consistent read-modify-write.This field should be left blank for a CreateWorkflowTemplate request. It is required for an UpdateWorkflowTemplate request,
     * and must match the current server version. A typical update template flow would fetch the current template with a GetWorkflowTemplate request, which will return the current template
     * with the version field filled in with the current server version. The user updates other fields in the template, then returns it as part of the UpdateWorkflowTemplate request.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object WorkflowTemplate {
   
@@ -87,7 +85,7 @@ object WorkflowTemplate {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

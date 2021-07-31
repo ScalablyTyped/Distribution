@@ -2,21 +2,19 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tree State
   */
-@js.native
 trait ITreeState extends StObject {
   
   //The currently loaded root node reference - depending on the section loaded this could be a section root or a normal root.
   //We keep this reference so we can lookup nodes to interact with in the UI via the tree service
-  var currentRootNode: js.Any = js.native
+  var currentRootNode: js.Any
   
   //The currently selected node
-  var selectedNode: js.Any = js.native
+  var selectedNode: js.Any
 }
 object ITreeState {
   

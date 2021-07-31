@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublisherAccountsResponse extends StObject {
   
   /** Publisher that the client credentials can access. */
-  var account: js.UndefOr[js.Array[PublisherAccount]] = js.native
+  var account: js.UndefOr[js.Array[PublisherAccount]] = js.undefined
   
   /** If not empty, indicates that there might be more accounts for the request; you must pass this value in a new `ListPublisherAccountsRequest`. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListPublisherAccountsResponse {
   

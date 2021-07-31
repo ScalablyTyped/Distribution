@@ -12,29 +12,27 @@ import typings.mapboxGl.mod.RasterPaint
 import typings.mapboxGl.mod.SymbolPaint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerProps extends StObject {
   
-  var beforeId: js.UndefOr[String] = js.native
+  var beforeId: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[js.Array[_]] = js.native
+  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var layout: js.UndefOr[AnyLayout] = js.native
+  var layout: js.UndefOr[AnyLayout] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var paint: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint = js.native
+  var paint: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object LayerProps {
   
@@ -58,7 +56,7 @@ object LayerProps {
     def setBeforeIdUndefined: Self = StObject.set(x, "beforeId", js.undefined)
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

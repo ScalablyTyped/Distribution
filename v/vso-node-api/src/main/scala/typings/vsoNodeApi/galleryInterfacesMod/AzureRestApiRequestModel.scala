@@ -2,56 +2,54 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureRestApiRequestModel extends StObject {
   
   /**
     * Gets or sets the Asset details
     */
-  var assetDetails: AssetDetails = js.native
+  var assetDetails: AssetDetails
   
   /**
     * Gets or sets the asset id
     */
-  var assetId: String = js.native
+  var assetId: String
   
   /**
     * Gets or sets the asset version
     */
-  var assetVersion: Double = js.native
+  var assetVersion: Double
   
   /**
     * Gets or sets the customer support email
     */
-  var customerSupportEmail: String = js.native
+  var customerSupportEmail: String
   
   /**
     * Gets or sets the integration contact email
     */
-  var integrationContactEmail: String = js.native
+  var integrationContactEmail: String
   
   /**
     * Gets or sets the asset version
     */
-  var operation: String = js.native
+  var operation: String
   
   /**
     * Gets or sets the plan identifier if any.
     */
-  var planId: String = js.native
+  var planId: String
   
   /**
     * Gets or sets the publisher id
     */
-  var publisherId: String = js.native
+  var publisherId: String
   
   /**
     * Gets or sets the resource type
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object AzureRestApiRequestModel {
   

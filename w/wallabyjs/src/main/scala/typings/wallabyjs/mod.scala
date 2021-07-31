@@ -3,21 +3,19 @@ package typings.wallabyjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait IWallaby extends StObject {
     
-    var compilers: js.UndefOr[IWallabyBuiltInCompilers] = js.native
+    var compilers: js.UndefOr[IWallabyBuiltInCompilers] = js.undefined
     
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
-    var localProjectDir: js.UndefOr[String] = js.native
+    var localProjectDir: js.UndefOr[String] = js.undefined
     
-    var projectCacheDir: js.UndefOr[String] = js.native
+    var projectCacheDir: js.UndefOr[String] = js.undefined
   }
   object IWallaby {
     
@@ -71,14 +69,13 @@ object mod {
     def typeScript(compilerOptions: IWallabyBuiltInCompilerOptions): IWallabyCompilerResult = js.native
   }
   
-  @js.native
   trait IWallabyCompilerResult extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var map: String = js.native
+    var map: String
     
-    var ranges: js.Any = js.native
+    var ranges: js.Any
   }
   object IWallabyCompilerResult {
     
@@ -104,26 +101,25 @@ object mod {
   
   type IWallabyCompilers = StringDictionary[js.Any]
   
-  @js.native
   trait IWallabyConfig extends StObject {
     
-    var compilers: js.UndefOr[IWallabyCompilers] = js.native
+    var compilers: js.UndefOr[IWallabyCompilers] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[IWallabyEnvironment] = js.native
+    var env: js.UndefOr[IWallabyEnvironment] = js.undefined
     
-    var files: js.Array[IWallabyFilePattern | String] = js.native
+    var files: js.Array[IWallabyFilePattern | String]
     
-    var postprocessor: js.UndefOr[IWallabyProcessor] = js.native
+    var postprocessor: js.UndefOr[IWallabyProcessor] = js.undefined
     
-    var preprocessors: js.UndefOr[IWallabyProcessor] = js.native
+    var preprocessors: js.UndefOr[IWallabyProcessor] = js.undefined
     
-    var testFramework: js.UndefOr[String] = js.native
+    var testFramework: js.UndefOr[String] = js.undefined
     
-    var tests: js.Array[IWallabyFilePattern | String] = js.native
+    var tests: js.Array[IWallabyFilePattern | String]
     
-    var workers: js.UndefOr[IWallabyWorkers] = js.native
+    var workers: js.UndefOr[IWallabyWorkers] = js.undefined
   }
   object IWallabyConfig {
     
@@ -192,16 +188,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IWallabyEnvironment extends StObject {
     
-    var params: js.UndefOr[IWallabyEnvironmentParameters] = js.native
+    var params: js.UndefOr[IWallabyEnvironmentParameters] = js.undefined
     
-    var runner: js.UndefOr[String] = js.native
+    var runner: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var viewportSize: js.UndefOr[IWallabyEnvironmentViewportSize] = js.native
+    var viewportSize: js.UndefOr[IWallabyEnvironmentViewportSize] = js.undefined
   }
   object IWallabyEnvironment {
     
@@ -240,12 +235,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IWallabyEnvironmentParameters extends StObject {
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var runner: js.UndefOr[String] = js.native
+    var runner: js.UndefOr[String] = js.undefined
   }
   object IWallabyEnvironmentParameters {
     
@@ -272,12 +266,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IWallabyEnvironmentViewportSize extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IWallabyEnvironmentViewportSize {
     
@@ -304,16 +297,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IWallabyFile extends StObject {
     
-    def changeExt(newExt: String): Unit = js.native
+    def changeExt(newExt: String): Unit
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    def rename(newPath: String): Unit = js.native
+    def rename(newPath: String): Unit
   }
   object IWallabyFile {
     
@@ -346,16 +338,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IWallabyFilePattern extends StObject {
     
-    var ignore: js.UndefOr[Boolean] = js.native
+    var ignore: js.UndefOr[Boolean] = js.undefined
     
-    var instrument: js.UndefOr[Boolean] = js.native
+    var instrument: js.UndefOr[Boolean] = js.undefined
     
-    var load: js.UndefOr[Boolean] = js.native
+    var load: js.UndefOr[Boolean] = js.undefined
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object IWallabyFilePattern {
     
@@ -393,10 +384,9 @@ object mod {
   
   type IWallabyProcessor = StringDictionary[js.Function1[/* file */ IWallabyFile, Unit]]
   
-  @js.native
   trait IWallabyWorkers extends StObject {
     
-    var recycle: js.UndefOr[Boolean] = js.native
+    var recycle: js.UndefOr[Boolean] = js.undefined
   }
   object IWallabyWorkers {
     

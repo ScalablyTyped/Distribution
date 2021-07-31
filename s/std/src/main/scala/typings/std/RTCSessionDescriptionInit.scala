@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCSessionDescriptionInit extends StObject {
   
-  var sdp: js.UndefOr[java.lang.String] = js.native
+  var sdp: js.UndefOr[java.lang.String] = js.undefined
   
-  var `type`: js.UndefOr[RTCSdpType] = js.native
+  var `type`: js.UndefOr[RTCSdpType] = js.undefined
 }
 object RTCSessionDescriptionInit {
   

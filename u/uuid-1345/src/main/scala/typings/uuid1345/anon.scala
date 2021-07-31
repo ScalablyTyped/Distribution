@@ -6,23 +6,21 @@ import typings.uuid1345.uuid1345Strings.ascii
 import typings.uuid1345.uuid1345Strings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var encoding: `object` = js.native
+    var encoding: `object`
     
-    var mac: js.UndefOr[Boolean] = js.native
+    var mac: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
     @scala.inline
-    def apply(encoding: `object`): `0` = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(encoding = "object")
       __obj.asInstanceOf[`0`]
     }
     
@@ -40,16 +38,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var encoding: ascii = js.native
+    var encoding: ascii
   }
   object `1` {
     
     @scala.inline
-    def apply(encoding: ascii): `1` = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(encoding = "ascii")
       __obj.asInstanceOf[`1`]
     }
     
@@ -61,16 +58,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var encoding: binary = js.native
+    var encoding: binary
   }
   object `2` {
     
     @scala.inline
-    def apply(encoding: binary): `2` = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): `2` = {
+      val __obj = js.Dynamic.literal(encoding = "binary")
       __obj.asInstanceOf[`2`]
     }
     
@@ -82,16 +78,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `3` extends StObject {
     
-    var encoding: `object` = js.native
+    var encoding: `object`
   }
   object `3` {
     
     @scala.inline
-    def apply(encoding: `object`): `3` = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): `3` = {
+      val __obj = js.Dynamic.literal(encoding = "object")
       __obj.asInstanceOf[`3`]
     }
     
@@ -103,18 +98,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: ascii = js.native
+    var encoding: ascii
     
-    var mac: js.UndefOr[Boolean] = js.native
+    var mac: js.UndefOr[Boolean] = js.undefined
   }
   object Encoding {
     
     @scala.inline
-    def apply(encoding: ascii): Encoding = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): Encoding = {
+      val __obj = js.Dynamic.literal(encoding = "ascii")
       __obj.asInstanceOf[Encoding]
     }
     
@@ -132,18 +126,17 @@ object anon {
     }
   }
   
-  @js.native
   trait EncodingMac extends StObject {
     
-    var encoding: binary = js.native
+    var encoding: binary
     
-    var mac: js.UndefOr[Boolean] = js.native
+    var mac: js.UndefOr[Boolean] = js.undefined
   }
   object EncodingMac {
     
     @scala.inline
-    def apply(encoding: binary): EncodingMac = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): EncodingMac = {
+      val __obj = js.Dynamic.literal(encoding = "binary")
       __obj.asInstanceOf[EncodingMac]
     }
     
@@ -161,20 +154,19 @@ object anon {
     }
   }
   
-  @js.native
   trait EncodingName extends StObject {
     
-    var encoding: binary = js.native
+    var encoding: binary
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: UuidTypes = js.native
+    var namespace: UuidTypes
   }
   object EncodingName {
     
     @scala.inline
-    def apply(encoding: binary, name: String, namespace: UuidTypes): EncodingName = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    def apply(name: String, namespace: UuidTypes): EncodingName = {
+      val __obj = js.Dynamic.literal(encoding = "binary", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncodingName]
     }
     
@@ -192,14 +184,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var variant: String = js.native
+    var variant: String
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Format {
     
@@ -226,10 +217,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mac extends StObject {
     
-    var mac: js.UndefOr[Boolean] = js.native
+    var mac: js.UndefOr[Boolean] = js.undefined
   }
   object Mac {
     
@@ -250,12 +240,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: UuidTypes = js.native
+    var namespace: UuidTypes
   }
   object Name {
     
@@ -276,20 +265,19 @@ object anon {
     }
   }
   
-  @js.native
   trait NameNamespace extends StObject {
     
-    var encoding: `object` = js.native
+    var encoding: `object`
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: UuidTypes = js.native
+    var namespace: UuidTypes
   }
   object NameNamespace {
     
     @scala.inline
-    def apply(encoding: `object`, name: String, namespace: UuidTypes): NameNamespace = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    def apply(name: String, namespace: UuidTypes): NameNamespace = {
+      val __obj = js.Dynamic.literal(encoding = "object", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameNamespace]
     }
     
@@ -307,20 +295,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Namespace extends StObject {
     
-    var encoding: ascii = js.native
+    var encoding: ascii
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: UuidTypes = js.native
+    var namespace: UuidTypes
   }
   object Namespace {
     
     @scala.inline
-    def apply(encoding: ascii, name: String, namespace: UuidTypes): Namespace = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    def apply(name: String, namespace: UuidTypes): Namespace = {
+      val __obj = js.Dynamic.literal(encoding = "ascii", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Namespace]
     }
     

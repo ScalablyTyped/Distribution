@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SitelinkBuilder[Sitelink]
-  extends AdWordsBuilder[Sitelink]
+  extends StObject
+     with AdWordsBuilder[Sitelink]
      with hasMobilePreferredBuilder[SitelinkBuilder[Sitelink]]
      with hasStartAndEndDateBuilder[SitelinkBuilder[Sitelink]]
      with hasSchedulesBuilder[SitelinkBuilder[Sitelink]]

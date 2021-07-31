@@ -2,46 +2,44 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGlobalClusterMessage extends StObject {
   
   /**
     *  The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon Aurora will not create a database in the global database cluster you are creating. 
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     *  The deletion protection setting for the new global database. The global database can't be deleted when deletion protection is enabled. 
     */
-  var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The name of the database engine to be used for this DB cluster.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The engine version of the Aurora global database.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The cluster identifier of the new global database cluster.
     */
-  var GlobalClusterIdentifier: js.UndefOr[String] = js.native
+  var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) to use as the primary cluster of the global database. This parameter is optional. 
     */
-  var SourceDBClusterIdentifier: js.UndefOr[String] = js.native
+  var SourceDBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  The storage encryption setting for the new global database cluster. 
     */
-  var StorageEncrypted: js.UndefOr[BooleanOptional] = js.native
+  var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
 }
 object CreateGlobalClusterMessage {
   

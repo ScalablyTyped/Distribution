@@ -7,7 +7,6 @@ import typings.awsSdk.pollyMod.^
 import typings.awsSdk.presignerMod.Presigner.PresignerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presignerMod {
@@ -40,18 +39,17 @@ object presignerMod {
   }
   object Presigner {
     
-    @js.native
     trait PresignerOptions extends StObject {
       
       /**
         * An optional map of parameters to bind to every request sent by this service object. 
         */
-      var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
       
       /**
         * An optional pre-configured instance of the AWS.Polly service object to use for requests. The object may bound parameters used by the presigner.
         */
-      var service: js.UndefOr[^] = js.native
+      var service: js.UndefOr[^] = js.undefined
     }
     object PresignerOptions {
       

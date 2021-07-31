@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3PaymentMethodDisplayInfo extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait GoogleActionsTransactionsV3PaymentMethodDisplayInfo extends StObject {
     * VISA **** 1234
     * Checking acct **** 5678
     */
-  var paymentMethodDisplayName: js.UndefOr[String] = js.native
+  var paymentMethodDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the payment.
     */
-  var paymentType: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfoPaymentType] = js.native
+  var paymentType: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfoPaymentType] = js.undefined
 }
 object GoogleActionsTransactionsV3PaymentMethodDisplayInfo {
   

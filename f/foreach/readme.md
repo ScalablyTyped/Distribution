@@ -12,7 +12,7 @@ foreach component + npm package
 | Keywords           | shim, Array.prototype.forEach, forEach, Array#forEach, each |
 | # releases         | 0 |
 | # dependents       | 107 |
-| # downloads        | 115725836 |
+| # downloads        | 141908318 |
 | # stars            | 5 |
 
 ## Links

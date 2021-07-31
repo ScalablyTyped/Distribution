@@ -3,15 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentSwitcherMod {
   
   @JSImport("carbon-components/components/content-switcher/content-switcher", JSImport.Default)
   @js.native
-  class default protected () extends ContentSwitcher {
+  class default protected ()
+    extends StObject
+       with ContentSwitcher {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _changeState(hasItem: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleClick(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def setActive(item: js.Any, callback: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,14 +38,13 @@ object contentSwitcherMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait ContentSwitcher extends StObject {
+  - Dropped any */ trait ContentSwitcher extends StObject {
     
-    def _changeState(hasItem: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(hasItem: js.Any, callback: js.Any): Unit
     
-    def _handleClick(event: js.Any): Unit = js.native
+    def _handleClick(event: js.Any): Unit
     
-    def setActive(item: js.Any, callback: js.Any): Unit = js.native
+    def setActive(item: js.Any, callback: js.Any): Unit
   }
   object ContentSwitcher {
     

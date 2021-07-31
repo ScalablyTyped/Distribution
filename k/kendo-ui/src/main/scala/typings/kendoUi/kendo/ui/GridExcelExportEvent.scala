@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.ooxml.Workbook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridExcelExportEvent extends GridEvent {
+trait GridExcelExportEvent
+  extends StObject
+     with GridEvent {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var workbook: js.UndefOr[Workbook] = js.native
+  var workbook: js.UndefOr[Workbook] = js.undefined
 }
 object GridExcelExportEvent {
   

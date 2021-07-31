@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidDBInstanceModificationsMessage extends StObject {
   
   /**
     * Valid storage options for your DB instance. 
     */
-  var Storage: js.UndefOr[ValidStorageOptionsList] = js.native
+  var Storage: js.UndefOr[ValidStorageOptionsList] = js.undefined
   
   /**
     * Valid processor features for your DB instance. 
     */
-  var ValidProcessorFeatures: js.UndefOr[AvailableProcessorFeatureList] = js.native
+  var ValidProcessorFeatures: js.UndefOr[AvailableProcessorFeatureList] = js.undefined
 }
 object ValidDBInstanceModificationsMessage {
   

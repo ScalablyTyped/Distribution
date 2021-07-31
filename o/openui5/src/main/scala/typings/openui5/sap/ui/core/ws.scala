@@ -4,23 +4,26 @@ import typings.openui5.anon.TypeofReadyState
 import typings.openui5.sap.ui.base.EventProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ws {
   
   @js.native
-  trait SapPcpWebSocket extends WebSocket {
+  trait SapPcpWebSocket
+    extends StObject
+       with WebSocket {
     
     def send(message: String, oPcpFields: js.Any): SapPcpWebSocket = js.native
     def send(message: js.Any): SapPcpWebSocket = js.native
     def send(message: js.Any, oPcpFields: js.Any): SapPcpWebSocket = js.native
-    def send(message: js.Array[_]): SapPcpWebSocket = js.native
-    def send(message: js.Array[_], oPcpFields: js.Any): SapPcpWebSocket = js.native
+    def send(message: js.Array[js.Any]): SapPcpWebSocket = js.native
+    def send(message: js.Array[js.Any], oPcpFields: js.Any): SapPcpWebSocket = js.native
   }
   
   @js.native
-  trait WebSocket extends EventProvider {
+  trait WebSocket
+    extends StObject
+       with EventProvider {
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'close' event of this

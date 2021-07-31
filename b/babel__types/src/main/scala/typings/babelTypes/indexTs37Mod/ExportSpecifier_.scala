@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ExportSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ExportSpecifier_
-  extends ModuleSpecifier
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ExportSpecifier_
+  extends StObject
+     with BaseNode
+     with ModuleSpecifier {
   
-  var exported: Identifier_ | StringLiteral_ = js.native
+  var exported: Identifier_ | StringLiteral_
   
-  var local: Identifier_ = js.native
+  var local: Identifier_
   
   @JSName("type")
-  var type_ExportSpecifier_ : ExportSpecifier = js.native
+  var type_ExportSpecifier_ : ExportSpecifier
 }
 object ExportSpecifier_ {
   
   @scala.inline
-  def apply(exported: Identifier_ | StringLiteral_, local: Identifier_, `type`: ExportSpecifier): ExportSpecifier_ = {
-    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(exported: Identifier_ | StringLiteral_, local: Identifier_): ExportSpecifier_ = {
+    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[ExportSpecifier_]
   }
   

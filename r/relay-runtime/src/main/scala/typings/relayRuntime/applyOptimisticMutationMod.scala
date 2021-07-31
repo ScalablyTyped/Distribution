@@ -11,27 +11,28 @@ import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applyOptimisticMutationMod {
   
-  @JSImport("relay-runtime/lib/mutations/applyOptimisticMutation", "applyOptimisticMutation")
+  @JSImport("relay-runtime/lib/mutations/applyOptimisticMutation", JSImport.Namespace)
   @js.native
-  def applyOptimisticMutation(environment: Environment, config: OptimisticMutationConfig): Disposable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def applyOptimisticMutation(environment: Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
   trait OptimisticMutationConfig extends StObject {
     
-    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig] | Null] = js.native
+    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig] | Null] = js.undefined
     
-    var mutation: GraphQLTaggedNode = js.native
+    var mutation: GraphQLTaggedNode
     
-    var optimisticResponse: js.UndefOr[js.Object] = js.native
+    var optimisticResponse: js.UndefOr[js.Object] = js.undefined
     
-    var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+    var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
     
-    var variables: Variables = js.native
+    var variables: Variables
   }
   object OptimisticMutationConfig {
     

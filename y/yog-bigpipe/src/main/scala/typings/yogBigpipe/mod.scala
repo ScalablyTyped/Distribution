@@ -13,17 +13,18 @@ import typings.yogBigpipe.mod.Pagelet.mode
 import typings.yogBigpipe.mod.Pagelet.status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(option: BigPipeOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("yog-bigpipe", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("yog-bigpipe", JSImport.Namespace)
-  @js.native
-  def apply(option: BigPipeOption): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yog-bigpipe", "BigPipe")
   @js.native
@@ -64,9 +65,9 @@ object mod {
     
     var pipelines: js.Array[Pagelet] = js.native
     
-    def prepareAllSources(): js.Promise[_] = js.native
+    def prepareAllSources(): js.Promise[js.Any] = js.native
     
-    def preparePageOnly(): js.Promise[_] = js.native
+    def preparePageOnly(): js.Promise[js.Any] = js.native
     
     def render(): Unit = js.native
     
@@ -129,7 +130,7 @@ object mod {
     
     var skipAnalysis: Boolean = js.native
     
-    def start(provider: js.Promise[_], sync: Boolean): Unit = js.native
+    def start(provider: js.Promise[js.Any], sync: Boolean): Unit = js.native
     
     var state: status = js.native
     
@@ -180,14 +181,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AddPageletConfig extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[typings.yogBigpipe.mod.Pagelet.mode] = js.native
+    var mode: js.UndefOr[typings.yogBigpipe.mod.Pagelet.mode] = js.undefined
   }
   object AddPageletConfig {
     
@@ -217,12 +217,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BigPipeOption extends StObject {
     
-    var skipAnalysis: js.UndefOr[Boolean] = js.native
+    var skipAnalysis: js.UndefOr[Boolean] = js.undefined
     
-    var tpl: js.UndefOr[Default] = js.native
+    var tpl: js.UndefOr[Default] = js.undefined
   }
   object BigPipeOption {
     
@@ -253,25 +252,24 @@ object mod {
   
   type PageletConstructor[T] = Instantiable1[/* obj */ PageletOption, T]
   
-  @js.native
   trait PageletData extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var css: js.Array[String] = js.native
+    var css: js.Array[String]
     
-    var html: String = js.native
+    var html: String
     
-    var id: String = js.native
+    var id: String
     
     @JSName("js")
-    var js_ : js.Array[String] = js.native
+    var js_ : js.Array[String]
     
-    var reqID: String = js.native
+    var reqID: String
     
-    var scripts: js.Array[String] = js.native
+    var scripts: js.Array[String]
     
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
   }
   object PageletData {
     
@@ -332,26 +330,25 @@ object mod {
     }
   }
   
-  @js.native
   trait PageletOption extends StObject {
     
-    var compiled: js.UndefOr[Boolean] = js.native
+    var compiled: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
-    var `for`: js.UndefOr[String] = js.native
+    var `for`: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var locals: js.UndefOr[js.Object] = js.native
+    var locals: js.UndefOr[js.Object] = js.undefined
     
-    var mode: js.UndefOr[typings.yogBigpipe.mod.Pagelet.mode] = js.native
+    var mode: js.UndefOr[typings.yogBigpipe.mod.Pagelet.mode] = js.undefined
     
-    var reqID: String = js.native
+    var reqID: String
     
-    var skipAnalysis: Boolean = js.native
+    var skipAnalysis: Boolean
   }
   object PageletOption {
     

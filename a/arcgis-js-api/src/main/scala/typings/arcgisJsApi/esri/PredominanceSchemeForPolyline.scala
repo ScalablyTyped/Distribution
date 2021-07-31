@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredominanceSchemeForPolyline
-  extends Object
+  extends StObject
+     with Object
      with PredominanceScheme {
   
   /**
@@ -17,49 +16,49 @@ trait PredominanceSchemeForPolyline
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the line symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the line symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * The scheme defining the size visual variable if included in a predominance visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var sizeScheme: SizeSchemeForPolyline = js.native
+  var sizeScheme: SizeSchemeForPolyline
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * The default width of the line symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object PredominanceSchemeForPolyline {
   

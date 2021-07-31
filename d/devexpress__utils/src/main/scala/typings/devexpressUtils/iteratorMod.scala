@@ -4,7 +4,6 @@ import typings.devexpressUtils.constMod.ConstInterval
 import typings.devexpressUtils.intervalsMod.SparseIntervals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iteratorMod {

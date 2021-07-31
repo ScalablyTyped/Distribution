@@ -3,17 +3,15 @@ package typings.stylableCore.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputValue extends StObject {
   
-  var outputValue: String = js.native
+  var outputValue: String
   
-  var topLevelType: js.Any = js.native
+  var topLevelType: js.Any
   
-  var typeError: Error = js.native
+  var typeError: Error
 }
 object OutputValue {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kmsGetKeyMod {
   
-  @JSImport("@pulumi/aws/kms/getKey", "getKey")
+  @JSImport("@pulumi/aws/kms/getKey", JSImport.Namespace)
   @js.native
-  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = js.native
-  @JSImport("@pulumi/aws/kms/getKey", "getKey")
-  @js.native
-  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetKeyResult]]
+  @scala.inline
+  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetKeyResult]]
+  
   trait GetKeyArgs extends StObject {
     
     /**
       * List of grant tokens
       */
-    val grantTokens: js.UndefOr[js.Array[String]] = js.native
+    val grantTokens: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Key identifier which can be one of the following format:
@@ -30,7 +30,7 @@ object kmsGetKeyMod {
       * * Alias name. E.g.: `alias/my-key`
       * * Alias ARN: E.g.: `arn:aws:kms:us-east-1:111122223333:alias/my-key`
       */
-    val keyId: String = js.native
+    val keyId: String
   }
   object GetKeyArgs {
     
@@ -57,43 +57,42 @@ object kmsGetKeyMod {
     }
   }
   
-  @js.native
   trait GetKeyResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val awsAccountId: String = js.native
+    val awsAccountId: String
     
-    val creationDate: String = js.native
+    val creationDate: String
     
-    val customerMasterKeySpec: String = js.native
+    val customerMasterKeySpec: String
     
-    val deletionDate: String = js.native
+    val deletionDate: String
     
-    val description: String = js.native
+    val description: String
     
-    val enabled: Boolean = js.native
+    val enabled: Boolean
     
-    val expirationModel: String = js.native
+    val expirationModel: String
     
-    val grantTokens: js.UndefOr[js.Array[String]] = js.native
+    val grantTokens: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val keyId: String = js.native
+    val keyId: String
     
-    val keyManager: String = js.native
+    val keyManager: String
     
-    val keyState: String = js.native
+    val keyState: String
     
-    val keyUsage: String = js.native
+    val keyUsage: String
     
-    val origin: String = js.native
+    val origin: String
     
-    val validTo: String = js.native
+    val validTo: String
   }
   object GetKeyResult {
     

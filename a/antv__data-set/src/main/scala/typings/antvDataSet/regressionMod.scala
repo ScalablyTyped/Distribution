@@ -11,7 +11,6 @@ import typings.antvDataSet.antvDataSetStrings.triweight
 import typings.antvDataSet.antvDataSetStrings.uniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regressionMod {
@@ -29,18 +28,17 @@ object regressionMod {
     def KERNEL_METHODS_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KERNEL_METHODS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Tuple2[String, js.UndefOr[String]]] = js.native
+    var as: js.UndefOr[js.Tuple2[String, js.UndefOr[String]]] = js.undefined
     
-    var bandwidth: js.UndefOr[Double] = js.native
+    var bandwidth: js.UndefOr[Double] = js.undefined
     
-    var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var fields: js.UndefOr[js.Tuple2[String, js.UndefOr[String]]] = js.native
+    var fields: js.UndefOr[js.Tuple2[String, js.UndefOr[String]]] = js.undefined
     
-    var method: cosine | epanechnikov | gaussian | quartic | triangular | tricube | triweight | uniform | boxcar = js.native
+    var method: cosine | epanechnikov | gaussian | quartic | triangular | tricube | triweight | uniform | boxcar
   }
   object Options {
     

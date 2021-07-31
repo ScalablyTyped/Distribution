@@ -3,25 +3,34 @@ package typings.pgMinify
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sql: String): String = ^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(sql: String, options: IMinifyOptions): String = (^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("pg-minify", JSImport.Namespace)
   @js.native
-  def apply(sql: String): String = js.native
-  @JSImport("pg-minify", JSImport.Namespace)
-  @js.native
-  def apply(sql: String, options: IMinifyOptions): String = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pg-minify", "SQLParsingError")
   @js.native
-  class SQLParsingError () extends Error {
+  class SQLParsingError ()
+    extends StObject
+       with Error {
     
     var code: parsingErrorCode = js.native
     
     var error: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var position: IErrorPosition = js.native
     
@@ -36,34 +45,41 @@ object mod {
   object parsingErrorCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[parsingErrorCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[parsingErrorCode & Double] = js.native
     
     // Unclosed quoted identifier.
     @js.native
-    sealed trait multiLineQI extends parsingErrorCode
-    /* 3 */ val multiLineQI: typings.pgMinify.mod.parsingErrorCode.multiLineQI with Double = js.native
+    sealed trait multiLineQI
+      extends StObject
+         with parsingErrorCode
+    /* 3 */ val multiLineQI: typings.pgMinify.mod.parsingErrorCode.multiLineQI & Double = js.native
     
     @js.native
-    sealed trait unclosedMLC extends parsingErrorCode
-    /* 0 */ val unclosedMLC: typings.pgMinify.mod.parsingErrorCode.unclosedMLC with Double = js.native
+    sealed trait unclosedMLC
+      extends StObject
+         with parsingErrorCode
+    /* 0 */ val unclosedMLC: typings.pgMinify.mod.parsingErrorCode.unclosedMLC & Double = js.native
     
     // Unclosed text block.
     @js.native
-    sealed trait unclosedQI extends parsingErrorCode
-    /* 2 */ val unclosedQI: typings.pgMinify.mod.parsingErrorCode.unclosedQI with Double = js.native
+    sealed trait unclosedQI
+      extends StObject
+         with parsingErrorCode
+    /* 2 */ val unclosedQI: typings.pgMinify.mod.parsingErrorCode.unclosedQI & Double = js.native
     
     // Unclosed multi-line comment.
     @js.native
-    sealed trait unclosedText extends parsingErrorCode
-    /* 1 */ val unclosedText: typings.pgMinify.mod.parsingErrorCode.unclosedText with Double = js.native
+    sealed trait unclosedText
+      extends StObject
+         with parsingErrorCode
+    /* 1 */ val unclosedText: typings.pgMinify.mod.parsingErrorCode.unclosedText & Double = js.native
   }
   
-  @js.native
   trait IErrorPosition extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object IErrorPosition {
     
@@ -84,12 +100,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IMinifyOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var removeAll: js.UndefOr[Boolean] = js.native
+    var removeAll: js.UndefOr[Boolean] = js.undefined
   }
   object IMinifyOptions {
     

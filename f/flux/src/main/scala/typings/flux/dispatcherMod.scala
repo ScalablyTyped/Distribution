@@ -2,7 +2,6 @@ package typings.flux
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispatcherMod {
@@ -19,38 +18,73 @@ object dispatcherMod {
     *     var dispatcher = new flux.Dispatcher<any>()
     *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
     */
-  class ^[TPayload] () extends Dispatcher[TPayload]
-  
-  @js.native
-  trait Dispatcher[TPayload] extends StObject {
+  class ^[TPayload] ()
+    extends StObject
+       with Dispatcher[TPayload] {
     
     /**
       * Dispatches a payload to all registered callbacks
       */
-    def dispatch(payload: TPayload): Unit = js.native
+    /* CompleteClass */
+    override def dispatch(payload: TPayload): Unit = js.native
     
     /**
       * Gets whether the dispatcher is currently dispatching
       */
-    def isDispatching(): Boolean = js.native
+    /* CompleteClass */
+    override def isDispatching(): Boolean = js.native
     
     /**
       * Registers a callback that will be invoked with every payload sent to the dispatcher.
       * Returns a string token to identify the callback to be used with waitFor() or unregister.
       */
-    def register(callback: js.Function1[/* payload */ TPayload, Unit]): String = js.native
+    /* CompleteClass */
+    override def register(callback: js.Function1[TPayload, Unit]): String = js.native
     
     /**
       * Unregisters a callback with the given ID token
       */
-    def unregister(id: String): Unit = js.native
+    /* CompleteClass */
+    override def unregister(id: String): Unit = js.native
     
     /**
       * Waits for the callbacks with the specified IDs to be invoked before continuing execution
       * of the current callback. This method should only be used by a callback in response
       * to a dispatched payload.
       */
-    def waitFor(IDs: js.Array[String]): Unit = js.native
+    /* CompleteClass */
+    override def waitFor(IDs: js.Array[String]): Unit = js.native
+  }
+  
+  trait Dispatcher[TPayload] extends StObject {
+    
+    /**
+      * Dispatches a payload to all registered callbacks
+      */
+    def dispatch(payload: TPayload): Unit
+    
+    /**
+      * Gets whether the dispatcher is currently dispatching
+      */
+    def isDispatching(): Boolean
+    
+    /**
+      * Registers a callback that will be invoked with every payload sent to the dispatcher.
+      * Returns a string token to identify the callback to be used with waitFor() or unregister.
+      */
+    def register(callback: js.Function1[/* payload */ TPayload, Unit]): String
+    
+    /**
+      * Unregisters a callback with the given ID token
+      */
+    def unregister(id: String): Unit
+    
+    /**
+      * Waits for the callbacks with the specified IDs to be invoked before continuing execution
+      * of the current callback. This method should only be used by a callback in response
+      * to a dispatched payload.
+      */
+    def waitFor(IDs: js.Array[String]): Unit
   }
   object Dispatcher {
     
@@ -67,7 +101,7 @@ object dispatcherMod {
     }
     
     @scala.inline
-    implicit class DispatcherMutableBuilder[Self <: Dispatcher[_], TPayload] (val x: Self with Dispatcher[TPayload]) extends AnyVal {
+    implicit class DispatcherMutableBuilder[Self <: Dispatcher[?], TPayload] (val x: Self & Dispatcher[TPayload]) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: TPayload => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))

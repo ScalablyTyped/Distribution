@@ -4,7 +4,6 @@ import typings.snabbdom.vnodeMod.VNodeData
 import typings.snabbdom.vnodeMod.VNode_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thunkMod {
@@ -13,19 +12,20 @@ object thunkMod {
   @js.native
   val thunk: ThunkFn = js.native
   
-  @js.native
-  trait ThunkData extends VNodeData {
+  trait ThunkData
+    extends StObject
+       with VNodeData {
     
     @JSName("args")
-    var args_ThunkData: js.Array[_] = js.native
+    var args_ThunkData: js.Array[js.Any]
     
     @JSName("fn")
-    def fn_MThunkData(): VNode_ = js.native
+    def fn_MThunkData(): VNode_
   }
   object ThunkData {
     
     @scala.inline
-    def apply(args: js.Array[_], fn: () => VNode_): ThunkData = {
+    def apply(args: js.Array[js.Any], fn: () => VNode_): ThunkData = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], fn = js.Any.fromFunction0(fn))
       __obj.asInstanceOf[ThunkData]
     }
@@ -34,7 +34,7 @@ object thunkMod {
     implicit class ThunkDataMutableBuilder[Self <: ThunkData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -47,15 +47,16 @@ object thunkMod {
   @js.native
   trait ThunkFn extends StObject {
     
-    def apply(sel: String, fn: js.Function, args: js.Array[_]): Thunk_ = js.native
-    def apply(sel: String, key: js.Any, fn: js.Function, args: js.Array[_]): Thunk_ = js.native
+    def apply(sel: String, fn: js.Function, args: js.Array[js.Any]): Thunk_ = js.native
+    def apply(sel: String, key: js.Any, fn: js.Function, args: js.Array[js.Any]): Thunk_ = js.native
   }
   
-  @js.native
-  trait Thunk_ extends VNode_ {
+  trait Thunk_
+    extends StObject
+       with VNode_ {
     
     @JSName("data")
-    var data_Thunk_ : ThunkData = js.native
+    var data_Thunk_ : ThunkData
   }
   object Thunk_ {
     

@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.beans.Optional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines the interface for an {@link XPropertyControl} which supports displaying and entering numerical values.
   * @since OOo 2.0.3
   */
-@js.native
-trait XNumericControl extends XPropertyControl {
+trait XNumericControl
+  extends StObject
+     with XPropertyControl {
   
   /** describes the number of decimal digits to use for the value */
-  var DecimalDigits: Double = js.native
+  var DecimalDigits: Double
   
   /**
     * describes a {@link com.sun.star.util.MeasureUnit} to be applied for displaying values.
@@ -25,13 +25,13 @@ trait XNumericControl extends XPropertyControl {
     * (like 100th millimeters) cannot be used as DisplayUnit.
     * @throws com::sun::star::lang::IllegalArgumentException if the caller attempts to set an unsupported {@link com.sun.star.util.MeasureUnit}
     */
-  var DisplayUnit: Double = js.native
+  var DisplayUnit: Double
   
   /** describes the maximum value which is allowed to be entered in the control */
-  var MaxValue: Optional[Double] = js.native
+  var MaxValue: Optional[Double]
   
   /** describes the minimum value which is allowed to be entered in the control */
-  var MinValue: Optional[Double] = js.native
+  var MinValue: Optional[Double]
   
   /**
     * describes a {@link com.sun.star.util.MeasureUnit} to be applied for transferring values.
@@ -41,7 +41,7 @@ trait XNumericControl extends XPropertyControl {
     * control can automatically handle the value conversion for you, if you give it a ValueUnit different from the DisplayUnit.
     * @see XPropertyControl.Value
     */
-  var ValueUnit: Double = js.native
+  var ValueUnit: Double
 }
 object XNumericControl {
   

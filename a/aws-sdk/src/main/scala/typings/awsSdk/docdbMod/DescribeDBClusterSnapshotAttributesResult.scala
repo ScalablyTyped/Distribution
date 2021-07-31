@@ -2,13 +2,11 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDBClusterSnapshotAttributesResult extends StObject {
   
-  var DBClusterSnapshotAttributesResult: js.UndefOr[typings.awsSdk.docdbMod.DBClusterSnapshotAttributesResult] = js.native
+  var DBClusterSnapshotAttributesResult: js.UndefOr[typings.awsSdk.docdbMod.DBClusterSnapshotAttributesResult] = js.undefined
 }
 object DescribeDBClusterSnapshotAttributesResult {
   

@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  val Command: js.Any = js.native
+  val Command: js.Any
   
-  val Enabled: js.Any = js.native
+  val Enabled: js.Any
 }
 object Enabled {
   

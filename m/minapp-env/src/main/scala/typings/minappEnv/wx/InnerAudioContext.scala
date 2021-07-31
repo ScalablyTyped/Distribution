@@ -2,7 +2,6 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** InnerAudioContext 实例，可通过 [wx.createInnerAudioContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/wx.createInnerAudioContext.html) 接口获取实例。
@@ -40,31 +39,30 @@ innerAudioContext.onError((res) => {
   console.log(res.errCode)
 })
 ``` */
-@js.native
 trait InnerAudioContext extends StObject {
   
   /** 是否自动开始播放，默认为 `false` */
-  var autoplay: Boolean = js.native
+  var autoplay: Boolean
   
   /** 音频缓冲的时间点，仅保证当前播放时间点到此时间点内容已缓冲（只读） */
-  var buffered: Double = js.native
+  var buffered: Double
   
   /** 当前音频的播放位置（单位 s）。只有在当前有合法的 src 时返回，时间保留小数点后 6 位（只读） */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
   /** [InnerAudioContext.destroy()](InnerAudioContext.destroy.md)
     *
     * 销毁当前实例 */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /** 当前音频的长度（单位 s）。只有在当前有合法的 src 时返回（只读） */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 是否循环播放，默认为 `false` */
-  var loop: Boolean = js.native
+  var loop: Boolean
   
   /** 是否遵循系统静音开关，默认为 `true`。当此参数为 `false` 时，即使用户打开了静音开关，也能继续发出声音 */
-  var obeyMuteSwitch: Boolean = js.native
+  var obeyMuteSwitch: Boolean
   
   /** [InnerAudioContext.offCanplay(function callback)](InnerAudioContext.offCanplay.md)
     *
@@ -72,7 +70,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offCanplay(/** 音频进入可以播放状态的事件的回调函数 */
-  callback: OffCanplayCallback): Unit = js.native
+  callback: OffCanplayCallback): Unit
   
   /** [InnerAudioContext.offEnded(function callback)](InnerAudioContext.offEnded.md)
     *
@@ -80,7 +78,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offEnded(/** 音频自然播放至结束的事件的回调函数 */
-  callback: OffEndedCallback): Unit = js.native
+  callback: OffEndedCallback): Unit
   
   /** [InnerAudioContext.offError(function callback)](InnerAudioContext.offError.md)
     *
@@ -88,7 +86,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offError(/** 音频播放错误事件的回调函数 */
-  callback: OffErrorCallback): Unit = js.native
+  callback: OffErrorCallback): Unit
   
   /** [InnerAudioContext.offPause(function callback)](InnerAudioContext.offPause.md)
     *
@@ -96,7 +94,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offPause(/** 音频暂停事件的回调函数 */
-  callback: OffPauseCallback): Unit = js.native
+  callback: OffPauseCallback): Unit
   
   /** [InnerAudioContext.offPlay(function callback)](InnerAudioContext.offPlay.md)
     *
@@ -104,7 +102,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offPlay(/** 音频播放事件的回调函数 */
-  callback: OffPlayCallback): Unit = js.native
+  callback: OffPlayCallback): Unit
   
   /** [InnerAudioContext.offSeeked(function callback)](InnerAudioContext.offSeeked.md)
     *
@@ -112,7 +110,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offSeeked(/** 音频完成跳转操作的事件的回调函数 */
-  callback: OffSeekedCallback): Unit = js.native
+  callback: OffSeekedCallback): Unit
   
   /** [InnerAudioContext.offSeeking(function callback)](InnerAudioContext.offSeeking.md)
     *
@@ -120,7 +118,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offSeeking(/** 音频进行跳转操作的事件的回调函数 */
-  callback: OffSeekingCallback): Unit = js.native
+  callback: OffSeekingCallback): Unit
   
   /** [InnerAudioContext.offStop(function callback)](InnerAudioContext.offStop.md)
     *
@@ -128,7 +126,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offStop(/** 音频停止事件的回调函数 */
-  callback: OffStopCallback): Unit = js.native
+  callback: OffStopCallback): Unit
   
   /** [InnerAudioContext.offTimeUpdate(function callback)](InnerAudioContext.offTimeUpdate.md)
     *
@@ -136,7 +134,7 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offTimeUpdate(/** 音频播放进度更新事件的回调函数 */
-  callback: OffTimeUpdateCallback): Unit = js.native
+  callback: OffTimeUpdateCallback): Unit
   
   /** [InnerAudioContext.offWaiting(function callback)](InnerAudioContext.offWaiting.md)
     *
@@ -144,102 +142,102 @@ trait InnerAudioContext extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def offWaiting(/** 音频加载中事件的回调函数 */
-  callback: OffWaitingCallback): Unit = js.native
+  callback: OffWaitingCallback): Unit
   
   /** [InnerAudioContext.onCanplay(function callback)](InnerAudioContext.onCanplay.md)
     *
     * 监听音频进入可以播放状态的事件。但不保证后面可以流畅播放 */
   def onCanplay(/** 音频进入可以播放状态的事件的回调函数 */
-  callback: InnerAudioContextOnCanplayCallback): Unit = js.native
+  callback: InnerAudioContextOnCanplayCallback): Unit
   
   /** [InnerAudioContext.onEnded(function callback)](InnerAudioContext.onEnded.md)
     *
     * 监听音频自然播放至结束的事件 */
   def onEnded(/** 音频自然播放至结束的事件的回调函数 */
-  callback: InnerAudioContextOnEndedCallback): Unit = js.native
+  callback: InnerAudioContextOnEndedCallback): Unit
   
   /** [InnerAudioContext.onError(function callback)](InnerAudioContext.onError.md)
     *
     * 监听音频播放错误事件 */
   def onError(/** 音频播放错误事件的回调函数 */
-  callback: InnerAudioContextOnErrorCallback): Unit = js.native
+  callback: InnerAudioContextOnErrorCallback): Unit
   
   /** [InnerAudioContext.onPause(function callback)](InnerAudioContext.onPause.md)
     *
     * 监听音频暂停事件 */
   def onPause(/** 音频暂停事件的回调函数 */
-  callback: InnerAudioContextOnPauseCallback): Unit = js.native
+  callback: InnerAudioContextOnPauseCallback): Unit
   
   /** [InnerAudioContext.onPlay(function callback)](InnerAudioContext.onPlay.md)
     *
     * 监听音频播放事件 */
   def onPlay(/** 音频播放事件的回调函数 */
-  callback: InnerAudioContextOnPlayCallback): Unit = js.native
+  callback: InnerAudioContextOnPlayCallback): Unit
   
   /** [InnerAudioContext.onSeeked(function callback)](InnerAudioContext.onSeeked.md)
     *
     * 监听音频完成跳转操作的事件 */
   def onSeeked(/** 音频完成跳转操作的事件的回调函数 */
-  callback: InnerAudioContextOnSeekedCallback): Unit = js.native
+  callback: InnerAudioContextOnSeekedCallback): Unit
   
   /** [InnerAudioContext.onSeeking(function callback)](InnerAudioContext.onSeeking.md)
     *
     * 监听音频进行跳转操作的事件 */
   def onSeeking(/** 音频进行跳转操作的事件的回调函数 */
-  callback: InnerAudioContextOnSeekingCallback): Unit = js.native
+  callback: InnerAudioContextOnSeekingCallback): Unit
   
   /** [InnerAudioContext.onStop(function callback)](InnerAudioContext.onStop.md)
     *
     * 监听音频停止事件 */
   def onStop(/** 音频停止事件的回调函数 */
-  callback: InnerAudioContextOnStopCallback): Unit = js.native
+  callback: InnerAudioContextOnStopCallback): Unit
   
   /** [InnerAudioContext.onTimeUpdate(function callback)](InnerAudioContext.onTimeUpdate.md)
     *
     * 监听音频播放进度更新事件 */
   def onTimeUpdate(/** 音频播放进度更新事件的回调函数 */
-  callback: InnerAudioContextOnTimeUpdateCallback): Unit = js.native
+  callback: InnerAudioContextOnTimeUpdateCallback): Unit
   
   /** [InnerAudioContext.onWaiting(function callback)](InnerAudioContext.onWaiting.md)
     *
     * 监听音频加载中事件。当音频因为数据不足，需要停下来加载时会触发 */
   def onWaiting(/** 音频加载中事件的回调函数 */
-  callback: InnerAudioContextOnWaitingCallback): Unit = js.native
+  callback: InnerAudioContextOnWaitingCallback): Unit
   
   /** [InnerAudioContext.pause()](InnerAudioContext.pause.md)
     *
     * 暂停。暂停后的音频再播放会从暂停处开始播放 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** 当前是是否暂停或停止状态（只读） */
-  var paused: Boolean = js.native
+  var paused: Boolean
   
   /** [InnerAudioContext.play()](InnerAudioContext.play.md)
     *
     * 播放 */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /** [InnerAudioContext.seek(number position)](InnerAudioContext.seek.md)
     *
     * 跳转到指定位置 */
   def seek(/** 跳转的时间，单位 s。精确到小数点后 3 位，即支持 ms 级别精确度 */
-  position: Double): Unit = js.native
+  position: Double): Unit
   
   /** 音频资源的地址，用于直接播放。{% version('2.2.3') %} 开始支持云文件ID */
-  var src: String = js.native
+  var src: String
   
   /** 开始播放的位置（单位：s），默认为 0 */
-  var startTime: Double = js.native
+  var startTime: Double
   
   /** [InnerAudioContext.stop()](InnerAudioContext.stop.md)
     *
     * 停止。停止后的音频再播放会从头开始播放。 */
-  def stop(): Unit = js.native
+  def stop(): Unit
   
   /** 音量。范围 0~1。默认为 1
     *
     * 最低基础库： `1.9.90` */
-  var volume: Double = js.native
+  var volume: Double
 }
 object InnerAudioContext {
   

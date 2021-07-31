@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckValidCredsResponse extends StObject {
   
   /** If set to `true`, the credentials exist and are valid. */
-  var hasValidCreds: js.UndefOr[Boolean] = js.native
+  var hasValidCreds: js.UndefOr[Boolean] = js.undefined
 }
 object CheckValidCredsResponse {
   

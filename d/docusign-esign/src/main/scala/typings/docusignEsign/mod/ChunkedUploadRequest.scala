@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkedUploadRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ChunkedUploadRequest extends StObject {
     *
     * **Note**: This property is ignored in requests, and overridden with an auto-generated value in responses.
     */
-  var chunkedUploadId: js.UndefOr[String] = js.native
+  var chunkedUploadId: js.UndefOr[String] = js.undefined
   
   /**
     * A Base64-encoded representation of the content hat is used to upload the file.
@@ -21,7 +19,7 @@ trait ChunkedUploadRequest extends StObject {
     * Maximum size: 50 MB. However, data is also subject to REST API limits regarding request sizes, and Internet Information Systems
     * (IIS) might place further constraints on file size.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
 }
 object ChunkedUploadRequest {
   

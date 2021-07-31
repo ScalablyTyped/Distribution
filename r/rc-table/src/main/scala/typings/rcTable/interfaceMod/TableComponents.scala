@@ -5,17 +5,15 @@ import typings.rcTable.anon.OnScroll
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableComponents[RecordType] extends StObject {
   
-  var body: js.UndefOr[CustomizeScrollBody[RecordType] | Cell] = js.native
+  var body: js.UndefOr[CustomizeScrollBody[RecordType] | Cell] = js.undefined
   
-  var header: js.UndefOr[Cell] = js.native
+  var header: js.UndefOr[Cell] = js.undefined
   
-  var table: js.UndefOr[CustomizeComponent] = js.native
+  var table: js.UndefOr[CustomizeComponent] = js.undefined
 }
 object TableComponents {
   
@@ -26,7 +24,7 @@ object TableComponents {
   }
   
   @scala.inline
-  implicit class TableComponentsMutableBuilder[Self <: TableComponents[_], RecordType] (val x: Self with TableComponents[RecordType]) extends AnyVal {
+  implicit class TableComponentsMutableBuilder[Self <: TableComponents[?], RecordType] (val x: Self & TableComponents[RecordType]) extends AnyVal {
     
     @scala.inline
     def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

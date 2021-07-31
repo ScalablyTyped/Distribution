@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackInstanceFilter extends StObject {
   
   /**
     * The type of filter to apply.
     */
-  var Name: js.UndefOr[StackInstanceFilterName] = js.native
+  var Name: js.UndefOr[StackInstanceFilterName] = js.undefined
   
   /**
     * The status to filter by.
     */
-  var Values: js.UndefOr[StackInstanceFilterValues] = js.native
+  var Values: js.UndefOr[StackInstanceFilterValues] = js.undefined
 }
 object StackInstanceFilter {
   

@@ -2,7 +2,6 @@ package typings.callsites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,9 +19,8 @@ object mod {
   	unicorn();
   	```
   	*/
-  @JSImport("callsites", JSImport.Namespace)
-  @js.native
-  def apply(): js.Array[CallSite] = js.native
+  @scala.inline
+  def apply(): js.Array[CallSite] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[CallSite]]
   
   @JSImport("callsites", JSImport.Namespace)
   @js.native
@@ -37,73 +35,72 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof callsites */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait CallSite extends StObject {
     
     /**
     		Returns the current column number if this function was defined in a script.
     		*/
-    def getColumnNumber(): Double | Null = js.native
+    def getColumnNumber(): Double | Null
     
     /**
     		Returns a string representing the location where `eval` was called if this function was created using a call to `eval`.
     		*/
-    def getEvalOrigin(): js.UndefOr[String] = js.native
+    def getEvalOrigin(): js.UndefOr[String]
     
     /**
     		Returns the name of the script if this function was defined in a script.
     		*/
-    def getFileName(): String | Null = js.native
+    def getFileName(): String | Null
     
     /**
     		Returns the current function.
     		*/
-    def getFunction(): js.UndefOr[js.Function] = js.native
+    def getFunction(): js.UndefOr[js.Function]
     
     /**
     		Returns the name of the current function, typically its `name` property. If a name property is not available an attempt will be made to try to infer a name from the function's context.
     		*/
-    def getFunctionName(): String | Null = js.native
+    def getFunctionName(): String | Null
     
     /**
     		Returns the current line number if this function was defined in a script.
     		*/
-    def getLineNumber(): Double | Null = js.native
+    def getLineNumber(): Double | Null
     
     /**
     		Returns the name of the property of `this` or one of its prototypes that holds the current function.
     		*/
-    def getMethodName(): js.UndefOr[String] = js.native
+    def getMethodName(): js.UndefOr[String]
     
     /**
     		Returns the value of `this`.
     		*/
-    def getThis(): js.UndefOr[js.Any] = js.native
+    def getThis(): js.UndefOr[js.Any]
     
     /**
     		Returns the type of `this` as a string. This is the name of the function stored in the constructor field of `this`, if available, otherwise the object's `[[Class]]` internal property.
     		*/
-    def getTypeName(): String | Null = js.native
+    def getTypeName(): String | Null
     
     /**
     		Returns `true` if this is a constructor call.
     		*/
-    def isConstructor(): Boolean = js.native
+    def isConstructor(): Boolean
     
     /**
     		Returns `true` if this call takes place in code defined by a call to `eval`.
     		*/
-    def isEval(): Boolean = js.native
+    def isEval(): Boolean
     
     /**
     		Returns `true` if this call is in native V8 code.
     		*/
-    def isNative(): Boolean = js.native
+    def isNative(): Boolean
     
     /**
     		Returns `true` if this is a top-level invocation, that is, if it's a global object.
     		*/
-    def isToplevel(): Boolean = js.native
+    def isToplevel(): Boolean
   }
   object CallSite {
     

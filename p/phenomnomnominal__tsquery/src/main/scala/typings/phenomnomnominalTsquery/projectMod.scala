@@ -3,16 +3,17 @@ package typings.phenomnomnominalTsquery
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod {
   
-  @JSImport("@phenomnomnominal/tsquery/dist/src/project", "project")
+  @JSImport("@phenomnomnominal/tsquery/dist/src/project", JSImport.Namespace)
   @js.native
-  def project(configFilePath: String): js.Array[SourceFile] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@phenomnomnominal/tsquery/dist/src/project", "projectFiles")
-  @js.native
-  def projectFiles(configFilePath: String): js.Array[String] = js.native
+  @scala.inline
+  def project(configFilePath: String): js.Array[SourceFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[SourceFile]]
+  
+  @scala.inline
+  def projectFiles(configFilePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("projectFiles")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

@@ -3,33 +3,31 @@ package typings.three.webXRMod
 import typings.three.anon.DetectedPlanes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRFrame extends StObject {
   
-  def createAnchor(pose: XRRigidTransform, space: XRSpace): js.Promise[XRAnchor] = js.native
+  def createAnchor(pose: XRRigidTransform, space: XRSpace): js.Promise[XRAnchor]
   
   // AR
-  def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult] = js.native
+  def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult]
   
-  def getHitTestResultsForTransientInput(hitTestSource: XRTransientInputHitTestSource): js.Array[XRTransientInputHitTestResult] = js.native
+  def getHitTestResultsForTransientInput(hitTestSource: XRTransientInputHitTestSource): js.Array[XRTransientInputHitTestResult]
   
   // Hand tracking
-  def getJointPose(joint: XRJointSpace, baseSpace: XRSpace): XRJointPose = js.native
+  def getJointPose(joint: XRJointSpace, baseSpace: XRSpace): XRJointPose
   
-  def getPose(space: XRSpace, baseSpace: XRSpace): js.UndefOr[XRPose] = js.native
+  def getPose(space: XRSpace, baseSpace: XRSpace): js.UndefOr[XRPose]
   
-  def getViewerPose(referenceSpace: XRReferenceSpace): js.UndefOr[XRViewerPose] = js.native
+  def getViewerPose(referenceSpace: XRReferenceSpace): js.UndefOr[XRViewerPose]
   
-  val session: XRSession = js.native
+  val session: XRSession
   
   // Anchors
-  var trackedAnchors: js.UndefOr[XRAnchorSet] = js.native
+  var trackedAnchors: js.UndefOr[XRAnchorSet] = js.undefined
   
   // Planes
-  var worldInformation: DetectedPlanes = js.native
+  var worldInformation: DetectedPlanes
 }
 object XRFrame {
   

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionReadRequest extends StObject {
   
   /** The columns of table to be returned for each row matching this request. */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If non-empty, the name of an index on table. This index is used instead of the table primary key when interpreting key_set and sorting result rows. See key_set for further
     * information.
     */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * Required. `key_set` identifies the rows to be yielded. `key_set` names the primary keys of the rows in table to be yielded, unless index is present. If index is present, then
     * key_set instead names index keys in index. It is not an error for the `key_set` to name rows that do not exist in the database. Read yields nothing for nonexistent rows.
     */
-  var keySet: js.UndefOr[KeySet] = js.native
+  var keySet: js.UndefOr[KeySet] = js.undefined
   
   /** Additional options that affect how many partitions are created. */
-  var partitionOptions: js.UndefOr[PartitionOptions] = js.native
+  var partitionOptions: js.UndefOr[PartitionOptions] = js.undefined
   
   /** Required. The name of the table in the database to be read. */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
   
   /** Read only snapshot transactions are supported, read/write and single use transactions are not. */
-  var transaction: js.UndefOr[TransactionSelector] = js.native
+  var transaction: js.UndefOr[TransactionSelector] = js.undefined
 }
 object PartitionReadRequest {
   

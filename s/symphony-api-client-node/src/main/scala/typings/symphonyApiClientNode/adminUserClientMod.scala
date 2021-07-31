@@ -2,55 +2,55 @@ package typings.symphonyApiClientNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adminUserClientMod {
   
-  @JSImport("symphony-api-client-node/AdminUserClient", "getUser")
+  @JSImport("symphony-api-client-node/AdminUserClient", JSImport.Namespace)
   @js.native
-  def getUser(id: String): js.Promise[AdminUserInfo] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("symphony-api-client-node/AdminUserClient", "listUsers")
-  @js.native
-  def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = js.native
+  @scala.inline
+  def getUser(id: String): js.Promise[AdminUserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdminUserInfo]]
   
-  @js.native
+  @scala.inline
+  def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listUsers")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AdminUserInfo]]]
+  
   trait AdminUserAttributes extends StObject {
     
-    var accountType: js.UndefOr[String] = js.native
+    var accountType: js.UndefOr[String] = js.undefined
     
-    var assetClasses: js.UndefOr[js.Array[String]] = js.native
+    var assetClasses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var companyName: js.UndefOr[String] = js.native
+    var companyName: js.UndefOr[String] = js.undefined
     
-    var department: js.UndefOr[String] = js.native
+    var department: js.UndefOr[String] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var division: js.UndefOr[String] = js.native
+    var division: js.UndefOr[String] = js.undefined
     
-    var emailAddress: String = js.native
+    var emailAddress: String
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var industries: js.UndefOr[js.Array[String]] = js.native
+    var industries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var jobFunction: js.UndefOr[String] = js.native
+    var jobFunction: js.UndefOr[String] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var mobilePhoneNumber: js.UndefOr[String] = js.native
+    var mobilePhoneNumber: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var twoFactorAuthPhone: js.UndefOr[String] = js.native
+    var twoFactorAuthPhone: js.UndefOr[String] = js.undefined
     
-    var userName: String = js.native
+    var userName: String
     
-    var workPhoneNumber: js.UndefOr[String] = js.native
+    var workPhoneNumber: js.UndefOr[String] = js.undefined
   }
   object AdminUserAttributes {
     
@@ -167,14 +167,13 @@ object adminUserClientMod {
     }
   }
   
-  @js.native
   trait AdminUserInfo extends StObject {
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
     
-    var userAttributes: AdminUserAttributes = js.native
+    var userAttributes: AdminUserAttributes
     
-    var userSystemInfo: AdminUserSystemInfo = js.native
+    var userSystemInfo: AdminUserSystemInfo
   }
   object AdminUserInfo {
     
@@ -201,22 +200,21 @@ object adminUserClientMod {
     }
   }
   
-  @js.native
   trait AdminUserSystemInfo extends StObject {
     
-    var createdBy: String = js.native
+    var createdBy: String
     
-    var createdDate: Double = js.native
+    var createdDate: Double
     
-    var deactivatedDate: js.UndefOr[Double] = js.native
+    var deactivatedDate: js.UndefOr[Double] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var lastLoginDate: js.UndefOr[Double] = js.native
+    var lastLoginDate: js.UndefOr[Double] = js.undefined
     
-    var lastUpdatedDate: Double = js.native
+    var lastUpdatedDate: Double
     
-    var status: String = js.native
+    var status: String
   }
   object AdminUserSystemInfo {
     

@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlowFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Color: ColorFormat = js.native
+  val Color: ColorFormat
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.GlowFormat_typekey")
-  var OfficeDotGlowFormat_typekey: GlowFormat = js.native
+  var OfficeDotGlowFormat_typekey: GlowFormat
   
-  var Radius: Double = js.native
+  var Radius: Double
   
-  var Transparency: Double = js.native
+  var Transparency: Double
 }
 object GlowFormat {
   

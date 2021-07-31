@@ -2,19 +2,17 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationEventPayload extends StObject {
   
-  var action: NavigationAction = js.native
+  var action: NavigationAction
   
-  var lastState: js.UndefOr[NavigationState | Null] = js.native
+  var lastState: js.UndefOr[NavigationState | Null] = js.undefined
   
-  var state: NavigationState = js.native
+  var state: NavigationState
   
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object NavigationEventPayload {
   

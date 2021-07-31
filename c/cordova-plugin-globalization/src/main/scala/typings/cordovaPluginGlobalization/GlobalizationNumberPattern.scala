@@ -2,36 +2,34 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Pattern to format and parse numbers according to the client's user preferences. */
-@js.native
 trait GlobalizationNumberPattern extends StObject {
   
   /* The decimal symbol to use for parsing and formatting. */
-  var decimal: String = js.native
+  var decimal: String
   
   /* The number of fractional digits to use when parsing and formatting numbers. */
-  var fraction: Double = js.native
+  var fraction: Double
   
   /* The grouping symbol to use for parsing and formatting. */
-  var grouping: String = js.native
+  var grouping: String
   
   /* The symbol to use for negative numbers when parsing and formatting. */
-  var negative: String = js.native
+  var negative: String
   
   /* The number pattern to format and parse numbers. The patterns follow Unicode Technical Standard #35. */
-  var pattern: String = js.native
+  var pattern: String
   
   /* The symbol to use for positive numbers when parsing and formatting. */
-  var positive: String = js.native
+  var positive: String
   
   /* The rounding increment to use when parsing and formatting. */
-  var rounding: Double = js.native
+  var rounding: Double
   
   /* The symbol to use when formatting and parsing, such as a percent or currency symbol. */
-  var symbol: String = js.native
+  var symbol: String
 }
 object GlobalizationNumberPattern {
   

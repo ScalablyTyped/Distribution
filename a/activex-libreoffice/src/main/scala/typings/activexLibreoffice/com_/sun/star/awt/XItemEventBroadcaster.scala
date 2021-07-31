@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** registers item listeners at controls like the com::sun::star::awt::Roadmap */
-@js.native
-trait XItemEventBroadcaster extends XInterface {
+trait XItemEventBroadcaster
+  extends StObject
+     with XInterface {
   
   /** registers a listener for item events. */
-  def addItemListener(l: XItemListener): Unit = js.native
+  def addItemListener(l: XItemListener): Unit
   
   /** unregisters a listener for item events. */
-  def removeItemListener(l: XItemListener): Unit = js.native
+  def removeItemListener(l: XItemListener): Unit
 }
 object XItemEventBroadcaster {
   

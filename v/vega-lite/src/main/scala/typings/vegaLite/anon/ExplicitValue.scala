@@ -5,15 +5,13 @@ import typings.vegaLite.channeldefMod.FieldDefBase
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplicitValue extends StObject {
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var value: js.Array[FieldDefBase[String, Boolean | BinParams | binned]] = js.native
+  var value: js.Array[FieldDefBase[String, Boolean | BinParams | binned]]
 }
 object ExplicitValue {
   

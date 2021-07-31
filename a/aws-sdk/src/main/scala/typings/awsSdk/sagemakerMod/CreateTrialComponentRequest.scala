@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrialComponentRequest extends StObject {
   
   /**
     * The name of the component as displayed. The name doesn't need to be unique. If DisplayName isn't specified, TrialComponentName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * When the component ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The input artifacts for the component. Examples of input artifacts are datasets, algorithms, hyperparameters, source code, and instance types.
     */
-  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
   /**
     * The output artifacts for the component. Examples of output artifacts are metrics, snapshots, logs, and images.
     */
-  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
   /**
     * The hyperparameters for the component.
     */
-  var Parameters: js.UndefOr[TrialComponentParameters] = js.native
+  var Parameters: js.UndefOr[TrialComponentParameters] = js.undefined
   
   /**
     * When the component started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the component. States include:   InProgress   Completed   Failed  
     */
-  var Status: js.UndefOr[TrialComponentStatus] = js.native
+  var Status: js.UndefOr[TrialComponentStatus] = js.undefined
   
   /**
     * A list of tags to associate with the component. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the component. The name must be unique in your AWS account and is not case-sensitive.
     */
-  var TrialComponentName: ExperimentEntityName = js.native
+  var TrialComponentName: ExperimentEntityName
 }
 object CreateTrialComponentRequest {
   

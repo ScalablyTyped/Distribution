@@ -2,15 +2,13 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononEventObject extends StObject {
   
-  var animationEnd: String = js.native
+  var animationEnd: String
   
-  var transitionEnd: String = js.native
+  var transitionEnd: String
 }
 object PhononEventObject {
   

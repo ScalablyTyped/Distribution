@@ -2,20 +2,18 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateNotificationHubOptions> */
-@js.native
 trait CreateNotificationHubOptions extends StObject {
   
-  var apns: js.UndefOr[Dictionary[String]] = js.native
+  var apns: js.UndefOr[Dictionary[String]] = js.undefined
   
-  var gcm: js.UndefOr[Dictionary[String]] = js.native
+  var gcm: js.UndefOr[Dictionary[String]] = js.undefined
   
-  var mpns: js.UndefOr[Dictionary[String]] = js.native
+  var mpns: js.UndefOr[Dictionary[String]] = js.undefined
   
-  var wns: js.UndefOr[Dictionary[String]] = js.native
+  var wns: js.UndefOr[Dictionary[String]] = js.undefined
 }
 object CreateNotificationHubOptions {
   

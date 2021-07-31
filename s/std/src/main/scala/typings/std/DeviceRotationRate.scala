@@ -2,24 +2,22 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the rate at which the device is rotating around all three axes. */
-@js.native
 trait DeviceRotationRate extends StObject {
   
-  val alpha: Double | Null = js.native
+  val alpha: Double | Null
   
-  val beta: Double | Null = js.native
+  val beta: Double | Null
   
-  val gamma: Double | Null = js.native
+  val gamma: Double | Null
 }
 object DeviceRotationRate {
   
   @scala.inline
   def apply(): DeviceRotationRate = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(alpha = null, beta = null, gamma = null)
     __obj.asInstanceOf[DeviceRotationRate]
   }
   

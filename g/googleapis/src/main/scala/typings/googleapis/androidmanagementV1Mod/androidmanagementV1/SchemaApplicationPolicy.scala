@@ -3,13 +3,11 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Policy for an individual app.
   */
-@js.native
 trait SchemaApplicationPolicy extends StObject {
   
   /**
@@ -18,28 +16,28 @@ trait SchemaApplicationPolicy extends StObject {
     * which applies to all apps. It does not override the permission_grants
     * which applies to all apps.
     */
-  var defaultPermissionPolicy: js.UndefOr[String] = js.native
+  var defaultPermissionPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The scopes delegated to the app from Android Device Policy.
     */
-  var delegatedScopes: js.UndefOr[js.Array[String]] = js.native
+  var delegatedScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the app is disabled. When disabled, the app data is still
     * preserved.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of installation to perform.
     */
-  var installType: js.UndefOr[String] = js.native
+  var installType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the app is allowed to lock itself in full-screen mode.
     */
-  var lockTaskAllowed: js.UndefOr[Boolean] = js.native
+  var lockTaskAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Managed configuration applied to the app. The format for the
@@ -60,14 +58,14 @@ trait SchemaApplicationPolicy extends StObject {
     * &lt;tr&gt;&lt;td&gt;BUNDLE_ARRAY&lt;/td&gt;&lt;td&gt;array of
     * objects&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;
     */
-  var managedConfiguration: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var managedConfiguration: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The managed configurations template for the app, saved from the managed
     * configurations iframe. This field is ignored if managed_configuration is
     * set.
     */
-  var managedConfigurationTemplate: js.UndefOr[SchemaManagedConfigurationTemplate] = js.native
+  var managedConfigurationTemplate: js.UndefOr[SchemaManagedConfigurationTemplate] = js.undefined
   
   /**
     * The minimum version of the app that runs on the device. If set, the
@@ -78,20 +76,20 @@ trait SchemaApplicationPolicy extends StObject {
     * this value. At most 20 apps may specify a minimum version code per
     * policy.
     */
-  var minimumVersionCode: js.UndefOr[Double] = js.native
+  var minimumVersionCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The package name of the app. For example, com.google.android.youtube for
     * the YouTube app.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Explicit permission grants or denials for the app. These values override
     * the default_permission_policy and permission_grants which apply to all
     * apps.
     */
-  var permissionGrants: js.UndefOr[js.Array[SchemaPermissionGrant]] = js.native
+  var permissionGrants: js.UndefOr[js.Array[SchemaPermissionGrant]] = js.undefined
 }
 object SchemaApplicationPolicy {
   

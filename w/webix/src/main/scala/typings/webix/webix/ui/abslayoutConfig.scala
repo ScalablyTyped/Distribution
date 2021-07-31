@@ -4,53 +4,51 @@ import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait abslayoutConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cells: js.UndefOr[js.Array[_]] = js.native
+  var cells: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var cols: js.UndefOr[js.Array[_]] = js.native
+  var cols: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var responsive: js.UndefOr[String] = js.native
+  var responsive: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[_]] = js.native
+  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var visibleBatch: js.UndefOr[String] = js.native
+  var visibleBatch: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object abslayoutConfig {
   
@@ -76,7 +74,7 @@ object abslayoutConfig {
     def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
     @scala.inline
-    def setCells(value: js.Array[_]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
@@ -85,7 +83,7 @@ object abslayoutConfig {
     def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setCols(value: js.Array[_]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
@@ -172,7 +170,7 @@ object abslayoutConfig {
     def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

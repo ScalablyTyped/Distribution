@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterLoggingInfoBrokerLogsCloudwatchLogs extends StObject {
   
   /**
     * Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Name of the Cloudwatch Log Group to deliver logs to.
     */
-  var logGroup: js.UndefOr[String] = js.native
+  var logGroup: js.UndefOr[String] = js.undefined
 }
 object ClusterLoggingInfoBrokerLogsCloudwatchLogs {
   

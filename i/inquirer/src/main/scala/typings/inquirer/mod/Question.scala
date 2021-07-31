@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
 trait Question[T /* <: Answers */] extends StObject {
   
   /**
     * The default value of the question.
     */
-  var default: js.UndefOr[AsyncDynamicQuestionProperty[_, T]] = js.native
+  var default: js.UndefOr[AsyncDynamicQuestionProperty[js.Any, T]] = js.undefined
   
   /**
     * Post-processes the answer.
@@ -28,32 +26,32 @@ trait Question[T /* <: Answers */] extends StObject {
     * @param answers
     * The answers provided by the user.
     */
-  var filter: js.UndefOr[js.Function2[/* input */ js.Any, /* answers */ T, _]] = js.native
+  var filter: js.UndefOr[js.Function2[/* input */ js.Any, /* answers */ T, js.Any]] = js.undefined
   
   /**
     * The message to show to the user.
     */
-  var message: js.UndefOr[AsyncDynamicQuestionProperty[String, T]] = js.native
+  var message: js.UndefOr[AsyncDynamicQuestionProperty[String, T]] = js.undefined
   
   /**
     * The key to save the answer to the answers-hash.
     */
-  var name: js.UndefOr[KeyUnion[T]] = js.native
+  var name: js.UndefOr[KeyUnion[T]] = js.undefined
   
   /**
     * The prefix of the `message`.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The suffix of the `message`.
     */
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the question.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Validates the integrity of the answer.
@@ -73,12 +71,12 @@ trait Question[T /* <: Answers */] extends StObject {
       /* answers */ js.UndefOr[T], 
       Boolean | String | (js.Promise[Boolean | String])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A value indicating whether the question should be prompted.
     */
-  var when: js.UndefOr[AsyncDynamicQuestionProperty[Boolean, T]] = js.native
+  var when: js.UndefOr[AsyncDynamicQuestionProperty[Boolean, T]] = js.undefined
 }
 object Question {
   
@@ -89,19 +87,19 @@ object Question {
   }
   
   @scala.inline
-  implicit class QuestionMutableBuilder[Self <: Question[_], T /* <: Answers */] (val x: Self with Question[T]) extends AnyVal {
+  implicit class QuestionMutableBuilder[Self <: Question[?], T /* <: Answers */] (val x: Self & Question[T]) extends AnyVal {
     
     @scala.inline
-    def setDefault(value: AsyncDynamicQuestionProperty[_, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    def setDefault(value: AsyncDynamicQuestionProperty[js.Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFunction1(value: T => _ | js.Promise[_]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+    def setDefaultFunction1(value: T => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setFilter(value: (/* input */ js.Any, /* answers */ T) => _): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    def setFilter(value: (/* input */ js.Any, /* answers */ T) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

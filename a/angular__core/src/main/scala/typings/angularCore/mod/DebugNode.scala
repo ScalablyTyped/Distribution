@@ -3,27 +3,25 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugNode extends StObject {
   
-  val componentInstance: js.Any = js.native
+  val componentInstance: js.Any
   
-  val context: js.Any = js.native
+  val context: js.Any
   
-  val injector: Injector = js.native
+  val injector: Injector
   
-  val listeners: js.Array[DebugEventListener] = js.native
+  val listeners: js.Array[DebugEventListener]
   
-  val nativeNode: js.Any = js.native
+  val nativeNode: js.Any
   
-  val parent: DebugElement | Null = js.native
+  val parent: DebugElement | Null
   
-  val providerTokens: js.Array[_] = js.native
+  val providerTokens: js.Array[js.Any]
   
-  val references: StringDictionary[js.Any] = js.native
+  val references: StringDictionary[js.Any]
 }
 object DebugNode {
   
@@ -34,10 +32,10 @@ object DebugNode {
     injector: Injector,
     listeners: js.Array[DebugEventListener],
     nativeNode: js.Any,
-    providerTokens: js.Array[_],
+    providerTokens: js.Array[js.Any],
     references: StringDictionary[js.Any]
   ): DebugNode = {
-    val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[DebugNode]
   }
   
@@ -69,7 +67,7 @@ object DebugNode {
     def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setProviderTokens(value: js.Array[_]): Self = StObject.set(x, "providerTokens", value.asInstanceOf[js.Any])
+    def setProviderTokens(value: js.Array[js.Any]): Self = StObject.set(x, "providerTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProviderTokensVarargs(value: js.Any*): Self = StObject.set(x, "providerTokens", js.Array(value :_*))

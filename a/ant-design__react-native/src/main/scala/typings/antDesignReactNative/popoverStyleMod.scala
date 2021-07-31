@@ -4,23 +4,24 @@ import typings.antDesignReactNative.libStyleMod.Theme
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/popover/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/popover/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): PopoverStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): PopoverStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[PopoverStyle]
+  
   trait PopoverStyle extends StObject {
     
-    var arrow: ViewStyle = js.native
+    var arrow: ViewStyle
     
-    var background: ViewStyle = js.native
+    var background: ViewStyle
     
-    var content: ViewStyle = js.native
+    var content: ViewStyle
   }
   object PopoverStyle {
     

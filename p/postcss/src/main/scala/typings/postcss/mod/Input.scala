@@ -3,51 +3,49 @@ package typings.postcss.mod
 import typings.postcss.postcssBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the source CSS.
   */
-@js.native
 trait Input extends StObject {
   
   /**
     * The absolute path to the CSS source file defined with the "from" option.
     * Either this property or the "id" property are always defined.
     */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
   /**
     * The CSS source identifier. Contains input.file if the user set the
     * "from" option, or input.id if they did not.
     */
-  var from: String = js.native
+  var from: String
   
   /**
     * The flag to indicate whether or not the source code has Unicode BOM.
     */
-  var hasBOM: Boolean = js.native
+  var hasBOM: Boolean
   
   /**
     * The unique ID of the CSS source. Used if "from" option is not provided
     * (because PostCSS does not know the file path). Either this property
     * or the "file" property are always defined.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the input source map passed from a compilation step before
     * PostCSS (e.g., from the Sass compiler).
     */
-  var map: PreviousMap = js.native
+  var map: PreviousMap
   
   /**
     * Reads the input source map.
     * @returns A symbol position in the input source (e.g., in a Sass file
     * that was compiled to CSS before being passed to PostCSS):
     */
-  def origin(line: Double, column: Double): InputOrigin | `false` = js.native
+  def origin(line: Double, column: Double): InputOrigin | `false`
 }
 object Input {
   

@@ -6,7 +6,6 @@ import typings.rmcCalendar.anon.CloseIcon
 import typings.rmcCalendar.dataTypesMod.Models.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
@@ -32,22 +31,21 @@ object headerMod {
   trait Header
     extends PureComponent[PropsType, js.Object, js.Any]
   
-  @js.native
   trait PropsType extends StObject {
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var locale: js.UndefOr[Locale] = js.native
+    var locale: js.UndefOr[Locale] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showClear: js.UndefOr[Boolean] = js.native
+    var showClear: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PropsType {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageData extends StObject {
   
   /**
     * The error code or status code associated with the message.
     */
-  var Code: js.UndefOr[MessageDataCode] = js.native
+  var Code: js.UndefOr[MessageDataCode] = js.undefined
   
   /**
     * The message text.
     */
-  var Value: js.UndefOr[MessageDataValue] = js.native
+  var Value: js.UndefOr[MessageDataValue] = js.undefined
 }
 object MessageData {
   

@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioRadioMod {
@@ -38,16 +37,17 @@ object radioRadioMod {
   trait Radio
     extends Component[RadioProps, js.Any, js.Any]
   
-  @js.native
-  trait RadioProps extends RadioPropsType {
+  trait RadioProps
+    extends StObject
+       with RadioPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var listPrefixCls: js.UndefOr[String] = js.native
+    var listPrefixCls: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object RadioProps {
     

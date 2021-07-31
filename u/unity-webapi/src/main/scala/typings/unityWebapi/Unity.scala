@@ -2,27 +2,25 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Unity extends StObject {
   
-  var Launcher: UnityLauncher = js.native
+  var Launcher: UnityLauncher
   
-  var MediaPlayer: UnityMediaPlayer = js.native
+  var MediaPlayer: UnityMediaPlayer
   
-  var MessagingIndicator: UnityMessagingIndicator = js.native
+  var MessagingIndicator: UnityMessagingIndicator
   
-  var Notification: UnityNotification = js.native
+  var Notification: UnityNotification
   
-  def addAction(name: String, callback: js.Function): js.Any = js.native
+  def addAction(name: String, callback: js.Function): js.Any
   
-  def init(settings: UnitySettings): js.Any = js.native
+  def init(settings: UnitySettings): js.Any
   
-  def removeAction(actionName: String): js.Any = js.native
+  def removeAction(actionName: String): js.Any
   
-  def removeActions(): js.Any = js.native
+  def removeActions(): js.Any
 }
 object Unity {
   

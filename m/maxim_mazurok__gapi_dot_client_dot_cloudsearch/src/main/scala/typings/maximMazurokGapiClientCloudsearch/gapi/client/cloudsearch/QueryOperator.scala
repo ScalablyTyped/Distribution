@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOperator extends StObject {
   
   /** Display name of the operator */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Potential list of values for the opeatror field. This field is only filled when we can safely enumerate all the possible values of this operator. */
-  var enumValues: js.UndefOr[js.Array[String]] = js.native
+  var enumValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Indicates the operator name that can be used to isolate the property using the greater-than operator. */
-  var greaterThanOperatorName: js.UndefOr[String] = js.native
+  var greaterThanOperatorName: js.UndefOr[String] = js.undefined
   
   /** Can this operator be used to get facets. */
-  var isFacetable: js.UndefOr[Boolean] = js.native
+  var isFacetable: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if multiple values can be set for this property. */
-  var isRepeatable: js.UndefOr[Boolean] = js.native
+  var isRepeatable: js.UndefOr[Boolean] = js.undefined
   
   /** Will the property associated with this facet be returned as part of search results. */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /** Can this operator be used to sort results. */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** Can get suggestions for this field. */
-  var isSuggestable: js.UndefOr[Boolean] = js.native
+  var isSuggestable: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates the operator name that can be used to isolate the property using the less-than operator. */
-  var lessThanOperatorName: js.UndefOr[String] = js.native
+  var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
   /** Name of the object corresponding to the operator. This field is only filled for schema-specific operators, and is unset for common operators. */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /** The name of the operator. */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /** Type of the operator. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryOperator {
   

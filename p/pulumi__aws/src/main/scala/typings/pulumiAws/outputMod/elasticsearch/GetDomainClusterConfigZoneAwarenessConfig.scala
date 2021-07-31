@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainClusterConfigZoneAwarenessConfig extends StObject {
   
   /**
     * Number of availability zones used.
     */
-  var availabilityZoneCount: Double = js.native
+  var availabilityZoneCount: Double
 }
 object GetDomainClusterConfigZoneAwarenessConfig {
   

@@ -2,25 +2,23 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeClientCheckoutOptions extends StObject {
   
-  var billingAddressCollection: js.UndefOr[billingAddressCollectionType] = js.native
+  var billingAddressCollection: js.UndefOr[billingAddressCollectionType] = js.undefined
   
-  var cancelUrl: String = js.native
+  var cancelUrl: String
   
-  var clientReferenceId: js.UndefOr[String] = js.native
+  var clientReferenceId: js.UndefOr[String] = js.undefined
   
-  var customerEmail: js.UndefOr[String] = js.native
+  var customerEmail: js.UndefOr[String] = js.undefined
   
-  var items: js.Array[StripeCheckoutItem] = js.native
+  var items: js.Array[StripeCheckoutItem]
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var successUrl: String = js.native
+  var successUrl: String
 }
 object StripeClientCheckoutOptions {
   

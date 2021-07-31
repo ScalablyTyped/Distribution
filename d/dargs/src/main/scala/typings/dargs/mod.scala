@@ -5,7 +5,6 @@ import typings.dargs.anon.Dictkey
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -70,20 +69,21 @@ object mod {
   // ]
   ```
   */
-  @JSImport("dargs", JSImport.Namespace)
-  @js.native
-  def apply(`object`: Dictkey): js.Array[String] = js.native
-  @JSImport("dargs", JSImport.Namespace)
-  @js.native
-  def apply(`object`: Dictkey, options: Options): js.Array[String] = js.native
+  @scala.inline
+  def apply(`object`: Dictkey): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(`object`: Dictkey, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
+  @JSImport("dargs", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Maps keys in `input` to an aliased name. Matching keys are converted to arguments with a single dash (`-`) in front of the aliased key and the value in a separate array item. Keys are still affected by `includes` and `excludes`.
     		*/
-    var aliases: js.UndefOr[StringDictionary[String]] = js.native
+    var aliases: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
     		By default, camel-cased keys will be hyphenated. Enabling this will bypass the conversion process.
@@ -97,23 +97,23 @@ object mod {
     		//=> ['--fooBar', 'baz']
     		```
     		*/
-    var allowCamelCase: js.UndefOr[Boolean] = js.native
+    var allowCamelCase: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Keys or regex of keys to exclude. Takes precedence over `includes`.
     		*/
-    var excludes: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var excludes: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
     		Exclude `false` values. Can be useful when dealing with strict argument parsers that throw on unknown arguments like `--no-foo`.
     		@default false
     		*/
-    var ignoreFalse: js.UndefOr[Boolean] = js.native
+    var ignoreFalse: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Keys or regex of keys to include.
     		*/
-    var includes: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var includes: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
     		Make a single character option key `{a: true}` become a short flag `-a` instead of `--a`.
@@ -127,7 +127,7 @@ object mod {
     		//=> ['--a']
     		```
     		*/
-    var shortFlag: js.UndefOr[Boolean] = js.native
+    var shortFlag: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting this to `false` makes it return the key and value as separate array items instead of using a `=` separator in one item. This can be useful for tools that doesn't support `--foo=bar` style flags.
@@ -141,7 +141,7 @@ object mod {
     		// ]
     		```
     		*/
-    var useEquals: js.UndefOr[Boolean] = js.native
+    var useEquals: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -24,14 +24,15 @@ import typings.googlemaps.googlemapsStrings.zindex_changed
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker Maps JavaScript API}
   */
 @js.native
-trait Marker extends MVCObject {
+trait Marker
+  extends StObject
+     with MVCObject {
   
   /**
     * @see {@link MarkerHandlerMap#animation_changed animation_changed} event

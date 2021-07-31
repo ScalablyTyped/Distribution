@@ -2,19 +2,17 @@ package typings.knockoutAmdHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutAMDModule extends StObject {
   
-  var baseDir: String = js.native
+  var baseDir: String
   
-  var disposeMethod: String = js.native
+  var disposeMethod: String
   
-  var initializer: String = js.native
+  var initializer: String
   
-  var templateProperty: String = js.native
+  var templateProperty: String
 }
 object KnockoutAMDModule {
   

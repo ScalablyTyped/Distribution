@@ -8,31 +8,29 @@ import typings.servicenowLondon.servicenowLondonStrings.basic
 import typings.servicenowLondon.servicenowLondonStrings.elevated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snWs {
   
-  @js.native
   trait RESTAPIRequest extends StObject {
     
-    val body: RESTAPIRequestBody = js.native
+    val body: RESTAPIRequestBody
     
-    def getHeader(header: String): String = js.native
+    def getHeader(header: String): String
     
-    def getSupportedResponseContentTypes(): js.Array[String] = js.native
+    def getSupportedResponseContentTypes(): js.Array[String]
     
-    val headers: StringDictionary[String] = js.native
+    val headers: StringDictionary[String]
     
-    val pathParams: StringDictionary[String] = js.native
+    val pathParams: StringDictionary[String]
     
-    val queryParams: StringDictionary[js.Array[String]] = js.native
+    val queryParams: StringDictionary[js.Array[String]]
     
-    val queryString: String = js.native
+    val queryString: String
     
-    val uri: String = js.native
+    val uri: String
     
-    val url: String = js.native
+    val url: String
   }
   object RESTAPIRequest {
     
@@ -84,18 +82,17 @@ object snWs {
     }
   }
   
-  @js.native
   trait RESTAPIRequestBody extends StObject {
     
-    val data: js.Any = js.native
+    val data: js.Any
     
-    val dataStream: js.Object = js.native
+    val dataStream: js.Object
     
-    val dataString: String = js.native
+    val dataString: String
     
-    def hasNext(): Boolean = js.native
+    def hasNext(): Boolean
     
-    def nextEntry(): js.Any = js.native
+    def nextEntry(): js.Any
   }
   object RESTAPIRequestBody {
     
@@ -131,24 +128,23 @@ object snWs {
     }
   }
   
-  @js.native
   trait RESTAPIResponse extends StObject {
     
-    def getStreamWriter(): RESTAPIResponseStream = js.native
+    def getStreamWriter(): RESTAPIResponseStream
     
-    def setBody(body: js.Any): Unit = js.native
+    def setBody(body: js.Any): Unit
     
-    def setContentType(contentType: String): Unit = js.native
+    def setContentType(contentType: String): Unit
     
-    def setError(error: js.Any): Unit = js.native
+    def setError(error: js.Any): Unit
     
-    def setHeader(header: String, value: String): Unit = js.native
+    def setHeader(header: String, value: String): Unit
     
-    def setHeaders(headers: js.Any): Unit = js.native
+    def setHeaders(headers: js.Any): Unit
     
-    def setLocation(location: String): Unit = js.native
+    def setLocation(location: String): Unit
     
-    def setStatus(status: Double): Unit = js.native
+    def setStatus(status: Double): Unit
   }
   object RESTAPIResponse {
     
@@ -196,12 +192,11 @@ object snWs {
     }
   }
   
-  @js.native
   trait RESTAPIResponseStream extends StObject {
     
-    def writeStream(stream: js.Object): Unit = js.native
+    def writeStream(stream: js.Object): Unit
     
-    def writeString(data: String): Unit = js.native
+    def writeString(data: String): Unit
   }
   object RESTAPIResponseStream {
     
@@ -764,7 +759,6 @@ object snWs {
     * The RESTResponseV2 API allows you to use the data returned by an outbound REST message
     * in JavaScript code.
     */
-  @js.native
   trait RESTResponseV2 extends StObject {
     
     /**
@@ -781,7 +775,7 @@ object snWs {
       *   gs.info(headers[i].name + ': ' + headers[i].value);
       * }
       */
-    def getAllHeaders(): js.Array[Name] = js.native
+    def getAllHeaders(): js.Array[Name]
     
     /**
       * Get the content of the REST response body.
@@ -801,7 +795,7 @@ object snWs {
       * var response = sm.execute();
       * var responseBody = response.getBody();
       */
-    def getBody(): String = js.native
+    def getBody(): String
     
     /**
       * Returns all cookies included in the response.
@@ -815,7 +809,7 @@ object snWs {
       *   gs.info('cookie: ' + cookies.get(i));
       * }
       */
-    def getCookies(): Get = js.native
+    def getCookies(): Get
     
     /**
       * Get the numeric error code if there was an error during the REST transaction.
@@ -831,7 +825,7 @@ object snWs {
       * var response = sm.execute();
       * var errorCode = response.getErrorCode();
       */
-    def getErrorCode(): Double = js.native
+    def getErrorCode(): Double
     
     /**
       * Get the error message if there was an error during the REST transaction.
@@ -844,7 +838,7 @@ object snWs {
       * var response = sm.execute();
       * var errorMsg = response.getErrorMessage();
       */
-    def getErrorMessage(): String = js.native
+    def getErrorMessage(): String
     
     /**
       * Get the value for a specified header.
@@ -858,7 +852,7 @@ object snWs {
       * var response = sm.execute();
       * var headerVal = response.getHeader('Content-Type');
       */
-    def getHeader(name: String): String = js.native
+    def getHeader(name: String): String
     
     /**
       * Get all headers returned in the REST response and the associated values.
@@ -875,7 +869,7 @@ object snWs {
       * var response = sm.execute();
       * var headers = response.getHeaders();
       */
-    def getHeaders(): js.Object = js.native
+    def getHeaders(): js.Object
     
     /**
       * Get the fully-resolved query sent to the REST endpoint.
@@ -892,7 +886,7 @@ object snWs {
       * var response = sm.execute();
       * var queryString = response.getQueryString();
       */
-    def getQueryString(): String = js.native
+    def getQueryString(): String
     
     /**
       * Get the sys_id value of the attachment created from the response body content.
@@ -904,7 +898,7 @@ object snWs {
       *
       * @returns The sys_id of the new attachment record.
       */
-    def getResponseAttachmentSysid(): String = js.native
+    def getResponseAttachmentSysid(): String
     
     /**
       * Get the numeric HTTP status code returned by the REST provider.
@@ -918,7 +912,7 @@ object snWs {
       * var response = sm.execute();
       * var statusCode = response.getStatusCode();
       */
-    def getStatusCode(): Double = js.native
+    def getStatusCode(): Double
     
     /**
       * Indicate if there was an error during the REST transaction.
@@ -931,7 +925,7 @@ object snWs {
       * var response = sm.execute();
       * var error = response.haveError();
       */
-    def haveError(): Boolean = js.native
+    def haveError(): Boolean
     
     /**
       * Set the amount of time the instance waits for a response from the web service provider.
@@ -946,7 +940,7 @@ object snWs {
       * var response = sm.executeAsync();
       * response.waitForResponse(60);
       */
-    def waitForResponse(timeoutSecs: Double): Unit = js.native
+    def waitForResponse(timeoutSecs: Double): Unit
   }
   object RESTResponseV2 {
     
@@ -1044,48 +1038,47 @@ object snWs {
     def put: typings.servicenowLondon.servicenowLondonStrings.put = "put".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.put]
   }
   
-  @js.native
   trait SOAPMessageV2 extends StObject {
     
-    def execute(): SOAPResponseV2 = js.native
+    def execute(): SOAPResponseV2
     
-    def executeAsync(): SOAPResponseV2 = js.native
+    def executeAsync(): SOAPResponseV2
     
-    def getEndpoint(): String = js.native
+    def getEndpoint(): String
     
-    def getRequestBody(): String = js.native
+    def getRequestBody(): String
     
-    def getRequestHeader(headerName: String): String = js.native
+    def getRequestHeader(headerName: String): String
     
-    def getRequestHeaders(): js.Object = js.native
+    def getRequestHeaders(): js.Object
     
-    def setBasicAuth(userName: String, userPass: String): Unit = js.native
+    def setBasicAuth(userName: String, userPass: String): Unit
     
-    def setEccCorrelator(correlator: String): Unit = js.native
+    def setEccCorrelator(correlator: String): Unit
     
-    def setEccParameter(name: String, value: String): Unit = js.native
+    def setEccParameter(name: String, value: String): Unit
     
-    def setEndpoint(endpoint: String): Unit = js.native
+    def setEndpoint(endpoint: String): Unit
     
-    def setHttpMethod(method: String): Unit = js.native
+    def setHttpMethod(method: String): Unit
     
-    def setHttpTimeout(timeoutMs: Double): Unit = js.native
+    def setHttpTimeout(timeoutMs: Double): Unit
     
-    def setMIDServer(midServer: String): Unit = js.native
+    def setMIDServer(midServer: String): Unit
     
-    def setMutualAuth(profileName: String): Unit = js.native
+    def setMutualAuth(profileName: String): Unit
     
-    def setRequestBody(body: String): Unit = js.native
+    def setRequestBody(body: String): Unit
     
-    def setRequestHeader(name: String, value: String): Unit = js.native
+    def setRequestHeader(name: String, value: String): Unit
     
-    def setSOAPAction(soapAction: String): Unit = js.native
+    def setSOAPAction(soapAction: String): Unit
     
-    def setStringParameter(name: String, value: String): Unit = js.native
+    def setStringParameter(name: String, value: String): Unit
     
-    def setStringParameterNoEscape(name: String, value: String): Unit = js.native
+    def setStringParameterNoEscape(name: String, value: String): Unit
     
-    def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit = js.native
+    def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit
   }
   object SOAPMessageV2 {
     
@@ -1181,28 +1174,27 @@ object snWs {
     }
   }
   
-  @js.native
   trait SOAPResponseV2 extends StObject {
     
-    def getAllHeaders(): js.Array[Name] = js.native
+    def getAllHeaders(): js.Array[Name]
     
-    def getBody(): String = js.native
+    def getBody(): String
     
-    def getCookies(): Get = js.native
+    def getCookies(): Get
     
-    def getErrorCode(): Double = js.native
+    def getErrorCode(): Double
     
-    def getErrorMessage(): String = js.native
+    def getErrorMessage(): String
     
-    def getHeader(name: String): String = js.native
+    def getHeader(name: String): String
     
-    def getHeaders(): js.Object = js.native
+    def getHeaders(): js.Object
     
-    def getStatusCode(): Double = js.native
+    def getStatusCode(): Double
     
-    def haveError(): Boolean = js.native
+    def haveError(): Boolean
     
-    def waitForResponse(timeoutSecs: Double): Unit = js.native
+    def waitForResponse(timeoutSecs: Double): Unit
   }
   object SOAPResponseV2 {
     

@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to copy a sheet across spreadsheets.
   */
-@js.native
 trait SchemaCopySheetToAnotherSpreadsheetRequest extends StObject {
   
   /**
     * The ID of the spreadsheet to copy the sheet to.
     */
-  var destinationSpreadsheetId: js.UndefOr[String] = js.native
+  var destinationSpreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaCopySheetToAnotherSpreadsheetRequest {
   

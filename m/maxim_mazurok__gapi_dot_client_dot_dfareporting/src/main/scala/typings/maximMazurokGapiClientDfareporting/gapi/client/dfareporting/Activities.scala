@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activities extends StObject {
   
   /** List of activity filters. The dimension values need to be all either of type "dfa:activity" or "dfa:activityGroup". */
-  var filters: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var filters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#activities. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** List of names of floodlight activity metrics. */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Activities {
   

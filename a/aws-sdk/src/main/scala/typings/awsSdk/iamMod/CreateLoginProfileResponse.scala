@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLoginProfileResponse extends StObject {
   
   /**
     * A structure containing the user name and password create date.
     */
-  var LoginProfile: typings.awsSdk.iamMod.LoginProfile = js.native
+  var LoginProfile: typings.awsSdk.iamMod.LoginProfile
 }
 object CreateLoginProfileResponse {
   

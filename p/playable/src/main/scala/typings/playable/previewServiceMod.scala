@@ -6,15 +6,31 @@ import typings.playable.previewServiceTypesMod.INormalizedFramesQuality
 import typings.playable.previewServiceTypesMod.IPreviewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-service/preview-service", JSImport.Default)
   @js.native
-  class default protected () extends PreviewService {
+  class default protected ()
+    extends StObject
+       with PreviewService {
     def this(hasEngine: EngineIPlaybackEngine) = this()
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _framesMap: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getAt(second: Double): js.Array[INormalizedFramesQuality] = js.native
+    
+    /* CompleteClass */
+    override def setFramesMap(map: IFramesData): Unit = js.native
   }
   object default {
     
@@ -37,12 +53,13 @@ object previewServiceMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PreviewService extends IPreviewService {
+  trait PreviewService
+    extends StObject
+       with IPreviewService {
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _framesMap: js.Any = js.native
+    var _framesMap: js.Any
   }
   object PreviewService {
     

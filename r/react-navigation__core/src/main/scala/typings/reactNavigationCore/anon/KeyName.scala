@@ -2,17 +2,15 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyName[RouteName_1 /* <: String */] extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: RouteName_1 = js.native
+  var name: RouteName_1
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
 }
 object KeyName {
   
@@ -23,7 +21,7 @@ object KeyName {
   }
   
   @scala.inline
-  implicit class KeyNameMutableBuilder[Self <: KeyName[_], RouteName_1 /* <: String */] (val x: Self with KeyName[RouteName_1]) extends AnyVal {
+  implicit class KeyNameMutableBuilder[Self <: KeyName[?], RouteName_1 /* <: String */] (val x: Self & KeyName[RouteName_1]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

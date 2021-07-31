@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionContextCreatedEvent extends StObject {
   
   /**
     * A newly created execution context.
     */
-  var context: ExecutionContextDescription = js.native
+  var context: ExecutionContextDescription
 }
 object ExecutionContextCreatedEvent {
   

@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneralizeParametersProperties extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait GeneralizeParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GeneralizeParameters.html#deviationUnit)
     */
-  var deviationUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var deviationUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
     * The array of input geometries to generalize.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GeneralizeParameters.html#geometries)
     */
-  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.native
+  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
     * The maximum deviation for constructing a generalized geometry based on the input geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GeneralizeParameters.html#maxDeviation)
     */
-  var maxDeviation: js.UndefOr[Double] = js.native
+  var maxDeviation: js.UndefOr[Double] = js.undefined
 }
 object GeneralizeParametersProperties {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLicenseConfigurationsRequest extends StObject {
   
   /**
     * Filters to scope the results. The following filters and logical operators are supported:    licenseCountingType - The dimension on which licenses are counted. Possible values are vCPU | Instance | Core | Socket. Logical operators are EQUALS | NOT_EQUALS.    enforceLicenseCount - A Boolean value that indicates whether hard license enforcement is used. Logical operators are EQUALS | NOT_EQUALS.    usagelimitExceeded - A Boolean value that indicates whether the available licenses have been exceeded. Logical operators are EQUALS | NOT_EQUALS.  
     */
-  var Filters: js.UndefOr[typings.awsSdk.licensemanagerMod.Filters] = js.native
+  var Filters: js.UndefOr[typings.awsSdk.licensemanagerMod.Filters] = js.undefined
   
   /**
     * Amazon Resource Names (ARN) of the license configurations.
     */
-  var LicenseConfigurationArns: js.UndefOr[StringList] = js.native
+  var LicenseConfigurationArns: js.UndefOr[StringList] = js.undefined
   
   /**
     * Maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[BoxInteger] = js.native
+  var MaxResults: js.UndefOr[BoxInteger] = js.undefined
   
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListLicenseConfigurationsRequest {
   

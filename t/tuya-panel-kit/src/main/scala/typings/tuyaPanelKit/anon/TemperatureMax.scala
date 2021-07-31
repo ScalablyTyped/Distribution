@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemperatureMax extends StObject {
   
-  var temperatureMax: js.UndefOr[Double] = js.native
+  var temperatureMax: js.UndefOr[Double] = js.undefined
   
-  var temperatureMin: js.UndefOr[Double] = js.native
+  var temperatureMin: js.UndefOr[Double] = js.undefined
 }
 object TemperatureMax {
   

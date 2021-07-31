@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneChatScore. */
-@js.native
 trait ToneChatScore extends StObject {
   
   /** The score for the tone in the range of 0.5 to 1. A score greater than 0.75 indicates a high likelihood that the tone is perceived in the utterance. */
-  var score: Double = js.native
+  var score: Double
   
   /** The unique, non-localized identifier of the tone for the results. The service returns results only for tones whose scores meet a minimum threshold of 0.5. */
-  var tone_id: String = js.native
+  var tone_id: String
   
   /** The user-visible, localized name of the tone. */
-  var tone_name: String = js.native
+  var tone_name: String
 }
 object ToneChatScore {
   

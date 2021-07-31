@@ -4,28 +4,32 @@ import typings.moment.mod.Moment
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait CalendarDay extends StObject {
     
-    var classes: String = js.native
+    var classes: String
     
-    var date: Moment = js.native
+    var date: Moment
     
-    var day: Double = js.native
+    var day: Double
     
-    var events: js.Array[_] = js.native
+    var events: js.Array[js.Any]
     
-    var properties: CalendarDayProperties = js.native
+    var properties: CalendarDayProperties
   }
   object CalendarDay {
     
     @scala.inline
-    def apply(classes: String, date: Moment, day: Double, events: js.Array[_], properties: CalendarDayProperties): CalendarDay = {
+    def apply(
+      classes: String,
+      date: Moment,
+      day: Double,
+      events: js.Array[js.Any],
+      properties: CalendarDayProperties
+    ): CalendarDay = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[CalendarDay]
     }
@@ -43,7 +47,7 @@ object mod {
       def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
@@ -53,14 +57,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CalendarDayProperties extends StObject {
     
-    var isAdjacentMonth: Boolean = js.native
+    var isAdjacentMonth: Boolean
     
-    var isInactive: Boolean = js.native
+    var isInactive: Boolean
     
-    var isToday: Boolean = js.native
+    var isToday: Boolean
   }
   object CalendarDayProperties {
     
@@ -84,24 +87,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Classes extends StObject {
     
-    var adjacentMonth: js.UndefOr[String] = js.native
+    var adjacentMonth: js.UndefOr[String] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var inactive: js.UndefOr[String] = js.native
+    var inactive: js.UndefOr[String] = js.undefined
     
-    var lastMonth: js.UndefOr[String] = js.native
+    var lastMonth: js.UndefOr[String] = js.undefined
     
-    var nextMonth: js.UndefOr[String] = js.native
+    var nextMonth: js.UndefOr[String] = js.undefined
     
-    var past: js.UndefOr[String] = js.native
+    var past: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
-    var today: js.UndefOr[String] = js.native
+    var today: js.UndefOr[String] = js.undefined
   }
   object Classes {
     
@@ -164,7 +166,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ClickEvents extends StObject {
     
     /**
@@ -172,69 +173,69 @@ object mod {
       * containing the DOM element, any events, and the date as a moment.js
       * object.
       */
-    var click: js.UndefOr[js.Function1[/* target */ Target, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* target */ Target, Unit]] = js.undefined
     
     /**
       * Fired when a user goes forward a period. Returns moment.js objects
       * for the updated start and end date.
       */
-    var nextInterval: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.native
+    var nextInterval: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when a user goes forward a month. Returns a moment.js object
       * set to the correct month.
       */
-    var nextMonth: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var nextMonth: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when the next year button is clicked. Returns a moment.js
       * object set to the correct month and year.
       */
-    var nextYear: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var nextYear: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fired whenever the time period changes as configured in lengthOfTime.
       * Returns moment.js objects for the updated start and end date.
       */
-    var onIntervalChange: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.native
+    var onIntervalChange: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.undefined
     
     /**
       * Fires any time the month changes as a result of a click action.
       * Returns a moment.js object set to the correct month.
       */
-    var onMonthChange: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var onMonthChange: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fires any time the year changes as a result of a click action. If
       * onMonthChange is also set, it is fired BEFORE onYearChange. Returns
       * a moment.js object set to the correct month and year.
       */
-    var onYearChange: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var onYearChange: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when a user goes back an interval. Returns moment.js objects for
       * the updated start and end date.
       */
-    var previousInterval: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.native
+    var previousInterval: js.UndefOr[js.Function2[/* start */ Moment, /* end */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when a user goes back a month. Returns a moment.js object set
       * to the correct month.
       *
       */
-    var previousMonth: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var previousMonth: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when the previous year button is clicked. Returns a moment.js
       * object set to the correct month and year.
       */
-    var previousYear: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var previousYear: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
     
     /**
       * Fired when a user goes to the current month and year. Returns a
       * moment.js object set to the correct month.
       */
-    var today: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.native
+    var today: js.UndefOr[js.Function1[/* month */ Moment, Unit]] = js.undefined
   }
   object ClickEvents {
     
@@ -321,7 +322,7 @@ object mod {
     /**
       * Add events. Note that this triggers a re-render of the calendar.
       */
-    def addEvents(events: js.Array[_]): this.type = js.native
+    def addEvents(events: js.Array[js.Any]): this.type = js.native
     
     /**
       * Go to the previous month
@@ -369,7 +370,7 @@ object mod {
     /**
       * Change the events. Note that this triggers a re-render of the calendar.
       */
-    def setEvents(events: js.Array[_]): this.type = js.native
+    def setEvents(events: js.Array[js.Any]): this.type = js.native
     
     def setMonth(month: String): this.type = js.native
     /**
@@ -388,37 +389,36 @@ object mod {
     def today(): this.type = js.native
   }
   
-  @js.native
   trait ClndrOptions extends StObject {
     
     /**
       * when days from adjacent months are clicked, switch the current month.
       * fires nextMonth/previousMonth/onMonthChange click callbacks. defaults to false.
       */
-    var adjacentDaysChangeMonth: js.UndefOr[Boolean] = js.native
+    var adjacentDaysChangeMonth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom classes to avoid styling issues. pass in only the classnames that
       * you wish to override. These are the defaults.
       */
-    var classes: js.UndefOr[Classes] = js.native
+    var classes: js.UndefOr[Classes] = js.undefined
     
     /**
       * callbacks!
       */
-    var clickEvents: js.UndefOr[ClickEvents] = js.native
+    var clickEvents: js.UndefOr[ClickEvents] = js.undefined
     
     // If you want to prevent the user from navigating the calendar outside
     // of a certain date range (e.g. if you are making a datepicker), specify
     // either the startDate, endDate, or both in the constraints option. You
     // can change these while the calendar is on the page... See documentation
     // below for more on this!
-    var constraints: js.UndefOr[Constraints] = js.native
+    var constraints: js.UndefOr[Constraints] = js.undefined
     
     /**
       * if you're supplying an events array, dateParameter points to the field in your event object containing a date string. It's set to 'date' by default.
       */
-    var dateParameter: js.UndefOr[String] = js.native
+    var dateParameter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of day abbreviation labels. If you have moment.js set to a
@@ -428,46 +428,46 @@ object mod {
       * probably don't want this! See the "Internationalization" section below
       * for more.
       */
-    var daysOfTheWeek: js.UndefOr[js.Array[String]] = js.native
+    var daysOfTheWeek: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A callback when the calendar is done rendering. This is a good place
       * to bind custom event handlers (also see the 'ready' option above).
       */
-    var doneRendering: js.UndefOr[js.Function0[Unit]] = js.native
+    var doneRendering: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** an array of event objects */
-    var events: js.UndefOr[js.Array[_]] = js.native
+    var events: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Any other data variables you want access to in your template. This gets
       * passed into the template function.
       */
-    var extras: js.UndefOr[js.Any] = js.native
+    var extras: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Always make the calendar six rows tall (42 days) so that every month has
       * a consistent height. defaults to 'false'.
       */
-    var forceSixRows: js.UndefOr[Boolean | Null] = js.native
+    var forceSixRows: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Set this to true if you don't want `inactive` dates to be selectable.
       * This will only matter if you are using the `constraints` option.
       */
-    var ignoreInactiveDaysInSelection: js.UndefOr[Boolean | Null] = js.native
+    var ignoreInactiveDaysInSelection: js.UndefOr[Boolean | Null] = js.undefined
     
     // CLNDR can render in any time interval!
     // You can specify if you want to render one or more months, or one ore more
     // days in the calendar, as well as the paging interval whenever forward or
     // back is triggered. If both months and days are null, CLNDR will default
     // to the standard monthly view.
-    var lengthOfTime: js.UndefOr[LengthOfTime] = js.native
+    var lengthOfTime: js.UndefOr[LengthOfTime] = js.undefined
     
     /**
       * Optionally, you can pass a Moment instance to use instead of the global
       */
-    var moment: js.UndefOr[Moment | Null] = js.native
+    var moment: js.UndefOr[Moment | Null] = js.undefined
     
     /**
       * CLNDR can accept events lasting more than one day! just pass in the
@@ -475,7 +475,7 @@ object mod {
       * called within your event objects. See the example file for a working
       * instance of this.
       */
-    var multiDayEvents: js.UndefOr[MultiDayEvents] = js.native
+    var multiDayEvents: js.UndefOr[MultiDayEvents] = js.undefined
     
     /**
       * This is called only once after clndr has been initialized and rendered.
@@ -485,7 +485,7 @@ object mod {
       * and is a great place to attach handlers that don't get tossed out every
       * time the clndr is re-rendered.
       */
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If you want to use a different templating language, here's your ticket.
@@ -495,34 +495,34 @@ object mod {
       * the clndr instance in case you need access to any other properties.
       * More under 'Template Rendering Engine' below.
       */
-    var render: js.UndefOr[js.Function1[/* data */ RenderData, Unit]] = js.native
+    var render: js.UndefOr[js.Function1[/* data */ RenderData, Unit]] = js.undefined
     
     /**
       * Set this, if you want a date to be "selected" (see classes.selected)
       * after plugin init. Defualts to null, no initially selected date.
       */
-    var selectedDate: js.UndefOr[js.Any] = js.native
+    var selectedDate: js.UndefOr[js.Any] = js.undefined
     
     /**
       * show the numbers of days in months adjacent to the current month (and populate them with their events). defaults to true.
       */
-    var showAdjacentMonths: js.UndefOr[Boolean] = js.native
+    var showAdjacentMonths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * determines which month to start with using either a date string or a moment object.
       */
-    var startWithMonth: js.UndefOr[String | Moment] = js.native
+    var startWithMonth: js.UndefOr[String | Moment] = js.undefined
     
     /**
       * the target classnames that CLNDR will look for to bind events. these are the defaults.
       */
-    var targets: js.UndefOr[Targets] = js.native
+    var targets: js.UndefOr[Targets] = js.undefined
     
     /**
       * the template: this could be stored in markup as a <script type="text/template"></script>
       * or pulled in as a string
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to true, if you want the plugin to track the last clicked day.
@@ -530,12 +530,12 @@ object mod {
       * only to the most recently clicked date; otherwise - selectedDate will
       * not change.
       */
-    var trackSelectedDate: js.UndefOr[Boolean] = js.native
+    var trackSelectedDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use the 'touchstart' event instead of 'click'
       */
-    var useTouchEvents: js.UndefOr[Boolean] = js.native
+    var useTouchEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Start the week off on Sunday (0), Monday (1), etc. Sunday is the default.
@@ -543,7 +543,7 @@ object mod {
       * probably don't want this! See the "Internationalization" section below
       * for more.
       */
-    var weekOffset: js.UndefOr[Double] = js.native
+    var weekOffset: js.UndefOr[Double] = js.undefined
   }
   object ClndrOptions {
     
@@ -602,7 +602,7 @@ object mod {
       def setDoneRenderingUndefined: Self = StObject.set(x, "doneRendering", js.undefined)
       
       @scala.inline
-      def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -717,12 +717,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Constraints extends StObject {
     
-    var endDate: js.UndefOr[String] = js.native
+    var endDate: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[String] = js.native
+    var startDate: js.UndefOr[String] = js.undefined
   }
   object Constraints {
     
@@ -749,7 +748,6 @@ object mod {
     }
   }
   
-  @js.native
   trait LengthOfTime extends StObject {
     
     /**
@@ -757,20 +755,20 @@ object mod {
       * leave this null. Setting this to 14 would render a 2-week calendar.
       *
       */
-    var days: js.UndefOr[Double | Null] = js.native
+    var days: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * This is the amount of months or days that will move forward/back when
       * paging the calendar. With days=14 and interval=7, you would have a
       * 2-week calendar that pages forward and backward 1 week at a time.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to an integer if you want to render one or more months, otherwise
       * leave this null
       */
-    var months: js.UndefOr[Double | Null] = js.native
+    var months: js.UndefOr[Double | Null] = js.undefined
   }
   object LengthOfTime {
     
@@ -809,12 +807,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Month extends StObject {
     
-    var days: js.Array[CalendarDay] = js.native
+    var days: js.Array[CalendarDay]
     
-    var month: Moment = js.native
+    var month: Moment
   }
   object Month {
     
@@ -838,18 +835,17 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiDayEvents extends StObject {
     
-    var endDate: js.UndefOr[String] = js.native
+    var endDate: js.UndefOr[String] = js.undefined
     
     /**
       * If you also have single day events with a different date field,
       * use the singleDay property and point it to the date field.
       */
-    var singleDay: js.UndefOr[String] = js.native
+    var singleDay: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[String] = js.native
+    var startDate: js.UndefOr[String] = js.undefined
   }
   object MultiDayEvents {
     
@@ -882,34 +878,33 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderData extends StObject {
     
-    var days: js.Array[CalendarDay] = js.native
+    var days: js.Array[CalendarDay]
     
-    var daysOfTheWeek: js.Array[String] = js.native
+    var daysOfTheWeek: js.Array[String]
     
-    var eventsLastMonth: js.Array[_] = js.native
+    var eventsLastMonth: js.Array[js.Any]
     
-    var eventsNextMonth: js.Array[_] = js.native
+    var eventsNextMonth: js.Array[js.Any]
     
-    var eventsThisInterval: js.UndefOr[js.Array[_]] = js.native
+    var eventsThisInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var eventsThisMonth: js.Array[_] = js.native
+    var eventsThisMonth: js.Array[js.Any]
     
-    var extras: js.UndefOr[js.Any] = js.native
+    var extras: js.UndefOr[js.Any] = js.undefined
     
-    var intervalEnd: js.UndefOr[Moment] = js.native
+    var intervalEnd: js.UndefOr[Moment] = js.undefined
     
-    var intervalStart: js.UndefOr[Moment] = js.native
+    var intervalStart: js.UndefOr[Moment] = js.undefined
     
-    var month: String = js.native
+    var month: String
     
-    var months: js.Array[Month] = js.native
+    var months: js.Array[Month]
     
-    var numberOfRows: Double = js.native
+    var numberOfRows: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object RenderData {
     
@@ -917,9 +912,9 @@ object mod {
     def apply(
       days: js.Array[CalendarDay],
       daysOfTheWeek: js.Array[String],
-      eventsLastMonth: js.Array[_],
-      eventsNextMonth: js.Array[_],
-      eventsThisMonth: js.Array[_],
+      eventsLastMonth: js.Array[js.Any],
+      eventsNextMonth: js.Array[js.Any],
+      eventsThisMonth: js.Array[js.Any],
       month: String,
       months: js.Array[Month],
       numberOfRows: Double,
@@ -945,19 +940,19 @@ object mod {
       def setDaysVarargs(value: CalendarDay*): Self = StObject.set(x, "days", js.Array(value :_*))
       
       @scala.inline
-      def setEventsLastMonth(value: js.Array[_]): Self = StObject.set(x, "eventsLastMonth", value.asInstanceOf[js.Any])
+      def setEventsLastMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsLastMonth", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsLastMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsLastMonth", js.Array(value :_*))
       
       @scala.inline
-      def setEventsNextMonth(value: js.Array[_]): Self = StObject.set(x, "eventsNextMonth", value.asInstanceOf[js.Any])
+      def setEventsNextMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsNextMonth", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsNextMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsNextMonth", js.Array(value :_*))
       
       @scala.inline
-      def setEventsThisInterval(value: js.Array[_]): Self = StObject.set(x, "eventsThisInterval", value.asInstanceOf[js.Any])
+      def setEventsThisInterval(value: js.Array[js.Any]): Self = StObject.set(x, "eventsThisInterval", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsThisIntervalUndefined: Self = StObject.set(x, "eventsThisInterval", js.undefined)
@@ -966,7 +961,7 @@ object mod {
       def setEventsThisIntervalVarargs(value: js.Any*): Self = StObject.set(x, "eventsThisInterval", js.Array(value :_*))
       
       @scala.inline
-      def setEventsThisMonth(value: js.Array[_]): Self = StObject.set(x, "eventsThisMonth", value.asInstanceOf[js.Any])
+      def setEventsThisMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsThisMonth", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsThisMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsThisMonth", js.Array(value :_*))
@@ -1006,19 +1001,18 @@ object mod {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var date: Moment = js.native
+    var date: Moment
     
-    var element: Element = js.native
+    var element: Element
     
-    var events: js.Array[_] = js.native
+    var events: js.Array[js.Any]
   }
   object Target {
     
     @scala.inline
-    def apply(date: Moment, element: Element, events: js.Array[_]): Target = {
+    def apply(date: Moment, element: Element, events: js.Array[js.Any]): Target = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[Target]
     }
@@ -1033,29 +1027,28 @@ object mod {
       def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Targets extends StObject {
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var empty: js.UndefOr[String] = js.native
+    var empty: js.UndefOr[String] = js.undefined
     
-    var nextButton: js.UndefOr[String] = js.native
+    var nextButton: js.UndefOr[String] = js.undefined
     
-    var nextYearButton: js.UndefOr[String] = js.native
+    var nextYearButton: js.UndefOr[String] = js.undefined
     
-    var previousButton: js.UndefOr[String] = js.native
+    var previousButton: js.UndefOr[String] = js.undefined
     
-    var previousYearButton: js.UndefOr[String] = js.native
+    var previousYearButton: js.UndefOr[String] = js.undefined
     
-    var todayButton: js.UndefOr[String] = js.native
+    var todayButton: js.UndefOr[String] = js.undefined
   }
   object Targets {
     

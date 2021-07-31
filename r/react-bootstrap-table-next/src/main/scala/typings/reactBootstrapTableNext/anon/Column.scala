@@ -2,19 +2,17 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column[T] extends StObject {
   
-  var column: js.Any = js.native
+  var column: js.Any
   
-  var row: T = js.native
+  var row: T
   
-  var searchText: String = js.native
+  var searchText: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Column {
   
@@ -25,7 +23,7 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column[_], T] (val x: Self with Column[T]) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column[?], T] (val x: Self & Column[T]) extends AnyVal {
     
     @scala.inline
     def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

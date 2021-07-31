@@ -6,21 +6,19 @@ import typings.cesium.mod.ProviderViewModel.CreationFunction
 import typings.cesium.mod.TerrainProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var creationFunction: CreationFunction | Command = js.native
+  var creationFunction: CreationFunction | Command
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var tooltip: String = js.native
+  var tooltip: String
 }
 object Category {
   

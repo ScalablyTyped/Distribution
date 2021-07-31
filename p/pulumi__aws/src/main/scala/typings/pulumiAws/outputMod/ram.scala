@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ram {
   
-  @js.native
   trait GetResourceShareFilter extends StObject {
     
     /**
       * The name of the tag key to filter on.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value of the tag key.
       */
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetResourceShareFilter {
     

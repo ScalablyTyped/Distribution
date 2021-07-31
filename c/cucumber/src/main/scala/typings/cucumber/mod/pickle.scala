@@ -2,15 +2,13 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickle {
   
-  @js.native
   trait Argument extends StObject {
     
-    var rows: js.Array[Cell] = js.native
+    var rows: js.Array[Cell]
   }
   object Argument {
     
@@ -31,12 +29,11 @@ object pickle {
     }
   }
   
-  @js.native
   trait Cell extends StObject {
     
-    var location: Location = js.native
+    var location: Location
     
-    var value: String = js.native
+    var value: String
   }
   object Cell {
     
@@ -57,12 +54,11 @@ object pickle {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Location {
     
@@ -83,18 +79,17 @@ object pickle {
     }
   }
   
-  @js.native
   trait Pickle extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var locations: js.Array[Location] = js.native
+    var locations: js.Array[Location]
     
-    var name: String = js.native
+    var name: String
     
-    var steps: js.Array[typings.cucumber.mod.pickle.Step] = js.native
+    var steps: js.Array[typings.cucumber.mod.pickle.Step]
     
-    var tags: js.Array[typings.cucumber.mod.pickle.Tag] = js.native
+    var tags: js.Array[typings.cucumber.mod.pickle.Tag]
   }
   object Pickle {
     
@@ -139,14 +134,13 @@ object pickle {
     }
   }
   
-  @js.native
   trait Step extends StObject {
     
-    var arguments: js.Array[Argument] = js.native
+    var arguments: js.Array[Argument]
     
-    var locations: js.Array[Location] = js.native
+    var locations: js.Array[Location]
     
-    var text: String = js.native
+    var text: String
   }
   object Step {
     
@@ -176,12 +170,11 @@ object pickle {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var location: Location = js.native
+    var location: Location
     
-    var name: String = js.native
+    var name: String
   }
   object Tag {
     

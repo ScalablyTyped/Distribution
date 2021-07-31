@@ -2,41 +2,39 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerVersionsListItem extends StObject {
   
   /**
     * The layer's compatible runtimes.
     */
-  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.native
+  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.undefined
   
   /**
     * The date that the version was created, in ISO 8601 format. For example, 2018-11-27T15:10:45.123+0000.
     */
-  var CreatedDate: js.UndefOr[Timestamp] = js.native
+  var CreatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the version.
     */
-  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.undefined
   
   /**
     * The ARN of the layer version.
     */
-  var LayerVersionArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerVersionArn] = js.native
+  var LayerVersionArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerVersionArn] = js.undefined
   
   /**
     * The layer's open-source license.
     */
-  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.native
+  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.undefined
   
   /**
     * The version number.
     */
-  var Version: js.UndefOr[LayerVersionNumber] = js.native
+  var Version: js.UndefOr[LayerVersionNumber] = js.undefined
 }
 object LayerVersionsListItem {
   

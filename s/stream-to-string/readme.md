@@ -10,9 +10,9 @@ Pipe a stream into a string, collect value with callback or promise
 | ------------------ | :-------------: |
 | Full name          | stream-to-string |
 | Keywords           | stream, string, buffer, callback, promise |
-| # releases         | 2 |
-| # dependents       | 100 |
-| # downloads        | 3634728 |
+| # releases         | 0 |
+| # dependents       | 106 |
+| # downloads        | 4065035 |
 | # stars            | 2 |
 
 ## Links

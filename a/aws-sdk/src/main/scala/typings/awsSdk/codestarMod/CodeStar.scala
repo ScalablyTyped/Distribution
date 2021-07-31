@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait CodeStar extends Service {
   ): Request[AssociateTeamMemberResult, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeStar: ConfigBase with ClientConfiguration = js.native
+  var config_CodeStar: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.

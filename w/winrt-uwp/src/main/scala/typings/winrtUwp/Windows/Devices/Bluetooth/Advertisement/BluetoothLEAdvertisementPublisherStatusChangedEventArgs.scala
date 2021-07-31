@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 import typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-@js.native
 trait BluetoothLEAdvertisementPublisherStatusChangedEventArgs extends StObject {
   
   /** Gets the error status for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-  var error: BluetoothError = js.native
+  var error: BluetoothError
   
   /** Gets the new status of the BluetoothLEAdvertisementPublisher . */
-  var status: BluetoothLEAdvertisementPublisherStatus = js.native
+  var status: BluetoothLEAdvertisementPublisherStatus
 }
 object BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
   

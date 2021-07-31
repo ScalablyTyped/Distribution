@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSignalingChannelsInput extends StObject {
   
   /**
     * Optional: Returns only the channels that satisfy a specific condition.
     */
-  var ChannelNameCondition: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelNameCondition] = js.native
+  var ChannelNameCondition: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelNameCondition] = js.undefined
   
   /**
     * The maximum number of channels to return in the response. The default is 500.
     */
-  var MaxResults: js.UndefOr[ListStreamsInputLimit] = js.native
+  var MaxResults: js.UndefOr[ListStreamsInputLimit] = js.undefined
   
   /**
     * If you specify this parameter, when the result of a ListSignalingChannels operation is truncated, the call returns the NextToken in the response. To get another batch of channels, provide this token in your next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.undefined
 }
 object ListSignalingChannelsInput {
   

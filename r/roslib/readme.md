@@ -10,9 +10,9 @@ The standard ROS Javascript Library
 | ------------------ | :-------------: |
 | Full name          | roslib |
 | Keywords           | ROS, ros, roslib, roslibjs, robot |
-| # releases         | 4 |
-| # dependents       | 22 |
-| # downloads        | 145827 |
+| # releases         | 3 |
+| # dependents       | 25 |
+| # downloads        | 197991 |
 | # stars            | 1 |
 
 ## Links

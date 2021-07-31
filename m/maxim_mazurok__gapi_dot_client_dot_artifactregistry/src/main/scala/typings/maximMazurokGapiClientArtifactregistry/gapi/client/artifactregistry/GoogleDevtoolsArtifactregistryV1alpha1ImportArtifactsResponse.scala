@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse extends StObject {
   
   /** Detailed error info for packages that were not imported. */
-  var errors: js.UndefOr[js.Array[GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo]] = js.native
+  var errors: js.UndefOr[js.Array[GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo]] = js.undefined
   
   /** The packages updated. */
-  var packages: js.UndefOr[js.Array[GoogleDevtoolsArtifactregistryV1alpha1Package]] = js.native
+  var packages: js.UndefOr[js.Array[GoogleDevtoolsArtifactregistryV1alpha1Package]] = js.undefined
 }
 object GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse {
   

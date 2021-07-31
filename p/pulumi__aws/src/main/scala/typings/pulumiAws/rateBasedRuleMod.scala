@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rateBasedRuleMod {
@@ -65,6 +64,10 @@ object rateBasedRuleMod {
   /* static members */
   object RateBasedRule {
     
+    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RateBasedRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -74,62 +77,56 @@ object rateBasedRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RateBasedRule = js.native
-    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RateBasedRule = js.native
-    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RateBasedRuleState): RateBasedRule = js.native
-    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): RateBasedRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RateBasedRuleState): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
     
     /**
       * Returns true if the given object is an instance of RateBasedRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/rateBasedRule.RateBasedRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/rateBasedRule.RateBasedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/rateBasedRule.RateBasedRule */ Boolean]
   }
   
-  @js.native
   trait RateBasedRuleArgs extends StObject {
     
     /**
       * The name or description for the Amazon CloudWatch metric of this rule.
       */
-    val metricName: Input[String] = js.native
+    val metricName: Input[String]
     
     /**
       * The name or description of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The objects to include in a rule (documented below).
       */
     val predicates: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.RateBasedRulePredicate]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Valid value is IP.
       */
-    val rateKey: Input[String] = js.native
+    val rateKey: Input[String]
     
     /**
       * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.
       */
-    val rateLimit: Input[Double] = js.native
+    val rateLimit: Input[Double]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RateBasedRuleArgs {
     
@@ -174,45 +171,44 @@ object rateBasedRuleMod {
     }
   }
   
-  @js.native
   trait RateBasedRuleState extends StObject {
     
     /**
       * The ARN of the WAF Regional Rate Based Rule.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description for the Amazon CloudWatch metric of this rule.
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The objects to include in a rule (documented below).
       */
     val predicates: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.RateBasedRulePredicate]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Valid value is IP.
       */
-    val rateKey: js.UndefOr[Input[String]] = js.native
+    val rateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.
       */
-    val rateLimit: js.UndefOr[Input[Double]] = js.native
+    val rateLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RateBasedRuleState {
     

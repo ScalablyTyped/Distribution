@@ -2,46 +2,44 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIAMPolicyAssignmentResponse extends StObject {
   
   /**
     * The ID of the assignment.
     */
-  var AssignmentId: js.UndefOr[String] = js.native
+  var AssignmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the assignment or rule.
     */
-  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.native
+  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   
   /**
     * The status of the assignment. Possible values are as follows:    ENABLED - Anything specified in this assignment is used when creating the data source.    DISABLED - This assignment isn't used when creating the data source.    DRAFT - This assignment is an unfinished draft and isn't used when creating the data source.  
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
     * The QuickSight users, groups, or both that the IAM policy is assigned to.
     */
-  var Identities: js.UndefOr[IdentityMap] = js.native
+  var Identities: js.UndefOr[IdentityMap] = js.undefined
   
   /**
     * The ARN for the IAM policy applied to the QuickSight users and groups specified in this assignment.
     */
-  var PolicyArn: js.UndefOr[Arn] = js.native
+  var PolicyArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object UpdateIAMPolicyAssignmentResponse {
   

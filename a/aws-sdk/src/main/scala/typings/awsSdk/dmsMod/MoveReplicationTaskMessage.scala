@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveReplicationTaskMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the task that you want to move.
     */
-  var ReplicationTaskArn: String = js.native
+  var ReplicationTaskArn: String
   
   /**
     * The ARN of the replication instance where you want to move the task to.
     */
-  var TargetReplicationInstanceArn: String = js.native
+  var TargetReplicationInstanceArn: String
 }
 object MoveReplicationTaskMessage {
   

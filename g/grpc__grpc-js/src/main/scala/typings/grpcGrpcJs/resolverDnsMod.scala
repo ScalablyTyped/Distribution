@@ -2,21 +2,22 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverDnsMod {
   
-  @JSImport("@grpc/grpc-js/build/src/resolver-dns", "setup")
+  @JSImport("@grpc/grpc-js/build/src/resolver-dns", JSImport.Namespace)
   @js.native
-  def setup(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  
   trait DnsUrl extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
   }
   object DnsUrl {
     

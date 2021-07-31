@@ -2,14 +2,12 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelText extends StObject {
   
   /** 取消 */
-  var cancelText: String = js.native
+  var cancelText: String
 }
 object CancelText {
   

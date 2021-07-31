@@ -4,7 +4,6 @@ import typings.readableStream.mod.Readable
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,7 @@ object mod {
       *
       * @param stream Readable​Stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
       */
-    def this(stream: ReadableStream[_]) = this()
+    def this(stream: ReadableStream[js.Any]) = this()
     
     /**
       * Implementation of readable._read(size).

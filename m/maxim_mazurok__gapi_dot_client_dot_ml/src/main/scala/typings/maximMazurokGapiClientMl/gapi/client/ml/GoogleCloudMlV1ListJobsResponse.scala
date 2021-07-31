@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ListJobsResponse extends StObject {
   
   /** The list of jobs. */
-  var jobs: js.UndefOr[js.Array[GoogleCloudMlV1Job]] = js.native
+  var jobs: js.UndefOr[js.Array[GoogleCloudMlV1Job]] = js.undefined
   
   /** Optional. Pass this token as the `page_token` field of the request for a subsequent call. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1ListJobsResponse {
   

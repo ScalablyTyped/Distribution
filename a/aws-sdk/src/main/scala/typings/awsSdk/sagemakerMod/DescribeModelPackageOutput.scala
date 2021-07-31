@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeModelPackageOutput extends StObject {
   
   /**
     * Whether the model package is certified for listing on AWS Marketplace.
     */
-  var CertifyForMarketplace: js.UndefOr[typings.awsSdk.sagemakerMod.CertifyForMarketplace] = js.native
+  var CertifyForMarketplace: js.UndefOr[typings.awsSdk.sagemakerMod.CertifyForMarketplace] = js.undefined
   
   /**
     * A timestamp specifying when the model package was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * Details about inference jobs that can be run with models based on this model package.
     */
-  var InferenceSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceSpecification] = js.native
+  var InferenceSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceSpecification] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the model package.
     */
-  var ModelPackageArn: typings.awsSdk.sagemakerMod.ModelPackageArn = js.native
+  var ModelPackageArn: typings.awsSdk.sagemakerMod.ModelPackageArn
   
   /**
     * A brief summary of the model package.
     */
-  var ModelPackageDescription: js.UndefOr[EntityDescription] = js.native
+  var ModelPackageDescription: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the model package being described.
     */
-  var ModelPackageName: EntityName = js.native
+  var ModelPackageName: EntityName
   
   /**
     * The current status of the model package.
     */
-  var ModelPackageStatus: typings.awsSdk.sagemakerMod.ModelPackageStatus = js.native
+  var ModelPackageStatus: typings.awsSdk.sagemakerMod.ModelPackageStatus
   
   /**
     * Details about the current status of the model package.
     */
-  var ModelPackageStatusDetails: typings.awsSdk.sagemakerMod.ModelPackageStatusDetails = js.native
+  var ModelPackageStatusDetails: typings.awsSdk.sagemakerMod.ModelPackageStatusDetails
   
   /**
     * Details about the algorithm that was used to create the model package.
     */
-  var SourceAlgorithmSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.SourceAlgorithmSpecification] = js.native
+  var SourceAlgorithmSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.SourceAlgorithmSpecification] = js.undefined
   
   /**
     * Configurations for one or more transform jobs that Amazon SageMaker runs to test the model package.
     */
-  var ValidationSpecification: js.UndefOr[ModelPackageValidationSpecification] = js.native
+  var ValidationSpecification: js.UndefOr[ModelPackageValidationSpecification] = js.undefined
 }
 object DescribeModelPackageOutput {
   

@@ -9,7 +9,6 @@ import typings.html5plus.html5plusStrings.silent
 import typings.html5plus.html5plusStrings.stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -88,12 +87,9 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def getProperty(): Unit = js.native
-  def getProperty(
-    appid: js.UndefOr[scala.Nothing],
-    getPropertyCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
-  ): Unit = js.native
   def getProperty(appid: String): Unit = js.native
   def getProperty(appid: String, getPropertyCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]): Unit = js.native
+  def getProperty(appid: Unit, getPropertyCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]): Unit = js.native
   
   /**
     * 客户端5+运行环境的版本号
@@ -114,75 +110,75 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def install(): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    installSuccessCB: js.UndefOr[scala.Nothing],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def install(filePath: js.UndefOr[scala.Nothing], options: PlusRuntimeWidgetOptions): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: PlusRuntimeWidgetOptions,
-    installSuccessCB: js.UndefOr[scala.Nothing],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: PlusRuntimeWidgetOptions,
-    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: js.UndefOr[scala.Nothing],
-    options: PlusRuntimeWidgetOptions,
-    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def install(filePath: String): Unit = js.native
   def install(
     filePath: String,
-    options: js.UndefOr[scala.Nothing],
-    installSuccessCB: js.UndefOr[scala.Nothing],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
   ): Unit = js.native
   def install(
     filePath: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: String,
+    options: Unit,
+    installSuccessCB: Unit,
     installErrorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def install(filePath: String, options: PlusRuntimeWidgetOptions): Unit = js.native
   def install(
     filePath: String,
     options: PlusRuntimeWidgetOptions,
-    installSuccessCB: js.UndefOr[scala.Nothing],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def install(
-    filePath: String,
-    options: PlusRuntimeWidgetOptions,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
   ): Unit = js.native
   def install(
     filePath: String,
     options: PlusRuntimeWidgetOptions,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: String,
+    options: PlusRuntimeWidgetOptions,
+    installSuccessCB: Unit,
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: Unit,
+    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: Unit,
+    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: Unit,
+    installSuccessCB: Unit,
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(filePath: Unit, options: PlusRuntimeWidgetOptions): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: PlusRuntimeWidgetOptions,
+    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: PlusRuntimeWidgetOptions,
+    installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
+    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def install(
+    filePath: Unit,
+    options: PlusRuntimeWidgetOptions,
+    installSuccessCB: Unit,
     installErrorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -211,7 +207,7 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def launchApplication(): Unit = js.native
-  def launchApplication(appInf: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def launchApplication(appInf: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def launchApplication(appInf: PlusRuntimeApplicationInf): Unit = js.native
   def launchApplication(appInf: PlusRuntimeApplicationInf, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
@@ -269,26 +265,18 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def openFile(): Unit = js.native
-  def openFile(
-    filepath: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def openFile(filepath: js.UndefOr[scala.Nothing], options: PlusRuntimeOpenFileOptions): Unit = js.native
-  def openFile(
-    filepath: js.UndefOr[scala.Nothing],
-    options: PlusRuntimeOpenFileOptions,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def openFile(filepath: String): Unit = js.native
-  def openFile(
-    filepath: String,
-    options: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def openFile(filepath: String, options: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def openFile(filepath: String, options: PlusRuntimeOpenFileOptions): Unit = js.native
   def openFile(
     filepath: String,
+    options: PlusRuntimeOpenFileOptions,
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def openFile(filepath: Unit, options: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def openFile(filepath: Unit, options: PlusRuntimeOpenFileOptions): Unit = js.native
+  def openFile(
+    filepath: Unit,
     options: PlusRuntimeOpenFileOptions,
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
@@ -299,13 +287,13 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def openURL(): Unit = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], errorCB: js.UndefOr[scala.Nothing], identity: String): Unit = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def openURL(url: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit], identity: String): Unit = js.native
   def openURL(url: String): Unit = js.native
-  def openURL(url: String, errorCB: js.UndefOr[scala.Nothing], identity: String): Unit = js.native
   def openURL(url: String, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def openURL(url: String, errorCB: js.Function1[/* result */ js.Any, Unit], identity: String): Unit = js.native
+  def openURL(url: String, errorCB: Unit, identity: String): Unit = js.native
+  def openURL(url: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def openURL(url: Unit, errorCB: js.Function1[/* result */ js.Any, Unit], identity: String): Unit = js.native
+  def openURL(url: Unit, errorCB: Unit, identity: String): Unit = js.native
   
   /**
     * 使用内置Webview窗口打开URL
@@ -388,9 +376,9 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def setBadgeNumber(): Unit = js.native
-  def setBadgeNumber(number: js.UndefOr[scala.Nothing], options: PlusRuntimeBadgeOptions): Unit = js.native
   def setBadgeNumber(number: Double): Unit = js.native
   def setBadgeNumber(number: Double, options: PlusRuntimeBadgeOptions): Unit = js.native
+  def setBadgeNumber(number: Unit, options: PlusRuntimeBadgeOptions): Unit = js.native
   
   /**
     * 获取当前应用的启动时间

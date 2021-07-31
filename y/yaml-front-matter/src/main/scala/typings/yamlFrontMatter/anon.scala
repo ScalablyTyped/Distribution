@@ -3,15 +3,13 @@ package typings.yamlFrontMatter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContentKeyName[contentKeyName /* <: String */] extends StObject {
     
-    var contentKeyName: contentKeyName = js.native
+    var contentKeyName: contentKeyName
   }
   object ContentKeyName {
     
@@ -22,18 +20,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class ContentKeyNameMutableBuilder[Self <: ContentKeyName[_], contentKeyName /* <: String */] (val x: Self with ContentKeyName[contentKeyName]) extends AnyVal {
+    implicit class ContentKeyNameMutableBuilder[Self <: ContentKeyName[?], contentKeyName /* <: String */] (val x: Self & ContentKeyName[contentKeyName]) extends AnyVal {
       
       @scala.inline
       def setContentKeyName(value: contentKeyName): Self = StObject.set(x, "contentKeyName", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    val __content: String = js.native
+    val __content: String
   }
   object Dictkey {
     

@@ -5,18 +5,21 @@ import typings.web3Core.mod.chain
 import typings.web3Core.mod.hardfork
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object web3CoreStrings {
   
   @js.native
-  sealed trait byzantium extends hardfork
+  sealed trait byzantium
+    extends StObject
+       with hardfork
   @scala.inline
   def byzantium: byzantium = "byzantium".asInstanceOf[byzantium]
   
   @js.native
-  sealed trait chainstart extends hardfork
+  sealed trait chainstart
+    extends StObject
+       with hardfork
   @scala.inline
   def chainstart: chainstart = "chainstart".asInstanceOf[chainstart]
   
@@ -26,17 +29,23 @@ object web3CoreStrings {
   def confirmation: confirmation = "confirmation".asInstanceOf[confirmation]
   
   @js.native
-  sealed trait constantinople extends hardfork
+  sealed trait constantinople
+    extends StObject
+       with hardfork
   @scala.inline
   def constantinople: constantinople = "constantinople".asInstanceOf[constantinople]
   
   @js.native
-  sealed trait dao extends hardfork
+  sealed trait dao
+    extends StObject
+       with hardfork
   @scala.inline
   def dao: dao = "dao".asInstanceOf[dao]
   
   @js.native
-  sealed trait earliest extends _BlockNumber
+  sealed trait earliest
+    extends StObject
+       with _BlockNumber
   @scala.inline
   def earliest: earliest = "earliest".asInstanceOf[earliest]
   
@@ -46,47 +55,65 @@ object web3CoreStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait genesis extends _BlockNumber
+  sealed trait genesis
+    extends StObject
+       with _BlockNumber
   @scala.inline
   def genesis: genesis = "genesis".asInstanceOf[genesis]
   
   @js.native
-  sealed trait goerli extends chain
+  sealed trait goerli
+    extends StObject
+       with chain
   @scala.inline
   def goerli: goerli = "goerli".asInstanceOf[goerli]
   
   @js.native
-  sealed trait homestead extends hardfork
+  sealed trait homestead
+    extends StObject
+       with hardfork
   @scala.inline
   def homestead: homestead = "homestead".asInstanceOf[homestead]
   
   @js.native
-  sealed trait istanbul extends hardfork
+  sealed trait istanbul
+    extends StObject
+       with hardfork
   @scala.inline
   def istanbul: istanbul = "istanbul".asInstanceOf[istanbul]
   
   @js.native
-  sealed trait kovan extends chain
+  sealed trait kovan
+    extends StObject
+       with chain
   @scala.inline
   def kovan: kovan = "kovan".asInstanceOf[kovan]
   
   @js.native
-  sealed trait latest extends _BlockNumber
+  sealed trait latest
+    extends StObject
+       with _BlockNumber
   @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
   
   @js.native
-  sealed trait mainnet extends chain
+  sealed trait mainnet
+    extends StObject
+       with chain
   @scala.inline
   def mainnet: mainnet = "mainnet".asInstanceOf[mainnet]
   
   @js.native
-  sealed trait pending extends _BlockNumber
+  sealed trait pending
+    extends StObject
+       with _BlockNumber
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait petersburg extends hardfork
+  sealed trait petersburg
+    extends StObject
+       with hardfork
   @scala.inline
   def petersburg: petersburg = "petersburg".asInstanceOf[petersburg]
   
@@ -96,12 +123,16 @@ object web3CoreStrings {
   def receipt: receipt = "receipt".asInstanceOf[receipt]
   
   @js.native
-  sealed trait rinkeby extends chain
+  sealed trait rinkeby
+    extends StObject
+       with chain
   @scala.inline
   def rinkeby: rinkeby = "rinkeby".asInstanceOf[rinkeby]
   
   @js.native
-  sealed trait ropsten extends chain
+  sealed trait ropsten
+    extends StObject
+       with chain
   @scala.inline
   def ropsten: ropsten = "ropsten".asInstanceOf[ropsten]
   
@@ -116,12 +147,16 @@ object web3CoreStrings {
   def sent: sent = "sent".asInstanceOf[sent]
   
   @js.native
-  sealed trait spuriousDragon extends hardfork
+  sealed trait spuriousDragon
+    extends StObject
+       with hardfork
   @scala.inline
   def spuriousDragon: spuriousDragon = "spuriousDragon".asInstanceOf[spuriousDragon]
   
   @js.native
-  sealed trait tangerineWhistle extends hardfork
+  sealed trait tangerineWhistle
+    extends StObject
+       with hardfork
   @scala.inline
   def tangerineWhistle: tangerineWhistle = "tangerineWhistle".asInstanceOf[tangerineWhistle]
   

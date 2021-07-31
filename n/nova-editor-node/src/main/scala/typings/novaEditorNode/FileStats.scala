@@ -3,28 +3,26 @@ package typings.novaEditorNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/file-stats/
-@js.native
 trait FileStats extends StObject {
   
-  val atime: Date = js.native
+  val atime: Date
   
-  val birthtime: Date = js.native
+  val birthtime: Date
   
-  val ctime: Date = js.native
+  val ctime: Date
   
-  def isDirectory(): Boolean = js.native
+  def isDirectory(): Boolean
   
-  def isFile(): Boolean = js.native
+  def isFile(): Boolean
   
-  def isSymbolicLink(): Boolean = js.native
+  def isSymbolicLink(): Boolean
   
-  val mtime: Date = js.native
+  val mtime: Date
   
-  val size: Double = js.native
+  val size: Double
 }
 object FileStats {
   

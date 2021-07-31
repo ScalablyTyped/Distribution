@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Responsible for the account
   */
-@js.native
-trait AccountGuarantor extends BackboneElement {
+trait AccountGuarantor
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'onHold'.
     */
-  var _onHold: js.UndefOr[Element] = js.native
+  var _onHold: js.UndefOr[Element] = js.undefined
   
   /**
     * Credit or other hold applied
     */
-  var onHold: js.UndefOr[Boolean] = js.native
+  var onHold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Responsible entity
     */
-  var party: Reference = js.native
+  var party: Reference
   
   /**
     * Guarrantee account during
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
 }
 object AccountGuarantor {
   

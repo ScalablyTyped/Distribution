@@ -10,9 +10,9 @@ Simple library for implementing and consuming evented APIs
 | ------------------ | :-------------: |
 | Full name          | event-kit |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 95 |
-| # downloads        | 2224342 |
+| # releases         | 0 |
+| # dependents       | 97 |
+| # downloads        | 2147654 |
 | # stars            | 3 |
 
 ## Links

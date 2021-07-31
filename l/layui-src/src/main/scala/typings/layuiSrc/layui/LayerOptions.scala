@@ -4,90 +4,88 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Layer options
   */
-@js.native
 trait LayerOptions extends StObject {
   
-  var anim: js.UndefOr[Double] = js.native
+  var anim: js.UndefOr[Double] = js.undefined
   
-  var area: js.UndefOr[String | js.Array[String]] = js.native
+  var area: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var btn: js.UndefOr[String | js.Array[String]] = js.native
+  var btn: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var btn2: js.UndefOr[LayerCallbackYes] = js.native
+  var btn2: js.UndefOr[LayerCallbackYes] = js.undefined
   
-  var btn3: js.UndefOr[LayerCallbackYes] = js.native
+  var btn3: js.UndefOr[LayerCallbackYes] = js.undefined
   
-  var btnAlign: js.UndefOr[String] = js.native
+  var btnAlign: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[LayerCallbackCancel] = js.native
+  var cancel: js.UndefOr[LayerCallbackCancel] = js.undefined
   
-  var closeBtn: js.UndefOr[String | Boolean | Double] = js.native
+  var closeBtn: js.UndefOr[String | Boolean | Double] = js.undefined
   
-  var content: js.UndefOr[String | HTMLElement | JQuery[HTMLElement] | js.Array[String]] = js.native
+  var content: js.UndefOr[String | HTMLElement | JQuery[HTMLElement] | js.Array[String]] = js.undefined
   
-  var end: js.UndefOr[LayerCallbackEnd] = js.native
+  var end: js.UndefOr[LayerCallbackEnd] = js.undefined
   
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
-  var full: js.UndefOr[LayerCallbackFull] = js.native
+  var full: js.UndefOr[LayerCallbackFull] = js.undefined
   
-  var icon: js.UndefOr[Double] = js.native
+  var icon: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isOutAnim: js.UndefOr[Boolean] = js.native
+  var isOutAnim: js.UndefOr[Boolean] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var maxmin: js.UndefOr[Boolean] = js.native
+  var maxmin: js.UndefOr[Boolean] = js.undefined
   
-  var min: js.UndefOr[LayerCallbackMin] = js.native
+  var min: js.UndefOr[LayerCallbackMin] = js.undefined
   
-  var move: js.UndefOr[String | Boolean | HTMLElement] = js.native
+  var move: js.UndefOr[String | Boolean | HTMLElement] = js.undefined
   
-  var moveEnd: js.UndefOr[Null | (js.Function1[/* layero */ JQuery[HTMLElement], _])] = js.native
+  var moveEnd: js.UndefOr[Null | (js.Function1[/* layero */ JQuery[HTMLElement], js.Any])] = js.undefined
   
   // moveType?: boolean; //固定1，不能修改
-  var moveOut: js.UndefOr[Boolean] = js.native
+  var moveOut: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double | String | js.Array[String]] = js.native
+  var offset: js.UndefOr[Double | String | js.Array[String]] = js.undefined
   
-  var resize: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.undefined
   
-  var resizing: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], _]] = js.native
+  var resizing: js.UndefOr[js.Function1[/* layero */ JQuery[HTMLElement], js.Any]] = js.undefined
   
-  var restore: js.UndefOr[LayerCallbackRestore] = js.native
+  var restore: js.UndefOr[LayerCallbackRestore] = js.undefined
   
-  var scrollbar: js.UndefOr[Boolean] = js.native
+  var scrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var shade: js.UndefOr[String | Boolean | Double | (js.Tuple2[Double, String])] = js.native
+  var shade: js.UndefOr[String | Boolean | Double | (js.Tuple2[Double, String])] = js.undefined
   
-  var shadeClose: js.UndefOr[Boolean] = js.native
+  var shadeClose: js.UndefOr[Boolean] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[LayerCallbackSuccess] = js.native
+  var success: js.UndefOr[LayerCallbackSuccess] = js.undefined
   
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
-  var tips: js.UndefOr[Double | (js.Tuple2[Double, String])] = js.native
+  var tips: js.UndefOr[Double | (js.Tuple2[Double, String])] = js.undefined
   
-  var tipsMore: js.UndefOr[Boolean] = js.native
+  var tipsMore: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String | Boolean | js.Array[String]] = js.native
+  var title: js.UndefOr[String | Boolean | js.Array[String]] = js.undefined
   
   // 基础参数  https://www.layui.com/doc/modules/layer.html#base
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
   
-  var yes: js.UndefOr[LayerCallbackYes] = js.native
+  var yes: js.UndefOr[LayerCallbackYes] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object LayerOptions {
   
@@ -239,7 +237,7 @@ object LayerOptions {
     def setMove(value: String | Boolean | HTMLElement): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveEnd(value: /* layero */ JQuery[HTMLElement] => _): Self = StObject.set(x, "moveEnd", js.Any.fromFunction1(value))
+    def setMoveEnd(value: /* layero */ JQuery[HTMLElement] => js.Any): Self = StObject.set(x, "moveEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMoveEndNull: Self = StObject.set(x, "moveEnd", null)
@@ -272,7 +270,7 @@ object LayerOptions {
     def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def setResizing(value: /* layero */ JQuery[HTMLElement] => _): Self = StObject.set(x, "resizing", js.Any.fromFunction1(value))
+    def setResizing(value: /* layero */ JQuery[HTMLElement] => js.Any): Self = StObject.set(x, "resizing", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResizingUndefined: Self = StObject.set(x, "resizing", js.undefined)

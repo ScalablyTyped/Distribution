@@ -2,44 +2,42 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource that represents a spreadsheet.
   */
-@js.native
 trait SchemaSpreadsheet extends StObject {
   
   /**
     * The developer metadata associated with a spreadsheet.
     */
-  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.undefined
   
   /**
     * The named ranges defined in a spreadsheet.
     */
-  var namedRanges: js.UndefOr[js.Array[SchemaNamedRange]] = js.native
+  var namedRanges: js.UndefOr[js.Array[SchemaNamedRange]] = js.undefined
   
   /**
     * Overall properties of a spreadsheet.
     */
-  var properties: js.UndefOr[SchemaSpreadsheetProperties] = js.native
+  var properties: js.UndefOr[SchemaSpreadsheetProperties] = js.undefined
   
   /**
     * The sheets that are part of a spreadsheet.
     */
-  var sheets: js.UndefOr[js.Array[SchemaSheet]] = js.native
+  var sheets: js.UndefOr[js.Array[SchemaSheet]] = js.undefined
   
   /**
     * The ID of the spreadsheet. This field is read-only.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /**
     * The url of the spreadsheet. This field is read-only.
     */
-  var spreadsheetUrl: js.UndefOr[String] = js.native
+  var spreadsheetUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaSpreadsheet {
   

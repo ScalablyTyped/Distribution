@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides base client functionality for the Table dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorTableDialogBase extends ASPxClientHtmlEditorDialogBase {
+trait ASPxClientHtmlEditorTableDialogBase
+  extends StObject
+     with ASPxClientHtmlEditorDialogBase {
   
   /**
     * Provides access to the client object of the "Background color" color editor in the Html Editor's Table dialogs.
     */
-  def GetBackgroundColorColorEdit(): ASPxClientColorEdit = js.native
+  def GetBackgroundColorColorEdit(): ASPxClientColorEdit
 }
 object ASPxClientHtmlEditorTableDialogBase {
   

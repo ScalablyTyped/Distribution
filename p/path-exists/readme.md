@@ -11,8 +11,8 @@ Check if a path exists
 | Full name          | path-exists |
 | Keywords           | path, exists, exist, file, filepath, fs, filesystem, file-system, access, stat |
 | # releases         | 2 |
-| # dependents       | 838 |
-| # downloads        | 1323143068 |
+| # dependents       | 951 |
+| # downloads        | 1726128876 |
 | # stars            | 14 |
 
 ## Links

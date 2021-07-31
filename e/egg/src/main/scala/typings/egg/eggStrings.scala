@@ -3,7 +3,6 @@ package typings.egg
 import typings.egg.mod._EggEnvType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eggStrings {
@@ -49,12 +48,16 @@ object eggStrings {
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait local extends _EggEnvType
+  sealed trait local
+    extends StObject
+       with _EggEnvType
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait prod extends _EggEnvType
+  sealed trait prod
+    extends StObject
+       with _EggEnvType
   @scala.inline
   def prod: prod = "prod".asInstanceOf[prod]
   
@@ -64,7 +67,9 @@ object eggStrings {
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait unittest extends _EggEnvType
+  sealed trait unittest
+    extends StObject
+       with _EggEnvType
   @scala.inline
   def unittest: unittest = "unittest".asInstanceOf[unittest]
 }

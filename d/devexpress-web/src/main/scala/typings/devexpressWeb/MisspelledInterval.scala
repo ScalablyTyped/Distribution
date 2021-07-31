@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the settings defining a misspelled interval.
   */
-@js.native
 trait MisspelledInterval extends StObject {
   
   /**
     * Gets the spelling error type.
     */
-  val errorType: SpellingErrorType = js.native
+  val errorType: SpellingErrorType
   
   /**
     * Gets the text buffer interval occupied by the current element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the length of the misspelled interval.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the start position of the misspelled word in the interval.
     */
-  val start: Double = js.native
+  val start: Double
   
   /**
     * Gets a list of suggested words to replace the misspelled word.
     */
-  val suggestions: js.Array[String] = js.native
+  val suggestions: js.Array[String]
   
   /**
     * Gets an erroneous word found during spell check.
     */
-  val word: String = js.native
+  val word: String
 }
 object MisspelledInterval {
   

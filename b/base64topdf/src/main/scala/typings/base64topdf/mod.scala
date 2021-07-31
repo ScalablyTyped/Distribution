@@ -2,32 +2,29 @@ package typings.base64topdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("base64topdf", "base64Decode")
+  @JSImport("base64topdf", JSImport.Namespace)
   @js.native
-  def base64Decode(base64str: String, file: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("base64topdf", "base64Encode")
-  @js.native
-  def base64Encode(file: String): Unit = js.native
+  @scala.inline
+  def base64Decode(base64str: String, file: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(base64str.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("base64topdf", "base64ToStr")
-  @js.native
-  def base64ToStr(base64Str: String): String = js.native
+  @scala.inline
+  def base64Encode(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("base64topdf", "rtfToText")
-  @js.native
-  def rtfToText(rtfStr: String): String = js.native
+  @scala.inline
+  def base64ToStr(base64Str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToStr")(base64Str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("base64topdf", "strToBase64")
-  @js.native
-  def strToBase64(str: String): String = js.native
+  @scala.inline
+  def rtfToText(rtfStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtfToText")(rtfStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("base64topdf", "textToRtf")
-  @js.native
-  def textToRtf(textStr: String): String = js.native
+  @scala.inline
+  def strToBase64(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strToBase64")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def textToRtf(textStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textToRtf")(textStr.asInstanceOf[js.Any]).asInstanceOf[String]
 }

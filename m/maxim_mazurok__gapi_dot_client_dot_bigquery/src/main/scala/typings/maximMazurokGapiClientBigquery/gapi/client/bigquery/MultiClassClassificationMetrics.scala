@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiClassClassificationMetrics extends StObject {
   
   /** Aggregate classification metrics. */
-  var aggregateClassificationMetrics: js.UndefOr[AggregateClassificationMetrics] = js.native
+  var aggregateClassificationMetrics: js.UndefOr[AggregateClassificationMetrics] = js.undefined
   
   /** Confusion matrix at different thresholds. */
-  var confusionMatrixList: js.UndefOr[js.Array[ConfusionMatrix]] = js.native
+  var confusionMatrixList: js.UndefOr[js.Array[ConfusionMatrix]] = js.undefined
 }
 object MultiClassClassificationMetrics {
   

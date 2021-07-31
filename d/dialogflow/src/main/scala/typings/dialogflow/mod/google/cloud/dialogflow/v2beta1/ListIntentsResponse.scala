@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ListIntentsResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListIntentsResponse.
   * @param [properties] Properties to set
   */
-class ListIntentsResponse () extends IListIntentsResponse {
+class ListIntentsResponse ()
+  extends StObject
+     with IListIntentsResponse {
   def this(properties: IListIntentsResponse) = this()
   
   /** ListIntentsResponse intents. */
@@ -36,18 +37,20 @@ class ListIntentsResponse () extends IListIntentsResponse {
 }
 object ListIntentsResponse {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ListIntentsResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ListIntentsResponse instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.create")
-  @js.native
-  def create(): ListIntentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.create")
-  @js.native
-  def create(properties: IListIntentsResponse): ListIntentsResponse = js.native
+  @scala.inline
+  def create(): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListIntentsResponse]
+  @scala.inline
+  def create(properties: IListIntentsResponse): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
   /**
     * Decodes a ListIntentsResponse message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object ListIntentsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decode")
-  @js.native
-  def decode(reader: Reader): ListIntentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ListIntentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): ListIntentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ListIntentsResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ListIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListIntentsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ListIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListIntentsResponse]
   
   /**
     * Decodes a ListIntentsResponse message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object ListIntentsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ListIntentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ListIntentsResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
   /**
     * Encodes the specified ListIntentsResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListIntentsResponse.verify|verify} messages.
@@ -93,12 +90,10 @@ object ListIntentsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.encode")
-  @js.native
-  def encode(message: IListIntentsResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.encode")
-  @js.native
-  def encode(message: IListIntentsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IListIntentsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IListIntentsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListIntentsResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListIntentsResponse.verify|verify} messages.
@@ -107,12 +102,10 @@ object ListIntentsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListIntentsResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListIntentsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IListIntentsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IListIntentsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListIntentsResponse message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object ListIntentsResponse {
     * @returns ListIntentsResponse
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ListIntentsResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
   /**
     * Creates a plain object from a ListIntentsResponse message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object ListIntentsResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.toObject")
-  @js.native
-  def toObject(message: ListIntentsResponse): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.toObject")
-  @js.native
-  def toObject(message: ListIntentsResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ListIntentsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ListIntentsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListIntentsResponse message.
@@ -144,7 +134,6 @@ object ListIntentsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListIntentsResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

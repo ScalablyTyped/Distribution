@@ -9,7 +9,6 @@ import typings.ws.mod.Server
 import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commMod {
@@ -57,18 +56,17 @@ object commMod {
     def stop(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait CommServerConnectionPayload extends StObject {
     
-    var device: String = js.native
+    var device: String
     
-    var event: connect = js.native
+    var event: connect
   }
   object CommServerConnectionPayload {
     
     @scala.inline
-    def apply(device: String, event: connect): CommServerConnectionPayload = {
-      val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
+    def apply(device: String): CommServerConnectionPayload = {
+      val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], event = "connect")
       __obj.asInstanceOf[CommServerConnectionPayload]
     }
     

@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,24 +17,25 @@ object mod {
     * Configuration defines possible sources, their order and, optionally, a whitelist.
     * For performance reasons, on each request, remaining lookups are ignored as soon as a match is found.
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-locale", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-locale", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The locale property on the request object
     */
-  @js.native
   trait Locale extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var region: String = js.native
+    var region: String
     
-    var source: String = js.native
+    var source: String
   }
   object Locale {
     
@@ -62,20 +62,19 @@ object mod {
   /**
     * @see {@link https://github.com/smhg/express-locale/#configuration}
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * The default locale for the default lookup.
       * @default 'en-GB'
       */
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
     /**
       * Lookup results are validated against this list of allowed locales if provided.
       * @default undefined
       */
-    var allowed: js.UndefOr[js.Array[String]] = js.native
+    var allowed: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the cookie that contains the locale for the cookie lookup.
@@ -86,46 +85,48 @@ object mod {
       *
       * @default {name: 'locale'}
       */
-    var cookie: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var cookie: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * A mapping of hostnames to locales for the hostname lookup.
       * @default {}
       */
-    var hostname: js.UndefOr[StringDictionary[String]] = js.native
+    var hostname: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Add custom lookups or overwrite the default ones
       * @default undefined
       */
     var lookups: js.UndefOr[
-        StringDictionary[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]]
-      ] = js.native
+        StringDictionary[
+          js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+        ]
+      ] = js.undefined
     
     /**
       * Maps lookup results that return only a language to a full locale.
       * @default {}
       */
-    var map: js.UndefOr[StringDictionary[String]] = js.native
+    var map: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Defines the order of lookups.
       * The first lookup to return a full locale will be the final result.
       * @default ['accept-language', 'default']
       */
-    var priority: js.UndefOr[js.Array[String]] = js.native
+    var priority: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the query string parameter that contains the locale for the query lookup.
       * @default {name: 'locale'}
       */
-    var query: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var query: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * By default, the locale is attached to `req.locale` but can be configured with the `requestProperty` option.
       * @default 'locale'
       */
-    var requestProperty: js.UndefOr[String] = js.native
+    var requestProperty: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -166,7 +167,11 @@ object mod {
       def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
       @scala.inline
-      def setLookups(value: StringDictionary[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]]): Self = StObject.set(x, "lookups", value.asInstanceOf[js.Any])
+      def setLookups(
+        value: StringDictionary[
+              js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+            ]
+      ): Self = StObject.set(x, "lookups", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLookupsUndefined: Self = StObject.set(x, "lookups", js.undefined)
@@ -202,10 +207,9 @@ object mod {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var locale: Locale = js.native
+      var locale: Locale
     }
     object Request {
       

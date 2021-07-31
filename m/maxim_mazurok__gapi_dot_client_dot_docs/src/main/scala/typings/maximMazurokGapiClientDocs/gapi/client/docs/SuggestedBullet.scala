@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestedBullet extends StObject {
   
   /** A Bullet that only includes the changes made in this suggestion. This can be used along with the bullet_suggestion_state to see which fields have changed and their new values. */
-  var bullet: js.UndefOr[Bullet] = js.native
+  var bullet: js.UndefOr[Bullet] = js.undefined
   
   /** A mask that indicates which of the fields on the base Bullet have been changed in this suggestion. */
-  var bulletSuggestionState: js.UndefOr[BulletSuggestionState] = js.native
+  var bulletSuggestionState: js.UndefOr[BulletSuggestionState] = js.undefined
 }
 object SuggestedBullet {
   

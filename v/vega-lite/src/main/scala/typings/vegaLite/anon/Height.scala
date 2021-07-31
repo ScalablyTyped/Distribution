@@ -7,25 +7,23 @@ import typings.vegaLite.vegaLiteStrings.container
 import typings.vegaTypings.encodeMod.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data] = js.native
+  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[Text | TitleParams[ExprOrSignalRef]] = js.native
+  var title: js.UndefOr[Text | TitleParams[ExprOrSignalRef]] = js.undefined
   
-  var transform: js.UndefOr[js.Array[Transform]] = js.native
+  var transform: js.UndefOr[js.Array[Transform]] = js.undefined
   
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
 }
 object Height {
   

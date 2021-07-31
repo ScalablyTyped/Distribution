@@ -12,7 +12,7 @@ Server side rendering for Redux-Observable
 | Keywords           | react, redux, redux-observable, rx, rxjs, observables, middleware, server-sider-rendering, ssr |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 11317 |
+| # downloads        | 6125 |
 | # stars            | 0 |
 
 ## Links

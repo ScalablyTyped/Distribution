@@ -2,21 +2,19 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MousewheelOptions extends StObject {
   
-  var eventsTarged: js.UndefOr[SelectableElement] = js.native
+  var eventsTarged: js.UndefOr[SelectableElement] = js.undefined
   
-  var forceToAxis: js.UndefOr[Boolean] = js.native
+  var forceToAxis: js.UndefOr[Boolean] = js.undefined
   
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
-  var releaseOnEdges: js.UndefOr[Boolean] = js.native
+  var releaseOnEdges: js.UndefOr[Boolean] = js.undefined
   
-  var sensitivity: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.undefined
 }
 object MousewheelOptions {
   

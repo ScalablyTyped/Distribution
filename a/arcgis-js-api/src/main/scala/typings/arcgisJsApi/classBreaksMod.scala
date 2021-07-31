@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.ClassBreaksResult
 import typings.arcgisJsApi.esri.classBreaksClassBreaksParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classBreaksMod extends Shortcut {

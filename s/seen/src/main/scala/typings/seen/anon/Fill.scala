@@ -2,17 +2,15 @@ package typings.seen.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var `fill-opacity`: js.UndefOr[Double] = js.native
+  var `fill-opacity`: js.UndefOr[Double] = js.undefined
   
-  var `text-anchor`: js.UndefOr[String] = js.native
+  var `text-anchor`: js.UndefOr[String] = js.undefined
 }
 object Fill {
   

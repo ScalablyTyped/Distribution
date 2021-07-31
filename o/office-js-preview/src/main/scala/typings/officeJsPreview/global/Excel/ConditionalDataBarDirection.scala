@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConditionalDataBarDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalDataBarDirection with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalDataBarDirection & String] = js.native
   
-  /* "Context" */ val context: typings.officeJsPreview.Excel.ConditionalDataBarDirection.context with String = js.native
+  /* "Context" */ val context: typings.officeJsPreview.Excel.ConditionalDataBarDirection.context & String = js.native
   
-  /* "LeftToRight" */ val leftToRight: typings.officeJsPreview.Excel.ConditionalDataBarDirection.leftToRight with String = js.native
+  /* "LeftToRight" */ val leftToRight: typings.officeJsPreview.Excel.ConditionalDataBarDirection.leftToRight & String = js.native
   
-  /* "RightToLeft" */ val rightToLeft: typings.officeJsPreview.Excel.ConditionalDataBarDirection.rightToLeft with String = js.native
+  /* "RightToLeft" */ val rightToLeft: typings.officeJsPreview.Excel.ConditionalDataBarDirection.rightToLeft & String = js.native
 }

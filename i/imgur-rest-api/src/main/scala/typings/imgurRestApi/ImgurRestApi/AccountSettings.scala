@@ -2,30 +2,28 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSettings extends StObject {
   
   //number|boolean;
-  var accepted_gallery_terms: Boolean = js.native
+  var accepted_gallery_terms: Boolean
   
-  var active_emails: js.Array[String] = js.native
+  var active_emails: js.Array[String]
   
-  var album_privacy: String = js.native
+  var album_privacy: String
   
-  var blocked_users: js.Array[BlockedUser] = js.native
+  var blocked_users: js.Array[BlockedUser]
   
-  var email: String = js.native
+  var email: String
   
-  var high_quality: Boolean = js.native
+  var high_quality: Boolean
   
-  var messaging_enabled: Boolean = js.native
+  var messaging_enabled: Boolean
   
-  var pro_expiration: js.Any = js.native
+  var pro_expiration: js.Any
   
-  var public_images: Boolean = js.native
+  var public_images: Boolean
 }
 object AccountSettings {
   

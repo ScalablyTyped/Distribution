@@ -306,7 +306,6 @@ import typings.stylableRuntime.typesMod.RuntimeStylesheet
 import typings.stylableRuntime.typesMod.StateValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableDomUtilMod {
@@ -332,720 +331,748 @@ object stylableDomUtilMod {
     def scopeSelector(selector: String): String = js.native
     
     def select(): Element | Null = js.native
-    def select(selector: js.UndefOr[scala.Nothing], element: PartialElement): Element | Null = js.native
     def select(selector: String): Element | Null = js.native
     def select(selector: String, element: PartialElement): Element | Null = js.native
+    def select(selector: Unit, element: PartialElement): Element | Null = js.native
     
     def selectAll(): js.Array[Element] | Null = js.native
-    def selectAll(selector: js.UndefOr[scala.Nothing], element: PartialElement): js.Array[Element] | Null = js.native
     def selectAll(selector: String): js.Array[Element] | Null = js.native
     def selectAll(selector: String, element: PartialElement): js.Array[Element] | Null = js.native
+    def selectAll(selector: Unit, element: PartialElement): js.Array[Element] | Null = js.native
     
     var stylesheet: js.Any = js.native
   }
   
-  @js.native
   trait PartialElement extends StObject {
     
-    var classList: DOMTokenList = js.native
+    var classList: DOMTokenList
     
-    var className: String = js.native
+    var className: String
     
-    def querySelector[E /* <: Element */](selectors: String): E | Null = js.native
+    def querySelector[E /* <: Element */](selectors: String): E | Null
     
-    def querySelectorAll[E /* <: Element */](selectors: String): NodeListOf[E] = js.native
+    def querySelectorAll[E /* <: Element */](selectors: String): NodeListOf[E]
     @JSName("querySelectorAll")
-    var querySelectorAll_Original: FnCallSelectors = js.native
+    var querySelectorAll_Original: FnCallSelectors
     @JSName("querySelectorAll")
-    def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
+    def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLAppletElement] = js.native
+    def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLAppletElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
+    def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_article(selectors: article): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_article(selectors: article): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_aside(selectors: aside): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_aside(selectors: aside): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_audio(selectors: audio): NodeListOf[HTMLAudioElement] = js.native
+    def querySelectorAll_audio(selectors: audio): NodeListOf[HTMLAudioElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_b(selectors: b): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_b(selectors: b): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
+    def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLBaseFontElement] = js.native
+    def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLBaseFontElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
+    def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_body(selectors: body): NodeListOf[HTMLBodyElement] = js.native
+    def querySelectorAll_body(selectors: body): NodeListOf[HTMLBodyElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_br(selectors: br): NodeListOf[HTMLBRElement] = js.native
+    def querySelectorAll_br(selectors: br): NodeListOf[HTMLBRElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_button(selectors: button): NodeListOf[HTMLButtonElement] = js.native
+    def querySelectorAll_button(selectors: button): NodeListOf[HTMLButtonElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
+    def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
+    def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
+    def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_cite(selectors: cite): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_cite(selectors: cite): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_clipPath(selectors: clipPath): NodeListOf[SVGClipPathElement] = js.native
+    def querySelectorAll_clipPath(selectors: clipPath): NodeListOf[SVGClipPathElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_code(selectors: code): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_code(selectors: code): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_col(selectors: col): NodeListOf[HTMLTableColElement] = js.native
+    def querySelectorAll_col(selectors: col): NodeListOf[HTMLTableColElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_colgroup(selectors: colgroup): NodeListOf[HTMLTableColElement] = js.native
+    def querySelectorAll_colgroup(selectors: colgroup): NodeListOf[HTMLTableColElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_data(selectors: data): NodeListOf[HTMLDataElement] = js.native
+    def querySelectorAll_data(selectors: data): NodeListOf[HTMLDataElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_datalist(selectors: datalist): NodeListOf[HTMLDataListElement] = js.native
+    def querySelectorAll_datalist(selectors: datalist): NodeListOf[HTMLDataListElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dd(selectors: dd): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_dd(selectors: dd): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_defs(selectors: defs): NodeListOf[SVGDefsElement] = js.native
+    def querySelectorAll_defs(selectors: defs): NodeListOf[SVGDefsElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_del(selectors: del): NodeListOf[HTMLModElement] = js.native
+    def querySelectorAll_del(selectors: del): NodeListOf[HTMLModElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_desc(selectors: desc): NodeListOf[SVGDescElement] = js.native
+    def querySelectorAll_desc(selectors: desc): NodeListOf[SVGDescElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_details(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
+    def querySelectorAll_details(selectors: details): NodeListOf[HTMLDetailsElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
+    def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
+    def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
+    def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dl(selectors: dl): NodeListOf[HTMLDListElement] = js.native
+    def querySelectorAll_dl(selectors: dl): NodeListOf[HTMLDListElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_dt(selectors: dt): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_dt(selectors: dt): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_ellipse(selectors: ellipse): NodeListOf[SVGEllipseElement] = js.native
+    def querySelectorAll_ellipse(selectors: ellipse): NodeListOf[SVGEllipseElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_em(selectors: em): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_em(selectors: em): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_embed(selectors: embed): NodeListOf[HTMLEmbedElement] = js.native
+    def querySelectorAll_embed(selectors: embed): NodeListOf[HTMLEmbedElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feBlend(selectors: feBlend): NodeListOf[SVGFEBlendElement] = js.native
+    def querySelectorAll_feBlend(selectors: feBlend): NodeListOf[SVGFEBlendElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feColorMatrix(selectors: feColorMatrix): NodeListOf[SVGFEColorMatrixElement] = js.native
+    def querySelectorAll_feColorMatrix(selectors: feColorMatrix): NodeListOf[SVGFEColorMatrixElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feComponentTransfer(selectors: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement] = js.native
+    def querySelectorAll_feComponentTransfer(selectors: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feComposite(selectors: feComposite): NodeListOf[SVGFECompositeElement] = js.native
+    def querySelectorAll_feComposite(selectors: feComposite): NodeListOf[SVGFECompositeElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feConvolveMatrix(selectors: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement] = js.native
+    def querySelectorAll_feConvolveMatrix(selectors: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feDiffuseLighting(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
+    def querySelectorAll_feDiffuseLighting(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
+    def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
+    def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
+    def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feFuncA(selectors: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
+    def querySelectorAll_feFuncA(selectors: feFuncA): NodeListOf[SVGFEFuncAElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feFuncB(selectors: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
+    def querySelectorAll_feFuncB(selectors: feFuncB): NodeListOf[SVGFEFuncBElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feFuncG(selectors: feFuncG): NodeListOf[SVGFEFuncGElement] = js.native
+    def querySelectorAll_feFuncG(selectors: feFuncG): NodeListOf[SVGFEFuncGElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feFuncR(selectors: feFuncR): NodeListOf[SVGFEFuncRElement] = js.native
+    def querySelectorAll_feFuncR(selectors: feFuncR): NodeListOf[SVGFEFuncRElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feGaussianBlur(selectors: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement] = js.native
+    def querySelectorAll_feGaussianBlur(selectors: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feImage(selectors: feImage): NodeListOf[SVGFEImageElement] = js.native
+    def querySelectorAll_feImage(selectors: feImage): NodeListOf[SVGFEImageElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feMerge(selectors: feMerge): NodeListOf[SVGFEMergeElement] = js.native
+    def querySelectorAll_feMerge(selectors: feMerge): NodeListOf[SVGFEMergeElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feMergeNode(selectors: feMergeNode): NodeListOf[SVGFEMergeNodeElement] = js.native
+    def querySelectorAll_feMergeNode(selectors: feMergeNode): NodeListOf[SVGFEMergeNodeElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feMorphology(selectors: feMorphology): NodeListOf[SVGFEMorphologyElement] = js.native
+    def querySelectorAll_feMorphology(selectors: feMorphology): NodeListOf[SVGFEMorphologyElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feOffset(selectors: feOffset): NodeListOf[SVGFEOffsetElement] = js.native
+    def querySelectorAll_feOffset(selectors: feOffset): NodeListOf[SVGFEOffsetElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_fePointLight(selectors: fePointLight): NodeListOf[SVGFEPointLightElement] = js.native
+    def querySelectorAll_fePointLight(selectors: fePointLight): NodeListOf[SVGFEPointLightElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feSpecularLighting(selectors: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement] = js.native
+    def querySelectorAll_feSpecularLighting(selectors: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feSpotLight(selectors: feSpotLight): NodeListOf[SVGFESpotLightElement] = js.native
+    def querySelectorAll_feSpotLight(selectors: feSpotLight): NodeListOf[SVGFESpotLightElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feTile(selectors: feTile): NodeListOf[SVGFETileElement] = js.native
+    def querySelectorAll_feTile(selectors: feTile): NodeListOf[SVGFETileElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_feTurbulence(selectors: feTurbulence): NodeListOf[SVGFETurbulenceElement] = js.native
+    def querySelectorAll_feTurbulence(selectors: feTurbulence): NodeListOf[SVGFETurbulenceElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_fieldset(selectors: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
+    def querySelectorAll_fieldset(selectors: fieldset): NodeListOf[HTMLFieldSetElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_figcaption(selectors: figcaption): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_figcaption(selectors: figcaption): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_figure(selectors: figure): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_figure(selectors: figure): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
+    def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement] = js.native
+    def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
+    def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
+    def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
+    def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
+    def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
+    def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h1(selectors: h1): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h1(selectors: h1): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h2(selectors: h2): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h2(selectors: h2): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h3(selectors: h3): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h3(selectors: h3): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h4(selectors: h4): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h4(selectors: h4): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h5(selectors: h5): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h5(selectors: h5): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_h6(selectors: h6): NodeListOf[HTMLHeadingElement] = js.native
+    def querySelectorAll_h6(selectors: h6): NodeListOf[HTMLHeadingElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_head(selectors: head): NodeListOf[HTMLHeadElement] = js.native
+    def querySelectorAll_head(selectors: head): NodeListOf[HTMLHeadElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_header(selectors: header): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_header(selectors: header): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_hgroup(selectors: hgroup): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_hgroup(selectors: hgroup): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_hr(selectors: hr): NodeListOf[HTMLHRElement] = js.native
+    def querySelectorAll_hr(selectors: hr): NodeListOf[HTMLHRElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_html(selectors: html): NodeListOf[HTMLHtmlElement] = js.native
+    def querySelectorAll_html(selectors: html): NodeListOf[HTMLHtmlElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_i(selectors: i): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_i(selectors: i): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_iframe(selectors: iframe): NodeListOf[HTMLIFrameElement] = js.native
+    def querySelectorAll_iframe(selectors: iframe): NodeListOf[HTMLIFrameElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_image(selectors: image): NodeListOf[SVGImageElement] = js.native
+    def querySelectorAll_image(selectors: image): NodeListOf[SVGImageElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_img(selectors: img): NodeListOf[HTMLImageElement] = js.native
+    def querySelectorAll_img(selectors: img): NodeListOf[HTMLImageElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_input(selectors: input): NodeListOf[HTMLInputElement] = js.native
+    def querySelectorAll_input(selectors: input): NodeListOf[HTMLInputElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
+    def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
+    def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_legend(selectors: legend): NodeListOf[HTMLLegendElement] = js.native
+    def querySelectorAll_legend(selectors: legend): NodeListOf[HTMLLegendElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_li(selectors: li): NodeListOf[HTMLLIElement] = js.native
+    def querySelectorAll_li(selectors: li): NodeListOf[HTMLLIElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_line(selectors: line): NodeListOf[SVGLineElement] = js.native
+    def querySelectorAll_line(selectors: line): NodeListOf[SVGLineElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
+    def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
+    def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
+    def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
+    def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
+    def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
+    def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
+    def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
+    def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_metadata(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
+    def querySelectorAll_metadata(selectors: metadata): NodeListOf[SVGMetadataElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
+    def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_object(selectors: `object`): NodeListOf[HTMLObjectElement] = js.native
+    def querySelectorAll_object(selectors: `object`): NodeListOf[HTMLObjectElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_ol(selectors: ol): NodeListOf[HTMLOListElement] = js.native
+    def querySelectorAll_ol(selectors: ol): NodeListOf[HTMLOListElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_optgroup(selectors: optgroup): NodeListOf[HTMLOptGroupElement] = js.native
+    def querySelectorAll_optgroup(selectors: optgroup): NodeListOf[HTMLOptGroupElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_option(selectors: option): NodeListOf[HTMLOptionElement] = js.native
+    def querySelectorAll_option(selectors: option): NodeListOf[HTMLOptionElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement] = js.native
+    def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
+    def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement] = js.native
+    def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
+    def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
+    def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
+    def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
+    def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_polyline(selectors: polyline): NodeListOf[SVGPolylineElement] = js.native
+    def querySelectorAll_polyline(selectors: polyline): NodeListOf[SVGPolylineElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_pre(selectors: pre): NodeListOf[HTMLPreElement] = js.native
+    def querySelectorAll_pre(selectors: pre): NodeListOf[HTMLPreElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_progress(selectors: progress): NodeListOf[HTMLProgressElement] = js.native
+    def querySelectorAll_progress(selectors: progress): NodeListOf[HTMLProgressElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_q(selectors: q): NodeListOf[HTMLQuoteElement] = js.native
+    def querySelectorAll_q(selectors: q): NodeListOf[HTMLQuoteElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
+    def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
+    def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_s(selectors: s): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_s(selectors: s): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_samp(selectors: samp): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_samp(selectors: samp): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
+    def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
+    def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
+    def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
+    def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
+    def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
+    def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_style(selectors: style): NodeListOf[HTMLStyleElement] = js.native
+    def querySelectorAll_style(selectors: style): NodeListOf[HTMLStyleElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_sub(selectors: sub): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_sub(selectors: sub): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_summary(selectors: summary): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_summary(selectors: summary): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_sup(selectors: sup): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_sup(selectors: sup): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_svg(selectors: svg): NodeListOf[SVGSVGElement] = js.native
+    def querySelectorAll_svg(selectors: svg): NodeListOf[SVGSVGElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_switch(selectors: switch): NodeListOf[SVGSwitchElement] = js.native
+    def querySelectorAll_switch(selectors: switch): NodeListOf[SVGSwitchElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_symbol(selectors: symbol): NodeListOf[SVGSymbolElement] = js.native
+    def querySelectorAll_symbol(selectors: symbol): NodeListOf[SVGSymbolElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_table(selectors: table): NodeListOf[HTMLTableElement] = js.native
+    def querySelectorAll_table(selectors: table): NodeListOf[HTMLTableElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_tbody(selectors: tbody): NodeListOf[HTMLTableSectionElement] = js.native
+    def querySelectorAll_tbody(selectors: tbody): NodeListOf[HTMLTableSectionElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableDataCellElement] = js.native
+    def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableDataCellElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_template(selectors: template): NodeListOf[HTMLTemplateElement] = js.native
+    def querySelectorAll_template(selectors: template): NodeListOf[HTMLTemplateElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_text(selectors: text): NodeListOf[SVGTextElement] = js.native
+    def querySelectorAll_text(selectors: text): NodeListOf[SVGTextElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_textPath(selectors: textPath): NodeListOf[SVGTextPathElement] = js.native
+    def querySelectorAll_textPath(selectors: textPath): NodeListOf[SVGTextPathElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
+    def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
+    def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableHeaderCellElement] = js.native
+    def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableHeaderCellElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
+    def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_time(selectors: time): NodeListOf[HTMLTimeElement] = js.native
+    def querySelectorAll_time(selectors: time): NodeListOf[HTMLTimeElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_title(selectors: title): NodeListOf[HTMLTitleElement] = js.native
+    def querySelectorAll_title(selectors: title): NodeListOf[HTMLTitleElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_tr(selectors: tr): NodeListOf[HTMLTableRowElement] = js.native
+    def querySelectorAll_tr(selectors: tr): NodeListOf[HTMLTableRowElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_track(selectors: track): NodeListOf[HTMLTrackElement] = js.native
+    def querySelectorAll_track(selectors: track): NodeListOf[HTMLTrackElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
+    def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
+    def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_use(selectors: use): NodeListOf[SVGUseElement] = js.native
+    def querySelectorAll_use(selectors: use): NodeListOf[SVGUseElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_var(selectors: `var`): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_var(selectors: `var`): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_video(selectors: video): NodeListOf[HTMLVideoElement] = js.native
+    def querySelectorAll_video(selectors: video): NodeListOf[HTMLVideoElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
+    def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement]
     @JSName("querySelectorAll")
-    def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+    def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement]
     
     @JSName("querySelector")
-    var querySelector_Original: FnCall = js.native
+    var querySelector_Original: FnCall
     @JSName("querySelector")
-    def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
+    def querySelector_a(selectors: a): HTMLAnchorElement | Null
     @JSName("querySelector")
-    def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
+    def querySelector_abbr(selectors: abbr): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_address(selectors: address): HTMLElement | Null = js.native
+    def querySelector_address(selectors: address): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_applet(selectors: applet): HTMLAppletElement | Null = js.native
+    def querySelector_applet(selectors: applet): HTMLAppletElement | Null
     @JSName("querySelector")
-    def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
+    def querySelector_area(selectors: area): HTMLAreaElement | Null
     @JSName("querySelector")
-    def querySelector_article(selectors: article): HTMLElement | Null = js.native
+    def querySelector_article(selectors: article): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_aside(selectors: aside): HTMLElement | Null = js.native
+    def querySelector_aside(selectors: aside): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_audio(selectors: audio): HTMLAudioElement | Null = js.native
+    def querySelector_audio(selectors: audio): HTMLAudioElement | Null
     @JSName("querySelector")
-    def querySelector_b(selectors: b): HTMLElement | Null = js.native
+    def querySelector_b(selectors: b): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
+    def querySelector_base(selectors: base): HTMLBaseElement | Null
     @JSName("querySelector")
-    def querySelector_basefont(selectors: basefont): HTMLBaseFontElement | Null = js.native
+    def querySelector_basefont(selectors: basefont): HTMLBaseFontElement | Null
     @JSName("querySelector")
-    def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
+    def querySelector_bdi(selectors: bdi): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
+    def querySelector_bdo(selectors: bdo): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
+    def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null
     @JSName("querySelector")
-    def querySelector_body(selectors: body): HTMLBodyElement | Null = js.native
+    def querySelector_body(selectors: body): HTMLBodyElement | Null
     @JSName("querySelector")
-    def querySelector_br(selectors: br): HTMLBRElement | Null = js.native
+    def querySelector_br(selectors: br): HTMLBRElement | Null
     @JSName("querySelector")
-    def querySelector_button(selectors: button): HTMLButtonElement | Null = js.native
+    def querySelector_button(selectors: button): HTMLButtonElement | Null
     @JSName("querySelector")
-    def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
+    def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null
     @JSName("querySelector")
-    def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
+    def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null
     @JSName("querySelector")
-    def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
+    def querySelector_circle(selectors: circle): SVGCircleElement | Null
     @JSName("querySelector")
-    def querySelector_cite(selectors: cite): HTMLElement | Null = js.native
+    def querySelector_cite(selectors: cite): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_clipPath(selectors: clipPath): SVGClipPathElement | Null = js.native
+    def querySelector_clipPath(selectors: clipPath): SVGClipPathElement | Null
     @JSName("querySelector")
-    def querySelector_code(selectors: code): HTMLElement | Null = js.native
+    def querySelector_code(selectors: code): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_col(selectors: col): HTMLTableColElement | Null = js.native
+    def querySelector_col(selectors: col): HTMLTableColElement | Null
     @JSName("querySelector")
-    def querySelector_colgroup(selectors: colgroup): HTMLTableColElement | Null = js.native
+    def querySelector_colgroup(selectors: colgroup): HTMLTableColElement | Null
     @JSName("querySelector")
-    def querySelector_data(selectors: data): HTMLDataElement | Null = js.native
+    def querySelector_data(selectors: data): HTMLDataElement | Null
     @JSName("querySelector")
-    def querySelector_datalist(selectors: datalist): HTMLDataListElement | Null = js.native
+    def querySelector_datalist(selectors: datalist): HTMLDataListElement | Null
     @JSName("querySelector")
-    def querySelector_dd(selectors: dd): HTMLElement | Null = js.native
+    def querySelector_dd(selectors: dd): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_defs(selectors: defs): SVGDefsElement | Null = js.native
+    def querySelector_defs(selectors: defs): SVGDefsElement | Null
     @JSName("querySelector")
-    def querySelector_del(selectors: del): HTMLModElement | Null = js.native
+    def querySelector_del(selectors: del): HTMLModElement | Null
     @JSName("querySelector")
-    def querySelector_desc(selectors: desc): SVGDescElement | Null = js.native
+    def querySelector_desc(selectors: desc): SVGDescElement | Null
     @JSName("querySelector")
-    def querySelector_details(selectors: details): HTMLDetailsElement | Null = js.native
+    def querySelector_details(selectors: details): HTMLDetailsElement | Null
     @JSName("querySelector")
-    def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
+    def querySelector_dfn(selectors: dfn): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
+    def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null
     @JSName("querySelector")
-    def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null = js.native
+    def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null
     @JSName("querySelector")
-    def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
+    def querySelector_div(selectors: div): HTMLDivElement | Null
     @JSName("querySelector")
-    def querySelector_dl(selectors: dl): HTMLDListElement | Null = js.native
+    def querySelector_dl(selectors: dl): HTMLDListElement | Null
     @JSName("querySelector")
-    def querySelector_dt(selectors: dt): HTMLElement | Null = js.native
+    def querySelector_dt(selectors: dt): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_ellipse(selectors: ellipse): SVGEllipseElement | Null = js.native
+    def querySelector_ellipse(selectors: ellipse): SVGEllipseElement | Null
     @JSName("querySelector")
-    def querySelector_em(selectors: em): HTMLElement | Null = js.native
+    def querySelector_em(selectors: em): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_embed(selectors: embed): HTMLEmbedElement | Null = js.native
+    def querySelector_embed(selectors: embed): HTMLEmbedElement | Null
     @JSName("querySelector")
-    def querySelector_feBlend(selectors: feBlend): SVGFEBlendElement | Null = js.native
+    def querySelector_feBlend(selectors: feBlend): SVGFEBlendElement | Null
     @JSName("querySelector")
-    def querySelector_feColorMatrix(selectors: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
+    def querySelector_feColorMatrix(selectors: feColorMatrix): SVGFEColorMatrixElement | Null
     @JSName("querySelector")
-    def querySelector_feComponentTransfer(selectors: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
+    def querySelector_feComponentTransfer(selectors: feComponentTransfer): SVGFEComponentTransferElement | Null
     @JSName("querySelector")
-    def querySelector_feComposite(selectors: feComposite): SVGFECompositeElement | Null = js.native
+    def querySelector_feComposite(selectors: feComposite): SVGFECompositeElement | Null
     @JSName("querySelector")
-    def querySelector_feConvolveMatrix(selectors: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
+    def querySelector_feConvolveMatrix(selectors: feConvolveMatrix): SVGFEConvolveMatrixElement | Null
     @JSName("querySelector")
-    def querySelector_feDiffuseLighting(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
+    def querySelector_feDiffuseLighting(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null
     @JSName("querySelector")
-    def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
+    def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null
     @JSName("querySelector")
-    def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
+    def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null
     @JSName("querySelector")
-    def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null = js.native
+    def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null
     @JSName("querySelector")
-    def querySelector_feFuncA(selectors: feFuncA): SVGFEFuncAElement | Null = js.native
+    def querySelector_feFuncA(selectors: feFuncA): SVGFEFuncAElement | Null
     @JSName("querySelector")
-    def querySelector_feFuncB(selectors: feFuncB): SVGFEFuncBElement | Null = js.native
+    def querySelector_feFuncB(selectors: feFuncB): SVGFEFuncBElement | Null
     @JSName("querySelector")
-    def querySelector_feFuncG(selectors: feFuncG): SVGFEFuncGElement | Null = js.native
+    def querySelector_feFuncG(selectors: feFuncG): SVGFEFuncGElement | Null
     @JSName("querySelector")
-    def querySelector_feFuncR(selectors: feFuncR): SVGFEFuncRElement | Null = js.native
+    def querySelector_feFuncR(selectors: feFuncR): SVGFEFuncRElement | Null
     @JSName("querySelector")
-    def querySelector_feGaussianBlur(selectors: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
+    def querySelector_feGaussianBlur(selectors: feGaussianBlur): SVGFEGaussianBlurElement | Null
     @JSName("querySelector")
-    def querySelector_feImage(selectors: feImage): SVGFEImageElement | Null = js.native
+    def querySelector_feImage(selectors: feImage): SVGFEImageElement | Null
     @JSName("querySelector")
-    def querySelector_feMerge(selectors: feMerge): SVGFEMergeElement | Null = js.native
+    def querySelector_feMerge(selectors: feMerge): SVGFEMergeElement | Null
     @JSName("querySelector")
-    def querySelector_feMergeNode(selectors: feMergeNode): SVGFEMergeNodeElement | Null = js.native
+    def querySelector_feMergeNode(selectors: feMergeNode): SVGFEMergeNodeElement | Null
     @JSName("querySelector")
-    def querySelector_feMorphology(selectors: feMorphology): SVGFEMorphologyElement | Null = js.native
+    def querySelector_feMorphology(selectors: feMorphology): SVGFEMorphologyElement | Null
     @JSName("querySelector")
-    def querySelector_feOffset(selectors: feOffset): SVGFEOffsetElement | Null = js.native
+    def querySelector_feOffset(selectors: feOffset): SVGFEOffsetElement | Null
     @JSName("querySelector")
-    def querySelector_fePointLight(selectors: fePointLight): SVGFEPointLightElement | Null = js.native
+    def querySelector_fePointLight(selectors: fePointLight): SVGFEPointLightElement | Null
     @JSName("querySelector")
-    def querySelector_feSpecularLighting(selectors: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
+    def querySelector_feSpecularLighting(selectors: feSpecularLighting): SVGFESpecularLightingElement | Null
     @JSName("querySelector")
-    def querySelector_feSpotLight(selectors: feSpotLight): SVGFESpotLightElement | Null = js.native
+    def querySelector_feSpotLight(selectors: feSpotLight): SVGFESpotLightElement | Null
     @JSName("querySelector")
-    def querySelector_feTile(selectors: feTile): SVGFETileElement | Null = js.native
+    def querySelector_feTile(selectors: feTile): SVGFETileElement | Null
     @JSName("querySelector")
-    def querySelector_feTurbulence(selectors: feTurbulence): SVGFETurbulenceElement | Null = js.native
+    def querySelector_feTurbulence(selectors: feTurbulence): SVGFETurbulenceElement | Null
     @JSName("querySelector")
-    def querySelector_fieldset(selectors: fieldset): HTMLFieldSetElement | Null = js.native
+    def querySelector_fieldset(selectors: fieldset): HTMLFieldSetElement | Null
     @JSName("querySelector")
-    def querySelector_figcaption(selectors: figcaption): HTMLElement | Null = js.native
+    def querySelector_figcaption(selectors: figcaption): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_figure(selectors: figure): HTMLElement | Null = js.native
+    def querySelector_figure(selectors: figure): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
+    def querySelector_filter(selectors: filter): SVGFilterElement | Null
     @JSName("querySelector")
-    def querySelector_font(selectors: font): HTMLFontElement | Null = js.native
+    def querySelector_font(selectors: font): HTMLFontElement | Null
     @JSName("querySelector")
-    def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
+    def querySelector_footer(selectors: footer): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
+    def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null
     @JSName("querySelector")
-    def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
+    def querySelector_form(selectors: form): HTMLFormElement | Null
     @JSName("querySelector")
-    def querySelector_frame(selectors: frame): HTMLFrameElement | Null = js.native
+    def querySelector_frame(selectors: frame): HTMLFrameElement | Null
     @JSName("querySelector")
-    def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null = js.native
+    def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null
     @JSName("querySelector")
-    def querySelector_g(selectors: g): SVGGElement | Null = js.native
+    def querySelector_g(selectors: g): SVGGElement | Null
     @JSName("querySelector")
-    def querySelector_h1(selectors: h1): HTMLHeadingElement | Null = js.native
+    def querySelector_h1(selectors: h1): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_h2(selectors: h2): HTMLHeadingElement | Null = js.native
+    def querySelector_h2(selectors: h2): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_h3(selectors: h3): HTMLHeadingElement | Null = js.native
+    def querySelector_h3(selectors: h3): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_h4(selectors: h4): HTMLHeadingElement | Null = js.native
+    def querySelector_h4(selectors: h4): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_h5(selectors: h5): HTMLHeadingElement | Null = js.native
+    def querySelector_h5(selectors: h5): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_h6(selectors: h6): HTMLHeadingElement | Null = js.native
+    def querySelector_h6(selectors: h6): HTMLHeadingElement | Null
     @JSName("querySelector")
-    def querySelector_head(selectors: head): HTMLHeadElement | Null = js.native
+    def querySelector_head(selectors: head): HTMLHeadElement | Null
     @JSName("querySelector")
-    def querySelector_header(selectors: header): HTMLElement | Null = js.native
+    def querySelector_header(selectors: header): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_hgroup(selectors: hgroup): HTMLElement | Null = js.native
+    def querySelector_hgroup(selectors: hgroup): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_hr(selectors: hr): HTMLHRElement | Null = js.native
+    def querySelector_hr(selectors: hr): HTMLHRElement | Null
     @JSName("querySelector")
-    def querySelector_html(selectors: html): HTMLHtmlElement | Null = js.native
+    def querySelector_html(selectors: html): HTMLHtmlElement | Null
     @JSName("querySelector")
-    def querySelector_i(selectors: i): HTMLElement | Null = js.native
+    def querySelector_i(selectors: i): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_iframe(selectors: iframe): HTMLIFrameElement | Null = js.native
+    def querySelector_iframe(selectors: iframe): HTMLIFrameElement | Null
     @JSName("querySelector")
-    def querySelector_image(selectors: image): SVGImageElement | Null = js.native
+    def querySelector_image(selectors: image): SVGImageElement | Null
     @JSName("querySelector")
-    def querySelector_img(selectors: img): HTMLImageElement | Null = js.native
+    def querySelector_img(selectors: img): HTMLImageElement | Null
     @JSName("querySelector")
-    def querySelector_input(selectors: input): HTMLInputElement | Null = js.native
+    def querySelector_input(selectors: input): HTMLInputElement | Null
     @JSName("querySelector")
-    def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
+    def querySelector_ins(selectors: ins): HTMLModElement | Null
     @JSName("querySelector")
-    def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
+    def querySelector_kbd(selectors: kbd): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
+    def querySelector_label(selectors: label): HTMLLabelElement | Null
     @JSName("querySelector")
-    def querySelector_legend(selectors: legend): HTMLLegendElement | Null = js.native
+    def querySelector_legend(selectors: legend): HTMLLegendElement | Null
     @JSName("querySelector")
-    def querySelector_li(selectors: li): HTMLLIElement | Null = js.native
+    def querySelector_li(selectors: li): HTMLLIElement | Null
     @JSName("querySelector")
-    def querySelector_line(selectors: line): SVGLineElement | Null = js.native
+    def querySelector_line(selectors: line): SVGLineElement | Null
     @JSName("querySelector")
-    def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null = js.native
+    def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null
     @JSName("querySelector")
-    def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
+    def querySelector_link(selectors: link): HTMLLinkElement | Null
     @JSName("querySelector")
-    def querySelector_main(selectors: main): HTMLElement | Null = js.native
+    def querySelector_main(selectors: main): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
+    def querySelector_map(selectors: map): HTMLMapElement | Null
     @JSName("querySelector")
-    def querySelector_mark(selectors: mark): HTMLElement | Null = js.native
+    def querySelector_mark(selectors: mark): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
+    def querySelector_marker(selectors: marker): SVGMarkerElement | Null
     @JSName("querySelector")
-    def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null = js.native
+    def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null
     @JSName("querySelector")
-    def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
+    def querySelector_mask(selectors: mask): SVGMaskElement | Null
     @JSName("querySelector")
-    def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
+    def querySelector_menu(selectors: menu): HTMLMenuElement | Null
     @JSName("querySelector")
-    def querySelector_meta(selectors: meta): HTMLMetaElement | Null = js.native
+    def querySelector_meta(selectors: meta): HTMLMetaElement | Null
     @JSName("querySelector")
-    def querySelector_metadata(selectors: metadata): SVGMetadataElement | Null = js.native
+    def querySelector_metadata(selectors: metadata): SVGMetadataElement | Null
     @JSName("querySelector")
-    def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
+    def querySelector_meter(selectors: meter): HTMLMeterElement | Null
     @JSName("querySelector")
-    def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
+    def querySelector_nav(selectors: nav): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
+    def querySelector_noscript(selectors: noscript): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_object(selectors: `object`): HTMLObjectElement | Null = js.native
+    def querySelector_object(selectors: `object`): HTMLObjectElement | Null
     @JSName("querySelector")
-    def querySelector_ol(selectors: ol): HTMLOListElement | Null = js.native
+    def querySelector_ol(selectors: ol): HTMLOListElement | Null
     @JSName("querySelector")
-    def querySelector_optgroup(selectors: optgroup): HTMLOptGroupElement | Null = js.native
+    def querySelector_optgroup(selectors: optgroup): HTMLOptGroupElement | Null
     @JSName("querySelector")
-    def querySelector_option(selectors: option): HTMLOptionElement | Null = js.native
+    def querySelector_option(selectors: option): HTMLOptionElement | Null
     @JSName("querySelector")
-    def querySelector_output(selectors: output): HTMLOutputElement | Null = js.native
+    def querySelector_output(selectors: output): HTMLOutputElement | Null
     @JSName("querySelector")
-    def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
+    def querySelector_p(selectors: p): HTMLParagraphElement | Null
     @JSName("querySelector")
-    def querySelector_param(selectors: param): HTMLParamElement | Null = js.native
+    def querySelector_param(selectors: param): HTMLParamElement | Null
     @JSName("querySelector")
-    def querySelector_path(selectors: path): SVGPathElement | Null = js.native
+    def querySelector_path(selectors: path): SVGPathElement | Null
     @JSName("querySelector")
-    def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
+    def querySelector_pattern(selectors: pattern): SVGPatternElement | Null
     @JSName("querySelector")
-    def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
+    def querySelector_picture(selectors: picture): HTMLPictureElement | Null
     @JSName("querySelector")
-    def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
+    def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null
     @JSName("querySelector")
-    def querySelector_polyline(selectors: polyline): SVGPolylineElement | Null = js.native
+    def querySelector_polyline(selectors: polyline): SVGPolylineElement | Null
     @JSName("querySelector")
-    def querySelector_pre(selectors: pre): HTMLPreElement | Null = js.native
+    def querySelector_pre(selectors: pre): HTMLPreElement | Null
     @JSName("querySelector")
-    def querySelector_progress(selectors: progress): HTMLProgressElement | Null = js.native
+    def querySelector_progress(selectors: progress): HTMLProgressElement | Null
     @JSName("querySelector")
-    def querySelector_q(selectors: q): HTMLQuoteElement | Null = js.native
+    def querySelector_q(selectors: q): HTMLQuoteElement | Null
     @JSName("querySelector")
-    def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
+    def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null
     @JSName("querySelector")
-    def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
+    def querySelector_rect(selectors: rect): SVGRectElement | Null
     @JSName("querySelector")
-    def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
+    def querySelector_rp(selectors: rp): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
+    def querySelector_rt(selectors: rt): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
+    def querySelector_ruby(selectors: ruby): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_s(selectors: s): HTMLElement | Null = js.native
+    def querySelector_s(selectors: s): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_samp(selectors: samp): HTMLElement | Null = js.native
+    def querySelector_samp(selectors: samp): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
+    def querySelector_script(selectors: script): HTMLScriptElement | Null
     @JSName("querySelector")
-    def querySelector_section(selectors: section): HTMLElement | Null = js.native
+    def querySelector_section(selectors: section): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
+    def querySelector_select(selectors: select): HTMLSelectElement | Null
     @JSName("querySelector")
-    def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
+    def querySelector_slot(selectors: slot): HTMLSlotElement | Null
     @JSName("querySelector")
-    def querySelector_small(selectors: small): HTMLElement | Null = js.native
+    def querySelector_small(selectors: small): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
+    def querySelector_source(selectors: source): HTMLSourceElement | Null
     @JSName("querySelector")
-    def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
+    def querySelector_span(selectors: span): HTMLSpanElement | Null
     @JSName("querySelector")
-    def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
+    def querySelector_stop(selectors: stop): SVGStopElement | Null
     @JSName("querySelector")
-    def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
+    def querySelector_strong(selectors: strong): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_style(selectors: style): HTMLStyleElement | Null = js.native
+    def querySelector_style(selectors: style): HTMLStyleElement | Null
     @JSName("querySelector")
-    def querySelector_sub(selectors: sub): HTMLElement | Null = js.native
+    def querySelector_sub(selectors: sub): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_summary(selectors: summary): HTMLElement | Null = js.native
+    def querySelector_summary(selectors: summary): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_sup(selectors: sup): HTMLElement | Null = js.native
+    def querySelector_sup(selectors: sup): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_svg(selectors: svg): SVGSVGElement | Null = js.native
+    def querySelector_svg(selectors: svg): SVGSVGElement | Null
     @JSName("querySelector")
-    def querySelector_switch(selectors: switch): SVGSwitchElement | Null = js.native
+    def querySelector_switch(selectors: switch): SVGSwitchElement | Null
     @JSName("querySelector")
-    def querySelector_symbol(selectors: symbol): SVGSymbolElement | Null = js.native
+    def querySelector_symbol(selectors: symbol): SVGSymbolElement | Null
     @JSName("querySelector")
-    def querySelector_table(selectors: table): HTMLTableElement | Null = js.native
+    def querySelector_table(selectors: table): HTMLTableElement | Null
     @JSName("querySelector")
-    def querySelector_tbody(selectors: tbody): HTMLTableSectionElement | Null = js.native
+    def querySelector_tbody(selectors: tbody): HTMLTableSectionElement | Null
     @JSName("querySelector")
-    def querySelector_td(selectors: td): HTMLTableDataCellElement | Null = js.native
+    def querySelector_td(selectors: td): HTMLTableDataCellElement | Null
     @JSName("querySelector")
-    def querySelector_template(selectors: template): HTMLTemplateElement | Null = js.native
+    def querySelector_template(selectors: template): HTMLTemplateElement | Null
     @JSName("querySelector")
-    def querySelector_text(selectors: text): SVGTextElement | Null = js.native
+    def querySelector_text(selectors: text): SVGTextElement | Null
     @JSName("querySelector")
-    def querySelector_textPath(selectors: textPath): SVGTextPathElement | Null = js.native
+    def querySelector_textPath(selectors: textPath): SVGTextPathElement | Null
     @JSName("querySelector")
-    def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null = js.native
+    def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null
     @JSName("querySelector")
-    def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null = js.native
+    def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null
     @JSName("querySelector")
-    def querySelector_th(selectors: th): HTMLTableHeaderCellElement | Null = js.native
+    def querySelector_th(selectors: th): HTMLTableHeaderCellElement | Null
     @JSName("querySelector")
-    def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null = js.native
+    def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null
     @JSName("querySelector")
-    def querySelector_time(selectors: time): HTMLTimeElement | Null = js.native
+    def querySelector_time(selectors: time): HTMLTimeElement | Null
     @JSName("querySelector")
-    def querySelector_title(selectors: title): HTMLTitleElement | Null = js.native
+    def querySelector_title(selectors: title): HTMLTitleElement | Null
     @JSName("querySelector")
-    def querySelector_tr(selectors: tr): HTMLTableRowElement | Null = js.native
+    def querySelector_tr(selectors: tr): HTMLTableRowElement | Null
     @JSName("querySelector")
-    def querySelector_track(selectors: track): HTMLTrackElement | Null = js.native
+    def querySelector_track(selectors: track): HTMLTrackElement | Null
     @JSName("querySelector")
-    def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
+    def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null
     @JSName("querySelector")
-    def querySelector_u(selectors: u): HTMLElement | Null = js.native
+    def querySelector_u(selectors: u): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
+    def querySelector_ul(selectors: ul): HTMLUListElement | Null
     @JSName("querySelector")
-    def querySelector_use(selectors: use): SVGUseElement | Null = js.native
+    def querySelector_use(selectors: use): SVGUseElement | Null
     @JSName("querySelector")
-    def querySelector_var(selectors: `var`): HTMLElement | Null = js.native
+    def querySelector_var(selectors: `var`): HTMLElement | Null
     @JSName("querySelector")
-    def querySelector_video(selectors: video): HTMLVideoElement | Null = js.native
+    def querySelector_video(selectors: video): HTMLVideoElement | Null
     @JSName("querySelector")
-    def querySelector_view(selectors: view): SVGViewElement | Null = js.native
+    def querySelector_view(selectors: view): SVGViewElement | Null
     @JSName("querySelector")
-    def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+    def querySelector_wbr(selectors: wbr): HTMLElement | Null
+  }
+  object PartialElement {
+    
+    @scala.inline
+    def apply(
+      classList: DOMTokenList,
+      className: String,
+      querySelector: FnCall,
+      querySelectorAll: FnCallSelectors
+    ): PartialElement = {
+      val __obj = js.Dynamic.literal(classList = classList.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], querySelector = querySelector.asInstanceOf[js.Any], querySelectorAll = querySelectorAll.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PartialElement]
+    }
+    
+    @scala.inline
+    implicit class PartialElementMutableBuilder[Self <: PartialElement] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClassList(value: DOMTokenList): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setQuerySelector(value: FnCall): Self = StObject.set(x, "querySelector", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setQuerySelectorAll(value: FnCallSelectors): Self = StObject.set(x, "querySelectorAll", value.asInstanceOf[js.Any])
+    }
   }
 }

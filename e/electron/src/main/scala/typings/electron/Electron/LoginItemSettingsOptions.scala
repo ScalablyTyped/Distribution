@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginItemSettingsOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait LoginItemSettingsOptions extends StObject {
     *
     * @platform win32
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The executable path to compare against. Defaults to `process.execPath`.
     *
     * @platform win32
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object LoginItemSettingsOptions {
   

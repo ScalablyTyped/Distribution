@@ -7,7 +7,6 @@ import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Dat
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataSetApi {
@@ -15,53 +14,52 @@ object DataSetApi {
   /**
     * Metadata about a column in a dataset
     */
-  @js.native
   trait Column extends StObject {
     
     /**
       * The alias of this column.
       */
-    var alias: String = js.native
+    var alias: String
     
     /**
       * The manifest type of this column's values.
       */
-    var dataType: String = js.native
+    var dataType: String
     
     /**
       * Prevents the UI from making the column sortable.
       */
-    var disableSorting: js.UndefOr[Boolean] = js.native
+    var disableSorting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Localized display name for the column
       */
-    var displayName: String = js.native
+    var displayName: String
     
     /**
       * The column visibility state.
       */
-    var isHidden: js.UndefOr[Boolean] = js.native
+    var isHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is specific column the primary attrribute of the view's entity
       */
-    var isPrimary: js.UndefOr[Boolean] = js.native
+    var isPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the column, unique in this dataset
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The column order for the layout
       */
-    var order: Double = js.native
+    var order: Double
     
     /**
       * Customized column width ratios
       */
-    var visualSizeFactor: Double = js.native
+    var visualSizeFactor: Double
   }
   object Column {
     
@@ -122,28 +120,27 @@ object DataSetApi {
   /**
     * An expression used to represent a filter condition.
     */
-  @js.native
   trait ConditionExpression extends StObject {
     
     /**
       * The name of the data-set column to apply the filter on.
       */
-    var attributeName: String = js.native
+    var attributeName: String
     
     /**
       * The value evaluated by the condition
       */
-    var conditionOperator: ConditionOperator = js.native
+    var conditionOperator: ConditionOperator
     
     /**
       * Entity alias name so filtering can be used on linked entities.
       */
-    var entityAliasName: js.UndefOr[String] = js.native
+    var entityAliasName: js.UndefOr[String] = js.undefined
     
     /**
       * The value evaluated by the condition.
       */
-    var value: String | js.Array[String] = js.native
+    var value: String | js.Array[String]
   }
   object ConditionExpression {
     
@@ -179,30 +176,29 @@ object DataSetApi {
   /**
     * Base interface for dataset record result. Supports value retrival by column name.
     */
-  @js.native
   trait EntityRecord extends StObject {
     
     /**
       * Get the current formatted value of this record column.
       * @param columnName Column name of the record
       */
-    def getFormattedValue(columnName: String): String = js.native
+    def getFormattedValue(columnName: String): String
     
     /**
       * Get the object that encapsulates an Entity Reference as a plain object
       */
-    def getNamedReference(): EntityReference = js.native
+    def getNamedReference(): EntityReference
     
     /**
       * Get the record ID
       */
-    def getRecordId(): String = js.native
+    def getRecordId(): String
     
     /**
       * Get the raw value of the record's column
       * @param columnName Column name of the record
       */
-    def getValue(columnName: String): String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference = js.native
+    def getValue(columnName: String): String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
   }
   object EntityRecord {
     
@@ -239,23 +235,22 @@ object DataSetApi {
   /**
     * An expression used to represent a filter.
     */
-  @js.native
   trait FilterExpression extends StObject {
     
     /**
       * The set of conditions associated with this filter.
       */
-    var conditions: js.Array[ConditionExpression] = js.native
+    var conditions: js.Array[ConditionExpression]
     
     /**
       * The operator used to combine conditions in this filter.
       */
-    var filterOperator: FilterOperator = js.native
+    var filterOperator: FilterOperator
     
     /**
       * Any child filters that should be evaluated after evaluating this filter.
       */
-    var filters: js.UndefOr[js.Array[FilterExpression]] = js.native
+    var filters: js.UndefOr[js.Array[FilterExpression]] = js.undefined
   }
   object FilterExpression {
     
@@ -291,24 +286,23 @@ object DataSetApi {
   /**
     * Filter state for a dataset.
     */
-  @js.native
   trait Filtering extends StObject {
     
     /**
       * Clears the filter associated with the data-set.
       */
-    def clearFilter(): Unit = js.native
+    def clearFilter(): Unit
     
     /**
       * Returns the top-most filter associated with the data-set
       */
-    def getFilter(): FilterExpression = js.native
+    def getFilter(): FilterExpression
     
     /**
       * Sets the top-most filter associated with the data-set
       * @expression filter expression to be set
       */
-    def setFilter(expression: FilterExpression): Unit = js.native
+    def setFilter(expression: FilterExpression): Unit
   }
   object Filtering {
     
@@ -335,33 +329,32 @@ object DataSetApi {
   /**
     * Entity linking expression
     */
-  @js.native
   trait LinkEntityExposedExpression extends StObject {
     
     /**
       * The 'alias' for the link-entity relationship
       */
-    var alias: String = js.native
+    var alias: String
     
     /**
       * The 'from' attribute in the link-entity relationship
       */
-    var from: String = js.native
+    var from: String
     
     /**
       * The 'type' of the link, referred by the link-entity attribute
       */
-    var linkType: String = js.native
+    var linkType: String
     
     /**
       * The 'name' of the entity to link to
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The 'to' attribute in the link-entity relationship
       */
-    var to: String = js.native
+    var to: String
   }
   object LinkEntityExposedExpression {
     
@@ -394,18 +387,17 @@ object DataSetApi {
   /**
     * Dataset entity linking.
     */
-  @js.native
   trait Linking extends StObject {
     
     /**
       * Add a new linked entity relationship with the existed query primary entity
       */
-    def addLinkedEntity(expression: LinkEntityExposedExpression): Unit = js.native
+    def addLinkedEntity(expression: LinkEntityExposedExpression): Unit
     
     /**
       * Returns all the linked entities information
       */
-    def getLinkedEntities(): js.Array[LinkEntityExposedExpression] = js.native
+    def getLinkedEntities(): js.Array[LinkEntityExposedExpression]
   }
   object Linking {
     
@@ -432,44 +424,43 @@ object DataSetApi {
   /**
     * Paging state for a dataset
     */
-  @js.native
   trait Paging extends StObject {
     
     /**
       * Whether the result set can be paged forwards.
       */
-    var hasNextPage: Boolean = js.native
+    var hasNextPage: Boolean
     
     /**
       * Whether the result set can be paged backwards.
       */
-    var hasPreviousPage: Boolean = js.native
+    var hasPreviousPage: Boolean
     
     /**
       * Request the next page of results to be loaded. New data will be pushed to control in another 'updateView' cycle.
       */
-    def loadNextPage(): Unit = js.native
+    def loadNextPage(): Unit
     
     /**
       * Request the previous page of results to be loaded. New data will be pushed to control in another 'updateView' cycle.
       */
-    def loadPreviousPage(): Unit = js.native
+    def loadPreviousPage(): Unit
     
     /**
       * Reload the results from the server, and reset to page 1.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * Sets the number of results to return per page on the next data refresh.
       * @pageSize pageSize to be set.
       */
-    def setPageSize(pageSize: Double): Unit = js.native
+    def setPageSize(pageSize: Double): Unit
     
     /**
       * Total number of results on the server for the current query.
       */
-    var totalResultCount: Double = js.native
+    var totalResultCount: Double
   }
   object Paging {
     
@@ -516,18 +507,17 @@ object DataSetApi {
   /**
     * Current sort status of a dataset column
     */
-  @js.native
   trait SortStatus extends StObject {
     
     /**
       * The name of the column
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The current sort direction for the column.
       */
-    var sortDirection: SortDirection = js.native
+    var sortDirection: SortDirection
   }
   object SortStatus {
     

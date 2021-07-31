@@ -2,33 +2,31 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullContextualTypeContext extends StObject {
   
-  var astSymbolMap: js.Any = js.native
+  var astSymbolMap: js.Any
   
-  var contextualType: PullTypeSymbol = js.native
+  var contextualType: PullTypeSymbol
   
-  def getSymbolForAST(ast: AST): PullSymbol = js.native
+  def getSymbolForAST(ast: AST): PullSymbol
   
-  var hasProvisionalErrors: Boolean = js.native
+  var hasProvisionalErrors: Boolean
   
-  def invalidateProvisionallyTypedSymbols(): Unit = js.native
+  def invalidateProvisionallyTypedSymbols(): Unit
   
-  var isInferentiallyTyping: Boolean = js.native
+  var isInferentiallyTyping: Boolean
   
-  var provisional: Boolean = js.native
+  var provisional: Boolean
   
-  var provisionallyTypedSymbols: js.Array[PullSymbol] = js.native
+  var provisionallyTypedSymbols: js.Array[PullSymbol]
   
-  def recordProvisionallyTypedSymbol(symbol: PullSymbol): Unit = js.native
+  def recordProvisionallyTypedSymbol(symbol: PullSymbol): Unit
   
-  def setSymbolForAST(ast: AST, symbol: PullSymbol): Unit = js.native
+  def setSymbolForAST(ast: AST, symbol: PullSymbol): Unit
   
-  var typeArgumentInferenceContext: TypeArgumentInferenceContext = js.native
+  var typeArgumentInferenceContext: TypeArgumentInferenceContext
 }
 object PullContextualTypeContext {
   

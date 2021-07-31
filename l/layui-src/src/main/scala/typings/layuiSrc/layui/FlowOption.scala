@@ -3,10 +3,8 @@ package typings.layuiSrc.layui
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowOption extends StObject {
   
   var done: js.UndefOr[
@@ -15,19 +13,19 @@ trait FlowOption extends StObject {
       /* next */ js.Function2[/* html */ String, /* isMore */ Boolean, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var isAuto: js.UndefOr[Boolean] = js.native
+  var isAuto: js.UndefOr[Boolean] = js.undefined
   
-  var isLazyimg: js.UndefOr[Boolean] = js.native
+  var isLazyimg: js.UndefOr[Boolean] = js.undefined
   
-  var mb: js.UndefOr[Double] = js.native
+  var mb: js.UndefOr[Double] = js.undefined
   
-  var scrollElem: js.UndefOr[String | HTMLElement] = js.native
+  var scrollElem: js.UndefOr[String | HTMLElement] = js.undefined
 }
 object FlowOption {
   

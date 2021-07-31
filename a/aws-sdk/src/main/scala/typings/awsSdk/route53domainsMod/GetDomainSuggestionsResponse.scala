@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainSuggestionsResponse extends StObject {
   
   /**
     * A list of possible domain names. If you specified true for OnlyAvailable in the request, the list contains only domains that are available for registration.
     */
-  var SuggestionsList: js.UndefOr[DomainSuggestionsList] = js.native
+  var SuggestionsList: js.UndefOr[DomainSuggestionsList] = js.undefined
 }
 object GetDomainSuggestionsResponse {
   

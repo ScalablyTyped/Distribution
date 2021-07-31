@@ -3,20 +3,18 @@ package typings.atom.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathWatchErrorThrownEvent extends StObject {
   
   /** The error object. */
-  var error: Error = js.native
+  var error: Error
   
   /**
     *  Call this function to indicate you have handled the error.
     *  The error will not be thrown if this function is called.
     */
-  def handle(): Unit = js.native
+  def handle(): Unit
 }
 object PathWatchErrorThrownEvent {
   

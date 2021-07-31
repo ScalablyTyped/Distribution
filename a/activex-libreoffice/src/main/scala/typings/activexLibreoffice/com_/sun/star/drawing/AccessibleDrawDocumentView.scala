@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,9 +31,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a rearrangement of the visible shapes, the user gets notified of this.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleDrawDocumentView
-  extends XAccessible
+  extends StObject
+     with XAccessible
      with XAccessibleContext
      with XAccessibleComponent
 object AccessibleDrawDocumentView {

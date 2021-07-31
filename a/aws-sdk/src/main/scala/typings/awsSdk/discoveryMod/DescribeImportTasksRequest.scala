@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImportTasksRequest extends StObject {
   
   /**
     * An array of name-value pairs that you provide to filter the results for the DescribeImportTask request to a specific subset of results. Currently, wildcard values aren't supported for filters.
     */
-  var filters: js.UndefOr[DescribeImportTasksFilterList] = js.native
+  var filters: js.UndefOr[DescribeImportTasksFilterList] = js.undefined
   
   /**
     * The maximum number of results that you want this request to return, up to 100.
     */
-  var maxResults: js.UndefOr[DescribeImportTasksMaxResults] = js.native
+  var maxResults: js.UndefOr[DescribeImportTasksMaxResults] = js.undefined
   
   /**
     * The token to request a specific page of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeImportTasksRequest {
   

@@ -2,18 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OfficeGraphInsights extends Entity {
+trait OfficeGraphInsights
+  extends StObject
+     with Entity {
   
   /**
     * Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and
     * reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also
     * includes URLs and reference attachments to Teams conversations. Ordered by recency of share.
     */
-  var shared: js.UndefOr[NullableOption[js.Array[SharedInsight]]] = js.native
+  var shared: js.UndefOr[NullableOption[js.Array[SharedInsight]]] = js.undefined
   
   /**
     * Calculated relationship identifying documents trending around a user. Trending documents are calculated based on
@@ -21,13 +21,13 @@ trait OfficeGraphInsights extends Entity {
     * Trending insights help the user to discover potentially useful content that the user has access to, but has never
     * viewed before.
     */
-  var trending: js.UndefOr[NullableOption[js.Array[Trending]]] = js.native
+  var trending: js.UndefOr[NullableOption[js.Array[Trending]]] = js.undefined
   
   /**
     * Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business
     * and SharePoint documents, ranked by recency of use.
     */
-  var used: js.UndefOr[NullableOption[js.Array[UsedInsight]]] = js.native
+  var used: js.UndefOr[NullableOption[js.Array[UsedInsight]]] = js.undefined
 }
 object OfficeGraphInsights {
   

@@ -4,20 +4,18 @@ import typings.awsSdk.sagemakerMod.NotebookInstanceName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/sagemaker.DescribeNotebookInstanceInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeNotebookInstanceI extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The name of the notebook instance that you want information about.
     */
-  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName = js.native
+  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
 }
 object DescribeNotebookInstanceI {
   

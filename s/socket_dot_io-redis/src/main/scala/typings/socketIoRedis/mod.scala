@@ -5,7 +5,6 @@ import typings.socketIo.mod.Adapter
 import typings.socketIoRedis.anon.Except
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,7 +14,9 @@ object mod extends Shortcut {
   val ^ : SocketIORedisStatic = js.native
   
   @js.native
-  trait RedisAdapter extends Adapter {
+  trait RedisAdapter
+    extends StObject
+       with Adapter {
     
     /**
       * allRooms returns the list of all rooms.
@@ -64,7 +65,7 @@ object mod extends Shortcut {
       * @param {any} data
       * @param {(err: any, replies: any[]) => void} callback
       */
-    def customRequest(data: js.Any, callback: js.Function2[/* err */ js.Any, /* replies */ js.Array[_], Unit]): Unit = js.native
+    def customRequest(data: js.Any, callback: js.Function2[/* err */ js.Any, /* replies */ js.Array[js.Any], Unit]): Unit = js.native
     
     def delAll(id: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
     
@@ -123,41 +124,40 @@ object mod extends Shortcut {
   /**
     * Options to pass to the redis server when creating it
     */
-  @js.native
   trait SocketIORedisOptions extends StObject {
     
     /**
       * The optional password to connect to redis on
       */
-    var auth_pass: js.UndefOr[Double | String] = js.native
+    var auth_pass: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The optional host to connect to redis on
       * @default localhost
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * The optional name of the key to pub/sub events on as prefix
       * @default socket.io
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The optional port to connect to redis on
       * @default 6379
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * The optional redis client to publish events on
       */
-    var pubClient: js.UndefOr[js.Any] = js.native
+    var pubClient: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The optional redis client to subscribe to events on
       */
-    var subClient: js.UndefOr[js.Any] = js.native
+    var subClient: js.UndefOr[js.Any] = js.undefined
   }
   object SocketIORedisOptions {
     

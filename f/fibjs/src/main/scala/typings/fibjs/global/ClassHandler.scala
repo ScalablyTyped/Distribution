@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_Handler")
 @js.native
 class ClassHandler protected ()
-  extends typings.fibjs.ClassHandler {
+  extends StObject
+     with typings.fibjs.ClassHandler {
   /**
     * 
     * @brief 创建一个 JavaSvript 消息处理器
@@ -31,7 +31,7 @@ class ClassHandler protected ()
     * 
     * 
     */
-  def this(hdlrs: js.Array[_]) = this()
+  def this(hdlrs: js.Array[js.Any]) = this()
   /**
     * 
     * @brief 创建一个消息处理器路由对象

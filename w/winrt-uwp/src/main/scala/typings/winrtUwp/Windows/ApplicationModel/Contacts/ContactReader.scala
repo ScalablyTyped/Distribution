@@ -4,11 +4,9 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to read Contact objects in batches from the ContactStore which may be local or remotely located. */
-@js.native
 trait ContactReader extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait ContactReader extends StObject {
     * @param contact The Contact for which to get the matching properties.
     * @return The list of matching properties and match reasons.
     */
-  def getMatchingPropertiesWithMatchReason(contact: Contact): IVectorView[ContactMatchReason] = js.native
+  def getMatchingPropertiesWithMatchReason(contact: Contact): IVectorView[ContactMatchReason]
   
   /**
     * Asynchronously reads a batch of Contact objects from the ContactStore .
     * @return The batch of contacts read from the ContactStore .
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[ContactBatch] = js.native
+  def readBatchAsync(): IPromiseWithIAsyncOperation[ContactBatch]
 }
 object ContactReader {
   

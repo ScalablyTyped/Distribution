@@ -4,21 +4,19 @@ import typings.rcTree.interfaceMod.EventDataNode
 import typings.rcTree.rcTreeStrings.load
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  var event: load = js.native
+  var event: load
   
-  var node: EventDataNode = js.native
+  var node: EventDataNode
 }
 object Node {
   
   @scala.inline
-  def apply(event: load, node: EventDataNode): Node = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+  def apply(node: EventDataNode): Node = {
+    val __obj = js.Dynamic.literal(event = "load", node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   

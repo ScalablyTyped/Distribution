@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionPeriod extends StObject {
   
   /**
     * The number of days that message data is kept. The unlimited parameter must be false.
     */
-  var numberOfDays: js.UndefOr[RetentionPeriodInDays] = js.native
+  var numberOfDays: js.UndefOr[RetentionPeriodInDays] = js.undefined
   
   /**
     * If true, message data is kept indefinitely.
     */
-  var unlimited: js.UndefOr[UnlimitedRetentionPeriod] = js.native
+  var unlimited: js.UndefOr[UnlimitedRetentionPeriod] = js.undefined
 }
 object RetentionPeriod {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBucketRequest extends StObject {
   
   /**
     * The canned ACL to apply to the bucket.
     */
-  var ACL: js.UndefOr[BucketCannedACL] = js.native
+  var ACL: js.UndefOr[BucketCannedACL] = js.undefined
   
   /**
     * The name of the bucket to create.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The configuration information for the bucket.
     */
-  var CreateBucketConfiguration: js.UndefOr[typings.awsSdk.s3Mod.CreateBucketConfiguration] = js.native
+  var CreateBucketConfiguration: js.UndefOr[typings.awsSdk.s3Mod.CreateBucketConfiguration] = js.undefined
   
   /**
     * Allows grantee the read, write, read ACP, and write ACP permissions on the bucket.
     */
-  var GrantFullControl: js.UndefOr[typings.awsSdk.s3Mod.GrantFullControl] = js.native
+  var GrantFullControl: js.UndefOr[typings.awsSdk.s3Mod.GrantFullControl] = js.undefined
   
   /**
     * Allows grantee to list the objects in the bucket.
     */
-  var GrantRead: js.UndefOr[typings.awsSdk.s3Mod.GrantRead] = js.native
+  var GrantRead: js.UndefOr[typings.awsSdk.s3Mod.GrantRead] = js.undefined
   
   /**
     * Allows grantee to read the bucket ACL.
     */
-  var GrantReadACP: js.UndefOr[typings.awsSdk.s3Mod.GrantReadACP] = js.native
+  var GrantReadACP: js.UndefOr[typings.awsSdk.s3Mod.GrantReadACP] = js.undefined
   
   /**
     * Allows grantee to create, overwrite, and delete any object in the bucket.
     */
-  var GrantWrite: js.UndefOr[typings.awsSdk.s3Mod.GrantWrite] = js.native
+  var GrantWrite: js.UndefOr[typings.awsSdk.s3Mod.GrantWrite] = js.undefined
   
   /**
     * Allows grantee to write the ACL for the applicable bucket.
     */
-  var GrantWriteACP: js.UndefOr[typings.awsSdk.s3Mod.GrantWriteACP] = js.native
+  var GrantWriteACP: js.UndefOr[typings.awsSdk.s3Mod.GrantWriteACP] = js.undefined
   
   /**
     * Specifies whether you want S3 Object Lock to be enabled for the new bucket.
     */
-  var ObjectLockEnabledForBucket: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockEnabledForBucket] = js.native
+  var ObjectLockEnabledForBucket: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockEnabledForBucket] = js.undefined
 }
 object CreateBucketRequest {
   

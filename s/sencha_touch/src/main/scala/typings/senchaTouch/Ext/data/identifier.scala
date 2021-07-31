@@ -3,29 +3,29 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identifier {
   
-  @js.native
-  trait ISequential extends ISimple {
+  trait ISequential
+    extends StObject
+       with ISimple {
     
     /** [Method] Returns the value of seed
       * @returns Number
       */
-    var getSeed: js.UndefOr[js.Function0[Double]] = js.native
+    var getSeed: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (String) */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the value of seed
       * @param seed Number The new value.
       */
-    var setSeed: js.UndefOr[js.Function1[/* seed */ js.UndefOr[Double], Unit]] = js.native
+    var setSeed: js.UndefOr[js.Function1[/* seed */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object ISequential {
     
@@ -64,18 +64,19 @@ object identifier {
     }
   }
   
-  @js.native
-  trait ISimple extends IBase {
+  trait ISimple
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of prefix
       * @returns String
       */
-    var getPrefix: js.UndefOr[js.Function0[String]] = js.native
+    var getPrefix: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Sets the value of prefix
       * @param prefix String The new value.
       */
-    var setPrefix: js.UndefOr[js.Function1[/* prefix */ js.UndefOr[String], Unit]] = js.native
+    var setPrefix: js.UndefOr[js.Function1[/* prefix */ js.UndefOr[String], Unit]] = js.undefined
   }
   object ISimple {
     
@@ -102,45 +103,46 @@ object identifier {
     }
   }
   
-  @js.native
-  trait IUuid extends ISimple {
+  trait IUuid
+    extends StObject
+       with ISimple {
     
     /** [Method] Returns the value of id
       * @returns Object
       */
-    var getId: js.UndefOr[js.Function0[_]] = js.native
+    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of version
       * @returns Number
       */
-    var getVersion: js.UndefOr[js.Function0[Double]] = js.native
+    var getVersion: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Object) */
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Reconfigures this generator given new config properties
       * @param config Object
       */
-    var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Property] (Number/Object) */
-    var salt: js.UndefOr[js.Any] = js.native
+    var salt: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id Object The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.native
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of version
       * @param version Number The new value.
       */
-    var setVersion: js.UndefOr[js.Function1[/* version */ js.UndefOr[Double], Unit]] = js.native
+    var setVersion: js.UndefOr[js.Function1[/* version */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Property] (Number/Object) */
-    var timestamp: js.UndefOr[js.Any] = js.native
+    var timestamp: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object IUuid {
     
@@ -154,7 +156,7 @@ object identifier {
     implicit class IUuidMutableBuilder[Self <: IUuid] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetId(value: () => _): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)

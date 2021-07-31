@@ -8,23 +8,21 @@ import typings.angular.mod.IServiceProvider
 import typings.angular.mod.auto.IInjectorService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aa {
   
-  @js.native
   trait IExternalFormValidationConfig extends StObject {
     
-    var globals: js.UndefOr[js.Any] = js.native
+    var globals: js.UndefOr[js.Any] = js.undefined
     
-    var ignore: js.UndefOr[js.Any] = js.native
+    var ignore: js.UndefOr[js.Any] = js.undefined
     
-    var resolve: js.UndefOr[js.Any] = js.native
+    var resolve: js.UndefOr[js.Any] = js.undefined
     
-    var resolveFn: js.UndefOr[js.Function1[/* modelValue */ String, String]] = js.native
+    var resolveFn: js.UndefOr[js.Function1[/* modelValue */ String, String]] = js.undefined
     
-    var validations: js.Any = js.native
+    var validations: js.Any
   }
   object IExternalFormValidationConfig {
     
@@ -68,40 +66,41 @@ object aa {
   
   type IFieldGroupStrategies = StringDictionary[js.Function1[/* element */ IAugmentedJQueryStatic, Unit]]
   
-  @js.native
-  trait IFormExtensionsProvider extends IServiceProvider {
+  trait IFormExtensionsProvider
+    extends StObject
+       with IServiceProvider {
     
-    def confirmResetStrategy(): Boolean = js.native
+    def confirmResetStrategy(): Boolean
     
-    var defaultFieldGroupStrategy: String = js.native
+    var defaultFieldGroupStrategy: String
     
-    var defaultLabelStrategy: String = js.native
+    var defaultLabelStrategy: String
     
-    var defaultNotifyTarget: String = js.native
+    var defaultNotifyTarget: String
     
-    var defaultOnNavigateAwayStrategy: String = js.native
+    var defaultOnNavigateAwayStrategy: String
     
-    var defaultSpinnerClickStrategy: String = js.native
+    var defaultSpinnerClickStrategy: String
     
-    var defaultValMsgPlacementStrategy: String = js.native
+    var defaultValMsgPlacementStrategy: String
     
-    var fieldGroupStrategies: IFieldGroupStrategies = js.native
+    var fieldGroupStrategies: IFieldGroupStrategies
     
-    var globalSettings: IGlobalSettings = js.native
+    var globalSettings: IGlobalSettings
     
-    var labelStrategies: ILabelStrategies = js.native
+    var labelStrategies: ILabelStrategies
     
-    var onNavigateAwayStrategies: IOnNavigateAwayStrategies = js.native
+    var onNavigateAwayStrategies: IOnNavigateAwayStrategies
     
-    var spinnerClickStrategies: ISpinnerClickStrategies = js.native
+    var spinnerClickStrategies: ISpinnerClickStrategies
     
-    var valMsgForTemplate: String = js.native
+    var valMsgForTemplate: String
     
-    var valMsgPlacementStrategies: IValMsgPlacementStrategies = js.native
+    var valMsgPlacementStrategies: IValMsgPlacementStrategies
     
-    var validIconStrategy: IValidIconStrategy = js.native
+    var validIconStrategy: IValidIconStrategy
     
-    var validationMessages: IValidationMessages = js.native
+    var validationMessages: IValidationMessages
   }
   object IFormExtensionsProvider {
     
@@ -193,18 +192,17 @@ object aa {
     ]
   ]
   
-  @js.native
   trait INotifyConfig extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var namedDefaults: INotifyDefaults = js.native
+    var namedDefaults: INotifyDefaults
     
-    var options: INotifyOptions = js.native
+    var options: INotifyOptions
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateName: js.UndefOr[String] = js.native
+    var templateName: js.UndefOr[String] = js.undefined
   }
   object INotifyConfig {
     
@@ -240,18 +238,19 @@ object aa {
     }
   }
   
-  @js.native
-  trait INotifyConfigProvider extends IServiceProvider {
+  trait INotifyConfigProvider
+    extends StObject
+       with IServiceProvider {
     
-    def addOrUpdateNotifyConfig(name: String, opts: INotifyConfig): Unit = js.native
+    def addOrUpdateNotifyConfig(name: String, opts: INotifyConfig): Unit
     
-    var defaultNotifyConfig: String = js.native
+    var defaultNotifyConfig: String
     
-    var defaultTargetContainerName: String = js.native
+    var defaultTargetContainerName: String
     
-    var notifyConfigs: js.Any = js.native
+    var notifyConfigs: js.Any
     
-    def optionsTransformer(options: INotifyOptions, $sce: ISCEService): Unit = js.native
+    def optionsTransformer(options: INotifyOptions, $sce: ISCEService): Unit
   }
   object INotifyConfigProvider {
     
@@ -288,40 +287,71 @@ object aa {
     }
   }
   
-  @js.native
   trait INotifyDefaults extends StObject {
     
-    def danger(message: String, options: js.Any, notifier: js.Any): js.Any = js.native
+    def danger(message: String, options: js.Any, notifier: js.Any): js.Any
     @JSName("danger")
-    var danger_Original: INotifyPredicate = js.native
+    var danger_Original: INotifyPredicate
     
-    def error(message: String, options: js.Any, notifier: js.Any): js.Any = js.native
+    def error(message: String, options: js.Any, notifier: js.Any): js.Any
     @JSName("error")
-    var error_Original: INotifyPredicate = js.native
+    var error_Original: INotifyPredicate
     
-    def info(message: String, options: js.Any, notifier: js.Any): js.Any = js.native
+    def info(message: String, options: js.Any, notifier: js.Any): js.Any
     @JSName("info")
-    var info_Original: INotifyPredicate = js.native
+    var info_Original: INotifyPredicate
     
-    def success(message: String, options: js.Any, notifier: js.Any): js.Any = js.native
+    def success(message: String, options: js.Any, notifier: js.Any): js.Any
     @JSName("success")
-    var success_Original: INotifyPredicate = js.native
+    var success_Original: INotifyPredicate
     
-    def warning(message: String, options: js.Any, notifier: js.Any): js.Any = js.native
+    def warning(message: String, options: js.Any, notifier: js.Any): js.Any
     @JSName("warning")
-    var warning_Original: INotifyPredicate = js.native
+    var warning_Original: INotifyPredicate
+  }
+  object INotifyDefaults {
+    
+    @scala.inline
+    def apply(
+      danger: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
+      error: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
+      info: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
+      success: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
+      warning: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any
+    ): INotifyDefaults = {
+      val __obj = js.Dynamic.literal(danger = js.Any.fromFunction3(danger), error = js.Any.fromFunction3(error), info = js.Any.fromFunction3(info), success = js.Any.fromFunction3(success), warning = js.Any.fromFunction3(warning))
+      __obj.asInstanceOf[INotifyDefaults]
+    }
+    
+    @scala.inline
+    implicit class INotifyDefaultsMutableBuilder[Self <: INotifyDefaults] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDanger(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setError(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setInfo(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setSuccess(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setWarning(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait INotifyOptions extends StObject {
     
-    var allowHtml: Boolean = js.native
+    var allowHtml: Boolean
     
-    var cssClasses: js.UndefOr[String] = js.native
+    var cssClasses: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var messageType: String = js.native
+    var messageType: String
   }
   object INotifyOptions {
     
@@ -373,14 +403,13 @@ object aa {
     ]
   ]
   
-  @js.native
   trait IValidIconStrategy extends StObject {
     
-    def getContainer(element: IAugmentedJQueryStatic): Unit = js.native
+    def getContainer(element: IAugmentedJQueryStatic): Unit
     
-    var invalidIcon: String = js.native
+    var invalidIcon: String
     
-    var validIcon: String = js.native
+    var validIcon: String
   }
   object IValidIconStrategy {
     

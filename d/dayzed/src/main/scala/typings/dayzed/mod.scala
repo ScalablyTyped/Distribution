@@ -21,32 +21,33 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dayzed", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dayzed", JSImport.Default)
   @js.native
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @JSImport("dayzed", "useDayzed")
-  @js.native
-  def useDayzed(props: OmitPropschildrenrender): RenderProps = js.native
+  @scala.inline
+  def useDayzed(props: OmitPropschildrenrender): RenderProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDayzed")(props.asInstanceOf[js.Any]).asInstanceOf[RenderProps]
   
-  @js.native
   trait Calendar extends StObject {
     
-    var firstDayOfMonth: Date = js.native
+    var firstDayOfMonth: Date
     
-    var lastDayOfMonth: Date = js.native
+    var lastDayOfMonth: Date
     
-    var month: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` = js.native
+    var month: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`
     
-    var weeks: js.Array[js.Array[DateObj | _empty]] = js.native
+    var weeks: js.Array[js.Array[DateObj | _empty]]
     
-    var year: Double = js.native
+    var year: Double
   }
   object Calendar {
     
@@ -85,20 +86,19 @@ object mod {
     }
   }
   
-  @js.native
   trait DateObj extends StObject {
     
-    var date: Date = js.native
+    var date: Date
     
-    var nextMonth: Boolean = js.native
+    var nextMonth: Boolean
     
-    var prevMonth: Boolean = js.native
+    var prevMonth: Boolean
     
-    var selectable: Boolean = js.native
+    var selectable: Boolean
     
-    var selected: Boolean = js.native
+    var selected: Boolean
     
-    var today: Boolean = js.native
+    var today: Boolean
   }
   object DateObj {
     
@@ -140,32 +140,31 @@ object mod {
   
   type Dayzed = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: js.UndefOr[RenderFn] = js.native
+    var children: js.UndefOr[RenderFn] = js.undefined
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var monthsToDisplay: js.UndefOr[Double] = js.native
+    var monthsToDisplay: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    def onDateSelected(selectedDate: DateObj): Unit = js.native
+    def onDateSelected(selectedDate: DateObj): Unit
     
-    var onOffsetChanged: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.native
+    var onOffsetChanged: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.undefined
     
-    var render: js.UndefOr[RenderFn] = js.native
+    var render: js.UndefOr[RenderFn] = js.undefined
     
-    var selected: js.UndefOr[Date | js.Array[Date]] = js.native
+    var selected: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var showOutsideDays: js.UndefOr[Boolean] = js.native
+    var showOutsideDays: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
@@ -254,25 +253,24 @@ object mod {
   
   type RenderFn = js.Function1[/* renderProps */ RenderProps, ReactNode]
   
-  @js.native
   trait RenderProps extends StObject {
     
-    var calendars: js.Array[Calendar] = js.native
+    var calendars: js.Array[Calendar]
     
-    def getBackProps(data: Calendars): Record[String, _] = js.native
+    def getBackProps(data: Calendars): Record[String, js.Any]
     
-    def getDateProps(data: typings.dayzed.anon.DateObj): Record[String, _] = js.native
+    def getDateProps(data: typings.dayzed.anon.DateObj): Record[String, js.Any]
     
-    def getForwardProps(data: Calendars): Record[String, _] = js.native
+    def getForwardProps(data: Calendars): Record[String, js.Any]
   }
   object RenderProps {
     
     @scala.inline
     def apply(
       calendars: js.Array[Calendar],
-      getBackProps: Calendars => Record[String, _],
-      getDateProps: typings.dayzed.anon.DateObj => Record[String, _],
-      getForwardProps: Calendars => Record[String, _]
+      getBackProps: Calendars => Record[String, js.Any],
+      getDateProps: typings.dayzed.anon.DateObj => Record[String, js.Any],
+      getForwardProps: Calendars => Record[String, js.Any]
     ): RenderProps = {
       val __obj = js.Dynamic.literal(calendars = calendars.asInstanceOf[js.Any], getBackProps = js.Any.fromFunction1(getBackProps), getDateProps = js.Any.fromFunction1(getDateProps), getForwardProps = js.Any.fromFunction1(getForwardProps))
       __obj.asInstanceOf[RenderProps]
@@ -288,13 +286,13 @@ object mod {
       def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
       
       @scala.inline
-      def setGetBackProps(value: Calendars => Record[String, _]): Self = StObject.set(x, "getBackProps", js.Any.fromFunction1(value))
+      def setGetBackProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getBackProps", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetDateProps(value: typings.dayzed.anon.DateObj => Record[String, _]): Self = StObject.set(x, "getDateProps", js.Any.fromFunction1(value))
+      def setGetDateProps(value: typings.dayzed.anon.DateObj => Record[String, js.Any]): Self = StObject.set(x, "getDateProps", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetForwardProps(value: Calendars => Record[String, _]): Self = StObject.set(x, "getForwardProps", js.Any.fromFunction1(value))
+      def setGetForwardProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getForwardProps", js.Any.fromFunction1(value))
     }
   }
 }

@@ -8,19 +8,21 @@ import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSyncKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vscodeLanguageserverProtocolNumbers {
   
   @js.native
-  sealed trait `0` extends TextDocumentSyncKind
+  sealed trait `0`
+    extends StObject
+       with TextDocumentSyncKind
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
-    extends CompletionTriggerKind
+    extends StObject
+       with CompletionTriggerKind
        with FileChangeType
        with MessageType
        with SignatureHelpTriggerKind
@@ -81,7 +83,8 @@ object vscodeLanguageserverProtocolNumbers {
   
   @js.native
   sealed trait `2`
-    extends CompletionTriggerKind
+    extends StObject
+       with CompletionTriggerKind
        with FileChangeType
        with MessageType
        with SignatureHelpTriggerKind
@@ -127,7 +130,8 @@ object vscodeLanguageserverProtocolNumbers {
   
   @js.native
   sealed trait `3`
-    extends CompletionTriggerKind
+    extends StObject
+       with CompletionTriggerKind
        with FileChangeType
        with MessageType
        with SignatureHelpTriggerKind
@@ -136,7 +140,9 @@ object vscodeLanguageserverProtocolNumbers {
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `4` extends MessageType
+  sealed trait `4`
+    extends StObject
+       with MessageType
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   

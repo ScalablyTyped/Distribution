@@ -4,31 +4,29 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * holds a single error found by the proofreader.
   * @since OOo 3.0.1
   */
-@js.native
 trait SingleProofreadingError extends StObject {
   
-  var aFullComment: String = js.native
+  var aFullComment: String
   
-  var aProperties: SafeArray[PropertyValue] = js.native
+  var aProperties: SafeArray[PropertyValue]
   
-  var aRuleIdentifier: String = js.native
+  var aRuleIdentifier: String
   
-  var aShortComment: String = js.native
+  var aShortComment: String
   
-  var aSuggestions: SafeArray[String] = js.native
+  var aSuggestions: SafeArray[String]
   
-  var nErrorLength: Double = js.native
+  var nErrorLength: Double
   
-  var nErrorStart: Double = js.native
+  var nErrorStart: Double
   
-  var nErrorType: Double = js.native
+  var nErrorType: Double
 }
 object SingleProofreadingError {
   

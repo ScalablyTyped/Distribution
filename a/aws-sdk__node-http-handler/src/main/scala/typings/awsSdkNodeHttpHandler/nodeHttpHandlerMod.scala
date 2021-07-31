@@ -6,17 +6,19 @@ import typings.awsSdkProtocolHttp.httpRequestMod.HttpRequest
 import typings.awsSdkProtocolHttp.httpResponseMod.HttpResponse
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.transferMod.RequestHandler
+import typings.awsSdkTypes.transferMod.RequestHandlerOutput
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeHttpHandlerMod {
   
   @JSImport("@aws-sdk/node-http-handler/dist/cjs/node-http-handler", "NodeHttpHandler")
   @js.native
-  class NodeHttpHandler () extends RequestHandler[HttpRequest, HttpResponse, HttpHandlerOptions] {
+  class NodeHttpHandler ()
+    extends StObject
+       with RequestHandler[HttpRequest, HttpResponse, HttpHandlerOptions] {
     def this(hasConnectionTimeoutSocketTimeoutHttpAgentHttpsAgent: NodeHttpOptions) = this()
     
     val connectionTimeout: js.Any = js.native
@@ -24,6 +26,8 @@ object nodeHttpHandlerMod {
     @JSName("destroy")
     def destroy_MNodeHttpHandler(): Unit = js.native
     
+    /* CompleteClass */
+    override def handle(request: HttpRequest, handlerOptions: HttpHandlerOptions): js.Promise[RequestHandlerOutput[HttpResponse]] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
     
     val httpAgent: js.Any = js.native
@@ -36,24 +40,23 @@ object nodeHttpHandlerMod {
     val socketTimeout: js.Any = js.native
   }
   
-  @js.native
   trait NodeHttpOptions extends StObject {
     
     /**
       * The maximum time in milliseconds that the connection phase of a request
       * may take before the connection attempt is abandoned.
       */
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
-    var httpAgent: js.UndefOr[Agent] = js.native
+    var httpAgent: js.UndefOr[Agent] = js.undefined
     
-    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
     
     /**
       * The maximum time in milliseconds that a socket may remain idle before it
       * is closed.
       */
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
   }
   object NodeHttpOptions {
     

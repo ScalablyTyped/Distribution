@@ -5,7 +5,6 @@ import typings.grammarkdown.grammarkdownMod.SyntaxKind.LookaheadKeyword
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "LookaheadAssertion")
@@ -24,13 +23,13 @@ class LookaheadAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
+    operatorToken: Unit,
     lookahead: SymbolSet
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
+    operatorToken: Unit,
     lookahead: SymbolSpan
   ) = this()
   def this(
@@ -48,21 +47,21 @@ class LookaheadAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: js.UndefOr[scala.Nothing],
+    operatorToken: Unit,
+    lookahead: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
+    operatorToken: Unit,
     lookahead: SymbolSet,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
+    operatorToken: Unit,
     lookahead: SymbolSpan,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
@@ -70,7 +69,7 @@ class LookaheadAssertion protected ()
     openBracketToken: Token[OpenBracketToken],
     lookaheadKeyword: Token[LookaheadKeyword],
     operatorToken: Token[LookaheadOperatorKind],
-    lookahead: js.UndefOr[scala.Nothing],
+    lookahead: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(

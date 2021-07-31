@@ -2,10 +2,8 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonFakeServerOptions extends StObject {
   
   /**
@@ -13,18 +11,18 @@ trait SinonFakeServerOptions extends StObject {
     * The default timeout is 10ms but you can control it through the autoRespondAfter property.
     * Note that this feature is intended to help during mockup development, and is not suitable for use in tests.
     */
-  var autoRespond: Boolean = js.native
+  var autoRespond: Boolean
   
   /**
     * When autoRespond is true, respond to requests after this number of milliseconds. Default is 10.
     */
-  var autoRespondAfter: Double = js.native
+  var autoRespondAfter: Double
   
   /**
     * If set to true, server will find _method parameter in POST body and recognize that as the actual method.
     * Supports a pattern common to Ruby on Rails applications. For custom HTTP method faking, override server.getHTTPMethod(request).
     */
-  var fakeHTTPMethods: Boolean = js.native
+  var fakeHTTPMethods: Boolean
   
   /**
     * If set, the server will respond to every request immediately and synchronously.
@@ -32,7 +30,7 @@ trait SinonFakeServerOptions extends StObject {
     * As this is synchronous and immediate, this is not suitable for simulating actual network latency in tests or mockups.
     * To simulate network latency with automatic responses, see server.autoRespond and server.autoRespondAfter.
     */
-  var respondImmediately: Boolean = js.native
+  var respondImmediately: Boolean
 }
 object SinonFakeServerOptions {
   

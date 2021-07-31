@@ -11,7 +11,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A wrapper for either a doc string or a table. */
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new PickleStepArgument.
   * @param [properties] Properties to set
   */
-class PickleStepArgument () extends IPickleStepArgument {
+class PickleStepArgument ()
+  extends StObject
+     with IPickleStepArgument {
   def this(properties: IPickleStepArgument) = this()
   
   /** PickleStepArgument message. */
@@ -35,6 +36,10 @@ class PickleStepArgument () extends IPickleStepArgument {
 }
 object PickleStepArgument {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a PickleDocString. */
   @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString")
   @js.native
@@ -42,7 +47,9 @@ object PickleStepArgument {
     * Constructs a new PickleDocString.
     * @param [properties] Properties to set
     */
-  class PickleDocString () extends IPickleDocString {
+  class PickleDocString ()
+    extends StObject
+       with IPickleDocString {
     def this(properties: IPickleDocString) = this()
     
     /** PickleDocString contentType. */
@@ -61,18 +68,20 @@ object PickleStepArgument {
   }
   object PickleDocString {
     
+    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new PickleDocString instance using the specified properties.
       * @param [properties] Properties to set
       * @returns PickleDocString instance
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.create")
-    @js.native
-    def create(): PickleDocString = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.create")
-    @js.native
-    def create(properties: IPickleDocString): PickleDocString = js.native
+    @scala.inline
+    def create(): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleDocString]
+    @scala.inline
+    def create(properties: IPickleDocString): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
     /**
       * Decodes a PickleDocString message from the specified reader or buffer.
@@ -83,18 +92,14 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decode")
-    @js.native
-    def decode(reader: Reader): PickleDocString = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): PickleDocString = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decode")
-    @js.native
-    def decode(reader: Uint8Array): PickleDocString = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): PickleDocString = js.native
+    @scala.inline
+    def decode(reader: Reader): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
+    @scala.inline
+    def decode(reader: Reader, length: Double): PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleDocString]
+    @scala.inline
+    def decode(reader: Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleDocString]
     
     /**
       * Decodes a PickleDocString message from the specified reader or buffer, length delimited.
@@ -104,12 +109,10 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): PickleDocString = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): PickleDocString = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
     /**
       * Encodes the specified PickleDocString message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleDocString.verify|verify} messages.
@@ -118,12 +121,10 @@ object PickleStepArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.encode")
-    @js.native
-    def encode(message: IPickleDocString): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.encode")
-    @js.native
-    def encode(message: IPickleDocString, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IPickleDocString): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IPickleDocString, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified PickleDocString message, length delimited. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleDocString.verify|verify} messages.
@@ -132,12 +133,10 @@ object PickleStepArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPickleDocString): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPickleDocString, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IPickleDocString): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IPickleDocString, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a PickleDocString message from a plain object. Also converts values to their respective internal types.
@@ -145,9 +144,8 @@ object PickleStepArgument {
       * @returns PickleDocString
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): PickleDocString = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
     /**
       * Creates a plain object from a PickleDocString message. Also converts values to other types if specified.
@@ -156,12 +154,10 @@ object PickleStepArgument {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.toObject")
-    @js.native
-    def toObject(message: PickleDocString): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.toObject")
-    @js.native
-    def toObject(message: PickleDocString, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: PickleDocString): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: PickleDocString, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a PickleDocString message.
@@ -169,9 +165,8 @@ object PickleStepArgument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleDocString.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a PickleTable. */
@@ -181,7 +176,9 @@ object PickleStepArgument {
     * Constructs a new PickleTable.
     * @param [properties] Properties to set
     */
-  class PickleTable () extends IPickleTable {
+  class PickleTable ()
+    extends StObject
+       with IPickleTable {
     def this(properties: IPickleTable) = this()
     
     /** PickleTable rows. */
@@ -196,6 +193,10 @@ object PickleStepArgument {
   }
   object PickleTable {
     
+    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Represents a PickleTableRow. */
     @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow")
     @js.native
@@ -203,7 +204,9 @@ object PickleStepArgument {
       * Constructs a new PickleTableRow.
       * @param [properties] Properties to set
       */
-    class PickleTableRow () extends IPickleTableRow {
+    class PickleTableRow ()
+      extends StObject
+         with IPickleTableRow {
       def this(properties: IPickleTableRow) = this()
       
       /** PickleTableRow cells. */
@@ -218,6 +221,10 @@ object PickleStepArgument {
     }
     object PickleTableRow {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a PickleTableCell. */
       @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell")
       @js.native
@@ -225,7 +232,9 @@ object PickleStepArgument {
         * Constructs a new PickleTableCell.
         * @param [properties] Properties to set
         */
-      class PickleTableCell () extends IPickleTableCell {
+      class PickleTableCell ()
+        extends StObject
+           with IPickleTableCell {
         def this(properties: IPickleTableCell) = this()
         
         /**
@@ -240,18 +249,20 @@ object PickleStepArgument {
       }
       object PickleTableCell {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new PickleTableCell instance using the specified properties.
           * @param [properties] Properties to set
           * @returns PickleTableCell instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.create")
-        @js.native
-        def create(): PickleTableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.create")
-        @js.native
-        def create(properties: IPickleTableCell): PickleTableCell = js.native
+        @scala.inline
+        def create(): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTableCell]
+        @scala.inline
+        def create(properties: IPickleTableCell): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer.
@@ -262,18 +273,14 @@ object PickleStepArgument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decode")
-        @js.native
-        def decode(reader: Reader): PickleTableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): PickleTableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decode")
-        @js.native
-        def decode(reader: Uint8Array): PickleTableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): PickleTableCell = js.native
+        @scala.inline
+        def decode(reader: Reader): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
+        @scala.inline
+        def decode(reader: Reader, length: Double): PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableCell]
+        @scala.inline
+        def decode(reader: Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableCell]
         
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer, length delimited.
@@ -283,12 +290,10 @@ object PickleStepArgument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): PickleTableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): PickleTableCell = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
         /**
           * Encodes the specified PickleTableCell message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.verify|verify} messages.
@@ -297,12 +302,10 @@ object PickleStepArgument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.encode")
-        @js.native
-        def encode(message: IPickleTableCell): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.encode")
-        @js.native
-        def encode(message: IPickleTableCell, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IPickleTableCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IPickleTableCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified PickleTableCell message, length delimited. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.verify|verify} messages.
@@ -311,12 +314,10 @@ object PickleStepArgument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IPickleTableCell): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IPickleTableCell, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IPickleTableCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IPickleTableCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a PickleTableCell message from a plain object. Also converts values to their respective internal types.
@@ -324,9 +325,8 @@ object PickleStepArgument {
           * @returns PickleTableCell
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): PickleTableCell = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
         /**
           * Creates a plain object from a PickleTableCell message. Also converts values to other types if specified.
@@ -335,12 +335,10 @@ object PickleStepArgument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.toObject")
-        @js.native
-        def toObject(message: PickleTableCell): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.toObject")
-        @js.native
-        def toObject(message: PickleTableCell, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: PickleTableCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: PickleTableCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a PickleTableCell message.
@@ -348,9 +346,8 @@ object PickleStepArgument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -359,12 +356,10 @@ object PickleStepArgument {
         * @returns PickleTableRow instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.create")
-      @js.native
-      def create(): PickleTableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.create")
-      @js.native
-      def create(properties: IPickleTableRow): PickleTableRow = js.native
+      @scala.inline
+      def create(): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTableRow]
+      @scala.inline
+      def create(properties: IPickleTableRow): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer.
@@ -375,18 +370,14 @@ object PickleStepArgument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decode")
-      @js.native
-      def decode(reader: Reader): PickleTableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): PickleTableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decode")
-      @js.native
-      def decode(reader: Uint8Array): PickleTableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): PickleTableRow = js.native
+      @scala.inline
+      def decode(reader: Reader): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
+      @scala.inline
+      def decode(reader: Reader, length: Double): PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableRow]
+      @scala.inline
+      def decode(reader: Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableRow]
       
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer, length delimited.
@@ -396,12 +387,10 @@ object PickleStepArgument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): PickleTableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): PickleTableRow = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
       /**
         * Encodes the specified PickleTableRow message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.verify|verify} messages.
@@ -410,12 +399,10 @@ object PickleStepArgument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.encode")
-      @js.native
-      def encode(message: IPickleTableRow): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.encode")
-      @js.native
-      def encode(message: IPickleTableRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IPickleTableRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IPickleTableRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified PickleTableRow message, length delimited. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.verify|verify} messages.
@@ -424,12 +411,10 @@ object PickleStepArgument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPickleTableRow): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPickleTableRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IPickleTableRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IPickleTableRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a PickleTableRow message from a plain object. Also converts values to their respective internal types.
@@ -437,9 +422,8 @@ object PickleStepArgument {
         * @returns PickleTableRow
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): PickleTableRow = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
       /**
         * Creates a plain object from a PickleTableRow message. Also converts values to other types if specified.
@@ -448,12 +432,10 @@ object PickleStepArgument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.toObject")
-      @js.native
-      def toObject(message: PickleTableRow): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.toObject")
-      @js.native
-      def toObject(message: PickleTableRow, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: PickleTableRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: PickleTableRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a PickleTableRow message.
@@ -461,16 +443,14 @@ object PickleStepArgument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a PickleTableCell. */
-      @js.native
       trait IPickleTableCell extends StObject {
         
         /** PickleTableCell value */
-        var value: js.UndefOr[String | Null] = js.native
+        var value: js.UndefOr[String | Null] = js.undefined
       }
       object IPickleTableCell {
         
@@ -501,12 +481,10 @@ object PickleStepArgument {
       * @returns PickleTable instance
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.create")
-    @js.native
-    def create(): PickleTable = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.create")
-    @js.native
-    def create(properties: IPickleTable): PickleTable = js.native
+    @scala.inline
+    def create(): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTable]
+    @scala.inline
+    def create(properties: IPickleTable): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
     /**
       * Decodes a PickleTable message from the specified reader or buffer.
@@ -517,18 +495,14 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decode")
-    @js.native
-    def decode(reader: Reader): PickleTable = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): PickleTable = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decode")
-    @js.native
-    def decode(reader: Uint8Array): PickleTable = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): PickleTable = js.native
+    @scala.inline
+    def decode(reader: Reader): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
+    @scala.inline
+    def decode(reader: Reader, length: Double): PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTable]
+    @scala.inline
+    def decode(reader: Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTable]
     
     /**
       * Decodes a PickleTable message from the specified reader or buffer, length delimited.
@@ -538,12 +512,10 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): PickleTable = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): PickleTable = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
     /**
       * Encodes the specified PickleTable message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.verify|verify} messages.
@@ -552,12 +524,10 @@ object PickleStepArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.encode")
-    @js.native
-    def encode(message: IPickleTable): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.encode")
-    @js.native
-    def encode(message: IPickleTable, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IPickleTable): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IPickleTable, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified PickleTable message, length delimited. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.verify|verify} messages.
@@ -566,12 +536,10 @@ object PickleStepArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPickleTable): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPickleTable, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IPickleTable): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IPickleTable, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a PickleTable message from a plain object. Also converts values to their respective internal types.
@@ -579,9 +547,8 @@ object PickleStepArgument {
       * @returns PickleTable
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): PickleTable = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
     /**
       * Creates a plain object from a PickleTable message. Also converts values to other types if specified.
@@ -590,12 +557,10 @@ object PickleStepArgument {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.toObject")
-    @js.native
-    def toObject(message: PickleTable): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.toObject")
-    @js.native
-    def toObject(message: PickleTable, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: PickleTable): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: PickleTable, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a PickleTable message.
@@ -603,16 +568,14 @@ object PickleStepArgument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.PickleTable.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a PickleTableRow. */
-    @js.native
     trait IPickleTableRow extends StObject {
       
       /** PickleTableRow cells */
-      var cells: js.UndefOr[js.Array[IPickleTableCell] | Null] = js.native
+      var cells: js.UndefOr[js.Array[IPickleTableCell] | Null] = js.undefined
     }
     object IPickleTableRow {
       
@@ -646,12 +609,10 @@ object PickleStepArgument {
     * @returns PickleStepArgument instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.create")
-  @js.native
-  def create(): PickleStepArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.create")
-  @js.native
-  def create(properties: IPickleStepArgument): PickleStepArgument = js.native
+  @scala.inline
+  def create(): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleStepArgument]
+  @scala.inline
+  def create(properties: IPickleStepArgument): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer.
@@ -662,18 +623,14 @@ object PickleStepArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decode")
-  @js.native
-  def decode(reader: Reader): PickleStepArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): PickleStepArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decode")
-  @js.native
-  def decode(reader: Uint8Array): PickleStepArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): PickleStepArgument = js.native
+  @scala.inline
+  def decode(reader: Reader): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
+  @scala.inline
+  def decode(reader: Reader, length: Double): PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleStepArgument]
+  @scala.inline
+  def decode(reader: Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleStepArgument]
   
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer, length delimited.
@@ -683,12 +640,10 @@ object PickleStepArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): PickleStepArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): PickleStepArgument = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
   /**
     * Encodes the specified PickleStepArgument message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.verify|verify} messages.
@@ -697,12 +652,10 @@ object PickleStepArgument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.encode")
-  @js.native
-  def encode(message: IPickleStepArgument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.encode")
-  @js.native
-  def encode(message: IPickleStepArgument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IPickleStepArgument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IPickleStepArgument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified PickleStepArgument message, length delimited. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.verify|verify} messages.
@@ -711,12 +664,10 @@ object PickleStepArgument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPickleStepArgument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPickleStepArgument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IPickleStepArgument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IPickleStepArgument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a PickleStepArgument message from a plain object. Also converts values to their respective internal types.
@@ -724,9 +675,8 @@ object PickleStepArgument {
     * @returns PickleStepArgument
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): PickleStepArgument = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
   /**
     * Creates a plain object from a PickleStepArgument message. Also converts values to other types if specified.
@@ -735,12 +685,10 @@ object PickleStepArgument {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.toObject")
-  @js.native
-  def toObject(message: PickleStepArgument): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.toObject")
-  @js.native
-  def toObject(message: PickleStepArgument, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: PickleStepArgument): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: PickleStepArgument, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a PickleStepArgument message.
@@ -748,19 +696,17 @@ object PickleStepArgument {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleStepArgument.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a PickleDocString. */
-  @js.native
   trait IPickleDocString extends StObject {
     
     /** PickleDocString content */
-    var content: js.UndefOr[String | Null] = js.native
+    var content: js.UndefOr[String | Null] = js.undefined
     
     /** PickleDocString contentType */
-    var contentType: js.UndefOr[String | Null] = js.native
+    var contentType: js.UndefOr[String | Null] = js.undefined
   }
   object IPickleDocString {
     
@@ -794,11 +740,10 @@ object PickleStepArgument {
   }
   
   /** Properties of a PickleTable. */
-  @js.native
   trait IPickleTable extends StObject {
     
     /** PickleTable rows */
-    var rows: js.UndefOr[js.Array[IPickleTableRow] | Null] = js.native
+    var rows: js.UndefOr[js.Array[IPickleTableRow] | Null] = js.undefined
   }
   object IPickleTable {
     

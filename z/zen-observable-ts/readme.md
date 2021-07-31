@@ -4,21 +4,21 @@
 Typings are for version 0.8.21
 
 ## Library description:
-An Implementation of ES Observables in Typescript
+Thin wrapper around zen-observable and @types/zen-observable, to support ESM exports as well as CommonJS exports
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zen-observable-ts |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 29 |
-| # downloads        | 101406994 |
+| # releases         | 10 |
+| # dependents       | 36 |
+| # downloads        | 125006040 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/zenparsing/zen-observable)
-- [Bugs](https://github.com/apollographql/apollo-link/issues)
-- [Repository](https://github.com/apollographql/apollo-link)
+- [Homepage](https://github.com/apollographql/zen-observable-ts#readme)
+- [Bugs](https://github.com/apollographql/zen-observable-ts/issues)
+- [Repository](https://github.com/apollographql/zen-observable-ts)
 - [Npm](https://www.npmjs.com/package/zen-observable-ts)
     
 

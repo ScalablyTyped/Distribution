@@ -6,25 +6,23 @@ import typings.javascriptTimeAgo.localeMod.Locale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleMod {
   
   type CustomFormatter = js.Function1[/* options */ CustomFormatterOptions, js.UndefOr[String]]
   
-  @js.native
   trait CustomFormatterOptions extends StObject {
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var elapsed: Double = js.native
+    var elapsed: Double
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var now: Double = js.native
+    var now: Double
     
-    var time: Double = js.native
+    var time: Double
   }
   object CustomFormatterOptions {
     
@@ -83,18 +81,17 @@ object styleMod {
     def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
   }
   
-  @js.native
   trait FormatStyle extends StObject {
     
-    var custom: js.UndefOr[CustomFormatter] = js.native
+    var custom: js.UndefOr[CustomFormatter] = js.undefined
     
-    var flavour: js.UndefOr[js.Array[Flavour]] = js.native
+    var flavour: js.UndefOr[js.Array[Flavour]] = js.undefined
     
-    var format: js.UndefOr[js.Function2[/* date */ Date | Double, /* locale */ Locale, String]] = js.native
+    var format: js.UndefOr[js.Function2[/* date */ Date | Double, /* locale */ Locale, String]] = js.undefined
     
-    var gradation: js.UndefOr[js.Array[Gradation]] = js.native
+    var gradation: js.UndefOr[js.Array[Gradation]] = js.undefined
     
-    var units: js.UndefOr[Unit] = js.native
+    var units: js.UndefOr[Unit] = js.undefined
   }
   object FormatStyle {
     

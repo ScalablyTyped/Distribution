@@ -2,86 +2,84 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The time when the user was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The email address of the user.
     */
-  var EmailAddress: js.UndefOr[EmailAddressType] = js.native
+  var EmailAddress: js.UndefOr[EmailAddressType] = js.undefined
   
   /**
     * The given name of the user.
     */
-  var GivenName: js.UndefOr[UserAttributeValueType] = js.native
+  var GivenName: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var Id: js.UndefOr[IdType] = js.native
+  var Id: js.UndefOr[IdType] = js.undefined
   
   /**
     * The locale of the user.
     */
-  var Locale: js.UndefOr[LocaleType] = js.native
+  var Locale: js.UndefOr[LocaleType] = js.undefined
   
   /**
     * The time when the user was modified.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.native
+  var OrganizationId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The ID of the recycle bin folder.
     */
-  var RecycleBinFolderId: js.UndefOr[ResourceIdType] = js.native
+  var RecycleBinFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The ID of the root folder.
     */
-  var RootFolderId: js.UndefOr[ResourceIdType] = js.native
+  var RootFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The status of the user.
     */
-  var Status: js.UndefOr[UserStatusType] = js.native
+  var Status: js.UndefOr[UserStatusType] = js.undefined
   
   /**
     * The storage for the user.
     */
-  var Storage: js.UndefOr[UserStorageMetadata] = js.native
+  var Storage: js.UndefOr[UserStorageMetadata] = js.undefined
   
   /**
     * The surname of the user.
     */
-  var Surname: js.UndefOr[UserAttributeValueType] = js.native
+  var Surname: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * The time zone ID of the user.
     */
-  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.native
+  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.undefined
   
   /**
     * The type of user.
     */
-  var Type: js.UndefOr[UserType] = js.native
+  var Type: js.UndefOr[UserType] = js.undefined
   
   /**
     * The login name of the user.
     */
-  var Username: js.UndefOr[UsernameType] = js.native
+  var Username: js.UndefOr[UsernameType] = js.undefined
 }
 object User {
   

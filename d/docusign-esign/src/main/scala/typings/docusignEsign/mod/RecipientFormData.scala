@@ -2,52 +2,50 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientFormData extends StObject {
   
   /**
     * The date and time the recipient declined the envelope.
     */
-  var DeclinedTime: js.UndefOr[String] = js.native
+  var DeclinedTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the recipient viewed the documents in the envelope in the DocuSign signing UI.
     */
-  var DeliveredTime: js.UndefOr[String] = js.native
+  var DeliveredTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the envelope was sent to the recipient.
     */
-  var SentTime: js.UndefOr[String] = js.native
+  var SentTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the recipient signed the documents.
     */
-  var SignedTime: js.UndefOr[String] = js.native
+  var SignedTime: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * An array of form data objects.
     */
-  var formData: js.UndefOr[js.Array[FormDataItem]] = js.native
+  var formData: js.UndefOr[js.Array[FormDataItem]] = js.undefined
   
   /**
     * The name of the recipient.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId` must be unique,
     * but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
 }
 object RecipientFormData {
   

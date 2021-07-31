@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerDescription extends StObject {
   
   /**
     * The domain name of the LoadBalancer.
     */
-  var Domain: js.UndefOr[String] = js.native
+  var Domain: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Listeners used by the LoadBalancer.
     */
-  var Listeners: js.UndefOr[LoadBalancerListenersDescription] = js.native
+  var Listeners: js.UndefOr[LoadBalancerListenersDescription] = js.undefined
   
   /**
     * The name of the LoadBalancer.
     */
-  var LoadBalancerName: js.UndefOr[String] = js.native
+  var LoadBalancerName: js.UndefOr[String] = js.undefined
 }
 object LoadBalancerDescription {
   

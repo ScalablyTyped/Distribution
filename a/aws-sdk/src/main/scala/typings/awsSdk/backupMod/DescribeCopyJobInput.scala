@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCopyJobInput extends StObject {
   
   /**
     * Uniquely identifies a copy job.
     */
-  var CopyJobId: String = js.native
+  var CopyJobId: String
 }
 object DescribeCopyJobInput {
   

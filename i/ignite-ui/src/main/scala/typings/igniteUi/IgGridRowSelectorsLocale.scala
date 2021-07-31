@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridRowSelectorsLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgGridRowSelectorsLocale
     * Deselect all text for the select/deselect all overlay.
     *
     */
-  var deselectAllText: js.UndefOr[String] = js.native
+  var deselectAllText: js.UndefOr[String] = js.undefined
   
   /**
     * Deselected records text for the select/deselect all overlay.
     *
     */
-  var deselectedRecordsText: js.UndefOr[String] = js.native
+  var deselectedRecordsText: js.UndefOr[String] = js.undefined
   
   /**
     * Select all text for the select/deselect all overlay.
     *
     */
-  var selectAllText: js.UndefOr[String] = js.native
+  var selectAllText: js.UndefOr[String] = js.undefined
   
   /**
     * Selected records text for the select/deselect all overlay.
     *
     */
-  var selectedRecordsText: js.UndefOr[String] = js.native
+  var selectedRecordsText: js.UndefOr[String] = js.undefined
 }
 object IgGridRowSelectorsLocale {
   

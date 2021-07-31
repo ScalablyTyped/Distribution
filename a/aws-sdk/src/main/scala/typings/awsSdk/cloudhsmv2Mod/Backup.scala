@@ -2,66 +2,64 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backup extends StObject {
   
   /**
     * The identifier (ID) of the backup.
     */
-  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId = js.native
+  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId
   
   /**
     * The state of the backup.
     */
-  var BackupState: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupState] = js.native
+  var BackupState: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupState] = js.undefined
   
   /**
     * The identifier (ID) of the cluster that was backed up.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.undefined
   
   /**
     * The date and time when the backup was copied from a source backup.
     */
-  var CopyTimestamp: js.UndefOr[Timestamp] = js.native
+  var CopyTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time when the backup was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time when the backup will be permanently deleted.
     */
-  var DeleteTimestamp: js.UndefOr[Timestamp] = js.native
+  var DeleteTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Specifies whether the service should exempt a backup from the retention policy for the cluster. True exempts a backup from the retention policy. False means the service applies the backup retention policy defined at the cluster.
     */
-  var NeverExpires: js.UndefOr[Boolean] = js.native
+  var NeverExpires: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifier (ID) of the source backup from which the new backup was copied.
     */
-  var SourceBackup: js.UndefOr[BackupId] = js.native
+  var SourceBackup: js.UndefOr[BackupId] = js.undefined
   
   /**
     * The identifier (ID) of the cluster containing the source backup from which the new backup was copied.
     */
-  var SourceCluster: js.UndefOr[ClusterId] = js.native
+  var SourceCluster: js.UndefOr[ClusterId] = js.undefined
   
   /**
     * The AWS Region that contains the source backup from which the new backup was copied.
     */
-  var SourceRegion: js.UndefOr[Region] = js.native
+  var SourceRegion: js.UndefOr[Region] = js.undefined
   
   /**
     * The list of tags for the backup.
     */
-  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.undefined
 }
 object Backup {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyPredicate extends StObject {
   
   /**
     * The comparator used to compare this property to others.
     */
-  var Comparator: js.UndefOr[typings.awsSdk.glueMod.Comparator] = js.native
+  var Comparator: js.UndefOr[typings.awsSdk.glueMod.Comparator] = js.undefined
   
   /**
     * The key of the property.
     */
-  var Key: js.UndefOr[ValueString] = js.native
+  var Key: js.UndefOr[ValueString] = js.undefined
   
   /**
     * The value of the property.
     */
-  var Value: js.UndefOr[ValueString] = js.native
+  var Value: js.UndefOr[ValueString] = js.undefined
 }
 object PropertyPredicate {
   

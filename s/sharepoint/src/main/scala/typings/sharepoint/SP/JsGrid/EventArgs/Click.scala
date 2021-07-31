@@ -5,19 +5,19 @@ import typings.sharepoint.SP.JsGrid.ClickContext
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Click extends IEventArgs {
+trait Click
+  extends StObject
+     with IEventArgs {
   
-  var context: ClickContext = js.native
+  var context: ClickContext
   
-  var eventInfo: DomEvent = js.native
+  var eventInfo: DomEvent
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object Click {
   

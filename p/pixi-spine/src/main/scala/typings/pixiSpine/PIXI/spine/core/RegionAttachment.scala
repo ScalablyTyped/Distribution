@@ -2,45 +2,45 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegionAttachment extends Attachment {
+trait RegionAttachment
+  extends StObject
+     with Attachment {
   
-  var color: Color = js.native
+  var color: Color
   
-  def computeWorldVertices(bone: Bone, worldVertices: ArrayLike[Double], offset: Double, stride: Double): Unit = js.native
+  def computeWorldVertices(bone: Bone, worldVertices: ArrayLike[Double], offset: Double, stride: Double): Unit
   
-  var height: Double = js.native
+  var height: Double
   
-  var offset: ArrayLike[Double] = js.native
+  var offset: ArrayLike[Double]
   
-  var path: String = js.native
+  var path: String
   
-  var region: TextureRegion = js.native
+  var region: TextureRegion
   
-  var rendererObject: js.Any = js.native
+  var rendererObject: js.Any
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  def setRegion(region: TextureRegion): Unit = js.native
+  def setRegion(region: TextureRegion): Unit
   
-  var tempColor: Color = js.native
+  var tempColor: Color
   
-  def updateOffset(): Unit = js.native
+  def updateOffset(): Unit
   
-  var uvs: ArrayLike[Double] = js.native
+  var uvs: ArrayLike[Double]
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object RegionAttachment {
   

@@ -6,21 +6,27 @@ import typings.jsCaptcha.jsCaptchaStrings.success
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("js-captcha", JSImport.Namespace)
   @js.native
-  class ^ () extends jCaptcha {
+  class ^ ()
+    extends StObject
+       with jCaptcha {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /* CompleteClass */
+    override def validate(): Unit = js.native
   }
   
   /**
     * Options for the base jCaptcha class. Derived from https://github.com/robiveli/js-captcha#options
     */
-  @js.native
   trait Options extends StObject {
     
     var callback: js.UndefOr[
@@ -30,21 +36,21 @@ object mod {
           /* numberOfTries */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var canvasClass: js.UndefOr[String] = js.native
+    var canvasClass: js.UndefOr[String] = js.undefined
     
-    var canvasStyle: FillStyle = js.native
+    var canvasStyle: FillStyle
     
-    var clearOnSubmit: js.UndefOr[Boolean] = js.native
+    var clearOnSubmit: js.UndefOr[Boolean] = js.undefined
     
-    var el: js.UndefOr[String] = js.native
+    var el: js.UndefOr[String] = js.undefined
     
-    var focusOnError: js.UndefOr[Boolean] = js.native
+    var focusOnError: js.UndefOr[Boolean] = js.undefined
     
-    var requiredValue: js.UndefOr[String] = js.native
+    var requiredValue: js.UndefOr[String] = js.undefined
     
-    var resetOnError: js.UndefOr[Boolean] = js.native
+    var resetOnError: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -104,12 +110,11 @@ object mod {
     }
   }
   
-  @js.native
   trait jCaptcha extends StObject {
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def validate(): Unit = js.native
+    def validate(): Unit
   }
   object jCaptcha {
     

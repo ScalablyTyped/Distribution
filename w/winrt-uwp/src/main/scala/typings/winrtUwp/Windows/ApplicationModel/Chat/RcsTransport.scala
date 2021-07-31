@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.servicekindsupportedchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for accessing the Rich Communication Services (RCS) transport. */
 @js.native
 trait RcsTransport extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_servicekindsupportedchanged(
     `type`: servicekindsupportedchanged,
@@ -25,7 +24,7 @@ trait RcsTransport extends StObject {
   var configuration: RcsTransportConfiguration = js.native
   
   /** Gets a name-value pair for extensibility of service provider configuration values. */
-  var extendedProperties: IMapView[String, _] = js.native
+  var extendedProperties: IMapView[String, js.Any] = js.native
   
   /** Gets a Boolean value indicating if the transport is active. */
   var isActive: Boolean = js.native
@@ -45,12 +44,12 @@ trait RcsTransport extends StObject {
   def isStoreAndForwardEnabled(serviceKind: RcsServiceKind): Boolean = js.native
   
   /** Occurs when the service capabilities change. */
-  def onservicekindsupportedchanged(ev: RcsServiceKindSupportedChangedEventArgs with WinRTEvent[RcsTransport]): Unit = js.native
+  def onservicekindsupportedchanged(ev: RcsServiceKindSupportedChangedEventArgs & WinRTEvent[RcsTransport]): Unit = js.native
   /** Occurs when the service capabilities change. */
   @JSName("onservicekindsupportedchanged")
   var onservicekindsupportedchanged_Original: TypedEventHandler[RcsTransport, RcsServiceKindSupportedChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_servicekindsupportedchanged(
     `type`: servicekindsupportedchanged,

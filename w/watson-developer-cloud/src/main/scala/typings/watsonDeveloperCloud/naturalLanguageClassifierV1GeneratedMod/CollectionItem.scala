@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Response from the classifier for a phrase in a collection. */
-@js.native
 trait CollectionItem extends StObject {
   
   /** An array of up to ten class-confidence pairs sorted in descending order of confidence. */
-  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.native
+  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.undefined
   
   /** The submitted phrase. The maximum length is 2048 characters. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The class with the highest confidence. */
-  var top_class: js.UndefOr[String] = js.native
+  var top_class: js.UndefOr[String] = js.undefined
 }
 object CollectionItem {
   

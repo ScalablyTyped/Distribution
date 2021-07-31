@@ -2,41 +2,39 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastIcon extends StObject {
   
-  var apiFramework: String | Null = js.native
+  var apiFramework: String | Null
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var htmlResource: String | Null = js.native
+  var htmlResource: String | Null
   
-  var iconClickThroughURLTemplate: String | Null = js.native
+  var iconClickThroughURLTemplate: String | Null
   
-  var iconClickTrackingURLTemplates: js.Array[String] = js.native
+  var iconClickTrackingURLTemplates: js.Array[String]
   
-  var iconViewTrackingURLTemplate: String | Null = js.native
+  var iconViewTrackingURLTemplate: String | Null
   
-  var iframeResource: String | Null = js.native
+  var iframeResource: String | Null
   
-  var offset: String | Null = js.native
+  var offset: String | Null
   
-  var program: String | Null = js.native
+  var program: String | Null
   
-  var staticResource: String | Null = js.native
+  var staticResource: String | Null
   
-  var `type`: String | Null = js.native
+  var `type`: String | Null
   
-  var width: Double = js.native
+  var width: Double
   
-  var xPosition: Double = js.native
+  var xPosition: Double
   
-  var yPosition: Double = js.native
+  var yPosition: Double
 }
 object VastIcon {
   
@@ -49,7 +47,8 @@ object VastIcon {
     xPosition: Double,
     yPosition: Double
   ): VastIcon = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], iconClickTrackingURLTemplates = iconClickTrackingURLTemplates.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xPosition = xPosition.asInstanceOf[js.Any], yPosition = yPosition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], iconClickTrackingURLTemplates = iconClickTrackingURLTemplates.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xPosition = xPosition.asInstanceOf[js.Any], yPosition = yPosition.asInstanceOf[js.Any], apiFramework = null, htmlResource = null, iconClickThroughURLTemplate = null, iconViewTrackingURLTemplate = null, iframeResource = null, offset = null, program = null, staticResource = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[VastIcon]
   }
   

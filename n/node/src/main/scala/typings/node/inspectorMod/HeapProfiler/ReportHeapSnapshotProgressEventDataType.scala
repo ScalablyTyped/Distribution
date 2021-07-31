@@ -2,17 +2,15 @@ package typings.node.inspectorMod.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportHeapSnapshotProgressEventDataType extends StObject {
   
-  var done: Double = js.native
+  var done: Double
   
-  var finished: js.UndefOr[Boolean] = js.native
+  var finished: js.UndefOr[Boolean] = js.undefined
   
-  var total: Double = js.native
+  var total: Double
 }
 object ReportHeapSnapshotProgressEventDataType {
   

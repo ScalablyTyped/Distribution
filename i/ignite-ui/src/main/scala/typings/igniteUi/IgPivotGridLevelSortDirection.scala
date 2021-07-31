@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotGridLevelSortDirection
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait IgPivotGridLevelSortDirection
   /**
     * Specifies the unique name of the level, which will be sorted.
     */
-  var levelUniqueName: js.UndefOr[String] = js.native
+  var levelUniqueName: js.UndefOr[String] = js.undefined
   
   /**
     * optional="true" Specifies what type of sorting will be applied to the header cells. If no behavior is specified, the level is going to be sorted with the behavior specified in the defaultLevelSortBehavior option.
@@ -25,12 +24,12 @@ trait IgPivotGridLevelSortDirection
     * "system" Sorts the headers by a specified sort key.
     * "alphabetical" Sorts alphabetically the header captions.
     */
-  var sortBehavior: js.UndefOr[String] = js.native
+  var sortBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * optional="true" Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
     */
-  var sortDirection: js.UndefOr[js.Any] = js.native
+  var sortDirection: js.UndefOr[js.Any] = js.undefined
 }
 object IgPivotGridLevelSortDirection {
   

@@ -2,21 +2,21 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoVideoSource extends SystemInfoProperty {
+trait SystemInfoVideoSource
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents a list of video sources that a device is connected with.
     */
-  val connected: js.Array[SystemInfoVideoSourceInfo] = js.native
+  val connected: js.Array[SystemInfoVideoSourceInfo]
   
   /**
     * Represents a list of video sources that a device is not connected with.
     */
-  val disconnected: js.Array[SystemInfoVideoSourceInfo] = js.native
+  val disconnected: js.Array[SystemInfoVideoSourceInfo]
 }
 object SystemInfoVideoSource {
   

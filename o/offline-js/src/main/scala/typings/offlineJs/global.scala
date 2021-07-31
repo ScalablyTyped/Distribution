@@ -15,7 +15,6 @@ import typings.offlineJs.offlineJsStrings.up
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -26,167 +25,138 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("Offline.check")
-    @js.native
-    def check(): Unit = js.native
+    @scala.inline
+    def check(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check")().asInstanceOf[Unit]
     
-    @JSGlobal("Offline.off")
-    @js.native
-    def off(event: String): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off(event: String, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_checking(event: checking): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_checking(event: checking, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_confirmeddown(event: `confirmed-down`): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_confirmedup(event: `confirmed-up`): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_down(event: down): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_down(event: down, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectconnecting(event: reconnectColonconnecting): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectfailure(event: reconnectColonfailure): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectstarted(event: reconnectColonstarted): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectstopped(event: reconnectColonstopped): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnecttick(event: reconnectColontick): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_requestsflush(event: requestsColonflush): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_requestshold(event: requestsColonhold): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_up(event: up): Unit = js.native
-    @JSGlobal("Offline.off")
-    @js.native
-    def off_up(event: up, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+    @scala.inline
+    def off(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off(event: String, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Offline.on")
-    @js.native
-    def on(event: String, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on(event: String, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_checking(event: checking, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_checking(event: checking, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_down(event: down, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_down(event: down, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_up(event: up, handler: js.Function1[/* e */ Event, _]): Unit = js.native
-    @JSGlobal("Offline.on")
-    @js.native
-    def on_up(event: up, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+    @scala.inline
+    def off_checking(event: checking): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_checking(event: checking, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_confirmeddown(event: `confirmed-down`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_confirmedup(event: `confirmed-up`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_down(event: down): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_down(event: down, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_reconnectconnecting(event: reconnectColonconnecting): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_reconnectfailure(event: reconnectColonfailure): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_reconnectstarted(event: reconnectColonstarted): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_reconnectstopped(event: reconnectColonstopped): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_reconnecttick(event: reconnectColontick): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_requestsflush(event: requestsColonflush): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_requestshold(event: requestsColonhold): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def off_up(event: up): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def off_up(event: up, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on(event: String, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on(event: String, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_checking(event: checking, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_checking(event: checking, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_confirmeddown(event: `confirmed-down`, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_confirmedup(event: `confirmed-up`, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_down(event: down, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_down(event: down, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def on_up(event: up, handler: js.Function1[/* e */ Event, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def on_up(event: up, handler: js.Function1[/* e */ Event, js.Any], context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Offline.options")
     @js.native

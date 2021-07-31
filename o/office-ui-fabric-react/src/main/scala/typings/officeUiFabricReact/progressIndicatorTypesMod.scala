@@ -11,72 +11,72 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressIndicatorTypesMod {
   
-  @js.native
-  trait IProgressIndicatorProps extends ClassAttributes[ProgressIndicatorBase] {
+  trait IProgressIndicatorProps
+    extends StObject
+       with ClassAttributes[ProgressIndicatorBase] {
     
     /**
       * Text alternative of the progress status, used by screen readers for reading the value of the progress.
       */
-    var ariaValueText: js.UndefOr[String] = js.native
+    var ariaValueText: js.UndefOr[String] = js.undefined
     
     /**
       * Height of the ProgressIndicator
       * @defaultvalue 2
       */
-    var barHeight: js.UndefOr[Double] = js.native
+    var barHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Additional css class to apply to the ProgressIndicator
       * @defaultvalue undefined
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Text describing or supplementing the operation. May be a string or React virtual elements.
       */
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Label to display above the control. May be a string or React virtual elements.
       */
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * A render override for the progress track.
       */
-    var onRenderProgress: js.UndefOr[IRenderFunction[IProgressIndicatorProps]] = js.native
+    var onRenderProgress: js.UndefOr[IRenderFunction[IProgressIndicatorProps]] = js.undefined
     
     /**
       * Percentage of the operation's completeness, numerically between 0 and 1. If this is not set,
       * the indeterminate progress animation will be shown instead.
       */
-    var percentComplete: js.UndefOr[Double] = js.native
+    var percentComplete: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not to hide the progress state.
       */
-    var progressHidden: js.UndefOr[Boolean] = js.native
+    var progressHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IProgressIndicatorStyleProps, IProgressIndicatorStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IProgressIndicatorStyleProps, IProgressIndicatorStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Deprecated at v0.43.0, to be removed at \>= v0.53.0. Use `label` instead.
       * @deprecated Use `label` instead.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IProgressIndicatorProps {
     
@@ -162,22 +162,21 @@ object progressIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait IProgressIndicatorStyleProps extends StObject {
     
-    var barHeight: js.UndefOr[Double] = js.native
+    var barHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IProgressIndicatorStyleProps {
     
@@ -213,23 +212,22 @@ object progressIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait IProgressIndicatorStyles extends StObject {
     
-    var itemDescription: IStyle = js.native
+    var itemDescription: IStyle
     
-    var itemName: IStyle = js.native
+    var itemName: IStyle
     
-    var itemProgress: IStyle = js.native
+    var itemProgress: IStyle
     
-    var progressBar: IStyle = js.native
+    var progressBar: IStyle
     
-    var progressTrack: IStyle = js.native
+    var progressTrack: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IProgressIndicatorStyles {
     

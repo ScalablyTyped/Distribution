@@ -3,14 +3,12 @@ package typings.semanticUiDropdown.anon
 import typings.semanticUiDropdown.semanticUiDropdownStrings.exact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'fullTextSearch'> */
-@js.native
 trait PickImplfullTextSearch extends StObject {
   
-  var fullTextSearch: Boolean | exact = js.native
+  var fullTextSearch: Boolean | exact
 }
 object PickImplfullTextSearch {
   

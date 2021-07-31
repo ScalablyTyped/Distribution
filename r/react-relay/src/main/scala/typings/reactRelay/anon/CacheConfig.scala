@@ -2,15 +2,13 @@ package typings.reactRelay.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheConfig extends StObject {
   
-  var cacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig | Null] = js.native
+  var cacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig | Null] = js.undefined
   
-  var fetchPolicy: js.UndefOr[typings.reactRelay.mod.FetchPolicy] = js.native
+  var fetchPolicy: js.UndefOr[typings.reactRelay.mod.FetchPolicy] = js.undefined
 }
 object CacheConfig {
   

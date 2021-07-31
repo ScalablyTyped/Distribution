@@ -3,25 +3,23 @@ package typings.strongholdPayJs.mod.global.Stronghold
 import typings.strongholdPayJs.anon.Displaymessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tip extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var beneficiary_name: String = js.native
+  var beneficiary_name: String
   
-  var charge_id: String = js.native
+  var charge_id: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var details: js.UndefOr[Displaymessage] = js.native
+  var details: js.UndefOr[Displaymessage] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var payment_source_id: String = js.native
+  var payment_source_id: String
 }
 object Tip {
   

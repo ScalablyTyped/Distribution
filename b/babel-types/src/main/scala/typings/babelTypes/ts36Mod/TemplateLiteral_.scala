@@ -3,21 +3,20 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.TemplateLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateLiteral_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Literal {
   
-  var expressions: js.Array[Expression] = js.native
+  var expressions: js.Array[Expression]
   
-  var quasis: js.Array[TemplateElement_] = js.native
+  var quasis: js.Array[TemplateElement_]
   
   @JSName("type")
-  var type_TemplateLiteral_ : TemplateLiteral = js.native
+  var type_TemplateLiteral_ : TemplateLiteral
 }
 object TemplateLiteral_ {
   
@@ -27,11 +26,10 @@ object TemplateLiteral_ {
     expressions: js.Array[Expression],
     loc: SourceLocation,
     quasis: js.Array[TemplateElement_],
-    start: Double,
-    `type`: TemplateLiteral
+    start: Double
   ): TemplateLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expressions = expressions.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TemplateLiteral")
     __obj.asInstanceOf[TemplateLiteral_]
   }
   

@@ -5,7 +5,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miniBarMod {
@@ -15,16 +14,15 @@ object miniBarMod {
   class default ()
     extends Component[IMiniBarProps, js.Any, js.Any]
   
-  @js.native
   trait IMiniBarProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var data: js.Array[Y] = js.native
+    var data: js.Array[Y]
     
-    var height: Double = js.native
+    var height: Double
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IMiniBarProps {
     

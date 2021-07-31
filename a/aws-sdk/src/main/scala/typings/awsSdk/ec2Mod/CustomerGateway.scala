@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerGateway extends StObject {
   
   /**
     * The customer gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
-  var BgpAsn: js.UndefOr[String] = js.native
+  var BgpAsn: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the customer gateway certificate.
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the customer gateway.
     */
-  var CustomerGatewayId: js.UndefOr[String] = js.native
+  var CustomerGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of customer gateway device.
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The Internet-routable IP address of the customer gateway's outside interface.
     */
-  var IpAddress: js.UndefOr[String] = js.native
+  var IpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the customer gateway (pending | available | deleting | deleted).
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the customer gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of VPN connection the customer gateway supports (ipsec.1).
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object CustomerGateway {
   

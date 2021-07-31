@@ -3,25 +3,23 @@ package typings.clearbladejsServer.CbServer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimerCreateOptions extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
-  var repeats: js.UndefOr[Double] = js.native
+  var repeats: js.UndefOr[Double] = js.undefined
   
-  var service_name: js.UndefOr[String] = js.native
+  var service_name: js.UndefOr[String] = js.undefined
   
-  var start_time: js.UndefOr[Date] = js.native
+  var start_time: js.UndefOr[Date] = js.undefined
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
   
-  var user_token: js.UndefOr[String] = js.native
+  var user_token: js.UndefOr[String] = js.undefined
 }
 object TimerCreateOptions {
   

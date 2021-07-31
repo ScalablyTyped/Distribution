@@ -10,9 +10,9 @@ Core forever process monitor
 | ------------------ | :-------------: |
 | Full name          | forever-monitor |
 | Keywords           | fault tolerant, sysadmin, tools |
-| # releases         | 5 |
-| # dependents       | 177 |
-| # downloads        | 10374755 |
+| # releases         | 7 |
+| # dependents       | 180 |
+| # downloads        | 11065150 |
 | # stars            | 28 |
 
 ## Links

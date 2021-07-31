@@ -10,10 +10,8 @@ import typings.electron.electronStrings.default
 import typings.electron.electronStrings.origin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Referrer extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/referrer
@@ -22,12 +20,12 @@ trait Referrer extends StObject {
     * `origin`, `strict-origin-when-cross-origin`, `same-origin` or `strict-origin`.
     * See the Referrer-Policy spec for more details on the meaning of these values.
     */
-  var policy: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin` = js.native
+  var policy: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`
   
   /**
     * HTTP Referrer URL.
     */
-  var url: String = js.native
+  var url: String
 }
 object Referrer {
   

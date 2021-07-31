@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WipeAction extends StObject {
   
   /** Whether the factory-reset protection data is preserved on the device. This setting doesn’t apply to work profiles. */
-  var preserveFrp: js.UndefOr[Boolean] = js.native
+  var preserveFrp: js.UndefOr[Boolean] = js.undefined
   
   /** Number of days the policy is non-compliant before the device or work profile is wiped. wipeAfterDays must be greater than blockAfterDays. */
-  var wipeAfterDays: js.UndefOr[Double] = js.native
+  var wipeAfterDays: js.UndefOr[Double] = js.undefined
 }
 object WipeAction {
   

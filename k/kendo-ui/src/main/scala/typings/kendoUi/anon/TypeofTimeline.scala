@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Timeline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTimeline extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Timeline = js.native
+  def extend(proto: js.Object): Timeline
   
   /* static member */
-  var fn: Timeline = js.native
+  var fn: Timeline
 }
 object TypeofTimeline {
   

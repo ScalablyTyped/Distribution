@@ -2,17 +2,17 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldLookupValue extends ClientValueObject {
+trait FieldLookupValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_lookupId(): Double = js.native
+  def get_lookupId(): Double
   
-  def get_lookupValue(): String = js.native
+  def get_lookupValue(): String
   
-  def set_lookupId(value: Double): Unit = js.native
+  def set_lookupId(value: Double): Unit
 }
 object FieldLookupValue {
   

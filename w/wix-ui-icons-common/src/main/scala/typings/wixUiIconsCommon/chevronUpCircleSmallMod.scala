@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chevronUpCircleSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object chevronUpCircleSmallMod extends Shortcut {
   @js.native
   val default: SFC[ChevronUpCircleSmallProps] = js.native
   
-  @js.native
-  trait ChevronUpCircleSmallProps extends SVGAttributes[SVGElement] {
+  trait ChevronUpCircleSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ChevronUpCircleSmallProps {
     

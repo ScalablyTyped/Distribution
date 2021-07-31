@@ -10,9 +10,9 @@ copy some files
 | ------------------ | :-------------: |
 | Full name          | copyfiles |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 275 |
-| # downloads        | 26321104 |
+| # releases         | 6 |
+| # dependents       | 300 |
+| # downloads        | 31367488 |
 | # stars            | 10 |
 
 ## Links

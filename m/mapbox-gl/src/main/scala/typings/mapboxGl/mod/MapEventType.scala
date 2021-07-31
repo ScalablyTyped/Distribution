@@ -5,103 +5,101 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapEventType extends StObject {
   
-  var boxzoomcancel: MapBoxZoomEvent = js.native
+  var boxzoomcancel: MapBoxZoomEvent
   
-  var boxzoomend: MapBoxZoomEvent = js.native
+  var boxzoomend: MapBoxZoomEvent
   
-  var boxzoomstart: MapBoxZoomEvent = js.native
+  var boxzoomstart: MapBoxZoomEvent
   
-  var click: MapMouseEvent = js.native
+  var click: MapMouseEvent
   
-  var contextmenu: MapMouseEvent = js.native
+  var contextmenu: MapMouseEvent
   
-  var data: MapDataEvent = js.native
+  var data: MapDataEvent
   
-  var dataloading: MapDataEvent = js.native
+  var dataloading: MapDataEvent
   
-  var dblclick: MapMouseEvent = js.native
+  var dblclick: MapMouseEvent
   
-  var drag: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var drag: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var dragend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var dragend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var dragstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var dragstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var error: ErrorEvent = js.native
+  var error: ErrorEvent
   
-  var idle: MapboxEvent[js.UndefOr[scala.Nothing]] = js.native
+  var idle: MapboxEvent[Unit]
   
-  var load: MapboxEvent[js.UndefOr[scala.Nothing]] = js.native
+  var load: MapboxEvent[Unit]
   
-  var mousedown: MapMouseEvent = js.native
+  var mousedown: MapMouseEvent
   
-  var mousemove: MapMouseEvent = js.native
+  var mousemove: MapMouseEvent
   
-  var mouseout: MapMouseEvent = js.native
+  var mouseout: MapMouseEvent
   
-  var mouseover: MapMouseEvent = js.native
+  var mouseover: MapMouseEvent
   
-  var mouseup: MapMouseEvent = js.native
+  var mouseup: MapMouseEvent
   
-  var move: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var move: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
   
-  var moveend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var moveend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
   
-  var movestart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var movestart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
   
-  var pitch: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var pitch: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var pitchend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var pitchend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var pitchstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var pitchstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var remove: MapboxEvent[js.UndefOr[scala.Nothing]] = js.native
+  var remove: MapboxEvent[Unit]
   
-  var render: MapboxEvent[js.UndefOr[scala.Nothing]] = js.native
+  var render: MapboxEvent[Unit]
   
-  var resize: MapboxEvent[js.UndefOr[scala.Nothing]] = js.native
+  var resize: MapboxEvent[Unit]
   
-  var rotate: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var rotate: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var rotateend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var rotateend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var rotatestart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]] = js.native
+  var rotatestart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]
   
-  var sourcedata: MapSourceDataEvent = js.native
+  var sourcedata: MapSourceDataEvent
   
-  var sourcedataloading: MapSourceDataEvent = js.native
+  var sourcedataloading: MapSourceDataEvent
   
-  var styledata: MapStyleDataEvent = js.native
+  var styledata: MapStyleDataEvent
   
-  var styledataloading: MapStyleDataEvent = js.native
+  var styledataloading: MapStyleDataEvent
   
-  var tiledataloading: MapDataEvent = js.native
+  var tiledataloading: MapDataEvent
   
-  var touchcancel: MapTouchEvent = js.native
+  var touchcancel: MapTouchEvent
   
-  var touchend: MapTouchEvent = js.native
+  var touchend: MapTouchEvent
   
-  var touchmove: MapTouchEvent = js.native
+  var touchmove: MapTouchEvent
   
-  var touchstart: MapTouchEvent = js.native
+  var touchstart: MapTouchEvent
   
-  var webglcontextlost: MapContextEvent = js.native
+  var webglcontextlost: MapContextEvent
   
-  var webglcontextrestored: MapContextEvent = js.native
+  var webglcontextrestored: MapContextEvent
   
-  var wheel: MapWheelEvent = js.native
+  var wheel: MapWheelEvent
   
-  var zoom: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var zoom: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
   
-  var zoomend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var zoomend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
   
-  var zoomstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]] = js.native
+  var zoomstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]
 }
 object MapEventType {
   
@@ -119,8 +117,8 @@ object MapEventType {
     dragend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     dragstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     error: ErrorEvent,
-    idle: MapboxEvent[js.UndefOr[scala.Nothing]],
-    load: MapboxEvent[js.UndefOr[scala.Nothing]],
+    idle: MapboxEvent[Unit],
+    load: MapboxEvent[Unit],
     mousedown: MapMouseEvent,
     mousemove: MapMouseEvent,
     mouseout: MapMouseEvent,
@@ -132,9 +130,9 @@ object MapEventType {
     pitch: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     pitchend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     pitchstart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
-    remove: MapboxEvent[js.UndefOr[scala.Nothing]],
-    render: MapboxEvent[js.UndefOr[scala.Nothing]],
-    resize: MapboxEvent[js.UndefOr[scala.Nothing]],
+    remove: MapboxEvent[Unit],
+    render: MapboxEvent[Unit],
+    resize: MapboxEvent[Unit],
     rotate: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     rotateend: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
     rotatestart: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]],
@@ -198,10 +196,10 @@ object MapEventType {
     def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdle(value: MapboxEvent[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    def setIdle(value: MapboxEvent[Unit]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: MapboxEvent[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    def setLoad(value: MapboxEvent[Unit]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMousedown(value: MapMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
@@ -237,13 +235,13 @@ object MapEventType {
     def setPitchstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: MapboxEvent[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    def setRemove(value: MapboxEvent[Unit]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: MapboxEvent[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    def setRender(value: MapboxEvent[Unit]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: MapboxEvent[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    def setResize(value: MapboxEvent[Unit]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRotate(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])

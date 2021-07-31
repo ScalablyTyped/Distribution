@@ -2,26 +2,24 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserStackAssociationError extends StObject {
   
   /**
     * The error code for the error that is returned when a user can’t be associated with or disassociated from a stack.
     */
-  var ErrorCode: js.UndefOr[UserStackAssociationErrorCode] = js.native
+  var ErrorCode: js.UndefOr[UserStackAssociationErrorCode] = js.undefined
   
   /**
     * The error message for the error that is returned when a user can’t be associated with or disassociated from a stack.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the user and associated stack.
     */
-  var UserStackAssociation: js.UndefOr[typings.awsSdk.appstreamMod.UserStackAssociation] = js.native
+  var UserStackAssociation: js.UndefOr[typings.awsSdk.appstreamMod.UserStackAssociation] = js.undefined
 }
 object UserStackAssociationError {
   

@@ -3,34 +3,32 @@ package typings.semanticUiDropdown.anon
 import typings.semanticUiDropdown.semanticUiDropdownBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplBackspace extends StObject {
   
-  var backspace: js.UndefOr[Double] = js.native
+  var backspace: js.UndefOr[Double] = js.undefined
   
-  var deleteKey: js.UndefOr[Double] = js.native
+  var deleteKey: js.UndefOr[Double] = js.undefined
   
-  var delimiter: js.UndefOr[Double | `false`] = js.native
+  var delimiter: js.UndefOr[Double | `false`] = js.undefined
   
-  var downArrow: js.UndefOr[Double] = js.native
+  var downArrow: js.UndefOr[Double] = js.undefined
   
-  var enter: js.UndefOr[Double] = js.native
+  var enter: js.UndefOr[Double] = js.undefined
   
-  var escape: js.UndefOr[Double] = js.native
+  var escape: js.UndefOr[Double] = js.undefined
   
-  var leftArrow: js.UndefOr[Double] = js.native
+  var leftArrow: js.UndefOr[Double] = js.undefined
   
-  var pageDown: js.UndefOr[Double] = js.native
+  var pageDown: js.UndefOr[Double] = js.undefined
   
-  var pageUp: js.UndefOr[Double] = js.native
+  var pageUp: js.UndefOr[Double] = js.undefined
   
-  var rightArrow: js.UndefOr[Double] = js.native
+  var rightArrow: js.UndefOr[Double] = js.undefined
   
-  var upArrow: js.UndefOr[Double] = js.native
+  var upArrow: js.UndefOr[Double] = js.undefined
 }
 object PartialPickImplkeyofImplBackspace {
   

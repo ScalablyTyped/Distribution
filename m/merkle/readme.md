@@ -11,8 +11,8 @@ Javascript implementation of merkle trees
 | Full name          | merkle |
 | Keywords           | hash trees, cryptography |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 3706 |
+| # dependents       | 9 |
+| # downloads        | 3728 |
 | # stars            | 2 |
 
 ## Links

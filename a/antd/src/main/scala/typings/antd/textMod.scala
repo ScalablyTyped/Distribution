@@ -5,7 +5,6 @@ import typings.antd.baseMod.BlockProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod extends Shortcut {
@@ -14,11 +13,12 @@ object textMod extends Shortcut {
   @js.native
   val default: FC[TextProps] = js.native
   
-  @js.native
-  trait TextProps extends BlockProps {
+  trait TextProps
+    extends StObject
+       with BlockProps {
     
     @JSName("ellipsis")
-    var ellipsis_TextProps: js.UndefOr[Boolean] = js.native
+    var ellipsis_TextProps: js.UndefOr[Boolean] = js.undefined
   }
   object TextProps {
     

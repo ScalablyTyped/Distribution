@@ -3,27 +3,25 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceRootBlockDevice extends StObject {
   
   /**
     * Whether the volume should be destroyed
     * on instance termination (Default: `true`).
     */
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The name of the device to mount.
     */
-  var deviceName: js.UndefOr[Input[String]] = js.native
+  var deviceName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Enable volume encryption. (Default: `false`). Must be configured to perform drift detection.
     */
-  var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The amount of provisioned
@@ -31,24 +29,24 @@ trait InstanceRootBlockDevice extends StObject {
     * This is only valid for `volumeType` of `"io1/io2"`, and must be specified if
     * using that type
     */
-  var iops: js.UndefOr[Input[Double]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.
     */
-  var kmsKeyId: js.UndefOr[Input[String]] = js.native
+  var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   
-  var volumeId: js.UndefOr[Input[String]] = js.native
+  var volumeId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The size of the volume in gibibytes (GiB).
     */
-  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The type of volume. Can be `"standard"`, `"gp2"`, `"io1"`, `"io2"`, `"sc1"`, or `"st1"`. (Default: `"gp2"`).
     */
-  var volumeType: js.UndefOr[Input[String]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.undefined
 }
 object InstanceRootBlockDevice {
   

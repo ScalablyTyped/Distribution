@@ -4,15 +4,15 @@ import typings.overlayscrollbars.mod.Position
 import typings.overlayscrollbars.mod._Coordinates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait L extends _Coordinates {
+trait L
+  extends StObject
+     with _Coordinates {
   
-  var l: js.UndefOr[Position] = js.native
+  var l: js.UndefOr[Position] = js.undefined
   
-  var t: js.UndefOr[Position] = js.native
+  var t: js.UndefOr[Position] = js.undefined
 }
 object L {
   

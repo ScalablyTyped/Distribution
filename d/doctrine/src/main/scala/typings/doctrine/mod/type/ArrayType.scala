@@ -3,22 +3,22 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArrayType extends Type_ {
+trait ArrayType
+  extends StObject
+     with Type_ {
   
-  var elements: js.Array[Type_] = js.native
+  var elements: js.Array[Type_]
   
-  var `type`: typings.doctrine.doctrineStrings.ArrayType = js.native
+  var `type`: typings.doctrine.doctrineStrings.ArrayType
 }
 object ArrayType {
   
   @scala.inline
-  def apply(elements: js.Array[Type_], `type`: typings.doctrine.doctrineStrings.ArrayType): ArrayType = {
+  def apply(elements: js.Array[Type_]): ArrayType = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayType")
     __obj.asInstanceOf[ArrayType]
   }
   

@@ -22,7 +22,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStepsMod {
@@ -47,26 +46,25 @@ object libStepsMod {
     override def _to: StepsType = ^
   }
   
-  @js.native
   trait StepProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var status: js.UndefOr[wait | process | finish | error] = js.native
+    var status: js.UndefOr[wait | process | finish | error] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object StepProps {
     
@@ -135,36 +133,35 @@ object libStepsMod {
     }
   }
   
-  @js.native
   trait StepsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
     
-    var labelPlacement: js.UndefOr[horizontal | vertical] = js.native
+    var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var progressDot: js.UndefOr[Boolean | js.Function] = js.native
+    var progressDot: js.UndefOr[Boolean | js.Function] = js.undefined
     
-    var size: js.UndefOr[default | small] = js.native
+    var size: js.UndefOr[default | small] = js.undefined
     
-    var status: js.UndefOr[wait | process | finish | error] = js.native
+    var status: js.UndefOr[wait | process | finish | error] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[default | navigation] = js.native
+    var `type`: js.UndefOr[default | navigation] = js.undefined
   }
   object StepsProps {
     
@@ -264,7 +261,9 @@ object libStepsMod {
   }
   
   @js.native
-  trait StepsType extends FunctionComponent[StepsProps] {
+  trait StepsType
+    extends StObject
+       with FunctionComponent[StepsProps] {
     
     var Step: ClassicComponentClass[StepProps] = js.native
   }

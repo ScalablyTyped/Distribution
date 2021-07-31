@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAuthnAssertion extends StObject {
   
-  val authenticatorData: ArrayBuffer = js.native
+  val authenticatorData: ArrayBuffer
   
-  val clientData: ArrayBuffer = js.native
+  val clientData: ArrayBuffer
   
-  val credential: ScopedCredential = js.native
+  val credential: ScopedCredential
   
-  val signature: ArrayBuffer = js.native
+  val signature: ArrayBuffer
 }
 object WebAuthnAssertion {
   

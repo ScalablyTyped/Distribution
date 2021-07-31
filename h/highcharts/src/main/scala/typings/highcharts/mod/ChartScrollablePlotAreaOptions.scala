@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartScrollablePlotAreaOptions extends StObject {
   
   /**
     * (Highcharts, Gantt) The minimum height for the plot area. If it gets
     * smaller than this, the plot area will become scrollable.
     */
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) The minimum width for the plot area. If it gets
     * smaller than this, the plot area will become scrollable.
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) The opacity of mask applied on one of the sides of
     * the plot area.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) The initial scrolling position of the scrollable plot
@@ -32,14 +30,14 @@ trait ChartScrollablePlotAreaOptions extends StObject {
     * aligns it to the right. Typically we would use 1 if the chart has right
     * aligned Y axes.
     */
-  var scrollPositionX: js.UndefOr[Double] = js.native
+  var scrollPositionX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) The initial scrolling position of the scrollable plot
     * area. Ranges from 0 to 1, where 0 aligns the plot area to the top and 1
     * aligns it to the bottom.
     */
-  var scrollPositionY: js.UndefOr[Double] = js.native
+  var scrollPositionY: js.UndefOr[Double] = js.undefined
 }
 object ChartScrollablePlotAreaOptions {
   

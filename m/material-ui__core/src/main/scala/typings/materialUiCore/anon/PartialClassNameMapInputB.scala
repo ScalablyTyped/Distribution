@@ -2,38 +2,36 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey>> */
-@js.native
 trait PartialClassNameMapInputB extends StObject {
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
-  var formControl: js.UndefOr[String] = js.native
+  var formControl: js.UndefOr[String] = js.undefined
   
-  var fullWidth: js.UndefOr[String] = js.native
+  var fullWidth: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var inputDisabled: js.UndefOr[String] = js.native
+  var inputDisabled: js.UndefOr[String] = js.undefined
   
-  var inputMarginDense: js.UndefOr[String] = js.native
+  var inputMarginDense: js.UndefOr[String] = js.undefined
   
-  var inputMultiline: js.UndefOr[String] = js.native
+  var inputMultiline: js.UndefOr[String] = js.undefined
   
-  var inputType: js.UndefOr[String] = js.native
+  var inputType: js.UndefOr[String] = js.undefined
   
-  var inputTypeSearch: js.UndefOr[String] = js.native
+  var inputTypeSearch: js.UndefOr[String] = js.undefined
   
-  var multiline: js.UndefOr[String] = js.native
+  var multiline: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapInputB {
   

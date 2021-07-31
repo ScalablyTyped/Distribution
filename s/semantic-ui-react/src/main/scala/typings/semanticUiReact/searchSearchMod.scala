@@ -29,7 +29,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchSearchMod {
@@ -64,7 +63,9 @@ object searchSearchMod {
   }
   
   @js.native
-  trait SearchComponent extends ComponentClass[SearchProps, ComponentState] {
+  trait SearchComponent
+    extends StObject
+       with ComponentClass[SearchProps, ComponentState] {
     
     var Category: StatelessComponent[SearchCategoryProps] = js.native
     
@@ -73,9 +74,9 @@ object searchSearchMod {
     var Results: StatelessComponent[SearchResultsProps] = js.native
   }
   
-  @js.native
   trait SearchProps
-    extends StrictSearchProps
+    extends StObject
+       with StrictSearchProps
        with /* key */ StringDictionary[js.Any]
   object SearchProps {
     
@@ -86,10 +87,11 @@ object searchSearchMod {
     }
   }
   
-  @js.native
-  trait SearchResultData extends SearchProps {
+  trait SearchResultData
+    extends StObject
+       with SearchProps {
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object SearchResultData {
     
@@ -107,20 +109,19 @@ object searchSearchMod {
     }
   }
   
-  @js.native
   trait StrictSearchProps extends StObject {
     
     // ------------------------------------
     // Style
     // ------------------------------------
     /** A search can have its results aligned to its left or right container edge. */
-    var aligned: js.UndefOr[String] = js.native
+    var aligned: js.UndefOr[String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A search can display results from remote content ordered by categories. */
-    var category: js.UndefOr[Boolean] = js.native
+    var category: js.UndefOr[Boolean] = js.undefined
     
     // ------------------------------------
     // Rendering
@@ -132,7 +133,7 @@ object searchSearchMod {
       * @param {object} resultsContent - The Renderable SearchResult contents.
       * @returns {*} - Renderable SearchCategory layout.
       */
-    var categoryLayoutRenderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.native
+    var categoryLayoutRenderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.undefined
     
     /**
       * Renders the SearchCategory contents.
@@ -140,40 +141,40 @@ object searchSearchMod {
       * @param {object} props - The SearchCategory props object.
       * @returns {*} - Renderable SearchCategory contents.
       */
-    var categoryRenderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.native
+    var categoryRenderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     // ------------------------------------
     // Behavior
     // ------------------------------------
     /** Initial value of open. */
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Initial value. */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /** A search can have its results take up the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
     /** Shorthand for input element. */
-    var input: js.UndefOr[SemanticShorthandItem[InputProps]] = js.native
+    var input: js.UndefOr[SemanticShorthandItem[InputProps]] = js.undefined
     
     /** A search can show a loading indicator. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** Minimum characters to query for results. */
-    var minCharacters: js.UndefOr[Double] = js.native
+    var minCharacters: js.UndefOr[Double] = js.undefined
     
     /** Additional text for "No Results" message with less emphasis. */
-    var noResultsDescription: js.UndefOr[ReactNode] = js.native
+    var noResultsDescription: js.UndefOr[ReactNode] = js.undefined
     
     /** Message to display when there are no results. */
-    var noResultsMessage: js.UndefOr[ReactNode] = js.native
+    var noResultsMessage: js.UndefOr[ReactNode] = js.undefined
     
     // ------------------------------------
     // Callbacks
@@ -186,7 +187,7 @@ object searchSearchMod {
       */
     var onBlur: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SearchProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on focus.
@@ -196,7 +197,7 @@ object searchSearchMod {
       */
     var onFocus: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SearchProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on mousedown.
@@ -206,7 +207,7 @@ object searchSearchMod {
       */
     var onMouseDown: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SearchProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when a result is selected.
@@ -220,7 +221,7 @@ object searchSearchMod {
           /* data */ SearchResultData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on search input change.
@@ -230,7 +231,7 @@ object searchSearchMod {
       */
     var onSearchChange: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SearchProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the active selection index is changed.
@@ -244,10 +245,10 @@ object searchSearchMod {
           /* data */ SearchResultData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Controls whether or not the results menu is displayed. */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Renders the SearchResult contents.
@@ -255,26 +256,26 @@ object searchSearchMod {
       * @param {object} props - The SearchResult props object.
       * @returns {*} - Renderable SearchResult contents.
       */
-    var resultRenderer: js.UndefOr[js.Function1[/* props */ SearchResultProps, ReactElement]] = js.native
+    var resultRenderer: js.UndefOr[js.Function1[/* props */ SearchResultProps, ReactElement]] = js.undefined
     
     /**
       * One of:
       * - array of Search.Result props e.g. `{ title: '', description: '' }` or
       * - object of categories e.g. `{ name: '', results: [{ title: '', description: '' }]`
       */
-    var results: js.UndefOr[js.Array[_] | (Record[String, _])] = js.native
+    var results: js.UndefOr[js.Array[js.Any] | (Record[String, js.Any])] = js.undefined
     
     /** Whether the search should automatically select the first result after searching. */
-    var selectFirstResult: js.UndefOr[Boolean] = js.native
+    var selectFirstResult: js.UndefOr[Boolean] = js.undefined
     
     /** Whether a "no results" message should be shown if no results are found. */
-    var showNoResults: js.UndefOr[Boolean] = js.native
+    var showNoResults: js.UndefOr[Boolean] = js.undefined
     
     /** A search can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
     
     /** Current value of the search input. Creates a controlled component. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object StrictSearchProps {
     
@@ -435,7 +436,7 @@ object searchSearchMod {
       def setResultRendererUndefined: Self = StObject.set(x, "resultRenderer", js.undefined)
       
       @scala.inline
-      def setResults(value: js.Array[_] | (Record[String, _])): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      def setResults(value: js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)

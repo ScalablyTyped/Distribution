@@ -2,23 +2,21 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentQueue extends StObject {
   
-  var groupScopeId: String = js.native
+  var groupScopeId: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var pool: TaskAgentPoolReference = js.native
+  var pool: TaskAgentPoolReference
   
-  var projectId: String = js.native
+  var projectId: String
   
-  var provisioned: Boolean = js.native
+  var provisioned: Boolean
 }
 object TaskAgentQueue {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait SelectionChangedEventArgs extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var workbook: Workbook = js.native
+  var workbook: Workbook
 }
 object SelectionChangedEventArgs {
   

@@ -11,10 +11,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.style
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StylePattern3DProperties extends StObject {
   
   /**
@@ -24,14 +22,14 @@ trait StylePattern3DProperties extends StObject {
     */
   var style: js.UndefOr[
     `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The pattern type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#type)
     */
-  var `type`: js.UndefOr[style] = js.native
+  var `type`: js.UndefOr[style] = js.undefined
 }
 object StylePattern3DProperties {
   

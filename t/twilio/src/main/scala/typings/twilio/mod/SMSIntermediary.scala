@@ -2,15 +2,13 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SMSIntermediary extends StObject {
   
-  var messages: SMSMessageResource = js.native
+  var messages: SMSMessageResource
   
-  var shortCodes: SMSShortCodeResource = js.native
+  var shortCodes: SMSShortCodeResource
 }
 object SMSIntermediary {
   

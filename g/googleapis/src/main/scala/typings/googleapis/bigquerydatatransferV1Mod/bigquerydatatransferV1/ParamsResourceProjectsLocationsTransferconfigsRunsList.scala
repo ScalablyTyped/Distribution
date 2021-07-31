@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsTransferconfigsRunsList extends StandardParameters {
+trait ParamsResourceProjectsLocationsTransferconfigsRunsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Page size. The default page size is the maximum value of 1000 results.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Pagination token, which can be used to request a specific page of
@@ -28,24 +28,24 @@ trait ParamsResourceProjectsLocationsTransferconfigsRunsList extends StandardPar
     * `ListTransferRunsResponse` outputs a `next_page` token, which can be used
     * as the `page_token` value to request the next page of list results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Name of transfer configuration for which transfer runs should be
     * retrieved. Format of transfer configuration resource name is:
     * `projects/{project_id}/transferConfigs/{config_id}`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates how run attempts are to be pulled.
     */
-  var runAttempt: js.UndefOr[String] = js.native
+  var runAttempt: js.UndefOr[String] = js.undefined
   
   /**
     * When specified, only transfer runs with requested states are returned.
     */
-  var states: js.UndefOr[js.Array[String]] = js.native
+  var states: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceProjectsLocationsTransferconfigsRunsList {
   

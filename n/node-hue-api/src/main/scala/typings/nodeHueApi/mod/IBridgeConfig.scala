@@ -8,61 +8,59 @@ import typings.nodeHueApi.anon.Errorcode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBridgeConfig extends StObject {
   
-  var UTC: Date = js.native
+  var UTC: Date
   
-  var apiversion: String = js.native
+  var apiversion: String
   
-  var backup: Errorcode = js.native
+  var backup: Errorcode
   
-  var bridgeid: String = js.native
+  var bridgeid: String
   
-  var dhcp: Boolean = js.native
+  var dhcp: Boolean
   
-  var factorynew: Boolean = js.native
+  var factorynew: Boolean
   
-  var gateway: String = js.native
+  var gateway: String
   
-  var ipaddress: String = js.native
+  var ipaddress: String
   
-  var linkbutton: Boolean = js.native
+  var linkbutton: Boolean
   
-  var localtime: Date = js.native
+  var localtime: Date
   
-  var mac: String = js.native
+  var mac: String
   
-  var modelid: String = js.native
+  var modelid: String
   
-  var name: String = js.native
+  var name: String
   
-  var netmask: String = js.native
+  var netmask: String
   
-  var portalconnection: String = js.native
+  var portalconnection: String
   
-  var portalservices: Boolean = js.native
+  var portalservices: Boolean
   
-  var portalstate: Communication = js.native
+  var portalstate: Communication
   
-  var proxyaddress: String = js.native
+  var proxyaddress: String
   
-  var proxyport: Double = js.native
+  var proxyport: Double
   
-  var replacesbridgeid: js.UndefOr[String] = js.native
+  var replacesbridgeid: js.UndefOr[String] = js.undefined
   
-  var swupdate: Checkforupdate = js.native
+  var swupdate: Checkforupdate
   
-  var swversion: String = js.native
+  var swversion: String
   
-  var timezone: String = js.native
+  var timezone: String
   
-  var whitelist: StringDictionary[Createdate] = js.native
+  var whitelist: StringDictionary[Createdate]
   
-  var zigbeechannel: Double = js.native
+  var zigbeechannel: Double
 }
 object IBridgeConfig {
   

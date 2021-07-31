@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 基础模块。可用于创建和操作图像文件，引用方式：,```JavaScript,var gd = require('gd');,```
   */
 object gdMod {
+  
+  @JSImport("gd", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gd", "ARC")
   @js.native
@@ -128,48 +131,36 @@ object gdMod {
   @js.native
   val WEBP: /* 6 */ Double = js.native
   
-  @JSImport("gd", "color")
-  @js.native
-  def color(color: String): Double = js.native
+  @scala.inline
+  def color(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("gd", "create")
-  @js.native
-  def create(width: Double, height: Double): ClassImage = js.native
-  @JSImport("gd", "create")
-  @js.native
-  def create(width: Double, height: Double, color: Double): ClassImage = js.native
+  @scala.inline
+  def create(width: Double, height: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
+  @scala.inline
+  def create(width: Double, height: Double, color: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
   
-  @JSImport("gd", "hsb")
-  @js.native
-  def hsb(hue: Double, saturation: Double, brightness: Double): Double = js.native
+  @scala.inline
+  def hsb(hue: Double, saturation: Double, brightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsb")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("gd", "hsba")
-  @js.native
-  def hsba(hue: Double, saturation: Double, brightness: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def hsba(hue: Double, saturation: Double, brightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsba")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("gd", "hsl")
-  @js.native
-  def hsl(hue: Double, saturation: Double, lightness: Double): Double = js.native
+  @scala.inline
+  def hsl(hue: Double, saturation: Double, lightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("gd", "hsla")
-  @js.native
-  def hsla(hue: Double, saturation: Double, lightness: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def hsla(hue: Double, saturation: Double, lightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("gd", "load")
-  @js.native
-  def load(data: ClassBuffer): ClassImage = js.native
-  @JSImport("gd", "load")
-  @js.native
-  def load(fname: String): ClassImage = js.native
-  @JSImport("gd", "load")
-  @js.native
-  def load(stm: ClassSeekableStream): ClassImage = js.native
+  @scala.inline
+  def load(data: ClassBuffer): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
+  @scala.inline
+  def load(fname: String): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
+  @scala.inline
+  def load(stm: ClassSeekableStream): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(stm.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
   
-  @JSImport("gd", "rgb")
-  @js.native
-  def rgb(red: Double, green: Double, blue: Double): Double = js.native
+  @scala.inline
+  def rgb(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("gd", "rgba")
-  @js.native
-  def rgba(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def rgba(red: Double, green: Double, blue: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

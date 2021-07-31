@@ -4,13 +4,14 @@ import typings.reactNativePermissions.typesMod.LocationAccuracy
 import typings.reactNativePermissions.typesMod.NotificationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativePermissionsStrings {
   
   @js.native
-  sealed trait alert extends NotificationOption
+  sealed trait alert
+    extends StObject
+       with NotificationOption
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
@@ -155,7 +156,9 @@ object reactNativePermissionsStrings {
   def androidDotpermissionDotWRITE_EXTERNAL_STORAGE: androidDotpermissionDotWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotWRITE_EXTERNAL_STORAGE]
   
   @js.native
-  sealed trait badge extends NotificationOption
+  sealed trait badge
+    extends StObject
+       with NotificationOption
   @scala.inline
   def badge: badge = "badge".asInstanceOf[badge]
   
@@ -165,7 +168,9 @@ object reactNativePermissionsStrings {
   def blocked: blocked = "blocked".asInstanceOf[blocked]
   
   @js.native
-  sealed trait carPlay extends NotificationOption
+  sealed trait carPlay
+    extends StObject
+       with NotificationOption
   @scala.inline
   def carPlay: carPlay = "carPlay".asInstanceOf[carPlay]
   
@@ -175,7 +180,9 @@ object reactNativePermissionsStrings {
   def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL]
   
   @js.native
-  sealed trait criticalAlert extends NotificationOption
+  sealed trait criticalAlert
+    extends StObject
+       with NotificationOption
   @scala.inline
   def criticalAlert: criticalAlert = "criticalAlert".asInstanceOf[criticalAlert]
   
@@ -185,7 +192,9 @@ object reactNativePermissionsStrings {
   def denied: denied = "denied".asInstanceOf[denied]
   
   @js.native
-  sealed trait full extends LocationAccuracy
+  sealed trait full
+    extends StObject
+       with LocationAccuracy
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
@@ -285,17 +294,23 @@ object reactNativePermissionsStrings {
   def limited: limited = "limited".asInstanceOf[limited]
   
   @js.native
-  sealed trait provisional extends NotificationOption
+  sealed trait provisional
+    extends StObject
+       with NotificationOption
   @scala.inline
   def provisional: provisional = "provisional".asInstanceOf[provisional]
   
   @js.native
-  sealed trait reduced extends LocationAccuracy
+  sealed trait reduced
+    extends StObject
+       with LocationAccuracy
   @scala.inline
   def reduced: reduced = "reduced".asInstanceOf[reduced]
   
   @js.native
-  sealed trait sound extends NotificationOption
+  sealed trait sound
+    extends StObject
+       with NotificationOption
   @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   

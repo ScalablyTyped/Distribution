@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientDashboardChangedEventArgs")
 @js.native
 class ASPxClientDashboardChangedEventArgs ()
-  extends typings.devexpressWeb.ASPxClientDashboardChangedEventArgs
+  extends StObject
+     with typings.devexpressWeb.ASPxClientDashboardChangedEventArgs {
+  
+  /**
+    * Gets the identifier of a newly opened dashboard.
+    */
+  /* CompleteClass */
+  var DashboardId: String = js.native
+}

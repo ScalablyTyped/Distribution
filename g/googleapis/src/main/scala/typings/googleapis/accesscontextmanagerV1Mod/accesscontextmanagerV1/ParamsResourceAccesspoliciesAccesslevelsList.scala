@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccesspoliciesAccesslevelsList extends StandardParameters {
+trait ParamsResourceAccesspoliciesAccesslevelsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Whether to return `BasicLevels` in the Cloud Common Expression language,
     * as `CustomLevels`, rather than as `BasicLevels`. Defaults to returning
     * `AccessLevels` in the format they were defined.
     */
-  var accessLevelFormat: js.UndefOr[String] = js.native
+  var accessLevelFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Number of Access Levels to include in the list. Default 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Next page token for the next batch of Access Level instances. Defaults to
     * the first page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Resource name for the access policy to list Access Levels from.
     * Format: `accessPolicies/{policy_id}`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccesspoliciesAccesslevelsList {
   

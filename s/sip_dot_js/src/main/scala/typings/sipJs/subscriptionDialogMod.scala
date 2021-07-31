@@ -12,7 +12,6 @@ import typings.sipJs.subscriptionSubscriptionMod.SubscriptionState
 import typings.sipJs.userAgentCoreUserAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionDialogMod {
@@ -104,7 +103,7 @@ object subscriptionDialogMod {
       * @param options - Options bucket
       */
     def subscribe(): OutgoingSubscribeRequest = js.native
-    def subscribe(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingSubscribeRequest = js.native
+    def subscribe(delegate: Unit, options: RequestOptions): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate, options: RequestOptions): OutgoingSubscribeRequest = js.native
     
@@ -159,6 +158,10 @@ object subscriptionDialogMod {
   /* static members */
   object SubscriptionDialog {
     
+    @JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * When a UAC receives a response that establishes a dialog, it
       * constructs the state of the dialog.  This state MUST be maintained
@@ -167,11 +170,10 @@ object subscriptionDialogMod {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
-    @JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog.initialDialogStateForSubscription")
-    @js.native
+    @scala.inline
     def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: OutgoingRequestMessage,
       incomingNotifyRequestMessage: IncomingRequestMessage
-    ): DialogState = js.native
+    ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   }
 }

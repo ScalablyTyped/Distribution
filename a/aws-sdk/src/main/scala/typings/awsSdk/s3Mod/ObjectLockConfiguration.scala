@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectLockConfiguration extends StObject {
   
   /**
     * Indicates whether this bucket has an Object Lock configuration enabled.
     */
-  var ObjectLockEnabled: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockEnabled] = js.native
+  var ObjectLockEnabled: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockEnabled] = js.undefined
   
   /**
     * The Object Lock rule in place for the specified object.
     */
-  var Rule: js.UndefOr[ObjectLockRule] = js.native
+  var Rule: js.UndefOr[ObjectLockRule] = js.undefined
 }
 object ObjectLockConfiguration {
   

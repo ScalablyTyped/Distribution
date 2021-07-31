@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectResult extends StObject {
   
   /**
     * The project to update.
     */
-  var project: js.UndefOr[Project] = js.native
+  var project: js.UndefOr[Project] = js.undefined
 }
 object UpdateProjectResult {
   

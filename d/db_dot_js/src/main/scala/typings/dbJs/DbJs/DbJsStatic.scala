@@ -2,17 +2,15 @@ package typings.dbJs.DbJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbJsStatic extends StObject {
   
-  def cmp(key1: js.Any, key2: js.Any): Double = js.native
+  def cmp(key1: js.Any, key2: js.Any): Double
   
-  def delete(dbName: String): js.Promise[Unit] = js.native
+  def delete(dbName: String): js.Promise[Unit]
   
-  def open(options: OpenOptions): js.Promise[Server] = js.native
+  def open(options: OpenOptions): js.Promise[Server]
 }
 object DbJsStatic {
   

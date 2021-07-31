@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupCertificateConfigurationResponse extends StObject {
   
   /**
     * The amount of time remaining before the certificate authority expires, in milliseconds.
     */
-  var CertificateAuthorityExpiryInMilliseconds: js.UndefOr[string] = js.native
+  var CertificateAuthorityExpiryInMilliseconds: js.UndefOr[string] = js.undefined
   
   /**
     * The amount of time remaining before the certificate expires, in milliseconds.
     */
-  var CertificateExpiryInMilliseconds: js.UndefOr[string] = js.native
+  var CertificateExpiryInMilliseconds: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the group certificate configuration.
     */
-  var GroupId: js.UndefOr[string] = js.native
+  var GroupId: js.UndefOr[string] = js.undefined
 }
 object GetGroupCertificateConfigurationResponse {
   

@@ -12,7 +12,7 @@ The lodash method `_.max` exported as a module.
 | Keywords           | lodash-modularized, max |
 | # releases         | 0 |
 | # dependents       | 41 |
-| # downloads        | 3201863 |
+| # downloads        | 4091081 |
 | # stars            | 0 |
 
 ## Links

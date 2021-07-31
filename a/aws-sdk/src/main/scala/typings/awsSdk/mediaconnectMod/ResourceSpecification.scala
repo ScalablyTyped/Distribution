@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceSpecification extends StObject {
   
   /**
     * The amount of outbound bandwidth that is discounted in the offering.
     */
-  var ReservedBitrate: js.UndefOr[integer] = js.native
+  var ReservedBitrate: js.UndefOr[integer] = js.undefined
   
   /**
     * The type of resource and the unit that is being billed for.
     */
-  var ResourceType: typings.awsSdk.mediaconnectMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.mediaconnectMod.ResourceType
 }
 object ResourceSpecification {
   

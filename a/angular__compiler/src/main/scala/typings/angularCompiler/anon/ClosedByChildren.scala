@@ -3,25 +3,23 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.tagsMod.TagContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosedByChildren extends StObject {
   
-  var closedByChildren: js.UndefOr[js.Array[String]] = js.native
+  var closedByChildren: js.UndefOr[js.Array[String]] = js.undefined
   
-  var closedByParent: js.UndefOr[Boolean] = js.native
+  var closedByParent: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[TagContentType] = js.native
+  var contentType: js.UndefOr[TagContentType] = js.undefined
   
-  var ignoreFirstLf: js.UndefOr[Boolean] = js.native
+  var ignoreFirstLf: js.UndefOr[Boolean] = js.undefined
   
-  var implicitNamespacePrefix: js.UndefOr[String] = js.native
+  var implicitNamespacePrefix: js.UndefOr[String] = js.undefined
   
-  var isVoid: js.UndefOr[Boolean] = js.native
+  var isVoid: js.UndefOr[Boolean] = js.undefined
   
-  var preventNamespaceInheritance: js.UndefOr[Boolean] = js.native
+  var preventNamespaceInheritance: js.UndefOr[Boolean] = js.undefined
 }
 object ClosedByChildren {
   

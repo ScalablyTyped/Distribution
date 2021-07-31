@@ -3,22 +3,20 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePathWithHeaders extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/file-path-with-headers
   /**
     * Additional headers to be sent.
     */
-  var headers: js.UndefOr[Record[String, String]] = js.native
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * The path to the file to send.
     */
-  var path: String = js.native
+  var path: String
 }
 object FilePathWithHeaders {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministrativeActionFailureDetails extends StObject {
   
   /**
     * Error message providing details about the failed administrative action.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
 }
 object AdministrativeActionFailureDetails {
   

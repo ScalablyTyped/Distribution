@@ -3,7 +3,6 @@ package typings.accounting
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,16 +11,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait CurrencyFormat extends StObject {
     
     // for positive values, eg. "$ 1.00"
-    var neg: js.UndefOr[String] = js.native
+    var neg: js.UndefOr[String] = js.undefined
     
-    var pos: String = js.native
+    var pos: String
     
     // for negative values, eg. "$ (1.00)"
-    var zero: js.UndefOr[String] = js.native
+    var zero: js.UndefOr[String] = js.undefined
   }
   object CurrencyFormat {
     
@@ -51,22 +49,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CurrencySettings[TFormat] extends StObject {
     
     // controls output: %s = symbol, %v = value/number
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
     // default currency symbol is '$'
-    var format: js.UndefOr[TFormat] = js.native
+    var format: js.UndefOr[TFormat] = js.undefined
     
     // thousands separator
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var symbol: js.UndefOr[String] = js.native
+    var symbol: js.UndefOr[String] = js.undefined
     
     // decimal point separator
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
   }
   object CurrencySettings {
     
@@ -77,7 +74,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class CurrencySettingsMutableBuilder[Self <: CurrencySettings[_], TFormat] (val x: Self with CurrencySettings[TFormat]) extends AnyVal {
+    implicit class CurrencySettingsMutableBuilder[Self <: CurrencySettings[?], TFormat] (val x: Self & CurrencySettings[TFormat]) extends AnyVal {
       
       @scala.inline
       def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
@@ -111,15 +108,14 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait NumberSettings extends StObject {
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     // default precision on numbers is 0
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
   }
   object NumberSettings {
     
@@ -152,18 +148,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var currency: CurrencySettings[_] = js.native
+    var currency: CurrencySettings[js.Any]
     
     // IAccountingCurrencySettings<string> or IAccountingCurrencySettings<IAccountingCurrencyFormat>
-    var number: NumberSettings = js.native
+    var number: NumberSettings
   }
   object Settings {
     
     @scala.inline
-    def apply(currency: CurrencySettings[_], number: NumberSettings): Settings = {
+    def apply(currency: CurrencySettings[js.Any], number: NumberSettings): Settings = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
@@ -172,7 +167,7 @@ object mod extends Shortcut {
     implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCurrency(value: CurrencySettings[_]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      def setCurrency(value: CurrencySettings[js.Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNumber(value: NumberSettings): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
@@ -185,202 +180,14 @@ object mod extends Shortcut {
     // format a list of values for column-display
     def formatColumn(numbers: js.Array[js.Array[Double] | Double]): js.Array[String] = js.native
     def formatColumn(numbers: js.Array[js.Array[Double] | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: js.UndefOr[scala.Nothing], precision: Double): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
     def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: String): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
     def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: String, precision: Double): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
     def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: String, precision: Double, thousand: String): js.Array[String] = js.native
     def formatColumn(
       numbers: js.Array[js.Array[Double] | Double],
       symbol: String,
       precision: Double,
       thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatColumn(
-      numbers: js.Array[js.Array[Double] | Double],
-      symbol: String,
-      precision: Double,
-      thousand: String,
       decimal: String
     ): js.Array[String] = js.native
     def formatColumn(
@@ -389,6 +196,179 @@ object mod extends Shortcut {
       precision: Double,
       thousand: String,
       decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Double,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: String, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: Unit, precision: Double): js.Array[String] = js.native
+    def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: Unit, precision: Double, thousand: String): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(numbers: js.Array[js.Array[Double] | Double], symbol: Unit, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatColumn(
+      numbers: js.Array[js.Array[Double] | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: Unit,
+      decimal: Unit,
       format: String
     ): js.Array[String] = js.native
     
@@ -404,254 +384,213 @@ object mod extends Shortcut {
     def formatMoney(number: String, options: CurrencySettings[CurrencyFormat | String]): String = js.native
     def formatMoney(number: Double, options: CurrencySettings[CurrencyFormat | String]): String = js.native
     // generic case (any array of numbers)
-    def formatMoney(numbers: js.Array[_ | Double]): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[_ | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double]): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Double): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Double, thousand: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[_ | Double], symbol: js.UndefOr[scala.Nothing], precision: Double): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: js.UndefOr[scala.Nothing],
-      precision: Double,
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[_ | Double], symbol: String): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[_ | Double], symbol: String, precision: Double): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String,
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[_ | Double], symbol: String, precision: Double, thousand: String): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
-      symbol: String,
-      precision: Double,
-      thousand: String,
-      decimal: js.UndefOr[scala.Nothing],
-      format: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[_ | Double],
+      numbers: js.Array[js.Any | Double],
       symbol: String,
       precision: Double,
       thousand: String,
       decimal: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[_ | Double],
+      numbers: js.Array[js.Any | Double],
       symbol: String,
       precision: Double,
       thousand: String,
       decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Double,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Double,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: String,
+      precision: Unit,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Double): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Double, thousand: String): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Double,
+      thousand: Unit,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: String,
+      decimal: Unit,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: Unit,
+      decimal: String,
+      format: String
+    ): js.Array[String] = js.native
+    def formatMoney(
+      numbers: js.Array[js.Any | Double],
+      symbol: Unit,
+      precision: Unit,
+      thousand: Unit,
+      decimal: Unit,
       format: String
     ): js.Array[String] = js.native
     
-    def formatNumber(number: js.Array[_ | Double]): js.Array[String] = js.native
-    def formatNumber(number: js.Array[_ | Double], options: NumberSettings): js.Array[String] = js.native
-    def formatNumber(
-      number: js.Array[_ | Double],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatNumber(number: js.Array[_ | Double], precision: js.UndefOr[scala.Nothing], thousand: String): js.Array[String] = js.native
-    def formatNumber(
-      number: js.Array[_ | Double],
-      precision: js.UndefOr[scala.Nothing],
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatNumber(number: js.Array[_ | Double], precision: Double): js.Array[String] = js.native
-    def formatNumber(
-      number: js.Array[_ | Double],
-      precision: Double,
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatNumber(number: js.Array[_ | Double], precision: Double, thousand: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[_ | Double], precision: Double, thousand: String, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double]): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], options: NumberSettings): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Double): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: String, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: Unit, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: String, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
     // format a number with custom precision and localisation
     def formatNumber(number: Double): String = js.native
     def formatNumber(number: Double, options: NumberSettings): String = js.native
-    def formatNumber(
-      number: Double,
-      precision: js.UndefOr[scala.Nothing],
-      thousand: js.UndefOr[scala.Nothing],
-      decimal: String
-    ): String = js.native
-    def formatNumber(number: Double, precision: js.UndefOr[scala.Nothing], thousand: String): String = js.native
-    def formatNumber(number: Double, precision: js.UndefOr[scala.Nothing], thousand: String, decimal: String): String = js.native
     def formatNumber(number: Double, precision: Double): String = js.native
-    def formatNumber(number: Double, precision: Double, thousand: js.UndefOr[scala.Nothing], decimal: String): String = js.native
     def formatNumber(number: Double, precision: Double, thousand: String): String = js.native
     def formatNumber(number: Double, precision: Double, thousand: String, decimal: String): String = js.native
+    def formatNumber(number: Double, precision: Double, thousand: Unit, decimal: String): String = js.native
+    def formatNumber(number: Double, precision: Unit, thousand: String): String = js.native
+    def formatNumber(number: Double, precision: Unit, thousand: String, decimal: String): String = js.native
+    def formatNumber(number: Double, precision: Unit, thousand: Unit, decimal: String): String = js.native
     
     // settings object that controls default parameters for library methods
     var settings: Settings = js.native

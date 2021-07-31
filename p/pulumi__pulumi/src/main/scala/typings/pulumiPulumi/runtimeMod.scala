@@ -29,7 +29,6 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeMod {
@@ -45,69 +44,51 @@ object runtimeMod {
     def this(source: AsyncIterable[T], cancelSource: js.Function0[Unit]) = this()
   }
   
-  @JSImport("@pulumi/pulumi/runtime", "allConfig")
-  @js.native
-  def allConfig(): StringDictionary[String] = js.native
+  @scala.inline
+  def allConfig(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConfig")().asInstanceOf[StringDictionary[String]]
   
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(
-    extraIncludePaths: js.UndefOr[scala.Nothing],
-    extraIncludePackages: js.UndefOr[scala.Nothing],
-    extraExcludePackages: js.Array[String]
-  ): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(extraIncludePaths: js.UndefOr[scala.Nothing], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(
-    extraIncludePaths: js.UndefOr[scala.Nothing],
-    extraIncludePackages: js.Array[String],
-    extraExcludePackages: js.Array[String]
-  ): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(
-    extraIncludePaths: js.Array[String],
-    extraIncludePackages: js.UndefOr[scala.Nothing],
-    extraExcludePackages: js.Array[String]
-  ): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
+  @scala.inline
+  def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")().asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
   def computeCodePaths(
     extraIncludePaths: js.Array[String],
     extraIncludePackages: js.Array[String],
     extraExcludePackages: js.Array[String]
-  ): js.Promise[Map[String, Asset | Archive]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "computeCodePaths")
-  @js.native
-  def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = js.native
+  ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(
+    extraIncludePaths: js.Array[String],
+    extraIncludePackages: Unit,
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(
+    extraIncludePaths: Unit,
+    extraIncludePackages: js.Array[String],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: Unit, extraExcludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  @scala.inline
+  def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "deserializeProperties")
-  @js.native
-  def deserializeProperties(outputsStruct: js.Any): js.Any = js.native
+  @scala.inline
+  def deserializeProperties(outputsStruct: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperties")(outputsStruct.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@pulumi/pulumi/runtime", "deserializeProperty")
-  @js.native
-  def deserializeProperty(prop: js.Any): js.Any = js.native
+  @scala.inline
+  def deserializeProperty(prop: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@pulumi/pulumi/runtime", "disconnect")
-  @js.native
-  def disconnect(): js.Promise[Unit] = js.native
+  @scala.inline
+  def disconnect(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@pulumi/pulumi/runtime", "disconnectSync")
-  @js.native
-  def disconnectSync(): Unit = js.native
+  @scala.inline
+  def disconnectSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSync")().asInstanceOf[Unit]
   
   @JSImport("@pulumi/pulumi/runtime", "excessiveDebugOutput")
   @js.native
@@ -115,108 +96,82 @@ object runtimeMod {
   @scala.inline
   def excessiveDebugOutput_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveDebugOutput")(x.asInstanceOf[js.Any])
   
-  @JSImport("@pulumi/pulumi/runtime", "getConfig")
-  @js.native
-  def getConfig(k: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getConfig(k: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(k.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@pulumi/pulumi/runtime", "getEngine")
-  @js.native
-  def getEngine(): js.UndefOr[js.Object] = js.native
+  @scala.inline
+  def getEngine(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")().asInstanceOf[js.UndefOr[js.Object]]
   
-  @JSImport("@pulumi/pulumi/runtime", "getMonitor")
-  @js.native
-  def getMonitor(): js.UndefOr[js.Object] = js.native
+  @scala.inline
+  def getMonitor(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonitor")().asInstanceOf[js.UndefOr[js.Object]]
   
-  @JSImport("@pulumi/pulumi/runtime", "getProject")
-  @js.native
-  def getProject(): String = js.native
+  @scala.inline
+  def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
   
-  @JSImport("@pulumi/pulumi/runtime", "getRootResource")
-  @js.native
-  def getRootResource(): js.Promise[js.UndefOr[URN]] = js.native
+  @scala.inline
+  def getRootResource(): js.Promise[js.UndefOr[URN]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootResource")().asInstanceOf[js.Promise[js.UndefOr[URN]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "getStack")
-  @js.native
-  def getStack(): String = js.native
+  @scala.inline
+  def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
   
-  @JSImport("@pulumi/pulumi/runtime", "getStackResource")
-  @js.native
-  def getStackResource(): js.UndefOr[Stack] = js.native
+  @scala.inline
+  def getStackResource(): js.UndefOr[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackResource")().asInstanceOf[js.UndefOr[Stack]]
   
-  @JSImport("@pulumi/pulumi/runtime", "hasEngine")
-  @js.native
-  def hasEngine(): Boolean = js.native
+  @scala.inline
+  def hasEngine(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEngine")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "hasMonitor")
-  @js.native
-  def hasMonitor(): Boolean = js.native
+  @scala.inline
+  def hasMonitor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMonitor")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "invoke")
-  @js.native
-  def invoke(tok: String, props: Inputs): js.Promise[_] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "invoke")
-  @js.native
-  def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
+  @scala.inline
+  def invoke(tok: String, props: Inputs): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@pulumi/pulumi/runtime", "isDryRun")
-  @js.native
-  def isDryRun(): Boolean = js.native
+  @scala.inline
+  def isDryRun(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDryRun")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "isLegacyApplyEnabled")
-  @js.native
-  def isLegacyApplyEnabled(): Boolean = js.native
+  @scala.inline
+  def isLegacyApplyEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyApplyEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "isQueryMode")
-  @js.native
-  def isQueryMode(): Boolean = js.native
+  @scala.inline
+  def isQueryMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQueryMode")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "isRpcSecret")
-  @js.native
-  def isRpcSecret(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isRpcSecret(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "isTestModeEnabled")
-  @js.native
-  def isTestModeEnabled(): Boolean = js.native
+  @scala.inline
+  def isTestModeEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTestModeEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "leakedPromises")
-  @js.native
-  def leakedPromises(): js.Tuple2[Set[js.Promise[_]], String] = js.native
+  @scala.inline
+  def leakedPromises(): js.Tuple2[Set[js.Promise[js.Any]], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("leakedPromises")().asInstanceOf[js.Tuple2[Set[js.Promise[js.Any]], String]]
   
-  @JSImport("@pulumi/pulumi/runtime", "listResourceOutputs")
-  @js.native
-  def listResourceOutputs[U /* <: Resource */](): AsyncQueryable[ResolvedResource[U]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "listResourceOutputs")
-  @js.native
-  def listResourceOutputs[U /* <: Resource */](typeFilter: js.UndefOr[scala.Nothing], stackName: String): AsyncQueryable[ResolvedResource[U]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "listResourceOutputs")
-  @js.native
-  def listResourceOutputs[U /* <: Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean]): AsyncQueryable[ResolvedResource[U]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "listResourceOutputs")
-  @js.native
-  def listResourceOutputs[U /* <: Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean], stackName: String): AsyncQueryable[ResolvedResource[U]] = js.native
+  @scala.inline
+  def listResourceOutputs[U /* <: Resource */](): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")().asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+  @scala.inline
+  def listResourceOutputs[U /* <: Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean]): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+  @scala.inline
+  def listResourceOutputs[U /* <: Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean], stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+  @scala.inline
+  def listResourceOutputs[U /* <: Resource */](typeFilter: Unit, stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
   
   @JSImport("@pulumi/pulumi/runtime", "maxRPCMessageSize")
   @js.native
   val maxRPCMessageSize: Double = js.native
   
-  @JSImport("@pulumi/pulumi/runtime", "monitorSupportsFeature")
-  @js.native
-  def monitorSupportsFeature(feature: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def monitorSupportsFeature(feature: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsFeature")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@pulumi/pulumi/runtime", "monitorSupportsResourceReferences")
-  @js.native
-  def monitorSupportsResourceReferences(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def monitorSupportsResourceReferences(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsResourceReferences")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@pulumi/pulumi/runtime", "monitorSupportsSecrets")
-  @js.native
-  def monitorSupportsSecrets(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def monitorSupportsSecrets(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsSecrets")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@pulumi/pulumi/runtime", "readResource")
-  @js.native
-  def readResource(res: Resource, t: String, name: String, props: Inputs, opts: ResourceOptions): Unit = js.native
+  @scala.inline
+  def readResource(res: Resource, t: String, name: String, props: Inputs, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readResource")(res.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "registerResource")
-  @js.native
+  @scala.inline
   def registerResource(
     res: Resource,
     t: String,
@@ -226,32 +181,25 @@ object runtimeMod {
     newDependency: js.Function1[/* urn */ URN, Resource],
     props: Inputs,
     opts: ResourceOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResource")(res.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], custom.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], newDependency.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "registerResourceModule")
-  @js.native
-  def registerResourceModule(name: String, version: String, module: ResourceModule): Unit = js.native
+  @scala.inline
+  def registerResourceModule(name: String, version: String, module: ResourceModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceModule")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "registerResourceOutputs")
-  @js.native
-  def registerResourceOutputs(res: Resource, outputs: js.Promise[Inputs]): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "registerResourceOutputs")
-  @js.native
-  def registerResourceOutputs(res: Resource, outputs: Inputs): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "registerResourceOutputs")
-  @js.native
-  def registerResourceOutputs(res: Resource, outputs: Output_[Inputs]): Unit = js.native
+  @scala.inline
+  def registerResourceOutputs(res: Resource, outputs: js.Promise[Inputs]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerResourceOutputs(res: Resource, outputs: Inputs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerResourceOutputs(res: Resource, outputs: Output_[Inputs]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "registerResourcePackage")
-  @js.native
-  def registerResourcePackage(name: String, version: String, pkg: ResourcePackage): Unit = js.native
+  @scala.inline
+  def registerResourcePackage(name: String, version: String, pkg: ResourcePackage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourcePackage")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "registerStackTransformation")
-  @js.native
-  def registerStackTransformation(t: ResourceTransformation): Unit = js.native
+  @scala.inline
+  def registerStackTransformation(t: ResourceTransformation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStackTransformation")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "resetOptions")
-  @js.native
+  @scala.inline
   def resetOptions(
     project: String,
     stack: String,
@@ -259,16 +207,15 @@ object runtimeMod {
     engineAddr: String,
     monitorAddr: String,
     preview: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetOptions")(project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], parallel.asInstanceOf[js.Any], engineAddr.asInstanceOf[js.Any], monitorAddr.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "resolveProperties")
-  @js.native
+  @scala.inline
   def resolveProperties(
     res: Resource,
     resolvers: Record[
       String, 
       js.Function5[
-        /* v */ _, 
+        /* v */ js.Any, 
         /* isKnown */ Boolean, 
         /* isSecret */ Boolean, 
         /* deps */ js.UndefOr[js.Array[Resource]], 
@@ -280,15 +227,14 @@ object runtimeMod {
     name: String,
     allProps: js.Any,
     deps: Record[String, js.Array[Resource]]
-  ): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "resolveProperties")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProperties")(res.asInstanceOf[js.Any], resolvers.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allProps.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def resolveProperties(
     res: Resource,
     resolvers: Record[
       String, 
       js.Function5[
-        /* v */ _, 
+        /* v */ js.Any, 
         /* isKnown */ Boolean, 
         /* isSecret */ Boolean, 
         /* deps */ js.UndefOr[js.Array[Resource]], 
@@ -301,121 +247,82 @@ object runtimeMod {
     allProps: js.Any,
     deps: Record[String, js.Array[Resource]],
     err: Error
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProperties")(res.asInstanceOf[js.Any], resolvers.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allProps.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@pulumi/pulumi/runtime", "rootPulumiStackTypeName")
   @js.native
   val rootPulumiStackTypeName: /* "pulumi:pulumi:Stack" */ String = js.native
   
-  @JSImport("@pulumi/pulumi/runtime", "rpcKeepAlive")
-  @js.native
-  def rpcKeepAlive(): js.Function0[Unit] = js.native
+  @scala.inline
+  def rpcKeepAlive(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcKeepAlive")().asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@pulumi/pulumi/runtime", "runInPulumiStack")
-  @js.native
-  def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native
+  @scala.inline
+  def runInPulumiStack(init: js.Function0[js.Promise[js.Any]]): js.Promise[js.UndefOr[Inputs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runInPulumiStack")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Inputs]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "serialize")
-  @js.native
-  def serialize(): Boolean = js.native
+  @scala.inline
+  def serialize(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/runtime", "serializeFunction")
-  @js.native
-  def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "serializeFunction")
-  @js.native
-  def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = js.native
+  @scala.inline
+  def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
+  @scala.inline
+  def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
   
-  @JSImport("@pulumi/pulumi/runtime", "serializeFunctionAsync")
-  @js.native
-  def serializeFunctionAsync(func: js.Function): js.Promise[String] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "serializeFunctionAsync")
-  @js.native
-  def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = js.native
+  @scala.inline
+  def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("@pulumi/pulumi/runtime", "serializeProperties")
-  @js.native
-  def serializeProperties(label: String, props: Inputs): js.Promise[Record[String, _]] = js.native
+  @scala.inline
+  def serializeProperties(label: String, props: Inputs): js.Promise[Record[String, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeProperties")(label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Record[String, js.Any]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "serializeProperty")
-  @js.native
-  def serializeProperty(ctx: String, prop: Input[_], dependentResources: Set[Resource]): js.Promise[_] = js.native
+  @scala.inline
+  def serializeProperty(ctx: String, prop: Input[js.Any], dependentResources: Set[Resource]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeProperty")(ctx.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], dependentResources.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@pulumi/pulumi/runtime", "serializeResourceProperties")
-  @js.native
-  def serializeResourceProperties(label: String, props: Inputs): js.Promise[js.Tuple2[Record[String, _], Map[String, Set[Resource]]]] = js.native
+  @scala.inline
+  def serializeResourceProperties(label: String, props: Inputs): js.Promise[js.Tuple2[Record[String, js.Any], Map[String, Set[Resource]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeResourceProperties")(label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Record[String, js.Any], Map[String, Set[Resource]]]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "setAllConfig")
-  @js.native
-  def setAllConfig(c: StringDictionary[String]): Unit = js.native
+  @scala.inline
+  def setAllConfig(c: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAllConfig")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "setConfig")
-  @js.native
-  def setConfig(k: String, v: String): Unit = js.native
+  @scala.inline
+  def setConfig(k: String, v: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(
-    mockMonitor: js.Any,
-    project: js.UndefOr[scala.Nothing],
-    stack: js.UndefOr[scala.Nothing],
-    preview: Boolean
-  ): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMockOptions")
-  @js.native
-  def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = js.native
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMockOptions(mockMonitor: js.Any, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(
-    mocks: Mocks,
-    project: js.UndefOr[scala.Nothing],
-    stack: js.UndefOr[scala.Nothing],
-    preview: Boolean
-  ): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
-  @JSImport("@pulumi/pulumi/runtime", "setMocks")
-  @js.native
-  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
+  @scala.inline
+  def setMocks(mocks: Mocks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMocks(mocks: Mocks, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "setRootResource")
-  @js.native
-  def setRootResource(res: ComponentResource[_]): js.Promise[Unit] = js.native
+  @scala.inline
+  def setRootResource(res: ComponentResource[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRootResource")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("@pulumi/pulumi/runtime", "specialArchiveSig")
   @js.native
@@ -437,30 +344,24 @@ object runtimeMod {
   @js.native
   val specialSigKey: /* "4dabf18193072939515e22adb298388d" */ String = js.native
   
-  @JSImport("@pulumi/pulumi/runtime", "streamInvoke")
-  @js.native
-  def streamInvoke(tok: String, props: Inputs): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
-  @JSImport("@pulumi/pulumi/runtime", "streamInvoke")
-  @js.native
-  def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
+  @scala.inline
+  def streamInvoke(tok: String, props: Inputs): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
+  @scala.inline
+  def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
   
-  @JSImport("@pulumi/pulumi/runtime", "suppressUnhandledGrpcRejections")
-  @js.native
-  def suppressUnhandledGrpcRejections[T](p: js.Promise[T]): js.Promise[T] = js.native
+  @scala.inline
+  def suppressUnhandledGrpcRejections[T](p: js.Promise[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressUnhandledGrpcRejections")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@pulumi/pulumi/runtime", "terminateRpcs")
-  @js.native
-  def terminateRpcs(): Unit = js.native
+  @scala.inline
+  def terminateRpcs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminateRpcs")().asInstanceOf[Unit]
   
-  @JSImport("@pulumi/pulumi/runtime", "transferProperties")
-  @js.native
-  def transferProperties(onto: Resource, label: String, props: Inputs): OutputResolvers = js.native
+  @scala.inline
+  def transferProperties(onto: Resource, label: String, props: Inputs): OutputResolvers = (^.asInstanceOf[js.Dynamic].applyDynamic("transferProperties")(onto.asInstanceOf[js.Any], label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[OutputResolvers]
   
   @JSImport("@pulumi/pulumi/runtime", "unknownValue")
   @js.native
   val unknownValue: /* "04da6b54-80e4-46f7-96ec-b56ff0331ba9" */ String = js.native
   
-  @JSImport("@pulumi/pulumi/runtime", "unwrapRpcSecret")
-  @js.native
-  def unwrapRpcSecret(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def unwrapRpcSecret(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

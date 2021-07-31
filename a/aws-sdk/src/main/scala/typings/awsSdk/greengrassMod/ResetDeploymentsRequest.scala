@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetDeploymentsRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * If true, performs a best-effort only core reset.
     */
-  var Force: js.UndefOr[boolean] = js.native
+  var Force: js.UndefOr[boolean] = js.undefined
   
   /**
     * The ID of the Greengrass group.
     */
-  var GroupId: string = js.native
+  var GroupId: string
 }
 object ResetDeploymentsRequest {
   

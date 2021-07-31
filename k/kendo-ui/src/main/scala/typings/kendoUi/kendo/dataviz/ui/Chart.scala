@@ -11,20 +11,21 @@ import typings.kendoUi.kendo.ui.Widget
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart extends Widget {
+trait Chart
+  extends StObject
+     with Widget {
   
   var dataSource: DataSource = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[_] = js.native
+  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
   
-  def exportPDF(): JQueryPromise[_] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[_] = js.native
+  def exportPDF(): JQueryPromise[js.Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[_] = js.native
+  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
   
   def findAxisByName(name: String): ChartAxis = js.native
   

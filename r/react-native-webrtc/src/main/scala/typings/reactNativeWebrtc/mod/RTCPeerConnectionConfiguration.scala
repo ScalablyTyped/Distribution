@@ -5,15 +5,13 @@ import typings.reactNativeWebrtc.reactNativeWebrtcStrings.public
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.relay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCPeerConnectionConfiguration extends StObject {
   
-  var iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls] = js.native
+  var iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]
   
-  var iceTransportPolicy: js.UndefOr[all | public | relay] = js.native
+  var iceTransportPolicy: js.UndefOr[all | public | relay] = js.undefined
 }
 object RTCPeerConnectionConfiguration {
   

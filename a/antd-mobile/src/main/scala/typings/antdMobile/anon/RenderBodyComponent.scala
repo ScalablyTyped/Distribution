@@ -3,19 +3,17 @@ package typings.antdMobile.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderBodyComponent extends StObject {
   
-  def renderBodyComponent(): Element = js.native
+  def renderBodyComponent(): Element
   
-  var renderFooter: js.Any = js.native
+  var renderFooter: js.Any
   
-  var renderHeader: js.Any = js.native
+  var renderHeader: js.Any
   
-  var renderSectionHeader: js.Any = js.native
+  var renderSectionHeader: js.Any
 }
 object RenderBodyComponent {
   

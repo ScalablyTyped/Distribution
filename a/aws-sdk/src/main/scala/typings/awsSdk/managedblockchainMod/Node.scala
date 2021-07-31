@@ -2,61 +2,59 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
   /**
     * The Availability Zone in which the node exists.
     */
-  var AvailabilityZone: js.UndefOr[AvailabilityZoneString] = js.native
+  var AvailabilityZone: js.UndefOr[AvailabilityZoneString] = js.undefined
   
   /**
     * The date and time that the node was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Attributes of the blockchain framework being used.
     */
-  var FrameworkAttributes: js.UndefOr[NodeFrameworkAttributes] = js.native
+  var FrameworkAttributes: js.UndefOr[NodeFrameworkAttributes] = js.undefined
   
   /**
     * The unique identifier of the node.
     */
-  var Id: js.UndefOr[ResourceIdString] = js.native
+  var Id: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The instance type of the node.
     */
-  var InstanceType: js.UndefOr[InstanceTypeString] = js.native
+  var InstanceType: js.UndefOr[InstanceTypeString] = js.undefined
   
   /**
     * Configuration properties for logging events associated with a peer node owned by a member in a Managed Blockchain network.
     */
-  var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.native
+  var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.undefined
   
   /**
     * The unique identifier of the member to which the node belongs.
     */
-  var MemberId: js.UndefOr[ResourceIdString] = js.native
+  var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The unique identifier of the network that the node is in.
     */
-  var NetworkId: js.UndefOr[ResourceIdString] = js.native
+  var NetworkId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The state database that the node uses. Values are LevelDB or CouchDB.
     */
-  var StateDB: js.UndefOr[StateDBType] = js.native
+  var StateDB: js.UndefOr[StateDBType] = js.undefined
   
   /**
     * The status of the node.
     */
-  var Status: js.UndefOr[NodeStatus] = js.native
+  var Status: js.UndefOr[NodeStatus] = js.undefined
 }
 object Node {
   

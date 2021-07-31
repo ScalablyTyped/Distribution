@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.markdownIt.anon.Mdurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod extends Shortcut {
@@ -14,7 +13,6 @@ object utilsMod extends Shortcut {
   val ^ : Utils = js.native
   
   // import ucmicro from 'uc.micro';
-  @js.native
   trait Utils extends StObject {
     
     /**
@@ -22,23 +20,23 @@ object utilsMod extends Shortcut {
       * Useful for some operations with tokens.
       * Return a new array.
       */
-    def arrayReplaceAt[T](src: js.Array[T], pos: Double, newElements: js.Array[T]): js.Array[T] = js.native
+    def arrayReplaceAt[T](src: js.Array[T], pos: Double, newElements: js.Array[T]): js.Array[T]
     
     /**
       * Merge objects
       */
-    def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+    def assign(target: js.Any, sources: js.Any*): js.Any
     
-    def escapeHtml(str: String): String = js.native
+    def escapeHtml(str: String): String
     
-    def escapeRE(str: String): String = js.native
+    def escapeRE(str: String): String
     
-    def fromCodePoint(code: Double): String = js.native
+    def fromCodePoint(code: Double): String
     
     /**
       * has own property
       */
-    def has(obj: js.Any, key: /* keyof any */ String): Boolean = js.native
+    def has(obj: js.Any, key: /* keyof any */ String): Boolean
     
     /**
       * Markdown ASCII punctuation characters.
@@ -48,37 +46,37 @@ object utilsMod extends Shortcut {
       *
       * Don't confuse with unicode punctuation !!! It lacks some chars in ascii range.
       */
-    def isMdAsciiPunct(code: Double): Boolean = js.native
+    def isMdAsciiPunct(code: Double): Boolean
     
     /**
       * Currently without astral characters support.
       */
-    def isPunctChar(ch: String): Boolean = js.native
+    def isPunctChar(ch: String): Boolean
     
-    def isSpace(code: Double): Boolean = js.native
+    def isSpace(code: Double): Boolean
     
     /**
       * Check if the type is string or not
       */
-    def isString(obj: js.Any): /* is string */ Boolean = js.native
+    def isString(obj: js.Any): /* is string */ Boolean
     
-    def isValidEntityCode(code: Double): Boolean = js.native
+    def isValidEntityCode(code: Double): Boolean
     
     /**
       * Zs (unicode class) || [\t\f\v\r\n]
       */
-    def isWhiteSpace(code: Double): Boolean = js.native
+    def isWhiteSpace(code: Double): Boolean
     
-    var lib: Mdurl = js.native
+    var lib: Mdurl
     
     /**
       * Hepler to unify [reference labels].
       */
-    def normalizeReference(str: String): String = js.native
+    def normalizeReference(str: String): String
     
-    def unescapeAll(str: String): String = js.native
+    def unescapeAll(str: String): String
     
-    def unescapeMd(str: String): String = js.native
+    def unescapeMd(str: String): String
   }
   object Utils {
     

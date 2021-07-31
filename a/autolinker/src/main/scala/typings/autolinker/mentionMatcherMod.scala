@@ -8,7 +8,6 @@ import typings.autolinker.matcherMatcherMod.MatcherConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mentionMatcherMod {
@@ -54,10 +53,11 @@ object mentionMatcherMod {
     var serviceName: MentionServices = js.native
   }
   
-  @js.native
-  trait MentionMatcherConfig extends MatcherConfig {
+  trait MentionMatcherConfig
+    extends StObject
+       with MatcherConfig {
     
-    var serviceName: MentionServices = js.native
+    var serviceName: MentionServices
   }
   object MentionMatcherConfig {
     

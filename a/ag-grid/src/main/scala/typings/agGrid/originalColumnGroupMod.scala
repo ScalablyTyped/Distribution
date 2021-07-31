@@ -6,7 +6,6 @@ import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object originalColumnGroupMod {
@@ -14,7 +13,8 @@ object originalColumnGroupMod {
   @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup")
   @js.native
   class OriginalColumnGroup protected ()
-    extends OriginalColumnGroupChild
+    extends StObject
+       with OriginalColumnGroupChild
        with IEventEmitter {
     def this(colGroupDef: ColGroupDef, groupId: String, padding: Boolean, level: Double) = this()
     
@@ -34,7 +34,13 @@ object originalColumnGroupMod {
     
     def getColGroupDef(): ColGroupDef = js.native
     
+    /* CompleteClass */
+    override def getColumnGroupShow(): String = js.native
+    
     def getGroupId(): String = js.native
+    
+    /* CompleteClass */
+    override def getId(): String = js.native
     
     def getLeafColumns(): js.Array[Column] = js.native
     
@@ -49,6 +55,9 @@ object originalColumnGroupMod {
     def isExpanded(): Boolean = js.native
     
     def isPadding(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isVisible(): Boolean = js.native
     
     var level: js.Any = js.native
     

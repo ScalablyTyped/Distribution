@@ -4,73 +4,73 @@ import typings.jquery.JQueryEventObject
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Sortable //////////////////////////////////////////////////
-@js.native
-trait SortableOptions extends SortableEvents {
+trait SortableOptions
+  extends StObject
+     with SortableEvents {
   
-  var appendTo: js.UndefOr[js.Any] = js.native
+  var appendTo: js.UndefOr[js.Any] = js.undefined
   
   // jQuery, Element, Selector or string
-  var attribute: js.UndefOr[String] = js.native
+  var attribute: js.UndefOr[String] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[js.Any] = js.native
-  
-  // Selector
-  var connectWith: js.UndefOr[js.Any] = js.native
+  var cancel: js.UndefOr[js.Any] = js.undefined
   
   // Selector
-  var containment: js.UndefOr[js.Any] = js.native
+  var connectWith: js.UndefOr[js.Any] = js.undefined
+  
+  // Selector
+  var containment: js.UndefOr[js.Any] = js.undefined
   
   // Element, Selector or string
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var cursorAt: js.UndefOr[js.Any] = js.native
+  var cursorAt: js.UndefOr[js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var dropOnEmpty: js.UndefOr[Boolean] = js.native
+  var dropOnEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var forceHelperSize: js.UndefOr[Boolean] = js.native
+  var forceHelperSize: js.UndefOr[Boolean] = js.undefined
   
-  var forcePlaceholderSize: js.UndefOr[Boolean] = js.native
+  var forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined
   
-  var grid: js.UndefOr[js.Array[Double]] = js.native
+  var grid: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var handle: js.UndefOr[js.Any] = js.native
+  var handle: js.UndefOr[js.Any] = js.undefined
   
   var helper: js.UndefOr[
     String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element])
-  ] = js.native
+  ] = js.undefined
   
   // Selector or Element
-  var items: js.UndefOr[js.Any] = js.native
+  var items: js.UndefOr[js.Any] = js.undefined
   
   // Selector
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var revert: js.UndefOr[js.Any] = js.native
+  var revert: js.UndefOr[js.Any] = js.undefined
   
   // boolean or number
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
   
-  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
   
-  var scrollSpeed: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.undefined
   
-  var tolerance: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object SortableOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDiscoveredSchemaResponse extends StObject {
   
   /**
     * The source of the schema definition.
     */
-  var Content: js.UndefOr[string] = js.native
+  var Content: js.UndefOr[string] = js.undefined
 }
 object GetDiscoveredSchemaResponse {
   

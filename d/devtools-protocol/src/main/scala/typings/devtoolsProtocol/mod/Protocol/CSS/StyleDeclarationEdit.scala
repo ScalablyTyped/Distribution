@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleDeclarationEdit extends StObject {
   
   /**
     * The range of the style text in the enclosing stylesheet.
     */
-  var range: SourceRange = js.native
+  var range: SourceRange
   
   /**
     * The css style sheet identifier.
     */
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
   
   /**
     * New style text.
     */
-  var text: String = js.native
+  var text: String
 }
 object StyleDeclarationEdit {
   

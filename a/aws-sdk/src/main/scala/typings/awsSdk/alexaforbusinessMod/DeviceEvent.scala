@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceEvent extends StObject {
   
   /**
     * The time (in epoch) when the event occurred. 
     */
-  var Timestamp: js.UndefOr[DeviceEventTime] = js.native
+  var Timestamp: js.UndefOr[DeviceEventTime] = js.undefined
   
   /**
     * The type of device event.
     */
-  var Type: js.UndefOr[DeviceEventType] = js.native
+  var Type: js.UndefOr[DeviceEventType] = js.undefined
   
   /**
     * The value of the event.
     */
-  var Value: js.UndefOr[DeviceEventValue] = js.native
+  var Value: js.UndefOr[DeviceEventValue] = js.undefined
 }
 object DeviceEvent {
   

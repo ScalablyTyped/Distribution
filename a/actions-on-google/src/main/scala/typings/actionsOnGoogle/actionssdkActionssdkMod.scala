@@ -13,7 +13,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionssdkActionssdkMod {
@@ -29,7 +28,9 @@ object actionssdkActionssdkMod {
   ]
   
   @js.native
-  trait ActionsSdkApp[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] extends ConversationApp[TConvData, TUserStorage] {
+  trait ActionsSdkApp[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */]
+    extends StObject
+       with ConversationApp[TConvData, TUserStorage] {
     
     /** @hidden */
     var _handlers: ActionsSdkHandlers[TConvData, TUserStorage, TConversation] = js.native
@@ -90,18 +91,51 @@ object actionssdkActionssdkMod {
     var verification: js.UndefOr[ActionsSdkVerification | String] = js.native
   }
   
-  @js.native
   trait ActionsSdkHandlers[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] extends StObject {
     
-    def catcher(conv: TConversation, error: Error): js.Promise[_] | js.Any = js.native
+    def catcher(conv: TConversation, error: Error): js.Promise[js.Any] | js.Any
     @JSName("catcher")
-    var catcher_Original: ExceptionHandler[TUserStorage, TConversation] = js.native
+    var catcher_Original: ExceptionHandler[TUserStorage, TConversation]
     
     var fallback: js.UndefOr[
         (ActionsSdkIntentHandler[js.Object, js.Object, ActionsSdkConversation[js.Object, js.Object], Argument]) | String
-      ] = js.native
+      ] = js.undefined
     
-    var intents: ActionSdkIntentHandlers = js.native
+    var intents: ActionSdkIntentHandlers
+  }
+  object ActionsSdkHandlers {
+    
+    @scala.inline
+    def apply[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](
+      catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
+      intents: ActionSdkIntentHandlers
+    ): ActionsSdkHandlers[TConvData, TUserStorage, TConversation] = {
+      val __obj = js.Dynamic.literal(catcher = js.Any.fromFunction2(catcher), intents = intents.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ActionsSdkHandlers[TConvData, TUserStorage, TConversation]]
+    }
+    
+    @scala.inline
+    implicit class ActionsSdkHandlersMutableBuilder[Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] (val x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) extends AnyVal {
+      
+      @scala.inline
+      def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFallback(
+        value: (ActionsSdkIntentHandler[js.Object, js.Object, ActionsSdkConversation[js.Object, js.Object], Argument]) | String
+      ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFallbackFunction4(
+        value: (ActionsSdkConversation[js.Object, js.Object], /* input */ String, Argument, /* status */ js.UndefOr[GoogleRpcStatus]) => js.Promise[js.Any] | js.Any
+      ): Self = StObject.set(x, "fallback", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
+      @scala.inline
+      def setIntents(value: ActionSdkIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    }
   }
   
   type ActionsSdkIntentHandler[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */, TArgument /* <: Argument */] = js.Function4[
@@ -115,11 +149,12 @@ object actionssdkActionssdkMod {
   type ActionsSdkMiddleware[TConversationPlugin /* <: ActionsSdkConversation[js.Object, js.Object] */] = js.Function2[
     /* conv */ ActionsSdkConversation[js.Object, js.Object], 
     /* framework */ BuiltinFrameworkMetadata, 
-    ((ActionsSdkConversation[js.Object, js.Object]) with TConversationPlugin) | Unit | (js.Promise[((ActionsSdkConversation[js.Object, js.Object]) with TConversationPlugin) | Unit])
+    ((ActionsSdkConversation[js.Object, js.Object]) & TConversationPlugin) | Unit | (js.Promise[((ActionsSdkConversation[js.Object, js.Object]) & TConversationPlugin) | Unit])
   ]
   
-  @js.native
-  trait ActionsSdkOptions[TConvData, TUserStorage] extends ConversationAppOptions[TConvData, TUserStorage] {
+  trait ActionsSdkOptions[TConvData, TUserStorage]
+    extends StObject
+       with ConversationAppOptions[TConvData, TUserStorage] {
     
     /**
       * Validates whether request is from Google through signature verification.
@@ -136,7 +171,7 @@ object actionssdkActionssdkMod {
       *
       * @public
       */
-    var verification: js.UndefOr[ActionsSdkVerification | String] = js.native
+    var verification: js.UndefOr[ActionsSdkVerification | String] = js.undefined
   }
   object ActionsSdkOptions {
     
@@ -147,7 +182,7 @@ object actionssdkActionssdkMod {
     }
     
     @scala.inline
-    implicit class ActionsSdkOptionsMutableBuilder[Self <: ActionsSdkOptions[_, _], TConvData, TUserStorage] (val x: Self with (ActionsSdkOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class ActionsSdkOptionsMutableBuilder[Self <: ActionsSdkOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setVerification(value: ActionsSdkVerification | String): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
@@ -157,7 +192,6 @@ object actionssdkActionssdkMod {
     }
   }
   
-  @js.native
   trait ActionsSdkVerification extends StObject {
     
     /**
@@ -167,19 +201,19 @@ object actionssdkActionssdkMod {
       * The message will get sent back in the JSON top level `error` property.
       * @public
       */
-    var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.native
+    var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.undefined
     
     /**
       * Google Cloud Project ID for the Assistant app.
       * @public
       */
-    var project: String = js.native
+    var project: String
     
     /**
       * Custom status code to return on verification error.
       * @public
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object ActionsSdkVerification {
     
@@ -216,7 +250,7 @@ object actionssdkActionssdkMod {
   trait ActionsSdk_ extends StObject {
     
     /** @public */
-    def apply[Conversation /* <: ActionsSdkConversation[js.Object, js.Object] */](): AppHandler with (ActionsSdkApp[js.Object, js.Object, Conversation]) = js.native
-    def apply[Conversation /* <: ActionsSdkConversation[js.Object, js.Object] */](options: ActionsSdkOptions[js.Object, js.Object]): AppHandler with (ActionsSdkApp[js.Object, js.Object, Conversation]) = js.native
+    def apply[Conversation /* <: ActionsSdkConversation[js.Object, js.Object] */](): AppHandler & (ActionsSdkApp[js.Object, js.Object, Conversation]) = js.native
+    def apply[Conversation /* <: ActionsSdkConversation[js.Object, js.Object] */](options: ActionsSdkOptions[js.Object, js.Object]): AppHandler & (ActionsSdkApp[js.Object, js.Object, Conversation]) = js.native
   }
 }

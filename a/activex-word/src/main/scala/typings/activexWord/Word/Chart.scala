@@ -4,7 +4,6 @@ import typings.activexOffice.Office.MsoChartElementType
 import typings.activexOffice.Office.XlChartType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -92,9 +91,9 @@ trait Chart extends StObject {
   def ColumnGroups(Index: js.Any): js.Any = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Copy(Before: js.Any): Unit = js.native
   def Copy(Before: js.Any, After: js.Any): Unit = js.native
+  def Copy(Before: Unit, After: js.Any): Unit = js.native
   
   /**
     * @param Word.XlPictureAppearance [Appearance=1]
@@ -102,15 +101,11 @@ trait Chart extends StObject {
     * @param Word.XlPictureAppearance [Size=2]
     */
   def CopyPicture(): Unit = js.native
-  def CopyPicture(
-    Appearance: js.UndefOr[scala.Nothing],
-    Format: js.UndefOr[scala.Nothing],
-    Size: XlPictureAppearance
-  ): Unit = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): Unit = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: Unit, Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance): Unit = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: js.UndefOr[scala.Nothing], Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: Unit, Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   
@@ -132,9 +127,9 @@ trait Chart extends StObject {
   var Elevation: Double = js.native
   
   def Export(FileName: String): Boolean = js.native
-  def Export(FileName: String, FilterName: js.UndefOr[scala.Nothing], Interactive: js.Any): Boolean = js.native
   def Export(FileName: String, FilterName: js.Any): Boolean = js.native
   def Export(FileName: String, FilterName: js.Any, Interactive: js.Any): Boolean = js.native
+  def Export(FileName: String, FilterName: Unit, Interactive: js.Any): Boolean = js.native
   
   val Floor: typings.activexWord.Word.Floor = js.native
   
@@ -143,9 +138,9 @@ trait Chart extends StObject {
   def GetChartElement(x: Double, y: Double, ElementID: Double, Arg1: Double, Arg2: Double): Unit = js.native
   
   def HasAxis(): js.Any = js.native
-  def HasAxis(Index1: js.UndefOr[scala.Nothing], Index2: js.Any): js.Any = js.native
   def HasAxis(Index1: js.Any): js.Any = js.native
   def HasAxis(Index1: js.Any, Index2: js.Any): js.Any = js.native
+  def HasAxis(Index1: Unit, Index2: js.Any): js.Any = js.native
   
   var HasDataTable: Boolean = js.native
   

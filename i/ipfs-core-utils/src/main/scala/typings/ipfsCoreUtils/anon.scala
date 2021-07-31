@@ -3,17 +3,15 @@ package typings.ipfsCoreUtils
 import typings.cids.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
   }
   object Base {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cid extends StObject {
     
-    var cid: ^ = js.native
+    var cid: ^
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Cid {
     

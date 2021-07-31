@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceAccessOutput extends StObject {
   
   /**
     * The connection information for a fleet instance, including IP address and access credentials.
     */
-  var InstanceAccess: js.UndefOr[typings.awsSdk.gameliftMod.InstanceAccess] = js.native
+  var InstanceAccess: js.UndefOr[typings.awsSdk.gameliftMod.InstanceAccess] = js.undefined
 }
 object GetInstanceAccessOutput {
   

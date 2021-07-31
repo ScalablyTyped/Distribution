@@ -5,41 +5,39 @@ import typings.headroom.anon.Down
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadroomOptions extends StObject {
   
   /** css classes to apply multiple classes are also supported with a space-separated list */
-  var classes: js.UndefOr[Bottom] = js.native
+  var classes: js.UndefOr[Bottom] = js.undefined
   
   /** vertical offset in px before element is first unpinned */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** callback when at bottom of page, `this` is headroom object */
-  var onBottom: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** callback when moving away from bottom of page, `this` is headroom object */
-  var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.native
+  var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** callback when below offset, `this` is headroom object */
-  var onNotTop: js.UndefOr[js.Function0[Unit]] = js.native
+  var onNotTop: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** callback when pinned, `this` is headroom object */
-  var onPin: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPin: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** callback when above offset, `this` is headroom object */
-  var onTop: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTop: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** callback when unpinned, `this` is headroom object */
-  var onUnpin: js.UndefOr[js.Function0[Unit]] = js.native
+  var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** element to listen to scroll events on, defaults to `window` */
-  var scroller: js.UndefOr[HTMLElement] = js.native
+  var scroller: js.UndefOr[HTMLElement] = js.undefined
   
   /** scroll tolerance in px before state changes or you can specify tolerance individually for up/down scroll */
-  var tolerance: js.UndefOr[Down | Double] = js.native
+  var tolerance: js.UndefOr[Down | Double] = js.undefined
 }
 object HeadroomOptions {
   

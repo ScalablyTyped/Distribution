@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackTrigger extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rollback trigger. If a specified trigger is missing, the entire stack operation fails and is rolled back. 
     */
-  var Arn: typings.awsSdk.cloudformationMod.Arn = js.native
+  var Arn: typings.awsSdk.cloudformationMod.Arn
   
   /**
     * The resource type of the rollback trigger. Currently, AWS::CloudWatch::Alarm is the only supported resource type.
     */
-  var Type: typings.awsSdk.cloudformationMod.Type = js.native
+  var Type: typings.awsSdk.cloudformationMod.Type
 }
 object RollbackTrigger {
   

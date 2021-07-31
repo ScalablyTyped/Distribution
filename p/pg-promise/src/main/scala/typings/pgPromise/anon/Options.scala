@@ -4,17 +4,15 @@ import typings.pgPromise.mod.IFormattingOptions
 import typings.pgPromise.mod.QueryFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var options: js.UndefOr[IFormattingOptions] = js.native
+  var options: js.UndefOr[IFormattingOptions] = js.undefined
   
-  var query: String | QueryFile = js.native
+  var query: String | QueryFile
   
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object Options {
   

@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "EmbeddedViewRef")
@@ -17,5 +16,5 @@ abstract class EmbeddedViewRef[C] () extends ViewRef {
   /**
     * The root nodes for this embedded view.
     */
-  def rootNodes: js.Array[_] = js.native
+  def rootNodes: js.Array[js.Any] = js.native
 }

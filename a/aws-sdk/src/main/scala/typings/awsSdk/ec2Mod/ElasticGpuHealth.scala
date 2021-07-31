@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticGpuHealth extends StObject {
   
   /**
     * The health status.
     */
-  var Status: js.UndefOr[ElasticGpuStatus] = js.native
+  var Status: js.UndefOr[ElasticGpuStatus] = js.undefined
 }
 object ElasticGpuHealth {
   

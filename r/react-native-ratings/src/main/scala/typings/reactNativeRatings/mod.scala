@@ -11,7 +11,6 @@ import typings.reactNativeRatings.reactNativeRatingsStrings.rocket
 import typings.reactNativeRatings.reactNativeRatingsStrings.star
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,7 +39,6 @@ object mod {
     def this(props: RatingProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AirbnbRatingProps extends StObject {
     
     /**
@@ -48,26 +46,26 @@ object mod {
       *
       * Default is 5
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Initial value for the rating
       *
       * Default is 3
       */
-    var defaultRating: js.UndefOr[Double] = js.native
+    var defaultRating: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the rating can be modiefied by the user
       *
       * Default is false
       */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback method when the user finishes rating. Gives you the final rating value as a whole number
       */
-    var onFinishRating: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onFinishRating: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Labels to show when each value is tapped
@@ -76,35 +74,35 @@ object mod {
       *
       * Default is ['Terrible', 'Bad', 'Okay', 'Good', 'Great']
       */
-    var reviews: js.UndefOr[js.Array[String]] = js.native
+    var reviews: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Color value for filled stars.
       *
       * Default is #004666
       */
-    var selectedColor: js.UndefOr[String] = js.native
+    var selectedColor: js.UndefOr[String] = js.undefined
     
     /**
       * Determines if to show the reviews above the rating
       *
       * Default is true
       */
-    var showRating: js.UndefOr[Boolean] = js.native
+    var showRating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Size of rating image
       *
       * Default is 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * Style for star image component
       *
       * Default is true
       */
-    var starStyle: js.UndefOr[ImageStyle] = js.native
+    var starStyle: js.UndefOr[ImageStyle] = js.undefined
   }
   object AirbnbRatingProps {
     
@@ -176,106 +174,105 @@ object mod {
     }
   }
   
-  @js.native
   trait RatingProps extends StObject {
     
     /**
       * The number of decimal places for the rating value; must be between 0 and 20
       */
-    var fractions: js.UndefOr[Double] = js.native
+    var fractions: js.UndefOr[Double] = js.undefined
     
     /**
       * The size of each rating image
       *
       * Default is 50
       */
-    var imageSize: js.UndefOr[Double] = js.native
+    var imageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum value the user can select
       *
       * Default is 0
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback method when the user finishes rating. Gives you the final rating value as a whole number
       */
-    var onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.native
+    var onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.undefined
     
     /**
       * Callback method when the user starts rating.
       */
-    var onStartRating: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStartRating: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Pass in a custom background-fill-color for the rating icon; use this along with type='custom' prop above
       *
       * Default is 'white'
       */
-    var ratingBackgroundColor: js.UndefOr[String] = js.native
+    var ratingBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Pass in a custom fill-color for the rating icon; use this along with type='custom' prop above
       *
       * Default is '#f1c40f'
       */
-    var ratingColor: js.UndefOr[String] = js.native
+    var ratingColor: js.UndefOr[String] = js.undefined
     
     /**
       * Number of rating images to display
       *
       * Default is 5
       */
-    var ratingCount: js.UndefOr[Double] = js.native
+    var ratingCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Pass in a custom image source; use this along with type='custom' prop above
       */
-    var ratingImage: js.UndefOr[ImageURISource] = js.native
+    var ratingImage: js.UndefOr[ImageURISource] = js.undefined
     
     /**
       * Color used for the text labels
       */
-    var ratingTextColor: js.UndefOr[String] = js.native
+    var ratingTextColor: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the rating can be modiefied by the user
       *
       * Default is false
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Displays the Built-in Rating UI to show the rating value in real-time
       *
       * Default is false
       */
-    var showRating: js.UndefOr[Boolean] = js.native
+    var showRating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial rating to render
       *
       * Default is ratingCount/2
       */
-    var startingValue: js.UndefOr[Double] = js.native
+    var startingValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Exposes style prop to add additonal styling to the container view
       */
-    var style: js.UndefOr[Requireable[js.Object]] = js.native
+    var style: js.UndefOr[Requireable[js.Object]] = js.undefined
     
     /**
       * Color used for the background
       */
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
     /**
       * Graphic used for represent a rating
       *
       * Default is 'star'
       */
-    var `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.native
+    var `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.undefined
   }
   object RatingProps {
     

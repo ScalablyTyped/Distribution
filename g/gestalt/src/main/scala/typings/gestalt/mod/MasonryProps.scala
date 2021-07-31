@@ -7,37 +7,35 @@ import typings.react.mod.ComponentType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MasonryProps[T] extends StObject {
   
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var comp: ComponentType[Data[T]] = js.native
+  var comp: ComponentType[Data[T]]
   
-  var flexible: js.UndefOr[Boolean] = js.native
+  var flexible: js.UndefOr[Boolean] = js.undefined
   
-  var gutterWidth: js.UndefOr[Double] = js.native
+  var gutterWidth: js.UndefOr[Double] = js.undefined
   
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
-  var layout: js.UndefOr[MasonryDefaultLayout | MasonryUniformRowLayout] = js.native
+  var layout: js.UndefOr[MasonryDefaultLayout | MasonryUniformRowLayout] = js.undefined
   
-  var loadItems: js.UndefOr[js.Function0[Unit]] = js.native
+  var loadItems: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var measurementStore: js.UndefOr[js.Any] = js.native
+  var measurementStore: js.UndefOr[js.Any] = js.undefined
   
-  var minCols: js.UndefOr[Double] = js.native
+  var minCols: js.UndefOr[Double] = js.undefined
   
-  var scrollContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var scrollContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
-  var virtualBoundsBottom: js.UndefOr[Double] = js.native
+  var virtualBoundsBottom: js.UndefOr[Double] = js.undefined
   
-  var virtualBoundsTop: js.UndefOr[Double] = js.native
+  var virtualBoundsTop: js.UndefOr[Double] = js.undefined
   
-  var virtualize: js.UndefOr[Boolean] = js.native
+  var virtualize: js.UndefOr[Boolean] = js.undefined
 }
 object MasonryProps {
   
@@ -48,7 +46,7 @@ object MasonryProps {
   }
   
   @scala.inline
-  implicit class MasonryPropsMutableBuilder[Self <: MasonryProps[_], T] (val x: Self with MasonryProps[T]) extends AnyVal {
+  implicit class MasonryPropsMutableBuilder[Self <: MasonryProps[?], T] (val x: Self & MasonryProps[T]) extends AnyVal {
     
     @scala.inline
     def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])

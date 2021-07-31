@@ -3,7 +3,6 @@ package typings.reactLoadingIndicator
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,19 +14,18 @@ object mod {
   
   type LoadingIndicator = PureComponent[LoadingIndicatorProps, js.Object, js.Any]
   
-  @js.native
   trait LoadingIndicatorColor extends StObject {
     
     // value between 0 and 255, inclusive
-    var alpha: Double = js.native
+    var alpha: Double
     
     // value between 0 and 255, inclusive
-    var blue: Double = js.native
+    var blue: Double
     
     // value between 0 and 255, inclusive
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object LoadingIndicatorColor {
     
@@ -54,7 +52,6 @@ object mod {
     }
   }
   
-  @js.native
   trait LoadingIndicatorProps extends StObject {
     
     /*
@@ -63,7 +60,7 @@ object mod {
       The first three color components are values between 0 and 255, inclusive.
       The alpha component is a value between 0 and 1, inclusive.
       */
-    var color: js.UndefOr[LoadingIndicatorColor] = js.native
+    var color: js.UndefOr[LoadingIndicatorColor] = js.undefined
     
     /*
       The number of steps between segments from the boldest segment to the faintest segments.
@@ -71,7 +68,7 @@ object mod {
       multiplied by fadeTo.
       If fadeSteps is a lower value, then several of the last segments will all have the faintest opacity.
       */
-    var fadeSteps: js.UndefOr[Double] = js.native
+    var fadeSteps: js.UndefOr[Double] = js.undefined
     
     // Extra spacing to pad the distance between the center of the loading indicator and each segment, in logical pixels.
     /*
@@ -80,18 +77,18 @@ object mod {
       prop by a gradually decreasing alpha multiplier that starts at 1 and linearly
       decreases to the fadeTo prop.
       */
-    var fadeTo: js.UndefOr[Double] = js.native
+    var fadeTo: js.UndefOr[Double] = js.undefined
     
     // The width of each segment, in logical pixels.
-    var segmentLength: js.UndefOr[Double] = js.native
+    var segmentLength: js.UndefOr[Double] = js.undefined
     
     // The number of segments, evenly spaced from each other.
-    var segmentWidth: js.UndefOr[Double] = js.native
+    var segmentWidth: js.UndefOr[Double] = js.undefined
     
-    var segments: js.UndefOr[Double] = js.native
+    var segments: js.UndefOr[Double] = js.undefined
     
     // The length of each segment, in logical pixels.
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
   }
   object LoadingIndicatorProps {
     

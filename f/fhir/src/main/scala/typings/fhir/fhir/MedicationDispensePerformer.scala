@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who performed event
   */
-@js.native
-trait MedicationDispensePerformer extends BackboneElement {
+trait MedicationDispensePerformer
+  extends StObject
+     with BackboneElement {
   
   /**
     * Individual who was performing
     */
-  var actor: Reference = js.native
+  var actor: Reference
   
   /**
     * Organization organization was acting for
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.native
+  var onBehalfOf: js.UndefOr[Reference] = js.undefined
 }
 object MedicationDispensePerformer {
   

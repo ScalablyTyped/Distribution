@@ -2,37 +2,35 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Post extends StObject {
   
-  var glyphNameIndex: js.UndefOr[js.Array[Double]] = js.native
+  var glyphNameIndex: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var isFixedPitch: Double = js.native
+  var isFixedPitch: Double
   
-  var italicAngle: Double = js.native
+  var italicAngle: Double
   
-  var maxMemType1: Double = js.native
+  var maxMemType1: Double
   
-  var maxMemType42: Double = js.native
+  var maxMemType42: Double
   
-  var minMemType1: Double = js.native
+  var minMemType1: Double
   
-  var minMemType42: Double = js.native
+  var minMemType42: Double
   
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
   
-  var numberOfGlyphs: js.UndefOr[Double] = js.native
+  var numberOfGlyphs: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var underlinePosition: Double = js.native
+  var underlinePosition: Double
   
-  var underlineThickness: Double = js.native
+  var underlineThickness: Double
   
-  var version: Double = js.native
+  var version: Double
 }
 object Post {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Timeline$Attachments")
@@ -31,7 +30,7 @@ class ResourceTimelineAttachments protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTimelineAttachmentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTimelineAttachmentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -62,7 +61,7 @@ class ResourceTimelineAttachments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAttachment] = js.native
   def get(callback: BodyResponseCallback[SchemaAttachment]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAttachment] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAttachment] = js.native
   def get(params: ParamsResourceTimelineAttachmentsGet): GaxiosPromise[SchemaAttachment] = js.native
   def get(params: ParamsResourceTimelineAttachmentsGet, callback: BodyResponseCallback[SchemaAttachment]): Unit = js.native
   def get(
@@ -94,7 +93,7 @@ class ResourceTimelineAttachments protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAttachment] = js.native
   def insert(callback: BodyResponseCallback[SchemaAttachment]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAttachment] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAttachment] = js.native
   def insert(params: ParamsResourceTimelineAttachmentsInsert): GaxiosPromise[SchemaAttachment] = js.native
   def insert(params: ParamsResourceTimelineAttachmentsInsert, callback: BodyResponseCallback[SchemaAttachment]): Unit = js.native
   def insert(
@@ -123,7 +122,7 @@ class ResourceTimelineAttachments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAttachmentsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAttachmentsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAttachmentsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAttachmentsListResponse] = js.native
   def list(params: ParamsResourceTimelineAttachmentsList): GaxiosPromise[SchemaAttachmentsListResponse] = js.native
   def list(
     params: ParamsResourceTimelineAttachmentsList,

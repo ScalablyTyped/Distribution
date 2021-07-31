@@ -3,22 +3,22 @@ package typings.sequelize.mod
 import typings.sequelize.sequelizeStrings.`primary key`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddPrimaryKeyConstraintOptions extends AddConstraintOptions {
+trait AddPrimaryKeyConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: `primary key` = js.native
+  var `type`: `primary key`
 }
 object AddPrimaryKeyConstraintOptions {
   
   @scala.inline
-  def apply(`type`: `primary key`): AddPrimaryKeyConstraintOptions = {
+  def apply(): AddPrimaryKeyConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("primary key")
     __obj.asInstanceOf[AddPrimaryKeyConstraintOptions]
   }
   

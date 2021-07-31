@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Projects$Serviceaccount")
@@ -85,7 +84,7 @@ class ResourceProjectsServiceaccount protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(params: ParamsResourceProjectsServiceaccountGet): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(
     params: ParamsResourceProjectsServiceaccountGet,

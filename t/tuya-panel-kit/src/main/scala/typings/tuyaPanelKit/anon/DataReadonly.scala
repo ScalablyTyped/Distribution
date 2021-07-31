@@ -2,13 +2,11 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataReadonly[Data] extends StObject {
   
-  val data: Data = js.native
+  val data: Data
 }
 object DataReadonly {
   
@@ -19,7 +17,7 @@ object DataReadonly {
   }
   
   @scala.inline
-  implicit class DataReadonlyMutableBuilder[Self <: DataReadonly[_], Data] (val x: Self with DataReadonly[Data]) extends AnyVal {
+  implicit class DataReadonlyMutableBuilder[Self <: DataReadonly[?], Data] (val x: Self & DataReadonly[Data]) extends AnyVal {
     
     @scala.inline
     def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

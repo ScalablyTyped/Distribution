@@ -9,7 +9,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -24,16 +23,14 @@ object iconMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.add")
-    @js.native
+    @scala.inline
     def add(
       icons: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)*
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /* static member */
     @JSImport("@ant-design/icons-react/lib/components/Icon", "default.definitions")
@@ -56,58 +53,59 @@ object iconMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.get")
-    @js.native
+    @scala.inline
     def get(): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.get")
-    @js.native
-    def get(key: js.UndefOr[scala.Nothing], colors: TwoToneColorPalette): js.UndefOr[
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.get")
-    @js.native
+      ]]
+    @scala.inline
     def get(key: String): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.get")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
+    @scala.inline
     def get(key: String, colors: TwoToneColorPalette): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
+    @scala.inline
+    def get(key: Unit, colors: TwoToneColorPalette): js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.getTwoToneColors")
-    @js.native
-    def getTwoToneColors(): TwoToneColorPalette = js.native
+    @scala.inline
+    def getTwoToneColors(): TwoToneColorPalette = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColors")().asInstanceOf[TwoToneColorPalette]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib/components/Icon", "default.setTwoToneColors")
-    @js.native
-    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native
+    @scala.inline
+    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColors")(hasPrimaryColorSecondaryColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
   trait Icon
     extends Component[IconProps, js.Object, js.Any]
   
-  @js.native
   trait IconProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var focusable: js.UndefOr[String] = js.native
+    var focusable: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any) = js.native
+    var `type`: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)
   }
   object IconProps {
     
@@ -166,11 +164,12 @@ object iconMod {
     }
   }
   
-  @js.native
-  trait TwoToneColorPalette extends TwoToneColorPaletteSetter {
+  trait TwoToneColorPalette
+    extends StObject
+       with TwoToneColorPaletteSetter {
     
     @JSName("secondaryColor")
-    var secondaryColor_TwoToneColorPalette: String = js.native
+    var secondaryColor_TwoToneColorPalette: String
   }
   object TwoToneColorPalette {
     
@@ -188,12 +187,11 @@ object iconMod {
     }
   }
   
-  @js.native
   trait TwoToneColorPaletteSetter extends StObject {
     
-    var primaryColor: String = js.native
+    var primaryColor: String
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
   }
   object TwoToneColorPaletteSetter {
     

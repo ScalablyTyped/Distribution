@@ -16,7 +16,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod extends Shortcut {
@@ -25,23 +24,24 @@ object tagMod extends Shortcut {
   @js.native
   val default: TagType = js.native
   
-  @js.native
-  trait TagProps extends HTMLAttributes[HTMLSpanElement] {
+  trait TagProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
     @JSName("color")
-    var color_TagProps: js.UndefOr[LiteralUnion[PresetColorType | PresetStatusColorType, String]] = js.native
+    var color_TagProps: js.UndefOr[LiteralUnion[PresetColorType | PresetStatusColorType, String]] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object TagProps {
     
@@ -99,7 +99,9 @@ object tagMod extends Shortcut {
   }
   
   @js.native
-  trait TagType extends ForwardRefExoticComponent[TagProps with RefAttributes[HTMLElement]] {
+  trait TagType
+    extends StObject
+       with ForwardRefExoticComponent[TagProps & RefAttributes[HTMLElement]] {
     
     var CheckableTag: FC[CheckableTagProps] = js.native
   }

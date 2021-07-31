@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqsAction extends StObject {
   
   /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
     */
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
   
   /**
     * The URL of the SQS queue where the data is written.
     */
-  var queueUrl: QueueUrl = js.native
+  var queueUrl: QueueUrl
   
   /**
     * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
     */
-  var useBase64: js.UndefOr[UseBase64] = js.native
+  var useBase64: js.UndefOr[UseBase64] = js.undefined
 }
 object SqsAction {
   

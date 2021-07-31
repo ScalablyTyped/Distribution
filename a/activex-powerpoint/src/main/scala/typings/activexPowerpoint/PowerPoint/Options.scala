@@ -3,20 +3,18 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var DisplayPasteOptions: MsoTriState = js.native
+  var DisplayPasteOptions: MsoTriState
   
-  var DoNotPromptForConvert: MsoTriState = js.native
+  var DoNotPromptForConvert: MsoTriState
   
   @JSName("PowerPoint.Options_typekey")
-  var PowerPointDotOptions_typekey: Options = js.native
+  var PowerPointDotOptions_typekey: Options
   
-  var ShowCoauthoringMergeChanges: Boolean = js.native
+  var ShowCoauthoringMergeChanges: Boolean
 }
 object Options {
   

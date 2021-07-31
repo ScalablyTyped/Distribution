@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects$Events")
@@ -37,7 +36,7 @@ class ResourceProjectsEvents protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListEventsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListEventsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(params: ParamsResourceProjectsEventsList): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(params: ParamsResourceProjectsEventsList, callback: BodyResponseCallback[SchemaListEventsResponse]): Unit = js.native
   def list(
@@ -72,7 +71,7 @@ class ResourceProjectsEvents protected () extends StObject {
     */
   def report(): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(callback: BodyResponseCallback[SchemaReportErrorEventResponse]): Unit = js.native
-  def report(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
+  def report(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(params: ParamsResourceProjectsEventsReport): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(
     params: ParamsResourceProjectsEventsReport,

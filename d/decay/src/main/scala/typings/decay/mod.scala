@@ -3,31 +3,28 @@ package typings.decay
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("decay", "hackerHot")
+  @JSImport("decay", JSImport.Namespace)
   @js.native
-  def hackerHot(): HackerNewsHotFunction = js.native
-  @JSImport("decay", "hackerHot")
-  @js.native
-  def hackerHot(gravity: Double): HackerNewsHotFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("decay", "redditHot")
-  @js.native
-  def redditHot(): RedditHotFunction = js.native
-  @JSImport("decay", "redditHot")
-  @js.native
-  def redditHot(decay: Double): RedditHotFunction = js.native
+  @scala.inline
+  def hackerHot(): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")().asInstanceOf[HackerNewsHotFunction]
+  @scala.inline
+  def hackerHot(gravity: Double): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")(gravity.asInstanceOf[js.Any]).asInstanceOf[HackerNewsHotFunction]
   
-  @JSImport("decay", "wilsonScore")
-  @js.native
-  def wilsonScore(): WilsonScoreFunction = js.native
-  @JSImport("decay", "wilsonScore")
-  @js.native
-  def wilsonScore(confidence: Double): WilsonScoreFunction = js.native
+  @scala.inline
+  def redditHot(): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")().asInstanceOf[RedditHotFunction]
+  @scala.inline
+  def redditHot(decay: Double): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")(decay.asInstanceOf[js.Any]).asInstanceOf[RedditHotFunction]
+  
+  @scala.inline
+  def wilsonScore(): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")().asInstanceOf[WilsonScoreFunction]
+  @scala.inline
+  def wilsonScore(confidence: Double): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")(confidence.asInstanceOf[js.Any]).asInstanceOf[WilsonScoreFunction]
   
   type HackerNewsHotFunction = js.Function2[/* votes */ Double, /* date */ Date, Double]
   

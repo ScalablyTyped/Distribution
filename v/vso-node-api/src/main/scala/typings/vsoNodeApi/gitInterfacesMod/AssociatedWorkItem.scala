@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatedWorkItem extends StObject {
   
-  var assignedTo: String = js.native
+  var assignedTo: String
   
   /**
     * Id of associated the work item.
     */
-  var id: Double = js.native
+  var id: Double
   
-  var state: String = js.native
+  var state: String
   
-  var title: String = js.native
+  var title: String
   
   /**
     * REST Url of the work item.
     */
-  var url: String = js.native
+  var url: String
   
-  var webUrl: String = js.native
+  var webUrl: String
   
-  var workItemType: String = js.native
+  var workItemType: String
 }
 object AssociatedWorkItem {
   

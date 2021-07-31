@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure is used as the type of interface attributes corresponding to instances of {@link com.sun.star.beans.Property} that have the {@link
   * com.sun.star.beans.PropertyAttribute.MAYBEAMBIGUOUS} .
   */
-@js.native
 trait Ambiguous[T] extends StObject {
   
   /** Marks this structure instance as ambiguous. */
-  var IsAmbiguous: Boolean = js.native
+  var IsAmbiguous: Boolean
   
   /**
     * The underlying value of this structure instance.
@@ -23,7 +21,7 @@ trait Ambiguous[T] extends StObject {
     * Even if this structure instance is ambiguous, this member should contain a useful value. If there is no useful value for an ambiguous structure
     * instance, com::sun::star::beans::Optional can be used as the type of this member.
     */
-  var Value: T = js.native
+  var Value: T
 }
 object Ambiguous {
   
@@ -34,7 +32,7 @@ object Ambiguous {
   }
   
   @scala.inline
-  implicit class AmbiguousMutableBuilder[Self <: Ambiguous[_], T] (val x: Self with Ambiguous[T]) extends AnyVal {
+  implicit class AmbiguousMutableBuilder[Self <: Ambiguous[?], T] (val x: Self & Ambiguous[T]) extends AnyVal {
     
     @scala.inline
     def setIsAmbiguous(value: Boolean): Self = StObject.set(x, "IsAmbiguous", value.asInstanceOf[js.Any])

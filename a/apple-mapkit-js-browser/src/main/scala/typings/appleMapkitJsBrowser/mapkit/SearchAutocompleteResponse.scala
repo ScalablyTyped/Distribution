@@ -2,24 +2,22 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing the response from an autocomplete request.
   */
-@js.native
 trait SearchAutocompleteResponse extends StObject {
   
   /**
     * The query string used to perform the autocomplete request.
     */
-  var query: String = js.native
+  var query: String
   
   /**
     * The results from an autocomplete request.
     */
-  var results: js.Array[SearchAutocompleteResult] = js.native
+  var results: js.Array[SearchAutocompleteResult]
 }
 object SearchAutocompleteResponse {
   

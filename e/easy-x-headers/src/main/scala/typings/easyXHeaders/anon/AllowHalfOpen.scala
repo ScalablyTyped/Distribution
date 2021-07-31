@@ -2,17 +2,15 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowHalfOpen extends StObject {
   
-  var allowHalfOpen: js.UndefOr[Boolean] = js.native
+  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   
-  var fd: js.UndefOr[String] = js.native
+  var fd: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AllowHalfOpen {
   

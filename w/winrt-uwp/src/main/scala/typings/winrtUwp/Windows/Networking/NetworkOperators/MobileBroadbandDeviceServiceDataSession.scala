@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.datareceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a device service data session which allows the caller to write data to the modem on a mobile broadband device service. */
 @js.native
 trait MobileBroadbandDeviceServiceDataSession extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datareceived(
     `type`: datareceived,
@@ -30,7 +29,7 @@ trait MobileBroadbandDeviceServiceDataSession extends StObject {
   
   /** An event that indicates that data was received on the MobileBroadbandDeviceServiceDataSession object after the WriteDataAsync method was called. */
   def ondatareceived(
-    ev: MobileBroadbandDeviceServiceDataReceivedEventArgs with WinRTEvent[MobileBroadbandDeviceServiceDataSession]
+    ev: MobileBroadbandDeviceServiceDataReceivedEventArgs & WinRTEvent[MobileBroadbandDeviceServiceDataSession]
   ): Unit = js.native
   /** An event that indicates that data was received on the MobileBroadbandDeviceServiceDataSession object after the WriteDataAsync method was called. */
   @JSName("ondatareceived")
@@ -39,7 +38,7 @@ trait MobileBroadbandDeviceServiceDataSession extends StObject {
     MobileBroadbandDeviceServiceDataReceivedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datareceived(
     `type`: datareceived,

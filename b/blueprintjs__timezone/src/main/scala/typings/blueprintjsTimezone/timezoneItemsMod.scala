@@ -4,40 +4,39 @@ import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timezoneItemsMod {
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneItems", "getInitialTimezoneItems")
+  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneItems", JSImport.Namespace)
   @js.native
-  def getInitialTimezoneItems(date: Date, includeLocalTimezone: Boolean): js.Array[ITimezoneItem] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneItems", "getLocalTimezoneItem")
-  @js.native
-  def getLocalTimezoneItem(date: Date): js.UndefOr[ITimezoneItem] = js.native
+  @scala.inline
+  def getInitialTimezoneItems(date: Date, includeLocalTimezone: Boolean): js.Array[ITimezoneItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialTimezoneItems")(date.asInstanceOf[js.Any], includeLocalTimezone.asInstanceOf[js.Any])).asInstanceOf[js.Array[ITimezoneItem]]
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneItems", "getTimezoneItems")
-  @js.native
-  def getTimezoneItems(date: Date): js.Array[ITimezoneItem] = js.native
+  @scala.inline
+  def getLocalTimezoneItem(date: Date): js.UndefOr[ITimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimezoneItem")(date.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ITimezoneItem]]
   
-  @js.native
+  @scala.inline
+  def getTimezoneItems(date: Date): js.Array[ITimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneItems")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[ITimezoneItem]]
+  
   trait ITimezoneItem extends StObject {
     
     /** Optional icon for the timezone. */
-    var iconName: js.UndefOr[IconName] = js.native
+    var iconName: js.UndefOr[IconName] = js.undefined
     
     /** Key to be used as the rendered react key. */
-    var key: String = js.native
+    var key: String
     
     /** Label for the timezone. */
-    var label: String = js.native
+    var label: String
     
     /** Text for the timezone. */
-    var text: String = js.native
+    var text: String
     
     /** The actual timezone. */
-    var timezone: String = js.native
+    var timezone: String
   }
   object ITimezoneItem {
     

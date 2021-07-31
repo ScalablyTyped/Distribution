@@ -11,8 +11,8 @@ Tile rendering library for node
 | Full name          | mapnik |
 | Keywords           | map, graphics, canvas, tile, mapnik, carto |
 | # releases         | 11 |
-| # dependents       | 56 |
-| # downloads        | 126745 |
+| # dependents       | 57 |
+| # downloads        | 134533 |
 | # stars            | 7 |
 
 ## Links

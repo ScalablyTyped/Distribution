@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketObjectLockConfiguration extends StObject {
   
   /**
     * Indicates whether this bucket has an Object Lock configuration enabled. Valid value is `Enabled`.
     */
-  var objectLockEnabled: Input[String] = js.native
+  var objectLockEnabled: Input[String]
   
   /**
     * The Object Lock rule in place for this bucket.
     */
-  var rule: js.UndefOr[Input[BucketObjectLockConfigurationRule]] = js.native
+  var rule: js.UndefOr[Input[BucketObjectLockConfigurationRule]] = js.undefined
 }
 object BucketObjectLockConfiguration {
   

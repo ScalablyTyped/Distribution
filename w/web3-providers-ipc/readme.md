@@ -10,9 +10,9 @@ Module to handle web3 RPC connections over IPC sockets.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-ipc |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 4 |
-| # downloads        | 5567084 |
+| # releases         | 27 |
+| # dependents       | 8 |
+| # downloads        | 6858569 |
 | # stars            | 0 |
 
 ## Links

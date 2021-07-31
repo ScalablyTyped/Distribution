@@ -14,7 +14,6 @@ import typings.reactImgpro.reactImgproStrings.vertical_middle
 import typings.reactImgpro.reactImgproStrings.vertical_top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,68 +53,67 @@ object mod {
     
     type ProcessImage = Component[ProcessImageProps, js.Object, js.Any]
     
-    @js.native
     trait ProcessImageProps extends StObject {
       
       /* should be 0 - 1 */
-      var blur: js.UndefOr[Double] = js.native
+      var blur: js.UndefOr[Double] = js.undefined
       
-      var brightness: js.UndefOr[Double] = js.native
+      var brightness: js.UndefOr[Double] = js.undefined
       
-      var colors: js.UndefOr[Blue] = js.native
+      var colors: js.UndefOr[Blue] = js.undefined
       
-      var contain: js.UndefOr[Size] = js.native
+      var contain: js.UndefOr[Size] = js.undefined
       
       /* should be -1 to 1 */
-      var contrast: js.UndefOr[Double] = js.native
+      var contrast: js.UndefOr[Double] = js.undefined
       
       /* should be 0 - 100 */
-      var cover: js.UndefOr[Size] = js.native
+      var cover: js.UndefOr[Size] = js.undefined
       
-      var customCdn: js.UndefOr[String] = js.native
+      var customCdn: js.UndefOr[String] = js.undefined
       
-      var disableRerender: js.UndefOr[Boolean] = js.native
+      var disableRerender: js.UndefOr[Boolean] = js.undefined
       
-      var disableWebWorker: js.UndefOr[Boolean] = js.native
+      var disableWebWorker: js.UndefOr[Boolean] = js.undefined
       
-      var dither565: js.UndefOr[Boolean] = js.native
+      var dither565: js.UndefOr[Boolean] = js.undefined
       
       /* should be -1 to 1 */
-      var fade: js.UndefOr[Double] = js.native
+      var fade: js.UndefOr[Double] = js.undefined
       
-      var flip: js.UndefOr[Horizontal] = js.native
+      var flip: js.UndefOr[Horizontal] = js.undefined
       
-      var greyscale: js.UndefOr[Boolean] = js.native
+      var greyscale: js.UndefOr[Boolean] = js.undefined
       
-      var image: String = js.native
+      var image: String
       
-      var invert: js.UndefOr[Boolean] = js.native
+      var invert: js.UndefOr[Boolean] = js.undefined
       
-      var normalize: js.UndefOr[Boolean] = js.native
+      var normalize: js.UndefOr[Boolean] = js.undefined
       
-      def onProcessFinish(): Unit = js.native
+      def onProcessFinish(): Unit
       
       /* should be 0 - 1 */
-      var opacity: js.UndefOr[Double] = js.native
+      var opacity: js.UndefOr[Double] = js.undefined
       
-      var opaque: js.UndefOr[Boolean] = js.native
+      var opaque: js.UndefOr[Boolean] = js.undefined
       
       /* should be 0 - 100 */
-      var posterize: js.UndefOr[Double] = js.native
+      var posterize: js.UndefOr[Double] = js.undefined
       
-      var quality: js.UndefOr[Double] = js.native
+      var quality: js.UndefOr[Double] = js.undefined
       
-      var resize: js.UndefOr[Shape] = js.native
+      var resize: js.UndefOr[Shape] = js.undefined
       
-      var rotate: js.UndefOr[Degree] = js.native
+      var rotate: js.UndefOr[Degree] = js.undefined
       
-      var scale: js.UndefOr[Boolean] = js.native
+      var scale: js.UndefOr[Boolean] = js.undefined
       
-      var scaleToFitImage: js.UndefOr[Height] = js.native
+      var scaleToFitImage: js.UndefOr[Height] = js.undefined
       
-      var sepia: js.UndefOr[Boolean] = js.native
+      var sepia: js.UndefOr[Boolean] = js.undefined
       
-      var storage: js.UndefOr[Boolean] = js.native
+      var storage: js.UndefOr[Boolean] = js.undefined
     }
     object ProcessImageProps {
       
@@ -286,14 +284,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Shape extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var mode: js.UndefOr[Mode] = js.native
+      var mode: js.UndefOr[Mode] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Shape {
       
@@ -326,14 +323,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Size extends StObject {
       
-      var height: Double = js.native
+      var height: Double
       
-      var mode: horizontal_left | horizontal_center | horizontal_right | vertical_top | vertical_bottom | vertical_middle = js.native
+      var mode: horizontal_left | horizontal_center | horizontal_right | vertical_top | vertical_bottom | vertical_middle
       
-      var width: Double = js.native
+      var width: Double
     }
     object Size {
       

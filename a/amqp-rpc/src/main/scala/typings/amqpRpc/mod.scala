@@ -4,10 +4,13 @@ import typings.amqpRpc.anon.AutoDelete
 import typings.amqpRpc.anon.DefaultExchangeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("amqp-rpc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("amqp-rpc", "amqpRPC")
   @js.native
@@ -15,19 +18,13 @@ object mod {
     def this(opt: Options) = this()
     
     def call[T](cmd: String, params: T): String = js.native
-    def call[T](
-      cmd: String,
-      params: T,
-      cb: js.UndefOr[scala.Nothing],
-      context: js.UndefOr[scala.Nothing],
-      options: CallOptions
-    ): String = js.native
-    def call[T](cmd: String, params: T, cb: js.UndefOr[scala.Nothing], context: js.Any): String = js.native
-    def call[T](cmd: String, params: T, cb: js.UndefOr[scala.Nothing], context: js.Any, options: CallOptions): String = js.native
+    def call[T](cmd: String, params: T, cb: Unit, context: js.Any): String = js.native
+    def call[T](cmd: String, params: T, cb: Unit, context: js.Any, options: CallOptions): String = js.native
+    def call[T](cmd: String, params: T, cb: Unit, context: Unit, options: CallOptions): String = js.native
     def call[T](cmd: String, params: T, cb: Callback): String = js.native
-    def call[T](cmd: String, params: T, cb: Callback, context: js.UndefOr[scala.Nothing], options: CallOptions): String = js.native
     def call[T](cmd: String, params: T, cb: Callback, context: js.Any): String = js.native
     def call[T](cmd: String, params: T, cb: Callback, context: js.Any, options: CallOptions): String = js.native
+    def call[T](cmd: String, params: T, cb: Callback, context: Unit, options: CallOptions): String = js.native
     
     def callBroadcast[T](cmd: String, params: T): Unit = js.native
     def callBroadcast[T](cmd: String, params: T, options: BroadcastOptions): Unit = js.native
@@ -57,17 +54,6 @@ object mod {
           /* info */ js.UndefOr[CommandInfo], 
           Unit
         ],
-      context: js.UndefOr[scala.Nothing],
-      options: HandlerOptions
-    ): Boolean = js.native
-    def on[T](
-      cmd: String,
-      cb: js.Function3[
-          /* param */ js.UndefOr[T], 
-          /* cb */ js.UndefOr[Callback], 
-          /* info */ js.UndefOr[CommandInfo], 
-          Unit
-        ],
       context: js.Any
     ): Boolean = js.native
     def on[T](
@@ -81,11 +67,19 @@ object mod {
       context: js.Any,
       options: HandlerOptions
     ): Boolean = js.native
+    def on[T](
+      cmd: String,
+      cb: js.Function3[
+          /* param */ js.UndefOr[T], 
+          /* cb */ js.UndefOr[Callback], 
+          /* info */ js.UndefOr[CommandInfo], 
+          Unit
+        ],
+      context: Unit,
+      options: HandlerOptions
+    ): Boolean = js.native
     
     def onBroadcast[T](cmd: String): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], options: js.Any): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: js.UndefOr[scala.Nothing], context: js.Any): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: js.UndefOr[scala.Nothing], context: js.Any, options: js.Any): Boolean = js.native
     def onBroadcast[T](
       cmd: String,
       cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit]
@@ -93,12 +87,6 @@ object mod {
     def onBroadcast[T](
       cmd: String,
       cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
-      context: js.UndefOr[scala.Nothing],
-      options: js.Any
-    ): Boolean = js.native
-    def onBroadcast[T](
-      cmd: String,
-      cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
       context: js.Any
     ): Boolean = js.native
     def onBroadcast[T](
@@ -107,25 +95,31 @@ object mod {
       context: js.Any,
       options: js.Any
     ): Boolean = js.native
+    def onBroadcast[T](
+      cmd: String,
+      cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
+      context: Unit,
+      options: js.Any
+    ): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: js.Any): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: js.Any, options: js.Any): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: Unit, options: js.Any): Boolean = js.native
   }
   
-  @JSImport("amqp-rpc", "factory")
-  @js.native
-  def factory(): amqpRPC = js.native
-  @JSImport("amqp-rpc", "factory")
-  @js.native
-  def factory(opt: Options): amqpRPC = js.native
+  @scala.inline
+  def factory(): amqpRPC = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")().asInstanceOf[amqpRPC]
+  @scala.inline
+  def factory(opt: Options): amqpRPC = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(opt.asInstanceOf[js.Any]).asInstanceOf[amqpRPC]
   
-  @js.native
   trait BroadcastOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var onComplete: js.UndefOr[js.Any] = js.native
+    var onComplete: js.UndefOr[js.Any] = js.undefined
     
-    var onResponse: js.UndefOr[js.Any] = js.native
+    var onResponse: js.UndefOr[js.Any] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object BroadcastOptions {
     
@@ -164,12 +158,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CallOptions extends StObject {
     
-    var autoDeleteCallback: js.UndefOr[js.Any] = js.native
+    var autoDeleteCallback: js.UndefOr[js.Any] = js.undefined
     
-    var correlationId: js.UndefOr[String] = js.native
+    var correlationId: js.UndefOr[String] = js.undefined
   }
   object CallOptions {
     
@@ -200,16 +193,15 @@ object mod {
   
   type CallbackWithError = js.Function2[/* err */ js.Any, /* repeated */ js.Any, Unit]
   
-  @js.native
   trait CommandInfo extends StObject {
     
-    var cmd: js.UndefOr[String] = js.native
+    var cmd: js.UndefOr[String] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var exchange: js.UndefOr[String] = js.native
+    var exchange: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object CommandInfo {
     
@@ -248,16 +240,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HandlerOptions extends StObject {
     
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
-    var durable: js.UndefOr[Boolean] = js.native
+    var durable: js.UndefOr[Boolean] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var queueName: js.UndefOr[String] = js.native
+    var queueName: js.UndefOr[String] = js.undefined
   }
   object HandlerOptions {
     
@@ -296,22 +287,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var conn_options: js.UndefOr[js.Any] = js.native
+    var conn_options: js.UndefOr[js.Any] = js.undefined
     
-    var connection: js.UndefOr[js.Any] = js.native
+    var connection: js.UndefOr[js.Any] = js.undefined
     
-    var exchange: js.UndefOr[String] = js.native
+    var exchange: js.UndefOr[String] = js.undefined
     
-    var exchangeInstance: js.UndefOr[js.Any] = js.native
+    var exchangeInstance: js.UndefOr[js.Any] = js.undefined
     
-    var exchange_options: js.UndefOr[AutoDelete] = js.native
+    var exchange_options: js.UndefOr[AutoDelete] = js.undefined
     
-    var ipml_options: js.UndefOr[DefaultExchangeName] = js.native
+    var ipml_options: js.UndefOr[DefaultExchangeName] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     

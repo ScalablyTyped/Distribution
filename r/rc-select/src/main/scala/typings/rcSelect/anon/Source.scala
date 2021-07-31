@@ -4,13 +4,11 @@ import typings.rcSelect.rcSelectStrings.keyboard
 import typings.rcSelect.rcSelectStrings.mouse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var source: js.UndefOr[keyboard | mouse] = js.native
+  var source: js.UndefOr[keyboard | mouse] = js.undefined
 }
 object Source {
   

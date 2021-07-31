@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapacityPatch extends StObject {
   
-  var activities: js.Array[Activity] = js.native
+  var activities: js.Array[Activity]
   
-  var daysOff: js.Array[DateRange] = js.native
+  var daysOff: js.Array[DateRange]
 }
 object CapacityPatch {
   

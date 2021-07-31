@@ -5,52 +5,43 @@ import typings.node.streamMod.Transform
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("iltorb", "compress")
+  @JSImport("iltorb", JSImport.Namespace)
   @js.native
-  def compress(buffer: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("iltorb", "compress")
-  @js.native
-  def compress(buffer: Buffer, callback: IltorbCallback): Unit = js.native
-  @JSImport("iltorb", "compress")
-  @js.native
-  def compress(buffer: Buffer, options: BrotliEncodeParams): js.Promise[Buffer] = js.native
-  @JSImport("iltorb", "compress")
-  @js.native
-  def compress(buffer: Buffer, options: BrotliEncodeParams, callback: IltorbCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("iltorb", "compressStream")
-  @js.native
-  def compressStream(): Transform with BrotliFlushable = js.native
-  @JSImport("iltorb", "compressStream")
-  @js.native
-  def compressStream(options: BrotliEncodeParams): Transform with BrotliFlushable = js.native
+  @scala.inline
+  def compress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def compress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buffer: Buffer, options: BrotliEncodeParams): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def compress(buffer: Buffer, options: BrotliEncodeParams, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("iltorb", "compressSync")
-  @js.native
-  def compressSync(buffer: Buffer): Buffer = js.native
-  @JSImport("iltorb", "compressSync")
-  @js.native
-  def compressSync(buffer: Buffer, options: BrotliEncodeParams): Buffer = js.native
+  @scala.inline
+  def compressStream(): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")().asInstanceOf[Transform & BrotliFlushable]
+  @scala.inline
+  def compressStream(options: BrotliEncodeParams): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")(options.asInstanceOf[js.Any]).asInstanceOf[Transform & BrotliFlushable]
   
-  @JSImport("iltorb", "decompress")
-  @js.native
-  def decompress(buffer: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("iltorb", "decompress")
-  @js.native
-  def decompress(buffer: Buffer, callback: IltorbCallback): Unit = js.native
+  @scala.inline
+  def compressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def compressSync(buffer: Buffer, options: BrotliEncodeParams): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("iltorb", "decompressStream")
-  @js.native
-  def decompressStream(): Transform = js.native
+  @scala.inline
+  def decompress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decompress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("iltorb", "decompressSync")
-  @js.native
-  def decompressSync(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def decompressStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressStream")().asInstanceOf[Transform]
+  
+  @scala.inline
+  def decompressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.iltorb.iltorbNumbers.`0`
@@ -106,22 +97,21 @@ object mod {
     def `9`: typings.iltorb.iltorbNumbers.`9` = 9.asInstanceOf[typings.iltorb.iltorbNumbers.`9`]
   }
   
-  @js.native
   trait BrotliEncodeParams extends StObject {
     
-    var disable_literal_context_modeling: js.UndefOr[Boolean] = js.native
+    var disable_literal_context_modeling: js.UndefOr[Boolean] = js.undefined
     
-    var lgblock: js.UndefOr[Double] = js.native
+    var lgblock: js.UndefOr[Double] = js.undefined
     
-    var lgwin: js.UndefOr[Double] = js.native
+    var lgwin: js.UndefOr[Double] = js.undefined
     
     /** @default 0 */
-    var mode: js.UndefOr[BrotliMode] = js.native
+    var mode: js.UndefOr[BrotliMode] = js.undefined
     
     /** @default 11 */
-    var quality: js.UndefOr[BrotliCompressionQuality] = js.native
+    var quality: js.UndefOr[BrotliCompressionQuality] = js.undefined
     
-    var size_hint: js.UndefOr[Double] = js.native
+    var size_hint: js.UndefOr[Double] = js.undefined
   }
   object BrotliEncodeParams {
     
@@ -172,10 +162,9 @@ object mod {
     }
   }
   
-  @js.native
   trait BrotliFlushable extends StObject {
     
-    def flush(): Unit = js.native
+    def flush(): Unit
   }
   object BrotliFlushable {
     

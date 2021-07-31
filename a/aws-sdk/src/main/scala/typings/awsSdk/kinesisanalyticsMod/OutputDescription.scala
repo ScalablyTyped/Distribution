@@ -2,41 +2,39 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDescription extends StObject {
   
   /**
     * Data format used for writing data to the destination.
     */
-  var DestinationSchema: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.DestinationSchema] = js.native
+  var DestinationSchema: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.DestinationSchema] = js.undefined
   
   /**
     * Describes the Amazon Kinesis Firehose delivery stream configured as the destination where output is written.
     */
-  var KinesisFirehoseOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutputDescription] = js.native
+  var KinesisFirehoseOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutputDescription] = js.undefined
   
   /**
     * Describes Amazon Kinesis stream configured as the destination where output is written.
     */
-  var KinesisStreamsOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutputDescription] = js.native
+  var KinesisStreamsOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutputDescription] = js.undefined
   
   /**
     * Describes the AWS Lambda function configured as the destination where output is written.
     */
-  var LambdaOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutputDescription] = js.native
+  var LambdaOutputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutputDescription] = js.undefined
   
   /**
     * Name of the in-application stream configured as output.
     */
-  var Name: js.UndefOr[InAppStreamName] = js.native
+  var Name: js.UndefOr[InAppStreamName] = js.undefined
   
   /**
     * A unique identifier for the output configuration.
     */
-  var OutputId: js.UndefOr[Id] = js.native
+  var OutputId: js.UndefOr[Id] = js.undefined
 }
 object OutputDescription {
   

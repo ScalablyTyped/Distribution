@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingGroupMetadata extends StObject {
   
   /**
     * The UNIX timestamp of when the thing group was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The parent thing group name.
     */
-  var parentGroupName: js.UndefOr[ThingGroupName] = js.native
+  var parentGroupName: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * The root parent thing group.
     */
-  var rootToParentThingGroups: js.UndefOr[ThingGroupNameAndArnList] = js.native
+  var rootToParentThingGroups: js.UndefOr[ThingGroupNameAndArnList] = js.undefined
 }
 object ThingGroupMetadata {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientClickEventArgs")
 @js.native
 class ASPxClientClickEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientClickEventArgs {
   /**
     * Initializes a new instance of the ASPxClientClickEventArgs class.
     * @param value An object that represents the processed cell's value. This value is assigned to the ASPxClientClickEventArgs.Value property.
@@ -37,4 +37,70 @@ class ASPxClientClickEventArgs protected ()
     rowValueType: String,
     dataIndex: Double
   ) = this()
+  
+  /**
+    * Gets a column field name.
+    */
+  /* CompleteClass */
+  var ColumnFieldName: String = js.native
+  
+  /**
+    * Gets the index of a column that owns the processed cell.
+    */
+  /* CompleteClass */
+  var ColumnIndex: Double = js.native
+  
+  /**
+    * Gets a column field value.
+    */
+  /* CompleteClass */
+  var ColumnValue: js.Any = js.native
+  
+  /**
+    * Gets a column value type.
+    */
+  /* CompleteClass */
+  var ColumnValueType: String = js.native
+  
+  /**
+    * Gets the index of the data field which corresponds to the clicked summary value.
+    */
+  /* CompleteClass */
+  var DataIndex: Double = js.native
+  
+  /**
+    * Provides access to the parameters associated with the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick events.
+    */
+  /* CompleteClass */
+  var HtmlEvent: js.Any = js.native
+  
+  /**
+    * Gets a row field name.
+    */
+  /* CompleteClass */
+  var RowFieldName: String = js.native
+  
+  /**
+    * Gets the index of a row that owns the processed cell.
+    */
+  /* CompleteClass */
+  var RowIndex: Double = js.native
+  
+  /**
+    * Gets a row field value.
+    */
+  /* CompleteClass */
+  var RowValue: js.Any = js.native
+  
+  /**
+    * Gets a row value type.
+    */
+  /* CompleteClass */
+  var RowValueType: String = js.native
+  
+  /**
+    * Gets the processed cell's value.
+    */
+  /* CompleteClass */
+  var Value: js.Any = js.native
 }

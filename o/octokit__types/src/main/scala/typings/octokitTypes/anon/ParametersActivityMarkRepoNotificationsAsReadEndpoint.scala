@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ActivityMarkRepoNotificationsAsReadRequ
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityMarkRepoNotificationsAsReadEndpoint extends StObject {
   
-  var parameters: ActivityMarkRepoNotificationsAsReadEndpoint = js.native
+  var parameters: ActivityMarkRepoNotificationsAsReadEndpoint
   
-  var request: ActivityMarkRepoNotificationsAsReadRequestOptions = js.native
+  var request: ActivityMarkRepoNotificationsAsReadRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersActivityMarkRepoNotificationsAsReadEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersActivityMarkRepoNotificationsAsReadEndpoint {
   def apply(
     parameters: ActivityMarkRepoNotificationsAsReadEndpoint,
     request: ActivityMarkRepoNotificationsAsReadRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersActivityMarkRepoNotificationsAsReadEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActivityMarkRepoNotificationsAsReadEndpoint]
@@ -39,6 +37,6 @@ object ParametersActivityMarkRepoNotificationsAsReadEndpoint {
     def setRequest(value: ActivityMarkRepoNotificationsAsReadRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

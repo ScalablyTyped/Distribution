@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ValueFrequency extends StObject {
   
   /** How many times the value is contained in the field. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** A value contained in the field in question. */
-  var value: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var value: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
 }
 object GooglePrivacyDlpV2ValueFrequency {
   

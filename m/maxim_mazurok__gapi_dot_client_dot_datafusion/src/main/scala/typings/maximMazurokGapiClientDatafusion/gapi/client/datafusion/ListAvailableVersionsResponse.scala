@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAvailableVersionsResponse extends StObject {
   
   /** Represents a list of versions that are supported. */
-  var availableVersions: js.UndefOr[js.Array[Version]] = js.native
+  var availableVersions: js.UndefOr[js.Array[Version]] = js.undefined
   
   /** Token to retrieve the next page of results or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAvailableVersionsResponse {
   

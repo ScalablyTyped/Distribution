@@ -2,38 +2,36 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The entire property bag interface available to control via Context Object
   */
-@js.native
 trait Context[TInputs] extends StObject {
   
-  var client: Client = js.native
+  var client: Client
   
-  var device: Device = js.native
+  var device: Device
   
-  var factory: Factory = js.native
+  var factory: Factory
   
-  var formatting: Formatting = js.native
+  var formatting: Formatting
   
-  var mode: Mode = js.native
+  var mode: Mode
   
-  var navigation: Navigation = js.native
+  var navigation: Navigation
   
-  var parameters: TInputs = js.native
+  var parameters: TInputs
   
-  var resources: Resources = js.native
+  var resources: Resources
   
-  var updatedProperties: js.Array[String] = js.native
+  var updatedProperties: js.Array[String]
   
-  var userSettings: UserSettings = js.native
+  var userSettings: UserSettings
   
-  var utils: Utility = js.native
+  var utils: Utility
   
-  var webAPI: WebApi = js.native
+  var webAPI: WebApi
 }
 object Context {
   
@@ -57,7 +55,7 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context[_], TInputs] (val x: Self with Context[TInputs]) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context[?], TInputs] (val x: Self & Context[TInputs]) extends AnyVal {
     
     @scala.inline
     def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])

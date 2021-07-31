@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debug {
@@ -24,16 +23,13 @@ object debug {
   @scala.inline
   def activeDebugSession_=(x: js.UndefOr[DebugSession]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeDebugSession")(x.asInstanceOf[js.Any])
   
-  @JSImport("vscode", "debug.addBreakpoints")
-  @js.native
-  def addBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = js.native
+  @scala.inline
+  def addBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vscode", "debug.asDebugSourceUri")
-  @js.native
-  def asDebugSourceUri(source: DebugProtocolSource): Uri = js.native
-  @JSImport("vscode", "debug.asDebugSourceUri")
-  @js.native
-  def asDebugSourceUri(source: DebugProtocolSource, session: DebugSession): Uri = js.native
+  @scala.inline
+  def asDebugSourceUri(source: DebugProtocolSource): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("asDebugSourceUri")(source.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  @scala.inline
+  def asDebugSourceUri(source: DebugProtocolSource, session: DebugSession): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("asDebugSourceUri")(source.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   @JSImport("vscode", "debug.breakpoints")
   @js.native
@@ -61,94 +57,59 @@ object debug {
   @js.native
   val onDidTerminateDebugSession: Event[DebugSession] = js.native
   
-  @JSImport("vscode", "debug.registerDebugAdapterDescriptorFactory")
-  @js.native
-  def registerDebugAdapterDescriptorFactory(debugType: String, factory: DebugAdapterDescriptorFactory): Disposable = js.native
+  @scala.inline
+  def registerDebugAdapterDescriptorFactory(debugType: String, factory: DebugAdapterDescriptorFactory): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDebugAdapterDescriptorFactory")(debugType.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "debug.registerDebugAdapterTrackerFactory")
-  @js.native
-  def registerDebugAdapterTrackerFactory(debugType: String, factory: DebugAdapterTrackerFactory): Disposable = js.native
+  @scala.inline
+  def registerDebugAdapterTrackerFactory(debugType: String, factory: DebugAdapterTrackerFactory): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDebugAdapterTrackerFactory")(debugType.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "debug.registerDebugConfigurationProvider")
-  @js.native
-  def registerDebugConfigurationProvider(debugType: String, provider: DebugConfigurationProvider): Disposable = js.native
-  @JSImport("vscode", "debug.registerDebugConfigurationProvider")
-  @js.native
+  @scala.inline
+  def registerDebugConfigurationProvider(debugType: String, provider: DebugConfigurationProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDebugConfigurationProvider")(debugType.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  @scala.inline
   def registerDebugConfigurationProvider(
     debugType: String,
     provider: DebugConfigurationProvider,
     triggerKind: DebugConfigurationProviderTriggerKind
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDebugConfigurationProvider")(debugType.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], triggerKind.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "debug.removeBreakpoints")
-  @js.native
-  def removeBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = js.native
+  @scala.inline
+  def removeBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: String): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
-    nameOrConfiguration: String,
-    parentSessionOrOptions: DebugSession
-  ): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
-    nameOrConfiguration: String,
-    parentSessionOrOptions: DebugSessionOptions
-  ): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
-    nameOrConfiguration: DebugConfiguration,
-    parentSessionOrOptions: DebugSession
-  ): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(
-    folder: js.UndefOr[scala.Nothing],
-    nameOrConfiguration: DebugConfiguration,
-    parentSessionOrOptions: DebugSessionOptions
-  ): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSession): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSessionOptions): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
-  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: String): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: String, parentSessionOrOptions: DebugSession): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: String, parentSessionOrOptions: DebugSessionOptions): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: DebugConfiguration, parentSessionOrOptions: DebugSession): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: Unit, nameOrConfiguration: DebugConfiguration, parentSessionOrOptions: DebugSessionOptions): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSession): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: String, parentSessionOrOptions: DebugSessionOptions): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
+  def startDebugging(folder: WorkspaceFolder, nameOrConfiguration: DebugConfiguration): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
   def startDebugging(
     folder: WorkspaceFolder,
     nameOrConfiguration: DebugConfiguration,
     parentSessionOrOptions: DebugSession
-  ): Thenable[Boolean] = js.native
-  @JSImport("vscode", "debug.startDebugging")
-  @js.native
+  ): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
+  @scala.inline
   def startDebugging(
     folder: WorkspaceFolder,
     nameOrConfiguration: DebugConfiguration,
     parentSessionOrOptions: DebugSessionOptions
-  ): Thenable[Boolean] = js.native
+  ): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("startDebugging")(folder.asInstanceOf[js.Any], nameOrConfiguration.asInstanceOf[js.Any], parentSessionOrOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
   
-  @JSImport("vscode", "debug.stopDebugging")
-  @js.native
-  def stopDebugging(): Thenable[Unit] = js.native
-  @JSImport("vscode", "debug.stopDebugging")
-  @js.native
-  def stopDebugging(session: DebugSession): Thenable[Unit] = js.native
+  @scala.inline
+  def stopDebugging(): Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDebugging")().asInstanceOf[Thenable[Unit]]
+  @scala.inline
+  def stopDebugging(session: DebugSession): Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDebugging")(session.asInstanceOf[js.Any]).asInstanceOf[Thenable[Unit]]
 }

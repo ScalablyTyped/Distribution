@@ -3,16 +3,16 @@ package typings.reactWindow.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableSizeGridProps extends GridProps {
+trait VariableSizeGridProps
+  extends StObject
+     with GridProps {
   
   /**
     * Returns the width of the specified column.
     */
-  def columnWidth(index: Double): Double = js.native
+  def columnWidth(index: Double): Double
   
   /**
     * Average (or estimated) column width for unrendered columns.
@@ -20,7 +20,7 @@ trait VariableSizeGridProps extends GridProps {
     * This value is used to calculated the estimated total width of a Grid before its columns have all been measured.
     * The estimated width impacts user scrolling behavior. It is updated whenever new columns are measured.
     */
-  var estimatedColumnWidth: js.UndefOr[Double] = js.native
+  var estimatedColumnWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Average (or estimated) row height for unrendered rows.
@@ -28,12 +28,12 @@ trait VariableSizeGridProps extends GridProps {
     * This value is used to calculated the estimated total height of a Grid before its rows have all been measured.
     * The estimated height impacts user scrolling behavior. It is updated whenever new rows are measured.
     */
-  var estimatedRowHeight: js.UndefOr[Double] = js.native
+  var estimatedRowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns the height of the specified row.
     */
-  def rowHeight(index: Double): Double = js.native
+  def rowHeight(index: Double): Double
 }
 object VariableSizeGridProps {
   

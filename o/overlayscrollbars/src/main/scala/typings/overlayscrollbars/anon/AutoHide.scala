@@ -4,25 +4,23 @@ import typings.overlayscrollbars.mod.AutoHideBehavior
 import typings.overlayscrollbars.mod.VisibilityBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHide extends StObject {
   
-  var autoHide: js.UndefOr[AutoHideBehavior] = js.native
+  var autoHide: js.UndefOr[AutoHideBehavior] = js.undefined
   
-  var autoHideDelay: js.UndefOr[Double] = js.native
+  var autoHideDelay: js.UndefOr[Double] = js.undefined
   
-  var clickScrolling: js.UndefOr[Boolean] = js.native
+  var clickScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var dragScrolling: js.UndefOr[Boolean] = js.native
+  var dragScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var snapHandle: js.UndefOr[Boolean] = js.native
+  var snapHandle: js.UndefOr[Boolean] = js.undefined
   
-  var touchSupport: js.UndefOr[Boolean] = js.native
+  var touchSupport: js.UndefOr[Boolean] = js.undefined
   
-  var visibility: js.UndefOr[VisibilityBehavior] = js.native
+  var visibility: js.UndefOr[VisibilityBehavior] = js.undefined
 }
 object AutoHide {
   

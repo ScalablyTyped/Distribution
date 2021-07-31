@@ -2,36 +2,34 @@ package typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Annotation progress for a single video.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1VideoAnnotationProgress extends StObject {
   
   /**
     * Video file location in [Google Cloud
     * Storage](https://cloud.google.com/storage/).
     */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
   
   /**
     * Approximate percentage processed thus far. Guaranteed to be 100 when
     * fully processed.
     */
-  var progressPercent: js.UndefOr[Double] = js.native
+  var progressPercent: js.UndefOr[Double] = js.undefined
   
   /**
     * Time when the request was received.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Time of the most recent update.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1VideoAnnotationProgress {
   

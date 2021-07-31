@@ -30,31 +30,29 @@ import typings.awsLambda.awsLambdaStrings.VerifyAuthChallengeResponse_Authentica
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoUserPoolTriggerMod {
   
   type CognitoUserPoolEvent = CognitoUserPoolTriggerEvent
   
-  @js.native
   trait CognitoUserPoolTriggerEvent extends StObject {
     
-    var callerContext: AwsSdkVersion = js.native
+    var callerContext: AwsSdkVersion
     
-    var region: String = js.native
+    var region: String
     
-    var request: ChallengeAnswer = js.native
+    var request: ChallengeAnswer
     
-    var response: AnswerCorrect = js.native
+    var response: AnswerCorrect
     
-    var triggerSource: PreSignUp_SignUp | PreSignUp_ExternalProvider | PostConfirmation_ConfirmSignUp | PreAuthentication_Authentication | PostAuthentication_Authentication | CustomMessage_SignUp | CustomMessage_AdminCreateUser | CustomMessage_ResendCode | CustomMessage_ForgotPassword | CustomMessage_UpdateUserAttribute | CustomMessage_VerifyUserAttribute | CustomMessage_Authentication | DefineAuthChallenge_Authentication | CreateAuthChallenge_Authentication | VerifyAuthChallengeResponse_Authentication | PreSignUp_AdminCreateUser | PostConfirmation_ConfirmForgotPassword | TokenGeneration_HostedAuth | TokenGeneration_Authentication | TokenGeneration_NewPasswordChallenge | TokenGeneration_AuthenticateDevice | TokenGeneration_RefreshTokens | UserMigration_Authentication | UserMigration_ForgotPassword = js.native
+    var triggerSource: PreSignUp_SignUp | PreSignUp_ExternalProvider | PostConfirmation_ConfirmSignUp | PreAuthentication_Authentication | PostAuthentication_Authentication | CustomMessage_SignUp | CustomMessage_AdminCreateUser | CustomMessage_ResendCode | CustomMessage_ForgotPassword | CustomMessage_UpdateUserAttribute | CustomMessage_VerifyUserAttribute | CustomMessage_Authentication | DefineAuthChallenge_Authentication | CreateAuthChallenge_Authentication | VerifyAuthChallengeResponse_Authentication | PreSignUp_AdminCreateUser | PostConfirmation_ConfirmForgotPassword | TokenGeneration_HostedAuth | TokenGeneration_Authentication | TokenGeneration_NewPasswordChallenge | TokenGeneration_AuthenticateDevice | TokenGeneration_RefreshTokens | UserMigration_Authentication | UserMigration_ForgotPassword
     
-    var userName: js.UndefOr[String] = js.native
+    var userName: js.UndefOr[String] = js.undefined
     
-    var userPoolId: String = js.native
+    var userPoolId: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object CognitoUserPoolTriggerEvent {
     

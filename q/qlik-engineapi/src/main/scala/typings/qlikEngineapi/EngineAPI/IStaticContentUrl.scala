@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: In addition, this structure can return dynamic properties.
   */
-@js.native
 trait IStaticContentUrl extends StObject {
   
   /**
     * Relative path of the thumbnail.
     */
-  var qUrl: String = js.native
+  var qUrl: String
 }
 object IStaticContentUrl {
   

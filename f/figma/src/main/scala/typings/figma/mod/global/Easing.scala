@@ -6,13 +6,11 @@ import typings.figma.figmaStrings.EASE_OUT
 import typings.figma.figmaStrings.LINEAR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Easing extends StObject {
   
-  val `type`: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR = js.native
+  val `type`: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR
 }
 object Easing {
   

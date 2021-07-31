@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,9 @@ trait System extends StObject {
   val ComputerType: String = js.native
   
   def Connect(Path: String): Unit = js.native
-  def Connect(Path: String, Drive: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
   def Connect(Path: String, Drive: js.Any): Unit = js.native
   def Connect(Path: String, Drive: js.Any, Password: js.Any): Unit = js.native
+  def Connect(Path: String, Drive: Unit, Password: js.Any): Unit = js.native
   
   val Country: WdCountry = js.native
   

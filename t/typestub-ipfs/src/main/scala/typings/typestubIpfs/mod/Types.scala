@@ -1,20 +1,25 @@
 package typings.typestubIpfs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Types extends js.Object {
-  var Buffer: js.Any = js.native
-  var CID: typings.typestubIpfs.mod.CID = js.native
-  var PeerId: String | js.Any = js.native
-  var PeerInfo: js.Any = js.native
-  var multiaddr: Multiaddr = js.native
-  var multihash: Multihash = js.native
+trait Types extends StObject {
+  
+  var Buffer: js.Any
+  
+  var CID: typings.typestubIpfs.mod.CID
+  
+  var PeerId: String | js.Any
+  
+  var PeerInfo: js.Any
+  
+  var multiaddr: Multiaddr
+  
+  var multihash: Multihash
 }
-
 object Types {
+  
   @scala.inline
   def apply(
     Buffer: js.Any,
@@ -27,30 +32,26 @@ object Types {
     val __obj = js.Dynamic.literal(Buffer = Buffer.asInstanceOf[js.Any], CID = CID.asInstanceOf[js.Any], PeerId = PeerId.asInstanceOf[js.Any], PeerInfo = PeerInfo.asInstanceOf[js.Any], multiaddr = multiaddr.asInstanceOf[js.Any], multihash = multihash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Types]
   }
-  @scala.inline
-  implicit class TypesOps[Self <: Types] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setBuffer(value: js.Any): Self = this.set("Buffer", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setCID(value: CID): Self = this.set("CID", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setPeerId(value: String | js.Any): Self = this.set("PeerId", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setPeerInfo(value: js.Any): Self = this.set("PeerInfo", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMultiaddr(value: Multiaddr): Self = this.set("multiaddr", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMultihash(value: Multihash): Self = this.set("multihash", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBuffer(value: js.Any): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCID(value: CID): Self = StObject.set(x, "CID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultiaddr(value: Multiaddr): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultihash(value: Multihash): Self = StObject.set(x, "multihash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPeerId(value: String | js.Any): Self = StObject.set(x, "PeerId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPeerInfo(value: js.Any): Self = StObject.set(x, "PeerInfo", value.asInstanceOf[js.Any])
+  }
 }
-

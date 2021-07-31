@@ -2,33 +2,31 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0Result extends StObject {
   
   /**
     * token that allows access to the specified resource server (identified by the audience parameter
     * or by default Auth0's /userinfo endpoint)
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /** values that you receive back on the authentication response */
-  var appState: js.UndefOr[js.Any] = js.native
+  var appState: js.UndefOr[js.Any] = js.undefined
   
   /** number of seconds until the access token expires */
-  var expiresIn: js.UndefOr[Double] = js.native
+  var expiresIn: js.UndefOr[Double] = js.undefined
   
   /** token that identifies the user */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * token that can be used to get new access tokens from Auth0.
     * Note that not all Auth0 Applications can request them
     * or the resource server might not allow them.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object Auth0Result {
   

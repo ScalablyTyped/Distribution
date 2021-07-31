@@ -3,23 +3,21 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.paragraphStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSParagraphStyle extends StObject {
   
-  var _class: paragraphStyle = js.native
+  var _class: paragraphStyle
   
-  var alignment: Double = js.native
+  var alignment: Double
   
-  var allowsDefaultTighteningForTruncation: Double = js.native
+  var allowsDefaultTighteningForTruncation: Double
 }
 object SketchMSParagraphStyle {
   
   @scala.inline
-  def apply(_class: paragraphStyle, alignment: Double, allowsDefaultTighteningForTruncation: Double): SketchMSParagraphStyle = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], alignment = alignment.asInstanceOf[js.Any], allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation.asInstanceOf[js.Any])
+  def apply(alignment: Double, allowsDefaultTighteningForTruncation: Double): SketchMSParagraphStyle = {
+    val __obj = js.Dynamic.literal(_class = "paragraphStyle", alignment = alignment.asInstanceOf[js.Any], allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSParagraphStyle]
   }
   

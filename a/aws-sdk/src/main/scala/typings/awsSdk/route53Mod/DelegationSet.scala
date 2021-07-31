@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelegationSet extends StObject {
   
   /**
     * The value that you specified for CallerReference when you created the reusable delegation set.
     */
-  var CallerReference: js.UndefOr[Nonce] = js.native
+  var CallerReference: js.UndefOr[Nonce] = js.undefined
   
   /**
     * The ID that Amazon Route 53 assigns to a reusable delegation set.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A complex type that contains a list of the authoritative name servers for a hosted zone or for a reusable delegation set.
     */
-  var NameServers: DelegationSetNameServers = js.native
+  var NameServers: DelegationSetNameServers
 }
 object DelegationSet {
   

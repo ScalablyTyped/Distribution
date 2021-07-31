@@ -11,7 +11,6 @@ import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raycasterMod {
@@ -27,35 +26,20 @@ object raycasterMod {
   	 */
   class Raycaster () extends StObject {
     def this(origin: Vector3) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: Vector3) = this()
+    def this(origin: Unit, direction: Vector3) = this()
     def this(origin: Vector3, direction: Vector3) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: js.UndefOr[scala.Nothing], near: Double) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: Vector3, near: Double) = this()
-    def this(origin: Vector3, direction: js.UndefOr[scala.Nothing], near: Double) = this()
+    def this(origin: Unit, direction: Unit, near: Double) = this()
+    def this(origin: Unit, direction: Vector3, near: Double) = this()
+    def this(origin: Vector3, direction: Unit, near: Double) = this()
     def this(origin: Vector3, direction: Vector3, near: Double) = this()
-    def this(
-      origin: js.UndefOr[scala.Nothing],
-      direction: js.UndefOr[scala.Nothing],
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
-    def this(
-      origin: js.UndefOr[scala.Nothing],
-      direction: Vector3,
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: Vector3, near: Double, far: Double) = this()
-    def this(
-      origin: Vector3,
-      direction: js.UndefOr[scala.Nothing],
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ) = this()
-    def this(origin: Vector3, direction: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
-    def this(origin: Vector3, direction: Vector3, near: js.UndefOr[scala.Nothing], far: Double) = this()
+    def this(origin: Unit, direction: Unit, near: Double, far: Double) = this()
+    def this(origin: Unit, direction: Unit, near: Unit, far: Double) = this()
+    def this(origin: Unit, direction: Vector3, near: Double, far: Double) = this()
+    def this(origin: Unit, direction: Vector3, near: Unit, far: Double) = this()
+    def this(origin: Vector3, direction: Unit, near: Double, far: Double) = this()
+    def this(origin: Vector3, direction: Unit, near: Unit, far: Double) = this()
     def this(origin: Vector3, direction: Vector3, near: Double, far: Double) = this()
+    def this(origin: Vector3, direction: Vector3, near: Unit, far: Double) = this()
     
     /**
     	 * The camera to use when raycasting against view-dependent objects such as billboarded objects like Sprites. This field
@@ -77,9 +61,9 @@ object raycasterMod {
     	 * @param optionalTarget (optional) target to set the result. Otherwise a new Array is instantiated. If set, you must clear this array prior to each call (i.e., array.length = 0;).
     	 */
     def intersectObject(`object`: Object3D): js.Array[Intersection] = js.native
-    def intersectObject(`object`: Object3D, recursive: js.UndefOr[scala.Nothing], optionalTarget: js.Array[Intersection]): js.Array[Intersection] = js.native
     def intersectObject(`object`: Object3D, recursive: Boolean): js.Array[Intersection] = js.native
     def intersectObject(`object`: Object3D, recursive: Boolean, optionalTarget: js.Array[Intersection]): js.Array[Intersection] = js.native
+    def intersectObject(`object`: Object3D, recursive: Unit, optionalTarget: js.Array[Intersection]): js.Array[Intersection] = js.native
     
     /**
     	 * Checks all intersection between the ray and the objects with or without the descendants. Intersections are returned sorted by distance, closest first. Intersections are of the same form as those returned by .intersectObject.
@@ -88,13 +72,9 @@ object raycasterMod {
     	 * @param optionalTarget (optional) target to set the result. Otherwise a new Array is instantiated. If set, you must clear this array prior to each call (i.e., array.length = 0;).
     	 */
     def intersectObjects(objects: js.Array[Object3D]): js.Array[Intersection] = js.native
-    def intersectObjects(
-      objects: js.Array[Object3D],
-      recursive: js.UndefOr[scala.Nothing],
-      optionalTarget: js.Array[Intersection]
-    ): js.Array[Intersection] = js.native
     def intersectObjects(objects: js.Array[Object3D], recursive: Boolean): js.Array[Intersection] = js.native
     def intersectObjects(objects: js.Array[Object3D], recursive: Boolean, optionalTarget: js.Array[Intersection]): js.Array[Intersection] = js.native
+    def intersectObjects(objects: js.Array[Object3D], recursive: Unit, optionalTarget: js.Array[Intersection]): js.Array[Intersection] = js.native
     
     /**
     	 * Used by Raycaster to selectively ignore 3D objects when performing intersection tests.
@@ -132,26 +112,25 @@ object raycasterMod {
     def setFromCamera(coords: X, camera: Camera): Unit = js.native
   }
   
-  @js.native
   trait Intersection extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var distanceToRay: js.UndefOr[Double] = js.native
+    var distanceToRay: js.UndefOr[Double] = js.undefined
     
-    var face: js.UndefOr[Face3 | Null] = js.native
+    var face: js.UndefOr[Face3 | Null] = js.undefined
     
-    var faceIndex: js.UndefOr[Double] = js.native
+    var faceIndex: js.UndefOr[Double] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var instanceId: js.UndefOr[Double] = js.native
+    var instanceId: js.UndefOr[Double] = js.undefined
     
-    var `object`: Object3D = js.native
+    var `object`: Object3D
     
-    var point: Vector3 = js.native
+    var point: Vector3
     
-    var uv: js.UndefOr[Vector2] = js.native
+    var uv: js.UndefOr[Vector2] = js.undefined
   }
   object Intersection {
     
@@ -215,18 +194,17 @@ object raycasterMod {
     }
   }
   
-  @js.native
   trait RaycasterParameters extends StObject {
     
-    var LOD: js.UndefOr[js.Any] = js.native
+    var LOD: js.UndefOr[js.Any] = js.undefined
     
-    var Line: js.UndefOr[Threshold] = js.native
+    var Line: js.UndefOr[Threshold] = js.undefined
     
-    var Mesh: js.UndefOr[js.Any] = js.native
+    var Mesh: js.UndefOr[js.Any] = js.undefined
     
-    var Points: js.UndefOr[Threshold] = js.native
+    var Points: js.UndefOr[Threshold] = js.undefined
     
-    var Sprite: js.UndefOr[js.Any] = js.native
+    var Sprite: js.UndefOr[js.Any] = js.undefined
   }
   object RaycasterParameters {
     

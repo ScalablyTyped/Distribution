@@ -4,13 +4,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.spreadsheet")
 @js.native
 class spreadsheet ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$skin")
   var $skin_Original_spreadsheet: WebixCallback = js.native
@@ -33,9 +33,12 @@ class spreadsheet ()
   def attachEvent(`type`: spreadsheetEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: spreadsheetEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def changeDecimals(row: Double, column: Double, change: Double): Unit = js.native
   
@@ -81,7 +84,7 @@ class spreadsheet ()
   
   def getRow(id: String): js.Any = js.native
   
-  def getSelectedId(): js.Array[_] = js.native
+  def getSelectedId(): js.Array[js.Any] = js.native
   
   def getSelectedRange(): String = js.native
   
@@ -116,10 +119,10 @@ class spreadsheet ()
   
   def isRowVisible(rowId: Double): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
   def lockCell(row: js.Any, column: js.Any, state: Boolean): Unit = js.native
   
@@ -153,7 +156,7 @@ class spreadsheet ()
   def setCellEditor(rowId: Double, columnId: Double, editorObject: js.Any): Unit = js.native
   
   def setCellFilter(rowId: Double, columnId: Double, options: String): Unit = js.native
-  def setCellFilter(rowId: Double, columnId: Double, options: js.Array[_]): Unit = js.native
+  def setCellFilter(rowId: Double, columnId: Double, options: js.Array[js.Any]): Unit = js.native
   
   def setCellValue(row: Double, column: js.Any, value: String): Unit = js.native
   
@@ -176,9 +179,9 @@ class spreadsheet ()
   def showSheet(name: String): Unit = js.native
   
   def sortRange(): Unit = js.native
-  def sortRange(range: js.UndefOr[scala.Nothing], dir: String): Unit = js.native
   def sortRange(range: String): Unit = js.native
   def sortRange(range: String, dir: String): Unit = js.native
+  def sortRange(range: Unit, dir: String): Unit = js.native
   
   def splitCell(row: Double, column: Double): Unit = js.native
   

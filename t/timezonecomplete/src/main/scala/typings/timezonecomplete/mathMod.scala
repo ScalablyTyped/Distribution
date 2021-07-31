@@ -2,24 +2,23 @@ package typings.timezonecomplete
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathMod {
   
-  @JSImport("timezonecomplete/dist/lib/math", "filterFloat")
+  @JSImport("timezonecomplete/dist/lib/math", JSImport.Namespace)
   @js.native
-  def filterFloat(value: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("timezonecomplete/dist/lib/math", "isInt")
-  @js.native
-  def isInt(n: Double): Boolean = js.native
+  @scala.inline
+  def filterFloat(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete/dist/lib/math", "positiveModulo")
-  @js.native
-  def positiveModulo(value: Double, modulo: Double): Double = js.native
+  @scala.inline
+  def isInt(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete/dist/lib/math", "roundSym")
-  @js.native
-  def roundSym(n: Double): Double = js.native
+  @scala.inline
+  def positiveModulo(value: Double, modulo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("positiveModulo")(value.asInstanceOf[js.Any], modulo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def roundSym(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("roundSym")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

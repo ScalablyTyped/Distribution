@@ -9,7 +9,6 @@ import typings.web3Core.mod.RLPEncodedTransaction
 import typings.web3Core.mod.TransactionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,7 @@ object mod {
       callback: js.Function2[/* error */ Error, /* address */ String, Unit]
     ): js.Promise[String] = js.native
     
-    def extend(extension: Extension): js.Any = js.native
+    def extend(`extension`: Extension): js.Any = js.native
     
     def getAccounts(): js.Promise[js.Array[String]] = js.native
     def getAccounts(callback: js.Function2[/* error */ Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native

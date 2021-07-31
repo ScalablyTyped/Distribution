@@ -2,47 +2,45 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPackageVersionDependenciesResult extends StObject {
   
   /**
     *  The name of the package that contains the returned package versions dependencies. 
     */
   @JSName("package")
-  var _package: js.UndefOr[PackageName] = js.native
+  var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
     *  The returned list of  PackageDependency  objects. 
     */
-  var dependencies: js.UndefOr[PackageDependencyList] = js.native
+  var dependencies: js.UndefOr[PackageDependencyList] = js.undefined
   
   /**
     *  A format that specifies the type of the package that contains the returned dependencies. The valid values are:     npm     pypi     maven   
     */
-  var format: js.UndefOr[PackageFormat] = js.native
+  var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The version of the package that is specified in the request. 
     */
-  var version: js.UndefOr[PackageVersion] = js.native
+  var version: js.UndefOr[PackageVersion] = js.undefined
   
   /**
     *  The current revision associated with the package version. 
     */
-  var versionRevision: js.UndefOr[PackageVersionRevision] = js.native
+  var versionRevision: js.UndefOr[PackageVersionRevision] = js.undefined
 }
 object ListPackageVersionDependenciesResult {
   

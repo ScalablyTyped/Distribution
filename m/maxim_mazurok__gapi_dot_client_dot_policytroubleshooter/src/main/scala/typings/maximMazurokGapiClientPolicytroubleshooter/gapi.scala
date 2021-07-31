@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientPolicytroubleshooter.anon.Accesstoken
 import typings.maximMazurokGapiClientPolicytroubleshooter.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,26 +14,25 @@ object gapi {
     
     object policytroubleshooter {
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1AccessTuple extends StObject {
         
         /**
           * Required. The full resource name that identifies the resource. For example, `//compute.googleapis.com/projects/my-project/zones/us-central1-a/instances/my-instance`. For examples of
           * full resource names for Google Cloud services, see https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
           */
-        var fullResourceName: js.UndefOr[String] = js.native
+        var fullResourceName: js.UndefOr[String] = js.undefined
         
         /**
           * Required. The IAM permission to check for the specified member and resource. For a complete list of IAM permissions, see https://cloud.google.com/iam/help/permissions/reference. For
           * a complete list of predefined IAM roles and the permissions in each role, see https://cloud.google.com/iam/help/roles/reference.
           */
-        var permission: js.UndefOr[String] = js.native
+        var permission: js.UndefOr[String] = js.undefined
         
         /**
           * Required. The member, or principal, whose access you want to check, in the form of the email address that represents that member. For example, `alice@example.com` or
           * `my-service-account@my-project.iam.gserviceaccount.com`. The member must be a Google Account or a service account. Other types of members are not supported.
           */
-        var principal: js.UndefOr[String] = js.native
+        var principal: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1AccessTuple {
         
@@ -67,7 +65,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1BindingExplanation extends StObject {
         
         /**
@@ -75,10 +72,10 @@ object gapi {
           * actually has the permission for the resource. There might be another binding that overrides this binding. To determine whether the member actually has the permission, use the
           * `access` field in the TroubleshootIamPolicyResponse.
           */
-        var access: js.UndefOr[String] = js.native
+        var access: js.UndefOr[String] = js.undefined
         
         /** A condition expression that prevents access unless the expression evaluates to `true`. To learn about IAM Conditions, see http://cloud.google.com/iam/help/conditions/overview. */
-        var condition: js.UndefOr[GoogleTypeExpr] = js.native
+        var condition: js.UndefOr[GoogleTypeExpr] = js.undefined
         
         /**
           * Indicates whether each member in the binding includes the member specified in the request, either directly or indirectly. Each key identifies a member in the binding, and each value
@@ -90,23 +87,23 @@ object gapi {
         var memberships: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[js.Any]
+              ] = js.undefined
         
         /** The relevance of this binding to the overall determination for the entire policy. */
-        var relevance: js.UndefOr[String] = js.native
+        var relevance: js.UndefOr[String] = js.undefined
         
         /**
           * The role that this binding grants. For example, `roles/compute.serviceAgent`. For a complete list of predefined IAM roles, as well as the permissions in each role, see
           * https://cloud.google.com/iam/help/roles/reference.
           */
-        var role: js.UndefOr[String] = js.native
+        var role: js.UndefOr[String] = js.undefined
         
         /** Indicates whether the role granted by this binding contains the specified permission. */
-        var rolePermission: js.UndefOr[String] = js.native
+        var rolePermission: js.UndefOr[String] = js.undefined
         
         /** The relevance of the permission's existence, or nonexistence, in the role to the overall determination for the entire policy. */
-        var rolePermissionRelevance: js.UndefOr[String] = js.native
+        var rolePermissionRelevance: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1BindingExplanation {
         
@@ -135,7 +132,7 @@ object gapi {
           def setMemberships(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[js.Any]
           ): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -167,14 +164,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership extends StObject {
         
         /** Indicates whether the binding includes the member. */
-        var membership: js.UndefOr[String] = js.native
+        var membership: js.UndefOr[String] = js.undefined
         
         /** The relevance of the member's status to the overall determination for the binding. */
-        var relevance: js.UndefOr[String] = js.native
+        var relevance: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership {
         
@@ -201,7 +197,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1ExplainedPolicy extends StObject {
         
         /**
@@ -209,29 +204,29 @@ object gapi {
           * the permission for the resource. There might be another policy that overrides this policy. To determine whether the member actually has the permission, use the `access` field in the
           * TroubleshootIamPolicyResponse.
           */
-        var access: js.UndefOr[String] = js.native
+        var access: js.UndefOr[String] = js.undefined
         
         /**
           * Details about how each binding in the policy affects the member's ability, or inability, to use the permission for the resource. If the sender of the request does not have access to
           * the policy, this field is omitted.
           */
-        var bindingExplanations: js.UndefOr[js.Array[GoogleCloudPolicytroubleshooterV1BindingExplanation]] = js.native
+        var bindingExplanations: js.UndefOr[js.Array[GoogleCloudPolicytroubleshooterV1BindingExplanation]] = js.undefined
         
         /**
           * The full resource name that identifies the resource. For example, `//compute.googleapis.com/projects/my-project/zones/us-central1-a/instances/my-instance`. If the sender of the
           * request does not have access to the policy, this field is omitted. For examples of full resource names for Google Cloud services, see
           * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
           */
-        var fullResourceName: js.UndefOr[String] = js.native
+        var fullResourceName: js.UndefOr[String] = js.undefined
         
         /** The IAM policy attached to the resource. If the sender of the request does not have access to the policy, this field is empty. */
-        var policy: js.UndefOr[GoogleIamV1Policy] = js.native
+        var policy: js.UndefOr[GoogleIamV1Policy] = js.undefined
         
         /**
           * The relevance of this policy to the overall determination in the TroubleshootIamPolicyResponse. If the sender of the request does not have access to the policy, this field is
           * omitted.
           */
-        var relevance: js.UndefOr[String] = js.native
+        var relevance: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1ExplainedPolicy {
         
@@ -279,11 +274,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest extends StObject {
         
         /** The information to use for checking whether a member has a permission for a resource. */
-        var accessTuple: js.UndefOr[GoogleCloudPolicytroubleshooterV1AccessTuple] = js.native
+        var accessTuple: js.UndefOr[GoogleCloudPolicytroubleshooterV1AccessTuple] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest {
         
@@ -304,18 +298,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse extends StObject {
         
         /** Indicates whether the member has the specified permission for the specified resource, based on evaluating all of the applicable IAM policies. */
-        var access: js.UndefOr[String] = js.native
+        var access: js.UndefOr[String] = js.undefined
         
         /**
           * List of IAM policies that were evaluated to check the member's permissions, with annotations to indicate how each policy contributed to the final result. The list of policies can
           * include the policy for the resource itself. It can also include policies that are inherited from higher levels of the resource hierarchy, including the organization, the folder, and
           * the project. To learn more about the resource hierarchy, see https://cloud.google.com/iam/help/resource-hierarchy.
           */
-        var explainedPolicies: js.UndefOr[js.Array[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]] = js.native
+        var explainedPolicies: js.UndefOr[js.Array[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse {
         
@@ -345,17 +338,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleIamV1AuditConfig extends StObject {
         
         /** The configuration for logging of each type of permission. */
-        var auditLogConfigs: js.UndefOr[js.Array[GoogleIamV1AuditLogConfig]] = js.native
+        var auditLogConfigs: js.UndefOr[js.Array[GoogleIamV1AuditLogConfig]] = js.undefined
         
         /**
           * Specifies a service that will be enabled for audit logging. For example, `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a special value that covers all
           * services.
           */
-        var service: js.UndefOr[String] = js.native
+        var service: js.UndefOr[String] = js.undefined
       }
       object GoogleIamV1AuditConfig {
         
@@ -385,14 +377,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleIamV1AuditLogConfig extends StObject {
         
         /** Specifies the identities that do not cause logging for this type of permission. Follows the same format of Binding.members. */
-        var exemptedMembers: js.UndefOr[js.Array[String]] = js.native
+        var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The log type that this config enables. */
-        var logType: js.UndefOr[String] = js.native
+        var logType: js.UndefOr[String] = js.undefined
       }
       object GoogleIamV1AuditLogConfig {
         
@@ -422,7 +413,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleIamV1Binding extends StObject {
         
         /**
@@ -430,7 +420,7 @@ object gapi {
           * then this binding does not apply to the current request. However, a different role binding might grant the same role to one or more of the members in this binding. To learn which
           * resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
           */
-        var condition: js.UndefOr[GoogleTypeExpr] = js.native
+        var condition: js.UndefOr[GoogleTypeExpr] = js.undefined
         
         /**
           * Specifies the identities requesting access for a Cloud Platform resource. `members` can have the following values: * `allUsers`: A special identifier that represents anyone who is
@@ -445,10 +435,10 @@ object gapi {
           * deleted. For example, `admins@example.com?uid=123456789012345678901`. If the group is recovered, this value reverts to `group:{emailid}` and the recovered group retains the role in
           * the binding. * `domain:{domain}`: The G Suite domain (primary) that represents all the users of that domain. For example, `google.com` or `example.com`.
           */
-        var members: js.UndefOr[js.Array[String]] = js.native
+        var members: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Role that is assigned to `members`. For example, `roles/viewer`, `roles/editor`, or `roles/owner`. */
-        var role: js.UndefOr[String] = js.native
+        var role: js.UndefOr[String] = js.undefined
       }
       object GoogleIamV1Binding {
         
@@ -484,17 +474,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleIamV1Policy extends StObject {
         
         /** Specifies cloud audit logging configuration for this policy. */
-        var auditConfigs: js.UndefOr[js.Array[GoogleIamV1AuditConfig]] = js.native
+        var auditConfigs: js.UndefOr[js.Array[GoogleIamV1AuditConfig]] = js.undefined
         
         /**
           * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
           * least one member.
           */
-        var bindings: js.UndefOr[js.Array[GoogleIamV1Binding]] = js.native
+        var bindings: js.UndefOr[js.Array[GoogleIamV1Binding]] = js.undefined
         
         /**
           * `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems make
@@ -503,7 +492,7 @@ object gapi {
           * Conditions, you must include the `etag` field whenever you call `setIamPolicy`. If you omit this field, then IAM allows you to overwrite a version `3` policy with a version `1`
           * policy, and all of the conditions in the version `3` policy are lost.
           */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /**
           * Specifies the format of the policy. Valid values are `0`, `1`, and `3`. Requests that specify an invalid value are rejected. Any operation that affects conditional role bindings
@@ -513,7 +502,7 @@ object gapi {
           * policy, and all of the conditions in the version `3` policy are lost. If a policy does not include any conditions, operations on that policy may specify any valid version or leave
           * the field unset. To learn which resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
           */
-        var version: js.UndefOr[Double] = js.native
+        var version: js.UndefOr[Double] = js.undefined
       }
       object GoogleIamV1Policy {
         
@@ -558,20 +547,19 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleTypeExpr extends StObject {
         
         /** Optional. Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI. */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /** Textual representation of an expression in Common Expression Language syntax. */
-        var expression: js.UndefOr[String] = js.native
+        var expression: js.UndefOr[String] = js.undefined
         
         /** Optional. String indicating the location of the expression for error reporting, e.g. a file name and a position in the file. */
-        var location: js.UndefOr[String] = js.native
+        var location: js.UndefOr[String] = js.undefined
         
         /** Optional. Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object GoogleTypeExpr {
         

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolDeviceConfiguration extends StObject {
   
   /**
     * Indicates whether a challenge is required on a new device. Only applicable to a new device.
     */
-  var challengeRequiredOnNewDevice: js.UndefOr[Boolean] = js.native
+  var challengeRequiredOnNewDevice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, a device is only remembered on user prompt.
     */
-  var deviceOnlyRememberedOnUserPrompt: js.UndefOr[Boolean] = js.native
+  var deviceOnlyRememberedOnUserPrompt: js.UndefOr[Boolean] = js.undefined
 }
 object UserPoolDeviceConfiguration {
   

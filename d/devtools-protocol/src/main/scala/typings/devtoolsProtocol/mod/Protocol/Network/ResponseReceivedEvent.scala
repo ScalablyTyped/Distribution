@@ -3,41 +3,39 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseReceivedEvent extends StObject {
   
   /**
     * Frame identifier.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Loader identifier. Empty string if the request is fetched from worker.
     */
-  var loaderId: LoaderId = js.native
+  var loaderId: LoaderId
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Response data.
     */
-  var response: Response = js.native
+  var response: Response
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
   
   /**
     * Resource type.
     */
-  var `type`: ResourceType = js.native
+  var `type`: ResourceType
 }
 object ResponseReceivedEvent {
   

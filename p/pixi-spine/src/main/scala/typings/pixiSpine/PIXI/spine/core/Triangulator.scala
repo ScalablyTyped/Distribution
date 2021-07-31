@@ -2,29 +2,27 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Triangulator extends StObject {
   
-  var convexPolygons: js.Any = js.native
+  var convexPolygons: js.Any
   
-  var convexPolygonsIndices: js.Any = js.native
+  var convexPolygonsIndices: js.Any
   
-  def decompose(verticesArray: js.Array[Double], triangles: js.Array[Double]): js.Array[js.Array[Double]] = js.native
+  def decompose(verticesArray: js.Array[Double], triangles: js.Array[Double]): js.Array[js.Array[Double]]
   
-  var indicesArray: js.Any = js.native
+  var indicesArray: js.Any
   
-  var isConcaveArray: js.Any = js.native
+  var isConcaveArray: js.Any
   
-  var polygonIndicesPool: js.Any = js.native
+  var polygonIndicesPool: js.Any
   
-  var polygonPool: js.Any = js.native
+  var polygonPool: js.Any
   
-  var triangles: js.Any = js.native
+  var triangles: js.Any
   
-  def triangulate(verticesArray: ArrayLike[Double]): js.Array[Double] = js.native
+  def triangulate(verticesArray: ArrayLike[Double]): js.Array[Double]
 }
 object Triangulator {
   

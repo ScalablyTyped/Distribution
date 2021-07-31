@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GkeClusterReference extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GkeClusterReference extends StObject {
     * `locations/{location}/clusters/{cluster}` * `{cluster}` If project and location are not specified, the project and location of the GameServerCluster resource are used to generate
     * the full name of the GKE cluster.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
 }
 object GkeClusterReference {
   

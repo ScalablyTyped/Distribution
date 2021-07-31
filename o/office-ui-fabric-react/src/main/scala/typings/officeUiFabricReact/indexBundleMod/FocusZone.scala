@@ -3,7 +3,6 @@ package typings.officeUiFabricReact.indexBundleMod
 import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "FocusZone")
@@ -37,7 +36,6 @@ object FocusZone {
   def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   /** Used for testing purposes only. */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "FocusZone.getOuterZones")
-  @js.native
-  def getOuterZones(): Double = js.native
+  @scala.inline
+  def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
 }

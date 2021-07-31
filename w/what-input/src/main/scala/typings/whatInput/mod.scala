@@ -2,46 +2,40 @@ package typings.whatInput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("what-input", "default.ask")
+    @JSImport("what-input", JSImport.Default)
     @js.native
-    def ask(): InputMethod = js.native
-    @JSImport("what-input", "default.ask")
-    @js.native
-    def ask(strategy: Strategy): InputMethod = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("what-input", "default.clearStorage")
-    @js.native
-    def clearStorage(): Unit = js.native
+    @scala.inline
+    def ask(): InputMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("ask")().asInstanceOf[InputMethod]
+    @scala.inline
+    def ask(strategy: Strategy): InputMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("ask")(strategy.asInstanceOf[js.Any]).asInstanceOf[InputMethod]
     
-    @JSImport("what-input", "default.element")
-    @js.native
-    def element(): String | Null = js.native
+    @scala.inline
+    def clearStorage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[Unit]
     
-    @JSImport("what-input", "default.ignoreKeys")
-    @js.native
-    def ignoreKeys(keyCodes: js.Array[Double]): Unit = js.native
+    @scala.inline
+    def element(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("element")().asInstanceOf[String | Null]
     
-    @JSImport("what-input", "default.registerOnChange")
-    @js.native
-    def registerOnChange(callback: js.Function1[/* type */ InputMethod, Unit]): Unit = js.native
-    @JSImport("what-input", "default.registerOnChange")
-    @js.native
-    def registerOnChange(callback: js.Function1[/* type */ InputMethod, Unit], strategy: Strategy): Unit = js.native
+    @scala.inline
+    def ignoreKeys(keyCodes: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreKeys")(keyCodes.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("what-input", "default.specificKeys")
-    @js.native
-    def specificKeys(keyCodes: js.Array[Double]): Unit = js.native
+    @scala.inline
+    def registerOnChange(callback: js.Function1[/* type */ InputMethod, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def registerOnChange(callback: js.Function1[/* type */ InputMethod, Unit], strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnChange")(callback.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("what-input", "default.unRegisterOnChange")
-    @js.native
-    def unRegisterOnChange(callback: js.Function1[/* type */ InputMethod, Unit]): Unit = js.native
+    @scala.inline
+    def specificKeys(keyCodes: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("specificKeys")(keyCodes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def unRegisterOnChange(callback: js.Function1[/* type */ InputMethod, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unRegisterOnChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /* Rewritten from type alias, can be one of: 

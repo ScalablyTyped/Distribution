@@ -2,10 +2,8 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompositeDefinition extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait ICompositeDefinition extends StObject {
     * @type body[]
     * @default []
     */
-  var bodies: js.UndefOr[js.Array[Body]] = js.native
+  var bodies: js.UndefOr[js.Array[Body]] = js.undefined
   
   /**
     * An array of `Composite` that are _direct_ children of this composite.
@@ -28,7 +26,7 @@ trait ICompositeDefinition extends StObject {
     * @type composite[]
     * @default []
     */
-  var composites: js.UndefOr[js.Array[Composite]] = js.native
+  var composites: js.UndefOr[js.Array[Composite]] = js.undefined
   
   /**
     * An array of `Constraint` that are _direct_ children of this composite.
@@ -39,7 +37,7 @@ trait ICompositeDefinition extends StObject {
     * @type constraint[]
     * @default []
     */
-  var constraints: js.UndefOr[js.Array[Constraint]] = js.native
+  var constraints: js.UndefOr[js.Array[Constraint]] = js.undefined
   
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
@@ -47,7 +45,7 @@ trait ICompositeDefinition extends StObject {
     * @property id
     * @type number
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag that specifies whether the composite has been modified during the current step.
@@ -58,7 +56,7 @@ trait ICompositeDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var isModified: js.UndefOr[Boolean] = js.native
+  var isModified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An arbitrary `String` name to help the user identify and manage composites.
@@ -67,7 +65,7 @@ trait ICompositeDefinition extends StObject {
     * @type string
     * @default "Composite"
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
@@ -76,7 +74,7 @@ trait ICompositeDefinition extends StObject {
     * @type composite
     * @default null
     */
-  var parent: js.UndefOr[Composite] = js.native
+  var parent: js.UndefOr[Composite] = js.undefined
   
   /**
     * A `String` denoting the type of object.
@@ -85,7 +83,7 @@ trait ICompositeDefinition extends StObject {
     * @type string
     * @default "composite"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ICompositeDefinition {
   

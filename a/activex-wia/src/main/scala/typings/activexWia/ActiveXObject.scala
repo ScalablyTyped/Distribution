@@ -9,10 +9,8 @@ import typings.activexWia.activexWiaStrings.ItemID
 import typings.activexWia.activexWiaStrings.OnEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObject extends StObject {
   
   def on(
@@ -20,10 +18,10 @@ trait ActiveXObject extends StObject {
     event: OnEvent,
     argNames: js.Tuple3[EventID, DeviceID, ItemID],
     handler: js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]
-  ): Unit = js.native
+  ): Unit
   
   @JSName("set")
-  def set_Item[TItem](obj: Vector[TItem], propertyName: Item, parameterTypes: js.Array[Double], newValue: TItem): Unit = js.native
+  def set_Item[TItem](obj: Vector[TItem], propertyName: Item, parameterTypes: js.Array[Double], newValue: TItem): Unit
 }
 object ActiveXObject {
   

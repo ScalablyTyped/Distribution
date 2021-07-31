@@ -1,30 +1,28 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.antiope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   head_sha :string} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksCreateSuiteEndpoint extends StObject {
+trait ChecksCreateSuiteEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
   /**
     * The sha of the head commit.
     */
-  var head_sha: String = js.native
+  var head_sha: String
   
-  var mediaType: `2` = js.native
+  var owner: String
   
-  var owner: String = js.native
-  
-  var repo: String = js.native
+  var repo: String
 }
 object ChecksCreateSuiteEndpoint {
   
   @scala.inline
-  def apply(head_sha: String, mediaType: `2`, owner: String, repo: String): ChecksCreateSuiteEndpoint = {
+  def apply(head_sha: String, mediaType: `0`[antiope], owner: String, repo: String): ChecksCreateSuiteEndpoint = {
     val __obj = js.Dynamic.literal(head_sha = head_sha.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateSuiteEndpoint]
   }
@@ -34,9 +32,6 @@ object ChecksCreateSuiteEndpoint {
     
     @scala.inline
     def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

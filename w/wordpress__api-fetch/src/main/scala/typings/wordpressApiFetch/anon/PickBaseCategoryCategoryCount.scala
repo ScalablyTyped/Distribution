@@ -5,35 +5,34 @@ import typings.wordpressApiFetch.mod.Schema.Category
 import typings.wordpressApiFetch.mod.Schema.TaxonomyKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BaseCategory, @wordpress/api-fetch.@wordpress/api-fetch.Schema.ViewKeys.Category> */
-@js.native
 trait PickBaseCategoryCategoryCount
-  extends Category[js.Any] {
+  extends StObject
+     with Category[js.Any] {
   
-  var _embedded: js.UndefOr[Record[String, js.Array[_]]] = js.native
+  var _embedded: js.UndefOr[Record[String, js.Array[js.Any]]] = js.undefined
   
-  var _links: Record[String, js.Array[Dictk]] = js.native
+  var _links: Record[String, js.Array[Dictk]]
   
-  var count: Double = js.native
+  var count: Double
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var name: String = js.native
+  var name: String
   
-  var parent: Double = js.native
+  var parent: Double
   
-  var slug: String = js.native
+  var slug: String
   
-  var taxonomy: TaxonomyKind = js.native
+  var taxonomy: TaxonomyKind
 }
 object PickBaseCategoryCategoryCount {
   
@@ -44,7 +43,7 @@ object PickBaseCategoryCategoryCount {
     description: String,
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     name: String,
     parent: Double,
     slug: String,
@@ -70,7 +69,7 @@ object PickBaseCategoryCategoryCount {
     def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))
@@ -88,7 +87,7 @@ object PickBaseCategoryCategoryCount {
     def setTaxonomy(value: TaxonomyKind): Self = StObject.set(x, "taxonomy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_embedded(value: Record[String, js.Array[_]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)

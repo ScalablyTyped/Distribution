@@ -3,17 +3,15 @@ package typings.openpgp.anon
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AeadAlgorithm extends StObject {
   
-  var aeadAlgorithm: String = js.native
+  var aeadAlgorithm: String
   
-  var algorithm: String = js.native
+  var algorithm: String
   
-  var data: Uint8Array = js.native
+  var data: Uint8Array
 }
 object AeadAlgorithm {
   

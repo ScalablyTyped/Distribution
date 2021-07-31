@@ -3,33 +3,32 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSTypeAliasDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSTypeAliasDeclaration_
-  extends Declaration
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSTypeAliasDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
-  var typeParameters: TSTypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSTypeAliasDeclaration_ : TSTypeAliasDeclaration = js.native
+  var type_TSTypeAliasDeclaration_ : TSTypeAliasDeclaration
 }
 object TSTypeAliasDeclaration_ {
   
   @scala.inline
-  def apply(id: Identifier_, `type`: TSTypeAliasDeclaration, typeAnnotation: TSType): TSTypeAliasDeclaration_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, typeAnnotation: TSType): TSTypeAliasDeclaration_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSTypeAliasDeclaration")
     __obj.asInstanceOf[TSTypeAliasDeclaration_]
   }
   

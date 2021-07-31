@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the properties of the table borders in a Table.
   */
-@js.native
 trait SchemaUpdateTableBorderPropertiesRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaUpdateTableBorderPropertiesRequest extends StObject {
     * border position is not specified, the updates will apply to all borders
     * in the table range.
     */
-  var borderPosition: js.UndefOr[String] = js.native
+  var borderPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The fields that should be updated.  At least one field must be specified.
@@ -27,24 +25,24 @@ trait SchemaUpdateTableBorderPropertiesRequest extends StObject {
     * property to its default value, include its field name in the field mask
     * but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the table.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The table border properties to update.
     */
-  var tableBorderProperties: js.UndefOr[SchemaTableBorderProperties] = js.native
+  var tableBorderProperties: js.UndefOr[SchemaTableBorderProperties] = js.undefined
   
   /**
     * The table range representing the subset of the table to which the updates
     * are applied. If a table range is not specified, the updates will apply to
     * the entire table.
     */
-  var tableRange: js.UndefOr[SchemaTableRange] = js.native
+  var tableRange: js.UndefOr[SchemaTableRange] = js.undefined
 }
 object SchemaUpdateTableBorderPropertiesRequest {
   

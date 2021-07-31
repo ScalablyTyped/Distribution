@@ -2,7 +2,6 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,8 +18,8 @@ trait QFieldValue extends StObject {
   
   var qText: String = js.native
   
-  def select(): js.Promise[_] = js.native
-  def select(toggle: js.UndefOr[scala.Nothing], softlock: Boolean): js.Promise[_] = js.native
-  def select(toggle: Boolean): js.Promise[_] = js.native
-  def select(toggle: Boolean, softlock: Boolean): js.Promise[_] = js.native
+  def select(): js.Promise[js.Any] = js.native
+  def select(toggle: Boolean): js.Promise[js.Any] = js.native
+  def select(toggle: Boolean, softlock: Boolean): js.Promise[js.Any] = js.native
+  def select(toggle: Unit, softlock: Boolean): js.Promise[js.Any] = js.native
 }

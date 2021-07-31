@@ -2,13 +2,13 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StationaryLocation extends Location {
+trait StationaryLocation
+  extends StObject
+     with Location {
   
-  var radius: Double = js.native
+  var radius: Double
 }
 object StationaryLocation {
   

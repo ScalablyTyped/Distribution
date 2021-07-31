@@ -10,9 +10,9 @@ Handy data structures for elements keyed by string.
 | ------------------ | :-------------: |
 | Full name          | d3-collection |
 | Keywords           | d3, d3-module, nest, data, map, set, object, collection |
-| # releases         | 4 |
-| # dependents       | 150 |
-| # downloads        | 61476431 |
+| # releases         | 1 |
+| # dependents       | 161 |
+| # downloads        | 70496478 |
 | # stars            | 1 |
 
 ## Links

@@ -7,7 +7,6 @@ import typings.reactTransitionGroup.reactTransitionGroupStrings.div
 import typings.reactTransitionGroup.transitionMod.TransitionActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionGroupMod {
@@ -74,31 +73,33 @@ object transitionGroupMod {
   class default ()
     extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
   
-  @js.native
-  trait ComponentTransitionGroupProps[T /* <: ReactType[_] */] extends TransitionActions {
+  trait ComponentTransitionGroupProps[T /* <: ReactType[js.Any] */]
+    extends StObject
+       with TransitionActions {
     
-    var component: T = js.native
+    var component: T
   }
   object ComponentTransitionGroupProps {
     
     @scala.inline
-    def apply[T /* <: ReactType[_] */](component: T): ComponentTransitionGroupProps[T] = {
+    def apply[T /* <: ReactType[js.Any] */](component: T): ComponentTransitionGroupProps[T] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentTransitionGroupProps[T]]
     }
     
     @scala.inline
-    implicit class ComponentTransitionGroupPropsMutableBuilder[Self <: ComponentTransitionGroupProps[_], T /* <: ReactType[_] */] (val x: Self with ComponentTransitionGroupProps[T]) extends AnyVal {
+    implicit class ComponentTransitionGroupPropsMutableBuilder[Self <: ComponentTransitionGroupProps[?], T /* <: ReactType[js.Any] */] (val x: Self & ComponentTransitionGroupProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends TransitionActions {
+  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */]
+    extends StObject
+       with TransitionActions {
     
-    var component: js.UndefOr[T | Null] = js.native
+    var component: js.UndefOr[T | Null] = js.undefined
   }
   object IntrinsicTransitionGroupProps {
     
@@ -109,7 +110,7 @@ object transitionGroupMod {
     }
     
     @scala.inline
-    implicit class IntrinsicTransitionGroupPropsMutableBuilder[Self <: IntrinsicTransitionGroupProps[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self with IntrinsicTransitionGroupProps[T]) extends AnyVal {
+    implicit class IntrinsicTransitionGroupPropsMutableBuilder[Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & IntrinsicTransitionGroupProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
@@ -181,5 +182,5 @@ object transitionGroupMod {
     */
   type TransitionGroup = Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
   
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, V /* <: ReactType[_] */] = (IntrinsicTransitionGroupProps[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] with Dictprop)
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, V /* <: ReactType[js.Any] */] = (IntrinsicTransitionGroupProps[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] & Dictprop)
 }

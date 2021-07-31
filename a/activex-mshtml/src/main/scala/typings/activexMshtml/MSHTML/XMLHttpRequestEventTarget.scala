@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLHttpRequestEventTarget extends StObject {
   
   @JSName("MSHTML.XMLHttpRequestEventTarget_typekey")
-  var MSHTMLDotXMLHttpRequestEventTarget_typekey: XMLHttpRequestEventTarget = js.native
+  var MSHTMLDotXMLHttpRequestEventTarget_typekey: XMLHttpRequestEventTarget
   
-  def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
   
-  def dispatchEvent(evt: IDOMEvent): Boolean = js.native
+  def dispatchEvent(evt: IDOMEvent): Boolean
   
-  def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
 }
 object XMLHttpRequestEventTarget {
   

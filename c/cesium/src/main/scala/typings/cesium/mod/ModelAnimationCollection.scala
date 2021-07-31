@@ -4,7 +4,6 @@ import typings.cesium.anon.Delay
 import typings.cesium.anon.RemoveOnStop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ModelAnimationCollection")
@@ -16,9 +15,9 @@ class ModelAnimationCollection () extends StObject {
   def addAll(): js.Array[ModelAnimation] = js.native
   def addAll(options: RemoveOnStop): js.Array[ModelAnimation] = js.native
   
-  var animationAdded: Event[js.Array[_]] = js.native
+  var animationAdded: Event[js.Array[js.Any]] = js.native
   
-  var animationRemoved: Event[js.Array[_]] = js.native
+  var animationRemoved: Event[js.Array[js.Any]] = js.native
   
   def contains(animation: ModelAnimation): Boolean = js.native
   

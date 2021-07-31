@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Fog")
@@ -15,10 +14,10 @@ class Fog protected ()
   def this(color: String, near: Double) = this()
   def this(color: Double, near: Double) = this()
   def this(color: typings.three.colorMod.Color, near: Double) = this()
-  def this(color: String, near: js.UndefOr[scala.Nothing], far: Double) = this()
   def this(color: String, near: Double, far: Double) = this()
-  def this(color: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
+  def this(color: String, near: Unit, far: Double) = this()
   def this(color: Double, near: Double, far: Double) = this()
-  def this(color: typings.three.colorMod.Color, near: js.UndefOr[scala.Nothing], far: Double) = this()
+  def this(color: Double, near: Unit, far: Double) = this()
   def this(color: typings.three.colorMod.Color, near: Double, far: Double) = this()
+  def this(color: typings.three.colorMod.Color, near: Unit, far: Double) = this()
 }

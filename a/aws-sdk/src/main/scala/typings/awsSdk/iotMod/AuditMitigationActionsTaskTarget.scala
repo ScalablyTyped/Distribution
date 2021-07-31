@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditMitigationActionsTaskTarget extends StObject {
   
   /**
     * Specifies a filter in the form of an audit check and set of reason codes that identify the findings from the audit to which the audit mitigation actions task apply.
     */
-  var auditCheckToReasonCodeFilter: js.UndefOr[AuditCheckToReasonCodeFilter] = js.native
+  var auditCheckToReasonCodeFilter: js.UndefOr[AuditCheckToReasonCodeFilter] = js.undefined
   
   /**
     * If the task will apply a mitigation action to findings from a specific audit, this value uniquely identifies the audit.
     */
-  var auditTaskId: js.UndefOr[AuditTaskId] = js.native
+  var auditTaskId: js.UndefOr[AuditTaskId] = js.undefined
   
   /**
     * If the task will apply a mitigation action to one or more listed findings, this value uniquely identifies those findings.
     */
-  var findingIds: js.UndefOr[FindingIds] = js.native
+  var findingIds: js.UndefOr[FindingIds] = js.undefined
 }
 object AuditMitigationActionsTaskTarget {
   

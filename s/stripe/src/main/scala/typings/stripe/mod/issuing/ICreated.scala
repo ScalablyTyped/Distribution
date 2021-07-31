@@ -2,31 +2,29 @@ package typings.stripe.mod.issuing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICreated extends StObject {
   
   /**
     * Return results where the created field is greater than this value.
     */
-  var gt: js.UndefOr[Double] = js.native
+  var gt: js.UndefOr[Double] = js.undefined
   
   /**
     * Return results where the created field is greater than or equal to this value.
     */
-  var gte: js.UndefOr[Double] = js.native
+  var gte: js.UndefOr[Double] = js.undefined
   
   /**
     * Return results where the created field is less than this value.
     */
-  var lt: js.UndefOr[Double] = js.native
+  var lt: js.UndefOr[Double] = js.undefined
   
   /**
     * Return results where the created field is less than or equal to this value.
     */
-  var lte: js.UndefOr[Double] = js.native
+  var lte: js.UndefOr[Double] = js.undefined
 }
 object ICreated {
   

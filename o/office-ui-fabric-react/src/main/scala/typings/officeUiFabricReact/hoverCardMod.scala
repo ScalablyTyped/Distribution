@@ -22,7 +22,6 @@ import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoverCardMod {
@@ -191,11 +190,11 @@ object hoverCardMod {
   object ExpandingCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode & Double] = js.native
     
-    /* 0 */ val compact: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact with Double = js.native
+    /* 0 */ val compact: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact & Double = js.native
     
-    /* 1 */ val expanded: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded with Double = js.native
+    /* 1 */ val expanded: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard", "HoverCard")
@@ -227,11 +226,11 @@ object hoverCardMod {
   object HoverCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType & String] = js.native
     
-    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.expanding with String = js.native
+    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.expanding & String = js.native
     
-    /* "PlainCard" */ val plain: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.plain with String = js.native
+    /* "PlainCard" */ val plain: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.plain & String = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard", "OpenCardMode")
@@ -239,11 +238,11 @@ object hoverCardMod {
   object OpenCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode & Double] = js.native
     
-    /* 1 */ val hotKey: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hotKey with Double = js.native
+    /* 1 */ val hotKey: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hotKey & Double = js.native
     
-    /* 0 */ val hover: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hover with Double = js.native
+    /* 0 */ val hover: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hover & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard", "PlainCard")

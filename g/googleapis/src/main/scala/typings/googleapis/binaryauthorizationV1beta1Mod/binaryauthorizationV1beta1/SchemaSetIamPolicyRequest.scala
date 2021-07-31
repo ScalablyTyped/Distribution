@@ -2,13 +2,11 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `SetIamPolicy` method.
   */
-@js.native
 trait SchemaSetIamPolicyRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSetIamPolicyRequest extends StObject {
     * policy but certain Cloud Platform services (such as Projects) might
     * reject them.
     */
-  var policy: js.UndefOr[SchemaIamPolicy] = js.native
+  var policy: js.UndefOr[SchemaIamPolicy] = js.undefined
 }
 object SchemaSetIamPolicyRequest {
   

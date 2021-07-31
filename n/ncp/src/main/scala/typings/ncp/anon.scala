@@ -8,35 +8,33 @@ import typings.node.fsMod.PathLike
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined ncp.ncp.Options & {  errs :node.fs.PathLike} */
-  @js.native
   trait OptionserrsPathLike extends StObject {
     
-    var clobber: js.UndefOr[Boolean] = js.native
+    var clobber: js.UndefOr[Boolean] = js.undefined
     
-    var dereference: js.UndefOr[Boolean] = js.native
+    var dereference: js.UndefOr[Boolean] = js.undefined
     
-    var errs: js.UndefOr[PathLike] with PathLike = js.native
+    var errs: js.UndefOr[PathLike] & PathLike
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.native
+    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var stopOnErr: js.UndefOr[Boolean] = js.native
+    var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object OptionserrsPathLike {
     
     @scala.inline
-    def apply(errs: js.UndefOr[PathLike] with PathLike): OptionserrsPathLike = {
+    def apply(errs: js.UndefOr[PathLike] & PathLike): OptionserrsPathLike = {
       val __obj = js.Dynamic.literal(errs = errs.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionserrsPathLike]
     }
@@ -57,7 +55,7 @@ object anon {
       def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
       @scala.inline
-      def setErrs(value: js.UndefOr[PathLike] with PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
+      def setErrs(value: js.UndefOr[PathLike] & PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
@@ -89,29 +87,28 @@ object anon {
   }
   
   /* Inlined ncp.ncp.Options & {  errs :undefined} */
-  @js.native
   trait Optionserrsundefined extends StObject {
     
-    var clobber: js.UndefOr[Boolean] = js.native
+    var clobber: js.UndefOr[Boolean] = js.undefined
     
-    var dereference: js.UndefOr[Boolean] = js.native
+    var dereference: js.UndefOr[Boolean] = js.undefined
     
-    var errs: js.UndefOr[PathLike] with js.UndefOr[scala.Nothing] = js.native
+    var errs: js.UndefOr[PathLike] & Unit
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.native
+    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var stopOnErr: js.UndefOr[Boolean] = js.native
+    var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Optionserrsundefined {
     
     @scala.inline
-    def apply(errs: js.UndefOr[PathLike] with js.UndefOr[scala.Nothing]): Optionserrsundefined = {
+    def apply(errs: js.UndefOr[PathLike] & Unit): Optionserrsundefined = {
       val __obj = js.Dynamic.literal(errs = errs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionserrsundefined]
     }
@@ -132,7 +129,7 @@ object anon {
       def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
       @scala.inline
-      def setErrs(value: js.UndefOr[PathLike] with js.UndefOr[scala.Nothing]): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
+      def setErrs(value: js.UndefOr[PathLike] & Unit): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
@@ -164,29 +161,28 @@ object anon {
   }
   
   /* Inlined ncp.ncp.Options & {  stopOnErr :true} */
-  @js.native
   trait OptionsstopOnErrtrue extends StObject {
     
-    var clobber: js.UndefOr[Boolean] = js.native
+    var clobber: js.UndefOr[Boolean] = js.undefined
     
-    var dereference: js.UndefOr[Boolean] = js.native
+    var dereference: js.UndefOr[Boolean] = js.undefined
     
-    var errs: js.UndefOr[PathLike] = js.native
+    var errs: js.UndefOr[PathLike] = js.undefined
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.native
+    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var stopOnErr: js.UndefOr[Boolean] with `true` = js.native
+    var stopOnErr: js.UndefOr[Boolean] & `true`
     
     var transform: js.UndefOr[
         js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object OptionsstopOnErrtrue {
     
     @scala.inline
-    def apply(stopOnErr: js.UndefOr[Boolean] with `true`): OptionsstopOnErrtrue = {
+    def apply(stopOnErr: js.UndefOr[Boolean] & `true`): OptionsstopOnErrtrue = {
       val __obj = js.Dynamic.literal(stopOnErr = stopOnErr.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsstopOnErrtrue]
     }
@@ -228,7 +224,7 @@ object anon {
       def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
       @scala.inline
-      def setStopOnErr(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
+      def setStopOnErr(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))

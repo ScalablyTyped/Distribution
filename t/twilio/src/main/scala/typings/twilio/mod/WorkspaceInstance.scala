@@ -2,23 +2,68 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkspaceInstance extends InstanceResource {
+trait WorkspaceInstance
+  extends StObject
+     with InstanceResource {
   
-  var activities: WorkspaceActivityResource = js.native
+  var activities: WorkspaceActivityResource
   
-  var events: WorkspaceEventResource = js.native
+  var events: WorkspaceEventResource
   
-  var statistics: WorkspaceInstanceStatisticResource = js.native
+  var statistics: WorkspaceInstanceStatisticResource
   
-  var taskQueues: WorkspaceTaskQueueResource = js.native
+  var taskQueues: WorkspaceTaskQueueResource
   
-  var tasks: WorkspaceTaskResource = js.native
+  var tasks: WorkspaceTaskResource
   
-  var workers: WorkspaceWorkerResource = js.native
+  var workers: WorkspaceWorkerResource
   
-  var workflows: WorkspaceWorkflowResource = js.native
+  var workflows: WorkspaceWorkflowResource
+}
+object WorkspaceInstance {
+  
+  @scala.inline
+  def apply(
+    activities: WorkspaceActivityResource,
+    delete: RestMethod,
+    events: WorkspaceEventResource,
+    get: RestMethod,
+    post: RestMethod,
+    statistics: WorkspaceInstanceStatisticResource,
+    taskQueues: WorkspaceTaskQueueResource,
+    tasks: WorkspaceTaskResource,
+    update: RestMethod,
+    workers: WorkspaceWorkerResource,
+    workflows: WorkspaceWorkflowResource
+  ): WorkspaceInstance = {
+    val __obj = js.Dynamic.literal(activities = activities.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], taskQueues = taskQueues.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any], workflows = workflows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkspaceInstance]
+  }
+  
+  @scala.inline
+  implicit class WorkspaceInstanceMutableBuilder[Self <: WorkspaceInstance] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setActivities(value: WorkspaceActivityResource): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEvents(value: WorkspaceEventResource): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTaskQueues(value: WorkspaceTaskQueueResource): Self = StObject.set(x, "taskQueues", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTasks(value: WorkspaceTaskResource): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWorkers(value: WorkspaceWorkerResource): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWorkflows(value: WorkspaceWorkflowResource): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
+  }
 }

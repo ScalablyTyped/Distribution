@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBackupResponse extends StObject {
   
   /**
     * The ID of the backup deleted.
     */
-  var BackupId: js.UndefOr[typings.awsSdk.fsxMod.BackupId] = js.native
+  var BackupId: js.UndefOr[typings.awsSdk.fsxMod.BackupId] = js.undefined
   
   /**
     * The lifecycle of the backup. Should be DELETED.
     */
-  var Lifecycle: js.UndefOr[BackupLifecycle] = js.native
+  var Lifecycle: js.UndefOr[BackupLifecycle] = js.undefined
 }
 object DeleteBackupResponse {
   

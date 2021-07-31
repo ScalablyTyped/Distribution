@@ -12,7 +12,7 @@ Makes executables from your scripts with Webpack
 | Keywords           | webpack, webpack-plugin, pkg, executable, binary |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10747 |
+| # downloads        | 6774 |
 | # stars            | 0 |
 
 ## Links

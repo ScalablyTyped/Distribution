@@ -2,7 +2,6 @@ package typings.defaultGateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,12 +22,11 @@ object mod {
     def sync(): Gateway = js.native
   }
   
-  @js.native
   trait Gateway extends StObject {
     
-    var gateway: String = js.native
+    var gateway: String
     
-    var interface: String = js.native
+    var interface: String
   }
   object Gateway {
     

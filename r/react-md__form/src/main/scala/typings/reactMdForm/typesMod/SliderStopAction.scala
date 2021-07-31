@@ -3,20 +3,20 @@ package typings.reactMdForm.typesMod
 import typings.reactMdForm.reactMdFormStrings.stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderStopAction extends SliderAction {
+trait SliderStopAction
+  extends StObject
+     with SliderAction {
   
-  var `type`: stop = js.native
+  var `type`: stop
 }
 object SliderStopAction {
   
   @scala.inline
-  def apply(`type`: stop): SliderStopAction = {
+  def apply(): SliderStopAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stop")
     __obj.asInstanceOf[SliderStopAction]
   }
   

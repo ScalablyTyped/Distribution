@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppInstanceUserResponse extends StObject {
   
   /**
     * The ARN of the app instance user.
     */
-  var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.undefined
 }
 object UpdateAppInstanceUserResponse {
   

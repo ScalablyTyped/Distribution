@@ -2,111 +2,109 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNotebookInstanceOutput extends StObject {
   
   /**
     * A list of the Elastic Inference (EI) instance types associated with this notebook instance. Currently only one EI instance type can be associated with a notebook instance. For more information, see Using Elastic Inference in Amazon SageMaker.
     */
-  var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.native
+  var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
   
   /**
     * An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
     */
-  var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.native
+  var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
   
   /**
     * A timestamp. Use this parameter to return the time when the notebook instance was created
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
     */
-  var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.native
+  var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
   
   /**
     * Describes whether Amazon SageMaker provides internet access to the notebook instance. If this value is set to Disabled, the notebook instance does not have internet access, and cannot connect to Amazon SageMaker training and endpoint services. For more information, see Notebook Instances Are Internet-Enabled by Default.
     */
-  var DirectInternetAccess: js.UndefOr[typings.awsSdk.sagemakerMod.DirectInternetAccess] = js.native
+  var DirectInternetAccess: js.UndefOr[typings.awsSdk.sagemakerMod.DirectInternetAccess] = js.undefined
   
   /**
     * If status is Failed, the reason it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The type of ML compute instance running on the notebook instance.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceType] = js.undefined
   
   /**
     * The AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance. 
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * A timestamp. Use this parameter to retrieve the time when the notebook instance was last modified. 
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The network interface IDs that Amazon SageMaker created at the time of creating the instance. 
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkInterfaceId] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkInterfaceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the notebook instance.
     */
-  var NotebookInstanceArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceArn] = js.native
+  var NotebookInstanceArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceArn] = js.undefined
   
   /**
     * Returns the name of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance 
     */
-  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName] = js.native
+  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName] = js.undefined
   
   /**
     * The name of the Amazon SageMaker notebook instance. 
     */
-  var NotebookInstanceName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceName] = js.native
+  var NotebookInstanceName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceName] = js.undefined
   
   /**
     * The status of the notebook instance.
     */
-  var NotebookInstanceStatus: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceStatus] = js.native
+  var NotebookInstanceStatus: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceStatus] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role associated with the instance. 
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.undefined
   
   /**
     * Whether root access is enabled or disabled for users of the notebook instance.  Lifecycle configurations need root access to be able to set up a notebook instance. Because of this, lifecycle configurations associated with a notebook instance always run with root access even if you disable root access for users. 
     */
-  var RootAccess: js.UndefOr[typings.awsSdk.sagemakerMod.RootAccess] = js.native
+  var RootAccess: js.UndefOr[typings.awsSdk.sagemakerMod.RootAccess] = js.undefined
   
   /**
     * The IDs of the VPC security groups.
     */
-  var SecurityGroups: js.UndefOr[SecurityGroupIds] = js.native
+  var SecurityGroups: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
     * The ID of the VPC subnet.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.sagemakerMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.sagemakerMod.SubnetId] = js.undefined
   
   /**
     * The URL that you use to connect to the Jupyter notebook that is running in your notebook instance. 
     */
-  var Url: js.UndefOr[NotebookInstanceUrl] = js.native
+  var Url: js.UndefOr[NotebookInstanceUrl] = js.undefined
   
   /**
     * The size, in GB, of the ML storage volume attached to the notebook instance.
     */
-  var VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.native
+  var VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
 }
 object DescribeNotebookInstanceOutput {
   

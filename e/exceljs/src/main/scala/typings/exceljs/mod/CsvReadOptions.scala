@@ -3,19 +3,17 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialFastCsvParserOptio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsvReadOptions extends StObject {
   
-  var dateFormats: js.Array[String] = js.native
+  var dateFormats: js.Array[String]
   
-  def map(value: js.Any, index: Double): js.Any = js.native
+  def map(value: js.Any, index: Double): js.Any
   
-  var parserOptions: PartialFastCsvParserOptio = js.native
+  var parserOptions: PartialFastCsvParserOptio
   
-  var sheetName: String = js.native
+  var sheetName: String
 }
 object CsvReadOptions {
   

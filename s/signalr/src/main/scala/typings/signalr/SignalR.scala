@@ -19,7 +19,6 @@ import typings.std.JSON
 import typings.std.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,11 +32,11 @@ trait SignalR extends StObject {
     * @param logging [Optional] A flag indicating whether connection logging is enabled to the browser console/log. Defaults to false.
     */
   def apply(url: String): Connection = js.native
-  def apply(url: String, queryString: js.UndefOr[scala.Nothing], logging: Boolean): Connection = js.native
   def apply(url: String, queryString: String): Connection = js.native
   def apply(url: String, queryString: String, logging: Boolean): Connection = js.native
   def apply(url: String, queryString: js.Object): Connection = js.native
   def apply(url: String, queryString: js.Object, logging: Boolean): Connection = js.native
+  def apply(url: String, queryString: Unit, logging: Boolean): Connection = js.native
   
   var ajaxDefaults: AjaxDefaults = js.native
   
@@ -50,9 +49,9 @@ trait SignalR extends StObject {
   var hub: typings.signalr.SignalR.Hub.Connection = js.native
   
   def hubConnection(): typings.signalr.SignalR.Hub.Connection = js.native
-  def hubConnection(url: js.UndefOr[scala.Nothing], options: Options): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String, options: Options): typings.signalr.SignalR.Hub.Connection = js.native
+  def hubConnection(url: Unit, options: Options): typings.signalr.SignalR.Hub.Connection = js.native
   @JSName("hubConnection")
   var hubConnection_Original: HubCreator = js.native
   
@@ -72,18 +71,17 @@ trait SignalR extends StObject {
 }
 object SignalR {
   
-  @js.native
   trait AjaxDefaults extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var global: Boolean = js.native
+    var global: Boolean
     
-    var processData: Boolean = js.native
+    var processData: Boolean
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object AjaxDefaults {
     
@@ -113,24 +111,23 @@ object SignalR {
     }
   }
   
-  @js.native
   trait AvailableEvents extends StObject {
     
-    var onConnectionSlow: String = js.native
+    var onConnectionSlow: String
     
-    var onDisconnect: String = js.native
+    var onDisconnect: String
     
-    var onError: String = js.native
+    var onError: String
     
-    var onReceived: String = js.native
+    var onReceived: String
     
-    var onReconnect: String = js.native
+    var onReconnect: String
     
-    var onStart: String = js.native
+    var onStart: String
     
-    var onStarting: String = js.native
+    var onStarting: String
     
-    var onStateChanged: String = js.native
+    var onStateChanged: String
   }
   object AvailableEvents {
     
@@ -283,26 +280,26 @@ object SignalR {
     /**
       * Starts the connection
       */
-    def start(): JQueryPromise[_] = js.native
+    def start(): JQueryPromise[js.Any] = js.native
     /**
       * Starts the connection
       *
       * @param callback A callback function to execute when the connection has started
       */
-    def start(callback: js.Function0[Unit]): JQueryPromise[_] = js.native
+    def start(callback: js.Function0[Unit]): JQueryPromise[js.Any] = js.native
     /**
       * Starts the connection
       *
       * @param options Options map
       */
-    def start(options: ConnectionOptions): JQueryPromise[_] = js.native
+    def start(options: ConnectionOptions): JQueryPromise[js.Any] = js.native
     /**
       * Starts the connection
       *
       * @param options Options map
       * @param calback A callback function to execute when the connection has started
       */
-    def start(options: ConnectionOptions, callback: js.Function0[Unit]): JQueryPromise[_] = js.native
+    def start(options: ConnectionOptions, callback: js.Function0[Unit]): JQueryPromise[js.Any] = js.native
     
     /**
       * Adds a callback that will be invoked before anything is sent over the connection
@@ -327,23 +324,24 @@ object SignalR {
       * @param notifyServer Whether we want to notify the server that we are aborting the connection
       */
     def stop(): Connection = js.native
-    def stop(async: js.UndefOr[scala.Nothing], notifyServer: Boolean): Connection = js.native
     def stop(async: Boolean): Connection = js.native
     def stop(async: Boolean, notifyServer: Boolean): Connection = js.native
+    def stop(async: Unit, notifyServer: Boolean): Connection = js.native
     
     var transportConnectTimeout: Double = js.native
     
     var url: String = js.native
   }
   
-  @js.native
-  trait ConnectionError extends Error {
+  trait ConnectionError
+    extends StObject
+       with Error {
     
-    var context: ConnectionErrorContext = js.native
+    var context: ConnectionErrorContext
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
   }
   object ConnectionError {
     
@@ -373,16 +371,15 @@ object SignalR {
     }
   }
   
-  @js.native
   trait ConnectionErrorContext extends StObject {
     
-    var readyState: Double = js.native
+    var readyState: Double
     
-    var responseText: String = js.native
+    var responseText: String
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object ConnectionErrorContext {
     
@@ -409,20 +406,19 @@ object SignalR {
     }
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var callback: js.UndefOr[js.Function] = js.native
+    var callback: js.UndefOr[js.Function] = js.undefined
     
-    var jsonp: js.UndefOr[Boolean] = js.native
+    var jsonp: js.UndefOr[Boolean] = js.undefined
     
-    var pingInterval: js.UndefOr[Double] = js.native
+    var pingInterval: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[String | js.Array[String] | Transport] = js.native
+    var transport: js.UndefOr[String | js.Array[String] | Transport] = js.undefined
     
-    var waitForPageLoad: js.UndefOr[Boolean] = js.native
+    var waitForPageLoad: js.UndefOr[Boolean] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectionOptions {
     
@@ -498,16 +494,15 @@ object SignalR {
     def Reconnecting: `2` = 2.asInstanceOf[`2`]
   }
   
-  @js.native
   trait ConnectionStates extends StObject {
     
-    var connected: Double = js.native
+    var connected: Double
     
-    var connecting: Double = js.native
+    var connecting: Double
     
-    var disconnected: Double = js.native
+    var disconnected: Double
     
-    var reconnecting: Double = js.native
+    var reconnecting: Double
   }
   object ConnectionStates {
     
@@ -536,16 +531,15 @@ object SignalR {
   
   object Hub {
     
-    @js.native
     trait ClientHubInvocation extends StObject {
       
-      var Args: String = js.native
+      var Args: String
       
-      var Hub: String = js.native
+      var Hub: String
       
-      var Method: String = js.native
+      var Method: String
       
-      var State: String = js.native
+      var State: String
     }
     object ClientHubInvocation {
       
@@ -574,7 +568,8 @@ object SignalR {
     
     @js.native
     trait Connection
-      extends typings.signalr.SignalR.Connection {
+      extends StObject
+         with typings.signalr.SignalR.Connection {
       
       /**
         * Creates a new proxy object for the given hub connection that can be used to invoke
@@ -595,10 +590,9 @@ object SignalR {
         typings.signalr.SignalR.Hub.Connection
       ]
     
-    @js.native
     trait IHub extends StObject {
       
-      def start(): Unit = js.native
+      def start(): Unit
     }
     object IHub {
       
@@ -616,14 +610,13 @@ object SignalR {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var logging: js.UndefOr[Boolean] = js.native
+      var logging: js.UndefOr[Boolean] = js.undefined
       
-      var qs: js.UndefOr[String] = js.native
+      var qs: js.UndefOr[String] = js.undefined
       
-      var useDefaultPath: js.UndefOr[Boolean] = js.native
+      var useDefaultPath: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -672,7 +665,7 @@ object SignalR {
         *
         * @param methodName The name of the server hub method.
         */
-      def invoke(methodName: String, args: js.Any*): JQueryPromise[_] = js.native
+      def invoke(methodName: String, args: js.Any*): JQueryPromise[js.Any] = js.native
       
       /**
         * Removes the callback invocation request from the server hub for the given event name.
@@ -695,58 +688,57 @@ object SignalR {
     }
   }
   
-  @js.native
   trait Resources extends StObject {
     
-    var errorDuringStartRequest: String = js.native
+    var errorDuringStartRequest: String
     
-    var errorOnNegotiate: String = js.native
+    var errorOnNegotiate: String
     
-    var errorParsingNegotiateResponse: String = js.native
+    var errorParsingNegotiateResponse: String
     
-    var errorParsingStartResponse: String = js.native
+    var errorParsingStartResponse: String
     
-    var eventSourceError: String = js.native
+    var eventSourceError: String
     
-    var eventSourceFailedToConnect: String = js.native
+    var eventSourceFailedToConnect: String
     
-    var invalidStartResponse: String = js.native
+    var invalidStartResponse: String
     
-    var longPollFailed: String = js.native
+    var longPollFailed: String
     
-    var noConnectionTransport: String = js.native
+    var noConnectionTransport: String
     
-    var noTransportOnInit: String = js.native
+    var noTransportOnInit: String
     
-    var nojQuery: String = js.native
+    var nojQuery: String
     
-    var parseFailed: String = js.native
+    var parseFailed: String
     
-    var pingServerFailed: String = js.native
+    var pingServerFailed: String
     
-    var pingServerFailedInvalidResponse: String = js.native
+    var pingServerFailedInvalidResponse: String
     
-    var pingServerFailedParse: String = js.native
+    var pingServerFailedParse: String
     
-    var pingServerFailedStatusCode: String = js.native
+    var pingServerFailedStatusCode: String
     
-    var protocolIncompatible: String = js.native
+    var protocolIncompatible: String
     
-    var reconnectTimeout: String = js.native
+    var reconnectTimeout: String
     
-    var reconnectWindowTimeout: String = js.native
+    var reconnectWindowTimeout: String
     
-    var sendFailed: String = js.native
+    var sendFailed: String
     
-    var stoppedDuringStartRequest: String = js.native
+    var stoppedDuringStartRequest: String
     
-    var stoppedWhileLoading: String = js.native
+    var stoppedWhileLoading: String
     
-    var stoppedWhileNegotiating: String = js.native
+    var stoppedWhileNegotiating: String
     
-    var webSocketClosed: String = js.native
+    var webSocketClosed: String
     
-    var webSocketsInvalidState: String = js.native
+    var webSocketsInvalidState: String
   }
   object Resources {
     
@@ -862,12 +854,11 @@ object SignalR {
     }
   }
   
-  @js.native
   trait SimplifyLocation extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object SimplifyLocation {
     
@@ -888,12 +879,11 @@ object SignalR {
     }
   }
   
-  @js.native
   trait StateChanged extends StObject {
     
-    var newState: Double = js.native
+    var newState: Double
     
-    var oldState: Double = js.native
+    var oldState: Double
   }
   object StateChanged {
     
@@ -914,28 +904,27 @@ object SignalR {
     }
   }
   
-  @js.native
   trait Transport extends StObject {
     
-    def abort(connection: Connection, async: Boolean): Unit = js.native
+    def abort(connection: Connection, async: Boolean): Unit
     
-    def lostConnection(connection: Connection): Unit = js.native
+    def lostConnection(connection: Connection): Unit
     
-    var name: String = js.native
+    var name: String
     
-    def reconnect(connection: Connection): Unit = js.native
+    def reconnect(connection: Connection): Unit
     
-    def send(connection: Connection, data: js.Any): Unit = js.native
+    def send(connection: Connection, data: js.Any): Unit
     
     def start(
       connection: Connection,
       onSuccess: js.Function0[Unit],
       onFailed: js.Function1[/* error */ js.UndefOr[ConnectionError], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def stop(connection: Connection): Unit = js.native
+    def stop(connection: Connection): Unit
     
-    def supportsKeepAlive(): Boolean = js.native
+    def supportsKeepAlive(): Boolean
   }
   object Transport {
     
@@ -985,16 +974,15 @@ object SignalR {
     }
   }
   
-  @js.native
   trait Transports extends StObject {
     
-    var foreverFrame: Transport = js.native
+    var foreverFrame: Transport
     
-    var longPolling: Transport = js.native
+    var longPolling: Transport
     
-    var serverSentEvents: Transport = js.native
+    var serverSentEvents: Transport
     
-    var webSockets: Transport = js.native
+    var webSockets: Transport
   }
   object Transports {
     

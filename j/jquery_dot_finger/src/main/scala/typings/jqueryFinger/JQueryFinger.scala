@@ -2,12 +2,10 @@ package typings.jqueryFinger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryFinger {
   
-  @js.native
   trait JQueryFingerOptions extends StObject {
     
     /**
@@ -15,7 +13,7 @@ object JQueryFinger {
       * If this time is reached, two distinct tap events will be fired instead.
       *     Default: 300(ms).
       */
-    var doubleTapInterval: Double = js.native
+    var doubleTapInterval: Double
     
     /**
       * The maximum time the user will have to swipe in order to fire a flick
@@ -23,7 +21,7 @@ object JQueryFinger {
       * fired.
       *     Default: 150(ms).
       */
-    var flickDuration: Double = js.native
+    var flickDuration: Double
     
     /**
       * The number of pixels the user will have to move in order to fire motion
@@ -31,20 +29,20 @@ object JQueryFinger {
       * be handled and tap, doubletap or press event will be fired.
       *     Default: 5(px).
       */
-    var motionThreshhold: Double = js.native
+    var motionThreshhold: Double
     
     /**
       * The time the user must hold in order to fire a press event. If this
       * time is not reached, a tap event will be fired instead.
       *     Default: 300(ms).
       */
-    var pressDuration: Double = js.native
+    var pressDuration: Double
     
     /**
       * Globally prevents every native default behavior.
       *     Default: undefined.
       */
-    var preventDefault: Boolean = js.native
+    var preventDefault: Boolean
   }
   object JQueryFingerOptions {
     

@@ -2,27 +2,26 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasImageDataOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 画布标识，传入 <canvas /> 的 canvas-id  */
-  var canvasId: String = js.native
+  var canvasId: String
   
   /** 将要被提取的图像数据矩形区域的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 将要被提取的图像数据矩形区域的宽度 */
-  var width: Double = js.native
+  var width: Double
   
   /** 将要被提取的图像数据矩形区域的左上角 x 坐标 */
-  var x: Double = js.native
+  var x: Double
   
   /** 将要被提取的图像数据矩形区域的左上角 y 坐标 */
-  var y: Double = js.native
+  var y: Double
 }
 object CanvasImageDataOptions {
   

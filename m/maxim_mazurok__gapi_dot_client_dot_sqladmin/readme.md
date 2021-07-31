@@ -10,9 +10,9 @@ TypeScript typings for Cloud SQL Admin API v1beta4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.sqladmin |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 91 |
+| # downloads        | 771 |
 | # stars            | 0 |
 
 ## Links

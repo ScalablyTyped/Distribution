@@ -2,15 +2,16 @@ package typings.highlightJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AsteriskMod {
   
-  @JSImport("highlight.js/lib/languages/*", JSImport.Default)
+  @JSImport("highlight.js/lib/languages/*", JSImport.Namespace)
   @js.native
-  def default(): LanguageDetail = js.native
-  @JSImport("highlight.js/lib/languages/*", JSImport.Default)
-  @js.native
-  def default(hljs: HLJSApi): LanguageDetail = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[LanguageDetail]
+  @scala.inline
+  def default(hljs: HLJSApi): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hljs.asInstanceOf[js.Any]).asInstanceOf[LanguageDetail]
 }

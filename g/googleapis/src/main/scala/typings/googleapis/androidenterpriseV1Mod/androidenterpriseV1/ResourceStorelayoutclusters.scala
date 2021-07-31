@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Storelayoutclusters")
@@ -32,7 +31,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStorelayoutclustersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStorelayoutclustersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaStoreCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def get(params: ParamsResourceStorelayoutclustersGet): GaxiosPromise[SchemaStoreCluster] = js.native
   def get(params: ParamsResourceStorelayoutclustersGet, callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def get(
@@ -94,7 +93,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaStoreCluster] = js.native
   def insert(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def insert(params: ParamsResourceStorelayoutclustersInsert): GaxiosPromise[SchemaStoreCluster] = js.native
   def insert(
     params: ParamsResourceStorelayoutclustersInsert,
@@ -127,7 +126,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaStoreLayoutClustersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
   def list(params: ParamsResourceStorelayoutclustersList): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
   def list(
     params: ParamsResourceStorelayoutclustersList,
@@ -162,7 +161,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaStoreCluster] = js.native
   def patch(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def patch(params: ParamsResourceStorelayoutclustersPatch): GaxiosPromise[SchemaStoreCluster] = js.native
   def patch(params: ParamsResourceStorelayoutclustersPatch, callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def patch(
@@ -194,7 +193,7 @@ class ResourceStorelayoutclusters protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaStoreCluster] = js.native
   def update(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def update(params: ParamsResourceStorelayoutclustersUpdate): GaxiosPromise[SchemaStoreCluster] = js.native
   def update(
     params: ParamsResourceStorelayoutclustersUpdate,

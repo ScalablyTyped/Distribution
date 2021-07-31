@@ -2,115 +2,113 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfSourceGenerationMatch extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any. */
-  var destinationBucket: String = js.native
+  var destinationBucket: String
   
   /**
     * Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the
     * object metadata's kms_key_name value, if any.
     */
-  var destinationKmsKeyName: js.UndefOr[String] = js.native
+  var destinationKmsKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any. For information about how to URL encode
     * object names to be path safe, see Encoding URI Path Parts.
     */
-  var destinationObject: String = js.native
+  var destinationObject: String
   
   /** Apply a predefined set of access controls to the destination object. */
-  var destinationPredefinedAcl: js.UndefOr[String] = js.native
+  var destinationPredefinedAcl: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions
     * of the object.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.native
+  var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the object's current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes
     * the operation succeed only if there is a live version of the object.
     */
-  var ifGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the destination object's current metageneration matches the given value. */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the destination object's current metageneration does not match the given value. */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the source object's current generation matches the given value. */
-  var ifSourceGenerationMatch: js.UndefOr[String] = js.native
+  var ifSourceGenerationMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the source object's current generation does not match the given value. */
-  var ifSourceGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifSourceGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the source object's current metageneration matches the given value. */
-  var ifSourceMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifSourceMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /** Makes the operation conditional on whether the source object's current metageneration does not match the given value. */
-  var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn't need to specify this parameter - it is primarily in place to support testing. If
     * specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes.
     * Finally, this value must not change across rewrite calls else you'll get an error that the rewriteToken is invalid.
     */
-  var maxBytesRewrittenPerCall: js.UndefOr[String] = js.native
+  var maxBytesRewrittenPerCall: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full. */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /** The project to be billed for this request if the target bucket is requester-pays bucket. */
-  var provisionalUserProject: js.UndefOr[String] = js.native
+  var provisionalUserProject: js.UndefOr[String] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
   // tslint:disable-next-line:ban-types
-  var resource: typings.maximMazurokGapiClientStorage.gapi.client.storage.Object = js.native
+  var resource: typings.maximMazurokGapiClientStorage.gapi.client.storage.Object
   
   /**
     * Include this field (from the previous rewrite response) on each rewrite request after the first one, until the rewrite response 'done' flag is true. Calls that provide a
     * rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.
     */
-  var rewriteToken: js.UndefOr[String] = js.native
+  var rewriteToken: js.UndefOr[String] = js.undefined
   
   /** Name of the bucket in which to find the source object. */
-  var sourceBucket: String = js.native
+  var sourceBucket: String
   
   /** If present, selects a specific revision of the source object (as opposed to the latest version, the default). */
-  var sourceGeneration: js.UndefOr[String] = js.native
+  var sourceGeneration: js.UndefOr[String] = js.undefined
   
   /** Name of the source object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts. */
-  var sourceObject: String = js.native
+  var sourceObject: String
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
   
   /** The project to be billed for this request. Required for Requester Pays buckets. */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object IfSourceGenerationMatch {
   

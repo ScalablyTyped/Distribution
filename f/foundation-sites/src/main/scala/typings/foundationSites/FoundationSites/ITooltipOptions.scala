@@ -2,39 +2,37 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITooltipOptions extends StObject {
   
-  var clickOpen: js.UndefOr[Boolean] = js.native
+  var clickOpen: js.UndefOr[Boolean] = js.undefined
   
-  var disableHover: js.UndefOr[Boolean] = js.native
+  var disableHover: js.UndefOr[Boolean] = js.undefined
   
-  var fadeInDuration: js.UndefOr[Double] = js.native
+  var fadeInDuration: js.UndefOr[Double] = js.undefined
   
-  var fadeOutDuration: js.UndefOr[Double] = js.native
+  var fadeOutDuration: js.UndefOr[Double] = js.undefined
   
-  var hOffset: js.UndefOr[Double] = js.native
+  var hOffset: js.UndefOr[Double] = js.undefined
   
-  var hoverDelay: js.UndefOr[Double] = js.native
+  var hoverDelay: js.UndefOr[Double] = js.undefined
   
-  var positionClass: js.UndefOr[String] = js.native
+  var positionClass: js.UndefOr[String] = js.undefined
   
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateClasses: js.UndefOr[String] = js.native
+  var templateClasses: js.UndefOr[String] = js.undefined
   
-  var tipText: js.UndefOr[String] = js.native
+  var tipText: js.UndefOr[String] = js.undefined
   
-  var tooltipClass: js.UndefOr[String] = js.native
+  var tooltipClass: js.UndefOr[String] = js.undefined
   
-  var triggerClass: js.UndefOr[String] = js.native
+  var triggerClass: js.UndefOr[String] = js.undefined
   
-  var vOffset: js.UndefOr[Double] = js.native
+  var vOffset: js.UndefOr[Double] = js.undefined
 }
 object ITooltipOptions {
   

@@ -2,18 +2,16 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // declare var RegExp: RegExpConstructor;
-@js.native
 trait Error extends StObject {
   
-  var message: java.lang.String = js.native
+  var message: java.lang.String
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var stack: js.UndefOr[java.lang.String] = js.native
+  var stack: js.UndefOr[java.lang.String] = js.undefined
 }
 object Error {
   

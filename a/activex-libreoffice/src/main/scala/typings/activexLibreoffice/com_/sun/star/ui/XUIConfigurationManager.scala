@@ -8,15 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a user interface configuration manager interface which controls the structure of all customizable user interface elements.
   * @since OOo 2.0
   */
-@js.native
-trait XUIConfigurationManager extends XInterface {
+trait XUIConfigurationManager
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the events manager from the user interface configuration manager.
@@ -25,7 +25,7 @@ trait XUIConfigurationManager extends XInterface {
     * document.
     * @returns the events manager of the user interface configuration manager, if one exists.
     */
-  val EventsManager: XInterface = js.native
+  val EventsManager: XInterface
   
   /**
     * retrieves the image manager from the user interface configuration manager.
@@ -33,7 +33,7 @@ trait XUIConfigurationManager extends XInterface {
     * Every user interface configuration manager has one image manager instance which controls all images of a module or document.
     * @returns the image manager of the user interface configuration manager.
     */
-  val ImageManager: XInterface = js.native
+  val ImageManager: XInterface
   
   /**
     * retrieves the keyboard short cut manager from the user interface configuration manager.
@@ -41,13 +41,13 @@ trait XUIConfigurationManager extends XInterface {
     * Every user interface configuration manager has one keyboard short cut manager instance which controls all short cuts of a module or document.
     * @returns the short cut manager of the user interface configuration manager.
     */
-  val ShortCutManager: XAcceleratorConfiguration = js.native
+  val ShortCutManager: XAcceleratorConfiguration
   
   /**
     * creates an empty settings data container.
     * @returns an empty user interface element settings data container, which implements {@link UIElementSettings} .
     */
-  def createSettings(): XIndexContainer = js.native
+  def createSettings(): XIndexContainer
   
   /**
     * retrieves the events manager from the user interface configuration manager.
@@ -56,7 +56,7 @@ trait XUIConfigurationManager extends XInterface {
     * document.
     * @returns the events manager of the user interface configuration manager, if one exists.
     */
-  def getEventsManager(): XInterface = js.native
+  def getEventsManager(): XInterface
   
   /**
     * retrieves the image manager from the user interface configuration manager.
@@ -64,7 +64,7 @@ trait XUIConfigurationManager extends XInterface {
     * Every user interface configuration manager has one image manager instance which controls all images of a module or document.
     * @returns the image manager of the user interface configuration manager.
     */
-  def getImageManager(): XInterface = js.native
+  def getImageManager(): XInterface
   
   /**
     * retrieves the settings of a user interface element.
@@ -72,7 +72,7 @@ trait XUIConfigurationManager extends XInterface {
     * @param bWriteable must be `TRUE` if the retrieved settings should be a writable. Otherwise `FALSE` should be provided to get a shareable reference to th
     * @returns settings data of an existing user interface element, which implements {@link UIElementSettings} . If the settings data cannot be found a {@link c
     */
-  def getSettings(ResourceURL: String, bWriteable: Boolean): XIndexAccess = js.native
+  def getSettings(ResourceURL: String, bWriteable: Boolean): XIndexAccess
   
   /**
     * retrieves the keyboard short cut manager from the user interface configuration manager.
@@ -80,7 +80,7 @@ trait XUIConfigurationManager extends XInterface {
     * Every user interface configuration manager has one keyboard short cut manager instance which controls all short cuts of a module or document.
     * @returns the short cut manager of the user interface configuration manager.
     */
-  def getShortCutManager(): XAcceleratorConfiguration = js.native
+  def getShortCutManager(): XAcceleratorConfiguration
   
   /**
     * retrieves information about all user interface elements within the user interface configuration manager.
@@ -88,34 +88,34 @@ trait XUIConfigurationManager extends XInterface {
     * @returns returns all user interface elements within the user interface configuration manager that meet the given ElementType specification. The following
     * @see UIElementType
     */
-  def getUIElementsInfo(ElementType: Double): SafeArray[SafeArray[PropertyValue]] = js.native
+  def getUIElementsInfo(ElementType: Double): SafeArray[SafeArray[PropertyValue]]
   
   /**
     * determines if the settings of a user interface element is part the user interface configuration manager.
     * @param ResourceURL a resource URL which identifies the user interface element. A resource URL must meet the following syntax: "private:resource/$type/$n
     * @returns `TRUE` if settings have been found, otherwise `FALSE` .
     */
-  def hasSettings(ResourceURL: String): Boolean = js.native
+  def hasSettings(ResourceURL: String): Boolean
   
   /**
     * inserts the settings of a new user interface element.
     * @param NewResourceURL a resource URL which identifies the new user interface element.
     * @param aNewData the settings data of the new user interface element, which implements {@link UIElementSettings} .  If the settings data is already prese
     */
-  def insertSettings(NewResourceURL: String, aNewData: XIndexAccess): Unit = js.native
+  def insertSettings(NewResourceURL: String, aNewData: XIndexAccess): Unit
   
   /**
     * removes the settings of an existing user interface element.
     * @param ResourceURL a resource URL which identifies the user interface element settings to be removed.  If the settings data cannot be found a {@link com
     */
-  def removeSettings(ResourceURL: String): Unit = js.native
+  def removeSettings(ResourceURL: String): Unit
   
   /**
     * replaces the settings of a user interface element with new settings.
     * @param ResourceURL a resource URL which identifies the user interface element to be replaced. If no element with the given resource URL exists a {@link
     * @param aNewData the new settings data of an existing user interface element, which implements {@link UIElementSettings} .  If the settings data cannot b
     */
-  def replaceSettings(ResourceURL: String, aNewData: XIndexAccess): Unit = js.native
+  def replaceSettings(ResourceURL: String, aNewData: XIndexAccess): Unit
   
   /**
     * resets the configuration manager to the default user interface configuration data.
@@ -124,7 +124,7 @@ trait XUIConfigurationManager extends XInterface {
     * user defined elements, but set all other elements back to default. It is not possible to remove default elements from a module user interface
     * configuration manager.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object XUIConfigurationManager {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingGoogleUpdateInsight extends StObject {
   
   /** The name of the Google-provided library with the non-SDK API dependency. */
-  var nameOfGoogleLibrary: js.UndefOr[String] = js.native
+  var nameOfGoogleLibrary: js.UndefOr[String] = js.undefined
 }
 object PendingGoogleUpdateInsight {
   

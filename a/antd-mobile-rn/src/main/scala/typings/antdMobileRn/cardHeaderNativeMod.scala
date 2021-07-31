@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardHeaderNativeMod {
@@ -34,14 +33,15 @@ object cardHeaderNativeMod {
   trait CardHeader
     extends Component[CardHeaderProps, js.Any, js.Any]
   
-  @js.native
-  trait CardHeaderProps extends CardHeaderPropsType {
+  trait CardHeaderProps
+    extends StObject
+       with CardHeaderPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var thumbStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var thumbStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   }
   object CardHeaderProps {
     

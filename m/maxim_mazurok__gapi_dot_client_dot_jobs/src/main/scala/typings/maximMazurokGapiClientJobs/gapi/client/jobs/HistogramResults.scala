@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramResults extends StObject {
   
   /** Specifies compensation field-based histogram results that match HistogramFacets.compensation_histogram_requests. */
-  var compensationHistogramResults: js.UndefOr[js.Array[CompensationHistogramResult]] = js.native
+  var compensationHistogramResults: js.UndefOr[js.Array[CompensationHistogramResult]] = js.undefined
   
   /** Specifies histogram results for custom attributes that match HistogramFacets.custom_attribute_histogram_facets. */
-  var customAttributeHistogramResults: js.UndefOr[js.Array[CustomAttributeHistogramResult]] = js.native
+  var customAttributeHistogramResults: js.UndefOr[js.Array[CustomAttributeHistogramResult]] = js.undefined
   
   /** Specifies histogram results that matches HistogramFacets.simple_histogram_facets. */
-  var simpleHistogramResults: js.UndefOr[js.Array[HistogramResult]] = js.native
+  var simpleHistogramResults: js.UndefOr[js.Array[HistogramResult]] = js.undefined
 }
 object HistogramResults {
   

@@ -4,41 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceResponse extends StObject {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var bodySize: Double = js.native
+  var bodySize: Double
   
-  var contentCharset: String = js.native
+  var contentCharset: String
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var httpVersion: HttpVersion = js.native
+  var httpVersion: HttpVersion
   
-  var id: Double = js.native
+  var id: Double
   
-  var isFileDownloading: Boolean = js.native
+  var isFileDownloading: Boolean
   
-  var redirectURL: js.UndefOr[String] = js.native
+  var redirectURL: js.UndefOr[String] = js.undefined
   
-  var referrer: String = js.native
+  var referrer: String
   
-  var stage: String = js.native
+  var stage: String
   
-  var status: Double = js.native
+  var status: Double
   
-  var statusText: String = js.native
+  var statusText: String
   
-  var time: Date = js.native
+  var time: Date
   
-  var url: String = js.native
+  var url: String
 }
 object ResourceResponse {
   

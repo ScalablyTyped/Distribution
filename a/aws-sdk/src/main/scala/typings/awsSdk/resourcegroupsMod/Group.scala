@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
     * The description of the resource group.
     */
-  var Description: js.UndefOr[typings.awsSdk.resourcegroupsMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.resourcegroupsMod.Description] = js.undefined
   
   /**
     * The ARN of the resource group.
     */
-  var GroupArn: typings.awsSdk.resourcegroupsMod.GroupArn = js.native
+  var GroupArn: typings.awsSdk.resourcegroupsMod.GroupArn
   
   /**
     * The name of the resource group.
     */
-  var Name: GroupName = js.native
+  var Name: GroupName
 }
 object Group {
   

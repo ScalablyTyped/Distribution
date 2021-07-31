@@ -2,32 +2,30 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
   /** 上午 */
-  var am: String = js.native
+  var am: String
   
   /** 日 */
-  var day: String = js.native
+  var day: String
   
   /** 时 */
-  var hour: String = js.native
+  var hour: String
   
   /** 分 */
-  var minute: String = js.native
+  var minute: String
   
   /** 月 */
-  var month: String = js.native
+  var month: String
   
   /** 下午 */
-  var pm: String = js.native
+  var pm: String
   
   /** 年 */
-  var year: String = js.native
+  var year: String
 }
 object Day {
   

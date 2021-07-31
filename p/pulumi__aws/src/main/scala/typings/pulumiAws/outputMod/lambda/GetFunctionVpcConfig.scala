@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionVpcConfig extends StObject {
   
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object GetFunctionVpcConfig {
   

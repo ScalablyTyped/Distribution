@@ -3,19 +3,17 @@ package typings.reactDndMultiBackend
 import typings.reactDndMultiBackend.mod.Backends
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Context extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var debugMode: js.UndefOr[Boolean] = js.native
+    var debugMode: js.UndefOr[Boolean] = js.undefined
     
-    var options: Backends = js.native
+    var options: Backends
   }
   object Context {
     

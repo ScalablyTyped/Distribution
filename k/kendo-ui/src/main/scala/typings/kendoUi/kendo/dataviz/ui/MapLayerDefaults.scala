@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerDefaults extends StObject {
   
-  var bing: js.UndefOr[MapLayerDefaultsBing] = js.native
+  var bing: js.UndefOr[MapLayerDefaultsBing] = js.undefined
   
-  var bubble: js.UndefOr[MapLayerDefaultsBubble] = js.native
+  var bubble: js.UndefOr[MapLayerDefaultsBubble] = js.undefined
   
-  var marker: js.UndefOr[MapLayerDefaultsMarker] = js.native
+  var marker: js.UndefOr[MapLayerDefaultsMarker] = js.undefined
   
-  var shape: js.UndefOr[MapLayerDefaultsShape] = js.native
+  var shape: js.UndefOr[MapLayerDefaultsShape] = js.undefined
   
-  var tile: js.UndefOr[MapLayerDefaultsTile] = js.native
+  var tile: js.UndefOr[MapLayerDefaultsTile] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
 }
 object MapLayerDefaults {
   

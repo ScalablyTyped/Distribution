@@ -11,9 +11,9 @@ Move files and folders to the trash
 | Full name          | trash |
 | Keywords           | trash, recycle, bin, rm, rmrf, rimraf, remove, delete, del, file, files, directory, directories, folder, folders, xdg |
 | # releases         | 7 |
-| # dependents       | 101 |
-| # downloads        | 1440628 |
-| # stars            | 29 |
+| # dependents       | 109 |
+| # downloads        | 2375254 |
+| # stars            | 28 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/trash#readme)

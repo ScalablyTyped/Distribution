@@ -3,26 +3,26 @@ package typings.swaggerJsdoc
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("swagger-jsdoc", JSImport.Namespace)
-  @js.native
-  def apply(): js.Object = js.native
-  @JSImport("swagger-jsdoc", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Object = js.native
+  @scala.inline
+  def apply(): js.Object = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Object]
+  @scala.inline
+  def apply(options: Options): js.Object = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
+  @JSImport("swagger-jsdoc", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ApiInformation extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var version: String = js.native
+    var version: String
   }
   object ApiInformation {
     
@@ -49,15 +49,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var apis: js.UndefOr[js.Array[String]] = js.native
+    var apis: js.UndefOr[js.Array[String]] = js.undefined
     
-    var definition: js.UndefOr[SwaggerDefinition] = js.native
+    var definition: js.UndefOr[SwaggerDefinition] = js.undefined
     
-    var swaggerDefinition: js.UndefOr[SwaggerDefinition] = js.native
+    var swaggerDefinition: js.UndefOr[SwaggerDefinition] = js.undefined
   }
   object Options {
     
@@ -93,11 +93,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerInformation
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var url: String = js.native
+    var url: String
   }
   object ServerInformation {
     
@@ -115,19 +115,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SwaggerDefinition
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var info: ApiInformation = js.native
+    var info: ApiInformation
     
-    var openapi: js.UndefOr[String] = js.native
+    var openapi: js.UndefOr[String] = js.undefined
     
-    var servers: js.UndefOr[js.Array[ServerInformation]] = js.native
+    var servers: js.UndefOr[js.Array[ServerInformation]] = js.undefined
   }
   object SwaggerDefinition {
     

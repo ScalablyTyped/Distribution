@@ -2,7 +2,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,29 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * branched release. When creating deployments, the version to use must be
   * specified.
   */
-@js.native
 trait SchemaVersion extends StObject {
   
   /**
     * When the version was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The description for this version.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The script project&#39;s Drive ID.
     */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
   
   /**
     * The incremental ID that is created by Apps Script when a version is
     * created. This is system assigned number and is immutable once created.
     */
-  var versionNumber: js.UndefOr[Double] = js.native
+  var versionNumber: js.UndefOr[Double] = js.undefined
 }
 object SchemaVersion {
   

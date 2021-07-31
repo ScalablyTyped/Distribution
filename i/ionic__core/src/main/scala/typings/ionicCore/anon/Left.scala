@@ -2,15 +2,13 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var `animation-delay`: String = js.native
+  var `animation-delay`: String
   
-  var left: String = js.native
+  var left: String
 }
 object Left {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * When the image was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The description of the image.
     */
-  var Description: js.UndefOr[ImageDescription] = js.native
+  var Description: js.UndefOr[ImageDescription] = js.undefined
   
   /**
     * The name of the image as displayed.
     */
-  var DisplayName: js.UndefOr[ImageDisplayName] = js.native
+  var DisplayName: js.UndefOr[ImageDisplayName] = js.undefined
   
   /**
     * When a create, update, or delete operation fails, the reason for the failure.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image.
     */
-  var ImageArn: typings.awsSdk.sagemakerMod.ImageArn = js.native
+  var ImageArn: typings.awsSdk.sagemakerMod.ImageArn
   
   /**
     * The name of the image.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * The status of the image.
     */
-  var ImageStatus: typings.awsSdk.sagemakerMod.ImageStatus = js.native
+  var ImageStatus: typings.awsSdk.sagemakerMod.ImageStatus
   
   /**
     * When the image was last modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
 }
 object Image {
   

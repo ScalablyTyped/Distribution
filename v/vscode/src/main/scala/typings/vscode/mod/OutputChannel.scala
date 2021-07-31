@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,7 +48,7 @@ trait OutputChannel extends StObject {
     * @param preserveFocus When `true` the channel will not take focus.
     */
   def show(): Unit = js.native
-  def show(column: js.UndefOr[scala.Nothing], preserveFocus: Boolean): Unit = js.native
+  def show(column: Unit, preserveFocus: Boolean): Unit = js.native
   def show(column: ViewColumn): Unit = js.native
   def show(column: ViewColumn, preserveFocus: Boolean): Unit = js.native
   def show(preserveFocus: Boolean): Unit = js.native

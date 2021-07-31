@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to navigate to the previous data record of the bound data source.
   */
-@js.native
-trait GoToPreviousDataRecordCommand extends CommandWithSimpleStateBase {
+trait GoToPreviousDataRecordCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the GoToPreviousDataRecordCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object GoToPreviousDataRecordCommand {
   

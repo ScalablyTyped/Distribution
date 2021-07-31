@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadLineItemsRequest extends StObject {
   
   /** Set to true to get upload status without actually persisting the line items. */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** Format the line items are in. Default to CSV. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** Line items in CSV to upload. Refer to Entity Write File Format for more information on file format. */
-  var lineItems: js.UndefOr[String] = js.native
+  var lineItems: js.UndefOr[String] = js.undefined
 }
 object UploadLineItemsRequest {
   

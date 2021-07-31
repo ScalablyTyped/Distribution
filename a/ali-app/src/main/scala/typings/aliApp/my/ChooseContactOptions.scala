@@ -8,30 +8,29 @@ import typings.aliApp.aliAppStrings.single
 import typings.aliApp.anon.ContactsDicArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseContactOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 选择类型，值为single（单选）或者 multi（多选） */
-  var chooseType: single | multi | String = js.native
+  var chooseType: single | multi | String
   
   /** 是否包含自己 */
-  var includeMe: js.UndefOr[Boolean] = js.native
+  var includeMe: js.UndefOr[Boolean] = js.undefined
   
   /** 包含手机通讯录联系人的模式：默认为不包含（none）、或者仅仅包含双向通讯录联系人（known）、或者包含手机通讯录联系人（all） */
-  var includeMobileContactMode: js.UndefOr[none | known | all | String] = js.native
+  var includeMobileContactMode: js.UndefOr[none | known | all | String] = js.undefined
   
   /** 最大选择人数，仅 chooseType 为 multi 时才有效 */
-  var multiChooseMax: js.UndefOr[Double] = js.native
+  var multiChooseMax: js.UndefOr[Double] = js.undefined
   
   /** 多选达到上限的文案，仅 chooseType 为 multi 时才有效 */
-  var multiChooseMaxTips: js.UndefOr[String] = js.native
+  var multiChooseMaxTips: js.UndefOr[String] = js.undefined
   
   @JSName("success")
-  def success_MChooseContactOptions(result: ContactsDicArray): Unit = js.native
+  def success_MChooseContactOptions(result: ContactsDicArray): Unit
 }
 object ChooseContactOptions {
   

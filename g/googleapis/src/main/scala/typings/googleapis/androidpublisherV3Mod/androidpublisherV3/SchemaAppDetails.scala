@@ -2,31 +2,29 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAppDetails extends StObject {
   
   /**
     * The user-visible support email for this app.
     */
-  var contactEmail: js.UndefOr[String] = js.native
+  var contactEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The user-visible support telephone number for this app.
     */
-  var contactPhone: js.UndefOr[String] = js.native
+  var contactPhone: js.UndefOr[String] = js.undefined
   
   /**
     * The user-visible website for this app.
     */
-  var contactWebsite: js.UndefOr[String] = js.native
+  var contactWebsite: js.UndefOr[String] = js.undefined
   
   /**
     * Default language code, in BCP 47 format (eg &quot;en-US&quot;).
     */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
 }
 object SchemaAppDetails {
   

@@ -2,23 +2,21 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDecorationOptions extends StObject {
   
   /**
     * CSS color to render.
     * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
     */
-  var color: js.UndefOr[String | ThemeColor] = js.native
+  var color: js.UndefOr[String | ThemeColor] = js.undefined
   
   /**
     * CSS color to render.
     * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
     */
-  var darkColor: js.UndefOr[String | ThemeColor] = js.native
+  var darkColor: js.UndefOr[String | ThemeColor] = js.undefined
 }
 object IDecorationOptions {
   

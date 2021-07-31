@@ -6,7 +6,6 @@ import typings.chrome.chrome.tabs.Tab
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -19,14 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object browserAction {
   
-  @js.native
   trait BadgeBackgroundColorDetails extends StObject {
     
     /** An array of four integers in the range [0,255] that make up the RGBA color of the badge. For example, opaque red is [255, 0, 0, 255]. Can also be a string with a CSS value, with opaque red being #FF0000 or #F00. */
-    var color: String | typings.chrome.chrome.browserAction.ColorArray = js.native
+    var color: String | typings.chrome.chrome.browserAction.ColorArray
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object BadgeBackgroundColorDetails {
     
@@ -50,14 +48,13 @@ object browserAction {
     }
   }
   
-  @js.native
   trait BadgeTextDetails extends StObject {
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** Any number of characters can be passed, but only about four can fit in the space. */
-    var text: String = js.native
+    var text: String
   }
   object BadgeTextDetails {
     
@@ -85,14 +82,13 @@ object browserAction {
   
   type ColorArray = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait PopupDetails extends StObject {
     
     /** The html file to show in a popup. If set to the empty string (''), no popup is shown. */
-    var popup: String = js.native
+    var popup: String
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object PopupDetails {
     
@@ -116,11 +112,10 @@ object browserAction {
     }
   }
   
-  @js.native
   trait TabDetails extends StObject {
     
     /** Optional. Specify the tab to get the information. If no tab is specified, the non-tab-specific information is returned.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object TabDetails {
     
@@ -141,17 +136,16 @@ object browserAction {
     }
   }
   
-  @js.native
   trait TabIconDetails extends StObject {
     
     /** Optional. Either an ImageData object or a dictionary {size -> ImageData} representing icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals scale, then image with size scale * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'  */
-    var imageData: js.UndefOr[ImageData | NumberDictionary[ImageData]] = js.native
+    var imageData: js.UndefOr[ImageData | NumberDictionary[ImageData]] = js.undefined
     
     /** Optional. Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals scale, then image with size scale * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.path = foo' is equivalent to 'details.imageData = {'19': foo}'  */
-    var path: js.UndefOr[js.Any] = js.native
+    var path: js.UndefOr[js.Any] = js.undefined
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object TabIconDetails {
     
@@ -184,14 +178,13 @@ object browserAction {
     }
   }
   
-  @js.native
   trait TitleDetails extends StObject {
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** The string the browser action should display when moused over. */
-    var title: String = js.native
+    var title: String
   }
   object TitleDetails {
     

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object EasEncryptionProviderType extends StObject {
   
   /** The encryption provider type has not yet been determined. */
   @js.native
-  sealed trait notEvaluated extends EasEncryptionProviderType
+  sealed trait notEvaluated
+    extends StObject
+       with EasEncryptionProviderType
   
   /** The encryption provider is a non-Windows provider. */
   @js.native
-  sealed trait otherEncryption extends EasEncryptionProviderType
+  sealed trait otherEncryption
+    extends StObject
+       with EasEncryptionProviderType
   
   /** The encryption provider is a Windows provider. */
   @js.native
-  sealed trait windowsEncryption extends EasEncryptionProviderType
+  sealed trait windowsEncryption
+    extends StObject
+       with EasEncryptionProviderType
 }

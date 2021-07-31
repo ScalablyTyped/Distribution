@@ -2,19 +2,17 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartsQuery extends StObject {
   
   // Starting position of a specific list. A part is listed only when the part number is greater than the value of this parameter.
-  var `encoding-type`: String = js.native
+  var `encoding-type`: String
   
-  var `max-parts`: Double = js.native
+  var `max-parts`: Double
   
   // The maximum part number in the response of the OSS. default value: 1000.
-  var `part-number-marker`: Double = js.native
+  var `part-number-marker`: Double
 }
 object ListPartsQuery {
   

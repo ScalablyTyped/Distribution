@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.wafregional
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteMatchSetByteMatchTuple extends StObject {
   
   /**
     * Settings for the ByteMatchTuple. FieldToMatch documented below.
     */
-  var fieldToMatch: ByteMatchSetByteMatchTupleFieldToMatch = js.native
+  var fieldToMatch: ByteMatchSetByteMatchTupleFieldToMatch
   
   /**
     * Within the portion of a web request that you want to search.
     */
-  var positionalConstraint: String = js.native
+  var positionalConstraint: String
   
   /**
     * The value that you want AWS WAF to search for. The maximum length of the value is 50 bytes.
     */
-  var targetString: js.UndefOr[String] = js.native
+  var targetString: js.UndefOr[String] = js.undefined
   
   /**
     * The formatting way for web request.
     */
-  var textTransformation: String = js.native
+  var textTransformation: String
 }
 object ByteMatchSetByteMatchTuple {
   

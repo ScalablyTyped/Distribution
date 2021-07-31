@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,17 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * http://js.cytoscape.org/#eles.pageRank
   */
-@js.native
 trait SearchPageRankOptions extends StObject {
   
   /** Numeric parameter for the algorithm. */
-  var dampingFactor: js.UndefOr[Double] = js.native
+  var dampingFactor: js.UndefOr[Double] = js.undefined
   
   /** Maximum number of iterations to perform. */
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
   /** Numeric parameter that represents the required precision. */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
 }
 object SearchPageRankOptions {
   

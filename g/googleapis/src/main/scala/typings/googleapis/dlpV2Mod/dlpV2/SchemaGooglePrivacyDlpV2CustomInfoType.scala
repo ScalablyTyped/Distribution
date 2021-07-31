@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom information type provided by the user. Used to find domain-specific
   * sensitive information configurable to the data in question.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
     * Rules are applied in order that they are specified. Not supported for the
     * `surrogate_type` CustomInfoType.
     */
-  var detectionRules: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DetectionRule]] = js.native
+  var detectionRules: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DetectionRule]] = js.undefined
   
   /**
     * A list of phrases to detect as a CustomInfoType.
     */
-  var dictionary: js.UndefOr[SchemaGooglePrivacyDlpV2Dictionary] = js.native
+  var dictionary: js.UndefOr[SchemaGooglePrivacyDlpV2Dictionary] = js.undefined
   
   /**
     * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding
     * to be returned. It still can be used for rules matching.
     */
-  var exclusionType: js.UndefOr[String] = js.native
+  var exclusionType: js.UndefOr[String] = js.undefined
   
   /**
     * CustomInfoType can either be a new infoType, or an extension of built-in
@@ -38,31 +36,31 @@ trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
     * info type is not specified in `InspectContent.info_types` list then the
     * name is treated as a custom info type.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
     * Likelihood to return for this CustomInfoType. This base value can be
     * altered by a detection rule if the finding meets the criteria specified
     * by the rule. Defaults to `VERY_LIKELY` if not specified.
     */
-  var likelihood: js.UndefOr[String] = js.native
+  var likelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Regular expression based CustomInfoType.
     */
-  var regex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.native
+  var regex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.undefined
   
   /**
     * Load an existing `StoredInfoType` resource for use in
     * `InspectDataSource`. Not currently supported in `InspectContent`.
     */
-  var storedType: js.UndefOr[SchemaGooglePrivacyDlpV2StoredType] = js.native
+  var storedType: js.UndefOr[SchemaGooglePrivacyDlpV2StoredType] = js.undefined
   
   /**
     * Message for detecting output from deidentification transformations that
     * support reversing.
     */
-  var surrogateType: js.UndefOr[SchemaGooglePrivacyDlpV2SurrogateType] = js.native
+  var surrogateType: js.UndefOr[SchemaGooglePrivacyDlpV2SurrogateType] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CustomInfoType {
   

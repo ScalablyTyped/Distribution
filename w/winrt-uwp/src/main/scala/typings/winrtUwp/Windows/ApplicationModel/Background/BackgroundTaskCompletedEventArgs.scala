@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents completion information for a task at the time a completion notification is sent. */
-@js.native
 trait BackgroundTaskCompletedEventArgs extends StObject {
   
   /** Throws an exception if the background task completed event has reported an error. */
-  def checkResult(): Unit = js.native
+  def checkResult(): Unit
   
   /** Gets the identifier of the background task instance for this completion status notification. */
-  var instanceId: String = js.native
+  var instanceId: String
 }
 object BackgroundTaskCompletedEventArgs {
   

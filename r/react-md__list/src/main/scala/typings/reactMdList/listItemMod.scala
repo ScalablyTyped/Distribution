@@ -9,25 +9,25 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemMod {
   
   @JSImport("@react-md/list/types/ListItem", "ListItem")
   @js.native
-  val ListItem: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val ListItem: ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLLIElement]] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactMdStates.useInteractionStatesMod.InteractionStatesOptions because var conflicts: className, disabled. Inlined disableProgrammaticRipple, rippleClassNames, disableRipple, disableSpacebarClick, rippleClassName, rippleContainerClassName, handlers, rippleTimeout, enablePressedAndRipple, disableEnterClick, disablePressedFallback */ @js.native
-  trait ListItemProps extends SimpleListItemProps {
+  - typings.reactMdStates.useInteractionStatesMod.InteractionStatesOptions because var conflicts: className, disabled. Inlined disableProgrammaticRipple, rippleClassNames, disableRipple, disableSpacebarClick, rippleClassName, rippleContainerClassName, handlers, rippleTimeout, enablePressedAndRipple, disableEnterClick, disablePressedFallback */ trait ListItemProps
+    extends StObject
+       with SimpleListItemProps {
     
     /**
       * Boolean if the enter keyboard click polyfill should be completely disabled.
       * This is generally used if the keyboard functionality is already built-in to
       * the element like buttons or labels.
       */
-    var disableEnterClick: js.UndefOr[Boolean] = js.native
+    var disableEnterClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the component should fallback to using the custom pressed class
@@ -35,20 +35,20 @@ object listItemMod {
       *
       * @default false
       */
-    var disablePressedFallback: js.UndefOr[Boolean] = js.native
+    var disablePressedFallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the ripple effect should not occur after a programmatic trigger
       * of a click event. This would normally happen if using `aria-activedescendat`
       * movement and the user "presses" the current active element.
       */
-    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.native
+    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the ripple effeect should be disabled. This will make the `useRipples`
       * hook not provide any additional logic for the provided handlers.
       */
-    var disableRipple: js.UndefOr[Boolean] = js.native
+    var disableRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the spacebar should not trigger a click event when using the
@@ -61,43 +61,43 @@ object listItemMod {
       *
       * @default false
       */
-    var disableSpacebarClick: js.UndefOr[Boolean] = js.native
+    var disableSpacebarClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the element should be able to gain both the ripple effect and
       * the pressed states changes. This will only be enabled if both the
       * `disableRipple` and `disabledPressedFallback` are still `false`
       */
-    var enablePressedAndRipple: js.UndefOr[Boolean] = js.native
+    var enablePressedAndRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional object of event handlers to merge with the required
       * ripple trigger event handlers.
       */
-    var handlers: js.UndefOr[MergableRippleHandlers[HTMLLIElement]] = js.native
+    var handlers: js.UndefOr[MergableRippleHandlers[HTMLLIElement]] = js.undefined
     
     /**
       * An optional className to apply to the ripple element.
       */
-    var rippleClassName: js.UndefOr[String] = js.native
+    var rippleClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional object containing the different transition class names for the ripple
       * effect. If this is undefined, it will be extracted from the current `StatesContext`
       * instead.
       */
-    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.native
+    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
     /**
       * An optional className to apply to the ripple's container element.
       */
-    var rippleContainerClassName: js.UndefOr[String] = js.native
+    var rippleContainerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional timeout duration for the ripple effect. If this is undefined, its value
       * will be extracted from the current `StatesContext` instead.
       */
-    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.native
+    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object ListItemProps {
     

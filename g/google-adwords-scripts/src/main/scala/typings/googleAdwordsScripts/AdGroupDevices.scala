@@ -2,29 +2,27 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdGroupDevices extends StObject {
   
-  def clearDesktopBidModifier(): Unit = js.native
+  def clearDesktopBidModifier(): Unit
   
-  def clearMobileBidModifier(): Unit = js.native
+  def clearMobileBidModifier(): Unit
   
-  def clearTabletBidModifier(): Unit = js.native
+  def clearTabletBidModifier(): Unit
   
-  def getDesktopBidModifier(): Double = js.native
+  def getDesktopBidModifier(): Double
   
-  def getMobileBidModifier(): Double = js.native
+  def getMobileBidModifier(): Double
   
-  def getTabletBidModifier(): Double = js.native
+  def getTabletBidModifier(): Double
   
-  def setDesktopBidModifier(modifier: Double): Unit = js.native
+  def setDesktopBidModifier(modifier: Double): Unit
   
-  def setMobileBidModifier(modifier: Double): Unit = js.native
+  def setMobileBidModifier(modifier: Double): Unit
   
-  def setTabletBidModifier(modifier: Double): Unit = js.native
+  def setTabletBidModifier(modifier: Double): Unit
 }
 object AdGroupDevices {
   

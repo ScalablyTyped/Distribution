@@ -2,19 +2,17 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of a request used to fetch points of interest.
   */
-@js.native
 trait PointsOfInterestSearchResponse extends StObject {
   
   /**
     * The list of points of interest that match the request options.
     */
-  var places: js.Array[Place] = js.native
+  var places: js.Array[Place]
 }
 object PointsOfInterestSearchResponse {
   

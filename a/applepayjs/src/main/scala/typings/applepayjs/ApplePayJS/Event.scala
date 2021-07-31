@@ -4,7 +4,6 @@ import typings.std.EventTarget
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,13 +26,13 @@ trait Event extends StObject {
   val eventPhase: Double = js.native
   
   def initEvent(): Unit = js.native
-  def initEvent(`type`: js.UndefOr[scala.Nothing], bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
-  def initEvent(`type`: js.UndefOr[scala.Nothing], bubbles: Boolean): Unit = js.native
-  def initEvent(`type`: js.UndefOr[scala.Nothing], bubbles: Boolean, cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String): Unit = js.native
-  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+  def initEvent(`type`: Unit, bubbles: Boolean): Unit = js.native
+  def initEvent(`type`: Unit, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(`type`: Unit, bubbles: Unit, cancelable: Boolean): Unit = js.native
   
   val isTrusted: Boolean = js.native
   

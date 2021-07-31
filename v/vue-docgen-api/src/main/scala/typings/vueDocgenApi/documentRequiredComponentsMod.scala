@@ -7,52 +7,41 @@ import typings.vueDocgenApi.vueDocgenApiStrings.`extends`
 import typings.vueDocgenApi.vueDocgenApiStrings.mixin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentRequiredComponentsMod {
   
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Namespace)
   @js.native
-  def default(
-    documentation: js.UndefOr[scala.Nothing],
-    varToFilePath: ImportedVariableSet,
-    originObject: js.UndefOr[scala.Nothing],
-    opt: ParseOptions
-  ): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = js.native
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: Unit, opt: ParseOptions): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]]]
+  @scala.inline
   def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     varToFilePath: ImportedVariableSet,
-    originObject: js.UndefOr[scala.Nothing],
+    originObject: Unit,
     opt: ParseOptions
-  ): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = js.native
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
-  @js.native
+  ): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]]]
+  
+  @scala.inline
   def default_extends(
-    documentation: js.UndefOr[scala.Nothing],
+    documentation: Unit,
     varToFilePath: ImportedVariableSet,
     originObject: `extends`,
     opt: ParseOptions
-  ): js.Promise[js.Array[default]] = js.native
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
-  @js.native
+  ): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  @scala.inline
   def default_extends(
     documentation: default,
     varToFilePath: ImportedVariableSet,
     originObject: `extends`,
     opt: ParseOptions
-  ): js.Promise[js.Array[default]] = js.native
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
-  @js.native
-  def default_mixin(
-    documentation: js.UndefOr[scala.Nothing],
-    varToFilePath: ImportedVariableSet,
-    originObject: mixin,
-    opt: ParseOptions
-  ): js.Promise[js.Array[default]] = js.native
-  @JSImport("vue-docgen-api/dist/utils/documentRequiredComponents", JSImport.Default)
-  @js.native
-  def default_mixin(documentation: default, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = js.native
+  ): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  
+  @scala.inline
+  def default_mixin(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  @scala.inline
+  def default_mixin(documentation: default, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
 }

@@ -34,10 +34,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2transitgatewayMod {
+  
+  @JSImport("@pulumi/aws/ec2transitgateway", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment")
   @js.native
@@ -56,6 +59,10 @@ object ec2transitgatewayMod {
   /* static members */
   object PeeringAttachment {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PeeringAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,26 +72,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PeeringAttachmentState): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PeeringAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringAttachmentMod.PeeringAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringAttachmentMod.PeeringAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PeeringAttachmentState): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringAttachmentMod.PeeringAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PeeringAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringAttachmentMod.PeeringAttachment]
     
     /**
       * Returns true if the given object is an instance of PeeringAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "PeeringAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/peeringAttachment.PeeringAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/peeringAttachment.PeeringAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/peeringAttachment.PeeringAttachment */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "Route")
@@ -104,6 +106,10 @@ object ec2transitgatewayMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -113,26 +119,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ec2transitgatewayRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ec2transitgatewayRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ec2transitgatewayRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.ec2transitgatewayRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ec2transitgatewayRouteMod.Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ec2transitgatewayRouteMod.Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable")
@@ -152,6 +153,10 @@ object ec2transitgatewayMod {
   /* static members */
   object RouteTable {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -161,26 +166,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableMod.RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableState): typings.pulumiAws.routeTableMod.RouteTable = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableMod.RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableMod.RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableMod.RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableState): typings.pulumiAws.routeTableMod.RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableMod.RouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableMod.RouteTable]
     
     /**
       * Returns true if the given object is an instance of RouteTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation")
@@ -200,6 +200,10 @@ object ec2transitgatewayMod {
   /* static members */
   object RouteTableAssociation {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteTableAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -209,26 +213,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableAssociationState): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation]
     
     /**
       * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTableAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation")
@@ -248,6 +247,10 @@ object ec2transitgatewayMod {
   /* static members */
   object RouteTablePropagation {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteTablePropagation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -257,26 +260,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTablePropagationState): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTablePropagationState, opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTablePropagationState): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTablePropagationState, opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation]
     
     /**
       * Returns true if the given object is an instance of RouteTablePropagation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTablePropagation.RouteTablePropagation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTablePropagation.RouteTablePropagation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTablePropagation.RouteTablePropagation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway")
@@ -292,11 +290,15 @@ object ec2transitgatewayMod {
       */
     def this(name: String) = this()
     def this(name: String, args: TransitGatewayArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: TransitGatewayArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object TransitGateway {
+    
+    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing TransitGateway resource's state with the given name, ID, and optional extra
@@ -307,26 +309,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TransitGatewayState): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TransitGatewayState, opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.transitGatewayMod.TransitGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitGatewayMod.TransitGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitGatewayMod.TransitGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TransitGatewayState): typings.pulumiAws.transitGatewayMod.TransitGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitGatewayMod.TransitGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TransitGatewayState, opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitGatewayMod.TransitGateway]
     
     /**
       * Returns true if the given object is an instance of TransitGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/transitGateway.TransitGateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/transitGateway.TransitGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/transitGateway.TransitGateway */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment")
@@ -346,6 +343,10 @@ object ec2transitgatewayMod {
   /* static members */
   object VpcAttachment {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -355,26 +356,21 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentState): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentMod.VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentMod.VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentState): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentMod.VpcAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentMod.VpcAttachment]
     
     /**
       * Returns true if the given object is an instance of VpcAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter")
@@ -394,6 +390,10 @@ object ec2transitgatewayMod {
   /* static members */
   object VpcAttachmentAccepter {
     
+    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcAttachmentAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -403,103 +403,74 @@ object ec2transitgatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter]
     
     /**
       * Returns true if the given object is an instance of VpcAttachmentAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachmentAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachmentAccepter.VpcAttachmentAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachmentAccepter.VpcAttachmentAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachmentAccepter.VpcAttachmentAccepter */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  @scala.inline
+  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")().asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
+  @scala.inline
+  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")().asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getRouteTable")
-  @js.native
-  def getRouteTable(): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getRouteTable")
-  @js.native
-  def getRouteTable(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  @scala.inline
+  def getRouteTable(): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")().asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
+  @scala.inline
+  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")().asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: Unit, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
+  @scala.inline
+  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")().asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
   
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
+  @scala.inline
+  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")().asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
 }

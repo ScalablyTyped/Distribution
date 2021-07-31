@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Duration. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Duration.
   * @param [properties] Properties to set
   */
-class Duration () extends IDuration {
+class Duration ()
+  extends StObject
+     with IDuration {
   def this(properties: IDuration) = this()
   
   /** Duration nanos. */
@@ -37,18 +38,20 @@ class Duration () extends IDuration {
 }
 object Duration {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Duration instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Duration instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.create")
-  @js.native
-  def create(): Duration = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.create")
-  @js.native
-  def create(properties: IDuration): Duration = js.native
+  @scala.inline
+  def create(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Duration]
+  @scala.inline
+  def create(properties: IDuration): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /**
     * Decodes a Duration message from the specified reader or buffer.
@@ -59,18 +62,14 @@ object Duration {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decode")
-  @js.native
-  def decode(reader: Reader): Duration = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Duration = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decode")
-  @js.native
-  def decode(reader: Uint8Array): Duration = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Duration = js.native
+  @scala.inline
+  def decode(reader: Reader): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  @scala.inline
+  def decode(reader: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /**
     * Decodes a Duration message from the specified reader or buffer, length delimited.
@@ -80,12 +79,10 @@ object Duration {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Duration = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Duration = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /**
     * Encodes the specified Duration message. Does not implicitly {@link google.protobuf.Duration.verify|verify} messages.
@@ -94,12 +91,10 @@ object Duration {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.encode")
-  @js.native
-  def encode(message: IDuration): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.encode")
-  @js.native
-  def encode(message: IDuration, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IDuration): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IDuration, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Duration message, length delimited. Does not implicitly {@link google.protobuf.Duration.verify|verify} messages.
@@ -108,12 +103,10 @@ object Duration {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDuration): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDuration, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IDuration): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IDuration, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Duration message from a plain object. Also converts values to their respective internal types.
@@ -121,9 +114,8 @@ object Duration {
     * @returns Duration
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Duration = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /**
     * Creates a plain object from a Duration message. Also converts values to other types if specified.
@@ -132,12 +124,10 @@ object Duration {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.toObject")
-  @js.native
-  def toObject(message: Duration): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.toObject")
-  @js.native
-  def toObject(message: Duration, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Duration): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Duration, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Duration message.
@@ -145,7 +135,6 @@ object Duration {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.Duration.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

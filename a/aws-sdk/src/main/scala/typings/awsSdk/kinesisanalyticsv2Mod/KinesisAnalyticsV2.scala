@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -113,7 +112,7 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[AddApplicationVpcConfigurationResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_KinesisAnalyticsV2: ConfigBase with ClientConfiguration = js.native
+  var config_KinesisAnalyticsV2: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a Kinesis Data Analytics application. For information about creating a Kinesis Data Analytics application, see Creating an Application.

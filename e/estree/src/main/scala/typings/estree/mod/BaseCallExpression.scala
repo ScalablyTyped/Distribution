@@ -2,15 +2,15 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseCallExpression extends BaseNode {
+trait BaseCallExpression
+  extends StObject
+     with BaseNode {
   
-  var arguments: js.Array[Expression | SpreadElement] = js.native
+  var arguments: js.Array[Expression | SpreadElement]
   
-  var callee: Expression | Super = js.native
+  var callee: Expression | Super
 }
 object BaseCallExpression {
   

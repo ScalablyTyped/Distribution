@@ -2,21 +2,21 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogCheckbox extends TYFlatListData {
+trait DialogCheckbox
+  extends StObject
+     with TYFlatListData {
   
-  var Icon: js.UndefOr[String] = js.native
+  var Icon: js.UndefOr[String] = js.undefined
   
-  var hideOnUnselect: js.UndefOr[Boolean] = js.native
+  var hideOnUnselect: js.UndefOr[Boolean] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object DialogCheckbox {
   

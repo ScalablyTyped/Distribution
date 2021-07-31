@@ -2,33 +2,31 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transfer {
   
-  @js.native
   trait ServerEndpointDetails extends StObject {
     
     /**
       * A list of address allocation IDs that are required to attach an Elastic IP address to your SFTP server's endpoint. This property can only be used when `endpointType` is set to `VPC`.
       */
-    var addressAllocationIds: js.UndefOr[js.Array[String]] = js.native
+    var addressAllocationIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when `endpointType` is set to `VPC`.
       */
-    var subnetIds: js.UndefOr[js.Array[String]] = js.native
+    var subnetIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The ID of the VPC endpoint. This property can only be used when `endpointType` is set to `VPC_ENDPOINT`
       */
-    var vpcEndpointId: String = js.native
+    var vpcEndpointId: String
     
     /**
       * The VPC ID of the virtual private cloud in which the SFTP server's endpoint will be hosted. This property can only be used when `endpointType` is set to `VPC`.
       */
-    var vpcId: js.UndefOr[String] = js.native
+    var vpcId: js.UndefOr[String] = js.undefined
   }
   object ServerEndpointDetails {
     
@@ -70,18 +68,17 @@ object transfer {
     }
   }
   
-  @js.native
   trait UserHomeDirectoryMapping extends StObject {
     
     /**
       * Represents an entry and a target.
       */
-    var entry: String = js.native
+    var entry: String
     
     /**
       * Represents the map target.
       */
-    var target: String = js.native
+    var target: String
   }
   object UserHomeDirectoryMapping {
     

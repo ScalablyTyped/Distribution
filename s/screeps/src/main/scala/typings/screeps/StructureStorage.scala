@@ -2,16 +2,15 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure that can store huge amount of resource units. Only one structure
   * per room is allowed that can be addressed by `Room.storage` property.
   */
-@js.native
 trait StructureStorage
-  extends OwnedStructure[STRUCTURE_STORAGE]
+  extends StObject
+     with OwnedStructure[STRUCTURE_STORAGE]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
@@ -19,13 +18,13 @@ trait StructureStorage
   /**
     * An object with the storage contents.
     */
-  var store: StoreDefinition = js.native
+  var store: StoreDefinition
   
   /**
     * The total amount of resources the storage can contain.
     * @deprecated An alias for .store.getCapacity().
     */
-  var storeCapacity: Double = js.native
+  var storeCapacity: Double
 }
 object StructureStorage {
   

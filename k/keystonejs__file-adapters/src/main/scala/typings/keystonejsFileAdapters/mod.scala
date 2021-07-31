@@ -6,7 +6,6 @@ import typings.keystonejsFileAdapters.anon.FilenameString
 import typings.keystonejsFileAdapters.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,16 +30,15 @@ object mod {
     def save(params: Filename): js.Promise[FilenameId] = js.native
   }
   
-  @js.native
   trait CloudinaryFileAdapterConfig extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var apiSecret: String = js.native
+    var apiSecret: String
     
-    var cloudName: String = js.native
+    var cloudName: String
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
   }
   object CloudinaryFileAdapterConfig {
     
@@ -70,14 +68,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LocalFileAdapterConfig extends StObject {
     
-    var getFilename: js.UndefOr[js.Function1[/* options */ Id, String]] = js.native
+    var getFilename: js.UndefOr[js.Function1[/* options */ Id, String]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
   }
   object LocalFileAdapterConfig {
     

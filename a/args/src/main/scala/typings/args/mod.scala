@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,26 +12,25 @@ object mod extends Shortcut {
   @js.native
   val ^ : typings.args.mod.args = js.native
   
-  @js.native
   trait ConfigurationOptions extends StObject {
     
-    var help: js.UndefOr[Boolean] = js.native
+    var help: js.UndefOr[Boolean] = js.undefined
     
-    var mainColor: String | js.Array[String] = js.native
+    var mainColor: String | js.Array[String]
     
-    var minimist: js.UndefOr[MinimistOptions] = js.native
+    var minimist: js.UndefOr[MinimistOptions] = js.undefined
     
-    var mri: MriOptions = js.native
+    var mri: MriOptions
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var subColor: String | js.Array[String] = js.native
+    var subColor: String | js.Array[String]
     
-    var usageFilter: js.UndefOr[js.Function1[/* output */ js.Any, _]] = js.native
+    var usageFilter: js.UndefOr[js.Function1[/* output */ js.Any, js.Any]] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Boolean] = js.native
+    var version: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurationOptions {
     
@@ -79,7 +77,7 @@ object mod extends Shortcut {
       def setSubColorVarargs(value: String*): Self = StObject.set(x, "subColor", js.Array(value :_*))
       
       @scala.inline
-      def setUsageFilter(value: /* output */ js.Any => _): Self = StObject.set(x, "usageFilter", js.Any.fromFunction1(value))
+      def setUsageFilter(value: /* output */ js.Any => js.Any): Self = StObject.set(x, "usageFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUsageFilterUndefined: Self = StObject.set(x, "usageFilter", js.undefined)
@@ -98,12 +96,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Example extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var usage: String = js.native
+    var usage: String
   }
   object Example {
     
@@ -124,22 +121,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MinimistOptions extends StObject {
     
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var `--`: js.UndefOr[Boolean] = js.native
+    var `--`: js.UndefOr[Boolean] = js.undefined
     
-    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var boolean: js.UndefOr[Boolean | String | js.Array[String]] = js.native
+    var boolean: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
     
-    var stopEarly: js.UndefOr[Boolean] = js.native
+    var stopEarly: js.UndefOr[Boolean] = js.undefined
     
-    var string: js.UndefOr[String | js.Array[String]] = js.native
+    var string: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var unknown: js.UndefOr[js.Function1[/* param */ String, Boolean]] = js.native
+    var unknown: js.UndefOr[js.Function1[/* param */ String, Boolean]] = js.undefined
   }
   object MinimistOptions {
     
@@ -202,20 +198,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MriOptions extends StObject {
     
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var boolean: js.UndefOr[String | js.Array[String]] = js.native
+    var boolean: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var string: js.UndefOr[String | js.Array[String]] = js.native
+    var string: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var unknown: js.UndefOr[js.Function1[/* param */ String, Boolean]] = js.native
+    var unknown: js.UndefOr[js.Function1[/* param */ String, Boolean]] = js.undefined
   }
   object MriOptions {
     
@@ -275,16 +270,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
-    var init: js.UndefOr[OptionInitFunction] = js.native
+    var init: js.UndefOr[OptionInitFunction] = js.undefined
     
-    var name: String | (js.Tuple2[String, String]) = js.native
+    var name: String | (js.Tuple2[String, String])
   }
   object Option {
     
@@ -328,7 +322,6 @@ object mod extends Shortcut {
   trait args extends StObject {
     
     def command(name: String, description: String): typings.args.mod.args = js.native
-    def command(name: String, description: String, init: js.UndefOr[scala.Nothing], aliases: js.Array[String]): typings.args.mod.args = js.native
     def command(
       name: String,
       description: String,
@@ -350,27 +343,17 @@ object mod extends Shortcut {
         ],
       aliases: js.Array[String]
     ): typings.args.mod.args = js.native
+    def command(name: String, description: String, init: Unit, aliases: js.Array[String]): typings.args.mod.args = js.native
     
     def example(usage: String, description: String): typings.args.mod.args = js.native
     
     def examples(list: js.Array[Example]): typings.args.mod.args = js.native
     
     def option(name: String, description: String): typings.args.mod.args = js.native
-    def option(
-      name: String,
-      description: String,
-      defaultValue: js.UndefOr[scala.Nothing],
-      init: OptionInitFunction
-    ): typings.args.mod.args = js.native
     def option(name: String, description: String, defaultValue: js.Any): typings.args.mod.args = js.native
     def option(name: String, description: String, defaultValue: js.Any, init: OptionInitFunction): typings.args.mod.args = js.native
+    def option(name: String, description: String, defaultValue: Unit, init: OptionInitFunction): typings.args.mod.args = js.native
     def option(name: js.Tuple2[String, String], description: String): typings.args.mod.args = js.native
-    def option(
-      name: js.Tuple2[String, String],
-      description: String,
-      defaultValue: js.UndefOr[scala.Nothing],
-      init: OptionInitFunction
-    ): typings.args.mod.args = js.native
     def option(name: js.Tuple2[String, String], description: String, defaultValue: js.Any): typings.args.mod.args = js.native
     def option(
       name: js.Tuple2[String, String],
@@ -378,6 +361,7 @@ object mod extends Shortcut {
       defaultValue: js.Any,
       init: OptionInitFunction
     ): typings.args.mod.args = js.native
+    def option(name: js.Tuple2[String, String], description: String, defaultValue: Unit, init: OptionInitFunction): typings.args.mod.args = js.native
     
     def options(list: js.Array[Option]): typings.args.mod.args = js.native
     

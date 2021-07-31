@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For instance the volume bar or the seek bar on a video is a slider.
   */
 @js.native
-trait Slider extends Component {
+trait Slider
+  extends StObject
+     with Component {
   
   /**
     * Calculate distance for slider

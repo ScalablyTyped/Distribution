@@ -2,28 +2,26 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionInfo extends StObject {
   
   /** Path to the revision executable */
-  var executablePath: String = js.native
+  var executablePath: String
   
   /** Path to the extracted revision folder */
-  var folderPath: String = js.native
+  var folderPath: String
   
   /** whether the revision is locally available on disk */
-  var local: Boolean = js.native
+  var local: Boolean
   
-  var product: Product_ = js.native
+  var product: Product_
   
   /** The revision the info was created from */
-  var revision: String = js.native
+  var revision: String
   
   /** URL this revision can be downloaded from */
-  var url: String = js.native
+  var url: String
 }
 object RevisionInfo {
   

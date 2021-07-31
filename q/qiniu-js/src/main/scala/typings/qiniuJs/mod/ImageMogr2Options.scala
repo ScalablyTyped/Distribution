@@ -2,37 +2,35 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMogr2Options extends StObject {
   
-  var `auto-orient`: Boolean = js.native
+  var `auto-orient`: Boolean
   
   // 新图的输出格式，取值范围：jpg，gif，png，webp等
-  var blur: String = js.native
+  var blur: String
   
   // 缩放操作参数
-  var crop: String = js.native
+  var crop: String
   
   // 旋转角度，取值范围1-360，缺省为不旋转。
-  var format: String = js.native
+  var format: String
   
   // 裁剪操作参数
-  var gravity: String = js.native
+  var gravity: String
   
   // 裁剪锚点参数
-  var quality: Double = js.native
+  var quality: Double
   
   // 图片质量，取值范围1-100
-  var rotate: Double = js.native
+  var rotate: Double
   
   // 布尔值，是否根据原图EXIF信息自动旋正，便于后续处理，建议放在首位。
-  var strip: Boolean = js.native
+  var strip: Boolean
   
   // 布尔值，是否去除图片中的元信息
-  var thumbnail: String = js.native
+  var thumbnail: String
 }
 object ImageMogr2Options {
   

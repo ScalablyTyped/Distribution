@@ -12,35 +12,33 @@ import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonTooltipConfig extends StObject {
   
-  var crosshairs: js.UndefOr[Style] = js.native
+  var crosshairs: js.UndefOr[Style] = js.undefined
   
-  var follow: js.UndefOr[Boolean] = js.native
+  var follow: js.UndefOr[Boolean] = js.undefined
   
-  var hideMarkers: js.UndefOr[Boolean] = js.native
+  var hideMarkers: js.UndefOr[Boolean] = js.undefined
   
-  var inPlot: js.UndefOr[Boolean] = js.native
+  var inPlot: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[left | right | top | bottom] = js.native
+  var position: js.UndefOr[left | right | top | bottom] = js.undefined
   
-  var shared: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.undefined
   
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var triggerOn: js.UndefOr[mousemove | click | none] = js.native
+  var triggerOn: js.UndefOr[mousemove | click | none] = js.undefined
   
-  var `type`: js.UndefOr[default | mini] = js.native
+  var `type`: js.UndefOr[default | mini] = js.undefined
   
-  var useHtml: js.UndefOr[Boolean] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.undefined
 }
 object CommonTooltipConfig {
   

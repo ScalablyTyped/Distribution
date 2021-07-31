@@ -2,7 +2,6 @@ package typings.nivoSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -77,48 +76,47 @@ object mod {
     def slideInRight: typings.nivoSlider.nivoSliderStrings.slideInRight = "slideInRight".asInstanceOf[typings.nivoSlider.nivoSliderStrings.slideInRight]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var afterChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var animSpeed: js.UndefOr[Double] = js.native
+    var animSpeed: js.UndefOr[Double] = js.undefined
     
-    var beforeChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var boxCols: js.UndefOr[Double] = js.native
+    var boxCols: js.UndefOr[Double] = js.undefined
     
-    var boxRows: js.UndefOr[Double] = js.native
+    var boxRows: js.UndefOr[Double] = js.undefined
     
-    var controlNav: js.UndefOr[Boolean] = js.native
+    var controlNav: js.UndefOr[Boolean] = js.undefined
     
-    var controlNavThumbs: js.UndefOr[Boolean] = js.native
+    var controlNavThumbs: js.UndefOr[Boolean] = js.undefined
     
-    var directionNav: js.UndefOr[Boolean] = js.native
+    var directionNav: js.UndefOr[Boolean] = js.undefined
     
-    var effect: js.UndefOr[EffectType] = js.native
+    var effect: js.UndefOr[EffectType] = js.undefined
     
-    var lastSlide: js.UndefOr[js.Function0[Unit]] = js.native
+    var lastSlide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var manualAdvance: js.UndefOr[Boolean] = js.native
+    var manualAdvance: js.UndefOr[Boolean] = js.undefined
     
-    var nextText: js.UndefOr[String] = js.native
+    var nextText: js.UndefOr[String] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var pauseTime: js.UndefOr[Double] = js.native
+    var pauseTime: js.UndefOr[Double] = js.undefined
     
-    var prevText: js.UndefOr[String] = js.native
+    var prevText: js.UndefOr[String] = js.undefined
     
-    var randomStart: js.UndefOr[Boolean] = js.native
+    var randomStart: js.UndefOr[Boolean] = js.undefined
     
-    var slices: js.UndefOr[Double] = js.native
+    var slices: js.UndefOr[Double] = js.undefined
     
-    var slideshowEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideshowEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var startSlide: js.UndefOr[Double] = js.native
+    var startSlide: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -3,24 +3,24 @@ package typings.parseDomain
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parse-domain", JSImport.Namespace)
-  @js.native
-  def apply(url: String): ParsedDomain | Null = js.native
-  @JSImport("parse-domain", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: ParseOptions): ParsedDomain | Null = js.native
+  @scala.inline
+  def apply(url: String): ParsedDomain | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | Null]
+  @scala.inline
+  def apply(url: String, options: ParseOptions): ParsedDomain | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedDomain | Null]
   
+  @JSImport("parse-domain", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ParseOptions extends StObject {
     
-    var customTlds: js.UndefOr[RegExp | js.Array[String]] = js.native
+    var customTlds: js.UndefOr[RegExp | js.Array[String]] = js.undefined
     
-    var privateTlds: js.UndefOr[Boolean] = js.native
+    var privateTlds: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -50,14 +50,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedDomain extends StObject {
     
-    var domain: String = js.native
+    var domain: String
     
-    var subdomain: String = js.native
+    var subdomain: String
     
-    var tld: String = js.native
+    var tld: String
   }
   object ParsedDomain {
     

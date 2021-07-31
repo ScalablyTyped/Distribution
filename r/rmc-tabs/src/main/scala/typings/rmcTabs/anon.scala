@@ -20,37 +20,35 @@ import typings.rmcTabs.rmcTabsStrings.vertical
 import typings.rmcTabs.tabsBaseMod.StateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveTab[S /* <: StateType */, P /* <: PropsType */] extends StObject {
     
-    var activeTab: /* import warning: importer.ImportType#apply Failed type conversion: S['currentTab'] */ js.Any = js.native
+    var activeTab: /* import warning: importer.ImportType#apply Failed type conversion: S['currentTab'] */ js.Any
     
-    var animated: Boolean = js.native
+    var animated: Boolean
     
-    var goToTab: js.Any = js.native
+    var goToTab: js.Any
     
-    var instanceId: Double = js.native
+    var instanceId: Double
     
-    var onTabClick: /* import warning: importer.ImportType#apply Failed type conversion: P['onTabClick'] */ js.Any = js.native
+    var onTabClick: /* import warning: importer.ImportType#apply Failed type conversion: P['onTabClick'] */ js.Any
     
-    var tabBarActiveTextColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarActiveTextColor'] */ js.Any = js.native
+    var tabBarActiveTextColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarActiveTextColor'] */ js.Any
     
-    var tabBarBackgroundColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarBackgroundColor'] */ js.Any = js.native
+    var tabBarBackgroundColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarBackgroundColor'] */ js.Any
     
-    var tabBarInactiveTextColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarInactiveTextColor'] */ js.Any = js.native
+    var tabBarInactiveTextColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarInactiveTextColor'] */ js.Any
     
-    var tabBarPosition: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarPosition'] */ js.Any = js.native
+    var tabBarPosition: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarPosition'] */ js.Any
     
-    var tabBarTextStyle: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarTextStyle'] */ js.Any = js.native
+    var tabBarTextStyle: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarTextStyle'] */ js.Any
     
-    var tabBarUnderlineStyle: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarUnderlineStyle'] */ js.Any = js.native
+    var tabBarUnderlineStyle: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarUnderlineStyle'] */ js.Any
     
-    var tabs: /* import warning: importer.ImportType#apply Failed type conversion: P['tabs'] */ js.Any = js.native
+    var tabs: /* import warning: importer.ImportType#apply Failed type conversion: P['tabs'] */ js.Any
   }
   object ActiveTab {
     
@@ -74,7 +72,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ActiveTabMutableBuilder[Self <: ActiveTab[_, _], S /* <: StateType */, P /* <: PropsType */] (val x: Self with (ActiveTab[S, P])) extends AnyVal {
+    implicit class ActiveTabMutableBuilder[Self <: ActiveTab[?, ?], S /* <: StateType */, P /* <: PropsType */] (val x: Self & (ActiveTab[S, P])) extends AnyVal {
       
       @scala.inline
       def setActiveTab(
@@ -130,22 +128,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ActiveTextColor extends StObject {
     
-    var activeTextColor: String = js.native
+    var activeTextColor: String
     
-    var container: Height = js.native
+    var container: Height
     
-    var inactiveTextColor: String = js.native
+    var inactiveTextColor: String
     
-    var tab: ViewStyle = js.native
+    var tab: ViewStyle
     
-    var tabs: ViewStyle = js.native
+    var tabs: ViewStyle
     
-    var textStyle: ViewStyle = js.native
+    var textStyle: ViewStyle
     
-    var underline: ViewStyle = js.native
+    var underline: ViewStyle
   }
   object ActiveTextColor {
     
@@ -189,14 +186,13 @@ object anon {
     }
   }
   
-  @js.native
   trait BottomTabBarSplitLine extends StObject {
     
-    var bottomTabBarSplitLine: ViewStyle = js.native
+    var bottomTabBarSplitLine: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var topTabBarSplitLine: ViewStyle = js.native
+    var topTabBarSplitLine: ViewStyle
   }
   object BottomTabBarSplitLine {
     
@@ -220,10 +216,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Component extends StObject {
     
-    var _component: ScrollView = js.native
+    var _component: ScrollView
   }
   object Component {
     
@@ -241,12 +236,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FixX extends StObject {
     
-    var fixX: Boolean = js.native
+    var fixX: Boolean
     
-    var fixY: Boolean = js.native
+    var fixY: Boolean
   }
   object FixX {
     
@@ -267,10 +261,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
   }
   object Height {
     
@@ -288,14 +281,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MozTransform extends StObject {
     
-    var MozTransform: js.Any = js.native
+    var MozTransform: js.Any
     
-    var WebkitTransform: js.Any = js.native
+    var WebkitTransform: js.Any
     
-    var transform: js.Any = js.native
+    var transform: js.Any
   }
   object MozTransform {
     
@@ -346,22 +338,21 @@ object anon {
   }
   
   /* Inlined rmc-tabs.rmc-tabs/lib/TabPane.PropsType & {  children :react.react.ReactNode | undefined} */
-  @js.native
   trait PropsTypechildrenReactNod extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fixX: js.UndefOr[Boolean] = js.native
+    var fixX: js.UndefOr[Boolean] = js.undefined
     
-    var fixY: js.UndefOr[Boolean] = js.native
+    var fixY: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object PropsTypechildrenReactNod {
     
@@ -416,56 +407,55 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-tabs.rmc-tabs/lib/Tabs.PropsType> */
-  @js.native
   trait ReadonlychildrenReactNode extends StObject {
     
-    val animated: js.UndefOr[Boolean] = js.native
+    val animated: js.UndefOr[Boolean] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val destroyInactiveTab: js.UndefOr[Boolean] = js.native
+    val destroyInactiveTab: js.UndefOr[Boolean] = js.undefined
     
-    val distanceToChangeTab: js.UndefOr[Double] = js.native
+    val distanceToChangeTab: js.UndefOr[Double] = js.undefined
     
-    val initialPage: js.UndefOr[Double | String] = js.native
+    val initialPage: js.UndefOr[Double | String] = js.undefined
     
-    val noRenderContent: js.UndefOr[Boolean] = js.native
+    val noRenderContent: js.UndefOr[Boolean] = js.undefined
     
-    val onChange: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+    val onChange: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
     
-    val onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+    val onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
     
-    val page: js.UndefOr[Double | String] = js.native
+    val page: js.UndefOr[Double | String] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val prerenderingSiblingsNumber: js.UndefOr[Double] = js.native
+    val prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
     
-    val renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarPropsType, ReactNode]) | `false`] = js.native
+    val renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarPropsType, ReactNode]) | `false`] = js.undefined
     
-    val swipeable: js.UndefOr[Boolean] = js.native
+    val swipeable: js.UndefOr[Boolean] = js.undefined
     
-    val tabBarActiveTextColor: js.UndefOr[String] = js.native
+    val tabBarActiveTextColor: js.UndefOr[String] = js.undefined
     
-    val tabBarBackgroundColor: js.UndefOr[String] = js.native
+    val tabBarBackgroundColor: js.UndefOr[String] = js.undefined
     
-    val tabBarInactiveTextColor: js.UndefOr[String] = js.native
+    val tabBarInactiveTextColor: js.UndefOr[String] = js.undefined
     
-    val tabBarPosition: js.UndefOr[top | bottom | left | right] = js.native
+    val tabBarPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
-    val tabBarTextStyle: js.UndefOr[CSSProperties | js.Any] = js.native
+    val tabBarTextStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
     
-    val tabBarUnderlineStyle: js.UndefOr[CSSProperties | js.Any] = js.native
+    val tabBarUnderlineStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
     
-    val tabDirection: js.UndefOr[horizontal | vertical] = js.native
+    val tabDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
-    val tabs: js.Array[TabData] = js.native
+    val tabs: js.Array[TabData]
     
-    val useLeftInsteadTransform: js.UndefOr[Boolean] = js.native
+    val useLeftInsteadTransform: js.UndefOr[Boolean] = js.undefined
     
-    val useOnPan: js.UndefOr[Boolean] = js.native
+    val useOnPan: js.UndefOr[Boolean] = js.undefined
     
-    val usePaged: js.UndefOr[Boolean] = js.native
+    val usePaged: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlychildrenReactNode {
     
@@ -627,14 +617,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ShowNext extends StObject {
     
-    var showNext: Boolean = js.native
+    var showNext: Boolean
     
-    var showPrev: Boolean = js.native
+    var showPrev: Boolean
     
-    var transform: String = js.native
+    var transform: String
   }
   object ShowNext {
     
@@ -658,12 +647,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TabBar extends StObject {
     
-    var TabBar: ActiveTextColor = js.native
+    var TabBar: ActiveTextColor
     
-    var Tabs: BottomTabBarSplitLine = js.native
+    var Tabs: BottomTabBarSplitLine
   }
   object TabBar {
     
@@ -686,7 +674,8 @@ object anon {
   
   @js.native
   trait TypeofDefaultTabBar
-    extends Instantiable1[/* props */ typings.rmcTabs.defaultTabBarMod.PropsType, DefaultTabBar] {
+    extends StObject
+       with Instantiable1[/* props */ typings.rmcTabs.defaultTabBarMod.PropsType, DefaultTabBar] {
     
     var defaultProps: typings.rmcTabs.defaultTabBarMod.PropsType = js.native
   }

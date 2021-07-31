@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3WebhookRequestIntentInfo extends StObject {
   
   /** Always present. The unique identifier of the last matched intent. Format: `projects//locations//agents//intents/`. */
-  var lastMatchedIntent: js.UndefOr[String] = js.native
+  var lastMatchedIntent: js.UndefOr[String] = js.undefined
   
   /**
     * Parameters identified as a result of intent matching. This is a map of the name of the identified parameter to the value of the parameter identified from the user's utterance. All
@@ -19,8 +17,8 @@ trait GoogleCloudDialogflowCxV3WebhookRequestIntentInfo extends StObject {
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.dialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequestIntentInfo with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequestIntentInfo & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudDialogflowCxV3WebhookRequestIntentInfo {
   
@@ -43,7 +41,7 @@ object GoogleCloudDialogflowCxV3WebhookRequestIntentInfo {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequestIntentInfo with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequestIntentInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

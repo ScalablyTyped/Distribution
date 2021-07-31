@@ -9,7 +9,6 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writeTreeMod {
@@ -70,12 +69,6 @@ object writeTreeMod {
       * @return {?Node}
       */
     def calcCompleteEventCache(treePath: Path): Node | Null = js.native
-    def calcCompleteEventCache(
-      treePath: Path,
-      completeServerCache: Null,
-      writeIdsToExclude: js.UndefOr[scala.Nothing],
-      includeHiddenWrites: Boolean
-    ): Node | Null = js.native
     def calcCompleteEventCache(treePath: Path, completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
     def calcCompleteEventCache(
       treePath: Path,
@@ -83,13 +76,8 @@ object writeTreeMod {
       writeIdsToExclude: js.Array[Double],
       includeHiddenWrites: Boolean
     ): Node | Null = js.native
+    def calcCompleteEventCache(treePath: Path, completeServerCache: Null, writeIdsToExclude: Unit, includeHiddenWrites: Boolean): Node | Null = js.native
     def calcCompleteEventCache(treePath: Path, completeServerCache: Node): Node | Null = js.native
-    def calcCompleteEventCache(
-      treePath: Path,
-      completeServerCache: Node,
-      writeIdsToExclude: js.UndefOr[scala.Nothing],
-      includeHiddenWrites: Boolean
-    ): Node | Null = js.native
     def calcCompleteEventCache(treePath: Path, completeServerCache: Node, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
     def calcCompleteEventCache(
       treePath: Path,
@@ -97,6 +85,7 @@ object writeTreeMod {
       writeIdsToExclude: js.Array[Double],
       includeHiddenWrites: Boolean
     ): Node | Null = js.native
+    def calcCompleteEventCache(treePath: Path, completeServerCache: Node, writeIdsToExclude: Unit, includeHiddenWrites: Boolean): Node | Null = js.native
     
     /**
       * With optional, underlying server data, attempt to return a children node of children that we have complete data for.
@@ -270,21 +259,13 @@ object writeTreeMod {
       * @return {?Node}
       */
     def calcCompleteEventCache(): Node | Null = js.native
-    def calcCompleteEventCache(
-      completeServerCache: Null,
-      writeIdsToExclude: js.UndefOr[scala.Nothing],
-      includeHiddenWrites: Boolean
-    ): Node | Null = js.native
     def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
     def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
+    def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: Unit, includeHiddenWrites: Boolean): Node | Null = js.native
     def calcCompleteEventCache(completeServerCache: Node): Node | Null = js.native
-    def calcCompleteEventCache(
-      completeServerCache: Node,
-      writeIdsToExclude: js.UndefOr[scala.Nothing],
-      includeHiddenWrites: Boolean
-    ): Node | Null = js.native
     def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
     def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
+    def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: Unit, includeHiddenWrites: Boolean): Node | Null = js.native
     
     /**
       * If possible, returns a children node containing all of the complete children we have data for. The returned data is a
@@ -376,18 +357,17 @@ object writeTreeMod {
     val writeTree_ : js.Any = js.native
   }
   
-  @js.native
   trait WriteRecord extends StObject {
     
-    var children: js.UndefOr[StringDictionary[Node] | Null] = js.native
+    var children: js.UndefOr[StringDictionary[Node] | Null] = js.undefined
     
-    var path: Path = js.native
+    var path: Path
     
-    var snap: js.UndefOr[Node | Null] = js.native
+    var snap: js.UndefOr[Node | Null] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
     
-    var writeId: Double = js.native
+    var writeId: Double
   }
   object WriteRecord {
     

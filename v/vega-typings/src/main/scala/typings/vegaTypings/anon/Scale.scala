@@ -3,22 +3,21 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.encodeMod.ScaledValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale
-  extends ScaledValueRef[js.Any] {
+  extends StObject
+     with ScaledValueRef[js.Any] {
   
-  var scale: typings.vegaTypings.encodeMod.Field = js.native
+  var scale: typings.vegaTypings.encodeMod.Field
   
-  var value: Boolean | Double | String | Null = js.native
+  var value: Boolean | Double | String | Null
 }
 object Scale {
   
   @scala.inline
   def apply(scale: typings.vegaTypings.encodeMod.Field): Scale = {
-    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[Scale]
   }
   

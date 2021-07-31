@@ -4,24 +4,23 @@ import typings.fridaGum.anon.Base
 import typings.fridaGum.fridaGumStrings.mem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X86MemOperand
-  extends X86BaseOperand
+  extends StObject
+     with X86BaseOperand
      with X86Operand {
   
-  var `type`: mem = js.native
+  var `type`: mem
   
-  var value: Base = js.native
+  var value: Base
 }
 object X86MemOperand {
   
   @scala.inline
-  def apply(size: Double, `type`: mem, value: Base): X86MemOperand = {
+  def apply(size: Double, value: Base): X86MemOperand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[X86MemOperand]
   }
   

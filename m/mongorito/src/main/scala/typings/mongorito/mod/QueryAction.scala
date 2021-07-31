@@ -4,17 +4,17 @@ import typings.mongorito.anon.Args
 import typings.mongorito.mod.ActionTypes.QUERY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryAction extends Action {
+trait QueryAction
+  extends StObject
+     with Action {
   
-  var method: String = js.native
+  var method: String
   
-  var query: js.Array[Args] = js.native
+  var query: js.Array[Args]
   
-  var `type`: QUERY = js.native
+  var `type`: QUERY
 }
 object QueryAction {
   

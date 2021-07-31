@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbSubnetGroup extends StObject {
   
   /**
     * The ARN of the subnet group.
     */
-  var DbSubnetGroupArn: js.UndefOr[NonEmptyString] = js.native
+  var DbSubnetGroupArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The description of the subnet group.
     */
-  var DbSubnetGroupDescription: js.UndefOr[NonEmptyString] = js.native
+  var DbSubnetGroupDescription: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the subnet group.
     */
-  var DbSubnetGroupName: js.UndefOr[NonEmptyString] = js.native
+  var DbSubnetGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the subnet group.
     */
-  var SubnetGroupStatus: js.UndefOr[NonEmptyString] = js.native
+  var SubnetGroupStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of subnets in the subnet group.
     */
-  var Subnets: js.UndefOr[AwsRdsDbSubnetGroupSubnets] = js.native
+  var Subnets: js.UndefOr[AwsRdsDbSubnetGroupSubnets] = js.undefined
   
   /**
     * The VPC ID of the subnet group.
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbSubnetGroup {
   

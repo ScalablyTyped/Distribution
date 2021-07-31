@@ -2,17 +2,15 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait storage extends StObject {
   
-  var cookie: typings.webix.webix.cookie = js.native
+  var cookie: typings.webix.webix.cookie
   
-  var local: typings.webix.webix.local = js.native
+  var local: typings.webix.webix.local
   
-  var session: typings.webix.webix.session = js.native
+  var session: typings.webix.webix.session
 }
 object storage {
   

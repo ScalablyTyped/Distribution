@@ -2,52 +2,50 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoaderContext extends StObject {
   
   /**
     * fragment object
     */
-  var frag: Fragment = js.native
+  var frag: Fragment
   
   /**
     * level id
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * true if onProgress should report partial chunk of loaded content
     */
-  var progressData: js.UndefOr[Boolean] = js.native
+  var progressData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * end byte range offset
     */
-  var rangeEnd: js.UndefOr[Double] = js.native
+  var rangeEnd: js.UndefOr[Double] = js.undefined
   
   /**
     * start byte range offset
     */
-  var rangeStart: js.UndefOr[Double] = js.native
+  var rangeStart: js.UndefOr[Double] = js.undefined
   
   /**
     * loader response type (arraybuffer or default response type for playlist)
     */
-  var responseType: String = js.native
+  var responseType: String
   
   /**
     * request type
     * - level, manifest
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * target URL
     */
-  var url: String = js.native
+  var url: String
 }
 object LoaderContext {
   

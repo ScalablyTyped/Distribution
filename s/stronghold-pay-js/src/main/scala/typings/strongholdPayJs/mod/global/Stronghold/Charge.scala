@@ -2,21 +2,19 @@ package typings.strongholdPayJs.mod.global.Stronghold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Charge extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var id: String = js.native
+  var id: String
   
-  var status: CHARGE_STATUS = js.native
+  var status: CHARGE_STATUS
   
-  var `type`: CHARGE_TYPE = js.native
+  var `type`: CHARGE_TYPE
 }
 object Charge {
   

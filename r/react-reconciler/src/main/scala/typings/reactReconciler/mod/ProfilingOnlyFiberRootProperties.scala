@@ -3,21 +3,19 @@ package typings.reactReconciler.mod
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The following attributes are only used by interaction tracing builds.
 // They enable interactions to be associated with their async work,
 // And expose interaction metadata to the React DevTools Profiler plugin.
 // Note that these attributes are only defined when the enableSchedulerTracing flag is enabled.
-@js.native
 trait ProfilingOnlyFiberRootProperties extends StObject {
   
-  var interactionThreadID: Double = js.native
+  var interactionThreadID: Double
   
-  var memoizedInteractions: Set[Interaction] = js.native
+  var memoizedInteractions: Set[Interaction]
   
-  var pendingInteractionMap: PendingInteractionMap = js.native
+  var pendingInteractionMap: PendingInteractionMap
 }
 object ProfilingOnlyFiberRootProperties {
   

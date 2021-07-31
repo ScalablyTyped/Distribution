@@ -2,16 +2,14 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelReplayRequest extends StObject {
   
   /**
     * The name of the replay to cancel.
     */
-  var ReplayName: typings.awsSdk.eventbridgeMod.ReplayName = js.native
+  var ReplayName: typings.awsSdk.eventbridgeMod.ReplayName
 }
 object CancelReplayRequest {
   

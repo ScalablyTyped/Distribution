@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Map[K, V] () extends Iterator[KeyValuePair[K, V]] {
   def this(keytype: String) = this()
-  def this(keytype: js.UndefOr[scala.Nothing], valtype: String) = this()
   def this(keytype: String, valtype: String) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.
@@ -27,6 +25,7 @@ class Map[K, V] () extends Iterator[KeyValuePair[K, V]] {
     * @param {function(...)} valtype if supplied, this must be a class function/constructor.
     */
   def this(keytype: String, valtype: Constructor) = this()
+  def this(keytype: Unit, valtype: String) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.
     * @param {function(...)} keytype if supplied, this must be a class function/constructor.

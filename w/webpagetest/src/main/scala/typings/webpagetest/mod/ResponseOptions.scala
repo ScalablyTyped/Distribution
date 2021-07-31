@@ -2,14 +2,12 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseOptions extends StObject {
   
   /** the request number [1] */
-  var request: js.UndefOr[Double] = js.native
+  var request: js.UndefOr[Double] = js.undefined
 }
 object ResponseOptions {
   

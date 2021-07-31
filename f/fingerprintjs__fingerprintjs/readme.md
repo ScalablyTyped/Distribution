@@ -4,15 +4,15 @@
 Typings are for version 2.1
 
 ## Library description:
-Modern & flexible browser fingerprinting library
+Browser fingerprinting library with the highest accuracy and stability
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @fingerprintjs/fingerprintjs |
-| Keywords           | fraud, fraud-detection, fraud-prevention, browser, identification, fingerprint, fingerprinting, privacy |
-| # releases         | 36 |
-| # dependents       | 0 |
-| # downloads        | 1108 |
+| Keywords           | fraud, fraud detection, fraud prevention, browser, identification, fingerprint, fingerprinting, browser fingerprint, device fingerprint, privacy |
+| # releases         | 49 |
+| # dependents       | 20 |
+| # downloads        | 268407 |
 | # stars            | 0 |
 
 ## Links

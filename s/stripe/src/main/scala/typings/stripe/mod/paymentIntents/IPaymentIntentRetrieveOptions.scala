@@ -2,10 +2,8 @@ package typings.stripe.mod.paymentIntents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPaymentIntentRetrieveOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IPaymentIntentRetrieveOptions extends StObject {
     *
     * REQUIRED IF USING PUBLISHABLE KEY!
     */
-  var client_secret: String = js.native
+  var client_secret: String
 }
 object IPaymentIntentRetrieveOptions {
   

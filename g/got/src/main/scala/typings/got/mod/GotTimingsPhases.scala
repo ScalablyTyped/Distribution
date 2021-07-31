@@ -2,26 +2,24 @@ package typings.got.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GotTimingsPhases extends StObject {
   
-  var dns: Double = js.native
+  var dns: Double
   
-  var download: Double = js.native
+  var download: Double
   
-  var firstByte: Double = js.native
+  var firstByte: Double
   
-  var request: Double = js.native
+  var request: Double
   
-  var tcp: Double = js.native
+  var tcp: Double
   
-  var total: Double = js.native
+  var total: Double
   
   @JSName("wait")
-  var wait_FGotTimingsPhases: Double = js.native
+  var wait_FGotTimingsPhases: Double
 }
 object GotTimingsPhases {
   

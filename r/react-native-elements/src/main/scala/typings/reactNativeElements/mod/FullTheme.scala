@@ -28,85 +28,83 @@ import typings.reactNativeElements.anon.PartialViewProperties
 import typings.reactNativeElements.anon.RecursivePartialColors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullTheme extends StObject {
   
-  var Accessory: PartialIconPropsPartialIm = js.native
+  var Accessory: PartialIconPropsPartialIm
   
-  var AirbnbRating: PartialAirbnbRatingProps = js.native
+  var AirbnbRating: PartialAirbnbRatingProps
   
-  var Avatar: PartialAvatarProps = js.native
+  var Avatar: PartialAvatarProps
   
-  var Badge: PartialBadgeProps = js.native
+  var Badge: PartialBadgeProps
   
-  var BottomSheet: PartialBottomSheetProps = js.native
+  var BottomSheet: PartialBottomSheetProps
   
-  var Button: PartialButtonProps = js.native
+  var Button: PartialButtonProps
   
-  var ButtonGroup: PartialButtonGroupProps = js.native
+  var ButtonGroup: PartialButtonGroupProps
   
-  var Card: PartialCardProps = js.native
+  var Card: PartialCardProps
   
-  var CardDivider: PartialDividerProps = js.native
+  var CardDivider: PartialDividerProps
   
-  var CardFeaturedSubtitle: PartialTextProps = js.native
+  var CardFeaturedSubtitle: PartialTextProps
   
-  var CardFeaturedTitle: PartialTextProps = js.native
+  var CardFeaturedTitle: PartialTextProps
   
-  var CardImage: PartialImageProps = js.native
+  var CardImage: PartialImageProps
   
-  var CardTitle: PartialTextProps = js.native
+  var CardTitle: PartialTextProps
   
-  var CheckBox: PartialCheckBoxProps = js.native
+  var CheckBox: PartialCheckBoxProps
   
-  var Divider: PartialDividerProps = js.native
+  var Divider: PartialDividerProps
   
-  var Header: PartialHeaderProps = js.native
+  var Header: PartialHeaderProps
   
-  var Icon: PartialIconProps = js.native
+  var Icon: PartialIconProps
   
-  var Image: PartialImageProps = js.native
+  var Image: PartialImageProps
   
-  var Input: PartialInputProps = js.native
+  var Input: PartialInputProps
   
-  var ListItem: PartialListItemProps = js.native
+  var ListItem: PartialListItemProps
   
-  var ListItemButtonGroup: PartialButtonGroupProps = js.native
+  var ListItemButtonGroup: PartialButtonGroupProps
   
-  var ListItemCheckBox: PartialCheckBoxProps = js.native
+  var ListItemCheckBox: PartialCheckBoxProps
   
-  var ListItemChevron: PartialIconProps = js.native
+  var ListItemChevron: PartialIconProps
   
-  var ListItemContent: PartialViewProperties = js.native
+  var ListItemContent: PartialViewProperties
   
-  var ListItemInput: PartialInputProps = js.native
+  var ListItemInput: PartialInputProps
   
-  var ListItemSubtitle: PartialTextProps = js.native
+  var ListItemSubtitle: PartialTextProps
   
-  var ListItemTitle: PartialTextProps = js.native
+  var ListItemTitle: PartialTextProps
   
-  var Overlay: PartialOverlayProps = js.native
+  var Overlay: PartialOverlayProps
   
-  var PricingCard: PartialPricingCardProps = js.native
+  var PricingCard: PartialPricingCardProps
   
-  var Rating: PartialRatingProps = js.native
+  var Rating: PartialRatingProps
   
-  var SearchBar: PartialSearchBarProps = js.native
+  var SearchBar: PartialSearchBarProps
   
-  var Slider: PartialSliderProps = js.native
+  var Slider: PartialSliderProps
   
-  var SocialIcon: PartialSocialIconProps = js.native
+  var SocialIcon: PartialSocialIconProps
   
-  var Text: PartialTextProps = js.native
+  var Text: PartialTextProps
   
-  var Tile: PartialTileProps = js.native
+  var Tile: PartialTileProps
   
-  var Tooltip: PartialTooltipProps = js.native
+  var Tooltip: PartialTooltipProps
   
-  var colors: RecursivePartialColors = js.native
+  var colors: RecursivePartialColors
 }
 object FullTheme {
   

@@ -4,41 +4,71 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.ILocati
 import typings.gherkin.parserMod.TokenType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenMod {
   
   @JSImport("gherkin/dist/src/Token", JSImport.Default)
   @js.native
-  class default protected () extends Token {
+  class default protected ()
+    extends StObject
+       with Token {
     def this(line: typings.gherkin.gherkinLineMod.default, location: ILocation) = this()
-  }
-  
-  @js.native
-  trait Token extends StObject {
     
-    def detach(): Unit = js.native
+    /* CompleteClass */
+    override def detach(): Unit = js.native
     
-    def getTokenValue(): String = js.native
+    /* CompleteClass */
+    override def getTokenValue(): String = js.native
     
+    /* CompleteClass */
     var isEof: Boolean = js.native
     
-    val line: typings.gherkin.gherkinLineMod.default = js.native
+    /* CompleteClass */
+    override val line: typings.gherkin.gherkinLineMod.default = js.native
     
-    val location: ILocation = js.native
+    /* CompleteClass */
+    override val location: ILocation = js.native
     
+    /* CompleteClass */
     var matchedGherkinDialect: String = js.native
     
+    /* CompleteClass */
     var matchedIndent: Double = js.native
     
+    /* CompleteClass */
     var matchedItems: js.Array[typings.gherkin.gherkinLineMod.default] = js.native
     
+    /* CompleteClass */
     var matchedKeyword: String = js.native
     
-    var matchedText: js.UndefOr[String] = js.native
-    
+    /* CompleteClass */
     var matchedType: TokenType = js.native
+  }
+  
+  trait Token extends StObject {
+    
+    def detach(): Unit
+    
+    def getTokenValue(): String
+    
+    var isEof: Boolean
+    
+    val line: typings.gherkin.gherkinLineMod.default
+    
+    val location: ILocation
+    
+    var matchedGherkinDialect: String
+    
+    var matchedIndent: Double
+    
+    var matchedItems: js.Array[typings.gherkin.gherkinLineMod.default]
+    
+    var matchedKeyword: String
+    
+    var matchedText: js.UndefOr[String] = js.undefined
+    
+    var matchedType: TokenType
   }
   object Token {
     

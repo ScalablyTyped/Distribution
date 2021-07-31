@@ -4,15 +4,13 @@ import typings.aliOss.mod.NormalSuccessResponse
 import typings.aliOss.mod.StyleData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRes extends StObject {
   
-  var data: StyleData = js.native
+  var data: StyleData
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object DataRes {
   

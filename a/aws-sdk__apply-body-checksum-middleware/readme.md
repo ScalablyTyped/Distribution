@@ -10,9 +10,9 @@ This package provides AWS SDK for JavaScript middleware that applies a checksum 
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/apply-body-checksum-middleware |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 32811 |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 57693 |
 | # stars            | 0 |
 
 ## Links

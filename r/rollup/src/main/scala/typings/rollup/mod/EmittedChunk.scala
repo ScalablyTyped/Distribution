@@ -3,32 +3,32 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.chunk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmittedChunk extends EmittedFile {
+trait EmittedChunk
+  extends StObject
+     with EmittedFile {
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var implicitlyLoadedAfterOneOf: js.UndefOr[js.Array[String]] = js.native
+  var implicitlyLoadedAfterOneOf: js.UndefOr[js.Array[String]] = js.undefined
   
-  var importer: js.UndefOr[String] = js.native
+  var importer: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var preserveSignature: js.UndefOr[PreserveEntrySignaturesOption] = js.native
+  var preserveSignature: js.UndefOr[PreserveEntrySignaturesOption] = js.undefined
   
-  var `type`: chunk = js.native
+  var `type`: chunk
 }
 object EmittedChunk {
   
   @scala.inline
-  def apply(id: String, `type`: chunk): EmittedChunk = {
+  def apply(id: String): EmittedChunk = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[EmittedChunk]
   }
   

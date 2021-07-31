@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Topology {
@@ -40,10 +39,9 @@ object Topology {
     def subscribeCluster(data: js.Any): js.Promise[OConnection] = js.native
   }
   
-  @js.native
   trait OClusterConfig extends StObject {
     
-    def selectionStrategy(cluster: typings.orientjs.mod.Topology.OCluster): OServerNode = js.native
+    def selectionStrategy(cluster: typings.orientjs.mod.Topology.OCluster): OServerNode
   }
   object OClusterConfig {
     

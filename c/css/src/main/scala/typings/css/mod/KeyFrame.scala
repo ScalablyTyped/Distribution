@@ -2,17 +2,17 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyFrame extends Node {
+trait KeyFrame
+  extends StObject
+     with Node {
   
   /** Array of nodes with the types declaration and comment. */
-  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.native
+  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.undefined
   
   /** The list of "selectors" of the keyframe rule, split on commas. Each “selector” is trimmed from whitespace. */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object KeyFrame {
   

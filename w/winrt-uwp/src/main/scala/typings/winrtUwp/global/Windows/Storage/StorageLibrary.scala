@@ -4,15 +4,19 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.System.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lets you add and remove folders from a library like Music or Videos and lets you get a list of folders included in the library. */
 @JSGlobal("Windows.Storage.StorageLibrary")
 @js.native
 abstract class StorageLibrary ()
-  extends typings.winrtUwp.Windows.Storage.StorageLibrary
+  extends StObject
+     with typings.winrtUwp.Windows.Storage.StorageLibrary
 object StorageLibrary {
+  
+  @JSGlobal("Windows.Storage.StorageLibrary")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the specified library.
@@ -20,9 +24,8 @@ object StorageLibrary {
     * @return When this method completes successfully, it returns the library (type StorageLibrary ).
     */
   /* static member */
-  @JSGlobal("Windows.Storage.StorageLibrary.getLibraryAsync")
-  @js.native
-  def getLibraryAsync(libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = js.native
+  @scala.inline
+  def getLibraryAsync(libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryAsync")(libraryId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
   
   /**
     * Gets the specified library for a User .
@@ -31,7 +34,6 @@ object StorageLibrary {
     * @return When this method completes successfully, it returns the library (type StorageLibrary ).
     */
   /* static member */
-  @JSGlobal("Windows.Storage.StorageLibrary.getLibraryForUserAsync")
-  @js.native
-  def getLibraryForUserAsync(user: User, libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = js.native
+  @scala.inline
+  def getLibraryForUserAsync(user: User, libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryForUserAsync")(user.asInstanceOf[js.Any], libraryId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationResponse extends StObject {
   
   /**
     * Describes application updates.
     */
-  var ApplicationDetail: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDetail = js.native
+  var ApplicationDetail: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDetail
 }
 object UpdateApplicationResponse {
   

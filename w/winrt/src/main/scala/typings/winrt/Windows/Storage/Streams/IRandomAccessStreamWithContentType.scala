@@ -4,12 +4,11 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRandomAccessStreamWithContentType
-  extends IRandomAccessStream
+  extends StObject
+     with IRandomAccessStream
      with IContentTypeProvider
 object IRandomAccessStreamWithContentType {
   

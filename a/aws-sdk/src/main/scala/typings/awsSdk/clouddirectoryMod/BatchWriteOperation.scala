@@ -2,86 +2,84 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteOperation extends StObject {
   
   /**
     * A batch operation that adds a facet to an object.
     */
-  var AddFacetToObject: js.UndefOr[BatchAddFacetToObject] = js.native
+  var AddFacetToObject: js.UndefOr[BatchAddFacetToObject] = js.undefined
   
   /**
     * Attaches an object to a Directory.
     */
-  var AttachObject: js.UndefOr[BatchAttachObject] = js.native
+  var AttachObject: js.UndefOr[BatchAttachObject] = js.undefined
   
   /**
     * Attaches a policy object to a regular object. An object can have a limited number of attached policies.
     */
-  var AttachPolicy: js.UndefOr[BatchAttachPolicy] = js.native
+  var AttachPolicy: js.UndefOr[BatchAttachPolicy] = js.undefined
   
   /**
     * Attaches the specified object to the specified index.
     */
-  var AttachToIndex: js.UndefOr[BatchAttachToIndex] = js.native
+  var AttachToIndex: js.UndefOr[BatchAttachToIndex] = js.undefined
   
   /**
     * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
     */
-  var AttachTypedLink: js.UndefOr[BatchAttachTypedLink] = js.native
+  var AttachTypedLink: js.UndefOr[BatchAttachTypedLink] = js.undefined
   
   /**
     * Creates an index object. See Indexing and search for more information.
     */
-  var CreateIndex: js.UndefOr[BatchCreateIndex] = js.native
+  var CreateIndex: js.UndefOr[BatchCreateIndex] = js.undefined
   
   /**
     * Creates an object.
     */
-  var CreateObject: js.UndefOr[BatchCreateObject] = js.native
+  var CreateObject: js.UndefOr[BatchCreateObject] = js.undefined
   
   /**
     * Deletes an object in a Directory.
     */
-  var DeleteObject: js.UndefOr[BatchDeleteObject] = js.native
+  var DeleteObject: js.UndefOr[BatchDeleteObject] = js.undefined
   
   /**
     * Detaches the specified object from the specified index.
     */
-  var DetachFromIndex: js.UndefOr[BatchDetachFromIndex] = js.native
+  var DetachFromIndex: js.UndefOr[BatchDetachFromIndex] = js.undefined
   
   /**
     * Detaches an object from a Directory.
     */
-  var DetachObject: js.UndefOr[BatchDetachObject] = js.native
+  var DetachObject: js.UndefOr[BatchDetachObject] = js.undefined
   
   /**
     * Detaches a policy from a Directory.
     */
-  var DetachPolicy: js.UndefOr[BatchDetachPolicy] = js.native
+  var DetachPolicy: js.UndefOr[BatchDetachPolicy] = js.undefined
   
   /**
     * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
     */
-  var DetachTypedLink: js.UndefOr[BatchDetachTypedLink] = js.native
+  var DetachTypedLink: js.UndefOr[BatchDetachTypedLink] = js.undefined
   
   /**
     * A batch operation that removes a facet from an object.
     */
-  var RemoveFacetFromObject: js.UndefOr[BatchRemoveFacetFromObject] = js.native
+  var RemoveFacetFromObject: js.UndefOr[BatchRemoveFacetFromObject] = js.undefined
   
   /**
     * Updates a given object's attributes.
     */
-  var UpdateLinkAttributes: js.UndefOr[BatchUpdateLinkAttributes] = js.native
+  var UpdateLinkAttributes: js.UndefOr[BatchUpdateLinkAttributes] = js.undefined
   
   /**
     * Updates a given object's attributes.
     */
-  var UpdateObjectAttributes: js.UndefOr[BatchUpdateObjectAttributes] = js.native
+  var UpdateObjectAttributes: js.UndefOr[BatchUpdateObjectAttributes] = js.undefined
 }
 object BatchWriteOperation {
   

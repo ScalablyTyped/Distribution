@@ -13,10 +13,13 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressionConverterMod {
+  
+  @JSImport("@angular/compiler/src/compiler_util/expression_converter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait BindingForm extends StObject
@@ -25,19 +28,25 @@ object expressionConverterMod {
   object BindingForm extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[BindingForm with Double] = js.native
+    def apply(value: Double): js.UndefOr[BindingForm & Double] = js.native
     
     @js.native
-    sealed trait Expression extends BindingForm
-    /* 2 */ val Expression: typings.angularCompiler.expressionConverterMod.BindingForm.Expression with Double = js.native
+    sealed trait Expression
+      extends StObject
+         with BindingForm
+    /* 2 */ val Expression: typings.angularCompiler.expressionConverterMod.BindingForm.Expression & Double = js.native
     
     @js.native
-    sealed trait General extends BindingForm
-    /* 0 */ val General: typings.angularCompiler.expressionConverterMod.BindingForm.General with Double = js.native
+    sealed trait General
+      extends StObject
+         with BindingForm
+    /* 0 */ val General: typings.angularCompiler.expressionConverterMod.BindingForm.General & Double = js.native
     
     @js.native
-    sealed trait TrySimple extends BindingForm
-    /* 1 */ val TrySimple: typings.angularCompiler.expressionConverterMod.BindingForm.TrySimple with Double = js.native
+    sealed trait TrySimple
+      extends StObject
+         with BindingForm
+    /* 1 */ val TrySimple: typings.angularCompiler.expressionConverterMod.BindingForm.TrySimple & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/compiler_util/expression_converter", "BuiltinFunctionCall")
@@ -110,135 +119,122 @@ object expressionConverterMod {
     def event_=(x: ReadVarExpr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("event")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
-  def convertActionBinding(localResolver: Null, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  @scala.inline
+  def convertActionBinding(localResolver: Null, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
@@ -246,9 +242,8 @@ object expressionConverterMod {
     bindingId: String,
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
@@ -256,11 +251,10 @@ object expressionConverterMod {
     bindingId: String,
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan,
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
@@ -269,9 +263,8 @@ object expressionConverterMod {
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
@@ -281,136 +274,123 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
-  def convertActionBinding(localResolver: LocalResolver, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
+  def convertActionBinding(localResolver: LocalResolver, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
-    interpolationFunction: js.UndefOr[scala.Nothing],
+    interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction,
-    baseSourceSpan: js.UndefOr[scala.Nothing],
+    baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
@@ -418,9 +398,8 @@ object expressionConverterMod {
     bindingId: String,
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
@@ -428,11 +407,10 @@ object expressionConverterMod {
     bindingId: String,
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan,
-    implicitReceiverAccesses: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Unit,
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
@@ -441,9 +419,8 @@ object expressionConverterMod {
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
-  ): ConvertActionBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertActionBinding")
-  @js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  @scala.inline
   def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
@@ -453,19 +430,17 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
-  ): ConvertActionBindingResult = js.native
+  ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
   
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertPropertyBinding")
-  @js.native
+  @scala.inline
   def convertPropertyBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
     bindingId: String,
     form: BindingForm
-  ): ConvertPropertyBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertPropertyBinding")
-  @js.native
+  ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
+  @scala.inline
   def convertPropertyBinding(
     localResolver: Null,
     implicitReceiver: Expression,
@@ -473,18 +448,16 @@ object expressionConverterMod {
     bindingId: String,
     form: BindingForm,
     interpolationFunction: InterpolationFunction
-  ): ConvertPropertyBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertPropertyBinding")
-  @js.native
+  ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
+  @scala.inline
   def convertPropertyBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
     bindingId: String,
     form: BindingForm
-  ): ConvertPropertyBindingResult = js.native
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertPropertyBinding")
-  @js.native
+  ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
+  @scala.inline
   def convertPropertyBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
@@ -492,35 +465,31 @@ object expressionConverterMod {
     bindingId: String,
     form: BindingForm,
     interpolationFunction: InterpolationFunction
-  ): ConvertPropertyBindingResult = js.native
+  ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
   
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertPropertyBindingBuiltins")
-  @js.native
-  def convertPropertyBindingBuiltins(converterFactory: BuiltinConverterFactory, ast: AST): AST = js.native
+  @scala.inline
+  def convertPropertyBindingBuiltins(converterFactory: BuiltinConverterFactory, ast: AST): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBindingBuiltins")(converterFactory.asInstanceOf[js.Any], ast.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertUpdateArguments")
-  @js.native
+  @scala.inline
   def convertUpdateArguments(
     localResolver: LocalResolver,
     contextVariableExpression: Expression,
     expressionWithArgumentsToExtract: AST,
     bindingId: String
-  ): Args = js.native
+  ): Args = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateArguments")(localResolver.asInstanceOf[js.Any], contextVariableExpression.asInstanceOf[js.Any], expressionWithArgumentsToExtract.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[Args]
   
-  @JSImport("@angular/compiler/src/compiler_util/expression_converter", "temporaryDeclaration")
-  @js.native
-  def temporaryDeclaration(bindingId: String, temporaryNumber: Double): Statement = js.native
+  @scala.inline
+  def temporaryDeclaration(bindingId: String, temporaryNumber: Double): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDeclaration")(bindingId.asInstanceOf[js.Any], temporaryNumber.asInstanceOf[js.Any])).asInstanceOf[Statement]
   
   type BuiltinConverter = js.Function1[/* args */ js.Array[Expression], Expression]
   
-  @js.native
   trait BuiltinConverterFactory extends StObject {
     
-    def createLiteralArrayConverter(argCount: Double): BuiltinConverter = js.native
+    def createLiteralArrayConverter(argCount: Double): BuiltinConverter
     
-    def createLiteralMapConverter(keys: js.Array[Quoted]): BuiltinConverter = js.native
+    def createLiteralMapConverter(keys: js.Array[Quoted]): BuiltinConverter
     
-    def createPipeConverter(name: String, argCount: Double): BuiltinConverter = js.native
+    def createPipeConverter(name: String, argCount: Double): BuiltinConverter
   }
   object BuiltinConverterFactory {
     
@@ -550,14 +519,13 @@ object expressionConverterMod {
   
   type InterpolationFunction = js.Function1[/* args */ js.Array[Expression], Expression]
   
-  @js.native
   trait LocalResolver extends StObject {
     
-    def getLocal(name: String): Expression | Null = js.native
+    def getLocal(name: String): Expression | Null
     
-    var globals: js.UndefOr[Set[String]] = js.native
+    var globals: js.UndefOr[Set[String]] = js.undefined
     
-    def notifyImplicitReceiverUse(): Unit = js.native
+    def notifyImplicitReceiverUse(): Unit
   }
   object LocalResolver {
     

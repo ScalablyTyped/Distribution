@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsCheckbox extends StObject {
   
   /**
@@ -16,35 +14,35 @@ trait JSTreeStaticDefaultsCheckbox extends StObject {
     * @name $.jstree.defaults.checkbox.cascade
     * @plugin checkbox
     */
-  var cascade: String = js.native
+  var cascade: String
   
   /**
     * This setting controls if cascading down affects disabled checkboxes
     * @name $.jstree.defaults.checkbox.cascade_to_disabled
     * @plugin checkbox
     */
-  var cascade_to_disabled: Boolean = js.native
+  var cascade_to_disabled: Boolean
   
   /**
     * This setting controls if cascading down affects hidden checkboxes
     * @name $.jstree.defaults.checkbox.cascade_to_hidden
     * @plugin checkbox
     */
-  var cascade_to_hidden: Boolean = js.native
+  var cascade_to_hidden: Boolean
   
   /**
     * a boolean indicating if the selected style of a node should be kept, or removed. Defaults to `true`.
     * @name $.jstree.defaults.checkbox.keep_selected_style
     * @plugin checkbox
     */
-  var keep_selected_style: Boolean = js.native
+  var keep_selected_style: Boolean
   
   /**
     * a boolean indicating if checkboxes should cascade down and have an undetermined state. Defaults to `true`.
     * @name $.jstree.defaults.checkbox.three_state
     * @plugin checkbox
     */
-  var three_state: Boolean = js.native
+  var three_state: Boolean
   
   /**
     * This setting controls if checkbox are bound to the general tree selection
@@ -53,7 +51,7 @@ trait JSTreeStaticDefaultsCheckbox extends StObject {
     * @name $.jstree.defaults.checkbox.tie_selection
     * @plugin checkbox
     */
-  var tie_selection: Boolean = js.native
+  var tie_selection: Boolean
   
   /**
     * a boolean indicating if checkboxes should be visible (can be changed at a later time
@@ -61,14 +59,14 @@ trait JSTreeStaticDefaultsCheckbox extends StObject {
     * @name $.jstree.defaults.checkbox.visible
     * @plugin checkbox
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * a boolean indicating if clicking anywhere on the node should act as clicking on the checkbox. Defaults to `true`.
     * @name $.jstree.defaults.checkbox.whole_node
     * @plugin checkbox
     */
-  var whole_node: Boolean = js.native
+  var whole_node: Boolean
 }
 object JSTreeStaticDefaultsCheckbox {
   

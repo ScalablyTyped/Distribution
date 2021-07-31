@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
   /**
     * Text value to be included in the email body.
     */
-  var EmailMessage: js.UndefOr[MessageType] = js.native
+  var EmailMessage: js.UndefOr[MessageType] = js.undefined
   
   /**
     * Boolean value to indicate an email notification should be sent to the receipients.
     */
-  var SendEmail: js.UndefOr[BooleanType] = js.native
+  var SendEmail: js.UndefOr[BooleanType] = js.undefined
 }
 object NotificationOptions {
   

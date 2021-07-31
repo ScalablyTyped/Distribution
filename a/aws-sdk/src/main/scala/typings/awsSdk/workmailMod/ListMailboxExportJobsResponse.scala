@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMailboxExportJobsResponse extends StObject {
   
   /**
     * The mailbox export job details.
     */
-  var Jobs: js.UndefOr[typings.awsSdk.workmailMod.Jobs] = js.native
+  var Jobs: js.UndefOr[typings.awsSdk.workmailMod.Jobs] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
 }
 object ListMailboxExportJobsResponse {
   

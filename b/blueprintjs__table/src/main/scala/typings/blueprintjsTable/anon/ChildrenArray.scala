@@ -6,27 +6,25 @@ import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenArray extends StObject {
   
-  var childrenArray: js.Array[ReactElement] = js.native
+  var childrenArray: js.Array[ReactElement]
   
-  var columnIdToIndex: StringDictionary[Double] = js.native
+  var columnIdToIndex: StringDictionary[Double]
   
-  var columnWidths: js.Array[Double] = js.native
+  var columnWidths: js.Array[Double]
   
-  var focusedCell: IFocusedCellCoordinates = js.native
+  var focusedCell: IFocusedCellCoordinates
   
-  var numFrozenColumnsClamped: Double = js.native
+  var numFrozenColumnsClamped: Double
   
-  var numFrozenRowsClamped: Double = js.native
+  var numFrozenRowsClamped: Double
   
-  var rowHeights: js.Array[Double] = js.native
+  var rowHeights: js.Array[Double]
   
-  var selectedRegions: js.Array[IRegion] = js.native
+  var selectedRegions: js.Array[IRegion]
 }
 object ChildrenArray {
   

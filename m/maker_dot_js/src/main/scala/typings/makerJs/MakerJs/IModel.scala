@@ -3,7 +3,6 @@ package typings.makerJs.MakerJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,48 +18,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * };
   * ```
   */
-@js.native
 trait IModel extends StObject {
   
   /**
     * Optional exporter options for this model.
     */
-  var exporterOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var exporterOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional layer of this model.
     */
-  var layer: js.UndefOr[String] = js.native
+  var layer: js.UndefOr[String] = js.undefined
   
   /**
     * Optional array of models within this model.
     */
-  var models: js.UndefOr[IModelMap] = js.native
+  var models: js.UndefOr[IModelMap] = js.undefined
   
   /**
     * An author may wish to add notes to this model instance.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Optional origin location of this model.
     */
-  var origin: js.UndefOr[IPoint] = js.native
+  var origin: js.UndefOr[IPoint] = js.undefined
   
   /**
     * Optional array of path objects in this model.
     */
-  var paths: js.UndefOr[IPathMap] = js.native
+  var paths: js.UndefOr[IPathMap] = js.undefined
   
   /**
     * A model may want to specify its type, but this value is not employed yet.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Optional unit system of this model. See UnitType for possible values.
     */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object IModel {
   

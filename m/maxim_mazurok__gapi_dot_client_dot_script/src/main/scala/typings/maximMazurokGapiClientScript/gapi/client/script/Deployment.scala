@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /** The deployment configuration. */
-  var deploymentConfig: js.UndefOr[DeploymentConfig] = js.native
+  var deploymentConfig: js.UndefOr[DeploymentConfig] = js.undefined
   
   /** The deployment ID for this deployment. */
-  var deploymentId: js.UndefOr[String] = js.native
+  var deploymentId: js.UndefOr[String] = js.undefined
   
   /** The deployment's entry points. */
-  var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.native
+  var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.undefined
   
   /** Last modified date time stamp. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Deployment {
   

@@ -3,59 +3,57 @@ package typings.jsforce.describeResultMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGlobalSObjectResult extends StObject {
   
-  var activateable: Boolean = js.native
+  var activateable: Boolean
   
-  var createable: Boolean = js.native
+  var createable: Boolean
   
-  var custom: Boolean = js.native
+  var custom: Boolean
   
-  var customSetting: Boolean = js.native
+  var customSetting: Boolean
   
-  var deletable: Boolean = js.native
+  var deletable: Boolean
   
-  var deprecatedAndHidden: Boolean = js.native
+  var deprecatedAndHidden: Boolean
   
-  var feedEnabled: Boolean = js.native
+  var feedEnabled: Boolean
   
-  var hasSubtypes: Boolean = js.native
+  var hasSubtypes: Boolean
   
-  var isSubtype: Boolean = js.native
+  var isSubtype: Boolean
   
-  var keyPrefix: String | Null = js.native
+  var keyPrefix: String | Null
   
-  var label: String = js.native
+  var label: String
   
-  var labelPlural: String = js.native
+  var labelPlural: String
   
-  var layoutable: Boolean = js.native
+  var layoutable: Boolean
   
-  var mergeable: Boolean = js.native
+  var mergeable: Boolean
   
-  var mruEnabled: Boolean = js.native
+  var mruEnabled: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var queryable: Boolean = js.native
+  var queryable: Boolean
   
-  var replicateable: Boolean = js.native
+  var replicateable: Boolean
   
-  var retrieveable: Boolean = js.native
+  var retrieveable: Boolean
   
-  var searchable: Boolean = js.native
+  var searchable: Boolean
   
-  var triggerable: Boolean = js.native
+  var triggerable: Boolean
   
-  var undeletable: Boolean = js.native
+  var undeletable: Boolean
   
-  var updateable: Boolean = js.native
+  var updateable: Boolean
   
-  var urls: Record[String, String] = js.native
+  var urls: Record[String, String]
 }
 object DescribeGlobalSObjectResult {
   
@@ -85,7 +83,7 @@ object DescribeGlobalSObjectResult {
     updateable: Boolean,
     urls: Record[String, String]
   ): DescribeGlobalSObjectResult = {
-    val __obj = js.Dynamic.literal(activateable = activateable.asInstanceOf[js.Any], createable = createable.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], customSetting = customSetting.asInstanceOf[js.Any], deletable = deletable.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], feedEnabled = feedEnabled.asInstanceOf[js.Any], hasSubtypes = hasSubtypes.asInstanceOf[js.Any], isSubtype = isSubtype.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPlural = labelPlural.asInstanceOf[js.Any], layoutable = layoutable.asInstanceOf[js.Any], mergeable = mergeable.asInstanceOf[js.Any], mruEnabled = mruEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], replicateable = replicateable.asInstanceOf[js.Any], retrieveable = retrieveable.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], triggerable = triggerable.asInstanceOf[js.Any], undeletable = undeletable.asInstanceOf[js.Any], updateable = updateable.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activateable = activateable.asInstanceOf[js.Any], createable = createable.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], customSetting = customSetting.asInstanceOf[js.Any], deletable = deletable.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], feedEnabled = feedEnabled.asInstanceOf[js.Any], hasSubtypes = hasSubtypes.asInstanceOf[js.Any], isSubtype = isSubtype.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPlural = labelPlural.asInstanceOf[js.Any], layoutable = layoutable.asInstanceOf[js.Any], mergeable = mergeable.asInstanceOf[js.Any], mruEnabled = mruEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], replicateable = replicateable.asInstanceOf[js.Any], retrieveable = retrieveable.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], triggerable = triggerable.asInstanceOf[js.Any], undeletable = undeletable.asInstanceOf[js.Any], updateable = updateable.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], keyPrefix = null)
     __obj.asInstanceOf[DescribeGlobalSObjectResult]
   }
   

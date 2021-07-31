@@ -4,10 +4,13 @@ import typings.fsExtra.mod.Stats
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsMod {
+  
+  @JSImport("builder-util/out/fs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object CONCURRENCY {
     
@@ -30,17 +33,16 @@ object fsMod {
     def afterCopyTransformer(file: String): js.Promise[Unit] = js.native
   }
   
-  @JSImport("builder-util/out/fs", "DO_NOT_USE_HARD_LINKS")
-  @js.native
-  def DO_NOT_USE_HARD_LINKS(file: String): Boolean = js.native
+  @scala.inline
+  def DO_NOT_USE_HARD_LINKS(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("DO_NOT_USE_HARD_LINKS")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("builder-util/out/fs", "FileCopier")
   @js.native
   class FileCopier () extends StObject {
     def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean]) = this()
-    def this(isUseHardLinkFunction: js.UndefOr[scala.Nothing], transformer: FileTransformer) = this()
     def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean], transformer: FileTransformer) = this()
     def this(isUseHardLinkFunction: Null, transformer: FileTransformer) = this()
+    def this(isUseHardLinkFunction: Unit, transformer: FileTransformer) = this()
     
     def copy(src: String, dest: String): js.Promise[Unit] = js.native
     def copy(src: String, dest: String, stat: Stats): js.Promise[Unit] = js.native
@@ -56,132 +58,107 @@ object fsMod {
   @js.native
   val MAX_FILE_REQUESTS: /* 8 */ Double = js.native
   
-  @JSImport("builder-util/out/fs", "USE_HARD_LINKS")
-  @js.native
-  def USE_HARD_LINKS(file: String): Boolean = js.native
+  @scala.inline
+  def USE_HARD_LINKS(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("USE_HARD_LINKS")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("builder-util/out/fs", "copyDir")
-  @js.native
-  def copyDir(src: String, destination: String): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyDir")
-  @js.native
-  def copyDir(src: String, destination: String, options: CopyDirOptions): js.Promise[_] = js.native
+  @scala.inline
+  def copyDir(src: String, destination: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyDir(src: String, destination: String, options: CopyDirOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util/out/fs", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[_] = js.native
+  @scala.inline
+  def copyFile(src: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], isEnsureDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(src: String, dest: String): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(
-    src: String,
-    dest: String,
-    stats: js.UndefOr[scala.Nothing],
-    isUseHardLink: js.UndefOr[scala.Nothing],
-    exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(src: String, dest: String, stats: js.UndefOr[scala.Nothing], isUseHardLink: Boolean): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(
-    src: String,
-    dest: String,
-    stats: js.UndefOr[scala.Nothing],
-    isUseHardLink: Boolean,
-    exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(
-    src: String,
-    dest: String,
-    stats: Null,
-    isUseHardLink: js.UndefOr[scala.Nothing],
-    exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(src: String, dest: String, stats: Null, isUseHardLink: Boolean): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
+  @scala.inline
+  def copyOrLinkFile(src: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(src: String, dest: String, stats: Null, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Null,
     isUseHardLink: Boolean,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(src: String, dest: String, stats: Stats): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def copyOrLinkFile(
     src: String,
     dest: String,
-    stats: Stats,
-    isUseHardLink: js.UndefOr[scala.Nothing],
+    stats: Null,
+    isUseHardLink: Unit,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
-  def copyOrLinkFile(src: String, dest: String, stats: Stats, isUseHardLink: Boolean): js.Promise[_] = js.native
-  @JSImport("builder-util/out/fs", "copyOrLinkFile")
-  @js.native
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(src: String, dest: String, stats: Unit, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(
+    src: String,
+    dest: String,
+    stats: Unit,
+    isUseHardLink: Boolean,
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(
+    src: String,
+    dest: String,
+    stats: Unit,
+    isUseHardLink: Unit,
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(src: String, dest: String, stats: Stats): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(src: String, dest: String, stats: Stats, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Stats,
     isUseHardLink: Boolean,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def copyOrLinkFile(
+    src: String,
+    dest: String,
+    stats: Stats,
+    isUseHardLink: Unit,
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util/out/fs", "exists")
-  @js.native
-  def exists(file: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def exists(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("builder-util/out/fs", "statOrNull")
-  @js.native
-  def statOrNull(file: String): js.Promise[Stats | Null] = js.native
+  @scala.inline
+  def statOrNull(file: String): js.Promise[Stats | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("statOrNull")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stats | Null]]
   
-  @JSImport("builder-util/out/fs", "unlinkIfExists")
-  @js.native
-  def unlinkIfExists(file: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def unlinkIfExists(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkIfExists")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("builder-util/out/fs", "walk")
-  @js.native
-  def walk(initialDirPath: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("builder-util/out/fs", "walk")
-  @js.native
-  def walk(initialDirPath: String, filter: js.UndefOr[scala.Nothing], consumer: FileConsumer): js.Promise[js.Array[String]] = js.native
-  @JSImport("builder-util/out/fs", "walk")
-  @js.native
-  def walk(initialDirPath: String, filter: Null, consumer: FileConsumer): js.Promise[js.Array[String]] = js.native
-  @JSImport("builder-util/out/fs", "walk")
-  @js.native
-  def walk(initialDirPath: String, filter: Filter): js.Promise[js.Array[String]] = js.native
-  @JSImport("builder-util/out/fs", "walk")
-  @js.native
-  def walk(initialDirPath: String, filter: Filter, consumer: FileConsumer): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def walk(initialDirPath: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(initialDirPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def walk(initialDirPath: String, filter: Null, consumer: FileConsumer): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(initialDirPath.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def walk(initialDirPath: String, filter: Unit, consumer: FileConsumer): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(initialDirPath.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def walk(initialDirPath: String, filter: Filter): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(initialDirPath.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def walk(initialDirPath: String, filter: Filter, consumer: FileConsumer): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(initialDirPath.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   type AfterCopyFileTransformer = js.Function1[/* file */ String, js.Promise[Unit]]
   
-  @js.native
   trait CopyDirOptions extends StObject {
     
-    var filter: js.UndefOr[Filter | Null] = js.native
+    var filter: js.UndefOr[Filter | Null] = js.undefined
     
-    var isUseHardLink: js.UndefOr[(js.Function1[/* file */ String, Boolean]) | Null] = js.native
+    var isUseHardLink: js.UndefOr[(js.Function1[/* file */ String, Boolean]) | Null] = js.undefined
     
-    var transformer: js.UndefOr[FileTransformer | Null] = js.native
+    var transformer: js.UndefOr[FileTransformer | Null] = js.undefined
   }
   object CopyDirOptions {
     
@@ -225,15 +202,14 @@ object fsMod {
     }
   }
   
-  @js.native
   trait FileConsumer extends StObject {
     
-    def consume(file: String, fileStat: Stats, parent: String, siblingNames: js.Array[String]): js.Any = js.native
+    def consume(file: String, fileStat: Stats, parent: String, siblingNames: js.Array[String]): js.Any
     
     /**
       * @default false
       */
-    var isIncludeDir: js.UndefOr[Boolean] = js.native
+    var isIncludeDir: js.UndefOr[Boolean] = js.undefined
   }
   object FileConsumer {
     
@@ -264,12 +240,11 @@ object fsMod {
   
   type Filter = js.Function2[/* file */ String, /* stat */ Stats, Boolean]
   
-  @js.native
   trait Link extends StObject {
     
-    val file: String = js.native
+    val file: String
     
-    val link: String = js.native
+    val link: String
   }
   object Link {
     

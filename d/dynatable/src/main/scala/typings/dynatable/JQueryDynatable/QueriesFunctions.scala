@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueriesFunctions extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait QueriesFunctions extends StObject {
     * @param queryValue The researched value
     * @return A boolean indicating if a match was found
     */
-  def search(record: js.Any, queryValue: String): Boolean = js.native
+  def search(record: js.Any, queryValue: String): Boolean
 }
 object QueriesFunctions {
   

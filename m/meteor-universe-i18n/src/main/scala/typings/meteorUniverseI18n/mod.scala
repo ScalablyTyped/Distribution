@@ -12,7 +12,6 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-single-declare-module
@@ -20,206 +19,153 @@ object mod {
   
   object i18n {
     
-    @JSImport("meteor/universe:i18n", "i18n.__")
+    @JSImport("meteor/universe:i18n", "i18n")
     @js.native
-    def __(key: String*): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.__")
-    @js.native
-    def __(key: String): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.__")
-    @js.native
-    def __(key: String, params: GetTranslationParams): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.__")
-    @js.native
-    def __(namespace: String, key: String, params: GetTranslationParams): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def __(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def __(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def __(key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def __(namespace: String, key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(namespace.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     
     // tslint:disable-next-line unified-signatures
-    @JSImport("meteor/universe:i18n", "i18n.addTranslation")
-    @js.native
-    def addTranslation(locale: String, namespace: String, key: String, translation: String): Unit = js.native
+    @scala.inline
+    def addTranslation(locale: String, namespace: String, key: String, translation: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTranslation")(locale.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], key.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     // translation setter / getter functions
-    @JSImport("meteor/universe:i18n", "i18n.addTranslation")
-    @js.native
-    def addTranslation(locale: String, namespace: String, translation: String): Unit = js.native
+    @scala.inline
+    def addTranslation(locale: String, namespace: String, translation: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTranslation")(locale.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/universe:i18n", "i18n.addTranslations")
-    @js.native
-    def addTranslations(locale: String, namespace: String, translationsMap: js.Object): Unit = js.native
-    @JSImport("meteor/universe:i18n", "i18n.addTranslations")
-    @js.native
-    def addTranslations(locale: String, translationsMap: js.Object): Unit = js.native
+    @scala.inline
+    def addTranslations(locale: String, namespace: String, translationsMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTranslations")(locale.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], translationsMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addTranslations(locale: String, translationsMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTranslations")(locale.asInstanceOf[js.Any], translationsMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // component functions
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(
-      translator: js.UndefOr[scala.Nothing],
-      locale: js.UndefOr[scala.Nothing],
-      reactjs: js.UndefOr[ReactInstance],
-      `type`: js.Any
-    ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: js.UndefOr[scala.Nothing], locale: js.UndefOr[scala.Nothing], reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: js.UndefOr[scala.Nothing], locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(
-      translator: js.UndefOr[scala.Nothing],
-      locale: String,
-      reactjs: js.UndefOr[ReactInstance],
-      `type`: js.Any
-    ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: js.UndefOr[scala.Nothing], locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: Translator): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(
-      translator: Translator,
-      locale: js.UndefOr[scala.Nothing],
-      reactjs: js.UndefOr[ReactInstance],
-      `type`: js.Any
-    ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: Translator, locale: js.UndefOr[scala.Nothing], reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: Translator, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: Translator, locale: String, reactjs: js.UndefOr[ReactInstance], `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createComponent")
-    @js.native
-    def createComponent(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+    @scala.inline
+    def createComponent(): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")().asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: String, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: String, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: Unit, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: String, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: String, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: Unit, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    @scala.inline
+    def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
     
-    @JSImport("meteor/universe:i18n", "i18n.createReactiveTranslator")
-    @js.native
-    def createReactiveTranslator(namespace: String, locale: String): Instantiable0[Component[js.Object, js.Object, js.Any]] = js.native
+    @scala.inline
+    def createReactiveTranslator(namespace: String, locale: String): Instantiable0[Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReactiveTranslator")(namespace.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[js.Object, js.Object, js.Any]]]
     
     // translator functions
-    @JSImport("meteor/universe:i18n", "i18n.createTranslator")
-    @js.native
-    def createTranslator(namespace: String): Translator = js.native
-    @JSImport("meteor/universe:i18n", "i18n.createTranslator")
-    @js.native
-    def createTranslator(namespace: String, options: TranslaterOptions): Translator = js.native
+    @scala.inline
+    def createTranslator(namespace: String): Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("createTranslator")(namespace.asInstanceOf[js.Any]).asInstanceOf[Translator]
+    @scala.inline
+    def createTranslator(namespace: String, options: TranslaterOptions): Translator = (^.asInstanceOf[js.Dynamic].applyDynamic("createTranslator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Translator]
     
-    @JSImport("meteor/universe:i18n", "i18n.getAllKeysForLocale")
-    @js.native
-    def getAllKeysForLocale(): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getAllKeysForLocale")
-    @js.native
-    def getAllKeysForLocale(locale: js.UndefOr[scala.Nothing], excactlyThis: Boolean): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getAllKeysForLocale")
-    @js.native
-    def getAllKeysForLocale(locale: String): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getAllKeysForLocale")
-    @js.native
-    def getAllKeysForLocale(locale: String, excactlyThis: Boolean): js.Array[String] = js.native
+    @scala.inline
+    def getAllKeysForLocale(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysForLocale")().asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getAllKeysForLocale(locale: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysForLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getAllKeysForLocale(locale: String, excactlyThis: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysForLocale")(locale.asInstanceOf[js.Any], excactlyThis.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getAllKeysForLocale(locale: Unit, excactlyThis: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysForLocale")(locale.asInstanceOf[js.Any], excactlyThis.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.getCurrencyCodes")
-    @js.native
-    def getCurrencyCodes(): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getCurrencyCodes")
-    @js.native
-    def getCurrencyCodes(locale: String): js.Array[String] = js.native
+    @scala.inline
+    def getCurrencyCodes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencyCodes")().asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getCurrencyCodes(locale: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencyCodes")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     // currency symbols
-    @JSImport("meteor/universe:i18n", "i18n.getCurrencySymbol")
-    @js.native
-    def getCurrencySymbol(): js.UndefOr[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getCurrencySymbol")
-    @js.native
-    def getCurrencySymbol(locale: String): js.UndefOr[String] = js.native
+    @scala.inline
+    def getCurrencySymbol(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")().asInstanceOf[js.UndefOr[String]]
+    @scala.inline
+    def getCurrencySymbol(locale: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(locale.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.getLanguageName")
-    @js.native
-    def getLanguageName(): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getLanguageName")
-    @js.native
-    def getLanguageName(locale: String): String = js.native
+    @scala.inline
+    def getLanguageName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageName")().asInstanceOf[String]
+    @scala.inline
+    def getLanguageName(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageName")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("meteor/universe:i18n", "i18n.getLanguageNativeName")
-    @js.native
-    def getLanguageNativeName(): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getLanguageNativeName")
-    @js.native
-    def getLanguageNativeName(locale: String): String = js.native
+    @scala.inline
+    def getLanguageNativeName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageNativeName")().asInstanceOf[String]
+    @scala.inline
+    def getLanguageNativeName(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageNativeName")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("meteor/universe:i18n", "i18n.getLanguages")
-    @js.native
-    def getLanguages(): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getLanguages")
-    @js.native
-    def getLanguages_code(`type`: code): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getLanguages")
-    @js.native
-    def getLanguages_name(`type`: name): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getLanguages")
-    @js.native
-    def getLanguages_nativeNames(`type`: nativeNames): js.Array[String] = js.native
+    @scala.inline
+    def getLanguages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")().asInstanceOf[js.Array[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.getLocale")
-    @js.native
-    def getLocale(): String = js.native
+    @scala.inline
+    def getLanguages_code(`type`: code): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.getTranslation")
-    @js.native
-    def getTranslation(key: String*): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getTranslation")
-    @js.native
-    def getTranslation(key: String): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getTranslation")
-    @js.native
-    def getTranslation(key: String, params: GetTranslationParams): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getTranslation")
-    @js.native
-    def getTranslation(namespace: String, key: String, params: GetTranslationParams): String = js.native
+    @scala.inline
+    def getLanguages_name(`type`: name): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.getTranslations")
-    @js.native
-    def getTranslations(namespace: String): js.Array[String] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.getTranslations")
-    @js.native
-    def getTranslations(namespace: String, locale: String): js.Array[String] = js.native
+    @scala.inline
+    def getLanguages_nativeNames(`type`: nativeNames): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    @scala.inline
+    def getLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[String]
+    
+    @scala.inline
+    def getTranslation(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getTranslation(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getTranslation(key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def getTranslation(namespace: String, key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(namespace.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def getTranslations(namespace: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslations")(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getTranslations(namespace: String, locale: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslations")(namespace.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     // others
-    @JSImport("meteor/universe:i18n", "i18n.isRTL")
-    @js.native
-    def isRTL(): Boolean = js.native
-    @JSImport("meteor/universe:i18n", "i18n.isRTL")
-    @js.native
-    def isRTL(locale: String): Boolean = js.native
+    @scala.inline
+    def isRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")().asInstanceOf[Boolean]
+    @scala.inline
+    def isRTL(locale: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")(locale.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("meteor/universe:i18n", "i18n.loadLocale")
-    @js.native
-    def loadLocale(locale: String): Unit = js.native
-    @JSImport("meteor/universe:i18n", "i18n.loadLocale")
-    @js.native
-    def loadLocale(locale: String, params: LoadLocaleParams): Unit = js.native
+    @scala.inline
+    def loadLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def loadLocale(locale: String, params: LoadLocaleParams): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLocale")(locale.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/universe:i18n", "i18n.normalize")
-    @js.native
-    def normalize(locale: String): js.UndefOr[String] = js.native
+    @scala.inline
+    def normalize(locale: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(locale.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @JSImport("meteor/universe:i18n", "i18n.offChangeLocale")
-    @js.native
-    def offChangeLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = js.native
+    @scala.inline
+    def offChangeLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offChangeLocale")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // events
-    @JSImport("meteor/universe:i18n", "i18n.onChangeLocale")
-    @js.native
-    def onChangeLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = js.native
+    @scala.inline
+    def onChangeLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChangeLocale")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // options
     /* Inlined std.Readonly<meteor-universe-i18n.meteor/universe:i18n.i18nOptions> */
@@ -259,51 +205,43 @@ object mod {
     }
     
     // number operations
-    @JSImport("meteor/universe:i18n", "i18n.parseNumber")
-    @js.native
-    def parseNumber(number: String): String = js.native
-    @JSImport("meteor/universe:i18n", "i18n.parseNumber")
-    @js.native
-    def parseNumber(number: String, locale: String): String = js.native
+    @scala.inline
+    def parseNumber(number: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def parseNumber(number: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(number.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
     // executes function in the locale context,
     // it means that every default locale used inside a called function will be set to a passed locale
     // keep in mind that locale must be loaded first (if it is not bundled)
-    @JSImport("meteor/universe:i18n", "i18n.runWithLocale")
-    @js.native
-    def runWithLocale[T](locale: String, func: js.Function0[T]): T = js.native
+    @scala.inline
+    def runWithLocale[T](locale: String, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runWithLocale")(locale.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
     
     // locale setter / getter
-    @JSImport("meteor/universe:i18n", "i18n.setLocale")
-    @js.native
-    def setLocale(locale: String): js.Promise[Unit] = js.native
-    @JSImport("meteor/universe:i18n", "i18n.setLocale")
-    @js.native
-    def setLocale(locale: String, params: LocateParams): js.Promise[Unit] = js.native
+    @scala.inline
+    def setLocale(locale: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def setLocale(locale: String, params: LocateParams): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("meteor/universe:i18n", "i18n.setLocaleOnConnection")
-    @js.native
-    def setLocaleOnConnection(locale: String): Unit = js.native
-    @JSImport("meteor/universe:i18n", "i18n.setLocaleOnConnection")
-    @js.native
-    def setLocaleOnConnection(locale: String, connectionId: Double): Unit = js.native
+    @scala.inline
+    def setLocaleOnConnection(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocaleOnConnection")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setLocaleOnConnection(locale: String, connectionId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocaleOnConnection")(locale.asInstanceOf[js.Any], connectionId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/universe:i18n", "i18n.setOptions")
-    @js.native
-    def setOptions(options: Partiali18nOptions): Unit = js.native
+    @scala.inline
+    def setOptions(options: Partiali18nOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // language getters
     /* Inlined std.Readonly<{[locale: string] : std.Readonly<meteor-universe-i18n.meteor/universe:i18n.i18nLocaleEntry>}> */
     object locales
   }
   
-  @js.native
   trait GetTranslationParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var _locale: js.UndefOr[String] = js.native
+    var _locale: js.UndefOr[String] = js.undefined
     
-    var _namespace: js.UndefOr[String] = js.native
+    var _namespace: js.UndefOr[String] = js.undefined
   }
   object GetTranslationParams {
     
@@ -330,18 +268,17 @@ object mod {
     }
   }
   
-  @js.native
   trait LoadLocaleParams extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var fresh: js.UndefOr[Boolean] = js.native
+    var fresh: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var pathOnHost: js.UndefOr[String] = js.native
+    var pathOnHost: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object LoadLocaleParams {
     
@@ -386,16 +323,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LocateParams extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var fresh: js.UndefOr[Boolean] = js.native
+    var fresh: js.UndefOr[Boolean] = js.undefined
     
-    var noDownload: js.UndefOr[Boolean] = js.native
+    var noDownload: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object LocateParams {
     
@@ -434,20 +370,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactComponentProps extends StObject {
     
-    var _containerType: js.UndefOr[String] = js.native
+    var _containerType: js.UndefOr[String] = js.undefined
     
-    var _locale: js.UndefOr[String] = js.native
+    var _locale: js.UndefOr[String] = js.undefined
     
-    var _namespace: js.UndefOr[String] = js.native
+    var _namespace: js.UndefOr[String] = js.undefined
     
-    var _props: js.UndefOr[HTMLAttributes[Component[js.Object, js.Object, _]]] = js.native
+    var _props: js.UndefOr[HTMLAttributes[Component[js.Object, js.Object, js.Any]]] = js.undefined
     
-    var _tagType: js.UndefOr[String] = js.native
+    var _tagType: js.UndefOr[String] = js.undefined
     
-    var _translateProps: js.UndefOr[js.Array[String]] = js.native
+    var _translateProps: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ReactComponentProps {
     
@@ -479,7 +414,7 @@ object mod {
       def set_namespaceUndefined: Self = StObject.set(x, "_namespace", js.undefined)
       
       @scala.inline
-      def set_props(value: HTMLAttributes[Component[js.Object, js.Object, _]]): Self = StObject.set(x, "_props", value.asInstanceOf[js.Any])
+      def set_props(value: HTMLAttributes[Component[js.Object, js.Object, js.Any]]): Self = StObject.set(x, "_props", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_propsUndefined: Self = StObject.set(x, "_props", js.undefined)
@@ -501,12 +436,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TranslaterOptions extends StObject {
     
-    var _locale: js.UndefOr[String] = js.native
+    var _locale: js.UndefOr[String] = js.undefined
     
-    var _purify: js.UndefOr[Boolean] = js.native
+    var _purify: js.UndefOr[Boolean] = js.undefined
   }
   object TranslaterOptions {
     
@@ -533,7 +467,11 @@ object mod {
     }
   }
   
-  type Translator = js.Function1[/* repeated */ js.Any, String]
+  @js.native
+  trait Translator extends StObject {
+    
+    def apply(args: js.Any*): String = js.native
+  }
   
   type i18nLocaleEntry = js.Tuple8[
     String, 
@@ -552,24 +490,23 @@ object mod {
     js.Array[Double] | (js.Tuple2[Double, Double])
   ]
   
-  @js.native
   trait i18nOptions extends StObject {
     
-    var close: String = js.native
+    var close: String
     
-    var defaultLocale: String = js.native
+    var defaultLocale: String
     
-    var hideMissing: Boolean = js.native
+    var hideMissing: Boolean
     
-    var hostUrl: String = js.native
+    var hostUrl: String
     
-    var open: String = js.native
+    var open: String
     
-    var purify: js.UndefOr[js.Function0[Unit]] = js.native
+    var purify: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var sameLocaleOnServerConnection: Boolean = js.native
+    var sameLocaleOnServerConnection: Boolean
     
-    var translationsHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var translationsHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   }
   object i18nOptions {
     

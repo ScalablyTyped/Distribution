@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientContent.anon.UploadType
 import typings.maximMazurokGapiClientContent.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

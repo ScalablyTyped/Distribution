@@ -9,17 +9,15 @@ import typings.yaml.yamlStrings.`[`
 import typings.yaml.yamlStrings.`]`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowChar extends StObject {
   
-  var char: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon = js.native
+  var char: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var origOffset: js.UndefOr[Double] = js.native
+  var origOffset: js.UndefOr[Double] = js.undefined
 }
 object FlowChar {
   

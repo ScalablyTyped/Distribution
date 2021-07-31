@@ -2,22 +2,20 @@ package typings.angularOdataResources.OData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Just a reference to facilitate describing new actions
-@js.native
 trait IActionDescriptor extends StObject {
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var isArray: js.UndefOr[Boolean] = js.native
+  var isArray: js.UndefOr[Boolean] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object IActionDescriptor {
   

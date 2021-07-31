@@ -2,149 +2,111 @@ package typings.humanizePlus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("humanize-plus", "boundedNumber")
+  @JSImport("humanize-plus", JSImport.Namespace)
   @js.native
-  def boundedNumber(number: Double): String = js.native
-  @JSImport("humanize-plus", "boundedNumber")
-  @js.native
-  def boundedNumber(number: Double, bounds: js.UndefOr[scala.Nothing], ending: String): String = js.native
-  @JSImport("humanize-plus", "boundedNumber")
-  @js.native
-  def boundedNumber(number: Double, bounds: Double): String = js.native
-  @JSImport("humanize-plus", "boundedNumber")
-  @js.native
-  def boundedNumber(number: Double, bounds: Double, ending: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("humanize-plus", "capitalize")
-  @js.native
-  def capitalize(string: String): String = js.native
-  @JSImport("humanize-plus", "capitalize")
-  @js.native
-  def capitalize(string: String, downCaseTail: Boolean): String = js.native
+  @scala.inline
+  def boundedNumber(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def boundedNumber(number: Double, bounds: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def boundedNumber(number: Double, bounds: Double, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def boundedNumber(number: Double, bounds: Unit, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "capitalizeAll")
-  @js.native
-  def capitalizeAll(string: String): String = js.native
+  @scala.inline
+  def capitalize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def capitalize(string: String, downCaseTail: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any], downCaseTail.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "compactInteger")
-  @js.native
-  def compactInteger(number: Double): String = js.native
-  @JSImport("humanize-plus", "compactInteger")
-  @js.native
-  def compactInteger(number: Double, decimals: Double): String = js.native
+  @scala.inline
+  def capitalizeAll(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalizeAll")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "fileSize")
-  @js.native
-  def fileSize(filesize: Double): String = js.native
-  @JSImport("humanize-plus", "fileSize")
-  @js.native
-  def fileSize(filesize: Double, precision: Double): String = js.native
+  @scala.inline
+  def compactInteger(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compactInteger")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compactInteger(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compactInteger")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "formatNumber")
-  @js.native
-  def formatNumber(number: Double): String = js.native
-  @JSImport("humanize-plus", "formatNumber")
-  @js.native
-  def formatNumber(number: Double, decimals: Double): String = js.native
+  @scala.inline
+  def fileSize(filesize: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSize")(filesize.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fileSize(filesize: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fileSize")(filesize.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "frequency")
-  @js.native
-  def frequency(list: js.Array[_]): String = js.native
-  @JSImport("humanize-plus", "frequency")
-  @js.native
-  def frequency(list: js.Array[_], verb: String): String = js.native
+  @scala.inline
+  def formatNumber(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatNumber(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "intComma")
-  @js.native
-  def intComma(number: Double): String = js.native
-  @JSImport("humanize-plus", "intComma")
-  @js.native
-  def intComma(number: Double, decimals: Double): String = js.native
+  @scala.inline
+  def frequency(list: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def frequency(list: js.Array[js.Any], verb: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any], verb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "normalizePrecision")
-  @js.native
-  def normalizePrecision(value: Double): Double = js.native
-  @JSImport("humanize-plus", "normalizePrecision")
-  @js.native
-  def normalizePrecision(value: Double, base: Double): Double = js.native
+  @scala.inline
+  def intComma(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def intComma(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "ordinal")
-  @js.native
-  def ordinal(value: Double): String = js.native
+  @scala.inline
+  def normalizePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def normalizePrecision(value: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("humanize-plus", "oxford")
-  @js.native
-  def oxford(items: js.Array[_]): String = js.native
-  @JSImport("humanize-plus", "oxford")
-  @js.native
-  def oxford(items: js.Array[_], limit: js.UndefOr[scala.Nothing], limitStr: String): String = js.native
-  @JSImport("humanize-plus", "oxford")
-  @js.native
-  def oxford(items: js.Array[_], limit: Double): String = js.native
-  @JSImport("humanize-plus", "oxford")
-  @js.native
-  def oxford(items: js.Array[_], limit: Double, limitStr: String): String = js.native
+  @scala.inline
+  def ordinal(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "pace")
-  @js.native
-  def pace(value: Double, intervalMs: Double): String = js.native
-  @JSImport("humanize-plus", "pace")
-  @js.native
-  def pace(value: Double, intervalMs: Double, unit: String): String = js.native
+  @scala.inline
+  def oxford(items: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def oxford(items: js.Array[js.Any], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def oxford(items: js.Array[js.Any], limit: Double, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def oxford(items: js.Array[js.Any], limit: Unit, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "pluralize")
-  @js.native
-  def pluralize(number: Double): String = js.native
-  @JSImport("humanize-plus", "pluralize")
-  @js.native
-  def pluralize(number: Double, singular: js.UndefOr[scala.Nothing], plural: String): String = js.native
-  @JSImport("humanize-plus", "pluralize")
-  @js.native
-  def pluralize(number: Double, singular: String): String = js.native
-  @JSImport("humanize-plus", "pluralize")
-  @js.native
-  def pluralize(number: Double, singular: String, plural: String): String = js.native
+  @scala.inline
+  def pace(value: Double, intervalMs: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def pace(value: Double, intervalMs: Double, unit: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "times")
-  @js.native
-  def times(value: Double): String = js.native
-  @JSImport("humanize-plus", "times")
-  @js.native
-  def times(value: Double, overrides: js.Any): String = js.native
+  @scala.inline
+  def pluralize(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pluralize(number: Double, singular: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def pluralize(number: Double, singular: String, plural: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def pluralize(number: Double, singular: Unit, plural: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "titleCase")
-  @js.native
-  def titleCase(string: String): String = js.native
+  @scala.inline
+  def times(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def times(value: Double, overrides: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "toFixed")
-  @js.native
-  def toFixed(value: Double): String = js.native
-  @JSImport("humanize-plus", "toFixed")
-  @js.native
-  def toFixed(value: Double, precision: Double): String = js.native
+  @scala.inline
+  def titleCase(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "truncate")
-  @js.native
-  def truncate(string: String): String = js.native
-  @JSImport("humanize-plus", "truncate")
-  @js.native
-  def truncate(string: String, length: js.UndefOr[scala.Nothing], ending: String): String = js.native
-  @JSImport("humanize-plus", "truncate")
-  @js.native
-  def truncate(string: String, length: Double): String = js.native
-  @JSImport("humanize-plus", "truncate")
-  @js.native
-  def truncate(string: String, length: Double, ending: String): String = js.native
+  @scala.inline
+  def toFixed(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toFixed(value: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humanize-plus", "truncateWords")
-  @js.native
-  def truncateWords(string: String): String | Null = js.native
-  @JSImport("humanize-plus", "truncateWords")
-  @js.native
-  def truncateWords(string: String, length: Double): String | Null = js.native
+  @scala.inline
+  def truncate(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def truncate(string: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def truncate(string: String, length: Double, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def truncate(string: String, length: Unit, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def truncateWords(string: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateWords")(string.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def truncateWords(string: String, length: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateWords")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

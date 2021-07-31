@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.PushNodeByPathToFrontendRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.PushNodeByPathToFrontendResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypePushNodeByPathToFrontendResponse extends StObject {
   
-  var paramsType: js.Array[PushNodeByPathToFrontendRequest] = js.native
+  var paramsType: js.Array[PushNodeByPathToFrontendRequest]
   
-  var returnType: PushNodeByPathToFrontendResponse = js.native
+  var returnType: PushNodeByPathToFrontendResponse
 }
 object ReturnTypePushNodeByPathToFrontendResponse {
   

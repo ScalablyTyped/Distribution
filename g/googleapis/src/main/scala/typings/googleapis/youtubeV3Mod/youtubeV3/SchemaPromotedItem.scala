@@ -2,38 +2,36 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a single promoted item.
   */
-@js.native
 trait SchemaPromotedItem extends StObject {
   
   /**
     * A custom message to display for this promotion. This field is currently
     * ignored unless the promoted item is a website.
     */
-  var customMessage: js.UndefOr[String] = js.native
+  var customMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the promoted item.
     */
-  var id: js.UndefOr[SchemaPromotedItemId] = js.native
+  var id: js.UndefOr[SchemaPromotedItemId] = js.undefined
   
   /**
     * If true, the content owner&#39;s name will be used when displaying the
     * promotion. This field can only be set when the update is made on behalf
     * of the content owner.
     */
-  var promotedByContentOwner: js.UndefOr[Boolean] = js.native
+  var promotedByContentOwner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The temporal position within the video where the promoted item will be
     * displayed. If present, it overrides the default timing.
     */
-  var timing: js.UndefOr[SchemaInvideoTiming] = js.native
+  var timing: js.UndefOr[SchemaInvideoTiming] = js.undefined
 }
 object SchemaPromotedItem {
   

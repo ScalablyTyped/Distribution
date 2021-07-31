@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Topic extends StObject {
   
   /** The name of the topic. Structured like: projects/{project_number}/locations/{location}/topics/{topic_id} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The settings for this topic's partitions. */
-  var partitionConfig: js.UndefOr[PartitionConfig] = js.native
+  var partitionConfig: js.UndefOr[PartitionConfig] = js.undefined
   
   /** The settings for this topic's message retention. */
-  var retentionConfig: js.UndefOr[RetentionConfig] = js.native
+  var retentionConfig: js.UndefOr[RetentionConfig] = js.undefined
 }
 object Topic {
   

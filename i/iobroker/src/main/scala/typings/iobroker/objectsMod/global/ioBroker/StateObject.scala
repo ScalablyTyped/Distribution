@@ -4,29 +4,28 @@ import typings.iobroker.iobrokerStrings.state
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("acl")
-  var acl_StateObject: js.UndefOr[StateACL] = js.native
+  var acl_StateObject: js.UndefOr[StateACL] = js.undefined
   
   @JSName("common")
-  var common_StateObject: StateCommon = js.native
+  var common_StateObject: StateCommon
   
   @JSName("type")
-  var type_StateObject: state = js.native
+  var type_StateObject: state
 }
 object StateObject {
   
   @scala.inline
-  def apply(_id: String, common: StateCommon, native: Record[String, _], `type`: state): StateObject = {
+  def apply(_id: String, common: StateCommon, native: Record[String, js.Any]): StateObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("state")
     __obj.asInstanceOf[StateObject]
   }
   

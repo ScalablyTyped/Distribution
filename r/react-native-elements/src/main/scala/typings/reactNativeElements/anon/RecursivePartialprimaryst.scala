@@ -3,22 +3,20 @@ package typings.reactNativeElements.anon
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<{  primary :string,   secondary :string,   success :string,   error :string,   warning :string}> */
-@js.native
 trait RecursivePartialprimaryst extends StObject {
   
-  var error: js.UndefOr[RecursivePartial[String]] = js.native
+  var error: js.UndefOr[RecursivePartial[String]] = js.undefined
   
-  var primary: js.UndefOr[RecursivePartial[String]] = js.native
+  var primary: js.UndefOr[RecursivePartial[String]] = js.undefined
   
-  var secondary: js.UndefOr[RecursivePartial[String]] = js.native
+  var secondary: js.UndefOr[RecursivePartial[String]] = js.undefined
   
-  var success: js.UndefOr[RecursivePartial[String]] = js.native
+  var success: js.UndefOr[RecursivePartial[String]] = js.undefined
   
-  var warning: js.UndefOr[RecursivePartial[String]] = js.native
+  var warning: js.UndefOr[RecursivePartial[String]] = js.undefined
 }
 object RecursivePartialprimaryst {
   

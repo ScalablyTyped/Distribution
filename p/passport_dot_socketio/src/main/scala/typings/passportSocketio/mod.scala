@@ -12,26 +12,26 @@ import typings.socketIo.mod.Server
 import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("passport.socketio", "authorize")
+  @JSImport("passport.socketio", JSImport.Namespace)
   @js.native
-  def authorize(options: PassportSocketIoOptions): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("passport.socketio", "filterSocketsByUser")
-  @js.native
-  def filterSocketsByUser(io: Server, filter: js.Function1[/* user */ js.Any, Boolean]): js.Array[Socket] = js.native
+  @scala.inline
+  def authorize(options: PassportSocketIoOptions): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]]
   
-  @js.native
+  @scala.inline
+  def filterSocketsByUser(io: Server, filter: js.Function1[/* user */ js.Any, Boolean]): js.Array[Socket] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterSocketsByUser")(io.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Socket]]
+  
   trait PassportSocketIoOptions extends StObject {
     
     /**
       * the same middleware you registrer in express.
       */
-    var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
     /**
       * callback on fail/error.
@@ -44,24 +44,24 @@ object mod {
           /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the name of the cookie where express/connect stores its session_id.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var passport: js.UndefOr[PassportStatic] = js.native
+    var passport: js.UndefOr[PassportStatic] = js.undefined
     
     /**
       * the session_secret to parse the cookie.
       */
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
     /**
       * we NEED to use a sessionstore. No MemoryStore please.
       */
-    var store: Store = js.native
+    var store: Store
     
     /**
       * callback on success.
@@ -72,7 +72,7 @@ object mod {
           /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PassportSocketIoOptions {
     
@@ -87,7 +87,7 @@ object mod {
       
       @scala.inline
       def setCookieParser(
-        value: (/* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "cookieParser", js.Any.fromFunction3(value))
       
       @scala.inline

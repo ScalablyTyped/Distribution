@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
   
   /**
@@ -17,21 +16,21 @@ trait ColorRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
     */
-  var infos: js.Array[ColorRampStop] = js.native
+  var infos: js.Array[ColorRampStop]
   
   /**
     * The title of the color ramp as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
     */
-  var title: String | RampTitle = js.native
+  var title: String | RampTitle
   
   /**
     * The type of this element is always `color-ramp`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ColorRampElement {
   

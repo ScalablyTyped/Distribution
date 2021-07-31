@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,21 +11,31 @@ sealed trait UpdateSerializeMode extends StObject
 object UpdateSerializeMode extends StObject {
   
   @js.native
-  sealed trait Cancel extends UpdateSerializeMode
+  sealed trait Cancel
+    extends StObject
+       with UpdateSerializeMode
   
   // 0,
   @js.native
-  sealed trait Default extends UpdateSerializeMode
+  sealed trait Default
+    extends StObject
+       with UpdateSerializeMode
   
   // 3,
   @js.native
-  sealed trait PropBoth extends UpdateSerializeMode
+  sealed trait PropBoth
+    extends StObject
+       with UpdateSerializeMode
   
   // 1,
   @js.native
-  sealed trait PropDataOnly extends UpdateSerializeMode
+  sealed trait PropDataOnly
+    extends StObject
+       with UpdateSerializeMode
   
   // 2,
   @js.native
-  sealed trait PropLocalizedOnly extends UpdateSerializeMode
+  sealed trait PropLocalizedOnly
+    extends StObject
+       with UpdateSerializeMode
 }

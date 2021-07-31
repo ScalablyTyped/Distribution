@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object VersionedService {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.VersionedService.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.VersionedService = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.VersionedService = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.VersionedService]
   
   /**
     * Creates and returns a new VersionedService instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object VersionedService {
     * of the parent PublishedServiceBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.VersionedService.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedServiceBase): typings.mendixmodelsdk.webservicesMod.webservices.VersionedService = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedServiceBase): typings.mendixmodelsdk.webservicesMod.webservices.VersionedService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.VersionedService]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.VersionedService.structureTypeName")

@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reduxPersist.typesMod.Persistor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationReactMod {
@@ -29,16 +28,15 @@ object integrationReactMod {
   }
   
   /** @see PersistGate */
-  @js.native
   trait PersistGateProps extends StObject {
     
-    var children: js.UndefOr[ReactNode | (js.Function1[/* bootstrapped */ Boolean, ReactNode])] = js.native
+    var children: js.UndefOr[ReactNode | (js.Function1[/* bootstrapped */ Boolean, ReactNode])] = js.undefined
     
-    var loading: js.UndefOr[ReactNode] = js.native
+    var loading: js.UndefOr[ReactNode] = js.undefined
     
-    var onBeforeLift: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var onBeforeLift: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
-    var persistor: Persistor = js.native
+    var persistor: Persistor
   }
   object PersistGateProps {
     
@@ -78,10 +76,9 @@ object integrationReactMod {
   }
   
   /** @see PersistGate */
-  @js.native
   trait PersistorGateState extends StObject {
     
-    var bootstrapped: Boolean = js.native
+    var bootstrapped: Boolean
   }
   object PersistorGateState {
     

@@ -12,7 +12,7 @@ Lumino Keyboard
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 6 |
-| # downloads        | 651779 |
+| # downloads        | 1371056 |
 | # stars            | 0 |
 
 ## Links

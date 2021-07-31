@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the data disk used by a workflow job.
   */
-@js.native
 trait SchemaDisk extends StObject {
   
   /**
@@ -27,18 +25,18 @@ trait SchemaDisk extends StObject {
     * like this:
     * compute.googleapis.com/projects/project-id/zones/zone/diskTypes/pd-standard
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * Directory in a VM where disk is mounted.
     */
-  var mountPoint: js.UndefOr[String] = js.native
+  var mountPoint: js.UndefOr[String] = js.undefined
   
   /**
     * Size of disk in GB.  If zero or unspecified, the service will attempt to
     * choose a reasonable default.
     */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
 }
 object SchemaDisk {
   

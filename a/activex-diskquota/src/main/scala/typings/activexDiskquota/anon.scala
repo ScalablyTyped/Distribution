@@ -3,15 +3,13 @@ package typings.activexDiskquota
 import typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PUser extends StObject {
     
-    val pUser: DIDiskQuotaUser = js.native
+    val pUser: DIDiskQuotaUser
   }
   object PUser {
     

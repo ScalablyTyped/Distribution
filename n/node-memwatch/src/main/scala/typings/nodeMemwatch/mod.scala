@@ -7,7 +7,6 @@ import typings.nodeMemwatch.nodeMemwatchStrings.leak
 import typings.nodeMemwatch.nodeMemwatchStrings.stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,18 +18,26 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("node-memwatch", "HeapDiff")
   @js.native
-  class HeapDiffCls () extends HeapDiff
+  class HeapDiffCls ()
+    extends StObject
+       with HeapDiff {
+    
+    /**
+      * Compute the diff.
+      */
+    /* CompleteClass */
+    override def end(): HeapDiffInformation = js.native
+  }
   
   /**
     * Compare the state of your heap between two points in time, telling you what has been allocated, and what has been released.
     */
-  @js.native
   trait HeapDiff extends StObject {
     
     /**
       * Compute the diff.
       */
-    def end(): HeapDiffInformation = js.native
+    def end(): HeapDiffInformation
   }
   object HeapDiff {
     
@@ -48,18 +55,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HeapDiffChange extends StObject {
     
-    var allocated_nodes: Double = js.native
+    var allocated_nodes: Double
     
-    var details: js.Array[HeapDiffDetail] = js.native
+    var details: js.Array[HeapDiffDetail]
     
-    var freed_nodes: Double = js.native
+    var freed_nodes: Double
     
-    var size: String = js.native
+    var size: String
     
-    var size_bytes: Double = js.native
+    var size_bytes: Double
   }
   object HeapDiffChange {
     
@@ -98,20 +104,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HeapDiffDetail extends StObject {
     
     @JSName("+")
-    var Plussign: Double = js.native
+    var Plussign: Double
     
     @JSName("-")
-    var _dash: Double = js.native
+    var _dash: Double
     
-    var size: String = js.native
+    var size: String
     
-    var size_bytes: Double = js.native
+    var size_bytes: Double
     
-    var what: String = js.native
+    var what: String
   }
   object HeapDiffDetail {
     
@@ -143,14 +148,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HeapDiffInformation extends StObject {
     
-    var after: HeapDiffSnapshot = js.native
+    var after: HeapDiffSnapshot
     
-    var before: HeapDiffSnapshot = js.native
+    var before: HeapDiffSnapshot
     
-    var change: HeapDiffChange = js.native
+    var change: HeapDiffChange
   }
   object HeapDiffInformation {
     
@@ -174,14 +178,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HeapDiffSnapshot extends StObject {
     
-    var nodes: Double = js.native
+    var nodes: Double
     
-    var size: String = js.native
+    var size: String
     
-    var size_bytes: Double = js.native
+    var size_bytes: Double
   }
   object HeapDiffSnapshot {
     
@@ -205,18 +208,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait LeakInformation extends StObject {
     
     /**
       * Amount of heap growth in bytes.
       */
-    var growth: Double = js.native
+    var growth: Double
     
     /**
       * Human-readable description.
       */
-    var reason: String = js.native
+    var reason: String
   }
   object LeakInformation {
     
@@ -255,24 +257,23 @@ object mod extends Shortcut {
     def on_stats(eventName: stats, callback: js.Function1[/* event */ StatsInformation, Unit]): this.type = js.native
   }
   
-  @js.native
   trait StatsInformation extends StObject {
     
-    var current_base: Double = js.native
+    var current_base: Double
     
-    var estimated_base: Double = js.native
+    var estimated_base: Double
     
-    var heap_compactions: Double = js.native
+    var heap_compactions: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var num_full_gc: Double = js.native
+    var num_full_gc: Double
     
-    var num_inc_gc: Double = js.native
+    var num_inc_gc: Double
     
-    var usage_trend: Double = js.native
+    var usage_trend: Double
   }
   object StatsInformation {
     

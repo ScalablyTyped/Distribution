@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFacetRequest extends StObject {
   
   /**
     * The name of the facet to retrieve.
     */
-  var Name: FacetName = js.native
+  var Name: FacetName
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Facet. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object GetFacetRequest {
   

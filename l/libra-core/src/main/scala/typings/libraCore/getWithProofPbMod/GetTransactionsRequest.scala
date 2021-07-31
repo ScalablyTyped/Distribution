@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest")
@@ -35,13 +34,11 @@ object GetTransactionsRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GetTransactionsRequest = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GetTransactionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetTransactionsRequest]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GetTransactionsRequest, reader: BinaryReader): GetTransactionsRequest = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GetTransactionsRequest, reader: BinaryReader): GetTransactionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetTransactionsRequest]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest.extensions")
   @js.native
@@ -56,22 +53,19 @@ object GetTransactionsRequest {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GetTransactionsRequest, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GetTransactionsRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsRequest.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GetTransactionsRequest): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GetTransactionsRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var fetchEvents: Boolean = js.native
+    var fetchEvents: Boolean
     
-    var limit: String = js.native
+    var limit: String
     
-    var startVersion: String = js.native
+    var startVersion: String
   }
   object AsObject {
     

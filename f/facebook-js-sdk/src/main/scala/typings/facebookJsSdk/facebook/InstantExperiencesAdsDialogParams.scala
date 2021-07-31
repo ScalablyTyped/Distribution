@@ -4,28 +4,28 @@ import typings.facebookJsSdk.facebookJsSdkStrings.canvas_editor
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstantExperiencesAdsDialogParams extends DialogParams {
+trait InstantExperiencesAdsDialogParams
+  extends StObject
+     with DialogParams {
   
-  var business_id: String = js.native
+  var business_id: String
   
-  var canvas_id: js.UndefOr[String] = js.native
+  var canvas_id: js.UndefOr[String] = js.undefined
   
   @JSName("display")
-  var display_InstantExperiencesAdsDialogParams: popup = js.native
+  var display_InstantExperiencesAdsDialogParams: popup
   
-  var method: canvas_editor = js.native
+  var method: canvas_editor
   
-  var page_id: String = js.native
+  var page_id: String
 }
 object InstantExperiencesAdsDialogParams {
   
   @scala.inline
-  def apply(business_id: String, display: popup, method: canvas_editor, page_id: String): InstantExperiencesAdsDialogParams = {
-    val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
+  def apply(business_id: String, page_id: String): InstantExperiencesAdsDialogParams = {
+    val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = "popup", method = "canvas_editor", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogParams]
   }
   

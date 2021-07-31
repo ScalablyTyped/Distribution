@@ -2,13 +2,11 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccentColor extends StObject {
   
-  var accentColor: js.UndefOr[String] = js.native
+  var accentColor: js.UndefOr[String] = js.undefined
 }
 object AccentColor {
   

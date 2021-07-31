@@ -3,56 +3,54 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTemplate extends StObject {
   
   /** CPU overcommit. */
-  var cpuOvercommitType: js.UndefOr[String] = js.native
+  var cpuOvercommitType: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The type of the resource. Always compute#nodeTemplate for node templates. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the
     * name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following
     * characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Labels to use for node affinity, which will be used in instance scheduling. */
   var nodeAffinityLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The node type to use for nodes group that are created from this template. */
-  var nodeType: js.UndefOr[String] = js.native
+  var nodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The flexible properties of the desired node type. Node groups that use this node template will create nodes of a type that matches these properties.
     *
     * This field is mutually exclusive with the node_type property; you can only define one or the other, but not both.
     */
-  var nodeTypeFlexibility: js.UndefOr[NodeTemplateNodeTypeFlexibility] = js.native
+  var nodeTypeFlexibility: js.UndefOr[NodeTemplateNodeTypeFlexibility] = js.undefined
   
   /** [Output Only] The name of the region where the node template resides, such as us-central1. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the binding properties for the physical server. Valid values include:
@@ -61,13 +59,13 @@ trait NodeTemplate extends StObject {
     *
     * See Sole-tenant node options for more information.
     */
-  var serverBinding: js.UndefOr[ServerBinding] = js.native
+  var serverBinding: js.UndefOr[ServerBinding] = js.undefined
   
   /** [Output Only] The status of the node template. One of the following values: CREATING, READY, and DELETING. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** [Output Only] An optional, human-readable explanation of the status. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
 }
 object NodeTemplate {
   
@@ -120,7 +118,7 @@ object NodeTemplate {
     def setNodeAffinityLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[js.Any]
     ): Self = StObject.set(x, "nodeAffinityLabels", value.asInstanceOf[js.Any])
     
     @scala.inline

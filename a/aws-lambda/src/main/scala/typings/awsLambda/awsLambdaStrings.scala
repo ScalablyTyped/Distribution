@@ -22,7 +22,6 @@ import typings.awsLambda.sqsMod._SQSMessageAttributeDataType
 import typings.awsLambda.userMigrationMod.UserStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsLambdaStrings {
@@ -33,22 +32,30 @@ object awsLambdaStrings {
   def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
   
   @js.native
-  sealed trait ADMIN_NO_SRP_AUTH extends ChallengeName
+  sealed trait ADMIN_NO_SRP_AUTH
+    extends StObject
+       with ChallengeName
   @scala.inline
   def ADMIN_NO_SRP_AUTH: ADMIN_NO_SRP_AUTH = "ADMIN_NO_SRP_AUTH".asInstanceOf[ADMIN_NO_SRP_AUTH]
   
   @js.native
-  sealed trait API extends ConnectContactFlowInitiationMethod
+  sealed trait API
+    extends StObject
+       with ConnectContactFlowInitiationMethod
   @scala.inline
   def API: API = "API".asInstanceOf[API]
   
   @js.native
-  sealed trait ARCHIVED extends UserStatus
+  sealed trait ARCHIVED
+    extends StObject
+       with UserStatus
   @scala.inline
   def ARCHIVED: ARCHIVED = "ARCHIVED".asInstanceOf[ARCHIVED]
   
   @js.native
-  sealed trait ARM_CONTAINER extends CodeBuildEnvironmentType
+  sealed trait ARM_CONTAINER
+    extends StObject
+       with CodeBuildEnvironmentType
   @scala.inline
   def ARM_CONTAINER: ARM_CONTAINER = "ARM_CONTAINER".asInstanceOf[ARM_CONTAINER]
   
@@ -58,100 +65,137 @@ object awsLambdaStrings {
   def AWS: AWS = "AWS".asInstanceOf[AWS]
   
   @js.native
-  sealed trait Approval extends CodePipelineActionCategory
+  sealed trait Approval
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Approval: Approval = "Approval".asInstanceOf[Approval]
   
   @js.native
-  sealed trait BITBUCKET extends CodeBuildSourceLocationType
+  sealed trait BITBUCKET
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def BITBUCKET: BITBUCKET = "BITBUCKET".asInstanceOf[BITBUCKET]
   
   @js.native
-  sealed trait BUILD extends CodeBuildPhaseType
+  sealed trait BUILD
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def BUILD: BUILD = "BUILD".asInstanceOf[BUILD]
   
   @js.native
-  sealed trait BUILD_GENERAL1_2XLARGE extends CodeBuildEnvironmentComputeType
+  sealed trait BUILD_GENERAL1_2XLARGE
+    extends StObject
+       with CodeBuildEnvironmentComputeType
   @scala.inline
   def BUILD_GENERAL1_2XLARGE: BUILD_GENERAL1_2XLARGE = "BUILD_GENERAL1_2XLARGE".asInstanceOf[BUILD_GENERAL1_2XLARGE]
   
   @js.native
-  sealed trait BUILD_GENERAL1_LARGE extends CodeBuildEnvironmentComputeType
+  sealed trait BUILD_GENERAL1_LARGE
+    extends StObject
+       with CodeBuildEnvironmentComputeType
   @scala.inline
   def BUILD_GENERAL1_LARGE: BUILD_GENERAL1_LARGE = "BUILD_GENERAL1_LARGE".asInstanceOf[BUILD_GENERAL1_LARGE]
   
   @js.native
-  sealed trait BUILD_GENERAL1_MEDIUM extends CodeBuildEnvironmentComputeType
+  sealed trait BUILD_GENERAL1_MEDIUM
+    extends StObject
+       with CodeBuildEnvironmentComputeType
   @scala.inline
   def BUILD_GENERAL1_MEDIUM: BUILD_GENERAL1_MEDIUM = "BUILD_GENERAL1_MEDIUM".asInstanceOf[BUILD_GENERAL1_MEDIUM]
   
   @js.native
-  sealed trait BUILD_GENERAL1_SMALL extends CodeBuildEnvironmentComputeType
+  sealed trait BUILD_GENERAL1_SMALL
+    extends StObject
+       with CodeBuildEnvironmentComputeType
   @scala.inline
   def BUILD_GENERAL1_SMALL: BUILD_GENERAL1_SMALL = "BUILD_GENERAL1_SMALL".asInstanceOf[BUILD_GENERAL1_SMALL]
   
   @js.native
-  sealed trait Binary extends _SQSMessageAttributeDataType
+  sealed trait Binary
+    extends StObject
+       with _SQSMessageAttributeDataType
   @scala.inline
   def Binary: Binary = "Binary".asInstanceOf[Binary]
   
   @js.native
-  sealed trait Build_ extends CodePipelineActionCategory
+  sealed trait Build_
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Build_ : Build_ = "Build".asInstanceOf[Build_]
   
   @js.native
-  sealed trait CALLBACK extends ConnectContactFlowInitiationMethod
+  sealed trait CALLBACK
+    extends StObject
+       with ConnectContactFlowInitiationMethod
   @scala.inline
   def CALLBACK: CALLBACK = "CALLBACK".asInstanceOf[CALLBACK]
   
   @js.native
   sealed trait CANCELED
-    extends CodePipelineActionState
+    extends StObject
+       with CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
   @scala.inline
   def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   
   @js.native
-  sealed trait CHAT extends ConnectContactFlowChannel
+  sealed trait CHAT
+    extends StObject
+       with ConnectContactFlowChannel
   @scala.inline
   def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
   
   @js.native
-  sealed trait CLIENT_ERROR extends CodeBuildPhaseStatusType
+  sealed trait CLIENT_ERROR
+    extends StObject
+       with CodeBuildPhaseStatusType
   @scala.inline
   def CLIENT_ERROR: CLIENT_ERROR = "CLIENT_ERROR".asInstanceOf[CLIENT_ERROR]
   
   @js.native
-  sealed trait CODEBUILD extends CodeBuildEnvironmentPullCredentialsType
+  sealed trait CODEBUILD
+    extends StObject
+       with CodeBuildEnvironmentPullCredentialsType
   @scala.inline
   def CODEBUILD: CODEBUILD = "CODEBUILD".asInstanceOf[CODEBUILD]
   
   @js.native
-  sealed trait CODECOMMIT extends CodeBuildSourceLocationType
+  sealed trait CODECOMMIT
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def CODECOMMIT: CODECOMMIT = "CODECOMMIT".asInstanceOf[CODECOMMIT]
   
   @js.native
-  sealed trait CODEPIPELINE extends CodeBuildSourceLocationType
+  sealed trait CODEPIPELINE
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def CODEPIPELINE: CODEPIPELINE = "CODEPIPELINE".asInstanceOf[CODEPIPELINE]
   
   @js.native
-  sealed trait COMPLETED extends CodeBuildPhaseType
+  sealed trait COMPLETED
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
   
   @js.native
-  sealed trait COMPROMISED extends UserStatus
+  sealed trait COMPROMISED
+    extends StObject
+       with UserStatus
   @scala.inline
   def COMPROMISED: COMPROMISED = "COMPROMISED".asInstanceOf[COMPROMISED]
   
   @js.native
-  sealed trait CONFIRMED extends UserStatus
+  sealed trait CONFIRMED
+    extends StObject
+       with UserStatus
   @scala.inline
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
   
@@ -261,17 +305,23 @@ object awsLambdaStrings {
   def CustomPayload: CustomPayload = "CustomPayload".asInstanceOf[CustomPayload]
   
   @js.native
-  sealed trait DEVICE_PASSWORD_VERIFIER extends ChallengeName
+  sealed trait DEVICE_PASSWORD_VERIFIER
+    extends StObject
+       with ChallengeName
   @scala.inline
   def DEVICE_PASSWORD_VERIFIER: DEVICE_PASSWORD_VERIFIER = "DEVICE_PASSWORD_VERIFIER".asInstanceOf[DEVICE_PASSWORD_VERIFIER]
   
   @js.native
-  sealed trait DEVICE_SRP_AUTH extends ChallengeName
+  sealed trait DEVICE_SRP_AUTH
+    extends StObject
+       with ChallengeName
   @scala.inline
   def DEVICE_SRP_AUTH: DEVICE_SRP_AUTH = "DEVICE_SRP_AUTH".asInstanceOf[DEVICE_SRP_AUTH]
   
   @js.native
-  sealed trait DOWNLOAD_SOURCE extends CodeBuildPhaseType
+  sealed trait DOWNLOAD_SOURCE
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def DOWNLOAD_SOURCE: DOWNLOAD_SOURCE = "DOWNLOAD_SOURCE".asInstanceOf[DOWNLOAD_SOURCE]
   
@@ -296,7 +346,9 @@ object awsLambdaStrings {
   def Denied: Denied = "Denied".asInstanceOf[Denied]
   
   @js.native
-  sealed trait Deploy extends CodePipelineActionCategory
+  sealed trait Deploy
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
   
@@ -306,7 +358,9 @@ object awsLambdaStrings {
   def DialogCodeHook: DialogCodeHook = "DialogCodeHook".asInstanceOf[DialogCodeHook]
   
   @js.native
-  sealed trait Dropped extends FirehoseRecordTransformationStatus
+  sealed trait Dropped
+    extends StObject
+       with FirehoseRecordTransformationStatus
   @scala.inline
   def Dropped: Dropped = "Dropped".asInstanceOf[Dropped]
   
@@ -327,7 +381,8 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait FAILED
-    extends CodeBuildPhaseStatusType
+    extends StObject
+       with CodeBuildPhaseStatusType
        with CodeBuildStateType
        with CodePipelineActionState
        with CodePipelineStageState
@@ -336,17 +391,23 @@ object awsLambdaStrings {
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
-  sealed trait FAULT extends CodeBuildPhaseStatusType
+  sealed trait FAULT
+    extends StObject
+       with CodeBuildPhaseStatusType
   @scala.inline
   def FAULT: FAULT = "FAULT".asInstanceOf[FAULT]
   
   @js.native
-  sealed trait FINALIZING extends CodeBuildPhaseType
+  sealed trait FINALIZING
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def FINALIZING: FINALIZING = "FINALIZING".asInstanceOf[FINALIZING]
   
   @js.native
-  sealed trait FORCE_CHANGE_PASSWORD extends UserStatus
+  sealed trait FORCE_CHANGE_PASSWORD
+    extends StObject
+       with UserStatus
   @scala.inline
   def FORCE_CHANGE_PASSWORD: FORCE_CHANGE_PASSWORD = "FORCE_CHANGE_PASSWORD".asInstanceOf[FORCE_CHANGE_PASSWORD]
   
@@ -366,17 +427,23 @@ object awsLambdaStrings {
   def FulfillmentCodeHook: FulfillmentCodeHook = "FulfillmentCodeHook".asInstanceOf[FulfillmentCodeHook]
   
   @js.native
-  sealed trait GITHUB extends CodeBuildSourceLocationType
+  sealed trait GITHUB
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def GITHUB: GITHUB = "GITHUB".asInstanceOf[GITHUB]
   
   @js.native
-  sealed trait GITHUB_ENTERPRISE extends CodeBuildSourceLocationType
+  sealed trait GITHUB_ENTERPRISE
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def GITHUB_ENTERPRISE: GITHUB_ENTERPRISE = "GITHUB_ENTERPRISE".asInstanceOf[GITHUB_ENTERPRISE]
   
   @js.native
-  sealed trait INBOUND extends ConnectContactFlowInitiationMethod
+  sealed trait INBOUND
+    extends StObject
+       with ConnectContactFlowInitiationMethod
   @scala.inline
   def INBOUND: INBOUND = "INBOUND".asInstanceOf[INBOUND]
   
@@ -386,17 +453,23 @@ object awsLambdaStrings {
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   
   @js.native
-  sealed trait INSTALL extends CodeBuildPhaseType
+  sealed trait INSTALL
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def INSTALL: INSTALL = "INSTALL".asInstanceOf[INSTALL]
   
   @js.native
-  sealed trait IN_PROGRESS extends CodeBuildStateType
+  sealed trait IN_PROGRESS
+    extends StObject
+       with CodeBuildStateType
   @scala.inline
   def IN_PROGRESS: IN_PROGRESS = "IN_PROGRESS".asInstanceOf[IN_PROGRESS]
   
   @js.native
-  sealed trait Invoke extends CodePipelineActionCategory
+  sealed trait Invoke
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   
@@ -411,17 +484,23 @@ object awsLambdaStrings {
   def KMS: KMS = "KMS".asInstanceOf[KMS]
   
   @js.native
-  sealed trait LINUX_CONTAINER extends CodeBuildEnvironmentType
+  sealed trait LINUX_CONTAINER
+    extends StObject
+       with CodeBuildEnvironmentType
   @scala.inline
   def LINUX_CONTAINER: LINUX_CONTAINER = "LINUX_CONTAINER".asInstanceOf[LINUX_CONTAINER]
   
   @js.native
-  sealed trait LINUX_GPU_CONTAINER extends CodeBuildEnvironmentType
+  sealed trait LINUX_GPU_CONTAINER
+    extends StObject
+       with CodeBuildEnvironmentType
   @scala.inline
   def LINUX_GPU_CONTAINER: LINUX_GPU_CONTAINER = "LINUX_GPU_CONTAINER".asInstanceOf[LINUX_GPU_CONTAINER]
   
   @js.native
-  sealed trait LOCAL extends CodeBuildCacheType
+  sealed trait LOCAL
+    extends StObject
+       with CodeBuildCacheType
   @scala.inline
   def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   
@@ -446,12 +525,16 @@ object awsLambdaStrings {
   def NEW_IMAGE: NEW_IMAGE = "NEW_IMAGE".asInstanceOf[NEW_IMAGE]
   
   @js.native
-  sealed trait NO_CACHE extends CodeBuildCacheType
+  sealed trait NO_CACHE
+    extends StObject
+       with CodeBuildCacheType
   @scala.inline
   def NO_CACHE: NO_CACHE = "NO_CACHE".asInstanceOf[NO_CACHE]
   
   @js.native
-  sealed trait NO_SOURCE extends CodeBuildSourceLocationType
+  sealed trait NO_SOURCE
+    extends StObject
+       with CodeBuildSourceLocationType
   @scala.inline
   def NO_SOURCE: NO_SOURCE = "NO_SOURCE".asInstanceOf[NO_SOURCE]
   
@@ -461,7 +544,9 @@ object awsLambdaStrings {
   def None: None = "None".asInstanceOf[None]
   
   @js.native
-  sealed trait Number extends _SQSMessageAttributeDataType
+  sealed trait Number
+    extends StObject
+       with _SQSMessageAttributeDataType
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
   
@@ -471,47 +556,65 @@ object awsLambdaStrings {
   def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
   
   @js.native
-  sealed trait OUTBOUND extends ConnectContactFlowInitiationMethod
+  sealed trait OUTBOUND
+    extends StObject
+       with ConnectContactFlowInitiationMethod
   @scala.inline
   def OUTBOUND: OUTBOUND = "OUTBOUND".asInstanceOf[OUTBOUND]
   
   @js.native
-  sealed trait Ok extends FirehoseRecordTransformationStatus
+  sealed trait Ok
+    extends StObject
+       with FirehoseRecordTransformationStatus
   @scala.inline
   def Ok: Ok = "Ok".asInstanceOf[Ok]
   
   @js.native
-  sealed trait PARAMETER_STORE extends CodeBuildEnvironmentVariableType
+  sealed trait PARAMETER_STORE
+    extends StObject
+       with CodeBuildEnvironmentVariableType
   @scala.inline
   def PARAMETER_STORE: PARAMETER_STORE = "PARAMETER_STORE".asInstanceOf[PARAMETER_STORE]
   
   @js.native
-  sealed trait PASSWORD_VERIFIER extends ChallengeName
+  sealed trait PASSWORD_VERIFIER
+    extends StObject
+       with ChallengeName
   @scala.inline
   def PASSWORD_VERIFIER: PASSWORD_VERIFIER = "PASSWORD_VERIFIER".asInstanceOf[PASSWORD_VERIFIER]
   
   @js.native
-  sealed trait PLAINTEXT extends CodeBuildEnvironmentVariableType
+  sealed trait PLAINTEXT
+    extends StObject
+       with CodeBuildEnvironmentVariableType
   @scala.inline
   def PLAINTEXT: PLAINTEXT = "PLAINTEXT".asInstanceOf[PLAINTEXT]
   
   @js.native
-  sealed trait POST_BUILD extends CodeBuildPhaseType
+  sealed trait POST_BUILD
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def POST_BUILD: POST_BUILD = "POST_BUILD".asInstanceOf[POST_BUILD]
   
   @js.native
-  sealed trait PRE_BUILD extends CodeBuildPhaseType
+  sealed trait PRE_BUILD
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def PRE_BUILD: PRE_BUILD = "PRE_BUILD".asInstanceOf[PRE_BUILD]
   
   @js.native
-  sealed trait PROVISIONING extends CodeBuildPhaseType
+  sealed trait PROVISIONING
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def PROVISIONING: PROVISIONING = "PROVISIONING".asInstanceOf[PROVISIONING]
   
   @js.native
-  sealed trait PermanentFailure extends S3BatchResultResultCode
+  sealed trait PermanentFailure
+    extends StObject
+       with S3BatchResultResultCode
   @scala.inline
   def PermanentFailure: PermanentFailure = "PermanentFailure".asInstanceOf[PermanentFailure]
   
@@ -556,12 +659,16 @@ object awsLambdaStrings {
   def PreSignUp_SignUp: PreSignUp_SignUp = "PreSignUp_SignUp".asInstanceOf[PreSignUp_SignUp]
   
   @js.native
-  sealed trait ProcessingFailed extends FirehoseRecordTransformationStatus
+  sealed trait ProcessingFailed
+    extends StObject
+       with FirehoseRecordTransformationStatus
   @scala.inline
   def ProcessingFailed: ProcessingFailed = "ProcessingFailed".asInstanceOf[ProcessingFailed]
   
   @js.native
-  sealed trait QUEUED extends CodeBuildPhaseType
+  sealed trait QUEUED
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def QUEUED: QUEUED = "QUEUED".asInstanceOf[QUEUED]
   
@@ -581,31 +688,39 @@ object awsLambdaStrings {
   def RESEND: RESEND = "RESEND".asInstanceOf[RESEND]
   
   @js.native
-  sealed trait RESET_REQUIRED extends UserStatus
+  sealed trait RESET_REQUIRED
+    extends StObject
+       with UserStatus
   @scala.inline
   def RESET_REQUIRED: RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[RESET_REQUIRED]
   
   @js.native
   sealed trait RESUMED
-    extends CodePipelineStageState
+    extends StObject
+       with CodePipelineStageState
        with CodePipelineState
   @scala.inline
   def RESUMED: RESUMED = "RESUMED".asInstanceOf[RESUMED]
   
   @js.native
   sealed trait S3
-    extends CodeBuildCacheType
+    extends StObject
+       with CodeBuildCacheType
        with CodeBuildSourceLocationType
   @scala.inline
   def S3: S3 = "S3".asInstanceOf[S3]
   
   @js.native
-  sealed trait SECRETS_MANAGER extends CodeBuildEnvironmentVariableType
+  sealed trait SECRETS_MANAGER
+    extends StObject
+       with CodeBuildEnvironmentVariableType
   @scala.inline
   def SECRETS_MANAGER: SECRETS_MANAGER = "SECRETS_MANAGER".asInstanceOf[SECRETS_MANAGER]
   
   @js.native
-  sealed trait SERVICE_ROLE extends CodeBuildEnvironmentPullCredentialsType
+  sealed trait SERVICE_ROLE
+    extends StObject
+       with CodeBuildEnvironmentPullCredentialsType
   @scala.inline
   def SERVICE_ROLE: SERVICE_ROLE = "SERVICE_ROLE".asInstanceOf[SERVICE_ROLE]
   
@@ -615,12 +730,16 @@ object awsLambdaStrings {
   def SMS: SMS = "SMS".asInstanceOf[SMS]
   
   @js.native
-  sealed trait SMS_MFA extends ChallengeName
+  sealed trait SMS_MFA
+    extends StObject
+       with ChallengeName
   @scala.inline
   def SMS_MFA: SMS_MFA = "SMS_MFA".asInstanceOf[SMS_MFA]
   
   @js.native
-  sealed trait SRP_A extends ChallengeName
+  sealed trait SRP_A
+    extends StObject
+       with ChallengeName
   @scala.inline
   def SRP_A: SRP_A = "SRP_A".asInstanceOf[SRP_A]
   
@@ -631,7 +750,8 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait STARTED
-    extends CodePipelineActionState
+    extends StObject
+       with CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
   @scala.inline
@@ -639,19 +759,23 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait STOPPED
-    extends CodeBuildPhaseStatusType
+    extends StObject
+       with CodeBuildPhaseStatusType
        with CodeBuildStateType
   @scala.inline
   def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
   
   @js.native
-  sealed trait SUBMITTED extends CodeBuildPhaseType
+  sealed trait SUBMITTED
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def SUBMITTED: SUBMITTED = "SUBMITTED".asInstanceOf[SUBMITTED]
   
   @js.native
   sealed trait SUCCEEDED
-    extends CodeBuildPhaseStatusType
+    extends StObject
+       with CodeBuildPhaseStatusType
        with CodeBuildStateType
        with CodePipelineActionState
        with CodePipelineStageState
@@ -665,7 +789,9 @@ object awsLambdaStrings {
   def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
-  sealed trait SUPERSEDED extends CodePipelineState
+  sealed trait SUPERSEDED
+    extends StObject
+       with CodePipelineState
   @scala.inline
   def SUPERSEDED: SUPERSEDED = "SUPERSEDED".asInstanceOf[SUPERSEDED]
   
@@ -680,17 +806,23 @@ object awsLambdaStrings {
   def `Scheduled Event`: `Scheduled Event` = ("Scheduled Event").asInstanceOf[`Scheduled Event`]
   
   @js.native
-  sealed trait Source extends CodePipelineActionCategory
+  sealed trait Source
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
   
   @js.native
-  sealed trait String extends _SQSMessageAttributeDataType
+  sealed trait String
+    extends StObject
+       with _SQSMessageAttributeDataType
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   
   @js.native
-  sealed trait Succeeded_ extends S3BatchResultResultCode
+  sealed trait Succeeded_
+    extends StObject
+       with S3BatchResultResultCode
   @scala.inline
   def Succeeded_ : Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
   
@@ -700,7 +832,9 @@ object awsLambdaStrings {
   def TELEPHONE_NUMBER: TELEPHONE_NUMBER = "TELEPHONE_NUMBER".asInstanceOf[TELEPHONE_NUMBER]
   
   @js.native
-  sealed trait TIMED_OUT extends CodeBuildPhaseStatusType
+  sealed trait TIMED_OUT
+    extends StObject
+       with CodeBuildPhaseStatusType
   @scala.inline
   def TIMED_OUT: TIMED_OUT = "TIMED_OUT".asInstanceOf[TIMED_OUT]
   
@@ -710,17 +844,23 @@ object awsLambdaStrings {
   def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   
   @js.native
-  sealed trait TRANSFER extends ConnectContactFlowInitiationMethod
+  sealed trait TRANSFER
+    extends StObject
+       with ConnectContactFlowInitiationMethod
   @scala.inline
   def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
   
   @js.native
-  sealed trait TemporaryFailure extends S3BatchResultResultCode
+  sealed trait TemporaryFailure
+    extends StObject
+       with S3BatchResultResultCode
   @scala.inline
   def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   
   @js.native
-  sealed trait Test extends CodePipelineActionCategory
+  sealed trait Test
+    extends StObject
+       with CodePipelineActionCategory
   @scala.inline
   def Test: Test = "Test".asInstanceOf[Test]
   
@@ -760,17 +900,23 @@ object awsLambdaStrings {
   def TokenGeneration_RefreshTokens: TokenGeneration_RefreshTokens = "TokenGeneration_RefreshTokens".asInstanceOf[TokenGeneration_RefreshTokens]
   
   @js.native
-  sealed trait UNCONFIRMED extends UserStatus
+  sealed trait UNCONFIRMED
+    extends StObject
+       with UserStatus
   @scala.inline
   def UNCONFIRMED: UNCONFIRMED = "UNCONFIRMED".asInstanceOf[UNCONFIRMED]
   
   @js.native
-  sealed trait UNKNOWN extends UserStatus
+  sealed trait UNKNOWN
+    extends StObject
+       with UserStatus
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait UPLOAD_ARTIFACTS extends CodeBuildPhaseType
+  sealed trait UPLOAD_ARTIFACTS
+    extends StObject
+       with CodeBuildPhaseType
   @scala.inline
   def UPLOAD_ARTIFACTS: UPLOAD_ARTIFACTS = "UPLOAD_ARTIFACTS".asInstanceOf[UPLOAD_ARTIFACTS]
   
@@ -790,7 +936,9 @@ object awsLambdaStrings {
   def UserMigration_ForgotPassword: UserMigration_ForgotPassword = "UserMigration_ForgotPassword".asInstanceOf[UserMigration_ForgotPassword]
   
   @js.native
-  sealed trait VOICE extends ConnectContactFlowChannel
+  sealed trait VOICE
+    extends StObject
+       with ConnectContactFlowChannel
   @scala.inline
   def VOICE: VOICE = "VOICE".asInstanceOf[VOICE]
   
@@ -805,7 +953,9 @@ object awsLambdaStrings {
   def Voice_ : Voice_ = "Voice".asInstanceOf[Voice_]
   
   @js.native
-  sealed trait WINDOWS_CONTAINER extends CodeBuildEnvironmentType
+  sealed trait WINDOWS_CONTAINER
+    extends StObject
+       with CodeBuildEnvironmentType
   @scala.inline
   def WINDOWS_CONTAINER: WINDOWS_CONTAINER = "WINDOWS_CONTAINER".asInstanceOf[WINDOWS_CONTAINER]
   

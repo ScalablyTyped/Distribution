@@ -2,51 +2,49 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SipRule extends StObject {
   
   /**
     * The SIP rule created timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * Indicates if the SIP rule is enabled or disabled. You must disable a rule before you can delete it.
     */
-  var Disabled: js.UndefOr[Boolean] = js.native
+  var Disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the SIP rule.
     */
-  var Name: js.UndefOr[SipRuleName] = js.native
+  var Name: js.UndefOr[SipRuleName] = js.undefined
   
   /**
     * The SIP rule ID.
     */
-  var SipRuleId: js.UndefOr[NonEmptyString] = js.native
+  var SipRuleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * List of SIP media applications with priority and AWS Region. You can only use one SIP application per AWS Region and priority combination.
     */
-  var TargetApplications: js.UndefOr[SipRuleTargetApplicationList] = js.native
+  var TargetApplications: js.UndefOr[SipRuleTargetApplicationList] = js.undefined
   
   /**
     * The type of trigger whose value is assigned to the SIP rule in TriggerValue.
     */
-  var TriggerType: js.UndefOr[SipRuleTriggerType] = js.native
+  var TriggerType: js.UndefOr[SipRuleTriggerType] = js.undefined
   
   /**
     * If TriggerType is RequestUriHostname, then the value can be the outbound host name of the Amazon Chime Voice Connector. If TriggerType is ToPhoneNumber, then the value can be a customer-owned phone number in E164 format. SipRule is triggered when a SIP rule requests host name or ToPhoneNumber matches in the incoming SIP request.
     */
-  var TriggerValue: js.UndefOr[NonEmptyString] = js.native
+  var TriggerValue: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The SIP rule updated timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object SipRule {
   

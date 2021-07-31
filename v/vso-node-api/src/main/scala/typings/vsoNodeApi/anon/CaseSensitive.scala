@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseSensitive extends StObject {
   
-  var caseSensitive: scala.Double = js.native
+  var caseSensitive: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var objectTooLarge: scala.Double = js.native
+  var objectTooLarge: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
 }
 object CaseSensitive {
   

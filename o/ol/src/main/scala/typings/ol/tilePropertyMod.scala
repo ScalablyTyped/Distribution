@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilePropertyMod {
@@ -12,11 +11,11 @@ object tilePropertyMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TileProperty with String] = js.native
+    def apply(value: String): js.UndefOr[TileProperty & String] = js.native
     
-    /* "preload" */ val PRELOAD: typings.ol.tilePropertyMod.TileProperty.PRELOAD with String = js.native
+    /* "preload" */ val PRELOAD: typings.ol.tilePropertyMod.TileProperty.PRELOAD & String = js.native
     
-    /* "useInterimTilesOnError" */ val USE_INTERIM_TILES_ON_ERROR: typings.ol.tilePropertyMod.TileProperty.USE_INTERIM_TILES_ON_ERROR with String = js.native
+    /* "useInterimTilesOnError" */ val USE_INTERIM_TILES_ON_ERROR: typings.ol.tilePropertyMod.TileProperty.USE_INTERIM_TILES_ON_ERROR & String = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object tilePropertyMod {
   object TileProperty extends StObject {
     
     @js.native
-    sealed trait PRELOAD extends TileProperty
+    sealed trait PRELOAD
+      extends StObject
+         with TileProperty
     
     @js.native
-    sealed trait USE_INTERIM_TILES_ON_ERROR extends TileProperty
+    sealed trait USE_INTERIM_TILES_ON_ERROR
+      extends StObject
+         with TileProperty
   }
 }

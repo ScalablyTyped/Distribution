@@ -2,7 +2,6 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,13 +10,28 @@ object global {
   @JSGlobal("Acceleration")
   @js.native
   class Acceleration ()
-    extends typings.phonegap.Acceleration
+    extends StObject
+       with typings.phonegap.Acceleration {
+    
+    /* CompleteClass */
+    var timestamp: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
+    
+    /* CompleteClass */
+    var z: Double = js.native
+  }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CameraPopoverOptions")
   @js.native
   class CameraPopoverOptions protected ()
-    extends typings.phonegap.CameraPopoverOptions {
+    extends StObject
+       with typings.phonegap.CameraPopoverOptions {
     def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
   }
   
@@ -99,27 +113,59 @@ object global {
   @JSGlobal("ContactField")
   @js.native
   class ContactField protected ()
-    extends typings.phonegap.ContactField {
+    extends StObject
+       with typings.phonegap.ContactField {
     def this(`type`: String, calue: String, perf: Boolean) = this()
+    
+    /* CompleteClass */
+    var pref: Boolean = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /* CompleteClass */
+    var value: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactFindOptions")
   @js.native
   class ContactFindOptions ()
-    extends typings.phonegap.ContactFindOptions
+    extends StObject
+       with typings.phonegap.ContactFindOptions
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactName")
   @js.native
   class ContactName ()
-    extends typings.phonegap.ContactName
+    extends StObject
+       with typings.phonegap.ContactName {
+    
+    /* CompleteClass */
+    var familyName: String = js.native
+    
+    /* CompleteClass */
+    var formatted: String = js.native
+    
+    /* CompleteClass */
+    var givenName: String = js.native
+    
+    /* CompleteClass */
+    var honorificPrefix: String = js.native
+    
+    /* CompleteClass */
+    var honorificSuffix: String = js.native
+    
+    /* CompleteClass */
+    var middleName: String = js.native
+  }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DirectoryEntry")
   @js.native
   class DirectoryEntry protected ()
-    extends typings.phonegap.DirectoryEntry {
+    extends StObject
+       with typings.phonegap.DirectoryEntry {
     def this(name: String, root: typings.phonegap.DirectoryEntry) = this()
   }
   
@@ -206,7 +252,8 @@ object global {
   @JSGlobal("FileTransfer")
   @js.native
   class FileTransfer ()
-    extends typings.phonegap.FileTransfer
+    extends StObject
+       with typings.phonegap.FileTransfer
   
   object FileTransferError {
     
@@ -243,7 +290,8 @@ object global {
   @JSGlobal("FileUploadOptions")
   @js.native
   class FileUploadOptions ()
-    extends typings.phonegap.FileUploadOptions
+    extends StObject
+       with typings.phonegap.FileUploadOptions
   
   object GlobalizationError {
     
@@ -292,11 +340,12 @@ object global {
   @JSGlobal("Media")
   @js.native
   class Media protected ()
-    extends typings.phonegap.Media {
+    extends StObject
+       with typings.phonegap.Media {
     def this(
       src: String,
-      onSuccess: js.Function1[/* arg */ js.Any, _],
-      onError: js.Function1[/* error */ js.Any, _]
+      onSuccess: js.Function1[/* arg */ js.Any, js.Any],
+      onError: js.Function1[/* error */ js.Any, js.Any]
     ) = this()
   }
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDeploymentConfigInput extends StObject {
   
   /**
     * The name of a deployment configuration associated with the IAM user or AWS account.
     */
-  var deploymentConfigName: DeploymentConfigName = js.native
+  var deploymentConfigName: DeploymentConfigName
 }
 object DeleteDeploymentConfigInput {
   

@@ -3,17 +3,15 @@ package typings.googleapis.anon
 import typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2.SchemaReportApiColumnSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.UndefOr[SchemaReportApiColumnSpec] = js.native
+  var column: js.UndefOr[SchemaReportApiColumnSpec] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object Column {
   
@@ -39,7 +37,7 @@ object Column {
     def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

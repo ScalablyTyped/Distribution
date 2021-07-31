@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SupportingWidgetDefaultsSketch extends Object {
+trait SupportingWidgetDefaultsSketch
+  extends StObject
+     with Object {
   
   /**
     * An object containing the `defaultUpdateOptions` for the [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var defaultUpdateOptions: js.UndefOr[js.Any] = js.native
+  var defaultUpdateOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The marker symbol used to symbolize any point feature updates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var markerSymbol: js.UndefOr[SimpleMarkerSymbol] = js.native
+  var markerSymbol: js.UndefOr[SimpleMarkerSymbol] = js.undefined
   
   /**
     * The polygon symbol used to symbolize any polygon feature updates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var polygonSymbol: js.UndefOr[SimpleFillSymbol] = js.native
+  var polygonSymbol: js.UndefOr[SimpleFillSymbol] = js.undefined
   
   /**
     * The line symbol used to symbolize any line feature updates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var polylineSymbol: js.UndefOr[SimpleLineSymbol] = js.native
+  var polylineSymbol: js.UndefOr[SimpleLineSymbol] = js.undefined
 }
 object SupportingWidgetDefaultsSketch {
   

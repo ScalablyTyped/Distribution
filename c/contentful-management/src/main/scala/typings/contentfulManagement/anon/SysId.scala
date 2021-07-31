@@ -2,13 +2,11 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SysId extends StObject {
   
-  var sys: Id = js.native
+  var sys: Id
 }
 object SysId {
   

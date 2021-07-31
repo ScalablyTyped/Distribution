@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 import typings.pulumiKubernetes.outputMod.core.v1.TypedLocalObjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IngressBackend describes all endpoints for a given service and port.
   */
-@js.native
 trait IngressBackend extends StObject {
   
   /**
     * Resource is an ObjectRef to another Kubernetes resource in the namespace of the Ingress object. If resource is specified, serviceName and servicePort must not be specified.
     */
-  var resource: TypedLocalObjectReference = js.native
+  var resource: TypedLocalObjectReference
   
   /**
     * Specifies the name of the referenced service.
     */
-  var serviceName: String = js.native
+  var serviceName: String
   
   /**
     * Specifies the port of the referenced service.
     */
-  var servicePort: Double | String = js.native
+  var servicePort: Double | String
 }
 object IngressBackend {
   

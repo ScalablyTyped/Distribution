@@ -2,16 +2,16 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlGroundOverlay extends KmlOverlay {
+trait KmlGroundOverlay
+  extends StObject
+     with KmlOverlay {
   
   /**
     * Specifies the distance above the earth's surface.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * Specifies how the altitude property is interpreted.
@@ -22,17 +22,17 @@ trait KmlGroundOverlay extends KmlOverlay {
     * * GEPlugin.ALTITUDE_ABSOLUTE
     * * GEPlugin.ALTITUDE_CLAMP_TO_SEA_FLOOR
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   
   /**
     * The bounding box of the ground overlay.
     */
-  def getLatLonBox(): KmlLatLonBox = js.native
+  def getLatLonBox(): KmlLatLonBox
   
   /**
     * Specifies the distance above the earth's surface.
     */
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
   /**
     * Specifies how the altitude property is interpreted.
@@ -43,12 +43,12 @@ trait KmlGroundOverlay extends KmlOverlay {
     * * GEPlugin.ALTITUDE_ABSOLUTE
     * * GEPlugin.ALTITUDE_CLAMP_TO_SEA_FLOOR
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit
   
   /**
     * The bounding box of the ground overlay.
     */
-  def setLatLonBox(latLonBox: KmlLatLonBox): Unit = js.native
+  def setLatLonBox(latLonBox: KmlLatLonBox): Unit
 }
 object KmlGroundOverlay {
   

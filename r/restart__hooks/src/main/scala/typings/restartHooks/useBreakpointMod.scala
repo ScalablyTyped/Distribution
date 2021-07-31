@@ -9,31 +9,30 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useBreakpointMod {
   
-  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Namespace)
   @js.native
-  def default(breakpointMap: PartialRecordDefaultBreak): Boolean = js.native
-  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Default)
-  @js.native
-  def default(breakpoint: DefaultBreakpoints): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@restart/hooks/cjs/useBreakpoint", "createBreakpointHook")
-  @js.native
-  def createBreakpointHook[TKey /* <: String */](breakpointValues: Record[TKey, String | Double]): FnCall[TKey] = js.native
+  @scala.inline
+  def default(breakpointMap: PartialRecordDefaultBreak): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpointMap.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(breakpoint: DefaultBreakpoints): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Default)
-  @js.native
-  def default_down(breakpoint: DefaultBreakpoints, direction: down): Boolean = js.native
-  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Default)
-  @js.native
-  def default_true(breakpoint: DefaultBreakpoints, direction: `true`): Boolean = js.native
-  @JSImport("@restart/hooks/cjs/useBreakpoint", JSImport.Default)
-  @js.native
-  def default_up(breakpoint: DefaultBreakpoints, direction: up): Boolean = js.native
+  @scala.inline
+  def createBreakpointHook[TKey /* <: String */](breakpointValues: Record[TKey, String | Double]): FnCall[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBreakpointHook")(breakpointValues.asInstanceOf[js.Any]).asInstanceOf[FnCall[TKey]]
+  
+  @scala.inline
+  def default_down(breakpoint: DefaultBreakpoints, direction: down): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def default_true(breakpoint: DefaultBreakpoints, direction: `true`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def default_up(breakpoint: DefaultBreakpoints, direction: up): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.restartHooks.restartHooksBooleans.`true`
@@ -56,18 +55,17 @@ object useBreakpointMod {
   type BreakpointMap[TKey /* <: String */] = Partial[Record[TKey, BreakpointDirection]]
   
   /* Inlined @restart/hooks.@restart/hooks/cjs/useBreakpoint.BreakpointMap<@restart/hooks.@restart/hooks/cjs/useBreakpoint.DefaultBreakpoints> */
-  @js.native
   trait DefaultBreakpointMap extends StObject {
     
-    var lg: js.UndefOr[BreakpointDirection] = js.native
+    var lg: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var md: js.UndefOr[BreakpointDirection] = js.native
+    var md: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var sm: js.UndefOr[BreakpointDirection] = js.native
+    var sm: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var xl: js.UndefOr[BreakpointDirection] = js.native
+    var xl: js.UndefOr[BreakpointDirection] = js.undefined
     
-    var xs: js.UndefOr[BreakpointDirection] = js.native
+    var xs: js.UndefOr[BreakpointDirection] = js.undefined
   }
   object DefaultBreakpointMap {
     

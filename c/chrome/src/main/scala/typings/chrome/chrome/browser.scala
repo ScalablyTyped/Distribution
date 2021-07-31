@@ -2,7 +2,6 @@ package typings.chrome.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -14,11 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object browser {
   
-  @js.native
   trait Options extends StObject {
     
     /** The URL to navigate to when the new tab is initially opened. */
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

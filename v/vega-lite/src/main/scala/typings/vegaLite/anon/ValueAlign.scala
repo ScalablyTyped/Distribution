@@ -2,13 +2,11 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueAlign extends StObject {
   
-  var value: typings.vegaTypings.encodeMod.Align = js.native
+  var value: typings.vegaTypings.encodeMod.Align
 }
 object ValueAlign {
   

@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a feature report. */
-@js.native
 trait HidFeatureReport extends StObject {
   
   /** Retrieves, or sets, the data associated with a given feature report. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
   /**
     * Retrieves the Boolean control associated with the usagePage and usageIdparameter and found in the given feature report.
@@ -19,14 +17,14 @@ trait HidFeatureReport extends StObject {
     * @param usageId The usage identifier of the top-level collection for the given HID device.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControl(usagePage: Double, usageId: Double): HidBooleanControl = js.native
+  def getBooleanControl(usagePage: Double, usageId: Double): HidBooleanControl
   
   /**
     * Retrieves the Boolean control described by the controlDescription parameter and found in the given feature report.
     * @param controlDescription A HidBooleanControlDescription object.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
+  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
   
   /**
     * Retrieves the numeric control associated with the usagePage and usageId parameters and found in the given feature report.
@@ -34,17 +32,17 @@ trait HidFeatureReport extends StObject {
     * @param usageId The usage identifier of the top-level collection for the given HID device.
     * @return A HidNumericControl object.
     */
-  def getNumericControl(usagePage: Double, usageId: Double): HidNumericControl = js.native
+  def getNumericControl(usagePage: Double, usageId: Double): HidNumericControl
   
   /**
     * Retrieves the numeric control described by the controlDescription parameter and found in the given feature report.
     * @param controlDescription A HidNumericControlDescription object.
     * @return A HidNumericControl object.
     */
-  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
+  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl
   
   /** Retrieves the identifier associated with a given feature report. */
-  var id: Double = js.native
+  var id: Double
 }
 object HidFeatureReport {
   

@@ -2,15 +2,13 @@ package typings.lockfileLintApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Packages extends StObject {
     
-    var packages: typings.lockfileLintApi.mod.Packages = js.native
+    var packages: typings.lockfileLintApi.mod.Packages
   }
   object Packages {
     

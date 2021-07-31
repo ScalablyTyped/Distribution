@@ -3,11 +3,11 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.System.VirtualKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AcceleratorKeyEventArgs extends IAcceleratorKeyEventArgs
+trait AcceleratorKeyEventArgs
+  extends StObject
+     with IAcceleratorKeyEventArgs
 object AcceleratorKeyEventArgs {
   
   @scala.inline

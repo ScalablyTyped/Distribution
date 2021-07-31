@@ -10,18 +10,18 @@ import typings.stripe.stripeStrings.card
 import typings.stripe.stripeStrings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokens {
   
-  @js.native
-  trait IBankAccountToken extends ITokenBase {
+  trait IBankAccountToken
+    extends StObject
+       with ITokenBase {
     
     /**
       * Hash describing the bank account
       */
-    var bank_account: js.UndefOr[IBankAccountHash] = js.native
+    var bank_account: js.UndefOr[IBankAccountHash] = js.undefined
   }
   object IBankAccountToken {
     
@@ -31,12 +31,11 @@ object tokens {
       created: Double,
       id: String,
       livemode: Boolean,
-      `object`: token,
       `type`: card | bank_account,
       used: Boolean
     ): IBankAccountToken = {
       val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("token")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBankAccountToken]
     }
@@ -52,8 +51,9 @@ object tokens {
     }
   }
   
-  @js.native
-  trait IBankAccountTokenCreationOptions extends ITokenCreationOptionsBase {
+  trait IBankAccountTokenCreationOptions
+    extends StObject
+       with ITokenCreationOptionsBase {
     
     /**
       * The bank account this token will represent. If you also pass in
@@ -62,7 +62,7 @@ object tokens {
       * customer, a object containing a user's bank account details,
       * with the options described below.
       */
-    var bank_account: String | ISourceCreationOptions = js.native
+    var bank_account: String | ISourceCreationOptions
   }
   object IBankAccountTokenCreationOptions {
     
@@ -80,13 +80,14 @@ object tokens {
     }
   }
   
-  @js.native
-  trait ICardToken extends ITokenBase {
+  trait ICardToken
+    extends StObject
+       with ITokenBase {
     
     /**
       * Hash describing the card used to make the charge
       */
-    var card: js.UndefOr[ICardHash] = js.native
+    var card: js.UndefOr[ICardHash] = js.undefined
   }
   object ICardToken {
     
@@ -96,12 +97,11 @@ object tokens {
       created: Double,
       id: String,
       livemode: Boolean,
-      `object`: token,
       `type`: card | bank_account,
       used: Boolean
     ): ICardToken = {
       val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("token")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICardToken]
     }
@@ -117,8 +117,9 @@ object tokens {
     }
   }
   
-  @js.native
-  trait ICardTokenCreationOptions extends ITokenCreationOptionsBase {
+  trait ICardTokenCreationOptions
+    extends StObject
+       with ITokenCreationOptionsBase {
     
     /**
       * The card this token will represent. If you also pass in a customer,
@@ -126,7 +127,7 @@ object tokens {
       * Otherwise, if you do not pass a customer, a object containing a
       * user's credit card details, with the options described below.
       */
-    var card: js.UndefOr[String | ICardSourceCreationOptions] = js.native
+    var card: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   }
   object ICardTokenCreationOptions {
     
@@ -147,10 +148,11 @@ object tokens {
     }
   }
   
-  @js.native
-  trait IPiiTokenCreationOptions extends IDataOptions {
+  trait IPiiTokenCreationOptions
+    extends StObject
+       with IDataOptions {
     
-    var pii: Personalidnumber = js.native
+    var pii: Personalidnumber
   }
   object IPiiTokenCreationOptions {
     
@@ -172,13 +174,14 @@ object tokens {
   - typings.stripe.mod.IObject because Already inherited
   - typings.stripe.mod.IResourceObject because Already inherited
   - typings.stripe.mod.tokens.ITokenBase because Already inherited
-  - typings.stripe.mod.tokens.IBankAccountToken because var conflicts: client_ip, created, id, livemode, `object`, `type`, used. Inlined bank_account */ @js.native
-  trait IToken extends ICardToken {
+  - typings.stripe.mod.tokens.IBankAccountToken because var conflicts: client_ip, created, id, livemode, `object`, `type`, used. Inlined bank_account */ trait IToken
+    extends StObject
+       with ICardToken {
     
     /**
       * Hash describing the bank account
       */
-    var bank_account: js.UndefOr[IBankAccountHash] = js.native
+    var bank_account: js.UndefOr[IBankAccountHash] = js.undefined
   }
   object IToken {
     
@@ -188,12 +191,11 @@ object tokens {
       created: Double,
       id: String,
       livemode: Boolean,
-      `object`: token,
       `type`: card | bank_account,
       used: Boolean
     ): IToken = {
       val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("token")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IToken]
     }
@@ -209,33 +211,34 @@ object tokens {
     }
   }
   
-  @js.native
-  trait ITokenBase extends IResourceObject {
+  trait ITokenBase
+    extends StObject
+       with IResourceObject {
     
     /**
       * IP address of the client that generated the token
       */
-    var client_ip: String = js.native
+    var client_ip: String
     
-    var created: Double = js.native
+    var created: Double
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Value is "token""
       */
     @JSName("object")
-    var object_ITokenBase: token = js.native
+    var object_ITokenBase: token
     
     /**
       * Type of the token: card or bank_account
       */
-    var `type`: card | bank_account = js.native
+    var `type`: card | bank_account
     
     /**
       * Whether or not this token has already been used (tokens can be used only once)
       */
-    var used: Boolean = js.native
+    var used: Boolean
   }
   object ITokenBase {
     
@@ -245,12 +248,11 @@ object tokens {
       created: Double,
       id: String,
       livemode: Boolean,
-      `object`: token,
       `type`: card | bank_account,
       used: Boolean
     ): ITokenBase = {
       val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("token")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITokenBase]
     }
@@ -278,8 +280,9 @@ object tokens {
     }
   }
   
-  @js.native
-  trait ITokenCreationOptionsBase extends IDataOptions {
+  trait ITokenCreationOptionsBase
+    extends StObject
+       with IDataOptions {
     
     /**
       * The customer (owned by the application's account) to create a
@@ -289,7 +292,7 @@ object tokens {
       *
       * Stripe connect only
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
   }
   object ITokenCreationOptionsBase {
     

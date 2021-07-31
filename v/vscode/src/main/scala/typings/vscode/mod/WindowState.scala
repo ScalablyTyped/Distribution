@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowState extends StObject {
   
   /**
     * Whether the current window is focused.
     */
-  val focused: Boolean = js.native
+  val focused: Boolean
 }
 object WindowState {
   

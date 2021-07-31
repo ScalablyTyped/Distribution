@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -28,16 +27,15 @@ object interfaceMod {
   
   type MenuHoverEventHandler = js.Function1[/* info */ typings.rcMenu.anon.Key, Unit]
   
-  @js.native
   trait MenuInfo extends StObject {
     
-    var domEvent: MouseEvent[HTMLElement, NativeMouseEvent] = js.native
+    var domEvent: MouseEvent[HTMLElement, NativeMouseEvent]
     
-    var item: ReactInstance = js.native
+    var item: ReactInstance
     
-    var key: Key = js.native
+    var key: Key
     
-    var keyPath: js.Array[Key] = js.native
+    var keyPath: js.Array[Key]
   }
   object MenuInfo {
     
@@ -98,14 +96,13 @@ object interfaceMod {
     def `vertical-right`: typings.rcMenu.rcMenuStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-right`]
   }
   
-  @js.native
   trait MiniStore extends StObject {
     
-    def getState(): js.Any = js.native
+    def getState(): js.Any
     
-    def setState(state: js.Any): Unit = js.native
+    def setState(state: js.Any): Unit
     
-    def subscribe(listener: js.Function0[Unit]): js.Function0[Unit] = js.native
+    def subscribe(listener: js.Function0[Unit]): js.Function0[Unit]
   }
   object MiniStore {
     
@@ -141,10 +138,11 @@ object interfaceMod {
   
   type SelectEventHandler = js.Function1[/* info */ SelectInfo, Unit]
   
-  @js.native
-  trait SelectInfo extends MenuInfo {
+  trait SelectInfo
+    extends StObject
+       with MenuInfo {
     
-    var selectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
   }
   object SelectInfo {
     

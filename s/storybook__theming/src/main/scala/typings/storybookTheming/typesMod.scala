@@ -11,25 +11,23 @@ import typings.storybookTheming.storybookThemingStrings.dark
 import typings.storybookTheming.storybookThemingStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Animation extends StObject {
     
-    var float: Keyframes = js.native
+    var float: Keyframes
     
-    var glow: Keyframes = js.native
+    var glow: Keyframes
     
-    var hoverable: SerializedStyles = js.native
+    var hoverable: SerializedStyles
     
-    var inlineGlow: SerializedStyles = js.native
+    var inlineGlow: SerializedStyles
     
-    var jiggle: Keyframes = js.native
+    var jiggle: Keyframes
     
-    var rotate360: Keyframes = js.native
+    var rotate360: Keyframes
   }
   object Animation {
     
@@ -69,26 +67,25 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Background extends StObject {
     
-    var app: String = js.native
+    var app: String
     
-    var bar: String = js.native
+    var bar: String
     
-    var content: String = js.native
+    var content: String
     
-    var critical: String = js.native
+    var critical: String
     
-    var gridCellSize: Double = js.native
+    var gridCellSize: Double
     
-    var hoverable: String = js.native
+    var hoverable: String
     
-    var negative: String = js.native
+    var negative: String
     
-    var positive: String = js.native
+    var positive: String
     
-    var warning: String = js.native
+    var warning: String
   }
   object Background {
     
@@ -140,14 +137,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Brand extends StObject {
     
-    var image: js.UndefOr[String | Null] = js.native
+    var image: js.UndefOr[String | Null] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String | Null] = js.native
+    var url: js.UndefOr[String | Null] = js.undefined
   }
   object Brand {
     
@@ -186,60 +182,59 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var ancillary: String = js.native
+    var ancillary: String
     
-    var border: String = js.native
+    var border: String
     
-    var critical: String = js.native
+    var critical: String
     
-    var dark: String = js.native
+    var dark: String
     
-    var darker: String = js.native
+    var darker: String
     
-    var darkest: String = js.native
+    var darkest: String
     
-    var defaultText: String = js.native
+    var defaultText: String
     
-    var gold: String = js.native
+    var gold: String
     
-    var green: String = js.native
+    var green: String
     
-    var inverseText: String = js.native
+    var inverseText: String
     
-    var light: String = js.native
+    var light: String
     
-    var lighter: String = js.native
+    var lighter: String
     
-    var lightest: String = js.native
+    var lightest: String
     
-    var medium: String = js.native
+    var medium: String
     
-    var mediumdark: String = js.native
+    var mediumdark: String
     
-    var mediumlight: String = js.native
+    var mediumlight: String
     
-    var negative: String = js.native
+    var negative: String
     
-    var orange: String = js.native
+    var orange: String
     
-    var positive: String = js.native
+    var positive: String
     
-    var primary: String = js.native
+    var primary: String
     
-    var purple: String = js.native
+    var purple: String
     
-    var seafoam: String = js.native
+    var seafoam: String
     
-    var secondary: String = js.native
+    var secondary: String
     
-    var tertiary: String = js.native
+    var tertiary: String
     
-    var ultraviolet: String = js.native
+    var ultraviolet: String
     
-    var warning: String = js.native
+    var warning: String
   }
   object Color {
     
@@ -359,10 +354,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Easing extends StObject {
     
-    var rubber: String = js.native
+    var rubber: String
   }
   object Easing {
     
@@ -382,37 +376,37 @@ object typesMod {
   
   type TextSize = Double | String
   
-  @js.native
   trait Theme
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var animation: Animation = js.native
+    var animation: Animation
     
-    var appBorderColor: String = js.native
+    var appBorderColor: String
     
-    var appBorderRadius: Double = js.native
+    var appBorderRadius: Double
     
-    var background: Background = js.native
+    var background: Background
     
-    var barBg: String = js.native
+    var barBg: String
     
-    var barSelectedColor: String = js.native
+    var barSelectedColor: String
     
-    var barTextColor: String = js.native
+    var barTextColor: String
     
-    var brand: Brand = js.native
+    var brand: Brand
     
-    var code: StringDictionary[String | js.Object] = js.native
+    var code: StringDictionary[String | js.Object]
     
-    var color: Color = js.native
+    var color: Color
     
-    var easing: Easing = js.native
+    var easing: Easing
     
-    var input: Border = js.native
+    var input: Border
     
-    var layoutMargin: Double = js.native
+    var layoutMargin: Double
     
-    var typography: Typography = js.native
+    var typography: Typography
   }
   object Theme {
     
@@ -484,54 +478,53 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ThemeVars extends StObject {
     
-    var appBg: js.UndefOr[String] = js.native
+    var appBg: js.UndefOr[String] = js.undefined
     
-    var appBorderColor: js.UndefOr[String] = js.native
+    var appBorderColor: js.UndefOr[String] = js.undefined
     
-    var appBorderRadius: js.UndefOr[Double] = js.native
+    var appBorderRadius: js.UndefOr[Double] = js.undefined
     
-    var appContentBg: js.UndefOr[String] = js.native
+    var appContentBg: js.UndefOr[String] = js.undefined
     
-    var barBg: js.UndefOr[String] = js.native
+    var barBg: js.UndefOr[String] = js.undefined
     
-    var barSelectedColor: js.UndefOr[String] = js.native
+    var barSelectedColor: js.UndefOr[String] = js.undefined
     
-    var barTextColor: js.UndefOr[String] = js.native
+    var barTextColor: js.UndefOr[String] = js.undefined
     
-    var base: light | dark = js.native
+    var base: light | dark
     
-    var brandImage: js.UndefOr[String] = js.native
+    var brandImage: js.UndefOr[String] = js.undefined
     
-    var brandTitle: js.UndefOr[String] = js.native
+    var brandTitle: js.UndefOr[String] = js.undefined
     
-    var brandUrl: js.UndefOr[String] = js.native
+    var brandUrl: js.UndefOr[String] = js.undefined
     
-    var colorPrimary: js.UndefOr[String] = js.native
+    var colorPrimary: js.UndefOr[String] = js.undefined
     
-    var colorSecondary: js.UndefOr[String] = js.native
+    var colorSecondary: js.UndefOr[String] = js.undefined
     
-    var fontBase: js.UndefOr[String] = js.native
+    var fontBase: js.UndefOr[String] = js.undefined
     
-    var fontCode: js.UndefOr[String] = js.native
+    var fontCode: js.UndefOr[String] = js.undefined
     
-    var gridCellSize: js.UndefOr[Double] = js.native
+    var gridCellSize: js.UndefOr[Double] = js.undefined
     
-    var inputBg: js.UndefOr[String] = js.native
+    var inputBg: js.UndefOr[String] = js.undefined
     
-    var inputBorder: js.UndefOr[String] = js.native
+    var inputBorder: js.UndefOr[String] = js.undefined
     
-    var inputBorderRadius: js.UndefOr[Double] = js.native
+    var inputBorderRadius: js.UndefOr[Double] = js.undefined
     
-    var inputTextColor: js.UndefOr[String] = js.native
+    var inputTextColor: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var textInverseColor: js.UndefOr[String] = js.native
+    var textInverseColor: js.UndefOr[String] = js.undefined
     
-    var textMutedColor: js.UndefOr[String] = js.native
+    var textMutedColor: js.UndefOr[String] = js.undefined
   }
   object ThemeVars {
     
@@ -681,14 +674,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Typography extends StObject {
     
-    var fonts: Base = js.native
+    var fonts: Base
     
-    var size: Code = js.native
+    var size: Code
     
-    var weight: Black = js.native
+    var weight: Black
   }
   object Typography {
     

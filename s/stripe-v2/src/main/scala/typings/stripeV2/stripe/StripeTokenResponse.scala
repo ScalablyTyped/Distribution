@@ -2,27 +2,25 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeTokenResponse extends StObject {
   
-  var client_ip: String = js.native
+  var client_ip: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var error: js.UndefOr[StripeError] = js.native
+  var error: js.UndefOr[StripeError] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var used: Boolean = js.native
+  var used: Boolean
 }
 object StripeTokenResponse {
   

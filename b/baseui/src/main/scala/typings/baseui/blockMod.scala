@@ -9,7 +9,6 @@ import typings.styletronReact.mod.StyleProp
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMod {
@@ -248,12 +247,11 @@ object blockMod {
     def unset: typings.baseui.baseuiStrings.unset = "unset".asInstanceOf[typings.baseui.baseuiStrings.unset]
   }
   
-  @js.native
   trait BlockOverrides extends StObject {
     
     var Block: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object BlockOverrides {
     
@@ -276,165 +274,164 @@ object blockMod {
     }
   }
   
-  @js.native
   trait BlockProps extends StObject {
     
     @JSName("$style")
-    var $style: js.UndefOr[StyleProp[BlockProps]] = js.native
+    var $style: js.UndefOr[StyleProp[BlockProps]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content */
-    var alignContent: js.UndefOr[Responsive[AlignContent]] = js.native
+    var alignContent: js.UndefOr[Responsive[AlignContent]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
-    var alignItems: js.UndefOr[Responsive[AlignItems]] = js.native
+    var alignItems: js.UndefOr[Responsive[AlignItems]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
-    var alignSelf: js.UndefOr[Responsive[AlignSelf]] = js.native
+    var alignSelf: js.UndefOr[Responsive[AlignSelf]] = js.undefined
     
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var backgroundColor: js.UndefOr[Responsive[String]] = js.native
+    var backgroundColor: js.UndefOr[Responsive[String]] = js.undefined
     
-    var bottom: js.UndefOr[Responsive[Scale]] = js.native
+    var bottom: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Responsive[String]] = js.native
+    var color: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/display */
-    var display: js.UndefOr[Responsive[Display]] = js.native
+    var display: js.UndefOr[Responsive[Display]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
-    var flex: js.UndefOr[Responsive[Flex]] = js.native
+    var flex: js.UndefOr[Responsive[Flex]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
-    var flexDirection: js.UndefOr[Responsive[FlexDirection]] = js.native
+    var flexDirection: js.UndefOr[Responsive[FlexDirection]] = js.undefined
     
-    var flexWrap: js.UndefOr[Responsive[Boolean]] = js.native
+    var flexWrap: js.UndefOr[Responsive[Boolean]] = js.undefined
     
-    var font: js.UndefOr[String | js.Array[String]] = js.native
+    var font: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid */
-    var grid: js.UndefOr[Responsive[String]] = js.native
+    var grid: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area */
-    var gridArea: js.UndefOr[Responsive[String]] = js.native
+    var gridArea: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns */
-    var gridAutoColumns: js.UndefOr[Responsive[String]] = js.native
+    var gridAutoColumns: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow */
-    var gridAutoFlow: js.UndefOr[Responsive[GridAutoFlow]] = js.native
+    var gridAutoFlow: js.UndefOr[Responsive[GridAutoFlow]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows */
-    var gridAutoRows: js.UndefOr[Responsive[String]] = js.native
+    var gridAutoRows: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
-    var gridColumn: js.UndefOr[Responsive[String]] = js.native
+    var gridColumn: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end */
-    var gridColumnEnd: js.UndefOr[Responsive[String]] = js.native
+    var gridColumnEnd: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap */
-    var gridColumnGap: js.UndefOr[Responsive[Scale]] = js.native
+    var gridColumnGap: js.UndefOr[Responsive[Scale]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start */
-    var gridColumnStart: js.UndefOr[Responsive[String]] = js.native
+    var gridColumnStart: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap */
-    var gridGap: js.UndefOr[Responsive[Scale]] = js.native
+    var gridGap: js.UndefOr[Responsive[Scale]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row */
-    var gridRow: js.UndefOr[Responsive[String]] = js.native
+    var gridRow: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end */
-    var gridRowEnd: js.UndefOr[Responsive[String]] = js.native
+    var gridRowEnd: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap */
-    var gridRowGap: js.UndefOr[Responsive[Scale]] = js.native
+    var gridRowGap: js.UndefOr[Responsive[Scale]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start */
-    var gridRowStart: js.UndefOr[Responsive[String]] = js.native
+    var gridRowStart: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template */
-    var gridTemplate: js.UndefOr[Responsive[String]] = js.native
+    var gridTemplate: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
-    var gridTemplateAreas: js.UndefOr[Responsive[String]] = js.native
+    var gridTemplateAreas: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
-    var gridTemplateColumns: js.UndefOr[Responsive[String]] = js.native
+    var gridTemplateColumns: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows */
-    var gridTemplateRows: js.UndefOr[Responsive[String]] = js.native
+    var gridTemplateRows: js.UndefOr[Responsive[String]] = js.undefined
     
-    var height: js.UndefOr[Responsive[Scale]] = js.native
+    var height: js.UndefOr[Responsive[Scale]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
-    var justifyContent: js.UndefOr[Responsive[JustifyContent]] = js.native
+    var justifyContent: js.UndefOr[Responsive[JustifyContent]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items */
-    var justifyItems: js.UndefOr[Responsive[JustifyItems]] = js.native
+    var justifyItems: js.UndefOr[Responsive[JustifyItems]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self */
-    var justifySelf: js.UndefOr[Responsive[JustifySelf]] = js.native
+    var justifySelf: js.UndefOr[Responsive[JustifySelf]] = js.undefined
     
-    var left: js.UndefOr[Responsive[Scale]] = js.native
+    var left: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var margin: js.UndefOr[Responsive[Scale]] = js.native
+    var margin: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var marginBottom: js.UndefOr[Responsive[Scale]] = js.native
+    var marginBottom: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var marginLeft: js.UndefOr[Responsive[Scale]] = js.native
+    var marginLeft: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var marginRight: js.UndefOr[Responsive[Scale]] = js.native
+    var marginRight: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var marginTop: js.UndefOr[Responsive[Scale]] = js.native
+    var marginTop: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var maxHeight: js.UndefOr[Responsive[Scale]] = js.native
+    var maxHeight: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var maxWidth: js.UndefOr[Responsive[Scale]] = js.native
+    var maxWidth: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var minHeight: js.UndefOr[Responsive[Scale]] = js.native
+    var minHeight: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var minWidth: js.UndefOr[Responsive[Scale]] = js.native
+    var minWidth: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var overflow: js.UndefOr[Responsive[Overflow]] = js.native
+    var overflow: js.UndefOr[Responsive[Overflow]] = js.undefined
     
-    var overrides: js.UndefOr[BlockOverrides] = js.native
+    var overrides: js.UndefOr[BlockOverrides] = js.undefined
     
-    var padding: js.UndefOr[Responsive[Scale]] = js.native
+    var padding: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var paddingBottom: js.UndefOr[Responsive[Scale]] = js.native
+    var paddingBottom: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var paddingLeft: js.UndefOr[Responsive[Scale]] = js.native
+    var paddingLeft: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var paddingRight: js.UndefOr[Responsive[Scale]] = js.native
+    var paddingRight: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var paddingTop: js.UndefOr[Responsive[Scale]] = js.native
+    var paddingTop: js.UndefOr[Responsive[Scale]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-content */
-    var placeContent: js.UndefOr[Responsive[String]] = js.native
+    var placeContent: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items */
-    var placeItems: js.UndefOr[Responsive[String]] = js.native
+    var placeItems: js.UndefOr[Responsive[String]] = js.undefined
     
     /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-self */
-    var placeSelf: js.UndefOr[Responsive[String]] = js.native
+    var placeSelf: js.UndefOr[Responsive[String]] = js.undefined
     
-    var position: js.UndefOr[Responsive[Position]] = js.native
+    var position: js.UndefOr[Responsive[Position]] = js.undefined
     
-    var ref: js.UndefOr[Ref[_]] = js.native
+    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var right: js.UndefOr[Responsive[Scale]] = js.native
+    var right: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[Responsive[Scale]] = js.native
+    var top: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var width: js.UndefOr[Responsive[Scale]] = js.native
+    var width: js.UndefOr[Responsive[Scale]] = js.undefined
   }
   object BlockProps {
     
@@ -484,7 +481,7 @@ object blockMod {
       def setAlignSelfVarargs(value: AlignSelf*): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -958,10 +955,10 @@ object blockMod {
       def setPositionVarargs(value: Position*): Self = StObject.set(x, "position", js.Array(value :_*))
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)

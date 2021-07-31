@@ -3,7 +3,6 @@ package typings.backbone.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "Router")
@@ -17,7 +16,7 @@ class Router () extends StObject {
   
   /* private */ def _routeToRegExp(route: String): RegExp = js.native
   
-  def execute(callback: js.Function, args: js.Array[_], name: String): Unit = js.native
+  def execute(callback: js.Function, args: js.Array[js.Any], name: String): Unit = js.native
   
   def initialize(): Unit = js.native
   def initialize(options: RouterOptions): Unit = js.native
@@ -49,14 +48,16 @@ class Router () extends StObject {
 }
 object Router {
   
+  @JSImport("backbone", "Router")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
   /* static member */
-  @JSImport("backbone", "Router.extend")
-  @js.native
-  def extend(properties: js.Any): js.Any = js.native
-  @JSImport("backbone", "Router.extend")
-  @js.native
-  def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+  @scala.inline
+  def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

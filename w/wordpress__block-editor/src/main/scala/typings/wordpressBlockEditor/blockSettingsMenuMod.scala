@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.blockSettingsMenuMod.BlockSettingsMenu.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockSettingsMenuMod {
@@ -24,12 +23,11 @@ object blockSettingsMenuMod {
   
   object BlockSettingsMenu {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var clientIds: js.Array[String] = js.native
+      var clientIds: js.Array[String]
     }
     object Props {
       

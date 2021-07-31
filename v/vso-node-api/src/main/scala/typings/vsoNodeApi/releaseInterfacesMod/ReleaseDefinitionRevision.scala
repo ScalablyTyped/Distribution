@@ -4,51 +4,49 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionRevision extends StObject {
   
   /**
     * Gets api-version for revision object.
     */
-  var apiVersion: String = js.native
+  var apiVersion: String
   
   /**
     * Gets type of change.
     */
-  var changeType: AuditAction = js.native
+  var changeType: AuditAction
   
   /**
     * Gets the identity who did change.
     */
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
   /**
     * Gets date on which it got changed.
     */
-  var changedDate: Date = js.native
+  var changedDate: Date
   
   /**
     * Gets comments for revision.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Get id of the definition.
     */
-  var definitionId: Double = js.native
+  var definitionId: Double
   
   /**
     * Gets definition url.
     */
-  var definitionUrl: String = js.native
+  var definitionUrl: String
   
   /**
     * Get revision number of the definition.
     */
-  var revision: Double = js.native
+  var revision: Double
 }
 object ReleaseDefinitionRevision {
   

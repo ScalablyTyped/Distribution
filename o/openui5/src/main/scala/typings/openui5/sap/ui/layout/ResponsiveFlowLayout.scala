@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveFlowLayout extends Control {
+trait ResponsiveFlowLayout
+  extends StObject
+     with Control {
   
   /**
     * Adds content.This function needs to be overridden to prevent any rendering while somecontent is

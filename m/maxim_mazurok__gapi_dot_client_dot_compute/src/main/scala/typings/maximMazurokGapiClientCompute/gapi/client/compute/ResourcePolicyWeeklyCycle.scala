@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicyWeeklyCycle extends StObject {
   
   /** Up to 7 intervals/windows, one for each day of the week. */
-  var dayOfWeeks: js.UndefOr[js.Array[ResourcePolicyWeeklyCycleDayOfWeek]] = js.native
+  var dayOfWeeks: js.UndefOr[js.Array[ResourcePolicyWeeklyCycleDayOfWeek]] = js.undefined
 }
 object ResourcePolicyWeeklyCycle {
   

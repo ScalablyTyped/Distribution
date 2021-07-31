@@ -2,7 +2,6 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait BackgroundTaskCancellationReason extends StObject
 object BackgroundTaskCancellationReason extends StObject {
   
   @js.native
-  sealed trait abort extends BackgroundTaskCancellationReason
+  sealed trait abort
+    extends StObject
+       with BackgroundTaskCancellationReason
   
   @js.native
-  sealed trait loggingOff extends BackgroundTaskCancellationReason
+  sealed trait loggingOff
+    extends StObject
+       with BackgroundTaskCancellationReason
   
   @js.native
-  sealed trait servicingUpdate extends BackgroundTaskCancellationReason
+  sealed trait servicingUpdate
+    extends StObject
+       with BackgroundTaskCancellationReason
   
   @js.native
-  sealed trait terminating extends BackgroundTaskCancellationReason
+  sealed trait terminating
+    extends StObject
+       with BackgroundTaskCancellationReason
 }

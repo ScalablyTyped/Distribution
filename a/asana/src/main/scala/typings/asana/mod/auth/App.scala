@@ -1,8 +1,8 @@
 package typings.asana.mod.auth
 
+import typings.asana.mod.auth.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,4 +61,9 @@ trait App extends StObject {
   def asanaTokenUrl(options: AsanaAuthorizeUrlOptions): String = js.native
   
   var scope: String = js.native
+}
+object App {
+  
+  @scala.inline
+  def apply: AppStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("App").asInstanceOf[AppStatic]
 }

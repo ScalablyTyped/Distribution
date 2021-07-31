@@ -9,19 +9,17 @@ import typings.hardSourceWebpackPlugin.hardSourceWebpackPluginStrings.test
 import typings.hardSourceWebpackPlugin.hardSourceWebpackPluginStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Directories extends StObject {
     
-    var directories: js.Array[String] = js.native
+    var directories: js.Array[String]
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
     
-    var root: String = js.native
+    var root: String
   }
   object Directories {
     
@@ -51,12 +49,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: debug | log | info | warn | error = js.native
+    var level: debug | log | info | warn | error
     
-    var mode: none | test = js.native
+    var mode: none | test
   }
   object Level {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxAge extends StObject {
     
-    var maxAge: Double = js.native
+    var maxAge: Double
     
-    var sizeThreshold: Double = js.native
+    var sizeThreshold: Double
   }
   object MaxAge {
     

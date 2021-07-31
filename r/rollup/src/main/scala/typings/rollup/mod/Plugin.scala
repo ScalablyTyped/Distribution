@@ -5,26 +5,24 @@ import typings.rollup.anon.Left
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rollup.rollup.PluginHooks> */
 /* Inlined parent std.Partial<rollup.rollup.OutputPluginValueHooks> */
-@js.native
 trait Plugin extends StObject {
   
   // for inter-plugin communication
-  var api: js.UndefOr[js.Any] = js.native
+  var api: js.UndefOr[js.Any] = js.undefined
   
   var augmentChunkHash: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var banner: js.UndefOr[AddonHook] = js.native
+  var banner: js.UndefOr[AddonHook] = js.undefined
   
   var buildEnd: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[Error], js.Promise[Unit] | Unit]
-  ] = js.native
+  ] = js.undefined
   
   var buildStart: js.UndefOr[
     js.ThisFunction1[
@@ -32,13 +30,13 @@ trait Plugin extends StObject {
       /* options */ NormalizedInputOptions, 
       js.Promise[Unit] | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var cacheKey: js.UndefOr[String] = js.native
+  var cacheKey: js.UndefOr[String] = js.undefined
   
-  var closeWatcher: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, Unit]] = js.native
+  var closeWatcher: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, Unit]] = js.undefined
   
-  var footer: js.UndefOr[AddonHook] = js.native
+  var footer: js.UndefOr[AddonHook] = js.undefined
   
   var generateBundle: js.UndefOr[
     js.ThisFunction3[
@@ -48,15 +46,15 @@ trait Plugin extends StObject {
       /* isWrite */ Boolean, 
       Unit | js.Promise[Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var intro: js.UndefOr[AddonHook] = js.native
+  var intro: js.UndefOr[AddonHook] = js.undefined
   
-  var load: js.UndefOr[LoadHook] = js.native
+  var load: js.UndefOr[LoadHook] = js.undefined
   
-  var moduleParsed: js.UndefOr[ModuleParsedHook] = js.native
+  var moduleParsed: js.UndefOr[ModuleParsedHook] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var options: js.UndefOr[
     js.ThisFunction1[
@@ -64,7 +62,7 @@ trait Plugin extends StObject {
       /* options */ InputOptions, 
       js.UndefOr[(js.Promise[js.UndefOr[InputOptions | Null]]) | InputOptions | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var outputOptions: js.UndefOr[
     js.ThisFunction1[
@@ -72,19 +70,19 @@ trait Plugin extends StObject {
       /* options */ OutputOptions, 
       js.UndefOr[OutputOptions | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var outro: js.UndefOr[AddonHook] = js.native
+  var outro: js.UndefOr[AddonHook] = js.undefined
   
-  var renderChunk: js.UndefOr[RenderChunkHook] = js.native
+  var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
   
   var renderDynamicImport: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, js.UndefOr[Left | Null]]
-  ] = js.native
+  ] = js.undefined
   
   var renderError: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[Error], js.Promise[Unit] | Unit]
-  ] = js.native
+  ] = js.undefined
   
   var renderStart: js.UndefOr[
     js.ThisFunction2[
@@ -93,21 +91,21 @@ trait Plugin extends StObject {
       /* inputOptions */ NormalizedInputOptions, 
       js.Promise[Unit] | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.native
+  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.undefined
   
-  var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.native
+  var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.undefined
   
-  var resolveFileUrl: js.UndefOr[ResolveFileUrlHook] = js.native
+  var resolveFileUrl: js.UndefOr[ResolveFileUrlHook] = js.undefined
   
-  var resolveId: js.UndefOr[ResolveIdHook] = js.native
+  var resolveId: js.UndefOr[ResolveIdHook] = js.undefined
   
-  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.native
+  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.undefined
   
-  var transform: js.UndefOr[TransformHook] = js.native
+  var transform: js.UndefOr[TransformHook] = js.undefined
   
-  var watchChange: js.UndefOr[WatchChangeHook] = js.native
+  var watchChange: js.UndefOr[WatchChangeHook] = js.undefined
   
   var writeBundle: js.UndefOr[
     js.ThisFunction2[
@@ -116,7 +114,7 @@ trait Plugin extends StObject {
       /* bundle */ OutputBundle, 
       Unit | js.Promise[Unit]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Plugin {
   

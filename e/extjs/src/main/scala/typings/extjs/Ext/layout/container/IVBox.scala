@@ -2,20 +2,20 @@ package typings.extjs.Ext.layout.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IVBox extends IBox {
+trait IVBox
+  extends StObject
+     with IBox {
   
   /** [Config Option] (String) */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /** [Config Option] ("round"/"floor"/"ceil") */
-  var alignRoundingMethod: js.UndefOr[js.Any] = js.native
+  var alignRoundingMethod: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrainAlign: js.UndefOr[Boolean] = js.native
+  var constrainAlign: js.UndefOr[Boolean] = js.undefined
 }
 object IVBox {
   

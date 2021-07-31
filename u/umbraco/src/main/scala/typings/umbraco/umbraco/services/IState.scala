@@ -2,12 +2,10 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*Tracks the parent object for complex editors by exposing it as an object reference via editorState.current.entity
   * it is possible to modify this object, so should be used with care */
-@js.native
 trait IState extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait IState extends StObject {
     * editorState.current can not be overwritten, you should only read values from it
     * since modifying individual properties should be handled by the property editors
     */
-  def getCurrent(): js.Any = js.native
+  def getCurrent(): js.Any
   
   /**
     * @ngdoc function
@@ -37,7 +35,7 @@ trait IState extends StObject {
     * Since the editorstate entity is read-only, you cannot set it to null
     * only through the reset() method
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * @ngdoc function
@@ -51,7 +49,7 @@ trait IState extends StObject {
     * like the content editor, where the model is modified by several
     * child controllers.
     */
-  def set(entity: js.Object): Unit = js.native
+  def set(entity: js.Object): Unit
 }
 object IState {
   

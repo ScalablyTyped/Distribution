@@ -12,7 +12,7 @@ A small ajax lib
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 94038 |
+| # downloads        | 102329 |
 | # stars            | 0 |
 
 ## Links

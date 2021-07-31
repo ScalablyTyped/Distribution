@@ -3,16 +3,14 @@ package typings.vegaLite.anon
 import typings.vegaLite.logicalMod.LogicalComposition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selection extends StObject {
   
   /**
     * A [selection name](https://vega.github.io/vega-lite/docs/selection.html), or a series of [composed selections](https://vega.github.io/vega-lite/docs/selection.html#compose).
     */
-  var selection: LogicalComposition[String] = js.native
+  var selection: LogicalComposition[String]
 }
 object Selection {
   

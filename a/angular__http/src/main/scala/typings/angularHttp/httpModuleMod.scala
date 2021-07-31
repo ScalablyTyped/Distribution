@@ -8,10 +8,13 @@ import typings.angularHttp.xhrBackendMod.CookieXSRFStrategy
 import typings.angularHttp.xhrBackendMod.XHRBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpModuleMod {
+  
+  @JSImport("@angular/http/src/http_module", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/http/src/http_module", "HttpModule")
   @js.native
@@ -21,15 +24,12 @@ object httpModuleMod {
   @js.native
   class JsonpModule () extends StObject
   
-  @JSImport("@angular/http/src/http_module", "_createDefaultCookieXSRFStrategy")
-  @js.native
-  def createDefaultCookieXSRFStrategy(): CookieXSRFStrategy = js.native
+  @scala.inline
+  def createDefaultCookieXSRFStrategy(): CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultCookieXSRFStrategy")().asInstanceOf[CookieXSRFStrategy]
   
-  @JSImport("@angular/http/src/http_module", "httpFactory")
-  @js.native
-  def httpFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions): Http = js.native
+  @scala.inline
+  def httpFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("httpFactory")(xhrBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Http]
   
-  @JSImport("@angular/http/src/http_module", "jsonpFactory")
-  @js.native
-  def jsonpFactory(jsonpBackend: JSONPBackend, requestOptions: RequestOptions): Jsonp = js.native
+  @scala.inline
+  def jsonpFactory(jsonpBackend: JSONPBackend, requestOptions: RequestOptions): Jsonp = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonpFactory")(jsonpBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Jsonp]
 }

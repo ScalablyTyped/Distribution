@@ -1,19 +1,28 @@
 package typings.firebaseMessaging
 
+import typings.std.ArrayBuffer
 import typings.std.EventInit
+import typings.std.PushEncryptionKeyName
 import typings.std.PushManager
 import typings.std.PushSubscription
+import typings.std.PushSubscriptionJSON
+import typings.std.PushSubscriptionOptions
 import typings.std.ServiceWorkerRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceWorkerMod {
   
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeEvent")
   @js.native
-  class FakeEvent protected () extends ExtendableEvent {
+  class FakeEvent protected ()
+    extends StObject
+       with ExtendableEvent {
     def this(`type`: String) = this()
     def this(`type`: String, options: EventInit) = this()
     
@@ -33,19 +42,40 @@ object serviceWorkerMod {
   
   @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakePushSubscription")
   @js.native
-  class FakePushSubscription () extends PushSubscription {
+  class FakePushSubscription ()
+    extends StObject
+       with PushSubscription {
     
     var auth: String = js.native
     
+    /* CompleteClass */
+    override val endpoint: String = js.native
+    
+    /* CompleteClass */
+    override val expirationTime: Double | Null = js.native
     @JSName("expirationTime")
     var expirationTime_FakePushSubscription: Double = js.native
     
+    /* CompleteClass */
+    override def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null = js.native
+    
+    /* CompleteClass */
+    override val options: PushSubscriptionOptions = js.native
+    
     var p256: String = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): PushSubscriptionJSON = js.native
+    
+    /* CompleteClass */
+    override def unsubscribe(): js.Promise[Boolean] = js.native
   }
   
   @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeServiceWorkerRegistration")
   @js.native
-  class FakeServiceWorkerRegistration () extends ServiceWorkerRegistration {
+  class FakeServiceWorkerRegistration ()
+    extends StObject
+       with ServiceWorkerRegistration {
     
     @JSName("active")
     var active_FakeServiceWorkerRegistration: Null = js.native
@@ -71,16 +101,16 @@ object serviceWorkerMod {
     var waiting_FakeServiceWorkerRegistration: Null = js.native
   }
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "mockServiceWorker")
-  @js.native
-  def mockServiceWorker(): Unit = js.native
+  @scala.inline
+  def mockServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockServiceWorker")().asInstanceOf[Unit]
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "restoreServiceWorker")
-  @js.native
-  def restoreServiceWorker(): Unit = js.native
+  @scala.inline
+  def restoreServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreServiceWorker")().asInstanceOf[Unit]
   
   @js.native
-  trait FakePushManager extends PushManager {
+  trait FakePushManager
+    extends StObject
+       with PushManager {
     
     var subscription: js.Any = js.native
   }

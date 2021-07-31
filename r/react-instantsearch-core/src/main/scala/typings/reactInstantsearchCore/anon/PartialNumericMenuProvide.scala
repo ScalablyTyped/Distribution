@@ -2,20 +2,18 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.NumericMenuProvided> */
-@js.native
 trait PartialNumericMenuProvide extends StObject {
   
-  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var currentRefinement: js.UndefOr[String] = js.native
+  var currentRefinement: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[IsRefined]] = js.native
+  var items: js.UndefOr[js.Array[IsRefined]] = js.undefined
   
-  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object PartialNumericMenuProvide {
   
@@ -29,7 +27,7 @@ object PartialNumericMenuProvide {
   implicit class PartialNumericMenuProvideMutableBuilder[Self <: PartialNumericMenuProvide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => _): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCreateURLUndefined: Self = StObject.set(x, "createURL", js.undefined)
@@ -50,7 +48,7 @@ object PartialNumericMenuProvide {
     def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setRefine(value: /* repeated */ js.Any => _): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)

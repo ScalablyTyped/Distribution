@@ -2,13 +2,11 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileError extends StObject {
   
-  var code: Double = js.native
+  var code: Double
 }
 object FileError {
   

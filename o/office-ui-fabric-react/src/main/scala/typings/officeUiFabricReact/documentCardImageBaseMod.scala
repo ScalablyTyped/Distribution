@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageP
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardImageBaseMod {
@@ -24,10 +23,9 @@ object documentCardImageBaseMod {
     var _renderCornerIcon: js.Any = js.native
   }
   
-  @js.native
   trait IDocumentCardImageState extends StObject {
     
-    val imageHasLoaded: Boolean = js.native
+    val imageHasLoaded: Boolean
   }
   object IDocumentCardImageState {
     

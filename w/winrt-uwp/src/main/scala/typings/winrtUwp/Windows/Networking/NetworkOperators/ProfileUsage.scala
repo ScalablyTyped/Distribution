@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to update the usage of plan data. */
-@js.native
 trait ProfileUsage extends StObject {
   
   /** The last time UsageInMegabytes was updated. */
-  var lastSyncTime: Date = js.native
+  var lastSyncTime: Date
   
   /** Updates the usage in megabytes. */
-  var usageInMegabytes: Double = js.native
+  var usageInMegabytes: Double
 }
 object ProfileUsage {
   

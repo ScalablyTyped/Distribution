@@ -16,7 +16,6 @@ import typings.std.MouseEvent
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -64,12 +63,11 @@ object mod {
     def defaultProps_=(x: DraggableCoreProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ControlPosition extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ControlPosition {
     
@@ -92,16 +90,15 @@ object mod {
   
   type Draggable = Component[PartialDraggableProps, js.Object, js.Any]
   
-  @js.native
   trait DraggableBounds extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object DraggableBounds {
     
@@ -140,34 +137,33 @@ object mod {
     }
   }
   
-  @js.native
   trait DraggableCoreProps extends StObject {
     
-    var allowAnyClick: Boolean = js.native
+    var allowAnyClick: Boolean
     
-    var cancel: String = js.native
+    var cancel: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var enableUserSelectHack: Boolean = js.native
+    var enableUserSelectHack: Boolean
     
-    var grid: js.Tuple2[Double, Double] = js.native
+    var grid: js.Tuple2[Double, Double]
     
-    var handle: String = js.native
+    var handle: String
     
-    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.native
+    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
     
-    var offsetParent: HTMLElement = js.native
+    var offsetParent: HTMLElement
     
-    var onDrag: DraggableEventHandler = js.native
+    var onDrag: DraggableEventHandler
     
-    def onMouseDown(e: MouseEvent): Unit = js.native
+    def onMouseDown(e: MouseEvent): Unit
     
-    var onStart: DraggableEventHandler = js.native
+    var onStart: DraggableEventHandler
     
-    var onStop: DraggableEventHandler = js.native
+    var onStop: DraggableEventHandler
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object DraggableCoreProps {
     
@@ -237,22 +233,21 @@ object mod {
     }
   }
   
-  @js.native
   trait DraggableData extends StObject {
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var lastX: Double = js.native
+    var lastX: Double
     
-    var lastY: Double = js.native
+    var lastY: Double
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object DraggableData {
     
@@ -300,24 +295,25 @@ object mod {
   
   type DraggableEventHandler = js.Function2[/* e */ DraggableEvent, /* data */ DraggableData, Unit | `false`]
   
-  @js.native
-  trait DraggableProps extends DraggableCoreProps {
+  trait DraggableProps
+    extends StObject
+       with DraggableCoreProps {
     
-    var axis: both | x | y | none = js.native
+    var axis: both | x | y | none
     
-    var bounds: DraggableBounds | String | `false` = js.native
+    var bounds: DraggableBounds | String | `false`
     
-    var defaultClassName: String = js.native
+    var defaultClassName: String
     
-    var defaultClassNameDragged: String = js.native
+    var defaultClassNameDragged: String
     
-    var defaultClassNameDragging: String = js.native
+    var defaultClassNameDragging: String
     
-    var defaultPosition: ControlPosition = js.native
+    var defaultPosition: ControlPosition
     
-    var position: ControlPosition = js.native
+    var position: ControlPosition
     
-    var positionOffset: PositionOffsetControlPosition = js.native
+    var positionOffset: PositionOffsetControlPosition
   }
   object DraggableProps {
     
@@ -377,12 +373,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PositionOffsetControlPosition extends StObject {
     
-    var x: Double | String = js.native
+    var x: Double | String
     
-    var y: Double | String = js.native
+    var y: Double | String
   }
   object PositionOffsetControlPosition {
     

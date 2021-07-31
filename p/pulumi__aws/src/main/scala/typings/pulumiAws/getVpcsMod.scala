@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ec2.GetVpcsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcsMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpcs", "getVpcs")
+  @JSImport("@pulumi/aws/ec2/getVpcs", JSImport.Namespace)
   @js.native
-  def getVpcs(): js.Promise[GetVpcsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcs", "getVpcs")
-  @js.native
-  def getVpcs(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcs", "getVpcs")
-  @js.native
-  def getVpcs(args: GetVpcsArgs): js.Promise[GetVpcsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcs", "getVpcs")
-  @js.native
-  def getVpcs(args: GetVpcsArgs, opts: InvokeOptions): js.Promise[GetVpcsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcs(): js.Promise[GetVpcsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcs")().asInstanceOf[js.Promise[GetVpcsResult]]
+  @scala.inline
+  def getVpcs(args: Unit, opts: InvokeOptions): js.Promise[GetVpcsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcsResult]]
+  @scala.inline
+  def getVpcs(args: GetVpcsArgs): js.Promise[GetVpcsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcs")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcsResult]]
+  @scala.inline
+  def getVpcs(args: GetVpcsArgs, opts: InvokeOptions): js.Promise[GetVpcsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcsResult]]
+  
   trait GetVpcsArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcsFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired vpcs.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcsArgs {
     
@@ -65,22 +63,21 @@ object getVpcsMod {
     }
   }
   
-  @js.native
   trait GetVpcsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A list of all the VPC Ids found. This data source will fail if none are found.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVpcsResult {
     

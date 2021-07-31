@@ -4,17 +4,15 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indices extends StObject {
   
-  var indices: BackendValues = js.native
+  var indices: BackendValues
   
-  var outputShape: js.Array[Double] = js.native
+  var outputShape: js.Array[Double]
   
-  var outputValues: BackendValues = js.native
+  var outputValues: BackendValues
 }
 object Indices {
   

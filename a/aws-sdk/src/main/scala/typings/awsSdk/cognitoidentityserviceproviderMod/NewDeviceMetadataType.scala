@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewDeviceMetadataType extends StObject {
   
   /**
     * The device group key.
     */
-  var DeviceGroupKey: js.UndefOr[StringType] = js.native
+  var DeviceGroupKey: js.UndefOr[StringType] = js.undefined
   
   /**
     * The device key.
     */
-  var DeviceKey: js.UndefOr[DeviceKeyType] = js.native
+  var DeviceKey: js.UndefOr[DeviceKeyType] = js.undefined
 }
 object NewDeviceMetadataType {
   

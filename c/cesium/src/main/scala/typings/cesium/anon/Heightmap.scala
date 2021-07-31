@@ -9,45 +9,43 @@ import typings.std.Uint16Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Heightmap extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var heightmap: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
+  var heightmap: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array
   
-  var isGeographic: js.UndefOr[Boolean] = js.native
+  var isGeographic: js.UndefOr[Boolean] = js.undefined
   
-  var nativeRectangle: typings.cesium.mod.Rectangle = js.native
+  var nativeRectangle: typings.cesium.mod.Rectangle
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var relativetoCenter: js.UndefOr[Cartesian3] = js.native
+  var relativetoCenter: js.UndefOr[Cartesian3] = js.undefined
   
-  var skirtHeight: Double = js.native
+  var skirtHeight: Double
   
-  var structure: js.UndefOr[js.Any] = js.native
+  var structure: js.UndefOr[js.Any] = js.undefined
   
-  var structureelementMultiplier: js.UndefOr[Double] = js.native
+  var structureelementMultiplier: js.UndefOr[Double] = js.undefined
   
-  var structureelementsPerHeight: js.UndefOr[Double] = js.native
+  var structureelementsPerHeight: js.UndefOr[Double] = js.undefined
   
-  var structureheightOffset: js.UndefOr[Double] = js.native
+  var structureheightOffset: js.UndefOr[Double] = js.undefined
   
-  var structureheightScale: js.UndefOr[Double] = js.native
+  var structureheightScale: js.UndefOr[Double] = js.undefined
   
-  var structureisBigEndian: js.UndefOr[Boolean] = js.native
+  var structureisBigEndian: js.UndefOr[Boolean] = js.undefined
   
-  var structurestride: js.UndefOr[Double] = js.native
+  var structurestride: js.UndefOr[Double] = js.undefined
   
-  var vertices: js.Array[_] | Float32Array = js.native
+  var vertices: js.Array[js.Any] | Float32Array
   
-  var width: Double = js.native
+  var width: Double
 }
 object Heightmap {
   
@@ -57,7 +55,7 @@ object Heightmap {
     heightmap: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array,
     nativeRectangle: typings.cesium.mod.Rectangle,
     skirtHeight: Double,
-    vertices: js.Array[_] | Float32Array,
+    vertices: js.Array[js.Any] | Float32Array,
     width: Double
   ): Heightmap = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightmap = heightmap.asInstanceOf[js.Any], nativeRectangle = nativeRectangle.asInstanceOf[js.Any], skirtHeight = skirtHeight.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
@@ -146,7 +144,7 @@ object Heightmap {
     def setStructurestrideUndefined: Self = StObject.set(x, "structurestride", js.undefined)
     
     @scala.inline
-    def setVertices(value: js.Array[_] | Float32Array): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    def setVertices(value: js.Array[js.Any] | Float32Array): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))

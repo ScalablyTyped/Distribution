@@ -7,16 +7,18 @@ import typings.awsSdkClientGlacierNode.typesListPartsInputMod.ListPartsInput
 import typings.awsSdkClientGlacierNode.typesListPartsOutputMod.ListPartsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listPartsCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/ListPartsCommand", "ListPartsCommand")
   @js.native
-  class ListPartsCommand protected () extends Command[
+  class ListPartsCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           ListPartsInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object listPartsCommandMod {
         ] {
     def this(input: ListPartsInput) = this()
     
+    /* CompleteClass */
+    override val input: ListPartsInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[ListPartsInput, ListPartsOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: GlacierResolvedConfiguration
+    ): Handler[ListPartsInput, ListPartsOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: GlacierResolvedConfiguration,
+      options: js.Any
     ): Handler[ListPartsInput, ListPartsOutput] = js.native
   }
 }

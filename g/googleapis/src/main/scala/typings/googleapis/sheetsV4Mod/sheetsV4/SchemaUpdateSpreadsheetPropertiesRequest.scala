@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates properties of a spreadsheet.
   */
-@js.native
 trait SchemaUpdateSpreadsheetPropertiesRequest extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaUpdateSpreadsheetPropertiesRequest extends StObject {
     * The root &#39;properties&#39; is implied and should not be specified. A
     * single `&quot;*&quot;` can be used as short-hand for listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The properties to update.
     */
-  var properties: js.UndefOr[SchemaSpreadsheetProperties] = js.native
+  var properties: js.UndefOr[SchemaSpreadsheetProperties] = js.undefined
 }
 object SchemaUpdateSpreadsheetPropertiesRequest {
   

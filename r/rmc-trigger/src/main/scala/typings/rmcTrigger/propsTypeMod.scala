@@ -3,59 +3,57 @@ package typings.rmcTrigger
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsTypeMod {
   
-  @js.native
   trait ITriggerProps extends StObject {
     
-    var afterPopupVisibleChange: js.UndefOr[js.Function] = js.native
+    var afterPopupVisibleChange: js.UndefOr[js.Function] = js.undefined
     
-    var builtinPlacements: js.UndefOr[js.Any] = js.native
+    var builtinPlacements: js.UndefOr[js.Any] = js.undefined
     
-    var defaultPopupVisible: js.UndefOr[Boolean] = js.native
+    var defaultPopupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var getDocument: js.UndefOr[js.Function] = js.native
+    var getDocument: js.UndefOr[js.Function] = js.undefined
     
-    var getPopupClassNameFromAlign: js.UndefOr[js.Any] = js.native
+    var getPopupClassNameFromAlign: js.UndefOr[js.Any] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function] = js.native
+    var getPopupContainer: js.UndefOr[js.Function] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[String] = js.native
+    var maskAnimation: js.UndefOr[String] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String | js.Object] = js.native
+    var maskTransitionName: js.UndefOr[String | js.Object] = js.undefined
     
-    var onPopupAlign: js.UndefOr[js.Function] = js.native
+    var onPopupAlign: js.UndefOr[js.Function] = js.undefined
     
-    var onPopupVisibleChange: js.UndefOr[js.Function] = js.native
+    var onPopupVisibleChange: js.UndefOr[js.Function] = js.undefined
     
-    var popup: ReactNode | js.Function = js.native
+    var popup: ReactNode | js.Function
     
-    var popupAlign: js.UndefOr[js.Any] = js.native
+    var popupAlign: js.UndefOr[js.Any] = js.undefined
     
-    var popupAnimation: js.UndefOr[js.Any] = js.native
+    var popupAnimation: js.UndefOr[js.Any] = js.undefined
     
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
-    var popupPlacement: js.UndefOr[String] = js.native
+    var popupPlacement: js.UndefOr[String] = js.undefined
     
-    var popupStyle: js.UndefOr[js.Any] = js.native
+    var popupStyle: js.UndefOr[js.Any] = js.undefined
     
-    var popupTransitionName: js.UndefOr[String | js.Object] = js.native
+    var popupTransitionName: js.UndefOr[String | js.Object] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ITriggerProps {
     

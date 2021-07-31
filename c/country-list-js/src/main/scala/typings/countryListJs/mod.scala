@@ -3,10 +3,13 @@ package typings.countryListJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("country-list-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("country-list-js", "all")
   @js.native
@@ -16,62 +19,50 @@ object mod {
   @js.native
   val cache: Cache_ = js.native
   
-  @JSImport("country-list-js", "capitals")
-  @js.native
-  def capitals(): js.Array[String] = js.native
+  @scala.inline
+  def capitals(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("capitals")().asInstanceOf[js.Array[String]]
   
-  @JSImport("country-list-js", "continents")
-  @js.native
-  def continents(): js.Array[String] = js.native
+  @scala.inline
+  def continents(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("continents")().asInstanceOf[js.Array[String]]
   
-  @JSImport("country-list-js", "findByCapital")
-  @js.native
-  def findByCapital(capital: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByCapital(capital: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCapital")(capital.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByCurrency")
-  @js.native
-  def findByCurrency(currency: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByCurrency(currency: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCurrency")(currency.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByIso2")
-  @js.native
-  def findByIso2(iso2: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByIso2(iso2: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso2")(iso2.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByIso3")
-  @js.native
-  def findByIso3(iso3: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByIso3(iso3: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso3")(iso3.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByName")
-  @js.native
-  def findByName(name: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByName(name: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByPhoneNbr")
-  @js.native
-  def findByPhoneNbr(phone: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByPhoneNbr(phone: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPhoneNbr")(phone.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "findByProvince")
-  @js.native
-  def findByProvince(province: String): js.UndefOr[Country] = js.native
+  @scala.inline
+  def findByProvince(province: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByProvince")(province.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @JSImport("country-list-js", "ls")
-  @js.native
-  def ls(member: CountryRecordMember): js.Array[js.UndefOr[String]] = js.native
+  @scala.inline
+  def ls(member: CountryRecordMember): js.Array[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ls")(member.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String]]]
   
-  @JSImport("country-list-js", "names")
-  @js.native
-  def names(): js.Array[String] = js.native
+  @scala.inline
+  def names(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("names")().asInstanceOf[js.Array[String]]
   
-  @js.native
   trait Cache_ extends StObject {
     
-    var capital: js.UndefOr[CountriesMap] = js.native
+    var capital: js.UndefOr[CountriesMap] = js.undefined
     
-    var currency: js.UndefOr[CountriesMap] = js.native
+    var currency: js.UndefOr[CountriesMap] = js.undefined
     
-    var iso3: js.UndefOr[CountriesMap] = js.native
+    var iso3: js.UndefOr[CountriesMap] = js.undefined
     
-    var name: js.UndefOr[CountriesMap] = js.native
+    var name: js.UndefOr[CountriesMap] = js.undefined
     
-    var province: js.UndefOr[CountriesMap] = js.native
+    var province: js.UndefOr[CountriesMap] = js.undefined
   }
   object Cache_ {
     
@@ -118,24 +109,23 @@ object mod {
   
   type CountriesMap = StringDictionary[Country]
   
-  @js.native
   trait Country extends StObject {
     
-    var capital: String = js.native
+    var capital: String
     
-    var code: CountryCode = js.native
+    var code: CountryCode
     
-    var continent: String = js.native
+    var continent: String
     
-    var currency: Currency = js.native
+    var currency: Currency
     
-    var dialing_code: String = js.native
+    var dialing_code: String
     
-    var name: String = js.native
+    var name: String
     
-    var provinces: js.Array[Province] = js.native
+    var provinces: js.Array[Province]
     
-    var region: String = js.native
+    var region: String
   }
   object Country {
     
@@ -186,12 +176,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CountryCode extends StObject {
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var iso3: String = js.native
+    var iso3: String
   }
   object CountryCode {
     
@@ -250,14 +239,13 @@ object mod {
     def region: typings.countryListJs.countryListJsStrings.region = "region".asInstanceOf[typings.countryListJs.countryListJsStrings.region]
   }
   
-  @js.native
   trait Currency extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var decimal: String = js.native
+    var decimal: String
     
-    var symbol: String = js.native
+    var symbol: String
   }
   object Currency {
     
@@ -281,22 +269,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Province extends StObject {
     
-    var alias: js.Array[String] | Null = js.native
+    var alias: js.Array[String] | Null
     
-    var name: String = js.native
+    var name: String
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var short: js.UndefOr[String] = js.native
+    var short: js.UndefOr[String] = js.undefined
   }
   object Province {
     
     @scala.inline
     def apply(name: String): Province = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], alias = null)
       __obj.asInstanceOf[Province]
     }
     

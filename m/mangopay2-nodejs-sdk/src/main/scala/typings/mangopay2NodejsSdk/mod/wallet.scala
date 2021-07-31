@@ -4,7 +4,6 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wallet {
@@ -24,20 +23,19 @@ object wallet {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.Omit<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.WalletData, 'Owners' | 'Description'> */
-  @js.native
   trait ClientWalletData extends StObject {
     
-    var Balance: MoneyData = js.native
+    var Balance: MoneyData
     
-    var CreationDate: Double = js.native
+    var CreationDate: Double
     
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
-    var FundsType: ClientFundsType = js.native
+    var FundsType: ClientFundsType
     
-    var Id: String = js.native
+    var Id: String
     
-    var Tag: String = js.native
+    var Tag: String
   }
   object ClientWalletData {
     
@@ -78,21 +76,20 @@ object wallet {
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.UpdateWallet & std.Pick<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.WalletData, 'Owners' | 'Currency' | 'Description'> */
-  @js.native
   trait CreateWallet extends StObject {
     
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
-    var Description: js.UndefOr[String] with String = js.native
+    var Description: js.UndefOr[String] & String
     
-    var Owners: js.Array[String] = js.native
+    var Owners: js.Array[String]
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateWallet {
     
     @scala.inline
-    def apply(Currency: CurrencyISO, Description: js.UndefOr[String] with String, Owners: js.Array[String]): CreateWallet = {
+    def apply(Currency: CurrencyISO, Description: js.UndefOr[String] & String, Owners: js.Array[String]): CreateWallet = {
       val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Owners = Owners.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateWallet]
     }
@@ -104,7 +101,7 @@ object wallet {
       def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDescription(value: js.UndefOr[String] with String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      def setDescription(value: js.UndefOr[String] & String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
@@ -139,12 +136,11 @@ object wallet {
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.WalletData, 'Tag' | 'Description'> */
-  @js.native
   trait UpdateWallet extends StObject {
     
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object UpdateWallet {
     
@@ -171,33 +167,34 @@ object wallet {
     }
   }
   
-  @js.native
-  trait WalletData extends EntityBaseData {
+  trait WalletData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The current balance of the wallet
       */
-    var Balance: MoneyData = js.native
+    var Balance: MoneyData
     
     /**
       * The currency - should be ISO_4217 format
       */
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
     /**
       * A desciption of the wallet
       */
-    var Description: String = js.native
+    var Description: String
     
     /**
       * The type of funds in the wallet
       */
-    var FundsType: typings.mangopay2NodejsSdk.mod.wallet.FundsType = js.native
+    var FundsType: typings.mangopay2NodejsSdk.mod.wallet.FundsType
     
     /**
       * An array of userIDs of who own's the wallet. For now, you only can set up a unique owner.
       */
-    var Owners: js.Array[String] = js.native
+    var Owners: js.Array[String]
   }
   object WalletData {
     

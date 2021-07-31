@@ -2,23 +2,23 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndexCreationQuery extends Executable[Unit] {
+trait IndexCreationQuery
+  extends StObject
+     with Executable[Unit] {
   
-  def fulltext(): IndexCreationQuery = js.native
+  def fulltext(): IndexCreationQuery
   
-  def on(columns: (Column[_] | OrderByValueNode)*): IndexCreationQuery = js.native
+  def on(columns: (Column[js.Any] | OrderByValueNode)*): IndexCreationQuery
   
-  def spatial(): IndexCreationQuery = js.native
+  def spatial(): IndexCreationQuery
   
-  def unique(): IndexCreationQuery = js.native
+  def unique(): IndexCreationQuery
   
-  def using(name: String): IndexCreationQuery = js.native
+  def `using`(name: String): IndexCreationQuery
   
-  def withParser(parserName: String): IndexCreationQuery = js.native
+  def withParser(parserName: String): IndexCreationQuery
 }
 object IndexCreationQuery {
   
@@ -31,14 +31,15 @@ object IndexCreationQuery {
     fulltext: () => IndexCreationQuery,
     get: () => typings.bluebird.mod.^[Unit],
     getWithin: DatabaseConnection => typings.bluebird.mod.^[Unit],
-    on: /* repeated */ Column[_] | OrderByValueNode => IndexCreationQuery,
+    on: /* repeated */ Column[js.Any] | OrderByValueNode => IndexCreationQuery,
     spatial: () => IndexCreationQuery,
     toQuery: () => QueryLike,
     unique: () => IndexCreationQuery,
-    using: String => IndexCreationQuery,
+    `using`: String => IndexCreationQuery,
     withParser: String => IndexCreationQuery
   ): IndexCreationQuery = {
-    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allWithin = js.Any.fromFunction1(allWithin), exec = js.Any.fromFunction0(exec), execWithin = js.Any.fromFunction1(execWithin), fulltext = js.Any.fromFunction0(fulltext), get = js.Any.fromFunction0(get), getWithin = js.Any.fromFunction1(getWithin), on = js.Any.fromFunction1(on), spatial = js.Any.fromFunction0(spatial), toQuery = js.Any.fromFunction0(toQuery), unique = js.Any.fromFunction0(unique), using = js.Any.fromFunction1(using), withParser = js.Any.fromFunction1(withParser))
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allWithin = js.Any.fromFunction1(allWithin), exec = js.Any.fromFunction0(exec), execWithin = js.Any.fromFunction1(execWithin), fulltext = js.Any.fromFunction0(fulltext), get = js.Any.fromFunction0(get), getWithin = js.Any.fromFunction1(getWithin), on = js.Any.fromFunction1(on), spatial = js.Any.fromFunction0(spatial), toQuery = js.Any.fromFunction0(toQuery), unique = js.Any.fromFunction0(unique), withParser = js.Any.fromFunction1(withParser))
+    __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[IndexCreationQuery]
   }
   
@@ -49,7 +50,7 @@ object IndexCreationQuery {
     def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: /* repeated */ Column[_] | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    def setOn(value: /* repeated */ Column[js.Any] | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSpatial(value: () => IndexCreationQuery): Self = StObject.set(x, "spatial", js.Any.fromFunction0(value))

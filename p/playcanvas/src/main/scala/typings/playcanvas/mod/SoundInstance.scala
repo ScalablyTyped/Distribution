@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,6 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "SoundInstance")
 @js.native
 class SoundInstance protected ()
-  extends typings.playcanvas.pc.SoundInstance {
+  extends StObject
+     with typings.playcanvas.pc.SoundInstance {
   def this(manager: typings.playcanvas.pc.SoundManager, sound: typings.playcanvas.pc.Sound, options: Duration) = this()
 }

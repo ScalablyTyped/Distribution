@@ -3,20 +3,18 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Collapse.CollapseClassKey>> */
-@js.native
 trait PartialStyleRulesCollapse extends StObject {
   
-  var container: js.UndefOr[CSSProperties] = js.native
+  var container: js.UndefOr[CSSProperties] = js.undefined
   
-  var entered: js.UndefOr[CSSProperties] = js.native
+  var entered: js.UndefOr[CSSProperties] = js.undefined
   
-  var wrapper: js.UndefOr[CSSProperties] = js.native
+  var wrapper: js.UndefOr[CSSProperties] = js.undefined
   
-  var wrapperInner: js.UndefOr[CSSProperties] = js.native
+  var wrapperInner: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesCollapse {
   

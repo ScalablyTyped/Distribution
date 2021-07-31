@@ -14,7 +14,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
@@ -94,7 +93,7 @@ object hooksMod {
   ]
   
   type onRouteHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function1[
-    /* opts */ (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) with Path, 
+    /* opts */ (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) & Path, 
     js.Promise[js.Any] | Unit
   ]
   

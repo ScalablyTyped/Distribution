@@ -7,10 +7,13 @@ import typings.plottable.plottableStrings.timeout
 import typings.plottable.renderPolicyMod.IRenderPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderControllerMod {
+  
+  @JSImport("plottable/build/src/core/renderController", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* keyof plottable.anon.AnimationFrame */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.immediate
@@ -43,26 +46,20 @@ object renderControllerMod {
     def timeout_=(x: timeout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("plottable/build/src/core/renderController", "flush")
-  @js.native
-  def flush(): Unit = js.native
+  @scala.inline
+  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/core/renderController", "registerToComputeLayout")
-  @js.native
-  def registerToComputeLayout(component: Component): Unit = js.native
+  @scala.inline
+  def registerToComputeLayout(component: Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayout")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/core/renderController", "registerToComputeLayoutAndRender")
-  @js.native
-  def registerToComputeLayoutAndRender(component: Component): Unit = js.native
+  @scala.inline
+  def registerToComputeLayoutAndRender(component: Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayoutAndRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/core/renderController", "registerToRender")
-  @js.native
-  def registerToRender(component: Component): Unit = js.native
+  @scala.inline
+  def registerToRender(component: Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/core/renderController", "renderPolicy")
-  @js.native
-  def renderPolicy(): IRenderPolicy = js.native
-  @JSImport("plottable/build/src/core/renderController", "renderPolicy")
-  @js.native
-  def renderPolicy(renderPolicy: Policy): Unit = js.native
+  @scala.inline
+  def renderPolicy(): IRenderPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPolicy")().asInstanceOf[IRenderPolicy]
+  @scala.inline
+  def renderPolicy(renderPolicy: Policy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPolicy")(renderPolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

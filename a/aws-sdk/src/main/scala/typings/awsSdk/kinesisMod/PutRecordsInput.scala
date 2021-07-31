@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordsInput extends StObject {
   
   /**
     * The records associated with the request.
     */
-  var Records: PutRecordsRequestEntryList = js.native
+  var Records: PutRecordsRequestEntryList
   
   /**
     * The stream name associated with the request.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
 }
 object PutRecordsInput {
   

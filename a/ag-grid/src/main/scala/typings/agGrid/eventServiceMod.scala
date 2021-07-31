@@ -6,14 +6,15 @@ import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.agGrid.loggerMod.LoggerFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventServiceMod {
   
   @JSImport("ag-grid/dist/lib/eventService", "EventService")
   @js.native
-  class EventService () extends IEventEmitter {
+  class EventService ()
+    extends StObject
+       with IEventEmitter {
     
     def addGlobalListener(listener: js.Function): Unit = js.native
     def addGlobalListener(listener: js.Function, async: Boolean): Unit = js.native

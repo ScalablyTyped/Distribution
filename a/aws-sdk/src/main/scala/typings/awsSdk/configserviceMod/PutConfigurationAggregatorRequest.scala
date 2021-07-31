@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationAggregatorRequest extends StObject {
   
   /**
     * A list of AccountAggregationSource object. 
     */
-  var AccountAggregationSources: js.UndefOr[AccountAggregationSourceList] = js.native
+  var AccountAggregationSources: js.UndefOr[AccountAggregationSourceList] = js.undefined
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * An OrganizationAggregationSource object.
     */
-  var OrganizationAggregationSource: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationAggregationSource] = js.native
+  var OrganizationAggregationSource: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationAggregationSource] = js.undefined
   
   /**
     * An array of tag object.
     */
-  var Tags: js.UndefOr[TagsList] = js.native
+  var Tags: js.UndefOr[TagsList] = js.undefined
 }
 object PutConfigurationAggregatorRequest {
   

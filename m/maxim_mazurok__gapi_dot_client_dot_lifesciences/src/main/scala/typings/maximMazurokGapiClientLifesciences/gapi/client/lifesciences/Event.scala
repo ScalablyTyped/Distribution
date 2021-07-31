@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /** See google.cloud.lifesciences.v2beta.ContainerKilledEvent. */
-  var containerKilled: js.UndefOr[ContainerKilledEvent] = js.native
+  var containerKilled: js.UndefOr[ContainerKilledEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.ContainerStartedEvent. */
-  var containerStarted: js.UndefOr[ContainerStartedEvent] = js.native
+  var containerStarted: js.UndefOr[ContainerStartedEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.ContainerStoppedEvent. */
-  var containerStopped: js.UndefOr[ContainerStoppedEvent] = js.native
+  var containerStopped: js.UndefOr[ContainerStoppedEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.DelayedEvent. */
-  var delayed: js.UndefOr[DelayedEvent] = js.native
+  var delayed: js.UndefOr[DelayedEvent] = js.undefined
   
   /** A human-readable description of the event. Note that these strings can change at any time without notice. Any application logic must use the information in the `details` field. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.FailedEvent. */
-  var failed: js.UndefOr[FailedEvent] = js.native
+  var failed: js.UndefOr[FailedEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.PullStartedEvent. */
-  var pullStarted: js.UndefOr[PullStartedEvent] = js.native
+  var pullStarted: js.UndefOr[PullStartedEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.PullStoppedEvent. */
-  var pullStopped: js.UndefOr[PullStoppedEvent] = js.native
+  var pullStopped: js.UndefOr[PullStoppedEvent] = js.undefined
   
   /** The time at which the event occurred. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.UnexpectedExitStatusEvent. */
-  var unexpectedExitStatus: js.UndefOr[UnexpectedExitStatusEvent] = js.native
+  var unexpectedExitStatus: js.UndefOr[UnexpectedExitStatusEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.WorkerAssignedEvent. */
-  var workerAssigned: js.UndefOr[WorkerAssignedEvent] = js.native
+  var workerAssigned: js.UndefOr[WorkerAssignedEvent] = js.undefined
   
   /** See google.cloud.lifesciences.v2beta.WorkerReleasedEvent. */
-  var workerReleased: js.UndefOr[WorkerReleasedEvent] = js.native
+  var workerReleased: js.UndefOr[WorkerReleasedEvent] = js.undefined
 }
 object Event {
   

@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Composition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyCompositionHeaders extends StObject {
   
-  var body: Composition = js.native
+  var body: Composition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Composition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Composition
 }
 object BodyCompositionHeaders {
   
   @scala.inline
-  def apply(
-    body: Composition,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.Composition
-  ): BodyCompositionHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Composition, id: String): BodyCompositionHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Composition")
     __obj.asInstanceOf[BodyCompositionHeaders]
   }
   

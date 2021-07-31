@@ -7,30 +7,30 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-wechat-access", JSImport.Namespace)
-  @js.native
-  def apply(options: AccessTokenUrl): WeMiddleware = js.native
-  @JSImport("express-wechat-access", JSImport.Namespace)
-  @js.native
-  def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ js.Any, _]): WeMiddleware = js.native
+  @scala.inline
+  def apply(options: AccessTokenUrl): WeMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[WeMiddleware]
+  @scala.inline
+  def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ js.Any, js.Any]): WeMiddleware = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[WeMiddleware]
   
+  @JSImport("express-wechat-access", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait WeAccessMidOption extends StObject {
     
-    var accessTokenUrl: js.UndefOr[String] = js.native
+    var accessTokenUrl: js.UndefOr[String] = js.undefined
     
-    var appId: String = js.native
+    var appId: String
     
-    var appSecret: String = js.native
+    var appSecret: String
     
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
-    var ticketUrl: js.UndefOr[String] = js.native
+    var ticketUrl: js.UndefOr[String] = js.undefined
   }
   object WeAccessMidOption {
     
@@ -76,7 +76,7 @@ object mod {
        with EventEmitter {
     
     /* InferMemberOverrides */
-    override def apply(T0: /* req */ js.Any, T1: /* res */ Response | ServerResponse, T2: /* next */ NextFunction): js.Any = js.native
+    override def apply(arg1: /* req */ js.Any, arg2: /* res */ Response | ServerResponse, arg3: /* next */ NextFunction): js.Any = js.native
   }
   
   type WeMiddleware = js.Function3[/* req */ js.Any, /* res */ Response | ServerResponse, /* next */ NextFunction, js.Any]

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelGrouping extends StObject {
   
   /** ChannelGrouping fallback name. */
-  var fallbackName: js.UndefOr[String] = js.native
+  var fallbackName: js.UndefOr[String] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#channelGrouping. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** ChannelGrouping name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The rules contained within this channel grouping. */
-  var rules: js.UndefOr[js.Array[ChannelGroupingRule]] = js.native
+  var rules: js.UndefOr[js.Array[ChannelGroupingRule]] = js.undefined
 }
 object ChannelGrouping {
   

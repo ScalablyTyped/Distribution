@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioTrack extends StObject {
   
   /**
     * 1-based integer value that maps to a specific audio track
     */
-  var Track: integerMin1 = js.native
+  var Track: integerMin1
 }
 object AudioTrack {
   

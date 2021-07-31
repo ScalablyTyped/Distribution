@@ -2,43 +2,41 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastNonLinearAd extends StObject {
   
-  var adParameters: String | Null = js.native
+  var adParameters: String | Null
   
-  var apiFramework: String = js.native
+  var apiFramework: String
   
-  var expandedHeight: String = js.native
+  var expandedHeight: String
   
-  var expandedWidth: String = js.native
+  var expandedWidth: String
   
-  var height: String = js.native
+  var height: String
   
-  var htmlResource: String | Null = js.native
+  var htmlResource: String | Null
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var iframeResource: String | Null = js.native
+  var iframeResource: String | Null
   
-  var maintainAspectRatio: Boolean = js.native
+  var maintainAspectRatio: Boolean
   
-  var minSuggestedDuration: Double = js.native
+  var minSuggestedDuration: Double
   
-  var nonLinearClickThroughURLTemplate: String | Null = js.native
+  var nonLinearClickThroughURLTemplate: String | Null
   
-  var nonLinearClickTrackingURLTemplates: js.Array[String] = js.native
+  var nonLinearClickTrackingURLTemplates: js.Array[String]
   
-  var scalable: Boolean = js.native
+  var scalable: Boolean
   
-  var staticResource: String | Null = js.native
+  var staticResource: String | Null
   
-  var `type`: String | Null = js.native
+  var `type`: String | Null
   
-  var width: String = js.native
+  var width: String
 }
 object VastNonLinearAd {
   
@@ -54,7 +52,8 @@ object VastNonLinearAd {
     scalable: Boolean,
     width: String
   ): VastNonLinearAd = {
-    val __obj = js.Dynamic.literal(apiFramework = apiFramework.asInstanceOf[js.Any], expandedHeight = expandedHeight.asInstanceOf[js.Any], expandedWidth = expandedWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maintainAspectRatio = maintainAspectRatio.asInstanceOf[js.Any], minSuggestedDuration = minSuggestedDuration.asInstanceOf[js.Any], nonLinearClickTrackingURLTemplates = nonLinearClickTrackingURLTemplates.asInstanceOf[js.Any], scalable = scalable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiFramework = apiFramework.asInstanceOf[js.Any], expandedHeight = expandedHeight.asInstanceOf[js.Any], expandedWidth = expandedWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maintainAspectRatio = maintainAspectRatio.asInstanceOf[js.Any], minSuggestedDuration = minSuggestedDuration.asInstanceOf[js.Any], nonLinearClickTrackingURLTemplates = nonLinearClickTrackingURLTemplates.asInstanceOf[js.Any], scalable = scalable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], adParameters = null, htmlResource = null, id = null, iframeResource = null, nonLinearClickThroughURLTemplate = null, staticResource = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[VastNonLinearAd]
   }
   

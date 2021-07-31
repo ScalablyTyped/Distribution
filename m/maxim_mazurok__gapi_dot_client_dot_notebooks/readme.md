@@ -10,9 +10,9 @@ TypeScript typings for Notebooks API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.notebooks |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 65 |
+| # downloads        | 883 |
 | # stars            | 0 |
 
 ## Links

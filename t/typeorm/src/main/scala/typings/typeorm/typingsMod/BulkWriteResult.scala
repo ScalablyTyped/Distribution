@@ -3,92 +3,90 @@ package typings.typeorm.typingsMod
 import typings.typeorm.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteResult extends StObject {
   
   /**
     * Return an array of inserted ids.
     */
-  def getInsertedIds(): js.Array[js.Object] = js.native
+  def getInsertedIds(): js.Array[js.Object]
   
   /**
     * Retrieve lastOp if available.
     */
-  def getLastOp(): js.Object = js.native
+  def getLastOp(): js.Object
   
   /**
     * Return raw internal result.
     */
-  def getRawResponse(): js.Object = js.native
+  def getRawResponse(): js.Object
   
   /**
     * Return the upserted id at position x.
     */
-  def getUpsertedIdAt(index: scala.Double): js.Object = js.native
+  def getUpsertedIdAt(index: scala.Double): js.Object
   
   /**
     * Return an array of upserted ids.
     */
-  def getUpsertedIds(): js.Array[Index] = js.native
+  def getUpsertedIds(): js.Array[Index]
   
   /**
     * Retrieve the write concern error if any.
     */
-  def getWriteConcernError(): WriteConcernError = js.native
+  def getWriteConcernError(): WriteConcernError
   
   /**
     * Returns a specific write error object.
     */
-  def getWriteErrorAt(index: scala.Double): WriteError = js.native
+  def getWriteErrorAt(index: scala.Double): WriteError
   
   /**
     * Returns the number of write errors off the bulk operation.
     */
-  def getWriteErrorCount(): scala.Double = js.native
+  def getWriteErrorCount(): scala.Double
   
   /**
     * Retrieve all write errors.
     */
-  def getWriteErrors(): js.Array[js.Object] = js.native
+  def getWriteErrors(): js.Array[js.Object]
   
   /**
     * Returns true if the bulk operation contains a write error.
     */
-  def hasWriteErrors(): Boolean = js.native
+  def hasWriteErrors(): Boolean
   
   /**
     * number of inserted documents.
     */
-  var nInserted: scala.Double = js.native
+  var nInserted: scala.Double
   
   /**
     *
     Number of documents updated physically on disk.
     */
-  var nModified: scala.Double = js.native
+  var nModified: scala.Double
   
   /**
     * Number of removed documents.
     */
-  var nRemoved: scala.Double = js.native
+  var nRemoved: scala.Double
   
   /**
     * number of documents updated logically.
     */
-  var nUpdated: scala.Double = js.native
+  var nUpdated: scala.Double
   
   /**
     * Number of upserted documents.
     */
-  var nUpserted: scala.Double = js.native
+  var nUpserted: scala.Double
   
   /**
     * Did bulk operation correctly execute.
     */
-  var ok: scala.Double = js.native
+  var ok: scala.Double
 }
 object BulkWriteResult {
   

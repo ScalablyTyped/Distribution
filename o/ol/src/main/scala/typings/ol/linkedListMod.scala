@@ -2,25 +2,99 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkedListMod {
   
   @JSImport("ol/structs/LinkedList", JSImport.Default)
   @js.native
-  class default () extends LinkedList {
+  class default ()
+    extends StObject
+       with LinkedList {
     def this(opt_circular: Boolean) = this()
+    
+    /**
+      * Concatenates two lists.
+      */
+    /* CompleteClass */
+    override def concat(list: LinkedList): Unit = js.native
+    
+    /**
+      * Sets the cursor to the first item, and returns the associated data.
+      */
+    /* CompleteClass */
+    override def firstItem(): js.Any = js.native
+    
+    /**
+      * Returns the current item's data.
+      */
+    /* CompleteClass */
+    override def getCurrItem(): js.Any = js.native
+    
+    /**
+      * Returns the current length of the list.
+      */
+    /* CompleteClass */
+    override def getLength(): Double = js.native
+    
+    /**
+      * Returns the next item's data without moving the cursor.
+      */
+    /* CompleteClass */
+    override def getNextItem(): js.Any = js.native
+    
+    /**
+      * Returns the previous item's data without moving the cursor.
+      */
+    /* CompleteClass */
+    override def getPrevItem(): js.Any = js.native
+    
+    /**
+      * Inserts an item into the linked list right after the current one.
+      */
+    /* CompleteClass */
+    override def insertItem(data: js.Any): Unit = js.native
+    
+    /**
+      * Sets the cursor to the last item, and returns the associated data.
+      */
+    /* CompleteClass */
+    override def lastItem(): js.Any = js.native
+    
+    /**
+      * Sets the cursor to the next item, and returns the associated data.
+      */
+    /* CompleteClass */
+    override def nextItem(): js.Any = js.native
+    
+    /**
+      * Sets the cursor to the previous item, and returns the associated data.
+      */
+    /* CompleteClass */
+    override def prevItem(): js.Any = js.native
+    
+    /**
+      * Removes the current item from the list. Sets the cursor to the next item,
+      * if possible.
+      */
+    /* CompleteClass */
+    override def removeItem(): Unit = js.native
+    
+    /**
+      * Sets the first item of the list. This only works for circular lists, and sets
+      * the last item accordingly.
+      */
+    /* CompleteClass */
+    override def setFirstItem(): Unit = js.native
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var next: js.UndefOr[Item] = js.native
+    var next: js.UndefOr[Item] = js.undefined
     
-    var prev: js.UndefOr[Item] = js.native
+    var prev: js.UndefOr[Item] = js.undefined
   }
   object Item {
     
@@ -50,70 +124,69 @@ object linkedListMod {
     }
   }
   
-  @js.native
   trait LinkedList extends StObject {
     
     /**
       * Concatenates two lists.
       */
-    def concat(list: LinkedList): Unit = js.native
+    def concat(list: LinkedList): Unit
     
     /**
       * Sets the cursor to the first item, and returns the associated data.
       */
-    def firstItem(): js.Any = js.native
+    def firstItem(): js.Any
     
     /**
       * Returns the current item's data.
       */
-    def getCurrItem(): js.Any = js.native
+    def getCurrItem(): js.Any
     
     /**
       * Returns the current length of the list.
       */
-    def getLength(): Double = js.native
+    def getLength(): Double
     
     /**
       * Returns the next item's data without moving the cursor.
       */
-    def getNextItem(): js.Any = js.native
+    def getNextItem(): js.Any
     
     /**
       * Returns the previous item's data without moving the cursor.
       */
-    def getPrevItem(): js.Any = js.native
+    def getPrevItem(): js.Any
     
     /**
       * Inserts an item into the linked list right after the current one.
       */
-    def insertItem(data: js.Any): Unit = js.native
+    def insertItem(data: js.Any): Unit
     
     /**
       * Sets the cursor to the last item, and returns the associated data.
       */
-    def lastItem(): js.Any = js.native
+    def lastItem(): js.Any
     
     /**
       * Sets the cursor to the next item, and returns the associated data.
       */
-    def nextItem(): js.Any = js.native
+    def nextItem(): js.Any
     
     /**
       * Sets the cursor to the previous item, and returns the associated data.
       */
-    def prevItem(): js.Any = js.native
+    def prevItem(): js.Any
     
     /**
       * Removes the current item from the list. Sets the cursor to the next item,
       * if possible.
       */
-    def removeItem(): Unit = js.native
+    def removeItem(): Unit
     
     /**
       * Sets the first item of the list. This only works for circular lists, and sets
       * the last item accordingly.
       */
-    def setFirstItem(): Unit = js.native
+    def setFirstItem(): Unit
   }
   object LinkedList {
     

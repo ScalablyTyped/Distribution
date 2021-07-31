@@ -10,9 +10,9 @@ This package is used to create buttons with the material design spec. There is b
 | ------------------ | :-------------: |
 | Full name          | @react-md/button |
 | Keywords           | accessibility, a11y, react-md, material design, react, button, component, components |
-| # releases         | 32 |
+| # releases         | 39 |
 | # dependents       | 7 |
-| # downloads        | 9324 |
+| # downloads        | 24167 |
 | # stars            | 0 |
 
 ## Links

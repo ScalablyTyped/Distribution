@@ -2,34 +2,32 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screen extends StObject {
   
   @JSName("Access.Screen_typekey")
-  var AccessDotScreen_typekey: Screen = js.native
+  var AccessDotScreen_typekey: Screen
   
-  val ActiveControl: Control = js.native
+  val ActiveControl: Control
   
-  val ActiveDataAccessPage: DataAccessPage = js.native
+  val ActiveDataAccessPage: DataAccessPage
   
-  val ActiveDatasheet: Form = js.native
+  val ActiveDatasheet: Form
   
-  val ActiveForm: Form = js.native
+  val ActiveForm: Form
   
-  val ActiveReport: Report = js.native
+  val ActiveReport: Report
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var MousePointer: Double = js.native
+  var MousePointer: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PreviousControl: Control = js.native
+  val PreviousControl: Control
 }
 object Screen {
   

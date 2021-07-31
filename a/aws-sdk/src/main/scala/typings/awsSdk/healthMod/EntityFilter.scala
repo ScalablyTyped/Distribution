@@ -2,41 +2,39 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityFilter extends StObject {
   
   /**
     * A list of entity ARNs (unique identifiers).
     */
-  var entityArns: js.UndefOr[entityArnList] = js.native
+  var entityArns: js.UndefOr[entityArnList] = js.undefined
   
   /**
     * A list of IDs for affected entities.
     */
-  var entityValues: js.UndefOr[entityValueList] = js.native
+  var entityValues: js.UndefOr[entityValueList] = js.undefined
   
   /**
     * A list of event ARNs (unique identifiers). For example: "arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-CDE456", "arn:aws:health:us-west-1::event/EBS/AWS_EBS_LOST_VOLUME/AWS_EBS_LOST_VOLUME_CHI789_JKL101" 
     */
-  var eventArns: eventArnList = js.native
+  var eventArns: eventArnList
   
   /**
     * A list of the most recent dates and times that the entity was updated.
     */
-  var lastUpdatedTimes: js.UndefOr[dateTimeRangeList] = js.native
+  var lastUpdatedTimes: js.UndefOr[dateTimeRangeList] = js.undefined
   
   /**
     * A list of entity status codes (IMPAIRED, UNIMPAIRED, or UNKNOWN).
     */
-  var statusCodes: js.UndefOr[entityStatusCodeList] = js.native
+  var statusCodes: js.UndefOr[entityStatusCodeList] = js.undefined
   
   /**
     * A map of entity tags attached to the affected entity.  Currently, the tags property isn't supported. 
     */
-  var tags: js.UndefOr[tagFilter] = js.native
+  var tags: js.UndefOr[tagFilter] = js.undefined
 }
 object EntityFilter {
   

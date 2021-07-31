@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentFilter extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait SegmentFilter extends StObject {
     * "segmentFilters": [{ "simpleSegment" :{ "orFiltersForSegment": [{ "segmentFilterClauses":[{ "dimensionFilter": { "dimensionName": "ga:city", "expressions": ["New York"] } }] }] },
     * "not": "True" }] },
     */
-  var not: js.UndefOr[Boolean] = js.native
+  var not: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sequence conditions consist of one or more steps, where each step is defined by one or more dimension/metric conditions. Multiple steps can be combined with special sequence
     * operators.
     */
-  var sequenceSegment: js.UndefOr[SequenceSegment] = js.native
+  var sequenceSegment: js.UndefOr[SequenceSegment] = js.undefined
   
   /** A Simple segment conditions consist of one or more dimension/metric conditions that can be combined */
-  var simpleSegment: js.UndefOr[SimpleSegment] = js.native
+  var simpleSegment: js.UndefOr[SimpleSegment] = js.undefined
 }
 object SegmentFilter {
   

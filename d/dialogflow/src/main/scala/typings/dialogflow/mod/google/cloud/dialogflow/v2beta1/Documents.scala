@@ -12,7 +12,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Documents */
@@ -27,8 +26,8 @@ class Documents protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls CreateDocument.
@@ -110,6 +109,10 @@ class Documents protected () extends Service {
 }
 object Documents {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Documents service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -118,18 +121,14 @@ object Documents {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Documents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Documents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Documents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Documents = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Documents = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Documents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Documents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Documents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Documents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Documents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Documents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Documents]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#createDocument}.

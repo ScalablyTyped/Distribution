@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSharedItem extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait TemplateSharedItem extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the user who owns the template.
     */
-  var owner: js.UndefOr[UserInfo] = js.native
+  var owner: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * How the template is shared. One of:
@@ -32,29 +30,29 @@ trait TemplateSharedItem extends StObject {
     * - `shared_to`
     *
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * List of groups that share the template.
     */
   var sharedGroups: js.UndefOr[
     js.Array[/* Information about items shared among groups. */ MemberGroupSharedItem]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of users that share the template.
     */
-  var sharedUsers: js.UndefOr[js.Array[/* Information about a shared item. */ UserSharedItem]] = js.native
+  var sharedUsers: js.UndefOr[js.Array[/* Information about a shared item. */ UserSharedItem]] = js.undefined
   
   /**
     * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the shared template.
     */
-  var templateName: js.UndefOr[String] = js.native
+  var templateName: js.UndefOr[String] = js.undefined
 }
 object TemplateSharedItem {
   

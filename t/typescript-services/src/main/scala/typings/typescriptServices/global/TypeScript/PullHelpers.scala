@@ -5,107 +5,105 @@ import typings.typescriptServices.anon.AllSignatures
 import typings.typescriptServices.anon.Getter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullHelpers {
   
+  @JSGlobal("TypeScript.PullHelpers")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSGlobal("TypeScript.PullHelpers.OtherPullDeclsWalker")
   @js.native
   class OtherPullDeclsWalker ()
-    extends typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker
+    extends StObject
+       with typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker {
+    
+    /* CompleteClass */
+    var currentlyWalkingOtherDecls: js.Any = js.native
+    
+    /* CompleteClass */
+    override def walkOtherPullDecls(
+      currentDecl: typings.typescriptServices.TypeScript.PullDecl,
+      otherDecls: js.Array[typings.typescriptServices.TypeScript.PullDecl],
+      callBack: js.Function1[/* otherDecl */ typings.typescriptServices.TypeScript.PullDecl, Unit]
+    ): Unit = js.native
+  }
   
-  @JSGlobal("TypeScript.PullHelpers.diagnosticFromDecl")
-  @js.native
-  def diagnosticFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl, diagnosticKey: String): typings.typescriptServices.TypeScript.Diagnostic = js.native
-  @JSGlobal("TypeScript.PullHelpers.diagnosticFromDecl")
-  @js.native
+  @scala.inline
+  def diagnosticFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl, diagnosticKey: String): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
+  @scala.inline
   def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
-    _arguments: js.UndefOr[scala.Nothing],
+    _arguments: js.Array[js.Any]
+  ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
+  @scala.inline
+  def diagnosticFromDecl(
+    decl: typings.typescriptServices.TypeScript.PullDecl,
+    diagnosticKey: String,
+    _arguments: js.Array[js.Any],
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
-  ): typings.typescriptServices.TypeScript.Diagnostic = js.native
-  @JSGlobal("TypeScript.PullHelpers.diagnosticFromDecl")
-  @js.native
+  ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], additionalLocations.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
+  @scala.inline
   def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
-    _arguments: js.Array[_]
-  ): typings.typescriptServices.TypeScript.Diagnostic = js.native
-  @JSGlobal("TypeScript.PullHelpers.diagnosticFromDecl")
-  @js.native
-  def diagnosticFromDecl(
-    decl: typings.typescriptServices.TypeScript.PullDecl,
-    diagnosticKey: String,
-    _arguments: js.Array[_],
+    _arguments: Unit,
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
-  ): typings.typescriptServices.TypeScript.Diagnostic = js.native
+  ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], additionalLocations.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
   
-  @JSGlobal("TypeScript.PullHelpers.getAccessorSymbol")
-  @js.native
+  @scala.inline
   def getAccessorSymbol(
     getterOrSetter: typings.typescriptServices.TypeScript.AST,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
-  ): typings.typescriptServices.TypeScript.PullAccessorSymbol = js.native
+  ): typings.typescriptServices.TypeScript.PullAccessorSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessorSymbol")(getterOrSetter.asInstanceOf[js.Any], semanticInfoChain.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PullAccessorSymbol]
   
-  @JSGlobal("TypeScript.PullHelpers.getGetterAndSetterFunction")
-  @js.native
+  @scala.inline
   def getGetterAndSetterFunction(
     funcDecl: typings.typescriptServices.TypeScript.AST,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
-  ): Getter = js.native
+  ): Getter = (^.asInstanceOf[js.Dynamic].applyDynamic("getGetterAndSetterFunction")(funcDecl.asInstanceOf[js.Any], semanticInfoChain.asInstanceOf[js.Any])).asInstanceOf[Getter]
   
-  @JSGlobal("TypeScript.PullHelpers.getRootType")
-  @js.native
-  def getRootType(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeSymbol = js.native
+  @scala.inline
+  def getRootType(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootType")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PullTypeSymbol]
   
-  @JSGlobal("TypeScript.PullHelpers.getSignatureForFuncDecl")
-  @js.native
-  def getSignatureForFuncDecl(functionDecl: typings.typescriptServices.TypeScript.PullDecl): AllSignatures = js.native
+  @scala.inline
+  def getSignatureForFuncDecl(functionDecl: typings.typescriptServices.TypeScript.PullDecl): AllSignatures = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureForFuncDecl")(functionDecl.asInstanceOf[js.Any]).asInstanceOf[AllSignatures]
   
-  @JSGlobal("TypeScript.PullHelpers.isExportedSymbolInClodule")
-  @js.native
-  def isExportedSymbolInClodule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = js.native
+  @scala.inline
+  def isExportedSymbolInClodule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportedSymbolInClodule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.isNameNumeric")
-  @js.native
-  def isNameNumeric(name: String): Boolean = js.native
+  @scala.inline
+  def isNameNumeric(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameNumeric")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.isSymbolDeclaredInScopeChain")
-  @js.native
+  @scala.inline
   def isSymbolDeclaredInScopeChain(
     symbol: typings.typescriptServices.TypeScript.PullSymbol,
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolDeclaredInScopeChain")(symbol.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.isSymbolLocal")
-  @js.native
-  def isSymbolLocal(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = js.native
+  @scala.inline
+  def isSymbolLocal(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolLocal")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.resolveDeclaredSymbolToUseType")
-  @js.native
-  def resolveDeclaredSymbolToUseType(symbol: typings.typescriptServices.TypeScript.PullSymbol): Unit = js.native
+  @scala.inline
+  def resolveDeclaredSymbolToUseType(symbol: typings.typescriptServices.TypeScript.PullSymbol): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeclaredSymbolToUseType")(symbol.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("TypeScript.PullHelpers.symbolIsEnum")
-  @js.native
-  def symbolIsEnum(source: typings.typescriptServices.TypeScript.PullSymbol): Boolean = js.native
+  @scala.inline
+  def symbolIsEnum(source: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsEnum")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.symbolIsModule")
-  @js.native
-  def symbolIsModule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = js.native
+  @scala.inline
+  def symbolIsModule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsModule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.typeSymbolsAreIdentical")
-  @js.native
+  @scala.inline
   def typeSymbolsAreIdentical(
     a: typings.typescriptServices.TypeScript.PullTypeSymbol,
     b: typings.typescriptServices.TypeScript.PullTypeSymbol
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("typeSymbolsAreIdentical")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.PullHelpers.walkPullTypeSymbolStructure")
-  @js.native
+  @scala.inline
   def walkPullTypeSymbolStructure(
     typeSymbol: typings.typescriptServices.TypeScript.PullTypeSymbol,
     walker: PullTypeSymbolStructureWalker
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPullTypeSymbolStructure")(typeSymbol.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

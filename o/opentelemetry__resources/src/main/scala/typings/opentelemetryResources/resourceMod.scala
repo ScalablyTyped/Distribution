@@ -3,7 +3,6 @@ package typings.opentelemetryResources
 import typings.opentelemetryResources.typesMod.ResourceAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceMod {
@@ -39,6 +38,10 @@ object resourceMod {
   /* static members */
   object Resource {
     
+    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.EMPTY")
     @js.native
     val EMPTY: Resource = js.native
@@ -46,15 +49,13 @@ object resourceMod {
     /**
       * Returns a Resource that indentifies the SDK in use.
       */
-    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.createTelemetrySDKResource")
-    @js.native
-    def createTelemetrySDKResource(): Resource = js.native
+    @scala.inline
+    def createTelemetrySDKResource(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetrySDKResource")().asInstanceOf[Resource]
     
     /**
       * Returns an empty Resource
       */
-    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.empty")
-    @js.native
-    def empty(): Resource = js.native
+    @scala.inline
+    def empty(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Resource]
   }
 }

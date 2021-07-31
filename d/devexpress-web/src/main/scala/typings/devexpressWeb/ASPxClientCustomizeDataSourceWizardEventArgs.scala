@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.CustomizeDataSourceWizard event.
   */
-@js.native
-trait ASPxClientCustomizeDataSourceWizardEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeDataSourceWizardEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the wizard's type.
     */
-  var Type: String = js.native
+  var Type: String
   
   /**
     * Specifies the wizard.
     */
-  var Wizard: js.Any = js.native
+  var Wizard: js.Any
 }
 object ASPxClientCustomizeDataSourceWizardEventArgs {
   

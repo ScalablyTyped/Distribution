@@ -7,7 +7,6 @@ import typings.semanticUiReact.tabTabMod.TabComponent
 import typings.semanticUiReact.tabTabMod.TabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod extends Shortcut {

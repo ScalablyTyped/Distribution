@@ -2,19 +2,17 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReconnectOptions extends StObject {
   
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var maxAttempts: js.UndefOr[Double] = js.native
+  var maxAttempts: js.UndefOr[Double] = js.undefined
   
-  var onTimeout: js.UndefOr[Boolean] = js.native
+  var onTimeout: js.UndefOr[Boolean] = js.undefined
 }
 object ReconnectOptions {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalValidateInstallerRequest extends StObject {
   
   /** Required. JSON Web Token signed using a CPI private key. Payload must include a "secret" claim whose value is the secret. */
-  var encodedSecret: js.UndefOr[String] = js.native
+  var encodedSecret: js.UndefOr[String] = js.undefined
   
   /** Required. Unique installer id (cpiId) from the Certified Professional Installers database. */
-  var installerId: js.UndefOr[String] = js.native
+  var installerId: js.UndefOr[String] = js.undefined
   
   /** Required. Secret returned by the GenerateSecret method. */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
 }
 object SasPortalValidateInstallerRequest {
   

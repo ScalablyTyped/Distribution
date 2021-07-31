@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of products.
   */
-@js.native
 trait SchemaProductSet extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#productSet&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The list of product IDs making up the set of products.
     */
-  var productId: js.UndefOr[js.Array[String]] = js.native
+  var productId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The interpretation of this product set. &quot;unknown&quot; should never
@@ -38,7 +36,7 @@ trait SchemaProductSet extends StObject {
     * Android app. Use ProductVisibility to enable &quot;alpha&quot; or
     * &quot;beta&quot; tracks per user.
     */
-  var productSetBehavior: js.UndefOr[String] = js.native
+  var productSetBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * Additional list of product IDs making up the product set. Unlike the
@@ -48,7 +46,7 @@ trait SchemaProductSet extends StObject {
     * same product ID both here and in the productId array is not allowed and
     * it will result in an error.
     */
-  var productVisibility: js.UndefOr[js.Array[SchemaProductVisibility]] = js.native
+  var productVisibility: js.UndefOr[js.Array[SchemaProductVisibility]] = js.undefined
 }
 object SchemaProductSet {
   

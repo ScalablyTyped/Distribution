@@ -2,13 +2,11 @@ package typings.stripeCheckout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeCheckoutStatic extends StObject {
   
-  def configure(options: StripeCheckoutOptions): StripeCheckoutHandler = js.native
+  def configure(options: StripeCheckoutOptions): StripeCheckoutHandler
 }
 object StripeCheckoutStatic {
   

@@ -2,25 +2,23 @@ package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abortMod {
   
-  @js.native
   trait AbortController extends StObject {
     
     /**
       * Declares the operation associated with this AbortController to have been
       * cancelled.
       */
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     /**
       * An object that reports whether the action associated with this
       * {AbortController} has been cancelled.
       */
-    val signal: AbortSignal = js.native
+    val signal: AbortSignal
   }
   object AbortController {
     
@@ -43,25 +41,24 @@ object abortMod {
   
   type AbortHandler = js.ThisFunction1[/* this */ AbortSignal, /* ev */ js.Any, js.Any]
   
-  @js.native
   trait AbortSignal extends StObject {
     
     /**
       * Whether the action represented by this signal has been cancelled.
       */
-    val aborted: Boolean = js.native
+    val aborted: Boolean
     
     /**
       * A function to be invoked when the action represented by this signal has
       * been cancelled.
       */
-    var onabort: AbortHandler | Null = js.native
+    var onabort: AbortHandler | Null
   }
   object AbortSignal {
     
     @scala.inline
     def apply(aborted: Boolean): AbortSignal = {
-      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], onabort = null)
       __obj.asInstanceOf[AbortSignal]
     }
     

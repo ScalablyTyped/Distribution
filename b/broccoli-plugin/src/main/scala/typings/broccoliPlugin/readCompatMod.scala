@@ -7,15 +7,40 @@ import typings.broccoliPlugin.interfacesMod.MapSeriesIterator
 import typings.broccoliPlugin.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readCompatMod {
   
   @JSImport("broccoli-plugin/dist/read_compat", JSImport.Default)
   @js.native
-  class default protected () extends ReadCompat {
+  class default protected ()
+    extends StObject
+       with ReadCompat {
     def this(plugin: PluginWithDescription) = this()
+    
+    /* CompleteClass */
+    var _priorBuildInputNodeOutputPaths: js.Any = js.native
+    
+    /* CompleteClass */
+    var callbackObject: CallbackObject = js.native
+    
+    /* CompleteClass */
+    override def cleanup(): Unit = js.native
+    
+    /* CompleteClass */
+    var inputBasePath: String = js.native
+    
+    /* CompleteClass */
+    var inputPaths: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var outputPath: String = js.native
+    
+    /* CompleteClass */
+    var pluginInterface: TransformNodeInfo = js.native
+    
+    /* CompleteClass */
+    override def read(readTree: MapSeriesIterator[InputNode]): js.Promise[String] = js.native
   }
   
   @js.native
@@ -24,26 +49,25 @@ object readCompatMod {
     var description: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ReadCompat extends StObject {
     
-    var _priorBuildInputNodeOutputPaths: js.Any = js.native
+    var _priorBuildInputNodeOutputPaths: js.Any
     
-    var cachePath: js.UndefOr[String] = js.native
+    var cachePath: js.UndefOr[String] = js.undefined
     
-    var callbackObject: CallbackObject = js.native
+    var callbackObject: CallbackObject
     
-    def cleanup(): Unit = js.native
+    def cleanup(): Unit
     
-    var inputBasePath: String = js.native
+    var inputBasePath: String
     
-    var inputPaths: js.Array[String] = js.native
+    var inputPaths: js.Array[String]
     
-    var outputPath: String = js.native
+    var outputPath: String
     
-    var pluginInterface: TransformNodeInfo = js.native
+    var pluginInterface: TransformNodeInfo
     
-    def read(readTree: MapSeriesIterator[InputNode]): js.Promise[String] = js.native
+    def read(readTree: MapSeriesIterator[InputNode]): js.Promise[String]
   }
   object ReadCompat {
     

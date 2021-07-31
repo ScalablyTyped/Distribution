@@ -24,11 +24,12 @@ import typings.videoJs.videoJsStrings.maybe
 import typings.videoJs.videoJsStrings.probably
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoJsPlayer extends Component {
+trait VideoJsPlayer
+  extends StObject
+     with Component {
   
   /**
     * Create a remote {@link TextTrack} and an {@link HTMLTrackElement}. It will
@@ -68,13 +69,13 @@ trait VideoJsPlayer extends Component {
     *         if there is no tech
     */
   def addTextTrack(): Unit = js.native
-  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
-  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: String): Unit = js.native
-  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: String, language: String): Unit = js.native
   def addTextTrack(kind: String): Unit = js.native
-  def addTextTrack(kind: String, label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
   def addTextTrack(kind: String, label: String): Unit = js.native
   def addTextTrack(kind: String, label: String, language: String): Unit = js.native
+  def addTextTrack(kind: String, label: Unit, language: String): Unit = js.native
+  def addTextTrack(kind: Unit, label: String): Unit = js.native
+  def addTextTrack(kind: Unit, label: String, language: String): Unit = js.native
+  def addTextTrack(kind: Unit, label: Unit, language: String): Unit = js.native
   
   def aspectRatio(): String = js.native
   /**
@@ -187,8 +188,8 @@ trait VideoJsPlayer extends Component {
     * @return the {@link ModalDialog} that was created
     */
   def createModal(content: String, options: js.Any): ModalDialog = js.native
-  def createModal(content: js.Array[_], options: js.Any): ModalDialog = js.native
-  def createModal(content: js.Function0[_], options: js.Any): ModalDialog = js.native
+  def createModal(content: js.Array[js.Any], options: js.Any): ModalDialog = js.native
+  def createModal(content: js.Function0[js.Any], options: js.Any): ModalDialog = js.native
   def createModal(content: Element, options: js.Any): ModalDialog = js.native
   
   /**
@@ -481,7 +482,7 @@ trait VideoJsPlayer extends Component {
   /**
     * Populate the player using a MediaObject.
     */
-  def loadMedia(media: MediaObject, ready: js.Function0[_]): Unit = js.native
+  def loadMedia(media: MediaObject, ready: js.Function0[js.Any]): Unit = js.native
   
   var loadingSpinner: Component = js.native
   
@@ -707,7 +708,7 @@ trait VideoJsPlayer extends Component {
     *
     * @return Object of source and tech order or false
     */
-  def selectSource(sources: js.Array[_]): js.Any = js.native
+  def selectSource(sources: js.Array[js.Any]): js.Any = js.native
   
   def src(): String = js.native
   /**

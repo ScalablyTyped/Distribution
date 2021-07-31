@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video track. */
-@js.native
 trait VideoTrack extends StObject {
   
   /** Gets or sets the identifier for the video track. */
-  var id: String = js.native
+  var id: String
   
   /** Gets or sets the label for the video track. */
-  var label: String = js.native
+  var label: String
   
   /** Gets or sets a string indicating the language of the video track. */
-  var language: String = js.native
+  var language: String
   
   /** Gets a value indicating the type of data the track contains. For VideoTrack objects, this value is always MediaTrackKind::Video . */
-  var trackKind: MediaTrackKind = js.native
+  var trackKind: MediaTrackKind
 }
 object VideoTrack {
   

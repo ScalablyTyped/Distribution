@@ -4,15 +4,13 @@ import typings.natsHemera.natsHemeraStrings.depth
 import typings.natsHemera.natsHemeraStrings.insertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BloomrunConfig extends StObject {
   
-  var indexing: insertion | depth = js.native
+  var indexing: insertion | depth
   
-  var lookupBeforeAdd: Boolean = js.native
+  var lookupBeforeAdd: Boolean
 }
 object BloomrunConfig {
   

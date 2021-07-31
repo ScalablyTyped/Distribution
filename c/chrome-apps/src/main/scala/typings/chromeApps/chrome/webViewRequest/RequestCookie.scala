@@ -2,20 +2,18 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter or specification of a cookie in HTTP Requests.
   */
-@js.native
 trait RequestCookie extends StObject {
   
   /** Name of a cookie. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Value of a AddRequestCookie, may be padded in double-quotes. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object RequestCookie {
   

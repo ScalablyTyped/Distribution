@@ -2,14 +2,12 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Collapsible, 'open'> */
-@js.native
 trait PickCollapsibleopen extends StObject {
   
-  var open: js.UndefOr[js.Any] = js.native
+  var open: js.UndefOr[js.Any] = js.undefined
 }
 object PickCollapsibleopen {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Search")
@@ -63,7 +62,7 @@ class ResourceSearch protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSearchListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(params: ParamsResourceSearchList): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(params: ParamsResourceSearchList, callback: BodyResponseCallback[SchemaSearchListResponse]): Unit = js.native
   def list(

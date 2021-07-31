@@ -9,7 +9,6 @@ import typings.plottable.plottableStrings.week
 import typings.plottable.plottableStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimeInterval {

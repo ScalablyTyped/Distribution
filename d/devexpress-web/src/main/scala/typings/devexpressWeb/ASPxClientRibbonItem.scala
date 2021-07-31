@@ -2,61 +2,59 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ribbon's RibbonItemBase object.
   */
-@js.native
 trait ASPxClientRibbonItem extends StObject {
   
   /**
     * Returns a value indicating whether a ribbon item is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Returns the item value.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
   
   /**
     * Returns a value specifying whether a ribbon item is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Sets a value specifying whether the item is enabled.
     * @param enabled true to enable the item; false to disable it.
     */
-  def SetEnabled(enabled: Boolean): Unit = js.native
+  def SetEnabled(enabled: Boolean): Unit
   
   /**
     * Sets the item value.
     * @param value An  that specifies the item value.
     */
-  def SetValue(value: js.Any): Unit = js.native
+  def SetValue(value: js.Any): Unit
   
   /**
     * Gets the client group object to which the current item belongs.
     */
-  var group: ASPxClientRibbonGroup = js.native
+  var group: ASPxClientRibbonGroup
   
   /**
     * Gets or sets the item's index within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name of the current ribbon item.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the client ribbon object to which the current item belongs.
     */
-  var ribbon: ASPxClientRibbon = js.native
+  var ribbon: ASPxClientRibbon
 }
 object ASPxClientRibbonItem {
   

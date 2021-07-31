@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelsResponse extends StObject {
   
   /**
     * A map that contains a multipart response for each channel. For each item in this object, the ChannelType is the key and the Channel is the value.
     */
-  var Channels: MapOfChannelResponse = js.native
+  var Channels: MapOfChannelResponse
 }
 object ChannelsResponse {
   

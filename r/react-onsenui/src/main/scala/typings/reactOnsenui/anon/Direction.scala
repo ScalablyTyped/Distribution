@@ -4,19 +4,17 @@ import typings.reactOnsenui.mod.SpeedDialDirection
 import typings.reactOnsenui.mod.SpeedDialPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: js.UndefOr[SpeedDialDirection] = js.native
+  var direction: js.UndefOr[SpeedDialDirection] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[SpeedDialPosition] = js.native
+  var position: js.UndefOr[SpeedDialPosition] = js.undefined
 }
 object Direction {
   

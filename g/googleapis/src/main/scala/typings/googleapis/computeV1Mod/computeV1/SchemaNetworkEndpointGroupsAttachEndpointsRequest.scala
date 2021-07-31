@@ -2,16 +2,14 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworkEndpointGroupsAttachEndpointsRequest extends StObject {
   
   /**
     * The list of network endpoints to be attached.
     */
-  var networkEndpoints: js.UndefOr[js.Array[SchemaNetworkEndpoint]] = js.native
+  var networkEndpoints: js.UndefOr[js.Array[SchemaNetworkEndpoint]] = js.undefined
 }
 object SchemaNetworkEndpointGroupsAttachEndpointsRequest {
   

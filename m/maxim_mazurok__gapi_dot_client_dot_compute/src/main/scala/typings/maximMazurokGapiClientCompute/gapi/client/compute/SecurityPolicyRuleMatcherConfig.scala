@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityPolicyRuleMatcherConfig extends StObject {
   
   /** CIDR IP address range. Maximum number of src_ip_ranges allowed is 10. */
-  var srcIpRanges: js.UndefOr[js.Array[String]] = js.native
+  var srcIpRanges: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SecurityPolicyRuleMatcherConfig {
   

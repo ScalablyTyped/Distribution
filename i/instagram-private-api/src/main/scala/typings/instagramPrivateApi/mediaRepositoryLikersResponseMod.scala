@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryLikersResponseMod {
   
-  @js.native
   trait MediaRepositoryLikersResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var user_count: Double = js.native
+    var user_count: Double
     
-    var users: js.Array[MediaRepositoryLikersResponseUsersItem] = js.native
+    var users: js.Array[MediaRepositoryLikersResponseUsersItem]
   }
   object MediaRepositoryLikersResponseRootObject {
     
@@ -41,24 +39,23 @@ object mediaRepositoryLikersResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryLikersResponseUsersItem extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object MediaRepositoryLikersResponseUsersItem {
     

@@ -3,23 +3,21 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.MemberName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeInfo extends StObject {
   
-  var docComment: String = js.native
+  var docComment: String
   
-  var fullSymbolName: String = js.native
+  var fullSymbolName: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var limChar: Double = js.native
+  var limChar: Double
   
-  var memberName: MemberName = js.native
+  var memberName: MemberName
   
-  var minChar: Double = js.native
+  var minChar: Double
 }
 object TypeInfo {
   

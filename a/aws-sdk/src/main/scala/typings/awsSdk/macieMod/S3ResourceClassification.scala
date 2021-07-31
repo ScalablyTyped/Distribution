@@ -2,26 +2,24 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3ResourceClassification extends StObject {
   
   /**
     * The name of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     * The classification type that you want to specify for the resource associated with Amazon Macie Classic. 
     */
-  var classificationType: ClassificationType = js.native
+  var classificationType: ClassificationType
   
   /**
     * The prefix of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
-  var prefix: js.UndefOr[Prefix] = js.native
+  var prefix: js.UndefOr[Prefix] = js.undefined
 }
 object S3ResourceClassification {
   

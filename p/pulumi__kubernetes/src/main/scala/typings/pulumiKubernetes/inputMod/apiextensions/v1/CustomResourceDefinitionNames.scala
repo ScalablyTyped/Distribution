@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.apiextensions.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CustomResourceDefinitionNames indicates the names to serve this CustomResourceDefinition
   */
-@js.native
 trait CustomResourceDefinitionNames extends StObject {
   
   /**
     * categories is a list of grouped resources this custom resource belongs to (e.g. 'all'). This is published in API discovery documents, and used by clients to support invocations like `kubectl get all`.
     */
-  var categories: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var categories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * kind is the serialized kind of the resource. It is normally CamelCase and singular. Custom resource instances will use this value as the `kind` attribute in API calls.
     */
-  var kind: Input[String] = js.native
+  var kind: Input[String]
   
   /**
     * listKind is the serialized kind of the list for this resource. Defaults to "`kind`List".
     */
-  var listKind: js.UndefOr[Input[String]] = js.native
+  var listKind: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * plural is the plural name of the resource to serve. The custom resources are served under `/apis/<group>/<version>/.../<plural>`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`). Must be all lowercase.
     */
-  var plural: Input[String] = js.native
+  var plural: Input[String]
   
   /**
     * shortNames are short names for the resource, exposed in API discovery documents, and used by clients to support invocations like `kubectl get <shortname>`. It must be all lowercase.
     */
-  var shortNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var shortNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * singular is the singular name of the resource. It must be all lowercase. Defaults to lowercased `kind`.
     */
-  var singular: js.UndefOr[Input[String]] = js.native
+  var singular: js.UndefOr[Input[String]] = js.undefined
 }
 object CustomResourceDefinitionNames {
   

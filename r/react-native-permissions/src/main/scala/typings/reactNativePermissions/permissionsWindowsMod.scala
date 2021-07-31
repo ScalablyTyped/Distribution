@@ -147,7 +147,6 @@ import typings.reactNativePermissions.reactNativePermissionsStrings.windowsDotpe
 import typings.reactNativePermissions.reactNativePermissionsStrings.windowsDotpermissionDotxboxAccessoryManagement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionsWindowsMod {
@@ -169,441 +168,297 @@ object permissionsWindowsMod {
   }
   
   /* Inlined std.Readonly<{ readonly ACCESSORY_MANAGER :'windows.permission.accessoryManager',  readonly ACTIVITY :'windows.permission.activity',  readonly ALLOW_ELEVATION :'windows.permission.allowElevation',  readonly ALL_APP_MODS :'windows.permission.allAppMods',  readonly ALL_JOYN :'windows.permission.allJoyn',  readonly APPOINTMENTS :'windows.permission.appointments',  readonly APPOINTMENTS_SYSTEM :'windows.permission.appointmentsSystem',  readonly APP_BROADCAST_SERVICES :'windows.permission.appBroadcastServices',  readonly APP_CAPTURE_SERVICES :'windows.permission.appCaptureServices',  readonly APP_CAPTURE_SETTINGS :'windows.permission.appCaptureSettings',  readonly APP_DIAGNOSTICS :'windows.permission.appDiagnostics',  readonly APP_LICENSING :'windows.permission.appLicensing',  readonly AUDIO_DEVICE_CONFIGURATION :'windows.permission.audioDeviceConfiguration',  readonly BACKGROUND_MEDIA_PLAYBACK :'windows.permission.backgroundMediaPlayback',  readonly BACKGROUND_MEDIA_RECORDING :'windows.permission.backgroundMediaRecording',  readonly BACKGROUND_SPATIAL_PERCEPTION :'windows.permission.backgroundSpatialPerception',  readonly BACKGROUND_VOIP :'windows.permission.backgroundVoIP',  readonly BLOCKED_CHAT_MESSAGES :'windows.permission.blockedChatMessages',  readonly BLUETOOTH :'windows.permission.bluetooth',  readonly BROAD_FILE_SYSTEM_ACCESS :'windows.permission.broadFileSystemAccess',  readonly CAMERA_PROCESSING_EXTENSION :'windows.permission.cameraProcessingExtension',  readonly CELLULAR_DEVICE_CONTROL :'windows.permission.cellularDeviceControl',  readonly CELLULAR_DEVICE_IDENTITY :'windows.permission.cellularDeviceIdentity',  readonly CELLULAR_MESSAGING :'windows.permission.cellularMessaging',  readonly CHAT_SYSTEM :'windows.permission.chatSystem',  readonly CODE_GENERATION :'windows.permission.codeGeneration',  readonly CONFIRM_APP_CLOSE :'windows.permission.confirmAppClose',  readonly CONTACTS :'windows.permission.contacts',  readonly CONTACTS_SYSTEM :'windows.permission.contactsSystem',  readonly CORTANA_PERMISSIONS :'windows.permission.cortanaPermissions',  readonly CORTANA_SPEECH_ACCESSORY :'windows.permission.cortanaSpeechAccessory',  readonly CUSTOM_INSTALL_ACTIONS :'windows.permission.customInstallActions',  readonly DEVELOPMENT_MODE_NETWORK :'windows.permission.developmentModeNetwork',  readonly DEVICE_MANAGEMENT_DM_ACCOUNT :'windows.permission.deviceManagementDmAccount',  readonly DEVICE_MANAGEMENT_EMAIL_ACCOUNT :'windows.permission.deviceManagementEmailAccount',  readonly DEVICE_MANAGEMENT_FOUNDATION :'windows.permission.deviceManagementFoundation',  readonly DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES :'windows.permission.deviceManagementWapSecurityPolicies',  readonly DEVICE_PORTAL_PROVIDER :'windows.permission.devicePortalProvider',  readonly DEVICE_UNLOCK :'windows.permission.deviceUnlock',  readonly DOCUMENTS_LIBRARY :'windows.permission.documentsLibrary',  readonly DUAL_SIM_TILES :'windows.permission.dualSimTiles',  readonly EMAIL :'windows.permission.email',  readonly EMAIL_SYSTEM :'windows.permission.emailSystem',  readonly ENTERPRISE_AUTHENTICATION :'windows.permission.enterpriseAuthentication',  readonly ENTERPRISE_CLOUD_S_S_O :'windows.permission.enterpriseCloudSSO',  readonly ENTERPRISE_DATA_POLICY :'windows.permission.enterpriseDataPolicy',  readonly ENTERPRISE_DEVICE_LOCKDOWN :'windows.permission.enterpriseDeviceLockdown',  readonly EXPANDED_RESOURCES :'windows.permission.expandedResources',  readonly EXTENDED_BACKGROUND_TASK_TIME :'windows.permission.extendedBackgroundTaskTime',  readonly EXTENDED_EXECUTION_BACKGROUND_AUDIO :'windows.permission.extendedExecutionBackgroundAudio',  readonly EXTENDED_EXECUTION_CRITICAL :'windows.permission.extendedExecutionCritical',  readonly EXTENDED_EXECUTION_UNCONSTRAINED :'windows.permission.extendedExecutionUnconstrained',  readonly FIRST_SIGN_IN_SETTINGS :'windows.permission.firstSignInSettings',  readonly GAME_BAR_SERVICES :'windows.permission.gameBarServices',  readonly GAME_LIST :'windows.permission.gameList',  readonly GAME_MONITOR :'windows.permission.gameMonitor',  readonly GAZE_INPUT :'windows.permission.gazeInput',  readonly GLOBAL_MEDIA_CONTROL :'windows.permission.globalMediaControl',  readonly HUMANINTERFACEDEVICE :'windows.permission.humaninterfacedevice',  readonly INPUT_FOREGROUND_OBSERVATION :'windows.permission.inputForegroundObservation',  readonly INPUT_INJECTION_BROKERED :'windows.permission.inputInjectionBrokered',  readonly INPUT_OBSERVATION :'windows.permission.inputObservation',  readonly INPUT_SUPPRESSION :'windows.permission.inputSuppression',  readonly INTERNET_CLIENT :'windows.permission.internetClient',  readonly INTERNET_CLIENT_SERVER :'windows.permission.internetClientServer',  readonly INTEROP_SERVICES :'windows.permission.interopServices',  readonly IOT :'windows.permission.iot',  readonly LOCAL_SYSTEM_SERVICES :'windows.permission.localSystemServices',  readonly LOCATION :'windows.permission.location',  readonly LOCATION_HISTORY :'windows.permission.locationHistory',  readonly LOCATION_SYSTEM :'windows.permission.locationSystem',  readonly LOW_LEVEL :'windows.permission.lowLevel',  readonly LOW_LEVEL_DEVICES :'windows.permission.lowLevelDevices',  readonly MICROPHONE :'windows.permission.microphone',  readonly MOBILE :'windows.permission.mobile',  readonly MODIFIABLE_APP :'windows.permission.modifiableApp',  readonly MUSIC_LIBRARY :'windows.permission.musicLibrary',  readonly NETWORKING_VPN_PROVIDER :'windows.permission.networkingVpnProvider',  readonly NETWORK_CONNECTION_MANAGER_PROVISIONING :'windows.permission.networkConnectionManagerProvisioning',  readonly NETWORK_DATA_PLAN_PROVISIONING :'windows.permission.networkDataPlanProvisioning',  readonly NETWORK_DATA_USAGE_MANAGEMENT :'windows.permission.networkDataUsageManagement',  readonly OEM_DEPLOYMENT :'windows.permission.oemDeployment',  readonly OEM_PUBLIC_DIRECTORY :'windows.permission.oemPublicDirectory',  readonly ONE_PROCESS_VOIP :'windows.permission.oneProcessVoIP',  readonly OPTICAL :'windows.permission.optical',  readonly PACKAGED_SERVICES :'windows.permission.packagedServices',  readonly PACKAGES_SERVICES :'windows.permission.packagesServices',  readonly PACKAGE_MANAGEMENT :'windows.permission.packageManagement',  readonly PACKAGE_POLICY_SYSTEM :'windows.permission.packagePolicySystem',  readonly PACKAGE_QUERY :'windows.permission.packageQuery',  readonly PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM :'windows.permission.packageWriteRedirectionCompatibilityShim',  readonly PHONE_CALL :'windows.permission.phoneCall',  readonly PHONE_CALL_HISTORY :'windows.permission.phoneCallHistory',  readonly PHONE_CALL_HISTORY_SYSTEM :'windows.permission.phoneCallHistorySystem',  readonly PHONE_LINE_TRANSPORT_MANAGEMENT :'windows.permission.phoneLineTransportManagement',  readonly PICTURES_LIBRARY :'windows.permission.picturesLibrary',  readonly POINT_OF_SERVICE :'windows.permission.pointOfService',  readonly PREVIEW_INK_WORKSPACE :'windows.permission.previewInkWorkspace',  readonly PREVIEW_PEN_WORKSPACE :'windows.permission.previewPenWorkspace',  readonly PREVIEW_STORE :'windows.permission.previewStore',  readonly PREVIEW_UI_COMPOSITION :'windows.permission.previewUiComposition',  readonly PRIVATE_NETWORK_CLIENT_SERVER :'windows.permission.privateNetworkClientServer',  readonly PROTECTED_APP :'windows.permission.protectedApp',  readonly PROXIMITY :'windows.permission.proximity',  readonly RADIOS :'windows.permission.radios',  readonly RECORDED_CALLS_FOLDER :'windows.permission.recordedCallsFolder',  readonly REMOTE_PASSPORT_AUTHENTICATION :'windows.permission.remotePassportAuthentication',  readonly REMOTE_SYSTEM :'windows.permission.remoteSystem',  readonly REMOVABLE_STORAGE :'windows.permission.removableStorage',  readonly RESCAP :'windows.permission.rescap',  readonly RUN_FULL_TRUST :'windows.permission.runFullTrust',  readonly SCREEN_DUPLICATION :'windows.permission.screenDuplication',  readonly SECONDARY_AUTHENTICATION_FACTOR :'windows.permission.secondaryAuthenticationFactor',  readonly SECURE_ASSESSMENT :'windows.permission.secureAssessment',  readonly SERIALCOMMUNICATION :'windows.permission.serialcommunication',  readonly SHARED_USER_CERTIFICATES :'windows.permission.sharedUserCertificates',  readonly SLAPI_QUERY_LICENSE_VALUE :'windows.permission.slapiQueryLicenseValue',  readonly SMBIOS :'windows.permission.smbios',  readonly SMS_SEND :'windows.permission.smsSend',  readonly SPATIAL_PERCEPTION :'windows.permission.spatialPerception',  readonly START_SCREEN_MANAGEMENT :'windows.permission.startScreenManagement',  readonly STORE_LICENSE_MANAGEMENT :'windows.permission.storeLicenseManagement',  readonly SYSTEM_MANAGEMENT :'windows.permission.systemManagement',  readonly TARGETED_CONTENT :'windows.permission.targetedContent',  readonly TEAM_EDITION_DEVICE_CREDENTIAL :'windows.permission.teamEditionDeviceCredential',  readonly TEAM_EDITION_EXPERIENCE :'windows.permission.teamEditionExperience',  readonly TEAM_EDITION_VIEW :'windows.permission.teamEditionView',  readonly UAP :'windows.permission.uap',  readonly UI_AUTOMATION :'windows.permission.uiAutomation',  readonly UNVIRTUALIZED_RESOURCES :'windows.permission.unvirtualizedResources',  readonly USB :'windows.permission.usb',  readonly USER_ACCOUNT_INFORMATION :'windows.permission.userAccountInformation',  readonly USER_DATA_ACCOUNTS_PROVIDER :'windows.permission.userDataAccountsProvider',  readonly USER_DATA_SYSTEM :'windows.permission.userDataSystem',  readonly USER_PRINCIPAL_NAME :'windows.permission.userPrincipalName',  readonly USER_SYSTEM_ID :'windows.permission.userSystemId',  readonly VIDEOS_LIBRARY :'windows.permission.videosLibrary',  readonly VOIP_CALL :'windows.permission.voipCall',  readonly WALLET_SYSTEM :'windows.permission.walletSystem',  readonly WEBCAM :'windows.permission.webcam',  readonly WIFI_CONTROL :'windows.permission.wiFiControl',  readonly XBOX_ACCESSORY_MANAGEMENT :'windows.permission.xboxAccessoryManagement'}> */
-  @js.native
   trait WindowsPermissionMap extends StObject {
     
-    val ACCESSORY_MANAGER: windowsDotpermissionDotaccessoryManager = js.native
+    val ACCESSORY_MANAGER: windowsDotpermissionDotaccessoryManager
     
-    val ACTIVITY: windowsDotpermissionDotactivity = js.native
+    val ACTIVITY: windowsDotpermissionDotactivity
     
-    val ALLOW_ELEVATION: windowsDotpermissionDotallowElevation = js.native
+    val ALLOW_ELEVATION: windowsDotpermissionDotallowElevation
     
-    val ALL_APP_MODS: windowsDotpermissionDotallAppMods = js.native
+    val ALL_APP_MODS: windowsDotpermissionDotallAppMods
     
-    val ALL_JOYN: windowsDotpermissionDotallJoyn = js.native
+    val ALL_JOYN: windowsDotpermissionDotallJoyn
     
-    val APPOINTMENTS: windowsDotpermissionDotappointments = js.native
+    val APPOINTMENTS: windowsDotpermissionDotappointments
     
-    val APPOINTMENTS_SYSTEM: windowsDotpermissionDotappointmentsSystem = js.native
+    val APPOINTMENTS_SYSTEM: windowsDotpermissionDotappointmentsSystem
     
-    val APP_BROADCAST_SERVICES: windowsDotpermissionDotappBroadcastServices = js.native
+    val APP_BROADCAST_SERVICES: windowsDotpermissionDotappBroadcastServices
     
-    val APP_CAPTURE_SERVICES: windowsDotpermissionDotappCaptureServices = js.native
+    val APP_CAPTURE_SERVICES: windowsDotpermissionDotappCaptureServices
     
-    val APP_CAPTURE_SETTINGS: windowsDotpermissionDotappCaptureSettings = js.native
+    val APP_CAPTURE_SETTINGS: windowsDotpermissionDotappCaptureSettings
     
-    val APP_DIAGNOSTICS: windowsDotpermissionDotappDiagnostics = js.native
+    val APP_DIAGNOSTICS: windowsDotpermissionDotappDiagnostics
     
-    val APP_LICENSING: windowsDotpermissionDotappLicensing = js.native
+    val APP_LICENSING: windowsDotpermissionDotappLicensing
     
-    val AUDIO_DEVICE_CONFIGURATION: windowsDotpermissionDotaudioDeviceConfiguration = js.native
+    val AUDIO_DEVICE_CONFIGURATION: windowsDotpermissionDotaudioDeviceConfiguration
     
-    val BACKGROUND_MEDIA_PLAYBACK: windowsDotpermissionDotbackgroundMediaPlayback = js.native
+    val BACKGROUND_MEDIA_PLAYBACK: windowsDotpermissionDotbackgroundMediaPlayback
     
-    val BACKGROUND_MEDIA_RECORDING: windowsDotpermissionDotbackgroundMediaRecording = js.native
+    val BACKGROUND_MEDIA_RECORDING: windowsDotpermissionDotbackgroundMediaRecording
     
-    val BACKGROUND_SPATIAL_PERCEPTION: windowsDotpermissionDotbackgroundSpatialPerception = js.native
+    val BACKGROUND_SPATIAL_PERCEPTION: windowsDotpermissionDotbackgroundSpatialPerception
     
-    val BACKGROUND_VOIP: windowsDotpermissionDotbackgroundVoIP = js.native
+    val BACKGROUND_VOIP: windowsDotpermissionDotbackgroundVoIP
     
-    val BLOCKED_CHAT_MESSAGES: windowsDotpermissionDotblockedChatMessages = js.native
+    val BLOCKED_CHAT_MESSAGES: windowsDotpermissionDotblockedChatMessages
     
-    val BLUETOOTH: windowsDotpermissionDotbluetooth = js.native
+    val BLUETOOTH: windowsDotpermissionDotbluetooth
     
-    val BROAD_FILE_SYSTEM_ACCESS: windowsDotpermissionDotbroadFileSystemAccess = js.native
+    val BROAD_FILE_SYSTEM_ACCESS: windowsDotpermissionDotbroadFileSystemAccess
     
-    val CAMERA_PROCESSING_EXTENSION: windowsDotpermissionDotcameraProcessingExtension = js.native
+    val CAMERA_PROCESSING_EXTENSION: windowsDotpermissionDotcameraProcessingExtension
     
-    val CELLULAR_DEVICE_CONTROL: windowsDotpermissionDotcellularDeviceControl = js.native
+    val CELLULAR_DEVICE_CONTROL: windowsDotpermissionDotcellularDeviceControl
     
-    val CELLULAR_DEVICE_IDENTITY: windowsDotpermissionDotcellularDeviceIdentity = js.native
+    val CELLULAR_DEVICE_IDENTITY: windowsDotpermissionDotcellularDeviceIdentity
     
-    val CELLULAR_MESSAGING: windowsDotpermissionDotcellularMessaging = js.native
+    val CELLULAR_MESSAGING: windowsDotpermissionDotcellularMessaging
     
-    val CHAT_SYSTEM: windowsDotpermissionDotchatSystem = js.native
+    val CHAT_SYSTEM: windowsDotpermissionDotchatSystem
     
-    val CODE_GENERATION: windowsDotpermissionDotcodeGeneration = js.native
+    val CODE_GENERATION: windowsDotpermissionDotcodeGeneration
     
-    val CONFIRM_APP_CLOSE: windowsDotpermissionDotconfirmAppClose = js.native
+    val CONFIRM_APP_CLOSE: windowsDotpermissionDotconfirmAppClose
     
-    val CONTACTS: windowsDotpermissionDotcontacts = js.native
+    val CONTACTS: windowsDotpermissionDotcontacts
     
-    val CONTACTS_SYSTEM: windowsDotpermissionDotcontactsSystem = js.native
+    val CONTACTS_SYSTEM: windowsDotpermissionDotcontactsSystem
     
-    val CORTANA_PERMISSIONS: windowsDotpermissionDotcortanaPermissions = js.native
+    val CORTANA_PERMISSIONS: windowsDotpermissionDotcortanaPermissions
     
-    val CORTANA_SPEECH_ACCESSORY: windowsDotpermissionDotcortanaSpeechAccessory = js.native
+    val CORTANA_SPEECH_ACCESSORY: windowsDotpermissionDotcortanaSpeechAccessory
     
-    val CUSTOM_INSTALL_ACTIONS: windowsDotpermissionDotcustomInstallActions = js.native
+    val CUSTOM_INSTALL_ACTIONS: windowsDotpermissionDotcustomInstallActions
     
-    val DEVELOPMENT_MODE_NETWORK: windowsDotpermissionDotdevelopmentModeNetwork = js.native
+    val DEVELOPMENT_MODE_NETWORK: windowsDotpermissionDotdevelopmentModeNetwork
     
-    val DEVICE_MANAGEMENT_DM_ACCOUNT: windowsDotpermissionDotdeviceManagementDmAccount = js.native
+    val DEVICE_MANAGEMENT_DM_ACCOUNT: windowsDotpermissionDotdeviceManagementDmAccount
     
-    val DEVICE_MANAGEMENT_EMAIL_ACCOUNT: windowsDotpermissionDotdeviceManagementEmailAccount = js.native
+    val DEVICE_MANAGEMENT_EMAIL_ACCOUNT: windowsDotpermissionDotdeviceManagementEmailAccount
     
-    val DEVICE_MANAGEMENT_FOUNDATION: windowsDotpermissionDotdeviceManagementFoundation = js.native
+    val DEVICE_MANAGEMENT_FOUNDATION: windowsDotpermissionDotdeviceManagementFoundation
     
-    val DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES: windowsDotpermissionDotdeviceManagementWapSecurityPolicies = js.native
+    val DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES: windowsDotpermissionDotdeviceManagementWapSecurityPolicies
     
-    val DEVICE_PORTAL_PROVIDER: windowsDotpermissionDotdevicePortalProvider = js.native
+    val DEVICE_PORTAL_PROVIDER: windowsDotpermissionDotdevicePortalProvider
     
-    val DEVICE_UNLOCK: windowsDotpermissionDotdeviceUnlock = js.native
+    val DEVICE_UNLOCK: windowsDotpermissionDotdeviceUnlock
     
-    val DOCUMENTS_LIBRARY: windowsDotpermissionDotdocumentsLibrary = js.native
+    val DOCUMENTS_LIBRARY: windowsDotpermissionDotdocumentsLibrary
     
-    val DUAL_SIM_TILES: windowsDotpermissionDotdualSimTiles = js.native
+    val DUAL_SIM_TILES: windowsDotpermissionDotdualSimTiles
     
-    val EMAIL: windowsDotpermissionDotemail = js.native
+    val EMAIL: windowsDotpermissionDotemail
     
-    val EMAIL_SYSTEM: windowsDotpermissionDotemailSystem = js.native
+    val EMAIL_SYSTEM: windowsDotpermissionDotemailSystem
     
-    val ENTERPRISE_AUTHENTICATION: windowsDotpermissionDotenterpriseAuthentication = js.native
+    val ENTERPRISE_AUTHENTICATION: windowsDotpermissionDotenterpriseAuthentication
     
-    val ENTERPRISE_CLOUD_S_S_O: windowsDotpermissionDotenterpriseCloudSSO = js.native
+    val ENTERPRISE_CLOUD_S_S_O: windowsDotpermissionDotenterpriseCloudSSO
     
-    val ENTERPRISE_DATA_POLICY: windowsDotpermissionDotenterpriseDataPolicy = js.native
+    val ENTERPRISE_DATA_POLICY: windowsDotpermissionDotenterpriseDataPolicy
     
-    val ENTERPRISE_DEVICE_LOCKDOWN: windowsDotpermissionDotenterpriseDeviceLockdown = js.native
+    val ENTERPRISE_DEVICE_LOCKDOWN: windowsDotpermissionDotenterpriseDeviceLockdown
     
-    val EXPANDED_RESOURCES: windowsDotpermissionDotexpandedResources = js.native
+    val EXPANDED_RESOURCES: windowsDotpermissionDotexpandedResources
     
-    val EXTENDED_BACKGROUND_TASK_TIME: windowsDotpermissionDotextendedBackgroundTaskTime = js.native
+    val EXTENDED_BACKGROUND_TASK_TIME: windowsDotpermissionDotextendedBackgroundTaskTime
     
-    val EXTENDED_EXECUTION_BACKGROUND_AUDIO: windowsDotpermissionDotextendedExecutionBackgroundAudio = js.native
+    val EXTENDED_EXECUTION_BACKGROUND_AUDIO: windowsDotpermissionDotextendedExecutionBackgroundAudio
     
-    val EXTENDED_EXECUTION_CRITICAL: windowsDotpermissionDotextendedExecutionCritical = js.native
+    val EXTENDED_EXECUTION_CRITICAL: windowsDotpermissionDotextendedExecutionCritical
     
-    val EXTENDED_EXECUTION_UNCONSTRAINED: windowsDotpermissionDotextendedExecutionUnconstrained = js.native
+    val EXTENDED_EXECUTION_UNCONSTRAINED: windowsDotpermissionDotextendedExecutionUnconstrained
     
-    val FIRST_SIGN_IN_SETTINGS: windowsDotpermissionDotfirstSignInSettings = js.native
+    val FIRST_SIGN_IN_SETTINGS: windowsDotpermissionDotfirstSignInSettings
     
-    val GAME_BAR_SERVICES: windowsDotpermissionDotgameBarServices = js.native
+    val GAME_BAR_SERVICES: windowsDotpermissionDotgameBarServices
     
-    val GAME_LIST: windowsDotpermissionDotgameList = js.native
+    val GAME_LIST: windowsDotpermissionDotgameList
     
-    val GAME_MONITOR: windowsDotpermissionDotgameMonitor = js.native
+    val GAME_MONITOR: windowsDotpermissionDotgameMonitor
     
-    val GAZE_INPUT: windowsDotpermissionDotgazeInput = js.native
+    val GAZE_INPUT: windowsDotpermissionDotgazeInput
     
-    val GLOBAL_MEDIA_CONTROL: windowsDotpermissionDotglobalMediaControl = js.native
+    val GLOBAL_MEDIA_CONTROL: windowsDotpermissionDotglobalMediaControl
     
-    val HUMANINTERFACEDEVICE: windowsDotpermissionDothumaninterfacedevice = js.native
+    val HUMANINTERFACEDEVICE: windowsDotpermissionDothumaninterfacedevice
     
-    val INPUT_FOREGROUND_OBSERVATION: windowsDotpermissionDotinputForegroundObservation = js.native
+    val INPUT_FOREGROUND_OBSERVATION: windowsDotpermissionDotinputForegroundObservation
     
-    val INPUT_INJECTION_BROKERED: windowsDotpermissionDotinputInjectionBrokered = js.native
+    val INPUT_INJECTION_BROKERED: windowsDotpermissionDotinputInjectionBrokered
     
-    val INPUT_OBSERVATION: windowsDotpermissionDotinputObservation = js.native
+    val INPUT_OBSERVATION: windowsDotpermissionDotinputObservation
     
-    val INPUT_SUPPRESSION: windowsDotpermissionDotinputSuppression = js.native
+    val INPUT_SUPPRESSION: windowsDotpermissionDotinputSuppression
     
-    val INTERNET_CLIENT: windowsDotpermissionDotinternetClient = js.native
+    val INTERNET_CLIENT: windowsDotpermissionDotinternetClient
     
-    val INTERNET_CLIENT_SERVER: windowsDotpermissionDotinternetClientServer = js.native
+    val INTERNET_CLIENT_SERVER: windowsDotpermissionDotinternetClientServer
     
-    val INTEROP_SERVICES: windowsDotpermissionDotinteropServices = js.native
+    val INTEROP_SERVICES: windowsDotpermissionDotinteropServices
     
-    val IOT: windowsDotpermissionDotiot = js.native
+    val IOT: windowsDotpermissionDotiot
     
-    val LOCAL_SYSTEM_SERVICES: windowsDotpermissionDotlocalSystemServices = js.native
+    val LOCAL_SYSTEM_SERVICES: windowsDotpermissionDotlocalSystemServices
     
-    val LOCATION: windowsDotpermissionDotlocation = js.native
+    val LOCATION: windowsDotpermissionDotlocation
     
-    val LOCATION_HISTORY: windowsDotpermissionDotlocationHistory = js.native
+    val LOCATION_HISTORY: windowsDotpermissionDotlocationHistory
     
-    val LOCATION_SYSTEM: windowsDotpermissionDotlocationSystem = js.native
+    val LOCATION_SYSTEM: windowsDotpermissionDotlocationSystem
     
-    val LOW_LEVEL: windowsDotpermissionDotlowLevel = js.native
+    val LOW_LEVEL: windowsDotpermissionDotlowLevel
     
-    val LOW_LEVEL_DEVICES: windowsDotpermissionDotlowLevelDevices = js.native
+    val LOW_LEVEL_DEVICES: windowsDotpermissionDotlowLevelDevices
     
-    val MICROPHONE: windowsDotpermissionDotmicrophone = js.native
+    val MICROPHONE: windowsDotpermissionDotmicrophone
     
-    val MOBILE: windowsDotpermissionDotmobile = js.native
+    val MOBILE: windowsDotpermissionDotmobile
     
-    val MODIFIABLE_APP: windowsDotpermissionDotmodifiableApp = js.native
+    val MODIFIABLE_APP: windowsDotpermissionDotmodifiableApp
     
-    val MUSIC_LIBRARY: windowsDotpermissionDotmusicLibrary = js.native
+    val MUSIC_LIBRARY: windowsDotpermissionDotmusicLibrary
     
-    val NETWORKING_VPN_PROVIDER: windowsDotpermissionDotnetworkingVpnProvider = js.native
+    val NETWORKING_VPN_PROVIDER: windowsDotpermissionDotnetworkingVpnProvider
     
-    val NETWORK_CONNECTION_MANAGER_PROVISIONING: windowsDotpermissionDotnetworkConnectionManagerProvisioning = js.native
+    val NETWORK_CONNECTION_MANAGER_PROVISIONING: windowsDotpermissionDotnetworkConnectionManagerProvisioning
     
-    val NETWORK_DATA_PLAN_PROVISIONING: windowsDotpermissionDotnetworkDataPlanProvisioning = js.native
+    val NETWORK_DATA_PLAN_PROVISIONING: windowsDotpermissionDotnetworkDataPlanProvisioning
     
-    val NETWORK_DATA_USAGE_MANAGEMENT: windowsDotpermissionDotnetworkDataUsageManagement = js.native
+    val NETWORK_DATA_USAGE_MANAGEMENT: windowsDotpermissionDotnetworkDataUsageManagement
     
-    val OEM_DEPLOYMENT: windowsDotpermissionDotoemDeployment = js.native
+    val OEM_DEPLOYMENT: windowsDotpermissionDotoemDeployment
     
-    val OEM_PUBLIC_DIRECTORY: windowsDotpermissionDotoemPublicDirectory = js.native
+    val OEM_PUBLIC_DIRECTORY: windowsDotpermissionDotoemPublicDirectory
     
-    val ONE_PROCESS_VOIP: windowsDotpermissionDotoneProcessVoIP = js.native
+    val ONE_PROCESS_VOIP: windowsDotpermissionDotoneProcessVoIP
     
-    val OPTICAL: windowsDotpermissionDotoptical = js.native
+    val OPTICAL: windowsDotpermissionDotoptical
     
-    val PACKAGED_SERVICES: windowsDotpermissionDotpackagedServices = js.native
+    val PACKAGED_SERVICES: windowsDotpermissionDotpackagedServices
     
-    val PACKAGES_SERVICES: windowsDotpermissionDotpackagesServices = js.native
+    val PACKAGES_SERVICES: windowsDotpermissionDotpackagesServices
     
-    val PACKAGE_MANAGEMENT: windowsDotpermissionDotpackageManagement = js.native
+    val PACKAGE_MANAGEMENT: windowsDotpermissionDotpackageManagement
     
-    val PACKAGE_POLICY_SYSTEM: windowsDotpermissionDotpackagePolicySystem = js.native
+    val PACKAGE_POLICY_SYSTEM: windowsDotpermissionDotpackagePolicySystem
     
-    val PACKAGE_QUERY: windowsDotpermissionDotpackageQuery = js.native
+    val PACKAGE_QUERY: windowsDotpermissionDotpackageQuery
     
-    val PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM: windowsDotpermissionDotpackageWriteRedirectionCompatibilityShim = js.native
+    val PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM: windowsDotpermissionDotpackageWriteRedirectionCompatibilityShim
     
-    val PHONE_CALL: windowsDotpermissionDotphoneCall = js.native
+    val PHONE_CALL: windowsDotpermissionDotphoneCall
     
-    val PHONE_CALL_HISTORY: windowsDotpermissionDotphoneCallHistory = js.native
+    val PHONE_CALL_HISTORY: windowsDotpermissionDotphoneCallHistory
     
-    val PHONE_CALL_HISTORY_SYSTEM: windowsDotpermissionDotphoneCallHistorySystem = js.native
+    val PHONE_CALL_HISTORY_SYSTEM: windowsDotpermissionDotphoneCallHistorySystem
     
-    val PHONE_LINE_TRANSPORT_MANAGEMENT: windowsDotpermissionDotphoneLineTransportManagement = js.native
+    val PHONE_LINE_TRANSPORT_MANAGEMENT: windowsDotpermissionDotphoneLineTransportManagement
     
-    val PICTURES_LIBRARY: windowsDotpermissionDotpicturesLibrary = js.native
+    val PICTURES_LIBRARY: windowsDotpermissionDotpicturesLibrary
     
-    val POINT_OF_SERVICE: windowsDotpermissionDotpointOfService = js.native
+    val POINT_OF_SERVICE: windowsDotpermissionDotpointOfService
     
-    val PREVIEW_INK_WORKSPACE: windowsDotpermissionDotpreviewInkWorkspace = js.native
+    val PREVIEW_INK_WORKSPACE: windowsDotpermissionDotpreviewInkWorkspace
     
-    val PREVIEW_PEN_WORKSPACE: windowsDotpermissionDotpreviewPenWorkspace = js.native
+    val PREVIEW_PEN_WORKSPACE: windowsDotpermissionDotpreviewPenWorkspace
     
-    val PREVIEW_STORE: windowsDotpermissionDotpreviewStore = js.native
+    val PREVIEW_STORE: windowsDotpermissionDotpreviewStore
     
-    val PREVIEW_UI_COMPOSITION: windowsDotpermissionDotpreviewUiComposition = js.native
+    val PREVIEW_UI_COMPOSITION: windowsDotpermissionDotpreviewUiComposition
     
-    val PRIVATE_NETWORK_CLIENT_SERVER: windowsDotpermissionDotprivateNetworkClientServer = js.native
+    val PRIVATE_NETWORK_CLIENT_SERVER: windowsDotpermissionDotprivateNetworkClientServer
     
-    val PROTECTED_APP: windowsDotpermissionDotprotectedApp = js.native
+    val PROTECTED_APP: windowsDotpermissionDotprotectedApp
     
-    val PROXIMITY: windowsDotpermissionDotproximity = js.native
+    val PROXIMITY: windowsDotpermissionDotproximity
     
-    val RADIOS: windowsDotpermissionDotradios = js.native
+    val RADIOS: windowsDotpermissionDotradios
     
-    val RECORDED_CALLS_FOLDER: windowsDotpermissionDotrecordedCallsFolder = js.native
+    val RECORDED_CALLS_FOLDER: windowsDotpermissionDotrecordedCallsFolder
     
-    val REMOTE_PASSPORT_AUTHENTICATION: windowsDotpermissionDotremotePassportAuthentication = js.native
+    val REMOTE_PASSPORT_AUTHENTICATION: windowsDotpermissionDotremotePassportAuthentication
     
-    val REMOTE_SYSTEM: windowsDotpermissionDotremoteSystem = js.native
+    val REMOTE_SYSTEM: windowsDotpermissionDotremoteSystem
     
-    val REMOVABLE_STORAGE: windowsDotpermissionDotremovableStorage = js.native
+    val REMOVABLE_STORAGE: windowsDotpermissionDotremovableStorage
     
-    val RESCAP: windowsDotpermissionDotrescap = js.native
+    val RESCAP: windowsDotpermissionDotrescap
     
-    val RUN_FULL_TRUST: windowsDotpermissionDotrunFullTrust = js.native
+    val RUN_FULL_TRUST: windowsDotpermissionDotrunFullTrust
     
-    val SCREEN_DUPLICATION: windowsDotpermissionDotscreenDuplication = js.native
+    val SCREEN_DUPLICATION: windowsDotpermissionDotscreenDuplication
     
-    val SECONDARY_AUTHENTICATION_FACTOR: windowsDotpermissionDotsecondaryAuthenticationFactor = js.native
+    val SECONDARY_AUTHENTICATION_FACTOR: windowsDotpermissionDotsecondaryAuthenticationFactor
     
-    val SECURE_ASSESSMENT: windowsDotpermissionDotsecureAssessment = js.native
+    val SECURE_ASSESSMENT: windowsDotpermissionDotsecureAssessment
     
-    val SERIALCOMMUNICATION: windowsDotpermissionDotserialcommunication = js.native
+    val SERIALCOMMUNICATION: windowsDotpermissionDotserialcommunication
     
-    val SHARED_USER_CERTIFICATES: windowsDotpermissionDotsharedUserCertificates = js.native
+    val SHARED_USER_CERTIFICATES: windowsDotpermissionDotsharedUserCertificates
     
-    val SLAPI_QUERY_LICENSE_VALUE: windowsDotpermissionDotslapiQueryLicenseValue = js.native
+    val SLAPI_QUERY_LICENSE_VALUE: windowsDotpermissionDotslapiQueryLicenseValue
     
-    val SMBIOS: windowsDotpermissionDotsmbios = js.native
+    val SMBIOS: windowsDotpermissionDotsmbios
     
-    val SMS_SEND: windowsDotpermissionDotsmsSend = js.native
+    val SMS_SEND: windowsDotpermissionDotsmsSend
     
-    val SPATIAL_PERCEPTION: windowsDotpermissionDotspatialPerception = js.native
+    val SPATIAL_PERCEPTION: windowsDotpermissionDotspatialPerception
     
-    val START_SCREEN_MANAGEMENT: windowsDotpermissionDotstartScreenManagement = js.native
+    val START_SCREEN_MANAGEMENT: windowsDotpermissionDotstartScreenManagement
     
-    val STORE_LICENSE_MANAGEMENT: windowsDotpermissionDotstoreLicenseManagement = js.native
+    val STORE_LICENSE_MANAGEMENT: windowsDotpermissionDotstoreLicenseManagement
     
-    val SYSTEM_MANAGEMENT: windowsDotpermissionDotsystemManagement = js.native
+    val SYSTEM_MANAGEMENT: windowsDotpermissionDotsystemManagement
     
-    val TARGETED_CONTENT: windowsDotpermissionDottargetedContent = js.native
+    val TARGETED_CONTENT: windowsDotpermissionDottargetedContent
     
-    val TEAM_EDITION_DEVICE_CREDENTIAL: windowsDotpermissionDotteamEditionDeviceCredential = js.native
+    val TEAM_EDITION_DEVICE_CREDENTIAL: windowsDotpermissionDotteamEditionDeviceCredential
     
-    val TEAM_EDITION_EXPERIENCE: windowsDotpermissionDotteamEditionExperience = js.native
+    val TEAM_EDITION_EXPERIENCE: windowsDotpermissionDotteamEditionExperience
     
-    val TEAM_EDITION_VIEW: windowsDotpermissionDotteamEditionView = js.native
+    val TEAM_EDITION_VIEW: windowsDotpermissionDotteamEditionView
     
-    val UAP: windowsDotpermissionDotuap = js.native
+    val UAP: windowsDotpermissionDotuap
     
-    val UI_AUTOMATION: windowsDotpermissionDotuiAutomation = js.native
+    val UI_AUTOMATION: windowsDotpermissionDotuiAutomation
     
-    val UNVIRTUALIZED_RESOURCES: windowsDotpermissionDotunvirtualizedResources = js.native
+    val UNVIRTUALIZED_RESOURCES: windowsDotpermissionDotunvirtualizedResources
     
-    val USB: windowsDotpermissionDotusb = js.native
+    val USB: windowsDotpermissionDotusb
     
-    val USER_ACCOUNT_INFORMATION: windowsDotpermissionDotuserAccountInformation = js.native
+    val USER_ACCOUNT_INFORMATION: windowsDotpermissionDotuserAccountInformation
     
-    val USER_DATA_ACCOUNTS_PROVIDER: windowsDotpermissionDotuserDataAccountsProvider = js.native
+    val USER_DATA_ACCOUNTS_PROVIDER: windowsDotpermissionDotuserDataAccountsProvider
     
-    val USER_DATA_SYSTEM: windowsDotpermissionDotuserDataSystem = js.native
+    val USER_DATA_SYSTEM: windowsDotpermissionDotuserDataSystem
     
-    val USER_PRINCIPAL_NAME: windowsDotpermissionDotuserPrincipalName = js.native
+    val USER_PRINCIPAL_NAME: windowsDotpermissionDotuserPrincipalName
     
-    val USER_SYSTEM_ID: windowsDotpermissionDotuserSystemId = js.native
+    val USER_SYSTEM_ID: windowsDotpermissionDotuserSystemId
     
-    val VIDEOS_LIBRARY: windowsDotpermissionDotvideosLibrary = js.native
+    val VIDEOS_LIBRARY: windowsDotpermissionDotvideosLibrary
     
-    val VOIP_CALL: windowsDotpermissionDotvoipCall = js.native
+    val VOIP_CALL: windowsDotpermissionDotvoipCall
     
-    val WALLET_SYSTEM: windowsDotpermissionDotwalletSystem = js.native
+    val WALLET_SYSTEM: windowsDotpermissionDotwalletSystem
     
-    val WEBCAM: windowsDotpermissionDotwebcam = js.native
+    val WEBCAM: windowsDotpermissionDotwebcam
     
-    val WIFI_CONTROL: windowsDotpermissionDotwiFiControl = js.native
+    val WIFI_CONTROL: windowsDotpermissionDotwiFiControl
     
-    val XBOX_ACCESSORY_MANAGEMENT: windowsDotpermissionDotxboxAccessoryManagement = js.native
+    val XBOX_ACCESSORY_MANAGEMENT: windowsDotpermissionDotxboxAccessoryManagement
   }
   object WindowsPermissionMap {
     
     @scala.inline
-    def apply(
-      ACCESSORY_MANAGER: windowsDotpermissionDotaccessoryManager,
-      ACTIVITY: windowsDotpermissionDotactivity,
-      ALLOW_ELEVATION: windowsDotpermissionDotallowElevation,
-      ALL_APP_MODS: windowsDotpermissionDotallAppMods,
-      ALL_JOYN: windowsDotpermissionDotallJoyn,
-      APPOINTMENTS: windowsDotpermissionDotappointments,
-      APPOINTMENTS_SYSTEM: windowsDotpermissionDotappointmentsSystem,
-      APP_BROADCAST_SERVICES: windowsDotpermissionDotappBroadcastServices,
-      APP_CAPTURE_SERVICES: windowsDotpermissionDotappCaptureServices,
-      APP_CAPTURE_SETTINGS: windowsDotpermissionDotappCaptureSettings,
-      APP_DIAGNOSTICS: windowsDotpermissionDotappDiagnostics,
-      APP_LICENSING: windowsDotpermissionDotappLicensing,
-      AUDIO_DEVICE_CONFIGURATION: windowsDotpermissionDotaudioDeviceConfiguration,
-      BACKGROUND_MEDIA_PLAYBACK: windowsDotpermissionDotbackgroundMediaPlayback,
-      BACKGROUND_MEDIA_RECORDING: windowsDotpermissionDotbackgroundMediaRecording,
-      BACKGROUND_SPATIAL_PERCEPTION: windowsDotpermissionDotbackgroundSpatialPerception,
-      BACKGROUND_VOIP: windowsDotpermissionDotbackgroundVoIP,
-      BLOCKED_CHAT_MESSAGES: windowsDotpermissionDotblockedChatMessages,
-      BLUETOOTH: windowsDotpermissionDotbluetooth,
-      BROAD_FILE_SYSTEM_ACCESS: windowsDotpermissionDotbroadFileSystemAccess,
-      CAMERA_PROCESSING_EXTENSION: windowsDotpermissionDotcameraProcessingExtension,
-      CELLULAR_DEVICE_CONTROL: windowsDotpermissionDotcellularDeviceControl,
-      CELLULAR_DEVICE_IDENTITY: windowsDotpermissionDotcellularDeviceIdentity,
-      CELLULAR_MESSAGING: windowsDotpermissionDotcellularMessaging,
-      CHAT_SYSTEM: windowsDotpermissionDotchatSystem,
-      CODE_GENERATION: windowsDotpermissionDotcodeGeneration,
-      CONFIRM_APP_CLOSE: windowsDotpermissionDotconfirmAppClose,
-      CONTACTS: windowsDotpermissionDotcontacts,
-      CONTACTS_SYSTEM: windowsDotpermissionDotcontactsSystem,
-      CORTANA_PERMISSIONS: windowsDotpermissionDotcortanaPermissions,
-      CORTANA_SPEECH_ACCESSORY: windowsDotpermissionDotcortanaSpeechAccessory,
-      CUSTOM_INSTALL_ACTIONS: windowsDotpermissionDotcustomInstallActions,
-      DEVELOPMENT_MODE_NETWORK: windowsDotpermissionDotdevelopmentModeNetwork,
-      DEVICE_MANAGEMENT_DM_ACCOUNT: windowsDotpermissionDotdeviceManagementDmAccount,
-      DEVICE_MANAGEMENT_EMAIL_ACCOUNT: windowsDotpermissionDotdeviceManagementEmailAccount,
-      DEVICE_MANAGEMENT_FOUNDATION: windowsDotpermissionDotdeviceManagementFoundation,
-      DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES: windowsDotpermissionDotdeviceManagementWapSecurityPolicies,
-      DEVICE_PORTAL_PROVIDER: windowsDotpermissionDotdevicePortalProvider,
-      DEVICE_UNLOCK: windowsDotpermissionDotdeviceUnlock,
-      DOCUMENTS_LIBRARY: windowsDotpermissionDotdocumentsLibrary,
-      DUAL_SIM_TILES: windowsDotpermissionDotdualSimTiles,
-      EMAIL: windowsDotpermissionDotemail,
-      EMAIL_SYSTEM: windowsDotpermissionDotemailSystem,
-      ENTERPRISE_AUTHENTICATION: windowsDotpermissionDotenterpriseAuthentication,
-      ENTERPRISE_CLOUD_S_S_O: windowsDotpermissionDotenterpriseCloudSSO,
-      ENTERPRISE_DATA_POLICY: windowsDotpermissionDotenterpriseDataPolicy,
-      ENTERPRISE_DEVICE_LOCKDOWN: windowsDotpermissionDotenterpriseDeviceLockdown,
-      EXPANDED_RESOURCES: windowsDotpermissionDotexpandedResources,
-      EXTENDED_BACKGROUND_TASK_TIME: windowsDotpermissionDotextendedBackgroundTaskTime,
-      EXTENDED_EXECUTION_BACKGROUND_AUDIO: windowsDotpermissionDotextendedExecutionBackgroundAudio,
-      EXTENDED_EXECUTION_CRITICAL: windowsDotpermissionDotextendedExecutionCritical,
-      EXTENDED_EXECUTION_UNCONSTRAINED: windowsDotpermissionDotextendedExecutionUnconstrained,
-      FIRST_SIGN_IN_SETTINGS: windowsDotpermissionDotfirstSignInSettings,
-      GAME_BAR_SERVICES: windowsDotpermissionDotgameBarServices,
-      GAME_LIST: windowsDotpermissionDotgameList,
-      GAME_MONITOR: windowsDotpermissionDotgameMonitor,
-      GAZE_INPUT: windowsDotpermissionDotgazeInput,
-      GLOBAL_MEDIA_CONTROL: windowsDotpermissionDotglobalMediaControl,
-      HUMANINTERFACEDEVICE: windowsDotpermissionDothumaninterfacedevice,
-      INPUT_FOREGROUND_OBSERVATION: windowsDotpermissionDotinputForegroundObservation,
-      INPUT_INJECTION_BROKERED: windowsDotpermissionDotinputInjectionBrokered,
-      INPUT_OBSERVATION: windowsDotpermissionDotinputObservation,
-      INPUT_SUPPRESSION: windowsDotpermissionDotinputSuppression,
-      INTERNET_CLIENT: windowsDotpermissionDotinternetClient,
-      INTERNET_CLIENT_SERVER: windowsDotpermissionDotinternetClientServer,
-      INTEROP_SERVICES: windowsDotpermissionDotinteropServices,
-      IOT: windowsDotpermissionDotiot,
-      LOCAL_SYSTEM_SERVICES: windowsDotpermissionDotlocalSystemServices,
-      LOCATION: windowsDotpermissionDotlocation,
-      LOCATION_HISTORY: windowsDotpermissionDotlocationHistory,
-      LOCATION_SYSTEM: windowsDotpermissionDotlocationSystem,
-      LOW_LEVEL: windowsDotpermissionDotlowLevel,
-      LOW_LEVEL_DEVICES: windowsDotpermissionDotlowLevelDevices,
-      MICROPHONE: windowsDotpermissionDotmicrophone,
-      MOBILE: windowsDotpermissionDotmobile,
-      MODIFIABLE_APP: windowsDotpermissionDotmodifiableApp,
-      MUSIC_LIBRARY: windowsDotpermissionDotmusicLibrary,
-      NETWORKING_VPN_PROVIDER: windowsDotpermissionDotnetworkingVpnProvider,
-      NETWORK_CONNECTION_MANAGER_PROVISIONING: windowsDotpermissionDotnetworkConnectionManagerProvisioning,
-      NETWORK_DATA_PLAN_PROVISIONING: windowsDotpermissionDotnetworkDataPlanProvisioning,
-      NETWORK_DATA_USAGE_MANAGEMENT: windowsDotpermissionDotnetworkDataUsageManagement,
-      OEM_DEPLOYMENT: windowsDotpermissionDotoemDeployment,
-      OEM_PUBLIC_DIRECTORY: windowsDotpermissionDotoemPublicDirectory,
-      ONE_PROCESS_VOIP: windowsDotpermissionDotoneProcessVoIP,
-      OPTICAL: windowsDotpermissionDotoptical,
-      PACKAGED_SERVICES: windowsDotpermissionDotpackagedServices,
-      PACKAGES_SERVICES: windowsDotpermissionDotpackagesServices,
-      PACKAGE_MANAGEMENT: windowsDotpermissionDotpackageManagement,
-      PACKAGE_POLICY_SYSTEM: windowsDotpermissionDotpackagePolicySystem,
-      PACKAGE_QUERY: windowsDotpermissionDotpackageQuery,
-      PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM: windowsDotpermissionDotpackageWriteRedirectionCompatibilityShim,
-      PHONE_CALL: windowsDotpermissionDotphoneCall,
-      PHONE_CALL_HISTORY: windowsDotpermissionDotphoneCallHistory,
-      PHONE_CALL_HISTORY_SYSTEM: windowsDotpermissionDotphoneCallHistorySystem,
-      PHONE_LINE_TRANSPORT_MANAGEMENT: windowsDotpermissionDotphoneLineTransportManagement,
-      PICTURES_LIBRARY: windowsDotpermissionDotpicturesLibrary,
-      POINT_OF_SERVICE: windowsDotpermissionDotpointOfService,
-      PREVIEW_INK_WORKSPACE: windowsDotpermissionDotpreviewInkWorkspace,
-      PREVIEW_PEN_WORKSPACE: windowsDotpermissionDotpreviewPenWorkspace,
-      PREVIEW_STORE: windowsDotpermissionDotpreviewStore,
-      PREVIEW_UI_COMPOSITION: windowsDotpermissionDotpreviewUiComposition,
-      PRIVATE_NETWORK_CLIENT_SERVER: windowsDotpermissionDotprivateNetworkClientServer,
-      PROTECTED_APP: windowsDotpermissionDotprotectedApp,
-      PROXIMITY: windowsDotpermissionDotproximity,
-      RADIOS: windowsDotpermissionDotradios,
-      RECORDED_CALLS_FOLDER: windowsDotpermissionDotrecordedCallsFolder,
-      REMOTE_PASSPORT_AUTHENTICATION: windowsDotpermissionDotremotePassportAuthentication,
-      REMOTE_SYSTEM: windowsDotpermissionDotremoteSystem,
-      REMOVABLE_STORAGE: windowsDotpermissionDotremovableStorage,
-      RESCAP: windowsDotpermissionDotrescap,
-      RUN_FULL_TRUST: windowsDotpermissionDotrunFullTrust,
-      SCREEN_DUPLICATION: windowsDotpermissionDotscreenDuplication,
-      SECONDARY_AUTHENTICATION_FACTOR: windowsDotpermissionDotsecondaryAuthenticationFactor,
-      SECURE_ASSESSMENT: windowsDotpermissionDotsecureAssessment,
-      SERIALCOMMUNICATION: windowsDotpermissionDotserialcommunication,
-      SHARED_USER_CERTIFICATES: windowsDotpermissionDotsharedUserCertificates,
-      SLAPI_QUERY_LICENSE_VALUE: windowsDotpermissionDotslapiQueryLicenseValue,
-      SMBIOS: windowsDotpermissionDotsmbios,
-      SMS_SEND: windowsDotpermissionDotsmsSend,
-      SPATIAL_PERCEPTION: windowsDotpermissionDotspatialPerception,
-      START_SCREEN_MANAGEMENT: windowsDotpermissionDotstartScreenManagement,
-      STORE_LICENSE_MANAGEMENT: windowsDotpermissionDotstoreLicenseManagement,
-      SYSTEM_MANAGEMENT: windowsDotpermissionDotsystemManagement,
-      TARGETED_CONTENT: windowsDotpermissionDottargetedContent,
-      TEAM_EDITION_DEVICE_CREDENTIAL: windowsDotpermissionDotteamEditionDeviceCredential,
-      TEAM_EDITION_EXPERIENCE: windowsDotpermissionDotteamEditionExperience,
-      TEAM_EDITION_VIEW: windowsDotpermissionDotteamEditionView,
-      UAP: windowsDotpermissionDotuap,
-      UI_AUTOMATION: windowsDotpermissionDotuiAutomation,
-      UNVIRTUALIZED_RESOURCES: windowsDotpermissionDotunvirtualizedResources,
-      USB: windowsDotpermissionDotusb,
-      USER_ACCOUNT_INFORMATION: windowsDotpermissionDotuserAccountInformation,
-      USER_DATA_ACCOUNTS_PROVIDER: windowsDotpermissionDotuserDataAccountsProvider,
-      USER_DATA_SYSTEM: windowsDotpermissionDotuserDataSystem,
-      USER_PRINCIPAL_NAME: windowsDotpermissionDotuserPrincipalName,
-      USER_SYSTEM_ID: windowsDotpermissionDotuserSystemId,
-      VIDEOS_LIBRARY: windowsDotpermissionDotvideosLibrary,
-      VOIP_CALL: windowsDotpermissionDotvoipCall,
-      WALLET_SYSTEM: windowsDotpermissionDotwalletSystem,
-      WEBCAM: windowsDotpermissionDotwebcam,
-      WIFI_CONTROL: windowsDotpermissionDotwiFiControl,
-      XBOX_ACCESSORY_MANAGEMENT: windowsDotpermissionDotxboxAccessoryManagement
-    ): WindowsPermissionMap = {
-      val __obj = js.Dynamic.literal(ACCESSORY_MANAGER = ACCESSORY_MANAGER.asInstanceOf[js.Any], ACTIVITY = ACTIVITY.asInstanceOf[js.Any], ALLOW_ELEVATION = ALLOW_ELEVATION.asInstanceOf[js.Any], ALL_APP_MODS = ALL_APP_MODS.asInstanceOf[js.Any], ALL_JOYN = ALL_JOYN.asInstanceOf[js.Any], APPOINTMENTS = APPOINTMENTS.asInstanceOf[js.Any], APPOINTMENTS_SYSTEM = APPOINTMENTS_SYSTEM.asInstanceOf[js.Any], APP_BROADCAST_SERVICES = APP_BROADCAST_SERVICES.asInstanceOf[js.Any], APP_CAPTURE_SERVICES = APP_CAPTURE_SERVICES.asInstanceOf[js.Any], APP_CAPTURE_SETTINGS = APP_CAPTURE_SETTINGS.asInstanceOf[js.Any], APP_DIAGNOSTICS = APP_DIAGNOSTICS.asInstanceOf[js.Any], APP_LICENSING = APP_LICENSING.asInstanceOf[js.Any], AUDIO_DEVICE_CONFIGURATION = AUDIO_DEVICE_CONFIGURATION.asInstanceOf[js.Any], BACKGROUND_MEDIA_PLAYBACK = BACKGROUND_MEDIA_PLAYBACK.asInstanceOf[js.Any], BACKGROUND_MEDIA_RECORDING = BACKGROUND_MEDIA_RECORDING.asInstanceOf[js.Any], BACKGROUND_SPATIAL_PERCEPTION = BACKGROUND_SPATIAL_PERCEPTION.asInstanceOf[js.Any], BACKGROUND_VOIP = BACKGROUND_VOIP.asInstanceOf[js.Any], BLOCKED_CHAT_MESSAGES = BLOCKED_CHAT_MESSAGES.asInstanceOf[js.Any], BLUETOOTH = BLUETOOTH.asInstanceOf[js.Any], BROAD_FILE_SYSTEM_ACCESS = BROAD_FILE_SYSTEM_ACCESS.asInstanceOf[js.Any], CAMERA_PROCESSING_EXTENSION = CAMERA_PROCESSING_EXTENSION.asInstanceOf[js.Any], CELLULAR_DEVICE_CONTROL = CELLULAR_DEVICE_CONTROL.asInstanceOf[js.Any], CELLULAR_DEVICE_IDENTITY = CELLULAR_DEVICE_IDENTITY.asInstanceOf[js.Any], CELLULAR_MESSAGING = CELLULAR_MESSAGING.asInstanceOf[js.Any], CHAT_SYSTEM = CHAT_SYSTEM.asInstanceOf[js.Any], CODE_GENERATION = CODE_GENERATION.asInstanceOf[js.Any], CONFIRM_APP_CLOSE = CONFIRM_APP_CLOSE.asInstanceOf[js.Any], CONTACTS = CONTACTS.asInstanceOf[js.Any], CONTACTS_SYSTEM = CONTACTS_SYSTEM.asInstanceOf[js.Any], CORTANA_PERMISSIONS = CORTANA_PERMISSIONS.asInstanceOf[js.Any], CORTANA_SPEECH_ACCESSORY = CORTANA_SPEECH_ACCESSORY.asInstanceOf[js.Any], CUSTOM_INSTALL_ACTIONS = CUSTOM_INSTALL_ACTIONS.asInstanceOf[js.Any], DEVELOPMENT_MODE_NETWORK = DEVELOPMENT_MODE_NETWORK.asInstanceOf[js.Any], DEVICE_MANAGEMENT_DM_ACCOUNT = DEVICE_MANAGEMENT_DM_ACCOUNT.asInstanceOf[js.Any], DEVICE_MANAGEMENT_EMAIL_ACCOUNT = DEVICE_MANAGEMENT_EMAIL_ACCOUNT.asInstanceOf[js.Any], DEVICE_MANAGEMENT_FOUNDATION = DEVICE_MANAGEMENT_FOUNDATION.asInstanceOf[js.Any], DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES = DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES.asInstanceOf[js.Any], DEVICE_PORTAL_PROVIDER = DEVICE_PORTAL_PROVIDER.asInstanceOf[js.Any], DEVICE_UNLOCK = DEVICE_UNLOCK.asInstanceOf[js.Any], DOCUMENTS_LIBRARY = DOCUMENTS_LIBRARY.asInstanceOf[js.Any], DUAL_SIM_TILES = DUAL_SIM_TILES.asInstanceOf[js.Any], EMAIL = EMAIL.asInstanceOf[js.Any], EMAIL_SYSTEM = EMAIL_SYSTEM.asInstanceOf[js.Any], ENTERPRISE_AUTHENTICATION = ENTERPRISE_AUTHENTICATION.asInstanceOf[js.Any], ENTERPRISE_CLOUD_S_S_O = ENTERPRISE_CLOUD_S_S_O.asInstanceOf[js.Any], ENTERPRISE_DATA_POLICY = ENTERPRISE_DATA_POLICY.asInstanceOf[js.Any], ENTERPRISE_DEVICE_LOCKDOWN = ENTERPRISE_DEVICE_LOCKDOWN.asInstanceOf[js.Any], EXPANDED_RESOURCES = EXPANDED_RESOURCES.asInstanceOf[js.Any], EXTENDED_BACKGROUND_TASK_TIME = EXTENDED_BACKGROUND_TASK_TIME.asInstanceOf[js.Any], EXTENDED_EXECUTION_BACKGROUND_AUDIO = EXTENDED_EXECUTION_BACKGROUND_AUDIO.asInstanceOf[js.Any], EXTENDED_EXECUTION_CRITICAL = EXTENDED_EXECUTION_CRITICAL.asInstanceOf[js.Any], EXTENDED_EXECUTION_UNCONSTRAINED = EXTENDED_EXECUTION_UNCONSTRAINED.asInstanceOf[js.Any], FIRST_SIGN_IN_SETTINGS = FIRST_SIGN_IN_SETTINGS.asInstanceOf[js.Any], GAME_BAR_SERVICES = GAME_BAR_SERVICES.asInstanceOf[js.Any], GAME_LIST = GAME_LIST.asInstanceOf[js.Any], GAME_MONITOR = GAME_MONITOR.asInstanceOf[js.Any], GAZE_INPUT = GAZE_INPUT.asInstanceOf[js.Any], GLOBAL_MEDIA_CONTROL = GLOBAL_MEDIA_CONTROL.asInstanceOf[js.Any], HUMANINTERFACEDEVICE = HUMANINTERFACEDEVICE.asInstanceOf[js.Any], INPUT_FOREGROUND_OBSERVATION = INPUT_FOREGROUND_OBSERVATION.asInstanceOf[js.Any], INPUT_INJECTION_BROKERED = INPUT_INJECTION_BROKERED.asInstanceOf[js.Any], INPUT_OBSERVATION = INPUT_OBSERVATION.asInstanceOf[js.Any], INPUT_SUPPRESSION = INPUT_SUPPRESSION.asInstanceOf[js.Any], INTERNET_CLIENT = INTERNET_CLIENT.asInstanceOf[js.Any], INTERNET_CLIENT_SERVER = INTERNET_CLIENT_SERVER.asInstanceOf[js.Any], INTEROP_SERVICES = INTEROP_SERVICES.asInstanceOf[js.Any], IOT = IOT.asInstanceOf[js.Any], LOCAL_SYSTEM_SERVICES = LOCAL_SYSTEM_SERVICES.asInstanceOf[js.Any], LOCATION = LOCATION.asInstanceOf[js.Any], LOCATION_HISTORY = LOCATION_HISTORY.asInstanceOf[js.Any], LOCATION_SYSTEM = LOCATION_SYSTEM.asInstanceOf[js.Any], LOW_LEVEL = LOW_LEVEL.asInstanceOf[js.Any], LOW_LEVEL_DEVICES = LOW_LEVEL_DEVICES.asInstanceOf[js.Any], MICROPHONE = MICROPHONE.asInstanceOf[js.Any], MOBILE = MOBILE.asInstanceOf[js.Any], MODIFIABLE_APP = MODIFIABLE_APP.asInstanceOf[js.Any], MUSIC_LIBRARY = MUSIC_LIBRARY.asInstanceOf[js.Any], NETWORKING_VPN_PROVIDER = NETWORKING_VPN_PROVIDER.asInstanceOf[js.Any], NETWORK_CONNECTION_MANAGER_PROVISIONING = NETWORK_CONNECTION_MANAGER_PROVISIONING.asInstanceOf[js.Any], NETWORK_DATA_PLAN_PROVISIONING = NETWORK_DATA_PLAN_PROVISIONING.asInstanceOf[js.Any], NETWORK_DATA_USAGE_MANAGEMENT = NETWORK_DATA_USAGE_MANAGEMENT.asInstanceOf[js.Any], OEM_DEPLOYMENT = OEM_DEPLOYMENT.asInstanceOf[js.Any], OEM_PUBLIC_DIRECTORY = OEM_PUBLIC_DIRECTORY.asInstanceOf[js.Any], ONE_PROCESS_VOIP = ONE_PROCESS_VOIP.asInstanceOf[js.Any], OPTICAL = OPTICAL.asInstanceOf[js.Any], PACKAGED_SERVICES = PACKAGED_SERVICES.asInstanceOf[js.Any], PACKAGES_SERVICES = PACKAGES_SERVICES.asInstanceOf[js.Any], PACKAGE_MANAGEMENT = PACKAGE_MANAGEMENT.asInstanceOf[js.Any], PACKAGE_POLICY_SYSTEM = PACKAGE_POLICY_SYSTEM.asInstanceOf[js.Any], PACKAGE_QUERY = PACKAGE_QUERY.asInstanceOf[js.Any], PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM = PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM.asInstanceOf[js.Any], PHONE_CALL = PHONE_CALL.asInstanceOf[js.Any], PHONE_CALL_HISTORY = PHONE_CALL_HISTORY.asInstanceOf[js.Any], PHONE_CALL_HISTORY_SYSTEM = PHONE_CALL_HISTORY_SYSTEM.asInstanceOf[js.Any], PHONE_LINE_TRANSPORT_MANAGEMENT = PHONE_LINE_TRANSPORT_MANAGEMENT.asInstanceOf[js.Any], PICTURES_LIBRARY = PICTURES_LIBRARY.asInstanceOf[js.Any], POINT_OF_SERVICE = POINT_OF_SERVICE.asInstanceOf[js.Any], PREVIEW_INK_WORKSPACE = PREVIEW_INK_WORKSPACE.asInstanceOf[js.Any], PREVIEW_PEN_WORKSPACE = PREVIEW_PEN_WORKSPACE.asInstanceOf[js.Any], PREVIEW_STORE = PREVIEW_STORE.asInstanceOf[js.Any], PREVIEW_UI_COMPOSITION = PREVIEW_UI_COMPOSITION.asInstanceOf[js.Any], PRIVATE_NETWORK_CLIENT_SERVER = PRIVATE_NETWORK_CLIENT_SERVER.asInstanceOf[js.Any], PROTECTED_APP = PROTECTED_APP.asInstanceOf[js.Any], PROXIMITY = PROXIMITY.asInstanceOf[js.Any], RADIOS = RADIOS.asInstanceOf[js.Any], RECORDED_CALLS_FOLDER = RECORDED_CALLS_FOLDER.asInstanceOf[js.Any], REMOTE_PASSPORT_AUTHENTICATION = REMOTE_PASSPORT_AUTHENTICATION.asInstanceOf[js.Any], REMOTE_SYSTEM = REMOTE_SYSTEM.asInstanceOf[js.Any], REMOVABLE_STORAGE = REMOVABLE_STORAGE.asInstanceOf[js.Any], RESCAP = RESCAP.asInstanceOf[js.Any], RUN_FULL_TRUST = RUN_FULL_TRUST.asInstanceOf[js.Any], SCREEN_DUPLICATION = SCREEN_DUPLICATION.asInstanceOf[js.Any], SECONDARY_AUTHENTICATION_FACTOR = SECONDARY_AUTHENTICATION_FACTOR.asInstanceOf[js.Any], SECURE_ASSESSMENT = SECURE_ASSESSMENT.asInstanceOf[js.Any], SERIALCOMMUNICATION = SERIALCOMMUNICATION.asInstanceOf[js.Any], SHARED_USER_CERTIFICATES = SHARED_USER_CERTIFICATES.asInstanceOf[js.Any], SLAPI_QUERY_LICENSE_VALUE = SLAPI_QUERY_LICENSE_VALUE.asInstanceOf[js.Any], SMBIOS = SMBIOS.asInstanceOf[js.Any], SMS_SEND = SMS_SEND.asInstanceOf[js.Any], SPATIAL_PERCEPTION = SPATIAL_PERCEPTION.asInstanceOf[js.Any], START_SCREEN_MANAGEMENT = START_SCREEN_MANAGEMENT.asInstanceOf[js.Any], STORE_LICENSE_MANAGEMENT = STORE_LICENSE_MANAGEMENT.asInstanceOf[js.Any], SYSTEM_MANAGEMENT = SYSTEM_MANAGEMENT.asInstanceOf[js.Any], TARGETED_CONTENT = TARGETED_CONTENT.asInstanceOf[js.Any], TEAM_EDITION_DEVICE_CREDENTIAL = TEAM_EDITION_DEVICE_CREDENTIAL.asInstanceOf[js.Any], TEAM_EDITION_EXPERIENCE = TEAM_EDITION_EXPERIENCE.asInstanceOf[js.Any], TEAM_EDITION_VIEW = TEAM_EDITION_VIEW.asInstanceOf[js.Any], UAP = UAP.asInstanceOf[js.Any], UI_AUTOMATION = UI_AUTOMATION.asInstanceOf[js.Any], UNVIRTUALIZED_RESOURCES = UNVIRTUALIZED_RESOURCES.asInstanceOf[js.Any], USB = USB.asInstanceOf[js.Any], USER_ACCOUNT_INFORMATION = USER_ACCOUNT_INFORMATION.asInstanceOf[js.Any], USER_DATA_ACCOUNTS_PROVIDER = USER_DATA_ACCOUNTS_PROVIDER.asInstanceOf[js.Any], USER_DATA_SYSTEM = USER_DATA_SYSTEM.asInstanceOf[js.Any], USER_PRINCIPAL_NAME = USER_PRINCIPAL_NAME.asInstanceOf[js.Any], USER_SYSTEM_ID = USER_SYSTEM_ID.asInstanceOf[js.Any], VIDEOS_LIBRARY = VIDEOS_LIBRARY.asInstanceOf[js.Any], VOIP_CALL = VOIP_CALL.asInstanceOf[js.Any], WALLET_SYSTEM = WALLET_SYSTEM.asInstanceOf[js.Any], WEBCAM = WEBCAM.asInstanceOf[js.Any], WIFI_CONTROL = WIFI_CONTROL.asInstanceOf[js.Any], XBOX_ACCESSORY_MANAGEMENT = XBOX_ACCESSORY_MANAGEMENT.asInstanceOf[js.Any])
+    def apply(): WindowsPermissionMap = {
+      val __obj = js.Dynamic.literal(ACCESSORY_MANAGER = "windows.permission.accessoryManager", ACTIVITY = "windows.permission.activity", ALLOW_ELEVATION = "windows.permission.allowElevation", ALL_APP_MODS = "windows.permission.allAppMods", ALL_JOYN = "windows.permission.allJoyn", APPOINTMENTS = "windows.permission.appointments", APPOINTMENTS_SYSTEM = "windows.permission.appointmentsSystem", APP_BROADCAST_SERVICES = "windows.permission.appBroadcastServices", APP_CAPTURE_SERVICES = "windows.permission.appCaptureServices", APP_CAPTURE_SETTINGS = "windows.permission.appCaptureSettings", APP_DIAGNOSTICS = "windows.permission.appDiagnostics", APP_LICENSING = "windows.permission.appLicensing", AUDIO_DEVICE_CONFIGURATION = "windows.permission.audioDeviceConfiguration", BACKGROUND_MEDIA_PLAYBACK = "windows.permission.backgroundMediaPlayback", BACKGROUND_MEDIA_RECORDING = "windows.permission.backgroundMediaRecording", BACKGROUND_SPATIAL_PERCEPTION = "windows.permission.backgroundSpatialPerception", BACKGROUND_VOIP = "windows.permission.backgroundVoIP", BLOCKED_CHAT_MESSAGES = "windows.permission.blockedChatMessages", BLUETOOTH = "windows.permission.bluetooth", BROAD_FILE_SYSTEM_ACCESS = "windows.permission.broadFileSystemAccess", CAMERA_PROCESSING_EXTENSION = "windows.permission.cameraProcessingExtension", CELLULAR_DEVICE_CONTROL = "windows.permission.cellularDeviceControl", CELLULAR_DEVICE_IDENTITY = "windows.permission.cellularDeviceIdentity", CELLULAR_MESSAGING = "windows.permission.cellularMessaging", CHAT_SYSTEM = "windows.permission.chatSystem", CODE_GENERATION = "windows.permission.codeGeneration", CONFIRM_APP_CLOSE = "windows.permission.confirmAppClose", CONTACTS = "windows.permission.contacts", CONTACTS_SYSTEM = "windows.permission.contactsSystem", CORTANA_PERMISSIONS = "windows.permission.cortanaPermissions", CORTANA_SPEECH_ACCESSORY = "windows.permission.cortanaSpeechAccessory", CUSTOM_INSTALL_ACTIONS = "windows.permission.customInstallActions", DEVELOPMENT_MODE_NETWORK = "windows.permission.developmentModeNetwork", DEVICE_MANAGEMENT_DM_ACCOUNT = "windows.permission.deviceManagementDmAccount", DEVICE_MANAGEMENT_EMAIL_ACCOUNT = "windows.permission.deviceManagementEmailAccount", DEVICE_MANAGEMENT_FOUNDATION = "windows.permission.deviceManagementFoundation", DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES = "windows.permission.deviceManagementWapSecurityPolicies", DEVICE_PORTAL_PROVIDER = "windows.permission.devicePortalProvider", DEVICE_UNLOCK = "windows.permission.deviceUnlock", DOCUMENTS_LIBRARY = "windows.permission.documentsLibrary", DUAL_SIM_TILES = "windows.permission.dualSimTiles", EMAIL = "windows.permission.email", EMAIL_SYSTEM = "windows.permission.emailSystem", ENTERPRISE_AUTHENTICATION = "windows.permission.enterpriseAuthentication", ENTERPRISE_CLOUD_S_S_O = "windows.permission.enterpriseCloudSSO", ENTERPRISE_DATA_POLICY = "windows.permission.enterpriseDataPolicy", ENTERPRISE_DEVICE_LOCKDOWN = "windows.permission.enterpriseDeviceLockdown", EXPANDED_RESOURCES = "windows.permission.expandedResources", EXTENDED_BACKGROUND_TASK_TIME = "windows.permission.extendedBackgroundTaskTime", EXTENDED_EXECUTION_BACKGROUND_AUDIO = "windows.permission.extendedExecutionBackgroundAudio", EXTENDED_EXECUTION_CRITICAL = "windows.permission.extendedExecutionCritical", EXTENDED_EXECUTION_UNCONSTRAINED = "windows.permission.extendedExecutionUnconstrained", FIRST_SIGN_IN_SETTINGS = "windows.permission.firstSignInSettings", GAME_BAR_SERVICES = "windows.permission.gameBarServices", GAME_LIST = "windows.permission.gameList", GAME_MONITOR = "windows.permission.gameMonitor", GAZE_INPUT = "windows.permission.gazeInput", GLOBAL_MEDIA_CONTROL = "windows.permission.globalMediaControl", HUMANINTERFACEDEVICE = "windows.permission.humaninterfacedevice", INPUT_FOREGROUND_OBSERVATION = "windows.permission.inputForegroundObservation", INPUT_INJECTION_BROKERED = "windows.permission.inputInjectionBrokered", INPUT_OBSERVATION = "windows.permission.inputObservation", INPUT_SUPPRESSION = "windows.permission.inputSuppression", INTERNET_CLIENT = "windows.permission.internetClient", INTERNET_CLIENT_SERVER = "windows.permission.internetClientServer", INTEROP_SERVICES = "windows.permission.interopServices", IOT = "windows.permission.iot", LOCAL_SYSTEM_SERVICES = "windows.permission.localSystemServices", LOCATION = "windows.permission.location", LOCATION_HISTORY = "windows.permission.locationHistory", LOCATION_SYSTEM = "windows.permission.locationSystem", LOW_LEVEL = "windows.permission.lowLevel", LOW_LEVEL_DEVICES = "windows.permission.lowLevelDevices", MICROPHONE = "windows.permission.microphone", MOBILE = "windows.permission.mobile", MODIFIABLE_APP = "windows.permission.modifiableApp", MUSIC_LIBRARY = "windows.permission.musicLibrary", NETWORKING_VPN_PROVIDER = "windows.permission.networkingVpnProvider", NETWORK_CONNECTION_MANAGER_PROVISIONING = "windows.permission.networkConnectionManagerProvisioning", NETWORK_DATA_PLAN_PROVISIONING = "windows.permission.networkDataPlanProvisioning", NETWORK_DATA_USAGE_MANAGEMENT = "windows.permission.networkDataUsageManagement", OEM_DEPLOYMENT = "windows.permission.oemDeployment", OEM_PUBLIC_DIRECTORY = "windows.permission.oemPublicDirectory", ONE_PROCESS_VOIP = "windows.permission.oneProcessVoIP", OPTICAL = "windows.permission.optical", PACKAGED_SERVICES = "windows.permission.packagedServices", PACKAGES_SERVICES = "windows.permission.packagesServices", PACKAGE_MANAGEMENT = "windows.permission.packageManagement", PACKAGE_POLICY_SYSTEM = "windows.permission.packagePolicySystem", PACKAGE_QUERY = "windows.permission.packageQuery", PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM = "windows.permission.packageWriteRedirectionCompatibilityShim", PHONE_CALL = "windows.permission.phoneCall", PHONE_CALL_HISTORY = "windows.permission.phoneCallHistory", PHONE_CALL_HISTORY_SYSTEM = "windows.permission.phoneCallHistorySystem", PHONE_LINE_TRANSPORT_MANAGEMENT = "windows.permission.phoneLineTransportManagement", PICTURES_LIBRARY = "windows.permission.picturesLibrary", POINT_OF_SERVICE = "windows.permission.pointOfService", PREVIEW_INK_WORKSPACE = "windows.permission.previewInkWorkspace", PREVIEW_PEN_WORKSPACE = "windows.permission.previewPenWorkspace", PREVIEW_STORE = "windows.permission.previewStore", PREVIEW_UI_COMPOSITION = "windows.permission.previewUiComposition", PRIVATE_NETWORK_CLIENT_SERVER = "windows.permission.privateNetworkClientServer", PROTECTED_APP = "windows.permission.protectedApp", PROXIMITY = "windows.permission.proximity", RADIOS = "windows.permission.radios", RECORDED_CALLS_FOLDER = "windows.permission.recordedCallsFolder", REMOTE_PASSPORT_AUTHENTICATION = "windows.permission.remotePassportAuthentication", REMOTE_SYSTEM = "windows.permission.remoteSystem", REMOVABLE_STORAGE = "windows.permission.removableStorage", RESCAP = "windows.permission.rescap", RUN_FULL_TRUST = "windows.permission.runFullTrust", SCREEN_DUPLICATION = "windows.permission.screenDuplication", SECONDARY_AUTHENTICATION_FACTOR = "windows.permission.secondaryAuthenticationFactor", SECURE_ASSESSMENT = "windows.permission.secureAssessment", SERIALCOMMUNICATION = "windows.permission.serialcommunication", SHARED_USER_CERTIFICATES = "windows.permission.sharedUserCertificates", SLAPI_QUERY_LICENSE_VALUE = "windows.permission.slapiQueryLicenseValue", SMBIOS = "windows.permission.smbios", SMS_SEND = "windows.permission.smsSend", SPATIAL_PERCEPTION = "windows.permission.spatialPerception", START_SCREEN_MANAGEMENT = "windows.permission.startScreenManagement", STORE_LICENSE_MANAGEMENT = "windows.permission.storeLicenseManagement", SYSTEM_MANAGEMENT = "windows.permission.systemManagement", TARGETED_CONTENT = "windows.permission.targetedContent", TEAM_EDITION_DEVICE_CREDENTIAL = "windows.permission.teamEditionDeviceCredential", TEAM_EDITION_EXPERIENCE = "windows.permission.teamEditionExperience", TEAM_EDITION_VIEW = "windows.permission.teamEditionView", UAP = "windows.permission.uap", UI_AUTOMATION = "windows.permission.uiAutomation", UNVIRTUALIZED_RESOURCES = "windows.permission.unvirtualizedResources", USB = "windows.permission.usb", USER_ACCOUNT_INFORMATION = "windows.permission.userAccountInformation", USER_DATA_ACCOUNTS_PROVIDER = "windows.permission.userDataAccountsProvider", USER_DATA_SYSTEM = "windows.permission.userDataSystem", USER_PRINCIPAL_NAME = "windows.permission.userPrincipalName", USER_SYSTEM_ID = "windows.permission.userSystemId", VIDEOS_LIBRARY = "windows.permission.videosLibrary", VOIP_CALL = "windows.permission.voipCall", WALLET_SYSTEM = "windows.permission.walletSystem", WEBCAM = "windows.permission.webcam", WIFI_CONTROL = "windows.permission.wiFiControl", XBOX_ACCESSORY_MANAGEMENT = "windows.permission.xboxAccessoryManagement")
       __obj.asInstanceOf[WindowsPermissionMap]
     }
     

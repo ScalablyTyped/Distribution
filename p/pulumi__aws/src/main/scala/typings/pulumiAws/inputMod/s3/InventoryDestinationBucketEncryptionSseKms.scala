@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryDestinationBucketEncryptionSseKms extends StObject {
   
   /**
     * The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
     */
-  var keyId: Input[String] = js.native
+  var keyId: Input[String]
 }
 object InventoryDestinationBucketEncryptionSseKms {
   

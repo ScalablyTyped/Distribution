@@ -4,11 +4,12 @@ import typings.std.RegExp
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocument extends ConfigurationScope {
+trait TextDocument
+  extends StObject
+     with ConfigurationScope {
   
   /**
     * The [end of line](#EndOfLine) sequence that is predominately

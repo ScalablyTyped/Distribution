@@ -2,11 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewPropsIOS extends TVViewPropsIOS {
+trait ViewPropsIOS
+  extends StObject
+     with TVViewPropsIOS {
   
   /**
     * Whether this view should be rendered as a bitmap before compositing.
@@ -18,7 +18,7 @@ trait ViewPropsIOS extends TVViewPropsIOS {
     * Rasterization incurs an off-screen drawing pass and the bitmap consumes memory.
     * Test and measure when using this property.
     */
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
 }
 object ViewPropsIOS {
   

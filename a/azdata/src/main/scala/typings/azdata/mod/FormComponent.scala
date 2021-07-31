@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormComponent extends StObject {
   
-  var actions: js.UndefOr[js.Array[Component]] = js.native
+  var actions: js.UndefOr[js.Array[Component]] = js.undefined
   
-  var component: Component = js.native
+  var component: Component
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object FormComponent {
   

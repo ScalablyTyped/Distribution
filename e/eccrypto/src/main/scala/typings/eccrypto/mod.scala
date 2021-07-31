@@ -4,56 +4,49 @@ import typings.eccrypto.anon.EphemPrivateKey
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("eccrypto", "decrypt")
+  @JSImport("eccrypto", JSImport.Namespace)
   @js.native
-  def decrypt(privateKey: Buffer, opts: Ecies): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("eccrypto", "derive")
-  @js.native
-  def derive(privateKeyA: Buffer, publicKeyB: Buffer): js.Promise[Buffer] = js.native
+  @scala.inline
+  def decrypt(privateKey: Buffer, opts: Ecies): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(privateKey.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("eccrypto", "encrypt")
-  @js.native
-  def encrypt(publicKeyTo: Buffer, msg: Buffer): js.Promise[Ecies] = js.native
-  @JSImport("eccrypto", "encrypt")
-  @js.native
-  def encrypt(publicKeyTo: Buffer, msg: Buffer, opts: EphemPrivateKey): js.Promise[Ecies] = js.native
+  @scala.inline
+  def derive(privateKeyA: Buffer, publicKeyB: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(privateKeyA.asInstanceOf[js.Any], publicKeyB.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("eccrypto", "generatePrivate")
-  @js.native
-  def generatePrivate(): Buffer = js.native
+  @scala.inline
+  def encrypt(publicKeyTo: Buffer, msg: Buffer): js.Promise[Ecies] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(publicKeyTo.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ecies]]
+  @scala.inline
+  def encrypt(publicKeyTo: Buffer, msg: Buffer, opts: EphemPrivateKey): js.Promise[Ecies] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(publicKeyTo.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ecies]]
   
-  @JSImport("eccrypto", "getPublic")
-  @js.native
-  def getPublic(privateKey: Buffer): Buffer = js.native
+  @scala.inline
+  def generatePrivate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePrivate")().asInstanceOf[Buffer]
   
-  @JSImport("eccrypto", "getPublicCompressed")
-  @js.native
-  def getPublicCompressed(privateKey: Buffer): Buffer = js.native
+  @scala.inline
+  def getPublic(privateKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublic")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("eccrypto", "sign")
-  @js.native
-  def sign(key: Buffer, msg: Buffer): js.Promise[Buffer] = js.native
+  @scala.inline
+  def getPublicCompressed(privateKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicCompressed")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("eccrypto", "verify")
-  @js.native
-  def verify(publicKey: Buffer, msg: Buffer, sig: Buffer): js.Promise[Null] = js.native
+  @scala.inline
+  def sign(key: Buffer, msg: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(key.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @js.native
+  @scala.inline
+  def verify(publicKey: Buffer, msg: Buffer, sig: Buffer): js.Promise[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(publicKey.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], sig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null]]
+  
   trait Ecies extends StObject {
     
-    var ciphertext: Buffer = js.native
+    var ciphertext: Buffer
     
-    var ephemPublicKey: Buffer = js.native
+    var ephemPublicKey: Buffer
     
-    var iv: Buffer = js.native
+    var iv: Buffer
     
-    var mac: Buffer = js.native
+    var mac: Buffer
   }
   object Ecies {
     

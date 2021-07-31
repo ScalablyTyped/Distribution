@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SimpleSelectItem extends StObject {
   
   /**
     * Item key and synonyms.
     */
-  var optionInfo: js.UndefOr[GoogleActionsV2OptionInfo] = js.native
+  var optionInfo: js.UndefOr[GoogleActionsV2OptionInfo] = js.undefined
   
   /**
     * Title of the item. It will act as synonym if it's provided.
     * Optional
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2SimpleSelectItem {
   

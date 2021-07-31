@@ -8,11 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DensifyParameters extends Accessor {
+trait DensifyParameters
+  extends StObject
+     with Accessor {
   
   /**
     * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.

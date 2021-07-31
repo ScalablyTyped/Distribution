@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scte35TimeSignalScheduleActionSettings extends StObject {
   
   /**
     * The list of SCTE-35 descriptors accompanying the SCTE-35 time_signal.
     */
-  var Scte35Descriptors: listOfScte35Descriptor = js.native
+  var Scte35Descriptors: listOfScte35Descriptor
 }
 object Scte35TimeSignalScheduleActionSettings {
   

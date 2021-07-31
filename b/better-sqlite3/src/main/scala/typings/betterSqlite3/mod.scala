@@ -11,7 +11,6 @@ import typings.std.IterableIterator
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,13 +19,14 @@ object mod extends Shortcut {
   @JSImport("better-sqlite3", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.betterSqlite3.mod.BetterSqlite3.Database {
+    extends StObject
+       with typings.betterSqlite3.mod.BetterSqlite3.Database {
     def this(filename: String) = this()
     def this(filename: String, options: Options) = this()
   }
   @JSImport("better-sqlite3", JSImport.Namespace)
   @js.native
-  val ^ : DatabaseConstructor = js.native
+  val ^ : js.Object & DatabaseConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -36,16 +36,17 @@ object mod extends Shortcut {
     def this(message: String, code: String) = this()
   }
   
-  @js.native
-  trait AggregateOptions extends RegistrationOptions {
+  trait AggregateOptions
+    extends StObject
+       with RegistrationOptions {
     
-    var inverse: js.UndefOr[js.Function2[/* total */ js.Any, /* dropped */ js.Any, _]] = js.native
+    var inverse: js.UndefOr[js.Function2[/* total */ js.Any, /* dropped */ js.Any, js.Any]] = js.undefined
     
-    var result: js.UndefOr[js.Function1[/* total */ js.Any, _]] = js.native
+    var result: js.UndefOr[js.Function1[/* total */ js.Any, js.Any]] = js.undefined
     
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
     
-    def step(total: js.Any, next: js.Any): js.Any = js.native
+    def step(total: js.Any, next: js.Any): js.Any
   }
   object AggregateOptions {
     
@@ -59,13 +60,13 @@ object mod extends Shortcut {
     implicit class AggregateOptionsMutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInverse(value: (/* total */ js.Any, /* dropped */ js.Any) => _): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+      def setInverse(value: (/* total */ js.Any, /* dropped */ js.Any) => js.Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
       @scala.inline
-      def setResult(value: /* total */ js.Any => _): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
+      def setResult(value: /* total */ js.Any => js.Any): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -83,12 +84,11 @@ object mod extends Shortcut {
   
   type ArgumentTypes[F /* <: VariableArgFunction */] = js.Any
   
-  @js.native
   trait BackupMetadata extends StObject {
     
-    var remainingPages: Double = js.native
+    var remainingPages: Double
     
-    var totalPages: Double = js.native
+    var totalPages: Double
   }
   object BackupMetadata {
     
@@ -109,10 +109,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait BackupOptions extends StObject {
     
-    def progress(info: BackupMetadata): Double = js.native
+    def progress(info: BackupMetadata): Double
   }
   object BackupOptions {
     
@@ -132,24 +131,24 @@ object mod extends Shortcut {
   
   object BetterSqlite3 {
     
-    @js.native
     trait ColumnDefinition extends StObject {
       
-      var column: String | Null = js.native
+      var column: String | Null
       
-      var database: String | Null = js.native
+      var database: String | Null
       
-      var name: String = js.native
+      var name: String
       
-      var table: String | Null = js.native
+      var table: String | Null
       
-      var `type`: String | Null = js.native
+      var `type`: String | Null
     }
     object ColumnDefinition {
       
       @scala.inline
       def apply(name: String): typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition = {
-        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], column = null, database = null, table = null)
+        __obj.updateDynamic("type")(null)
         __obj.asInstanceOf[typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition]
       }
       
@@ -203,8 +202,8 @@ object mod extends Shortcut {
       
       def exec(source: String): this.type = js.native
       
-      def function(name: String, cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
-      def function(name: String, options: RegistrationOptions, cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+      def function(name: String, cb: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+      def function(name: String, options: RegistrationOptions, cb: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
       
       var inTransaction: Boolean = js.native
       
@@ -219,7 +218,7 @@ object mod extends Shortcut {
       def pragma(source: String): js.Any = js.native
       def pragma(source: String, options: PragmaOptions): js.Any = js.native
       
-      def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: String): typings.betterSqlite3.mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
+      def prepare[BindParameters /* <: js.Array[js.Any] | js.Object */](source: String): typings.betterSqlite3.mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
       
       var readonly: Boolean = js.native
       
@@ -228,7 +227,8 @@ object mod extends Shortcut {
     
     @js.native
     trait DatabaseConstructor
-      extends Instantiable1[/* filename */ String, typings.betterSqlite3.mod.BetterSqlite3.Database]
+      extends StObject
+         with Instantiable1[/* filename */ String, typings.betterSqlite3.mod.BetterSqlite3.Database]
          with Instantiable2[
               /* filename */ String, 
               /* options */ Options, 
@@ -246,11 +246,11 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait Statement[BindParameters /* <: js.Array[_] */] extends StObject {
+    trait Statement[BindParameters /* <: js.Array[js.Any] */] extends StObject {
       
       def all(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
-      ): js.Array[_] = js.native
+      ): js.Array[js.Any] = js.native
       
       def bind(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
@@ -269,7 +269,7 @@ object mod extends Shortcut {
       
       def iterate(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
-      ): IterableIterator[_] = js.native
+      ): IterableIterator[js.Any] = js.native
       
       def pluck(): this.type = js.native
       def pluck(toggleState: Boolean): this.type = js.native
@@ -320,18 +320,17 @@ object mod extends Shortcut {
   
   type Integer = js.Function1[/* val */ IntLike, IntClass]
   
-  @js.native
   trait Options extends StObject {
     
-    var fileMustExist: js.UndefOr[Boolean] = js.native
+    var fileMustExist: js.UndefOr[Boolean] = js.undefined
     
-    var memory: js.UndefOr[Boolean] = js.native
+    var memory: js.UndefOr[Boolean] = js.undefined
     
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]] = js.native
+    var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]] = js.undefined
   }
   object Options {
     
@@ -376,10 +375,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PragmaOptions extends StObject {
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
   }
   object PragmaOptions {
     
@@ -400,14 +398,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RegistrationOptions extends StObject {
     
-    var deterministic: js.UndefOr[Boolean] = js.native
+    var deterministic: js.UndefOr[Boolean] = js.undefined
     
-    var safeIntegers: js.UndefOr[Boolean] = js.native
+    var safeIntegers: js.UndefOr[Boolean] = js.undefined
     
-    var varargs: js.UndefOr[Boolean] = js.native
+    var varargs: js.UndefOr[Boolean] = js.undefined
   }
   object RegistrationOptions {
     
@@ -440,12 +437,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RunResult extends StObject {
     
-    var changes: Double = js.native
+    var changes: Double
     
-    var lastInsertRowid: IntLike = js.native
+    var lastInsertRowid: IntLike
   }
   object RunResult {
     
@@ -466,10 +462,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SqliteError extends Error {
+  trait SqliteError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
   }
   object SqliteError {
     
@@ -487,14 +484,18 @@ object mod extends Shortcut {
     }
   }
   
-  type Statement[BindParameters /* <: js.Array[_] | js.Object */] = typings.betterSqlite3.mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
+  type Statement[BindParameters /* <: js.Array[js.Any] | js.Object */] = typings.betterSqlite3.mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
   
   type Transaction = typings.betterSqlite3.mod.BetterSqlite3.Transaction[VariableArgFunction]
   
-  type VariableArgFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait VariableArgFunction extends StObject {
+    
+    def apply(params: js.Any*): js.Any = js.native
+  }
   
-  type _To = DatabaseConstructor
+  type _To = js.Object & DatabaseConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: DatabaseConstructor = ^
+  override def _to: js.Object & DatabaseConstructor = ^
 }

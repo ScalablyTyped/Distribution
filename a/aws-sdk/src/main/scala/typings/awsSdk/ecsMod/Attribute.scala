@@ -2,31 +2,29 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * The name of the attribute. The name must contain between 1 and 128 characters and name may contain letters (uppercase and lowercase), numbers, hyphens, underscores, forward slashes, back slashes, or periods.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The ID of the target. You can specify the short form ID for a resource or the full Amazon Resource Name (ARN).
     */
-  var targetId: js.UndefOr[String] = js.native
+  var targetId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the target with which to attach the attribute. This parameter is required if you use the short form ID for a resource instead of the full ARN.
     */
-  var targetType: js.UndefOr[TargetType] = js.native
+  var targetType: js.UndefOr[TargetType] = js.undefined
   
   /**
     * The value of the attribute. The value must contain between 1 and 128 characters and may contain letters (uppercase and lowercase), numbers, hyphens, underscores, periods, at signs (@), forward slashes, back slashes, colons, or spaces. The value cannot contain any leading or trailing whitespace.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Attribute {
   

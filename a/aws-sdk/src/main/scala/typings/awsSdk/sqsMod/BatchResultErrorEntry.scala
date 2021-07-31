@@ -2,31 +2,29 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchResultErrorEntry extends StObject {
   
   /**
     * An error code representing why the action failed on this entry.
     */
-  var Code: String = js.native
+  var Code: String
   
   /**
     * The Id of an entry in a batch request.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * A message explaining why the action failed on this entry.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the error happened due to the caller of the batch API action.
     */
-  var SenderFault: Boolean = js.native
+  var SenderFault: Boolean
 }
 object BatchResultErrorEntry {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainConfigurationRequest extends StObject {
   
   /**
     * An object that specifies the authorization service for a domain.
     */
-  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.native
+  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.undefined
   
   /**
     * The name of the domain configuration to be updated.
     */
-  var domainConfigurationName: ReservedDomainConfigurationName = js.native
+  var domainConfigurationName: ReservedDomainConfigurationName
   
   /**
     * The status to which the domain configuration should be updated.
     */
-  var domainConfigurationStatus: js.UndefOr[DomainConfigurationStatus] = js.native
+  var domainConfigurationStatus: js.UndefOr[DomainConfigurationStatus] = js.undefined
   
   /**
     * Removes the authorization configuration from a domain.
     */
-  var removeAuthorizerConfig: js.UndefOr[RemoveAuthorizerConfig] = js.native
+  var removeAuthorizerConfig: js.UndefOr[RemoveAuthorizerConfig] = js.undefined
 }
 object UpdateDomainConfigurationRequest {
   

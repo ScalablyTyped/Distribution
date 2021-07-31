@@ -2,19 +2,17 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait clipbuffer extends StObject {
   
-  def destructor(): Unit = js.native
+  def destructor(): Unit
   
-  def focus(): Unit = js.native
+  def focus(): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def set(text: String): Unit = js.native
+  def set(text: String): Unit
 }
 object clipbuffer {
   

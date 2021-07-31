@@ -9,7 +9,6 @@ import typings.std.Blob
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,61 +25,60 @@ trait CCapture extends StObject {
 }
 object CCapture {
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * It will automatically download the captured data every n seconds (only available for webm/png/jpg)
       */
-    var autoSaveTime: js.UndefOr[Double] = js.native
+    var autoSaveTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Adds a widget with capturing info
       */
-    var display: js.UndefOr[Boolean] = js.native
+    var display: js.UndefOr[Boolean] = js.undefined
     
-    var format: webm | gif | png | jpg | ffmpegserver = js.native
+    var format: webm | gif | png | jpg | ffmpegserver
     
     /**
       * Target framerate for the capture
       */
-    var framerate: js.UndefOr[Double] = js.native
+    var framerate: js.UndefOr[Double] = js.undefined
     
     /**
       * Super-sampling of frames to create a motion-blurred frame (0 or 1 make no effect)
       */
-    var motionBlurFrames: js.UndefOr[Double] = js.native
+    var motionBlurFrames: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of the files to be exported. if no name is provided, a GUID will be generated
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Quality for webm/jpg
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * Skip to that mark (seconds)
       */
-    var startTime: js.UndefOr[Double] = js.native
+    var startTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Automatically stops and downloads when reaching that time (seconds).
       * Very convenient for long captures: set it and forget it (remember autoSaveTime!)
       */
-    var timeLimit: js.UndefOr[Double] = js.native
+    var timeLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Dumps info on the console
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path to the gif worker script
       */
-    var workersPath: js.UndefOr[String] = js.native
+    var workersPath: js.UndefOr[String] = js.undefined
   }
   object Settings {
     

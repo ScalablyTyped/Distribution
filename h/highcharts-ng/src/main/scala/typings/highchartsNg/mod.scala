@@ -6,7 +6,6 @@ import typings.highchartsNg.anon.Height
 import typings.highchartsNg.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,11 +13,12 @@ object mod {
   object global {
     
     //Instantiated Chart
-    @js.native
-    trait HighChartsNGChart extends HighChartsNGConfig {
+    trait HighChartsNGChart
+      extends StObject
+         with HighChartsNGConfig {
       
       //This is a simple way to access all the Highcharts API that is not currently managed by this directive.
-      def getHighcharts(): js.Any = js.native
+      def getHighcharts(): js.Any
     }
     object HighChartsNGChart {
       
@@ -36,7 +36,6 @@ object mod {
       }
     }
     
-    @js.native
     trait HighChartsNGConfig extends StObject {
       
       //function (optional) - setup some logic for the chart
@@ -45,37 +44,37 @@ object mod {
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       //Boolean to control showng loading status on chart (optional)
       //Could be a string if you want to show specific loading text.
-      var loading: js.UndefOr[Boolean | String] = js.native
+      var loading: js.UndefOr[Boolean | String] = js.undefined
       
       //no data text (optional) to show if all series are empty
-      var noData: js.UndefOr[String] = js.native
+      var noData: js.UndefOr[String] = js.undefined
       
-      var options: Options = js.native
+      var options: Options
       
       //The below properties are watched separately for changes.
       //Series object (optional) - a list of series using normal highcharts series options.
       var series: js.UndefOr[
             js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any
             ]
-          ] = js.native
+          ] = js.undefined
       
       //size (optional) if left out the chart will default to size of the div or something sensible.
-      var size: js.UndefOr[Height] = js.native
+      var size: js.UndefOr[Height] = js.undefined
       
       //Title configuration (optional)
-      var title: js.UndefOr[Text] = js.native
+      var title: js.UndefOr[Text] = js.undefined
       
       //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
-      var useHighStocks: js.UndefOr[Boolean] = js.native
+      var useHighStocks: js.UndefOr[Boolean] = js.undefined
       
       //Configuration for the xAxis (optional). Currently only one x axis can be dynamically controlled.
       //properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
-      var xAxis: js.UndefOr[CurrentMax] = js.native
+      var xAxis: js.UndefOr[CurrentMax] = js.undefined
     }
     object HighChartsNGConfig {
       
@@ -114,7 +113,7 @@ object mod {
         @scala.inline
         def setSeries(
           value: js.Array[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any
                 ]
         ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
         
@@ -122,7 +121,9 @@ object mod {
         def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
         @scala.inline
-        def setSeriesVarargs(value: js.Any*): Self = StObject.set(x, "series", js.Array(value :_*))
+        def setSeriesVarargs(
+          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any)*
+        ): Self = StObject.set(x, "series", js.Array(value :_*))
         
         @scala.inline
         def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])

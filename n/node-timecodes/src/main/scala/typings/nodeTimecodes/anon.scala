@@ -2,15 +2,13 @@ package typings.nodeTimecodes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Framerate extends StObject {
     
-    var framerate: Double = js.native
+    var framerate: Double
   }
   object Framerate {
     

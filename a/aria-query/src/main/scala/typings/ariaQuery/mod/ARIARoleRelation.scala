@@ -2,15 +2,13 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIARoleRelation extends StObject {
   
-  var concept: js.UndefOr[ARIARoleRelationConcept] = js.native
+  var concept: js.UndefOr[ARIARoleRelationConcept] = js.undefined
   
-  var module: js.UndefOr[String] = js.native
+  var module: js.UndefOr[String] = js.undefined
 }
 object ARIARoleRelation {
   

@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationListGroup extends NotificationListBase {
+trait NotificationListGroup
+  extends StObject
+     with NotificationListBase {
   
   /**
     * Adds some item to the aggregation <code>items</code>.

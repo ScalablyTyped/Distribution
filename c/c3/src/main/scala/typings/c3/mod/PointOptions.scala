@@ -4,33 +4,31 @@ import typings.c3.anon.ExpandEnabled
 import typings.c3.anon.R
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointOptions extends StObject {
   
-  var focus: js.UndefOr[ExpandEnabled] = js.native
+  var focus: js.UndefOr[ExpandEnabled] = js.undefined
   
   /**
     * The radius size of each point.
     * Defaults to `2.5`. If it's a function, will call for each point.
     */
-  var r: js.UndefOr[Double | (js.ThisFunction1[/* this */ ChartInternal, /* d */ DataPoint, Double])] = js.native
+  var r: js.UndefOr[Double | (js.ThisFunction1[/* this */ ChartInternal, /* d */ DataPoint, Double])] = js.undefined
   
-  var select: js.UndefOr[R] = js.native
+  var select: js.UndefOr[R] = js.undefined
   
   /**
     * How sensitive is each point to mouse cursor hover.
     * Defaults to `10`.
     */
-  var sensitivity: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to show each point in line.
     * Defaults to `true`.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object PointOptions {
   

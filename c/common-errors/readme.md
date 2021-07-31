@@ -11,8 +11,8 @@ Common error classes and utility functions
 | Full name          | common-errors |
 | Keywords           | error, errors, common errors, exception, exceptions, validation, standard, argument, null, database, data, mysql, sql, db, memcached, redis, transaction, rollback, connection, status codes, log, crash, error handler |
 | # releases         | 3 |
-| # dependents       | 73 |
-| # downloads        | 740924 |
+| # dependents       | 75 |
+| # downloads        | 353992 |
 | # stars            | 20 |
 
 ## Links

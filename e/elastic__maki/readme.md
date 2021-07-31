@@ -12,7 +12,7 @@ Pixel-perfect icons for web cartography
 | Keywords           | map, icon, poi, svg |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 92382 |
+| # downloads        | 108897 |
 | # stars            | 0 |
 
 ## Links

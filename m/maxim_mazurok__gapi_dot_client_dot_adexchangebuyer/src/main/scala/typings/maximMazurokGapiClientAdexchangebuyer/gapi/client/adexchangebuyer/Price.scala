@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Price extends StObject {
   
   /** The price value in micros. */
-  var amountMicros: js.UndefOr[Double] = js.native
+  var amountMicros: js.UndefOr[Double] = js.undefined
   
   /** The currency code for the price. */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /** In case of CPD deals, the expected CPM in micros. */
-  var expectedCpmMicros: js.UndefOr[Double] = js.native
+  var expectedCpmMicros: js.UndefOr[Double] = js.undefined
   
   /** The pricing type for the deal/product. */
-  var pricingType: js.UndefOr[String] = js.native
+  var pricingType: js.UndefOr[String] = js.undefined
 }
 object Price {
   

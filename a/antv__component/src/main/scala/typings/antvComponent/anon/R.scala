@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R extends StObject {
   
-  var r: Double = js.native
+  var r: Double
   
-  var symbol: String = js.native
+  var symbol: String
 }
 object R {
   

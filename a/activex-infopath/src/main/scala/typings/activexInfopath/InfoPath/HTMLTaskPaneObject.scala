@@ -4,24 +4,60 @@ import typings.activexMshtml.MSHTML.IHTMLDocument2
 import typings.activexMshtml.MSHTML.IHTMLWindow2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLTaskPaneObject extends StObject {
   
-  val HTMLDocument: IHTMLDocument2 = js.native
+  val HTMLDocument: IHTMLDocument2
   
-  def HTMLWindow(pvarIndex: js.Any): js.Any = js.native
+  def HTMLWindow(pvarIndex: js.Any): js.Any
   @JSName("HTMLWindow")
-  val HTMLWindow_Original: IHTMLWindow2 = js.native
+  val HTMLWindow_Original: IHTMLWindow2
   
   @JSName("InfoPath.HTMLTaskPaneObject_typekey")
-  var InfoPathDotHTMLTaskPaneObject_typekey: HTMLTaskPaneObject = js.native
+  var InfoPathDotHTMLTaskPaneObject_typekey: HTMLTaskPaneObject
   
-  def Navigate(bstrURL: String): Unit = js.native
+  def Navigate(bstrURL: String): Unit
   
-  val Type: XdTaskPaneType = js.native
+  val Type: XdTaskPaneType
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
+}
+object HTMLTaskPaneObject {
+  
+  @scala.inline
+  def apply(
+    HTMLDocument: IHTMLDocument2,
+    HTMLWindow: IHTMLWindow2,
+    InfoPathDotHTMLTaskPaneObject_typekey: HTMLTaskPaneObject,
+    Navigate: String => Unit,
+    Type: XdTaskPaneType,
+    Visible: Boolean
+  ): HTMLTaskPaneObject = {
+    val __obj = js.Dynamic.literal(HTMLDocument = HTMLDocument.asInstanceOf[js.Any], HTMLWindow = HTMLWindow.asInstanceOf[js.Any], Navigate = js.Any.fromFunction1(Navigate), Type = Type.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.HTMLTaskPaneObject_typekey")(InfoPathDotHTMLTaskPaneObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HTMLTaskPaneObject]
+  }
+  
+  @scala.inline
+  implicit class HTMLTaskPaneObjectMutableBuilder[Self <: HTMLTaskPaneObject] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setHTMLDocument(value: IHTMLDocument2): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHTMLWindow(value: IHTMLWindow2): Self = StObject.set(x, "HTMLWindow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInfoPathDotHTMLTaskPaneObject_typekey(value: HTMLTaskPaneObject): Self = StObject.set(x, "InfoPath.HTMLTaskPaneObject_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNavigate(value: String => Unit): Self = StObject.set(x, "Navigate", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setType(value: XdTaskPaneType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+  }
 }

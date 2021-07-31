@@ -13,7 +13,6 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,9 @@ object mod {
   val ^ : js.Any = js.native
   
   @js.native
-  trait Advertisement extends EventEmitter {
+  trait Advertisement
+    extends StObject
+       with EventEmitter {
     
     def start(): Unit = js.native
     
@@ -37,13 +38,15 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "Advertisement")
   @js.native
-  class AdvertisementCls protected () extends Advertisement {
+  class AdvertisementCls protected ()
+    extends StObject
+       with Advertisement {
     def this(serviceType: ServiceType, port: Double) = this()
     def this(serviceType: ServiceType, port: Double, options: AdvertisementOptions) = this()
     def this(
       serviceType: ServiceType,
       port: Double,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
     ) = this()
     def this(
@@ -58,7 +61,9 @@ object mod {
   def Advertisement_=(x: AdvertisementCreatable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Advertisement")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait Browser extends EventEmitter {
+  trait Browser
+    extends StObject
+       with EventEmitter {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
@@ -77,7 +82,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "Browser")
   @js.native
-  class BrowserCls protected () extends Browser {
+  class BrowserCls protected ()
+    extends StObject
+       with Browser {
     def this(serviceType: ServiceType) = this()
     def this(serviceType: ServiceType, options: BrowserOptions) = this()
   }
@@ -87,7 +94,8 @@ object mod {
   
   @js.native
   trait ServiceType
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           (/* serviceTypeIdentifier */ js.Array[String]) | (/* serviceTypeIdentifier */ Name) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ String), 
           ServiceType
         ]
@@ -122,7 +130,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "ServiceType")
   @js.native
-  class ServiceTypeCls protected () extends ServiceType {
+  class ServiceTypeCls protected ()
+    extends StObject
+       with ServiceType {
     def this(serviceTypeIdentifier: String) = this()
     def this(serviceTypeIdentifier: js.Array[String]) = this()
     def this(serviceTypeIdentifier: Name) = this()
@@ -141,39 +151,32 @@ object mod {
   @scala.inline
   def _DNS_SD_H_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DNS_SD_H")(x.asInstanceOf[js.Any])
   
-  @JSImport("mdns", "browseThemAll")
-  @js.native
-  def browseThemAll(options: BrowserOptions): Browser = js.native
+  @scala.inline
+  def browseThemAll(options: BrowserOptions): Browser = ^.asInstanceOf[js.Dynamic].applyDynamic("browseThemAll")(options.asInstanceOf[js.Any]).asInstanceOf[Browser]
   
-  @JSImport("mdns", "createAdvertisement")
-  @js.native
-  def createAdvertisement(serviceType: ServiceType, port: Double): Advertisement = js.native
-  @JSImport("mdns", "createAdvertisement")
-  @js.native
+  @scala.inline
+  def createAdvertisement(serviceType: ServiceType, port: Double): Advertisement = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdvertisement")(serviceType.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Advertisement]
+  @scala.inline
   def createAdvertisement(
     serviceType: ServiceType,
     port: Double,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Advertisement = js.native
-  @JSImport("mdns", "createAdvertisement")
-  @js.native
-  def createAdvertisement(serviceType: ServiceType, port: Double, options: AdvertisementOptions): Advertisement = js.native
-  @JSImport("mdns", "createAdvertisement")
-  @js.native
+  ): Advertisement = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdvertisement")(serviceType.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Advertisement]
+  @scala.inline
+  def createAdvertisement(serviceType: ServiceType, port: Double, options: AdvertisementOptions): Advertisement = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdvertisement")(serviceType.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Advertisement]
+  @scala.inline
   def createAdvertisement(
     serviceType: ServiceType,
     port: Double,
     options: AdvertisementOptions,
     callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Advertisement = js.native
+  ): Advertisement = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdvertisement")(serviceType.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Advertisement]
   
-  @JSImport("mdns", "createBrowser")
-  @js.native
-  def createBrowser(serviceType: ServiceType): Browser = js.native
-  @JSImport("mdns", "createBrowser")
-  @js.native
-  def createBrowser(serviceType: ServiceType, options: BrowserOptions): Browser = js.native
+  @scala.inline
+  def createBrowser(serviceType: ServiceType): Browser = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowser")(serviceType.asInstanceOf[js.Any]).asInstanceOf[Browser]
+  @scala.inline
+  def createBrowser(serviceType: ServiceType, options: BrowserOptions): Browser = (^.asInstanceOf[js.Dynamic].applyDynamic("createBrowser")(serviceType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Browser]
   
   @JSImport("mdns", "dns_sd")
   @js.native
@@ -1084,49 +1087,39 @@ object mod {
   @scala.inline
   def kDNSServiceTypeX25_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kDNSServiceType_X25")(x.asInstanceOf[js.Any])
   
-  @JSImport("mdns", "loopbackInterface")
-  @js.native
-  def loopbackInterface(): js.Any = js.native
+  @scala.inline
+  def loopbackInterface(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loopbackInterface")().asInstanceOf[js.Any]
   
-  @JSImport("mdns", "makeServiceType")
-  @js.native
-  def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = js.native
-  @JSImport("mdns", "makeServiceType")
-  @js.native
-  def makeServiceType(serviceTypeIdentifier: String): ServiceType = js.native
-  @JSImport("mdns", "makeServiceType")
-  @js.native
-  def makeServiceType(serviceTypeIdentifier: js.Array[String]): ServiceType = js.native
-  @JSImport("mdns", "makeServiceType")
-  @js.native
-  def makeServiceType(serviceTypeIdentifier: Name): ServiceType = js.native
-  @JSImport("mdns", "makeServiceType")
-  @js.native
-  def makeServiceType(serviceType: ServiceType): ServiceType = js.native
+  @scala.inline
+  def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(name.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
+  @scala.inline
+  def makeServiceType(serviceTypeIdentifier: String): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  @scala.inline
+  def makeServiceType(serviceTypeIdentifier: js.Array[String]): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  @scala.inline
+  def makeServiceType(serviceTypeIdentifier: Name): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  @scala.inline
+  def makeServiceType(serviceType: ServiceType): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceType.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   
-  @JSImport("mdns", "resolve")
-  @js.native
-  def resolve(service: Service): Unit = js.native
-  @JSImport("mdns", "resolve")
-  @js.native
-  def resolve(
-    service: Service,
-    sequence: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Unit = js.native
-  @JSImport("mdns", "resolve")
-  @js.native
+  @scala.inline
+  def resolve(service: Service): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def resolve(
     service: Service,
     sequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]]
-  ): Unit = js.native
-  @JSImport("mdns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(service.asInstanceOf[js.Any], sequence.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def resolve(
     service: Service,
     sequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]],
     callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(service.asInstanceOf[js.Any], sequence.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(
+    service: Service,
+    sequence: Unit,
+    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(service.asInstanceOf[js.Any], sequence.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("mdns", "rst")
   @js.native
@@ -1135,17 +1128,16 @@ object mod {
   def rst_=(x: DefaultResolverSequenceTasks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rst")(x.asInstanceOf[js.Any])
   
   // static functions
-  @JSImport("mdns", "tcp")
-  @js.native
-  def tcp(name: String, subtypes: String*): ServiceType = js.native
+  @scala.inline
+  def tcp(name: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(name.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
   
-  @JSImport("mdns", "udp")
-  @js.native
-  def udp(name: String, subtypes: String*): ServiceType = js.native
+  @scala.inline
+  def udp(name: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("udp")(name.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
   
   @js.native
   trait AdvertisementCreatable
-    extends Instantiable2[/* serviceType */ ServiceType, /* port */ Double, Advertisement]
+    extends StObject
+       with Instantiable2[/* serviceType */ ServiceType, /* port */ Double, Advertisement]
        with Instantiable3[
           /* serviceType */ ServiceType, 
           /* port */ Double, 
@@ -1155,30 +1147,29 @@ object mod {
        with Instantiable4[
           /* serviceType */ ServiceType, 
           /* port */ Double, 
-          js.UndefOr[/* options */ AdvertisementOptions], 
+          (/* options */ AdvertisementOptions) | (/* options */ Unit), 
           /* callback */ js.Function2[/* error */ DnsSdError, /* service */ Service, Unit], 
           Advertisement
         ]
   
   // --- Ads ---
-  @js.native
   trait AdvertisementOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var domain: js.UndefOr[js.Any] = js.native
+    var domain: js.UndefOr[js.Any] = js.undefined
     
-    var flags: js.UndefOr[js.Any] = js.native
+    var flags: js.UndefOr[js.Any] = js.undefined
     
-    var host: js.UndefOr[js.Any] = js.native
+    var host: js.UndefOr[js.Any] = js.undefined
     
-    var interfaceIndex: js.UndefOr[Double] = js.native
+    var interfaceIndex: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var networkInterface: js.UndefOr[String] = js.native
+    var networkInterface: js.UndefOr[String] = js.undefined
     
-    var txtRecord: js.UndefOr[js.Any] = js.native
+    var txtRecord: js.UndefOr[js.Any] = js.undefined
   }
   object AdvertisementOptions {
     
@@ -1242,22 +1233,21 @@ object mod {
   }
   
   // --- Browser ---
-  @js.native
   trait BrowserOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var domain: js.UndefOr[js.Any] = js.native
+    var domain: js.UndefOr[js.Any] = js.undefined
     
-    var flags: js.UndefOr[js.Any] = js.native
+    var flags: js.UndefOr[js.Any] = js.undefined
     
-    var interfaceIndex: js.UndefOr[Double] = js.native
+    var interfaceIndex: js.UndefOr[Double] = js.undefined
     
-    var networkInterface: js.UndefOr[String] = js.native
+    var networkInterface: js.UndefOr[String] = js.undefined
     
     var resolverSequence: js.UndefOr[
         js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]]
-      ] = js.native
+      ] = js.undefined
   }
   object BrowserOptions {
     
@@ -1313,14 +1303,17 @@ object mod {
   
   @js.native
   trait BrowserStatic
-    extends Instantiable1[/* serviceType */ ServiceType, Browser]
+    extends StObject
+       with Instantiable1[/* serviceType */ ServiceType, Browser]
        with Instantiable2[/* serviceType */ ServiceType, /* options */ BrowserOptions, Browser] {
     
     var defaultResolverSequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]] = js.native
   }
   
   @js.native
-  trait DefaultResolverSequenceTasks extends MDNSResolverSequenceTasks {
+  trait DefaultResolverSequenceTasks
+    extends StObject
+       with MDNSResolverSequenceTasks {
     
     def DNSServiceGetAddrInfo(): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
     def DNSServiceGetAddrInfo(options: js.Any): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
@@ -1346,10 +1339,11 @@ object mod {
   }
   
   // --- Error ---
-  @js.native
-  trait DnsSdError extends Error {
+  trait DnsSdError
+    extends StObject
+       with Error {
     
-    var errorCode: js.UndefOr[Double] = js.native
+    var errorCode: js.UndefOr[Double] = js.undefined
   }
   object DnsSdError {
     
@@ -1371,36 +1365,34 @@ object mod {
   }
   
   // interface for extending with custom resolvers
-  @js.native
   trait MDNSResolverSequenceTasks extends StObject
   
   // --- Services ---
-  @js.native
   trait Service extends StObject {
     
-    var addresses: js.Array[String] = js.native
+    var addresses: js.Array[String]
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var fullname: String = js.native
+    var fullname: String
     
-    var host: String = js.native
+    var host: String
     
-    var interfaceIndex: Double = js.native
+    var interfaceIndex: Double
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var networkInterface: String = js.native
+    var networkInterface: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var rawTxtRecord: js.UndefOr[Buffer] = js.native
+    var rawTxtRecord: js.UndefOr[Buffer] = js.undefined
     
-    var replyDomain: String = js.native
+    var replyDomain: String
     
-    var txtRecord: js.UndefOr[js.Any] = js.native
+    var txtRecord: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: ServiceType = js.native
+    var `type`: ServiceType
   }
   object Service {
     

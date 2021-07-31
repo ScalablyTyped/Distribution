@@ -24,7 +24,6 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convolutionalRecurrentMod {
@@ -49,9 +48,8 @@ object convolutionalRecurrentMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent", "ConvLSTM2D.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -72,7 +70,7 @@ object convolutionalRecurrentMod {
     val filters: Double = js.native
     
     def inputConv(x: Tensor[Rank], w: Tensor[Rank]): Tensor[R3] = js.native
-    def inputConv(x: Tensor[Rank], w: Tensor[Rank], b: js.UndefOr[scala.Nothing], padding: PaddingMode): Tensor[R3] = js.native
+    def inputConv(x: Tensor[Rank], w: Tensor[Rank], b: Unit, padding: PaddingMode): Tensor[R3] = js.native
     def inputConv(x: Tensor[Rank], w: Tensor[Rank], b: Tensor[Rank]): Tensor[R3] = js.native
     def inputConv(x: Tensor[Rank], w: Tensor[Rank], b: Tensor[Rank], padding: PaddingMode): Tensor[R3] = js.native
     
@@ -101,10 +99,9 @@ object convolutionalRecurrentMod {
   
   /* Inlined parent std.Omit<@tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/recurrent.LSTMLayerArgs, 'units' | 'cell'> */
   /* Inlined parent @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent.ConvRNN2DLayerArgs */
-  @js.native
   trait ConvLSTM2DArgs extends StObject {
     
-    var activation: js.UndefOr[ActivationIdentifier] = js.native
+    var activation: js.UndefOr[ActivationIdentifier] = js.undefined
     
     /**
       * If defined, will be used to create an input layer to insert before this
@@ -112,20 +109,20 @@ object convolutionalRecurrentMod {
       * `batchInputShape` will be used. This argument is only applicable to input
       * layers (the first layer of a model).
       */
-    var batchInputShape: js.UndefOr[Shape] = js.native
+    var batchInputShape: js.UndefOr[Shape] = js.undefined
     
     /**
       * If `inputShape` is specified and `batchInputShape` is *not* specified,
       * `batchSize` is used to construct the `batchInputShape`: `[batchSize,
       * ...inputShape]`
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * A RNN cell instance. A RNN cell is a class that has:
@@ -149,7 +146,7 @@ object convolutionalRecurrentMod {
       * case the cells get stacked on after the other in the RNN, implementing an
       * efficient stacked RNN.
       */
-    var cell: js.UndefOr[RNNCell | js.Array[RNNCell]] = js.native
+    var cell: js.UndefOr[RNNCell | js.Array[RNNCell]] = js.undefined
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -163,7 +160,7 @@ object convolutionalRecurrentMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The dilation rate to use for the dilated convolution in each dimension.
@@ -172,40 +169,40 @@ object convolutionalRecurrentMod {
       * Currently, specifying any `dilationRate` value != 1 is incompatible with
       * specifying any `strides` value != 1.
       */
-    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.native
+    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
     /**
       * The data-type for this layer. Defaults to 'float32'.
       * This argument is only applicable to input layers (the first layer of a
       * model).
       */
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
       * convolution).
       */
-    var filters: Double = js.native
+    var filters: Double
     
     /**
       * If `true`, process the input sequence backwards and return the reversed
       * sequence (default: `false`).
       */
-    var goBackwards: js.UndefOr[Boolean] = js.native
+    var goBackwards: js.UndefOr[Boolean] = js.undefined
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
     /** Legacy support. Do not use for new code. */
-    var inputDType: js.UndefOr[DataType] = js.native
+    var inputDType: js.UndefOr[DataType] = js.undefined
     
     /**
       * Dimensionality of the input (integer).
       *   This option (or alternatively, the option `inputShape`) is required when
       *   this layer is used as the first layer in a model.
       */
-    var inputDim: js.UndefOr[Double] = js.native
+    var inputDim: js.UndefOr[Double] = js.undefined
     
     /**
       * Length of the input sequences, to be specified when it is constant.
@@ -215,7 +212,7 @@ object convolutionalRecurrentMod {
       * your model, you would need to specify the input length at the level of the
       * first layer (e.g., via the `inputShape` option).
       */
-    var inputLength: js.UndefOr[Double] = js.native
+    var inputLength: js.UndefOr[Double] = js.undefined
     
     /**
       * If defined, will be used to create an input layer to insert before this
@@ -223,48 +220,48 @@ object convolutionalRecurrentMod {
       * `batchInputShape` will be used. This argument is only applicable to input
       * layers (the first layer of a model).
       */
-    var inputShape: js.UndefOr[Shape] = js.native
+    var inputShape: js.UndefOr[Shape] = js.undefined
     
-    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The dimensions of the convolution window. If kernelSize is a number, the
       * convolutional window will be square.
       */
-    var kernelSize: Double | js.Array[Double] = js.native
+    var kernelSize: Double | js.Array[Double]
     
     /** Name for this layer. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Padding mode.
       */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.native
+    var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.undefined
     
-    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var recurrentDropout: js.UndefOr[Double] = js.native
+    var recurrentDropout: js.UndefOr[Double] = js.undefined
     
-    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Whether to return the last output in the output sequence, or the full
       * sequence.
       */
-    var returnSequences: js.UndefOr[Boolean] = js.native
+    var returnSequences: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to return the last state in addition to the output.
       */
-    var returnState: js.UndefOr[Boolean] = js.native
+    var returnState: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the last state for each sample at index i in a batch will be
@@ -291,7 +288,7 @@ object convolutionalRecurrentMod {
       * To reset the state of your model, call `resetStates()` on either the
       * specific layer or on the entire model.
       */
-    var stateful: js.UndefOr[Boolean] = js.native
+    var stateful: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The strides of the convolution in each dimension. If strides is a number,
@@ -300,15 +297,15 @@ object convolutionalRecurrentMod {
       * Specifying any stride value != 1 is incompatible with specifying any
       * `dilationRate` value != 1.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Whether the weights of this layer are updatable by `fit`.
       * Defaults to true.
       */
-    var trainable: js.UndefOr[Boolean] = js.native
+    var trainable: js.UndefOr[Boolean] = js.undefined
     
-    var unitForgetBias: js.UndefOr[Boolean] = js.native
+    var unitForgetBias: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the network will be unrolled, else a symbolic loop will be
@@ -319,14 +316,14 @@ object convolutionalRecurrentMod {
       *   normal TypeScript control flow. Hence this property is inapplicable and
       *   ignored in tfjs-layers.
       */
-    var unroll: js.UndefOr[Boolean] = js.native
+    var unroll: js.UndefOr[Boolean] = js.undefined
     
-    var useBias: js.UndefOr[Boolean] = js.native
+    var useBias: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial weight values of the layer.
       */
-    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.native
+    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
   }
   object ConvLSTM2DArgs {
     
@@ -586,20 +583,19 @@ object convolutionalRecurrentMod {
   
   /* Inlined parent std.Omit<@tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/recurrent.LSTMCellLayerArgs, 'units'> */
   /* Inlined parent @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent.ConvRNN2DCellArgs */
-  @js.native
   trait ConvLSTM2DCellArgs extends StObject {
     
-    var activation: js.UndefOr[ActivationIdentifier] = js.native
+    var activation: js.UndefOr[ActivationIdentifier] = js.undefined
     
-    var batchInputShape: js.UndefOr[Shape] = js.native
+    var batchInputShape: js.UndefOr[Shape] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -613,7 +609,7 @@ object convolutionalRecurrentMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The dilation rate to use for the dilated convolution in each dimension.
@@ -622,52 +618,52 @@ object convolutionalRecurrentMod {
       * Currently, specifying any `dilationRate` value != 1 is incompatible with
       * specifying any `strides` value != 1.
       */
-    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.native
+    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
       * convolution).
       */
-    var filters: Double = js.native
+    var filters: Double
     
-    var implementation: js.UndefOr[Double] = js.native
+    var implementation: js.UndefOr[Double] = js.undefined
     
-    var inputDType: js.UndefOr[DataType] = js.native
+    var inputDType: js.UndefOr[DataType] = js.undefined
     
-    var inputShape: js.UndefOr[Shape] = js.native
+    var inputShape: js.UndefOr[Shape] = js.undefined
     
-    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The dimensions of the convolution window. If kernelSize is a number, the
       * convolutional window will be square.
       */
-    var kernelSize: Double | js.Array[Double] = js.native
+    var kernelSize: Double | js.Array[Double]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Padding mode.
       */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.native
+    var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.undefined
     
-    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var recurrentDropout: js.UndefOr[Double] = js.native
+    var recurrentDropout: js.UndefOr[Double] = js.undefined
     
-    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The strides of the convolution in each dimension. If strides is a number,
@@ -676,15 +672,15 @@ object convolutionalRecurrentMod {
       * Specifying any stride value != 1 is incompatible with specifying any
       * `dilationRate` value != 1.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var trainable: js.UndefOr[Boolean] = js.native
+    var trainable: js.UndefOr[Boolean] = js.undefined
     
-    var unitForgetBias: js.UndefOr[Boolean] = js.native
+    var unitForgetBias: js.UndefOr[Boolean] = js.undefined
     
-    var useBias: js.UndefOr[Boolean] = js.native
+    var useBias: js.UndefOr[Boolean] = js.undefined
     
-    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.native
+    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
   }
   object ConvLSTM2DCellArgs {
     
@@ -900,8 +896,6 @@ object convolutionalRecurrentMod {
     @JSName("cell")
     val cell_ConvRNN2D: ConvRNN2DCell = js.native
     
-    def computeOutputShape(inputShape: Shape): Shape | js.Array[Shape] = js.native
-    
     /* protected */ def computeSingleOutputShape(inputShape: Shape): Shape = js.native
   }
   
@@ -948,20 +942,19 @@ object convolutionalRecurrentMod {
   }
   
   /* Inlined parent std.Omit<@tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/recurrent.SimpleRNNCellLayerArgs, 'units'> */
-  @js.native
   trait ConvRNN2DCellArgs extends StObject {
     
-    var activation: js.UndefOr[ActivationIdentifier] = js.native
+    var activation: js.UndefOr[ActivationIdentifier] = js.undefined
     
-    var batchInputShape: js.UndefOr[Shape] = js.native
+    var batchInputShape: js.UndefOr[Shape] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -975,7 +968,7 @@ object convolutionalRecurrentMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The dilation rate to use for the dilated convolution in each dimension.
@@ -984,48 +977,48 @@ object convolutionalRecurrentMod {
       * Currently, specifying any `dilationRate` value != 1 is incompatible with
       * specifying any `strides` value != 1.
       */
-    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.native
+    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
       * convolution).
       */
-    var filters: Double = js.native
+    var filters: Double
     
-    var inputDType: js.UndefOr[DataType] = js.native
+    var inputDType: js.UndefOr[DataType] = js.undefined
     
-    var inputShape: js.UndefOr[Shape] = js.native
+    var inputShape: js.UndefOr[Shape] = js.undefined
     
-    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The dimensions of the convolution window. If kernelSize is a number, the
       * convolutional window will be square.
       */
-    var kernelSize: Double | js.Array[Double] = js.native
+    var kernelSize: Double | js.Array[Double]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Padding mode.
       */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var recurrentDropout: js.UndefOr[Double] = js.native
+    var recurrentDropout: js.UndefOr[Double] = js.undefined
     
-    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The strides of the convolution in each dimension. If strides is a number,
@@ -1034,13 +1027,13 @@ object convolutionalRecurrentMod {
       * Specifying any stride value != 1 is incompatible with specifying any
       * `dilationRate` value != 1.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var trainable: js.UndefOr[Boolean] = js.native
+    var trainable: js.UndefOr[Boolean] = js.undefined
     
-    var useBias: js.UndefOr[Boolean] = js.native
+    var useBias: js.UndefOr[Boolean] = js.undefined
     
-    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.native
+    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
   }
   object ConvRNN2DCellArgs {
     
@@ -1230,16 +1223,17 @@ object convolutionalRecurrentMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvRNN2DCellArgs because var conflicts: batchInputShape, batchSize, dtype, inputDType, inputShape, name, trainable, weights. Inlined filters, kernelSize, strides, padding, dataFormat, dilationRate, recurrentRegularizer, useBias, biasInitializer, dropout, kernelRegularizer, recurrentInitializer, biasRegularizer, kernelConstraint, biasConstraint, kernelInitializer, recurrentConstraint, activation, recurrentDropout */ @js.native
-  trait ConvRNN2DLayerArgs extends BaseRNNLayerArgs {
+  - typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvRNN2DCellArgs because var conflicts: batchInputShape, batchSize, dtype, inputDType, inputShape, name, trainable, weights. Inlined filters, kernelSize, strides, padding, dataFormat, dilationRate, recurrentRegularizer, useBias, biasInitializer, dropout, kernelRegularizer, recurrentInitializer, biasRegularizer, kernelConstraint, biasConstraint, kernelInitializer, recurrentConstraint, activation, recurrentDropout */ trait ConvRNN2DLayerArgs
+    extends StObject
+       with BaseRNNLayerArgs {
     
-    var activation: js.UndefOr[ActivationIdentifier] = js.native
+    var activation: js.UndefOr[ActivationIdentifier] = js.undefined
     
-    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -1253,7 +1247,7 @@ object convolutionalRecurrentMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The dilation rate to use for the dilated convolution in each dimension.
@@ -1262,40 +1256,40 @@ object convolutionalRecurrentMod {
       * Currently, specifying any `dilationRate` value != 1 is incompatible with
       * specifying any `strides` value != 1.
       */
-    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.native
+    var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
-    var dropout: js.UndefOr[Double] = js.native
+    var dropout: js.UndefOr[Double] = js.undefined
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
       * convolution).
       */
-    var filters: Double = js.native
+    var filters: Double
     
-    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The dimensions of the convolution window. If kernelSize is a number, the
       * convolutional window will be square.
       */
-    var kernelSize: Double | js.Array[Double] = js.native
+    var kernelSize: Double | js.Array[Double]
     
     /**
       * Padding mode.
       */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
-    var recurrentDropout: js.UndefOr[Double] = js.native
+    var recurrentDropout: js.UndefOr[Double] = js.undefined
     
-    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
-    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The strides of the convolution in each dimension. If strides is a number,
@@ -1304,9 +1298,9 @@ object convolutionalRecurrentMod {
       * Specifying any stride value != 1 is incompatible with specifying any
       * `dilationRate` value != 1.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var useBias: js.UndefOr[Boolean] = js.native
+    var useBias: js.UndefOr[Boolean] = js.undefined
   }
   object ConvRNN2DLayerArgs {
     

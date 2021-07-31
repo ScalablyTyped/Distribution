@@ -11,8 +11,8 @@ Get a compare function for array to sort
 | Full name          | compare-func |
 | Keywords           | compare-func, arr, array, by, compare, dot, get, obj, object, prop, property, sort, sorting |
 | # releases         | 4 |
-| # dependents       | 129 |
-| # downloads        | 69029962 |
+| # dependents       | 155 |
+| # downloads        | 94277433 |
 | # stars            | 1 |
 
 ## Links

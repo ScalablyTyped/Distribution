@@ -3,24 +3,24 @@ package typings.jssPresetDefault
 import typings.jss.mod.JssOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jss-preset-default", JSImport.Default)
+  @JSImport("jss-preset-default", JSImport.Namespace)
   @js.native
-  def default(): JssOptions = js.native
-  @JSImport("jss-preset-default", JSImport.Default)
-  @js.native
-  def default(options: Options): JssOptions = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[JssOptions]
+  @scala.inline
+  def default(options: Options): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[JssOptions]
+  
   trait Options extends StObject {
     
-    var defaultUnit: js.UndefOr[typings.jssPluginDefaultUnit.mod.Options] = js.native
+    var defaultUnit: js.UndefOr[typings.jssPluginDefaultUnit.mod.Options] = js.undefined
     
-    var observable: js.UndefOr[typings.jssPluginRuleValueObservable.mod.Options] = js.native
+    var observable: js.UndefOr[typings.jssPluginRuleValueObservable.mod.Options] = js.undefined
   }
   object Options {
     

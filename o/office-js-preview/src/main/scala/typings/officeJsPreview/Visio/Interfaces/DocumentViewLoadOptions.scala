@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait DocumentViewLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentViewLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disableHyperlinks: js.UndefOr[Boolean] = js.native
+  var disableHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentViewLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disablePan: js.UndefOr[Boolean] = js.native
+  var disablePan: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait DocumentViewLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disablePanZoomWindow: js.UndefOr[Boolean] = js.native
+  var disablePanZoomWindow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait DocumentViewLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disableZoom: js.UndefOr[Boolean] = js.native
+  var disableZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait DocumentViewLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var hideDiagramBoundary: js.UndefOr[Boolean] = js.native
+  var hideDiagramBoundary: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentViewLoadOptions {
   

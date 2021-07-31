@@ -4,14 +4,19 @@ import typings.preact.anon.Children
 import typings.preact.mod.ComponentChild
 import typings.preact.mod.ComponentClass
 import typings.preact.mod.ComponentType
+import typings.preact.mod.Consumer
 import typings.preact.mod.Context
 import typings.preact.mod.FunctionComponent
 import typings.preact.mod.Key
 import typings.preact.mod.Options_
+import typings.preact.mod.Provider
+import typings.std.AddEventListenerOptions
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Event
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.std.Record
 import typings.std.SVGElement
@@ -19,7 +24,6 @@ import typings.std.ShadowRoot
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalMod {
@@ -31,52 +35,74 @@ object internalMod {
   object HookType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HookType with Double] = js.native
+    def apply(value: Double): js.UndefOr[HookType & Double] = js.native
     
     @js.native
-    sealed trait useCallback extends HookType
-    /* 8 */ val useCallback: typings.preact.internalMod.HookType.useCallback with Double = js.native
+    sealed trait useCallback
+      extends StObject
+         with HookType
+    /* 8 */ val useCallback: typings.preact.internalMod.HookType.useCallback & Double = js.native
     
     @js.native
-    sealed trait useContext extends HookType
-    /* 9 */ val useContext: typings.preact.internalMod.HookType.useContext with Double = js.native
+    sealed trait useContext
+      extends StObject
+         with HookType
+    /* 9 */ val useContext: typings.preact.internalMod.HookType.useContext & Double = js.native
     
     // Not a real hook, but the devtools treat is as such
     @js.native
-    sealed trait useDebugvalue extends HookType
-    /* 11 */ val useDebugvalue: typings.preact.internalMod.HookType.useDebugvalue with Double = js.native
+    sealed trait useDebugvalue
+      extends StObject
+         with HookType
+    /* 11 */ val useDebugvalue: typings.preact.internalMod.HookType.useDebugvalue & Double = js.native
     
     @js.native
-    sealed trait useEffect extends HookType
-    /* 3 */ val useEffect: typings.preact.internalMod.HookType.useEffect with Double = js.native
+    sealed trait useEffect
+      extends StObject
+         with HookType
+    /* 3 */ val useEffect: typings.preact.internalMod.HookType.useEffect & Double = js.native
     
     @js.native
-    sealed trait useErrorBoundary extends HookType
-    /* 10 */ val useErrorBoundary: typings.preact.internalMod.HookType.useErrorBoundary with Double = js.native
+    sealed trait useErrorBoundary
+      extends StObject
+         with HookType
+    /* 10 */ val useErrorBoundary: typings.preact.internalMod.HookType.useErrorBoundary & Double = js.native
     
     @js.native
-    sealed trait useImperativeHandle extends HookType
-    /* 6 */ val useImperativeHandle: typings.preact.internalMod.HookType.useImperativeHandle with Double = js.native
+    sealed trait useImperativeHandle
+      extends StObject
+         with HookType
+    /* 6 */ val useImperativeHandle: typings.preact.internalMod.HookType.useImperativeHandle & Double = js.native
     
     @js.native
-    sealed trait useLayoutEffect extends HookType
-    /* 4 */ val useLayoutEffect: typings.preact.internalMod.HookType.useLayoutEffect with Double = js.native
+    sealed trait useLayoutEffect
+      extends StObject
+         with HookType
+    /* 4 */ val useLayoutEffect: typings.preact.internalMod.HookType.useLayoutEffect & Double = js.native
     
     @js.native
-    sealed trait useMemo extends HookType
-    /* 7 */ val useMemo: typings.preact.internalMod.HookType.useMemo with Double = js.native
+    sealed trait useMemo
+      extends StObject
+         with HookType
+    /* 7 */ val useMemo: typings.preact.internalMod.HookType.useMemo & Double = js.native
     
     @js.native
-    sealed trait useReducer extends HookType
-    /* 2 */ val useReducer: typings.preact.internalMod.HookType.useReducer with Double = js.native
+    sealed trait useReducer
+      extends StObject
+         with HookType
+    /* 2 */ val useReducer: typings.preact.internalMod.HookType.useReducer & Double = js.native
     
     @js.native
-    sealed trait useRef extends HookType
-    /* 5 */ val useRef: typings.preact.internalMod.HookType.useRef with Double = js.native
+    sealed trait useRef
+      extends StObject
+         with HookType
+    /* 5 */ val useRef: typings.preact.internalMod.HookType.useRef & Double = js.native
     
     @js.native
-    sealed trait useState extends HookType
-    /* 1 */ val useState: typings.preact.internalMod.HookType.useState with Double = js.native
+    sealed trait useState
+      extends StObject
+         with HookType
+    /* 1 */ val useState: typings.preact.internalMod.HookType.useState & Double = js.native
   }
   
   @js.native
@@ -99,14 +125,14 @@ object internalMod {
     var _parentDom: js.UndefOr[PreactElement | Null] = js.native
     
     // Always read, set only when handling error. This is used to indicate at diffTime to set _processingException
-    var _pendingError: js.UndefOr[(Component[_, _]) | Null] = js.native
+    var _pendingError: js.UndefOr[(Component[js.Any, js.Any]) | Null] = js.native
     
     // Only class components
     /** Only used in the devtools to later dirty check if state has changed */
     var _prevState: js.UndefOr[S | Null] = js.native
     
     // Always read, set only when handling error
-    var _processingException: js.UndefOr[(Component[_, _]) | Null] = js.native
+    var _processingException: js.UndefOr[(Component[js.Any, js.Any]) | Null] = js.native
     
     var _renderCallbacks: js.Array[js.Function0[Unit]] = js.native
     
@@ -118,12 +144,11 @@ object internalMod {
   
   type ComponentFactory[P] = (ComponentClass[P, js.Object]) | FunctionalComponent[P]
   
-  @js.native
   trait DevSource extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
   }
   object DevSource {
     
@@ -145,15 +170,19 @@ object internalMod {
   }
   
   @js.native
-  trait FunctionalComponent[P] extends FunctionComponent[P] {
+  trait FunctionalComponent[P]
+    extends StObject
+       with FunctionComponent[P] {
     
     // Define getDerivedStateFromProps as undefined on FunctionalComponent
     // to get rid of some errors in `diff()`
-    var getDerivedStateFromProps: js.UndefOr[scala.Nothing] = js.native
+    var getDerivedStateFromProps: Unit = js.native
   }
   
   @js.native
-  trait Options extends Options_ {
+  trait Options
+    extends StObject
+       with Options_ {
     
     /** Attach a hook that is invoked after an error is caught in a component but before calling lifecycle hooks */
     def _catchError(error: js.Any, vnode: VNode[js.Object]): Unit = js.native
@@ -199,13 +228,31 @@ object internalMod {
     var _vnodeId: Double = js.native
   }
   
-  @js.native
   trait PreactContext
-    extends Context[js.Any] {
+    extends StObject
+       with Context[js.Any] {
     
-    var _defaultValue: js.Any = js.native
+    var _defaultValue: js.Any
     
-    var _id: String = js.native
+    var _id: String
+  }
+  object PreactContext {
+    
+    @scala.inline
+    def apply(Consumer: Consumer[js.Any], Provider: Provider[js.Any], _defaultValue: js.Any, _id: String): PreactContext = {
+      val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _defaultValue = _defaultValue.asInstanceOf[js.Any], _id = _id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PreactContext]
+    }
+    
+    @scala.inline
+    implicit class PreactContextMutableBuilder[Self <: PreactContext] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    }
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -216,12 +263,21 @@ object internalMod {
   - typings.std.Slottable because Already inherited
   - typings.std.CharacterData because var conflicts: nodeValue, textContent. Inlined length, ownerDocument_CharacterData, data, appendData, deleteData, insertData, replaceData, substringData
   - typings.std.Text because var conflicts: nodeValue, textContent. Inlined wholeText, splitText */ @js.native
-  trait PreactElement extends HTMLElement {
+  trait PreactElement
+    extends StObject
+       with HTMLElement {
     
-    var _children: js.UndefOr[VNode[_] | Null] = js.native
+    var _children: js.UndefOr[VNode[js.Any] | Null] = js.native
     
     /** Event listeners to support event delegation */
     var _listeners: Record[String, js.Function1[/* e */ Event, Unit]] = js.native
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     def appendData(data: String): Unit = js.native
     
@@ -240,6 +296,13 @@ object internalMod {
     // Preact uses this attribute to detect SVG nodes
     var ownerSVGElement: js.UndefOr[SVGElement | Null] = js.native
     
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
     def replaceData(offset: Double, count: Double, data: String): Unit = js.native
     
     /**
@@ -255,48 +318,51 @@ object internalMod {
     val wholeText: String = js.native
   }
   
-  @js.native
   trait VNode[P]
-    extends typings.preact.mod.VNode[P] {
+    extends StObject
+       with typings.preact.mod.VNode[P] {
     
-    var _children: js.Array[VNode[_]] | Null = js.native
+    var _children: js.Array[VNode[js.Any]] | Null
     
-    var _component: (Component[js.Object, js.Object]) | Null = js.native
+    var _component: (Component[js.Object, js.Object]) | Null
     
-    var _depth: Double | Null = js.native
+    var _depth: Double | Null
     
     /**
     	 * The [first (for Fragments)] DOM child of a VNode
     	 */
-    var _dom: PreactElement | Null = js.native
+    var _dom: PreactElement | Null
     
-    var _hydrating: Boolean | Null = js.native
+    var _hydrating: Boolean | Null
     
     /**
     	 * The last dom child of a Fragment, or components that return a Fragment
     	 */
-    var _nextDom: PreactElement | Null = js.native
+    var _nextDom: PreactElement | Null
     
-    var _original: js.UndefOr[VNode[js.Object] | Null] = js.native
+    var _original: js.UndefOr[VNode[js.Object] | Null] = js.undefined
     
-    var _parent: VNode[js.Object] | Null = js.native
+    var _parent: VNode[js.Object] | Null
     
-    var constructor: js.UndefOr[scala.Nothing] = js.native
+    var constructor: Unit
   }
   object VNode {
     
     @scala.inline
-    def apply[P](key: Key, props: P with Children, `type`: ComponentType[P] | String): VNode[P] = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    def apply[P](constructor: Unit, key: Key, props: P & Children, `type`: ComponentType[P] | String): VNode[P] = {
+      val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], _children = null, _component = null, _depth = null, _dom = null, _hydrating = null, _nextDom = null, _parent = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VNode[P]]
     }
     
     @scala.inline
-    implicit class VNodeMutableBuilder[Self <: VNode[_], P] (val x: Self with VNode[P]) extends AnyVal {
+    implicit class VNodeMutableBuilder[Self <: VNode[?], P] (val x: Self & VNode[P]) extends AnyVal {
       
       @scala.inline
-      def set_children(value: js.Array[VNode[_]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
+      def setConstructor(value: Unit): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_children(value: js.Array[VNode[js.Any]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_childrenNull: Self = StObject.set(x, "_children", null)

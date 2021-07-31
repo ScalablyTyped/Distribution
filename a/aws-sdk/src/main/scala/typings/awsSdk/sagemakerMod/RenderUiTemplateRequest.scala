@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderUiTemplateRequest extends StObject {
   
   /**
     * The HumanTaskUiArn of the worker UI that you want to render. Do not provide a HumanTaskUiArn if you use the UiTemplate parameter. See a list of available Human Ui Amazon Resource Names (ARNs) in UiConfig.
     */
-  var HumanTaskUiArn: js.UndefOr[typings.awsSdk.sagemakerMod.HumanTaskUiArn] = js.native
+  var HumanTaskUiArn: js.UndefOr[typings.awsSdk.sagemakerMod.HumanTaskUiArn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that has access to the S3 objects that are used by the template.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * A RenderableTask object containing a representative task to render.
     */
-  var Task: RenderableTask = js.native
+  var Task: RenderableTask
   
   /**
     * A Template object containing the worker UI template to render.
     */
-  var UiTemplate: js.UndefOr[typings.awsSdk.sagemakerMod.UiTemplate] = js.native
+  var UiTemplate: js.UndefOr[typings.awsSdk.sagemakerMod.UiTemplate] = js.undefined
 }
 object RenderUiTemplateRequest {
   

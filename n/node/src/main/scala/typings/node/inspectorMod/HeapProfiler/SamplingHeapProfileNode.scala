@@ -3,29 +3,27 @@ package typings.node.inspectorMod.HeapProfiler
 import typings.node.inspectorMod.Runtime.CallFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sampling Heap Profile node. Holds callsite information, allocation statistics and child nodes.
   */
-@js.native
 trait SamplingHeapProfileNode extends StObject {
   
   /**
     * Function location.
     */
-  var callFrame: CallFrame = js.native
+  var callFrame: CallFrame
   
   /**
     * Child nodes.
     */
-  var children: js.Array[SamplingHeapProfileNode] = js.native
+  var children: js.Array[SamplingHeapProfileNode]
   
   /**
     * Allocations size in bytes for the node excluding children.
     */
-  var selfSize: Double = js.native
+  var selfSize: Double
 }
 object SamplingHeapProfileNode {
   

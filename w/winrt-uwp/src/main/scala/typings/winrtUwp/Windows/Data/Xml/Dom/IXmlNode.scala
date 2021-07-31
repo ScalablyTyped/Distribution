@@ -2,13 +2,12 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the entire Document Object Model. This interface represents a single node in the document tree. While all objects that implement this interface expose methods for dealing with children, not all objects that implement this interface may have children. */
-@js.native
 trait IXmlNode
-  extends IXmlNodeSelector
+  extends StObject
+     with IXmlNodeSelector
      with IXmlNodeSerializer {
   
   /**
@@ -16,29 +15,29 @@ trait IXmlNode
     * @param newChild The new child node to be appended to the end of the list of children of this node.
     * @return The new child node successfully appended to the list. If null, no object is created.
     */
-  def appendChild(newChild: IXmlNode): IXmlNode = js.native
+  def appendChild(newChild: IXmlNode): IXmlNode
   
   /** Gets the list of attributes of this node. */
-  var attributes: XmlNamedNodeMap = js.native
+  var attributes: XmlNamedNodeMap
   
   /** Gets a list of children in the current node. */
-  var childNodes: XmlNodeList = js.native
+  var childNodes: XmlNodeList
   
   /**
     * Clones a new node.
     * @param deep A flag that indicates whether to recursively clone all nodes that are descendants of this node. If true, this method creates a clone of the complete tree below this node. If false, this method clones this node and its attributes only.
     * @return The newly created clone node.
     */
-  def cloneNode(deep: Boolean): IXmlNode = js.native
+  def cloneNode(deep: Boolean): IXmlNode
   
   /** Gets the first child node. */
-  var firstChild: IXmlNode = js.native
+  var firstChild: IXmlNode
   
   /**
     * Determines whether a node has children.
     * @return True if this node has children; otherwise false.
     */
-  def hasChildNodes(): Boolean = js.native
+  def hasChildNodes(): Boolean
   
   /**
     * Inserts a child node to the left of the specified node, or at the end of the list.
@@ -46,50 +45,50 @@ trait IXmlNode
     * @param referenceChild The reference node. The node specified is where the newChild node is to be inserted to the left as the preceding sibling in the child list. The node passed here must be a either a child node of the current node or null. If the value is null, the newChild node is inserted at the end of the child list. If the referenceChild node is not a child of the current node, an error is returned.
     * @return On success, the child node that was inserted. If null, no object is created.
     */
-  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
   
   /** Gets the last child node. */
-  var lastChild: IXmlNode = js.native
+  var lastChild: IXmlNode
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any = js.native
+  var localName: js.Any
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any = js.native
+  var namespaceUri: js.Any
   
   /** Gets the next sibling of the node in the parent's child list. */
-  var nextSibling: IXmlNode = js.native
+  var nextSibling: IXmlNode
   
   /** Returns the qualified name for attribute, document type, element, entity, or notation nodes. Returns a fixed string for all other node types. */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /** Gets the XML Document Object Model (DOM) node type, which determines valid values and whether the node can have child nodes. */
-  var nodeType: NodeType = js.native
+  var nodeType: NodeType
   
   /** Gets or sets the text associated with the node. */
-  var nodeValue: js.Any = js.native
+  var nodeValue: js.Any
   
   /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
-  def normalize(): Unit = js.native
+  def normalize(): Unit
   
   /** Returns the root of the document that contains the node. */
-  var ownerDocument: XmlDocument = js.native
+  var ownerDocument: XmlDocument
   
   /** Gets the parent node of the node instance. */
-  var parentNode: IXmlNode = js.native
+  var parentNode: IXmlNode
   
   /** Gets or sets the namespace prefix. */
-  var prefix: js.Any = js.native
+  var prefix: js.Any
   
   /** Gets the previous sibling of the node in the parent's child list. */
-  var previousSibling: IXmlNode = js.native
+  var previousSibling: IXmlNode
   
   /**
     * Removes the specified child node from the list of children and returns it.
     * @param childNode The child node to be removed from the list of children of this node.
     * @return The removed child node. If null, the childNode object is not removed.
     */
-  def removeChild(childNode: IXmlNode): IXmlNode = js.native
+  def removeChild(childNode: IXmlNode): IXmlNode
   
   /**
     * Replaces the specified old child node with the supplied new child node.
@@ -97,7 +96,7 @@ trait IXmlNode
     * @param referenceChild The old child that is to be replaced by the new child.
     * @return The old child that is replaced. If null, no object is created.
     */
-  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
 }
 object IXmlNode {
   

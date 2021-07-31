@@ -14,51 +14,49 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.primaryGradient
 import typings.tuyaPanelKit.tuyaPanelKitStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrickButtonProps extends StObject {
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var background: js.UndefOr[BackgroundProps] = js.native
+  var background: js.UndefOr[BackgroundProps] = js.undefined
   
-  var backgroundColorTouched: js.UndefOr[String] = js.native
+  var backgroundColorTouched: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var loadingBackground: js.UndefOr[String] = js.native
+  var loadingBackground: js.UndefOr[String] = js.undefined
   
-  var loadingColor: js.UndefOr[String] = js.native
+  var loadingColor: js.UndefOr[String] = js.undefined
   
-  var loadingSize: js.UndefOr[small | large | Double] = js.native
+  var loadingSize: js.UndefOr[small | large | Double] = js.undefined
   
-  var loadingStrokeWidth: js.UndefOr[Double] = js.native
+  var loadingStrokeWidth: js.UndefOr[Double] = js.undefined
   
-  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* eventName */ String, /* args */ js.Any, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* eventName */ String, /* args */ js.Any, Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var showUnderlay: js.UndefOr[Boolean] = js.native
+  var showUnderlay: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: js.UndefOr[BgBorder] = js.native
+  var theme: js.UndefOr[BgBorder] = js.undefined
   
-  var `type`: js.UndefOr[primary | primaryGradient | primaryBorder | normal | small] = js.native
+  var `type`: js.UndefOr[primary | primaryGradient | primaryBorder | normal | small] = js.undefined
   
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object BrickButtonProps {
   

@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeAddress contains information for the node's address.
   */
-@js.native
 trait NodeAddress extends StObject {
   
   /**
     * The node address.
     */
-  var address: String = js.native
+  var address: String
   
   /**
     * Node address type, one of Hostname, ExternalIP or InternalIP.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object NodeAddress {
   

@@ -5,35 +5,35 @@ import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.block_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformBlock[T /* <: Record[String, _] */] extends Transform[T] {
+trait TransformBlock[T /* <: Record[String, js.Any] */]
+  extends StObject
+     with Transform[T] {
   
-  var blocks: js.Array[String] = js.native
+  var blocks: js.Array[String]
   
-  var isMatch: js.UndefOr[js.Function1[/* attributes */ T, Boolean]] = js.native
+  var isMatch: js.UndefOr[js.Function1[/* attributes */ T, Boolean]] = js.undefined
   
-  var isMultiBlock: js.UndefOr[Boolean] = js.native
+  var isMultiBlock: js.UndefOr[Boolean] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  def transform(attributes: T): BlockInstance[Partial[T]] = js.native
+  def transform(attributes: T): BlockInstance[Partial[T]]
   
-  var `type`: block_ = js.native
+  var `type`: block_
 }
 object TransformBlock {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]], `type`: block_): TransformBlock[T] = {
+  def apply[T /* <: Record[String, js.Any] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]]): TransformBlock[T] = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("block")
     __obj.asInstanceOf[TransformBlock[T]]
   }
   
   @scala.inline
-  implicit class TransformBlockMutableBuilder[Self <: TransformBlock[_], T /* <: Record[String, _] */] (val x: Self with TransformBlock[T]) extends AnyVal {
+  implicit class TransformBlockMutableBuilder[Self <: TransformBlock[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformBlock[T]) extends AnyVal {
     
     @scala.inline
     def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])

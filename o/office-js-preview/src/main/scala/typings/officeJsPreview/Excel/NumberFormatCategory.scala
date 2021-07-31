@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,82 +21,106 @@ object NumberFormatCategory extends StObject {
     *
     */
   @js.native
-  sealed trait accounting extends NumberFormatCategory
+  sealed trait accounting
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Currency formats are used for general monetary values. Use Accounting formats to align decimal points in a column.
     *
     */
   @js.native
-  sealed trait currency extends NumberFormatCategory
+  sealed trait currency
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * A custom format that is not a part of any category.
     *
     */
   @js.native
-  sealed trait custom extends NumberFormatCategory
+  sealed trait custom
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Date formats display date and time serial numbers as date values.  Date formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
     *
     */
   @js.native
-  sealed trait date extends NumberFormatCategory
+  sealed trait date
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Fraction formats display the cell value as a whole number with the remainder rounded to the nearest fraction value.
     *
     */
   @js.native
-  sealed trait fraction extends NumberFormatCategory
+  sealed trait fraction
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * General format cells have no specific number format.
     *
     */
   @js.native
-  sealed trait general extends NumberFormatCategory
+  sealed trait general
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary value.
     *
     */
   @js.native
-  sealed trait number extends NumberFormatCategory
+  sealed trait number
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Percentage formats multiply the cell value by 100 and displays the result with a percent symbol.
     *
     */
   @js.native
-  sealed trait percentage extends NumberFormatCategory
+  sealed trait percentage
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Scientific formats display the cell value as a number between 1 and 10 multiplied by a power of 10.
     *
     */
   @js.native
-  sealed trait scientific extends NumberFormatCategory
+  sealed trait scientific
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Special formats are useful for tracking list and database values.
     *
     */
   @js.native
-  sealed trait special extends NumberFormatCategory
+  sealed trait special
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Text format cells are treated as text even when a number is in the cell. The cell is displayed exactly as entered.
     *
     */
   @js.native
-  sealed trait text extends NumberFormatCategory
+  sealed trait text
+    extends StObject
+       with NumberFormatCategory
   
   /**
     * Time formats display date and time serial numbers as date values.  Time formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
     *
     */
   @js.native
-  sealed trait time extends NumberFormatCategory
+  sealed trait time
+    extends StObject
+       with NumberFormatCategory
 }

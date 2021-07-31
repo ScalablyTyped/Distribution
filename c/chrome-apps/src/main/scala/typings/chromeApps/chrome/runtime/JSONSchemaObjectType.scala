@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chromeApps.chromeAppsStrings.`object`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONSchemaObjectType extends StObject {
   
-  var additionalProperties: js.UndefOr[JSONSchemaObjectType] = js.native
+  var additionalProperties: js.UndefOr[JSONSchemaObjectType] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]] = js.native
+  var properties: js.UndefOr[StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]] = js.undefined
   
   /**
     * An 'object' can have known properties listed as 'properties', and can
     * optionally have 'additionalProperties' indicating a schema to apply to
     * keys that aren't found in 'properties'.
     */
-  var `type`: `object` = js.native
+  var `type`: `object`
 }
 object JSONSchemaObjectType {
   
   @scala.inline
-  def apply(`type`: `object`): JSONSchemaObjectType = {
+  def apply(): JSONSchemaObjectType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[JSONSchemaObjectType]
   }
   

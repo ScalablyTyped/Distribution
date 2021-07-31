@@ -11,31 +11,31 @@ import typings.styledComponents.styledComponentsMod.StyledComponentInterpolation
 import typings.styledComponents.styledComponentsMod.StyledComponentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<styled-components.styled-components.StyledComponentBase<any, any, any, never>, keyof styled-components.styled-components.StyledComponentBase<any, any, {}, never>> */
-@js.native
-trait PickStyledComponentBaseanDefaultProps extends StyledComponentInterpolation {
+trait PickStyledComponentBaseanDefaultProps
+  extends StObject
+     with StyledComponentInterpolation {
   
   @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
+  var DollarDollartypeof: js.Symbol
   
-  var defaultProps: js.UndefOr[Partial[StyledComponentProps[_, _, _, scala.Nothing]]] = js.native
+  var defaultProps: js.UndefOr[Partial[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[_, _, _, scala.Nothing]]] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]] = js.undefined
   
   var withComponent: js.Function1[
     /* component */ AnyStyledComponent, 
     StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
       scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
-  ] = js.native
+  ]
 }
 object PickStyledComponentBaseanDefaultProps {
   
@@ -44,8 +44,8 @@ object PickStyledComponentBaseanDefaultProps {
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
       scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
   ): PickStyledComponentBaseanDefaultProps = {
@@ -58,7 +58,7 @@ object PickStyledComponentBaseanDefaultProps {
   implicit class PickStyledComponentBaseanDefaultPropsMutableBuilder[Self <: PickStyledComponentBaseanDefaultProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDefaultProps(value: Partial[StyledComponentProps[_, _, _, scala.Nothing]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    def setDefaultProps(value: Partial[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
@@ -73,7 +73,7 @@ object PickStyledComponentBaseanDefaultProps {
     def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropTypes(value: WeakValidationMap[StyledComponentProps[_, _, _, scala.Nothing]]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    def setPropTypes(value: WeakValidationMap[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
@@ -82,8 +82,8 @@ object PickStyledComponentBaseanDefaultProps {
     def setWithComponent(
       value: /* component */ AnyStyledComponent => StyledComponent[
           StyledComponentInnerComponent[AnyStyledComponent], 
-          _, 
-          js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+          js.Any, 
+          js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
           scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
         ]
     ): Self = StObject.set(x, "withComponent", js.Any.fromFunction1(value))

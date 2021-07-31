@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributionConfigurationMod {
@@ -65,6 +64,10 @@ object distributionConfigurationMod {
   /* static members */
   object DistributionConfiguration {
     
+    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DistributionConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -74,35 +77,29 @@ object distributionConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DistributionConfiguration = js.native
-    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DistributionConfiguration = js.native
-    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState): DistributionConfiguration = js.native
-    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): DistributionConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DistributionConfigurationState): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
     
     /**
       * Returns true if the given object is an instance of DistributionConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/imagebuilder/distributionConfiguration", "DistributionConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean]
   }
   
-  @js.native
   trait DistributionConfigurationArgs extends StObject {
     
     /**
       * Description to apply to the distributed AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more configuration blocks with distribution settings. Detailed below.
@@ -111,17 +108,17 @@ object distributionConfigurationMod {
         js.Array[
           Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]
         ]
-      ] = js.native
+      ]
     
     /**
       * Name to apply to the distributed AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags for the distribution configuration.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DistributionConfigurationArgs {
     
@@ -172,28 +169,27 @@ object distributionConfigurationMod {
     }
   }
   
-  @js.native
   trait DistributionConfigurationState extends StObject {
     
     /**
       * (Required) Amazon Resource Name (ARN) of the distribution configuration.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Date the distribution configuration was created.
       */
-    val dateCreated: js.UndefOr[Input[String]] = js.native
+    val dateCreated: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Date the distribution configuration was updated.
       */
-    val dateUpdated: js.UndefOr[Input[String]] = js.native
+    val dateUpdated: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description to apply to the distributed AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more configuration blocks with distribution settings. Detailed below.
@@ -204,17 +200,17 @@ object distributionConfigurationMod {
             Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name to apply to the distributed AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags for the distribution configuration.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DistributionConfigurationState {
     

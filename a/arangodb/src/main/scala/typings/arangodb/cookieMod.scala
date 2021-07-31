@@ -4,39 +4,38 @@ import typings.arangodb.ArangoDB.HashAlgorithm
 import typings.arangodb.Foxx.SessionTransport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cookieMod {
   
-  @JSImport("@arangodb/foxx/sessions/transports/cookie", JSImport.Namespace)
-  @js.native
-  def apply(): SessionTransport = js.native
-  @JSImport("@arangodb/foxx/sessions/transports/cookie", JSImport.Namespace)
-  @js.native
-  def apply(name: String): SessionTransport = js.native
-  @JSImport("@arangodb/foxx/sessions/transports/cookie", JSImport.Namespace)
-  @js.native
-  def apply(options: CookieTransportOptions): SessionTransport = js.native
+  @scala.inline
+  def apply(): SessionTransport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SessionTransport]
+  @scala.inline
+  def apply(name: String): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
+  @scala.inline
+  def apply(options: CookieTransportOptions): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
   
+  @JSImport("@arangodb/foxx/sessions/transports/cookie", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CookieTransportOptions extends StObject {
     
-    var algorithm: js.UndefOr[HashAlgorithm] = js.native
+    var algorithm: js.UndefOr[HashAlgorithm] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var httpOnly: js.UndefOr[String] = js.native
+    var httpOnly: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[String] = js.native
+    var secure: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object CookieTransportOptions {
     

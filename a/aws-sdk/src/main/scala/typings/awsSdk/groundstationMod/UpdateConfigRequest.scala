@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigRequest extends StObject {
   
   /**
     * Parameters of a Config.
     */
-  var configData: ConfigTypeData = js.native
+  var configData: ConfigTypeData
   
   /**
     * UUID of a Config.
     */
-  var configId: String = js.native
+  var configId: String
   
   /**
     * Type of a Config.
     */
-  var configType: ConfigCapabilityType = js.native
+  var configType: ConfigCapabilityType
   
   /**
     * Name of a Config.
     */
-  var name: SafeName = js.native
+  var name: SafeName
 }
 object UpdateConfigRequest {
   

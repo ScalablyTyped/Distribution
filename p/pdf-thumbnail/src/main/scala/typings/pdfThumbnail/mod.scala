@@ -4,36 +4,32 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: String): js.Promise[ReadableStream] = js.native
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream] = js.native
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: Buffer): js.Promise[ReadableStream] = js.native
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream] = js.native
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: ReadableStream): js.Promise[ReadableStream] = js.native
-  @JSImport("pdf-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(body: ReadableStream, options: PDFThumbnailOptions): js.Promise[ReadableStream] = js.native
+  @scala.inline
+  def apply(body: String): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  @scala.inline
+  def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  @scala.inline
+  def apply(body: Buffer): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  @scala.inline
+  def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  @scala.inline
+  def apply(body: ReadableStream): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  @scala.inline
+  def apply(body: ReadableStream, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
   
+  @JSImport("pdf-thumbnail", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CompressParams extends StObject {
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CompressParams {
     
@@ -60,18 +56,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CropParams extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var ratio: js.UndefOr[Boolean] = js.native
+    var ratio: js.UndefOr[Boolean] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object CropParams {
     
@@ -122,14 +117,13 @@ object mod {
     def resize: typings.pdfThumbnail.pdfThumbnailStrings.resize = "resize".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.resize]
   }
   
-  @js.native
   trait OperationsParams extends StObject {
     
-    var compress: CompressParams = js.native
+    var compress: CompressParams
     
-    var crop: CropParams = js.native
+    var crop: CropParams
     
-    var resize: ResizeParams = js.native
+    var resize: ResizeParams
   }
   object OperationsParams {
     
@@ -154,14 +148,13 @@ object mod {
   }
   
   /* Inlined {[ op in pdf-thumbnail.pdf-thumbnail.Operations ]:? pdf-thumbnail.pdf-thumbnail.OperationsParams[op]} */
-  @js.native
   trait PDFThumbnailOptions extends StObject {
     
-    var compress: js.UndefOr[CompressParams] = js.native
+    var compress: js.UndefOr[CompressParams] = js.undefined
     
-    var crop: js.UndefOr[CropParams] = js.native
+    var crop: js.UndefOr[CropParams] = js.undefined
     
-    var resize: js.UndefOr[ResizeParams] = js.native
+    var resize: js.UndefOr[ResizeParams] = js.undefined
   }
   object PDFThumbnailOptions {
     
@@ -194,12 +187,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizeParams extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ResizeParams {
     

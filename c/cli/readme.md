@@ -11,8 +11,8 @@ A tool for rapidly building command line apps
 | Full name          | cli |
 | Keywords           | cli, command line, opts, parseopt, opt, args, console, argsparse, optparse, autocomplete, command, autocompletion |
 | # releases         | 0 |
-| # dependents       | 560 |
-| # downloads        | 29684389 |
+| # dependents       | 569 |
+| # downloads        | 30058613 |
 | # stars            | 69 |
 
 ## Links

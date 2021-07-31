@@ -2,23 +2,21 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFSBucketFindOptions extends StObject {
   
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
-  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
-  var noCursorTimeout: js.UndefOr[Boolean] = js.native
+  var noCursorTimeout: js.UndefOr[Boolean] = js.undefined
   
-  var skip: js.UndefOr[scala.Double] = js.native
+  var skip: js.UndefOr[scala.Double] = js.undefined
   
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
 }
 object GridFSBucketFindOptions {
   

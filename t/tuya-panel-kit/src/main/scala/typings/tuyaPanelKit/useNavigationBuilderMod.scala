@@ -9,15 +9,17 @@ import typings.tuyaPanelKit.routersTypesMod.RouterFactory
 import typings.tuyaPanelKit.typesMod.DefaultNavigatorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useNavigationBuilderMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/core/useNavigationBuilder", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/core/useNavigationBuilder", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, _] */](
-    createRouter: RouterFactory[State, _, RouterOptions],
-    options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) with RouterOptions
-  ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, js.Any] */](
+    createRouter: RouterFactory[State, js.Any, RouterOptions],
+    options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) & RouterOptions
+  ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(createRouter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
 }

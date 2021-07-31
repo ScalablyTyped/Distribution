@@ -5,35 +5,33 @@ import typings.vegaTypings.transformMod.FieldRef
 import typings.vegaTypings.vegaTypingsStrings.contour
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bandwidth extends StObject {
   
-  var bandwidth: js.UndefOr[Double | SignalRef] = js.native
+  var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var cellSize: js.UndefOr[Double | SignalRef] = js.native
+  var cellSize: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var signal: js.UndefOr[String] = js.native
+  var signal: js.UndefOr[String] = js.undefined
   
-  var size: (js.Array[Double | SignalRef]) | SignalRef = js.native
+  var size: (js.Array[Double | SignalRef]) | SignalRef
   
-  var `type`: contour = js.native
+  var `type`: contour
   
   // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
-  var values: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var values: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var x: js.UndefOr[FieldRef] = js.native
+  var x: js.UndefOr[FieldRef] = js.undefined
   
-  var y: js.UndefOr[FieldRef] = js.native
+  var y: js.UndefOr[FieldRef] = js.undefined
 }
 object Bandwidth {
   
   @scala.inline
-  def apply(size: (js.Array[Double | SignalRef]) | SignalRef, `type`: contour): Bandwidth = {
+  def apply(size: (js.Array[Double | SignalRef]) | SignalRef): Bandwidth = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("contour")
     __obj.asInstanceOf[Bandwidth]
   }
   

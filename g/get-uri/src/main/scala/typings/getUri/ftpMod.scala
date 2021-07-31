@@ -7,22 +7,24 @@ import typings.node.urlMod.UrlWithStringQuery
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ftpMod {
   
-  @JSImport("get-uri/dist/ftp", JSImport.Default)
+  @JSImport("get-uri/dist/ftp", JSImport.Namespace)
   @js.native
-  def default(parsed: UrlWithStringQuery, opts: FTPOptions): js.Promise[Readable] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(parsed: UrlWithStringQuery, opts: FTPOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  
   trait FTPOptions
-    extends GetUriOptions
+    extends StObject
+       with GetUriOptions
        with Options {
     
     @JSName("cache")
-    var cache_FTPOptions: js.UndefOr[FTPReadable] = js.native
+    var cache_FTPOptions: js.UndefOr[FTPReadable] = js.undefined
   }
   object FTPOptions {
     

@@ -3,24 +3,22 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Frame> */
-@js.native
 trait PartialFrame extends StObject {
   
-  var baseframe: js.UndefOr[String] = js.native
+  var baseframe: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Array[Data]] = js.native
+  var data: js.UndefOr[js.Array[Data]] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var layout: js.UndefOr[PartialLayoutAngularaxis] = js.native
+  var layout: js.UndefOr[PartialLayoutAngularaxis] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var traces: js.UndefOr[js.Array[Double]] = js.native
+  var traces: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object PartialFrame {
   

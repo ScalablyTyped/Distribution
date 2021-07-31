@@ -4,225 +4,223 @@ import typings.std.Set
 import typings.wechatMiniprogram.DB.DatabaseAggregateCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Abs extends StObject {
   
-  var __safe_props__ : js.UndefOr[Set[String]] = js.native
+  var __safe_props__ : js.UndefOr[Set[String]] = js.undefined
   
-  def abs(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def abs(`val`: js.Any): DatabaseAggregateCommand
   
-  def add(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def add(`val`: js.Any): DatabaseAggregateCommand
   
-  def addToSet(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def addToSet(`val`: js.Any): DatabaseAggregateCommand
   
-  def allElementsTrue(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def allElementsTrue(`val`: js.Any): DatabaseAggregateCommand
   
-  def and(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def and(`val`: js.Any): DatabaseAggregateCommand
   
-  def anyElementTrue(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def anyElementTrue(`val`: js.Any): DatabaseAggregateCommand
   
-  def arrayElemAt(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def arrayElemAt(`val`: js.Any): DatabaseAggregateCommand
   
-  def arrayToObject(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def arrayToObject(`val`: js.Any): DatabaseAggregateCommand
   
-  def avg(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def avg(`val`: js.Any): DatabaseAggregateCommand
   
-  def ceil(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def ceil(`val`: js.Any): DatabaseAggregateCommand
   
-  def cmp(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def cmp(`val`: js.Any): DatabaseAggregateCommand
   
-  def concat(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def concat(`val`: js.Any): DatabaseAggregateCommand
   
-  def concatArrays(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def concatArrays(`val`: js.Any): DatabaseAggregateCommand
   
-  def cond(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def cond(`val`: js.Any): DatabaseAggregateCommand
   
-  def convert(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def convert(`val`: js.Any): DatabaseAggregateCommand
   
-  def dateFromParts(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dateFromParts(`val`: js.Any): DatabaseAggregateCommand
   
-  def dateFromString(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dateFromString(`val`: js.Any): DatabaseAggregateCommand
   
-  def dateToParts(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dateToParts(`val`: js.Any): DatabaseAggregateCommand
   
-  def dateToString(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dateToString(`val`: js.Any): DatabaseAggregateCommand
   
-  def dayOfMonth(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dayOfMonth(`val`: js.Any): DatabaseAggregateCommand
   
-  def dayOfWeek(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dayOfWeek(`val`: js.Any): DatabaseAggregateCommand
   
-  def dayOfYear(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def dayOfYear(`val`: js.Any): DatabaseAggregateCommand
   
-  def divide(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def divide(`val`: js.Any): DatabaseAggregateCommand
   
-  def eq(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def eq(`val`: js.Any): DatabaseAggregateCommand
   
-  def exp(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def exp(`val`: js.Any): DatabaseAggregateCommand
   
-  def filter(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def filter(`val`: js.Any): DatabaseAggregateCommand
   
-  def first(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def first(`val`: js.Any): DatabaseAggregateCommand
   
-  def floor(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def floor(`val`: js.Any): DatabaseAggregateCommand
   
-  def gt(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def gt(`val`: js.Any): DatabaseAggregateCommand
   
-  def gte(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def gte(`val`: js.Any): DatabaseAggregateCommand
   
-  def hour(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def hour(`val`: js.Any): DatabaseAggregateCommand
   
-  def ifNull(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def ifNull(`val`: js.Any): DatabaseAggregateCommand
   
-  def in(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def in(`val`: js.Any): DatabaseAggregateCommand
   
-  def indexOfArray(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def indexOfArray(`val`: js.Any): DatabaseAggregateCommand
   
-  def indexOfBytes(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def indexOfBytes(`val`: js.Any): DatabaseAggregateCommand
   
-  def indexOfCP(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def indexOfCP(`val`: js.Any): DatabaseAggregateCommand
   
-  def isArray(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def isArray(`val`: js.Any): DatabaseAggregateCommand
   
-  def isoDayOfWeek(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def isoDayOfWeek(`val`: js.Any): DatabaseAggregateCommand
   
-  def isoWeek(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def isoWeek(`val`: js.Any): DatabaseAggregateCommand
   
-  def isoWeekYear(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def isoWeekYear(`val`: js.Any): DatabaseAggregateCommand
   
-  def last(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def last(`val`: js.Any): DatabaseAggregateCommand
   
-  def let(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def let(`val`: js.Any): DatabaseAggregateCommand
   
-  def literal(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def literal(`val`: js.Any): DatabaseAggregateCommand
   
-  def ln(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def ln(`val`: js.Any): DatabaseAggregateCommand
   
-  def log(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def log(`val`: js.Any): DatabaseAggregateCommand
   
-  def log10(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def log10(`val`: js.Any): DatabaseAggregateCommand
   
-  def lt(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def lt(`val`: js.Any): DatabaseAggregateCommand
   
-  def lte(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def lte(`val`: js.Any): DatabaseAggregateCommand
   
-  def ltrim(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def ltrim(`val`: js.Any): DatabaseAggregateCommand
   
-  def map(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def map(`val`: js.Any): DatabaseAggregateCommand
   
-  def max(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def max(`val`: js.Any): DatabaseAggregateCommand
   
-  def mergeObjects(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def mergeObjects(`val`: js.Any): DatabaseAggregateCommand
   
-  def meta(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def meta(`val`: js.Any): DatabaseAggregateCommand
   
-  def millisecond(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def millisecond(`val`: js.Any): DatabaseAggregateCommand
   
-  def min(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def min(`val`: js.Any): DatabaseAggregateCommand
   
-  def minute(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def minute(`val`: js.Any): DatabaseAggregateCommand
   
-  def mod(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def mod(`val`: js.Any): DatabaseAggregateCommand
   
-  def month(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def month(`val`: js.Any): DatabaseAggregateCommand
   
-  def multiply(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def multiply(`val`: js.Any): DatabaseAggregateCommand
   
-  def neq(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def neq(`val`: js.Any): DatabaseAggregateCommand
   
-  def not(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def not(`val`: js.Any): DatabaseAggregateCommand
   
-  def objectToArray(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def objectToArray(`val`: js.Any): DatabaseAggregateCommand
   
-  def or(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def or(`val`: js.Any): DatabaseAggregateCommand
   
-  def pow(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def pow(`val`: js.Any): DatabaseAggregateCommand
   
-  def push(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def push(`val`: js.Any): DatabaseAggregateCommand
   
-  def range(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def range(`val`: js.Any): DatabaseAggregateCommand
   
-  def reduce(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def reduce(`val`: js.Any): DatabaseAggregateCommand
   
-  def reverseArray(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def reverseArray(`val`: js.Any): DatabaseAggregateCommand
   
-  def rtrim(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def rtrim(`val`: js.Any): DatabaseAggregateCommand
   
-  def second(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def second(`val`: js.Any): DatabaseAggregateCommand
   
-  def setDifference(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def setDifference(`val`: js.Any): DatabaseAggregateCommand
   
-  def setEquals(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def setEquals(`val`: js.Any): DatabaseAggregateCommand
   
-  def setIntersection(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def setIntersection(`val`: js.Any): DatabaseAggregateCommand
   
-  def setIsSubset(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def setIsSubset(`val`: js.Any): DatabaseAggregateCommand
   
-  def setUnion(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def setUnion(`val`: js.Any): DatabaseAggregateCommand
   
-  def size(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def size(`val`: js.Any): DatabaseAggregateCommand
   
-  def slice(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def slice(`val`: js.Any): DatabaseAggregateCommand
   
-  def split(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def split(`val`: js.Any): DatabaseAggregateCommand
   
-  def sqrt(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def sqrt(`val`: js.Any): DatabaseAggregateCommand
   
-  def stdDevPop(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def stdDevPop(`val`: js.Any): DatabaseAggregateCommand
   
-  def stdDevSamp(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def stdDevSamp(`val`: js.Any): DatabaseAggregateCommand
   
-  def strLenBytes(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def strLenBytes(`val`: js.Any): DatabaseAggregateCommand
   
-  def strLenCP(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def strLenCP(`val`: js.Any): DatabaseAggregateCommand
   
-  def strcasecmp(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def strcasecmp(`val`: js.Any): DatabaseAggregateCommand
   
-  def substr(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def substr(`val`: js.Any): DatabaseAggregateCommand
   
-  def substrBytes(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def substrBytes(`val`: js.Any): DatabaseAggregateCommand
   
-  def substrCP(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def substrCP(`val`: js.Any): DatabaseAggregateCommand
   
-  def subtract(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def subtract(`val`: js.Any): DatabaseAggregateCommand
   
-  def sum(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def sum(`val`: js.Any): DatabaseAggregateCommand
   
-  def switch(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def switch(`val`: js.Any): DatabaseAggregateCommand
   
-  def toBool(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toBool(`val`: js.Any): DatabaseAggregateCommand
   
-  def toDate(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toDate(`val`: js.Any): DatabaseAggregateCommand
   
-  def toDecimal(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toDecimal(`val`: js.Any): DatabaseAggregateCommand
   
-  def toDouble(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toDouble(`val`: js.Any): DatabaseAggregateCommand
   
-  def toInt(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toInt(`val`: js.Any): DatabaseAggregateCommand
   
-  def toLong(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toLong(`val`: js.Any): DatabaseAggregateCommand
   
-  def toLower(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toLower(`val`: js.Any): DatabaseAggregateCommand
   
-  def toObjectId(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toObjectId(`val`: js.Any): DatabaseAggregateCommand
   
-  def toString(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toString(`val`: js.Any): DatabaseAggregateCommand
   
-  def toUpper(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def toUpper(`val`: js.Any): DatabaseAggregateCommand
   
-  def trim(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def trim(`val`: js.Any): DatabaseAggregateCommand
   
-  def trunc(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def trunc(`val`: js.Any): DatabaseAggregateCommand
   
-  def `type`(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def `type`(`val`: js.Any): DatabaseAggregateCommand
   
-  def week(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def week(`val`: js.Any): DatabaseAggregateCommand
   
-  def year(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def year(`val`: js.Any): DatabaseAggregateCommand
   
-  def zip(`val`: js.Any): DatabaseAggregateCommand = js.native
+  def zip(`val`: js.Any): DatabaseAggregateCommand
 }
 object Abs {
   

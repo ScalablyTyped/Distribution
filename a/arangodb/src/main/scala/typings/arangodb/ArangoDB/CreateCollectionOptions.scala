@@ -3,27 +3,25 @@ package typings.arangodb.ArangoDB
 import typings.arangodb.anon.AllowUserKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCollectionOptions extends StObject {
   
-  var isSystem: js.UndefOr[Boolean] = js.native
+  var isSystem: js.UndefOr[Boolean] = js.undefined
   
-  var isVolatile: js.UndefOr[Boolean] = js.native
+  var isVolatile: js.UndefOr[Boolean] = js.undefined
   
-  var journalSize: js.UndefOr[Double] = js.native
+  var journalSize: js.UndefOr[Double] = js.undefined
   
-  var keyOptions: js.UndefOr[AllowUserKeys] = js.native
+  var keyOptions: js.UndefOr[AllowUserKeys] = js.undefined
   
-  var numberOfShards: js.UndefOr[Double] = js.native
+  var numberOfShards: js.UndefOr[Double] = js.undefined
   
-  var replicationFactor: js.UndefOr[Double] = js.native
+  var replicationFactor: js.UndefOr[Double] = js.undefined
   
-  var shardKeys: js.UndefOr[js.Array[String]] = js.native
+  var shardKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var waitForSync: js.UndefOr[Boolean] = js.native
+  var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
 object CreateCollectionOptions {
   

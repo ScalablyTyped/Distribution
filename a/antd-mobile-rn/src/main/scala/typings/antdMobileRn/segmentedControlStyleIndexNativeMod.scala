@@ -9,7 +9,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentedControlStyleIndexNativeMod {
@@ -52,18 +51,17 @@ object segmentedControlStyleIndexNativeMod {
     def segment_=(x: BorderColorBorderRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("segment")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISegmentControlStyle extends StObject {
     
-    var item: ViewStyle = js.native
+    var item: ViewStyle
     
-    var itemLeftRadius: ViewStyle = js.native
+    var itemLeftRadius: ViewStyle
     
-    var itemRightRadius: ViewStyle = js.native
+    var itemRightRadius: ViewStyle
     
-    var itemText: TextStyle = js.native
+    var itemText: TextStyle
     
-    var segment: ViewStyle = js.native
+    var segment: ViewStyle
   }
   object ISegmentControlStyle {
     

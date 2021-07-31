@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.deleteFileExceptionsUnionMod.DeleteFil
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBranchNameIsTagNameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BranchNameIsTagNameExceptionDetails> * / any */ @js.native
-  trait BranchNameIsTagNameException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BranchNameIsTagNameExceptionDetails> * / any */ trait BranchNameIsTagNameException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameIsTagNameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameIsTagNameException
   }
   object BranchNameIsTagNameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameIsTagNameException
-    ): BranchNameIsTagNameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BranchNameIsTagNameException = {
+      val __obj = js.Dynamic.literal(name = "BranchNameIsTagNameException")
       __obj.asInstanceOf[BranchNameIsTagNameException]
     }
     
@@ -37,6 +34,5 @@ object typesBranchNameIsTagNameExceptionMod {
     }
   }
   
-  @js.native
   trait BranchNameIsTagNameExceptionDetails extends StObject
 }

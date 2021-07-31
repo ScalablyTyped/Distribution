@@ -7,27 +7,25 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailableLocales extends StObject {
   
-  var availableLocales: Set[String] = js.native
+  var availableLocales: Set[String]
   
-  def getDefaultLocale(): String = js.native
+  def getDefaultLocale(): String
   
-  def getDefaultTimeZone(): String = js.native
+  def getDefaultTimeZone(): String
   
-  def getInternalSlots(dtf: DateTimeFormat): IntlDateTimeFormatInternal = js.native
+  def getInternalSlots(dtf: DateTimeFormat): IntlDateTimeFormatInternal
   
-  var localeData: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]] = js.native
+  var localeData: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]]
   
-  var relevantExtensionKeys: js.Array[String] = js.native
+  var relevantExtensionKeys: js.Array[String]
   
-  var tzData: Record[String, _] = js.native
+  var tzData: Record[String, js.Any]
   
-  var uppercaseLinks: Record[String, String] = js.native
+  var uppercaseLinks: Record[String, String]
 }
 object AvailableLocales {
   
@@ -39,7 +37,7 @@ object AvailableLocales {
     getInternalSlots: DateTimeFormat => IntlDateTimeFormatInternal,
     localeData: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]],
     relevantExtensionKeys: js.Array[String],
-    tzData: Record[String, _],
+    tzData: Record[String, js.Any],
     uppercaseLinks: Record[String, String]
   ): AvailableLocales = {
     val __obj = js.Dynamic.literal(availableLocales = availableLocales.asInstanceOf[js.Any], getDefaultLocale = js.Any.fromFunction0(getDefaultLocale), getDefaultTimeZone = js.Any.fromFunction0(getDefaultTimeZone), getInternalSlots = js.Any.fromFunction1(getInternalSlots), localeData = localeData.asInstanceOf[js.Any], relevantExtensionKeys = relevantExtensionKeys.asInstanceOf[js.Any], tzData = tzData.asInstanceOf[js.Any], uppercaseLinks = uppercaseLinks.asInstanceOf[js.Any])
@@ -71,7 +69,7 @@ object AvailableLocales {
     def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
     
     @scala.inline
-    def setTzData(value: Record[String, _]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
+    def setTzData(value: Record[String, js.Any]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUppercaseLinks(value: Record[String, String]): Self = StObject.set(x, "uppercaseLinks", value.asInstanceOf[js.Any])

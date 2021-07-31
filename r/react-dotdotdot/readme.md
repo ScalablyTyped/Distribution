@@ -11,8 +11,8 @@ Multiline text ellipsis for react
 | Full name          | react-dotdotdot |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 28 |
-| # downloads        | 4374901 |
+| # dependents       | 29 |
+| # downloads        | 4600342 |
 | # stars            | 2 |
 
 ## Links

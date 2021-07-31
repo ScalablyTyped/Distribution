@@ -4,10 +4,8 @@ import typings.monacoEditor.anon.DocComment
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageConfiguration extends StObject {
   
   /**
@@ -15,53 +13,53 @@ trait LanguageConfiguration extends StObject {
     *
     * @deprecated Will be replaced by a better API soon.
     */
-  var __electricCharacterSupport: js.UndefOr[DocComment] = js.native
+  var __electricCharacterSupport: js.UndefOr[DocComment] = js.undefined
   
   /**
     * Defines what characters must be after the cursor for bracket or quote autoclosing to occur when using the \'languageDefined\' autoclosing setting.
     *
     * This is typically the set of characters which can not start an expression, such as whitespace, closing brackets, non-unary operators, etc.
     */
-  var autoCloseBefore: js.UndefOr[String] = js.native
+  var autoCloseBefore: js.UndefOr[String] = js.undefined
   
   /**
     * The language's auto closing pairs. The 'close' character is automatically inserted with the
     * 'open' character is typed. If not set, the configured brackets will be used.
     */
-  var autoClosingPairs: js.UndefOr[js.Array[IAutoClosingPairConditional]] = js.native
+  var autoClosingPairs: js.UndefOr[js.Array[IAutoClosingPairConditional]] = js.undefined
   
   /**
     * The language's brackets.
     * This configuration implicitly affects pressing Enter around these brackets.
     */
-  var brackets: js.UndefOr[js.Array[CharacterPair]] = js.native
+  var brackets: js.UndefOr[js.Array[CharacterPair]] = js.undefined
   
   /**
     * The language's comment settings.
     */
-  var comments: js.UndefOr[CommentRule] = js.native
+  var comments: js.UndefOr[CommentRule] = js.undefined
   
   /**
     * The language's folding rules.
     */
-  var folding: js.UndefOr[FoldingRules] = js.native
+  var folding: js.UndefOr[FoldingRules] = js.undefined
   
   /**
     * The language's indentation settings.
     */
-  var indentationRules: js.UndefOr[IndentationRule] = js.native
+  var indentationRules: js.UndefOr[IndentationRule] = js.undefined
   
   /**
     * The language's rules to be evaluated when pressing Enter.
     */
-  var onEnterRules: js.UndefOr[js.Array[OnEnterRule]] = js.native
+  var onEnterRules: js.UndefOr[js.Array[OnEnterRule]] = js.undefined
   
   /**
     * The language's surrounding pairs. When the 'open' character is typed on a selection, the
     * selected string is surrounded by the open and close characters. If not set, the autoclosing pairs
     * settings will be used.
     */
-  var surroundingPairs: js.UndefOr[js.Array[IAutoClosingPair]] = js.native
+  var surroundingPairs: js.UndefOr[js.Array[IAutoClosingPair]] = js.undefined
   
   /**
     * The language's word definition.
@@ -70,7 +68,7 @@ trait LanguageConfiguration extends StObject {
     * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
     *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
     */
-  var wordPattern: js.UndefOr[RegExp] = js.native
+  var wordPattern: js.UndefOr[RegExp] = js.undefined
 }
 object LanguageConfiguration {
   

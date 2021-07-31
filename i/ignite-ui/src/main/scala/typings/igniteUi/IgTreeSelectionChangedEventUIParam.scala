@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the newly added nodes to the selection.
     */
-  var newNodes: js.UndefOr[js.Array[_]] = js.native
+  var newNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the tree.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to currently selected nodes.
     */
-  var selectedNodes: js.UndefOr[js.Array[_]] = js.native
+  var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object IgTreeSelectionChangedEventUIParam {
   
@@ -35,7 +33,7 @@ object IgTreeSelectionChangedEventUIParam {
   implicit class IgTreeSelectionChangedEventUIParamMutableBuilder[Self <: IgTreeSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setNewNodes(value: js.Array[_]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
+    def setNewNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNewNodesUndefined: Self = StObject.set(x, "newNodes", js.undefined)
@@ -50,7 +48,7 @@ object IgTreeSelectionChangedEventUIParam {
     def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setSelectedNodes(value: js.Array[_]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+    def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)

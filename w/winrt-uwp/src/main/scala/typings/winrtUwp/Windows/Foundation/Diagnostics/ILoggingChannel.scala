@@ -3,12 +3,13 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 import typings.winrtUwp.Windows.Foundation.IClosable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a source of log messages. */
 @js.native
-trait ILoggingChannel extends IClosable {
+trait ILoggingChannel
+  extends StObject
+     with IClosable {
   
   /** Gets a value that indicates whether messages are being logged on the current LoggingChannel . */
   var enabled: Boolean = js.native

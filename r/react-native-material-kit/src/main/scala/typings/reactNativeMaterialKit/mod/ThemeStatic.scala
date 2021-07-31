@@ -2,57 +2,55 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeStatic extends StObject {
   
-  var accentColor: js.UndefOr[String] = js.native
+  var accentColor: js.UndefOr[String] = js.undefined
   
-  var accentColorRGB: js.UndefOr[String] = js.native
+  var accentColorRGB: js.UndefOr[String] = js.undefined
   
-  var bgDisabled: js.UndefOr[String] = js.native
+  var bgDisabled: js.UndefOr[String] = js.undefined
   
-  var bgPlain: js.UndefOr[String] = js.native
+  var bgPlain: js.UndefOr[String] = js.undefined
   
-  var cardActionStyle: js.UndefOr[CardActionStyle] = js.native
+  var cardActionStyle: js.UndefOr[CardActionStyle] = js.undefined
   
-  var cardContentStyle: js.UndefOr[CardContentStyle] = js.native
+  var cardContentStyle: js.UndefOr[CardContentStyle] = js.undefined
   
-  var cardImageStyle: js.UndefOr[CardImageStyle] = js.native
+  var cardImageStyle: js.UndefOr[CardImageStyle] = js.undefined
   
-  var cardMenuStyle: js.UndefOr[CardMenuStyle] = js.native
+  var cardMenuStyle: js.UndefOr[CardMenuStyle] = js.undefined
   
-  var cardStyle: js.UndefOr[CardStyle] = js.native
+  var cardStyle: js.UndefOr[CardStyle] = js.undefined
   
-  var cardTitleStyle: js.UndefOr[CardTitleStyle] = js.native
+  var cardTitleStyle: js.UndefOr[CardTitleStyle] = js.undefined
   
-  var checkboxStyle: js.UndefOr[CheckboxStyle] = js.native
+  var checkboxStyle: js.UndefOr[CheckboxStyle] = js.undefined
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var iconToggleStyle: js.UndefOr[IconToggleStyle] = js.native
+  var iconToggleStyle: js.UndefOr[IconToggleStyle] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
   
-  var primaryColorRGB: js.UndefOr[String] = js.native
+  var primaryColorRGB: js.UndefOr[String] = js.undefined
   
-  var progressStyle: js.UndefOr[ProgressStyle] = js.native
+  var progressStyle: js.UndefOr[ProgressStyle] = js.undefined
   
-  var radioStyle: js.UndefOr[RadioStyle] = js.native
+  var radioStyle: js.UndefOr[RadioStyle] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var sliderStyle: js.UndefOr[SliderStyle] = js.native
+  var sliderStyle: js.UndefOr[SliderStyle] = js.undefined
   
-  var spinnerStyle: js.UndefOr[SpinnerStyle] = js.native
+  var spinnerStyle: js.UndefOr[SpinnerStyle] = js.undefined
   
-  var switchStyle: js.UndefOr[SwitchStyle] = js.native
+  var switchStyle: js.UndefOr[SwitchStyle] = js.undefined
   
-  var textfieldStyle: js.UndefOr[TextFieldStyle] = js.native
+  var textfieldStyle: js.UndefOr[TextFieldStyle] = js.undefined
 }
 object ThemeStatic {
   

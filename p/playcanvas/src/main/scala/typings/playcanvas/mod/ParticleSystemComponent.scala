@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -94,6 +93,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ParticleSystemComponent")
 @js.native
 class ParticleSystemComponent protected ()
-  extends typings.playcanvas.pc.ParticleSystemComponent {
+  extends StObject
+     with typings.playcanvas.pc.ParticleSystemComponent {
   def this(system: typings.playcanvas.pc.ParticleSystemComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

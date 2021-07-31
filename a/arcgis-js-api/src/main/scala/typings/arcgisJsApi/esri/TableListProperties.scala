@@ -2,60 +2,60 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableListProperties extends WidgetProperties {
+trait TableListProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#listItemCreatedFunction)
     */
-  var listItemCreatedFunction: js.UndefOr[TableListListItemCreatedHandler] = js.native
+  var listItemCreatedFunction: js.UndefOr[TableListListItemCreatedHandler] = js.undefined
   
   /**
     * A reference to a [web map](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) containing the tables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#map)
     */
-  var map: js.UndefOr[WebMapProperties] = js.native
+  var map: js.UndefOr[WebMapProperties] = js.undefined
   
   /**
     * Indicates whether more than one [list item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) can be selected by a user at a single time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#multipleSelectionEnabled)
     */
-  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.native
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A collection of selected [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html)s representing table list items selected by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#selectedItems)
     */
-  var selectedItems: js.UndefOr[CollectionProperties[TableListListItem]] = js.native
+  var selectedItems: js.UndefOr[CollectionProperties[TableListListItem]] = js.undefined
   
   /**
     * Indicates whether [list items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) may be selected by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#selectionEnabled)
     */
-  var selectionEnabled: js.UndefOr[Boolean] = js.native
+  var selectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#viewModel)
     */
-  var viewModel: js.UndefOr[TableListViewModel] = js.native
+  var viewModel: js.UndefOr[TableListViewModel] = js.undefined
 }
 object TableListProperties {
   

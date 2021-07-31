@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,29 +30,11 @@ trait IgTreeGridColumnMovingMethods extends StObject {
     * @param callback Specifies a custom function to be called when the column is moved.
     */
   def moveColumn(column: js.Object, target: js.Object): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  def moveColumn(column: js.Object, target: js.Object, after: js.UndefOr[scala.Nothing], inDom: Boolean): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Unit, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Boolean, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Unit, callback: js.Function): Unit = js.native
 }

@@ -3,11 +3,12 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeMediumInt extends DataTypeAbstractNumber[DataTypeMediumInt] {
+trait DataTypeMediumInt
+  extends StObject
+     with DataTypeAbstractNumber[DataTypeMediumInt] {
   
   /**
     * Length of the number field.

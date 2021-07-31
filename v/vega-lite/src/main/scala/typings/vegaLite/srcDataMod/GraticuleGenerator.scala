@@ -3,18 +3,17 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraticuleGenerator
-  extends Generator
-     with GeneratorBase {
+  extends StObject
+     with GeneratorBase
+     with Generator {
   
   /**
     * Generate graticule GeoJSON data for geographic reference lines.
     */
-  var graticule: `true` | GraticuleParams = js.native
+  var graticule: `true` | GraticuleParams
 }
 object GraticuleGenerator {
   

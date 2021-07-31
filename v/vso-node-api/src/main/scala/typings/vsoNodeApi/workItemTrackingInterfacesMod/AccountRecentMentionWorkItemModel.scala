@@ -3,46 +3,44 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRecentMentionWorkItemModel extends StObject {
   
   /**
     * Assigned To
     */
-  var assignedTo: String = js.native
+  var assignedTo: String
   
   /**
     * Work Item Id
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Lastest date that the user were mentioned
     */
-  var mentionedDateField: Date = js.native
+  var mentionedDateField: Date
   
   /**
     * State of the work item
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * Team project the work item belongs to
     */
-  var teamProject: String = js.native
+  var teamProject: String
   
   /**
     * Title of the work item
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Type of Work Item
     */
-  var workItemType: String = js.native
+  var workItemType: String
 }
 object AccountRecentMentionWorkItemModel {
   

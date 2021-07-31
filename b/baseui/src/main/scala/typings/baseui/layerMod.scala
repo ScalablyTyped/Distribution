@@ -22,7 +22,6 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
@@ -45,34 +44,33 @@ object layerMod {
     var host: Ref[HTMLElement] = js.native
   }
   
-  @js.native
   trait TETHER_PLACEMENT extends StObject {
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var bottom: typings.baseui.baseuiStrings.bottom = js.native
+    var bottom: typings.baseui.baseuiStrings.bottom
     
-    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft = js.native
+    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft
     
-    var bottomRight: typings.baseui.baseuiStrings.bottomRight = js.native
+    var bottomRight: typings.baseui.baseuiStrings.bottomRight
     
-    var left: typings.baseui.baseuiStrings.left = js.native
+    var left: typings.baseui.baseuiStrings.left
     
-    var leftBottom: typings.baseui.baseuiStrings.leftBottom = js.native
+    var leftBottom: typings.baseui.baseuiStrings.leftBottom
     
-    var leftTop: typings.baseui.baseuiStrings.leftTop = js.native
+    var leftTop: typings.baseui.baseuiStrings.leftTop
     
-    var right: typings.baseui.baseuiStrings.right = js.native
+    var right: typings.baseui.baseuiStrings.right
     
-    var rightBottom: typings.baseui.baseuiStrings.rightBottom = js.native
+    var rightBottom: typings.baseui.baseuiStrings.rightBottom
     
-    var rightTop: typings.baseui.baseuiStrings.rightTop = js.native
+    var rightTop: typings.baseui.baseuiStrings.rightTop
     
-    var top: typings.baseui.baseuiStrings.top = js.native
+    var top: typings.baseui.baseuiStrings.top
     
-    var topLeft: typings.baseui.baseuiStrings.topLeft = js.native
+    var topLeft: typings.baseui.baseuiStrings.topLeft
     
-    var topRight: typings.baseui.baseuiStrings.topRight = js.native
+    var topRight: typings.baseui.baseuiStrings.topRight
   }
   object TETHER_PLACEMENT {
     
@@ -145,20 +143,19 @@ object layerMod {
     var state_TetherBehavior: IsMounted = js.native
   }
   
-  @js.native
   trait LayerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var host: js.UndefOr[HTMLElement] = js.native
+    var host: js.UndefOr[HTMLElement] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var mountNode: js.UndefOr[HTMLElement] = js.native
+    var mountNode: js.UndefOr[HTMLElement] = js.undefined
     
-    var onMount: js.UndefOr[js.Function0[_]] = js.native
+    var onMount: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function0[_]] = js.native
+    var onUnmount: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object LayerProps {
     
@@ -196,25 +193,24 @@ object layerMod {
       def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
       @scala.inline
-      def setOnMount(value: () => _): Self = StObject.set(x, "onMount", js.Any.fromFunction0(value))
+      def setOnMount(value: () => js.Any): Self = StObject.set(x, "onMount", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
       @scala.inline
-      def setOnUnmount(value: () => _): Self = StObject.set(x, "onUnmount", js.Any.fromFunction0(value))
+      def setOnUnmount(value: () => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
     }
   }
   
-  @js.native
   trait LayersManagerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object LayersManagerProps {
     
@@ -241,12 +237,11 @@ object layerMod {
     }
   }
   
-  @js.native
   trait NormalizedOffset extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object NormalizedOffset {
     
@@ -267,12 +262,11 @@ object layerMod {
     }
   }
   
-  @js.native
   trait NormalizedOffsets extends StObject {
     
-    var arrow: js.UndefOr[NormalizedOffset] = js.native
+    var arrow: js.UndefOr[NormalizedOffset] = js.undefined
     
-    var popper: NormalizedOffset = js.native
+    var popper: NormalizedOffset
   }
   object NormalizedOffsets {
     
@@ -296,12 +290,11 @@ object layerMod {
     }
   }
   
-  @js.native
   trait PopperDataObject extends StObject {
     
-    var offsets: Arrow = js.native
+    var offsets: Arrow
     
-    var placement: String = js.native
+    var placement: String
   }
   object PopperDataObject {
     
@@ -322,12 +315,11 @@ object layerMod {
     }
   }
   
-  @js.native
   trait PopperOffset extends StObject {
     
-    var left: js.UndefOr[Double | Null] = js.native
+    var left: js.UndefOr[Double | Null] = js.undefined
     
-    var top: js.UndefOr[Double | Null] = js.native
+    var top: js.UndefOr[Double | Null] = js.undefined
   }
   object PopperOffset {
     
@@ -362,24 +354,25 @@ object layerMod {
   
   type TetherPlacement = TETHER_PLACEMENT
   
-  @js.native
   trait TetherProps extends StObject {
     
-    var anchorRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var anchorRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var arrowRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var arrowRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var onPopperUpdate: js.UndefOr[js.Function2[/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject, _]] = js.native
+    var onPopperUpdate: js.UndefOr[
+        js.Function2[/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject, js.Any]
+      ] = js.undefined
     
     var placement: js.UndefOr[
         topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-      ] = js.native
+      ] = js.undefined
     
-    var popperOptions: js.UndefOr[js.Any] = js.native
+    var popperOptions: js.UndefOr[js.Any] = js.undefined
     
-    var popperRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var popperRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
   }
   object TetherProps {
     
@@ -423,7 +416,7 @@ object layerMod {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setOnPopperUpdate(value: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => _): Self = StObject.set(x, "onPopperUpdate", js.Any.fromFunction2(value))
+      def setOnPopperUpdate(value: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => js.Any): Self = StObject.set(x, "onPopperUpdate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnPopperUpdateUndefined: Self = StObject.set(x, "onPopperUpdate", js.undefined)
@@ -456,10 +449,9 @@ object layerMod {
     }
   }
   
-  @js.native
   trait TetherState extends StObject {
     
-    var isMounted: Boolean = js.native
+    var isMounted: Boolean
   }
   object TetherState {
     

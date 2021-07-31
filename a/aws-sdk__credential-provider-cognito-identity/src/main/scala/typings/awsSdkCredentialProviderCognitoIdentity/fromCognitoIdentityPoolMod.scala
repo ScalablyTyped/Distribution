@@ -6,24 +6,27 @@ import typings.awsSdkCredentialProviderCognitoIdentity.storageMod.Storage
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromCognitoIdentityPoolMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentityPool", "fromCognitoIdentityPool")
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentityPool", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def fromCognitoIdentityPool(
     hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier: FromCognitoIdentityPoolParameters
-  ): CredentialProvider = js.native
+  ): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentityPool")(hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @js.native
-  trait FromCognitoIdentityPoolParameters extends CognitoProviderParameters {
+  trait FromCognitoIdentityPoolParameters
+    extends StObject
+       with CognitoProviderParameters {
     
     /**
       * A standard AWS account ID (9+ digits).
       */
-    var accountId: js.UndefOr[String] = js.native
+    var accountId: js.UndefOr[String] = js.undefined
     
     /**
       * A cache in which to store resolved Cognito IdentityIds. If not supplied,
@@ -39,20 +42,20 @@ object fromCognitoIdentityPoolMod {
       * The provider will not cache IdentityIds of authenticated users unless a
       * separate `userIdentitifer` parameter is supplied.
       */
-    var cache: js.UndefOr[Storage] = js.native
+    var cache: js.UndefOr[Storage] = js.undefined
     
     /**
       * The unique identifier for the identity pool from which an identity should
       * be retrieved or generated.
       */
-    var identityPoolId: String = js.native
+    var identityPoolId: String
     
     /**
       * A unique identifier for the user. This is distinct from a Cognito
       * IdentityId and should instead be an identifier meaningful to your
       * application. Used to cache Cognito IdentityIds on a per-user basis.
       */
-    var userIdentifier: js.UndefOr[String] = js.native
+    var userIdentifier: js.UndefOr[String] = js.undefined
   }
   object FromCognitoIdentityPoolParameters {
     

@@ -2,25 +2,23 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Start upload file request.
   */
-@js.native
 trait SchemaStartUploadItemRequest extends StObject {
   
   /**
     * Name of connector making this call. &lt;br /&gt;Format:
     * datasources/{source_id}/connectors/{ID}
     */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /**
     * Common debug options.
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
 }
 object SchemaStartUploadItemRequest {
   

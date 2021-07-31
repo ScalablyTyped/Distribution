@@ -2,49 +2,47 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Fabric util Interface
 //////////////////////////////////////////////////////////////////////////////
-@js.native
 trait IUtilAnimationOptions extends StObject {
   
   /**
     * Value to modify the property by
     */
-  var byValue: js.UndefOr[Double] = js.native
+  var byValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Duration of change (in ms)
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Easing function
     */
-  var easing: js.UndefOr[js.Function] = js.native
+  var easing: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Ending value
     */
-  var endValue: js.UndefOr[Double] = js.native
+  var endValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Callback; invoked on every value change
     */
-  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
   /**
     * Callback; invoked when value change is completed
     */
-  var onComplete: js.UndefOr[js.Function] = js.native
+  var onComplete: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Starting value
     */
-  var startValue: js.UndefOr[Double] = js.native
+  var startValue: js.UndefOr[Double] = js.undefined
 }
 object IUtilAnimationOptions {
   

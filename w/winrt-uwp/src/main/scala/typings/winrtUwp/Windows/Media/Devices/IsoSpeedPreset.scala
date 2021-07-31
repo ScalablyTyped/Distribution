@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,49 +13,73 @@ object IsoSpeedPreset extends StObject {
   
   /** The film speed is automatically set. */
   @js.native
-  sealed trait auto extends IsoSpeedPreset
+  sealed trait auto
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 100 ISO. */
   @js.native
-  sealed trait iso100 extends IsoSpeedPreset
+  sealed trait iso100
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 12800 ISO. */
   @js.native
-  sealed trait iso12800 extends IsoSpeedPreset
+  sealed trait iso12800
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 1600 ISO. */
   @js.native
-  sealed trait iso1600 extends IsoSpeedPreset
+  sealed trait iso1600
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 200 ISO. */
   @js.native
-  sealed trait iso200 extends IsoSpeedPreset
+  sealed trait iso200
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 25600 ISO. */
   @js.native
-  sealed trait iso25600 extends IsoSpeedPreset
+  sealed trait iso25600
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 3200 ISO. */
   @js.native
-  sealed trait iso3200 extends IsoSpeedPreset
+  sealed trait iso3200
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 400 ISO. */
   @js.native
-  sealed trait iso400 extends IsoSpeedPreset
+  sealed trait iso400
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 50 ISO. */
   @js.native
-  sealed trait iso50 extends IsoSpeedPreset
+  sealed trait iso50
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 6400 ISO. */
   @js.native
-  sealed trait iso6400 extends IsoSpeedPreset
+  sealed trait iso6400
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 80 ISO. */
   @js.native
-  sealed trait iso80 extends IsoSpeedPreset
+  sealed trait iso80
+    extends StObject
+       with IsoSpeedPreset
   
   /** The film speed is set to 800 ISO. */
   @js.native
-  sealed trait iso800 extends IsoSpeedPreset
+  sealed trait iso800
+    extends StObject
+       with IsoSpeedPreset
 }

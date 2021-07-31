@@ -2,12 +2,15 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object theming {
   
   object Parameters {
+    
+    @JSGlobal("sap.ui.core.theming.Parameters")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns the current value for one or more theming parameters, depending on the given
@@ -22,18 +25,14 @@ object theming {
       * scope set via a CSS class.
       * @returns the CSS parameter value(s)
       */
-    @JSGlobal("sap.ui.core.theming.Parameters.get")
-    @js.native
-    def get(vName: String): String | js.Any = js.native
-    @JSGlobal("sap.ui.core.theming.Parameters.get")
-    @js.native
-    def get(vName: String, oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
-    @JSGlobal("sap.ui.core.theming.Parameters.get")
-    @js.native
-    def get(vName: js.Array[String]): String | js.Any = js.native
-    @JSGlobal("sap.ui.core.theming.Parameters.get")
-    @js.native
-    def get(vName: js.Array[String], oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
+    @scala.inline
+    def get(vName: String): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(vName.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def get(vName: String, oElement: typings.openui5.sap.ui.core.Element): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(vName.asInstanceOf[js.Any], oElement.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
+    @scala.inline
+    def get(vName: js.Array[String]): String | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(vName.asInstanceOf[js.Any]).asInstanceOf[String | js.Any]
+    @scala.inline
+    def get(vName: js.Array[String], oElement: typings.openui5.sap.ui.core.Element): String | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(vName.asInstanceOf[js.Any], oElement.asInstanceOf[js.Any])).asInstanceOf[String | js.Any]
     
     /**
       * Returns the active scope(s) for a given control by looking up the hierarchy.The lookup navigates the
@@ -43,25 +42,22 @@ object theming {
       * @param oElement element/control instance
       * @returns Two dimensional array with scopes in bottom up order
       */
-    @JSGlobal("sap.ui.core.theming.Parameters.getActiveScopesFor")
-    @js.native
-    def getActiveScopesFor(oElement: js.Any): js.Array[js.Array[String]] = js.native
+    @scala.inline
+    def getActiveScopesFor(oElement: js.Any): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveScopesFor")(oElement.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
     
     /**
       * Returns the scopes from current theming parameters.
       * @param bAvoidLoading Whether loading of parameters should be avoided
       * @returns Scope names
       */
-    @JSGlobal("sap.ui.core.theming.Parameters._getScopes")
-    @js.native
-    def getScopes(bAvoidLoading: Boolean): js.Array[_] = js.native
+    @scala.inline
+    def getScopes(bAvoidLoading: Boolean): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_getScopes")(bAvoidLoading.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Resets the CSS parameters which finally will reload the parametersthe next time they are queried via
       * the method <code>get</code>.
       */
-    @JSGlobal("sap.ui.core.theming.Parameters.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   }
 }

@@ -2,20 +2,18 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for an alert feedback listing request.
   */
-@js.native
 trait SchemaListAlertFeedbackResponse extends StObject {
   
   /**
     * The list of alert feedback. Feedback entries for each alert are ordered
     * by creation time descending.
     */
-  var feedback: js.UndefOr[js.Array[SchemaAlertFeedback]] = js.native
+  var feedback: js.UndefOr[js.Array[SchemaAlertFeedback]] = js.undefined
 }
 object SchemaListAlertFeedbackResponse {
   

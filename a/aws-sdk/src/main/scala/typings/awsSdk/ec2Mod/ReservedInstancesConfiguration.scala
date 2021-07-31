@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstancesConfiguration extends StObject {
   
   /**
     * The Availability Zone for the modified Reserved Instances.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The number of modified Reserved Instances.  This is a required field for a request. 
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The instance type for the modified Reserved Instances.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The network platform of the modified Reserved Instances, which is either EC2-Classic or EC2-VPC.
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the Reserved Instance is applied to instances in a Region or instances in a specific Availability Zone.
     */
-  var Scope: js.UndefOr[scope] = js.native
+  var Scope: js.UndefOr[scope] = js.undefined
 }
 object ReservedInstancesConfiguration {
   

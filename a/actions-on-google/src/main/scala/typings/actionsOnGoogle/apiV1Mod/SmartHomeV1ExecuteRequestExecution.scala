@@ -4,17 +4,15 @@ import typings.actionsOnGoogle.anon.Ack
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1ExecuteRequestExecution extends StObject {
   
-  var challenge: js.UndefOr[Ack] = js.native
+  var challenge: js.UndefOr[Ack] = js.undefined
   
-  var command: String = js.native
+  var command: String
   
-  var params: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var params: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object SmartHomeV1ExecuteRequestExecution {
   
@@ -37,7 +35,7 @@ object SmartHomeV1ExecuteRequestExecution {
     def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: ApiClientObjectMap[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

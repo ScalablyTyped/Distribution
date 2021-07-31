@@ -2,51 +2,49 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisualViewport extends StObject {
   
   /**
     * Height (CSS pixels), excludes scrollbar if present.
     */
-  var clientHeight: Double = js.native
+  var clientHeight: Double
   
   /**
     * Width (CSS pixels), excludes scrollbar if present.
     */
-  var clientWidth: Double = js.native
+  var clientWidth: Double
   
   /**
     * Horizontal offset relative to the layout viewport (CSS pixels).
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     * Vertical offset relative to the layout viewport (CSS pixels).
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
   
   /**
     * Horizontal offset relative to the document (CSS pixels).
     */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /**
     * Vertical offset relative to the document (CSS pixels).
     */
-  var pageY: Double = js.native
+  var pageY: Double
   
   /**
     * Scale relative to the ideal viewport (size at width=device-width).
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * Page zoom factor (CSS to device independent pixels ratio).
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object VisualViewport {
   

@@ -6,11 +6,9 @@ import typings.winrtUwp.Windows.Media.Capture.MediaStreamType
 import typings.winrtUwp.Windows.Media.MediaProperties.IMediaEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Controls device settings on the microphone. */
-@js.native
 trait AudioDeviceController extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait AudioDeviceController extends StObject {
     * @param mediaStreamType The type of media stream for which to get the properties.
     * @return A list of the supported encoding properties.
     */
-  def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
+  def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties]
   
   /**
     * Gets the encoding properties for the specified media stream type for the device.
     * @param mediaStreamType The type of media stream for which to get the properties.
     * @return The encoding properties.
     */
-  def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
+  def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties
   
   /** Mutes or unmutes the microphone. */
-  var muted: Boolean = js.native
+  var muted: Boolean
   
   /**
     * Sets the encoding properties asynchronously for the specified media stream type for the device.
@@ -36,10 +34,10 @@ trait AudioDeviceController extends StObject {
     * @param mediaEncodingProperties The encoding properties to set.
     * @return An IAsyncAction object that is used to control the asynchronous operation.
     */
-  def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IPromiseWithIAsyncAction = js.native
+  def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IPromiseWithIAsyncAction
   
   /** Gets or sets the volume of the microphone. */
-  var volumePercent: Double = js.native
+  var volumePercent: Double
 }
 object AudioDeviceController {
   

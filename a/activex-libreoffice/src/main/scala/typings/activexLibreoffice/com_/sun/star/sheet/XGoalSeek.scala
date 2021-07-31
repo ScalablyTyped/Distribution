@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides seeking a goal value for a cell. */
-@js.native
-trait XGoalSeek extends XInterface {
+trait XGoalSeek
+  extends StObject
+     with XInterface {
   
   /**
     * calculates a value which gives a specified result in a formula.
@@ -19,7 +19,7 @@ trait XGoalSeek extends XInterface {
     * @param aGoalValue is the value which should be reached during the goal seek.
     * @returns the result of the goal seek, including the value that results in the specified goal, using the specified formula.
     */
-  def seekGoal(aFormulaPosition: CellAddress, aVariablePosition: CellAddress, aGoalValue: String): GoalResult = js.native
+  def seekGoal(aFormulaPosition: CellAddress, aVariablePosition: CellAddress, aGoalValue: String): GoalResult
 }
 object XGoalSeek {
   

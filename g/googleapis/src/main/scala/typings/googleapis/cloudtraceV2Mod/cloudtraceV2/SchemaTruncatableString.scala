@@ -2,20 +2,18 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a string that might be shortened to a specified length.
   */
-@js.native
 trait SchemaTruncatableString extends StObject {
   
   /**
     * The number of bytes removed from the original string. If this value is 0,
     * then the string was not shortened.
     */
-  var truncatedByteCount: js.UndefOr[Double] = js.native
+  var truncatedByteCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The shortened string. For example, if the original string is 500 bytes
@@ -25,7 +23,7 @@ trait SchemaTruncatableString extends StObject {
     * string, then the length of the shortened string might be less than the
     * size limit.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaTruncatableString {
   

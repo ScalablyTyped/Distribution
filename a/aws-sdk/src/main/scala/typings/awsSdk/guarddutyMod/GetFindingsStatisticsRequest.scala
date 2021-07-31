@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingsStatisticsRequest extends StObject {
   
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings' statistics you want to retrieve.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * Represents the criteria that is used for querying findings.
     */
-  var FindingCriteria: js.UndefOr[typings.awsSdk.guarddutyMod.FindingCriteria] = js.native
+  var FindingCriteria: js.UndefOr[typings.awsSdk.guarddutyMod.FindingCriteria] = js.undefined
   
   /**
     * The types of finding statistics to retrieve.
     */
-  var FindingStatisticTypes: typings.awsSdk.guarddutyMod.FindingStatisticTypes = js.native
+  var FindingStatisticTypes: typings.awsSdk.guarddutyMod.FindingStatisticTypes
 }
 object GetFindingsStatisticsRequest {
   

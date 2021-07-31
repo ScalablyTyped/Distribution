@@ -3,13 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Highlight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SectionListRenderItemInfo[ItemT, SectionT] extends ListRenderItemInfo[ItemT] {
+trait SectionListRenderItemInfo[ItemT, SectionT]
+  extends StObject
+     with ListRenderItemInfo[ItemT] {
   
-  var section: SectionListData[ItemT, SectionT] = js.native
+  var section: SectionListData[ItemT, SectionT]
 }
 object SectionListRenderItemInfo {
   
@@ -20,7 +20,7 @@ object SectionListRenderItemInfo {
   }
   
   @scala.inline
-  implicit class SectionListRenderItemInfoMutableBuilder[Self <: SectionListRenderItemInfo[_, _], ItemT, SectionT] (val x: Self with (SectionListRenderItemInfo[ItemT, SectionT])) extends AnyVal {
+  implicit class SectionListRenderItemInfoMutableBuilder[Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT] (val x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) extends AnyVal {
     
     @scala.inline
     def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])

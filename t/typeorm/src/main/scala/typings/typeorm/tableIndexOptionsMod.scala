@@ -2,51 +2,49 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableIndexOptionsMod {
   
-  @js.native
   trait TableIndexOptions extends StObject {
     
     /**
       * Columns included in this index.
       */
-    var columnNames: js.Array[String] = js.native
+    var columnNames: js.Array[String]
     
     /**
       * The FULLTEXT modifier indexes the entire column and does not allow prefixing.
       * Supported only in MySQL & SAP HANA.
       */
-    var isFulltext: js.UndefOr[Boolean] = js.native
+    var isFulltext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The SPATIAL modifier indexes the entire column and does not allow indexed columns to contain NULL values.
       * Works only in MySQL.
       */
-    var isSpatial: js.UndefOr[Boolean] = js.native
+    var isSpatial: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this index is unique.
       */
-    var isUnique: js.UndefOr[Boolean] = js.native
+    var isUnique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Fulltext parser.
       * Works only in MySQL.
       */
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
     /**
       * Index filter condition.
       */
-    var where: js.UndefOr[String] = js.native
+    var where: js.UndefOr[String] = js.undefined
   }
   object TableIndexOptions {
     

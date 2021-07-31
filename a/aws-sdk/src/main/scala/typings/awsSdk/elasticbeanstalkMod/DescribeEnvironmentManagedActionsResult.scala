@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentManagedActionsResult extends StObject {
   
   /**
     * A list of upcoming and in-progress managed actions.
     */
-  var ManagedActions: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ManagedActions] = js.native
+  var ManagedActions: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ManagedActions] = js.undefined
 }
 object DescribeEnvironmentManagedActionsResult {
   

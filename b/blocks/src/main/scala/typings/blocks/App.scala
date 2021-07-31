@@ -2,14 +2,15 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // blocks MVC App
 /////////////////////////////////////////
 @js.native
-trait App extends Extendable[App] {
+trait App
+  extends StObject
+     with Extendable[App] {
   
   def Collection(model: Model, prototype: CollectionPrototype): typings.blocks.Collection = js.native
   /**

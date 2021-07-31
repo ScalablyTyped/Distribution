@@ -4,19 +4,17 @@ import typings.ledgerhqHwAppBtc.mod.AddressFormat
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BitcoinAddress extends StObject {
     
-    var bitcoinAddress: String = js.native
+    var bitcoinAddress: String
     
-    var chainCode: String = js.native
+    var chainCode: String
     
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object BitcoinAddress {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[AddressFormat] = js.native
+    var format: js.UndefOr[AddressFormat] = js.undefined
     
-    var verify: js.UndefOr[Boolean] = js.native
+    var verify: js.UndefOr[Boolean] = js.undefined
   }
   object Format {
     
@@ -72,14 +69,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Index {
     
@@ -103,14 +99,13 @@ object anon {
     }
   }
   
-  @js.native
   trait R extends StObject {
     
-    var r: String = js.native
+    var r: String
     
-    var s: String = js.native
+    var s: String
     
-    var v: Double = js.native
+    var v: Double
   }
   object R {
     
@@ -134,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TrustedInput extends StObject {
     
-    var trustedInput: Boolean = js.native
+    var trustedInput: Boolean
     
-    var value: Buffer = js.native
+    var value: Buffer
   }
   object TrustedInput {
     

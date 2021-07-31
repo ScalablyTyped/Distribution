@@ -6,40 +6,58 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-actuator", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-actuator", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   type CustomControllerMethod = js.Function2[/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any], Unit]
   
-  @js.native
   trait CustomEndpoint extends StObject {
     
     /**
       * @summary Controller to be called when accessing this endpoint
       */
-    def controller(): Unit = js.native
-    def controller(req: js.UndefOr[scala.Nothing], res: js.Any): Unit = js.native
-    def controller(req: js.Any): Unit = js.native
-    def controller(req: js.Any, res: js.Any): Unit = js.native
+    def controller(): Unit
+    def controller(req: js.Any): Unit
+    def controller(req: js.Any, res: js.Any): Unit
+    def controller(req: Unit, res: js.Any): Unit
     /**
       * @summary Controller to be called when accessing this endpoint
       */
     @JSName("controller")
-    var controller_Original: CustomControllerMethod = js.native
+    var controller_Original: CustomControllerMethod
     
     /**
       * @summary Used as endpoint `/id` or `${basePath}/id`
       */
-    var id: String = js.native
+    var id: String
+  }
+  object CustomEndpoint {
+    
+    @scala.inline
+    def apply(controller: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit, id: String): CustomEndpoint = {
+      val __obj = js.Dynamic.literal(controller = js.Any.fromFunction2(controller), id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomEndpoint]
+    }
+    
+    @scala.inline
+    implicit class CustomEndpointMutableBuilder[Self <: CustomEndpoint] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setController(value: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -59,33 +77,32 @@ object mod {
   /**
     * @summary Options for {@link Actuator} function.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * @summary BasePath of Actuator.
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * @summary Custom endpoints
       */
-    var customEndpoints: js.UndefOr[js.Array[CustomEndpoint]] = js.native
+    var customEndpoints: js.UndefOr[js.Array[CustomEndpoint]] = js.undefined
     
     /**
       * @summary Extra Options to pass to info build output.
       */
-    var infoBuildOptions: js.UndefOr[Record[String, _]] = js.native
+    var infoBuildOptions: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * @summary DateFormat for info git.time output.
       */
-    var infoDateFormat: js.UndefOr[String] = js.native
+    var infoDateFormat: js.UndefOr[String] = js.undefined
     
     /**
       * @summary infoGitMode.
       */
-    var infoGitMode: js.UndefOr[InfoGitMode] = js.native
+    var infoGitMode: js.UndefOr[InfoGitMode] = js.undefined
   }
   object Options {
     
@@ -114,7 +131,7 @@ object mod {
       def setCustomEndpointsVarargs(value: CustomEndpoint*): Self = StObject.set(x, "customEndpoints", js.Array(value :_*))
       
       @scala.inline
-      def setInfoBuildOptions(value: Record[String, _]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
+      def setInfoBuildOptions(value: Record[String, js.Any]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInfoBuildOptionsUndefined: Self = StObject.set(x, "infoBuildOptions", js.undefined)

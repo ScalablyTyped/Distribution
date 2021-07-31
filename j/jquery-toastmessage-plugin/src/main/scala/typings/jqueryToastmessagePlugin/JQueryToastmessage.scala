@@ -4,7 +4,6 @@ import typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.removeTo
 import typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showToast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** jQuery Toastmessage (http://akquinet.github.io/jquery-toastmessage-plugin/) */
@@ -32,21 +31,20 @@ object JQueryToastmessage {
     def showWarningToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast = "showWarningToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast]
   }
   
-  @js.native
   trait ToastOptions extends StObject {
     
     /** callback function when the toastmessage is closed @default null */
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * text which will be shown as close button,
       * set to '' when you want to introduce an image via css
       * @default ''
       */
-    var closeText: js.UndefOr[String] = js.native
+    var closeText: js.UndefOr[String] = js.undefined
     
     /** in effect duration in miliseconds @default 600 */
-    var inEffectDuration: js.UndefOr[Double] = js.native
+    var inEffectDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Position of the toast container holding different toast.
@@ -54,21 +52,21 @@ object JQueryToastmessage {
       * changing the position after the first call does nothing
       * @default 'top-right'
       */
-    var position: js.UndefOr[ToastPosition] = js.native
+    var position: js.UndefOr[ToastPosition] = js.undefined
     
     /**
       * time in miliseconds before the item has to disappear @default 3000
       */
-    var stayTime: js.UndefOr[Double] = js.native
+    var stayTime: js.UndefOr[Double] = js.undefined
     
     /** should the toast item sticky or not? @default false */
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
     /** content of the item @default '' */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** the type of toast @default 'notice' */
-    var `type`: js.UndefOr[ToastType] = js.native
+    var `type`: js.UndefOr[ToastType] = js.undefined
   }
   object ToastOptions {
     

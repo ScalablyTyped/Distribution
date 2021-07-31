@@ -2,17 +2,15 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebViewContext extends StObject {
   
   /**
     * `webViewContext` is bound with a `web-view` component via webviewId to
     * implement some functions. List of `webViewContext` object methods:
     */
-  def postMessage(msg: js.Any): Unit = js.native
+  def postMessage(msg: js.Any): Unit
 }
 object WebViewContext {
   

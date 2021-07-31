@@ -4,53 +4,51 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisLabelCfg extends StObject {
   
   /**
     * 是否自动省略，默认 false
     * @type {boolean|avoidCallback|string}
     */
-  var autoEllipsis: js.UndefOr[Boolean | avoidCallback | String] = js.native
+  var autoEllipsis: js.UndefOr[Boolean | avoidCallback | String] = js.undefined
   
   /**
     * 是否自动隐藏，默认 false
     * @type {boolean|avoidCallback|string}
     */
-  var autoHide: js.UndefOr[Boolean | avoidCallback | String] = js.native
+  var autoHide: js.UndefOr[Boolean | avoidCallback | String] = js.undefined
   
   /**
     * 是否自动旋转，默认 true
     * @type {boolean|avoidCallback|string}
     */
-  var autoRotate: js.UndefOr[Boolean | avoidCallback | String] = js.native
+  var autoRotate: js.UndefOr[Boolean | avoidCallback | String] = js.undefined
   
   /**
     * 格式化函数
     * @type {formatterCallback}
     */
-  var formatter: js.UndefOr[formatterCallback] = js.native
+  var formatter: js.UndefOr[formatterCallback] = js.undefined
   
   /**
     * label 的偏移量
     * @type {number}
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * 文本旋转角度
     * @type {number}
     */
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
   
   /**
     * 坐标轴文本的样式
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.native
+  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.undefined
 }
 object AxisLabelCfg {
   

@@ -2,21 +2,19 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakpointResolvedEventDataType extends StObject {
   
   /**
     * Breakpoint unique identifier.
     */
-  var breakpointId: BreakpointId = js.native
+  var breakpointId: BreakpointId
   
   /**
     * Actual breakpoint location.
     */
-  var location: Location = js.native
+  var location: Location
 }
 object BreakpointResolvedEventDataType {
   

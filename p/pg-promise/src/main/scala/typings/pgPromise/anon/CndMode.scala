@@ -3,17 +3,15 @@ package typings.pgPromise.anon
 import typings.pgPromise.mod.TransactionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CndMode extends StObject {
   
-  var cnd: js.UndefOr[js.Any] = js.native
+  var cnd: js.UndefOr[js.Any] = js.undefined
   
-  var mode: js.UndefOr[TransactionMode | Null] = js.native
+  var mode: js.UndefOr[TransactionMode | Null] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.native
+  var tag: js.UndefOr[js.Any] = js.undefined
 }
 object CndMode {
   

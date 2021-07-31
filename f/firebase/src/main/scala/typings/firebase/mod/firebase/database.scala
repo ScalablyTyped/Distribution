@@ -4,7 +4,6 @@ import typings.firebase.mod.firebase.app.App
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object database {
@@ -24,7 +23,6 @@ object database {
     * data, you always call the `set()` method on a `Reference` directly).
     *
     */
-  @js.native
   trait DataSnapshot extends StObject {
     
     /**
@@ -60,7 +58,7 @@ object database {
       *
       * @param path A relative path to the location of child data.
       */
-    def child(path: String): DataSnapshot = js.native
+    def child(path: String): DataSnapshot
     
     /**
       * Returns true if this `DataSnapshot` contains any data. It is slightly more
@@ -87,7 +85,7 @@ object database {
       *   });
       * ```
       */
-    def exists(): Boolean = js.native
+    def exists(): Boolean
     
     /**
       * Exports the entire contents of the DataSnapshot as a JavaScript object.
@@ -98,7 +96,7 @@ object database {
       * @return The DataSnapshot's contents as a JavaScript value (Object,
       *   Array, string, number, boolean, or `null`).
       */
-    def exportVal(): js.Any = js.native
+    def exportVal(): js.Any
     
     /**
       * Enumerates the top-level children in the `DataSnapshot`.
@@ -167,7 +165,7 @@ object database {
       * @return true if enumeration was canceled due to your callback
       *   returning true.
       */
-    def forEach(action: js.Function1[/* a */ this.type, Boolean | Unit]): Boolean = js.native
+    def forEach(action: js.Function1[/* a */ this.type, Boolean | Unit]): Boolean
     
     /**
       * Gets the priority value of the data in this `DataSnapshot`.
@@ -178,7 +176,7 @@ object database {
       *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
       *  Sorting and filtering data}).
       */
-    def getPriority(): String | Double | Null = js.native
+    def getPriority(): String | Double | Null
     
     /**
       * Returns true if the specified child path has (non-null) data.
@@ -206,7 +204,7 @@ object database {
       * @return `true` if data exists at the specified child path; else
       *  `false`.
       */
-    def hasChild(path: String): Boolean = js.native
+    def hasChild(path: String): Boolean
     
     /**
       * Returns whether or not the `DataSnapshot` has any non-`null` child
@@ -239,7 +237,7 @@ object database {
       *
       * @return true if this snapshot has any children; else false.
       */
-    def hasChildren(): Boolean = js.native
+    def hasChildren(): Boolean
     
     /**
       * The key (last part of the path) of the location of this `DataSnapshot`.
@@ -277,7 +275,7 @@ object database {
       *   });
       * ```
       */
-    var key: String | Null = js.native
+    var key: String | Null
     
     /**
       * Returns the number of child properties of this `DataSnapshot`.
@@ -301,17 +299,17 @@ object database {
       *   });
       * ```
       */
-    def numChildren(): Double = js.native
+    def numChildren(): Double
     
     /**
       * The `Reference` for the location that generated this `DataSnapshot`.
       */
-    var ref: Reference = js.native
+    var ref: Reference
     
     /**
       * Returns a JSON-serializable representation of this object.
       */
-    def toJSON(): js.Object | Null = js.native
+    def toJSON(): js.Object | Null
     
     /**
       * Extracts a JavaScript value from a `DataSnapshot`.
@@ -350,7 +348,7 @@ object database {
       * @return The DataSnapshot's contents as a JavaScript value (Object,
       *   Array, string, number, boolean, or `null`).
       */
-    def `val`(): js.Any = js.native
+    def `val`(): js.Any
   }
   object DataSnapshot {
     
@@ -368,7 +366,7 @@ object database {
       toJSON: () => js.Object | Null,
       `val`: () => js.Any
     ): DataSnapshot = {
-      val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+      val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), key = null)
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
       __obj.asInstanceOf[DataSnapshot]
     }
@@ -628,8 +626,8 @@ object database {
       * @return Resolves when synchronization to the server
       *   is complete.
       */
-    def cancel(): js.Promise[_] = js.native
-    def cancel(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def cancel(): js.Promise[js.Any] = js.native
+    def cancel(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Ensures the data at this location is deleted when the client is disconnected
@@ -642,8 +640,8 @@ object database {
       * @return Resolves when synchronization to the server
       *   is complete.
       */
-    def remove(): js.Promise[_] = js.native
-    def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def remove(): js.Promise[js.Any] = js.native
+    def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Ensures the data at this location is set to the specified value when the
@@ -676,20 +674,20 @@ object database {
       * @return Resolves when synchronization to the
       *   Database is complete.
       */
-    def set(value: js.Any): js.Promise[_] = js.native
-    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def set(value: js.Any): js.Promise[js.Any] = js.native
+    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Ensures the data at this location is set to the specified value and priority
       * when the client is disconnected (due to closing the browser, navigating to a
       * new page, or network issues).
       */
-    def setWithPriority(value: js.Any): js.Promise[_] = js.native
-    def setWithPriority(value: js.Any, priority: String): js.Promise[_] = js.native
-    def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(value: js.Any, priority: Double): js.Promise[_] = js.native
-    def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def setWithPriority(value: js.Any): js.Promise[js.Any] = js.native
+    def setWithPriority(value: js.Any, priority: String): js.Promise[js.Any] = js.native
+    def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(value: js.Any, priority: Double): js.Promise[js.Any] = js.native
+    def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Writes multiple values at this location when the client is disconnected (due
@@ -728,8 +726,8 @@ object database {
       * @return Resolves when synchronization to the
       *   Database is complete.
       */
-    def update(values: js.Object): js.Promise[_] = js.native
-    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def update(values: js.Object): js.Promise[js.Any] = js.native
+    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
   }
   
   /**
@@ -1003,27 +1001,27 @@ object database {
       * @param context The context that was passed to `on()`.
       */
     def off(): Unit = js.native
-    def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
     def off(
-      eventType: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+      eventType: Unit,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): Unit = js.native
     def off(
-      eventType: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      eventType: Unit,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       context: js.Object
     ): Unit = js.native
+    def off(eventType: Unit, callback: Unit, context: js.Object): Unit = js.native
     def off(eventType: EventType): Unit = js.native
-    def off(eventType: EventType, callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
     def off(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): Unit = js.native
     def off(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       context: js.Object
     ): Unit = js.native
+    def off(eventType: EventType, callback: Unit, context: js.Object): Unit = js.native
     
     /**
       * Listens for data changes at a particular location.
@@ -1139,31 +1137,31 @@ object database {
       */
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      cancelCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
-    def on(
-      eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: js.Object,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: Null,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
+    def on(
+      eventType: EventType,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
+      cancelCallbackOrContext: Unit,
+      context: js.Object
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     
     /**
       * Listens for exactly one event of the specified event type, and then stops
@@ -1201,76 +1199,62 @@ object database {
     def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Object,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: Null,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
+      failureCallbackOrContext: Unit,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: js.Object): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: js.Object
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Object,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: Null,
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: Null, context: js.Object): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: Unit, context: js.Object): js.Promise[DataSnapshot] = js.native
     
     /**
       * Generates a new `Query` object ordered by the specified child key.
@@ -1422,7 +1406,9 @@ object database {
     *   Read and Write Data on the Web}
     */
   @js.native
-  trait Reference extends Query {
+  trait Reference
+    extends StObject
+       with Query {
     
     /**
       * Gets a `Reference` for the location at the specified relative path.
@@ -1547,9 +1533,9 @@ object database {
       *   used immediately as the `Reference` to the child location.
       */
     def push(): ThenableReference = js.native
-    def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
     def push(value: js.Any): ThenableReference = js.native
-    def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
+    def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): ThenableReference = js.native
+    def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, js.Any]): ThenableReference = js.native
     
     /**
       * Removes the data at this Database location.
@@ -1578,8 +1564,8 @@ object database {
       *   complete.
       * @return Resolves when remove on server is complete.
       */
-    def remove(): js.Promise[_] = js.native
-    def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def remove(): js.Promise[js.Any] = js.native
+    def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * The root `Reference` of the Database.
@@ -1659,8 +1645,8 @@ object database {
       *   complete.
       * @return Resolves when write to server is complete.
       */
-    def set(value: js.Any): js.Promise[_] = js.native
-    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def set(value: js.Any): js.Promise[js.Any] = js.native
+    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Sets a priority for the data at this Database location.
@@ -1671,9 +1657,9 @@ object database {
       *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
       *  Sorting and filtering data}).
       */
-    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Writes data the Database location. Like `set()` but also specifies the
@@ -1685,12 +1671,12 @@ object database {
       *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
       *  Sorting and filtering data}).
       */
-    def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Atomically modifies the data at this location.
@@ -1777,21 +1763,17 @@ object database {
       * @return Returns a Promise that can optionally be used instead of the onComplete
       *   callback to handle success and failure.
       */
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[js.Any] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.UndefOr[scala.Nothing],
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
+      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any]
+    ): js.Promise[js.Any] = js.native
+    def transaction(
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
+      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any],
       applyLocally: Boolean
-    ): js.Promise[_] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _]
-    ): js.Promise[_] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _],
-      applyLocally: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * Writes multiple values to the Database at once.
@@ -1839,8 +1821,8 @@ object database {
       *   complete.
       * @return Resolves when update on server is complete.
       */
-    def update(values: js.Object): js.Promise[_] = js.native
-    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def update(values: js.Object): js.Promise[js.Any] = js.native
+    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
   }
   
   /* Inlined parent firebase.firebase.firebase.database.Reference */
@@ -2149,27 +2131,27 @@ object database {
       * @param context The context that was passed to `on()`.
       */
     def off(): Unit = js.native
-    def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
     def off(
-      eventType: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+      eventType: Unit,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): Unit = js.native
     def off(
-      eventType: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      eventType: Unit,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       context: js.Object
     ): Unit = js.native
+    def off(eventType: Unit, callback: Unit, context: js.Object): Unit = js.native
     def off(eventType: EventType): Unit = js.native
-    def off(eventType: EventType, callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
     def off(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): Unit = js.native
     def off(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       context: js.Object
     ): Unit = js.native
+    def off(eventType: EventType, callback: Unit, context: js.Object): Unit = js.native
     
     /**
       * Listens for data changes at a particular location.
@@ -2285,31 +2267,31 @@ object database {
       */
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      cancelCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
-    def on(
-      eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: js.Object,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       cancelCallbackOrContext: Null,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
+    def on(
+      eventType: EventType,
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
+      cancelCallbackOrContext: Unit,
+      context: js.Object
+    ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], js.Any] = js.native
     
     /**
       * Returns an `OnDisconnect` object - see
@@ -2356,76 +2338,62 @@ object database {
     def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: js.Object,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
       failureCallbackOrContext: Null,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any],
+      failureCallbackOrContext: Unit,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: js.Object): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: js.Object
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+      successCallback: Unit,
       failureCallbackOrContext: js.Object,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
-      failureCallbackOrContext: Null,
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: Null, context: js.Object): js.Promise[DataSnapshot] = js.native
+    def once(eventType: EventType, successCallback: Unit, failureCallbackOrContext: Unit, context: js.Object): js.Promise[DataSnapshot] = js.native
     
     /**
       * Generates a new `Query` object ordered by the specified child key.
@@ -2576,9 +2544,9 @@ object database {
       *   used immediately as the `Reference` to the child location.
       */
     def push(): ThenableReference = js.native
-    def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
     def push(value: js.Any): ThenableReference = js.native
-    def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
+    def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): ThenableReference = js.native
+    def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, js.Any]): ThenableReference = js.native
     
     /**
       * Returns a `Reference` to the `Query`'s location.
@@ -2612,8 +2580,8 @@ object database {
       *   complete.
       * @return Resolves when remove on server is complete.
       */
-    def remove(): js.Promise[_] = js.native
-    def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def remove(): js.Promise[js.Any] = js.native
+    def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * The root `Reference` of the Database.
@@ -2693,8 +2661,8 @@ object database {
       *   complete.
       * @return Resolves when write to server is complete.
       */
-    def set(value: js.Any): js.Promise[_] = js.native
-    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def set(value: js.Any): js.Promise[js.Any] = js.native
+    def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Sets a priority for the data at this Database location.
@@ -2705,9 +2673,9 @@ object database {
       *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
       *  Sorting and filtering data}).
       */
-    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Writes data the Database location. Like `set()` but also specifies the
@@ -2719,12 +2687,12 @@ object database {
       *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
       *  Sorting and filtering data}).
       */
-    def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Creates a `Query` with the specified starting point.
@@ -2864,21 +2832,17 @@ object database {
       * @return Returns a Promise that can optionally be used instead of the onComplete
       *   callback to handle success and failure.
       */
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[js.Any] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.UndefOr[scala.Nothing],
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
+      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any]
+    ): js.Promise[js.Any] = js.native
+    def transaction(
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
+      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any],
       applyLocally: Boolean
-    ): js.Promise[_] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _]
-    ): js.Promise[_] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _],
-      applyLocally: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * Writes multiple values to the Database at once.
@@ -2926,7 +2890,7 @@ object database {
       *   complete.
       * @return Resolves when update on server is complete.
       */
-    def update(values: js.Object): js.Promise[_] = js.native
-    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+    def update(values: js.Object): js.Promise[js.Any] = js.native
+    def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
   }
 }

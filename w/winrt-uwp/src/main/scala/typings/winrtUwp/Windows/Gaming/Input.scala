@@ -10,7 +10,6 @@ import typings.winrtUwp.winrtUwpStrings.headsetdisconnected
 import typings.winrtUwp.winrtUwpStrings.userchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to game controller input. */
@@ -25,70 +24,100 @@ object Input {
     
     /** A button. */
     @js.native
-    sealed trait a extends GamepadButtons
+    sealed trait a
+      extends StObject
+         with GamepadButtons
     
     /** B button. */
     @js.native
-    sealed trait b extends GamepadButtons
+    sealed trait b
+      extends StObject
+         with GamepadButtons
     
     /** D-pad down. */
     @js.native
-    sealed trait dpadDown extends GamepadButtons
+    sealed trait dpadDown
+      extends StObject
+         with GamepadButtons
     
     /** D-pad left. */
     @js.native
-    sealed trait dpadLeft extends GamepadButtons
+    sealed trait dpadLeft
+      extends StObject
+         with GamepadButtons
     
     /** D-pad right. */
     @js.native
-    sealed trait dpadRight extends GamepadButtons
+    sealed trait dpadRight
+      extends StObject
+         with GamepadButtons
     
     /** D-pad up. */
     @js.native
-    sealed trait dpadUp extends GamepadButtons
+    sealed trait dpadUp
+      extends StObject
+         with GamepadButtons
     
     /** Left bumper. */
     @js.native
-    sealed trait leftShoulder extends GamepadButtons
+    sealed trait leftShoulder
+      extends StObject
+         with GamepadButtons
     
     /** Left stick. */
     @js.native
-    sealed trait leftThumbstick extends GamepadButtons
+    sealed trait leftThumbstick
+      extends StObject
+         with GamepadButtons
     
     /** Menu button. */
     @js.native
-    sealed trait menu extends GamepadButtons
+    sealed trait menu
+      extends StObject
+         with GamepadButtons
     
     /** No button. */
     @js.native
-    sealed trait none extends GamepadButtons
+    sealed trait none
+      extends StObject
+         with GamepadButtons
     
     /** Right bumper. */
     @js.native
-    sealed trait rightShoulder extends GamepadButtons
+    sealed trait rightShoulder
+      extends StObject
+         with GamepadButtons
     
     /** Right stick. */
     @js.native
-    sealed trait rightThumbstick extends GamepadButtons
+    sealed trait rightThumbstick
+      extends StObject
+         with GamepadButtons
     
     /** View button. */
     @js.native
-    sealed trait view extends GamepadButtons
+    sealed trait view
+      extends StObject
+         with GamepadButtons
     
     /** X button. */
     @js.native
-    sealed trait x extends GamepadButtons
+    sealed trait x
+      extends StObject
+         with GamepadButtons
     
     /** Y button. */
     @js.native
-    sealed trait y extends GamepadButtons
+    sealed trait y
+      extends StObject
+         with GamepadButtons
   }
   
   /** Represents a game controller. */
   @js.native
   trait Gamepad extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headsetconnected(`type`: headsetconnected, listener: TypedEventHandler[IGameController, Headset]): Unit = js.native
     @JSName("addEventListener")
@@ -109,24 +138,24 @@ object Input {
     var isWireless: Boolean = js.native
     
     /** Signals when a headset is attached to the gamepad. */
-    def onheadsetconnected(ev: Headset with WinRTEvent[IGameController]): Unit = js.native
+    def onheadsetconnected(ev: Headset & WinRTEvent[IGameController]): Unit = js.native
     /** Signals when a headset is attached to the gamepad. */
     @JSName("onheadsetconnected")
     var onheadsetconnected_Original: TypedEventHandler[IGameController, Headset] = js.native
     
     /** Signals when a headset is disconnected from the gamepad. */
-    def onheadsetdisconnected(ev: Headset with WinRTEvent[IGameController]): Unit = js.native
+    def onheadsetdisconnected(ev: Headset & WinRTEvent[IGameController]): Unit = js.native
     /** Signals when a headset is disconnected from the gamepad. */
     @JSName("onheadsetdisconnected")
     var onheadsetdisconnected_Original: TypedEventHandler[IGameController, Headset] = js.native
     
     /** Signals when the user associated with the gamepad has changed. */
-    def onuserchanged(ev: UserChangedEventArgs with WinRTEvent[IGameController]): Unit = js.native
+    def onuserchanged(ev: UserChangedEventArgs & WinRTEvent[IGameController]): Unit = js.native
     /** Signals when the user associated with the gamepad has changed. */
     @JSName("onuserchanged")
     var onuserchanged_Original: TypedEventHandler[IGameController, UserChangedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_headsetconnected(`type`: headsetconnected, listener: TypedEventHandler[IGameController, Headset]): Unit = js.native
     @JSName("removeEventListener")
@@ -142,32 +171,31 @@ object Input {
   }
   
   /** Represents the current state of the controller. */
-  @js.native
   trait GamepadReading extends StObject {
     
     /** The state of the controller buttons. */
-    var buttons: GamepadButtons = js.native
+    var buttons: GamepadButtons
     
     /** The position of the left thumbstick on the X-asxis. The value is between -1.0 and 1.0. */
-    var leftThumbstickX: Double = js.native
+    var leftThumbstickX: Double
     
     /** The position of the left thumbstick on the Y-axis.The value is between -1.0 and 1.0. */
-    var leftThumbstickY: Double = js.native
+    var leftThumbstickY: Double
     
     /** The position of the left trigger. The value is between 0.0 (not depressed) and 1.0 (fully depressed). */
-    var leftTrigger: Double = js.native
+    var leftTrigger: Double
     
     /** The position of the right thumbstick on the X-axis.The value is between -1.0 and 1.0. */
-    var rightThumbstickX: Double = js.native
+    var rightThumbstickX: Double
     
     /** The position of the right thumbstick on the Y-axis. The value is between -1.0 and 1.0. */
-    var rightThumbstickY: Double = js.native
+    var rightThumbstickY: Double
     
     /** The position of the right trigger. The value is between 0.0 (not depressed) and 1.0 (fully depressed). */
-    var rightTrigger: Double = js.native
+    var rightTrigger: Double
     
     /** Time when the state was retrieved from the controller. */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object GamepadReading {
     
@@ -216,20 +244,19 @@ object Input {
   }
   
   /** Describes the speed of the gamepad's four available vibration motors. */
-  @js.native
   trait GamepadVibration extends StObject {
     
     /** The level of the left vibration motor. Valid values are between 0.0 and 1.0, where 0.0 signifies no motor use and 1.0 signifies max vibration. */
-    var leftMotor: Double = js.native
+    var leftMotor: Double
     
     /** The left trigger vibration level. Valid values are between 0.0 and 1.0, where 0.0 signifies no motor use and 1.0 signifies max vibration. */
-    var leftTrigger: Double = js.native
+    var leftTrigger: Double
     
     /** The level of the right vibration motor. Valid values are between 0.0 and 1.0, where 0.0 signifies no motor use and 1.0 signifies max vibration. */
-    var rightMotor: Double = js.native
+    var rightMotor: Double
     
     /** The right trigger vibration level, Valid values are between 0.0 and 1.0, where 0.0 signifies no motor use and 1.0 signifies max vibration. */
-    var rightTrigger: Double = js.native
+    var rightTrigger: Double
   }
   object GamepadVibration {
     
@@ -257,14 +284,13 @@ object Input {
   }
   
   /** Contains information about an audio headset attached to a gamepad. */
-  @js.native
   trait Headset extends StObject {
     
     /** The XAudio endpoint ID for the headset's audio capture device. */
-    var captureDeviceId: String = js.native
+    var captureDeviceId: String
     
     /** The XAudio enpoint ID for the headset's audio render device. */
-    var renderDeviceId: String = js.native
+    var renderDeviceId: String
   }
   object Headset {
     
@@ -286,17 +312,16 @@ object Input {
   }
   
   /** The core interface required to be implemented by all controller devices, regardless of their actual type (i.e. gamepads, steering wheels, flight sticks, etc). This interface exists mainly to support extensibility for game controllers, which allows OEMs to publish WinRT classes that provide rich access to their device's features, while integrating into the underlying game controller device enumeration framework. */
-  @js.native
   trait IGameController extends StObject {
     
     /** The audio headset attached to the controller. */
-    var headset: Headset = js.native
+    var headset: Headset
     
     /** Gets a value that indicates the wireless state of the gamepad. */
-    var isWireless: Boolean = js.native
+    var isWireless: Boolean
     
     /** The user associated with the controller. */
-    var user: User = js.native
+    var user: User
   }
   object IGameController {
     

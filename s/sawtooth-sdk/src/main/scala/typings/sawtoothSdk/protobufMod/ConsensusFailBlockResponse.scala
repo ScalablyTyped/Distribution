@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse")
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusFailBlockResponse.
   * @param [properties] Properties to set
   */
-class ConsensusFailBlockResponse () extends IConsensusFailBlockResponse {
+class ConsensusFailBlockResponse ()
+  extends StObject
+     with IConsensusFailBlockResponse {
   def this(properties: IConsensusFailBlockResponse) = this()
   
   /** ConsensusFailBlockResponse status. */
@@ -33,6 +34,10 @@ class ConsensusFailBlockResponse () extends IConsensusFailBlockResponse {
 /* static members */
 object ConsensusFailBlockResponse {
   
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Status extends StObject
   /** Status enum. */
@@ -41,31 +46,43 @@ object ConsensusFailBlockResponse {
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[Status & Double] = js.native
     
     @js.native
-    sealed trait BAD_REQUEST extends Status
-    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.BAD_REQUEST with Double = js.native
+    sealed trait BAD_REQUEST
+      extends StObject
+         with Status
+    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.BAD_REQUEST & Double = js.native
     
     @js.native
-    sealed trait NOT_READY extends Status
-    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.NOT_READY with Double = js.native
+    sealed trait NOT_READY
+      extends StObject
+         with Status
+    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.NOT_READY & Double = js.native
     
     @js.native
-    sealed trait OK extends Status
-    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.OK with Double = js.native
+    sealed trait OK
+      extends StObject
+         with Status
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.OK & Double = js.native
     
     @js.native
-    sealed trait SERVICE_ERROR extends Status
-    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.SERVICE_ERROR with Double = js.native
+    sealed trait SERVICE_ERROR
+      extends StObject
+         with Status
+    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.SERVICE_ERROR & Double = js.native
     
     @js.native
-    sealed trait STATUS_UNSET extends Status
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.STATUS_UNSET with Double = js.native
+    sealed trait STATUS_UNSET
+      extends StObject
+         with Status
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.STATUS_UNSET & Double = js.native
     
     @js.native
-    sealed trait UNKNOWN_BLOCK extends Status
-    /* 5 */ val UNKNOWN_BLOCK: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.UNKNOWN_BLOCK with Double = js.native
+    sealed trait UNKNOWN_BLOCK
+      extends StObject
+         with Status
+    /* 5 */ val UNKNOWN_BLOCK: typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status.UNKNOWN_BLOCK & Double = js.native
   }
   
   /**
@@ -73,12 +90,10 @@ object ConsensusFailBlockResponse {
     * @param [properties] Properties to set
     * @returns ConsensusFailBlockResponse instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.create")
-  @js.native
-  def create(): ConsensusFailBlockResponse = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.create")
-  @js.native
-  def create(properties: IConsensusFailBlockResponse): ConsensusFailBlockResponse = js.native
+  @scala.inline
+  def create(): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusFailBlockResponse]
+  @scala.inline
+  def create(properties: IConsensusFailBlockResponse): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Decodes a ConsensusFailBlockResponse message from the specified reader or buffer.
@@ -88,18 +103,14 @@ object ConsensusFailBlockResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decode")
-  @js.native
-  def decode(reader: Reader): ConsensusFailBlockResponse = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ConsensusFailBlockResponse = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): ConsensusFailBlockResponse = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ConsensusFailBlockResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ConsensusFailBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFailBlockResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ConsensusFailBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Decodes a ConsensusFailBlockResponse message from the specified reader or buffer, length delimited.
@@ -108,12 +119,10 @@ object ConsensusFailBlockResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ConsensusFailBlockResponse = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ConsensusFailBlockResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Encodes the specified ConsensusFailBlockResponse message. Does not implicitly {@link ConsensusFailBlockResponse.verify|verify} messages.
@@ -121,12 +130,10 @@ object ConsensusFailBlockResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.encode")
-  @js.native
-  def encode(message: IConsensusFailBlockResponse): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.encode")
-  @js.native
-  def encode(message: IConsensusFailBlockResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IConsensusFailBlockResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IConsensusFailBlockResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusFailBlockResponse message, length delimited. Does not implicitly {@link ConsensusFailBlockResponse.verify|verify} messages.
@@ -134,21 +141,18 @@ object ConsensusFailBlockResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusFailBlockResponse): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusFailBlockResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IConsensusFailBlockResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IConsensusFailBlockResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusFailBlockResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusFailBlockResponse
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ConsensusFailBlockResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Creates a plain object from a ConsensusFailBlockResponse message. Also converts values to other types if specified.
@@ -156,19 +160,16 @@ object ConsensusFailBlockResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.toObject")
-  @js.native
-  def toObject(message: ConsensusFailBlockResponse): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.toObject")
-  @js.native
-  def toObject(message: ConsensusFailBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ConsensusFailBlockResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ConsensusFailBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusFailBlockResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

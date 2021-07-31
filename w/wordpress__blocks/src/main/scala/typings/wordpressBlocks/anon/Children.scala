@@ -19,17 +19,15 @@ import typings.wordpressBlocks.wordpressBlocksStrings.title
 import typings.wordpressBlocks.wordpressBlocksStrings.translate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
   val attributes: js.Array[
     accessKey | accessKeyLabel | autocapitalize | dir | draggable | hidden | innerText | lang | offsetHeight | offsetLeft | offsetParent | offsetTop | offsetWidth | spellcheck | title | translate
-  ] = js.native
+  ]
   
-  val children: PhrasingContentSchema = js.native
+  val children: PhrasingContentSchema
 }
 object Children {
   

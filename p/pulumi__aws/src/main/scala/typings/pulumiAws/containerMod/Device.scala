@@ -2,17 +2,15 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
-  var containerPath: js.UndefOr[String] = js.native
+  var containerPath: js.UndefOr[String] = js.undefined
   
-  var hostPath: String = js.native
+  var hostPath: String
   
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Device {
   

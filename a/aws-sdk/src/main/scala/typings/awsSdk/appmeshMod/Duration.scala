@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
   /**
     * A unit of time.
     */
-  var unit: js.UndefOr[DurationUnit] = js.native
+  var unit: js.UndefOr[DurationUnit] = js.undefined
   
   /**
     * A number of time units.
     */
-  var value: js.UndefOr[DurationValue] = js.native
+  var value: js.UndefOr[DurationValue] = js.undefined
 }
 object Duration {
   

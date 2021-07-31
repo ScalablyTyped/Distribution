@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadingIconMod extends Shortcut {
@@ -13,14 +12,13 @@ object loadingIconMod extends Shortcut {
   @js.native
   val default: FC[LoadingIconProps] = js.native
   
-  @js.native
   trait LoadingIconProps extends StObject {
     
-    var existIcon: Boolean = js.native
+    var existIcon: Boolean
     
-    var loading: js.UndefOr[Boolean | js.Object] = js.native
+    var loading: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object LoadingIconProps {
     

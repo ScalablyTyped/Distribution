@@ -5,14 +5,14 @@ import typings.chrome.chromeStrings.ask
 import typings.chrome.chromeStrings.block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultipleAutomaticDownloadsSetDetails extends SetDetails {
+trait MultipleAutomaticDownloadsSetDetails
+  extends StObject
+     with SetDetails {
   
   @JSName("setting")
-  var setting_MultipleAutomaticDownloadsSetDetails: allow | block | ask = js.native
+  var setting_MultipleAutomaticDownloadsSetDetails: allow | block | ask
 }
 object MultipleAutomaticDownloadsSetDetails {
   

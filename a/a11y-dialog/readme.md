@@ -10,15 +10,15 @@ A tiny script to make dialog windows accessible to assistive technology users.
 | ------------------ | :-------------: |
 | Full name          | a11y-dialog |
 | Keywords           | modal, dialog, accessibility, a11y, focus |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 15 |
-| # downloads        | 830781 |
+| # downloads        | 881722 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/edenspiekermann/a11y-dialog)
-- [Bugs](https://github.com/edenspiekermann/a11y-dialog/issues)
-- [Repository](https://github.com/edenspiekermann/a11y-dialog)
+- [Homepage](https://github.com/HugoGiraudel/a11y-dialog)
+- [Bugs](https://github.com/HugoGiraudel/a11y-dialog/issues)
+- [Repository](https://github.com/HugoGiraudel/a11y-dialog)
 - [Npm](https://www.npmjs.com/package/a11y-dialog)
     
 

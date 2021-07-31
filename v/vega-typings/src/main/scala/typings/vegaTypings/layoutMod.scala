@@ -3,7 +3,6 @@ package typings.vegaTypings
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
@@ -60,26 +59,27 @@ object layoutMod {
   */
   type LayoutOffset = _LayoutOffset | Double
   
-  @js.native
-  trait LayoutParams extends Layout {
+  trait LayoutParams
+    extends StObject
+       with Layout {
     
-    var align: js.UndefOr[LayoutAlign | SignalRef | RowColumn[LayoutAlign]] = js.native
+    var align: js.UndefOr[LayoutAlign | SignalRef | RowColumn[LayoutAlign]] = js.undefined
     
-    var bounds: js.UndefOr[LayoutBounds] = js.native
+    var bounds: js.UndefOr[LayoutBounds] = js.undefined
     
-    var columns: js.UndefOr[Double | SignalRef] = js.native
+    var columns: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var footerBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.native
+    var footerBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.undefined
     
-    var headerBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.native
+    var headerBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.undefined
     
-    var offset: js.UndefOr[LayoutOffset] = js.native
+    var offset: js.UndefOr[LayoutOffset] = js.undefined
     
-    var padding: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.native
+    var padding: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.undefined
     
-    var titleAnchor: js.UndefOr[LayoutTitleAnchor | SignalRef | RowColumn[LayoutTitleAnchor]] = js.native
+    var titleAnchor: js.UndefOr[LayoutTitleAnchor | SignalRef | RowColumn[LayoutTitleAnchor]] = js.undefined
     
-    var titleBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.native
+    var titleBand: js.UndefOr[Double | SignalRef | RowColumn[Double]] = js.undefined
   }
   object LayoutParams {
     
@@ -162,12 +162,11 @@ object layoutMod {
     def start: typings.vegaTypings.vegaTypingsStrings.start = "start".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.start]
   }
   
-  @js.native
   trait RowColumn[T] extends StObject {
     
-    var column: js.UndefOr[T | SignalRef] = js.native
+    var column: js.UndefOr[T | SignalRef] = js.undefined
     
-    var row: js.UndefOr[T | SignalRef] = js.native
+    var row: js.UndefOr[T | SignalRef] = js.undefined
   }
   object RowColumn {
     
@@ -178,7 +177,7 @@ object layoutMod {
     }
     
     @scala.inline
-    implicit class RowColumnMutableBuilder[Self <: RowColumn[_], T] (val x: Self with RowColumn[T]) extends AnyVal {
+    implicit class RowColumnMutableBuilder[Self <: RowColumn[?], T] (val x: Self & RowColumn[T]) extends AnyVal {
       
       @scala.inline
       def setColumn(value: T | SignalRef): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

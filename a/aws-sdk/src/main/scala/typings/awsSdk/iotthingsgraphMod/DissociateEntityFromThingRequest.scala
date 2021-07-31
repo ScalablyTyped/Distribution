@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DissociateEntityFromThingRequest extends StObject {
   
   /**
     * The entity type from which to disassociate the thing.
     */
-  var entityType: EntityType = js.native
+  var entityType: EntityType
   
   /**
     * The name of the thing to disassociate.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object DissociateEntityFromThingRequest {
   

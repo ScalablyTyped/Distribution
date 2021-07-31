@@ -2,43 +2,41 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dllPluginMod {
   
-  @js.native
   trait DllPluginOptions extends StObject {
     
     /**
     	 * Context of requests in the manifest file (defaults to the webpack context)
     	 */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
     	 * If true, only entry points will be exposed
     	 */
-    var entryOnly: js.UndefOr[Boolean] = js.native
+    var entryOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * If true, manifest json file (output) will be formatted
     	 */
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Name of the exposed dll function (external name, use value of 'output.library')
     	 */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
     	 * Absolute path to the manifest json file (output)
     	 */
-    var path: String = js.native
+    var path: String
     
     /**
     	 * Type of the dll bundle (external type, use value of 'output.libraryTarget')
     	 */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DllPluginOptions {
     

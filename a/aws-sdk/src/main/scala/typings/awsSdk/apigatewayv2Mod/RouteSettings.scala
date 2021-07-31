@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSettings extends StObject {
   
   /**
     * Specifies whether (true) or not (false) data trace logging is enabled for this route. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
     */
-  var DataTraceEnabled: js.UndefOr[boolean] = js.native
+  var DataTraceEnabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether detailed metrics are enabled.
     */
-  var DetailedMetricsEnabled: js.UndefOr[boolean] = js.native
+  var DetailedMetricsEnabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies the logging level for this route: INFO, ERROR, or OFF. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
     */
-  var LoggingLevel: js.UndefOr[typings.awsSdk.apigatewayv2Mod.LoggingLevel] = js.native
+  var LoggingLevel: js.UndefOr[typings.awsSdk.apigatewayv2Mod.LoggingLevel] = js.undefined
   
   /**
     * Specifies the throttling burst limit.
     */
-  var ThrottlingBurstLimit: js.UndefOr[integer] = js.native
+  var ThrottlingBurstLimit: js.UndefOr[integer] = js.undefined
   
   /**
     * Specifies the throttling rate limit.
     */
-  var ThrottlingRateLimit: js.UndefOr[double] = js.native
+  var ThrottlingRateLimit: js.UndefOr[double] = js.undefined
 }
 object RouteSettings {
   

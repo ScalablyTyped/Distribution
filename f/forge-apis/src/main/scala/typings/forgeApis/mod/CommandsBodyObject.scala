@@ -2,17 +2,15 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandsBodyObject extends StObject {
   
-  var data: CommandsBodyObjectData = js.native
+  var data: CommandsBodyObjectData
   
-  var included: js.UndefOr[js.Object] = js.native
+  var included: js.UndefOr[js.Object] = js.undefined
   
-  var jsonapi: JsonApiVersionJsonapi = js.native
+  var jsonapi: JsonApiVersionJsonapi
 }
 object CommandsBodyObject {
   

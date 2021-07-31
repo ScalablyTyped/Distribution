@@ -2,15 +2,14 @@ package typings.extjs.Ext.grid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INumberColumn
-  extends typings.extjs.Ext.grid.column.IColumn {
+  extends StObject
+     with typings.extjs.Ext.grid.column.IColumn {
   
   /** [Config Option] (String) */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object INumberColumn {
   

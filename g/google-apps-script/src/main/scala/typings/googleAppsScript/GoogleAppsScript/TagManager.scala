@@ -67,91 +67,89 @@ import typings.googleAppsScript.GoogleAppsScript.TagManager.Schema.ZoneChildCont
 import typings.googleAppsScript.GoogleAppsScript.TagManager.Schema.ZoneTypeRestriction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagManager extends StObject {
   
-  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
   
   // Create a new instance of Account
-  def newAccount(): Account = js.native
+  def newAccount(): Account
   
   // Create a new instance of AccountAccess
-  def newAccountAccess(): AccountAccess = js.native
+  def newAccountAccess(): AccountAccess
   
   // Create a new instance of BuiltInVariable
-  def newBuiltInVariable(): BuiltInVariable = js.native
+  def newBuiltInVariable(): BuiltInVariable
   
   // Create a new instance of Condition
-  def newCondition(): Condition = js.native
+  def newCondition(): Condition
   
   // Create a new instance of Container
-  def newContainer(): Container = js.native
+  def newContainer(): Container
   
   // Create a new instance of ContainerAccess
-  def newContainerAccess(): ContainerAccess = js.native
+  def newContainerAccess(): ContainerAccess
   
   // Create a new instance of ContainerVersion
-  def newContainerVersion(): ContainerVersion = js.native
+  def newContainerVersion(): ContainerVersion
   
   // Create a new instance of CreateContainerVersionRequestVersionOptions
-  def newCreateContainerVersionRequestVersionOptions(): CreateContainerVersionRequestVersionOptions = js.native
+  def newCreateContainerVersionRequestVersionOptions(): CreateContainerVersionRequestVersionOptions
   
   // Create a new instance of CustomTemplate
-  def newCustomTemplate(): CustomTemplate = js.native
+  def newCustomTemplate(): CustomTemplate
   
   // Create a new instance of Entity
-  def newEntity(): Entity = js.native
+  def newEntity(): Entity
   
   // Create a new instance of Environment
-  def newEnvironment(): Environment = js.native
+  def newEnvironment(): Environment
   
   // Create a new instance of Folder
-  def newFolder(): Folder = js.native
+  def newFolder(): Folder
   
   // Create a new instance of Parameter
-  def newParameter(): Parameter = js.native
+  def newParameter(): Parameter
   
   // Create a new instance of SetupTag
-  def newSetupTag(): SetupTag = js.native
+  def newSetupTag(): SetupTag
   
   // Create a new instance of Tag
-  def newTag(): Tag = js.native
+  def newTag(): Tag
   
   // Create a new instance of TeardownTag
-  def newTeardownTag(): TeardownTag = js.native
+  def newTeardownTag(): TeardownTag
   
   // Create a new instance of Timestamp
-  def newTimestamp(): Timestamp = js.native
+  def newTimestamp(): Timestamp
   
   // Create a new instance of Trigger
-  def newTrigger(): Trigger = js.native
+  def newTrigger(): Trigger
   
   // Create a new instance of UserPermission
-  def newUserPermission(): UserPermission = js.native
+  def newUserPermission(): UserPermission
   
   // Create a new instance of Variable
-  def newVariable(): Variable = js.native
+  def newVariable(): Variable
   
   // Create a new instance of VariableFormatValue
-  def newVariableFormatValue(): VariableFormatValue = js.native
+  def newVariableFormatValue(): VariableFormatValue
   
   // Create a new instance of Workspace
-  def newWorkspace(): Workspace = js.native
+  def newWorkspace(): Workspace
   
   // Create a new instance of Zone
-  def newZone(): Zone = js.native
+  def newZone(): Zone
   
   // Create a new instance of ZoneBoundary
-  def newZoneBoundary(): ZoneBoundary = js.native
+  def newZoneBoundary(): ZoneBoundary
   
   // Create a new instance of ZoneChildContainer
-  def newZoneChildContainer(): ZoneChildContainer = js.native
+  def newZoneChildContainer(): ZoneChildContainer
   
   // Create a new instance of ZoneTypeRestriction
-  def newZoneTypeRestriction(): ZoneTypeRestriction = js.native
+  def newZoneTypeRestriction(): ZoneTypeRestriction
 }
 object TagManager {
   
@@ -570,20 +568,19 @@ object TagManager {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var shareData: js.UndefOr[Boolean] = js.native
+      var shareData: js.UndefOr[Boolean] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
     }
     object Account {
       
@@ -634,10 +631,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait AccountAccess extends StObject {
       
-      var permission: js.UndefOr[String] = js.native
+      var permission: js.UndefOr[String] = js.undefined
     }
     object AccountAccess {
       
@@ -658,20 +654,19 @@ object TagManager {
       }
     }
     
-    @js.native
     trait BuiltInVariable extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object BuiltInVariable {
       
@@ -722,12 +717,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Condition extends StObject {
       
-      var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+      var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Condition {
       
@@ -757,28 +751,27 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Container extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var domainName: js.UndefOr[js.Array[String]] = js.native
+      var domainName: js.UndefOr[js.Array[String]] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var publicId: js.UndefOr[String] = js.native
+      var publicId: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var usageContext: js.UndefOr[js.Array[String]] = js.native
+      var usageContext: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Container {
       
@@ -859,12 +852,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ContainerAccess extends StObject {
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var permission: js.UndefOr[String] = js.native
+      var permission: js.UndefOr[String] = js.undefined
     }
     object ContainerAccess {
       
@@ -891,42 +883,41 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ContainerVersion extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.native
+      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.undefined
       
-      var container: js.UndefOr[Container] = js.native
+      var container: js.UndefOr[Container] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var containerVersionId: js.UndefOr[String] = js.native
+      var containerVersionId: js.UndefOr[String] = js.undefined
       
-      var customTemplate: js.UndefOr[js.Array[CustomTemplate]] = js.native
+      var customTemplate: js.UndefOr[js.Array[CustomTemplate]] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var folder: js.UndefOr[js.Array[Folder]] = js.native
+      var folder: js.UndefOr[js.Array[Folder]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tag: js.UndefOr[js.Array[Tag]] = js.native
+      var tag: js.UndefOr[js.Array[Tag]] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var trigger: js.UndefOr[js.Array[Trigger]] = js.native
+      var trigger: js.UndefOr[js.Array[Trigger]] = js.undefined
       
-      var variable: js.UndefOr[js.Array[Variable]] = js.native
+      var variable: js.UndefOr[js.Array[Variable]] = js.undefined
       
-      var zone: js.UndefOr[js.Array[Zone]] = js.native
+      var zone: js.UndefOr[js.Array[Zone]] = js.undefined
     }
     object ContainerVersion {
       
@@ -1064,34 +1055,33 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ContainerVersionHeader extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var containerVersionId: js.UndefOr[String] = js.native
+      var containerVersionId: js.UndefOr[String] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var numCustomTemplates: js.UndefOr[String] = js.native
+      var numCustomTemplates: js.UndefOr[String] = js.undefined
       
-      var numMacros: js.UndefOr[String] = js.native
+      var numMacros: js.UndefOr[String] = js.undefined
       
-      var numRules: js.UndefOr[String] = js.native
+      var numRules: js.UndefOr[String] = js.undefined
       
-      var numTags: js.UndefOr[String] = js.native
+      var numTags: js.UndefOr[String] = js.undefined
       
-      var numTriggers: js.UndefOr[String] = js.native
+      var numTriggers: js.UndefOr[String] = js.undefined
       
-      var numVariables: js.UndefOr[String] = js.native
+      var numVariables: js.UndefOr[String] = js.undefined
       
-      var numZones: js.UndefOr[String] = js.native
+      var numZones: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
     }
     object ContainerVersionHeader {
       
@@ -1184,10 +1174,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait CreateBuiltInVariableResponse extends StObject {
       
-      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.native
+      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.undefined
     }
     object CreateBuiltInVariableResponse {
       
@@ -1211,12 +1200,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait CreateContainerVersionRequestVersionOptions extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
     }
     object CreateContainerVersionRequestVersionOptions {
       
@@ -1243,16 +1231,15 @@ object TagManager {
       }
     }
     
-    @js.native
     trait CreateContainerVersionResponse extends StObject {
       
-      var compilerError: js.UndefOr[Boolean] = js.native
+      var compilerError: js.UndefOr[Boolean] = js.undefined
       
-      var containerVersion: js.UndefOr[ContainerVersion] = js.native
+      var containerVersion: js.UndefOr[ContainerVersion] = js.undefined
       
-      var newWorkspacePath: js.UndefOr[String] = js.native
+      var newWorkspacePath: js.UndefOr[String] = js.undefined
       
-      var syncStatus: js.UndefOr[SyncStatus] = js.native
+      var syncStatus: js.UndefOr[SyncStatus] = js.undefined
     }
     object CreateContainerVersionResponse {
       
@@ -1291,26 +1278,25 @@ object TagManager {
       }
     }
     
-    @js.native
     trait CustomTemplate extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var templateData: js.UndefOr[String] = js.native
+      var templateData: js.UndefOr[String] = js.undefined
       
-      var templateId: js.UndefOr[String] = js.native
+      var templateId: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object CustomTemplate {
       
@@ -1379,18 +1365,17 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Entity extends StObject {
       
-      var changeStatus: js.UndefOr[String] = js.native
+      var changeStatus: js.UndefOr[String] = js.undefined
       
-      var folder: js.UndefOr[Folder] = js.native
+      var folder: js.UndefOr[Folder] = js.undefined
       
-      var tag: js.UndefOr[Tag] = js.native
+      var tag: js.UndefOr[Tag] = js.undefined
       
-      var trigger: js.UndefOr[Trigger] = js.native
+      var trigger: js.UndefOr[Trigger] = js.undefined
       
-      var variable: js.UndefOr[Variable] = js.native
+      var variable: js.UndefOr[Variable] = js.undefined
     }
     object Entity {
       
@@ -1435,38 +1420,37 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Environment extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var authorizationCode: js.UndefOr[String] = js.native
+      var authorizationCode: js.UndefOr[String] = js.undefined
       
-      var authorizationTimestamp: js.UndefOr[Timestamp] = js.native
+      var authorizationTimestamp: js.UndefOr[Timestamp] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var containerVersionId: js.UndefOr[String] = js.native
+      var containerVersionId: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var enableDebug: js.UndefOr[Boolean] = js.native
+      var enableDebug: js.UndefOr[Boolean] = js.undefined
       
-      var environmentId: js.UndefOr[String] = js.native
+      var environmentId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Environment {
       
@@ -1571,26 +1555,25 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Folder extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var folderId: js.UndefOr[String] = js.native
+      var folderId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Folder {
       
@@ -1659,16 +1642,15 @@ object TagManager {
       }
     }
     
-    @js.native
     trait FolderEntities extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var tag: js.UndefOr[js.Array[Tag]] = js.native
+      var tag: js.UndefOr[js.Array[Tag]] = js.undefined
       
-      var trigger: js.UndefOr[js.Array[Trigger]] = js.native
+      var trigger: js.UndefOr[js.Array[Trigger]] = js.undefined
       
-      var variable: js.UndefOr[js.Array[Variable]] = js.native
+      var variable: js.UndefOr[js.Array[Variable]] = js.undefined
     }
     object FolderEntities {
       
@@ -1716,12 +1698,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait GetWorkspaceStatusResponse extends StObject {
       
-      var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.native
+      var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.undefined
       
-      var workspaceChange: js.UndefOr[js.Array[Entity]] = js.native
+      var workspaceChange: js.UndefOr[js.Array[Entity]] = js.undefined
     }
     object GetWorkspaceStatusResponse {
       
@@ -1754,12 +1735,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListAccountsResponse extends StObject {
       
-      var account: js.UndefOr[js.Array[Account]] = js.native
+      var account: js.UndefOr[js.Array[Account]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListAccountsResponse {
       
@@ -1789,12 +1769,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListContainerVersionsResponse extends StObject {
       
-      var containerVersionHeader: js.UndefOr[js.Array[ContainerVersionHeader]] = js.native
+      var containerVersionHeader: js.UndefOr[js.Array[ContainerVersionHeader]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListContainerVersionsResponse {
       
@@ -1824,12 +1803,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListContainersResponse extends StObject {
       
-      var container: js.UndefOr[js.Array[Container]] = js.native
+      var container: js.UndefOr[js.Array[Container]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListContainersResponse {
       
@@ -1859,12 +1837,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListEnabledBuiltInVariablesResponse extends StObject {
       
-      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.native
+      var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListEnabledBuiltInVariablesResponse {
       
@@ -1894,12 +1871,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListEnvironmentsResponse extends StObject {
       
-      var environment: js.UndefOr[js.Array[Environment]] = js.native
+      var environment: js.UndefOr[js.Array[Environment]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListEnvironmentsResponse {
       
@@ -1929,12 +1905,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListFoldersResponse extends StObject {
       
-      var folder: js.UndefOr[js.Array[Folder]] = js.native
+      var folder: js.UndefOr[js.Array[Folder]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListFoldersResponse {
       
@@ -1964,12 +1939,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListTagsResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var tag: js.UndefOr[js.Array[Tag]] = js.native
+      var tag: js.UndefOr[js.Array[Tag]] = js.undefined
     }
     object ListTagsResponse {
       
@@ -1999,12 +1973,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListTriggersResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var trigger: js.UndefOr[js.Array[Trigger]] = js.native
+      var trigger: js.UndefOr[js.Array[Trigger]] = js.undefined
     }
     object ListTriggersResponse {
       
@@ -2034,12 +2007,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListUserPermissionsResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var userPermission: js.UndefOr[js.Array[UserPermission]] = js.native
+      var userPermission: js.UndefOr[js.Array[UserPermission]] = js.undefined
     }
     object ListUserPermissionsResponse {
       
@@ -2069,12 +2041,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListVariablesResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var variable: js.UndefOr[js.Array[Variable]] = js.native
+      var variable: js.UndefOr[js.Array[Variable]] = js.undefined
     }
     object ListVariablesResponse {
       
@@ -2104,12 +2075,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListWorkspacesResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var workspace: js.UndefOr[js.Array[Workspace]] = js.native
+      var workspace: js.UndefOr[js.Array[Workspace]] = js.undefined
     }
     object ListWorkspacesResponse {
       
@@ -2139,12 +2109,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ListZonesResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var zone: js.UndefOr[js.Array[Zone]] = js.native
+      var zone: js.UndefOr[js.Array[Zone]] = js.undefined
     }
     object ListZonesResponse {
       
@@ -2174,12 +2143,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait MergeConflict extends StObject {
       
-      var entityInBaseVersion: js.UndefOr[Entity] = js.native
+      var entityInBaseVersion: js.UndefOr[Entity] = js.undefined
       
-      var entityInWorkspace: js.UndefOr[Entity] = js.native
+      var entityInWorkspace: js.UndefOr[Entity] = js.undefined
     }
     object MergeConflict {
       
@@ -2206,18 +2174,17 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Parameter extends StObject {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var list: js.UndefOr[js.Array[Parameter]] = js.native
+      var list: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var map: js.UndefOr[js.Array[Parameter]] = js.native
+      var map: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Parameter {
       
@@ -2268,12 +2235,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait PublishContainerVersionResponse extends StObject {
       
-      var compilerError: js.UndefOr[Boolean] = js.native
+      var compilerError: js.UndefOr[Boolean] = js.undefined
       
-      var containerVersion: js.UndefOr[ContainerVersion] = js.native
+      var containerVersion: js.UndefOr[ContainerVersion] = js.undefined
     }
     object PublishContainerVersionResponse {
       
@@ -2300,14 +2266,13 @@ object TagManager {
       }
     }
     
-    @js.native
     trait QuickPreviewResponse extends StObject {
       
-      var compilerError: js.UndefOr[Boolean] = js.native
+      var compilerError: js.UndefOr[Boolean] = js.undefined
       
-      var containerVersion: js.UndefOr[ContainerVersion] = js.native
+      var containerVersion: js.UndefOr[ContainerVersion] = js.undefined
       
-      var syncStatus: js.UndefOr[SyncStatus] = js.native
+      var syncStatus: js.UndefOr[SyncStatus] = js.undefined
     }
     object QuickPreviewResponse {
       
@@ -2340,10 +2305,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertBuiltInVariableResponse extends StObject {
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
     }
     object RevertBuiltInVariableResponse {
       
@@ -2364,10 +2328,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertFolderResponse extends StObject {
       
-      var folder: js.UndefOr[Folder] = js.native
+      var folder: js.UndefOr[Folder] = js.undefined
     }
     object RevertFolderResponse {
       
@@ -2388,10 +2351,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertTagResponse extends StObject {
       
-      var tag: js.UndefOr[Tag] = js.native
+      var tag: js.UndefOr[Tag] = js.undefined
     }
     object RevertTagResponse {
       
@@ -2412,10 +2374,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertTriggerResponse extends StObject {
       
-      var trigger: js.UndefOr[Trigger] = js.native
+      var trigger: js.UndefOr[Trigger] = js.undefined
     }
     object RevertTriggerResponse {
       
@@ -2436,10 +2397,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertVariableResponse extends StObject {
       
-      var variable: js.UndefOr[Variable] = js.native
+      var variable: js.UndefOr[Variable] = js.undefined
     }
     object RevertVariableResponse {
       
@@ -2460,10 +2420,9 @@ object TagManager {
       }
     }
     
-    @js.native
     trait RevertZoneResponse extends StObject {
       
-      var zone: js.UndefOr[Zone] = js.native
+      var zone: js.UndefOr[Zone] = js.undefined
     }
     object RevertZoneResponse {
       
@@ -2484,12 +2443,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait SetupTag extends StObject {
       
-      var stopOnSetupFailure: js.UndefOr[Boolean] = js.native
+      var stopOnSetupFailure: js.UndefOr[Boolean] = js.undefined
       
-      var tagName: js.UndefOr[String] = js.native
+      var tagName: js.UndefOr[String] = js.undefined
     }
     object SetupTag {
       
@@ -2516,12 +2474,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait SyncStatus extends StObject {
       
-      var mergeConflict: js.UndefOr[Boolean] = js.native
+      var mergeConflict: js.UndefOr[Boolean] = js.undefined
       
-      var syncError: js.UndefOr[Boolean] = js.native
+      var syncError: js.UndefOr[Boolean] = js.undefined
     }
     object SyncStatus {
       
@@ -2548,12 +2505,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait SyncWorkspaceResponse extends StObject {
       
-      var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.native
+      var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.undefined
       
-      var syncStatus: js.UndefOr[SyncStatus] = js.native
+      var syncStatus: js.UndefOr[SyncStatus] = js.undefined
     }
     object SyncWorkspaceResponse {
       
@@ -2583,56 +2539,55 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Tag extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var blockingRuleId: js.UndefOr[js.Array[String]] = js.native
+      var blockingRuleId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var blockingTriggerId: js.UndefOr[js.Array[String]] = js.native
+      var blockingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var firingRuleId: js.UndefOr[js.Array[String]] = js.native
+      var firingRuleId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var firingTriggerId: js.UndefOr[js.Array[String]] = js.native
+      var firingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var liveOnly: js.UndefOr[Boolean] = js.native
+      var liveOnly: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+      var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var parentFolderId: js.UndefOr[String] = js.native
+      var parentFolderId: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var paused: js.UndefOr[Boolean] = js.native
+      var paused: js.UndefOr[Boolean] = js.undefined
       
-      var priority: js.UndefOr[Parameter] = js.native
+      var priority: js.UndefOr[Parameter] = js.undefined
       
-      var scheduleEndMs: js.UndefOr[String] = js.native
+      var scheduleEndMs: js.UndefOr[String] = js.undefined
       
-      var scheduleStartMs: js.UndefOr[String] = js.native
+      var scheduleStartMs: js.UndefOr[String] = js.undefined
       
-      var setupTag: js.UndefOr[js.Array[SetupTag]] = js.native
+      var setupTag: js.UndefOr[js.Array[SetupTag]] = js.undefined
       
-      var tagFiringOption: js.UndefOr[String] = js.native
+      var tagFiringOption: js.UndefOr[String] = js.undefined
       
-      var tagId: js.UndefOr[String] = js.native
+      var tagId: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var teardownTag: js.UndefOr[js.Array[TeardownTag]] = js.native
+      var teardownTag: js.UndefOr[js.Array[TeardownTag]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Tag {
       
@@ -2812,12 +2767,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait TeardownTag extends StObject {
       
-      var stopTeardownOnFailure: js.UndefOr[Boolean] = js.native
+      var stopTeardownOnFailure: js.UndefOr[Boolean] = js.undefined
       
-      var tagName: js.UndefOr[String] = js.native
+      var tagName: js.UndefOr[String] = js.undefined
     }
     object TeardownTag {
       
@@ -2844,12 +2798,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Timestamp extends StObject {
       
-      var nanos: js.UndefOr[Double] = js.native
+      var nanos: js.UndefOr[Double] = js.undefined
       
-      var seconds: js.UndefOr[String] = js.native
+      var seconds: js.UndefOr[String] = js.undefined
     }
     object Timestamp {
       
@@ -2876,72 +2829,71 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Trigger extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var autoEventFilter: js.UndefOr[js.Array[Condition]] = js.native
+      var autoEventFilter: js.UndefOr[js.Array[Condition]] = js.undefined
       
-      var checkValidation: js.UndefOr[Parameter] = js.native
+      var checkValidation: js.UndefOr[Parameter] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var continuousTimeMinMilliseconds: js.UndefOr[Parameter] = js.native
+      var continuousTimeMinMilliseconds: js.UndefOr[Parameter] = js.undefined
       
-      var customEventFilter: js.UndefOr[js.Array[Condition]] = js.native
+      var customEventFilter: js.UndefOr[js.Array[Condition]] = js.undefined
       
-      var eventName: js.UndefOr[Parameter] = js.native
+      var eventName: js.UndefOr[Parameter] = js.undefined
       
-      var filter: js.UndefOr[js.Array[Condition]] = js.native
+      var filter: js.UndefOr[js.Array[Condition]] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var horizontalScrollPercentageList: js.UndefOr[Parameter] = js.native
+      var horizontalScrollPercentageList: js.UndefOr[Parameter] = js.undefined
       
-      var interval: js.UndefOr[Parameter] = js.native
+      var interval: js.UndefOr[Parameter] = js.undefined
       
-      var intervalSeconds: js.UndefOr[Parameter] = js.native
+      var intervalSeconds: js.UndefOr[Parameter] = js.undefined
       
-      var limit: js.UndefOr[Parameter] = js.native
+      var limit: js.UndefOr[Parameter] = js.undefined
       
-      var maxTimerLengthSeconds: js.UndefOr[Parameter] = js.native
+      var maxTimerLengthSeconds: js.UndefOr[Parameter] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+      var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var parentFolderId: js.UndefOr[String] = js.native
+      var parentFolderId: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var selector: js.UndefOr[Parameter] = js.native
+      var selector: js.UndefOr[Parameter] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var totalTimeMinMilliseconds: js.UndefOr[Parameter] = js.native
+      var totalTimeMinMilliseconds: js.UndefOr[Parameter] = js.undefined
       
-      var triggerId: js.UndefOr[String] = js.native
+      var triggerId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var uniqueTriggerId: js.UndefOr[Parameter] = js.native
+      var uniqueTriggerId: js.UndefOr[Parameter] = js.undefined
       
-      var verticalScrollPercentageList: js.UndefOr[Parameter] = js.native
+      var verticalScrollPercentageList: js.UndefOr[Parameter] = js.undefined
       
-      var visibilitySelector: js.UndefOr[Parameter] = js.native
+      var visibilitySelector: js.UndefOr[Parameter] = js.undefined
       
-      var visiblePercentageMax: js.UndefOr[Parameter] = js.native
+      var visiblePercentageMax: js.UndefOr[Parameter] = js.undefined
       
-      var visiblePercentageMin: js.UndefOr[Parameter] = js.native
+      var visiblePercentageMin: js.UndefOr[Parameter] = js.undefined
       
-      var waitForTags: js.UndefOr[Parameter] = js.native
+      var waitForTags: js.UndefOr[Parameter] = js.undefined
       
-      var waitForTagsTimeout: js.UndefOr[Parameter] = js.native
+      var waitForTagsTimeout: js.UndefOr[Parameter] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Trigger {
       
@@ -3160,18 +3112,17 @@ object TagManager {
       }
     }
     
-    @js.native
     trait UserPermission extends StObject {
       
-      var accountAccess: js.UndefOr[AccountAccess] = js.native
+      var accountAccess: js.UndefOr[AccountAccess] = js.undefined
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerAccess: js.UndefOr[js.Array[ContainerAccess]] = js.native
+      var containerAccess: js.UndefOr[js.Array[ContainerAccess]] = js.undefined
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
     }
     object UserPermission {
       
@@ -3219,42 +3170,41 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Variable extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var disablingTriggerId: js.UndefOr[js.Array[String]] = js.native
+      var disablingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var enablingTriggerId: js.UndefOr[js.Array[String]] = js.native
+      var enablingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var formatValue: js.UndefOr[VariableFormatValue] = js.native
+      var formatValue: js.UndefOr[VariableFormatValue] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+      var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
       
-      var parentFolderId: js.UndefOr[String] = js.native
+      var parentFolderId: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var scheduleEndMs: js.UndefOr[String] = js.native
+      var scheduleEndMs: js.UndefOr[String] = js.undefined
       
-      var scheduleStartMs: js.UndefOr[String] = js.native
+      var scheduleStartMs: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var variableId: js.UndefOr[String] = js.native
+      var variableId: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Variable {
       
@@ -3380,18 +3330,17 @@ object TagManager {
       }
     }
     
-    @js.native
     trait VariableFormatValue extends StObject {
       
-      var caseConversionType: js.UndefOr[String] = js.native
+      var caseConversionType: js.UndefOr[String] = js.undefined
       
-      var convertFalseToValue: js.UndefOr[Parameter] = js.native
+      var convertFalseToValue: js.UndefOr[Parameter] = js.undefined
       
-      var convertNullToValue: js.UndefOr[Parameter] = js.native
+      var convertNullToValue: js.UndefOr[Parameter] = js.undefined
       
-      var convertTrueToValue: js.UndefOr[Parameter] = js.native
+      var convertTrueToValue: js.UndefOr[Parameter] = js.undefined
       
-      var convertUndefinedToValue: js.UndefOr[Parameter] = js.native
+      var convertUndefinedToValue: js.UndefOr[Parameter] = js.undefined
     }
     object VariableFormatValue {
       
@@ -3436,24 +3385,23 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Workspace extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
     }
     object Workspace {
       
@@ -3516,32 +3464,31 @@ object TagManager {
       }
     }
     
-    @js.native
     trait Zone extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var boundary: js.UndefOr[ZoneBoundary] = js.native
+      var boundary: js.UndefOr[ZoneBoundary] = js.undefined
       
-      var childContainer: js.UndefOr[js.Array[ZoneChildContainer]] = js.native
+      var childContainer: js.UndefOr[js.Array[ZoneChildContainer]] = js.undefined
       
-      var containerId: js.UndefOr[String] = js.native
+      var containerId: js.UndefOr[String] = js.undefined
       
-      var fingerprint: js.UndefOr[String] = js.native
+      var fingerprint: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var tagManagerUrl: js.UndefOr[String] = js.native
+      var tagManagerUrl: js.UndefOr[String] = js.undefined
       
-      var typeRestriction: js.UndefOr[ZoneTypeRestriction] = js.native
+      var typeRestriction: js.UndefOr[ZoneTypeRestriction] = js.undefined
       
-      var workspaceId: js.UndefOr[String] = js.native
+      var workspaceId: js.UndefOr[String] = js.undefined
       
-      var zoneId: js.UndefOr[String] = js.native
+      var zoneId: js.UndefOr[String] = js.undefined
     }
     object Zone {
       
@@ -3631,12 +3578,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ZoneBoundary extends StObject {
       
-      var condition: js.UndefOr[js.Array[Condition]] = js.native
+      var condition: js.UndefOr[js.Array[Condition]] = js.undefined
       
-      var customEvaluationTriggerId: js.UndefOr[js.Array[String]] = js.native
+      var customEvaluationTriggerId: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ZoneBoundary {
       
@@ -3669,12 +3615,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ZoneChildContainer extends StObject {
       
-      var nickname: js.UndefOr[String] = js.native
+      var nickname: js.UndefOr[String] = js.undefined
       
-      var publicId: js.UndefOr[String] = js.native
+      var publicId: js.UndefOr[String] = js.undefined
     }
     object ZoneChildContainer {
       
@@ -3701,12 +3646,11 @@ object TagManager {
       }
     }
     
-    @js.native
     trait ZoneTypeRestriction extends StObject {
       
-      var enable: js.UndefOr[Boolean] = js.native
+      var enable: js.UndefOr[Boolean] = js.undefined
       
-      var whitelistedTypeId: js.UndefOr[js.Array[String]] = js.native
+      var whitelistedTypeId: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ZoneTypeRestriction {
       

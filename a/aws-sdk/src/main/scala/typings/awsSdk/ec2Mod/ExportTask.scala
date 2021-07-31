@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTask extends StObject {
   
   /**
     * A description of the resource being exported.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the export task.
     */
-  var ExportTaskId: js.UndefOr[String] = js.native
+  var ExportTaskId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the export task.
     */
-  var ExportToS3Task: js.UndefOr[typings.awsSdk.ec2Mod.ExportToS3Task] = js.native
+  var ExportToS3Task: js.UndefOr[typings.awsSdk.ec2Mod.ExportToS3Task] = js.undefined
   
   /**
     * Information about the instance to export.
     */
-  var InstanceExportDetails: js.UndefOr[typings.awsSdk.ec2Mod.InstanceExportDetails] = js.native
+  var InstanceExportDetails: js.UndefOr[typings.awsSdk.ec2Mod.InstanceExportDetails] = js.undefined
   
   /**
     * The state of the export task.
     */
-  var State: js.UndefOr[ExportTaskState] = js.native
+  var State: js.UndefOr[ExportTaskState] = js.undefined
   
   /**
     * The status message related to the export task.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The tags for the export task.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ExportTask {
   

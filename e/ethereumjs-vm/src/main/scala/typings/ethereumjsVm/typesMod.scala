@@ -6,21 +6,19 @@ import typings.ethereumjsVm.evmMod.ExecResult
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type PrecompileFunc = js.Function1[/* opts */ PrecompileInput, ExecResult]
   
-  @js.native
   trait PrecompileInput extends StObject {
     
-    var _common: default = js.native
+    var _common: default
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var gasLimit: ^ = js.native
+    var gasLimit: ^
   }
   object PrecompileInput {
     

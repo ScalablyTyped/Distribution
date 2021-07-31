@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets")
@@ -100,7 +99,7 @@ class ResourceSpreadsheets protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdateSpreadsheetResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdateSpreadsheetResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateSpreadsheetResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdateSpreadsheetResponse] = js.native
   def batchUpdate(params: ParamsResourceSpreadsheetsBatchupdate): GaxiosPromise[SchemaBatchUpdateSpreadsheetResponse] = js.native
   def batchUpdate(
     params: ParamsResourceSpreadsheetsBatchupdate,
@@ -184,7 +183,7 @@ class ResourceSpreadsheets protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaSpreadsheet] = js.native
   def create(callback: BodyResponseCallback[SchemaSpreadsheet]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
   def create(params: ParamsResourceSpreadsheetsCreate): GaxiosPromise[SchemaSpreadsheet] = js.native
   def create(params: ParamsResourceSpreadsheetsCreate, callback: BodyResponseCallback[SchemaSpreadsheet]): Unit = js.native
   def create(
@@ -286,7 +285,7 @@ class ResourceSpreadsheets protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSpreadsheet] = js.native
   def get(callback: BodyResponseCallback[SchemaSpreadsheet]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
   def get(params: ParamsResourceSpreadsheetsGet): GaxiosPromise[SchemaSpreadsheet] = js.native
   def get(params: ParamsResourceSpreadsheetsGet, callback: BodyResponseCallback[SchemaSpreadsheet]): Unit = js.native
   def get(
@@ -389,7 +388,7 @@ class ResourceSpreadsheets protected () extends StObject {
     */
   def getByDataFilter(): GaxiosPromise[SchemaSpreadsheet] = js.native
   def getByDataFilter(callback: BodyResponseCallback[SchemaSpreadsheet]): Unit = js.native
-  def getByDataFilter(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
+  def getByDataFilter(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSpreadsheet] = js.native
   def getByDataFilter(params: ParamsResourceSpreadsheetsGetbydatafilter): GaxiosPromise[SchemaSpreadsheet] = js.native
   def getByDataFilter(
     params: ParamsResourceSpreadsheetsGetbydatafilter,

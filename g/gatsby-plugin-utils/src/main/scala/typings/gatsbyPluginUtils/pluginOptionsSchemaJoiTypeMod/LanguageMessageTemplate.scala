@@ -2,15 +2,13 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageMessageTemplate extends StObject {
   
-  var rendered: String = js.native
+  var rendered: String
   
-  var source: String = js.native
+  var source: String
 }
 object LanguageMessageTemplate {
   

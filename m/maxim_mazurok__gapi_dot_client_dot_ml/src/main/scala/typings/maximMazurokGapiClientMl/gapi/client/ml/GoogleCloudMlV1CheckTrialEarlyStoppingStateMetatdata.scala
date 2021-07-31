@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends StObject {
   
   /** The time at which the operation was submitted. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The name of the study that the trial belongs to. */
-  var study: js.UndefOr[String] = js.native
+  var study: js.UndefOr[String] = js.undefined
   
   /** The trial name. */
-  var trial: js.UndefOr[String] = js.native
+  var trial: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata {
   

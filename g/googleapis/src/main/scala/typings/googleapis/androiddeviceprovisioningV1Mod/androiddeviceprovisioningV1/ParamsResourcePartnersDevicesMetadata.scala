@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePartnersDevicesMetadata extends StandardParameters {
+trait ParamsResourcePartnersDevicesMetadata
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The ID of the device.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The owner of the newly set metadata. Set this to the partner
     * ID.
     */
-  var metadataOwnerId: js.UndefOr[String] = js.native
+  var metadataOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaUpdateDeviceMetadataRequest] = js.native
+  var requestBody: js.UndefOr[SchemaUpdateDeviceMetadataRequest] = js.undefined
 }
 object ParamsResourcePartnersDevicesMetadata {
   

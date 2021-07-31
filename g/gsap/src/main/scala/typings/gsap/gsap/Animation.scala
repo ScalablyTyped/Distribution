@@ -2,7 +2,6 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,19 +26,14 @@ trait Animation extends StObject {
     */
   def eventCallback(`type`: String): js.Function1[/* repeated */ js.Any, Unit] = js.native
   def eventCallback(`type`: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Animation = js.native
+  def eventCallback(`type`: String, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[js.Any]): Animation = js.native
   def eventCallback(
     `type`: String,
     callback: js.Function1[/* repeated */ js.Any, Unit],
-    params: js.UndefOr[scala.Nothing],
+    params: js.Array[js.Any],
     scope: js.Any
   ): Animation = js.native
-  def eventCallback(`type`: String, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): Animation = js.native
-  def eventCallback(
-    `type`: String,
-    callback: js.Function1[/* repeated */ js.Any, Unit],
-    params: js.Array[_],
-    scope: js.Any
-  ): Animation = js.native
+  def eventCallback(`type`: String, callback: js.Function1[/* repeated */ js.Any, Unit], params: Unit, scope: js.Any): Animation = js.native
   
   /**
     * Clears any initialization data (like starting/ending values in tweens) which can be useful if, for example, you want to restart a tween without reverting to any previously recorded
@@ -55,15 +49,15 @@ trait Animation extends StObject {
   
   /** Kills the animation entirely or in part depending on the parameters. */
   def kill(): Animation = js.native
-  def kill(vars: js.UndefOr[scala.Nothing], target: js.Object): Animation = js.native
   def kill(vars: js.Object): Animation = js.native
   def kill(vars: js.Object, target: js.Object): Animation = js.native
+  def kill(vars: Unit, target: js.Object): Animation = js.native
   
   /** Pauses the instance, optionally jumping to a specific time. */
   def pause(): Animation = js.native
-  def pause(atTime: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Animation = js.native
   def pause(atTime: js.Any): Animation = js.native
   def pause(atTime: js.Any, suppressEvents: Boolean): Animation = js.native
+  def pause(atTime: Unit, suppressEvents: Boolean): Animation = js.native
   
   /** Gets or sets the animation's paused state which indicates whether or not the animation is currently paused. */
   def paused(): Boolean = js.native
@@ -71,9 +65,9 @@ trait Animation extends StObject {
   
   /** Begins playing forward, optionally from a specific time (by default playback begins from wherever the playhead currently is). */
   def play(): Animation = js.native
-  def play(from: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Animation = js.native
   def play(from: js.Any): Animation = js.native
   def play(from: js.Any, suppressEvents: Boolean): Animation = js.native
+  def play(from: Unit, suppressEvents: Boolean): Animation = js.native
   
   /**
     * Gets or sets the animations's progress which is a value between 0 and 1 indicating the position of the virtual playhead (excluding repeats) where 0 is at the beginning, 0.5 is at the
@@ -85,21 +79,21 @@ trait Animation extends StObject {
   
   /** Restarts and begins playing forward from the beginning. */
   def restart(): Animation = js.native
-  def restart(includeDelay: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Animation = js.native
   def restart(includeDelay: Boolean): Animation = js.native
   def restart(includeDelay: Boolean, suppressEvents: Boolean): Animation = js.native
+  def restart(includeDelay: Unit, suppressEvents: Boolean): Animation = js.native
   
   /** Resumes playing without altering direction (forward or reversed), optionally jumping to a specific time first. */
   def resume(): Animation = js.native
-  def resume(from: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Animation = js.native
   def resume(from: js.Any): Animation = js.native
   def resume(from: js.Any, suppressEvents: Boolean): Animation = js.native
+  def resume(from: Unit, suppressEvents: Boolean): Animation = js.native
   
   /** Reverses playback so that all aspects of the animation are oriented backwards including, for example, a tween's ease. */
   def reverse(): Animation = js.native
-  def reverse(from: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Animation = js.native
   def reverse(from: js.Any): Animation = js.native
   def reverse(from: js.Any, suppressEvents: Boolean): Animation = js.native
+  def reverse(from: Unit, suppressEvents: Boolean): Animation = js.native
   
   /** Gets or sets the animation's reversed state which indicates whether or not the animation should be played backwards. */
   def reversed(): Boolean = js.native

@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicsDetectionJobsRequest extends StObject {
   
   /**
     * Filters the jobs that are returned. Jobs can be filtered on their name, status, or the date and time that they were submitted. You can set only one filter at a time.
     */
-  var Filter: js.UndefOr[TopicsDetectionJobFilter] = js.native
+  var Filter: js.UndefOr[TopicsDetectionJobFilter] = js.undefined
   
   /**
     * The maximum number of results to return in each page. The default is 100.
     */
-  var MaxResults: js.UndefOr[MaxResultsInteger] = js.native
+  var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListTopicsDetectionJobsRequest {
   

@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var formItem: js.UndefOr[js.Any] = js.native
+  var formItem: js.UndefOr[js.Any] = js.undefined
   
-  var rule: js.UndefOr[js.Any] = js.native
+  var rule: js.UndefOr[js.Any] = js.undefined
   
-  var validator: js.UndefOr[js.Any] = js.native
+  var validator: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object Column {
   

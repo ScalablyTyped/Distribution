@@ -4,19 +4,17 @@ import typings.reactNativeSvgCharts.anon.CornerRadius
 import typings.reactNativeSvgCharts.anon.PartialPathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PieChartData extends StObject {
   
-  var arc: js.UndefOr[CornerRadius] = js.native
+  var arc: js.UndefOr[CornerRadius] = js.undefined
   
-  var key: String | Double = js.native
+  var key: String | Double
   
-  var svg: js.UndefOr[PartialPathProps] = js.native
+  var svg: js.UndefOr[PartialPathProps] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object PieChartData {
   

@@ -2,15 +2,13 @@ package typings.restify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.Array[String] = js.native
+    var headers: js.Array[String]
   }
   object Headers {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxBodySize extends StObject {
     
-    var maxBodySize: js.UndefOr[Double] = js.native
+    var maxBodySize: js.UndefOr[Double] = js.undefined
   }
   object MaxBodySize {
     
@@ -55,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     
@@ -76,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object Password {
     
@@ -102,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Server extends StObject {
     
-    var server: typings.restify.mod.Server = js.native
+    var server: typings.restify.mod.Server
   }
   object Server {
     
@@ -123,10 +117,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UserAgentRegExp extends StObject {
     
-    var userAgentRegExp: js.Any = js.native
+    var userAgentRegExp: js.Any
   }
   object UserAgentRegExp {
     

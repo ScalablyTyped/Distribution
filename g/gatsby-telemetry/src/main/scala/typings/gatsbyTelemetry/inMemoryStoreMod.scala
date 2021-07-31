@@ -3,7 +3,6 @@ package typings.gatsbyTelemetry
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inMemoryStoreMod {
@@ -12,13 +11,13 @@ object inMemoryStoreMod {
   @js.native
   class InMemoryConfigStore () extends StObject {
     
-    def all(): Record[String, _] = js.native
+    def all(): Record[String, js.Any] = js.native
     
     def clear(): Unit = js.native
     
-    var config: Record[String, _] = js.native
+    var config: Record[String, js.Any] = js.native
     
-    def createBaseConfig(): Record[String, _] = js.native
+    def createBaseConfig(): Record[String, js.Any] = js.native
     
     def delete(key: String): Unit = js.native
     

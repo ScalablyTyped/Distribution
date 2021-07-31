@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePlaylistitemsList extends StandardParameters {
+trait ParamsResourcePlaylistitemsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of one or more unique
     * playlist item IDs.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -41,14 +41,14 @@ trait ParamsResourcePlaylistitemsList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken and
     * prevPageToken properties identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -60,7 +60,7 @@ trait ParamsResourcePlaylistitemsList extends StandardParameters {
     * such, if you set part=snippet, the API response will contain all of those
     * properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The playlistId parameter specifies the unique ID of the playlist for
@@ -68,13 +68,13 @@ trait ParamsResourcePlaylistitemsList extends StandardParameters {
     * an optional parameter, every request to retrieve playlist items must
     * specify a value for either the id parameter or the playlistId parameter.
     */
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
   /**
     * The videoId parameter specifies that the request should return only the
     * playlist items that contain the specified video.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePlaylistitemsList {
   

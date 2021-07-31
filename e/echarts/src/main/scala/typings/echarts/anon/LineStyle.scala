@@ -1,20 +1,19 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineStyle extends js.Object {
+trait LineStyle extends StObject {
   
-  var lineStyle: js.UndefOr[typings.echarts.echarts.EChartOption.LineStyle] = js.native
+  var lineStyle: js.UndefOr[typings.echarts.echarts.EChartOption.LineStyle] = js.undefined
   
   /**
     * Set this to false to prevent the splitLine from showing
     *
     * @default true
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object LineStyle {
   
@@ -25,30 +24,18 @@ object LineStyle {
   }
   
   @scala.inline
-  implicit class LineStyleOps[Self <: LineStyle] (val x: Self) extends AnyVal {
+  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineStyle(value: typings.echarts.echarts.EChartOption.LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: typings.echarts.echarts.EChartOption.LineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
-    
-    @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

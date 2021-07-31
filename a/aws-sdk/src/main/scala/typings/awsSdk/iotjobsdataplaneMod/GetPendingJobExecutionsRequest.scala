@@ -2,16 +2,14 @@ package typings.awsSdk.iotjobsdataplaneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPendingJobExecutionsRequest extends StObject {
   
   /**
     * The name of the thing that is executing the job.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object GetPendingJobExecutionsRequest {
   

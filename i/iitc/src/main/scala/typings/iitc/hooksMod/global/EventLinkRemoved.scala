@@ -4,15 +4,13 @@ import typings.iitc.iitctypesMod.IITC.Link
 import typings.iitc.iitctypesMod.IITC.LinkData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventLinkRemoved extends StObject {
   
-  var data: LinkData = js.native
+  var data: LinkData
   
-  var link: Link = js.native
+  var link: Link
 }
 object EventLinkRemoved {
   

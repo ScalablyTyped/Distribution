@@ -4,22 +4,20 @@ import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
 import typings.mendixmodelsdk.transportationMod.ITransportation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationMod {
   
   object configuration {
     
-    @js.native
     trait IBackendCredentials extends StObject {
       
       /** The OpenID on behalf which the trusted backend service operates. */
-      var openid: js.UndefOr[String] = js.native
+      var openid: js.UndefOr[String] = js.undefined
       
-      var password: String = js.native
+      var password: String
       
-      var username: String = js.native
+      var username: String
     }
     object IBackendCredentials {
       
@@ -46,16 +44,17 @@ object configurationMod {
       }
     }
     
-    @js.native
-    trait ICreateWorkingCopyFromTeamServerParameters extends ICreateWorkingCopyParametersBase {
+    trait ICreateWorkingCopyFromTeamServerParameters
+      extends StObject
+         with ICreateWorkingCopyParametersBase {
       
       @JSName("projectId")
-      var projectId_ICreateWorkingCopyFromTeamServerParameters: String = js.native
+      var projectId_ICreateWorkingCopyFromTeamServerParameters: String
       
       @JSName("teamServerBaseBranch")
-      var teamServerBaseBranch_ICreateWorkingCopyFromTeamServerParameters: String = js.native
+      var teamServerBaseBranch_ICreateWorkingCopyFromTeamServerParameters: String
       
-      var teamServerGitUrl: js.UndefOr[String] = js.native
+      var teamServerGitUrl: js.UndefOr[String] = js.undefined
     }
     object ICreateWorkingCopyFromTeamServerParameters {
       
@@ -82,13 +81,14 @@ object configurationMod {
       }
     }
     
-    @js.native
-    trait ICreateWorkingCopyParameters extends ICreateWorkingCopyParametersBase {
+    trait ICreateWorkingCopyParameters
+      extends StObject
+         with ICreateWorkingCopyParametersBase {
       
       /**
         * Path to the (template) MPK file.
         */
-      var template: String = js.native
+      var template: String
     }
     object ICreateWorkingCopyParameters {
       
@@ -106,38 +106,37 @@ object configurationMod {
       }
     }
     
-    @js.native
     trait ICreateWorkingCopyParametersBase extends StObject {
       
-      var avatarUrl: js.UndefOr[String] = js.native
+      var avatarUrl: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Indicates whether this working copy is created for the purpose of collaboration between the Desktop modeler and Webmodeler.
         * By setting this, BiDi won't be available anymore for this project and thus requires a modeler with version 7.23.3 or higher.
         */
-      var isCollaboration: js.UndefOr[Boolean] = js.native
+      var isCollaboration: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Indicates whether the working copy should be long-lived.
         * This parameter can only be set to true when the Mendix project id is set and the Model SDK is used from a trusted backend
         *  - this excludes regular SDK users for the moment.
         */
-      var longLived: js.UndefOr[Boolean] = js.native
+      var longLived: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Force the working copy state to be marked to contain changes.
         *  - this excludes regular SDK users for the moment.
         */
-      var markAsChanged: js.UndefOr[Boolean] = js.native
+      var markAsChanged: js.UndefOr[Boolean] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
       /**
         * Mendix project id. Needed for deployment and team server commits
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * Indicates whether the new working copy should be the default working copy associated with the provided projectId.
@@ -145,23 +144,23 @@ object configurationMod {
         * This parameter can only be set to true when the Mendix project id is set and the Model SDK is used from a trusted backend
         *  - this excludes regular SDK users for the moment.
         */
-      var setAsDefault: js.UndefOr[Boolean] = js.native
+      var setAsDefault: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If this working copy is created from an SVN TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
         */
-      var teamServerBaseBranch: js.UndefOr[String] = js.native
+      var teamServerBaseBranch: js.UndefOr[String] = js.undefined
       
       /**
         * If this working copy is created from a Git TeamServer checkout, the commit id will be used for the clone operation.
         */
-      var teamServerBaseCommitId: js.UndefOr[String] = js.native
+      var teamServerBaseCommitId: js.UndefOr[String] = js.undefined
       
       /**
         * If this working copy is created from an SVN TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
         * @type {number}
         */
-      var teamServerBaseRevision: js.UndefOr[Double] = js.native
+      var teamServerBaseRevision: js.UndefOr[Double] = js.undefined
     }
     object ICreateWorkingCopyParametersBase {
       
@@ -239,16 +238,15 @@ object configurationMod {
       }
     }
     
-    @js.native
     trait ISdkConfig extends StObject {
       
-      var client: js.UndefOr[IModelServerClient] = js.native
+      var client: js.UndefOr[IModelServerClient] = js.undefined
       
-      var credentials: js.UndefOr[IBackendCredentials | ISdkCredentials] = js.native
+      var credentials: js.UndefOr[IBackendCredentials | ISdkCredentials] = js.undefined
       
-      var endPoint: js.UndefOr[String] = js.native
+      var endPoint: js.UndefOr[String] = js.undefined
       
-      var transportation: js.UndefOr[ITransportation] = js.native
+      var transportation: js.UndefOr[ITransportation] = js.undefined
     }
     object ISdkConfig {
       
@@ -287,12 +285,11 @@ object configurationMod {
       }
     }
     
-    @js.native
     trait ISdkCredentials extends StObject {
       
-      var apikey: String = js.native
+      var apikey: String
       
-      var username: String = js.native
+      var username: String
     }
     object ISdkCredentials {
       

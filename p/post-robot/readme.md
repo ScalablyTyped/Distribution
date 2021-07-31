@@ -10,9 +10,9 @@ Simple postMessage based server.
 | ------------------ | :-------------: |
 | Full name          | post-robot |
 | Keywords           | cross-domain, cross domain, xdm, iframe, postmessage, krakenjs, kraken |
-| # releases         | 79 |
+| # releases         | 54 |
 | # dependents       | 40 |
-| # downloads        | 1897516 |
+| # downloads        | 2104058 |
 | # stars            | 0 |
 
 ## Links

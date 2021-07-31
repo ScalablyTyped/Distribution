@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictk
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var no: ReactNode = js.native
+    var no: ReactNode
     
-    var yes: ReactNode = js.native
+    var yes: ReactNode
   }
   object Dictk {
     

@@ -4,15 +4,13 @@ import typings.windows1251.mod.DecoderMode
 import typings.windows1251.mod.EncoderMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var mode: js.UndefOr[DecoderMode] = js.native
+    var mode: js.UndefOr[DecoderMode] = js.undefined
   }
   object `0` {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: js.UndefOr[EncoderMode] = js.native
+    var mode: js.UndefOr[EncoderMode] = js.undefined
   }
   object Mode {
     

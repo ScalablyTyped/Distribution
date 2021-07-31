@@ -3,31 +3,29 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Source Repositories configuration of a project.
   */
-@js.native
 trait SchemaProjectConfig extends StObject {
   
   /**
     * Reject a Git push that contains a private key.
     */
-  var enablePrivateKeyCheck: js.UndefOr[Boolean] = js.native
+  var enablePrivateKeyCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the project. Values are of the form
     * `projects/&lt;project&gt;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * How this project publishes a change in the repositories through Cloud
     * Pub/Sub. Keyed by the topic names.
     */
-  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig]] = js.native
+  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig]] = js.undefined
 }
 object SchemaProjectConfig {
   

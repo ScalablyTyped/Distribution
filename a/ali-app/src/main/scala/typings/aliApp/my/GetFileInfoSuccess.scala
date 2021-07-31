@@ -2,17 +2,15 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInfoSuccess extends StObject {
   
   /** 摘要结果 */
-  var digest: String = js.native
+  var digest: String
   
   /** 文件大小，单位：B */
-  var size: Double = js.native
+  var size: Double
 }
 object GetFileInfoSuccess {
   

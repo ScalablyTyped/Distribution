@@ -3,31 +3,31 @@ package typings.stripeV3.stripe
 import typings.stripeV3.anon.BillingdetailsCard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HandleCardPaymentWithoutElementsOptions extends HandleCardPaymentOptions {
+trait HandleCardPaymentWithoutElementsOptions
+  extends StObject
+     with HandleCardPaymentOptions {
   
   /**
     * Only one of payment_method_data and payment_method is required.
     * Use payment_method to specify an existing PaymentMethod to use
     * for this payment.
     */
-  var payment_method: js.UndefOr[String] = js.native
+  var payment_method: js.UndefOr[String] = js.undefined
   
   /**
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details
     */
   @JSName("payment_method_data")
-  var payment_method_data_HandleCardPaymentWithoutElementsOptions: js.UndefOr[BillingdetailsCard] = js.native
+  var payment_method_data_HandleCardPaymentWithoutElementsOptions: js.UndefOr[BillingdetailsCard] = js.undefined
   
   /**
     * Instead of payment_method, the ID of a Source may be passed in.
     * (Note that this is undocumented as of August 2019).
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object HandleCardPaymentWithoutElementsOptions {
   

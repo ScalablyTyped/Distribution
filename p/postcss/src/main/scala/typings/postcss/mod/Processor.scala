@@ -2,7 +2,6 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on numerous CSS files.
   */
 @js.native
-trait Processor extends _AcceptedPlugin {
+trait Processor
+  extends StObject
+     with _AcceptedPlugin {
   
   /**
     * Contains plugins added to this processor.
     */
-  var plugins: js.Array[Plugin_[_]] = js.native
+  var plugins: js.Array[Plugin_[js.Any]] = js.native
   
   def process(css: LazyResult): LazyResult = js.native
   def process(css: LazyResult, options: ProcessOptions): LazyResult = js.native

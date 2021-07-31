@@ -3,15 +3,13 @@ package typings.breeze.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expression extends StObject {
   
-  var expression: RegExp = js.native
+  var expression: RegExp
   
-  var messageTemplate: js.UndefOr[String] = js.native
+  var messageTemplate: js.UndefOr[String] = js.undefined
 }
 object Expression {
   

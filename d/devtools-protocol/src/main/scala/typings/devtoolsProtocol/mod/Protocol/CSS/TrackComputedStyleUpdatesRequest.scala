@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackComputedStyleUpdatesRequest extends StObject {
   
-  var propertiesToTrack: js.Array[CSSComputedStyleProperty] = js.native
+  var propertiesToTrack: js.Array[CSSComputedStyleProperty]
 }
 object TrackComputedStyleUpdatesRequest {
   

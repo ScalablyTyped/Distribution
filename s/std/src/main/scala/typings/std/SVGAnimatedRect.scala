@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of basic SVGRect which can be animated. */
-@js.native
 trait SVGAnimatedRect extends StObject {
   
-  val animVal: DOMRectReadOnly = js.native
+  val animVal: DOMRectReadOnly
   
-  val baseVal: DOMRect = js.native
+  val baseVal: DOMRect
 }
 object SVGAnimatedRect {
   

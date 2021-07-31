@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsQueuesTasksList extends StandardParameters {
+trait ParamsResourceProjectsLocationsQueuesTasksList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Requested page size. Fewer tasks than requested might be returned.  The
@@ -24,7 +24,7 @@ trait ParamsResourceProjectsLocationsQueuesTasksList extends StandardParameters 
     * exist; use next_page_token in the response to determine if more tasks
     * exist.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying the page of results to return.  To request the first
@@ -33,13 +33,13 @@ trait ParamsResourceProjectsLocationsQueuesTasksList extends StandardParameters 
     * the previous call to ListTasks method.  The page token is valid for only
     * 2 hours.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The queue name. For example:
     * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The response_view specifies which subset of the Task will be returned. By
@@ -50,7 +50,7 @@ trait ParamsResourceProjectsLocationsQueuesTasksList extends StandardParameters 
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
     * permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsQueuesTasksList {
   

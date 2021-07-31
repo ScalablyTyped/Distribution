@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client point object.
   */
-@js.native
 trait ASPxClientPoint extends StObject {
   
   /**
     * Gets the point's X-coordinate.
     */
-  def GetX(): Double = js.native
+  def GetX(): Double
   
   /**
     * Gets the point's Y-coordinate.
     */
-  def GetY(): Double = js.native
+  def GetY(): Double
 }
 object ASPxClientPoint {
   

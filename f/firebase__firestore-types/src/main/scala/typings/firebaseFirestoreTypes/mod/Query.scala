@@ -3,7 +3,6 @@ package typings.firebaseFirestoreTypes.mod
 import typings.firebaseFirestoreTypes.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "Query")
@@ -11,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Query[T] protected () extends StObject {
   
   def endAt(fieldValues: js.Any*): Query[T] = js.native
-  def endAt(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def endAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   def endBefore(fieldValues: js.Any*): Query[T] = js.native
-  def endBefore(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def endBefore(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   val firestore: FirebaseFirestore = js.native
   
@@ -31,16 +30,16 @@ class Query[T] protected () extends StObject {
   def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, observer: Next[T]): js.Function0[Unit] = js.native
@@ -48,18 +47,18 @@ class Query[T] protected () extends StObject {
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    options: SnapshotListenOptions,
-    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   
@@ -69,10 +68,10 @@ class Query[T] protected () extends StObject {
   def orderBy(fieldPath: FieldPath, directionStr: OrderByDirection): Query[T] = js.native
   
   def startAfter(fieldValues: js.Any*): Query[T] = js.native
-  def startAfter(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def startAfter(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   def startAt(fieldValues: js.Any*): Query[T] = js.native
-  def startAt(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def startAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   def where(fieldPath: String, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native
   def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native

@@ -2,36 +2,34 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentOrShadowRoot extends StObject {
   
-  val activeElement: Element | Null = js.native
+  val activeElement: Element | Null
   
-  def caretPositionFromPoint(x: Double, y: Double): CaretPosition | Null = js.native
+  def caretPositionFromPoint(x: Double, y: Double): CaretPosition | Null
   
   /** @deprecated */
-  def caretRangeFromPoint(x: Double, y: Double): Range = js.native
+  def caretRangeFromPoint(x: Double, y: Double): Range
   
-  def elementFromPoint(x: Double, y: Double): Element | Null = js.native
+  def elementFromPoint(x: Double, y: Double): Element | Null
   
-  def elementsFromPoint(x: Double, y: Double): js.Array[Element] = js.native
+  def elementsFromPoint(x: Double, y: Double): js.Array[Element]
   
   /**
     * Returns document's fullscreen element.
     */
-  val fullscreenElement: Element | Null = js.native
+  val fullscreenElement: Element | Null
   
-  def getSelection(): Selection | Null = js.native
+  def getSelection(): Selection | Null
   
-  val pointerLockElement: Element | Null = js.native
+  val pointerLockElement: Element | Null
   
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */
-  val styleSheets: StyleSheetList = js.native
+  val styleSheets: StyleSheetList
 }
 object DocumentOrShadowRoot {
   
@@ -44,7 +42,7 @@ object DocumentOrShadowRoot {
     getSelection: () => Selection | Null,
     styleSheets: StyleSheetList
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any], activeElement = null, fullscreenElement = null, pointerLockElement = null)
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   

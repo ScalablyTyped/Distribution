@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the new project. You can use the ARN to configure IAM access to the project. 
     */
-  var ProjectArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectArn] = js.native
+  var ProjectArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectArn] = js.undefined
 }
 object CreateProjectResponse {
   

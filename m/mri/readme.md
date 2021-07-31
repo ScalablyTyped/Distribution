@@ -10,9 +10,9 @@ Quickly scan for CLI flags and arguments
 | ------------------ | :-------------: |
 | Full name          | mri |
 | Keywords           | argv, arguments, cli, minimist, options, optimist, parser, args |
-| # releases         | 6 |
-| # dependents       | 303 |
-| # downloads        | 42434799 |
+| # releases         | 3 |
+| # dependents       | 329 |
+| # downloads        | 57982907 |
 | # stars            | 6 |
 
 ## Links

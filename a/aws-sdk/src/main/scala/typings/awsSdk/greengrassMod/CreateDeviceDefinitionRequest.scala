@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeviceDefinitionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * Information about the initial version of the device definition.
     */
-  var InitialVersion: js.UndefOr[DeviceDefinitionVersion] = js.native
+  var InitialVersion: js.UndefOr[DeviceDefinitionVersion] = js.undefined
   
   /**
     * The name of the device definition.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Tag(s) to add to the new resource.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateDeviceDefinitionRequest {
   

@@ -2,120 +2,118 @@ package typings.bootstrapTouchspin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TouchSpinOptions. All options are optional
   */
-@js.native
 trait TouchSpinOptions extends StObject {
   
   /**
     * Boost at every nth step.
     */
-  var boostat: js.UndefOr[Double] = js.native
+  var boostat: js.UndefOr[Double] = js.undefined
   
   /**
     * If enabled, the the spinner is continually becoming faster as holding the button.
     */
-  var booster: js.UndefOr[Boolean] = js.native
+  var booster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Class(es) of down button.
     */
-  var buttondown_class: js.UndefOr[String] = js.native
+  var buttondown_class: js.UndefOr[String] = js.undefined
   
   /**
     * Class(es) of up button.
     */
-  var buttonup_class: js.UndefOr[String] = js.native
+  var buttonup_class: js.UndefOr[String] = js.undefined
   
   /**
     * Number of decimal points.
     */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /**
     * How to force the value to be divisible by step value: 'none' | 'round' | 'floor' | 'ceil'
     */
-  var forcestepdivisibility: js.UndefOr[String] = js.native
+  var forcestepdivisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Applied when no explicit value is set on the input with the value attribute.
     * Empty string means that the value remains empty on initialization.
     */
-  var initval: js.UndefOr[Double | String] = js.native
+  var initval: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Maximum value.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum step when boosted.
     */
-  var maxboostedstep: js.UndefOr[Double | Boolean] = js.native
+  var maxboostedstep: js.UndefOr[Double | Boolean] = js.undefined
   
   /**
     * Minimum value.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables the mouse wheel to change the value of the input.
     */
-  var mousewheel: js.UndefOr[Boolean] = js.native
+  var mousewheel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text after the input.
     */
-  var postfix: js.UndefOr[String] = js.native
+  var postfix: js.UndefOr[String] = js.undefined
   
   /**
     * Extra class(es) for postfix.
     */
-  var postfix_extraclass: js.UndefOr[String] = js.native
+  var postfix_extraclass: js.UndefOr[String] = js.undefined
   
   /**
     * Text before the input.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Extra class(es) for prefix.
     */
-  var prefix_extraclass: js.UndefOr[String] = js.native
+  var prefix_extraclass: js.UndefOr[String] = js.undefined
   
   /**
     * Incremental/decremental step on up/down change.
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * Refresh rate of the spinner in milliseconds.
     */
-  var stepinterval: js.UndefOr[Double] = js.native
+  var stepinterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Time in milliseconds before the spinner starts to spin.
     */
-  var stepintervaldelay: js.UndefOr[Double] = js.native
+  var stepintervaldelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables the traditional up/down buttons.
     */
-  var verticalbuttons: js.UndefOr[Boolean] = js.native
+  var verticalbuttons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Class of the down button with vertical buttons mode enabled.
     */
-  var verticaldownclass: js.UndefOr[String] = js.native
+  var verticaldownclass: js.UndefOr[String] = js.undefined
   
   /**
     * Class of the up button with vertical buttons mode enabled.
     */
-  var verticalupclass: js.UndefOr[String] = js.native
+  var verticalupclass: js.UndefOr[String] = js.undefined
 }
 object TouchSpinOptions {
   

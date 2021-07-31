@@ -3,25 +3,23 @@ package typings.bmapgl.BMapGL
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawingToolOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var customContainer: js.UndefOr[String | HTMLElement] = js.native
+  var customContainer: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var drawingModes: js.UndefOr[js.Array[DrawingType]] = js.native
+  var drawingModes: js.UndefOr[js.Array[DrawingType]] = js.undefined
   
-  var enableTips: js.UndefOr[Boolean] = js.native
+  var enableTips: js.UndefOr[Boolean] = js.undefined
   
-  var hasCustomStyle: js.UndefOr[Boolean] = js.native
+  var hasCustomStyle: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object DrawingToolOptions {
   

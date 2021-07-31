@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHapgRequest extends StObject {
   
   /**
     * The label of the new high-availability partition group.
     */
-  var Label: typings.awsSdk.cloudhsmMod.Label = js.native
+  var Label: typings.awsSdk.cloudhsmMod.Label
 }
 object CreateHapgRequest {
   

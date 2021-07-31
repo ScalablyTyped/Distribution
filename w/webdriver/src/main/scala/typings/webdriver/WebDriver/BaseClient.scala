@@ -1,29 +1,34 @@
 package typings.webdriver.WebDriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseClient extends js.Object {
+trait BaseClient extends StObject {
+  
   // assigned capabilities by the browser driver / WebDriver server
-  var capabilities: DesiredCapabilities = js.native
+  var capabilities: DesiredCapabilities
+  
   // true if mobile session runs on Android
-  var isAndroid: Boolean = js.native
+  var isAndroid: Boolean
+  
   // true if mobile session runs on iOS
-  var isIOS: Boolean = js.native
+  var isIOS: Boolean
+  
   /**
     * browser flags
     */
   // true if session runs on a mobile device
-  var isMobile: Boolean = js.native
+  var isMobile: Boolean
+  
   // original requested capabilities
-  var requestedCapabilities: DesiredCapabilities = js.native
+  var requestedCapabilities: DesiredCapabilities
+  
   // id of WebDriver session
-  var sessionId: String = js.native
+  var sessionId: String
 }
-
 object BaseClient {
+  
   @scala.inline
   def apply(
     capabilities: DesiredCapabilities,
@@ -36,30 +41,26 @@ object BaseClient {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], isAndroid = isAndroid.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], requestedCapabilities = requestedCapabilities.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseClient]
   }
-  @scala.inline
-  implicit class BaseClientOps[Self <: BaseClient] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setCapabilities(value: DesiredCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsAndroid(value: Boolean): Self = this.set("isAndroid", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsIOS(value: Boolean): Self = this.set("isIOS", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setRequestedCapabilities(value: DesiredCapabilities): Self = this.set("requestedCapabilities", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class BaseClientMutableBuilder[Self <: BaseClient] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRequestedCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+  }
 }
-

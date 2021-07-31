@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLinearGauge
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -27,42 +26,42 @@ trait IgLinearGauge
     * Use ui.offsetX to obtain the X offset of the label on the gauge scale.
     * Use ui.offsetY to obtain the Y offset of the label on the gauge scale.
     */
-  var alignLabel: js.UndefOr[AlignLabelEvent] = js.native
+  var alignLabel: js.UndefOr[AlignLabelEvent] = js.undefined
   
   /**
     * Gets or sets the brush to use to fill the backing of the linear gauge.
     */
-  var backingBrush: js.UndefOr[String] = js.native
+  var backingBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the inner extent of the linear gauge backing.
     */
-  var backingInnerExtent: js.UndefOr[Double] = js.native
+  var backingInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the outer extent of the linear gauge backing.
     */
-  var backingOuterExtent: js.UndefOr[Double] = js.native
+  var backingOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of the backing.
     */
-  var backingOutline: js.UndefOr[String] = js.native
+  var backingOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the stroke thickness of the backing outline.
     */
-  var backingStrokeThickness: js.UndefOr[Double] = js.native
+  var backingStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the font.
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use for the label font.
     */
-  var fontBrush: js.UndefOr[String] = js.native
+  var fontBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised when a label of the the gauge is formatted.
@@ -73,160 +72,160 @@ trait IgLinearGauge
     * Use ui.value to obtain the value on the the gauge scale associated with the label.
     * Use ui.label to obtain the string value of the label.
     */
-  var formatLabel: js.UndefOr[FormatLabelEvent] = js.native
+  var formatLabel: js.UndefOr[FormatLabelEvent] = js.undefined
   
   /**
     * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets or sets the interval to use for the scale.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether needle dragging is enabled or not.
     */
-  var isNeedleDraggingEnabled: js.UndefOr[Boolean] = js.native
+  var isNeedleDraggingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets a value indicating whether the scale is inverted.
     * When the scale is inverted the direction in which the scale values increase is right to left.
     */
-  var isScaleInverted: js.UndefOr[Boolean] = js.native
+  var isScaleInverted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.
     * Values further from zero than 1 can be used to hide the labels of the linear gauge.
     */
-  var labelExtent: js.UndefOr[Double] = js.native
+  var labelExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.
     */
-  var labelInterval: js.UndefOr[Double] = js.native
+  var labelInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to start adding labels, added to the scale's MinimumValue.
     */
-  var labelsPostInitial: js.UndefOr[Double] = js.native
+  var labelsPostInitial: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to stop adding labels, subtracted from the scale's MaximumValue.
     */
-  var labelsPreTerminal: js.UndefOr[Double] = js.native
+  var labelsPreTerminal: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the maximum value of the scale.
     */
-  var maximumValue: js.UndefOr[Double] = js.native
+  var maximumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the minimum value of the scale.
     */
-  var minimumValue: js.UndefOr[Double] = js.native
+  var minimumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the minor tickmarks.
     */
-  var minorTickBrush: js.UndefOr[String] = js.native
+  var minorTickBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the number of minor tickmarks to place between major tickmarks.
     */
-  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var minorTickEndExtent: js.UndefOr[Double] = js.native
+  var minorTickEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var minorTickStartExtent: js.UndefOr[Double] = js.native
+  var minorTickStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering minor ticks.
     */
-  var minorTickStrokeThickness: js.UndefOr[Double] = js.native
+  var minorTickStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the needle breadth.
     */
-  var needleBreadth: js.UndefOr[Double] = js.native
+  var needleBreadth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for needle element.
     */
-  var needleBrush: js.UndefOr[String] = js.native
+  var needleBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the width of the needle's inner base.
     */
-  var needleInnerBaseWidth: js.UndefOr[Double] = js.native
+  var needleInnerBaseWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var needleInnerExtent: js.UndefOr[Double] = js.native
+  var needleInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the extent of the needle's inner point.
     */
-  var needleInnerPointExtent: js.UndefOr[Double] = js.native
+  var needleInnerPointExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the width of the needle's inner point.
     */
-  var needleInnerPointWidth: js.UndefOr[Double] = js.native
+  var needleInnerPointWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the name used for needle.
     */
-  var needleName: js.UndefOr[String] = js.native
+  var needleName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the width of the needle's outer base.
     */
-  var needleOuterBaseWidth: js.UndefOr[Double] = js.native
+  var needleOuterBaseWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var needleOuterExtent: js.UndefOr[Double] = js.native
+  var needleOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the extent of the needle's outer point.
     */
-  var needleOuterPointExtent: js.UndefOr[Double] = js.native
+  var needleOuterPointExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the width of the needle's outer point.
     */
-  var needleOuterPointWidth: js.UndefOr[Double] = js.native
+  var needleOuterPointWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of needle element.
     */
-  var needleOutline: js.UndefOr[String] = js.native
+  var needleOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the shape to use when rendering the needle from a number of options.
@@ -238,17 +237,17 @@ trait IgLinearGauge
     * "needle" A needle shaped like a needle.
     * "trapezoid" A needle shaped like a trapezoid.
     */
-  var needleShape: js.UndefOr[String] = js.native
+  var needleShape: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering single actual value element.
     */
-  var needleStrokeThickness: js.UndefOr[Double] = js.native
+  var needleStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the needle's tooltip template.
     */
-  var needleToolTipTemplate: js.UndefOr[String] = js.native
+  var needleToolTipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the orientation of the scale.
@@ -257,155 +256,155 @@ trait IgLinearGauge
     * "horizontal" The scale has a horizontal orientation.
     * "vertical" The scale has a vertical orientation.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeBrushes: js.UndefOr[js.Any] = js.native
+  var rangeBrushes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var rangeInnerExtent: js.UndefOr[Double] = js.native
+  var rangeInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var rangeOuterExtent: js.UndefOr[Double] = js.native
+  var rangeOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeOutlines: js.UndefOr[js.Any] = js.native
+  var rangeOutlines: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the ranges' tooltip template.
     */
-  var rangeToolTipTemplate: js.UndefOr[String] = js.native
+  var rangeToolTipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the scale ranges to render on the linear gauge.
     */
-  var ranges: js.UndefOr[js.Array[IgLinearGaugeRange]] = js.native
+  var ranges: js.UndefOr[js.Array[IgLinearGaugeRange]] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Gets or sets the brush to use to fill the scale of the linear gauge.
     */
-  var scaleBrush: js.UndefOr[String] = js.native
+  var scaleBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var scaleEndExtent: js.UndefOr[Double] = js.native
+  var scaleEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var scaleInnerExtent: js.UndefOr[Double] = js.native
+  var scaleInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var scaleOuterExtent: js.UndefOr[Double] = js.native
+  var scaleOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of the scale.
     */
-  var scaleOutline: js.UndefOr[String] = js.native
+  var scaleOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var scaleStartExtent: js.UndefOr[Double] = js.native
+  var scaleStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness of the scale outline.
     */
-  var scaleStrokeThickness: js.UndefOr[Double] = js.native
+  var scaleStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a value indicating whether tooltips are enabled.
     */
-  var showToolTip: js.UndefOr[Boolean] = js.native
+  var showToolTip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the time in milliseconds that tooltip appearance is delayed with.
     */
-  var showToolTipTimeout: js.UndefOr[Double] = js.native
+  var showToolTipTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the major tickmarks.
     */
-  var tickBrush: js.UndefOr[String] = js.native
+  var tickBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var tickEndExtent: js.UndefOr[Double] = js.native
+  var tickEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
     */
-  var tickStartExtent: js.UndefOr[Double] = js.native
+  var tickStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering ticks.
     */
-  var tickStrokeThickness: js.UndefOr[Double] = js.native
+  var tickStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to start adding tickmarks, added to the scale's MinimumValue.
     */
-  var ticksPostInitial: js.UndefOr[Double] = js.native
+  var ticksPostInitial: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to stop adding tickmarks, subtracted from the scale's MaximumValue.
     */
-  var ticksPreTerminal: js.UndefOr[Double] = js.native
+  var ticksPreTerminal: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the number of milliseconds over which changes to the linear gauge should be animated.
     */
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the value at which the needle is positioned.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * Occurs when the Value property changes.
     */
-  var valueChanged: js.UndefOr[ValueChangedEvent] = js.native
+  var valueChanged: js.UndefOr[ValueChangedEvent] = js.undefined
   
   /**
     * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgLinearGauge {
   

@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.router5TransitionPath.transitionPathMod.SegementParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var options: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[SegementParams]] = js.native
+    var params: js.UndefOr[StringDictionary[SegementParams]] = js.undefined
   }
   object Options {
     

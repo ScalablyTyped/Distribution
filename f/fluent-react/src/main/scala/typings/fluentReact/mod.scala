@@ -14,10 +14,13 @@ import typings.std.IterableIterator
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fluent-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fluent-react", "LocalizationProvider")
   @js.native
@@ -49,34 +52,41 @@ object mod {
     def this(bundles: IterableIterator[FluentBundle]) = this()
     
     def getString(id: String): String = js.native
-    def getString(id: String, args: js.UndefOr[scala.Nothing], fallback: String): String = js.native
     def getString(id: String, args: js.Object): String = js.native
     def getString(id: String, args: js.Object, fallback: String): String = js.native
+    def getString(id: String, args: Unit, fallback: String): String = js.native
   }
   
-  @JSImport("fluent-react", "withLocalization")
-  @js.native
-  def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]): ComponentType[
+  @scala.inline
+  def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]): ComponentType[
     Omit[
-      GetProps[ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]], 
+      GetProps[ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
     ]
-  ] = js.native
-  @JSImport("fluent-react", "withLocalization")
-  @js.native
-  def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[_]]]): ComponentType[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocalization")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     Omit[
-      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[_]]]], 
+      GetProps[ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]], 
+      /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
+    ]
+  ]]
+  @scala.inline
+  def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]): ComponentType[
+    Omit[
+      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocalization")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    Omit[
+      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]], 
+      /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
+    ]
+  ]]
   
-  @js.native
   trait Context extends StObject {
     
-    var l10n: ReactLocalization = js.native
+    var l10n: ReactLocalization
     
-    var parseMarkup: MarkupParser = js.native
+    var parseMarkup: MarkupParser
   }
   object Context {
     
@@ -101,10 +111,9 @@ object mod {
   
   type GetString = js.Function2[/* id */ String, /* args */ js.UndefOr[js.Object], String]
   
-  @js.native
   trait InjectedProps extends StObject {
     
-    var getString: GetString = js.native
+    var getString: GetString
   }
   object InjectedProps {
     
@@ -122,12 +131,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LocalizationProviderProps extends StObject {
     
-    var bundles: IterableIterator[FluentBundle] = js.native
+    var bundles: IterableIterator[FluentBundle]
     
-    var parseMarkup: js.UndefOr[MarkupParser] = js.native
+    var parseMarkup: js.UndefOr[MarkupParser] = js.undefined
   }
   object LocalizationProviderProps {
     
@@ -151,13 +159,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LocalizedProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var attrs: js.UndefOr[js.Object] = js.native
+    var attrs: js.UndefOr[js.Object] = js.undefined
     
-    var id: String = js.native
+    var id: String
   }
   object LocalizedProps {
     
@@ -185,24 +193,23 @@ object mod {
   
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.fluentReact.fluentReactStrings.Matching with TopLevel[js.Any]
+    */ typings.fluentReact.fluentReactStrings.Matching & TopLevel[js.Any]
   
-  @js.native
   trait Node extends StObject {
     
-    var TEXT_NODE: `3` = js.native
+    var TEXT_NODE: `3`
     
-    var localName: js.UndefOr[String] = js.native
+    var localName: js.UndefOr[String] = js.undefined
     
-    var nodeType: Double = js.native
+    var nodeType: Double
     
-    var textContext: String = js.native
+    var textContext: String
   }
   object Node {
     
     @scala.inline
-    def apply(TEXT_NODE: `3`, nodeType: Double, textContext: String): Node = {
-      val __obj = js.Dynamic.literal(TEXT_NODE = TEXT_NODE.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], textContext = textContext.asInstanceOf[js.Any])
+    def apply(nodeType: Double, textContext: String): Node = {
+      val __obj = js.Dynamic.literal(TEXT_NODE = 3, nodeType = nodeType.asInstanceOf[js.Any], textContext = textContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
@@ -230,5 +237,5 @@ object mod {
   
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.fluentReact.fluentReactStrings.Shared with TopLevel[js.Any]
+    */ typings.fluentReact.fluentReactStrings.Shared & TopLevel[js.Any]
 }

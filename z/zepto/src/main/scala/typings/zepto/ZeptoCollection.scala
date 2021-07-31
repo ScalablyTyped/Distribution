@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -80,28 +79,13 @@ trait ZeptoCollection extends StObject {
     * @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
     **/
   def animate(properties: js.Any): ZeptoCollection = js.native
-  def animate(
-    properties: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function0[Unit]
-  ): ZeptoCollection = js.native
-  def animate(properties: js.Any, duration: js.UndefOr[scala.Nothing], easing: String): ZeptoCollection = js.native
-  def animate(
-    properties: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    easing: String,
-    complete: js.Function0[Unit]
-  ): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double): ZeptoCollection = js.native
-  def animate(
-    properties: js.Any,
-    duration: Double,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function0[Unit]
-  ): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double, easing: String): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double, easing: String, complete: js.Function0[Unit]): ZeptoCollection = js.native
+  def animate(properties: js.Any, duration: Double, easing: Unit, complete: js.Function0[Unit]): ZeptoCollection = js.native
+  def animate(properties: js.Any, duration: Unit, easing: String): ZeptoCollection = js.native
+  def animate(properties: js.Any, duration: Unit, easing: String, complete: js.Function0[Unit]): ZeptoCollection = js.native
+  def animate(properties: js.Any, duration: Unit, easing: Unit, complete: js.Function0[Unit]): ZeptoCollection = js.native
   /**
     * @see ZeptoCollection.animate
     * @param options Animation options.
@@ -382,7 +366,7 @@ trait ZeptoCollection extends StObject {
     * @param fn
     * @return
     **/
-  def forEach(fn: js.Function3[/* item */ js.Any, /* index */ Double, /* array */ js.Array[_], Unit]): ZeptoCollection = js.native
+  def forEach(fn: js.Function3[/* item */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Unit]): ZeptoCollection = js.native
   
   /**
     * Get all elements or a single element from the current collection. When no index is given, returns all elements in an ordinary array. When index is specified, return only the element at that position. This is different than eq in the way that the returned node is not wrapped in a Zepto collection.
@@ -587,7 +571,7 @@ trait ZeptoCollection extends StObject {
     * @param fn
     * @return
     **/
-  def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): ZeptoCollection = js.native
+  def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, js.Any]): ZeptoCollection = js.native
   
   def mousedown(): ZeptoCollection = js.native
   def mousedown(fn: ZeptoEventHandler): ZeptoCollection = js.native
@@ -855,9 +839,9 @@ trait ZeptoCollection extends StObject {
       /* memo */ js.Any, 
       /* item */ js.Any, 
       /* index */ Double, 
-      /* array */ js.Array[_], 
+      /* array */ js.Array[js.Any], 
       /* initial */ js.Any, 
-      _
+      js.Any
     ]
   ): js.Any = js.native
   
@@ -932,7 +916,7 @@ trait ZeptoCollection extends StObject {
     * Serialize form into an array of objects with name and value properties. Disabled form controls, buttons, and unchecked radio buttons/checkboxes are skipped. The result doesn’t include data from file inputs.
     * @return Array with name value pairs from the Form.
     **/
-  def serializeArray(): js.Array[_] = js.native
+  def serializeArray(): js.Array[js.Any] = js.native
   
   /**
     * Restore the default value for the “display” property of each element in the array, effectively showing them if they were hidden with hide.
@@ -961,9 +945,9 @@ trait ZeptoCollection extends StObject {
     * @return
     **/
   def slice(): js.Array[ZeptoCollection] = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double, end: Double): js.Array[ZeptoCollection] = js.native
+  def slice(start: Unit, end: Double): js.Array[ZeptoCollection] = js.native
   
   /**
     * Trigger or attach a handler for the submit event. When no function given, trigger the “submit” event on the current form and have it perform its submit action unless preventDefault() was called for the event.
@@ -1021,7 +1005,7 @@ trait ZeptoCollection extends StObject {
     * @return
     **/
   def trigger(event: String): ZeptoCollection = js.native
-  def trigger(event: String, data: js.Array[_]): ZeptoCollection = js.native
+  def trigger(event: String, data: js.Array[js.Any]): ZeptoCollection = js.native
   
   /**
     * Like trigger, but triggers only event handlers on current elements and doesn’t bubble.
@@ -1030,7 +1014,7 @@ trait ZeptoCollection extends StObject {
     * @return
     **/
   def triggerHandler(event: String): ZeptoCollection = js.native
-  def triggerHandler(event: String, data: js.Array[_]): ZeptoCollection = js.native
+  def triggerHandler(event: String, data: js.Array[js.Any]): ZeptoCollection = js.native
   
   /**
     * Detach event handler added with bind.

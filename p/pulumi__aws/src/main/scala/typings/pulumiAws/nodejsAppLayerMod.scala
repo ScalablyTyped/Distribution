@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodejsAppLayerMod {
@@ -130,6 +129,10 @@ object nodejsAppLayerMod {
   /* static members */
   object NodejsAppLayer {
     
+    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NodejsAppLayer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -139,127 +142,121 @@ object nodejsAppLayerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NodejsAppLayer = js.native
-    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NodejsAppLayer = js.native
-    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NodejsAppLayerState): NodejsAppLayer = js.native
-    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NodejsAppLayerState, opts: CustomResourceOptions): NodejsAppLayer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NodejsAppLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NodejsAppLayer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NodejsAppLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodejsAppLayer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NodejsAppLayerState): NodejsAppLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NodejsAppLayer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NodejsAppLayerState, opts: CustomResourceOptions): NodejsAppLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodejsAppLayer]
     
     /**
       * Returns true if the given object is an instance of NodejsAppLayer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/nodejsAppLayer", "NodejsAppLayer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/nodejsAppLayer.NodejsAppLayer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/nodejsAppLayer.NodejsAppLayer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/nodejsAppLayer.NodejsAppLayer */ Boolean]
   }
   
-  @js.native
   trait NodejsAppLayerArgs extends StObject {
     
     /**
       * Whether to automatically assign an elastic IP address to the layer's instances.
       */
-    val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.native
+    val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
       */
-    val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.native
+    val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to enable auto-healing for the layer.
       */
-    val autoHealing: js.UndefOr[Input[Boolean]] = js.native
+    val autoHealing: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of an IAM profile that will be used for the layer's instances.
       */
-    val customInstanceProfileArn: js.UndefOr[Input[String]] = js.native
+    val customInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Custom JSON attributes to apply to the layer.
       */
-    val customJson: js.UndefOr[Input[String]] = js.native
+    val customJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Ids for a set of security groups to apply to the layer's instances.
       */
-    val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable Elastic Load Balancing connection draining.
       */
-    val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.native
+    val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
       */
     val ebsVolumes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.NodejsAppLayerEbsVolume]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of an Elastic Load Balancer to attach to this layer
       */
-    val elasticLoadBalancer: js.UndefOr[Input[String]] = js.native
+    val elasticLoadBalancer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to install OS and package updates on each instance when it boots.
       */
-    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.native
+    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
       */
-    val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.native
+    val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A human-readable name for the layer.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of NodeJS to use. Defaults to "0.10.38".
       */
-    val nodejsVersion: js.UndefOr[Input[String]] = js.native
+    val nodejsVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the stack the layer will belong to.
       */
-    val stackId: Input[String] = js.native
+    val stackId: Input[String]
     
     /**
       * Names of a set of system packages to install on the layer's instances.
       */
-    val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to use EBS-optimized instances.
       */
-    val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
+    val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object NodejsAppLayerArgs {
     
@@ -427,110 +424,109 @@ object nodejsAppLayerMod {
     }
   }
   
-  @js.native
   trait NodejsAppLayerState extends StObject {
     
     /**
       * The Amazon Resource Name(ARN) of the layer.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to automatically assign an elastic IP address to the layer's instances.
       */
-    val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.native
+    val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
       */
-    val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.native
+    val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to enable auto-healing for the layer.
       */
-    val autoHealing: js.UndefOr[Input[Boolean]] = js.native
+    val autoHealing: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of an IAM profile that will be used for the layer's instances.
       */
-    val customInstanceProfileArn: js.UndefOr[Input[String]] = js.native
+    val customInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Custom JSON attributes to apply to the layer.
       */
-    val customJson: js.UndefOr[Input[String]] = js.native
+    val customJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Ids for a set of security groups to apply to the layer's instances.
       */
-    val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable Elastic Load Balancing connection draining.
       */
-    val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.native
+    val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
       */
     val ebsVolumes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.NodejsAppLayerEbsVolume]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of an Elastic Load Balancer to attach to this layer
       */
-    val elasticLoadBalancer: js.UndefOr[Input[String]] = js.native
+    val elasticLoadBalancer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to install OS and package updates on each instance when it boots.
       */
-    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.native
+    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
       */
-    val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.native
+    val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A human-readable name for the layer.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of NodeJS to use. Defaults to "0.10.38".
       */
-    val nodejsVersion: js.UndefOr[Input[String]] = js.native
+    val nodejsVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the stack the layer will belong to.
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Names of a set of system packages to install on the layer's instances.
       */
-    val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to use EBS-optimized instances.
       */
-    val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
+    val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object NodejsAppLayerState {
     

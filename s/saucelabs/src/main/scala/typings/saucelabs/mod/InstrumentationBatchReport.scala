@@ -17,50 +17,49 @@ import typings.saucelabs.saucelabsStrings.WARNING
 import typings.saucelabs.saucelabsStrings.XCUITEST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstrumentationBatchReport
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var appUnderTestId: js.UndefOr[Id] = js.native
+  var appUnderTestId: js.UndefOr[Id] = js.undefined
   
-  var automationFramework: js.UndefOr[ROBOTIUM | ESPRESSO | XCUITEST] = js.native
+  var automationFramework: js.UndefOr[ROBOTIUM | ESPRESSO | XCUITEST] = js.undefined
   
-  var batchId: js.UndefOr[Id] = js.native
+  var batchId: js.UndefOr[Id] = js.undefined
   
-  var checkupType: js.UndefOr[STRESS_TEST | INSTALL_LAUNCH | SCREENSHOTS | NONE] = js.native
+  var checkupType: js.UndefOr[STRESS_TEST | INSTALL_LAUNCH | SCREENSHOTS | NONE] = js.undefined
   
-  var devices: js.UndefOr[js.Array[DeviceView]] = js.native
+  var devices: js.UndefOr[js.Array[DeviceView]] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[Id] = js.native
+  var id: js.UndefOr[Id] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var notificationEmails: js.UndefOr[js.Array[String]] = js.native
+  var notificationEmails: js.UndefOr[js.Array[String]] = js.undefined
   
-  var notificationEnabled: js.UndefOr[Boolean] = js.native
+  var notificationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var projectPath: js.UndefOr[Path] = js.native
+  var projectPath: js.UndefOr[Path] = js.undefined
   
-  var reports: js.UndefOr[js.Array[ReportEntry]] = js.native
+  var reports: js.UndefOr[js.Array[ReportEntry]] = js.undefined
   
-  var running: js.UndefOr[Boolean] = js.native
+  var running: js.UndefOr[Boolean] = js.undefined
   
-  var secretLinkCode: js.UndefOr[String] = js.native
+  var secretLinkCode: js.UndefOr[String] = js.undefined
   
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.native
+  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.undefined
   
-  var testSpecAppId: js.UndefOr[Id] = js.native
+  var testSpecAppId: js.UndefOr[Id] = js.undefined
   
-  var tests: js.UndefOr[js.Array[TestView]] = js.native
+  var tests: js.UndefOr[js.Array[TestView]] = js.undefined
   
-  var tunnelIdentifier: js.UndefOr[String] = js.native
+  var tunnelIdentifier: js.UndefOr[String] = js.undefined
 }
 object InstrumentationBatchReport {
   

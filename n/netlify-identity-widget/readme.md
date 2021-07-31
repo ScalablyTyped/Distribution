@@ -10,9 +10,9 @@ Netlify Identity widget for easy integration
 | ------------------ | :-------------: |
 | Full name          | netlify-identity-widget |
 | Keywords           | authentication, identity, netlify |
-| # releases         | 14 |
-| # dependents       | 16 |
-| # downloads        | 1418495 |
+| # releases         | 13 |
+| # dependents       | 17 |
+| # downloads        | 1511908 |
 | # stars            | 0 |
 
 ## Links

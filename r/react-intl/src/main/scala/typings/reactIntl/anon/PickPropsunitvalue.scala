@@ -2,16 +2,14 @@ package typings.reactIntl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-intl.react-intl/src/components/relative.Props, 'unit' | 'value'> */
-@js.native
 trait PickPropsunitvalue extends StObject {
   
-  var unit: js.UndefOr[js.Any] = js.native
+  var unit: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object PickPropsunitvalue {
   

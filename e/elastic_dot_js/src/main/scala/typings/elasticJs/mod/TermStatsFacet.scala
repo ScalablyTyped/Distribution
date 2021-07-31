@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermStatsFacet")
 @js.native
-class TermStatsFacet protected () extends Facet {
+class TermStatsFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet which computes statistical data based on an aggregate key.
     */

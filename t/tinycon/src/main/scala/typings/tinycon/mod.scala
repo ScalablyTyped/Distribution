@@ -3,41 +3,39 @@ package typings.tinycon
 import typings.tinycon.tinyconStrings.force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tinycon", "setBubble")
+  @JSImport("tinycon", JSImport.Namespace)
   @js.native
-  def setBubble(): Unit = js.native
-  @JSImport("tinycon", "setBubble")
-  @js.native
-  def setBubble(count: String): Unit = js.native
-  @JSImport("tinycon", "setBubble")
-  @js.native
-  def setBubble(count: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tinycon", "setOptions")
-  @js.native
-  def setOptions(options: TinyconOptions): Unit = js.native
+  @scala.inline
+  def setBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")().asInstanceOf[Unit]
+  @scala.inline
+  def setBubble(count: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setBubble(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setOptions(options: TinyconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait TinyconOptions extends StObject {
     
-    var abbreviate: js.UndefOr[Boolean] = js.native
+    var abbreviate: js.UndefOr[Boolean] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fallback: js.UndefOr[Boolean | force] = js.native
+    var fallback: js.UndefOr[Boolean | force] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TinyconOptions {
     

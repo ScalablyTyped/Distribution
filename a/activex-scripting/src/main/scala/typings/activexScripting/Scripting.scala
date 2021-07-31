@@ -17,7 +17,6 @@ import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scripting {
@@ -82,47 +81,46 @@ object Scripting {
   }
   
   /** Drive Object */
-  @js.native
   trait Drive extends StObject {
     
     /** Get available space */
-    val AvailableSpace: Double = js.native
+    val AvailableSpace: Double
     
     /** Drive letter */
-    val DriveLetter: String = js.native
+    val DriveLetter: String
     
     /** Drive type */
-    val DriveType: DriveTypeConst = js.native
+    val DriveType: DriveTypeConst
     
     /** Filesystem type */
-    val FileSystem: String = js.native
+    val FileSystem: String
     
     /** Get drive free space */
-    val FreeSpace: Double = js.native
+    val FreeSpace: Double
     
     /** Check if disk is available */
-    val IsReady: Boolean = js.native
+    val IsReady: Boolean
     
     /** Path */
-    val Path: String = js.native
+    val Path: String
     
     /** Root folder */
-    val RootFolder: Folder = js.native
+    val RootFolder: Folder
     
     @JSName("Scripting.Drive_typekey")
-    var ScriptingDotDrive_typekey: Drive = js.native
+    var ScriptingDotDrive_typekey: Drive
     
     /** Serial number */
-    val SerialNumber: Double = js.native
+    val SerialNumber: Double
     
     /** Share name */
-    val ShareName: String = js.native
+    val ShareName: String
     
     /** Get total drive size */
-    val TotalSize: Double = js.native
+    val TotalSize: Double
     
     /** Name of volume */
-    var VolumeName: String = js.native
+    var VolumeName: String
   }
   object Drive {
     
@@ -292,7 +290,7 @@ object Scripting {
       * @param Scripting.Tristate [Format=0]
       */
     def OpenAsTextStream(): TextStream = js.native
-    def OpenAsTextStream(IOMode: js.UndefOr[scala.Nothing], Format: Tristate): TextStream = js.native
+    def OpenAsTextStream(IOMode: Unit, Format: Tristate): TextStream = js.native
     def OpenAsTextStream(IOMode: IOMode): TextStream = js.native
     def OpenAsTextStream(IOMode: IOMode, Format: Tristate): TextStream = js.native
     
@@ -391,9 +389,9 @@ object Scripting {
       * @param boolean [Unicode=false]
       */
     def CreateTextFile(FileName: String): TextStream = js.native
-    def CreateTextFile(FileName: String, Overwrite: js.UndefOr[scala.Nothing], Unicode: Boolean): TextStream = js.native
     def CreateTextFile(FileName: String, Overwrite: Boolean): TextStream = js.native
     def CreateTextFile(FileName: String, Overwrite: Boolean, Unicode: Boolean): TextStream = js.native
+    def CreateTextFile(FileName: String, Overwrite: Unit, Unicode: Boolean): TextStream = js.native
     
     /**
       * Delete a file
@@ -481,18 +479,13 @@ object Scripting {
       * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
       */
     def OpenTextFile(FileName: String): TextStream = js.native
-    def OpenTextFile(
-      FileName: String,
-      IOMode: js.UndefOr[scala.Nothing],
-      Create: js.UndefOr[scala.Nothing],
-      Format: Tristate
-    ): TextStream = js.native
-    def OpenTextFile(FileName: String, IOMode: js.UndefOr[scala.Nothing], Create: Boolean): TextStream = js.native
-    def OpenTextFile(FileName: String, IOMode: js.UndefOr[scala.Nothing], Create: Boolean, Format: Tristate): TextStream = js.native
+    def OpenTextFile(FileName: String, IOMode: Unit, Create: Boolean): TextStream = js.native
+    def OpenTextFile(FileName: String, IOMode: Unit, Create: Boolean, Format: Tristate): TextStream = js.native
+    def OpenTextFile(FileName: String, IOMode: Unit, Create: Unit, Format: Tristate): TextStream = js.native
     def OpenTextFile(FileName: String, IOMode: IOMode): TextStream = js.native
-    def OpenTextFile(FileName: String, IOMode: IOMode, Create: js.UndefOr[scala.Nothing], Format: Tristate): TextStream = js.native
     def OpenTextFile(FileName: String, IOMode: IOMode, Create: Boolean): TextStream = js.native
     def OpenTextFile(FileName: String, IOMode: IOMode, Create: Boolean, Format: Tristate): TextStream = js.native
+    def OpenTextFile(FileName: String, IOMode: IOMode, Create: Unit, Format: Tristate): TextStream = js.native
     
     @JSName("Scripting.FileSystemObject_typekey")
     var ScriptingDotFileSystemObject_typekey: FileSystemObject = js.native
@@ -532,9 +525,9 @@ object Scripting {
       * @param boolean [Unicode=false]
       */
     def CreateTextFile(FileName: String): TextStream = js.native
-    def CreateTextFile(FileName: String, Overwrite: js.UndefOr[scala.Nothing], Unicode: Boolean): TextStream = js.native
     def CreateTextFile(FileName: String, Overwrite: Boolean): TextStream = js.native
     def CreateTextFile(FileName: String, Overwrite: Boolean, Unicode: Boolean): TextStream = js.native
+    def CreateTextFile(FileName: String, Overwrite: Unit, Unicode: Boolean): TextStream = js.native
     
     /** Date folder was created */
     val DateCreated: VarDate = js.native

@@ -2,11 +2,11 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPInformation extends IIPInformation
+trait IPInformation
+  extends StObject
+     with IIPInformation
 object IPInformation {
   
   @scala.inline

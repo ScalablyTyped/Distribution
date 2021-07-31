@@ -10,9 +10,9 @@ flatpickr for React
 | ------------------ | :-------------: |
 | Full name          | react-flatpickr |
 | Keywords           | flatpickr, react |
-| # releases         | 10 |
-| # dependents       | 33 |
-| # downloads        | 1666232 |
+| # releases         | 9 |
+| # dependents       | 35 |
+| # downloads        | 2549639 |
 | # stars            | 1 |
 
 ## Links

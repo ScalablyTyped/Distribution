@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var left_shift_ticks: Double = js.native
+  var left_shift_ticks: Double
   
-  var right_shift_ticks: Double = js.native
+  var right_shift_ticks: Double
   
-  var y_shift: Double = js.native
+  var y_shift: Double
 }
 object Height {
   

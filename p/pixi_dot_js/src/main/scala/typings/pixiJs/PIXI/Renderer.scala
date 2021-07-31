@@ -17,7 +17,6 @@ import typings.pixiJs.PIXI.systems.TextureSystem
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,7 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @extends PIXI.AbstractRenderer
   */
 @js.native
-trait Renderer extends AbstractRenderer {
+trait Renderer
+  extends StObject
+     with AbstractRenderer {
   
   /**
     * Add a new system to the renderer.
@@ -44,8 +45,8 @@ trait Renderer extends AbstractRenderer {
     *        sure it doesn't collide with properties on Renderer.
     * @return {PIXI.Renderer} Return instance of renderer
     */
-  def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, _]): Renderer = js.native
-  def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, _], name: String): Renderer = js.native
+  def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, js.Any]): Renderer = js.native
+  def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, js.Any], name: String): Renderer = js.native
   
   /**
     * Batch system instance
@@ -141,74 +142,44 @@ trait Renderer extends AbstractRenderer {
     * @param {boolean} [skipUpdateTransform=false] - Should we skip the update transform pass?
     */
   def render(displayObject: DisplayObject): Unit = js.native
+  def render(displayObject: DisplayObject, renderTexture: Unit, clear: Boolean): Unit = js.native
   def render(
     displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: js.UndefOr[scala.Nothing],
-    transform: js.UndefOr[scala.Nothing],
+    renderTexture: Unit,
+    clear: Boolean,
+    transform: Unit,
     skipUpdateTransform: Boolean
   ): Unit = js.native
+  def render(displayObject: DisplayObject, renderTexture: Unit, clear: Boolean, transform: Matrix): Unit = js.native
   def render(
     displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: js.UndefOr[scala.Nothing],
-    transform: Matrix
-  ): Unit = js.native
-  def render(
-    displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: js.UndefOr[scala.Nothing],
+    renderTexture: Unit,
+    clear: Boolean,
     transform: Matrix,
     skipUpdateTransform: Boolean
   ): Unit = js.native
-  def render(displayObject: DisplayObject, renderTexture: js.UndefOr[scala.Nothing], clear: Boolean): Unit = js.native
   def render(
     displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: Boolean,
-    transform: js.UndefOr[scala.Nothing],
+    renderTexture: Unit,
+    clear: Unit,
+    transform: Unit,
     skipUpdateTransform: Boolean
   ): Unit = js.native
+  def render(displayObject: DisplayObject, renderTexture: Unit, clear: Unit, transform: Matrix): Unit = js.native
   def render(
     displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: Boolean,
-    transform: Matrix
-  ): Unit = js.native
-  def render(
-    displayObject: DisplayObject,
-    renderTexture: js.UndefOr[scala.Nothing],
-    clear: Boolean,
+    renderTexture: Unit,
+    clear: Unit,
     transform: Matrix,
     skipUpdateTransform: Boolean
   ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture): Unit = js.native
-  def render(
-    displayObject: DisplayObject,
-    renderTexture: RenderTexture,
-    clear: js.UndefOr[scala.Nothing],
-    transform: js.UndefOr[scala.Nothing],
-    skipUpdateTransform: Boolean
-  ): Unit = js.native
-  def render(
-    displayObject: DisplayObject,
-    renderTexture: RenderTexture,
-    clear: js.UndefOr[scala.Nothing],
-    transform: Matrix
-  ): Unit = js.native
-  def render(
-    displayObject: DisplayObject,
-    renderTexture: RenderTexture,
-    clear: js.UndefOr[scala.Nothing],
-    transform: Matrix,
-    skipUpdateTransform: Boolean
-  ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture, clear: Boolean): Unit = js.native
   def render(
     displayObject: DisplayObject,
     renderTexture: RenderTexture,
     clear: Boolean,
-    transform: js.UndefOr[scala.Nothing],
+    transform: Unit,
     skipUpdateTransform: Boolean
   ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture, clear: Boolean, transform: Matrix): Unit = js.native
@@ -216,6 +187,21 @@ trait Renderer extends AbstractRenderer {
     displayObject: DisplayObject,
     renderTexture: RenderTexture,
     clear: Boolean,
+    transform: Matrix,
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: Unit,
+    transform: Unit,
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(displayObject: DisplayObject, renderTexture: RenderTexture, clear: Unit, transform: Matrix): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: Unit,
     transform: Matrix,
     skipUpdateTransform: Boolean
   ): Unit = js.native

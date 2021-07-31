@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param textures - The font textures.
   * @param data - The font data.
   */
-@js.native
 trait Font extends StObject {
   
   /**
     * The font intensity.
     */
-  var intensity: Double = js.native
+  var intensity: Double
   
   /**
     * The font textures.
     */
-  var textures: js.Array[Texture] = js.native
+  var textures: js.Array[Texture]
 }
 object Font {
   

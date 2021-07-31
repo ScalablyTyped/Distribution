@@ -4,7 +4,6 @@ import typings.signalsJs.islotMod.ISlot
 import typings.signalsJs.signalMod.Signal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prioritySignalMod {
@@ -60,8 +59,8 @@ object prioritySignalMod {
     def addWithPriority(listener: js.Function, priority: Double): ISlot = js.native
     
     /* protected */ def registerListenerWithPriority(listener: js.Function): ISlot = js.native
-    /* protected */ def registerListenerWithPriority(listener: js.Function, once: js.UndefOr[scala.Nothing], priority: Double): ISlot = js.native
     /* protected */ def registerListenerWithPriority(listener: js.Function, once: Boolean): ISlot = js.native
     /* protected */ def registerListenerWithPriority(listener: js.Function, once: Boolean, priority: Double): ISlot = js.native
+    /* protected */ def registerListenerWithPriority(listener: js.Function, once: Unit, priority: Double): ISlot = js.native
   }
 }

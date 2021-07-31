@@ -12,7 +12,6 @@ import typings.haversine.haversineStrings.mile
 import typings.haversine.haversineStrings.nmi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,14 @@ object mod {
   /**
     * Determines the great-circle distance between two points on a sphere given their longitudes and latitudes
     */
+  @scala.inline
+  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT]): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
+  @scala.inline
+  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT], options: OptionsT): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
+  
   @JSImport("haversine", JSImport.Namespace)
   @js.native
-  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT]): Return[OptionsT] = js.native
-  @JSImport("haversine", JSImport.Namespace)
-  @js.native
-  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT], options: OptionsT): Return[OptionsT] = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.haversine.mod.CoordinateLongitudeLatitude
@@ -37,12 +38,13 @@ object mod {
   type Coordinate = _Coordinate | LatLonTuple
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ @js.native
-  trait CoordinateLatLng extends _Coordinate {
+  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLatLng
+    extends StObject
+       with _Coordinate {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
   }
   object CoordinateLatLng {
     
@@ -64,12 +66,13 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ @js.native
-  trait CoordinateLonLat extends _Coordinate {
+  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLonLat
+    extends StObject
+       with _Coordinate {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object CoordinateLonLat {
     
@@ -91,12 +94,13 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ @js.native
-  trait CoordinateLongitudeLatitude extends _Coordinate {
+  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLongitudeLatitude
+    extends StObject
+       with _Coordinate {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object CoordinateLongitudeLatitude {
     
@@ -118,10 +122,11 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ @js.native
-  trait GeoJSON extends _Coordinate {
+  - typings.haversine.mod._ParamType because Already inherited */ trait GeoJSON
+    extends StObject
+       with _Coordinate {
     
-    var geometry: Coordinates = js.native
+    var geometry: Coordinates
   }
   object GeoJSON {
     
@@ -141,21 +146,20 @@ object mod {
   
   type LatLonTuple = js.Tuple2[Double, Double]
   
-  @js.native
   trait Options extends StObject {
     
     /** Format of coordinate arguments. */
     var format: js.UndefOr[
         `[latCommalon]` | `[lonCommalat]` | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If passed, will result in library returning boolean value of whether or not the start and end points are within that supplied threshold.
       */
-    var threshold: js.UndefOr[Double | Null] = js.native
+    var threshold: js.UndefOr[Double | Null] = js.undefined
     
     /** Unit of measurement applied to result. Default: "km". */
-    var unit: js.UndefOr[km | mile | meter | nmi] = js.native
+    var unit: js.UndefOr[km | mile | meter | nmi] = js.undefined
   }
   object Options {
     
@@ -207,7 +211,8 @@ object mod {
   type Return[T /* <: js.UndefOr[Options] */] = Double | Boolean
   
   trait _Coordinate
-    extends _ParamType[js.Any]
+    extends StObject
+       with _ParamType[js.Any]
   object _Coordinate {
     
     @scala.inline

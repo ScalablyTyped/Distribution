@@ -2,19 +2,17 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnUS extends StObject {
   
-  var `en-US`: Appsettingcontentwidth = js.native
+  var `en-US`: Appsettingcontentwidth
   
-  var `it-IT`: Appsettingcontentwidthfixed = js.native
+  var `it-IT`: Appsettingcontentwidthfixed
   
-  var `zh-CN`: Appsettingcontentwidth = js.native
+  var `zh-CN`: Appsettingcontentwidth
   
-  var `zh-TW`: Appsettingcontentwidthfixed = js.native
+  var `zh-TW`: Appsettingcontentwidthfixed
 }
 object EnUS {
   

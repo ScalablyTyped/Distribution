@@ -3,51 +3,49 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStripOptions extends StObject {
   
-  var activate: js.UndefOr[js.Function1[/* e */ TabStripActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ TabStripActivateEvent, Unit]] = js.undefined
   
-  var animation: js.UndefOr[Boolean | TabStripAnimation] = js.native
+  var animation: js.UndefOr[Boolean | TabStripAnimation] = js.undefined
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var contentLoad: js.UndefOr[js.Function1[/* e */ TabStripContentLoadEvent, Unit]] = js.native
+  var contentLoad: js.UndefOr[js.Function1[/* e */ TabStripContentLoadEvent, Unit]] = js.undefined
   
-  var contentUrls: js.UndefOr[js.Any] = js.native
+  var contentUrls: js.UndefOr[js.Any] = js.undefined
   
-  var dataContentField: js.UndefOr[String] = js.native
+  var dataContentField: js.UndefOr[String] = js.undefined
   
-  var dataContentUrlField: js.UndefOr[String] = js.native
+  var dataContentUrlField: js.UndefOr[String] = js.undefined
   
-  var dataImageUrlField: js.UndefOr[String] = js.native
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataSpriteCssClass: js.UndefOr[String] = js.native
+  var dataSpriteCssClass: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var dataUrlField: js.UndefOr[String] = js.native
+  var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ TabStripErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ TabStripErrorEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | TabStripScrollable] = js.native
+  var scrollable: js.UndefOr[Boolean | TabStripScrollable] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ TabStripSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ TabStripSelectEvent, Unit]] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ TabStripShowEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ TabStripShowEvent, Unit]] = js.undefined
   
-  var tabPosition: js.UndefOr[String] = js.native
+  var tabPosition: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TabStripOptions {
   

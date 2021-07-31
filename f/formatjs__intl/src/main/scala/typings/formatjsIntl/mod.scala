@@ -46,10 +46,13 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@formatjs/intl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Pick<@formatjs/intl.@formatjs/intl/src/types.IntlConfig<any>, 'formats' | 'messages' | 'timeZone' | 'defaultLocale' | 'defaultFormats' | 'onError'> */
   object DEFAULT_INTL_CONFIG {
@@ -85,24 +88,18 @@ object mod {
     @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
     @js.native
     def onError: OnErrorFn = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: typings.formatjsIntl.srcErrorMod.InvalidConfigError): Unit = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: typings.formatjsIntl.srcErrorMod.MessageFormatError): Unit = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: typings.formatjsIntl.srcErrorMod.MissingDataError): Unit = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: typings.formatjsIntl.srcErrorMod.MissingTranslationError): Unit = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: typings.formatjsIntl.srcErrorMod.UnsupportedFormatterError): Unit = js.native
-    @JSImport("@formatjs/intl", "DEFAULT_INTL_CONFIG.onError")
-    @js.native
-    def onError(err: FormatError): Unit = js.native
+    @scala.inline
+    def onError(err: typings.formatjsIntl.srcErrorMod.InvalidConfigError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(err: typings.formatjsIntl.srcErrorMod.MessageFormatError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(err: typings.formatjsIntl.srcErrorMod.MissingDataError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(err: typings.formatjsIntl.srcErrorMod.MissingTranslationError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(err: typings.formatjsIntl.srcErrorMod.UnsupportedFormatterError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(err: FormatError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def onError_=(x: OnErrorFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
     
@@ -135,7 +132,7 @@ object mod {
     extends typings.formatjsIntl.srcErrorMod.MessageFormatError {
     def this(message: String, locale: String) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor) = this()
-    def this(message: String, locale: String, descriptor: js.UndefOr[scala.Nothing], exception: Error) = this()
+    def this(message: String, locale: String, descriptor: Unit, exception: Error) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor, exception: Error) = this()
   }
   
@@ -162,41 +159,31 @@ object mod {
     def this(message: String, exception: Error) = this()
   }
   
-  @JSImport("@formatjs/intl", "createFormatters")
-  @js.native
-  def createFormatters(): Formatters = js.native
-  @JSImport("@formatjs/intl", "createFormatters")
-  @js.native
-  def createFormatters(cache: IntlCache): Formatters = js.native
+  @scala.inline
+  def createFormatters(): Formatters = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatters")().asInstanceOf[Formatters]
+  @scala.inline
+  def createFormatters(cache: IntlCache): Formatters = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatters")(cache.asInstanceOf[js.Any]).asInstanceOf[Formatters]
   
-  @JSImport("@formatjs/intl", "createIntl")
-  @js.native
-  def createIntl[T](config: OptionalIntlConfig[T]): IntlShape[T] = js.native
-  @JSImport("@formatjs/intl", "createIntl")
-  @js.native
-  def createIntl[T](config: OptionalIntlConfig[T], cache: IntlCache): IntlShape[T] = js.native
+  @scala.inline
+  def createIntl[T](config: OptionalIntlConfig[T]): IntlShape[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntl")(config.asInstanceOf[js.Any]).asInstanceOf[IntlShape[T]]
+  @scala.inline
+  def createIntl[T](config: OptionalIntlConfig[T], cache: IntlCache): IntlShape[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntl")(config.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[IntlShape[T]]
   
-  @JSImport("@formatjs/intl", "createIntlCache")
-  @js.native
-  def createIntlCache(): IntlCache = js.native
+  @scala.inline
+  def createIntlCache(): IntlCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntlCache")().asInstanceOf[IntlCache]
   
-  @JSImport("@formatjs/intl", "defineMessage")
-  @js.native
-  def defineMessage[T](msg: T): T = js.native
+  @scala.inline
+  def defineMessage[T](msg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessage")(msg.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@formatjs/intl", "defineMessages")
-  @js.native
-  def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = js.native
+  @scala.inline
+  def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessages")(msgs.asInstanceOf[js.Any]).asInstanceOf[U]
   
-  @JSImport("@formatjs/intl", "filterProps")
-  @js.native
-  def filterProps[T /* <: Record[String, _] */, K /* <: String */](props: T, whitelist: js.Array[K]): Pick[T, K] = js.native
-  @JSImport("@formatjs/intl", "filterProps")
-  @js.native
-  def filterProps[T /* <: Record[String, _] */, K /* <: String */](props: T, whitelist: js.Array[K], defaults: Partial[T]): Pick[T, K] = js.native
+  @scala.inline
+  def filterProps[T /* <: Record[String, js.Any] */, K /* <: String */](props: T, whitelist: js.Array[K]): Pick[T, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterProps")(props.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any])).asInstanceOf[Pick[T, K]]
+  @scala.inline
+  def filterProps[T /* <: Record[String, js.Any] */, K /* <: String */](props: T, whitelist: js.Array[K], defaults: Partial[T]): Pick[T, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterProps")(props.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Pick[T, K]]
   
-  @JSImport("@formatjs/intl", "formatDate")
-  @js.native
+  @scala.inline
   def formatDate(
     config: Formats,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -207,10 +194,9 @@ object mod {
         String
       ]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatDateToParts")
-  @js.native
+  @scala.inline
   def formatDateToParts(
     config: Formats,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -221,99 +207,86 @@ object mod {
         String
       ]
     ]
-  ): js.Array[DateTimeFormatPart] = js.native
+  ): js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDateToParts")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[DateTimeFormatPart]]
   
-  @JSImport("@formatjs/intl", "formatDisplayName")
-  @js.native
+  @scala.inline
   def formatDisplayName(
     hasLocaleOnError: Locale,
     getDisplayNames: js.Function1[/* args */ ConstructorParameters[TypeofDisplayNames], DisplayNames],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNames['of']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNames['of']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[1] */ js.Any
-  ): js.UndefOr[String] = js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDisplayName")(hasLocaleOnError.asInstanceOf[js.Any], getDisplayNames.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@formatjs/intl", "formatList")
-  @js.native
+  @scala.inline
   def formatList_1(
     hasLocaleOnError: Locale,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
     values: js.Array[String],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@formatjs/intl.anon.FnCall>[1] */ js.Any
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatList")(hasLocaleOnError.asInstanceOf[js.Any], getListFormat.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatMessage")
-  @js.native
-  def formatMessage(config: DefaultFormats, state: Formatters): String = js.native
-  @JSImport("@formatjs/intl", "formatMessage")
-  @js.native
+  @scala.inline
+  def formatMessage(config: DefaultFormats, state: Formatters): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatMessage(
     config: DefaultFormats,
     state: Formatters,
-    messageDescriptor: js.UndefOr[scala.Nothing],
+    messageDescriptor: Unit,
     values: Record[String, PrimitiveType | (FormatXMLElementFn[String, String])]
-  ): String = js.native
-  @JSImport("@formatjs/intl", "formatMessage")
-  @js.native
-  def formatMessage(config: DefaultFormats, state: Formatters, messageDescriptor: MessageDescriptor): String = js.native
-  @JSImport("@formatjs/intl", "formatMessage")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatMessage(config: DefaultFormats, state: Formatters, messageDescriptor: MessageDescriptor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatMessage(
     config: DefaultFormats,
     state: Formatters,
     messageDescriptor: MessageDescriptor,
     values: Record[String, PrimitiveType | (FormatXMLElementFn[String, String])]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatNumber")
-  @js.native
+  @scala.inline
   def formatNumber(
     config: OnError,
     getNumberFormat: js.Function1[/* args */ ConstructorParameters[TypeofNumberFormat], NumberFormat],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[0] */ js.Any
-  ): String = js.native
-  @JSImport("@formatjs/intl", "formatNumber")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(config.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatNumber(
     config: OnError,
     getNumberFormat: js.Function1[/* args */ ConstructorParameters[TypeofNumberFormat], NumberFormat],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[0] */ js.Any,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[1] */ js.Any
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(config.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatNumberToParts")
-  @js.native
+  @scala.inline
   def formatNumberToParts(
     config: OnError,
     getNumberFormat: js.Function1[/* args */ ConstructorParameters[TypeofNumberFormat], NumberFormat],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[0] */ js.Any
-  ): js.Array[NumberFormatPart] = js.native
-  @JSImport("@formatjs/intl", "formatNumberToParts")
-  @js.native
+  ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberToParts")(config.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  @scala.inline
   def formatNumberToParts(
     config: OnError,
     getNumberFormat: js.Function1[/* args */ ConstructorParameters[TypeofNumberFormat], NumberFormat],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[0] */ js.Any,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatNumberOptions | undefined): string>[1] */ js.Any
-  ): js.Array[NumberFormatPart] = js.native
+  ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberToParts")(config.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
-  @JSImport("@formatjs/intl", "formatPlural")
-  @js.native
+  @scala.inline
   def formatPlural(
     hasLocaleOnError: Locale,
     getPluralRules: js.Function1[/* args */ ConstructorParameters[TypeofPluralRules], PluralRules],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.PluralRules['select']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatPluralOptions | undefined): std.ReturnType<std.Intl.PluralRules['select']>>[0] */ js.Any
-  ): LDMLPluralRule = js.native
-  @JSImport("@formatjs/intl", "formatPlural")
-  @js.native
+  ): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPlural")(hasLocaleOnError.asInstanceOf[js.Any], getPluralRules.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
+  @scala.inline
   def formatPlural(
     hasLocaleOnError: Locale,
     getPluralRules: js.Function1[/* args */ ConstructorParameters[TypeofPluralRules], PluralRules],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.PluralRules['select']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatPluralOptions | undefined): std.ReturnType<std.Intl.PluralRules['select']>>[0] */ js.Any,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.PluralRules['select']>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatPluralOptions | undefined): std.ReturnType<std.Intl.PluralRules['select']>>[1] */ js.Any
-  ): LDMLPluralRule = js.native
+  ): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPlural")(hasLocaleOnError.asInstanceOf[js.Any], getPluralRules.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
   
-  @JSImport("@formatjs/intl", "formatRelativeTime")
-  @js.native
+  @scala.inline
   def formatRelativeTime(
     config: OnError,
     getRelativeTimeFormat: js.Function1[
@@ -321,21 +294,8 @@ object mod {
       typings.formatjsIntlRelativetimeformat.mod.default
     ],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[0] */ js.Any
-  ): String = js.native
-  @JSImport("@formatjs/intl", "formatRelativeTime")
-  @js.native
-  def formatRelativeTime(
-    config: OnError,
-    getRelativeTimeFormat: js.Function1[
-      /* args */ ConstructorParameters[TypeofIntlRelativeTimeFor], 
-      typings.formatjsIntlRelativetimeformat.mod.default
-    ],
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[0] */ js.Any,
-    unit: js.UndefOr[scala.Nothing],
-    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[2] */ js.Any
-  ): String = js.native
-  @JSImport("@formatjs/intl", "formatRelativeTime")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelativeTime")(config.asInstanceOf[js.Any], getRelativeTimeFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatRelativeTime(
     config: OnError,
     getRelativeTimeFormat: js.Function1[
@@ -344,9 +304,8 @@ object mod {
     ],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[0] */ js.Any,
     unit: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[1] */ js.Any
-  ): String = js.native
-  @JSImport("@formatjs/intl", "formatRelativeTime")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelativeTime")(config.asInstanceOf[js.Any], getRelativeTimeFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatRelativeTime(
     config: OnError,
     getRelativeTimeFormat: js.Function1[
@@ -356,10 +315,20 @@ object mod {
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[0] */ js.Any,
     unit: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[1] */ js.Any,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[2] */ js.Any
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelativeTime")(config.asInstanceOf[js.Any], getRelativeTimeFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelativeTime(
+    config: OnError,
+    getRelativeTimeFormat: js.Function1[
+      /* args */ ConstructorParameters[TypeofIntlRelativeTimeFor], 
+      typings.formatjsIntlRelativetimeformat.mod.default
+    ],
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[0] */ js.Any,
+    unit: Unit,
+    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[0], unit : std.Parameters<@formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.default['format']>[1] | undefined, opts : @formatjs/intl.@formatjs/intl/src/types.FormatRelativeTimeOptions | undefined): string>[2] */ js.Any
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelativeTime")(config.asInstanceOf[js.Any], getRelativeTimeFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatTime")
-  @js.native
+  @scala.inline
   def formatTime(
     config: Formats,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -370,10 +339,9 @@ object mod {
         String
       ]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl", "formatTimeToParts")
-  @js.native
+  @scala.inline
   def formatTimeToParts(
     config: Formats,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -384,18 +352,17 @@ object mod {
         js.Array[DateTimeFormatPart]
       ]
     ]
-  ): js.Array[DateTimeFormatPart] = js.native
+  ): js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimeToParts")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[DateTimeFormatPart]]
   
-  @JSImport("@formatjs/intl", "getNamedFormat")
-  @js.native
-  def getNamedFormat_date(formats: CustomFormats, `type`: date, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = js.native
-  @JSImport("@formatjs/intl", "getNamedFormat")
-  @js.native
-  def getNamedFormat_number(formats: CustomFormats, `type`: number, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = js.native
-  @JSImport("@formatjs/intl", "getNamedFormat")
-  @js.native
-  def getNamedFormat_relative(formats: CustomFormats, `type`: relative, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = js.native
-  @JSImport("@formatjs/intl", "getNamedFormat")
-  @js.native
-  def getNamedFormat_time(formats: CustomFormats, `type`: time, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = js.native
+  @scala.inline
+  def getNamedFormat_date(formats: CustomFormats, `type`: date, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedFormat")(formats.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions]]
+  
+  @scala.inline
+  def getNamedFormat_number(formats: CustomFormats, `type`: number, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedFormat")(formats.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions]]
+  
+  @scala.inline
+  def getNamedFormat_relative(formats: CustomFormats, `type`: relative, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedFormat")(formats.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions]]
+  
+  @scala.inline
+  def getNamedFormat_time(formats: CustomFormats, `type`: time, name: String, onError: OnErrorFn): js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedFormat")(formats.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NumberFormatOptions | DateTimeFormatOptions | IntlRelativeTimeFormatOptions]]
 }

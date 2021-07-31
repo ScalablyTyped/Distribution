@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains settings for the style of paragraphs with complex text layout. */
-@js.native
 trait ParagraphPropertiesAsian extends StObject {
   
   /** determines if a distance between Asian text, western text or complex text is set. */
-  var ParaIsCharacterDistance: Boolean = js.native
+  var ParaIsCharacterDistance: Boolean
   
   /** determines if the rules for forbidden characters at the start or end of text lines are considered. */
-  var ParaIsForbiddenRules: Boolean = js.native
+  var ParaIsForbiddenRules: Boolean
   
   /** determines if hanging punctuation is allowed. */
-  var ParaIsHangingPunctuation: Boolean = js.native
+  var ParaIsHangingPunctuation: Boolean
 }
 object ParagraphPropertiesAsian {
   

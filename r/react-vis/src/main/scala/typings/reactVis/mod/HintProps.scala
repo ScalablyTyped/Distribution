@@ -11,35 +11,33 @@ import typings.reactVis.reactVisStrings.topleft
 import typings.reactVis.reactVisStrings.topright
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HintProps extends StObject {
   
   // default: {}
-  var align: js.UndefOr[Vertical] = js.native
+  var align: js.UndefOr[Vertical] = js.undefined
   
-  var format: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.native
+  var format: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.undefined
   
   // default: {'horizontal':'auto','vertical':'auto'}
-  var getAlignStyle: js.UndefOr[RVGetAlignStyle] = js.native
+  var getAlignStyle: js.UndefOr[RVGetAlignStyle] = js.undefined
   
-  var innerHeight: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.undefined
   
-  var innerWidth: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[bottomleft | bottomright | topleft | topright] = js.native
+  var orientation: js.UndefOr[bottomleft | bottomright | topleft | topright] = js.undefined
   
-  var scales: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var scales: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var value: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object HintProps {
   

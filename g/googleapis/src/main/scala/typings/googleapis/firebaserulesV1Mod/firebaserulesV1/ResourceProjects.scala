@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebaserules/v1", "firebaserules_v1.Resource$Projects")
@@ -47,7 +46,7 @@ class ResourceProjects protected () extends StObject {
     */
   def test(): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(callback: BodyResponseCallback[SchemaTestRulesetResponse]): Unit = js.native
-  def test(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestRulesetResponse] = js.native
+  def test(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(params: ParamsResourceProjectsTest): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(params: ParamsResourceProjectsTest, callback: BodyResponseCallback[SchemaTestRulesetResponse]): Unit = js.native
   def test(

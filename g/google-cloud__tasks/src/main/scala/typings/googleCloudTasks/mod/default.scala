@@ -2,12 +2,13 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/tasks", JSImport.Default)
 @js.native
-class default protected () extends CloudTasksClient {
+class default protected ()
+  extends StObject
+     with CloudTasksClient {
   /**
     * Construct an instance of CloudTasksClient.
     *

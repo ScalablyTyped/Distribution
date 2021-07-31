@@ -5,26 +5,24 @@ import typings.stripeV3.anon.Iban
 import typings.stripeV3.stripe.elements.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodData extends StObject {
   
-  var billing_details: js.UndefOr[BillingDetails] = js.native
+  var billing_details: js.UndefOr[BillingDetails] = js.undefined
   
-  var card: js.UndefOr[Element] = js.native
+  var card: js.UndefOr[Element] = js.undefined
   
-  var ideal: js.UndefOr[Element | Bank] = js.native
+  var ideal: js.UndefOr[Element | Bank] = js.undefined
   
-  var sepa_debit: js.UndefOr[Element | Iban] = js.native
+  var sepa_debit: js.UndefOr[Element | Iban] = js.undefined
   
   /**
     * Billing information associated with the PaymentMethod
     * that may be used or required by particular types of
     * payment methods.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object PaymentMethodData {
   

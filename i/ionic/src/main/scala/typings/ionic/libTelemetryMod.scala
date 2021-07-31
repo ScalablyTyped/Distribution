@@ -9,14 +9,19 @@ import typings.ionic.definitionsMod.InfoItem
 import typings.ionic.definitionsMod.IonicContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libTelemetryMod {
   
+  @JSImport("ionic/lib/telemetry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ionic/lib/telemetry", "Telemetry")
   @js.native
-  class Telemetry protected () extends ITelemetry {
+  class Telemetry protected ()
+    extends StObject
+       with ITelemetry {
     def this(hasConfigClientGetInfoCtxProjectSession: TelemetryDeps) = this()
     
     val client: IClient = js.native
@@ -29,27 +34,28 @@ object libTelemetryMod {
     
     val project: js.UndefOr[IProject] = js.native
     
+    /* CompleteClass */
+    override def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit] = js.native
+    
     val session: ISession = js.native
   }
   
-  @JSImport("ionic/lib/telemetry", "sendCommand")
-  @js.native
-  def sendCommand(hasConfigClientGetInfoCtxSessionProject: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = js.native
+  @scala.inline
+  def sendCommand(hasConfigClientGetInfoCtxSessionProject: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(hasConfigClientGetInfoCtxSessionProject.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait TelemetryDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val ctx: IonicContext = js.native
+    val ctx: IonicContext
     
-    def getInfo(): js.Promise[js.Array[InfoItem]] = js.native
+    def getInfo(): js.Promise[js.Array[InfoItem]]
     
-    val project: js.UndefOr[IProject] = js.native
+    val project: js.UndefOr[IProject] = js.undefined
     
-    val session: ISession = js.native
+    val session: ISession
   }
   object TelemetryDeps {
     

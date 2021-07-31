@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationSchemeForPoint
-  extends Object
+  extends StObject
+     with Object
      with LocationScheme {
   
   /**
@@ -17,28 +16,28 @@ trait LocationSchemeForPoint
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPoint)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The opacity of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPoint)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPoint)
     */
-  var outline: LocationSchemeForPointOutline = js.native
+  var outline: LocationSchemeForPointOutline
   
   /**
     * The size of the marker symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPoint)
     */
-  var size: Double = js.native
+  var size: Double
 }
 object LocationSchemeForPoint {
   

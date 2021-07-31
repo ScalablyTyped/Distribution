@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkEndpointGroupAppEngine extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait NetworkEndpointGroupAppEngine extends StObject {
     *
     * Example value: "default", "my-service".
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * A template to parse service and version fields from a request URL. URL mask allows for routing to multiple App Engine services without having to create multiple Network Endpoint
@@ -24,7 +22,7 @@ trait NetworkEndpointGroupAppEngine extends StObject {
     * For example, the request URLs "foo1-dot-appname.appspot.com/v1" and "foo1-dot-appname.appspot.com/v2" can be backed by the same Serverless NEG with URL mask
     * "-dot-appname.appspot.com/". The URL mask will parse them to { service = "foo1", version = "v1" } and { service = "foo1", version = "v2" } respectively.
     */
-  var urlMask: js.UndefOr[String] = js.native
+  var urlMask: js.UndefOr[String] = js.undefined
   
   /**
     * Optional serving version.
@@ -33,7 +31,7 @@ trait NetworkEndpointGroupAppEngine extends StObject {
     *
     * Example value: "v1", "v2".
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object NetworkEndpointGroupAppEngine {
   

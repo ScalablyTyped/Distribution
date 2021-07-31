@@ -2,19 +2,19 @@ package typings.wordWrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("word-wrap", JSImport.Namespace)
-  @js.native
-  def apply(str: String): String = js.native
-  @JSImport("word-wrap", JSImport.Namespace)
-  @js.native
-  def apply(str: String, options: IOptions): String = js.native
+  @scala.inline
+  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(str: String, options: IOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("word-wrap", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IOptions extends StObject {
     
     /**
@@ -22,25 +22,25 @@ object mod {
       * than the specified width.
       * @default false
       */
-    var cut: js.UndefOr[Boolean] = js.native
+    var cut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An escape function to run on each line after splitting them.
       * @default (str: string) => string;
       */
-    var escape: js.UndefOr[js.Function1[/* str */ String, String]] = js.native
+    var escape: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
     
     /**
       * The string to use at the beginning of each line.
       * @default ´  ´ (two spaces)
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * The string to use at the end of each line.
       * @default ´\n´
       */
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     /**
       * Trim trailing whitespace from the returned string.
@@ -48,13 +48,13 @@ object mod {
       * the leading indentation from the first line.
       * @default true
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The width of the text before wrapping to a new line.
       * @default ´50´
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IOptions {
     

@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describe a container image
   */
-@js.native
 trait ContainerImage extends StObject {
   
   /**
     * Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "dockerhub.io/google_containers/hyperkube:v1.0.7"]
     */
-  var names: Input[js.Array[Input[String]]] = js.native
+  var names: Input[js.Array[Input[String]]]
   
   /**
     * The size of the image in bytes.
     */
-  var sizeBytes: js.UndefOr[Input[Double]] = js.native
+  var sizeBytes: js.UndefOr[Input[Double]] = js.undefined
 }
 object ContainerImage {
   

@@ -3,22 +3,20 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionTrustedSigner extends StObject {
   
   /**
     * Whether the distribution is enabled to accept end
     * user requests for content.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.native
+  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * List of nested attributes for each trusted signer
     */
-  var items: js.UndefOr[Input[js.Array[Input[DistributionTrustedSignerItem]]]] = js.native
+  var items: js.UndefOr[Input[js.Array[Input[DistributionTrustedSignerItem]]]] = js.undefined
 }
 object DistributionTrustedSigner {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamProcessorsResponse extends StObject {
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of stream processors. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * List of stream processors that you have created.
     */
-  var StreamProcessors: js.UndefOr[StreamProcessorList] = js.native
+  var StreamProcessors: js.UndefOr[StreamProcessorList] = js.undefined
 }
 object ListStreamProcessorsResponse {
   

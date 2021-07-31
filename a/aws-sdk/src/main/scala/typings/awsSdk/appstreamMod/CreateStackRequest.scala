@@ -2,66 +2,64 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStackRequest extends StObject {
   
   /**
     * The list of interface VPC endpoint (interface endpoint) objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
     */
-  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.native
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
   
   /**
     * The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
     */
-  var ApplicationSettings: js.UndefOr[typings.awsSdk.appstreamMod.ApplicationSettings] = js.native
+  var ApplicationSettings: js.UndefOr[typings.awsSdk.appstreamMod.ApplicationSettings] = js.undefined
   
   /**
     * The description to display.
     */
-  var Description: js.UndefOr[typings.awsSdk.appstreamMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appstreamMod.Description] = js.undefined
   
   /**
     * The stack name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.appstreamMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.appstreamMod.DisplayName] = js.undefined
   
   /**
     * The domains where AppStream 2.0 streaming sessions can be embedded in an iframe. You must approve the domains that you want to host embedded AppStream 2.0 streaming sessions. 
     */
-  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.native
+  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.undefined
   
   /**
     * The URL that users are redirected to after they click the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
     */
-  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.native
+  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.undefined
   
   /**
     * The name of the stack.
     */
-  var Name: typings.awsSdk.appstreamMod.Name = js.native
+  var Name: typings.awsSdk.appstreamMod.Name
   
   /**
     * The URL that users are redirected to after their streaming session ends.
     */
-  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.native
+  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.undefined
   
   /**
     * The storage connectors to enable.
     */
-  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.native
+  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
     * The tags to associate with the stack. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
-  var Tags: js.UndefOr[typings.awsSdk.appstreamMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.appstreamMod.Tags] = js.undefined
   
   /**
     * The actions that are enabled or disabled for users during their streaming sessions. By default, these actions are enabled. 
     */
-  var UserSettings: js.UndefOr[UserSettingList] = js.native
+  var UserSettings: js.UndefOr[UserSettingList] = js.undefined
 }
 object CreateStackRequest {
   

@@ -4,17 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XmlAST extends AST {
+trait XmlAST
+  extends StObject
+     with AST {
   
   @JSName("children")
-  var children_XmlAST: js.Array[XmlAST | String] = js.native
+  var children_XmlAST: js.Array[XmlAST | String]
   
   @JSName("parent")
-  var parent_XmlAST: XmlAST | Null = js.native
+  var parent_XmlAST: XmlAST | Null
 }
 object XmlAST {
   
@@ -25,7 +25,7 @@ object XmlAST {
     props: StringDictionary[js.UndefOr[Styles | String]],
     tag: String
   ): XmlAST = {
-    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[XmlAST]
   }
   

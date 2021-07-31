@@ -2,14 +2,12 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A default activity for handling intents that match a particular intent
   * filter.
   */
-@js.native
 trait SchemaPersistentPreferredActivity extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaPersistentPreferredActivity extends StObject {
     * the filter, then an intent&#39;s action must be one of those values for
     * it to match. If no actions are included, the intent action is ignored.
     */
-  var actions: js.UndefOr[js.Array[String]] = js.native
+  var actions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The intent categories to match in the filter. An intent includes the
@@ -25,7 +23,7 @@ trait SchemaPersistentPreferredActivity extends StObject {
     * in order to match. In other words, adding a category to the filter has no
     * impact on matching unless that category is specified in the intent.
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The activity that should be the default intent handler. This should be an
@@ -34,7 +32,7 @@ trait SchemaPersistentPreferredActivity extends StObject {
     * Android Device Policy to choose an appropriate activity from the app to
     * handle the intent.
     */
-  var receiverActivity: js.UndefOr[String] = js.native
+  var receiverActivity: js.UndefOr[String] = js.undefined
 }
 object SchemaPersistentPreferredActivity {
   

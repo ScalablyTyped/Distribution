@@ -2,31 +2,29 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /**
     * The alpha component of this color in the range [0-1].
     */
-  val alpha: Double = js.native
+  val alpha: Double
   
   /**
     * The blue component of this color in the range [0-1].
     */
-  val blue: Double = js.native
+  val blue: Double
   
   /**
     * The green component of this color in the range [0-1].
     */
-  val green: Double = js.native
+  val green: Double
   
   /**
     * The red component of this color in the range [0-1].
     */
-  val red: Double = js.native
+  val red: Double
 }
 object Color {
   
@@ -36,19 +34,21 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
+  @JSImport("vscode-languageserver-types", "Color")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Color literal.
     */
-  @JSImport("vscode-languageserver-types", "Color.create")
-  @js.native
-  def create(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
+  @scala.inline
+  def create(red: Double, green: Double, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /**
     * Checks whether the given literal conforms to the [Color](#Color) interface.
     */
-  @JSImport("vscode-languageserver-types", "Color.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean]
   
   @scala.inline
   implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {

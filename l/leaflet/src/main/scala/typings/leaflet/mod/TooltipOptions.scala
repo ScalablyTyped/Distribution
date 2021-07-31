@@ -2,21 +2,21 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TooltipOptions extends DivOverlayOptions {
+trait TooltipOptions
+  extends StObject
+     with DivOverlayOptions {
   
-  var direction: js.UndefOr[Direction] = js.native
+  var direction: js.UndefOr[Direction] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var permanent: js.UndefOr[Boolean] = js.native
+  var permanent: js.UndefOr[Boolean] = js.undefined
   
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
 }
 object TooltipOptions {
   

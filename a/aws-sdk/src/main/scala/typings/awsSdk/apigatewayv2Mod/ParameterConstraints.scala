@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterConstraints extends StObject {
   
   /**
     * Whether or not the parameter is required.
     */
-  var Required: js.UndefOr[boolean] = js.native
+  var Required: js.UndefOr[boolean] = js.undefined
 }
 object ParameterConstraints {
   

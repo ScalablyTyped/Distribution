@@ -2,16 +2,14 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response with Playlist Snapshot
   */
-@js.native
 trait PlaylistSnapshotResponse extends StObject {
   
-  var snapshot_id: String = js.native
+  var snapshot_id: String
 }
 object PlaylistSnapshotResponse {
   

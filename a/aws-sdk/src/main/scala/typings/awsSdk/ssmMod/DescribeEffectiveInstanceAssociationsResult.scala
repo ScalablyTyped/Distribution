@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEffectiveInstanceAssociationsResult extends StObject {
   
   /**
     * The associations for the requested instance.
     */
-  var Associations: js.UndefOr[InstanceAssociationList] = js.native
+  var Associations: js.UndefOr[InstanceAssociationList] = js.undefined
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeEffectiveInstanceAssociationsResult {
   

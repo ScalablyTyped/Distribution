@@ -5,15 +5,15 @@ import typings.openfin.windowOptionMod.WindowOption
 import typings.openfin.windowOptionMod.WindowOptionDiff
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowOptionsChangedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowOptionsChangedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var diff: WindowOptionDiff = js.native
+  var diff: WindowOptionDiff
   
-  var options: WindowOption = js.native
+  var options: WindowOption
 }
 object WindowOptionsChangedEvent {
   
@@ -32,7 +32,7 @@ object WindowOptionsChangedEvent {
   }
   
   @scala.inline
-  implicit class WindowOptionsChangedEventMutableBuilder[Self <: WindowOptionsChangedEvent[_, _], Topic, Type] (val x: Self with (WindowOptionsChangedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowOptionsChangedEventMutableBuilder[Self <: WindowOptionsChangedEvent[?, ?], Topic, Type] (val x: Self & (WindowOptionsChangedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setDiff(value: WindowOptionDiff): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])

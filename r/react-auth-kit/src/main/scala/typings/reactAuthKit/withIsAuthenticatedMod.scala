@@ -4,19 +4,20 @@ import typings.react.mod.ComponentType
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withIsAuthenticatedMod {
   
-  @JSImport("react-auth-kit/higherOrderComponents/withIsAuthenticated", JSImport.Default)
+  @JSImport("react-auth-kit/higherOrderComponents/withIsAuthenticated", JSImport.Namespace)
   @js.native
-  def default[P /* <: withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[P /* <: withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
+  
   trait withAuthHeaderProps extends StObject {
     
-    var isAuth: String = js.native
+    var isAuth: String
   }
   object withAuthHeaderProps {
     

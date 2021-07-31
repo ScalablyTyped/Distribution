@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectOptions extends StObject {
   
   /**
     * The attributes that should come with witch object.
     */
-  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.native
+  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GetObjectOptions {
   

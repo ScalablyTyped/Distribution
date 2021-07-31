@@ -4,19 +4,17 @@ import typings.vueCompilerCore.vueCompilerCoreStrings.function
 import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodegenOptions extends StObject {
   
-  var bindingMetadata: js.UndefOr[BindingMetadata] = js.native
+  var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
   
   /**
     * Filename for source map generation.
     * @default 'template.vue.html'
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * - `module` mode will generate ES module import statements for helpers
@@ -27,42 +25,42 @@ trait CodegenOptions extends StObject {
     * used with `new Function(code)()` to generate a render function at runtime.
     * @default 'function'
     */
-  var mode: js.UndefOr[module | function] = js.native
+  var mode: js.UndefOr[module | function] = js.undefined
   
   /**
     * Option to optimize helper import bindings via variable assignment
     * (only used for webpack code-split)
     * @default false
     */
-  var optimizeImports: js.UndefOr[Boolean] = js.native
+  var optimizeImports: js.UndefOr[Boolean] = js.undefined
   
-  var prefixIdentifiers: js.UndefOr[Boolean] = js.native
+  var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customize the global variable name of `Vue` to get helpers from
     * in function mode
     * @default 'Vue'
     */
-  var runtimeGlobalName: js.UndefOr[String] = js.native
+  var runtimeGlobalName: js.UndefOr[String] = js.undefined
   
   /**
     * Customize where to import runtime helpers from.
     * @default 'vue'
     */
-  var runtimeModuleName: js.UndefOr[String] = js.native
+  var runtimeModuleName: js.UndefOr[String] = js.undefined
   
   /**
     * SFC scoped styles ID
     */
-  var scopeId: js.UndefOr[String | Null] = js.native
+  var scopeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Generate source map?
     * @default false
     */
-  var sourceMap: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
   
-  var ssr: js.UndefOr[Boolean] = js.native
+  var ssr: js.UndefOr[Boolean] = js.undefined
 }
 object CodegenOptions {
   

@@ -2,23 +2,21 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorParameterHintOptions extends StObject {
   
   /**
     * Enable cycling of parameter hints.
     * Defaults to false.
     */
-  var cycle: js.UndefOr[Boolean] = js.native
+  var cycle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable parameter hints.
     * Defaults to true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object IEditorParameterHintOptions {
   

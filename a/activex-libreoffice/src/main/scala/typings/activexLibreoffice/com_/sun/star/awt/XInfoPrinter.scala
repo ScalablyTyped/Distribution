@@ -8,19 +8,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents an information printer. */
-@js.native
-trait XInfoPrinter extends XPrinterPropertySet {
+trait XInfoPrinter
+  extends StObject
+     with XPrinterPropertySet {
   
   /**
     * creates a new object which implements an {@link XDevice} .
     *
     * The current settings are used as a template.
     */
-  def createDevice(): XDevice = js.native
+  def createDevice(): XDevice
 }
 object XInfoPrinter {
   

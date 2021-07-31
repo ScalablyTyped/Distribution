@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBSecurityGroupMembership extends StObject {
   
   /**
     * The name of the DB security group.
     */
-  var DBSecurityGroupName: js.UndefOr[String] = js.native
+  var DBSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the DB security group.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object DBSecurityGroupMembership {
   

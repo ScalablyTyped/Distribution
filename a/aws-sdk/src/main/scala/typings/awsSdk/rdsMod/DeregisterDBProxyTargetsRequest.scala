@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterDBProxyTargetsRequest extends StObject {
   
   /**
     * One or more DB cluster identifiers.
     */
-  var DBClusterIdentifiers: js.UndefOr[StringList] = js.native
+  var DBClusterIdentifiers: js.UndefOr[StringList] = js.undefined
   
   /**
     * One or more DB instance identifiers.
     */
-  var DBInstanceIdentifiers: js.UndefOr[StringList] = js.native
+  var DBInstanceIdentifiers: js.UndefOr[StringList] = js.undefined
   
   /**
     * The identifier of the DBProxy that is associated with the DBProxyTargetGroup.
     */
-  var DBProxyName: String = js.native
+  var DBProxyName: String
   
   /**
     * The identifier of the DBProxyTargetGroup.
     */
-  var TargetGroupName: js.UndefOr[String] = js.native
+  var TargetGroupName: js.UndefOr[String] = js.undefined
 }
 object DeregisterDBProxyTargetsRequest {
   

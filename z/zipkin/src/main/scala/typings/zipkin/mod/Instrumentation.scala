@@ -6,7 +6,6 @@ import typings.zipkin.anon.ServerTags
 import typings.zipkin.mod.option.IOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Instrumentation {
@@ -28,7 +27,7 @@ object Instrumentation {
   class HttpServer protected () extends StObject {
     def this(args: ServerTags) = this()
     
-    def recordRequest(method: String, requestUrl: String, readHeader: js.Function1[/* header */ String, IOption[_]]): TraceId = js.native
+    def recordRequest(method: String, requestUrl: String, readHeader: js.Function1[/* header */ String, IOption[js.Any]]): TraceId = js.native
     
     def recordResponse(traceId: TraceId, statusCode: String): Unit = js.native
     def recordResponse(traceId: TraceId, statusCode: String, error: Error): Unit = js.native

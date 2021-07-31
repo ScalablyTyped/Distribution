@@ -2,7 +2,6 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SPClientForms {
@@ -15,40 +14,53 @@ object SPClientForms {
     
     // : 3,
     @js.native
-    sealed trait Event_GetControlValueCallback extends FormManagerEvents
+    sealed trait Event_GetControlValueCallback
+      extends StObject
+         with FormManagerEvents
     
     // : 6,
     @js.native
-    sealed trait Event_GetHasValueChangedCallback extends FormManagerEvents
+    sealed trait Event_GetHasValueChangedCallback
+      extends StObject
+         with FormManagerEvents
     
     // : 2,
     @js.native
-    sealed trait Event_OnControlFocusSetCallback extends FormManagerEvents
+    sealed trait Event_OnControlFocusSetCallback
+      extends StObject
+         with FormManagerEvents
     
     // : 1,
     @js.native
-    sealed trait Event_OnControlInitializedCallback extends FormManagerEvents
+    sealed trait Event_OnControlInitializedCallback
+      extends StObject
+         with FormManagerEvents
     
     // : 4,
     @js.native
-    sealed trait Event_OnControlValidationError extends FormManagerEvents
+    sealed trait Event_OnControlValidationError
+      extends StObject
+         with FormManagerEvents
     
     @js.native
-    sealed trait Event_OnControlValueChanged extends FormManagerEvents
+    sealed trait Event_OnControlValueChanged
+      extends StObject
+         with FormManagerEvents
     
     // : 5,
     @js.native
-    sealed trait Event_RegisterControlValidator extends FormManagerEvents
+    sealed trait Event_RegisterControlValidator
+      extends StObject
+         with FormManagerEvents
   }
   
-  @js.native
   trait ClientForm extends StObject {
     
-    def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit = js.native
+    def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit
     
-    def RenderClientForm(): Unit = js.native
+    def RenderClientForm(): Unit
     
-    def SubmitClientForm(): Boolean = js.native
+    def SubmitClientForm(): Boolean
   }
   object ClientForm {
     
@@ -76,15 +88,13 @@ object SPClientForms {
     }
   }
   
-  @js.native
   trait ClientFormManager extends StObject
   
   object ClientValidation {
     
-    @js.native
     trait IValidator extends StObject {
       
-      def Validate(value: js.Any): ValidationResult = js.native
+      def Validate(value: js.Any): ValidationResult
     }
     object IValidator {
       
@@ -102,8 +112,9 @@ object SPClientForms {
       }
     }
     
-    @js.native
-    trait MaxLengthUrlValidator extends IValidator
+    trait MaxLengthUrlValidator
+      extends StObject
+         with IValidator
     object MaxLengthUrlValidator {
       
       @scala.inline
@@ -113,8 +124,9 @@ object SPClientForms {
       }
     }
     
-    @js.native
-    trait RequiredFileValidator extends IValidator
+    trait RequiredFileValidator
+      extends StObject
+         with IValidator
     object RequiredFileValidator {
       
       @scala.inline
@@ -124,8 +136,9 @@ object SPClientForms {
       }
     }
     
-    @js.native
-    trait RequiredRichTextValidator extends IValidator
+    trait RequiredRichTextValidator
+      extends StObject
+         with IValidator
     object RequiredRichTextValidator {
       
       @scala.inline
@@ -135,8 +148,9 @@ object SPClientForms {
       }
     }
     
-    @js.native
-    trait RequiredValidator extends IValidator
+    trait RequiredValidator
+      extends StObject
+         with IValidator
     object RequiredValidator {
       
       @scala.inline
@@ -146,13 +160,11 @@ object SPClientForms {
       }
     }
     
-    @js.native
     trait ValidationResult extends StObject
     
-    @js.native
     trait ValidatorSet extends StObject {
       
-      def RegisterValidator(validator: IValidator): Unit = js.native
+      def RegisterValidator(validator: IValidator): Unit
     }
     object ValidatorSet {
       

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientDashboardItemWidgetEventArgs")
 @js.native
 class ASPxClientDashboardItemWidgetEventArgs ()
-  extends typings.devexpressWeb.ASPxClientDashboardItemWidgetEventArgs
+  extends StObject
+     with typings.devexpressWeb.ASPxClientDashboardItemWidgetEventArgs {
+  
+  /**
+    * Returns an underlying widget corresponding to the current dashboard item.
+    */
+  /* CompleteClass */
+  override def GetWidget(): js.Any = js.native
+  
+  /**
+    * Gets the component name of the dashboard item for which the event was raised.
+    */
+  /* CompleteClass */
+  var ItemName: String = js.native
+}

@@ -11,7 +11,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,12 @@ object mod {
     */
   @JSImport("@apidevtools/swagger-parser", JSImport.Namespace)
   @js.native
-  class ^ () extends SwaggerParser
+  class ^ ()
+    extends StObject
+       with SwaggerParser
+  @JSImport("@apidevtools/swagger-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@apidevtools/swagger-parser", "$Refs")
   @js.native
@@ -82,9 +86,8 @@ object mod {
   }
   
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: String): js.Promise[Document] = js.native
+  @scala.inline
+  def bundle(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
   /**
     * Bundles all referenced files/URLs into a single API definition that only has internal `$ref` pointers. This lets you split-up your API definition however you want while you're building it, but easily combine all those files together when it's time to package or distribute the API definition to other people. The resulting API definition size will be small, since it will still contain internal JSON references rather than being fully-dereferenced.
     *
@@ -97,48 +100,36 @@ object mod {
     * @param callback (optional) A callback that will receive the bundled API definition object
     */
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: String, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def bundle(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def bundle(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: Document): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: Document, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def bundle(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def bundle(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def bundle(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def bundle(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def bundle(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def bundle(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: String): js.Promise[Document] = js.native
+  @scala.inline
+  def dereference(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
   /**
     * Dereferences all `$ref` pointers in the OpenAPI definition, replacing each reference with its resolved value. This results in an API definition that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
     *
@@ -151,48 +142,36 @@ object mod {
     * @param callback (optional) A callback that will receive the dereferenced OpenAPI definition
     */
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: String, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def dereference(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def dereference(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: Document): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: Document, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def dereference(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def dereference(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def dereference(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def dereference(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def dereference(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def dereference(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: String): js.Promise[Document] = js.native
+  @scala.inline
+  def parse(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -205,48 +184,36 @@ object mod {
     * @param callback (optional) A callback that will receive the parsed OpenAPI definition object, or an error
     */
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: String, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def parse(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def parse(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: Document): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: Document, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def parse(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def parse(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def parse(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def parse(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def parse(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def parse(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: String): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(api: String): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -259,48 +226,36 @@ object mod {
     * @param callback (optional) A callback that will receive a `$Refs` object
     */
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: String, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(api: String, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: String, options: Options): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(api: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: String, options: Options, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: Document): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: Document, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: Document, options: Options): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(api: Document, options: Options, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(api: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(api: Document): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(api: Document, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(api: Document, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(api: Document, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, api: String, options: Options): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(baseUrl: String, api: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, api: String, options: Options, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, api: Document, options: Options): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/swagger-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, api: Document, options: Options, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(baseUrl: String, api: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(baseUrl: String, api: Document, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(baseUrl: String, api: Document, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: String): js.Promise[Document] = js.native
+  @scala.inline
+  def validate(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
   /**
     * Parses, dereferences, and validates the given Swagger API.
     * Depending on the options, validation can include JSON Schema validation and/or Swagger Spec validation.
@@ -312,69 +267,58 @@ object mod {
     * @param callback (optional) A callback that will receive the dereferenced OpenAPI definition
     */
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: String, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def validate(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def validate(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: Document): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: Document, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def validate(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def validate(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def validate(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(baseUrl: String, api: String, options: Options): js.Promise[Document] = js.native
+  @scala.inline
+  def validate(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   /* static member */
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
-  @JSImport("@apidevtools/swagger-parser", "validate")
-  @js.native
-  def validate(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  @scala.inline
+  def validate(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def validate(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ApiCallback = js.Function2[/* err */ Error | Null, /* api */ js.UndefOr[Document], js.Any]
   
-  @js.native
   trait FileInfo extends StObject {
     
     /**
       * The raw file contents, in whatever form they were returned by the resolver that read the file.
       */
-    var data: String | Buffer = js.native
+    var data: String | Buffer
     
     /**
       * The lowercase file extension, such as ".json", ".yaml", ".txt", etc.
       */
-    var extension: String = js.native
+    var `extension`: String
     
     /**
       * The full URL of the file. This could be any type of URL, including "http://", "https://", "file://", "ftp://", "mongodb://", or even a local filesystem path (when running in Node.js).
       */
-    var url: String = js.native
+    var url: String
   }
   object FileInfo {
     
     @scala.inline
-    def apply(data: String | Buffer, extension: String, url: String): FileInfo = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(data: String | Buffer, `extension`: String, url: String): FileInfo = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileInfo]
     }
     
@@ -393,42 +337,41 @@ object mod {
   }
   
   /* Inlined parent std.Partial<@apidevtools/swagger-parser.@apidevtools/swagger-parser.ResolverOptions> */
-  @js.native
   trait HTTPResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * You can specify any HTTP headers that should be sent when downloading files. For example, some servers may require you to set the `Accept` or `Referrer` header.
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]], 
+          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
           String | Buffer | (js.Promise[String | Buffer])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of HTTP redirects to follow per file. The default is 5. To disable automatic following of redirects, set this to zero.
       */
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of time (in milliseconds) to wait for a response from the server when downloading files. The default is 5 seconds.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Set this to `true` if you're downloading files from a CORS-enabled server that requires authentication
       */
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object HTTPResolverOptions {
     
@@ -467,7 +410,7 @@ object mod {
       
       @scala.inline
       def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -493,32 +436,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The `dereference` options control how JSON Schema `$Ref` Parser will dereference `$ref` pointers within the JSON schema.
       */
-    var dereference: js.UndefOr[Circular] = js.native
+    var dereference: js.UndefOr[Circular] = js.undefined
     
     /**
       * The `parse` options determine how different types of files will be parsed.
       *
       * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
       */
-    var parse: js.UndefOr[Dictkey] = js.native
+    var parse: js.UndefOr[Dictkey] = js.undefined
     
     /**
       * The `resolve` options control how Swagger Parser will resolve file paths and URLs, and how those files will be read/downloaded.
       *
       * JSON Schema `$Ref` Parser comes with built-in support for HTTP and HTTPS, as well as support for local files (when running in Node.js). You can configure or disable either of these built-in resolvers. You can also add your own custom resolvers if you want.
       */
-    var resolve: js.UndefOr[External] = js.native
+    var resolve: js.UndefOr[External] = js.undefined
     
     /**
       * The `validate` options control how Swagger Parser will validate the API.
       */
-    var validate: js.UndefOr[Schema] = js.native
+    var validate: js.UndefOr[Schema] = js.undefined
   }
   object Options {
     
@@ -557,7 +499,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
     /**
@@ -565,7 +506,7 @@ object mod {
       *
       * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
       */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines which parsers will be used for which files.
@@ -574,14 +515,14 @@ object mod {
       */
     var canParse: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
       *
       * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
       */
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object ParserOptions {
     
@@ -643,7 +584,7 @@ object mod {
       * Unlike the `canRead` function, the `read` method can also be asynchronous. This might be important if your resolver needs to read data from a database or some other external source. You can return your asynchronous value using either an ES6 Promise or a Node.js-style error-first callback. Of course, if your resolver has the ability to return its data synchronously, then that's fine too. Here are examples of all three approaches:
       */
     def read(file: FileInfo): String | Buffer | (js.Promise[String | Buffer]) = js.native
-    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): String | Buffer | (js.Promise[String | Buffer]) = js.native
+    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): String | Buffer | (js.Promise[String | Buffer]) = js.native
   }
   
   /**

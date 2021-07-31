@@ -2,17 +2,15 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReservationsResizeRequest extends StObject {
   
   /**
     * Number of allocated resources can be resized with minimum = 1 and maximum
     * = 1000.
     */
-  var specificSkuCount: js.UndefOr[String] = js.native
+  var specificSkuCount: js.UndefOr[String] = js.undefined
 }
 object SchemaReservationsResizeRequest {
   

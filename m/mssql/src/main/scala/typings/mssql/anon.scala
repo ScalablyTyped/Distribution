@@ -3,35 +3,33 @@ package typings.mssql
 import typings.mssql.mod.ISqlType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CaseSensitive extends StObject {
     
-    var caseSensitive: Boolean = js.native
+    var caseSensitive: Boolean
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var nullable: Boolean = js.native
+    var nullable: Boolean
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var readOnly: Boolean = js.native
+    var readOnly: Boolean
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.Function0[ISqlType] | ISqlType = js.native
+    var `type`: js.Function0[ISqlType] | ISqlType
     
-    var udt: js.UndefOr[js.Any] = js.native
+    var udt: js.UndefOr[js.Any] = js.undefined
   }
   object CaseSensitive {
     
@@ -101,24 +99,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Io extends StObject {
     
-    var io: Double = js.native
+    var io: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var precision: Double = js.native
+    var precision: Double
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var tvpType: js.Any = js.native
+    var tvpType: js.Any
     
-    var `type`: js.Function0[ISqlType] | ISqlType = js.native
+    var `type`: js.Function0[ISqlType] | ISqlType
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Io {
     
@@ -170,13 +167,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Js extends StObject {
     
     @JSName("js")
-    var js_ : js.Any = js.native
+    var js_ : js.Any
     
-    var sql: js.Any = js.native
+    var sql: js.Any
   }
   object Js {
     

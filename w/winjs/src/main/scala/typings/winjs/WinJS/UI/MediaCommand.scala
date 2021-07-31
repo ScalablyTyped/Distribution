@@ -2,54 +2,52 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration of Media commands that the transport bar buttons support.
   **/
-@js.native
 trait MediaCommand extends StObject {
   
-  var audioTracks: String = js.native
+  var audioTracks: String
   
-  var cast: String = js.native
+  var cast: String
   
-  var chapterSkipBack: String = js.native
+  var chapterSkipBack: String
   
-  var chapterSkipForward: String = js.native
+  var chapterSkipForward: String
   
-  var closedCaptions: String = js.native
+  var closedCaptions: String
   
-  var fastForward: String = js.native
+  var fastForward: String
   
-  var goToLive: String = js.native
+  var goToLive: String
   
-  var nextTrack: String = js.native
+  var nextTrack: String
   
-  var pause: String = js.native
+  var pause: String
   
-  var play: String = js.native
+  var play: String
   
-  var playFromBeginning: String = js.native
+  var playFromBeginning: String
   
-  var playbackRate: String = js.native
+  var playbackRate: String
   
-  var previousTrack: String = js.native
+  var previousTrack: String
   
-  var rewind: String = js.native
+  var rewind: String
   
-  var seek: String = js.native
+  var seek: String
   
-  var stop: String = js.native
+  var stop: String
   
-  var timeSkipBack: String = js.native
+  var timeSkipBack: String
   
-  var timeSkipForward: String = js.native
+  var timeSkipForward: String
   
-  var volume: String = js.native
+  var volume: String
   
-  var zoom: String = js.native
+  var zoom: String
 }
 object MediaCommand {
   

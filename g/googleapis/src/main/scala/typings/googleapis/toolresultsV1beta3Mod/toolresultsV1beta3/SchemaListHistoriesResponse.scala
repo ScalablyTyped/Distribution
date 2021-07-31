@@ -2,19 +2,17 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for HistoryService.List
   */
-@js.native
 trait SchemaListHistoriesResponse extends StObject {
   
   /**
     * Histories.
     */
-  var histories: js.UndefOr[js.Array[SchemaHistory]] = js.native
+  var histories: js.UndefOr[js.Array[SchemaHistory]] = js.undefined
   
   /**
     * A continuation token to resume the query at the next item.  Will only be
@@ -24,7 +22,7 @@ trait SchemaListHistoriesResponse extends StObject {
     * later, the token from this second response will only be valid for 50
     * minutes.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListHistoriesResponse {
   

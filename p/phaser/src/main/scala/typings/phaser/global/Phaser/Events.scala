@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
@@ -13,5 +12,6 @@ object Events {
   @JSGlobal("Phaser.Events.EventEmitter")
   @js.native
   class EventEmitter ()
-    extends typings.phaser.Phaser.Events.EventEmitter
+    extends StObject
+       with typings.phaser.Phaser.Events.EventEmitter
 }

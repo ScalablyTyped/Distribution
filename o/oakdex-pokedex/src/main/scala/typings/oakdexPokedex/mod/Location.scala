@@ -2,15 +2,13 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var pokemon: js.Array[LocationPokemon] = js.native
+  var pokemon: js.Array[LocationPokemon]
 }
 object Location {
   

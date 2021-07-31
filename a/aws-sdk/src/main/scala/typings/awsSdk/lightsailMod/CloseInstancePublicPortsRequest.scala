@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseInstancePublicPortsRequest extends StObject {
   
   /**
     * The name of the instance for which to close ports.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
   
   /**
     * An object to describe the ports to close for the specified instance.
     */
-  var portInfo: PortInfo = js.native
+  var portInfo: PortInfo
 }
 object CloseInstancePublicPortsRequest {
   

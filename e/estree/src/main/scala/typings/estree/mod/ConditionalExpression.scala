@@ -2,34 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var alternate: Expression = js.native
+  var alternate: Expression
   
-  var consequent: Expression = js.native
+  var consequent: Expression
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_ConditionalExpression: typings.estree.estreeStrings.ConditionalExpression = js.native
+  var type_ConditionalExpression: typings.estree.estreeStrings.ConditionalExpression
 }
 object ConditionalExpression {
   
   @scala.inline
-  def apply(
-    alternate: Expression,
-    consequent: Expression,
-    test: Expression,
-    `type`: typings.estree.estreeStrings.ConditionalExpression
-  ): ConditionalExpression = {
+  def apply(alternate: Expression, consequent: Expression, test: Expression): ConditionalExpression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[ConditionalExpression]
   }
   

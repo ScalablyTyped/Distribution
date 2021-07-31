@@ -11,37 +11,34 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@react-md/states/types/ripples/utils", "createRippleState")
+  @JSImport("@react-md/states/types/ripples/utils", JSImport.Namespace)
   @js.native
-  def createRippleState(event: RippleEvent[HTMLElement]): RippleState = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/states/types/ripples/utils", "getOrigin")
-  @js.native
-  def getOrigin(event: PickRippleEventHTMLElemenPageX, element: HTMLElement): Origin = js.native
+  @scala.inline
+  def createRippleState(event: RippleEvent[HTMLElement]): RippleState = ^.asInstanceOf[js.Dynamic].applyDynamic("createRippleState")(event.asInstanceOf[js.Any]).asInstanceOf[RippleState]
   
-  @JSImport("@react-md/states/types/ripples/utils", "getType")
-  @js.native
-  def getType(event: PickRippleEventHTMLElemen): RippleType = js.native
+  @scala.inline
+  def getOrigin(event: PickRippleEventHTMLElemenPageX, element: HTMLElement): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(event.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Origin]
   
-  @JSImport("@react-md/states/types/ripples/utils", "isBubbled")
-  @js.native
-  def isBubbled[E /* <: HTMLElement */](event: Pick[RippleEvent[E], currentTarget | target]): Boolean = js.native
+  @scala.inline
+  def getType(event: PickRippleEventHTMLElemen): RippleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(event.asInstanceOf[js.Any]).asInstanceOf[RippleType]
   
-  @JSImport("@react-md/states/types/ripples/utils", "isRippleable")
-  @js.native
-  def isRippleable(event: RippleEvent[HTMLElement], disableSpacebarClick: Boolean): Boolean = js.native
+  @scala.inline
+  def isBubbled[E /* <: HTMLElement */](event: Pick[RippleEvent[E], currentTarget | target]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBubbled")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def isRippleable(event: RippleEvent[HTMLElement], disableSpacebarClick: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRippleable")(event.asInstanceOf[js.Any], disableSpacebarClick.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait Origin extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Origin {
     

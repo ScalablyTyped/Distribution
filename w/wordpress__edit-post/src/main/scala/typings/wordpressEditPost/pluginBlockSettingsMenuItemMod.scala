@@ -11,7 +11,6 @@ import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressEditPost.pluginBlockSettingsMenuItemMod.PluginBlockSettingsMenuItem.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginBlockSettingsMenuItemMod {
@@ -30,7 +29,6 @@ object pluginBlockSettingsMenuItemMod {
   
   object PluginBlockSettingsMenuItem {
     
-    @js.native
     trait Props extends StObject {
       
       /**
@@ -38,28 +36,28 @@ object pluginBlockSettingsMenuItemMod {
         * it'll be rendered for any block. If multiple blocks are selected, it'll be shown if and only if
         * all of them are in the whitelist.
         */
-      var allowedBlocks: js.UndefOr[js.Array[String]] = js.native
+      var allowedBlocks: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * A dashicon slug, or a custom JSX element.
         * @defaultValue `"admin-plugins"`
         */
-      var icon: js.UndefOr[Element | Icon] = js.native
+      var icon: js.UndefOr[Element | Icon] = js.undefined
       
       /**
         * The menu item text.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * Callback function to be executed when the user click the menu item.
         */
-      var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+      var onClick: MouseEventHandler[HTMLButtonElement]
       
       /**
         * If it should be rendered smaller. (This is undocumented).
         */
-      var small: js.UndefOr[Boolean] = js.native
+      var small: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

@@ -2,16 +2,15 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OldHTMLFormElement extends StObject {
   
   def apply(): js.Any = js.native
-  def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native
   def apply(name: js.Any, index: js.Any): js.Any = js.native
+  def apply(name: Unit, index: js.Any): js.Any = js.native
   
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
@@ -38,18 +37,18 @@ trait OldHTMLFormElement extends StObject {
     * @param filename [filename='']
     */
   def appendNameFilePair(): Unit = js.native
-  def appendNameFilePair(name: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
   def appendNameFilePair(name: String): Unit = js.native
   def appendNameFilePair(name: String, filename: String): Unit = js.native
+  def appendNameFilePair(name: Unit, filename: String): Unit = js.native
   
   /**
     * @param name [name='']
     * @param value [value='']
     */
   def appendNameValuePair(): Unit = js.native
-  def appendNameValuePair(name: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def appendNameValuePair(name: String): Unit = js.native
   def appendNameValuePair(name: String, value: String): Unit = js.native
+  def appendNameValuePair(name: Unit, value: String): Unit = js.native
   
   def applyElement(apply: IHTMLElement, where: String): IHTMLElement = js.native
   
@@ -270,9 +269,9 @@ trait OldHTMLFormElement extends StObject {
   val isTextEdit: Boolean = js.native
   
   def item(): js.Any = js.native
-  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def item(name: js.Any): js.Any = js.native
   def item(name: js.Any, index: js.Any): js.Any = js.native
+  def item(name: Unit, index: js.Any): js.Any = js.native
   
   var lang: String = js.native
   

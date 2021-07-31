@@ -2,60 +2,58 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertionOrder extends StObject {
   
   /** Output only. The unique ID of the advertiser the insertion order belongs to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** The bidding strategy of the insertion order. By default, fixed_bid is set. */
-  var bidStrategy: js.UndefOr[BiddingStrategy] = js.native
+  var bidStrategy: js.UndefOr[BiddingStrategy] = js.undefined
   
   /** Required. The budget allocation settings of the insertion order. */
-  var budget: js.UndefOr[InsertionOrderBudget] = js.native
+  var budget: js.UndefOr[InsertionOrderBudget] = js.undefined
   
   /** Required. Immutable. The unique ID of the campaign that the insertion order belongs to. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the insertion order. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Controls whether or not the insertion order can spend its budget and bid on inventory. * For CreateInsertionOrder method, only `ENTITY_STATUS_DRAFT` is allowed. To
     * activate an insertion order, use UpdateInsertionOrder method and update the status to `ENTITY_STATUS_ACTIVE` after creation. * An insertion order cannot be changed back to
     * `ENTITY_STATUS_DRAFT` status from any other status. * An insertion order cannot be set to `ENTITY_STATUS_ACTIVE` if its parent campaign is not active.
     */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Required. The frequency capping setting of the insertion order. */
-  var frequencyCap: js.UndefOr[FrequencyCap] = js.native
+  var frequencyCap: js.UndefOr[FrequencyCap] = js.undefined
   
   /** Output only. The unique ID of the insertion order. Assigned by the system. */
-  var insertionOrderId: js.UndefOr[String] = js.native
+  var insertionOrderId: js.UndefOr[String] = js.undefined
   
   /** Additional integration details of the insertion order. */
-  var integrationDetails: js.UndefOr[IntegrationDetails] = js.native
+  var integrationDetails: js.UndefOr[IntegrationDetails] = js.undefined
   
   /** Output only. The resource name of the insertion order. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The budget spending speed setting of the insertion order. */
-  var pacing: js.UndefOr[Pacing] = js.native
+  var pacing: js.UndefOr[Pacing] = js.undefined
   
   /**
     * The partner costs associated with the insertion order. If absent or empty in CreateInsertionOrder method, the newly created insertion order will inherit partner costs from the
     * partner settings.
     */
-  var partnerCosts: js.UndefOr[js.Array[PartnerCost]] = js.native
+  var partnerCosts: js.UndefOr[js.Array[PartnerCost]] = js.undefined
   
   /** Required. Performance goal of the insertion order. */
-  var performanceGoal: js.UndefOr[PerformanceGoal] = js.native
+  var performanceGoal: js.UndefOr[PerformanceGoal] = js.undefined
   
   /** Output only. The timestamp when the insertion order was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object InsertionOrder {
   

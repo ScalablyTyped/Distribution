@@ -2,36 +2,34 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedIde extends StObject {
   
   /**
     * The download URL for the IDE.
     */
-  var downloadUrl: String = js.native
+  var downloadUrl: String
   
   /**
     * The type of the IDE.
     */
-  var ideType: SupportedIdeType = js.native
+  var ideType: SupportedIdeType
   
   /**
     * The name of the IDE.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The URL to open the protocol handler for the IDE.
     */
-  var protocolHandlerUrl: String = js.native
+  var protocolHandlerUrl: String
   
   /**
     * A list of SupportedPlatforms.
     */
-  var supportedPlatforms: js.Array[String] = js.native
+  var supportedPlatforms: js.Array[String]
 }
 object SupportedIde {
   

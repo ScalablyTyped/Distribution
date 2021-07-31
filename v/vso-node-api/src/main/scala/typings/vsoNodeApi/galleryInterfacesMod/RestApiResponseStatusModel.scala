@@ -2,36 +2,34 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestApiResponseStatusModel extends StObject {
   
   /**
     * Gets or sets the operation details
     */
-  var operationDetails: js.Any = js.native
+  var operationDetails: js.Any
   
   /**
     * Gets or sets the operation id
     */
-  var operationId: String = js.native
+  var operationId: String
   
   /**
     * Gets or sets the completed status percentage
     */
-  var percentageCompleted: Double = js.native
+  var percentageCompleted: Double
   
   /**
     * Gets or sets the status
     */
-  var status: RestApiResponseStatus = js.native
+  var status: RestApiResponseStatus
   
   /**
     * Gets or sets the status message
     */
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object RestApiResponseStatusModel {
   

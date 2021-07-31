@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGatewayCapabilityConfigurationRequest extends StObject {
   
   /**
     * The namespace of the capability configuration. For example, if you configure OPC-UA sources from the AWS IoT SiteWise console, your OPC-UA capability configuration has the namespace iotsitewise:opcuacollector:version, where version is a number such as 1.
     */
-  var capabilityNamespace: CapabilityNamespace = js.native
+  var capabilityNamespace: CapabilityNamespace
   
   /**
     * The ID of the gateway that defines the capability configuration.
     */
-  var gatewayId: ID = js.native
+  var gatewayId: ID
 }
 object DescribeGatewayCapabilityConfigurationRequest {
   

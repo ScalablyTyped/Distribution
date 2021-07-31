@@ -3,17 +3,17 @@ package typings.reactNativeSvgCharts.mod
 import typings.reactNativeSvg.mod.CommonPathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimatedPathProps extends CommonPathProps {
+trait AnimatedPathProps
+  extends StObject
+     with CommonPathProps {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var renderPlaceholder: js.UndefOr[js.Function0[_]] = js.native
+  var renderPlaceholder: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object AnimatedPathProps {
   
@@ -39,7 +39,7 @@ object AnimatedPathProps {
     def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setRenderPlaceholder(value: () => _): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction0(value))
+    def setRenderPlaceholder(value: () => js.Any): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)

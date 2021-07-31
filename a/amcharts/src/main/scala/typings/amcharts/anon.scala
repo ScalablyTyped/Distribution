@@ -3,17 +3,15 @@ package typings.amcharts
 import typings.amcharts.amChartMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Chart extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Chart {
     
@@ -35,15 +33,14 @@ object anon {
     }
   }
   
-  @js.native
   trait ChartDataItem extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
     // Always "rollOverSlice".
-    var dataItem: typings.amcharts.sliceMod.default = js.native
+    var dataItem: typings.amcharts.sliceMod.default
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ChartDataItem {
     
@@ -68,18 +65,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var endDate: typings.std.Date = js.native
+    var endDate: typings.std.Date
     
-    var predefinedPeriod: String = js.native
+    var predefinedPeriod: String
     
-    var startDate: typings.std.Date = js.native
+    var startDate: typings.std.Date
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Count {
     
@@ -116,16 +112,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DD extends StObject {
     
-    var DD: String = js.native
+    var DD: String
     
-    var hh: String = js.native
+    var hh: String
     
-    var mm: String = js.native
+    var mm: String
     
-    var ss: String = js.native
+    var ss: String
   }
   object DD {
     
@@ -152,14 +147,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DataItem extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
-    var dataItem: js.Object = js.native
+    var dataItem: js.Object
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object DataItem {
     
@@ -184,26 +178,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var chart: this.type = js.native
+    var chart: this.type
     
-    var date: js.UndefOr[typings.std.Date] = js.native
+    var date: js.UndefOr[typings.std.Date] = js.undefined
     
-    var endDate: js.UndefOr[typings.std.Date] = js.native
+    var endDate: js.UndefOr[typings.std.Date] = js.undefined
     
-    var eventObject: js.UndefOr[typings.amcharts.stockEventMod.default] = js.native
+    var eventObject: js.UndefOr[typings.amcharts.stockEventMod.default] = js.undefined
     
-    var graph: js.UndefOr[typings.amcharts.stockGraphMod.default] = js.native
+    var graph: js.UndefOr[typings.amcharts.stockGraphMod.default] = js.undefined
     
-    var panel: js.UndefOr[typings.amcharts.stockPanelMod.default] = js.native
+    var panel: js.UndefOr[typings.amcharts.stockPanelMod.default] = js.undefined
     
-    var period: js.UndefOr[String] = js.native
+    var period: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[typings.std.Date] = js.native
+    var startDate: js.UndefOr[typings.std.Date] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Date {
     
@@ -267,44 +260,43 @@ object anon {
     }
   }
   
-  @js.native
   trait Delta2X extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
-    var delta2X: js.UndefOr[Double] = js.native
+    var delta2X: js.UndefOr[Double] = js.undefined
     
-    var delta2Y: js.UndefOr[Double] = js.native
+    var delta2Y: js.UndefOr[Double] = js.undefined
     
-    var deltaX: js.UndefOr[Double] = js.native
+    var deltaX: js.UndefOr[Double] = js.undefined
     
-    var deltaY: js.UndefOr[Double] = js.native
+    var deltaY: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var finalX: js.UndefOr[Double] = js.native
+    var finalX: js.UndefOr[Double] = js.undefined
     
-    var finalY: js.UndefOr[Double] = js.native
+    var finalY: js.UndefOr[Double] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var mostCloseGraph: js.UndefOr[typings.amcharts.amGraphMod.default] = js.native
+    var mostCloseGraph: js.UndefOr[typings.amcharts.amGraphMod.default] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[this.type] = js.native
+    var target: js.UndefOr[this.type] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
-    var zooming: js.UndefOr[Boolean] = js.native
+    var zooming: js.UndefOr[Boolean] = js.undefined
   }
   object Delta2X {
     
@@ -422,16 +414,15 @@ object anon {
     }
   }
   
-  @js.native
   trait EndValue extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
-    var endValue: js.UndefOr[typings.std.Date] = js.native
+    var endValue: js.UndefOr[typings.std.Date] = js.undefined
     
-    var startValue: js.UndefOr[typings.std.Date] = js.native
+    var startValue: js.UndefOr[typings.std.Date] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object EndValue {
     
@@ -465,18 +456,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Graph extends StObject {
     
-    var chart: default = js.native
+    var chart: default
     
-    var graph: typings.amcharts.amGraphMod.default = js.native
+    var graph: typings.amcharts.amGraphMod.default
     
-    var index: Double = js.native
+    var index: Double
     
-    var item: typings.amcharts.graphDataItemMod.default = js.native
+    var item: typings.amcharts.graphDataItemMod.default
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Graph {
     
@@ -513,12 +503,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Number extends StObject {
     
-    var number: Double = js.native
+    var number: Double
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object Number {
     
@@ -539,13 +528,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
     // Either "dataUpdated" or "init".
-    var chart: this.type = js.native
+    var chart: this.type
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     

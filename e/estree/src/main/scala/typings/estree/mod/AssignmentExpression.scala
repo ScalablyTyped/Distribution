@@ -2,34 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var left: Pattern | MemberExpression = js.native
+  var left: Pattern | MemberExpression
   
-  var operator: AssignmentOperator = js.native
+  var operator: AssignmentOperator
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_AssignmentExpression: typings.estree.estreeStrings.AssignmentExpression = js.native
+  var type_AssignmentExpression: typings.estree.estreeStrings.AssignmentExpression
 }
 object AssignmentExpression {
   
   @scala.inline
-  def apply(
-    left: Pattern | MemberExpression,
-    operator: AssignmentOperator,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.AssignmentExpression
-  ): AssignmentExpression = {
+  def apply(left: Pattern | MemberExpression, operator: AssignmentOperator, right: Expression): AssignmentExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssignmentExpression")
     __obj.asInstanceOf[AssignmentExpression]
   }
   

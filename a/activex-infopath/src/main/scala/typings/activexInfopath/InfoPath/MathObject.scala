@@ -3,24 +3,22 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MathObject extends StObject {
   
-  def Avg(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
+  def Avg(pxmllistInput: IXMLDOMNodeList): js.Any
   
-  def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any = js.native
+  def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any
   
   @JSName("InfoPath.MathObject_typekey")
-  var InfoPathDotMathObject_typekey: MathObject = js.native
+  var InfoPathDotMathObject_typekey: MathObject
   
-  def Max(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
+  def Max(pxmllistInput: IXMLDOMNodeList): js.Any
   
-  def Min(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
+  def Min(pxmllistInput: IXMLDOMNodeList): js.Any
   
-  def Nz(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
+  def Nz(pxmllistInput: IXMLDOMNodeList): js.Any
 }
 object MathObject {
   

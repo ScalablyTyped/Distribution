@@ -3,32 +3,32 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.anon.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadVideoOptionsMod {
   
   object SEGMENT_DIVIDERS {
     
-    @JSImport("instagram-private-api/dist/types/upload.video.options", "SEGMENT_DIVIDERS.sectionSize")
+    @JSImport("instagram-private-api/dist/types/upload.video.options", "SEGMENT_DIVIDERS")
     @js.native
-    def sectionSize(sectionSize: js.Any): SegmentDivider = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("instagram-private-api/dist/types/upload.video.options", "SEGMENT_DIVIDERS.totalSections")
-    @js.native
-    def totalSections(numSections: js.Any): SegmentDivider = js.native
+    @scala.inline
+    def sectionSize(sectionSize: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("sectionSize")(sectionSize.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
+    
+    @scala.inline
+    def totalSections(numSections: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("totalSections")(numSections.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
   }
   
   type SegmentDivider = js.Function1[/* options */ Buffer, js.Array[typings.node.Buffer]]
   
-  @js.native
   trait UploadRetryContext extends StObject {
     
-    var num_reupload: Double = js.native
+    var num_reupload: Double
     
-    var num_step_auto_retry: Double = js.native
+    var num_step_auto_retry: Double
     
-    var num_step_manual_retry: Double = js.native
+    var num_step_manual_retry: Double
   }
   object UploadRetryContext {
     
@@ -52,14 +52,15 @@ object uploadVideoOptionsMod {
     }
   }
   
-  @js.native
-  trait UploadSegmentedVideoOptions extends UploadVideoOptions {
+  trait UploadSegmentedVideoOptions
+    extends StObject
+       with UploadVideoOptions {
     
-    var retryContext: js.UndefOr[UploadRetryContext] = js.native
+    var retryContext: js.UndefOr[UploadRetryContext] = js.undefined
     
-    var segmentDivider: js.UndefOr[SegmentDivider] = js.native
+    var segmentDivider: js.UndefOr[SegmentDivider] = js.undefined
     
-    var segments: js.UndefOr[js.Array[typings.node.Buffer]] = js.native
+    var segments: js.UndefOr[js.Array[typings.node.Buffer]] = js.undefined
   }
   object UploadSegmentedVideoOptions {
     
@@ -95,38 +96,37 @@ object uploadVideoOptionsMod {
     }
   }
   
-  @js.native
   trait UploadVideoOptions extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var forAlbum: js.UndefOr[Boolean] = js.native
+    var forAlbum: js.UndefOr[Boolean] = js.undefined
     
-    var forDirectStory: js.UndefOr[Boolean] = js.native
+    var forDirectStory: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var isDirect: js.UndefOr[Boolean] = js.native
+    var isDirect: js.UndefOr[Boolean] = js.undefined
     
-    var isDirectVoice: js.UndefOr[Boolean] = js.native
+    var isDirectVoice: js.UndefOr[Boolean] = js.undefined
     
-    var isIgtvVideo: js.UndefOr[Boolean] = js.native
+    var isIgtvVideo: js.UndefOr[Boolean] = js.undefined
     
-    var isSidecar: js.UndefOr[Boolean] = js.native
+    var isSidecar: js.UndefOr[Boolean] = js.undefined
     
-    var mediaType: js.UndefOr[String] = js.native
+    var mediaType: js.UndefOr[String] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
     
-    var uploadName: js.UndefOr[String] = js.native
+    var uploadName: js.UndefOr[String] = js.undefined
     
-    var video: typings.node.Buffer = js.native
+    var video: typings.node.Buffer
     
-    var waterfallId: js.UndefOr[String] = js.native
+    var waterfallId: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object UploadVideoOptions {
     
@@ -225,18 +225,17 @@ object uploadVideoOptionsMod {
     }
   }
   
-  @js.native
   trait UploadVideoSegmentInitOptions extends StObject {
     
-    var ruploadParams: js.Any = js.native
+    var ruploadParams: js.Any
     
-    var startOffset: Double = js.native
+    var startOffset: Double
     
-    var streamId: String = js.native
+    var streamId: String
     
-    var transferId: String = js.native
+    var transferId: String
     
-    var waterfallId: String = js.native
+    var waterfallId: String
   }
   object UploadVideoSegmentInitOptions {
     
@@ -272,20 +271,19 @@ object uploadVideoOptionsMod {
     }
   }
   
-  @js.native
   trait UploadVideoSegmentTransferOptions extends StObject {
     
-    var ruploadParams: js.Any = js.native
+    var ruploadParams: js.Any
     
-    var segment: typings.node.Buffer = js.native
+    var segment: typings.node.Buffer
     
-    var startOffset: Double = js.native
+    var startOffset: Double
     
-    var streamId: String = js.native
+    var streamId: String
     
-    var transferId: String = js.native
+    var transferId: String
     
-    var waterfallId: String = js.native
+    var waterfallId: String
   }
   object UploadVideoSegmentTransferOptions {
     

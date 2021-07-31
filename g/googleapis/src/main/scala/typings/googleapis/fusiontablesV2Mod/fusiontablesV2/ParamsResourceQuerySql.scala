@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceQuerySql extends StandardParameters {
+trait ParamsResourceQuerySql
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether column names are included in the first row. Default is true.
     */
-  var hdrs: js.UndefOr[Boolean] = js.native
+  var hdrs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Fusion Tables SQL statement, which can be any of  - SELECT - INSERT -
     * UPDATE - DELETE - SHOW - DESCRIBE - CREATE
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /**
     * Whether typed values are returned in the (JSON) response: numbers for
     * numeric values and parsed geometries for KML values. Default is true.
     */
-  var typed: js.UndefOr[Boolean] = js.native
+  var typed: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceQuerySql {
   

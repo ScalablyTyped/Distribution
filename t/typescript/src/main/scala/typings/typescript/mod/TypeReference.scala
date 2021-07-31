@@ -2,17 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeReference extends ObjectType {
+trait TypeReference
+  extends StObject
+     with ObjectType {
   
-  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.native
+  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
   
-  var target: GenericType = js.native
+  var target: GenericType
   
-  var typeArguments: js.UndefOr[js.Array[Type]] = js.native
+  var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
 }
 object TypeReference {
   

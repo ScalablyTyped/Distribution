@@ -2,14 +2,12 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for
   * google.bigtable.admin.v2.BigtableTableAdmin.ModifyColumnFamilies
   */
-@js.native
 trait SchemaModifyColumnFamiliesRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaModifyColumnFamiliesRequest extends StObject {
     * modifications can be masked by later ones (in the case of repeated
     * updates to the same family, for example).
     */
-  var modifications: js.UndefOr[js.Array[SchemaModification]] = js.native
+  var modifications: js.UndefOr[js.Array[SchemaModification]] = js.undefined
 }
 object SchemaModifyColumnFamiliesRequest {
   

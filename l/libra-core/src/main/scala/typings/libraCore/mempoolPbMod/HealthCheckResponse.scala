@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse")
@@ -27,13 +26,11 @@ object HealthCheckResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): HealthCheckResponse = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): HealthCheckResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[HealthCheckResponse]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: HealthCheckResponse, reader: BinaryReader): HealthCheckResponse = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: HealthCheckResponse, reader: BinaryReader): HealthCheckResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[HealthCheckResponse]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse.extensions")
   @js.native
@@ -48,18 +45,15 @@ object HealthCheckResponse {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: HealthCheckResponse, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: HealthCheckResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "HealthCheckResponse.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: HealthCheckResponse): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: HealthCheckResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var isHealthy: Boolean = js.native
+    var isHealthy: Boolean
   }
   object AsObject {
     

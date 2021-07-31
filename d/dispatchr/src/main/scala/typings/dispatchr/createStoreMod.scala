@@ -11,36 +11,37 @@ import typings.std.Pick
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createStoreMod {
   
+  @scala.inline
+  def apply[T /* <: StoreOptions */](options: T & ThisType[StoreThis[T]]): StoreClass = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
+  
   @JSImport("dispatchr/addons/createStore", JSImport.Namespace)
   @js.native
-  def apply[T /* <: StoreOptions */](options: T with ThisType[StoreThis[T]]): StoreClass = js.native
+  val ^ : js.Any = js.native
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
   
-  @js.native
   trait StoreOptions extends StObject {
     
-    var dehydrate: js.UndefOr[js.Function0[_]] = js.native
+    var dehydrate: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var handlers: StringDictionary[String] = js.native
+    var handlers: StringDictionary[String]
     
-    var initialize: js.UndefOr[js.Function0[Unit]] = js.native
+    var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var mixins: js.UndefOr[js.Array[js.Object]] = js.native
+    var mixins: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var rehydrate: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.native
+    var rehydrate: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
     
-    var statics: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var statics: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var storeName: String = js.native
+    var storeName: String
   }
   object StoreOptions {
     
@@ -54,7 +55,7 @@ object createStoreMod {
     implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDehydrate(value: () => _): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
+      def setDehydrate(value: () => js.Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
       
       @scala.inline
       def setDehydrateUndefined: Self = StObject.set(x, "dehydrate", js.undefined)
@@ -95,5 +96,5 @@ object createStoreMod {
   }
   
   // see: https://github.com/yahoo/fluxible/blob/dispatchr-v1.2.0/packages/dispatchr/addons/createStore.js#L9
-  type StoreThis[T /* <: StoreOptions */] = (Omit[T, statics | storeName | handlers | mixins]) with Store[js.Object]
+  type StoreThis[T /* <: StoreOptions */] = (Omit[T, statics | storeName | handlers | mixins]) & Store[js.Object]
 }

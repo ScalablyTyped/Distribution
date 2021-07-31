@@ -3,22 +3,21 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.TypeCastExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeCastExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with ExpressionWrapper
      with Flow {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var typeAnnotation: FlowTypeAnnotation = js.native
+  var typeAnnotation: FlowTypeAnnotation
   
   @JSName("type")
-  var type_TypeCastExpression_ : TypeCastExpression = js.native
+  var type_TypeCastExpression_ : TypeCastExpression
 }
 object TypeCastExpression_ {
   
@@ -28,11 +27,10 @@ object TypeCastExpression_ {
     expression: Expression,
     loc: SourceLocation,
     start: Double,
-    `type`: TypeCastExpression,
     typeAnnotation: FlowTypeAnnotation
   ): TypeCastExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TypeCastExpression")
     __obj.asInstanceOf[TypeCastExpression_]
   }
   

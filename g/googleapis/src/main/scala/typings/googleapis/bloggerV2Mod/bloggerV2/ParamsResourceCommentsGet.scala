@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentsGet extends StandardParameters {
+trait ParamsResourceCommentsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of the blog to containing the comment.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the comment to get.
     */
-  var commentId: js.UndefOr[String] = js.native
+  var commentId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the post to fetch posts from.
     */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentsGet {
   

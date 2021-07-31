@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getReportDefinitionMod {
   
-  @JSImport("@pulumi/aws/cur/getReportDefinition", "getReportDefinition")
+  @JSImport("@pulumi/aws/cur/getReportDefinition", JSImport.Namespace)
   @js.native
-  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = js.native
-  @JSImport("@pulumi/aws/cur/getReportDefinition", "getReportDefinition")
-  @js.native
-  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReportDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetReportDefinitionResult]]
+  @scala.inline
+  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReportDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetReportDefinitionResult]]
+  
   trait GetReportDefinitionArgs extends StObject {
     
     /**
       * The name of the report definition to match.
       */
-    val reportName: String = js.native
+    val reportName: String
   }
   object GetReportDefinitionArgs {
     
@@ -39,65 +39,64 @@ object getReportDefinitionMod {
     }
   }
   
-  @js.native
   trait GetReportDefinitionResult extends StObject {
     
     /**
       * A list of additional artifacts.
       */
-    val additionalArtifacts: js.Array[String] = js.native
+    val additionalArtifacts: js.Array[String]
     
     /**
       * A list of schema elements.
       */
-    val additionalSchemaElements: js.Array[String] = js.native
+    val additionalSchemaElements: js.Array[String]
     
     /**
       * Preferred format for report.
       */
-    val compression: String = js.native
+    val compression: String
     
     /**
       * Preferred compression format for report.
       */
-    val format: String = js.native
+    val format: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * If true reports are updated after they have been finalized.
       */
-    val refreshClosedReports: Boolean = js.native
+    val refreshClosedReports: Boolean
     
-    val reportName: String = js.native
+    val reportName: String
     
     /**
       * Overwrite the previous version of each report or to deliver the report in addition to the previous versions.
       */
-    val reportVersioning: String = js.native
+    val reportVersioning: String
     
     /**
       * Name of customer S3 bucket.
       */
-    val s3Bucket: String = js.native
+    val s3Bucket: String
     
     /**
       * Preferred report path prefix.
       */
-    val s3Prefix: String = js.native
+    val s3Prefix: String
     
     /**
       * Region of customer S3 bucket.
       */
-    val s3Region: String = js.native
+    val s3Region: String
     
     /**
       * The frequency on which report data are measured and displayed.
       */
-    val timeUnit: String = js.native
+    val timeUnit: String
   }
   object GetReportDefinitionResult {
     

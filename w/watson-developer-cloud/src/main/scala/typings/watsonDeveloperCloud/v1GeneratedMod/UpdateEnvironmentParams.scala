@@ -3,28 +3,26 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateEnvironment` operation. */
-@js.native
 trait UpdateEnvironmentParams extends StObject {
   
   /** Description of the environment. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Name that identifies the environment. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Size that the environment should be increased to. Environment size cannot be modified when using a Lite plan. Environment size can only increased and not decreased. */
-  var size: js.UndefOr[Size | String] = js.native
+  var size: js.UndefOr[Size | String] = js.undefined
 }
 object UpdateEnvironmentParams {
   

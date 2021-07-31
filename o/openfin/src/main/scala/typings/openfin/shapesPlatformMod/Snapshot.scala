@@ -4,15 +4,13 @@ import typings.openfin.anon.MonitorInfo
 import typings.openfin.windowOptionsMod.WindowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
-  var snapshotDetails: js.UndefOr[MonitorInfo] = js.native
+  var snapshotDetails: js.UndefOr[MonitorInfo] = js.undefined
   
-  var windows: js.Array[WindowOptions] = js.native
+  var windows: js.Array[WindowOptions]
 }
 object Snapshot {
   

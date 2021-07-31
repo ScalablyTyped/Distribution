@@ -2,13 +2,11 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardMessageOptions extends StObject {
   
-  var disable_notification: js.UndefOr[Boolean] = js.native
+  var disable_notification: js.UndefOr[Boolean] = js.undefined
 }
 object ForwardMessageOptions {
   

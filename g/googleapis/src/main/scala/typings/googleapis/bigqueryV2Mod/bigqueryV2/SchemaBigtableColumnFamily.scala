@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBigtableColumnFamily extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaBigtableColumnFamily extends StObject {
     * qualifier matches a qualifier in this list can be accessed as .. Other
     * columns can be accessed as a list through .Column field.
     */
-  var columns: js.UndefOr[js.Array[SchemaBigtableColumn]] = js.native
+  var columns: js.UndefOr[js.Array[SchemaBigtableColumn]] = js.undefined
   
   /**
     * [Optional] The encoding of the values when the type is not STRING.
@@ -24,12 +22,12 @@ trait SchemaBigtableColumnFamily extends StObject {
     * column by listing that column in &#39;columns&#39; and specifying an
     * encoding for it.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the column family.
     */
-  var familyId: js.UndefOr[String] = js.native
+  var familyId: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] If this is set only the latest version of value are exposed
@@ -37,7 +35,7 @@ trait SchemaBigtableColumnFamily extends StObject {
     * specific column by listing that column in &#39;columns&#39; and
     * specifying a different setting for that column.
     */
-  var onlyReadLatest: js.UndefOr[Boolean] = js.native
+  var onlyReadLatest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] The type to convert the value in cells of this column family.
@@ -47,7 +45,7 @@ trait SchemaBigtableColumnFamily extends StObject {
     * type is BYTES. This can be overridden for a specific column by listing
     * that column in &#39;columns&#39; and specifying a type for it.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaBigtableColumnFamily {
   

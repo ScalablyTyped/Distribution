@@ -2,47 +2,45 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericTextBoxOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
-  var downArrowText: js.UndefOr[String] = js.native
+  var downArrowText: js.UndefOr[String] = js.undefined
   
-  var factor: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String | js.Function | NumericTextBoxLabel] = js.native
+  var label: js.UndefOr[String | js.Function | NumericTextBoxLabel] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var restrictDecimals: js.UndefOr[Boolean] = js.native
+  var restrictDecimals: js.UndefOr[Boolean] = js.undefined
   
-  var round: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.undefined
   
-  var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.native
+  var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.undefined
   
-  var spinners: js.UndefOr[Boolean] = js.native
+  var spinners: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var upArrowText: js.UndefOr[String] = js.native
+  var upArrowText: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object NumericTextBoxOptions {
   

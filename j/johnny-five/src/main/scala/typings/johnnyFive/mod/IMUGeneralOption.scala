@@ -2,15 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMUGeneralOption extends StObject {
   
-  var controller: js.UndefOr[String] = js.native
+  var controller: js.UndefOr[String] = js.undefined
   
-  var freq: js.UndefOr[Double] = js.native
+  var freq: js.UndefOr[Double] = js.undefined
 }
 object IMUGeneralOption {
   

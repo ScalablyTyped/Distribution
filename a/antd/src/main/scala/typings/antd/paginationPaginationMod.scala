@@ -14,7 +14,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationPaginationMod extends Shortcut {
@@ -23,10 +22,11 @@ object paginationPaginationMod extends Shortcut {
   @js.native
   val default: FC[PaginationProps] = js.native
   
-  @js.native
-  trait PaginationConfig extends PaginationProps {
+  trait PaginationConfig
+    extends StObject
+       with PaginationProps {
     
-    var position: js.UndefOr[PaginationPosition] = js.native
+    var position: js.UndefOr[PaginationPosition] = js.undefined
   }
   object PaginationConfig {
     
@@ -67,20 +67,19 @@ object paginationPaginationMod extends Shortcut {
     def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   }
   
-  @js.native
   trait PaginationProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var defaultCurrent: js.UndefOr[Double] = js.native
+    var defaultCurrent: js.UndefOr[Double] = js.undefined
     
-    var defaultPageSize: js.UndefOr[Double] = js.native
+    var defaultPageSize: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hideOnSinglePage: js.UndefOr[Boolean] = js.native
+    var hideOnSinglePage: js.UndefOr[Boolean] = js.undefined
     
     var itemRender: js.UndefOr[
         js.Function3[
@@ -89,45 +88,45 @@ object paginationPaginationMod extends Shortcut {
           /* originalElement */ ReactElement, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var locale: js.UndefOr[js.Object] = js.native
+    var locale: js.UndefOr[js.Object] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* page */ Double, /* pageSize */ js.UndefOr[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* page */ Double, /* pageSize */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var onShowSizeChange: js.UndefOr[js.Function2[/* current */ Double, /* size */ Double, Unit]] = js.native
+    var onShowSizeChange: js.UndefOr[js.Function2[/* current */ Double, /* size */ Double, Unit]] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var pageSizeOptions: js.UndefOr[js.Array[String]] = js.native
+    var pageSizeOptions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var selectPrefixCls: js.UndefOr[String] = js.native
+    var selectPrefixCls: js.UndefOr[String] = js.undefined
     
-    var showLessItems: js.UndefOr[Boolean] = js.native
+    var showLessItems: js.UndefOr[Boolean] = js.undefined
     
-    var showQuickJumper: js.UndefOr[Boolean | GoButton] = js.native
+    var showQuickJumper: js.UndefOr[Boolean | GoButton] = js.undefined
     
-    var showSizeChanger: js.UndefOr[Boolean] = js.native
+    var showSizeChanger: js.UndefOr[Boolean] = js.undefined
     
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     var showTotal: js.UndefOr[
         js.Function2[/* total */ Double, /* range */ js.Tuple2[Double, Double], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.native
+    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object PaginationProps {
     

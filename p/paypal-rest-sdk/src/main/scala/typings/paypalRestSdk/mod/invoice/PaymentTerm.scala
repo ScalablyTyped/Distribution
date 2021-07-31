@@ -2,15 +2,13 @@ package typings.paypalRestSdk.mod.invoice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentTerm extends StObject {
   
-  var due_date: js.UndefOr[String] = js.native
+  var due_date: js.UndefOr[String] = js.undefined
   
-  var term_type: js.UndefOr[String] = js.native
+  var term_type: js.UndefOr[String] = js.undefined
 }
 object PaymentTerm {
   

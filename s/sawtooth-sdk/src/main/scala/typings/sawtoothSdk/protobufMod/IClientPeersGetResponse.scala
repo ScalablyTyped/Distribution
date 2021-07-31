@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientPeersGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientPeersGetResponse extends StObject {
   
   /** ClientPeersGetResponse peers */
-  var peers: js.UndefOr[js.Array[String] | Null] = js.native
+  var peers: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ClientPeersGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientPeersGetResponse {
   

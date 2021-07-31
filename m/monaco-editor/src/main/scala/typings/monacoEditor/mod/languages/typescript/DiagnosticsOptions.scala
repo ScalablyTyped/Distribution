@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.languages.typescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagnosticsOptions extends StObject {
   
-  var diagnosticCodesToIgnore: js.UndefOr[js.Array[Double]] = js.native
+  var diagnosticCodesToIgnore: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var noSemanticValidation: js.UndefOr[Boolean] = js.native
+  var noSemanticValidation: js.UndefOr[Boolean] = js.undefined
   
-  var noSuggestionDiagnostics: js.UndefOr[Boolean] = js.native
+  var noSuggestionDiagnostics: js.UndefOr[Boolean] = js.undefined
   
-  var noSyntaxValidation: js.UndefOr[Boolean] = js.native
+  var noSyntaxValidation: js.UndefOr[Boolean] = js.undefined
 }
 object DiagnosticsOptions {
   

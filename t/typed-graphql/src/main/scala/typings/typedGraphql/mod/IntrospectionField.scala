@@ -2,23 +2,21 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrospectionField extends StObject {
   
-  var args: js.Array[IntrospectionInputValue] = js.native
+  var args: js.Array[IntrospectionInputValue]
   
-  var deprecationReason: js.UndefOr[String] = js.native
+  var deprecationReason: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var isDeprecated: Boolean = js.native
+  var isDeprecated: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: IntrospectionTypeRef = js.native
+  var `type`: IntrospectionTypeRef
 }
 object IntrospectionField {
   

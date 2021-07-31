@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttMessagesViews extends StObject {
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var week: js.UndefOr[String] = js.native
+  var week: js.UndefOr[String] = js.undefined
   
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object GanttMessagesViews {
   

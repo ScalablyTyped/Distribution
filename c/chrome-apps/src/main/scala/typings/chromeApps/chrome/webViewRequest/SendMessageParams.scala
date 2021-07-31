@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageParams extends StObject {
   
   /**
     * The value that will be passed in the message attribute
     * of the interface that is passed to the event handler.
     */
-  var message: String = js.native
+  var message: String
 }
 object SendMessageParams {
   

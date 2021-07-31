@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.AppsRemoveRepoFromInstallationRequestOp
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsRemoveRepoFromInstallationEndpoint extends StObject {
   
-  var parameters: AppsRemoveRepoFromInstallationEndpoint = js.native
+  var parameters: AppsRemoveRepoFromInstallationEndpoint
   
-  var request: AppsRemoveRepoFromInstallationRequestOptions = js.native
+  var request: AppsRemoveRepoFromInstallationRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersAppsRemoveRepoFromInstallationEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersAppsRemoveRepoFromInstallationEndpoint {
   def apply(
     parameters: AppsRemoveRepoFromInstallationEndpoint,
     request: AppsRemoveRepoFromInstallationRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersAppsRemoveRepoFromInstallationEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersAppsRemoveRepoFromInstallationEndpoint]
@@ -39,6 +37,6 @@ object ParametersAppsRemoveRepoFromInstallationEndpoint {
     def setRequest(value: AppsRemoveRepoFromInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layer extends StObject {
   
   /**
     * The availability status of the image layer.
     */
-  var layerAvailability: js.UndefOr[LayerAvailability] = js.native
+  var layerAvailability: js.UndefOr[LayerAvailability] = js.undefined
   
   /**
     * The sha256 digest of the image layer.
     */
-  var layerDigest: js.UndefOr[LayerDigest] = js.native
+  var layerDigest: js.UndefOr[LayerDigest] = js.undefined
   
   /**
     * The size, in bytes, of the image layer.
     */
-  var layerSize: js.UndefOr[LayerSizeInBytes] = js.native
+  var layerSize: js.UndefOr[LayerSizeInBytes] = js.undefined
   
   /**
     * The media type of the layer, such as application/vnd.docker.image.rootfs.diff.tar.gzip or application/vnd.oci.image.layer.v1.tar+gzip.
     */
-  var mediaType: js.UndefOr[MediaType] = js.native
+  var mediaType: js.UndefOr[MediaType] = js.undefined
 }
 object Layer {
   

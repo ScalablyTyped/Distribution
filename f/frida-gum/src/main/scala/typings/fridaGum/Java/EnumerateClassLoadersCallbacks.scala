@@ -2,22 +2,20 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateClassLoadersCallbacks extends StObject {
   
   /**
     * Called when all class loaders have been enumerated.
     */
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
   /**
     * Called with a `java.lang.ClassLoader` wrapper for each class loader
     * found in the VM.
     */
-  def onMatch(loader: typings.fridaGum.anon.Wrapper): Unit = js.native
+  def onMatch(loader: typings.fridaGum.anon.Wrapper): Unit
 }
 object EnumerateClassLoadersCallbacks {
   

@@ -3,36 +3,34 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideShowTransition extends StObject {
   
-  var AdvanceOnClick: MsoTriState = js.native
+  var AdvanceOnClick: MsoTriState
   
-  var AdvanceOnTime: MsoTriState = js.native
+  var AdvanceOnTime: MsoTriState
   
-  var AdvanceTime: Double = js.native
+  var AdvanceTime: Double
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Duration: Double = js.native
+  var Duration: Double
   
-  var EntryEffect: PpEntryEffect = js.native
+  var EntryEffect: PpEntryEffect
   
-  var Hidden: MsoTriState = js.native
+  var Hidden: MsoTriState
   
-  var LoopSoundUntilNext: MsoTriState = js.native
+  var LoopSoundUntilNext: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.SlideShowTransition_typekey")
-  var PowerPointDotSlideShowTransition_typekey: SlideShowTransition = js.native
+  var PowerPointDotSlideShowTransition_typekey: SlideShowTransition
   
-  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect = js.native
+  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
   
-  var Speed: PpTransitionSpeed = js.native
+  var Speed: PpTransitionSpeed
 }
 object SlideShowTransition {
   

@@ -3,17 +3,15 @@ package typings.moment.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandaloneFormatSpec extends StObject {
   
-  var format: js.Array[String] = js.native
+  var format: js.Array[String]
   
-  var isFormat: js.UndefOr[RegExp] = js.native
+  var isFormat: js.UndefOr[RegExp] = js.undefined
   
-  var standalone: js.Array[String] = js.native
+  var standalone: js.Array[String]
 }
 object StandaloneFormatSpec {
   

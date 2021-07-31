@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDedicatedIpRequest extends StObject {
   
   /**
     * The IP address that you want to obtain more information about. The value you specify has to be a dedicated IP address that's assocaited with your Amazon Pinpoint account.
     */
-  var Ip: typings.awsSdk.pinpointemailMod.Ip = js.native
+  var Ip: typings.awsSdk.pinpointemailMod.Ip
 }
 object GetDedicatedIpRequest {
   

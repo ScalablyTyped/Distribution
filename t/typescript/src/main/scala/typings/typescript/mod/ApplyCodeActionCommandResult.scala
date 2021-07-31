@@ -2,13 +2,11 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyCodeActionCommandResult extends StObject {
   
-  var successMessage: java.lang.String = js.native
+  var successMessage: java.lang.String
 }
 object ApplyCodeActionCommandResult {
   

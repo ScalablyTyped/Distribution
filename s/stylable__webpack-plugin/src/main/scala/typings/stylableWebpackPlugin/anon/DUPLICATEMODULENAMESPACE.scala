@@ -2,13 +2,11 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DUPLICATEMODULENAMESPACE extends StObject {
   
-  var DUPLICATE_MODULE_NAMESPACE: Boolean = js.native
+  var DUPLICATE_MODULE_NAMESPACE: Boolean
 }
 object DUPLICATEMODULENAMESPACE {
   

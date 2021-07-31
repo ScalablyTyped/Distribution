@@ -2,38 +2,36 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteMultipartUploadRequest extends StObject {
   
   /**
     * Name of the bucket to which the multipart upload was initiated.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Object key for which the multipart upload was initiated.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * The container for the multipart upload request information.
     */
-  var MultipartUpload: js.UndefOr[CompletedMultipartUpload] = js.native
+  var MultipartUpload: js.UndefOr[CompletedMultipartUpload] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
   
   /**
     * ID for the initiated multipart upload.
     */
-  var UploadId: MultipartUploadId = js.native
+  var UploadId: MultipartUploadId
 }
 object CompleteMultipartUploadRequest {
   

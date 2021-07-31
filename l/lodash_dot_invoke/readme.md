@@ -11,8 +11,8 @@ The lodash method `_.invoke` exported as a module.
 | Full name          | lodash.invoke |
 | Keywords           | lodash-modularized, invoke |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 280142 |
+| # dependents       | 12 |
+| # downloads        | 339272 |
 | # stars            | 0 |
 
 ## Links

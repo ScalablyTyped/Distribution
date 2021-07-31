@@ -4,24 +4,22 @@ import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a Wi-Fi Direct Service session request. */
-@js.native
 trait WiFiDirectServiceSessionRequest extends StObject {
   
   /** Closes the session request. Your server code calls this method to reject a session request. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets device information for the requesting device. */
-  var deviceInformation: DeviceInformation = js.native
+  var deviceInformation: DeviceInformation
   
   /** Gets information about how provisioning should be performed if the session is established. */
-  var provisioningInfo: WiFiDirectServiceProvisioningInfo = js.native
+  var provisioningInfo: WiFiDirectServiceProvisioningInfo
   
   /** Gets the session information blob associated with this request. */
-  var sessionInfo: IBuffer = js.native
+  var sessionInfo: IBuffer
 }
 object WiFiDirectServiceSessionRequest {
   

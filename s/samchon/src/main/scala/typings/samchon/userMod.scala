@@ -1,13 +1,16 @@
 package typings.samchon
 
+import typings.ecol.collectionEventMod.CollectionEvent
+import typings.ecol.collectionEventMod.CollectionEvent.Listener
+import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.mod.HashMapCollection
 import typings.samchon.clientMod.Client
+import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.serviceServerMod.Server
 import typings.samchon.webClientDriverMod.WebClientDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
@@ -33,6 +36,17 @@ object userMod {
       * @hidden
       */
     var account_id_ : js.Any = js.native
+    
+    /* InferMemberOverrides */
+    override def addEventListener(
+      `type`: Type,
+      listener: Listener[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
     
     /**
       * @hidden
@@ -76,6 +90,16 @@ object userMod {
       */
     /* protected */ def destructor(): Unit = js.native
     
+    /* InferMemberOverrides */
+    override def dispatchEvent(
+      event: CollectionEvent[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
+    
     /**
       * Get account id.
       *
@@ -97,6 +121,9 @@ object userMod {
       */
     def getServer(): Server = js.native
     
+    /* InferMemberOverrides */
+    override def hasEventListener(`type`: Type): Boolean = js.native
+    
     /**
       * Log-out.
       *
@@ -108,6 +135,37 @@ object userMod {
       * with the ordinary {@link getAccountID account id} more.
       */
     def logout(): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(
+      `type`: Type,
+      listener: Listener[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
+    
+    /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
     
     /**
       * @hidden

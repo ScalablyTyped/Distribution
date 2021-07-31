@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamoDBv2Action extends StObject {
   
   /**
     * Specifies the DynamoDB table to which the message data will be written. For example:  { "dynamoDBv2": { "roleArn": "aws:iam:12341251:my-role" "putItem": { "tableName": "my-table" } } }  Each attribute in the message payload will be written to a separate column in the DynamoDB database.
     */
-  var putItem: PutItemInput = js.native
+  var putItem: PutItemInput
   
   /**
     * The ARN of the IAM role that grants access to the DynamoDB table.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
 }
 object DynamoDBv2Action {
   

@@ -3,15 +3,13 @@ package typings.vsoNodeApi.workInterfacesMod
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemFieldReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogColumn extends StObject {
   
-  var columnFieldReference: WorkItemFieldReference = js.native
+  var columnFieldReference: WorkItemFieldReference
   
-  var width: Double = js.native
+  var width: Double
 }
 object BacklogColumn {
   

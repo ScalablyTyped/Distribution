@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListValue extends StObject {
   
   /** Repeated field of dynamically typed values. */
-  var values: js.UndefOr[js.Array[Value]] = js.native
+  var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
 object ListValue {
   

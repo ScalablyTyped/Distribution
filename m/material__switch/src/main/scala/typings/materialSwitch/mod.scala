@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,15 +13,18 @@ object mod {
   @js.native
   class MDCSwitch protected ()
     extends typings.materialSwitch.componentMod.MDCSwitch {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCSwitch {
     
-    @JSImport("@material/switch", "MDCSwitch.attachTo")
+    @JSImport("@material/switch", "MDCSwitch")
     @js.native
-    def attachTo(root: HTMLElement): typings.materialSwitch.componentMod.MDCSwitch = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: HTMLElement): typings.materialSwitch.componentMod.MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSwitch.componentMod.MDCSwitch]
   }
   
   @JSImport("@material/switch", "MDCSwitchFoundation")

@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInstanceProtectionQuery extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * One or more instance IDs. You can specify up to 50 instances.
     */
-  var InstanceIds: typings.awsSdk.autoscalingMod.InstanceIds = js.native
+  var InstanceIds: typings.awsSdk.autoscalingMod.InstanceIds
   
   /**
     * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
     */
-  var ProtectedFromScaleIn: typings.awsSdk.autoscalingMod.ProtectedFromScaleIn = js.native
+  var ProtectedFromScaleIn: typings.awsSdk.autoscalingMod.ProtectedFromScaleIn
 }
 object SetInstanceProtectionQuery {
   

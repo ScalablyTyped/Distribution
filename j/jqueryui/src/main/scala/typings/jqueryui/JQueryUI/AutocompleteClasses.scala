@@ -2,15 +2,13 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteClasses extends StObject {
   
-  var `ui-autocomplete`: js.UndefOr[String] = js.native
+  var `ui-autocomplete`: js.UndefOr[String] = js.undefined
   
-  var `ui-autocomplete-input`: js.UndefOr[String] = js.native
+  var `ui-autocomplete-input`: js.UndefOr[String] = js.undefined
 }
 object AutocompleteClasses {
   

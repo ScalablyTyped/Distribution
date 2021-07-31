@@ -4,46 +4,44 @@ import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accountholdername extends StObject {
   
   /**
     * The name of the person or business that owns the bank account. This
     * field is required when attaching the bank account to a customer object.
     */
-  var account_holder_name: js.UndefOr[String] = js.native
+  var account_holder_name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of entity that holds the account. This can be either
     * "individual" or "company". This field is required when attaching the
     * bank account to a customer object.
     */
-  var account_holder_type: js.UndefOr[individual | company | Null] = js.native
+  var account_holder_type: js.UndefOr[individual | company | Null] = js.undefined
   
   /**
     * The account number for the bank account in string form. Must be a
     * checking account.
     */
-  var account_number: String = js.native
+  var account_number: String
   
   /**
     * The country the bank account is in.
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * The currency the bank account is in. This must be a country/currency
     * pairing that Stripe supports.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * The type of external account. Should be "bank_account".
     */
-  var `object`: String = js.native
+  var `object`: String
   
   /**
     * The routing number, sort code, or other country-appropriate institution
@@ -52,7 +50,7 @@ trait Accountholdername extends StObject {
     * you are providing an IBAN for account_number, this field is not
     * required.
     */
-  var routing_number: js.UndefOr[String] = js.native
+  var routing_number: js.UndefOr[String] = js.undefined
 }
 object Accountholdername {
   

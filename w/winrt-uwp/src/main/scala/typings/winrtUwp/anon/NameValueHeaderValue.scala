@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameValueHeaderValue extends StObject {
   
-  /** The HttpNameValueHeaderValue version of the string. */ var nameValueHeaderValue: HttpNameValueHeaderValue = js.native
+  /** The HttpNameValueHeaderValue version of the string. */ var nameValueHeaderValue: HttpNameValueHeaderValue
   
-  /** true if input is valid HttpNameValueHeaderValue information; otherwise, false. */ var returnValue: Boolean = js.native
+  /** true if input is valid HttpNameValueHeaderValue information; otherwise, false. */ var returnValue: Boolean
 }
 object NameValueHeaderValue {
   

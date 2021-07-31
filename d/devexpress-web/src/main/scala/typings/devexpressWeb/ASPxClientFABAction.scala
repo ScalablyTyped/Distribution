@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the floating action button's action object.
   */
-@js.native
-trait ASPxClientFABAction extends ASPxClientFABActionItemBase {
+trait ASPxClientFABAction
+  extends StObject
+     with ASPxClientFABActionItemBase {
   
   /**
     * Gets the FAB action item. Specifies the FAB action item.
     * @param index Specifies the item's index in the collection.
     */
-  def GetActionItem(index: Double): ASPxClientFABActionItem = js.native
+  def GetActionItem(index: Double): ASPxClientFABActionItem
   
   /**
     * Returns an action item with the specified name. An ASPxClientFABActionItem that is the action item with the specified name.
     * @param name A string value specifying the action item name.
     */
-  def GetActionItemByName(name: String): ASPxClientFABActionItem = js.native
+  def GetActionItemByName(name: String): ASPxClientFABActionItem
   
   /**
     * Returns the number of items in the action/action group.
     */
-  def GetActionItemCount(): Double = js.native
+  def GetActionItemCount(): Double
   
   /**
     * Gets the FAB action's context name.
     */
-  def GetContextName(): String = js.native
+  def GetContextName(): String
 }
 object ASPxClientFABAction {
   

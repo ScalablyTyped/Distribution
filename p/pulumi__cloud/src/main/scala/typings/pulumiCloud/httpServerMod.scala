@@ -8,15 +8,13 @@ import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpServerMod {
   
-  @js.native
   trait HttpServer extends StObject {
     
-    val url: Output_[String] = js.native
+    val url: Output_[String]
   }
   object HttpServer {
     
@@ -35,7 +33,9 @@ object httpServerMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud/httpServer", "HttpServer")
   @js.native
-  class HttpServerCls protected () extends HttpServer {
+  class HttpServerCls protected ()
+    extends StObject
+       with HttpServer {
     /**
       * @param createRequestListener Function that, when called, will produce the [[requestListener]]
       * function that will be called for each http request to the server.  The function will be
@@ -45,11 +45,15 @@ object httpServerMod {
       */
     def this(name: String, createRequestListener: RequestListenerFactory) = this()
     def this(name: String, createRequestListener: RequestListenerFactory, opts: ResourceOptions) = this()
+    
+    /* CompleteClass */
+    override val url: Output_[String] = js.native
   }
   
   @js.native
   trait HttpServerConstructor
-    extends /**
+    extends StObject
+       with /**
     * @param createRequestListener Function that, when called, will produce the [[requestListener]]
     * function that will be called for each http request to the server.  The function will be
     * called once when the module is loaded.  As such, it is a suitable place for expensive

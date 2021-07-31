@@ -9,14 +9,12 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressMod {
   
-  @JSImport("express", JSImport.Namespace)
-  @js.native
-  def apply(): typings.easyXHeaders.expressMod.Express = js.native
+  @scala.inline
+  def apply(): typings.easyXHeaders.expressMod.Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.easyXHeaders.expressMod.Express]
   
   @JSImport("express", JSImport.Namespace)
   @js.native
@@ -24,12 +22,15 @@ object expressMod {
   
   @js.native
   trait Router extends IRouter[Router]
-  @JSImport("express", "Router")
-  @js.native
-  def Router(): Router = js.native
-  @JSImport("express", "Router")
-  @js.native
-  def Router(options: js.Any): Router = js.native
+  object Router {
+    
+    @JSImport("express", "Router")
+    @js.native
+    def apply(): Router = js.native
+    @JSImport("express", "Router")
+    @js.native
+    def apply(options: js.Any): Router = js.native
+  }
   
   @JSImport("express", "static")
   @js.native
@@ -43,7 +44,7 @@ object expressMod {
        with typings.easyXHeaders.Express.Application {
     
     /* InferMemberOverrides */
-    override def apply(T0: /* req */ Request, T1: /* res */ Response, T2: /* next */ js.Function): js.Any = js.native
+    override def apply(arg1: /* req */ Request, arg2: /* res */ Response, arg3: /* next */ js.Function): js.Any = js.native
     
     def configure(env0: String, env1: String, env2: String, env3: String, env4: String, fn: js.Function): Application = js.native
     def configure(env0: String, env1: String, env2: String, env3: String, fn: js.Function): Application = js.native
@@ -241,13 +242,9 @@ object expressMod {
       */
     def render(name: String): Unit = js.native
     def render(name: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
-    def render(
-      name: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* html */ String, Unit]
-    ): Unit = js.native
     def render(name: String, options: js.Object): Unit = js.native
     def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(name: String, options: Unit, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
     
     var resource: js.Any = js.native
     
@@ -283,22 +280,21 @@ object expressMod {
     var settings: js.Any = js.native
   }
   
-  @js.native
   trait CookieOptions extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOptions {
     
@@ -390,26 +386,25 @@ object expressMod {
   
   type Handler = RequestHandler
   
-  @js.native
   trait IRoute extends StObject {
     
-    def all(handler: RequestHandler*): IRoute = js.native
+    def all(handler: RequestHandler*): IRoute
     
-    def delete(handler: RequestHandler*): IRoute = js.native
+    def delete(handler: RequestHandler*): IRoute
     
-    def get(handler: RequestHandler*): IRoute = js.native
+    def get(handler: RequestHandler*): IRoute
     
-    def options(handler: RequestHandler*): IRoute = js.native
+    def options(handler: RequestHandler*): IRoute
     
-    def patch(handler: RequestHandler*): IRoute = js.native
+    def patch(handler: RequestHandler*): IRoute
     
-    var path: String = js.native
+    var path: String
     
-    def post(handler: RequestHandler*): IRoute = js.native
+    def post(handler: RequestHandler*): IRoute
     
-    def put(handler: RequestHandler*): IRoute = js.native
+    def put(handler: RequestHandler*): IRoute
     
-    var stack: js.Any = js.native
+    var stack: js.Any
   }
   object IRoute {
     
@@ -537,7 +532,7 @@ object expressMod {
       * @param fn
       */
     def param(name: String, handler: RequestParamHandler): T = js.native
-    def param(name: String, mapper: js.Function1[/* param */ js.Any, _]): T = js.native
+    def param(name: String, mapper: js.Function1[/* param */ js.Any, js.Any]): T = js.native
     def param(name: String, matcher: RegExp): T = js.native
     
     def patch(name: String, handlers: RequestHandler*): T = js.native
@@ -570,16 +565,15 @@ object expressMod {
     def apply(name: RegExp, handlers: RequestHandler*): T = js.native
   }
   
-  @js.native
   trait MediaType extends StObject {
     
-    var quality: Double = js.native
+    var quality: Double
     
-    var subtype: String = js.native
+    var subtype: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object MediaType {
     
@@ -627,7 +621,7 @@ object expressMod {
       *     Accept-Charset: iso-8859-5;q=.2, unicode-1-1;q=0.8
       *     ['unicode-1-1', 'iso-8859-5']
       */
-    var acceptedCharsets: js.Array[_] = js.native
+    var acceptedCharsets: js.Array[js.Any] = js.native
     
     /**
       * Return an array of Accepted languages
@@ -638,7 +632,7 @@ object expressMod {
       *     Accept-Language: en;q=.5, en-us
       *     ['en-us', 'en']
       */
-    var acceptedLanguages: js.Array[_] = js.native
+    var acceptedLanguages: js.Array[js.Any] = js.native
     
     /**
       * Check if the given `type(s)` is acceptable, returning
@@ -852,7 +846,7 @@ object expressMod {
       *
       * @param size
       */
-    def range(size: Double): js.Array[_] = js.native
+    def range(size: Double): js.Array[js.Any] = js.native
     
     var route: js.Any = js.native
     
@@ -1199,13 +1193,9 @@ object expressMod {
       */
     def render(view: String): Unit = js.native
     def render(view: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
-    def render(
-      view: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* html */ String, Unit]
-    ): Unit = js.native
     def render(view: String, options: js.Object): Unit = js.native
     def render(view: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(view: String, options: Unit, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
     
     /**
       * Send a response.

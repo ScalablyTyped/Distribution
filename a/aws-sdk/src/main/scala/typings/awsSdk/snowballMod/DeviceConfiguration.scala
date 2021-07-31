@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceConfiguration extends StObject {
   
   /**
     * Returns information about the device configuration for an AWS Snowcone job.
     */
-  var SnowconeDeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.SnowconeDeviceConfiguration] = js.native
+  var SnowconeDeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.SnowconeDeviceConfiguration] = js.undefined
 }
 object DeviceConfiguration {
   

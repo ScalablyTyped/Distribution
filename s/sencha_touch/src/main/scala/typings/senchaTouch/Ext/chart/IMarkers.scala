@@ -3,16 +3,16 @@ package typings.senchaTouch.Ext.chart
 import typings.senchaTouch.Ext.draw.sprite.IInstancing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMarkers extends IInstancing {
+trait IMarkers
+  extends StObject
+     with IInstancing {
   
   /** [Method] Clear the markers in the category
     * @param category String
     */
-  var clear: js.UndefOr[js.Function1[/* category */ js.UndefOr[String], Unit]] = js.native
+  var clear: js.UndefOr[js.Function1[/* category */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method]
     * @param category String
@@ -26,7 +26,7 @@ trait IMarkers extends IInstancing {
       /* isWithoutTransform */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Put a marker in the category with additional attributes
     * @param category String
@@ -44,7 +44,7 @@ trait IMarkers extends IInstancing {
       /* keepRevision */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Render method
     * @param surface Object
@@ -58,9 +58,9 @@ trait IMarkers extends IInstancing {
       /* surface */ js.UndefOr[js.Any], 
       /* ctx */ js.UndefOr[js.Any], 
       /* clipRegion */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IMarkers {
   
@@ -97,7 +97,7 @@ object IMarkers {
     
     @scala.inline
     def setRender(
-      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
+      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline

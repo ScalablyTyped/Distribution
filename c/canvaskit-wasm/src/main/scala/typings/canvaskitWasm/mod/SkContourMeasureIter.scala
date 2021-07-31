@@ -2,11 +2,11 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkContourMeasureIter extends EmbindObject[SkContourMeasureIter] {
+trait SkContourMeasureIter
+  extends StObject
+     with EmbindObject[SkContourMeasureIter] {
   
   /**
     *  Iterates through contours in path, returning a contour-measure object for each contour
@@ -14,7 +14,7 @@ trait SkContourMeasureIter extends EmbindObject[SkContourMeasureIter] {
     *
     *  See SkContourMeasure.h for more details.
     */
-  def next(): SkContourMeasure | Null = js.native
+  def next(): SkContourMeasure | Null
 }
 object SkContourMeasureIter {
   

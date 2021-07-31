@@ -3,32 +3,30 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/TablePagination.TablePaginationClassKey>> */
-@js.native
 trait PartialStyleRulesTablePag extends StObject {
   
-  var actions: js.UndefOr[CSSProperties] = js.native
+  var actions: js.UndefOr[CSSProperties] = js.undefined
   
-  var caption: js.UndefOr[CSSProperties] = js.native
+  var caption: js.UndefOr[CSSProperties] = js.undefined
   
-  var input: js.UndefOr[CSSProperties] = js.native
+  var input: js.UndefOr[CSSProperties] = js.undefined
   
-  var menuItem: js.UndefOr[CSSProperties] = js.native
+  var menuItem: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var select: js.UndefOr[CSSProperties] = js.native
+  var select: js.UndefOr[CSSProperties] = js.undefined
   
-  var selectIcon: js.UndefOr[CSSProperties] = js.native
+  var selectIcon: js.UndefOr[CSSProperties] = js.undefined
   
-  var selectRoot: js.UndefOr[CSSProperties] = js.native
+  var selectRoot: js.UndefOr[CSSProperties] = js.undefined
   
-  var spacer: js.UndefOr[CSSProperties] = js.native
+  var spacer: js.UndefOr[CSSProperties] = js.undefined
   
-  var toolbar: js.UndefOr[CSSProperties] = js.native
+  var toolbar: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesTablePag {
   

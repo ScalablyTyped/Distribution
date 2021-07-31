@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sharing {
@@ -14,31 +13,39 @@ object Sharing {
   object Role extends StObject {
     
     @js.native
-    sealed trait edit extends Role
+    sealed trait edit
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait none extends Role
+    sealed trait none
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait owner extends Role
+    sealed trait owner
+      extends StObject
+         with Role
     
     @js.native
-    sealed trait view extends Role
+    sealed trait view
+      extends StObject
+         with Role
   }
   
-  @js.native
   trait DocumentSharingManager extends StObject
   
-  @js.native
-  trait UserRoleAssignment extends ClientValueObject {
+  trait UserRoleAssignment
+    extends StObject
+       with ClientValueObject {
     
-    def get_role(): Role = js.native
+    def get_role(): Role
     
-    def get_userId(): String = js.native
+    def get_userId(): String
     
-    def set_role(value: Role): Unit = js.native
+    def set_role(value: Role): Unit
     
-    def set_userId(value: String): Unit = js.native
+    def set_userId(value: String): Unit
   }
   object UserRoleAssignment {
     
@@ -75,20 +82,21 @@ object Sharing {
     }
   }
   
-  @js.native
-  trait UserSharingResult extends ClientValueObject {
+  trait UserSharingResult
+    extends StObject
+       with ClientValueObject {
     
-    def get_allowedRoles(): js.Array[Role] = js.native
+    def get_allowedRoles(): js.Array[Role]
     
-    def get_currentRole(): Role = js.native
+    def get_currentRole(): Role
     
-    def get_isUserKnown(): Boolean = js.native
+    def get_isUserKnown(): Boolean
     
-    def get_message(): String = js.native
+    def get_message(): String
     
-    def get_status(): Boolean = js.native
+    def get_status(): Boolean
     
-    def get_user(): String = js.native
+    def get_user(): String
   }
   object UserSharingResult {
     

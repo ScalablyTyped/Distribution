@@ -2,31 +2,29 @@ package typings.reactPlayer.lazyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var dailymotion: js.UndefOr[DailyMotionConfig] = js.native
+  var dailymotion: js.UndefOr[DailyMotionConfig] = js.undefined
   
-  var facebook: js.UndefOr[FacebookConfig] = js.native
+  var facebook: js.UndefOr[FacebookConfig] = js.undefined
   
-  var file: js.UndefOr[FileConfig] = js.native
+  var file: js.UndefOr[FileConfig] = js.undefined
   
-  var mixcloud: js.UndefOr[MixcloudConfig] = js.native
+  var mixcloud: js.UndefOr[MixcloudConfig] = js.undefined
   
-  var soundcloud: js.UndefOr[SoundCloudConfig] = js.native
+  var soundcloud: js.UndefOr[SoundCloudConfig] = js.undefined
   
-  var twitch: js.UndefOr[TwitchConfig] = js.native
+  var twitch: js.UndefOr[TwitchConfig] = js.undefined
   
-  var vidyard: js.UndefOr[VidyardConfig] = js.native
+  var vidyard: js.UndefOr[VidyardConfig] = js.undefined
   
-  var vimeo: js.UndefOr[VimeoConfig] = js.native
+  var vimeo: js.UndefOr[VimeoConfig] = js.undefined
   
-  var wistia: js.UndefOr[WistiaConfig] = js.native
+  var wistia: js.UndefOr[WistiaConfig] = js.undefined
   
-  var youtube: js.UndefOr[YouTubeConfig] = js.native
+  var youtube: js.UndefOr[YouTubeConfig] = js.undefined
 }
 object Config {
   

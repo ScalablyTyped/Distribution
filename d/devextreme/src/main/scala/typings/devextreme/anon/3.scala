@@ -3,13 +3,11 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxFileManagerDetailsColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var columns: js.UndefOr[js.Array[dxFileManagerDetailsColumn | String]] = js.native
+  var columns: js.UndefOr[js.Array[dxFileManagerDetailsColumn | String]] = js.undefined
 }
 object `3` {
   

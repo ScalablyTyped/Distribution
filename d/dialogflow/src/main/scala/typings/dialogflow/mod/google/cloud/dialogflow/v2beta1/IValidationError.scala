@@ -3,23 +3,21 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ValidationError. */
-@js.native
 trait IValidationError extends StObject {
   
   /** ValidationError entries */
-  var entries: js.UndefOr[js.Array[String] | Null] = js.native
+  var entries: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ValidationError errorMessage */
-  var errorMessage: js.UndefOr[String | Null] = js.native
+  var errorMessage: js.UndefOr[String | Null] = js.undefined
   
   /** ValidationError severity */
   var severity: js.UndefOr[
     Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IValidationError {
   

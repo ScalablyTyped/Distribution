@@ -185,15 +185,14 @@ import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent styled-components.styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
-trait StyledComponentBase[C /* <: String | ComponentType[_] */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ String */] extends StObject {
+trait StyledComponentBase[C /* <: String | ComponentType[js.Any] */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ String */] extends StObject {
   
   // add our own fake call signature to implement the polymorphic 'as' prop
-  def apply(props: (StyledComponentProps[C, T, O, A]) with ForwardedAs): ReactElement = js.native
+  def apply(props: (StyledComponentProps[C, T, O, A]) & ForwardedAs): ReactElement = js.native
   
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
@@ -207,11 +206,11 @@ trait StyledComponentBase[C /* <: String | ComponentType[_] */, T /* <: js.Objec
   def withComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[
     StyledComponentInnerComponent[WithC], 
     T, 
-    O with StyledComponentInnerOtherProps[WithC], 
+    O & StyledComponentInnerOtherProps[WithC], 
     A | StyledComponentInnerAttrs[WithC]
   ] = js.native
   @JSName("withComponent")
-  def withComponent_WithC_UnionComponentClassWildcardComponentStateFunctionComponentWildcard[WithC /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
+  def withComponent_WithC_UnionComponentClassAnyComponentStateFunctionComponentAny[WithC /* <: (ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_a(component: a): StyledComponent[a, T, O, A] = js.native
   @JSName("withComponent")

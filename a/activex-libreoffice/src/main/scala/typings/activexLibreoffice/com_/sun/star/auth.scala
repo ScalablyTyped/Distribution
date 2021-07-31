@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auth {
@@ -88,8 +87,9 @@ object auth {
     * back to the initiator so that it can authenticate the acceptor.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOAcceptorContext extends XSSOContext {
+  trait XSSOAcceptorContext
+    extends StObject
+       with XSSOContext {
     
     /**
       * accepts/authenticates an SSO token sent from the context initiator side.
@@ -98,7 +98,7 @@ object auth {
       * @param Token the SSO token sent by the initiator.
       * @returns the sequence of bytes to be sent back to the initiator to allow authentication of the acceptor side, if mutual authentication is supported by the
       */
-    def accept(Token: SeqEquiv[Double]): SafeArray[Double] = js.native
+    def accept(Token: SeqEquiv[Double]): SafeArray[Double]
   }
   object XSSOAcceptorContext {
     
@@ -133,20 +133,21 @@ object auth {
     * Base SSO security context representation
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOContext extends XInterface {
+  trait XSSOContext
+    extends StObject
+       with XInterface {
     
     /**
       * retrieves the mechanism associated with the context.
       * @returns the mechanism name
       */
-    val Mechanism: String = js.native
+    val Mechanism: String
     
     /**
       * retrieves whether or not the context supports mutual authentication
       * @returns `TRUE` if mutual authentication is supported, `FALSE` otherwise.
       */
-    val Mutual: Boolean = js.native
+    val Mutual: Boolean
     
     /**
       * retrieves the principal name of the source/initiator of the context.
@@ -154,25 +155,25 @@ object auth {
       * In the case of an acceptor side security context, the source principal name is available only after the initiator has been authenticated.
       * @returns the source principal name
       */
-    val Source: String = js.native
+    val Source: String
     
     /**
       * retrieves the principal name of the target/acceptor of the context.
       * @returns the target principal name
       */
-    val Target: String = js.native
+    val Target: String
     
     /**
       * retrieves the mechanism associated with the context.
       * @returns the mechanism name
       */
-    def getMechanism(): String = js.native
+    def getMechanism(): String
     
     /**
       * retrieves whether or not the context supports mutual authentication
       * @returns `TRUE` if mutual authentication is supported, `FALSE` otherwise.
       */
-    def getMutual(): Boolean = js.native
+    def getMutual(): Boolean
     
     /**
       * retrieves the principal name of the source/initiator of the context.
@@ -180,13 +181,13 @@ object auth {
       * In the case of an acceptor side security context, the source principal name is available only after the initiator has been authenticated.
       * @returns the source principal name
       */
-    def getSource(): String = js.native
+    def getSource(): String
     
     /**
       * retrieves the principal name of the target/acceptor of the context.
       * @returns the target principal name
       */
-    def getTarget(): String = js.native
+    def getTarget(): String
   }
   object XSSOContext {
     
@@ -243,8 +244,9 @@ object auth {
     * This context may be used to initialize authentication tokens to send to an acceptor and to authenticate any token sent back in response.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOInitiatorContext extends XSSOContext {
+  trait XSSOInitiatorContext
+    extends StObject
+       with XSSOContext {
     
     /**
       * initializes an SSO Token to send to the acceptor side and authenticates an SSO Token returned by the acceptor if the context supports mutual
@@ -255,7 +257,7 @@ object auth {
       * @param Token the SSO token received from the acceptor side in response to an authentication request. This token is ignored on the first call to init and
       * @returns the sequence of bytes to be sent to the acceptor side as part of an authentication request. This sequence will be non zero length for the first c
       */
-    def init(Token: SeqEquiv[Double]): SafeArray[Double] = js.native
+    def init(Token: SeqEquiv[Double]): SafeArray[Double]
   }
   object XSSOInitiatorContext {
     
@@ -290,21 +292,22 @@ object auth {
     * supports the creation of security contexts for both the initiator/source side and the acceptor/target side.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOManager extends XInterface {
+  trait XSSOManager
+    extends StObject
+       with XInterface {
     
     /**
       * retrieves the mechanism name of all security contexts created using this manager.
       * @returns the mechanism name ( e.g. "KERBEROS" )
       */
-    val Mechanism: String = js.native
+    val Mechanism: String
     
     /**
       * creates an acceptor side security context.
       * @param TargetPrincipal the name of the acceptor side principal.
       * @returns the newly created acceptor side context.
       */
-    def createAcceptorContext(TargetPrincipal: String): XSSOAcceptorContext = js.native
+    def createAcceptorContext(TargetPrincipal: String): XSSOAcceptorContext
     
     /**
       * creates an initiator side security context.
@@ -313,13 +316,13 @@ object auth {
       * @param TargetHost the host name associated with the target principal.
       * @returns the newly created initiator context.
       */
-    def createInitiatorContext(SourcePrincipal: String, TargetPrincipal: String, TargetHost: String): XSSOInitiatorContext = js.native
+    def createInitiatorContext(SourcePrincipal: String, TargetPrincipal: String, TargetHost: String): XSSOInitiatorContext
     
     /**
       * retrieves the mechanism name of all security contexts created using this manager.
       * @returns the mechanism name ( e.g. "KERBEROS" )
       */
-    def getMechanism(): String = js.native
+    def getMechanism(): String
   }
   object XSSOManager {
     
@@ -358,20 +361,21 @@ object auth {
     * Factory for creating an SSO Manager supporting the user's configured security mechanism
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOManagerFactory extends XInterface {
+  trait XSSOManagerFactory
+    extends StObject
+       with XInterface {
     
     /**
       * provides a {@link XSSOManager} to be used in subsequent security context creation.
       * @returns the relevant {@link XSSOManager} instance
       */
-    val SSOManager: XSSOManager = js.native
+    val SSOManager: XSSOManager
     
     /**
       * provides a {@link XSSOManager} to be used in subsequent security context creation.
       * @returns the relevant {@link XSSOManager} instance
       */
-    def getSSOManager(): XSSOManager = js.native
+    def getSSOManager(): XSSOManager
   }
   object XSSOManagerFactory {
     
@@ -403,8 +407,9 @@ object auth {
     * method to cache these passwords.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait XSSOPasswordCache extends XInterface {
+  trait XSSOPasswordCache
+    extends StObject
+       with XInterface {
     
     /**
       * adds a username/password combination to the cache.
@@ -414,7 +419,7 @@ object auth {
       * @param Password the associated password
       * @param Persist indicates whether or not the username/password combination should be persisted
       */
-    def addPassword(UserName: String, Password: String, Persist: Boolean): Unit = js.native
+    def addPassword(UserName: String, Password: String, Persist: Boolean): Unit
     
     /**
       * retrieves a password for a given user from the cache.
@@ -424,14 +429,14 @@ object auth {
       * @param Persist indicates whether or not the password is persistent
       * @returns the required password
       */
-    def getPassword(UserName: String, Persist: js.Array[Boolean]): String = js.native
+    def getPassword(UserName: String, Persist: js.Array[Boolean]): String
     
     /**
       * removes a password from the cache
       * @param UserName the name of the user whose password should be removed.
       * @param RemovePersist indicates whether or not the password should also be removed, if present, from persistent cache.
       */
-    def removePassword(UserName: String, RemovePersist: Boolean): Unit = js.native
+    def removePassword(UserName: String, RemovePersist: Boolean): Unit
   }
   object XSSOPasswordCache {
     

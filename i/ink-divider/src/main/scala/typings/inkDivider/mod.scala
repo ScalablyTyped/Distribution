@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,22 +12,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : FC[DividerProps] = js.native
   
-  @js.native
   trait DividerProps extends StObject {
     
-    var dividerChar: js.UndefOr[String] = js.native
+    var dividerChar: js.UndefOr[String] = js.undefined
     
-    var dividerColor: js.UndefOr[String] = js.native
+    var dividerColor: js.UndefOr[String] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
-    var titlePadding: js.UndefOr[Double] = js.native
+    var titlePadding: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object DividerProps {
     

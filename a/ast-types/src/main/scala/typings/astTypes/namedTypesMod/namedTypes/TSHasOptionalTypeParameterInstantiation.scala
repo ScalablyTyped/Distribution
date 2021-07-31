@@ -4,13 +4,11 @@ import typings.astTypes.kindsMod.TSTypeParameterInstantiationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSHasOptionalTypeParameterInstantiation extends StObject {
   
-  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.undefined
 }
 object TSHasOptionalTypeParameterInstantiation {
   

@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ExpirationPolicy. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ExpirationPolicy.
   * @param [properties] Properties to set
   */
-class ExpirationPolicy () extends IExpirationPolicy {
+class ExpirationPolicy ()
+  extends StObject
+     with IExpirationPolicy {
   def this(properties: IExpirationPolicy) = this()
   
   /**
@@ -28,18 +29,20 @@ class ExpirationPolicy () extends IExpirationPolicy {
 }
 object ExpirationPolicy {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ExpirationPolicy instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ExpirationPolicy instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.create")
-  @js.native
-  def create(): ExpirationPolicy = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.create")
-  @js.native
-  def create(properties: IExpirationPolicy): ExpirationPolicy = js.native
+  @scala.inline
+  def create(): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExpirationPolicy]
+  @scala.inline
+  def create(properties: IExpirationPolicy): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer.
@@ -50,18 +53,14 @@ object ExpirationPolicy {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decode")
-  @js.native
-  def decode(reader: Reader): ExpirationPolicy = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ExpirationPolicy = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decode")
-  @js.native
-  def decode(reader: Uint8Array): ExpirationPolicy = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ExpirationPolicy = js.native
+  @scala.inline
+  def decode(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
+  @scala.inline
+  def decode(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
   
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer, length delimited.
@@ -71,12 +70,10 @@ object ExpirationPolicy {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ExpirationPolicy = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ExpirationPolicy = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Encodes the specified ExpirationPolicy message. Does not implicitly {@link google.pubsub.v1.ExpirationPolicy.verify|verify} messages.
@@ -85,12 +82,10 @@ object ExpirationPolicy {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.encode")
-  @js.native
-  def encode(message: IExpirationPolicy): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.encode")
-  @js.native
-  def encode(message: IExpirationPolicy, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ExpirationPolicy message, length delimited. Does not implicitly {@link google.pubsub.v1.ExpirationPolicy.verify|verify} messages.
@@ -99,12 +94,10 @@ object ExpirationPolicy {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExpirationPolicy): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExpirationPolicy, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an ExpirationPolicy message from a plain object. Also converts values to their respective internal types.
@@ -112,9 +105,8 @@ object ExpirationPolicy {
     * @returns ExpirationPolicy
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ExpirationPolicy = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Creates a plain object from an ExpirationPolicy message. Also converts values to other types if specified.
@@ -123,12 +115,10 @@ object ExpirationPolicy {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.toObject")
-  @js.native
-  def toObject(message: ExpirationPolicy): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.toObject")
-  @js.native
-  def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ExpirationPolicy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an ExpirationPolicy message.
@@ -136,7 +126,6 @@ object ExpirationPolicy {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ExpirationPolicy.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

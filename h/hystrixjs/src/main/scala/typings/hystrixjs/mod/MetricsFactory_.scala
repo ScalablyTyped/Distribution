@@ -2,17 +2,15 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsFactory_ extends StObject {
   
-  def getAllMetrics(): js.Array[CommandMetrics] = js.native
+  def getAllMetrics(): js.Array[CommandMetrics]
   
-  def getOrCreate(config: MetricsProperties): CommandMetrics = js.native
+  def getOrCreate(config: MetricsProperties): CommandMetrics
   
-  def resetCache(): Unit = js.native
+  def resetCache(): Unit
 }
 object MetricsFactory_ {
   

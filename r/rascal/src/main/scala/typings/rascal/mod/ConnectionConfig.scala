@@ -2,15 +2,15 @@ package typings.rascal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionConfig extends ConnectionAttributes {
+trait ConnectionConfig
+  extends StObject
+     with ConnectionAttributes {
   
-  var management: js.UndefOr[ConnectionAttributes] = js.native
+  var management: js.UndefOr[ConnectionAttributes] = js.undefined
   
-  var retry: js.UndefOr[RetryConfig] = js.native
+  var retry: js.UndefOr[RetryConfig] = js.undefined
 }
 object ConnectionConfig {
   

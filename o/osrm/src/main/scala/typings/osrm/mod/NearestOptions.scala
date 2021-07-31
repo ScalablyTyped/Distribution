@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#nearest
   */
-@js.native
-trait NearestOptions extends Options {
+trait NearestOptions
+  extends StObject
+     with Options {
   
   /**
     * Number of nearest segments that should be returned. Must be an integer greater than or equal to 1. (optional, default 1)
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
 }
 object NearestOptions {
   

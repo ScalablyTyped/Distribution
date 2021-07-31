@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocateProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -15,56 +14,56 @@ trait LocateProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#geolocationOptions)
     */
-  var geolocationOptions: js.UndefOr[js.Any] = js.native
+  var geolocationOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates whether the widget should navigate the view to the position and scale of the geolocated result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#goToLocationEnabled)
     */
-  var goToLocationEnabled: js.UndefOr[Boolean] = js.native
+  var goToLocationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The graphic used to show the user's location on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#graphic)
     */
-  var graphic: js.UndefOr[GraphicProperties] = js.native
+  var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the scale to set on the view when navigating to the position of the geolocated result once a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#event-track) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#scale)
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the widget will automatically [rotate to user's direction](https://www.w3.org/TR/geolocation-API/#coordinates_interface).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#useHeadingEnabled)
     */
-  var useHeadingEnabled: js.UndefOr[Boolean] = js.native
+  var useHeadingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#viewModel)
     */
-  var viewModel: js.UndefOr[LocateViewModelProperties] = js.native
+  var viewModel: js.UndefOr[LocateViewModelProperties] = js.undefined
 }
 object LocateProperties {
   

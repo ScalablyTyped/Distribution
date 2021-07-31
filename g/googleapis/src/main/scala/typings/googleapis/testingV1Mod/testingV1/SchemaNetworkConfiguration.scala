@@ -2,26 +2,24 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworkConfiguration extends StObject {
   
   /**
     * The emulation rule applying to the download traffic.
     */
-  var downRule: js.UndefOr[SchemaTrafficRule] = js.native
+  var downRule: js.UndefOr[SchemaTrafficRule] = js.undefined
   
   /**
     * The unique opaque id for this network traffic configuration.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The emulation rule applying to the upload traffic.
     */
-  var upRule: js.UndefOr[SchemaTrafficRule] = js.native
+  var upRule: js.UndefOr[SchemaTrafficRule] = js.undefined
 }
 object SchemaNetworkConfiguration {
   

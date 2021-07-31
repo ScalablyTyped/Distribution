@@ -3,33 +3,31 @@ package typings.reactNativeNavigation
 import typings.reactNativeNavigation.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
   
-  @js.native
   trait ExternalComponent extends StObject {
     
     /**
       * Set the screen's id so Navigation.mergeOptions can be used to update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Name of your component
       */
-    var name: String | Double = js.native
+    var name: String | Double
     
     /**
       * Configure component options
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
     /**
       * Properties to pass down to the component
       */
-    var passProps: js.UndefOr[js.Object] = js.native
+    var passProps: js.UndefOr[js.Object] = js.undefined
   }
   object ExternalComponent {
     
@@ -65,43 +63,42 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait Layout[P] extends StObject {
     
     /**
       * Set the bottom tabs
       */
-    var bottomTabs: js.UndefOr[LayoutBottomTabs] = js.native
+    var bottomTabs: js.UndefOr[LayoutBottomTabs] = js.undefined
     
     /**
       * Set the component
       */
-    var component: js.UndefOr[LayoutComponent[P]] = js.native
+    var component: js.UndefOr[LayoutComponent[P]] = js.undefined
     
     /**
       * Set the external component
       */
-    var externalComponent: js.UndefOr[ExternalComponent] = js.native
+    var externalComponent: js.UndefOr[ExternalComponent] = js.undefined
     
     /**
       * Set the side menu
       */
-    var sideMenu: js.UndefOr[LayoutSideMenu] = js.native
+    var sideMenu: js.UndefOr[LayoutSideMenu] = js.undefined
     
     /**
       * Set the split view
       */
-    var splitView: js.UndefOr[LayoutSplitView] = js.native
+    var splitView: js.UndefOr[LayoutSplitView] = js.undefined
     
     /**
       * Set the stack
       */
-    var stack: js.UndefOr[LayoutStack] = js.native
+    var stack: js.UndefOr[LayoutStack] = js.undefined
     
     /**
       * Set the top tabs
       */
-    var topTabs: js.UndefOr[LayoutTopTabs] = js.native
+    var topTabs: js.UndefOr[LayoutTopTabs] = js.undefined
   }
   object Layout {
     
@@ -112,7 +109,7 @@ object layoutMod {
     }
     
     @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout[_], P] (val x: Self with Layout[P]) extends AnyVal {
+    implicit class LayoutMutableBuilder[Self <: Layout[?], P] (val x: Self & Layout[P]) extends AnyVal {
       
       @scala.inline
       def setBottomTabs(value: LayoutBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
@@ -158,24 +155,23 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutBottomTabs extends StObject {
     
     /**
       * Set the children screens
       */
-    var children: js.UndefOr[js.Array[LayoutTabsChildren]] = js.native
+    var children: js.UndefOr[js.Array[LayoutTabsChildren]] = js.undefined
     
     /**
       * Set ID of the stack so you can use Navigation.mergeOptions to
       * update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Set the bottom tabs options
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
   }
   object LayoutBottomTabs {
     
@@ -211,28 +207,27 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutComponent[P] extends StObject {
     
     /**
       * Component reference id, Auto generated if empty
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Name of your component
       */
-    var name: String | Double = js.native
+    var name: String | Double
     
     /**
       * Styling options
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
     /**
       * Properties to pass down to the component
       */
-    var passProps: js.UndefOr[P] = js.native
+    var passProps: js.UndefOr[P] = js.undefined
   }
   object LayoutComponent {
     
@@ -243,7 +238,7 @@ object layoutMod {
     }
     
     @scala.inline
-    implicit class LayoutComponentMutableBuilder[Self <: LayoutComponent[_], P] (val x: Self with LayoutComponent[P]) extends AnyVal {
+    implicit class LayoutComponentMutableBuilder[Self <: LayoutComponent[?], P] (val x: Self & LayoutComponent[P]) extends AnyVal {
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -268,17 +263,16 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutRoot extends StObject {
     
-    var modals: js.UndefOr[js.Any] = js.native
+    var modals: js.UndefOr[js.Any] = js.undefined
     
-    var overlays: js.UndefOr[js.Any] = js.native
+    var overlays: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set the root
       */
-    var root: Layout[js.Object] = js.native
+    var root: Layout[js.Object]
   }
   object LayoutRoot {
     
@@ -308,34 +302,33 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutSideMenu extends StObject {
     
     /**
       * Set the center view
       */
-    var center: Layout[js.Object] = js.native
+    var center: Layout[js.Object]
     
     /**
       * Set ID of the stack so you can use Navigation.mergeOptions to
       * update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Set the left side bar
       */
-    var left: js.UndefOr[LayoutStackChildren] = js.native
+    var left: js.UndefOr[LayoutStackChildren] = js.undefined
     
     /**
       * Set the bottom tabs options
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
     /**
       * Set the right side bar
       */
-    var right: js.UndefOr[LayoutStackChildren] = js.native
+    var right: js.UndefOr[LayoutStackChildren] = js.undefined
   }
   object LayoutSideMenu {
     
@@ -377,29 +370,28 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutSplitView extends StObject {
     
     /**
       * Set detail layout (the larger screen, flexes)
       */
-    var detail: js.UndefOr[Layout[js.Object]] = js.native
+    var detail: js.UndefOr[Layout[js.Object]] = js.undefined
     
     /**
       * Set ID of the stack so you can use Navigation.mergeOptions to
       * update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Set master layout (the smaller screen, sidebar)
       */
-    var master: js.UndefOr[Layout[js.Object]] = js.native
+    var master: js.UndefOr[Layout[js.Object]] = js.undefined
     
     /**
       * Configure split view
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
   }
   object LayoutSplitView {
     
@@ -438,24 +430,23 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutStack extends StObject {
     
     /**
       * Set children screens
       */
-    var children: js.UndefOr[js.Array[LayoutStackChildren]] = js.native
+    var children: js.UndefOr[js.Array[LayoutStackChildren]] = js.undefined
     
     /**
       * Set ID of the stack so you can use Navigation.mergeOptions to
       * update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Set options
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
   }
   object LayoutStack {
     
@@ -491,18 +482,17 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutStackChildren extends StObject {
     
     /**
       * Set component
       */
-    var component: js.UndefOr[LayoutComponent[js.Object]] = js.native
+    var component: js.UndefOr[LayoutComponent[js.Object]] = js.undefined
     
     /**
       * Set the external component
       */
-    var externalComponent: js.UndefOr[ExternalComponent] = js.native
+    var externalComponent: js.UndefOr[ExternalComponent] = js.undefined
   }
   object LayoutStackChildren {
     
@@ -529,28 +519,27 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutTabsChildren extends StObject {
     
     /**
       * Set component
       */
-    var component: js.UndefOr[LayoutComponent[js.Object]] = js.native
+    var component: js.UndefOr[LayoutComponent[js.Object]] = js.undefined
     
     /**
       * Set the external component
       */
-    var externalComponent: js.UndefOr[ExternalComponent] = js.native
+    var externalComponent: js.UndefOr[ExternalComponent] = js.undefined
     
     /**
       * Set the side menu
       */
-    var sideMenu: js.UndefOr[LayoutSideMenu] = js.native
+    var sideMenu: js.UndefOr[LayoutSideMenu] = js.undefined
     
     /**
       * Set stack
       */
-    var stack: js.UndefOr[LayoutStack] = js.native
+    var stack: js.UndefOr[LayoutStack] = js.undefined
   }
   object LayoutTabsChildren {
     
@@ -589,23 +578,22 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait LayoutTopTabs extends StObject {
     
     /**
       * Set the children screens
       */
-    var children: js.UndefOr[js.Array[LayoutTabsChildren]] = js.native
+    var children: js.UndefOr[js.Array[LayoutTabsChildren]] = js.undefined
     
     /**
       * Set the layout's id so Navigation.mergeOptions can be used to update options
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Configure top tabs
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
   }
   object LayoutTopTabs {
     

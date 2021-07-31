@@ -2,13 +2,13 @@ package typings.extjs.global.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Is")
 @js.native
 class Is ()
-  extends typings.extjs.Ext.Is
+  extends StObject
+     with typings.extjs.Ext.Is
 /* static members */
 object Is {
   

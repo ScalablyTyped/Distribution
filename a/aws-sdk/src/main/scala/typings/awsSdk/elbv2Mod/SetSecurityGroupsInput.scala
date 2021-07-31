@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetSecurityGroupsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn = js.native
+  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn
   
   /**
     * The IDs of the security groups.
     */
-  var SecurityGroups: typings.awsSdk.elbv2Mod.SecurityGroups = js.native
+  var SecurityGroups: typings.awsSdk.elbv2Mod.SecurityGroups
 }
 object SetSecurityGroupsInput {
   

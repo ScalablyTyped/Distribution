@@ -10,9 +10,9 @@ timer object/class. kickass!
 | ------------------ | :-------------: |
 | Full name          | tocktimer |
 | Keywords           | timer, clock, repetition |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 80738 |
+| # downloads        | 93475 |
 | # stars            | 0 |
 
 ## Links

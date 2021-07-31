@@ -2,27 +2,25 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Discount extends StObject {
   
-  var detail: String = js.native
+  var detail: String
   
-  var end_time: String = js.native
+  var end_time: String
   
-  var photos: js.Array[Photo] = js.native
+  var photos: js.Array[Photo]
   
-  var provider: String = js.native
+  var provider: String
   
-  var sold_num: String = js.native
+  var sold_num: String
   
-  var start_time: String = js.native
+  var start_time: String
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
 }
 object Discount {
   

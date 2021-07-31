@@ -2,17 +2,15 @@ package typings.amapJsApiMap3d.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Lights {
   
-  @js.native
   trait AmbientLight extends StObject {
     
-    def setColor(color: js.Tuple3[Double, Double, Double]): Unit = js.native
+    def setColor(color: js.Tuple3[Double, Double, Double]): Unit
     
-    def setIntensity(intensity: Double): Unit = js.native
+    def setIntensity(intensity: Double): Unit
   }
   object AmbientLight {
     
@@ -33,16 +31,15 @@ object Lights {
     }
   }
   
-  @js.native
   trait DirectionLight extends StObject {
     
-    def setColor(direction: js.Tuple3[Double, Double, Double]): Unit = js.native
+    def setColor(direction: js.Tuple3[Double, Double, Double]): Unit
     
-    def setDirection(direction: js.Tuple3[Double, Double, Double]): Unit = js.native
+    def setDirection(direction: js.Tuple3[Double, Double, Double]): Unit
     
-    def setIntensity(intensity: Double): Unit = js.native
+    def setIntensity(intensity: Double): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object DirectionLight {
     

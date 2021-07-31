@@ -2,15 +2,13 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceInsertOptions extends StObject {
   
-  var deepInsert: js.UndefOr[Boolean] = js.native
+  var deepInsert: js.UndefOr[Boolean] = js.undefined
   
-  var onConflictIgnore: js.UndefOr[Boolean] = js.native
+  var onConflictIgnore: js.UndefOr[Boolean] = js.undefined
 }
 object PersistenceInsertOptions {
   

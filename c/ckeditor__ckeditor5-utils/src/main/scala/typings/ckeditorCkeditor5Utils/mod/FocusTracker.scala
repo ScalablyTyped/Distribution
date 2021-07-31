@@ -3,12 +3,13 @@ package typings.ckeditorCkeditor5Utils.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ckeditor/ckeditor5-utils", "FocusTracker")
 @js.native
-class FocusTracker () extends Observable {
+class FocusTracker ()
+  extends StObject
+     with Observable {
   
   def add(element: HTMLElement): Unit = js.native
   

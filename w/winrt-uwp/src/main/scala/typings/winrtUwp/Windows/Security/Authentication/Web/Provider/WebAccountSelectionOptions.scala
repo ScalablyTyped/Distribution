@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object WebAccountSelectionOptions extends StObject {
   
   /** The user selected the default account. */
   @js.native
-  sealed trait default extends WebAccountSelectionOptions
+  sealed trait default
+    extends StObject
+       with WebAccountSelectionOptions
   
   /** The user selected to add a new account. */
   @js.native
-  sealed trait `new` extends WebAccountSelectionOptions
+  sealed trait `new`
+    extends StObject
+       with WebAccountSelectionOptions
 }

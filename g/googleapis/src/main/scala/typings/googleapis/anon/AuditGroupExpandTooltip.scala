@@ -2,43 +2,41 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditGroupExpandTooltip extends StObject {
   
-  var auditGroupExpandTooltip: js.UndefOr[String] = js.native
+  var auditGroupExpandTooltip: js.UndefOr[String] = js.undefined
   
-  var crcInitialNavigation: js.UndefOr[String] = js.native
+  var crcInitialNavigation: js.UndefOr[String] = js.undefined
   
-  var crcLongestDurationLabel: js.UndefOr[String] = js.native
+  var crcLongestDurationLabel: js.UndefOr[String] = js.undefined
   
-  var errorLabel: js.UndefOr[String] = js.native
+  var errorLabel: js.UndefOr[String] = js.undefined
   
-  var errorMissingAuditInfo: js.UndefOr[String] = js.native
+  var errorMissingAuditInfo: js.UndefOr[String] = js.undefined
   
-  var labDataTitle: js.UndefOr[String] = js.native
+  var labDataTitle: js.UndefOr[String] = js.undefined
   
-  var lsPerformanceCategoryDescription: js.UndefOr[String] = js.native
+  var lsPerformanceCategoryDescription: js.UndefOr[String] = js.undefined
   
-  var manualAuditsGroupTitle: js.UndefOr[String] = js.native
+  var manualAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
-  var notApplicableAuditsGroupTitle: js.UndefOr[String] = js.native
+  var notApplicableAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
-  var opportunityResourceColumnLabel: js.UndefOr[String] = js.native
+  var opportunityResourceColumnLabel: js.UndefOr[String] = js.undefined
   
-  var opportunitySavingsColumnLabel: js.UndefOr[String] = js.native
+  var opportunitySavingsColumnLabel: js.UndefOr[String] = js.undefined
   
-  var passedAuditsGroupTitle: js.UndefOr[String] = js.native
+  var passedAuditsGroupTitle: js.UndefOr[String] = js.undefined
   
-  var scorescaleLabel: js.UndefOr[String] = js.native
+  var scorescaleLabel: js.UndefOr[String] = js.undefined
   
-  var toplevelWarningsMessage: js.UndefOr[String] = js.native
+  var toplevelWarningsMessage: js.UndefOr[String] = js.undefined
   
-  var varianceDisclaimer: js.UndefOr[String] = js.native
+  var varianceDisclaimer: js.UndefOr[String] = js.undefined
   
-  var warningHeader: js.UndefOr[String] = js.native
+  var warningHeader: js.UndefOr[String] = js.undefined
 }
 object AuditGroupExpandTooltip {
   

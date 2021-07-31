@@ -3,17 +3,17 @@ package typings.wegameApi.wx.types
 import typings.wegameApi.anon.TempFilePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToTempFileParams extends ToTempFileSyncParams {
+trait ToTempFileParams
+  extends StObject
+     with ToTempFileSyncParams {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ TempFilePath, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ TempFilePath, Unit]] = js.undefined
 }
 object ToTempFileParams {
   

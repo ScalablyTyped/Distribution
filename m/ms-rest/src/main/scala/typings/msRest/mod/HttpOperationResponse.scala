@@ -2,17 +2,15 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpOperationResponse[T] extends StObject {
   
-  var body: T = js.native
+  var body: T
   
-  var request: WebResource = js.native
+  var request: WebResource
   
-  var response: typings.node.httpMod.IncomingMessage = js.native
+  var response: typings.node.httpMod.IncomingMessage
 }
 object HttpOperationResponse {
   
@@ -23,7 +21,7 @@ object HttpOperationResponse {
   }
   
   @scala.inline
-  implicit class HttpOperationResponseMutableBuilder[Self <: HttpOperationResponse[_], T] (val x: Self with HttpOperationResponse[T]) extends AnyVal {
+  implicit class HttpOperationResponseMutableBuilder[Self <: HttpOperationResponse[?], T] (val x: Self & HttpOperationResponse[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

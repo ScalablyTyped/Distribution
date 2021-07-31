@@ -2,25 +2,23 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedCollatorOptions extends StObject {
   
-  var caseFirst: String = js.native
+  var caseFirst: String
   
-  var collation: String = js.native
+  var collation: String
   
-  var ignorePunctuation: Boolean = js.native
+  var ignorePunctuation: Boolean
   
-  var locale: String = js.native
+  var locale: String
   
-  var numeric: Boolean = js.native
+  var numeric: Boolean
   
-  var sensitivity: String = js.native
+  var sensitivity: String
   
-  var usage: String = js.native
+  var usage: String
 }
 object ResolvedCollatorOptions {
   

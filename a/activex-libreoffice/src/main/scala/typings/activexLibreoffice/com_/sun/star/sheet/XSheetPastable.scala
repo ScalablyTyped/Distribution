@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a sheet into which contents of the clipboard can be pasted.
   * @deprecated Deprecated
   */
-@js.native
-trait XSheetPastable extends XInterface {
+trait XSheetPastable
+  extends StObject
+     with XInterface {
   
   /** pastes the contents of the clipboard at the specified position on the sheet. */
-  def paste(aDestination: CellAddress): Unit = js.native
+  def paste(aDestination: CellAddress): Unit
   
   /**
     * pastes clipboard data from a cell range into another cell range.
@@ -32,10 +32,10 @@ trait XSheetPastable extends XInterface {
     bTranspose: Boolean,
     bAsLink: Boolean,
     nInsert: CellInsertMode
-  ): Unit = js.native
+  ): Unit
   
   /** pastes the contents of the clipboard at the specified position on the sheet, using the specified format. */
-  def pasteFormat(aDestination: CellAddress, aFormat: String): Unit = js.native
+  def pasteFormat(aDestination: CellAddress, aFormat: String): Unit
 }
 object XSheetPastable {
   

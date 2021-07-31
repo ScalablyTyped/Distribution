@@ -17,7 +17,6 @@ import typings.cadesplugin.CAPICOM.PublicKey
 import typings.cadesplugin.CAdESCOM.CADESCOM_CONTENT_ENCODING_TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CADESCommon {
@@ -25,12 +24,12 @@ object CADESCommon {
   type Async[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends std.Function? cadesplugin.CADES_Common.PromisifiedFunction<T[K]> : // tslint:disable-line ban-types
   std.Promise<cadesplugin.CADES_Common.Unpacked<T[K]>>}
-    */ typings.cadesplugin.cadespluginStrings.Async with TopLevel[js.Any]
+    */ typings.cadesplugin.cadespluginStrings.Async & TopLevel[js.Any]
   
   type PromisifiedFunction[T /* <: js.Function */] = T | (js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-    */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any], 
+    */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any], 
     js.Promise[Unpacked[js.Any]]
   ])
   
@@ -156,7 +155,7 @@ object CADESCommon {
           Unpacked[
             js.Function3[
               /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-              /* varCriteria */ js.UndefOr[_], 
+              /* varCriteria */ js.UndefOr[js.Any], 
               /* bFindValidOnly */ js.UndefOr[Boolean], 
               Certificates
             ]
@@ -164,7 +163,7 @@ object CADESCommon {
         ]) | (PromisifiedFunction[
           js.Function3[
             /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-            /* varCriteria */ js.UndefOr[_], 
+            /* varCriteria */ js.UndefOr[js.Any], 
             /* bFindValidOnly */ js.UndefOr[Boolean], 
             Certificates
           ]

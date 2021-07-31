@@ -11,7 +11,7 @@ astar search algorithm in JavaScript
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4252 |
+| # downloads        | 7956 |
 | # stars            | 0 |
 
 ## Links

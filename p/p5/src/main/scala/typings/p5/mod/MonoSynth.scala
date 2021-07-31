@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -57,31 +56,21 @@ trait MonoSynth extends StObject {
     *   releasing the envelope
     */
   def play(note: String): Unit = js.native
-  def play(
-    note: String,
-    velocity: js.UndefOr[scala.Nothing],
-    secondsFromNow: js.UndefOr[scala.Nothing],
-    sustainTime: Double
-  ): Unit = js.native
-  def play(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
-  def play(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: String, velocity: Double): Unit = js.native
-  def play(note: String, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: String, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: String, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: String, velocity: Double, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  def play(note: String, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  def play(note: String, velocity: Unit, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: String, velocity: Unit, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
   def play(note: Double): Unit = js.native
-  def play(
-    note: Double,
-    velocity: js.UndefOr[scala.Nothing],
-    secondsFromNow: js.UndefOr[scala.Nothing],
-    sustainTime: Double
-  ): Unit = js.native
-  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
-  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double): Unit = js.native
-  def play(note: Double, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Double, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
   
   var release: Double = js.native
   
@@ -105,18 +94,13 @@ trait MonoSynth extends StObject {
     *   (defaults to 0)
     */
   def setADSR(attackTime: Double): Unit = js.native
-  def setADSR(
-    attackTime: Double,
-    decayTime: js.UndefOr[scala.Nothing],
-    susRatio: js.UndefOr[scala.Nothing],
-    releaseTime: Double
-  ): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
   
   var sustain: Double = js.native
   
@@ -135,13 +119,13 @@ trait MonoSynth extends StObject {
     *   at which to play
     */
   def triggerAttack(note: String): Unit = js.native
-  def triggerAttack(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: String, velocity: Double): Unit = js.native
   def triggerAttack(note: String, velocity: Double, secondsFromNow: Double): Unit = js.native
+  def triggerAttack(note: String, velocity: Unit, secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: Double): Unit = js.native
-  def triggerAttack(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
+  def triggerAttack(note: Double, velocity: Unit, secondsFromNow: Double): Unit = js.native
   
   /**
     *   Trigger the release of the Envelope. This is

@@ -4,7 +4,6 @@ import typings.ckeditorCkeditor5Utils.anon.Priority
 import typings.ckeditorCkeditor5Utils.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,16 +27,16 @@ trait Emitter extends StObject {
   def once(event: String, callback: js.Function, options: `0`): Unit = js.native
   
   def stopDelegating(): Unit = js.native
-  def stopDelegating(event: js.UndefOr[scala.Nothing], emitter: Emitter): Unit = js.native
   def stopDelegating(event: String): Unit = js.native
   def stopDelegating(event: String, emitter: Emitter): Unit = js.native
+  def stopDelegating(event: Unit, emitter: Emitter): Unit = js.native
   
   def stopListening(): Unit = js.native
-  def stopListening(emitter: js.UndefOr[scala.Nothing], event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String): Unit = js.native
-  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String, callback: js.Function): Unit = js.native
+  def stopListening(emitter: Unit, event: String): Unit = js.native
+  def stopListening(emitter: Unit, event: String, callback: js.Function): Unit = js.native
+  def stopListening(emitter: Unit, event: Unit, callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter): Unit = js.native
-  def stopListening(emitter: Emitter, event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter, event: String): Unit = js.native
   def stopListening(emitter: Emitter, event: String, callback: js.Function): Unit = js.native
+  def stopListening(emitter: Emitter, event: Unit, callback: js.Function): Unit = js.native
 }

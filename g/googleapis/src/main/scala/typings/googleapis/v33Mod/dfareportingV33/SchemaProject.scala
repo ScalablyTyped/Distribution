@@ -2,34 +2,32 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a Planning project.
   */
-@js.native
 trait SchemaProject extends StObject {
   
   /**
     * Account ID of this project.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser ID of this project.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Audience age group of this project.
     */
-  var audienceAgeGroup: js.UndefOr[String] = js.native
+  var audienceAgeGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Audience gender of this project.
     */
-  var audienceGender: js.UndefOr[String] = js.native
+  var audienceGender: js.UndefOr[String] = js.undefined
   
   /**
     * Budget of this project in the currency specified by the current account.
@@ -37,93 +35,93 @@ trait SchemaProject extends StObject {
     * For example, for USD, the smallest value that can be represented by this
     * field is 1 US dollar.
     */
-  var budget: js.UndefOr[String] = js.native
+  var budget: js.UndefOr[String] = js.undefined
   
   /**
     * Client billing code of this project.
     */
-  var clientBillingCode: js.UndefOr[String] = js.native
+  var clientBillingCode: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the project client.
     */
-  var clientName: js.UndefOr[String] = js.native
+  var clientName: js.UndefOr[String] = js.undefined
   
   /**
     * End date of the project.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this project. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#project&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the most recent modification of this project.
     */
-  var lastModifiedInfo: js.UndefOr[SchemaLastModifiedInfo] = js.native
+  var lastModifiedInfo: js.UndefOr[SchemaLastModifiedInfo] = js.undefined
   
   /**
     * Name of this project.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Overview of this project.
     */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /**
     * Start date of the project.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this project.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Number of clicks that the advertiser is targeting.
     */
-  var targetClicks: js.UndefOr[String] = js.native
+  var targetClicks: js.UndefOr[String] = js.undefined
   
   /**
     * Number of conversions that the advertiser is targeting.
     */
-  var targetConversions: js.UndefOr[String] = js.native
+  var targetConversions: js.UndefOr[String] = js.undefined
   
   /**
     * CPA that the advertiser is targeting.
     */
-  var targetCpaNanos: js.UndefOr[String] = js.native
+  var targetCpaNanos: js.UndefOr[String] = js.undefined
   
   /**
     * CPC that the advertiser is targeting.
     */
-  var targetCpcNanos: js.UndefOr[String] = js.native
+  var targetCpcNanos: js.UndefOr[String] = js.undefined
   
   /**
     * vCPM from Active View that the advertiser is targeting.
     */
-  var targetCpmActiveViewNanos: js.UndefOr[String] = js.native
+  var targetCpmActiveViewNanos: js.UndefOr[String] = js.undefined
   
   /**
     * CPM that the advertiser is targeting.
     */
-  var targetCpmNanos: js.UndefOr[String] = js.native
+  var targetCpmNanos: js.UndefOr[String] = js.undefined
   
   /**
     * Number of impressions that the advertiser is targeting.
     */
-  var targetImpressions: js.UndefOr[String] = js.native
+  var targetImpressions: js.UndefOr[String] = js.undefined
 }
 object SchemaProject {
   

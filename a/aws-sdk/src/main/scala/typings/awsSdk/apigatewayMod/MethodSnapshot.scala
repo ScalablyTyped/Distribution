@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MethodSnapshot extends StObject {
   
   /**
     * Specifies whether the method requires a valid ApiKey.
     */
-  var apiKeyRequired: js.UndefOr[Boolean] = js.native
+  var apiKeyRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
     */
-  var authorizationType: js.UndefOr[String] = js.native
+  var authorizationType: js.UndefOr[String] = js.undefined
 }
 object MethodSnapshot {
   

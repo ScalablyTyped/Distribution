@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCalendar.anon
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
   /**
@@ -14,32 +12,32 @@ trait Display extends StObject {
     * - "icon" - The gadget displays next to the event's title in the calendar view.
     * - "chip" - The gadget displays when the event is clicked.
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /** The gadget's height in pixels. The height must be an integer greater than 0. Optional. Deprecated. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The gadget's icon URL. The URL scheme must be HTTPS. Deprecated. */
-  var iconLink: js.UndefOr[String] = js.native
+  var iconLink: js.UndefOr[String] = js.undefined
   
   /** The gadget's URL. The URL scheme must be HTTPS. Deprecated. */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /** Preferences. */
   var preferences: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The gadget's title. Deprecated. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The gadget's type. Deprecated. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The gadget's width in pixels. The width must be an integer greater than 0. Optional. Deprecated. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Display {
   
@@ -80,7 +78,7 @@ object Display {
     def setPreferences(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[js.Any]
     ): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Instancegroupmanagers")
@@ -106,7 +105,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def abandonInstances(): GaxiosPromise[SchemaOperation] = js.native
   def abandonInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def abandonInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def abandonInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def abandonInstances(params: ParamsResourceInstancegroupmanagersAbandoninstances): GaxiosPromise[SchemaOperation] = js.native
   def abandonInstances(
     params: ParamsResourceInstancegroupmanagersAbandoninstances,
@@ -210,7 +209,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaInstanceGroupManagerAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaInstanceGroupManagerAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagerAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagerAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceInstancegroupmanagersAggregatedlist): GaxiosPromise[SchemaInstanceGroupManagerAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceInstancegroupmanagersAggregatedlist,
@@ -246,7 +245,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def applyUpdatesToInstances(): GaxiosPromise[SchemaOperation] = js.native
   def applyUpdatesToInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def applyUpdatesToInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def applyUpdatesToInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def applyUpdatesToInstances(params: ParamsResourceInstancegroupmanagersApplyupdatestoinstances): GaxiosPromise[SchemaOperation] = js.native
   def applyUpdatesToInstances(
     params: ParamsResourceInstancegroupmanagersApplyupdatestoinstances,
@@ -345,7 +344,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancegroupmanagersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancegroupmanagersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -450,7 +449,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def deleteInstances(): GaxiosPromise[SchemaOperation] = js.native
   def deleteInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteInstances(params: ParamsResourceInstancegroupmanagersDeleteinstances): GaxiosPromise[SchemaOperation] = js.native
   def deleteInstances(
     params: ParamsResourceInstancegroupmanagersDeleteinstances,
@@ -546,7 +545,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInstanceGroupManager] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceGroupManager]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManager] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManager] = js.native
   def get(params: ParamsResourceInstancegroupmanagersGet): GaxiosPromise[SchemaInstanceGroupManager] = js.native
   def get(
     params: ParamsResourceInstancegroupmanagersGet,
@@ -648,7 +647,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancegroupmanagersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancegroupmanagersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -752,7 +751,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInstanceGroupManagerList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceGroupManagerList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagerList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagerList] = js.native
   def list(params: ParamsResourceInstancegroupmanagersList): GaxiosPromise[SchemaInstanceGroupManagerList] = js.native
   def list(
     params: ParamsResourceInstancegroupmanagersList,
@@ -871,7 +870,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def listManagedInstances(): GaxiosPromise[SchemaInstanceGroupManagersListManagedInstancesResponse] = js.native
   def listManagedInstances(callback: BodyResponseCallback[SchemaInstanceGroupManagersListManagedInstancesResponse]): Unit = js.native
-  def listManagedInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagersListManagedInstancesResponse] = js.native
+  def listManagedInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupManagersListManagedInstancesResponse] = js.native
   def listManagedInstances(params: ParamsResourceInstancegroupmanagersListmanagedinstances): GaxiosPromise[SchemaInstanceGroupManagersListManagedInstancesResponse] = js.native
   def listManagedInstances(
     params: ParamsResourceInstancegroupmanagersListmanagedinstances,
@@ -979,7 +978,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceInstancegroupmanagersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceInstancegroupmanagersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -1083,7 +1082,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def recreateInstances(): GaxiosPromise[SchemaOperation] = js.native
   def recreateInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def recreateInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def recreateInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def recreateInstances(params: ParamsResourceInstancegroupmanagersRecreateinstances): GaxiosPromise[SchemaOperation] = js.native
   def recreateInstances(
     params: ParamsResourceInstancegroupmanagersRecreateinstances,
@@ -1200,7 +1199,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def resize(): GaxiosPromise[SchemaOperation] = js.native
   def resize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def resize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def resize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceInstancegroupmanagersResize): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceInstancegroupmanagersResize, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def resize(
@@ -1306,7 +1305,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def resizeAdvanced(): GaxiosPromise[SchemaOperation] = js.native
   def resizeAdvanced(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def resizeAdvanced(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def resizeAdvanced(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resizeAdvanced(params: ParamsResourceInstancegroupmanagersResizeadvanced): GaxiosPromise[SchemaOperation] = js.native
   def resizeAdvanced(
     params: ParamsResourceInstancegroupmanagersResizeadvanced,
@@ -1405,7 +1404,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def setAutoHealingPolicies(): GaxiosPromise[SchemaOperation] = js.native
   def setAutoHealingPolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setAutoHealingPolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setAutoHealingPolicies(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setAutoHealingPolicies(params: ParamsResourceInstancegroupmanagersSetautohealingpolicies): GaxiosPromise[SchemaOperation] = js.native
   def setAutoHealingPolicies(
     params: ParamsResourceInstancegroupmanagersSetautohealingpolicies,
@@ -1505,7 +1504,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def setInstanceTemplate(): GaxiosPromise[SchemaOperation] = js.native
   def setInstanceTemplate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setInstanceTemplate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setInstanceTemplate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setInstanceTemplate(params: ParamsResourceInstancegroupmanagersSetinstancetemplate): GaxiosPromise[SchemaOperation] = js.native
   def setInstanceTemplate(
     params: ParamsResourceInstancegroupmanagersSetinstancetemplate,
@@ -1608,7 +1607,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def setTargetPools(): GaxiosPromise[SchemaOperation] = js.native
   def setTargetPools(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setTargetPools(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setTargetPools(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setTargetPools(params: ParamsResourceInstancegroupmanagersSettargetpools): GaxiosPromise[SchemaOperation] = js.native
   def setTargetPools(
     params: ParamsResourceInstancegroupmanagersSettargetpools,
@@ -1704,7 +1703,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInstancegroupmanagersTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInstancegroupmanagersTestiampermissions,
@@ -1810,7 +1809,7 @@ class ResourceInstancegroupmanagers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceInstancegroupmanagersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceInstancegroupmanagersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

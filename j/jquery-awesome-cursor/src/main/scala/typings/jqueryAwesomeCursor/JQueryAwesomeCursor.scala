@@ -2,17 +2,15 @@ package typings.jqueryAwesomeCursor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryAwesomeCursor {
   
-  @js.native
   trait Font extends StObject {
     
-    var cssClass: String | cssHandler = js.native
+    var cssClass: String | cssHandler
     
-    var family: String = js.native
+    var family: String
   }
   object Font {
     
@@ -36,22 +34,21 @@ object JQueryAwesomeCursor {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var flip: js.UndefOr[typings.jqueryAwesomeCursor.JQueryAwesomeCursor.flip] = js.native
+    var flip: js.UndefOr[typings.jqueryAwesomeCursor.JQueryAwesomeCursor.flip] = js.undefined
     
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
-    var hotspot: js.UndefOr[js.Array[Double] | String] = js.native
+    var hotspot: js.UndefOr[js.Array[Double] | String] = js.undefined
     
-    var outline: js.UndefOr[String] = js.native
+    var outline: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

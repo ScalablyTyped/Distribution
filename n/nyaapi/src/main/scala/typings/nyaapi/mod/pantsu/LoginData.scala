@@ -2,15 +2,13 @@ package typings.nyaapi.mod.pantsu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginData extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var username: String = js.native
+  var username: String
 }
 object LoginData {
   

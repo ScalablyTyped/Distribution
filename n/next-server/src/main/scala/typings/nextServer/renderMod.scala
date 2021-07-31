@@ -14,31 +14,32 @@ import typings.react.mod.ComponentType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderMod {
   
-  @JSImport("next-server/dist/server/render", "renderToHTML")
+  @JSImport("next-server/dist/server/render", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def renderToHTML(
     req: IncomingMessage,
     res: ServerResponse,
     pathname: String,
     query: ParsedUrlQuery,
     renderOpts: RenderOpts
-  ): js.Promise[String | Null] = js.native
+  ): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
-  @js.native
   trait ManifestItem extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var name: String = js.native
+    var name: String
     
-    var publicPath: String = js.native
+    var publicPath: String
   }
   object ManifestItem {
     
@@ -67,60 +68,59 @@ object renderMod {
   
   type ReactLoadableManifest = StringDictionary[js.Array[ManifestItem]]
   
-  @js.native
   trait RenderOpts extends StObject {
     
-    var App: AppType = js.native
+    var App: AppType
     
-    var Component: ComponentType[js.Object] = js.native
+    var Component: ComponentType[js.Object]
     
-    var Document: DocumentType = js.native
+    var Document: DocumentType
     
-    def DocumentMiddleware(ctx: NextPageContext): Unit = js.native
+    def DocumentMiddleware(ctx: NextPageContext): Unit
     
-    var ErrorDebug: js.UndefOr[ComponentType[ErrorError]] = js.native
+    var ErrorDebug: js.UndefOr[ComponentType[ErrorError]] = js.undefined
     
-    var ampBindInitData: Boolean = js.native
+    var ampBindInitData: Boolean
     
-    var ampMode: js.UndefOr[js.Any] = js.native
+    var ampMode: js.UndefOr[js.Any] = js.undefined
     
-    var ampPath: js.UndefOr[String] = js.native
+    var ampPath: js.UndefOr[String] = js.undefined
     
-    var ampValidator: js.UndefOr[js.Function2[/* html */ String, /* pathname */ String, js.Promise[Unit]]] = js.native
+    var ampValidator: js.UndefOr[js.Function2[/* html */ String, /* pathname */ String, js.Promise[Unit]]] = js.undefined
     
-    var assetPrefix: js.UndefOr[String] = js.native
+    var assetPrefix: js.UndefOr[String] = js.undefined
     
-    var buildId: String = js.native
+    var buildId: String
     
-    var buildManifest: BuildManifest = js.native
+    var buildManifest: BuildManifest
     
-    var canonicalBase: String = js.native
+    var canonicalBase: String
     
-    var dangerousAsPath: String = js.native
+    var dangerousAsPath: String
     
-    var dataOnly: js.UndefOr[Boolean] = js.native
+    var dataOnly: js.UndefOr[Boolean] = js.undefined
     
-    var dev: js.UndefOr[Boolean] = js.native
+    var dev: js.UndefOr[Boolean] = js.undefined
     
-    var documentMiddlewareEnabled: Boolean = js.native
+    var documentMiddlewareEnabled: Boolean
     
-    var err: js.UndefOr[Error | Null] = js.native
+    var err: js.UndefOr[Error | Null] = js.undefined
     
-    var hybridAmp: js.UndefOr[Boolean] = js.native
+    var hybridAmp: js.UndefOr[Boolean] = js.undefined
     
-    var inAmpMode: js.UndefOr[Boolean] = js.native
+    var inAmpMode: js.UndefOr[Boolean] = js.undefined
     
-    var nextExport: js.UndefOr[Boolean] = js.native
+    var nextExport: js.UndefOr[Boolean] = js.undefined
     
-    var pageConfig: PageConfig = js.native
+    var pageConfig: PageConfig
     
-    var reactLoadableManifest: ReactLoadableManifest = js.native
+    var reactLoadableManifest: ReactLoadableManifest
     
-    var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var skeleton: js.UndefOr[Boolean] = js.native
+    var skeleton: js.UndefOr[Boolean] = js.undefined
     
-    var staticMarkup: Boolean = js.native
+    var staticMarkup: Boolean
   }
   object RenderOpts {
     

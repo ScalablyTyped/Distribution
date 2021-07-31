@@ -2,18 +2,18 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  滚动
-@js.native
-trait PageScrollToOptions extends CommonCallbackOptions {
+trait PageScrollToOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  滚动动画的时长，单位 ms。默认300
-  var duration: Double = js.native
+  var duration: Double
   
   //  滚动到页面的目标位置，单位 px
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object PageScrollToOptions {
   

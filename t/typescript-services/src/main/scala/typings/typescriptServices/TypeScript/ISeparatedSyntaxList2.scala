@@ -2,27 +2,27 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISeparatedSyntaxList2 extends AST {
+trait ISeparatedSyntaxList2
+  extends StObject
+     with AST {
   
-  var _fileName: js.Any = js.native
+  var _fileName: js.Any
   
-  var _separatorCount: js.Any = js.native
+  var _separatorCount: js.Any
   
-  var members: js.Any = js.native
+  var members: js.Any
   
-  def nonSeparatorAt(index: Double): AST = js.native
+  def nonSeparatorAt(index: Double): AST
   
-  def nonSeparatorCount(): Double = js.native
+  def nonSeparatorCount(): Double
   
-  def nonSeparatorIndexOf(ast: AST): Double = js.native
+  def nonSeparatorIndexOf(ast: AST): Double
   
-  def separatorCount(): Double = js.native
+  def separatorCount(): Double
   
-  def structuralEquals(ast: ISeparatedSyntaxList2, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ISeparatedSyntaxList2, includingPosition: Boolean): Boolean
 }
 object ISeparatedSyntaxList2 {
   

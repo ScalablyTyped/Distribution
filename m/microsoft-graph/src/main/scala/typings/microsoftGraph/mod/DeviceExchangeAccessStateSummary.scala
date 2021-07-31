@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceExchangeAccessStateSummary extends StObject {
   
   // Total count of devices with Exchange Access State: Allowed.
-  var allowedDeviceCount: js.UndefOr[Double] = js.native
+  var allowedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Total count of devices with Exchange Access State: Blocked.
-  var blockedDeviceCount: js.UndefOr[Double] = js.native
+  var blockedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Total count of devices with Exchange Access State: Quarantined.
-  var quarantinedDeviceCount: js.UndefOr[Double] = js.native
+  var quarantinedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Total count of devices for which no Exchange Access State could be found.
-  var unavailableDeviceCount: js.UndefOr[Double] = js.native
+  var unavailableDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Total count of devices with Exchange Access State: Unknown.
-  var unknownDeviceCount: js.UndefOr[Double] = js.native
+  var unknownDeviceCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceExchangeAccessStateSummary {
   

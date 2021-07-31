@@ -2,38 +2,49 @@ package typings.webvrApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webvrApiStrings {
   
   @js.native
-  sealed trait left extends VREyeDtAlias
+  sealed trait left
+    extends StObject
+       with VREyeDtAlias
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait mounted extends VRDisplayEventReasonDtAlias
+  sealed trait mounted
+    extends StObject
+       with VRDisplayEventReasonDtAlias
   @scala.inline
   def mounted: mounted = "mounted".asInstanceOf[mounted]
   
   @js.native
-  sealed trait navigation extends VRDisplayEventReasonDtAlias
+  sealed trait navigation
+    extends StObject
+       with VRDisplayEventReasonDtAlias
   @scala.inline
   def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait requested extends VRDisplayEventReasonDtAlias
+  sealed trait requested
+    extends StObject
+       with VRDisplayEventReasonDtAlias
   @scala.inline
   def requested: requested = "requested".asInstanceOf[requested]
   
   @js.native
-  sealed trait right extends VREyeDtAlias
+  sealed trait right
+    extends StObject
+       with VREyeDtAlias
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait unmounted extends VRDisplayEventReasonDtAlias
+  sealed trait unmounted
+    extends StObject
+       with VRDisplayEventReasonDtAlias
   @scala.inline
   def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
   

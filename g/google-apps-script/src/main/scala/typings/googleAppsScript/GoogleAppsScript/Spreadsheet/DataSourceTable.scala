@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,20 +49,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     // Check status after execution.
   *     Logger.log("Data execution state: %s.", dataSourceTable.getStatus().getExecutionState());
   */
-@js.native
 trait DataSourceTable extends StObject {
   
-  def forceRefreshData(): DataSourceTable = js.native
+  def forceRefreshData(): DataSourceTable
   
-  def getDataSource(): DataSource = js.native
+  def getDataSource(): DataSource
   
-  def getRange(): Range = js.native
+  def getRange(): Range
   
-  def getStatus(): DataExecutionStatus = js.native
+  def getStatus(): DataExecutionStatus
   
-  def refreshData(): DataSourceTable = js.native
+  def refreshData(): DataSourceTable
   
-  def waitForCompletion(timeoutInSeconds: Integer): DataExecutionStatus = js.native
+  def waitForCompletion(timeoutInSeconds: Integer): DataExecutionStatus
 }
 object DataSourceTable {
   

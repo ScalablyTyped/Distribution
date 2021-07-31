@@ -6,27 +6,28 @@ import typings.roadsReq.anon.Encoding
 import typings.roadsReq.anon.Pw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("roads-req", JSImport.Default)
+  @JSImport("roads-req", JSImport.Namespace)
   @js.native
-  def default(options: RoadsReqOptions): js.Promise[RoadsRequestResponse] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(options: RoadsReqOptions): js.Promise[RoadsRequestResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoadsRequestResponse]]
+  
   trait RoadsReqOptions extends StObject {
     
-    var basicAuth: js.UndefOr[Pw] = js.native
+    var basicAuth: js.UndefOr[Pw] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var request: RequestOptions | typings.node.httpsMod.RequestOptions = js.native
+    var request: RequestOptions | typings.node.httpsMod.RequestOptions
     
-    var requestBody: js.UndefOr[String] = js.native
+    var requestBody: js.UndefOr[String] = js.undefined
     
-    var response: js.UndefOr[Encoding] = js.native
+    var response: js.UndefOr[Encoding] = js.undefined
   }
   object RoadsReqOptions {
     
@@ -68,12 +69,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RoadsRequestResponse extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var response: IncomingMessage = js.native
+    var response: IncomingMessage
   }
   object RoadsRequestResponse {
     

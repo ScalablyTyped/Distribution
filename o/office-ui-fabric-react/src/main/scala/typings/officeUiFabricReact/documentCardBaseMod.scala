@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardBaseMod {
@@ -26,6 +25,12 @@ object documentCardBaseMod {
     var _onKeyDown: js.Any = js.native
     
     var _rootElement: js.Any = js.native
+    
+    /**
+      * Sets focus to the DocumentCard.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   /* static members */
   object DocumentCardBase {

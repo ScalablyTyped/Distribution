@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/people/v1", "people_v1.Resource$Contactgroups$Members")
@@ -34,7 +33,7 @@ class ResourceContactgroupsMembers protected () extends StObject {
     */
   def modify(): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(callback: BodyResponseCallback[SchemaModifyContactGroupMembersResponse]): Unit = js.native
-  def modify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
+  def modify(params: Unit, options: MethodOptions): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(params: ParamsResourceContactgroupsMembersModify): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(
     params: ParamsResourceContactgroupsMembersModify,

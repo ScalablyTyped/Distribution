@@ -3,13 +3,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a push delivery endpoint.
   */
-@js.native
 trait SchemaPushConfig extends StObject {
   
   /**
@@ -29,20 +27,20 @@ trait SchemaPushConfig extends StObject {
     * API. * `v1` or `v1beta2`: uses the push format defined in the v1 Pub/Sub
     * API.
     */
-  var attributes: js.UndefOr[StringDictionary[String]] = js.native
+  var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * If specified, Pub/Sub will generate and attach an OIDC JWT token as an
     * `Authorization` header in the HTTP request for every pushed message.
     */
-  var oidcToken: js.UndefOr[SchemaOidcToken] = js.native
+  var oidcToken: js.UndefOr[SchemaOidcToken] = js.undefined
   
   /**
     * A URL locating the endpoint to which messages should be pushed. For
     * example, a Webhook endpoint might use
     * &quot;https://example.com/push&quot;.
     */
-  var pushEndpoint: js.UndefOr[String] = js.native
+  var pushEndpoint: js.UndefOr[String] = js.undefined
 }
 object SchemaPushConfig {
   

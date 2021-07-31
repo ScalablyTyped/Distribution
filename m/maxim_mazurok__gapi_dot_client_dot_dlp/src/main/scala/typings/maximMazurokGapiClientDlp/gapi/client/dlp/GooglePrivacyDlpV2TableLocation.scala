@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TableLocation extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GooglePrivacyDlpV2TableLocation extends StObject {
     * came from, populate BigQueryOptions.identifying_fields with your primary key column names and when you store the findings the value of those columns will be stored inside of
     * Finding.
     */
-  var rowIndex: js.UndefOr[String] = js.native
+  var rowIndex: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2TableLocation {
   

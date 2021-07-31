@@ -3,26 +3,24 @@ package typings.vsoNodeApi.workInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Marker extends StObject {
   
   /**
     * Color associated with the marker.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Where the marker should be displayed on the timeline.
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * Label/title for the marker.
     */
-  var label: String = js.native
+  var label: String
 }
 object Marker {
   

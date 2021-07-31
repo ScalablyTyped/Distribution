@@ -7,22 +7,20 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settlementTransfer {
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.settlementTransfer.SettlementTransferData, 'Tag', 'AuthorId' | 'DebitedFunds' | 'Fees'> */
-  @js.native
   trait CreateSettlementTransfer extends StObject {
     
-    var AuthorId: String = js.native
+    var AuthorId: String
     
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateSettlementTransfer {
     
@@ -52,34 +50,35 @@ object settlementTransfer {
     }
   }
   
-  @js.native
-  trait SettlementTransferData extends TransactionData {
+  trait SettlementTransferData
+    extends StObject
+       with TransactionData {
     
     /**
       * The initial transaction ID
       */
-    var InitialTransactionId: String = js.native
+    var InitialTransactionId: String
     
     /**
       * The initial transaction type
       */
-    var InitialTransactionType: TransactionType = js.native
+    var InitialTransactionType: TransactionType
     
     /**
       * The nature of the transaction
       */
     @JSName("Nature")
-    var Nature_SettlementTransferData: SETTLEMENT = js.native
+    var Nature_SettlementTransferData: SETTLEMENT
     
     /**
       * Contains info about the reason for refund
       */
-    var RefundReason: typings.mangopay2NodejsSdk.mod.refund.RefundReason = js.native
+    var RefundReason: typings.mangopay2NodejsSdk.mod.refund.RefundReason
     
     /**
       * The ID of the associated repudiation transaction
       */
-    var RepudiationId: String = js.native
+    var RepudiationId: String
   }
   object SettlementTransferData {
     
@@ -97,7 +96,6 @@ object settlementTransfer {
       Id: String,
       InitialTransactionId: String,
       InitialTransactionType: TransactionType,
-      Nature: SETTLEMENT,
       RefundReason: RefundReason,
       RepudiationId: String,
       ResultCode: String,
@@ -106,7 +104,7 @@ object settlementTransfer {
       Tag: String,
       Type: TransactionType
     ): SettlementTransferData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], RefundReason = RefundReason.asInstanceOf[js.Any], RepudiationId = RepudiationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], Nature = "SETTLEMENT", RefundReason = RefundReason.asInstanceOf[js.Any], RepudiationId = RepudiationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettlementTransferData]
     }
     

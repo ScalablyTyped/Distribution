@@ -3,21 +3,19 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.PartialState<std.Readonly<any>> | undefined} */
-@js.native
 trait Readonlykeystringnamestri extends StObject {
   
-  val key: String = js.native
+  val key: String
   
-  val name: String = js.native
+  val name: String
   
-  val params: js.UndefOr[js.Object] = js.native
+  val params: js.UndefOr[js.Object] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var state: js.UndefOr[js.Any | PartialState[_]] = js.native
+  var state: js.UndefOr[js.Any | PartialState[js.Any]] = js.undefined
 }
 object Readonlykeystringnamestri {
   
@@ -43,7 +41,7 @@ object Readonlykeystringnamestri {
     def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setState(value: js.Any | PartialState[_]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    def setState(value: js.Any | PartialState[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStateUndefined: Self = StObject.set(x, "state", js.undefined)

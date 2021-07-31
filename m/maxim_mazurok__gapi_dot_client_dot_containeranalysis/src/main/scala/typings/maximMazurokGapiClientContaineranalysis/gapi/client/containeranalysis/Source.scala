@@ -3,23 +3,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /**
     * If provided, some of the source code used for the build may be found in these locations, in the case where the source repository had multiple remotes or submodules. This list will
     * not include the context specified in the context field.
     */
-  var additionalContexts: js.UndefOr[js.Array[SourceContext]] = js.native
+  var additionalContexts: js.UndefOr[js.Array[SourceContext]] = js.undefined
   
   /** If provided, the input binary artifacts for the build came from this location. */
-  var artifactStorageSourceUri: js.UndefOr[String] = js.native
+  var artifactStorageSourceUri: js.UndefOr[String] = js.undefined
   
   /** If provided, the source code used for the build came from this location. */
-  var context: js.UndefOr[SourceContext] = js.native
+  var context: js.UndefOr[SourceContext] = js.undefined
   
   /**
     * Hash(es) of the build source, which can be used to verify that the original source integrity was maintained in the build. The keys to this map are file paths used as build source
@@ -29,8 +27,8 @@ trait Source extends StObject {
   var fileHashes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Source {
   
@@ -68,7 +66,7 @@ object Source {
     def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[js.Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     @scala.inline

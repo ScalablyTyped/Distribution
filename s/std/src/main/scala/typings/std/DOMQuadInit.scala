@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMQuadInit extends StObject {
   
-  var p1: js.UndefOr[DOMPointInit] = js.native
+  var p1: js.UndefOr[DOMPointInit] = js.undefined
   
-  var p2: js.UndefOr[DOMPointInit] = js.native
+  var p2: js.UndefOr[DOMPointInit] = js.undefined
   
-  var p3: js.UndefOr[DOMPointInit] = js.native
+  var p3: js.UndefOr[DOMPointInit] = js.undefined
   
-  var p4: js.UndefOr[DOMPointInit] = js.native
+  var p4: js.UndefOr[DOMPointInit] = js.undefined
 }
 object DOMQuadInit {
   

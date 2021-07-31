@@ -3,24 +3,23 @@ package typings.ionicAngular
 import typings.ionicAngular.anon.Inputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxiesUtilsMod {
   
-  @JSImport("@ionic/angular/directives/proxies-utils", "ProxyCmp")
+  @JSImport("@ionic/angular/directives/proxies-utils", JSImport.Namespace)
   @js.native
-  def ProxyCmp(opts: Inputs): js.Function1[/* cls */ js.Any, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/angular/directives/proxies-utils", "proxyInputs")
-  @js.native
-  def proxyInputs(Cmp: js.Any, inputs: js.Array[String]): Unit = js.native
+  @scala.inline
+  def ProxyCmp(opts: Inputs): js.Function1[/* cls */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ProxyCmp")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cls */ js.Any, js.Any]]
   
-  @JSImport("@ionic/angular/directives/proxies-utils", "proxyMethods")
-  @js.native
-  def proxyMethods(Cmp: js.Any, methods: js.Array[String]): Unit = js.native
+  @scala.inline
+  def proxyInputs(Cmp: js.Any, inputs: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyInputs")(Cmp.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/angular/directives/proxies-utils", "proxyOutputs")
-  @js.native
-  def proxyOutputs(instance: js.Any, el: js.Any, events: js.Array[String]): Unit = js.native
+  @scala.inline
+  def proxyMethods(Cmp: js.Any, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyMethods")(Cmp.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def proxyOutputs(instance: js.Any, el: js.Any, events: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyOutputs")(instance.asInstanceOf[js.Any], el.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

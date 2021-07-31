@@ -3,7 +3,6 @@ package typings.ethersprojectAbi
 import typings.ethersprojectBignumber.mod.BigNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fragmentsMod {
@@ -22,30 +21,27 @@ object fragmentsMod {
   /* static members */
   object ConstructorFragment {
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.from")
+    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment")
     @js.native
-    def from(value: String): ConstructorFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.from")
-    @js.native
-    def from(value: ConstructorFragment): ConstructorFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.from")
-    @js.native
-    def from(value: JsonFragment): ConstructorFragment = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.fromObject")
-    @js.native
-    def fromObject(value: ConstructorFragment): ConstructorFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.fromObject")
-    @js.native
-    def fromObject(value: JsonFragment): ConstructorFragment = js.native
+    @scala.inline
+    def from(value: String): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
+    @scala.inline
+    def from(value: ConstructorFragment): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
+    @scala.inline
+    def from(value: JsonFragment): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.fromString")
-    @js.native
-    def fromString(value: String): ConstructorFragment = js.native
+    @scala.inline
+    def fromObject(value: ConstructorFragment): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
+    @scala.inline
+    def fromObject(value: JsonFragment): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment.isConstructorFragment")
-    @js.native
-    def isConstructorFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = js.native
+    @scala.inline
+    def fromString(value: String): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
+    
+    @scala.inline
+    def isConstructorFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "EventFragment")
@@ -58,30 +54,27 @@ object fragmentsMod {
   /* static members */
   object EventFragment {
     
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.from")
+    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment")
     @js.native
-    def from(value: String): EventFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.from")
-    @js.native
-    def from(value: EventFragment): EventFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.from")
-    @js.native
-    def from(value: JsonFragment): EventFragment = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.fromObject")
-    @js.native
-    def fromObject(value: EventFragment): EventFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.fromObject")
-    @js.native
-    def fromObject(value: JsonFragment): EventFragment = js.native
+    @scala.inline
+    def from(value: String): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
+    @scala.inline
+    def from(value: EventFragment): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
+    @scala.inline
+    def from(value: JsonFragment): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.fromString")
-    @js.native
-    def fromString(value: String): EventFragment = js.native
+    @scala.inline
+    def fromObject(value: EventFragment): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
+    @scala.inline
+    def fromObject(value: JsonFragment): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "EventFragment.isEventFragment")
-    @js.native
-    def isEventFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = js.native
+    @scala.inline
+    def fromString(value: String): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
+    
+    @scala.inline
+    def isEventFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "Fragment")
@@ -103,30 +96,27 @@ object fragmentsMod {
   /* static members */
   object Fragment {
     
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.from")
+    @JSImport("@ethersproject/abi/lib/fragments", "Fragment")
     @js.native
-    def from(value: String): Fragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.from")
-    @js.native
-    def from(value: Fragment): Fragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.from")
-    @js.native
-    def from(value: JsonFragment): Fragment = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.fromObject")
-    @js.native
-    def fromObject(value: Fragment): Fragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.fromObject")
-    @js.native
-    def fromObject(value: JsonFragment): Fragment = js.native
+    @scala.inline
+    def from(value: String): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    @scala.inline
+    def from(value: Fragment): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    @scala.inline
+    def from(value: JsonFragment): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.fromString")
-    @js.native
-    def fromString(value: String): Fragment = js.native
+    @scala.inline
+    def fromObject(value: Fragment): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    @scala.inline
+    def fromObject(value: JsonFragment): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "Fragment.isFragment")
-    @js.native
-    def isFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = js.native
+    @scala.inline
+    def fromString(value: String): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    
+    @scala.inline
+    def isFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment")
@@ -141,30 +131,27 @@ object fragmentsMod {
   /* static members */
   object FunctionFragment {
     
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.from")
+    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment")
     @js.native
-    def from(value: String): FunctionFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.from")
-    @js.native
-    def from(value: FunctionFragment): FunctionFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.from")
-    @js.native
-    def from(value: JsonFragment): FunctionFragment = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.fromObject")
-    @js.native
-    def fromObject(value: FunctionFragment): FunctionFragment = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.fromObject")
-    @js.native
-    def fromObject(value: JsonFragment): FunctionFragment = js.native
+    @scala.inline
+    def from(value: String): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
+    @scala.inline
+    def from(value: FunctionFragment): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
+    @scala.inline
+    def from(value: JsonFragment): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.fromString")
-    @js.native
-    def fromString(value: String): FunctionFragment = js.native
+    @scala.inline
+    def fromObject(value: FunctionFragment): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
+    @scala.inline
+    def fromObject(value: JsonFragment): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment.isFunctionFragment")
-    @js.native
-    def isFunctionFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = js.native
+    @scala.inline
+    def fromString(value: String): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
+    
+    @scala.inline
+    def isFunctionFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "ParamType")
@@ -194,64 +181,56 @@ object fragmentsMod {
   /* static members */
   object ParamType {
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
+    @JSImport("@ethersproject/abi/lib/fragments", "ParamType")
     @js.native
-    def from(value: String): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
-    @js.native
-    def from(value: String, allowIndexed: Boolean): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
-    @js.native
-    def from(value: JsonFragmentType): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
-    @js.native
-    def from(value: JsonFragmentType, allowIndexed: Boolean): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
-    @js.native
-    def from(value: ParamType): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.from")
-    @js.native
-    def from(value: ParamType, allowIndexed: Boolean): ParamType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.fromObject")
-    @js.native
-    def fromObject(value: JsonFragmentType): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.fromObject")
-    @js.native
-    def fromObject(value: ParamType): ParamType = js.native
+    @scala.inline
+    def from(value: String): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
+    @scala.inline
+    def from(value: String, allowIndexed: Boolean): ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[ParamType]
+    @scala.inline
+    def from(value: JsonFragmentType): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
+    @scala.inline
+    def from(value: JsonFragmentType, allowIndexed: Boolean): ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[ParamType]
+    @scala.inline
+    def from(value: ParamType): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
+    @scala.inline
+    def from(value: ParamType, allowIndexed: Boolean): ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[ParamType]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.fromString")
-    @js.native
-    def fromString(value: String): ParamType = js.native
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.fromString")
-    @js.native
-    def fromString(value: String, allowIndexed: Boolean): ParamType = js.native
+    @scala.inline
+    def fromObject(value: JsonFragmentType): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
+    @scala.inline
+    def fromObject(value: ParamType): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
     
-    @JSImport("@ethersproject/abi/lib/fragments", "ParamType.isParamType")
-    @js.native
-    def isParamType(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = js.native
+    @scala.inline
+    def fromString(value: String): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
+    @scala.inline
+    def fromString(value: String, allowIndexed: Boolean): ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[ParamType]
+    
+    @scala.inline
+    def isParamType(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParamType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean]
   }
   
-  @js.native
   trait JsonFragment extends StObject {
     
-    var anonymous: js.UndefOr[Boolean] = js.native
+    var anonymous: js.UndefOr[Boolean] = js.undefined
     
-    var constant: js.UndefOr[Boolean] = js.native
+    var constant: js.UndefOr[Boolean] = js.undefined
     
-    var gas: js.UndefOr[String] = js.native
+    var gas: js.UndefOr[String] = js.undefined
     
-    var inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.native
+    var inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.native
+    var outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var payable: js.UndefOr[Boolean] = js.native
+    var payable: js.UndefOr[Boolean] = js.undefined
     
-    var stateMutability: js.UndefOr[String] = js.native
+    var stateMutability: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object JsonFragment {
     
@@ -326,16 +305,15 @@ object fragmentsMod {
     }
   }
   
-  @js.native
   trait JsonFragmentType extends StObject {
     
-    var components: js.UndefOr[js.Array[JsonFragmentType]] = js.native
+    var components: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var indexed: js.UndefOr[Boolean] = js.native
+    var indexed: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object JsonFragmentType {
     

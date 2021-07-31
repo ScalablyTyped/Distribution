@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.enzyme.mod.EnzymeAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Adapter extends StObject {
     
-    var adapter: EnzymeAdapter = js.native
+    var adapter: EnzymeAdapter
     
     // See https://github.com/airbnb/enzyme/blob/enzyme@3.10.0/docs/guides/migration-from-2-to-3.md#lifecycle-methods
     // Actually, `{adapter:} & Pick<ShallowRendererProps,"disableLifecycleMethods">` is more precise. However,
@@ -21,7 +19,7 @@ object anon {
       * If set to true, componentDidMount is not called on the component, and componentDidUpdate is not called after
       * setProps and setContext. Default to false.
       */
-    var disableLifecycleMethods: js.UndefOr[Boolean] = js.native
+    var disableLifecycleMethods: js.UndefOr[Boolean] = js.undefined
   }
   object Adapter {
     
@@ -45,12 +43,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends // TODO Maybe some life cycle are missing
+    extends StObject
+       with // TODO Maybe some life cycle are missing
   /* lifecycleName */ StringDictionary[js.Any] {
     
-    var calledByRenderer: Boolean = js.native
+    var calledByRenderer: Boolean
   }
   object Dictkey {
     
@@ -68,10 +66,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HasShouldComponentUpdateBug extends StObject {
     
-    var hasShouldComponentUpdateBug: Boolean = js.native
+    var hasShouldComponentUpdateBug: Boolean
   }
   object HasShouldComponentUpdateBug {
     
@@ -89,14 +86,13 @@ object anon {
     }
   }
   
-  @js.native
   trait IgnoreProps extends StObject {
     
     /** Whether props should be omitted in the resulting string. Props are included by default. */
-    var ignoreProps: js.UndefOr[Boolean] = js.native
+    var ignoreProps: js.UndefOr[Boolean] = js.undefined
     
     /** Whether arrays and objects passed as props should be verbosely printed. */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object IgnoreProps {
     
@@ -123,12 +119,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OnSetState extends StObject {
     
-    var onSetState: Boolean = js.native
+    var onSetState: Boolean
     
-    var prevContext: Boolean = js.native
+    var prevContext: Boolean
   }
   object OnSetState {
     

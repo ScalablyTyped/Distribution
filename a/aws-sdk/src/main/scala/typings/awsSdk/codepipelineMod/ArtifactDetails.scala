@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactDetails extends StObject {
   
   /**
     * The maximum number of artifacts allowed for the action type.
     */
-  var maximumCount: MaximumArtifactCount = js.native
+  var maximumCount: MaximumArtifactCount
   
   /**
     * The minimum number of artifacts allowed for the action type.
     */
-  var minimumCount: MinimumArtifactCount = js.native
+  var minimumCount: MinimumArtifactCount
 }
 object ArtifactDetails {
   

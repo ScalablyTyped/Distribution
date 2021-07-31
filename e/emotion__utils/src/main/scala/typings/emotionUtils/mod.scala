@@ -6,39 +6,39 @@ import typings.std.HTMLElement
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@emotion/utils", "getRegisteredStyles")
+  @JSImport("@emotion/utils", JSImport.Namespace)
   @js.native
-  def getRegisteredStyles(registered: RegisteredCache, registeredStyles: js.Array[String], classNames: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@emotion/utils", "insertStyles")
-  @js.native
-  def insertStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: Boolean): String | Unit = js.native
+  @scala.inline
+  def getRegisteredStyles(registered: RegisteredCache, registeredStyles: js.Array[String], classNames: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredStyles")(registered.asInstanceOf[js.Any], registeredStyles.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def insertStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: Boolean): String | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertStyles")(cache.asInstanceOf[js.Any], serialized.asInstanceOf[js.Any], isStringTag.asInstanceOf[js.Any])).asInstanceOf[String | Unit]
   
   @JSImport("@emotion/utils", "isBrowser")
   @js.native
   val isBrowser: Boolean = js.native
   
-  @js.native
   trait EmotionCache extends StObject {
     
-    var compat: js.UndefOr[`true`] = js.native
+    var compat: js.UndefOr[`true`] = js.undefined
     
-    var inserted: StringDictionary[String | `true`] = js.native
+    var inserted: StringDictionary[String | `true`]
     
-    var key: String = js.native
+    var key: String
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var registered: RegisteredCache = js.native
+    var registered: RegisteredCache
     
-    var sheet: StyleSheet = js.native
+    var sheet: StyleSheet
     
-    def stylis(key: String, value: String): js.Array[String] = js.native
+    def stylis(key: String, value: String): js.Array[String]
   }
   object EmotionCache {
     
@@ -88,16 +88,15 @@ object mod {
   
   type RegisteredCache = StringDictionary[String]
   
-  @js.native
   trait SerializedStyles extends StObject {
     
-    var map: js.UndefOr[String] = js.native
+    var map: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var next: js.UndefOr[SerializedStyles] = js.native
+    var next: js.UndefOr[SerializedStyles] = js.undefined
     
-    var styles: String = js.native
+    var styles: String
   }
   object SerializedStyles {
     
@@ -130,20 +129,19 @@ object mod {
     }
   }
   
-  @js.native
   trait StyleSheet extends StObject {
     
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
-    def flush(): Unit = js.native
+    def flush(): Unit
     
-    def insert(rule: String): Unit = js.native
+    def insert(rule: String): Unit
     
-    var key: String = js.native
+    var key: String
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var tags: js.Array[HTMLStyleElement] = js.native
+    var tags: js.Array[HTMLStyleElement]
   }
   object StyleSheet {
     

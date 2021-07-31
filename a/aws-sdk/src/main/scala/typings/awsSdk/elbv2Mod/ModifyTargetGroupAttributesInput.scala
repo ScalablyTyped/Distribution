@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTargetGroupAttributesInput extends StObject {
   
   /**
     * The attributes.
     */
-  var Attributes: TargetGroupAttributes = js.native
+  var Attributes: TargetGroupAttributes
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn = js.native
+  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn
 }
 object ModifyTargetGroupAttributesInput {
   

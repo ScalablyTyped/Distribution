@@ -2,39 +2,39 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceControlResourceDecorations extends SourceControlResourceThemableDecorations {
+trait SourceControlResourceDecorations
+  extends StObject
+     with SourceControlResourceThemableDecorations {
   
   /**
     * The dark theme decorations.
     */
-  val dark: js.UndefOr[SourceControlResourceThemableDecorations] = js.native
+  val dark: js.UndefOr[SourceControlResourceThemableDecorations] = js.undefined
   
   /**
     * Whether the [source control resource state](#SourceControlResourceState) should
     * be faded in the UI.
     */
-  val faded: js.UndefOr[Boolean] = js.native
+  val faded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The light theme decorations.
     */
-  val light: js.UndefOr[SourceControlResourceThemableDecorations] = js.native
+  val light: js.UndefOr[SourceControlResourceThemableDecorations] = js.undefined
   
   /**
     * Whether the [source control resource state](#SourceControlResourceState) should
     * be striked-through in the UI.
     */
-  val strikeThrough: js.UndefOr[Boolean] = js.native
+  val strikeThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The title for a specific
     * [source control resource state](#SourceControlResourceState).
     */
-  val tooltip: js.UndefOr[String] = js.native
+  val tooltip: js.UndefOr[String] = js.undefined
 }
 object SourceControlResourceDecorations {
   

@@ -2,27 +2,25 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Attachment. */
-@js.native
 trait IAttachment extends StObject {
   
   /** Attachment data */
-  var data: js.UndefOr[String | Null] = js.native
+  var data: js.UndefOr[String | Null] = js.undefined
   
   /** Attachment media */
-  var media: js.UndefOr[IMedia | Null] = js.native
+  var media: js.UndefOr[IMedia | Null] = js.undefined
   
   /** Attachment source */
-  var source: js.UndefOr[ISourceReference | Null] = js.native
+  var source: js.UndefOr[ISourceReference | Null] = js.undefined
   
   /** Attachment testCaseStartedId */
-  var testCaseStartedId: js.UndefOr[String | Null] = js.native
+  var testCaseStartedId: js.UndefOr[String | Null] = js.undefined
   
   /** Attachment testStepId */
-  var testStepId: js.UndefOr[String | Null] = js.native
+  var testStepId: js.UndefOr[String | Null] = js.undefined
 }
 object IAttachment {
   

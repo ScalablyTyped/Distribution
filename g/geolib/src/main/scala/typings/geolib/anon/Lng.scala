@@ -4,13 +4,13 @@ import typings.geolib.typesMod.GeolibInputLongitude
 import typings.geolib.typesMod.GeolibLongitudeInputValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Lng extends GeolibInputLongitude {
+trait Lng
+  extends StObject
+     with GeolibInputLongitude {
   
-  var lng: GeolibLongitudeInputValue = js.native
+  var lng: GeolibLongitudeInputValue
 }
 object Lng {
   

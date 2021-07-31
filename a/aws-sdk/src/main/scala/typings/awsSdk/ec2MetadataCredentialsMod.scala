@@ -4,7 +4,6 @@ import typings.awsSdk.anon.ConnectTimeout
 import typings.awsSdk.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2MetadataCredentialsMod {
@@ -19,12 +18,11 @@ object ec2MetadataCredentialsMod {
     def this(options: EC2MetadataCredentialsOptions) = this()
   }
   
-  @js.native
   trait EC2MetadataCredentialsOptions extends StObject {
     
-    var httpOptions: js.UndefOr[ConnectTimeout] = js.native
+    var httpOptions: js.UndefOr[ConnectTimeout] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
   }
   object EC2MetadataCredentialsOptions {
     

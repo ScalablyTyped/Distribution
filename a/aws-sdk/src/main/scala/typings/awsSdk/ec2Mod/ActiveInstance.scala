@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveInstance extends StObject {
   
   /**
     * The health status of the instance. If the status of either the instance status check or the system status check is impaired, the health status of the instance is unhealthy. Otherwise, the health status is healthy.
     */
-  var InstanceHealth: js.UndefOr[InstanceHealthStatus] = js.native
+  var InstanceHealth: js.UndefOr[InstanceHealthStatus] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Spot Instance request.
     */
-  var SpotInstanceRequestId: js.UndefOr[String] = js.native
+  var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
 }
 object ActiveInstance {
   

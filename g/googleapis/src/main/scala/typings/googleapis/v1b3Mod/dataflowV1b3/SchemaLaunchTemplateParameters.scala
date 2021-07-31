@@ -3,29 +3,27 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters to provide to the template being launched.
   */
-@js.native
 trait SchemaLaunchTemplateParameters extends StObject {
   
   /**
     * The runtime environment for the job.
     */
-  var environment: js.UndefOr[SchemaRuntimeEnvironment] = js.native
+  var environment: js.UndefOr[SchemaRuntimeEnvironment] = js.undefined
   
   /**
     * Required. The job name to use for the created job.
     */
-  var jobName: js.UndefOr[String] = js.native
+  var jobName: js.UndefOr[String] = js.undefined
   
   /**
     * The runtime parameters to pass to the job.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaLaunchTemplateParameters {
   

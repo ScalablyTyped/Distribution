@@ -2,17 +2,15 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsCore extends StObject {
   
   /**
     * the open / close animation duration in milliseconds - set this to `false` to disable the animation (default is `200`)
     * @name $.jstree.defaults.core.animation
     */
-  var animation: js.UndefOr[js.Any] = js.native
+  var animation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * determines what happens when a user tries to modify the structure of the tree
@@ -33,7 +31,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.check_callback
     */
-  var check_callback: js.UndefOr[js.Any] = js.native
+  var check_callback: js.UndefOr[js.Any] = js.undefined
   
   /**
     * data configuration
@@ -89,59 +87,59 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.data
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Should the node be toggled if the text is double clicked. Defaults to `true`
     * @name $.jstree.defaults.core.dblclick_toggle
     */
-  var dblclick_toggle: js.UndefOr[Boolean] = js.native
+  var dblclick_toggle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a callback called with a single object parameter in the instance's scope when something goes wrong
     * (operation prevented, ajax failed, etc)
     * @name $.jstree.defaults.core.error
     */
-  def error(): js.Any = js.native
+  def error(): js.Any
   
   /**
     * if left as `true` all parents of all selected nodes will be opened once the tree loads
     * (so that all selected nodes are visible to the user)
     * @name $.jstree.defaults.core.expand_selected_onload
     */
-  var expand_selected_onload: js.UndefOr[Boolean] = js.native
+  var expand_selected_onload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Force node text to plain text (and escape HTML). Defaults to `false`
     * @name $.jstree.defaults.core.force_text
     */
-  var force_text: js.UndefOr[Boolean] = js.native
+  var force_text: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default keyboard shortcuts (an object where each key is the button name or combo - like 'enter', 'ctrl-space', 'p', etc
     * and the value is the function to execute in the instance's scope)
     * @name $.jstree.defaults.core.keyboard
     */
-  var keyboard: js.UndefOr[JSTreeStaticDefaultsCoreKeyboard] = js.native
+  var keyboard: js.UndefOr[JSTreeStaticDefaultsCoreKeyboard] = js.undefined
   
   /**
     * Should the loaded nodes be part of the state. Defaults to `false`
     * @name $.jstree.defaults.core.dblclick_toggle
     */
-  var loaded_state: js.UndefOr[Boolean] = js.native
+  var loaded_state: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a boolean indicating if multiple nodes can be selected
     * @name $.jstree.defaults.core.multiple
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Should the last active node be focused when the tree container is blurred and the focused again.
     * This helps working with screen readers. Defaults to `true`
     * @name $.jstree.defaults.core.restore_focus
     */
-  var restore_focus: js.UndefOr[Boolean] = js.native
+  var restore_focus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * configure the various strings used throughout the tree
@@ -162,13 +160,13 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.strings
     */
-  var strings: js.UndefOr[js.Any] = js.native
+  var strings: js.UndefOr[js.Any] = js.undefined
   
   /**
     * theme configuration object
     * @name $.jstree.defaults.core.themes
     */
-  var themes: js.UndefOr[JSTreeStaticDefaultsCoreThemes] = js.native
+  var themes: js.UndefOr[JSTreeStaticDefaultsCoreThemes] = js.undefined
   
   /**
     * if left as `true` web workers will be used to parse incoming JSON data where possible,
@@ -176,7 +174,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     * Workers are however about 30% slower. Defaults to `true`
     * @name $.jstree.defaults.core.worker
     */
-  var worker: js.UndefOr[Boolean] = js.native
+  var worker: js.UndefOr[Boolean] = js.undefined
 }
 object JSTreeStaticDefaultsCore {
   

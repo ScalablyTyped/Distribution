@@ -3,17 +3,15 @@ package typings.winrt.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOrientationSensorReading extends StObject {
   
-  var quaternion: SensorQuaternion = js.native
+  var quaternion: SensorQuaternion
   
-  var rotationMatrix: SensorRotationMatrix = js.native
+  var rotationMatrix: SensorRotationMatrix
   
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object IOrientationSensorReading {
   

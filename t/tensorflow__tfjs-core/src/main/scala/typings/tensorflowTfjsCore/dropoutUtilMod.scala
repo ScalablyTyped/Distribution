@@ -4,15 +4,16 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropoutUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/dropout_util", "getNoiseShape")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/dropout_util", JSImport.Namespace)
   @js.native
-  def getNoiseShape(x: Tensor[Rank]): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/dropout_util", "getNoiseShape")
-  @js.native
-  def getNoiseShape(x: Tensor[Rank], noiseShape: js.Array[Double]): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getNoiseShape(x: Tensor[Rank]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getNoiseShape(x: Tensor[Rank], noiseShape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any], noiseShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

@@ -15,7 +15,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Agents */
@@ -30,8 +29,8 @@ class Agents protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls DeleteAgent.
@@ -139,6 +138,10 @@ class Agents protected () extends Service {
 }
 object Agents {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Agents service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -147,18 +150,14 @@ object Agents {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Agents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Agents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Agents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Agents = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Agents = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Agents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Agents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Agents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Agents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Agents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Agents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Agents]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#deleteAgent}.

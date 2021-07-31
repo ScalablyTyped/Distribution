@@ -3,13 +3,11 @@ package typings.winjs.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a section of a Hub.
   **/
-@js.native
 trait HubSection extends StObject {
   
   //#endregion Methods
@@ -17,29 +15,29 @@ trait HubSection extends StObject {
   /**
     * Gets the DOM element that hosts the HubSection control's content.
     **/
-  var contentElement: HTMLElement = js.native
+  var contentElement: HTMLElement
   
   //#endregion Constructors
   //#region Methods
   /**
     * Releases resources held by this HubSection. Call this method when the HubSection is no longer needed. After calling this method, the HubSection becomes unusable.
     **/
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Gets the DOM element that hosts this HubSection.
     **/
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
   /**
     * Gets or sets the header for this HubSection.
     **/
-  var header: String = js.native
+  var header: String
   
   /**
     * Gets a value that specifies whether the header is static.
     **/
-  var isHeaderStatic: Boolean = js.native
+  var isHeaderStatic: Boolean
 }
 object HubSection {
   

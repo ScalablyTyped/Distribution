@@ -12,7 +12,7 @@ Test if a string is a North American Number Plan (phone) number.
 | Keywords           | nanp, phone, number, regex |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 8037 |
+| # downloads        | 9402 |
 | # stars            | 1 |
 
 ## Links

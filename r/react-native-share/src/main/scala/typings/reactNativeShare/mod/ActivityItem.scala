@@ -4,15 +4,13 @@ import typings.reactNativeShare.reactNativeShareStrings.text
 import typings.reactNativeShare.reactNativeShareStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityItem extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var `type`: text | url = js.native
+  var `type`: text | url
 }
 object ActivityItem {
   

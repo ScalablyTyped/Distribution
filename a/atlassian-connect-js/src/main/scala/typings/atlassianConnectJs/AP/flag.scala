@@ -2,7 +2,6 @@ package typings.atlassianConnectJs.AP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object flag {
   
-  @js.native
   trait Flag extends StObject {
     
     /**
       * Closes the Flag.
       */
-    def close(): Unit = js.native
+    def close(): Unit
   }
   object Flag {
     

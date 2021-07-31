@@ -2,46 +2,44 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationSmbResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source SMB file system location that is created.
     */
-  var AgentArns: js.UndefOr[AgentArnList] = js.native
+  var AgentArns: js.UndefOr[AgentArnList] = js.undefined
   
   /**
     * The time that the SMB location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The name of the Windows domain that the SMB server belongs to.
     */
-  var Domain: js.UndefOr[SmbDomain] = js.native
+  var Domain: js.UndefOr[SmbDomain] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the SMB location that was described.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the source SBM location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
     * The mount options that are available for DataSync to use to access an SMB location.
     */
-  var MountOptions: js.UndefOr[SmbMountOptions] = js.native
+  var MountOptions: js.UndefOr[SmbMountOptions] = js.undefined
   
   /**
     * The user who can mount the share, has the permissions to access files and folders in the SMB share.
     */
-  var User: js.UndefOr[SmbUser] = js.native
+  var User: js.UndefOr[SmbUser] = js.undefined
 }
 object DescribeLocationSmbResponse {
   

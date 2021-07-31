@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The unique key that identifies a certificate.
     */
-  var CertificateIdentifier: js.UndefOr[String] = js.native
+  var CertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the certificate.
     */
-  var CertificateType: js.UndefOr[String] = js.native
+  var CertificateType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether there is an override for the default certificate identifier.
     */
-  var CustomerOverride: js.UndefOr[BooleanOptional] = js.native
+  var CustomerOverride: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * If there is an override for the default certificate identifier, when the override expires.
     */
-  var CustomerOverrideValidTill: js.UndefOr[TStamp] = js.native
+  var CustomerOverrideValidTill: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The thumbprint of the certificate.
     */
-  var Thumbprint: js.UndefOr[String] = js.native
+  var Thumbprint: js.UndefOr[String] = js.undefined
   
   /**
     * The starting date from which the certificate is valid.
     */
-  var ValidFrom: js.UndefOr[TStamp] = js.native
+  var ValidFrom: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The final date that the certificate continues to be valid.
     */
-  var ValidTill: js.UndefOr[TStamp] = js.native
+  var ValidTill: js.UndefOr[TStamp] = js.undefined
 }
 object Certificate {
   

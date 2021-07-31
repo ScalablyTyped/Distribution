@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetSpotOptions extends StObject {
   
   /**
     * How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
     */
-  var allocationStrategy: js.UndefOr[String] = js.native
+  var allocationStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Behavior when a Spot Instance is interrupted. Valid values: `hibernate`, `stop`, `terminate`. Default: `terminate`.
     */
-  var instanceInterruptionBehavior: js.UndefOr[String] = js.native
+  var instanceInterruptionBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * Number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot `allocationStrategy` is set to `lowestPrice`. Default: `1`.
     */
-  var instancePoolsToUseCount: js.UndefOr[Double] = js.native
+  var instancePoolsToUseCount: js.UndefOr[Double] = js.undefined
 }
 object FleetSpotOptions {
   

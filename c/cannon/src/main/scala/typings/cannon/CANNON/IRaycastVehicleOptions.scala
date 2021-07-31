@@ -2,19 +2,17 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRaycastVehicleOptions extends StObject {
   
-  var chassisBody: js.UndefOr[Body] = js.native
+  var chassisBody: js.UndefOr[Body] = js.undefined
   
-  var indexLeftAxis: js.UndefOr[Double] = js.native
+  var indexLeftAxis: js.UndefOr[Double] = js.undefined
   
-  var indexRightAxis: js.UndefOr[Double] = js.native
+  var indexRightAxis: js.UndefOr[Double] = js.undefined
   
-  var indexUpAxis: js.UndefOr[Double] = js.native
+  var indexUpAxis: js.UndefOr[Double] = js.undefined
 }
 object IRaycastVehicleOptions {
   

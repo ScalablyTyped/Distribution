@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Intersect")
@@ -36,9 +35,8 @@ object Intersect {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Intersect.create")
-  @js.native
-  def create(model: IModel): Intersect = js.native
+  @scala.inline
+  def create(model: IModel): Intersect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Intersect]
   
   /**
     * Creates and returns a new Intersect instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object Intersect {
     * of the parent ListOperationAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Intersect.createIn")
-  @js.native
-  def createIn(container: ListOperationAction): Intersect = js.native
+  @scala.inline
+  def createIn(container: ListOperationAction): Intersect = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Intersect]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Intersect.structureTypeName")

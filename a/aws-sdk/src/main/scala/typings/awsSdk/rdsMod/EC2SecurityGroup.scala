@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2SecurityGroup extends StObject {
   
   /**
     * Specifies the id of the EC2 security group.
     */
-  var EC2SecurityGroupId: js.UndefOr[String] = js.native
+  var EC2SecurityGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the EC2 security group.
     */
-  var EC2SecurityGroupName: js.UndefOr[String] = js.native
+  var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     *  Specifies the AWS ID of the owner of the EC2 security group specified in the EC2SecurityGroupName field. 
     */
-  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the status of the EC2 security group. Status can be "authorizing", "authorized", "revoking", and "revoked".
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object EC2SecurityGroup {
   

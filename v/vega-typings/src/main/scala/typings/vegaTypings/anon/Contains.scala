@@ -6,17 +6,17 @@ import typings.vegaTypings.vegaTypingsStrings.content
 import typings.vegaTypings.vegaTypingsStrings.padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Contains extends AutoSize {
+trait Contains
+  extends StObject
+     with AutoSize {
   
-  var contains: js.UndefOr[content | padding] = js.native
+  var contains: js.UndefOr[content | padding] = js.undefined
   
-  var resize: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: AutoSizeType = js.native
+  var `type`: AutoSizeType
 }
 object Contains {
   

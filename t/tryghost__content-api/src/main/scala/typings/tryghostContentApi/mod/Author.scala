@@ -3,34 +3,33 @@ package typings.tryghostContentApi.mod
 import typings.tryghostContentApi.anon.Posts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author
-  extends Identification
+  extends StObject
+     with Identification
      with Metadata
      with GhostData {
   
-  var bio: js.UndefOr[Nullable[String]] = js.native
+  var bio: js.UndefOr[Nullable[String]] = js.undefined
   
-  var count: js.UndefOr[Posts] = js.native
+  var count: js.UndefOr[Posts] = js.undefined
   
-  var cover_image: js.UndefOr[Nullable[String]] = js.native
+  var cover_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var facebook: js.UndefOr[Nullable[String]] = js.native
+  var facebook: js.UndefOr[Nullable[String]] = js.undefined
   
-  var location: js.UndefOr[Nullable[String]] = js.native
+  var location: js.UndefOr[Nullable[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var profile_image: js.UndefOr[Nullable[String]] = js.native
+  var profile_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var twitter: js.UndefOr[Nullable[String]] = js.native
+  var twitter: js.UndefOr[Nullable[String]] = js.undefined
   
-  var url: js.UndefOr[Nullable[String]] = js.native
+  var url: js.UndefOr[Nullable[String]] = js.undefined
   
-  var website: js.UndefOr[Nullable[String]] = js.native
+  var website: js.UndefOr[Nullable[String]] = js.undefined
 }
 object Author {
   

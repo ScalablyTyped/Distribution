@@ -10,9 +10,9 @@ Esri Geocoding utility and search plugin for Leaflet.
 | ------------------ | :-------------: |
 | Full name          | esri-leaflet-geocoder |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 312816 |
+| # releases         | 7 |
+| # dependents       | 7 |
+| # downloads        | 414905 |
 | # stars            | 1 |
 
 ## Links

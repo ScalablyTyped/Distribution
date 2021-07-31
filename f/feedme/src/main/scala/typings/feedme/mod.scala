@@ -14,7 +14,6 @@ import typings.node.streamMod.Writable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,18 +29,17 @@ object mod {
     def this(buffer: Boolean) = this()
   }
   
-  @js.native
   trait Attrs extends StObject {
     
-    var local: String = js.native
+    var local: String
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Attrs {
     
@@ -71,10 +69,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Document extends Meta {
+  trait Document
+    extends StObject
+       with Meta {
     
-    var items: js.Array[Item] = js.native
+    var items: js.Array[Item]
   }
   object Document {
     
@@ -141,12 +140,11 @@ object mod {
     def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   }
   
-  @js.native
   trait Guid extends StObject {
     
-    var ispermalink: String = js.native
+    var ispermalink: String
     
-    var text: String = js.native
+    var text: String
   }
   object Guid {
     
@@ -167,18 +165,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var link: String = js.native
+    var link: String
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: String = js.native
+    var width: String
   }
   object Image {
     
@@ -208,35 +205,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Item
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var author: String = js.native
+    var author: String
     
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
     
-    var comments: String = js.native
+    var comments: String
     
-    var date: String = js.native
+    var date: String
     
-    var description: String = js.native
+    var description: String
     
-    var enclosures: js.Array[String] = js.native
+    var enclosures: js.Array[String]
     
-    var guid: String | Guid = js.native
+    var guid: String | Guid
     
-    var image: Image = js.native
+    var image: Image
     
-    var link: String = js.native
+    var link: String
     
-    var origlink: String = js.native
+    var origlink: String
     
-    var pubdate: String = js.native
+    var pubdate: String
     
-    var summary: String = js.native
+    var summary: String
     
-    var title: String = js.native
+    var title: String
   }
   object Item {
     
@@ -310,41 +307,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Meta
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var author: String = js.native
+    var author: String
     
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
     
-    var copyright: String = js.native
+    var copyright: String
     
-    var date: String = js.native
+    var date: String
     
-    var description: String = js.native
+    var description: String
     
-    var favicon: String = js.native
+    var favicon: String
     
-    var generator: String = js.native
+    var generator: String
     
-    var image: Image = js.native
+    var image: Image
     
-    var language: String = js.native
+    var language: String
     
-    var lastbuilddate: String = js.native
+    var lastbuilddate: String
     
-    var link: String = js.native
+    var link: String
     
-    var pubdate: String = js.native
+    var pubdate: String
     
     // "#version": string;
-    var title: String = js.native
+    var title: String
     
     // "#ns": NS[];
-    var `type`: Type = js.native
+    var `type`: Type
     
-    var xmlurl: String = js.native
+    var xmlurl: String
   }
   object Meta {
     

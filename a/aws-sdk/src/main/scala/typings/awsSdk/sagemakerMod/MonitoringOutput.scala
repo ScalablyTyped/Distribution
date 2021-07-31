@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringOutput extends StObject {
   
   /**
     * The Amazon S3 storage location where the results of a monitoring job are saved.
     */
-  var S3Output: MonitoringS3Output = js.native
+  var S3Output: MonitoringS3Output
 }
 object MonitoringOutput {
   

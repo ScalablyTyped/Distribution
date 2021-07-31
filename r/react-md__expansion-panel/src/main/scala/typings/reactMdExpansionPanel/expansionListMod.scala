@@ -9,23 +9,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expansionListMod {
   
   @JSImport("@react-md/expansion-panel/types/ExpansionList", "ExpansionList")
   @js.native
-  val ExpansionList: ForwardRefExoticComponent[ExpansionListProps with RefAttributes[HTMLDivElement]] = js.native
+  val ExpansionList: ForwardRefExoticComponent[ExpansionListProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait ExpansionListProps extends HTMLAttributes[HTMLDivElement] {
+  trait ExpansionListProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * This should be 2 or more expansion panel components.
       */
     @JSName("children")
-    var children_ExpansionListProps: ReactNode = js.native
+    var children_ExpansionListProps: ReactNode
     
     /**
       * The keydown event handler that allows for focusing the next/previous panel
@@ -33,7 +33,7 @@ object expansionListMod {
       * `usePanels` hook automatically.
       */
     @JSName("onKeyDown")
-    var onKeyDown_ExpansionListProps: KeyboardEventHandler[HTMLDivElement] = js.native
+    var onKeyDown_ExpansionListProps: KeyboardEventHandler[HTMLDivElement]
   }
   object ExpansionListProps {
     

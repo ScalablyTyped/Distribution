@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.chromeApps.chromeAppsStrings.serviceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -20,20 +19,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mdns {
   
-  @js.native
   trait Service extends StObject {
     
     /** The IP address of an mDNS advertised service. */
-    var ipAddress: String = js.native
+    var ipAddress: String
     
     /** Metadata for an mDNS advertised service. */
-    var serviceData: js.Array[String] = js.native
+    var serviceData: js.Array[String]
     
     /** The host:port pair of an mDNS advertised service. */
-    var serviceHostPort: String = js.native
+    var serviceHostPort: String
     
     /** The service name of an mDNS advertised service, .. */
-    var serviceName: String = js.native
+    var serviceName: String
   }
   object Service {
     
@@ -68,10 +66,9 @@ object mdns {
     * [key in ValidServiceTypes]: string
     */
   /* Inlined std.Record<chrome-apps.chrome.mdns.ValidServiceTypes, string> */
-  @js.native
   trait ServiceTypes extends StObject {
     
-    var serviceType: String = js.native
+    var serviceType: String
   }
   object ServiceTypes {
     

@@ -4,31 +4,29 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackInstanceEntry extends StObject {
   
-  def collapse(): js.UndefOr[Boolean] = js.native
+  def collapse(): js.UndefOr[Boolean]
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var container: JQuery[HTMLDivElement] = js.native
+  var container: JQuery[HTMLDivElement]
   
-  var content: JQuery[HTMLDivElement] = js.native
+  var content: JQuery[HTMLDivElement]
   
-  var contentWrap: JQuery[HTMLDivElement] = js.native
+  var contentWrap: JQuery[HTMLDivElement]
   
-  def expand(): js.UndefOr[Boolean] = js.native
+  def expand(): js.UndefOr[Boolean]
   
-  var header: JQuery[HTMLDivElement] = js.native
+  var header: JQuery[HTMLDivElement]
   
-  def isExpanded(): Boolean = js.native
+  def isExpanded(): Boolean
   
-  var title: JQuery[HTMLDivElement] = js.native
+  var title: JQuery[HTMLDivElement]
   
-  def toggle(): Boolean = js.native
+  def toggle(): Boolean
 }
 object StackInstanceEntry {
   

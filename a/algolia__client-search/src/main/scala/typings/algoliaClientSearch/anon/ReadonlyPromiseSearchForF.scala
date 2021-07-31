@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.SearchForFacetValuesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.SearchForFacetValuesResponse>> */
-@js.native
 trait ReadonlyPromiseSearchForF extends StObject {
   
-  def `catch`[TResult](): js.Promise[SearchForFacetValuesResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[SearchForFacetValuesResponse | TResult]
   
-  def `finally`(): js.Promise[SearchForFacetValuesResponse] = js.native
+  def `finally`(): js.Promise[SearchForFacetValuesResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseSearchForF {
   

@@ -3,7 +3,6 @@ package typings.jquery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait BaseJQueryEventObject
-  extends typings.std.Event {
+  extends StObject
+     with typings.std.Event {
   
   /**
     * The current DOM element within the event bubbling phase.

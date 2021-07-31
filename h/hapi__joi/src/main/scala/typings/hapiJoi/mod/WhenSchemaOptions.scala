@@ -2,21 +2,19 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhenSchemaOptions extends StObject {
   
   /**
     * the alternative schema type if the condition is false. Required if then is missing.
     */
-  var otherwise: js.UndefOr[SchemaLike] = js.native
+  var otherwise: js.UndefOr[SchemaLike] = js.undefined
   
   /**
     * the alternative schema type if the condition is true. Required if otherwise is missing.
     */
-  var `then`: js.UndefOr[SchemaLike] = js.native
+  var `then`: js.UndefOr[SchemaLike] = js.undefined
 }
 object WhenSchemaOptions {
   

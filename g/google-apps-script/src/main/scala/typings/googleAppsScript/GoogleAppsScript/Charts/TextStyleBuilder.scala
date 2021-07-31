@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,16 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setColor('#0000FF').setFontName('Ariel').setFontSize(26);
   *     var style = textStyleBuilder.build();
   */
-@js.native
 trait TextStyleBuilder extends StObject {
   
-  def build(): TextStyle = js.native
+  def build(): TextStyle
   
-  def setColor(cssValue: String): TextStyleBuilder = js.native
+  def setColor(cssValue: String): TextStyleBuilder
   
-  def setFontName(fontName: String): TextStyleBuilder = js.native
+  def setFontName(fontName: String): TextStyleBuilder
   
-  def setFontSize(fontSize: Double): TextStyleBuilder = js.native
+  def setFontSize(fontSize: Double): TextStyleBuilder
 }
 object TextStyleBuilder {
   

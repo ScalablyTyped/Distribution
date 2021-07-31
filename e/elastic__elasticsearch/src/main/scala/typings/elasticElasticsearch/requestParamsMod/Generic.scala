@@ -2,23 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Generic extends StObject {
   
-  var error_trace: js.UndefOr[Boolean] = js.native
+  var error_trace: js.UndefOr[Boolean] = js.undefined
   
-  var filter_path: js.UndefOr[String | js.Array[String]] = js.native
+  var filter_path: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var human: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var pretty: js.UndefOr[Boolean] = js.native
+  var pretty: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object Generic {
   

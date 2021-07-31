@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintTaskProperties extends TaskProperties {
+trait PrintTaskProperties
+  extends StObject
+     with TaskProperties {
   
   /**
     * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html#updateDelay)
     */
-  var updateDelay: js.UndefOr[Double] = js.native
+  var updateDelay: js.UndefOr[Double] = js.undefined
 }
 object PrintTaskProperties {
   

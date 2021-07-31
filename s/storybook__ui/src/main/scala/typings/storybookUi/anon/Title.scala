@@ -3,21 +3,19 @@ package typings.storybookUi.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Title extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var left: String | Element = js.native
+  var left: String | Element
   
-  def onClick(): Unit = js.native
+  def onClick(): Unit
   
-  var right: Element = js.native
+  var right: Element
   
-  var title: String = js.native
+  var title: String
 }
 object Title {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventType extends StObject {
   
   /**
     * The entity type ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * Timestamp of when the event type was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The event type description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The event type entity types.
     */
-  var entityTypes: js.UndefOr[NonEmptyListOfStrings] = js.native
+  var entityTypes: js.UndefOr[NonEmptyListOfStrings] = js.undefined
   
   /**
     * The event type event variables.
     */
-  var eventVariables: js.UndefOr[ListOfStrings] = js.native
+  var eventVariables: js.UndefOr[ListOfStrings] = js.undefined
   
   /**
     * The event type labels.
     */
-  var labels: js.UndefOr[ListOfStrings] = js.native
+  var labels: js.UndefOr[ListOfStrings] = js.undefined
   
   /**
     * Timestamp of when the event type was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The event type name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object EventType {
   

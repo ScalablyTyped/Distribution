@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of the timespan of the items to include in scanning.
   * Currently only supported when inspecting Google Cloud Storage and BigQuery.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2TimespanConfig extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaGooglePrivacyDlpV2TimespanConfig extends StObject {
     * since the last time the JobTrigger executed. This will be based on the
     * time of the execution of the last run of the JobTrigger.
     */
-  var enableAutoPopulationOfTimespanConfig: js.UndefOr[Boolean] = js.native
+  var enableAutoPopulationOfTimespanConfig: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Exclude files or rows newer than this value. If set to zero, no upper
     * time limit is applied.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Exclude files or rows older than this value.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specification of the field containing the timestamp of scanned items.
@@ -40,7 +38,7 @@ trait SchemaGooglePrivacyDlpV2TimespanConfig extends StObject {
     * will be scanned if the timestamp property does not exist or its value is
     * empty or invalid.
     */
-  var timestampField: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var timestampField: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TimespanConfig {
   

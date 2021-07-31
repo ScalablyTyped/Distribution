@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminListDevicesResponse extends StObject {
   
   /**
     * The devices in the list of devices response.
     */
-  var Devices: js.UndefOr[DeviceListType] = js.native
+  var Devices: js.UndefOr[DeviceListType] = js.undefined
   
   /**
     * The pagination token.
     */
-  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.native
+  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.undefined
 }
 object AdminListDevicesResponse {
   

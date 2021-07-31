@@ -2,17 +2,17 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellOutputOptions extends IShellSpawnOptions {
+trait IShellOutputOptions
+  extends StObject
+     with IShellSpawnOptions {
   
-  var fatalOnError: js.UndefOr[Boolean] = js.native
+  var fatalOnError: js.UndefOr[Boolean] = js.undefined
   
-  var fatalOnNotFound: js.UndefOr[Boolean] = js.native
+  var fatalOnNotFound: js.UndefOr[Boolean] = js.undefined
   
-  var showError: js.UndefOr[Boolean] = js.native
+  var showError: js.UndefOr[Boolean] = js.undefined
 }
 object IShellOutputOptions {
   

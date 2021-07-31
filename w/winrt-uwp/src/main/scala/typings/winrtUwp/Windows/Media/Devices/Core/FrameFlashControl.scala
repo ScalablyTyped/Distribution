@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the flash settings for a frame in a variable photo sequence. */
-@js.native
 trait FrameFlashControl extends StObject {
   
   /** Gets or sets a value indicating whether flash settings are automatically set for a frame in a variable photo sequence. */
-  var auto: Boolean = js.native
+  var auto: Boolean
   
   /** Gets or sets the flash mode for a frame in a variable photo sequence. */
-  var mode: FrameFlashMode = js.native
+  var mode: FrameFlashMode
   
   /** Gets or sets the flash power for a frame in a variable photo sequence. */
-  var powerPercent: Double = js.native
+  var powerPercent: Double
   
   /** Gets or sets a value indicating if red eye reduction is enabled for a frame in a variable photo sequence. */
-  var redEyeReduction: Boolean = js.native
+  var redEyeReduction: Boolean
 }
 object FrameFlashControl {
   

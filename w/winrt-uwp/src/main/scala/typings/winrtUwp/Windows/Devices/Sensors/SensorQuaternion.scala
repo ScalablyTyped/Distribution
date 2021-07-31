@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Quaternion. */
-@js.native
 trait SensorQuaternion extends StObject {
   
   /** Gets the w-value of the Quaternion. */
-  var w: Double = js.native
+  var w: Double
   
   /** Gets the x-value of the Quaternion. */
-  var x: Double = js.native
+  var x: Double
   
   /** Gets the y-value of the Quaternion. */
-  var y: Double = js.native
+  var y: Double
   
   /** Gets the z-value of the Quaternion. */
-  var z: Double = js.native
+  var z: Double
 }
 object SensorQuaternion {
   

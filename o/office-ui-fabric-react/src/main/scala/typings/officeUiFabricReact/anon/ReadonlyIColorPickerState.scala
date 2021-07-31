@@ -3,16 +3,14 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.interfacesMod.IColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base.IColorPickerState> */
-@js.native
 trait ReadonlyIColorPickerState extends StObject {
   
-  val color: IColor = js.native
+  val color: IColor
   
-  val editingColor: js.UndefOr[Component] = js.native
+  val editingColor: js.UndefOr[Component] = js.undefined
 }
 object ReadonlyIColorPickerState {
   

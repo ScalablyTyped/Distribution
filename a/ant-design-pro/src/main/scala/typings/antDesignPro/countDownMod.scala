@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countDownMod {
@@ -17,16 +16,15 @@ object countDownMod {
   
   type CountDown = Component[ICountDownProps, js.Any, js.Any]
   
-  @js.native
   trait ICountDownProps extends StObject {
     
-    var format: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.native
+    var format: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: Date | Double = js.native
+    var target: Date | Double
   }
   object ICountDownProps {
     

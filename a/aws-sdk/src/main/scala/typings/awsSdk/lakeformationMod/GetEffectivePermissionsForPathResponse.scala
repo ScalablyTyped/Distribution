@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEffectivePermissionsForPathResponse extends StObject {
   
   /**
     * A continuation token, if this is not the first call to retrieve this list.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of the permissions for the specified table or database resource located at the path in Amazon S3.
     */
-  var Permissions: js.UndefOr[PrincipalResourcePermissionsList] = js.native
+  var Permissions: js.UndefOr[PrincipalResourcePermissionsList] = js.undefined
 }
 object GetEffectivePermissionsForPathResponse {
   

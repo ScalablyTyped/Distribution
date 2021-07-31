@@ -3,19 +3,19 @@ package typings.loadGoogleMapsApi
 import typings.loadGoogleMapsApi.anon.Typeofmaps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("load-google-maps-api", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Typeofmaps] = js.native
-  @JSImport("load-google-maps-api", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Typeofmaps] = js.native
+  @scala.inline
+  def apply(): js.Promise[Typeofmaps] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Typeofmaps]]
+  @scala.inline
+  def apply(options: Options): js.Promise[Typeofmaps] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Typeofmaps]]
   
+  @JSImport("load-google-maps-api", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -23,33 +23,33 @@ object mod {
       *
       * Default Value `'https://maps.googleapis.com/maps/api/js'`
       */
-    var apiUrl: js.UndefOr[String] = js.native
+    var apiUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Client usage reporting channel
       *
       * https://developers.google.com/maps/premium/reports/usage-reports#channels
       */
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
     /**
       * Client ID
       *
       * https://developers.google.com/maps/documentation/javascript/get-api-key#specifying-a-client-id-when-loading-the-api
       */
-    var client: js.UndefOr[String] = js.native
+    var client: js.UndefOr[String] = js.undefined
     
     /**
       * Your API key
       *
       * https://developers.google.com/maps/documentation/javascript/get-api-key#step-2-add-the-api-key-to-your-application
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * https://developers.google.com/maps/documentation/javascript/localization#Language
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * Supplemental libraries to load
@@ -58,26 +58,26 @@ object mod {
       *
       * https://developers.google.com/maps/documentation/javascript/libraries
       */
-    var libraries: js.UndefOr[js.Array[String]] = js.native
+    var libraries: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * https://developers.google.com/maps/documentation/javascript/localization#Region
       */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * Time in milliseconds before rejecting the Promise
       *
       * Default Value `10000`
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * API Version
       *
       * https://developers.google.com/maps/documentation/javascript/versions
       */
-    var v: js.UndefOr[String] = js.native
+    var v: js.UndefOr[String] = js.undefined
   }
   object Options {
     

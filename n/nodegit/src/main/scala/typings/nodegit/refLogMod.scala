@@ -5,7 +5,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refLogMod {
@@ -29,17 +28,18 @@ object refLogMod {
   /* static members */
   object Reflog {
     
-    @JSImport("nodegit/ref-log", "Reflog.delete")
+    @JSImport("nodegit/ref-log", "Reflog")
     @js.native
-    def delete(repo: Repository, name: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/ref-log", "Reflog.read")
-    @js.native
-    def read(repo: Repository, name: String): js.Promise[Reflog] = js.native
+    @scala.inline
+    def delete(repo: Repository, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/ref-log", "Reflog.rename")
-    @js.native
-    def rename(repo: Repository, oldName: String, name: String): Double = js.native
+    @scala.inline
+    def read(repo: Repository, name: String): js.Promise[Reflog] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reflog]]
+    
+    @scala.inline
+    def rename(repo: Repository, oldName: String, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(repo.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("nodegit/ref-log", "ReflogEntry")

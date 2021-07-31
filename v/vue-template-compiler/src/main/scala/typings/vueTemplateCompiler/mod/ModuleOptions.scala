@@ -2,23 +2,21 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleOptions extends StObject {
   
-  def genData(el: ASTElement): String = js.native
+  def genData(el: ASTElement): String
   
-  def postTransformNode(el: ASTElement): Unit = js.native
+  def postTransformNode(el: ASTElement): Unit
   
-  def preTransformNode(el: ASTElement): js.UndefOr[ASTElement] = js.native
+  def preTransformNode(el: ASTElement): js.UndefOr[ASTElement]
   
-  var staticKeys: js.UndefOr[js.Array[String]] = js.native
+  var staticKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var transformCode: js.UndefOr[js.Function2[/* el */ ASTElement, /* code */ String, String]] = js.native
+  var transformCode: js.UndefOr[js.Function2[/* el */ ASTElement, /* code */ String, String]] = js.undefined
   
-  def transformNode(el: ASTElement): js.UndefOr[ASTElement] = js.native
+  def transformNode(el: ASTElement): js.UndefOr[ASTElement]
 }
 object ModuleOptions {
   

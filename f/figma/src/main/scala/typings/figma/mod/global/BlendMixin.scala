@@ -2,21 +2,19 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlendMixin extends StObject {
   
-  var blendMode: BlendMode = js.native
+  var blendMode: BlendMode
   
-  var effectStyleId: String = js.native
+  var effectStyleId: String
   
-  var effects: js.Array[Effect] = js.native
+  var effects: js.Array[Effect]
   
-  var isMask: Boolean = js.native
+  var isMask: Boolean
   
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object BlendMixin {
   

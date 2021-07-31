@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.`no-open-quote`
   - typings.preact.preactStrings.`open-quote`
 */
-trait Quote extends _ContentList
+trait Quote
+  extends StObject
+     with _ContentList
 object Quote {
   
   @scala.inline

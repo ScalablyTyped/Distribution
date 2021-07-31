@@ -2,82 +2,80 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberValidateResponse extends StObject {
   
   /**
     * The carrier or service provider that the phone number is currently registered with. In some countries and regions, this value may be the carrier or service provider that the phone number was originally registered with.
     */
-  var Carrier: js.UndefOr[string] = js.native
+  var Carrier: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the city where the phone number was originally registered.
     */
-  var City: js.UndefOr[string] = js.native
+  var City: js.UndefOr[string] = js.undefined
   
   /**
     * The cleansed phone number, in E.164 format, for the location where the phone number was originally registered.
     */
-  var CleansedPhoneNumberE164: js.UndefOr[string] = js.native
+  var CleansedPhoneNumberE164: js.UndefOr[string] = js.undefined
   
   /**
     * The cleansed phone number, in the format for the location where the phone number was originally registered.
     */
-  var CleansedPhoneNumberNational: js.UndefOr[string] = js.native
+  var CleansedPhoneNumberNational: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the country or region where the phone number was originally registered.
     */
-  var Country: js.UndefOr[string] = js.native
+  var Country: js.UndefOr[string] = js.undefined
   
   /**
     * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the phone number was originally registered.
     */
-  var CountryCodeIso2: js.UndefOr[string] = js.native
+  var CountryCodeIso2: js.UndefOr[string] = js.undefined
   
   /**
     * The numeric code for the country or region where the phone number was originally registered.
     */
-  var CountryCodeNumeric: js.UndefOr[string] = js.native
+  var CountryCodeNumeric: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the county where the phone number was originally registered.
     */
-  var County: js.UndefOr[string] = js.native
+  var County: js.UndefOr[string] = js.undefined
   
   /**
     * The two-character code, in ISO 3166-1 alpha-2 format, that was sent in the request body.
     */
-  var OriginalCountryCodeIso2: js.UndefOr[string] = js.native
+  var OriginalCountryCodeIso2: js.UndefOr[string] = js.undefined
   
   /**
     * The phone number that was sent in the request body.
     */
-  var OriginalPhoneNumber: js.UndefOr[string] = js.native
+  var OriginalPhoneNumber: js.UndefOr[string] = js.undefined
   
   /**
     * The description of the phone type. Valid values are: MOBILE, LANDLINE, VOIP,
     INVALID, PREPAID, and OTHER.
     */
-  var PhoneType: js.UndefOr[string] = js.native
+  var PhoneType: js.UndefOr[string] = js.undefined
   
   /**
     * The phone type, represented by an integer. Valid values are: 0 (mobile), 1 (landline), 2 (VoIP), 3 (invalid), 4 (other), and 5 (prepaid).
     */
-  var PhoneTypeCode: js.UndefOr[integer] = js.native
+  var PhoneTypeCode: js.UndefOr[integer] = js.undefined
   
   /**
     * The time zone for the location where the phone number was originally registered.
     */
-  var Timezone: js.UndefOr[string] = js.native
+  var Timezone: js.UndefOr[string] = js.undefined
   
   /**
     * The postal or ZIP code for the location where the phone number was originally registered.
     */
-  var ZipCode: js.UndefOr[string] = js.native
+  var ZipCode: js.UndefOr[string] = js.undefined
 }
 object NumberValidateResponse {
   

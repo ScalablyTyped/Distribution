@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.table.XCell
 import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the spreadsheet that contains a cell range.
   * @see com.sun.star.sheet.SheetCellRange
   */
-@js.native
-trait XSheetCellRange extends XCellRange {
+trait XSheetCellRange
+  extends StObject
+     with XCellRange {
   
   /**
     * returns the spreadsheet interface which contains the cell range.
@@ -21,7 +21,7 @@ trait XSheetCellRange extends XCellRange {
     * @see com.sun.star.sheet.SheetCellRange
     * @see com.sun.star.sheet.SheetCellRanges
     */
-  val Spreadsheet: XSpreadsheet = js.native
+  val Spreadsheet: XSpreadsheet
   
   /**
     * returns the spreadsheet interface which contains the cell range.
@@ -29,7 +29,7 @@ trait XSheetCellRange extends XCellRange {
     * @see com.sun.star.sheet.SheetCellRange
     * @see com.sun.star.sheet.SheetCellRanges
     */
-  def getSpreadsheet(): XSpreadsheet = js.native
+  def getSpreadsheet(): XSpreadsheet
 }
 object XSheetCellRange {
   

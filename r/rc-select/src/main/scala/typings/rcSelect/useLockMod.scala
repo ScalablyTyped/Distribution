@@ -2,15 +2,16 @@ package typings.rcSelect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLockMod {
   
-  @JSImport("rc-select/lib/hooks/useLock", JSImport.Default)
+  @JSImport("rc-select/lib/hooks/useLock", JSImport.Namespace)
   @js.native
-  def default(): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = js.native
-  @JSImport("rc-select/lib/hooks/useLock", JSImport.Default)
-  @js.native
-  def default(duration: Double): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
+  @scala.inline
+  def default(duration: Double): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
 }

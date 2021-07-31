@@ -2,15 +2,13 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModalStackedMapKeyValuePair extends StObject {
   
-  var key: IModalInstanceService = js.native
+  var key: IModalInstanceService
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IModalStackedMapKeyValuePair {
   

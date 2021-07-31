@@ -11,8 +11,8 @@ React package for DOM factory methods.
 | Full name          | react-dom-factories |
 | Keywords           | react |
 | # releases         | 1 |
-| # dependents       | 113 |
-| # downloads        | 11101623 |
+| # dependents       | 115 |
+| # downloads        | 12283872 |
 | # stars            | 1 |
 
 ## Links

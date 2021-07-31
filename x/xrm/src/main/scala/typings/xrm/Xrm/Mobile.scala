@@ -2,13 +2,11 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for methods to create and manage records in the mobile clients (for phones tablets).
   */
-@js.native
 trait Mobile extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Mobile extends StObject {
     * @deprecated Use {@link Xrm.WebApi.offline} instead.  Xrm.WebApi.offline is implemented differently than Xrm.Mobile.offline
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
-  var offline: MobileOffline = js.native
+  var offline: MobileOffline
 }
 object Mobile {
   

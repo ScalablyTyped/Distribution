@@ -2,35 +2,33 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for a collection of Applications.
   */
-@js.native
 trait SchemaApplicationsListResponse extends StObject {
   
   /**
     * List of applications that support data transfer and are also installed
     * for the customer.
     */
-  var applications: js.UndefOr[js.Array[SchemaApplication]] = js.native
+  var applications: js.UndefOr[js.Array[SchemaApplication]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a collection of Applications.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token which will be used to specify next page in list API.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaApplicationsListResponse {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionUrls extends StObject {
   
   /**
     * Url of the extension icon
     */
-  var extensionIcon: String = js.native
+  var extensionIcon: String
   
   /**
     * Link to view the extension details page
     */
-  var extensionPage: String = js.native
+  var extensionPage: String
 }
 object ExtensionUrls {
   

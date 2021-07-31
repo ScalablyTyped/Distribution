@@ -33,7 +33,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkoutMod {
@@ -44,57 +43,48 @@ object checkoutMod {
   /* static members */
   object Checkout {
     
+    @JSImport("nodegit/checkout", "Checkout")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Patch head checkout to automatically coerce objects.
       */
-    @JSImport("nodegit/checkout", "Checkout.head")
-    @js.native
-    def head(repo: Repository): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.head")
-    @js.native
-    def head(repo: Repository, options: CheckoutOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def head(repo: Repository): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def head(repo: Repository, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Patch index checkout to automatically coerce objects.
       */
-    @JSImport("nodegit/checkout", "Checkout.index")
-    @js.native
-    def index(repo: Repository, The: Index): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.index")
-    @js.native
-    def index(repo: Repository, The: Index, options: CheckoutOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def index(repo: Repository, The: Index): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def index(repo: Repository, The: Index, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("nodegit/checkout", "Checkout.initOptions")
-    @js.native
-    def initOptions(opts: CheckoutOptions, version: Double): Double = js.native
+    @scala.inline
+    def initOptions(opts: CheckoutOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Commit): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Commit, options: CheckoutOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def tree(repo: Repository, treeish: Commit): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Commit, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     /**
       * Patch tree checkout to automatically coerce objects.
       */
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Oid): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Oid, options: CheckoutOptions): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Reference): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Reference, options: CheckoutOptions): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Tree): js.Promise[Unit] = js.native
-    @JSImport("nodegit/checkout", "Checkout.tree")
-    @js.native
-    def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def tree(repo: Repository, treeish: Oid): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Oid, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Reference): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Reference, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Tree): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

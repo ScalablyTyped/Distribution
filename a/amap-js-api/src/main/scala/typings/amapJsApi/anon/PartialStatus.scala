@@ -2,36 +2,34 @@ package typings.amapJsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<amap-js-api.AMap.Map.Status> */
-@js.native
 trait PartialStatus extends StObject {
   
-  var animateEnable: js.UndefOr[Boolean] = js.native
+  var animateEnable: js.UndefOr[Boolean] = js.undefined
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dragEnable: js.UndefOr[Boolean] = js.native
+  var dragEnable: js.UndefOr[Boolean] = js.undefined
   
-  var isHotspot: js.UndefOr[Boolean] = js.native
+  var isHotspot: js.UndefOr[Boolean] = js.undefined
   
-  var jogEnable: js.UndefOr[Boolean] = js.native
+  var jogEnable: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardEnable: js.UndefOr[Boolean] = js.native
+  var keyboardEnable: js.UndefOr[Boolean] = js.undefined
   
-  var pitchEnable: js.UndefOr[Boolean] = js.native
+  var pitchEnable: js.UndefOr[Boolean] = js.undefined
   
-  var resizeEnable: js.UndefOr[Boolean] = js.native
+  var resizeEnable: js.UndefOr[Boolean] = js.undefined
   
-  var rotateEnable: js.UndefOr[Boolean] = js.native
+  var rotateEnable: js.UndefOr[Boolean] = js.undefined
   
-  var scrollWheel: js.UndefOr[Boolean] = js.native
+  var scrollWheel: js.UndefOr[Boolean] = js.undefined
   
-  var touchZoom: js.UndefOr[Boolean] = js.native
+  var touchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var zoomEnable: js.UndefOr[Boolean] = js.native
+  var zoomEnable: js.UndefOr[Boolean] = js.undefined
 }
 object PartialStatus {
   

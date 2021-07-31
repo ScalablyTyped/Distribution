@@ -5,60 +5,51 @@ import typings.jqueryDeferred.libMod.JQueryDeferred
 import typings.jqueryDeferred.libMod.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("jquery-deferred", "default.Callbacks")
+    @JSImport("jquery-deferred", JSImport.Default)
     @js.native
-    def Callbacks(flags: js.Any): JQueryCallback = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jquery-deferred", "default.Deferred")
-    @js.native
-    def Deferred(): JQueryDeferred = js.native
-    @JSImport("jquery-deferred", "default.Deferred")
-    @js.native
-    def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, _]): JQueryDeferred = js.native
+    @scala.inline
+    def Callbacks(flags: js.Any): JQueryCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("Callbacks")(flags.asInstanceOf[js.Any]).asInstanceOf[JQueryCallback]
     
-    @JSImport("jquery-deferred", "default.each")
-    @js.native
+    @scala.inline
+    def Deferred(): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")().asInstanceOf[JQueryDeferred]
+    @scala.inline
+    def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, js.Any]): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")(beforeStart.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred]
+    
+    @scala.inline
     def each(
       collection: js.Any,
-      callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, _]
-    ): js.Any = js.native
+      callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, js.Any]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("jquery-deferred", "default.extend")
-    @js.native
-    def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = js.native
-    @JSImport("jquery-deferred", "default.extend")
-    @js.native
-    def extend(target: js.Any, objs: js.Any*): js.Object = js.native
+    @scala.inline
+    def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def extend(target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("jquery-deferred", "default.isArray")
-    @js.native
-    def isArray(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("jquery-deferred", "default.isFunction")
-    @js.native
-    def isFunction(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("jquery-deferred", "default.isPlainObject")
-    @js.native
-    def isPlainObject(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isPlainObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("jquery-deferred", "default.noop")
-    @js.native
-    def noop(): js.Any = js.native
+    @scala.inline
+    def noop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Any]
     
-    @JSImport("jquery-deferred", "default.when")
-    @js.native
-    def when(deferreds: js.Any*): JQueryPromise = js.native
+    @scala.inline
+    def `type`(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("jquery-deferred", "default.type")
-    @js.native
-    def `type`(obj: js.Any): String = js.native
+    @scala.inline
+    def when(deferreds: js.Any*): JQueryPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(deferreds.asInstanceOf[js.Any]).asInstanceOf[JQueryPromise]
   }
 }

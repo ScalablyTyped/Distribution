@@ -2,17 +2,15 @@ package typings.firebaseMessagingTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ServiceWorkerRegistration extends StObject {
     
-    var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.native
+    var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.undefined
     
-    var vapidKey: js.UndefOr[String] = js.native
+    var vapidKey: js.UndefOr[String] = js.undefined
   }
   object ServiceWorkerRegistration {
     

@@ -37,22 +37,20 @@ import typings.reactNative.reactNativeStrings.telephoneNumber
 import typings.reactNative.reactNativeStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInputIOSProps extends StObject {
   
   /**
     * enum('never', 'while-editing', 'unless-editing', 'always')
     * When the clear button should appear on the right side of the text view
     */
-  var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.native
+  var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.undefined
   
   /**
     * If true, clears the text field automatically when editing begins
     */
-  var clearTextOnFocus: js.UndefOr[Boolean] = js.native
+  var clearTextOnFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the types of data converted to clickable URLs in the text input.
@@ -70,25 +68,25 @@ trait TextInputIOSProps extends StObject {
     * - `'none'`
     * - `'all'`
     */
-  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.native
+  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
   
   /**
     * If true, the keyboard disables the return key when there is no text and automatically enables it when there is text.
     * The default value is false.
     */
-  var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.native
+  var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the color of the keyboard.
     */
-  var keyboardAppearance: js.UndefOr[default | light | dark] = js.native
+  var keyboardAppearance: js.UndefOr[default | light | dark] = js.undefined
   
   /**
     * Provide rules for your password.
     * For example, say you want to require a password with at least eight characters consisting of a mix of uppercase and lowercase letters, at least one number, and at most two consecutive characters.
     * "required: upper; required: lower; required: digit; max-consecutive: 2; minlength: 8;"
     */
-  var passwordRules: js.UndefOr[String | Null] = js.native
+  var passwordRules: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If `true`, allows TextInput to pass touch events to the parent component.
@@ -96,22 +94,22 @@ trait TextInputIOSProps extends StObject {
     * as is the case on Android by default.
     * If `false`, TextInput always asks to handle the input (except when disabled).
     */
-  var rejectResponderTermination: js.UndefOr[Boolean | Null] = js.native
+  var rejectResponderTermination: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * If false, scrolling of the text view will be disabled. The default value is true. Only works with multiline={true}
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * See DocumentSelectionState.js, some state that is responsible for maintaining selection information for a document
     */
-  var selectionState: js.UndefOr[DocumentSelectionState] = js.native
+  var selectionState: js.UndefOr[DocumentSelectionState] = js.undefined
   
   /**
     * If false, disables spell-check style (i.e. red underlines). The default value is inherited from autoCorrect
     */
-  var spellCheck: js.UndefOr[Boolean] = js.native
+  var spellCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Give the keyboard and the system information about the expected
@@ -160,7 +158,7 @@ trait TextInputIOSProps extends StObject {
     */
   var textContentType: js.UndefOr[
     none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
-  ] = js.native
+  ] = js.undefined
 }
 object TextInputIOSProps {
   

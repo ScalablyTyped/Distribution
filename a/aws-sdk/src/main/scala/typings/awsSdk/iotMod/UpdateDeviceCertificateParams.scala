@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceCertificateParams extends StObject {
   
   /**
     * The action that you want to apply to the device cerrtificate. The only supported value is DEACTIVATE.
     */
-  var action: DeviceCertificateUpdateAction = js.native
+  var action: DeviceCertificateUpdateAction
 }
 object UpdateDeviceCertificateParams {
   

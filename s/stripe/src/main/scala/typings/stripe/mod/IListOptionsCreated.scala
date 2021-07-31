@@ -2,17 +2,17 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IListOptionsCreated extends IListOptions {
+trait IListOptionsCreated
+  extends StObject
+     with IListOptions {
   
   /**
     * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp, or it can
     * be a dictionary.
     */
-  var created: js.UndefOr[String | IDateFilter] = js.native
+  var created: js.UndefOr[String | IDateFilter] = js.undefined
 }
 object IListOptionsCreated {
   

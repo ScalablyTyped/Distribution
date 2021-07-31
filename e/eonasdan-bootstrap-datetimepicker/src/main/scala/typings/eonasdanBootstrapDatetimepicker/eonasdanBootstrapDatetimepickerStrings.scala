@@ -5,13 +5,14 @@ import typings.eonasdanBootstrapDatetimepicker.mod.UseCurrent
 import typings.eonasdanBootstrapDatetimepicker.mod.ViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eonasdanBootstrapDatetimepickerStrings {
   
   @js.native
-  sealed trait default extends ToolbarPlacement
+  sealed trait default
+    extends StObject
+       with ToolbarPlacement
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -26,22 +27,30 @@ object eonasdanBootstrapDatetimepickerStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends ToolbarPlacement
+  sealed trait bottom
+    extends StObject
+       with ToolbarPlacement
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait day extends UseCurrent
+  sealed trait day
+    extends StObject
+       with UseCurrent
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait days extends ViewMode
+  sealed trait days
+    extends StObject
+       with ViewMode
   @scala.inline
   def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait decades extends ViewMode
+  sealed trait decades
+    extends StObject
+       with ViewMode
   @scala.inline
   def decades: decades = "decades".asInstanceOf[decades]
   
@@ -71,7 +80,9 @@ object eonasdanBootstrapDatetimepickerStrings {
   def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
   
   @js.native
-  sealed trait hour extends UseCurrent
+  sealed trait hour
+    extends StObject
+       with UseCurrent
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
@@ -81,17 +92,23 @@ object eonasdanBootstrapDatetimepickerStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait minute extends UseCurrent
+  sealed trait minute
+    extends StObject
+       with UseCurrent
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait month extends UseCurrent
+  sealed trait month
+    extends StObject
+       with UseCurrent
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait months extends ViewMode
+  sealed trait months
+    extends StObject
+       with ViewMode
   @scala.inline
   def months: months = "months".asInstanceOf[months]
   
@@ -101,17 +118,23 @@ object eonasdanBootstrapDatetimepickerStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends ToolbarPlacement
+  sealed trait top
+    extends StObject
+       with ToolbarPlacement
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait year extends UseCurrent
+  sealed trait year
+    extends StObject
+       with UseCurrent
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait years extends ViewMode
+  sealed trait years
+    extends StObject
+       with ViewMode
   @scala.inline
   def years: years = "years".asInstanceOf[years]
 }

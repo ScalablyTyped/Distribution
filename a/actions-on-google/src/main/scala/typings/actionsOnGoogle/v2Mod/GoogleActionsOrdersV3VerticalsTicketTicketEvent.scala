@@ -2,59 +2,57 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsTicketTicketEvent extends StObject {
   
   /**
     * Description of the event.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Entry time, which might be different from the event start time. e.g. the
     * event starts at 9am, but entry time is 8:30am.
     */
-  var doorTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var doorTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * End time.
     */
-  var endDate: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var endDate: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * The characters related to this event. It can be directors or actors of a
     * movie event, or performers of a concert, etc.
     */
-  var eventCharacters: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]] = js.native
+  var eventCharacters: js.UndefOr[js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]] = js.undefined
   
   /**
     * The location where the event is happening, or an organization is located.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.native
+  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * Required: Name of the event. For example, if the event is a movie, this
     * should be the movie name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Start time.
     */
-  var startDate: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var startDate: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * Required: Type of the ticket event, e.g. movie, concert.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsTicketTicketEventType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsTicketTicketEventType] = js.undefined
   
   /**
     * Url to the event info.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsTicketTicketEvent {
   

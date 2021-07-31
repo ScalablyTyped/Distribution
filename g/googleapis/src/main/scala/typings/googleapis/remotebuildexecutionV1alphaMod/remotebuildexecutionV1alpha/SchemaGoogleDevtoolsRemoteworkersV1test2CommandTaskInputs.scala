@@ -2,13 +2,11 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the inputs to a shell-style task.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject
     * consistently use forward slashes, since those fields may be interpretted
     * by both the service and the bot.
     */
-  var arguments: js.UndefOr[js.Array[String]] = js.native
+  var arguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * All environment variables required by the task.
     */
   var environmentVariables: js.UndefOr[
     js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The input filesystem to be set up prior to the task beginning. The
@@ -39,7 +37,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject
     * portions of the filesystem that change frequently (eg, specific input
     * files) from those that don&#39;t (eg, standard header files).
     */
-  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Digest]] = js.native
+  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Digest]] = js.undefined
   
   /**
     * Inline contents for blobs expected to be needed by the bot to execute the
@@ -48,7 +46,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject
     * this list before downloading required task inputs to reduce the number of
     * communications between itself and the remote CAS server.
     */
-  var inlineBlobs: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Blob]] = js.native
+  var inlineBlobs: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Blob]] = js.undefined
   
   /**
     * Directory from which a command is executed. It is a relative directory
@@ -56,7 +54,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject
     * If it is non-empty, then it must exist under &quot;./&quot;. Otherwise,
     * &quot;./&quot; will be used.
     */
-  var workingDirectory: js.UndefOr[String] = js.native
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs {
   

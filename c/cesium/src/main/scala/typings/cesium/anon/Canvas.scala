@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canvas extends StObject {
   
-  var camera: typings.cesium.mod.Camera = js.native
+  var camera: typings.cesium.mod.Camera
   
-  var canvas: HTMLCanvasElement = js.native
+  var canvas: HTMLCanvasElement
   
-  var clampToGround: js.UndefOr[Boolean] = js.native
+  var clampToGround: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var sourceUri: js.UndefOr[String] = js.native
+  var sourceUri: js.UndefOr[String] = js.undefined
 }
 object Canvas {
   

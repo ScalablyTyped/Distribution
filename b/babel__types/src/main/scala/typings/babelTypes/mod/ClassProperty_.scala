@@ -6,41 +6,40 @@ import typings.babelTypes.babelTypesStrings.`protected`
 import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ClassProperty_
-  extends Property
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait ClassProperty_
+  extends StObject
+     with BaseNode
+     with Property {
   
-  var `abstract`: Boolean | Null = js.native
+  var `abstract`: Boolean | Null
   
-  var accessibility: public | `private` | `protected` | Null = js.native
+  var accessibility: public | `private` | `protected` | Null
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var definite: Boolean | Null = js.native
+  var definite: Boolean | Null
   
-  var key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression = js.native
+  var key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var static: Boolean = js.native
+  var static: Boolean
   
-  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassProperty_ : ClassProperty = js.native
+  var type_ClassProperty_ : ClassProperty
   
-  var value: Expression | Null = js.native
+  var value: Expression | Null
 }
 object ClassProperty_ {
   
@@ -48,11 +47,11 @@ object ClassProperty_ {
   def apply(
     computed: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
-    static: Boolean,
-    `type`: ClassProperty
+    static: Boolean
   ): ClassProperty_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], accessibility = null, declare = null, decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null)
+    __obj.updateDynamic("type")("ClassProperty")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[ClassProperty_]
   }
   

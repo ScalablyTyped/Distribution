@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientSmartdevicemanagement.anon.Callback
 import typings.maximMazurokGapiClientSmartdevicemanagement.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -33,12 +32,11 @@ object gapi {
         def list(request: Callback): Request[GoogleHomeEnterpriseSdmV1ListDevicesResponse] = js.native
       }
       
-      @js.native
       trait EnterprisesResource extends StObject {
         
-        var devices: DevicesResource = js.native
+        var devices: DevicesResource
         
-        var structures: StructuresResource = js.native
+        var structures: StructuresResource
       }
       object EnterprisesResource {
         
@@ -59,27 +57,26 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1Device extends StObject {
         
         /** Required. The resource name of the device. For example: "enterprises/XYZ/devices/123". */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Assignee details of the device. */
-        var parentRelations: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1ParentRelation]] = js.native
+        var parentRelations: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1ParentRelation]] = js.undefined
         
         /** Output only. Device traits. */
         var traits: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device & TopLevel[js.Any]
+              ] = js.undefined
         
         /**
           * Output only. Type of the device for general display purposes. For example: "THERMOSTAT". The device type should not be used to deduce or infer functionality of the actual device it
           * is assigned to. Instead, use the returned traits for the device.
           */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1Device {
         
@@ -111,7 +108,7 @@ object gapi {
           def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -125,18 +122,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest extends StObject {
         
         /** The command name to execute, represented by the fully qualified protobuf message name. */
-        var command: js.UndefOr[String] = js.native
+        var command: js.UndefOr[String] = js.undefined
         
         /** The command message to execute, represented as a Struct. */
         var params: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest & TopLevel[js.Any]
+              ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest {
         
@@ -159,7 +155,7 @@ object gapi {
           def setParams(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest & TopLevel[js.Any]
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -167,15 +163,14 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse extends StObject {
         
         /** The results of executing the command. */
         var results: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse & TopLevel[js.Any]
+              ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse {
         
@@ -192,7 +187,7 @@ object gapi {
           def setResults(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse & TopLevel[js.Any]
           ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -200,14 +195,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ListDevicesResponse extends StObject {
         
         /** The list of devices. */
-        var devices: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Device]] = js.native
+        var devices: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Device]] = js.undefined
         
         /** The pagination token to retrieve the next page of results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ListDevicesResponse {
         
@@ -237,14 +231,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ListRoomsResponse extends StObject {
         
         /** The pagination token to retrieve the next page of results. If this field is omitted, there are no subsequent pages. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** The list of rooms. */
-        var rooms: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Room]] = js.native
+        var rooms: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Room]] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ListRoomsResponse {
         
@@ -274,14 +267,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ListStructuresResponse extends StObject {
         
         /** The pagination token to retrieve the next page of results. If this field is omitted, there are no subsequent pages. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** The list of structures. */
-        var structures: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Structure]] = js.native
+        var structures: js.UndefOr[js.Array[GoogleHomeEnterpriseSdmV1Structure]] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ListStructuresResponse {
         
@@ -311,17 +303,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1ParentRelation extends StObject {
         
         /** Output only. The custom name of the relation -- e.g., structure/room where the device is assigned to. */
-        var displayName: js.UndefOr[String] = js.native
+        var displayName: js.UndefOr[String] = js.undefined
         
         /**
           * Output only. The name of the relation -- e.g., structure/room where the device is assigned to. For example: "enterprises/XYZ/structures/ABC" or
           * "enterprises/XYZ/structures/ABC/rooms/123"
           */
-        var parent: js.UndefOr[String] = js.native
+        var parent: js.UndefOr[String] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ParentRelation {
         
@@ -348,18 +339,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1Room extends StObject {
         
         /** Output only. The resource name of the room. For example: "enterprises/XYZ/structures/ABC/rooms/123". */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Room traits. */
         var traits: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room & TopLevel[js.Any]
+              ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1Room {
         
@@ -382,7 +372,7 @@ object gapi {
           def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -390,18 +380,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleHomeEnterpriseSdmV1Structure extends StObject {
         
         /** Output only. The resource name of the structure. For example: "enterprises/XYZ/structures/ABC". */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Structure traits. */
         var traits: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure & TopLevel[js.Any]
+              ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1Structure {
         
@@ -424,7 +413,7 @@ object gapi {
           def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           @scala.inline

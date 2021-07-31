@@ -3,24 +3,22 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * First party identity principal.
   */
-@js.native
 trait SchemaFirstPartyPrincipal extends StObject {
   
   /**
     * The email address of a Google account. .
     */
-  var principalEmail: js.UndefOr[String] = js.native
+  var principalEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the service that uses the service account. .
     */
-  var serviceMetadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var serviceMetadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaFirstPartyPrincipal {
   

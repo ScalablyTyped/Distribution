@@ -3,15 +3,13 @@ package typings.reactElemental.mod
 import typings.reactElemental.anon.Regular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontOpts extends StObject {
   
-  var primary: js.UndefOr[Regular] = js.native
+  var primary: js.UndefOr[Regular] = js.undefined
   
-  var secondary: js.UndefOr[Regular] = js.native
+  var secondary: js.UndefOr[Regular] = js.undefined
 }
 object FontOpts {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Registration extends StObject {
   
   /** The Cloud Pub/Sub topic that notifications are to be sent to. */
-  var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.native
+  var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.undefined
   
   /** The time until which the `Registration` is effective. This is a read-only field assigned by the server. */
-  var expiryTime: js.UndefOr[String] = js.native
+  var expiryTime: js.UndefOr[String] = js.undefined
   
   /** Specification for the class of notifications that Classroom should deliver to the destination. */
-  var feed: js.UndefOr[Feed] = js.native
+  var feed: js.UndefOr[Feed] = js.undefined
   
   /** A server-generated unique identifier for this `Registration`. Read-only. */
-  var registrationId: js.UndefOr[String] = js.native
+  var registrationId: js.UndefOr[String] = js.undefined
 }
 object Registration {
   

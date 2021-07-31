@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeserializerManager extends StObject {
   
   /** Register the given class(es) as deserializers. */
-  def add(deserializers: Deserializer*): Disposable = js.native
+  def add(deserializers: Deserializer*): Disposable
   
   /** Deserialize the state and params. */
-  def deserialize(state: js.Object): js.UndefOr[js.Object] = js.native
+  def deserialize(state: js.Object): js.UndefOr[js.Object]
 }
 object DeserializerManager {
   

@@ -2,26 +2,24 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/helper-text/adapter.MDCTextFieldHelperTextAdapter> */
-@js.native
 trait PartialMDCTextFieldHelper extends StObject {
   
-  var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+  var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   
-  var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+  var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
   
-  var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+  var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
   
-  var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+  var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
   
-  var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+  var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   
-  var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+  var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
   
-  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
 }
 object PartialMDCTextFieldHelper {
   

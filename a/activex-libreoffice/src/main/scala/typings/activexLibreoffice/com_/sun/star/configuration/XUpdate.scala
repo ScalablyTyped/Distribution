@@ -3,19 +3,17 @@ package typings.activexLibreoffice.com_.sun.star.configuration
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XUpdate extends StObject {
   
-  def insertExtensionXcsFile(shared: Boolean, fileUri: String): Unit = js.native
+  def insertExtensionXcsFile(shared: Boolean, fileUri: String): Unit
   
-  def insertExtensionXcuFile(shared: Boolean, fileUri: String): Unit = js.native
+  def insertExtensionXcuFile(shared: Boolean, fileUri: String): Unit
   
-  def insertModificationXcuFile(fileUri: String, includedPaths: SeqEquiv[String], excludedPaths: SeqEquiv[String]): Unit = js.native
+  def insertModificationXcuFile(fileUri: String, includedPaths: SeqEquiv[String], excludedPaths: SeqEquiv[String]): Unit
   
-  def removeExtensionXcuFile(fileUri: String): Unit = js.native
+  def removeExtensionXcuFile(fileUri: String): Unit
 }
 object XUpdate {
   

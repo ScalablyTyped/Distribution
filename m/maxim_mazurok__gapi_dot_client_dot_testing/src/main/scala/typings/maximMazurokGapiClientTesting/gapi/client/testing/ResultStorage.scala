@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultStorage extends StObject {
   
   /** Required. */
-  var googleCloudStorage: js.UndefOr[GoogleCloudStorage] = js.native
+  var googleCloudStorage: js.UndefOr[GoogleCloudStorage] = js.undefined
   
   /** Output only. URL to the results in the Firebase Web Console. */
-  var resultsUrl: js.UndefOr[String] = js.native
+  var resultsUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. The tool results execution that results are written to. */
-  var toolResultsExecution: js.UndefOr[ToolResultsExecution] = js.native
+  var toolResultsExecution: js.UndefOr[ToolResultsExecution] = js.undefined
   
   /** The tool results history that contains the tool results execution that results are written to. If not provided, the service will choose an appropriate value. */
-  var toolResultsHistory: js.UndefOr[ToolResultsHistory] = js.native
+  var toolResultsHistory: js.UndefOr[ToolResultsHistory] = js.undefined
 }
 object ResultStorage {
   

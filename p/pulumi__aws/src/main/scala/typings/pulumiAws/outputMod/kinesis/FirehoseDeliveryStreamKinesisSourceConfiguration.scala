@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamKinesisSourceConfiguration extends StObject {
   
   /**
     * The kinesis stream used as the source of the firehose delivery stream.
     */
-  var kinesisStreamArn: String = js.native
+  var kinesisStreamArn: String
   
   /**
     * The ARN of the role that provides access to the source Kinesis stream.
     */
-  var roleArn: String = js.native
+  var roleArn: String
 }
 object FirehoseDeliveryStreamKinesisSourceConfiguration {
   

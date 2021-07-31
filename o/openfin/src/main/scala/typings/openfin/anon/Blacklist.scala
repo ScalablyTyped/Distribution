@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blacklist extends StObject {
   
-  var blacklist: js.UndefOr[js.Array[String]] = js.native
+  var blacklist: js.UndefOr[js.Array[String]] = js.undefined
   
-  var whitelist: js.UndefOr[js.Array[String]] = js.native
+  var whitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Blacklist {
   

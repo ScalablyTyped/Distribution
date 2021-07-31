@@ -2,55 +2,53 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSpreadsheetMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Destroys the widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Executes the action associated with the specified id.
     *
     * @param action An [enumeration](ig.spreadsheet.SpreadsheetAction) or string that identifies the action to execute.
     */
-  def executeAction(action: js.Object): Boolean = js.native
+  def executeAction(action: js.Object): Boolean
   
   /**
     * Exports visual data from the spreadsheet to aid in unit testing
     */
-  def exportVisualData(): Unit = js.native
+  def exportVisualData(): Unit
   
   /**
     * Forces any pending deferred work to render on the spreadsheet before continuing
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Returns an object that represents the pane with the focus.
     */
-  def getActivePane(): js.Object = js.native
+  def getActivePane(): js.Object
   
   /**
     * Returns an object that represents the current selection of the active pane.
     */
-  def getActiveSelection(): js.Object = js.native
+  def getActiveSelection(): js.Object
   
   /**
     * Returns an object used to get the formatting of the activeCell and where modifications are applied to the entire active selection.
@@ -59,34 +57,34 @@ trait IgSpreadsheetMethods extends StObject {
     *         cells are using a different font but if you set the Font.Name of this object to "Arial" then all the objects
     *         affected by the selection will have their Font.Name updated to that value.
     */
-  def getActiveSelectionCellRangeFormat(): js.Object = js.native
+  def getActiveSelectionCellRangeFormat(): js.Object
   
   /**
     * Returns an object that represents the pane with the focus.
     */
-  def getActiveTable(): js.Object = js.native
+  def getActiveTable(): js.Object
   
   /**
     * Returns an enumeration used to indicate the current edit mode state.
     */
-  def getCellEditMode(): js.Object = js.native
+  def getCellEditMode(): js.Object
   
   /**
     * Returns a boolean indicating if the control is currently editing the value of the activeCell.
     */
-  def getIsInEditMode(): Boolean = js.native
+  def getIsInEditMode(): Boolean
   
   /**
     * Returns a boolean indicating if the user is currently editing the name of the active worksheet.
     */
-  def getIsRenamingWorksheet(): Boolean = js.native
+  def getIsRenamingWorksheet(): Boolean
   
   /**
     * Returns an array of the panes for the activeWorksheet.
     *
     *     returnType="ig.spreadsheet.SpreadsheetPane[]"
     */
-  def getPanes(): Unit = js.native
+  def getPanes(): Unit
   
   /**
     * Shows the filter dialog for the specified relative column of the [filterSettings](ig.excel.Worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
@@ -94,7 +92,7 @@ trait IgSpreadsheetMethods extends StObject {
     * @param worksheetTableColumn A [region](ig.excel.WorksheetTableColumn) whose filter is to be viewed or changed.
     * @param spreadsheetFilterDialogOption Optional enumeration that specifies the initial display of the filter dialog.
     */
-  def showFilterDialogForTable(worksheetTableColumn: js.Object, spreadsheetFilterDialogOption: js.Object): Unit = js.native
+  def showFilterDialogForTable(worksheetTableColumn: js.Object, spreadsheetFilterDialogOption: js.Object): Unit
   
   /**
     * Shows the filter dialog for the specified relative column of the [filterSettings](ig.excel.worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
@@ -102,26 +100,26 @@ trait IgSpreadsheetMethods extends StObject {
     * @param relativeColumnIndex A zero based column index relative to the [region](ig.excel.worksheetFilterSettings#methods:region) of the active worksheet.
     * @param spreadsheetFilterDialogOption Optional enumeration that specifies the initial display of the filter dialog.
     */
-  def showFilterDialogForWorksheet(relativeColumnIndex: Double, spreadsheetFilterDialogOption: js.Object): Unit = js.native
+  def showFilterDialogForWorksheet(relativeColumnIndex: Double, spreadsheetFilterDialogOption: js.Object): Unit
   
   /**
     * Shows the top or bottom dialog for the specified relative column of the [filterSettings](ig.excel.Worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
     *
     * @param worksheetTableColumn A [region](ig.excel.WorksheetTableColumn) whose filter is to be viewed or changed.
     */
-  def showTopOrBottomDialogForTable(worksheetTableColumn: js.Object): Unit = js.native
+  def showTopOrBottomDialogForTable(worksheetTableColumn: js.Object): Unit
   
   /**
     * Shows the top or bottom dialog for the specified relative column of the [filterSettings](ig.excel.worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
     *
     * @param relativeColumnIndex A zero based column index relative to the [region](ig.excel.worksheetFilterSettings#methods:region) of the active worksheet.
     */
-  def showTopOrBottomDialogForWorksheet(relativeColumnIndex: Double): Unit = js.native
+  def showTopOrBottomDialogForWorksheet(relativeColumnIndex: Double): Unit
   
   /**
     * Notify the spreadsheet that style information used for rendering the spreadsheet may have been updated.
     */
-  def styleUpdated(): Unit = js.native
+  def styleUpdated(): Unit
 }
 object IgSpreadsheetMethods {
   

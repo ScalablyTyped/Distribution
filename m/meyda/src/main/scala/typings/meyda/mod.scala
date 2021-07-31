@@ -10,10 +10,13 @@ import typings.std.Float32Array
 import typings.std.ScriptProcessorNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("meyda", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("meyda", "EXTRACTION_STARTED")
   @js.native
@@ -44,30 +47,24 @@ object mod {
   @js.native
   val bufferSize: Double = js.native
   
-  @JSImport("meyda", "callback")
-  @js.native
-  def callback(features: PartialMeydaFeaturesObjec): Unit | Null = js.native
+  @scala.inline
+  def callback(features: PartialMeydaFeaturesObjec): Unit | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("callback")(features.asInstanceOf[js.Any]).asInstanceOf[Unit | Null]
   
   @JSImport("meyda", "chromaBands")
   @js.native
   val chromaBands: Double = js.native
   
-  @JSImport("meyda", "createMeydaAnalyzer")
-  @js.native
-  def createMeydaAnalyzer(options: MeydaAnalyzerOptions): MeydaAnalyzer = js.native
+  @scala.inline
+  def createMeydaAnalyzer(options: MeydaAnalyzerOptions): MeydaAnalyzer = ^.asInstanceOf[js.Dynamic].applyDynamic("createMeydaAnalyzer")(options.asInstanceOf[js.Any]).asInstanceOf[MeydaAnalyzer]
   
-  @JSImport("meyda", "extract")
-  @js.native
-  def extract(feature: js.Array[MeydaAudioFeature], signal: MeydaSignal): PartialMeydaFeaturesObjec | Null = js.native
-  @JSImport("meyda", "extract")
-  @js.native
-  def extract(feature: js.Array[MeydaAudioFeature], signal: MeydaSignal, previousSignal: MeydaSignal): PartialMeydaFeaturesObjec | Null = js.native
-  @JSImport("meyda", "extract")
-  @js.native
-  def extract(feature: MeydaAudioFeature, signal: MeydaSignal): PartialMeydaFeaturesObjec | Null = js.native
-  @JSImport("meyda", "extract")
-  @js.native
-  def extract(feature: MeydaAudioFeature, signal: MeydaSignal, previousSignal: MeydaSignal): PartialMeydaFeaturesObjec | Null = js.native
+  @scala.inline
+  def extract(feature: js.Array[MeydaAudioFeature], signal: MeydaSignal): PartialMeydaFeaturesObjec | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(feature.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[PartialMeydaFeaturesObjec | Null]
+  @scala.inline
+  def extract(feature: js.Array[MeydaAudioFeature], signal: MeydaSignal, previousSignal: MeydaSignal): PartialMeydaFeaturesObjec | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(feature.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], previousSignal.asInstanceOf[js.Any])).asInstanceOf[PartialMeydaFeaturesObjec | Null]
+  @scala.inline
+  def extract(feature: MeydaAudioFeature, signal: MeydaSignal): PartialMeydaFeaturesObjec | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(feature.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[PartialMeydaFeaturesObjec | Null]
+  @scala.inline
+  def extract(feature: MeydaAudioFeature, signal: MeydaSignal, previousSignal: MeydaSignal): PartialMeydaFeaturesObjec | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(feature.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], previousSignal.asInstanceOf[js.Any])).asInstanceOf[PartialMeydaFeaturesObjec | Null]
   
   @JSImport("meyda", "featureExtractors")
   @js.native
@@ -89,45 +86,42 @@ object mod {
   @js.native
   val spn: ScriptProcessorNode | Null = js.native
   
-  @JSImport("meyda", "windowing")
-  @js.native
-  def windowing(signal: MeydaSignal): MeydaSignal = js.native
-  @JSImport("meyda", "windowing")
-  @js.native
-  def windowing(signal: MeydaSignal, windowname: MeydaWindowingFunction): MeydaSignal = js.native
+  @scala.inline
+  def windowing(signal: MeydaSignal): MeydaSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("windowing")(signal.asInstanceOf[js.Any]).asInstanceOf[MeydaSignal]
+  @scala.inline
+  def windowing(signal: MeydaSignal, windowname: MeydaWindowingFunction): MeydaSignal = (^.asInstanceOf[js.Dynamic].applyDynamic("windowing")(signal.asInstanceOf[js.Any], windowname.asInstanceOf[js.Any])).asInstanceOf[MeydaSignal]
   
   @JSImport("meyda", "windowingFunction")
   @js.native
   val windowingFunction: MeydaWindowingFunction = js.native
   
-  @js.native
   trait MeydaAnalyzerOptions extends StObject {
     
-    var audioContext: AudioContext = js.native
+    var audioContext: AudioContext
     
-    var bufferSize: Double = js.native
+    var bufferSize: Double
     
-    var callback: js.UndefOr[js.Function1[/* features */ PartialMeydaFeaturesObjec, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* features */ PartialMeydaFeaturesObjec, Unit]] = js.undefined
     
-    var channel: js.UndefOr[Double] = js.native
+    var channel: js.UndefOr[Double] = js.undefined
     
-    var featureExtractors: js.UndefOr[MeydaAudioFeature | js.Array[MeydaAudioFeature]] = js.native
+    var featureExtractors: js.UndefOr[MeydaAudioFeature | js.Array[MeydaAudioFeature]] = js.undefined
     
-    var hopSize: js.UndefOr[Double] = js.native
+    var hopSize: js.UndefOr[Double] = js.undefined
     
-    var inputs: js.UndefOr[Double] = js.native
+    var inputs: js.UndefOr[Double] = js.undefined
     
-    var numberOfMFCCCoefficients: js.UndefOr[Double] = js.native
+    var numberOfMFCCCoefficients: js.UndefOr[Double] = js.undefined
     
-    var outputs: js.UndefOr[Double] = js.native
+    var outputs: js.UndefOr[Double] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
-    var source: AudioNode = js.native
+    var source: AudioNode
     
-    var startImmediately: js.UndefOr[Boolean] = js.native
+    var startImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var windowingFunction: js.UndefOr[MeydaWindowingFunction] = js.native
+    var windowingFunction: js.UndefOr[MeydaWindowingFunction] = js.undefined
   }
   object MeydaAnalyzerOptions {
     
@@ -300,46 +294,45 @@ object mod {
     def zcr: typings.meyda.meydaStrings.zcr = "zcr".asInstanceOf[typings.meyda.meydaStrings.zcr]
   }
   
-  @js.native
   trait MeydaFeaturesObject extends StObject {
     
-    var amplitudeSpectrum: Float32Array = js.native
+    var amplitudeSpectrum: Float32Array
     
-    var buffer: js.Array[Double] = js.native
+    var buffer: js.Array[Double]
     
-    var chroma: js.Array[Double] = js.native
+    var chroma: js.Array[Double]
     
-    var complexSpectrum: Imag = js.native
+    var complexSpectrum: Imag
     
-    var energy: Double = js.native
+    var energy: Double
     
-    var loudness: Specific = js.native
+    var loudness: Specific
     
-    var mfcc: js.Array[Double] = js.native
+    var mfcc: js.Array[Double]
     
-    var perceptualSharpness: Double = js.native
+    var perceptualSharpness: Double
     
-    var perceptualSpread: Double = js.native
+    var perceptualSpread: Double
     
-    var powerSpectrum: Float32Array = js.native
+    var powerSpectrum: Float32Array
     
-    var rms: Double = js.native
+    var rms: Double
     
-    var spectralCentroid: Double = js.native
+    var spectralCentroid: Double
     
-    var spectralFlatness: Double = js.native
+    var spectralFlatness: Double
     
-    var spectralKurtosis: Double = js.native
+    var spectralKurtosis: Double
     
-    var spectralRolloff: Double = js.native
+    var spectralRolloff: Double
     
-    var spectralSkewness: Double = js.native
+    var spectralSkewness: Double
     
-    var spectralSlope: Double = js.native
+    var spectralSlope: Double
     
-    var spectralSpread: Double = js.native
+    var spectralSpread: Double
     
-    var zcr: Double = js.native
+    var zcr: Double
   }
   object MeydaFeaturesObject {
     
@@ -464,10 +457,11 @@ object mod {
     def sine: typings.meyda.meydaStrings.sine = "sine".asInstanceOf[typings.meyda.meydaStrings.sine]
   }
   
-  @js.native
-  trait SliceableArrayLike[T] extends ArrayLike[T] {
+  trait SliceableArrayLike[T]
+    extends StObject
+       with ArrayLike[T] {
     
-    def slice(start: Double, end: Double): SliceableArrayLike[T] = js.native
+    def slice(start: Double, end: Double): SliceableArrayLike[T]
   }
   object SliceableArrayLike {
     
@@ -478,7 +472,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SliceableArrayLikeMutableBuilder[Self <: SliceableArrayLike[_], T] (val x: Self with SliceableArrayLike[T]) extends AnyVal {
+    implicit class SliceableArrayLikeMutableBuilder[Self <: SliceableArrayLike[?], T] (val x: Self & SliceableArrayLike[T]) extends AnyVal {
       
       @scala.inline
       def setSlice(value: (Double, Double) => SliceableArrayLike[T]): Self = StObject.set(x, "slice", js.Any.fromFunction2(value))

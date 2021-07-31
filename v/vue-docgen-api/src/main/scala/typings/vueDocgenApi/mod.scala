@@ -14,10 +14,13 @@ import typings.vueDocgenApi.parseTemplateMod.TemplateParserOptions
 import typings.vueInbrowserCompilerUtils.typesMod.ComponentDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("vue-docgen-api", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vue-docgen-api", "Documentation")
   @js.native
@@ -25,82 +28,75 @@ object mod {
     def this(fullFilePath: String) = this()
   }
   
-  object ScriptHandlers extends Shortcut {
+  object ScriptHandlers {
+    
+    @JSImport("vue-docgen-api", "ScriptHandlers")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("vue-docgen-api", "ScriptHandlers.default")
     @js.native
     val default: js.Array[Handler] = js.native
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.classDisplayNameHandler")
-    @js.native
-    def classDisplayNameHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def classDisplayNameHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("classDisplayNameHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.classMethodHandler")
-    @js.native
-    def classMethodHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def classMethodHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("classMethodHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.classPropHandler")
-    @js.native
-    def classPropHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[ClassDeclaration_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def classPropHandler(
+      documentation: typings.vueDocgenApi.documentationMod.default,
+      path: NodePath[ClassDeclaration_, js.Any]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("classPropHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.componentHandler")
-    @js.native
-    def componentHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def componentHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("componentHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.displayNameHandler")
-    @js.native
-    def displayNameHandler(documentation: typings.vueDocgenApi.documentationMod.default, compDef: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def displayNameHandler(documentation: typings.vueDocgenApi.documentationMod.default, compDef: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("displayNameHandler")(documentation.asInstanceOf[js.Any], compDef.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.eventHandler")
-    @js.native
-    def eventHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _], astPath: File_): js.Promise[Unit] = js.native
+    @scala.inline
+    def eventHandler(
+      documentation: typings.vueDocgenApi.documentationMod.default,
+      path: NodePath[js.Any, js.Any],
+      astPath: File_
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.extendsHandler")
-    @js.native
+    @scala.inline
     def extendsHandler(
       documentation: typings.vueDocgenApi.documentationMod.default,
-      componentDefinition: NodePath[_, _],
+      componentDefinition: NodePath[js.Any, js.Any],
       astPath: File_,
       opt: ParseOptions
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendsHandler")(documentation.asInstanceOf[js.Any], componentDefinition.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.methodHandler")
-    @js.native
-    def methodHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def methodHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.mixinsHandler")
-    @js.native
+    @scala.inline
     def mixinsHandler(
       documentation: typings.vueDocgenApi.documentationMod.default,
-      componentDefinition: NodePath[_, _],
+      componentDefinition: NodePath[js.Any, js.Any],
       astPath: File_,
       opt: ParseOptions
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixinsHandler")(documentation.asInstanceOf[js.Any], componentDefinition.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("vue-docgen-api", "ScriptHandlers.preHandlers")
     @js.native
     val preHandlers: js.Array[Handler] = js.native
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.propHandler")
-    @js.native
-    def propHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def propHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("propHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.slotHandler")
-    @js.native
-    def slotHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def slotHandler(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("slotHandler")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.slotHandlerFunctional")
-    @js.native
-    def slotHandlerFunctional(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+    @scala.inline
+    def slotHandlerFunctional(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("slotHandlerFunctional")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("vue-docgen-api", "ScriptHandlers.slotHandlerLitteral")
-    @js.native
-    def slotHandlerLitteral(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
-    
-    type _To = js.Array[Handler]
-    
-    /* This means you don't have to write `default`, but can instead just say `ScriptHandlers.foo` */
-    override def _to: js.Array[Handler] = default
+    @scala.inline
+    def slotHandlerLitteral(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("slotHandlerLitteral")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   object TemplateHandlers extends Shortcut {
@@ -139,38 +135,28 @@ object mod {
       ] = default
   }
   
-  @JSImport("vue-docgen-api", "cleanName")
-  @js.native
-  def cleanName(name: String): String = js.native
+  @scala.inline
+  def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vue-docgen-api", "getDefaultExample")
-  @js.native
-  def getDefaultExample(doc: ComponentDoc): String = js.native
+  @scala.inline
+  def getDefaultExample(doc: ComponentDoc): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExample")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vue-docgen-api", "parse")
-  @js.native
-  def parse(filePath: String): js.Promise[ComponentDoc] = js.native
-  @JSImport("vue-docgen-api", "parse")
-  @js.native
-  def parse(filePath: String, opts: StringDictionary[String]): js.Promise[ComponentDoc] = js.native
-  @JSImport("vue-docgen-api", "parse")
-  @js.native
-  def parse(filePath: String, opts: DocGenOptions): js.Promise[ComponentDoc] = js.native
+  @scala.inline
+  def parse(filePath: String): js.Promise[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ComponentDoc]]
+  @scala.inline
+  def parse(filePath: String, opts: StringDictionary[String]): js.Promise[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComponentDoc]]
+  @scala.inline
+  def parse(filePath: String, opts: DocGenOptions): js.Promise[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComponentDoc]]
   
-  @JSImport("vue-docgen-api", "parseMulti")
-  @js.native
-  def parseMulti(filePath: String): js.Promise[js.Array[ComponentDoc]] = js.native
-  @JSImport("vue-docgen-api", "parseMulti")
-  @js.native
-  def parseMulti(filePath: String, opts: DocGenOptions): js.Promise[js.Array[ComponentDoc]] = js.native
+  @scala.inline
+  def parseMulti(filePath: String): js.Promise[js.Array[ComponentDoc]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMulti")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ComponentDoc]]]
+  @scala.inline
+  def parseMulti(filePath: String, opts: DocGenOptions): js.Promise[js.Array[ComponentDoc]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMulti")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ComponentDoc]]]
   
-  @JSImport("vue-docgen-api", "parseSource")
-  @js.native
-  def parseSource(source: String, filePath: String): js.Promise[ComponentDoc] = js.native
-  @JSImport("vue-docgen-api", "parseSource")
-  @js.native
-  def parseSource(source: String, filePath: String, opts: StringDictionary[String]): js.Promise[ComponentDoc] = js.native
-  @JSImport("vue-docgen-api", "parseSource")
-  @js.native
-  def parseSource(source: String, filePath: String, opts: DocGenOptions): js.Promise[ComponentDoc] = js.native
+  @scala.inline
+  def parseSource(source: String, filePath: String): js.Promise[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComponentDoc]]
+  @scala.inline
+  def parseSource(source: String, filePath: String, opts: StringDictionary[String]): js.Promise[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComponentDoc]]
+  @scala.inline
+  def parseSource(source: String, filePath: String, opts: DocGenOptions): js.Promise[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComponentDoc]]
 }

@@ -2,30 +2,28 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var ByX: Double = js.native
+  var ByX: Double
   
-  var ByY: Double = js.native
+  var ByY: Double
   
-  var FromX: Double = js.native
+  var FromX: Double
   
-  var FromY: Double = js.native
+  var FromY: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ScaleEffect_typekey")
-  var PowerPointDotScaleEffect_typekey: ScaleEffect = js.native
+  var PowerPointDotScaleEffect_typekey: ScaleEffect
   
-  var ToX: Double = js.native
+  var ToX: Double
   
-  var ToY: Double = js.native
+  var ToY: Double
 }
 object ScaleEffect {
   

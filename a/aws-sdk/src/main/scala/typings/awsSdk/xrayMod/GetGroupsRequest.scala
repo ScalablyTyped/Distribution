@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupsRequest extends StObject {
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[GetGroupsNextToken] = js.native
+  var NextToken: js.UndefOr[GetGroupsNextToken] = js.undefined
 }
 object GetGroupsRequest {
   

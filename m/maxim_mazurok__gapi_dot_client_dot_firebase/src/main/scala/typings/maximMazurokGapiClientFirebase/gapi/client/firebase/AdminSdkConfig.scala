@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminSdkConfig extends StObject {
   
   /** The default Firebase Realtime Database URL. */
-  var databaseURL: js.UndefOr[String] = js.native
+  var databaseURL: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Project's default GCP resource location. The location is one of the available [GCP resource locations](https://firebase.google.com/docs/projects/locations). This field
     * is omitted if the default GCP resource location has not been finalized yet. To set a Project's default GCP resource location, call
     * [`FinalizeDefaultLocation`](../projects.defaultLocation/finalize) after you add Firebase resources to the Project.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. A user-assigned unique identifier for the `FirebaseProject`. This identifier may appear in URLs or names for some Firebase resources associated with the Project, but it
     * should generally be treated as a convenience alias to reference the Project.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** The default Cloud Storage for Firebase storage bucket name. */
-  var storageBucket: js.UndefOr[String] = js.native
+  var storageBucket: js.UndefOr[String] = js.undefined
 }
 object AdminSdkConfig {
   

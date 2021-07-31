@@ -2,13 +2,11 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var _id: js.UndefOr[js.Any] = js.native
+  var _id: js.UndefOr[js.Any] = js.undefined
 }
 object `0` {
   

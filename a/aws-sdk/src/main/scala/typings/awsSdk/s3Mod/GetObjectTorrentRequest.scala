@@ -2,28 +2,26 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectTorrentRequest extends StObject {
   
   /**
     * The name of the bucket containing the object for which to get the torrent files.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The object key for which to get the information.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
 }
 object GetObjectTorrentRequest {
   

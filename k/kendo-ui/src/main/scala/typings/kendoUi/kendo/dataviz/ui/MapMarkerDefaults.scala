@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapMarkerDefaults extends StObject {
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[MapMarkerDefaultsTooltip] = js.native
+  var tooltip: js.UndefOr[MapMarkerDefaultsTooltip] = js.undefined
 }
 object MapMarkerDefaults {
   

@@ -5,34 +5,32 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stream: Stream): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply(stream: Stream, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply(stream: Stream, options: Options): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply(stream: Stream, options: Options, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   @JSImport("end-of-stream", JSImport.Namespace)
   @js.native
-  def apply(stream: Stream): js.Function0[Unit] = js.native
-  @JSImport("end-of-stream", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream, callback: Callback): js.Function0[Unit] = js.native
-  @JSImport("end-of-stream", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream, options: Options): js.Function0[Unit] = js.native
-  @JSImport("end-of-stream", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream, options: Options, callback: Callback): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

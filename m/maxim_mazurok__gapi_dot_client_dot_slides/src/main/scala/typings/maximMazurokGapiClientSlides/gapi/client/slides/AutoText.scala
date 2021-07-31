@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoText extends StObject {
   
   /** The rendered content of this auto text, if available. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The styling applied to this auto text. */
-  var style: js.UndefOr[TextStyle] = js.native
+  var style: js.UndefOr[TextStyle] = js.undefined
   
   /** The type of this auto text. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AutoText {
   

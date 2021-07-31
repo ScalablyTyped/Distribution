@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Kai Sommerfeld
   * @version 1.0
   */
-@js.native
-trait XInteractionSupplyName extends XInteractionContinuation {
+trait XInteractionSupplyName
+  extends StObject
+     with XInteractionContinuation {
   
   /**
     * sets the name to supply.
     * @param Name contains the name to supply.
     */
-  def setName(Name: String): Unit = js.native
+  def setName(Name: String): Unit
 }
 object XInteractionSupplyName {
   

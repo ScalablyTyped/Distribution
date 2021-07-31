@@ -3,45 +3,43 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListViewOptions extends StObject {
   
-  var altTemplate: js.UndefOr[js.Function] = js.native
+  var altTemplate: js.UndefOr[js.Function] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ ListViewEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ ListViewEditEvent, Unit]] = js.undefined
   
-  var editTemplate: js.UndefOr[js.Function] = js.native
+  var editTemplate: js.UndefOr[js.Function] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ ListViewSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ ListViewSaveEvent, Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | String] = js.native
+  var scrollable: js.UndefOr[Boolean | String] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | String] = js.native
+  var selectable: js.UndefOr[Boolean | String] = js.undefined
   
-  var template: js.UndefOr[js.Function] = js.native
+  var template: js.UndefOr[js.Function] = js.undefined
 }
 object ListViewOptions {
   

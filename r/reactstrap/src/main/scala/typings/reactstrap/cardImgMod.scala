@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardImgMod {
@@ -20,18 +19,18 @@ object cardImgMod {
   
   type CardImg = Component[CardImgProps, js.Object, js.Any]
   
-  @js.native
   trait CardImgProps
-    extends ImgHTMLAttributes[HTMLImageElement]
+    extends StObject
+       with ImgHTMLAttributes[HTMLImageElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var bottom: js.UndefOr[Boolean] = js.native
+    var bottom: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object CardImgProps {
     
@@ -57,7 +56,7 @@ object cardImgMod {
       def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

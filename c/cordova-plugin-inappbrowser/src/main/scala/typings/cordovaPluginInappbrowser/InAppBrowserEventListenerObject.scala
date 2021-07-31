@@ -2,13 +2,11 @@ package typings.cordovaPluginInappbrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InAppBrowserEventListenerObject extends StObject {
   
-  def handleEvent(evt: InAppBrowserEvent): Unit = js.native
+  def handleEvent(evt: InAppBrowserEvent): Unit
 }
 object InAppBrowserEventListenerObject {
   

@@ -16,7 +16,6 @@ import typings.std.Extract
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationHelpers<@react-navigation/routers.@react-navigation/routers.ParamListBase, {}> & std.Partial<@react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationProp<@react-navigation/routers.@react-navigation/routers.ParamListBase, string, any, any, any>> */
@@ -43,7 +42,7 @@ trait NavigationHelpersParamLis extends StObject {
         String
       ], 
       /* callback */ EventListenerCallback[
-        js.Any with EventMapCore[_], 
+        js.Any & EventMapCore[js.Any], 
         Extract[
           /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
           String
@@ -83,7 +82,7 @@ trait NavigationHelpersParamLis extends StObject {
     */
   def dangerouslyGetState(): NavigationState[ParamListBase] = js.native
   @JSName("dangerouslyGetState")
-  var dangerouslyGetState_FNavigationHelpersParamLis: js.UndefOr[js.Function0[_]] = js.native
+  var dangerouslyGetState_FNavigationHelpersParamLis: js.UndefOr[js.Function0[js.Any]] = js.native
   
   var dispatch: js.UndefOr[
     js.Function1[
@@ -108,7 +107,7 @@ trait NavigationHelpersParamLis extends StObject {
     * @param [options.target] Key of the target route which should receive the event.
     * If not specified, all routes receive the event.
     */
-  def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](options: TypeEventName[EventName] with (js.Object | `2`) with (`9`[EventName] | `8`[EventName])): EventArg[
+  def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](options: TypeEventName[EventName] & (js.Object | `2`) & (`9`[EventName] | `8`[EventName])): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
@@ -169,7 +168,7 @@ trait NavigationHelpersParamLis extends StObject {
         String
       ], 
       /* callback */ EventListenerCallback[
-        js.Any with EventMapCore[_], 
+        js.Any & EventMapCore[js.Any], 
         Extract[
           /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
           String
@@ -179,7 +178,7 @@ trait NavigationHelpersParamLis extends StObject {
     ]
   ] = js.native
   
-  var reset: js.UndefOr[js.Function1[/* state */ PartialState[_] | js.Any, Unit]] = js.native
+  var reset: js.UndefOr[js.Function1[/* state */ PartialState[js.Any] | js.Any, Unit]] = js.native
   /**
     * Reset the navigation state to the provided state.
     *
@@ -188,7 +187,7 @@ trait NavigationHelpersParamLis extends StObject {
   def reset(state: PartialStateNavigationSta): Unit = js.native
   def reset(state: NavigationState[ParamListBase]): Unit = js.native
   
-  var setOptions: js.UndefOr[js.Function1[/* options */ Partial[_], Unit]] = js.native
+  var setOptions: js.UndefOr[js.Function1[/* options */ Partial[js.Any], Unit]] = js.native
   
   var setParams: js.UndefOr[
     js.Function1[

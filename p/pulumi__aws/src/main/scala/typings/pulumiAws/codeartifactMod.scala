@@ -18,10 +18,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeartifactMod {
+  
+  @JSImport("@pulumi/aws/codeartifact", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/codeartifact", "Domain")
   @js.native
@@ -40,6 +43,10 @@ object codeartifactMod {
   /* static members */
   object Domain {
     
+    @JSImport("@pulumi/aws/codeartifact", "Domain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,26 +56,21 @@ object codeartifactMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.domainMod.Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.domainMod.Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.domainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.domainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainMod.Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainMod.Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact", "Domain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean]
   }
   
   @JSImport("@pulumi/aws/codeartifact", "DomainPermissions")
@@ -88,6 +90,10 @@ object codeartifactMod {
   /* static members */
   object DomainPermissions {
     
+    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainPermissions resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -97,26 +103,21 @@ object codeartifactMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.domainPermissionsMod.DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.domainPermissionsMod.DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPermissionsState): typings.pulumiAws.domainPermissionsMod.DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): typings.pulumiAws.domainPermissionsMod.DomainPermissions = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.domainPermissionsMod.DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainPermissionsMod.DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.domainPermissionsMod.DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainPermissionsMod.DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPermissionsState): typings.pulumiAws.domainPermissionsMod.DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainPermissionsMod.DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): typings.pulumiAws.domainPermissionsMod.DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.domainPermissionsMod.DomainPermissions]
     
     /**
       * Returns true if the given object is an instance of DomainPermissions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact", "DomainPermissions.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean]
   }
   
   @JSImport("@pulumi/aws/codeartifact", "Repository")
@@ -136,6 +137,10 @@ object codeartifactMod {
   /* static members */
   object Repository {
     
+    @JSImport("@pulumi/aws/codeartifact", "Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -145,26 +150,21 @@ object codeartifactMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.repositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.repositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryMod.Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact", "Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean]
   }
   
   @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy")
@@ -184,6 +184,10 @@ object codeartifactMod {
   /* static members */
   object RepositoryPermissionsPolicy {
     
+    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RepositoryPermissionsPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -193,39 +197,30 @@ object codeartifactMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = js.native
-    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPermissionsPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPermissionsPolicyMod.RepositoryPermissionsPolicy]
     
     /**
       * Returns true if the given object is an instance of RepositoryPermissionsPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact", "RepositoryPermissionsPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repositoryPermissionsPolicy.RepositoryPermissionsPolicy */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/codeartifact", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws/codeartifact", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
   
-  @JSImport("@pulumi/aws/codeartifact", "getRepositoryEndpoint")
-  @js.native
-  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs): js.Promise[GetRepositoryEndpointResult] = js.native
-  @JSImport("@pulumi/aws/codeartifact", "getRepositoryEndpoint")
-  @js.native
-  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs, opts: InvokeOptions): js.Promise[GetRepositoryEndpointResult] = js.native
+  @scala.inline
+  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs): js.Promise[GetRepositoryEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryEndpointResult]]
+  @scala.inline
+  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs, opts: InvokeOptions): js.Promise[GetRepositoryEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryEndpointResult]]
 }

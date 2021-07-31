@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.ItemNotificationMessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait NotificationMessageDetails extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait NotificationMessageDetails extends StObject {
     *
     * @beta
     */
-  var actions: js.UndefOr[js.Array[NotificationMessageAction]] = js.native
+  var actions: js.UndefOr[js.Array[NotificationMessageAction]] = js.undefined
   
   /**
     * A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
@@ -41,18 +39,18 @@ trait NotificationMessageDetails extends StObject {
     *
     * **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac, web browser).
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the notification message.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The text of the notification message. Maximum length is 150 characters.
     * If the developer passes in a longer string, an `ArgumentOutOfRange` exception is thrown.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Specifies if the message should be persistent. Only applicable when type is `InformationalMessage`.
@@ -61,7 +59,7 @@ trait NotificationMessageDetails extends StObject {
     * For error notifications, the message persists until the user sees it once.
     * Specifying this parameter for an unsupported type throws an exception.
     */
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the `ItemNotificationMessageType` of message.
@@ -72,7 +70,7 @@ trait NotificationMessageDetails extends StObject {
     *
     * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.
     */
-  var `type`: ItemNotificationMessageType | String = js.native
+  var `type`: ItemNotificationMessageType | String
 }
 object NotificationMessageDetails {
   

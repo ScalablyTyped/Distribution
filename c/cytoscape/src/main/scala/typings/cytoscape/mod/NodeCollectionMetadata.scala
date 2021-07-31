@@ -2,56 +2,54 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/metadata
   */
-@js.native
 trait NodeCollectionMetadata extends StObject {
   
   /**
     * Get the maximum degree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def maxDegree(includeLoops: Boolean): Double = js.native
+  def maxDegree(includeLoops: Boolean): Double
   
   /**
     * Get the maximum indegree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def maxIndegree(includeLoops: Boolean): Double = js.native
+  def maxIndegree(includeLoops: Boolean): Double
   
   /**
     * Get the maximum outdegree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def maxOutdegree(includeLoops: Boolean): Double = js.native
+  def maxOutdegree(includeLoops: Boolean): Double
   
   /**
     * Get the minimum degree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def minDegree(includeLoops: Boolean): Double = js.native
+  def minDegree(includeLoops: Boolean): Double
   
   /**
     * Get the minimum indegree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def minIndegree(includeLoops: Boolean): Double = js.native
+  def minIndegree(includeLoops: Boolean): Double
   
   /**
     * Get the minimum outdegree of the nodes in the collection.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def minOutdegree(includeLoops: Boolean): Double = js.native
+  def minOutdegree(includeLoops: Boolean): Double
   
   /**
     * Get the total degree of a collection of nodes.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def totalDegree(includeLoops: Boolean): Double = js.native
+  def totalDegree(includeLoops: Boolean): Double
 }
 object NodeCollectionMetadata {
   

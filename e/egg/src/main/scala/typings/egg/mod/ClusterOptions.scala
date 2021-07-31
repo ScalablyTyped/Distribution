@@ -3,36 +3,35 @@ package typings.egg.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOptions
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
   /** directory of application, default to `process.cwd()` */
-  var baseDir: js.UndefOr[String] = js.native
+  var baseDir: js.UndefOr[String] = js.undefined
   
   /** ssl cert */
-  var cert: js.UndefOr[String] = js.native
+  var cert: js.UndefOr[String] = js.undefined
   
   /** specify framework that can be absolute path or npm package */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /** https or not */
-  var https: js.UndefOr[Boolean] = js.native
+  var https: js.UndefOr[Boolean] = js.undefined
   
   /** ssl key */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** customized plugins, for unittest */
-  var plugins: js.UndefOr[js.Object | Null] = js.native
+  var plugins: js.UndefOr[js.Object | Null] = js.undefined
   
   /** listening port, default to 7001(http) or 8443(https) */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** numbers of app workers, default to `os.cpus().length` */
-  var workers: js.UndefOr[Double] = js.native
+  var workers: js.UndefOr[Double] = js.undefined
 }
 object ClusterOptions {
   

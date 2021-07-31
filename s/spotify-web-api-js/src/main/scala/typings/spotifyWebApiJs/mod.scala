@@ -89,7 +89,6 @@ import typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -99,7 +98,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("spotify-web-api-js", JSImport.Default)
     @js.native
-    class ^ () extends SpotifyWebApiJs
+    class ^ ()
+      extends StObject
+         with SpotifyWebApiJs
     
     @JSImport("spotify-web-api-js", JSImport.Default)
     @js.native
@@ -116,14 +117,13 @@ object mod {
     /**
       * Describes the regular error object: https://developer.spotify.com/web-api/user-guide/#error-details
       */
-    @js.native
     trait ErrorObject extends StObject {
       
-      var response: String = js.native
+      var response: String
       
-      var status: Double = js.native
+      var status: Double
       
-      var statusText: String = js.native
+      var statusText: String
     }
     object ErrorObject {
       
@@ -173,17 +173,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def addToMySavedAlbums(albumIds: js.Array[String]): js.Promise[SaveAlbumsForUserResponse] = js.native
-      def addToMySavedAlbums(
-        albumIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SaveAlbumsForUserResponse]
-      ): js.Promise[SaveAlbumsForUserResponse] = js.native
       def addToMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[SaveAlbumsForUserResponse] = js.native
       def addToMySavedAlbums(
         albumIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[SaveAlbumsForUserResponse]
       ): js.Promise[SaveAlbumsForUserResponse] = js.native
+      def addToMySavedAlbums(albumIds: js.Array[String], options: Unit, callback: ResultsCallback[SaveAlbumsForUserResponse]): js.Promise[SaveAlbumsForUserResponse] = js.native
       
       /**
         * Adds a list of shows to the current user's saved shows.
@@ -198,13 +194,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def addToMySavedShows(showIds: js.Array[String]): js.Promise[SaveShowsForUserResponse] = js.native
-      def addToMySavedShows(
-        showIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SaveShowsForUserResponse]
-      ): js.Promise[SaveShowsForUserResponse] = js.native
       def addToMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[SaveShowsForUserResponse] = js.native
       def addToMySavedShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[SaveShowsForUserResponse]): js.Promise[SaveShowsForUserResponse] = js.native
+      def addToMySavedShows(showIds: js.Array[String], options: Unit, callback: ResultsCallback[SaveShowsForUserResponse]): js.Promise[SaveShowsForUserResponse] = js.native
       
       /**
         * Adds a list of tracks to the current user's saved tracks.
@@ -219,17 +211,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def addToMySavedTracks(trackIds: js.Array[String]): js.Promise[SaveTracksForUserResponse] = js.native
-      def addToMySavedTracks(
-        trackIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SaveTracksForUserResponse]
-      ): js.Promise[SaveTracksForUserResponse] = js.native
       def addToMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[SaveTracksForUserResponse] = js.native
       def addToMySavedTracks(
         trackIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[SaveTracksForUserResponse]
       ): js.Promise[SaveTracksForUserResponse] = js.native
+      def addToMySavedTracks(trackIds: js.Array[String], options: Unit, callback: ResultsCallback[SaveTracksForUserResponse]): js.Promise[SaveTracksForUserResponse] = js.native
       
       /**
         * Add tracks to a playlist.
@@ -245,17 +233,17 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def addTracksToPlaylist(playlistId: String, uris: js.Array[String]): js.Promise[AddTracksToPlaylistResponse] = js.native
-      def addTracksToPlaylist(
-        playlistId: String,
-        uris: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[AddTracksToPlaylistResponse]
-      ): js.Promise[AddTracksToPlaylistResponse] = js.native
       def addTracksToPlaylist(playlistId: String, uris: js.Array[String], options: js.Object): js.Promise[AddTracksToPlaylistResponse] = js.native
       def addTracksToPlaylist(
         playlistId: String,
         uris: js.Array[String],
         options: js.Object,
+        callback: ResultsCallback[AddTracksToPlaylistResponse]
+      ): js.Promise[AddTracksToPlaylistResponse] = js.native
+      def addTracksToPlaylist(
+        playlistId: String,
+        uris: js.Array[String],
+        options: Unit,
         callback: ResultsCallback[AddTracksToPlaylistResponse]
       ): js.Promise[AddTracksToPlaylistResponse] = js.native
       
@@ -308,17 +296,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def containsMySavedAlbums(albumIds: js.Array[String]): js.Promise[CheckUserSavedAlbumsResponse] = js.native
-      def containsMySavedAlbums(
-        albumIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[CheckUserSavedAlbumsResponse]
-      ): js.Promise[CheckUserSavedAlbumsResponse] = js.native
       def containsMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[CheckUserSavedAlbumsResponse] = js.native
       def containsMySavedAlbums(
         albumIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[CheckUserSavedAlbumsResponse]
       ): js.Promise[CheckUserSavedAlbumsResponse] = js.native
+      def containsMySavedAlbums(albumIds: js.Array[String], options: Unit, callback: ResultsCallback[CheckUserSavedAlbumsResponse]): js.Promise[CheckUserSavedAlbumsResponse] = js.native
       
       /**
         * Checks if the current user's saved shows contains a certain list of shows.
@@ -333,17 +317,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def containsMySavedShows(showIds: js.Array[String]): js.Promise[CheckUsersSavedShowsResponse] = js.native
-      def containsMySavedShows(
-        showIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[CheckUsersSavedShowsResponse]
-      ): js.Promise[CheckUsersSavedShowsResponse] = js.native
       def containsMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[CheckUsersSavedShowsResponse] = js.native
       def containsMySavedShows(
         showIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[CheckUsersSavedShowsResponse]
       ): js.Promise[CheckUsersSavedShowsResponse] = js.native
+      def containsMySavedShows(showIds: js.Array[String], options: Unit, callback: ResultsCallback[CheckUsersSavedShowsResponse]): js.Promise[CheckUsersSavedShowsResponse] = js.native
       
       /**
         * Checks if the current user's saved tracks contains a certain list of tracks.
@@ -358,15 +338,15 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def containsMySavedTracks(trackIds: js.Array[String]): js.Promise[CheckUsersSavedTracksResponse] = js.native
-      def containsMySavedTracks(
-        trackIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[CheckUsersSavedTracksResponse]
-      ): js.Promise[CheckUsersSavedTracksResponse] = js.native
       def containsMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[CheckUsersSavedTracksResponse] = js.native
       def containsMySavedTracks(
         trackIds: js.Array[String],
         options: js.Object,
+        callback: ResultsCallback[CheckUsersSavedTracksResponse]
+      ): js.Promise[CheckUsersSavedTracksResponse] = js.native
+      def containsMySavedTracks(
+        trackIds: js.Array[String],
+        options: Unit,
         callback: ResultsCallback[CheckUsersSavedTracksResponse]
       ): js.Promise[CheckUsersSavedTracksResponse] = js.native
       
@@ -383,13 +363,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def createPlaylist(userId: String): js.Promise[CreatePlaylistResponse] = js.native
-      def createPlaylist(
-        userId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[CreatePlaylistResponse]
-      ): js.Promise[CreatePlaylistResponse] = js.native
       def createPlaylist(userId: String, options: js.Object): js.Promise[CreatePlaylistResponse] = js.native
       def createPlaylist(userId: String, options: js.Object, callback: ResultsCallback[CreatePlaylistResponse]): js.Promise[CreatePlaylistResponse] = js.native
+      def createPlaylist(userId: String, options: Unit, callback: ResultsCallback[CreatePlaylistResponse]): js.Promise[CreatePlaylistResponse] = js.native
       
       /**
         * Adds the current user as a follower of one or more artists.
@@ -419,13 +395,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def followPlaylist(playlistId: String): js.Promise[FollowPlaylistResponse] = js.native
-      def followPlaylist(
-        playlistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[FollowPlaylistResponse]
-      ): js.Promise[FollowPlaylistResponse] = js.native
       def followPlaylist(playlistId: String, options: js.Object): js.Promise[FollowPlaylistResponse] = js.native
       def followPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[FollowPlaylistResponse]): js.Promise[FollowPlaylistResponse] = js.native
+      def followPlaylist(playlistId: String, options: Unit, callback: ResultsCallback[FollowPlaylistResponse]): js.Promise[FollowPlaylistResponse] = js.native
       
       /**
         * Adds the current user as a follower of one or more other Spotify users.
@@ -461,13 +433,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getAlbum(albumId: String): js.Promise[SingleAlbumResponse] = js.native
-      def getAlbum(
-        albumId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SingleAlbumResponse]
-      ): js.Promise[SingleAlbumResponse] = js.native
       def getAlbum(albumId: String, options: js.Object): js.Promise[SingleAlbumResponse] = js.native
       def getAlbum(albumId: String, options: js.Object, callback: ResultsCallback[SingleAlbumResponse]): js.Promise[SingleAlbumResponse] = js.native
+      def getAlbum(albumId: String, options: Unit, callback: ResultsCallback[SingleAlbumResponse]): js.Promise[SingleAlbumResponse] = js.native
       
       /**
         * Fetches the tracks of an album from the Spotify catalog.
@@ -482,13 +450,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getAlbumTracks(albumId: String): js.Promise[AlbumTracksResponse] = js.native
-      def getAlbumTracks(
-        albumId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[AlbumTracksResponse]
-      ): js.Promise[AlbumTracksResponse] = js.native
       def getAlbumTracks(albumId: String, options: js.Object): js.Promise[AlbumTracksResponse] = js.native
       def getAlbumTracks(albumId: String, options: js.Object, callback: ResultsCallback[AlbumTracksResponse]): js.Promise[AlbumTracksResponse] = js.native
+      def getAlbumTracks(albumId: String, options: Unit, callback: ResultsCallback[AlbumTracksResponse]): js.Promise[AlbumTracksResponse] = js.native
       
       /**
         * Fetches multiple albums from the Spotify catalog.
@@ -503,13 +467,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getAlbums(albumIds: js.Array[String]): js.Promise[MultipleAlbumsResponse] = js.native
-      def getAlbums(
-        albumIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[MultipleAlbumsResponse]
-      ): js.Promise[MultipleAlbumsResponse] = js.native
       def getAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[MultipleAlbumsResponse] = js.native
       def getAlbums(albumIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleAlbumsResponse]): js.Promise[MultipleAlbumsResponse] = js.native
+      def getAlbums(albumIds: js.Array[String], options: Unit, callback: ResultsCallback[MultipleAlbumsResponse]): js.Promise[MultipleAlbumsResponse] = js.native
       
       /**
         * Fetches an artist from the Spotify catalog.
@@ -524,13 +484,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getArtist(artistId: String): js.Promise[SingleArtistResponse] = js.native
-      def getArtist(
-        artistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SingleArtistResponse]
-      ): js.Promise[SingleArtistResponse] = js.native
       def getArtist(artistId: String, options: js.Object): js.Promise[SingleArtistResponse] = js.native
       def getArtist(artistId: String, options: js.Object, callback: ResultsCallback[SingleArtistResponse]): js.Promise[SingleArtistResponse] = js.native
+      def getArtist(artistId: String, options: Unit, callback: ResultsCallback[SingleArtistResponse]): js.Promise[SingleArtistResponse] = js.native
       
       /**
         * Fetches the albums of an artist from the Spotify catalog.
@@ -545,13 +501,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getArtistAlbums(artistId: String): js.Promise[ArtistsAlbumsResponse] = js.native
-      def getArtistAlbums(
-        artistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ArtistsAlbumsResponse]
-      ): js.Promise[ArtistsAlbumsResponse] = js.native
       def getArtistAlbums(artistId: String, options: js.Object): js.Promise[ArtistsAlbumsResponse] = js.native
       def getArtistAlbums(artistId: String, options: js.Object, callback: ResultsCallback[ArtistsAlbumsResponse]): js.Promise[ArtistsAlbumsResponse] = js.native
+      def getArtistAlbums(artistId: String, options: Unit, callback: ResultsCallback[ArtistsAlbumsResponse]): js.Promise[ArtistsAlbumsResponse] = js.native
       
       /**
         * Fetches a list of artists related with a given one from the Spotify catalog.
@@ -566,13 +518,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getArtistRelatedArtists(artistId: String): js.Promise[ArtistsRelatedArtistsResponse] = js.native
-      def getArtistRelatedArtists(
-        artistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ArtistsRelatedArtistsResponse]
-      ): js.Promise[ArtistsRelatedArtistsResponse] = js.native
       def getArtistRelatedArtists(artistId: String, options: js.Object): js.Promise[ArtistsRelatedArtistsResponse] = js.native
       def getArtistRelatedArtists(artistId: String, options: js.Object, callback: ResultsCallback[ArtistsRelatedArtistsResponse]): js.Promise[ArtistsRelatedArtistsResponse] = js.native
+      def getArtistRelatedArtists(artistId: String, options: Unit, callback: ResultsCallback[ArtistsRelatedArtistsResponse]): js.Promise[ArtistsRelatedArtistsResponse] = js.native
       
       /**
         * Fetches a list of top tracks of an artist from the Spotify catalog, for a specific country.
@@ -588,17 +536,17 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getArtistTopTracks(artistId: String, countryId: String): js.Promise[ArtistsTopTracksResponse] = js.native
-      def getArtistTopTracks(
-        artistId: String,
-        countryId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ArtistsTopTracksResponse]
-      ): js.Promise[ArtistsTopTracksResponse] = js.native
       def getArtistTopTracks(artistId: String, countryId: String, options: js.Object): js.Promise[ArtistsTopTracksResponse] = js.native
       def getArtistTopTracks(
         artistId: String,
         countryId: String,
         options: js.Object,
+        callback: ResultsCallback[ArtistsTopTracksResponse]
+      ): js.Promise[ArtistsTopTracksResponse] = js.native
+      def getArtistTopTracks(
+        artistId: String,
+        countryId: String,
+        options: Unit,
         callback: ResultsCallback[ArtistsTopTracksResponse]
       ): js.Promise[ArtistsTopTracksResponse] = js.native
       
@@ -615,17 +563,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getArtists(artistIds: js.Array[String]): js.Promise[MultipleArtistsResponse] = js.native
-      def getArtists(
-        artistIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[MultipleArtistsResponse]
-      ): js.Promise[MultipleArtistsResponse] = js.native
       def getArtists(artistIds: js.Array[String], options: js.Object): js.Promise[MultipleArtistsResponse] = js.native
       def getArtists(
         artistIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[MultipleArtistsResponse]
       ): js.Promise[MultipleArtistsResponse] = js.native
+      def getArtists(artistIds: js.Array[String], options: Unit, callback: ResultsCallback[MultipleArtistsResponse]): js.Promise[MultipleArtistsResponse] = js.native
       
       /**
         * Get audio feature information for a single track identified by its unique Spotify ID.
@@ -635,8 +579,8 @@ object mod {
         * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
         * one is the error object (null if no error), and the second is the value if the request succeeded.
         */
-      def getAudioAnalysisForTrack(trackId: String): js.Promise[_] = js.native
-      def getAudioAnalysisForTrack(trackId: String, callback: ResultsCallback[_]): js.Promise[_] = js.native
+      def getAudioAnalysisForTrack(trackId: String): js.Promise[js.Any] = js.native
+      def getAudioAnalysisForTrack(trackId: String, callback: ResultsCallback[js.Any]): js.Promise[js.Any] = js.native
       
       /**
         * Get audio features for a single track identified by its unique Spotify ID.
@@ -689,9 +633,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getCategories(): js.Promise[MultipleCategoriesResponse] = js.native
-      def getCategories(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[MultipleCategoriesResponse]): js.Promise[MultipleCategoriesResponse] = js.native
       def getCategories(options: js.Object): js.Promise[MultipleCategoriesResponse] = js.native
       def getCategories(options: js.Object, callback: ResultsCallback[MultipleCategoriesResponse]): js.Promise[MultipleCategoriesResponse] = js.native
+      def getCategories(options: Unit, callback: ResultsCallback[MultipleCategoriesResponse]): js.Promise[MultipleCategoriesResponse] = js.native
       
       /**
         * Get a single category used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
@@ -705,13 +649,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getCategory(categoryId: String): js.Promise[SingleCategoryResponse] = js.native
-      def getCategory(
-        categoryId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SingleCategoryResponse]
-      ): js.Promise[SingleCategoryResponse] = js.native
       def getCategory(categoryId: String, options: js.Object): js.Promise[SingleCategoryResponse] = js.native
       def getCategory(categoryId: String, options: js.Object, callback: ResultsCallback[SingleCategoryResponse]): js.Promise[SingleCategoryResponse] = js.native
+      def getCategory(categoryId: String, options: Unit, callback: ResultsCallback[SingleCategoryResponse]): js.Promise[SingleCategoryResponse] = js.native
       
       /**
         * Get a list of Spotify playlists tagged with a particular category.
@@ -725,13 +665,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getCategoryPlaylists(categoryId: String): js.Promise[CategoryPlaylistsResponse] = js.native
-      def getCategoryPlaylists(
-        categoryId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[CategoryPlaylistsResponse]
-      ): js.Promise[CategoryPlaylistsResponse] = js.native
       def getCategoryPlaylists(categoryId: String, options: js.Object): js.Promise[CategoryPlaylistsResponse] = js.native
       def getCategoryPlaylists(categoryId: String, options: js.Object, callback: ResultsCallback[CategoryPlaylistsResponse]): js.Promise[CategoryPlaylistsResponse] = js.native
+      def getCategoryPlaylists(categoryId: String, options: Unit, callback: ResultsCallback[CategoryPlaylistsResponse]): js.Promise[CategoryPlaylistsResponse] = js.native
       
       /**
         * Fetches an episode from the Spotify catalog.
@@ -746,13 +682,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getEpisode(episodeId: String): js.Promise[SingleEpisodeResponse] = js.native
-      def getEpisode(
-        episodeId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SingleEpisodeResponse]
-      ): js.Promise[SingleEpisodeResponse] = js.native
       def getEpisode(episodeId: String, options: js.Object): js.Promise[SingleEpisodeResponse] = js.native
       def getEpisode(episodeId: String, options: js.Object, callback: ResultsCallback[SingleEpisodeResponse]): js.Promise[SingleEpisodeResponse] = js.native
+      def getEpisode(episodeId: String, options: Unit, callback: ResultsCallback[SingleEpisodeResponse]): js.Promise[SingleEpisodeResponse] = js.native
       
       /**
         * Fetches multiple episodes from the Spotify catalog.
@@ -767,17 +699,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getEpisodes(episodeIds: js.Array[String]): js.Promise[MultipleEpisodesResponse] = js.native
-      def getEpisodes(
-        episodeIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[MultipleEpisodesResponse]
-      ): js.Promise[MultipleEpisodesResponse] = js.native
       def getEpisodes(episodeIds: js.Array[String], options: js.Object): js.Promise[MultipleEpisodesResponse] = js.native
       def getEpisodes(
         episodeIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[MultipleEpisodesResponse]
       ): js.Promise[MultipleEpisodesResponse] = js.native
+      def getEpisodes(episodeIds: js.Array[String], options: Unit, callback: ResultsCallback[MultipleEpisodesResponse]): js.Promise[MultipleEpisodesResponse] = js.native
       
       /**
         * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
@@ -790,9 +718,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getFeaturedPlaylists(): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
-      def getFeaturedPlaylists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfFeaturedPlaylistsResponse]): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
       def getFeaturedPlaylists(options: js.Object): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
       def getFeaturedPlaylists(options: js.Object, callback: ResultsCallback[ListOfFeaturedPlaylistsResponse]): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
+      def getFeaturedPlaylists(options: Unit, callback: ResultsCallback[ListOfFeaturedPlaylistsResponse]): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
       
       /**
         * Get the current user's followed artists.
@@ -807,9 +735,9 @@ object mod {
         * artists objects. Not returned if a callback is given.
         */
       def getFollowedArtists(): js.Promise[UsersFollowedArtistsResponse] = js.native
-      def getFollowedArtists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersFollowedArtistsResponse]): js.Promise[UsersFollowedArtistsResponse] = js.native
       def getFollowedArtists(options: js.Object): js.Promise[UsersFollowedArtistsResponse] = js.native
       def getFollowedArtists(options: js.Object, callback: ResultsCallback[UsersFollowedArtistsResponse]): js.Promise[UsersFollowedArtistsResponse] = js.native
+      def getFollowedArtists(options: Unit, callback: ResultsCallback[UsersFollowedArtistsResponse]): js.Promise[UsersFollowedArtistsResponse] = js.native
       
       /**
         * Fetches a resource through a generic GET request.
@@ -832,9 +760,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMe(): js.Promise[CurrentUsersProfileResponse] = js.native
-      def getMe(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[CurrentUsersProfileResponse]): js.Promise[CurrentUsersProfileResponse] = js.native
       def getMe(options: js.Object): js.Promise[CurrentUsersProfileResponse] = js.native
       def getMe(options: js.Object, callback: ResultsCallback[CurrentUsersProfileResponse]): js.Promise[CurrentUsersProfileResponse] = js.native
+      def getMe(options: Unit, callback: ResultsCallback[CurrentUsersProfileResponse]): js.Promise[CurrentUsersProfileResponse] = js.native
       
       /**
         * Get information about the user’s current playback state, including track, track progress, and active device.
@@ -908,9 +836,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMySavedAlbums(): js.Promise[UsersSavedAlbumsResponse] = js.native
-      def getMySavedAlbums(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
       def getMySavedAlbums(options: js.Object): js.Promise[UsersSavedAlbumsResponse] = js.native
       def getMySavedAlbums(options: js.Object, callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
+      def getMySavedAlbums(options: Unit, callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
       
       /**
         * Fetches current user's saved shows.
@@ -923,9 +851,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMySavedShows(): js.Promise[ListOfUsersShowsResponse] = js.native
-      def getMySavedShows(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
       def getMySavedShows(options: js.Object): js.Promise[ListOfUsersShowsResponse] = js.native
       def getMySavedShows(options: js.Object, callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
+      def getMySavedShows(options: Unit, callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
       
       /**
         * Fetches current user's saved tracks.
@@ -938,9 +866,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMySavedTracks(): js.Promise[UsersSavedTracksResponse] = js.native
-      def getMySavedTracks(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersSavedTracksResponse]): js.Promise[UsersSavedTracksResponse] = js.native
       def getMySavedTracks(options: js.Object): js.Promise[UsersSavedTracksResponse] = js.native
       def getMySavedTracks(options: js.Object, callback: ResultsCallback[UsersSavedTracksResponse]): js.Promise[UsersSavedTracksResponse] = js.native
+      def getMySavedTracks(options: Unit, callback: ResultsCallback[UsersSavedTracksResponse]): js.Promise[UsersSavedTracksResponse] = js.native
       
       /**
         * Get the current user’s top artists based on calculated affinity.
@@ -953,9 +881,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMyTopArtists(): js.Promise[UsersTopArtistsResponse] = js.native
-      def getMyTopArtists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersTopArtistsResponse]): js.Promise[UsersTopArtistsResponse] = js.native
       def getMyTopArtists(options: js.Object): js.Promise[UsersTopArtistsResponse] = js.native
       def getMyTopArtists(options: js.Object, callback: ResultsCallback[UsersTopArtistsResponse]): js.Promise[UsersTopArtistsResponse] = js.native
+      def getMyTopArtists(options: Unit, callback: ResultsCallback[UsersTopArtistsResponse]): js.Promise[UsersTopArtistsResponse] = js.native
       
       /**
         * Get the current user’s top tracks based on calculated affinity.
@@ -968,9 +896,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getMyTopTracks(): js.Promise[UsersTopTracksResponse] = js.native
-      def getMyTopTracks(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersTopTracksResponse]): js.Promise[UsersTopTracksResponse] = js.native
       def getMyTopTracks(options: js.Object): js.Promise[UsersTopTracksResponse] = js.native
       def getMyTopTracks(options: js.Object, callback: ResultsCallback[UsersTopTracksResponse]): js.Promise[UsersTopTracksResponse] = js.native
+      def getMyTopTracks(options: Unit, callback: ResultsCallback[UsersTopTracksResponse]): js.Promise[UsersTopTracksResponse] = js.native
       
       /**
         * Fetches a list of new album releases featured in Spotify (shown, for example, on a Spotify player's "Browse" tab).
@@ -983,9 +911,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getNewReleases(): js.Promise[ListOfNewReleasesResponse] = js.native
-      def getNewReleases(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfNewReleasesResponse]): js.Promise[ListOfNewReleasesResponse] = js.native
       def getNewReleases(options: js.Object): js.Promise[ListOfNewReleasesResponse] = js.native
       def getNewReleases(options: js.Object, callback: ResultsCallback[ListOfNewReleasesResponse]): js.Promise[ListOfNewReleasesResponse] = js.native
+      def getNewReleases(options: Unit, callback: ResultsCallback[ListOfNewReleasesResponse]): js.Promise[ListOfNewReleasesResponse] = js.native
       
       /**
         * Fetches a specific playlist.
@@ -1000,13 +928,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getPlaylist(playlistId: String): js.Promise[SinglePlaylistResponse] = js.native
-      def getPlaylist(
-        playlistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SinglePlaylistResponse]
-      ): js.Promise[SinglePlaylistResponse] = js.native
       def getPlaylist(playlistId: String, options: js.Object): js.Promise[SinglePlaylistResponse] = js.native
       def getPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[SinglePlaylistResponse]): js.Promise[SinglePlaylistResponse] = js.native
+      def getPlaylist(playlistId: String, options: Unit, callback: ResultsCallback[SinglePlaylistResponse]): js.Promise[SinglePlaylistResponse] = js.native
       
       /**
         * Gets the current image associated with a specific playlist.
@@ -1035,13 +959,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getPlaylistTracks(playlistId: String): js.Promise[PlaylistTrackResponse] = js.native
-      def getPlaylistTracks(
-        playlistId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[PlaylistTrackResponse]
-      ): js.Promise[PlaylistTrackResponse] = js.native
       def getPlaylistTracks(playlistId: String, options: js.Object): js.Promise[PlaylistTrackResponse] = js.native
       def getPlaylistTracks(playlistId: String, options: js.Object, callback: ResultsCallback[PlaylistTrackResponse]): js.Promise[PlaylistTrackResponse] = js.native
+      def getPlaylistTracks(playlistId: String, options: Unit, callback: ResultsCallback[PlaylistTrackResponse]): js.Promise[PlaylistTrackResponse] = js.native
       
       /**
         * Create a playlist-style listening experience based on seed artists, tracks and genres.
@@ -1054,7 +974,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getRecommendations(): js.Promise[RecommendationsFromSeedsResponse] = js.native
-      def getRecommendations(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
+      def getRecommendations(options: Unit, callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
       def getRecommendations(options: RecommendationsOptionsObject): js.Promise[RecommendationsFromSeedsResponse] = js.native
       def getRecommendations(options: RecommendationsOptionsObject, callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
       
@@ -1071,9 +991,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getShow(showId: String): js.Promise[SingleShowResponse] = js.native
-      def getShow(showId: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
       def getShow(showId: String, options: js.Object): js.Promise[SingleShowResponse] = js.native
       def getShow(showId: String, options: js.Object, callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
+      def getShow(showId: String, options: Unit, callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
       
       /**
         * Fetches the episodes of a show from the Spotify catalog.
@@ -1088,13 +1008,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getShowEpisodes(showId: String): js.Promise[ShowEpisodesResponse] = js.native
-      def getShowEpisodes(
-        showId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ShowEpisodesResponse]
-      ): js.Promise[ShowEpisodesResponse] = js.native
       def getShowEpisodes(showId: String, options: js.Object): js.Promise[ShowEpisodesResponse] = js.native
       def getShowEpisodes(showId: String, options: js.Object, callback: ResultsCallback[ShowEpisodesResponse]): js.Promise[ShowEpisodesResponse] = js.native
+      def getShowEpisodes(showId: String, options: Unit, callback: ResultsCallback[ShowEpisodesResponse]): js.Promise[ShowEpisodesResponse] = js.native
       
       /**
         * Fetches multiple shows from the Spotify catalog.
@@ -1109,13 +1025,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getShows(showIds: js.Array[String]): js.Promise[MultipleShowsResponse] = js.native
-      def getShows(
-        showIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[MultipleShowsResponse]
-      ): js.Promise[MultipleShowsResponse] = js.native
       def getShows(showIds: js.Array[String], options: js.Object): js.Promise[MultipleShowsResponse] = js.native
       def getShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleShowsResponse]): js.Promise[MultipleShowsResponse] = js.native
+      def getShows(showIds: js.Array[String], options: Unit, callback: ResultsCallback[MultipleShowsResponse]): js.Promise[MultipleShowsResponse] = js.native
       
       /**
         * Fetches a track from the Spotify catalog.
@@ -1130,13 +1042,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getTrack(trackId: String): js.Promise[SingleTrackResponse] = js.native
-      def getTrack(
-        trackId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[SingleTrackResponse]
-      ): js.Promise[SingleTrackResponse] = js.native
       def getTrack(trackId: String, options: js.Object): js.Promise[SingleTrackResponse] = js.native
       def getTrack(trackId: String, options: js.Object, callback: ResultsCallback[SingleTrackResponse]): js.Promise[SingleTrackResponse] = js.native
+      def getTrack(trackId: String, options: Unit, callback: ResultsCallback[SingleTrackResponse]): js.Promise[SingleTrackResponse] = js.native
       
       /**
         * Fetches multiple tracks from the Spotify catalog.
@@ -1151,13 +1059,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getTracks(trackIds: js.Array[String]): js.Promise[MultipleTracksResponse] = js.native
-      def getTracks(
-        trackIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[MultipleTracksResponse]
-      ): js.Promise[MultipleTracksResponse] = js.native
       def getTracks(trackIds: js.Array[String], options: js.Object): js.Promise[MultipleTracksResponse] = js.native
       def getTracks(trackIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleTracksResponse]): js.Promise[MultipleTracksResponse] = js.native
+      def getTracks(trackIds: js.Array[String], options: Unit, callback: ResultsCallback[MultipleTracksResponse]): js.Promise[MultipleTracksResponse] = js.native
       
       /**
         * Fetches information about a specific user.
@@ -1172,9 +1076,9 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getUser(userId: String): js.Promise[UserProfileResponse] = js.native
-      def getUser(userId: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UserProfileResponse]): js.Promise[UserProfileResponse] = js.native
       def getUser(userId: String, options: js.Object): js.Promise[UserProfileResponse] = js.native
       def getUser(userId: String, options: js.Object, callback: ResultsCallback[UserProfileResponse]): js.Promise[UserProfileResponse] = js.native
+      def getUser(userId: String, options: Unit, callback: ResultsCallback[UserProfileResponse]): js.Promise[UserProfileResponse] = js.native
       
       /**
         * Fetches a list of the current user's playlists.
@@ -1190,25 +1094,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def getUserPlaylists(): js.Promise[ListOfUsersPlaylistsResponse] = js.native
-      def getUserPlaylists(
-        userId: js.UndefOr[scala.Nothing],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ListOfUsersPlaylistsResponse]
-      ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
-      def getUserPlaylists(userId: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[ListOfUsersPlaylistsResponse] = js.native
-      def getUserPlaylists(
-        userId: js.UndefOr[scala.Nothing],
-        options: js.Object,
-        callback: ResultsCallback[ListOfUsersPlaylistsResponse]
-      ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
       def getUserPlaylists(userId: String): js.Promise[ListOfUsersPlaylistsResponse] = js.native
-      def getUserPlaylists(
-        userId: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ListOfUsersPlaylistsResponse]
-      ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
       def getUserPlaylists(userId: String, options: js.Object): js.Promise[ListOfUsersPlaylistsResponse] = js.native
       def getUserPlaylists(userId: String, options: js.Object, callback: ResultsCallback[ListOfUsersPlaylistsResponse]): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+      def getUserPlaylists(userId: String, options: Unit, callback: ResultsCallback[ListOfUsersPlaylistsResponse]): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+      def getUserPlaylists(userId: Unit, options: js.Object): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+      def getUserPlaylists(userId: Unit, options: js.Object, callback: ResultsCallback[ListOfUsersPlaylistsResponse]): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+      def getUserPlaylists(userId: Unit, options: Unit, callback: ResultsCallback[ListOfUsersPlaylistsResponse]): js.Promise[ListOfUsersPlaylistsResponse] = js.native
       
       /**
         * Checks to see if the current user is following one or more artists.
@@ -1298,17 +1190,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def removeFromMySavedAlbums(albumIds: js.Array[String]): js.Promise[RemoveAlbumsForUserResponse] = js.native
-      def removeFromMySavedAlbums(
-        albumIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[RemoveAlbumsForUserResponse]
-      ): js.Promise[RemoveAlbumsForUserResponse] = js.native
       def removeFromMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[RemoveAlbumsForUserResponse] = js.native
       def removeFromMySavedAlbums(
         albumIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[RemoveAlbumsForUserResponse]
       ): js.Promise[RemoveAlbumsForUserResponse] = js.native
+      def removeFromMySavedAlbums(albumIds: js.Array[String], options: Unit, callback: ResultsCallback[RemoveAlbumsForUserResponse]): js.Promise[RemoveAlbumsForUserResponse] = js.native
       
       /**
         * Remove a list of shows from the current user's saved shows.
@@ -1323,17 +1211,13 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def removeFromMySavedShows(showIds: js.Array[String]): js.Promise[RemoveUsersSavedShowsResponse] = js.native
-      def removeFromMySavedShows(
-        showIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[RemoveUsersSavedShowsResponse]
-      ): js.Promise[RemoveUsersSavedShowsResponse] = js.native
       def removeFromMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[RemoveUsersSavedShowsResponse] = js.native
       def removeFromMySavedShows(
         showIds: js.Array[String],
         options: js.Object,
         callback: ResultsCallback[RemoveUsersSavedShowsResponse]
       ): js.Promise[RemoveUsersSavedShowsResponse] = js.native
+      def removeFromMySavedShows(showIds: js.Array[String], options: Unit, callback: ResultsCallback[RemoveUsersSavedShowsResponse]): js.Promise[RemoveUsersSavedShowsResponse] = js.native
       
       /**
         * Remove a list of tracks from the current user's saved tracks.
@@ -1348,15 +1232,15 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def removeFromMySavedTracks(trackIds: js.Array[String]): js.Promise[RemoveUsersSavedTracksResponse] = js.native
-      def removeFromMySavedTracks(
-        trackIds: js.Array[String],
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[RemoveUsersSavedTracksResponse]
-      ): js.Promise[RemoveUsersSavedTracksResponse] = js.native
       def removeFromMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[RemoveUsersSavedTracksResponse] = js.native
       def removeFromMySavedTracks(
         trackIds: js.Array[String],
         options: js.Object,
+        callback: ResultsCallback[RemoveUsersSavedTracksResponse]
+      ): js.Promise[RemoveUsersSavedTracksResponse] = js.native
+      def removeFromMySavedTracks(
+        trackIds: js.Array[String],
+        options: Unit,
         callback: ResultsCallback[RemoveUsersSavedTracksResponse]
       ): js.Promise[RemoveUsersSavedTracksResponse] = js.native
       
@@ -1442,19 +1326,19 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def reorderTracksInPlaylist(playlistId: String, rangeStart: Double, insertBefore: Double): js.Promise[ReorderPlaylistTracksResponse] = js.native
-      def reorderTracksInPlaylist(
-        playlistId: String,
-        rangeStart: Double,
-        insertBefore: Double,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[ReorderPlaylistTracksResponse]
-      ): js.Promise[ReorderPlaylistTracksResponse] = js.native
       def reorderTracksInPlaylist(playlistId: String, rangeStart: Double, insertBefore: Double, options: js.Object): js.Promise[ReorderPlaylistTracksResponse] = js.native
       def reorderTracksInPlaylist(
         playlistId: String,
         rangeStart: Double,
         insertBefore: Double,
         options: js.Object,
+        callback: ResultsCallback[ReorderPlaylistTracksResponse]
+      ): js.Promise[ReorderPlaylistTracksResponse] = js.native
+      def reorderTracksInPlaylist(
+        playlistId: String,
+        rangeStart: Double,
+        insertBefore: Double,
+        options: Unit,
         callback: ResultsCallback[ReorderPlaylistTracksResponse]
       ): js.Promise[ReorderPlaylistTracksResponse] = js.native
       
@@ -1495,7 +1379,7 @@ object mod {
       def search(
         query: String,
         types: js.Array[album | artist | playlist | track],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         callback: ResultsCallback[AlbumSearchResponse]
       ): js.Promise[SearchResponse] = js.native
       def search(
@@ -1522,7 +1406,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchAlbums(query: String): js.Promise[AlbumSearchResponse] = js.native
-      def searchAlbums(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[AlbumSearchResponse]): js.Promise[AlbumSearchResponse] = js.native
+      def searchAlbums(query: String, options: Unit, callback: ResultsCallback[AlbumSearchResponse]): js.Promise[AlbumSearchResponse] = js.native
       def searchAlbums(query: String, options: SearchForItemParameterObject): js.Promise[AlbumSearchResponse] = js.native
       def searchAlbums(
         query: String,
@@ -1542,7 +1426,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchArtists(query: String): js.Promise[ArtistSearchResponse] = js.native
-      def searchArtists(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ArtistSearchResponse]): js.Promise[ArtistSearchResponse] = js.native
+      def searchArtists(query: String, options: Unit, callback: ResultsCallback[ArtistSearchResponse]): js.Promise[ArtistSearchResponse] = js.native
       def searchArtists(query: String, options: SearchForItemParameterObject): js.Promise[ArtistSearchResponse] = js.native
       def searchArtists(
         query: String,
@@ -1562,11 +1446,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchEpisodes(query: String): js.Promise[EpisodeSearchResponse] = js.native
-      def searchEpisodes(
-        query: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[EpisodeSearchResponse]
-      ): js.Promise[EpisodeSearchResponse] = js.native
+      def searchEpisodes(query: String, options: Unit, callback: ResultsCallback[EpisodeSearchResponse]): js.Promise[EpisodeSearchResponse] = js.native
       def searchEpisodes(query: String, options: SearchForItemParameterObject): js.Promise[EpisodeSearchResponse] = js.native
       def searchEpisodes(
         query: String,
@@ -1586,11 +1466,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchPlaylists(query: String): js.Promise[PlaylistSearchResponse] = js.native
-      def searchPlaylists(
-        query: String,
-        options: js.UndefOr[scala.Nothing],
-        callback: ResultsCallback[PlaylistSearchResponse]
-      ): js.Promise[PlaylistSearchResponse] = js.native
+      def searchPlaylists(query: String, options: Unit, callback: ResultsCallback[PlaylistSearchResponse]): js.Promise[PlaylistSearchResponse] = js.native
       def searchPlaylists(query: String, options: SearchForItemParameterObject): js.Promise[PlaylistSearchResponse] = js.native
       def searchPlaylists(
         query: String,
@@ -1610,7 +1486,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchShows(query: String): js.Promise[ShowSearchResponse] = js.native
-      def searchShows(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ShowSearchResponse]): js.Promise[ShowSearchResponse] = js.native
+      def searchShows(query: String, options: Unit, callback: ResultsCallback[ShowSearchResponse]): js.Promise[ShowSearchResponse] = js.native
       def searchShows(query: String, options: SearchForItemParameterObject): js.Promise[ShowSearchResponse] = js.native
       def searchShows(
         query: String,
@@ -1630,7 +1506,7 @@ object mod {
         * @return {Object} Null if a callback is provided, a `Promise` object otherwise
         */
       def searchTracks(query: String): js.Promise[TrackSearchResponse] = js.native
-      def searchTracks(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[TrackSearchResponse]): js.Promise[TrackSearchResponse] = js.native
+      def searchTracks(query: String, options: Unit, callback: ResultsCallback[TrackSearchResponse]): js.Promise[TrackSearchResponse] = js.native
       def searchTracks(query: String, options: SearchForItemParameterObject): js.Promise[TrackSearchResponse] = js.native
       def searchTracks(
         query: String,
@@ -1843,7 +1719,9 @@ object mod {
       * Only possibility is to get a new instance of the SpotifyApi.
       */
     @js.native
-    trait SpotifyWebApiJsStatic extends Instantiable0[SpotifyWebApiJs]
+    trait SpotifyWebApiJsStatic
+      extends StObject
+         with Instantiable0[SpotifyWebApiJs]
     
     type VoidResultsCallback = js.Function1[/* error */ ErrorObject, js.Any]
   }

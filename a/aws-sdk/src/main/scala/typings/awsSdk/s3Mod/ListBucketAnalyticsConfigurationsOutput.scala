@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketAnalyticsConfigurationsOutput extends StObject {
   
   /**
     * The list of analytics configurations for a bucket.
     */
-  var AnalyticsConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.AnalyticsConfigurationList] = js.native
+  var AnalyticsConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.AnalyticsConfigurationList] = js.undefined
   
   /**
     * The marker that is used as a starting point for this analytics configuration list response. This value is present if it was sent in the request.
     */
-  var ContinuationToken: js.UndefOr[Token] = js.native
+  var ContinuationToken: js.UndefOr[Token] = js.undefined
   
   /**
     * Indicates whether the returned list of analytics configurations is complete. A value of true indicates that the list is not complete and the NextContinuationToken will be provided for a subsequent request.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     *  NextContinuationToken is sent when isTruncated is true, which indicates that there are more analytics configurations to list. The next request must include this NextContinuationToken. The token is obfuscated and is not a usable value.
     */
-  var NextContinuationToken: js.UndefOr[NextToken] = js.native
+  var NextContinuationToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBucketAnalyticsConfigurationsOutput {
   

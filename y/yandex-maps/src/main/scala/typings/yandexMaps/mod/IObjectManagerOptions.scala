@@ -2,21 +2,19 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectManagerOptions extends StObject {
   
-  var clusterHasBalloon: js.UndefOr[Boolean] = js.native
+  var clusterHasBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var clusterize: js.UndefOr[Boolean] = js.native
+  var clusterize: js.UndefOr[Boolean] = js.undefined
   
-  var geoObjectOpenBalloonOnClick: js.UndefOr[Boolean] = js.native
+  var geoObjectOpenBalloonOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var syncOverlayInit: js.UndefOr[Boolean] = js.native
+  var syncOverlayInit: js.UndefOr[Boolean] = js.undefined
   
-  var viewportMargin: js.UndefOr[Double | js.Array[Double]] = js.native
+  var viewportMargin: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object IObjectManagerOptions {
   

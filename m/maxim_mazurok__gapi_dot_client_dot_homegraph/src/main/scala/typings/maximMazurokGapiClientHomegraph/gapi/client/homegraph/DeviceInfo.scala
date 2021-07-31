@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceInfo extends StObject {
   
   /** Device hardware version. */
-  var hwVersion: js.UndefOr[String] = js.native
+  var hwVersion: js.UndefOr[String] = js.undefined
   
   /** Device manufacturer. */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /** Device model. */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** Device software version. */
-  var swVersion: js.UndefOr[String] = js.native
+  var swVersion: js.UndefOr[String] = js.undefined
 }
 object DeviceInfo {
   

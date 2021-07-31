@@ -3,13 +3,11 @@ package typings.webgme.Gme
 import typings.webgme.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodePropertyNames extends StObject {
   
-  var Attributes: Name = js.native
+  var Attributes: Name
 }
 object NodePropertyNames {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubeAnalytics/v1beta1", "youtubeAnalytics_v1beta1.Resource$Reports")
@@ -40,7 +39,7 @@ class ResourceReports protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaResultTable] = js.native
   def query(callback: BodyResponseCallback[SchemaResultTable]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResultTable] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResultTable] = js.native
   def query(params: ParamsResourceReportsQuery): GaxiosPromise[SchemaResultTable] = js.native
   def query(params: ParamsResourceReportsQuery, callback: BodyResponseCallback[SchemaResultTable]): Unit = js.native
   def query(

@@ -2,25 +2,23 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesMap extends StObject {
   
-  /* private */ def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any = js.native
+  /* private */ def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any
   
-  def FillRules(rules: js.Array[Rule], rulesBucketConstructionStateList: js.Array[RulesBucketConstructionState]): Unit = js.native
+  def FillRules(rules: js.Array[Rule], rulesBucketConstructionStateList: js.Array[RulesBucketConstructionState]): Unit
   
-  def GetRule(context: FormattingContext): Rule = js.native
+  def GetRule(context: FormattingContext): Rule
   
-  /* private */ def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any = js.native
+  /* private */ def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any
   
-  def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket] = js.native
+  def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket]
   
-  var map: js.Array[RulesBucket] = js.native
+  var map: js.Array[RulesBucket]
   
-  var mapRowLength: Double = js.native
+  var mapRowLength: Double
 }
 object RulesMap {
   

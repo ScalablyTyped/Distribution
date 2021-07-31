@@ -2,7 +2,6 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Specification](https://tc39.es/ecma402/#sec-FormatRelativeTimeToParts).
   */
-@js.native
 trait RelativeTimeFormatPart extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var unit: js.UndefOr[RelativeTimeFormatUnit] = js.native
+  var unit: js.UndefOr[RelativeTimeFormatUnit] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object RelativeTimeFormatPart {
   

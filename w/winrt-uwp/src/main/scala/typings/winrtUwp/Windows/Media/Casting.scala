@@ -16,7 +16,6 @@ import typings.winrtUwp.winrtUwpStrings.erroroccurred
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This namespace lets an app to cast or send particular media content to a second device and is meant to be device-protocol agnostic. Today, the APIs work with Miracast, DLNA, and Bluetooth, and support images, audio, and video from HTML Tags, ImageElement and MediaElement. */
@@ -31,31 +30,45 @@ object Casting {
     
     /** The device did not respond to the attempt to start or end theconnection. */
     @js.native
-    sealed trait deviceDidNotRespond extends CastingConnectionErrorStatus
+    sealed trait deviceDidNotRespond
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** The device returned an error when attempting to start or end the connection. */
     @js.native
-    sealed trait deviceError extends CastingConnectionErrorStatus
+    sealed trait deviceError
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** The device was locked and a start or end the connection could not be made. */
     @js.native
-    sealed trait deviceLocked extends CastingConnectionErrorStatus
+    sealed trait deviceLocked
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** The casting source was invalid. */
     @js.native
-    sealed trait invalidCastingSource extends CastingConnectionErrorStatus
+    sealed trait invalidCastingSource
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** The device could not provide protected playback. */
     @js.native
-    sealed trait protectedPlaybackFailed extends CastingConnectionErrorStatus
+    sealed trait protectedPlaybackFailed
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** Starting or ending the connection was successful. */
     @js.native
-    sealed trait succeeded extends CastingConnectionErrorStatus
+    sealed trait succeeded
+      extends StObject
+         with CastingConnectionErrorStatus
     
     /** An unknown error occurred when attempting to start or end the connection. */
     @js.native
-    sealed trait unknown extends CastingConnectionErrorStatus
+    sealed trait unknown
+      extends StObject
+         with CastingConnectionErrorStatus
   }
   
   @js.native
@@ -67,23 +80,33 @@ object Casting {
     
     /** The casting connection is active. */
     @js.native
-    sealed trait connected extends CastingConnectionState
+    sealed trait connected
+      extends StObject
+         with CastingConnectionState
     
     /** The connection is connecting. */
     @js.native
-    sealed trait connecting extends CastingConnectionState
+    sealed trait connecting
+      extends StObject
+         with CastingConnectionState
     
     /** The casting connection has been disconnected. */
     @js.native
-    sealed trait disconnected extends CastingConnectionState
+    sealed trait disconnected
+      extends StObject
+         with CastingConnectionState
     
     /** The connection is being disconnected. */
     @js.native
-    sealed trait disconnecting extends CastingConnectionState
+    sealed trait disconnecting
+      extends StObject
+         with CastingConnectionState
     
     /** The casting connection is actively playing content. */
     @js.native
-    sealed trait rendering extends CastingConnectionState
+    sealed trait rendering
+      extends StObject
+         with CastingConnectionState
   }
   
   @js.native
@@ -95,33 +118,41 @@ object Casting {
     
     /** The casting device supports audio playback. */
     @js.native
-    sealed trait audio extends CastingPlaybackTypes
+    sealed trait audio
+      extends StObject
+         with CastingPlaybackTypes
     
     /** The casting device does not support playback. */
     @js.native
-    sealed trait none extends CastingPlaybackTypes
+    sealed trait none
+      extends StObject
+         with CastingPlaybackTypes
     
     /** The casting device supports image playback. */
     @js.native
-    sealed trait picture extends CastingPlaybackTypes
+    sealed trait picture
+      extends StObject
+         with CastingPlaybackTypes
     
     /** The casting device supports video playback. */
     @js.native
-    sealed trait video extends CastingPlaybackTypes
+    sealed trait video
+      extends StObject
+         with CastingPlaybackTypes
   }
   
   /** Represents the actual connection with a casting device. */
   @js.native
   trait CastingConnection extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_erroroccurred(
       `type`: erroroccurred,
       listener: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, _]): Unit = js.native
+    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, js.Any]): Unit = js.native
     
     /** Closes the casting connection. */
     def close(): Unit = js.native
@@ -136,25 +167,25 @@ object Casting {
     def disconnectAsync(): IPromiseWithIAsyncOperation[CastingConnectionErrorStatus] = js.native
     
     /** Indicates an error occurred while attempting to make a casting connection. */
-    def onerroroccurred(ev: CastingConnectionErrorOccurredEventArgs with WinRTEvent[CastingConnection]): Unit = js.native
+    def onerroroccurred(ev: CastingConnectionErrorOccurredEventArgs & WinRTEvent[CastingConnection]): Unit = js.native
     /** Indicates an error occurred while attempting to make a casting connection. */
     @JSName("onerroroccurred")
     var onerroroccurred_Original: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs] = js.native
     
     /** Indicates a change in the State property. */
-    def onstatechanged(ev: js.Any with WinRTEvent[CastingConnection]): Unit = js.native
+    def onstatechanged(ev: js.Any & WinRTEvent[CastingConnection]): Unit = js.native
     /** Indicates a change in the State property. */
     @JSName("onstatechanged")
-    var onstatechanged_Original: TypedEventHandler[CastingConnection, _] = js.native
+    var onstatechanged_Original: TypedEventHandler[CastingConnection, js.Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_erroroccurred(
       `type`: erroroccurred,
       listener: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs]
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, _]): Unit = js.native
+    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, js.Any]): Unit = js.native
     
     /**
       * Starts the process of casting to a casting device. When called, this method pairs the c sting device, if necessary, and verifies access to the casting device with the user. If the user denies the app access to the device, casting fails. Otherwise, a connection is established, and content is sent to the device. During this time, the connection state changes to connecting, then to connected. If a casting source is set, the state changes to rendering once playback begins.
@@ -171,14 +202,13 @@ object Casting {
   }
   
   /** Represents arguments for the ErrorOccurred event from the CastingConnection */
-  @js.native
   trait CastingConnectionErrorOccurredEventArgs extends StObject {
     
     /** Gets the particular error that triggered the casting error event, ErrorOccurred . */
-    var errorStatus: CastingConnectionErrorStatus = js.native
+    var errorStatus: CastingConnectionErrorStatus
     
     /** Gets human-readable message to accompany the error status code, ErrorStatus . */
-    var message: String = js.native
+    var message: String
   }
   object CastingConnectionErrorOccurredEventArgs {
     
@@ -200,29 +230,28 @@ object Casting {
   }
   
   /** Represents a physical device that is capable of supporting casting connections and rendering media content sent to it. */
-  @js.native
   trait CastingDevice extends StObject {
     
     /**
       * Creates a new CastingConnection object. This method does not establish a connection to the casting device.
       * @return The object that represents the casting connection.
       */
-    def createCastingConnection(): CastingConnection = js.native
+    def createCastingConnection(): CastingConnection
     
     /** A human-readable name for the device, retrieved from the device itself. */
-    var friendlyName: String = js.native
+    var friendlyName: String
     
     /**
       * Gets the media types supported by the device. containing
       * @return The media types, CastingPlaybackTypes , supported by the device.
       */
-    def getSupportedCastingPlaybackTypesAsync(): IPromiseWithIAsyncOperation[CastingPlaybackTypes] = js.native
+    def getSupportedCastingPlaybackTypesAsync(): IPromiseWithIAsyncOperation[CastingPlaybackTypes]
     
     /** An icon representing the device. */
-    var icon: IRandomAccessStreamWithContentType = js.native
+    var icon: IRandomAccessStreamWithContentType
     
     /** The device ID. This is the same ID used with Windows.Devices.Enumeration APIs. */
-    var id: String = js.native
+    var id: String
   }
   object CastingDevice {
     
@@ -262,9 +291,9 @@ object Casting {
   @js.native
   trait CastingDevicePicker extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, _]): Unit = js.native
+    def addEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_castingdeviceselected(
       `type`: castingdeviceselected,
@@ -281,20 +310,20 @@ object Casting {
     def hide(): Unit = js.native
     
     /** Indicates that the user has dismissed the picker UI. */
-    def oncastingdevicepickerdismissed(ev: js.Any with WinRTEvent[CastingDevicePicker]): Unit = js.native
+    def oncastingdevicepickerdismissed(ev: js.Any & WinRTEvent[CastingDevicePicker]): Unit = js.native
     /** Indicates that the user has dismissed the picker UI. */
     @JSName("oncastingdevicepickerdismissed")
-    var oncastingdevicepickerdismissed_Original: TypedEventHandler[CastingDevicePicker, _] = js.native
+    var oncastingdevicepickerdismissed_Original: TypedEventHandler[CastingDevicePicker, js.Any] = js.native
     
     /** Indicates that the user has selected a device from the picker. */
-    def oncastingdeviceselected(ev: CastingDeviceSelectedEventArgs with WinRTEvent[CastingDevicePicker]): Unit = js.native
+    def oncastingdeviceselected(ev: CastingDeviceSelectedEventArgs & WinRTEvent[CastingDevicePicker]): Unit = js.native
     /** Indicates that the user has selected a device from the picker. */
     @JSName("oncastingdeviceselected")
     var oncastingdeviceselected_Original: TypedEventHandler[CastingDevicePicker, CastingDeviceSelectedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, _]): Unit = js.native
+    def removeEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_castingdeviceselected(
       `type`: castingdeviceselected,
@@ -315,20 +344,19 @@ object Casting {
   }
   
   /** Represents the filter used to determine which devices to show in a casting device picker UI. The filter parameters are OR-ed together to build the resulting filter. In other words, if SupportsAudio and SupportsVideo are both true, the picker will display Audio-only devices, video-only devices, and audio/video devices. */
-  @js.native
   trait CastingDevicePickerFilter extends StObject {
     
     /** Gets the casting sources supported. */
-    var supportedCastingSources: IVector[CastingSource] = js.native
+    var supportedCastingSources: IVector[CastingSource]
     
     /** Gets and sets whether the devices in the device picker should support audio playback. */
-    var supportsAudio: Boolean = js.native
+    var supportsAudio: Boolean
     
     /** Gets and sets whether the devices in the device picker should support rending still images. */
-    var supportsPictures: Boolean = js.native
+    var supportsPictures: Boolean
     
     /** Gets and sets whether the devices in the device picker should support video playback. */
-    var supportsVideo: Boolean = js.native
+    var supportsVideo: Boolean
   }
   object CastingDevicePickerFilter {
     
@@ -361,11 +389,10 @@ object Casting {
   }
   
   /** Represents the event arguments for the CastingDeviceSelected event on the CastingDevicePicker object. */
-  @js.native
   trait CastingDeviceSelectedEventArgs extends StObject {
     
     /** Represents the CastingDevice that has been selected by the user in a casting device picker. */
-    var selectedCastingDevice: CastingDevice = js.native
+    var selectedCastingDevice: CastingDevice
   }
   object CastingDeviceSelectedEventArgs {
     
@@ -384,11 +411,10 @@ object Casting {
   }
   
   /** Represents the media content that can be sent to another device. */
-  @js.native
   trait CastingSource extends StObject {
     
     /** Gets or sets an alternative URI for the content for use with DLNA ByRef. */
-    var preferredSourceUri: Uri = js.native
+    var preferredSourceUri: Uri
   }
   object CastingSource {
     

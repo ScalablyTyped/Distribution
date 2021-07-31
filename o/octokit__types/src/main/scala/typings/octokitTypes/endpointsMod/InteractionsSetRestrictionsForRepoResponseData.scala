@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractionsSetRestrictionsForRepoResponseData extends StObject {
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var limit: String = js.native
+  var limit: String
   
-  var origin: String = js.native
+  var origin: String
 }
 object InteractionsSetRestrictionsForRepoResponseData {
   

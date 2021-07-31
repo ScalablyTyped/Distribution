@@ -7,10 +7,13 @@ import typings.ionicCliFramework.definitionsMod.ICommand
 import typings.ionicCliFramework.definitionsMod.INamespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object completionMod {
+  
+  @JSImport("@ionic/cli-framework/lib/completion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/lib/completion", "CompletionFormatter")
   @js.native
@@ -28,14 +31,12 @@ object completionMod {
     def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   
-  @JSImport("@ionic/cli-framework/lib/completion", "getCompletionWords")
-  @js.native
-  def getCompletionWords[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](ns: N, argv: js.Array[String]): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getCompletionWords[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](ns: N, argv: js.Array[String]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompletionWords")(ns.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @js.native
   trait CompletionFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    val namespace: N = js.native
+    val namespace: N
   }
   object CompletionFormatterDeps {
     
@@ -46,7 +47,7 @@ object completionMod {
     }
     
     @scala.inline
-    implicit class CompletionFormatterDepsMutableBuilder[Self <: CompletionFormatterDeps[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (CompletionFormatterDeps[C, N, M, I, O])) extends AnyVal {
+    implicit class CompletionFormatterDepsMutableBuilder[Self <: CompletionFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CompletionFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])

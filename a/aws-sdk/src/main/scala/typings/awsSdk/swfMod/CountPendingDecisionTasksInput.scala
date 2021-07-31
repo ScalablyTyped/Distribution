@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountPendingDecisionTasksInput extends StObject {
   
   /**
     * The name of the domain that contains the task list.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * The name of the task list.
     */
-  var taskList: TaskList = js.native
+  var taskList: TaskList
 }
 object CountPendingDecisionTasksInput {
   

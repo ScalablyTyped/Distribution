@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the barcode symbology. */
 @JSGlobal("Windows.Devices.PointOfService.BarcodeSymbologies")
 @js.native
 abstract class BarcodeSymbologies ()
-  extends typings.winrtUwp.Windows.Devices.PointOfService.BarcodeSymbologies
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.PointOfService.BarcodeSymbologies
 object BarcodeSymbologies {
   
   @JSGlobal("Windows.Devices.PointOfService.BarcodeSymbologies")
@@ -308,9 +308,8 @@ object BarcodeSymbologies {
     * @return The barcode symbology type as a string.
     */
   /* static member */
-  @JSGlobal("Windows.Devices.PointOfService.BarcodeSymbologies.getName")
-  @js.native
-  def getName(scanDataType: Double): String = js.native
+  @scala.inline
+  def getName(scanDataType: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(scanDataType.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Gets the GS1 128 shipping container barcode symbology. */
   /* static member */

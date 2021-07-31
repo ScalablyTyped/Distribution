@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FloatingObjectTextWrapSide extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.FloatingObjectTextWrapSide with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.FloatingObjectTextWrapSide & Double] = js.native
   
-  /* 0 */ val Both: typings.devexpressWeb.FloatingObjectTextWrapSide.Both with Double = js.native
+  /* 0 */ val Both: typings.devexpressWeb.FloatingObjectTextWrapSide.Both & Double = js.native
   
-  /* 3 */ val Largest: typings.devexpressWeb.FloatingObjectTextWrapSide.Largest with Double = js.native
+  /* 3 */ val Largest: typings.devexpressWeb.FloatingObjectTextWrapSide.Largest & Double = js.native
   
-  /* 1 */ val Left: typings.devexpressWeb.FloatingObjectTextWrapSide.Left with Double = js.native
+  /* 1 */ val Left: typings.devexpressWeb.FloatingObjectTextWrapSide.Left & Double = js.native
   
-  /* 2 */ val Right: typings.devexpressWeb.FloatingObjectTextWrapSide.Right with Double = js.native
+  /* 2 */ val Right: typings.devexpressWeb.FloatingObjectTextWrapSide.Right & Double = js.native
 }

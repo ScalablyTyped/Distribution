@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNetworksOutput extends StObject {
   
   /**
     * An array of NetworkSummary objects that contain configuration properties for each network.
     */
-  var Networks: js.UndefOr[NetworkSummaryList] = js.native
+  var Networks: js.UndefOr[NetworkSummaryList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListNetworksOutput {
   

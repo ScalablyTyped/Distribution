@@ -2,7 +2,6 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * token](https://developers.google.com/identity/protocols/OAuth2). This type
   * of authorization should be used when sending requests to a GCP endpoint.
   */
-@js.native
 trait SchemaOAuthToken extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaOAuthToken extends StObject {
     * specified, &quot;https://www.googleapis.com/auth/cloud-platform&quot;
     * will be used.
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account
@@ -27,7 +25,7 @@ trait SchemaOAuthToken extends StObject {
     * project as the job. The caller must have iam.serviceAccounts.actAs
     * permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaOAuthToken {
   

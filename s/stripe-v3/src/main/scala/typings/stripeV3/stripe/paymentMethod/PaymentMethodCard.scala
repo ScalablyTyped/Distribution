@@ -7,71 +7,69 @@ import typings.stripeV3.anon.Supported
 import typings.stripeV3.stripe.fundingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodCard extends StObject {
   
   /**
     * Card brand
     */
-  var brand: paymentMethodCardBrand = js.native
+  var brand: paymentMethodCardBrand
   
   /**
     * Checks on Card address and CVC if provided.
     */
-  var checks: Addressline1check = js.native
+  var checks: Addressline1check
   
   /**
     * Two-letter ISO code representing the country of the card. You
     * could use this attribute to get a sense of the international
     * breakdown of cards you’ve collected.
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * Two-digit number representing the card’s expiration month.
     */
-  var exp_month: Double = js.native
+  var exp_month: Double
   
   /**
     * Four-digit number representing the card’s expiration year.
     */
-  var exp_year: Double = js.native
+  var exp_year: Double
   
   /**
     * Uniquely identifies this particular card number. You can use
     * this attribute to check whether two customers who’ve signed
     * up with you are using the same card number, for example.
     */
-  var fingerprint: String = js.native
+  var fingerprint: String
   
   /**
     * Card funding type
     */
-  var funding: fundingType = js.native
+  var funding: fundingType
   
   /**
     * Details of the original PaymentMethod that created this object.
     */
-  var generated_from: Charge = js.native
+  var generated_from: Charge
   
   /**
     * The last four digits of the card.
     */
-  var last4: String = js.native
+  var last4: String
   
   /**
     * Contains details on how this Card maybe be used for 3D Secure authentication.
     */
-  var three_d_secure_usage: js.UndefOr[Supported] = js.native
+  var three_d_secure_usage: js.UndefOr[Supported] = js.undefined
   
   /**
     * If this Card is part of a card wallet, this contains the details of
     * the card wallet.
     */
-  var wallet: Amexexpresscheckout | Null = js.native
+  var wallet: Amexexpresscheckout | Null
 }
 object PaymentMethodCard {
   
@@ -87,7 +85,7 @@ object PaymentMethodCard {
     generated_from: Charge,
     last4: String
   ): PaymentMethodCard = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], generated_from = generated_from.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], generated_from = generated_from.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], wallet = null)
     __obj.asInstanceOf[PaymentMethodCard]
   }
   

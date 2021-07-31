@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogInError extends StObject {
   
-  var backlogInError: scala.Double = js.native
+  var backlogInError: scala.Double
   
-  var doesntExistOrAccessDenied: scala.Double = js.native
+  var doesntExistOrAccessDenied: scala.Double
   
-  var maxTeamFieldsExceeded: scala.Double = js.native
+  var maxTeamFieldsExceeded: scala.Double
   
-  var maxTeamsExceeded: scala.Double = js.native
+  var maxTeamsExceeded: scala.Double
   
-  var missingTeamFieldValue: scala.Double = js.native
+  var missingTeamFieldValue: scala.Double
   
-  var noIterationsExist: scala.Double = js.native
+  var noIterationsExist: scala.Double
   
-  var oK: scala.Double = js.native
+  var oK: scala.Double
 }
 object BacklogInError {
   

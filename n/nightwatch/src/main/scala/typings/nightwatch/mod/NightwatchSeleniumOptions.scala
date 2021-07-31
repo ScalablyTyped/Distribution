@@ -2,10 +2,8 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchSeleniumOptions extends StObject {
   
   /**
@@ -24,37 +22,37 @@ trait NightwatchSeleniumOptions extends StObject {
     * (https://code.google.com/p/selenium/wiki/InternetExplorerDriver) and specify it's location here. Also don't forget to specify "internet explorer" as the browser
     * name in the desiredCapabilities object.
     */
-  var cli_args: js.Any = js.native
+  var cli_args: js.Any
   
   /**
     * Usually not required and only used if start_process is true. Specify the IP address you wish Selenium to listen on.
     */
-  var host: String = js.native
+  var host: String
   
   /**
     * The location where the selenium Selenium-debug.log file will be placed. Defaults to current directory. To disable Selenium logging, set this to false
     */
-  var log_path: String | Boolean = js.native
+  var log_path: String | Boolean
   
   /**
     * The port number Selenium will listen on.
     */
-  var port: Double = js.native
+  var port: Double
   
   /**
     * The location of the selenium jar file. This needs to be specified if start_process is enabled.E.g.: lib/selenium-server-standalone-2.43.0.jar
     */
-  var server_path: String = js.native
+  var server_path: String
   
   /**
     * Whether or not to manage the selenium process automatically.
     */
-  var start_process: Boolean = js.native
+  var start_process: Boolean
   
   /**
     * Whether or not to automatically start the Selenium session.
     */
-  var start_session: Boolean = js.native
+  var start_session: Boolean
 }
 object NightwatchSeleniumOptions {
   

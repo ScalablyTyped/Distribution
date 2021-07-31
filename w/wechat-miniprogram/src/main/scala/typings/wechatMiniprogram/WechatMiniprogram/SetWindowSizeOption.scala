@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWindowSizeOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetWindowSizeCompleteCallback] = js.native
+  var complete: js.UndefOr[SetWindowSizeCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetWindowSizeFailCallback] = js.native
+  var fail: js.UndefOr[SetWindowSizeFailCallback] = js.undefined
   
   /** 窗口高度，以像素为单位 */
-  var height: Double = js.native
+  var height: Double
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetWindowSizeSuccessCallback] = js.native
+  var success: js.UndefOr[SetWindowSizeSuccessCallback] = js.undefined
   
   /** 窗口宽度，以像素为单位 */
-  var width: Double = js.native
+  var width: Double
 }
 object SetWindowSizeOption {
   

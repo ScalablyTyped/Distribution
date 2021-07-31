@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridRowSelectorsMethods extends StObject {
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.iggridrowselectors#options:language)
     * Note that this method is for rare scenarios, see [language](ui.iggridrowselectors#options:language) or [locale](ui.iggridrowselectors#options:locale) option setter
     */
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def rsRenderColgroup(): Unit = js.native
+  def rsRenderColgroup(): Unit
 }
 object IgGridRowSelectorsMethods {
   

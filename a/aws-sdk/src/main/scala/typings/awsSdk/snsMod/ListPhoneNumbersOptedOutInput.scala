@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPhoneNumbersOptedOutInput extends StObject {
   
   /**
     * A NextToken string is used when you call the ListPhoneNumbersOptedOut action to retrieve additional records that are available after the first page of results.
     */
-  var nextToken: js.UndefOr[java.lang.String] = js.native
+  var nextToken: js.UndefOr[java.lang.String] = js.undefined
 }
 object ListPhoneNumbersOptedOutInput {
   

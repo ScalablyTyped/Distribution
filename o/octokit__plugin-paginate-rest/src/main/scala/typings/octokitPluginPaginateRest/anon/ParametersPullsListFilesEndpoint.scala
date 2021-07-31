@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.PullsListFilesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersPullsListFilesEndpoint extends StObject {
   
-  var parameters: PullsListFilesEndpoint = js.native
+  var parameters: PullsListFilesEndpoint
   
-  var response: OctokitResponse[PullsListFilesResponseData] = js.native
+  var response: OctokitResponse[PullsListFilesResponseData]
 }
 object ParametersPullsListFilesEndpoint {
   

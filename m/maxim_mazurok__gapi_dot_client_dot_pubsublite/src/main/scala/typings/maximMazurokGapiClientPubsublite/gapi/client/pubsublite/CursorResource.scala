@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CursorResource extends StObject {
   
-  var projects: ProjectsResource = js.native
+  var projects: ProjectsResource
 }
 object CursorResource {
   

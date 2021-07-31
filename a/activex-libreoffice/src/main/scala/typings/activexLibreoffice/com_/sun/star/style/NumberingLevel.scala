@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,38 +9,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NumberType determines the type of the numbering symbol. Depending on this setting, some of the following values will be ignored.
   */
-@js.native
 trait NumberingLevel extends StObject {
   
   /** This is the name of the font that is used for the bullet. */
-  var BulletFontName: String = js.native
+  var BulletFontName: String
   
   /** The bullet symbol with this code in the assigned font is used. */
-  var BulletId: Double = js.native
+  var BulletId: Double
   
   /** This is the name of the character style that is used for the symbol(s). */
-  var CharStyleName: String = js.native
+  var CharStyleName: String
   
   /** This is the URL of a graphic file to use as a symbol. */
-  var GraphicURL: String = js.native
+  var GraphicURL: String
   
   /**
     * specifies the type of numbering.
     * @see NumberingType
     */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
   
   /** specifies the number of higher numbering levels that are included in the representation of the current number. */
-  var ParentNumbering: Double = js.native
+  var ParentNumbering: Double
   
   /** This prefix is inserted in front of the numbering symbol(s). */
-  var Prefix: String = js.native
+  var Prefix: String
   
   /** This specifies the start value for the numbering. */
-  var StartWith: Double = js.native
+  var StartWith: Double
   
   /** This suffix is inserted after the numbering symbol(s). */
-  var Suffix: String = js.native
+  var Suffix: String
 }
 object NumberingLevel {
   

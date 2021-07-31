@@ -2,16 +2,14 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TapIndex extends StObject {
   
   /**
     * 用户点击的按钮，从上到下的顺序，从0开始
     */
-  var tapIndex: Double = js.native
+  var tapIndex: Double
 }
 object TapIndex {
   

@@ -2,15 +2,13 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardedX11 extends StObject {
   
-  var originAddr: String = js.native
+  var originAddr: String
   
-  var originPort: Double = js.native
+  var originPort: Double
 }
 object ForwardedX11 {
   

@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a StepDefinitionPattern. */
@@ -24,18 +23,20 @@ class StepDefinitionPattern ()
 }
 object StepDefinitionPattern {
   
+  @JSImport("cucumber-messages", "messages.StepDefinitionPattern")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new StepDefinitionPattern instance using the specified properties.
     * @param [properties] Properties to set
     * @returns StepDefinitionPattern instance
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.create")
-  @js.native
-  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.create")
-  @js.native
-  def create(properties: IStepDefinitionPattern): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
+  @scala.inline
+  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
+  @scala.inline
+  def create(properties: IStepDefinitionPattern): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
   
   /**
     * Decodes a StepDefinitionPattern message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object StepDefinitionPattern {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decode")
-  @js.native
-  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
   
   /**
     * Decodes a StepDefinitionPattern message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object StepDefinitionPattern {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
   
   /**
     * Encodes the specified StepDefinitionPattern message. Does not implicitly {@link io.cucumber.messages.StepDefinitionPattern.verify|verify} messages.
@@ -81,12 +76,10 @@ object StepDefinitionPattern {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.encode")
-  @js.native
-  def encode(message: IStepDefinitionPattern): Writer = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.encode")
-  @js.native
-  def encode(message: IStepDefinitionPattern, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStepDefinitionPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStepDefinitionPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StepDefinitionPattern message, length delimited. Does not implicitly {@link io.cucumber.messages.StepDefinitionPattern.verify|verify} messages.
@@ -95,12 +88,10 @@ object StepDefinitionPattern {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStepDefinitionPattern): Writer = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStepDefinitionPattern, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStepDefinitionPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStepDefinitionPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StepDefinitionPattern message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object StepDefinitionPattern {
     * @returns StepDefinitionPattern
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern]
   
   /**
     * Creates a plain object from a StepDefinitionPattern message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object StepDefinitionPattern {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.toObject")
-  @js.native
-  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepDefinitionPattern,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StepDefinitionPattern message.
@@ -135,7 +123,6 @@ object StepDefinitionPattern {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.StepDefinitionPattern.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

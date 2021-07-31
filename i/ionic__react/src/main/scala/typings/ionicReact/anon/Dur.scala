@@ -2,19 +2,17 @@ package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dur extends StObject {
   
-  var dur: js.UndefOr[Double] = js.native
+  var dur: js.UndefOr[Double] = js.undefined
   
   var playTo: js.UndefOr[
     typings.ionicReact.ionicReactNumbers.`0` | typings.ionicReact.ionicReactNumbers.`1`
-  ] = js.native
+  ] = js.undefined
   
-  var step: Double = js.native
+  var step: Double
 }
 object Dur {
   

@@ -3,17 +3,17 @@ package typings.typescript.mod
 import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReferenceEntry extends DocumentSpan {
+trait ReferenceEntry
+  extends StObject
+     with DocumentSpan {
   
-  var isDefinition: Boolean = js.native
+  var isDefinition: Boolean
   
-  var isInString: js.UndefOr[`true`] = js.native
+  var isInString: js.UndefOr[`true`] = js.undefined
   
-  var isWriteAccess: Boolean = js.native
+  var isWriteAccess: Boolean
 }
 object ReferenceEntry {
   

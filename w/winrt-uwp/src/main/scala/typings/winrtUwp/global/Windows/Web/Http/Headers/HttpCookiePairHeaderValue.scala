@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.Web.Http.Headers
 import typings.winrtUwp.anon.CookiePairHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents cookie information used in the Cookie HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue")
 @js.native
 class HttpCookiePairHeaderValue protected ()
-  extends typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue {
+  extends StObject
+     with typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue {
   /**
     * Initializes a new instance of the HttpCookiePairHeaderValue class. with a cookie name.
     * @param name A token that represents the cookie name.
@@ -22,8 +22,20 @@ class HttpCookiePairHeaderValue protected ()
     * @param value A value for the cookie.
     */
   def this(name: String, value: String) = this()
+  
+  /** Gets a token that represents the cookie name used in the Cookie HTTP header. */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /** Gets or sets a value for the cookie used in the Cookie HTTP header. */
+  /* CompleteClass */
+  var value: String = js.native
 }
 object HttpCookiePairHeaderValue {
+  
+  @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts a string to an HttpCookiePairHeaderValue instance.
@@ -31,16 +43,14 @@ object HttpCookiePairHeaderValue {
     * @return An HttpCookiePairHeaderValue instance.
     */
   /* static member */
-  @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue.parse")
-  @js.native
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue = js.native
+  @scala.inline
+  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue]
   
   /**
     * Determines whether a string is valid HttpCookiePairHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue.tryParse")
-  @js.native
-  def tryParse(input: String): CookiePairHeaderValue = js.native
+  @scala.inline
+  def tryParse(input: String): CookiePairHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[CookiePairHeaderValue]
 }

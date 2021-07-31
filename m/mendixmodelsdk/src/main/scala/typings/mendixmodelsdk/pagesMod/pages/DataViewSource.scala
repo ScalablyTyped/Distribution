@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource")
@@ -37,9 +36,8 @@ object DataViewSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource.create")
-  @js.native
-  def create(model: IModel): DataViewSource = js.native
+  @scala.inline
+  def create(model: IModel): DataViewSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataViewSource]
   
   /**
     * Creates and returns a new DataViewSource instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object DataViewSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource.createIn")
-  @js.native
-  def createIn(container: EntityWidget): DataViewSource = js.native
+  @scala.inline
+  def createIn(container: EntityWidget): DataViewSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewSource]
   
   /**
     * Creates and returns a new DataViewSource instance in the SDK and on the server.
@@ -60,9 +57,8 @@ object DataViewSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource.createInEntityWidgetUnderDataSource")
-  @js.native
-  def createInEntityWidgetUnderDataSource(container: EntityWidget): DataViewSource = js.native
+  @scala.inline
+  def createInEntityWidgetUnderDataSource(container: EntityWidget): DataViewSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewSource]
   
   /**
     * Creates and returns a new DataViewSource instance in the SDK and on the server.
@@ -73,9 +69,8 @@ object DataViewSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource.createInWidgetValueUnderDataSource")
-  @js.native
-  def createInWidgetValueUnderDataSource(container: WidgetValue): DataViewSource = js.native
+  @scala.inline
+  def createInWidgetValueUnderDataSource(container: WidgetValue): DataViewSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewSource.structureTypeName")

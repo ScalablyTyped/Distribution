@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.mod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginToArrayMod extends Shortcut {
@@ -21,10 +20,9 @@ object pluginToArrayMod extends Shortcut {
   /* augmented module */
   object dayjsAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def toArray(): js.Array[Double] = js.native
+      def toArray(): js.Array[Double]
     }
     object Dayjs {
       

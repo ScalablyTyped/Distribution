@@ -2,22 +2,20 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of the {@link auth.Auth.getUsers} API. */
-@js.native
 trait GetUsersResult extends StObject {
   
   /** Set of identifiers that were requested, but not found. */
-  var notFound: js.Array[UserIdentifier] = js.native
+  var notFound: js.Array[UserIdentifier]
   
   /**
     * Set of user records, corresponding to the set of users that were
     * requested. Only users that were found are listed here. The result set is
     * unordered.
     */
-  var users: js.Array[UserRecord] = js.native
+  var users: js.Array[UserRecord]
 }
 object GetUsersResult {
   

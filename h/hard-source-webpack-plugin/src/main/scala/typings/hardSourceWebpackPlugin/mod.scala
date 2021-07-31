@@ -9,7 +9,6 @@ import typings.node.childProcessMod.ForkOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,8 +16,13 @@ object mod {
   @JSImport("hard-source-webpack-plugin", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin {
+    extends StObject
+       with typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(args: js.Any*): Unit = js.native
   }
   
   @JSImport("hard-source-webpack-plugin", "ExcludeModulePlugin")
@@ -34,14 +38,13 @@ object mod {
   }
   object ExcludeModulePlugin {
     
-    @js.native
     trait Option extends StObject {
       
-      var exclude: js.UndefOr[TestElement] = js.native
+      var exclude: js.UndefOr[TestElement] = js.undefined
       
-      var include: js.UndefOr[TestElement] = js.native
+      var include: js.UndefOr[TestElement] = js.undefined
       
-      var test: TestElement = js.native
+      var test: TestElement
     }
     object Option {
       
@@ -124,7 +127,6 @@ object mod {
   }
   object ParallelModulePlugin {
     
-    @js.native
     trait Options extends StObject {
       
       var fork: js.UndefOr[
@@ -134,11 +136,11 @@ object mod {
               /* webpackBin */ String, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var minModules: js.UndefOr[Double] = js.native
+      var minModules: js.UndefOr[Double] = js.undefined
       
-      var numWorkers: js.UndefOr[Double | js.Function0[Double]] = js.native
+      var numWorkers: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     }
     object Options {
       
@@ -227,12 +229,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cacheDirectory: js.UndefOr[String] = js.native
+    var cacheDirectory: js.UndefOr[String] = js.undefined
     
-    var cachePrune: js.UndefOr[MaxAge] = js.native
+    var cachePrune: js.UndefOr[MaxAge] = js.undefined
     
     var configHash: js.UndefOr[
         String | (js.Function1[
@@ -241,11 +242,11 @@ object mod {
           ], 
           String
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var environmentHash: js.UndefOr[Directories] = js.native
+    var environmentHash: js.UndefOr[Directories] = js.undefined
     
-    var info: js.UndefOr[Level] = js.native
+    var info: js.UndefOr[Level] = js.undefined
   }
   object Options {
     
@@ -304,11 +305,10 @@ object mod {
     }
   }
   
-  @js.native
   trait hardSourceWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: js.Any*): Unit
   }
   object hardSourceWebpackPlugin {
     

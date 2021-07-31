@@ -3,15 +3,14 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.errMsgstringExtConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExtConfigOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("success")
-  def success_MGetExtConfigOptions(res: errMsgstringExtConfig): Unit = js.native
+  def success_MGetExtConfigOptions(res: errMsgstringExtConfig): Unit
 }
 object GetExtConfigOptions {
   

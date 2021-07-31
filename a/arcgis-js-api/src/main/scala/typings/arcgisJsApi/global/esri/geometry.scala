@@ -16,7 +16,6 @@ import typings.arcgisJsApi.esri.SpatialReferenceConstructor
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,8 +33,17 @@ object geometry {
   @JSGlobal("__esri.geometry.Extent")
   @js.native
   class ExtentCls ()
-    extends typings.arcgisJsApi.esri.Extent {
+    extends StObject
+       with typings.arcgisJsApi.esri.Extent {
     def this(properties: ExtentProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.Mesh")
@@ -51,8 +59,17 @@ object geometry {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html)
     */
   class MeshCls ()
-    extends typings.arcgisJsApi.esri.Mesh {
+    extends StObject
+       with typings.arcgisJsApi.esri.Mesh {
     def this(properties: MeshProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.Multipoint")
@@ -63,8 +80,17 @@ object geometry {
   @JSGlobal("__esri.geometry.Multipoint")
   @js.native
   class MultipointCls ()
-    extends typings.arcgisJsApi.esri.Multipoint {
+    extends StObject
+       with typings.arcgisJsApi.esri.Multipoint {
     def this(properties: MultipointProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.Point")
@@ -80,8 +106,17 @@ object geometry {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html)
     */
   class PointCls ()
-    extends typings.arcgisJsApi.esri.Point {
+    extends StObject
+       with typings.arcgisJsApi.esri.Point {
     def this(properties: PointProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.Polygon")
@@ -97,8 +132,17 @@ object geometry {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html)
     */
   class PolygonCls ()
-    extends typings.arcgisJsApi.esri.Polygon {
+    extends StObject
+       with typings.arcgisJsApi.esri.Polygon {
     def this(properties: PolygonProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.Polyline")
@@ -109,8 +153,17 @@ object geometry {
   @JSGlobal("__esri.geometry.Polyline")
   @js.native
   class PolylineCls ()
-    extends typings.arcgisJsApi.esri.Polyline {
+    extends StObject
+       with typings.arcgisJsApi.esri.Polyline {
     def this(properties: PolylineProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.geometry.SpatialReference")
@@ -121,7 +174,16 @@ object geometry {
   @JSGlobal("__esri.geometry.SpatialReference")
   @js.native
   class SpatialReferenceCls ()
-    extends typings.arcgisJsApi.esri.SpatialReference {
+    extends StObject
+       with typings.arcgisJsApi.esri.SpatialReference {
     def this(properties: SpatialReferenceProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
 }

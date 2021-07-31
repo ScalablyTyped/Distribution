@@ -11,8 +11,8 @@ parallel iteration processing
 | Full name          | jrf-pip |
 | Keywords           | jrf-pip, parallel, iteration, processing, jrf |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 66 |
+| # dependents       | 1 |
+| # downloads        | 203 |
 | # stars            | 0 |
 
 ## Links

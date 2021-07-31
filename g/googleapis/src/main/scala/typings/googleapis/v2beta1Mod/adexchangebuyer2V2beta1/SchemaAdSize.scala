@@ -2,31 +2,29 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents size of a single ad slot, or a creative.
   */
-@js.native
 trait SchemaAdSize extends StObject {
   
   /**
     * The height of the ad slot in pixels. This field will be present only when
     * size type is `PIXEL`.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * The size type of the ad slot.
     */
-  var sizeType: js.UndefOr[String] = js.native
+  var sizeType: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the ad slot in pixels. This field will be present only when
     * size type is `PIXEL`.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object SchemaAdSize {
   

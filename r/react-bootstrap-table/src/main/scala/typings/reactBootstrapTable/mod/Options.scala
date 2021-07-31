@@ -7,10 +7,8 @@ import typings.react.mod.ReactElement
 import typings.reactBootstrapTable.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options[TRow /* <: js.Object */] extends StObject {
   
   /**
@@ -23,8 +21,8 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * a filter on <TableHeaderColumn>.
     */
   var afterColumnFilter: js.UndefOr[
-    js.Function2[/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow], Unit]
-  ] = js.native
+    js.Function2[/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow], Unit]
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called after row delete.
@@ -34,13 +32,13 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var afterDeleteRow: js.UndefOr[
     js.Function2[/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called after inserting a row.
     * This function takes one argument: row, which means the whole row data you added.
     */
-  var afterInsertRow: js.UndefOr[js.Function1[/* row */ TRow, Unit]] = js.native
+  var afterInsertRow: js.UndefOr[js.Function1[/* row */ TRow, Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called after triggering searching.
@@ -48,18 +46,18 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `search`: The search text from the user.
     *   `result`: The results after searching (array of rows that matched the search).
     */
-  var afterSearch: js.UndefOr[js.Function2[/* search */ String, /* result */ js.Array[TRow], Unit]] = js.native
+  var afterSearch: js.UndefOr[js.Function2[/* search */ String, /* result */ js.Array[TRow], Unit]] = js.undefined
   
   /**
     * Assign a callback function that will be called after table updates.
     */
-  var afterTableComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterTableComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Flag to indicate that the table should always show next/previous buttons even when there is not next/previous
     * page.
     */
-  var alwaysShowAllBtns: js.UndefOr[Boolean] = js.native
+  var alwaysShowAllBtns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * You can do something before the toastr pop or even disable the toastr!!
@@ -69,7 +67,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var beforeShowError: js.UndefOr[
     js.Function3[/* type */ EditValidatorType, /* msg */ String, /* title */ String, Boolean | Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Button group which contain the insert, drop, show only select and export CSV buttons, these button all
@@ -77,13 +75,13 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * Give a btnGroup in options props and btnGroup only accept a function and a JSX returned value is necessary.
     * This lets you customize just the left-hand-side of the toolbar if desired.
     */
-  var btnGroup: js.UndefOr[js.Function1[/* props */ ButtonGroupProps, ReactElement]] = js.native
+  var btnGroup: js.UndefOr[js.Function1[/* props */ ButtonGroupProps, ReactElement]] = js.undefined
   
   /**
     * Only work on enable search. If true, there will be a button beside the search input field
     * that will empty the field when clicked.
     */
-  var clearSearch: js.UndefOr[Boolean] = js.native
+  var clearSearch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * You can custom the clear button for search field by giving clearSearchBtn in options props.
@@ -94,32 +92,32 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var clearSearchBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Customize the text on the close button in the insert modal.
     */
-  var closeText: js.UndefOr[String] = js.native
+  var closeText: js.UndefOr[String] = js.undefined
   
   /**
     * Set the default search condition.
     */
-  var defaultSearch: js.UndefOr[String] = js.native
+  var defaultSearch: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the default sort column.
     * Note: when using cleanSort(), this default sort column will be restored.
     */
-  var defaultSortName: js.UndefOr[/* keyof TRow */ String] = js.native
+  var defaultSortName: js.UndefOr[/* keyof TRow */ String] = js.undefined
   
   /**
     * Assign a default sort order.
     * Note: when using cleanSort(), this default sort order will be restored.
     */
-  var defaultSortOrder: js.UndefOr[SortOrder] = js.native
+  var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
   
   /**
     * It's available to customize delete button by configuring deleteBtn in options props, deleteBtn onl<y
@@ -130,20 +128,20 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var deleteBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Customize the text on the delete button.
     */
-  var deleteText: js.UndefOr[String] = js.native
+  var deleteText: js.UndefOr[String] = js.undefined
   
   /**
     * Expand all rows
     */
-  var expandAll: js.UndefOr[Boolean] = js.native
+  var expandAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom class to use for the expanded content section of an expanded row. This can either be a string, or a
@@ -154,7 +152,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var expandBodyClass: js.UndefOr[
     String | (js.Function3[/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean, String])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Tell react-bootstrap-table how to trigger expanding by clicking on 'row' or 'column' level.
@@ -162,7 +160,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * unexpandable, check expandable.
     * Default is 'row'.
     */
-  var expandBy: js.UndefOr[ExpandBy] = js.native
+  var expandBy: js.UndefOr[ExpandBy] = js.undefined
   
   /**
     * Custom class to use for the row itself for an expanded row when it has been expanded. This can either be a
@@ -170,17 +168,17 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: the expanded row.
     *   `rowIndex`: index number of the row.
     */
-  var expandParentClass: js.UndefOr[String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])] = js.native
+  var expandParentClass: js.UndefOr[String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])] = js.undefined
   
   /**
     * Background color on expanded rows (css color value).
     */
-  var expandRowBgColor: js.UndefOr[String] = js.native
+  var expandRowBgColor: js.UndefOr[String] = js.undefined
   
   /**
     * Provide an array of expanded rows for the table.
     */
-  var expanding: js.UndefOr[js.Array[Double | String]] = js.native
+  var expanding: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /**
     * It's available to customize the export csv button by configuring exportCSVBtn in options props, exportCSVBtn only
@@ -191,32 +189,32 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var exportCSVBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Customize the field separator in a CSV export file. Default is ','.
     */
-  var exportCSVSeparator: js.UndefOr[String] = js.native
+  var exportCSVSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Customize the text on the export csv button
     */
-  var exportCSVText: js.UndefOr[String] = js.native
+  var exportCSVText: js.UndefOr[String] = js.undefined
   
   /**
     * Customize the text of first page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var firstPage: js.UndefOr[js.Any] = js.native
+  var firstPage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the firstPage button.
     */
-  var firstPageTitle: js.UndefOr[String] = js.native
+  var firstPageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Assign a callback function which will be called when deleting a row.
@@ -227,22 +225,22 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var handleConfirmDeleteRow: js.UndefOr[
     js.Function2[/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Default is false. If true, the pagination list will be hidden when there is only one page.
     */
-  var hidePageListOnlyOnePage: js.UndefOr[Boolean] = js.native
+  var hidePageListOnlyOnePage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Hide the dropdown list for size per page, default is false.
     */
-  var hideSizePerPage: js.UndefOr[Boolean] = js.native
+  var hideSizePerPage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default is false, if true means you want to ignore any editable columns when creating the insert form.
     */
-  var ignoreEditable: js.UndefOr[Boolean] = js.native
+  var ignoreEditable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * It's available to customize the insert button by configuring insertBtn in options props, insertBtn only
@@ -253,16 +251,16 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var insertBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Custom message to show when the InsertModal save fails validation.
     * Default message is 'Form validate errors, please checking!'
     */
-  var insertFailIndicator: js.UndefOr[String] = js.native
+  var insertFailIndicator: js.UndefOr[String] = js.undefined
   
   /**
     * You can customize everything in the insert modal via options.insertModal and we give you the event
@@ -278,7 +276,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* ignoreEditable */ Boolean, 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * You can customize the body of the insert modal via options.insertModalBody and we give you the following
@@ -295,7 +293,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* ignoreEditable */ Boolean, 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * It's available to custom the footer of insert modal by configuring options.insertModalFooter. It only accepts
@@ -308,7 +306,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var insertModalFooter: js.UndefOr[
     js.Function2[/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit], ReactElement]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * It's available to custom the header of insert modal by configuring options.insertModalHeader. It only accepts
@@ -321,60 +319,60 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var insertModalHeader: js.UndefOr[
     js.Function2[/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit], ReactElement]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Customize the text on the insert button.
     */
-  var insertText: js.UndefOr[String] = js.native
+  var insertText: js.UndefOr[String] = js.undefined
   
   /**
     * Function to verify that a key being generated in the Insert Modal is a valid key.
     * If the key fails validation, return a string error message.
     * If the key is ok, return void.
     */
-  var isValidKey: js.UndefOr[js.Function1[/* key */ Double | String, String | Unit]] = js.native
+  var isValidKey: js.UndefOr[js.Function1[/* key */ Double | String, String | Unit]] = js.undefined
   
   /**
     * Flag to indicate that the table should keep the SizePerPage dropdown open if the table rerenders without any
     * user interaction.
     */
-  var keepSizePerPageState: js.UndefOr[Boolean] = js.native
+  var keepSizePerPageState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customize the text of last page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var lastPage: js.UndefOr[js.Any] = js.native
+  var lastPage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the lastPage button.
     */
-  var lastPageTitle: js.UndefOr[String] = js.native
+  var lastPageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Customize the text of next page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var nextPage: js.UndefOr[js.Any] = js.native
+  var nextPage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the nextPage button.
     */
-  var nextPageTitle: js.UndefOr[String] = js.native
+  var nextPageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Ability to disable the BOM in the exported CSV file.
     * BOM = prepend BOM for UTF-8 XML and text/ * types(including HTML) when saving the file.
     */
-  var noAutoBOM: js.UndefOr[Boolean] = js.native
+  var noAutoBOM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Change the text displayed on the table if data is empty.
     */
-  var noDataText: js.UndefOr[String | ReactElement] = js.native
+  var noDataText: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     * Assign a callback function which will be called when a row is added. This function
@@ -392,7 +390,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* errorCallback */ js.Function1[/* message */ String, Unit], 
       String | Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback when the value in a cell has been modified. It accepts a function that takes three arguments:
@@ -409,7 +407,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called when a row been deleted.
@@ -419,7 +417,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var onDeleteRow: js.UndefOr[
     js.Function2[/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set a function to be called when expanding or collapsing a row. This function takes three arguments:
@@ -431,33 +429,33 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     js.Function3[
       /* rowKey */ Double | String, 
       /* isExpand */ Boolean, 
-      /* event */ MouseEvent[_, NativeMouseEvent], 
+      /* event */ MouseEvent[js.Any, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called when the export csv button is clicked.
     * In this function, you need to return an array of rows to be exported.
     */
-  var onExportToCSV: js.UndefOr[js.Function0[js.Array[TRow]]] = js.native
+  var onExportToCSV: js.UndefOr[js.Function0[js.Array[TRow]]] = js.undefined
   
   /**
     * Assign a callback function which will be called when a filter condition changes.
     * This function takes one argument: filterObj which is an object which take dataField
     * as object key and the value is the filter condition.
     */
-  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[_], Unit]] = js.native
+  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[js.Any], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when mouse enters the table.
     */
-  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when mouse leaves the table.
     */
-  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called after page changed.
@@ -465,7 +463,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `page`: New page number
     *   `sizePerPage`: The number of rows to display in one page.
     */
-  var onPageChange: js.UndefOr[js.Function2[/* page */ Double, /* sizePerPage */ Double, Unit]] = js.native
+  var onPageChange: js.UndefOr[js.Function2[/* page */ Double, /* sizePerPage */ Double, Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called after a row click.
@@ -480,10 +478,10 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* row */ TRow, 
       /* columnIndex */ Double, 
       /* rowIndex */ Double, 
-      /* event */ MouseEvent[_, NativeMouseEvent], 
+      /* event */ MouseEvent[js.Any, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called after a row double click.
@@ -491,7 +489,9 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: which is the row data that was double clicked on.
     *   `event`: the double click event.
     */
-  var onRowDoubleClick: js.UndefOr[js.Function2[/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
+  var onRowDoubleClick: js.UndefOr[
+    js.Function2[/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent], Unit]
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called when mouse leaves a row in table.
@@ -499,7 +499,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
+  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when the mouse enters a row in table.
@@ -507,7 +507,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
+  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when search text changes. This function takes
@@ -524,7 +524,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* multiColumnSearch */ Boolean, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Assign a callback function which will be called after the size per page (number of rows per page)
@@ -532,7 +532,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * This function takes one argument: sizePerPage.
     *   `sizePerPage`: The new number of rows to display in one page.
     */
-  var onSizePerPageList: js.UndefOr[js.Function1[/* sizePerPage */ Double, Unit]] = js.native
+  var onSizePerPageList: js.UndefOr[js.Function1[/* sizePerPage */ Double, Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called after triggering sorting.
@@ -546,35 +546,35 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder), 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specify that only one row should be able to be expanded at the same time.
     */
-  var onlyOneExpanding: js.UndefOr[Boolean] = js.native
+  var onlyOneExpanding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Accept a number, which means the page you want to show as default.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows you to modify where to start counting the pages, e.g. to set the first page number to 0.
     * Default is 1.
     */
-  var pageStartIndex: js.UndefOr[Double] = js.native
+  var pageStartIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Function to customize all of components for pagination, including the sizePerPage dropdown and the
     * pagination list.
     */
-  var paginationPanel: js.UndefOr[js.Function1[/* props */ PaginationPanelProps, ReactElement]] = js.native
+  var paginationPanel: js.UndefOr[js.Function1[/* props */ PaginationPanelProps, ReactElement]] = js.undefined
   
   /**
     * Location for the pagination panel to be displayed. Options are 'top' (above the table), 'bottom'
     * (below the table) and 'both' (above and below the table).
     */
-  var paginationPosition: js.UndefOr[PaginationPostion] = js.native
+  var paginationPosition: js.UndefOr[PaginationPostion] = js.undefined
   
   /**
     * Display a short text showing the total number of rows and current lines displayed,
@@ -586,40 +586,40 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var paginationShowsTotal: js.UndefOr[
     Boolean | (js.Function3[/* start */ Double, /* to */ Double, /* total */ Double, String | ReactElement])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Number of page buttons to show on the pagination bar, default is 5.
     * i.e. previous 2 pages + current page + next two pages = 5.
     */
-  var paginationSize: js.UndefOr[Double] = js.native
+  var paginationSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Customize the text of previouse page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var prePage: js.UndefOr[js.Any] = js.native
+  var prePage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the prePage button.
     */
-  var prePageTitle: js.UndefOr[String] = js.native
+  var prePageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Default is true. If false, during printing the toolbar is hidden.
     */
-  var printToolBar: js.UndefOr[Boolean] = js.native
+  var printToolBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customize the text on the save button in the insert modal.
     */
-  var saveText: js.UndefOr[String] = js.native
+  var saveText: js.UndefOr[String] = js.undefined
   
   /**
     * A delay for trigger search after a keyup (millisecond)
     */
-  var searchDelayTime: js.UndefOr[Double] = js.native
+  var searchDelayTime: js.UndefOr[Double] = js.undefined
   
   /**
     * You can custom the search input field only by searchField in options props. searchField only accept a
@@ -628,7 +628,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * The default `SearchField` component is also exported as a component, so that you can use it as the base for
     * your custom component.
     */
-  var searchField: js.UndefOr[js.Function1[/* props */ SearchFieldProps, ReactElement]] = js.native
+  var searchField: js.UndefOr[js.Function1[/* props */ SearchFieldProps, ReactElement]] = js.undefined
   
   /**
     * You can custom the whole search panel(right side) by searchPanel in options props. searchPanel only accept
@@ -640,7 +640,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `clearBtnClick`: the callback function to use when the clear search button is clicked
     *   `search`: the callback function for triggering the search, which takes the search text as an input.
     */
-  var searchPanel: js.UndefOr[js.Function1[/* props */ SearchPanelProps, ReactElement]] = js.native
+  var searchPanel: js.UndefOr[js.Function1[/* props */ SearchPanelProps, ReactElement]] = js.undefined
   
   /**
     * It's available to custom select only toggle button by configuring showSelectedOnlyBtn in options props.
@@ -652,63 +652,63 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var showSelectedOnlyBtn: js.UndefOr[
     js.Function2[
-      /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
       /* showSelected */ Boolean, 
       ReactElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Current chosen size per page.
     */
-  var sizePerPage: js.UndefOr[Double] = js.native
+  var sizePerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Function to customize the sizePerPage dropdown.
     */
-  var sizePerPageDropDown: js.UndefOr[js.Function1[/* props */ SizePerPageFunctionProps, ReactElement]] = js.native
+  var sizePerPageDropDown: js.UndefOr[js.Function1[/* props */ SizePerPageFunctionProps, ReactElement]] = js.undefined
   
   /**
     * You can change the dropdown list for size per page if you enable pagination.
     * Default is [10, 25, 30, 50].
     */
-  var sizePerPageList: js.UndefOr[SizePerPageList] = js.native
+  var sizePerPageList: js.UndefOr[SizePerPageList] = js.undefined
   
   /**
     * Set to false to disable sort indicators on header columns, default is true.
     */
-  var sortIndicator: js.UndefOr[Boolean] = js.native
+  var sortIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provide the name of the column that should be sorted by.
     * If multi-column sort is active, this is an array of columns.
     * If there should be no active sort, both sortName and sortOrder should be undefined.
     */
-  var sortName: js.UndefOr[(/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])] = js.native
+  var sortName: js.UndefOr[(/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])] = js.undefined
   
   /**
     * Specify whether the sort should be ascending or descending.
     * If multi-column sort is active, this is an array of sortOrder items.
     * If there should be no active sort, both sortName and sortOrder should be undefined.
     */
-  var sortOrder: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.native
+  var sortOrder: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.undefined
   
   /**
     * ToolBar is the area on the top of table, it contain the search panel, buttons for data manipulation.
     * After v3.0.0, you can custom all the components in the ToolBar also itself too.
     * Give a toolBar in options props and toolBar only accept a function and a JSX returned value is necessary.
     */
-  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, ReactElement]] = js.native
+  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, ReactElement]] = js.undefined
   
   /**
     * Flag to indicate whether there should be buttons for First and Last page.
     */
-  var withFirstAndLast: js.UndefOr[Boolean] = js.native
+  var withFirstAndLast: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, this hides the noDataText on the table when the tableis empty. Default is false.
     */
-  var withoutNoDataText: js.UndefOr[Boolean] = js.native
+  var withoutNoDataText: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   
@@ -719,10 +719,10 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[_], TRow /* <: js.Object */] (val x: Self with Options[TRow]) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[?], TRow /* <: js.Object */] (val x: Self & Options[TRow]) extends AnyVal {
     
     @scala.inline
-    def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
+    def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
     
     @scala.inline
     def setAfterColumnFilterUndefined: Self = StObject.set(x, "afterColumnFilter", js.undefined)
@@ -773,7 +773,9 @@ object Options {
     def setClearSearch(value: Boolean): Self = StObject.set(x, "clearSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSearchBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "clearSearchBtn", js.Any.fromFunction1(value))
+    def setClearSearchBtn(
+      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
+    ): Self = StObject.set(x, "clearSearchBtn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClearSearchBtnUndefined: Self = StObject.set(x, "clearSearchBtn", js.undefined)
@@ -806,7 +808,9 @@ object Options {
     def setDefaultSortOrderUndefined: Self = StObject.set(x, "defaultSortOrder", js.undefined)
     
     @scala.inline
-    def setDeleteBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "deleteBtn", js.Any.fromFunction1(value))
+    def setDeleteBtn(
+      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
+    ): Self = StObject.set(x, "deleteBtn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDeleteBtnUndefined: Self = StObject.set(x, "deleteBtn", js.undefined)
@@ -865,7 +869,9 @@ object Options {
     def setExpandingVarargs(value: (Double | String)*): Self = StObject.set(x, "expanding", js.Array(value :_*))
     
     @scala.inline
-    def setExportCSVBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "exportCSVBtn", js.Any.fromFunction1(value))
+    def setExportCSVBtn(
+      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
+    ): Self = StObject.set(x, "exportCSVBtn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExportCSVBtnUndefined: Self = StObject.set(x, "exportCSVBtn", js.undefined)
@@ -919,7 +925,9 @@ object Options {
     def setIgnoreEditableUndefined: Self = StObject.set(x, "ignoreEditable", js.undefined)
     
     @scala.inline
-    def setInsertBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "insertBtn", js.Any.fromFunction1(value))
+    def setInsertBtn(
+      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
+    ): Self = StObject.set(x, "insertBtn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInsertBtnUndefined: Self = StObject.set(x, "insertBtn", js.undefined)
@@ -1036,7 +1044,7 @@ object Options {
     
     @scala.inline
     def setOnExpand(
-      value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit
+      value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onExpand", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -1049,7 +1057,7 @@ object Options {
     def setOnExportToCSVUndefined: Self = StObject.set(x, "onExportToCSV", js.undefined)
     
     @scala.inline
-    def setOnFilterChange(value: /* filterObject */ FilterData[_] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
+    def setOnFilterChange(value: /* filterObject */ FilterData[js.Any] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
@@ -1074,26 +1082,26 @@ object Options {
     
     @scala.inline
     def setOnRowClick(
-      value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit
+      value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onRowClick", js.Any.fromFunction4(value))
     
     @scala.inline
     def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
     @scala.inline
-    def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
+    def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
     @scala.inline
-    def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
+    def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
     @scala.inline
-    def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
+    def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
@@ -1211,7 +1219,7 @@ object Options {
     
     @scala.inline
     def setShowSelectedOnlyBtn(
-      value: (/* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
+      value: (/* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
     ): Self = StObject.set(x, "showSelectedOnlyBtn", js.Any.fromFunction2(value))
     
     @scala.inline

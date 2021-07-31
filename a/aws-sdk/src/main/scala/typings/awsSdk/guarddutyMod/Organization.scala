@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Organization extends StObject {
   
   /**
     * The Autonomous System Number (ASN) of the internet provider of the remote IP address.
     */
-  var Asn: js.UndefOr[String] = js.native
+  var Asn: js.UndefOr[String] = js.undefined
   
   /**
     * The organization that registered this ASN.
     */
-  var AsnOrg: js.UndefOr[String] = js.native
+  var AsnOrg: js.UndefOr[String] = js.undefined
   
   /**
     * The ISP information for the internet provider.
     */
-  var Isp: js.UndefOr[String] = js.native
+  var Isp: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the internet provider.
     */
-  var Org: js.UndefOr[String] = js.native
+  var Org: js.UndefOr[String] = js.undefined
 }
 object Organization {
   

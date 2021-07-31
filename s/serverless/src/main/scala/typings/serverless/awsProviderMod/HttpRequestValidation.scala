@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRequestValidation extends StObject {
   
-  var parameters: js.UndefOr[HttpRequestParametersValidation] = js.native
+  var parameters: js.UndefOr[HttpRequestParametersValidation] = js.undefined
   
-  var schema: js.UndefOr[StringDictionary[Record[String, _]]] = js.native
+  var schema: js.UndefOr[StringDictionary[Record[String, js.Any]]] = js.undefined
 }
 object HttpRequestValidation {
   
@@ -32,7 +30,7 @@ object HttpRequestValidation {
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setSchema(value: StringDictionary[Record[String, _]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    def setSchema(value: StringDictionary[Record[String, js.Any]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)

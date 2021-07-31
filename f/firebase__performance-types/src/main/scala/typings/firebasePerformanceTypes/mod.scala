@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebasePerformanceTypes.anon.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait FirebasePerformance extends StObject {
     
     /**
       * Controls the logging of custom traces.
       */
-    var dataCollectionEnabled: Boolean = js.native
+    var dataCollectionEnabled: Boolean
     
     /**
       * Controls the logging of automatic traces and HTTP/S network monitoring.
       */
-    var instrumentationEnabled: Boolean = js.native
+    var instrumentationEnabled: Boolean
     
     /**
       * Creates an uninitialized instance of trace and returns it.
@@ -28,7 +26,7 @@ object mod {
       * @param traceName The name of trace instance.
       * @return The trace instance.
       */
-    def trace(traceName: String): PerformanceTrace = js.native
+    def trace(traceName: String): PerformanceTrace
   }
   object FirebasePerformance {
     
@@ -136,10 +134,9 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var performance: FirebasePerformance = js.native
+      var performance: FirebasePerformance
     }
     object NameServiceMapping {
       

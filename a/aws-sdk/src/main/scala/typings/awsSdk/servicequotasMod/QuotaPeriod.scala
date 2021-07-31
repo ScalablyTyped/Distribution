@@ -2,21 +2,19 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuotaPeriod extends StObject {
   
   /**
     * The time unit of a period.
     */
-  var PeriodUnit: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodUnit] = js.native
+  var PeriodUnit: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodUnit] = js.undefined
   
   /**
     * The value of a period.
     */
-  var PeriodValue: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodValue] = js.native
+  var PeriodValue: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodValue] = js.undefined
 }
 object QuotaPeriod {
   

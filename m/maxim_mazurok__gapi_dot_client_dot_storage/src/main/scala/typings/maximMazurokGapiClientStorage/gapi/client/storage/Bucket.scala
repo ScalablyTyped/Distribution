@@ -13,20 +13,18 @@ import typings.maximMazurokGapiClientStorage.anon.Rule
 import typings.maximMazurokGapiClientStorage.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
   /** Access controls on the bucket. */
-  var acl: js.UndefOr[js.Array[BucketAccessControl]] = js.native
+  var acl: js.UndefOr[js.Array[BucketAccessControl]] = js.undefined
   
   /** The bucket's billing configuration. */
-  var billing: js.UndefOr[RequesterPays] = js.native
+  var billing: js.UndefOr[RequesterPays] = js.undefined
   
   /** The bucket's Cross-Origin Resource Sharing (CORS) configuration. */
-  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.native
+  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.undefined
   
   /**
     * The default value for event-based hold on newly created objects in this bucket. Event-based hold is a way to retain objects indefinitely until an event occurs, signified by the
@@ -35,59 +33,59 @@ trait Bucket extends StObject {
     * any number of years until the event has occurred (event-based hold on the object is released) and then 3 more years after that. That means retention duration of the objects begins
     * from the moment event-based hold transitioned from true to false. Objects under event-based hold cannot be deleted, overwritten or archived until the hold is removed.
     */
-  var defaultEventBasedHold: js.UndefOr[Boolean] = js.native
+  var defaultEventBasedHold: js.UndefOr[Boolean] = js.undefined
   
   /** Default access controls to apply to new objects when no ACL is provided. */
-  var defaultObjectAcl: js.UndefOr[js.Array[ObjectAccessControl]] = js.native
+  var defaultObjectAcl: js.UndefOr[js.Array[ObjectAccessControl]] = js.undefined
   
   /** Encryption configuration for a bucket. */
-  var encryption: js.UndefOr[DefaultKmsKeyName] = js.native
+  var encryption: js.UndefOr[DefaultKmsKeyName] = js.undefined
   
   /** HTTP 1.1 Entity tag for the bucket. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The bucket's IAM configuration. */
-  var iamConfiguration: js.UndefOr[BucketPolicyOnly] = js.native
+  var iamConfiguration: js.UndefOr[BucketPolicyOnly] = js.undefined
   
   /** The ID of the bucket. For buckets, the id and name properties are the same. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of item this is. For buckets, this is always storage#bucket. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** User-provided labels, in key/value pairs. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The bucket's lifecycle configuration. See lifecycle management for more information. */
-  var lifecycle: js.UndefOr[Rule] = js.native
+  var lifecycle: js.UndefOr[Rule] = js.undefined
   
   /**
     * The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer's guide for the authoritative
     * list.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The type of the bucket location. */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /** The bucket's logging configuration, which defines the destination bucket and optional name prefix for the current bucket's logs. */
-  var logging: js.UndefOr[LogBucket] = js.native
+  var logging: js.UndefOr[LogBucket] = js.undefined
   
   /** The metadata generation of this bucket. */
-  var metageneration: js.UndefOr[String] = js.native
+  var metageneration: js.UndefOr[String] = js.undefined
   
   /** The name of the bucket. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The owner of the bucket. This is always the project team's owner group. */
-  var owner: js.UndefOr[Entity] = js.native
+  var owner: js.UndefOr[Entity] = js.undefined
   
   /** The project number of the project the bucket belongs to. */
-  var projectNumber: js.UndefOr[String] = js.native
+  var projectNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket's retention policy. The retention policy enforces a minimum retention time for all objects contained in the bucket, based on their creation time. Any attempt to overwrite
@@ -95,35 +93,35 @@ trait Bucket extends StObject {
     * storage.buckets.update operation. A locked retention policy cannot be removed or shortened in duration for the lifetime of the bucket. Attempting to remove or decrease period of a
     * locked retention policy will result in a PERMISSION_DENIED error.
     */
-  var retentionPolicy: js.UndefOr[EffectiveTime] = js.native
+  var retentionPolicy: js.UndefOr[EffectiveTime] = js.undefined
   
   /** The URI of this bucket. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket's default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are stored and determines the SLA
     * and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, ARCHIVE, and DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the
     * bucket is created, it will default to STANDARD. For more information, see storage classes.
     */
-  var storageClass: js.UndefOr[String] = js.native
+  var storageClass: js.UndefOr[String] = js.undefined
   
   /** The creation time of the bucket in RFC 3339 format. */
-  var timeCreated: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.undefined
   
   /** The modification time of the bucket in RFC 3339 format. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The bucket's versioning configuration. */
-  var versioning: js.UndefOr[`0`] = js.native
+  var versioning: js.UndefOr[`0`] = js.undefined
   
   /** The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples for more information. */
-  var website: js.UndefOr[MainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.undefined
   
   /**
     * The zone or zones from which the bucket is intended to use zonal quota. Requests for data from outside the specified affinities are still allowed but won't be able to use zonal
     * quota. The zone or zones need to be within the bucket location otherwise the requests will fail with a 400 Bad Request response.
     */
-  var zoneAffinity: js.UndefOr[js.Array[String]] = js.native
+  var zoneAffinity: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Bucket {
   
@@ -209,7 +207,7 @@ object Bucket {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

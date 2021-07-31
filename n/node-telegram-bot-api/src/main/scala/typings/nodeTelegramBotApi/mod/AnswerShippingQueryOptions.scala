@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnswerShippingQueryOptions extends StObject {
   
-  var error_message: js.UndefOr[String] = js.native
+  var error_message: js.UndefOr[String] = js.undefined
   
-  var shipping_options: js.UndefOr[js.Array[ShippingOption]] = js.native
+  var shipping_options: js.UndefOr[js.Array[ShippingOption]] = js.undefined
 }
 object AnswerShippingQueryOptions {
   

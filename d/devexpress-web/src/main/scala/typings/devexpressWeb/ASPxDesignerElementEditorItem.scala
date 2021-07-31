@@ -2,15 +2,13 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerElementEditorItem extends StObject {
   
-  var displayValue: String = js.native
+  var displayValue: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ASPxDesignerElementEditorItem {
   

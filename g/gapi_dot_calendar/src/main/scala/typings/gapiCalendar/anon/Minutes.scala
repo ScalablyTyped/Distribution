@@ -3,15 +3,13 @@ package typings.gapiCalendar.anon
 import typings.gapiCalendar.gapi.client.calendar.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Minutes extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var minutes: integer = js.native
+  var minutes: integer
 }
 object Minutes {
   

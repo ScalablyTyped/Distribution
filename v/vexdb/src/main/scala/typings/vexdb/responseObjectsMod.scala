@@ -14,23 +14,23 @@ import typings.vexdb.vexdbNumbers.`5`
 import typings.vexdb.vexdbNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseObjectsMod {
   
-  @js.native
-  trait AwardsResponseObject extends ResponseObject {
+  trait AwardsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var name: String = js.native
+    var name: String
     
-    var order: Double = js.native
+    var order: Double
     
-    var qualifies: js.Array[String] = js.native
+    var qualifies: js.Array[String]
     
-    var sku: String = js.native
+    var sku: String
     
-    var team: String = js.native
+    var team: String
   }
   object AwardsResponseObject {
     
@@ -63,38 +63,39 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait EventsResponseObject extends ResponseObject {
+  trait EventsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var divisions: js.Array[String] = js.native
+    var divisions: js.Array[String]
     
-    var end: String = js.native
+    var end: String
     
-    var key: String = js.native
+    var key: String
     
-    var loc_address1: String = js.native
+    var loc_address1: String
     
-    var loc_address2: String = js.native
+    var loc_address2: String
     
-    var loc_city: String = js.native
+    var loc_city: String
     
-    var loc_country: String = js.native
+    var loc_country: String
     
-    var loc_postcode: String = js.native
+    var loc_postcode: String
     
-    var loc_region: String = js.native
+    var loc_region: String
     
-    var loc_venue: String = js.native
+    var loc_venue: String
     
-    var name: String = js.native
+    var name: String
     
-    var program: Programs = js.native
+    var program: Programs
     
-    var season: Seasons = js.native
+    var season: Seasons
     
-    var sku: String = js.native
+    var sku: String
     
-    var start: String = js.native
+    var start: String
   }
   object EventsResponseObject {
     
@@ -173,44 +174,45 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait MatchesResponseObject extends ResponseObject {
+  trait MatchesResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var blue1: String = js.native
+    var blue1: String
     
-    var blue2: String = js.native
+    var blue2: String
     
-    var blue3: String = js.native
+    var blue3: String
     
-    var bluescore: Double = js.native
+    var bluescore: Double
     
-    var bluesit: String = js.native
+    var bluesit: String
     
-    var division: String = js.native
+    var division: String
     
-    var field: String = js.native
+    var field: String
     
-    var instance: Double = js.native
+    var instance: Double
     
-    var matchnum: Double = js.native
+    var matchnum: Double
     
-    var red1: String = js.native
+    var red1: String
     
-    var red2: String = js.native
+    var red2: String
     
-    var red3: String = js.native
+    var red3: String
     
-    var redscore: Double = js.native
+    var redscore: Double
     
-    var redsit: String = js.native
+    var redsit: String
     
-    var round: `1` | `2` | `3` | `4` | `5` | `6` | `16` = js.native
+    var round: `1` | `2` | `3` | `4` | `5` | `6` | `16`
     
-    var scheduled: String = js.native
+    var scheduled: String
     
-    var scored: `0` | `1` = js.native
+    var scored: `0` | `1`
     
-    var sku: String = js.native
+    var sku: String
   }
   object MatchesResponseObject {
     
@@ -298,38 +300,39 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait RankingsResponseObject extends ResponseObject {
+  trait RankingsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var ap: Double = js.native
+    var ap: Double
     
-    var ccwm: Double = js.native
+    var ccwm: Double
     
-    var division: String = js.native
+    var division: String
     
-    var dpr: Double = js.native
+    var dpr: Double
     
-    var losses: Double = js.native
+    var losses: Double
     
-    var max_score: Double = js.native
+    var max_score: Double
     
-    var opr: Double = js.native
+    var opr: Double
     
-    var rank: Double = js.native
+    var rank: Double
     
-    var sku: String = js.native
+    var sku: String
     
-    var sp: Double = js.native
+    var sp: Double
     
-    var team: String = js.native
+    var team: String
     
-    var ties: Double = js.native
+    var ties: Double
     
-    var trsp: Double = js.native
+    var trsp: Double
     
-    var wins: Double = js.native
+    var wins: Double
     
-    var wp: Double = js.native
+    var wp: Double
   }
   object RankingsResponseObject {
     
@@ -531,18 +534,19 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait SeasonRankingsResponseObject extends ResponseObject {
+  trait SeasonRankingsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var program: Programs = js.native
+    var program: Programs
     
-    var season: Seasons = js.native
+    var season: Seasons
     
-    var team: String = js.native
+    var team: String
     
-    var vrating: Double = js.native
+    var vrating: Double
     
-    var vrating_rank: Double = js.native
+    var vrating_rank: Double
   }
   object SeasonRankingsResponseObject {
     
@@ -572,22 +576,23 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait SkillsResponseObject extends ResponseObject {
+  trait SkillsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var attempts: Double = js.native
+    var attempts: Double
     
-    var program: Programs = js.native
+    var program: Programs
     
-    var rank: Double = js.native
+    var rank: Double
     
-    var score: Double = js.native
+    var score: Double
     
-    var sku: String = js.native
+    var sku: String
     
-    var team: String = js.native
+    var team: String
     
-    var `type`: SkillsType = js.native
+    var `type`: SkillsType
   }
   object SkillsResponseObject {
     
@@ -632,28 +637,29 @@ object responseObjectsMod {
     }
   }
   
-  @js.native
-  trait TeamsResponseObject extends ResponseObject {
+  trait TeamsResponseObject
+    extends StObject
+       with ResponseObject {
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var grade: Grades = js.native
+    var grade: Grades
     
-    var is_registered: `0` | `1` = js.native
+    var is_registered: `0` | `1`
     
-    var number: String = js.native
+    var number: String
     
-    var organisation: String = js.native
+    var organisation: String
     
-    var program: Programs = js.native
+    var program: Programs
     
-    var region: String = js.native
+    var region: String
     
-    var robot_name: String = js.native
+    var robot_name: String
     
-    var team_name: String = js.native
+    var team_name: String
   }
   object TeamsResponseObject {
     

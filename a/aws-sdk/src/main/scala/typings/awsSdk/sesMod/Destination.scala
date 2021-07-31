@@ -2,26 +2,24 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * The recipients to place on the BCC: line of the message.
     */
-  var BccAddresses: js.UndefOr[AddressList] = js.native
+  var BccAddresses: js.UndefOr[AddressList] = js.undefined
   
   /**
     * The recipients to place on the CC: line of the message.
     */
-  var CcAddresses: js.UndefOr[AddressList] = js.native
+  var CcAddresses: js.UndefOr[AddressList] = js.undefined
   
   /**
     * The recipients to place on the To: line of the message.
     */
-  var ToAddresses: js.UndefOr[AddressList] = js.native
+  var ToAddresses: js.UndefOr[AddressList] = js.undefined
 }
 object Destination {
   

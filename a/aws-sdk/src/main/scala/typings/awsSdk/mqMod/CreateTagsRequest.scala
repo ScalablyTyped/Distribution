@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTagsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource tag.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * The key-value pair for the resource tag.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
 }
 object CreateTagsRequest {
   

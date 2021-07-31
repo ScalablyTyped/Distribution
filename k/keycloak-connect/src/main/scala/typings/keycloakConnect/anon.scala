@@ -2,15 +2,13 @@ package typings.keycloakConnect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Grant extends StObject {
     
-    var grant: js.UndefOr[typings.keycloakConnect.mod.Grant] = js.native
+    var grant: js.UndefOr[typings.keycloakConnect.mod.Grant] = js.undefined
   }
   object Grant {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Roles extends StObject {
     
-    var roles: js.UndefOr[js.Array[String]] = js.native
+    var roles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Roles {
     

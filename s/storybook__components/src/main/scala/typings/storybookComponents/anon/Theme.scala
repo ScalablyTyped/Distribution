@@ -2,13 +2,11 @@ package typings.storybookComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var theme: typings.storybookTheming.typesMod.Theme = js.native
+  var theme: typings.storybookTheming.typesMod.Theme
 }
 object Theme {
   

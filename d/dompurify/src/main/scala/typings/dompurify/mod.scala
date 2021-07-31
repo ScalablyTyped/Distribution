@@ -19,7 +19,6 @@ import typings.std.Window
 import typings.trustedTypes.mod.global.TrustedHTML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,52 +27,51 @@ object mod extends Shortcut {
   @js.native
   val ^ : createDOMPurifyI = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var ADD_ATTR: js.UndefOr[js.Array[String]] = js.native
+    var ADD_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ADD_DATA_URI_TAGS: js.UndefOr[js.Array[String]] = js.native
+    var ADD_DATA_URI_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ADD_TAGS: js.UndefOr[js.Array[String]] = js.native
+    var ADD_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.native
+    var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.native
+    var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ALLOWED_URI_REGEXP: js.UndefOr[RegExp] = js.native
+    var ALLOWED_URI_REGEXP: js.UndefOr[RegExp] = js.undefined
     
-    var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.native
+    var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
     
-    var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.native
+    var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
-    var FORBID_ATTR: js.UndefOr[js.Array[String]] = js.native
+    var FORBID_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
-    var FORBID_TAGS: js.UndefOr[js.Array[String]] = js.native
+    var FORBID_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var FORCE_BODY: js.UndefOr[Boolean] = js.native
+    var FORCE_BODY: js.UndefOr[Boolean] = js.undefined
     
-    var IN_PLACE: js.UndefOr[Boolean] = js.native
+    var IN_PLACE: js.UndefOr[Boolean] = js.undefined
     
-    var KEEP_CONTENT: js.UndefOr[Boolean] = js.native
+    var KEEP_CONTENT: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_DOM: js.UndefOr[Boolean] = js.native
+    var RETURN_DOM: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.native
+    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_DOM_IMPORT: js.UndefOr[Boolean] = js.native
+    var RETURN_DOM_IMPORT: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] = js.native
+    var RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] = js.undefined
     
-    var SAFE_FOR_JQUERY: js.UndefOr[Boolean] = js.native
+    var SAFE_FOR_JQUERY: js.UndefOr[Boolean] = js.undefined
     
-    var SAFE_FOR_TEMPLATES: js.UndefOr[Boolean] = js.native
+    var SAFE_FOR_TEMPLATES: js.UndefOr[Boolean] = js.undefined
     
-    var SANITIZE_DOM: js.UndefOr[Boolean] = js.native
+    var SANITIZE_DOM: js.UndefOr[Boolean] = js.undefined
     
-    var USE_PROFILES: js.UndefOr[`false` | Html] = js.native
+    var USE_PROFILES: js.UndefOr[`false` | Html] = js.undefined
     
-    var WHOLE_DOCUMENT: js.UndefOr[Boolean] = js.native
+    var WHOLE_DOCUMENT: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -281,7 +279,7 @@ object mod extends Shortcut {
     
     def removeHooks(entryPoint: HookName): Unit = js.native
     
-    var removed: js.Array[_] = js.native
+    var removed: js.Array[js.Any] = js.native
     
     def sanitize(source: String): String = js.native
     def sanitize(source: String, config: ConfigRETURNDOMFRAGMENTfa): String = js.native
@@ -350,16 +348,17 @@ object mod extends Shortcut {
     def uponSanitizeShadowNode: typings.dompurify.dompurifyStrings.uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeShadowNode]
   }
   
-  @js.native
-  trait SanitizeAttributeHookEvent extends _HookEvent {
+  trait SanitizeAttributeHookEvent
+    extends StObject
+       with _HookEvent {
     
-    var allowedAttributes: StringDictionary[Boolean] = js.native
+    var allowedAttributes: StringDictionary[Boolean]
     
-    var attrName: String = js.native
+    var attrName: String
     
-    var attrValue: String = js.native
+    var attrValue: String
     
-    var keepAttr: Boolean = js.native
+    var keepAttr: Boolean
   }
   object SanitizeAttributeHookEvent {
     
@@ -391,12 +390,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SanitizeElementHookEvent extends _HookEvent {
+  trait SanitizeElementHookEvent
+    extends StObject
+       with _HookEvent {
     
-    var allowedTags: StringDictionary[Boolean] = js.native
+    var allowedTags: StringDictionary[Boolean]
     
-    var tagName: String = js.native
+    var tagName: String
   }
   object SanitizeElementHookEvent {
     
@@ -444,7 +444,9 @@ object mod extends Shortcut {
   override def _to: createDOMPurifyI = ^
   
   @js.native
-  trait createDOMPurifyI extends DOMPurifyI {
+  trait createDOMPurifyI
+    extends StObject
+       with DOMPurifyI {
     
     def apply(): DOMPurifyI = js.native
     def apply(window: Window): DOMPurifyI = js.native

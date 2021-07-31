@@ -3,12 +3,12 @@ package typings.shelljs.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShellStringConstructor
-  extends /**
+  extends StObject
+     with /**
   * Wraps a string (or array) value. This has all the string (or array) methods,
   * but also exposes extra methods: `.to()`, `.toEnd()`, and all the pipe-able
   * methods (ex. `.cat()`, `.grep()`, etc.).
@@ -29,10 +29,7 @@ trait ShellStringConstructor
   * @param value     The string value to wrap.
   * @return                A string-like object with special methods.
   */
-Instantiable1[
-      (/* value */ js.Array[String]) | (/* value */ String), 
-      ShellArray | typings.shelljs.mod.ShellString
-    ] {
+Instantiable1[(/* value */ js.Array[String]) | (/* value */ String), ShellArray | ShellString] {
   
   /**
     * Wraps a string (or array) value. This has all the string (or array) methods,
@@ -48,6 +45,6 @@ Instantiable1[
     * @param value     The string value to wrap.
     * @return                A string-like object with special methods.
     */
-  def apply(value: String): typings.shelljs.mod.ShellString = js.native
+  def apply(value: String): ShellString = js.native
   def apply(value: js.Array[String]): ShellArray = js.native
 }

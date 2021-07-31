@@ -13,7 +13,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,7 +24,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("spectrogram", JSImport.Namespace)
   @js.native
-  class Class protected () extends Spectrogram {
+  class Class protected ()
+    extends StObject
+       with Spectrogram {
     def this(canvas: HTMLCanvasElement, options: SpectrogramOptions) = this()
   }
   
@@ -49,21 +50,22 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait SpectrogramConstructor extends Instantiable2[/* canvas */ HTMLCanvasElement, /* options */ SpectrogramOptions, Spectrogram] {
+  trait SpectrogramConstructor
+    extends StObject
+       with Instantiable2[/* canvas */ HTMLCanvasElement, /* options */ SpectrogramOptions, Spectrogram] {
     
     def apply(canvas: HTMLCanvasElement, options: SpectrogramOptions): Spectrogram = js.native
   }
   
-  @js.native
   trait SpectrogramOptions extends StObject {
     
-    var audio: js.UndefOr[Enable] = js.native
+    var audio: js.UndefOr[Enable] = js.undefined
     
-    var canvas: js.UndefOr[Height] = js.native
+    var canvas: js.UndefOr[Height] = js.undefined
     
     var colors: js.UndefOr[
         js.Function1[/* steps */ Double, js.Array[String | CanvasGradient | CanvasPattern]]
-      ] = js.native
+      ] = js.undefined
   }
   object SpectrogramOptions {
     

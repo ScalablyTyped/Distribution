@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scheduledeventsMod {
@@ -146,9 +145,8 @@ object scheduledeventsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.ScheduledEvent.createIn")
-      @js.native
-      def createIn(container: IFolderBase): ScheduledEvent = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ScheduledEvent]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.ScheduledEvent.structureTypeName")
@@ -198,6 +196,8 @@ object scheduledeventsMod {
       * See: {@link https://docs.mendix.com/refguide/scheduled-events relevant section in reference guide}
       */
     @js.native
-    trait IScheduledEvent extends IDocument
+    trait IScheduledEvent
+      extends StObject
+         with IDocument
   }
 }

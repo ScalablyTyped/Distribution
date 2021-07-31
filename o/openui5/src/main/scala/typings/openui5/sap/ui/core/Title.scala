@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Title extends Element {
+trait Title
+  extends StObject
+     with Element {
   
   /**
     * Gets current value of property <code>emphasized</code>.If set the title is displayed emphasized.This

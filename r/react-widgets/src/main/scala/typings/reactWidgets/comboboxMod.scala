@@ -10,7 +10,6 @@ import typings.reactWidgets.commonPropsMod.AutoFocus
 import typings.reactWidgets.commonPropsMod.ReactWidgetsCommonDropdownProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboboxMod extends Shortcut {
@@ -25,27 +24,26 @@ object comboboxMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/Combobox", JSImport.Namespace)
   @js.native
-  val ^ : ComboboxClass = js.native
+  val ^ : js.Object & ComboboxClass = js.native
   
   type ComboboxClass = ComponentClass[ComboboxProps, ComponentState]
   
-  @js.native
   trait ComboboxMessages extends StObject {
     
     /**
       * text to display when the the current filter does not return any results
       */
-    var emptyFilter: String | (js.Function1[/* props */ ComboboxProps, String]) = js.native
+    var emptyFilter: String | (js.Function1[/* props */ ComboboxProps, String])
     
     /**
       * text to display when the data prop array is empty
       */
-    var emptyList: String | (js.Function1[/* props */ ComboboxProps, String]) = js.native
+    var emptyList: String | (js.Function1[/* props */ ComboboxProps, String])
     
     /**
       * Combobox button text for screen readers
       */
-    var open: String | (js.Function1[/* props */ ComboboxProps, String]) = js.native
+    var open: String | (js.Function1[/* props */ ComboboxProps, String])
   }
   object ComboboxMessages {
     
@@ -82,51 +80,51 @@ object comboboxMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ComboboxProps
-    extends ReactWidgetsCommonDropdownProps
+    extends StObject
+       with ReactWidgetsCommonDropdownProps
        with AutoFocus {
     
     /**
       * Mark whether the widget is in a busy or loading state. If true the widget will display a
       * spinner gif, useful when loading data via an ajax call.
       */
-    var busy: js.UndefOr[Boolean] = js.native
+    var busy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional ReactNode to override the spinner gif element when the busy property
       * is set to true.
       */
-    var busySpinner: js.UndefOr[ReactNode] = js.native
+    var busySpinner: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Filter the list without regard for case. This
       * only applies to non function values for filter
       */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of possible values for the Combobox. If an array of objects is provided you
       * should use the valueField and textField props, to specify which object properties
       * comprise the value field (such as an id) and the field used to label the item.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Default value.
       */
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Delay
       * @default 500
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * The speed, in milliseconds, of the dropdown animation.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify a filtering method used to reduce the items in the dropdown as you type. It can
@@ -139,113 +137,113 @@ object comboboxMod extends Shortcut {
       */
     var filter: js.UndefOr[
         Boolean | String | (js.Function2[/* dataItem */ js.Any, /* searchItem */ js.Any, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Determines how to group the Combobox. Providing a string will group the data array by
       * that property. You can also provide a function which should return the group value.
       */
-    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.native
+    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, js.Any])] = js.undefined
     
     /**
       * This component is used to render each option group, when groupBy is specified. By default
       * the groupBy value will be used.
       */
-    var groupComponent: js.UndefOr[ReactType[_]] = js.native
+    var groupComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying input component.
       */
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * This component is used to render each possible item in the Combobox. The default
       * component renders the text of the selected item (specified by textfield)
       */
-    var itemComponent: js.UndefOr[ReactType[_]] = js.native
+    var itemComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var listComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var listComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying List component.
       */
-    var listProps: js.UndefOr[js.Object] = js.native
+    var listProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[ComboboxMessages] = js.native
+    var messages: js.UndefOr[ComboboxMessages] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Start filtering the list only after the value
       * has reached a minimum length.
       */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The HTML name attribute, passed directly to the input element.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Called when the value is changed. If the value is one of the data members that item will
       * be returned. In the case of a value not being found in the data array the string value of
       * the Combobox will be returned.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
     /**
       * This handler fires when an item has been selected from the list. It fires before the
       * onChange handler, and fires regardless of whether the value has actually changed.
       */
-    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
     /**
       * Called fires when the Combobox is about to open or close. onToggle should be used when
       * the open prop is set otherwise the widget will never open or close.
       */
-    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
     /**
       * Whether or not the Combobox is open. When unset (undefined) the Combobox will handle the
       * opening and closing internally. The defaultOpen prop can be used to set an initialization
       * value for uncontrolled widgets.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The same as an input placeholder, only works in browsers that support the placeholder
       * attribute for inputs
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * A Transition component from react-transition-group v2. The provided component will be used
       * instead of the default SlideDownTransition for fully customizable animations.
       * The transition component is also injected with a dropUp prop indicating the direction it should open.
       */
-    var popupTransition: js.UndefOr[ReactType[_] | String] = js.native
+    var popupTransition: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * When true the Combobox will suggest, or fill in, values as you type. The suggestions are
       * always "startsWith", meaning it will search from the start of the textField property
       */
-    var suggest: js.UndefOr[Boolean] = js.native
+    var suggest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify which data item field to display in the Combobox and selected item. The
       * textField` prop may also also used as to find an item in the list as you type. Providing
       * an accessor function allows for computed text values
       */
-    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.native
+    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.undefined
     
     /**
       * The current value of the Combobox. This can be an object (such as a member of the data
       * array) or a primitive value, hinted to by the valueField. The widget value does not need
       * to be in the data, widgets can have values that are not in their list.
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A dataItem field name for uniquely identifying items in the data list. A valueField is
@@ -254,7 +252,7 @@ object comboboxMod extends Shortcut {
       * valueField is not provided, the Combobox will use strict equality checks (===) to locate
       * the value in the data list.
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object ComboboxProps {
     
@@ -286,7 +284,7 @@ object comboboxMod extends Shortcut {
       def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -322,16 +320,16 @@ object comboboxMod extends Shortcut {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, _])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupByFunction1(value: /* dataItem */ js.Any => _): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
       @scala.inline
-      def setGroupComponent(value: ReactType[_]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+      def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
@@ -343,13 +341,13 @@ object comboboxMod extends Shortcut {
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
       @scala.inline
-      def setItemComponent(value: ReactType[_]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      def setItemComponent(value: ReactType[js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
       @scala.inline
-      def setListComponent(value: ReactType[_] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
+      def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
@@ -409,7 +407,7 @@ object comboboxMod extends Shortcut {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setPopupTransition(value: ReactType[_] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
+      def setPopupTransition(value: ReactType[js.Any] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopupTransitionUndefined: Self = StObject.set(x, "popupTransition", js.undefined)
@@ -443,8 +441,8 @@ object comboboxMod extends Shortcut {
     }
   }
   
-  type _To = ComboboxClass
+  type _To = js.Object & ComboboxClass
   
   /* This means you don't have to write `^`, but can instead just say `comboboxMod.foo` */
-  override def _to: ComboboxClass = ^
+  override def _to: js.Object & ComboboxClass = ^
 }

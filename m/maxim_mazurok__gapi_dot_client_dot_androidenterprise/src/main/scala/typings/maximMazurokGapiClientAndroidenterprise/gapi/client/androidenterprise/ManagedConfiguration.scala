@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedConfiguration extends StObject {
   
   /** Contains the ID of the managed configuration profile and the set of configuration variables (if any) defined for the user. */
-  var configurationVariables: js.UndefOr[ConfigurationVariables] = js.native
+  var configurationVariables: js.UndefOr[ConfigurationVariables] = js.undefined
   
   /** Deprecated. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The set of managed properties for this configuration. */
-  var managedProperty: js.UndefOr[js.Array[ManagedProperty]] = js.native
+  var managedProperty: js.UndefOr[js.Array[ManagedProperty]] = js.undefined
   
   /** The ID of the product that the managed configuration is for, e.g. "app:com.google.android.gm". */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object ManagedConfiguration {
   

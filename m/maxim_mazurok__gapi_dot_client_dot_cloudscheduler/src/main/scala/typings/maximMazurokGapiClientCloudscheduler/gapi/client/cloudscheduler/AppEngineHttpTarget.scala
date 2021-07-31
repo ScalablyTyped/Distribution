@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineHttpTarget extends StObject {
   
   /** App Engine Routing setting for the job. */
-  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.native
+  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.undefined
   
   /**
     * Body. HTTP request body. A request body is allowed only if the HTTP method is POST or PUT. It will result in invalid argument error to set a body on a job with an incompatible
     * HttpMethod.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP request headers. This map contains the header field names and values. Headers can be set when the job is created. Cloud Scheduler sets some headers to default values: *
@@ -30,17 +28,17 @@ trait AppEngineHttpTarget extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.AppEngineHttpTarget with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.AppEngineHttpTarget & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The HTTP method to use for the request. PATCH and OPTIONS are not permitted. */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI. The relative URL must begin with "/" and must be a valid HTTP relative URL. It can contain a path, query string arguments, and `#` fragments. If the relative URL
     * is empty, then the root path "/" will be used. No spaces are allowed, and the maximum length allowed is 2083 characters.
     */
-  var relativeUri: js.UndefOr[String] = js.native
+  var relativeUri: js.UndefOr[String] = js.undefined
 }
 object AppEngineHttpTarget {
   
@@ -69,7 +67,7 @@ object AppEngineHttpTarget {
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.AppEngineHttpTarget with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.AppEngineHttpTarget & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline

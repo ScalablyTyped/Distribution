@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes the embedded object with the given ID.
   */
-@js.native
 trait SchemaDeleteEmbeddedObjectRequest extends StObject {
   
   /**
     * The ID of the embedded object to delete.
     */
-  var objectId: js.UndefOr[Double] = js.native
+  var objectId: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeleteEmbeddedObjectRequest {
   

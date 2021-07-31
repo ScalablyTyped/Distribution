@@ -5,7 +5,6 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.overworld
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: move this stuff somewhere else

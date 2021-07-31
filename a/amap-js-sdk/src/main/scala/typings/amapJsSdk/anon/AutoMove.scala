@@ -6,27 +6,25 @@ import typings.amapJsSdk.AMap.Size
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMove extends StObject {
   
-  var autoMove: js.UndefOr[Boolean] = js.native
+  var autoMove: js.UndefOr[Boolean] = js.undefined
   
-  var closeWhenClickMap: js.UndefOr[Boolean] = js.native
+  var closeWhenClickMap: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | HTMLElement] = js.native
+  var content: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var isCustom: js.UndefOr[Boolean] = js.native
+  var isCustom: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Pixel] = js.native
+  var offset: js.UndefOr[Pixel] = js.undefined
   
-  var position: js.UndefOr[LngLat] = js.native
+  var position: js.UndefOr[LngLat] = js.undefined
   
-  var showShadow: js.UndefOr[Boolean] = js.native
+  var showShadow: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
 }
 object AutoMove {
   

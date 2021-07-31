@@ -14,10 +14,13 @@ import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsListBaseMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase")
   @js.native
@@ -144,15 +147,13 @@ object detailsListBaseMod {
     @scala.inline
     def defaultProps_=(x: CheckboxVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsListState]
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "buildColumns")
-  @js.native
+  @scala.inline
   def buildColumns(
-    items: js.Array[_],
+    items: js.Array[js.Any],
     canResizeColumns: js.UndefOr[Boolean],
     onColumnClick: js.UndefOr[
       js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn, Unit]
@@ -161,26 +162,25 @@ object detailsListBaseMod {
     isSortedDescending: js.UndefOr[Boolean],
     groupedColumnKey: js.UndefOr[String],
     isMultiline: js.UndefOr[Boolean]
-  ): js.Array[IColumn] = js.native
+  ): js.Array[IColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[IColumn]]
   
-  @js.native
   trait IDetailsListState extends StObject {
     
-    var adjustedColumns: js.Array[IColumn] = js.native
+    var adjustedColumns: js.Array[IColumn]
     
-    var focusedItemIndex: Double = js.native
+    var focusedItemIndex: Double
     
-    def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = js.native
+    def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState
     
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var isSizing: js.UndefOr[Boolean] = js.native
+    var isSizing: js.UndefOr[Boolean] = js.undefined
     
-    var isSomeGroupExpanded: js.UndefOr[Boolean] = js.native
+    var isSomeGroupExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var lastSelectionMode: js.UndefOr[SelectionMode] = js.native
+    var lastSelectionMode: js.UndefOr[SelectionMode] = js.undefined
     
-    var lastWidth: js.UndefOr[Double] = js.native
+    var lastWidth: js.UndefOr[Double] = js.undefined
   }
   object IDetailsListState {
     

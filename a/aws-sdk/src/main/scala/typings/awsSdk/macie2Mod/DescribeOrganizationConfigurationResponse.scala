@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOrganizationConfigurationResponse extends StObject {
   
   /**
     * Specifies whether Amazon Macie is enabled automatically for accounts that are added to the AWS organization.
     */
-  var autoEnable: js.UndefOr[boolean] = js.native
+  var autoEnable: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether the maximum number of Amazon Macie member accounts are part of the AWS organization.
     */
-  var maxAccountLimitReached: js.UndefOr[boolean] = js.native
+  var maxAccountLimitReached: js.UndefOr[boolean] = js.undefined
 }
 object DescribeOrganizationConfigurationResponse {
   

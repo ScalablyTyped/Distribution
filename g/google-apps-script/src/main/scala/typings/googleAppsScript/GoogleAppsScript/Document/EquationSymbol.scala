@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a symbol in a mathematical Equation. An EquationSymbol
   * cannot contain any other element. For more information on document structure, see the guide to extending Google Docs.
   */
-@js.native
-trait EquationSymbol extends Element {
+trait EquationSymbol
+  extends StObject
+     with Element {
   
-  def getCode(): String = js.native
+  def getCode(): String
 }
 object EquationSymbol {
   

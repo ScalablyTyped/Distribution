@@ -2,21 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientValueObject extends StObject {
   
-  def customFromJson(obj: js.Any): Boolean = js.native
+  def customFromJson(obj: js.Any): Boolean
   
-  def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+  def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean
   
-  def fromJson(obj: js.Any): Unit = js.native
+  def fromJson(obj: js.Any): Unit
   
-  def get_typeId(): String = js.native
+  def get_typeId(): String
   
-  def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit
 }
 object ClientValueObject {
   

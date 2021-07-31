@@ -2,10 +2,8 @@ package typings.mithril.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteResolver[Attrs, State] extends StObject {
   
   /** The onmatch hook is called when the router needs to find a component to render. */
@@ -15,14 +13,14 @@ trait RouteResolver[Attrs, State] extends StObject {
       /* args */ Attrs, 
       /* requestedPath */ String, 
       /* route */ String, 
-      (ComponentTypes[_, _]) | js.Promise[_] | Unit
+      (ComponentTypes[js.Any, js.Any]) | js.Promise[js.Any] | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The render method is called on every redraw for a matching route. */
   var render: js.UndefOr[
     js.ThisFunction1[/* this */ this.type, /* vnode */ Vnode[Attrs, State], Children]
-  ] = js.native
+  ] = js.undefined
 }
 object RouteResolver {
   
@@ -33,7 +31,7 @@ object RouteResolver {
   }
   
   @scala.inline
-  implicit class RouteResolverMutableBuilder[Self <: RouteResolver[_, _], Attrs, State] (val x: Self with (RouteResolver[Attrs, State])) extends AnyVal {
+  implicit class RouteResolverMutableBuilder[Self <: RouteResolver[?, ?], Attrs, State] (val x: Self & (RouteResolver[Attrs, State])) extends AnyVal {
     
     @scala.inline
     def setOnmatch(
@@ -42,7 +40,7 @@ object RouteResolver {
           /* args */ Attrs, 
           /* requestedPath */ String, 
           /* route */ String, 
-          (ComponentTypes[_, _]) | js.Promise[_] | Unit
+          (ComponentTypes[js.Any, js.Any]) | js.Promise[js.Any] | Unit
         ]
     ): Self = StObject.set(x, "onmatch", value.asInstanceOf[js.Any])
     

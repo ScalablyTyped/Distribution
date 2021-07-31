@@ -4,7 +4,6 @@ import typings.postcss.anon.Fast
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PostCSS will parse it.
   */
 @js.native
-trait ContainerBase extends NodeBase {
+trait ContainerBase
+  extends StObject
+     with NodeBase {
   
   /**
     * Inserts new nodes to the end of the container.

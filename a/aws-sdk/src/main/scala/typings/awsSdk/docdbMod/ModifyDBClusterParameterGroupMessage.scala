@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBClusterParameterGroupMessage extends StObject {
   
   /**
     * The name of the cluster parameter group to modify.
     */
-  var DBClusterParameterGroupName: String = js.native
+  var DBClusterParameterGroupName: String
   
   /**
     * A list of parameters in the cluster parameter group to modify.
     */
-  var Parameters: ParametersList = js.native
+  var Parameters: ParametersList
 }
 object ModifyDBClusterParameterGroupMessage {
   

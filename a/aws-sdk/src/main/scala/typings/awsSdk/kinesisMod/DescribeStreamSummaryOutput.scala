@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStreamSummaryOutput extends StObject {
   
   /**
     * A StreamDescriptionSummary containing information about the stream.
     */
-  var StreamDescriptionSummary: typings.awsSdk.kinesisMod.StreamDescriptionSummary = js.native
+  var StreamDescriptionSummary: typings.awsSdk.kinesisMod.StreamDescriptionSummary
 }
 object DescribeStreamSummaryOutput {
   

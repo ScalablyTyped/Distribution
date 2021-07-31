@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * excluded. For Programmatic Guaranteed and Preferred Deals, this doesn&#39;t
   * apply.
   */
-@js.native
 trait SchemaUrlTargeting extends StObject {
   
   /**
     * A list of URLs to be excluded.
     */
-  var excludedUrls: js.UndefOr[js.Array[String]] = js.native
+  var excludedUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of URLs to be included.
     */
-  var targetedUrls: js.UndefOr[js.Array[String]] = js.native
+  var targetedUrls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUrlTargeting {
   

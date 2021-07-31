@@ -5,33 +5,31 @@ import typings.jpushReactNative.jpushReactNativeStrings.notificationOpened
 import typings.jpushReactNative.mod.Extra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extras extends StObject {
   
   /**
     * 对应“通知内容”字段
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * 对应“附加内容”字段
     */
-  var extras: Extra = js.native
+  var extras: Extra
   
   /**
     * 唯一标识通知消息的ID,可用于移除消息
     */
-  var messageID: String = js.native
+  var messageID: String
   
-  var notificationEventType: notificationArrived | notificationOpened = js.native
+  var notificationEventType: notificationArrived | notificationOpened
   
   /**
     * 对应“通知标题”字段
     */
-  var title: String = js.native
+  var title: String
 }
 object Extras {
   

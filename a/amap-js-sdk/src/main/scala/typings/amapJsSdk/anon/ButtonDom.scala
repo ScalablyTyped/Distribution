@@ -6,43 +6,41 @@ import typings.amapJsSdk.AMap.Pixel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonDom extends StObject {
   
-  var buttonDom: js.UndefOr[String | HTMLElement] = js.native
+  var buttonDom: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var buttonOffset: js.UndefOr[Pixel] = js.native
+  var buttonOffset: js.UndefOr[Pixel] = js.undefined
   
-  var buttonPosition: js.UndefOr[String] = js.native
+  var buttonPosition: js.UndefOr[String] = js.undefined
   
-  var circleOptions: js.UndefOr[CircleOptions] = js.native
+  var circleOptions: js.UndefOr[CircleOptions] = js.undefined
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
-  var markerOptions: js.UndefOr[MarkerOptions] = js.native
+  var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
   
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
-  var noIpLocate: js.UndefOr[Boolean] = js.native
+  var noIpLocate: js.UndefOr[Boolean] = js.undefined
   
-  var panToLocation: js.UndefOr[Boolean] = js.native
+  var panToLocation: js.UndefOr[Boolean] = js.undefined
   
-  var showButton: js.UndefOr[Boolean] = js.native
+  var showButton: js.UndefOr[Boolean] = js.undefined
   
-  var showCircle: js.UndefOr[Boolean] = js.native
+  var showCircle: js.UndefOr[Boolean] = js.undefined
   
-  var showMarker: js.UndefOr[Boolean] = js.native
+  var showMarker: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var useNative: js.UndefOr[Boolean] = js.native
+  var useNative: js.UndefOr[Boolean] = js.undefined
   
-  var zoomToAccuracy: js.UndefOr[Boolean] = js.native
+  var zoomToAccuracy: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonDom {
   

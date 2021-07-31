@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HITLayoutParameter extends StObject {
   
   /**
     *  The name of the parameter in the HITLayout. 
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The value substituted for the parameter referenced in the HITLayout. 
     */
-  var Value: String = js.native
+  var Value: String
 }
 object HITLayoutParameter {
   

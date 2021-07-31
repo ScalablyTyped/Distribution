@@ -2,23 +2,21 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactElement extends StObject {
   
-  var key: Key | Null = js.native
+  var key: Key | Null
   
-  var props: js.Any = js.native
+  var props: js.Any
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object ReactElement {
   
   @scala.inline
   def apply(props: js.Any, `type`: js.Any): ReactElement = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactElement]
   }

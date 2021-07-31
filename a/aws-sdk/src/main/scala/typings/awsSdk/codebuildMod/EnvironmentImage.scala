@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentImage extends StObject {
   
   /**
     * The description of the Docker image.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Docker image.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of environment image versions.
     */
-  var versions: js.UndefOr[ImageVersions] = js.native
+  var versions: js.UndefOr[ImageVersions] = js.undefined
 }
 object EnvironmentImage {
   

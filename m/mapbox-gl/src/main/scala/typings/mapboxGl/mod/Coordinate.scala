@@ -2,17 +2,15 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coordinate extends StObject {
   
-  var canonical: CanonicalCoordinate = js.native
+  var canonical: CanonicalCoordinate
   
-  var key: Double = js.native
+  var key: Double
   
-  var wrap: Double = js.native
+  var wrap: Double
 }
 object Coordinate {
   

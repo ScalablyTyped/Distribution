@@ -2,18 +2,18 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TSEnumMember extends Node {
+trait TSEnumMember
+  extends StObject
+     with Node {
   
-  var id: Identifier_ | StringLiteral_ = js.native
+  var id: Identifier_ | StringLiteral_
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
   @JSName("type")
-  var type_TSEnumMember: typings.babelTypes.babelTypesStrings.TSEnumMember = js.native
+  var type_TSEnumMember: typings.babelTypes.babelTypesStrings.TSEnumMember
 }
 object TSEnumMember {
   

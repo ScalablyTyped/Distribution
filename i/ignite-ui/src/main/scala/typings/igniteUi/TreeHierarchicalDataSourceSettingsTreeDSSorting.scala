@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeHierarchicalDataSourceSettingsTreeDSSorting
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,12 +15,12 @@ trait TreeHierarchicalDataSourceSettingsTreeDSSorting
   /**
     * Specifies from which data bound level to be applied sorting - 0 is the first level
     */
-  var fromLevel: js.UndefOr[Double] = js.native
+  var fromLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies to which data bound level to be applied sorting - if -1 sorting should be applied to the last data bound level
     */
-  var toLevel: js.UndefOr[Double] = js.native
+  var toLevel: js.UndefOr[Double] = js.undefined
 }
 object TreeHierarchicalDataSourceSettingsTreeDSSorting {
   

@@ -2,27 +2,25 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallBackProps extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var controlled: Boolean = js.native
+  var controlled: Boolean
   
-  var index: Double = js.native
+  var index: Double
   
-  var lifecycle: String = js.native
+  var lifecycle: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var status: valueof[typings.reactJoyride.mod.status] = js.native
+  var status: valueof[typings.reactJoyride.mod.status]
   
-  var step: Step = js.native
+  var step: Step
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CallBackProps {
   

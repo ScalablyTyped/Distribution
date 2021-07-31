@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining the message input to be sent to the assistant if the user selects the corresponding option. */
-@js.native
 trait DialogNodeOutputOptionsElementValue extends StObject {
   
   /** An input object that includes the input text. */
-  var input: js.UndefOr[MessageInput] = js.native
+  var input: js.UndefOr[MessageInput] = js.undefined
 }
 object DialogNodeOutputOptionsElementValue {
   

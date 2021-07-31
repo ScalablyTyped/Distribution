@@ -3,17 +3,17 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioPropsTypeMod {
   
-  @js.native
-  trait RadioItemPropsType extends RadioPropsType {
+  trait RadioItemPropsType
+    extends StObject
+       with RadioPropsType {
     
-    var onPress: js.UndefOr[js.Function0[_]] = js.native
+    var onPress: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var radioProps: js.UndefOr[js.Object] = js.native
+    var radioProps: js.UndefOr[js.Object] = js.undefined
   }
   object RadioItemPropsType {
     
@@ -27,7 +27,7 @@ object radioPropsTypeMod {
     implicit class RadioItemPropsTypeMutableBuilder[Self <: RadioItemPropsType] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnPress(value: () => _): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
@@ -40,20 +40,19 @@ object radioPropsTypeMod {
     }
   }
   
-  @js.native
   trait RadioPropsType extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
     
-    var wrapLabel: js.UndefOr[Boolean] = js.native
+    var wrapLabel: js.UndefOr[Boolean] = js.undefined
   }
   object RadioPropsType {
     

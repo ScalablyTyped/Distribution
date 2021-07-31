@@ -2,16 +2,16 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentPoolQueueReference extends ResourceReference {
+trait AgentPoolQueueReference
+  extends StObject
+     with ResourceReference {
   
   /**
     * The ID of the queue.
     */
-  var id: Double = js.native
+  var id: Double
 }
 object AgentPoolQueueReference {
   

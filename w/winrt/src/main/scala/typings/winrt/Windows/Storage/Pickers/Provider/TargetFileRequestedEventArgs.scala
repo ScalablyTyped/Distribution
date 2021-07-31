@@ -2,11 +2,11 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetFileRequestedEventArgs extends ITargetFileRequestedEventArgs
+trait TargetFileRequestedEventArgs
+  extends StObject
+     with ITargetFileRequestedEventArgs
 object TargetFileRequestedEventArgs {
   
   @scala.inline

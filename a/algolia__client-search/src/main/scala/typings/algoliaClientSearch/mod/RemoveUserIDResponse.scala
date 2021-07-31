@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveUserIDResponse extends StObject {
   
   /**
     * When the given `userID` got removed.
     */
-  var deletedAt: String = js.native
+  var deletedAt: String
 }
 object RemoveUserIDResponse {
   

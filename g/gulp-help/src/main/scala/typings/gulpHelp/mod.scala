@@ -6,23 +6,24 @@ import typings.gulp.mod.Gulp
 import typings.gulp.mod.SrcMethod
 import typings.gulp.mod.TaskCallback
 import typings.gulp.mod.WatchMethod
-import typings.orchestrator.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(gulp: Gulp): GulpHelp = ^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any]).asInstanceOf[GulpHelp]
+  @scala.inline
+  def apply(gulp: Gulp, options: GulpHelpOptions): GulpHelp = (^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GulpHelp]
+  
   @JSImport("gulp-help", JSImport.Namespace)
   @js.native
-  def apply(gulp: Gulp): GulpHelp = js.native
-  @JSImport("gulp-help", JSImport.Namespace)
-  @js.native
-  def apply(gulp: Gulp, options: GulpHelpOptions): GulpHelp = js.native
+  val ^ : js.Any = js.native
   
   @js.native
-  trait GulpHelp extends ^ {
+  trait GulpHelp
+    extends typings.orchestrator.mod.^ {
     
     var dest: DestMethod = js.native
     
@@ -33,33 +34,32 @@ object mod {
     var watch: WatchMethod = js.native
   }
   
-  @js.native
   trait GulpHelpOptions extends StObject {
     
     /**
       * A function to run after the default help task runs
       */
-    var afterPrintCallback: js.UndefOr[js.Function] = js.native
+    var afterPrintCallback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Adds aliases to the default help task
       */
-    var aliases: js.UndefOr[js.Array[String]] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Modifies the default help message
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Hide all task dependencies
       */
-    var hideDepsMessage: js.UndefOr[Boolean] = js.native
+    var hideDepsMessage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hide all tasks with no help message defined. Useful when including 3rd party tasks
       */
-    var hideEmpty: js.UndefOr[Boolean] = js.native
+    var hideEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object GulpHelpOptions {
     
@@ -129,10 +129,10 @@ object mod {
       * @param option task options
       */
     def apply(name: String, deps: js.Array[String]): js.Any = js.native
-    def apply(name: String, deps: js.Array[String], fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
+    def apply(name: String, deps: js.Array[String], fn: Unit, option: TaskOptions): js.Any = js.native
     def apply(name: String, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
     def apply(name: String, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
-    def apply(name: String, fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
+    def apply(name: String, fn: Unit, option: TaskOptions): js.Any = js.native
     def apply(name: String, fn: TaskCallback): js.Any = js.native
     def apply(name: String, fn: TaskCallback, option: TaskOptions): js.Any = js.native
     /**
@@ -154,32 +154,25 @@ object mod {
       * @param option task options
       */
     def apply(name: String, help: HelpOption, deps: js.Array[String]): js.Any = js.native
-    def apply(
-      name: String,
-      help: HelpOption,
-      deps: js.Array[String],
-      fn: js.UndefOr[scala.Nothing],
-      option: TaskOptions
-    ): js.Any = js.native
+    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: Unit, option: TaskOptions): js.Any = js.native
     def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
     def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
-    def apply(name: String, help: HelpOption, fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
+    def apply(name: String, help: HelpOption, fn: Unit, option: TaskOptions): js.Any = js.native
     def apply(name: String, help: HelpOption, fn: TaskCallback): js.Any = js.native
     def apply(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): js.Any = js.native
   }
   
-  @js.native
   trait TaskOptions extends StObject {
     
     /**
       * List of aliases for this task
       */
-    var aliases: js.UndefOr[js.Array[String]] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Object documenting options which can be passed to your task
       */
-    var options: js.UndefOr[StringDictionary[String]] = js.native
+    var options: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object TaskOptions {
     

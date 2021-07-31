@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConditionalFormatRuleResponse extends StObject {
   
   /** The rule that was deleted. */
-  var rule: js.UndefOr[ConditionalFormatRule] = js.native
+  var rule: js.UndefOr[ConditionalFormatRule] = js.undefined
 }
 object DeleteConditionalFormatRuleResponse {
   

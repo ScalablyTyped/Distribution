@@ -5,11 +5,12 @@ import typings.exceljs.anon.IncludeEmpty
 import typings.exceljs.anon.PartialRowModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Row extends Style {
+trait Row
+  extends StObject
+     with Style {
   
   /**
   	 * Number of non-empty cells
@@ -17,9 +18,9 @@ trait Row extends Style {
   val actualCellCount: Double = js.native
   
   def addPageBreak(): Unit = js.native
-  def addPageBreak(lft: js.UndefOr[scala.Nothing], rght: Double): Unit = js.native
   def addPageBreak(lft: Double): Unit = js.native
   def addPageBreak(lft: Double, rght: Double): Unit = js.native
+  def addPageBreak(lft: Unit, rght: Double): Unit = js.native
   
   /**
   	 * Number of cells including empty ones

@@ -22,13 +22,13 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatabaseDataProvider extends XDatabaseDataProvider {
+trait DatabaseDataProvider
+  extends StObject
+     with XDatabaseDataProvider {
   
-  def createWithConnection(connection: XConnection): Unit = js.native
+  def createWithConnection(connection: XConnection): Unit
 }
 object DatabaseDataProvider {
   
@@ -77,7 +77,7 @@ object DatabaseDataProvider {
     getRangeSelection: () => XRangeSelection,
     getRow: () => Double,
     getStatement: () => XInterface,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isAfterLast: () => Boolean,
     isBeforeFirst: () => Boolean,
     isFirst: () => Boolean,

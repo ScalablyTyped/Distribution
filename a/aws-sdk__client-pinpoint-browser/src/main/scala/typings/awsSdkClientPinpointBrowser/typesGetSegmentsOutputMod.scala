@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentsResponseMod.Unmarshalled
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetSegmentsOutputMod {
   
-  @js.native
-  trait GetSegmentsOutput extends OutputTypesUnion {
+  trait GetSegmentsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Segments in your account.
       */
-    var SegmentsResponse: UnmarshalledSegmentsResponse = js.native
+    var SegmentsResponse: UnmarshalledSegmentsResponse
   }
   object GetSegmentsOutput {
     

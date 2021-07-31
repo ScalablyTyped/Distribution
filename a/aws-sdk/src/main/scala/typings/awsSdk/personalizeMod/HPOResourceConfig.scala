@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HPOResourceConfig extends StObject {
   
   /**
     * The maximum number of training jobs when you create a solution version. The maximum value for maxNumberOfTrainingJobs is 40.
     */
-  var maxNumberOfTrainingJobs: js.UndefOr[HPOResource] = js.native
+  var maxNumberOfTrainingJobs: js.UndefOr[HPOResource] = js.undefined
   
   /**
     * The maximum number of parallel training jobs when you create a solution version. The maximum value for maxParallelTrainingJobs is 10.
     */
-  var maxParallelTrainingJobs: js.UndefOr[HPOResource] = js.native
+  var maxParallelTrainingJobs: js.UndefOr[HPOResource] = js.undefined
 }
 object HPOResourceConfig {
   

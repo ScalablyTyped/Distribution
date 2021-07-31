@@ -4,49 +4,49 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the text and formatting of a fixed hyperlink field. */
-@js.native
-trait XFixedHyperlink extends XInterface {
+trait XFixedHyperlink
+  extends StObject
+     with XInterface {
   
   /** returns the alignment of the text in the control. */
-  var Alignment: Double = js.native
+  var Alignment: Double
   
   /** returns the text of the control. */
-  var Text: String = js.native
+  var Text: String
   
   /** returns the url of the control. */
-  var URL: String = js.native
+  var URL: String
   
   /** registers an event handler for click action event. */
-  def addActionListener(l: XActionListener): Unit = js.native
+  def addActionListener(l: XActionListener): Unit
   
   /** returns the alignment of the text in the control. */
-  def getAlignment(): Double = js.native
+  def getAlignment(): Double
   
   /** returns the text of the control. */
-  def getText(): String = js.native
+  def getText(): String
   
   /** returns the url of the control. */
-  def getURL(): String = js.native
+  def getURL(): String
   
   /** unregisters an event handler for click action event. */
-  def removeActionListener(l: XActionListener): Unit = js.native
+  def removeActionListener(l: XActionListener): Unit
   
   /**
     * sets the alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
-  def setAlignment(nAlign: Double): Unit = js.native
+  def setAlignment(nAlign: Double): Unit
   
   /** sets the text of the control. */
-  def setText(Text: String): Unit = js.native
+  def setText(Text: String): Unit
   
   /** sets the url of the control. */
-  def setURL(URL: String): Unit = js.native
+  def setURL(URL: String): Unit
 }
 object XFixedHyperlink {
   

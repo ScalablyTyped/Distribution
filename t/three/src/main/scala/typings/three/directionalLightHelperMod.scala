@@ -9,7 +9,6 @@ import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directionalLightHelperMod {
@@ -24,12 +23,12 @@ object directionalLightHelperMod {
     	 */
     def this(light: DirectionalLight) = this()
     def this(light: DirectionalLight, size: Double) = this()
-    def this(light: DirectionalLight, size: js.UndefOr[scala.Nothing], color: String) = this()
-    def this(light: DirectionalLight, size: js.UndefOr[scala.Nothing], color: Double) = this()
-    def this(light: DirectionalLight, size: js.UndefOr[scala.Nothing], color: Color) = this()
     def this(light: DirectionalLight, size: Double, color: String) = this()
     def this(light: DirectionalLight, size: Double, color: Double) = this()
     def this(light: DirectionalLight, size: Double, color: Color) = this()
+    def this(light: DirectionalLight, size: Unit, color: String) = this()
+    def this(light: DirectionalLight, size: Unit, color: Double) = this()
+    def this(light: DirectionalLight, size: Unit, color: Color) = this()
     
     /**
     	 * @default undefined

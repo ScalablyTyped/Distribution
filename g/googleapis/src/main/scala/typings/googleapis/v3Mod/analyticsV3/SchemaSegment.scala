@@ -2,61 +2,59 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics segment.
   */
-@js.native
 trait SchemaSegment extends StObject {
   
   /**
     * Time the segment was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Segment definition.
     */
-  var definition: js.UndefOr[String] = js.native
+  var definition: js.UndefOr[String] = js.undefined
   
   /**
     * Segment ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for Analytics segment.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Segment name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Segment ID. Can be used with the &#39;segment&#39; parameter in Core
     * Reporting API.
     */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Link for this segment.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Type for a segment. Possible values are &quot;BUILT_IN&quot; or
     * &quot;CUSTOM&quot;.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Time the segment was last modified.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaSegment {
   

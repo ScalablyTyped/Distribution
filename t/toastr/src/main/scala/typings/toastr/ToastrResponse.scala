@@ -5,41 +5,39 @@ import typings.toastr.toastrStrings.hidden
 import typings.toastr.toastrStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastrResponse extends StObject {
   
   /**
     * The datetime the toast was closed, if the state is hidden.
     */
-  var endTime: js.UndefOr[Date] = js.native
+  var endTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The event's toast details.
     */
-  var map: ToastMap = js.native
+  var map: ToastMap
   
   /**
     * The toastr options.
     */
-  var options: ToastrOptions = js.native
+  var options: ToastrOptions
   
   /**
     * The datetime the toast was opened.
     */
-  var startTime: Date = js.native
+  var startTime: Date
   
   /**
     * The current state of the toast.
     */
-  var state: visible | hidden = js.native
+  var state: visible | hidden
   
   /**
     * The internal toast id.
     */
-  var toastId: Double = js.native
+  var toastId: Double
 }
 object ToastrResponse {
   

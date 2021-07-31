@@ -12,7 +12,7 @@ A collection of core restify plugins
 | Keywords           | restify, restify-plugins, handlers, prehandlers, queryparser, bodyparser, cors, accept, audit, authorization, formparser, multipart, request, expiry, throttle, static, gzip |
 | # releases         | 1 |
 | # dependents       | 17 |
-| # downloads        | 68397 |
+| # downloads        | 59377 |
 | # stars            | 2 |
 
 ## Links

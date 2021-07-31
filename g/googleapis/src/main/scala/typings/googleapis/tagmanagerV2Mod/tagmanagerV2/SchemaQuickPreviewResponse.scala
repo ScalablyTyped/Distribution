@@ -2,30 +2,28 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to quick previewing a workspace.
   */
-@js.native
 trait SchemaQuickPreviewResponse extends StObject {
   
   /**
     * Were there compiler errors or not.
     */
-  var compilerError: js.UndefOr[Boolean] = js.native
+  var compilerError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The quick previewed container version.
     */
-  var containerVersion: js.UndefOr[SchemaContainerVersion] = js.native
+  var containerVersion: js.UndefOr[SchemaContainerVersion] = js.undefined
   
   /**
     * Whether quick previewing failed when syncing the workspace to the latest
     * container version.
     */
-  var syncStatus: js.UndefOr[SchemaSyncStatus] = js.native
+  var syncStatus: js.UndefOr[SchemaSyncStatus] = js.undefined
 }
 object SchemaQuickPreviewResponse {
   

@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSTypeAssertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSTypeAssertion_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSTypeAssertion_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSTypeAssertion_ : TSTypeAssertion = js.native
+  var type_TSTypeAssertion_ : TSTypeAssertion
 }
 object TSTypeAssertion_ {
   
   @scala.inline
-  def apply(expression: Expression, `type`: TSTypeAssertion, typeAnnotation: TSType): TSTypeAssertion_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression, typeAnnotation: TSType): TSTypeAssertion_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeAssertion")
     __obj.asInstanceOf[TSTypeAssertion_]
   }
   

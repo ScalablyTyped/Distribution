@@ -10,9 +10,9 @@ Transform into a lower case string with underscores between words
 | ------------------ | :-------------: |
 | Full name          | snake-case |
 | Keywords           | snake, case, underscore, lower, convert, transform, identifier, python |
-| # releases         | 5 |
-| # dependents       | 144 |
-| # downloads        | 71857646 |
+| # releases         | 6 |
+| # dependents       | 158 |
+| # downloads        | 87572024 |
 | # stars            | 3 |
 
 ## Links

@@ -8,31 +8,29 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressTypesMod {
   
-  @js.native
   trait IProgressControl extends StObject {
     
-    def addTimeIndicator(time: Double): Unit = js.native
+    def addTimeIndicator(time: Double): Unit
     
-    def addTimeIndicators(times: js.Array[Double]): Unit = js.native
+    def addTimeIndicators(times: js.Array[Double]): Unit
     
-    def clearTimeIndicators(): Unit = js.native
+    def clearTimeIndicators(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def seekOnProgressDrag(): Unit = js.native
+    def seekOnProgressDrag(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def showPreviewOnProgressDrag(): Unit = js.native
+    def showPreviewOnProgressDrag(): Unit
   }
   object IProgressControl {
     
@@ -84,18 +82,17 @@ object progressTypesMod {
     }
   }
   
-  @js.native
   trait IProgressControlAPI extends StObject {
     
-    var addTimeIndicator: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.native
+    var addTimeIndicator: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.undefined
     
-    var addTimeIndicators: js.UndefOr[js.Function1[/* times */ js.Array[Double], Unit]] = js.native
+    var addTimeIndicators: js.UndefOr[js.Function1[/* times */ js.Array[Double], Unit]] = js.undefined
     
-    var clearTimeIndicators: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearTimeIndicators: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var seekOnProgressDrag: js.UndefOr[js.Function0[Unit]] = js.native
+    var seekOnProgressDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showPreviewOnProgressDrag: js.UndefOr[js.Function0[Unit]] = js.native
+    var showPreviewOnProgressDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IProgressControlAPI {
     
@@ -140,24 +137,23 @@ object progressTypesMod {
     }
   }
   
-  @js.native
   trait IProgressViewCallbacks extends StObject {
     
-    def onChangePlayedPercent(percent: Double): Unit = js.native
+    def onChangePlayedPercent(percent: Double): Unit
     
-    def onDragEnd(): Unit = js.native
+    def onDragEnd(): Unit
     
-    def onDragStart(): Unit = js.native
+    def onDragStart(): Unit
     
-    def onSeekToByMouseEnd(): Unit = js.native
+    def onSeekToByMouseEnd(): Unit
     
-    def onSeekToByMouseStart(percent: Double): Unit = js.native
+    def onSeekToByMouseStart(percent: Double): Unit
     
-    def onSyncWithLiveClick(): Unit = js.native
+    def onSyncWithLiveClick(): Unit
     
-    var onSyncWithLiveMouseEnter: EventListenerOrEventListenerObject = js.native
+    var onSyncWithLiveMouseEnter: EventListenerOrEventListenerObject
     
-    var onSyncWithLiveMouseLeave: EventListenerOrEventListenerObject = js.native
+    var onSyncWithLiveMouseLeave: EventListenerOrEventListenerObject
   }
   object IProgressViewCallbacks {
     
@@ -211,16 +207,15 @@ object progressTypesMod {
     }
   }
   
-  @js.native
   trait IProgressViewConfig extends StObject {
     
-    var callbacks: IProgressViewCallbacks = js.native
+    var callbacks: IProgressViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IProgressViewConfig {
     
@@ -252,36 +247,35 @@ object progressTypesMod {
     }
   }
   
-  @js.native
   trait IProgressViewStyles extends StObject {
     
-    var background: String = js.native
+    var background: String
     
-    var buffered: String = js.native
+    var buffered: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var hitbox: String = js.native
+    var hitbox: String
     
-    var inLive: String = js.native
+    var inLive: String
     
-    var isDragging: String = js.native
+    var isDragging: String
     
-    var liveSync: String = js.native
+    var liveSync: String
     
-    var played: String = js.native
+    var played: String
     
-    var progressBar: String = js.native
+    var progressBar: String
     
-    var progressBarsWrapper: String = js.native
+    var progressBarsWrapper: String
     
-    var seekBlock: String = js.native
+    var seekBlock: String
     
-    var seekTo: String = js.native
+    var seekTo: String
     
-    var syncButton: String = js.native
+    var syncButton: String
     
-    var timeIndicators: String = js.native
+    var timeIndicators: String
   }
   object IProgressViewStyles {
     

@@ -5,21 +5,21 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.input
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseTypeaheadInputProps extends InputHTMLAttributes[input] {
+trait BaseTypeaheadInputProps
+  extends StObject
+     with InputHTMLAttributes[input] {
   
   @JSName("type")
-  var type_BaseTypeaheadInputProps: text = js.native
+  var type_BaseTypeaheadInputProps: text
 }
 object BaseTypeaheadInputProps {
   
   @scala.inline
-  def apply(`type`: text): BaseTypeaheadInputProps = {
+  def apply(): BaseTypeaheadInputProps = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[BaseTypeaheadInputProps]
   }
   

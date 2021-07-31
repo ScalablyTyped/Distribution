@@ -3,41 +3,39 @@ package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata describing an Operation
   */
-@js.native
 trait SchemaOperationMetadataV1 extends StObject {
   
   /**
     * The original request that started the operation.
     */
-  var request: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var request: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Target of the operation - for example
     * projects/project-1/locations/region-1/functions/function-1
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * Type of operation.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The last update timestamp of the operation.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Version id of the function created or updated by an API call. This field
     * is only populated for Create and Update operations.
     */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationMetadataV1 {
   

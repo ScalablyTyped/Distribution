@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxContinuousRangeSelectInfo with extends of RangeSelectInfo
   */
-@js.native
-trait INxContinuousRangeSelectInfo extends IRangeSelectInfo {
+trait INxContinuousRangeSelectInfo
+  extends StObject
+     with IRangeSelectInfo {
   
   /**
     * Dimension index.
     */
-  var qDimIx: Double = js.native
+  var qDimIx: Double
 }
 object INxContinuousRangeSelectInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchDashboard extends StObject {
   
   /**
     * The name of the CloudWatch dashboard.
     */
-  var Name: js.UndefOr[CloudWatchDashboardName] = js.native
+  var Name: js.UndefOr[CloudWatchDashboardName] = js.undefined
 }
 object CloudWatchDashboard {
   

@@ -2,12 +2,14 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containsMod {
   
-  @JSImport("@antv/util/lib/contains", JSImport.Default)
+  @JSImport("@antv/util/lib/contains", JSImport.Namespace)
   @js.native
-  def default(arr: js.Array[_], value: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(arr: js.Array[js.Any], value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusPeerMessage extends StObject {
   
   /** ConsensusPeerMessage content */
-  var content: js.UndefOr[Uint8Array | Null] = js.native
+  var content: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusPeerMessage messageType */
-  var messageType: js.UndefOr[String | Null] = js.native
+  var messageType: js.UndefOr[String | Null] = js.undefined
   
   /** ConsensusPeerMessage name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** ConsensusPeerMessage version */
-  var version: js.UndefOr[String | Null] = js.native
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object IConsensusPeerMessage {
   

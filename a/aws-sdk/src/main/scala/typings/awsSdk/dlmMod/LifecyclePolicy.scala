@@ -2,61 +2,59 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecyclePolicy extends StObject {
   
   /**
     * The local date and time when the lifecycle policy was created.
     */
-  var DateCreated: js.UndefOr[Timestamp] = js.native
+  var DateCreated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The local date and time when the lifecycle policy was last modified.
     */
-  var DateModified: js.UndefOr[Timestamp] = js.native
+  var DateModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the lifecycle policy.
     */
-  var Description: js.UndefOr[PolicyDescription] = js.native
+  var Description: js.UndefOr[PolicyDescription] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy.
     */
-  var ExecutionRoleArn: js.UndefOr[typings.awsSdk.dlmMod.ExecutionRoleArn] = js.native
+  var ExecutionRoleArn: js.UndefOr[typings.awsSdk.dlmMod.ExecutionRoleArn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the policy.
     */
-  var PolicyArn: js.UndefOr[typings.awsSdk.dlmMod.PolicyArn] = js.native
+  var PolicyArn: js.UndefOr[typings.awsSdk.dlmMod.PolicyArn] = js.undefined
   
   /**
     * The configuration of the lifecycle policy
     */
-  var PolicyDetails: js.UndefOr[typings.awsSdk.dlmMod.PolicyDetails] = js.native
+  var PolicyDetails: js.UndefOr[typings.awsSdk.dlmMod.PolicyDetails] = js.undefined
   
   /**
     * The identifier of the lifecycle policy.
     */
-  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.native
+  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.undefined
   
   /**
     * The activation state of the lifecycle policy.
     */
-  var State: js.UndefOr[GettablePolicyStateValues] = js.native
+  var State: js.UndefOr[GettablePolicyStateValues] = js.undefined
   
   /**
     * The description of the status.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.dlmMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.dlmMod.StatusMessage] = js.undefined
   
   /**
     * The tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object LifecyclePolicy {
   

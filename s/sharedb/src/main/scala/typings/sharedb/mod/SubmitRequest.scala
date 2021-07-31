@@ -3,39 +3,37 @@ package typings.sharedb.mod
 import typings.sharedb.sharedbMod.Snapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitRequest extends StObject {
   
-  var channels: js.Array[String] | Null = js.native
+  var channels: js.Array[String] | Null
   
-  var collection: String = js.native
+  var collection: String
   
-  var id: String = js.native
+  var id: String
   
-  var index: String = js.native
+  var index: String
   
-  var maxRetries: Double | Null = js.native
+  var maxRetries: Double | Null
   
-  var op: CreateOp | DeleteOp | EditOp = js.native
+  var op: CreateOp | DeleteOp | EditOp
   
-  var ops: js.Array[typings.sharedb.sharedbMod.Op] = js.native
+  var ops: js.Array[typings.sharedb.sharedbMod.Op]
   
-  var options: js.Any = js.native
+  var options: js.Any
   
-  var projection: js.UndefOr[Projection] = js.native
+  var projection: js.UndefOr[Projection] = js.undefined
   
-  var retries: Double = js.native
+  var retries: Double
   
-  var saveMilestoneSnapshot: Boolean | Null = js.native
+  var saveMilestoneSnapshot: Boolean | Null
   
-  var snapshot: Snapshot | Null = js.native
+  var snapshot: Snapshot | Null
   
-  var start: Double = js.native
+  var start: Double
   
-  var suppressPublish: Boolean | Null = js.native
+  var suppressPublish: Boolean | Null
 }
 object SubmitRequest {
   
@@ -50,7 +48,7 @@ object SubmitRequest {
     retries: Double,
     start: Double
   ): SubmitRequest = {
-    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
     __obj.asInstanceOf[SubmitRequest]
   }
   

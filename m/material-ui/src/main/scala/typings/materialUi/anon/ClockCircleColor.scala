@@ -2,27 +2,25 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClockCircleColor extends StObject {
   
-  var accentColor: js.UndefOr[String] = js.native
+  var accentColor: js.UndefOr[String] = js.undefined
   
-  var clockCircleColor: js.UndefOr[String] = js.native
+  var clockCircleColor: js.UndefOr[String] = js.undefined
   
-  var clockColor: js.UndefOr[String] = js.native
+  var clockColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var headerColor: js.UndefOr[String] = js.native
+  var headerColor: js.UndefOr[String] = js.undefined
   
-  var selectColor: js.UndefOr[String] = js.native
+  var selectColor: js.UndefOr[String] = js.undefined
   
-  var selectTextColor: js.UndefOr[String] = js.native
+  var selectTextColor: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object ClockCircleColor {
   

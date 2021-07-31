@@ -3,25 +3,24 @@ package typings.reactNativeSvg.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextSpecificProps
-  extends CommonPathProps
+  extends StObject
+     with CommonPathProps
      with FontProps {
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.native
+  var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShift] = js.native
+  var baselineShift: js.UndefOr[BaselineShift] = js.undefined
   
-  var fontData: js.UndefOr[Null | StringDictionary[js.Any]] = js.native
+  var fontData: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   
-  var lengthAdjust: js.UndefOr[LengthAdjust] = js.native
+  var lengthAdjust: js.UndefOr[LengthAdjust] = js.undefined
   
-  var textLength: js.UndefOr[NumberProp] = js.native
+  var textLength: js.UndefOr[NumberProp] = js.undefined
   
-  var verticalAlign: js.UndefOr[NumberProp] = js.native
+  var verticalAlign: js.UndefOr[NumberProp] = js.undefined
 }
 object TextSpecificProps {
   

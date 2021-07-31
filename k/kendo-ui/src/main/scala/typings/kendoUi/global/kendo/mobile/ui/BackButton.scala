@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.BackButtonOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.BackButton")
 @js.native
 class BackButton protected ()
-  extends typings.kendoUi.kendo.mobile.ui.BackButton {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.BackButton {
   def this(element: Element) = this()
   def this(element: Element, options: BackButtonOptions) = this()
 }
@@ -21,9 +21,8 @@ object BackButton {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.BackButton.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.BackButton = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.BackButton]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.BackButton.fn")

@@ -12,110 +12,108 @@ import typings.kapPlugin.anon.FileType
 import typings.kapPlugin.anon.Typeofgot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Pick<json-schema.json-schema.JSONSchema7, std.Exclude<keyof json-schema.json-schema.JSONSchema7, 'required' | 'default'>> & {  required :boolean | undefined,   default :TValue | undefined} */
-  @js.native
   trait ConfigSchema[TValue] extends StObject {
     
-    var default: js.UndefOr[TValue] = js.native
+    var default: js.UndefOr[TValue] = js.undefined
     
     @JSName("$comment")
-    var $comment: js.UndefOr[String] = js.native
+    var $comment: js.UndefOr[String] = js.undefined
     
     @JSName("$id")
-    var $id: js.UndefOr[String] = js.native
+    var $id: js.UndefOr[String] = js.undefined
     
     @JSName("$ref")
-    var $ref: js.UndefOr[String] = js.native
+    var $ref: js.UndefOr[String] = js.undefined
     
     @JSName("$schema")
-    var $schema: js.UndefOr[JSONSchema7Version] = js.native
+    var $schema: js.UndefOr[JSONSchema7Version] = js.undefined
     
-    var additionalItems: js.UndefOr[JSONSchema7Definition] = js.native
+    var additionalItems: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var additionalProperties: js.UndefOr[JSONSchema7Definition] = js.native
+    var additionalProperties: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var allOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.native
+    var allOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.undefined
     
-    var anyOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.native
+    var anyOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.undefined
     
-    var const: js.UndefOr[JSONSchema7Type] = js.native
+    var const: js.UndefOr[JSONSchema7Type] = js.undefined
     
-    var contains: js.UndefOr[JSONSchema7] = js.native
+    var contains: js.UndefOr[JSONSchema7] = js.undefined
     
-    var contentEncoding: js.UndefOr[String] = js.native
+    var contentEncoding: js.UndefOr[String] = js.undefined
     
-    var contentMediaType: js.UndefOr[String] = js.native
+    var contentMediaType: js.UndefOr[String] = js.undefined
     
-    var definitions: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.native
+    var definitions: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[JSONSchema7Definition | js.Array[String]]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[JSONSchema7Definition | js.Array[String]]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var `else`: js.UndefOr[JSONSchema7Definition] = js.native
+    var `else`: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var enum: js.UndefOr[js.Array[JSONSchema7Type]] = js.native
+    var `enum`: js.UndefOr[js.Array[JSONSchema7Type]] = js.undefined
     
-    var examples: js.UndefOr[JSONSchema7Type] = js.native
+    var examples: js.UndefOr[JSONSchema7Type] = js.undefined
     
-    var exclusiveMaximum: js.UndefOr[Double] = js.native
+    var exclusiveMaximum: js.UndefOr[Double] = js.undefined
     
-    var exclusiveMinimum: js.UndefOr[Double] = js.native
+    var exclusiveMinimum: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var `if`: js.UndefOr[JSONSchema7Definition] = js.native
+    var `if`: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var items: js.UndefOr[JSONSchema7Definition | js.Array[JSONSchema7Definition]] = js.native
+    var items: js.UndefOr[JSONSchema7Definition | js.Array[JSONSchema7Definition]] = js.undefined
     
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxProperties: js.UndefOr[Double] = js.native
+    var maxProperties: js.UndefOr[Double] = js.undefined
     
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
-    var minItems: js.UndefOr[Double] = js.native
+    var minItems: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var minProperties: js.UndefOr[Double] = js.native
+    var minProperties: js.UndefOr[Double] = js.undefined
     
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
-    var multipleOf: js.UndefOr[Double] = js.native
+    var multipleOf: js.UndefOr[Double] = js.undefined
     
-    var not: js.UndefOr[JSONSchema7Definition] = js.native
+    var not: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var oneOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.native
+    var oneOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var patternProperties: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.native
+    var patternProperties: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.native
+    var properties: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.undefined
     
-    var propertyNames: js.UndefOr[JSONSchema7Definition] = js.native
+    var propertyNames: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var `then`: js.UndefOr[JSONSchema7Definition] = js.native
+    var `then`: js.UndefOr[JSONSchema7Definition] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[JSONSchema7TypeName | js.Array[JSONSchema7TypeName]] = js.native
+    var `type`: js.UndefOr[JSONSchema7TypeName | js.Array[JSONSchema7TypeName]] = js.undefined
     
-    var uniqueItems: js.UndefOr[Boolean] = js.native
+    var uniqueItems: js.UndefOr[Boolean] = js.undefined
     
-    var writeOnly: js.UndefOr[Boolean] = js.native
+    var writeOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigSchema {
     
@@ -126,7 +124,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigSchemaMutableBuilder[Self <: ConfigSchema[_], TValue] (val x: Self with ConfigSchema[TValue]) extends AnyVal {
+    implicit class ConfigSchemaMutableBuilder[Self <: ConfigSchema[?], TValue] (val x: Self & ConfigSchema[TValue]) extends AnyVal {
       
       @scala.inline
       def set$comment(value: String): Self = StObject.set(x, "$comment", value.asInstanceOf[js.Any])
@@ -532,13 +530,12 @@ object mod {
     def waitForDeepLink(): js.Promise[String] = js.native
   }
   
-  @js.native
   trait KapShareService[T] extends StObject {
     
     /**
       * The function that is run when the user clicks the menu item.
       */
-    def action(context: KapContext[T]): js.Promise[Unit] = js.native
+    def action(context: KapContext[T]): js.Promise[Unit]
     
     /**
       * Definition of the config the plugins needs. A JSON schema, with the
@@ -546,26 +543,26 @@ object mod {
       */
     var config: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? kap-plugin.kap-plugin.ConfigSchema<T[K]>}
-      */ typings.kapPlugin.kapPluginStrings.KapShareService with TopLevel[T] = js.native
+      */ typings.kapPlugin.kapPluginStrings.KapShareService & TopLevel[T]
     
     /**
       * A description displayed at the top of the configuration window. You can
       * use this to explain the config options or link to API docs. Any links in
       * this description will be parsed into clickable links automatically.
       */
-    var configDescription: String = js.native
+    var configDescription: String
     
     /**
       * The file formats you support.
       */
-    var formats: js.Array[Format] = js.native
+    var formats: js.Array[Format]
     
     /**
       * The title used in the export menu. For example: "Share to GIPHY". The
       * text should be in title case, for example, "Save to Disk",
       * not "Save to disk".
       */
-    var title: String = js.native
+    var title: String
   }
   object KapShareService {
     
@@ -574,7 +571,7 @@ object mod {
       action: KapContext[T] => js.Promise[Unit],
       config: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? kap-plugin.kap-plugin.ConfigSchema<T[K]>}
-      */ typings.kapPlugin.kapPluginStrings.KapShareService with TopLevel[T],
+      */ typings.kapPlugin.kapPluginStrings.KapShareService & TopLevel[T],
       configDescription: String,
       formats: js.Array[Format],
       title: String
@@ -584,7 +581,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class KapShareServiceMutableBuilder[Self <: KapShareService[_], T] (val x: Self with KapShareService[T]) extends AnyVal {
+    implicit class KapShareServiceMutableBuilder[Self <: KapShareService[?], T] (val x: Self & KapShareService[T]) extends AnyVal {
       
       @scala.inline
       def setAction(value: KapContext[T] => js.Promise[Unit]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
@@ -593,7 +590,7 @@ object mod {
       def setConfig(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]:? kap-plugin.kap-plugin.ConfigSchema<T[K]>}
-        */ typings.kapPlugin.kapPluginStrings.KapShareService with TopLevel[T]
+        */ typings.kapPlugin.kapPluginStrings.KapShareService & TopLevel[T]
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       @scala.inline

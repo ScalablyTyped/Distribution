@@ -15,7 +15,6 @@ import typings.std.MouseEvent
 import typings.std.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseFloatingPickerMod {
@@ -96,14 +95,13 @@ object baseFloatingPickerMod {
     /* protected */ def updateValue(updatedValue: String): Unit = js.native
   }
   
-  @js.native
   trait IBaseFloatingPickerState extends StObject {
     
-    var didBind: Boolean = js.native
+    var didBind: Boolean
     
-    var queryString: String = js.native
+    var queryString: String
     
-    var suggestionsVisible: js.UndefOr[Boolean] = js.native
+    var suggestionsVisible: js.UndefOr[Boolean] = js.undefined
   }
   object IBaseFloatingPickerState {
     

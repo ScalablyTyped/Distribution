@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaStore extends Service {
   
   @JSName("config")
-  var config_MediaStore: ConfigBase with ClientConfiguration = js.native
+  var config_MediaStore: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a storage container to hold objects. A container is similar to a bucket in the Amazon S3 service.

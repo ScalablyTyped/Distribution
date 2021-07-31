@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FrameTaskHandle extends Object {
+trait FrameTaskHandle
+  extends StObject
+     with Object {
   
   /**
     * Pause the execution the frame task at every frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * Removes the frame task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   /**
     * Resumes the execution the frame task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
     */
-  def resume(): Unit = js.native
+  def resume(): Unit
 }
 object FrameTaskHandle {
   

@@ -3,24 +3,22 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A job executed by the workflow.
   */
-@js.native
 trait SchemaOrderedJob extends StObject {
   
   /**
     * Job is a Hadoop job.
     */
-  var hadoopJob: js.UndefOr[SchemaHadoopJob] = js.native
+  var hadoopJob: js.UndefOr[SchemaHadoopJob] = js.undefined
   
   /**
     * Job is a Hive job.
     */
-  var hiveJob: js.UndefOr[SchemaHiveJob] = js.native
+  var hiveJob: js.UndefOr[SchemaHiveJob] = js.undefined
   
   /**
     * Optional. The labels to associate with this job.Label keys must be
@@ -30,38 +28,38 @@ trait SchemaOrderedJob extends StObject {
     * \p{Ll}\p{Lo}\p{N}_-{0,63}No more than 32 labels can be associated with a
     * given job.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Job is a Pig job.
     */
-  var pigJob: js.UndefOr[SchemaPigJob] = js.native
+  var pigJob: js.UndefOr[SchemaPigJob] = js.undefined
   
   /**
     * Optional. The optional list of prerequisite job step_ids. If not
     * specified, the job will start at the beginning of workflow.
     */
-  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.native
+  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Job is a Pyspark job.
     */
-  var pysparkJob: js.UndefOr[SchemaPySparkJob] = js.native
+  var pysparkJob: js.UndefOr[SchemaPySparkJob] = js.undefined
   
   /**
     * Optional. Job scheduling configuration.
     */
-  var scheduling: js.UndefOr[SchemaJobScheduling] = js.native
+  var scheduling: js.UndefOr[SchemaJobScheduling] = js.undefined
   
   /**
     * Job is a Spark job.
     */
-  var sparkJob: js.UndefOr[SchemaSparkJob] = js.native
+  var sparkJob: js.UndefOr[SchemaSparkJob] = js.undefined
   
   /**
     * Job is a SparkSql job.
     */
-  var sparkSqlJob: js.UndefOr[SchemaSparkSqlJob] = js.native
+  var sparkSqlJob: js.UndefOr[SchemaSparkSqlJob] = js.undefined
   
   /**
     * Required. The step id. The id must be unique among all jobs within the
@@ -71,7 +69,7 @@ trait SchemaOrderedJob extends StObject {
     * (0-9), underscores (_), and hyphens (-). Cannot begin or end with
     * underscore or hyphen. Must consist of between 3 and 50 characters.
     */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderedJob {
   

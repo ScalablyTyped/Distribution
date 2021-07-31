@@ -8,7 +8,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.eventsDotk8sDotioSlashv1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
@@ -18,90 +17,89 @@ object events {
     /**
       * Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.
       */
-    @js.native
     trait Event extends StObject {
       
       /**
         * action is what action was taken/failed regarding to the regarding object. It is machine-readable. This field can have at most 128 characters.
         */
-      var action: js.UndefOr[Input[String]] = js.native
+      var action: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[eventsDotk8sDotioSlashv1]] = js.native
+      var apiVersion: js.UndefOr[Input[eventsDotk8sDotioSlashv1]] = js.undefined
       
       /**
         * deprecatedCount is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedCount: js.UndefOr[Input[Double]] = js.native
+      var deprecatedCount: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * deprecatedFirstTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedFirstTimestamp: js.UndefOr[Input[String]] = js.native
+      var deprecatedFirstTimestamp: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * deprecatedLastTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedLastTimestamp: js.UndefOr[Input[String]] = js.native
+      var deprecatedLastTimestamp: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * deprecatedSource is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedSource: js.UndefOr[Input[EventSource]] = js.native
+      var deprecatedSource: js.UndefOr[Input[EventSource]] = js.undefined
       
       /**
         * eventTime is the time when this Event was first observed. It is required.
         */
-      var eventTime: Input[String] = js.native
+      var eventTime: Input[String]
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.undefined
       
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * note is a human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
         */
-      var note: js.UndefOr[Input[String]] = js.native
+      var note: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * reason is why the action was taken. It is human-readable. This field can have at most 128 characters.
         */
-      var reason: js.UndefOr[Input[String]] = js.native
+      var reason: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * regarding contains the object this Event is about. In most cases it's an Object reporting controller implements, e.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
         */
-      var regarding: js.UndefOr[Input[ObjectReference]] = js.native
+      var regarding: js.UndefOr[Input[ObjectReference]] = js.undefined
       
       /**
         * related is the optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
         */
-      var related: js.UndefOr[Input[ObjectReference]] = js.native
+      var related: js.UndefOr[Input[ObjectReference]] = js.undefined
       
       /**
         * reportingController is the name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`. This field cannot be empty for new Events.
         */
-      var reportingController: js.UndefOr[Input[String]] = js.native
+      var reportingController: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * reportingInstance is the ID of the controller instance, e.g. `kubelet-xyzf`. This field cannot be empty for new Events and it can have at most 128 characters.
         */
-      var reportingInstance: js.UndefOr[Input[String]] = js.native
+      var reportingInstance: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * series is data about the Event series this event represents or nil if it's a singleton Event.
         */
-      var series: js.UndefOr[Input[EventSeries]] = js.native
+      var series: js.UndefOr[Input[EventSeries]] = js.undefined
       
       /**
         * type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable.
         */
-      var `type`: js.UndefOr[Input[String]] = js.native
+      var `type`: js.UndefOr[Input[String]] = js.undefined
     }
     object Event {
       
@@ -218,18 +216,17 @@ object events {
     /**
       * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time. How often to update the EventSeries is up to the event reporters. The default event reporter in "k8s.io/client-go/tools/events/event_broadcaster.go" shows how this struct is updated on heartbeats and can guide customized reporter implementations.
       */
-    @js.native
     trait EventSeries extends StObject {
       
       /**
         * count is the number of occurrences in this series up to the last heartbeat time.
         */
-      var count: Input[Double] = js.native
+      var count: Input[Double]
       
       /**
         * lastObservedTime is the time when last Event from the series was seen before last heartbeat.
         */
-      var lastObservedTime: Input[String] = js.native
+      var lastObservedTime: Input[String]
     }
     object EventSeries {
       
@@ -256,90 +253,89 @@ object events {
     /**
       * Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.
       */
-    @js.native
     trait Event extends StObject {
       
       /**
         * action is what action was taken/failed regarding to the regarding object. It is machine-readable. This field can have at most 128 characters.
         */
-      var action: js.UndefOr[Input[String]] = js.native
+      var action: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[eventsDotk8sDotioSlashv1beta1]] = js.native
+      var apiVersion: js.UndefOr[Input[eventsDotk8sDotioSlashv1beta1]] = js.undefined
       
       /**
         * deprecatedCount is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedCount: js.UndefOr[Input[Double]] = js.native
+      var deprecatedCount: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * deprecatedFirstTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedFirstTimestamp: js.UndefOr[Input[String]] = js.native
+      var deprecatedFirstTimestamp: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * deprecatedLastTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedLastTimestamp: js.UndefOr[Input[String]] = js.native
+      var deprecatedLastTimestamp: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * deprecatedSource is the deprecated field assuring backward compatibility with core.v1 Event type.
         */
-      var deprecatedSource: js.UndefOr[Input[EventSource]] = js.native
+      var deprecatedSource: js.UndefOr[Input[EventSource]] = js.undefined
       
       /**
         * eventTime is the time when this Event was first observed. It is required.
         */
-      var eventTime: Input[String] = js.native
+      var eventTime: Input[String]
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.undefined
       
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * note is a human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
         */
-      var note: js.UndefOr[Input[String]] = js.native
+      var note: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * reason is why the action was taken. It is human-readable. This field can have at most 128 characters.
         */
-      var reason: js.UndefOr[Input[String]] = js.native
+      var reason: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * regarding contains the object this Event is about. In most cases it's an Object reporting controller implements, e.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
         */
-      var regarding: js.UndefOr[Input[ObjectReference]] = js.native
+      var regarding: js.UndefOr[Input[ObjectReference]] = js.undefined
       
       /**
         * related is the optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
         */
-      var related: js.UndefOr[Input[ObjectReference]] = js.native
+      var related: js.UndefOr[Input[ObjectReference]] = js.undefined
       
       /**
         * reportingController is the name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`. This field cannot be empty for new Events.
         */
-      var reportingController: js.UndefOr[Input[String]] = js.native
+      var reportingController: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * reportingInstance is the ID of the controller instance, e.g. `kubelet-xyzf`. This field cannot be empty for new Events and it can have at most 128 characters.
         */
-      var reportingInstance: js.UndefOr[Input[String]] = js.native
+      var reportingInstance: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * series is data about the Event series this event represents or nil if it's a singleton Event.
         */
-      var series: js.UndefOr[Input[EventSeries]] = js.native
+      var series: js.UndefOr[Input[EventSeries]] = js.undefined
       
       /**
         * type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable.
         */
-      var `type`: js.UndefOr[Input[String]] = js.native
+      var `type`: js.UndefOr[Input[String]] = js.undefined
     }
     object Event {
       
@@ -456,23 +452,22 @@ object events {
     /**
       * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
       */
-    @js.native
     trait EventSeries extends StObject {
       
       /**
         * count is the number of occurrences in this series up to the last heartbeat time.
         */
-      var count: Input[Double] = js.native
+      var count: Input[Double]
       
       /**
         * lastObservedTime is the time when last Event from the series was seen before last heartbeat.
         */
-      var lastObservedTime: Input[String] = js.native
+      var lastObservedTime: Input[String]
       
       /**
         * Information whether this series is ongoing or finished. Deprecated. Planned removal for 1.18
         */
-      var state: js.UndefOr[Input[String]] = js.native
+      var state: js.UndefOr[Input[String]] = js.undefined
     }
     object EventSeries {
       

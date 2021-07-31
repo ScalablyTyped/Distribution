@@ -8,7 +8,6 @@ import typings.devexpressUtils.typesMod.IEquatable
 import typings.devexpressUtils.typesMod.ISupportCopyFrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boundaryMod {
@@ -23,17 +22,31 @@ object boundaryMod {
        with IReproducibleInterval[BoundaryInterval] {
     def this(start: Double, end: Double) = this()
     
+    /* CompleteClass */
+    override def copyFrom(obj: BoundaryInterval): Unit = js.native
+    
     def expand(interval: BoundaryInterval): this.type = js.native
+    
+    /* CompleteClass */
+    override def makeByLengthEnd(length: Double, end: Double): BoundaryInterval = js.native
+    
+    /* CompleteClass */
+    override def makeByStartEnd(start: Double, end: Double): BoundaryInterval = js.native
+    
+    /* CompleteClass */
+    override def makeByStartLength(start: Double, length: Double): BoundaryInterval = js.native
   }
   /* static members */
   object BoundaryInterval {
     
-    @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval.makeByConstInterval")
+    @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval")
     @js.native
-    def makeByConstInterval(interval: ConstInterval): BoundaryInterval = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval.normalized")
-    @js.native
-    def normalized(pointA: Double, pointB: Double): BoundaryInterval = js.native
+    @scala.inline
+    def makeByConstInterval(interval: ConstInterval): BoundaryInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("makeByConstInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[BoundaryInterval]
+    
+    @scala.inline
+    def normalized(pointA: Double, pointB: Double): BoundaryInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("normalized")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[BoundaryInterval]
   }
 }

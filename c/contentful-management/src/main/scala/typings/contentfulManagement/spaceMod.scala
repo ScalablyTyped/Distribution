@@ -8,27 +8,27 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.createSpaceApiMod.ContentfulSpaceAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceMod {
   
-  @JSImport("contentful-management/dist/typings/entities/space", "wrapSpace")
+  @JSImport("contentful-management/dist/typings/entities/space", JSImport.Namespace)
   @js.native
-  def wrapSpace(http: AxiosInstance, data: SpaceProps): Space = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/space", "wrapSpaceCollection")
-  @js.native
-  def wrapSpaceCollection(http: AxiosInstance, data: CollectionProp[SpaceProps]): Collection[Space, SpaceProps] = js.native
+  @scala.inline
+  def wrapSpace(http: AxiosInstance, data: SpaceProps): Space = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpace")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Space]
   
-  type Space = SpaceProps with DefaultElements[SpaceProps] with ContentfulSpaceAPI
+  @scala.inline
+  def wrapSpaceCollection(http: AxiosInstance, data: CollectionProp[SpaceProps]): Collection[Space, SpaceProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Space, SpaceProps]]
   
-  @js.native
+  type Space = SpaceProps & DefaultElements[SpaceProps] & ContentfulSpaceAPI
+  
   trait SpaceProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object SpaceProps {
     

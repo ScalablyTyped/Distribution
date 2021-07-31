@@ -2,20 +2,20 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnsupportedError extends Error {
+trait UnsupportedError
+  extends StObject
+     with Error {
   
   @JSName("name")
-  var name_UnsupportedError: typings.vimeoPlayer.vimeoPlayerStrings.UnsupportedError = js.native
+  var name_UnsupportedError: typings.vimeoPlayer.vimeoPlayerStrings.UnsupportedError
 }
 object UnsupportedError {
   
   @scala.inline
-  def apply(message: String, method: String, name: typings.vimeoPlayer.vimeoPlayerStrings.UnsupportedError): UnsupportedError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(message: String, method: String): UnsupportedError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "UnsupportedError")
     __obj.asInstanceOf[UnsupportedError]
   }
   

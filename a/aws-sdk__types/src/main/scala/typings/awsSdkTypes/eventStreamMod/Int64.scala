@@ -3,13 +3,11 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Int64 extends StObject {
   
-  val bytes: Uint8Array = js.native
+  val bytes: Uint8Array
 }
 object Int64 {
   

@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Templates extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Template = js.native
+  def Item(Index: js.Any): Template
   
-  def LoadBuildingBlocks(): Unit = js.native
+  def LoadBuildingBlocks(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Templates_typekey")
-  var WordDotTemplates_typekey: Templates = js.native
+  var WordDotTemplates_typekey: Templates
 }
 object Templates {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcInterfaceRequest extends StObject {
   
   /**
     * The name of the VPC Interface. This value must be unique within the current flow.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Role Arn MediaConnect can assumes to create ENIs in customer's account
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
   
   /**
     * Security Group IDs to be used on ENI.
     */
-  var SecurityGroupIds: listOfString = js.native
+  var SecurityGroupIds: listOfString
   
   /**
     * Subnet must be in the AZ of the Flow
     */
-  var SubnetId: string = js.native
+  var SubnetId: string
 }
 object VpcInterfaceRequest {
   

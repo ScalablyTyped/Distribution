@@ -3,13 +3,11 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `CreateSnapshot` method.
   */
-@js.native
 trait SchemaCreateSnapshotRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaCreateSnapshotRequest extends StObject {
     * href=&quot;https://cloud.google.com/pubsub/docs/labels&quot;&gt; Creating
     * and managing labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The subscription whose backlog the snapshot retains. Specifically, the
@@ -29,7 +27,7 @@ trait SchemaCreateSnapshotRequest extends StObject {
     * successful completion of the CreateSnapshot request. Format is
     * `projects/{project}/subscriptions/{sub}`.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateSnapshotRequest {
   

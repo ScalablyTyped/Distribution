@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteServiceResponse extends StObject {
   
   /**
     * The full description of the deleted service.
     */
-  var service: js.UndefOr[Service] = js.native
+  var service: js.UndefOr[Service] = js.undefined
 }
 object DeleteServiceResponse {
   

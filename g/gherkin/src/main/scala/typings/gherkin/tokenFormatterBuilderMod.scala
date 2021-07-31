@@ -3,31 +3,53 @@ package typings.gherkin
 import typings.gherkin.parserMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenFormatterBuilderMod {
   
   @JSImport("gherkin/dist/src/TokenFormatterBuilder", JSImport.Default)
   @js.native
-  class default () extends TokenFormatterBuilder
+  class default ()
+    extends StObject
+       with TokenFormatterBuilder {
+    
+    /* CompleteClass */
+    override def build(token: typings.gherkin.tokenMod.default): Unit = js.native
+    
+    /* CompleteClass */
+    override def endRule(ruleType: RuleType): Unit = js.native
+    
+    /* CompleteClass */
+    override def formatToken(token: typings.gherkin.tokenMod.default): String = js.native
+    
+    /* CompleteClass */
+    override def getResult(): String = js.native
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /* CompleteClass */
+    override def startRule(ruleType: RuleType): Unit = js.native
+    
+    /* CompleteClass */
+    var tokensText: js.Any = js.native
+  }
   
-  @js.native
   trait TokenFormatterBuilder extends StObject {
     
-    def build(token: typings.gherkin.tokenMod.default): Unit = js.native
+    def build(token: typings.gherkin.tokenMod.default): Unit
     
-    def endRule(ruleType: RuleType): Unit = js.native
+    def endRule(ruleType: RuleType): Unit
     
-    def formatToken(token: typings.gherkin.tokenMod.default): String = js.native
+    def formatToken(token: typings.gherkin.tokenMod.default): String
     
-    def getResult(): String = js.native
+    def getResult(): String
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def startRule(ruleType: RuleType): Unit = js.native
+    def startRule(ruleType: RuleType): Unit
     
-    var tokensText: js.Any = js.native
+    var tokensText: js.Any
   }
   object TokenFormatterBuilder {
     

@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration for exporting to Cloud Storage.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination extends StObject
     * path. The user is responsible for creating the Cloud Storage bucket
     * referenced in `uri_prefix`.
     */
-  var uriPrefix: js.UndefOr[String] = js.native
+  var uriPrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination {
   

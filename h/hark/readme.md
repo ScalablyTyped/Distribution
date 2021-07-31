@@ -11,8 +11,8 @@ Converts an audio stream to speech events in the browser
 | Full name          | hark |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 433699 |
+| # dependents       | 42 |
+| # downloads        | 617405 |
 | # stars            | 3 |
 
 ## Links

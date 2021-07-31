@@ -30,96 +30,94 @@ import typings.plotlyJs.plotlyJsStrings.top
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ColorBar> */
-@js.native
 trait PartialColorBar extends StObject {
   
-  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var borderwidth: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var borderwidth: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var dtick: js.UndefOr[DTickValue] = js.native
+  var dtick: js.UndefOr[DTickValue] = js.undefined
   
-  var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.native
+  var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.undefined
   
-  var len: js.UndefOr[Double] = js.native
+  var len: js.UndefOr[Double] = js.undefined
   
-  var lenmode: js.UndefOr[fraction | pixels] = js.native
+  var lenmode: js.UndefOr[fraction | pixels] = js.undefined
   
-  var nticks: js.UndefOr[Double] = js.native
+  var nticks: js.UndefOr[Double] = js.undefined
   
-  var outlinecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var outlinecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var outlinewidth: js.UndefOr[Double] = js.native
+  var outlinewidth: js.UndefOr[Double] = js.undefined
   
-  var separatethousands: js.UndefOr[Boolean] = js.native
+  var separatethousands: js.UndefOr[Boolean] = js.undefined
   
-  var showexponent: js.UndefOr[all | first | last | none] = js.native
+  var showexponent: js.UndefOr[all | first | last | none] = js.undefined
   
-  var showticklabels: js.UndefOr[Boolean] = js.native
+  var showticklabels: js.UndefOr[Boolean] = js.undefined
   
-  var showtickprefix: js.UndefOr[all | first | last | none] = js.native
+  var showtickprefix: js.UndefOr[all | first | last | none] = js.undefined
   
-  var showticksuffix: js.UndefOr[all | first | last | none] = js.native
+  var showticksuffix: js.UndefOr[all | first | last | none] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var thicknessmode: js.UndefOr[fraction | pixels] = js.native
+  var thicknessmode: js.UndefOr[fraction | pixels] = js.undefined
   
-  var tick0: js.UndefOr[Double | String] = js.native
+  var tick0: js.UndefOr[Double | String] = js.undefined
   
-  var tickangle: js.UndefOr[Double] = js.native
+  var tickangle: js.UndefOr[Double] = js.undefined
   
-  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var tickfont: js.UndefOr[typings.plotlyJs.mod.Font] = js.native
+  var tickfont: js.UndefOr[typings.plotlyJs.mod.Font] = js.undefined
   
-  var tickformat: js.UndefOr[String] = js.native
+  var tickformat: js.UndefOr[String] = js.undefined
   
-  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.native
+  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.undefined
   
-  var ticklen: js.UndefOr[Double] = js.native
+  var ticklen: js.UndefOr[Double] = js.undefined
   
-  var tickmode: js.UndefOr[auto | linear | array] = js.native
+  var tickmode: js.UndefOr[auto | linear | array] = js.undefined
   
-  var tickprefix: js.UndefOr[String] = js.native
+  var tickprefix: js.UndefOr[String] = js.undefined
   
-  var ticks: js.UndefOr[outside | inside | _empty] = js.native
+  var ticks: js.UndefOr[outside | inside | _empty] = js.undefined
   
-  var ticksuffix: js.UndefOr[String] = js.native
+  var ticksuffix: js.UndefOr[String] = js.undefined
   
-  var ticktext: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.native
+  var ticktext: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
-  var ticktextsrc: js.UndefOr[js.Any] = js.native
+  var ticktextsrc: js.UndefOr[js.Any] = js.undefined
   
-  var tickvals: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.native
+  var tickvals: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
-  var tickvalssrc: js.UndefOr[js.Any] = js.native
+  var tickvalssrc: js.UndefOr[js.Any] = js.undefined
   
-  var tickwidth: js.UndefOr[Double] = js.native
+  var tickwidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titlefont: js.UndefOr[typings.plotlyJs.mod.Font] = js.native
+  var titlefont: js.UndefOr[typings.plotlyJs.mod.Font] = js.undefined
   
-  var titleside: js.UndefOr[right | top | bottom] = js.native
+  var titleside: js.UndefOr[right | top | bottom] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xanchor: js.UndefOr[left | center | right] = js.native
+  var xanchor: js.UndefOr[left | center | right] = js.undefined
   
-  var xpad: js.UndefOr[Double] = js.native
+  var xpad: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yanchor: js.UndefOr[top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[top | middle | bottom] = js.undefined
   
-  var ypad: js.UndefOr[Double] = js.native
+  var ypad: js.UndefOr[Double] = js.undefined
 }
 object PartialColorBar {
   

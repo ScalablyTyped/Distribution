@@ -4,21 +4,19 @@ import typings.evernote.mod.Types.ServiceLevel
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoteStoreUrl extends StObject {
   
-  var noteStoreUrl: js.UndefOr[String] = js.native
+  var noteStoreUrl: js.UndefOr[String] = js.undefined
   
-  var serviceLevel: js.UndefOr[ServiceLevel] = js.native
+  var serviceLevel: js.UndefOr[ServiceLevel] = js.undefined
   
-  var userId: js.UndefOr[UserID] = js.native
+  var userId: js.UndefOr[UserID] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var webApiUrlPrefix: js.UndefOr[String] = js.native
+  var webApiUrlPrefix: js.UndefOr[String] = js.undefined
 }
 object NoteStoreUrl {
   

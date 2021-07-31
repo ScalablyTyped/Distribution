@@ -2,21 +2,19 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLObject extends StObject {
   
-  var attribute: js.UndefOr[Boolean] = js.native
+  var attribute: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var wrapped: js.UndefOr[Boolean] = js.native
+  var wrapped: js.UndefOr[Boolean] = js.undefined
 }
 object XMLObject {
   

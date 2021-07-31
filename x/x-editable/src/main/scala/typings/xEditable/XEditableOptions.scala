@@ -2,65 +2,63 @@ package typings.xEditable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XEditableOptions extends StObject {
   
-  var ajaxOptions: js.UndefOr[js.Any] = js.native
+  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   
-  var anim: js.UndefOr[String] = js.native
+  var anim: js.UndefOr[String] = js.undefined
   
-  var autotext: js.UndefOr[String] = js.native
+  var autotext: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var display: js.UndefOr[js.Any] = js.native
+  var display: js.UndefOr[js.Any] = js.undefined
   
-  var emptyclass: js.UndefOr[String] = js.native
+  var emptyclass: js.UndefOr[String] = js.undefined
   
-  var emptytext: js.UndefOr[String] = js.native
+  var emptytext: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var highlight: js.UndefOr[js.Any] = js.native
+  var highlight: js.UndefOr[js.Any] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onblur: js.UndefOr[String] = js.native
+  var onblur: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
-  var pk: js.UndefOr[js.Any] = js.native
+  var pk: js.UndefOr[js.Any] = js.undefined
   
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
-  var savenochange: js.UndefOr[Boolean] = js.native
+  var savenochange: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var send: js.UndefOr[String] = js.native
+  var send: js.UndefOr[String] = js.undefined
   
-  var showbuttons: js.UndefOr[js.Any] = js.native
+  var showbuttons: js.UndefOr[js.Any] = js.undefined
   
-  var success: js.UndefOr[js.Any] = js.native
+  var success: js.UndefOr[js.Any] = js.undefined
   
-  var toggle: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var unsavedclass: js.UndefOr[String] = js.native
+  var unsavedclass: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var validate: js.UndefOr[js.Any] = js.native
+  var validate: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object XEditableOptions {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs")
@@ -32,7 +31,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceCatalogsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceCatalogsCreate,
@@ -68,7 +67,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def delete(params: ParamsResourceCatalogsDelete): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def delete(
     params: ParamsResourceCatalogsDelete,
@@ -100,7 +99,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def get(params: ParamsResourceCatalogsGet): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def get(
     params: ParamsResourceCatalogsGet,
@@ -132,7 +131,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaGoogleIamV1Policy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(params: ParamsResourceCatalogsGetiampolicy): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(
     params: ParamsResourceCatalogsGetiampolicy,
@@ -167,7 +166,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse] = js.native
   def list(params: ParamsResourceCatalogsList): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse] = js.native
   def list(
     params: ParamsResourceCatalogsList,
@@ -201,7 +200,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def patch(params: ParamsResourceCatalogsPatch): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def patch(
     params: ParamsResourceCatalogsPatch,
@@ -236,7 +235,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaGoogleIamV1Policy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(params: ParamsResourceCatalogsSetiampolicy): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(
     params: ParamsResourceCatalogsSetiampolicy,
@@ -269,7 +268,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceCatalogsTestiampermissions): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceCatalogsTestiampermissions,
@@ -302,7 +301,7 @@ class ResourceCatalogs protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def undelete(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def undelete(params: ParamsResourceCatalogsUndelete): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog] = js.native
   def undelete(
     params: ParamsResourceCatalogsUndelete,

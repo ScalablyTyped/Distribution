@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Report extends StObject {
   
   /** The column headers. */
-  var columnHeader: js.UndefOr[ColumnHeader] = js.native
+  var columnHeader: js.UndefOr[ColumnHeader] = js.undefined
   
   /** Response data. */
-  var data: js.UndefOr[ReportData] = js.native
+  var data: js.UndefOr[ReportData] = js.undefined
   
   /** Page token to retrieve the next page of results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object Report {
   

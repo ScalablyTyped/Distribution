@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvalidFilterClause extends StObject {
   
-  var invalidFilterClause: scala.Double = js.native
+  var invalidFilterClause: scala.Double
   
-  var oK: scala.Double = js.native
+  var oK: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
 }
 object InvalidFilterClause {
   

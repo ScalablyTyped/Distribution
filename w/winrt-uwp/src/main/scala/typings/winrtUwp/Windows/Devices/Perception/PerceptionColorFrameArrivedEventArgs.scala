@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a color frame arrived event. */
-@js.native
 trait PerceptionColorFrameArrivedEventArgs extends StObject {
   
   /** Gets the relative time of this frame. */
-  var relativeTime: Double = js.native
+  var relativeTime: Double
   
   /**
     * Attempts to open the color frame that has arrived.
     * @return If the attempt is successful, this method returns the newly-arrived color frame. If the attempt is unsuccessful, this value is unchanged.
     */
-  def tryOpenFrame(): PerceptionColorFrame = js.native
+  def tryOpenFrame(): PerceptionColorFrame
 }
 object PerceptionColorFrameArrivedEventArgs {
   

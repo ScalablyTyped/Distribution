@@ -2,16 +2,14 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/artist/relationships
-@js.native
 trait ArtistRelationships extends StObject {
   
-  var albums: Relationship[Album] = js.native
+  var albums: Relationship[Album]
   
-  var genres: js.UndefOr[Relationship[Genre]] = js.native
+  var genres: js.UndefOr[Relationship[Genre]] = js.undefined
 }
 object ArtistRelationships {
   

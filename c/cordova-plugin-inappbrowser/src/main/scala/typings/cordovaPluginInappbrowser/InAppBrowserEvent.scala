@@ -3,11 +3,12 @@ package typings.cordovaPluginInappbrowser
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InAppBrowserEvent extends Event {
+trait InAppBrowserEvent
+  extends StObject
+     with Event {
   
   /** the error code, only in the case of loaderror. */
   var code: Double = js.native

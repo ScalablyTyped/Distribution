@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change cell shading in the selected table elements.
   */
-@js.native
-trait ChangeTableCellShadingCommand extends CommandBase {
+trait ChangeTableCellShadingCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeTableCellShadingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param color A string specifying the color of the selected cells' shading. May be specified as a color name or a hex color value.
     */
-  def execute(color: String): Boolean = js.native
+  def execute(color: String): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[String] = js.native
+  def getState(): CommandState[String]
 }
 object ChangeTableCellShadingCommand {
   

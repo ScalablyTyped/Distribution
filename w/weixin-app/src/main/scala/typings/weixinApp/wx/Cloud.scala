@@ -3,28 +3,26 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Env
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 云开发
 // 文档：https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html
-@js.native
 trait Cloud extends StObject {
   
   /**
     * 接受一个 name 参数，指定需引用的集合名称
     */
-  def collection(name: String): js.Object = js.native
+  def collection(name: String): js.Object
   
   /**
     * 接受一个可选对象参数 env：环境 ID，获取数据库的引用
     */
-  def database(options: Env): js.Object = js.native
+  def database(options: Env): js.Object
   
   /**
     * 初始化方法（全局只需一次）
     */
-  def init(options: InitCloudOptions): Unit = js.native
+  def init(options: InitCloudOptions): Unit
 }
 object Cloud {
   

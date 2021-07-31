@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Broadcast extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val AttendeeUrl: String = js.native
+  val AttendeeUrl: String
   
-  def End(): Unit = js.native
+  def End(): Unit
   
-  val IsBroadcasting: Boolean = js.native
+  val IsBroadcasting: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Broadcast_typekey")
-  var PowerPointDotBroadcast_typekey: Broadcast = js.native
+  var PowerPointDotBroadcast_typekey: Broadcast
   
-  def Start(serverUrl: String): Unit = js.native
+  def Start(serverUrl: String): Unit
 }
 object Broadcast {
   

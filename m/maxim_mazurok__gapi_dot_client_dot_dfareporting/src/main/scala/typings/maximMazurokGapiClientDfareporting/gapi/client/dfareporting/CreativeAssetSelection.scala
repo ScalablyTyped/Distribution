@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeAssetSelection extends StObject {
   
   /** A creativeAssets[].id. This should refer to one of the parent assets in this creative, and will be served if none of the rules match. This is a required field. */
-  var defaultAssetId: js.UndefOr[String] = js.native
+  var defaultAssetId: js.UndefOr[String] = js.undefined
   
   /**
     * Rules determine which asset will be served to a viewer. Rules will be evaluated in the order in which they are stored in this list. This list must contain at least one rule.
     * Applicable to INSTREAM_VIDEO creatives.
     */
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
 }
 object CreativeAssetSelection {
   

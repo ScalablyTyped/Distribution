@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1ExportDocumentsResponse extends StObject {
   
   /** Location of the output files. This can be used to begin an import into Cloud Firestore (this project or another project) after the operation completes successfully. */
-  var outputUriPrefix: js.UndefOr[String] = js.native
+  var outputUriPrefix: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1ExportDocumentsResponse {
   

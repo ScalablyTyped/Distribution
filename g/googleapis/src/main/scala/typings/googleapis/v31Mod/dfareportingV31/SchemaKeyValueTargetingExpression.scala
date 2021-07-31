@@ -2,19 +2,17 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key Value Targeting Expression.
   */
-@js.native
 trait SchemaKeyValueTargetingExpression extends StObject {
   
   /**
     * Keyword expression being targeted by the ad.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
 }
 object SchemaKeyValueTargetingExpression {
   

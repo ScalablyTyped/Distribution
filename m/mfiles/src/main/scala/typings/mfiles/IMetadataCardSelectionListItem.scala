@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardSelectionListItem extends StObject {
   
-  val ChildItems: js.Any = js.native
+  val ChildItems: js.Any
   
-  val HasParent: Boolean = js.native
+  val HasParent: Boolean
   
-  val ParentID: Double = js.native
+  val ParentID: Double
   
-  val Selectable: Boolean = js.native
+  val Selectable: Boolean
   
-  val Value: js.Any = js.native
+  val Value: js.Any
 }
 object IMetadataCardSelectionListItem {
   

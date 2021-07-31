@@ -3,30 +3,28 @@ package typings.formatjsEcma402Abstract.anon
 import typings.formatjsEcma402Abstract.typesDateTimeMod.RangePatterns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns> */
-@js.native
 trait RecordTABLE2defaultRangePAmpm extends StObject {
   
-  var default: RangePatterns = js.native
+  var default: RangePatterns
   
-  var ampm: RangePatterns = js.native
+  var ampm: RangePatterns
   
-  var day: RangePatterns = js.native
+  var day: RangePatterns
   
-  var era: RangePatterns = js.native
+  var era: RangePatterns
   
-  var hour: RangePatterns = js.native
+  var hour: RangePatterns
   
-  var minute: RangePatterns = js.native
+  var minute: RangePatterns
   
-  var month: RangePatterns = js.native
+  var month: RangePatterns
   
-  var second: RangePatterns = js.native
+  var second: RangePatterns
   
-  var year: RangePatterns = js.native
+  var year: RangePatterns
 }
 object RecordTABLE2defaultRangePAmpm {
   

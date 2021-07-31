@@ -3,71 +3,72 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlWriter
-  extends typings.senchaTouch.Ext.data.writer.IWriter {
+  extends StObject
+     with typings.senchaTouch.Ext.data.writer.IWriter {
   
   /** [Config Option] (String) */
-  var defaultDocumentRoot: js.UndefOr[String] = js.native
+  var defaultDocumentRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var documentRoot: js.UndefOr[String] = js.native
+  var documentRoot: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of defaultDocumentRoot
     * @returns String
     */
-  var getDefaultDocumentRoot: js.UndefOr[js.Function0[String]] = js.native
+  var getDefaultDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of documentRoot
     * @returns String
     */
-  var getDocumentRoot: js.UndefOr[js.Function0[String]] = js.native
+  var getDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of header
     * @returns String
     */
-  var getHeader: js.UndefOr[js.Function0[String]] = js.native
+  var getHeader: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of record
     * @returns String
     */
-  var getRecord: js.UndefOr[js.Function0[String]] = js.native
+  var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var record: js.UndefOr[String] = js.native
+  var record: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of defaultDocumentRoot
     * @param defaultDocumentRoot String The new value.
     */
-  var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[String], Unit]] = js.native
+  var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of documentRoot
     * @param documentRoot String The new value.
     */
-  var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[String], Unit]] = js.native
+  var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of header
     * @param header String The new value.
     */
-  var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[String], Unit]] = js.native
+  var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of record
     * @param record String The new value.
     */
-  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.native
+  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method]
     * @param request Object
     * @param data Array
     * @returns Object
     */
-  var writeRecords: js.UndefOr[js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], _]] = js.native
+  var writeRecords: js.UndefOr[
+    js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], js.Any]
+  ] = js.undefined
 }
 object IXmlWriter {
   
@@ -153,7 +154,7 @@ object IXmlWriter {
     def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
     
     @scala.inline
-    def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => _): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
+    def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWriteRecordsUndefined: Self = StObject.set(x, "writeRecords", js.undefined)

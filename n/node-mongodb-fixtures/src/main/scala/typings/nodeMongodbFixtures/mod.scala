@@ -3,7 +3,6 @@ package typings.nodeMongodbFixtures
 import typings.mongodb.mod.MongoClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,9 @@ object mod {
     */
   @JSImport("node-mongodb-fixtures", JSImport.Namespace)
   @js.native
-  class ^ () extends Fixtures {
+  class ^ ()
+    extends StObject
+       with Fixtures {
     def this(options: Options) = this()
   }
   
@@ -39,7 +40,7 @@ object mod {
       * @param dbName Identifies a database to switch to. Useful when the db in the connection string differs from the db you want to connect to.
       */
     def connect(uri: String): js.Promise[this.type] = js.native
-    def connect(uri: String, options: js.UndefOr[scala.Nothing], dbName: String): js.Promise[this.type] = js.native
+    def connect(uri: String, options: Unit, dbName: String): js.Promise[this.type] = js.native
     def connect(uri: String, options: MongoClientOptions): js.Promise[this.type] = js.native
     def connect(uri: String, options: MongoClientOptions, dbName: String): js.Promise[this.type] = js.native
     
@@ -50,23 +51,22 @@ object mod {
     def unload(): js.Promise[this.type] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Specifiy the fixtures directory or default to `./fixtures`.
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * Filter the fixtures present in the directory with a regex pattern.
       */
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     /**
       * Specify `true` to mute the log output or default to `false`.
       */
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

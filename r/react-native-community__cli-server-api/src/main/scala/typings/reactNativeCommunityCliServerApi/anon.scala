@@ -23,7 +23,6 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -41,17 +40,16 @@ object anon {
   trait Broadcast extends StObject {
     
     def broadcast(method: String): Unit = js.native
-    def broadcast(method: String, params: Record[String, _]): Unit = js.native
+    def broadcast(method: String, params: Record[String, js.Any]): Unit = js.native
   }
   
-  @js.native
   trait DebuggerProxy extends StObject {
     
-    var debuggerProxy: IsDebuggerConnected = js.native
+    var debuggerProxy: IsDebuggerConnected
     
-    var eventsSocket: ReportEvent = js.native
+    var eventsSocket: ReportEvent
     
-    var messageSocket: Broadcast = js.native
+    var messageSocket: Broadcast
   }
   object DebuggerProxy {
     
@@ -339,12 +337,11 @@ object anon {
     def wrap(oldStream: ReadableStream): this.type = js.native
   }
   
-  @js.native
   trait IsDebuggerConnected extends StObject {
     
-    def isDebuggerConnected(): Boolean = js.native
+    def isDebuggerConnected(): Boolean
     
-    var server: typings.ws.mod.Server = js.native
+    var server: typings.ws.mod.Server
   }
   object IsDebuggerConnected {
     
@@ -365,10 +362,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ReportEvent extends StObject {
     
-    def reportEvent(event: js.Any): Unit = js.native
+    def reportEvent(event: js.Any): Unit
   }
   object ReportEvent {
     

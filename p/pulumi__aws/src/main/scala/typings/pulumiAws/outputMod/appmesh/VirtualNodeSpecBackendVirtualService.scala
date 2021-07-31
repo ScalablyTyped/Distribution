@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecBackendVirtualService extends StObject {
   
   /**
     * The client policy for the backend.
     */
-  var clientPolicy: js.UndefOr[VirtualNodeSpecBackendVirtualServiceClientPolicy] = js.native
+  var clientPolicy: js.UndefOr[VirtualNodeSpecBackendVirtualServiceClientPolicy] = js.undefined
   
   /**
     * The name of the virtual service that is acting as a virtual node backend. Must be between 1 and 255 characters in length.
     */
-  var virtualServiceName: String = js.native
+  var virtualServiceName: String
 }
 object VirtualNodeSpecBackendVirtualService {
   

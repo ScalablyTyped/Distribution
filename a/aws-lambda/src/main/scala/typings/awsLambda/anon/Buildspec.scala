@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildSourceLocationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buildspec extends StObject {
   
-  var buildspec: String = js.native
+  var buildspec: String
   
-  var location: String = js.native
+  var location: String
   
-  var `type`: CodeBuildSourceLocationType = js.native
+  var `type`: CodeBuildSourceLocationType
 }
 object Buildspec {
   

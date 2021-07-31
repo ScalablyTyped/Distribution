@@ -4,7 +4,6 @@ import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Series")
@@ -96,112 +95,50 @@ class Series protected () extends StObject {
     * @fires Highcharts.Series#addPoint
     */
   def addPoint(options: PointOptionsType): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], shift: Boolean): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], shift: Boolean, animation: Boolean): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: Boolean,
-    animation: Boolean,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    shift: Boolean,
-    animation: PartialAnimationOptionsOb,
-    withEvent: Boolean
-  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: Boolean,
-    shift: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(options: PointOptionsType, redraw: Boolean, shift: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: Boolean,
-    shift: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    withEvent: Boolean
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: Boolean,
-    shift: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: Boolean,
-    shift: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    withEvent: Boolean
-  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean): Unit = js.native
-  def addPoint(
-    options: PointOptionsType,
-    redraw: Boolean,
-    shift: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    withEvent: Boolean
-  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Unit, withEvent: Boolean): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def addPoint(
     options: PointOptionsType,
     redraw: Boolean,
     shift: Boolean,
+    animation: PartialAnimationOptionsOb,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Unit, animation: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Unit, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Unit, animation: Unit, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: Unit,
+    animation: PartialAnimationOptionsOb,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Boolean, animation: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Boolean, animation: Unit, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Unit,
+    shift: Boolean,
+    animation: PartialAnimationOptionsOb,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Unit, animation: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Unit, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Unit, animation: Unit, withEvent: Boolean): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Unit, shift: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Unit,
+    shift: Unit,
     animation: PartialAnimationOptionsOb,
     withEvent: Boolean
   ): Unit = js.native
@@ -332,13 +269,13 @@ class Series protected () extends StObject {
     * @return The valid points.
     */
   def getValidPoints(): js.Array[Point] = js.native
-  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: js.UndefOr[scala.Nothing], allowNull: Boolean): js.Array[Point] = js.native
-  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: Boolean): js.Array[Point] = js.native
-  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point]): js.Array[Point] = js.native
-  def getValidPoints(points: js.Array[Point], insideOnly: js.UndefOr[scala.Nothing], allowNull: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: js.Array[Point], insideOnly: Unit, allowNull: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: Unit, insideOnly: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: Unit, insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: Unit, insideOnly: Unit, allowNull: Boolean): js.Array[Point] = js.native
   
   /**
     * SVG element of line-based charts. Can be used for styling purposes. If
@@ -452,17 +389,17 @@ class Series protected () extends StObject {
     * @fires Highcharts.Series#remove
     */
   def remove(): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean, withEvent: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb, withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
-  def remove(redraw: Boolean, animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def remove(redraw: Boolean, animation: Unit, withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def remove(redraw: Boolean, animation: PartialAnimationOptionsOb, withEvent: Boolean): Unit = js.native
+  def remove(redraw: Unit, animation: Boolean): Unit = js.native
+  def remove(redraw: Unit, animation: Boolean, withEvent: Boolean): Unit = js.native
+  def remove(redraw: Unit, animation: Unit, withEvent: Boolean): Unit = js.native
+  def remove(redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def remove(redraw: Unit, animation: PartialAnimationOptionsOb, withEvent: Boolean): Unit = js.native
   
   /**
     * Remove a point from the series. Unlike the Highcharts.Point#remove
@@ -485,11 +422,11 @@ class Series protected () extends StObject {
     * @fires Highcharts.Point#remove
     */
   def removePoint(i: Double): Unit = js.native
-  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def removePoint(i: Double, redraw: Boolean): Unit = js.native
   def removePoint(i: Double, redraw: Boolean, animation: Boolean): Unit = js.native
   def removePoint(i: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def removePoint(i: Double, redraw: Unit, animation: Boolean): Unit = js.native
+  def removePoint(i: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
   /**
     * Render the graph and markers. Called internally when first rendering and
@@ -567,43 +504,24 @@ class Series protected () extends StObject {
     *        prevent.
     */
   def setData(data: js.Array[PointOptionsType]): Unit = js.native
-  def setData(
-    data: js.Array[PointOptionsType],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    updatePoints: Boolean
-  ): Unit = js.native
-  def setData(data: js.Array[PointOptionsType], redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def setData(
-    data: js.Array[PointOptionsType],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    updatePoints: Boolean
-  ): Unit = js.native
-  def setData(
-    data: js.Array[PointOptionsType],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setData(
-    data: js.Array[PointOptionsType],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    updatePoints: Boolean
-  ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean): Unit = js.native
-  def setData(
-    data: js.Array[PointOptionsType],
-    redraw: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    updatePoints: Boolean
-  ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean, updatePoints: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Unit, updatePoints: Boolean): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setData(
     data: js.Array[PointOptionsType],
     redraw: Boolean,
+    animation: PartialAnimationOptionsOb,
+    updatePoints: Boolean
+  ): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Unit, animation: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Unit, animation: Boolean, updatePoints: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Unit, animation: Unit, updatePoints: Boolean): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: Unit,
     animation: PartialAnimationOptionsOb,
     updatePoints: Boolean
   ): Unit = js.native
@@ -622,7 +540,7 @@ class Series protected () extends StObject {
     *        Determines if state should be inherited by points too.
     */
   def setState(): Unit = js.native
-  def setState(state: js.UndefOr[scala.Nothing], inherit: Boolean): Unit = js.native
+  def setState(state: Unit, inherit: Boolean): Unit = js.native
   def setState(state: _empty): Unit = js.native
   def setState(state: _empty, inherit: Boolean): Unit = js.native
   def setState(state: SeriesStateValue): Unit = js.native
@@ -644,9 +562,9 @@ class Series protected () extends StObject {
     * @fires Highcharts.Series#show
     */
   def setVisible(): Unit = js.native
-  def setVisible(visible: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
   def setVisible(visible: Boolean): Unit = js.native
   def setVisible(visible: Boolean, redraw: Boolean): Unit = js.native
+  def setVisible(visible: Unit, redraw: Boolean): Unit = js.native
   
   /**
     * Show the series if hidden.

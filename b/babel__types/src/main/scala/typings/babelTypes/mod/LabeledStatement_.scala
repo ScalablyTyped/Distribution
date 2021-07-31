@@ -3,28 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.LabeledStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait LabeledStatement_
-  extends Statement
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait LabeledStatement_
+  extends StObject
+     with BaseNode
+     with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var label: Identifier_ = js.native
+  var label: Identifier_
   
   @JSName("type")
-  var type_LabeledStatement_ : LabeledStatement = js.native
+  var type_LabeledStatement_ : LabeledStatement
 }
 object LabeledStatement_ {
   
   @scala.inline
-  def apply(body: Statement, label: Identifier_, `type`: LabeledStatement): LabeledStatement_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: Statement, label: Identifier_): LabeledStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("LabeledStatement")
     __obj.asInstanceOf[LabeledStatement_]
   }
   

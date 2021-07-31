@@ -3,31 +3,30 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.BlockStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait BlockStatement_
-  extends Block
+- typings.babelTypes.mod._Node because Already inherited */ trait BlockStatement_
+  extends StObject
      with BaseNode
+     with Block
      with BlockParent
      with Scopable
      with Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var directives: js.Array[Directive_] = js.native
+  var directives: js.Array[Directive_]
   
   @JSName("type")
-  var type_BlockStatement_ : BlockStatement = js.native
+  var type_BlockStatement_ : BlockStatement
 }
 object BlockStatement_ {
   
   @scala.inline
-  def apply(body: js.Array[Statement], directives: js.Array[Directive_], `type`: BlockStatement): BlockStatement_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: js.Array[Statement], directives: js.Array[Directive_]): BlockStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[BlockStatement_]
   }
   

@@ -2,25 +2,23 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List reports response.
   */
-@js.native
 trait SchemaListReportsResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;doubleclickbidmanager#listReportsResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieved reports.
     */
-  var reports: js.UndefOr[js.Array[SchemaReport]] = js.native
+  var reports: js.UndefOr[js.Array[SchemaReport]] = js.undefined
 }
 object SchemaListReportsResponse {
   

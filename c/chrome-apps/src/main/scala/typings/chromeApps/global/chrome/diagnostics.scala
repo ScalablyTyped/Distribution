@@ -2,7 +2,6 @@ package typings.chromeApps.global.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -16,8 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object diagnostics {
   
-  /** @todo TODO PROPER DOCS */
-  @JSGlobal("chrome.diagnostics.sendPacket")
+  @JSGlobal("chrome.diagnostics")
   @js.native
-  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /** @todo TODO PROPER DOCS */
+  @scala.inline
+  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

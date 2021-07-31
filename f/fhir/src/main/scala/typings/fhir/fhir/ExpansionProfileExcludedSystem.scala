@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Systems/Versions to be exclude
   */
-@js.native
-trait ExpansionProfileExcludedSystem extends BackboneElement {
+trait ExpansionProfileExcludedSystem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * The specific code system to be excluded
     */
-  var system: uri = js.native
+  var system: uri
   
   /**
     * Specific version of the code system referred to
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ExpansionProfileExcludedSystem {
   

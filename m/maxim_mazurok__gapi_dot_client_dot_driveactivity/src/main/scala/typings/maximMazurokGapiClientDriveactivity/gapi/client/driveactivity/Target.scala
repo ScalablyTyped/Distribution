@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
   /** The target is a shared drive. */
-  var drive: js.UndefOr[Drive] = js.native
+  var drive: js.UndefOr[Drive] = js.undefined
   
   /** The target is a Drive item. */
-  var driveItem: js.UndefOr[DriveItem] = js.native
+  var driveItem: js.UndefOr[DriveItem] = js.undefined
   
   /** The target is a comment on a Drive file. */
-  var fileComment: js.UndefOr[FileComment] = js.native
+  var fileComment: js.UndefOr[FileComment] = js.undefined
   
   /** This field is deprecated; please use the `drive` field instead. */
-  var teamDrive: js.UndefOr[TeamDrive] = js.native
+  var teamDrive: js.UndefOr[TeamDrive] = js.undefined
 }
 object Target {
   

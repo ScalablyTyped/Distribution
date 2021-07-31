@@ -2,21 +2,19 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AckBatchOptions extends StObject {
   
-  var noAckBatchAge: Double | Null = js.native
+  var noAckBatchAge: Double | Null
   
-  var noAckBatchSize: Double | Null = js.native
+  var noAckBatchSize: Double | Null
 }
 object AckBatchOptions {
   
   @scala.inline
   def apply(): AckBatchOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(noAckBatchAge = null, noAckBatchSize = null)
     __obj.asInstanceOf[AckBatchOptions]
   }
   

@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeconfigV1Mod {
@@ -49,7 +48,7 @@ object runtimeconfigV1Mod {
         */
       def cancel(): GaxiosPromise[SchemaEmpty] = js.native
       def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-      def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+      def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
       def cancel(params: ParamsResourceOperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
       def cancel(params: ParamsResourceOperationsCancel, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
       def cancel(
@@ -83,7 +82,7 @@ object runtimeconfigV1Mod {
         */
       def delete(): GaxiosPromise[SchemaEmpty] = js.native
       def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-      def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+      def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
       def delete(params: ParamsResourceOperationsDelete): GaxiosPromise[SchemaEmpty] = js.native
       def delete(params: ParamsResourceOperationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
       def delete(
@@ -123,7 +122,7 @@ object runtimeconfigV1Mod {
         */
       def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
       def list(params: ParamsResourceOperationsList): GaxiosPromise[SchemaListOperationsResponse] = js.native
       def list(params: ParamsResourceOperationsList, callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
       def list(
@@ -168,16 +167,17 @@ object runtimeconfigV1Mod {
       var operations: ResourceOperations = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -189,23 +189,24 @@ object runtimeconfigV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceOperationsCancel extends StandardParameters {
+    trait ParamsResourceOperationsCancel
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The name of the operation resource to be cancelled.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaCancelOperationRequest] = js.native
+      var requestBody: js.UndefOr[SchemaCancelOperationRequest] = js.undefined
     }
     object ParamsResourceOperationsCancel {
       
@@ -238,18 +239,19 @@ object runtimeconfigV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceOperationsDelete extends StandardParameters {
+    trait ParamsResourceOperationsDelete
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The name of the operation resource to be deleted.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceOperationsDelete {
       
@@ -276,33 +278,34 @@ object runtimeconfigV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceOperationsList extends StandardParameters {
+    trait ParamsResourceOperationsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The standard list filter.
         */
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the operation's parent resource.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The standard list page size.
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
         * The standard list page token.
         */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceOperationsList {
       
@@ -350,7 +353,6 @@ object runtimeconfigV1Mod {
     /**
       * The request message for Operations.CancelOperation.
       */
-    @js.native
     trait SchemaCancelOperationRequest extends StObject
     
     /**
@@ -360,24 +362,22 @@ object runtimeconfigV1Mod {
       * Bar(google.protobuf.Empty) returns (google.protobuf.Empty);     }  The JSON
       * representation for `Empty` is empty JSON object `{}`.
       */
-    @js.native
     trait SchemaEmpty extends StObject
     
     /**
       * The response message for Operations.ListOperations.
       */
-    @js.native
     trait SchemaListOperationsResponse extends StObject {
       
       /**
         * The standard List next-page token.
         */
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
       /**
         * A list of operations that matches the specified filter in the request.
         */
-      var operations: js.UndefOr[js.Array[SchemaOperation]] = js.native
+      var operations: js.UndefOr[js.Array[SchemaOperation]] = js.undefined
     }
     object SchemaListOperationsResponse {
       
@@ -411,7 +411,6 @@ object runtimeconfigV1Mod {
       * This resource represents a long-running operation that is the result of a
       * network API call.
       */
-    @js.native
     trait SchemaOperation extends StObject {
       
       /**
@@ -419,12 +418,12 @@ object runtimeconfigV1Mod {
         * `true`, the operation is completed, and either `error` or `response` is
         * available.
         */
-      var done: js.UndefOr[Boolean] = js.native
+      var done: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The error result of the operation in case of failure or cancellation.
         */
-      var error: js.UndefOr[SchemaStatus] = js.native
+      var error: js.UndefOr[SchemaStatus] = js.undefined
       
       /**
         * Service-specific metadata associated with the operation.  It typically
@@ -432,14 +431,14 @@ object runtimeconfigV1Mod {
         * Some services might not provide such metadata.  Any method that returns a
         * long-running operation should document the metadata type, if any.
         */
-      var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
       
       /**
         * The server-assigned name, which is only unique within the same service
         * that originally returns it. If you use the default HTTP mapping, the
         * `name` should have the format of `operations/some/unique/name`.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The normal response of the operation in case of success.  If the original
@@ -450,7 +449,7 @@ object runtimeconfigV1Mod {
         * the original method name.  For example, if the original method name is
         * `TakeSnapshot()`, the inferred response type is `TakeSnapshotResponse`.
         */
-      var response: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var response: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object SchemaOperation {
       
@@ -531,26 +530,25 @@ object runtimeconfigV1Mod {
       * logs, the message `Status` could     be used directly after any stripping
       * needed for security/privacy reasons.
       */
-    @js.native
     trait SchemaStatus extends StObject {
       
       /**
         * The status code, which should be an enum value of google.rpc.Code.
         */
-      var code: js.UndefOr[Double] = js.native
+      var code: js.UndefOr[Double] = js.undefined
       
       /**
         * A list of messages that carry the error details.  There is a common set
         * of message types for APIs to use.
         */
-      var details: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+      var details: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
       
       /**
         * A developer-facing error message, which should be in English. Any
         * user-facing error message should be localized and sent in the
         * google.rpc.Status.details field, or localized by the client.
         */
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object SchemaStatus {
       
@@ -570,7 +568,7 @@ object runtimeconfigV1Mod {
         def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
         
         @scala.inline
-        def setDetails(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        def setDetails(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
@@ -586,68 +584,67 @@ object runtimeconfigV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

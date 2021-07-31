@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com::sun::star::linguistic2::LinguServiceEvents.
   * @see com.sun.star.linguistic2.XLinguServiceManager
   */
-@js.native
-trait XLinguServiceEventListener extends XEventListener {
+trait XLinguServiceEventListener
+  extends StObject
+     with XEventListener {
   
   /** @param aLngSvcEvent the event the listener will be informed about. */
-  def processLinguServiceEvent(aLngSvcEvent: LinguServiceEvent): Unit = js.native
+  def processLinguServiceEvent(aLngSvcEvent: LinguServiceEvent): Unit
 }
 object XLinguServiceEventListener {
   

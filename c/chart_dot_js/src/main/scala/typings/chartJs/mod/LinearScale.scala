@@ -2,14 +2,14 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinearScale extends ChartScales {
+trait LinearScale
+  extends StObject
+     with ChartScales {
   
   @JSName("ticks")
-  var ticks_LinearScale: js.UndefOr[LinearTickOptions] = js.native
+  var ticks_LinearScale: js.UndefOr[LinearTickOptions] = js.undefined
 }
 object LinearScale {
   

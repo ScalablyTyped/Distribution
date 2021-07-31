@@ -11,8 +11,8 @@ Convert objects into directory structures and back again
 | Full name          | fixturify |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 9 |
-| # downloads        | 5028778 |
+| # dependents       | 10 |
+| # downloads        | 8216488 |
 | # stars            | 0 |
 
 ## Links

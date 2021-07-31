@@ -2,16 +2,14 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResolverRuleResponse extends StObject {
   
   /**
     * The response to an UpdateResolverRule request.
     */
-  var ResolverRule: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverRule] = js.native
+  var ResolverRule: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverRule] = js.undefined
 }
 object UpdateResolverRuleResponse {
   

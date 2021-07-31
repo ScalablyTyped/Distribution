@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobListMod {
@@ -27,7 +26,7 @@ object jobListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: JobListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: JobListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object jobListMod {
   /* static members */
   object JobList {
     
+    @JSImport("@pulumi/kubernetes/batch/v1/jobList", "JobList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing JobList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object jobListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/batch/v1/jobList", "JobList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): JobList = js.native
-    @JSImport("@pulumi/kubernetes/batch/v1/jobList", "JobList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): JobList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): JobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): JobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobList]
     
     /**
       * Returns true if the given object is an instance of JobList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/batch/v1/jobList", "JobList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean]
   }
   
-  @js.native
   trait JobListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[batchSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[batchSlashv1]] = js.undefined
     
     /**
       * items is the list of Jobs.
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.batch.v1.Job]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.batch.v1.Job]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.JobList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.JobList]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object JobListArgs {
     

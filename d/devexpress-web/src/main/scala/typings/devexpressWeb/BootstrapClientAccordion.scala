@@ -2,26 +2,26 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapAccordion control.
   */
-@js.native
-trait BootstrapClientAccordion extends ASPxClientNavBar {
+trait BootstrapClientAccordion
+  extends StObject
+     with ASPxClientNavBar {
   
   /**
     * Makes the specified group active.
     * @param group A BootstrapClientAccordionGroup object that specifies the active group.
     */
-  def SetActiveGroup(group: BootstrapClientAccordionGroup): Unit = js.native
+  def SetActiveGroup(group: BootstrapClientAccordionGroup): Unit
   
   /**
     * Selects the specified item within the Accordion control on the client side.
     * @param item A BootstrapClientAccordionItem object specifying the item to select.
     */
-  def SetSelectedItem(item: BootstrapClientAccordionItem): Unit = js.native
+  def SetSelectedItem(item: BootstrapClientAccordionItem): Unit
 }
 object BootstrapClientAccordion {
   

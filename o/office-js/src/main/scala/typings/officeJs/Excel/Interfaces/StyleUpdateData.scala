@@ -18,11 +18,9 @@ import typings.officeJs.officeJsStrings.RightToLeft
 import typings.officeJs.officeJsStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
-@js.native
 trait StyleUpdateData extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var borders: js.UndefOr[RangeBorderCollectionUpdateData] = js.native
+  var borders: js.UndefOr[RangeBorderCollectionUpdateData] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var fill: js.UndefOr[RangeFillUpdateData] = js.native
+  var fill: js.UndefOr[RangeFillUpdateData] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var font: js.UndefOr[RangeFontUpdateData] = js.native
+  var font: js.UndefOr[RangeFontUpdateData] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var formulaHidden: js.UndefOr[Boolean] = js.native
+  var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait StyleUpdateData extends StObject {
     */
   var horizontalAlignment: js.UndefOr[
     HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeAlignment: js.UndefOr[Boolean] = js.native
+  var includeAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeBorder: js.UndefOr[Boolean] = js.native
+  var includeBorder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeFont: js.UndefOr[Boolean] = js.native
+  var includeFont: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeNumber: js.UndefOr[Boolean] = js.native
+  var includeNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includePatterns: js.UndefOr[Boolean] = js.native
+  var includePatterns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeProtection: js.UndefOr[Boolean] = js.native
+  var includeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var indentLevel: js.UndefOr[Double] = js.native
+  var indentLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -137,7 +135,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -145,7 +143,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[String] = js.native
+  var numberFormatLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -161,7 +159,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.native
+  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
     *
@@ -169,7 +167,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -177,7 +175,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -185,7 +183,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -193,7 +191,7 @@ trait StyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object StyleUpdateData {
   

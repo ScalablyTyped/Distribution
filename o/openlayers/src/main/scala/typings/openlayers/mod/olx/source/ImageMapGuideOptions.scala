@@ -6,31 +6,29 @@ import typings.openlayers.mod.ImageLoadFunctionType
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMapGuideOptions extends StObject {
   
-  var displayDpi: js.UndefOr[Double] = js.native
+  var displayDpi: js.UndefOr[Double] = js.undefined
   
-  var hidpi: js.UndefOr[Boolean] = js.native
+  var hidpi: js.UndefOr[Boolean] = js.undefined
   
-  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.native
+  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.undefined
   
-  var metersPerUnit: js.UndefOr[Double] = js.native
+  var metersPerUnit: js.UndefOr[Double] = js.undefined
   
-  var params: js.UndefOr[GlobalObject] = js.native
+  var params: js.UndefOr[GlobalObject] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var useOverlay: js.UndefOr[Boolean] = js.native
+  var useOverlay: js.UndefOr[Boolean] = js.undefined
 }
 object ImageMapGuideOptions {
   

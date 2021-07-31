@@ -3,20 +3,20 @@ package typings.stripe.mod.charges
 import typings.stripe.stripeStrings.ideal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIdealPaymentMethodDetails extends IPaymentMethodDetails {
+trait IIdealPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var `type`: ideal = js.native
+  var `type`: ideal
 }
 object IIdealPaymentMethodDetails {
   
   @scala.inline
-  def apply(`type`: ideal): IIdealPaymentMethodDetails = {
+  def apply(): IIdealPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ideal")
     __obj.asInstanceOf[IIdealPaymentMethodDetails]
   }
   

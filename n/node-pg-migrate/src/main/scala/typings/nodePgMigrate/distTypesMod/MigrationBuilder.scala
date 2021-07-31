@@ -75,325 +75,323 @@ import typings.nodePgMigrate.viewsTypesMod.RenameView
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationBuilder extends StObject {
   
   def addColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.AddColumns> is not an array type */ args: Parameters[AddColumns]
-  ): Unit = js.native
+  ): Unit
   
   def addColumns(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.AddColumns> is not an array type */ args: Parameters[AddColumns]
-  ): Unit = js.native
+  ): Unit
   
   def addConstraint(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.CreateConstraint> is not an array type */ args: Parameters[CreateConstraint]
-  ): Unit = js.native
+  ): Unit
   
   def addExtension(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<extensions.CreateExtension> is not an array type */ args: Parameters[CreateExtension]
-  ): Unit = js.native
+  ): Unit
   
   def addIndex(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<indexes.CreateIndex> is not an array type */ args: Parameters[CreateIndex]
-  ): Unit = js.native
+  ): Unit
   
   def addToOperatorFamily(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.AddToOperatorFamily> is not an array type */ args: Parameters[AddToOperatorFamily]
-  ): Unit = js.native
+  ): Unit
   
   def addType(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.CreateType> is not an array type */ args: Parameters[CreateType]
-  ): Unit = js.native
+  ): Unit
   
   def addTypeAttribute(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.AddTypeAttribute> is not an array type */ args: Parameters[AddTypeAttribute]
-  ): Unit = js.native
+  ): Unit
   
   def addTypeValue(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.AddTypeValue> is not an array type */ args: Parameters[AddTypeValue]
-  ): Unit = js.native
+  ): Unit
   
   def alterColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.AlterColumn> is not an array type */ args: Parameters[AlterColumn]
-  ): Unit = js.native
+  ): Unit
   
   def alterDomain(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<domains.AlterDomain> is not an array type */ args: Parameters[AlterDomain]
-  ): Unit = js.native
+  ): Unit
   
   def alterMaterializedView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.AlterMaterializedView> is not an array type */ args: Parameters[AlterMaterializedView]
-  ): Unit = js.native
+  ): Unit
   
   def alterPolicy(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<policies.AlterPolicy> is not an array type */ args: Parameters[AlterPolicy]
-  ): Unit = js.native
+  ): Unit
   
   def alterRole(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<roles.AlterRole> is not an array type */ args: Parameters[AlterRole]
-  ): Unit = js.native
+  ): Unit
   
   def alterSequence(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<sequences.AlterSequence> is not an array type */ args: Parameters[AlterSequence]
-  ): Unit = js.native
+  ): Unit
   
   def alterTable(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.AlterTable> is not an array type */ args: Parameters[AlterTable]
-  ): Unit = js.native
+  ): Unit
   
   def alterView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<views.AlterView> is not an array type */ args: Parameters[AlterView]
-  ): Unit = js.native
+  ): Unit
   
   def alterViewColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<views.AlterViewColumn> is not an array type */ args: Parameters[AlterViewColumn]
-  ): Unit = js.native
+  ): Unit
   
   def createConstraint(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.CreateConstraint> is not an array type */ args: Parameters[CreateConstraint]
-  ): Unit = js.native
+  ): Unit
   
   def createDomain(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<domains.CreateDomain> is not an array type */ args: Parameters[CreateDomain]
-  ): Unit = js.native
+  ): Unit
   
   def createExtension(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<extensions.CreateExtension> is not an array type */ args: Parameters[CreateExtension]
-  ): Unit = js.native
+  ): Unit
   
   def createFunction(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<functions.CreateFunction> is not an array type */ args: Parameters[CreateFunction]
-  ): Unit = js.native
+  ): Unit
   
   def createIndex(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<indexes.CreateIndex> is not an array type */ args: Parameters[CreateIndex]
-  ): Unit = js.native
+  ): Unit
   
   def createMaterializedView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.CreateMaterializedView> is not an array type */ args: Parameters[CreateMaterializedView]
-  ): Unit = js.native
+  ): Unit
   
   def createOperator(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.CreateOperator> is not an array type */ args: Parameters[CreateOperator]
-  ): Unit = js.native
+  ): Unit
   
   def createOperatorClass(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.CreateOperatorClass> is not an array type */ args: Parameters[CreateOperatorClass]
-  ): Unit = js.native
+  ): Unit
   
   def createOperatorFamily(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.CreateOperatorFamily> is not an array type */ args: Parameters[CreateOperatorFamily]
-  ): Unit = js.native
+  ): Unit
   
   def createPolicy(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<policies.CreatePolicy> is not an array type */ args: Parameters[CreatePolicy]
-  ): Unit = js.native
+  ): Unit
   
   def createRole(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<roles.CreateRole> is not an array type */ args: Parameters[CreateRole]
-  ): Unit = js.native
+  ): Unit
   
   def createSchema(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<schemas.CreateSchema> is not an array type */ args: Parameters[CreateSchema]
-  ): Unit = js.native
+  ): Unit
   
   def createSequence(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<sequences.CreateSequence> is not an array type */ args: Parameters[CreateSequence]
-  ): Unit = js.native
+  ): Unit
   
   def createTable(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.CreateTable> is not an array type */ args: Parameters[CreateTable]
-  ): Unit = js.native
+  ): Unit
   
   def createTrigger(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<triggers.CreateTrigger> is not an array type */ args: Parameters[CreateTrigger]
-  ): Unit = js.native
+  ): Unit
   
   def createType(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.CreateType> is not an array type */ args: Parameters[CreateType]
-  ): Unit = js.native
+  ): Unit
   
   def createView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<views.CreateView> is not an array type */ args: Parameters[CreateView]
-  ): Unit = js.native
+  ): Unit
   
-  var db: DB = js.native
+  var db: DB
   
   def dropColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.DropColumns> is not an array type */ args: Parameters[DropColumns]
-  ): Unit = js.native
+  ): Unit
   
   def dropColumns(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.DropColumns> is not an array type */ args: Parameters[DropColumns]
-  ): Unit = js.native
+  ): Unit
   
   def dropConstraint(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.DropConstraint> is not an array type */ args: Parameters[DropConstraint]
-  ): Unit = js.native
+  ): Unit
   
   def dropDomain(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<domains.DropDomain> is not an array type */ args: Parameters[DropDomain]
-  ): Unit = js.native
+  ): Unit
   
   def dropExtension(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<extensions.DropExtension> is not an array type */ args: Parameters[DropExtension]
-  ): Unit = js.native
+  ): Unit
   
   def dropFunction(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<functions.DropFunction> is not an array type */ args: Parameters[DropFunction]
-  ): Unit = js.native
+  ): Unit
   
   def dropIndex(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<indexes.DropIndex> is not an array type */ args: Parameters[DropIndex]
-  ): Unit = js.native
+  ): Unit
   
   def dropMaterializedView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.DropMaterializedView> is not an array type */ args: Parameters[DropMaterializedView]
-  ): Unit = js.native
+  ): Unit
   
   def dropOperator(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.DropOperator> is not an array type */ args: Parameters[DropOperator]
-  ): Unit = js.native
+  ): Unit
   
   def dropOperatorClass(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.DropOperatorClass> is not an array type */ args: Parameters[DropOperatorClass]
-  ): Unit = js.native
+  ): Unit
   
   def dropOperatorFamily(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.DropOperatorFamily> is not an array type */ args: Parameters[DropOperatorFamily]
-  ): Unit = js.native
+  ): Unit
   
   def dropPolicy(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<policies.DropPolicy> is not an array type */ args: Parameters[DropPolicy]
-  ): Unit = js.native
+  ): Unit
   
   def dropRole(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<roles.DropRole> is not an array type */ args: Parameters[DropRole]
-  ): Unit = js.native
+  ): Unit
   
   def dropSchema(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<schemas.DropSchema> is not an array type */ args: Parameters[DropSchema]
-  ): Unit = js.native
+  ): Unit
   
   def dropSequence(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<sequences.DropSequence> is not an array type */ args: Parameters[DropSequence]
-  ): Unit = js.native
+  ): Unit
   
   def dropTable(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.DropTable> is not an array type */ args: Parameters[DropTable]
-  ): Unit = js.native
+  ): Unit
   
   def dropTrigger(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<triggers.DropTrigger> is not an array type */ args: Parameters[DropTrigger]
-  ): Unit = js.native
+  ): Unit
   
   def dropType(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.DropType> is not an array type */ args: Parameters[DropType]
-  ): Unit = js.native
+  ): Unit
   
   def dropTypeAttribute(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.DropTypeAttribute> is not an array type */ args: Parameters[DropTypeAttribute]
-  ): Unit = js.native
+  ): Unit
   
   def dropView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<views.DropView> is not an array type */ args: Parameters[DropView]
-  ): Unit = js.native
+  ): Unit
   
-  def func(sql: String): default = js.native
+  def func(sql: String): default
   
-  def noTransaction(): Unit = js.native
+  def noTransaction(): Unit
   
   def refreshMaterializedView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.RefreshMaterializedView> is not an array type */ args: Parameters[RefreshMaterializedView]
-  ): Unit = js.native
+  ): Unit
   
   def removeFromOperatorFamily(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.RemoveFromOperatorFamily> is not an array type */ args: Parameters[RemoveFromOperatorFamily]
-  ): Unit = js.native
+  ): Unit
   
   def renameColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.RenameColumn> is not an array type */ args: Parameters[RenameColumn]
-  ): Unit = js.native
+  ): Unit
   
   def renameConstraint(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.RenameConstraint> is not an array type */ args: Parameters[RenameConstraint]
-  ): Unit = js.native
+  ): Unit
   
   def renameDomain(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<domains.RenameDomain> is not an array type */ args: Parameters[RenameDomain]
-  ): Unit = js.native
+  ): Unit
   
   def renameFunction(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<functions.RenameFunction> is not an array type */ args: Parameters[RenameFunction]
-  ): Unit = js.native
+  ): Unit
   
   def renameMaterializedView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.RenameMaterializedView> is not an array type */ args: Parameters[RenameMaterializedView]
-  ): Unit = js.native
+  ): Unit
   
   def renameMaterializedViewColumn(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<mViews.RenameMaterializedViewColumn> is not an array type */ args: Parameters[RenameMaterializedViewColumn]
-  ): Unit = js.native
+  ): Unit
   
   def renameOperatorClass(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.RenameOperatorClass> is not an array type */ args: Parameters[RenameOperatorClass]
-  ): Unit = js.native
+  ): Unit
   
   def renameOperatorFamily(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<operators.RenameOperatorFamily> is not an array type */ args: Parameters[RenameOperatorFamily]
-  ): Unit = js.native
+  ): Unit
   
   def renamePolicy(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<policies.RenamePolicy> is not an array type */ args: Parameters[RenamePolicy]
-  ): Unit = js.native
+  ): Unit
   
   def renameRole(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<roles.RenameRole> is not an array type */ args: Parameters[RenameRole]
-  ): Unit = js.native
+  ): Unit
   
   def renameSchema(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<schemas.RenameSchema> is not an array type */ args: Parameters[RenameSchema]
-  ): Unit = js.native
+  ): Unit
   
   def renameSequence(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<sequences.RenameSequence> is not an array type */ args: Parameters[RenameSequence]
-  ): Unit = js.native
+  ): Unit
   
   def renameTable(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<tables.RenameTable> is not an array type */ args: Parameters[RenameTable]
-  ): Unit = js.native
+  ): Unit
   
   def renameTrigger(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<triggers.RenameTrigger> is not an array type */ args: Parameters[RenameTrigger]
-  ): Unit = js.native
+  ): Unit
   
   def renameType(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.RenameType> is not an array type */ args: Parameters[RenameType]
-  ): Unit = js.native
+  ): Unit
   
   def renameTypeAttribute(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.RenameTypeAttribute> is not an array type */ args: Parameters[RenameTypeAttribute]
-  ): Unit = js.native
+  ): Unit
   
   def renameTypeValue(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.RenameTypeValue> is not an array type */ args: Parameters[RenameTypeValue]
-  ): Unit = js.native
+  ): Unit
   
   def renameView(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<views.RenameView> is not an array type */ args: Parameters[RenameView]
-  ): Unit = js.native
+  ): Unit
   
   def setTypeAttribute(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<types.SetTypeAttribute> is not an array type */ args: Parameters[SetTypeAttribute]
-  ): Unit = js.native
+  ): Unit
   
   def sql(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<other.Sql> is not an array type */ args: Parameters[Sql]
-  ): Unit = js.native
+  ): Unit
 }
 object MigrationBuilder {
   

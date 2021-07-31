@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPairInfo extends StObject {
   
   /**
     * If you used CreateKeyPair to create the key pair, this is the SHA-1 digest of the DER encoded private key. If you used ImportKeyPair to provide AWS the public key, this is the MD5 public key fingerprint as specified in section 4 of RFC4716.
     */
-  var KeyFingerprint: js.UndefOr[String] = js.native
+  var KeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the key pair.
     */
-  var KeyPairId: js.UndefOr[String] = js.native
+  var KeyPairId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags applied to the key pair.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object KeyPairInfo {
   

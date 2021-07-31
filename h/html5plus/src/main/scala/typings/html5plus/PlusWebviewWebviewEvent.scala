@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewEvent extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口回弹事件
@@ -27,7 +25,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var dragBounce: js.UndefOr[String] = js.native
+  var dragBounce: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口加载错误事件
@@ -35,7 +33,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口隐藏事件
@@ -43,7 +41,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var hide: js.UndefOr[String] = js.native
+  var hide: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口页面加载完成事件
@@ -51,7 +49,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var loaded: js.UndefOr[String] = js.native
+  var loaded: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口页面开始加载事件
@@ -59,7 +57,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口显示遮罩层时点击事件
@@ -67,7 +65,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var maskClick: js.UndefOr[String] = js.native
+  var maskClick: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口侧滑返回事件
@@ -75,7 +73,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var popGesture: js.UndefOr[String] = js.native
+  var popGesture: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口加载进度变化事件
@@ -84,7 +82,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var progressChanged: js.UndefOr[String] = js.native
+  var progressChanged: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口下拉刷新事件
@@ -93,7 +91,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var pullToRefresh: js.UndefOr[String] = js.native
+  var pullToRefresh: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口渲染完成事件
@@ -101,7 +99,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var rendered: js.UndefOr[String] = js.native
+  var rendered: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口开始渲染事件
@@ -109,7 +107,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var rendering: js.UndefOr[String] = js.native
+  var rendering: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口显示事件
@@ -117,7 +115,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var show: js.UndefOr[String] = js.native
+  var show: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口回弹事件
@@ -125,7 +123,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var slideBounce: js.UndefOr[String] = js.native
+  var slideBounce: js.UndefOr[String] = js.undefined
   
   /**
     * Webview加载页面标题更新事件
@@ -134,7 +132,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleUpdate: js.UndefOr[String] = js.native
+  var titleUpdate: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口接收到触屏事件
@@ -143,7 +141,7 @@ trait PlusWebviewWebviewEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var touchstart: js.UndefOr[String] = js.native
+  var touchstart: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewEvent {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse extends StObject {
   
   /** Results that matched the filter criteria and were accessible to the caller. */
-  var androidAppDataStreams: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaAndroidAppDataStream]] = js.native
+  var androidAppDataStreams: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaAndroidAppDataStream]] = js.undefined
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse {
   

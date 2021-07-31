@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionDocument extends StObject {
   
   /**
     * The language used to define the entity. GRAPHQL is the only valid value.
     */
-  var language: DefinitionLanguage = js.native
+  var language: DefinitionLanguage
   
   /**
     * The GraphQL text that defines the entity.
     */
-  var text: DefinitionText = js.native
+  var text: DefinitionText
 }
 object DefinitionDocument {
   

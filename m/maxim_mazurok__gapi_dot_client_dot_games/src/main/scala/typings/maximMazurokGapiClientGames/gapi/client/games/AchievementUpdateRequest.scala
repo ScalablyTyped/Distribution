@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchievementUpdateRequest extends StObject {
   
   /** The achievement this update is being applied to. */
-  var achievementId: js.UndefOr[String] = js.native
+  var achievementId: js.UndefOr[String] = js.undefined
   
   /** The payload if an update of type `INCREMENT` was requested for the achievement. */
-  var incrementPayload: js.UndefOr[GamesAchievementIncrement] = js.native
+  var incrementPayload: js.UndefOr[GamesAchievementIncrement] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateRequest`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The payload if an update of type `SET_STEPS_AT_LEAST` was requested for the achievement. */
-  var setStepsAtLeastPayload: js.UndefOr[GamesAchievementSetStepsAtLeast] = js.native
+  var setStepsAtLeastPayload: js.UndefOr[GamesAchievementSetStepsAtLeast] = js.undefined
   
   /** The type of update being applied. */
-  var updateType: js.UndefOr[String] = js.native
+  var updateType: js.UndefOr[String] = js.undefined
 }
 object AchievementUpdateRequest {
   

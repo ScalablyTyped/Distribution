@@ -12,19 +12,19 @@ import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEnableEnhancedMonitoringOutputMod {
   
-  @js.native
-  trait EnableEnhancedMonitoringOutput extends OutputTypesUnion {
+  trait EnableEnhancedMonitoringOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Represents the current state of the metrics that are in the enhanced state before the operation.</p>
@@ -33,7 +33,7 @@ object typesEnableEnhancedMonitoringOutputMod {
         js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Represents the list of all the metrics that would be in the enhanced state after the operation.</p>
@@ -42,12 +42,12 @@ object typesEnableEnhancedMonitoringOutputMod {
         js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>The name of the Kinesis data stream.</p>
       */
-    var StreamName: js.UndefOr[String] = js.native
+    var StreamName: js.UndefOr[String] = js.undefined
   }
   object EnableEnhancedMonitoringOutput {
     

@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicsLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with ScaleRangeLayerProperties
      with BlendLayerProperties {
   
@@ -16,21 +15,21 @@ trait GraphicsLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[GraphicsLayerElevationInfo] = js.native
+  var elevationInfo: js.UndefOr[GraphicsLayerElevationInfo] = js.undefined
   
   /**
     * A collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#graphics)
     */
-  var graphics: js.UndefOr[CollectionProperties[GraphicProperties]] = js.native
+  var graphics: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#screenSizePerspectiveEnabled)
     */
-  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.native
+  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object GraphicsLayerProperties {
   

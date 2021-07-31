@@ -2,37 +2,35 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a membership relation in Hangouts Chat.
   */
-@js.native
 trait SchemaMembership extends StObject {
   
   /**
     * The creation time of the membership a.k.a the time at which the member
     * joined the space, if applicable.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Member details.
     */
-  var member: js.UndefOr[SchemaUser] = js.native
+  var member: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * Resource name of the membership, in the form
     * &quot;spaces/x/members/ *&quot;.  Example:
     * spaces/AAAAMpdlehY/members/105115627578887013105
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * State of the membership.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaMembership {
   

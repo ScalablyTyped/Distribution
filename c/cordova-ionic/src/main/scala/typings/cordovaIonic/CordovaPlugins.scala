@@ -3,13 +3,11 @@ package typings.cordovaIonic
 import typings.cordovaIonic.Ionic.Keyboard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var Keyboard: typings.cordovaIonic.Ionic.Keyboard = js.native
+  var Keyboard: typings.cordovaIonic.Ionic.Keyboard
 }
 object CordovaPlugins {
   

@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
   
   /**
     * The elapsed time between calling Accept and Complete. The server will also have its own idea of what this should be, but this excludes the overhead of the RPCs and the bot response
     * time.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** The exit code of the process. An exit code of "0" should only be trusted if `status` has a code of OK (otherwise it may simply be unset). */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Implementation-dependent metadata about the task. Both servers and bots may define messages which can be encoded here; bots are free to provide metadata in multiple formats, and
@@ -27,24 +25,24 @@ trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The output files. The blob referenced by the digest should contain one of the following (implementation-dependent): * A marshalled DirectoryMetadata of the returned filesystem * A
     * LUCI-style .isolated file
     */
-  var outputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var outputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /** The amount of time *not* spent executing the command (ie uploading/downloading files). */
-  var overhead: js.UndefOr[String] = js.native
+  var overhead: js.UndefOr[String] = js.undefined
   
   /**
     * An overall status for the command. For example, if the command timed out, this might have a code of DEADLINE_EXCEEDED; if it was killed by the OS for memory exhaustion, it might
     * have a code of RESOURCE_EXHAUSTED.
     */
-  var status: js.UndefOr[GoogleRpcStatus] = js.native
+  var status: js.UndefOr[GoogleRpcStatus] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandResult {
   
@@ -74,7 +72,7 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
@@ -85,7 +83,7 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
     def setMetadataVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any])*
     ): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline

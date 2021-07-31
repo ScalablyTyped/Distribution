@@ -14,41 +14,37 @@ import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglNumbers.`2`
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webglUtilMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "assertNotComplex")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", JSImport.Namespace)
   @js.native
-  def assertNotComplex(tensor: js.Array[TensorInfo], opName: String): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "assertNotComplex")
-  @js.native
-  def assertNotComplex(tensor: TensorInfo, opName: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "bindCanvasToFramebuffer")
-  @js.native
-  def bindCanvasToFramebuffer(gl: WebGLRenderingContext): Unit = js.native
+  @scala.inline
+  def assertNotComplex(tensor: js.Array[TensorInfo], opName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNotComplex")(tensor.asInstanceOf[js.Any], opName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assertNotComplex(tensor: TensorInfo, opName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNotComplex")(tensor.asInstanceOf[js.Any], opName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "bindColorTextureToFramebuffer")
-  @js.native
-  def bindColorTextureToFramebuffer(gl: WebGLRenderingContext, texture: WebGLTexture, framebuffer: WebGLFramebuffer): Unit = js.native
+  @scala.inline
+  def bindCanvasToFramebuffer(gl: WebGLRenderingContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCanvasToFramebuffer")(gl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "bindTextureToProgramUniformSampler")
-  @js.native
+  @scala.inline
+  def bindColorTextureToFramebuffer(gl: WebGLRenderingContext, texture: WebGLTexture, framebuffer: WebGLFramebuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindColorTextureToFramebuffer")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], framebuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def bindTextureToProgramUniformSampler(
     gl: WebGLRenderingContext,
     texture: WebGLTexture,
     uniformSamplerLocation: WebGLUniformLocation,
     textureUnit: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindTextureToProgramUniformSampler")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], uniformSamplerLocation.asInstanceOf[js.Any], textureUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "bindTextureUnit")
-  @js.native
-  def bindTextureUnit(gl: WebGLRenderingContext, texture: WebGLTexture, textureUnit: Double): Unit = js.native
+  @scala.inline
+  def bindTextureUnit(gl: WebGLRenderingContext, texture: WebGLTexture, textureUnit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindTextureUnit")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], textureUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "bindVertexBufferToProgramAttribute")
-  @js.native
+  @scala.inline
   def bindVertexBufferToProgramAttribute(
     gl: WebGLRenderingContext,
     program: WebGLProgram,
@@ -57,158 +53,120 @@ object webglUtilMod {
     arrayEntriesPerItem: Double,
     itemStrideInBytes: Double,
     itemOffsetInBytes: Double
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bindVertexBufferToProgramAttribute")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], arrayEntriesPerItem.asInstanceOf[js.Any], itemStrideInBytes.asInstanceOf[js.Any], itemOffsetInBytes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "callAndCheck")
-  @js.native
-  def callAndCheck[T](gl: WebGLRenderingContext, func: js.Function0[T]): T = js.native
+  @scala.inline
+  def callAndCheck[T](gl: WebGLRenderingContext, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("callAndCheck")(gl.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "canBeRepresented")
-  @js.native
-  def canBeRepresented(num: Double): Boolean = js.native
+  @scala.inline
+  def canBeRepresented(num: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canBeRepresented")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createFragmentShader")
-  @js.native
-  def createFragmentShader(gl: WebGLRenderingContext, fragmentShaderSource: String): WebGLShader = js.native
+  @scala.inline
+  def createFragmentShader(gl: WebGLRenderingContext, fragmentShaderSource: String): WebGLShader = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentShader")(gl.asInstanceOf[js.Any], fragmentShaderSource.asInstanceOf[js.Any])).asInstanceOf[WebGLShader]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createFramebuffer")
-  @js.native
-  def createFramebuffer(gl: WebGLRenderingContext): WebGLFramebuffer = js.native
+  @scala.inline
+  def createFramebuffer(gl: WebGLRenderingContext): WebGLFramebuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createFramebuffer")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLFramebuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createProgram")
-  @js.native
-  def createProgram(gl: WebGLRenderingContext): WebGLProgram = js.native
+  @scala.inline
+  def createProgram(gl: WebGLRenderingContext): WebGLProgram = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLProgram]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createStaticIndexBuffer")
-  @js.native
-  def createStaticIndexBuffer(gl: WebGLRenderingContext, data: Uint16Array): WebGLBuffer = js.native
+  @scala.inline
+  def createStaticIndexBuffer(gl: WebGLRenderingContext, data: Uint16Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticIndexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createStaticVertexBuffer")
-  @js.native
-  def createStaticVertexBuffer(gl: WebGLRenderingContext, data: Float32Array): WebGLBuffer = js.native
+  @scala.inline
+  def createStaticVertexBuffer(gl: WebGLRenderingContext, data: Float32Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVertexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createTexture")
-  @js.native
-  def createTexture(gl: WebGLRenderingContext): WebGLTexture = js.native
+  @scala.inline
+  def createTexture(gl: WebGLRenderingContext): WebGLTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("createTexture")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "createVertexShader")
-  @js.native
-  def createVertexShader(gl: WebGLRenderingContext, vertexShaderSource: String): WebGLShader = js.native
+  @scala.inline
+  def createVertexShader(gl: WebGLRenderingContext, vertexShaderSource: String): WebGLShader = (^.asInstanceOf[js.Dynamic].applyDynamic("createVertexShader")(gl.asInstanceOf[js.Any], vertexShaderSource.asInstanceOf[js.Any])).asInstanceOf[WebGLShader]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getBatchDim")
-  @js.native
-  def getBatchDim(shape: js.Array[Double]): Double = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getBatchDim")
-  @js.native
-  def getBatchDim(shape: js.Array[Double], dimsToSkip: Double): Double = js.native
+  @scala.inline
+  def getBatchDim(shape: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBatchDim")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getBatchDim(shape: js.Array[Double], dimsToSkip: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getBatchDim")(shape.asInstanceOf[js.Any], dimsToSkip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getExtensionOrThrow")
-  @js.native
-  def getExtensionOrThrow(gl: WebGLRenderingContext, extensionName: String): js.Object = js.native
+  @scala.inline
+  def getExtensionOrThrow(gl: WebGLRenderingContext, extensionName: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionOrThrow")(gl.asInstanceOf[js.Any], extensionName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getFramebufferErrorMessage")
-  @js.native
-  def getFramebufferErrorMessage(gl: WebGLRenderingContext, status: Double): String = js.native
+  @scala.inline
+  def getFramebufferErrorMessage(gl: WebGLRenderingContext, status: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFramebufferErrorMessage")(gl.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getMaxTexturesInShader")
-  @js.native
-  def getMaxTexturesInShader(webGLVersion: Double): Double = js.native
+  @scala.inline
+  def getMaxTexturesInShader(webGLVersion: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxTexturesInShader")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getNumChannels")
-  @js.native
-  def getNumChannels(): Double = js.native
+  @scala.inline
+  def getNumChannels(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumChannels")().asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getProgramUniformLocation")
-  @js.native
-  def getProgramUniformLocation(gl: WebGLRenderingContext, program: WebGLProgram, uniformName: String): WebGLUniformLocation = js.native
+  @scala.inline
+  def getProgramUniformLocation(gl: WebGLRenderingContext, program: WebGLProgram, uniformName: String): WebGLUniformLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgramUniformLocation")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any], uniformName.asInstanceOf[js.Any])).asInstanceOf[WebGLUniformLocation]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getProgramUniformLocationOrThrow")
-  @js.native
-  def getProgramUniformLocationOrThrow(gl: WebGLRenderingContext, program: WebGLProgram, uniformName: String): WebGLUniformLocation = js.native
+  @scala.inline
+  def getProgramUniformLocationOrThrow(gl: WebGLRenderingContext, program: WebGLProgram, uniformName: String): WebGLUniformLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgramUniformLocationOrThrow")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any], uniformName.asInstanceOf[js.Any])).asInstanceOf[WebGLUniformLocation]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getRowsCols")
-  @js.native
-  def getRowsCols(shape: js.Array[Double]): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getRowsCols(shape: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRowsCols")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getShapeAs3D")
-  @js.native
-  def getShapeAs3D(shape: js.Array[Double]): js.Tuple3[Double, Double, Double] = js.native
+  @scala.inline
+  def getShapeAs3D(shape: js.Array[Double]): js.Tuple3[Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShapeAs3D")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Double, Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getTextureShapeFromLogicalShape")
-  @js.native
-  def getTextureShapeFromLogicalShape(logShape: js.Array[Double]): js.Tuple2[Double, Double] = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getTextureShapeFromLogicalShape")
-  @js.native
-  def getTextureShapeFromLogicalShape(logShape: js.Array[Double], isPacked: Boolean): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getTextureShapeFromLogicalShape(logShape: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextureShapeFromLogicalShape")(logShape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def getTextureShapeFromLogicalShape(logShape: js.Array[Double], isPacked: Boolean): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureShapeFromLogicalShape")(logShape.asInstanceOf[js.Any], isPacked.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getWebGLDisjointQueryTimerVersion")
-  @js.native
-  def getWebGLDisjointQueryTimerVersion(webGLVersion: Double): Double = js.native
+  @scala.inline
+  def getWebGLDisjointQueryTimerVersion(webGLVersion: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebGLDisjointQueryTimerVersion")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getWebGLErrorMessage")
-  @js.native
-  def getWebGLErrorMessage(gl: WebGLRenderingContext, status: Double): String = js.native
+  @scala.inline
+  def getWebGLErrorMessage(gl: WebGLRenderingContext, status: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebGLErrorMessage")(gl.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "getWebGLMaxTextureSize")
-  @js.native
-  def getWebGLMaxTextureSize(webGLVersion: Double): Double = js.native
+  @scala.inline
+  def getWebGLMaxTextureSize(webGLVersion: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebGLMaxTextureSize")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "hasExtension")
-  @js.native
-  def hasExtension(gl: WebGLRenderingContext, extensionName: String): Boolean = js.native
+  @scala.inline
+  def hasExtension(gl: WebGLRenderingContext, extensionName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasExtension")(gl.asInstanceOf[js.Any], extensionName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isCapableOfRenderingToFloatTexture")
-  @js.native
-  def isCapableOfRenderingToFloatTexture(webGLVersion: Double): Boolean = js.native
+  @scala.inline
+  def isCapableOfRenderingToFloatTexture(webGLVersion: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCapableOfRenderingToFloatTexture")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isDownloadFloatTextureEnabled")
-  @js.native
-  def isDownloadFloatTextureEnabled(webGLVersion: Double): Boolean = js.native
+  @scala.inline
+  def isDownloadFloatTextureEnabled(webGLVersion: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDownloadFloatTextureEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isReshapeFree")
-  @js.native
-  def isReshapeFree(shape1: js.Array[Double], shape2: js.Array[Double]): Boolean = js.native
+  @scala.inline
+  def isReshapeFree(shape1: js.Array[Double], shape2: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReshapeFree")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isWebGLFenceEnabled")
-  @js.native
-  def isWebGLFenceEnabled(webGLVersion: Double): Boolean = js.native
+  @scala.inline
+  def isWebGLFenceEnabled(webGLVersion: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLFenceEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isWebGLVersionEnabled")
-  @js.native
-  def isWebGLVersionEnabled_1(webGLVersion: `1`): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "isWebGLVersionEnabled")
-  @js.native
-  def isWebGLVersionEnabled_2(webGLVersion: `2`): Boolean = js.native
+  @scala.inline
+  def isWebGLVersionEnabled_1(webGLVersion: `1`): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLVersionEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "linkProgram")
-  @js.native
-  def linkProgram(gl: WebGLRenderingContext, program: WebGLProgram): Unit = js.native
+  @scala.inline
+  def isWebGLVersionEnabled_2(webGLVersion: `2`): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLVersionEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "resetMaxTextureSize")
-  @js.native
-  def resetMaxTextureSize(): Unit = js.native
+  @scala.inline
+  def linkProgram(gl: WebGLRenderingContext, program: WebGLProgram): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkProgram")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "resetMaxTexturesInShader")
-  @js.native
-  def resetMaxTexturesInShader(): Unit = js.native
+  @scala.inline
+  def resetMaxTextureSize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMaxTextureSize")().asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "unbindColorTextureFromFramebuffer")
-  @js.native
-  def unbindColorTextureFromFramebuffer(gl: WebGLRenderingContext, framebuffer: WebGLFramebuffer): Unit = js.native
+  @scala.inline
+  def resetMaxTexturesInShader(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMaxTexturesInShader")().asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "unbindTextureUnit")
-  @js.native
-  def unbindTextureUnit(gl: WebGLRenderingContext, textureUnit: Double): Unit = js.native
+  @scala.inline
+  def unbindColorTextureFromFramebuffer(gl: WebGLRenderingContext, framebuffer: WebGLFramebuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindColorTextureFromFramebuffer")(gl.asInstanceOf[js.Any], framebuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "validateFramebuffer")
-  @js.native
-  def validateFramebuffer(gl: WebGLRenderingContext): Unit = js.native
+  @scala.inline
+  def unbindTextureUnit(gl: WebGLRenderingContext, textureUnit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindTextureUnit")(gl.asInstanceOf[js.Any], textureUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "validateProgram")
-  @js.native
-  def validateProgram(gl: WebGLRenderingContext, program: WebGLProgram): Unit = js.native
+  @scala.inline
+  def validateFramebuffer(gl: WebGLRenderingContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFramebuffer")(gl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/webgl_util", "validateTextureSize")
-  @js.native
-  def validateTextureSize(width: Double, height: Double): Unit = js.native
+  @scala.inline
+  def validateProgram(gl: WebGLRenderingContext, program: WebGLProgram): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProgram")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def validateTextureSize(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateTextureSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

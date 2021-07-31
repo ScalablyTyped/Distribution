@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContextKeysForPolicyResponse extends StObject {
   
   /**
     * The list of context keys that are referenced in the input policies.
     */
-  var ContextKeyNames: js.UndefOr[ContextKeyNamesResultListType] = js.native
+  var ContextKeyNames: js.UndefOr[ContextKeyNamesResultListType] = js.undefined
 }
 object GetContextKeysForPolicyResponse {
   

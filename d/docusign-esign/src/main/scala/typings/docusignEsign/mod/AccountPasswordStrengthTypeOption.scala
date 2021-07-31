@@ -2,47 +2,45 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPasswordStrengthTypeOption extends StObject {
   
   /**
     * Minimum length of the access code string.
     */
-  var minimumLength: js.UndefOr[String] = js.native
+  var minimumLength: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include a digit. The default value is `false`.
     */
-  var passwordIncludeDigit: js.UndefOr[String] = js.native
+  var passwordIncludeDigit: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include either a digit or a special character. The default value is `false`.
     *
     * **Note**: Passwords cannot include angle brackets (`<` `>`) or spaces.
     */
-  var passwordIncludeDigitOrSpecialCharacter: js.UndefOr[String] = js.native
+  var passwordIncludeDigitOrSpecialCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include a lowercase letter. The default value is `false`.
     */
-  var passwordIncludeLowerCase: js.UndefOr[String] = js.native
+  var passwordIncludeLowerCase: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include a special character. The default value is `false`.
     *
     * **Note**: Passwords cannot include angle brackets (`<` `>`) or spaces.
     */
-  var passwordIncludeSpecialCharacter: js.UndefOr[String] = js.native
+  var passwordIncludeSpecialCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include an uppercase letter. The default value is `false`.
     */
-  var passwordIncludeUpperCase: js.UndefOr[String] = js.native
+  var passwordIncludeUpperCase: js.UndefOr[String] = js.undefined
 }
 object AccountPasswordStrengthTypeOption {
   

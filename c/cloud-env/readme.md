@@ -12,7 +12,7 @@ Consistent naming for cloud-provided server config strings
 | Keywords           | config, paas, openshift, modulus, heroku, env, configuration |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 29175 |
+| # downloads        | 32546 |
 | # stars            | 3 |
 
 ## Links

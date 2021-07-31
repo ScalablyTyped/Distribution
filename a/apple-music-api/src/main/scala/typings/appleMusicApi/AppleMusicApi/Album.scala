@@ -4,27 +4,27 @@ import typings.appleMusicApi.anon.ArtistName
 import typings.appleMusicApi.appleMusicApiStrings.albums
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/album
-@js.native
-trait Album extends Resource {
+trait Album
+  extends StObject
+     with Resource {
   
   // https://developer.apple.com/documentation/applemusicapi/album/attributes
-  var attributes: js.UndefOr[ArtistName] = js.native
+  var attributes: js.UndefOr[ArtistName] = js.undefined
   
-  var relationships: js.UndefOr[AlbumRelationships] = js.native
+  var relationships: js.UndefOr[AlbumRelationships] = js.undefined
   
   @JSName("type")
-  var type_Album: albums = js.native
+  var type_Album: albums
 }
 object Album {
   
   @scala.inline
-  def apply(id: String, `type`: albums): Album = {
+  def apply(id: String): Album = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("albums")
     __obj.asInstanceOf[Album]
   }
   

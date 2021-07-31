@@ -4,21 +4,19 @@ import typings.cesium.mod.TextureMagnificationFilter
 import typings.cesium.mod.TextureMinificationFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fabric extends StObject {
   
-  var fabric: js.Any = js.native
+  var fabric: js.Any
   
-  var magnificationFilter: js.UndefOr[TextureMagnificationFilter] = js.native
+  var magnificationFilter: js.UndefOr[TextureMagnificationFilter] = js.undefined
   
-  var minificationFilter: js.UndefOr[TextureMinificationFilter] = js.native
+  var minificationFilter: js.UndefOr[TextureMinificationFilter] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var translucent: js.UndefOr[Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])] = js.native
+  var translucent: js.UndefOr[Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])] = js.undefined
 }
 object Fabric {
   

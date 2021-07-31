@@ -4,25 +4,23 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tvinputdeviceMod {
   
-  @js.native
   trait InputDeviceKey extends StObject {
     
     /**
       * The numeric code of the key, like ***37*** or ***13***.
       * @since 2.3
       */
-    var code: Double = js.native
+    var code: Double
     
     /**
       * The name of the key, for example ***"VolumeUp"*** or ***"ChannelDown"***.
       * @since 2.3
       */
-    var name: InputDeviceKeyName = js.native
+    var name: InputDeviceKeyName
   }
   object InputDeviceKey {
     
@@ -97,11 +95,7 @@ object tvinputdeviceMod {
       * @since 2.4
       */
     def registerKeyBatch(keyNames: js.Array[InputDeviceKeyName]): Unit = js.native
-    def registerKeyBatch(
-      keyNames: js.Array[InputDeviceKeyName],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
+    def registerKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def registerKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: SuccessCallback): Unit = js.native
     def registerKeyBatch(
       keyNames: js.Array[InputDeviceKeyName],
@@ -132,11 +126,7 @@ object tvinputdeviceMod {
       * @since 2.4
       */
     def unregisterKeyBatch(keyNames: js.Array[InputDeviceKeyName]): Unit = js.native
-    def unregisterKeyBatch(
-      keyNames: js.Array[InputDeviceKeyName],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
+    def unregisterKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def unregisterKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: SuccessCallback): Unit = js.native
     def unregisterKeyBatch(
       keyNames: js.Array[InputDeviceKeyName],

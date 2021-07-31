@@ -4,7 +4,6 @@ import typings.dropboxjs.Dropbox.QueryParams
 import typings.dropboxjs.anon.Cancelable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Util {
@@ -12,48 +11,67 @@ object Util {
   @JSGlobal("Dropbox.Util.EventSource")
   @js.native
   class EventSource protected ()
-    extends typings.dropboxjs.Dropbox.Util.EventSource {
+    extends StObject
+       with typings.dropboxjs.Dropbox.Util.EventSource {
     def this(options: Cancelable) = this()
+    
+    /* CompleteClass */
+    override def addListener(listener: js.Function1[/* event */ js.Any, Unit]): typings.dropboxjs.Dropbox.Util.EventSource = js.native
+    
+    /* CompleteClass */
+    override def dispatch(event: js.Object): Boolean = js.native
+    
+    /* CompleteClass */
+    override def removeListener(listener: js.Function1[/* event */ js.Any, Unit]): typings.dropboxjs.Dropbox.Util.EventSource = js.native
   }
   
   @JSGlobal("Dropbox.Util.Oauth")
   @js.native
   class Oauth ()
-    extends typings.dropboxjs.Dropbox.Util.Oauth
+    extends StObject
+       with typings.dropboxjs.Dropbox.Util.Oauth {
+    
+    /* CompleteClass */
+    override def checkAuthStateParam(stateParam: String): Boolean = js.native
+  }
   object Oauth {
     
-    /* static member */
-    @JSGlobal("Dropbox.Util.Oauth.queryParamsFromUrl")
+    @JSGlobal("Dropbox.Util.Oauth")
     @js.native
-    def queryParamsFromUrl(url: String): QueryParams = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Dropbox.Util.Oauth.randomAuthStateParam")
-    @js.native
-    def randomAuthStateParam(): String = js.native
+    @scala.inline
+    def queryParamsFromUrl(url: String): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
+    
+    /* static member */
+    @scala.inline
+    def randomAuthStateParam(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomAuthStateParam")().asInstanceOf[String]
   }
   
   @JSGlobal("Dropbox.Util.Xhr")
   @js.native
   class Xhr protected ()
-    extends typings.dropboxjs.Dropbox.Util.Xhr {
+    extends StObject
+       with typings.dropboxjs.Dropbox.Util.Xhr {
     def this(method: String, baseUrl: String) = this()
   }
   object Xhr {
     
-    /* static member */
-    @JSGlobal("Dropbox.Util.Xhr.urlDecode")
+    @JSGlobal("Dropbox.Util.Xhr")
     @js.native
-    def urlDecode(string: js.Object): QueryParams = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Dropbox.Util.Xhr.urlEncode")
-    @js.native
-    def urlEncode(obj: js.Object): String = js.native
+    @scala.inline
+    def urlDecode(string: js.Object): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("urlDecode")(string.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
     
     /* static member */
-    @JSGlobal("Dropbox.Util.Xhr.urlEncodeValue")
-    @js.native
-    def urlEncodeValue(obj: js.Object): String = js.native
+    @scala.inline
+    def urlEncode(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def urlEncodeValue(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodeValue")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

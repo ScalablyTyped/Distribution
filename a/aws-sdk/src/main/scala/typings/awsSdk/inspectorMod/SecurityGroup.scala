@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityGroup extends StObject {
   
   /**
     * The ID of the security group.
     */
-  var groupId: js.UndefOr[Text] = js.native
+  var groupId: js.UndefOr[Text] = js.undefined
   
   /**
     * The name of the security group.
     */
-  var groupName: js.UndefOr[Text] = js.native
+  var groupName: js.UndefOr[Text] = js.undefined
 }
 object SecurityGroup {
   

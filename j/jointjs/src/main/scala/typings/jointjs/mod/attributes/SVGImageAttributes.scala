@@ -2,21 +2,21 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGImageAttributes extends SVGAttributes {
+trait SVGImageAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var preserveAspectRatio: js.UndefOr[String] = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
-  var x: js.UndefOr[String | Double] = js.native
+  var x: js.UndefOr[String | Double] = js.undefined
   
-  var y: js.UndefOr[String | Double] = js.native
+  var y: js.UndefOr[String | Double] = js.undefined
 }
 object SVGImageAttributes {
   

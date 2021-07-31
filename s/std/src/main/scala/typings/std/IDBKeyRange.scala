@@ -2,37 +2,35 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A key range can be a single value or a range with upper and lower bounds or endpoints. If the key range has both upper and lower bounds, then it is bounded; if it has no bounds, it is unbounded. A bounded key range can either be open (the endpoints are excluded) or closed (the endpoints are included). To retrieve all keys within a certain range, you can use the following code constructs: */
-@js.native
 trait IDBKeyRange extends StObject {
   
   /**
     * Returns true if key is included in the range, and false otherwise.
     */
-  def includes(key: js.Any): scala.Boolean = js.native
+  def includes(key: js.Any): scala.Boolean
   
   /**
     * Returns lower bound, or undefined if none.
     */
-  val lower: js.Any = js.native
+  val lower: js.Any
   
   /**
     * Returns true if the lower open flag is set, and false otherwise.
     */
-  val lowerOpen: scala.Boolean = js.native
+  val lowerOpen: scala.Boolean
   
   /**
     * Returns upper bound, or undefined if none.
     */
-  val upper: js.Any = js.native
+  val upper: js.Any
   
   /**
     * Returns true if the upper open flag is set, and false otherwise.
     */
-  val upperOpen: scala.Boolean = js.native
+  val upperOpen: scala.Boolean
 }
 object IDBKeyRange {
   

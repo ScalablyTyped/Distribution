@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XMacroExpander
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uri {
@@ -111,7 +110,6 @@ object uri {
     * process.
     * @since OOo 2.0
     */
-  @js.native
   trait XExternalUriReferenceTranslator extends StObject {
     
     /**
@@ -119,14 +117,14 @@ object uri {
       * @param internalUriReference an internal URI reference.
       * @returns the external counterpart of the given internal URI reference. An empty string is returned if the given internal URI reference either is an empty
       */
-    def translateToExternal(internalUriReference: String): String = js.native
+    def translateToExternal(internalUriReference: String): String
     
     /**
       * returns the internal counterpart of an external URI reference.
       * @param externalUriReference an external URI reference.
       * @returns the internal counterpart of the given external URI reference. An empty string is returned if the given external URI reference either is an empty
       */
-    def translateToInternal(externalUriReference: String): String = js.native
+    def translateToInternal(externalUriReference: String): String
   }
   object XExternalUriReferenceTranslator {
     
@@ -157,26 +155,27 @@ object uri {
     * @see com.sun.star.uri.UriReferenceFactory which allows to create URI reference objects that support com.sun.star.uri.XUriReference and additional, sch
     * @since OOo 2.0
     */
-  @js.native
-  trait XUriReference extends XInterface {
+  trait XUriReference
+    extends StObject
+       with XInterface {
     
     /**
       * returns the authority part of this (hierarchical) URI reference.
       * @returns the textual representation of the authority part (with the exact spelling retained), if this is a hierarchical URI reference that has an authorit
       */
-    val Authority: String = js.native
+    val Authority: String
     
     /**
       * returns the fragment part of this URI reference.
       * @returns the textual representation of the fragment part (with the exact spelling retained; without the delimiting "`#`" ), if this is a URI reference tha
       */
-    var Fragment: String = js.native
+    var Fragment: String
     
     /**
       * returns the path part of this URI reference.
       * @returns the textual representation of the path part (with the exact spelling retained), if this is a hierarchical URI reference; for an opaque URI refere
       */
-    val Path: String = js.native
+    val Path: String
     
     /**
       * returns the number of path segments of this (hierarchical) URI reference.
@@ -186,19 +185,19 @@ object uri {
       * relative, non-empty path, the number of path segments equals the number of "`/`" delimiters, plus one.
       * @returns the number of path segments.
       */
-    val PathSegmentCount: Double = js.native
+    val PathSegmentCount: Double
     
     /**
       * returns the query part of this (hierarchical) URI reference.
       * @returns the textual representation of the query part (with the exact spelling retained; without the delimiting "`?`" ), if this is a hierarchical URI ref
       */
-    val Query: String = js.native
+    val Query: String
     
     /**
       * returns the scheme part of this (absolute) URI reference.
       * @returns the textual representation of the scheme part (with the exact spelling retained; without the delimiting "`:`" ), if this is an absolute URI refer
       */
-    val Scheme: String = js.native
+    val Scheme: String
     
     /**
       * returns the scheme-specific part of this URI reference.
@@ -207,41 +206,41 @@ object uri {
       * and fragment part. For a relative URI reference, the scheme-specific part is everything before the optional "`#`" and fragment part.
       * @returns the textual representation of the scheme-specific part (with the exact spelling retained).
       */
-    val SchemeSpecificPart: String = js.native
+    val SchemeSpecificPart: String
     
     /**
       * returns the textual representation of the complete URI reference.
       * @returns the textual representation of the complete URI reference. The exact spelling of the URI reference is retained.
       */
-    val UriReference: String = js.native
+    val UriReference: String
     
     /** clears the fragment part of this URI reference. */
-    def clearFragment(): Unit = js.native
+    def clearFragment(): Unit
     
     /**
       * returns the authority part of this (hierarchical) URI reference.
       * @returns the textual representation of the authority part (with the exact spelling retained), if this is a hierarchical URI reference that has an authorit
       */
-    def getAuthority(): String = js.native
+    def getAuthority(): String
     
     /**
       * returns the fragment part of this URI reference.
       * @returns the textual representation of the fragment part (with the exact spelling retained; without the delimiting "`#`" ), if this is a URI reference tha
       */
-    def getFragment(): String = js.native
+    def getFragment(): String
     
     /**
       * returns the path part of this URI reference.
       * @returns the textual representation of the path part (with the exact spelling retained), if this is a hierarchical URI reference; for an opaque URI refere
       */
-    def getPath(): String = js.native
+    def getPath(): String
     
     /**
       * returns a given path segment of this (hierarchical) URI reference.
       * @param index the index of the path segment, starting at zero.
       * @returns the textual representation of the given path segment (with the exact spelling retained, without any delimiting "`/`" ), if this URI reference is
       */
-    def getPathSegment(index: Double): String = js.native
+    def getPathSegment(index: Double): String
     
     /**
       * returns the number of path segments of this (hierarchical) URI reference.
@@ -251,19 +250,19 @@ object uri {
       * relative, non-empty path, the number of path segments equals the number of "`/`" delimiters, plus one.
       * @returns the number of path segments.
       */
-    def getPathSegmentCount(): Double = js.native
+    def getPathSegmentCount(): Double
     
     /**
       * returns the query part of this (hierarchical) URI reference.
       * @returns the textual representation of the query part (with the exact spelling retained; without the delimiting "`?`" ), if this is a hierarchical URI ref
       */
-    def getQuery(): String = js.native
+    def getQuery(): String
     
     /**
       * returns the scheme part of this (absolute) URI reference.
       * @returns the textual representation of the scheme part (with the exact spelling retained; without the delimiting "`:`" ), if this is an absolute URI refer
       */
-    def getScheme(): String = js.native
+    def getScheme(): String
     
     /**
       * returns the scheme-specific part of this URI reference.
@@ -272,43 +271,43 @@ object uri {
       * and fragment part. For a relative URI reference, the scheme-specific part is everything before the optional "`#`" and fragment part.
       * @returns the textual representation of the scheme-specific part (with the exact spelling retained).
       */
-    def getSchemeSpecificPart(): String = js.native
+    def getSchemeSpecificPart(): String
     
     /**
       * returns the textual representation of the complete URI reference.
       * @returns the textual representation of the complete URI reference. The exact spelling of the URI reference is retained.
       */
-    def getUriReference(): String = js.native
+    def getUriReference(): String
     
     /**
       * returns whether this (hierarchical) URI reference has an authority part.
       * @returns `TRUE` if this URI reference is hierarchical and has an authority part.
       */
-    def hasAuthority(): Boolean = js.native
+    def hasAuthority(): Boolean
     
     /**
       * returns whether this URI reference has a fragment part.
       * @returns `TRUE` if this URI reference has a fragment part.
       */
-    def hasFragment(): Boolean = js.native
+    def hasFragment(): Boolean
     
     /**
       * returns whether this (hierarchical) URI reference has a query part.
       * @returns `TRUE` if this URI reference is hierarchical and has a query part.
       */
-    def hasQuery(): Boolean = js.native
+    def hasQuery(): Boolean
     
     /**
       * returns whether this (relative) URI reference has a relative path.
       * @returns `TRUE` if this URI reference is relative and has a relative path.
       */
-    def hasRelativePath(): Boolean = js.native
+    def hasRelativePath(): Boolean
     
     /**
       * returns whether this URI reference is absolute or relative.
       * @returns `TRUE` if this URI reference is absolute, `FALSE` if it is relative.
       */
-    def isAbsolute(): Boolean = js.native
+    def isAbsolute(): Boolean
     
     /**
       * returns whether this URI reference is hierarchical or opaque.
@@ -316,13 +315,13 @@ object uri {
       * An absolute URI reference is hierarchical if its scheme-specific part starts with "`/`" . A relative URI reference is always hierarchical.
       * @returns `TRUE` if this URI reference is hierarchical, `FALSE` if it is opaque.
       */
-    def isHierarchical(): Boolean = js.native
+    def isHierarchical(): Boolean
     
     /**
       * sets the fragment part of this URI reference.
       * @param fragment the textual representation of the new fragment part. The exact spelling will be preserved, and no escaping is performed.
       */
-    def setFragment(fragment: String): Unit = js.native
+    def setFragment(fragment: String): Unit
   }
   object XUriReference {
     
@@ -447,8 +446,9 @@ object uri {
     * See [RFC   2396]{@link url="http://www.ietf.org/rfc/rfc2396.txt"} for a description of URI references and related terms.
     * @since OOo 2.0
     */
-  @js.native
-  trait XUriReferenceFactory extends XInterface {
+  trait XUriReferenceFactory
+    extends StObject
+       with XInterface {
     
     /**
       * resolves a relative URI reference to absolute form.
@@ -463,7 +463,7 @@ object uri {
       uriReference: XUriReference,
       processSpecialBaseSegments: Boolean,
       excessParentSegments: RelativeUriExcessParentSegments
-    ): XUriReference = js.native
+    ): XUriReference
     
     /**
       * changes an absolute URI reference to relative form.
@@ -480,14 +480,14 @@ object uri {
       preferAuthorityOverRelativePath: Boolean,
       preferAbsoluteOverRelativePath: Boolean,
       encodeRetainedSpecialSegments: Boolean
-    ): XUriReference = js.native
+    ): XUriReference
     
     /**
       * parses the textual representation of a URI reference.
       * @param uriReference the textual representation of a URI reference.
       * @returns an object that supports {@link com.sun.star.uri.XUriReference} (and possibly also additional, scheme-specific interfaces), if the given input can
       */
-    def parse(uriReference: String): XUriReference = js.native
+    def parse(uriReference: String): XUriReference
   }
   object XUriReferenceFactory {
     
@@ -524,8 +524,9 @@ object uri {
     * See [RFC   2396]{@link url="http://www.ietf.org/rfc/rfc2396.txt"} for a description of URIs and related terms.
     * @since OOo 2.0
     */
-  @js.native
-  trait XUriSchemeParser extends XInterface {
+  trait XUriSchemeParser
+    extends StObject
+       with XInterface {
     
     /**
       * parses the textual representation of an absolute URI.
@@ -538,7 +539,7 @@ object uri {
       * @param schemeSpecificPart the textual representation of the scheme-specific part.
       * @returns an object that supports {@link com.sun.star.uri.XUriReference} (and possibly also additional, scheme-specific interfaces), if the given input can
       */
-    def parse(scheme: String, schemeSpecificPart: String): XUriReference = js.native
+    def parse(scheme: String, schemeSpecificPart: String): XUriReference
   }
   object XUriSchemeParser {
     
@@ -570,7 +571,6 @@ object uri {
     * url="http://www.ietf.org/rfc/rfc2234.txt"} for details.
     * @since OOo 2.3
     */
-  @js.native
   trait XVndSunStarExpandUrl extends StObject {
     
     /**
@@ -579,7 +579,7 @@ object uri {
       * @returns the expanded content of this URL.
       * @throws com::sun::star::lang::IllegalArgumentException if calling {@link com.sun.star.util.XMacroExpander.expandMacros()} on `expander` raises any such e
       */
-    def expand(expander: XMacroExpander): String = js.native
+    def expand(expander: XMacroExpander): String
   }
   object XVndSunStarExpandUrl {
     
@@ -601,9 +601,9 @@ object uri {
     * represents absolute " vnd.sun.star.expand " URL references.
     * @since OOo 2.3
     */
-  @js.native
   trait XVndSunStarExpandUrlReference
-    extends XUriReference
+    extends StObject
+       with XUriReference
        with XVndSunStarExpandUrl
   object XVndSunStarExpandUrlReference {
     
@@ -648,7 +648,6 @@ object uri {
     * creates " vnd.sun.star.pkg " URL references.
     * @since OOo 2.0
     */
-  @js.native
   trait XVndSunStarPkgUrlReferenceFactory extends StObject {
     
     /**
@@ -658,7 +657,7 @@ object uri {
       * @param authority the authority of the created URL reference; must not be `NULL` , and should be an absolute URI reference with no fragment
       * @returns a new " vnd.sun.star.pkg " URL reference, or `NULL` if the given authority is either not an absolute URI reference or has a fragment
       */
-    def createVndSunStarPkgUrlReference(authority: XUriReference): XUriReference = js.native
+    def createVndSunStarPkgUrlReference(authority: XUriReference): XUriReference
   }
   object XVndSunStarPkgUrlReferenceFactory {
     
@@ -690,34 +689,35 @@ object uri {
     * considering case folding or normalization. There may be multiple parameters with equal keys.
     * @since OOo 2.0
     */
-  @js.native
-  trait XVndSunStarScriptUrl extends XInterface {
+  trait XVndSunStarScriptUrl
+    extends StObject
+       with XInterface {
     
     /**
       * returns the name part of this URL.
       * @returns the non-escaped value of the name part.
       */
-    var Name: String = js.native
+    var Name: String
     
     /**
       * returns the name part of this URL.
       * @returns the non-escaped value of the name part.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * returns the value of a parameter with a given key.
       * @param key a non-escaped key.
       * @returns the non-escaped value of the first parameter with the given key. If there is no parameter with the given key, or if `key` is an empty `string` ,
       */
-    def getParameter(key: String): String = js.native
+    def getParameter(key: String): String
     
     /**
       * returns whether this URL has a parameter with a given key.
       * @param key a non-escaped key.
       * @returns `TRUE` if this URL has at least one parameter with the given key. In particular, if `key` is an empty `string` , `FALSE` is returned.
       */
-    def hasParameter(key: String): Boolean = js.native
+    def hasParameter(key: String): Boolean
     
     /**
       * sets the name part of this URL.
@@ -725,7 +725,7 @@ object uri {
       * @since OOo 3.0
       * @throws com::sun::star::lang::IllegalArgumentException if name is empty
       */
-    def setName(name: String): Unit = js.native
+    def setName(name: String): Unit
     
     /**
       * sets the value of a parameter with a given key.
@@ -734,7 +734,7 @@ object uri {
       * @since OOo 3.0
       * @throws com::sun::star::lang::IllegalArgumentException if key is empty
       */
-    def setParameter(key: String, value: String): Unit = js.native
+    def setParameter(key: String, value: String): Unit
   }
   object XVndSunStarScriptUrl {
     
@@ -778,9 +778,9 @@ object uri {
   }
   
   /** represents absolute " vnd.sun.star.script " URL references. */
-  @js.native
   trait XVndSunStarScriptUrlReference
-    extends XUriReference
+    extends StObject
+       with XUriReference
        with XVndSunStarScriptUrl
   object XVndSunStarScriptUrlReference {
     

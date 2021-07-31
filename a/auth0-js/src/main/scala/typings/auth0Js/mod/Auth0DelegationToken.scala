@@ -2,20 +2,18 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0DelegationToken extends StObject {
   
   /** The length of time in seconds the token is valid for. */
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
   /** The JWT for delegated access.  */
-  var idToken: String = js.native
+  var idToken: String
   
   /** The type of token being returned. Possible values: "Bearer"  */
-  var tokenType: String = js.native
+  var tokenType: String
 }
 object Auth0DelegationToken {
   

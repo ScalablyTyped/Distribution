@@ -2,19 +2,17 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguagePaginateLegacy extends StObject {
   
-  var sFirst: js.UndefOr[String] = js.native
+  var sFirst: js.UndefOr[String] = js.undefined
   
-  var sLast: js.UndefOr[String] = js.native
+  var sLast: js.UndefOr[String] = js.undefined
   
-  var sNext: js.UndefOr[String] = js.native
+  var sNext: js.UndefOr[String] = js.undefined
   
-  var sPrevious: js.UndefOr[String] = js.native
+  var sPrevious: js.UndefOr[String] = js.undefined
 }
 object LanguagePaginateLegacy {
   

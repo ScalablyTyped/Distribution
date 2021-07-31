@@ -2,15 +2,16 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsWindowCountMod {
   
-  @JSImport("rxjs/operators/windowCount", "windowCount")
+  @JSImport("rxjs/operators/windowCount", JSImport.Namespace)
   @js.native
-  def windowCount[T](windowSize: Double): js.Any = js.native
-  @JSImport("rxjs/operators/windowCount", "windowCount")
-  @js.native
-  def windowCount[T](windowSize: Double, startWindowEvery: Double): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def windowCount[T](windowSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def windowCount[T](windowSize: Double, startWindowEvery: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any], startWindowEvery.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

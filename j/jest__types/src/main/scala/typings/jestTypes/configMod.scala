@@ -9,7 +9,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
@@ -57,10 +56,11 @@ object configMod {
   
   type CoverageReporters = js.Array[CoverageReporterName | CoverageReporterWithOptions[CoverageReporterName]]
   
-  @js.native
-  trait CoverageThreshold extends /* path */ StringDictionary[CoverageThresholdValue] {
+  trait CoverageThreshold
+    extends StObject
+       with /* path */ StringDictionary[CoverageThresholdValue] {
     
-    var global: CoverageThresholdValue = js.native
+    var global: CoverageThresholdValue
   }
   object CoverageThreshold {
     
@@ -78,16 +78,15 @@ object configMod {
     }
   }
   
-  @js.native
   trait CoverageThresholdValue extends StObject {
     
-    var branches: js.UndefOr[Double] = js.native
+    var branches: js.UndefOr[Double] = js.undefined
     
-    var functions: js.UndefOr[Double] = js.native
+    var functions: js.UndefOr[Double] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var statements: js.UndefOr[Double] = js.native
+    var statements: js.UndefOr[Double] = js.undefined
   }
   object CoverageThresholdValue {
     
@@ -126,115 +125,114 @@ object configMod {
     }
   }
   
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var automock: Boolean = js.native
+    var automock: Boolean
     
-    var bail: Double = js.native
+    var bail: Double
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var cacheDirectory: Path = js.native
+    var cacheDirectory: Path
     
-    var changedFilesWithAncestor: Boolean = js.native
+    var changedFilesWithAncestor: Boolean
     
-    var clearMocks: Boolean = js.native
+    var clearMocks: Boolean
     
-    var collectCoverage: Boolean = js.native
+    var collectCoverage: Boolean
     
-    var coveragePathIgnorePatterns: js.Array[String] = js.native
+    var coveragePathIgnorePatterns: js.Array[String]
     
-    var coverageProvider: CoverageProvider = js.native
+    var coverageProvider: CoverageProvider
     
-    var coverageReporters: js.Array[CoverageReporterName] = js.native
+    var coverageReporters: js.Array[CoverageReporterName]
     
-    var errorOnDeprecated: Boolean = js.native
+    var errorOnDeprecated: Boolean
     
-    var expand: Boolean = js.native
+    var expand: Boolean
     
-    var forceCoverageMatch: js.Array[Glob] = js.native
+    var forceCoverageMatch: js.Array[Glob]
     
-    var globals: ConfigGlobals = js.native
+    var globals: ConfigGlobals
     
-    var haste: HasteConfig = js.native
+    var haste: HasteConfig
     
-    var injectGlobals: Boolean = js.native
+    var injectGlobals: Boolean
     
-    var maxConcurrency: Double = js.native
+    var maxConcurrency: Double
     
-    var maxWorkers: Double | String = js.native
+    var maxWorkers: Double | String
     
-    var moduleDirectories: js.Array[String] = js.native
+    var moduleDirectories: js.Array[String]
     
-    var moduleFileExtensions: js.Array[String] = js.native
+    var moduleFileExtensions: js.Array[String]
     
-    var moduleNameMapper: Record[String, String | js.Array[String]] = js.native
+    var moduleNameMapper: Record[String, String | js.Array[String]]
     
-    var modulePathIgnorePatterns: js.Array[String] = js.native
+    var modulePathIgnorePatterns: js.Array[String]
     
-    var noStackTrace: Boolean = js.native
+    var noStackTrace: Boolean
     
-    var notifyMode: NotifyMode = js.native
+    var notifyMode: NotifyMode
     
     @JSName("notify")
-    var notify_FDefaultOptions: Boolean = js.native
+    var notify_FDefaultOptions: Boolean
     
-    var prettierPath: String = js.native
+    var prettierPath: String
     
-    var resetMocks: Boolean = js.native
+    var resetMocks: Boolean
     
-    var resetModules: Boolean = js.native
+    var resetModules: Boolean
     
-    var restoreMocks: Boolean = js.native
+    var restoreMocks: Boolean
     
-    var roots: js.Array[Path] = js.native
+    var roots: js.Array[Path]
     
-    var runTestsByPath: Boolean = js.native
+    var runTestsByPath: Boolean
     
-    var runner: `jest-runner` = js.native
+    var runner: `jest-runner`
     
-    var setupFiles: js.Array[Path] = js.native
+    var setupFiles: js.Array[Path]
     
-    var setupFilesAfterEnv: js.Array[Path] = js.native
+    var setupFilesAfterEnv: js.Array[Path]
     
-    var skipFilter: Boolean = js.native
+    var skipFilter: Boolean
     
-    var slowTestThreshold: Double = js.native
+    var slowTestThreshold: Double
     
-    var snapshotSerializers: js.Array[Path] = js.native
+    var snapshotSerializers: js.Array[Path]
     
-    var testEnvironment: String = js.native
+    var testEnvironment: String
     
-    var testEnvironmentOptions: Record[String, _] = js.native
+    var testEnvironmentOptions: Record[String, js.Any]
     
-    var testFailureExitCode: String | Double = js.native
+    var testFailureExitCode: String | Double
     
-    var testLocationInResults: Boolean = js.native
+    var testLocationInResults: Boolean
     
-    var testMatch: js.Array[Glob] = js.native
+    var testMatch: js.Array[Glob]
     
-    var testPathIgnorePatterns: js.Array[String] = js.native
+    var testPathIgnorePatterns: js.Array[String]
     
-    var testRegex: js.Array[String] = js.native
+    var testRegex: js.Array[String]
     
-    var testRunner: String = js.native
+    var testRunner: String
     
-    var testSequencer: String = js.native
+    var testSequencer: String
     
-    var testURL: String = js.native
+    var testURL: String
     
-    var timers: Timers = js.native
+    var timers: Timers
     
-    var transformIgnorePatterns: js.Array[Glob] = js.native
+    var transformIgnorePatterns: js.Array[Glob]
     
-    var useStderr: Boolean = js.native
+    var useStderr: Boolean
     
-    var watch: Boolean = js.native
+    var watch: Boolean
     
-    var watchPathIgnorePatterns: js.Array[String] = js.native
+    var watchPathIgnorePatterns: js.Array[String]
     
-    var watchman: Boolean = js.native
+    var watchman: Boolean
   }
   object DefaultOptions {
     
@@ -271,14 +269,13 @@ object configMod {
       restoreMocks: Boolean,
       roots: js.Array[Path],
       runTestsByPath: Boolean,
-      runner: `jest-runner`,
       setupFiles: js.Array[Path],
       setupFilesAfterEnv: js.Array[Path],
       skipFilter: Boolean,
       slowTestThreshold: Double,
       snapshotSerializers: js.Array[Path],
       testEnvironment: String,
-      testEnvironmentOptions: Record[String, _],
+      testEnvironmentOptions: Record[String, js.Any],
       testFailureExitCode: String | Double,
       testLocationInResults: Boolean,
       testMatch: js.Array[Glob],
@@ -294,7 +291,7 @@ object configMod {
       watchPathIgnorePatterns: js.Array[String],
       watchman: Boolean
     ): DefaultOptions = {
-      val __obj = js.Dynamic.literal(automock = automock.asInstanceOf[js.Any], bail = bail.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], clearMocks = clearMocks.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], coveragePathIgnorePatterns = coveragePathIgnorePatterns.asInstanceOf[js.Any], coverageProvider = coverageProvider.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], forceCoverageMatch = forceCoverageMatch.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], haste = haste.asInstanceOf[js.Any], injectGlobals = injectGlobals.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], moduleDirectories = moduleDirectories.asInstanceOf[js.Any], moduleFileExtensions = moduleFileExtensions.asInstanceOf[js.Any], moduleNameMapper = moduleNameMapper.asInstanceOf[js.Any], modulePathIgnorePatterns = modulePathIgnorePatterns.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], prettierPath = prettierPath.asInstanceOf[js.Any], resetMocks = resetMocks.asInstanceOf[js.Any], resetModules = resetModules.asInstanceOf[js.Any], restoreMocks = restoreMocks.asInstanceOf[js.Any], roots = roots.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any], setupFiles = setupFiles.asInstanceOf[js.Any], setupFilesAfterEnv = setupFilesAfterEnv.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], snapshotSerializers = snapshotSerializers.asInstanceOf[js.Any], testEnvironment = testEnvironment.asInstanceOf[js.Any], testEnvironmentOptions = testEnvironmentOptions.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testLocationInResults = testLocationInResults.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any], testPathIgnorePatterns = testPathIgnorePatterns.asInstanceOf[js.Any], testRegex = testRegex.asInstanceOf[js.Any], testRunner = testRunner.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], testURL = testURL.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], transformIgnorePatterns = transformIgnorePatterns.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchPathIgnorePatterns = watchPathIgnorePatterns.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(automock = automock.asInstanceOf[js.Any], bail = bail.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], clearMocks = clearMocks.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], coveragePathIgnorePatterns = coveragePathIgnorePatterns.asInstanceOf[js.Any], coverageProvider = coverageProvider.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], forceCoverageMatch = forceCoverageMatch.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], haste = haste.asInstanceOf[js.Any], injectGlobals = injectGlobals.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], moduleDirectories = moduleDirectories.asInstanceOf[js.Any], moduleFileExtensions = moduleFileExtensions.asInstanceOf[js.Any], moduleNameMapper = moduleNameMapper.asInstanceOf[js.Any], modulePathIgnorePatterns = modulePathIgnorePatterns.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], prettierPath = prettierPath.asInstanceOf[js.Any], resetMocks = resetMocks.asInstanceOf[js.Any], resetModules = resetModules.asInstanceOf[js.Any], restoreMocks = restoreMocks.asInstanceOf[js.Any], roots = roots.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], runner = "jest-runner", setupFiles = setupFiles.asInstanceOf[js.Any], setupFilesAfterEnv = setupFilesAfterEnv.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], snapshotSerializers = snapshotSerializers.asInstanceOf[js.Any], testEnvironment = testEnvironment.asInstanceOf[js.Any], testEnvironmentOptions = testEnvironmentOptions.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testLocationInResults = testLocationInResults.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any], testPathIgnorePatterns = testPathIgnorePatterns.asInstanceOf[js.Any], testRegex = testRegex.asInstanceOf[js.Any], testRunner = testRunner.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], testURL = testURL.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], transformIgnorePatterns = transformIgnorePatterns.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchPathIgnorePatterns = watchPathIgnorePatterns.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
       __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultOptions]
     }
@@ -447,7 +444,7 @@ object configMod {
       def setTestEnvironment(value: String): Self = StObject.set(x, "testEnvironment", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTestEnvironmentOptions(value: Record[String, _]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
+      def setTestEnvironmentOptions(value: Record[String, js.Any]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTestFailureExitCode(value: String | Double): Self = StObject.set(x, "testFailureExitCode", value.asInstanceOf[js.Any])
@@ -508,12 +505,11 @@ object configMod {
     }
   }
   
-  @js.native
   trait DisplayName extends StObject {
     
-    var color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any = js.native
+    var color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any
     
-    var name: String = js.native
+    var name: String
   }
   object DisplayName {
     
@@ -541,121 +537,120 @@ object configMod {
   
   type Glob = String
   
-  @js.native
   trait GlobalConfig extends StObject {
     
-    var bail: Double = js.native
+    var bail: Double
     
-    var changedFilesWithAncestor: Boolean = js.native
+    var changedFilesWithAncestor: Boolean
     
-    var changedSince: js.UndefOr[String] = js.native
+    var changedSince: js.UndefOr[String] = js.undefined
     
-    var collectCoverage: Boolean = js.native
+    var collectCoverage: Boolean
     
-    var collectCoverageFrom: js.Array[Glob] = js.native
+    var collectCoverageFrom: js.Array[Glob]
     
-    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var coverageDirectory: String = js.native
+    var coverageDirectory: String
     
-    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var coverageProvider: CoverageProvider = js.native
+    var coverageProvider: CoverageProvider
     
-    var coverageReporters: CoverageReporters = js.native
+    var coverageReporters: CoverageReporters
     
-    var coverageThreshold: js.UndefOr[CoverageThreshold] = js.native
+    var coverageThreshold: js.UndefOr[CoverageThreshold] = js.undefined
     
-    var detectLeaks: Boolean = js.native
+    var detectLeaks: Boolean
     
-    var detectOpenHandles: Boolean = js.native
+    var detectOpenHandles: Boolean
     
-    var enabledTestsMap: js.UndefOr[StringDictionary[StringDictionary[Boolean]]] = js.native
+    var enabledTestsMap: js.UndefOr[StringDictionary[StringDictionary[Boolean]]] = js.undefined
     
-    var errorOnDeprecated: Boolean = js.native
+    var errorOnDeprecated: Boolean
     
-    var expand: Boolean = js.native
+    var expand: Boolean
     
-    var filter: js.UndefOr[Path] = js.native
+    var filter: js.UndefOr[Path] = js.undefined
     
-    var findRelatedTests: Boolean = js.native
+    var findRelatedTests: Boolean
     
-    var forceExit: Boolean = js.native
+    var forceExit: Boolean
     
-    var globalSetup: js.UndefOr[String] = js.native
+    var globalSetup: js.UndefOr[String] = js.undefined
     
-    var globalTeardown: js.UndefOr[String] = js.native
+    var globalTeardown: js.UndefOr[String] = js.undefined
     
-    var json: Boolean = js.native
+    var json: Boolean
     
-    var lastCommit: Boolean = js.native
+    var lastCommit: Boolean
     
-    var listTests: Boolean = js.native
+    var listTests: Boolean
     
-    var logHeapUsage: Boolean = js.native
+    var logHeapUsage: Boolean
     
-    var maxConcurrency: Double = js.native
+    var maxConcurrency: Double
     
-    var maxWorkers: Double = js.native
+    var maxWorkers: Double
     
-    var noSCM: js.UndefOr[Boolean] = js.native
+    var noSCM: js.UndefOr[Boolean] = js.undefined
     
-    var noStackTrace: Boolean = js.native
+    var noStackTrace: Boolean
     
-    var nonFlagArgs: js.Array[String] = js.native
+    var nonFlagArgs: js.Array[String]
     
-    var notifyMode: NotifyMode = js.native
+    var notifyMode: NotifyMode
     
     @JSName("notify")
-    var notify_FGlobalConfig: Boolean = js.native
+    var notify_FGlobalConfig: Boolean
     
-    var onlyChanged: Boolean = js.native
+    var onlyChanged: Boolean
     
-    var onlyFailures: Boolean = js.native
+    var onlyFailures: Boolean
     
-    var outputFile: js.UndefOr[Path] = js.native
+    var outputFile: js.UndefOr[Path] = js.undefined
     
-    var passWithNoTests: Boolean = js.native
+    var passWithNoTests: Boolean
     
-    var projects: js.Array[Glob] = js.native
+    var projects: js.Array[Glob]
     
-    var replname: js.UndefOr[String] = js.native
+    var replname: js.UndefOr[String] = js.undefined
     
-    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.native
+    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.undefined
     
-    var rootDir: Path = js.native
+    var rootDir: Path
     
-    var runTestsByPath: Boolean = js.native
+    var runTestsByPath: Boolean
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var skipFilter: Boolean = js.native
+    var skipFilter: Boolean
     
-    var testFailureExitCode: Double = js.native
+    var testFailureExitCode: Double
     
-    var testNamePattern: js.UndefOr[String] = js.native
+    var testNamePattern: js.UndefOr[String] = js.undefined
     
-    var testPathPattern: String = js.native
+    var testPathPattern: String
     
-    var testResultsProcessor: js.UndefOr[String] = js.native
+    var testResultsProcessor: js.UndefOr[String] = js.undefined
     
-    var testSequencer: String = js.native
+    var testSequencer: String
     
-    var testTimeout: js.UndefOr[Double] = js.native
+    var testTimeout: js.UndefOr[Double] = js.undefined
     
-    var updateSnapshot: SnapshotUpdateState = js.native
+    var updateSnapshot: SnapshotUpdateState
     
-    var useStderr: Boolean = js.native
+    var useStderr: Boolean
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var watch: Boolean = js.native
+    var watch: Boolean
     
-    var watchAll: Boolean = js.native
+    var watchAll: Boolean
     
-    var watchPlugins: js.UndefOr[js.Array[Config] | Null] = js.native
+    var watchPlugins: js.UndefOr[js.Array[Config] | Null] = js.undefined
     
-    var watchman: Boolean = js.native
+    var watchman: Boolean
   }
   object GlobalConfig {
     
@@ -956,23 +951,22 @@ object configMod {
     }
   }
   
-  @js.native
   trait HasteConfig extends StObject {
     
     /** Whether to hash files using SHA-1. */
-    var computeSha1: js.UndefOr[Boolean] = js.native
+    var computeSha1: js.UndefOr[Boolean] = js.undefined
     
     /** The platform to use as the default, e.g. 'ios'. */
-    var defaultPlatform: js.UndefOr[String | Null] = js.native
+    var defaultPlatform: js.UndefOr[String | Null] = js.undefined
     
     /** Path to a custom implementation of Haste. */
-    var hasteImplModulePath: js.UndefOr[String] = js.native
+    var hasteImplModulePath: js.UndefOr[String] = js.undefined
     
     /** All platforms to target, e.g ['ios', 'android']. */
-    var platforms: js.UndefOr[js.Array[String]] = js.native
+    var platforms: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Whether to throw on error on module collision. */
-    var throwOnModuleCollision: js.UndefOr[Boolean] = js.native
+    var throwOnModuleCollision: js.UndefOr[Boolean] = js.undefined
   }
   object HasteConfig {
     
@@ -1024,213 +1018,212 @@ object configMod {
   }
   
   /* Inlined std.Partial<{  automock :boolean,   bail :boolean | number,   cache :boolean,   cacheDirectory :@jest/types.@jest/types/build/Config.Path,   clearMocks :boolean,   changedFilesWithAncestor :boolean,   changedSince :string,   collectCoverage :boolean,   collectCoverageFrom :std.Array<@jest/types.@jest/types/build/Config.Glob>,   collectCoverageOnlyFrom :{[key: string] : boolean},   coverageDirectory :string,   coveragePathIgnorePatterns :std.Array<string>,   coverageProvider :@jest/types.@jest/types/build/Config.CoverageProvider,   coverageReporters :@jest/types.@jest/types/build/Config.CoverageReporters,   coverageThreshold :{  global :{[key: string] : number}},   dependencyExtractor :string,   detectLeaks :boolean,   detectOpenHandles :boolean,   displayName :string | @jest/types.@jest/types/build/Config.DisplayName,   expand :boolean,   extraGlobals :std.Array<string>,   filter :@jest/types.@jest/types/build/Config.Path,   findRelatedTests :boolean,   forceCoverageMatch :std.Array<@jest/types.@jest/types/build/Config.Glob>,   forceExit :boolean,   json :boolean,   globals :@jest/types.@jest/types/build/Config.ConfigGlobals,   globalSetup :string | null | undefined,   globalTeardown :string | null | undefined,   haste :@jest/types.@jest/types/build/Config.HasteConfig,   injectGlobals :boolean,   reporters :std.Array<string | @jest/types.@jest/types/build/Config.ReporterConfig>,   logHeapUsage :boolean,   lastCommit :boolean,   listTests :boolean,   mapCoverage :boolean,   maxConcurrency :number,   maxWorkers :number | string,   moduleDirectories :std.Array<string>,   moduleFileExtensions :std.Array<string>,   moduleLoader :@jest/types.@jest/types/build/Config.Path,   moduleNameMapper :{[key: string] : string | std.Array<string>},   modulePathIgnorePatterns :std.Array<string>,   modulePaths :std.Array<string>,   name :string,   noStackTrace :boolean,   notify :boolean,   notifyMode :string,   onlyChanged :boolean,   onlyFailures :boolean,   outputFile :@jest/types.@jest/types/build/Config.Path,   passWithNoTests :boolean,   preprocessorIgnorePatterns :std.Array<@jest/types.@jest/types/build/Config.Glob>,   preset :string | null | undefined,   prettierPath :string | null | undefined,   projects :std.Array<@jest/types.@jest/types/build/Config.Glob>,   replname :string | null | undefined,   resetMocks :boolean,   resetModules :boolean,   resolver :@jest/types.@jest/types/build/Config.Path | null | undefined,   restoreMocks :boolean,   rootDir :@jest/types.@jest/types/build/Config.Path,   roots :std.Array<@jest/types.@jest/types/build/Config.Path>,   runner :string,   runTestsByPath :boolean,   scriptPreprocessor :string,   setupFiles :std.Array<@jest/types.@jest/types/build/Config.Path>,   setupTestFrameworkScriptFile :@jest/types.@jest/types/build/Config.Path,   setupFilesAfterEnv :std.Array<@jest/types.@jest/types/build/Config.Path>,   silent :boolean,   skipFilter :boolean,   skipNodeResolution :boolean,   slowTestThreshold :number,   snapshotResolver :@jest/types.@jest/types/build/Config.Path,   snapshotSerializers :std.Array<@jest/types.@jest/types/build/Config.Path>,   errorOnDeprecated :boolean,   testEnvironment :string,   testEnvironmentOptions :std.Record<string, unknown>,   testFailureExitCode :string | number,   testLocationInResults :boolean,   testMatch :std.Array<@jest/types.@jest/types/build/Config.Glob>,   testNamePattern :string,   testPathDirs :std.Array<@jest/types.@jest/types/build/Config.Path>,   testPathIgnorePatterns :std.Array<string>,   testRegex :string | std.Array<string>,   testResultsProcessor :string,   testRunner :string,   testSequencer :string,   testURL :string,   testTimeout :number,   timers :@jest/types.@jest/types/build/Config.Timers,   transform :{[regex: string] : @jest/types.@jest/types/build/Config.Path | @jest/types.@jest/types/build/Config.TransformerConfig},   transformIgnorePatterns :std.Array<@jest/types.@jest/types/build/Config.Glob>,   watchPathIgnorePatterns :std.Array<string>,   unmockedModulePathPatterns :std.Array<string>,   updateSnapshot :boolean,   useStderr :boolean,   verbose :boolean | undefined,   watch :boolean,   watchAll :boolean,   watchman :boolean,   watchPlugins :std.Array<string | [string, std.Record<string, unknown>]>}> */
-  @js.native
   trait InitialOptions extends StObject {
     
-    var automock: js.UndefOr[Boolean] = js.native
+    var automock: js.UndefOr[Boolean] = js.undefined
     
-    var bail: js.UndefOr[Boolean | Double] = js.native
+    var bail: js.UndefOr[Boolean | Double] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var cacheDirectory: js.UndefOr[Path] = js.native
+    var cacheDirectory: js.UndefOr[Path] = js.undefined
     
-    var changedFilesWithAncestor: js.UndefOr[Boolean] = js.native
+    var changedFilesWithAncestor: js.UndefOr[Boolean] = js.undefined
     
-    var changedSince: js.UndefOr[String] = js.native
+    var changedSince: js.UndefOr[String] = js.undefined
     
-    var clearMocks: js.UndefOr[Boolean] = js.native
+    var clearMocks: js.UndefOr[Boolean] = js.undefined
     
-    var collectCoverage: js.UndefOr[Boolean] = js.native
+    var collectCoverage: js.UndefOr[Boolean] = js.undefined
     
-    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.native
+    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var coverageDirectory: js.UndefOr[String] = js.native
+    var coverageDirectory: js.UndefOr[String] = js.undefined
     
-    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var coverageProvider: js.UndefOr[CoverageProvider] = js.native
+    var coverageProvider: js.UndefOr[CoverageProvider] = js.undefined
     
-    var coverageReporters: js.UndefOr[CoverageReporters] = js.native
+    var coverageReporters: js.UndefOr[CoverageReporters] = js.undefined
     
-    var coverageThreshold: js.UndefOr[Global] = js.native
+    var coverageThreshold: js.UndefOr[Global] = js.undefined
     
-    var dependencyExtractor: js.UndefOr[String] = js.native
+    var dependencyExtractor: js.UndefOr[String] = js.undefined
     
-    var detectLeaks: js.UndefOr[Boolean] = js.native
+    var detectLeaks: js.UndefOr[Boolean] = js.undefined
     
-    var detectOpenHandles: js.UndefOr[Boolean] = js.native
+    var detectOpenHandles: js.UndefOr[Boolean] = js.undefined
     
-    var displayName: js.UndefOr[String | DisplayName] = js.native
+    var displayName: js.UndefOr[String | DisplayName] = js.undefined
     
-    var errorOnDeprecated: js.UndefOr[Boolean] = js.native
+    var errorOnDeprecated: js.UndefOr[Boolean] = js.undefined
     
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
-    var extraGlobals: js.UndefOr[js.Array[String]] = js.native
+    var extraGlobals: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[Path] = js.native
+    var filter: js.UndefOr[Path] = js.undefined
     
-    var findRelatedTests: js.UndefOr[Boolean] = js.native
+    var findRelatedTests: js.UndefOr[Boolean] = js.undefined
     
-    var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.native
+    var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var forceExit: js.UndefOr[Boolean] = js.native
+    var forceExit: js.UndefOr[Boolean] = js.undefined
     
-    var globalSetup: js.UndefOr[String | Null] = js.native
+    var globalSetup: js.UndefOr[String | Null] = js.undefined
     
-    var globalTeardown: js.UndefOr[String | Null] = js.native
+    var globalTeardown: js.UndefOr[String | Null] = js.undefined
     
-    var globals: js.UndefOr[ConfigGlobals] = js.native
+    var globals: js.UndefOr[ConfigGlobals] = js.undefined
     
-    var haste: js.UndefOr[HasteConfig] = js.native
+    var haste: js.UndefOr[HasteConfig] = js.undefined
     
-    var injectGlobals: js.UndefOr[Boolean] = js.native
+    var injectGlobals: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var lastCommit: js.UndefOr[Boolean] = js.native
+    var lastCommit: js.UndefOr[Boolean] = js.undefined
     
-    var listTests: js.UndefOr[Boolean] = js.native
+    var listTests: js.UndefOr[Boolean] = js.undefined
     
-    var logHeapUsage: js.UndefOr[Boolean] = js.native
+    var logHeapUsage: js.UndefOr[Boolean] = js.undefined
     
-    var mapCoverage: js.UndefOr[Boolean] = js.native
+    var mapCoverage: js.UndefOr[Boolean] = js.undefined
     
-    var maxConcurrency: js.UndefOr[Double] = js.native
+    var maxConcurrency: js.UndefOr[Double] = js.undefined
     
-    var maxWorkers: js.UndefOr[Double | String] = js.native
+    var maxWorkers: js.UndefOr[Double | String] = js.undefined
     
-    var moduleDirectories: js.UndefOr[js.Array[String]] = js.native
+    var moduleDirectories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var moduleLoader: js.UndefOr[Path] = js.native
+    var moduleLoader: js.UndefOr[Path] = js.undefined
     
-    var moduleNameMapper: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var moduleNameMapper: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var modulePaths: js.UndefOr[js.Array[String]] = js.native
+    var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var noStackTrace: js.UndefOr[Boolean] = js.native
+    var noStackTrace: js.UndefOr[Boolean] = js.undefined
     
-    var notifyMode: js.UndefOr[String] = js.native
+    var notifyMode: js.UndefOr[String] = js.undefined
     
     @JSName("notify")
-    var notify_FInitialOptions: js.UndefOr[Boolean] = js.native
+    var notify_FInitialOptions: js.UndefOr[Boolean] = js.undefined
     
-    var onlyChanged: js.UndefOr[Boolean] = js.native
+    var onlyChanged: js.UndefOr[Boolean] = js.undefined
     
-    var onlyFailures: js.UndefOr[Boolean] = js.native
+    var onlyFailures: js.UndefOr[Boolean] = js.undefined
     
-    var outputFile: js.UndefOr[Path] = js.native
+    var outputFile: js.UndefOr[Path] = js.undefined
     
-    var passWithNoTests: js.UndefOr[Boolean] = js.native
+    var passWithNoTests: js.UndefOr[Boolean] = js.undefined
     
-    var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+    var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var preset: js.UndefOr[String | Null] = js.native
+    var preset: js.UndefOr[String | Null] = js.undefined
     
-    var prettierPath: js.UndefOr[String | Null] = js.native
+    var prettierPath: js.UndefOr[String | Null] = js.undefined
     
-    var projects: js.UndefOr[js.Array[Glob]] = js.native
+    var projects: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var replname: js.UndefOr[String | Null] = js.native
+    var replname: js.UndefOr[String | Null] = js.undefined
     
-    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.native
+    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.undefined
     
-    var resetMocks: js.UndefOr[Boolean] = js.native
+    var resetMocks: js.UndefOr[Boolean] = js.undefined
     
-    var resetModules: js.UndefOr[Boolean] = js.native
+    var resetModules: js.UndefOr[Boolean] = js.undefined
     
-    var resolver: js.UndefOr[Path | Null] = js.native
+    var resolver: js.UndefOr[Path | Null] = js.undefined
     
-    var restoreMocks: js.UndefOr[Boolean] = js.native
+    var restoreMocks: js.UndefOr[Boolean] = js.undefined
     
-    var rootDir: js.UndefOr[Path] = js.native
+    var rootDir: js.UndefOr[Path] = js.undefined
     
-    var roots: js.UndefOr[js.Array[Path]] = js.native
+    var roots: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var runTestsByPath: js.UndefOr[Boolean] = js.native
+    var runTestsByPath: js.UndefOr[Boolean] = js.undefined
     
-    var runner: js.UndefOr[String] = js.native
+    var runner: js.UndefOr[String] = js.undefined
     
-    var scriptPreprocessor: js.UndefOr[String] = js.native
+    var scriptPreprocessor: js.UndefOr[String] = js.undefined
     
-    var setupFiles: js.UndefOr[js.Array[Path]] = js.native
+    var setupFiles: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.native
+    var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.native
+    var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var skipFilter: js.UndefOr[Boolean] = js.native
+    var skipFilter: js.UndefOr[Boolean] = js.undefined
     
-    var skipNodeResolution: js.UndefOr[Boolean] = js.native
+    var skipNodeResolution: js.UndefOr[Boolean] = js.undefined
     
-    var slowTestThreshold: js.UndefOr[Double] = js.native
+    var slowTestThreshold: js.UndefOr[Double] = js.undefined
     
-    var snapshotResolver: js.UndefOr[Path] = js.native
+    var snapshotResolver: js.UndefOr[Path] = js.undefined
     
-    var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.native
+    var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var testEnvironment: js.UndefOr[String] = js.native
+    var testEnvironment: js.UndefOr[String] = js.undefined
     
-    var testEnvironmentOptions: js.UndefOr[Record[String, _]] = js.native
+    var testEnvironmentOptions: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var testFailureExitCode: js.UndefOr[String | Double] = js.native
+    var testFailureExitCode: js.UndefOr[String | Double] = js.undefined
     
-    var testLocationInResults: js.UndefOr[Boolean] = js.native
+    var testLocationInResults: js.UndefOr[Boolean] = js.undefined
     
-    var testMatch: js.UndefOr[js.Array[Glob]] = js.native
+    var testMatch: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var testNamePattern: js.UndefOr[String] = js.native
+    var testNamePattern: js.UndefOr[String] = js.undefined
     
-    var testPathDirs: js.UndefOr[js.Array[Path]] = js.native
+    var testPathDirs: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var testRegex: js.UndefOr[String | js.Array[String]] = js.native
+    var testRegex: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var testResultsProcessor: js.UndefOr[String] = js.native
+    var testResultsProcessor: js.UndefOr[String] = js.undefined
     
-    var testRunner: js.UndefOr[String] = js.native
+    var testRunner: js.UndefOr[String] = js.undefined
     
-    var testSequencer: js.UndefOr[String] = js.native
+    var testSequencer: js.UndefOr[String] = js.undefined
     
-    var testTimeout: js.UndefOr[Double] = js.native
+    var testTimeout: js.UndefOr[Double] = js.undefined
     
-    var testURL: js.UndefOr[String] = js.native
+    var testURL: js.UndefOr[String] = js.undefined
     
-    var timers: js.UndefOr[Timers] = js.native
+    var timers: js.UndefOr[Timers] = js.undefined
     
-    var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.native
+    var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.undefined
     
-    var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+    var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.native
+    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var updateSnapshot: js.UndefOr[Boolean] = js.native
+    var updateSnapshot: js.UndefOr[Boolean] = js.undefined
     
-    var useStderr: js.UndefOr[Boolean] = js.native
+    var useStderr: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
     
-    var watchAll: js.UndefOr[Boolean] = js.native
+    var watchAll: js.UndefOr[Boolean] = js.undefined
     
-    var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, _]])]] = js.native
+    var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, js.Any]])]] = js.undefined
     
-    var watchman: js.UndefOr[Boolean] = js.native
+    var watchman: js.UndefOr[Boolean] = js.undefined
   }
   object InitialOptions {
     
@@ -1769,7 +1762,7 @@ object configMod {
       def setTestEnvironment(value: String): Self = StObject.set(x, "testEnvironment", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTestEnvironmentOptions(value: Record[String, _]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
+      def setTestEnvironmentOptions(value: Record[String, js.Any]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTestEnvironmentOptionsUndefined: Self = StObject.set(x, "testEnvironmentOptions", js.undefined)
@@ -1928,7 +1921,7 @@ object configMod {
       def setWatchPathIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchPathIgnorePatterns", js.Array(value :_*))
       
       @scala.inline
-      def setWatchPlugins(value: js.Array[String | (js.Tuple2[String, Record[String, _]])]): Self = StObject.set(x, "watchPlugins", value.asInstanceOf[js.Any])
+      def setWatchPlugins(value: js.Array[String | (js.Tuple2[String, Record[String, js.Any]])]): Self = StObject.set(x, "watchPlugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWatchPluginsUndefined: Self = StObject.set(x, "watchPlugins", js.undefined)
@@ -1948,218 +1941,217 @@ object configMod {
   }
   
   /* Inlined @jest/types.@jest/types/build/Config.InitialOptions & std.Required<std.Pick<@jest/types.@jest/types/build/Config.InitialOptions, 'rootDir'>> */
-  @js.native
   trait InitialOptionsWithRootDir extends StObject {
     
-    var automock: js.UndefOr[Boolean] = js.native
+    var automock: js.UndefOr[Boolean] = js.undefined
     
-    var bail: js.UndefOr[Boolean | Double] = js.native
+    var bail: js.UndefOr[Boolean | Double] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var cacheDirectory: js.UndefOr[Path] = js.native
+    var cacheDirectory: js.UndefOr[Path] = js.undefined
     
-    var changedFilesWithAncestor: js.UndefOr[Boolean] = js.native
+    var changedFilesWithAncestor: js.UndefOr[Boolean] = js.undefined
     
-    var changedSince: js.UndefOr[String] = js.native
+    var changedSince: js.UndefOr[String] = js.undefined
     
-    var clearMocks: js.UndefOr[Boolean] = js.native
+    var clearMocks: js.UndefOr[Boolean] = js.undefined
     
-    var collectCoverage: js.UndefOr[Boolean] = js.native
+    var collectCoverage: js.UndefOr[Boolean] = js.undefined
     
-    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.native
+    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var coverageDirectory: js.UndefOr[String] = js.native
+    var coverageDirectory: js.UndefOr[String] = js.undefined
     
-    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var coverageProvider: js.UndefOr[CoverageProvider] = js.native
+    var coverageProvider: js.UndefOr[CoverageProvider] = js.undefined
     
-    var coverageReporters: js.UndefOr[CoverageReporters] = js.native
+    var coverageReporters: js.UndefOr[CoverageReporters] = js.undefined
     
-    var coverageThreshold: js.UndefOr[Global] = js.native
+    var coverageThreshold: js.UndefOr[Global] = js.undefined
     
-    var dependencyExtractor: js.UndefOr[String] = js.native
+    var dependencyExtractor: js.UndefOr[String] = js.undefined
     
-    var detectLeaks: js.UndefOr[Boolean] = js.native
+    var detectLeaks: js.UndefOr[Boolean] = js.undefined
     
-    var detectOpenHandles: js.UndefOr[Boolean] = js.native
+    var detectOpenHandles: js.UndefOr[Boolean] = js.undefined
     
-    var displayName: js.UndefOr[String | DisplayName] = js.native
+    var displayName: js.UndefOr[String | DisplayName] = js.undefined
     
-    var errorOnDeprecated: js.UndefOr[Boolean] = js.native
+    var errorOnDeprecated: js.UndefOr[Boolean] = js.undefined
     
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
-    var extraGlobals: js.UndefOr[js.Array[String]] = js.native
+    var extraGlobals: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[Path] = js.native
+    var filter: js.UndefOr[Path] = js.undefined
     
-    var findRelatedTests: js.UndefOr[Boolean] = js.native
+    var findRelatedTests: js.UndefOr[Boolean] = js.undefined
     
-    var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.native
+    var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var forceExit: js.UndefOr[Boolean] = js.native
+    var forceExit: js.UndefOr[Boolean] = js.undefined
     
-    var globalSetup: js.UndefOr[String | Null] = js.native
+    var globalSetup: js.UndefOr[String | Null] = js.undefined
     
-    var globalTeardown: js.UndefOr[String | Null] = js.native
+    var globalTeardown: js.UndefOr[String | Null] = js.undefined
     
-    var globals: js.UndefOr[ConfigGlobals] = js.native
+    var globals: js.UndefOr[ConfigGlobals] = js.undefined
     
-    var haste: js.UndefOr[HasteConfig] = js.native
+    var haste: js.UndefOr[HasteConfig] = js.undefined
     
-    var injectGlobals: js.UndefOr[Boolean] = js.native
+    var injectGlobals: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var lastCommit: js.UndefOr[Boolean] = js.native
+    var lastCommit: js.UndefOr[Boolean] = js.undefined
     
-    var listTests: js.UndefOr[Boolean] = js.native
+    var listTests: js.UndefOr[Boolean] = js.undefined
     
-    var logHeapUsage: js.UndefOr[Boolean] = js.native
+    var logHeapUsage: js.UndefOr[Boolean] = js.undefined
     
-    var mapCoverage: js.UndefOr[Boolean] = js.native
+    var mapCoverage: js.UndefOr[Boolean] = js.undefined
     
-    var maxConcurrency: js.UndefOr[Double] = js.native
+    var maxConcurrency: js.UndefOr[Double] = js.undefined
     
-    var maxWorkers: js.UndefOr[Double | String] = js.native
+    var maxWorkers: js.UndefOr[Double | String] = js.undefined
     
-    var moduleDirectories: js.UndefOr[js.Array[String]] = js.native
+    var moduleDirectories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var moduleLoader: js.UndefOr[Path] = js.native
+    var moduleLoader: js.UndefOr[Path] = js.undefined
     
-    var moduleNameMapper: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var moduleNameMapper: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var modulePaths: js.UndefOr[js.Array[String]] = js.native
+    var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var noStackTrace: js.UndefOr[Boolean] = js.native
+    var noStackTrace: js.UndefOr[Boolean] = js.undefined
     
-    var notifyMode: js.UndefOr[String] = js.native
+    var notifyMode: js.UndefOr[String] = js.undefined
     
     @JSName("notify")
-    var notify_FInitialOptionsWithRootDir: js.UndefOr[Boolean] = js.native
+    var notify_FInitialOptionsWithRootDir: js.UndefOr[Boolean] = js.undefined
     
-    var onlyChanged: js.UndefOr[Boolean] = js.native
+    var onlyChanged: js.UndefOr[Boolean] = js.undefined
     
-    var onlyFailures: js.UndefOr[Boolean] = js.native
+    var onlyFailures: js.UndefOr[Boolean] = js.undefined
     
-    var outputFile: js.UndefOr[Path] = js.native
+    var outputFile: js.UndefOr[Path] = js.undefined
     
-    var passWithNoTests: js.UndefOr[Boolean] = js.native
+    var passWithNoTests: js.UndefOr[Boolean] = js.undefined
     
-    var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+    var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var preset: js.UndefOr[String | Null] = js.native
+    var preset: js.UndefOr[String | Null] = js.undefined
     
-    var prettierPath: js.UndefOr[String | Null] = js.native
+    var prettierPath: js.UndefOr[String | Null] = js.undefined
     
-    var projects: js.UndefOr[js.Array[Glob]] = js.native
+    var projects: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var replname: js.UndefOr[String | Null] = js.native
+    var replname: js.UndefOr[String | Null] = js.undefined
     
-    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.native
+    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.undefined
     
-    var resetMocks: js.UndefOr[Boolean] = js.native
+    var resetMocks: js.UndefOr[Boolean] = js.undefined
     
-    var resetModules: js.UndefOr[Boolean] = js.native
+    var resetModules: js.UndefOr[Boolean] = js.undefined
     
-    var resolver: js.UndefOr[Path | Null] = js.native
+    var resolver: js.UndefOr[Path | Null] = js.undefined
     
-    var restoreMocks: js.UndefOr[Boolean] = js.native
+    var restoreMocks: js.UndefOr[Boolean] = js.undefined
     
-    var rootDir: js.UndefOr[Path] with Path = js.native
+    var rootDir: js.UndefOr[Path] & Path
     
-    var roots: js.UndefOr[js.Array[Path]] = js.native
+    var roots: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var runTestsByPath: js.UndefOr[Boolean] = js.native
+    var runTestsByPath: js.UndefOr[Boolean] = js.undefined
     
-    var runner: js.UndefOr[String] = js.native
+    var runner: js.UndefOr[String] = js.undefined
     
-    var scriptPreprocessor: js.UndefOr[String] = js.native
+    var scriptPreprocessor: js.UndefOr[String] = js.undefined
     
-    var setupFiles: js.UndefOr[js.Array[Path]] = js.native
+    var setupFiles: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.native
+    var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.native
+    var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var skipFilter: js.UndefOr[Boolean] = js.native
+    var skipFilter: js.UndefOr[Boolean] = js.undefined
     
-    var skipNodeResolution: js.UndefOr[Boolean] = js.native
+    var skipNodeResolution: js.UndefOr[Boolean] = js.undefined
     
-    var slowTestThreshold: js.UndefOr[Double] = js.native
+    var slowTestThreshold: js.UndefOr[Double] = js.undefined
     
-    var snapshotResolver: js.UndefOr[Path] = js.native
+    var snapshotResolver: js.UndefOr[Path] = js.undefined
     
-    var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.native
+    var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var testEnvironment: js.UndefOr[String] = js.native
+    var testEnvironment: js.UndefOr[String] = js.undefined
     
-    var testEnvironmentOptions: js.UndefOr[Record[String, _]] = js.native
+    var testEnvironmentOptions: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var testFailureExitCode: js.UndefOr[String | Double] = js.native
+    var testFailureExitCode: js.UndefOr[String | Double] = js.undefined
     
-    var testLocationInResults: js.UndefOr[Boolean] = js.native
+    var testLocationInResults: js.UndefOr[Boolean] = js.undefined
     
-    var testMatch: js.UndefOr[js.Array[Glob]] = js.native
+    var testMatch: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var testNamePattern: js.UndefOr[String] = js.native
+    var testNamePattern: js.UndefOr[String] = js.undefined
     
-    var testPathDirs: js.UndefOr[js.Array[Path]] = js.native
+    var testPathDirs: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var testRegex: js.UndefOr[String | js.Array[String]] = js.native
+    var testRegex: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var testResultsProcessor: js.UndefOr[String] = js.native
+    var testResultsProcessor: js.UndefOr[String] = js.undefined
     
-    var testRunner: js.UndefOr[String] = js.native
+    var testRunner: js.UndefOr[String] = js.undefined
     
-    var testSequencer: js.UndefOr[String] = js.native
+    var testSequencer: js.UndefOr[String] = js.undefined
     
-    var testTimeout: js.UndefOr[Double] = js.native
+    var testTimeout: js.UndefOr[Double] = js.undefined
     
-    var testURL: js.UndefOr[String] = js.native
+    var testURL: js.UndefOr[String] = js.undefined
     
-    var timers: js.UndefOr[Timers] = js.native
+    var timers: js.UndefOr[Timers] = js.undefined
     
-    var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.native
+    var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.undefined
     
-    var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+    var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.native
+    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var updateSnapshot: js.UndefOr[Boolean] = js.native
+    var updateSnapshot: js.UndefOr[Boolean] = js.undefined
     
-    var useStderr: js.UndefOr[Boolean] = js.native
+    var useStderr: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
     
-    var watchAll: js.UndefOr[Boolean] = js.native
+    var watchAll: js.UndefOr[Boolean] = js.undefined
     
-    var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, _]])]] = js.native
+    var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, js.Any]])]] = js.undefined
     
-    var watchman: js.UndefOr[Boolean] = js.native
+    var watchman: js.UndefOr[Boolean] = js.undefined
   }
   object InitialOptionsWithRootDir {
     
     @scala.inline
-    def apply(rootDir: js.UndefOr[Path] with Path): InitialOptionsWithRootDir = {
+    def apply(rootDir: js.UndefOr[Path] & Path): InitialOptionsWithRootDir = {
       val __obj = js.Dynamic.literal(rootDir = rootDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialOptionsWithRootDir]
     }
@@ -2594,7 +2586,7 @@ object configMod {
       def setRestoreMocksUndefined: Self = StObject.set(x, "restoreMocks", js.undefined)
       
       @scala.inline
-      def setRootDir(value: js.UndefOr[Path] with Path): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      def setRootDir(value: js.UndefOr[Path] & Path): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRoots(value: js.Array[Path]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
@@ -2690,7 +2682,7 @@ object configMod {
       def setTestEnvironment(value: String): Self = StObject.set(x, "testEnvironment", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTestEnvironmentOptions(value: Record[String, _]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
+      def setTestEnvironmentOptions(value: Record[String, js.Any]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTestEnvironmentOptionsUndefined: Self = StObject.set(x, "testEnvironmentOptions", js.undefined)
@@ -2849,7 +2841,7 @@ object configMod {
       def setWatchPathIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchPathIgnorePatterns", js.Array(value :_*))
       
       @scala.inline
-      def setWatchPlugins(value: js.Array[String | (js.Tuple2[String, Record[String, _]])]): Self = StObject.set(x, "watchPlugins", value.asInstanceOf[js.Any])
+      def setWatchPlugins(value: js.Array[String | (js.Tuple2[String, Record[String, js.Any]])]): Self = StObject.set(x, "watchPlugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWatchPluginsUndefined: Self = StObject.set(x, "watchPlugins", js.undefined)
@@ -2900,118 +2892,117 @@ object configMod {
   
   type Path = String
   
-  @js.native
   trait ProjectConfig extends StObject {
     
-    var automock: Boolean = js.native
+    var automock: Boolean
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var cacheDirectory: Path = js.native
+    var cacheDirectory: Path
     
-    var clearMocks: Boolean = js.native
+    var clearMocks: Boolean
     
-    var coveragePathIgnorePatterns: js.Array[String] = js.native
+    var coveragePathIgnorePatterns: js.Array[String]
     
-    var cwd: Path = js.native
+    var cwd: Path
     
-    var dependencyExtractor: js.UndefOr[String] = js.native
+    var dependencyExtractor: js.UndefOr[String] = js.undefined
     
-    var detectLeaks: Boolean = js.native
+    var detectLeaks: Boolean
     
-    var detectOpenHandles: Boolean = js.native
+    var detectOpenHandles: Boolean
     
-    var displayName: js.UndefOr[DisplayName] = js.native
+    var displayName: js.UndefOr[DisplayName] = js.undefined
     
-    var errorOnDeprecated: Boolean = js.native
+    var errorOnDeprecated: Boolean
     
     var extraGlobals: js.Array[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 51 */ js.Any
-      ] = js.native
+      ]
     
-    var filter: js.UndefOr[Path] = js.native
+    var filter: js.UndefOr[Path] = js.undefined
     
-    var forceCoverageMatch: js.Array[Glob] = js.native
+    var forceCoverageMatch: js.Array[Glob]
     
-    var globalSetup: js.UndefOr[String] = js.native
+    var globalSetup: js.UndefOr[String] = js.undefined
     
-    var globalTeardown: js.UndefOr[String] = js.native
+    var globalTeardown: js.UndefOr[String] = js.undefined
     
-    var globals: ConfigGlobals = js.native
+    var globals: ConfigGlobals
     
-    var haste: HasteConfig = js.native
+    var haste: HasteConfig
     
-    var injectGlobals: Boolean = js.native
+    var injectGlobals: Boolean
     
-    var moduleDirectories: js.Array[String] = js.native
+    var moduleDirectories: js.Array[String]
     
-    var moduleFileExtensions: js.Array[String] = js.native
+    var moduleFileExtensions: js.Array[String]
     
-    var moduleLoader: js.UndefOr[Path] = js.native
+    var moduleLoader: js.UndefOr[Path] = js.undefined
     
-    var moduleNameMapper: js.Array[js.Tuple2[String, String]] = js.native
+    var moduleNameMapper: js.Array[js.Tuple2[String, String]]
     
-    var modulePathIgnorePatterns: js.Array[String] = js.native
+    var modulePathIgnorePatterns: js.Array[String]
     
-    var modulePaths: js.UndefOr[js.Array[String]] = js.native
+    var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var prettierPath: String = js.native
+    var prettierPath: String
     
-    var resetMocks: Boolean = js.native
+    var resetMocks: Boolean
     
-    var resetModules: Boolean = js.native
+    var resetModules: Boolean
     
-    var resolver: js.UndefOr[Path] = js.native
+    var resolver: js.UndefOr[Path] = js.undefined
     
-    var restoreMocks: Boolean = js.native
+    var restoreMocks: Boolean
     
-    var rootDir: Path = js.native
+    var rootDir: Path
     
-    var roots: js.Array[Path] = js.native
+    var roots: js.Array[Path]
     
-    var runner: String = js.native
+    var runner: String
     
-    var setupFiles: js.Array[Path] = js.native
+    var setupFiles: js.Array[Path]
     
-    var setupFilesAfterEnv: js.Array[Path] = js.native
+    var setupFilesAfterEnv: js.Array[Path]
     
-    var skipFilter: Boolean = js.native
+    var skipFilter: Boolean
     
-    var skipNodeResolution: js.UndefOr[Boolean] = js.native
+    var skipNodeResolution: js.UndefOr[Boolean] = js.undefined
     
-    var slowTestThreshold: Double = js.native
+    var slowTestThreshold: Double
     
-    var snapshotResolver: js.UndefOr[Path] = js.native
+    var snapshotResolver: js.UndefOr[Path] = js.undefined
     
-    var snapshotSerializers: js.Array[Path] = js.native
+    var snapshotSerializers: js.Array[Path]
     
-    var testEnvironment: String = js.native
+    var testEnvironment: String
     
-    var testEnvironmentOptions: Record[String, _] = js.native
+    var testEnvironmentOptions: Record[String, js.Any]
     
-    var testLocationInResults: Boolean = js.native
+    var testLocationInResults: Boolean
     
-    var testMatch: js.Array[Glob] = js.native
+    var testMatch: js.Array[Glob]
     
-    var testPathIgnorePatterns: js.Array[String] = js.native
+    var testPathIgnorePatterns: js.Array[String]
     
-    var testRegex: js.Array[String | RegExp] = js.native
+    var testRegex: js.Array[String | RegExp]
     
-    var testRunner: String = js.native
+    var testRunner: String
     
-    var testURL: String = js.native
+    var testURL: String
     
-    var timers: Timers = js.native
+    var timers: Timers
     
-    var transform: js.Array[js.Tuple3[String, Path, Record[String, _]]] = js.native
+    var transform: js.Array[js.Tuple3[String, Path, Record[String, js.Any]]]
     
-    var transformIgnorePatterns: js.Array[Glob] = js.native
+    var transformIgnorePatterns: js.Array[Glob]
     
-    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.native
+    var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var watchPathIgnorePatterns: js.Array[String] = js.native
+    var watchPathIgnorePatterns: js.Array[String]
   }
   object ProjectConfig {
     
@@ -3051,7 +3042,7 @@ object configMod {
       slowTestThreshold: Double,
       snapshotSerializers: js.Array[Path],
       testEnvironment: String,
-      testEnvironmentOptions: Record[String, _],
+      testEnvironmentOptions: Record[String, js.Any],
       testLocationInResults: Boolean,
       testMatch: js.Array[Glob],
       testPathIgnorePatterns: js.Array[String],
@@ -3059,7 +3050,7 @@ object configMod {
       testRunner: String,
       testURL: String,
       timers: Timers,
-      transform: js.Array[js.Tuple3[String, Path, Record[String, _]]],
+      transform: js.Array[js.Tuple3[String, Path, Record[String, js.Any]]],
       transformIgnorePatterns: js.Array[Glob],
       watchPathIgnorePatterns: js.Array[String]
     ): ProjectConfig = {
@@ -3267,7 +3258,7 @@ object configMod {
       def setTestEnvironment(value: String): Self = StObject.set(x, "testEnvironment", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTestEnvironmentOptions(value: Record[String, _]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
+      def setTestEnvironmentOptions(value: Record[String, js.Any]): Self = StObject.set(x, "testEnvironmentOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTestLocationInResults(value: Boolean): Self = StObject.set(x, "testLocationInResults", value.asInstanceOf[js.Any])
@@ -3300,7 +3291,7 @@ object configMod {
       def setTimers(value: Timers): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTransform(value: js.Array[js.Tuple3[String, Path, Record[String, _]]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      def setTransform(value: js.Array[js.Tuple3[String, Path, Record[String, js.Any]]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformIgnorePatterns(value: js.Array[Glob]): Self = StObject.set(x, "transformIgnorePatterns", value.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Save
 import typings.officeJsPreview.officeJsPreviewStrings.SkipSave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait Workbook extends ClientObject {
+trait Workbook
+  extends StObject
+     with ClientObject {
   
   /**
     *

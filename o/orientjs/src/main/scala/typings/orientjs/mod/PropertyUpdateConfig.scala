@@ -4,37 +4,35 @@ import typings.orientjs.anon.Fields
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyUpdateConfig extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var collate: js.UndefOr[String] = js.native
+  var collate: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[Fields] = js.native
+  var custom: js.UndefOr[Fields] = js.undefined
   
-  var linkedClass: js.UndefOr[String] = js.native
+  var linkedClass: js.UndefOr[String] = js.undefined
   
-  var linkedType: js.UndefOr[String] = js.native
+  var linkedType: js.UndefOr[String] = js.undefined
   
-  var mandatory: js.UndefOr[Boolean] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var notNull: js.UndefOr[Boolean] = js.native
+  var notNull: js.UndefOr[Boolean] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var regexp: js.UndefOr[RegExp | String] = js.native
+  var regexp: js.UndefOr[RegExp | String] = js.undefined
   
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
 }
 object PropertyUpdateConfig {
   

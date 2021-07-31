@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic algorithm for autoscaling.
   */
-@js.native
 trait SchemaBasicAutoscalingAlgorithm extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaBasicAutoscalingAlgorithm extends StObject {
     * the update operation from the previous event has completed.Bounds: 2m,
     * 1d. Default: 2m.
     */
-  var cooldownPeriod: js.UndefOr[String] = js.native
+  var cooldownPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * Required. YARN autoscaling configuration.
     */
-  var yarnConfig: js.UndefOr[SchemaBasicYarnAutoscalingConfig] = js.native
+  var yarnConfig: js.UndefOr[SchemaBasicYarnAutoscalingConfig] = js.undefined
 }
 object SchemaBasicAutoscalingAlgorithm {
   

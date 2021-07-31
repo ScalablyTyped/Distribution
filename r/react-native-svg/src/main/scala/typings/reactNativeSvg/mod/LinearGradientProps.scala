@@ -2,25 +2,23 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGradientProps extends StObject {
   
-  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.native
+  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   
-  var gradientUnits: js.UndefOr[Units] = js.native
+  var gradientUnits: js.UndefOr[Units] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var x1: js.UndefOr[NumberProp] = js.native
+  var x1: js.UndefOr[NumberProp] = js.undefined
   
-  var x2: js.UndefOr[NumberProp] = js.native
+  var x2: js.UndefOr[NumberProp] = js.undefined
   
-  var y1: js.UndefOr[NumberProp] = js.native
+  var y1: js.UndefOr[NumberProp] = js.undefined
   
-  var y2: js.UndefOr[NumberProp] = js.native
+  var y2: js.UndefOr[NumberProp] = js.undefined
 }
 object LinearGradientProps {
   

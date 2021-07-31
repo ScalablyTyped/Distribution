@@ -2,15 +2,13 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dst extends StObject {
     
-    var dst: Boolean = js.native
+    var dst: Boolean
   }
   object Dst {
     
@@ -28,13 +26,12 @@ object anon {
     }
   }
   
-  @js.native
   trait FormatLength extends StObject {
     
-    var formatLength: js.UndefOr[String] = js.native
+    var formatLength: js.UndefOr[String] = js.undefined
     
     // "short" | "medium" | "long" | "full"
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
   }
   object FormatLength {
     
@@ -61,12 +58,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var item: js.UndefOr[String] = js.native
+    var item: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Item {
     
@@ -93,10 +89,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Type {
     
@@ -117,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     
@@ -138,10 +132,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueArray extends StObject {
     
-    var value: js.Array[String] = js.native
+    var value: js.Array[String]
   }
   object ValueArray {
     
@@ -162,10 +155,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueNumber extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object ValueNumber {
     

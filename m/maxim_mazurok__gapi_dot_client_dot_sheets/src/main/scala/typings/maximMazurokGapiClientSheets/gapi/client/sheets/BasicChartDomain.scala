@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicChartDomain extends StObject {
   
   /** The data of the domain. For example, if charting stock prices over time, this is the data representing the dates. */
-  var domain: js.UndefOr[ChartData] = js.native
+  var domain: js.UndefOr[ChartData] = js.undefined
   
   /** True to reverse the order of the domain values (horizontal axis). */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object BasicChartDomain {
   

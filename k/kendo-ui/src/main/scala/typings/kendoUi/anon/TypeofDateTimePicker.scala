@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.DateTimePicker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDateTimePicker extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): DateTimePicker = js.native
+  def extend(proto: js.Object): DateTimePicker
   
   /* static member */
-  var fn: DateTimePicker = js.native
+  var fn: DateTimePicker
 }
 object TypeofDateTimePicker {
   

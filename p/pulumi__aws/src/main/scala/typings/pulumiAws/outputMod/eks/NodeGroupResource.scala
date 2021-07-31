@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupResource extends StObject {
   
   /**
     * List of objects containing information about AutoScaling Groups.
     */
-  var autoscalingGroups: js.Array[NodeGroupResourceAutoscalingGroup] = js.native
+  var autoscalingGroups: js.Array[NodeGroupResourceAutoscalingGroup]
   
   /**
     * Identifier of the remote access EC2 Security Group.
     */
-  var remoteAccessSecurityGroupId: String = js.native
+  var remoteAccessSecurityGroupId: String
 }
 object NodeGroupResource {
   

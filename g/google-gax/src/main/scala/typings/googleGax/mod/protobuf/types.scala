@@ -2,7 +2,6 @@ package typings.googleGax.mod.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object types {
@@ -162,9 +161,9 @@ object types {
     
     @JSImport("google-gax", "protobuf.types.defaults.message")
     @js.native
-    def message: Null = js.native
+    def message: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def message_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+    def message_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
     
     @JSImport("google-gax", "protobuf.types.defaults.sfixed32")
     @js.native

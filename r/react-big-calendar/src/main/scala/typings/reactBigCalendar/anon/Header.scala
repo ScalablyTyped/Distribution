@@ -4,15 +4,13 @@ import typings.react.mod.ComponentType
 import typings.reactBigCalendar.mod.EventProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header[TEvent /* <: js.Object */] extends StObject {
   
-  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.native
+  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   
-  var header: js.UndefOr[ComponentType[js.Object]] = js.native
+  var header: js.UndefOr[ComponentType[js.Object]] = js.undefined
 }
 object Header {
   
@@ -23,7 +21,7 @@ object Header {
   }
   
   @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header[_], TEvent /* <: js.Object */] (val x: Self with Header[TEvent]) extends AnyVal {
+  implicit class HeaderMutableBuilder[Self <: Header[?], TEvent /* <: js.Object */] (val x: Self & Header[TEvent]) extends AnyVal {
     
     @scala.inline
     def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])

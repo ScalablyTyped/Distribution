@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the group/ungroup functionality. */
-@js.native
-trait XShapeGrouper extends XInterface {
+trait XShapeGrouper
+  extends StObject
+     with XInterface {
   
   /**
     * groups the {@link Shapes} inside a collection.
@@ -21,13 +21,13 @@ trait XShapeGrouper extends XInterface {
     * @param xShapes the {@link Shapes} that will be grouped. They must all be inserted into the same {@link GenericDrawPage} .
     * @returns a newly created {@link GroupShape} that contains all {@link Shapes} from xShapes and is also added to the {@link GenericDrawPage} of the {@link S
     */
-  def group(xShapes: XShapes): XShapeGroup = js.native
+  def group(xShapes: XShapes): XShapeGroup
   
   /**
     * ungroups a given {@link GroupShape} .
     * @param aGroup moves all {@link Shapes} from this {@link GroupShape} to the parent {@link XShapes} of the {@link GroupShape} . The {@link GroupShape} is
     */
-  def ungroup(aGroup: XShapeGroup): Unit = js.native
+  def ungroup(aGroup: XShapeGroup): Unit
 }
 object XShapeGrouper {
   

@@ -6,7 +6,6 @@ import typings.std.Event
 import typings.virtualKeyboard.mod.KeyboardOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,22 +17,21 @@ object mod {
   
   type Keyboard = Component[KeyboardProps, KeyboardState, js.Any]
   
-  @js.native
   trait KeyboardProps extends StObject {
     
-    var callbackParent: js.UndefOr[kbEvents] = js.native
+    var callbackParent: js.UndefOr[kbEvents] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onAccepted: js.UndefOr[kbEvents] = js.native
+    var onAccepted: js.UndefOr[kbEvents] = js.undefined
     
-    var onChange: js.UndefOr[kbEvents] = js.native
+    var onChange: js.UndefOr[kbEvents] = js.undefined
     
-    var options: js.UndefOr[ReactKeyboardOptions] = js.native
+    var options: js.UndefOr[ReactKeyboardOptions] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object KeyboardProps {
     
@@ -96,12 +94,11 @@ object mod {
     }
   }
   
-  @js.native
   trait KeyboardState extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var value: String = js.native
+    var value: String
   }
   object KeyboardState {
     
@@ -122,19 +119,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReactKeyboardOptions extends KeyboardOptions {
+  trait ReactKeyboardOptions
+    extends StObject
+       with KeyboardOptions {
     
     @JSName("accepted")
-    var accepted_ReactKeyboardOptions: js.UndefOr[scala.Nothing] = js.native
+    var accepted_ReactKeyboardOptions: Unit
   }
   object ReactKeyboardOptions {
     
     @scala.inline
-    def apply(`type`: String): ReactKeyboardOptions = {
-      val __obj = js.Dynamic.literal()
+    def apply(accepted: Unit, `type`: String): ReactKeyboardOptions = {
+      val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactKeyboardOptions]
+    }
+    
+    @scala.inline
+    implicit class ReactKeyboardOptionsMutableBuilder[Self <: ReactKeyboardOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAccepted(value: Unit): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     }
   }
   

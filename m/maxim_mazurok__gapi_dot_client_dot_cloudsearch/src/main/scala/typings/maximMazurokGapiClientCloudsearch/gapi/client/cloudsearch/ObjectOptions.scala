@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectOptions extends StObject {
   
   /** Options that determine how the object is displayed in the Cloud Search results page. */
-  var displayOptions: js.UndefOr[ObjectDisplayOptions] = js.native
+  var displayOptions: js.UndefOr[ObjectDisplayOptions] = js.undefined
   
   /** The freshness options for an object. */
-  var freshnessOptions: js.UndefOr[FreshnessOptions] = js.native
+  var freshnessOptions: js.UndefOr[FreshnessOptions] = js.undefined
 }
 object ObjectOptions {
   

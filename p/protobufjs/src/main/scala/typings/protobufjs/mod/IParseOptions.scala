@@ -2,20 +2,18 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IParseOptions extends StObject {
   
   /** Recognize double-slash comments in addition to doc-block comments. */
-  var alternateCommentMode: js.UndefOr[Boolean] = js.native
+  var alternateCommentMode: js.UndefOr[Boolean] = js.undefined
   
   /** Keeps field casing instead of converting to camel case */
-  var keepCase: js.UndefOr[Boolean] = js.native
+  var keepCase: js.UndefOr[Boolean] = js.undefined
   
   /** Use trailing comment when both leading comment and trailing comment exist. */
-  var preferTrailingComment: js.UndefOr[Boolean] = js.native
+  var preferTrailingComment: js.UndefOr[Boolean] = js.undefined
 }
 object IParseOptions {
   

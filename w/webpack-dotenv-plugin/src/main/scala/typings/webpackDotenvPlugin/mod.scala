@@ -2,7 +2,6 @@ package typings.webpackDotenvPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,17 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowEmptyValues: js.UndefOr[Boolean] = js.native
+    var allowEmptyValues: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var sample: js.UndefOr[String] = js.native
+    var sample: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCostCategoryDefinitionRequest extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
     */
-  var CostCategoryArn: Arn = js.native
+  var CostCategoryArn: Arn
 }
 object DeleteCostCategoryDefinitionRequest {
   

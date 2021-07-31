@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketCountByEncryptionType extends StObject {
   
   /**
     *  The total number of buckets that use an AWS Key Management Service (AWS KMS) customer master key (CMK) to encrypt objects. These buckets use AWS managed AWS KMS (AWS-KMS) encryption or customer managed AWS KMS (SSE-KMS) encryption.
     */
-  var kmsManaged: js.UndefOr[long] = js.native
+  var kmsManaged: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that use an Amazon S3 managed key to encrypt objects. These buckets use Amazon S3 managed (SSE-S3) encryption.
     */
-  var s3Managed: js.UndefOr[long] = js.native
+  var s3Managed: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that don't encrypt objects by default. Default encryption is disabled for these buckets.
     */
-  var unencrypted: js.UndefOr[long] = js.native
+  var unencrypted: js.UndefOr[long] = js.undefined
 }
 object BucketCountByEncryptionType {
   

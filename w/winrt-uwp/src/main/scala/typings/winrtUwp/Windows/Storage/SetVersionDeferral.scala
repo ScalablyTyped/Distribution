@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages a delayed set version operation. */
-@js.native
 trait SetVersionDeferral extends StObject {
   
   /** Notifies the system that the app has set the version of the application data in its app data store. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object SetVersionDeferral {
   

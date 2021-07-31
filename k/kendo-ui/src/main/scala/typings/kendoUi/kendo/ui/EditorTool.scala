@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorTool extends StObject {
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var exec: js.UndefOr[js.Function] = js.native
+  var exec: js.UndefOr[js.Function] = js.undefined
   
-  var items: js.UndefOr[js.Array[EditorToolItem]] = js.native
+  var items: js.UndefOr[js.Array[EditorToolItem]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var palette: js.UndefOr[String | js.Any] = js.native
+  var palette: js.UndefOr[String | js.Any] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object EditorTool {
   

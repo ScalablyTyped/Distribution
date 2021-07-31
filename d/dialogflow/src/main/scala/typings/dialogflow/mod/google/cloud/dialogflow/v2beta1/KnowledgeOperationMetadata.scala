@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a KnowledgeOperationMetadata. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new KnowledgeOperationMetadata.
   * @param [properties] Properties to set
   */
-class KnowledgeOperationMetadata () extends IKnowledgeOperationMetadata {
+class KnowledgeOperationMetadata ()
+  extends StObject
+     with IKnowledgeOperationMetadata {
   def this(properties: IKnowledgeOperationMetadata) = this()
   
   /** KnowledgeOperationMetadata state. */
@@ -33,6 +34,10 @@ class KnowledgeOperationMetadata () extends IKnowledgeOperationMetadata {
 }
 object KnowledgeOperationMetadata {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait State extends StObject
   /** State enum. */
@@ -41,23 +46,31 @@ object KnowledgeOperationMetadata {
   object State extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[State with Double] = js.native
+    def apply(value: Double): js.UndefOr[State & Double] = js.native
     
     @js.native
-    sealed trait DONE extends State
-    /* 3 */ val DONE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.DONE with Double = js.native
+    sealed trait DONE
+      extends StObject
+         with State
+    /* 3 */ val DONE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.DONE & Double = js.native
     
     @js.native
-    sealed trait PENDING extends State
-    /* 1 */ val PENDING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.PENDING with Double = js.native
+    sealed trait PENDING
+      extends StObject
+         with State
+    /* 1 */ val PENDING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.PENDING & Double = js.native
     
     @js.native
-    sealed trait RUNNING extends State
-    /* 2 */ val RUNNING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.RUNNING with Double = js.native
+    sealed trait RUNNING
+      extends StObject
+         with State
+    /* 2 */ val RUNNING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.RUNNING & Double = js.native
     
     @js.native
-    sealed trait STATE_UNSPECIFIED extends State
-    /* 0 */ val STATE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.STATE_UNSPECIFIED with Double = js.native
+    sealed trait STATE_UNSPECIFIED
+      extends StObject
+         with State
+    /* 0 */ val STATE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.STATE_UNSPECIFIED & Double = js.native
   }
   
   /**
@@ -66,12 +79,10 @@ object KnowledgeOperationMetadata {
     * @returns KnowledgeOperationMetadata instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.create")
-  @js.native
-  def create(): KnowledgeOperationMetadata = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.create")
-  @js.native
-  def create(properties: IKnowledgeOperationMetadata): KnowledgeOperationMetadata = js.native
+  @scala.inline
+  def create(): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeOperationMetadata]
+  @scala.inline
+  def create(properties: IKnowledgeOperationMetadata): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Decodes a KnowledgeOperationMetadata message from the specified reader or buffer.
@@ -82,18 +93,14 @@ object KnowledgeOperationMetadata {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decode")
-  @js.native
-  def decode(reader: Reader): KnowledgeOperationMetadata = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): KnowledgeOperationMetadata = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decode")
-  @js.native
-  def decode(reader: Uint8Array): KnowledgeOperationMetadata = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): KnowledgeOperationMetadata = js.native
+  @scala.inline
+  def decode(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  @scala.inline
+  def decode(reader: Reader, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
+  @scala.inline
+  def decode(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Decodes a KnowledgeOperationMetadata message from the specified reader or buffer, length delimited.
@@ -103,12 +110,10 @@ object KnowledgeOperationMetadata {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): KnowledgeOperationMetadata = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): KnowledgeOperationMetadata = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Encodes the specified KnowledgeOperationMetadata message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.verify|verify} messages.
@@ -117,12 +122,10 @@ object KnowledgeOperationMetadata {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.encode")
-  @js.native
-  def encode(message: IKnowledgeOperationMetadata): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.encode")
-  @js.native
-  def encode(message: IKnowledgeOperationMetadata, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified KnowledgeOperationMetadata message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.verify|verify} messages.
@@ -131,12 +134,10 @@ object KnowledgeOperationMetadata {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IKnowledgeOperationMetadata): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IKnowledgeOperationMetadata, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a KnowledgeOperationMetadata message from a plain object. Also converts values to their respective internal types.
@@ -144,9 +145,8 @@ object KnowledgeOperationMetadata {
     * @returns KnowledgeOperationMetadata
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): KnowledgeOperationMetadata = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Creates a plain object from a KnowledgeOperationMetadata message. Also converts values to other types if specified.
@@ -155,12 +155,10 @@ object KnowledgeOperationMetadata {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.toObject")
-  @js.native
-  def toObject(message: KnowledgeOperationMetadata): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.toObject")
-  @js.native
-  def toObject(message: KnowledgeOperationMetadata, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: KnowledgeOperationMetadata): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: KnowledgeOperationMetadata, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a KnowledgeOperationMetadata message.
@@ -168,7 +166,6 @@ object KnowledgeOperationMetadata {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

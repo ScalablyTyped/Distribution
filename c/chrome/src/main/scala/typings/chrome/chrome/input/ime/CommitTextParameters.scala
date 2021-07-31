@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitTextParameters extends StObject {
   
   /** ID of the context where the text will be committed */
-  var contextID: Double = js.native
+  var contextID: Double
   
   /** The text to commit */
-  var text: String = js.native
+  var text: String
 }
 object CommitTextParameters {
   

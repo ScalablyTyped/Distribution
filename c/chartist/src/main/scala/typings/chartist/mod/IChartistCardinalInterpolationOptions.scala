@@ -2,13 +2,13 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartistCardinalInterpolationOptions extends IChartistInterpolationOptions {
+trait IChartistCardinalInterpolationOptions
+  extends StObject
+     with IChartistInterpolationOptions {
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
 }
 object IChartistCardinalInterpolationOptions {
   

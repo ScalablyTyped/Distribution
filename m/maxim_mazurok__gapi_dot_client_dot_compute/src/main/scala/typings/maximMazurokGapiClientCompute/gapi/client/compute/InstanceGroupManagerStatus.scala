@@ -2,27 +2,25 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupManagerStatus extends StObject {
   
   /** [Output Only] The URL of the Autoscaler that targets this instance group manager. */
-  var autoscaler: js.UndefOr[String] = js.native
+  var autoscaler: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A bit indicating whether the managed instance group is in a stable state. A stable state means that: none of the instances in the managed instance group is currently
     * undergoing any type of change (for example, creation, restart, or deletion); no future changes are scheduled for instances in the managed instance group; and the managed instance
     * group itself is not being modified.
     */
-  var isStable: js.UndefOr[Boolean] = js.native
+  var isStable: js.UndefOr[Boolean] = js.undefined
   
   /** [Output Only] Stateful status of the given Instance Group Manager. */
-  var stateful: js.UndefOr[InstanceGroupManagerStatusStateful] = js.native
+  var stateful: js.UndefOr[InstanceGroupManagerStatusStateful] = js.undefined
   
   /** [Output Only] A status of consistency of Instances' versions with their target version specified by version field on Instance Group Manager. */
-  var versionTarget: js.UndefOr[InstanceGroupManagerStatusVersionTarget] = js.native
+  var versionTarget: js.UndefOr[InstanceGroupManagerStatusVersionTarget] = js.undefined
 }
 object InstanceGroupManagerStatus {
   

@@ -7,7 +7,6 @@ import typings.javascriptTimeAgo.javascriptTimeAgoStrings.other
 import typings.javascriptTimeAgo.javascriptTimeAgoStrings.two
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
@@ -30,26 +29,25 @@ object localeMod {
     def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
   }
   
-  @js.native
   trait Duration extends StObject {
     
-    var day: Tense = js.native
+    var day: Tense
     
-    var flavour: js.UndefOr[Formats] = js.native
+    var flavour: js.UndefOr[Formats] = js.undefined
     
-    var hour: Tense = js.native
+    var hour: Tense
     
-    var minute: Tense = js.native
+    var minute: Tense
     
-    var month: Tense = js.native
+    var month: Tense
     
-    var quarter: Tense = js.native
+    var quarter: Tense
     
-    var second: Tense = js.native
+    var second: Tense
     
-    var week: Tense = js.native
+    var week: Tense
     
-    var year: Tense = js.native
+    var year: Tense
   }
   object Duration {
     
@@ -167,28 +165,27 @@ object localeMod {
     def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var long: js.UndefOr[Duration] = js.native
+    var long: js.UndefOr[Duration] = js.undefined
     
-    var `long-convenient`: js.UndefOr[Duration] = js.native
+    var `long-convenient`: js.UndefOr[Duration] = js.undefined
     
-    var `long-time`: js.UndefOr[Duration] = js.native
+    var `long-time`: js.UndefOr[Duration] = js.undefined
     
-    var narrow: js.UndefOr[Duration] = js.native
+    var narrow: js.UndefOr[Duration] = js.undefined
     
-    def quantify(n: Double): one | two | few | other = js.native
+    def quantify(n: Double): one | two | few | other
     
-    var short: js.UndefOr[Duration] = js.native
+    var short: js.UndefOr[Duration] = js.undefined
     
-    var `short-convenient`: js.UndefOr[Duration] = js.native
+    var `short-convenient`: js.UndefOr[Duration] = js.undefined
     
-    var `short-time`: js.UndefOr[Duration] = js.native
+    var `short-time`: js.UndefOr[Duration] = js.undefined
     
-    var tiny: js.UndefOr[Duration] = js.native
+    var tiny: js.UndefOr[Duration] = js.undefined
   }
   object Locale {
     
@@ -257,16 +254,15 @@ object localeMod {
     }
   }
   
-  @js.native
   trait QuantifyType extends StObject {
     
-    var few: js.UndefOr[String] = js.native
+    var few: js.UndefOr[String] = js.undefined
     
-    var one: String = js.native
+    var one: String
     
-    var other: String = js.native
+    var other: String
     
-    var two: js.UndefOr[String] = js.native
+    var two: js.UndefOr[String] = js.undefined
   }
   object QuantifyType {
     
@@ -299,18 +295,17 @@ object localeMod {
     }
   }
   
-  @js.native
   trait RTFFormatter extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var localeMatcher: String = js.native
+    var localeMatcher: String
     
-    var numberFormat: StringDictionary[js.Any] = js.native
+    var numberFormat: StringDictionary[js.Any]
     
-    var numeric: String = js.native
+    var numeric: String
     
-    var style: DefaultFormats = js.native
+    var style: DefaultFormats
   }
   object RTFFormatter {
     
@@ -346,18 +341,17 @@ object localeMod {
     }
   }
   
-  @js.native
   trait Tense extends StObject {
     
-    var current: js.UndefOr[QuantifyType | String] = js.native
+    var current: js.UndefOr[QuantifyType | String] = js.undefined
     
-    var future: js.UndefOr[QuantifyType | String] = js.native
+    var future: js.UndefOr[QuantifyType | String] = js.undefined
     
-    var next: js.UndefOr[QuantifyType | String] = js.native
+    var next: js.UndefOr[QuantifyType | String] = js.undefined
     
-    var past: js.UndefOr[QuantifyType | String] = js.native
+    var past: js.UndefOr[QuantifyType | String] = js.undefined
     
-    var previous: js.UndefOr[QuantifyType | String] = js.native
+    var previous: js.UndefOr[QuantifyType | String] = js.undefined
   }
   object Tense {
     

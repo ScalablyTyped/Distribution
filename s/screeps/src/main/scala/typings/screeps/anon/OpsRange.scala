@@ -5,17 +5,15 @@ import typings.screeps.screepsNumbers.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsRange extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: typings.screeps.screepsNumbers.`8` = js.native
+  var cooldown: typings.screeps.screepsNumbers.`8`
   
-  var duration: typings.screeps.screepsNumbers.`10` = js.native
+  var duration: typings.screeps.screepsNumbers.`10`
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`20`, 
@@ -23,7 +21,7 @@ trait OpsRange extends StObject {
     typings.screeps.screepsNumbers.`22`, 
     typings.screeps.screepsNumbers.`23`, 
     typings.screeps.screepsNumbers.`24`
-  ] = js.native
+  ]
   
   var ops: js.Tuple5[
     `50`, 
@@ -31,17 +29,14 @@ trait OpsRange extends StObject {
     typings.screeps.screepsNumbers.`30`, 
     typings.screeps.screepsNumbers.`20`, 
     typings.screeps.screepsNumbers.`10`
-  ] = js.native
+  ]
   
-  var range: `50` = js.native
+  var range: `50`
 }
 object OpsRange {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: typings.screeps.screepsNumbers.`8`,
-    duration: typings.screeps.screepsNumbers.`10`,
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`20`, 
       typings.screeps.screepsNumbers.`21`, 
@@ -55,10 +50,9 @@ object OpsRange {
       typings.screeps.screepsNumbers.`30`, 
       typings.screeps.screepsNumbers.`20`, 
       typings.screeps.screepsNumbers.`10`
-    ],
-    range: `50`
+    ]
   ): OpsRange = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 8, duration = 10, level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = 50)
     __obj.asInstanceOf[OpsRange]
   }
   

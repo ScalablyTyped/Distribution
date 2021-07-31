@@ -2,25 +2,23 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The history of the submission. This currently includes state and grade
   * histories.
   */
-@js.native
 trait SchemaSubmissionHistory extends StObject {
   
   /**
     * The grade history information of the submission, if present.
     */
-  var gradeHistory: js.UndefOr[SchemaGradeHistory] = js.native
+  var gradeHistory: js.UndefOr[SchemaGradeHistory] = js.undefined
   
   /**
     * The state history information of the submission, if present.
     */
-  var stateHistory: js.UndefOr[SchemaStateHistory] = js.native
+  var stateHistory: js.UndefOr[SchemaStateHistory] = js.undefined
 }
 object SchemaSubmissionHistory {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PoolInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom tape pool. Use the ListTapePools operation to return a list of custom tape pools for your account and AWS Region.
     */
-  var PoolARN: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARN] = js.native
+  var PoolARN: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolARN] = js.undefined
   
   /**
     * The name of the custom tape pool. PoolName can use all ASCII characters, except '/' and '\'.
     */
-  var PoolName: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolName] = js.native
+  var PoolName: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolName] = js.undefined
   
   /**
     * Status of the custom tape pool. Pool can be ACTIVE or DELETED.
     */
-  var PoolStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolStatus] = js.native
+  var PoolStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolStatus] = js.undefined
   
   /**
     * Tape retention lock time is set in days. Tape retention lock can be enabled for up to 100 years (36,500 days).
     */
-  var RetentionLockTimeInDays: js.UndefOr[typings.awsSdk.storagegatewayMod.RetentionLockTimeInDays] = js.native
+  var RetentionLockTimeInDays: js.UndefOr[typings.awsSdk.storagegatewayMod.RetentionLockTimeInDays] = js.undefined
   
   /**
     * Tape retention lock type, which can be configured in two modes. When configured in governance mode, AWS accounts with specific IAM permissions are authorized to remove the tape retention lock from archived virtual tapes. When configured in compliance mode, the tape retention lock cannot be removed by any user, including the root AWS account.
     */
-  var RetentionLockType: js.UndefOr[typings.awsSdk.storagegatewayMod.RetentionLockType] = js.native
+  var RetentionLockType: js.UndefOr[typings.awsSdk.storagegatewayMod.RetentionLockType] = js.undefined
   
   /**
     * The storage class that is associated with the custom pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
-  var StorageClass: js.UndefOr[TapeStorageClass] = js.native
+  var StorageClass: js.UndefOr[TapeStorageClass] = js.undefined
 }
 object PoolInfo {
   

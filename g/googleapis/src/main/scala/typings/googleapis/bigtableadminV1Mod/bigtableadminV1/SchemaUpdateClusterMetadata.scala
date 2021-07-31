@@ -2,29 +2,27 @@ package typings.googleapis.bigtableadminV1Mod.bigtableadminV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata for the Operation returned by UpdateCluster.
   */
-@js.native
 trait SchemaUpdateClusterMetadata extends StObject {
   
   /**
     * The time at which the operation failed or was completed successfully.
     */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /**
     * The request that prompted the initiation of this UpdateCluster operation.
     */
-  var originalRequest: js.UndefOr[SchemaCluster] = js.native
+  var originalRequest: js.UndefOr[SchemaCluster] = js.undefined
   
   /**
     * The time at which the original request was received.
     */
-  var requestTime: js.UndefOr[String] = js.native
+  var requestTime: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateClusterMetadata {
   

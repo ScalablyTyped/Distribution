@@ -4,7 +4,6 @@ import typings.awsSdk.elasticacheMod.ClientConfiguration
 import typings.awsSdk.elasticacheMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "ElastiCache")

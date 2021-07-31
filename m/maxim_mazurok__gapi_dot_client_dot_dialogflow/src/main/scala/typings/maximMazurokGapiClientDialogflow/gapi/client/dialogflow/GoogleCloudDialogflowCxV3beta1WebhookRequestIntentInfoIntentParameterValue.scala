@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends StObject {
   
   /** Always present. Original text value extracted from user utterance. */
-  var originalValue: js.UndefOr[String] = js.native
+  var originalValue: js.UndefOr[String] = js.undefined
   
   /** Always present. Structured value for the parameter extracted from user utterance. */
-  var resolvedValue: js.UndefOr[js.Any] = js.native
+  var resolvedValue: js.UndefOr[js.Any] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue {
   

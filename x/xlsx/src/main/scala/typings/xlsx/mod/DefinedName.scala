@@ -2,23 +2,21 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinedName extends StObject {
   
   /** Name comment */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /** Name */
-  var Name: String = js.native
+  var Name: String
   
   /** Reference */
-  var Ref: String = js.native
+  var Ref: String
   
   /** Scope (undefined for workbook scope) */
-  var Sheet: js.UndefOr[Double] = js.native
+  var Sheet: js.UndefOr[Double] = js.undefined
 }
 object DefinedName {
   

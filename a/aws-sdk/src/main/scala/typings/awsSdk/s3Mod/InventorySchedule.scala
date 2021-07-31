@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySchedule extends StObject {
   
   /**
     * Specifies how frequently inventory results are produced.
     */
-  var Frequency: InventoryFrequency = js.native
+  var Frequency: InventoryFrequency
 }
 object InventorySchedule {
   

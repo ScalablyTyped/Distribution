@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightImpactGraphEdge extends StObject {
   
   /**
     * Identifier of the edge. Unique within a service map.
     */
-  var ReferenceId: js.UndefOr[NullableInteger] = js.native
+  var ReferenceId: js.UndefOr[NullableInteger] = js.undefined
 }
 object InsightImpactGraphEdge {
   

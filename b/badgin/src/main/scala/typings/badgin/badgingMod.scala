@@ -4,31 +4,30 @@ import typings.badgin.anon.Clear
 import typings.badgin.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgingMod {
   
-  @JSImport("badgin/build/badging", "clear")
+  @JSImport("badgin/build/badging", JSImport.Namespace)
   @js.native
-  def clear(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("badgin/build/badging", "isAvailable")
-  @js.native
-  def isAvailable(): Boolean = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("badgin/build/badging", "set")
-  @js.native
-  def set(value: Value): Boolean = js.native
+  @scala.inline
+  def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def set(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object global {
     
-    @js.native
     trait Navigator extends StObject {
       
-      var clearExperimentalAppBadge: js.UndefOr[js.Function0[Unit]] = js.native
+      var clearExperimentalAppBadge: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var setExperimentalAppBadge: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
+      var setExperimentalAppBadge: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object Navigator {
       
@@ -55,10 +54,9 @@ object badgingMod {
       }
     }
     
-    @js.native
     trait Window extends StObject {
       
-      var ExperimentalBadge: js.UndefOr[Clear] = js.native
+      var ExperimentalBadge: js.UndefOr[Clear] = js.undefined
     }
     object Window {
       

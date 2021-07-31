@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceManagementWebpropertiesList extends StandardParameters {
+trait ParamsResourceManagementWebpropertiesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account ID to retrieve web properties for. Can either be a specific
     * account ID or '~all', which refers to all the accounts that user has
     * access to.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of web properties to include in this response.
     */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
     * An index of the first entity to retrieve. Use this parameter as a
     * pagination mechanism along with the max-results parameter.
     */
-  var `start-index`: js.UndefOr[Double] = js.native
+  var `start-index`: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceManagementWebpropertiesList {
   

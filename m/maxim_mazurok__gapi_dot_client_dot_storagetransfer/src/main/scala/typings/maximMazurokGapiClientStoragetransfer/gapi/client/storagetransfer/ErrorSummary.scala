@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorSummary extends StObject {
   
   /** Required. */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /** Required. Count of this type of error. */
-  var errorCount: js.UndefOr[String] = js.native
+  var errorCount: js.UndefOr[String] = js.undefined
   
   /** Error samples. At most 5 error log entries will be recorded for a given error code for a single transfer operation. */
-  var errorLogEntries: js.UndefOr[js.Array[ErrorLogEntry]] = js.native
+  var errorLogEntries: js.UndefOr[js.Array[ErrorLogEntry]] = js.undefined
 }
 object ErrorSummary {
   

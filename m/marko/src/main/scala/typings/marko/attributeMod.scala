@@ -2,57 +2,106 @@ package typings.marko
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributeMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Attribute", JSImport.Default)
   @js.native
-  class default () extends Attribute
-  
-  @js.native
-  trait Attribute extends StObject {
+  class default ()
+    extends StObject
+       with Attribute {
     
+    /* CompleteClass */
     var allowExpressions: Boolean = js.native
     
+    /* CompleteClass */
     var autocomplete: Boolean = js.native
     
+    /* CompleteClass */
     var defaultValue: String = js.native
     
+    /* CompleteClass */
     var deprecated: js.Any = js.native
     
+    /* CompleteClass */
     var dynamicAttribute: Boolean = js.native
     
-    var enum: js.Any = js.native
+    /* CompleteClass */
+    var `enum`: js.Any = js.native
     
+    /* CompleteClass */
     var filePath: String = js.native
     
+    /* CompleteClass */
     var html: Boolean = js.native
     
+    /* CompleteClass */
     var ignore: Boolean = js.native
     
+    /* CompleteClass */
     var key: String = js.native
     
-    var name: js.UndefOr[String] = js.native
-    
-    var pattern: js.UndefOr[js.Any] = js.native
-    
-    var preserveName: js.UndefOr[String] = js.native
-    
-    var ref: js.UndefOr[String] = js.native
-    
+    /* CompleteClass */
     var removeDashes: Boolean = js.native
     
+    /* CompleteClass */
     var required: Boolean = js.native
     
+    /* CompleteClass */
     var setContextFlag: String = js.native
     
+    /* CompleteClass */
     var setFlag: String | Null = js.native
     
+    /* CompleteClass */
     var targetProperty: String | Null = js.native
     
+    /* CompleteClass */
     var `type`: String | Null = js.native
+  }
+  
+  trait Attribute extends StObject {
+    
+    var allowExpressions: Boolean
+    
+    var autocomplete: Boolean
+    
+    var defaultValue: String
+    
+    var deprecated: js.Any
+    
+    var dynamicAttribute: Boolean
+    
+    var `enum`: js.Any
+    
+    var filePath: String
+    
+    var html: Boolean
+    
+    var ignore: Boolean
+    
+    var key: String
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var pattern: js.UndefOr[js.Any] = js.undefined
+    
+    var preserveName: js.UndefOr[String] = js.undefined
+    
+    var ref: js.UndefOr[String] = js.undefined
+    
+    var removeDashes: Boolean
+    
+    var required: Boolean
+    
+    var setContextFlag: String
+    
+    var setFlag: String | Null
+    
+    var targetProperty: String | Null
+    
+    var `type`: String | Null
   }
   object Attribute {
     
@@ -63,7 +112,7 @@ object attributeMod {
       defaultValue: String,
       deprecated: js.Any,
       dynamicAttribute: Boolean,
-      enum: js.Any,
+      `enum`: js.Any,
       filePath: String,
       html: Boolean,
       ignore: Boolean,
@@ -72,7 +121,9 @@ object attributeMod {
       required: Boolean,
       setContextFlag: String
     ): Attribute = {
-      val __obj = js.Dynamic.literal(allowExpressions = allowExpressions.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], deprecated = deprecated.asInstanceOf[js.Any], dynamicAttribute = dynamicAttribute.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], removeDashes = removeDashes.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setContextFlag = setContextFlag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowExpressions = allowExpressions.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], deprecated = deprecated.asInstanceOf[js.Any], dynamicAttribute = dynamicAttribute.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], removeDashes = removeDashes.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setContextFlag = setContextFlag.asInstanceOf[js.Any], setFlag = null, targetProperty = null)
+      __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[Attribute]
     }
     

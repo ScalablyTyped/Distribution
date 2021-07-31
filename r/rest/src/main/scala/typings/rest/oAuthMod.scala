@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rest.mod.Interceptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oAuthMod extends Shortcut {
@@ -13,24 +12,23 @@ object oAuthMod extends Shortcut {
   @js.native
   val ^ : Interceptor[Config] = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var authorizationUrl: js.UndefOr[String] = js.native
+    var authorizationUrl: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var oAuthCallback: js.UndefOr[js.Function1[/* hash */ String, Unit]] = js.native
+    var oAuthCallback: js.UndefOr[js.Function1[/* hash */ String, Unit]] = js.undefined
     
-    var oAuthCallbackName: js.UndefOr[String] = js.native
+    var oAuthCallbackName: js.UndefOr[String] = js.undefined
     
-    var redirectUrl: js.UndefOr[String] = js.native
+    var redirectUrl: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var windowStrategy: js.UndefOr[js.Function1[/* url */ String, DismissWindow]] = js.native
+    var windowStrategy: js.UndefOr[js.Function1[/* url */ String, DismissWindow]] = js.undefined
   }
   object Config {
     

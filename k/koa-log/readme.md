@@ -11,8 +11,8 @@ logger middlware for koa
 | Full name          | koa-log |
 | Keywords           | koa, logger, middlware |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 8993 |
+| # dependents       | 6 |
+| # downloads        | 15369 |
 | # stars            | 0 |
 
 ## Links

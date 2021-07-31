@@ -2,7 +2,6 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object User {
@@ -14,41 +13,52 @@ object User {
   object RoleType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RoleType with Double] = js.native
+    def apply(value: Double): js.UndefOr[RoleType & Double] = js.native
     
     @js.native
-    sealed trait Admin extends RoleType
-    /* 1 */ val Admin: typings.backlogJs.mod.Option.User.RoleType.Admin with Double = js.native
+    sealed trait Admin
+      extends StObject
+         with RoleType
+    /* 1 */ val Admin: typings.backlogJs.mod.Option.User.RoleType.Admin & Double = js.native
     
     @js.native
-    sealed trait GuestReporter extends RoleType
-    /* 5 */ val GuestReporter: typings.backlogJs.mod.Option.User.RoleType.GuestReporter with Double = js.native
+    sealed trait GuestReporter
+      extends StObject
+         with RoleType
+    /* 5 */ val GuestReporter: typings.backlogJs.mod.Option.User.RoleType.GuestReporter & Double = js.native
     
     @js.native
-    sealed trait GuestViewer extends RoleType
-    /* 6 */ val GuestViewer: typings.backlogJs.mod.Option.User.RoleType.GuestViewer with Double = js.native
+    sealed trait GuestViewer
+      extends StObject
+         with RoleType
+    /* 6 */ val GuestViewer: typings.backlogJs.mod.Option.User.RoleType.GuestViewer & Double = js.native
     
     @js.native
-    sealed trait Reporter extends RoleType
-    /* 3 */ val Reporter: typings.backlogJs.mod.Option.User.RoleType.Reporter with Double = js.native
+    sealed trait Reporter
+      extends StObject
+         with RoleType
+    /* 3 */ val Reporter: typings.backlogJs.mod.Option.User.RoleType.Reporter & Double = js.native
     
     @js.native
-    sealed trait User extends RoleType
-    /* 2 */ val User: typings.backlogJs.mod.Option.User.RoleType.User with Double = js.native
+    sealed trait User
+      extends StObject
+         with RoleType
+    /* 2 */ val User: typings.backlogJs.mod.Option.User.RoleType.User & Double = js.native
     
     @js.native
-    sealed trait Viewer extends RoleType
-    /* 4 */ val Viewer: typings.backlogJs.mod.Option.User.RoleType.Viewer with Double = js.native
+    sealed trait Viewer
+      extends StObject
+         with RoleType
+    /* 4 */ val Viewer: typings.backlogJs.mod.Option.User.RoleType.Viewer & Double = js.native
   }
   
-  @js.native
   trait GetRecentlyViewedParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetRecentlyViewedParams {
     
@@ -81,18 +91,17 @@ object User {
     }
   }
   
-  @js.native
   trait GetUserActivitiesParams extends StObject {
     
-    var activityTypeId: js.UndefOr[js.Array[ActivityType]] = js.native
+    var activityTypeId: js.UndefOr[js.Array[ActivityType]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetUserActivitiesParams {
     
@@ -140,12 +149,11 @@ object User {
     }
   }
   
-  @js.native
   trait GetUserStarsCountParams extends StObject {
     
-    var since: js.UndefOr[String] = js.native
+    var since: js.UndefOr[String] = js.undefined
     
-    var until: js.UndefOr[String] = js.native
+    var until: js.UndefOr[String] = js.undefined
   }
   object GetUserStarsCountParams {
     
@@ -172,16 +180,15 @@ object User {
     }
   }
   
-  @js.native
   trait GetUserStarsParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetUserStarsParams {
     
@@ -220,16 +227,15 @@ object User {
     }
   }
   
-  @js.native
   trait PatchUserParams extends StObject {
     
-    var mailAddress: js.UndefOr[String] = js.native
+    var mailAddress: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var roleType: js.UndefOr[RoleType] = js.native
+    var roleType: js.UndefOr[RoleType] = js.undefined
   }
   object PatchUserParams {
     
@@ -268,18 +274,17 @@ object User {
     }
   }
   
-  @js.native
   trait PostUserParams extends StObject {
     
-    var mailAddress: String = js.native
+    var mailAddress: String
     
-    var name: String = js.native
+    var name: String
     
-    var password: String = js.native
+    var password: String
     
-    var roleType: RoleType = js.native
+    var roleType: RoleType
     
-    var userId: String = js.native
+    var userId: String
   }
   object PostUserParams {
     

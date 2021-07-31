@@ -6,18 +6,16 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.FloatingActionButtonOptions> */
-@js.native
 trait PartialFloatingActionButt extends StObject {
   
-  var direction: js.UndefOr[top | right | buttom | left] = js.native
+  var direction: js.UndefOr[top | right | buttom | left] = js.undefined
   
-  var hoverEnabled: js.UndefOr[Boolean] = js.native
+  var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var toolbarEnabled: js.UndefOr[Boolean] = js.native
+  var toolbarEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object PartialFloatingActionButt {
   

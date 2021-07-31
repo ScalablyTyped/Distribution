@@ -2,14 +2,12 @@ package typings.tensorflowTfjsConverter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ref extends StObject {
   
   @JSName("$ref")
-  var $ref: String = js.native
+  var $ref: String
 }
 object Ref {
   

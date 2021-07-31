@@ -2,42 +2,40 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunReportResponse extends StObject {
   
   /** Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows. */
-  var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.native
+  var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.undefined
   
   /** If requested, the maximum values of metrics. */
-  var maximums: js.UndefOr[js.Array[Row]] = js.native
+  var maximums: js.UndefOr[js.Array[Row]] = js.undefined
   
   /** Metadata for the report. */
-  var metadata: js.UndefOr[ResponseMetaData] = js.native
+  var metadata: js.UndefOr[ResponseMetaData] = js.undefined
   
   /** Describes metric columns. The number of MetricHeaders and ordering of MetricHeaders matches the metrics present in rows. */
-  var metricHeaders: js.UndefOr[js.Array[MetricHeader]] = js.native
+  var metricHeaders: js.UndefOr[js.Array[MetricHeader]] = js.undefined
   
   /** If requested, the minimum values of metrics. */
-  var minimums: js.UndefOr[js.Array[Row]] = js.native
+  var minimums: js.UndefOr[js.Array[Row]] = js.undefined
   
   /** This Analytics Property's quota state including this request. */
-  var propertyQuota: js.UndefOr[PropertyQuota] = js.native
+  var propertyQuota: js.UndefOr[PropertyQuota] = js.undefined
   
   /**
     * The total number of rows in the query result, regardless of the number of rows returned in the response. For example if a query returns 175 rows and includes limit = 50 in the API
     * request, the response will contain row_count = 175 but only 50 rows. To learn more about this pagination parameter, see
     * [Pagination](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination).
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /** Rows of dimension value combinations and metric values in the report. */
-  var rows: js.UndefOr[js.Array[Row]] = js.native
+  var rows: js.UndefOr[js.Array[Row]] = js.undefined
   
   /** If requested, the totaled values of metrics. */
-  var totals: js.UndefOr[js.Array[Row]] = js.native
+  var totals: js.UndefOr[js.Array[Row]] = js.undefined
 }
 object RunReportResponse {
   

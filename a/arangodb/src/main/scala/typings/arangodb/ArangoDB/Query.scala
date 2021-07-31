@@ -2,18 +2,16 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // AQL
-@js.native
 trait Query extends StObject {
   
-  var bindVars: js.UndefOr[js.Object] = js.native
+  var bindVars: js.UndefOr[js.Object] = js.undefined
   
-  var options: js.UndefOr[QueryOptions] = js.native
+  var options: js.UndefOr[QueryOptions] = js.undefined
   
-  var query: String = js.native
+  var query: String
 }
 object Query {
   

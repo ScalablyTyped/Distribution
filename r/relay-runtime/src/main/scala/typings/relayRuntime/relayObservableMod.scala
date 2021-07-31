@@ -3,14 +3,15 @@ package typings.relayRuntime
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayObservableMod {
   
   @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable")
   @js.native
-  class RelayObservable[T] protected () extends Subscribable[T] {
+  class RelayObservable[T] protected ()
+    extends StObject
+       with Subscribable[T] {
     // Use RelayObservable.create(source);
     protected def this(source: scala.Nothing) = this()
     
@@ -50,7 +51,7 @@ object relayObservableMod {
       *
       * This is useful for cleanup such as resource finalization.
       */
-    def `finally`(fn: js.Function0[_]): RelayObservable[T] = js.native
+    def `finally`(fn: js.Function0[js.Any]): RelayObservable[T] = js.native
     
     /**
       * Returns a new Observable which is identical to this one, unless this
@@ -95,17 +96,19 @@ object relayObservableMod {
   /* static members */
   object RelayObservable {
     
-    @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable.create")
+    @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable")
     @js.native
-    def create[V](source: Source[V]): RelayObservable[V] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[V](source: Source[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * Accepts various kinds of data sources, and always returns a RelayObservable
       * useful for accepting the result of a user-provided FetchFunction.
       */
-    @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable.from")
-    @js.native
-    def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = js.native
+    @scala.inline
+    def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * When an emitted error event is not handled by an Observer, it is reported
@@ -132,25 +135,23 @@ object relayObservableMod {
       *    application flow such as network failure, and may not have useful
       *    stack traces.
       */
-    @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable.onUnhandledError")
-    @js.native
-    def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ObservableFromValue[T] = Subscribable[T] | js.Promise[T] | T
   
-  @js.native
   trait Observer[T] extends StObject {
     
-    val complete: js.UndefOr[js.Function0[Unit]] = js.native
+    val complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    val error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    val next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+    val next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
     
-    val start: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.native
+    val start: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.undefined
     
-    val unsubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.native
+    val unsubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.undefined
   }
   object Observer {
     
@@ -161,7 +162,7 @@ object relayObservableMod {
     }
     
     @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -217,12 +218,11 @@ object relayObservableMod {
     def subscribe(observer: Sink[T]): Subscription = js.native
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    val closed: Boolean = js.native
+    val closed: Boolean
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Subscription {
     

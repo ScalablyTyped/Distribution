@@ -2,20 +2,18 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to `ListBeaconAttachments` that contains the requested
   * attachments.
   */
-@js.native
 trait SchemaListBeaconAttachmentsResponse extends StObject {
   
   /**
     * The attachments that corresponded to the request params.
     */
-  var attachments: js.UndefOr[js.Array[SchemaBeaconAttachment]] = js.native
+  var attachments: js.UndefOr[js.Array[SchemaBeaconAttachment]] = js.undefined
 }
 object SchemaListBeaconAttachmentsResponse {
   

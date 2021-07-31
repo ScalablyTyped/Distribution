@@ -9,7 +9,6 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Reducer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,20 +30,19 @@ object mod {
   @js.native
   val toastr: ToastrEmitter = js.native
   
-  @js.native
   trait AddToastPayload extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[BasicToastrOptions | LightToastrOptions] = js.native
+    var options: js.UndefOr[BasicToastrOptions | LightToastrOptions] = js.undefined
     
-    var position: js.UndefOr[positionType] = js.native
+    var position: js.UndefOr[positionType] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: toastType = js.native
+    var `type`: toastType
   }
   object AddToastPayload {
     
@@ -93,38 +91,37 @@ object mod {
     }
   }
   
-  @js.native
   trait BasicToastrOptions extends StObject {
     
-    var attention: js.UndefOr[Boolean] = js.native
+    var attention: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[(Component[js.Object, js.Object, _]) | Element] = js.native
+    var component: js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Element] = js.undefined
     
-    var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.native
+    var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.undefined
     
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
-    var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onToastrClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onToastrClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var progressBar: js.UndefOr[Boolean] = js.native
+    var progressBar: js.UndefOr[Boolean] = js.undefined
     
-    var removeOnHover: js.UndefOr[Boolean] = js.native
+    var removeOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var timeOut: js.UndefOr[Double] = js.native
+    var timeOut: js.UndefOr[Double] = js.undefined
     
-    var transitionIn: js.UndefOr[transitionInType] = js.native
+    var transitionIn: js.UndefOr[transitionInType] = js.undefined
     
-    var transitionOut: js.UndefOr[transitionOutType] = js.native
+    var transitionOut: js.UndefOr[transitionOutType] = js.undefined
   }
   object BasicToastrOptions {
     
@@ -150,7 +147,7 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setComponent(value: (Component[js.Object, js.Object, _]) | Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -229,10 +226,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfirmToastrCustomOptions extends StObject {
     
-    var component: Element = js.native
+    var component: Element
   }
   object ConfirmToastrCustomOptions {
     
@@ -250,14 +246,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfirmToastrOptions extends StObject {
     
-    var disableCancel: js.UndefOr[Boolean] = js.native
+    var disableCancel: js.UndefOr[Boolean] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOk: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ConfirmToastrOptions {
     
@@ -290,36 +285,35 @@ object mod {
     }
   }
   
-  @js.native
   trait LightToastrOptions extends StObject {
     
-    var attention: js.UndefOr[Boolean] = js.native
+    var attention: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[Element] = js.native
+    var component: js.UndefOr[Element] = js.undefined
     
-    var icon: js.UndefOr[iconType | Element] = js.native
+    var icon: js.UndefOr[iconType | Element] = js.undefined
     
-    var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var progressBar: js.UndefOr[Boolean] = js.native
+    var progressBar: js.UndefOr[Boolean] = js.undefined
     
-    var removeOnHover: js.UndefOr[Boolean] = js.native
+    var removeOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var status: js.UndefOr[iconType] = js.native
+    var status: js.UndefOr[iconType] = js.undefined
     
-    var timeOut: js.UndefOr[Double] = js.native
+    var timeOut: js.UndefOr[Double] = js.undefined
     
-    var transitionIn: js.UndefOr[transitionInType] = js.native
+    var transitionIn: js.UndefOr[transitionInType] = js.undefined
     
-    var transitionOut: js.UndefOr[transitionOutType] = js.native
+    var transitionOut: js.UndefOr[transitionOutType] = js.undefined
   }
   object LightToastrOptions {
     
@@ -420,33 +414,32 @@ object mod {
   
   type ReduxToastr = Component[ReduxToastrProps, js.Object, js.Any]
   
-  @js.native
   trait ReduxToastrProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeOnToastrClick: js.UndefOr[Boolean] = js.native
+    var closeOnToastrClick: js.UndefOr[Boolean] = js.undefined
     
-    var confirmOptions: js.UndefOr[CancelText] = js.native
+    var confirmOptions: js.UndefOr[CancelText] = js.undefined
     
-    var newestOnTop: js.UndefOr[Boolean] = js.native
+    var newestOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     // This is currently not used, waiting for response from the package author to remove
-    var position: js.UndefOr[positionType] = js.native
+    var position: js.UndefOr[positionType] = js.undefined
     
-    var preventDuplicates: js.UndefOr[Boolean] = js.native
+    var preventDuplicates: js.UndefOr[Boolean] = js.undefined
     
-    var progressBar: js.UndefOr[Boolean] = js.native
+    var progressBar: js.UndefOr[Boolean] = js.undefined
     
-    var timeOut: js.UndefOr[Double] = js.native
+    var timeOut: js.UndefOr[Double] = js.undefined
     
-    var toastr: js.UndefOr[ToastrState] = js.native
+    var toastr: js.UndefOr[ToastrState] = js.undefined
     
-    var transitionIn: js.UndefOr[transitionInType] = js.native
+    var transitionIn: js.UndefOr[transitionInType] = js.undefined
     
-    var transitionOut: js.UndefOr[transitionOutType] = js.native
+    var transitionOut: js.UndefOr[transitionOutType] = js.undefined
   }
   object ReduxToastrProps {
     
@@ -536,18 +529,18 @@ object mod {
   @js.native
   trait ToastrActionCreators extends StObject {
     
-    def add(toastr: AddToastPayload): Action[_] = js.native
+    def add(toastr: AddToastPayload): Action[js.Any] = js.native
     
-    def clean(): Action[_] = js.native
+    def clean(): Action[js.Any] = js.native
     
-    def hideConfirm(): Action[_] = js.native
+    def hideConfirm(): Action[js.Any] = js.native
     
-    def remove(id: String): Action[_] = js.native
+    def remove(id: String): Action[js.Any] = js.native
     
-    def removeByType(`type`: toastType): Action[_] = js.native
+    def removeByType(`type`: toastType): Action[js.Any] = js.native
     
-    def showConfirm(confirm: ConfirmToastrCustomOptions): Action[_] = js.native
-    def showConfirm(confirm: ConfirmToastrOptions): Action[_] = js.native
+    def showConfirm(confirm: ConfirmToastrCustomOptions): Action[js.Any] = js.native
+    def showConfirm(confirm: ConfirmToastrOptions): Action[js.Any] = js.native
   }
   
   @js.native
@@ -578,12 +571,11 @@ object mod {
     def warning(title: String, message: String, options: BasicToastrOptions): Unit = js.native
   }
   
-  @js.native
   trait ToastrState extends StObject {
     
-    var confirm: js.UndefOr[Id] = js.native
+    var confirm: js.UndefOr[Id] = js.undefined
     
-    var toastrs: js.Array[Toastr_] = js.native
+    var toastrs: js.Array[Toastr_]
   }
   object ToastrState {
     
@@ -610,20 +602,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Toastr_ extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var options: BasicToastrOptions | LightToastrOptions = js.native
+    var options: BasicToastrOptions | LightToastrOptions
     
-    var position: positionType = js.native
+    var position: positionType
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: toastType = js.native
+    var `type`: toastType
   }
   object Toastr_ {
     

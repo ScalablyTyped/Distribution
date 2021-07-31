@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentVariableType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: js.UndefOr[CodeBuildEnvironmentVariableType] = js.native
+  var `type`: js.UndefOr[CodeBuildEnvironmentVariableType] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object Name {
   

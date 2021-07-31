@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploySystemInstanceRequest extends StObject {
   
   /**
     * The ID of the system instance. This value is returned by the CreateSystemInstance action. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:deployment:DEPLOYMENTNAME 
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
 }
 object DeploySystemInstanceRequest {
   

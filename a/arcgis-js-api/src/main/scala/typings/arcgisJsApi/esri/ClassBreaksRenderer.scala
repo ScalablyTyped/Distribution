@@ -6,29 +6,29 @@ import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassBreaksRenderer
-  extends Renderer
+  extends StObject
+     with Renderer
      with VisualVariablesMixin
      with RendererWithVisualVariables
      with typings.arcgisJsApi.esri.renderers.RendererWithVisualVariables {
   
   def addClassBreakInfo(min: js.Any): Unit = js.native
-  def addClassBreakInfo(min: js.Any, max: js.UndefOr[scala.Nothing], symbol: Symbol): Unit = js.native
   def addClassBreakInfo(min: js.Any, max: Double): Unit = js.native
   def addClassBreakInfo(min: js.Any, max: Double, symbol: Symbol): Unit = js.native
+  def addClassBreakInfo(min: js.Any, max: Unit, symbol: Symbol): Unit = js.native
   /**
     * Adds a class break to the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#addClassBreakInfo)
     */
   def addClassBreakInfo(min: Double): Unit = js.native
-  def addClassBreakInfo(min: Double, max: js.UndefOr[scala.Nothing], symbol: Symbol): Unit = js.native
   def addClassBreakInfo(min: Double, max: Double): Unit = js.native
   def addClassBreakInfo(min: Double, max: Double, symbol: Symbol): Unit = js.native
+  def addClassBreakInfo(min: Double, max: Unit, symbol: Symbol): Unit = js.native
   
   /**
     * When symbolizing polygon features with graduated symbols, set a [FillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html) on this property to visualize the boundaries of each feature.

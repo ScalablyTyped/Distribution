@@ -2,15 +2,13 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Component extends StObject {
   
-  var component: Instantiable = js.native
+  var component: Instantiable
   
-  var position: String = js.native
+  var position: String
 }
 object Component {
   

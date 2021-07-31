@@ -11,8 +11,8 @@ Typings are for version 0.1.0-preview.2
 | Full name          | @aws-sdk/s3-error-unmarshaller |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 32129 |
+| # dependents       | 0 |
+| # downloads        | 57484 |
 | # stars            | 0 |
 
 ## Links

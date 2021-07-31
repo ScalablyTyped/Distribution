@@ -4,19 +4,17 @@ import typings.csstype.mod.BackgroundColorProperty
 import typings.csstype.mod.VerticalAlignProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlSpacerProps extends StObject {
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlSpacerProps {
   

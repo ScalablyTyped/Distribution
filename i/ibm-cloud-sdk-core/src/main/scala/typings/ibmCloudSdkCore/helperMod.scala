@@ -6,59 +6,50 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "buildRequestFileObject")
+  @JSImport("ibm-cloud-sdk-core/lib/helper", JSImport.Namespace)
   @js.native
-  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "getContentType")
-  @js.native
-  def getContentType(inputData: String): String = js.native
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "getContentType")
-  @js.native
-  def getContentType(inputData: Buffer): String = js.native
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "getContentType")
-  @js.native
-  def getContentType(inputData: ReadableStream): String = js.native
+  @scala.inline
+  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("buildRequestFileObject")(fileParams.asInstanceOf[js.Any]).asInstanceOf[FileObject]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "getFormat")
-  @js.native
-  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
+  @scala.inline
+  def getContentType(inputData: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getContentType(inputData: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getContentType(inputData: ReadableStream): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "getMissingParams")
-  @js.native
-  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
+  @scala.inline
+  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormat")(params.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "isEmptyObject")
-  @js.native
-  def isEmptyObject(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingParams")(params.asInstanceOf[js.Any], requires.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "isFileParam")
-  @js.native
-  def isFileParam(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmptyObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "isHTML")
-  @js.native
-  def isHTML(text: String): Boolean = js.native
+  @scala.inline
+  def isFileParam(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFileParam")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "stripTrailingSlash")
-  @js.native
-  def stripTrailingSlash(url: String): String = js.native
+  @scala.inline
+  def isHTML(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTML")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ibm-cloud-sdk-core/lib/helper", "toLowerKeys")
-  @js.native
-  def toLowerKeys(obj: js.Object): js.Object = js.native
+  @scala.inline
+  def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toLowerKeys(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
   trait FileObject extends StObject {
     
-    var options: js.UndefOr[FileOptions] = js.native
+    var options: js.UndefOr[FileOptions] = js.undefined
     
-    var value: ReadableStream | Buffer | String = js.native
+    var value: ReadableStream | Buffer | String
   }
   object FileObject {
     
@@ -82,12 +73,11 @@ object helperMod {
     }
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object FileOptions {
     
@@ -114,14 +104,13 @@ object helperMod {
     }
   }
   
-  @js.native
   trait FileParamAttributes extends StObject {
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var data: ReadableStream | Buffer | FileObject = js.native
+    var data: ReadableStream | Buffer | FileObject
     
-    var filename: String = js.native
+    var filename: String
   }
   object FileParamAttributes {
     
@@ -146,7 +135,9 @@ object helperMod {
   }
   
   @js.native
-  trait FileStream extends ReadableStream {
+  trait FileStream
+    extends StObject
+       with ReadableStream {
     
     var path: String | Buffer = js.native
   }

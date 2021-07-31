@@ -10,7 +10,6 @@ import typings.enhancedResolve.commonTypesMod.ResolveContext
 import typings.enhancedResolve.commonTypesMod.ResolverRequest
 import typings.enhancedResolve.concordMod.Dictionary
 import typings.enhancedResolve.mod.ResolverFactory.ResolverOption
-import typings.enhancedResolve.resolverMod.^
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
@@ -18,17 +17,18 @@ import typings.std.Error
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("enhanced-resolve", JSImport.Namespace)
   @js.native
-  def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
-  @JSImport("enhanced-resolve", JSImport.Namespace)
-  @js.native
-  def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("enhanced-resolve", "CachedInputFileSystem")
   @js.native
@@ -59,7 +59,7 @@ object mod {
         ]
       ] = js.native
     
-    var readJsonSync: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var readJsonSync: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.native
     
     var readdir: js.UndefOr[
         js.Function2[
@@ -123,13 +123,13 @@ object mod {
     def readdirSync(path: String): js.Array[String] = js.native
     
     def readlink(path: String): Unit = js.native
-    def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
+    def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, js.Any]): Unit = js.native
     
     def readlinkSync(path: String): String = js.native
     def readlinkSync(path: Buffer): String = js.native
     
     def stat(path: String): Unit = js.native
-    def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+    def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = js.native
     
     def statSync(path: String): Stats = js.native
     def statSync(path: Buffer): Stats = js.native
@@ -137,18 +137,20 @@ object mod {
   
   object ResolverFactory {
     
-    @JSImport("enhanced-resolve", "ResolverFactory.createResolver")
+    @JSImport("enhanced-resolve", "ResolverFactory")
     @js.native
-    def createResolver(options: ResolverOption): ^ = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
+    @scala.inline
+    def createResolver(options: ResolverOption): typings.enhancedResolve.resolverMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(options.asInstanceOf[js.Any]).asInstanceOf[typings.enhancedResolve.resolverMod.^]
+    
     trait AliasItem extends StObject {
       
-      var alias: String = js.native
+      var alias: String
       
-      var name: String = js.native
+      var name: String
       
-      var onlyModule: js.UndefOr[Boolean] = js.native
+      var onlyModule: js.UndefOr[Boolean] = js.undefined
     }
     object AliasItem {
       
@@ -175,44 +177,43 @@ object mod {
       }
     }
     
-    @js.native
     trait ResolverOption extends StObject {
       
-      var alias: js.UndefOr[js.Array[AliasItem] | Dictionary[String]] = js.native
+      var alias: js.UndefOr[js.Array[AliasItem] | Dictionary[String]] = js.undefined
       
-      var aliasFields: js.UndefOr[js.Array[String]] = js.native
+      var aliasFields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var cachePredicate: js.UndefOr[js.Function1[/* val */ ResolverRequest, Boolean]] = js.native
+      var cachePredicate: js.UndefOr[js.Function1[/* val */ ResolverRequest, Boolean]] = js.undefined
       
-      var descriptionFiles: js.UndefOr[js.Array[String]] = js.native
+      var descriptionFiles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var enforceExtension: js.UndefOr[Boolean] = js.native
+      var enforceExtension: js.UndefOr[Boolean] = js.undefined
       
-      var enforceModuleExtension: js.UndefOr[Boolean] = js.native
+      var enforceModuleExtension: js.UndefOr[Boolean] = js.undefined
       
-      var extensions: js.UndefOr[js.Array[String]] = js.native
+      var extensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var fileSystem: js.UndefOr[AbstractInputFileSystem] = js.native
+      var fileSystem: js.UndefOr[AbstractInputFileSystem] = js.undefined
       
-      var mainFields: js.UndefOr[js.Array[String]] = js.native
+      var mainFields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var mainFiles: js.UndefOr[js.Array[String]] = js.native
+      var mainFiles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var moduleExtensions: js.UndefOr[js.Array[String]] = js.native
+      var moduleExtensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var modules: js.UndefOr[js.Array[String]] = js.native
+      var modules: js.UndefOr[js.Array[String]] = js.undefined
       
-      var plugins: js.UndefOr[js.Array[Plugin]] = js.native
+      var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
       
-      var resolveToContext: js.UndefOr[Boolean] = js.native
+      var resolveToContext: js.UndefOr[Boolean] = js.undefined
       
-      var resolver: js.UndefOr[^] = js.native
+      var resolver: js.UndefOr[typings.enhancedResolve.resolverMod.^] = js.undefined
       
-      var symlinks: js.UndefOr[js.Array[String] | Boolean] = js.native
+      var symlinks: js.UndefOr[js.Array[String] | Boolean] = js.undefined
       
-      var unsafeCache: js.UndefOr[Boolean | Dictionary[_]] = js.native
+      var unsafeCache: js.UndefOr[Boolean | Dictionary[js.Any]] = js.undefined
       
-      var useSyncFileSystemCalls: js.UndefOr[Boolean] = js.native
+      var useSyncFileSystemCalls: js.UndefOr[Boolean] = js.undefined
     }
     object ResolverOption {
       
@@ -337,7 +338,7 @@ object mod {
         def setResolveToContextUndefined: Self = StObject.set(x, "resolveToContext", js.undefined)
         
         @scala.inline
-        def setResolver(value: ^): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+        def setResolver(value: typings.enhancedResolve.resolverMod.^): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
@@ -352,7 +353,7 @@ object mod {
         def setSymlinksVarargs(value: String*): Self = StObject.set(x, "symlinks", js.Array(value :_*))
         
         @scala.inline
-        def setUnsafeCache(value: Boolean | Dictionary[_]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
+        def setUnsafeCache(value: Boolean | Dictionary[js.Any]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
@@ -368,53 +369,53 @@ object mod {
   
   object context {
     
-    @JSImport("enhanced-resolve", "context")
-    @js.native
-    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
-    @JSImport("enhanced-resolve", "context")
-    @js.native
-    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
+    @scala.inline
+    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("enhanced-resolve", "context.sync")
+    @JSImport("enhanced-resolve", "context")
     @js.native
-    def sync(context: ResolveContext, path: String, request: String): String = js.native
-    @JSImport("enhanced-resolve", "context.sync")
-    @js.native
-    def sync(path: String, request: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object create {
     
+    @scala.inline
+    def apply(options: ResolverOption): FnCallContextPathRequestCallback = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FnCallContextPathRequestCallback]
+    
     @JSImport("enhanced-resolve", "create")
     @js.native
-    def apply(options: ResolverOption): FnCallContextPathRequestCallback = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("enhanced-resolve", "create.sync")
-    @js.native
-    def sync(options: ResolverOption): FnCall = js.native
+    @scala.inline
+    def sync(options: ResolverOption): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   }
   
   object loader {
     
-    @JSImport("enhanced-resolve", "loader")
-    @js.native
-    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
-    @JSImport("enhanced-resolve", "loader")
-    @js.native
-    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
+    @scala.inline
+    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("enhanced-resolve", "loader.sync")
+    @JSImport("enhanced-resolve", "loader")
     @js.native
-    def sync(context: ResolveContext, path: String, request: String): String = js.native
-    @JSImport("enhanced-resolve", "loader.sync")
-    @js.native
-    def sync(path: String, request: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("enhanced-resolve", "sync")
-  @js.native
-  def sync(context: ResolveContext, path: String, request: String): String = js.native
-  @JSImport("enhanced-resolve", "sync")
-  @js.native
-  def sync(path: String, request: String): String = js.native
+  @scala.inline
+  def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -3,32 +3,30 @@ package typings.jqueryFormatdatetime
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  monthNames :std.Array<string>,   monthNamesShort :std.Array<string>,   dayNames :std.Array<string>,   dayNamesShort :std.Array<string>,   ampmNames :std.Array<string>, getSuffix (num : number): string,   attribute :string,   formatAttribute :string,   utc :boolean}> */
-  @js.native
   trait Options extends StObject {
     
-    var ampmNames: js.UndefOr[js.Array[String]] = js.native
+    var ampmNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var attribute: js.UndefOr[String] = js.native
+    var attribute: js.UndefOr[String] = js.undefined
     
-    var dayNames: js.UndefOr[js.Array[String]] = js.native
+    var dayNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var dayNamesShort: js.UndefOr[js.Array[String]] = js.native
+    var dayNamesShort: js.UndefOr[js.Array[String]] = js.undefined
     
-    var formatAttribute: js.UndefOr[String] = js.native
+    var formatAttribute: js.UndefOr[String] = js.undefined
     
-    var getSuffix: js.UndefOr[js.Function1[/* num */ Double, String]] = js.native
+    var getSuffix: js.UndefOr[js.Function1[/* num */ Double, String]] = js.undefined
     
-    var monthNames: js.UndefOr[js.Array[String]] = js.native
+    var monthNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var monthNamesShort: js.UndefOr[js.Array[String]] = js.native
+    var monthNamesShort: js.UndefOr[js.Array[String]] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

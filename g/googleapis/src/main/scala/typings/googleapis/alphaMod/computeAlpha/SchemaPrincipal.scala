@@ -3,69 +3,67 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All fields defined in a principal are ANDed.
   */
-@js.native
 trait SchemaPrincipal extends StObject {
   
   /**
     * An expression to specify custom condition.
     */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /**
     * The groups the principal belongs to. Exact match, prefix match, and
     * suffix match are supported.
     */
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * IPv4 or IPv6 address or range (In CIDR format)
     */
-  var ips: js.UndefOr[js.Array[String]] = js.native
+  var ips: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The namespaces. Exact match, prefix match, and suffix match are
     * supported.
     */
-  var namespaces: js.UndefOr[js.Array[String]] = js.native
+  var namespaces: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of groups. Specifies exclusions.
     */
-  var notGroups: js.UndefOr[js.Array[String]] = js.native
+  var notGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of IPs. Specifies exclusions.
     */
-  var notIps: js.UndefOr[js.Array[String]] = js.native
+  var notIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of namespaces. Specifies exclusions.
     */
-  var notNamespaces: js.UndefOr[js.Array[String]] = js.native
+  var notNamespaces: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of users. Specifies exclusions.
     */
-  var notUsers: js.UndefOr[js.Array[String]] = js.native
+  var notUsers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A map of Istio attribute to expected values. Exact match, prefix match,
     * and suffix match are supported for values. For example,
     * `request.headers[version]: ?v1?`. The properties are ANDed together.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The user names/IDs or service accounts. Exact match, prefix match, and
     * suffix match are supported.
     */
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPrincipal {
   

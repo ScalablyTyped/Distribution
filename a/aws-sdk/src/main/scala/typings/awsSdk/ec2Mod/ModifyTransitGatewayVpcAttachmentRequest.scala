@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTransitGatewayVpcAttachmentRequest extends StObject {
   
   /**
     * The IDs of one or more subnets to add. You can specify at most one subnet per Availability Zone.
     */
-  var AddSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.native
+  var AddSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The new VPC attachment options.  You cannot modify the IPv6 options. 
     */
-  var Options: js.UndefOr[ModifyTransitGatewayVpcAttachmentRequestOptions] = js.native
+  var Options: js.UndefOr[ModifyTransitGatewayVpcAttachmentRequestOptions] = js.undefined
   
   /**
     * The IDs of one or more subnets to remove.
     */
-  var RemoveSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.native
+  var RemoveSubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.undefined
   
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId = js.native
+  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId
 }
 object ModifyTransitGatewayVpcAttachmentRequest {
   

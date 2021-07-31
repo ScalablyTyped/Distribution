@@ -8,7 +8,6 @@ import typings.datejs.sugarpak.IPredicate
 import typings.datejs.sugarpak.ITimeLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DateJS Public Instance Methods */

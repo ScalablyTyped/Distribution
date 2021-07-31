@@ -2,57 +2,55 @@ package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileAssociationMod {
   
-  @js.native
   trait FileAssociation extends StObject {
     
     /**
       * *windows-only.* The description.
       */
-    val description: js.UndefOr[String | Null] = js.native
+    val description: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The extension (minus the leading period). e.g. `png`.
       */
-    val ext: String | js.Array[String] = js.native
+    val ext: String | js.Array[String]
     
     /**
       * The path to icon (`.icns` for MacOS and `.ico` for Windows), relative to `build` (build resources directory). Defaults to `${firstExt}.icns`/`${firstExt}.ico` (if several extensions specified, first is used) or to application icon.
       *
       * Not supported on Linux, file issue if need (default icon will be `x-office-document`).
       */
-    val icon: js.UndefOr[String | Null] = js.native
+    val icon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *macOS-only* Whether the document is distributed as a bundle. If set to true, the bundle directory is treated as a file. Corresponds to `LSTypeIsPackage`.
       */
-    val isPackage: js.UndefOr[Boolean] = js.native
+    val isPackage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *linux-only.* The mime-type.
       */
-    val mimeType: js.UndefOr[String | Null] = js.native
+    val mimeType: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The name. e.g. `PNG`. Defaults to `ext`.
       */
-    val name: js.UndefOr[String | Null] = js.native
+    val name: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *macOS-only* The app’s rank with respect to the type. The value can be `Owner`, `Default`, `Alternate`, or `None`. Corresponds to `LSHandlerRank`.
       * @default Default
       */
-    val rank: js.UndefOr[String] = js.native
+    val rank: js.UndefOr[String] = js.undefined
     
     /**
       * *macOS-only* The app’s role with respect to the type. The value can be `Editor`, `Viewer`, `Shell`, or `None`. Corresponds to `CFBundleTypeRole`.
       * @default Editor
       */
-    val role: js.UndefOr[String] = js.native
+    val role: js.UndefOr[String] = js.undefined
   }
   object FileAssociation {
     

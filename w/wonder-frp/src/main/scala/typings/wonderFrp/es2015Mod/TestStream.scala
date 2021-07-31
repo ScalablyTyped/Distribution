@@ -1,8 +1,8 @@
 package typings.wonderFrp.es2015Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/es2015", "TestStream")
 @js.native
@@ -13,14 +13,16 @@ class TestStream protected ()
     scheduler: typings.wonderFrp.testingTestSchedulerMod.TestScheduler
   ) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/es2015", "TestStream")
-@js.native
-object TestStream extends js.Object {
+object TestStream {
+  
+  @JSImport("wonder-frp/dist/es2015", "TestStream")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     messages: js.Array[typings.wonderFrp.testingRecordMod.Record],
     scheduler: typings.wonderFrp.testingTestSchedulerMod.TestScheduler
-  ): typings.wonderFrp.testingTestStreamMod.TestStream = js.native
+  ): typings.wonderFrp.testingTestStreamMod.TestStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(messages.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingTestStreamMod.TestStream]
 }
-

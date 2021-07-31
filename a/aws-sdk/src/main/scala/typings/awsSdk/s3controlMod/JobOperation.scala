@@ -2,40 +2,38 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobOperation extends StObject {
   
   /**
     * Directs the specified job to invoke an AWS Lambda function on each object in the manifest.
     */
-  var LambdaInvoke: js.UndefOr[LambdaInvokeOperation] = js.native
+  var LambdaInvoke: js.UndefOr[LambdaInvokeOperation] = js.undefined
   
   /**
     * Directs the specified job to run an Initiate Glacier Restore call on each object in the manifest.
     */
-  var S3InitiateRestoreObject: js.UndefOr[S3InitiateRestoreObjectOperation] = js.native
+  var S3InitiateRestoreObject: js.UndefOr[S3InitiateRestoreObjectOperation] = js.undefined
   
   /**
     * Directs the specified job to run a PUT Object acl call on each object in the manifest.
     */
-  var S3PutObjectAcl: js.UndefOr[S3SetObjectAclOperation] = js.native
+  var S3PutObjectAcl: js.UndefOr[S3SetObjectAclOperation] = js.undefined
   
   /**
     * Directs the specified job to run a PUT Copy object call on each object in the manifest.
     */
-  var S3PutObjectCopy: js.UndefOr[S3CopyObjectOperation] = js.native
+  var S3PutObjectCopy: js.UndefOr[S3CopyObjectOperation] = js.undefined
   
-  var S3PutObjectLegalHold: js.UndefOr[S3SetObjectLegalHoldOperation] = js.native
+  var S3PutObjectLegalHold: js.UndefOr[S3SetObjectLegalHoldOperation] = js.undefined
   
-  var S3PutObjectRetention: js.UndefOr[S3SetObjectRetentionOperation] = js.native
+  var S3PutObjectRetention: js.UndefOr[S3SetObjectRetentionOperation] = js.undefined
   
   /**
     * Directs the specified job to run a PUT Object tagging call on each object in the manifest.
     */
-  var S3PutObjectTagging: js.UndefOr[S3SetObjectTaggingOperation] = js.native
+  var S3PutObjectTagging: js.UndefOr[S3SetObjectTaggingOperation] = js.undefined
 }
 object JobOperation {
   

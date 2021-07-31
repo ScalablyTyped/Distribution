@@ -2,31 +2,29 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * Enables access to the ActiveMQ Web Console for the ActiveMQ user (Does not apply to RabbitMQ brokers).
     */
-  var ConsoleAccess: js.UndefOr[boolean] = js.native
+  var ConsoleAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * The list of groups (20 maximum) to which the ActiveMQ user belongs. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Groups: js.UndefOr[listOfString] = js.native
+  var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * Required. The password of the broker user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas.
     */
-  var Password: js.UndefOr[string] = js.native
+  var Password: js.UndefOr[string] = js.undefined
   
   /**
     * Required. The username of the broker user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object User {
   

@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneOffset")
@@ -56,32 +55,26 @@ object ZoneOffset {
   def UTC_=(x: ZoneOffset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.of")
-  @js.native
-  def of(offsetId: String): ZoneOffset = js.native
+  @scala.inline
+  def of(offsetId: String): ZoneOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(offsetId.asInstanceOf[js.Any]).asInstanceOf[ZoneOffset]
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.ofHours")
-  @js.native
-  def ofHours(hours: Double): ZoneOffset = js.native
+  @scala.inline
+  def ofHours(hours: Double): ZoneOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("ofHours")(hours.asInstanceOf[js.Any]).asInstanceOf[ZoneOffset]
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.ofHoursMinutes")
-  @js.native
-  def ofHoursMinutes(hours: Double, minutes: Double): ZoneOffset = js.native
+  @scala.inline
+  def ofHoursMinutes(hours: Double, minutes: Double): ZoneOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("ofHoursMinutes")(hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[ZoneOffset]
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.ofHoursMinutesSeconds")
-  @js.native
-  def ofHoursMinutesSeconds(hours: Double, minutes: Double, seconds: Double): ZoneOffset = js.native
+  @scala.inline
+  def ofHoursMinutesSeconds(hours: Double, minutes: Double, seconds: Double): ZoneOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("ofHoursMinutesSeconds")(hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[ZoneOffset]
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.ofTotalMinutes")
-  @js.native
-  def ofTotalMinutes(totalMinutes: Double): ZoneOffset = js.native
+  @scala.inline
+  def ofTotalMinutes(totalMinutes: Double): ZoneOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("ofTotalMinutes")(totalMinutes.asInstanceOf[js.Any]).asInstanceOf[ZoneOffset]
   
   /* static member */
-  @JSImport("js-joda", "ZoneOffset.ofTotalSeconds")
-  @js.native
-  def ofTotalSeconds(totalSeconds: Double): ZoneOffset = js.native
+  @scala.inline
+  def ofTotalSeconds(totalSeconds: Double): ZoneOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("ofTotalSeconds")(totalSeconds.asInstanceOf[js.Any]).asInstanceOf[ZoneOffset]
 }

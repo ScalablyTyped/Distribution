@@ -9,7 +9,6 @@ import typings.dynatrace.dynatraceStrings.s
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -116,11 +115,11 @@ trait dynaTrace extends StObject {
     * @returns id of created action
     */
   def enterAction(name: String, `type`: String): Double = js.native
-  def enterAction(name: String, `type`: String, time: js.UndefOr[scala.Nothing], parentAction: Boolean): Double = js.native
-  def enterAction(name: String, `type`: String, time: js.UndefOr[scala.Nothing], parentAction: Double): Double = js.native
   def enterAction(name: String, `type`: String, time: Double): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Boolean): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Double): Double = js.native
+  def enterAction(name: String, `type`: String, time: Unit, parentAction: Boolean): Double = js.native
+  def enterAction(name: String, `type`: String, time: Unit, parentAction: Double): Double = js.native
   
   /**
     * @description Initiate ajax action. Must be closed by leaveXhrAction afterwards.
@@ -155,9 +154,9 @@ trait dynaTrace extends StObject {
     * @param startTime - optional start time in milliseconds (necessary if start time should be modified)
     */
   def leaveAction(actionId: Double): Unit = js.native
-  def leaveAction(actionId: Double, time: js.UndefOr[scala.Nothing], startTime: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double, startTime: Double): Unit = js.native
+  def leaveAction(actionId: Double, time: Unit, startTime: Double): Unit = js.native
   
   /**
     * @description Indicates the end of an xhr action. Must be started by leaveXhrAction beforehand.
@@ -286,9 +285,9 @@ trait dynaTrace extends StObject {
     *     time of stopThirdParty call is used.
     */
   def stopThirdParty(url: String, success: Boolean): Unit = js.native
-  def stopThirdParty(url: String, success: Boolean, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double, stop: Double): Unit = js.native
+  def stopThirdParty(url: String, success: Boolean, start: Unit, stop: Double): Unit = js.native
   
   /**
     * @description The JavaScript ADK enables you to tag your visits with any value you want.

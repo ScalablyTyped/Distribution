@@ -2,20 +2,18 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Options for job processing.
   */
-@js.native
 trait SchemaProcessingOptions extends StObject {
   
   /**
     * Optional.  If set to `true`, the service does not attempt to resolve a
     * more precise address for the job.
     */
-  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.native
+  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  Option for job HTML content sanitization. Applied fields are:
@@ -24,7 +22,7 @@ trait SchemaProcessingOptions extends StObject {
     * sanitiazation is not disabled.  Defaults to
     * HtmlSanitization.SIMPLE_FORMATTING_ONLY.
     */
-  var htmlSanitization: js.UndefOr[String] = js.native
+  var htmlSanitization: js.UndefOr[String] = js.undefined
 }
 object SchemaProcessingOptions {
   

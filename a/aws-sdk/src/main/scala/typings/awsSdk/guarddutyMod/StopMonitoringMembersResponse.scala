@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopMonitoringMembersResponse extends StObject {
   
   /**
     * A list of objects that contain an accountId for each account that could not be processed, and a result string that indicates why the account was not processed. 
     */
-  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
+  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts
 }
 object StopMonitoringMembersResponse {
   

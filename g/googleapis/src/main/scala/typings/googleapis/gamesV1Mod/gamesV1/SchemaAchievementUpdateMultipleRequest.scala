@@ -2,25 +2,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of achievement update requests.
   */
-@js.native
 trait SchemaAchievementUpdateMultipleRequest extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#achievementUpdateMultipleRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The individual achievement update requests.
     */
-  var updates: js.UndefOr[js.Array[SchemaAchievementUpdateRequest]] = js.native
+  var updates: js.UndefOr[js.Array[SchemaAchievementUpdateRequest]] = js.undefined
 }
 object SchemaAchievementUpdateMultipleRequest {
   

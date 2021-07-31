@@ -3,15 +3,13 @@ package typings.expoLocation.locationTypesMod
 import typings.expoLocation.anon.Accuracy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationObject extends StObject {
   
-  var coords: Accuracy = js.native
+  var coords: Accuracy
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object LocationObject {
   

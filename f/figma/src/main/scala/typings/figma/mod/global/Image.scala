@@ -3,17 +3,15 @@ package typings.figma.mod.global
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Other
-@js.native
 trait Image extends StObject {
   
-  def getBytesAsync(): js.Promise[Uint8Array] = js.native
+  def getBytesAsync(): js.Promise[Uint8Array]
   
-  val hash: String = js.native
+  val hash: String
 }
 object Image {
   

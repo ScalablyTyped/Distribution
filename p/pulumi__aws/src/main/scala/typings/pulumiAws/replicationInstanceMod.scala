@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replicationInstanceMod {
@@ -119,6 +118,10 @@ object replicationInstanceMod {
   /* static members */
   object ReplicationInstance {
     
+    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReplicationInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -128,105 +131,99 @@ object replicationInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReplicationInstance = js.native
-    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReplicationInstance = js.native
-    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationInstanceState): ReplicationInstance = js.native
-    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationInstanceState, opts: CustomResourceOptions): ReplicationInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReplicationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationInstanceState): ReplicationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationInstanceState, opts: CustomResourceOptions): ReplicationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationInstance]
     
     /**
       * Returns true if the given object is an instance of ReplicationInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationInstance.ReplicationInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationInstance.ReplicationInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationInstance.ReplicationInstance */ Boolean]
   }
   
-  @js.native
   trait ReplicationInstanceArgs extends StObject {
     
     /**
       * The amount of storage (in gigabytes) to be initially allocated for the replication instance.
       */
-    val allocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates that major version upgrades are allowed.
       */
-    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The EC2 Availability Zone that the replication instance will be created in.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The engine version number of the replication instance.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies if the replication instance is a multi-az deployment. You cannot set the `availabilityZone` parameter if the `multiAz` parameter is set to `true`.
       */
-    val multiAz: js.UndefOr[Input[Boolean]] = js.native
+    val multiAz: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
       */
-    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
       */
-    val replicationInstanceClass: Input[String] = js.native
+    val replicationInstanceClass: Input[String]
     
     /**
       * The replication instance identifier. This parameter is stored as a lowercase string.
       */
-    val replicationInstanceId: Input[String] = js.native
+    val replicationInstanceId: Input[String]
     
     /**
       * A subnet group to associate with the replication instance.
       */
-    val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ReplicationInstanceArgs {
     
@@ -328,98 +325,97 @@ object replicationInstanceMod {
     }
   }
   
-  @js.native
   trait ReplicationInstanceState extends StObject {
     
     /**
       * The amount of storage (in gigabytes) to be initially allocated for the replication instance.
       */
-    val allocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates that major version upgrades are allowed.
       */
-    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether the changes should be applied immediately or during the next maintenance window. Only used when updating an existing resource.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates that minor engine upgrades will be applied automatically to the replication instance during the maintenance window.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The EC2 Availability Zone that the replication instance will be created in.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The engine version number of the replication instance.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies if the replication instance is a multi-az deployment. You cannot set the `availabilityZone` parameter if the `multiAz` parameter is set to `true`.
       */
-    val multiAz: js.UndefOr[Input[Boolean]] = js.native
+    val multiAz: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
       */
-    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the replication instance.
       */
-    val replicationInstanceArn: js.UndefOr[Input[String]] = js.native
+    val replicationInstanceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
       */
-    val replicationInstanceClass: js.UndefOr[Input[String]] = js.native
+    val replicationInstanceClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The replication instance identifier. This parameter is stored as a lowercase string.
       */
-    val replicationInstanceId: js.UndefOr[Input[String]] = js.native
+    val replicationInstanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of the private IP addresses of the replication instance.
       */
-    val replicationInstancePrivateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val replicationInstancePrivateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of the public IP addresses of the replication instance.
       */
-    val replicationInstancePublicIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val replicationInstancePublicIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A subnet group to associate with the replication instance.
       */
-    val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of VPC security group IDs to be used with the replication instance. The VPC security groups must work with the VPC containing the replication instance.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ReplicationInstanceState {
     

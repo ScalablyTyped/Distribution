@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,7 +59,7 @@ trait SplitViewCommand extends StObject {
     * Raised when a SplitViewCommand has been invoked.
     * @param eventInfo An object that contains information about the event.
     **/
-  def oninvoked(eventInfo: CustomEvent[_]): Unit = js.native
+  def oninvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

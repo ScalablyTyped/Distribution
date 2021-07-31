@@ -3,7 +3,6 @@ package typings.xrm.XrmEnum
 import typings.xrm.xrmStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

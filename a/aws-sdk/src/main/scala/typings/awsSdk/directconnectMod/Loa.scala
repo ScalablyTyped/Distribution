@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loa extends StObject {
   
   /**
     * The binary contents of the LOA-CFA document.
     */
-  var loaContent: js.UndefOr[LoaContent] = js.native
+  var loaContent: js.UndefOr[LoaContent] = js.undefined
   
   /**
     * The standard media type for the LOA-CFA document. The only supported value is application/pdf.
     */
-  var loaContentType: js.UndefOr[LoaContentType] = js.native
+  var loaContentType: js.UndefOr[LoaContentType] = js.undefined
 }
 object Loa {
   

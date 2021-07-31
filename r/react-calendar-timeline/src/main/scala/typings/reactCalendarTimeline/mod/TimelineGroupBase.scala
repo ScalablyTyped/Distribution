@@ -3,17 +3,15 @@ package typings.reactCalendarTimeline.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineGroupBase extends StObject {
   
-  var id: Id = js.native
+  var id: Id
   
-  var rightTitle: js.UndefOr[ReactNode] = js.native
+  var rightTitle: js.UndefOr[ReactNode] = js.undefined
   
-  var title: ReactNode = js.native
+  var title: ReactNode
 }
 object TimelineGroupBase {
   

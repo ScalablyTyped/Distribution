@@ -2,13 +2,11 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFParams extends StObject {
   
-  var page: js.UndefOr[ImgixParamType] = js.native
+  var page: js.UndefOr[ImgixParamType] = js.undefined
 }
 object PDFParams {
   

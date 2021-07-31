@@ -3,23 +3,22 @@ package typings.estreeJsx.mod
 import typings.estree.mod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXMemberExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   @JSName("type")
-  var type_JSXMemberExpression: typings.estreeJsx.estreeJsxStrings.JSXMemberExpression = js.native
+  var type_JSXMemberExpression: typings.estreeJsx.estreeJsxStrings.JSXMemberExpression
 }
 object JSXMemberExpression {
   
   @scala.inline
-  def apply(`type`: typings.estreeJsx.estreeJsxStrings.JSXMemberExpression): JSXMemberExpression = {
+  def apply(): JSXMemberExpression = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[JSXMemberExpression]
   }
   

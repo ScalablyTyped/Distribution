@@ -2,27 +2,25 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderFilter extends StObject {
   
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
-  var created: js.UndefOr[Double] = js.native
+  var created: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var price: js.UndefOr[Double] = js.native
+  var price: js.UndefOr[Double] = js.undefined
   
-  var remainingAmount: js.UndefOr[Double] = js.native
+  var remainingAmount: js.UndefOr[Double] = js.undefined
   
-  var resourceType: js.UndefOr[MarketResourceConstant] = js.native
+  var resourceType: js.UndefOr[MarketResourceConstant] = js.undefined
   
-  var roomName: js.UndefOr[String] = js.native
+  var roomName: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object OrderFilter {
   

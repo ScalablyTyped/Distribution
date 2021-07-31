@@ -3,7 +3,6 @@ package typings.highcharts.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Time")
@@ -109,28 +108,13 @@ class Time_ protected () extends StObject {
     *        The maximum in axis values
     */
   def getTimeTicks(normalizedInterval: TimeNormalizedObject): AxisTickPositionsArray = js.native
-  def getTimeTicks(
-    normalizedInterval: TimeNormalizedObject,
-    min: js.UndefOr[scala.Nothing],
-    max: js.UndefOr[scala.Nothing],
-    startOfWeek: Double
-  ): AxisTickPositionsArray = js.native
-  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: js.UndefOr[scala.Nothing], max: Double): AxisTickPositionsArray = js.native
-  def getTimeTicks(
-    normalizedInterval: TimeNormalizedObject,
-    min: js.UndefOr[scala.Nothing],
-    max: Double,
-    startOfWeek: Double
-  ): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double): AxisTickPositionsArray = js.native
-  def getTimeTicks(
-    normalizedInterval: TimeNormalizedObject,
-    min: Double,
-    max: js.UndefOr[scala.Nothing],
-    startOfWeek: Double
-  ): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double, startOfWeek: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Unit, startOfWeek: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Unit, max: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Unit, max: Double, startOfWeek: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Unit, max: Unit, startOfWeek: Double): AxisTickPositionsArray = js.native
   
   /**
     * Get the time zone offset based on the current timezone information as set
@@ -169,76 +153,21 @@ class Time_ protected () extends StObject {
     * @return The time in milliseconds since January 1st 1970.
     */
   def makeTime(year: Double, month: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double
-  ): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ): Double = js.native
-  def makeTime(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
-  def makeTime(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double, minutes: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: Double,
-    seconds: Double
-  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
-  def makeTime(year: Double, month: Double, date: Double, hours: js.UndefOr[scala.Nothing], minutes: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double): Double = js.native
-  def makeTime(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Double, hours: Unit, minutes: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Double, minutes: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Double, minutes: Double, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Double): Double = js.native
+  def makeTime(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double): Double = js.native
   
   /**
     * Set the value of a date object in given units, and subject to the Time

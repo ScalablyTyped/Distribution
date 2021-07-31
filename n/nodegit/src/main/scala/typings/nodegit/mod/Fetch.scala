@@ -2,7 +2,6 @@ package typings.nodegit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Fetch")
@@ -12,7 +11,10 @@ class Fetch ()
 /* static members */
 object Fetch {
   
-  @JSImport("nodegit", "Fetch.initOptions")
+  @JSImport("nodegit", "Fetch")
   @js.native
-  def initOptions(opts: typings.nodegit.fetchOptionsMod.FetchOptions, version: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def initOptions(opts: typings.nodegit.fetchOptionsMod.FetchOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

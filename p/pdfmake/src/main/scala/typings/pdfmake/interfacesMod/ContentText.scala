@@ -2,16 +2,15 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentText
-  extends ContentBase
+  extends StObject
      with ContentLink
+     with ContentBase
      with _Content {
   
-  var text: Content = js.native
+  var text: Content
 }
 object ContentText {
   

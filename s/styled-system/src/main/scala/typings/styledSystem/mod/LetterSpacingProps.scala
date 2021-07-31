@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetterSpacingProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait LetterSpacingProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
     */
-  var letterSpacing: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var letterSpacing: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object LetterSpacingProps {
   
@@ -24,7 +22,7 @@ object LetterSpacingProps {
   }
   
   @scala.inline
-  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (LetterSpacingProps[ThemeType, TVal])) extends AnyVal {
+  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LetterSpacingProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setLetterSpacing(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])

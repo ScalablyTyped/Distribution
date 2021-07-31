@@ -14,56 +14,54 @@ import typings.react.mod.RefObject
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @ionic/core.@ionic/core.AlertOptions & @ionic/react.@ionic/react/dist/types/components/createControllerComponent.ReactControllerProps & {  forwardedRef :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonAlertElement> | undefined} & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonAlertElement> */
-@js.native
 trait AlertOptionsReactControll extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.native
+  var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.undefined
   
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  var forwardedRef: js.UndefOr[RefObject[HTMLIonAlertElement]] = js.native
+  var forwardedRef: js.UndefOr[RefObject[HTMLIonAlertElement]] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[AlertInput]] = js.native
+  var inputs: js.UndefOr[js.Array[AlertInput]] = js.undefined
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  var message: js.UndefOr[String | IonicSafeString] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.undefined
   
-  var mode: js.UndefOr[Mode] = js.native
+  var mode: js.UndefOr[Mode] = js.undefined
   
-  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var ref: js.UndefOr[Ref[HTMLIonAlertElement]] = js.native
+  var ref: js.UndefOr[Ref[HTMLIonAlertElement]] = js.undefined
   
-  var subHeader: js.UndefOr[String] = js.native
+  var subHeader: js.UndefOr[String] = js.undefined
   
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object AlertOptionsReactControll {
   
@@ -176,25 +174,25 @@ object AlertOptionsReactControll {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
+    def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDidDismissUndefined: Self = StObject.set(x, "onDidDismiss", js.undefined)
     
     @scala.inline
-    def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
+    def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDidPresentUndefined: Self = StObject.set(x, "onDidPresent", js.undefined)
     
     @scala.inline
-    def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
+    def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWillDismissUndefined: Self = StObject.set(x, "onWillDismiss", js.undefined)
     
     @scala.inline
-    def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
+    def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWillPresentUndefined: Self = StObject.set(x, "onWillPresent", js.undefined)

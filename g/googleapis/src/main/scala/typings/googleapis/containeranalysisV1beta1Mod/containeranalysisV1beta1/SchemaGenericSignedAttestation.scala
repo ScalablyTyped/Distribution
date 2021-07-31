@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * verify and any metadata necessary to interpret that plaintext.  The
   * signatures should always be over the `serialized_payload` bytestring.
   */
-@js.native
 trait SchemaGenericSignedAttestation extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait SchemaGenericSignedAttestation extends StObject {
     * supports, and that the attestation payload is a valid instantiation of
     * that type (for example by validating a JSON schema).
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The serialized payload that is verified by one or more `signatures`. The
     * encoding and semantic meaning of this payload must match what is set in
     * `content_type`.
     */
-  var serializedPayload: js.UndefOr[String] = js.native
+  var serializedPayload: js.UndefOr[String] = js.undefined
   
   /**
     * One or more signatures over `serialized_payload`.  Verifier
@@ -35,7 +33,7 @@ trait SchemaGenericSignedAttestation extends StObject {
     * least one `signature` verifies `serialized_payload`.  See `Signature` in
     * common.proto for more details on signature structure and verification.
     */
-  var signatures: js.UndefOr[js.Array[SchemaSignature]] = js.native
+  var signatures: js.UndefOr[js.Array[SchemaSignature]] = js.undefined
 }
 object SchemaGenericSignedAttestation {
   

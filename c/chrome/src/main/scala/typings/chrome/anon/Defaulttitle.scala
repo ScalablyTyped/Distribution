@@ -2,17 +2,15 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Defaulttitle extends StObject {
   
-  var default_title: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.undefined
   
-  var file_filters: js.UndefOr[js.Array[String]] = js.native
+  var file_filters: js.UndefOr[js.Array[String]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Defaulttitle {
   

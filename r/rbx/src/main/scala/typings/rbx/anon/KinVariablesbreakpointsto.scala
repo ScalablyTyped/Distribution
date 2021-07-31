@@ -6,24 +6,22 @@ import typings.rbx.rbxStrings.right
 import typings.rbx.rbxStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in rbx.rbx/base/helpers/variables.Variables['breakpoints'] ]:? 'top' | 'right' | 'bottom' | 'left'} */
-@js.native
 trait KinVariablesbreakpointsto extends StObject {
   
-  var desktop: js.UndefOr[top | right | bottom | left] = js.native
+  var desktop: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var fullhd: js.UndefOr[top | right | bottom | left] = js.native
+  var fullhd: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var mobile: js.UndefOr[top | right | bottom | left] = js.native
+  var mobile: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var tablet: js.UndefOr[top | right | bottom | left] = js.native
+  var tablet: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var touch: js.UndefOr[top | right | bottom | left] = js.native
+  var touch: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var widescreen: js.UndefOr[top | right | bottom | left] = js.native
+  var widescreen: js.UndefOr[top | right | bottom | left] = js.undefined
 }
 object KinVariablesbreakpointsto {
   

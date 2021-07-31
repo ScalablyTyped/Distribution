@@ -2,36 +2,34 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The width and height of a map region.
   */
-@js.native
 trait CoordinateSpan extends StObject {
   
   /**
     * Returns a copy of the coordinate span.
     */
-  def copy(): CoordinateSpan = js.native
+  def copy(): CoordinateSpan
   
   /**
     * Returns a Boolean value that indicates whether two spans are equal.
     */
-  def equals(anotherSpan: CoordinateSpan): Boolean = js.native
+  def equals(anotherSpan: CoordinateSpan): Boolean
   
   /**
     * The amount of north-to-south distance (measured in degrees) to display on
     * the map.
     */
-  var latitudeDelta: Double = js.native
+  var latitudeDelta: Double
   
   /**
     * The amount of east-to-west distance (measured in degrees) to display for
     * the map region.
     */
-  var longitudeDelta: Double = js.native
+  var longitudeDelta: Double
 }
 object CoordinateSpan {
   

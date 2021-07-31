@@ -3,21 +3,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import typings.googleCloudPubsub.protosMod.google.protobuf.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SeekRequest. */
-@js.native
 trait ISeekRequest extends StObject {
   
   /** SeekRequest snapshot */
-  var snapshot: js.UndefOr[String | Null] = js.native
+  var snapshot: js.UndefOr[String | Null] = js.undefined
   
   /** SeekRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
   
   /** SeekRequest time */
-  var time: js.UndefOr[ITimestamp | Null] = js.native
+  var time: js.UndefOr[ITimestamp | Null] = js.undefined
 }
 object ISeekRequest {
   

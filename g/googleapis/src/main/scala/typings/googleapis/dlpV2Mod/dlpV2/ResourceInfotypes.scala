@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Infotypes")
@@ -33,7 +32,7 @@ class ResourceInfotypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInfoTypesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(params: ParamsResourceInfotypesList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(
     params: ParamsResourceInfotypesList,

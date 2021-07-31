@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PigJob extends StObject {
   
   /** Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapReduce (MR) tasks. Can contain Pig UDFs. */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. The runtime log config for job execution. */
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   
   /**
     * Optional. A mapping of property names to values, used to configure Pig. Properties that conflict with values set by the Dataproc API may be overwritten. Can include properties set
@@ -25,21 +23,21 @@ trait PigJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The HCFS URI of the script that contains the Pig queries. */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /** A list of queries. */
-  var queryList: js.UndefOr[QueryList] = js.native
+  var queryList: js.UndefOr[QueryList] = js.undefined
   
   /** Optional. Mapping of query variable names to values (equivalent to the Pig command: name=[value]). */
   var scriptVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+  ] = js.undefined
 }
 object PigJob {
   
@@ -77,7 +75,7 @@ object PigJob {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -99,7 +97,7 @@ object PigJob {
     def setScriptVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "scriptVariables", value.asInstanceOf[js.Any])
     
     @scala.inline

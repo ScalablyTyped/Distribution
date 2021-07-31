@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Assignment extends BaseElement {
+trait Assignment
+  extends StObject
+     with BaseElement {
   
-  var from: Expression = js.native
+  var from: Expression
   
-  var to: Expression = js.native
+  var to: Expression
 }
 object Assignment {
   

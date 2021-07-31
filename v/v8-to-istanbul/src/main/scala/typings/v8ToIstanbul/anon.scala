@@ -4,19 +4,19 @@ import typings.sourceMap.mod.RawSourceMap
 import typings.v8ToIstanbul.mod.Sources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait OriginalSource extends Sources {
+  trait OriginalSource
+    extends StObject
+       with Sources {
     
-    var originalSource: String = js.native
+    var originalSource: String
     
-    var source: String = js.native
+    var source: String
     
-    var sourceMap: Sourcemap = js.native
+    var sourceMap: Sourcemap
   }
   object OriginalSource {
     
@@ -40,10 +40,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Source extends Sources {
+  trait Source
+    extends StObject
+       with Sources {
     
-    var source: String = js.native
+    var source: String
   }
   object Source {
     
@@ -61,10 +62,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Sourcemap extends StObject {
     
-    var sourcemap: RawSourceMap = js.native
+    var sourcemap: RawSourceMap
   }
   object Sourcemap {
     

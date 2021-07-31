@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to rotate a floating object.
   */
-@js.native
-trait ChangeFloatingObjectRotationCommand extends ChangeFloatingObjectPropertyCommandBase[Double]
+trait ChangeFloatingObjectRotationCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[Double]
 object ChangeFloatingObjectRotationCommand {
   
   @scala.inline

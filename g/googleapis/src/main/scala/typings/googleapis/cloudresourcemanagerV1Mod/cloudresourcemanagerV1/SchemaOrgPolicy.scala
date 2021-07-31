@@ -2,26 +2,24 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a Cloud Organization `Policy` which is used to specify
   * `Constraints` for configurations of Cloud Platform resources.
   */
-@js.native
 trait SchemaOrgPolicy extends StObject {
   
   /**
     * For boolean `Constraints`, whether to enforce the `Constraint` or not.
     */
-  var booleanPolicy: js.UndefOr[SchemaBooleanPolicy] = js.native
+  var booleanPolicy: js.UndefOr[SchemaBooleanPolicy] = js.undefined
   
   /**
     * The name of the `Constraint` the `Policy` is configuring, for example,
     * `constraints/serviceuser.services`.  Immutable after creation.
     */
-  var constraint: js.UndefOr[String] = js.native
+  var constraint: js.UndefOr[String] = js.undefined
   
   /**
     * An opaque tag indicating the current version of the `Policy`, used for
@@ -35,18 +33,18 @@ trait SchemaOrgPolicy extends StObject {
     * setting the `etag`in a `SetOrgPolicy` request will result in an
     * unconditional write of the `Policy`.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * List of values either allowed or disallowed.
     */
-  var listPolicy: js.UndefOr[SchemaListPolicy] = js.native
+  var listPolicy: js.UndefOr[SchemaListPolicy] = js.undefined
   
   /**
     * Restores the default behavior of the constraint; independent of
     * `Constraint` type.
     */
-  var restoreDefault: js.UndefOr[SchemaRestoreDefault] = js.native
+  var restoreDefault: js.UndefOr[SchemaRestoreDefault] = js.undefined
   
   /**
     * The time stamp the `Policy` was previously updated. This is set by the
@@ -54,12 +52,12 @@ trait SchemaOrgPolicy extends StObject {
     * to `SetOrgPolicy` was made for that `Policy`. Any value set by the client
     * will be ignored.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Version of the `Policy`. Default version is 0;
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaOrgPolicy {
   

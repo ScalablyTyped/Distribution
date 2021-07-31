@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPipelineExecutionOutput extends StObject {
   
   /**
     * The unique system-generated ID of the pipeline execution that was started.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
 }
 object StartPipelineExecutionOutput {
   

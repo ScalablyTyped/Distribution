@@ -2,36 +2,34 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationRequest extends StObject {
   
   /**
     *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
     */
-  var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.native
+  var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.undefined
   
   /**
     *  When set to true, creates opsItems for any problems detected on an application. 
     */
-  var OpsCenterEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsCenterEnabled] = js.native
+  var OpsCenterEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsCenterEnabled] = js.undefined
   
   /**
     *  The SNS topic provided to Application Insights that is associated to the created opsItem. Allows you to receive notifications for updates to the opsItem.
     */
-  var OpsItemSNSTopicArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsItemSNSTopicArn] = js.native
+  var OpsItemSNSTopicArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsItemSNSTopicArn] = js.undefined
   
   /**
     *  Disassociates the SNS topic from the opsItem created for detected problems.
     */
-  var RemoveSNSTopic: js.UndefOr[typings.awsSdk.applicationinsightsMod.RemoveSNSTopic] = js.native
+  var RemoveSNSTopic: js.UndefOr[typings.awsSdk.applicationinsightsMod.RemoveSNSTopic] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
 }
 object UpdateApplicationRequest {
   

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/logger |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 381 |
+| # releases         | 7 |
+| # dependents       | 0 |
+| # downloads        | 264 |
 | # stars            | 0 |
 
 ## Links

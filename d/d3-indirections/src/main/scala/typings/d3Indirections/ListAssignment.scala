@@ -2,19 +2,18 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Assign a list resource by setting its current index.
   */
-@js.native
 trait ListAssignment
-  extends AssignmentBase
+  extends StObject
+     with AssignmentBase
      with Assignment {
   
   /** New index of the resource list to use. */
-  var resourceIndex: Double = js.native
+  var resourceIndex: Double
 }
 object ListAssignment {
   

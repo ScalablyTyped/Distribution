@@ -2,7 +2,6 @@ package typings.chrome.chrome.system
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object memory {
   
-  @js.native
   trait MemoryInfo extends StObject {
     
     /** The amount of available capacity, in bytes. */
-    var availableCapacity: Double = js.native
+    var availableCapacity: Double
     
     /** The total amount of physical memory capacity, in bytes. */
-    var capacity: Double = js.native
+    var capacity: Double
   }
   object MemoryInfo {
     

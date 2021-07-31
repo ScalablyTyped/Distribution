@@ -13,58 +13,56 @@ import typings.activexOffice.Office.TextColumn2
 import typings.activexOffice.Office.TextRange2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFrame2 extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoSize: MsoAutoSize = js.native
+  var AutoSize: MsoAutoSize
   
-  val Column: TextColumn2 = js.native
+  val Column: TextColumn2
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def DeleteText(): Unit = js.native
+  def DeleteText(): Unit
   
   @JSName("Excel.TextFrame2_typekey")
-  var ExcelDotTextFrame2_typekey: TextFrame2 = js.native
+  var ExcelDotTextFrame2_typekey: TextFrame2
   
-  val HasText: MsoTriState = js.native
+  val HasText: MsoTriState
   
-  var HorizontalAnchor: MsoHorizontalAnchor = js.native
+  var HorizontalAnchor: MsoHorizontalAnchor
   
-  var MarginBottom: Double = js.native
+  var MarginBottom: Double
   
-  var MarginLeft: Double = js.native
+  var MarginLeft: Double
   
-  var MarginRight: Double = js.native
+  var MarginRight: Double
   
-  var MarginTop: Double = js.native
+  var MarginTop: Double
   
-  var NoTextRotation: MsoTriState = js.native
+  var NoTextRotation: MsoTriState
   
-  var Orientation: MsoTextOrientation = js.native
+  var Orientation: MsoTextOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PathFormat: MsoPathFormat = js.native
+  var PathFormat: MsoPathFormat
   
-  val Ruler: Ruler2 = js.native
+  val Ruler: Ruler2
   
-  val TextRange: TextRange2 = js.native
+  val TextRange: TextRange2
   
-  val ThreeD: ThreeDFormat = js.native
+  val ThreeD: ThreeDFormat
   
-  var VerticalAnchor: MsoVerticalAnchor = js.native
+  var VerticalAnchor: MsoVerticalAnchor
   
-  var WarpFormat: MsoWarpFormat = js.native
+  var WarpFormat: MsoWarpFormat
   
-  var WordArtformat: MsoPresetTextEffect = js.native
+  var WordArtformat: MsoPresetTextEffect
   
-  var WordWrap: MsoTriState = js.native
+  var WordWrap: MsoTriState
 }
 object TextFrame2 {
   

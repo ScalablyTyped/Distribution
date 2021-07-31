@@ -3,7 +3,6 @@ package typings.kiiCloudSdk.global.KiiCloud
 import typings.kiiCloudSdk.anon.`19`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiAnalytics")
 @js.native
 class KiiAnalytics ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiAnalytics
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiAnalytics
 object KiiAnalytics {
+  
+  @JSGlobal("KiiCloud.KiiAnalytics")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Retrieve the current app ID
@@ -21,9 +25,8 @@ object KiiAnalytics {
     * @return The current app ID
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.getAppID")
-  @js.native
-  def getAppID(): String = js.native
+  @scala.inline
+  def getAppID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppID")().asInstanceOf[String]
   
   /**
     * Retrieve the current app key
@@ -31,9 +34,8 @@ object KiiAnalytics {
     * @return The current app key
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.getAppKey")
-  @js.native
-  def getAppKey(): String = js.native
+  @scala.inline
+  def getAppKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppKey")().asInstanceOf[String]
   
   /**
     * Get the deviceId. If deviceId has not specified while initialization, it returns SDK generated deviceId.It is recommended to retrieve the deviceId and store it to identify the device
@@ -42,9 +44,8 @@ object KiiAnalytics {
     * @return deviceId.
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.getDeviceId")
-  @js.native
-  def getDeviceId(): String = js.native
+  @scala.inline
+  def getDeviceId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceId")().asInstanceOf[String]
   
   /**
     *
@@ -54,9 +55,8 @@ object KiiAnalytics {
     * @return current version number of the SDK
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.getSDKVersion")
-  @js.native
-  def getSDKVersion(): String = js.native
+  @scala.inline
+  def getSDKVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")().asInstanceOf[String]
   
   /**
     *
@@ -77,9 +77,8 @@ object KiiAnalytics {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.initialize")
-  @js.native
-  def initialize(appID: String, appKey: String, deviceid: String): Unit = js.native
+  @scala.inline
+  def initialize(appID: String, appKey: String, deviceid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], deviceid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *
@@ -101,14 +100,13 @@ object KiiAnalytics {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.initializeWithSite")
-  @js.native
+  @scala.inline
   def initializeWithSite(
     appID: String,
     appKey: String,
     site: typings.kiiCloudSdk.KiiCloud.KiiAnalyticsSite,
     deviceid: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any], deviceid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Is the SDK printing logs to the console?
@@ -116,9 +114,8 @@ object KiiAnalytics {
     * @return True if printing logs, false otherwise
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.isLogging")
-  @js.native
-  def isLogging(): Boolean = js.native
+  @scala.inline
+  def isLogging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogging")().asInstanceOf[Boolean]
   
   /**
     * Utilize the KiiAnalytics logger to track SDK-specific actions
@@ -131,9 +128,8 @@ object KiiAnalytics {
     *         KiiAnalytics.logger("My message");
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.logger")
-  @js.native
-  def logger(message: String): Unit = js.native
+  @scala.inline
+  def logger(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     *
@@ -143,9 +139,8 @@ object KiiAnalytics {
     * @param url A string containing the desired endpoint
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.setBaseURL")
-  @js.native
-  def setBaseURL(url: String): Unit = js.native
+  @scala.inline
+  def setBaseURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set the logging status of the SDK
@@ -158,9 +153,8 @@ object KiiAnalytics {
     *         KiiAnalytics.setLogging(true);
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.setLogging")
-  @js.native
-  def setLogging(True: Boolean): Unit = js.native
+  @scala.inline
+  def setLogging(True: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogging")(True.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -180,9 +174,8 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.trackEvent")
-  @js.native
-  def trackEvent(eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def trackEvent(eventName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -206,9 +199,8 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtras")
-  @js.native
-  def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
+  @scala.inline
+  def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtras")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -233,10 +225,8 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtrasAndCallbacks")
-  @js.native
-  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
-  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtrasAndCallbacks")
-  @js.native
-  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = js.native
+  @scala.inline
+  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

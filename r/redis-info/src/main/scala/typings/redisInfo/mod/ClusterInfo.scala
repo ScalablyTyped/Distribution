@@ -2,13 +2,11 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterInfo extends StObject {
   
-  var cluster_enabled: Flag = js.native
+  var cluster_enabled: Flag
 }
 object ClusterInfo {
   

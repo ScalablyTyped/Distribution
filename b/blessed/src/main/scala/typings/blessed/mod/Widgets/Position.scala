@@ -2,19 +2,17 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var bottom: Double | String = js.native
+  var bottom: Double | String
   
-  var left: Double | String = js.native
+  var left: Double | String
   
-  var right: Double | String = js.native
+  var right: Double | String
   
-  var top: Double | String = js.native
+  var top: Double | String
 }
 object Position {
   

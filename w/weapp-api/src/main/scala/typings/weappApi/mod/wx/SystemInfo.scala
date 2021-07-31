@@ -2,29 +2,27 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfo extends StObject {
   
   /** 微信设置的语言 */
-  var language: String = js.native
+  var language: String
   
   /** 手机型号 */
-  var model: String = js.native
+  var model: String
   
   /** 设备像素比 */
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   /** 微信版本号 */
-  var version: String = js.native
+  var version: String
   
   /** 窗口高度 */
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
   /** 窗口宽度 */
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object SystemInfo {
   

@@ -7,7 +7,6 @@ import typings.typesettable.mod.Wrapper
 import typings.typesettable.mod.Writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
@@ -21,8 +20,8 @@ object labelMod {
     */
   class AxisLabel () extends Label {
     def this(text: String) = this()
-    def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
+    def this(text: Unit, angle: Double) = this()
   }
   /* static members */
   object AxisLabel {
@@ -49,8 +48,8 @@ object labelMod {
     */
   class Label () extends Component {
     def this(displayText: String) = this()
-    def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(displayText: String, angle: Double) = this()
+    def this(displayText: Unit, angle: Double) = this()
     
     var _angle: Double = js.native
     
@@ -112,8 +111,8 @@ object labelMod {
     */
   class TitleLabel () extends Label {
     def this(text: String) = this()
-    def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
+    def this(text: Unit, angle: Double) = this()
   }
   /* static members */
   object TitleLabel {

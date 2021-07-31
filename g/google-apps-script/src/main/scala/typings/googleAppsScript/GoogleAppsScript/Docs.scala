@@ -69,211 +69,209 @@ import typings.googleAppsScript.GoogleAppsScript.Docs.Schema.WeightedFontFamily
 import typings.googleAppsScript.GoogleAppsScript.Docs.Schema.WriteControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Docs extends StObject {
   
-  var Documents: js.UndefOr[DocumentsCollection] = js.native
+  var Documents: js.UndefOr[DocumentsCollection] = js.undefined
   
   // Create a new instance of AutoText
-  def newAutoText(): AutoText = js.native
+  def newAutoText(): AutoText
   
   // Create a new instance of Background
-  def newBackground(): Background = js.native
+  def newBackground(): Background
   
   // Create a new instance of BatchUpdateDocumentRequest
-  def newBatchUpdateDocumentRequest(): BatchUpdateDocumentRequest = js.native
+  def newBatchUpdateDocumentRequest(): BatchUpdateDocumentRequest
   
   // Create a new instance of Body
-  def newBody(): Body = js.native
+  def newBody(): Body
   
   // Create a new instance of Bullet
-  def newBullet(): Bullet = js.native
+  def newBullet(): Bullet
   
   // Create a new instance of Color
-  def newColor(): Color = js.native
+  def newColor(): Color
   
   // Create a new instance of ColumnBreak
-  def newColumnBreak(): ColumnBreak = js.native
+  def newColumnBreak(): ColumnBreak
   
   // Create a new instance of CreateNamedRangeRequest
-  def newCreateNamedRangeRequest(): CreateNamedRangeRequest = js.native
+  def newCreateNamedRangeRequest(): CreateNamedRangeRequest
   
   // Create a new instance of CreateParagraphBulletsRequest
-  def newCreateParagraphBulletsRequest(): CreateParagraphBulletsRequest = js.native
+  def newCreateParagraphBulletsRequest(): CreateParagraphBulletsRequest
   
   // Create a new instance of DeleteContentRangeRequest
-  def newDeleteContentRangeRequest(): DeleteContentRangeRequest = js.native
+  def newDeleteContentRangeRequest(): DeleteContentRangeRequest
   
   // Create a new instance of DeleteNamedRangeRequest
-  def newDeleteNamedRangeRequest(): DeleteNamedRangeRequest = js.native
+  def newDeleteNamedRangeRequest(): DeleteNamedRangeRequest
   
   // Create a new instance of DeleteParagraphBulletsRequest
-  def newDeleteParagraphBulletsRequest(): DeleteParagraphBulletsRequest = js.native
+  def newDeleteParagraphBulletsRequest(): DeleteParagraphBulletsRequest
   
   // Create a new instance of DeletePositionedObjectRequest
-  def newDeletePositionedObjectRequest(): DeletePositionedObjectRequest = js.native
+  def newDeletePositionedObjectRequest(): DeletePositionedObjectRequest
   
   // Create a new instance of DeleteTableColumnRequest
-  def newDeleteTableColumnRequest(): DeleteTableColumnRequest = js.native
+  def newDeleteTableColumnRequest(): DeleteTableColumnRequest
   
   // Create a new instance of DeleteTableRowRequest
-  def newDeleteTableRowRequest(): DeleteTableRowRequest = js.native
+  def newDeleteTableRowRequest(): DeleteTableRowRequest
   
   // Create a new instance of Dimension
-  def newDimension(): Dimension = js.native
+  def newDimension(): Dimension
   
   // Create a new instance of Document
-  def newDocument(): typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document = js.native
+  def newDocument(): typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document
   
   // Create a new instance of DocumentStyle
-  def newDocumentStyle(): DocumentStyle = js.native
+  def newDocumentStyle(): DocumentStyle
   
   // Create a new instance of EndOfSegmentLocation
-  def newEndOfSegmentLocation(): EndOfSegmentLocation = js.native
+  def newEndOfSegmentLocation(): EndOfSegmentLocation
   
   // Create a new instance of Equation
-  def newEquation(): Equation = js.native
+  def newEquation(): Equation
   
   // Create a new instance of FootnoteReference
-  def newFootnoteReference(): FootnoteReference = js.native
+  def newFootnoteReference(): FootnoteReference
   
   // Create a new instance of HorizontalRule
-  def newHorizontalRule(): HorizontalRule = js.native
+  def newHorizontalRule(): HorizontalRule
   
   // Create a new instance of InlineObjectElement
-  def newInlineObjectElement(): InlineObjectElement = js.native
+  def newInlineObjectElement(): InlineObjectElement
   
   // Create a new instance of InsertInlineImageRequest
-  def newInsertInlineImageRequest(): InsertInlineImageRequest = js.native
+  def newInsertInlineImageRequest(): InsertInlineImageRequest
   
   // Create a new instance of InsertPageBreakRequest
-  def newInsertPageBreakRequest(): InsertPageBreakRequest = js.native
+  def newInsertPageBreakRequest(): InsertPageBreakRequest
   
   // Create a new instance of InsertTableRequest
-  def newInsertTableRequest(): InsertTableRequest = js.native
+  def newInsertTableRequest(): InsertTableRequest
   
   // Create a new instance of InsertTableRowRequest
-  def newInsertTableRowRequest(): InsertTableRowRequest = js.native
+  def newInsertTableRowRequest(): InsertTableRowRequest
   
   // Create a new instance of InsertTextRequest
-  def newInsertTextRequest(): InsertTextRequest = js.native
+  def newInsertTextRequest(): InsertTextRequest
   
   // Create a new instance of Link
-  def newLink(): Link = js.native
+  def newLink(): Link
   
   // Create a new instance of Location
-  def newLocation(): Location = js.native
+  def newLocation(): Location
   
   // Create a new instance of NamedStyle
-  def newNamedStyle(): NamedStyle = js.native
+  def newNamedStyle(): NamedStyle
   
   // Create a new instance of NamedStyles
-  def newNamedStyles(): NamedStyles = js.native
+  def newNamedStyles(): NamedStyles
   
   // Create a new instance of OptionalColor
-  def newOptionalColor(): OptionalColor = js.native
+  def newOptionalColor(): OptionalColor
   
   // Create a new instance of PageBreak
-  def newPageBreak(): PageBreak = js.native
+  def newPageBreak(): PageBreak
   
   // Create a new instance of Paragraph
-  def newParagraph(): Paragraph = js.native
+  def newParagraph(): Paragraph
   
   // Create a new instance of ParagraphBorder
-  def newParagraphBorder(): ParagraphBorder = js.native
+  def newParagraphBorder(): ParagraphBorder
   
   // Create a new instance of ParagraphElement
-  def newParagraphElement(): ParagraphElement = js.native
+  def newParagraphElement(): ParagraphElement
   
   // Create a new instance of ParagraphStyle
-  def newParagraphStyle(): ParagraphStyle = js.native
+  def newParagraphStyle(): ParagraphStyle
   
   // Create a new instance of Range
-  def newRange(): Range = js.native
+  def newRange(): Range
   
   // Create a new instance of ReplaceAllTextRequest
-  def newReplaceAllTextRequest(): ReplaceAllTextRequest = js.native
+  def newReplaceAllTextRequest(): ReplaceAllTextRequest
   
   // Create a new instance of Request
-  def newRequest(): Request = js.native
+  def newRequest(): Request
   
   // Create a new instance of RgbColor
-  def newRgbColor(): RgbColor = js.native
+  def newRgbColor(): RgbColor
   
   // Create a new instance of SectionBreak
-  def newSectionBreak(): SectionBreak = js.native
+  def newSectionBreak(): SectionBreak
   
   // Create a new instance of SectionColumnProperties
-  def newSectionColumnProperties(): SectionColumnProperties = js.native
+  def newSectionColumnProperties(): SectionColumnProperties
   
   // Create a new instance of SectionStyle
-  def newSectionStyle(): SectionStyle = js.native
+  def newSectionStyle(): SectionStyle
   
   // Create a new instance of Shading
-  def newShading(): Shading = js.native
+  def newShading(): Shading
   
   // Create a new instance of Size
-  def newSize(): Size = js.native
+  def newSize(): Size
   
   // Create a new instance of StructuralElement
-  def newStructuralElement(): StructuralElement = js.native
+  def newStructuralElement(): StructuralElement
   
   // Create a new instance of SubstringMatchCriteria
-  def newSubstringMatchCriteria(): SubstringMatchCriteria = js.native
+  def newSubstringMatchCriteria(): SubstringMatchCriteria
   
   // Create a new instance of TabStop
-  def newTabStop(): TabStop = js.native
+  def newTabStop(): TabStop
   
   // Create a new instance of Table
-  def newTable(): Table = js.native
+  def newTable(): Table
   
   // Create a new instance of TableCell
-  def newTableCell(): TableCell = js.native
+  def newTableCell(): TableCell
   
   // Create a new instance of TableCellBorder
-  def newTableCellBorder(): TableCellBorder = js.native
+  def newTableCellBorder(): TableCellBorder
   
   // Create a new instance of TableCellLocation
-  def newTableCellLocation(): TableCellLocation = js.native
+  def newTableCellLocation(): TableCellLocation
   
   // Create a new instance of TableCellStyle
-  def newTableCellStyle(): TableCellStyle = js.native
+  def newTableCellStyle(): TableCellStyle
   
   // Create a new instance of TableColumnProperties
-  def newTableColumnProperties(): TableColumnProperties = js.native
+  def newTableColumnProperties(): TableColumnProperties
   
   // Create a new instance of TableOfContents
-  def newTableOfContents(): TableOfContents = js.native
+  def newTableOfContents(): TableOfContents
   
   // Create a new instance of TableRow
-  def newTableRow(): TableRow = js.native
+  def newTableRow(): TableRow
   
   // Create a new instance of TableRowStyle
-  def newTableRowStyle(): TableRowStyle = js.native
+  def newTableRowStyle(): TableRowStyle
   
   // Create a new instance of TableStyle
-  def newTableStyle(): TableStyle = js.native
+  def newTableStyle(): TableStyle
   
   // Create a new instance of TextRun
-  def newTextRun(): TextRun = js.native
+  def newTextRun(): TextRun
   
   // Create a new instance of TextStyle
-  def newTextStyle(): TextStyle = js.native
+  def newTextStyle(): TextStyle
   
   // Create a new instance of UpdateParagraphStyleRequest
-  def newUpdateParagraphStyleRequest(): UpdateParagraphStyleRequest = js.native
+  def newUpdateParagraphStyleRequest(): UpdateParagraphStyleRequest
   
   // Create a new instance of UpdateTextStyleRequest
-  def newUpdateTextStyleRequest(): UpdateTextStyleRequest = js.native
+  def newUpdateTextStyleRequest(): UpdateTextStyleRequest
   
   // Create a new instance of WeightedFontFamily
-  def newWeightedFontFamily(): WeightedFontFamily = js.native
+  def newWeightedFontFamily(): WeightedFontFamily
   
   // Create a new instance of WriteControl
-  def newWriteControl(): WriteControl = js.native
+  def newWriteControl(): WriteControl
 }
 object Docs {
   
@@ -596,18 +594,17 @@ object Docs {
   
   object Schema {
     
-    @js.native
     trait AutoText extends StObject {
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AutoText {
       
@@ -658,10 +655,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait Background extends StObject {
       
-      var color: js.UndefOr[OptionalColor] = js.native
+      var color: js.UndefOr[OptionalColor] = js.undefined
     }
     object Background {
       
@@ -682,10 +678,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait BackgroundSuggestionState extends StObject {
       
-      var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+      var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object BackgroundSuggestionState {
       
@@ -706,12 +701,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait BatchUpdateDocumentRequest extends StObject {
       
-      var requests: js.UndefOr[js.Array[Request]] = js.native
+      var requests: js.UndefOr[js.Array[Request]] = js.undefined
       
-      var writeControl: js.UndefOr[WriteControl] = js.native
+      var writeControl: js.UndefOr[WriteControl] = js.undefined
     }
     object BatchUpdateDocumentRequest {
       
@@ -741,14 +735,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait BatchUpdateDocumentResponse extends StObject {
       
-      var documentId: js.UndefOr[String] = js.native
+      var documentId: js.UndefOr[String] = js.undefined
       
-      var replies: js.UndefOr[js.Array[Response]] = js.native
+      var replies: js.UndefOr[js.Array[Response]] = js.undefined
       
-      var writeControl: js.UndefOr[WriteControl] = js.native
+      var writeControl: js.UndefOr[WriteControl] = js.undefined
     }
     object BatchUpdateDocumentResponse {
       
@@ -784,10 +777,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait Body extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
     }
     object Body {
       
@@ -811,14 +803,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait Bullet extends StObject {
       
-      var listId: js.UndefOr[String] = js.native
+      var listId: js.UndefOr[String] = js.undefined
       
-      var nestingLevel: js.UndefOr[Double] = js.native
+      var nestingLevel: js.UndefOr[Double] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object Bullet {
       
@@ -851,14 +842,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait BulletSuggestionState extends StObject {
       
-      var listIdSuggested: js.UndefOr[Boolean] = js.native
+      var listIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var nestingLevelSuggested: js.UndefOr[Boolean] = js.native
+      var nestingLevelSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
     }
     object BulletSuggestionState {
       
@@ -891,10 +881,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait Color extends StObject {
       
-      var rgbColor: js.UndefOr[RgbColor] = js.native
+      var rgbColor: js.UndefOr[RgbColor] = js.undefined
     }
     object Color {
       
@@ -915,16 +904,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait ColumnBreak extends StObject {
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object ColumnBreak {
       
@@ -969,12 +957,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait CreateNamedRangeRequest extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
     }
     object CreateNamedRangeRequest {
       
@@ -1001,10 +988,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait CreateNamedRangeResponse extends StObject {
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
     }
     object CreateNamedRangeResponse {
       
@@ -1025,12 +1011,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait CreateParagraphBulletsRequest extends StObject {
       
-      var bulletPreset: js.UndefOr[String] = js.native
+      var bulletPreset: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
     }
     object CreateParagraphBulletsRequest {
       
@@ -1057,18 +1042,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait CropProperties extends StObject {
       
-      var angle: js.UndefOr[Double] = js.native
+      var angle: js.UndefOr[Double] = js.undefined
       
-      var offsetBottom: js.UndefOr[Double] = js.native
+      var offsetBottom: js.UndefOr[Double] = js.undefined
       
-      var offsetLeft: js.UndefOr[Double] = js.native
+      var offsetLeft: js.UndefOr[Double] = js.undefined
       
-      var offsetRight: js.UndefOr[Double] = js.native
+      var offsetRight: js.UndefOr[Double] = js.undefined
       
-      var offsetTop: js.UndefOr[Double] = js.native
+      var offsetTop: js.UndefOr[Double] = js.undefined
     }
     object CropProperties {
       
@@ -1113,18 +1097,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait CropPropertiesSuggestionState extends StObject {
       
-      var angleSuggested: js.UndefOr[Boolean] = js.native
+      var angleSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var offsetBottomSuggested: js.UndefOr[Boolean] = js.native
+      var offsetBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var offsetLeftSuggested: js.UndefOr[Boolean] = js.native
+      var offsetLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var offsetRightSuggested: js.UndefOr[Boolean] = js.native
+      var offsetRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var offsetTopSuggested: js.UndefOr[Boolean] = js.native
+      var offsetTopSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object CropPropertiesSuggestionState {
       
@@ -1169,10 +1152,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeleteContentRangeRequest extends StObject {
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
     }
     object DeleteContentRangeRequest {
       
@@ -1193,12 +1175,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeleteNamedRangeRequest extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
     }
     object DeleteNamedRangeRequest {
       
@@ -1225,10 +1206,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeleteParagraphBulletsRequest extends StObject {
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
     }
     object DeleteParagraphBulletsRequest {
       
@@ -1249,10 +1229,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeletePositionedObjectRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object DeletePositionedObjectRequest {
       
@@ -1273,10 +1252,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeleteTableColumnRequest extends StObject {
       
-      var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+      var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
     }
     object DeleteTableColumnRequest {
       
@@ -1297,10 +1275,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait DeleteTableRowRequest extends StObject {
       
-      var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+      var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
     }
     object DeleteTableRowRequest {
       
@@ -1321,12 +1298,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Dimension extends StObject {
       
-      var magnitude: js.UndefOr[Double] = js.native
+      var magnitude: js.UndefOr[Double] = js.undefined
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
     }
     object Dimension {
       
@@ -1353,40 +1329,39 @@ object Docs {
       }
     }
     
-    @js.native
     trait Document extends StObject {
       
-      var body: js.UndefOr[Body] = js.native
+      var body: js.UndefOr[Body] = js.undefined
       
-      var documentId: js.UndefOr[String] = js.native
+      var documentId: js.UndefOr[String] = js.undefined
       
-      var documentStyle: js.UndefOr[DocumentStyle] = js.native
+      var documentStyle: js.UndefOr[DocumentStyle] = js.undefined
       
-      var footers: js.UndefOr[js.Object] = js.native
+      var footers: js.UndefOr[js.Object] = js.undefined
       
-      var footnotes: js.UndefOr[js.Object] = js.native
+      var footnotes: js.UndefOr[js.Object] = js.undefined
       
-      var headers: js.UndefOr[js.Object] = js.native
+      var headers: js.UndefOr[js.Object] = js.undefined
       
-      var inlineObjects: js.UndefOr[js.Object] = js.native
+      var inlineObjects: js.UndefOr[js.Object] = js.undefined
       
-      var lists: js.UndefOr[js.Object] = js.native
+      var lists: js.UndefOr[js.Object] = js.undefined
       
-      var namedRanges: js.UndefOr[js.Object] = js.native
+      var namedRanges: js.UndefOr[js.Object] = js.undefined
       
-      var namedStyles: js.UndefOr[NamedStyles] = js.native
+      var namedStyles: js.UndefOr[NamedStyles] = js.undefined
       
-      var positionedObjects: js.UndefOr[js.Object] = js.native
+      var positionedObjects: js.UndefOr[js.Object] = js.undefined
       
-      var revisionId: js.UndefOr[String] = js.native
+      var revisionId: js.UndefOr[String] = js.undefined
       
-      var suggestedDocumentStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedDocumentStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var suggestedNamedStylesChanges: js.UndefOr[js.Object] = js.native
+      var suggestedNamedStylesChanges: js.UndefOr[js.Object] = js.undefined
       
-      var suggestionsViewMode: js.UndefOr[String] = js.native
+      var suggestionsViewMode: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Document {
       
@@ -1497,38 +1472,37 @@ object Docs {
       }
     }
     
-    @js.native
     trait DocumentStyle extends StObject {
       
-      var background: js.UndefOr[Background] = js.native
+      var background: js.UndefOr[Background] = js.undefined
       
-      var defaultFooterId: js.UndefOr[String] = js.native
+      var defaultFooterId: js.UndefOr[String] = js.undefined
       
-      var defaultHeaderId: js.UndefOr[String] = js.native
+      var defaultHeaderId: js.UndefOr[String] = js.undefined
       
-      var evenPageFooterId: js.UndefOr[String] = js.native
+      var evenPageFooterId: js.UndefOr[String] = js.undefined
       
-      var evenPageHeaderId: js.UndefOr[String] = js.native
+      var evenPageHeaderId: js.UndefOr[String] = js.undefined
       
-      var firstPageFooterId: js.UndefOr[String] = js.native
+      var firstPageFooterId: js.UndefOr[String] = js.undefined
       
-      var firstPageHeaderId: js.UndefOr[String] = js.native
+      var firstPageHeaderId: js.UndefOr[String] = js.undefined
       
-      var marginBottom: js.UndefOr[Dimension] = js.native
+      var marginBottom: js.UndefOr[Dimension] = js.undefined
       
-      var marginLeft: js.UndefOr[Dimension] = js.native
+      var marginLeft: js.UndefOr[Dimension] = js.undefined
       
-      var marginRight: js.UndefOr[Dimension] = js.native
+      var marginRight: js.UndefOr[Dimension] = js.undefined
       
-      var marginTop: js.UndefOr[Dimension] = js.native
+      var marginTop: js.UndefOr[Dimension] = js.undefined
       
-      var pageNumberStart: js.UndefOr[Double] = js.native
+      var pageNumberStart: js.UndefOr[Double] = js.undefined
       
-      var pageSize: js.UndefOr[Size] = js.native
+      var pageSize: js.UndefOr[Size] = js.undefined
       
-      var useEvenPageHeaderFooter: js.UndefOr[Boolean] = js.native
+      var useEvenPageHeaderFooter: js.UndefOr[Boolean] = js.undefined
       
-      var useFirstPageHeaderFooter: js.UndefOr[Boolean] = js.native
+      var useFirstPageHeaderFooter: js.UndefOr[Boolean] = js.undefined
     }
     object DocumentStyle {
       
@@ -1633,38 +1607,37 @@ object Docs {
       }
     }
     
-    @js.native
     trait DocumentStyleSuggestionState extends StObject {
       
-      var backgroundSuggestionState: js.UndefOr[BackgroundSuggestionState] = js.native
+      var backgroundSuggestionState: js.UndefOr[BackgroundSuggestionState] = js.undefined
       
-      var defaultFooterIdSuggested: js.UndefOr[Boolean] = js.native
+      var defaultFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var defaultHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+      var defaultHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var evenPageFooterIdSuggested: js.UndefOr[Boolean] = js.native
+      var evenPageFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var evenPageHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+      var evenPageHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var firstPageFooterIdSuggested: js.UndefOr[Boolean] = js.native
+      var firstPageFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var firstPageHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+      var firstPageHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginBottomSuggested: js.UndefOr[Boolean] = js.native
+      var marginBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginLeftSuggested: js.UndefOr[Boolean] = js.native
+      var marginLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginRightSuggested: js.UndefOr[Boolean] = js.native
+      var marginRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginTopSuggested: js.UndefOr[Boolean] = js.native
+      var marginTopSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var pageNumberStartSuggested: js.UndefOr[Boolean] = js.native
+      var pageNumberStartSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var pageSizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.native
+      var pageSizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.undefined
       
-      var useEvenPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.native
+      var useEvenPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var useFirstPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.native
+      var useFirstPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object DocumentStyleSuggestionState {
       
@@ -1769,30 +1742,29 @@ object Docs {
       }
     }
     
-    @js.native
     trait EmbeddedObject extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var embeddedDrawingProperties: js.UndefOr[js.Any] = js.native
+      var embeddedDrawingProperties: js.UndefOr[js.Any] = js.undefined
       
-      var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.native
+      var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.undefined
       
-      var imageProperties: js.UndefOr[ImageProperties] = js.native
+      var imageProperties: js.UndefOr[ImageProperties] = js.undefined
       
-      var linkedContentReference: js.UndefOr[LinkedContentReference] = js.native
+      var linkedContentReference: js.UndefOr[LinkedContentReference] = js.undefined
       
-      var marginBottom: js.UndefOr[Dimension] = js.native
+      var marginBottom: js.UndefOr[Dimension] = js.undefined
       
-      var marginLeft: js.UndefOr[Dimension] = js.native
+      var marginLeft: js.UndefOr[Dimension] = js.undefined
       
-      var marginRight: js.UndefOr[Dimension] = js.native
+      var marginRight: js.UndefOr[Dimension] = js.undefined
       
-      var marginTop: js.UndefOr[Dimension] = js.native
+      var marginTop: js.UndefOr[Dimension] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object EmbeddedObject {
       
@@ -1873,16 +1845,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait EmbeddedObjectBorder extends StObject {
       
-      var color: js.UndefOr[OptionalColor] = js.native
+      var color: js.UndefOr[OptionalColor] = js.undefined
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object EmbeddedObjectBorder {
       
@@ -1921,16 +1892,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait EmbeddedObjectBorderSuggestionState extends StObject {
       
-      var colorSuggested: js.UndefOr[Boolean] = js.native
+      var colorSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var dashStyleSuggested: js.UndefOr[Boolean] = js.native
+      var dashStyleSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var propertyStateSuggested: js.UndefOr[Boolean] = js.native
+      var propertyStateSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var widthSuggested: js.UndefOr[Boolean] = js.native
+      var widthSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object EmbeddedObjectBorderSuggestionState {
       
@@ -1969,30 +1939,29 @@ object Docs {
       }
     }
     
-    @js.native
     trait EmbeddedObjectSuggestionState extends StObject {
       
-      var descriptionSuggested: js.UndefOr[Boolean] = js.native
+      var descriptionSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.native
+      var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.undefined
       
-      var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.native
+      var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.undefined
       
-      var imagePropertiesSuggestionState: js.UndefOr[ImagePropertiesSuggestionState] = js.native
+      var imagePropertiesSuggestionState: js.UndefOr[ImagePropertiesSuggestionState] = js.undefined
       
-      var linkedContentReferenceSuggestionState: js.UndefOr[LinkedContentReferenceSuggestionState] = js.native
+      var linkedContentReferenceSuggestionState: js.UndefOr[LinkedContentReferenceSuggestionState] = js.undefined
       
-      var marginBottomSuggested: js.UndefOr[Boolean] = js.native
+      var marginBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginLeftSuggested: js.UndefOr[Boolean] = js.native
+      var marginLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginRightSuggested: js.UndefOr[Boolean] = js.native
+      var marginRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var marginTopSuggested: js.UndefOr[Boolean] = js.native
+      var marginTopSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var sizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.native
+      var sizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.undefined
       
-      var titleSuggested: js.UndefOr[Boolean] = js.native
+      var titleSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object EmbeddedObjectSuggestionState {
       
@@ -2073,10 +2042,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait EndOfSegmentLocation extends StObject {
       
-      var segmentId: js.UndefOr[String] = js.native
+      var segmentId: js.UndefOr[String] = js.undefined
     }
     object EndOfSegmentLocation {
       
@@ -2097,12 +2065,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Equation extends StObject {
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Equation {
       
@@ -2135,12 +2102,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Footer extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
       
-      var footerId: js.UndefOr[String] = js.native
+      var footerId: js.UndefOr[String] = js.undefined
     }
     object Footer {
       
@@ -2170,12 +2136,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Footnote extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
       
-      var footnoteId: js.UndefOr[String] = js.native
+      var footnoteId: js.UndefOr[String] = js.undefined
     }
     object Footnote {
       
@@ -2205,20 +2170,19 @@ object Docs {
       }
     }
     
-    @js.native
     trait FootnoteReference extends StObject {
       
-      var footnoteId: js.UndefOr[String] = js.native
+      var footnoteId: js.UndefOr[String] = js.undefined
       
-      var footnoteNumber: js.UndefOr[String] = js.native
+      var footnoteNumber: js.UndefOr[String] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object FootnoteReference {
       
@@ -2275,12 +2239,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Header extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
       
-      var headerId: js.UndefOr[String] = js.native
+      var headerId: js.UndefOr[String] = js.undefined
     }
     object Header {
       
@@ -2310,16 +2273,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait HorizontalRule extends StObject {
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object HorizontalRule {
       
@@ -2364,22 +2326,21 @@ object Docs {
       }
     }
     
-    @js.native
     trait ImageProperties extends StObject {
       
-      var angle: js.UndefOr[Double] = js.native
+      var angle: js.UndefOr[Double] = js.undefined
       
-      var brightness: js.UndefOr[Double] = js.native
+      var brightness: js.UndefOr[Double] = js.undefined
       
-      var contentUri: js.UndefOr[String] = js.native
+      var contentUri: js.UndefOr[String] = js.undefined
       
-      var contrast: js.UndefOr[Double] = js.native
+      var contrast: js.UndefOr[Double] = js.undefined
       
-      var cropProperties: js.UndefOr[CropProperties] = js.native
+      var cropProperties: js.UndefOr[CropProperties] = js.undefined
       
-      var sourceUri: js.UndefOr[String] = js.native
+      var sourceUri: js.UndefOr[String] = js.undefined
       
-      var transparency: js.UndefOr[Double] = js.native
+      var transparency: js.UndefOr[Double] = js.undefined
     }
     object ImageProperties {
       
@@ -2436,22 +2397,21 @@ object Docs {
       }
     }
     
-    @js.native
     trait ImagePropertiesSuggestionState extends StObject {
       
-      var angleSuggested: js.UndefOr[Boolean] = js.native
+      var angleSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var brightnessSuggested: js.UndefOr[Boolean] = js.native
+      var brightnessSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var contentUriSuggested: js.UndefOr[Boolean] = js.native
+      var contentUriSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var contrastSuggested: js.UndefOr[Boolean] = js.native
+      var contrastSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var cropPropertiesSuggestionState: js.UndefOr[CropPropertiesSuggestionState] = js.native
+      var cropPropertiesSuggestionState: js.UndefOr[CropPropertiesSuggestionState] = js.undefined
       
-      var sourceUriSuggested: js.UndefOr[Boolean] = js.native
+      var sourceUriSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var transparencySuggested: js.UndefOr[Boolean] = js.native
+      var transparencySuggested: js.UndefOr[Boolean] = js.undefined
     }
     object ImagePropertiesSuggestionState {
       
@@ -2508,18 +2468,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait InlineObject extends StObject {
       
-      var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.native
+      var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInlineObjectPropertiesChanges: js.UndefOr[js.Object] = js.native
+      var suggestedInlineObjectPropertiesChanges: js.UndefOr[js.Object] = js.undefined
       
-      var suggestedInsertionId: js.UndefOr[String] = js.native
+      var suggestedInsertionId: js.UndefOr[String] = js.undefined
     }
     object InlineObject {
       
@@ -2567,18 +2526,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait InlineObjectElement extends StObject {
       
-      var inlineObjectId: js.UndefOr[String] = js.native
+      var inlineObjectId: js.UndefOr[String] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object InlineObjectElement {
       
@@ -2629,10 +2587,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait InlineObjectProperties extends StObject {
       
-      var embeddedObject: js.UndefOr[EmbeddedObject] = js.native
+      var embeddedObject: js.UndefOr[EmbeddedObject] = js.undefined
     }
     object InlineObjectProperties {
       
@@ -2653,10 +2610,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait InlineObjectPropertiesSuggestionState extends StObject {
       
-      var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.native
+      var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.undefined
     }
     object InlineObjectPropertiesSuggestionState {
       
@@ -2677,16 +2633,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertInlineImageRequest extends StObject {
       
-      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
       
-      var location: js.UndefOr[Location] = js.native
+      var location: js.UndefOr[Location] = js.undefined
       
-      var objectSize: js.UndefOr[Size] = js.native
+      var objectSize: js.UndefOr[Size] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
     }
     object InsertInlineImageRequest {
       
@@ -2725,10 +2680,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertInlineImageResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object InsertInlineImageResponse {
       
@@ -2749,10 +2703,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertInlineSheetsChartResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object InsertInlineSheetsChartResponse {
       
@@ -2773,12 +2726,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertPageBreakRequest extends StObject {
       
-      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
       
-      var location: js.UndefOr[Location] = js.native
+      var location: js.UndefOr[Location] = js.undefined
     }
     object InsertPageBreakRequest {
       
@@ -2805,16 +2757,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertTableRequest extends StObject {
       
-      var columns: js.UndefOr[Double] = js.native
+      var columns: js.UndefOr[Double] = js.undefined
       
-      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
       
-      var location: js.UndefOr[Location] = js.native
+      var location: js.UndefOr[Location] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
     }
     object InsertTableRequest {
       
@@ -2853,12 +2804,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertTableRowRequest extends StObject {
       
-      var insertBelow: js.UndefOr[Boolean] = js.native
+      var insertBelow: js.UndefOr[Boolean] = js.undefined
       
-      var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+      var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
     }
     object InsertTableRowRequest {
       
@@ -2885,14 +2835,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait InsertTextRequest extends StObject {
       
-      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+      var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
       
-      var location: js.UndefOr[Location] = js.native
+      var location: js.UndefOr[Location] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object InsertTextRequest {
       
@@ -2925,14 +2874,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait Link extends StObject {
       
-      var bookmarkId: js.UndefOr[String] = js.native
+      var bookmarkId: js.UndefOr[String] = js.undefined
       
-      var headingId: js.UndefOr[String] = js.native
+      var headingId: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object Link {
       
@@ -2965,10 +2913,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait LinkedContentReference extends StObject {
       
-      var sheetsChartReference: js.UndefOr[SheetsChartReference] = js.native
+      var sheetsChartReference: js.UndefOr[SheetsChartReference] = js.undefined
     }
     object LinkedContentReference {
       
@@ -2989,10 +2936,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait LinkedContentReferenceSuggestionState extends StObject {
       
-      var sheetsChartReferenceSuggestionState: js.UndefOr[SheetsChartReferenceSuggestionState] = js.native
+      var sheetsChartReferenceSuggestionState: js.UndefOr[SheetsChartReferenceSuggestionState] = js.undefined
     }
     object LinkedContentReferenceSuggestionState {
       
@@ -3013,16 +2959,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait List extends StObject {
       
-      var listProperties: js.UndefOr[ListProperties] = js.native
+      var listProperties: js.UndefOr[ListProperties] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionId: js.UndefOr[String] = js.native
+      var suggestedInsertionId: js.UndefOr[String] = js.undefined
       
-      var suggestedListPropertiesChanges: js.UndefOr[js.Object] = js.native
+      var suggestedListPropertiesChanges: js.UndefOr[js.Object] = js.undefined
     }
     object List {
       
@@ -3064,10 +3009,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait ListProperties extends StObject {
       
-      var nestingLevels: js.UndefOr[js.Array[NestingLevel]] = js.native
+      var nestingLevels: js.UndefOr[js.Array[NestingLevel]] = js.undefined
     }
     object ListProperties {
       
@@ -3091,10 +3035,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait ListPropertiesSuggestionState extends StObject {
       
-      var nestingLevelsSuggestionStates: js.UndefOr[js.Array[NestingLevelSuggestionState]] = js.native
+      var nestingLevelsSuggestionStates: js.UndefOr[js.Array[NestingLevelSuggestionState]] = js.undefined
     }
     object ListPropertiesSuggestionState {
       
@@ -3118,12 +3061,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Location extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var segmentId: js.UndefOr[String] = js.native
+      var segmentId: js.UndefOr[String] = js.undefined
     }
     object Location {
       
@@ -3150,14 +3092,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedRange extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
       
-      var ranges: js.UndefOr[js.Array[Range]] = js.native
+      var ranges: js.UndefOr[js.Array[Range]] = js.undefined
     }
     object NamedRange {
       
@@ -3193,12 +3134,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedRanges extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.native
+      var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.undefined
     }
     object NamedRanges {
       
@@ -3228,14 +3168,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedStyle extends StObject {
       
-      var namedStyleType: js.UndefOr[String] = js.native
+      var namedStyleType: js.UndefOr[String] = js.undefined
       
-      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.native
+      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object NamedStyle {
       
@@ -3268,14 +3207,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedStyleSuggestionState extends StObject {
       
-      var namedStyleType: js.UndefOr[String] = js.native
+      var namedStyleType: js.UndefOr[String] = js.undefined
       
-      var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.native
+      var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.undefined
       
-      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
     }
     object NamedStyleSuggestionState {
       
@@ -3308,10 +3246,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedStyles extends StObject {
       
-      var styles: js.UndefOr[js.Array[NamedStyle]] = js.native
+      var styles: js.UndefOr[js.Array[NamedStyle]] = js.undefined
     }
     object NamedStyles {
       
@@ -3335,10 +3272,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait NamedStylesSuggestionState extends StObject {
       
-      var stylesSuggestionStates: js.UndefOr[js.Array[NamedStyleSuggestionState]] = js.native
+      var stylesSuggestionStates: js.UndefOr[js.Array[NamedStyleSuggestionState]] = js.undefined
     }
     object NamedStylesSuggestionState {
       
@@ -3362,24 +3298,23 @@ object Docs {
       }
     }
     
-    @js.native
     trait NestingLevel extends StObject {
       
-      var bulletAlignment: js.UndefOr[String] = js.native
+      var bulletAlignment: js.UndefOr[String] = js.undefined
       
-      var glyphFormat: js.UndefOr[String] = js.native
+      var glyphFormat: js.UndefOr[String] = js.undefined
       
-      var glyphSymbol: js.UndefOr[String] = js.native
+      var glyphSymbol: js.UndefOr[String] = js.undefined
       
-      var glyphType: js.UndefOr[String] = js.native
+      var glyphType: js.UndefOr[String] = js.undefined
       
-      var indentFirstLine: js.UndefOr[Dimension] = js.native
+      var indentFirstLine: js.UndefOr[Dimension] = js.undefined
       
-      var indentStart: js.UndefOr[Dimension] = js.native
+      var indentStart: js.UndefOr[Dimension] = js.undefined
       
-      var startNumber: js.UndefOr[Double] = js.native
+      var startNumber: js.UndefOr[Double] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object NestingLevel {
       
@@ -3442,24 +3377,23 @@ object Docs {
       }
     }
     
-    @js.native
     trait NestingLevelSuggestionState extends StObject {
       
-      var bulletAlignmentSuggested: js.UndefOr[Boolean] = js.native
+      var bulletAlignmentSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var glyphFormatSuggested: js.UndefOr[Boolean] = js.native
+      var glyphFormatSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var glyphSymbolSuggested: js.UndefOr[Boolean] = js.native
+      var glyphSymbolSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var glyphTypeSuggested: js.UndefOr[Boolean] = js.native
+      var glyphTypeSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var indentFirstLineSuggested: js.UndefOr[Boolean] = js.native
+      var indentFirstLineSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var indentStartSuggested: js.UndefOr[Boolean] = js.native
+      var indentStartSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var startNumberSuggested: js.UndefOr[Boolean] = js.native
+      var startNumberSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
     }
     object NestingLevelSuggestionState {
       
@@ -3522,10 +3456,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait ObjectReferences extends StObject {
       
-      var objectIds: js.UndefOr[js.Array[String]] = js.native
+      var objectIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ObjectReferences {
       
@@ -3549,10 +3482,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait OptionalColor extends StObject {
       
-      var color: js.UndefOr[Color] = js.native
+      var color: js.UndefOr[Color] = js.undefined
     }
     object OptionalColor {
       
@@ -3573,16 +3505,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait PageBreak extends StObject {
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object PageBreak {
       
@@ -3627,22 +3558,21 @@ object Docs {
       }
     }
     
-    @js.native
     trait Paragraph extends StObject {
       
-      var bullet: js.UndefOr[Bullet] = js.native
+      var bullet: js.UndefOr[Bullet] = js.undefined
       
-      var elements: js.UndefOr[js.Array[ParagraphElement]] = js.native
+      var elements: js.UndefOr[js.Array[ParagraphElement]] = js.undefined
       
-      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.native
+      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
       
-      var positionedObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var positionedObjectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedBulletChanges: js.UndefOr[js.Object] = js.native
+      var suggestedBulletChanges: js.UndefOr[js.Object] = js.undefined
       
-      var suggestedParagraphStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedParagraphStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var suggestedPositionedObjectIds: js.UndefOr[js.Object] = js.native
+      var suggestedPositionedObjectIds: js.UndefOr[js.Object] = js.undefined
     }
     object Paragraph {
       
@@ -3705,16 +3635,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait ParagraphBorder extends StObject {
       
-      var color: js.UndefOr[OptionalColor] = js.native
+      var color: js.UndefOr[OptionalColor] = js.undefined
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var padding: js.UndefOr[Dimension] = js.native
+      var padding: js.UndefOr[Dimension] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object ParagraphBorder {
       
@@ -3753,28 +3682,27 @@ object Docs {
       }
     }
     
-    @js.native
     trait ParagraphElement extends StObject {
       
-      var autoText: js.UndefOr[AutoText] = js.native
+      var autoText: js.UndefOr[AutoText] = js.undefined
       
-      var columnBreak: js.UndefOr[ColumnBreak] = js.native
+      var columnBreak: js.UndefOr[ColumnBreak] = js.undefined
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var equation: js.UndefOr[Equation] = js.native
+      var equation: js.UndefOr[Equation] = js.undefined
       
-      var footnoteReference: js.UndefOr[FootnoteReference] = js.native
+      var footnoteReference: js.UndefOr[FootnoteReference] = js.undefined
       
-      var horizontalRule: js.UndefOr[HorizontalRule] = js.native
+      var horizontalRule: js.UndefOr[HorizontalRule] = js.undefined
       
-      var inlineObjectElement: js.UndefOr[InlineObjectElement] = js.native
+      var inlineObjectElement: js.UndefOr[InlineObjectElement] = js.undefined
       
-      var pageBreak: js.UndefOr[PageBreak] = js.native
+      var pageBreak: js.UndefOr[PageBreak] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var textRun: js.UndefOr[TextRun] = js.native
+      var textRun: js.UndefOr[TextRun] = js.undefined
     }
     object ParagraphElement {
       
@@ -3849,50 +3777,49 @@ object Docs {
       }
     }
     
-    @js.native
     trait ParagraphStyle extends StObject {
       
-      var alignment: js.UndefOr[String] = js.native
+      var alignment: js.UndefOr[String] = js.undefined
       
-      var avoidWidowAndOrphan: js.UndefOr[Boolean] = js.native
+      var avoidWidowAndOrphan: js.UndefOr[Boolean] = js.undefined
       
-      var borderBetween: js.UndefOr[ParagraphBorder] = js.native
+      var borderBetween: js.UndefOr[ParagraphBorder] = js.undefined
       
-      var borderBottom: js.UndefOr[ParagraphBorder] = js.native
+      var borderBottom: js.UndefOr[ParagraphBorder] = js.undefined
       
-      var borderLeft: js.UndefOr[ParagraphBorder] = js.native
+      var borderLeft: js.UndefOr[ParagraphBorder] = js.undefined
       
-      var borderRight: js.UndefOr[ParagraphBorder] = js.native
+      var borderRight: js.UndefOr[ParagraphBorder] = js.undefined
       
-      var borderTop: js.UndefOr[ParagraphBorder] = js.native
+      var borderTop: js.UndefOr[ParagraphBorder] = js.undefined
       
-      var direction: js.UndefOr[String] = js.native
+      var direction: js.UndefOr[String] = js.undefined
       
-      var headingId: js.UndefOr[String] = js.native
+      var headingId: js.UndefOr[String] = js.undefined
       
-      var indentEnd: js.UndefOr[Dimension] = js.native
+      var indentEnd: js.UndefOr[Dimension] = js.undefined
       
-      var indentFirstLine: js.UndefOr[Dimension] = js.native
+      var indentFirstLine: js.UndefOr[Dimension] = js.undefined
       
-      var indentStart: js.UndefOr[Dimension] = js.native
+      var indentStart: js.UndefOr[Dimension] = js.undefined
       
-      var keepLinesTogether: js.UndefOr[Boolean] = js.native
+      var keepLinesTogether: js.UndefOr[Boolean] = js.undefined
       
-      var keepWithNext: js.UndefOr[Boolean] = js.native
+      var keepWithNext: js.UndefOr[Boolean] = js.undefined
       
-      var lineSpacing: js.UndefOr[Double] = js.native
+      var lineSpacing: js.UndefOr[Double] = js.undefined
       
-      var namedStyleType: js.UndefOr[String] = js.native
+      var namedStyleType: js.UndefOr[String] = js.undefined
       
-      var shading: js.UndefOr[Shading] = js.native
+      var shading: js.UndefOr[Shading] = js.undefined
       
-      var spaceAbove: js.UndefOr[Dimension] = js.native
+      var spaceAbove: js.UndefOr[Dimension] = js.undefined
       
-      var spaceBelow: js.UndefOr[Dimension] = js.native
+      var spaceBelow: js.UndefOr[Dimension] = js.undefined
       
-      var spacingMode: js.UndefOr[String] = js.native
+      var spacingMode: js.UndefOr[String] = js.undefined
       
-      var tabStops: js.UndefOr[js.Array[TabStop]] = js.native
+      var tabStops: js.UndefOr[js.Array[TabStop]] = js.undefined
     }
     object ParagraphStyle {
       
@@ -4036,48 +3963,47 @@ object Docs {
       }
     }
     
-    @js.native
     trait ParagraphStyleSuggestionState extends StObject {
       
-      var alignmentSuggested: js.UndefOr[Boolean] = js.native
+      var alignmentSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var avoidWidowAndOrphanSuggested: js.UndefOr[Boolean] = js.native
+      var avoidWidowAndOrphanSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderBetweenSuggested: js.UndefOr[Boolean] = js.native
+      var borderBetweenSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderBottomSuggested: js.UndefOr[Boolean] = js.native
+      var borderBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderLeftSuggested: js.UndefOr[Boolean] = js.native
+      var borderLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderRightSuggested: js.UndefOr[Boolean] = js.native
+      var borderRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderTopSuggested: js.UndefOr[Boolean] = js.native
+      var borderTopSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var directionSuggested: js.UndefOr[Boolean] = js.native
+      var directionSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var headingIdSuggested: js.UndefOr[Boolean] = js.native
+      var headingIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var indentEndSuggested: js.UndefOr[Boolean] = js.native
+      var indentEndSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var indentFirstLineSuggested: js.UndefOr[Boolean] = js.native
+      var indentFirstLineSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var indentStartSuggested: js.UndefOr[Boolean] = js.native
+      var indentStartSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var keepLinesTogetherSuggested: js.UndefOr[Boolean] = js.native
+      var keepLinesTogetherSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var keepWithNextSuggested: js.UndefOr[Boolean] = js.native
+      var keepWithNextSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var lineSpacingSuggested: js.UndefOr[Boolean] = js.native
+      var lineSpacingSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var namedStyleTypeSuggested: js.UndefOr[Boolean] = js.native
+      var namedStyleTypeSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var shadingSuggestionState: js.UndefOr[ShadingSuggestionState] = js.native
+      var shadingSuggestionState: js.UndefOr[ShadingSuggestionState] = js.undefined
       
-      var spaceAboveSuggested: js.UndefOr[Boolean] = js.native
+      var spaceAboveSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var spaceBelowSuggested: js.UndefOr[Boolean] = js.native
+      var spaceBelowSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var spacingModeSuggested: js.UndefOr[Boolean] = js.native
+      var spacingModeSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object ParagraphStyleSuggestionState {
       
@@ -4212,18 +4138,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait PositionedObject extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.native
+      var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionId: js.UndefOr[String] = js.native
+      var suggestedInsertionId: js.UndefOr[String] = js.undefined
       
-      var suggestedPositionedObjectPropertiesChanges: js.UndefOr[js.Object] = js.native
+      var suggestedPositionedObjectPropertiesChanges: js.UndefOr[js.Object] = js.undefined
     }
     object PositionedObject {
       
@@ -4271,14 +4196,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait PositionedObjectPositioning extends StObject {
       
-      var layout: js.UndefOr[String] = js.native
+      var layout: js.UndefOr[String] = js.undefined
       
-      var leftOffset: js.UndefOr[Dimension] = js.native
+      var leftOffset: js.UndefOr[Dimension] = js.undefined
       
-      var topOffset: js.UndefOr[Dimension] = js.native
+      var topOffset: js.UndefOr[Dimension] = js.undefined
     }
     object PositionedObjectPositioning {
       
@@ -4311,14 +4235,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait PositionedObjectPositioningSuggestionState extends StObject {
       
-      var layoutSuggested: js.UndefOr[Boolean] = js.native
+      var layoutSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var leftOffsetSuggested: js.UndefOr[Boolean] = js.native
+      var leftOffsetSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var topOffsetSuggested: js.UndefOr[Boolean] = js.native
+      var topOffsetSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object PositionedObjectPositioningSuggestionState {
       
@@ -4351,12 +4274,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait PositionedObjectProperties extends StObject {
       
-      var embeddedObject: js.UndefOr[EmbeddedObject] = js.native
+      var embeddedObject: js.UndefOr[EmbeddedObject] = js.undefined
       
-      var positioning: js.UndefOr[PositionedObjectPositioning] = js.native
+      var positioning: js.UndefOr[PositionedObjectPositioning] = js.undefined
     }
     object PositionedObjectProperties {
       
@@ -4383,12 +4305,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait PositionedObjectPropertiesSuggestionState extends StObject {
       
-      var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.native
+      var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.undefined
       
-      var positioningSuggestionState: js.UndefOr[PositionedObjectPositioningSuggestionState] = js.native
+      var positioningSuggestionState: js.UndefOr[PositionedObjectPositioningSuggestionState] = js.undefined
     }
     object PositionedObjectPropertiesSuggestionState {
       
@@ -4415,14 +4336,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait Range extends StObject {
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var segmentId: js.UndefOr[String] = js.native
+      var segmentId: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
     }
     object Range {
       
@@ -4455,12 +4375,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait ReplaceAllTextRequest extends StObject {
       
-      var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+      var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
       
-      var replaceText: js.UndefOr[String] = js.native
+      var replaceText: js.UndefOr[String] = js.undefined
     }
     object ReplaceAllTextRequest {
       
@@ -4487,10 +4406,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait ReplaceAllTextResponse extends StObject {
       
-      var occurrencesChanged: js.UndefOr[Double] = js.native
+      var occurrencesChanged: js.UndefOr[Double] = js.undefined
     }
     object ReplaceAllTextResponse {
       
@@ -4511,40 +4429,39 @@ object Docs {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
-      var createNamedRange: js.UndefOr[CreateNamedRangeRequest] = js.native
+      var createNamedRange: js.UndefOr[CreateNamedRangeRequest] = js.undefined
       
-      var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.native
+      var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.undefined
       
-      var deleteContentRange: js.UndefOr[DeleteContentRangeRequest] = js.native
+      var deleteContentRange: js.UndefOr[DeleteContentRangeRequest] = js.undefined
       
-      var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.native
+      var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.undefined
       
-      var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.native
+      var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.undefined
       
-      var deletePositionedObject: js.UndefOr[DeletePositionedObjectRequest] = js.native
+      var deletePositionedObject: js.UndefOr[DeletePositionedObjectRequest] = js.undefined
       
-      var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.native
+      var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.undefined
       
-      var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.native
+      var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.undefined
       
-      var insertInlineImage: js.UndefOr[InsertInlineImageRequest] = js.native
+      var insertInlineImage: js.UndefOr[InsertInlineImageRequest] = js.undefined
       
-      var insertPageBreak: js.UndefOr[InsertPageBreakRequest] = js.native
+      var insertPageBreak: js.UndefOr[InsertPageBreakRequest] = js.undefined
       
-      var insertTable: js.UndefOr[InsertTableRequest] = js.native
+      var insertTable: js.UndefOr[InsertTableRequest] = js.undefined
       
-      var insertTableRow: js.UndefOr[InsertTableRowRequest] = js.native
+      var insertTableRow: js.UndefOr[InsertTableRowRequest] = js.undefined
       
-      var insertText: js.UndefOr[InsertTextRequest] = js.native
+      var insertText: js.UndefOr[InsertTextRequest] = js.undefined
       
-      var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.native
+      var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.undefined
       
-      var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.native
+      var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.undefined
       
-      var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.native
+      var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.undefined
     }
     object Request {
       
@@ -4655,16 +4572,15 @@ object Docs {
       }
     }
     
-    @js.native
     trait Response extends StObject {
       
-      var createNamedRange: js.UndefOr[CreateNamedRangeResponse] = js.native
+      var createNamedRange: js.UndefOr[CreateNamedRangeResponse] = js.undefined
       
-      var insertInlineImage: js.UndefOr[InsertInlineImageResponse] = js.native
+      var insertInlineImage: js.UndefOr[InsertInlineImageResponse] = js.undefined
       
-      var insertInlineSheetsChart: js.UndefOr[InsertInlineSheetsChartResponse] = js.native
+      var insertInlineSheetsChart: js.UndefOr[InsertInlineSheetsChartResponse] = js.undefined
       
-      var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.native
+      var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.undefined
     }
     object Response {
       
@@ -4703,14 +4619,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait RgbColor extends StObject {
       
-      var blue: js.UndefOr[Double] = js.native
+      var blue: js.UndefOr[Double] = js.undefined
       
-      var green: js.UndefOr[Double] = js.native
+      var green: js.UndefOr[Double] = js.undefined
       
-      var red: js.UndefOr[Double] = js.native
+      var red: js.UndefOr[Double] = js.undefined
     }
     object RgbColor {
       
@@ -4743,14 +4658,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait SectionBreak extends StObject {
       
-      var sectionStyle: js.UndefOr[SectionStyle] = js.native
+      var sectionStyle: js.UndefOr[SectionStyle] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object SectionBreak {
       
@@ -4789,12 +4703,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SectionColumnProperties extends StObject {
       
-      var paddingEnd: js.UndefOr[Dimension] = js.native
+      var paddingEnd: js.UndefOr[Dimension] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object SectionColumnProperties {
       
@@ -4821,14 +4734,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait SectionStyle extends StObject {
       
-      var columnProperties: js.UndefOr[js.Array[SectionColumnProperties]] = js.native
+      var columnProperties: js.UndefOr[js.Array[SectionColumnProperties]] = js.undefined
       
-      var columnSeparatorStyle: js.UndefOr[String] = js.native
+      var columnSeparatorStyle: js.UndefOr[String] = js.undefined
       
-      var contentDirection: js.UndefOr[String] = js.native
+      var contentDirection: js.UndefOr[String] = js.undefined
     }
     object SectionStyle {
       
@@ -4864,10 +4776,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait Shading extends StObject {
       
-      var backgroundColor: js.UndefOr[OptionalColor] = js.native
+      var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
     }
     object Shading {
       
@@ -4888,10 +4799,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait ShadingSuggestionState extends StObject {
       
-      var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+      var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object ShadingSuggestionState {
       
@@ -4912,12 +4822,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SheetsChartReference extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object SheetsChartReference {
       
@@ -4944,12 +4853,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SheetsChartReferenceSuggestionState extends StObject {
       
-      var chartIdSuggested: js.UndefOr[Boolean] = js.native
+      var chartIdSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var spreadsheetIdSuggested: js.UndefOr[Boolean] = js.native
+      var spreadsheetIdSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object SheetsChartReferenceSuggestionState {
       
@@ -4976,12 +4884,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait Size extends StObject {
       
-      var height: js.UndefOr[Dimension] = js.native
+      var height: js.UndefOr[Dimension] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object Size {
       
@@ -5008,12 +4915,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SizeSuggestionState extends StObject {
       
-      var heightSuggested: js.UndefOr[Boolean] = js.native
+      var heightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var widthSuggested: js.UndefOr[Boolean] = js.native
+      var widthSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object SizeSuggestionState {
       
@@ -5040,20 +4946,19 @@ object Docs {
       }
     }
     
-    @js.native
     trait StructuralElement extends StObject {
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var paragraph: js.UndefOr[Paragraph] = js.native
+      var paragraph: js.UndefOr[Paragraph] = js.undefined
       
-      var sectionBreak: js.UndefOr[SectionBreak] = js.native
+      var sectionBreak: js.UndefOr[SectionBreak] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var table: js.UndefOr[Table] = js.native
+      var table: js.UndefOr[Table] = js.undefined
       
-      var tableOfContents: js.UndefOr[TableOfContents] = js.native
+      var tableOfContents: js.UndefOr[TableOfContents] = js.undefined
     }
     object StructuralElement {
       
@@ -5104,12 +5009,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SubstringMatchCriteria extends StObject {
       
-      var matchCase: js.UndefOr[Boolean] = js.native
+      var matchCase: js.UndefOr[Boolean] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object SubstringMatchCriteria {
       
@@ -5136,12 +5040,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedBullet extends StObject {
       
-      var bullet: js.UndefOr[Bullet] = js.native
+      var bullet: js.UndefOr[Bullet] = js.undefined
       
-      var bulletSuggestionState: js.UndefOr[BulletSuggestionState] = js.native
+      var bulletSuggestionState: js.UndefOr[BulletSuggestionState] = js.undefined
     }
     object SuggestedBullet {
       
@@ -5168,12 +5071,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedDocumentStyle extends StObject {
       
-      var documentStyle: js.UndefOr[DocumentStyle] = js.native
+      var documentStyle: js.UndefOr[DocumentStyle] = js.undefined
       
-      var documentStyleSuggestionState: js.UndefOr[DocumentStyleSuggestionState] = js.native
+      var documentStyleSuggestionState: js.UndefOr[DocumentStyleSuggestionState] = js.undefined
     }
     object SuggestedDocumentStyle {
       
@@ -5200,12 +5102,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedInlineObjectProperties extends StObject {
       
-      var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.native
+      var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.undefined
       
-      var inlineObjectPropertiesSuggestionState: js.UndefOr[InlineObjectPropertiesSuggestionState] = js.native
+      var inlineObjectPropertiesSuggestionState: js.UndefOr[InlineObjectPropertiesSuggestionState] = js.undefined
     }
     object SuggestedInlineObjectProperties {
       
@@ -5232,12 +5133,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedListProperties extends StObject {
       
-      var listProperties: js.UndefOr[ListProperties] = js.native
+      var listProperties: js.UndefOr[ListProperties] = js.undefined
       
-      var listPropertiesSuggestionState: js.UndefOr[ListPropertiesSuggestionState] = js.native
+      var listPropertiesSuggestionState: js.UndefOr[ListPropertiesSuggestionState] = js.undefined
     }
     object SuggestedListProperties {
       
@@ -5264,12 +5164,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedNamedStyles extends StObject {
       
-      var namedStyles: js.UndefOr[NamedStyles] = js.native
+      var namedStyles: js.UndefOr[NamedStyles] = js.undefined
       
-      var namedStylesSuggestionState: js.UndefOr[NamedStylesSuggestionState] = js.native
+      var namedStylesSuggestionState: js.UndefOr[NamedStylesSuggestionState] = js.undefined
     }
     object SuggestedNamedStyles {
       
@@ -5296,12 +5195,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedParagraphStyle extends StObject {
       
-      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.native
+      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
       
-      var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.native
+      var paragraphStyleSuggestionState: js.UndefOr[ParagraphStyleSuggestionState] = js.undefined
     }
     object SuggestedParagraphStyle {
       
@@ -5328,12 +5226,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedPositionedObjectProperties extends StObject {
       
-      var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.native
+      var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.undefined
       
-      var positionedObjectPropertiesSuggestionState: js.UndefOr[PositionedObjectPropertiesSuggestionState] = js.native
+      var positionedObjectPropertiesSuggestionState: js.UndefOr[PositionedObjectPropertiesSuggestionState] = js.undefined
     }
     object SuggestedPositionedObjectProperties {
       
@@ -5360,12 +5257,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedTableCellStyle extends StObject {
       
-      var tableCellStyle: js.UndefOr[TableCellStyle] = js.native
+      var tableCellStyle: js.UndefOr[TableCellStyle] = js.undefined
       
-      var tableCellStyleSuggestionState: js.UndefOr[TableCellStyleSuggestionState] = js.native
+      var tableCellStyleSuggestionState: js.UndefOr[TableCellStyleSuggestionState] = js.undefined
     }
     object SuggestedTableCellStyle {
       
@@ -5392,12 +5288,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedTableRowStyle extends StObject {
       
-      var tableRowStyle: js.UndefOr[TableRowStyle] = js.native
+      var tableRowStyle: js.UndefOr[TableRowStyle] = js.undefined
       
-      var tableRowStyleSuggestionState: js.UndefOr[TableRowStyleSuggestionState] = js.native
+      var tableRowStyleSuggestionState: js.UndefOr[TableRowStyleSuggestionState] = js.undefined
     }
     object SuggestedTableRowStyle {
       
@@ -5424,12 +5319,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait SuggestedTextStyle extends StObject {
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
       
-      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+      var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
     }
     object SuggestedTextStyle {
       
@@ -5456,12 +5350,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait TabStop extends StObject {
       
-      var alignment: js.UndefOr[String] = js.native
+      var alignment: js.UndefOr[String] = js.undefined
       
-      var offset: js.UndefOr[Dimension] = js.native
+      var offset: js.UndefOr[Dimension] = js.undefined
     }
     object TabStop {
       
@@ -5488,20 +5381,19 @@ object Docs {
       }
     }
     
-    @js.native
     trait Table extends StObject {
       
-      var columns: js.UndefOr[Double] = js.native
+      var columns: js.UndefOr[Double] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var tableRows: js.UndefOr[js.Array[TableRow]] = js.native
+      var tableRows: js.UndefOr[js.Array[TableRow]] = js.undefined
       
-      var tableStyle: js.UndefOr[TableStyle] = js.native
+      var tableStyle: js.UndefOr[TableStyle] = js.undefined
     }
     object Table {
       
@@ -5561,22 +5453,21 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableCell extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTableCellStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTableCellStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var tableCellStyle: js.UndefOr[TableCellStyle] = js.native
+      var tableCellStyle: js.UndefOr[TableCellStyle] = js.undefined
     }
     object TableCell {
       
@@ -5642,14 +5533,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableCellBorder extends StObject {
       
-      var color: js.UndefOr[OptionalColor] = js.native
+      var color: js.UndefOr[OptionalColor] = js.undefined
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object TableCellBorder {
       
@@ -5682,14 +5572,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableCellLocation extends StObject {
       
-      var columnIndex: js.UndefOr[Double] = js.native
+      var columnIndex: js.UndefOr[Double] = js.undefined
       
-      var rowIndex: js.UndefOr[Double] = js.native
+      var rowIndex: js.UndefOr[Double] = js.undefined
       
-      var tableStartLocation: js.UndefOr[Location] = js.native
+      var tableStartLocation: js.UndefOr[Location] = js.undefined
     }
     object TableCellLocation {
       
@@ -5722,32 +5611,31 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableCellStyle extends StObject {
       
-      var backgroundColor: js.UndefOr[OptionalColor] = js.native
+      var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
       
-      var borderBottom: js.UndefOr[TableCellBorder] = js.native
+      var borderBottom: js.UndefOr[TableCellBorder] = js.undefined
       
-      var borderLeft: js.UndefOr[TableCellBorder] = js.native
+      var borderLeft: js.UndefOr[TableCellBorder] = js.undefined
       
-      var borderRight: js.UndefOr[TableCellBorder] = js.native
+      var borderRight: js.UndefOr[TableCellBorder] = js.undefined
       
-      var borderTop: js.UndefOr[TableCellBorder] = js.native
+      var borderTop: js.UndefOr[TableCellBorder] = js.undefined
       
-      var columnSpan: js.UndefOr[Double] = js.native
+      var columnSpan: js.UndefOr[Double] = js.undefined
       
-      var contentAlignment: js.UndefOr[String] = js.native
+      var contentAlignment: js.UndefOr[String] = js.undefined
       
-      var paddingBottom: js.UndefOr[Dimension] = js.native
+      var paddingBottom: js.UndefOr[Dimension] = js.undefined
       
-      var paddingLeft: js.UndefOr[Dimension] = js.native
+      var paddingLeft: js.UndefOr[Dimension] = js.undefined
       
-      var paddingRight: js.UndefOr[Dimension] = js.native
+      var paddingRight: js.UndefOr[Dimension] = js.undefined
       
-      var paddingTop: js.UndefOr[Dimension] = js.native
+      var paddingTop: js.UndefOr[Dimension] = js.undefined
       
-      var rowSpan: js.UndefOr[Double] = js.native
+      var rowSpan: js.UndefOr[Double] = js.undefined
     }
     object TableCellStyle {
       
@@ -5834,32 +5722,31 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableCellStyleSuggestionState extends StObject {
       
-      var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+      var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderBottomSuggested: js.UndefOr[Boolean] = js.native
+      var borderBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderLeftSuggested: js.UndefOr[Boolean] = js.native
+      var borderLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderRightSuggested: js.UndefOr[Boolean] = js.native
+      var borderRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var borderTopSuggested: js.UndefOr[Boolean] = js.native
+      var borderTopSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var columnSpanSuggested: js.UndefOr[Boolean] = js.native
+      var columnSpanSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var contentAlignmentSuggested: js.UndefOr[Boolean] = js.native
+      var contentAlignmentSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var paddingBottomSuggested: js.UndefOr[Boolean] = js.native
+      var paddingBottomSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var paddingLeftSuggested: js.UndefOr[Boolean] = js.native
+      var paddingLeftSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var paddingRightSuggested: js.UndefOr[Boolean] = js.native
+      var paddingRightSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var paddingTopSuggested: js.UndefOr[Boolean] = js.native
+      var paddingTopSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var rowSpanSuggested: js.UndefOr[Boolean] = js.native
+      var rowSpanSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object TableCellStyleSuggestionState {
       
@@ -5946,12 +5833,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableColumnProperties extends StObject {
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
       
-      var widthType: js.UndefOr[String] = js.native
+      var widthType: js.UndefOr[String] = js.undefined
     }
     object TableColumnProperties {
       
@@ -5978,14 +5864,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableOfContents extends StObject {
       
-      var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+      var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object TableOfContents {
       
@@ -6027,22 +5912,21 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableRow extends StObject {
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTableRowStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTableRowStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var tableCells: js.UndefOr[js.Array[TableCell]] = js.native
+      var tableCells: js.UndefOr[js.Array[TableCell]] = js.undefined
       
-      var tableRowStyle: js.UndefOr[TableRowStyle] = js.native
+      var tableRowStyle: js.UndefOr[TableRowStyle] = js.undefined
     }
     object TableRow {
       
@@ -6108,10 +5992,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableRowStyle extends StObject {
       
-      var minRowHeight: js.UndefOr[Dimension] = js.native
+      var minRowHeight: js.UndefOr[Dimension] = js.undefined
     }
     object TableRowStyle {
       
@@ -6132,10 +6015,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableRowStyleSuggestionState extends StObject {
       
-      var minRowHeightSuggested: js.UndefOr[Boolean] = js.native
+      var minRowHeightSuggested: js.UndefOr[Boolean] = js.undefined
     }
     object TableRowStyleSuggestionState {
       
@@ -6156,10 +6038,9 @@ object Docs {
       }
     }
     
-    @js.native
     trait TableStyle extends StObject {
       
-      var tableColumnProperties: js.UndefOr[js.Array[TableColumnProperties]] = js.native
+      var tableColumnProperties: js.UndefOr[js.Array[TableColumnProperties]] = js.undefined
     }
     object TableStyle {
       
@@ -6183,18 +6064,17 @@ object Docs {
       }
     }
     
-    @js.native
     trait TextRun extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+      var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.native
+      var suggestedTextStyleChanges: js.UndefOr[js.Object] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object TextRun {
       
@@ -6245,30 +6125,29 @@ object Docs {
       }
     }
     
-    @js.native
     trait TextStyle extends StObject {
       
-      var backgroundColor: js.UndefOr[OptionalColor] = js.native
+      var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
       
-      var baselineOffset: js.UndefOr[String] = js.native
+      var baselineOffset: js.UndefOr[String] = js.undefined
       
-      var bold: js.UndefOr[Boolean] = js.native
+      var bold: js.UndefOr[Boolean] = js.undefined
       
-      var fontSize: js.UndefOr[Dimension] = js.native
+      var fontSize: js.UndefOr[Dimension] = js.undefined
       
-      var foregroundColor: js.UndefOr[OptionalColor] = js.native
+      var foregroundColor: js.UndefOr[OptionalColor] = js.undefined
       
-      var italic: js.UndefOr[Boolean] = js.native
+      var italic: js.UndefOr[Boolean] = js.undefined
       
-      var link: js.UndefOr[Link] = js.native
+      var link: js.UndefOr[Link] = js.undefined
       
-      var smallCaps: js.UndefOr[Boolean] = js.native
+      var smallCaps: js.UndefOr[Boolean] = js.undefined
       
-      var strikethrough: js.UndefOr[Boolean] = js.native
+      var strikethrough: js.UndefOr[Boolean] = js.undefined
       
-      var underline: js.UndefOr[Boolean] = js.native
+      var underline: js.UndefOr[Boolean] = js.undefined
       
-      var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.native
+      var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.undefined
     }
     object TextStyle {
       
@@ -6349,30 +6228,29 @@ object Docs {
       }
     }
     
-    @js.native
     trait TextStyleSuggestionState extends StObject {
       
-      var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+      var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var baselineOffsetSuggested: js.UndefOr[Boolean] = js.native
+      var baselineOffsetSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var boldSuggested: js.UndefOr[Boolean] = js.native
+      var boldSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var fontSizeSuggested: js.UndefOr[Boolean] = js.native
+      var fontSizeSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var foregroundColorSuggested: js.UndefOr[Boolean] = js.native
+      var foregroundColorSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var italicSuggested: js.UndefOr[Boolean] = js.native
+      var italicSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var linkSuggested: js.UndefOr[Boolean] = js.native
+      var linkSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var smallCapsSuggested: js.UndefOr[Boolean] = js.native
+      var smallCapsSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var strikethroughSuggested: js.UndefOr[Boolean] = js.native
+      var strikethroughSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var underlineSuggested: js.UndefOr[Boolean] = js.native
+      var underlineSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var weightedFontFamilySuggested: js.UndefOr[Boolean] = js.native
+      var weightedFontFamilySuggested: js.UndefOr[Boolean] = js.undefined
     }
     object TextStyleSuggestionState {
       
@@ -6453,14 +6331,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait UpdateParagraphStyleRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.native
+      var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
     }
     object UpdateParagraphStyleRequest {
       
@@ -6493,14 +6370,13 @@ object Docs {
       }
     }
     
-    @js.native
     trait UpdateTextStyleRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
       
-      var textStyle: js.UndefOr[TextStyle] = js.native
+      var textStyle: js.UndefOr[TextStyle] = js.undefined
     }
     object UpdateTextStyleRequest {
       
@@ -6533,12 +6409,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait WeightedFontFamily extends StObject {
       
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object WeightedFontFamily {
       
@@ -6565,12 +6440,11 @@ object Docs {
       }
     }
     
-    @js.native
     trait WriteControl extends StObject {
       
-      var requiredRevisionId: js.UndefOr[String] = js.native
+      var requiredRevisionId: js.UndefOr[String] = js.undefined
       
-      var targetRevisionId: js.UndefOr[String] = js.native
+      var targetRevisionId: js.UndefOr[String] = js.undefined
     }
     object WriteControl {
       

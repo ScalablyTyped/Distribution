@@ -2,23 +2,26 @@ package typings.wonderJs
 
 import typings.wonderJs.colorMod.Color
 import typings.wonderJs.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/renderer/WebGLRenderer", JSImport.Namespace)
-@js.native
-object webGLRendererMod extends js.Object {
+object webGLRendererMod {
+  
+  @JSImport("wonder.js/dist/es2015/renderer/renderer/WebGLRenderer", "WebGLRenderer")
   @js.native
   class WebGLRenderer () extends Renderer {
+    
     def setClearColor(color: Color): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object WebGLRenderer extends js.Object {
-    def create(): WebGLRenderer = js.native
+  object WebGLRenderer {
+    
+    @JSImport("wonder.js/dist/es2015/renderer/renderer/WebGLRenderer", "WebGLRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): WebGLRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WebGLRenderer]
   }
-  
 }
-

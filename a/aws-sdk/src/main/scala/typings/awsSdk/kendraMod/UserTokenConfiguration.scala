@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserTokenConfiguration extends StObject {
   
   /**
     * Information about the JSON token type configuration.
     */
-  var JsonTokenTypeConfiguration: js.UndefOr[typings.awsSdk.kendraMod.JsonTokenTypeConfiguration] = js.native
+  var JsonTokenTypeConfiguration: js.UndefOr[typings.awsSdk.kendraMod.JsonTokenTypeConfiguration] = js.undefined
   
   /**
     * Information about the JWT token type configuration.
     */
-  var JwtTokenTypeConfiguration: js.UndefOr[typings.awsSdk.kendraMod.JwtTokenTypeConfiguration] = js.native
+  var JwtTokenTypeConfiguration: js.UndefOr[typings.awsSdk.kendraMod.JwtTokenTypeConfiguration] = js.undefined
 }
 object UserTokenConfiguration {
   

@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProjectsEnableXpnResourceRequest extends StObject {
   
   /**
     * Service resource (a.k.a service project) ID.
     */
-  var xpnResource: js.UndefOr[SchemaXpnResourceId] = js.native
+  var xpnResource: js.UndefOr[SchemaXpnResourceId] = js.undefined
 }
 object SchemaProjectsEnableXpnResourceRequest {
   

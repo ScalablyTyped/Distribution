@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTransitGatewayRoutesResult extends StObject {
   
   /**
     * The URL of the exported file in Amazon S3. For example, s3://bucket_name/VPCTransitGateway/TransitGatewayRouteTables/file_name.
     */
-  var S3Location: js.UndefOr[String] = js.native
+  var S3Location: js.UndefOr[String] = js.undefined
 }
 object ExportTransitGatewayRoutesResult {
   

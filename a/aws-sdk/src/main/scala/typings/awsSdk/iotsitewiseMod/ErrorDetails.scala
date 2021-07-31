@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
   /**
     * The error code.
     */
-  var code: ErrorCode = js.native
+  var code: ErrorCode
   
   /**
     * The error message.
     */
-  var message: ErrorMessage = js.native
+  var message: ErrorMessage
 }
 object ErrorDetails {
   

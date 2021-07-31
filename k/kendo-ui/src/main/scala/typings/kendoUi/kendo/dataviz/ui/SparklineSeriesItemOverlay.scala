@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineSeriesItemOverlay extends StObject {
   
-  var gradient: js.UndefOr[String] = js.native
+  var gradient: js.UndefOr[String] = js.undefined
 }
 object SparklineSeriesItemOverlay {
   

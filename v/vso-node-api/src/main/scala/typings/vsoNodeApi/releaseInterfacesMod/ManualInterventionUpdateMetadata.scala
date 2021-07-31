@@ -2,21 +2,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualInterventionUpdateMetadata extends StObject {
   
   /**
     * Sets the comment for manual intervention update.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Sets the status of the manual intervention.
     */
-  var status: ManualInterventionStatus = js.native
+  var status: ManualInterventionStatus
 }
 object ManualInterventionUpdateMetadata {
   

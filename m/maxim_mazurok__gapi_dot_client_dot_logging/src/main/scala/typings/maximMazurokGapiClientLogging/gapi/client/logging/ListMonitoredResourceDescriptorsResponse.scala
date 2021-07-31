@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMonitoredResourceDescriptorsResponse extends StObject {
   
   /**
     * If there might be more results than those appearing in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of
     * nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of resource descriptors. */
-  var resourceDescriptors: js.UndefOr[js.Array[MonitoredResourceDescriptor]] = js.native
+  var resourceDescriptors: js.UndefOr[js.Array[MonitoredResourceDescriptor]] = js.undefined
 }
 object ListMonitoredResourceDescriptorsResponse {
   

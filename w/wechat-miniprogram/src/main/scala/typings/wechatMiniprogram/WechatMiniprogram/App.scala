@@ -4,7 +4,6 @@ import typings.std.ThisType
 import typings.wechatMiniprogram.anon.PartialOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object App {
@@ -13,14 +12,13 @@ object App {
   
   type GetApp = js.Function1[/* opts */ js.UndefOr[GetAppOption], Instance[IAnyObject]]
   
-  @js.native
   trait GetAppOption extends StObject {
     
     /** 在 `App` 未定义时返回默认实现。当App被调用时，默认实现中定义的属性会被覆盖合并到App中。一般用于独立分包
       *
       * 最低基础库： 2.2.4
       */
-    var allowDefault: js.UndefOr[Boolean] = js.native
+    var allowDefault: js.UndefOr[Boolean] = js.undefined
   }
   object GetAppOption {
     
@@ -41,19 +39,18 @@ object App {
     }
   }
   
-  type Instance[T /* <: IAnyObject */] = Option with T
+  type Instance[T /* <: IAnyObject */] = Option & T
   
-  @js.native
   trait LaunchShowOption extends StObject {
     
     /** 打开小程序的路径 */
-    var path: String = js.native
+    var path: String
     
     /** 打开小程序的query */
-    var query: IAnyObject = js.native
+    var query: IAnyObject
     
     /** 当场景为由从另一个小程序或公众号或App打开时，返回此字段 */
-    var referrerInfo: js.UndefOr[typings.wechatMiniprogram.WechatMiniprogram.App.ReferrerInfo] = js.native
+    var referrerInfo: js.UndefOr[typings.wechatMiniprogram.WechatMiniprogram.App.ReferrerInfo] = js.undefined
     
     /** 打开小程序的场景值
       * - 1001：发现栏小程序主入口，「最近使用」列表（基础库2.2.4版本起包含「我的小程序」列表）
@@ -125,10 +122,10 @@ object App {
       * - 1126：扫描手机相册中选取的“一物一码”
       * - 1129：微信爬虫访问 [详情](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/sitemap.html)
       */
-    var scene: SceneValues = js.native
+    var scene: SceneValues
     
     /** shareTicket，详见 [获取更多转发信息]((转发#获取更多转发信息)) */
-    var shareTicket: String = js.native
+    var shareTicket: String
   }
   object LaunchShowOption {
     
@@ -161,26 +158,25 @@ object App {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
     /** 错误监听函数
       *
       * 小程序发生脚本错误，或者 api
       */
-    def onError(/** 错误信息，包含堆栈 */ error: String): Unit = js.native
+    def onError(/** 错误信息，包含堆栈 */ error: String): Unit
     
     /** 生命周期回调—监听小程序隐藏
       *
       * 小程序从前台进入后台时
       */
-    def onHide(): Unit = js.native
+    def onHide(): Unit
     
     /** 生命周期回调—监听小程序初始化
       *
       * 小程序初始化完成时触发，全局只触发一次。
       */
-    def onLaunch(options: LaunchShowOption): Unit = js.native
+    def onLaunch(options: LaunchShowOption): Unit
     
     /** 页面不存在监听函数
       *
@@ -192,54 +188,94 @@ object App {
       *
       * 最低基础库： 1.9.90
       */
-    def onPageNotFound(options: PageNotFoundOption): Unit = js.native
+    def onPageNotFound(options: PageNotFoundOption): Unit
     
     /** 生命周期回调—监听小程序显示
       *
       * 小程序启动，或从后台进入前台显示时
       */
-    def onShow(options: LaunchShowOption): Unit = js.native
+    def onShow(options: LaunchShowOption): Unit
     
     /**
       * 系统切换主题时触发。也可以使用 wx.onThemeChange 绑定监听。
       *
       * 最低基础库： 2.11.0
       */
-    def onThemeChange(result: OnThemeChangeCallbackResult): Unit = js.native
+    def onThemeChange(result: OnThemeChangeCallbackResult): Unit
     /**
       * 系统切换主题时触发。也可以使用 wx.onThemeChange 绑定监听。
       *
       * 最低基础库： 2.11.0
       */
     @JSName("onThemeChange")
-    var onThemeChange_Original: OnThemeChangeCallback = js.native
+    var onThemeChange_Original: OnThemeChangeCallback
     
     /**
       * 小程序有未处理的 Promise 拒绝时触发。也可以使用 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html) 绑定监听。注意事项请参考 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html)。
       * **参数**：与 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html) 一致
       */
-    def onUnhandledRejection(result: OnUnhandledRejectionCallbackResult): Unit = js.native
+    def onUnhandledRejection(result: OnUnhandledRejectionCallbackResult): Unit
     /**
       * 小程序有未处理的 Promise 拒绝时触发。也可以使用 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html) 绑定监听。注意事项请参考 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html)。
       * **参数**：与 [wx.onUnhandledRejection](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.onUnhandledRejection.html) 一致
       */
     @JSName("onUnhandledRejection")
-    var onUnhandledRejection_Original: OnUnhandledRejectionCallback = js.native
+    var onUnhandledRejection_Original: OnUnhandledRejectionCallback
+  }
+  object Option {
+    
+    @scala.inline
+    def apply(
+      onError: String => Unit,
+      onHide: () => Unit,
+      onLaunch: LaunchShowOption => Unit,
+      onPageNotFound: PageNotFoundOption => Unit,
+      onShow: LaunchShowOption => Unit,
+      onThemeChange: /* result */ OnThemeChangeCallbackResult => Unit,
+      onUnhandledRejection: /* result */ OnUnhandledRejectionCallbackResult => Unit
+    ): Option = {
+      val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onHide = js.Any.fromFunction0(onHide), onLaunch = js.Any.fromFunction1(onLaunch), onPageNotFound = js.Any.fromFunction1(onPageNotFound), onShow = js.Any.fromFunction1(onShow), onThemeChange = js.Any.fromFunction1(onThemeChange), onUnhandledRejection = js.Any.fromFunction1(onUnhandledRejection))
+      __obj.asInstanceOf[Option]
+    }
+    
+    @scala.inline
+    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setOnLaunch(value: LaunchShowOption => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnPageNotFound(value: PageNotFoundOption => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnShow(value: LaunchShowOption => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnThemeChange(value: /* result */ OnThemeChangeCallbackResult => Unit): Self = StObject.set(x, "onThemeChange", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnUnhandledRejection(value: /* result */ OnUnhandledRejectionCallbackResult => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
+    }
   }
   
-  type Options[T /* <: IAnyObject */] = PartialOption with T with ThisType[Instance[T]]
+  type Options[T /* <: IAnyObject */] = PartialOption & T & ThisType[Instance[T]]
   
-  @js.native
   trait PageNotFoundOption extends StObject {
     
     /** 是否本次启动的首个页面（例如从分享等入口进来，首个页面是开发者配置的分享页面） */
-    var isEntryPage: Boolean = js.native
+    var isEntryPage: Boolean
     
     /** 不存在页面的路径 */
-    var path: String = js.native
+    var path: String
     
     /** 打开不存在页面的 query */
-    var query: IAnyObject = js.native
+    var query: IAnyObject
   }
   object PageNotFoundOption {
     
@@ -263,7 +299,6 @@ object App {
     }
   }
   
-  @js.native
   trait ReferrerInfo extends StObject {
     
     /** 来源小程序或公众号或App的 appId
@@ -276,10 +311,10 @@ object App {
       * - 1038（从另一个小程序返回）：来源小程序 appId
       * - 1043（公众号模板消息）：来源公众号 appId
       */
-    var appId: String = js.native
+    var appId: String
     
     /** 来源小程序传过来的数据，scene=1037或1038时支持 */
-    var extraData: js.UndefOr[js.Any] = js.native
+    var extraData: js.UndefOr[js.Any] = js.undefined
   }
   object ReferrerInfo {
     

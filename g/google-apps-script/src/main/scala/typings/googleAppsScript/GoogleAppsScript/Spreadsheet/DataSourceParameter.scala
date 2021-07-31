@@ -2,20 +2,18 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access existing data source parameters.
   */
-@js.native
 trait DataSourceParameter extends StObject {
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getSourceCell(): String | Null = js.native
+  def getSourceCell(): String | Null
   
-  def getType(): DataSourceParameterType = js.native
+  def getType(): DataSourceParameterType
 }
 object DataSourceParameter {
   

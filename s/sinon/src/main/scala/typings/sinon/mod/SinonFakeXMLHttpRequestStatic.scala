@@ -3,11 +3,12 @@ package typings.sinon.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonFakeXMLHttpRequestStatic extends Instantiable0[SinonFakeXMLHttpRequest] {
+trait SinonFakeXMLHttpRequestStatic
+  extends StObject
+     with Instantiable0[SinonFakeXMLHttpRequest] {
   
   /**
     * Add a filter that will decide whether or not to fake a request.

@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.MeasurementConstructor
 import typings.arcgisJsApi.esri.MeasurementProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object measurementMod extends Shortcut {
   
   @JSImport("esri/widgets/Measurement", JSImport.Namespace)
   @js.native
-  val ^ : MeasurementConstructor = js.native
+  val ^ : js.Object & MeasurementConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Measurement", JSImport.Namespace)
@@ -23,12 +22,14 @@ object measurementMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html)
     */
-  class Class () extends Measurement {
+  class Class ()
+    extends StObject
+       with Measurement {
     def this(properties: MeasurementProperties) = this()
   }
   
-  type _To = MeasurementConstructor
+  type _To = js.Object & MeasurementConstructor
   
   /* This means you don't have to write `^`, but can instead just say `measurementMod.foo` */
-  override def _to: MeasurementConstructor = ^
+  override def _to: js.Object & MeasurementConstructor = ^
 }

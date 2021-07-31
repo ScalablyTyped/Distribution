@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WiFiItem extends StObject {
   
   /**
     * Wi-Fi 的BSSID
     */
-  var BSSID: js.UndefOr[String] = js.native
+  var BSSID: js.UndefOr[String] = js.undefined
   
   /**
     * Wi-Fi 的SSID
     */
-  var SSID: js.UndefOr[String] = js.native
+  var SSID: js.UndefOr[String] = js.undefined
   
   /**
     * Wi-Fi 设备密码
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
 }
 object WiFiItem {
   

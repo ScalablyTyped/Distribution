@@ -2,17 +2,15 @@ package typings.lowlight.lowlight
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightResult extends StObject {
   
-  var language: String = js.native
+  var language: String
   
-  var relevance: Double = js.native
+  var relevance: Double
   
-  var value: js.Array[HastNode] = js.native
+  var value: js.Array[HastNode]
 }
 object HighlightResult {
   

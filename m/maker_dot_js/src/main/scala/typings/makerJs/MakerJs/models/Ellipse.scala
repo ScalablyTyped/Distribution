@@ -5,17 +5,17 @@ import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Ellipse extends IModel {
+trait Ellipse
+  extends StObject
+     with IModel {
   
   @JSName("models")
-  var models_Ellipse: IModelMap = js.native
+  var models_Ellipse: IModelMap
   
   @JSName("origin")
-  var origin_Ellipse: IPoint = js.native
+  var origin_Ellipse: IPoint
 }
 object Ellipse {
   

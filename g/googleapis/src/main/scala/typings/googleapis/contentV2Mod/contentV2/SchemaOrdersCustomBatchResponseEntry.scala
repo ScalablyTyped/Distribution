@@ -2,40 +2,38 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The status of the execution. Only defined if   - the request was
     * successful; and  - the method is not get, getByMerchantOrderId, or one of
     * the test methods.
     */
-  var executionStatus: js.UndefOr[String] = js.native
+  var executionStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#ordersCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The retrieved order. Only defined if the method is get and if the request
     * was successful.
     */
-  var order: js.UndefOr[SchemaOrder] = js.native
+  var order: js.UndefOr[SchemaOrder] = js.undefined
 }
 object SchemaOrdersCustomBatchResponseEntry {
   

@@ -2,10 +2,8 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListReleasesResponse extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait SchemaListReleasesResponse extends StObject {
     * [`list`](../sites.versions.files/list) call to continue with the next set
     * of releases.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of hashes of files that still need to be uploaded, if any exist.
     */
-  var releases: js.UndefOr[js.Array[SchemaRelease]] = js.native
+  var releases: js.UndefOr[js.Array[SchemaRelease]] = js.undefined
 }
 object SchemaListReleasesResponse {
   

@@ -11,10 +11,13 @@ import typings.domelementtype.domelementtypeStrings.tag
 import typings.domelementtype.domelementtypeStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("domelementtype", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("domelementtype", "CDATA")
   @js.native
@@ -48,9 +51,8 @@ object mod {
   @js.native
   val Text: String | Double = js.native
   
-  @JSImport("domelementtype", "isTag")
-  @js.native
-  def isTag(elem: Type): Boolean = js.native
+  @scala.inline
+  def isTag(elem: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.domelementtype.domelementtypeStrings.text

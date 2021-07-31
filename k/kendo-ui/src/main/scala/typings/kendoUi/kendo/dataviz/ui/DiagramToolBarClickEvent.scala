@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramToolBarClickEvent extends DiagramEvent {
+trait DiagramToolBarClickEvent
+  extends StObject
+     with DiagramEvent {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var connections: js.UndefOr[js.Any] = js.native
+  var connections: js.UndefOr[js.Any] = js.undefined
   
-  var shapes: js.UndefOr[js.Any] = js.native
+  var shapes: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[JQuery] = js.native
+  var target: js.UndefOr[JQuery] = js.undefined
 }
 object DiagramToolBarClickEvent {
   

@@ -3,13 +3,13 @@ package typings.jasmine.jasmine
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errors {
   
-  @js.native
-  trait ExpectationFailed extends Error
+  trait ExpectationFailed
+    extends StObject
+       with Error
   object ExpectationFailed {
     
     @scala.inline

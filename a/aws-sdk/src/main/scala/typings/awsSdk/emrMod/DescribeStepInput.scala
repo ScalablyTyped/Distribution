@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStepInput extends StObject {
   
   /**
     * The identifier of the cluster with steps to describe.
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
     * The identifier of the step to describe.
     */
-  var StepId: typings.awsSdk.emrMod.StepId = js.native
+  var StepId: typings.awsSdk.emrMod.StepId
 }
 object DescribeStepInput {
   

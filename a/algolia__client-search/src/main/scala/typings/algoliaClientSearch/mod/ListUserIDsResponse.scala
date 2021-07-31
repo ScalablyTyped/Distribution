@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserIDsResponse extends StObject {
   
   /**
     * List of users id.
     */
-  var userIDs: js.Array[UserIDResponse] = js.native
+  var userIDs: js.Array[UserIDResponse]
 }
 object ListUserIDsResponse {
   

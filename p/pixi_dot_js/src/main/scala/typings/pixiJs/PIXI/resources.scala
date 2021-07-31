@@ -10,7 +10,6 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,9 @@ object resources {
     * @param {number} [options.height] - Height of the resource
     */
   @js.native
-  trait AbstractMultiResource extends Resource {
+  trait AbstractMultiResource
+    extends StObject
+       with Resource {
     
     /**
       * Set a resource by ID
@@ -63,8 +64,8 @@ object resources {
       * @param {object} [options] - detect options for resources
       * @protected
       */
-    /* protected */ def initFromArray(resources: js.Array[_]): Unit = js.native
-    /* protected */ def initFromArray(resources: js.Array[_], options: js.Any): Unit = js.native
+    /* protected */ def initFromArray(resources: js.Array[js.Any]): Unit = js.native
+    /* protected */ def initFromArray(resources: js.Array[js.Any], options: js.Any): Unit = js.native
     
     /**
       * Dirty IDs for each part
@@ -101,8 +102,9 @@ object resources {
     * @param {number} [options.width] - Width of the resource
     * @param {number} [options.height] - Height of the resource
     */
-  @js.native
-  trait ArrayResource extends Resource {
+  trait ArrayResource
+    extends StObject
+       with Resource {
     
     /**
       * Set a baseTexture by ID,
@@ -112,7 +114,7 @@ object resources {
       * @param {number} index - Zero-based index of resource to set
       * @return {PIXI.resources.ArrayResource} Instance for chaining
       */
-    def addBaseTextureAt(baseTexture: BaseTexture, index: Double): ArrayResource = js.native
+    def addBaseTextureAt(baseTexture: BaseTexture, index: Double): ArrayResource
     
     /**
       * Upload the resources to the GPU.
@@ -121,7 +123,7 @@ object resources {
       * @param {PIXI.GLTexture} glTexture
       * @returns {boolean} whether texture was uploaded
       */
-    def upload(renderer: Renderer, texture: BaseTexture, glTexture: GLTexture): Boolean = js.native
+    def upload(renderer: Renderer, texture: BaseTexture, glTexture: GLTexture): Boolean
   }
   object ArrayResource {
     
@@ -167,7 +169,9 @@ object resources {
     * @memberof PIXI.resources
     */
   @js.native
-  trait BaseImageResource extends Resource {
+  trait BaseImageResource
+    extends StObject
+       with Resource {
     
     /**
       * The source element
@@ -197,8 +201,9 @@ object resources {
     * @extends PIXI.resources.Resource
     * @memberof PIXI.resources
     */
-  @js.native
-  trait BufferResource extends Resource {
+  trait BufferResource
+    extends StObject
+       with Resource {
     
     /**
       * Source array
@@ -206,7 +211,7 @@ object resources {
       *
       * @member {Float32Array|Uint8Array|Uint32Array} PIXI.resources.BufferResource#data
       */
-    var data: Float32Array | Uint8Array | Uint32Array = js.native
+    var data: Float32Array | Uint8Array | Uint32Array
     
     /**
       * Upload the texture to the GPU.
@@ -215,7 +220,7 @@ object resources {
       * @param {PIXI.GLTexture} glTexture - glTexture
       * @returns {boolean} true is success
       */
-    def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean = js.native
+    def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean
   }
   object BufferResource {
     
@@ -262,7 +267,9 @@ object resources {
     * @param {HTMLCanvasElement} source - Canvas element to use
     */
   @js.native
-  trait CanvasResource extends BaseImageResource
+  trait CanvasResource
+    extends StObject
+       with BaseImageResource
   
   /**
     * Resource for a CubeTexture which contains six resources.
@@ -279,22 +286,23 @@ object resources {
     * @param {number} [options.linkBaseTexture=true] - In case BaseTextures are supplied,
     *   whether to copy them or use
     */
-  @js.native
-  trait CubeResource extends ArrayResource {
+  trait CubeResource
+    extends StObject
+       with ArrayResource {
     
     /**
       * In case BaseTextures are supplied, whether to use same resource or bind baseTexture itself
       * @member {boolean} PIXI.resources.CubeResource#linkBaseTexture
       * @protected
       */
-    var linkBaseTexture: Boolean = js.native
+    var linkBaseTexture: Boolean
     
     /**
       * Upload the resource
       *
       * @returns {boolean} true is success
       */
-    def upload(): Boolean = js.native
+    def upload(): Boolean
   }
   object CubeResource {
     
@@ -340,8 +348,9 @@ object resources {
     * @extends PIXI.resources.BufferResource
     * @memberof PIXI.resources
     */
-  @js.native
-  trait DepthResource extends BufferResource
+  trait DepthResource
+    extends StObject
+       with BufferResource
   object DepthResource {
     
     @scala.inline
@@ -377,7 +386,9 @@ object resources {
     * @param {ImageBitmap} source - Image element to use
     */
   @js.native
-  trait ImageBitmapResource extends BaseImageResource
+  trait ImageBitmapResource
+    extends StObject
+       with BaseImageResource
   
   /**
     * Resource type for HTMLImageElement.
@@ -386,7 +397,9 @@ object resources {
     * @memberof PIXI.resources
     */
   @js.native
-  trait ImageResource extends BaseImageResource {
+  trait ImageResource
+    extends StObject
+       with BaseImageResource {
     
     /**
       * Controls texture alphaMode field
@@ -444,7 +457,6 @@ object resources {
     * @class
     * @memberof PIXI.resources
     */
-  @js.native
   trait Resource extends StObject {
     
     /**
@@ -452,28 +464,28 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    var _height: Double = js.native
+    var _height: Double
     
     /**
       * Internal width of the resource
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    var _width: Double = js.native
+    var _width: Double
     
     /**
       * Bind to a parent BaseTexture
       *
       * @param {PIXI.BaseTexture} baseTexture - Parent texture
       */
-    def bind(baseTexture: BaseTexture): Unit = js.native
+    def bind(baseTexture: BaseTexture): Unit
     
     /**
       * Call when destroying resource, unbind any BaseTexture object
       * before calling this method, as reference counts are maintained
       * internally.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * If resource has been destroyed
@@ -481,14 +493,14 @@ object resources {
       * @readonly
       * @default false
       */
-    val destroyed: Boolean = js.native
+    val destroyed: Boolean
     
     /**
       * Clean up anything, this happens when destroying is ready.
       *
       * @protected
       */
-    /* protected */ def dispose(): Unit = js.native
+    /* protected */ def dispose(): Unit
     
     /**
       * The height of the resource.
@@ -496,7 +508,7 @@ object resources {
       * @member {number}
       * @readonly
       */
-    val height: Double = js.native
+    val height: Double
     
     /**
       * `true` if resource is created by BaseTexture
@@ -506,7 +518,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    var internal: Boolean = js.native
+    var internal: Boolean
     
     /**
       * This can be overridden to start preloading a resource
@@ -514,14 +526,14 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* protected */ def load(): js.Promise[Unit] = js.native
+    /* protected */ def load(): js.Promise[Unit]
     
     /**
       * Trigger a resize event
       * @param {number} width - X dimension
       * @param {number} height - Y dimension
       */
-    def resize(width: Double, height: Double): Unit = js.native
+    def resize(width: Double, height: Double): Unit
     
     /**
       * Set the style, optional to override
@@ -531,26 +543,26 @@ object resources {
       * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
       * @returns {boolean} `true` is success
       */
-    def style(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean = js.native
+    def style(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean
     
     /**
       * Unbind to a parent BaseTexture
       *
       * @param {PIXI.BaseTexture} baseTexture - Parent texture
       */
-    def unbind(baseTexture: BaseTexture): Unit = js.native
+    def unbind(baseTexture: BaseTexture): Unit
     
     /**
       * Has been updated trigger event
       */
-    def update(): Unit = js.native
+    def update(): Unit
     
     /**
       * Has been validated
       * @readonly
       * @member {boolean}
       */
-    val valid: Boolean = js.native
+    val valid: Boolean
     
     /**
       * The width of the resource.
@@ -558,7 +570,7 @@ object resources {
       * @member {number}
       * @readonly
       */
-    val width: Double = js.native
+    val width: Double
   }
   object Resource {
     
@@ -647,7 +659,9 @@ object resources {
     * @param {boolean} [options.autoLoad=true] - Start loading right away.
     */
   @js.native
-  trait SVGResource extends BaseImageResource {
+  trait SVGResource
+    extends StObject
+       with BaseImageResource {
     
     /**
       * A height override for rasterization on load
@@ -692,7 +706,9 @@ object resources {
     * @param {boolean} [options.crossorigin=true] - Load image using cross origin
     */
   @js.native
-  trait VideoResource extends BaseImageResource {
+  trait VideoResource
+    extends StObject
+       with BaseImageResource {
     
     /**
       * When set to true will automatically play videos used by this texture once

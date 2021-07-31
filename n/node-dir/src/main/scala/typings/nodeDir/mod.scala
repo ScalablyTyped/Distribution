@@ -6,74 +6,59 @@ import typings.nodeDir.anon.Sync
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-dir", "files")
+  @JSImport("node-dir", JSImport.Namespace)
   @js.native
-  def files(dir: String, callback: js.Function2[/* error */ js.Any, /* files */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("node-dir", "files")
-  @js.native
-  def files(dir: String, syncOption: Sync): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-dir", "paths")
-  @js.native
-  def paths(dir: String, callback: js.Function2[/* error */ js.Any, /* paths */ PathsResult, Unit]): Unit = js.native
-  @JSImport("node-dir", "paths")
-  @js.native
+  @scala.inline
+  def files(dir: String, callback: js.Function2[/* error */ js.Any, /* files */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def files(dir: String, syncOption: Sync): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(dir.asInstanceOf[js.Any], syncOption.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def paths(dir: String, callback: js.Function2[/* error */ js.Any, /* paths */ PathsResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paths")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def paths(
     dir: String,
     combine: Boolean,
     callback: js.Function2[/* error */ js.Any, /* paths */ js.Array[String] | PathsResult, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paths")(dir.asInstanceOf[js.Any], combine.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-dir", "promiseFiles")
-  @js.native
-  def promiseFiles(dir: String): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def promiseFiles(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseFiles")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, fileCallback: FileCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, fileCallback: FileCallback, finishedCallback: FinishedCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, fileCallback: FileNamedCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, fileCallback: FileNamedCallback, finishedCallback: FinishedCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, options: Options, fileCallback: FileCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, options: Options, fileCallback: FileCallback, finishedCallback: FinishedCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, options: Options, fileCallback: FileNamedCallback): Unit = js.native
-  @JSImport("node-dir", "readFiles")
-  @js.native
-  def readFiles(dir: String, options: Options, fileCallback: FileNamedCallback, finishedCallback: FinishedCallback): Unit = js.native
+  @scala.inline
+  def readFiles(dir: String, fileCallback: FileCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, fileCallback: FileCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, fileCallback: FileNamedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, fileCallback: FileNamedCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, options: Options, fileCallback: FileCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, options: Options, fileCallback: FileCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, options: Options, fileCallback: FileNamedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFiles(dir: String, options: Options, fileCallback: FileNamedCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fileCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-dir", "readFilesStream")
-  @js.native
-  def readFilesStream(dir: String, options: Options, streamCallback: StreamCallback): Unit = js.native
-  @JSImport("node-dir", "readFilesStream")
-  @js.native
-  def readFilesStream(dir: String, options: Options, streamCallback: StreamCallback, finishedCallback: FinishedCallback): Unit = js.native
-  @JSImport("node-dir", "readFilesStream")
-  @js.native
-  def readFilesStream(dir: String, streamCallback: StreamCallback): Unit = js.native
-  @JSImport("node-dir", "readFilesStream")
-  @js.native
-  def readFilesStream(dir: String, streamCallback: StreamCallback, finishedCallback: FinishedCallback): Unit = js.native
+  @scala.inline
+  def readFilesStream(dir: String, options: Options, streamCallback: StreamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFilesStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], streamCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFilesStream(dir: String, options: Options, streamCallback: StreamCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFilesStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], streamCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFilesStream(dir: String, streamCallback: StreamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFilesStream")(dir.asInstanceOf[js.Any], streamCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFilesStream(dir: String, streamCallback: StreamCallback, finishedCallback: FinishedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFilesStream")(dir.asInstanceOf[js.Any], streamCallback.asInstanceOf[js.Any], finishedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-dir", "subdirs")
-  @js.native
-  def subdirs(dir: String, callback: js.Function2[/* error */ js.Any, /* subdirs */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def subdirs(dir: String, callback: js.Function2[/* error */ js.Any, /* subdirs */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subdirs")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type FileCallback = js.Function3[/* error */ js.Any, /* content */ String | Buffer, /* next */ js.Function0[Unit], Unit]
   
@@ -87,38 +72,37 @@ object mod {
   
   type FinishedCallback = js.Function2[/* error */ js.Any, /* files */ js.Array[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
     // control if done function called on error (defaults to true)
-    var doneOnErr: js.UndefOr[Boolean] = js.native
+    var doneOnErr: js.UndefOr[Boolean] = js.undefined
     
     // file encoding (defaults to 'utf8')
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     // a regex pattern or array to specify filenames to ignore
-    var exclude: js.UndefOr[RegExp | js.Array[String]] = js.native
+    var exclude: js.UndefOr[RegExp | js.Array[String]] = js.undefined
     
     // a regex pattern or array to specify directories to ignore
-    var excludeDir: js.UndefOr[RegExp | js.Array[String]] = js.native
+    var excludeDir: js.UndefOr[RegExp | js.Array[String]] = js.undefined
     
     // a regex pattern or array to specify filenames to operate on
-    var `match`: js.UndefOr[RegExp | js.Array[String]] = js.native
+    var `match`: js.UndefOr[RegExp | js.Array[String]] = js.undefined
     
     // a regex pattern or array to specify directories to recurse
-    var matchDir: js.UndefOr[RegExp | js.Array[String]] = js.native
+    var matchDir: js.UndefOr[RegExp | js.Array[String]] = js.undefined
     
     // whether to recurse subdirectories when reading files (defaults to true)
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
     // sort files in each directory in descending order
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
     // whether to aggregate only the base filename rather than the full filepath
-    var shortName: js.UndefOr[Boolean] = js.native
+    var shortName: js.UndefOr[Boolean] = js.undefined
     
     // sort files in each directory in ascending order (defaults to true)
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -205,12 +189,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PathsResult extends StObject {
     
-    var dirs: js.Array[String] = js.native
+    var dirs: js.Array[String]
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
   }
   object PathsResult {
     

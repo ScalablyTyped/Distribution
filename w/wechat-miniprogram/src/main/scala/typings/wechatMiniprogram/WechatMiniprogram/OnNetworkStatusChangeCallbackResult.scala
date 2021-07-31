@@ -8,14 +8,12 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.unknown
 import typings.wechatMiniprogram.wechatMiniprogramStrings.wifi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnNetworkStatusChangeCallbackResult extends StObject {
   
   /** 当前是否有网络连接 */
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
   /** 网络类型
     *
@@ -26,7 +24,7 @@ trait OnNetworkStatusChangeCallbackResult extends StObject {
     * - '4g': 4g 网络;
     * - 'unknown': Android 下不常见的网络类型;
     * - 'none': 无网络; */
-  var networkType: wifi | `2g` | `3g` | `4g` | unknown | none = js.native
+  var networkType: wifi | `2g` | `3g` | `4g` | unknown | none
 }
 object OnNetworkStatusChangeCallbackResult {
   

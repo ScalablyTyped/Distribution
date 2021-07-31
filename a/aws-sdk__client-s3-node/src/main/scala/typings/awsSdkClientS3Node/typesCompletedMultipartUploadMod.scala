@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesCompletedPartMod.UnmarshalledCompletedPar
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCompletedMultipartUploadMod {
   
-  @js.native
   trait CompletedMultipartUpload extends StObject {
     
     /**
       * _CompletedPartList shape
       */
-    var Parts: js.UndefOr[js.Array[CompletedPart] | Iterable[CompletedPart]] = js.native
+    var Parts: js.UndefOr[js.Array[CompletedPart] | Iterable[CompletedPart]] = js.undefined
   }
   object CompletedMultipartUpload {
     
@@ -40,14 +38,15 @@ object typesCompletedMultipartUploadMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCompletedMultipartUpload extends CompletedMultipartUpload {
+  trait UnmarshalledCompletedMultipartUpload
+    extends StObject
+       with CompletedMultipartUpload {
     
     /**
       * _CompletedPartList shape
       */
     @JSName("Parts")
-    var Parts_UnmarshalledCompletedMultipartUpload: js.UndefOr[js.Array[UnmarshalledCompletedPart]] = js.native
+    var Parts_UnmarshalledCompletedMultipartUpload: js.UndefOr[js.Array[UnmarshalledCompletedPart]] = js.undefined
   }
   object UnmarshalledCompletedMultipartUpload {
     

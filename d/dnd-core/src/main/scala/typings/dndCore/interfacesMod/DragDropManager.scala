@@ -2,21 +2,19 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragDropManager extends StObject {
   
-  def dispatch(action: js.Any): Unit = js.native
+  def dispatch(action: js.Any): Unit
   
-  def getActions(): DragDropActions = js.native
+  def getActions(): DragDropActions
   
-  def getBackend(): Backend = js.native
+  def getBackend(): Backend
   
-  def getMonitor(): DragDropMonitor = js.native
+  def getMonitor(): DragDropMonitor
   
-  def getRegistry(): HandlerRegistry = js.native
+  def getRegistry(): HandlerRegistry
 }
 object DragDropManager {
   

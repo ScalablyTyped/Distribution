@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplatePlacement extends StObject {
   
   /**
     * The affinity setting for an instance on a Dedicated Host.
     */
-  var affinity: js.UndefOr[String] = js.native
+  var affinity: js.UndefOr[String] = js.undefined
   
   /**
     * The Availability Zone for the instance.
     */
-  var availabilityZone: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the placement group for the instance.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Dedicated Host for the instance.
     */
-  var hostId: js.UndefOr[String] = js.native
+  var hostId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of the partition the instance should launch in. Valid only if the placement group strategy is set to partition.
     */
-  var partitionNumber: js.UndefOr[Double] = js.native
+  var partitionNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var spreadDomain: js.UndefOr[String] = js.native
+  var spreadDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
     */
-  var tenancy: js.UndefOr[String] = js.native
+  var tenancy: js.UndefOr[String] = js.undefined
 }
 object LaunchTemplatePlacement {
   

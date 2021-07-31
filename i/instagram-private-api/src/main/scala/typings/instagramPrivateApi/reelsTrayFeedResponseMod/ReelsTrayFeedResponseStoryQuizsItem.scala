@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseStoryQuizsItem extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var is_hidden: Double = js.native
+  var is_hidden: Double
   
-  var is_pinned: Double = js.native
+  var is_pinned: Double
   
-  var is_sticker: Double = js.native
+  var is_sticker: Double
   
-  var quiz_sticker: ReelsTrayFeedResponseQuizSticker = js.native
+  var quiz_sticker: ReelsTrayFeedResponseQuizSticker
   
-  var rotation: String = js.native
+  var rotation: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: String = js.native
+  var x: String
   
-  var y: Double = js.native
+  var y: Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object ReelsTrayFeedResponseStoryQuizsItem {
   

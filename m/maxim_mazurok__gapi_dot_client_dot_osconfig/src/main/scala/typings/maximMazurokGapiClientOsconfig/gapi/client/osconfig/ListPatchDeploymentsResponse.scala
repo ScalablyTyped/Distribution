@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPatchDeploymentsResponse extends StObject {
   
   /** A pagination token that can be used to get the next page of patch deployments. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of patch deployments. */
-  var patchDeployments: js.UndefOr[js.Array[PatchDeployment]] = js.native
+  var patchDeployments: js.UndefOr[js.Array[PatchDeployment]] = js.undefined
 }
 object ListPatchDeploymentsResponse {
   

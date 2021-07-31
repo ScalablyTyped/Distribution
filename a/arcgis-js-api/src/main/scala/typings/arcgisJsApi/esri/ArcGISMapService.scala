@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcGISMapService extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait ArcGISMapService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  val capabilities: ArcGISMapServiceCapabilities = js.native
+  val capabilities: ArcGISMapServiceCapabilities
   
   /**
     * The copyright text as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
     */
-  var copyright: String = js.native
+  var copyright: String
   
   /**
     * The full extent of the layer as defined by the map service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#fullExtent)
     */
-  var fullExtent: Extent = js.native
+  var fullExtent: Extent
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
-  var legendEnabled: Boolean = js.native
+  var legendEnabled: Boolean
   
   /**
     * The spatial reference of the layer as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#spatialReference)
     */
-  val spatialReference: SpatialReference = js.native
+  val spatialReference: SpatialReference
   
   /**
     * The version of ArcGIS Server in which the map service is published.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#version)
     */
-  val version: Double = js.native
+  val version: Double
 }
 object ArcGISMapService {
   

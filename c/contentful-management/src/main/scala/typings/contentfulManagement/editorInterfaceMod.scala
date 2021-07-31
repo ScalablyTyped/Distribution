@@ -5,29 +5,30 @@ import typings.contentfulManagement.anon.MetaSysPropsspacesysMetaL
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editorInterfaceMod {
   
-  @JSImport("contentful-management/dist/typings/entities/editor-interface", "wrapEditorInterface")
+  @JSImport("contentful-management/dist/typings/entities/editor-interface", JSImport.Namespace)
   @js.native
-  def wrapEditorInterface(http: AxiosInstance, data: EditorInterfaceProps): EditorInterface = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def wrapEditorInterface(http: AxiosInstance, data: EditorInterfaceProps): EditorInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEditorInterface")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EditorInterface]
+  
   trait Control extends StObject {
     
     /**
       * the id of the customized field
       */
-    var fieldId: String = js.native
+    var fieldId: String
     
     /**
       * customization associated to the field
       */
-    var widgetId: String = js.native
+    var widgetId: String
     
-    var widgetNamespace: String = js.native
+    var widgetNamespace: String
   }
   object Control {
     
@@ -51,9 +52,9 @@ object editorInterfaceMod {
     }
   }
   
-  @js.native
   trait EditorInterface
-    extends EditorInterfaceProps
+    extends StObject
+       with EditorInterfaceProps
        with DefaultElements[EditorInterfaceProps] {
     
     /**
@@ -76,7 +77,7 @@ object editorInterfaceMod {
       * .catch(console.error)
       * ```
       */
-    def getControlForField(id: String): Null | Control = js.native
+    def getControlForField(id: String): Null | Control
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -98,7 +99,7 @@ object editorInterfaceMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[EditorInterface] = js.native
+    def update(): js.Promise[EditorInterface]
   }
   object EditorInterface {
     
@@ -125,15 +126,14 @@ object editorInterfaceMod {
     }
   }
   
-  @js.native
   trait EditorInterfaceProps extends StObject {
     
     /**
       * Array of fields and it's associated widgetId
       */
-    var controls: js.Array[Control] = js.native
+    var controls: js.Array[Control]
     
-    var sys: MetaSysPropsspacesysMetaL = js.native
+    var sys: MetaSysPropsspacesysMetaL
   }
   object EditorInterfaceProps {
     

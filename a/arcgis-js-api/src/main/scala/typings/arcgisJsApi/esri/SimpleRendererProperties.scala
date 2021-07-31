@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleRendererProperties
-  extends RendererProperties
+  extends StObject
+     with RendererProperties
      with VisualVariablesMixinProperties {
   
   /**
@@ -15,14 +14,14 @@ trait SimpleRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#label)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol used by the renderer to visualize all features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol)
     */
-  var symbol: js.UndefOr[SymbolProperties] = js.native
+  var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
 object SimpleRendererProperties {
   

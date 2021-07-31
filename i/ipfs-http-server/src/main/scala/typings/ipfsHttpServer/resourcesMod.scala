@@ -67,7 +67,6 @@ import typings.ipfsHttpServer.anon.Typeofwantlist
 import typings.ipfsHttpServer.anon.Validate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourcesMod {
@@ -200,9 +199,8 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "dns.handler")
-    @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "dns.options")
     @js.native
@@ -317,9 +315,8 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "id.handler")
-    @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "id.options")
     @js.native
@@ -338,6 +335,10 @@ object resourcesMod {
     @js.native
     val gen: Typeofgen = js.native
     
+    @JSImport("ipfs-http-server/dist/src/api/resources", "key.import")
+    @js.native
+    val `import`: Typeofimport = js.native
+    
     @JSImport("ipfs-http-server/dist/src/api/resources", "key.list")
     @js.native
     val list: Typeoflist = js.native
@@ -349,10 +350,6 @@ object resourcesMod {
     @JSImport("ipfs-http-server/dist/src/api/resources", "key.rm")
     @js.native
     val rm: TypeofrmHandler1 = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "key.import")
-    @js.native
-    val `import`: Typeofimport = js.native
   }
   
   object name {
@@ -368,6 +365,53 @@ object resourcesMod {
     @JSImport("ipfs-http-server/dist/src/api/resources", "name.resolve")
     @js.native
     val resolve: TypeofresolveHandler = js.native
+  }
+  
+  object `object` {
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object._new")
+    @js.native
+    val _new: Typeof_new = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.data")
+    @js.native
+    val data: Typeofdata = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.get")
+    @js.native
+    val get: Typeofget = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.links")
+    @js.native
+    val links: Typeoflinks = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.new")
+    @js.native
+    val `new`: Typeofnew = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchAddLink")
+    @js.native
+    val patchAddLink: TypeofpatchAddLink = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchAppendData")
+    @js.native
+    val patchAppendData: TypeofpatchAppendData = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchRmLink")
+    @js.native
+    val patchRmLink: TypeofpatchRmLink = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchSetData")
+    @js.native
+    val patchSetData: TypeofpatchSetData = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.put")
+    @js.native
+    val put: Typeofput = js.native
+    
+    @JSImport("ipfs-http-server/dist/src/api/resources", "object.stat")
+    @js.native
+    val stat: TypeofstatHandler = js.native
   }
   
   object pin {
@@ -391,9 +435,8 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "ping.handler")
-    @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "ping.options")
     @js.native
@@ -442,9 +485,8 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "resolve.handler")
-    @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "resolve.options")
     @js.native
@@ -455,9 +497,12 @@ object resourcesMod {
   
   object shutdown {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "shutdown.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources", "shutdown")
     @js.native
-    def handler(_request: js.Any, h: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object stats {
@@ -512,61 +557,13 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ipfs-http-server/dist/src/api/resources", "version.handler")
-    @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "version.options")
     @js.native
     def options: Validate = js.native
     @scala.inline
     def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
-  }
-  
-  object `object` {
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object._new")
-    @js.native
-    val _new: Typeof_new = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.data")
-    @js.native
-    val data: Typeofdata = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.get")
-    @js.native
-    val get: Typeofget = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.links")
-    @js.native
-    val links: Typeoflinks = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchAddLink")
-    @js.native
-    val patchAddLink: TypeofpatchAddLink = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchAppendData")
-    @js.native
-    val patchAppendData: TypeofpatchAppendData = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchRmLink")
-    @js.native
-    val patchRmLink: TypeofpatchRmLink = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.patchSetData")
-    @js.native
-    val patchSetData: TypeofpatchSetData = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.put")
-    @js.native
-    val put: Typeofput = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.stat")
-    @js.native
-    val stat: TypeofstatHandler = js.native
-    
-    @JSImport("ipfs-http-server/dist/src/api/resources", "object.new")
-    @js.native
-    val `new`: Typeofnew = js.native
   }
 }

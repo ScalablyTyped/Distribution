@@ -2,46 +2,44 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeScanningUploadSarifEndpoint extends StObject {
   
   /**
     * The base directory used in the analysis, as it appears in the SARIF file.
     * This property is used to convert file paths from absolute to relative, so that alerts can be mapped to their correct location in the repository.
     */
-  var checkout_uri: js.UndefOr[String] = js.native
+  var checkout_uri: js.UndefOr[String] = js.undefined
   
   /**
     * The commit SHA of the code scanning analysis file.
     */
-  var commit_sha: String = js.native
+  var commit_sha: String
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The full Git reference of the code scanning analysis file, formatted as `refs/heads/<branch name>`.
     */
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * A Base64 string representing the SARIF file to upload. You must first compress your SARIF file using [`gzip`](http://www.gnu.org/software/gzip/manual/gzip.html) and then translate the contents of the file into a Base64 encoding string.
     */
-  var sarif: String = js.native
+  var sarif: String
   
   /**
     * The time that the analysis run began. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var started_at: js.UndefOr[String] = js.native
+  var started_at: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the tool used to generate the code scanning analysis alert.
     */
-  var tool_name: String = js.native
+  var tool_name: String
 }
 object CodeScanningUploadSarifEndpoint {
   

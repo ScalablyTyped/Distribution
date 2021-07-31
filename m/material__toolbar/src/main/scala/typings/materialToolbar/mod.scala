@@ -8,7 +8,6 @@ import typings.materialToolbar.anon.PartialMDCToolbarAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,7 @@ object mod {
   @js.native
   class MDCToolbar protected ()
     extends typings.materialToolbar.componentMod.MDCToolbar {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialToolbar.foundationMod.MDCToolbarFoundation,
@@ -27,9 +26,12 @@ object mod {
   /* static members */
   object MDCToolbar {
     
-    @JSImport("@material/toolbar", "MDCToolbar.attachTo")
+    @JSImport("@material/toolbar", "MDCToolbar")
     @js.native
-    def attachTo(root: Element): typings.materialToolbar.componentMod.MDCToolbar = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialToolbar.componentMod.MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialToolbar.componentMod.MDCToolbar]
   }
   
   @JSImport("@material/toolbar", "MDCToolbarFoundation")

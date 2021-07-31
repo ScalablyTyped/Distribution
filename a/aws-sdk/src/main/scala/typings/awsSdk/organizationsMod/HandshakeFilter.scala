@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandshakeFilter extends StObject {
   
   /**
     * Specifies the type of handshake action. If you specify ActionType, you cannot also specify ParentHandshakeId.
     */
-  var ActionType: js.UndefOr[typings.awsSdk.organizationsMod.ActionType] = js.native
+  var ActionType: js.UndefOr[typings.awsSdk.organizationsMod.ActionType] = js.undefined
   
   /**
     * Specifies the parent handshake. Only used for handshake types that are a child of another type. If you specify ParentHandshakeId, you cannot also specify ActionType. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lowercase letters or digits.
     */
-  var ParentHandshakeId: js.UndefOr[HandshakeId] = js.native
+  var ParentHandshakeId: js.UndefOr[HandshakeId] = js.undefined
 }
 object HandshakeFilter {
   

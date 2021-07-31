@@ -2,66 +2,64 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioCodecSettings extends StObject {
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AAC. The service accepts one of two mutually exclusive groups of AAC settings--VBR and CBR. To select one of these modes, set the value of Bitrate control mode (rateControlMode) to "VBR" or "CBR".  In VBR mode, you control the audio quality with the setting VBR quality (vbrQuality). In CBR mode, you use the setting Bitrate (bitrate). Defaults and valid values depend on the rate control mode.
     */
-  var AacSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AacSettings] = js.native
+  var AacSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AacSettings] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AC3.
     */
-  var Ac3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Ac3Settings] = js.native
+  var Ac3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Ac3Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AIFF.
     */
-  var AiffSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AiffSettings] = js.native
+  var AiffSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AiffSettings] = js.undefined
   
   /**
     * Type of Audio codec.
     */
-  var Codec: js.UndefOr[AudioCodec] = js.native
+  var Codec: js.UndefOr[AudioCodec] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value EAC3_ATMOS.
     */
-  var Eac3AtmosSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.Eac3AtmosSettings] = js.native
+  var Eac3AtmosSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.Eac3AtmosSettings] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value EAC3.
     */
-  var Eac3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Eac3Settings] = js.native
+  var Eac3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Eac3Settings] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value MP2.
     */
-  var Mp2Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp2Settings] = js.native
+  var Mp2Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp2Settings] = js.undefined
   
   /**
     * Required when you set Codec, under AudioDescriptions>CodecSettings, to the value MP3.
     */
-  var Mp3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp3Settings] = js.native
+  var Mp3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp3Settings] = js.undefined
   
   /**
     * Required when you set Codec, under AudioDescriptions>CodecSettings, to the value OPUS.
     */
-  var OpusSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.OpusSettings] = js.native
+  var OpusSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.OpusSettings] = js.undefined
   
   /**
     * Required when you set Codec, under AudioDescriptions>CodecSettings, to the value Vorbis.
     */
-  var VorbisSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.VorbisSettings] = js.native
+  var VorbisSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.VorbisSettings] = js.undefined
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value WAV.
     */
-  var WavSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.WavSettings] = js.native
+  var WavSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.WavSettings] = js.undefined
 }
 object AudioCodecSettings {
   

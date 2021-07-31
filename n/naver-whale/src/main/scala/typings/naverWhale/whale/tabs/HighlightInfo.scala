@@ -2,17 +2,15 @@ package typings.naverWhale.whale.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightInfo extends StObject {
   
   /** One or more tab indices to highlight. */
-  var tabs: Double | js.Array[Double] = js.native
+  var tabs: Double | js.Array[Double]
   
   /** Optional. The window that contains the tabs. */
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 object HighlightInfo {
   

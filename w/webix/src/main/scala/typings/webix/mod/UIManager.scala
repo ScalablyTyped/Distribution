@@ -1,9 +1,9 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,7 +34,7 @@ trait UIManager extends StObject {
   def hasFocus(id: Double): Boolean = js.native
   
   def removeHotKey(key: String): Unit = js.native
-  def removeHotKey(key: String, handler: js.UndefOr[scala.Nothing], obj: js.Any): Unit = js.native
+  def removeHotKey(key: String, handler: Unit, obj: js.Any): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
   
@@ -42,4 +42,9 @@ trait UIManager extends StObject {
   def setFocus(id: Double): Unit = js.native
   
   def setState(state: js.Any): Unit = js.native
+}
+object UIManager {
+  
+  @scala.inline
+  def apply: UIManager = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[UIManager]
 }

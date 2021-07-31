@@ -12,7 +12,7 @@ A simple jQuery Plugin that converts a select into an text field with suggestion
 | Keywords           | jquery, plugin, editable, select, typeahead, suggestion |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18973 |
+| # downloads        | 21133 |
 | # stars            | 1 |
 
 ## Links

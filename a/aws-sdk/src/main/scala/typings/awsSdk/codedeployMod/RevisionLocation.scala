@@ -2,36 +2,34 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionLocation extends StObject {
   
   /**
     *  The content of an AppSpec file for an AWS Lambda or Amazon ECS deployment. The content is formatted as JSON or YAML and stored as a RawString. 
     */
-  var appSpecContent: js.UndefOr[AppSpecContent] = js.native
+  var appSpecContent: js.UndefOr[AppSpecContent] = js.undefined
   
   /**
     * Information about the location of application artifacts stored in GitHub.
     */
-  var gitHubLocation: js.UndefOr[GitHubLocation] = js.native
+  var gitHubLocation: js.UndefOr[GitHubLocation] = js.undefined
   
   /**
     * The type of application revision:   S3: An application revision stored in Amazon S3.   GitHub: An application revision stored in GitHub (EC2/On-premises deployments only).   String: A YAML-formatted or JSON-formatted string (AWS Lambda deployments only).   AppSpecContent: An AppSpecContent object that contains the contents of an AppSpec file for an AWS Lambda or Amazon ECS deployment. The content is formatted as JSON or YAML stored as a RawString.  
     */
-  var revisionType: js.UndefOr[RevisionLocationType] = js.native
+  var revisionType: js.UndefOr[RevisionLocationType] = js.undefined
   
   /**
     * Information about the location of a revision stored in Amazon S3. 
     */
-  var s3Location: js.UndefOr[S3Location] = js.native
+  var s3Location: js.UndefOr[S3Location] = js.undefined
   
   /**
     * Information about the location of an AWS Lambda deployment revision stored as a RawString.
     */
-  var string: js.UndefOr[RawString] = js.native
+  var string: js.UndefOr[RawString] = js.undefined
 }
 object RevisionLocation {
   

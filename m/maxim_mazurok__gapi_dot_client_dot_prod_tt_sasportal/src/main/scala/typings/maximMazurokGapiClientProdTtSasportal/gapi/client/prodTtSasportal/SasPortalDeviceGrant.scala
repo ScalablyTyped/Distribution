@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalDeviceGrant extends StObject {
   
   /** Type of channel used. */
-  var channelType: js.UndefOr[String] = js.native
+  var channelType: js.UndefOr[String] = js.undefined
   
   /** The expiration time of the grant. */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** The transmission frequency range. */
-  var frequencyRange: js.UndefOr[SasPortalFrequencyRange] = js.native
+  var frequencyRange: js.UndefOr[SasPortalFrequencyRange] = js.undefined
   
   /** Grant Id. */
-  var grantId: js.UndefOr[String] = js.native
+  var grantId: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum Equivalent Isotropically Radiated Power (EIRP) permitted by the grant. The maximum EIRP is in units of dBm/MHz. The value of maxEirp represents the average (RMS) EIRP that
     * would be measured by the procedure defined in FCC part 96.41(e)(3).
     */
-  var maxEirp: js.UndefOr[Double] = js.native
+  var maxEirp: js.UndefOr[Double] = js.undefined
   
   /** The DPA move lists on which this grant appears. */
-  var moveList: js.UndefOr[js.Array[SasPortalDpaMoveList]] = js.native
+  var moveList: js.UndefOr[js.Array[SasPortalDpaMoveList]] = js.undefined
   
   /** State of the grant. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** If the grant is suspended, the reason(s) for suspension. */
-  var suspensionReason: js.UndefOr[js.Array[String]] = js.native
+  var suspensionReason: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SasPortalDeviceGrant {
   

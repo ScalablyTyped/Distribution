@@ -4,15 +4,13 @@ import typings.d3pie.d3pieStrings.default
 import typings.d3pie.d3pieStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Effect extends StObject {
   
-  var effect: js.UndefOr[none | default] = js.native
+  var effect: js.UndefOr[none | default] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object Effect {
   

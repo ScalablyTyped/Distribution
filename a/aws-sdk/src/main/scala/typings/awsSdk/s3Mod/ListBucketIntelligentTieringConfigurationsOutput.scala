@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketIntelligentTieringConfigurationsOutput extends StObject {
   
   /**
     * The ContinuationToken that represents a placeholder from where this request should begin.
     */
-  var ContinuationToken: js.UndefOr[Token] = js.native
+  var ContinuationToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The list of S3 Intelligent-Tiering configurations for a bucket.
     */
-  var IntelligentTieringConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.IntelligentTieringConfigurationList] = js.native
+  var IntelligentTieringConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.IntelligentTieringConfigurationList] = js.undefined
   
   /**
     * Indicates whether the returned list of analytics configurations is complete. A value of true indicates that the list is not complete and the NextContinuationToken will be provided for a subsequent request.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * The marker used to continue this inventory configuration listing. Use the NextContinuationToken from this response to continue the listing in a subsequent request. The continuation token is an opaque value that Amazon S3 understands.
     */
-  var NextContinuationToken: js.UndefOr[NextToken] = js.native
+  var NextContinuationToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBucketIntelligentTieringConfigurationsOutput {
   

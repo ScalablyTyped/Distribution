@@ -5,18 +5,16 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** converts between text and token representations of formulas. */
-@js.native
 trait XFormulaParser extends StObject {
   
   /** parses a formula into a sequence of tokens. */
-  def parseFormula(aFormula: String, aReferencePos: CellAddress): SafeArray[FormulaToken] = js.native
+  def parseFormula(aFormula: String, aReferencePos: CellAddress): SafeArray[FormulaToken]
   
   /** converts a formula into a string. */
-  def printFormula(aTokens: SeqEquiv[FormulaToken], aReferencePos: CellAddress): String = js.native
+  def printFormula(aTokens: SeqEquiv[FormulaToken], aReferencePos: CellAddress): String
 }
 object XFormulaParser {
   

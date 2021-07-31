@@ -2,36 +2,34 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNamespaceResponse extends StObject {
   
   /**
     * The ARN of the namespace.
     */
-  var namespaceArn: js.UndefOr[Arn] = js.native
+  var namespaceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the namespace.
     */
-  var namespaceName: js.UndefOr[NamespaceName] = js.native
+  var namespaceName: js.UndefOr[NamespaceName] = js.undefined
   
   /**
     * The version of the user's namespace to describe.
     */
-  var namespaceVersion: js.UndefOr[Version] = js.native
+  var namespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The name of the public namespace that the latest namespace version is tracking.
     */
-  var trackingNamespaceName: js.UndefOr[NamespaceName] = js.native
+  var trackingNamespaceName: js.UndefOr[NamespaceName] = js.undefined
   
   /**
     * The version of the public namespace that the latest version is tracking.
     */
-  var trackingNamespaceVersion: js.UndefOr[Version] = js.native
+  var trackingNamespaceVersion: js.UndefOr[Version] = js.undefined
 }
 object DescribeNamespaceResponse {
   

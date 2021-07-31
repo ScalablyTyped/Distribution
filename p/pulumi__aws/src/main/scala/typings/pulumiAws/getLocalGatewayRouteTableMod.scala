@@ -5,54 +5,52 @@ import typings.pulumiAws.inputMod.ec2.GetLocalGatewayRouteTableFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalGatewayRouteTableMod {
   
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTable", "getLocalGatewayRouteTable")
+  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTable", JSImport.Namespace)
   @js.native
-  def getLocalGatewayRouteTable(): js.Promise[GetLocalGatewayRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTable", "getLocalGatewayRouteTable")
-  @js.native
-  def getLocalGatewayRouteTable(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTable", "getLocalGatewayRouteTable")
-  @js.native
-  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs): js.Promise[GetLocalGatewayRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTable", "getLocalGatewayRouteTable")
-  @js.native
-  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalGatewayRouteTable(): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")().asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  @scala.inline
+  def getLocalGatewayRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  @scala.inline
+  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  @scala.inline
+  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  
   trait GetLocalGatewayRouteTableArgs extends StObject {
     
-    val filters: js.UndefOr[js.Array[GetLocalGatewayRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLocalGatewayRouteTableFilter]] = js.undefined
     
     /**
       * The id of the specific local gateway route table to retrieve.
       */
-    val localGatewayId: js.UndefOr[String] = js.native
+    val localGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * Local Gateway Route Table Id assigned to desired local gateway route table
       */
-    val localGatewayRouteTableId: js.UndefOr[String] = js.native
+    val localGatewayRouteTableId: js.UndefOr[String] = js.undefined
     
     /**
       * The arn of the Outpost the local gateway route table is associated with.
       */
-    val outpostArn: js.UndefOr[String] = js.native
+    val outpostArn: js.UndefOr[String] = js.undefined
     
     /**
       * The state of the local gateway route table.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired local gateway route table.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLocalGatewayRouteTableArgs {
     
@@ -106,25 +104,24 @@ object getLocalGatewayRouteTableMod {
     }
   }
   
-  @js.native
   trait GetLocalGatewayRouteTableResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val localGatewayId: String = js.native
+    val localGatewayId: String
     
-    val localGatewayRouteTableId: String = js.native
+    val localGatewayRouteTableId: String
     
-    val outpostArn: String = js.native
+    val outpostArn: String
     
-    val state: String = js.native
+    val state: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLocalGatewayRouteTableResult {
     

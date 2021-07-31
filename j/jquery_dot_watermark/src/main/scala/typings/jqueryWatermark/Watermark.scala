@@ -2,21 +2,19 @@ package typings.jqueryWatermark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Watermark extends StObject {
   
-  def hide(element: String): Unit = js.native
+  def hide(element: String): Unit
   
-  def hideAll(): Unit = js.native
+  def hideAll(): Unit
   
-  var options: WatermarkOptions = js.native
+  var options: WatermarkOptions
   
-  def show(element: String): Unit = js.native
+  def show(element: String): Unit
   
-  def showAll(): Unit = js.native
+  def showAll(): Unit
 }
 object Watermark {
   

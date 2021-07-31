@@ -5,7 +5,6 @@ import typings.antdMobile.cardPropsTypeMod.CardFooterPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardFooterMod {
@@ -31,12 +30,13 @@ object cardFooterMod {
   trait CardFooter
     extends Component[CardFooterProps, js.Any, js.Any]
   
-  @js.native
-  trait CardFooterProps extends CardFooterPropsType {
+  trait CardFooterProps
+    extends StObject
+       with CardFooterPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object CardFooterProps {
     

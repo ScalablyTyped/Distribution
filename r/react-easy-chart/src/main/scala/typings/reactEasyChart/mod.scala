@@ -28,7 +28,6 @@ import typings.std.Date
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -105,11 +104,12 @@ object mod {
     def this(props: ScatterplotChartProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait AreaChartProps extends LineChartProps {
+  trait AreaChartProps
+    extends StObject
+       with LineChartProps {
     
     /** Make the gradient area a solid fill rather than a gradient */
-    var noAreaGradient: js.UndefOr[Boolean] = js.native
+    var noAreaGradient: js.UndefOr[Boolean] = js.undefined
   }
   object AreaChartProps {
     
@@ -130,74 +130,73 @@ object mod {
     }
   }
   
-  @js.native
   trait BarChartProps extends StObject {
     
     /** Whether to show axis labels */
-    var axes: js.UndefOr[Boolean] = js.native
+    var axes: js.UndefOr[Boolean] = js.undefined
     
     /** Labels for each of the axis */
-    var axisLabels: js.UndefOr[X] = js.native
+    var axisLabels: js.UndefOr[X] = js.undefined
     
     /** The width of an individual bar in pixels */
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** Whether to automatically color the bars */
-    var colorBars: js.UndefOr[Boolean] = js.native
+    var colorBars: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.Array[BarData] = js.native
+    var data: js.Array[BarData]
     
     /** A d3 time formatting pattern to be applied to format the x axis values */
-    var datePattern: js.UndefOr[String] = js.native
+    var datePattern: js.UndefOr[String] = js.undefined
     
     /** Whether to show horizontal grid lines on the chart */
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
     /** Height of the chart in pixels */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Interpolation method if you add a line to this chart (via lineData) */
-    var interpolate: js.UndefOr[String] = js.native
+    var interpolate: js.UndefOr[String] = js.undefined
     
-    var lineData: js.UndefOr[js.Array[LineData]] = js.native
+    var lineData: js.UndefOr[js.Array[LineData]] = js.undefined
     
     /** css margins */
-    var margin: js.UndefOr[Bottom] = js.native
+    var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** The d3 time format to be used for the x axis (when xType is 'time') */
-    var tickTimeDisplayFormat: js.UndefOr[String] = js.native
+    var tickTimeDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** Width of the chart in pixels */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /** The amount of ticks to be shown on the x axis */
-    var xTickNumber: js.UndefOr[Double] = js.native
+    var xTickNumber: js.UndefOr[Double] = js.undefined
     
     /** What data type the x axis is */
-    var xType: js.UndefOr[time | text | linear] = js.native
+    var xType: js.UndefOr[time | text | linear] = js.undefined
     
     /** What data type the second y axis is */
-    var y2Type: js.UndefOr[time | text | linear] = js.native
+    var y2Type: js.UndefOr[time | text | linear] = js.undefined
     
     /** Whether to show the axis on the right (default false: left) */
-    var yAxisOrientRight: js.UndefOr[Boolean] = js.native
+    var yAxisOrientRight: js.UndefOr[Boolean] = js.undefined
     
     /** The range that the y axis should show (otherwise automatically calculated) */
-    var yDomainRange: js.UndefOr[js.Array[Double]] = js.native
+    var yDomainRange: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** The amount of ticks to be shown on the y axis */
-    var yTickNumber: js.UndefOr[Double] = js.native
+    var yTickNumber: js.UndefOr[Double] = js.undefined
   }
   object BarChartProps {
     
@@ -229,7 +228,7 @@ object mod {
       def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
       
       @scala.inline
-      def setClickHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      def setClickHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
@@ -286,19 +285,19 @@ object mod {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setMouseMoveHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      def setMouseMoveHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
       @scala.inline
-      def setMouseOutHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      def setMouseOutHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
       @scala.inline
-      def setMouseOverHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      def setMouseOverHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
@@ -365,14 +364,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BarData extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var x: Double | Date | String = js.native
+    var x: Double | Date | String
     
-    var y: Double = js.native
+    var y: Double
   }
   object BarData {
     
@@ -399,26 +397,25 @@ object mod {
     }
   }
   
-  @js.native
   trait LegendProps extends StObject {
     
     /** Override the color of the items */
-    var config: js.UndefOr[js.Array[ColorString]] = js.native
+    var config: js.UndefOr[js.Array[ColorString]] = js.undefined
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var dataId: String = js.native
+    var dataId: String
     
     /** change list items to inline-block (default block) */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** Override the css styles of individual components, see http://rma-consulting.github.io/react-easy-chart/legend/index.html */
-    var styles: js.UndefOr[StringDictionary[CSSProperties]] = js.native
+    var styles: js.UndefOr[StringDictionary[CSSProperties]] = js.undefined
   }
   object LegendProps {
     
     @scala.inline
-    def apply(data: js.Array[_], dataId: String): LegendProps = {
+    def apply(data: js.Array[js.Any], dataId: String): LegendProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataId = dataId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegendProps]
     }
@@ -436,7 +433,7 @@ object mod {
       def setConfigVarargs(value: ColorString*): Self = StObject.set(x, "config", js.Array(value :_*))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataId(value: String): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
@@ -458,73 +455,72 @@ object mod {
     }
   }
   
-  @js.native
   trait LineChartProps extends StObject {
     
     /** Whether to show axis labels */
-    var axes: js.UndefOr[Boolean] = js.native
+    var axes: js.UndefOr[Boolean] = js.undefined
     
     /** Labels for each of the axis */
-    var axisLabels: js.UndefOr[Y] = js.native
+    var axisLabels: js.UndefOr[Y] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var data: js.Array[js.Array[LineData]] = js.native
+    var data: js.Array[js.Array[LineData]]
     
     /** Whether to show circles on the data points */
-    var dataPoints: js.UndefOr[Boolean] = js.native
+    var dataPoints: js.UndefOr[Boolean] = js.undefined
     
     /** Whether to show horizontal grid lines on the chart */
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
     /** Height of the chart in pixels */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Smoothing option for the lines */
     var interpolate: js.UndefOr[
         linear | `linear-closed` | step | `step-before` | `step-after` | basis | `basis-open` | `basis-closed` | bundle | cardinal | `cardinal-open` | `cardinal-closed` | monotone
-      ] = js.native
+      ] = js.undefined
     
-    var lineColors: js.UndefOr[js.Array[String]] = js.native
+    var lineColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** css margins */
-    var margin: js.UndefOr[Bottom] = js.native
+    var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** The d3 time format to be used for the x axis (when xType is 'time') */
-    var tickTimeDisplayFormat: js.UndefOr[String] = js.native
+    var tickTimeDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** Whether to show vertical grid lines on the chart */
-    var verticalGrid: js.UndefOr[Boolean] = js.native
+    var verticalGrid: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the chart in pixels */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /** The amount of ticks to be shown on the x axis */
-    var xTicks: js.UndefOr[Double] = js.native
+    var xTicks: js.UndefOr[Double] = js.undefined
     
     /** What data type the x axis is */
-    var xType: js.UndefOr[time | text | linear] = js.native
+    var xType: js.UndefOr[time | text | linear] = js.undefined
     
     /** Whether to show the axis on the right (default false: left) */
-    var yAxisOrientRight: js.UndefOr[Boolean] = js.native
+    var yAxisOrientRight: js.UndefOr[Boolean] = js.undefined
     
     /** The range that the y axis should show (otherwise automatically calculated) */
-    var yDomainRange: js.UndefOr[js.Array[Double | String]] = js.native
+    var yDomainRange: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     /** The amount of ticks to be shown on the y axis */
-    var yTicks: js.UndefOr[Double] = js.native
+    var yTicks: js.UndefOr[Double] = js.undefined
     
     /** What data type the x axis is */
-    var yType: js.UndefOr[time | text | linear] = js.native
+    var yType: js.UndefOr[time | text | linear] = js.undefined
   }
   object LineChartProps {
     
@@ -550,7 +546,7 @@ object mod {
       def setAxisLabelsUndefined: Self = StObject.set(x, "axisLabels", js.undefined)
       
       @scala.inline
-      def setClickHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      def setClickHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
@@ -603,19 +599,19 @@ object mod {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setMouseMoveHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      def setMouseMoveHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
       @scala.inline
-      def setMouseOutHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      def setMouseOutHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
       @scala.inline
-      def setMouseOverHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      def setMouseOverHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
@@ -688,12 +684,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LineData extends StObject {
     
-    var x: Double | Date | String = js.native
+    var x: Double | Date | String
     
-    var y: Double | Date | String = js.native
+    var y: Double | Date | String
   }
   object LineData {
     
@@ -714,32 +709,31 @@ object mod {
     }
   }
   
-  @js.native
   trait PieChartProps extends StObject {
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var data: js.Array[Color] = js.native
+    var data: js.Array[Color]
     
     /** Size in pixels of the inner hole (diameter) */
-    var innerHoleSize: js.UndefOr[Double] = js.native
+    var innerHoleSize: js.UndefOr[Double] = js.undefined
     
     /** Whether to add labels the to pie segments */
-    var labels: js.UndefOr[Boolean] = js.native
+    var labels: js.UndefOr[Boolean] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** Padding around the chart in pixels */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /** Size in pixels in each dimension */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var styles: js.UndefOr[StringDictionary[CSSProperties]] = js.native
+    var styles: js.UndefOr[StringDictionary[CSSProperties]] = js.undefined
   }
   object PieChartProps {
     
@@ -753,7 +747,7 @@ object mod {
     implicit class PieChartPropsMutableBuilder[Self <: PieChartProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setClickHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      def setClickHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
@@ -777,19 +771,19 @@ object mod {
       def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
       @scala.inline
-      def setMouseMoveHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      def setMouseMoveHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
       @scala.inline
-      def setMouseOutHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      def setMouseOutHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
       @scala.inline
-      def setMouseOverHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      def setMouseOverHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
@@ -814,14 +808,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PieData extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object PieData {
     
@@ -848,60 +841,59 @@ object mod {
     }
   }
   
-  @js.native
   trait ScatterplotChartProps extends StObject {
     
     /** Whether to show axis labels */
-    var axes: js.UndefOr[Boolean] = js.native
+    var axes: js.UndefOr[Boolean] = js.undefined
     
     /** Labels for each of the axis */
-    var axisLabels: js.UndefOr[Y] = js.native
+    var axisLabels: js.UndefOr[Y] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var clickHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** Allows styling of individual types of points */
-    var config: js.UndefOr[js.Array[Stroke]] = js.native
+    var config: js.UndefOr[js.Array[Stroke]] = js.undefined
     
-    var data: js.Array[ScatterplotData] = js.native
+    var data: js.Array[ScatterplotData]
     
     /** Radius of the dots on the chart */
-    var dotRadius: js.UndefOr[Double] = js.native
+    var dotRadius: js.UndefOr[Double] = js.undefined
     
     /** Whether to show horizontal grid lines on the chart */
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
     /** Height of the chart in pixels */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** css margins */
-    var margin: js.UndefOr[Bottom] = js.native
+    var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, _]] = js.native
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
     
     /** Whether to show vertical grid lines on the chart */
-    var verticalGrid: js.UndefOr[Boolean] = js.native
+    var verticalGrid: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the chart in pixels */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /** What data type the x axis is */
-    var xType: js.UndefOr[time | text | linear] = js.native
+    var xType: js.UndefOr[time | text | linear] = js.undefined
     
     /** Whether to show the axis on the right (default false: left) */
-    var yAxisOrientRight: js.UndefOr[Boolean] = js.native
+    var yAxisOrientRight: js.UndefOr[Boolean] = js.undefined
     
     /** The range that the y axis should show (otherwise automatically calculated) */
-    var yDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var yDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /** What data type the x axis is */
-    var yType: js.UndefOr[time | text | linear] = js.native
+    var yType: js.UndefOr[time | text | linear] = js.undefined
   }
   object ScatterplotChartProps {
     
@@ -927,7 +919,7 @@ object mod {
       def setAxisLabelsUndefined: Self = StObject.set(x, "axisLabels", js.undefined)
       
       @scala.inline
-      def setClickHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      def setClickHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
@@ -972,19 +964,19 @@ object mod {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setMouseMoveHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      def setMouseMoveHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
       @scala.inline
-      def setMouseOutHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      def setMouseOutHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
       @scala.inline
-      def setMouseOverHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => _): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      def setMouseOverHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
@@ -1039,16 +1031,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ScatterplotData extends StObject {
     
-    var `type`: String | Double = js.native
+    var `type`: String | Double
     
-    var x: Double | Date | String = js.native
+    var x: Double | Date | String
     
-    var y: Double | Date | String = js.native
+    var y: Double | Date | String
     
-    var z: js.UndefOr[Double] = js.native
+    var z: js.UndefOr[Double] = js.undefined
   }
   object ScatterplotData {
     

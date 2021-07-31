@@ -3,19 +3,17 @@ package typings.layuiSrc.layui
 import typings.layuiSrc.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditOption extends StObject {
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hideTool: js.UndefOr[js.Array[String]] = js.native
+  var hideTool: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tool: js.UndefOr[js.Array[String]] = js.native
+  var tool: js.UndefOr[js.Array[String]] = js.undefined
   
-  var uploadImage: js.UndefOr[Type] = js.native
+  var uploadImage: js.UndefOr[Type] = js.undefined
 }
 object EditOption {
   

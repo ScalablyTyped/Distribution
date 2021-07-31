@@ -2,31 +2,29 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLoadBalancerPolicyInput extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The policy attributes.
     */
-  var PolicyAttributes: js.UndefOr[typings.awsSdk.elbMod.PolicyAttributes] = js.native
+  var PolicyAttributes: js.UndefOr[typings.awsSdk.elbMod.PolicyAttributes] = js.undefined
   
   /**
     * The name of the load balancer policy to be created. This name must be unique within the set of policies for this load balancer.
     */
-  var PolicyName: typings.awsSdk.elbMod.PolicyName = js.native
+  var PolicyName: typings.awsSdk.elbMod.PolicyName
   
   /**
     * The name of the base policy type. To get the list of policy types, use DescribeLoadBalancerPolicyTypes.
     */
-  var PolicyTypeName: typings.awsSdk.elbMod.PolicyTypeName = js.native
+  var PolicyTypeName: typings.awsSdk.elbMod.PolicyTypeName
 }
 object CreateLoadBalancerPolicyInput {
   

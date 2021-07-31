@@ -5,23 +5,23 @@ import typings.twitterForWeb.twitterForWebStrings.list
 import typings.twitterForWeb.twitterForWebStrings.profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Id extends TwitterTimelineWidgetListDataSource {
+  trait Id
+    extends StObject
+       with TwitterTimelineWidgetListDataSource {
     
-    var id: String = js.native
+    var id: String
     
-    var sourceType: list = js.native
+    var sourceType: list
   }
   object Id {
     
     @scala.inline
-    def apply(id: String, sourceType: list): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    def apply(id: String): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "list")
       __obj.asInstanceOf[Id]
     }
     
@@ -36,20 +36,21 @@ object anon {
     }
   }
   
-  @js.native
-  trait OwnerScreenName extends TwitterTimelineWidgetListDataSource {
+  trait OwnerScreenName
+    extends StObject
+       with TwitterTimelineWidgetListDataSource {
     
-    var ownerScreenName: String = js.native
+    var ownerScreenName: String
     
-    var slug: String = js.native
+    var slug: String
     
-    var sourceType: list = js.native
+    var sourceType: list
   }
   object OwnerScreenName {
     
     @scala.inline
-    def apply(ownerScreenName: String, slug: String, sourceType: list): OwnerScreenName = {
-      val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    def apply(ownerScreenName: String, slug: String): OwnerScreenName = {
+      val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = "list")
       __obj.asInstanceOf[OwnerScreenName]
     }
     
@@ -67,18 +68,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait ScreenName extends TwitterTimelineWidgetProfileDataSource {
+  trait ScreenName
+    extends StObject
+       with TwitterTimelineWidgetProfileDataSource {
     
-    var screenName: String = js.native
+    var screenName: String
     
-    var sourceType: profile = js.native
+    var sourceType: profile
   }
   object ScreenName {
     
     @scala.inline
-    def apply(screenName: String, sourceType: profile): ScreenName = {
-      val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    def apply(screenName: String): ScreenName = {
+      val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "profile")
       __obj.asInstanceOf[ScreenName]
     }
     
@@ -93,18 +95,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait ScreenNameSourceType extends TwitterTimelineWidgetLikesDataSource {
+  trait ScreenNameSourceType
+    extends StObject
+       with TwitterTimelineWidgetLikesDataSource {
     
-    var screenName: String = js.native
+    var screenName: String
     
-    var sourceType: likes = js.native
+    var sourceType: likes
   }
   object ScreenNameSourceType {
     
     @scala.inline
-    def apply(screenName: String, sourceType: likes): ScreenNameSourceType = {
-      val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    def apply(screenName: String): ScreenNameSourceType = {
+      val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "likes")
       __obj.asInstanceOf[ScreenNameSourceType]
     }
     
@@ -119,18 +122,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait SourceType extends TwitterTimelineWidgetProfileDataSource {
+  trait SourceType
+    extends StObject
+       with TwitterTimelineWidgetProfileDataSource {
     
-    var sourceType: profile = js.native
+    var sourceType: profile
     
-    var userId: String = js.native
+    var userId: String
   }
   object SourceType {
     
     @scala.inline
-    def apply(sourceType: profile, userId: String): SourceType = {
-      val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    def apply(userId: String): SourceType = {
+      val __obj = js.Dynamic.literal(sourceType = "profile", userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceType]
     }
     
@@ -145,18 +149,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait UserId extends TwitterTimelineWidgetLikesDataSource {
+  trait UserId
+    extends StObject
+       with TwitterTimelineWidgetLikesDataSource {
     
-    var sourceType: likes = js.native
+    var sourceType: likes
     
-    var userId: String = js.native
+    var userId: String
   }
   object UserId {
     
     @scala.inline
-    def apply(sourceType: likes, userId: String): UserId = {
-      val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    def apply(userId: String): UserId = {
+      val __obj = js.Dynamic.literal(sourceType = "likes", userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserId]
     }
     

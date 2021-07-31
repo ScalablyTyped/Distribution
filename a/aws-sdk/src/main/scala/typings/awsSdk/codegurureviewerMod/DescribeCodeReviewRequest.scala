@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCodeReviewRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
-  var CodeReviewArn: Arn = js.native
+  var CodeReviewArn: Arn
 }
 object DescribeCodeReviewRequest {
   

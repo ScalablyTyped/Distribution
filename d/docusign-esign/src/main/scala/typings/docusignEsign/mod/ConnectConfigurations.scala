@@ -2,43 +2,41 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectConfigurations extends StObject {
   
   /**
     * When set to **true**, the tracked envelope and recipient events for all users, including users that are added a later time, are sent through Connect.
     */
-  var allUsers: js.UndefOr[String] = js.native
+  var allUsers: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, data is sent to the urlToPublishTo web address. This option can be set to false to stop sending data while maintaining the Connect configuration information.
     */
-  var allowEnvelopePublish: js.UndefOr[String] = js.native
+  var allowEnvelopePublish: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**  (default), DocuSign sends data to the designated Salesforce account through Connect.
     */
-  var allowSalesforcePublish: js.UndefOr[String] = js.native
+  var allowSalesforcePublish: js.UndefOr[String] = js.undefined
   
   /**
     * If you are using merge fields, this property specifies the type of the merge field. The only supported value is `salesforce`.
     */
-  var configurationType: js.UndefOr[String] = js.native
+  var configurationType: js.UndefOr[String] = js.undefined
   
   /**
     * The DocuSign-generated ID for the Connect configuration. This property is read only.
     */
-  var connectId: js.UndefOr[String] = js.native
+  var connectId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect logging is turned on. We recommend that you enable this functionality, which helps you troubleshoot any issues.
     *
     * You can have a maximum of 100 active logs in your account. You can view the entries in active logs in the **Logs** tab in the console.
     */
-  var enableLog: js.UndefOr[String] = js.native
+  var enableLog: js.UndefOr[String] = js.undefined
   
   /**
     * An array of strings that lists envelope-related events to track through Connect. The possible event values are:
@@ -58,35 +56,35 @@ trait ConnectConfigurations extends StObject {
     * **Note**: In previous versions of the API, this value was a single comma-separated string.
     *
     */
-  var envelopeEvents: js.UndefOr[js.Array[String]] = js.native
+  var envelopeEvents: js.UndefOr[js.Array[String]] = js.undefined
   
-  var eventData: js.UndefOr[ConnectEventData] = js.native
+  var eventData: js.UndefOr[ConnectEventData] = js.undefined
   
   /**
     * The id of an external folder.
     */
-  var externalFolderId: js.UndefOr[String] = js.native
+  var externalFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * The label for an external folder.
     */
-  var externalFolderLabel: js.UndefOr[String] = js.native
+  var externalFolderLabel: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, a certificate for a SOAP header is included in messages sent through Connect.
     */
-  var includeCertSoapHeader: js.UndefOr[String] = js.native
+  var includeCertSoapHeader: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the Connect Service includes the Certificate of Completion with completed envelopes.
     */
-  var includeCertificateOfCompletion: js.UndefOr[String] = js.native
+  var includeCertificateOfCompletion: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the Document Fields associated with the envelope's documents are included in the notification messages.
     * Document Fields are optional custom name-value pairs added to documents using the API.
     */
-  var includeDocumentFields: js.UndefOr[String] = js.native
+  var includeDocumentFields: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect attaches the envelope documents to the XML payloads of your event notification messages.
@@ -95,38 +93,38 @@ trait ConnectConfigurations extends StObject {
     * which are larger than binary document data. This can significantly increase your payload size, opening up windows for failure. If you include documents,
     * you must build your application to scale in these situations.
     */
-  var includeDocuments: js.UndefOr[String] = js.native
+  var includeDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect will include the voidedReason for voided envelopes.
     */
-  var includeEnvelopeVoidReason: js.UndefOr[String] = js.native
+  var includeEnvelopeVoidReason: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, a Hash-based Message Authentication Code (HMAC) signature is included in messages sent through Connect.
     * For more information, see [Using HMAC Security with DocuSign Connect](https://developers.docusign.com/esign-rest-api/guides/connect-hmac).
     */
-  var includeHMAC: js.UndefOr[String] = js.native
+  var includeHMAC: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect will include the sender account as Custom Field in the data.
     */
-  var includeSenderAccountasCustomField: js.UndefOr[String] = js.native
+  var includeSenderAccountasCustomField: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect will include the envelope time zone information.
     */
-  var includeTimeZoneInformation: js.UndefOr[String] = js.native
+  var includeTimeZoneInformation: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Connect configuration. The name helps identify the configuration in the list.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * An array of strings that lists of recipient-related events that trigger a notification
@@ -144,12 +142,12 @@ trait ConnectConfigurations extends StObject {
     * **Note**: In previous versions of the API, this value was a single comma-separated string.
     *
     */
-  var recipientEvents: js.UndefOr[js.Array[String]] = js.native
+  var recipientEvents: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When set to **true**, [Mutual TLS](https://developers.docusign.com/esign-rest-api/guides/mutual-tls-intro) authentication is enabled.
     */
-  var requireMutualTls: js.UndefOr[String] = js.native
+  var requireMutualTls: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, event delivery acknowledgements are enabled for your Connect configuration.
@@ -185,57 +183,57 @@ trait ConnectConfigurations extends StObject {
     *
     *
     */
-  var requiresAcknowledgement: js.UndefOr[String] = js.native
+  var requiresAcknowledgement: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the Salesforce API that you are using.
     */
-  var salesforceApiVersion: js.UndefOr[String] = js.native
+  var salesforceApiVersion: js.UndefOr[String] = js.undefined
   
-  var salesforceAuthcode: js.UndefOr[String] = js.native
+  var salesforceAuthcode: js.UndefOr[String] = js.undefined
   
-  var salesforceCallBackUrl: js.UndefOr[String] = js.native
+  var salesforceCallBackUrl: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, DocuSign can use documents in your Salesforce account for sending and signing.
     */
-  var salesforceDocumentsAsContentFiles: js.UndefOr[String] = js.native
+  var salesforceDocumentsAsContentFiles: js.UndefOr[String] = js.undefined
   
-  var senderOverride: js.UndefOr[String] = js.native
+  var senderOverride: js.UndefOr[String] = js.undefined
   
   /**
     * This property sets the items that are available for selection when adding or editing Connect objects.
     */
-  var senderSelectableItems: js.UndefOr[js.Array[String]] = js.native
+  var senderSelectableItems: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of Salesforce objects.
     */
-  var sfObjects: js.UndefOr[js.Array[ConnectSalesforceObject]] = js.native
+  var sfObjects: js.UndefOr[js.Array[ConnectSalesforceObject]] = js.undefined
   
   /**
     * When set to **true**, Mutual TLS will be enabled for notifications. Mutual TLS must be initiated by the listener (the customer's web server) during the TLS handshake protocol.
     */
-  var signMessageWithX509Certificate: js.UndefOr[String] = js.native
+  var signMessageWithX509Certificate: js.UndefOr[String] = js.undefined
   
   /**
     * The namespace of the SOAP interface.
     *
     * **Note**: If `useSoapInterface` is set to **true**, you must set this value.
     */
-  var soapNamespace: js.UndefOr[String] = js.native
+  var soapNamespace: js.UndefOr[String] = js.undefined
   
   /**
     * The endpoint to which Connect should send webhook notification messages via an HTTPS POST request. The URL must start with `https`.
     * The customer's web server must use an SSL/TLS certificate whose CA is in the Microsoft list of trusted CAs. Self-signed certificates are not acceptable,
     * but you can use free certificates from Let's Encrypt.
     */
-  var urlToPublishTo: js.UndefOr[String] = js.native
+  var urlToPublishTo: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the `urlToPublishTo` property contains a SOAP endpoint.
     */
-  var useSoapInterface: js.UndefOr[String] = js.native
+  var useSoapInterface: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of userIds. This sets the users associated with the tracked envelope and recipient events.
@@ -243,12 +241,12 @@ trait ConnectConfigurations extends StObject {
     *
     * ###### Note: If allUsers is set to `false` then you must provide a list of user ids.
     */
-  var userIds: js.UndefOr[js.Array[String]] = js.native
+  var userIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the user.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object ConnectConfigurations {
   

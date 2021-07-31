@@ -3,7 +3,6 @@ package typings.markedjsHtmlDiffer
 import typings.markedjsHtmlDiffer.markedjsHtmlDifferStrings.bem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,17 +19,16 @@ object mod {
     def isEqual(html1: String, html2: String): Boolean = js.native
   }
   
-  @js.native
   trait ChangeObject extends StObject {
     
     /** True if the value was inserted into the new string */
-    val added: js.UndefOr[Boolean] = js.native
+    val added: js.UndefOr[Boolean] = js.undefined
     
     /** True if the value was removed from the old string */
-    val removed: js.UndefOr[Boolean] = js.native
+    val removed: js.UndefOr[Boolean] = js.undefined
     
     /** Text content */
-    val value: js.UndefOr[String] = js.native
+    val value: js.UndefOr[String] = js.undefined
   }
   object ChangeObject {
     
@@ -63,10 +61,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait CustomPreset extends Options {
+  trait CustomPreset
+    extends StObject
+       with Options {
     
-    var preset: Preset = js.native
+    var preset: Preset
   }
   object CustomPreset {
     
@@ -84,7 +83,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -92,19 +90,19 @@ object mod {
       * In cases when the value of the attribute is an invalid JSON or can not be wrapped into a function, it will be compared as undefined.
       * @default []
       */
-    var compareAttributesAsJSON: js.UndefOr[js.Array[_]] = js.native
+    var compareAttributesAsJSON: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Sets what kind of respective attributes' content will be ignored during the comparison:
       * @default []
       */
-    var ignoreAttributes: js.UndefOr[js.Array[String]] = js.native
+    var ignoreAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Makes html-differ ignore HTML comments during the comparison.
       * @default true
       */
-    var ignoreComments: js.UndefOr[Boolean] = js.native
+    var ignoreComments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes html-differ ignore tags' duplicate attributes during the comparison.
@@ -112,19 +110,19 @@ object mod {
       * the attribute which goes the first will be taken for comparison, others will be ignored
       * @default false
       */
-    var ignoreDuplicateAttributes: js.UndefOr[Boolean] = js.native
+    var ignoreDuplicateAttributes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes html-differ ignore end tags during the comparison.
       * @default false
       */
-    var ignoreEndTags: js.UndefOr[Boolean] = js.native
+    var ignoreEndTags: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes html-differ ignore whitespaces (spaces, tabs, new lines etc.) during the comparison.
       * @default true
       */
-    var ignoreWhitespaces: js.UndefOr[Boolean] = js.native
+    var ignoreWhitespaces: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -138,7 +136,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCompareAttributesAsJSON(value: js.Array[_]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
+      def setCompareAttributesAsJSON(value: js.Array[js.Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCompareAttributesAsJSONUndefined: Self = StObject.set(x, "compareAttributesAsJSON", js.undefined)

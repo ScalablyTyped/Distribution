@@ -3,40 +3,40 @@ package typings.stamplayJsSdk
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Stamplay {
   
   @js.native
-  trait Model extends Instantiable0[Model] {
+  trait Model
+    extends StObject
+       with Instantiable0[Model] {
     
-    def destroy(): js.Promise[_] = js.native
+    def destroy(): js.Promise[js.Any] = js.native
     
-    def fetch(id: js.Any): js.Promise[_] = js.native
+    def fetch(id: js.Any): js.Promise[js.Any] = js.native
     
     // This is suspicious, but tests show model instances being constructable...
     def get(property: String): js.Any = js.native
     
-    def save(): js.Promise[_] = js.native
-    def save(arg: js.Any): js.Promise[_] = js.native
+    def save(): js.Promise[js.Any] = js.native
+    def save(arg: js.Any): js.Promise[js.Any] = js.native
     
     def set(property: String, value: js.Any): Unit = js.native
     
-    def signup(arg: js.Any): js.Promise[_] = js.native
+    def signup(arg: js.Any): js.Promise[js.Any] = js.native
     
     def unset(property: String): Unit = js.native
     
     // TODO: Don't know what this is supposed to be.
-    def upVote(): js.Promise[_] = js.native
+    def upVote(): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait StamplayObject extends StObject {
     
-    var Collection: js.Any = js.native
+    var Collection: js.Any
     
-    var Model: typings.stamplayJsSdk.Stamplay.Model = js.native
+    var Model: typings.stamplayJsSdk.Stamplay.Model
   }
   object StamplayObject {
     

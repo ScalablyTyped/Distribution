@@ -5,36 +5,46 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expectCtMod {
   
-  @JSImport("helmet/dist/middlewares/expect-ct", JSImport.Default)
+  @JSImport("helmet/dist/middlewares/expect-ct", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
-  @JSImport("helmet/dist/middlewares/expect-ct", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  @scala.inline
   def default(options: ReadonlyExpectCtOptions): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @js.native
   trait ExpectCtOptions extends StObject {
     
-    var enforce: js.UndefOr[Boolean] = js.native
+    var enforce: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var reportUri: js.UndefOr[String] = js.native
+    var reportUri: js.UndefOr[String] = js.undefined
   }
   object ExpectCtOptions {
     

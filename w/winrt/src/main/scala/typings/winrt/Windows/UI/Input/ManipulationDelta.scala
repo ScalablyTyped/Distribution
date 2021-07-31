@@ -3,19 +3,17 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManipulationDelta extends StObject {
   
-  var expansion: Double = js.native
+  var expansion: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var translation: Point = js.native
+  var translation: Point
 }
 object ManipulationDelta {
   

@@ -4,15 +4,13 @@ import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ORIENTATION extends StObject {
   
-  var horizontal: typings.baseui.baseuiStrings.horizontal = js.native
+  var horizontal: typings.baseui.baseuiStrings.horizontal
   
-  var vertical: typings.baseui.baseuiStrings.vertical = js.native
+  var vertical: typings.baseui.baseuiStrings.vertical
 }
 object ORIENTATION {
   

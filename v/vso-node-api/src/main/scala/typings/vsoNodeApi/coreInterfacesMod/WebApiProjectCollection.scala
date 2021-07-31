@@ -2,21 +2,21 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebApiProjectCollection extends WebApiProjectCollectionRef {
+trait WebApiProjectCollection
+  extends StObject
+     with WebApiProjectCollectionRef {
   
   /**
     * Project collection description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Project collection state
     */
-  var state: String = js.native
+  var state: String
 }
 object WebApiProjectCollection {
   

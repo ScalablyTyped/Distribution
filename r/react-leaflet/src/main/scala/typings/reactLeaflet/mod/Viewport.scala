@@ -2,15 +2,13 @@ package typings.reactLeaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
-  var center: js.UndefOr[(js.Tuple2[Double, Double]) | Null] = js.native
+  var center: js.UndefOr[(js.Tuple2[Double, Double]) | Null] = js.undefined
   
-  var zoom: js.UndefOr[Double | Null] = js.native
+  var zoom: js.UndefOr[Double | Null] = js.undefined
 }
 object Viewport {
   

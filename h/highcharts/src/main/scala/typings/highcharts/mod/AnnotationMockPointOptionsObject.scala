@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationMockPointOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position of the point.
     * Units can be either in axis or chart pixel coordinates.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This number defines which xAxis
@@ -20,13 +18,13 @@ trait AnnotationMockPointOptionsObject extends StObject {
     * of the axis in the xAxis array. If the option is not configured or the
     * axis is not found the point's x coordinate refers to the chart pixels.
     */
-  var xAxis: js.UndefOr[Double | String | Null] = js.native
+  var xAxis: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position of the point.
     * Units can be either in axis or chart pixel coordinates.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This number defines which yAxis
@@ -34,7 +32,7 @@ trait AnnotationMockPointOptionsObject extends StObject {
     * of the axis in the yAxis array. If the option is not configured or the
     * axis is not found the point's y coordinate refers to the chart pixels.
     */
-  var yAxis: js.UndefOr[Double | String | Null] = js.native
+  var yAxis: js.UndefOr[Double | String | Null] = js.undefined
 }
 object AnnotationMockPointOptionsObject {
   

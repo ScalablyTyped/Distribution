@@ -13,7 +13,6 @@ import typings.nodelibFsScandir.settingsMod.default
 import typings.nodelibFsScandir.typesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -27,14 +26,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@nodelib/fs.scandir.@nodelib/fs.scandir.FileSystemAdapter> */
-  @js.native
   trait PartialFileSystemAdapter extends StObject {
     
-    var lstat: js.UndefOr[Typeoflstat] = js.native
+    var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
+    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
     
-    var readdir: js.UndefOr[Typeofreaddir] = js.native
+    var readdir: js.UndefOr[Typeofreaddir] = js.undefined
     
     var readdirSync: js.UndefOr[
         js.Function2[
@@ -42,11 +40,11 @@ object anon {
           /* options */ BaseEncodingOptionswithFiEncoding, 
           js.Array[Dirent]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var stat: js.UndefOr[Typeofstat] = js.native
+    var stat: js.UndefOr[Typeofstat] = js.undefined
     
-    var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
+    var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
   }
   object PartialFileSystemAdapter {
     

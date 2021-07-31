@@ -9,40 +9,77 @@ import typings.nodemailer.sharedMod.Logger
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sendmailTransportMod {
   
   @JSImport("nodemailer/lib/sendmail-transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SendmailTransport {
+  class ^ protected ()
+    extends StObject
+       with SendmailTransport {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    var args: js.Array[String] | `false` = js.native
+    
+    /* CompleteClass */
+    var logger: Logger = js.native
+    
+    /* CompleteClass */
+    @JSName("mailer")
+    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^ = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
+    
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /* CompleteClass */
+    override def send(
+      mail: typings.nodemailer.mailMessageMod.^,
+      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var verify: (js.UndefOr[
+        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
+    
+    /* CompleteClass */
+    var winbreak: Boolean = js.native
   }
   
   type MailOptions = typings.nodemailer.mailerMod.Options
   
-  @js.native
   trait Options
-    extends typings.nodemailer.mailerMod.Options
+    extends StObject
+       with typings.nodemailer.mailerMod.Options
        with TransportOptions {
     
     /** an optional array of command line options to pass to the sendmail command (ie. ["-f", "foo@blurdybloop.com"]). This overrides all default arguments except for ’-i’ and recipient list so you need to make sure you have all required arguments set (ie. the ‘-f’ flag). */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /** either ‘windows’ or ‘unix’ (default). Forces all newlines in the output to either use Windows syntax <CR><LF> or Unix syntax <LF> */
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     /** path to the sendmail command (defaults to ‘sendmail’) */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var sendmail: `true` = js.native
+    var sendmail: `true`
   }
   object Options {
     
     @scala.inline
-    def apply(sendmail: `true`): Options = {
-      val __obj = js.Dynamic.literal(sendmail = sendmail.asInstanceOf[js.Any])
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal(sendmail = true)
       __obj.asInstanceOf[Options]
     }
     
@@ -75,21 +112,22 @@ object sendmailTransportMod {
     }
   }
   
-  @js.native
-  trait SendmailTransport extends Transport {
+  trait SendmailTransport
+    extends StObject
+       with Transport {
     
-    var args: js.Array[String] | `false` = js.native
+    var args: js.Array[String] | `false`
     
-    var logger: Logger = js.native
+    var logger: Logger
     
     @JSName("mailer")
-    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^
     
-    var options: Options = js.native
+    var options: Options
     
-    var path: String = js.native
+    var path: String
     
-    var winbreak: Boolean = js.native
+    var winbreak: Boolean
   }
   object SendmailTransport {
     
@@ -104,7 +142,7 @@ object sendmailTransportMod {
       send: (typings.nodemailer.mailMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]) => Unit,
       verify: (js.UndefOr[
           js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-        ]) with js.UndefOr[js.Function0[js.Promise[`true`]]],
+        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String,
       winbreak: Boolean
     ): SendmailTransport = {
@@ -138,14 +176,13 @@ object sendmailTransportMod {
     }
   }
   
-  @js.native
   trait SentMessageInfo extends StObject {
     
-    var envelope: Envelope = js.native
+    var envelope: Envelope
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var response: String = js.native
+    var response: String
   }
   object SentMessageInfo {
     

@@ -3,42 +3,19 @@ package typings.hostedGitInfo
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("hosted-git-info", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GitHost {
-    def this(`type`: Hosts, user: String, auth: js.UndefOr[scala.Nothing], project: String) = this()
+  class ^ protected ()
+    extends StObject
+       with GitHost {
     def this(`type`: Hosts, user: String, auth: String, project: String) = this()
-    def this(`type`: Hosts, user: String, auth: js.UndefOr[scala.Nothing], project: String, committish: String) = this()
+    def this(`type`: Hosts, user: String, auth: Unit, project: String) = this()
     def this(`type`: Hosts, user: String, auth: String, project: String, committish: String) = this()
-    def this(
-      `type`: Hosts,
-      user: String,
-      auth: js.UndefOr[scala.Nothing],
-      project: String,
-      committish: js.UndefOr[scala.Nothing],
-      defaultRepresentation: Representation
-    ) = this()
-    def this(
-      `type`: Hosts,
-      user: String,
-      auth: js.UndefOr[scala.Nothing],
-      project: String,
-      committish: String,
-      defaultRepresentation: Representation
-    ) = this()
-    def this(
-      `type`: Hosts,
-      user: String,
-      auth: String,
-      project: String,
-      committish: js.UndefOr[scala.Nothing],
-      defaultRepresentation: Representation
-    ) = this()
+    def this(`type`: Hosts, user: String, auth: Unit, project: String, committish: String) = this()
     def this(
       `type`: Hosts,
       user: String,
@@ -50,34 +27,40 @@ object mod {
     def this(
       `type`: Hosts,
       user: String,
-      auth: js.UndefOr[scala.Nothing],
+      auth: String,
       project: String,
-      committish: js.UndefOr[scala.Nothing],
-      defaultRepresentation: js.UndefOr[scala.Nothing],
-      opts: FillOptions
+      committish: Unit,
+      defaultRepresentation: Representation
     ) = this()
     def this(
       `type`: Hosts,
       user: String,
-      auth: js.UndefOr[scala.Nothing],
-      project: String,
-      committish: js.UndefOr[scala.Nothing],
-      defaultRepresentation: Representation,
-      opts: FillOptions
-    ) = this()
-    def this(
-      `type`: Hosts,
-      user: String,
-      auth: js.UndefOr[scala.Nothing],
+      auth: Unit,
       project: String,
       committish: String,
-      defaultRepresentation: js.UndefOr[scala.Nothing],
+      defaultRepresentation: Representation
+    ) = this()
+    def this(
+      `type`: Hosts,
+      user: String,
+      auth: Unit,
+      project: String,
+      committish: Unit,
+      defaultRepresentation: Representation
+    ) = this()
+    def this(
+      `type`: Hosts,
+      user: String,
+      auth: String,
+      project: String,
+      committish: String,
+      defaultRepresentation: Unit,
       opts: FillOptions
     ) = this()
     def this(
       `type`: Hosts,
       user: String,
-      auth: js.UndefOr[scala.Nothing],
+      auth: String,
       project: String,
       committish: String,
       defaultRepresentation: Representation,
@@ -88,8 +71,8 @@ object mod {
       user: String,
       auth: String,
       project: String,
-      committish: js.UndefOr[scala.Nothing],
-      defaultRepresentation: js.UndefOr[scala.Nothing],
+      committish: Unit,
+      defaultRepresentation: Unit,
       opts: FillOptions
     ) = this()
     def this(
@@ -97,49 +80,69 @@ object mod {
       user: String,
       auth: String,
       project: String,
-      committish: js.UndefOr[scala.Nothing],
+      committish: Unit,
       defaultRepresentation: Representation,
       opts: FillOptions
     ) = this()
     def this(
       `type`: Hosts,
       user: String,
-      auth: String,
+      auth: Unit,
       project: String,
       committish: String,
-      defaultRepresentation: js.UndefOr[scala.Nothing],
+      defaultRepresentation: Unit,
       opts: FillOptions
     ) = this()
     def this(
       `type`: Hosts,
       user: String,
-      auth: String,
+      auth: Unit,
       project: String,
       committish: String,
+      defaultRepresentation: Representation,
+      opts: FillOptions
+    ) = this()
+    def this(
+      `type`: Hosts,
+      user: String,
+      auth: Unit,
+      project: String,
+      committish: Unit,
+      defaultRepresentation: Unit,
+      opts: FillOptions
+    ) = this()
+    def this(
+      `type`: Hosts,
+      user: String,
+      auth: Unit,
+      project: String,
+      committish: Unit,
       defaultRepresentation: Representation,
       opts: FillOptions
     ) = this()
   }
+  @JSImport("hosted-git-info", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hosted-git-info", "fromUrl")
-  @js.native
-  def fromUrl(gitUrl: String): js.UndefOr[GitHost] = js.native
-  @JSImport("hosted-git-info", "fromUrl")
-  @js.native
-  def fromUrl(gitUrl: String, opts: Options): js.UndefOr[GitHost] = js.native
+  @scala.inline
+  def fromUrl(gitUrl: String): js.UndefOr[GitHost] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GitHost]]
+  @scala.inline
+  def fromUrl(gitUrl: String, opts: Options): js.UndefOr[GitHost] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[GitHost]]
   
-  @js.native
-  trait FillOptions extends Options {
+  trait FillOptions
+    extends StObject
+       with Options {
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var committish: js.UndefOr[String] = js.native
+    var committish: js.UndefOr[String] = js.undefined
     
-    var fragment: js.UndefOr[String] = js.native
+    var fragment: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var treepath: js.UndefOr[String] = js.native
+    var treepath: js.UndefOr[String] = js.undefined
   }
   object FillOptions {
     
@@ -304,12 +307,11 @@ object mod {
     def gitlab: typings.hostedGitInfo.hostedGitInfoStrings.gitlab = "gitlab".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gitlab]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var noCommittish: js.UndefOr[Boolean] = js.native
+    var noCommittish: js.UndefOr[Boolean] = js.undefined
     
-    var noGitPlus: js.UndefOr[Boolean] = js.native
+    var noGitPlus: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

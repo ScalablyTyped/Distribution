@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.PageAccessibleLandmarkInfo")
 @js.native
 class PageAccessibleLandmarkInfo protected ()
-  extends typings.openui5.sap.m.PageAccessibleLandmarkInfo {
+  extends StObject
+     with typings.openui5.sap.m.PageAccessibleLandmarkInfo {
   /**
     * Constructor for a new <code>sap.m.PageAccessibleLandmarkInfo</code> element.Accepts an object
     * literal <code>mSettings</code> that defines initialproperty values, aggregated and associated

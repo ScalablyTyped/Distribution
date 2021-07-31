@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineConfig extends StObject {
   
   /**
     * A list of Function objects.
     */
-  var functions: js.UndefOr[FunctionsIds] = js.native
+  var functions: js.UndefOr[FunctionsIds] = js.undefined
 }
 object PipelineConfig {
   

@@ -4,14 +4,15 @@ import typings.node.streamMod.Writable
 import typings.stompit.clientMod.SendOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
   
   @JSImport("stompit/lib/client/Transaction", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Transaction {
+  class ^ protected ()
+    extends StObject
+       with Transaction {
     def this(id: Double, client: typings.stompit.clientMod.^) = this()
   }
   
@@ -25,8 +26,8 @@ object transactionMod {
     def commit(options: SendOptions): Unit = js.native
     
     def send(): Writable = js.native
-    def send(headers: js.UndefOr[scala.Nothing], options: SendOptions): Writable = js.native
     def send(headers: js.Any): Writable = js.native
     def send(headers: js.Any, options: SendOptions): Writable = js.native
+    def send(headers: Unit, options: SendOptions): Writable = js.native
   }
 }

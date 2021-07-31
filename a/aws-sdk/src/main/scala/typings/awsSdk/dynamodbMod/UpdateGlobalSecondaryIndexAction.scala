@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGlobalSecondaryIndexAction extends StObject {
   
   /**
     * The name of the global secondary index to be updated.
     */
-  var IndexName: typings.awsSdk.dynamodbMod.IndexName = js.native
+  var IndexName: typings.awsSdk.dynamodbMod.IndexName
   
   /**
     * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Service, Account, and Table Quotas in the Amazon DynamoDB Developer Guide.
     */
-  var ProvisionedThroughput: typings.awsSdk.dynamodbMod.ProvisionedThroughput = js.native
+  var ProvisionedThroughput: typings.awsSdk.dynamodbMod.ProvisionedThroughput
 }
 object UpdateGlobalSecondaryIndexAction {
   

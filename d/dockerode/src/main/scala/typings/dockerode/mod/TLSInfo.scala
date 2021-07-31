@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TLSInfo extends StObject {
   
-  var CertIssuerPublicKey: js.UndefOr[String] = js.native
+  var CertIssuerPublicKey: js.UndefOr[String] = js.undefined
   
-  var CertIssuerSubject: js.UndefOr[String] = js.native
+  var CertIssuerSubject: js.UndefOr[String] = js.undefined
   
-  var TrustRoot: js.UndefOr[String] = js.native
+  var TrustRoot: js.UndefOr[String] = js.undefined
 }
 object TLSInfo {
   

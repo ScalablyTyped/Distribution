@@ -2,61 +2,59 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRobotResponse extends StObject {
   
   /**
     * The target architecture of the robot application.
     */
-  var architecture: js.UndefOr[Architecture] = js.native
+  var architecture: js.UndefOr[Architecture] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the robot.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the robot was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var fleetArn: js.UndefOr[Arn] = js.native
+  var fleetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Greengrass group id.
     */
-  var greengrassGroupId: js.UndefOr[Id] = js.native
+  var greengrassGroupId: js.UndefOr[Id] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the last deployment job.
     */
-  var lastDeploymentJob: js.UndefOr[Arn] = js.native
+  var lastDeploymentJob: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time of the last deployment job.
     */
-  var lastDeploymentTime: js.UndefOr[CreatedAt] = js.native
+  var lastDeploymentTime: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The name of the robot.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the fleet.
     */
-  var status: js.UndefOr[RobotStatus] = js.native
+  var status: js.UndefOr[RobotStatus] = js.undefined
   
   /**
     * The list of all tags added to the specified robot.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeRobotResponse {
   

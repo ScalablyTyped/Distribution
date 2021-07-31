@@ -12,28 +12,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.arcgisJsApi.arcgisJsApiStrings.undo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchViewModelUndoEvent extends StObject {
   
-  var graphics: js.Array[Graphic] = js.native
+  var graphics: js.Array[Graphic]
   
-  var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape = js.native
+  var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
   
-  var `type`: undo = js.native
+  var `type`: undo
 }
 object SketchViewModelUndoEvent {
   
   @scala.inline
   def apply(
     graphics: js.Array[Graphic],
-    tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape,
-    `type`: undo
+    tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
   ): SketchViewModelUndoEvent = {
     val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("undo")
     __obj.asInstanceOf[SketchViewModelUndoEvent]
   }
   

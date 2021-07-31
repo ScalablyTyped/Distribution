@@ -14,66 +14,58 @@ import typings.mobx.observablevalueMod.IValueDidChange
 import typings.mobx.utilsMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observeMod {
   
-  @JSImport("mobx/lib/api/observe", "observe")
+  @JSImport("mobx/lib/api/observe", JSImport.Namespace)
   @js.native
-  def observe(`object`: js.Object, listener: js.Function1[/* change */ IObjectDidChange[_], Unit]): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def observe(`object`: js.Object, listener: js.Function1[/* change */ IObjectDidChange[js.Any], Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(`object`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe(
     `object`: js.Object,
-    listener: js.Function1[/* change */ IObjectDidChange[_], Unit],
+    listener: js.Function1[/* change */ IObjectDidChange[js.Any], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(`object`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T](
     observableArray: IObservableArray[T],
     listener: js.Function1[/* change */ IArrayChange[T] | IArraySplice[T], Unit]
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableArray.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T](
     observableArray: IObservableArray[T],
     listener: js.Function1[/* change */ IArrayChange[T] | IArraySplice[T], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
-  def observe[V](observableMap: ObservableSet[V], listener: js.Function1[/* change */ ISetDidChange[V], Unit]): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableArray.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
+  def observe[V](observableMap: ObservableSet[V], listener: js.Function1[/* change */ ISetDidChange[V], Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[V](
     observableMap: ObservableSet[V],
     listener: js.Function1[/* change */ ISetDidChange[V], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
-  def observe[T](value: IComputedValue[T], listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
+  def observe[T](value: IComputedValue[T], listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T](
     value: IComputedValue[T],
     listener: js.Function1[/* change */ IValueDidChange[T], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
-  def observe[T](value: IObservableValue[T], listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
+  def observe[T](value: IObservableValue[T], listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T](
     value: IObservableValue[T],
     listener: js.Function1[/* change */ IValueDidChange[T], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T, K /* <: /* keyof T */ String */](
     `object`: T,
     property: K,
@@ -83,9 +75,8 @@ object observeMod {
       ], 
       Unit
     ]
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[T, K /* <: /* keyof T */ String */](
     `object`: T,
     property: K,
@@ -96,30 +87,26 @@ object observeMod {
       Unit
     ],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
-  def observe[K, V](observableMap: ObservableMap[K, V], listener: js.Function1[/* change */ IMapDidChange[K, V], Unit]): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
+  def observe[K, V](observableMap: ObservableMap[K, V], listener: js.Function1[/* change */ IMapDidChange[K, V], Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[K, V](
     observableMap: ObservableMap[K, V],
     listener: js.Function1[/* change */ IMapDidChange[K, V], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[K, V](
     observableMap: ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit]
-  ): Lambda = js.native
-  @JSImport("mobx/lib/api/observe", "observe")
-  @js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
   def observe[K, V](
     observableMap: ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit],
     fireImmediately: Boolean
-  ): Lambda = js.native
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
 }

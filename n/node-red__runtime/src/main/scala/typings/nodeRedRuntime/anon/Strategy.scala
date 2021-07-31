@@ -4,24 +4,22 @@ import typings.nodeRedRuntime.mod.UsernamePermissions
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Strategy extends StObject {
   
-  var strategy: Icon = js.native
+  var strategy: Icon
   
-  var `type`: strategy = js.native
+  var `type`: strategy
   
-  var users: js.Array[UsernamePermissions] = js.native
+  var users: js.Array[UsernamePermissions]
 }
 object Strategy {
   
   @scala.inline
-  def apply(strategy: Icon, `type`: strategy, users: js.Array[UsernamePermissions]): Strategy = {
+  def apply(strategy: Icon, users: js.Array[UsernamePermissions]): Strategy = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("strategy")
     __obj.asInstanceOf[Strategy]
   }
   

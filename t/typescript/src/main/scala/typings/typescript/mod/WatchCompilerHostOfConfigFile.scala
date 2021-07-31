@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
-  extends WatchCompilerHost[T]
+  extends StObject
+     with WatchCompilerHost[T]
      with ConfigFileDiagnosticsReporter {
   
   /** Name of the config file to compile */
@@ -28,78 +28,7 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String): js.Array[java.lang.String] = js.native
   @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: js.UndefOr[scala.Nothing], exclude: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(
     path: java.lang.String,
@@ -111,14 +40,6 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
     path: java.lang.String,
     extensions: js.Array[java.lang.String],
     exclude: js.Array[java.lang.String],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  @JSName("readDirectory")
-  def readDirectory_MWatchCompilerHostOfConfigFile(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.Array[java.lang.String],
     include: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   @JSName("readDirectory")
@@ -129,6 +50,74 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
     include: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: js.Array[java.lang.String],
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: Unit, exclude: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: Unit, exclude: Unit, include: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: Unit,
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: Unit, exclude: Unit, include: Unit, depth: Double): js.Array[java.lang.String] = js.native
   
   var watchOptionsToExtend: js.UndefOr[WatchOptions] = js.native
 }

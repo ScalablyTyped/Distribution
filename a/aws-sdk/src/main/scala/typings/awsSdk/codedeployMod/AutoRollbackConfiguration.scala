@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoRollbackConfiguration extends StObject {
   
   /**
     * Indicates whether a defined automatic rollback configuration is currently enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The event type or types that trigger a rollback.
     */
-  var events: js.UndefOr[AutoRollbackEventsList] = js.native
+  var events: js.UndefOr[AutoRollbackEventsList] = js.undefined
 }
 object AutoRollbackConfiguration {
   

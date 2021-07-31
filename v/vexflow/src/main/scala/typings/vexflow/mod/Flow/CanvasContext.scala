@@ -3,13 +3,13 @@ package typings.vexflow.mod.Flow
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.CanvasContext")
 @js.native
 class CanvasContext protected ()
-  extends typings.vexflow.Vex.Flow.CanvasContext {
+  extends StObject
+     with typings.vexflow.Vex.Flow.CanvasContext {
   def this(context: CanvasRenderingContext2D) = this()
 }
 object CanvasContext {

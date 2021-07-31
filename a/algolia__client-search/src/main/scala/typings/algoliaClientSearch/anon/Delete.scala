@@ -4,26 +4,24 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.remove
 import typings.algoliaClientSearch.algoliaClientSearchStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
   /**
     * Text or patterns to remove from the query string.
     */
-  val delete: js.UndefOr[String] = js.native
+  val delete: js.UndefOr[String] = js.undefined
   
   /**
     * Text that should be inserted in place of the removed text inside the query string.
     */
-  val insert: js.UndefOr[String] = js.native
+  val insert: js.UndefOr[String] = js.undefined
   
   /**
     * Type of edit.
     */
-  val `type`: js.UndefOr[remove | replace] = js.native
+  val `type`: js.UndefOr[remove | replace] = js.undefined
 }
 object Delete {
   

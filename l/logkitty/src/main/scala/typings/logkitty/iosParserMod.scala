@@ -5,14 +5,22 @@ import typings.logkitty.typesMod.IParser
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iosParserMod {
   
   @JSImport("logkitty/build/ios/IosParser", JSImport.Default)
   @js.native
-  class default () extends IosParser
+  class default ()
+    extends StObject
+       with IosParser {
+    
+    /* CompleteClass */
+    override def parseMessages(messages: js.Array[String]): js.Array[Entry] = js.native
+    
+    /* CompleteClass */
+    override def splitMessages(data: String): js.Array[String] = js.native
+  }
   /* static members */
   object default {
     
@@ -33,8 +41,9 @@ object iosParserMod {
     def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IosParser extends IParser
+  trait IosParser
+    extends StObject
+       with IParser
   object IosParser {
     
     @scala.inline

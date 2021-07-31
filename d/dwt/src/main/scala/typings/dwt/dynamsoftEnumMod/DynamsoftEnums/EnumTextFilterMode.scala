@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait EnumTextFilterMode extends StObject
 object EnumTextFilterMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumTextFilterMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumTextFilterMode & Double] = js.native
   
   @js.native
-  sealed trait TFM_AUTO extends EnumTextFilterMode
-  /* 1 */ val TFM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_AUTO with Double = js.native
+  sealed trait TFM_AUTO
+    extends StObject
+       with EnumTextFilterMode
+  /* 1 */ val TFM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_AUTO & Double = js.native
   
   @js.native
-  sealed trait TFM_GENERAL_CONTOUR extends EnumTextFilterMode
-  /* 2 */ val TFM_GENERAL_CONTOUR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_GENERAL_CONTOUR with Double = js.native
+  sealed trait TFM_GENERAL_CONTOUR
+    extends StObject
+       with EnumTextFilterMode
+  /* 2 */ val TFM_GENERAL_CONTOUR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_GENERAL_CONTOUR & Double = js.native
   
   @js.native
-  sealed trait TFM_SKIP extends EnumTextFilterMode
-  /* 0 */ val TFM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_SKIP with Double = js.native
+  sealed trait TFM_SKIP
+    extends StObject
+       with EnumTextFilterMode
+  /* 0 */ val TFM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextFilterMode.TFM_SKIP & Double = js.native
 }

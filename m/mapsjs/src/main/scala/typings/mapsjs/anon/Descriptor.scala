@@ -4,41 +4,39 @@ import typings.mapsjs.mod.tile.renderer
 import typings.mapsjs.mod.tile.requestor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descriptor extends StObject {
   
-  var descriptor: js.UndefOr[js.Any] = js.native
+  var descriptor: js.UndefOr[js.Any] = js.undefined
   
-  var enableTileFadeIn: js.UndefOr[Boolean] = js.native
+  var enableTileFadeIn: js.UndefOr[Boolean] = js.undefined
   
-  var maxConcurrentRequests: js.UndefOr[Double] = js.native
+  var maxConcurrentRequests: js.UndefOr[Double] = js.undefined
   
-  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var minZoomLevel: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var notifyErrorAction: js.UndefOr[js.Function1[/* msg */ js.UndefOr[String], Unit]] = js.native
+  var notifyErrorAction: js.UndefOr[js.Function1[/* msg */ js.UndefOr[String], Unit]] = js.undefined
   
-  var notifyLoadingQueueHasEmptiedAction: js.UndefOr[js.Function0[Unit]] = js.native
+  var notifyLoadingQueueHasEmptiedAction: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var renderer: js.UndefOr[typings.mapsjs.mod.tile.renderer] = js.native
+  var renderer: js.UndefOr[typings.mapsjs.mod.tile.renderer] = js.undefined
   
-  var requestProcessor: js.UndefOr[js.Any] = js.native
+  var requestProcessor: js.UndefOr[js.Any] = js.undefined
   
-  var requestor: js.UndefOr[typings.mapsjs.mod.tile.requestor] = js.native
+  var requestor: js.UndefOr[typings.mapsjs.mod.tile.requestor] = js.undefined
   
-  var retainInterlevelContent: js.UndefOr[Boolean] = js.native
+  var retainInterlevelContent: js.UndefOr[Boolean] = js.undefined
   
-  var tileBleedPix: js.UndefOr[Double] = js.native
+  var tileBleedPix: js.UndefOr[Double] = js.undefined
   
-  var useBackdrop: js.UndefOr[Boolean] = js.native
+  var useBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Descriptor {
   

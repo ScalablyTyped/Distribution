@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * explanation of the concept.
   * @see com.sun.star.io.XPersistObject
   */
-@js.native
-trait XObjectOutputStream extends XDataOutputStream {
+trait XObjectOutputStream
+  extends StObject
+     with XDataOutputStream {
   
   /**
     * writes an object to the stream.
     * @param Object the object, which shall serialize itself into the stream.
     */
-  def writeObject(Object: XPersistObject): Unit = js.native
+  def writeObject(Object: XPersistObject): Unit
 }
 object XObjectOutputStream {
   

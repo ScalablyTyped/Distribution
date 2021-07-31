@@ -5,14 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.reflection.ParamMode
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This struct is used to specify information about object members (methods or properties) accessed via {@link XInvocation} , such as names, types, or
   * parameters.
   */
-@js.native
 trait InvocationInfo extends StObject {
   
   /**
@@ -22,22 +20,22 @@ trait InvocationInfo extends StObject {
     *
     * For methods this field is irrelevant and is set to 0.
     */
-  var PropertyAttribute: Double = js.native
+  var PropertyAttribute: Double
   
   /** Name of the method or property. */
-  var aName: String = js.native
+  var aName: String
   
   /** Mode of method parameters (IN, OUT, INOUT), for properties this sequence is empty. */
-  var aParamModes: SafeArray[ParamMode] = js.native
+  var aParamModes: SafeArray[ParamMode]
   
   /** Types method parameters, for properties this sequence is empty */
-  var aParamTypes: SafeArray[`type`] = js.native
+  var aParamTypes: SafeArray[`type`]
   
   /** Type of the member, for methods the return type */
-  var aType: `type` = js.native
+  var aType: `type`
   
   /** Kind of the member (method or property). */
-  var eMemberType: MemberType = js.native
+  var eMemberType: MemberType
 }
 object InvocationInfo {
   

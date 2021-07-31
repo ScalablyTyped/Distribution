@@ -2,45 +2,43 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Event System
 // ----------------------------------------------------------------------
 // TODO: change any to unknown when moving to TS v3
-@js.native
 trait BaseSyntheticEvent[E, C, T] extends StObject {
   
-  var bubbles: Boolean = js.native
+  var bubbles: Boolean
   
-  var cancelable: Boolean = js.native
+  var cancelable: Boolean
   
-  var currentTarget: C = js.native
+  var currentTarget: C
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var eventPhase: Double = js.native
+  var eventPhase: Double
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  def isPropagationStopped(): Boolean = js.native
+  def isPropagationStopped(): Boolean
   
-  var isTrusted: Boolean = js.native
+  var isTrusted: Boolean
   
-  var nativeEvent: E = js.native
+  var nativeEvent: E
   
-  def persist(): Unit = js.native
+  def persist(): Unit
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  var target: T = js.native
+  var target: T
   
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseSyntheticEvent {
   
@@ -68,7 +66,7 @@ object BaseSyntheticEvent {
   }
   
   @scala.inline
-  implicit class BaseSyntheticEventMutableBuilder[Self <: BaseSyntheticEvent[_, _, _], E, C, T] (val x: Self with (BaseSyntheticEvent[E, C, T])) extends AnyVal {
+  implicit class BaseSyntheticEventMutableBuilder[Self <: BaseSyntheticEvent[?, ?, ?], E, C, T] (val x: Self & (BaseSyntheticEvent[E, C, T])) extends AnyVal {
     
     @scala.inline
     def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])

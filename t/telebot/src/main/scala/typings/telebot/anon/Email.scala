@@ -2,19 +2,17 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.UndefOr[Boolean] = js.native
+  var email: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
-  var phoneNumber: js.UndefOr[Boolean] = js.native
+  var phoneNumber: js.UndefOr[Boolean] = js.undefined
   
-  var shippingAddress: js.UndefOr[Boolean] = js.native
+  var shippingAddress: js.UndefOr[Boolean] = js.undefined
 }
 object Email {
   

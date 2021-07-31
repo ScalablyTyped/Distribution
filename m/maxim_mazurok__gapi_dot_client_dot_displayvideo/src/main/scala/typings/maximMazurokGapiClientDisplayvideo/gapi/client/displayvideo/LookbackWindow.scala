@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookbackWindow extends StObject {
   
   /** Lookback window, in days, from the last time a given user clicked on one of your ads. */
-  var clickDays: js.UndefOr[Double] = js.native
+  var clickDays: js.UndefOr[Double] = js.undefined
   
   /** Lookback window, in days, from the last time a given user viewed one of your ads. */
-  var impressionDays: js.UndefOr[Double] = js.native
+  var impressionDays: js.UndefOr[Double] = js.undefined
 }
 object LookbackWindow {
   

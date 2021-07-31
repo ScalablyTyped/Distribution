@@ -3,70 +3,68 @@ package typings.pgPromise.pgSubsetMod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // See:
 // 1) https://github.com/brianc/node-postgres/blob/master/packages/pg/lib/defaults.js
 // 2) https://github.com/brianc/node-pg-pool
-@js.native
 trait IConnectionParameters[C /* <: IClient */] extends StObject {
   
-  var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.native
+  var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.undefined
   
-  var Promise: js.UndefOr[js.Any] = js.native
+  var Promise: js.UndefOr[js.Any] = js.undefined
   
-  var application_name: js.UndefOr[String] = js.native
+  var application_name: js.UndefOr[String] = js.undefined
   
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
-  var client_encoding: js.UndefOr[String] = js.native
+  var client_encoding: js.UndefOr[String] = js.undefined
   
-  var connectionString: js.UndefOr[String] = js.native
+  var connectionString: js.UndefOr[String] = js.undefined
   
-  var connectionTimeoutMillis: js.UndefOr[Double] = js.native
+  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
   
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var fallback_application_name: js.UndefOr[String] = js.native
+  var fallback_application_name: js.UndefOr[String] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var idleTimeoutMillis: js.UndefOr[Double] = js.native
+  var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
-  var isDomainSocket: js.UndefOr[Boolean] = js.native
+  var isDomainSocket: js.UndefOr[Boolean] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.native
+  var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
   
-  var keepalives: js.UndefOr[Double] = js.native
+  var keepalives: js.UndefOr[Double] = js.undefined
   
-  var keepalives_idle: js.UndefOr[Double] = js.native
+  var keepalives_idle: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var maxUses: js.UndefOr[Double] = js.native
+  var maxUses: js.UndefOr[Double] = js.undefined
   
-  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.native
+  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
   
-  var password: js.UndefOr[DynamicPassword] = js.native
+  var password: js.UndefOr[DynamicPassword] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var query_timeout: js.UndefOr[Boolean | Double] = js.native
+  var query_timeout: js.UndefOr[Boolean | Double] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var ssl: js.UndefOr[Boolean | ISSLConfig] = js.native
+  var ssl: js.UndefOr[Boolean | ISSLConfig] = js.undefined
   
-  var statement_timeout: js.UndefOr[Boolean | Double] = js.native
+  var statement_timeout: js.UndefOr[Boolean | Double] = js.undefined
   
-  var types: js.UndefOr[ITypeOverrides] = js.native
+  var types: js.UndefOr[ITypeOverrides] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object IConnectionParameters {
   
@@ -77,7 +75,7 @@ object IConnectionParameters {
   }
   
   @scala.inline
-  implicit class IConnectionParametersMutableBuilder[Self <: IConnectionParameters[_], C /* <: IClient */] (val x: Self with IConnectionParameters[C]) extends AnyVal {
+  implicit class IConnectionParametersMutableBuilder[Self <: IConnectionParameters[?], C /* <: IClient */] (val x: Self & IConnectionParameters[C]) extends AnyVal {
     
     @scala.inline
     def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])

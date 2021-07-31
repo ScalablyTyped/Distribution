@@ -2,21 +2,21 @@ package typings.lovefield.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // module schema
 object op {
   
-  @JSImport("lovefield", "op.and")
+  @JSImport("lovefield", "op")
   @js.native
-  def and(args: Predicate*): Predicate = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lovefield", "op.not")
-  @js.native
-  def not(operand: Predicate): Predicate = js.native
+  @scala.inline
+  def and(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Predicate]
   
-  @JSImport("lovefield", "op.or")
-  @js.native
-  def or(args: Predicate*): Predicate = js.native
+  @scala.inline
+  def not(operand: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(operand.asInstanceOf[js.Any]).asInstanceOf[Predicate]
+  
+  @scala.inline
+  def or(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(args.asInstanceOf[js.Any]).asInstanceOf[Predicate]
 }

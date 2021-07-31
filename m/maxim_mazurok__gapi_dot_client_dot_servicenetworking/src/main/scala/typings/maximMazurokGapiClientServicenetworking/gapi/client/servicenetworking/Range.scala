@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
   /** CIDR range in "10.x.x.x/y" format that is within the allocated ranges and currently unused. */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /** In the Shared VPC host project, the VPC network that's peered with the consumer network. For example: `projects/1234321/global/networks/host-network` */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
 }
 object Range {
   

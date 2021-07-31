@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSource
   * @since OOo 3.0
   */
-@js.native
-trait XDrillDownDataSupplier extends XInterface {
+trait XDrillDownDataSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * This method returns filtered subset of the original source data based on a given set of filtering criteria.
@@ -28,14 +28,14 @@ trait XDrillDownDataSupplier extends XInterface {
     * @see com.sun.star.sheet.DataPilotFieldFilter
     * @see com.sun.star.sheet.XDataPilotTable2
     */
-  def getDrillDownData(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[SafeArray[_]] = js.native
+  def getDrillDownData(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[SafeArray[js.Any]]
 }
 object XDrillDownDataSupplier {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    getDrillDownData: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[_]],
+    getDrillDownData: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]],
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XDrillDownDataSupplier = {
@@ -47,6 +47,6 @@ object XDrillDownDataSupplier {
   implicit class XDrillDownDataSupplierMutableBuilder[Self <: XDrillDownDataSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
   }
 }

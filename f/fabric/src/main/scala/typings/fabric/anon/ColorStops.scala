@@ -4,23 +4,21 @@ import typings.fabric.fabricImplMod.IGradientOptionsColorStops
 import typings.fabric.fabricImplMod.IGradientOptionsCoords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorStops extends StObject {
   
-  var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.native
+  var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.undefined
   
-  var coords: js.UndefOr[IGradientOptionsCoords] = js.native
+  var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
   
-  var gradientUnits: js.UndefOr[js.Any] = js.native
+  var gradientUnits: js.UndefOr[js.Any] = js.undefined
   
-  var offsetX: js.UndefOr[js.Any] = js.native
+  var offsetX: js.UndefOr[js.Any] = js.undefined
   
-  var offsetY: js.UndefOr[js.Any] = js.native
+  var offsetY: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ColorStops {
   

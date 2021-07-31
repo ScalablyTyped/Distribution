@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes an object, either pages or page elements, from the presentation.
   */
-@js.native
 trait SchemaDeleteObjectRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaDeleteObjectRequest extends StObject {
     * deleted.  If a placeholder is deleted on a layout, any empty inheriting
     * shapes are also deleted.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaDeleteObjectRequest {
   

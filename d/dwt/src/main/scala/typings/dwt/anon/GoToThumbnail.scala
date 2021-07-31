@@ -2,21 +2,19 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoToThumbnail extends StObject {
   
   // Example: '#0000ff',
-  var goToThumbnail: js.UndefOr[Boolean] = js.native
+  var goToThumbnail: js.UndefOr[Boolean] = js.undefined
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   // Example: 'icon-tree',
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object GoToThumbnail {
   

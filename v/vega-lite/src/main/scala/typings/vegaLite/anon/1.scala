@@ -6,13 +6,11 @@ import typings.vegaLite.vegaLiteStrings.right
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var align: left | right | center | SignalRef = js.native
+  var align: left | right | center | SignalRef
 }
 object `1` {
   

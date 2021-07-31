@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateBudgetWithResourceInput extends StObject {
   
   /**
     * The name of the budget you want to associate.
     */
-  var BudgetName: typings.awsSdk.servicecatalogMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.servicecatalogMod.BudgetName
   
   /**
     *  The resource identifier. Either a portfolio-id or a product-id.
     */
-  var ResourceId: Id = js.native
+  var ResourceId: Id
 }
 object AssociateBudgetWithResourceInput {
   

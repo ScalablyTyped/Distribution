@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new message.
   */
-@js.native
 trait SchemaCreateMessageRequest extends StObject {
   
   /**
     * HL7v2 message.
     */
-  var message: js.UndefOr[SchemaMessage] = js.native
+  var message: js.UndefOr[SchemaMessage] = js.undefined
 }
 object SchemaCreateMessageRequest {
   

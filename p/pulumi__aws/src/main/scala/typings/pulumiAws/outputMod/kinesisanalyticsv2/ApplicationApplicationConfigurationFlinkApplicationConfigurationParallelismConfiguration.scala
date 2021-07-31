@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration extends StObject {
   
   /**
     * Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.
     */
-  var autoScalingEnabled: Boolean = js.native
+  var autoScalingEnabled: Boolean
   
   /**
     * Describes whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: `CUSTOM`, `DEFAULT`. Set this attribute to `CUSTOM` in order for any specified `autoScalingEnabled`, `parallelism`, or `parallelismPerKpu` attribute values to be effective.
     */
-  var configurationType: String = js.native
+  var configurationType: String
   
   /**
     * Describes the initial number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform.
     */
-  var parallelism: Double = js.native
+  var parallelism: Double
   
   /**
     * Describes the number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application.
     */
-  var parallelismPerKpu: Double = js.native
+  var parallelismPerKpu: Double
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration {
   

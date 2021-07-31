@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRulesResponse extends StObject {
   
   /**
     * Indicates whether there are additional results to retrieve. If there are no more results, the value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.undefined
   
   /**
     * The rules that match the specified criteria.
     */
-  var Rules: js.UndefOr[RuleResponseList] = js.native
+  var Rules: js.UndefOr[RuleResponseList] = js.undefined
 }
 object ListRulesResponse {
   

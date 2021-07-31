@@ -7,35 +7,36 @@ import typings.std.Parameters
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object RNS3 {
     
-    @JSImport("react-native-aws3", "RNS3.put")
+    @JSImport("react-native-aws3", "RNS3")
     @js.native
-    def put(file: File, options: Options): Request = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def put(file: File, options: Options): Request = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Request]
   }
   
-  @js.native
   trait File extends StObject {
     
     /**
       * The name of the file, will be stored as such in S3
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The mime type, also used for Content-Type parameter in the S3 post policy
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * File system URI, can be assets library path or file:// path
       */
-    var uri: String = js.native
+    var uri: String
   }
   object File {
     
@@ -60,57 +61,56 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Your S3 AWSAccessKeyId
       */
-    var accessKey: String = js.native
+    var accessKey: String
     
     /**
       * The Access Control List of this object
       * @default "public-read"
       */
-    var acl: js.UndefOr[String] = js.native
+    var acl: js.UndefOr[String] = js.undefined
     
     /**
       * AWS S3 url
       * @default "s3.amazonaws.com"
       */
-    var awsUrl: js.UndefOr[String] = js.native
+    var awsUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Your S3 bucket
       */
-    var bucket: String = js.native
+    var bucket: String
     
     /**
       * Prefix, or path to the file on S3, i.e. uploads/ (note the trailing slash)
       */
-    var keyPrefix: js.UndefOr[String] = js.native
+    var keyPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * The region of your S3 bucket
       */
-    var region: String = js.native
+    var region: String
     
     /**
       * Your S3 AWSSecretKey
       */
-    var secretKey: String = js.native
+    var secretKey: String
     
     /**
       * HTTP response status if successful
       * @default 201
       */
-    var successActionStatus: js.UndefOr[Double] = js.native
+    var successActionStatus: js.UndefOr[Double] = js.undefined
     
     /**
       * Devices time offset from world clock in milliseconds
       * @default 0
       */
-    var timeDelta: js.UndefOr[Double] = js.native
+    var timeDelta: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -167,23 +167,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
     /**
       * amount uploaded
       */
-    var loaded: Double = js.native
+    var loaded: Double
     
     /**
       * number between 0 and 1 representing the percent completed
       */
-    var percent: Double = js.native
+    var percent: Double
     
     /**
       * total amount to upload
       */
-    var total: Double = js.native
+    var total: Double
   }
   object Progress {
     
@@ -226,7 +225,7 @@ object mod {
     
     def header(key: String, value: String): this.type = js.native
     
-    def progress(callback: js.Function1[/* progress */ Progress, _]): this.type = js.native
+    def progress(callback: js.Function1[/* progress */ Progress, js.Any]): this.type = js.native
     
     def send(): this.type = js.native
     
@@ -240,14 +239,13 @@ object mod {
     ): this.type = js.native
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var status: Double = js.native
+    var status: Double
     
-    var text: String = js.native
+    var text: String
   }
   object Response {
     

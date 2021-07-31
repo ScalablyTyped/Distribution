@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the generic interface for supporting the replacement of named elements.
   * @see XContainer
   */
-@js.native
-trait XNameReplace extends XNameAccess {
+trait XNameReplace
+  extends StObject
+     with XNameAccess {
   
   /** replaces the element with the specified name with the given element. */
-  def replaceByName(aName: String, aElement: js.Any): Unit = js.native
+  def replaceByName(aName: String, aElement: js.Any): Unit
 }
 object XNameReplace {
   

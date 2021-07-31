@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsForDomainRequest extends StObject {
   
   /**
     * The domain for which you want to delete one or more tags.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * A list of tag keys to delete.
     */
-  var TagsToDelete: TagKeyList = js.native
+  var TagsToDelete: TagKeyList
 }
 object DeleteTagsForDomainRequest {
   

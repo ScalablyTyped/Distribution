@@ -2,14 +2,12 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
-@js.native
 trait CustomXmlPartScopedCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[CustomXmlPartData]] = js.native
+  var items: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
 }
 object CustomXmlPartScopedCollectionUpdateData {
   

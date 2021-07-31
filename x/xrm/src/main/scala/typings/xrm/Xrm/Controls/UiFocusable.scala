@@ -2,19 +2,17 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for focusable UI elements.
   */
-@js.native
 trait UiFocusable extends StObject {
   
   /**
     * Sets focus on the element.
     */
-  def setFocus(): Unit = js.native
+  def setFocus(): Unit
 }
 object UiFocusable {
   

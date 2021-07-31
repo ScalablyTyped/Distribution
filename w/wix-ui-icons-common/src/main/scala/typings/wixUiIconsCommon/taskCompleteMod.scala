@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskCompleteMod extends Shortcut {
@@ -15,10 +14,11 @@ object taskCompleteMod extends Shortcut {
   @js.native
   val default: SFC[TaskCompleteProps] = js.native
   
-  @js.native
-  trait TaskCompleteProps extends SVGAttributes[SVGElement] {
+  trait TaskCompleteProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TaskCompleteProps {
     

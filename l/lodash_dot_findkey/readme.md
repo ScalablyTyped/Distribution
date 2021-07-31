@@ -11,8 +11,8 @@ The lodash method `_.findKey` exported as a module.
 | Full name          | lodash.findkey |
 | Keywords           | lodash-modularized, findkey |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 2815540 |
+| # dependents       | 22 |
+| # downloads        | 6005599 |
 | # stars            | 1 |
 
 ## Links

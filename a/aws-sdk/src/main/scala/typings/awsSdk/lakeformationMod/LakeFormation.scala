@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait LakeFormation extends Service {
   ): Request[BatchRevokePermissionsResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_LakeFormation: ConfigBase with ClientConfiguration = js.native
+  var config_LakeFormation: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Deregisters the resource as managed by the Data Catalog. When you deregister a path, Lake Formation removes the path from the inline policy attached to your service-linked role.

@@ -5,10 +5,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.gesture
 import typings.wechatMiniprogram.wechatMiniprogramStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CausedBy extends StObject {
   
   /**
@@ -17,21 +15,21 @@ trait CausedBy extends StObject {
     * - gesture: 用户手势
     * - update: 调用接口导致
     */
-  var causedBy: gesture | update = js.native
+  var causedBy: gesture | update
   
   /**
     * 视野变化开始、结束时触发
     *
     * 视野变化开始为 `begin`
     */
-  var `type`: begin = js.native
+  var `type`: begin
 }
 object CausedBy {
   
   @scala.inline
-  def apply(causedBy: gesture | update, `type`: begin): CausedBy = {
+  def apply(causedBy: gesture | update): CausedBy = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("begin")
     __obj.asInstanceOf[CausedBy]
   }
   

@@ -2,23 +2,21 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseSensitive extends StObject {
   
   @JSName("$caseSensitive")
-  var $caseSensitive: js.UndefOr[Boolean] = js.native
+  var $caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$diacraticSensitive")
-  var $diacraticSensitive: js.UndefOr[Boolean] = js.native
+  var $diacraticSensitive: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$language")
-  var $language: js.UndefOr[String] = js.native
+  var $language: js.UndefOr[String] = js.undefined
   
   @JSName("$search")
-  var $search: String = js.native
+  var $search: String
 }
 object CaseSensitive {
   

@@ -6,36 +6,36 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to let the user to select a cell range.
   * @see com.sun.star.sheet.SpreadsheetView
   */
-@js.native
-trait XRangeSelection extends XInterface {
+trait XRangeSelection
+  extends StObject
+     with XInterface {
   
   /** aborts the range selection. */
-  def abortRangeSelection(): Unit = js.native
+  def abortRangeSelection(): Unit
   
   /** adds a listener that is notified when the selected range is changed. */
-  def addRangeSelectionChangeListener(aListener: XRangeSelectionChangeListener): Unit = js.native
+  def addRangeSelectionChangeListener(aListener: XRangeSelectionChangeListener): Unit
   
   /** adds a listener that is notified when range selection is completed or aborted. */
-  def addRangeSelectionListener(aListener: XRangeSelectionListener): Unit = js.native
+  def addRangeSelectionListener(aListener: XRangeSelectionListener): Unit
   
   /** removes the specified listener. */
-  def removeRangeSelectionChangeListener(aListener: XRangeSelectionChangeListener): Unit = js.native
+  def removeRangeSelectionChangeListener(aListener: XRangeSelectionChangeListener): Unit
   
   /** removes the specified listener. */
-  def removeRangeSelectionListener(aListener: XRangeSelectionListener): Unit = js.native
+  def removeRangeSelectionListener(aListener: XRangeSelectionListener): Unit
   
   /**
     * starts the range selection.
     * @param aArguments the {@link RangeSelectionArguments} that specify how the range selection is done.
     */
-  def startRangeSelection(aArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def startRangeSelection(aArguments: SeqEquiv[PropertyValue]): Unit
 }
 object XRangeSelection {
   

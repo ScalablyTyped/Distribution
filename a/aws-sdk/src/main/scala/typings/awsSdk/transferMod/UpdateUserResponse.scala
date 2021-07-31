@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserResponse extends StObject {
   
   /**
     * A system-assigned unique identifier for a server instance that the user account is assigned to.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
     * The unique identifier for a user that is assigned to a server instance that was specified in the request.
     */
-  var UserName: typings.awsSdk.transferMod.UserName = js.native
+  var UserName: typings.awsSdk.transferMod.UserName
 }
 object UpdateUserResponse {
   

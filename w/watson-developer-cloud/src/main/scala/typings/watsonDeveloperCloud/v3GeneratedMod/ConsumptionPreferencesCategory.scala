@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ConsumptionPreferencesCategory. */
-@js.native
 trait ConsumptionPreferencesCategory extends StObject {
   
   /** The unique, non-localized identifier of the consumption preferences category to which the results pertain. IDs have the form `consumption_preferences_{category}`. */
-  var consumption_preference_category_id: String = js.native
+  var consumption_preference_category_id: String
   
   /** Detailed results inferred from the input text for the individual preferences of the category. */
-  var consumption_preferences: js.Array[ConsumptionPreferences] = js.native
+  var consumption_preferences: js.Array[ConsumptionPreferences]
   
   /** The user-visible name of the consumption preferences category. */
-  var name: String = js.native
+  var name: String
 }
 object ConsumptionPreferencesCategory {
   

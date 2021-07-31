@@ -10,59 +10,57 @@ import typings.uiGrid.anon.CONTAINS
 import typings.uiGrid.anon.DOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUiGridConstants extends StObject {
   
-  var APOS_REGEXP: RegExp = js.native
+  var APOS_REGEXP: RegExp
   
-  var ASC: String = js.native
+  var ASC: String
   
-  var BRACKET_REGEXP: RegExp = js.native
+  var BRACKET_REGEXP: RegExp
   
-  var COL_CLASS_PREFIX: String = js.native
+  var COL_CLASS_PREFIX: String
   
-  var COL_FIELD: RegExp = js.native
+  var COL_FIELD: RegExp
   
-  var CURRENCY_SYMBOLS: js.Array[String] = js.native
+  var CURRENCY_SYMBOLS: js.Array[String]
   
-  var CUSTOM_FILTERS: RegExp = js.native
+  var CUSTOM_FILTERS: RegExp
   
-  var DESC: String = js.native
+  var DESC: String
   
-  var DISPLAY_CELL_TEMPLATE: RegExp = js.native
+  var DISPLAY_CELL_TEMPLATE: RegExp
   
-  var DOT_REGEXP: RegExp = js.native
+  var DOT_REGEXP: RegExp
   
-  var FUNC_REGEXP: RegExp = js.native
+  var FUNC_REGEXP: RegExp
   
-  var LOG_DEBUG_MESSAGES: Boolean = js.native
+  var LOG_DEBUG_MESSAGES: Boolean
   
-  var LOG_ERROR_MESSAGES: Boolean = js.native
+  var LOG_ERROR_MESSAGES: Boolean
   
-  var LOG_WARN_MESSAGES: Boolean = js.native
+  var LOG_WARN_MESSAGES: Boolean
   
-  var MODEL_COL_FIELD: RegExp = js.native
+  var MODEL_COL_FIELD: RegExp
   
-  var TEMPLATE_REGEXP: RegExp = js.native
+  var TEMPLATE_REGEXP: RegExp
   
-  var TOOLTIP: RegExp = js.native
+  var TOOLTIP: RegExp
   
-  var aggregationTypes: Avg = js.native
+  var aggregationTypes: Avg
   
-  var dataChange: ALL = js.native
+  var dataChange: ALL
   
-  var events: COLUMNHEADERCLICK = js.native
+  var events: COLUMNHEADERCLICK
   
-  var filter: CONTAINS = js.native
+  var filter: CONTAINS
   
-  var keymap: ALT = js.native
+  var keymap: ALT
   
-  var scrollDirection: DOWN = js.native
+  var scrollDirection: DOWN
   
-  var scrollbars: ALWAYS = js.native
+  var scrollbars: ALWAYS
 }
 object IUiGridConstants {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginationRoute extends StObject {
   
   /**
     * The FQDN or IP address to contact for origination traffic.
     */
-  var Host: js.UndefOr[String] = js.native
+  var Host: js.UndefOr[String] = js.undefined
   
   /**
     * The designated origination route port. Defaults to 5060.
     */
-  var Port: js.UndefOr[typings.awsSdk.chimeMod.Port] = js.native
+  var Port: js.UndefOr[typings.awsSdk.chimeMod.Port] = js.undefined
   
   /**
     * The priority associated with the host, with 1 being the highest priority. Higher priority hosts are attempted first.
     */
-  var Priority: js.UndefOr[OriginationRoutePriority] = js.native
+  var Priority: js.UndefOr[OriginationRoutePriority] = js.undefined
   
   /**
     * The protocol to use for the origination route. Encryption-enabled Amazon Chime Voice Connectors use TCP protocol by default.
     */
-  var Protocol: js.UndefOr[OriginationRouteProtocol] = js.native
+  var Protocol: js.UndefOr[OriginationRouteProtocol] = js.undefined
   
   /**
     * The weight associated with the host. If hosts are equal in priority, calls are distributed among them based on their relative weight.
     */
-  var Weight: js.UndefOr[OriginationRouteWeight] = js.native
+  var Weight: js.UndefOr[OriginationRouteWeight] = js.undefined
 }
 object OriginationRoute {
   

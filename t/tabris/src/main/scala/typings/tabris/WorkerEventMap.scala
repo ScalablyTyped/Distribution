@@ -1,20 +1,35 @@
 package typings.tabris
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkerEventMap extends js.Object {
+trait WorkerEventMap extends StObject {
+  
   var error: Event
+  
   var message: MessageEvent
+  
   var messageerror: Event
 }
-
 object WorkerEventMap {
+  
   @scala.inline
   def apply(error: Event, message: MessageEvent, messageerror: Event): WorkerEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerEventMap]
   }
+  
+  @scala.inline
+  implicit class WorkerEventMapMutableBuilder[Self <: WorkerEventMap] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessage(value: MessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageerror(value: Event): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+  }
 }
-

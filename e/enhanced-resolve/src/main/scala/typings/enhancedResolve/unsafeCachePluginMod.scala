@@ -4,42 +4,58 @@ import typings.enhancedResolve.commonTypesMod.ResolverRequest
 import typings.enhancedResolve.concordMod.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unsafeCachePluginMod {
   
   @JSImport("enhanced-resolve/lib/UnsafeCachePlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends UnsafeCachePlugin {
+  class ^ protected ()
+    extends StObject
+       with UnsafeCachePlugin {
     def this(
       source: String,
       filterPredicate: js.Function1[/* request */ ResolverRequest, Boolean],
-      cache: Dictionary[_],
+      cache: Dictionary[js.Any],
       target: String
     ) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var cache: Dictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def filterPredicate(request: ResolverRequest): Boolean = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait UnsafeCachePlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var cache: Dictionary[_] = js.native
+    var cache: Dictionary[js.Any]
     
-    def filterPredicate(request: ResolverRequest): Boolean = js.native
+    def filterPredicate(request: ResolverRequest): Boolean
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object UnsafeCachePlugin {
     
     @scala.inline
     def apply(
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
-      cache: Dictionary[_],
+      cache: Dictionary[js.Any],
       filterPredicate: ResolverRequest => Boolean,
       source: String,
       target: String
@@ -55,7 +71,7 @@ object unsafeCachePluginMod {
       def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setCache(value: Dictionary[_]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      def setCache(value: Dictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterPredicate(value: ResolverRequest => Boolean): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction1(value))

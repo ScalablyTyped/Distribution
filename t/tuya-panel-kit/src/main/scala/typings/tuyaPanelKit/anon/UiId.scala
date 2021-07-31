@@ -2,13 +2,11 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiId extends StObject {
   
-  var uiId: String = js.native
+  var uiId: String
 }
 object UiId {
   

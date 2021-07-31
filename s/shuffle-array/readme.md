@@ -11,8 +11,8 @@ Randomize the order of the elements in a given array.
 | Full name          | shuffle-array |
 | Keywords           | random, shuffle, array |
 | # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 1083456 |
+| # dependents       | 66 |
+| # downloads        | 1279177 |
 | # stars            | 8 |
 
 ## Links

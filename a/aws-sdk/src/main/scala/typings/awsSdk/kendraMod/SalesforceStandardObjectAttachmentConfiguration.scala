@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceStandardObjectAttachmentConfiguration extends StObject {
   
   /**
     * The name of the field used for the document title.
     */
-  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
+  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
     * One or more objects that map fields in attachments to Amazon Kendra index fields.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
 }
 object SalesforceStandardObjectAttachmentConfiguration {
   

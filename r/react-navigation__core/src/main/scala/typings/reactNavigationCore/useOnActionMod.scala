@@ -14,20 +14,26 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useOnActionMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useOnAction", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useOnAction", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter: Options
   ): js.Function2[
     /* action */ NavigationAction, 
     /* visitedNavigators */ js.UndefOr[Set[String]], 
     Boolean
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* action */ NavigationAction, 
+    /* visitedNavigators */ js.UndefOr[Set[String]], 
+    Boolean
+  ]]
   
   @js.native
   trait Options extends StObject {
@@ -36,7 +42,7 @@ object useOnActionMod {
     
     var beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]] = js.native
     
-    var emitter: NavigationEventEmitter[EventMapCore[_]] = js.native
+    var emitter: NavigationEventEmitter[EventMapCore[js.Any]] = js.native
     
     def getState(): NavigationState[ParamListBase] = js.native
     

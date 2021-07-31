@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,7 +67,7 @@ trait LayoutEvents extends StObject {
     * @param extraParams [optional] An array of additional parameters to pass to the handler.
     */
   def trigger(events: EventNames): this.type = js.native
-  def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  def trigger(events: EventNames, extraParams: js.Array[js.Any]): this.type = js.native
   
   def unbind(events: EventNames): this.type = js.native
   def unbind(events: EventNames, handler: EventHandler): this.type = js.native

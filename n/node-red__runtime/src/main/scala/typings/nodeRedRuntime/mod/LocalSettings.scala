@@ -20,10 +20,8 @@ import typings.nodeRedRuntime.anon.Strategy
 import typings.nodeRedRuntime.nodeRedRuntimeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalSettings extends StObject {
   
   /**
@@ -32,12 +30,12 @@ trait LocalSettings extends StObject {
     *
     * See http://nodered.org/docs/security.html for details.
     */
-  var adminAuth: js.UndefOr[Default | Authenticate | Strategy] = js.native
+  var adminAuth: js.UndefOr[Default | Authenticate | Strategy] = js.undefined
   
   /**
     * The maximum size of HTTP request that will be accepted by the runtime api.
     */
-  var apiMaxLength: js.UndefOr[String] = js.native
+  var apiMaxLength: js.UndefOr[String] = js.undefined
   
   /**
     * Context Storage
@@ -45,7 +43,7 @@ trait LocalSettings extends StObject {
     * provided here will enable file-based context that flushes to disk every 30 seconds.
     * Refer to the documentation for further options: https://nodered.org/docs/api/context/
     */
-  var contextStorage: js.UndefOr[StringDictionary[String | Module]] = js.native
+  var contextStorage: js.UndefOr[StringDictionary[String | Module]] = js.undefined
   
   /**
     * By default, credentials are encrypted in storage using a generated key. To
@@ -55,27 +53,27 @@ trait LocalSettings extends StObject {
     * node-red from being able to decrypt your existing credentials and they will be
     * lost.
     */
-  var credentialSecret: js.UndefOr[String | `false`] = js.native
+  var credentialSecret: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * The maximum length, in characters, of any message sent to the debug sidebar tab
     */
-  var debugMaxLength: js.UndefOr[Double] = js.native
+  var debugMaxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Colourise the console output of the debug node
     */
-  var debugUseColors: js.UndefOr[Boolean] = js.native
+  var debugUseColors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Editor disabled.
     */
-  var disableEditor: js.UndefOr[Boolean] = js.native
+  var disableEditor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customising the editor
     */
-  var editorTheme: js.UndefOr[DeployButton] = js.native
+  var editorTheme: js.UndefOr[DeployButton] = js.undefined
   
   /**
     * `global.keys()` returns a list of all properties set in global context.
@@ -86,17 +84,17 @@ trait LocalSettings extends StObject {
     * By default, the property is set to false to avoid accidental exposure of
     * their values. Setting this to true will cause the keys to be listed.
     */
-  var exportGlobalContextKeys: js.UndefOr[Boolean] = js.native
+  var exportGlobalContextKeys: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The file containing the flows. If not set, it defaults to flows_<hostname>.json
     */
-  var flowFile: js.UndefOr[String] = js.native
+  var flowFile: js.UndefOr[String] = js.undefined
   
   /**
     * To enabled pretty-printing of the flow within the flow file, set the property to true
     */
-  var flowFilePretty: js.UndefOr[Boolean] = js.native
+  var flowFilePretty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The following property can be used to seed Global Context with predefined
@@ -107,14 +105,14 @@ trait LocalSettings extends StObject {
     * can be accessed in a function block as:
     *    global.get("os")
     */
-  var functionGlobalContext: js.UndefOr[js.Object] = js.native
+  var functionGlobalContext: js.UndefOr[js.Object] = js.undefined
   
   /**
     * By default, the Node-RED UI is available at http://localhost:1880/
     * The following property can be used to specify a different root path.
     * If set to false, this is disabled.
     */
-  var httpAdminRoot: js.UndefOr[String | `false`] = js.native
+  var httpAdminRoot: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * For password protected node-defined HTTP endpoints (httpNodeRoot),
@@ -123,13 +121,13 @@ trait LocalSettings extends StObject {
     * The pass field is a bcrypt hash of the password.
     * See http://nodered.org/docs/security.html#generating-the-password-hash
     */
-  var httpNodeAuth: js.UndefOr[Pass] = js.native
+  var httpNodeAuth: js.UndefOr[Pass] = js.undefined
   
   /**
     * The following property can be used to configure cross-origin resource sharing
     * in the HTTP nodes.
     */
-  var httpNodeCors: js.UndefOr[CorsOptions] = js.native
+  var httpNodeCors: js.UndefOr[CorsOptions] = js.undefined
   
   /**
     * The following property can be used to add a custom middleware function
@@ -138,12 +136,12 @@ trait LocalSettings extends StObject {
     */
   var httpNodeMiddleware: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary, _, _, Query], 
-      /* res */ Response_[_], 
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* res */ Response_[js.Any], 
       /* next */ NextFunction, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Some nodes, such as HTTP In, can be used to listen for incoming http requests.
@@ -151,32 +149,32 @@ trait LocalSettings extends StObject {
     * can be used to specifiy a different root path. If set to false, this is
     * disabled.
     */
-  var httpNodeRoot: js.UndefOr[String | `false`] = js.native
+  var httpNodeRoot: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * Timeout in milliseconds for HTTP request connections
     */
-  var httpRequestTimeout: js.UndefOr[Double] = js.native
+  var httpRequestTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The following property can be used in place of 'httpAdminRoot' and 'httpNodeRoot',
     * to apply the same root to both parts.
     */
-  var httpRoot: js.UndefOr[String | `false`] = js.native
+  var httpRoot: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * The following property can be used to pass custom options to the Express.js
     * server used by Node-RED. For a full list of available options, refer
     * to http://expressjs.com/en/api.html#app.settings.table
     */
-  var httpServerOptions: js.UndefOr[js.Object] = js.native
+  var httpServerOptions: js.UndefOr[js.Object] = js.undefined
   
   /**
     * When httpAdminRoot is used to move the UI to a different root path, the
     * following property is used to identify a directory of static content
     * that should be served at http://localhost:1880/.
     */
-  var httpStatic: js.UndefOr[String] = js.native
+  var httpStatic: js.UndefOr[String] = js.undefined
   
   /**
     * For password protected static content (httpStatic), contains the auth data.
@@ -184,34 +182,34 @@ trait LocalSettings extends StObject {
     * The pass field is a bcrypt hash of the password.
     * See http://nodered.org/docs/security.html#generating-the-password-hash
     */
-  var httpStaticAuth: js.UndefOr[Pass] = js.native
+  var httpStaticAuth: js.UndefOr[Pass] = js.undefined
   
   /**
     * HTTPS options
     */
-  var https: js.UndefOr[ServerOptions] = js.native
+  var https: js.UndefOr[ServerOptions] = js.undefined
   
   /**
     * Configure the logging output
     */
-  var logging: js.UndefOr[Console] = js.native
+  var logging: js.UndefOr[Console] = js.undefined
   
   /**
     * Retry time in milliseconds for MQTT connections
     */
-  var mqttReconnectTime: js.UndefOr[Double] = js.native
+  var mqttReconnectTime: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of messages nodes will buffer internally as part of their
     * operation. This applies across a range of nodes that operate on message sequences.
     */
-  var nodeMessageBufferMaxLength: js.UndefOr[Double] = js.native
+  var nodeMessageBufferMaxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Node-RED scans the `nodes` directory in the userDir to find local node files.
     * The following property can be used to specify an additional directory to scan.
     */
-  var nodesDir: js.UndefOr[String] = js.native
+  var nodesDir: js.UndefOr[String] = js.undefined
   
   /**
     * The following property can be used to order the categories in the editor
@@ -220,60 +218,60 @@ trait LocalSettings extends StObject {
     * If not set, the following default order is used:
     * paletteCategories: ['subflows','flow','input','output','function','parser','social','mobile','storage','analysis','advanced'],
     */
-  var paletteCategories: js.UndefOr[js.Array[String]] = js.native
+  var paletteCategories: js.UndefOr[js.Array[String]] = js.undefined
   
-  var safeMode: js.UndefOr[Boolean] = js.native
+  var safeMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Retry time in milliseconds for Serial port connections
     */
-  var serialReconnectTime: js.UndefOr[Double] = js.native
+  var serialReconnectTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Retry time in milliseconds for TCP socket connections
     */
-  var socketReconnectTime: js.UndefOr[Double] = js.native
+  var socketReconnectTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Timeout in milliseconds for TCP server socket connections
     */
-  var socketTimeout: js.UndefOr[Double] = js.native
+  var socketTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of messages to wait in queue while attempting to connect to TCP socket
     */
-  var tcpMsgQueueSize: js.UndefOr[Double] = js.native
+  var tcpMsgQueueSize: js.UndefOr[Double] = js.undefined
   
   /**
     * To disable the option for using local files for storing keys and certificates in the TLS configuration
     * node, set this to true
     */
-  var tlsConfigDisableLocalFiles: js.UndefOr[Boolean] = js.native
+  var tlsConfigDisableLocalFiles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If you installed the optional node-red-dashboard, the property contains its
     * path relative to httpRoot
     */
-  var ui: js.UndefOr[Path] = js.native
+  var ui: js.UndefOr[Path] = js.undefined
   
   /**
     * Interfaces Node-RED UI accepts connections on
     */
-  var uiHost: String = js.native
+  var uiHost: String
   
   /**
     * the tcp port that the Node-RED web server is listening on
     */
-  var uiPort: Double = js.native
+  var uiPort: Double
   
   /**
     * By default, all user data is stored in a directory called `.node-red` under
     * the user's home directory. To use a different location, the following
     * property can be used
     */
-  var userDir: js.UndefOr[String] = js.native
+  var userDir: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The following property can be used to verify websocket connection attempts.
@@ -291,7 +289,7 @@ trait LocalSettings extends StObject {
       ], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
 }
 object LocalSettings {
   
@@ -396,7 +394,7 @@ object LocalSettings {
     
     @scala.inline
     def setHttpNodeMiddleware(
-      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => Unit
+      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => Unit
     ): Self = StObject.set(x, "httpNodeMiddleware", js.Any.fromFunction3(value))
     
     @scala.inline

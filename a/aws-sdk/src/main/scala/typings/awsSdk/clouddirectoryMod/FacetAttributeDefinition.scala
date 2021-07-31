@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetAttributeDefinition extends StObject {
   
   /**
     * The default value of the attribute (if configured).
     */
-  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.native
+  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.undefined
   
   /**
     * Whether the attribute is mutable or not.
     */
-  var IsImmutable: js.UndefOr[Bool] = js.native
+  var IsImmutable: js.UndefOr[Bool] = js.undefined
   
   /**
     * Validation rules attached to the attribute definition.
     */
-  var Rules: js.UndefOr[RuleMap] = js.native
+  var Rules: js.UndefOr[RuleMap] = js.undefined
   
   /**
     * The type of the attribute.
     */
-  var Type: FacetAttributeType = js.native
+  var Type: FacetAttributeType
 }
 object FacetAttributeDefinition {
   

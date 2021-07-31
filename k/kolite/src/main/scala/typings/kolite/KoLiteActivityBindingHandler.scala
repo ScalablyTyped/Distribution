@@ -2,14 +2,12 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler * / any */ @js.native
-trait KoLiteActivityBindingHandler extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler * / any */ trait KoLiteActivityBindingHandler extends StObject {
   
-  var defaultOptions: KoLiteActivityDefaultOptions = js.native
+  var defaultOptions: KoLiteActivityDefaultOptions
 }
 object KoLiteActivityBindingHandler {
   

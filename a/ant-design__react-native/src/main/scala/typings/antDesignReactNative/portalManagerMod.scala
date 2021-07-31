@@ -5,7 +5,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalManagerMod {
@@ -28,15 +27,14 @@ object portalManagerMod {
     def update(key: Double, children: ReactNode): Unit = js.native
   }
   
-  @js.native
   trait PortalManagerState extends StObject {
     
-    var portals: js.Array[_] = js.native
+    var portals: js.Array[js.Any]
   }
   object PortalManagerState {
     
     @scala.inline
-    def apply(portals: js.Array[_]): PortalManagerState = {
+    def apply(portals: js.Array[js.Any]): PortalManagerState = {
       val __obj = js.Dynamic.literal(portals = portals.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalManagerState]
     }
@@ -45,17 +43,16 @@ object portalManagerMod {
     implicit class PortalManagerStateMutableBuilder[Self <: PortalManagerState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPortals(value: js.Array[_]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+      def setPortals(value: js.Array[js.Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPortalsVarargs(value: js.Any*): Self = StObject.set(x, "portals", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var portals: js.Array[ChildrenReactNode] = js.native
+    var portals: js.Array[ChildrenReactNode]
   }
   object State {
     

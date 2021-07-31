@@ -11,14 +11,14 @@ Parse MRZ (Machine Readable Zone) from identity documents
 | Full name          | mrz |
 | Keywords           | mrz, machine, readable, zone, identity, documents, card, passport |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 25540 |
+| # dependents       | 3 |
+| # downloads        | 31570 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/cheminfo-js/mrz#readme)
-- [Bugs](https://github.com/cheminfo-js/mrz/issues)
-- [Repository](https://github.com/cheminfo-js/mrz)
+- [Homepage](https://github.com/cheminfo/mrz#readme)
+- [Bugs](https://github.com/cheminfo/mrz/issues)
+- [Repository](https://github.com/cheminfo/mrz)
 - [Npm](https://www.npmjs.com/package/mrz)
     
 

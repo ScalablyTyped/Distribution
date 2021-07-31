@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVendorsResponse extends StObject {
   
   /** A token to retrieve the next page of results. Omitted if no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The total count of items in the list irrespective of pagination. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /** List of vendors of the reseller partner. Fields `name`, `companyId` and `companyName` are populated to the Company object. */
-  var vendors: js.UndefOr[js.Array[Company]] = js.native
+  var vendors: js.UndefOr[js.Array[Company]] = js.undefined
 }
 object ListVendorsResponse {
   

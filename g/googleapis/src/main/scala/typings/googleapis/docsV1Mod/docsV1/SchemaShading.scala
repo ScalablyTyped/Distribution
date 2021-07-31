@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The shading of a paragraph.
   */
-@js.native
 trait SchemaShading extends StObject {
   
   /**
     * The background color of this paragraph shading.
     */
-  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
 }
 object SchemaShading {
   

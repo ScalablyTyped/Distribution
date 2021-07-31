@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationLinkMod {
@@ -20,22 +19,22 @@ object paginationLinkMod {
   
   type PaginationLink = Component[PaginationLinkProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationLinkProps
-    extends AnchorHTMLAttributes[HTMLAnchorElement]
+    extends StObject
+       with AnchorHTMLAttributes[HTMLAnchorElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var first: js.UndefOr[Boolean] = js.native
+    var first: js.UndefOr[Boolean] = js.undefined
     
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
     
-    var next: js.UndefOr[Boolean] = js.native
+    var next: js.UndefOr[Boolean] = js.undefined
     
-    var previous: js.UndefOr[Boolean] = js.native
+    var previous: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object PaginationLinkProps {
     
@@ -79,7 +78,7 @@ object paginationLinkMod {
       def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

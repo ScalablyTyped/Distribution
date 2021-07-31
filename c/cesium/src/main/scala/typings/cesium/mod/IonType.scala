@@ -2,17 +2,15 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonType extends StObject {
   
-  var defaultAccessToken: String = js.native
+  var defaultAccessToken: String
   
-  var defaultServer: String | Resource = js.native
+  var defaultServer: String | Resource
   
-  def getDefaultTokenCredit(providedKey: String): Credit = js.native
+  def getDefaultTokenCredit(providedKey: String): Credit
 }
 object IonType {
   

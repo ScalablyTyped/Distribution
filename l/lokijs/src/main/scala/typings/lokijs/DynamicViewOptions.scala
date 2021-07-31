@@ -4,17 +4,15 @@ import typings.lokijs.lokijsStrings.active
 import typings.lokijs.lokijsStrings.passive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicViewOptions extends StObject {
   
-  var minRebuildInterval: Double = js.native
+  var minRebuildInterval: Double
   
-  var persistent: Boolean = js.native
+  var persistent: Boolean
   
-  var sortPriority: active | passive = js.native
+  var sortPriority: active | passive
 }
 object DynamicViewOptions {
   

@@ -2,81 +2,81 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxCheckBoxList object.
   */
-@js.native
-trait ASPxClientCheckBoxList extends ASPxClientCheckListBase {
+trait ASPxClientCheckBoxList
+  extends StObject
+     with ASPxClientCheckListBase {
   
   /**
     * Returns an array of the check box list editor's selected items indices.
     */
-  def GetSelectedIndices(): js.Array[Double] = js.native
+  def GetSelectedIndices(): js.Array[Double]
   
   /**
     * Returns an array of the check box list editor's selected items.
     */
-  def GetSelectedItems(): js.Array[ASPxClientListEditItem] = js.native
+  def GetSelectedItems(): js.Array[ASPxClientListEditItem]
   
   /**
     * Returns an array of the check box list editor's selected items values.
     */
-  def GetSelectedValues(): js.Array[_] = js.native
+  def GetSelectedValues(): js.Array[js.Any]
   
   /**
     * Selects all check box list items.
     */
-  def SelectAll(): Unit = js.native
+  def SelectAll(): Unit
   
   /**
     * Selects items with the specified indices within a check box list.
     * @param indices An array of integer values that are the item indices.
     */
-  def SelectIndices(indices: js.Array[Double]): Unit = js.native
+  def SelectIndices(indices: js.Array[Double]): Unit
   
   /**
     * Selects the specified items within a check box list.
     * @param items An array of ASPxClientListEditItem objects that are the items.
     */
-  def SelectItems(items: js.Array[ASPxClientListEditItem]): Unit = js.native
+  def SelectItems(items: js.Array[ASPxClientListEditItem]): Unit
   
   /**
     * Selects items with the specified values within a check box list.
     * @param values An array of Object[] objects that are the item values.
     */
-  def SelectValues(values: js.Array[_]): Unit = js.native
+  def SelectValues(values: js.Array[js.Any]): Unit
   
   /**
     * Occurs on the client side after a different item in the check box list has been selected (focus has been moved from one item to another).
     */
   @JSName("SelectedIndexChanged")
-  var SelectedIndexChanged_ASPxClientCheckBoxList: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]] = js.native
+  var SelectedIndexChanged_ASPxClientCheckBoxList: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]]
   
   /**
     * Unselects all check box list items.
     */
-  def UnselectAll(): Unit = js.native
+  def UnselectAll(): Unit
   
   /**
     * Unselects items with the specified indices within a check box list.
     * @param indices An array of integer values that are the item indices.
     */
-  def UnselectIndices(indices: js.Array[Double]): Unit = js.native
+  def UnselectIndices(indices: js.Array[Double]): Unit
   
   /**
     * Unselects the specified items within a check box list.
     * @param items An array of ASPxClientListEditItem objects that are the items.
     */
-  def UnselectItems(items: js.Array[ASPxClientListEditItem]): Unit = js.native
+  def UnselectItems(items: js.Array[ASPxClientListEditItem]): Unit
   
   /**
     * Unselects items with the specified values within a check box list.
     * @param values An array of Object[] objects that are the item values.
     */
-  def UnselectValues(values: js.Array[_]): Unit = js.native
+  def UnselectValues(values: js.Array[js.Any]): Unit
 }
 object ASPxClientCheckBoxList {
   
@@ -100,7 +100,7 @@ object ASPxClientCheckBoxList {
     GetSelectedIndices: () => js.Array[Double],
     GetSelectedItem: () => ASPxClientListEditItem,
     GetSelectedItems: () => js.Array[ASPxClientListEditItem],
-    GetSelectedValues: () => js.Array[_],
+    GetSelectedValues: () => js.Array[js.Any],
     GetValue: () => js.Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
@@ -111,7 +111,7 @@ object ASPxClientCheckBoxList {
     SelectAll: () => Unit,
     SelectIndices: js.Array[Double] => Unit,
     SelectItems: js.Array[ASPxClientListEditItem] => Unit,
-    SelectValues: js.Array[_] => Unit,
+    SelectValues: js.Array[js.Any] => Unit,
     SelectedIndexChanged: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]],
     SendMessageToAssistiveTechnology: String => Unit,
     SetCaption: String => Unit,
@@ -129,7 +129,7 @@ object ASPxClientCheckBoxList {
     UnselectAll: () => Unit,
     UnselectIndices: js.Array[Double] => Unit,
     UnselectItems: js.Array[ASPxClientListEditItem] => Unit,
-    UnselectValues: js.Array[_] => Unit,
+    UnselectValues: js.Array[js.Any] => Unit,
     Validate: () => Unit,
     Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]],
     ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]],
@@ -149,7 +149,7 @@ object ASPxClientCheckBoxList {
     def setGetSelectedItems(value: () => js.Array[ASPxClientListEditItem]): Self = StObject.set(x, "GetSelectedItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedValues(value: () => js.Array[_]): Self = StObject.set(x, "GetSelectedValues", js.Any.fromFunction0(value))
+    def setGetSelectedValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetSelectedValues", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
@@ -161,7 +161,7 @@ object ASPxClientCheckBoxList {
     def setSelectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "SelectItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectValues(value: js.Array[_] => Unit): Self = StObject.set(x, "SelectValues", js.Any.fromFunction1(value))
+    def setSelectValues(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SelectValues", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
@@ -176,6 +176,6 @@ object ASPxClientCheckBoxList {
     def setUnselectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "UnselectItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnselectValues(value: js.Array[_] => Unit): Self = StObject.set(x, "UnselectValues", js.Any.fromFunction1(value))
+    def setUnselectValues(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "UnselectValues", js.Any.fromFunction1(value))
   }
 }

@@ -6,75 +6,73 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.System.VirtualKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICoreWindow extends StObject {
   
-  def activate(): Unit = js.native
+  def activate(): Unit
   
-  var automationHostProvider: js.Any = js.native
+  var automationHostProvider: js.Any
   
-  var bounds: Rect = js.native
+  var bounds: Rect
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var customProperties: IPropertySet = js.native
+  var customProperties: IPropertySet
   
-  var dispatcher: CoreDispatcher = js.native
+  var dispatcher: CoreDispatcher
   
-  var flowDirection: CoreWindowFlowDirection = js.native
+  var flowDirection: CoreWindowFlowDirection
   
-  def getAsyncKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates = js.native
+  def getAsyncKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates
   
-  def getKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates = js.native
+  def getKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates
   
-  var isInputEnabled: Boolean = js.native
+  var isInputEnabled: Boolean
   
-  var onactivated: js.Any = js.native
+  var onactivated: js.Any
   
-  var onautomationproviderrequested: js.Any = js.native
+  var onautomationproviderrequested: js.Any
   
-  var oncharacterreceived: js.Any = js.native
+  var oncharacterreceived: js.Any
   
-  var onclosed: js.Any = js.native
+  var onclosed: js.Any
   
-  var oninputenabled: js.Any = js.native
+  var oninputenabled: js.Any
   
-  var onkeydown: js.Any = js.native
+  var onkeydown: js.Any
   
-  var onkeyup: js.Any = js.native
+  var onkeyup: js.Any
   
-  var onpointercapturelost: js.Any = js.native
+  var onpointercapturelost: js.Any
   
-  var onpointerentered: js.Any = js.native
+  var onpointerentered: js.Any
   
-  var onpointerexited: js.Any = js.native
+  var onpointerexited: js.Any
   
-  var onpointermoved: js.Any = js.native
+  var onpointermoved: js.Any
   
-  var onpointerpressed: js.Any = js.native
+  var onpointerpressed: js.Any
   
-  var onpointerreleased: js.Any = js.native
+  var onpointerreleased: js.Any
   
-  var onpointerwheelchanged: js.Any = js.native
+  var onpointerwheelchanged: js.Any
   
-  var onsizechanged: js.Any = js.native
+  var onsizechanged: js.Any
   
-  var ontouchhittesting: js.Any = js.native
+  var ontouchhittesting: js.Any
   
-  var onvisibilitychanged: js.Any = js.native
+  var onvisibilitychanged: js.Any
   
-  var pointerCursor: CoreCursor = js.native
+  var pointerCursor: CoreCursor
   
-  var pointerPosition: Point = js.native
+  var pointerPosition: Point
   
-  def releasePointerCapture(): Unit = js.native
+  def releasePointerCapture(): Unit
   
-  def setPointerCapture(): Unit = js.native
+  def setPointerCapture(): Unit
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ICoreWindow {
   

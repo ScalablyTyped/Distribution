@@ -3,15 +3,13 @@ package typings.nodeHueApi.anon
 import typings.nodeHueApi.mod.BackupStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errorcode extends StObject {
   
-  var errorcode: Double = js.native
+  var errorcode: Double
   
-  var status: BackupStatus = js.native
+  var status: BackupStatus
 }
 object Errorcode {
   

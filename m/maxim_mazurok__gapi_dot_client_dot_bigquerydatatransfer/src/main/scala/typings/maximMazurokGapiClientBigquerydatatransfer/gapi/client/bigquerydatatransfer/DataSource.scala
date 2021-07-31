@@ -2,71 +2,69 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /** Indicates the type of authorization. */
-  var authorizationType: js.UndefOr[String] = js.native
+  var authorizationType: js.UndefOr[String] = js.undefined
   
   /** Data source client id which should be used to receive refresh token. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the data source supports automatic data refresh for the past few days, and how it's supported. For some data sources, data might not be complete until a few days
     * later, so it's useful to refresh data automatically.
     */
-  var dataRefreshType: js.UndefOr[String] = js.native
+  var dataRefreshType: js.UndefOr[String] = js.undefined
   
   /** Data source id. */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /** Default data refresh window on days. Only meaningful when `data_refresh_type` = `SLIDING_WINDOW`. */
-  var defaultDataRefreshWindowDays: js.UndefOr[Double] = js.native
+  var defaultDataRefreshWindowDays: js.UndefOr[Double] = js.undefined
   
   /** Default data transfer schedule. Examples of valid schedules include: `1st,3rd monday of month 15:30`, `every wed,fri of jan,jun 13:15`, and `first sunday of quarter 00:00`. */
-  var defaultSchedule: js.UndefOr[String] = js.native
+  var defaultSchedule: js.UndefOr[String] = js.undefined
   
   /** User friendly data source description string. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** User friendly data source name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Url for the help document for this data source. */
-  var helpUrl: js.UndefOr[String] = js.native
+  var helpUrl: js.UndefOr[String] = js.undefined
   
   /** Disables backfilling and manual run scheduling for the data source. */
-  var manualRunsDisabled: js.UndefOr[Boolean] = js.native
+  var manualRunsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** The minimum interval for scheduler to schedule runs. */
-  var minimumScheduleInterval: js.UndefOr[String] = js.native
+  var minimumScheduleInterval: js.UndefOr[String] = js.undefined
   
   /** Output only. Data source resource name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Data source parameters. */
-  var parameters: js.UndefOr[js.Array[DataSourceParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[DataSourceParameter]] = js.undefined
   
   /**
     * Api auth scopes for which refresh token needs to be obtained. These are scopes needed by a data source to prepare data and ingest them into BigQuery, e.g.,
     * https://www.googleapis.com/auth/bigquery
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Specifies whether the data source supports a user defined schedule, or operates on the default schedule. When set to `true`, user can override default schedule. */
-  var supportsCustomSchedule: js.UndefOr[Boolean] = js.native
+  var supportsCustomSchedule: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated. This field has no effect. */
-  var supportsMultipleTransfers: js.UndefOr[Boolean] = js.native
+  var supportsMultipleTransfers: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated. This field has no effect. */
-  var transferType: js.UndefOr[String] = js.native
+  var transferType: js.UndefOr[String] = js.undefined
   
   /** The number of seconds to wait for an update from the data source before the Data Transfer Service marks the transfer as FAILED. */
-  var updateDeadlineSeconds: js.UndefOr[Double] = js.native
+  var updateDeadlineSeconds: js.UndefOr[Double] = js.undefined
 }
 object DataSource {
   

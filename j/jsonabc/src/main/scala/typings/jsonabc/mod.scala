@@ -2,26 +2,24 @@ package typings.jsonabc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsonabc", "cleanJSON")
+  @JSImport("jsonabc", JSImport.Namespace)
   @js.native
-  def cleanJSON(input: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsonabc", "sort")
-  @js.native
-  def sort(inputStr: String): String = js.native
-  @JSImport("jsonabc", "sort")
-  @js.native
-  def sort(inputStr: String, noArray: Boolean): String = js.native
+  @scala.inline
+  def cleanJSON(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanJSON")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jsonabc", "sortObj")
-  @js.native
-  def sortObj[T /* <: js.Object */](input: T): T = js.native
-  @JSImport("jsonabc", "sortObj")
-  @js.native
-  def sortObj[T /* <: js.Object */](input: T, noArray: Boolean): T = js.native
+  @scala.inline
+  def sort(inputStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(inputStr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sort(inputStr: String, noArray: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(inputStr.asInstanceOf[js.Any], noArray.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sortObj[T /* <: js.Object */](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sortObj")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def sortObj[T /* <: js.Object */](input: T, noArray: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sortObj")(input.asInstanceOf[js.Any], noArray.asInstanceOf[js.Any])).asInstanceOf[T]
 }

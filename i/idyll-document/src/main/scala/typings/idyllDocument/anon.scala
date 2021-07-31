@@ -2,23 +2,21 @@ package typings.idyllDocument
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: String | Null = js.native
+    var children: String | Null
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object Children {
     
     @scala.inline
     def apply(): Children = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(children = null)
       __obj.asInstanceOf[Children]
     }
     

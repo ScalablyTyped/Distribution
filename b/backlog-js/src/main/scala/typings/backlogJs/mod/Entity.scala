@@ -4,21 +4,21 @@ import typings.node.streamMod.PassThrough
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Entity {
   
   object File {
     
-    @js.native
-    trait BrowserFileData extends FileData {
+    trait BrowserFileData
+      extends StObject
+         with FileData {
       
-      var blob: js.UndefOr[js.Function0[js.Promise[Blob]]] = js.native
+      var blob: js.UndefOr[js.Function0[js.Promise[Blob]]] = js.undefined
       
-      var body: js.Any = js.native
+      var body: js.Any
       
-      var url: String = js.native
+      var url: String
     }
     object BrowserFileData {
       
@@ -65,14 +65,15 @@ object Entity {
       }
     }
     
-    @js.native
-    trait NodeFileData extends FileData {
+    trait NodeFileData
+      extends StObject
+         with FileData {
       
-      var body: PassThrough = js.native
+      var body: PassThrough
       
-      var filename: String = js.native
+      var filename: String
       
-      var url: String = js.native
+      var url: String
     }
     object NodeFileData {
       
@@ -99,16 +100,15 @@ object Entity {
   
   object OAuth2 {
     
-    @js.native
     trait AccessToken extends StObject {
       
-      var access_token: String = js.native
+      var access_token: String
       
-      var expires_in: Double = js.native
+      var expires_in: Double
       
-      var refresh_token: String = js.native
+      var refresh_token: String
       
-      var token_type: String = js.native
+      var token_type: String
     }
     object AccessToken {
       

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthStatusForNetworkEndpoint extends StObject {
   
   /** URL of the backend service associated with the health state of the network endpoint. */
-  var backendService: js.UndefOr[BackendServiceReference] = js.native
+  var backendService: js.UndefOr[BackendServiceReference] = js.undefined
   
   /** URL of the forwarding rule associated with the health state of the network endpoint. */
-  var forwardingRule: js.UndefOr[ForwardingRuleReference] = js.native
+  var forwardingRule: js.UndefOr[ForwardingRuleReference] = js.undefined
   
   /** URL of the health check associated with the health state of the network endpoint. */
-  var healthCheck: js.UndefOr[HealthCheckReference] = js.native
+  var healthCheck: js.UndefOr[HealthCheckReference] = js.undefined
   
   /** URL of the health check service associated with the health state of the network endpoint. */
-  var healthCheckService: js.UndefOr[HealthCheckServiceReference] = js.native
+  var healthCheckService: js.UndefOr[HealthCheckServiceReference] = js.undefined
   
   /** Health state of the network endpoint determined based on the health checks configured. */
-  var healthState: js.UndefOr[String] = js.native
+  var healthState: js.UndefOr[String] = js.undefined
 }
 object HealthStatusForNetworkEndpoint {
   

@@ -11,7 +11,6 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////
@@ -32,9 +31,9 @@ trait KnockoutStatic extends StObject {
   def applyBindingAccessorsToNode(node: Node, bindings: js.Object, viewModel: js.Any): Unit = js.native
   
   def applyBindings(): Unit = js.native
-  def applyBindings(viewModelOrBindingContext: js.UndefOr[scala.Nothing], rootNode: js.Any): Unit = js.native
   def applyBindings(viewModelOrBindingContext: js.Any): Unit = js.native
   def applyBindings(viewModelOrBindingContext: js.Any, rootNode: js.Any): Unit = js.native
+  def applyBindings(viewModelOrBindingContext: Unit, rootNode: js.Any): Unit = js.native
   
   def applyBindingsToDescendants(viewModelOrBindingContext: js.Any, rootNode: js.Any): Unit = js.native
   
@@ -54,9 +53,9 @@ trait KnockoutStatic extends StObject {
   def computed[T](`def`: KnockoutComputedDefine[T]): KnockoutComputed[T] = js.native
   def computed[T](`def`: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T]): KnockoutComputed[T] = js.native
-  def computed[T](func: js.Function0[T], context: js.UndefOr[scala.Nothing], options: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T], context: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T], context: js.Any, options: js.Any): KnockoutComputed[T] = js.native
+  def computed[T](func: js.Function0[T], context: Unit, options: js.Any): KnockoutComputed[T] = js.native
   
   var computedContext: KnockoutComputedContext = js.native
   
@@ -112,31 +111,13 @@ trait KnockoutStatic extends StObject {
   def removeNode(node: Element): Unit = js.native
   
   def renderTemplate(template: String, viewModel: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: String,
-    viewModel: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    renderMode: js.Any
-  ): js.Any = js.native
-  def renderTemplate(template: String, viewModel: js.Any, options: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: String,
-    viewModel: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    renderMode: js.Any
-  ): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: String,
-    viewModel: js.Any,
-    options: js.Any,
-    target: js.UndefOr[scala.Nothing],
-    renderMode: js.Any
-  ): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any, target: js.Any): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any, target: js.Any, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: String, viewModel: js.Any, options: js.Any, target: Unit, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: String, viewModel: js.Any, options: Unit, target: js.Any): js.Any = js.native
+  def renderTemplate(template: String, viewModel: js.Any, options: Unit, target: js.Any, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: String, viewModel: js.Any, options: Unit, target: Unit, renderMode: js.Any): js.Any = js.native
   def renderTemplate(
     template: js.Any,
     dataOrBindingContext: js.Any,
@@ -194,56 +175,38 @@ trait KnockoutStatic extends StObject {
     renderMode: String
   ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: js.Function,
-    viewModel: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    renderMode: js.Any
-  ): js.Any = js.native
-  def renderTemplate(template: js.Function, viewModel: js.Any, options: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: js.Function,
-    viewModel: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    renderMode: js.Any
-  ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any): js.Any = js.native
-  def renderTemplate(
-    template: js.Function,
-    viewModel: js.Any,
-    options: js.Any,
-    target: js.UndefOr[scala.Nothing],
-    renderMode: js.Any
-  ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any, target: js.Any): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any, target: js.Any, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any, target: Unit, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: js.Function, viewModel: js.Any, options: Unit, target: js.Any): js.Any = js.native
+  def renderTemplate(template: js.Function, viewModel: js.Any, options: Unit, target: js.Any, renderMode: js.Any): js.Any = js.native
+  def renderTemplate(template: js.Function, viewModel: js.Any, options: Unit, target: Unit, renderMode: js.Any): js.Any = js.native
   
   def renderTemplateForEach(
     template: js.Any,
-    arrayOrObservableArray: js.Array[_],
+    arrayOrObservableArray: js.Array[js.Any],
     options: js.Object,
     targetNode: Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Any,
-    arrayOrObservableArray: KnockoutObservable[_],
+    arrayOrObservableArray: KnockoutObservable[js.Any],
     options: js.Object,
     targetNode: Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Function,
-    arrayOrObservableArray: js.Array[_],
+    arrayOrObservableArray: js.Array[js.Any],
     options: js.Object,
     targetNode: Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Function,
-    arrayOrObservableArray: KnockoutObservable[_],
+    arrayOrObservableArray: KnockoutObservable[js.Any],
     options: js.Object,
     targetNode: Node,
     parentBindingContext: KnockoutBindingContext
@@ -279,9 +242,9 @@ trait KnockoutStatic extends StObject {
   def toJS(viewModel: js.Any): js.Any = js.native
   
   def toJSON(viewModel: js.Any): String = js.native
-  def toJSON(viewModel: js.Any, replacer: js.UndefOr[scala.Nothing], space: js.Any): String = js.native
   def toJSON(viewModel: js.Any, replacer: js.Function): String = js.native
   def toJSON(viewModel: js.Any, replacer: js.Function, space: js.Any): String = js.native
+  def toJSON(viewModel: js.Any, replacer: Unit, space: js.Any): String = js.native
   
   def unwrap[T](value: T): T = js.native
   def unwrap[T](value: KnockoutObservable[T]): T = js.native

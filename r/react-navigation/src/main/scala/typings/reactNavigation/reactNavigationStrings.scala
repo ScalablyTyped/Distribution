@@ -6,7 +6,6 @@ import typings.reactNavigation.mod.SafeAreaViewForceInsetValue
 import typings.reactNavigation.mod.SupportedThemes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNavigationStrings {
@@ -102,27 +101,37 @@ object reactNavigationStrings {
   def NavigationSlashURI: NavigationSlashURI = "Navigation/URI".asInstanceOf[NavigationSlashURI]
   
   @js.native
-  sealed trait action extends EventType
+  sealed trait action
+    extends StObject
+       with EventType
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait always extends SafeAreaViewForceInsetValue
+  sealed trait always
+    extends StObject
+       with SafeAreaViewForceInsetValue
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait dark extends SupportedThemes
+  sealed trait dark
+    extends StObject
+       with SupportedThemes
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait didBlur extends EventType
+  sealed trait didBlur
+    extends StObject
+       with EventType
   @scala.inline
   def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
   
   @js.native
-  sealed trait didFocus extends EventType
+  sealed trait didFocus
+    extends StObject
+       with EventType
   @scala.inline
   def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
   
@@ -152,7 +161,9 @@ object reactNavigationStrings {
   def isLandscape: isLandscape = "isLandscape".asInstanceOf[isLandscape]
   
   @js.native
-  sealed trait light extends SupportedThemes
+  sealed trait light
+    extends StObject
+       with SupportedThemes
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -162,7 +173,9 @@ object reactNavigationStrings {
   def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait never extends SafeAreaViewForceInsetValue
+  sealed trait never
+    extends StObject
+       with SafeAreaViewForceInsetValue
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   
@@ -182,17 +195,23 @@ object reactNavigationStrings {
   def order: order = "order".asInstanceOf[order]
   
   @js.native
-  sealed trait `react-navigationSlashDRAWER` extends NavigatorType
+  sealed trait `react-navigationSlashDRAWER`
+    extends StObject
+       with NavigatorType
   @scala.inline
   def `react-navigationSlashDRAWER`: `react-navigationSlashDRAWER` = "react-navigation/DRAWER".asInstanceOf[`react-navigationSlashDRAWER`]
   
   @js.native
-  sealed trait `react-navigationSlashSTACK` extends NavigatorType
+  sealed trait `react-navigationSlashSTACK`
+    extends StObject
+       with NavigatorType
   @scala.inline
   def `react-navigationSlashSTACK`: `react-navigationSlashSTACK` = "react-navigation/STACK".asInstanceOf[`react-navigationSlashSTACK`]
   
   @js.native
-  sealed trait `react-navigationSlashTABS` extends NavigatorType
+  sealed trait `react-navigationSlashTABS`
+    extends StObject
+       with NavigatorType
   @scala.inline
   def `react-navigationSlashTABS`: `react-navigationSlashTABS` = "react-navigation/TABS".asInstanceOf[`react-navigationSlashTABS`]
   
@@ -207,12 +226,16 @@ object reactNavigationStrings {
   def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait willBlur extends EventType
+  sealed trait willBlur
+    extends StObject
+       with EventType
   @scala.inline
   def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
   
   @js.native
-  sealed trait willFocus extends EventType
+  sealed trait willFocus
+    extends StObject
+       with EventType
   @scala.inline
   def willFocus: willFocus = "willFocus".asInstanceOf[willFocus]
 }

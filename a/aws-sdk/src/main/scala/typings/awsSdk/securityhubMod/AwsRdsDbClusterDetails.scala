@@ -2,196 +2,194 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbClusterDetails extends StObject {
   
   /**
     * The status of the database activity stream.
     */
-  var ActivityStreamStatus: js.UndefOr[NonEmptyString] = js.native
+  var ActivityStreamStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * For all database engines except Aurora, specifies the allocated storage size in gibibytes (GiB).
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * A list of the IAM roles that are associated with the DB cluster.
     */
-  var AssociatedRoles: js.UndefOr[AwsRdsDbClusterAssociatedRoles] = js.native
+  var AssociatedRoles: js.UndefOr[AwsRdsDbClusterAssociatedRoles] = js.undefined
   
   /**
     * A list of Availability Zones (AZs) where instances in the DB cluster can be created.
     */
-  var AvailabilityZones: js.UndefOr[StringList] = js.native
+  var AvailabilityZones: js.UndefOr[StringList] = js.undefined
   
   /**
     * The number of days for which automated backups are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[Integer] = js.native
+  var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates when the DB cluster was created, in Universal Coordinated Time (UTC). Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var ClusterCreateTime: js.UndefOr[NonEmptyString] = js.native
+  var ClusterCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether tags are copied from the DB cluster to snapshots of the DB cluster.
     */
-  var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.native
+  var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the DB cluster is a clone of a DB cluster owned by a different AWS account.
     */
-  var CrossAccountClone: js.UndefOr[Boolean] = js.native
+  var CrossAccountClone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of custom endpoints for the DB cluster.
     */
-  var CustomEndpoints: js.UndefOr[StringList] = js.native
+  var CustomEndpoints: js.UndefOr[StringList] = js.undefined
   
   /**
     * The name of the database.
     */
-  var DatabaseName: js.UndefOr[NonEmptyString] = js.native
+  var DatabaseName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The DB cluster identifier that the user assigned to the cluster. This identifier is the unique key that identifies a DB cluster.
     */
-  var DbClusterIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of instances that make up the DB cluster.
     */
-  var DbClusterMembers: js.UndefOr[AwsRdsDbClusterMembers] = js.native
+  var DbClusterMembers: js.UndefOr[AwsRdsDbClusterMembers] = js.undefined
   
   /**
     * The list of option group memberships for this DB cluster.
     */
-  var DbClusterOptionGroupMemberships: js.UndefOr[AwsRdsDbClusterOptionGroupMemberships] = js.native
+  var DbClusterOptionGroupMemberships: js.UndefOr[AwsRdsDbClusterOptionGroupMemberships] = js.undefined
   
   /**
     * The name of the DB cluster parameter group for the DB cluster.
     */
-  var DbClusterParameterGroup: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterParameterGroup: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the DB cluster. The identifier must be unique within each AWS Region and is immutable.
     */
-  var DbClusterResourceId: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterResourceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The subnet group that is associated with the DB cluster, including the name, description, and subnets in the subnet group.
     */
-  var DbSubnetGroup: js.UndefOr[NonEmptyString] = js.native
+  var DbSubnetGroup: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the DB cluster has deletion protection enabled.
     */
-  var DeletionProtection: js.UndefOr[Boolean] = js.native
+  var DeletionProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Active Directory domain membership records that are associated with the DB cluster.
     */
-  var DomainMemberships: js.UndefOr[AwsRdsDbDomainMemberships] = js.native
+  var DomainMemberships: js.UndefOr[AwsRdsDbDomainMemberships] = js.undefined
   
   /**
     * A list of log types that this DB cluster is configured to export to CloudWatch Logs.
     */
-  var EnabledCloudWatchLogsExports: js.UndefOr[StringList] = js.native
+  var EnabledCloudWatchLogsExports: js.UndefOr[StringList] = js.undefined
   
   /**
     * The connection endpoint for the primary instance of the DB cluster.
     */
-  var Endpoint: js.UndefOr[NonEmptyString] = js.native
+  var Endpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the database engine to use for this DB cluster.
     */
-  var Engine: js.UndefOr[NonEmptyString] = js.native
+  var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The database engine mode of the DB cluster.
     */
-  var EngineMode: js.UndefOr[NonEmptyString] = js.native
+  var EngineMode: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version number of the database engine to use.
     */
-  var EngineVersion: js.UndefOr[NonEmptyString] = js.native
+  var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the identifier that Amazon Route 53 assigns when you create a hosted zone.
     */
-  var HostedZoneId: js.UndefOr[NonEmptyString] = js.native
+  var HostedZoneId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the HTTP endpoint for an Aurora Serverless DB cluster is enabled.
     */
-  var HttpEndpointEnabled: js.UndefOr[Boolean] = js.native
+  var HttpEndpointEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the mapping of IAM accounts to database accounts is enabled.
     */
-  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
+  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the AWS KMS master key that is used to encrypt the database instances in the DB cluster.
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the master user for the DB cluster.
     */
-  var MasterUsername: js.UndefOr[NonEmptyString] = js.native
+  var MasterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the DB cluster has instances in multiple Availability Zones.
     */
-  var MultiAz: js.UndefOr[Boolean] = js.native
+  var MultiAz: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The port number on which the DB instances in the DB cluster accept connections.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * The range of time each day when automated backups are created, if automated backups are enabled. Uses the format HH:MM-HH:MM. For example, 04:52-05:22.
     */
-  var PreferredBackupWindow: js.UndefOr[NonEmptyString] = js.native
+  var PreferredBackupWindow: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC). Uses the format &lt;day&gt;:HH:MM-&lt;day&gt;:HH:MM. For the day values, use mon|tue|wed|thu|fri|sat|sun. For example, sun:09:32-sun:10:02.
     */
-  var PreferredMaintenanceWindow: js.UndefOr[NonEmptyString] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifiers of the read replicas that are associated with this DB cluster.
     */
-  var ReadReplicaIdentifiers: js.UndefOr[StringList] = js.native
+  var ReadReplicaIdentifiers: js.UndefOr[StringList] = js.undefined
   
   /**
     * The reader endpoint for the DB cluster.
     */
-  var ReaderEndpoint: js.UndefOr[NonEmptyString] = js.native
+  var ReaderEndpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The current status of this DB cluster.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the DB cluster is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of VPC security groups that the DB cluster belongs to.
     */
-  var VpcSecurityGroups: js.UndefOr[AwsRdsDbInstanceVpcSecurityGroups] = js.native
+  var VpcSecurityGroups: js.UndefOr[AwsRdsDbInstanceVpcSecurityGroups] = js.undefined
 }
 object AwsRdsDbClusterDetails {
   

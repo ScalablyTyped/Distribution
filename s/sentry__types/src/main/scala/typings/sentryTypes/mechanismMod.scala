@@ -3,21 +3,19 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mechanismMod {
   
-  @js.native
   trait Mechanism extends StObject {
     
-    var data: js.UndefOr[StringDictionary[String | Boolean]] = js.native
+    var data: js.UndefOr[StringDictionary[String | Boolean]] = js.undefined
     
-    var handled: Boolean = js.native
+    var handled: Boolean
     
-    var synthetic: js.UndefOr[Boolean] = js.native
+    var synthetic: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Mechanism {
     

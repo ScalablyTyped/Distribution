@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSolutionResponse extends StObject {
   
   /**
     * The ARN of the solution.
     */
-  var solutionArn: js.UndefOr[Arn] = js.native
+  var solutionArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateSolutionResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyWorkspaceCreationPropertiesRequest extends StObject {
   
   /**
     * The identifier of the directory.
     */
-  var ResourceId: DirectoryId = js.native
+  var ResourceId: DirectoryId
   
   /**
     * The default properties for creating WorkSpaces.
     */
-  var WorkspaceCreationProperties: typings.awsSdk.workspacesMod.WorkspaceCreationProperties = js.native
+  var WorkspaceCreationProperties: typings.awsSdk.workspacesMod.WorkspaceCreationProperties
 }
 object ModifyWorkspaceCreationPropertiesRequest {
   

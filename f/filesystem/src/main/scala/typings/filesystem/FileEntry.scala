@@ -2,14 +2,15 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a file on a file system.
   */
 @js.native
-trait FileEntry extends Entry {
+trait FileEntry
+  extends StObject
+     with Entry {
   
   /**
     * Creates a new FileWriter associated with the file that this FileEntry represents.

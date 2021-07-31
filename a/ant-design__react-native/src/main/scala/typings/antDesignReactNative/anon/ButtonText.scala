@@ -2,20 +2,18 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonText extends StObject {
   
   /** 按钮 */
-  var buttonText: String = js.native
+  var buttonText: String
   
   /** 取消 */
-  var cancelText: String = js.native
+  var cancelText: String
   
   /** 确定 */
-  var okText: String = js.native
+  var okText: String
 }
 object ButtonText {
   

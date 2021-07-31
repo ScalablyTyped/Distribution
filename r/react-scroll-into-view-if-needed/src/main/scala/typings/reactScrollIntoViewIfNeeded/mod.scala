@@ -6,7 +6,6 @@ import typings.scrollIntoViewIfNeeded.mod.Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,16 +17,17 @@ object mod {
   
   type ReactScrollIntoViewIfNeeded = Component[ReactScrollIntoViewIfNeededProps, js.Object, js.Any]
   
-  @js.native
-  trait ReactScrollIntoViewIfNeededProps extends HTMLProps[HTMLElement] {
+  trait ReactScrollIntoViewIfNeededProps
+    extends StObject
+       with HTMLProps[HTMLElement] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     var elementType: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var options: js.UndefOr[Options[_]] = js.native
+    var options: js.UndefOr[Options[js.Any]] = js.undefined
   }
   object ReactScrollIntoViewIfNeededProps {
     
@@ -53,7 +53,7 @@ object mod {
       def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
       
       @scala.inline
-      def setOptions(value: Options[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: Options[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)

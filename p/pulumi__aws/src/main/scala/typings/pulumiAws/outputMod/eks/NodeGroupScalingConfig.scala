@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupScalingConfig extends StObject {
   
   /**
     * Desired number of worker nodes.
     */
-  var desiredSize: Double = js.native
+  var desiredSize: Double
   
   /**
     * Maximum number of worker nodes.
     */
-  var maxSize: Double = js.native
+  var maxSize: Double
   
   /**
     * Minimum number of worker nodes.
     */
-  var minSize: Double = js.native
+  var minSize: Double
 }
 object NodeGroupScalingConfig {
   

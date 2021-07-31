@@ -2,36 +2,34 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidStorageOptions extends StObject {
   
   /**
     * The valid range of Provisioned IOPS to gibibytes of storage multiplier. For example, 3-10, which means that provisioned IOPS can be between 3 and 10 times storage. 
     */
-  var IopsToStorageRatio: js.UndefOr[DoubleRangeList] = js.native
+  var IopsToStorageRatio: js.UndefOr[DoubleRangeList] = js.undefined
   
   /**
     * The valid range of provisioned IOPS. For example, 1000-20000. 
     */
-  var ProvisionedIops: js.UndefOr[RangeList] = js.native
+  var ProvisionedIops: js.UndefOr[RangeList] = js.undefined
   
   /**
     * The valid range of storage in gibibytes. For example, 100 to 16384. 
     */
-  var StorageSize: js.UndefOr[RangeList] = js.native
+  var StorageSize: js.UndefOr[RangeList] = js.undefined
   
   /**
     * The valid storage types for your DB instance. For example, gp2, io1. 
     */
-  var StorageType: js.UndefOr[String] = js.native
+  var StorageType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not Amazon RDS can automatically scale storage for DB instances that use the new instance class.
     */
-  var SupportsStorageAutoscaling: js.UndefOr[Boolean] = js.native
+  var SupportsStorageAutoscaling: js.UndefOr[Boolean] = js.undefined
 }
 object ValidStorageOptions {
   

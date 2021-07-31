@@ -4,42 +4,34 @@ import typings.speedtestNet.speedtestNetStrings.testStart
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This contains information about the test to be run. */
-@js.native
 trait TestStartEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
-  var interface: InterfaceData = js.native
+  var interface: InterfaceData
   
-  var isp: String = js.native
+  var isp: String
   
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
-  var progress: Double = js.native
+  var progress: Double
   
-  var server: ServerData = js.native
+  var server: ServerData
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_TestStartEvent: testStart = js.native
+  var type_TestStartEvent: testStart
 }
 object TestStartEvent {
   
   @scala.inline
-  def apply(
-    interface: InterfaceData,
-    isp: String,
-    progress: Double,
-    server: ServerData,
-    timestamp: Date,
-    `type`: testStart
-  ): TestStartEvent = {
+  def apply(interface: InterfaceData, isp: String, progress: Double, server: ServerData, timestamp: Date): TestStartEvent = {
     val __obj = js.Dynamic.literal(interface = interface.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("testStart")
     __obj.asInstanceOf[TestStartEvent]
   }
   

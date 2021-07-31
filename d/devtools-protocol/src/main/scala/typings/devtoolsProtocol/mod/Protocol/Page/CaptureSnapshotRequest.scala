@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mhtml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureSnapshotRequest extends StObject {
   
   /**
     * Format (defaults to mhtml). (CaptureSnapshotRequestFormat enum)
     */
-  var format: js.UndefOr[mhtml] = js.native
+  var format: js.UndefOr[mhtml] = js.undefined
 }
 object CaptureSnapshotRequest {
   

@@ -11,8 +11,8 @@ Takes human readable filesystem size strings and gives you an int representing t
 | Full name          | filesize-parser |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 257622 |
+| # dependents       | 39 |
+| # downloads        | 283717 |
 | # stars            | 1 |
 
 ## Links

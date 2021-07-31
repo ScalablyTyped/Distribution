@@ -28,7 +28,6 @@ import typings.std.Event
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -41,16 +40,15 @@ object toastMod {
   @js.native
   val CloseIconSvg: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait KIND extends StObject {
     
-    var info: typings.baseui.baseuiStrings.info = js.native
+    var info: typings.baseui.baseuiStrings.info
     
-    var negative: typings.baseui.baseuiStrings.negative = js.native
+    var negative: typings.baseui.baseuiStrings.negative
     
-    var positive: typings.baseui.baseuiStrings.positive = js.native
+    var positive: typings.baseui.baseuiStrings.positive
     
-    var warning: typings.baseui.baseuiStrings.warning = js.native
+    var warning: typings.baseui.baseuiStrings.warning
   }
   object KIND {
     
@@ -75,20 +73,19 @@ object toastMod {
     }
   }
   
-  @js.native
   trait PLACEMENT extends StObject {
     
-    var bottom: typings.baseui.baseuiStrings.bottom = js.native
+    var bottom: typings.baseui.baseuiStrings.bottom
     
-    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft = js.native
+    var bottomLeft: typings.baseui.baseuiStrings.bottomLeft
     
-    var bottomRight: typings.baseui.baseuiStrings.bottomRight = js.native
+    var bottomRight: typings.baseui.baseuiStrings.bottomRight
     
-    var top: typings.baseui.baseuiStrings.top = js.native
+    var top: typings.baseui.baseuiStrings.top
     
-    var topLeft: typings.baseui.baseuiStrings.topLeft = js.native
+    var topLeft: typings.baseui.baseuiStrings.topLeft
     
-    var topRight: typings.baseui.baseuiStrings.topRight = js.native
+    var topRight: typings.baseui.baseuiStrings.topRight
   }
   object PLACEMENT {
     
@@ -123,12 +120,11 @@ object toastMod {
   @js.native
   val Root: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait TYPE extends StObject {
     
-    var `inline`: typings.baseui.baseuiStrings.`inline` = js.native
+    var `inline`: typings.baseui.baseuiStrings.`inline`
     
-    var toast: typings.baseui.baseuiStrings.toast = js.native
+    var toast: typings.baseui.baseuiStrings.toast
   }
   object TYPE {
     
@@ -196,8 +192,8 @@ object toastMod {
     
     def dismiss(key: Key): Unit = js.native
     
-    def getOnCloseHandler(key: Key): js.Function0[_] = js.native
-    def getOnCloseHandler(key: Key, onClose: js.Function0[_]): js.Function0[_] = js.native
+    def getOnCloseHandler(key: Key): js.Function0[js.Any] = js.native
+    def getOnCloseHandler(key: Key, onClose: js.Function0[js.Any]): js.Function0[js.Any] = js.native
     
     def getSharedProps(): Placement = js.native
     
@@ -216,24 +212,23 @@ object toastMod {
   @js.native
   val toaster: IToaster = js.native
   
-  @js.native
   trait IToaster extends StObject {
     
-    def clear(key: Key): Unit = js.native
+    def clear(key: Key): Unit
     
-    def getRef(): Ref[Instantiable0[ToasterContainer]] = js.native
+    def getRef(): Ref[Instantiable0[ToasterContainer]]
     
-    def info(children: ReactNode, props: ReadonlyToastProps): Key = js.native
+    def info(children: ReactNode, props: ReadonlyToastProps): Key
     
-    def negative(children: ReactNode, props: ReadonlyToastProps): Key = js.native
+    def negative(children: ReactNode, props: ReadonlyToastProps): Key
     
-    def positive(children: ReactNode, props: ReadonlyToastProps): Key = js.native
+    def positive(children: ReactNode, props: ReadonlyToastProps): Key
     
-    def show(children: ReactNode, props: ReadonlyToastProps): Key = js.native
+    def show(children: ReactNode, props: ReadonlyToastProps): Key
     
-    def update(key: Key, props: ReadonlyToastProps): Unit = js.native
+    def update(key: Key, props: ReadonlyToastProps): Unit
     
-    def warning(children: ReactNode, props: ReadonlyToastProps): Key = js.native
+    def warning(children: ReactNode, props: ReadonlyToastProps): Key
   }
   object IToaster {
     
@@ -281,23 +276,22 @@ object toastMod {
     }
   }
   
-  @js.native
   trait SharedStylePropsArg extends StObject {
     
     @JSName("$closeable")
-    var $closeable: js.UndefOr[Boolean] = js.native
+    var $closeable: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isRendered")
-    var $isRendered: js.UndefOr[Boolean] = js.native
+    var $isRendered: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isVisible")
-    var $isVisible: js.UndefOr[Boolean] = js.native
+    var $isVisible: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$kind")
-    var $kind: js.UndefOr[info | positive | warning | negative] = js.native
+    var $kind: js.UndefOr[info | positive | warning | negative] = js.undefined
     
     @JSName("$type")
-    var $type: js.UndefOr[`inline` | toast] = js.native
+    var $type: js.UndefOr[`inline` | toast] = js.undefined
   }
   object SharedStylePropsArg {
     
@@ -342,20 +336,19 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToastOverrides extends StObject {
     
     var Body: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var CloseIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InnerContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ToastOverrides {
     
@@ -394,12 +387,11 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToastPrivateState extends StObject {
     
-    var isRendered: Boolean = js.native
+    var isRendered: Boolean
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
   }
   object ToastPrivateState {
     
@@ -420,36 +412,35 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToastProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoHideDuration: js.UndefOr[Double] = js.native
+    var autoHideDuration: js.UndefOr[Double] = js.undefined
     
-    var children: js.UndefOr[(js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode] = js.native
+    var children: js.UndefOr[(js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode] = js.undefined
     
-    var closeable: js.UndefOr[Boolean] = js.native
+    var closeable: js.UndefOr[Boolean] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var `data-baseweb`: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var kind: js.UndefOr[info | positive | warning | negative] = js.native
+    var kind: js.UndefOr[info | positive | warning | negative] = js.undefined
     
-    var notificationType: js.UndefOr[`inline` | toast] = js.native
+    var notificationType: js.UndefOr[`inline` | toast] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[_]] = js.native
+    var onClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[ToastOverrides] = js.native
+    var overrides: js.UndefOr[ToastOverrides] = js.undefined
   }
   object ToastProps {
     
@@ -514,31 +505,31 @@ object toastMod {
       def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: /* e */ Event => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      def setOnBlur(value: /* e */ Event => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: /* e */ Event => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      def setOnFocus(value: /* e */ Event => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnMouseEnter(value: /* e */ Event => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      def setOnMouseEnter(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
       @scala.inline
-      def setOnMouseLeave(value: /* e */ Event => _): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      def setOnMouseLeave(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
@@ -551,12 +542,11 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToasterContainerState extends StObject {
     
-    var isMounted: Boolean = js.native
+    var isMounted: Boolean
     
-    var toasts: ReadonlyToastProps = js.native
+    var toasts: ReadonlyToastProps
   }
   object ToasterContainerState {
     
@@ -577,20 +567,19 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToasterOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<ToasterSharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ToastBody: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ToastCloseIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ToasterOverrides {
     
@@ -629,16 +618,15 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToasterProps extends StObject {
     
-    var autoHideDuration: js.UndefOr[Double] = js.native
+    var autoHideDuration: js.UndefOr[Double] = js.undefined
     
-    var overrides: js.UndefOr[ToasterOverrides] = js.native
+    var overrides: js.UndefOr[ToasterOverrides] = js.undefined
     
-    var placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.native
+    var placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.undefined
     
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
   }
   object ToasterProps {
     
@@ -677,11 +665,10 @@ object toastMod {
     }
   }
   
-  @js.native
   trait ToasterSharedStylePropsArg extends StObject {
     
     @JSName("$placement")
-    var $placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.native
+    var $placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.undefined
   }
   object ToasterSharedStylePropsArg {
     

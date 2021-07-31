@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceMetadata extends StObject {
   
   /**
     *  The desired authorization scope for the Salesforce account. 
     */
-  var oAuthScopes: js.UndefOr[OAuthScopeList] = js.native
+  var oAuthScopes: js.UndefOr[OAuthScopeList] = js.undefined
 }
 object SalesforceMetadata {
   

@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectsCopy extends StandardParameters {
+trait ParamsResourceObjectsCopy
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the bucket in which to store the new object. Overrides the
     * provided object metadata's bucket value, if any.For information about how
     * to URL encode object names to be path safe, see Encoding URI Path Parts.
     */
-  var destinationBucket: js.UndefOr[String] = js.native
+  var destinationBucket: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the new object. Required when the object metadata is not
     * otherwise provided. Overrides the object metadata's name value, if any.
     */
-  var destinationObject: js.UndefOr[String] = js.native
+  var destinationObject: js.UndefOr[String] = js.undefined
   
   /**
     * Apply a predefined set of access controls to the destination object.
     */
-  var destinationPredefinedAcl: js.UndefOr[String] = js.native
+  var destinationPredefinedAcl: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the destination object's
     * current generation matches the given value. Setting to 0 makes the
     * operation succeed only if there are no live versions of the object.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.native
+  var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the destination object's
@@ -48,77 +48,77 @@ trait ParamsResourceObjectsCopy extends StandardParameters {
     * exists, the precondition fails. Setting to 0 makes the operation succeed
     * only if there is a live version of the object.
     */
-  var ifGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the destination object's
     * current metageneration matches the given value.
     */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the destination object's
     * current metageneration does not match the given value.
     */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the source object's current
     * generation matches the given value.
     */
-  var ifSourceGenerationMatch: js.UndefOr[String] = js.native
+  var ifSourceGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the source object's current
     * generation does not match the given value.
     */
-  var ifSourceGenerationNotMatch: js.UndefOr[String] = js.native
+  var ifSourceGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the source object's current
     * metageneration matches the given value.
     */
-  var ifSourceMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifSourceMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the operation conditional on whether the source object's current
     * metageneration does not match the given value.
     */
-  var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl, unless the object
     * resource specifies the acl property, when it defaults to full.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaObject] = js.native
+  var requestBody: js.UndefOr[SchemaObject] = js.undefined
   
   /**
     * Name of the bucket in which to find the source object.
     */
-  var sourceBucket: js.UndefOr[String] = js.native
+  var sourceBucket: js.UndefOr[String] = js.undefined
   
   /**
     * If present, selects a specific revision of the source object (as opposed
     * to the latest version, the default).
     */
-  var sourceGeneration: js.UndefOr[String] = js.native
+  var sourceGeneration: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the source object. For information about how to URL encode object
     * names to be path safe, see Encoding URI Path Parts.
     */
-  var sourceObject: js.UndefOr[String] = js.native
+  var sourceObject: js.UndefOr[String] = js.undefined
   
   /**
     * The project to be billed for this request. Required for Requester Pays
     * buckets.
     */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceObjectsCopy {
   

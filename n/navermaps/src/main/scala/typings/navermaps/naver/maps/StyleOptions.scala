@@ -2,33 +2,31 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleOptions extends StObject {
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.native
+  var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.undefined
   
-  var shape: js.UndefOr[MarkerShape] = js.native
+  var shape: js.UndefOr[MarkerShape] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object StyleOptions {
   

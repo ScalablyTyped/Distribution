@@ -3,15 +3,13 @@ package typings.knockout.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateOptions[T] extends StObject {
   
-  var afterRender: js.UndefOr[js.Function2[/* elements */ js.Array[Node], /* dataItem */ T, Unit]] = js.native
+  var afterRender: js.UndefOr[js.Function2[/* elements */ js.Array[Node], /* dataItem */ T, Unit]] = js.undefined
   
-  var templateEngine: js.UndefOr[typings.knockout.mod.templateEngine] = js.native
+  var templateEngine: js.UndefOr[typings.knockout.mod.templateEngine] = js.undefined
 }
 object TemplateOptions {
   
@@ -22,7 +20,7 @@ object TemplateOptions {
   }
   
   @scala.inline
-  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions[_], T] (val x: Self with TemplateOptions[T]) extends AnyVal {
+  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions[?], T] (val x: Self & TemplateOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAfterRender(value: (/* elements */ js.Array[Node], /* dataItem */ T) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))

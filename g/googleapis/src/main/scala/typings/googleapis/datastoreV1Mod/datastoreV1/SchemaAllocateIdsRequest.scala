@@ -2,20 +2,18 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Datastore.AllocateIds.
   */
-@js.native
 trait SchemaAllocateIdsRequest extends StObject {
   
   /**
     * A list of keys with incomplete key paths for which to allocate IDs. No
     * key may be reserved/read-only.
     */
-  var keys: js.UndefOr[js.Array[SchemaKey]] = js.native
+  var keys: js.UndefOr[js.Array[SchemaKey]] = js.undefined
 }
 object SchemaAllocateIdsRequest {
   

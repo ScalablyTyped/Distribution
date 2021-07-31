@@ -6,10 +6,13 @@ import typings.storybookUi.anon.PassArgsFirst
 import typings.storybookUi.anon.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object desktopStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -42,35 +45,27 @@ object desktopStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "BottomPanel")
-  @js.native
-  def BottomPanel(hasProps: Props): Element = js.native
+  @scala.inline
+  def BottomPanel(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BottomPanel")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "Default")
-  @js.native
-  def Default_(hasProps: Props): Element = js.native
+  @scala.inline
+  def Default_(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "Fullscreen")
-  @js.native
-  def Fullscreen(hasProps: Props): Element = js.native
+  @scala.inline
+  def Fullscreen(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Fullscreen")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "NoAddons")
-  @js.native
-  def NoAddons(hasProps: Props): Element = js.native
+  @scala.inline
+  def NoAddons(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoAddons")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "NoPanel")
-  @js.native
-  def NoPanel(hasProps: Props): Element = js.native
+  @scala.inline
+  def NoPanel(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPanel")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "NoPanelNoSidebar")
-  @js.native
-  def NoPanelNoSidebar(hasProps: Props): Element = js.native
+  @scala.inline
+  def NoPanelNoSidebar(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPanelNoSidebar")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "NoSidebar")
-  @js.native
-  def NoSidebar(hasProps: Props): Element = js.native
+  @scala.inline
+  def NoSidebar(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoSidebar")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/layout/desktop.stories", "Page")
-  @js.native
-  def Page(hasProps: Props): Element = js.native
+  @scala.inline
+  def Page(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Page")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

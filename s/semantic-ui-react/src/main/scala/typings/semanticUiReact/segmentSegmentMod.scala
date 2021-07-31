@@ -16,7 +16,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentSegmentMod extends Shortcut {
@@ -26,16 +25,18 @@ object segmentSegmentMod extends Shortcut {
   val default: SegmentComponent = js.native
   
   @js.native
-  trait SegmentComponent extends FunctionComponent[SegmentProps] {
+  trait SegmentComponent
+    extends StObject
+       with FunctionComponent[SegmentProps] {
     
     var Group: StatelessComponent[SegmentGroupProps] = js.native
     
     var Inline: SegmentInlineComponent = js.native
   }
   
-  @js.native
   trait SegmentProps
-    extends StrictSegmentProps
+    extends StObject
+       with StrictSegmentProps
        with /* key */ StringDictionary[js.Any]
   object SegmentProps {
     
@@ -80,80 +81,79 @@ object segmentSegmentMod extends Shortcut {
     def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
   }
   
-  @js.native
   trait StrictSegmentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Attach segment to other content, like a header. */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.native
+    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
     
     /** A basic segment has no special formatting. */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** A segment can be circular. */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A segment can clear floated content. */
-    var clearing: js.UndefOr[Boolean] = js.native
+    var clearing: js.UndefOr[Boolean] = js.undefined
     
     /** Segment can be colored. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** A segment may take up only as much space as is necessary. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A segment may show its content is disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Segment content can be floated to the left or right. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** A segment can have its colors inverted for contrast. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** A segment may show its content is being loaded. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can increase its padding. */
-    var padded: js.UndefOr[Boolean | very] = js.native
+    var padded: js.UndefOr[Boolean | very] = js.undefined
     
     /** Formatted to look like a pile of pages. */
-    var piled: js.UndefOr[Boolean] = js.native
+    var piled: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can be used to reserve space for conditionally displayed content. */
-    var placeholder: js.UndefOr[Boolean] = js.native
+    var placeholder: js.UndefOr[Boolean] = js.undefined
     
     /** A segment may be formatted to raise above the page. */
-    var raised: js.UndefOr[Boolean] = js.native
+    var raised: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can be formatted to appear less noticeable. */
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can have different sizes. */
-    var size: js.UndefOr[SegmentSizeProp] = js.native
+    var size: js.UndefOr[SegmentSizeProp] = js.undefined
     
     /** Formatted to show it contains multiple pages. */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can be formatted to appear even less noticeable. */
-    var tertiary: js.UndefOr[Boolean] = js.native
+    var tertiary: js.UndefOr[Boolean] = js.undefined
     
     /** Formats content to be aligned as part of a vertical group. */
-    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.native
+    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
     
     /** Formats content to be aligned vertically. */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object StrictSegmentProps {
     

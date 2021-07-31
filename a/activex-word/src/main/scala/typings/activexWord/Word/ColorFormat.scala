@@ -4,48 +4,46 @@ import typings.activexOffice.Office.MsoColorType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Black: Double = js.native
+  var Black: Double
   
-  var Brightness: Double = js.native
+  var Brightness: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Cyan: Double = js.native
+  var Cyan: Double
   
-  def Ink(Index: Double): Double = js.native
+  def Ink(Index: Double): Double
   
-  var Magenta: Double = js.native
+  var Magenta: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var ObjectThemeColor: WdThemeColorIndex = js.native
+  var ObjectThemeColor: WdThemeColorIndex
   
-  var OverPrint: MsoTriState = js.native
+  var OverPrint: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RGB: Double = js.native
+  var RGB: Double
   
-  var SchemeColor: Double = js.native
+  var SchemeColor: Double
   
-  def SetCMYK(Cyan: Double, Magenta: Double, Yellow: Double, Black: Double): Unit = js.native
+  def SetCMYK(Cyan: Double, Magenta: Double, Yellow: Double, Black: Double): Unit
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
   
-  val Type: MsoColorType = js.native
+  val Type: MsoColorType
   
   @JSName("Word.ColorFormat_typekey")
-  var WordDotColorFormat_typekey: ColorFormat = js.native
+  var WordDotColorFormat_typekey: ColorFormat
   
-  var Yellow: Double = js.native
+  var Yellow: Double
 }
 object ColorFormat {
   

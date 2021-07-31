@@ -2,20 +2,20 @@ package typings.wordpressDependencyExtractionWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("@wordpress/dependency-extraction-webpack-plugin/build-types/util", "camelCaseDash")
+  @JSImport("@wordpress/dependency-extraction-webpack-plugin/build-types/util", JSImport.Namespace)
   @js.native
-  def camelCaseDash(string: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/dependency-extraction-webpack-plugin/build-types/util", "defaultRequestToExternal")
-  @js.native
-  def defaultRequestToExternal(request: String): String | Unit | js.Array[String] = js.native
+  @scala.inline
+  def camelCaseDash(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseDash")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/dependency-extraction-webpack-plugin/build-types/util", "defaultRequestToHandle")
-  @js.native
-  def defaultRequestToHandle(request: String): String | Unit = js.native
+  @scala.inline
+  def defaultRequestToExternal(request: String): String | Unit | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToExternal")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit | js.Array[String]]
+  
+  @scala.inline
+  def defaultRequestToHandle(request: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToHandle")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

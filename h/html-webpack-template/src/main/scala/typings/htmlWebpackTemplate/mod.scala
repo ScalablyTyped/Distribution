@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,13 +20,12 @@ object mod extends Shortcut {
   /** @deprecated use GoogleAnalyticsOptions */
   type GoogleAnalyticsConfig = GoogleAnalyticsOptions
   
-  @js.native
   trait GoogleAnalyticsOptions extends StObject {
     
     /** Log a pageview event after the analytics code loads. */
-    var pageViewOnLoad: js.UndefOr[Boolean] = js.native
+    var pageViewOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var trackingId: String = js.native
+    var trackingId: String
   }
   object GoogleAnalyticsOptions {
     
@@ -57,45 +55,45 @@ object mod extends Shortcut {
     */
   type Link = Resource
   
-  @js.native
   trait Options
-    extends typings.htmlWebpackPlugin.mod.Options {
+    extends StObject
+       with typings.htmlWebpackPlugin.mod.Options {
     
     /** The <div> element id on which you plan to mount a JavaScript app. */
-    var appMountId: js.UndefOr[String] = js.native
+    var appMountId: js.UndefOr[String] = js.undefined
     
     /** An array of application element ids. */
-    var appMountIds: js.UndefOr[js.Array[String]] = js.native
+    var appMountIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Adjust the URL for relative URLs in the document (MDN).
       * https://developer.mozilla.org/en/docs/Web/HTML/Element/base
       */
-    var baseHref: js.UndefOr[String] = js.native
+    var baseHref: js.UndefOr[String] = js.undefined
     
     /** Insert the webpack-dev-server hot reload script at this host:port/path; e.g., http://localhost:3000. */
-    var devServer: js.UndefOr[String] = js.native
+    var devServer: js.UndefOr[String] = js.undefined
     
     /** Track usage of your site via Google Analytics. */
-    var googleAnalytics: js.UndefOr[GoogleAnalyticsOptions] = js.native
+    var googleAnalytics: js.UndefOr[GoogleAnalyticsOptions] = js.undefined
     
     /**
       * For use with inline-manifest-webpack-plugin.
       * https://github.com/szrenwei/inline-manifest-webpack-plugin
       */
-    var inlineManifestWebpackName: js.UndefOr[String] = js.native
+    var inlineManifestWebpackName: js.UndefOr[String] = js.undefined
     
     /** Array of <link> elements. */
-    var links: js.UndefOr[js.Array[Link]] = js.native
+    var links: js.UndefOr[js.Array[Link]] = js.undefined
     
     /** Sets appropriate meta tag for page scaling. */
-    var mobile: js.UndefOr[Boolean] = js.native
+    var mobile: js.UndefOr[Boolean] = js.undefined
     
     /** Array of external script imports to include on page. */
-    var scripts: js.UndefOr[js.Array[Script]] = js.native
+    var scripts: js.UndefOr[js.Array[Script]] = js.undefined
     
     /** Object that defines data you need to bootstrap a JavaScript app. */
-    var window: js.UndefOr[js.Object] = js.native
+    var window: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     

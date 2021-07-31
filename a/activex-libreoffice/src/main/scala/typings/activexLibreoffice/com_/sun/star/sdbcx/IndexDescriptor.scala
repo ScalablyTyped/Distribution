@@ -7,26 +7,25 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to define a new index for a database table.
   * @see com.sun.star.sdbcx.Index
   */
-@js.native
 trait IndexDescriptor
-  extends Descriptor
+  extends StObject
+     with Descriptor
      with XColumnsSupplier {
   
   /** is the name of the index catalog, may be empty. */
-  var Catalog: String = js.native
+  var Catalog: String
   
   /** indicates that the index is clustered. */
-  var IsClustered: Boolean = js.native
+  var IsClustered: Boolean
   
   /** indicates that the index allow only unique values. */
-  var IsUnique: Boolean = js.native
+  var IsUnique: Boolean
 }
 object IndexDescriptor {
   

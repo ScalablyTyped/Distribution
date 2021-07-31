@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2SentimentAnalysisRequestConfig extends StObject {
   
   /** Instructs the service to perform sentiment analysis on `query_text`. If not provided, sentiment analysis is not performed on `query_text`. */
-  var analyzeQueryTextSentiment: js.UndefOr[Boolean] = js.native
+  var analyzeQueryTextSentiment: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudDialogflowV2SentimentAnalysisRequestConfig {
   

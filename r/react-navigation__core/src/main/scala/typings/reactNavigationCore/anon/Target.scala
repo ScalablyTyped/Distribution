@@ -2,18 +2,16 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target[EventName /* <: String */] extends StObject {
   
-  val target: js.UndefOr[String] = js.native
+  val target: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the event (e.g. `focus`, `blur`)
     */
-  val `type`: EventName = js.native
+  val `type`: EventName
 }
 object Target {
   
@@ -25,7 +23,7 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target[_], EventName /* <: String */] (val x: Self with Target[EventName]) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target[?], EventName /* <: String */] (val x: Self & Target[EventName]) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

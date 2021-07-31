@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainMod {
@@ -69,6 +68,10 @@ object domainMod {
   /* static members */
   object Domain {
     
+    @JSImport("@pulumi/aws/codeartifact/domain", "Domain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -78,45 +81,39 @@ object domainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
-    @JSImport("@pulumi/aws/codeartifact/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact/domain", "Domain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domain.Domain */ Boolean]
   }
   
-  @js.native
   trait DomainArgs extends StObject {
     
     /**
       * The name of the domain to create. All domain names in an AWS Region that are in the same AWS account must be unique. The domain name is used as the prefix in DNS hostnames. Do not use sensitive information in a domain name because it is publicly discoverable.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN).
       */
-    val encryptionKey: Input[String] = js.native
+    val encryptionKey: Input[String]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainArgs {
     
@@ -143,48 +140,47 @@ object domainMod {
     }
   }
   
-  @js.native
   trait DomainState extends StObject {
     
     /**
       * The ARN of Domain.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The total size of all assets in the domain.
       */
-    val assetSizeBytes: js.UndefOr[Input[Double]] = js.native
+    val assetSizeBytes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A timestamp that represents the date and time the domain was created in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    val createdTime: js.UndefOr[Input[String]] = js.native
+    val createdTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the domain to create. All domain names in an AWS Region that are in the same AWS account must be unique. The domain name is used as the prefix in DNS hostnames. Do not use sensitive information in a domain name because it is publicly discoverable.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN).
       */
-    val encryptionKey: js.UndefOr[Input[String]] = js.native
+    val encryptionKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID that owns the domain.
       */
-    val owner: js.UndefOr[Input[String]] = js.native
+    val owner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of repositories in the domain.
       */
-    val repositoryCount: js.UndefOr[Input[Double]] = js.native
+    val repositoryCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainState {
     

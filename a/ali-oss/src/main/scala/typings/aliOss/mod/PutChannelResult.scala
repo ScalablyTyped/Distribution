@@ -2,17 +2,15 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutChannelResult extends StObject {
   
-  var playUrls: js.Array[String] = js.native
+  var playUrls: js.Array[String]
   
-  var publishUrls: js.Array[String] = js.native
+  var publishUrls: js.Array[String]
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object PutChannelResult {
   

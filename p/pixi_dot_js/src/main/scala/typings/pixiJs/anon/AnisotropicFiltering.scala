@@ -8,23 +8,21 @@ import typings.std.WEBGLDrawBuffers
 import typings.std.WEBGLLoseContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnisotropicFiltering extends StObject {
   
-  var anisotropicFiltering: EXTTextureFilterAnisotropic = js.native
+  var anisotropicFiltering: EXTTextureFilterAnisotropic
   
-  var depthTexture: WEBGLDepthTexture = js.native
+  var depthTexture: WEBGLDepthTexture
   
-  var drawBuffers: WEBGLDrawBuffers = js.native
+  var drawBuffers: WEBGLDrawBuffers
   
-  var floatTexture: OESTextureFloat = js.native
+  var floatTexture: OESTextureFloat
   
-  var loseContext: WEBGLLoseContext = js.native
+  var loseContext: WEBGLLoseContext
   
-  var vertexArrayObject: OESVertexArrayObject = js.native
+  var vertexArrayObject: OESVertexArrayObject
 }
 object AnisotropicFiltering {
   

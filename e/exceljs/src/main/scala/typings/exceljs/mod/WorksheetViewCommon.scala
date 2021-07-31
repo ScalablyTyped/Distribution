@@ -2,48 +2,46 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetViewCommon extends StObject {
   
   /**
   	 * The currently selected cell
   	 */
-  var activeCell: String = js.native
+  var activeCell: String
   
   /**
   	 * Sets the worksheet view's orientation to right-to-left, `false` by default
   	 */
-  var rightToLeft: Boolean = js.native
+  var rightToLeft: Boolean
   
   /**
   	 * Shows or hides the gridlines (shown for cells where borders have not been defined),
   	 * `true` by default
   	 */
-  var showGridLines: Boolean = js.native
+  var showGridLines: Boolean
   
   /**
   	 * Shows or hides the row and column headers (e.g. A1, B1 at the top and 1,2,3 on the left,
   	 * `true` by default
   	 */
-  var showRowColHeaders: Boolean = js.native
+  var showRowColHeaders: Boolean
   
   /**
   	 * Shows or hides the ruler in Page Layout, `true` by default
   	 */
-  var showRuler: Boolean = js.native
+  var showRuler: Boolean
   
   /**
   	 * 	Percentage zoom to use for the view, `100` by default
   	 */
-  var zoomScale: Double = js.native
+  var zoomScale: Double
   
   /**
   	 * 	Normal zoom for the view, `100` by default
   	 */
-  var zoomScaleNormal: Double = js.native
+  var zoomScaleNormal: Double
 }
 object WorksheetViewCommon {
   

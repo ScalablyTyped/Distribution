@@ -6,26 +6,24 @@ import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait RadarSearchRequest extends StObject {
   
-  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   
-  var keyword: js.UndefOr[String] = js.native
+  var keyword: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[LatLng | LatLngLiteral] = js.native
+  var location: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RadarSearchRequest {
   

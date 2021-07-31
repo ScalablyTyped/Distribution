@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a bounding rectangle. */
-@js.native
 trait BitmapBounds extends StObject {
   
   /** The Height, in pixels, of the bounding box */
-  var height: Double = js.native
+  var height: Double
   
   /** The Width, in pixels, of the bounding box. */
-  var width: Double = js.native
+  var width: Double
   
   /** The X coordinate, in pixels, of the top left corner of the bounding box. */
-  var x: Double = js.native
+  var x: Double
   
   /** The Y coordinate, in pixels, of the top left corner of the bounding box. */
-  var y: Double = js.native
+  var y: Double
 }
 object BitmapBounds {
   

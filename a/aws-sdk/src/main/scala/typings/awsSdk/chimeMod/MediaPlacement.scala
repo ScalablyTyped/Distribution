@@ -2,46 +2,44 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPlacement extends StObject {
   
   /**
     * The audio fallback URL.
     */
-  var AudioFallbackUrl: js.UndefOr[UriType] = js.native
+  var AudioFallbackUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The audio host URL.
     */
-  var AudioHostUrl: js.UndefOr[UriType] = js.native
+  var AudioHostUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The screen data URL.
     */
-  var ScreenDataUrl: js.UndefOr[UriType] = js.native
+  var ScreenDataUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The screen sharing URL.
     */
-  var ScreenSharingUrl: js.UndefOr[UriType] = js.native
+  var ScreenSharingUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The screen viewing URL.
     */
-  var ScreenViewingUrl: js.UndefOr[UriType] = js.native
+  var ScreenViewingUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The signaling URL.
     */
-  var SignalingUrl: js.UndefOr[UriType] = js.native
+  var SignalingUrl: js.UndefOr[UriType] = js.undefined
   
   /**
     * The turn control URL.
     */
-  var TurnControlUrl: js.UndefOr[UriType] = js.native
+  var TurnControlUrl: js.UndefOr[UriType] = js.undefined
 }
 object MediaPlacement {
   

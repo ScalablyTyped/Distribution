@@ -4,19 +4,28 @@ import typings.esfxDisposable.distMod.Disposable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
   
   @JSImport("@esfx/cancelable/dist", "CancelError")
   @js.native
-  class CancelError () extends Error {
+  class CancelError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @js.native
-  trait CancelSubscription extends Disposable {
+  trait CancelSubscription
+    extends StObject
+       with Disposable {
     
     /**
       * Unsubscribes from a cancellation signal.
@@ -25,18 +34,25 @@ object distMod {
   }
   object CancelSubscription {
     
+    @JSImport("@esfx/cancelable/dist", "CancelSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a `CancelSubscription` object for an `unsubscribe` callback.
       * @param unsubscribe The callback to execute when the `unsubscribe()` method is called.
       */
-    @JSImport("@esfx/cancelable/dist", "CancelSubscription.create")
-    @js.native
-    def create(unsubscribe: js.Function0[Unit]): CancelSubscription = js.native
+    @scala.inline
+    def create(unsubscribe: js.Function0[Unit]): CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[CancelSubscription]
   }
   
   @js.native
   trait Cancelable extends StObject
   object Cancelable {
+    
+    @JSImport("@esfx/cancelable/dist", "Cancelable")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define a method to retrieve the `CancelSignal` for an object.
@@ -55,27 +71,23 @@ object distMod {
     /**
       * Determines whether a value is a `Cancelable` object.
       */
-    @JSImport("@esfx/cancelable/dist", "Cancelable.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether a value is a `Cancelable` object.
       * @deprecated Use `Cancelable.hasInstance` instead.
       */
-    @JSImport("@esfx/cancelable/dist", "Cancelable.isCancelable")
-    @js.native
-    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = js.native
+    @scala.inline
+    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether `cancelable` is in the signaled state.
       */
-    @JSImport("@esfx/cancelable/dist", "Cancelable.isSignaled")
-    @js.native
-    def isSignaled(): Boolean = js.native
-    @JSImport("@esfx/cancelable/dist", "Cancelable.isSignaled")
-    @js.native
-    def isSignaled(cancelable: Cancelable): Boolean = js.native
+    @scala.inline
+    def isSignaled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")().asInstanceOf[Boolean]
+    @scala.inline
+    def isSignaled(cancelable: Cancelable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@esfx/cancelable/dist", "Cancelable.name")
     @js.native
@@ -88,30 +100,32 @@ object distMod {
     @js.native
     val none: CancelableCancelSignal = js.native
     
-    @JSImport("@esfx/cancelable/dist", "Cancelable.subscribe")
-    @js.native
-    def subscribe(cancelable: js.UndefOr[scala.Nothing], onSignaled: js.Function0[Unit]): CancelSubscription = js.native
+    @scala.inline
+    def subscribe(cancelable: Unit, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
     /**
       * Subscribes to be notified when a `cancelable` becomes signaled.
       */
-    @JSImport("@esfx/cancelable/dist", "Cancelable.subscribe")
-    @js.native
-    def subscribe(cancelable: Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = js.native
+    @scala.inline
+    def subscribe(cancelable: Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
     
     /**
       * Throws a `CancelError` exception if the provided `cancelable` is in the signaled state.
       */
-    @JSImport("@esfx/cancelable/dist", "Cancelable.throwIfSignaled")
-    @js.native
-    def throwIfSignaled(): Unit = js.native
-    @JSImport("@esfx/cancelable/dist", "Cancelable.throwIfSignaled")
-    @js.native
-    def throwIfSignaled(cancelable: Cancelable): Unit = js.native
+    @scala.inline
+    def throwIfSignaled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")().asInstanceOf[Unit]
+    @scala.inline
+    def throwIfSignaled(cancelable: Cancelable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
-  trait CancelableSource extends Cancelable
+  trait CancelableSource
+    extends StObject
+       with Cancelable
   object CancelableSource {
+    
+    @JSImport("@esfx/cancelable/dist", "CancelableSource")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@esfx/cancelable/dist", "CancelableSource.cancel")
     @js.native
@@ -127,43 +141,39 @@ object distMod {
     /**
       * Determines whether a value is a `CancelableSource` object.
       */
-    @JSImport("@esfx/cancelable/dist", "CancelableSource.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
     
     /**
       * Determines whether a value is a `Cancelable` object.
       * @deprecated Use `Cancelable.hasInstance` instead.
       */
-    @JSImport("@esfx/cancelable/dist", "CancelableSource.isCancelable")
-    @js.native
-    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = js.native
+    @scala.inline
+    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether a value is a `CancelableSource` object.
       * @deprecated Use `CancelableSource.hasInstance` instead.
       */
-    @JSImport("@esfx/cancelable/dist", "CancelableSource.isCancelableSource")
-    @js.native
-    def isCancelableSource(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = js.native
+    @scala.inline
+    def isCancelableSource(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelableSource")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
     
     @JSImport("@esfx/cancelable/dist", "CancelableSource.name")
     @js.native
     val name: /* "CancelableSource" */ String = js.native
   }
   
-  @js.native
   trait CancelSignal extends StObject {
     
     /**
       * Gets a value indicating whether cancellation was signaled.
       */
-    val signaled: Boolean = js.native
+    val signaled: Boolean
     
     /**
       * Subscribes to notifications for when the object becomes signaled.
       */
-    def subscribe(onSignaled: js.Function0[Unit]): CancelSubscription = js.native
+    def subscribe(onSignaled: js.Function0[Unit]): CancelSubscription
   }
   object CancelSignal {
     
@@ -185,5 +195,7 @@ object distMod {
   }
   
   @js.native
-  trait CancelableCancelSignal extends CancelSignal
+  trait CancelableCancelSignal
+    extends StObject
+       with CancelSignal
 }

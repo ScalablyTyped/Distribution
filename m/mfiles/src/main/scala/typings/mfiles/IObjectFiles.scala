@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectFiles extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetObjectFileByNameForFileSystem(NameForFileSystem: String): IObjectFile = js.native
+  def GetObjectFileByNameForFileSystem(NameForFileSystem: String): IObjectFile
   
-  def GetObjectFileIndexByNameForFileSystem(NameForFileSystem: String): Double = js.native
+  def GetObjectFileIndexByNameForFileSystem(NameForFileSystem: String): Double
   
-  def Item(Index: Double): IObjectFile = js.native
+  def Item(Index: Double): IObjectFile
   
-  def Sort(ObjectFileComparer: IObjectFileComparer): Unit = js.native
+  def Sort(ObjectFileComparer: IObjectFileComparer): Unit
   
-  def ToJSON(): String = js.native
+  def ToJSON(): String
 }
 object IObjectFiles {
   

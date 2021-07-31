@@ -4,24 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  val __optgroup: js.UndefOr[String] = js.native
+  val __optgroup: js.UndefOr[String] = js.undefined
   
-  val clearableValue: js.UndefOr[Boolean] = js.native
+  val clearableValue: js.UndefOr[Boolean] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val id: js.UndefOr[String | Double] = js.native
+  val id: js.UndefOr[String | Double] = js.undefined
   
-  val isCreatable: js.UndefOr[Boolean] = js.native
+  val isCreatable: js.UndefOr[Boolean] = js.undefined
   
-  val label: js.UndefOr[ReactNode] = js.native
+  val label: js.UndefOr[ReactNode] = js.undefined
 }
 object Option {
   

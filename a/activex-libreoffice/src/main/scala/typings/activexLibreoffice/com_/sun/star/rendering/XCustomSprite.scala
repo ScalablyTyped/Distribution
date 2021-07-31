@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * TODO: Maybe more than alpha has to be overridden from render state. TODO: Provide means to change the output area
   */
-@js.native
-trait XCustomSprite extends XSprite {
+trait XCustomSprite
+  extends StObject
+     with XSprite {
   
   /**
     * Query a render canvas for this sprite's content.
@@ -27,7 +27,7 @@ trait XCustomSprite extends XSprite {
     * corner, i.e. the origin of the sprite's canvas device coordinate system will move with the sprite across the screen.
     * @returns the canvas the sprite content can be rendered into.
     */
-  val ContentCanvas: XCanvas = js.native
+  val ContentCanvas: XCanvas
   
   /**
     * Query a render canvas for this sprite's content.
@@ -37,7 +37,7 @@ trait XCustomSprite extends XSprite {
     * corner, i.e. the origin of the sprite's canvas device coordinate system will move with the sprite across the screen.
     * @returns the canvas the sprite content can be rendered into.
     */
-  def getContentCanvas(): XCanvas = js.native
+  def getContentCanvas(): XCanvas
 }
 object XCustomSprite {
   

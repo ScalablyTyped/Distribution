@@ -2,7 +2,6 @@ package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with the listed device policy AND 3) all listed access levels are granted
   * AND 4) the request was sent at a time allowed by the DateTimeRestriction.
   */
-@js.native
 trait SchemaCondition extends StObject {
   
   /**
     * Device specific restrictions, all restrictions must hold for the
     * Condition to be true. If not specified, all devices are allowed.
     */
-  var devicePolicy: js.UndefOr[SchemaDevicePolicy] = js.native
+  var devicePolicy: js.UndefOr[SchemaDevicePolicy] = js.undefined
   
   /**
     * CIDR block IP subnetwork specification. May be IPv4 or IPv6. Note that
@@ -32,7 +30,7 @@ trait SchemaCondition extends StObject {
     * subnets in order for this Condition to be true. If empty, all IP
     * addresses are allowed.
     */
-  var ipSubnetworks: js.UndefOr[js.Array[String]] = js.native
+  var ipSubnetworks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The request must be made by one of the provided user or service accounts.
@@ -40,20 +38,20 @@ trait SchemaCondition extends StObject {
     * `serviceAccount:{emailid}` If not specified, a request may come from any
     * user.
     */
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether to negate the Condition. If true, the Condition becomes a NAND
     * over its non-empty fields, each field must be false for the Condition
     * overall to be satisfied. Defaults to false.
     */
-  var negate: js.UndefOr[Boolean] = js.native
+  var negate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The request must originate from one of the provided countries/regions.
     * Must be valid ISO 3166-1 alpha-2 codes.
     */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of other access levels defined in the same `Policy`, referenced by
@@ -62,7 +60,7 @@ trait SchemaCondition extends StObject {
     * true. Example:
     * &quot;`accessPolicies/MY_POLICY/accessLevels/LEVEL_NAME&quot;`
     */
-  var requiredAccessLevels: js.UndefOr[js.Array[String]] = js.native
+  var requiredAccessLevels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCondition {
   

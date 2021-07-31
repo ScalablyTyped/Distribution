@@ -1,8 +1,5 @@
 package typings.connectMongodbSession
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.connectMongodbSession.mod.connectMongodbSession.MongoDBStore
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
@@ -11,39 +8,39 @@ import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
 import typings.mongodb.mod.MongoClient
 import typings.mongodb.mod.MongoClientOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-mongodb-session", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     fn: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, _, _, Query]
+      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ]
-  ): MongoDBStore = js.native
+  ): MongoDBStore = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[MongoDBStore]
+  
+  @JSImport("connect-mongodb-session", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object connectMongodbSession {
     
-    @js.native
     trait ConnectionInfo extends StObject {
       
-      var collection: String = js.native
+      var collection: String
       
-      var connectionOptions: js.UndefOr[MongoClientOptions] = js.native
+      var connectionOptions: js.UndefOr[MongoClientOptions] = js.undefined
       
-      var databaseName: js.UndefOr[String] = js.native
+      var databaseName: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Double] = js.native
+      var expires: js.UndefOr[Double] = js.undefined
       
-      var idField: js.UndefOr[String] = js.native
+      var idField: js.UndefOr[String] = js.undefined
       
-      var uri: String = js.native
+      var uri: String
     }
     object ConnectionInfo {
       
@@ -88,16 +85,20 @@ object mod {
       }
     }
     
-    @js.native
-    trait MongoDBStore
-      extends Store
-         with Instantiable0[MongoDBStore]
-         with Instantiable1[/* connection */ ConnectionInfo, MongoDBStore]
-         with Instantiable2[
-              js.UndefOr[/* connection */ ConnectionInfo], 
-              /* callback */ js.Function1[/* error */ Error, Unit], 
-              MongoDBStore
-            ] {
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - scala.Any because Inheritance from two classes. Inlined 
+    - scala.AnyRef because Inheritance from two classes. Inlined 
+    - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+    - js.Any because Inheritance from two classes. Inlined 
+    - scala.AnyRef because Inheritance from two classes. Inlined 
+    - js.Object because Inheritance from two classes. Inlined 
+    - js.Any because Inheritance from two classes. Inlined 
+    - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+    - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+    - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
+    - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+    - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
+    trait MongoDBStore extends Store {
       
       var client: MongoClient = js.native
     }

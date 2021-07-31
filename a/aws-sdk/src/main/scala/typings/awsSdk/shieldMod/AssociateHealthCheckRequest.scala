@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateHealthCheckRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the health check to associate with the protection.
     */
-  var HealthCheckArn: typings.awsSdk.shieldMod.HealthCheckArn = js.native
+  var HealthCheckArn: typings.awsSdk.shieldMod.HealthCheckArn
   
   /**
     * The unique identifier (ID) for the Protection object to add the health check association to. 
     */
-  var ProtectionId: typings.awsSdk.shieldMod.ProtectionId = js.native
+  var ProtectionId: typings.awsSdk.shieldMod.ProtectionId
 }
 object AssociateHealthCheckRequest {
   

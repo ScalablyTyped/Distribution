@@ -3,17 +3,15 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamodb {
   
-  @js.native
   trait GetTableServerSideEncryption extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var kmsKeyArn: js.UndefOr[String] = js.native
+    var kmsKeyArn: js.UndefOr[String] = js.undefined
   }
   object GetTableServerSideEncryption {
     
@@ -40,13 +38,12 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait GlobalTableReplica extends StObject {
     
     /**
       * AWS region name of replica DynamoDB Table. e.g. `us-east-1`
       */
-    var regionName: Input[String] = js.native
+    var regionName: Input[String]
   }
   object GlobalTableReplica {
     
@@ -64,18 +61,17 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableAttribute extends StObject {
     
     /**
       * The name of the index
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object TableAttribute {
     
@@ -97,26 +93,25 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableGlobalSecondaryIndex extends StObject {
     
     /**
       * The name of the hash key in the index; must be
       * defined as an attribute in the resource.
       */
-    var hashKey: Input[String] = js.native
+    var hashKey: Input[String]
     
     /**
       * The name of the index
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * Only required with `INCLUDE` as a
       * projection type; a list of attributes to project into the index. These
       * do not need to be defined as attributes on the table.
       */
-    var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * One of `ALL`, `INCLUDE` or `KEYS_ONLY`
@@ -125,22 +120,22 @@ object dynamodb {
       * projects only the keys specified in the _non_key_attributes_
       * parameter.
       */
-    var projectionType: Input[String] = js.native
+    var projectionType: Input[String]
     
     /**
       * The name of the range key; must be defined
       */
-    var rangeKey: js.UndefOr[Input[String]] = js.native
+    var rangeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    var readCapacity: js.UndefOr[Input[Double]] = js.native
+    var readCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    var writeCapacity: js.UndefOr[Input[Double]] = js.native
+    var writeCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object TableGlobalSecondaryIndex {
     
@@ -191,20 +186,19 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableLocalSecondaryIndex extends StObject {
     
     /**
       * The name of the index
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * Only required with `INCLUDE` as a
       * projection type; a list of attributes to project into the index. These
       * do not need to be defined as attributes on the table.
       */
-    var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * One of `ALL`, `INCLUDE` or `KEYS_ONLY`
@@ -213,12 +207,12 @@ object dynamodb {
       * projects only the keys specified in the _non_key_attributes_
       * parameter.
       */
-    var projectionType: Input[String] = js.native
+    var projectionType: Input[String]
     
     /**
       * The name of the range key; must be defined
       */
-    var rangeKey: Input[String] = js.native
+    var rangeKey: Input[String]
   }
   object TableLocalSecondaryIndex {
     
@@ -251,13 +245,12 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TablePointInTimeRecovery extends StObject {
     
     /**
       * Indicates whether ttl is enabled (true) or disabled (false).
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
   }
   object TablePointInTimeRecovery {
     
@@ -275,13 +268,12 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableReplica extends StObject {
     
     /**
       * Region name of the replica.
       */
-    var regionName: Input[String] = js.native
+    var regionName: Input[String]
   }
   object TableReplica {
     
@@ -299,19 +291,18 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableServerSideEncryption extends StObject {
     
     /**
       * Indicates whether ttl is enabled (true) or disabled (false).
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
     
     /**
       * The ARN of the CMK that should be used for the AWS KMS encryption.
       * This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
       */
-    var kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
   }
   object TableServerSideEncryption {
     
@@ -335,18 +326,17 @@ object dynamodb {
     }
   }
   
-  @js.native
   trait TableTtl extends StObject {
     
     /**
       * The name of the table attribute to store the TTL timestamp in.
       */
-    var attributeName: Input[String] = js.native
+    var attributeName: Input[String]
     
     /**
       * Indicates whether ttl is enabled (true) or disabled (false).
       */
-    var enabled: js.UndefOr[Input[Boolean]] = js.native
+    var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object TableTtl {
     

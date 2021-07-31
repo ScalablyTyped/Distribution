@@ -2,7 +2,6 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object container {
@@ -10,30 +9,31 @@ object container {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ @js.native
-  trait IAbstractContainer extends IComponent {
+  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ trait IAbstractContainer
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (String/Number) */
-    var activeItem: js.UndefOr[js.Any] = js.native
+    var activeItem: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Adds Component s to this Container
       * @param component Ext.Component[]|Object[]/Ext.Component.../Object... Either one or more Components to add or an Array of Components to add. See items for additional information.
       * @returns Ext.Component[]/Ext.Component The Components that were added.
       */
-    var add: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], _]] = js.native
+    var add: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Invoked after the Container has laid out and rendered if necessary its child Components
       * @param layout Ext.layout.container.Container
       */
     var afterLayout: js.UndefOr[
         js.Function1[/* layout */ js.UndefOr[typings.extjs.Ext.layout.container.IContainer], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String[]) */
-    var bubbleEvents: js.UndefOr[Array] = js.native
+    var bubbleEvents: js.UndefOr[Array] = js.undefined
     
     /** [Method] Cascades down the component container heirarchy from this component passed in the first call  calling the specified
       * @param fn Function The function to call
@@ -48,13 +48,13 @@ object container {
           /* args */ js.UndefOr[Array], 
           typings.extjs.Ext.IContainer
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Determines whether the passed Component is either an immediate child of this Container or whether it is a descendant
       * @param comp Ext.Component The Component to test.
@@ -63,49 +63,49 @@ object container {
       */
     var contains: js.UndefOr[
         js.Function2[/* comp */ js.UndefOr[IComponent], /* deep */ js.UndefOr[Boolean], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var defaultType: js.UndefOr[java.lang.String] = js.native
+    var defaultType: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object/Function) */
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var detachOnRemove: js.UndefOr[Boolean] = js.native
+    var detachOnRemove: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Inherit docs Disable all immediate children that was previously disabled Override disable because onDisable only gets
       * @returns Ext.container.AbstractContainer this
       */
     @JSName("disable")
-    var disable_IAbstractContainer: js.UndefOr[js.Function0[this.type]] = js.native
+    var disable_IAbstractContainer: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Manually force this container s layout to be recalculated
       * @returns Ext.container.Container this
       */
-    var doLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.native
+    var doLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Examines this container s items property and gets a direct child component of this container
       * @param comp String/Number This parameter may be any of the following:  a String : representing the itemId or id of the child component. a Number : representing the position of the child component within the items property For additional information see Ext.util.MixedCollection.get.
       * @returns Ext.Component The component (if found).
       */
-    var getComponent: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.native
+    var getComponent: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.undefined
     
     /** [Method] Returns the layout instance currently associated with this Container
       * @returns Ext.layout.container.Container The layout
       */
-    var getLayout: js.UndefOr[js.Function0[typings.extjs.Ext.layout.container.IContainer]] = js.native
+    var getLayout: js.UndefOr[js.Function0[typings.extjs.Ext.layout.container.IContainer]] = js.undefined
     
     /** [Method] Used by ComponentQuery child and down to retrieve all of the items which can potentially be considered a child of th
       * @param deep Object
       */
-    var getRefItems: js.UndefOr[js.Function1[/* deep */ js.UndefOr[js.Any], Unit]] = js.native
+    var getRefItems: js.UndefOr[js.Function1[/* deep */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Inserts a Component into this Container at a specified index
       * @param index Number The index at which the Component will be inserted into the Container's items collection
@@ -114,18 +114,18 @@ object container {
       */
     var insert: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any], IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Determines whether this Container is an ancestor of the passed Component
       * @param possibleDescendant Ext.Component The Component to test for presence within this Container's subtree.
       */
-    var isAncestor: js.UndefOr[js.Function1[/* possibleDescendant */ js.UndefOr[IComponent], Unit]] = js.native
+    var isAncestor: js.UndefOr[js.Function1[/* possibleDescendant */ js.UndefOr[IComponent], Unit]] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Ext.enums.Layout/Object) */
-    var layout: js.UndefOr[js.Any] = js.native
+    var layout: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Moves a Component within the Container
       * @param fromIdx Number/Ext.Component The index/component to move.
@@ -135,7 +135,7 @@ object container {
     @JSName("move")
     var move_IAbstractContainer: js.UndefOr[
         js.Function2[/* fromIdx */ js.UndefOr[js.Any], /* toIdx */ js.UndefOr[Double], IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method is invoked after a new Component has been added
       * @param component Ext.Component
@@ -143,16 +143,16 @@ object container {
       */
     var onAdd: js.UndefOr[
         js.Function2[/* component */ js.UndefOr[IComponent], /* position */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method is invoked before adding a new child Component
       * @param item Ext.Component
       */
-    var onBeforeAdd: js.UndefOr[js.Function1[/* item */ js.UndefOr[IComponent], Unit]] = js.native
+    var onBeforeAdd: js.UndefOr[js.Function1[/* item */ js.UndefOr[IComponent], Unit]] = js.undefined
     
     /** [Method] Called after the component is moved this method is empty by default but can be implemented by any subclass that need  */
     @JSName("onPosition")
-    var onPosition_IAbstractContainer: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPosition_IAbstractContainer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] This method is invoked after a new Component has been removed
       * @param component Ext.Component
@@ -160,30 +160,30 @@ object container {
       */
     var onRemove: js.UndefOr[
         js.Function2[/* component */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Allows addition of behavior to the resize operation  */
     @JSName("onResize")
-    var onResize_IAbstractContainer: js.UndefOr[js.Function0[Unit]] = js.native
+    var onResize_IAbstractContainer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed selector
       * @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
       * @returns Ext.Component[] Components which matched the selector
       */
-    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed function
       * @param fn Function The matcher function. It will be called with a single argument, the component being tested.
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.native
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
       * @returns Ext.Component The matching id, null if not found
       */
-    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.native
+    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
     
     /** [Method] Removes a component from this container
       * @param component Ext.Component/String The component reference or id to remove.
@@ -196,16 +196,16 @@ object container {
           /* autoDestroy */ js.UndefOr[Boolean], 
           IComponent
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes all components from this container
       * @param autoDestroy Boolean True to automatically invoke the removed Component's Ext.Component.destroy function. Defaults to the value of this Container's autoDestroy config.
       * @returns Ext.Component[] Array of the removed components
       */
-    var removeAll: js.UndefOr[js.Function1[/* autoDestroy */ js.UndefOr[Boolean], Array]] = js.native
+    var removeAll: js.UndefOr[js.Function1[/* autoDestroy */ js.UndefOr[Boolean], Array]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var suspendLayout: js.UndefOr[Boolean] = js.native
+    var suspendLayout: js.UndefOr[Boolean] = js.undefined
   }
   object IAbstractContainer {
     
@@ -225,7 +225,7 @@ object container {
       def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
       
       @scala.inline
-      def setAdd(value: /* component */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      def setAdd(value: /* component */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
@@ -257,7 +257,7 @@ object container {
       def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
       @scala.inline
-      def setChild(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
@@ -299,7 +299,7 @@ object container {
       def setDoLayoutUndefined: Self = StObject.set(x, "doLayout", js.undefined)
       
       @scala.inline
-      def setDown(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
@@ -420,21 +420,21 @@ object container {
     }
   }
   
-  @js.native
   trait IButtonGroup
-    extends typings.extjs.Ext.panel.IPanel {
+    extends StObject
+       with typings.extjs.Ext.panel.IPanel {
     
     /** [Config Option] (Number) */
-    var columns: js.UndefOr[Double] = js.native
+    var columns: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var defaultButtonUI: js.UndefOr[java.lang.String] = js.native
+    var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] private
       * @param component Object
       */
     @JSName("onBeforeAdd")
-    var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.native
+    var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IButtonGroup {
     
@@ -467,11 +467,12 @@ object container {
     }
   }
   
-  @js.native
-  trait IContainer extends IAbstractContainer {
+  trait IContainer
+    extends StObject
+       with IAbstractContainer {
     
     /** [Config Option] (Number/Object) */
-    var anchorSize: js.UndefOr[js.Any] = js.native
+    var anchorSize: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Return the immediate child Component in which the passed element is located
       * @param el Ext.Element/HTMLElement/String The element to test (or ID of element).
@@ -480,7 +481,7 @@ object container {
       */
     var getChildByElement: js.UndefOr[
         js.Function2[/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean], IComponent]
-      ] = js.native
+      ] = js.undefined
   }
   object IContainer {
     
@@ -507,8 +508,9 @@ object container {
     }
   }
   
-  @js.native
-  trait IDockingContainer extends IBase {
+  trait IDockingContainer
+    extends StObject
+       with IBase {
     
     /** [Method] Adds docked item s to the container
       * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' parameter on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
@@ -517,16 +519,16 @@ object container {
       */
     var addDocked: js.UndefOr[
         js.Function2[/* component */ js.UndefOr[js.Any], /* pos */ js.UndefOr[Double], Array]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var defaultDockWeights: js.UndefOr[js.Any] = js.native
+    var defaultDockWeights: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Finds a docked component by id itemId or position
       * @param comp String/Number The id, itemId or position of the docked component (see getComponent for details)
       * @returns Ext.Component The docked component (if found)
       */
-    var getDockedComponent: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.native
+    var getDockedComponent: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.undefined
     
     /** [Method] Retrieves an array of all currently docked Components
       * @param selector String A ComponentQuery selector string to filter the returned items.
@@ -539,7 +541,7 @@ object container {
           /* beforeBody */ js.UndefOr[Boolean], 
           Array
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Inserts docked item s to the panel at the indicated position
       * @param pos Number The index at which the Component will be inserted
@@ -547,17 +549,17 @@ object container {
       */
     var insertDocked: js.UndefOr[
         js.Function2[/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Invoked after a docked item is added to the Panel
       * @param component Ext.Component
       */
-    var onDockedAdd: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.native
+    var onDockedAdd: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.undefined
     
     /** [Method] Invoked after a docked item is removed from the Panel
       * @param component Ext.Component
       */
-    var onDockedRemove: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.native
+    var onDockedRemove: js.UndefOr[js.Function1[/* component */ js.UndefOr[IComponent], Unit]] = js.undefined
     
     /** [Method] Removes the docked item from the panel
       * @param item Ext.Component The Component to remove.
@@ -565,7 +567,7 @@ object container {
       */
     var removeDocked: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IDockingContainer {
     
@@ -632,16 +634,16 @@ object container {
   
   type IMonitor = IBase
   
-  @js.native
   trait IViewport
-    extends typings.extjs.Ext.container.IContainer {
+    extends StObject
+       with typings.extjs.Ext.container.IContainer {
     
     /** [Property] (Boolean) */
-    var isViewport: js.UndefOr[Boolean] = js.native
+    var isViewport: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_IViewport: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_IViewport: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IViewport {
     

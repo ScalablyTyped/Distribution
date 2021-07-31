@@ -2,13 +2,11 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object representing a cell position within the viewport of the terminal.
   */
-@js.native
 trait IViewportRangePosition extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait IViewportRangePosition extends StObject {
     * of the viewport. This can be thought of as how a cursor is positioned in
     * a text editor.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y position of the cell. This is a 0-based index that refers to a
     * specific row.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IViewportRangePosition {
   

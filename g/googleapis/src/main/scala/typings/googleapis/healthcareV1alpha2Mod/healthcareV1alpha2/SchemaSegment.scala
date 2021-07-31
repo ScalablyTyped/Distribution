@@ -3,13 +3,11 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A segment in a structured format.
   */
-@js.native
 trait SchemaSegment extends StObject {
   
   /**
@@ -23,18 +21,18 @@ trait SchemaSegment extends StObject {
     * the value &quot;bar&quot;. - (1[2].1, &quot;baz&quot;): Component 1 of
     * Instance 2 of Field 1, which is repeated, has the value &quot;baz&quot;.
     */
-  var fields: js.UndefOr[StringDictionary[String]] = js.native
+  var fields: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A string that indicates the type of segment, e.g., EVN, PID.
     */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Set ID for segments that can be in a set. This can be empty if it is
     * missing or it is not applicable.
     */
-  var setId: js.UndefOr[String] = js.native
+  var setId: js.UndefOr[String] = js.undefined
 }
 object SchemaSegment {
   

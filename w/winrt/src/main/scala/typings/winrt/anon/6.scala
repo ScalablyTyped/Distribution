@@ -6,15 +6,34 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Security.Authentication.OnlineId.UserIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  def completed(asyncInfo: IAsyncOperation[UserIdentity], asyncStatus: AsyncStatus): Unit = js.native
+  def completed(asyncInfo: IAsyncOperation[UserIdentity], asyncStatus: AsyncStatus): Unit
   @JSName("completed")
-  var completed_Original: AsyncOperationCompletedHandler[UserIdentity] = js.native
+  var completed_Original: AsyncOperationCompletedHandler[UserIdentity]
   
-  def getResults(): UserIdentity = js.native
+  def getResults(): UserIdentity
+}
+object `6` {
+  
+  @scala.inline
+  def apply(
+    completed: (/* asyncInfo */ IAsyncOperation[UserIdentity], /* asyncStatus */ AsyncStatus) => Unit,
+    getResults: () => UserIdentity
+  ): `6` = {
+    val __obj = js.Dynamic.literal(completed = js.Any.fromFunction2(completed), getResults = js.Any.fromFunction0(getResults))
+    __obj.asInstanceOf[`6`]
+  }
+  
+  @scala.inline
+  implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCompleted(value: (/* asyncInfo */ IAsyncOperation[UserIdentity], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setGetResults(value: () => UserIdentity): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+  }
 }

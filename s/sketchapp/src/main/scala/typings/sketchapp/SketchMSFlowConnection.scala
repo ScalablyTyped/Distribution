@@ -4,23 +4,21 @@ import typings.sketchapp.sketchappStrings.back
 import typings.sketchapp.sketchappStrings.immutableFlowConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSFlowConnection extends StObject {
   
-  var _class: immutableFlowConnection = js.native
+  var _class: immutableFlowConnection
   
-  var animationType: Double = js.native
+  var animationType: Double
   
-  var destinationArtboardID: js.UndefOr[String | back] = js.native
+  var destinationArtboardID: js.UndefOr[String | back] = js.undefined
 }
 object SketchMSFlowConnection {
   
   @scala.inline
-  def apply(_class: immutableFlowConnection, animationType: Double): SketchMSFlowConnection = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any])
+  def apply(animationType: Double): SketchMSFlowConnection = {
+    val __obj = js.Dynamic.literal(_class = "immutableFlowConnection", animationType = animationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSFlowConnection]
   }
   

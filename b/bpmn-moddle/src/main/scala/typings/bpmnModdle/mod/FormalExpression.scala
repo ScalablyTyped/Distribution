@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormalExpression extends Expression {
+trait FormalExpression
+  extends StObject
+     with Expression {
   
-  var evaluatesToTypeRef: ItemDefinition = js.native
+  var evaluatesToTypeRef: ItemDefinition
   
-  var language: String = js.native
+  var language: String
 }
 object FormalExpression {
   

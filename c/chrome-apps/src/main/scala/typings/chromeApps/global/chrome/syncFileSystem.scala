@@ -37,7 +37,6 @@ import typings.filesystem.FileSystem
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -57,6 +56,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 27
   */
 object syncFileSystem {
+  
+  @JSGlobal("chrome.syncFileSystem")
+  @js.native
+  val ^ : js.Any = js.native
   
   object ConflictResolutionPolicy {
     
@@ -209,8 +212,7 @@ object syncFileSystem {
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
     */
-  @JSGlobal("chrome.syncFileSystem.getConflictResolutionPolicy")
-  @js.native
+  @scala.inline
   def getConflictResolutionPolicy(
     callback: js.Function1[
       /* policy */ ToStringLiteral[
@@ -223,7 +225,7 @@ object syncFileSystem {
       ], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConflictResolutionPolicy")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns the FileStatus for the given fileEntry.
@@ -231,8 +233,7 @@ object syncFileSystem {
     * the service's conflict resolution policy is set to 'manual'.
     * @see FileStatus
     * */
-  @JSGlobal("chrome.syncFileSystem.getFileStatus")
-  @js.native
+  @scala.inline
   def getFileStatus(
     fileEntry: FileEntry,
     callback: js.Function1[
@@ -246,15 +247,14 @@ object syncFileSystem {
       ], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileStatus")(fileEntry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Returns each FileStatus for the given fileEntry array. Typically called with the result from dirReader.readEntries(). */
-  @JSGlobal("chrome.syncFileSystem.getFileStatuses")
-  @js.native
+  @scala.inline
   def getFileStatuses(
     fileEntries: js.Array[FileEntry],
     callback: js.Function1[/* status */ js.Array[FileStatusInfo], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileStatuses")(fileEntries.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns the current sync backend status.
@@ -262,8 +262,7 @@ object syncFileSystem {
     * @param callback
     * @see ServiceStatus
     */
-  @JSGlobal("chrome.syncFileSystem.getServiceStatus")
-  @js.native
+  @scala.inline
   def getServiceStatus(
     callback: js.Function1[
       /* status */ ToStringLiteral[
@@ -276,16 +275,15 @@ object syncFileSystem {
       ], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceStatus")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns the current usage and quota in bytes for the 'syncable' file storage for the app.
     * @param fileSystem
     * @param callback
     */
-  @JSGlobal("chrome.syncFileSystem.getUsageAndQuota")
-  @js.native
-  def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = js.native
+  @scala.inline
+  def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsageAndQuota")(fileSystem.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when a file has been updated by the background sync service. */
   @JSGlobal("chrome.syncFileSystem.onFileStatusChanged")
@@ -315,9 +313,8 @@ object syncFileSystem {
     * checked in the callback.
     * @param callback A callback type for requestFileSystem.
     */
-  @JSGlobal("chrome.syncFileSystem.requestFileSystem")
-  @js.native
-  def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = js.native
+  @scala.inline
+  def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFileSystem")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the default conflict resolution policy for the 'syncable' file storage
@@ -329,8 +326,7 @@ object syncFileSystem {
     * @see ConflictResolutionPolicy
     * @param [callback] A generic result callback to indicate success or failure.
     */
-  @JSGlobal("chrome.syncFileSystem.setConflictResolutionPolicy")
-  @js.native
+  @scala.inline
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       LASTWRITEWIN, 
@@ -340,9 +336,8 @@ object syncFileSystem {
         last_write_win_ | manual__
       ]
     ]
-  ): Unit = js.native
-  @JSGlobal("chrome.syncFileSystem.setConflictResolutionPolicy")
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConflictResolutionPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       LASTWRITEWIN, 
@@ -353,5 +348,5 @@ object syncFileSystem {
       ]
     ],
     callback: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConflictResolutionPolicy")(policy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

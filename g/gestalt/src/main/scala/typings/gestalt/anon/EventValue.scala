@@ -3,15 +3,13 @@ package typings.gestalt.anon
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventValue extends StObject {
   
-  var event: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event] = js.native
+  var event: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object EventValue {
   

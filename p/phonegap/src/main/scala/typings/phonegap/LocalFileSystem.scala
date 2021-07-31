@@ -2,7 +2,6 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
@@ -10,12 +9,11 @@ interface LocalFileSystem {
   requestFileSystem: Function;
   resolveLocalFileSystemURI: Function;
 }*/
-@js.native
 trait LocalFileSystem extends StObject {
   
-  var PERSISTENT: Double = js.native
+  var PERSISTENT: Double
   
-  var TEMPORARY: Double = js.native
+  var TEMPORARY: Double
 }
 object LocalFileSystem {
   

@@ -11,7 +11,6 @@ import typings.std.Required
 import typings.tsEssentials.anon.TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -20,29 +19,33 @@ object typesMod {
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends ts-essentials.ts-essentials/dist/types.Primitive? T[P] : T[P] extends std.Function? T[P] : T[P] extends std.Date? T[P] : T[P] extends std.Array<infer U>? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias ts-essentials.ts-essentials/dist/types.DeepPartial<U> * / object> : T[P] extends std.ReadonlyArray<infer U>? std.ReadonlyArray</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias ts-essentials.ts-essentials/dist/types.DeepPartial<U> * / object> : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias ts-essentials.ts-essentials/dist/types.DeepPartial<T[P]> * / object}
-    */ typings.tsEssentials.tsEssentialsStrings.DeepPartial with TopLevel[js.Any]
+    */ typings.tsEssentials.tsEssentialsStrings.DeepPartial & TopLevel[js.Any]
   
   type DeepReadonly[T] = js.Any | DeepReadonlyObject[T] | T | (DeepReadonlyArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
   ])
   
   @js.native
-  trait DeepReadonlyArray[T] extends ReadonlyArray[DeepReadonly[T]]
+  trait DeepReadonlyArray[T]
+    extends StObject
+       with ReadonlyArray[DeepReadonly[T]]
   
   type DeepReadonlyObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepReadonly<T[P]>}
-    */ typings.tsEssentials.tsEssentialsStrings.DeepReadonlyObject with TopLevel[T]
+    */ typings.tsEssentials.tsEssentialsStrings.DeepReadonlyObject & TopLevel[T]
   
   type DeepRequired[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: -? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias ts-essentials.ts-essentials/dist/types.DeepRequired<std.NonNullable<T[K]>> * / object}
-    */ typings.tsEssentials.tsEssentialsStrings.DeepRequired with TopLevel[js.Any]) | (DeepRequiredArray[
+    */ typings.tsEssentials.tsEssentialsStrings.DeepRequired & TopLevel[js.Any]) | (DeepRequiredArray[
     NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
     ]
   ]) | NonNullable[T]
   
   @js.native
-  trait DeepRequiredArray[T] extends Array[DeepRequired[T]]
+  trait DeepRequiredArray[T]
+    extends StObject
+       with Array[DeepRequired[T]]
   
   type DeepWritable[T] = DeepWritableObject[T] | T | (WritableArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
@@ -50,11 +53,11 @@ object typesMod {
   
   type DeepWritableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepWritable<T[P]>}
-    */ typings.tsEssentials.tsEssentialsStrings.DeepWritableObject with TopLevel[T]
+    */ typings.tsEssentials.tsEssentialsStrings.DeepWritableObject & TopLevel[T]
   
   type Dictionary[T, K /* <: String | Double */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: T}
-    */ typings.tsEssentials.tsEssentialsStrings.Dictionary with TopLevel[js.Any]
+    */ typings.tsEssentials.tsEssentialsStrings.Dictionary & TopLevel[js.Any]
   
   type DictionaryValues[T] = js.Any
   
@@ -67,17 +70,17 @@ object typesMod {
   type IsFullyWritable[T /* <: js.Object */] = IsEqualConsideringWritability[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Q in keyof T ]: T[Q]}
-    */ typings.tsEssentials.tsEssentialsStrings.IsFullyWritable with TopLevel[T], 
+    */ typings.tsEssentials.tsEssentialsStrings.IsFullyWritable & TopLevel[T], 
     Writable[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Q in keyof T ]: T[Q]}
-    */ typings.tsEssentials.tsEssentialsStrings.IsFullyWritable with TopLevel[T]
+    */ typings.tsEssentials.tsEssentialsStrings.IsFullyWritable & TopLevel[T]
     ]
   ]
   
-  type MarkRequired[T, RK /* <: /* keyof T */ String */] = (Exclude[T, RK]) with (Required[Pick[T, RK]])
+  type MarkRequired[T, RK /* <: /* keyof T */ String */] = (Exclude[T, RK]) & (Required[Pick[T, RK]])
   
-  type Merge[M, N] = (Omit[M, Extract[/* keyof M */ String, /* keyof N */ String]]) with N
+  type Merge[M, N] = (Omit[M, Extract[/* keyof M */ String, /* keyof N */ String]]) & N
   
   type NonNever[T /* <: js.Object */] = Pick[
     T, 
@@ -91,7 +94,7 @@ object typesMod {
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends P? never : K}[keyof T] */ js.Any
   ]
   
-  type Opaque[K, T] = T with TYPE[K]
+  type Opaque[K, T] = T & TYPE[K]
   
   type Primitive = js.UndefOr[String | Double | Boolean | js.BigInt | js.Symbol | Null]
   
@@ -105,10 +108,12 @@ object typesMod {
   
   type Writable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: T[P]}
-    */ typings.tsEssentials.tsEssentialsStrings.Writable with TopLevel[T]
+    */ typings.tsEssentials.tsEssentialsStrings.Writable & TopLevel[T]
   
   @js.native
-  trait WritableArray[T] extends Array[DeepWritable[T]]
+  trait WritableArray[T]
+    extends StObject
+       with Array[DeepWritable[T]]
   
   type WritableKeys[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: -? ts-essentials.ts-essentials/dist/types.IsFullyWritable<std.Pick<T, P>> extends true? P : never}[keyof T] */ js.Any
 }

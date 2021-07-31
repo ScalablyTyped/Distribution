@@ -3,7 +3,6 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
   **/
 class ViewBox ()
-  extends typings.winjs.WinJS.UI.ViewBox {
+  extends StObject
+     with typings.winjs.WinJS.UI.ViewBox {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object ViewBox {

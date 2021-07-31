@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventCategoriesMessage extends StObject {
   
   /**
     * This parameter is not currently supported.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The type of source that is generating the events. Valid values: db-instance | db-parameter-group | db-security-group | db-snapshot
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
 }
 object DescribeEventCategoriesMessage {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Orders")
@@ -32,7 +31,7 @@ class ResourceOrders protected () extends StObject {
     */
   def refund(): GaxiosPromise[Unit] = js.native
   def refund(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def refund(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def refund(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourceOrdersRefund): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourceOrdersRefund, callback: BodyResponseCallback[Unit]): Unit = js.native
   def refund(

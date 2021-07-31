@@ -2,64 +2,62 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Included in the result of a query execution to describe details of the columns involved.
   */
-@js.native
 trait Metadata[T] extends StObject {
   
   /**
     * Database byte size. This is only set for DB_TYPE_VARCHAR, DB_TYPE_CHAR and DB_TYPE_RAW column types.
     */
-  var byteSize: js.UndefOr[Double] = js.native
+  var byteSize: js.UndefOr[Double] = js.undefined
   
   /**
     * One of the Node-oracledb Type Constant values.
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracledbconstantsdbtype
     */
-  var dbType: js.UndefOr[Double] = js.native
+  var dbType: js.UndefOr[Double] = js.undefined
   
   /**
     * The class associated with the database type. This is only set if the database type is an object type.
     */
-  var dbTypeClass: js.UndefOr[DBObjectClass[T]] = js.native
+  var dbTypeClass: js.UndefOr[DBObjectClass[T]] = js.undefined
   
   /**
     * Name of the database type, such as “NUMBER” or “VARCHAR2”. For object types, this will be the object name.
     */
-  var dbTypeName: js.UndefOr[String] = js.native
+  var dbTypeName: js.UndefOr[String] = js.undefined
   
   /**
     * One of the Node-oracledb Type Constant values.
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracledbconstantsnodbtype
     */
-  var fetchType: js.UndefOr[Double] = js.native
+  var fetchType: js.UndefOr[Double] = js.undefined
   
   /**
     * The column name follows Oracle’s standard name-casing rules. It will commonly be uppercase,
     * since most applications create tables using unquoted, case-insensitive names.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Indicates whether NULL values are permitted for this column.
     */
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set only for DB_TYPE_NUMBER, DB_TYPE_TIMESTAMP, DB_TYPE_TIMESTAMP_TZ and DB_TYPE_TIMESTAMP_LTZ columns.
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Set only for DB_TYPE_NUMBER columns.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object Metadata {
   
@@ -70,7 +68,7 @@ object Metadata {
   }
   
   @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata[_], T] (val x: Self with Metadata[T]) extends AnyVal {
+  implicit class MetadataMutableBuilder[Self <: Metadata[?], T] (val x: Self & Metadata[T]) extends AnyVal {
     
     @scala.inline
     def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.vegaEmbed
 import typings.vegaEmbed.mod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vegaEmbedStrings {
@@ -59,12 +58,16 @@ object vegaEmbedStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait vega extends Mode
+  sealed trait vega
+    extends StObject
+       with Mode
   @scala.inline
   def vega: vega = "vega".asInstanceOf[vega]
   
   @js.native
-  sealed trait `vega-lite` extends Mode
+  sealed trait `vega-lite`
+    extends StObject
+       with Mode
   @scala.inline
   def `vega-lite`: `vega-lite` = "vega-lite".asInstanceOf[`vega-lite`]
   

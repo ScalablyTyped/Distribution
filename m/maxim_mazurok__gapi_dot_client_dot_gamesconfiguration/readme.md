@@ -10,9 +10,9 @@ TypeScript typings for Google Play Game Services Publishing API v1configuration
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gamesconfiguration |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 910 |
+| # downloads        | 1000 |
 | # stars            | 0 |
 
 ## Links

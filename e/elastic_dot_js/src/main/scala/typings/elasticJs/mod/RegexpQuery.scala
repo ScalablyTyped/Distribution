@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "RegexpQuery")
 @js.native
-class RegexpQuery protected () extends Query {
+class RegexpQuery protected ()
+  extends StObject
+     with Query {
   /*
     Matches documents that have fields matching a regular expression.
     */

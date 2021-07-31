@@ -2,16 +2,14 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/preview
-@js.native
 trait Preview extends StObject {
   
-  var artwork: js.UndefOr[Artwork] = js.native
+  var artwork: js.UndefOr[Artwork] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Preview {
   

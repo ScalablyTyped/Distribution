@@ -2,24 +2,22 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a change made to a configuration.
   */
-@js.native
 trait SchemaMutationRecord extends StObject {
   
   /**
     * When the change occurred.
     */
-  var mutateTime: js.UndefOr[String] = js.native
+  var mutateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user making the change.
     */
-  var mutatedBy: js.UndefOr[String] = js.native
+  var mutatedBy: js.UndefOr[String] = js.undefined
 }
 object SchemaMutationRecord {
   

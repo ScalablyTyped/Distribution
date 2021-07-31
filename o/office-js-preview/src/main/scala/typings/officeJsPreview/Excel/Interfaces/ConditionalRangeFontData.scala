@@ -6,11 +6,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.Single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeFont.toJSON()`. */
-@js.native
 trait ConditionalRangeFontData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ConditionalRangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait ConditionalRangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ConditionalRangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ConditionalRangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait ConditionalRangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var underline: js.UndefOr[ConditionalRangeFontUnderlineStyle | None | Single | Double] = js.native
+  var underline: js.UndefOr[ConditionalRangeFontUnderlineStyle | None | Single | Double] = js.undefined
 }
 object ConditionalRangeFontData {
   

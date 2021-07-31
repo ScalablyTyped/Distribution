@@ -4,19 +4,17 @@ import typings.winrt.Windows.Devices.Input.PointerDeviceType
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IManipulationCompletedEventArgs extends StObject {
   
-  var cumulative: ManipulationDelta = js.native
+  var cumulative: ManipulationDelta
   
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
-  var position: Point = js.native
+  var position: Point
   
-  var velocities: ManipulationVelocities = js.native
+  var velocities: ManipulationVelocities
 }
 object IManipulationCompletedEventArgs {
   

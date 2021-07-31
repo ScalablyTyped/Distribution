@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to create and initialize a new link of specified type. */
-@js.native
-trait XLinkFactory extends XInterface {
+trait XLinkFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new link and transport parameters for persistent initialization.
@@ -34,7 +34,7 @@ trait XLinkFactory extends XInterface {
     sEntryName: String,
     aArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
 }
 object XLinkFactory {
   

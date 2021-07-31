@@ -6,29 +6,27 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cakey extends StObject {
   
-  var cakey: js.Tuple2[String, String] = js.native
+  var cakey: js.Tuple2[String, String]
   
-  var ext: js.UndefOr[js.Array[Extension]] = js.native
+  var ext: js.UndefOr[js.Array[Extension]] = js.undefined
   
-  var issue: StringParam = js.native
+  var issue: StringParam
   
-  var notafter: StringParam = js.native
+  var notafter: StringParam
   
-  var sbjpubkey: String = js.native
+  var sbjpubkey: String
   
-  var serial: IntegerParam = js.native
+  var serial: IntegerParam
   
-  var sigalg: NameParam = js.native
+  var sigalg: NameParam
   
-  var sighex: String = js.native
+  var sighex: String
   
-  var subject: StringParam = js.native
+  var subject: StringParam
 }
 object Cakey {
   

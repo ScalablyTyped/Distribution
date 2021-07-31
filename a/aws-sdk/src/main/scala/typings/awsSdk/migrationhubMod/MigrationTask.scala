@@ -2,36 +2,34 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationTask extends StObject {
   
   /**
     * Unique identifier that references the migration task. Do not store personal data in this field. 
     */
-  var MigrationTaskName: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTaskName] = js.native
+  var MigrationTaskName: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTaskName] = js.undefined
   
   /**
     * A name that identifies the vendor of the migration tool being used.
     */
-  var ProgressUpdateStream: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStream] = js.native
+  var ProgressUpdateStream: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStream] = js.undefined
   
   /**
     * Information about the resource that is being migrated. This data will be used to map the task to a resource in the Application Discovery Service repository.
     */
-  var ResourceAttributeList: js.UndefOr[LatestResourceAttributeList] = js.native
+  var ResourceAttributeList: js.UndefOr[LatestResourceAttributeList] = js.undefined
   
   /**
     * Task object encapsulating task information.
     */
-  var Task: js.UndefOr[typings.awsSdk.migrationhubMod.Task] = js.native
+  var Task: js.UndefOr[typings.awsSdk.migrationhubMod.Task] = js.undefined
   
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.native
+  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
 }
 object MigrationTask {
   

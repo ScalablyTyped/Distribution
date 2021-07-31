@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.LayoutData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlexItemData extends LayoutData {
+trait FlexItemData
+  extends StObject
+     with LayoutData {
   
   /**
     * Gets current value of property <code>alignSelf</code>.Determines cross-axis alignment of individual

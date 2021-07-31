@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPropertyVariant extends StObject {
   
   /**
     * The asset property value is a Boolean value that must be TRUE or FALSE. You can also specify an expression. If you use an expression, the evaluated result should be a Boolean value.
     */
-  var booleanValue: js.UndefOr[AssetPropertyBooleanValue] = js.native
+  var booleanValue: js.UndefOr[AssetPropertyBooleanValue] = js.undefined
   
   /**
     * The asset property value is a double. You can also specify an expression. If you use an expression, the evaluated result should be a double.
     */
-  var doubleValue: js.UndefOr[AssetPropertyDoubleValue] = js.native
+  var doubleValue: js.UndefOr[AssetPropertyDoubleValue] = js.undefined
   
   /**
     * The asset property value is an integer. You can also specify an expression. If you use an expression, the evaluated result should be an integer.
     */
-  var integerValue: js.UndefOr[AssetPropertyIntegerValue] = js.native
+  var integerValue: js.UndefOr[AssetPropertyIntegerValue] = js.undefined
   
   /**
     * The asset property value is a string. You can also specify an expression. If you use an expression, the evaluated result should be a string.
     */
-  var stringValue: js.UndefOr[AssetPropertyStringValue] = js.native
+  var stringValue: js.UndefOr[AssetPropertyStringValue] = js.undefined
 }
 object AssetPropertyVariant {
   

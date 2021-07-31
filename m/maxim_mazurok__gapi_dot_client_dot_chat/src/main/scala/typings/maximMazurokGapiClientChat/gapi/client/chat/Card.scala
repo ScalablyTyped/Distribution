@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Card extends StObject {
   
   /** The actions of this card. */
-  var cardActions: js.UndefOr[js.Array[CardAction]] = js.native
+  var cardActions: js.UndefOr[js.Array[CardAction]] = js.undefined
   
   /** The header of the card. A header usually contains a title and an image. */
-  var header: js.UndefOr[CardHeader] = js.native
+  var header: js.UndefOr[CardHeader] = js.undefined
   
   /** Name of the card. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Sections are separated by a line divider. */
-  var sections: js.UndefOr[js.Array[Section]] = js.native
+  var sections: js.UndefOr[js.Array[Section]] = js.undefined
 }
 object Card {
   

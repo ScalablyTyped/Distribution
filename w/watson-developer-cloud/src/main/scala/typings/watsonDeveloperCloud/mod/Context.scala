@@ -3,23 +3,22 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** State information for the conversation. To maintain state, include the context from the previous response. */
-@js.native
 trait Context
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** The unique identifier of the conversation. */
-  var conversation_id: js.UndefOr[String] = js.native
+  var conversation_id: js.UndefOr[String] = js.undefined
   
   /** Metadata related to the message. */
-  var metadata: js.UndefOr[MessageContextMetadata] = js.native
+  var metadata: js.UndefOr[MessageContextMetadata] = js.undefined
   
   /** For internal use only. */
-  var system: js.UndefOr[SystemResponse] = js.native
+  var system: js.UndefOr[SystemResponse] = js.undefined
 }
 object Context {
   

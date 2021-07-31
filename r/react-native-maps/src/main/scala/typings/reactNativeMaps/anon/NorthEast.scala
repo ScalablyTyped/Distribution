@@ -3,15 +3,13 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.mod.LatLng
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NorthEast extends StObject {
   
-  var northEast: LatLng = js.native
+  var northEast: LatLng
   
-  var southWest: LatLng = js.native
+  var southWest: LatLng
 }
 object NorthEast {
   

@@ -1,6 +1,7 @@
 package typings.electron.mod
 
 import org.scalablytyped.runtime.Shortcut
+import typings.electron.Electron.AutoResizeOptions
 import typings.electron.Electron.BrowserViewConstructorOptions
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.ClientRequestConstructorOptions
@@ -8,6 +9,7 @@ import typings.electron.Electron.ContextBridge
 import typings.electron.Electron.IpcRenderer
 import typings.electron.Electron.MenuItemConstructorOptions
 import typings.electron.Electron.NotificationConstructorOptions
+import typings.electron.Electron.Rectangle
 import typings.electron.Electron.Remote
 import typings.electron.Electron.TouchBarButtonConstructorOptions
 import typings.electron.Electron.TouchBarColorPickerConstructorOptions
@@ -21,10 +23,17 @@ import typings.electron.Electron.TouchBarSliderConstructorOptions
 import typings.electron.Electron.TouchBarSpacerConstructorOptions
 import typings.electron.Electron.WebFrame
 import typings.electron.Electron.WebviewTag
+import typings.electron.electronStrings.checkbox
+import typings.electron.electronStrings.left
+import typings.electron.electronStrings.normal
+import typings.electron.electronStrings.overlay
+import typings.electron.electronStrings.radio
+import typings.electron.electronStrings.right
+import typings.electron.electronStrings.separator
+import typings.electron.electronStrings.submenu
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Renderer {
@@ -32,7 +41,53 @@ object Renderer {
   @JSImport("electron", "Renderer.BrowserWindowProxy")
   @js.native
   class BrowserWindowProxy ()
-    extends typings.electron.Electron.BrowserWindowProxy
+    extends StObject
+       with typings.electron.Electron.BrowserWindowProxy {
+    
+    // Docs: https://electronjs.org/docs/api/browser-window-proxy
+    /**
+      * Removes focus from the child window.
+      */
+    /* CompleteClass */
+    override def blur(): Unit = js.native
+    
+    /**
+      * Forcefully closes the child window without calling its unload event.
+      */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* CompleteClass */
+    var closed: Boolean = js.native
+    
+    /**
+      * Evaluates the code in the child window.
+      */
+    /* CompleteClass */
+    override def eval(code: String): Unit = js.native
+    
+    /**
+      * Focuses the child window (brings the window to front).
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /**
+      * Sends a message to the child window with the specified origin or `*` for no
+      * origin preference.
+      *
+      * In addition to these methods, the child window implements `window.opener` object
+      * with no properties and a single method.
+      */
+    /* CompleteClass */
+    override def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
+    
+    /**
+      * Invokes the print dialog on the child window.
+      */
+    /* CompleteClass */
+    override def print(): Unit = js.native
+  }
   
   @JSImport("electron", "Renderer.contextBridge")
   @js.native
@@ -56,8 +111,34 @@ object Renderer {
       * BrowserView
       */
     class BrowserView ()
-      extends typings.electron.Electron.BrowserView {
+      extends StObject
+         with typings.electron.Electron.BrowserView {
       def this(options: BrowserViewConstructorOptions) = this()
+      
+      /**
+        * The `bounds` of this BrowserView instance as `Object`.
+        *
+        * @experimental
+        */
+      /* CompleteClass */
+      override def getBounds(): Rectangle = js.native
+      
+      /* CompleteClass */
+      override def setAutoResize(options: AutoResizeOptions): Unit = js.native
+      
+      /* CompleteClass */
+      override def setBackgroundColor(color: String): Unit = js.native
+      
+      /**
+        * Resizes and moves the view to the supplied bounds relative to the window.
+        *
+        * @experimental
+        */
+      /* CompleteClass */
+      override def setBounds(bounds: Rectangle): Unit = js.native
+      
+      /* CompleteClass */
+      var webContents: typings.electron.Electron.WebContents_ = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -87,7 +168,8 @@ object Renderer {
     @JSImport("electron", "Renderer.remote.CommandLine")
     @js.native
     class CommandLine ()
-      extends typings.electron.Electron.CommandLine
+      extends StObject
+         with typings.electron.Electron.CommandLine
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.Cookies")
@@ -105,7 +187,8 @@ object Renderer {
     @JSImport("electron", "Renderer.remote.Dock")
     @js.native
     class Dock ()
-      extends typings.electron.Electron.Dock
+      extends StObject
+         with typings.electron.Electron.Dock
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.DownloadItem")
@@ -126,18 +209,56 @@ object Renderer {
       * Menu
       */
     class Menu ()
-      extends typings.electron.Electron.Menu
+      extends StObject
+         with typings.electron.Electron.Menu
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.MenuItem")
     @js.native
     class MenuItem protected ()
-      extends typings.electron.Electron.MenuItem {
+      extends StObject
+         with typings.electron.Electron.MenuItem {
       // Docs: https://electronjs.org/docs/api/menu-item
       /**
         * MenuItem
         */
       def this(options: MenuItemConstructorOptions) = this()
+      
+      /* CompleteClass */
+      var checked: Boolean = js.native
+      
+      /* CompleteClass */
+      var click: js.Function = js.native
+      
+      /* CompleteClass */
+      var commandId: Double = js.native
+      
+      /* CompleteClass */
+      var enabled: Boolean = js.native
+      
+      /* CompleteClass */
+      var id: String = js.native
+      
+      /* CompleteClass */
+      var label: String = js.native
+      
+      /* CompleteClass */
+      var menu: typings.electron.Electron.Menu = js.native
+      
+      /* CompleteClass */
+      var registerAccelerator: Boolean = js.native
+      
+      /* CompleteClass */
+      var sublabel: String = js.native
+      
+      /* CompleteClass */
+      var toolTip: String = js.native
+      
+      /* CompleteClass */
+      var `type`: normal | separator | submenu | checkbox | radio = js.native
+      
+      /* CompleteClass */
+      var visible: Boolean = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -173,24 +294,47 @@ object Renderer {
     @JSImport("electron", "Renderer.remote.TouchBar")
     @js.native
     class TouchBar protected ()
-      extends typings.electron.Electron.TouchBar {
+      extends StObject
+         with typings.electron.Electron.TouchBar {
       // Docs: https://electronjs.org/docs/api/touch-bar
       /**
         * TouchBar
         */
       def this(options: TouchBarConstructorOptions) = this()
+      
+      /* CompleteClass */
+      var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.TouchBarButton")
     @js.native
     class TouchBarButton protected ()
-      extends typings.electron.Electron.TouchBarButton {
+      extends StObject
+         with typings.electron.Electron.TouchBarButton {
       // Docs: https://electronjs.org/docs/api/touch-bar-button
       /**
         * TouchBarButton
         */
       def this(options: TouchBarButtonConstructorOptions) = this()
+      
+      /* CompleteClass */
+      var accessibilityLabel: String = js.native
+      
+      /* CompleteClass */
+      var backgroundColor: String = js.native
+      
+      /* CompleteClass */
+      var enabled: Boolean = js.native
+      
+      /* CompleteClass */
+      var icon: typings.electron.Electron.NativeImage_ = js.native
+      
+      /* CompleteClass */
+      var iconPosition: left | right | overlay = js.native
+      
+      /* CompleteClass */
+      var label: String = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -315,13 +459,15 @@ object Renderer {
     @JSImport("electron", "Renderer.remote.WebRequest")
     @js.native
     class WebRequest ()
-      extends typings.electron.Electron.WebRequest
+      extends StObject
+         with typings.electron.Electron.WebRequest
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.nativeImage")
     @js.native
     class nativeImage ()
-      extends typings.electron.Electron.NativeImage_
+      extends StObject
+         with typings.electron.Electron.NativeImage_
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("electron", "Renderer.remote.session")

@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifierCsvClassifier extends StObject {
   
   /**
     * Enables the processing of files that contain only one column.
     */
-  var allowSingleColumn: js.UndefOr[Input[Boolean]] = js.native
+  var allowSingleColumn: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Indicates whether the CSV file contains a header. This can be one of "ABSENT", "PRESENT", or "UNKNOWN".
     */
-  var containsHeader: js.UndefOr[Input[String]] = js.native
+  var containsHeader: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The delimiter used in the Csv to separate columns.
     */
-  var delimiter: js.UndefOr[Input[String]] = js.native
+  var delimiter: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies whether to trim column values.
     */
-  var disableValueTrimming: js.UndefOr[Input[Boolean]] = js.native
+  var disableValueTrimming: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * A list of strings representing column names.
     */
-  var headers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var headers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     */
-  var quoteSymbol: js.UndefOr[Input[String]] = js.native
+  var quoteSymbol: js.UndefOr[Input[String]] = js.undefined
 }
 object ClassifierCsvClassifier {
   

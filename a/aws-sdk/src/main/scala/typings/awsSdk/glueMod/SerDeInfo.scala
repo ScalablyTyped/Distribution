@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerDeInfo extends StObject {
   
   /**
     * Name of the SerDe.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
   
   /**
     * These key-value pairs define initialization parameters for the SerDe.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * Usually the class that implements the SerDe. An example is org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe.
     */
-  var SerializationLibrary: js.UndefOr[NameString] = js.native
+  var SerializationLibrary: js.UndefOr[NameString] = js.undefined
 }
 object SerDeInfo {
   

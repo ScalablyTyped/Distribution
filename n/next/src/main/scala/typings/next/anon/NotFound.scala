@@ -5,21 +5,20 @@ import typings.next.mod.GetStaticPropsResult
 import typings.next.nextBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotFound
-  extends GetServerSidePropsResult[js.Any]
+  extends StObject
+     with GetServerSidePropsResult[js.Any]
      with GetStaticPropsResult[js.Any] {
   
-  var notFound: `true` = js.native
+  var notFound: `true`
 }
 object NotFound {
   
   @scala.inline
-  def apply(notFound: `true`): NotFound = {
-    val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
+  def apply(): NotFound = {
+    val __obj = js.Dynamic.literal(notFound = true)
     __obj.asInstanceOf[NotFound]
   }
   

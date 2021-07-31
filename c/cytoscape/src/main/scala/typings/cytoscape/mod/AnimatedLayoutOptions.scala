@@ -2,20 +2,18 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimatedLayoutOptions extends StObject {
   
   // whether to transition the node positions
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   // duration of animation in ms if enabled
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   // easing of animation if enabled
-  var animationEasing: js.UndefOr[Boolean] = js.native
+  var animationEasing: js.UndefOr[Boolean] = js.undefined
 }
 object AnimatedLayoutOptions {
   

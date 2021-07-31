@@ -2,19 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var permission_name: js.UndefOr[String] = js.native
+  var permission_name: js.UndefOr[String] = js.undefined
   
-  var resource_server_identifier: js.UndefOr[String] = js.native
+  var resource_server_identifier: js.UndefOr[String] = js.undefined
   
-  var resource_server_name: js.UndefOr[String] = js.native
+  var resource_server_name: js.UndefOr[String] = js.undefined
 }
 object Permission {
   

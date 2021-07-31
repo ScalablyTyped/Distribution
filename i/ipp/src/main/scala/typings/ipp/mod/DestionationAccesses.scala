@@ -2,21 +2,19 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestionationAccesses extends StObject {
   
-  var `access-oauth-token`: js.UndefOr[js.Array[String]] = js.native
+  var `access-oauth-token`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `access-oauth-uri`: js.UndefOr[String] = js.native
+  var `access-oauth-uri`: js.UndefOr[String] = js.undefined
   
-  var `access-password`: js.UndefOr[String] = js.native
+  var `access-password`: js.UndefOr[String] = js.undefined
   
-  var `access-pin`: js.UndefOr[String] = js.native
+  var `access-pin`: js.UndefOr[String] = js.undefined
   
-  var `access-user-name`: js.UndefOr[String] = js.native
+  var `access-user-name`: js.UndefOr[String] = js.undefined
 }
 object DestionationAccesses {
   

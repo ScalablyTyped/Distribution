@@ -2,10 +2,8 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionContext extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait CompletionContext extends StObject {
     *
     * `undefined` if provider was not triggered by a character.
     */
-  var triggerCharacter: js.UndefOr[String] = js.native
+  var triggerCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * How the completion was triggered.
     */
-  var triggerKind: CompletionTriggerKind = js.native
+  var triggerKind: CompletionTriggerKind
 }
 object CompletionContext {
   

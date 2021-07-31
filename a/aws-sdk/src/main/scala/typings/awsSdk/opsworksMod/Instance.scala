@@ -2,216 +2,214 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * The agent version. This parameter is set to INHERIT if the instance inherits the default stack setting or to a a version number for a fixed agent version.
     */
-  var AgentVersion: js.UndefOr[String] = js.native
+  var AgentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * A custom AMI ID to be used to create the instance. For more information, see Instances 
     */
-  var AmiId: js.UndefOr[String] = js.native
+  var AmiId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance architecture: "i386" or "x86_64".
     */
-  var Architecture: js.UndefOr[typings.awsSdk.opsworksMod.Architecture] = js.native
+  var Architecture: js.UndefOr[typings.awsSdk.opsworksMod.Architecture] = js.undefined
   
   /**
     * The instance's Amazon Resource Number (ARN).
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * For load-based or time-based instances, the type.
     */
-  var AutoScalingType: js.UndefOr[typings.awsSdk.opsworksMod.AutoScalingType] = js.native
+  var AutoScalingType: js.UndefOr[typings.awsSdk.opsworksMod.AutoScalingType] = js.undefined
   
   /**
     * The instance Availability Zone. For more information, see Regions and Endpoints.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * An array of BlockDeviceMapping objects that specify the instance's block device mappings.
     */
-  var BlockDeviceMappings: js.UndefOr[typings.awsSdk.opsworksMod.BlockDeviceMappings] = js.native
+  var BlockDeviceMappings: js.UndefOr[typings.awsSdk.opsworksMod.BlockDeviceMappings] = js.undefined
   
   /**
     * The time that the instance was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Whether this is an Amazon EBS-optimized instance.
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the associated Amazon EC2 instance.
     */
-  var Ec2InstanceId: js.UndefOr[String] = js.native
+  var Ec2InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * For container instances, the Amazon ECS cluster's ARN.
     */
-  var EcsClusterArn: js.UndefOr[String] = js.native
+  var EcsClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     * For container instances, the instance's ARN.
     */
-  var EcsContainerInstanceArn: js.UndefOr[String] = js.native
+  var EcsContainerInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The instance Elastic IP address .
     */
-  var ElasticIp: js.UndefOr[String] = js.native
+  var ElasticIp: js.UndefOr[String] = js.undefined
   
   /**
     * The instance host name.
     */
-  var Hostname: js.UndefOr[String] = js.native
+  var Hostname: js.UndefOr[String] = js.undefined
   
   /**
     * For registered instances, the infrastructure class: ec2 or on-premises.
     */
-  var InfrastructureClass: js.UndefOr[String] = js.native
+  var InfrastructureClass: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to install operating system and package updates when the instance boots. The default value is true. If this value is set to false, you must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. 
     */
-  var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.native
+  var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the instance's IAM profile. For more information about IAM ARNs, see Using Identifiers.
     */
-  var InstanceProfileArn: js.UndefOr[String] = js.native
+  var InstanceProfileArn: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type, such as t2.micro.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the last service error. For more information, call DescribeServiceErrors.
     */
-  var LastServiceErrorId: js.UndefOr[String] = js.native
+  var LastServiceErrorId: js.UndefOr[String] = js.undefined
   
   /**
     * An array containing the instance layer IDs.
     */
-  var LayerIds: js.UndefOr[Strings] = js.native
+  var LayerIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The instance's operating system.
     */
-  var Os: js.UndefOr[String] = js.native
+  var Os: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's platform.
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's private DNS name.
     */
-  var PrivateDns: js.UndefOr[String] = js.native
+  var PrivateDns: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's private IP address.
     */
-  var PrivateIp: js.UndefOr[String] = js.native
+  var PrivateIp: js.UndefOr[String] = js.undefined
   
   /**
     * The instance public DNS name.
     */
-  var PublicDns: js.UndefOr[String] = js.native
+  var PublicDns: js.UndefOr[String] = js.undefined
   
   /**
     * The instance public IP address.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
   
   /**
     * For registered instances, who performed the registration.
     */
-  var RegisteredBy: js.UndefOr[String] = js.native
+  var RegisteredBy: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's reported AWS OpsWorks Stacks agent version.
     */
-  var ReportedAgentVersion: js.UndefOr[String] = js.native
+  var ReportedAgentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * For registered instances, the reported operating system.
     */
-  var ReportedOs: js.UndefOr[typings.awsSdk.opsworksMod.ReportedOs] = js.native
+  var ReportedOs: js.UndefOr[typings.awsSdk.opsworksMod.ReportedOs] = js.undefined
   
   /**
     * The instance's root device type. For more information, see Storage for the Root Device.
     */
-  var RootDeviceType: js.UndefOr[typings.awsSdk.opsworksMod.RootDeviceType] = js.native
+  var RootDeviceType: js.UndefOr[typings.awsSdk.opsworksMod.RootDeviceType] = js.undefined
   
   /**
     * The root device volume ID.
     */
-  var RootDeviceVolumeId: js.UndefOr[String] = js.native
+  var RootDeviceVolumeId: js.UndefOr[String] = js.undefined
   
   /**
     * An array containing the instance security group IDs.
     */
-  var SecurityGroupIds: js.UndefOr[Strings] = js.native
+  var SecurityGroupIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The SSH key's Deep Security Agent (DSA) fingerprint.
     */
-  var SshHostDsaKeyFingerprint: js.UndefOr[String] = js.native
+  var SshHostDsaKeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The SSH key's RSA fingerprint.
     */
-  var SshHostRsaKeyFingerprint: js.UndefOr[String] = js.native
+  var SshHostRsaKeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's Amazon EC2 key-pair name.
     */
-  var SshKeyName: js.UndefOr[String] = js.native
+  var SshKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance status:    booting     connection_lost     online     pending     rebooting     requested     running_setup     setup_failed     shutting_down     start_failed     stop_failed     stopped     stopping     terminated     terminating   
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's subnet ID; applicable only if the stack is running in a VPC.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's tenancy option, such as dedicated or host.
     */
-  var Tenancy: js.UndefOr[String] = js.native
+  var Tenancy: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's virtualization type: paravirtual or hvm.
     */
-  var VirtualizationType: js.UndefOr[typings.awsSdk.opsworksMod.VirtualizationType] = js.native
+  var VirtualizationType: js.UndefOr[typings.awsSdk.opsworksMod.VirtualizationType] = js.undefined
 }
 object Instance {
   

@@ -3,23 +3,21 @@ package typings.webpagetest.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var Browsers: String = js.native
+  var Browsers: String
   
-  var Label: String = js.native
+  var Label: String
   
-  var PendingTests: StringDictionary[Double] = js.native
+  var PendingTests: StringDictionary[Double]
   
-  var id: String = js.native
+  var id: String
   
-  var labelShort: String = js.native
+  var labelShort: String
   
-  var location: String = js.native
+  var location: String
 }
 object Location {
   

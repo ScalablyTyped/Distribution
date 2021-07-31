@@ -4,39 +4,37 @@ import typings.maximMazurokGapiClientSqladmin.anon.MysqlExportOptions
 import typings.maximMazurokGapiClientSqladmin.anon.SelectQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportContext extends StObject {
   
   /** Options for exporting data as CSV. *MySQL* and *PostgreSQL* instances only. */
-  var csvExportOptions: js.UndefOr[SelectQuery] = js.native
+  var csvExportOptions: js.UndefOr[SelectQuery] = js.undefined
   
   /**
     * Databases to be exported. *MySQL instances:* If *fileType* is *SQL* and no database is specified, all databases are exported, except for the *mysql* system database. If *fileType*
     * is *CSV*, you can specify one database, either by using this property or by using the *csvExportOptions.selectQuery* property, which takes precedence over this property. *PostgreSQL
     * instances:* You must specify one database to be exported. If *fileType* is *CSV*, this database must match the one specified in the *csvExportOptions.selectQuery* property.
     */
-  var databases: js.UndefOr[js.Array[String]] = js.native
+  var databases: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The file type for the specified uri. *SQL*: The file contains SQL statements. *CSV*: The file contains CSV data. *BAK*: The file contains backup data for a SQL Server instance. */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#exportContext*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Option for export offload. */
-  var offload: js.UndefOr[Boolean] = js.native
+  var offload: js.UndefOr[Boolean] = js.undefined
   
   /** Options for exporting data as SQL statements. */
-  var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.native
+  var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.undefined
   
   /**
     * The path to the file in Google Cloud Storage where the export will be stored. The URI is in the form *gs: //bucketName/fileName*. If the file already exists, the requests //
     * succeeds, but the operation fails. If *fileType* is // *SQL* and the filename ends with .gz, the contents are // compressed.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object ExportContext {
   

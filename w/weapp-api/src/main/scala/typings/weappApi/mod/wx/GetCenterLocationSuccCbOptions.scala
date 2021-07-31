@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetCenterLocationSuccCbOptions extends CommonCallbackOptions {
+trait GetCenterLocationSuccCbOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   @JSName("success")
-  def success_MGetCenterLocationSuccCbOptions(res: LocationBaseOptions): Unit = js.native
+  def success_MGetCenterLocationSuccCbOptions(res: LocationBaseOptions): Unit
 }
 object GetCenterLocationSuccCbOptions {
   

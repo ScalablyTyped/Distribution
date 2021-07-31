@@ -12,7 +12,7 @@ Regular expression for matching email addresses
 | Keywords           | email, address, regex, regexp, string, match, text, test, find, pattern, validate |
 | # releases         | 2 |
 | # dependents       | 41 |
-| # downloads        | 550696 |
+| # downloads        | 576944 |
 | # stars            | 2 |
 
 ## Links

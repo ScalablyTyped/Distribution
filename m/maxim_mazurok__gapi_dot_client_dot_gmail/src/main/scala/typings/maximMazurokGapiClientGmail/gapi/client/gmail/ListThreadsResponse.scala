@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThreadsResponse extends StObject {
   
   /** Page token to retrieve the next page of results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Estimated total number of results. */
-  var resultSizeEstimate: js.UndefOr[Double] = js.native
+  var resultSizeEstimate: js.UndefOr[Double] = js.undefined
   
   /** List of threads. Note that each thread resource does not contain a list of `messages`. The list of `messages` for a given thread can be fetched using the threads.get method. */
-  var threads: js.UndefOr[js.Array[Thread]] = js.native
+  var threads: js.UndefOr[js.Array[Thread]] = js.undefined
 }
 object ListThreadsResponse {
   

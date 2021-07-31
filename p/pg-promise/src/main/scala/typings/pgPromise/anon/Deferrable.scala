@@ -3,17 +3,15 @@ package typings.pgPromise.anon
 import typings.pgPromise.mod.isolationLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deferrable extends StObject {
   
-  var deferrable: js.UndefOr[Boolean] = js.native
+  var deferrable: js.UndefOr[Boolean] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var tiLevel: js.UndefOr[isolationLevel] = js.native
+  var tiLevel: js.UndefOr[isolationLevel] = js.undefined
 }
 object Deferrable {
   

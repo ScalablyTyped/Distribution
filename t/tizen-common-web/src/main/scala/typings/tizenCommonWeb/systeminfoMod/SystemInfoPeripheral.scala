@@ -2,16 +2,16 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoPeripheral extends SystemInfoProperty {
+trait SystemInfoPeripheral
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the video out status.
     */
-  val isVideoOutputOn: Boolean = js.native
+  val isVideoOutputOn: Boolean
 }
 object SystemInfoPeripheral {
   

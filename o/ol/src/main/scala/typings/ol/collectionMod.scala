@@ -8,7 +8,6 @@ import typings.ol.olStrings.changeColonlength
 import typings.ol.olStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectionMod {
@@ -17,8 +16,8 @@ object collectionMod {
   @js.native
   class default[T] () extends Collection[T] {
     def this(opt_array: js.Array[T]) = this()
-    def this(opt_array: js.UndefOr[scala.Nothing], opt_options: Options) = this()
     def this(opt_array: js.Array[T], opt_options: Options) = this()
+    def this(opt_array: Unit, opt_options: Options) = this()
   }
   
   @JSImport("ol/Collection", "CollectionEvent")
@@ -28,7 +27,7 @@ object collectionMod {
     def this(`type`: CollectionEventType) = this()
     def this(`type`: CollectionEventType, opt_element: T) = this()
     def this(`type`: CollectionEventType, opt_element: T, opt_index: Double) = this()
-    def this(`type`: CollectionEventType, opt_element: js.UndefOr[scala.Nothing], opt_index: Double) = this()
+    def this(`type`: CollectionEventType, opt_element: Unit, opt_index: Double) = this()
     
     /**
       * The element that is added to or removed from the collection.
@@ -59,7 +58,7 @@ object collectionMod {
     /**
       * Iterate over each element, calling the provided callback.
       */
-    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], _]): Unit = js.native
+    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], js.Any]): Unit = js.native
     
     /**
       * Get a reference to the underlying Array object. Warning: if the array
@@ -133,10 +132,9 @@ object collectionMod {
     def un_remove(`type`: remove, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

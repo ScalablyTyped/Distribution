@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressEditor.checkMod.DocumentOutlineCheck.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkMod {
@@ -25,10 +24,9 @@ object checkMod {
   
   object DocumentOutlineCheck {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
     }
     object Props {
       

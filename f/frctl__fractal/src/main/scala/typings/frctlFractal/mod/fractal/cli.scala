@@ -7,7 +7,6 @@ import typings.frctlFractal.mod.CliTheme
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cli {
@@ -54,13 +53,13 @@ object cli {
   class Console () extends StObject {
     
     def box(): this.type = js.native
-    def box(header: js.UndefOr[scala.Nothing], body: js.UndefOr[scala.Nothing], footer: String): this.type = js.native
-    def box(header: js.UndefOr[scala.Nothing], body: js.Array[String]): this.type = js.native
-    def box(header: js.UndefOr[scala.Nothing], body: js.Array[String], footer: String): this.type = js.native
     def box(header: String): this.type = js.native
-    def box(header: String, body: js.UndefOr[scala.Nothing], footer: String): this.type = js.native
     def box(header: String, body: js.Array[String]): this.type = js.native
     def box(header: String, body: js.Array[String], footer: String): this.type = js.native
+    def box(header: String, body: Unit, footer: String): this.type = js.native
+    def box(header: Unit, body: js.Array[String]): this.type = js.native
+    def box(header: Unit, body: js.Array[String], footer: String): this.type = js.native
+    def box(header: Unit, body: Unit, footer: String): this.type = js.native
     
     def br(): this.type = js.native
     

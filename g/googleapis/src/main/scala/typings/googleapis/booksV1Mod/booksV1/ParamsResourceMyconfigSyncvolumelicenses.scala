@@ -6,56 +6,56 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMyconfigSyncvolumelicenses extends StandardParameters {
+trait ParamsResourceMyconfigSyncvolumelicenses
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The device/version ID from which to release the restriction.
     */
-  var cpksver: js.UndefOr[String] = js.native
+  var cpksver: js.UndefOr[String] = js.undefined
   
   /**
     * List of features supported by the client, i.e., 'RENTALS'
     */
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set to true to include non-comics series. Defaults to false.
     */
-  var includeNonComicsSeries: js.UndefOr[Boolean] = js.native
+  var includeNonComicsSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ISO-639-1, ISO-3166-1 codes for message localization, i.e. en_US.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The client nonce value.
     */
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to show pre-ordered books. Defaults to false.
     */
-  var showPreorders: js.UndefOr[Boolean] = js.native
+  var showPreorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The volume(s) to request download restrictions for.
     */
-  var volumeIds: js.UndefOr[js.Array[String]] = js.native
+  var volumeIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceMyconfigSyncvolumelicenses {
   

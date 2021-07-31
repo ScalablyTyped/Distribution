@@ -13,10 +13,13 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mapnik", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mapnik", "Datasource")
   @js.native
@@ -61,7 +64,8 @@ object mod {
   @JSImport("mapnik", "Image")
   @js.native
   class Image protected ()
-    extends // constructor(x: number, y: number)
+    extends StObject
+       with // constructor(x: number, y: number)
   Instantiable2[/* x */ Double, /* y */ Double, js.Function0[Unit]] {
     def this(x: Double, y: Double) = this()
     
@@ -97,11 +101,7 @@ object mod {
     def this(z: Double, x: Double, y: Double) = this()
     
     def addData(buffer: Buffer): Unit = js.native
-    def addData(
-      buffer: Buffer,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
+    def addData(buffer: Buffer, options: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def addData(buffer: Buffer, options: Upgrade): Unit = js.native
     def addData(buffer: Buffer, options: Upgrade, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
@@ -142,7 +142,7 @@ object mod {
     def extent(): js.Tuple4[Double, Double, Double, Double] = js.native
     
     def getData(): Unit = js.native
-    def getData(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def getData(options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def getData(options: Compression): Unit = js.native
     def getData(options: Compression, callback: js.Function0[Unit]): Unit = js.native
     
@@ -163,7 +163,7 @@ object mod {
     def query(
       longitude: Double,
       latitude: Double,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* features */ js.Array[Feature], Unit]
     ): Unit = js.native
     def query(longitude: Double, latitude: Double, options: Layer): Unit = js.native
@@ -175,17 +175,14 @@ object mod {
     ): Unit = js.native
   }
   
-  @JSImport("mapnik", "register_datasource")
-  @js.native
-  def registerDatasource(path: String): Unit = js.native
+  @scala.inline
+  def registerDatasource(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_datasource")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mapnik", "register_default_fonts")
-  @js.native
-  def registerDefaultFonts(): Unit = js.native
+  @scala.inline
+  def registerDefaultFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_fonts")().asInstanceOf[Unit]
   
-  @JSImport("mapnik", "register_default_input_plugins")
-  @js.native
-  def registerDefaultInputPlugins(): Unit = js.native
+  @scala.inline
+  def registerDefaultInputPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_input_plugins")().asInstanceOf[Unit]
   
   @JSImport("mapnik", "settings")
   @js.native

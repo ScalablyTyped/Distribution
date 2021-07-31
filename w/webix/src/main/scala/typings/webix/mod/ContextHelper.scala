@@ -2,17 +2,15 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextHelper extends StObject {
   
-  def attachTo(view: js.Any): Unit = js.native
+  def attachTo(view: js.Any): Unit
   
-  def getContext(): js.Any = js.native
+  def getContext(): js.Any
   
-  def setContext(context: js.Any): Unit = js.native
+  def setContext(context: js.Any): Unit
 }
 object ContextHelper {
   

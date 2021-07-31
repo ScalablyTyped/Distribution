@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotMetadata extends StObject {
   
   /** The description of this snapshot. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The device that created the current revision. */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /** The duration associated with this snapshot. Values with sub-millisecond precision can be rounded or trimmed to the closest millisecond. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** The timestamp of the last modification to this snapshot. Values with sub-millisecond precision can be rounded or trimmed to the closest millisecond. */
-  var lastModifyTime: js.UndefOr[String] = js.native
+  var lastModifyTime: js.UndefOr[String] = js.undefined
   
   /** The progress value (64-bit integer set by developer) associated with this snapshot. */
-  var progressValue: js.UndefOr[String] = js.native
+  var progressValue: js.UndefOr[String] = js.undefined
   
   /** The title of this snapshot. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SnapshotMetadata {
   

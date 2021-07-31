@@ -19,7 +19,6 @@ import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.semanticUiReact.semanticUiReactStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerHeaderMod extends Shortcut {
@@ -29,16 +28,18 @@ object headerHeaderMod extends Shortcut {
   val default: HeaderComponent = js.native
   
   @js.native
-  trait HeaderComponent extends FunctionComponent[HeaderProps] {
+  trait HeaderComponent
+    extends StObject
+       with FunctionComponent[HeaderProps] {
     
     var Content: StatelessComponent[HeaderContentProps] = js.native
     
     var Subheader: StatelessComponent[HeaderSubheaderProps] = js.native
   }
   
-  @js.native
   trait HeaderProps
-    extends StrictHeaderProps
+    extends StObject
+       with StrictHeaderProps
        with /* key */ StringDictionary[js.Any]
   object HeaderProps {
     
@@ -49,59 +50,58 @@ object headerHeaderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Attach header  to other content, like a segment. */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.native
+    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
     
     /** Format header to appear inside a content block. */
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Color of the header. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
     /** Show that the header is inactive. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Divide header from the content below it. */
-    var dividing: js.UndefOr[Boolean] = js.native
+    var dividing: js.UndefOr[Boolean] = js.undefined
     
     /** Header can sit to the left or right of other content. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** Add an icon by icon name or pass an Icon. */
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
     /** Add an image by img src or pass an Image. */
-    var image: js.UndefOr[js.Any] = js.native
+    var image: js.UndefOr[js.Any] = js.undefined
     
     /** Inverts the color of the header for dark backgrounds. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Content headings are sized with em and are based on the font-size of their container. */
-    var size: js.UndefOr[tiny | small | medium | large | huge] = js.native
+    var size: js.UndefOr[tiny | small | medium | large | huge] = js.undefined
     
     /** Headers may be formatted to label smaller or de-emphasized content. */
-    var sub: js.UndefOr[Boolean] = js.native
+    var sub: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Header.Subheader. */
-    var subheader: js.UndefOr[js.Any] = js.native
+    var subheader: js.UndefOr[js.Any] = js.undefined
     
     /** Align header content. */
-    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.native
+    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
   }
   object StrictHeaderProps {
     

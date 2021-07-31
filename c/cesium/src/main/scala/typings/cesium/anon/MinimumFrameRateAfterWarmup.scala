@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimumFrameRateAfterWarmup extends StObject {
   
-  var minimumFrameRateAfterWarmup: js.UndefOr[Double] = js.native
+  var minimumFrameRateAfterWarmup: js.UndefOr[Double] = js.undefined
   
-  var minimumFrameRateDuringWarmup: js.UndefOr[Double] = js.native
+  var minimumFrameRateDuringWarmup: js.UndefOr[Double] = js.undefined
   
-  var quietPeriod: js.UndefOr[Double] = js.native
+  var quietPeriod: js.UndefOr[Double] = js.undefined
   
-  var samplingWindow: js.UndefOr[Double] = js.native
+  var samplingWindow: js.UndefOr[Double] = js.undefined
   
-  var scene: typings.cesium.mod.Scene = js.native
+  var scene: typings.cesium.mod.Scene
   
-  var warmupPeriod: js.UndefOr[Double] = js.native
+  var warmupPeriod: js.UndefOr[Double] = js.undefined
 }
 object MinimumFrameRateAfterWarmup {
   

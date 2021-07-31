@@ -5,59 +5,60 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-static-server", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Try to serve the gzipped version of a file automatically when gzip is supported by a client and if the requested
       */
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow transfer of hidden files. defaults to false
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
     /**
       * don't execute any downstream middleware. defaults to true
       */
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
     
     /**
       * request access log to console
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Browser cache max-age in milliseconds. defaults to 0
       */
-    var maxage: js.UndefOr[Double] = js.native
+    var maxage: js.UndefOr[Double] = js.undefined
     
     /**
       * optional default file to serve if requested static is missing
       */
-    var notFoundFile: js.UndefOr[String] = js.native
+    var notFoundFile: js.UndefOr[String] = js.undefined
     
     /**
       * directory that is to be served
       */
-    var rootDir: js.UndefOr[String] = js.native
+    var rootDir: js.UndefOr[String] = js.undefined
     
     /**
       * optional rewrite path
       */
-    var rootPath: js.UndefOr[String] = js.native
+    var rootPath: js.UndefOr[String] = js.undefined
   }
   object Options {
     

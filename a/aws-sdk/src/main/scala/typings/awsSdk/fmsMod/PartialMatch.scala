@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialMatch extends StObject {
   
   /**
     * The reference rule from the master security group of the AWS Firewall Manager policy.
     */
-  var Reference: js.UndefOr[ReferenceRule] = js.native
+  var Reference: js.UndefOr[ReferenceRule] = js.undefined
   
   /**
     * The violation reason.
     */
-  var TargetViolationReasons: js.UndefOr[typings.awsSdk.fmsMod.TargetViolationReasons] = js.native
+  var TargetViolationReasons: js.UndefOr[typings.awsSdk.fmsMod.TargetViolationReasons] = js.undefined
 }
 object PartialMatch {
   

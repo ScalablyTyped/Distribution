@@ -24,10 +24,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoMod {
+  
+  @JSImport("@pulumi/aws/cognito", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/cognito", "IdentityPool")
   @js.native
@@ -46,6 +49,10 @@ object cognitoMod {
   /* static members */
   object IdentityPool {
     
+    @JSImport("@pulumi/aws/cognito", "IdentityPool")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityPool resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,26 +62,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolMod.IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolMod.IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolMod.IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolState): typings.pulumiAws.identityPoolMod.IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolMod.IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolMod.IdentityPool]
     
     /**
       * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityPool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment")
@@ -94,6 +96,10 @@ object cognitoMod {
   /* static members */
   object IdentityPoolRoleAttachment {
     
+    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityPoolRoleAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -103,26 +109,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment]
     
     /**
       * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "IdentityProvider")
@@ -142,6 +143,10 @@ object cognitoMod {
   /* static members */
   object IdentityProvider {
     
+    @JSImport("@pulumi/aws/cognito", "IdentityProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityProvider resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -151,26 +156,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    @JSImport("@pulumi/aws/cognito", "IdentityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityProviderMod.IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityProviderMod.IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityProviderMod.IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityProviderState): typings.pulumiAws.identityProviderMod.IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityProviderMod.IdentityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.identityProviderMod.IdentityProvider]
     
     /**
       * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "IdentityProvider.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "ResourceServer")
@@ -190,6 +190,10 @@ object cognitoMod {
   /* static members */
   object ResourceServer {
     
+    @JSImport("@pulumi/aws/cognito", "ResourceServer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceServer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -199,26 +203,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "ResourceServer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    @JSImport("@pulumi/aws/cognito", "ResourceServer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    @JSImport("@pulumi/aws/cognito", "ResourceServer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceServerState): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    @JSImport("@pulumi/aws/cognito", "ResourceServer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceServerMod.ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceServerMod.ResourceServer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceServerMod.ResourceServer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceServerState): typings.pulumiAws.resourceServerMod.ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceServerMod.ResourceServer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceServerMod.ResourceServer]
     
     /**
       * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "ResourceServer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "UserGroup")
@@ -238,6 +237,10 @@ object cognitoMod {
   /* static members */
   object UserGroup {
     
+    @JSImport("@pulumi/aws/cognito", "UserGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -247,26 +250,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserGroupState): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    @JSImport("@pulumi/aws/cognito", "UserGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userGroupMod.UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userGroupMod.UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userGroupMod.UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserGroupState): typings.pulumiAws.userGroupMod.UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userGroupMod.UserGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userGroupMod.UserGroup]
     
     /**
       * Returns true if the given object is an instance of UserGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "UserGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "UserPool")
@@ -282,11 +280,15 @@ object cognitoMod {
       */
     def this(name: String) = this()
     def this(name: String, args: UserPoolArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: UserPoolArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object UserPool {
+    
+    @JSImport("@pulumi/aws/cognito", "UserPool")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing UserPool resource's state with the given name, ID, and optional extra
@@ -297,26 +299,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolMod.UserPool = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolState): typings.pulumiAws.userPoolMod.UserPool = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolMod.UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolMod.UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolMod.UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolState): typings.pulumiAws.userPoolMod.UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolMod.UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolMod.UserPool]
     
     /**
       * Returns true if the given object is an instance of UserPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "UserPoolClient")
@@ -336,6 +333,10 @@ object cognitoMod {
   /* static members */
   object UserPoolClient {
     
+    @JSImport("@pulumi/aws/cognito", "UserPoolClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPoolClient resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -345,26 +346,21 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolClientMod.UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolClientMod.UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolClientMod.UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolClientState): typings.pulumiAws.userPoolClientMod.UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolClientMod.UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolClientMod.UserPoolClient]
     
     /**
       * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPoolClient.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean]
   }
   
   @JSImport("@pulumi/aws/cognito", "UserPoolDomain")
@@ -384,6 +380,10 @@ object cognitoMod {
   /* static members */
   object UserPoolDomain {
     
+    @JSImport("@pulumi/aws/cognito", "UserPoolDomain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPoolDomain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -393,32 +393,25 @@ object cognitoMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolDomainState): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolDomainMod.UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolDomainMod.UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolDomainState): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolDomainMod.UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.userPoolDomainMod.UserPoolDomain]
     
     /**
       * Returns true if the given object is an instance of UserPoolDomain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito", "UserPoolDomain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/cognito", "getUserPools")
-  @js.native
-  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = js.native
-  @JSImport("@pulumi/aws/cognito", "getUserPools")
-  @js.native
-  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = js.native
+  @scala.inline
+  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserPoolsResult]]
+  @scala.inline
+  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserPoolsResult]]
 }

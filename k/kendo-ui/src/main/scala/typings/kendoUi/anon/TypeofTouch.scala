@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTouch extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Touch = js.native
+  def extend(proto: js.Object): Touch
   
   /* static member */
-  var fn: Touch = js.native
+  var fn: Touch
 }
 object TypeofTouch {
   

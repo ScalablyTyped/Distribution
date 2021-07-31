@@ -2,17 +2,15 @@ package typings.swaggerExpressMiddleware.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilesOptions extends StObject {
   
-  var apiPath: js.UndefOr[String] = js.native
+  var apiPath: js.UndefOr[String] = js.undefined
   
-  var rawFilesPath: js.UndefOr[String] = js.native
+  var rawFilesPath: js.UndefOr[String] = js.undefined
   
-  var useBasePath: js.UndefOr[Boolean] = js.native
+  var useBasePath: js.UndefOr[Boolean] = js.undefined
 }
 object FilesOptions {
   

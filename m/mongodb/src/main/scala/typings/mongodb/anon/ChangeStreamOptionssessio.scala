@@ -9,30 +9,28 @@ import typings.mongodb.mongodbStrings.default_
 import typings.mongodb.mongodbStrings.updateLookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongodb.mongodb.ChangeStreamOptions & {  session :mongodb.mongodb.ClientSession | undefined} */
-@js.native
 trait ChangeStreamOptionssessio extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
-  var fullDocument: js.UndefOr[default_ | updateLookup] = js.native
+  var fullDocument: js.UndefOr[default_ | updateLookup] = js.undefined
   
-  var maxAwaitTimeMS: js.UndefOr[Double] = js.native
+  var maxAwaitTimeMS: js.UndefOr[Double] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var resumeAfter: js.UndefOr[ResumeToken] = js.native
+  var resumeAfter: js.UndefOr[ResumeToken] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
-  var startAfter: js.UndefOr[ResumeToken] = js.native
+  var startAfter: js.UndefOr[ResumeToken] = js.undefined
   
-  var startAtOperationTime: js.UndefOr[Timestamp] = js.native
+  var startAtOperationTime: js.UndefOr[Timestamp] = js.undefined
 }
 object ChangeStreamOptionssessio {
   

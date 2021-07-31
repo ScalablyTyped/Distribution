@@ -6,7 +6,6 @@ import typings.konva.nodeMod.NodeConfig
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragAndDropMod {
@@ -17,9 +16,8 @@ object dragAndDropMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("konva/types/DragAndDrop", "DD._drag")
-    @js.native
-    def drag(evt: js.Any): Unit = js.native
+    @scala.inline
+    def drag(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drag")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/DragAndDrop", "DD._dragElements")
     @js.native
@@ -28,16 +26,13 @@ object dragAndDropMod {
     @scala.inline
     def dragElements_=(x: Map[Double, DragStatus]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_dragElements")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/DragAndDrop", "DD._endDragAfter")
-    @js.native
-    def endDragAfter(evt: js.Any): Unit = js.native
+    @scala.inline
+    def endDragAfter(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragAfter")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("konva/types/DragAndDrop", "DD._endDragBefore")
-    @js.native
-    def endDragBefore(): Unit = js.native
-    @JSImport("konva/types/DragAndDrop", "DD._endDragBefore")
-    @js.native
-    def endDragBefore(evt: js.Any): Unit = js.native
+    @scala.inline
+    def endDragBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")().asInstanceOf[Unit]
+    @scala.inline
+    def endDragBefore(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/DragAndDrop", "DD.isDragging")
     @js.native

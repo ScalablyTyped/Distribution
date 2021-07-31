@@ -12,7 +12,6 @@ import typings.reactNativeCollapsible.reactNativeCollapsibleStrings.center
 import typings.reactNativeCollapsible.reactNativeCollapsibleStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -24,68 +23,67 @@ object accordionMod {
   
   type Accordion[T] = Component[AccordionProps[T], js.Object, js.Any]
   
-  @js.native
   trait AccordionProps[T] extends StObject {
     
     /**
       * Control which indices in the sections array are currently open. If empty, closes all sections.
       */
-    var activeSections: js.Array[Double] = js.native
+    var activeSections: js.Array[Double]
     
     /**
       * Alignment of the content when transitioning, can be top, center or bottom
       *
       * @default top
       */
-    var align: js.UndefOr[top | center | bottom] = js.native
+    var align: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * Optional styling for the Accordion container
       */
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * Controls whether user can interact with accordion
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Duration of transition in milliseconds
       *
       * @default 300
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Function or function name from Easing (or tween-functions if < RN 0.8). Collapsible will try to combine Easing functions for you if you name them like tween-functions.
       *
       * @default easeOutCubic
       */
-    var easing: js.UndefOr[EasingMode | js.Any] = js.native
+    var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
     
     /**
       * Expand content from the bottom instead of the top
       *
       * @default false
       */
-    var expandFromBottom: js.UndefOr[Boolean] = js.native
+    var expandFromBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow more than one section to be expanded at a time. Defaults to false for legacy behavior.
       *
       * @default false
       */
-    var expandMultiple: js.UndefOr[Boolean] = js.native
+    var expandMultiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that is called when the currently active section(s) are updated.
       */
-    def onChange(indexes: js.Array[Double]): Unit = js.native
+    def onChange(indexes: js.Array[Double]): Unit
     
     /**
       * A function that should return a renderable representing the content
       */
-    def renderContent(content: T, index: Double, isActive: Boolean, sections: js.Array[T]): ReactElement = js.native
+    def renderContent(content: T, index: Double, isActive: Boolean, sections: js.Array[T]): ReactElement
     
     /**
       * A function that should return a renderable representing the footer
@@ -98,12 +96,12 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function that should return a renderable representing the header
       */
-    def renderHeader(content: T, index: Double, isActive: Boolean, sections: js.Array[T]): ReactElement = js.native
+    def renderHeader(content: T, index: Double, isActive: Boolean, sections: js.Array[T]): ReactElement
     
     /**
       * A function that should return a renderable representing the section title above the touchable
@@ -116,36 +114,36 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional styling for the section container
       */
-    var sectionContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var sectionContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * An array of sections passed to the render methods
       */
-    var sections: js.Array[T] = js.native
+    var sections: js.Array[T]
     
     /**
       * Component to use for the Touchable
       *
       * @default TouchableHighlight
       */
-    var touchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+    var touchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
     
     /**
       * Object of props to pass to the touchable component
       */
-    var touchableProps: js.UndefOr[js.Object] = js.native
+    var touchableProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The color of the underlay that will show through when tapping on headers.
       *
       * @default black
       */
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object AccordionProps {
     
@@ -162,7 +160,7 @@ object accordionMod {
     }
     
     @scala.inline
-    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps[_], T] (val x: Self with AccordionProps[T]) extends AnyVal {
+    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps[?], T] (val x: Self & AccordionProps[T]) extends AnyVal {
       
       @scala.inline
       def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])

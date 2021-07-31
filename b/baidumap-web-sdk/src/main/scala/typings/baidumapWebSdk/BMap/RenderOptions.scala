@@ -3,21 +3,19 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderOptions extends StObject {
   
-  var autoViewport: js.UndefOr[Boolean] = js.native
+  var autoViewport: js.UndefOr[Boolean] = js.undefined
   
-  var highlightMode: js.UndefOr[HighlightModes] = js.native
+  var highlightMode: js.UndefOr[HighlightModes] = js.undefined
   
-  var map: Map = js.native
+  var map: Map
   
-  var panel: js.UndefOr[String | HTMLElement] = js.native
+  var panel: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var selectFirstResult: js.UndefOr[Boolean] = js.native
+  var selectFirstResult: js.UndefOr[Boolean] = js.undefined
 }
 object RenderOptions {
   

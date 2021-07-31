@@ -2,21 +2,19 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LrsLbConfig extends StObject {
   
-  var child_policy: js.Array[LoadBalancingConfig] = js.native
+  var child_policy: js.Array[LoadBalancingConfig]
   
-  var cluster_name: String = js.native
+  var cluster_name: String
   
-  var eds_service_name: String = js.native
+  var eds_service_name: String
   
-  var locality: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Locality__Output */ js.Any = js.native
+  var locality: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Locality__Output */ js.Any
   
-  var lrs_load_reporting_server_name: String = js.native
+  var lrs_load_reporting_server_name: String
 }
 object LrsLbConfig {
   

@@ -3,13 +3,11 @@ package typings.inquirer.mod
 import typings.inquirer.mod.prompts.PromptConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides prompts for answering questions.
   */
-@js.native
 trait PromptModuleBase extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait PromptModuleBase extends StObject {
     * @param prompt
     * The constructor of the prompt.
     */
-  def registerPrompt(name: String, prompt: PromptConstructor): Unit = js.native
+  def registerPrompt(name: String, prompt: PromptConstructor): Unit
   
   /**
     * Registers the default prompts.
     */
-  def restoreDefaultPrompts(): Unit = js.native
+  def restoreDefaultPrompts(): Unit
 }
 object PromptModuleBase {
   

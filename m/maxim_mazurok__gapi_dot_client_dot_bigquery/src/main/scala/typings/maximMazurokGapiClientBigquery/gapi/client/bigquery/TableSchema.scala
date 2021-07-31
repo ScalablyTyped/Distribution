@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableSchema extends StObject {
   
   /** Describes the fields in a table. */
-  var fields: js.UndefOr[js.Array[TableFieldSchema]] = js.native
+  var fields: js.UndefOr[js.Array[TableFieldSchema]] = js.undefined
 }
 object TableSchema {
   

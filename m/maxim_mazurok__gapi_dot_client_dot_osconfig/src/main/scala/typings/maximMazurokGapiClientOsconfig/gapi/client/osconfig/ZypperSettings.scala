@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZypperSettings extends StObject {
   
   /** Install only patches with these categories. Common categories include security, recommended, and feature. */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of patches to exclude from update. */
-  var excludes: js.UndefOr[js.Array[String]] = js.native
+  var excludes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An exclusive list of patches to be updated. These are the only patches that will be installed using 'zypper patch patch:' command. This field must not be used with any other patch
     * configuration fields.
     */
-  var exclusivePatches: js.UndefOr[js.Array[String]] = js.native
+  var exclusivePatches: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Install only patches with these severities. Common severities include critical, important, moderate, and low. */
-  var severities: js.UndefOr[js.Array[String]] = js.native
+  var severities: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Adds the `--with-optional` flag to `zypper patch`. */
-  var withOptional: js.UndefOr[Boolean] = js.native
+  var withOptional: js.UndefOr[Boolean] = js.undefined
   
   /** Adds the `--with-update` flag, to `zypper patch`. */
-  var withUpdate: js.UndefOr[Boolean] = js.native
+  var withUpdate: js.UndefOr[Boolean] = js.undefined
 }
 object ZypperSettings {
   

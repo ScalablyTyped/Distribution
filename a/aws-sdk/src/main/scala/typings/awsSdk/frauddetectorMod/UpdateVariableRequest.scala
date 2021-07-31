@@ -2,31 +2,29 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVariableRequest extends StObject {
   
   /**
     * The new default value of the variable.
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * The new description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the variable.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The variable type. For more information see Variable types.
     */
-  var variableType: js.UndefOr[String] = js.native
+  var variableType: js.UndefOr[String] = js.undefined
 }
 object UpdateVariableRequest {
   

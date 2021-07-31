@@ -10,9 +10,9 @@ Cross-browser JavaScript library to disable scrolling page.
 | ------------------ | :-------------: |
 | Full name          | scroll-lock |
 | Keywords           | scroll, scrollbar, ios, lock scroll, disable scroll, modal, mobile, overflow |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 386904 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 666446 |
 | # stars            | 0 |
 
 ## Links

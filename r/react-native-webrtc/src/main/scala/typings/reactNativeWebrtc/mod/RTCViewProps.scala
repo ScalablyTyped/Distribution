@@ -5,21 +5,19 @@ import typings.reactNativeWebrtc.reactNativeWebrtcStrings.contain
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.cover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCViewProps extends StObject {
   
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
-  var objectFit: js.UndefOr[contain | cover] = js.native
+  var objectFit: js.UndefOr[contain | cover] = js.undefined
   
-  var streamURL: String = js.native
+  var streamURL: String
   
-  var style: js.UndefOr[ViewStyle] = js.native
+  var style: js.UndefOr[ViewStyle] = js.undefined
   
-  var zOrder: js.UndefOr[Double] = js.native
+  var zOrder: js.UndefOr[Double] = js.undefined
 }
 object RTCViewProps {
   

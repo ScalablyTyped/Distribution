@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subject extends StObject {
   
   /** The country code of the subject. */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** The locality or city of the subject. */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /** The organization of the subject. */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /** The organizational_unit of the subject. */
-  var organizationalUnit: js.UndefOr[String] = js.native
+  var organizationalUnit: js.UndefOr[String] = js.undefined
   
   /** The postal code of the subject. */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /** The province, territory, or regional state of the subject. */
-  var province: js.UndefOr[String] = js.native
+  var province: js.UndefOr[String] = js.undefined
   
   /** The street address of the subject. */
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
 }
 object Subject {
   

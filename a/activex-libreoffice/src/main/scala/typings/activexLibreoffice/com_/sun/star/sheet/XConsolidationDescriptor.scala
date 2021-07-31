@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,62 +15,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.sheet.ConsolidationDescriptor
   */
-@js.native
-trait XConsolidationDescriptor extends XInterface {
+trait XConsolidationDescriptor
+  extends StObject
+     with XInterface {
   
   /** returns the function by which the ranges are consolidated. */
-  var Function: GeneralFunction = js.native
+  var Function: GeneralFunction
   
   /** returns, whether links to the original data are inserted in the output area or not. */
-  var InsertLinks: Boolean = js.native
+  var InsertLinks: Boolean
   
   /** returns the cell ranges which are consolidated. */
-  var Sources: SafeArray[CellRangeAddress] = js.native
+  var Sources: SafeArray[CellRangeAddress]
   
   /** returns the position of the top left cell of the cell range where the consolidated data are copied. */
-  var StartOutputPosition: CellAddress = js.native
+  var StartOutputPosition: CellAddress
   
   /** returns, whether column headers from the cell ranges are used to find matching data or not. */
-  var UseColumnHeaders: Boolean = js.native
+  var UseColumnHeaders: Boolean
   
   /** returns, whether row headers from the cell ranges are used to find matching data or not. */
-  var UseRowHeaders: Boolean = js.native
+  var UseRowHeaders: Boolean
   
   /** returns the function by which the ranges are consolidated. */
-  def getFunction(): GeneralFunction = js.native
+  def getFunction(): GeneralFunction
   
   /** returns, whether links to the original data are inserted in the output area or not. */
-  def getInsertLinks(): Boolean = js.native
+  def getInsertLinks(): Boolean
   
   /** returns the cell ranges which are consolidated. */
-  def getSources(): SafeArray[CellRangeAddress] = js.native
+  def getSources(): SafeArray[CellRangeAddress]
   
   /** returns the position of the top left cell of the cell range where the consolidated data are copied. */
-  def getStartOutputPosition(): CellAddress = js.native
+  def getStartOutputPosition(): CellAddress
   
   /** returns, whether column headers from the cell ranges are used to find matching data or not. */
-  def getUseColumnHeaders(): Boolean = js.native
+  def getUseColumnHeaders(): Boolean
   
   /** returns, whether row headers from the cell ranges are used to find matching data or not. */
-  def getUseRowHeaders(): Boolean = js.native
+  def getUseRowHeaders(): Boolean
   
   /** sets the function by which the ranges are consolidated. */
-  def setFunction(nFunction: GeneralFunction): Unit = js.native
+  def setFunction(nFunction: GeneralFunction): Unit
   
   /** specifies if links to the original data are inserted in the output area. */
-  def setInsertLinks(bInsertLinks: Boolean): Unit = js.native
+  def setInsertLinks(bInsertLinks: Boolean): Unit
   
   /** sets the cell ranges which are consolidated. */
-  def setSources(aSources: SeqEquiv[CellRangeAddress]): Unit = js.native
+  def setSources(aSources: SeqEquiv[CellRangeAddress]): Unit
   
   /** sets the position of the top left cell of the cell range where the consolidated data are copied. */
-  def setStartOutputPosition(aStartOutputPosition: CellAddress): Unit = js.native
+  def setStartOutputPosition(aStartOutputPosition: CellAddress): Unit
   
   /** specifies if column headers from the cell ranges are used to find matching data. */
-  def setUseColumnHeaders(bUseColumnHeaders: Boolean): Unit = js.native
+  def setUseColumnHeaders(bUseColumnHeaders: Boolean): Unit
   
   /** specifies if row headers from the cell ranges are used to find matching data. */
-  def setUseRowHeaders(bUseRowHeaders: Boolean): Unit = js.native
+  def setUseRowHeaders(bUseRowHeaders: Boolean): Unit
 }
 object XConsolidationDescriptor {
   

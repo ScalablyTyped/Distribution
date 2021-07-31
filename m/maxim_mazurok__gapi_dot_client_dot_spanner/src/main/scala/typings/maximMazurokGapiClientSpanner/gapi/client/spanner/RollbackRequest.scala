@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackRequest extends StObject {
   
   /** Required. The transaction to roll back. */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object RollbackRequest {
   

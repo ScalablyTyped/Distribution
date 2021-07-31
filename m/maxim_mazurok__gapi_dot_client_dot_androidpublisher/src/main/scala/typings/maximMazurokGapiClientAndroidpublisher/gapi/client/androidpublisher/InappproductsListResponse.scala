@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InappproductsListResponse extends StObject {
   
   /** All in-app products. */
-  var inappproduct: js.UndefOr[js.Array[InAppProduct]] = js.native
+  var inappproduct: js.UndefOr[js.Array[InAppProduct]] = js.undefined
   
   /** The kind of this response ("androidpublisher#inappproductsListResponse"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Information about the current page. */
-  var pageInfo: js.UndefOr[PageInfo] = js.native
+  var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
   /** Pagination token, to handle a number of products that is over one page. */
-  var tokenPagination: js.UndefOr[TokenPagination] = js.native
+  var tokenPagination: js.UndefOr[TokenPagination] = js.undefined
 }
 object InappproductsListResponse {
   

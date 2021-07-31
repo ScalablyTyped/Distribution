@@ -3,14 +3,12 @@ package typings.baiduApp.swan
 import typings.baiduApp.baiduAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrMsgResponse extends StObject {
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
 }
 object ErrMsgResponse {
   

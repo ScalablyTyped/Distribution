@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.opsworks
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceEbsBlockDevice extends StObject {
   
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
   
-  var deviceName: Input[String] = js.native
+  var deviceName: Input[String]
   
-  var iops: js.UndefOr[Input[Double]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.undefined
   
-  var snapshotId: js.UndefOr[Input[String]] = js.native
+  var snapshotId: js.UndefOr[Input[String]] = js.undefined
   
-  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
   
-  var volumeType: js.UndefOr[Input[String]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.undefined
 }
 object InstanceEbsBlockDevice {
   

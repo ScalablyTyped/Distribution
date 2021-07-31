@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ChecksUpdateResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersChecksUpdateEndpoint extends StObject {
   
-  var parameters: ChecksUpdateEndpoint = js.native
+  var parameters: ChecksUpdateEndpoint
   
-  var request: ChecksUpdateRequestOptions = js.native
+  var request: ChecksUpdateRequestOptions
   
-  var response: OctokitResponse[ChecksUpdateResponseData] = js.native
+  var response: OctokitResponse[ChecksUpdateResponseData]
 }
 object ParametersChecksUpdateEndpoint {
   

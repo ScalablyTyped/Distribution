@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard extends StObject {
   
   /** Required. The cards in the carousel. A carousel must have at least 2 cards and at most 10. */
-  var cardContents: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]] = js.native
+  var cardContents: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]] = js.undefined
   
   /** Required. The width of the cards in the carousel. */
-  var cardWidth: js.UndefOr[String] = js.native
+  var cardWidth: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard {
   

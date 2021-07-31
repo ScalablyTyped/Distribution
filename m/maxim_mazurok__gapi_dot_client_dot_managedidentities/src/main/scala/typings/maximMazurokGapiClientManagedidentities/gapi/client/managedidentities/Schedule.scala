@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /** Allows to define schedule that runs specified day of the week. */
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
   /** Output only. Duration of the time window, set by service producer. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Time within the window to start the operations. */
-  var startTime: js.UndefOr[TimeOfDay] = js.native
+  var startTime: js.UndefOr[TimeOfDay] = js.undefined
 }
 object Schedule {
   

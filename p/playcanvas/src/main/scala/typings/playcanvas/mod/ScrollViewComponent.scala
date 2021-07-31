@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,6 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ScrollViewComponent")
 @js.native
 class ScrollViewComponent protected ()
-  extends typings.playcanvas.pc.ScrollViewComponent {
+  extends StObject
+     with typings.playcanvas.pc.ScrollViewComponent {
   def this(system: typings.playcanvas.pc.ScrollViewComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

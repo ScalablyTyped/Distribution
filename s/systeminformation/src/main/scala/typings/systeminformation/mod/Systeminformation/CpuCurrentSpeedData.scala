@@ -2,19 +2,17 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuCurrentSpeedData extends StObject {
   
-  var avg: Double = js.native
+  var avg: Double
   
-  var cores: js.Array[Double] = js.native
+  var cores: js.Array[Double]
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
 }
 object CpuCurrentSpeedData {
   

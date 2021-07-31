@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneCategory. */
-@js.native
 trait ToneCategory extends StObject {
   
   /** The unique, non-localized identifier of the category for the results. The service can return results for the following category IDs: `emotion_tone`, `language_tone`, and `social_tone`. */
-  var category_id: String = js.native
+  var category_id: String
   
   /** The user-visible, localized name of the category. */
-  var category_name: String = js.native
+  var category_name: String
   
   /** An array of `ToneScore` objects that provides the results for the tones of the category. */
-  var tones: js.Array[ToneScore] = js.native
+  var tones: js.Array[ToneScore]
 }
 object ToneCategory {
   

@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contact information
   */
-@js.native
-trait ContactDetail extends Element {
+trait ContactDetail
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Name of an individual to contact
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Contact details for individual or organization
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object ContactDetail {
   

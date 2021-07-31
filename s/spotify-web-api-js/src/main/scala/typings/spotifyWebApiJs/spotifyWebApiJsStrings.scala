@@ -4,7 +4,6 @@ import typings.spotifyWebApiJs.SpotifyApi.ContextObjectType
 import typings.spotifyWebApiJs.SpotifyApi.PlaybackRepeatState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotifyWebApiJsStrings {
@@ -20,12 +19,16 @@ object spotifyWebApiJsStrings {
   def P: P = "P".asInstanceOf[P]
   
   @js.native
-  sealed trait album extends ContextObjectType
+  sealed trait album
+    extends StObject
+       with ContextObjectType
   @scala.inline
   def album: album = "album".asInstanceOf[album]
   
   @js.native
-  sealed trait artist extends ContextObjectType
+  sealed trait artist
+    extends StObject
+       with ContextObjectType
   @scala.inline
   def artist: artist = "artist".asInstanceOf[artist]
   
@@ -35,7 +38,9 @@ object spotifyWebApiJsStrings {
   def audio_features: audio_features = "audio_features".asInstanceOf[audio_features]
   
   @js.native
-  sealed trait context extends PlaybackRepeatState
+  sealed trait context
+    extends StObject
+       with PlaybackRepeatState
   @scala.inline
   def context: context = "context".asInstanceOf[context]
   
@@ -50,12 +55,16 @@ object spotifyWebApiJsStrings {
   def genre: genre = "genre".asInstanceOf[genre]
   
   @js.native
-  sealed trait off extends PlaybackRepeatState
+  sealed trait off
+    extends StObject
+       with PlaybackRepeatState
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait playlist extends ContextObjectType
+  sealed trait playlist
+    extends StObject
+       with ContextObjectType
   @scala.inline
   def playlist: playlist = "playlist".asInstanceOf[playlist]
   
@@ -65,7 +74,9 @@ object spotifyWebApiJsStrings {
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait track extends PlaybackRepeatState
+  sealed trait track
+    extends StObject
+       with PlaybackRepeatState
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   

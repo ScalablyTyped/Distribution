@@ -2,10 +2,8 @@ package typings.feflowCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Command extends StObject {
     * @param desc Plugin command description eg： Feflow devtool for better develop a devkit or plugin
     * @param fn   Plugin callback function
     */
-  def register(cmd: String, desc: String, fn: js.Function0[Unit]): Unit = js.native
+  def register(cmd: String, desc: String, fn: js.Function0[Unit]): Unit
 }
 object Command {
   

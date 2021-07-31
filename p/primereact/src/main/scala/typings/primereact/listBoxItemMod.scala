@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listBoxItemMod {
@@ -22,18 +21,17 @@ object listBoxItemMod {
     def this(props: ListBoxItemProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ListBoxItemProps extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* e */ OptionOriginalEvent, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ OptionOriginalEvent, Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* e */ OptionOriginalEvent, Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* e */ OptionOriginalEvent, Unit]] = js.undefined
     
-    var option: js.UndefOr[js.Any] = js.native
+    var option: js.UndefOr[js.Any] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var template: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   }
   object ListBoxItemProps {
     

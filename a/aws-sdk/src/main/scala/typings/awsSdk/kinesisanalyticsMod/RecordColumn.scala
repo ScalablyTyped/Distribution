@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordColumn extends StObject {
   
   /**
     * Reference to the data element in the streaming input or the reference data source. This element is required if the RecordFormatType is JSON.
     */
-  var Mapping: js.UndefOr[RecordColumnMapping] = js.native
+  var Mapping: js.UndefOr[RecordColumnMapping] = js.undefined
   
   /**
     * Name of the column created in the in-application input stream or reference table.
     */
-  var Name: RecordColumnName = js.native
+  var Name: RecordColumnName
   
   /**
     * Type of column created in the in-application input stream or reference table.
     */
-  var SqlType: RecordColumnSqlType = js.native
+  var SqlType: RecordColumnSqlType
 }
 object RecordColumn {
   

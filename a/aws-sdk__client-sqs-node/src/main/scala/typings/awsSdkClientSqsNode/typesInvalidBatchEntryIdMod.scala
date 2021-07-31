@@ -5,25 +5,24 @@ import typings.awsSdkClientSqsNode.deleteMessageBatchExceptionsUnionMod.DeleteMe
 import typings.awsSdkClientSqsNode.sendMessageBatchExceptionsUnionMod.SendMessageBatchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidBatchEntryIdMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidBatchEntryIdDetails> * / any */ @js.native
-  trait InvalidBatchEntryId
-    extends ChangeMessageVisibilityBatchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidBatchEntryIdDetails> * / any */ trait InvalidBatchEntryId
+    extends StObject
+       with ChangeMessageVisibilityBatchExceptionsUnion
        with DeleteMessageBatchExceptionsUnion
        with SendMessageBatchExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId
   }
   object InvalidBatchEntryId {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId): InvalidBatchEntryId = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidBatchEntryId = {
+      val __obj = js.Dynamic.literal(name = "InvalidBatchEntryId")
       __obj.asInstanceOf[InvalidBatchEntryId]
     }
     
@@ -35,6 +34,5 @@ object typesInvalidBatchEntryIdMod {
     }
   }
   
-  @js.native
   trait InvalidBatchEntryIdDetails extends StObject
 }

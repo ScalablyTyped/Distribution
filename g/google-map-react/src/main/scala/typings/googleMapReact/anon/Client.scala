@@ -2,15 +2,13 @@ package typings.googleMapReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
-  var client: String = js.native
+  var client: String
   
-  var v: String = js.native
+  var v: String
 }
 object Client {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Relationship extends StObject {
   
   /**
     * The type of relationship with the related resource.
     */
-  var relationshipName: js.UndefOr[RelationshipName] = js.native
+  var relationshipName: js.UndefOr[RelationshipName] = js.undefined
   
   /**
     * The ID of the related resource (for example, sg-xxxxxx).
     */
-  var resourceId: js.UndefOr[ResourceId] = js.native
+  var resourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The custom name of the related resource, if available.
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resource type of the related resource.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object Relationship {
   

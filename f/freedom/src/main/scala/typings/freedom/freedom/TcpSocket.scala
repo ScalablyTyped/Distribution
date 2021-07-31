@@ -6,19 +6,17 @@ import typings.freedom.freedomStrings.onDisconnect
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TcpSocket {
   
-  @js.native
   trait ConnectInfo extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var socket: Double = js.native
+    var socket: Double
   }
   object ConnectInfo {
     
@@ -42,12 +40,11 @@ object TcpSocket {
     }
   }
   
-  @js.native
   trait DisconnectInfo extends StObject {
     
-    var errcode: String = js.native
+    var errcode: String
     
-    var message: String = js.native
+    var message: String
   }
   object DisconnectInfo {
     
@@ -68,10 +65,9 @@ object TcpSocket {
     }
   }
   
-  @js.native
   trait ReadInfo extends StObject {
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
   }
   object ReadInfo {
     
@@ -129,18 +125,17 @@ object TcpSocket {
     var write_Original: Method1[ArrayBuffer, WriteInfo] = js.native
   }
   
-  @js.native
   trait SocketInfo extends StObject {
     
-    var connected: Boolean = js.native
+    var connected: Boolean
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var localPort: js.UndefOr[Double] = js.native
+    var localPort: js.UndefOr[Double] = js.undefined
     
-    var peerAddress: js.UndefOr[String] = js.native
+    var peerAddress: js.UndefOr[String] = js.undefined
     
-    var peerPort: js.UndefOr[Double] = js.native
+    var peerPort: js.UndefOr[Double] = js.undefined
   }
   object SocketInfo {
     
@@ -182,10 +177,9 @@ object TcpSocket {
     }
   }
   
-  @js.native
   trait WriteInfo extends StObject {
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object WriteInfo {
     

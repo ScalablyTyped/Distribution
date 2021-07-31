@@ -3,7 +3,6 @@ package typings.aureliaKnockout
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object knockoutCustomAttributeMod {
@@ -24,8 +23,11 @@ object knockoutCustomAttributeMod {
   /* static members */
   object KnockoutCustomAttribute {
     
-    @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute.register")
+    @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute")
     @js.native
-    def register(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   }
 }

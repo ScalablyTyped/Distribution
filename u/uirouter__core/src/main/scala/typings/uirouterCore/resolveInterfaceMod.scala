@@ -5,7 +5,6 @@ import typings.uirouterCore.anon.NOWAIT
 import typings.uirouterCore.stateInterfaceMod.ResolveTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveInterfaceMod {
@@ -52,20 +51,21 @@ object resolveInterfaceMod {
     def LAZY: typings.uirouterCore.uirouterCoreStrings.LAZY = "LAZY".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.LAZY]
   }
   
-  @js.native
-  trait ProviderLike extends ResolveTypes {
+  trait ProviderLike
+    extends StObject
+       with ResolveTypes {
     
-    var deps: js.UndefOr[js.Array[_]] = js.native
+    var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var provide: js.Any = js.native
+    var provide: js.Any
     
-    var useClass: js.UndefOr[js.Any] = js.native
+    var useClass: js.UndefOr[js.Any] = js.undefined
     
-    var useExisting: js.UndefOr[js.Any] = js.native
+    var useExisting: js.UndefOr[js.Any] = js.undefined
     
-    var useFactory: js.UndefOr[js.Function] = js.native
+    var useFactory: js.UndefOr[js.Function] = js.undefined
     
-    var useValue: js.UndefOr[js.Any] = js.native
+    var useValue: js.UndefOr[js.Any] = js.undefined
   }
   object ProviderLike {
     
@@ -79,7 +79,7 @@ object resolveInterfaceMod {
     implicit class ProviderLikeMutableBuilder[Self <: ProviderLike] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
@@ -116,11 +116,12 @@ object resolveInterfaceMod {
     }
   }
   
-  @js.native
-  trait ResolvableLiteral extends ResolveTypes {
+  trait ResolvableLiteral
+    extends StObject
+       with ResolveTypes {
     
     /** Pre-resolved data. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The Dependency Injection tokens
@@ -130,7 +131,7 @@ object resolveInterfaceMod {
       * The DI tokens are references to other `Resolvables`, or to other
       * services from the native DI system.
       */
-    var deps: js.UndefOr[js.Array[_]] = js.native
+    var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Defines the Resolve Policy
@@ -138,7 +139,7 @@ object resolveInterfaceMod {
       * A policy that defines when to invoke the resolve,
       * and whether to wait for async and unwrap the data
       */
-    var policy: js.UndefOr[ResolvePolicy] = js.native
+    var policy: js.UndefOr[ResolvePolicy] = js.undefined
     
     /**
       * A function which fetches the Resolvable's data
@@ -152,7 +153,7 @@ object resolveInterfaceMod {
       * This function will be provided the dependencies listed in [[deps]] as its arguments.
       * The resolve system will asynchronously fetch the dependencies before invoking this function.
       */
-    var resolveFn: js.Function = js.native
+    var resolveFn: js.Function
     
     /**
       * A Dependency Injection token
@@ -160,7 +161,7 @@ object resolveInterfaceMod {
       * This Resolvable's DI token.
       * The Resolvable will be injectable elsewhere using the token.
       */
-    var token: js.Any = js.native
+    var token: js.Any
   }
   object ResolvableLiteral {
     
@@ -180,7 +181,7 @@ object resolveInterfaceMod {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
@@ -202,7 +203,6 @@ object resolveInterfaceMod {
     }
   }
   
-  @js.native
   trait ResolvePolicy extends StObject {
     
     /**
@@ -242,7 +242,7 @@ object resolveInterfaceMod {
       * }
       * ```
       */
-    var async: js.UndefOr[PolicyAsync] = js.native
+    var async: js.UndefOr[PolicyAsync] = js.undefined
     
     /**
       * Defines when a Resolvable is resolved (fetched) during a transition
@@ -287,7 +287,7 @@ object resolveInterfaceMod {
       * }
       * ```
       */
-    var when: js.UndefOr[PolicyWhen] = js.native
+    var when: js.UndefOr[PolicyWhen] = js.undefined
   }
   object ResolvePolicy {
     

@@ -3,40 +3,39 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultDocument
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var document_url: String = js.native
+  var document_url: String
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var thumb_height: js.UndefOr[Double] = js.native
+  var thumb_height: js.UndefOr[Double] = js.undefined
   
-  var thumb_url: js.UndefOr[String] = js.native
+  var thumb_url: js.UndefOr[String] = js.undefined
   
-  var thumb_width: js.UndefOr[Double] = js.native
+  var thumb_width: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: document = js.native
+  var `type`: document
 }
 object InlineQueryResultDocument {
   
   @scala.inline
-  def apply(document_url: String, id: String, mime_type: String, title: String, `type`: document): InlineQueryResultDocument = {
+  def apply(document_url: String, id: String, mime_type: String, title: String): InlineQueryResultDocument = {
     val __obj = js.Dynamic.literal(document_url = document_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("document")
     __obj.asInstanceOf[InlineQueryResultDocument]
   }
   

@@ -9,7 +9,6 @@ import typings.react.mod.KeyboardEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputTextMod {
@@ -26,24 +25,24 @@ object inputTextMod {
     def this(props: InputTextProps, context: js.Any) = this()
   }
   
-  @js.native
   trait InputTextProps
-    extends HTMLProps[HTMLInputElement]
+    extends StObject
+       with HTMLProps[HTMLInputElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var keyfilter: js.UndefOr[js.Any] = js.native
+    var keyfilter: js.UndefOr[js.Any] = js.undefined
     
     @JSName("onInput")
-    var onInput_InputTextProps: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.native
+    var onInput_InputTextProps: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.undefined
     
     @JSName("onKeyPress")
-    var onKeyPress_InputTextProps: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.native
+    var onKeyPress_InputTextProps: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var validateOnly: js.UndefOr[Boolean] = js.native
+    var validateOnly: js.UndefOr[Boolean] = js.undefined
   }
   object InputTextProps {
     

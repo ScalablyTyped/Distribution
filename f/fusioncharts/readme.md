@@ -10,9 +10,9 @@ FusionCharts JavaScript charting framework
 | ------------------ | :-------------: |
 | Full name          | fusioncharts |
 | Keywords           | fusioncharts, charts, dataviz, graphs, visualization, js-charts, javascript-charts, dashboards, data-stories, bar-charts, pie-charts, line-charts, area-charts, column-charts, gantt-chart |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 9 |
-| # downloads        | 347004 |
+| # downloads        | 446058 |
 | # stars            | 1 |
 
 ## Links

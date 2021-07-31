@@ -48,7 +48,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.YearToDate
 import typings.officeJsPreview.officeJsPreviewStrings.Yesterday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,7 +56,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait FilterCriteria extends StObject {
   
   /**
@@ -66,7 +64,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var criterion1: js.UndefOr[String] = js.native
+  var criterion1: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var criterion2: js.UndefOr[String] = js.native
+  var criterion2: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait FilterCriteria extends StObject {
     */
   var dynamicCriteria: js.UndefOr[
     DynamicFilterCriteria | Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var filterOn: FilterOn | BottomItems | BottomPercent | CellColor | Dynamic | FontColor | Values | TopItems | TopPercent | typings.officeJsPreview.officeJsPreviewStrings.Icon | Custom = js.native
+  var filterOn: FilterOn | BottomItems | BottomPercent | CellColor | Dynamic | FontColor | Values | TopItems | TopPercent | typings.officeJsPreview.officeJsPreviewStrings.Icon | Custom
   
   /**
     *
@@ -111,7 +109,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var icon: js.UndefOr[Icon] = js.native
+  var icon: js.UndefOr[Icon] = js.undefined
   
   /**
     *
@@ -119,7 +117,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var operator: js.UndefOr[FilterOperator | And | Or] = js.native
+  var operator: js.UndefOr[FilterOperator | And | Or] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subField: js.UndefOr[String] = js.native
+  var subField: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait FilterCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var values: js.UndefOr[js.Array[String | FilterDatetime]] = js.native
+  var values: js.UndefOr[js.Array[String | FilterDatetime]] = js.undefined
 }
 object FilterCriteria {
   

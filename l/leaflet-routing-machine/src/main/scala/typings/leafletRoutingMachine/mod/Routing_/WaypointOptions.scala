@@ -2,13 +2,11 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaypointOptions extends StObject {
   
-  var allowUTurn: js.UndefOr[Boolean] = js.native
+  var allowUTurn: js.UndefOr[Boolean] = js.undefined
 }
 object WaypointOptions {
   

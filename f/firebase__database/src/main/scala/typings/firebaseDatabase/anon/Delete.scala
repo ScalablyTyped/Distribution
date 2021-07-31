@@ -2,13 +2,11 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
-  def delete(): js.Promise[Unit] = js.native
+  def delete(): js.Promise[Unit]
 }
 object Delete {
   

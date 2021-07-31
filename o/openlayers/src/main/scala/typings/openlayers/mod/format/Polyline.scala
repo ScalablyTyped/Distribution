@@ -10,7 +10,6 @@ import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -114,6 +113,10 @@ class Polyline () extends TextFeature {
 }
 object Polyline {
   
+  @JSImport("openlayers", "format.Polyline")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Decode a list of n-dimensional points from an encoded string
     *
@@ -126,12 +129,10 @@ object Polyline {
     * @api
     */
   /* static member */
-  @JSImport("openlayers", "format.Polyline.decodeDeltas")
-  @js.native
-  def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = js.native
-  @JSImport("openlayers", "format.Polyline.decodeDeltas")
-  @js.native
-  def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = js.native
+  @scala.inline
+  def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * Decode a list of floating point numbers from an encoded string
@@ -143,12 +144,10 @@ object Polyline {
     * @api
     */
   /* static member */
-  @JSImport("openlayers", "format.Polyline.decodeFloats")
-  @js.native
-  def decodeFloats(encoded: String): js.Array[Double] = js.native
-  @JSImport("openlayers", "format.Polyline.decodeFloats")
-  @js.native
-  def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = js.native
+  @scala.inline
+  def decodeFloats(encoded: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * Encode a list of n-dimensional points and return an encoded string
@@ -164,12 +163,10 @@ object Polyline {
     * @api
     */
   /* static member */
-  @JSImport("openlayers", "format.Polyline.encodeDeltas")
-  @js.native
-  def encodeDeltas(numbers: js.Array[Double], stride: Double): String = js.native
-  @JSImport("openlayers", "format.Polyline.encodeDeltas")
-  @js.native
-  def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = js.native
+  @scala.inline
+  def encodeDeltas(numbers: js.Array[Double], stride: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Encode a list of floating point numbers and return an encoded string
@@ -184,10 +181,8 @@ object Polyline {
     * @api
     */
   /* static member */
-  @JSImport("openlayers", "format.Polyline.encodeFloats")
-  @js.native
-  def encodeFloats(numbers: js.Array[Double]): String = js.native
-  @JSImport("openlayers", "format.Polyline.encodeFloats")
-  @js.native
-  def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = js.native
+  @scala.inline
+  def encodeFloats(numbers: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
 }

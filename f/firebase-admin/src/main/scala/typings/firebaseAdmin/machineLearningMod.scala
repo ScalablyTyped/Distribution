@@ -6,25 +6,27 @@ import typings.firebaseAdmin.anon.GcsTfliteUri
 import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object machineLearningMod {
   
   object machineLearning {
     
+    @scala.inline
+    def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
+    @scala.inline
+    def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
+    
     @JSImport("firebase-admin/lib/machine-learning", "machineLearning")
     @js.native
-    def apply(): MachineLearning = js.native
-    @JSImport("firebase-admin/lib/machine-learning", "machineLearning")
-    @js.native
-    def apply(app: App): MachineLearning = js.native
+    val ^ : js.Any = js.native
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptions because Already inherited */ @js.native
-    trait AutoMLTfliteModelOptions extends ModelOptionsBase {
+    - typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptions because Already inherited */ trait AutoMLTfliteModelOptions
+      extends StObject
+         with ModelOptionsBase {
       
-      var tfliteModel: AutomlModel = js.native
+      var tfliteModel: AutomlModel
     }
     object AutoMLTfliteModelOptions {
       
@@ -43,10 +45,11 @@ object machineLearningMod {
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptions because Already inherited */ @js.native
-    trait GcsTfliteModelOptions extends ModelOptionsBase {
+    - typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptions because Already inherited */ trait GcsTfliteModelOptions
+      extends StObject
+         with ModelOptionsBase {
       
-      var tfliteModel: GcsTfliteUri = js.native
+      var tfliteModel: GcsTfliteUri
     }
     object GcsTfliteModelOptions {
       
@@ -67,7 +70,6 @@ object machineLearningMod {
     /**
       * Interface representing options for listing Models.
       */
-    @js.native
     trait ListModelsOptions extends StObject {
       
       /**
@@ -84,13 +86,13 @@ object machineLearningMod {
         *
         * See https://firebase.google.com/docs/ml/manage-hosted-models#list_your_projects_models
         */
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
       /** The number of results to return in each page. */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       /** A token that specifies the result page to return. */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
     }
     object ListModelsOptions {
       
@@ -124,17 +126,16 @@ object machineLearningMod {
     }
     
     /** Response object for a listModels operation. */
-    @js.native
     trait ListModelsResult extends StObject {
       
       /** A list of models in your project. */
-      val models: js.Array[Model] = js.native
+      val models: js.Array[Model]
       
       /**
         * A token you can use to retrieve the next page of results. If null, the
         * current page is the final page.
         */
-      val pageToken: js.UndefOr[String] = js.native
+      val pageToken: js.UndefOr[String] = js.undefined
     }
     object ListModelsResult {
       
@@ -347,12 +348,13 @@ object machineLearningMod {
     /**
       * Firebase ML Model input objects
       */
-    @js.native
-    trait ModelOptionsBase extends ModelOptions {
+    trait ModelOptionsBase
+      extends StObject
+         with ModelOptions {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var tags: js.UndefOr[js.Array[String]] = js.native
+      var tags: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModelOptionsBase {
       
@@ -388,20 +390,19 @@ object machineLearningMod {
       * One of either the `gcsTfliteUri` or `automlModel` properties will be
       * defined.
       */
-    @js.native
     trait TFLiteModel extends StObject {
       
       /**
         * The AutoML model reference from which the model was originally provided
         * to Firebase.
         */
-      val automlModel: js.UndefOr[String] = js.native
+      val automlModel: js.UndefOr[String] = js.undefined
       
       /** The URI from which the model was originally provided to Firebase. */
-      val gcsTfliteUri: js.UndefOr[String] = js.native
+      val gcsTfliteUri: js.UndefOr[String] = js.undefined
       
       /** The size of the model. */
-      val sizeBytes: Double = js.native
+      val sizeBytes: Double
     }
     object TFLiteModel {
       

@@ -2,46 +2,44 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceiptAction extends StObject {
   
   /**
     * Adds a header to the received email.
     */
-  var AddHeaderAction: js.UndefOr[typings.awsSdk.sesMod.AddHeaderAction] = js.native
+  var AddHeaderAction: js.UndefOr[typings.awsSdk.sesMod.AddHeaderAction] = js.undefined
   
   /**
     * Rejects the received email by returning a bounce response to the sender and, optionally, publishes a notification to Amazon Simple Notification Service (Amazon SNS).
     */
-  var BounceAction: js.UndefOr[typings.awsSdk.sesMod.BounceAction] = js.native
+  var BounceAction: js.UndefOr[typings.awsSdk.sesMod.BounceAction] = js.undefined
   
   /**
     * Calls an AWS Lambda function, and optionally, publishes a notification to Amazon SNS.
     */
-  var LambdaAction: js.UndefOr[typings.awsSdk.sesMod.LambdaAction] = js.native
+  var LambdaAction: js.UndefOr[typings.awsSdk.sesMod.LambdaAction] = js.undefined
   
   /**
     * Saves the received message to an Amazon Simple Storage Service (Amazon S3) bucket and, optionally, publishes a notification to Amazon SNS.
     */
-  var S3Action: js.UndefOr[typings.awsSdk.sesMod.S3Action] = js.native
+  var S3Action: js.UndefOr[typings.awsSdk.sesMod.S3Action] = js.undefined
   
   /**
     * Publishes the email content within a notification to Amazon SNS.
     */
-  var SNSAction: js.UndefOr[typings.awsSdk.sesMod.SNSAction] = js.native
+  var SNSAction: js.UndefOr[typings.awsSdk.sesMod.SNSAction] = js.undefined
   
   /**
     * Terminates the evaluation of the receipt rule set and optionally publishes a notification to Amazon SNS.
     */
-  var StopAction: js.UndefOr[typings.awsSdk.sesMod.StopAction] = js.native
+  var StopAction: js.UndefOr[typings.awsSdk.sesMod.StopAction] = js.undefined
   
   /**
     * Calls Amazon WorkMail and, optionally, publishes a notification to Amazon Amazon SNS.
     */
-  var WorkmailAction: js.UndefOr[typings.awsSdk.sesMod.WorkmailAction] = js.native
+  var WorkmailAction: js.UndefOr[typings.awsSdk.sesMod.WorkmailAction] = js.undefined
 }
 object ReceiptAction {
   

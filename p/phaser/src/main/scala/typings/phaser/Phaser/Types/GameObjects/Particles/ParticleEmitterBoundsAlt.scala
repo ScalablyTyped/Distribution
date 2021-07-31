@@ -2,31 +2,29 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticleEmitterBoundsAlt extends StObject {
   
   /**
     * The height of the rectangle.
     */
-  var h: Double = js.native
+  var h: Double
   
   /**
     * The width of the rectangle.
     */
-  var w: Double = js.native
+  var w: Double
   
   /**
     * The left edge of the rectangle.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The top edge of the rectangle.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object ParticleEmitterBoundsAlt {
   

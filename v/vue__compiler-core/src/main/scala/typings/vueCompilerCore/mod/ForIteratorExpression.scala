@@ -1,23 +1,22 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`18`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForIteratorExpression extends FunctionExpression {
+trait ForIteratorExpression
+  extends StObject
+     with FunctionExpression {
   
   @JSName("returns")
-  var returns_ForIteratorExpression: BlockCodegenNode = js.native
+  var returns_ForIteratorExpression: BlockCodegenNode
 }
 object ForIteratorExpression {
   
   @scala.inline
-  def apply(isSlot: Boolean, loc: SourceLocation, newline: Boolean, returns: BlockCodegenNode, `type`: `18`): ForIteratorExpression = {
+  def apply(isSlot: Boolean, loc: SourceLocation, newline: Boolean, returns: BlockCodegenNode): ForIteratorExpression = {
     val __obj = js.Dynamic.literal(isSlot = isSlot.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], returns = returns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(18)
     __obj.asInstanceOf[ForIteratorExpression]
   }
   

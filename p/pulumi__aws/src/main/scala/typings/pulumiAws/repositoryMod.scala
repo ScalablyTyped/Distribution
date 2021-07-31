@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryMod {
@@ -76,6 +75,10 @@ object repositoryMod {
   /* static members */
   object Repository {
     
+    @JSImport("@pulumi/aws/codeartifact/repository", "Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -85,67 +88,61 @@ object repositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): Repository = js.native
-    @JSImport("@pulumi/aws/codeartifact/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact/repository", "Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean]
   }
   
-  @js.native
   trait RepositoryArgs extends StObject {
     
     /**
       * The description of the repository.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain that contains the created repository.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of external connections associated with the repository. Only one external connection can be set per repository. see External Connections.
       */
-    val externalConnections: js.UndefOr[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]] = js.native
+    val externalConnections: js.UndefOr[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]] = js.undefined
     
     /**
       * The name of the repository to create.
       */
-    val repository: Input[String] = js.native
+    val repository: Input[String]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. see Upstream
       */
     val upstreams: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]
-      ] = js.native
+      ] = js.undefined
   }
   object RepositoryArgs {
     
@@ -199,55 +196,54 @@ object repositoryMod {
     }
   }
   
-  @js.native
   trait RepositoryState extends StObject {
     
     /**
       * The account number of the AWS account that manages the repository.
       */
-    val administratorAccount: js.UndefOr[Input[String]] = js.native
+    val administratorAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the repository.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the repository.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain that contains the created repository.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of external connections associated with the repository. Only one external connection can be set per repository. see External Connections.
       */
-    val externalConnections: js.UndefOr[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]] = js.native
+    val externalConnections: js.UndefOr[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]] = js.undefined
     
     /**
       * The name of the repository to create.
       */
-    val repository: js.UndefOr[Input[String]] = js.native
+    val repository: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. see Upstream
       */
     val upstreams: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]
-      ] = js.native
+      ] = js.undefined
   }
   object RepositoryState {
     

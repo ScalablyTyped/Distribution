@@ -4,18 +4,16 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/card/style.CardStyle, 'footerContent' | 'footerExtra' | 'footerWrap'> */
-@js.native
 trait PickCardStylefooterConten extends StObject {
   
-  var footerContent: TextStyle = js.native
+  var footerContent: TextStyle
   
-  var footerExtra: TextStyle = js.native
+  var footerExtra: TextStyle
   
-  var footerWrap: ViewStyle = js.native
+  var footerWrap: ViewStyle
 }
 object PickCardStylefooterConten {
   

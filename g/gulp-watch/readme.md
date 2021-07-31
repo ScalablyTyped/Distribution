@@ -10,9 +10,9 @@ Watch, that actually is an endless stream
 | ------------------ | :-------------: |
 | Full name          | gulp-watch |
 | Keywords           | gulp, watch, gulpplugin |
-| # releases         | 1 |
-| # dependents       | 733 |
-| # downloads        | 7859422 |
+| # releases         | 0 |
+| # dependents       | 751 |
+| # downloads        | 7214239 |
 | # stars            | 191 |
 
 ## Links

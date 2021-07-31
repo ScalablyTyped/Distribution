@@ -3,15 +3,13 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadOptions extends StObject {
   
-  var dataProjection: ProjectionLike = js.native
+  var dataProjection: ProjectionLike
   
-  var featureProjection: ProjectionLike = js.native
+  var featureProjection: ProjectionLike
 }
 object ReadOptions {
   

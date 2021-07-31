@@ -5,23 +5,23 @@ import typings.scrollBehavior.scrollBehaviorStrings.PUSH
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("scroll-behavior", JSImport.Default)
   @js.native
-  class default[TLocation /* <: LocationBase */, TContext] protected () extends ScrollBehavior[TLocation, TContext] {
+  class default[TLocation /* <: LocationBase */, TContext] protected ()
+    extends StObject
+       with ScrollBehavior[TLocation, TContext] {
     def this(options: ScrollBehaviorOptions[TLocation, TContext]) = this()
   }
   
-  @js.native
   trait LocationBase extends StObject {
     
-    var action: PUSH | String = js.native
+    var action: PUSH | String
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
   }
   object LocationBase {
     
@@ -71,16 +71,15 @@ object mod {
     def updateScroll(prevContext: Null, context: TContext): Unit = js.native
   }
   
-  @js.native
   trait ScrollBehaviorOptions[TLocation /* <: LocationBase */, TContext] extends StObject {
     
-    def addTransitionHook(hook: TransitionHook): js.Function0[Unit] = js.native
+    def addTransitionHook(hook: TransitionHook): js.Function0[Unit]
     
-    def getCurrentLocation(): TLocation = js.native
+    def getCurrentLocation(): TLocation
     
-    var shouldUpdateScroll: js.UndefOr[ShouldUpdateScroll[TContext]] = js.native
+    var shouldUpdateScroll: js.UndefOr[ShouldUpdateScroll[TContext]] = js.undefined
     
-    var stateStorage: Read[TLocation] = js.native
+    var stateStorage: Read[TLocation]
   }
   object ScrollBehaviorOptions {
     
@@ -95,7 +94,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ScrollBehaviorOptionsMutableBuilder[Self <: ScrollBehaviorOptions[_, _], TLocation /* <: LocationBase */, TContext] (val x: Self with (ScrollBehaviorOptions[TLocation, TContext])) extends AnyVal {
+    implicit class ScrollBehaviorOptionsMutableBuilder[Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext] (val x: Self & (ScrollBehaviorOptions[TLocation, TContext])) extends AnyVal {
       
       @scala.inline
       def setAddTransitionHook(value: TransitionHook => js.Function0[Unit]): Self = StObject.set(x, "addTransitionHook", js.Any.fromFunction1(value))

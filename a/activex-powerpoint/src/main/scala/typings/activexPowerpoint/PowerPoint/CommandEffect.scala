@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Command: String = js.native
+  var Command: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.CommandEffect_typekey")
-  var PowerPointDotCommandEffect_typekey: CommandEffect = js.native
+  var PowerPointDotCommandEffect_typekey: CommandEffect
   
-  var Type: MsoAnimCommandType = js.native
+  var Type: MsoAnimCommandType
   
-  var bookmark: String = js.native
+  var bookmark: String
 }
 object CommandEffect {
   

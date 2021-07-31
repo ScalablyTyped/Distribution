@@ -3,7 +3,6 @@ package typings.mssql.mod
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mssql", "Transaction")
@@ -18,7 +17,7 @@ class Transaction () extends EventEmitter {
     */
   def begin(): js.Promise[Transaction] = js.native
   def begin(
-    isolationLevel: js.UndefOr[scala.Nothing],
+    isolationLevel: Unit,
     callback: js.Function1[/* err */ js.UndefOr[ConnectionError | TransactionError], Unit]
   ): Transaction = js.native
   def begin(isolationLevel: IIsolationLevel): js.Promise[Transaction] = js.native

@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 import typings.winrtUwp.Windows.Foundation.Deferral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a request for credentials in order to authenticate to a peer. */
-@js.native
 trait AllJoynCredentialsRequestedEventArgs extends StObject {
   
   /** The number of times the credential request has been tried. */
-  var attemptCount: Double = js.native
+  var attemptCount: Double
   
   /** The authentication credentials to be filled in by the app. */
-  var credentials: AllJoynCredentials = js.native
+  var credentials: AllJoynCredentials
   
   /**
     * Allows JavaScript Windows Store apps to handle the verification of provided of credentials asynchronously.
     * @return The credential request deferral.
     */
-  def getDeferral(): Deferral = js.native
+  def getDeferral(): Deferral
   
   /** The unique bus name of the remote app that provided the requested credentials. */
-  var peerUniqueName: String = js.native
+  var peerUniqueName: String
   
   /** A user name value used by mechanisms that accept a user name/password pair. */
-  var requestedUserName: String = js.native
+  var requestedUserName: String
 }
 object AllJoynCredentialsRequestedEventArgs {
   

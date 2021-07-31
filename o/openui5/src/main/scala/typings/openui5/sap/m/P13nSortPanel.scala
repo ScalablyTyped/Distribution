@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nSortPanel extends P13nPanel {
+trait P13nSortPanel
+  extends StObject
+     with P13nPanel {
   
   /**
     * Adds some sortItem to the aggregation <code>sortItems</code>.
@@ -242,7 +243,7 @@ trait P13nSortPanel extends P13nPanel {
     * @param array of operations [sap.m.P13nConditionOperation.BT, sap.m.P13nConditionOperation.EQ]
     * @returns this for chaining
     */
-  def setOperations(array: js.Array[_]): P13nSortPanel = js.native
+  def setOperations(array: js.Array[js.Any]): P13nSortPanel = js.native
   
   /**
     * Unbinds aggregation <code>sortItems</code> from model data.

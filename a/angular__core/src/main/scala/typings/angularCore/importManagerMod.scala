@@ -6,7 +6,6 @@ import typings.typescript.mod.Printer
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importManagerMod {
@@ -69,12 +68,11 @@ object importManagerMod {
     var usedIdentifierNames: js.Any = js.native
   }
   
-  @js.native
   trait ImportManagerUpdateRecorder extends StObject {
     
-    def addNewImport(start: Double, importText: String): Unit = js.native
+    def addNewImport(start: Double, importText: String): Unit
     
-    def updateExistingImport(namedBindings: NamedImports, newNamedBindings: String): Unit = js.native
+    def updateExistingImport(namedBindings: NamedImports, newNamedBindings: String): Unit
   }
   object ImportManagerUpdateRecorder {
     

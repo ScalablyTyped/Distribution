@@ -2,7 +2,6 @@ package typings.nodegit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oidMod {
@@ -30,8 +29,11 @@ object oidMod {
   /* static members */
   object Oid {
     
-    @JSImport("nodegit/oid", "Oid.fromString")
+    @JSImport("nodegit/oid", "Oid")
     @js.native
-    def fromString(str: String): Oid = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromString(str: String): Oid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Oid]
   }
 }

@@ -1,40 +1,38 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Avatarurl
-import typings.octokitTypes.anon.Confused
+import typings.octokitTypes.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsGetDiscussionCommentLegacyResponseData extends StObject {
   
-  var author: Avatarurl = js.native
+  var author: Avatarurl
   
-  var body: String = js.native
+  var body: String
   
-  var body_html: String = js.native
+  var body_html: String
   
-  var body_version: String = js.native
+  var body_version: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var discussion_url: String = js.native
+  var discussion_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var last_edited_at: String = js.native
+  var last_edited_at: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var reactions: Confused = js.native
+  var reactions: `1`
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object TeamsGetDiscussionCommentLegacyResponseData {
   
@@ -50,7 +48,7 @@ object TeamsGetDiscussionCommentLegacyResponseData {
     last_edited_at: String,
     node_id: String,
     number: Double,
-    reactions: Confused,
+    reactions: `1`,
     updated_at: String,
     url: String
   ): TeamsGetDiscussionCommentLegacyResponseData = {
@@ -92,7 +90,7 @@ object TeamsGetDiscussionCommentLegacyResponseData {
     def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])

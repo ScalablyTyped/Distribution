@@ -5,14 +5,12 @@ import typings.stripeV3.stripeV3Strings.off_session
 import typings.stripeV3.stripeV3Strings.on_session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data to be sent with the request.
   * Refer to the Payment Intents API for a full list of parameters.
   */
-@js.native
 trait ConfirmCardPaymentData extends StObject {
   
   /*
@@ -21,36 +19,36 @@ trait ConfirmCardPaymentData extends StObject {
     * See the use case sections below for details.
     * Recomended
     */
-  var payment_method: js.UndefOr[String | `0`] = js.native
+  var payment_method: js.UndefOr[String | `0`] = js.undefined
   
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
-  var receipt_email: js.UndefOr[String] = js.native
+  var receipt_email: js.UndefOr[String] = js.undefined
   
   /**
     * If you are handling next actions yourself,
     * pass in a return_url. If the subsequent action is redirect_to_url,
     * this URL will be used on the return path for the redirect.
     */
-  var return_url: js.UndefOr[String] = js.native
+  var return_url: js.UndefOr[String] = js.undefined
   
   /**
     * If the PaymentIntent is associated with a customer and this parameter is set to true,
     * the provided payment method will be attached to the customer. Default is false.
     */
-  var save_payment_method: js.UndefOr[Boolean] = js.native
+  var save_payment_method: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that you intend to make future payments with this PaymentIntent's payment method.
     */
-  var setup_future_usage: js.UndefOr[on_session | off_session] = js.native
+  var setup_future_usage: js.UndefOr[on_session | off_session] = js.undefined
   
   /**
     * The shipping details for the payment, if collected.
     * Recomended
     */
-  var shipping: js.UndefOr[ShippingDetails] = js.native
+  var shipping: js.UndefOr[ShippingDetails] = js.undefined
 }
 object ConfirmCardPaymentData {
   

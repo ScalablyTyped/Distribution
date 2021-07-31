@@ -4,83 +4,66 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fxjs", "add")
+  @JSImport("fxjs", JSImport.Namespace)
   @js.native
-  def add(a: js.Any, b: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fxjs", "delay")
-  @js.native
-  def delay(time: Double, `val`: js.Any): js.Any = js.native
+  @scala.inline
+  def add(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "every")
-  @js.native
-  def every(f: EverF, iter: Iterable[_]): Boolean = js.native
-  @JSImport("fxjs", "every")
-  @js.native
-  def every(f: EverF, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): Boolean = js.native
+  @scala.inline
+  def delay(time: Double, `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "filter")
-  @js.native
-  def filter(f: js.Function, iter: Iterable[_]): js.Any = js.native
-  @JSImport("fxjs", "filter")
-  @js.native
-  def filter(f: js.Function, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): js.Any = js.native
+  @scala.inline
+  def every(f: EverF, iter: Iterable[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(f: EverF, iter: Iterator[js.Any, js.Any, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("fxjs", "find")
-  @js.native
-  def find(f: js.Function, iter: Iterable[_]): js.Any = js.native
-  @JSImport("fxjs", "find")
-  @js.native
-  def find(f: js.Function, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): js.Any = js.native
+  @scala.inline
+  def filter(f: js.Function, iter: Iterable[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def filter(f: js.Function, iter: Iterator[js.Any, js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "flat")
-  @js.native
-  def flat(iter: Iterable[_]): js.Any = js.native
-  @JSImport("fxjs", "flat")
-  @js.native
-  def flat(iter: Iterable[_], dep: Double): js.Any = js.native
+  @scala.inline
+  def find(f: js.Function, iter: Iterable[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def find(f: js.Function, iter: Iterator[js.Any, js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "flatMap")
-  @js.native
-  def flatMap(f: js.Function, iter: Iterable[_]): js.Any = js.native
-  @JSImport("fxjs", "flatMap")
-  @js.native
-  def flatMap(f: js.Function, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): js.Any = js.native
+  @scala.inline
+  def flat(iter: Iterable[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flat")(iter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def flat(iter: Iterable[js.Any], dep: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(iter.asInstanceOf[js.Any], dep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "go")
-  @js.native
-  def go(_underscore: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def flatMap(f: js.Function, iter: Iterable[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def flatMap(f: js.Function, iter: Iterator[js.Any, js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "log")
-  @js.native
+  @scala.inline
+  def go(_underscore: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
   def log(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param _ because its type any is not an array type */ _underscore: js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "map")
-  @js.native
-  def map(f: js.Function, iter: Iterable[_]): js.Any = js.native
-  @JSImport("fxjs", "map")
-  @js.native
-  def map(f: js.Function, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): js.Any = js.native
+  @scala.inline
+  def map(f: js.Function, iter: Iterable[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def map(f: js.Function, iter: Iterator[js.Any, js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fxjs", "range")
-  @js.native
-  def range(start: Double): js.Any = js.native
-  @JSImport("fxjs", "range")
-  @js.native
-  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): js.Any = js.native
-  @JSImport("fxjs", "range")
-  @js.native
-  def range(start: Double, stop: Double): js.Any = js.native
-  @JSImport("fxjs", "range")
-  @js.native
-  def range(start: Double, stop: Double, step: Double): js.Any = js.native
+  @scala.inline
+  def range(start: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def range(start: Double, stop: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def range(start: Double, stop: Double, step: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def range(start: Double, stop: Unit, step: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type EverF = js.Function1[/* _ */ js.Any, Boolean]
 }

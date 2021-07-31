@@ -3,15 +3,13 @@ package typings.puppeteer
 import typings.puppeteer.mod.LayoutDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object `0` {
     
@@ -32,20 +30,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
     /** Bottom margin. */
-    var bottom: js.UndefOr[LayoutDimension] = js.native
+    var bottom: js.UndefOr[LayoutDimension] = js.undefined
     
     /** Left margin. */
-    var left: js.UndefOr[LayoutDimension] = js.native
+    var left: js.UndefOr[LayoutDimension] = js.undefined
     
     /** Right margin. */
-    var right: js.UndefOr[LayoutDimension] = js.native
+    var right: js.UndefOr[LayoutDimension] = js.undefined
     
     /** Top margin. */
-    var top: js.UndefOr[LayoutDimension] = js.native
+    var top: js.UndefOr[LayoutDimension] = js.undefined
   }
   object Bottom {
     
@@ -84,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Delay {
     
@@ -116,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DelayNumber extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
   }
   object DelayNumber {
     
@@ -137,20 +132,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DeviceScaleFactor extends StObject {
     
-    var deviceScaleFactor: Double = js.native
+    var deviceScaleFactor: Double
     
-    var hasTouch: Boolean = js.native
+    var hasTouch: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var isLandscape: Boolean = js.native
+    var isLandscape: Boolean
     
-    var isMobile: Boolean = js.native
+    var isMobile: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object DeviceScaleFactor {
     
@@ -190,12 +184,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -216,10 +209,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrorText extends StObject {
     
-    var errorText: String = js.native
+    var errorText: String
   }
   object ErrorText {
     
@@ -237,42 +229,41 @@ object anon {
     }
   }
   
-  @js.native
   trait HasTouch extends StObject {
     
     /**
       * Specify device scale factor (can be thought of as dpr).
       * @default 1
       */
-    var deviceScaleFactor: js.UndefOr[Double] = js.native
+    var deviceScaleFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies if viewport supports touch events.
       * @default false
       */
-    var hasTouch: js.UndefOr[Boolean] = js.native
+    var hasTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * page height in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies if viewport is in landscape mode.
       * @default false
       */
-    var isLandscape: js.UndefOr[Boolean] = js.native
+    var isLandscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the meta viewport tag is taken into account.
       * @default false
       */
-    var isMobile: js.UndefOr[Boolean] = js.native
+    var isMobile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * page width in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object HasTouch {
     
@@ -323,12 +314,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsScreenUnlocked extends StObject {
     
-    var isScreenUnlocked: Boolean = js.native
+    var isScreenUnlocked: Boolean
     
-    var isUserActive: Boolean = js.native
+    var isUserActive: Boolean
   }
   object IsScreenUnlocked {
     
@@ -349,12 +339,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Metrics extends StObject {
     
-    var metrics: typings.puppeteer.mod.Metrics = js.native
+    var metrics: typings.puppeteer.mod.Metrics
     
-    var title: String = js.native
+    var title: String
   }
   object Metrics {
     
@@ -375,10 +364,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Steps extends StObject {
     
-    var steps: Double = js.native
+    var steps: Double
   }
   object Steps {
     
@@ -396,10 +384,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Text {
     
@@ -420,10 +407,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TimeoutError extends StObject {
     
-    var TimeoutError: typings.puppeteer.mod.TimeoutError = js.native
+    var TimeoutError: typings.puppeteer.mod.TimeoutError
   }
   object TimeoutError {
     

@@ -2,7 +2,6 @@ package typings.angularCompiler.compilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "ReadVarExpr")
@@ -16,12 +15,8 @@ class ReadVarExpr protected ()
     name: typings.angularCompiler.outputAstMod.BuiltinVar,
     `type`: typings.angularCompiler.outputAstMod.Type
   ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
   def this(name: String, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
+  def this(name: String, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
     name: String,
     `type`: typings.angularCompiler.outputAstMod.Type,
@@ -29,12 +24,12 @@ class ReadVarExpr protected ()
   ) = this()
   def this(
     name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

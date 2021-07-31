@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait MobileBroadbandAccountWatcherStatus extends StObject
 object MobileBroadbandAccountWatcherStatus extends StObject {
   
   @js.native
-  sealed trait aborted extends MobileBroadbandAccountWatcherStatus
+  sealed trait aborted
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait created extends MobileBroadbandAccountWatcherStatus
+  sealed trait created
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait enumerationCompleted extends MobileBroadbandAccountWatcherStatus
+  sealed trait enumerationCompleted
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait started extends MobileBroadbandAccountWatcherStatus
+  sealed trait started
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait stopped extends MobileBroadbandAccountWatcherStatus
+  sealed trait stopped
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
 }

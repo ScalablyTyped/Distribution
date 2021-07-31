@@ -6,174 +6,128 @@ import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.failure
 import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-native-appsflyer", "default.generateInviteLink")
+    @JSImport("react-native-appsflyer", JSImport.Default)
     @js.native
-    def generateInviteLink(options: InviteLinkOptions): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.generateInviteLink")
-    @js.native
-    def generateInviteLink(options: InviteLinkOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.generateInviteLink")
-    @js.native
-    def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.generateInviteLink")
-    @js.native
-    def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback, error: ErrorCallback): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-appsflyer", "default.getAppsFlyerUID")
-    @js.native
-    def getAppsFlyerUID(callback: js.Function2[/* error */ js.Any, /* appsFlyerUID */ String, Unit]): Unit = js.native
+    @scala.inline
+    def generateInviteLink(options: InviteLinkOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateInviteLink")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def generateInviteLink(options: InviteLinkOptions, success: Unit, error: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateInviteLink")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateInviteLink")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback, error: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateInviteLink")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.initSdk")
-    @js.native
-    def initSdk(options: InitSdkOptions): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.initSdk")
-    @js.native
-    def initSdk(options: InitSdkOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.initSdk")
-    @js.native
-    def initSdk(options: InitSdkOptions, success: SuccessCallback): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.initSdk")
-    @js.native
-    def initSdk(options: InitSdkOptions, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = js.native
+    @scala.inline
+    def getAppsFlyerUID(callback: js.Function2[/* error */ js.Any, /* appsFlyerUID */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppsFlyerUID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.onAppOpenAttribution")
-    @js.native
-    def onAppOpenAttribution(callback: js.Function1[/* response */ js.Any, Unit]): js.Function0[Unit] = js.native
+    @scala.inline
+    def initSdk(options: InitSdkOptions): Unit | js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("initSdk")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def initSdk(options: InitSdkOptions, success: Unit, error: ErrorCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("initSdk")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def initSdk(options: InitSdkOptions, success: SuccessCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("initSdk")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def initSdk(options: InitSdkOptions, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("initSdk")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
     
-    @JSImport("react-native-appsflyer", "default.onInstallConversionData")
-    @js.native
-    def onInstallConversionData(callback: js.Function1[/* data */ ConversionData, Unit]): js.Function0[Unit] = js.native
+    @scala.inline
+    def onAppOpenAttribution(callback: js.Function1[/* response */ js.Any, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onAppOpenAttribution")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     
-    @JSImport("react-native-appsflyer", "default.sendDeepLinkData")
-    @js.native
-    def sendDeepLinkData(url: String): Unit = js.native
+    @scala.inline
+    def onInstallConversionData(callback: js.Function1[/* data */ ConversionData, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onInstallConversionData")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     
-    @JSImport("react-native-appsflyer", "default.setAdditionalData")
-    @js.native
-    def setAdditionalData(additionalData: AdditionalData): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setAdditionalData")
-    @js.native
-    def setAdditionalData(additionalData: AdditionalData, success: SuccessCallback): Unit = js.native
+    @scala.inline
+    def sendDeepLinkData(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendDeepLinkData")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setAppInviteOneLinkID")
-    @js.native
-    def setAppInviteOneLinkID(oneLinkId: String): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setAppInviteOneLinkID")
-    @js.native
-    def setAppInviteOneLinkID(oneLinkId: String, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setAdditionalData(additionalData: AdditionalData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAdditionalData")(additionalData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setAdditionalData(additionalData: AdditionalData, success: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAdditionalData")(additionalData.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setCollectAndroidID")
-    @js.native
-    def setCollectAndroidID(isCollect: Boolean): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setCollectAndroidID")
-    @js.native
-    def setCollectAndroidID(isCollect: Boolean, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setAppInviteOneLinkID(oneLinkId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInviteOneLinkID")(oneLinkId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setAppInviteOneLinkID(oneLinkId: String, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAppInviteOneLinkID")(oneLinkId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setCollectIMEI")
-    @js.native
-    def setCollectIMEI(isCollect: Boolean): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setCollectIMEI")
-    @js.native
-    def setCollectIMEI(isCollect: Boolean, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setCollectAndroidID(isCollect: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCollectAndroidID")(isCollect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCollectAndroidID(isCollect: Boolean, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCollectAndroidID")(isCollect.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setCurrencyCode")
-    @js.native
-    def setCurrencyCode(currencyCode: String): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setCurrencyCode")
-    @js.native
-    def setCurrencyCode(currencyCode: String, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setCollectIMEI(isCollect: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCollectIMEI")(isCollect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCollectIMEI(isCollect: Boolean, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCollectIMEI")(isCollect.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setCustomerUserId")
-    @js.native
-    def setCustomerUserId(userId: String): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setCustomerUserId")
-    @js.native
-    def setCustomerUserId(userId: String, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setCurrencyCode(currencyCode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrencyCode")(currencyCode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCurrencyCode(currencyCode: String, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrencyCode")(currencyCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setDeviceTrackingDisabled")
-    @js.native
-    def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setDeviceTrackingDisabled")
-    @js.native
-    def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean, success: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setCustomerUserId(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCustomerUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCustomerUserId(userId: String, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomerUserId")(userId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.setUserEmails")
-    @js.native
-    def setUserEmails(options: EmailOptions): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setUserEmails")
-    @js.native
-    def setUserEmails(options: EmailOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setUserEmails")
-    @js.native
-    def setUserEmails(options: EmailOptions, success: SuccessCallback): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.setUserEmails")
-    @js.native
-    def setUserEmails(options: EmailOptions, success: SuccessCallback, error: ErrorCallback): Unit = js.native
+    @scala.inline
+    def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceTrackingDisabled")(isDeviceTrackingDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean, success: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceTrackingDisabled")(isDeviceTrackingDisabled.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.stopTracking")
-    @js.native
-    def stopTracking(isStopTracking: Boolean): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.stopTracking")
-    @js.native
-    def stopTracking(isStopTracking: Boolean, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def setUserEmails(options: EmailOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserEmails")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setUserEmails(options: EmailOptions, success: Unit, error: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserEmails")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserEmails(options: EmailOptions, success: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserEmails")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserEmails(options: EmailOptions, success: SuccessCallback, error: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserEmails")(options.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.trackAndOpenStore")
-    @js.native
-    def trackAndOpenStore(appId: String, campaign: String): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.trackAndOpenStore")
-    @js.native
-    def trackAndOpenStore(appId: String, campaign: String, additionalData: AdditionalData): Unit = js.native
+    @scala.inline
+    def stopTracking(isStopTracking: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopTracking")(isStopTracking.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def stopTracking(isStopTracking: Boolean, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopTracking")(isStopTracking.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.trackAppLaunch")
-    @js.native
-    def trackAppLaunch(): Unit = js.native
+    @scala.inline
+    def trackAndOpenStore(appId: String, campaign: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackAndOpenStore")(appId.asInstanceOf[js.Any], campaign.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def trackAndOpenStore(appId: String, campaign: String, additionalData: AdditionalData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackAndOpenStore")(appId.asInstanceOf[js.Any], campaign.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.trackCrossPromotionImpression")
-    @js.native
-    def trackCrossPromotionImpression(appId: String, campaign: String): Unit = js.native
+    @scala.inline
+    def trackAppLaunch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackAppLaunch")().asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.trackEvent")
-    @js.native
-    def trackEvent(eventName: String, eventValues: EventValues): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.trackEvent")
-    @js.native
-    def trackEvent(
-      eventName: String,
-      eventValues: EventValues,
-      success: js.UndefOr[scala.Nothing],
-      error: ErrorCallback
-    ): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.trackEvent")
-    @js.native
-    def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback): Unit | js.Promise[String] = js.native
-    @JSImport("react-native-appsflyer", "default.trackEvent")
-    @js.native
-    def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = js.native
+    @scala.inline
+    def trackCrossPromotionImpression(appId: String, campaign: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCrossPromotionImpression")(appId.asInstanceOf[js.Any], campaign.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.trackLocation")
-    @js.native
-    def trackLocation(longitude: Double, latitude: Double): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.trackLocation")
-    @js.native
+    @scala.inline
+    def trackEvent(eventName: String, eventValues: EventValues): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any], eventValues.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def trackEvent(eventName: String, eventValues: EventValues, success: Unit, error: ErrorCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any], eventValues.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any], eventValues.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    @scala.inline
+    def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any], eventValues.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
+    
+    @scala.inline
+    def trackLocation(longitude: Double, latitude: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackLocation")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def trackLocation(
       longitude: Double,
       latitude: Double,
       callback: js.Function2[/* error */ js.Any, /* coordinates */ js.Array[Double], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackLocation")(longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-appsflyer", "default.updateServerUninstallToken")
-    @js.native
-    def updateServerUninstallToken(token: String): Unit = js.native
-    @JSImport("react-native-appsflyer", "default.updateServerUninstallToken")
-    @js.native
-    def updateServerUninstallToken(token: String, callback: SuccessCallback): Unit = js.native
+    @scala.inline
+    def updateServerUninstallToken(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateServerUninstallToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def updateServerUninstallToken(token: String, callback: SuccessCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateServerUninstallToken")(token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
@@ -183,35 +137,42 @@ object mod {
   object EmailCryptType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EmailCryptType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EmailCryptType & Double] = js.native
     
     @js.native
-    sealed trait EmailCryptTypeMD5 extends EmailCryptType
-    /* 2 */ val EmailCryptTypeMD5: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeMD5 with Double = js.native
+    sealed trait EmailCryptTypeMD5
+      extends StObject
+         with EmailCryptType
+    /* 2 */ val EmailCryptTypeMD5: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeMD5 & Double = js.native
     
     @js.native
-    sealed trait EmailCryptTypeNone extends EmailCryptType
-    /* 0 */ val EmailCryptTypeNone: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeNone with Double = js.native
+    sealed trait EmailCryptTypeNone
+      extends StObject
+         with EmailCryptType
+    /* 0 */ val EmailCryptTypeNone: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeNone & Double = js.native
     
     @js.native
-    sealed trait EmailCryptTypeSHA1 extends EmailCryptType
-    /* 1 */ val EmailCryptTypeSHA1: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeSHA1 with Double = js.native
+    sealed trait EmailCryptTypeSHA1
+      extends StObject
+         with EmailCryptType
+    /* 1 */ val EmailCryptTypeSHA1: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeSHA1 & Double = js.native
     
     @js.native
-    sealed trait EmailCryptTypeSHA256 extends EmailCryptType
-    /* 3 */ val EmailCryptTypeSHA256: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeSHA256 with Double = js.native
+    sealed trait EmailCryptTypeSHA256
+      extends StObject
+         with EmailCryptType
+    /* 3 */ val EmailCryptTypeSHA256: typings.reactNativeAppsflyer.mod.EmailCryptType.EmailCryptTypeSHA256 & Double = js.native
   }
   
   type AdditionalData = StringDictionary[js.Any]
   
-  @js.native
   trait ConversionData extends StObject {
     
-    var data: Dictkey = js.native
+    var data: Dictkey
     
-    var status: success | failure = js.native
+    var status: success | failure
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ConversionData {
     
@@ -236,12 +197,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EmailOptions extends StObject {
     
-    var emails: js.Array[String] = js.native
+    var emails: js.Array[String]
     
-    var emailsCryptType: EmailCryptType = js.native
+    var emailsCryptType: EmailCryptType
   }
   object EmailOptions {
     
@@ -269,14 +229,13 @@ object mod {
   
   type EventValues = StringDictionary[js.Any]
   
-  @js.native
   trait InitSdkOptions extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    var devKey: String = js.native
+    var devKey: String
     
-    var isDebug: Boolean = js.native
+    var isDebug: Boolean
   }
   object InitSdkOptions {
     
@@ -300,24 +259,23 @@ object mod {
     }
   }
   
-  @js.native
   trait InviteLinkOptions extends StObject {
     
-    var baseDeeplink: js.UndefOr[String] = js.native
+    var baseDeeplink: js.UndefOr[String] = js.undefined
     
-    var campaign: js.UndefOr[String] = js.native
+    var campaign: js.UndefOr[String] = js.undefined
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var customerID: js.UndefOr[String] = js.native
+    var customerID: js.UndefOr[String] = js.undefined
     
-    var deeplinkPath: js.UndefOr[String] = js.native
+    var deeplinkPath: js.UndefOr[String] = js.undefined
     
-    var referrerImageUrl: js.UndefOr[String] = js.native
+    var referrerImageUrl: js.UndefOr[String] = js.undefined
     
-    var referrerName: js.UndefOr[String] = js.native
+    var referrerName: js.UndefOr[String] = js.undefined
     
-    var userParams: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var userParams: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object InviteLinkOptions {
     

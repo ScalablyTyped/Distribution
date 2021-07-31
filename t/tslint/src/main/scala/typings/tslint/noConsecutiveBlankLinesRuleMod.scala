@@ -7,10 +7,13 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TextRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noConsecutiveBlankLinesRuleMod {
+  
+  @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule")
   @js.native
@@ -30,9 +33,8 @@ object noConsecutiveBlankLinesRuleMod {
     @scala.inline
     def DEFAULT_ALLOWED_BLANKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED_BLANKS")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(allowed: Double): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(allowed: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(allowed.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule.metadata")
     @js.native
@@ -41,7 +43,6 @@ object noConsecutiveBlankLinesRuleMod {
     def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "getTemplateRanges")
-  @js.native
-  def getTemplateRanges(sourceFile: SourceFile): js.Array[TextRange] = js.native
+  @scala.inline
+  def getTemplateRanges(sourceFile: SourceFile): js.Array[TextRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateRanges")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[js.Array[TextRange]]
 }

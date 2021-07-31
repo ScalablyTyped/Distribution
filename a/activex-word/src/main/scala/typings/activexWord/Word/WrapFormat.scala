@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrapFormat extends StObject {
   
-  var AllowOverlap: Double = js.native
+  var AllowOverlap: Double
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DistanceBottom: Double = js.native
+  var DistanceBottom: Double
   
-  var DistanceLeft: Double = js.native
+  var DistanceLeft: Double
   
-  var DistanceRight: Double = js.native
+  var DistanceRight: Double
   
-  var DistanceTop: Double = js.native
+  var DistanceTop: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Side: WdWrapSideType = js.native
+  var Side: WdWrapSideType
   
-  var Type: WdWrapType = js.native
+  var Type: WdWrapType
   
   @JSName("Word.WrapFormat_typekey")
-  var WordDotWrapFormat_typekey: WrapFormat = js.native
+  var WordDotWrapFormat_typekey: WrapFormat
 }
 object WrapFormat {
   

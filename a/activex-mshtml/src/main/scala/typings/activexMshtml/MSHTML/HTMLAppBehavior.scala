@@ -2,50 +2,48 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLAppBehavior extends StObject {
   
   @JSName("MSHTML.HTMLAppBehavior_typekey")
-  var MSHTMLDotHTMLAppBehavior_typekey: HTMLAppBehavior = js.native
+  var MSHTMLDotHTMLAppBehavior_typekey: HTMLAppBehavior
   
-  var applicationName: String = js.native
+  var applicationName: String
   
-  var border: String = js.native
+  var border: String
   
-  var borderStyle: String = js.native
+  var borderStyle: String
   
-  var caption: String = js.native
+  var caption: String
   
-  val commandLine: String = js.native
+  val commandLine: String
   
-  var contextMenu: String = js.native
+  var contextMenu: String
   
-  var icon: String = js.native
+  var icon: String
   
-  var innerBorder: String = js.native
+  var innerBorder: String
   
-  var maximizeButton: String = js.native
+  var maximizeButton: String
   
-  var minimizeButton: String = js.native
+  var minimizeButton: String
   
-  var scroll: String = js.native
+  var scroll: String
   
-  var scrollFlat: String = js.native
+  var scrollFlat: String
   
-  var selection: String = js.native
+  var selection: String
   
-  var showInTaskBar: String = js.native
+  var showInTaskBar: String
   
-  var singleInstance: String = js.native
+  var singleInstance: String
   
-  var sysMenu: String = js.native
+  var sysMenu: String
   
-  var version: String = js.native
+  var version: String
   
-  var windowState: String = js.native
+  var windowState: String
 }
 object HTMLAppBehavior {
   

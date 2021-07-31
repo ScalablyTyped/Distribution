@@ -7,41 +7,12 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.namedTypesMod.namedTypes.FunctionExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionExpressionBuilder extends StObject {
   
-  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[PatternKind], body: BlockStatementKind): FunctionExpression = js.native
-  def apply(
-    id: js.UndefOr[scala.Nothing],
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    generator: js.UndefOr[scala.Nothing],
-    expression: Boolean
-  ): FunctionExpression = js.native
-  def apply(
-    id: js.UndefOr[scala.Nothing],
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    generator: Boolean
-  ): FunctionExpression = js.native
-  def apply(
-    id: js.UndefOr[scala.Nothing],
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    generator: Boolean,
-    expression: Boolean
-  ): FunctionExpression = js.native
   def apply(id: Null, params: js.Array[PatternKind], body: BlockStatementKind): FunctionExpression = js.native
-  def apply(
-    id: Null,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    generator: js.UndefOr[scala.Nothing],
-    expression: Boolean
-  ): FunctionExpression = js.native
   def apply(id: Null, params: js.Array[PatternKind], body: BlockStatementKind, generator: Boolean): FunctionExpression = js.native
   def apply(
     id: Null,
@@ -50,20 +21,43 @@ trait FunctionExpressionBuilder extends StObject {
     generator: Boolean,
     expression: Boolean
   ): FunctionExpression = js.native
-  def apply(id: IdentifierKind, params: js.Array[PatternKind], body: BlockStatementKind): FunctionExpression = js.native
   def apply(
-    id: IdentifierKind,
+    id: Null,
     params: js.Array[PatternKind],
     body: BlockStatementKind,
-    generator: js.UndefOr[scala.Nothing],
+    generator: Unit,
     expression: Boolean
   ): FunctionExpression = js.native
+  def apply(id: Unit, params: js.Array[PatternKind], body: BlockStatementKind): FunctionExpression = js.native
+  def apply(id: Unit, params: js.Array[PatternKind], body: BlockStatementKind, generator: Boolean): FunctionExpression = js.native
+  def apply(
+    id: Unit,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    generator: Boolean,
+    expression: Boolean
+  ): FunctionExpression = js.native
+  def apply(
+    id: Unit,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    generator: Unit,
+    expression: Boolean
+  ): FunctionExpression = js.native
+  def apply(id: IdentifierKind, params: js.Array[PatternKind], body: BlockStatementKind): FunctionExpression = js.native
   def apply(id: IdentifierKind, params: js.Array[PatternKind], body: BlockStatementKind, generator: Boolean): FunctionExpression = js.native
   def apply(
     id: IdentifierKind,
     params: js.Array[PatternKind],
     body: BlockStatementKind,
     generator: Boolean,
+    expression: Boolean
+  ): FunctionExpression = js.native
+  def apply(
+    id: IdentifierKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    generator: Unit,
     expression: Boolean
   ): FunctionExpression = js.native
   

@@ -2,20 +2,18 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mask a string by replacing its characters with a fixed character.
   */
-@js.native
 trait SchemaCharacterMaskConfig extends StObject {
   
   /**
     * Character to mask the sensitive values. If not supplied, defaults to
     * &quot;*&quot;.
     */
-  var maskingCharacter: js.UndefOr[String] = js.native
+  var maskingCharacter: js.UndefOr[String] = js.undefined
 }
 object SchemaCharacterMaskConfig {
   

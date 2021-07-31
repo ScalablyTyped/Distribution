@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePullRequestTitleInput extends StObject {
   
   /**
     * The system-generated ID of the pull request. To get this ID, use ListPullRequests.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
   
   /**
     * The updated title of the pull request. This replaces the existing title.
     */
-  var title: Title = js.native
+  var title: Title
 }
 object UpdatePullRequestTitleInput {
   

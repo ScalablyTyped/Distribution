@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,9 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document view and not under the OLE object. This is due to underlying implementation constraints and may change in the future.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleOLEShape
-  extends AccessibleShape
+  extends StObject
+     with AccessibleShape
      with XAccessibleAction
 object AccessibleOLEShape {
   

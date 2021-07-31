@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFleetError extends StObject {
   
   /**
     * The error code.
     */
-  var Code: js.UndefOr[DeleteFleetErrorCode] = js.native
+  var Code: js.UndefOr[DeleteFleetErrorCode] = js.undefined
   
   /**
     * The description for the error code.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object DeleteFleetError {
   

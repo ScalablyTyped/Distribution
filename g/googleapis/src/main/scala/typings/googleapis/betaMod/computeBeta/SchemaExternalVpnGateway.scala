@@ -3,7 +3,6 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,36 +13,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gateway resource in GCP, which provides the information to GCP about your
   * external VPN gateway.
   */
-@js.native
 trait SchemaExternalVpnGateway extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * List of interfaces for this external VPN gateway.
     */
-  var interfaces: js.UndefOr[js.Array[SchemaExternalVpnGatewayInterface]] = js.native
+  var interfaces: js.UndefOr[js.Array[SchemaExternalVpnGatewayInterface]] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#externalVpnGateway for
     * externalVpnGateways.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this ExternalVpnGateway,
@@ -55,14 +53,14 @@ trait SchemaExternalVpnGateway extends StObject {
     * To see the latest fingerprint, make a get() request to retrieve an
     * ExternalVpnGateway.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this ExternalVpnGateway resource. These can be later
     * modified by the setLabels method. Each label key/value must comply with
     * RFC1035. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -73,17 +71,17 @@ trait SchemaExternalVpnGateway extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the user-supplied redundancy type of this external VPN gateway.
     */
-  var redundancyType: js.UndefOr[String] = js.native
+  var redundancyType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaExternalVpnGateway {
   

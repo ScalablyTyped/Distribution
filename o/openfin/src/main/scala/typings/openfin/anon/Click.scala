@@ -2,21 +2,19 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Click extends StObject {
   
-  var click: String = js.native
+  var click: String
   
-  var close: String = js.native
+  var close: String
   
-  var error: String = js.native
+  var error: String
   
-  var message: String = js.native
+  var message: String
   
-  var show: String = js.native
+  var show: String
 }
 object Click {
   

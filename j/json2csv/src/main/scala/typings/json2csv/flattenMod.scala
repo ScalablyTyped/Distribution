@@ -3,26 +3,26 @@ package typings.json2csv
 import typings.json2csv.baseMod.Json2CsvTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flattenMod {
   
-  @JSImport("json2csv/transforms/flatten", "flatten")
+  @JSImport("json2csv/transforms/flatten", JSImport.Namespace)
   @js.native
-  def flatten(): Json2CsvTransform[_, _] = js.native
-  @JSImport("json2csv/transforms/flatten", "flatten")
-  @js.native
-  def flatten(options: FlattenOptions): Json2CsvTransform[_, _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def flatten(): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
+  @scala.inline
+  def flatten(options: FlattenOptions): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(options.asInstanceOf[js.Any]).asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
+  
   trait FlattenOptions extends StObject {
     
-    var arrays: js.UndefOr[Boolean] = js.native
+    var arrays: js.UndefOr[Boolean] = js.undefined
     
-    var objects: js.UndefOr[Boolean] = js.native
+    var objects: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object FlattenOptions {
     

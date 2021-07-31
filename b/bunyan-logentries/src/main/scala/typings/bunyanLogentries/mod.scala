@@ -3,19 +3,20 @@ package typings.bunyanLogentries
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bunyan-logentries", "createStream")
+  @JSImport("bunyan-logentries", JSImport.Namespace)
   @js.native
-  def createStream(options: StreamOptions): WritableStream = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createStream(options: StreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  
   trait StreamOptions extends StObject {
     
-    var token: String = js.native
+    var token: String
   }
   object StreamOptions {
     

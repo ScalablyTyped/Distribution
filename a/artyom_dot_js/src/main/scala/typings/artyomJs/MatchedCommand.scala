@@ -2,17 +2,15 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchedCommand extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var instruction: ArtyomCommand = js.native
+  var instruction: ArtyomCommand
   
-  var wildcard: js.UndefOr[js.Any] = js.native
+  var wildcard: js.UndefOr[js.Any] = js.undefined
 }
 object MatchedCommand {
   

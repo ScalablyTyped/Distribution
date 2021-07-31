@@ -2,16 +2,14 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var ResourceArn: FleetArn = js.native
+  var ResourceArn: FleetArn
 }
 object ListTagsForResourceRequest {
   

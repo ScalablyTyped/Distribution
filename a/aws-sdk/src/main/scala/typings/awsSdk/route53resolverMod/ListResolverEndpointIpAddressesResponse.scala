@@ -2,26 +2,24 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResolverEndpointIpAddressesResponse extends StObject {
   
   /**
     * Information about the IP addresses in your VPC that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints).
     */
-  var IpAddresses: js.UndefOr[IpAddressesResponse] = js.native
+  var IpAddresses: js.UndefOr[IpAddressesResponse] = js.undefined
   
   /**
     * The value that you specified for MaxResults in the request.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.route53resolverMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.route53resolverMod.MaxResults] = js.undefined
   
   /**
     * If the specified endpoint has more than MaxResults IP addresses, you can submit another ListResolverEndpointIpAddresses request to get the next group of IP addresses. In the next request, specify the value of NextToken from the previous response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
 }
 object ListResolverEndpointIpAddressesResponse {
   

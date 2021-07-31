@@ -5,10 +5,13 @@ import typings.node.vmMod.Script
 import typings.node.vmMod.ScriptOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("amphtml-validator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("amphtml-validator", "Validator")
   @js.native
@@ -22,39 +25,33 @@ object mod {
     def validateString(stringToValidate: String, htmlFormat: String): ValidationResult = js.native
   }
   
-  @JSImport("amphtml-validator", "getInstance")
-  @js.native
-  def getInstance(): js.Promise[Validator] = js.native
-  @JSImport("amphtml-validator", "getInstance")
-  @js.native
-  def getInstance(validatorJs: js.UndefOr[scala.Nothing], userAgent: String): js.Promise[Validator] = js.native
-  @JSImport("amphtml-validator", "getInstance")
-  @js.native
-  def getInstance(validatorJs: String): js.Promise[Validator] = js.native
-  @JSImport("amphtml-validator", "getInstance")
-  @js.native
-  def getInstance(validatorJs: String, userAgent: String): js.Promise[Validator] = js.native
+  @scala.inline
+  def getInstance(): js.Promise[Validator] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Promise[Validator]]
+  @scala.inline
+  def getInstance(validatorJs: String): js.Promise[Validator] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(validatorJs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Validator]]
+  @scala.inline
+  def getInstance(validatorJs: String, userAgent: String): js.Promise[Validator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(validatorJs.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Validator]]
+  @scala.inline
+  def getInstance(validatorJs: Unit, userAgent: String): js.Promise[Validator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(validatorJs.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Validator]]
   
-  @JSImport("amphtml-validator", "newInstance")
-  @js.native
-  def newInstance(validatorJsContents: String): Validator = js.native
+  @scala.inline
+  def newInstance(validatorJsContents: String): Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(validatorJsContents.asInstanceOf[js.Any]).asInstanceOf[Validator]
   
-  @js.native
   trait ValidationError extends StObject {
     
-    var code: ValidationErrorCode = js.native
+    var code: ValidationErrorCode
     
-    var col: Double = js.native
+    var col: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var params: js.Array[String] = js.native
+    var params: js.Array[String]
     
-    var severity: ValidationErrorSeverity = js.native
+    var severity: ValidationErrorSeverity
     
-    var specUrl: String | Null = js.native
+    var specUrl: String | Null
   }
   object ValidationError {
     
@@ -67,7 +64,7 @@ object mod {
       params: js.Array[String],
       severity: ValidationErrorSeverity
     ): ValidationError = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], specUrl = null)
       __obj.asInstanceOf[ValidationError]
     }
     
@@ -551,12 +548,11 @@ object mod {
     def WARNING: typings.amphtmlValidator.amphtmlValidatorStrings.WARNING = "WARNING".asInstanceOf[typings.amphtmlValidator.amphtmlValidatorStrings.WARNING]
   }
   
-  @js.native
   trait ValidationResult extends StObject {
     
-    var errors: js.Array[ValidationError] = js.native
+    var errors: js.Array[ValidationError]
     
-    var status: ValidationResultStatus = js.native
+    var status: ValidationResultStatus
   }
   object ValidationResult {
     

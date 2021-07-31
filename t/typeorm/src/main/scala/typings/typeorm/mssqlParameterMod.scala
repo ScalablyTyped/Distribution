@@ -35,7 +35,6 @@ import typings.typeorm.typeormStrings.variant
 import typings.typeorm.typeormStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mssqlParameterMod {
@@ -86,12 +85,12 @@ object mssqlParameterMod {
     def this(value: js.Any, `type`: time, scale: Double) = this()
     def this(value: js.Any, `type`: varbinary, length: Double) = this()
     def this(value: js.Any, `type`: varchar, length: Double) = this()
-    def this(value: js.Any, `type`: decimal, precision: js.UndefOr[scala.Nothing], scale: Double) = this()
     def this(value: js.Any, `type`: decimal, precision: Double, scale: Double) = this()
-    def this(value: js.Any, `type`: numeric, precision: js.UndefOr[scala.Nothing], scale: Double) = this()
+    def this(value: js.Any, `type`: decimal, precision: Unit, scale: Double) = this()
     def this(value: js.Any, `type`: numeric, precision: Double, scale: Double) = this()
+    def this(value: js.Any, `type`: numeric, precision: Unit, scale: Double) = this()
     
-    var params: js.Array[_] = js.native
+    var params: js.Array[js.Any] = js.native
     
     var `type`: String = js.native
     

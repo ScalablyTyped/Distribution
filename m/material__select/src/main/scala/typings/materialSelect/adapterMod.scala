@@ -4,189 +4,187 @@ import typings.materialMenuSurface.constantsMod.Corner
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCSelectAdapter extends StObject {
     
     /**
       * Activates the bottom line, showing a focused state.
       */
-    def activateBottomLine(): Unit = js.native
+    def activateBottomLine(): Unit
     
     /**
       * Adds class to select anchor element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Adds class to the menu element.
       */
-    def addMenuClass(className: String): Unit = js.native
+    def addMenuClass(className: String): Unit
     
     /**
       * Closes the menu.
       */
-    def closeMenu(): Unit = js.native
+    def closeMenu(): Unit
     
     /**
       * Closes notch in outline element, if the outline exists.
       */
-    def closeOutline(): Unit = js.native
+    def closeOutline(): Unit
     
     /**
       * Deactivates the bottom line.
       */
-    def deactivateBottomLine(): Unit = js.native
+    def deactivateBottomLine(): Unit
     
     /**
       * Floats label determined based off of the shouldFloat argument.
       */
-    def floatLabel(shouldFloat: Boolean): Unit = js.native
+    def floatLabel(shouldFloat: Boolean): Unit
     
     /**
       * Focuses the menu item element at the given index.
       */
-    def focusMenuItemAtIndex(index: Double): Unit = js.native
+    def focusMenuItemAtIndex(index: Double): Unit
     
     /**
       * Returns the select anchor element.
       */
-    def getAnchorElement(): Element | Null = js.native
+    def getAnchorElement(): Element | Null
     
     /**
       * Returns width of label in pixels, if the label exists.
       */
-    def getLabelWidth(): Double = js.native
+    def getLabelWidth(): Double
     
     /**
       * Returns the number of menu items.
       */
-    def getMenuItemCount(): Double = js.native
+    def getMenuItemCount(): Double
     
     /**
       * Gets the text content of the menu item element at the given index.
       */
-    def getMenuItemTextAtIndex(index: Double): String = js.native
+    def getMenuItemTextAtIndex(index: Double): String
     
     /**
       * Returns an array representing the VALUE_ATTR attributes of each menu item.
       */
-    def getMenuItemValues(): js.Array[String] = js.native
+    def getMenuItemValues(): js.Array[String]
     
     /**
       * Gets the given attribute on the select anchor element.
       */
-    def getSelectAnchorAttr(attr: String): String | Null = js.native
+    def getSelectAnchorAttr(attr: String): String | Null
     
     /**
       * Returns the selected index.
       */
-    def getSelectedIndex(): Double = js.native
+    def getSelectedIndex(): Double
     
     /**
       * Returns true if the select anchor element contains the given class name.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * Returns true if label exists, false if it doesn't.
       */
-    def hasLabel(): Boolean = js.native
+    def hasLabel(): Boolean
     
     /**
       * Returns true if outline element exists, false if it doesn't.
       */
-    def hasOutline(): Boolean = js.native
+    def hasOutline(): Boolean
     
     /**
       * Returns whether the select anchor is focused.
       */
-    def isSelectAnchorFocused(): Boolean = js.native
+    def isSelectAnchorFocused(): Boolean
     
     /**
       * Returns whether typeahead is in progress in the menu.
       */
-    def isTypeaheadInProgress(): Boolean = js.native
+    def isTypeaheadInProgress(): Boolean
     
     /**
       * Only implement if outline element exists.
       */
-    def notchOutline(labelWidth: Double): Unit = js.native
+    def notchOutline(labelWidth: Double): Unit
     
     /**
       * Emits a change event when an element is selected.
       */
-    def notifyChange(value: String): Unit = js.native
+    def notifyChange(value: String): Unit
     
     /**
       * Opens the menu.
       */
-    def openMenu(): Unit = js.native
+    def openMenu(): Unit
     
     /**
       * Removes a class from the select anchor element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Removes a class from the menu element.
       */
-    def removeMenuClass(className: String): Unit = js.native
+    def removeMenuClass(className: String): Unit
     
     /**
       * Removes the given attribute on the select anchor element.
       */
-    def removeSelectAnchorAttr(attr: String): Unit = js.native
+    def removeSelectAnchorAttr(attr: String): Unit
     
     /**
       * Styles the label as required, if the label exists.
       */
-    def setLabelRequired(isRequired: Boolean): Unit = js.native
+    def setLabelRequired(isRequired: Boolean): Unit
     
     /**
       * Sets the menu anchor corner.
       */
-    def setMenuAnchorCorner(anchorCorner: Corner): Unit = js.native
+    def setMenuAnchorCorner(anchorCorner: Corner): Unit
     
     /**
       * Sets the menu anchor element.
       */
-    def setMenuAnchorElement(anchorEl: Element): Unit = js.native
+    def setMenuAnchorElement(anchorEl: Element): Unit
     
     /**
       * Sets whether the menu should wrap focus.
       */
-    def setMenuWrapFocus(wrapFocus: Boolean): Unit = js.native
+    def setMenuWrapFocus(wrapFocus: Boolean): Unit
     
     /**
       * Sets the line ripple transform origin center.
       */
-    def setRippleCenter(normalizedX: Double): Unit = js.native
+    def setRippleCenter(normalizedX: Double): Unit
     
     /**
       * Sets the given attribute on the select anchor element.
       */
-    def setSelectAnchorAttr(attr: String, value: String): Unit = js.native
+    def setSelectAnchorAttr(attr: String, value: String): Unit
     
     /**
       * Sets the selected index in the menu.
       */
-    def setSelectedIndex(index: Double): Unit = js.native
+    def setSelectedIndex(index: Double): Unit
     
     /**
       * Sets the text content of the selectedText element to the given string.
       */
-    def setSelectedText(text: String): Unit = js.native
+    def setSelectedText(text: String): Unit
     
     /**
       * Adds a character to the list typeahead buffer and returns index of the
       * next item in the list matching the buffer.
       */
-    def typeaheadMatchItem(nextChar: String, startingIndex: Double): Double = js.native
+    def typeaheadMatchItem(nextChar: String, startingIndex: Double): Double
   }
   object MDCSelectAdapter {
     

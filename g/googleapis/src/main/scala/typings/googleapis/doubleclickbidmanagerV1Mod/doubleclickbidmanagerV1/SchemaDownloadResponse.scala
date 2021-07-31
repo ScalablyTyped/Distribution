@@ -2,41 +2,39 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Download response.
   */
-@js.native
 trait SchemaDownloadResponse extends StObject {
   
   /**
     * Retrieved ad groups in SDF format.
     */
-  var adGroups: js.UndefOr[String] = js.native
+  var adGroups: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieved ads in SDF format.
     */
-  var ads: js.UndefOr[String] = js.native
+  var ads: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieved campaigns in SDF format.
     */
-  var campaigns: js.UndefOr[String] = js.native
+  var campaigns: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieved insertion orders in SDF format.
     */
-  var insertionOrders: js.UndefOr[String] = js.native
+  var insertionOrders: js.UndefOr[String] = js.undefined
   
-  var inventorySources: js.UndefOr[String] = js.native
+  var inventorySources: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieved line items in SDF format.
     */
-  var lineItems: js.UndefOr[String] = js.native
+  var lineItems: js.UndefOr[String] = js.undefined
 }
 object SchemaDownloadResponse {
   

@@ -4,31 +4,29 @@ import typings.electron.electronStrings.audio
 import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionRequestHandlerHandlerDetails extends StObject {
   
   /**
     * The url of the `openExternal` request.
     */
-  var externalURL: js.UndefOr[String] = js.native
+  var externalURL: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the frame making the request is the main frame
     */
-  var isMainFrame: Boolean = js.native
+  var isMainFrame: Boolean
   
   /**
     * The types of media access being requested, elements can be `video` or `audio`
     */
-  var mediaTypes: js.UndefOr[js.Array[video | audio]] = js.native
+  var mediaTypes: js.UndefOr[js.Array[video | audio]] = js.undefined
   
   /**
     * The last URL the requesting frame loaded
     */
-  var requestingUrl: String = js.native
+  var requestingUrl: String
 }
 object PermissionRequestHandlerHandlerDetails {
   

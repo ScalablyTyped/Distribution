@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DEPRECATED Region restriction of the video.
   */
-@js.native
 trait SchemaVideoContentDetailsRegionRestriction extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaVideoContentDetailsRegionRestriction extends StObject {
     * property is present and contains an empty list, the video is blocked in
     * all countries.
     */
-  var allowed: js.UndefOr[js.Array[String]] = js.native
+  var allowed: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of region codes that identify countries where the video is
@@ -27,7 +25,7 @@ trait SchemaVideoContentDetailsRegionRestriction extends StObject {
     * present and contains an empty list, the video is viewable in all
     * countries.
     */
-  var blocked: js.UndefOr[js.Array[String]] = js.native
+  var blocked: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaVideoContentDetailsRegionRestriction {
   

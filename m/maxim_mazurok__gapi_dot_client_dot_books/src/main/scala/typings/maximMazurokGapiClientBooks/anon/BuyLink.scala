@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyLink extends StObject {
   
   /** URL to purchase this volume on the Google Books site. (In LITE projection) */
-  var buyLink: js.UndefOr[String] = js.native
+  var buyLink: js.UndefOr[String] = js.undefined
   
   /** The two-letter ISO_3166-1 country code for which this sale information is valid. (In LITE projection.) */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** Whether or not this volume is an eBook (can be added to the My eBooks shelf). */
-  var isEbook: js.UndefOr[Boolean] = js.native
+  var isEbook: js.UndefOr[Boolean] = js.undefined
   
   /** Suggested retail price. (In LITE projection.) */
-  var listPrice: js.UndefOr[Amount] = js.native
+  var listPrice: js.UndefOr[Amount] = js.undefined
   
   /** Offers available for this volume (sales and rentals). */
-  var offers: js.UndefOr[js.Array[FinskyOfferType]] = js.native
+  var offers: js.UndefOr[js.Array[FinskyOfferType]] = js.undefined
   
   /** The date on which this book is available for sale. */
-  var onSaleDate: js.UndefOr[String] = js.native
+  var onSaleDate: js.UndefOr[String] = js.undefined
   
   /** The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In LITE projection.) */
-  var retailPrice: js.UndefOr[Amount] = js.native
+  var retailPrice: js.UndefOr[Amount] = js.undefined
   
   /**
     * Whether or not this book is available for sale or offered for free in the Google eBookstore for the country listed above. Possible values are FOR_SALE, FOR_RENTAL_ONLY,
     * FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or FOR_PREORDER.
     */
-  var saleability: js.UndefOr[String] = js.native
+  var saleability: js.UndefOr[String] = js.undefined
 }
 object BuyLink {
   

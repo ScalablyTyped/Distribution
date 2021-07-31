@@ -2,16 +2,14 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaViewDefinition extends StObject {
   
   /**
     * [Required] A query that BigQuery executes when the view is referenced.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether to use BigQuery&#39;s legacy SQL for this view. The
@@ -19,12 +17,12 @@ trait SchemaViewDefinition extends StObject {
     * standard SQL: https://cloud.google.com/bigquery/sql-reference/ Queries
     * and views that reference this view must use the same flag value.
     */
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes user-defined function resources used in the query.
     */
-  var userDefinedFunctionResources: js.UndefOr[js.Array[SchemaUserDefinedFunctionResource]] = js.native
+  var userDefinedFunctionResources: js.UndefOr[js.Array[SchemaUserDefinedFunctionResource]] = js.undefined
 }
 object SchemaViewDefinition {
   

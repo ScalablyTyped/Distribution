@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource from which to remove the tag.
     */
-  var resourceARN: fraudDetectorArn = js.native
+  var resourceARN: fraudDetectorArn
   
   /**
     * The resource ARN.
     */
-  var tagKeys: tagKeyList = js.native
+  var tagKeys: tagKeyList
 }
 object UntagResourceRequest {
   

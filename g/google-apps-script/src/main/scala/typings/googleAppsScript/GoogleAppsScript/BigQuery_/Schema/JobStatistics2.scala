@@ -2,55 +2,53 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatistics2 extends StObject {
   
-  var billingTier: js.UndefOr[Double] = js.native
+  var billingTier: js.UndefOr[Double] = js.undefined
   
-  var cacheHit: js.UndefOr[Boolean] = js.native
+  var cacheHit: js.UndefOr[Boolean] = js.undefined
   
-  var ddlOperationPerformed: js.UndefOr[String] = js.native
+  var ddlOperationPerformed: js.UndefOr[String] = js.undefined
   
-  var ddlTargetRoutine: js.UndefOr[RoutineReference] = js.native
+  var ddlTargetRoutine: js.UndefOr[RoutineReference] = js.undefined
   
-  var ddlTargetTable: js.UndefOr[TableReference] = js.native
+  var ddlTargetTable: js.UndefOr[TableReference] = js.undefined
   
-  var estimatedBytesProcessed: js.UndefOr[String] = js.native
+  var estimatedBytesProcessed: js.UndefOr[String] = js.undefined
   
-  var modelTraining: js.UndefOr[BigQueryModelTraining] = js.native
+  var modelTraining: js.UndefOr[BigQueryModelTraining] = js.undefined
   
-  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.native
+  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.undefined
   
-  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.native
+  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.undefined
   
-  var numDmlAffectedRows: js.UndefOr[String] = js.native
+  var numDmlAffectedRows: js.UndefOr[String] = js.undefined
   
-  var queryPlan: js.UndefOr[js.Array[ExplainQueryStage]] = js.native
+  var queryPlan: js.UndefOr[js.Array[ExplainQueryStage]] = js.undefined
   
-  var referencedTables: js.UndefOr[js.Array[TableReference]] = js.native
+  var referencedTables: js.UndefOr[js.Array[TableReference]] = js.undefined
   
-  var reservationUsage: js.UndefOr[js.Array[JobStatistics2ReservationUsage]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[JobStatistics2ReservationUsage]] = js.undefined
   
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
-  var statementType: js.UndefOr[String] = js.native
+  var statementType: js.UndefOr[String] = js.undefined
   
-  var timeline: js.UndefOr[js.Array[QueryTimelineSample]] = js.native
+  var timeline: js.UndefOr[js.Array[QueryTimelineSample]] = js.undefined
   
-  var totalBytesBilled: js.UndefOr[String] = js.native
+  var totalBytesBilled: js.UndefOr[String] = js.undefined
   
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
-  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.native
+  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.undefined
   
-  var totalPartitionsProcessed: js.UndefOr[String] = js.native
+  var totalPartitionsProcessed: js.UndefOr[String] = js.undefined
   
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
   
-  var undeclaredQueryParameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var undeclaredQueryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
 }
 object JobStatistics2 {
   

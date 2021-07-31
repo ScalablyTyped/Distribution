@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,4 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes a new instance of the DiagramItem class.
   */
 class DiagramItem ()
-  extends typings.devexpressWeb.DiagramItem
+  extends StObject
+     with typings.devexpressWeb.DiagramItem {
+  
+  /**
+    * Gets the item's internal identifier.
+    */
+  /* CompleteClass */
+  var id: String = js.native
+  
+  /**
+    * Gets the item's key from a data source.
+    */
+  /* CompleteClass */
+  var key: js.Any = js.native
+}

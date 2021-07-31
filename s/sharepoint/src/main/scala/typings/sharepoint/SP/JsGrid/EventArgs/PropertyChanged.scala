@@ -7,25 +7,25 @@ import typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate
 import typings.sharepoint.SP.JsGrid.ValidationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PropertyChanged extends IEventArgs {
+trait PropertyChanged
+  extends StObject
+     with IEventArgs {
   
-  var changeKey: IChangeKey = js.native
+  var changeKey: IChangeKey
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var newProp: PropertyUpdate = js.native
+  var newProp: PropertyUpdate
   
-  var oldProp: PropertyUpdate = js.native
+  var oldProp: PropertyUpdate
   
-  var propType: IPropertyType = js.native
+  var propType: IPropertyType
   
-  var recordKey: Double = js.native
+  var recordKey: Double
   
-  var validationState: ValidationState = js.native
+  var validationState: ValidationState
 }
 object PropertyChanged {
   

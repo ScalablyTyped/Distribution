@@ -3,7 +3,6 @@ package typings.sharepoint.SP.JsGrid
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,8 +10,8 @@ trait ColumnInfoCollection extends StObject {
   
   def AppendColumn(colInfo: js.Any): Unit = js.native
   
-  def GetColumnArray(): js.Array[_] = js.native
-  def GetColumnArray(bVisibleOnly: Boolean): js.Array[_] = js.native
+  def GetColumnArray(): js.Array[js.Any] = js.native
+  def GetColumnArray(bVisibleOnly: Boolean): js.Array[js.Any] = js.native
   
   def GetColumnByKey(key: String): js.Any = js.native
   

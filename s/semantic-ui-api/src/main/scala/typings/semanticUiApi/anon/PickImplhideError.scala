@@ -3,14 +3,12 @@ package typings.semanticUiApi.anon
 import typings.semanticUiApi.semanticUiApiStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'hideError'> */
-@js.native
 trait PickImplhideError extends StObject {
   
-  var hideError: auto | Boolean = js.native
+  var hideError: auto | Boolean
 }
 object PickImplhideError {
   

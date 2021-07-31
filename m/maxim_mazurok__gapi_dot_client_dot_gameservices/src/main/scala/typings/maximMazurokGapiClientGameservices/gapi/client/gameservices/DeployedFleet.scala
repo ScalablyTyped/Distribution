@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployedFleet extends StObject {
   
   /** The name of the Agones fleet. */
-  var fleet: js.UndefOr[String] = js.native
+  var fleet: js.UndefOr[String] = js.undefined
   
   /** The fleet spec retrieved from the Agones fleet. */
-  var fleetSpec: js.UndefOr[String] = js.native
+  var fleetSpec: js.UndefOr[String] = js.undefined
   
   /** The source spec that is used to create the Agones fleet. The GameServerConfig resource may no longer exist in the system. */
-  var specSource: js.UndefOr[SpecSource] = js.native
+  var specSource: js.UndefOr[SpecSource] = js.undefined
   
   /** The current status of the Agones fleet. Includes count of game servers in various states. */
-  var status: js.UndefOr[DeployedFleetStatus] = js.native
+  var status: js.UndefOr[DeployedFleetStatus] = js.undefined
 }
 object DeployedFleet {
   

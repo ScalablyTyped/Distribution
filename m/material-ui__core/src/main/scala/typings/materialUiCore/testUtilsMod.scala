@@ -12,44 +12,37 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilsMod {
   
-  @JSImport("@material-ui/core/test-utils", "createMount")
+  @JSImport("@material-ui/core/test-utils", JSImport.Namespace)
   @js.native
-  def createMount(): NonePSnodeReactElementopt = js.native
-  @JSImport("@material-ui/core/test-utils", "createMount")
-  @js.native
-  def createMount(options: PartialMountOptions): NonePSnodeReactElementopt = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/test-utils", "createRender")
-  @js.native
-  def createRender(): Fn0 = js.native
-  @JSImport("@material-ui/core/test-utils", "createRender")
-  @js.native
-  def createRender(options: PartialRenderOptions): Fn0 = js.native
+  @scala.inline
+  def createMount(): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("createMount")().asInstanceOf[NonePSnodeReactElementopt]
+  @scala.inline
+  def createMount(options: PartialMountOptions): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("createMount")(options.asInstanceOf[js.Any]).asInstanceOf[NonePSnodeReactElementopt]
   
-  @JSImport("@material-ui/core/test-utils", "createShallow")
-  @js.native
-  def createShallow(): Fn1 = js.native
-  @JSImport("@material-ui/core/test-utils", "createShallow")
-  @js.native
-  def createShallow(options: PartialShallowOptions): Fn1 = js.native
+  @scala.inline
+  def createRender(): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("createRender")().asInstanceOf[Fn0]
+  @scala.inline
+  def createRender(options: PartialRenderOptions): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("createRender")(options.asInstanceOf[js.Any]).asInstanceOf[Fn0]
   
-  @JSImport("@material-ui/core/test-utils", "findOutermostIntrinsic")
-  @js.native
-  def findOutermostIntrinsic(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
+  @scala.inline
+  def createShallow(): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallow")().asInstanceOf[Fn1]
+  @scala.inline
+  def createShallow(options: PartialShallowOptions): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallow")(options.asInstanceOf[js.Any]).asInstanceOf[Fn1]
   
-  @JSImport("@material-ui/core/test-utils", "getClasses")
-  @js.native
-  def getClasses[T](element: ReactElement): T = js.native
-  @JSImport("@material-ui/core/test-utils", "getClasses")
-  @js.native
-  def getClasses[T](element: ReactElement, options: PartialwithThemeboolean): T = js.native
+  @scala.inline
+  def findOutermostIntrinsic(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOutermostIntrinsic")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
   
-  @JSImport("@material-ui/core/test-utils", "unwrap")
-  @js.native
-  def unwrap(element: ReactElement): ReactElement = js.native
+  @scala.inline
+  def getClasses[T](element: ReactElement): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def getClasses[T](element: ReactElement, options: PartialwithThemeboolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def unwrap(element: ReactElement): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(element.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

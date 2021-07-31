@@ -3,21 +3,19 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalProps extends StObject {
   
-  val children: js.UndefOr[js.Any] = js.native
+  val children: js.UndefOr[js.Any] = js.undefined
   
-  val onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  val onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val persistent: js.UndefOr[Boolean] = js.native
+  val persistent: js.UndefOr[Boolean] = js.undefined
   
-  val size: js.UndefOr[ModalSize] = js.native
+  val size: js.UndefOr[ModalSize] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
 }
 object ModalProps {
   

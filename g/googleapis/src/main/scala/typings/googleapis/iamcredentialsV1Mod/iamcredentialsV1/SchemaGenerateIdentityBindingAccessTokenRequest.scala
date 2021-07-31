@@ -2,10 +2,8 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGenerateIdentityBindingAccessTokenRequest extends StObject {
   
   /**
@@ -41,14 +39,14 @@ trait SchemaGenerateIdentityBindingAccessTokenRequest extends StObject {
     * &quot;my_claims&quot;: {     &quot;additional_claim&quot;:
     * &quot;value&quot;   } }
     */
-  var jwt: js.UndefOr[String] = js.native
+  var jwt: js.UndefOr[String] = js.undefined
   
   /**
     * Code to identify the scopes to be included in the OAuth 2.0 access token.
     * See https://developers.google.com/identity/protocols/googlescopes for
     * more information. At least one value required.
     */
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGenerateIdentityBindingAccessTokenRequest {
   

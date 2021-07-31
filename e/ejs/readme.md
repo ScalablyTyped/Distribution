@@ -11,9 +11,9 @@ Embedded JavaScript templates
 | Full name          | ejs |
 | Keywords           | template, engine, ejs |
 | # releases         | 12 |
-| # dependents       | 6570 |
-| # downloads        | 280346985 |
-| # stars            | 298 |
+| # dependents       | 7128 |
+| # downloads        | 346269324 |
+| # stars            | 299 |
 
 ## Links
 - [Homepage](https://github.com/mde/ejs)

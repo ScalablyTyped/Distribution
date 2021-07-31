@@ -2,22 +2,20 @@ package typings.googleapis.cloudidentityV1Mod.cloudidentityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSearchGroupsResponse extends StObject {
   
   /**
     * List of Groups satisfying the search query.
     */
-  var groups: js.UndefOr[js.Array[SchemaGroup]] = js.native
+  var groups: js.UndefOr[js.Array[SchemaGroup]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results available for specified query.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchGroupsResponse {
   

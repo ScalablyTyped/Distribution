@@ -2,37 +2,35 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Job entry with metadata inside SearchJobsResponse.
   */
-@js.native
 trait SchemaMatchingJob extends StObject {
   
   /**
     * Commute information which is generated based on specified  CommuteFilter.
     */
-  var commuteInfo: js.UndefOr[SchemaCommuteInfo] = js.native
+  var commuteInfo: js.UndefOr[SchemaCommuteInfo] = js.undefined
   
   /**
     * Job resource that matches the specified SearchJobsRequest.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * A summary of the job with core information that&#39;s displayed on the
     * search results listing page.
     */
-  var jobSummary: js.UndefOr[String] = js.native
+  var jobSummary: js.UndefOr[String] = js.undefined
   
   /**
     * Contains snippets of text from the Job.job_title field most closely
     * matching a search query&#39;s keywords, if available. The matching query
     * keywords are enclosed in HTML bold tags.
     */
-  var jobTitleSnippet: js.UndefOr[String] = js.native
+  var jobTitleSnippet: js.UndefOr[String] = js.undefined
   
   /**
     * Contains snippets of text from the Job.description and similar fields
@@ -40,7 +38,7 @@ trait SchemaMatchingJob extends StObject {
     * HTML tags in the original fields are stripped when returned in this
     * field, and matching query keywords are enclosed in HTML bold tags.
     */
-  var searchTextSnippet: js.UndefOr[String] = js.native
+  var searchTextSnippet: js.UndefOr[String] = js.undefined
 }
 object SchemaMatchingJob {
   

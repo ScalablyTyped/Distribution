@@ -2,36 +2,34 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputGroup extends StObject {
   
   /**
     * Use automated encoding to have MediaConvert choose your encoding settings for you, based on characteristics of your input video.
     */
-  var AutomatedEncodingSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AutomatedEncodingSettings] = js.native
+  var AutomatedEncodingSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AutomatedEncodingSettings] = js.undefined
   
   /**
     * Use Custom Group Name (CustomName) to specify a name for the output group. This value is displayed on the console and can make your job settings JSON more human-readable. It does not affect your outputs. Use up to twelve characters that are either letters, numbers, spaces, or underscores.
     */
-  var CustomName: js.UndefOr[string] = js.native
+  var CustomName: js.UndefOr[string] = js.undefined
   
   /**
     * Name of the output group
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Output Group settings, including type
     */
-  var OutputGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.OutputGroupSettings] = js.native
+  var OutputGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.OutputGroupSettings] = js.undefined
   
   /**
     * This object holds groups of encoding settings, one group of settings per output.
     */
-  var Outputs: js.UndefOr[listOfOutput] = js.native
+  var Outputs: js.UndefOr[listOfOutput] = js.undefined
 }
 object OutputGroup {
   

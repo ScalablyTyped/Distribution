@@ -10,7 +10,6 @@ import typings.tensorflowTfjsLayers.initializersMod.Initializer
 import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import typings.tensorflowTfjsLayers.topologyMod.Layer
@@ -18,10 +17,13 @@ import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import typings.tensorflowTfjsLayers.variablesMod.LayerVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convolutionalMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "BaseConv")
   @js.native
@@ -59,9 +61,12 @@ object convolutionalMod {
   /* static members */
   object BaseConv {
     
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "BaseConv.verifyArgs")
+    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "BaseConv")
     @js.native
-    def verifyArgs(args: BaseConvLayerArgs): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def verifyArgs(args: BaseConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv")
@@ -82,9 +87,12 @@ object convolutionalMod {
   /* static members */
   object Conv {
     
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv.verifyArgs")
+    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv")
     @js.native
-    def verifyArgs(args: ConvLayerArgs): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def verifyArgs(args: ConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv1D")
@@ -106,9 +114,8 @@ object convolutionalMod {
     @scala.inline
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv1D.verifyArgs")
-    @js.native
-    def verifyArgs(args: ConvLayerArgs): Unit = js.native
+    @scala.inline
+    def verifyArgs(args: ConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv2DTranspose")
@@ -150,9 +157,8 @@ object convolutionalMod {
     @scala.inline
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv2D.verifyArgs")
-    @js.native
-    def verifyArgs(args: ConvLayerArgs): Unit = js.native
+    @scala.inline
+    def verifyArgs(args: ConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3D")
@@ -174,17 +180,14 @@ object convolutionalMod {
     @scala.inline
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3D.verifyArgs")
-    @js.native
-    def verifyArgs(args: ConvLayerArgs): Unit = js.native
+    @scala.inline
+    def verifyArgs(args: ConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Cropping2D")
   @js.native
   class Cropping2D protected () extends Layer {
     def this(args: Cropping2DLayerArgs) = this()
-    
-    def computeOutputShape(inputShape: Shape): Shape = js.native
     
     val cropping: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
     
@@ -275,8 +278,6 @@ object convolutionalMod {
     
     val DEFAULT_SIZE: js.Array[Double] = js.native
     
-    def computeOutputShape(inputShape: Shape): Shape = js.native
-    
     val dataFormat: DataFormat = js.native
     
     val size: js.Array[Double] = js.native
@@ -296,120 +297,24 @@ object convolutionalMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.UndefOr[scala.Nothing], padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv1d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     strides: Double,
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
-  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String, dataFormat: DataFormat): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv1d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -417,135 +322,87 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: Double
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Double): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: Double,
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
-  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Double, padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
+  @scala.inline
+  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Double, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv1dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: Double,
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv1dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -553,9 +410,8 @@ object convolutionalMod {
     strides: Double,
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1dWithBias")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv1dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -564,128 +420,121 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: Double
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Double,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Double,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Double,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv1dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.UndefOr[scala.Nothing], padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
-  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double], padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double], padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -693,309 +542,121 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  @scala.inline
+  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: js.Array[Double],
     padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple2[Double, Double],
     activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1003,21 +664,8 @@ object convolutionalMod {
     strides: js.Array[Double],
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
-  def conv2dWithBiasActivation(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.UndefOr[scala.Nothing],
-    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1026,9 +674,8 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1038,128 +685,264 @@ object convolutionalMod {
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double],
     activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: Unit,
+    activation: typings.tensorflowTfjsCore.fusedTypesMod.Activation
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithBiasActivation")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.UndefOr[scala.Nothing], padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
-  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double], padding: String): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double], padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3d(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1167,141 +950,99 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: String, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: Unit, padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3d(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
+  @scala.inline
+  def conv3dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
+    strides: js.Array[Double],
     padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
-  def conv3dWithBias(
-    x: Tensor[Rank],
-    kernel: Tensor[Rank],
-    bias: Tensor[Rank],
-    strides: js.Array[Double],
-    padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: js.Array[Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1309,9 +1050,8 @@ object convolutionalMod {
     strides: js.Array[Double],
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv3dWithBias")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def conv3dWithBias(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
@@ -1320,45 +1060,133 @@ object convolutionalMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def conv3dWithBias(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dWithBias")(x.asInstanceOf[js.Any], kernel.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "preprocessConv2DInput")
-  @js.native
-  def preprocessConv2DInput(x: Tensor[Rank], dataFormat: DataFormat): Tensor[Rank] = js.native
+  @scala.inline
+  def preprocessConv2DInput(x: Tensor[Rank], dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("preprocessConv2DInput")(x.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "preprocessConv3DInput")
-  @js.native
-  def preprocessConv3DInput(x: Tensor[Rank], dataFormat: DataFormat): Tensor[Rank] = js.native
+  @scala.inline
+  def preprocessConv3DInput(x: Tensor[Rank], dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("preprocessConv3DInput")(x.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @js.native
-  trait BaseConvLayerArgs extends LayerArgs {
+  trait BaseConvLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Activation function of the layer.
       *
       * If you don't specify the activation, none is applied.
       */
-    var activation: js.UndefOr[ActivationIdentifier] = js.native
+    var activation: js.UndefOr[ActivationIdentifier] = js.undefined
     
     /**
       * Regularizer function applied to the activation.
       */
-    var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Constraint for the bias vector.
       */
-    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the bias vector.
       */
-    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer function applied to the bias vector.
       */
-    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -1372,7 +1200,7 @@ object convolutionalMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The dilation rate to use for the dilated convolution in each dimension.
@@ -1383,33 +1211,33 @@ object convolutionalMod {
       */
     var dilationRate: js.UndefOr[
         Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Constraint for the convolutional kernel weights.
       */
-    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the convolutional kernel weights matrix.
       */
-    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer function applied to the kernel weights matrix.
       */
-    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * The dimensions of the convolution window. If kernelSize is a number, the
       * convolutional window will be square.
       */
-    var kernelSize: Double | js.Array[Double] = js.native
+    var kernelSize: Double | js.Array[Double]
     
     /**
       * Padding mode.
       */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
     /**
       * The strides of the convolution in each dimension. If strides is a number,
@@ -1418,12 +1246,12 @@ object convolutionalMod {
       * Specifying any stride value != 1 is incompatible with specifying any
       * `dilationRate` value != 1.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Whether the layer uses a bias vector. Defaults to `true`.
       */
-    var useBias: js.UndefOr[Boolean] = js.native
+    var useBias: js.UndefOr[Boolean] = js.undefined
   }
   object BaseConvLayerArgs {
     
@@ -1530,14 +1358,15 @@ object convolutionalMod {
     }
   }
   
-  @js.native
-  trait ConvLayerArgs extends BaseConvLayerArgs {
+  trait ConvLayerArgs
+    extends StObject
+       with BaseConvLayerArgs {
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
       * convolution).
       */
-    var filters: Double = js.native
+    var filters: Double
   }
   object ConvLayerArgs {
     
@@ -1555,8 +1384,9 @@ object convolutionalMod {
     }
   }
   
-  @js.native
-  trait Cropping2DLayerArgs extends LayerArgs {
+  trait Cropping2DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Dimension of the cropping along the width and the height.
@@ -1570,7 +1400,7 @@ object convolutionalMod {
       *   interpreted as
       *   `[[top_crop, bottom_crop], [left_crop, right_crop]]`
       */
-    var cropping: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]) = js.native
+    var cropping: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -1584,7 +1414,7 @@ object convolutionalMod {
       *
       * Defaults to `channels_last`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
   }
   object Cropping2DLayerArgs {
     
@@ -1612,8 +1442,9 @@ object convolutionalMod {
     }
   }
   
-  @js.native
-  trait SeparableConvLayerArgs extends ConvLayerArgs {
+  trait SeparableConvLayerArgs
+    extends StObject
+       with ConvLayerArgs {
     
     /**
       * The number of depthwise convolution output channels for each input
@@ -1621,37 +1452,37 @@ object convolutionalMod {
       * The total number of depthwise convolution output channels will be equal
       * to `filtersIn * depthMultiplier`. Default: 1.
       */
-    var depthMultiplier: js.UndefOr[Double] = js.native
+    var depthMultiplier: js.UndefOr[Double] = js.undefined
     
     /**
       * Constraint function applied to the depthwise kernel matrix.
       */
-    var depthwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var depthwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the depthwise kernel matrix.
       */
-    var depthwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var depthwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer function applied to the depthwise kernel matrix.
       */
-    var depthwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var depthwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Constraint function applied to the pointwise kernel matrix.
       */
-    var pointwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var pointwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the pointwise kernel matrix.
       */
-    var pointwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var pointwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer function applied to the pointwise kernel matrix.
       */
-    var pointwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var pointwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   }
   object SeparableConvLayerArgs {
     
@@ -1708,8 +1539,9 @@ object convolutionalMod {
     }
   }
   
-  @js.native
-  trait UpSampling2DLayerArgs extends LayerArgs {
+  trait UpSampling2DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Format of the data, which determines the ordering of the dimensions in
@@ -1723,14 +1555,14 @@ object convolutionalMod {
       *
       * Defaults to `"channelsLast"`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * The upsampling factors for rows and columns.
       *
       * Defaults to `[2, 2]`.
       */
-    var size: js.UndefOr[js.Array[Double]] = js.native
+    var size: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object UpSampling2DLayerArgs {
     

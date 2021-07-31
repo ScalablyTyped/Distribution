@@ -5,31 +5,31 @@ import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformPrefix[T /* <: Record[String, _] */] extends Transform[T] {
+trait TransformPrefix[T /* <: Record[String, js.Any] */]
+  extends StObject
+     with Transform[T] {
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  def transform(content: String): BlockInstance[Partial[T]] = js.native
+  def transform(content: String): BlockInstance[Partial[T]]
   
-  var `type`: prefix = js.native
+  var `type`: prefix
 }
 object TransformPrefix {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](prefix: String, transform: String => BlockInstance[Partial[T]], `type`: prefix): TransformPrefix[T] = {
+  def apply[T /* <: Record[String, js.Any] */](prefix: String, transform: String => BlockInstance[Partial[T]]): TransformPrefix[T] = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("prefix")
     __obj.asInstanceOf[TransformPrefix[T]]
   }
   
   @scala.inline
-  implicit class TransformPrefixMutableBuilder[Self <: TransformPrefix[_], T /* <: Record[String, _] */] (val x: Self with TransformPrefix[T]) extends AnyVal {
+  implicit class TransformPrefixMutableBuilder[Self <: TransformPrefix[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformPrefix[T]) extends AnyVal {
     
     @scala.inline
     def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])

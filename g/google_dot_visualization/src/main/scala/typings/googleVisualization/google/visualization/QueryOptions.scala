@@ -2,15 +2,13 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var makeRequestParams: js.UndefOr[js.Object] = js.native
+  var makeRequestParams: js.UndefOr[js.Object] = js.undefined
   
-  var sendMethod: js.UndefOr[String] = js.native
+  var sendMethod: js.UndefOr[String] = js.undefined
 }
 object QueryOptions {
   

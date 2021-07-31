@@ -3,65 +3,63 @@ package typings.expoFileSystem.fileSystemTypesMod
 import typings.expoFileSystem.expoFileSystemStrings.ExponentFileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExponentFileSystemModule extends StObject {
   
-  def addListener(eventName: String): Unit = js.native
+  def addListener(eventName: String): Unit
   
-  val bundleDirectory: String | Null = js.native
+  val bundleDirectory: String | Null
   
-  val bundledAssets: String | Null = js.native
+  val bundledAssets: String | Null
   
-  val cacheDirectory: String | Null = js.native
+  val cacheDirectory: String | Null
   
-  val copyAsync: js.UndefOr[PlatformMethod] = js.native
+  val copyAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val deleteAsync: js.UndefOr[PlatformMethod] = js.native
+  val deleteAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val documentDirectory: String | Null = js.native
+  val documentDirectory: String | Null
   
-  val downloadAsync: js.UndefOr[PlatformMethod] = js.native
+  val downloadAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val downloadResumablePauseAsync: js.UndefOr[PlatformMethod] = js.native
+  val downloadResumablePauseAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val downloadResumableStartAsync: js.UndefOr[PlatformMethod] = js.native
+  val downloadResumableStartAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val getContentUriAsync: js.UndefOr[PlatformMethod] = js.native
+  val getContentUriAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val getFreeDiskStorageAsync: js.UndefOr[PlatformMethod] = js.native
+  val getFreeDiskStorageAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val getInfoAsync: js.UndefOr[PlatformMethod] = js.native
+  val getInfoAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val getTotalDiskCapacityAsync: js.UndefOr[PlatformMethod] = js.native
+  val getTotalDiskCapacityAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val makeDirectoryAsync: js.UndefOr[PlatformMethod] = js.native
+  val makeDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val moveAsync: js.UndefOr[PlatformMethod] = js.native
+  val moveAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val name: ExponentFileSystem = js.native
+  val name: ExponentFileSystem
   
-  val readAsStringAsync: js.UndefOr[PlatformMethod] = js.native
+  val readAsStringAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val readDirectoryAsync: js.UndefOr[PlatformMethod] = js.native
+  val readDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  def removeListeners(count: Double): Unit = js.native
+  def removeListeners(count: Double): Unit
   
-  var startObserving: js.UndefOr[js.Function0[Unit]] = js.native
+  var startObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var stopObserving: js.UndefOr[js.Function0[Unit]] = js.native
+  var stopObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val uploadAsync: js.UndefOr[PlatformMethod] = js.native
+  val uploadAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val writeAsStringAsync: js.UndefOr[PlatformMethod] = js.native
+  val writeAsStringAsync: js.UndefOr[PlatformMethod] = js.undefined
 }
 object ExponentFileSystemModule {
   
   @scala.inline
-  def apply(addListener: String => Unit, name: ExponentFileSystem, removeListeners: Double => Unit): ExponentFileSystemModule = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), name = name.asInstanceOf[js.Any], removeListeners = js.Any.fromFunction1(removeListeners))
+  def apply(addListener: String => Unit, removeListeners: Double => Unit): ExponentFileSystemModule = {
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), name = "ExponentFileSystem", removeListeners = js.Any.fromFunction1(removeListeners), bundleDirectory = null, bundledAssets = null, cacheDirectory = null, documentDirectory = null)
     __obj.asInstanceOf[ExponentFileSystemModule]
   }
   
@@ -90,13 +88,13 @@ object ExponentFileSystemModule {
     def setCacheDirectoryNull: Self = StObject.set(x, "cacheDirectory", null)
     
     @scala.inline
-    def setCopyAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "copyAsync", js.Any.fromFunction1(value))
+    def setCopyAsync(value: PlatformMethod): Self = StObject.set(x, "copyAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCopyAsyncUndefined: Self = StObject.set(x, "copyAsync", js.undefined)
     
     @scala.inline
-    def setDeleteAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction1(value))
+    def setDeleteAsync(value: PlatformMethod): Self = StObject.set(x, "deleteAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDeleteAsyncUndefined: Self = StObject.set(x, "deleteAsync", js.undefined)
@@ -108,55 +106,55 @@ object ExponentFileSystemModule {
     def setDocumentDirectoryNull: Self = StObject.set(x, "documentDirectory", null)
     
     @scala.inline
-    def setDownloadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadAsync", js.Any.fromFunction1(value))
+    def setDownloadAsync(value: PlatformMethod): Self = StObject.set(x, "downloadAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDownloadAsyncUndefined: Self = StObject.set(x, "downloadAsync", js.undefined)
     
     @scala.inline
-    def setDownloadResumablePauseAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadResumablePauseAsync", js.Any.fromFunction1(value))
+    def setDownloadResumablePauseAsync(value: PlatformMethod): Self = StObject.set(x, "downloadResumablePauseAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDownloadResumablePauseAsyncUndefined: Self = StObject.set(x, "downloadResumablePauseAsync", js.undefined)
     
     @scala.inline
-    def setDownloadResumableStartAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadResumableStartAsync", js.Any.fromFunction1(value))
+    def setDownloadResumableStartAsync(value: PlatformMethod): Self = StObject.set(x, "downloadResumableStartAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDownloadResumableStartAsyncUndefined: Self = StObject.set(x, "downloadResumableStartAsync", js.undefined)
     
     @scala.inline
-    def setGetContentUriAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getContentUriAsync", js.Any.fromFunction1(value))
+    def setGetContentUriAsync(value: PlatformMethod): Self = StObject.set(x, "getContentUriAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetContentUriAsyncUndefined: Self = StObject.set(x, "getContentUriAsync", js.undefined)
     
     @scala.inline
-    def setGetFreeDiskStorageAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getFreeDiskStorageAsync", js.Any.fromFunction1(value))
+    def setGetFreeDiskStorageAsync(value: PlatformMethod): Self = StObject.set(x, "getFreeDiskStorageAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetFreeDiskStorageAsyncUndefined: Self = StObject.set(x, "getFreeDiskStorageAsync", js.undefined)
     
     @scala.inline
-    def setGetInfoAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getInfoAsync", js.Any.fromFunction1(value))
+    def setGetInfoAsync(value: PlatformMethod): Self = StObject.set(x, "getInfoAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetInfoAsyncUndefined: Self = StObject.set(x, "getInfoAsync", js.undefined)
     
     @scala.inline
-    def setGetTotalDiskCapacityAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getTotalDiskCapacityAsync", js.Any.fromFunction1(value))
+    def setGetTotalDiskCapacityAsync(value: PlatformMethod): Self = StObject.set(x, "getTotalDiskCapacityAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetTotalDiskCapacityAsyncUndefined: Self = StObject.set(x, "getTotalDiskCapacityAsync", js.undefined)
     
     @scala.inline
-    def setMakeDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "makeDirectoryAsync", js.Any.fromFunction1(value))
+    def setMakeDirectoryAsync(value: PlatformMethod): Self = StObject.set(x, "makeDirectoryAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMakeDirectoryAsyncUndefined: Self = StObject.set(x, "makeDirectoryAsync", js.undefined)
     
     @scala.inline
-    def setMoveAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "moveAsync", js.Any.fromFunction1(value))
+    def setMoveAsync(value: PlatformMethod): Self = StObject.set(x, "moveAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMoveAsyncUndefined: Self = StObject.set(x, "moveAsync", js.undefined)
@@ -165,13 +163,13 @@ object ExponentFileSystemModule {
     def setName(value: ExponentFileSystem): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "readAsStringAsync", js.Any.fromFunction1(value))
+    def setReadAsStringAsync(value: PlatformMethod): Self = StObject.set(x, "readAsStringAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadAsStringAsyncUndefined: Self = StObject.set(x, "readAsStringAsync", js.undefined)
     
     @scala.inline
-    def setReadDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "readDirectoryAsync", js.Any.fromFunction1(value))
+    def setReadDirectoryAsync(value: PlatformMethod): Self = StObject.set(x, "readDirectoryAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadDirectoryAsyncUndefined: Self = StObject.set(x, "readDirectoryAsync", js.undefined)
@@ -192,13 +190,13 @@ object ExponentFileSystemModule {
     def setStopObservingUndefined: Self = StObject.set(x, "stopObserving", js.undefined)
     
     @scala.inline
-    def setUploadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "uploadAsync", js.Any.fromFunction1(value))
+    def setUploadAsync(value: PlatformMethod): Self = StObject.set(x, "uploadAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUploadAsyncUndefined: Self = StObject.set(x, "uploadAsync", js.undefined)
     
     @scala.inline
-    def setWriteAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "writeAsStringAsync", js.Any.fromFunction1(value))
+    def setWriteAsStringAsync(value: PlatformMethod): Self = StObject.set(x, "writeAsStringAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWriteAsStringAsyncUndefined: Self = StObject.set(x, "writeAsStringAsync", js.undefined)

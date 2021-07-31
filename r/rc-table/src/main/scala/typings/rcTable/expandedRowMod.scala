@@ -5,41 +5,42 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandedRowMod {
   
-  @JSImport("rc-table/lib/Body/ExpandedRow", JSImport.Default)
+  @JSImport("rc-table/lib/Body/ExpandedRow", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnHorizonScrollClassNameExpandedComponentWidthColSpan: ExpandedRowProps
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnHorizonScrollClassNameExpandedComponentWidthColSpan.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait ExpandedRowProps extends StObject {
     
-    var cellComponent: CustomizeComponent = js.native
+    var cellComponent: CustomizeComponent
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: String = js.native
+    var className: String
     
-    var colSpan: Double = js.native
+    var colSpan: Double
     
-    var component: CustomizeComponent = js.native
+    var component: CustomizeComponent
     
-    var componentWidth: Double = js.native
+    var componentWidth: Double
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var fixColumn: Boolean = js.native
+    var fixColumn: Boolean
     
-    var fixHeader: Boolean = js.native
+    var fixHeader: Boolean
     
-    var horizonScroll: Boolean = js.native
+    var horizonScroll: Boolean
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object ExpandedRowProps {
     

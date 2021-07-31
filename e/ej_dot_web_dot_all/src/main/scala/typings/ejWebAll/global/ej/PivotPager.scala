@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.PivotPager")
 @js.native
 class PivotPager protected ()
-  extends typings.ejWebAll.ej.PivotPager {
+  extends StObject
+     with typings.ejWebAll.ej.PivotPager {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -34,13 +34,13 @@ object PivotPager {
   object Mode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotPager.Mode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotPager.Mode & Double] = js.native
     
-    /* 0 */ val Both: typings.ejWebAll.ej.PivotPager.Mode.Both with Double = js.native
+    /* 0 */ val Both: typings.ejWebAll.ej.PivotPager.Mode.Both & Double = js.native
     
-    /* 1 */ val Categorical: typings.ejWebAll.ej.PivotPager.Mode.Categorical with Double = js.native
+    /* 1 */ val Categorical: typings.ejWebAll.ej.PivotPager.Mode.Categorical & Double = js.native
     
-    /* 2 */ val Series: typings.ejWebAll.ej.PivotPager.Mode.Series with Double = js.native
+    /* 2 */ val Series: typings.ejWebAll.ej.PivotPager.Mode.Series & Double = js.native
   }
   
   /* static member */

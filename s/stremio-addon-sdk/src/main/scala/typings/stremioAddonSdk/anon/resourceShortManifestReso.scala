@@ -4,20 +4,18 @@ import typings.stremioAddonSdk.mod.ContentType
 import typings.stremioAddonSdk.mod.ShortManifestResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  resource :stremio-addon-sdk.stremio-addon-sdk.ShortManifestResource} & stremio-addon-sdk.stremio-addon-sdk.Args */
-@js.native
 trait resourceShortManifestReso extends StObject {
   
-  var extra: Genre = js.native
+  var extra: Genre
   
-  var id: String = js.native
+  var id: String
   
-  var resource: ShortManifestResource = js.native
+  var resource: ShortManifestResource
   
-  var `type`: ContentType = js.native
+  var `type`: ContentType
 }
 object resourceShortManifestReso {
   

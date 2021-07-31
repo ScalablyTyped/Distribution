@@ -2,24 +2,22 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameter to be passed to the read API method
   */
-@js.native
 trait ReadParams extends StObject {
   
   /**
     * ID of the FHIR resource
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Type of the FHIR resource
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ReadParams {
   

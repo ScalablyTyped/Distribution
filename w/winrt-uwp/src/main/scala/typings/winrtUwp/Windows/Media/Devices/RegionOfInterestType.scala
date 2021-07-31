@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object RegionOfInterestType extends StObject {
   
   /** The region of interest is a detected face. */
   @js.native
-  sealed trait face extends RegionOfInterestType
+  sealed trait face
+    extends StObject
+       with RegionOfInterestType
   
   /** The type of region of interest is unknown. */
   @js.native
-  sealed trait unknown extends RegionOfInterestType
+  sealed trait unknown
+    extends StObject
+       with RegionOfInterestType
 }

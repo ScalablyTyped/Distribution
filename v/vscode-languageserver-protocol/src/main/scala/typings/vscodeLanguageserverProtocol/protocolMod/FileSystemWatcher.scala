@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemWatcher extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait FileSystemWatcher extends StObject {
     * - `[]` to declare a range of characters to match in a path segment (e.g., `example.[0-9]` to match on `example.0`, `example.1`, …)
     * - `[!...]` to negate a range of characters to match in a path segment (e.g., `example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)
     */
-  var globPattern: String = js.native
+  var globPattern: String
   
   /**
     * The kind of events of interest. If omitted it defaults
     * to WatchKind.Create | WatchKind.Change | WatchKind.Delete
     * which is 7.
     */
-  var kind: js.UndefOr[Double] = js.native
+  var kind: js.UndefOr[Double] = js.undefined
 }
 object FileSystemWatcher {
   

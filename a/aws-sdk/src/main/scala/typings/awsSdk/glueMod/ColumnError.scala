@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnError extends StObject {
   
   /**
     * The name of the column that failed.
     */
-  var ColumnName: js.UndefOr[NameString] = js.native
+  var ColumnName: js.UndefOr[NameString] = js.undefined
   
   /**
     * An error message with the reason for the failure of an operation.
     */
-  var Error: js.UndefOr[ErrorDetail] = js.native
+  var Error: js.UndefOr[ErrorDetail] = js.undefined
 }
 object ColumnError {
   

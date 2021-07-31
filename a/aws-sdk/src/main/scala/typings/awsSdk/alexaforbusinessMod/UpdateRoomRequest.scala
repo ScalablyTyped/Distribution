@@ -2,36 +2,34 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRoomRequest extends StObject {
   
   /**
     * The updated description for the room.
     */
-  var Description: js.UndefOr[RoomDescription] = js.native
+  var Description: js.UndefOr[RoomDescription] = js.undefined
   
   /**
     * The updated profile ARN for the room.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.native
+  var ProfileArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The updated provider calendar ARN for the room.
     */
-  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.native
+  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.undefined
   
   /**
     * The ARN of the room to update. 
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The updated name for the room.
     */
-  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.native
+  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.undefined
 }
 object UpdateRoomRequest {
   

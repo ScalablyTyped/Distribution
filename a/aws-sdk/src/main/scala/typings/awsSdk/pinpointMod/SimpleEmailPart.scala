@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleEmailPart extends StObject {
   
   /**
     * The applicable character set for the message content.
     */
-  var Charset: js.UndefOr[string] = js.native
+  var Charset: js.UndefOr[string] = js.undefined
   
   /**
     * The textual data of the message content.
     */
-  var Data: js.UndefOr[string] = js.native
+  var Data: js.UndefOr[string] = js.undefined
 }
 object SimpleEmailPart {
   

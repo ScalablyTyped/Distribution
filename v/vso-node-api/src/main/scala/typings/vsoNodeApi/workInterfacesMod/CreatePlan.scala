@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlan extends StObject {
   
   /**
     * Description of the plan
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Name of the plan to create.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Plan properties.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Type of plan to create.
     */
-  var `type`: PlanType = js.native
+  var `type`: PlanType
 }
 object CreatePlan {
   

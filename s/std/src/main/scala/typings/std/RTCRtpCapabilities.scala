@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpCapabilities extends StObject {
   
-  var codecs: js.Array[RTCRtpCodecCapability] = js.native
+  var codecs: js.Array[RTCRtpCodecCapability]
   
-  var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability] = js.native
+  var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
 }
 object RTCRtpCapabilities {
   

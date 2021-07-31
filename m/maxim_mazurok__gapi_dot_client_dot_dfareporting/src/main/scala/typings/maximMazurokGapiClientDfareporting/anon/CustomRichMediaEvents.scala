@@ -4,35 +4,33 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Dimen
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.SortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomRichMediaEvents extends StObject {
   
   /** The list of custom rich media events to include. */
-  var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** The date range this report should be run for. */
-  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.native
+  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.undefined
   
   /** The list of filters on which dimensions are filtered. Filters for different dimensions are ANDed, filters for the same dimension are grouped together and ORed. */
-  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** The list of dimensions the report should include. */
-  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
   
   /**
     * The floodlight ID for which to show data in this report. All advertisers associated with that ID will automatically be added. The dimension of the value needs to be
     * 'dfa:floodlightConfigId'.
     */
-  var floodlightConfigId: js.UndefOr[DimensionValue] = js.native
+  var floodlightConfigId: js.UndefOr[DimensionValue] = js.undefined
   
   /** The list of names of metrics the report should include. */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The properties of the report. */
-  var reportProperties: js.UndefOr[IncludeAttributedIPConversions] = js.native
+  var reportProperties: js.UndefOr[IncludeAttributedIPConversions] = js.undefined
 }
 object CustomRichMediaEvents {
   

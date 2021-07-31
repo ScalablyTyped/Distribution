@@ -2,15 +2,13 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Repo extends StObject {
   
-  var repo: Allowmergecommit = js.native
+  var repo: Allowmergecommit
   
-  var starred_at: String = js.native
+  var starred_at: String
 }
 object Repo {
   

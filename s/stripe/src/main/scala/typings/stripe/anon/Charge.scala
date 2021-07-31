@@ -3,17 +3,15 @@ package typings.stripe.anon
 import typings.stripe.mod.charges.IPaymentMethodDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Charge extends StObject {
   
   /** The charge that created this object. */
-  var charge: String = js.native
+  var charge: String
   
   /** Transaction-specific details of the payment method used in the payment. */
-  var payment_method_details: IPaymentMethodDetails = js.native
+  var payment_method_details: IPaymentMethodDetails
 }
 object Charge {
   

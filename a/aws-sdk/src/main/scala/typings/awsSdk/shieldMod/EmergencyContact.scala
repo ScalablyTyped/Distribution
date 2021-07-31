@@ -2,26 +2,24 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmergencyContact extends StObject {
   
   /**
     * Additional notes regarding the contact. 
     */
-  var ContactNotes: js.UndefOr[typings.awsSdk.shieldMod.ContactNotes] = js.native
+  var ContactNotes: js.UndefOr[typings.awsSdk.shieldMod.ContactNotes] = js.undefined
   
   /**
     * The email address for the contact.
     */
-  var EmailAddress: typings.awsSdk.shieldMod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.shieldMod.EmailAddress
   
   /**
     * The phone number for the contact.
     */
-  var PhoneNumber: js.UndefOr[typings.awsSdk.shieldMod.PhoneNumber] = js.native
+  var PhoneNumber: js.UndefOr[typings.awsSdk.shieldMod.PhoneNumber] = js.undefined
 }
 object EmergencyContact {
   

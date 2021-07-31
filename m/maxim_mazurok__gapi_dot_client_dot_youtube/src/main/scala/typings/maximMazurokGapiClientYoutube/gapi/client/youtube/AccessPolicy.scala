@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessPolicy extends StObject {
   
   /** The value of allowed indicates whether the access to the policy is allowed or denied by default. */
-  var allowed: js.UndefOr[Boolean] = js.native
+  var allowed: js.UndefOr[Boolean] = js.undefined
   
   /** A list of region codes that identify countries where the default policy do not apply. */
-  var exception: js.UndefOr[js.Array[String]] = js.native
+  var exception: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccessPolicy {
   

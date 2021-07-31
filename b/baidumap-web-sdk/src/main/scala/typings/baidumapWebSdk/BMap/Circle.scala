@@ -3,75 +3,75 @@ package typings.baidumapWebSdk.BMap
 import typings.baidumapWebSdk.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Circle extends Overlay {
+trait Circle
+  extends StObject
+     with Overlay {
   
-  def addEventListener(event: String, handler: Callback): Unit = js.native
+  def addEventListener(event: String, handler: Callback): Unit
   
-  def disableEditing(): Unit = js.native
+  def disableEditing(): Unit
   
-  def disableMassClear(): Unit = js.native
+  def disableMassClear(): Unit
   
-  def enableEditing(): Unit = js.native
+  def enableEditing(): Unit
   
-  def enableMassClear(): Unit = js.native
+  def enableMassClear(): Unit
   
-  def getBounds(): Bounds = js.native
+  def getBounds(): Bounds
   
-  def getCenter(): Point = js.native
+  def getCenter(): Point
   
-  def getFillColor(): String = js.native
+  def getFillColor(): String
   
-  def getFillOpacity(): Double = js.native
+  def getFillOpacity(): Double
   
-  def getMap(): Map = js.native
+  def getMap(): Map
   
-  def getRadius(): Double = js.native
+  def getRadius(): Double
   
-  def getStrokeColor(): String = js.native
+  def getStrokeColor(): String
   
-  def getStrokeOpacity(): Double = js.native
+  def getStrokeOpacity(): Double
   
-  def getStrokeStyle(): String = js.native
+  def getStrokeStyle(): String
   
-  def getStrokeWeight(): Double = js.native
+  def getStrokeWeight(): Double
   
-  def onclick(event: Target): Unit = js.native
+  def onclick(event: Target): Unit
   
-  def ondblclick(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def ondblclick(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onlineupdate(event: Target): Unit = js.native
+  def onlineupdate(event: Target): Unit
   
-  def onmousedown(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmousedown(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onmouseout(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseout(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onmouseover(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseover(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onmouseup(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseup(event: typings.baidumapWebSdk.anon.Pixel): Unit
   
-  def onremove(event: Target): Unit = js.native
+  def onremove(event: Target): Unit
   
-  def removeEventListener(event: String, handler: Callback): Unit = js.native
+  def removeEventListener(event: String, handler: Callback): Unit
   
-  def setCenter(center: Point): Unit = js.native
+  def setCenter(center: Point): Unit
   
-  def setFillColor(color: String): Unit = js.native
+  def setFillColor(color: String): Unit
   
-  def setFillOpacity(opacity: Double): Unit = js.native
+  def setFillOpacity(opacity: Double): Unit
   
-  def setRadius(radius: Double): Unit = js.native
+  def setRadius(radius: Double): Unit
   
-  def setStrokeColor(color: String): Unit = js.native
+  def setStrokeColor(color: String): Unit
   
-  def setStrokeOpacity(opacity: Double): Unit = js.native
+  def setStrokeOpacity(opacity: Double): Unit
   
-  def setStrokeStyle(style: String): Unit = js.native
+  def setStrokeStyle(style: String): Unit
   
-  def setStrokeWeight(weight: Double): Unit = js.native
+  def setStrokeWeight(weight: Double): Unit
 }
 object Circle {
   

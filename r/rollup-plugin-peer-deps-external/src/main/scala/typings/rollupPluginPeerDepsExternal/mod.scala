@@ -3,24 +3,24 @@ package typings.rollupPluginPeerDepsExternal
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-peer-deps-external", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("rollup-plugin-peer-deps-external", JSImport.Namespace)
-  @js.native
-  def apply(options: PluginPeerDepsExternalOptions): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: PluginPeerDepsExternalOptions): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("rollup-plugin-peer-deps-external", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PluginPeerDepsExternalOptions extends StObject {
     
-    var includeDependencies: js.UndefOr[Boolean] = js.native
+    var includeDependencies: js.UndefOr[Boolean] = js.undefined
     
-    var packageJsonPath: js.UndefOr[String] = js.native
+    var packageJsonPath: js.UndefOr[String] = js.undefined
   }
   object PluginPeerDepsExternalOptions {
     

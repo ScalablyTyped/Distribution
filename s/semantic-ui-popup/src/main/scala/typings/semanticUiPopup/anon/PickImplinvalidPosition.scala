@@ -2,14 +2,12 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.Popup.ErrorSettings._Impl, 'invalidPosition'> */
-@js.native
 trait PickImplinvalidPosition extends StObject {
   
-  var invalidPosition: String = js.native
+  var invalidPosition: String
 }
 object PickImplinvalidPosition {
   

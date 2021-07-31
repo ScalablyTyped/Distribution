@@ -14,61 +14,57 @@ import typings.vegaLite.exprMod.ExprOrSignalRef
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
+import typings.vegaLite.srcMarkMod.ColorMixins
+import typings.vegaLite.srcMarkMod.GenericMarkDef
 import typings.vegaLite.srcMarkMod.MarkConfig
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
-import typings.vegaTypings.colorMod.Color
-import typings.vegaTypings.encodeMod.Gradient
 import typings.vegaTypings.encodeMod.Orientation
 import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compositemarkCommonMod {
   
-  @JSImport("vega-lite/build/src/compositemark/common", "compositeMarkContinuousAxis")
+  @JSImport("vega-lite/build/src/compositemark/common", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def compositeMarkContinuousAxis[M /* <: CompositeMark */](
     spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef],
     orient: Orientation,
     compositeMark: M
-  ): ContinuousAxis = js.native
+  ): ContinuousAxis = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkContinuousAxis")(spec.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxis]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "compositeMarkOrient")
-  @js.native
-  def compositeMarkOrient[M /* <: CompositeMark */](spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef], compositeMark: M): Orientation = js.native
+  @scala.inline
+  def compositeMarkOrient[M /* <: CompositeMark */](spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef], compositeMark: M): Orientation = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkOrient")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[Orientation]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "filterTooltipWithAggregatedField")
-  @js.native
-  def filterTooltipWithAggregatedField[F /* <: Field */](oldEncoding: Encoding[F]): CustomTooltipWithoutAggregatedField[F] = js.native
+  @scala.inline
+  def filterTooltipWithAggregatedField[F /* <: Field */](oldEncoding: Encoding[F]): CustomTooltipWithoutAggregatedField[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterTooltipWithAggregatedField")(oldEncoding.asInstanceOf[js.Any]).asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "getCompositeMarkTooltip")
-  @js.native
+  @scala.inline
   def getCompositeMarkTooltip(
     tooltipSummary: js.Array[CompositeMarkTooltipSummary],
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: Encoding[String]
-  ): Encoding[String] = js.native
-  @JSImport("vega-lite/build/src/compositemark/common", "getCompositeMarkTooltip")
-  @js.native
+  ): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompositeMarkTooltip")(tooltipSummary.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], encodingWithoutContinuousAxis.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
+  @scala.inline
   def getCompositeMarkTooltip(
     tooltipSummary: js.Array[CompositeMarkTooltipSummary],
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: Encoding[String],
     withFieldName: Boolean
-  ): Encoding[String] = js.native
+  ): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompositeMarkTooltip")(tooltipSummary.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], encodingWithoutContinuousAxis.asInstanceOf[js.Any], withFieldName.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "getTitle")
-  @js.native
-  def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): String | js.Array[String] | SignalRef = js.native
+  @scala.inline
+  def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): String | js.Array[String] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(continuousAxisChannelDef.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String] | SignalRef]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "makeCompositeAggregatePartFactory")
-  @js.native
-  def makeCompositeAggregatePartFactory_x[P /* <: PartsMixins[_] */](
-    compositeMarkDef: GenericCompositeMarkDef[_] with P,
+  @scala.inline
+  def makeCompositeAggregatePartFactory_x[P /* <: PartsMixins[js.Any] */](
+    compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
     continuousAxis: x,
     continuousAxisChannelDef: PositionFieldDef[String],
     sharedEncoding: Encoding[String],
@@ -76,11 +72,14 @@ object compositemarkCommonMod {
   ): js.Function1[
     /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
     js.Array[NormalizedUnitSpec]
-  ] = js.native
-  @JSImport("vega-lite/build/src/compositemark/common", "makeCompositeAggregatePartFactory")
-  @js.native
-  def makeCompositeAggregatePartFactory_y[P /* <: PartsMixins[_] */](
-    compositeMarkDef: GenericCompositeMarkDef[_] with P,
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCompositeAggregatePartFactory")(compositeMarkDef.asInstanceOf[js.Any], continuousAxis.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], sharedEncoding.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
+    js.Array[NormalizedUnitSpec]
+  ]]
+  
+  @scala.inline
+  def makeCompositeAggregatePartFactory_y[P /* <: PartsMixins[js.Any] */](
+    compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
     continuousAxis: y,
     continuousAxisChannelDef: PositionFieldDef[String],
     sharedEncoding: Encoding[String],
@@ -88,29 +87,30 @@ object compositemarkCommonMod {
   ): js.Function1[
     /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
     js.Array[NormalizedUnitSpec]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCompositeAggregatePartFactory")(compositeMarkDef.asInstanceOf[js.Any], continuousAxis.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], sharedEncoding.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
+    js.Array[NormalizedUnitSpec]
+  ]]
   
-  @JSImport("vega-lite/build/src/compositemark/common", "partLayerMixins")
-  @js.native
-  def partLayerMixins[P /* <: PartsMixins[_] */](
-    markDef: GenericCompositeMarkDef[_] with P,
+  @scala.inline
+  def partLayerMixins[P /* <: PartsMixins[js.Any] */](
+    markDef: GenericCompositeMarkDef[js.Any] & P,
     part: /* keyof P */ String,
     compositeMarkConfig: P,
     partBaseSpec: NormalizedUnitSpec
-  ): js.Array[NormalizedUnitSpec] = js.native
+  ): js.Array[NormalizedUnitSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("partLayerMixins")(markDef.asInstanceOf[js.Any], part.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any], partBaseSpec.asInstanceOf[js.Any])).asInstanceOf[js.Array[NormalizedUnitSpec]]
   
-  @js.native
   trait CompositeMarkTooltipSummary extends StObject {
     
     /**
       * The prefix of the field to be shown in tooltip
       */
-    var fieldPrefix: String = js.native
+    var fieldPrefix: String
     
     /**
       * The title prefix to show, corresponding to the field with field prefix `fieldPrefix`
       */
-    var titlePrefix: Text | SignalRef = js.native
+    var titlePrefix: Text | SignalRef
   }
   object CompositeMarkTooltipSummary {
     
@@ -134,38 +134,20 @@ object compositemarkCommonMod {
     }
   }
   
-  /* Inlined vega-lite.vega-lite/build/src/mark.GenericMarkDef<T> & vega-lite.vega-lite/build/src/mark.ColorMixins<vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> & {  opacity :number | undefined,   clip :boolean | undefined} */
-  @js.native
-  trait GenericCompositeMarkDef[T] extends StObject {
+  trait GenericCompositeMarkDef[T]
+    extends StObject
+       with GenericMarkDef[T]
+       with ColorMixins[ExprRef | SignalRef] {
     
     /**
       * Whether a composite mark be clipped to the enclosing group’s width and height.
       */
-    var clip: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * Default color.
-      *
-      * __Default value:__ <span style="color: #4682b4;">&#9632;</span> `"#4682b4"`
-      *
-      * __Note:__
-      * - This property cannot be used in a [style config](https://vega.github.io/vega-lite/docs/mark.html#style-config).
-      * - The `fill` and `stroke` properties have higher precedence than `color` and will override `color`.
-      */
-    var color: js.UndefOr[Color | Gradient | ExprRef | SignalRef] = js.native
+    var clip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The opacity (value between [0,1]) of the mark.
       */
-    var opacity: js.UndefOr[Double] = js.native
-    
-    /**
-      * The mark type. This could a primitive mark type
-      * (one of `"bar"`, `"circle"`, `"square"`, `"tick"`, `"line"`,
-      * `"area"`, `"point"`, `"geoshape"`, `"rule"`, and `"text"`)
-      * or a composite mark type (`"boxplot"`, `"errorband"`, `"errorbar"`).
-      */
-    var `type`: T = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object GenericCompositeMarkDef {
     
@@ -177,7 +159,7 @@ object compositemarkCommonMod {
     }
     
     @scala.inline
-    implicit class GenericCompositeMarkDefMutableBuilder[Self <: GenericCompositeMarkDef[_], T] (val x: Self with GenericCompositeMarkDef[T]) extends AnyVal {
+    implicit class GenericCompositeMarkDefMutableBuilder[Self <: GenericCompositeMarkDef[?], T] (val x: Self & GenericCompositeMarkDef[T]) extends AnyVal {
       
       @scala.inline
       def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
@@ -186,19 +168,10 @@ object compositemarkCommonMod {
       def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
       @scala.inline
-      def setColor(value: Color | Gradient | ExprRef | SignalRef): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      @scala.inline
       def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-      
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

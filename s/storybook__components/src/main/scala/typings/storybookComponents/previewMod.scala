@@ -5,7 +5,6 @@ import typings.storybookComponents.actionBarMod.ActionItem
 import typings.storybookComponents.sourceMod.SourceProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
@@ -19,22 +18,21 @@ object previewMod {
   @js.native
   val Preview: FunctionComponent[PreviewProps] = js.native
   
-  @js.native
   trait PreviewProps extends StObject {
     
-    var additionalActions: js.UndefOr[js.Array[ActionItem]] = js.native
+    var additionalActions: js.UndefOr[js.Array[ActionItem]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.UndefOr[Double] = js.native
+    var columns: js.UndefOr[Double] = js.undefined
     
-    var isColumn: js.UndefOr[Boolean] = js.native
+    var isColumn: js.UndefOr[Boolean] = js.undefined
     
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var withSource: js.UndefOr[SourceProps] = js.native
+    var withSource: js.UndefOr[SourceProps] = js.undefined
     
-    var withToolbar: js.UndefOr[Boolean] = js.native
+    var withToolbar: js.UndefOr[Boolean] = js.undefined
   }
   object PreviewProps {
     

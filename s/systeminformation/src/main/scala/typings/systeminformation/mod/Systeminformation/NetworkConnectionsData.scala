@@ -2,27 +2,25 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConnectionsData extends StObject {
   
-  var localaddress: String = js.native
+  var localaddress: String
   
-  var localport: String = js.native
+  var localport: String
   
-  var peeraddress: String = js.native
+  var peeraddress: String
   
-  var peerport: String = js.native
+  var peerport: String
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var process: String = js.native
+  var process: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var state: String = js.native
+  var state: String
 }
 object NetworkConnectionsData {
   

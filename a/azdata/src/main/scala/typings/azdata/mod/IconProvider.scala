@@ -3,13 +3,13 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconProvider extends DataProvider {
+trait IconProvider
+  extends StObject
+     with DataProvider {
   
-  def getConnectionIconId(connection: IConnectionProfile, serverInfo: ServerInfo): Thenable[String] = js.native
+  def getConnectionIconId(connection: IConnectionProfile, serverInfo: ServerInfo): Thenable[String]
 }
 object IconProvider {
   

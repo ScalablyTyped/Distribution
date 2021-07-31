@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketResult extends StObject {
   
   /**
     * The Outposts bucket requested.
     */
-  var Bucket: js.UndefOr[BucketName] = js.native
+  var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
     * The creation date of the Outposts bucket.
     */
-  var CreationDate: js.UndefOr[typings.awsSdk.s3controlMod.CreationDate] = js.native
+  var CreationDate: js.UndefOr[typings.awsSdk.s3controlMod.CreationDate] = js.undefined
   
   /**
     * 
     */
-  var PublicAccessBlockEnabled: js.UndefOr[typings.awsSdk.s3controlMod.PublicAccessBlockEnabled] = js.native
+  var PublicAccessBlockEnabled: js.UndefOr[typings.awsSdk.s3controlMod.PublicAccessBlockEnabled] = js.undefined
 }
 object GetBucketResult {
   

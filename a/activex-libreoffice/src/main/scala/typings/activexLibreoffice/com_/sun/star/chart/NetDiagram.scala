@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Net diagrams are also known as radar diagrams.
   */
-@js.native
 trait NetDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with StackableDiagram
      with ChartAxisYSupplier
 object NetDiagram {

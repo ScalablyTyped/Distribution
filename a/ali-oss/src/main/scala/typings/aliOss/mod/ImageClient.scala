@@ -7,7 +7,6 @@ import typings.aliOss.anon.Expires
 import typings.aliOss.anon.Res
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ali-oss", "ImageClient")
@@ -25,9 +24,9 @@ class ImageClient protected () extends StObject {
     * Get an image from the image channel.
     */
   def get(name: String): js.Promise[Content] = js.native
-  def get(name: String, file: js.UndefOr[scala.Nothing], options: ImageGetOptions): js.Promise[Content] = js.native
   def get(name: String, file: js.Any): js.Promise[Content] = js.native
   def get(name: String, file: js.Any, options: ImageGetOptions): js.Promise[Content] = js.native
+  def get(name: String, file: Unit, options: ImageGetOptions): js.Promise[Content] = js.native
   
   /**
     * Get a image exif info by image object name from the image channel.

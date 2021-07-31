@@ -2,13 +2,11 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultUpdateResponseModel extends StObject {
   
-  var revision: Double = js.native
+  var revision: Double
 }
 object ResultUpdateResponseModel {
   

@@ -9,11 +9,12 @@ import typings.uirouterCore.paramsMod.Param
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofParam extends Instantiable5[
+trait TypeofParam
+  extends StObject
+     with Instantiable5[
       /* id */ String, 
       /* type */ ParamType, 
       /* location */ DefType, 
@@ -34,11 +35,7 @@ trait TypeofParam extends Instantiable5[
     * @returns any Param objects whose values were different between values1 and values2
     */
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  def changed(
-    params: js.Array[typings.uirouterCore.paramMod.Param],
-    values1: js.UndefOr[scala.Nothing],
-    values2: RawParams
-  ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   
@@ -52,13 +49,9 @@ trait TypeofParam extends Instantiable5[
     * @returns true if the param values in values1 and values2 are equal
     */
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
-  def equals(
-    params: js.Array[typings.uirouterCore.paramMod.Param],
-    values1: js.UndefOr[scala.Nothing],
-    values2: js.Object
-  ): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
+  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: js.Object): Boolean = js.native
   
   /** Returns true if a the parameter values are valid, according to the Param definitions */
   def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native

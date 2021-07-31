@@ -5,47 +5,43 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("get-image-colors", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[js.Array[Color]] = js.native
-  @JSImport("get-image-colors", JSImport.Namespace)
-  @js.native
-  def apply(input: String, callback: Callback): Unit = js.native
-  @JSImport("get-image-colors", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Promise[js.Array[Color]] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[js.Array[Color]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Color]]]
+  @scala.inline
+  def apply(input: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: String, options: Options): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
   /**
     * Extract colors from images. Supports GIF, JPG, PNG, and even SVG!
     */
+  @scala.inline
+  def apply(input: Buffer, options: Options, callback: js.Array[Color]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: Buffer, `type`: String): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
+  @scala.inline
+  def apply(input: Buffer, `type`: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("get-image-colors", JSImport.Namespace)
   @js.native
-  def apply(input: Buffer, options: Options, callback: js.Array[Color]): Unit = js.native
-  @JSImport("get-image-colors", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, `type`: String): js.Promise[js.Array[Color]] = js.native
-  @JSImport("get-image-colors", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, `type`: String, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * If you don't like promises, you can use node-style callbacks too
     */
   type Callback = js.Function2[/* error */ Error | Null, /* colors */ js.Array[Color], Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default 5
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Options {
     

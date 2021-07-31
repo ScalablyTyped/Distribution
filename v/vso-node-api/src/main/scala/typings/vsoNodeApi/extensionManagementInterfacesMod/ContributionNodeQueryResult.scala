@@ -3,21 +3,19 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContributionNodeQueryResult extends StObject {
   
   /**
     * Map of contribution ids to corresponding node.
     */
-  var nodes: StringDictionary[ClientContributionNode] = js.native
+  var nodes: StringDictionary[ClientContributionNode]
   
   /**
     * Map of provder ids to the corresponding provider details object.
     */
-  var providerDetails: StringDictionary[ClientContributionProviderDetails] = js.native
+  var providerDetails: StringDictionary[ClientContributionProviderDetails]
 }
 object ContributionNodeQueryResult {
   

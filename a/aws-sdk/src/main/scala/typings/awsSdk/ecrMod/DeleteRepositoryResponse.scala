@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRepositoryResponse extends StObject {
   
   /**
     * The repository that was deleted.
     */
-  var repository: js.UndefOr[Repository] = js.native
+  var repository: js.UndefOr[Repository] = js.undefined
 }
 object DeleteRepositoryResponse {
   

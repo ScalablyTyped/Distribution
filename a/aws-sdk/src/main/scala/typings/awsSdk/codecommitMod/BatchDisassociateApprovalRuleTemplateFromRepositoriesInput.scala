@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateApprovalRuleTemplateFromRepositoriesInput extends StObject {
   
   /**
     * The name of the template that you want to disassociate from one or more repositories.
     */
-  var approvalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var approvalRuleTemplateName: ApprovalRuleTemplateName
   
   /**
     * The repository names that you want to disassociate from the approval rule template.  The length constraint limit is for each string in the array. The array itself can be empty. 
     */
-  var repositoryNames: RepositoryNameList = js.native
+  var repositoryNames: RepositoryNameList
 }
 object BatchDisassociateApprovalRuleTemplateFromRepositoriesInput {
   

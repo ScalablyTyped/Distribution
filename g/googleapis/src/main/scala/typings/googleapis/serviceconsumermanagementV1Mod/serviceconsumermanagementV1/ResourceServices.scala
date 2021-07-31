@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceconsumermanagement/v1", "serviceconsumermanagement_v1.Resource$Services")
@@ -33,7 +32,7 @@ class ResourceServices protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchTenancyUnitsResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(params: ParamsResourceServicesSearch): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(
     params: ParamsResourceServicesSearch,

@@ -4,7 +4,6 @@ import typings.node.streamMod.Transform
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,77 +17,70 @@ object mod {
     *      if error, returning error in call back.
     *      if csv is created successfully, returning csv output to callback.
     */
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(): Transform = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Array[js.Object]): js.Promise[String] = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Array[js.Object], cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Array[js.Object], userOptions: UserOptions): js.Promise[String] = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(json: js.Array[js.Object]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(json: js.Array[js.Object], cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(json: js.Array[js.Object], userOptions: UserOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def apply(
     json: js.Array[js.Object],
     userOptions: UserOptions,
     cb: js.Function2[/* err */ Error, /* csv */ String, Unit]
-  ): Unit = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Object): js.Promise[String] = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Object, cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
-  def apply(json: js.Object, userOptions: UserOptions): js.Promise[String] = js.native
-  @JSImport("jsonexport", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(json: js.Object): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(json: js.Object, cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(json: js.Object, userOptions: UserOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def apply(
     json: js.Object,
     userOptions: UserOptions,
     cb: js.Function2[/* err */ Error, /* csv */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(userOptions: UserOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(userOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("jsonexport", JSImport.Namespace)
   @js.native
-  def apply(userOptions: UserOptions): Transform = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait UserOptions extends StObject {
     
-    var arrayPathString: js.UndefOr[String] = js.native
+    var arrayPathString: js.UndefOr[String] = js.undefined
     
-    var booleanFalseString: js.UndefOr[String] = js.native
+    var booleanFalseString: js.UndefOr[String] = js.undefined
     
-    var booleanTrueString: js.UndefOr[String] = js.native
+    var booleanTrueString: js.UndefOr[String] = js.undefined
     
-    var endOfLine: js.UndefOr[String] = js.native
+    var endOfLine: js.UndefOr[String] = js.undefined
     
-    var fillGaps: js.UndefOr[Boolean] = js.native
+    var fillGaps: js.UndefOr[Boolean] = js.undefined
     
-    var forceTextDelimiter: js.UndefOr[Boolean] = js.native
+    var forceTextDelimiter: js.UndefOr[Boolean] = js.undefined
     
-    var headerPathString: js.UndefOr[String] = js.native
+    var headerPathString: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var includeHeaders: js.UndefOr[Boolean] = js.native
+    var includeHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var mainPathItem: js.UndefOr[String] = js.native
+    var mainPathItem: js.UndefOr[String] = js.undefined
     
-    var rename: js.UndefOr[js.Array[String]] = js.native
+    var rename: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rowDelimiter: js.UndefOr[String] = js.native
+    var rowDelimiter: js.UndefOr[String] = js.undefined
     
-    var textDelimiter: js.UndefOr[String] = js.native
+    var textDelimiter: js.UndefOr[String] = js.undefined
     
-    var undefinedString: js.UndefOr[String] = js.native
+    var undefinedString: js.UndefOr[String] = js.undefined
     
-    var verticalOutput: js.UndefOr[Boolean] = js.native
+    var verticalOutput: js.UndefOr[Boolean] = js.undefined
   }
   object UserOptions {
     

@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedActionHistoryItem extends StObject {
   
   /**
     * A description of the managed action.
     */
-  var ActionDescription: js.UndefOr[String] = js.native
+  var ActionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the managed action.
     */
-  var ActionId: js.UndefOr[String] = js.native
+  var ActionId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the managed action.
     */
-  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.native
+  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.undefined
   
   /**
     * The date and time that the action started executing.
     */
-  var ExecutedTime: js.UndefOr[Timestamp] = js.native
+  var ExecutedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the action failed, a description of the failure.
     */
-  var FailureDescription: js.UndefOr[String] = js.native
+  var FailureDescription: js.UndefOr[String] = js.undefined
   
   /**
     * If the action failed, the type of failure.
     */
-  var FailureType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.FailureType] = js.native
+  var FailureType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.FailureType] = js.undefined
   
   /**
     * The date and time that the action finished executing.
     */
-  var FinishedTime: js.UndefOr[Timestamp] = js.native
+  var FinishedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the action.
     */
-  var Status: js.UndefOr[ActionHistoryStatus] = js.native
+  var Status: js.UndefOr[ActionHistoryStatus] = js.undefined
 }
 object ManagedActionHistoryItem {
   

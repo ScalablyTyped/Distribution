@@ -2,10 +2,8 @@ package typings.filepond.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondHookProps extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait FilePondHookProps extends StObject {
     *
     * Return `false` to prevent adding it, or return a `Promise` and resolve with `true` or `false`.
     */
-  var beforeAddFile: js.UndefOr[js.Function1[/* item */ FilePondFile, Boolean | js.Promise[Boolean]]] = js.native
+  var beforeAddFile: js.UndefOr[js.Function1[/* item */ FilePondFile, Boolean | js.Promise[Boolean]]] = js.undefined
   
   /**
     * FilePond is about to allow this item to be dropped, it can be a URL or a File object.
     *
     * Return `true` or `false` depending on if you want to allow the item to be dropped.
     */
-  var beforeDropFile: js.UndefOr[js.Function1[/* file */ FilePondFile | String, Boolean]] = js.native
+  var beforeDropFile: js.UndefOr[js.Function1[/* file */ FilePondFile | String, Boolean]] = js.undefined
   
   /**
     * FilePond is about to remove this file.
     *
     * Return `false` to prevent adding it, or return a `Promise` and resolve with `true` or `false`.
     */
-  var beforeRemoveFile: js.UndefOr[js.Function1[/* item */ FilePondFile, Boolean | js.Promise[Boolean]]] = js.native
+  var beforeRemoveFile: js.UndefOr[js.Function1[/* item */ FilePondFile, Boolean | js.Promise[Boolean]]] = js.undefined
 }
 object FilePondHookProps {
   

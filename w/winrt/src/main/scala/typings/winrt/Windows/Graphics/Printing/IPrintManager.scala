@@ -2,13 +2,11 @@ package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintManager extends StObject {
   
-  var onprinttaskrequested: js.Any = js.native
+  var onprinttaskrequested: js.Any
 }
 object IPrintManager {
   

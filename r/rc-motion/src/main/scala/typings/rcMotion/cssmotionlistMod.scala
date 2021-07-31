@@ -1,6 +1,5 @@
 package typings.rcMotion
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.anon.CSSMotionPropsrefRefanyun
 import typings.rcMotion.anon.Dictkey
 import typings.rcMotion.anon.Dictname
@@ -23,10 +22,13 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object cssmotionlistMod extends Shortcut {
+object cssmotionlistMod {
+  
+  @JSImport("rc-motion/es/CSSMotionList", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-motion/es/CSSMotionList", JSImport.Default)
@@ -40,75 +42,72 @@ object cssmotionlistMod extends Shortcut {
   @js.native
   val default: ComponentClass[CSSMotionListProps, js.Any] = js.native
   
-  @JSImport("rc-motion/es/CSSMotionList", "genCSSMotionList")
-  @js.native
-  def genCSSMotionList(transitionSupport: Boolean): ComponentClass[CSSMotionListProps, ComponentState] = js.native
-  @JSImport("rc-motion/es/CSSMotionList", "genCSSMotionList")
-  @js.native
-  def genCSSMotionList(transitionSupport: Boolean, CSSMotion: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]): ComponentClass[CSSMotionListProps, ComponentState] = js.native
+  @scala.inline
+  def genCSSMotionList(transitionSupport: Boolean): ComponentClass[CSSMotionListProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("genCSSMotionList")(transitionSupport.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[CSSMotionListProps, ComponentState]]
+  @scala.inline
+  def genCSSMotionList(transitionSupport: Boolean, CSSMotion: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]): ComponentClass[CSSMotionListProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("genCSSMotionList")(transitionSupport.asInstanceOf[js.Any], CSSMotion.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[CSSMotionListProps, ComponentState]]
   
   /* Inlined parent std.Omit<rc-motion.rc-motion/es/CSSMotion.CSSMotionProps, 'onVisibleChanged'> */
-  @js.native
   trait CSSMotionListProps extends StObject {
     
     var children: js.UndefOr[
         js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit], ReactElement]
-      ] = js.native
+      ] = js.undefined
     
-    var component: js.UndefOr[String | ComponentType[js.Object] | `false`] = js.native
+    var component: js.UndefOr[String | ComponentType[js.Object] | `false`] = js.undefined
     
-    var eventProps: js.UndefOr[js.Object] = js.native
+    var eventProps: js.UndefOr[js.Object] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var internalRef: js.UndefOr[Ref[_]] = js.native
+    var internalRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var keys: js.Array[Key | Dictname] = js.native
+    var keys: js.Array[Key | Dictname]
     
-    var leavedClassName: js.UndefOr[String] = js.native
+    var leavedClassName: js.UndefOr[String] = js.undefined
     
-    var motionAppear: js.UndefOr[Boolean] = js.native
+    var motionAppear: js.UndefOr[Boolean] = js.undefined
     
-    var motionDeadline: js.UndefOr[Double] = js.native
+    var motionDeadline: js.UndefOr[Double] = js.undefined
     
-    var motionEnter: js.UndefOr[Boolean] = js.native
+    var motionEnter: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeave: js.UndefOr[Boolean] = js.native
+    var motionLeave: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeaveImmediately: js.UndefOr[Boolean] = js.native
+    var motionLeaveImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var motionName: js.UndefOr[MotionName] = js.native
+    var motionName: js.UndefOr[MotionName] = js.undefined
     
-    var onAppearActive: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onAppearStart: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterActive: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onEnterStart: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.undefined
     
     /** This will always trigger after final visible changed. Even if no motion configured. */
-    var onVisibleChanged: js.UndefOr[js.Function2[/* visible */ Boolean, /* info */ typings.rcMotion.anon.Key, Unit]] = js.native
+    var onVisibleChanged: js.UndefOr[js.Function2[/* visible */ Boolean, /* info */ typings.rcMotion.anon.Key, Unit]] = js.undefined
     
-    var removeOnLeave: js.UndefOr[Boolean] = js.native
+    var removeOnLeave: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CSSMotionListProps {
     
@@ -146,10 +145,10 @@ object cssmotionlistMod extends Shortcut {
       def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
       @scala.inline
-      def setInternalRef(value: Ref[_]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInternalRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
@@ -297,10 +296,9 @@ object cssmotionlistMod extends Shortcut {
     }
   }
   
-  @js.native
   trait CSSMotionListState extends StObject {
     
-    var keyEntities: js.Array[KeyObject] = js.native
+    var keyEntities: js.Array[KeyObject]
   }
   object CSSMotionListState {
     
@@ -320,9 +318,4 @@ object cssmotionlistMod extends Shortcut {
       def setKeyEntitiesVarargs(value: KeyObject*): Self = StObject.set(x, "keyEntities", js.Array(value :_*))
     }
   }
-  
-  type _To = ComponentClass[CSSMotionListProps, js.Any]
-  
-  /* This means you don't have to write `default`, but can instead just say `cssmotionlistMod.foo` */
-  override def _to: ComponentClass[CSSMotionListProps, js.Any] = default
 }

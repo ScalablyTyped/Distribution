@@ -20,53 +20,51 @@ import typings.materialUiLab.treeItemTreeItemMod.TreeItemProps
 import typings.materialUiLab.treeViewTreeViewMod.TreeViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsMod {
   
-  @js.native
   trait LabComponentsPropsList extends StObject {
     
-    var MuiAlert: AlertProps = js.native
+    var MuiAlert: AlertProps
     
-    var MuiAlertTitle: AlertTitleProps = js.native
+    var MuiAlertTitle: AlertTitleProps
     
-    var MuiAutocomplete: AutocompleteProps[_, _, _, _] = js.native
+    var MuiAutocomplete: AutocompleteProps[js.Any, js.Any, js.Any, js.Any]
     
-    var MuiAvatarGroup: AvatarGroupProps = js.native
+    var MuiAvatarGroup: AvatarGroupProps
     
-    var MuiPagination: PaginationProps = js.native
+    var MuiPagination: PaginationProps
     
-    var MuiPaginationItem: PaginationItemProps[div, js.Object] = js.native
+    var MuiPaginationItem: PaginationItemProps[div, js.Object]
     
-    var MuiRating: RatingProps = js.native
+    var MuiRating: RatingProps
     
-    var MuiSkeleton: SkeletonProps[div, js.Object] = js.native
+    var MuiSkeleton: SkeletonProps[div, js.Object]
     
-    var MuiSpeedDial: SpeedDialProps = js.native
+    var MuiSpeedDial: SpeedDialProps
     
-    var MuiSpeedDialAction: SpeedDialActionProps = js.native
+    var MuiSpeedDialAction: SpeedDialActionProps
     
-    var MuiSpeedDialIcon: SpeedDialIconProps = js.native
+    var MuiSpeedDialIcon: SpeedDialIconProps
     
     var MuiTabList: TabListProps[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['defaultComponent'] */ js.Any, 
         js.Object
-      ] = js.native
+      ]
     
-    var MuiTabPanel: TabPanelProps = js.native
+    var MuiTabPanel: TabPanelProps
     
     var MuiToggleButton: ToggleButtonProps[
         /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.@material-ui/lab/ToggleButton/ToggleButton.ToggleButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
         js.Object
-      ] = js.native
+      ]
     
-    var MuiToggleButtonGroup: ToggleButtonGroupProps = js.native
+    var MuiToggleButtonGroup: ToggleButtonGroupProps
     
-    var MuiTreeItem: TreeItemProps = js.native
+    var MuiTreeItem: TreeItemProps
     
-    var MuiTreeView: TreeViewProps = js.native
+    var MuiTreeView: TreeViewProps
   }
   object LabComponentsPropsList {
     
@@ -74,7 +72,7 @@ object propsMod {
     def apply(
       MuiAlert: AlertProps,
       MuiAlertTitle: AlertTitleProps,
-      MuiAutocomplete: AutocompleteProps[_, _, _, _],
+      MuiAutocomplete: AutocompleteProps[js.Any, js.Any, js.Any, js.Any],
       MuiAvatarGroup: AvatarGroupProps,
       MuiPagination: PaginationProps,
       MuiPaginationItem: PaginationItemProps[div, js.Object],
@@ -110,7 +108,7 @@ object propsMod {
       def setMuiAlertTitle(value: AlertTitleProps): Self = StObject.set(x, "MuiAlertTitle", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMuiAutocomplete(value: AutocompleteProps[_, _, _, _]): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
+      def setMuiAutocomplete(value: AutocompleteProps[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMuiAvatarGroup(value: AvatarGroupProps): Self = StObject.set(x, "MuiAvatarGroup", value.asInstanceOf[js.Any])

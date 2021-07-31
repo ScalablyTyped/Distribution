@@ -2,29 +2,27 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalRoot extends StObject {
   
-  var aliasSymbol: js.UndefOr[Symbol] = js.native
+  var aliasSymbol: js.UndefOr[Symbol] = js.undefined
   
-  var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.native
+  var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined
   
-  var checkType: Type = js.native
+  var checkType: Type
   
-  var extendsType: Type = js.native
+  var extendsType: Type
   
-  var inferTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.native
+  var inferTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
   
-  var instantiations: js.UndefOr[Map[Type]] = js.native
+  var instantiations: js.UndefOr[Map[Type]] = js.undefined
   
-  var isDistributive: Boolean = js.native
+  var isDistributive: Boolean
   
-  var node: ConditionalTypeNode = js.native
+  var node: ConditionalTypeNode
   
-  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.native
+  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
 }
 object ConditionalRoot {
   

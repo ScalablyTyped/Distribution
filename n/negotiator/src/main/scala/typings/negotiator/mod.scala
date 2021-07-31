@@ -3,14 +3,15 @@ package typings.negotiator
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("negotiator", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Negotiator {
+  class ^ protected ()
+    extends StObject
+       with Negotiator {
     /**
       * The negotiator constructor receives a request object
       */

@@ -3,7 +3,6 @@ package typings.typescript.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -53,68 +52,7 @@ trait System extends StObject {
   var newLine: java.lang.String = js.native
   
   def readDirectory(path: java.lang.String): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(path: java.lang.String, extensions: js.UndefOr[scala.Nothing], exclude: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.UndefOr[scala.Nothing],
-    exclude: js.Array[java.lang.String],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
   def readDirectory(path: java.lang.String, extensions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.UndefOr[scala.Nothing],
-    include: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
   def readDirectory(
     path: java.lang.String,
     extensions: js.Array[java.lang.String],
@@ -124,13 +62,6 @@ trait System extends StObject {
     path: java.lang.String,
     extensions: js.Array[java.lang.String],
     exclude: js.Array[java.lang.String],
-    include: js.UndefOr[scala.Nothing],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    path: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    exclude: js.Array[java.lang.String],
     include: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
@@ -140,6 +71,63 @@ trait System extends StObject {
     include: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: js.Array[java.lang.String],
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: Unit,
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(path: java.lang.String, extensions: Unit, exclude: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: js.Array[java.lang.String],
+    include: Unit,
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(path: java.lang.String, extensions: Unit, exclude: Unit, include: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: Unit,
+    exclude: Unit,
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(path: java.lang.String, extensions: Unit, exclude: Unit, include: Unit, depth: Double): js.Array[java.lang.String] = js.native
   
   def readFile(path: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def readFile(path: java.lang.String, encoding: java.lang.String): js.UndefOr[java.lang.String] = js.native
@@ -155,7 +143,7 @@ trait System extends StObject {
       /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
       /* ms */ Double, 
       /* repeated */ js.Any, 
-      _
+      js.Any
     ]
   ] = js.native
   

@@ -2,13 +2,11 @@ package typings.valerieBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 * Valerie BindingHandlers
 */
-@js.native
 trait KnockoutBindingHandlers extends StObject {
   
   /**
@@ -16,26 +14,26 @@ trait KnockoutBindingHandlers extends StObject {
     * otherwise.
     * @name ko.bindingHandlers.disabledWhenNotValid
     */
-  var disabledWhenNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var disabledWhenNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Disables the element when the chosen property or model has been touched and has failed or is pending
     * validation, enabled otherwise.<br/>
     * @name ko.bindingHandlers.disabledWhenTouchedAndNotValid
     */
-  var disabledWhenTouchedAndNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var disabledWhenTouchedAndNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Enables the element when the chosen property or model is applicable, disabled otherwise.
     * @name ko.bindingHandlers.enabledWhenApplicable
     */
-  var enabledWhenApplicable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var enabledWhenApplicable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Sets the text of the element to be a formatted representation of the specified property.
     * @name ko.bindingHandlers.formattedText
     */
-  var formattedText: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var formattedText: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Validates entries that can be checked, i.e. check boxes and radio buttons.
@@ -47,7 +45,7 @@ trait KnockoutBindingHandlers extends StObject {
     * </ul>
     * @name ko.bindingHandlers.validatedChecked
     */
-  var validatedChecked: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validatedChecked: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Validates options selected in a select list.
@@ -59,7 +57,7 @@ trait KnockoutBindingHandlers extends StObject {
     * </ul>
     * @name ko.bindingHandlers.validatedSelectedOptions
     */
-  var validatedSelectedOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validatedSelectedOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Validates entries that can be keyed or selected.
@@ -82,7 +80,7 @@ trait KnockoutBindingHandlers extends StObject {
     * </ul>
     * @name ko.bindingHandlers.validatedValue
     */
-  var validatedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validatedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Sets CSS classes on the element based on the validation state of the chosen property or model.</br>
@@ -100,7 +98,7 @@ trait KnockoutBindingHandlers extends StObject {
     * </ul>
     * @name ko.bindingHandlers.validationCss
     */
-  var validationCss: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validationCss: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element behave like a validation message for the chosen property or model:
@@ -110,61 +108,61 @@ trait KnockoutBindingHandlers extends StObject {
     * </ul>
     * @name ko.bindingHandlers.validationMessage
     */
-  var validationMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validationMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Sets the text of the element to be the underlying validation state's message.
     * @name ko.bindingHandlers.validationMessageText
     */
-  var validationMessageText: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validationMessageText: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Sets the text of the element to be the underlying validation state's name.
     * @name ko.bindingHandlers.validationName
     */
-  var validationName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var validationName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible if the chosen property or model is applicable, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenApplicable
     */
-  var visibleWhenApplicable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenApplicable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible when the entry bound to the chosen property is in focus, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenFocused
     */
-  var visibleWhenFocused: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenFocused: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible when the chosen property or model has failed validation, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenInvalid
     */
-  var visibleWhenInvalid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenInvalid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible when the summary for the chosen model is not empty, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenSummaryNotEmpty
     */
-  var visibleWhenSummaryNotEmpty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenSummaryNotEmpty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible if the chosen property or model has been touched, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenTouched
     */
-  var visibleWhenTouched: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenTouched: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible if the chosen property or model is untouched, invisible otherwise.
     * @name ko.bindingHandlers.visibleWhenUntouched
     */
-  var visibleWhenUntouched: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenUntouched: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
   /**
     * Makes the element visible if the chosen property or model has passed validation.
     * @name ko.bindingHandlers.visibleWhenValid
     */
-  var visibleWhenValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var visibleWhenValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
 }
 object KnockoutBindingHandlers {
   

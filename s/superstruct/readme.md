@@ -4,15 +4,15 @@
 Typings are for version 0.10.13
 
 ## Library description:
-A simple, expressive way to validate data in JavaScript.
+A simple and composable way to validate data in JavaScript (and TypeScript).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | superstruct |
 | Keywords           | api, array, assert, cast, check, checker, collection, data, error, express, hapi, interface, invalid, joi, json, list, model, object, orm, scalar, schema, struct, throw, type, types, valid, validate, validation, validator |
-| # releases         | 22 |
-| # dependents       | 113 |
-| # downloads        | 4465803 |
+| # releases         | 32 |
+| # dependents       | 125 |
+| # downloads        | 6117129 |
 | # stars            | 0 |
 
 ## Links

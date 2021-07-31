@@ -2,20 +2,18 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Commit.
   */
-@js.native
 trait SchemaCommitRequest extends StObject {
   
   /**
     * The mutations to be executed when this transaction commits. All mutations
     * are applied atomically, in the order they appear in this list.
     */
-  var mutations: js.UndefOr[js.Array[SchemaMutation]] = js.native
+  var mutations: js.UndefOr[js.Array[SchemaMutation]] = js.undefined
   
   /**
     * Execute mutations in a temporary transaction. Note that unlike commit of
@@ -26,12 +24,12 @@ trait SchemaCommitRequest extends StObject {
     * more than once. If this is undesirable, use BeginTransaction and Commit
     * instead.
     */
-  var singleUseTransaction: js.UndefOr[SchemaTransactionOptions] = js.native
+  var singleUseTransaction: js.UndefOr[SchemaTransactionOptions] = js.undefined
   
   /**
     * Commit a previously-started transaction.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object SchemaCommitRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedLinkFacetAttributeUpdate extends StObject {
   
   /**
     * The action to perform when updating the attribute.
     */
-  var Action: UpdateActionType = js.native
+  var Action: UpdateActionType
   
   /**
     * The attribute to update.
     */
-  var Attribute: TypedLinkAttributeDefinition = js.native
+  var Attribute: TypedLinkAttributeDefinition
 }
 object TypedLinkFacetAttributeUpdate {
   

@@ -4,12 +4,14 @@ import typings.forkTsCheckerWebpackPlugin.esLintReporterConfigurationMod.EsLintR
 import typings.forkTsCheckerWebpackPlugin.reporterRpcClientMod.ReporterRpcClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esLintReporterRpcClientMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/eslint-reporter/reporter/EsLintReporterRpcClient", "createEsLintReporterRpcClient")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/eslint-reporter/reporter/EsLintReporterRpcClient", JSImport.Namespace)
   @js.native
-  def createEsLintReporterRpcClient(configuration: EsLintReporterConfiguration): ReporterRpcClient = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createEsLintReporterRpcClient(configuration: EsLintReporterConfiguration): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterRpcClient")(configuration.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
 }

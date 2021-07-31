@@ -2,46 +2,44 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Conveys a worker&#39;s progress through the work described by a WorkItem.
   */
-@js.native
 trait SchemaWorkItemStatus extends StObject {
   
   /**
     * True if the WorkItem was completed (successfully or unsuccessfully).
     */
-  var completed: js.UndefOr[Boolean] = js.native
+  var completed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Worker output counters for this WorkItem.
     */
-  var counterUpdates: js.UndefOr[js.Array[SchemaCounterUpdate]] = js.native
+  var counterUpdates: js.UndefOr[js.Array[SchemaCounterUpdate]] = js.undefined
   
   /**
     * See documentation of stop_position.
     */
-  var dynamicSourceSplit: js.UndefOr[SchemaDynamicSourceSplit] = js.native
+  var dynamicSourceSplit: js.UndefOr[SchemaDynamicSourceSplit] = js.undefined
   
   /**
     * Specifies errors which occurred during processing.  If errors are
     * provided, and completed = true, then the WorkItem is considered to have
     * failed.
     */
-  var errors: js.UndefOr[js.Array[SchemaStatus]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaStatus]] = js.undefined
   
   /**
     * DEPRECATED in favor of counter_updates.
     */
-  var metricUpdates: js.UndefOr[js.Array[SchemaMetricUpdate]] = js.native
+  var metricUpdates: js.UndefOr[js.Array[SchemaMetricUpdate]] = js.undefined
   
   /**
     * DEPRECATED in favor of reported_progress.
     */
-  var progress: js.UndefOr[SchemaApproximateProgress] = js.native
+  var progress: js.UndefOr[SchemaApproximateProgress] = js.undefined
   
   /**
     * The report index.  When a WorkItem is leased, the lease will contain an
@@ -55,28 +53,28 @@ trait SchemaWorkItemStatus extends StObject {
     * not submit a subsequent report until the response for the previous report
     * had been received from the service.
     */
-  var reportIndex: js.UndefOr[String] = js.native
+  var reportIndex: js.UndefOr[String] = js.undefined
   
   /**
     * The worker&#39;s progress through this WorkItem.
     */
-  var reportedProgress: js.UndefOr[SchemaApproximateReportedProgress] = js.native
+  var reportedProgress: js.UndefOr[SchemaApproximateReportedProgress] = js.undefined
   
   /**
     * Amount of time the worker requests for its lease.
     */
-  var requestedLeaseDuration: js.UndefOr[String] = js.native
+  var requestedLeaseDuration: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED in favor of dynamic_source_split.
     */
-  var sourceFork: js.UndefOr[SchemaSourceFork] = js.native
+  var sourceFork: js.UndefOr[SchemaSourceFork] = js.undefined
   
   /**
     * If the work item represented a SourceOperationRequest, and the work is
     * completed, contains the result of the operation.
     */
-  var sourceOperationResponse: js.UndefOr[SchemaSourceOperationResponse] = js.native
+  var sourceOperationResponse: js.UndefOr[SchemaSourceOperationResponse] = js.undefined
   
   /**
     * A worker may split an active map task in two parts, &quot;primary&quot;
@@ -105,17 +103,17 @@ trait SchemaWorkItemStatus extends StObject {
     * and in a potential subsequent dynamic_source_split into {P&#39;, R&#39;},
     * P&#39; and R&#39; must be together equivalent to P, etc.
     */
-  var stopPosition: js.UndefOr[SchemaPosition] = js.native
+  var stopPosition: js.UndefOr[SchemaPosition] = js.undefined
   
   /**
     * Total time the worker spent being throttled by external systems.
     */
-  var totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.native
+  var totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the WorkItem.
     */
-  var workItemId: js.UndefOr[String] = js.native
+  var workItemId: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkItemStatus {
   

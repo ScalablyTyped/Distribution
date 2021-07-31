@@ -6,7 +6,6 @@ import typings.winrt.Windows.Media.IMediaExtension
 import typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

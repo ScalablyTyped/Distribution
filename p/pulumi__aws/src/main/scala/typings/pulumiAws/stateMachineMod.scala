@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMachineMod {
@@ -64,6 +63,10 @@ object stateMachineMod {
   /* static members */
   object StateMachine {
     
+    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StateMachine resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,50 +76,44 @@ object stateMachineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine.get")
-    @js.native
-    def get(name: String, id: Input[ID]): StateMachine = js.native
-    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StateMachine = js.native
-    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StateMachineState): StateMachine = js.native
-    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StateMachineState, opts: CustomResourceOptions): StateMachine = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StateMachineState): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StateMachineState, opts: CustomResourceOptions): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
     
     /**
       * Returns true if the given object is an instance of StateMachine.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/stateMachine.StateMachine */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/stateMachine.StateMachine */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sfn/stateMachine.StateMachine */ Boolean]
   }
   
-  @js.native
   trait StateMachineArgs extends StObject {
     
     /**
       * The Amazon States Language definition of the state machine.
       */
-    val definition: Input[String] = js.native
+    val definition: Input[String]
     
     /**
       * The name of the state machine.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object StateMachineArgs {
     
@@ -149,43 +146,42 @@ object stateMachineMod {
     }
   }
   
-  @js.native
   trait StateMachineState extends StObject {
     
     /**
       * The ARN of the state machine.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date the state machine was created.
       */
-    val creationDate: js.UndefOr[Input[String]] = js.native
+    val creationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon States Language definition of the state machine.
       */
-    val definition: js.UndefOr[Input[String]] = js.native
+    val definition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the state machine.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current status of the state machine. Either "ACTIVE" or "DELETING".
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object StateMachineState {
     

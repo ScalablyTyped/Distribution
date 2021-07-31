@@ -6,39 +6,37 @@ import typings.typedGithubApi.typedGithubApiStrings.closed
 import typings.typedGithubApi.typedGithubApiStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMilestoneMod {
   
-  @js.native
   trait Milestone extends StObject {
     
-    var closed: js.UndefOr[Moment] = js.native
+    var closed: js.UndefOr[Moment] = js.undefined
     
-    var closedIssueCount: Double = js.native
+    var closedIssueCount: Double
     
-    var created: Moment = js.native
+    var created: Moment
     
-    var creator: UserSummary = js.native
+    var creator: UserSummary
     
-    var description: String = js.native
+    var description: String
     
-    var due: Moment = js.native
+    var due: Moment
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var number: Double = js.native
+    var number: Double
     
-    var openIssueCount: Double = js.native
+    var openIssueCount: Double
     
-    var state: open | closed = js.native
+    var state: open | closed
     
-    var title: String = js.native
+    var title: String
     
-    var updated: Moment = js.native
+    var updated: Moment
   }
   object Milestone {
     

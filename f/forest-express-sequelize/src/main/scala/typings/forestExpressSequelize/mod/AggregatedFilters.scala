@@ -2,15 +2,13 @@ package typings.forestExpressSequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedFilters extends StObject {
   
-  var aggregator: Aggregator = js.native
+  var aggregator: Aggregator
   
-  var conditions: js.Array[Filter] = js.native
+  var conditions: js.Array[Filter]
 }
 object AggregatedFilters {
   

@@ -5,11 +5,11 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyndicationClient extends ISyndicationClient
+trait SyndicationClient
+  extends StObject
+     with ISyndicationClient
 object SyndicationClient {
   
   @scala.inline

@@ -4,41 +4,39 @@ import typings.openseadragon.mod.ButtonEvent
 import typings.openseadragon.mod.EventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var element: js.UndefOr[typings.std.Element] = js.native
+  var element: js.UndefOr[typings.std.Element] = js.undefined
   
-  var fadeDelay: js.UndefOr[Double] = js.native
+  var fadeDelay: js.UndefOr[Double] = js.undefined
   
-  var fadeLength: js.UndefOr[Double] = js.native
+  var fadeLength: js.UndefOr[Double] = js.undefined
   
-  var onBlur: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onBlur: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onClick: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onClick: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onEnter: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onEnter: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onExit: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onExit: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onFocus: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onFocus: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onPress: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onPress: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var onRelease: js.UndefOr[EventHandler[ButtonEvent]] = js.native
+  var onRelease: js.UndefOr[EventHandler[ButtonEvent]] = js.undefined
   
-  var srcDown: js.UndefOr[String] = js.native
+  var srcDown: js.UndefOr[String] = js.undefined
   
-  var srcGroup: js.UndefOr[String] = js.native
+  var srcGroup: js.UndefOr[String] = js.undefined
   
-  var srcHover: js.UndefOr[String] = js.native
+  var srcHover: js.UndefOr[String] = js.undefined
   
-  var srcRest: js.UndefOr[String] = js.native
+  var srcRest: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object Element {
   

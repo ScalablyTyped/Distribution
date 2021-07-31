@@ -2,23 +2,21 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofRotateTimeline extends StObject {
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var PREV_ROTATION: Double = js.native
+  var PREV_ROTATION: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var ROTATION: Double = js.native
+  var ROTATION: Double
 }
 object TypeofRotateTimeline {
   

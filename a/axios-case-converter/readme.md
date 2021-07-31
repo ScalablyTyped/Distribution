@@ -10,9 +10,9 @@ Axios transformer/interceptor that converts snake_case/camelCase
 | ------------------ | :-------------: |
 | Full name          | axios-case-converter |
 | Keywords           | axios, interceptor, snake, camel, case, convert |
-| # releases         | 9 |
-| # dependents       | 9 |
-| # downloads        | 210337 |
+| # releases         | 8 |
+| # dependents       | 12 |
+| # downloads        | 311882 |
 | # stars            | 0 |
 
 ## Links

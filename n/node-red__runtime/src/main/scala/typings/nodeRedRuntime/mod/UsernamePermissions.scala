@@ -2,15 +2,15 @@ package typings.nodeRedRuntime.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UsernamePermissions extends User {
+trait UsernamePermissions
+  extends StObject
+     with User {
   
-  var permissions: Permission | js.Array[Permission] = js.native
+  var permissions: Permission | js.Array[Permission]
   
-  var username: String = js.native
+  var username: String
 }
 object UsernamePermissions {
   

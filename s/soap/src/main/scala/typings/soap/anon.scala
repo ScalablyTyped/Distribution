@@ -5,17 +5,15 @@ import typings.soap.elementsMod.Element
 import typings.soap.typesMod.IXmlAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Input extends StObject {
     
-    var input: js.Any = js.native
+    var input: js.Any
     
-    var output: js.Any = js.native
+    var output: js.Any
   }
   object Input {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name[T] extends StObject {
     
-    var name: T = js.native
+    var name: T
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object Name {
     
@@ -52,7 +49,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[_], T] (val x: Self with Name[T]) extends AnyVal {
+    implicit class NameMutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
       
       @scala.inline
       def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -62,12 +59,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Namespace extends StObject {
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var xmlnsAttributes: js.UndefOr[js.Array[IXmlAttribute]] = js.native
+    var xmlnsAttributes: js.UndefOr[js.Array[IXmlAttribute]] = js.undefined
   }
   object Namespace {
     
@@ -94,12 +90,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Namespaces extends StObject {
     
-    var namespaces: js.UndefOr[js.Array[String]] = js.native
+    var namespaces: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
   }
   object Namespaces {
     
@@ -129,12 +124,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Prefix extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object Prefix {
     
@@ -155,12 +149,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Subcode extends StObject {
     
-    var Subcode: js.UndefOr[Value] = js.native
+    var Subcode: js.UndefOr[Value] = js.undefined
     
-    var Value: String = js.native
+    var Value: String
   }
   object Subcode {
     
@@ -184,10 +177,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var Text: String = js.native
+    var Text: String
   }
   object Text {
     
@@ -205,10 +197,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Types extends StObject {
     
-    var types: StringDictionary[Element] = js.native
+    var types: StringDictionary[Element]
   }
   object Types {
     
@@ -226,10 +217,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

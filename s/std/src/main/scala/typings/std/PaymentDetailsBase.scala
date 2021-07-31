@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentDetailsBase extends StObject {
   
-  var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.native
+  var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
   
-  var modifiers: js.UndefOr[js.Array[PaymentDetailsModifier]] = js.native
+  var modifiers: js.UndefOr[js.Array[PaymentDetailsModifier]] = js.undefined
   
-  var shippingOptions: js.UndefOr[js.Array[PaymentShippingOption]] = js.native
+  var shippingOptions: js.UndefOr[js.Array[PaymentShippingOption]] = js.undefined
 }
 object PaymentDetailsBase {
   

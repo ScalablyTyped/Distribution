@@ -8,7 +8,6 @@ import typings.gitlab.snippetsMod.SnippetVisibility
 import typings.gitlab.userImpersonationTokensMod.ImpersonationTokenScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gitlabStrings {
@@ -469,43 +468,58 @@ object gitlabStrings {
   def Wikis: Wikis = "Wikis".asInstanceOf[Wikis]
   
   @js.native
-  sealed trait api extends ImpersonationTokenScope
+  sealed trait api
+    extends StObject
+       with ImpersonationTokenScope
   @scala.inline
   def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait asana extends SupportedService
+  sealed trait asana
+    extends StObject
+       with SupportedService
   @scala.inline
   def asana: asana = "asana".asInstanceOf[asana]
   
   @js.native
-  sealed trait assembla extends SupportedService
+  sealed trait assembla
+    extends StObject
+       with SupportedService
   @scala.inline
   def assembla: assembla = "assembla".asInstanceOf[assembla]
   
   @js.native
-  sealed trait bamboo extends SupportedService
+  sealed trait bamboo
+    extends StObject
+       with SupportedService
   @scala.inline
   def bamboo: bamboo = "bamboo".asInstanceOf[bamboo]
   
   @js.native
-  sealed trait bugzilla extends SupportedService
+  sealed trait bugzilla
+    extends StObject
+       with SupportedService
   @scala.inline
   def bugzilla: bugzilla = "bugzilla".asInstanceOf[bugzilla]
   
   @js.native
-  sealed trait buildkite extends SupportedService
+  sealed trait buildkite
+    extends StObject
+       with SupportedService
   @scala.inline
   def buildkite: buildkite = "buildkite".asInstanceOf[buildkite]
   
   @js.native
-  sealed trait campfire extends SupportedService
+  sealed trait campfire
+    extends StObject
+       with SupportedService
   @scala.inline
   def campfire: campfire = "campfire".asInstanceOf[campfire]
   
   @js.native
   sealed trait canceled
-    extends DeploymentStatus
+    extends StObject
+       with DeploymentStatus
        with JobScope
   @scala.inline
   def canceled: canceled = "canceled".asInstanceOf[canceled]
@@ -527,18 +541,23 @@ object gitlabStrings {
   
   @js.native
   sealed trait created
-    extends DeploymentStatus
+    extends StObject
+       with DeploymentStatus
        with JobScope
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   
   @js.native
-  sealed trait custom extends NotificationSettingLevel
+  sealed trait custom
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait `custom-issue-tracker` extends SupportedService
+  sealed trait `custom-issue-tracker`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `custom-issue-tracker`: `custom-issue-tracker` = "custom-issue-tracker".asInstanceOf[`custom-issue-tracker`]
   
@@ -553,17 +572,23 @@ object gitlabStrings {
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
-  sealed trait disabled extends NotificationSettingLevel
+  sealed trait disabled
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait `drone-ci` extends SupportedService
+  sealed trait `drone-ci`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `drone-ci`: `drone-ci` = "drone-ci".asInstanceOf[`drone-ci`]
   
   @js.native
-  sealed trait `emails-on-push` extends SupportedService
+  sealed trait `emails-on-push`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `emails-on-push`: `emails-on-push` = "emails-on-push".asInstanceOf[`emails-on-push`]
   
@@ -583,13 +608,16 @@ object gitlabStrings {
   def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
-  sealed trait `external-wiki` extends SupportedService
+  sealed trait `external-wiki`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `external-wiki`: `external-wiki` = "external-wiki".asInstanceOf[`external-wiki`]
   
   @js.native
   sealed trait failed
-    extends DeploymentStatus
+    extends StObject
+       with DeploymentStatus
        with JobScope
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
@@ -600,32 +628,44 @@ object gitlabStrings {
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait flowdock extends SupportedService
+  sealed trait flowdock
+    extends StObject
+       with SupportedService
   @scala.inline
   def flowdock: flowdock = "flowdock".asInstanceOf[flowdock]
   
   @js.native
-  sealed trait global extends NotificationSettingLevel
+  sealed trait global
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait hangouts_chat extends SupportedService
+  sealed trait hangouts_chat
+    extends StObject
+       with SupportedService
   @scala.inline
   def hangouts_chat: hangouts_chat = "hangouts_chat".asInstanceOf[hangouts_chat]
   
   @js.native
-  sealed trait hipchat extends SupportedService
+  sealed trait hipchat
+    extends StObject
+       with SupportedService
   @scala.inline
   def hipchat: hipchat = "hipchat".asInstanceOf[hipchat]
   
   @js.native
-  sealed trait internal extends SnippetVisibility
+  sealed trait internal
+    extends StObject
+       with SnippetVisibility
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait irker extends SupportedService
+  sealed trait irker
+    extends StObject
+       with SupportedService
   @scala.inline
   def irker: irker = "irker".asInstanceOf[irker]
   
@@ -635,17 +675,23 @@ object gitlabStrings {
   def issue: issue = "issue".asInstanceOf[issue]
   
   @js.native
-  sealed trait jenkins extends SupportedService
+  sealed trait jenkins
+    extends StObject
+       with SupportedService
   @scala.inline
   def jenkins: jenkins = "jenkins".asInstanceOf[jenkins]
   
   @js.native
-  sealed trait `jenkins-deprecated` extends SupportedService
+  sealed trait `jenkins-deprecated`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `jenkins-deprecated`: `jenkins-deprecated` = "jenkins-deprecated".asInstanceOf[`jenkins-deprecated`]
   
   @js.native
-  sealed trait jira extends SupportedService
+  sealed trait jira
+    extends StObject
+       with SupportedService
   @scala.inline
   def jira: jira = "jira".asInstanceOf[jira]
   
@@ -655,7 +701,9 @@ object gitlabStrings {
   def joined: joined = "joined".asInstanceOf[joined]
   
   @js.native
-  sealed trait kubernetes extends SupportedService
+  sealed trait kubernetes
+    extends StObject
+       with SupportedService
   @scala.inline
   def kubernetes: kubernetes = "kubernetes".asInstanceOf[kubernetes]
   
@@ -665,17 +713,23 @@ object gitlabStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait manual extends JobScope
+  sealed trait manual
+    extends StObject
+       with JobScope
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait mattermost extends SupportedService
+  sealed trait mattermost
+    extends StObject
+       with SupportedService
   @scala.inline
   def mattermost: mattermost = "mattermost".asInstanceOf[mattermost]
   
   @js.native
-  sealed trait `mattermost-slash-commands` extends SupportedService
+  sealed trait `mattermost-slash-commands`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `mattermost-slash-commands`: `mattermost-slash-commands` = "mattermost-slash-commands".asInstanceOf[`mattermost-slash-commands`]
   
@@ -685,7 +739,9 @@ object gitlabStrings {
   def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait mention extends NotificationSettingLevel
+  sealed trait mention
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def mention: mention = "mention".asInstanceOf[mention]
   
@@ -700,7 +756,9 @@ object gitlabStrings {
   def merged: merged = "merged".asInstanceOf[merged]
   
   @js.native
-  sealed trait `microsoft-teams` extends SupportedService
+  sealed trait `microsoft-teams`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `microsoft-teams`: `microsoft-teams` = "microsoft-teams".asInstanceOf[`microsoft-teams`]
   
@@ -710,7 +768,9 @@ object gitlabStrings {
   def milestone: milestone = "milestone".asInstanceOf[milestone]
   
   @js.native
-  sealed trait `mock-ci` extends SupportedService
+  sealed trait `mock-ci`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `mock-ci`: `mock-ci` = "mock-ci".asInstanceOf[`mock-ci`]
   
@@ -725,32 +785,44 @@ object gitlabStrings {
   def note: note = "note".asInstanceOf[note]
   
   @js.native
-  sealed trait packagist extends SupportedService
+  sealed trait packagist
+    extends StObject
+       with SupportedService
   @scala.inline
   def packagist: packagist = "packagist".asInstanceOf[packagist]
   
   @js.native
-  sealed trait participating extends NotificationSettingLevel
+  sealed trait participating
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def participating: participating = "participating".asInstanceOf[participating]
   
   @js.native
-  sealed trait pending extends JobScope
+  sealed trait pending
+    extends StObject
+       with JobScope
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait `pipelines-email` extends SupportedService
+  sealed trait `pipelines-email`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `pipelines-email`: `pipelines-email` = "pipelines-email".asInstanceOf[`pipelines-email`]
   
   @js.native
-  sealed trait pivotaltracker extends SupportedService
+  sealed trait pivotaltracker
+    extends StObject
+       with SupportedService
   @scala.inline
   def pivotaltracker: pivotaltracker = "pivotaltracker".asInstanceOf[pivotaltracker]
   
   @js.native
-  sealed trait `private` extends SnippetVisibility
+  sealed trait `private`
+    extends StObject
+       with SnippetVisibility
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
@@ -760,12 +832,16 @@ object gitlabStrings {
   def project: project = "project".asInstanceOf[project]
   
   @js.native
-  sealed trait prometheus extends SupportedService
+  sealed trait prometheus
+    extends StObject
+       with SupportedService
   @scala.inline
   def prometheus: prometheus = "prometheus".asInstanceOf[prometheus]
   
   @js.native
-  sealed trait public extends SnippetVisibility
+  sealed trait public
+    extends StObject
+       with SnippetVisibility
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
@@ -775,17 +851,23 @@ object gitlabStrings {
   def pushed: pushed = "pushed".asInstanceOf[pushed]
   
   @js.native
-  sealed trait pushover extends SupportedService
+  sealed trait pushover
+    extends StObject
+       with SupportedService
   @scala.inline
   def pushover: pushover = "pushover".asInstanceOf[pushover]
   
   @js.native
-  sealed trait read_user extends ImpersonationTokenScope
+  sealed trait read_user
+    extends StObject
+       with ImpersonationTokenScope
   @scala.inline
   def read_user: read_user = "read_user".asInstanceOf[read_user]
   
   @js.native
-  sealed trait redmine extends SupportedService
+  sealed trait redmine
+    extends StObject
+       with SupportedService
   @scala.inline
   def redmine: redmine = "redmine".asInstanceOf[redmine]
   
@@ -796,23 +878,30 @@ object gitlabStrings {
   
   @js.native
   sealed trait running
-    extends DeploymentStatus
+    extends StObject
+       with DeploymentStatus
        with JobScope
   @scala.inline
   def running: running = "running".asInstanceOf[running]
   
   @js.native
-  sealed trait skipped extends JobScope
+  sealed trait skipped
+    extends StObject
+       with JobScope
   @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
   
   @js.native
-  sealed trait slack extends SupportedService
+  sealed trait slack
+    extends StObject
+       with SupportedService
   @scala.inline
   def slack: slack = "slack".asInstanceOf[slack]
   
   @js.native
-  sealed trait `slack-slash-commands` extends SupportedService
+  sealed trait `slack-slash-commands`
+    extends StObject
+       with SupportedService
   @scala.inline
   def `slack-slash-commands`: `slack-slash-commands` = "slack-slash-commands".asInstanceOf[`slack-slash-commands`]
   
@@ -823,13 +912,16 @@ object gitlabStrings {
   
   @js.native
   sealed trait success
-    extends DeploymentStatus
+    extends StObject
+       with DeploymentStatus
        with JobScope
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait teamcity extends SupportedService
+  sealed trait teamcity
+    extends StObject
+       with SupportedService
   @scala.inline
   def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
   
@@ -849,7 +941,9 @@ object gitlabStrings {
   def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait watch extends NotificationSettingLevel
+  sealed trait watch
+    extends StObject
+       with NotificationSettingLevel
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
 }

@@ -2,17 +2,17 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RsaPSS extends IParams {
+trait RsaPSS
+  extends StObject
+     with IParams {
   
-  var hashAlg: Double = js.native
+  var hashAlg: Double
   
-  var mgf: Double = js.native
+  var mgf: Double
   
-  var saltLen: Double = js.native
+  var saltLen: Double
 }
 object RsaPSS {
   

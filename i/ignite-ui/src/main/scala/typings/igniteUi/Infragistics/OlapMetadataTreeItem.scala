@@ -2,26 +2,24 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapMetadataTreeItem extends StObject {
   
   /**
     * Returns the caption text that should be displayed for this tree item.
     */
-  def caption(): String = js.native
+  def caption(): String
   
   /**
     * Returns the children ot this tree item.
     */
-  def children(): js.Object = js.native
+  def children(): js.Object
   
   /**
     * Returns the OLAP metadata item that this tree item represents which is an object of type $.ig.Cube, $.ig.Dimension, $.ig.Hierarchy, $.ig.Measure, $.ig.Level.
     */
-  def item(): js.Object = js.native
+  def item(): js.Object
   
   /**
     * Returns the metadata tree item type which is a value from the $.ig.MetadataTreeItemType enumeration.
@@ -62,7 +60,7 @@ trait OlapMetadataTreeItem extends StObject {
     *             $.ig.MetadataTreeItemType.prototype.level5 = 11;
     *             Item type for the level5 tree items. Contain an item() of type $.ig.Level.
     */
-  def `type`(): Double = js.native
+  def `type`(): Double
 }
 object OlapMetadataTreeItem {
   

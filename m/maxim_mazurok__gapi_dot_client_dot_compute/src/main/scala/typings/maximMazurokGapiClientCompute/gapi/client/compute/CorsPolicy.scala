@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorsPolicy extends StObject {
   
   /**
@@ -13,34 +11,34 @@ trait CorsPolicy extends StObject {
     * header.
     * Default is false.
     */
-  var allowCredentials: js.UndefOr[Boolean] = js.native
+  var allowCredentials: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies the content for the Access-Control-Allow-Headers header. */
-  var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+  var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Specifies the content for the Access-Control-Allow-Methods header. */
-  var allowMethods: js.UndefOr[js.Array[String]] = js.native
+  var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the regualar expression patterns that match allowed origins. For regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
     * An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
     */
-  var allowOriginRegexes: js.UndefOr[js.Array[String]] = js.native
+  var allowOriginRegexes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the list of origins that will be allowed to do CORS requests.
     * An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
     */
-  var allowOrigins: js.UndefOr[js.Array[String]] = js.native
+  var allowOrigins: js.UndefOr[js.Array[String]] = js.undefined
   
   /** If true, specifies the CORS policy is disabled. The default value of false, which indicates that the CORS policy is in effect. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies the content for the Access-Control-Expose-Headers header. */
-  var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+  var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header. */
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
 }
 object CorsPolicy {
   

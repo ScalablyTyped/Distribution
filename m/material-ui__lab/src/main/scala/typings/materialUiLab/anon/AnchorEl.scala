@@ -5,47 +5,45 @@ import typings.materialUiLab.useAutocompleteUseAutocompleteMod.Value
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnchorEl[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] extends StObject {
   
-  var anchorEl: Null | HTMLElement = js.native
+  var anchorEl: Null | HTMLElement
   
-  var dirty: Boolean = js.native
+  var dirty: Boolean
   
-  var focused: Boolean = js.native
+  var focused: Boolean
   
-  var focusedTag: Double = js.native
+  var focusedTag: Double
   
-  def getClearProps(): js.Object = js.native
+  def getClearProps(): js.Object
   
-  def getInputLabelProps(): js.Object = js.native
+  def getInputLabelProps(): js.Object
   
-  def getInputProps(): js.Object = js.native
+  def getInputProps(): js.Object
   
-  def getListboxProps(): js.Object = js.native
+  def getListboxProps(): js.Object
   
-  def getOptionProps(hasOptionIndex: Option[T]): js.Object = js.native
+  def getOptionProps(hasOptionIndex: Option[T]): js.Object
   
-  def getPopupIndicatorProps(): js.Object = js.native
+  def getPopupIndicatorProps(): js.Object
   
-  def getRootProps(): js.Object = js.native
+  def getRootProps(): js.Object
   
-  def getTagProps(hasIndex: Index): js.Object = js.native
+  def getTagProps(hasIndex: Index): js.Object
   
-  var groupedOptions: js.Array[T] = js.native
+  var groupedOptions: js.Array[T]
   
-  var id: String = js.native
+  var id: String
   
-  var inputValue: String = js.native
+  var inputValue: String
   
-  var popupOpen: Boolean = js.native
+  var popupOpen: Boolean
   
-  def setAnchorEl(): Unit = js.native
+  def setAnchorEl(): Unit
   
-  var value: Value[T, Multiple, DisableClearable, FreeSolo] = js.native
+  var value: Value[T, Multiple, DisableClearable, FreeSolo]
 }
 object AnchorEl {
   
@@ -68,12 +66,12 @@ object AnchorEl {
     popupOpen: Boolean,
     setAnchorEl: () => Unit
   ): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = {
-    val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], focusedTag = focusedTag.asInstanceOf[js.Any], getClearProps = js.Any.fromFunction0(getClearProps), getInputLabelProps = js.Any.fromFunction0(getInputLabelProps), getInputProps = js.Any.fromFunction0(getInputProps), getListboxProps = js.Any.fromFunction0(getListboxProps), getOptionProps = js.Any.fromFunction1(getOptionProps), getPopupIndicatorProps = js.Any.fromFunction0(getPopupIndicatorProps), getRootProps = js.Any.fromFunction0(getRootProps), getTagProps = js.Any.fromFunction1(getTagProps), groupedOptions = groupedOptions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], setAnchorEl = js.Any.fromFunction0(setAnchorEl))
+    val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], focusedTag = focusedTag.asInstanceOf[js.Any], getClearProps = js.Any.fromFunction0(getClearProps), getInputLabelProps = js.Any.fromFunction0(getInputLabelProps), getInputProps = js.Any.fromFunction0(getInputProps), getListboxProps = js.Any.fromFunction0(getListboxProps), getOptionProps = js.Any.fromFunction1(getOptionProps), getPopupIndicatorProps = js.Any.fromFunction0(getPopupIndicatorProps), getRootProps = js.Any.fromFunction0(getRootProps), getTagProps = js.Any.fromFunction1(getTagProps), groupedOptions = groupedOptions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], setAnchorEl = js.Any.fromFunction0(setAnchorEl), anchorEl = null, value = null)
     __obj.asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
   }
   
   @scala.inline
-  implicit class AnchorElMutableBuilder[Self <: AnchorEl[_, _, _, _], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self with (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
+  implicit class AnchorElMutableBuilder[Self <: AnchorEl[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self & (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
     
     @scala.inline
     def setAnchorEl(value: HTMLElement): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])

@@ -3,17 +3,17 @@ package typings.monacoEditor.mod.editor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDiffEditorConstructionOptions extends IDiffEditorOptions {
+trait IDiffEditorConstructionOptions
+  extends StObject
+     with IDiffEditorOptions {
   
   /**
     * Place overflow widgets inside an external DOM node.
     * Defaults to an internal DOM node.
     */
-  var overflowWidgetsDomNode: js.UndefOr[HTMLElement] = js.native
+  var overflowWidgetsDomNode: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * Initial theme to be used for rendering.
@@ -21,7 +21,7 @@ trait IDiffEditorConstructionOptions extends IDiffEditorOptions {
     * You can create custom themes via `monaco.editor.defineTheme`.
     * To switch a theme, use `monaco.editor.setTheme`
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object IDiffEditorConstructionOptions {
   

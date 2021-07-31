@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCalendarNotification extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaCalendarNotification extends StObject {
     * and is ignored on inserts and updates. SMS notifications are only
     * available for G Suite customers.   Required when adding a notification.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The type of notification. Possible values are:   -
@@ -30,7 +28,7 @@ trait SchemaCalendarNotification extends StObject {
     * &quot;agenda&quot; - An agenda with the events of the day (sent out in
     * the morning).   Required when adding a notification.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCalendarNotification {
   

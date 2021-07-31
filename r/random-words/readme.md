@@ -12,7 +12,7 @@ Generate one or more common English words
 | Keywords           | random, words, words, word, generator, sample, text |
 | # releases         | 2 |
 | # dependents       | 53 |
-| # downloads        | 970244 |
+| # downloads        | 1148658 |
 | # stars            | 0 |
 
 ## Links

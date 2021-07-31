@@ -2,17 +2,15 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait referrerInfo extends StObject {
   
   /** 来源小程序、公众号或 App 的 appId */
-  var appId: String = js.native
+  var appId: String
   
   /** 来源小程序传过来的数据，scene=1037或1038时支持 */
-  var extraData: js.Object = js.native
+  var extraData: js.Object
 }
 object referrerInfo {
   

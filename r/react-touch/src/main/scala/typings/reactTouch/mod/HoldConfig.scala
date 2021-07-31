@@ -2,17 +2,15 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoldConfig extends StObject {
   
   /** @default 1000 */
-  var holdFor: js.UndefOr[Double] = js.native
+  var holdFor: js.UndefOr[Double] = js.undefined
   
   /** @default 250 */
-  var updateEvery: js.UndefOr[Double] = js.native
+  var updateEvery: js.UndefOr[Double] = js.undefined
 }
 object HoldConfig {
   

@@ -5,18 +5,18 @@ import typings.node.workerThreadsMod.WorkerOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("worker-threads-pool", JSImport.Namespace)
   @js.native
-  class ^ () extends Pool {
+  class ^ ()
+    extends StObject
+       with Pool {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -24,13 +24,13 @@ object mod {
       * and started once there's room in the pool.
       * @default 1
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of workers waiting to be started when the pool is full.
       * The callback to `pool.acquire` will be called with an error in case this limit is reached.
       */
-    var maxWaiting: js.UndefOr[Double] = js.native
+    var maxWaiting: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

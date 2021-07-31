@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchedLogStream extends StObject {
   
   /**
     * The name of the log stream.
     */
-  var logStreamName: js.UndefOr[LogStreamName] = js.native
+  var logStreamName: js.UndefOr[LogStreamName] = js.undefined
   
   /**
     * Indicates whether all the events in this log stream were searched.
     */
-  var searchedCompletely: js.UndefOr[LogStreamSearchedCompletely] = js.native
+  var searchedCompletely: js.UndefOr[LogStreamSearchedCompletely] = js.undefined
 }
 object SearchedLogStream {
   

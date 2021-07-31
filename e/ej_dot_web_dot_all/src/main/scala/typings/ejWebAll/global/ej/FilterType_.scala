@@ -2,7 +2,6 @@ package typings.ejWebAll.global.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.FilterType")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FilterType_ extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.FilterType_ with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.FilterType_ & Double] = js.native
   
-  /* 0 */ val Contains: typings.ejWebAll.ej.FilterType_.Contains with Double = js.native
+  /* 0 */ val Contains: typings.ejWebAll.ej.FilterType_.Contains & Double = js.native
   
-  /* 1 */ val StartsWith: typings.ejWebAll.ej.FilterType_.StartsWith with Double = js.native
+  /* 1 */ val StartsWith: typings.ejWebAll.ej.FilterType_.StartsWith & Double = js.native
 }

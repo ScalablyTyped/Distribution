@@ -3,32 +3,30 @@ package typings.reactOverlays
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object manageAriaHiddenMod {
   
-  @JSImport("react-overlays/cjs/manageAriaHidden", "ariaHidden")
+  @JSImport("react-overlays/cjs/manageAriaHidden", JSImport.Namespace)
   @js.native
-  def ariaHidden(hide: Boolean): Unit = js.native
-  @JSImport("react-overlays/cjs/manageAriaHidden", "ariaHidden")
-  @js.native
-  def ariaHidden(hide: Boolean, node: Element): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-overlays/cjs/manageAriaHidden", "hideSiblings")
-  @js.native
-  def hideSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = js.native
+  @scala.inline
+  def ariaHidden(hide: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ariaHidden(hide: Boolean, node: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-overlays/cjs/manageAriaHidden", "showSiblings")
-  @js.native
-  def showSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = js.native
+  @scala.inline
+  def hideSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def showSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait SiblingExclusions extends StObject {
     
-    var backdrop: Element = js.native
+    var backdrop: Element
     
-    var dialog: Element = js.native
+    var dialog: Element
   }
   object SiblingExclusions {
     

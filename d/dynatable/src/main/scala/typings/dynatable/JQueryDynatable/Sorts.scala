@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sorts extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait Sorts extends StObject {
     * @param direction The sorting direction (-1 or +1)
     * @return A reference to the related Dynatable object
     */
-  def add(attr: String, direction: Double): Dynatable = js.native
+  def add(attr: String, direction: Double): Dynatable
   
   /** Remove all the sortKeys */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** functions object for Sorts */
-  var functions: SortsFunctions = js.native
+  var functions: SortsFunctions
   
   /**
     * Try to intelligently guess which sort function to use based on the type of attribute values.
@@ -31,17 +29,17 @@ trait Sorts extends StObject {
     * @param attr The key of the property
     * @return A string containing one of the types ('string' or 'number')
     */
-  def guessType(a: js.Any, b: js.Any, attr: String): String = js.native
+  def guessType(a: js.Any, b: js.Any, attr: String): String
   
   /** Create and init the sorts */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if sort feature is enabled
     *
     * @return A boolean if sort feature is enabled
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
   
   /**
     * Remove a sort attribute from the sortKeys
@@ -49,7 +47,7 @@ trait Sorts extends StObject {
     * @param attr The key to be removed from the sorting
     * @return A reference to the related Dynatable object
     */
-  def remove(attr: String): Dynatable = js.native
+  def remove(attr: String): Dynatable
 }
 object Sorts {
   

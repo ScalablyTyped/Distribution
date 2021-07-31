@@ -5,13 +5,11 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnTypeFormattingEditProvider extends StObject {
   
-  var autoFormatTriggerCharacters: js.Array[String] = js.native
+  var autoFormatTriggerCharacters: js.Array[String]
   
   /**
     * Provide formatting edits after a character has been typed.
@@ -26,7 +24,7 @@ trait OnTypeFormattingEditProvider extends StObject {
     ch: String,
     options: FormattingOptions,
     token: CancellationToken
-  ): ProviderResult[js.Array[TextEdit]] = js.native
+  ): ProviderResult[js.Array[TextEdit]]
 }
 object OnTypeFormattingEditProvider {
   

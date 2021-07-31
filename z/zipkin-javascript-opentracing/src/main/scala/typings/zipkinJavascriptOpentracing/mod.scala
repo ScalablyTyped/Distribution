@@ -2,7 +2,6 @@ package typings.zipkinJavascriptOpentracing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,8 +9,18 @@ object mod {
   @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing {
+    extends StObject
+       with typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing {
     def this(args: js.Any*) = this()
+    
+    /* CompleteClass */
+    override def extract(format: js.Any, carrier: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def startSpan(name: js.Any, args: js.Any*): js.Any = js.native
   }
   @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)
   @js.native
@@ -39,42 +48,49 @@ object mod {
   def FORMAT_TEXT_MAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_TEXT_MAP")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("zipkin-javascript-opentracing", "makeOptional")
-  @js.native
-  def makeOptional(`val`: js.Any): js.Any = js.native
+  @scala.inline
+  def makeOptional(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptional")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object prototypeNamespace {
     
     object extract {
       
+      @scala.inline
+      def apply(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.extract")
       @js.native
-      def apply(format: js.Any, carrier: js.Any): js.Any = js.native
+      val ^ : js.Any = js.native
     }
     
     object inject {
       
+      @scala.inline
+      def apply(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.inject")
       @js.native
-      def apply(span: js.Any, format: js.Any, carrier: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
     }
     
     object startSpan {
       
+      @scala.inline
+      def apply(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.startSpan")
       @js.native
-      def apply(name: js.Any, args: js.Any*): js.Any = js.native
+      val ^ : js.Any = js.native
     }
   }
   
-  @js.native
   trait zipkinJavascriptOpentracing extends StObject {
     
-    def extract(format: js.Any, carrier: js.Any): js.Any = js.native
+    def extract(format: js.Any, carrier: js.Any): js.Any
     
-    def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = js.native
+    def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit
     
-    def startSpan(name: js.Any, args: js.Any*): js.Any = js.native
+    def startSpan(name: js.Any, args: js.Any*): js.Any
   }
   object zipkinJavascriptOpentracing {
     

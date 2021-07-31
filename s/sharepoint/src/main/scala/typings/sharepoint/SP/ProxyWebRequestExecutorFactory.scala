@@ -3,11 +3,11 @@ package typings.sharepoint.SP
 import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProxyWebRequestExecutorFactory extends IWebRequestExecutorFactory
+trait ProxyWebRequestExecutorFactory
+  extends StObject
+     with IWebRequestExecutorFactory
 object ProxyWebRequestExecutorFactory {
   
   @scala.inline

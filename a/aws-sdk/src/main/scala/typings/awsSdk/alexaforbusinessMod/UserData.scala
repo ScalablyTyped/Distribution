@@ -2,41 +2,39 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserData extends StObject {
   
   /**
     * The email of a user.
     */
-  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.undefined
   
   /**
     * The enrollment ARN of a user.
     */
-  var EnrollmentId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentId] = js.native
+  var EnrollmentId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentId] = js.undefined
   
   /**
     * The enrollment status of a user.
     */
-  var EnrollmentStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentStatus] = js.native
+  var EnrollmentStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnrollmentStatus] = js.undefined
   
   /**
     * The first name of a user.
     */
-  var FirstName: js.UndefOr[userFirstName] = js.native
+  var FirstName: js.UndefOr[userFirstName] = js.undefined
   
   /**
     * The last name of a user.
     */
-  var LastName: js.UndefOr[userLastName] = js.native
+  var LastName: js.UndefOr[userLastName] = js.undefined
   
   /**
     * The ARN of a user.
     */
-  var UserArn: js.UndefOr[Arn] = js.native
+  var UserArn: js.UndefOr[Arn] = js.undefined
 }
 object UserData {
   

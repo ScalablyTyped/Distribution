@@ -4,7 +4,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -24,7 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     placed
   */
 class Raster ()
-  extends typings.paper.paper.Raster {
+  extends StObject
+     with typings.paper.paper.Raster {
   /** 
     * Creates a new raster from an object description, and places it in the
     * active layer.
@@ -46,8 +46,8 @@ class Raster ()
   def this(source: HTMLCanvasElement) = this()
   def this(source: HTMLImageElement) = this()
   def this(size: typings.paper.paper.Size, position: typings.paper.paper.Point) = this()
-  def this(source: js.UndefOr[scala.Nothing], position: typings.paper.paper.Point) = this()
   def this(source: String, position: typings.paper.paper.Point) = this()
+  def this(source: Unit, position: typings.paper.paper.Point) = this()
   def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
   def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
 }

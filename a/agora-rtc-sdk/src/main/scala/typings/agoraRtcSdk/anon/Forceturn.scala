@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Forceturn extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait Forceturn extends StObject {
     * - `true`: Force data transfer.
     * - `false`: (default) Not to force data transfer.
     */
-  var forceturn: js.UndefOr[Boolean] = js.native
+  var forceturn: js.UndefOr[Boolean] = js.undefined
   
   /** Your TURN Server password. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes. */
-  var password: String = js.native
+  var password: String
   
   /** The TCP port(s) you want add to TURN Server. Numeric characters only, and the string length must be greater than 0 and less than 256 bytes. */
-  var tcpport: js.UndefOr[String] = js.native
+  var tcpport: js.UndefOr[String] = js.undefined
   
   /** Your TURN Server URL address. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes. */
-  var turnServerURL: String = js.native
+  var turnServerURL: String
   
   /** The UDP port(s) you want to add to TURN Server. Numeric characters only, and the string length must be greater than 0 and less than 256 bytes. */
-  var udpport: String = js.native
+  var udpport: String
   
   /** Your TURN Server username. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes. */
-  var username: String = js.native
+  var username: String
 }
 object Forceturn {
   

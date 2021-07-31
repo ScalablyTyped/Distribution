@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** merges the functions of {@link XTextAppend} , {@link XTextContentAppend} and {@link XTextConvert} . */
-@js.native
 trait XTextAppendAndConvert
-  extends XTextAppend
+  extends StObject
+     with XTextAppend
      with XTextContentAppend
      with XTextConvert
 object XTextAppendAndConvert {

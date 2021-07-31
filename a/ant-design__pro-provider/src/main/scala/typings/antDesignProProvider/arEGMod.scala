@@ -8,7 +8,6 @@ import typings.antDesignProProvider.anon.Next
 import typings.antDesignProProvider.anon.Total
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arEGMod {

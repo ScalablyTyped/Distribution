@@ -7,7 +7,6 @@ import typings.jqueryQrcode.jqueryQrcodeNumbers.`3`
 import typings.jqueryQrcode.jqueryQrcodeNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryQRCode {
@@ -38,107 +37,106 @@ object JQueryQRCode {
     def NORMAL: `0` = 0.asInstanceOf[`0`]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Background color or image element, null for transparent background
       * @default null
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /**
       * Error correction level: 'L', 'M', 'Q' or 'H'
       * @default 'L'
       */
-    var ecLevel: js.UndefOr[String] = js.native
+    var ecLevel: js.UndefOr[String] = js.undefined
     
     /**
       * Code color or image element
       * @default '#000'
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** @default '#000' */
-    var fontcolor: js.UndefOr[String] = js.native
+    var fontcolor: js.UndefOr[String] = js.undefined
     
     /** @default 'sans' */
-    var fontname: js.UndefOr[String] = js.native
+    var fontname: js.UndefOr[String] = js.undefined
     
     /** @default null */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
     /** @default 'no label' */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Left offset in pixels, if drawn onto existing canvas
       * @default 0
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** @default 0.5 */
-    var mPosX: js.UndefOr[Double] = js.native
+    var mPosX: js.UndefOr[Double] = js.undefined
     
     /** @default 0.5 */
-    var mPosY: js.UndefOr[Double] = js.native
+    var mPosY: js.UndefOr[Double] = js.undefined
     
     /** @default 0.1 */
-    var mSize: js.UndefOr[Double] = js.native
+    var mSize: js.UndefOr[Double] = js.undefined
     
     /**
       * End of version range, somewhere in 1 .. 40
       * @default 40
       */
-    var maxVersion: js.UndefOr[Double] = js.native
+    var maxVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * Start of version range, somewhere in 1 .. 40
       * @default 1
       */
-    var minVersion: js.UndefOr[Double] = js.native
+    var minVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * Mode
       * @default Mode.NORMAL
       */
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
     /**
       * Quiet zone in modules
       * @default 0
       */
-    var quiet: js.UndefOr[Double] = js.native
+    var quiet: js.UndefOr[Double] = js.undefined
     
     /**
       * Corner radius relative to module width: 0.0 .. 0.5
       * @default 0
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * Render method: 'canvas', 'image' or 'div'
       * @default 'canvas'
       */
-    var render: js.UndefOr[String] = js.native
+    var render: js.UndefOr[String] = js.undefined
     
     /**
       * Size in pixel
       * @default 200
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * The text content of the QR code.
       * @default 'no text'
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * Top offset in pixels, if drawn onto existing canvas
       * @default 0
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

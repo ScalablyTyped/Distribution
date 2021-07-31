@@ -7,35 +7,33 @@ import typings.mjmlReact.mjmlReactStrings.hidden
 import typings.mjmlReact.mjmlReactStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlCarouselProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double] = js.native
+  var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var iconWidth: js.UndefOr[String] = js.native
+  var iconWidth: js.UndefOr[String] = js.undefined
   
-  var leftIcon: js.UndefOr[String] = js.native
+  var leftIcon: js.UndefOr[String] = js.undefined
   
-  var rightIcon: js.UndefOr[String] = js.native
+  var rightIcon: js.UndefOr[String] = js.undefined
   
-  var tbBorder: js.UndefOr[BorderProperty[String | Double]] = js.native
+  var tbBorder: js.UndefOr[BorderProperty[String | Double]] = js.undefined
   
-  var tbBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.native
+  var tbBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.undefined
   
-  var tbHoverBorderColor: js.UndefOr[String] = js.native
+  var tbHoverBorderColor: js.UndefOr[String] = js.undefined
   
-  var tbSelectedBorderColor: js.UndefOr[String] = js.native
+  var tbSelectedBorderColor: js.UndefOr[String] = js.undefined
   
-  var tbWidth: js.UndefOr[String] = js.native
+  var tbWidth: js.UndefOr[String] = js.undefined
   
-  var thumbnails: js.UndefOr[hidden | visible] = js.native
+  var thumbnails: js.UndefOr[hidden | visible] = js.undefined
 }
 object MjmlCarouselProps {
   

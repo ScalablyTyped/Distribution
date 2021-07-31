@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Processing and processing step details
   */
-@js.native
-trait SpecimenProcessing extends BackboneElement {
+trait SpecimenProcessing
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'timeDateTime'.
     */
-  var _timeDateTime: js.UndefOr[Element] = js.native
+  var _timeDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Material used in the processing step
     */
-  var additive: js.UndefOr[js.Array[Reference]] = js.native
+  var additive: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Textual description of procedure
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the treatment step  applied to the specimen
     */
-  var procedure: js.UndefOr[CodeableConcept] = js.native
+  var procedure: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Date and time of specimen processing
     */
-  var timeDateTime: js.UndefOr[dateTime] = js.native
+  var timeDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Date and time of specimen processing
     */
-  var timePeriod: js.UndefOr[Period] = js.native
+  var timePeriod: js.UndefOr[Period] = js.undefined
 }
 object SpecimenProcessing {
   

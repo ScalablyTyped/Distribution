@@ -2,21 +2,19 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICriteriaParts extends StObject {
   
-  var noDatabaseProperties: js.Array[String] = js.native
+  var noDatabaseProperties: js.Array[String]
   
-  var rawCriteriaObject: js.Any = js.native
+  var rawCriteriaObject: js.Any
   
-  def selectFromClause[T](_table: Table[T]): String = js.native
+  def selectFromClause[T](_table: Table[T]): String
   
-  var tables: js.Array[TableToSearchPart] = js.native
+  var tables: js.Array[TableToSearchPart]
   
-  var whereClause: String = js.native
+  var whereClause: String
 }
 object ICriteriaParts {
   

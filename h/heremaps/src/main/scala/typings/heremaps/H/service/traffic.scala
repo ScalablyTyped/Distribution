@@ -3,7 +3,6 @@ package typings.heremaps.H.service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traffic {
@@ -13,7 +12,9 @@ object traffic {
     * tile basis
     */
   @js.native
-  trait Service extends AbstractRestService {
+  trait Service
+    extends StObject
+       with AbstractRestService {
     
     /**
       * This method requests traffic incidents based on the service parameters provided.
@@ -61,14 +62,13 @@ object traffic {
       * @property path {string=} - the path of the traffic incidents service, default is 'traffic/6.1'
       * @property baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
       */
-    @js.native
     trait Options extends StObject {
       
-      var baseUrl: js.UndefOr[Url] = js.native
+      var baseUrl: js.UndefOr[Url] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var subDomain: js.UndefOr[String] = js.native
+      var subDomain: js.UndefOr[String] = js.undefined
     }
     object Options {
       

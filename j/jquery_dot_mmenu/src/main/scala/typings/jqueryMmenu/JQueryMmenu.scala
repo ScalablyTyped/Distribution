@@ -9,7 +9,6 @@ import typings.jqueryMmenu.jqueryMmenuStrings.setSelected
 import typings.jqueryMmenu.jqueryMmenuStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryMmenu {
@@ -91,40 +90,39 @@ object JQueryMmenu {
     def update(): Unit = js.native
   }
   
-  @js.native
   trait ClassnamesConfigurations extends StObject {
     
     /**
       * The classname on a LI that should be displayed as a divider.
       * Default: "Divider"
       */
-    var divider: js.UndefOr[String] = js.native
+    var divider: js.UndefOr[String] = js.undefined
     
     /**
       * The classname on a submenu (a nested UL) that should be displayed as a default list.
       * Default: "Inset"
       */
-    var inset: js.UndefOr[String] = js.native
+    var inset: js.UndefOr[String] = js.undefined
     
     /**
       * The classname on an element (for example a DIV) that should be considered to be a panel.
       * Only applies if the "isMenu" option is set to false.
       * Default: "Panel"
       */
-    var panel: js.UndefOr[String] = js.native
+    var panel: js.UndefOr[String] = js.undefined
     
     /**
       * The classname on the LI that should be displayed as selected.
       * Default: "Selected"
       */
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
     /**
       * The classname on a submenu (a nested UL) that should expand below
       * their parent instead of slide in from the right.
       * Default: "vertical"
       */
-    var vertical: js.UndefOr[String] = js.native
+    var vertical: js.UndefOr[String] = js.undefined
   }
   object ClassnamesConfigurations {
     
@@ -169,39 +167,38 @@ object JQueryMmenu {
     }
   }
   
-  @js.native
   trait Configurations extends StObject {
     
     /**
       * the CSS class names object
       */
-    var classNames: js.UndefOr[ClassnamesConfigurations] = js.native
+    var classNames: js.UndefOr[ClassnamesConfigurations] = js.undefined
     
     /**
       * Whether or not the menu should be cloned (and the original menu kept intact).
       * Default: false
       */
     @JSName("clone")
-    var clone_FConfigurations: js.UndefOr[Boolean] = js.native
+    var clone_FConfigurations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of milliseconds between opening/closing the menu and panels,
       * needed to force CSS transitions.
       * Default: 25
       */
-    var openingInterval: js.UndefOr[Double] = js.native
+    var openingInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * jQuery selector containing the node-type of panels.
       * Default: "div, ul, ol"
       */
-    var panelNodetype: js.UndefOr[String] = js.native
+    var panelNodetype: js.UndefOr[String] = js.undefined
     
     /**
       * The number of milliseconds used in the CSS transitions.
       * Default: 400 (The value should match the associated CSS value.)
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object Configurations {
     
@@ -246,27 +243,26 @@ object JQueryMmenu {
     }
   }
   
-  @js.native
   trait NavbarOptions extends StObject {
     
     /**
       * Whether or not to add a navbar above the panels.
       * Default: true
       */
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The title above the main panel.
       * Default: "Menu"
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The type of link to set for the title.
       * Possible values: "parent", "anchor" or "none".
       * Default: "parent"
       */
-    var titleLink: js.UndefOr[String] = js.native
+    var titleLink: js.UndefOr[String] = js.undefined
   }
   object NavbarOptions {
     
@@ -299,7 +295,6 @@ object JQueryMmenu {
     }
   }
   
-  @js.native
   trait OnclickOptions extends StObject {
     
     /**
@@ -308,7 +303,7 @@ object JQueryMmenu {
       * the clicked link is prevented, false otherwise.
       * Default: null
       */
-    var close: js.UndefOr[Boolean | js.Any] = js.native
+    var close: js.UndefOr[Boolean | js.Any] = js.undefined
     
     /**
       * Whether or not to prevent the default behavior for the clicked link.
@@ -316,13 +311,13 @@ object JQueryMmenu {
       * or starts with a hash (#), false otherwise.
       * Default: null
       */
-    var preventDefault: js.UndefOr[Boolean | js.Any] = js.native
+    var preventDefault: js.UndefOr[Boolean | js.Any] = js.undefined
     
     /**
       * Whether or not the clicked link should be visibly "selected".
       * Default: true
       */
-    var setSelected: js.UndefOr[Boolean | js.Any] = js.native
+    var setSelected: js.UndefOr[Boolean | js.Any] = js.undefined
   }
   object OnclickOptions {
     
@@ -355,7 +350,6 @@ object JQueryMmenu {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -363,17 +357,17 @@ object JQueryMmenu {
       * You'll need this option when using the extensions.
       * Default: []
       */
-    var extensions: js.UndefOr[js.Array[js.Object]] = js.native
+    var extensions: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     /**
       * navbar options
       */
-    var navbar: js.UndefOr[NavbarOptions] = js.native
+    var navbar: js.UndefOr[NavbarOptions] = js.undefined
     
     /**
       * onClick options
       */
-    var onClick: js.UndefOr[OnclickOptions] = js.native
+    var onClick: js.UndefOr[OnclickOptions] = js.undefined
     
     /**
       * Whether or not submenus should come sliding in from the right.
@@ -381,7 +375,7 @@ object JQueryMmenu {
       * To expand a single submenu below its parent item, add the class "Vertical" to it.
       * Default: true
       */
-    var slidingSubmenus: js.UndefOr[Boolean] = js.native
+    var slidingSubmenus: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,40 +2,35 @@ package typings.genericFunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("generic-functions", "endswithdot")
+  @JSImport("generic-functions", JSImport.Namespace)
   @js.native
-  def endswithdot(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("generic-functions", "icstrcmp")
-  @js.native
-  def icstrcmp(str1: String, str2: String): Boolean = js.native
+  @scala.inline
+  def endswithdot(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("endswithdot")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("generic-functions", "icstrendswith")
-  @js.native
-  def icstrendswith(str: String, suffix: String): Boolean = js.native
+  @scala.inline
+  def icstrcmp(str1: String, str2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("icstrcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("generic-functions", "objGetKeyByValue")
-  @js.native
-  def objGetKeyByValue(`object`: js.Object, value: js.Any): String = js.native
+  @scala.inline
+  def icstrendswith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("icstrendswith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("generic-functions", "println")
-  @js.native
-  def println(message: String): Unit = js.native
+  @scala.inline
+  def objGetKeyByValue(`object`: js.Object, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("objGetKeyByValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("generic-functions", "printlns")
-  @js.native
-  def printlns(message: js.Array[String]): Unit = js.native
+  @scala.inline
+  def println(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("println")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("generic-functions", "strcmp")
-  @js.native
-  def strcmp(str1: String, str2: String): Boolean = js.native
+  @scala.inline
+  def printlns(message: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printlns")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("generic-functions", "strendswith")
-  @js.native
-  def strendswith(str: String, suffix: String): Boolean = js.native
+  @scala.inline
+  def strcmp(str1: String, str2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def strendswith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strendswith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

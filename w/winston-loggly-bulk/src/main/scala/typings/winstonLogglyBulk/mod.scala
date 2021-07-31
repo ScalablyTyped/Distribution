@@ -3,17 +3,20 @@ package typings.winstonLogglyBulk
 import typings.node.urlMod.Url
 import typings.winstonLogglyBulk.anon.Password
 import typings.winstonTransport.mod.TransportStreamOptions
-import typings.winstonTransport.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("winston-loggly-bulk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("winston-loggly-bulk", "Loggly")
   @js.native
-  class Loggly () extends ^ {
+  class Loggly ()
+    extends typings.winstonTransport.mod.^ {
     def this(options: LogglyOptions) = this()
     
     def extend(destination: js.Any, source: js.Any): js.Any = js.native
@@ -36,16 +39,14 @@ object mod {
     def stream(maybeOptions: js.Any): js.Any = js.native
   }
   
-  @JSImport("winston-loggly-bulk", "flushLogsAndExit")
-  @js.native
-  def flushLogsAndExit(): Unit = js.native
+  @scala.inline
+  def flushLogsAndExit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushLogsAndExit")().asInstanceOf[Unit]
   
-  @js.native
   trait BufferOptions extends StObject {
     
-    var retriesInMilliseconds: Double = js.native
+    var retriesInMilliseconds: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object BufferOptions {
     
@@ -66,30 +67,31 @@ object mod {
     }
   }
   
-  @js.native
-  trait LogglyOptions extends TransportStreamOptions {
+  trait LogglyOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var auth: js.UndefOr[Password | Null] = js.native
+    var auth: js.UndefOr[Password | Null] = js.undefined
     
-    var bufferOptions: js.UndefOr[BufferOptions] = js.native
+    var bufferOptions: js.UndefOr[BufferOptions] = js.undefined
     
-    var isBulk: js.UndefOr[Boolean] = js.native
+    var isBulk: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var networkErrorOnConsole: js.UndefOr[Boolean] = js.native
+    var networkErrorOnConsole: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[Null | String | Url] = js.native
+    var proxy: js.UndefOr[Null | String | Url] = js.undefined
     
-    var stripColors: js.UndefOr[Boolean] = js.native
+    var stripColors: js.UndefOr[Boolean] = js.undefined
     
-    var subdomain: String = js.native
+    var subdomain: String
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var timestamp: js.UndefOr[Boolean] = js.native
+    var timestamp: js.UndefOr[Boolean] = js.undefined
     
-    var token: String = js.native
+    var token: String
   }
   object LogglyOptions {
     

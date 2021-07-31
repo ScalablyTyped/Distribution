@@ -1,39 +1,36 @@
 package typings.wonderFrp
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/enum/FilterState", JSImport.Namespace)
-@js.native
-object filterStateMod extends js.Object {
-  @js.native
-  sealed trait FilterState extends js.Object
+object filterStateMod {
   
   @js.native
-  object FilterState extends js.Object {
-    @js.native
-    sealed trait ENTER extends FilterState
-    
-    @js.native
-    sealed trait LEAVE extends FilterState
-    
-    @js.native
-    sealed trait TRIGGER extends FilterState
+  sealed trait FilterState extends StObject
+  @JSImport("wonder-frp/dist/commonjs/enum/FilterState", "FilterState")
+  @js.native
+  object FilterState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FilterState with Double] = js.native
-    /* 1 */ @js.native
-    object ENTER extends TopLevel[ENTER with Double]
+    def apply(value: Double): js.UndefOr[FilterState & Double] = js.native
     
-    /* 2 */ @js.native
-    object LEAVE extends TopLevel[LEAVE with Double]
+    @js.native
+    sealed trait ENTER
+      extends StObject
+         with FilterState
+    /* 1 */ val ENTER: typings.wonderFrp.filterStateMod.FilterState.ENTER & Double = js.native
     
-    /* 0 */ @js.native
-    object TRIGGER extends TopLevel[TRIGGER with Double]
+    @js.native
+    sealed trait LEAVE
+      extends StObject
+         with FilterState
+    /* 2 */ val LEAVE: typings.wonderFrp.filterStateMod.FilterState.LEAVE & Double = js.native
     
+    @js.native
+    sealed trait TRIGGER
+      extends StObject
+         with FilterState
+    /* 0 */ val TRIGGER: typings.wonderFrp.filterStateMod.FilterState.TRIGGER & Double = js.native
   }
-  
 }
-

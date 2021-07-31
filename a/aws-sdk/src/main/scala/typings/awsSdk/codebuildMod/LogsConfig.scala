@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogsConfig extends StObject {
   
   /**
     *  Information about Amazon CloudWatch Logs for a build project. Amazon CloudWatch Logs are enabled by default. 
     */
-  var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.native
+  var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.undefined
   
   /**
     *  Information about logs built to an S3 bucket for a build project. S3 logs are not enabled by default. 
     */
-  var s3Logs: js.UndefOr[S3LogsConfig] = js.native
+  var s3Logs: js.UndefOr[S3LogsConfig] = js.undefined
 }
 object LogsConfig {
   

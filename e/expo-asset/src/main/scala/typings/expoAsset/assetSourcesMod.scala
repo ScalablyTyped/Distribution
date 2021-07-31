@@ -2,41 +2,41 @@ package typings.expoAsset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetSourcesMod {
   
-  @JSImport("expo-asset/build/AssetSources", "resolveUri")
+  @JSImport("expo-asset/build/AssetSources", JSImport.Namespace)
   @js.native
-  def resolveUri(uri: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-asset/build/AssetSources", "selectAssetSource")
-  @js.native
-  def selectAssetSource(meta: AssetMetadata): AssetSource = js.native
+  @scala.inline
+  def resolveUri(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUri")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def selectAssetSource(meta: AssetMetadata): AssetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAssetSource")(meta.asInstanceOf[js.Any]).asInstanceOf[AssetSource]
+  
   trait AssetMetadata extends StObject {
     
-    var fileHashes: js.UndefOr[js.Array[String]] = js.native
+    var fileHashes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fileUris: js.UndefOr[js.Array[String]] = js.native
+    var fileUris: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hash: String = js.native
+    var hash: String
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var httpServerLocation: String = js.native
+    var httpServerLocation: String
     
-    var name: String = js.native
+    var name: String
     
-    var scales: js.Array[Double] = js.native
+    var scales: js.Array[Double]
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AssetMetadata {
     
@@ -106,12 +106,11 @@ object assetSourcesMod {
     }
   }
   
-  @js.native
   trait AssetSource extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object AssetSource {
     

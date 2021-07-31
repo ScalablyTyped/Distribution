@@ -2,36 +2,34 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch datafeeds request.
   */
-@js.native
 trait SchemaDatafeedsCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * The data feed to insert.
     */
-  var datafeed: js.UndefOr[SchemaDatafeed] = js.native
+  var datafeed: js.UndefOr[SchemaDatafeed] = js.undefined
   
   /**
     * The ID of the data feed to get, delete or fetch.
     */
-  var datafeedId: js.UndefOr[String] = js.native
+  var datafeedId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
 }
 object SchemaDatafeedsCustomBatchRequestEntry {
   

@@ -8,7 +8,6 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -80,13 +79,19 @@ object Viewer {
   object ToolbarButtonSize extends StObject {
     
     @js.native
-    sealed trait Large extends ToolbarButtonSize
+    sealed trait Large
+      extends StObject
+         with ToolbarButtonSize
     
     @js.native
-    sealed trait Medium extends ToolbarButtonSize
+    sealed trait Medium
+      extends StObject
+         with ToolbarButtonSize
     
     @js.native
-    sealed trait Small extends ToolbarButtonSize
+    sealed trait Small
+      extends StObject
+         with ToolbarButtonSize
   }
   
   @js.native
@@ -96,113 +101,122 @@ object Viewer {
   object Visibility extends StObject {
     
     @js.native
-    sealed trait Hidden extends Visibility
+    sealed trait Hidden
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait Visible extends Visibility
+    sealed trait Visible
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait VisibleOnExtraLargeOrWiderScreen extends Visibility
+    sealed trait VisibleOnExtraLargeOrWiderScreen
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait VisibleOnLargeOrWiderScreen extends Visibility
+    sealed trait VisibleOnLargeOrWiderScreen
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait VisibleOnMediumOrWiderScreen extends Visibility
+    sealed trait VisibleOnMediumOrWiderScreen
+      extends StObject
+         with Visibility
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var backdrop: js.UndefOr[Boolean | String] = js.native
+    var backdrop: js.UndefOr[Boolean | String] = js.undefined
     
-    var button: js.UndefOr[Boolean] = js.native
+    var button: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | HTMLElement] = js.native
+    var container: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var filter: js.UndefOr[js.Function] = js.native
+    var filter: js.UndefOr[js.Function] = js.undefined
     
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var inheritedAttributes: js.UndefOr[js.Array[String]] = js.native
+    var inheritedAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initialViewIndex: js.UndefOr[Double] = js.native
+    var initialViewIndex: js.UndefOr[Double] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var maxZoomRatio: js.UndefOr[Double] = js.native
+    var maxZoomRatio: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var minZoomRatio: js.UndefOr[Double] = js.native
+    var minZoomRatio: js.UndefOr[Double] = js.undefined
     
-    var movable: js.UndefOr[Boolean] = js.native
+    var movable: js.UndefOr[Boolean] = js.undefined
     
-    var navbar: js.UndefOr[Boolean | Visibility] = js.native
+    var navbar: js.UndefOr[Boolean | Visibility] = js.undefined
     
-    var play: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var play: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var rotatable: js.UndefOr[Boolean] = js.native
+    var rotatable: js.UndefOr[Boolean] = js.undefined
     
-    var scalable: js.UndefOr[Boolean] = js.native
+    var scalable: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var show: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var slideOnTouch: js.UndefOr[Boolean] = js.native
+    var slideOnTouch: js.UndefOr[Boolean] = js.undefined
     
-    var stop: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var stop: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var title: js.UndefOr[Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])] = js.native
+    var title: js.UndefOr[Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])] = js.undefined
     
-    var toggleOnDblclick: js.UndefOr[Boolean] = js.native
+    var toggleOnDblclick: js.UndefOr[Boolean] = js.undefined
     
-    var toolbar: js.UndefOr[Boolean | Visibility | ToolbarOptions] = js.native
+    var toolbar: js.UndefOr[Boolean | Visibility | ToolbarOptions] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean] = js.native
+    var tooltip: js.UndefOr[Boolean] = js.undefined
     
-    var transition: js.UndefOr[Boolean] = js.native
+    var transition: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String | js.Function] = js.native
+    var url: js.UndefOr[String | js.Function] = js.undefined
     
-    var view: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var view: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
-    var zIndexInline: js.UndefOr[Double] = js.native
+    var zIndexInline: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent, Unit]] = js.native
+    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent, Unit]] = js.undefined
     
-    var zoomOnTouch: js.UndefOr[Boolean] = js.native
+    var zoomOnTouch: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOnWheel: js.UndefOr[Boolean] = js.native
+    var zoomOnWheel: js.UndefOr[Boolean] = js.undefined
     
-    var zoomRatio: js.UndefOr[Double] = js.native
+    var zoomRatio: js.UndefOr[Double] = js.undefined
     
-    var zoomable: js.UndefOr[Boolean] = js.native
+    var zoomable: js.UndefOr[Boolean] = js.undefined
     
-    var zoomed: js.UndefOr[js.Function1[/* event */ ZoomedEvent, Unit]] = js.native
+    var zoomed: js.UndefOr[js.Function1[/* event */ ZoomedEvent, Unit]] = js.undefined
   }
   object Options {
     
@@ -252,13 +266,13 @@ object Viewer {
       def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
       
       @scala.inline
-      def setHidden(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "hidden", js.Any.fromFunction1(value))
+      def setHidden(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "hidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
       @scala.inline
-      def setHide(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+      def setHide(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
@@ -345,13 +359,13 @@ object Viewer {
       def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
       
       @scala.inline
-      def setPlay(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
+      def setPlay(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
       @scala.inline
-      def setReady(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      def setReady(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
       @scala.inline
       def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -369,13 +383,13 @@ object Viewer {
       def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
       
       @scala.inline
-      def setShow(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      def setShow(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
       @scala.inline
       def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
       @scala.inline
-      def setShown(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
+      def setShown(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
@@ -387,7 +401,7 @@ object Viewer {
       def setSlideOnTouchUndefined: Self = StObject.set(x, "slideOnTouch", js.undefined)
       
       @scala.inline
-      def setStop(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+      def setStop(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
@@ -429,13 +443,13 @@ object Viewer {
       def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
       @scala.inline
-      def setView(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+      def setView(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
       
       @scala.inline
       def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
       @scala.inline
-      def setViewed(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "viewed", js.Any.fromFunction1(value))
+      def setViewed(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "viewed", js.Any.fromFunction1(value))
       
       @scala.inline
       def setViewedUndefined: Self = StObject.set(x, "viewed", js.undefined)
@@ -490,14 +504,13 @@ object Viewer {
     }
   }
   
-  @js.native
   trait ToolbarButtonOptions extends StObject {
     
-    var click: js.UndefOr[js.Function] = js.native
+    var click: js.UndefOr[js.Function] = js.undefined
     
-    var show: js.UndefOr[Boolean | Visibility] = js.native
+    var show: js.UndefOr[Boolean | Visibility] = js.undefined
     
-    var size: js.UndefOr[ToolbarButtonSize] = js.native
+    var size: js.UndefOr[ToolbarButtonSize] = js.undefined
   }
   object ToolbarButtonOptions {
     
@@ -530,30 +543,29 @@ object Viewer {
     }
   }
   
-  @js.native
   trait ToolbarOptions extends StObject {
     
-    var flipHorizontal: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var flipHorizontal: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var flipVertical: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var flipVertical: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var next: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var next: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var oneToOne: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var oneToOne: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var play: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var play: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var prev: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var prev: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var reset: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var reset: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var rotateLeft: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var rotateLeft: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var rotateRight: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var rotateRight: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var zoomIn: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var zoomIn: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
     
-    var zoomOut: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.native
+    var zoomOut: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
   }
   object ToolbarOptions {
     
@@ -636,20 +648,20 @@ object Viewer {
   
   @js.native
   trait ZoomEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_ZoomEvent: ZoomEventData = js.native
   }
   
-  @js.native
   trait ZoomEventData extends StObject {
     
-    var oldRatio: Double = js.native
+    var oldRatio: Double
     
-    var originalEvent: WheelEvent | PointerEvent | TouchEvent | MouseEvent = js.native
+    var originalEvent: WheelEvent | PointerEvent | TouchEvent | MouseEvent
     
-    var ratio: Double = js.native
+    var ratio: Double
   }
   object ZoomEventData {
     
@@ -679,7 +691,8 @@ object Viewer {
   
   @js.native
   trait ZoomedEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_ZoomedEvent: ZoomEventData = js.native

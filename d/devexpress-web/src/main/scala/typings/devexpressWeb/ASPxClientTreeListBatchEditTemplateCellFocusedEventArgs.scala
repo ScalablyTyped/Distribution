@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditTemplateCellFocused event.
   */
-@js.native
-trait ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the currently processed column.
     */
-  var column: ASPxClientTreeListColumn = js.native
+  var column: ASPxClientTreeListColumn
   
   /**
     * Gets or sets a value specifying whether the event was handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs {
   

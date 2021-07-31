@@ -2,26 +2,24 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroundStationData extends StObject {
   
   /**
     * UUID of a ground station.
     */
-  var groundStationId: js.UndefOr[String] = js.native
+  var groundStationId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a ground station.
     */
-  var groundStationName: js.UndefOr[String] = js.native
+  var groundStationName: js.UndefOr[String] = js.undefined
   
   /**
     * Ground station Region.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object GroundStationData {
   

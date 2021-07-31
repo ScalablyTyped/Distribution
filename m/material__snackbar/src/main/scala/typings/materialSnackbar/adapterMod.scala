@@ -2,27 +2,25 @@ package typings.materialSnackbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCSnackbarAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def announce(): Unit = js.native
+    def announce(): Unit
     
-    def notifyClosed(reason: String): Unit = js.native
+    def notifyClosed(reason: String): Unit
     
-    def notifyClosing(reason: String): Unit = js.native
+    def notifyClosing(reason: String): Unit
     
-    def notifyOpened(): Unit = js.native
+    def notifyOpened(): Unit
     
-    def notifyOpening(): Unit = js.native
+    def notifyOpening(): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
   }
   object MDCSnackbarAdapter {
     

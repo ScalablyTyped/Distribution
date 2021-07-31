@@ -2,16 +2,14 @@ package typings.algoliasearchHelper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<algoliasearch-helper.algoliasearch-helper.Client, 'search' | 'searchForFacetValues'> */
-@js.native
 trait SearchClient extends StObject {
   
-  var search: js.UndefOr[js.Any] = js.native
+  var search: js.UndefOr[js.Any] = js.undefined
   
-  var searchForFacetValues: js.UndefOr[js.Any] = js.native
+  var searchForFacetValues: js.UndefOr[js.Any] = js.undefined
 }
 object SearchClient {
   

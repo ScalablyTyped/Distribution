@@ -12,7 +12,6 @@ import typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.polygon
 import typings.amapJsApiArrivalRange.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -21,7 +20,9 @@ object AMap {
     * 公交到达圈展示
     */
   @js.native
-  trait ArrivalRange extends EventEmitter {
+  trait ArrivalRange
+    extends StObject
+       with EventEmitter {
     
     /**
       * 计算某个时间段内用户通过公交出行可到达的距离范围
@@ -44,10 +45,9 @@ object AMap {
   }
   object ArrivalRange {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var error: Event_[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error, Info]
     }
     object EventMap {
       
@@ -65,25 +65,24 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchOptions extends StObject {
       
       // useless
       /**
         * 选择一个想到达的目的地坐标，最多支持5个目的地坐标
         */
-      var destination: js.UndefOr[LocationValue | js.Array[LocationValue]] = js.native
+      var destination: js.UndefOr[LocationValue | js.Array[LocationValue]] = js.undefined
       
       /**
         * 公交出行策略,可选为：地铁：SUBWAY， 公交：BUS，多策略使用逗号分隔
         */
-      var policy: js.UndefOr[String] = js.native
+      var policy: js.UndefOr[String] = js.undefined
       
       // 'BUS' | 'SUBWAY' | 'BUS,SUBWAY' | 'SUBWAY,BUS';
       /**
         * 结果返回样式：polygon：返回多边形边界值，coverage：判断设定的终点坐标是否在到达圈范围内
         */
-      var resultType: js.UndefOr[polygon | coverage] = js.native
+      var resultType: js.UndefOr[polygon | coverage] = js.undefined
     }
     object SearchOptions {
       
@@ -119,26 +118,25 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 到达圈边界坐标点
         */
-      var bounds: js.Array[js.Array[js.Array[js.Array[String]]]] = js.native
+      var bounds: js.Array[js.Array[js.Array[js.Array[String]]]]
       
       /**
         * 提供的终点坐标是否在到达圈内
         */
-      var inRange: js.UndefOr[js.Array[Boolean]] = js.native
+      var inRange: js.UndefOr[js.Array[Boolean]] = js.undefined
       
       /**
         * 查询状态说明
         */
-      var info: String = js.native
+      var info: String
       
       // internal
-      var infocode: String = js.native
+      var infocode: String
     }
     object SearchResult {
       

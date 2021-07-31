@@ -3,13 +3,11 @@ package typings.formatjsEcma402Abstract.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyDigitsData extends StObject {
   
-  var currencyDigitsData: Record[String, Double] = js.native
+  var currencyDigitsData: Record[String, Double]
 }
 object CurrencyDigitsData {
   

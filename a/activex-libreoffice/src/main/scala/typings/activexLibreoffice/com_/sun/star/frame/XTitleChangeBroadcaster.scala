@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows to register for title changed events. */
-@js.native
-trait XTitleChangeBroadcaster extends XInterface {
+trait XTitleChangeBroadcaster
+  extends StObject
+     with XInterface {
   
   /** Add a listener */
-  def addTitleChangeListener(xListener: XTitleChangeListener): Unit = js.native
+  def addTitleChangeListener(xListener: XTitleChangeListener): Unit
   
   /** Remove a listener */
-  def removeTitleChangeListener(xListener: XTitleChangeListener): Unit = js.native
+  def removeTitleChangeListener(xListener: XTitleChangeListener): Unit
 }
 object XTitleChangeBroadcaster {
   

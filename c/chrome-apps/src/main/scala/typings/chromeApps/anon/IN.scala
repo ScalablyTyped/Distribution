@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.in_
 import typings.chromeApps.chromeAppsStrings.out_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IN extends StObject {
   
-  var IN: in_ = js.native
+  var IN: in_
   
-  var OUT: out_ = js.native
+  var OUT: out_
 }
 object IN {
   
   @scala.inline
-  def apply(IN: in_, OUT: out_): IN = {
-    val __obj = js.Dynamic.literal(IN = IN.asInstanceOf[js.Any], OUT = OUT.asInstanceOf[js.Any])
+  def apply(): IN = {
+    val __obj = js.Dynamic.literal(IN = "in", OUT = "out")
     __obj.asInstanceOf[IN]
   }
   

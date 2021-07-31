@@ -2,23 +2,21 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quantileMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var fraction: js.UndefOr[Double] = js.native
+    var fraction: js.UndefOr[Double] = js.undefined
     
-    var groupBy: js.UndefOr[js.Array[String]] = js.native
+    var groupBy: js.UndefOr[js.Array[String]] = js.undefined
     
-    var p: js.UndefOr[js.Array[Double]] = js.native
+    var p: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Options {
     

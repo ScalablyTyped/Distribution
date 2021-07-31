@@ -2,23 +2,21 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  def error(obj: js.Object): Unit = js.native
+  def error(obj: js.Object): Unit
   
-  var headers: js.Object = js.native
+  var headers: js.Object
   
-  var responseType: String = js.native
+  var responseType: String
   
-  def success(obj: js.Object): Unit = js.native
+  def success(obj: js.Object): Unit
   
-  var url: String = js.native
+  var url: String
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object Error {
   

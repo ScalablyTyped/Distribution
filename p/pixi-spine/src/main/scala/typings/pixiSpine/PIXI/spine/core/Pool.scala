@@ -2,23 +2,21 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pool[T] extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def free(item: T): Unit = js.native
+  def free(item: T): Unit
   
-  def freeAll(items: ArrayLike[T]): Unit = js.native
+  def freeAll(items: ArrayLike[T]): Unit
   
-  var instantiator: js.Any = js.native
+  var instantiator: js.Any
   
-  var items: js.Any = js.native
+  var items: js.Any
   
-  def obtain(): T = js.native
+  def obtain(): T
 }
 object Pool {
   
@@ -36,7 +34,7 @@ object Pool {
   }
   
   @scala.inline
-  implicit class PoolMutableBuilder[Self <: Pool[_], T] (val x: Self with Pool[T]) extends AnyVal {
+  implicit class PoolMutableBuilder[Self <: Pool[?], T] (val x: Self & Pool[T]) extends AnyVal {
     
     @scala.inline
     def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

@@ -6,7 +6,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngComponentTemplateMod {
@@ -25,30 +24,29 @@ object ngComponentTemplateMod {
     def visitNode(node: Node): Unit = js.native
   }
   
-  @js.native
   trait ResolvedTemplate extends StObject {
     
     /** Class declaration that contains this template. */
-    var container: ClassDeclaration = js.native
+    var container: ClassDeclaration
     
     /** File content of the given template. */
-    var content: String = js.native
+    var content: String
     
     /** Path to the file that contains this template. */
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * Gets the character and line of a given position index in the template.
       * If the template is declared inline within a TypeScript source file, the line and
       * character are based on the full source file content.
       */
-    def getCharacterAndLineOfPosition(pos: Double): Character = js.native
+    def getCharacterAndLineOfPosition(pos: Double): Character
     
     /** Whether the given template is inline or not. */
-    var `inline`: Boolean = js.native
+    var `inline`: Boolean
     
     /** Start offset of the template content (e.g. in the inline source file) */
-    var start: Double = js.native
+    var start: Double
   }
   object ResolvedTemplate {
     

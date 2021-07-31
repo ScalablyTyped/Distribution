@@ -7,7 +7,6 @@ import typings.vegaTypings.signalMod.SignalValue
 import typings.vegaTypings.streamMod.EventStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onEventsMod {
@@ -21,7 +20,7 @@ object onEventsMod {
   
   type Events = EventSelector | EventListener
   
-  type OnEvent = (Encode | typings.vegaTypings.anon.Update) with typings.vegaTypings.anon.Events
+  type OnEvent = (Encode | typings.vegaTypings.anon.Update) & typings.vegaTypings.anon.Events
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.exprMod.Expr

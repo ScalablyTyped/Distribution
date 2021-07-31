@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentValidateResult extends StObject {
   
   /**
     * Validation error.
     */
-  var error: js.UndefOr[ResourceManagementErrorWithDetails] = js.native
+  var error: js.UndefOr[ResourceManagementErrorWithDetails] = js.undefined
   
   /**
     * The template deployment properties.
     */
-  var properties: js.UndefOr[DeploymentPropertiesExtended] = js.native
+  var properties: js.UndefOr[DeploymentPropertiesExtended] = js.undefined
 }
 object DeploymentValidateResult {
   

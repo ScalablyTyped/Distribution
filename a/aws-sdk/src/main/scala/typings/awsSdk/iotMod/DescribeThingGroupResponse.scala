@@ -2,61 +2,59 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThingGroupResponse extends StObject {
   
   /**
     * The dynamic thing group index name.
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The dynamic thing group search query string.
     */
-  var queryString: js.UndefOr[QueryString] = js.native
+  var queryString: js.UndefOr[QueryString] = js.undefined
   
   /**
     * The dynamic thing group query version.
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
   
   /**
     * The dynamic thing group status.
     */
-  var status: js.UndefOr[DynamicGroupStatus] = js.native
+  var status: js.UndefOr[DynamicGroupStatus] = js.undefined
   
   /**
     * The thing group ARN.
     */
-  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.native
+  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
   
   /**
     * The thing group ID.
     */
-  var thingGroupId: js.UndefOr[ThingGroupId] = js.native
+  var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
   
   /**
     * Thing group metadata.
     */
-  var thingGroupMetadata: js.UndefOr[ThingGroupMetadata] = js.native
+  var thingGroupMetadata: js.UndefOr[ThingGroupMetadata] = js.undefined
   
   /**
     * The name of the thing group.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * The thing group properties.
     */
-  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.native
+  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.undefined
   
   /**
     * The version of the thing group.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object DescribeThingGroupResponse {
   

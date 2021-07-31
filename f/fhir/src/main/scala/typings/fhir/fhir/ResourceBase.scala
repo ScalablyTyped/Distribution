@@ -2,59 +2,57 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base Resource
   */
-@js.native
 trait ResourceBase extends StObject {
   
   /**
     * Contains extended information for property 'id'.
     */
-  var _id: js.UndefOr[Element] = js.native
+  var _id: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'implicitRules'.
     */
-  var _implicitRules: js.UndefOr[Element] = js.native
+  var _implicitRules: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'language'.
     */
-  var _language: js.UndefOr[Element] = js.native
+  var _language: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'resourceType'.
     */
-  var _resourceType: js.UndefOr[Element] = js.native
+  var _resourceType: js.UndefOr[Element] = js.undefined
   
   /**
     * Logical id of this artifact
     */
-  var id: js.UndefOr[typings.fhir.fhir.id] = js.native
+  var id: js.UndefOr[typings.fhir.fhir.id] = js.undefined
   
   /**
     * A set of rules under which this content was created
     */
-  var implicitRules: js.UndefOr[uri] = js.native
+  var implicitRules: js.UndefOr[uri] = js.undefined
   
   /**
     * Language of the resource content
     */
-  var language: js.UndefOr[code] = js.native
+  var language: js.UndefOr[code] = js.undefined
   
   /**
     * Metadata about the resource
     */
-  var meta: js.UndefOr[Meta] = js.native
+  var meta: js.UndefOr[Meta] = js.undefined
   
   /**
     * The type of the resource.
     */
-  var resourceType: js.UndefOr[code] = js.native
+  var resourceType: js.UndefOr[code] = js.undefined
 }
 object ResourceBase {
   

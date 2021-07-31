@@ -2,111 +2,109 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceParameters extends StObject {
   
   /**
     * Amazon Elasticsearch Service parameters.
     */
-  var AmazonElasticsearchParameters: js.UndefOr[typings.awsSdk.quicksightMod.AmazonElasticsearchParameters] = js.native
+  var AmazonElasticsearchParameters: js.UndefOr[typings.awsSdk.quicksightMod.AmazonElasticsearchParameters] = js.undefined
   
   /**
     * Amazon Athena parameters.
     */
-  var AthenaParameters: js.UndefOr[typings.awsSdk.quicksightMod.AthenaParameters] = js.native
+  var AthenaParameters: js.UndefOr[typings.awsSdk.quicksightMod.AthenaParameters] = js.undefined
   
   /**
     * Amazon Aurora MySQL parameters.
     */
-  var AuroraParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraParameters] = js.native
+  var AuroraParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraParameters] = js.undefined
   
   /**
     * Aurora PostgreSQL parameters.
     */
-  var AuroraPostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraPostgreSqlParameters] = js.native
+  var AuroraPostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraPostgreSqlParameters] = js.undefined
   
   /**
     * AWS IoT Analytics parameters.
     */
-  var AwsIotAnalyticsParameters: js.UndefOr[typings.awsSdk.quicksightMod.AwsIotAnalyticsParameters] = js.native
+  var AwsIotAnalyticsParameters: js.UndefOr[typings.awsSdk.quicksightMod.AwsIotAnalyticsParameters] = js.undefined
   
   /**
     * Jira parameters.
     */
-  var JiraParameters: js.UndefOr[typings.awsSdk.quicksightMod.JiraParameters] = js.native
+  var JiraParameters: js.UndefOr[typings.awsSdk.quicksightMod.JiraParameters] = js.undefined
   
   /**
     * MariaDB parameters.
     */
-  var MariaDbParameters: js.UndefOr[typings.awsSdk.quicksightMod.MariaDbParameters] = js.native
+  var MariaDbParameters: js.UndefOr[typings.awsSdk.quicksightMod.MariaDbParameters] = js.undefined
   
   /**
     * MySQL parameters.
     */
-  var MySqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.MySqlParameters] = js.native
+  var MySqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.MySqlParameters] = js.undefined
   
   /**
     * Oracle parameters.
     */
-  var OracleParameters: js.UndefOr[typings.awsSdk.quicksightMod.OracleParameters] = js.native
+  var OracleParameters: js.UndefOr[typings.awsSdk.quicksightMod.OracleParameters] = js.undefined
   
   /**
     * PostgreSQL parameters.
     */
-  var PostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.PostgreSqlParameters] = js.native
+  var PostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.PostgreSqlParameters] = js.undefined
   
   /**
     * Presto parameters.
     */
-  var PrestoParameters: js.UndefOr[typings.awsSdk.quicksightMod.PrestoParameters] = js.native
+  var PrestoParameters: js.UndefOr[typings.awsSdk.quicksightMod.PrestoParameters] = js.undefined
   
   /**
     * Amazon RDS parameters.
     */
-  var RdsParameters: js.UndefOr[typings.awsSdk.quicksightMod.RdsParameters] = js.native
+  var RdsParameters: js.UndefOr[typings.awsSdk.quicksightMod.RdsParameters] = js.undefined
   
   /**
     * Amazon Redshift parameters.
     */
-  var RedshiftParameters: js.UndefOr[typings.awsSdk.quicksightMod.RedshiftParameters] = js.native
+  var RedshiftParameters: js.UndefOr[typings.awsSdk.quicksightMod.RedshiftParameters] = js.undefined
   
   /**
     * S3 parameters.
     */
-  var S3Parameters: js.UndefOr[typings.awsSdk.quicksightMod.S3Parameters] = js.native
+  var S3Parameters: js.UndefOr[typings.awsSdk.quicksightMod.S3Parameters] = js.undefined
   
   /**
     * ServiceNow parameters.
     */
-  var ServiceNowParameters: js.UndefOr[typings.awsSdk.quicksightMod.ServiceNowParameters] = js.native
+  var ServiceNowParameters: js.UndefOr[typings.awsSdk.quicksightMod.ServiceNowParameters] = js.undefined
   
   /**
     * Snowflake parameters.
     */
-  var SnowflakeParameters: js.UndefOr[typings.awsSdk.quicksightMod.SnowflakeParameters] = js.native
+  var SnowflakeParameters: js.UndefOr[typings.awsSdk.quicksightMod.SnowflakeParameters] = js.undefined
   
   /**
     * Spark parameters.
     */
-  var SparkParameters: js.UndefOr[typings.awsSdk.quicksightMod.SparkParameters] = js.native
+  var SparkParameters: js.UndefOr[typings.awsSdk.quicksightMod.SparkParameters] = js.undefined
   
   /**
     * SQL Server parameters.
     */
-  var SqlServerParameters: js.UndefOr[typings.awsSdk.quicksightMod.SqlServerParameters] = js.native
+  var SqlServerParameters: js.UndefOr[typings.awsSdk.quicksightMod.SqlServerParameters] = js.undefined
   
   /**
     * Teradata parameters.
     */
-  var TeradataParameters: js.UndefOr[typings.awsSdk.quicksightMod.TeradataParameters] = js.native
+  var TeradataParameters: js.UndefOr[typings.awsSdk.quicksightMod.TeradataParameters] = js.undefined
   
   /**
     * Twitter parameters.
     */
-  var TwitterParameters: js.UndefOr[typings.awsSdk.quicksightMod.TwitterParameters] = js.native
+  var TwitterParameters: js.UndefOr[typings.awsSdk.quicksightMod.TwitterParameters] = js.undefined
 }
 object DataSourceParameters {
   

@@ -5,19 +5,17 @@ import typings.angular.mod.IPromise
 import typings.angularPermission.mod.permission.PermissionRedirectConfigation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Except extends StObject {
     
-    var except: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[_]] = js.native
+    var except: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]] = js.undefined
     
-    var only: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[_]] = js.native
+    var only: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]] = js.undefined
     
-    var redirectTo: String | (js.Function0[PermissionRedirectConfigation | String]) | StringDictionary[PermissionRedirectConfigation] = js.native
+    var redirectTo: String | (js.Function0[PermissionRedirectConfigation | String]) | StringDictionary[PermissionRedirectConfigation]
   }
   object Except {
     
@@ -33,7 +31,7 @@ object anon {
     implicit class ExceptMutableBuilder[Self <: Except] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExcept(value: js.Function0[Unit] | String | js.Array[String] | IPromise[_]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      def setExcept(value: js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExceptFunction0(value: () => Unit): Self = StObject.set(x, "except", js.Any.fromFunction0(value))
@@ -45,7 +43,7 @@ object anon {
       def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
       
       @scala.inline
-      def setOnly(value: js.Function0[Unit] | String | js.Array[String] | IPromise[_]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      def setOnly(value: js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnlyFunction0(value: () => Unit): Self = StObject.set(x, "only", js.Any.fromFunction0(value))

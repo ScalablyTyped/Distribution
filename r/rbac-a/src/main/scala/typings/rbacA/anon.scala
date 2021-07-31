@@ -5,17 +5,15 @@ import typings.rbacA.mod.AttributesManager
 import typings.rbacA.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes[P /* <: Provider */, AM /* <: AttributesManager */] extends StObject {
     
-    var attributes: js.UndefOr[AM] = js.native
+    var attributes: js.UndefOr[AM] = js.undefined
     
-    var provider: P = js.native
+    var provider: P
   }
   object Attributes {
     
@@ -26,7 +24,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes[_, _], P /* <: Provider */, AM /* <: AttributesManager */] (val x: Self with (Attributes[P, AM])) extends AnyVal {
+    implicit class AttributesMutableBuilder[Self <: Attributes[?, ?], P /* <: Provider */, AM /* <: AttributesManager */] (val x: Self & (Attributes[P, AM])) extends AnyVal {
       
       @scala.inline
       def setAttributes(value: AM): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
@@ -41,5 +39,6 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* roles */ js.Object, Provider]
+    extends StObject
+       with Instantiable1[/* roles */ js.Object, Provider]
 }

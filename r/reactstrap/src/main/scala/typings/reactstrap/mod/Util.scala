@@ -2,12 +2,14 @@ package typings.reactstrap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Util {
   
-  @JSImport("reactstrap/lib", "Util.setGlobalCssModule")
+  @JSImport("reactstrap/lib", "Util")
   @js.native
-  def setGlobalCssModule(cssModule: CSSModule): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def setGlobalCssModule(cssModule: CSSModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalCssModule")(cssModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

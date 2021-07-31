@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/alpha", "deploymentmanager_alpha.Resource$Compositetypes")
@@ -31,7 +30,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceCompositetypesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceCompositetypesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCompositeType] = js.native
   def get(callback: BodyResponseCallback[SchemaCompositeType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompositeType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCompositeType] = js.native
   def get(params: ParamsResourceCompositetypesGet): GaxiosPromise[SchemaCompositeType] = js.native
   def get(params: ParamsResourceCompositetypesGet, callback: BodyResponseCallback[SchemaCompositeType]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceCompositetypesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceCompositetypesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -124,7 +123,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCompositeTypesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCompositeTypesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompositeTypesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCompositeTypesListResponse] = js.native
   def list(params: ParamsResourceCompositetypesList): GaxiosPromise[SchemaCompositeTypesListResponse] = js.native
   def list(
     params: ParamsResourceCompositetypesList,
@@ -158,7 +157,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceCompositetypesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceCompositetypesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -189,7 +188,7 @@ class ResourceCompositetypes protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceCompositetypesUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceCompositetypesUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

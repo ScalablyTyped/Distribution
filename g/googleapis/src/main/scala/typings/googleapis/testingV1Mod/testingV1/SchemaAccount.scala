@@ -2,19 +2,17 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies an account and how to log into it.
   */
-@js.native
 trait SchemaAccount extends StObject {
   
   /**
     * An automatic google login account.
     */
-  var googleAuto: js.UndefOr[SchemaGoogleAuto] = js.native
+  var googleAuto: js.UndefOr[SchemaGoogleAuto] = js.undefined
 }
 object SchemaAccount {
   

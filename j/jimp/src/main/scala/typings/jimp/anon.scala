@@ -11,19 +11,17 @@ import typings.jimp.mod.ListenableName
 import typings.jimp.mod.ListenerData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlignmentX extends StObject {
     
-    var alignmentX: Double = js.native
+    var alignmentX: Double
     
-    var alignmentY: Double = js.native
+    var alignmentY: Double
     
-    var text: String = js.native
+    var text: String
   }
   object AlignmentX {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoGreyscale extends StObject {
     
-    var autoGreyscale: js.UndefOr[Boolean] = js.native
+    var autoGreyscale: js.UndefOr[Boolean] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var replace: js.UndefOr[Double] = js.native
+    var replace: js.UndefOr[Double] = js.undefined
   }
   object AutoGreyscale {
     
@@ -84,14 +81,13 @@ object anon {
     }
   }
   
-  @js.native
   trait B extends StObject {
     
-    var b: js.Array[Double] = js.native
+    var b: js.Array[Double]
     
-    var g: js.Array[Double] = js.native
+    var g: js.Array[Double]
     
-    var r: js.Array[Double] = js.native
+    var r: js.Array[Double]
   }
   object B {
     
@@ -124,16 +120,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CropOnlyFrames extends StObject {
     
-    var cropOnlyFrames: js.UndefOr[Boolean] = js.native
+    var cropOnlyFrames: js.UndefOr[Boolean] = js.undefined
     
-    var cropSymmetric: js.UndefOr[Boolean] = js.native
+    var cropSymmetric: js.UndefOr[Boolean] = js.undefined
     
-    var leaveBorder: js.UndefOr[Double] = js.native
+    var leaveBorder: js.UndefOr[Double] = js.undefined
     
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object CropOnlyFrames {
     
@@ -172,14 +167,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey[T /* <: ListenableName */]
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with ListenerData[T] {
     
-    var eventName: `before-change` | changed = js.native
+    var eventName: `before-change` | changed
     
-    var methodName: T = js.native
+    var methodName: T
   }
   object Dictkey {
     
@@ -190,7 +185,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey[_], T /* <: ListenableName */] (val x: Self with Dictkey[T]) extends AnyVal {
+    implicit class DictkeyMutableBuilder[Self <: Dictkey[?], T /* <: ListenableName */] (val x: Self & Dictkey[T]) extends AnyVal {
       
       @scala.inline
       def setEventName(value: `before-change` | changed): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
@@ -200,12 +195,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait EventName[T /* <: ListenableName */] extends ListenerData[T] {
+  trait EventName[T /* <: ListenableName */]
+    extends StObject
+       with ListenerData[T] {
     
-    var eventName: T = js.native
+    var eventName: T
     
-    var methodName: clone | ChangeName | constructor = js.native
+    var methodName: clone | ChangeName | constructor
   }
   object EventName {
     
@@ -216,7 +212,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EventNameMutableBuilder[Self <: EventName[_], T /* <: ListenableName */] (val x: Self with EventName[T]) extends AnyVal {
+    implicit class EventNameMutableBuilder[Self <: EventName[?], T /* <: ListenableName */] (val x: Self & EventName[T]) extends AnyVal {
       
       @scala.inline
       def setEventName(value: T): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
@@ -226,16 +222,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Idx extends StObject {
     
-    var idx: Double = js.native
+    var idx: Double
     
-    var image: DepreciatedJimp = js.native
+    var image: DepreciatedJimp
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Idx {
     
@@ -262,12 +257,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var image: DepreciatedJimp = js.native
+    var image: DepreciatedJimp
     
-    var percent: Double = js.native
+    var percent: Double
   }
   object Image {
     
@@ -288,16 +282,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Opacity extends StObject {
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Opacity {
     
@@ -336,10 +329,9 @@ object anon {
     }
   }
   
-  @js.native
   trait R extends StObject {
     
-    var r: Double = js.native
+    var r: Double
   }
   object R {
     
@@ -357,14 +349,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Radius extends StObject {
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Radius {
     
@@ -388,12 +379,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

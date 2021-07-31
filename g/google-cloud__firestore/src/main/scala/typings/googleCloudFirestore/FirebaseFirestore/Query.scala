@@ -4,7 +4,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to end at.
     * @return The created Query.
     */
-  def endAt(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def endAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   /**
     * Creates and returns a new Query that ends before the provided fields
@@ -50,7 +49,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to end before.
     * @return The created Query.
     */
-  def endBefore(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def endBefore(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   /**
     * The `Firestore` for the Firestore database (useful for performing
@@ -180,7 +179,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to start after.
     * @return The created Query.
     */
-  def startAfter(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def startAfter(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   /**
     * Creates and returns a new Query that starts at the provided fields
@@ -201,7 +200,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to start after.
     * @return The created Query.
     */
-  def startAt(snapshot: DocumentSnapshot[_]): Query[T] = js.native
+  def startAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
   
   /*
     * Executes the query and returns the results as Node Stream.

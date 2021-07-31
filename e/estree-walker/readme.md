@@ -10,9 +10,9 @@ Traverse an ESTree-compliant AST
 | ------------------ | :-------------: |
 | Full name          | estree-walker |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 143 |
-| # downloads        | 78744071 |
+| # releases         | 10 |
+| # dependents       | 176 |
+| # downloads        | 130598829 |
 | # stars            | 1 |
 
 ## Links

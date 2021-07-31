@@ -3,17 +3,15 @@ package typings.storybookAddons.typesMod
 import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientStoryApi[StoryFnReturnType] extends StObject {
   
-  def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType] = js.native
+  def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType]
   
-  def addParameters(parameter: Parameters): StoryApi[StoryFnReturnType] = js.native
+  def addParameters(parameter: Parameters): StoryApi[StoryFnReturnType]
   
-  def storiesOf(kind: StoryKind, module: NodeModule): StoryApi[StoryFnReturnType] = js.native
+  def storiesOf(kind: StoryKind, module: NodeModule): StoryApi[StoryFnReturnType]
 }
 object ClientStoryApi {
   
@@ -28,7 +26,7 @@ object ClientStoryApi {
   }
   
   @scala.inline
-  implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[_], StoryFnReturnType] (val x: Self with ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+  implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
     
     @scala.inline
     def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))

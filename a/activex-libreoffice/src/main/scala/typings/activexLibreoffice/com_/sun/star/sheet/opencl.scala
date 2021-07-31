@@ -5,22 +5,20 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opencl {
   
-  @js.native
   trait OpenCLDevice extends StObject {
     
     /** The driver version as returned by OpenCL */
-    var Driver: String = js.native
+    var Driver: String
     
     /** The name of the device as returned by OpenCL */
-    var Name: String = js.native
+    var Name: String
     
     /** The vendor of the device as returned by OpenCL */
-    var Vendor: String = js.native
+    var Vendor: String
   }
   object OpenCLDevice {
     
@@ -44,15 +42,14 @@ object opencl {
     }
   }
   
-  @js.native
   trait OpenCLPlatform extends StObject {
     
-    var Devices: SafeArray[OpenCLDevice] = js.native
+    var Devices: SafeArray[OpenCLDevice]
     
     /** The name of the platform as returned by OpenCL */
-    var Name: String = js.native
+    var Name: String
     
-    var Vendor: String = js.native
+    var Vendor: String
   }
   object OpenCLPlatform {
     
@@ -76,77 +73,78 @@ object opencl {
     }
   }
   
-  @js.native
-  trait XOpenCLSelection extends XInterface {
+  trait XOpenCLSelection
+    extends StObject
+       with XInterface {
     
     /**
       * returns the index of the currently selected device. This is an index into the sequence of devices in the OpenCLPLatform object the device is part of
       * in the current instance of LibreOffice (and not some a priori defined identifier for a specific model of device accessed through a specific platform).
       */
-    val DeviceID: Double = js.native
+    val DeviceID: Double
     
-    var FormulaCellNumberLimit: Double = js.native
+    var FormulaCellNumberLimit: Double
     
     /** lists all OpenCL devices and platforms */
-    val OpenCLPlatforms: SafeArray[OpenCLPlatform] = js.native
+    val OpenCLPlatforms: SafeArray[OpenCLPlatform]
     
     /**
       * returns the index of the platform of the currently selected device. This is an index into the sequence that getOpenCLPlatforms returns in the current
       * instance of LibreOffice (and not some a priori defined identifier for an OpenCL platform).
       */
-    val PlatformID: Double = js.native
+    val PlatformID: Double
     
     /** Disables automatic OpenCL Device Selection */
-    def disableAutomaticDeviceSelection(): Unit = js.native
+    def disableAutomaticDeviceSelection(): Unit
     
-    def disableOpcodeSubsetTest(): Unit = js.native
+    def disableOpcodeSubsetTest(): Unit
     
     /**
       * Enables automatic OpenCL Device Selection
       * @param force forces a new evaluation of the best device
       */
-    def enableAutomaticDeviceSelection(force: Boolean): Unit = js.native
+    def enableAutomaticDeviceSelection(force: Boolean): Unit
     
-    def enableOpcodeSubsetTest(): Unit = js.native
+    def enableOpcodeSubsetTest(): Unit
     
     /**
       * Enables or disables use of OpenCL for calculations. When using this API to enable OpenCL the configuration parameters are set to their built-in
       * default values, not ones read from the installation of user-specific configuration.
       */
-    def enableOpenCL(enable: Boolean): Unit = js.native
+    def enableOpenCL(enable: Boolean): Unit
     
     /**
       * returns the index of the currently selected device. This is an index into the sequence of devices in the OpenCLPLatform object the device is part of
       * in the current instance of LibreOffice (and not some a priori defined identifier for a specific model of device accessed through a specific platform).
       */
-    def getDeviceID(): Double = js.native
+    def getDeviceID(): Double
     
-    def getFormulaCellNumberLimit(): Double = js.native
+    def getFormulaCellNumberLimit(): Double
     
     /** lists all OpenCL devices and platforms */
-    def getOpenCLPlatforms(): SafeArray[OpenCLPlatform] = js.native
+    def getOpenCLPlatforms(): SafeArray[OpenCLPlatform]
     
     /**
       * returns the index of the platform of the currently selected device. This is an index into the sequence that getOpenCLPlatforms returns in the current
       * instance of LibreOffice (and not some a priori defined identifier for an OpenCL platform).
       */
-    def getPlatformID(): Double = js.native
+    def getPlatformID(): Double
     
-    def isOpcodeSubsetTested(): Boolean = js.native
+    def isOpcodeSubsetTested(): Boolean
     
     /**
       * Returns true if calculation with OpenCL is enabled (at all). The actual use of OpenCL for a formula is also affected by the configuration settings
       * specifying whether OpenCL is used for all opcodes or just for a subset, and the black- and whitelists of OpenCL implementations that are in use.
       */
-    def isOpenCLEnabled(): Boolean = js.native
+    def isOpenCLEnabled(): Boolean
     
     /**
       * Select the OpenCL device with the given platform and device number. The platform number corresponds to an index into the sequence returned by
       * getOpenCLPlatforms, and the device number corresponds to an index into the sequence of devices in that platform.
       */
-    def selectOpenCLDevice(platform: Double, device: Double): Unit = js.native
+    def selectOpenCLDevice(platform: Double, device: Double): Unit
     
-    def setFormulaCellNumberLimit(number: Double): Unit = js.native
+    def setFormulaCellNumberLimit(number: Double): Unit
   }
   object XOpenCLSelection {
     

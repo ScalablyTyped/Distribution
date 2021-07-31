@@ -4,14 +4,16 @@ import typings.nwmatcher.anon.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(global: Document): Matcher = ^.asInstanceOf[js.Dynamic].apply(global.asInstanceOf[js.Any]).asInstanceOf[Matcher]
+  
   @JSImport("nwmatcher", JSImport.Namespace)
   @js.native
-  def apply(global: Document): Matcher = js.native
+  val ^ : js.Any = js.native
   
   object global {
     
@@ -51,11 +53,7 @@ object mod {
     def `match`(element: Element, selector: String, context: Element): Boolean = js.native
     
     def select(selector: String): js.Array[Element] = js.native
-    def select(
-      selector: String,
-      context: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* element */ Element, Unit]
-    ): js.Array[Element] = js.native
+    def select(selector: String, context: Unit, callback: js.Function1[/* element */ Element, Unit]): js.Array[Element] = js.native
     def select(selector: String, context: Element): js.Array[Element] = js.native
     def select(selector: String, context: Element, callback: js.Function1[/* element */ Element, Unit]): js.Array[Element] = js.native
   }

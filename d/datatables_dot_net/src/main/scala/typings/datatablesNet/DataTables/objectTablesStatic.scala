@@ -2,21 +2,19 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait objectTablesStatic extends StObject {
   
   /**
     * Return a DataTables API instance for the selected tables (true) or an array (false).
     */
-  var api: Boolean = js.native
+  var api: Boolean
   
   /**
     * Get only visible tables (true) or all tables regardless of visibility (false).
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object objectTablesStatic {
   

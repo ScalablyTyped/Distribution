@@ -4,29 +4,29 @@ import typings.awsSdkClientCognitoIdentityBrowser.outputTypesUnionMod.OutputType
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetOpenIdTokenForDeveloperIdentityOutputMod {
   
-  @js.native
-  trait GetOpenIdTokenForDeveloperIdentityOutput extends OutputTypesUnion {
+  trait GetOpenIdTokenForDeveloperIdentityOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An OpenID token.</p>
       */
-    var Token: js.UndefOr[String] = js.native
+    var Token: js.UndefOr[String] = js.undefined
   }
   object GetOpenIdTokenForDeveloperIdentityOutput {
     

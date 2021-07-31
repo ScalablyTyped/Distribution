@@ -4,42 +4,40 @@ import typings.octokitTypes.octokitTypesStrings.closed
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsUpdateEndpoint extends StObject {
   
   /**
     * The name of the branch you want your changes pulled into. This should be an existing branch on the current repository. You cannot update the base branch on a pull request to point to another repository.
     */
-  var base: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.undefined
   
   /**
     * The contents of the pull request.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether [maintainers can modify](https://docs.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
     */
-  var maintainer_can_modify: js.UndefOr[Boolean] = js.native
+  var maintainer_can_modify: js.UndefOr[Boolean] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * State of this Pull Request. Either `open` or `closed`.
     */
-  var state: js.UndefOr[open | closed] = js.native
+  var state: js.UndefOr[open | closed] = js.undefined
   
   /**
     * The title of the pull request.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PullsUpdateEndpoint {
   

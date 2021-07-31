@@ -10,9 +10,9 @@ Promise-based cache library for browser using local storage.
 | ------------------ | :-------------: |
 | Full name          | @algolia/cache-browser-local-storage |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 3 |
-| # downloads        | 4067034 |
+| # releases         | 38 |
+| # dependents       | 4 |
+| # downloads        | 6726909 |
 | # stars            | 0 |
 
 ## Links

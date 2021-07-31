@@ -3,22 +3,22 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RestType extends Type_ {
+trait RestType
+  extends StObject
+     with Type_ {
   
-  var expression: js.UndefOr[Type_] = js.native
+  var expression: js.UndefOr[Type_] = js.undefined
   
-  var `type`: typings.doctrine.doctrineStrings.RestType = js.native
+  var `type`: typings.doctrine.doctrineStrings.RestType
 }
 object RestType {
   
   @scala.inline
-  def apply(`type`: typings.doctrine.doctrineStrings.RestType): RestType = {
+  def apply(): RestType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RestType")
     __obj.asInstanceOf[RestType]
   }
   

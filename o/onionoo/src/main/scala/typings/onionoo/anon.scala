@@ -17,17 +17,15 @@ import typings.onionoo.onionooStrings.uptime
 import typings.onionoo.onionooStrings.weights
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accept extends StObject {
     
-    var accept: js.UndefOr[js.Array[String]] = js.native
+    var accept: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reject: js.UndefOr[js.Array[String]] = js.native
+    var reject: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Accept {
     
@@ -103,18 +101,17 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<'1_week' | '1_month' | '6_months' | '1_year' | '5_years', onionoo.onionoo.Onionoo.Histogram>> */
-  @js.native
   trait PartialRecord1week1month6 extends StObject {
     
-    var `1_month`: js.UndefOr[Histogram] = js.native
+    var `1_month`: js.UndefOr[Histogram] = js.undefined
     
-    var `1_week`: js.UndefOr[Histogram] = js.native
+    var `1_week`: js.UndefOr[Histogram] = js.undefined
     
-    var `1_year`: js.UndefOr[Histogram] = js.native
+    var `1_year`: js.UndefOr[Histogram] = js.undefined
     
-    var `5_years`: js.UndefOr[Histogram] = js.native
+    var `5_years`: js.UndefOr[Histogram] = js.undefined
     
-    var `6_months`: js.UndefOr[Histogram] = js.native
+    var `6_months`: js.UndefOr[Histogram] = js.undefined
   }
   object PartialRecord1week1month6 {
     
@@ -160,20 +157,19 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<'3_days' | '1_week' | '1_month' | '6_months' | '1_year' | '5_years', onionoo.onionoo.Onionoo.Histogram>> */
-  @js.native
   trait PartialRecord3days1week1m extends StObject {
     
-    var `1_month`: js.UndefOr[Histogram] = js.native
+    var `1_month`: js.UndefOr[Histogram] = js.undefined
     
-    var `1_week`: js.UndefOr[Histogram] = js.native
+    var `1_week`: js.UndefOr[Histogram] = js.undefined
     
-    var `1_year`: js.UndefOr[Histogram] = js.native
+    var `1_year`: js.UndefOr[Histogram] = js.undefined
     
-    var `3_days`: js.UndefOr[Histogram] = js.native
+    var `3_days`: js.UndefOr[Histogram] = js.undefined
     
-    var `5_years`: js.UndefOr[Histogram] = js.native
+    var `5_years`: js.UndefOr[Histogram] = js.undefined
     
-    var `6_months`: js.UndefOr[Histogram] = js.native
+    var `6_months`: js.UndefOr[Histogram] = js.undefined
   }
   object PartialRecord3days1week1m {
     
@@ -225,14 +221,13 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<'6_months' | '1_year' | '5_years', onionoo.onionoo.Onionoo.Histogram>> */
-  @js.native
   trait PartialRecord6months1year extends StObject {
     
-    var `1_year`: js.UndefOr[Histogram] = js.native
+    var `1_year`: js.UndefOr[Histogram] = js.undefined
     
-    var `5_years`: js.UndefOr[Histogram] = js.native
+    var `5_years`: js.UndefOr[Histogram] = js.undefined
     
-    var `6_months`: js.UndefOr[Histogram] = js.native
+    var `6_months`: js.UndefOr[Histogram] = js.undefined
   }
   object PartialRecord6months1year {
     

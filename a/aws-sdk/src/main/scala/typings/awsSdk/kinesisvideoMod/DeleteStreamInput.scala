@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteStreamInput extends StObject {
   
   /**
     * Optional: The version of the stream that you want to delete.  Specify the version as a safeguard to ensure that your are deleting the correct stream. To get the stream version, use the DescribeStream API. If not specified, only the CreationTime is checked before deleting the stream.
     */
-  var CurrentVersion: js.UndefOr[Version] = js.native
+  var CurrentVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the stream that you want to delete. 
     */
-  var StreamARN: ResourceARN = js.native
+  var StreamARN: ResourceARN
 }
 object DeleteStreamInput {
   

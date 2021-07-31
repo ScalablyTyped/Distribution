@@ -3,13 +3,11 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a beacon device.
   */
-@js.native
 trait SchemaBeacon extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaBeacon extends StObject {
     * Eddystone-UID that identifies the beacon and links it to its attachments.
     * The stable Eddystone-UID is only used for administering the beacon.
     */
-  var advertisedId: js.UndefOr[SchemaAdvertisedId] = js.native
+  var advertisedId: js.UndefOr[SchemaAdvertisedId] = js.undefined
   
   /**
     * Resource name of this beacon. A beacon name has the format
@@ -30,13 +28,13 @@ trait SchemaBeacon extends StObject {
     * AltBeacon.  This field must be left empty when registering. After reading
     * a beacon, clients can use the name for future operations.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * Free text used to identify and describe the beacon. Maximum length 140
     * characters. Optional.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Write-only registration parameters for beacons using Eddystone-EID
@@ -45,19 +43,19 @@ trait SchemaBeacon extends StObject {
     * `advertised_id` field must contain an ID of type Eddystone-UID. Any other
     * ID type will result in an error.
     */
-  var ephemeralIdRegistration: js.UndefOr[SchemaEphemeralIdRegistration] = js.native
+  var ephemeralIdRegistration: js.UndefOr[SchemaEphemeralIdRegistration] = js.undefined
   
   /**
     * Expected location stability. This is set when the beacon is registered or
     * updated, not automatically detected in any way. Optional.
     */
-  var expectedStability: js.UndefOr[String] = js.native
+  var expectedStability: js.UndefOr[String] = js.undefined
   
   /**
     * The indoor level information for this beacon, if known. As returned by
     * the Google Maps API. Optional.
     */
-  var indoorLevel: js.UndefOr[SchemaIndoorLevel] = js.native
+  var indoorLevel: js.UndefOr[SchemaIndoorLevel] = js.undefined
   
   /**
     * The location of the beacon, expressed as a latitude and longitude pair.
@@ -65,20 +63,20 @@ trait SchemaBeacon extends StObject {
     * not necessarily indicate the actual current location of the beacon.
     * Optional.
     */
-  var latLng: js.UndefOr[SchemaLatLng] = js.native
+  var latLng: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * The [Google Places API](/places/place-id) Place ID of the place where the
     * beacon is deployed. This is given when the beacon is registered or
     * updated, not automatically detected in any way. Optional.
     */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /**
     * Properties of the beacon device, for example battery type or firmware
     * version. Optional.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Some beacons may require a user to provide an authorization key before
@@ -91,12 +89,12 @@ trait SchemaBeacon extends StObject {
     * authorized to configure the beacon. Note that this key grants nothing on
     * the service, only on the beacon itself.
     */
-  var provisioningKey: js.UndefOr[String] = js.native
+  var provisioningKey: js.UndefOr[String] = js.undefined
   
   /**
     * Current status of the beacon. Required.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaBeacon {
   

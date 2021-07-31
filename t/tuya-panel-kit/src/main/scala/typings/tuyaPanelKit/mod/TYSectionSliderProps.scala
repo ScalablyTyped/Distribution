@@ -16,96 +16,94 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.text
 import typings.tuyaPanelKit.tuyaPanelKitStrings.timing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.SliderProps, 'theme'> */
-@js.native
 trait TYSectionSliderProps extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.native
+  var Action: js.UndefOr[js.Any] = js.undefined
   
-  var Icon: js.UndefOr[js.Any] = js.native
+  var Icon: js.UndefOr[js.Any] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var actionType: js.UndefOr[auto | image | iconfont | text] = js.native
+  var actionType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
-  var animateTransitions: js.UndefOr[Boolean] = js.native
+  var animateTransitions: js.UndefOr[Boolean] = js.undefined
   
-  var animationConfig: js.UndefOr[Duration] = js.native
+  var animationConfig: js.UndefOr[Duration] = js.undefined
   
-  var animationType: js.UndefOr[spring | timing] = js.native
+  var animationType: js.UndefOr[spring | timing] = js.undefined
   
-  var canTouchTrack: js.UndefOr[Boolean] = js.native
+  var canTouchTrack: js.UndefOr[Boolean] = js.undefined
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var debugTouchArea: js.UndefOr[Boolean] = js.native
+  var debugTouchArea: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var iconType: js.UndefOr[auto | image | iconfont | text] = js.native
+  var iconType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
-  var imageFollowIconColor: js.UndefOr[Boolean] = js.native
+  var imageFollowIconColor: js.UndefOr[Boolean] = js.undefined
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var maximumValue: js.UndefOr[Double] = js.native
+  var maximumValue: js.UndefOr[Double] = js.undefined
   
-  var minimumTrackTintColor: js.UndefOr[String] = js.native
+  var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var minimumValue: js.UndefOr[Double] = js.native
+  var minimumValue: js.UndefOr[Double] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* x */ Double, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* x */ Double, Unit]] = js.undefined
   
-  var onScrollEvent: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onScrollEvent: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var onSlidingComplete: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.native
+  var onSlidingComplete: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
   
-  var onSlidingStart: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.native
+  var onSlidingStart: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
   
-  var onlyMaximumTrack: js.UndefOr[Boolean] = js.native
+  var onlyMaximumTrack: js.UndefOr[Boolean] = js.undefined
   
-  var renderMaximumTrack: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var renderMaximumTrack: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
-  var renderMinimumTrack: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var renderMinimumTrack: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
-  var renderThumb: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var renderThumb: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
-  var reverseValue: js.UndefOr[Boolean] = js.native
+  var reverseValue: js.UndefOr[Boolean] = js.undefined
   
-  var sliderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var sliderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var stepValue: js.UndefOr[Double] = js.native
+  var stepValue: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var styles: js.UndefOr[DebugThumbTouchArea] = js.native
+  var styles: js.UndefOr[DebugThumbTouchArea] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: CellRadius = js.native
+  var theme: CellRadius
   
-  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbTouchSize: js.UndefOr[Height] = js.native
+  var thumbTouchSize: js.UndefOr[Height] = js.undefined
   
-  var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var useART: js.UndefOr[Boolean] = js.native
+  var useART: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object TYSectionSliderProps {
   

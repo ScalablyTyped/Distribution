@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsInformationProtectionApp extends StObject {
   
   // If true, app is denied protection or exemption.
-  var denied: js.UndefOr[Boolean] = js.native
+  var denied: js.UndefOr[Boolean] = js.undefined
   
   // The app's description.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // App display name.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // The product name.
-  var productName: js.UndefOr[NullableOption[String]] = js.native
+  var productName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The publisher name
-  var publisherName: js.UndefOr[NullableOption[String]] = js.native
+  var publisherName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsInformationProtectionApp {
   

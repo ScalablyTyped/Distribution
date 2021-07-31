@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClustersRequest extends StObject {
   
   /**
     * One or more filters to limit the items returned in the response. Use the clusterIds filter to return only the specified clusters. Specify clusters by their cluster identifier (ID). Use the vpcIds filter to return only the clusters in the specified virtual private clouds (VPCs). Specify VPCs by their VPC identifier (ID). Use the states filter to return only clusters that match the specified state.
     */
-  var Filters: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Filters] = js.native
+  var Filters: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Filters] = js.undefined
   
   /**
     * The maximum number of clusters to return in the response. When there are more clusters than the number you specify, the response contains a NextToken value.
     */
-  var MaxResults: js.UndefOr[ClustersMaxSize] = js.native
+  var MaxResults: js.UndefOr[ClustersMaxSize] = js.undefined
   
   /**
     * The NextToken value that you received in the previous response. Use this value to get more clusters.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.undefined
 }
 object DescribeClustersRequest {
   

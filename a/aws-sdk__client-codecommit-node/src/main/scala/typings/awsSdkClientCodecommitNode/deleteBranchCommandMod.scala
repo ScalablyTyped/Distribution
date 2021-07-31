@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesDeleteBranchInputMod.DeleteBranch
 import typings.awsSdkClientCodecommitNode.typesDeleteBranchOutputMod.DeleteBranchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteBranchCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteBranchCommand", "DeleteBranchCommand")
   @js.native
-  class DeleteBranchCommand protected () extends Command[
+  class DeleteBranchCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DeleteBranchInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object deleteBranchCommandMod {
         ] {
     def this(input: DeleteBranchInput) = this()
     
+    /* CompleteClass */
+    override val input: DeleteBranchInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteBranchInput, DeleteBranchOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[DeleteBranchInput, DeleteBranchOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[DeleteBranchInput, DeleteBranchOutput] = js.native
   }
 }

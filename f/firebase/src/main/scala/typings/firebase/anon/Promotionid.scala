@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.mod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Promotionid
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var items: js.UndefOr[js.Array[Item]] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var promotion_id: js.UndefOr[String] = js.native
+  var promotion_id: js.UndefOr[String] = js.undefined
   
-  var promotion_name: js.UndefOr[String] = js.native
+  var promotion_name: js.UndefOr[String] = js.undefined
 }
 object Promotionid {
   

@@ -4,97 +4,95 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRun extends StObject {
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildConfiguration: BuildConfiguration = js.native
+  var buildConfiguration: BuildConfiguration
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: Date = js.native
+  var completedDate: Date
   
-  var controller: String = js.native
+  var controller: String
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var customFields: js.Array[CustomTestField] = js.native
+  var customFields: js.Array[CustomTestField]
   
-  var dropLocation: String = js.native
+  var dropLocation: String
   
-  var dtlAutEnvironment: ShallowReference = js.native
+  var dtlAutEnvironment: ShallowReference
   
-  var dtlEnvironment: ShallowReference = js.native
+  var dtlEnvironment: ShallowReference
   
-  var dtlEnvironmentCreationDetails: DtlEnvironmentDetails = js.native
+  var dtlEnvironmentCreationDetails: DtlEnvironmentDetails
   
-  var dueDate: Date = js.native
+  var dueDate: Date
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var filter: RunFilter = js.native
+  var filter: RunFilter
   
-  var id: Double = js.native
+  var id: Double
   
-  var incompleteTests: Double = js.native
+  var incompleteTests: Double
   
-  var isAutomated: Boolean = js.native
+  var isAutomated: Boolean
   
-  var iteration: String = js.native
+  var iteration: String
   
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
-  var name: String = js.native
+  var name: String
   
-  var notApplicableTests: Double = js.native
+  var notApplicableTests: Double
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var passedTests: Double = js.native
+  var passedTests: Double
   
-  var phase: String = js.native
+  var phase: String
   
-  var plan: ShallowReference = js.native
+  var plan: ShallowReference
   
-  var postProcessState: String = js.native
+  var postProcessState: String
   
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
-  var release: ReleaseReference = js.native
+  var release: ReleaseReference
   
-  var releaseEnvironmentUri: String = js.native
+  var releaseEnvironmentUri: String
   
-  var releaseUri: String = js.native
+  var releaseUri: String
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var runStatistics: js.Array[RunStatistic] = js.native
+  var runStatistics: js.Array[RunStatistic]
   
-  var startedDate: Date = js.native
+  var startedDate: Date
   
-  var state: String = js.native
+  var state: String
   
-  var substate: TestRunSubstate = js.native
+  var substate: TestRunSubstate
   
-  var testEnvironment: TestEnvironment = js.native
+  var testEnvironment: TestEnvironment
   
-  var testMessageLogId: Double = js.native
+  var testMessageLogId: Double
   
-  var testSettings: ShallowReference = js.native
+  var testSettings: ShallowReference
   
-  var totalTests: Double = js.native
+  var totalTests: Double
   
-  var unanalyzedTests: Double = js.native
+  var unanalyzedTests: Double
   
-  var url: String = js.native
+  var url: String
   
-  var webAccessUrl: String = js.native
+  var webAccessUrl: String
 }
 object TestRun {
   

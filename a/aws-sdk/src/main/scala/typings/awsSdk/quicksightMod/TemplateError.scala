@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateError extends StObject {
   
   /**
     * Description of the error type.
     */
-  var Message: js.UndefOr[NonEmptyString] = js.native
+  var Message: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Type of error.
     */
-  var Type: js.UndefOr[TemplateErrorType] = js.native
+  var Type: js.UndefOr[TemplateErrorType] = js.undefined
 }
 object TemplateError {
   

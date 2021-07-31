@@ -3,26 +3,24 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserFeedback extends StObject {
   
   /**
     * The rating provided by the user of this endpoint about the quality of this Session. Possible values are: notRated, bad,
     * poor, fair, good, excellent, unknownFutureValue.
     */
-  var rating: js.UndefOr[UserFeedbackRating] = js.native
+  var rating: js.UndefOr[UserFeedbackRating] = js.undefined
   
   // The feedback text provided by the user of this endpoint for the session.
-  var text: js.UndefOr[NullableOption[String]] = js.native
+  var text: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The set of feedback tokens provided by the user of this endpoint for the session. This is a set of Boolean properties.
     * The property names should not be relied upon since they may change depending on what tokens are offered to the user.
     */
-  var tokens: js.UndefOr[NullableOption[FeedbackTokenSet]] = js.native
+  var tokens: js.UndefOr[NullableOption[FeedbackTokenSet]] = js.undefined
 }
 object UserFeedback {
   

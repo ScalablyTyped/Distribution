@@ -2,7 +2,6 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "FieldValue")
@@ -14,23 +13,22 @@ class FieldValue protected () extends StObject {
 /* static members */
 object FieldValue {
   
-  @JSImport("@firebase/firestore-types", "FieldValue.arrayRemove")
+  @JSImport("@firebase/firestore-types", "FieldValue")
   @js.native
-  def arrayRemove(elements: js.Any*): FieldValue = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/firestore-types", "FieldValue.arrayUnion")
-  @js.native
-  def arrayUnion(elements: js.Any*): FieldValue = js.native
+  @scala.inline
+  def arrayRemove(elements: js.Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
   
-  @JSImport("@firebase/firestore-types", "FieldValue.delete")
-  @js.native
-  def delete(): FieldValue = js.native
+  @scala.inline
+  def arrayUnion(elements: js.Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
   
-  @JSImport("@firebase/firestore-types", "FieldValue.increment")
-  @js.native
-  def increment(n: Double): FieldValue = js.native
+  @scala.inline
+  def delete(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[FieldValue]
   
-  @JSImport("@firebase/firestore-types", "FieldValue.serverTimestamp")
-  @js.native
-  def serverTimestamp(): FieldValue = js.native
+  @scala.inline
+  def increment(n: Double): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
+  
+  @scala.inline
+  def serverTimestamp(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[FieldValue]
 }

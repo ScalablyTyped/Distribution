@@ -3,109 +3,107 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 import typings.googleapis.anon.PhoneNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for an individual account info.
   */
-@js.native
 trait SchemaUserInfo extends StObject {
   
   /**
     * User creation timestamp.
     */
-  var createdAt: js.UndefOr[String] = js.native
+  var createdAt: js.UndefOr[String] = js.undefined
   
   /**
     * The custom attributes to be set in the user&#39;s id token.
     */
-  var customAttributes: js.UndefOr[String] = js.native
+  var customAttributes: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the user is authenticated by the developer.
     */
-  var customAuth: js.UndefOr[Boolean] = js.native
+  var customAuth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the user is disabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the user.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email of the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the email has been verified.
     */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * last login timestamp.
     */
-  var lastLoginAt: js.UndefOr[String] = js.native
+  var lastLoginAt: js.UndefOr[String] = js.undefined
   
   /**
     * The local ID of the user.
     */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s hashed password.
     */
-  var passwordHash: js.UndefOr[String] = js.native
+  var passwordHash: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the password was last updated.
     */
-  var passwordUpdatedAt: js.UndefOr[Double] = js.native
+  var passwordUpdatedAt: js.UndefOr[Double] = js.undefined
   
   /**
     * User&#39;s phone number.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the user profile photo.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The IDP of the user.
     */
-  var providerUserInfo: js.UndefOr[js.Array[PhoneNumber]] = js.native
+  var providerUserInfo: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
   
   /**
     * The user&#39;s plain text password.
     */
-  var rawPassword: js.UndefOr[String] = js.native
+  var rawPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s password salt.
     */
-  var salt: js.UndefOr[String] = js.native
+  var salt: js.UndefOr[String] = js.undefined
   
   /**
     * User&#39;s screen name at Twitter or login name at Github.
     */
-  var screenName: js.UndefOr[String] = js.native
+  var screenName: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp in seconds for valid login token.
     */
-  var validSince: js.UndefOr[String] = js.native
+  var validSince: js.UndefOr[String] = js.undefined
   
   /**
     * Version of the user&#39;s password.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaUserInfo {
   

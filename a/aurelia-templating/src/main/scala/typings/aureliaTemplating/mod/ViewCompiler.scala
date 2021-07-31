@@ -4,7 +4,6 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewCompiler")
@@ -18,15 +17,11 @@ class ViewCompiler protected () extends StObject {
   def this(bindingLanguage: BindingLanguage, resources: ViewResources_) = this()
   
   def compile(source: String): ViewFactory = js.native
-  def compile(source: String, resources: js.UndefOr[scala.Nothing], compileInstruction: ViewCompileInstruction): ViewFactory = js.native
+  def compile(source: String, resources: Unit, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: String, resources: ViewResources_): ViewFactory = js.native
   def compile(source: String, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: DocumentFragment): ViewFactory = js.native
-  def compile(
-    source: DocumentFragment,
-    resources: js.UndefOr[scala.Nothing],
-    compileInstruction: ViewCompileInstruction
-  ): ViewFactory = js.native
+  def compile(source: DocumentFragment, resources: Unit, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: DocumentFragment, resources: ViewResources_): ViewFactory = js.native
   def compile(source: DocumentFragment, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   /**
@@ -37,14 +32,17 @@ class ViewCompiler protected () extends StObject {
     * @return The compiled ViewFactory.
     */
   def compile(source: Element): ViewFactory = js.native
-  def compile(source: Element, resources: js.UndefOr[scala.Nothing], compileInstruction: ViewCompileInstruction): ViewFactory = js.native
+  def compile(source: Element, resources: Unit, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: Element, resources: ViewResources_): ViewFactory = js.native
   def compile(source: Element, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
 }
 /* static members */
 object ViewCompiler {
   
-  @JSImport("aurelia-templating", "ViewCompiler.inject")
+  @JSImport("aurelia-templating", "ViewCompiler")
   @js.native
-  def inject(): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
 }

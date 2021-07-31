@@ -2,17 +2,15 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AFNJPY extends StObject {
   
-  var AFN: js.Array[String] = js.native
+  var AFN: js.Array[String]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var PKR: js.Array[String] = js.native
+  var PKR: js.Array[String]
 }
 object AFNJPY {
   

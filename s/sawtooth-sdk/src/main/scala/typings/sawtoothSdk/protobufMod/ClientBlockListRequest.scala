@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientBlockListRequest.
   * @param [properties] Properties to set
   */
-class ClientBlockListRequest () extends IClientBlockListRequest {
+class ClientBlockListRequest ()
+  extends StObject
+     with IClientBlockListRequest {
   def this(properties: IClientBlockListRequest) = this()
   
   /** ClientBlockListRequest blockIds. */
@@ -40,17 +41,19 @@ class ClientBlockListRequest () extends IClientBlockListRequest {
 /* static members */
 object ClientBlockListRequest {
   
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ClientBlockListRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientBlockListRequest instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.create")
-  @js.native
-  def create(): ClientBlockListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.create")
-  @js.native
-  def create(properties: IClientBlockListRequest): ClientBlockListRequest = js.native
+  @scala.inline
+  def create(): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientBlockListRequest]
+  @scala.inline
+  def create(properties: IClientBlockListRequest): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
   
   /**
     * Decodes a ClientBlockListRequest message from the specified reader or buffer.
@@ -60,18 +63,14 @@ object ClientBlockListRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
-  @js.native
-  def decode(reader: Reader): ClientBlockListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ClientBlockListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ClientBlockListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ClientBlockListRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ClientBlockListRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBlockListRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ClientBlockListRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBlockListRequest]
   
   /**
     * Decodes a ClientBlockListRequest message from the specified reader or buffer, length delimited.
@@ -80,12 +79,10 @@ object ClientBlockListRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ClientBlockListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ClientBlockListRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
   
   /**
     * Encodes the specified ClientBlockListRequest message. Does not implicitly {@link ClientBlockListRequest.verify|verify} messages.
@@ -93,12 +90,10 @@ object ClientBlockListRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encode")
-  @js.native
-  def encode(message: IClientBlockListRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encode")
-  @js.native
-  def encode(message: IClientBlockListRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientBlockListRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientBlockListRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientBlockListRequest message, length delimited. Does not implicitly {@link ClientBlockListRequest.verify|verify} messages.
@@ -106,21 +101,18 @@ object ClientBlockListRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBlockListRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBlockListRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientBlockListRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientBlockListRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientBlockListRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockListRequest
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ClientBlockListRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ClientBlockListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListRequest]
   
   /**
     * Creates a plain object from a ClientBlockListRequest message. Also converts values to other types if specified.
@@ -128,19 +120,16 @@ object ClientBlockListRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.toObject")
-  @js.native
-  def toObject(message: ClientBlockListRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.toObject")
-  @js.native
-  def toObject(message: ClientBlockListRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ClientBlockListRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ClientBlockListRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientBlockListRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

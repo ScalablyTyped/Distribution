@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Backendbuckets")
@@ -32,7 +31,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def addSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addSignedUrlKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(params: ParamsResourceBackendbucketsAddsignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(
     params: ParamsResourceBackendbucketsAddsignedurlkey,
@@ -125,7 +124,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendbucketsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendbucketsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -158,7 +157,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def deleteSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteSignedUrlKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(params: ParamsResourceBackendbucketsDeletesignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(
     params: ParamsResourceBackendbucketsDeletesignedurlkey,
@@ -249,7 +248,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(callback: BodyResponseCallback[SchemaBackendBucket]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendBucket] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(params: ParamsResourceBackendbucketsGet): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(params: ParamsResourceBackendbucketsGet, callback: BodyResponseCallback[SchemaBackendBucket]): Unit = js.native
   def get(
@@ -338,7 +337,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendbucketsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendbucketsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -438,7 +437,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(callback: BodyResponseCallback[SchemaBackendBucketList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendBucketList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(params: ParamsResourceBackendbucketsList): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(params: ParamsResourceBackendbucketsList, callback: BodyResponseCallback[SchemaBackendBucketList]): Unit = js.native
   def list(
@@ -535,7 +534,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendbucketsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendbucketsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -631,7 +630,7 @@ class ResourceBackendbuckets protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendbucketsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendbucketsUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

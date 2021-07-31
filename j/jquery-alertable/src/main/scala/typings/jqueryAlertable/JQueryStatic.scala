@@ -2,13 +2,11 @@ package typings.jqueryAlertable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var alertable: Alertable = js.native
+  var alertable: Alertable
 }
 object JQueryStatic {
   

@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,31 +14,30 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait Action[T] extends StObject {
     
     /**
       * arguments to call back with
       */
-    var cbArgs: ArrayLike[_] = js.native
+    var cbArgs: ArrayLike[js.Any]
     
-    var returnValue: T = js.native
+    var returnValue: T
     
-    var throwError: Error = js.native
+    var throwError: Error
   }
   object Action {
     
     @scala.inline
-    def apply[T](cbArgs: ArrayLike[_], returnValue: T, throwError: Error): Action[T] = {
+    def apply[T](cbArgs: ArrayLike[js.Any], returnValue: T, throwError: Error): Action[T] = {
       val __obj = js.Dynamic.literal(cbArgs = cbArgs.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], throwError = throwError.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], T] (val x: Self with Action[T]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       @scala.inline
-      def setCbArgs(value: ArrayLike[_]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
+      def setCbArgs(value: ArrayLike[js.Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReturnValue(value: T): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
@@ -49,55 +47,54 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Calls[T] extends StObject {
     
     /**
       * first argument
       */
-    var arg: js.Any = js.native
+    var arg: js.Any
     
     /**
       * an array of arguments received on the call
       */
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
     /**
       * the context (this) of the call
       */
-    var context: js.Any = js.native
+    var context: js.Any
     
     /**
       * autoincrementing number, can be compared to evaluate call order
       */
-    var k: Double = js.native
+    var k: Double
     
     /**
       * the value returned by the wrapped function
       */
-    var returned: T = js.native
+    var returned: T
     
     /**
       * the error thrown by the wrapped function
       */
-    var threw: Error = js.native
+    var threw: Error
   }
   object Calls {
     
     @scala.inline
-    def apply[T](arg: js.Any, args: js.Array[_], context: js.Any, k: Double, returned: T, threw: Error): Calls[T] = {
+    def apply[T](arg: js.Any, args: js.Array[js.Any], context: js.Any, k: Double, returned: T, threw: Error): Calls[T] = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], returned = returned.asInstanceOf[js.Any], threw = threw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Calls[T]]
     }
     
     @scala.inline
-    implicit class CallsMutableBuilder[Self <: Calls[_], T] (val x: Self with Calls[T]) extends AnyVal {
+    implicit class CallsMutableBuilder[Self <: Calls[?], T] (val x: Self & Calls[T]) extends AnyVal {
       
       @scala.inline
       def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -116,7 +113,11 @@ object mod extends Shortcut {
     }
   }
   
-  type Fn[T] = js.Function1[/* repeated */ js.Any, T]
+  @js.native
+  trait Fn[T] extends StObject {
+    
+    def apply(args: js.Any*): T = js.native
+  }
   
   @js.native
   trait Spy[T] extends StObject {
@@ -153,11 +154,11 @@ object mod extends Shortcut {
     /**
       * Returns a stub function that is also a spy.
       */
-    def mock(): Stub[_] = js.native
+    def mock(): Stub[js.Any] = js.native
     /**
       * If obj has already has this function, it is wrapped in a spy. The resulting spy can be turned into a stub by further configuration. Restores with all mocks.
       */
-    def mock(obj: js.Any, key: String): Stub[_] = js.native
+    def mock(obj: js.Any, key: String): Stub[js.Any] = js.native
     /**
       * Wraps fn in a spy.
       */
@@ -192,13 +193,15 @@ object mod extends Shortcut {
     /**
       * Returns a stub function that is also a spy.
       */
-    def stub(): Stub[_] = js.native
+    def stub(): Stub[js.Any] = js.native
     @JSName("stub")
     def stub_T[T](): Stub[T] = js.native
   }
   
   @js.native
-  trait Stub[T] extends Spy[T] {
+  trait Stub[T]
+    extends StObject
+       with Spy[T] {
     
     /**
       * An array of behaviours.

@@ -2,29 +2,27 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A named range.
   */
-@js.native
 trait SchemaNamedRange extends StObject {
   
   /**
     * The name of the named range.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the named range.
     */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
   
   /**
     * The range this represents.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaNamedRange {
   

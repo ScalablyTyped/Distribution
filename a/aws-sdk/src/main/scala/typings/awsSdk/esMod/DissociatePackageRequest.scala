@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DissociatePackageRequest extends StObject {
   
   /**
     * Name of the domain that you want to associate the package with.
     */
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
   
   /**
     * Internal ID of the package that you want to associate with a domain. Use DescribePackages to find this value.
     */
-  var PackageID: typings.awsSdk.esMod.PackageID = js.native
+  var PackageID: typings.awsSdk.esMod.PackageID
 }
 object DissociatePackageRequest {
   

@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.PractitionerRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyPractitionerRoleHeaders extends StObject {
   
-  var body: PractitionerRole = js.native
+  var body: PractitionerRole
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.PractitionerRole = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.PractitionerRole
 }
 object BodyPractitionerRoleHeaders {
   
   @scala.inline
-  def apply(
-    body: PractitionerRole,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.PractitionerRole
-  ): BodyPractitionerRoleHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: PractitionerRole, id: String): BodyPractitionerRoleHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "PractitionerRole")
     __obj.asInstanceOf[BodyPractitionerRoleHeaders]
   }
   

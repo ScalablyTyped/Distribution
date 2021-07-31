@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSetRequest extends StObject {
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
   
   /**
     * The description for the data set.
     */
-  var Description: js.UndefOr[typings.awsSdk.dataexchangeMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.dataexchangeMod.Description] = js.undefined
   
   /**
     * The name of the data set.
     */
-  var Name: js.UndefOr[typings.awsSdk.dataexchangeMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.dataexchangeMod.Name] = js.undefined
 }
 object UpdateDataSetRequest {
   

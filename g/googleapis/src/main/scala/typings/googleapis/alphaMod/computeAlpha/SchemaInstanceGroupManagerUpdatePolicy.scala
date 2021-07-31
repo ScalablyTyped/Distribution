@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
   
-  var instanceRedistributionType: js.UndefOr[String] = js.native
+  var instanceRedistributionType: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of instances that can be created above the specified
@@ -19,7 +17,7 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
     * either maxSurge or maxUnavailable must be greater than 0. Learn more
     * about maxSurge.
     */
-  var maxSurge: js.UndefOr[SchemaFixedOrPercent] = js.native
+  var maxSurge: js.UndefOr[SchemaFixedOrPercent] = js.undefined
   
   /**
     * The maximum number of instances that can be unavailable during the update
@@ -35,13 +33,13 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
     * either maxSurge or maxUnavailable must be greater than 0. Learn more
     * about maxUnavailable.
     */
-  var maxUnavailable: js.UndefOr[SchemaFixedOrPercent] = js.native
+  var maxUnavailable: js.UndefOr[SchemaFixedOrPercent] = js.undefined
   
   /**
     * Minimum number of seconds to wait for after a newly created instance
     * becomes available. This value must be from range [0, 3600].
     */
-  var minReadySec: js.UndefOr[Double] = js.native
+  var minReadySec: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimal action to be taken on an instance. You can specify either RESTART
@@ -51,15 +49,15 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
     * determines that the minimal action you specify is not enough to perform
     * the update, it might perform a more disruptive action.
     */
-  var minimalAction: js.UndefOr[String] = js.native
+  var minimalAction: js.UndefOr[String] = js.undefined
   
   /**
     * What action should be used to replace instances. See
     * minimal_action.REPLACE
     */
-  var replacementMethod: js.UndefOr[String] = js.native
+  var replacementMethod: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupManagerUpdatePolicy {
   

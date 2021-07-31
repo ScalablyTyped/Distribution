@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,9 +48,9 @@ trait IgTileManagerMethods extends StObject {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def maximize($tileToMaximize: js.Object): Unit = js.native
-  def maximize($tileToMaximize: js.Object, animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double, event: js.Object): Unit = js.native
+  def maximize($tileToMaximize: js.Object, animDuration: Unit, event: js.Object): Unit = js.native
   
   /**
     * Returns the maximized tile or null if such is not present.
@@ -66,9 +65,9 @@ trait IgTileManagerMethods extends StObject {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def minimize(): Unit = js.native
-  def minimize(animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def minimize(animDuration: Double): Unit = js.native
   def minimize(animDuration: Double, event: js.Object): Unit = js.native
+  def minimize(animDuration: Unit, event: js.Object): Unit = js.native
   
   /**
     * Returns an array with the tiles in minimized state or null if such are not present.
@@ -84,17 +83,13 @@ trait IgTileManagerMethods extends StObject {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def reflow(): Unit = js.native
-  def reflow(
-    forceReflow: js.UndefOr[scala.Nothing],
-    animationDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
-  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double): Unit = js.native
-  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double, event: js.Object): Unit = js.native
   def reflow(forceReflow: js.Object): Unit = js.native
-  def reflow(forceReflow: js.Object, animationDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double, event: js.Object): Unit = js.native
+  def reflow(forceReflow: js.Object, animationDuration: Unit, event: js.Object): Unit = js.native
+  def reflow(forceReflow: Unit, animationDuration: Double): Unit = js.native
+  def reflow(forceReflow: Unit, animationDuration: Double, event: js.Object): Unit = js.native
+  def reflow(forceReflow: Unit, animationDuration: Unit, event: js.Object): Unit = js.native
   
   /**
     * Returns the splitter associated with this tile manager or

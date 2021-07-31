@@ -10,7 +10,6 @@ import typings.reactTwitterAuth.reactTwitterAuthStrings.omit
 import typings.std.HeadersInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,38 +24,37 @@ object mod {
   @scala.inline
   def default_=(x: StatelessComponent[TwitterLoginProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait TwitterLoginProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var credentials: js.UndefOr[omit | `same-origin` | include] = js.native
+    var credentials: js.UndefOr[omit | `same-origin` | include] = js.undefined
     
-    var customHeaders: js.UndefOr[HeadersInit] = js.native
+    var customHeaders: js.UndefOr[HeadersInit] = js.undefined
     
-    var dialogHeight: js.UndefOr[Double] = js.native
+    var dialogHeight: js.UndefOr[Double] = js.undefined
     
-    var dialogWidth: js.UndefOr[Double] = js.native
+    var dialogWidth: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var forceLogin: js.UndefOr[Boolean] = js.native
+    var forceLogin: js.UndefOr[Boolean] = js.undefined
     
-    var loginUrl: String = js.native
+    var loginUrl: String
     
-    def onFailure(msg: String): Unit = js.native
+    def onFailure(msg: String): Unit
     
-    def onSuccess(response: String): Unit = js.native
+    def onSuccess(response: String): Unit
     
-    var requestTokenUrl: String = js.native
+    var requestTokenUrl: String
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[_]] = js.native
+    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object TwitterLoginProps {
     
@@ -139,7 +137,7 @@ object mod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setTag(value: ReactType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

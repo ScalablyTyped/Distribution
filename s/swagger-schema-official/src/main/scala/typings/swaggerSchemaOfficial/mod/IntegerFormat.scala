@@ -5,22 +5,22 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.int64
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntegerFormat extends SchemaFormatConstraints {
+trait IntegerFormat
+  extends StObject
+     with SchemaFormatConstraints {
   
-  var format: js.UndefOr[int32 | int64] = js.native
+  var format: js.UndefOr[int32 | int64] = js.undefined
   
-  var `type`: integer = js.native
+  var `type`: integer
 }
 object IntegerFormat {
   
   @scala.inline
-  def apply(`type`: integer): IntegerFormat = {
+  def apply(): IntegerFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[IntegerFormat]
   }
   

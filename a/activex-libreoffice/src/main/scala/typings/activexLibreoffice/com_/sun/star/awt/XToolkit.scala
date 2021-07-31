@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,38 +13,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is similar to the abstract window toolkit (AWT) in Java.
   */
-@js.native
-trait XToolkit extends XInterface {
+trait XToolkit
+  extends StObject
+     with XInterface {
   
   /** returns the desktop window. */
-  val DesktopWindow: XWindowPeer = js.native
+  val DesktopWindow: XWindowPeer
   
   /**
     * For LibreOffice versions < 4.1, this method just returned an empty rectangle. After that, it started returning a valid value.
     * @returns the size and position of the primary display
     */
-  val WorkArea: Rectangle = js.native
+  val WorkArea: Rectangle
   
   /** creates a region. */
-  def createRegion(): XRegion = js.native
+  def createRegion(): XRegion
   
   /** creates a virtual device that is compatible with the screen. */
-  def createScreenCompatibleDevice(Width: Double, Height: Double): XDevice = js.native
+  def createScreenCompatibleDevice(Width: Double, Height: Double): XDevice
   
   /** creates a new window using the given descriptor. */
-  def createWindow(Descriptor: WindowDescriptor): XWindowPeer = js.native
+  def createWindow(Descriptor: WindowDescriptor): XWindowPeer
   
   /** returns a sequence of windows which are newly created using the given descriptors. */
-  def createWindows(Descriptors: SeqEquiv[WindowDescriptor]): SafeArray[XWindowPeer] = js.native
+  def createWindows(Descriptors: SeqEquiv[WindowDescriptor]): SafeArray[XWindowPeer]
   
   /** returns the desktop window. */
-  def getDesktopWindow(): XWindowPeer = js.native
+  def getDesktopWindow(): XWindowPeer
   
   /**
     * For LibreOffice versions < 4.1, this method just returned an empty rectangle. After that, it started returning a valid value.
     * @returns the size and position of the primary display
     */
-  def getWorkArea(): Rectangle = js.native
+  def getWorkArea(): Rectangle
 }
 object XToolkit {
   

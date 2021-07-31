@@ -10,28 +10,28 @@ import typings.ref.mod.Type
 import typings.refStruct.mod.StructType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ffi", "CIF")
+  @JSImport("ffi", JSImport.Namespace)
   @js.native
-  def CIF(retType: js.Any, types: js.Array[_]): Buffer = js.native
-  @JSImport("ffi", "CIF")
-  @js.native
-  def CIF(retType: js.Any, types: js.Array[_], abi: js.Any): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ffi", "CIF_var")
-  @js.native
-  def CIFVar(retType: js.Any, types: js.Array[_], numFixedArgs: Double): Buffer = js.native
-  @JSImport("ffi", "CIF_var")
-  @js.native
-  def CIFVar(retType: js.Any, types: js.Array[_], numFixedArgs: Double, abi: js.Any): Buffer = js.native
+  @scala.inline
+  def CIF(retType: js.Any, types: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def CIF(retType: js.Any, types: js.Array[js.Any], abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double, abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @js.native
   trait Callback
-    extends Instantiable3[/* retType */ js.Any, /* argTypes */ js.Array[js.Any], /* fn */ js.Any, Buffer]
+    extends StObject
+       with Instantiable3[/* retType */ js.Any, /* argTypes */ js.Array[js.Any], /* fn */ js.Any, Buffer]
        with Instantiable4[
           /* retType */ js.Any, 
           /* argTypes */ js.Array[js.Any], 
@@ -40,8 +40,8 @@ object mod {
           Buffer
         ] {
     
-    def apply(retType: js.Any, argTypes: js.Array[_], abi: Double, fn: js.Any): Buffer = js.native
-    def apply(retType: js.Any, argTypes: js.Array[_], fn: js.Any): Buffer = js.native
+    def apply(retType: js.Any, argTypes: js.Array[js.Any], abi: Double, fn: js.Any): Buffer = js.native
+    def apply(retType: js.Any, argTypes: js.Array[js.Any], fn: js.Any): Buffer = js.native
   }
   @JSImport("ffi", "Callback")
   @js.native
@@ -50,37 +50,35 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi", "Callback")
   @js.native
-  class CallbackCls protected () extends Buffer {
-    def this(retType: js.Any, argTypes: js.Array[_], fn: js.Any) = this()
-    def this(retType: js.Any, argTypes: js.Array[_], abi: Double, fn: js.Any) = this()
+  class CallbackCls protected ()
+    extends StObject
+       with Buffer {
+    def this(retType: js.Any, argTypes: js.Array[js.Any], fn: js.Any) = this()
+    def this(retType: js.Any, argTypes: js.Array[js.Any], abi: Double, fn: js.Any) = this()
   }
   
-  @js.native
   trait DynamicLibrary extends StObject {
     
     /** Close library, returns the result of the `dlclose` system function. */
-    def close(): Double = js.native
+    def close(): Double
     
     /** Get the result of the `dlerror` system function. */
-    def error(): String = js.native
+    def error(): String
     
     /** Get a symbol from this library. */
-    def get(symbol: String): Buffer = js.native
+    def get(symbol: String): Buffer
   }
   object DynamicLibrary {
     
-    @JSImport("ffi", "DynamicLibrary")
-    @js.native
-    def apply(): DynamicLibrary = js.native
-    @JSImport("ffi", "DynamicLibrary")
-    @js.native
-    def apply(path: js.UndefOr[scala.Nothing], mode: Double): DynamicLibrary = js.native
-    @JSImport("ffi", "DynamicLibrary")
-    @js.native
-    def apply(path: String): DynamicLibrary = js.native
-    @JSImport("ffi", "DynamicLibrary")
-    @js.native
-    def apply(path: String, mode: Double): DynamicLibrary = js.native
+    @scala.inline
+    def apply(): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DynamicLibrary]
+    @scala.inline
+    def apply(path: String): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[DynamicLibrary]
+    @scala.inline
+    def apply(path: String, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
+    @scala.inline
+    def apply(path: Unit, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
+    
     @JSImport("ffi", "DynamicLibrary")
     @js.native
     val ^ : js.Any = js.native
@@ -108,10 +106,24 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi", "DynamicLibrary")
   @js.native
-  class DynamicLibraryCls () extends DynamicLibrary {
+  class DynamicLibraryCls ()
+    extends StObject
+       with DynamicLibrary {
     def this(path: String) = this()
-    def this(path: js.UndefOr[scala.Nothing], mode: Double) = this()
     def this(path: String, mode: Double) = this()
+    def this(path: Unit, mode: Double) = this()
+    
+    /** Close library, returns the result of the `dlclose` system function. */
+    /* CompleteClass */
+    override def close(): Double = js.native
+    
+    /** Get the result of the `dlerror` system function. */
+    /* CompleteClass */
+    override def error(): String = js.native
+    
+    /** Get a symbol from this library. */
+    /* CompleteClass */
+    override def get(symbol: String): Buffer = js.native
   }
   
   @JSImport("ffi", "FFI_BAD_ABI")
@@ -177,31 +189,38 @@ object mod {
     
     def async(args: js.Any*): Unit = js.native
   }
-  @JSImport("ffi", "ForeignFunction")
-  @js.native
-  def ForeignFunction(ptr: Buffer, retType: String, argTypes: js.Array[_]): ForeignFunction = js.native
-  @JSImport("ffi", "ForeignFunction")
-  @js.native
-  def ForeignFunction(ptr: Buffer, retType: String, argTypes: js.Array[_], abi: Double): ForeignFunction = js.native
-  @JSImport("ffi", "ForeignFunction")
-  @js.native
-  def ForeignFunction(ptr: Buffer, retType: Type, argTypes: js.Array[_]): ForeignFunction = js.native
-  @JSImport("ffi", "ForeignFunction")
-  @js.native
-  def ForeignFunction(ptr: Buffer, retType: Type, argTypes: js.Array[_], abi: Double): ForeignFunction = js.native
+  object ForeignFunction {
+    
+    @JSImport("ffi", "ForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, retType: String, argTypes: js.Array[js.Any]): ForeignFunction = js.native
+    @JSImport("ffi", "ForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, retType: String, argTypes: js.Array[js.Any], abi: Double): ForeignFunction = js.native
+    @JSImport("ffi", "ForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any]): ForeignFunction = js.native
+    @JSImport("ffi", "ForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any], abi: Double): ForeignFunction = js.native
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi", "ForeignFunction")
   @js.native
-  class ForeignFunctionCls protected () extends ForeignFunction {
-    def this(ptr: Buffer, retType: String, argTypes: js.Array[_]) = this()
-    def this(ptr: Buffer, retType: Type, argTypes: js.Array[_]) = this()
-    def this(ptr: Buffer, retType: String, argTypes: js.Array[_], abi: Double) = this()
-    def this(ptr: Buffer, retType: Type, argTypes: js.Array[_], abi: Double) = this()
+  class ForeignFunctionCls protected ()
+    extends StObject
+       with ForeignFunction {
+    def this(ptr: Buffer, retType: String, argTypes: js.Array[js.Any]) = this()
+    def this(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any]) = this()
+    def this(ptr: Buffer, retType: String, argTypes: js.Array[js.Any], abi: Double) = this()
+    def this(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any], abi: Double) = this()
   }
   
   @js.native
-  trait Function extends Type {
+  trait Function
+    extends StObject
+       with Type {
     
     var abi: Double = js.native
     
@@ -218,29 +237,50 @@ object mod {
     def toFunction(buf: Buffer): ForeignFunction = js.native
     
     /** Get a `Callback` pointer of this function type. */
-    def toPointer(fn: js.Function1[/* repeated */ js.Any, _]): Buffer = js.native
+    def toPointer(fn: js.Function1[/* repeated */ js.Any, js.Any]): Buffer = js.native
   }
-  @JSImport("ffi", "Function")
-  @js.native
-  def Function(retType: String, argTypes: js.Array[_]): Function = js.native
-  @JSImport("ffi", "Function")
-  @js.native
-  def Function(retType: String, argTypes: js.Array[_], abi: Double): Function = js.native
-  @JSImport("ffi", "Function")
-  @js.native
-  def Function(retType: Type, argTypes: js.Array[_]): Function = js.native
-  @JSImport("ffi", "Function")
-  @js.native
-  def Function(retType: Type, argTypes: js.Array[_], abi: Double): Function = js.native
+  object Function {
+    
+    @JSImport("ffi", "Function")
+    @js.native
+    def apply(retType: String, argTypes: js.Array[js.Any]): Function = js.native
+    @JSImport("ffi", "Function")
+    @js.native
+    def apply(retType: String, argTypes: js.Array[js.Any], abi: Double): Function = js.native
+    @JSImport("ffi", "Function")
+    @js.native
+    def apply(retType: Type, argTypes: js.Array[js.Any]): Function = js.native
+    @JSImport("ffi", "Function")
+    @js.native
+    def apply(retType: Type, argTypes: js.Array[js.Any], abi: Double): Function = js.native
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi", "Function")
   @js.native
-  class FunctionCls protected () extends Function {
-    def this(retType: String, argTypes: js.Array[_]) = this()
-    def this(retType: Type, argTypes: js.Array[_]) = this()
-    def this(retType: String, argTypes: js.Array[_], abi: Double) = this()
-    def this(retType: Type, argTypes: js.Array[_], abi: Double) = this()
+  class FunctionCls protected ()
+    extends StObject
+       with Function {
+    def this(retType: String, argTypes: js.Array[js.Any]) = this()
+    def this(retType: Type, argTypes: js.Array[js.Any]) = this()
+    def this(retType: String, argTypes: js.Array[js.Any], abi: Double) = this()
+    def this(retType: Type, argTypes: js.Array[js.Any], abi: Double) = this()
+    
+    /** To invoke when `ref.get` is invoked on a buffer of this type. */
+    /* CompleteClass */
+    override def get(buffer: typings.node.Buffer, offset: Double): js.Any = js.native
+    
+    /** The current level of indirection of the buffer. */
+    /* CompleteClass */
+    var indirection: Double = js.native
+    
+    /** To invoke when `ref.set` is invoked on a buffer of this type. */
+    /* CompleteClass */
+    override def set(buffer: typings.node.Buffer, offset: Double, value: js.Any): Unit = js.native
+    
+    /** The size in bytes required to hold this datatype. */
+    /* CompleteClass */
+    var size: Double = js.native
   }
   
   @JSImport("ffi", "HAS_OBJC")
@@ -253,7 +293,8 @@ object mod {
   
   @js.native
   trait Library
-    extends /**
+    extends StObject
+       with /**
     * @param libFile name of library
     * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
     * @param lib hash that will be extended
@@ -262,7 +303,7 @@ object mod {
        with Instantiable2[/* libFile */ String, /* funcs */ StringDictionary[js.Array[js.Any]], js.Any]
        with Instantiable3[
           /* libFile */ String, 
-          js.UndefOr[/* funcs */ StringDictionary[js.Array[js.Any]]], 
+          (/* funcs */ StringDictionary[js.Array[js.Any]]) | (/* funcs */ Unit), 
           /* lib */ js.Object, 
           js.Any
         ] {
@@ -273,9 +314,9 @@ object mod {
       * @param lib hash that will be extended
       */
     def apply(libFile: String): js.Any = js.native
-    def apply(libFile: String, funcs: js.UndefOr[scala.Nothing], lib: js.Object): js.Any = js.native
-    def apply(libFile: String, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
-    def apply(libFile: String, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
+    def apply(libFile: String, funcs: StringDictionary[js.Array[js.Any]]): js.Any = js.native
+    def apply(libFile: String, funcs: StringDictionary[js.Array[js.Any]], lib: js.Object): js.Any = js.native
+    def apply(libFile: String, funcs: Unit, lib: js.Object): js.Any = js.native
     
     /** The extension to use on libraries. */
     var EXT: String = js.native
@@ -332,59 +373,58 @@ object mod {
       */
     var returnType: js.Any = js.native
   }
-  @JSImport("ffi", "VariadicForeignFunction")
-  @js.native
-  def VariadicForeignFunction(ptr: Buffer, ret: String, fixedArgs: js.Array[_]): VariadicForeignFunction = js.native
-  @JSImport("ffi", "VariadicForeignFunction")
-  @js.native
-  def VariadicForeignFunction(ptr: Buffer, ret: String, fixedArgs: js.Array[_], abi: Double): VariadicForeignFunction = js.native
-  @JSImport("ffi", "VariadicForeignFunction")
-  @js.native
-  def VariadicForeignFunction(ptr: Buffer, ret: Type, fixedArgs: js.Array[_]): VariadicForeignFunction = js.native
-  @JSImport("ffi", "VariadicForeignFunction")
-  @js.native
-  def VariadicForeignFunction(ptr: Buffer, ret: Type, fixedArgs: js.Array[_], abi: Double): VariadicForeignFunction = js.native
+  object VariadicForeignFunction {
+    
+    @JSImport("ffi", "VariadicForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any]): VariadicForeignFunction = js.native
+    @JSImport("ffi", "VariadicForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any], abi: Double): VariadicForeignFunction = js.native
+    @JSImport("ffi", "VariadicForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any]): VariadicForeignFunction = js.native
+    @JSImport("ffi", "VariadicForeignFunction")
+    @js.native
+    def apply(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any], abi: Double): VariadicForeignFunction = js.native
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi", "VariadicForeignFunction")
   @js.native
-  class VariadicForeignFunctionCls protected () extends VariadicForeignFunction {
-    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[_]) = this()
-    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[_]) = this()
-    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[_], abi: Double) = this()
-    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[_], abi: Double) = this()
+  class VariadicForeignFunctionCls protected ()
+    extends StObject
+       with VariadicForeignFunction {
+    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any]) = this()
+    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any]) = this()
+    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any], abi: Double) = this()
+    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any], abi: Double) = this()
   }
   
-  @JSImport("ffi", "errno")
-  @js.native
-  def errno(): Double = js.native
+  @scala.inline
+  def errno(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errno")().asInstanceOf[Double]
   
   object ffiType {
     
-    @JSImport("ffi", "ffiType")
-    @js.native
-    def apply(`type`: String): Buffer = js.native
+    @scala.inline
+    def apply(`type`: String): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     /** Get a `ffi_type *` Buffer appropriate for the given type. */
-    @JSImport("ffi", "ffiType")
-    @js.native
-    def apply(`type`: Type): Buffer = js.native
+    @scala.inline
+    def apply(`type`: Type): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    
     @JSImport("ffi", "ffiType")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ffi", "ffiType.FFI_TYPE")
-    @js.native
-    def FFI_TYPE(): js.Any = js.native
+    @scala.inline
+    def FFI_TYPE(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")().asInstanceOf[js.Any]
     /** Pass it an existing Buffer instance to use that as the backing buffer. */
-    @JSImport("ffi", "ffiType.FFI_TYPE")
-    @js.native
-    def FFI_TYPE(arg: typings.node.Buffer): js.Any = js.native
-    @JSImport("ffi", "ffiType.FFI_TYPE")
-    @js.native
-    def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = js.native
-    @JSImport("ffi", "ffiType.FFI_TYPE")
-    @js.native
-    def FFI_TYPE(data: js.Object): js.Any = js.native
+    @scala.inline
+    def FFI_TYPE(arg: typings.node.Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def FFI_TYPE(data: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @JSImport("ffi", "ffiType.FFI_TYPE")
     @js.native
     def FFI_TYPE_FffiType: StructType = js.native

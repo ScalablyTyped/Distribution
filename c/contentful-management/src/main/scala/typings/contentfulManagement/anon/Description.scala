@@ -3,20 +3,18 @@ package typings.contentfulManagement.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
   /** Description for this asset */
-  var description: StringDictionary[String] = js.native
+  var description: StringDictionary[String]
   
   /** File object for this asset */
-  var file: StringDictionary[ContentType] = js.native
+  var file: StringDictionary[ContentType]
   
   /** Title for this asset */
-  var title: StringDictionary[String] = js.native
+  var title: StringDictionary[String]
 }
 object Description {
   

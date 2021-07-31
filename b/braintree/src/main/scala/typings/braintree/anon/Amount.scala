@@ -3,23 +3,21 @@ package typings.braintree.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amount extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var createdAt: Date = js.native
+  var createdAt: Date
   
-  var id: String = js.native
+  var id: String
   
-  var orderId: String = js.native
+  var orderId: String
   
-  var paymentInstrumentSubtype: String = js.native
+  var paymentInstrumentSubtype: String
   
-  var purchaseOrderNumber: String = js.native
+  var purchaseOrderNumber: String
 }
 object Amount {
   

@@ -3,48 +3,46 @@ package typings.recurlyRecurlyJs.anon
 import typings.recurlyRecurlyJs.checkoutMod.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adjustments extends StObject {
   
   /**
     * Total cost of all adjustments. This is part of the subtotal due at the next billing cycle.
     */
-  var adjustments: String = js.native
+  var adjustments: String
   
   /**
     * Amount discounted for next billing cycle with coupon use.
     */
-  var discount: String = js.native
+  var discount: String
   
   /**
     * The gift card amount that will be applied to the next billing cycle cost.
     */
-  var giftCard: String = js.native
+  var giftCard: String
   
-  var items: js.Array[Item] = js.native
+  var items: js.Array[Item]
   
   /**
     * Total cost of all subscriptions. This is part of the subtotal due at the next billing cycle.
     */
-  var subscriptions: String = js.native
+  var subscriptions: String
   
   /**
     * Subtotal of the following pricing components due at the next billing cycle.
     */
-  var subtotal: String = js.native
+  var subtotal: String
   
   /**
     * Total subscription taxation due at the next billing cycle.
     */
-  var taxes: String = js.native
+  var taxes: String
   
   /**
     * Total subscription cost due at the next billing cycle.
     */
-  var total: String = js.native
+  var total: String
 }
 object Adjustments {
   

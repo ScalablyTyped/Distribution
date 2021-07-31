@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfig extends StObject {
   
   /**
     * AWS Key Management Service (AWS KMS) customer master key (CMK). Either the ARN or the alias can be used.
     */
-  var provider: js.UndefOr[Provider] = js.native
+  var provider: js.UndefOr[Provider] = js.undefined
   
   /**
     * Specifies the resources to be encrypted. The only supported value is "secrets".
     */
-  var resources: js.UndefOr[StringList] = js.native
+  var resources: js.UndefOr[StringList] = js.undefined
 }
 object EncryptionConfig {
   

@@ -10,9 +10,9 @@ TypeScript typings for Cloud Billing Budget API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.billingbudgets |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 57 |
+| # downloads        | 1069 |
 | # stars            | 0 |
 
 ## Links

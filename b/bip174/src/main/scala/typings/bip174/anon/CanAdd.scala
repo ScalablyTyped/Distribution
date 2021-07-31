@@ -4,21 +4,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAdd extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
+  def canAdd(currentData: js.Any, newData: js.Any): Boolean
   
-  def check(data: js.Any): /* is node.Buffer */ Boolean = js.native
+  def check(data: js.Any): /* is node.Buffer */ Boolean
   
-  def decode(keyVal: KeyValue): Buffer = js.native
+  def decode(keyVal: KeyValue): Buffer
   
-  def encode(data: Buffer): KeyValue = js.native
+  def encode(data: Buffer): KeyValue
   
-  var expected: String = js.native
+  var expected: String
 }
 object CanAdd {
   

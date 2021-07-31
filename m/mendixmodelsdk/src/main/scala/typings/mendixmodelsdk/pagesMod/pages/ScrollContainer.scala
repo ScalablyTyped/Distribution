@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,9 +73,8 @@ object ScrollContainer {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.create")
-  @js.native
-  def create(model: IModel): ScrollContainer = js.native
+  @scala.inline
+  def create(model: IModel): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -87,9 +85,8 @@ object ScrollContainer {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): ScrollContainer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -100,9 +97,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ScrollContainer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -113,9 +109,8 @@ object ScrollContainer {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): ScrollContainer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -126,9 +121,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): ScrollContainer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -139,9 +133,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): ScrollContainer = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -152,9 +145,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): ScrollContainer = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -165,9 +157,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): ScrollContainer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -178,9 +169,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): ScrollContainer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -191,9 +181,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): ScrollContainer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -204,9 +193,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): ScrollContainer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -217,9 +205,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): ScrollContainer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -230,9 +217,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): ScrollContainer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -243,9 +229,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): ScrollContainer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -256,9 +241,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): ScrollContainer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -269,9 +253,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -282,9 +265,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -295,9 +277,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -308,9 +289,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -321,9 +301,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -334,9 +313,8 @@ object ScrollContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): ScrollContainer = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -347,9 +325,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ScrollContainer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -360,9 +337,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ScrollContainer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -373,9 +349,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): ScrollContainer = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -386,9 +361,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): ScrollContainer = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -399,9 +373,8 @@ object ScrollContainer {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ScrollContainer = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -412,9 +385,8 @@ object ScrollContainer {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ScrollContainer = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -425,9 +397,8 @@ object ScrollContainer {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ScrollContainer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -438,9 +409,8 @@ object ScrollContainer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ScrollContainer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -451,9 +421,8 @@ object ScrollContainer {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ScrollContainer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -464,9 +433,8 @@ object ScrollContainer {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): ScrollContainer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -477,9 +445,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): ScrollContainer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -490,9 +457,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ScrollContainer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -503,9 +469,8 @@ object ScrollContainer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): ScrollContainer = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -516,9 +481,8 @@ object ScrollContainer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): ScrollContainer = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -529,9 +493,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ScrollContainer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -542,9 +505,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ScrollContainer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -555,9 +517,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): ScrollContainer = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -568,9 +529,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): ScrollContainer = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -581,9 +541,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): ScrollContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -594,9 +553,8 @@ object ScrollContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ScrollContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -607,9 +565,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): ScrollContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -620,9 +577,8 @@ object ScrollContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ScrollContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -633,9 +589,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): ScrollContainer = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -646,9 +601,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): ScrollContainer = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -659,9 +613,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): ScrollContainer = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -672,9 +625,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): ScrollContainer = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -685,9 +637,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ScrollContainer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -698,9 +649,8 @@ object ScrollContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ScrollContainer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -711,9 +661,8 @@ object ScrollContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ScrollContainer = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -724,9 +673,8 @@ object ScrollContainer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ScrollContainer = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
@@ -737,9 +685,8 @@ object ScrollContainer {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): ScrollContainer = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.structureTypeName")

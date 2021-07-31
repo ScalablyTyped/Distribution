@@ -7,15 +7,13 @@ import typings.contentfulManagement.localeMod.Locale
 import typings.contentfulManagement.localeMod.LocaleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeoflocale extends StObject {
   
-  def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale = js.native
+  def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale
   
-  def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps] = js.native
+  def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps]
 }
 object Typeoflocale {
   

@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.node.NodeJS.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
-  def exportChallenge(spkac: BinaryLike): Buffer = js.native
+  def exportChallenge(spkac: BinaryLike): Buffer
   
-  def exportPublicKey(spkac: BinaryLike): Buffer = js.native
+  def exportPublicKey(spkac: BinaryLike): Buffer
   
-  def verifySpkac(spkac: ArrayBufferView): Boolean = js.native
+  def verifySpkac(spkac: ArrayBufferView): Boolean
 }
 object Certificate {
   

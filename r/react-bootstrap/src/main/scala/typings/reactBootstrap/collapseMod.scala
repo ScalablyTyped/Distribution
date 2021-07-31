@@ -8,7 +8,6 @@ import typings.reactBootstrap.reactBootstrapStrings.height
 import typings.reactBootstrap.reactBootstrapStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
@@ -22,24 +21,24 @@ object collapseMod {
   trait Collapse
     extends Component[CollapseProps, js.Object, js.Any]
   
-  @js.native
   trait CollapseProps
-    extends ClassAttributes[Collapse]
-       with TransitionCallbacks {
+    extends StObject
+       with TransitionCallbacks
+       with ClassAttributes[Collapse] {
     
-    var dimension: js.UndefOr[height | width | js.Function0[String]] = js.native
+    var dimension: js.UndefOr[height | width | js.Function0[String]] = js.undefined
     
-    var getDimensionValue: js.UndefOr[js.Function2[/* dimension */ Double, /* element */ ReactElement, Double]] = js.native
+    var getDimensionValue: js.UndefOr[js.Function2[/* dimension */ Double, /* element */ ReactElement, Double]] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transitionAppear: js.UndefOr[Boolean] = js.native
+    var transitionAppear: js.UndefOr[Boolean] = js.undefined
     
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object CollapseProps {
     

@@ -3,15 +3,15 @@ package typings.vscode.anon
 import typings.vscode.mod._MarkedString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Language extends _MarkedString {
+trait Language
+  extends StObject
+     with _MarkedString {
   
-  var language: String = js.native
+  var language: String
   
-  var value: String = js.native
+  var value: String
 }
 object Language {
   

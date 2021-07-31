@@ -8,7 +8,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerWrapperMod {
@@ -20,6 +19,10 @@ object drawerWrapperMod {
   }
   object default {
     
+    @JSImport("rc-drawer/es/DrawerWrapper", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
     object defaultProps {
       
@@ -27,9 +30,8 @@ object drawerWrapperMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("rc-drawer/es/DrawerWrapper", "default.defaultProps.afterVisibleChange")
-      @js.native
-      def afterVisibleChange(): Unit = js.native
+      @scala.inline
+      def afterVisibleChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterVisibleChange")().asInstanceOf[Unit]
       
       @JSImport("rc-drawer/es/DrawerWrapper", "default.defaultProps.className")
       @js.native
@@ -91,9 +93,8 @@ object drawerWrapperMod {
       @scala.inline
       def maskClosable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-drawer/es/DrawerWrapper", "default.defaultProps.onChange")
-      @js.native
-      def onChange(): Unit = js.native
+      @scala.inline
+      def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
       
       @JSImport("rc-drawer/es/DrawerWrapper", "default.defaultProps.placement")
       @js.native
@@ -121,9 +122,8 @@ object drawerWrapperMod {
     }
     
     /* static member */
-    @JSImport("rc-drawer/es/DrawerWrapper", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: IDrawerProps, hasPrevProps: PrevPropsIDrawerProps): Open = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: IDrawerProps, hasPrevProps: PrevPropsIDrawerProps): Open = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[Open]
   }
   
   @js.native
@@ -137,10 +137,9 @@ object drawerWrapperMod {
     var onHandleClick: js.Any = js.native
   }
   
-  @js.native
   trait IState extends StObject {
     
-    var open: Boolean = js.native
+    var open: Boolean
   }
   object IState {
     

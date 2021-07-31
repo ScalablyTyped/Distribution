@@ -2,39 +2,37 @@ package typings.xEditable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XEditable extends StObject {
   
-  def activate(): Unit = js.native
+  def activate(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def disable(): Unit = js.native
+  def disable(): Unit
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  def getValue(isSingle: Boolean): js.Any = js.native
+  def getValue(isSingle: Boolean): js.Any
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def option(key: js.Any, value: js.Any): Unit = js.native
+  def option(key: js.Any, value: js.Any): Unit
   
-  var options: XEditableOptions = js.native
+  var options: XEditableOptions
   
-  def setValue(value: js.Any, convertStr: Boolean): Unit = js.native
+  def setValue(value: js.Any, convertStr: Boolean): Unit
   
-  def show(closeAll: Boolean): Unit = js.native
+  def show(closeAll: Boolean): Unit
   
-  def submit(options: XEditableSubmitOptions): Unit = js.native
+  def submit(options: XEditableSubmitOptions): Unit
   
-  def toggle(closeAll: Boolean): Unit = js.native
+  def toggle(closeAll: Boolean): Unit
   
-  def toggleDisabled(): Unit = js.native
+  def toggleDisabled(): Unit
   
-  def validate(): Unit = js.native
+  def validate(): Unit
 }
 object XEditable {
   

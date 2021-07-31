@@ -2,19 +2,17 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var brokerProperties: js.UndefOr[BrokerProperties] = js.native
+  var brokerProperties: js.UndefOr[BrokerProperties] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var customProperties: js.UndefOr[Dictionary[_]] = js.native
+  var customProperties: js.UndefOr[Dictionary[js.Any]] = js.undefined
 }
 object Message {
   
@@ -43,7 +41,7 @@ object Message {
     def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setCustomProperties(value: Dictionary[_]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
+    def setCustomProperties(value: Dictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)

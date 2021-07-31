@@ -2,21 +2,19 @@ package typings.mediumEditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Major extends StObject {
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
     
-    var preRelease: String = js.native
+    var preRelease: String
     
-    var revision: Double = js.native
+    var revision: Double
   }
   object Major {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Prop extends StObject {
     
-    var prop: String = js.native
+    var prop: String
     
-    var value: String = js.native
+    var value: String
   }
   object Prop {
     

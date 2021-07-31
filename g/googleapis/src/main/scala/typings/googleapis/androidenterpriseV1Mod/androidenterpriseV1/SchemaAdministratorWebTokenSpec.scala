@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,50 +9,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * what data the admin is allowed to modify and the URI the iframe is allowed
   * to communiate with.
   */
-@js.native
 trait SchemaAdministratorWebTokenSpec extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#administratorWebTokenSpec&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Options for displaying the Managed Configuration page.
     */
-  var managedConfigurations: js.UndefOr[SchemaAdministratorWebTokenSpecManagedConfigurations] = js.native
+  var managedConfigurations: js.UndefOr[SchemaAdministratorWebTokenSpecManagedConfigurations] = js.undefined
   
   /**
     * The URI of the parent frame hosting the iframe. To prevent XSS, the
     * iframe may not be hosted at other URIs. This URI must be https.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Use PlaySearch.approveApps.
     */
-  var permission: js.UndefOr[js.Array[String]] = js.native
+  var permission: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Options for displaying the managed Play Search apps page.
     */
-  var playSearch: js.UndefOr[SchemaAdministratorWebTokenSpecPlaySearch] = js.native
+  var playSearch: js.UndefOr[SchemaAdministratorWebTokenSpecPlaySearch] = js.undefined
   
   /**
     * Options for displaying the Private Apps page.
     */
-  var privateApps: js.UndefOr[SchemaAdministratorWebTokenSpecPrivateApps] = js.native
+  var privateApps: js.UndefOr[SchemaAdministratorWebTokenSpecPrivateApps] = js.undefined
   
   /**
     * Options for displaying the Organize apps page.
     */
-  var storeBuilder: js.UndefOr[SchemaAdministratorWebTokenSpecStoreBuilder] = js.native
+  var storeBuilder: js.UndefOr[SchemaAdministratorWebTokenSpecStoreBuilder] = js.undefined
   
   /**
     * Options for displaying the Web Apps page.
     */
-  var webApps: js.UndefOr[SchemaAdministratorWebTokenSpecWebApps] = js.native
+  var webApps: js.UndefOr[SchemaAdministratorWebTokenSpecWebApps] = js.undefined
 }
 object SchemaAdministratorWebTokenSpec {
   

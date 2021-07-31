@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineTemplate extends StObject {
   
   /**
@@ -15,28 +13,28 @@ trait InlineTemplate extends StObject {
   var customFields: js.UndefOr[
     /* An `accountCustomField` is an envelope custom field that you set at the account level. Applying custom fields enables account administators to
     group and manage envelopes.  */ AccountCustomFields
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex element that contains details about the documents associated with the envelope.
     */
-  var documents: js.UndefOr[js.Array[/* A document object. */ Document]] = js.native
+  var documents: js.UndefOr[js.Array[/* A document object. */ Document]] = js.undefined
   
   /**
     * A container used to send documents to recipients. The envelope carries information about the sender and timestamps to indicate the progress of the delivery procedure.
     * It can contain collections of Documents, Tabs and Recipients.
     */
-  var envelope: js.UndefOr[Envelope] = js.native
+  var envelope: js.UndefOr[Envelope] = js.undefined
   
   /**
     * An array of recipient objects that provides details about the recipients of the envelope.
     */
-  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.native
+  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.undefined
   
   /**
     * Specifies the order in which templates are overlaid.
     */
-  var sequence: js.UndefOr[String] = js.native
+  var sequence: js.UndefOr[String] = js.undefined
 }
 object InlineTemplate {
   

@@ -2,7 +2,6 @@ package typings.angularCompiler.srcCompilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "ReadPropExpr")
@@ -18,13 +17,13 @@ class ReadPropExpr protected ()
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,
     name: String,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,
     name: String,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

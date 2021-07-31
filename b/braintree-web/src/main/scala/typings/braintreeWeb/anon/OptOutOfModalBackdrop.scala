@@ -2,13 +2,11 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptOutOfModalBackdrop extends StObject {
   
-  var optOutOfModalBackdrop: Boolean = js.native
+  var optOutOfModalBackdrop: Boolean
 }
 object OptOutOfModalBackdrop {
   

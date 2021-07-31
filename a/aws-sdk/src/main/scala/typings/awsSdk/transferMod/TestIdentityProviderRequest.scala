@@ -2,36 +2,34 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestIdentityProviderRequest extends StObject {
   
   /**
     * A system-assigned identifier for a specific server. That server's user authentication method is tested with a user name and password.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
     * The type of file transfer protocol to be tested. The available protocols are:   Secure Shell (SSH) File Transfer Protocol (SFTP)   File Transfer Protocol Secure (FTPS)   File Transfer Protocol (FTP)  
     */
-  var ServerProtocol: js.UndefOr[Protocol] = js.native
+  var ServerProtocol: js.UndefOr[Protocol] = js.undefined
   
   /**
     * The source IP address of the user account to be tested.
     */
-  var SourceIp: js.UndefOr[typings.awsSdk.transferMod.SourceIp] = js.native
+  var SourceIp: js.UndefOr[typings.awsSdk.transferMod.SourceIp] = js.undefined
   
   /**
     * The name of the user account to be tested.
     */
-  var UserName: typings.awsSdk.transferMod.UserName = js.native
+  var UserName: typings.awsSdk.transferMod.UserName
   
   /**
     * The password of the user account to be tested.
     */
-  var UserPassword: js.UndefOr[typings.awsSdk.transferMod.UserPassword] = js.native
+  var UserPassword: js.UndefOr[typings.awsSdk.transferMod.UserPassword] = js.undefined
 }
 object TestIdentityProviderRequest {
   

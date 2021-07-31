@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommsNotifications extends StObject {
   
   // The notification of a change in the resource.
-  var value: js.UndefOr[NullableOption[js.Array[CommsNotification]]] = js.native
+  var value: js.UndefOr[NullableOption[js.Array[CommsNotification]]] = js.undefined
 }
 object CommsNotifications {
   

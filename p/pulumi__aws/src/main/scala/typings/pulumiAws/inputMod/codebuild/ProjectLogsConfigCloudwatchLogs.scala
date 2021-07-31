@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectLogsConfigCloudwatchLogs extends StObject {
   
   /**
     * The group name of the logs in CloudWatch Logs.
     */
-  var groupName: js.UndefOr[Input[String]] = js.native
+  var groupName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Current status of logs in S3 for a build project. Valid values: `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
     */
-  var status: js.UndefOr[Input[String]] = js.native
+  var status: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The stream name of the logs in CloudWatch Logs.
     */
-  var streamName: js.UndefOr[Input[String]] = js.native
+  var streamName: js.UndefOr[Input[String]] = js.undefined
 }
 object ProjectLogsConfigCloudwatchLogs {
   

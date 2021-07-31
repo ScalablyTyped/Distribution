@@ -3,7 +3,6 @@ package typings.mapboxGl.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "Marker")
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Marker () extends Evented {
   def this(element: HTMLElement) = this()
   def this(options: MarkerOptions) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: MarkerOptions) = this()
+  def this(element: Unit, options: MarkerOptions) = this()
   def this(element: HTMLElement, options: MarkerOptions) = this()
   
   def addTo(map: Map): this.type = js.native

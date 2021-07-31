@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Secret extends StObject {
   
   /** Output only. The time at which the Secret was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The labels assigned to this Secret. Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes, and must conform to the following PCRE regular
@@ -20,14 +18,14 @@ trait Secret extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The resource name of the Secret in the format `projects/∗/secrets/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The replication policy of the secret data attached to the Secret. The replication policy cannot be changed after the Secret has been created. */
-  var replication: js.UndefOr[Replication] = js.native
+  var replication: js.UndefOr[Replication] = js.undefined
 }
 object Secret {
   
@@ -50,7 +48,7 @@ object Secret {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

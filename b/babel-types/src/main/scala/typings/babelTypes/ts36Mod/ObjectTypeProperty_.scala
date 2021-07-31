@@ -3,35 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectTypeProperty_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with UserWhitespacable {
   
-  var key: Expression = js.native
+  var key: Expression
   
   @JSName("type")
-  var type_ObjectTypeProperty_ : ObjectTypeProperty = js.native
+  var type_ObjectTypeProperty_ : ObjectTypeProperty
   
-  var value: FlowTypeAnnotation = js.native
+  var value: FlowTypeAnnotation
 }
 object ObjectTypeProperty_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    key: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ObjectTypeProperty,
-    value: FlowTypeAnnotation
-  ): ObjectTypeProperty_ = {
+  def apply(end: Double, key: Expression, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): ObjectTypeProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[ObjectTypeProperty_]
   }
   

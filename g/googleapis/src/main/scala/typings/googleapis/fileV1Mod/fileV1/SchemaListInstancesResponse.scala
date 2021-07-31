@@ -2,13 +2,11 @@ package typings.googleapis.fileV1Mod.fileV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListInstancesResponse is the result of ListInstancesRequest.
   */
-@js.native
 trait SchemaListInstancesResponse extends StObject {
   
   /**
@@ -19,18 +17,18 @@ trait SchemaListInstancesResponse extends StObject {
     * &quot;unreachable&quot; field will be populated with a list of
     * unreachable locations.
     */
-  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.undefined
   
   /**
     * The token you can use to retrieve the next page of results. Not returned
     * if there are no more results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Locations that could not be reached.
     */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaListInstancesResponse {
   

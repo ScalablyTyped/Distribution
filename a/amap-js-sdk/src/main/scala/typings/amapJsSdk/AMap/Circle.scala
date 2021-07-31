@@ -2,37 +2,35 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Circle extends StObject {
   
-  def contains(point: LngLat): Boolean = js.native
+  def contains(point: LngLat): Boolean
   
-  def getBounds(): Bounds = js.native
+  def getBounds(): Bounds
   
-  def getCenter(): LngLat = js.native
+  def getCenter(): LngLat
   
-  def getExtData(): js.Any = js.native
+  def getExtData(): js.Any
   
-  def getOptions(): CircleOptions = js.native
+  def getOptions(): CircleOptions
   
-  def getRadius(): Double = js.native
+  def getRadius(): Double
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def setCenter(lnglat: LngLat): Unit = js.native
+  def setCenter(lnglat: LngLat): Unit
   
-  def setExtData(ext: js.Any): Unit = js.native
+  def setExtData(ext: js.Any): Unit
   
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map): Unit
   
-  def setOptions(circleopt: CircleOptions): Unit = js.native
+  def setOptions(circleopt: CircleOptions): Unit
   
-  def setRadius(radius: Double): Unit = js.native
+  def setRadius(radius: Double): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Circle {
   

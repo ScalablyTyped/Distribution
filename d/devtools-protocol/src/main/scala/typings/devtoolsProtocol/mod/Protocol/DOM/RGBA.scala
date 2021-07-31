@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RGBA extends StObject {
   
   /**
     * The alpha component, in the [0-1] range (default: 1).
     */
-  var a: js.UndefOr[Double] = js.native
+  var a: js.UndefOr[Double] = js.undefined
   
   /**
     * The blue component, in the [0-255] range.
     */
-  var b: integer = js.native
+  var b: integer
   
   /**
     * The green component, in the [0-255] range.
     */
-  var g: integer = js.native
+  var g: integer
   
   /**
     * The red component, in the [0-255] range.
     */
-  var r: integer = js.native
+  var r: integer
 }
 object RGBA {
   

@@ -3,7 +3,6 @@ package typings.reactNativeVectorIcons
 import typings.reactNativeVectorIcons.fontAwesome5Mod.FontAwesome5IconVariants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeVectorIconsStrings {
@@ -29,7 +28,9 @@ object reactNativeVectorIconsStrings {
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait brand extends FontAwesome5IconVariants
+  sealed trait brand
+    extends StObject
+       with FontAwesome5IconVariants
   @scala.inline
   def brand: brand = "brand".asInstanceOf[brand]
   
@@ -59,7 +60,9 @@ object reactNativeVectorIconsStrings {
   def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait light extends FontAwesome5IconVariants
+  sealed trait light
+    extends StObject
+       with FontAwesome5IconVariants
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -114,7 +117,9 @@ object reactNativeVectorIconsStrings {
   def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait solid extends FontAwesome5IconVariants
+  sealed trait solid
+    extends StObject
+       with FontAwesome5IconVariants
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   

@@ -13,7 +13,6 @@ import typings.arcgisRestApi.mod.SpatialReferenceWkid
 import typings.ol.featureMod.ReadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esriJSONMod {
@@ -28,7 +27,7 @@ object esriJSONMod {
   trait EsriJSON
     extends typings.ol.jsonfeatureMod.default {
     
-    /* protected */ def readFeatureFromObject(`object`: js.Any, opt_options: js.UndefOr[scala.Nothing], opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    /* protected */ def readFeatureFromObject(`object`: js.Any, opt_options: Unit, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     /* protected */ def readFeatureFromObject(`object`: js.Any, opt_options: ReadOptions, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     
     /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry): typings.ol.geometryMod.default = js.native
@@ -43,16 +42,15 @@ object esriJSONMod {
   
   type EsriJSONHasZM = HasZM
   
-  @js.native
   trait EsriJSONMultiPolygon extends StObject {
     
-    var hasM: js.UndefOr[Boolean] = js.native
+    var hasM: js.UndefOr[Boolean] = js.undefined
     
-    var hasZ: js.UndefOr[Boolean] = js.native
+    var hasZ: js.UndefOr[Boolean] = js.undefined
     
-    var rings: js.Array[js.Array[js.Array[js.Array[Double]]]] = js.native
+    var rings: js.Array[js.Array[js.Array[js.Array[Double]]]]
     
-    var spatialReference: js.UndefOr[EsriJSONSpatialReferenceWkid] = js.native
+    var spatialReference: js.UndefOr[EsriJSONSpatialReferenceWkid] = js.undefined
   }
   object EsriJSONMultiPolygon {
     
@@ -103,10 +101,9 @@ object esriJSONMod {
   
   type EsriJSONSpatialReferenceWkid = SpatialReferenceWkid
   
-  @js.native
   trait Options extends StObject {
     
-    var geometryName: js.UndefOr[String] = js.native
+    var geometryName: js.UndefOr[String] = js.undefined
   }
   object Options {
     

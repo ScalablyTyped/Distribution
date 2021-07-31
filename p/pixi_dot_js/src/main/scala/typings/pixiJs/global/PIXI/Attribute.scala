@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,193 +16,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Attribute")
 @js.native
 class Attribute protected ()
-  extends typings.pixiJs.PIXI.Attribute {
+  extends StObject
+     with typings.pixiJs.PIXI.Attribute {
   def this(buffer: String) = this()
   def this(buffer: String, size: Double) = this()
-  def this(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean) = this()
   def this(buffer: String, size: Double, normalized: Boolean) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double
-  ) = this()
-  def this(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean, `type`: Double) = this()
-  def this(buffer: String, size: Double, normalized: js.UndefOr[scala.Nothing], `type`: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: Double,
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Double) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: Double,
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: Double,
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double,
-    start: Double
-  ) = this()
-  def this(
-    buffer: String,
-    size: Double,
-    normalized: Boolean,
-    `type`: Double,
-    stride: js.UndefOr[scala.Nothing],
-    start: Double
-  ) = this()
+  def this(buffer: String, size: Double, normalized: Boolean, `type`: Unit, stride: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Double, stride: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Unit, stride: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Double, stride: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Unit, stride: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Double, stride: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Unit, stride: Double) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Boolean, `type`: Unit, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Boolean, `type`: Unit, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Double, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Double, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Unit, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Double, normalized: Unit, `type`: Unit, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Double, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Double, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Unit, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Boolean, `type`: Unit, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Double, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Double, stride: Unit, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Unit, stride: Double, start: Double) = this()
+  def this(buffer: String, size: Unit, normalized: Unit, `type`: Unit, stride: Unit, start: Double) = this()
+  
+  /**
+    * Destroys the Attribute.
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
 }
 object Attribute {
+  
+  @JSGlobal("PIXI.Attribute")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Helper function that creates an Attribute based on the information provided
@@ -218,99 +76,36 @@ object Attribute {
     * @returns {PIXI.Attribute} A new {@link PIXI.Attribute} based on the information provided
     */
   /* static member */
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: js.UndefOr[scala.Nothing],
-    normalized: Boolean,
-    `type`: Double,
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: Double): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: Double, normalized: js.UndefOr[scala.Nothing], `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: Double,
-    normalized: js.UndefOr[scala.Nothing],
-    `type`: Double,
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: Double, normalized: Boolean): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(
-    buffer: String,
-    size: Double,
-    normalized: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    stride: Double
-  ): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: Double, normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
-  @JSGlobal("PIXI.Attribute.from")
-  @js.native
-  def from(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = js.native
+  @scala.inline
+  def from(buffer: String): typings.pixiJs.PIXI.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Boolean): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Unit, `type`: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Unit, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Double, normalized: Unit, `type`: Unit, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Boolean): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Boolean, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Unit, `type`: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Unit, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
+  @scala.inline
+  def from(buffer: String, size: Unit, normalized: Unit, `type`: Unit, stride: Double): typings.pixiJs.PIXI.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Attribute]
 }

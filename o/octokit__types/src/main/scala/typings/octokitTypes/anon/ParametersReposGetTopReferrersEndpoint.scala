@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetTopReferrersResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetTopReferrersEndpoint extends StObject {
   
-  var parameters: ReposGetTopReferrersEndpoint = js.native
+  var parameters: ReposGetTopReferrersEndpoint
   
-  var request: ReposGetTopReferrersRequestOptions = js.native
+  var request: ReposGetTopReferrersRequestOptions
   
-  var response: OctokitResponse[ReposGetTopReferrersResponseData] = js.native
+  var response: OctokitResponse[ReposGetTopReferrersResponseData]
 }
 object ParametersReposGetTopReferrersEndpoint {
   

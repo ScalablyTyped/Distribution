@@ -2,91 +2,89 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WorkItem represents basic information about a WorkItem to be executed in
   * the cloud.
   */
-@js.native
 trait SchemaWorkItem extends StObject {
   
   /**
     * Work item-specific configuration as an opaque blob.
     */
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies this WorkItem.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The initial index to use when reporting the status of the WorkItem.
     */
-  var initialReportIndex: js.UndefOr[String] = js.native
+  var initialReportIndex: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the workflow job this WorkItem belongs to.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * Time when the lease on this Work will expire.
     */
-  var leaseExpireTime: js.UndefOr[String] = js.native
+  var leaseExpireTime: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information for MapTask WorkItems.
     */
-  var mapTask: js.UndefOr[SchemaMapTask] = js.native
+  var mapTask: js.UndefOr[SchemaMapTask] = js.undefined
   
   /**
     * Any required packages that need to be fetched in order to execute this
     * WorkItem.
     */
-  var packages: js.UndefOr[js.Array[SchemaPackage]] = js.native
+  var packages: js.UndefOr[js.Array[SchemaPackage]] = js.undefined
   
   /**
     * Identifies the cloud project this WorkItem belongs to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Recommended reporting interval.
     */
-  var reportStatusInterval: js.UndefOr[String] = js.native
+  var reportStatusInterval: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information for SeqMapTask WorkItems.
     */
-  var seqMapTask: js.UndefOr[SchemaSeqMapTask] = js.native
+  var seqMapTask: js.UndefOr[SchemaSeqMapTask] = js.undefined
   
   /**
     * Additional information for ShellTask WorkItems.
     */
-  var shellTask: js.UndefOr[SchemaShellTask] = js.native
+  var shellTask: js.UndefOr[SchemaShellTask] = js.undefined
   
   /**
     * Additional information for source operation WorkItems.
     */
-  var sourceOperationTask: js.UndefOr[SchemaSourceOperationRequest] = js.native
+  var sourceOperationTask: js.UndefOr[SchemaSourceOperationRequest] = js.undefined
   
   /**
     * Additional information for StreamingComputationTask WorkItems.
     */
-  var streamingComputationTask: js.UndefOr[SchemaStreamingComputationTask] = js.native
+  var streamingComputationTask: js.UndefOr[SchemaStreamingComputationTask] = js.undefined
   
   /**
     * Additional information for StreamingConfigTask WorkItems.
     */
-  var streamingConfigTask: js.UndefOr[SchemaStreamingConfigTask] = js.native
+  var streamingConfigTask: js.UndefOr[SchemaStreamingConfigTask] = js.undefined
   
   /**
     * Additional information for StreamingSetupTask WorkItems.
     */
-  var streamingSetupTask: js.UndefOr[SchemaStreamingSetupTask] = js.native
+  var streamingSetupTask: js.UndefOr[SchemaStreamingSetupTask] = js.undefined
 }
 object SchemaWorkItem {
   

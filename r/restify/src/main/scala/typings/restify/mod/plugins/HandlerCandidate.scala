@@ -6,17 +6,15 @@ import typings.restify.mod.RequestHandler
 import typings.restify.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandlerCandidate extends StObject {
   
-  var contentType: js.UndefOr[String | js.Array[String]] = js.native
+  var contentType: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var handler: RequestHandler | js.Array[RequestHandler] = js.native
+  var handler: RequestHandler | js.Array[RequestHandler]
   
-  var version: js.UndefOr[String | js.Array[String]] = js.native
+  var version: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object HandlerCandidate {
   

@@ -6,46 +6,46 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePromoofferGet extends StandardParameters {
+trait ParamsResourcePromoofferGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * device android_id
     */
-  var androidId: js.UndefOr[String] = js.native
+  var androidId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * device device
     */
-  var device: js.UndefOr[String] = js.native
+  var device: js.UndefOr[String] = js.undefined
   
   /**
     * device manufacturer
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * device model
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * device product
     */
-  var product: js.UndefOr[String] = js.native
+  var product: js.UndefOr[String] = js.undefined
   
   /**
     * device serial
     */
-  var serial: js.UndefOr[String] = js.native
+  var serial: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePromoofferGet {
   

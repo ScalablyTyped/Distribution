@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUsersResponse extends StObject {
   
   /**
     *  The token to use to retrieve the next page of results. This value is `null` when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * The overview of users for an organization.
     */
-  var Users: js.UndefOr[typings.awsSdk.workmailMod.Users] = js.native
+  var Users: js.UndefOr[typings.awsSdk.workmailMod.Users] = js.undefined
 }
 object ListUsersResponse {
   

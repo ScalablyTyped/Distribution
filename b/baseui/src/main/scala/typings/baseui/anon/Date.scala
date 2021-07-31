@@ -2,13 +2,11 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  var date: typings.std.Date | js.Array[typings.std.Date] = js.native
+  var date: typings.std.Date | js.Array[typings.std.Date]
 }
 object Date {
   

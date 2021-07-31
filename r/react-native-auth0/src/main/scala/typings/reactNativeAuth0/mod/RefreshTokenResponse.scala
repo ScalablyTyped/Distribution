@@ -2,21 +2,19 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshTokenResponse extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
-  var idToken: String = js.native
+  var idToken: String
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var tokenType: String = js.native
+  var tokenType: String
 }
 object RefreshTokenResponse {
   

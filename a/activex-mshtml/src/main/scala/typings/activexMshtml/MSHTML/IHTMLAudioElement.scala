@@ -2,14 +2,12 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLAudioElement extends StObject {
   
   @JSName("MSHTML.IHTMLAudioElement_typekey")
-  var MSHTMLDotIHTMLAudioElement_typekey: IHTMLAudioElement = js.native
+  var MSHTMLDotIHTMLAudioElement_typekey: IHTMLAudioElement
 }
 object IHTMLAudioElement {
   

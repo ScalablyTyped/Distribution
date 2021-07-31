@@ -2,80 +2,80 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource that describes a message that is exchanged between systems
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait MessageHeader extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait MessageHeader
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'timestamp'.
     */
-  var _timestamp: js.UndefOr[Element] = js.native
+  var _timestamp: js.UndefOr[Element] = js.undefined
   
   /**
     * The source of the decision
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Message destination application(s)
     */
-  var destination: js.UndefOr[js.Array[MessageHeaderDestination]] = js.native
+  var destination: js.UndefOr[js.Array[MessageHeaderDestination]] = js.undefined
   
   /**
     * The source of the data entry
     */
-  var enterer: js.UndefOr[Reference] = js.native
+  var enterer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Code for the event this message represents
     */
-  var event: Coding = js.native
+  var event: Coding
   
   /**
     * The actual content of the message
     */
-  var focus: js.UndefOr[js.Array[Reference]] = js.native
+  var focus: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Cause of event
     */
-  var reason: js.UndefOr[CodeableConcept] = js.native
+  var reason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Intended "real-world" recipient for the data
     */
-  var receiver: js.UndefOr[Reference] = js.native
+  var receiver: js.UndefOr[Reference] = js.undefined
   
   /**
     * If this is a reply to prior message
     */
-  var response: js.UndefOr[MessageHeaderResponse] = js.native
+  var response: js.UndefOr[MessageHeaderResponse] = js.undefined
   
   /**
     * Final responsibility for event
     */
-  var responsible: js.UndefOr[Reference] = js.native
+  var responsible: js.UndefOr[Reference] = js.undefined
   
   /**
     * Real world sender of the message
     */
-  var sender: js.UndefOr[Reference] = js.native
+  var sender: js.UndefOr[Reference] = js.undefined
   
   /**
     * Message source application
     */
-  var source: MessageHeaderSource = js.native
+  var source: MessageHeaderSource
   
   /**
     * Time that the message was sent
     */
-  var timestamp: instant = js.native
+  var timestamp: instant
 }
 object MessageHeader {
   

@@ -22,16 +22,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a set of properties to access the defaults of a drawing document
   * @see DrawingDocumentFactory
   */
-@js.native
 trait Defaults
-  extends TextProperties
+  extends StObject
+     with TextProperties
      with LineProperties
      with FillProperties
      with ShadowProperties

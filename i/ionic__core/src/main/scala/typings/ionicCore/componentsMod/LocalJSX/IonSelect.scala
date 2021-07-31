@@ -8,91 +8,89 @@ import typings.ionicCore.selectInterfaceMod.SelectInterface
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSelect extends StObject {
   
   /**
     * The text to display on the cancel button.
     */
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
   /**
     * A property name or function used to compare object values
     */
-  var compareWith: js.UndefOr[String | SelectCompareFn | Null] = js.native
+  var compareWith: js.UndefOr[String | SelectCompareFn | Null] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the select.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The interface the select should use: `action-sheet`, `popover` or `alert`.
     */
-  var interface: js.UndefOr[SelectInterface] = js.native
+  var interface: js.UndefOr[SelectInterface] = js.undefined
   
   /**
     * Any additional options that the `alert`, `action-sheet` or `popover` interface can take. See the [ion-alert docs](../alert), the [ion-action-sheet docs](../action-sheet) and the [ion-popover docs](../popover) for the create options for each interface.  Note: `interfaceOptions` will not override `inputs` or `buttons` with the `alert` interface.
     */
-  var interfaceOptions: js.UndefOr[js.Any] = js.native
+  var interfaceOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * If `true`, the select can accept multiple values.
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display on the ok button.
     */
-  var okText: js.UndefOr[String] = js.native
+  var okText: js.UndefOr[String] = js.undefined
   
   /**
     * Emitted when the select loses focus.
     */
-  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the selection is cancelled.
     */
-  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SelectChangeEventDetail[_]], Unit]] = js.native
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SelectChangeEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted when the select has focus.
     */
-  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * The text to display when the select is empty.
     */
-  var placeholder: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The text to display instead of the selected option's value.
     */
-  var selectedText: js.UndefOr[String | Null] = js.native
+  var selectedText: js.UndefOr[String | Null] = js.undefined
   
   /**
     * the value of the select.
     */
-  var value: js.UndefOr[js.Any | Null] = js.native
+  var value: js.UndefOr[js.Any | Null] = js.undefined
 }
 object IonSelect {
   
@@ -178,7 +176,7 @@ object IonSelect {
     def setOnIonCancelUndefined: Self = StObject.set(x, "onIonCancel", js.undefined)
     
     @scala.inline
-    def setOnIonChange(value: /* event */ CustomEvent[SelectChangeEventDetail[_]] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
+    def setOnIonChange(value: /* event */ CustomEvent[SelectChangeEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)

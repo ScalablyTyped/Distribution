@@ -3,17 +3,17 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.mod.IListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPaymentMethodListOptions[T /* <: IPaymentMethodType */] extends IListOptions {
+trait IPaymentMethodListOptions[T /* <: IPaymentMethodType */]
+  extends StObject
+     with IListOptions {
   
   /** The ID of the customer whose PaymentMethods will be retrieved. */
-  var customer: String = js.native
+  var customer: String
   
   /** A required filter on the list, based on the object type field. */
-  var `type`: T = js.native
+  var `type`: T
 }
 object IPaymentMethodListOptions {
   
@@ -25,7 +25,7 @@ object IPaymentMethodListOptions {
   }
   
   @scala.inline
-  implicit class IPaymentMethodListOptionsMutableBuilder[Self <: IPaymentMethodListOptions[_], T /* <: IPaymentMethodType */] (val x: Self with IPaymentMethodListOptions[T]) extends AnyVal {
+  implicit class IPaymentMethodListOptionsMutableBuilder[Self <: IPaymentMethodListOptions[?], T /* <: IPaymentMethodType */] (val x: Self & IPaymentMethodListOptions[T]) extends AnyVal {
     
     @scala.inline
     def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])

@@ -2,55 +2,55 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key Object Selection
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ImagingManifest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ImagingManifest
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'authoringTime'.
     */
-  var _authoringTime: js.UndefOr[Element] = js.native
+  var _authoringTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Author (human or machine)
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Time when the selection of instances was made
     */
-  var authoringTime: js.UndefOr[dateTime] = js.native
+  var authoringTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Description text
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * SOP Instance UID
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Patient of the selected objects
     */
-  var patient: Reference = js.native
+  var patient: Reference
   
   /**
     * Study identity of the selected instances
     */
-  var study: js.Array[ImagingManifestStudy] = js.native
+  var study: js.Array[ImagingManifestStudy]
 }
 object ImagingManifest {
   

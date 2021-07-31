@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialLocatorPositionalTrackingDeactivatingEventArgs extends StObject {
   
-  var canceled: js.Any = js.native
+  var canceled: js.Any
 }
 object SpatialLocatorPositionalTrackingDeactivatingEventArgs {
   

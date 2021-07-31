@@ -2,73 +2,71 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Control extends StObject {
   
   /**
     * Contribution for the control.
     */
-  var contribution: WitContribution = js.native
+  var contribution: WitContribution
   
   /**
     * Type of the control.
     */
-  var controlType: String = js.native
+  var controlType: String
   
   /**
     * Height of the control, for html controls.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The id for the layout node.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value indicating whether this layout node has been inherited from a parent layout.  This is expected to only be only set by the combiner.
     */
-  var inherited: Boolean = js.native
+  var inherited: Boolean
   
   /**
     * A value indicating if the layout node is contribution or not.
     */
-  var isContribution: Boolean = js.native
+  var isContribution: Boolean
   
   /**
     * Label for the field
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Inner text of the control.
     */
-  var metadata: String = js.native
+  var metadata: String
   
-  var order: Double = js.native
+  var order: Double
   
   /**
     * A value indicating whether this layout node has been overridden by a child layout.
     */
-  var overridden: Boolean = js.native
+  var overridden: Boolean
   
   /**
     * A value indicating if the control is readonly.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * A value indicating if the control should be hidden or not.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * Watermark text for the textbox.
     */
-  var watermark: String = js.native
+  var watermark: String
 }
 object Control {
   

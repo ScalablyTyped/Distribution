@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookInstanceLifecycleHook extends StObject {
   
   /**
     * A base64-encoded string that contains a shell script for a notebook instance lifecycle configuration.
     */
-  var Content: js.UndefOr[NotebookInstanceLifecycleConfigContent] = js.native
+  var Content: js.UndefOr[NotebookInstanceLifecycleConfigContent] = js.undefined
 }
 object NotebookInstanceLifecycleHook {
   

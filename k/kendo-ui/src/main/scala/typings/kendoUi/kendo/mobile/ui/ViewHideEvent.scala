@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewHideEvent extends ViewEvent {
+trait ViewHideEvent
+  extends StObject
+     with ViewEvent {
   
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
 }
 object ViewHideEvent {
   

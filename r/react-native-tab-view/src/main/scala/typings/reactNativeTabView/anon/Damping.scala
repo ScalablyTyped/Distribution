@@ -1,56 +1,60 @@
 package typings.reactNativeTabView.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Damping extends js.Object {
-  var damping: js.UndefOr[Double] = js.native
-  var mass: js.UndefOr[Double] = js.native
-  var restDisplacementThreshold: js.UndefOr[Double] = js.native
-  var restSpeedThreshold: js.UndefOr[Double] = js.native
-  var stiffness: js.UndefOr[Double] = js.native
+trait Damping extends StObject {
+  
+  var damping: js.UndefOr[Double] = js.undefined
+  
+  var mass: js.UndefOr[Double] = js.undefined
+  
+  var restDisplacementThreshold: js.UndefOr[Double] = js.undefined
+  
+  var restSpeedThreshold: js.UndefOr[Double] = js.undefined
+  
+  var stiffness: js.UndefOr[Double] = js.undefined
 }
-
 object Damping {
+  
   @scala.inline
   def apply(): Damping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Damping]
   }
-  @scala.inline
-  implicit class DampingOps[Self <: Damping] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
-    @scala.inline
-    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMass: Self = this.set("mass", js.undefined)
-    @scala.inline
-    def setRestDisplacementThreshold(value: Double): Self = this.set("restDisplacementThreshold", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRestDisplacementThreshold: Self = this.set("restDisplacementThreshold", js.undefined)
-    @scala.inline
-    def setRestSpeedThreshold(value: Double): Self = this.set("restSpeedThreshold", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRestSpeedThreshold: Self = this.set("restSpeedThreshold", js.undefined)
-    @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
-  }
   
+  @scala.inline
+  implicit class DampingMutableBuilder[Self <: Damping] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    
+    @scala.inline
+    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    
+    @scala.inline
+    def setRestDisplacementThreshold(value: Double): Self = StObject.set(x, "restDisplacementThreshold", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRestDisplacementThresholdUndefined: Self = StObject.set(x, "restDisplacementThreshold", js.undefined)
+    
+    @scala.inline
+    def setRestSpeedThreshold(value: Double): Self = StObject.set(x, "restSpeedThreshold", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRestSpeedThresholdUndefined: Self = StObject.set(x, "restSpeedThreshold", js.undefined)
+    
+    @scala.inline
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+  }
 }
-

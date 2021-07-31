@@ -7,7 +7,6 @@ import typings.wordpressComponents.colorPaletteMod.ColorPalette.Color
 import typings.wordpressComponents.iconMod.Icon.IconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelColorSettingsMod {
@@ -27,30 +26,29 @@ object panelColorSettingsMod {
   object PanelColorSettings {
     
     /* Inlined std.Partial<@wordpress/components.@wordpress/components.ColorPalette.Props> & std.Pick<@wordpress/components.@wordpress/components.ColorPalette.Props, 'onChange' | 'value'> & {  label :string} */
-    @js.native
     trait ColorSetting extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var clearable: js.UndefOr[Boolean] = js.native
+      var clearable: js.UndefOr[Boolean] = js.undefined
       
-      var colors: js.UndefOr[js.Array[Color]] = js.native
+      var colors: js.UndefOr[js.Array[Color]] = js.undefined
       
-      var disableCustomColors: js.UndefOr[Boolean] = js.native
+      var disableCustomColors: js.UndefOr[Boolean] = js.undefined
       
-      var label: String = js.native
+      var label: String
       
-      var onChange: js.UndefOr[js.Function0[Unit]] with js.Function0[Unit] = js.native
+      var onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]
       
-      var value: js.UndefOr[Color] with Color = js.native
+      var value: js.UndefOr[Color] & Color
     }
     object ColorSetting {
       
       @scala.inline
       def apply(
         label: String,
-        onChange: js.UndefOr[js.Function0[Unit]] with js.Function0[Unit],
-        value: js.UndefOr[Color] with Color
+        onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit],
+        value: js.UndefOr[Color] & Color
       ): ColorSetting = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[ColorSetting]
@@ -90,32 +88,31 @@ object panelColorSettingsMod {
         def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setOnChange(value: js.UndefOr[js.Function0[Unit]] with js.Function0[Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+        def setOnChange(value: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setValue(value: js.UndefOr[Color] with Color): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        def setValue(value: js.UndefOr[Color] & Color): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
     /* Inlined parent std.Omit<@wordpress/components.@wordpress/components.PanelBody.Props, 'children'> */
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[js.Any] = js.native
+      var className: js.UndefOr[js.Any] = js.undefined
       
-      var colorSettings: js.Array[ColorSetting] = js.native
+      var colorSettings: js.Array[ColorSetting]
       
-      var disableCustomColors: js.UndefOr[Boolean] = js.native
+      var disableCustomColors: js.UndefOr[Boolean] = js.undefined
       
-      var icon: js.UndefOr[IconType[js.Object]] = js.native
+      var icon: js.UndefOr[IconType[js.Object]] = js.undefined
       
-      var initialOpen: js.UndefOr[Boolean] = js.native
+      var initialOpen: js.UndefOr[Boolean] = js.undefined
       
-      var onToggle: js.UndefOr[js.Function0[Unit]] = js.native
+      var onToggle: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var opened: js.UndefOr[Boolean] = js.native
+      var opened: js.UndefOr[Boolean] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Props {
       

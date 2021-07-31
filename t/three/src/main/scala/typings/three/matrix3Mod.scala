@@ -5,7 +5,6 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrix3Mod {
@@ -15,9 +14,24 @@ object matrix3Mod {
   /**
   	 * Creates an identity matrix.
   	 */
-  class Matrix3 () extends Matrix {
+  class Matrix3 ()
+    extends StObject
+       with Matrix {
     
-    def copy(m: Matrix3): this.type = js.native
+    /**
+    	 * copy(m:T):T;
+    	 */
+    /* CompleteClass */
+    override def copy(m: this.type): this.type = js.native
+    
+    /* CompleteClass */
+    override def determinant(): Double = js.native
+    
+    /**
+    	 * Array with matrix values.
+    	 */
+    /* CompleteClass */
+    var elements: js.Array[Double] = js.native
     
     def equals(matrix: Matrix3): Boolean = js.native
     
@@ -43,11 +57,22 @@ object matrix3Mod {
     def fromArray(array: ArrayLike[Double]): Matrix3 = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): Matrix3 = js.native
     
+    /**
+    	 * getInverse(matrix:T):T;
+    	 */
+    /* CompleteClass */
+    override def getInverse(matrix: Matrix): Matrix = js.native
     def getInverse(matrix: Matrix3): Matrix3 = js.native
     def getInverse(matrix: Matrix4): Matrix3 = js.native
     def getInverse(matrix: Matrix4, throwOnDegenerate: Boolean): Matrix3 = js.native
     
     def getNormalMatrix(matrix4: Matrix4): Matrix3 = js.native
+    
+    /**
+    	 * identity():T;
+    	 */
+    /* CompleteClass */
+    override def identity(): Matrix = js.native
     
     /**
     	 * Multiplies this matrix by m.
@@ -58,6 +83,12 @@ object matrix3Mod {
     	 * Sets this matrix to a x b.
     	 */
     def multiplyMatrices(a: Matrix3, b: Matrix3): Matrix3 = js.native
+    
+    /**
+    	 * multiplyScalar(s:number):T;
+    	 */
+    /* CompleteClass */
+    override def multiplyScalar(s: Double): Matrix = js.native
     
     /**
     	 * @deprecated Use {@link Vector3.applyMatrix3 vector.applyMatrix3( matrix )} instead.
@@ -98,9 +129,9 @@ object matrix3Mod {
     	 * @return The provided array-like.
     	 */
     def toArray(): ArrayLike[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): ArrayLike[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     /**
@@ -112,9 +143,15 @@ object matrix3Mod {
     @JSName("toArray")
     def toArray_Array(): js.Array[Double] = js.native
     @JSName("toArray")
-    def toArray_Array(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
+    def toArray_Array(array: Unit, offset: Double): js.Array[Double] = js.native
     
     def translate(tx: Double, ty: Double): Matrix3 = js.native
+    
+    /**
+    	 * transpose():T;
+    	 */
+    /* CompleteClass */
+    override def transpose(): Matrix = js.native
     
     /**
     	 * Transposes this matrix into the supplied array r, and returns itself.
@@ -122,40 +159,39 @@ object matrix3Mod {
     def transposeIntoArray(r: js.Array[Double]): Matrix3 = js.native
   }
   
-  @js.native
   trait Matrix extends StObject {
     
     /**
     	 * copy(m:T):T;
     	 */
-    def copy(m: this.type): this.type = js.native
+    def copy(m: this.type): this.type
     
-    def determinant(): Double = js.native
+    def determinant(): Double
     
     /**
     	 * Array with matrix values.
     	 */
-    var elements: js.Array[Double] = js.native
+    var elements: js.Array[Double]
     
     /**
     	 * getInverse(matrix:T):T;
     	 */
-    def getInverse(matrix: Matrix): Matrix = js.native
+    def getInverse(matrix: Matrix): Matrix
     
     /**
     	 * identity():T;
     	 */
-    def identity(): Matrix = js.native
+    def identity(): Matrix
     
     /**
     	 * multiplyScalar(s:number):T;
     	 */
-    def multiplyScalar(s: Double): Matrix = js.native
+    def multiplyScalar(s: Double): Matrix
     
     /**
     	 * transpose():T;
     	 */
-    def transpose(): Matrix = js.native
+    def transpose(): Matrix
   }
   object Matrix {
     

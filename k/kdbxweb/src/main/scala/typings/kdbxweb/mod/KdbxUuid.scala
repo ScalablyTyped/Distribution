@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "KdbxUuid")
@@ -24,7 +23,10 @@ class KdbxUuid protected () extends StObject {
 /* static members */
 object KdbxUuid {
   
-  @JSImport("kdbxweb", "KdbxUuid.random")
+  @JSImport("kdbxweb", "KdbxUuid")
   @js.native
-  def random(): KdbxUuid = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def random(): KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[KdbxUuid]
 }

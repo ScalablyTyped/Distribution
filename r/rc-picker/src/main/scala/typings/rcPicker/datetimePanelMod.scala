@@ -19,66 +19,67 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimePanelMod {
   
-  @JSImport("rc-picker/es/panels/DatetimePanel", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DatetimePanel", JSImport.Namespace)
   @js.native
-  def default[DateType](props: DatetimePanelProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[DateType](props: DatetimePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined parent std.Omit<rc-picker.rc-picker/es/panels/DatePanel.DatePanelProps<DateType>, 'disabledHours' | 'disabledMinutes' | 'disabledSeconds'> */
-  @js.native
   trait DatetimePanelProps[DateType] extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[DateType] = js.native
+    var defaultPickerValue: js.UndefOr[DateType] = js.undefined
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.native
+    var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var keyboardConfig: js.UndefOr[KeyboardConfig] = js.native
+    var keyboardConfig: js.UndefOr[KeyboardConfig] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var onPanelChange: js.Function2[/* mode */ PanelMode | Null, /* viewValue */ DateType, Unit] = js.native
+    var onPanelChange: js.Function2[/* mode */ PanelMode | Null, /* viewValue */ DateType, Unit]
     
-    var onSelect: OnSelect[DateType] = js.native
+    var onSelect: OnSelect[DateType]
     
-    var onViewDateChange: js.Function1[/* value */ DateType, Unit] = js.native
+    var onViewDateChange: js.Function1[/* value */ DateType, Unit]
     
-    var operationRef: MutableRefObject[PanelRefProps] = js.native
+    var operationRef: MutableRefObject[PanelRefProps]
     
-    var panelName: js.UndefOr[String] = js.native
+    var panelName: js.UndefOr[String] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.native
+    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.undefined
     
-    var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.native
+    var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.undefined
     
-    var superNextIcon: js.UndefOr[ReactNode] = js.native
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superPrevIcon: js.UndefOr[ReactNode] = js.native
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[NullableDateType[DateType]] = js.native
+    var value: js.UndefOr[NullableDateType[DateType]] = js.undefined
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object DatetimePanelProps {
     
@@ -98,7 +99,7 @@ object datetimePanelMod {
     }
     
     @scala.inline
-    implicit class DatetimePanelPropsMutableBuilder[Self <: DatetimePanelProps[_], DateType] (val x: Self with DatetimePanelProps[DateType]) extends AnyVal {
+    implicit class DatetimePanelPropsMutableBuilder[Self <: DatetimePanelProps[?], DateType] (val x: Self & DatetimePanelProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])

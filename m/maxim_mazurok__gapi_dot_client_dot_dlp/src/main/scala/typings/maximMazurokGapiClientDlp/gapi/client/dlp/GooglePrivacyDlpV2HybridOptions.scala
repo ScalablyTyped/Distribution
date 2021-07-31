@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2HybridOptions extends StObject {
   
   /** A short description of where the data is coming from. Will be stored once in the job. 256 max length. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * To organize findings, these labels will be added to each finding. Label keys must be between 1 and 63 characters long and must conform to the following regular expression:
@@ -20,17 +18,17 @@ trait GooglePrivacyDlpV2HybridOptions extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * These are labels that each inspection request must include within their 'finding_labels' map. Request may contain others, but any missing one of these will be rejected. Label keys
     * must be between 1 and 63 characters long and must conform to the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`. No more than 10 keys can be required.
     */
-  var requiredFindingLabelKeys: js.UndefOr[js.Array[String]] = js.native
+  var requiredFindingLabelKeys: js.UndefOr[js.Array[String]] = js.undefined
   
   /** If the container is a table, additional information to make findings meaningful such as the columns that are primary keys. */
-  var tableOptions: js.UndefOr[GooglePrivacyDlpV2TableOptions] = js.native
+  var tableOptions: js.UndefOr[GooglePrivacyDlpV2TableOptions] = js.undefined
 }
 object GooglePrivacyDlpV2HybridOptions {
   
@@ -53,7 +51,7 @@ object GooglePrivacyDlpV2HybridOptions {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

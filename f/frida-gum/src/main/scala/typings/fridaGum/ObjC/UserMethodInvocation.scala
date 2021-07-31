@@ -2,17 +2,15 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserMethodInvocation[D, T, S] extends StObject {
   
-  var data: D = js.native
+  var data: D
   
-  var self: T = js.native
+  var self: T
   
-  var `super`: S = js.native
+  var `super`: S
 }
 object UserMethodInvocation {
   
@@ -24,7 +22,7 @@ object UserMethodInvocation {
   }
   
   @scala.inline
-  implicit class UserMethodInvocationMutableBuilder[Self <: UserMethodInvocation[_, _, _], D, T, S] (val x: Self with (UserMethodInvocation[D, T, S])) extends AnyVal {
+  implicit class UserMethodInvocationMutableBuilder[Self <: UserMethodInvocation[?, ?, ?], D, T, S] (val x: Self & (UserMethodInvocation[D, T, S])) extends AnyVal {
     
     @scala.inline
     def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInstanceMetadata extends StObject {
   
   /** The time at which this operation was cancelled. If set, this operation is in the process of undoing itself (which is guaranteed to succeed) and cannot be cancelled again. */
-  var cancelTime: js.UndefOr[String] = js.native
+  var cancelTime: js.UndefOr[String] = js.undefined
   
   /** The time at which this operation failed or was completed successfully. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The desired end state of the update. */
-  var instance: js.UndefOr[Instance] = js.native
+  var instance: js.UndefOr[Instance] = js.undefined
   
   /** The time at which UpdateInstance request was received. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object UpdateInstanceMetadata {
   

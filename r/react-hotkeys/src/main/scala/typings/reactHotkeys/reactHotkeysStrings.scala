@@ -3,7 +3,6 @@ package typings.reactHotkeys
 import typings.reactHotkeys.mod.KeyEventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactHotkeysStrings {
@@ -24,17 +23,23 @@ object reactHotkeysStrings {
   def KeyMap: KeyMap = "KeyMap".asInstanceOf[KeyMap]
   
   @js.native
-  sealed trait keydown extends KeyEventName
+  sealed trait keydown
+    extends StObject
+       with KeyEventName
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait keypress extends KeyEventName
+  sealed trait keypress
+    extends StObject
+       with KeyEventName
   @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait keyup extends KeyEventName
+  sealed trait keyup
+    extends StObject
+       with KeyEventName
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
 }

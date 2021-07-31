@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for boolean properties.
   */
-@js.native
 trait SchemaBooleanPropertyOptions extends StObject {
   
   /**
     * If set, describes how the boolean should be used as a search operator.
     */
-  var operatorOptions: js.UndefOr[SchemaBooleanOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[SchemaBooleanOperatorOptions] = js.undefined
 }
 object SchemaBooleanPropertyOptions {
   

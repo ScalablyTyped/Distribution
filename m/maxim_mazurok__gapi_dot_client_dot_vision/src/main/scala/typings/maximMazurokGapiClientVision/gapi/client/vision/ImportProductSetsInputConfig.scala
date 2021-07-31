@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportProductSetsInputConfig extends StObject {
   
   /** The Google Cloud Storage location for a csv file which preserves a list of ImportProductSetRequests in each line. */
-  var gcsSource: js.UndefOr[ImportProductSetsGcsSource] = js.native
+  var gcsSource: js.UndefOr[ImportProductSetsGcsSource] = js.undefined
 }
 object ImportProductSetsInputConfig {
   

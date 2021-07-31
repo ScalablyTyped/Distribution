@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A poly-polygon consists of multiple polygons combined in one.
   */
-@js.native
 trait PolyPolygonDescriptor extends StObject {
   
   /** These are the untransformed points of this polygon. */
-  var Geometry: PointSequenceSequence = js.native
+  var Geometry: PointSequenceSequence
   
   /** These are the reference points for this polygon. */
-  var PolyPolygon: PointSequenceSequence = js.native
+  var PolyPolygon: PointSequenceSequence
   
   /** This is the type of polygon. */
-  var PolygonKind: typings.activexLibreoffice.com_.sun.star.drawing.PolygonKind = js.native
+  var PolygonKind: typings.activexLibreoffice.com_.sun.star.drawing.PolygonKind
 }
 object PolyPolygonDescriptor {
   

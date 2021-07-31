@@ -2,26 +2,26 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unstableUseMediaQueryMod {
   
-  @JSImport("@material-ui/core/useMediaQuery/unstable_useMediaQuery", JSImport.Default)
+  @JSImport("@material-ui/core/useMediaQuery/unstable_useMediaQuery", JSImport.Namespace)
   @js.native
-  def default(query: String): Boolean = js.native
-  @JSImport("@material-ui/core/useMediaQuery/unstable_useMediaQuery", JSImport.Default)
-  @js.native
-  def default(query: String, options: Options): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(query: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait MuiMediaQueryList extends StObject {
     
-    def addListener(listener: MuiMediaQueryListListener): Unit = js.native
+    def addListener(listener: MuiMediaQueryListListener): Unit
     
-    var matches: Boolean = js.native
+    var matches: Boolean
     
-    def removeListener(listener: MuiMediaQueryListListener): Unit = js.native
+    def removeListener(listener: MuiMediaQueryListListener): Unit
   }
   object MuiMediaQueryList {
     
@@ -49,10 +49,9 @@ object unstableUseMediaQueryMod {
     }
   }
   
-  @js.native
   trait MuiMediaQueryListEvent extends StObject {
     
-    var matches: Boolean = js.native
+    var matches: Boolean
   }
   object MuiMediaQueryListEvent {
     
@@ -72,14 +71,13 @@ object unstableUseMediaQueryMod {
   
   type MuiMediaQueryListListener = js.Function1[/* event */ MuiMediaQueryListEvent, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var defaultMatches: js.UndefOr[Boolean] = js.native
+    var defaultMatches: js.UndefOr[Boolean] = js.undefined
     
-    var noSsr: js.UndefOr[Boolean] = js.native
+    var noSsr: js.UndefOr[Boolean] = js.undefined
     
-    var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, MuiMediaQueryList]] = js.native
+    var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, MuiMediaQueryList]] = js.undefined
   }
   object Options {
     

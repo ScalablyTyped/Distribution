@@ -3,7 +3,6 @@ package typings.mapboxGl.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "Evented")
@@ -15,11 +14,11 @@ class Evented () extends StObject {
   def fire(`type`: String, properties: StringDictionary[js.Any]): this.type = js.native
   
   def off(): this.type = js.native
-  def off(`type`: js.UndefOr[scala.Nothing], listener: js.Function): this.type = js.native
   def off(`type`: String): this.type = js.native
   def off(`type`: String, listener: js.Function): this.type = js.native
   def off(`type`: js.Any): this.type = js.native
   def off(`type`: js.Any, listener: js.Function): this.type = js.native
+  def off(`type`: Unit, listener: js.Function): this.type = js.native
   
   def on(`type`: String, listener: js.Function): this.type = js.native
   

@@ -5,48 +5,46 @@ import typings.awsSdkClientCodecommitNode.typesUserInfoMod.UserInfo
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommitMod {
   
-  @js.native
   trait Commit extends StObject {
     
     /**
       * <p>Any additional data associated with the specified commit.</p>
       */
-    var additionalData: js.UndefOr[String] = js.native
+    var additionalData: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Information about the author of the specified commit. Information includes the date in timestamp format with GMT offset, the name of the author, and the email address for the author, as configured in Git.</p>
       */
-    var author: js.UndefOr[UserInfo] = js.native
+    var author: js.UndefOr[UserInfo] = js.undefined
     
     /**
       * <p>The full SHA of the specified commit. </p>
       */
-    var commitId: js.UndefOr[String] = js.native
+    var commitId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Information about the person who committed the specified commit, also known as the committer. Information includes the date in timestamp format with GMT offset, the name of the committer, and the email address for the committer, as configured in Git.</p> <p>For more information about the difference between an author and a committer in Git, see <a href="http://git-scm.com/book/ch2-3.html">Viewing the Commit History</a> in Pro Git by Scott Chacon and Ben Straub.</p>
       */
-    var committer: js.UndefOr[UserInfo] = js.native
+    var committer: js.UndefOr[UserInfo] = js.undefined
     
     /**
       * <p>The commit message associated with the specified commit.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A list of parent commits for the specified commit. Each parent commit ID is the full commit ID.</p>
       */
-    var parents: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var parents: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>Tree information for the specified commit.</p>
       */
-    var treeId: js.UndefOr[String] = js.native
+    var treeId: js.UndefOr[String] = js.undefined
   }
   object Commit {
     
@@ -106,26 +104,27 @@ object typesCommitMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCommit extends Commit {
+  trait UnmarshalledCommit
+    extends StObject
+       with Commit {
     
     /**
       * <p>Information about the author of the specified commit. Information includes the date in timestamp format with GMT offset, the name of the author, and the email address for the author, as configured in Git.</p>
       */
     @JSName("author")
-    var author_UnmarshalledCommit: js.UndefOr[UnmarshalledUserInfo] = js.native
+    var author_UnmarshalledCommit: js.UndefOr[UnmarshalledUserInfo] = js.undefined
     
     /**
       * <p>Information about the person who committed the specified commit, also known as the committer. Information includes the date in timestamp format with GMT offset, the name of the committer, and the email address for the committer, as configured in Git.</p> <p>For more information about the difference between an author and a committer in Git, see <a href="http://git-scm.com/book/ch2-3.html">Viewing the Commit History</a> in Pro Git by Scott Chacon and Ben Straub.</p>
       */
     @JSName("committer")
-    var committer_UnmarshalledCommit: js.UndefOr[UnmarshalledUserInfo] = js.native
+    var committer_UnmarshalledCommit: js.UndefOr[UnmarshalledUserInfo] = js.undefined
     
     /**
       * <p>A list of parent commits for the specified commit. Each parent commit ID is the full commit ID.</p>
       */
     @JSName("parents")
-    var parents_UnmarshalledCommit: js.UndefOr[js.Array[String]] = js.native
+    var parents_UnmarshalledCommit: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledCommit {
     

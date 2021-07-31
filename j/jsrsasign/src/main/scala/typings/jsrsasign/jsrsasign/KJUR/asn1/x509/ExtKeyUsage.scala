@@ -5,7 +5,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,12 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // ExtKeyUsageSyntax ::= SEQUENCE SIZE (1..MAX) OF KeyPurposeId
   * // KeyPurposeId ::= OBJECT IDENTIFIER
   */
-@js.native
-trait ExtKeyUsage extends Extension {
+trait ExtKeyUsage
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
   
-  def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit = js.native
+  def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit
 }
 object ExtKeyUsage {
   

@@ -2,21 +2,19 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thumbnail extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Thumbnail {
   

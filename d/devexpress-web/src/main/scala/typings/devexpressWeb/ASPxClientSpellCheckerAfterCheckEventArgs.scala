@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client event that occurs after a spelling check is complete.
   */
-@js.native
-trait ASPxClientSpellCheckerAfterCheckEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSpellCheckerAfterCheckEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the text that has been checked.
     */
-  var checkedText: String = js.native
+  var checkedText: String
   
   /**
     * Gets the programmatic identifier assigned to the control which has been checked.
     */
-  var controlId: String = js.native
+  var controlId: String
   
   /**
     * Gets a value specifying whether spell checking is finished or stopped by the user.
     */
-  var reason: String = js.native
+  var reason: String
 }
 object ASPxClientSpellCheckerAfterCheckEventArgs {
   

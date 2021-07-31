@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Domain ID of Gmail phishing alerts.
   */
-@js.native
 trait SchemaDomainId extends StObject {
   
   /**
     * The primary domain for the customer.
     */
-  var customerPrimaryDomain: js.UndefOr[String] = js.native
+  var customerPrimaryDomain: js.UndefOr[String] = js.undefined
 }
 object SchemaDomainId {
   

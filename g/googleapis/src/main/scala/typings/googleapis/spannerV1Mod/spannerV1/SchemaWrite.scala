@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Arguments to insert, update, insert_or_update, and replace operations.
   */
-@js.native
 trait SchemaWrite extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaWrite extends StObject {
     * must contain enough columns to allow Cloud Spanner to derive values for
     * all primary key columns in the row(s) to be modified.
     */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The table whose rows will be written.
     */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
   
   /**
     * The values to be written. `values` can contain more than one list of
@@ -32,7 +30,7 @@ trait SchemaWrite extends StObject {
     * repeating table and columns. Individual values in each list are encoded
     * as described here.
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object SchemaWrite {
   
@@ -61,7 +59,7 @@ object SchemaWrite {
     def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

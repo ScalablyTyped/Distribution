@@ -2,61 +2,59 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisioningTemplateResponse extends StObject {
   
   /**
     * The date when the fleet provisioning template was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The default fleet template version ID.
     */
-  var defaultVersionId: js.UndefOr[TemplateVersionId] = js.native
+  var defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined
   
   /**
     * The description of the fleet provisioning template.
     */
-  var description: js.UndefOr[TemplateDescription] = js.native
+  var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
     * True if the fleet provisioning template is enabled, otherwise false.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The date when the fleet provisioning template was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * Gets information about a pre-provisioned hook.
     */
-  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.native
+  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.undefined
   
   /**
     * The ARN of the role associated with the provisioning template. This IoT role grants permission to provision a device.
     */
-  var provisioningRoleArn: js.UndefOr[RoleArn] = js.native
+  var provisioningRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The ARN of the fleet provisioning template.
     */
-  var templateArn: js.UndefOr[TemplateArn] = js.native
+  var templateArn: js.UndefOr[TemplateArn] = js.undefined
   
   /**
     * The JSON formatted contents of the fleet provisioning template.
     */
-  var templateBody: js.UndefOr[TemplateBody] = js.native
+  var templateBody: js.UndefOr[TemplateBody] = js.undefined
   
   /**
     * The name of the fleet provisioning template.
     */
-  var templateName: js.UndefOr[TemplateName] = js.native
+  var templateName: js.UndefOr[TemplateName] = js.undefined
 }
 object DescribeProvisioningTemplateResponse {
   

@@ -2,21 +2,19 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchPathOptions extends StObject {
   
   /**
     * An optional parameter to specify the schema search_path (Postgres only)
     */
-  var searchPath: js.UndefOr[String] = js.native
+  var searchPath: js.UndefOr[String] = js.undefined
   
   /**
     * Transaction to run query under
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
 }
 object SearchPathOptions {
   

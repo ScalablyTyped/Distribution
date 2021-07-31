@@ -2,20 +2,18 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGossipBatchByBatchIdRequest extends StObject {
   
   /** GossipBatchByBatchIdRequest id */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** GossipBatchByBatchIdRequest nonce */
-  var nonce: js.UndefOr[String | Null] = js.native
+  var nonce: js.UndefOr[String | Null] = js.undefined
   
   /** GossipBatchByBatchIdRequest timeToLive */
-  var timeToLive: js.UndefOr[Double | Null] = js.native
+  var timeToLive: js.UndefOr[Double | Null] = js.undefined
 }
 object IGossipBatchByBatchIdRequest {
   

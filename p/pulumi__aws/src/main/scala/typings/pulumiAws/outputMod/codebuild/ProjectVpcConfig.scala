@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectVpcConfig extends StObject {
   
   /**
     * The security group IDs to assign to running builds.
     */
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
   /**
     * The subnet IDs within which to run builds.
     */
-  var subnets: js.Array[String] = js.native
+  var subnets: js.Array[String]
   
   /**
     * The ID of the VPC within which to run builds.
     */
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object ProjectVpcConfig {
   

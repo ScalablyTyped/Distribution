@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Availability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Entity")
@@ -26,7 +25,7 @@ class Entity () extends StObject {
   
   var cylinder: CylinderGraphics = js.native
   
-  val definitionChanged: Event[js.Array[_]] = js.native
+  val definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var description: Property = js.native
   
@@ -70,7 +69,7 @@ class Entity () extends StObject {
   
   var properties: PropertyBag = js.native
   
-  var propertyNames: js.Array[_] = js.native
+  var propertyNames: js.Array[js.Any] = js.native
   
   var rectangle: RectangleGraphics = js.native
   

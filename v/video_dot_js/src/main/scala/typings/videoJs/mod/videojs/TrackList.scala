@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait TrackList
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with /* index */ NumberDictionary[Track] {
   
   /**

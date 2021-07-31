@@ -10,9 +10,9 @@ Get logo property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-logo |
 | Keywords           | logo, metascraper |
-| # releases         | 84 |
-| # dependents       | 15 |
-| # downloads        | 482662 |
+| # releases         | 103 |
+| # dependents       | 17 |
+| # downloads        | 661156 |
 | # stars            | 0 |
 
 ## Links

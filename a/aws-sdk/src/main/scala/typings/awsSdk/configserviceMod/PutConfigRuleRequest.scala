@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigRuleRequest extends StObject {
   
   /**
     * The rule that you want to add to your account.
     */
-  var ConfigRule: typings.awsSdk.configserviceMod.ConfigRule = js.native
+  var ConfigRule: typings.awsSdk.configserviceMod.ConfigRule
   
   /**
     * An array of tag object.
     */
-  var Tags: js.UndefOr[TagsList] = js.native
+  var Tags: js.UndefOr[TagsList] = js.undefined
 }
 object PutConfigRuleRequest {
   

@@ -12,36 +12,34 @@ import typings.plotlyJs.plotlyJsStrings.turntable
 import typings.plotlyJs.plotlyJsStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Scene> */
-@js.native
 trait PartialSceneAnnotations extends StObject {
   
-  var annotations: js.UndefOr[PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]] = js.native
+  var annotations: js.UndefOr[PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]] = js.undefined
   
-  var aspectmode: js.UndefOr[auto | cube | data | manual] = js.native
+  var aspectmode: js.UndefOr[auto | cube | data | manual] = js.undefined
   
-  var aspectratio: js.UndefOr[PartialPoint] = js.native
+  var aspectratio: js.UndefOr[PartialPoint] = js.undefined
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var camera: js.UndefOr[PartialCameraCenter] = js.native
+  var camera: js.UndefOr[PartialCameraCenter] = js.undefined
   
-  var captureevents: js.UndefOr[Boolean] = js.native
+  var captureevents: js.UndefOr[Boolean] = js.undefined
   
-  var domain: js.UndefOr[PartialDomain] = js.native
+  var domain: js.UndefOr[PartialDomain] = js.undefined
   
-  var dragmode: js.UndefOr[orbit | turntable | zoom | pan | `false`] = js.native
+  var dragmode: js.UndefOr[orbit | turntable | zoom | pan | `false`] = js.undefined
   
-  var hovermode: js.UndefOr[closest | `false`] = js.native
+  var hovermode: js.UndefOr[closest | `false`] = js.undefined
   
-  var xaxis: js.UndefOr[PartialSceneAxisAutorange] = js.native
+  var xaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
   
-  var yaxis: js.UndefOr[PartialSceneAxisAutorange] = js.native
+  var yaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
   
-  var zaxis: js.UndefOr[PartialSceneAxisAutorange] = js.native
+  var zaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
 }
 object PartialSceneAnnotations {
   

@@ -2,10 +2,8 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasAction extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CanvasAction extends StObject {
     * @param stop 渐变点位置，值必须在 [0,1] 范围内
     * @param color 颜色值
     */
-  def addColorStop(stop: Double, color: Color): Unit = js.native
+  def addColorStop(stop: Double, color: Color): Unit
 }
 object CanvasAction {
   

@@ -10,9 +10,9 @@ Custom element definitions and core utilities for markup that specifies ECMAScri
 | ------------------ | :-------------: |
 | Full name          | ecmarkup |
 | Keywords           | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
-| # releases         | 21 |
+| # releases         | 29 |
 | # dependents       | 3 |
-| # downloads        | 12931 |
+| # downloads        | 18037 |
 | # stars            | 0 |
 
 ## Links

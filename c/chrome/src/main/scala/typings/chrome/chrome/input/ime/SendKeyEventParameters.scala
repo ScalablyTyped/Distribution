@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendKeyEventParameters extends StObject {
   
   /** ID of the context where the key events will be sent, or zero to send key events to non-input field. */
-  var contextID: Double = js.native
+  var contextID: Double
   
   /** Data on the key event. */
-  var keyData: js.Array[KeyboardEvent] = js.native
+  var keyData: js.Array[KeyboardEvent]
 }
 object SendKeyEventParameters {
   

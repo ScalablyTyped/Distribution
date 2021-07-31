@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the exposure compensation settings for a frame in a variable photo sequence. */
-@js.native
 trait FrameExposureCompensationControl extends StObject {
   
   /** Gets or sets the exposure compensation time for a frame in a variable photo sequence. */
-  var value: Double = js.native
+  var value: Double
 }
 object FrameExposureCompensationControl {
   

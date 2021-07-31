@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobRunRequest extends StObject {
   
   /**
     * Name of the job definition being run.
     */
-  var JobName: NameString = js.native
+  var JobName: NameString
   
   /**
     * True if a list of predecessor runs should be returned.
     */
-  var PredecessorsIncluded: js.UndefOr[BooleanValue] = js.native
+  var PredecessorsIncluded: js.UndefOr[BooleanValue] = js.undefined
   
   /**
     * The ID of the job run.
     */
-  var RunId: IdString = js.native
+  var RunId: IdString
 }
 object GetJobRunRequest {
   

@@ -98,10 +98,13 @@ import typings.tensorflowTfjsLayers.wrappersMod.BidirectionalLayerArgs
 import typings.tensorflowTfjsLayers.wrappersMod.WrapperLayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@tensorflow/tfjs-layers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers", "Callback")
   @js.native
@@ -119,8 +122,8 @@ object mod {
   class CallbackList ()
     extends typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList {
     def this(callbacks: js.Array[BaseCallback]) = this()
-    def this(callbacks: js.UndefOr[scala.Nothing], queueLength: Double) = this()
     def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
+    def this(callbacks: Unit, queueLength: Double) = this()
   }
   
   @JSImport("@tensorflow/tfjs-layers", "CustomCallback")
@@ -169,67 +172,20 @@ object mod {
       */
     def this(`val`: Tensor[Rank]) = this()
     def this(`val`: Tensor[Rank], dtype: DataType) = this()
-    def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: String) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      trainable: Boolean
-    ) = this()
-    def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String, trainable: Boolean) = this()
-    def this(`val`: Tensor[Rank], dtype: DataType, name: js.UndefOr[scala.Nothing], trainable: Boolean) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: String, trainable: Boolean) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: Unit, trainable: Boolean) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      trainable: Boolean,
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: js.UndefOr[scala.Nothing],
-      name: String,
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: js.UndefOr[scala.Nothing],
-      name: String,
-      trainable: Boolean,
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: DataType,
-      name: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: DataType,
-      name: js.UndefOr[scala.Nothing],
-      trainable: Boolean,
-      constraint: Constraint
-    ) = this()
-    def this(
-      `val`: Tensor[Rank],
-      dtype: DataType,
-      name: String,
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: Unit, trainable: Boolean) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: String, trainable: Boolean, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: String, trainable: Unit, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: Unit, trainable: Boolean, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: Unit, name: Unit, trainable: Unit, constraint: Constraint) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Unit, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: Unit, trainable: Boolean, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: Unit, trainable: Unit, constraint: Constraint) = this()
   }
   
   @JSImport("@tensorflow/tfjs-layers", "LayersModel")
@@ -273,12 +229,10 @@ object mod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers", "RNN.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers", "RNN.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-layers", "Sequential")
@@ -301,28 +255,19 @@ object mod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](
-      cls: SerializableConstructor[T],
-      config: ConfigDict,
-      customObjects: js.UndefOr[scala.Nothing],
-      fastWeightInit: Boolean
-    ): T = js.native
-    @JSImport("@tensorflow/tfjs-layers", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers", "Sequential.fromConfig")
-    @js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def fromConfig[T /* <: Serializable */](
       cls: SerializableConstructor[T],
       config: ConfigDict,
       customObjects: ConfigDict,
       fastWeightInit: Boolean
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-layers", "SymbolicTensor")
@@ -363,7 +308,7 @@ object mod {
       sourceLayer: Layer,
       inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
       callArgs: Kwargs,
-      name: js.UndefOr[scala.Nothing],
+      name: String,
       outputTensorIndex: Double
     ) = this()
     def this(
@@ -372,7 +317,7 @@ object mod {
       sourceLayer: Layer,
       inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
       callArgs: Kwargs,
-      name: String,
+      name: Unit,
       outputTensorIndex: Double
     ) = this()
   }
@@ -383,12 +328,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "callbacks.earlyStopping")
-    @js.native
-    def earlyStopping(): EarlyStopping_ = js.native
-    @JSImport("@tensorflow/tfjs-layers", "callbacks.earlyStopping")
-    @js.native
-    def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = js.native
+    @scala.inline
+    def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+    @scala.inline
+    def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
     @JSImport("@tensorflow/tfjs-layers", "callbacks.earlyStopping")
     @js.native
     def earlyStopping_Fcallbacks: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_] = js.native
@@ -399,91 +342,83 @@ object mod {
   
   object constraints {
     
-    @JSImport("@tensorflow/tfjs-layers", "constraints.maxNorm")
+    @JSImport("@tensorflow/tfjs-layers", "constraints")
     @js.native
-    def maxNorm(args: MaxNormArgs): Constraint = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "constraints.minMaxNorm")
-    @js.native
-    def minMaxNorm(config: MinMaxNormArgs): Constraint = js.native
+    @scala.inline
+    def maxNorm(args: MaxNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("maxNorm")(args.asInstanceOf[js.Any]).asInstanceOf[Constraint]
     
-    @JSImport("@tensorflow/tfjs-layers", "constraints.nonNeg")
-    @js.native
-    def nonNeg(): Constraint = js.native
+    @scala.inline
+    def minMaxNorm(config: MinMaxNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("minMaxNorm")(config.asInstanceOf[js.Any]).asInstanceOf[Constraint]
     
-    @JSImport("@tensorflow/tfjs-layers", "constraints.unitNorm")
-    @js.native
-    def unitNorm(args: UnitNormArgs): Constraint = js.native
+    @scala.inline
+    def nonNeg(): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("nonNeg")().asInstanceOf[Constraint]
+    
+    @scala.inline
+    def unitNorm(args: UnitNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("unitNorm")(args.asInstanceOf[js.Any]).asInstanceOf[Constraint]
   }
   
   object initializers {
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.constant")
+    @JSImport("@tensorflow/tfjs-layers", "initializers")
     @js.native
-    def constant(args: ConstantArgs): Initializer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.glorotNormal")
-    @js.native
-    def glorotNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def constant(args: ConstantArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.glorotUniform")
-    @js.native
-    def glorotUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def glorotNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("glorotNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.heNormal")
-    @js.native
-    def heNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def glorotUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("glorotUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.heUniform")
-    @js.native
-    def heUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def heNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("heNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.identity")
-    @js.native
-    def identity(args: IdentityArgs): Initializer = js.native
+    @scala.inline
+    def heUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("heUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.leCunNormal")
-    @js.native
-    def leCunNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def identity(args: IdentityArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.leCunUniform")
-    @js.native
-    def leCunUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+    @scala.inline
+    def leCunNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("leCunNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.ones")
-    @js.native
-    def ones(): Initializer = js.native
+    @scala.inline
+    def leCunUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("leCunUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.orthogonal")
-    @js.native
-    def orthogonal(args: OrthogonalArgs): Initializer = js.native
+    @scala.inline
+    def ones(): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")().asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.randomNormal")
-    @js.native
-    def randomNormal(args: RandomNormalArgs): Initializer = js.native
+    @scala.inline
+    def orthogonal(args: OrthogonalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("orthogonal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.randomUniform")
-    @js.native
-    def randomUniform(args: RandomUniformArgs): Initializer = js.native
+    @scala.inline
+    def randomNormal(args: RandomNormalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.truncatedNormal")
-    @js.native
-    def truncatedNormal(args: TruncatedNormalArgs): Initializer = js.native
+    @scala.inline
+    def randomUniform(args: RandomUniformArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.varianceScaling")
-    @js.native
-    def varianceScaling(config: VarianceScalingArgs): Initializer = js.native
+    @scala.inline
+    def truncatedNormal(args: TruncatedNormalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
     
-    @JSImport("@tensorflow/tfjs-layers", "initializers.zeros")
-    @js.native
-    def zeros(): Zeros = js.native
+    @scala.inline
+    def varianceScaling(config: VarianceScalingArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("varianceScaling")(config.asInstanceOf[js.Any]).asInstanceOf[Initializer]
+    
+    @scala.inline
+    def zeros(): Zeros = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")().asInstanceOf[Zeros]
   }
   
-  @JSImport("@tensorflow/tfjs-layers", "input")
-  @js.native
-  def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = js.native
+  @scala.inline
+  def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
   
   object layers {
+    
+    @JSImport("@tensorflow/tfjs-layers", "layers")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@tensorflow/tfjs-layers", "layers.Layer")
     @js.native
@@ -494,6 +429,10 @@ object mod {
     /* static members */
     object Layer {
       
+      @JSImport("@tensorflow/tfjs-layers", "layers.Layer")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Converts a layer and its index to a unique (immutable type) name.
         * This function is used internally with `this.containerNodes`.
@@ -503,9 +442,8 @@ object mod {
         *
         * @returns The unique name.
         */
-      @JSImport("@tensorflow/tfjs-layers", "layers.Layer.nodeKey")
-      @js.native
-      def nodeKey(layer: typings.tensorflowTfjsLayers.topologyMod.Layer, nodeIndex: Double): String = js.native
+      @scala.inline
+      def nodeKey(layer: typings.tensorflowTfjsLayers.topologyMod.Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     @JSImport("@tensorflow/tfjs-layers", "layers.RNNCell")
@@ -536,170 +474,127 @@ object mod {
       def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       /** @nocollapse */
-      @JSImport("@tensorflow/tfjs-layers", "layers.RNN.fromConfig")
-      @js.native
-      def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-      @JSImport("@tensorflow/tfjs-layers", "layers.RNN.fromConfig")
-      @js.native
-      def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+      @scala.inline
+      def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
     }
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.activation")
-    @js.native
-    def activation(args: ActivationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def activation(args: ActivationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("activation")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.add")
-    @js.native
-    def add(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.add")
-    @js.native
-    def add(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def add(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def add(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.alphaDropout")
-    @js.native
-    def alphaDropout(args: AlphaDropoutArgs): AlphaDropout = js.native
+    @scala.inline
+    def alphaDropout(args: AlphaDropoutArgs): AlphaDropout = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaDropout")(args.asInstanceOf[js.Any]).asInstanceOf[AlphaDropout]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.average")
-    @js.native
-    def average(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.average")
-    @js.native
-    def average(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def average(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def average(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.averagePooling1d")
-    @js.native
-    def averagePooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def averagePooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.averagePooling2d")
-    @js.native
-    def averagePooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def averagePooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.averagePooling3d")
-    @js.native
-    def averagePooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def averagePooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPool1d")
-    @js.native
-    def avgPool1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPool1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPool2d")
-    @js.native
-    def avgPool2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPool2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPool3d")
-    @js.native
-    def avgPool3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPool3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPooling1d")
-    @js.native
-    def avgPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPooling2d")
-    @js.native
-    def avgPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.avgPooling3d")
-    @js.native
-    def avgPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def avgPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.batchNormalization")
-    @js.native
-    def batchNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.batchNormalization")
-    @js.native
-    def batchNormalization(args: BatchNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def batchNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def batchNormalization(args: BatchNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.bidirectional")
-    @js.native
-    def bidirectional(args: BidirectionalLayerArgs): Bidirectional = js.native
+    @scala.inline
+    def bidirectional(args: BidirectionalLayerArgs): Bidirectional = ^.asInstanceOf[js.Dynamic].applyDynamic("bidirectional")(args.asInstanceOf[js.Any]).asInstanceOf[Bidirectional]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.concatenate")
-    @js.native
-    def concatenate(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.concatenate")
-    @js.native
-    def concatenate(args: ConcatenateLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def concatenate(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def concatenate(args: ConcatenateLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.conv1d")
-    @js.native
-    def conv1d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def conv1d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.conv2d")
-    @js.native
-    def conv2d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def conv2d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.conv2dTranspose")
-    @js.native
-    def conv2dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def conv2dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.conv3d")
-    @js.native
-    def conv3d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def conv3d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.convLstm2d")
-    @js.native
-    def convLstm2d(args: ConvLSTM2DArgs): ConvLSTM2D = js.native
+    @scala.inline
+    def convLstm2d(args: ConvLSTM2DArgs): ConvLSTM2D = ^.asInstanceOf[js.Dynamic].applyDynamic("convLstm2d")(args.asInstanceOf[js.Any]).asInstanceOf[ConvLSTM2D]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.convLstm2dCell")
-    @js.native
-    def convLstm2dCell(args: ConvLSTM2DCellArgs): ConvLSTM2DCell = js.native
+    @scala.inline
+    def convLstm2dCell(args: ConvLSTM2DCellArgs): ConvLSTM2DCell = ^.asInstanceOf[js.Dynamic].applyDynamic("convLstm2dCell")(args.asInstanceOf[js.Any]).asInstanceOf[ConvLSTM2DCell]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.cropping2D")
-    @js.native
-    def cropping2D(args: Cropping2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def cropping2D(args: Cropping2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("cropping2D")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.dense")
-    @js.native
-    def dense(args: DenseLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def dense(args: DenseLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dense")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.depthwiseConv2d")
-    @js.native
-    def depthwiseConv2d(args: DepthwiseConv2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def depthwiseConv2d(args: DepthwiseConv2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.dot")
-    @js.native
-    def dot(args: DotLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def dot(args: DotLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dot")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.dropout")
-    @js.native
-    def dropout(args: DropoutLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def dropout(args: DropoutLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropout")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.elu")
-    @js.native
-    def elu(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.elu")
-    @js.native
-    def elu(args: ELULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def elu(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def elu(args: ELULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.embedding")
-    @js.native
-    def embedding(args: EmbeddingLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def embedding(args: EmbeddingLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("embedding")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.flatten")
-    @js.native
-    def flatten(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.flatten")
-    @js.native
-    def flatten(args: FlattenLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def flatten(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def flatten(args: FlattenLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.gaussianDropout")
-    @js.native
-    def gaussianDropout(args: GaussianDropoutArgs): GaussianDropout = js.native
+    @scala.inline
+    def gaussianDropout(args: GaussianDropoutArgs): GaussianDropout = ^.asInstanceOf[js.Dynamic].applyDynamic("gaussianDropout")(args.asInstanceOf[js.Any]).asInstanceOf[GaussianDropout]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.gaussianNoise")
-    @js.native
-    def gaussianNoise(args: GaussianNoiseArgs): GaussianNoise = js.native
+    @scala.inline
+    def gaussianNoise(args: GaussianNoiseArgs): GaussianNoise = ^.asInstanceOf[js.Dynamic].applyDynamic("gaussianNoise")(args.asInstanceOf[js.Any]).asInstanceOf[GaussianNoise]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalAveragePooling1d")
-    @js.native
-    def globalAveragePooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalAveragePooling1d")
-    @js.native
-    def globalAveragePooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def globalAveragePooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def globalAveragePooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalAveragePooling2d")
-    @js.native
-    def globalAveragePooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def globalAveragePooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
     @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPool1d")
     @js.native
@@ -712,61 +607,46 @@ object mod {
         typings.tensorflowTfjsLayers.topologyMod.Layer
       ] = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPooling1d")
-    @js.native
-    def globalMaxPooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPooling1d")
-    @js.native
-    def globalMaxPooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def globalMaxPooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def globalMaxPooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPooling2d")
-    @js.native
-    def globalMaxPooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def globalMaxPooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.gru")
-    @js.native
-    def gru(args: GRULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def gru(args: GRULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("gru")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.gruCell")
-    @js.native
-    def gruCell(args: GRUCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = js.native
+    @scala.inline
+    def gruCell(args: GRUCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("gruCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.input")
-    @js.native
-    def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = js.native
+    @scala.inline
+    def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.inputLayer")
-    @js.native
-    def inputLayer(args: InputLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def inputLayer(args: InputLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLayer")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.layerNormalization")
-    @js.native
-    def layerNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.layerNormalization")
-    @js.native
-    def layerNormalization(args: LayerNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def layerNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def layerNormalization(args: LayerNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.leakyReLU")
-    @js.native
-    def leakyReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.leakyReLU")
-    @js.native
-    def leakyReLU(args: LeakyReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def leakyReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def leakyReLU(args: LeakyReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.lstm")
-    @js.native
-    def lstm(args: LSTMLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def lstm(args: LSTMLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("lstm")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.lstmCell")
-    @js.native
-    def lstmCell(args: LSTMCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = js.native
+    @scala.inline
+    def lstmCell(args: LSTMCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("lstmCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.masking")
-    @js.native
-    def masking(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.masking")
-    @js.native
-    def masking(args: MaskingArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def masking(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def masking(args: MaskingArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
     @JSImport("@tensorflow/tfjs-layers", "layers.maxPool1d")
     @js.native
@@ -776,249 +656,198 @@ object mod {
     @js.native
     val maxPool2d: js.Function1[/* args */ Pooling2DLayerArgs, typings.tensorflowTfjsLayers.topologyMod.Layer] = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.maxPooling1d")
-    @js.native
-    def maxPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def maxPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.maxPooling2d")
-    @js.native
-    def maxPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def maxPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.maxPooling3d")
-    @js.native
-    def maxPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def maxPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.maximum")
-    @js.native
-    def maximum(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.maximum")
-    @js.native
-    def maximum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def maximum(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def maximum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.minimum")
-    @js.native
-    def minimum(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.minimum")
-    @js.native
-    def minimum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def minimum(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def minimum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.multiply")
-    @js.native
-    def multiply(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.multiply")
-    @js.native
-    def multiply(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def multiply(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def multiply(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.permute")
-    @js.native
-    def permute(args: PermuteLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def permute(args: PermuteLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("permute")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.prelu")
-    @js.native
-    def prelu(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.prelu")
-    @js.native
-    def prelu(args: PReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def prelu(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def prelu(args: PReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.reLU")
-    @js.native
-    def reLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.reLU")
-    @js.native
-    def reLU(args: ReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def reLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def reLU(args: ReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.repeatVector")
-    @js.native
-    def repeatVector(args: RepeatVectorLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def repeatVector(args: RepeatVectorLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatVector")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.reshape")
-    @js.native
-    def reshape(args: ReshapeLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def reshape(args: ReshapeLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.rnn")
-    @js.native
-    def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("rnn")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.separableConv2d")
-    @js.native
-    def separableConv2d(args: SeparableConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def separableConv2d(args: SeparableConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.simpleRNN")
-    @js.native
-    def simpleRNN(args: SimpleRNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def simpleRNN(args: SimpleRNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNN")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.simpleRNNCell")
-    @js.native
-    def simpleRNNCell(args: SimpleRNNCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = js.native
+    @scala.inline
+    def simpleRNNCell(args: SimpleRNNCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNNCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.softmax")
-    @js.native
-    def softmax(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.softmax")
-    @js.native
-    def softmax(args: SoftmaxLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def softmax(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def softmax(args: SoftmaxLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.spatialDropout1d")
-    @js.native
-    def spatialDropout1d(args: SpatialDropout1DLayerConfig): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def spatialDropout1d(args: SpatialDropout1DLayerConfig): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("spatialDropout1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.stackedRNNCells")
-    @js.native
-    def stackedRNNCells(args: StackedRNNCellsArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = js.native
+    @scala.inline
+    def stackedRNNCells(args: StackedRNNCellsArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedRNNCells")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.thresholdedReLU")
-    @js.native
-    def thresholdedReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.thresholdedReLU")
-    @js.native
-    def thresholdedReLU(args: ThresholdedReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def thresholdedReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def thresholdedReLU(args: ThresholdedReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.timeDistributed")
-    @js.native
-    def timeDistributed(args: WrapperLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def timeDistributed(args: WrapperLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("timeDistributed")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.upSampling2d")
-    @js.native
-    def upSampling2d(args: UpSampling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def upSampling2d(args: UpSampling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("upSampling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.zeroPadding2d")
-    @js.native
-    def zeroPadding2d(): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "layers.zeroPadding2d")
-    @js.native
-    def zeroPadding2d(args: ZeroPadding2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = js.native
+    @scala.inline
+    def zeroPadding2d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    @scala.inline
+    def zeroPadding2d(args: ZeroPadding2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
   }
   
-  @JSImport("@tensorflow/tfjs-layers", "loadLayersModel")
-  @js.native
-  def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers", "loadLayersModel")
-  @js.native
-  def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers", "loadLayersModel")
-  @js.native
-  def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers", "loadLayersModel")
-  @js.native
-  def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
+  @scala.inline
+  def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+  @scala.inline
+  def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+  @scala.inline
+  def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+  @scala.inline
+  def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
   
   object metrics {
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.MAPE")
+    @JSImport("@tensorflow/tfjs-layers", "metrics")
     @js.native
-    def MAPE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.MSE")
-    @js.native
-    def MSE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def MAPE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAPE")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.binaryAccuracy")
-    @js.native
-    def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def MSE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("MSE")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.binaryCrossentropy")
-    @js.native
-    def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.categoricalAccuracy")
-    @js.native
-    def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.categoricalCrossentropy")
-    @js.native
-    def categoricalCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.cosineProximity")
-    @js.native
-    def cosineProximity(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def categoricalCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.mape")
-    @js.native
-    def mape(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def cosineProximity(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineProximity")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.meanAbsoluteError")
-    @js.native
-    def meanAbsoluteError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def mape(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("mape")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.meanAbsolutePercentageError")
-    @js.native
-    def meanAbsolutePercentageError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def meanAbsoluteError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsoluteError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.meanSquaredError")
-    @js.native
-    def meanSquaredError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def meanAbsolutePercentageError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsolutePercentageError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.mse")
-    @js.native
-    def mse(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def meanSquaredError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.precision")
-    @js.native
-    def precision(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def mse(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("mse")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.recall")
-    @js.native
-    def recall(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def precision(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("precision")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-layers", "metrics.sparseCategoricalAccuracy")
-    @js.native
-    def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def recall(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("recall")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    
+    @scala.inline
+    def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   }
   
-  @JSImport("@tensorflow/tfjs-layers", "model")
-  @js.native
-  def model(args: ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = js.native
+  @scala.inline
+  def model(args: ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.trainingMod.LayersModel]
   
   object models {
     
-    @JSImport("@tensorflow/tfjs-layers", "models.modelFromJSON")
+    @JSImport("@tensorflow/tfjs-layers", "models")
     @js.native
-    def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-    @JSImport("@tensorflow/tfjs-layers", "models.modelFromJSON")
-    @js.native
-    def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-    @JSImport("@tensorflow/tfjs-layers", "models.modelFromJSON")
-    @js.native
-    def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-    @JSImport("@tensorflow/tfjs-layers", "models.modelFromJSON")
-    @js.native
-    def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+    @scala.inline
+    def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+    @scala.inline
+    def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+    @scala.inline
+    def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
   }
   
-  @JSImport("@tensorflow/tfjs-layers", "registerCallbackConstructor")
-  @js.native
-  def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = js.native
+  @scala.inline
+  def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object regularizers {
     
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l1")
+    @JSImport("@tensorflow/tfjs-layers", "regularizers")
     @js.native
-    def l1(): Regularizer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l1")
-    @js.native
-    def l1(config: L1Args): Regularizer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l1l2")
-    @js.native
-    def l1l2(): Regularizer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l1l2")
-    @js.native
-    def l1l2(config: L1L2Args): Regularizer = js.native
+    @scala.inline
+    def l1(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1")().asInstanceOf[Regularizer]
+    @scala.inline
+    def l1(config: L1Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
     
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l2")
-    @js.native
-    def l2(): Regularizer = js.native
-    @JSImport("@tensorflow/tfjs-layers", "regularizers.l2")
-    @js.native
-    def l2(config: L2Args): Regularizer = js.native
+    @scala.inline
+    def l1l2(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1l2")().asInstanceOf[Regularizer]
+    @scala.inline
+    def l1l2(config: L1L2Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1l2")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
+    
+    @scala.inline
+    def l2(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l2")().asInstanceOf[Regularizer]
+    @scala.inline
+    def l2(config: L2Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l2")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
   }
   
-  @JSImport("@tensorflow/tfjs-layers", "sequential")
-  @js.native
-  def sequential(): Sequential = js.native
-  @JSImport("@tensorflow/tfjs-layers", "sequential")
-  @js.native
-  def sequential(config: SequentialArgs): Sequential = js.native
+  @scala.inline
+  def sequential(): Sequential = ^.asInstanceOf[js.Dynamic].applyDynamic("sequential")().asInstanceOf[Sequential]
+  @scala.inline
+  def sequential(config: SequentialArgs): Sequential = ^.asInstanceOf[js.Dynamic].applyDynamic("sequential")(config.asInstanceOf[js.Any]).asInstanceOf[Sequential]
   
   @JSImport("@tensorflow/tfjs-layers", "version_layers")
   @js.native

@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "SampledProperty")
@@ -17,7 +16,11 @@ class SampledProperty protected () extends PositionProperty {
   def addSample(time: JulianDate, value: Packable, derivatives: js.Array[Packable]): Unit = js.native
   
   def addSamples(times: js.Array[JulianDate], values: js.Array[Packable]): Unit = js.native
-  def addSamples(times: js.Array[JulianDate], values: js.Array[Packable], derivativeValues: js.Array[js.Array[_]]): Unit = js.native
+  def addSamples(
+    times: js.Array[JulianDate],
+    values: js.Array[Packable],
+    derivativeValues: js.Array[js.Array[js.Any]]
+  ): Unit = js.native
   
   def addSamplesPackedArray(packedSamples: js.Array[Double]): Unit = js.native
   def addSamplesPackedArray(packedSamples: js.Array[Double], epoch: JulianDate): Unit = js.native

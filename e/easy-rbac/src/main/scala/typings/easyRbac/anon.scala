@@ -3,17 +3,15 @@ package typings.easyRbac
 import typings.easyRbac.mod.RoleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Can extends StObject {
     
-    var can: js.Array[String | RoleObject] = js.native
+    var can: js.Array[String | RoleObject]
     
-    var inherits: js.UndefOr[js.Array[String]] = js.native
+    var inherits: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Can {
     

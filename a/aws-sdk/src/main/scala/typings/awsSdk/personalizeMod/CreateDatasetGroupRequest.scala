@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetGroupRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a KMS key used to encrypt the datasets.
     */
-  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.native
+  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   
   /**
     * The name for the new dataset group.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The ARN of the IAM role that has permissions to access the KMS key. Supplying an IAM role is only valid when also specifying a KMS key.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object CreateDatasetGroupRequest {
   

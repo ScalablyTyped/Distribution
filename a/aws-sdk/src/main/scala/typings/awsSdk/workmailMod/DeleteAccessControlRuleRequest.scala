@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAccessControlRuleRequest extends StObject {
   
   /**
     * The name of the access control rule.
     */
-  var Name: AccessControlRuleName = js.native
+  var Name: AccessControlRuleName
   
   /**
     * The identifier for the organization.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object DeleteAccessControlRuleRequest {
   

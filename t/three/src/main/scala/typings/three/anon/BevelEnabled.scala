@@ -3,41 +3,39 @@ package typings.three.anon
 import typings.three.fontMod.Font
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BevelEnabled extends StObject {
   
   /**
   		 * @default false
   		 */
-  var bevelEnabled: Boolean = js.native
+  var bevelEnabled: Boolean
   
-  var bevelOffset: Double = js.native
+  var bevelOffset: Double
   
-  var bevelSegments: Double = js.native
+  var bevelSegments: Double
   
   /**
   		 * @default 8
   		 */
-  var bevelSize: Double = js.native
+  var bevelSize: Double
   
   /**
   		 * @default 10
   		 */
-  var bevelThickness: Double = js.native
+  var bevelThickness: Double
   
-  var curveSegments: Double = js.native
+  var curveSegments: Double
   
-  var font: Font = js.native
+  var font: Font
   
   /**
   		 * @default 50
   		 */
-  var height: Double = js.native
+  var height: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object BevelEnabled {
   

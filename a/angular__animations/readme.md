@@ -10,9 +10,9 @@ Angular - animations integration with web-animations
 | ------------------ | :-------------: |
 | Full name          | @angular/animations |
 | Keywords           | - |
-| # releases         | 205 |
-| # dependents       | 5543 |
-| # downloads        | 67960467 |
+| # releases         | 212 |
+| # dependents       | 5725 |
+| # downloads        | 73052206 |
 | # stars            | 10 |
 
 ## Links

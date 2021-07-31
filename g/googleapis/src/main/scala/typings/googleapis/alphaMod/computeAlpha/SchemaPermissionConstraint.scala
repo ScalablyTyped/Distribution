@@ -2,25 +2,23 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom constraint that specifies a key and a list of allowed values for
   * Istio attributes.
   */
-@js.native
 trait SchemaPermissionConstraint extends StObject {
   
   /**
     * Key of the constraint.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * A list of allowed values.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPermissionConstraint {
   

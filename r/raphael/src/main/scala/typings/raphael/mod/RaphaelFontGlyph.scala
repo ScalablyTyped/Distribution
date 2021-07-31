@@ -2,17 +2,15 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelFontGlyph extends StObject {
   
   /** An SVG path string for drawing this glyph. */
-  var d: String = js.native
+  var d: String
   
   /** The width of this glyph. */
-  var w: Double = js.native
+  var w: Double
 }
 object RaphaelFontGlyph {
   

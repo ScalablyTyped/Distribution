@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbCellValue extends StObject {
   
-  var displayValue: String = js.native
+  var displayValue: String
   
-  var invariantCultureDisplayValue: String = js.native
+  var invariantCultureDisplayValue: String
   
-  var isNull: Boolean = js.native
+  var isNull: Boolean
 }
 object DbCellValue {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCertificateManagerCertificateOptions extends StObject {
   
   /**
     * Whether to add the certificate to a transparency log. Valid values: DISABLED | ENABLED 
     */
-  var CertificateTransparencyLoggingPreference: js.UndefOr[NonEmptyString] = js.native
+  var CertificateTransparencyLoggingPreference: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCertificateManagerCertificateOptions {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationSubscriberUpdateParameters extends StObject {
   
   /**
     * New delivery preference for the subscriber (indicates how the subscriber should be notified).
     */
-  var deliveryPreference: NotificationSubscriberDeliveryPreference = js.native
+  var deliveryPreference: NotificationSubscriberDeliveryPreference
   
   /**
     * New preferred email address for the subscriber. Specify an empty string to clear the current address.
     */
-  var preferredEmailAddress: String = js.native
+  var preferredEmailAddress: String
 }
 object NotificationSubscriberUpdateParameters {
   

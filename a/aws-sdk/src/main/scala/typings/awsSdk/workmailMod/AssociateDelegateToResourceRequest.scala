@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDelegateToResourceRequest extends StObject {
   
   /**
     * The member (user or group) to associate to the resource.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The organization under which the resource exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The resource for which members (users or groups) are associated.
     */
-  var ResourceId: typings.awsSdk.workmailMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.workmailMod.ResourceId
 }
 object AssociateDelegateToResourceRequest {
   

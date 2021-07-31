@@ -9,58 +9,58 @@ import typings.nodeZendesk.mod.Tickets.Via
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/requests#json-format|Zendesk Requests JSON Format}
   */
-@js.native
-trait ResponseModel extends AuditableModel {
+trait ResponseModel
+  extends StObject
+     with AuditableModel {
   
-  val assignee_id: ZendeskID | Null = js.native
+  val assignee_id: ZendeskID | Null
   
-  val can_be_solved_by_me: js.UndefOr[Boolean] = js.native
+  val can_be_solved_by_me: js.UndefOr[Boolean] = js.undefined
   
-  val collaborator_ids: js.Array[ZendeskID] = js.native
+  val collaborator_ids: js.Array[ZendeskID]
   
-  val custom_fields: js.Array[Field] | Null = js.native
+  val custom_fields: js.Array[Field] | Null
   
-  val description: String = js.native
+  val description: String
   
-  val due_at: String | Null = js.native
+  val due_at: String | Null
   
-  val email_cc_ids: js.Array[ZendeskID] = js.native
+  val email_cc_ids: js.Array[ZendeskID]
   
-  val fields: js.Array[Field] | Null = js.native
+  val fields: js.Array[Field] | Null
   
-  val followup_source_id: String | Null = js.native
+  val followup_source_id: String | Null
   
-  val group_id: js.UndefOr[ZendeskID | Null] = js.native
+  val group_id: js.UndefOr[ZendeskID | Null] = js.undefined
   
-  val is_public: Boolean = js.native
+  val is_public: Boolean
   
-  val organization_id: ZendeskID | Null = js.native
+  val organization_id: ZendeskID | Null
   
-  val priority: Priority | Null = js.native
+  val priority: Priority | Null
   
-  val recipient: String | Null = js.native
+  val recipient: String | Null
   
-  val requester_id: ZendeskID = js.native
+  val requester_id: ZendeskID
   
-  val solved: js.UndefOr[Boolean] = js.native
+  val solved: js.UndefOr[Boolean] = js.undefined
   
-  val status: Status = js.native
+  val status: Status
   
-  val subject: String = js.native
+  val subject: String
   
-  val ticket_form_id: js.UndefOr[Double | Null] = js.native
+  val ticket_form_id: js.UndefOr[Double | Null] = js.undefined
   
-  val `type`: TicketType | Null = js.native
+  val `type`: TicketType | Null
   
-  val url: String = js.native
+  val url: String
   
-  val via: Via = js.native
+  val via: Via
 }
 object ResponseModel {
   
@@ -78,7 +78,8 @@ object ResponseModel {
     url: String,
     via: Via
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any], assignee_id = null, custom_fields = null, due_at = null, fields = null, followup_source_id = null, organization_id = null, priority = null, recipient = null, updated_at = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[ResponseModel]
   }
   

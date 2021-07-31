@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Browser List Response
   */
-@js.native
 trait SchemaBrowsersListResponse extends StObject {
   
   /**
     * Browser collection.
     */
-  var browsers: js.UndefOr[js.Array[SchemaBrowser]] = js.native
+  var browsers: js.UndefOr[js.Array[SchemaBrowser]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#browsersListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBrowsersListResponse {
   

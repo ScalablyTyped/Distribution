@@ -12,7 +12,7 @@ Create HTML tables from Javascript Objects
 | Keywords           | object, html, table |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 188654 |
+| # downloads        | 207273 |
 | # stars            | 4 |
 
 ## Links

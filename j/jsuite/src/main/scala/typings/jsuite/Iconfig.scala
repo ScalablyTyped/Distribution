@@ -2,29 +2,27 @@ package typings.jsuite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Iconfig extends StObject {
   
-  var columns: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var filterExpression: js.UndefOr[js.Any] = js.native
+  var filterExpression: js.UndefOr[js.Any] = js.undefined
   
-  var logging: js.UndefOr[Boolean] = js.native
+  var logging: js.UndefOr[Boolean] = js.undefined
   
-  var maxUnitsUsage: js.UndefOr[Double] = js.native
+  var maxUnitsUsage: js.UndefOr[Double] = js.undefined
   
-  var recordType: js.UndefOr[String] = js.native
+  var recordType: js.UndefOr[String] = js.undefined
   
-  var searchId: js.UndefOr[String] = js.native
+  var searchId: js.UndefOr[String] = js.undefined
   
-  var smartConvert: js.UndefOr[Boolean] = js.native
+  var smartConvert: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object Iconfig {
   

@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that take place during construction.
   */
 @js.native
-trait Arc extends Shape {
+trait Arc
+  extends StObject
+     with Shape {
   
   /**
     * The winding order of the start and end angles.

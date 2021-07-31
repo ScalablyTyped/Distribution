@@ -2,61 +2,59 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activity extends StObject {
   
   /**
     * The ID of the activity.
     */
-  var ActivityId: XmlString = js.native
+  var ActivityId: XmlString
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: XmlStringMaxLen255 = js.native
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The reason the activity began.
     */
-  var Cause: XmlStringMaxLen1023 = js.native
+  var Cause: XmlStringMaxLen1023
   
   /**
     * A friendly, more verbose description of the activity.
     */
-  var Description: js.UndefOr[XmlString] = js.native
+  var Description: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The details about the activity.
     */
-  var Details: js.UndefOr[XmlString] = js.native
+  var Details: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The end time of the activity.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * A value between 0 and 100 that indicates the progress of the activity.
     */
-  var Progress: js.UndefOr[typings.awsSdk.autoscalingMod.Progress] = js.native
+  var Progress: js.UndefOr[typings.awsSdk.autoscalingMod.Progress] = js.undefined
   
   /**
     * The start time of the activity.
     */
-  var StartTime: TimestampType = js.native
+  var StartTime: TimestampType
   
   /**
     * The current status of the activity.
     */
-  var StatusCode: ScalingActivityStatusCode = js.native
+  var StatusCode: ScalingActivityStatusCode
   
   /**
     * A friendly, more verbose description of the activity status.
     */
-  var StatusMessage: js.UndefOr[XmlStringMaxLen255] = js.native
+  var StatusMessage: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object Activity {
   

@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.OpaqueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `69` extends StObject {
   
-  var `type`: OpaqueType = js.native
+  var `type`: OpaqueType
 }
 object `69` {
   
   @scala.inline
-  def apply(`type`: OpaqueType): `69` = {
+  def apply(): `69` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("OpaqueType")
     __obj.asInstanceOf[`69`]
   }
   

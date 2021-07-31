@@ -3,22 +3,21 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.SRV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnySrvRecord
-  extends SrvRecord
+  extends StObject
+     with SrvRecord
      with AnyRecord {
   
-  var `type`: SRV = js.native
+  var `type`: SRV
 }
 object AnySrvRecord {
   
   @scala.inline
-  def apply(name: String, port: Double, priority: Double, `type`: SRV, weight: Double): AnySrvRecord = {
+  def apply(name: String, port: Double, priority: Double, weight: Double): AnySrvRecord = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SRV")
     __obj.asInstanceOf[AnySrvRecord]
   }
   

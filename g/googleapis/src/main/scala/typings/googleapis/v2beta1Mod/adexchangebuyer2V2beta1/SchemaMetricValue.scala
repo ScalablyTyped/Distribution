@@ -2,20 +2,18 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metric value, with an expected value and a variance; represents a count
   * that may be either exact or estimated (i.e. when sampled).
   */
-@js.native
 trait SchemaMetricValue extends StObject {
   
   /**
     * The expected value of the metric.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * The variance (i.e. square of the standard deviation) of the metric value.
@@ -25,7 +23,7 @@ trait SchemaMetricValue extends StObject {
     * interval (e.g. for 90% confidence interval, use Z = 1.645): marginOfError
     * = 100 * Z * sqrt(variance) / value
     */
-  var variance: js.UndefOr[String] = js.native
+  var variance: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricValue {
   

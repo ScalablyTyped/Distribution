@@ -8,7 +8,6 @@ import typings.std.Blob
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -627,7 +626,7 @@ trait KiiObject extends StObject {
     *     );
     */
   def save(): js.Promise[KiiObject] = js.native
-  def save(callbacks: js.UndefOr[scala.Nothing], overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def save(callbacks: Unit, overwrite: Boolean): js.Promise[KiiObject] = js.native
   def save(callbacks: `12`): js.Promise[KiiObject] = js.native
   def save(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   
@@ -687,7 +686,7 @@ trait KiiObject extends StObject {
     *     );
     */
   def saveAllFields(): js.Promise[KiiObject] = js.native
-  def saveAllFields(callbacks: js.UndefOr[scala.Nothing], overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: Unit, overwrite: Boolean): js.Promise[KiiObject] = js.native
   def saveAllFields(callbacks: `12`): js.Promise[KiiObject] = js.native
   def saveAllFields(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   

@@ -7,39 +7,39 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XEntityResolver
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XErrorHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Builds a new dom tree */
-@js.native
-trait XDocumentBuilder extends XInterface {
+trait XDocumentBuilder
+  extends StObject
+     with XInterface {
   
   /** Obtain an instance of a DOMImplementation object. */
-  val DOMImplementation: XDOMImplementation = js.native
+  val DOMImplementation: XDOMImplementation
   
   /** Obtain an instance of a DOMImplementation object. */
-  def getDOMImplementation(): XDOMImplementation = js.native
+  def getDOMImplementation(): XDOMImplementation
   
   /** Indicates whether or not this parser is configured to understand namespaces. */
-  def isNamespaceAware(): Boolean = js.native
+  def isNamespaceAware(): Boolean
   
   /** Indicates whether or not this parser is configured to validate XML documents. */
-  def isValidating(): Boolean = js.native
+  def isValidating(): Boolean
   
   /** Obtain a new instance of a DOM Document object to build a DOM tree with. */
-  def newDocument(): XDocument = js.native
+  def newDocument(): XDocument
   
   /** Parse the content of the given InputStream as an XML document and return a new DOM Document object. */
-  def parse(is: XInputStream): XDocument = js.native
+  def parse(is: XInputStream): XDocument
   
   /** Parse the content of the given URI as an XML document and return a new DOM Document object. */
-  def parseURI(uri: String): XDocument = js.native
+  def parseURI(uri: String): XDocument
   
   /** Specify the EntityResolver to be used to resolve entities present in the XML document to be parsed. */
-  def setEntityResolver(er: XEntityResolver): Unit = js.native
+  def setEntityResolver(er: XEntityResolver): Unit
   
   /** Specify the ErrorHandler to be used to report errors present in the XML document to be parsed. */
-  def setErrorHandler(eh: XErrorHandler): Unit = js.native
+  def setErrorHandler(eh: XErrorHandler): Unit
 }
 object XDocumentBuilder {
   

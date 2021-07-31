@@ -2,36 +2,34 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadArchiveInput extends StObject {
   
   /**
     * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID. 
     */
-  var accountId: String = js.native
+  var accountId: String
   
   /**
     * The optional description of the archive you are uploading.
     */
-  var archiveDescription: js.UndefOr[String] = js.native
+  var archiveDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The data to upload.
     */
-  var body: js.UndefOr[Stream] = js.native
+  var body: js.UndefOr[Stream] = js.undefined
   
   /**
     * The SHA256 tree hash of the data being uploaded.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the vault.
     */
-  var vaultName: String = js.native
+  var vaultName: String
 }
 object UploadArchiveInput {
   

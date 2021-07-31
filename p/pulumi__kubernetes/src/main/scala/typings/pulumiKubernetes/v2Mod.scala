@@ -6,10 +6,13 @@ import typings.pulumiKubernetes.v2HelmMod.ResolvedFetchOpts
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2Mod {
+  
+  @JSImport("@pulumi/kubernetes/helm/v2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/kubernetes/helm/v2", "Chart")
   @js.native
@@ -27,10 +30,8 @@ object v2Mod {
     def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @JSImport("@pulumi/kubernetes/helm/v2", "fetch")
-  @js.native
-  def fetch(chart: String): Unit = js.native
-  @JSImport("@pulumi/kubernetes/helm/v2", "fetch")
-  @js.native
-  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
+  @scala.inline
+  def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

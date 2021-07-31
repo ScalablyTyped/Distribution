@@ -6,27 +6,25 @@ import typings.devtoolsProtocol.mod.Protocol.Tethering.BindRequest
 import typings.devtoolsProtocol.mod.Protocol.Tethering.UnbindRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TetheringApi extends StObject {
   
   /**
     * Request browser port binding.
     */
-  def bind(params: BindRequest): js.Promise[Unit] = js.native
+  def bind(params: BindRequest): js.Promise[Unit]
   
   /**
     * Informs that port was successfully bound and got a specified connection id.
     */
   @JSName("on")
-  def on_accepted(event: accepted, listener: js.Function1[/* params */ AcceptedEvent, Unit]): Unit = js.native
+  def on_accepted(event: accepted, listener: js.Function1[/* params */ AcceptedEvent, Unit]): Unit
   
   /**
     * Request browser port unbinding.
     */
-  def unbind(params: UnbindRequest): js.Promise[Unit] = js.native
+  def unbind(params: UnbindRequest): js.Promise[Unit]
 }
 object TetheringApi {
   

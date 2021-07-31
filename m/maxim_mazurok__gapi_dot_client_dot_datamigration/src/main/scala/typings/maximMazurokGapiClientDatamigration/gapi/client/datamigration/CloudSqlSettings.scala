@@ -3,60 +3,58 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudSqlSettings extends StObject {
   
   /**
     * The activation policy specifies when the instance is activated; it is applicable only when the instance state is 'RUNNABLE'. Valid values: 'ALWAYS': The instance is on, and remains
     * so even in the absence of connection requests. `NEVER`: The instance is off; it is not activated, even if a connection request arrives.
     */
-  var activationPolicy: js.UndefOr[String] = js.native
+  var activationPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * [default: ON] If you enable this setting, Cloud SQL checks your available storage every 30 seconds. If the available storage falls below a threshold size, Cloud SQL automatically
     * adds additional storage capacity. If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
     */
-  var autoStorageIncrease: js.UndefOr[Boolean] = js.native
+  var autoStorageIncrease: js.UndefOr[Boolean] = js.undefined
   
   /** The storage capacity available to the database, in GB. The minimum (and default) size is 10GB. */
-  var dataDiskSizeGb: js.UndefOr[String] = js.native
+  var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /** The type of storage: `PD_SSD` (default) or `PD_HDD`. */
-  var dataDiskType: js.UndefOr[String] = js.native
+  var dataDiskType: js.UndefOr[String] = js.undefined
   
   /** The database flags passed to the Cloud SQL instance at startup. An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }. */
   var databaseFlags: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The database engine type and version (such as `MYSQL_5_7` / `POSTGRES_9_6`). */
-  var databaseVersion: js.UndefOr[String] = js.native
+  var databaseVersion: js.UndefOr[String] = js.undefined
   
   /** The settings for IP Management. This allows to enable or disable the instance IP and manage which external networks can connect to the instance. The IPv4 address cannot be disabled. */
-  var ipConfig: js.UndefOr[SqlIpConfig] = js.native
+  var ipConfig: js.UndefOr[SqlIpConfig] = js.undefined
   
   /** Input only. Initial root password. */
-  var rootPassword: js.UndefOr[String] = js.native
+  var rootPassword: js.UndefOr[String] = js.undefined
   
   /** Output only. Indicates If this connection profile root password is stored. */
-  var rootPasswordSet: js.UndefOr[Boolean] = js.native
+  var rootPasswordSet: js.UndefOr[Boolean] = js.undefined
   
   /** The Database Migration Service source connection profile ID, in the format: `projects/my_project_name/locations/us-central1/connectionProfiles/connection_profile_ID` */
-  var sourceId: js.UndefOr[String] = js.native
+  var sourceId: js.UndefOr[String] = js.undefined
   
   /** The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit. */
-  var storageAutoResizeLimit: js.UndefOr[String] = js.native
+  var storageAutoResizeLimit: js.UndefOr[String] = js.undefined
   
   /**
     * The tier (or machine type) for this instance, for example: `db-n1-standard-1` (MySQL instances) or `db-custom-1-3840` (PostgreSQL instances). For more information, see [Cloud SQL
     * Instance Settings](https://cloud.google.com/sql/docs/mysql/instance-settings).
     */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
   
   /**
     * The resource labels for a Cloud SQL instance to use to annotate any related underlying resources such as Compute Engine VMs. An object containing a list of "key": "value" pairs.
@@ -65,11 +63,11 @@ trait CloudSqlSettings extends StObject {
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The Google Cloud Platform zone where your Cloud SQL datdabse instance is located. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object CloudSqlSettings {
   
@@ -110,7 +108,7 @@ object CloudSqlSettings {
     def setDatabaseFlags(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -162,7 +160,7 @@ object CloudSqlSettings {
     def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     @scala.inline

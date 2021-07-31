@@ -6,7 +6,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineMod {
@@ -16,9 +15,9 @@ object lineMod {
   class Line[Config /* <: LineConfig */] () extends Shape[Config] {
     def this(config: Config) = this()
     
-    def _getTensionPoints(): js.Array[_] = js.native
+    def _getTensionPoints(): js.Array[js.Any] = js.native
     
-    def _getTensionPointsClosed(): js.Array[_] = js.native
+    def _getTensionPointsClosed(): js.Array[js.Any] = js.native
     
     def _sceneFunc(context: Context): Unit = js.native
     
@@ -49,16 +48,17 @@ object lineMod {
     var tension_Original: GetSet[Double, this.type] = js.native
   }
   
-  @js.native
-  trait LineConfig extends ShapeConfig {
+  trait LineConfig
+    extends StObject
+       with ShapeConfig {
     
-    var bezier: js.UndefOr[Boolean] = js.native
+    var bezier: js.UndefOr[Boolean] = js.undefined
     
-    var closed: js.UndefOr[Boolean] = js.native
+    var closed: js.UndefOr[Boolean] = js.undefined
     
-    var points: js.Array[Double] = js.native
+    var points: js.Array[Double]
     
-    var tension: js.UndefOr[Double] = js.native
+    var tension: js.UndefOr[Double] = js.undefined
   }
   object LineConfig {
     

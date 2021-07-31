@@ -2,27 +2,25 @@ package typings.zurbTwentytwenty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TwentyTwentyOptions extends StObject {
   
-  var after_label: js.UndefOr[String] = js.native
+  var after_label: js.UndefOr[String] = js.undefined
   
-  var before_label: js.UndefOr[String] = js.native
+  var before_label: js.UndefOr[String] = js.undefined
   
-  var click_to_move: js.UndefOr[Boolean] = js.native
+  var click_to_move: js.UndefOr[Boolean] = js.undefined
   
-  var default_offset_pct: js.UndefOr[Double] = js.native
+  var default_offset_pct: js.UndefOr[Double] = js.undefined
   
-  var move_slider_on_hover: js.UndefOr[Boolean] = js.native
+  var move_slider_on_hover: js.UndefOr[Boolean] = js.undefined
   
-  var move_with_handle_only: js.UndefOr[Boolean] = js.native
+  var move_with_handle_only: js.UndefOr[Boolean] = js.undefined
   
-  var no_overlay: js.UndefOr[Boolean] = js.native
+  var no_overlay: js.UndefOr[Boolean] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
 }
 object TwentyTwentyOptions {
   

@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,44 +15,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object cookies {
   
-  @js.native
   trait Cookie extends StObject {
     
     /** The domain of the cookie (e.g. "www.google.com", "example.com"). */
-    var domain: String = js.native
+    var domain: String
     
     /** Optional. The expiration date of the cookie as the number of seconds since the UNIX epoch. Not provided for session cookies.  */
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
     /** True if the cookie is a host-only cookie (i.e. a request's host must exactly match the domain of the cookie). */
-    var hostOnly: Boolean = js.native
+    var hostOnly: Boolean
     
     /** True if the cookie is marked as HttpOnly (i.e. the cookie is inaccessible to client-side scripts). */
-    var httpOnly: Boolean = js.native
+    var httpOnly: Boolean
     
     /** The name of the cookie. */
-    var name: String = js.native
+    var name: String
     
     /** The path of the cookie. */
-    var path: String = js.native
+    var path: String
     
     /**
       * The cookie's same-site status (i.e. whether the cookie is sent with cross-site requests).
       * @since Chrome 51.
       */
-    var sameSite: SameSiteStatus = js.native
+    var sameSite: SameSiteStatus
     
     /** True if the cookie is marked as Secure (i.e. its scope is limited to secure channels, typically HTTPS). */
-    var secure: Boolean = js.native
+    var secure: Boolean
     
     /** True if the cookie is a session cookie, as opposed to a persistent cookie with an expiration date. */
-    var session: Boolean = js.native
+    var session: Boolean
     
     /** The ID of the cookie store containing this cookie, as provided in getAllCookieStores(). */
-    var storeId: String = js.native
+    var storeId: String
     
     /** The value of the cookie. */
-    var value: String = js.native
+    var value: String
   }
   object Cookie {
     
@@ -115,20 +113,19 @@ object cookies {
     }
   }
   
-  @js.native
   trait CookieChangeInfo extends StObject {
     
     /**
       * Since Chrome 12.
       * The underlying reason behind the cookie's change.
       */
-    var cause: String = js.native
+    var cause: String
     
     /** Information about the cookie that was set or removed. */
-    var cookie: Cookie = js.native
+    var cookie: Cookie
     
     /** True if a cookie was removed. */
-    var removed: Boolean = js.native
+    var removed: Boolean
   }
   object CookieChangeInfo {
     
@@ -154,14 +151,13 @@ object cookies {
   
   type CookieChangedEvent = Event[js.Function1[/* changeInfo */ CookieChangeInfo, Unit]]
   
-  @js.native
   trait CookieStore extends StObject {
     
     /** The unique identifier for the cookie store. */
-    var id: String = js.native
+    var id: String
     
     /** Identifiers of all the browser tabs that share this cookie store. */
-    var tabIds: js.Array[Double] = js.native
+    var tabIds: js.Array[Double]
   }
   object CookieStore {
     
@@ -185,14 +181,13 @@ object cookies {
     }
   }
   
-  @js.native
   trait Details extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Details {
     
@@ -219,29 +214,28 @@ object cookies {
     }
   }
   
-  @js.native
   trait GetAllDetails extends StObject {
     
     /** Optional. Restricts the retrieved cookies to those whose domains match or are subdomains of this one.  */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /** Optional. Filters the cookies by name.  */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Optional. Restricts the retrieved cookies to those whose path exactly matches this string.  */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Optional. Filters the cookies by their Secure property.  */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Filters out session vs. persistent cookies.  */
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The cookie store to retrieve cookies from. If omitted, the current execution context's cookie store will be used.  */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /** Optional. Restricts the retrieved cookies to those that would match the given URL.  */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object GetAllDetails {
     
@@ -320,41 +314,40 @@ object cookies {
     def unspecified: typings.chrome.chromeStrings.unspecified = "unspecified".asInstanceOf[typings.chrome.chromeStrings.unspecified]
   }
   
-  @js.native
   trait SetDetails extends StObject {
     
     /** Optional. The domain of the cookie. If omitted, the cookie becomes a host-only cookie.  */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /** Optional. The expiration date of the cookie as the number of seconds since the UNIX epoch. If omitted, the cookie becomes a session cookie.  */
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
     /** Optional. Whether the cookie should be marked as HttpOnly. Defaults to false.  */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The name of the cookie. Empty by default if omitted.  */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Optional. The path of the cookie. Defaults to the path portion of the url parameter.  */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. The cookie's same-site status. Defaults to "unspecified", i.e., if omitted, the cookie is set without specifying a SameSite attribute.
       * @since Chrome 51.
       */
-    var sameSite: js.UndefOr[SameSiteStatus] = js.native
+    var sameSite: js.UndefOr[SameSiteStatus] = js.undefined
     
     /** Optional. Whether the cookie should be marked as Secure. Defaults to false.  */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The ID of the cookie store in which to set the cookie. By default, the cookie is set in the current execution context's cookie store.  */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /** The request-URI to associate with the setting of the cookie. This value can affect the default domain and path values of the created cookie. If host permissions for this URL are not specified in the manifest file, the API call will fail. */
-    var url: String = js.native
+    var url: String
     
     /** Optional. The value of the cookie. Empty by default if omitted.  */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SetDetails {
     

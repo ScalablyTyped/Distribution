@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.XDataPilotTable
   * @since OOo 3.0
   */
-@js.native
-trait XDataPilotTable2 extends XDataPilotTable {
+trait XDataPilotTable2
+  extends StObject
+     with XDataPilotTable {
   
   /**
     * When the address of a cell within the result area is given, {@link XDataPilotTable2.getDrillDownData()} returns its drill-down output table that
@@ -26,14 +26,14 @@ trait XDataPilotTable2 extends XDataPilotTable {
     * @returns drill-down output as 2-dimensional sequence, including the header row.
     * @see XDataPilotTable2.insertDrillDownSheet()
     */
-  def getDrillDownData(aAddr: CellAddress): SafeArray[SafeArray[_]] = js.native
+  def getDrillDownData(aAddr: CellAddress): SafeArray[SafeArray[js.Any]]
   
   /**
     * This method returns a different output range of a DataPilot table per specified output range type.
     * @returns {@link com.sun.star.table.CellRangeAddress} depicting the range specified. See {@link DataPilotOutputRangeType} for a set of possible output rang
     * @see com.sun.star.sheet.DataPilotOutputRangeType
     */
-  def getOutputRangeByType(nType: Double): CellRangeAddress = js.native
+  def getOutputRangeByType(nType: Double): CellRangeAddress
   
   /**
     * Given a cell address, it returns the information about that cell. The type of information returned depends upon whether the cell is within the result
@@ -44,7 +44,7 @@ trait XDataPilotTable2 extends XDataPilotTable {
     * @see com.sun.star.sheet.DataPilotTableHeaderData
     * @see com.sun.star.sheet.DataPilotTableResultData
     */
-  def getPositionData(aAddr: CellAddress): DataPilotTablePositionData = js.native
+  def getPositionData(aAddr: CellAddress): DataPilotTablePositionData
   
   /**
     * This method inserts a new sheet to display the drill-down data for a specified result cell. A drill-down data for a result cell consists of a subset
@@ -55,7 +55,7 @@ trait XDataPilotTable2 extends XDataPilotTable {
     * @param aAddr address of a result cell
     * @returns `VOID`
     */
-  def insertDrillDownSheet(aAddr: CellAddress): Unit = js.native
+  def insertDrillDownSheet(aAddr: CellAddress): Unit
 }
 object XDataPilotTable2 {
   
@@ -63,7 +63,7 @@ object XDataPilotTable2 {
   def apply(
     OutputRange: CellRangeAddress,
     acquire: () => Unit,
-    getDrillDownData: CellAddress => SafeArray[SafeArray[_]],
+    getDrillDownData: CellAddress => SafeArray[SafeArray[js.Any]],
     getOutputRange: () => CellRangeAddress,
     getOutputRangeByType: Double => CellRangeAddress,
     getPositionData: CellAddress => DataPilotTablePositionData,
@@ -80,7 +80,7 @@ object XDataPilotTable2 {
   implicit class XDataPilotTable2MutableBuilder[Self <: XDataPilotTable2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = StObject.set(x, "getOutputRangeByType", js.Any.fromFunction1(value))

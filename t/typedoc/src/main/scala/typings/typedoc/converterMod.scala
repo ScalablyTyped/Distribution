@@ -9,10 +9,13 @@ import typings.typescript.mod.TypeChecker
 import typings.typescript.mod.VariableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object converterMod {
+  
+  @JSImport("typedoc/dist/lib/converter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("typedoc/dist/lib/converter", "Context")
   @js.native
@@ -107,17 +110,13 @@ object converterMod {
     def EVENT_RESOLVE_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_END")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("typedoc/dist/lib/converter", "convertDefaultValue")
-  @js.native
-  def convertDefaultValue(node: EnumMember): js.UndefOr[String] = js.native
-  @JSImport("typedoc/dist/lib/converter", "convertDefaultValue")
-  @js.native
-  def convertDefaultValue(node: ParameterDeclaration): js.UndefOr[String] = js.native
-  @JSImport("typedoc/dist/lib/converter", "convertDefaultValue")
-  @js.native
-  def convertDefaultValue(node: VariableDeclaration): js.UndefOr[String] = js.native
+  @scala.inline
+  def convertDefaultValue(node: EnumMember): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def convertDefaultValue(node: ParameterDeclaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def convertDefaultValue(node: VariableDeclaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("typedoc/dist/lib/converter", "convertExpression")
-  @js.native
-  def convertExpression(expression: Expression): String = js.native
+  @scala.inline
+  def convertExpression(expression: Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCustomPresentation
   * @see XCustomPresentationAccess
   */
-@js.native
-trait XCustomPresentationSupplier extends XInterface {
+trait XCustomPresentationSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link CustomPresentation} . */
-  val CustomPresentations: XNameContainer = js.native
+  val CustomPresentations: XNameContainer
   
   /** @returns the {@link CustomPresentation} . */
-  def getCustomPresentations(): XNameContainer = js.native
+  def getCustomPresentations(): XNameContainer
 }
 object XCustomPresentationSupplier {
   

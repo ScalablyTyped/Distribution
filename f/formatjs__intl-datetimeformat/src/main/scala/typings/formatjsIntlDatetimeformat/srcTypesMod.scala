@@ -9,19 +9,17 @@ import typings.formatjsIntlDatetimeformat.anon.Long
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcTypesMod {
   
-  @js.native
   trait PackedData extends StObject {
     
-    var abbrvs: String = js.native
+    var abbrvs: String
     
-    var offsets: String = js.native
+    var offsets: String
     
-    var zones: js.Array[String] = js.native
+    var zones: js.Array[String]
   }
   object PackedData {
     
@@ -51,42 +49,41 @@ object srcTypesMod {
   type RawDateTimeLocaleData = LocaleData[RawDateTimeLocaleInternalData]
   
   /* Inlined std.Omit<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract.DateTimeFormatLocaleInternalData, 'dateFormat' | 'timeFormat' | 'dateTimeFormat' | 'formats' | 'intervalFormats'> & {  formats :std.Record<string, std.Record<string, string>>,   dateFormat :{  full :string,   long :string,   medium :string,   short :string},   timeFormat :{  full :string,   long :string,   medium :string,   short :string},   intervalFormats :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract.IntervalFormatsData,   dateTimeFormat :{  full :string,   long :string,   medium :string,   short :string}} */
-  @js.native
   trait RawDateTimeLocaleInternalData extends StObject {
     
-    var am: String = js.native
+    var am: String
     
-    var ca: js.Array[String] = js.native
+    var ca: js.Array[String]
     
-    var dateFormat: Full = js.native
+    var dateFormat: Full
     
-    var dateTimeFormat: Full = js.native
+    var dateTimeFormat: Full
     
-    var era: LongEraData = js.native
+    var era: LongEraData
     
-    var formats: Record[String, Record[String, String]] = js.native
+    var formats: Record[String, Record[String, String]]
     
-    var gmtFormat: String = js.native
+    var gmtFormat: String
     
-    var hc: js.Array[String] = js.native
+    var hc: js.Array[String]
     
-    var hourCycle: String = js.native
+    var hourCycle: String
     
-    var hourFormat: String = js.native
+    var hourFormat: String
     
-    var intervalFormats: IntervalFormatsData = js.native
+    var intervalFormats: IntervalFormatsData
     
-    var month: Narrow = js.native
+    var month: Narrow
     
-    var nu: js.Array[String] = js.native
+    var nu: js.Array[String]
     
-    var pm: String = js.native
+    var pm: String
     
-    var timeFormat: Full = js.native
+    var timeFormat: Full
     
-    var timeZoneName: typings.formatjsEcma402Abstract.typesDateTimeMod.TimeZoneNameData = js.native
+    var timeZoneName: typings.formatjsEcma402Abstract.typesDateTimeMod.TimeZoneNameData
     
-    var weekday: Narrow = js.native
+    var weekday: Narrow
   }
   object RawDateTimeLocaleInternalData {
     
@@ -181,17 +178,16 @@ object srcTypesMod {
   
   type TimeZoneNameData = Record[String, Long]
   
-  @js.native
   trait UnpackedData extends StObject {
     
-    var abbrvs: js.Array[String] = js.native
+    var abbrvs: js.Array[String]
     
     /**
       * Offset in seconds, base 36
       */
-    var offsets: js.Array[Double] = js.native
+    var offsets: js.Array[Double]
     
-    var zones: Record[String, js.Array[ZoneData]] = js.native
+    var zones: Record[String, js.Array[ZoneData]]
   }
   object UnpackedData {
     

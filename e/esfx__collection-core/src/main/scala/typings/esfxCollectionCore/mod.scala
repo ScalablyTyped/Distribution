@@ -3,12 +3,15 @@ package typings.esfxCollectionCore
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object Collection {
+    
+    @JSImport("@esfx/collection-core", "Collection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `Collection#[Collection.add]` method.
@@ -41,45 +44,39 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `Collection`.
       */
-    @JSImport("@esfx/collection-core", "Collection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `Collection`.
       */
-    @JSImport("@esfx/collection-core", "Collection.hasInstance")
-    @js.native
-    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `Collection`.
       * @deprecated Use `Collection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "Collection.isCollection")
-    @js.native
-    def isCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `Collection`.
       * @deprecated Use `Collection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "Collection.isCollection")
-    @js.native
-    def isCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = js.native
+    @scala.inline
+    def isCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "Collection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "Collection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     @JSImport("@esfx/collection-core", "Collection.name")
     @js.native
@@ -94,6 +91,10 @@ object mod {
   }
   
   object FixedSizeIndexedCollection {
+    
+    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `ReadonlyIndexedCollection#[ReadonlyIndexedCollection.getAt]` method.
@@ -112,15 +113,13 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.hasInstance")
-    @js.native
-    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyIndexedCollection#[ReadonlyIndexedCollection.indexOf]` method.
@@ -133,46 +132,40 @@ object mod {
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       * @deprecated Use `FixedSizeIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isFixedSizeIndexedCollection")
-    @js.native
-    def isFixedSizeIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isFixedSizeIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedSizeIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       * @deprecated Use `FixedSizeIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isFixedSizeIndexedCollection")
-    @js.native
-    def isFixedSizeIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isFixedSizeIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedSizeIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean]
     
     @JSImport("@esfx/collection-core", "FixedSizeIndexedCollection.name")
     @js.native
@@ -194,6 +187,10 @@ object mod {
   }
   
   object IndexedCollection {
+    
+    @JSImport("@esfx/collection-core", "IndexedCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `Collection#[Collection.add]` method.
@@ -230,15 +227,13 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of an `IndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of an `IndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.hasInstance")
-    @js.native
-    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyIndexedCollection#[ReadonlyIndexedCollection.indexOf]` method.
@@ -258,76 +253,66 @@ object mod {
       * Tests whether a value supports the minimal representation of a `Collection`.
       * @deprecated Use `Collection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isCollection")
-    @js.native
-    def isCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `Collection`.
       * @deprecated Use `Collection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isCollection")
-    @js.native
-    def isCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = js.native
+    @scala.inline
+    def isCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.Collection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       * @deprecated Use `FixedSizeIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isFixedSizeIndexedCollection")
-    @js.native
-    def isFixedSizeIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isFixedSizeIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedSizeIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `FixedSizeIndexedCollection`.
       * @deprecated Use `FixedSizeIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isFixedSizeIndexedCollection")
-    @js.native
-    def isFixedSizeIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isFixedSizeIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedSizeIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.FixedSizeIndexedCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of an `IndexedCollection`.
       * @deprecated Use `IndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isIndexedCollection")
-    @js.native
-    def isIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of an `IndexedCollection`.
       * @deprecated Use `IndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isIndexedCollection")
-    @js.native
-    def isIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.IndexedCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "IndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean]
     
     @JSImport("@esfx/collection-core", "IndexedCollection.name")
     @js.native
@@ -356,6 +341,10 @@ object mod {
   }
   
   object KeyedCollection {
+    
+    @JSImport("@esfx/collection-core", "KeyedCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `KeyedCollection#[KeyedCollection.clear]` method.
@@ -388,45 +377,39 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `KeyedCollection`.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `KeyedCollection`.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.hasInstance")
-    @js.native
-    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `KeyedCollection`.
       * @deprecated Use `KeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.isKeyedCollection")
-    @js.native
-    def isKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `KeyedCollection`.
       * @deprecated Use `KeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.isKeyedCollection")
-    @js.native
-    def isKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedCollection<K, V> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       * @deprecated Use `ReadonlyKeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.isReadonlyKeyedCollection")
-    @js.native
-    def isReadonlyKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       * @deprecated Use `ReadonlyKeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedCollection.isReadonlyKeyedCollection")
-    @js.native
-    def isReadonlyKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedCollection#[ReadonlyKeyedCollection.keys]` method.
@@ -462,6 +445,10 @@ object mod {
   }
   
   object KeyedMultiCollection {
+    
+    @JSImport("@esfx/collection-core", "KeyedMultiCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `KeyedMultiCollection#[KeyedMultiCollection.add]` method.
@@ -508,15 +495,13 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `KeyedMultiCollection`.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `KeyedMultiCollection`.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.hasInstance")
-    @js.native
-    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedMultiCollection#[ReadonlyKeyedMultiCollection.hasValue]` method.
@@ -529,31 +514,27 @@ object mod {
       * Tests whether a value supports the minimal representation of a `KeyedMultiCollection`.
       * @deprecated Use `KeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.isKeyedMultiCollection")
-    @js.native
-    def isKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `KeyedMultiCollection`.
       * @deprecated Use `KeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.isKeyedMultiCollection")
-    @js.native
-    def isKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.KeyedMultiCollection<K, V> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       * @deprecated Use `ReadonlyKeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.isReadonlyKeyedMultiCollection")
-    @js.native
-    def isReadonlyKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       * @deprecated Use `ReadonlyKeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "KeyedMultiCollection.isReadonlyKeyedMultiCollection")
-    @js.native
-    def isReadonlyKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedMultiCollection#[ReadonlyKeyedMultiCollection.keys]` method.
@@ -583,6 +564,10 @@ object mod {
   
   object ReadonlyCollection {
     
+    @JSImport("@esfx/collection-core", "ReadonlyCollection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A well-known symbol used to define the `ReadonlyCollection#[ReadonlyCollection.has]` method.
       */
@@ -593,30 +578,26 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyCollection.hasInstance")
-    @js.native
-    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     @JSImport("@esfx/collection-core", "ReadonlyCollection.name")
     @js.native
@@ -631,6 +612,10 @@ object mod {
   }
   
   object ReadonlyIndexedCollection {
+    
+    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `ReadonlyIndexedCollection#[ReadonlyIndexedCollection.getAt]` method.
@@ -649,15 +634,13 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.hasInstance")
-    @js.native
-    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyIndexedCollection#[ReadonlyIndexedCollection.indexOf]` method.
@@ -670,31 +653,27 @@ object mod {
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyCollection`.
       * @deprecated Use `ReadonlyCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.isReadonlyCollection")
-    @js.native
-    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyCollection<T> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyIndexedCollection`.
       * @deprecated Use `ReadonlyIndexedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.isReadonlyIndexedCollection")
-    @js.native
-    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyIndexedCollection[T](value: Iterable[T]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyIndexedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyIndexedCollection<T> */ Boolean]
     
     @JSImport("@esfx/collection-core", "ReadonlyIndexedCollection.name")
     @js.native
@@ -709,6 +688,10 @@ object mod {
   }
   
   object ReadonlyKeyedCollection {
+    
+    @JSImport("@esfx/collection-core", "ReadonlyKeyedCollection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedCollection#[ReadonlyKeyedCollection.get]` method.
@@ -727,30 +710,26 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedCollection.hasInstance")
-    @js.native
-    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean]
     
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       * @deprecated Use `ReadonlyKeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedCollection.isReadonlyKeyedCollection")
-    @js.native
-    def isReadonlyKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedCollection`.
       * @deprecated Use `ReadonlyKeyedCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedCollection.isReadonlyKeyedCollection")
-    @js.native
-    def isReadonlyKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedCollection#[ReadonlyKeyedCollection.keys]` method.
@@ -780,6 +759,10 @@ object mod {
   
   object ReadonlyKeyedMultiCollection {
     
+    @JSImport("@esfx/collection-core", "ReadonlyKeyedMultiCollection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A well-known symbol used to define the `ReadonlyKeyedMultiCollection#[ReadonlyKeyedMultiCollection.get]` method.
       */
@@ -797,15 +780,13 @@ object mod {
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedMultiCollection.hasInstance")
-    @js.native
-    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def hasInstance(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedMultiCollection.hasInstance")
-    @js.native
-    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def hasInstance[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedMultiCollection#[ReadonlyKeyedMultiCollection.hasValue]` method.
@@ -818,16 +799,14 @@ object mod {
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       * @deprecated Use `ReadonlyKeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedMultiCollection.isReadonlyKeyedMultiCollection")
-    @js.native
-    def isReadonlyKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedMultiCollection(value: js.Any): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<unknown, unknown> */ Boolean]
     /**
       * Tests whether a value supports the minimal representation of a `ReadonlyKeyedMultiCollection`.
       * @deprecated Use `ReadonlyKeyedMultiCollection.hasInstance` instead.
       */
-    @JSImport("@esfx/collection-core", "ReadonlyKeyedMultiCollection.isReadonlyKeyedMultiCollection")
-    @js.native
-    def isReadonlyKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = js.native
+    @scala.inline
+    def isReadonlyKeyedMultiCollection[K, V](value: Iterable[js.Tuple2[K, V]]): /* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeyedMultiCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/collection-core.@esfx/collection-core/dist.ReadonlyKeyedMultiCollection<K, V> */ Boolean]
     
     /**
       * A well-known symbol used to define the `ReadonlyKeyedMultiCollection#[ReadonlyKeyedMultiCollection.keys]` method.

@@ -2,56 +2,54 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticIp extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the static IP (e.g., arn:aws:lightsail:us-east-2:123456789101:StaticIp/9cbb4a9e-f8e3-4dfe-b57e-12345EXAMPLE).
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The instance where the static IP is attached (e.g., Amazon_Linux-1GB-Ohio-1).
     */
-  var attachedTo: js.UndefOr[ResourceName] = js.native
+  var attachedTo: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The timestamp when the static IP was created (e.g., 1479735304.222).
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The static IP address.
     */
-  var ipAddress: js.UndefOr[IpAddress] = js.native
+  var ipAddress: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * A Boolean value indicating whether the static IP is attached.
     */
-  var isAttached: js.UndefOr[Boolean] = js.native
+  var isAttached: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The region and Availability Zone where the static IP was created.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the static IP (e.g., StaticIP-Ohio-EXAMPLE).
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resource type (usually StaticIp).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The support code. Include this code in your email to support when you have questions about an instance or another resource in Lightsail. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
 }
 object StaticIp {
   

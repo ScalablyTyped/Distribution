@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,12 +32,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   array: [{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]
   * });
   */
-@js.native
-trait SubjectAltName extends Extension {
+trait SubjectAltName
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
   
-  def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
+  def setNameArray(paramsArray: js.Array[UriParam]): Unit
 }
 object SubjectAltName {
   

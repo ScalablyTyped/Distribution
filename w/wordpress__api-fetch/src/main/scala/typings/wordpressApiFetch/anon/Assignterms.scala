@@ -2,19 +2,17 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assignterms extends StObject {
   
-  var assign_terms: String = js.native
+  var assign_terms: String
   
-  var delete_terms: String = js.native
+  var delete_terms: String
   
-  var edit_terms: String = js.native
+  var edit_terms: String
   
-  var manage_terms: String = js.native
+  var manage_terms: String
 }
 object Assignterms {
   

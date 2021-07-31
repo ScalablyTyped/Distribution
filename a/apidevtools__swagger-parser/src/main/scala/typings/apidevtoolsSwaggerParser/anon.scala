@@ -10,12 +10,10 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Circular extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object anon {
       *
       * If set to `"ignore"`, then circular references will simply be ignored. No error will be thrown, but the `$Refs.circular` property will still be set to `true`.
       */
-    var circular: js.UndefOr[Boolean | ignore] = js.native
+    var circular: js.UndefOr[Boolean | ignore] = js.undefined
   }
   object Circular {
     
@@ -46,15 +44,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.UndefOr[ParserOptions | Boolean]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[ParserOptions | Boolean]] {
     
-    var json: js.UndefOr[ParserOptions | Boolean] = js.native
+    var json: js.UndefOr[ParserOptions | Boolean] = js.undefined
     
-    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.native
+    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.undefined
     
-    var yaml: js.UndefOr[ParserOptions | Boolean] = js.native
+    var yaml: js.UndefOr[ParserOptions | Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -87,17 +85,16 @@ object anon {
     }
   }
   
-  @js.native
   trait External extends StObject {
     
     /**
       * Determines whether external $ref pointers will be resolved. If this option is disabled, then external `$ref` pointers will simply be ignored.
       */
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
-    var file: js.UndefOr[PartialResolverOptions | Boolean] = js.native
+    var file: js.UndefOr[PartialResolverOptions | Boolean] = js.undefined
     
-    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.native
+    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.undefined
   }
   object External {
     
@@ -131,7 +128,6 @@ object anon {
   }
   
   /* Inlined @apidevtools/swagger-parser.@apidevtools/swagger-parser.ParserOptions & {  encoding :string | undefined} */
-  @js.native
   trait ParserOptionsencodingstri extends StObject {
     
     /**
@@ -139,7 +135,7 @@ object anon {
       *
       * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
       */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines which parsers will be used for which files.
@@ -148,16 +144,16 @@ object anon {
       */
     var canParse: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
       *
       * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
       */
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object ParserOptionsencodingstri {
     
@@ -203,22 +199,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@apidevtools/swagger-parser.@apidevtools/swagger-parser.ResolverOptions> */
-  @js.native
   trait PartialResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]], 
+          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
           String | Buffer | (js.Promise[String | Buffer])
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialResolverOptions {
     
@@ -251,7 +246,7 @@ object anon {
       
       @scala.inline
       def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -259,18 +254,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Schema extends StObject {
     
     /**
       * If set to `false`, then validating against the Swagger 2.0 Schema or OpenAPI 3.0 Schema is disabled.
       */
-    var schema: js.UndefOr[Boolean] = js.native
+    var schema: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `false`, then validating against the Swagger 2.0 Specification is disabled.
       */
-    var spec: js.UndefOr[Boolean] = js.native
+    var spec: js.UndefOr[Boolean] = js.undefined
   }
   object Schema {
     

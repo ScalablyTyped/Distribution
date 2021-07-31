@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object healthCheckMod {
@@ -133,6 +132,10 @@ object healthCheckMod {
   /* static members */
   object HealthCheck {
     
+    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HealthCheck resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -142,50 +145,44 @@ object healthCheckMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HealthCheckState): HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): HealthCheck = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HealthCheckState): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
     
     /**
       * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean]
   }
   
-  @js.native
   trait HealthCheckArgs extends StObject {
     
     /**
       * The minimum number of child health checks that must be healthy for Route 53 to consider the parent health check to be healthy. Valid values are integers between 0 and 256, inclusive
       */
-    val childHealthThreshold: js.UndefOr[Input[Double]] = js.native
+    val childHealthThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * For a specified parent health check, a list of HealthCheckId values for the associated child health checks.
       */
-    val childHealthchecks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val childHealthchecks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the CloudWatch alarm.
       */
-    val cloudwatchAlarmName: js.UndefOr[Input[String]] = js.native
+    val cloudwatchAlarmName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CloudWatchRegion that the CloudWatch alarm was created in.
       */
-    val cloudwatchAlarmRegion: js.UndefOr[Input[String]] = js.native
+    val cloudwatchAlarmRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean value that stops Route 53 from performing health checks. When set to true, Route 53 will do the following depending on the type of health check:
@@ -193,83 +190,83 @@ object healthCheckMod {
       * * For calculated health checks, Route 53 stops aggregating the status of the referenced health checks.
       * * For health checks that monitor CloudWatch alarms, Route 53 stops monitoring the corresponding CloudWatch metrics.
       */
-    val disabled: js.UndefOr[Input[Boolean]] = js.native
+    val disabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enableSni` defaults to `true`, when `type` is anything else `enableSni` defaults to `false`.
       */
-    val enableSni: js.UndefOr[Input[Boolean]] = js.native
+    val enableSni: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of consecutive health checks that an endpoint must pass or fail.
       */
-    val failureThreshold: js.UndefOr[Input[Double]] = js.native
+    val failureThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The fully qualified domain name of the endpoint to be checked.
       */
-    val fqdn: js.UndefOr[Input[String]] = js.native
+    val fqdn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the health check when CloudWatch has insufficient data about the state of associated alarm. Valid values are `Healthy` , `Unhealthy` and `LastKnownStatus`.
       */
-    val insufficientDataHealthStatus: js.UndefOr[Input[String]] = js.native
+    val insufficientDataHealthStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean value that indicates whether the status of health check should be inverted. For example, if a health check is healthy but Inverted is True , then Route 53 considers the health check to be unhealthy.
       */
-    val invertHealthcheck: js.UndefOr[Input[Boolean]] = js.native
+    val invertHealthcheck: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The IP address of the endpoint to be checked.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A Boolean value that indicates whether you want Route 53 to measure the latency between health checkers in multiple AWS regions and your endpoint and to display CloudWatch latency graphs in the Route 53 console.
       */
-    val measureLatency: js.UndefOr[Input[Boolean]] = js.native
+    val measureLatency: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The port of the endpoint to be checked.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * This is a reference name used in Caller Reference
       * (helpful for identifying single healthCheck set amongst others)
       */
-    val referenceName: js.UndefOr[Input[String]] = js.native
+    val referenceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of AWS regions that you want Amazon Route 53 health checkers to check the specified endpoint from.
       */
-    val regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The number of seconds between the time that Amazon Route 53 gets a response from your endpoint and the time that it sends the next health-check request.
       */
-    val requestInterval: js.UndefOr[Input[Double]] = js.native
+    val requestInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The path that you want Amazon Route 53 to request when performing health checks.
       */
-    val resourcePath: js.UndefOr[Input[String]] = js.native
+    val resourcePath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with `HTTP_STR_MATCH` and `HTTPS_STR_MATCH`.
       */
-    val searchString: js.UndefOr[Input[String]] = js.native
+    val searchString: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the health check.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The protocol to use when performing health checks. Valid values are `HTTP`, `HTTPS`, `HTTP_STR_MATCH`, `HTTPS_STR_MATCH`, `TCP`, `CALCULATED` and `CLOUDWATCH_METRIC`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object HealthCheckArgs {
     
@@ -408,28 +405,27 @@ object healthCheckMod {
     }
   }
   
-  @js.native
   trait HealthCheckState extends StObject {
     
     /**
       * The minimum number of child health checks that must be healthy for Route 53 to consider the parent health check to be healthy. Valid values are integers between 0 and 256, inclusive
       */
-    val childHealthThreshold: js.UndefOr[Input[Double]] = js.native
+    val childHealthThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * For a specified parent health check, a list of HealthCheckId values for the associated child health checks.
       */
-    val childHealthchecks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val childHealthchecks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the CloudWatch alarm.
       */
-    val cloudwatchAlarmName: js.UndefOr[Input[String]] = js.native
+    val cloudwatchAlarmName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CloudWatchRegion that the CloudWatch alarm was created in.
       */
-    val cloudwatchAlarmRegion: js.UndefOr[Input[String]] = js.native
+    val cloudwatchAlarmRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean value that stops Route 53 from performing health checks. When set to true, Route 53 will do the following depending on the type of health check:
@@ -437,83 +433,83 @@ object healthCheckMod {
       * * For calculated health checks, Route 53 stops aggregating the status of the referenced health checks.
       * * For health checks that monitor CloudWatch alarms, Route 53 stops monitoring the corresponding CloudWatch metrics.
       */
-    val disabled: js.UndefOr[Input[Boolean]] = js.native
+    val disabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value that indicates whether Route53 should send the `fqdn` to the endpoint when performing the health check. This defaults to AWS' defaults: when the `type` is "HTTPS" `enableSni` defaults to `true`, when `type` is anything else `enableSni` defaults to `false`.
       */
-    val enableSni: js.UndefOr[Input[Boolean]] = js.native
+    val enableSni: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of consecutive health checks that an endpoint must pass or fail.
       */
-    val failureThreshold: js.UndefOr[Input[Double]] = js.native
+    val failureThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The fully qualified domain name of the endpoint to be checked.
       */
-    val fqdn: js.UndefOr[Input[String]] = js.native
+    val fqdn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the health check when CloudWatch has insufficient data about the state of associated alarm. Valid values are `Healthy` , `Unhealthy` and `LastKnownStatus`.
       */
-    val insufficientDataHealthStatus: js.UndefOr[Input[String]] = js.native
+    val insufficientDataHealthStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean value that indicates whether the status of health check should be inverted. For example, if a health check is healthy but Inverted is True , then Route 53 considers the health check to be unhealthy.
       */
-    val invertHealthcheck: js.UndefOr[Input[Boolean]] = js.native
+    val invertHealthcheck: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The IP address of the endpoint to be checked.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A Boolean value that indicates whether you want Route 53 to measure the latency between health checkers in multiple AWS regions and your endpoint and to display CloudWatch latency graphs in the Route 53 console.
       */
-    val measureLatency: js.UndefOr[Input[Boolean]] = js.native
+    val measureLatency: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The port of the endpoint to be checked.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * This is a reference name used in Caller Reference
       * (helpful for identifying single healthCheck set amongst others)
       */
-    val referenceName: js.UndefOr[Input[String]] = js.native
+    val referenceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of AWS regions that you want Amazon Route 53 health checkers to check the specified endpoint from.
       */
-    val regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The number of seconds between the time that Amazon Route 53 gets a response from your endpoint and the time that it sends the next health-check request.
       */
-    val requestInterval: js.UndefOr[Input[Double]] = js.native
+    val requestInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The path that you want Amazon Route 53 to request when performing health checks.
       */
-    val resourcePath: js.UndefOr[Input[String]] = js.native
+    val resourcePath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with `HTTP_STR_MATCH` and `HTTPS_STR_MATCH`.
       */
-    val searchString: js.UndefOr[Input[String]] = js.native
+    val searchString: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the health check.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The protocol to use when performing health checks. Valid values are `HTTP`, `HTTPS`, `HTTP_STR_MATCH`, `HTTPS_STR_MATCH`, `TCP`, `CALCULATED` and `CLOUDWATCH_METRIC`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object HealthCheckState {
     

@@ -4,15 +4,15 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimelineChangeEvent extends TimelineEvent {
+trait TimelineChangeEvent
+  extends StObject
+     with TimelineEvent {
   
-  var dataItem: js.UndefOr[Model] = js.native
+  var dataItem: js.UndefOr[Model] = js.undefined
   
-  var eventContainer: js.UndefOr[JQuery] = js.native
+  var eventContainer: js.UndefOr[JQuery] = js.undefined
 }
 object TimelineChangeEvent {
   

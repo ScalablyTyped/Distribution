@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASPxDesignerOpenDialog extends ASPxDesignerReportDialogBase {
+trait ASPxDesignerOpenDialog
+  extends StObject
+     with ASPxDesignerReportDialogBase {
   
-  def open(url: String): Unit = js.native
+  def open(url: String): Unit
 }
 object ASPxDesignerOpenDialog {
   
   @scala.inline
   def apply(
-    buttons: js.Array[_],
+    buttons: js.Array[js.Any],
     cancel: () => Unit,
     customize: (String, ASPxDesignerDialogModel) => Unit,
     height: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any,

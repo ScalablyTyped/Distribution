@@ -2,17 +2,15 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderTopWidthBorderWidth extends StObject {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderTopWidth: Double = js.native
+  var borderTopWidth: Double
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
 }
 object BorderTopWidthBorderWidth {
   

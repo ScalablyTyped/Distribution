@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object defining a cloud object store bucket to crawl. */
-@js.native
 trait SourceOptionsBuckets extends StObject {
   
   /** The number of documents to crawl from this cloud object store bucket. If not specified, all documents in the bucket are crawled. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** The name of the cloud object store bucket to crawl. */
-  var name: String = js.native
+  var name: String
 }
 object SourceOptionsBuckets {
   

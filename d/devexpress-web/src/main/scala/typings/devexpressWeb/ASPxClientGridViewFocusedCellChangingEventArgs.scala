@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.FocusedCellChanging event.
   */
-@js.native
-trait ASPxClientGridViewFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides information on a cell currently being focused.
     */
-  var cellInfo: ASPxClientGridViewCellInfo = js.native
+  var cellInfo: ASPxClientGridViewCellInfo
 }
 object ASPxClientGridViewFocusedCellChangingEventArgs {
   

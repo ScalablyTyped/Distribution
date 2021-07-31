@@ -10,9 +10,9 @@ Connection pool for node-postgres
 | ------------------ | :-------------: |
 | Full name          | pg-pool |
 | Keywords           | pg, postgres, pool, database |
-| # releases         | 13 |
-| # dependents       | 44 |
-| # downloads        | 58100419 |
+| # releases         | 11 |
+| # dependents       | 47 |
+| # downloads        | 72498451 |
 | # stars            | 3 |
 
 ## Links

@@ -3,21 +3,19 @@ package typings.nodeDir
 import typings.nodeDir.nodeDirBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Sync extends StObject {
     
-    var sync: `true` = js.native
+    var sync: `true`
   }
   object Sync {
     
     @scala.inline
-    def apply(sync: `true`): Sync = {
-      val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
+    def apply(): Sync = {
+      val __obj = js.Dynamic.literal(sync = true)
       __obj.asInstanceOf[Sync]
     }
     

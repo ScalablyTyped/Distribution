@@ -10,14 +10,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.closed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication that allows reading and writing streams using a WebSocket. */
 @js.native
 trait StreamWebSocket extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_closed(`type`: closed, listener: TypedEventHandler[IWebSocket, WebSocketClosedEventArgs]): Unit = js.native
   
@@ -47,7 +46,7 @@ trait StreamWebSocket extends StObject {
   var inputStream: IInputStream = js.native
   
   /** Occurs when a close frame is received on the StreamWebSocket object as part of the close handshake. */
-  def onclosed(ev: WebSocketClosedEventArgs with WinRTEvent[IWebSocket]): Unit = js.native
+  def onclosed(ev: WebSocketClosedEventArgs & WinRTEvent[IWebSocket]): Unit = js.native
   /** Occurs when a close frame is received on the StreamWebSocket object as part of the close handshake. */
   @JSName("onclosed")
   var onclosed_Original: TypedEventHandler[IWebSocket, WebSocketClosedEventArgs] = js.native
@@ -55,7 +54,7 @@ trait StreamWebSocket extends StObject {
   /** Gets the output stream to write to the remote network destination on a StreamWebSocket object. */
   var outputStream: IOutputStream = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_closed(`type`: closed, listener: TypedEventHandler[IWebSocket, WebSocketClosedEventArgs]): Unit = js.native
   

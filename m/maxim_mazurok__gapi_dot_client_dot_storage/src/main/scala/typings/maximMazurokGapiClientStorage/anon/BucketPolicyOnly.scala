@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketPolicyOnly extends StObject {
   
   /**
     * The bucket's uniform bucket-level access configuration. The feature was formerly known as Bucket Policy Only. For backward compatibility, this field will be populated with
     * identical information as the uniformBucketLevelAccess field. We recommend using the uniformBucketLevelAccess field to enable and disable the feature.
     */
-  var bucketPolicyOnly: js.UndefOr[Enabled] = js.native
+  var bucketPolicyOnly: js.UndefOr[Enabled] = js.undefined
   
   /** The bucket's Public Access Prevention configuration. Currently, 'unspecified' and 'enforced' are supported. */
-  var publicAccessPrevention: js.UndefOr[String] = js.native
+  var publicAccessPrevention: js.UndefOr[String] = js.undefined
   
   /** The bucket's uniform bucket-level access configuration. */
-  var uniformBucketLevelAccess: js.UndefOr[Enabled] = js.native
+  var uniformBucketLevelAccess: js.UndefOr[Enabled] = js.undefined
 }
 object BucketPolicyOnly {
   

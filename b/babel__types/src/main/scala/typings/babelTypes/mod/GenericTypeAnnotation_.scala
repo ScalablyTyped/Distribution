@@ -3,29 +3,28 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.GenericTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait GenericTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait GenericTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
-  var id: Identifier_ | QualifiedTypeIdentifier_ = js.native
+  var id: Identifier_ | QualifiedTypeIdentifier_
   
-  var typeParameters: TypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_GenericTypeAnnotation_ : GenericTypeAnnotation = js.native
+  var type_GenericTypeAnnotation_ : GenericTypeAnnotation
 }
 object GenericTypeAnnotation_ {
   
   @scala.inline
-  def apply(id: Identifier_ | QualifiedTypeIdentifier_, `type`: GenericTypeAnnotation): GenericTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_ | QualifiedTypeIdentifier_): GenericTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("GenericTypeAnnotation")
     __obj.asInstanceOf[GenericTypeAnnotation_]
   }
   

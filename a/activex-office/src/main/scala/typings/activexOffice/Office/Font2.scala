@@ -2,86 +2,84 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font2 extends StObject {
   
-  var Allcaps: MsoTriState = js.native
+  var Allcaps: MsoTriState
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutorotateNumbers: MsoTriState = js.native
+  var AutorotateNumbers: MsoTriState
   
-  var BaselineOffset: Double = js.native
+  var BaselineOffset: Double
   
-  var Bold: MsoTriState = js.native
+  var Bold: MsoTriState
   
-  var Caps: MsoTextCaps = js.native
+  var Caps: MsoTextCaps
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DoubleStrikeThrough: MsoTriState = js.native
+  var DoubleStrikeThrough: MsoTriState
   
-  val Embeddable: MsoTriState = js.native
+  val Embeddable: MsoTriState
   
-  val Embedded: MsoTriState = js.native
+  val Embedded: MsoTriState
   
-  var Equalize: MsoTriState = js.native
+  var Equalize: MsoTriState
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Glow: GlowFormat = js.native
+  val Glow: GlowFormat
   
-  val Highlight: ColorFormat = js.native
+  val Highlight: ColorFormat
   
-  var Italic: MsoTriState = js.native
+  var Italic: MsoTriState
   
-  var Kerning: Double = js.native
+  var Kerning: Double
   
-  val Line: LineFormat = js.native
+  val Line: LineFormat
   
-  var Name: String = js.native
+  var Name: String
   
-  var NameAscii: String = js.native
+  var NameAscii: String
   
-  var NameComplexScript: String = js.native
+  var NameComplexScript: String
   
-  var NameFarEast: String = js.native
+  var NameFarEast: String
   
-  var NameOther: String = js.native
+  var NameOther: String
   
   @JSName("Office.Font2_typekey")
-  var OfficeDotFont2_typekey: Font2 = js.native
+  var OfficeDotFont2_typekey: Font2
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Reflection: ReflectionFormat = js.native
+  val Reflection: ReflectionFormat
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Smallcaps: MsoTriState = js.native
+  var Smallcaps: MsoTriState
   
-  var SoftEdgeFormat: MsoSoftEdgeType = js.native
+  var SoftEdgeFormat: MsoSoftEdgeType
   
-  var Spacing: Double = js.native
+  var Spacing: Double
   
-  var Strike: MsoTextStrike = js.native
+  var Strike: MsoTextStrike
   
-  var StrikeThrough: MsoTriState = js.native
+  var StrikeThrough: MsoTriState
   
-  var Subscript: MsoTriState = js.native
+  var Subscript: MsoTriState
   
-  var Superscript: MsoTriState = js.native
+  var Superscript: MsoTriState
   
-  val UnderlineColor: ColorFormat = js.native
+  val UnderlineColor: ColorFormat
   
-  var UnderlineStyle: MsoTextUnderlineType = js.native
+  var UnderlineStyle: MsoTextUnderlineType
   
-  var WordArtformat: MsoPresetTextEffect = js.native
+  var WordArtformat: MsoPresetTextEffect
 }
 object Font2 {
   

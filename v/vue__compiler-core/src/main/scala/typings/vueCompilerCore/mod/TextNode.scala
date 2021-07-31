@@ -3,26 +3,25 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextNode
-  extends TemplateChildNode
+  extends StObject
      with Node2
+     with TemplateChildNode
      with TemplateTextChildNode {
   
-  var content: String = js.native
+  var content: String
   
   @JSName("type")
-  var type_TextNode: `2` = js.native
+  var type_TextNode: `2`
 }
 object TextNode {
   
   @scala.inline
-  def apply(content: String, loc: SourceLocation, `type`: `2`): TextNode = {
+  def apply(content: String, loc: SourceLocation): TextNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[TextNode]
   }
   

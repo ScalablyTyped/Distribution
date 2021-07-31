@@ -2,19 +2,17 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing jobs using ListJobs.
   */
-@js.native
 trait SchemaListJobsResponse extends StObject {
   
   /**
     * The list of jobs.
     */
-  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.native
+  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.undefined
   
   /**
     * A token to retrieve next page of results. Pass this value in the
@@ -23,7 +21,7 @@ trait SchemaListJobsResponse extends StObject {
     * results through which to paginate.  The page token is valid for only 2
     * hours.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListJobsResponse {
   

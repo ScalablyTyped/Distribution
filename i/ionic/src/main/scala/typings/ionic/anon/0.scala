@@ -3,13 +3,11 @@ package typings.ionic.anon
 import typings.ionic.utilsHttpMod.SuperAgentRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var req: SuperAgentRequest = js.native
+  var req: SuperAgentRequest
 }
 object `0` {
   

@@ -2,17 +2,15 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientFileWriteOptions extends StObject {
   
-  var lastVersionTag: js.UndefOr[String] = js.native
+  var lastVersionTag: js.UndefOr[String] = js.undefined
   
-  var noOverwrite: js.UndefOr[Boolean] = js.native
+  var noOverwrite: js.UndefOr[Boolean] = js.undefined
   
-  var parentRev: js.UndefOr[String] = js.native
+  var parentRev: js.UndefOr[String] = js.undefined
 }
 object ClientFileWriteOptions {
   

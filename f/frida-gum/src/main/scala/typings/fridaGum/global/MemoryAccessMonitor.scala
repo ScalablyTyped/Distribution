@@ -4,7 +4,6 @@ import typings.fridaGum.MemoryAccessCallbacks
 import typings.fridaGum.MemoryAccessRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,17 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object MemoryAccessMonitor {
   
+  @JSGlobal("MemoryAccessMonitor")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Stops monitoring the remaining memory ranges passed to
     * `MemoryAccessMonitor.enable()`.
     */
-  @JSGlobal("MemoryAccessMonitor.disable")
-  @js.native
-  def disable(): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @JSGlobal("MemoryAccessMonitor.enable")
-  @js.native
-  def enable(ranges: js.Array[MemoryAccessRange], callbacks: MemoryAccessCallbacks): Unit = js.native
+  @scala.inline
+  def enable(ranges: js.Array[MemoryAccessRange], callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Starts monitoring one or more memory ranges for access, and notifies on
     * the first access of each contained memory page.
@@ -35,7 +36,6 @@ object MemoryAccessMonitor {
     * @param ranges One or more ranges to monitor.
     * @param callbacks Callbacks to be notified on access.
     */
-  @JSGlobal("MemoryAccessMonitor.enable")
-  @js.native
-  def enable(ranges: MemoryAccessRange, callbacks: MemoryAccessCallbacks): Unit = js.native
+  @scala.inline
+  def enable(ranges: MemoryAccessRange, callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this field when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The destination range of outgoing packets that this route applies to. Only IPv4 is supported. */
-  var destRange: js.UndefOr[String] = js.native
+  var destRange: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of this resource. Always compute#routes for Route resources. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?`. The first character must be a lowercase letter, and all following characters (except for the last
     * character) must be a dash, lowercase letter, or digit. The last character must be a lowercase letter or digit.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Fully-qualified URL of the network that this route applies to. */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL:
     * projects/project/global/gateways/default-internet-gateway
     */
-  var nextHopGateway: js.UndefOr[String] = js.native
+  var nextHopGateway: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets or the IP address of the forwarding Rule. For example, the following are all
@@ -47,40 +45,40 @@ trait Route extends StObject {
     * - https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
     * - regions/region/forwardingRules/forwardingRule
     */
-  var nextHopIlb: js.UndefOr[String] = js.native
+  var nextHopIlb: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example:
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
     */
-  var nextHopInstance: js.UndefOr[String] = js.native
+  var nextHopInstance: js.UndefOr[String] = js.undefined
   
   /** The network IP address of an instance that should handle matching packets. Only IPv4 is supported. */
-  var nextHopIp: js.UndefOr[String] = js.native
+  var nextHopIp: js.UndefOr[String] = js.undefined
   
   /** The URL of the local network if it should handle matching packets. */
-  var nextHopNetwork: js.UndefOr[String] = js.native
+  var nextHopNetwork: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The network peering name that should handle matching packets, which should conform to RFC1035. */
-  var nextHopPeering: js.UndefOr[String] = js.native
+  var nextHopPeering: js.UndefOr[String] = js.undefined
   
   /** The URL to a VpnTunnel that should handle matching packets. */
-  var nextHopVpnTunnel: js.UndefOr[String] = js.native
+  var nextHopVpnTunnel: js.UndefOr[String] = js.undefined
   
   /**
     * The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal prefix length. In cases where multiple routes have equal
     * prefix length, the one with the lowest-numbered priority value wins. The default value is `1000`. The priority value must be from `0` to `65535`, inclusive.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** [Output Only] Server-defined fully-qualified URL for this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** A list of instance tags to which this route applies. */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] If potential misconfigurations are detected for this route, this field will be populated with warning messages. */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 object Route {
   

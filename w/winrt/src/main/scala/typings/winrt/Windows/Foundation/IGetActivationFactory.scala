@@ -2,13 +2,11 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGetActivationFactory extends StObject {
   
-  def getActivationFactory(activatableClassId: String): js.Any = js.native
+  def getActivationFactory(activatableClassId: String): js.Any
 }
 object IGetActivationFactory {
   

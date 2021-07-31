@@ -4,10 +4,8 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.latest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListJobsForWorkflowRunEndpoint extends StObject {
   
   /**
@@ -15,23 +13,23 @@ trait ActionsListJobsForWorkflowRunEndpoint extends StObject {
     * \* `latest`: Returns jobs from the most recent execution of the workflow run.
     * \* `all`: Returns all jobs for a workflow run, including from old executions of the workflow run.
     */
-  var filter: js.UndefOr[latest | all] = js.native
+  var filter: js.UndefOr[latest | all] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
-  var run_id: Double = js.native
+  var run_id: Double
 }
 object ActionsListJobsForWorkflowRunEndpoint {
   

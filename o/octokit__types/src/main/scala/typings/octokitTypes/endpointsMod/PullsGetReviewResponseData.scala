@@ -4,31 +4,29 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Pullrequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsGetReviewResponseData extends StObject {
   
-  var _links: Pullrequest = js.native
+  var _links: Pullrequest
   
-  var body: String = js.native
+  var body: String
   
-  var commit_id: String = js.native
+  var commit_id: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var pull_request_url: String = js.native
+  var pull_request_url: String
   
-  var state: String = js.native
+  var state: String
   
-  var submitted_at: String = js.native
+  var submitted_at: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object PullsGetReviewResponseData {
   

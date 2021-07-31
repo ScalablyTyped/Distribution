@@ -20,15 +20,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionM
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidParameterExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidParameterExceptionDetails> * / any */ @js.native
-  trait InvalidParameterException
-    extends CreateIdentityPoolExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidParameterExceptionDetails> * / any */ trait InvalidParameterException
+    extends StObject
+       with CreateIdentityPoolExceptionsUnion
        with DeleteIdentitiesExceptionsUnion
        with DeleteIdentityPoolExceptionsUnion
        with DescribeIdentityExceptionsUnion
@@ -47,15 +46,13 @@ object typesInvalidParameterExceptionMod {
        with UnlinkIdentityExceptionsUnion
        with UpdateIdentityPoolExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
   }
   object InvalidParameterException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
-    ): InvalidParameterException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidParameterException = {
+      val __obj = js.Dynamic.literal(name = "InvalidParameterException")
       __obj.asInstanceOf[InvalidParameterException]
     }
     
@@ -69,13 +66,12 @@ object typesInvalidParameterExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidParameterExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by an InvalidParameterException.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidParameterExceptionDetails {
     

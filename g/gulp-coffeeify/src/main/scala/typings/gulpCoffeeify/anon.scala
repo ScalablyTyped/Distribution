@@ -2,17 +2,15 @@ package typings.gulpCoffeeify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
   }
   object Base {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Debug {
     
@@ -74,12 +71,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ext extends StObject {
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* data */ String, String]] = js.native
+    var transform: js.UndefOr[js.Function1[/* data */ String, String]] = js.undefined
   }
   object Ext {
     

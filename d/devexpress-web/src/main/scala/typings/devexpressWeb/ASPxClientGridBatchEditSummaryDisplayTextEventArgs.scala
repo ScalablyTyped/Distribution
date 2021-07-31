@@ -2,64 +2,64 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the BatchEditSummaryDisplayText event.
   */
-@js.native
-trait ASPxClientGridBatchEditSummaryDisplayTextEventArgs extends ASPxClientEventArgs {
+trait ASPxClientGridBatchEditSummaryDisplayTextEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets the summary item's display text.
     */
-  var displayText: String = js.native
+  var displayText: String
   
   /**
     * Specifies the group row's visible index.
     */
-  var groupRowVisibleIndex: Double = js.native
+  var groupRowVisibleIndex: Double
   
   /**
     * Specifies whether the processed summary is a group summary.
     */
-  var isGroupSummary: Boolean = js.native
+  var isGroupSummary: Boolean
   
   /**
     * Specifies whether the processed summary is a total summary.
     */
-  var isTotalSummary: Boolean = js.native
+  var isTotalSummary: Boolean
   
   /**
     * Gets the summary item's server value.
     */
-  var serverValue: Double = js.native
+  var serverValue: Double
   
   /**
     * Gets the element that contains the summary item.
     */
-  var summaryElement: js.Any = js.native
+  var summaryElement: js.Any
   
   /**
     * Gets the summary item's field name.
     */
-  var summaryFieldName: String = js.native
+  var summaryFieldName: String
   
   /**
     * Gets the summary item index.
     */
-  var summaryItemIndex: Double = js.native
+  var summaryItemIndex: Double
   
   /**
     * Gets the summary type.
     */
-  var summaryType: ASPxClientSummaryItemType = js.native
+  var summaryType: ASPxClientSummaryItemType
   
   /**
     * Specifies the summary item's value.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
   

@@ -3,35 +3,33 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC Date. For documentation of this class, see java.sql.Date
   * .
   */
-@js.native
 trait JdbcDate extends StObject {
   
-  def after(when: JdbcDate): Boolean = js.native
+  def after(when: JdbcDate): Boolean
   
-  def before(when: JdbcDate): Boolean = js.native
+  def before(when: JdbcDate): Boolean
   
-  def getDate(): Integer = js.native
+  def getDate(): Integer
   
-  def getMonth(): Integer = js.native
+  def getMonth(): Integer
   
-  def getTime(): Integer = js.native
+  def getTime(): Integer
   
-  def getYear(): Integer = js.native
+  def getYear(): Integer
   
-  def setDate(date: Integer): Unit = js.native
+  def setDate(date: Integer): Unit
   
-  def setMonth(month: Integer): Unit = js.native
+  def setMonth(month: Integer): Unit
   
-  def setTime(milliseconds: Integer): Unit = js.native
+  def setTime(milliseconds: Integer): Unit
   
-  def setYear(year: Integer): Unit = js.native
+  def setYear(year: Integer): Unit
 }
 object JdbcDate {
   

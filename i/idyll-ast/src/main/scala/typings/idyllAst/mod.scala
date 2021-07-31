@@ -9,21 +9,21 @@ import typings.idyllCompiler.mod.TreeNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("idyll-ast", "appendNode")
+  @JSImport("idyll-ast", JSImport.Namespace)
   @js.native
-  def appendNode(ast: AST, node: Node): AST = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("idyll-ast", "appendNodes")
-  @js.native
-  def appendNodes(ast: AST, nodes: AST): AST = js.native
+  @scala.inline
+  def appendNode(ast: AST, node: Node): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("appendNode")(ast.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "createNode")
-  @js.native
+  @scala.inline
+  def appendNodes(ast: AST, nodes: AST): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("appendNodes")(ast.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[AST]
+  
+  @scala.inline
   def createNode_1(
     name: String,
     props: Record[
@@ -31,89 +31,71 @@ object mod {
       PropValue | (/* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
     ],
     children: js.Array[Node]
-  ): TreeNode = js.native
+  ): TreeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[TreeNode]
   
-  @JSImport("idyll-ast", "filterChildren")
-  @js.native
-  def filterChildren(node: Node, filter: js.Function1[/* child */ Node, Boolean]): Node = js.native
+  @scala.inline
+  def filterChildren(node: Node, filter: js.Function1[/* child */ Node, Boolean]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("filterChildren")(node.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("idyll-ast", "filterNodes")
-  @js.native
-  def filterNodes(ast: AST, filter: js.Function1[/* node */ Node, Boolean]): AST = js.native
+  @scala.inline
+  def filterNodes(ast: AST, filter: js.Function1[/* node */ Node, Boolean]): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("filterNodes")(ast.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "findNodes")
-  @js.native
-  def findNodes(ast: AST, filter: js.Function1[/* n */ Node, Boolean]): js.Array[Node] = js.native
+  @scala.inline
+  def findNodes(ast: AST, filter: js.Function1[/* n */ Node, Boolean]): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(ast.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  @JSImport("idyll-ast", "getChildren")
-  @js.native
-  def getChildren(node: Node): js.Array[Node] = js.native
+  @scala.inline
+  def getChildren(node: Node): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   
-  @JSImport("idyll-ast", "getNodesByName")
-  @js.native
-  def getNodesByName(ast: AST, name: String): js.Array[Node] = js.native
+  @scala.inline
+  def getNodesByName(ast: AST, name: String): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesByName")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  @JSImport("idyll-ast", "getProperties")
-  @js.native
-  def getProperties(node: Node): js.Array[Property] = js.native
+  @scala.inline
+  def getProperties(node: Node): js.Array[Property] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProperties")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Property]]
   
-  @JSImport("idyll-ast", "getPropertiesByType")
-  @js.native
-  def getPropertiesByType(node: Node, `type`: PropType): js.Array[Property] = js.native
+  @scala.inline
+  def getPropertiesByType(node: Node, `type`: PropType): js.Array[Property] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertiesByType")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Property]]
   
-  @JSImport("idyll-ast", "getProperty")
-  @js.native
-  def getProperty(node: Node, key: String): PropValue | Null = js.native
+  @scala.inline
+  def getProperty(node: Node, key: String): PropValue | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[PropValue | Null]
   
-  @JSImport("idyll-ast", "modifyChildren")
-  @js.native
-  def modifyChildren(node: Node, modifier: js.Function1[/* n */ Node, Unit]): Node = js.native
+  @scala.inline
+  def modifyChildren(node: Node, modifier: js.Function1[/* n */ Node, Unit]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyChildren")(node.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("idyll-ast", "modifyNodesByName")
-  @js.native
-  def modifyNodesByName(ast: AST, name: String, modifier: js.Function1[/* node */ Node, Unit]): AST = js.native
+  @scala.inline
+  def modifyNodesByName(ast: AST, name: String, modifier: js.Function1[/* node */ Node, Unit]): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyNodesByName")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "prependNode")
-  @js.native
-  def prependNode(ast: AST, node: Node): AST = js.native
+  @scala.inline
+  def prependNode(ast: AST, node: Node): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("prependNode")(ast.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "prependNodes")
-  @js.native
-  def prependNodes(ast: AST, nodes: js.Array[Node]): AST = js.native
+  @scala.inline
+  def prependNodes(ast: AST, nodes: js.Array[Node]): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("prependNodes")(ast.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "removeNodesByName")
-  @js.native
-  def removeNodesByName(ast: AST, name: String): AST = js.native
+  @scala.inline
+  def removeNodesByName(ast: AST, name: String): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNodesByName")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @JSImport("idyll-ast", "removeProperty")
-  @js.native
-  def removeProperty(node: Node, key: String): Node = js.native
+  @scala.inline
+  def removeProperty(node: Node, key: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProperty")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("idyll-ast", "setProperties")
-  @js.native
+  @scala.inline
   def setProperties_1(
     node: Node,
     properties: Record[
       String, 
       PropValue | (/* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
     ]
-  ): Node = js.native
+  ): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperties")(node.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("idyll-ast", "setProperty")
-  @js.native
-  def setProperty(node: Node, key: String, value: PropValue): Node = js.native
-  @JSImport("idyll-ast", "setProperty")
-  @js.native
+  @scala.inline
+  def setProperty(node: Node, key: String, value: PropValue): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Node]
+  
+  @scala.inline
   def setProperty_1(
     node: Node,
     key: String,
     value: /* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any
-  ): Node = js.native
+  ): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("idyll-ast", "walkNodes")
-  @js.native
-  def walkNodes(ast: Null, func: js.Function1[/* n */ Node, Unit]): Unit = js.native
-  @JSImport("idyll-ast", "walkNodes")
-  @js.native
-  def walkNodes(ast: AST, func: js.Function1[/* n */ Node, Unit]): Unit = js.native
+  @scala.inline
+  def walkNodes(ast: Null, func: js.Function1[/* n */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkNodes")(ast.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def walkNodes(ast: AST, func: js.Function1[/* n */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkNodes")(ast.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

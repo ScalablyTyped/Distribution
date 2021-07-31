@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnColumnMod {
@@ -22,96 +21,95 @@ object columnColumnMod {
     def this(props: ColumnProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ColumnProps extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var bodyClassName: js.UndefOr[String] = js.native
+    var bodyClassName: js.UndefOr[String] = js.undefined
     
-    var bodyStyle: js.UndefOr[js.Object] = js.native
+    var bodyStyle: js.UndefOr[js.Object] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var columnKey: js.UndefOr[String] = js.native
+    var columnKey: js.UndefOr[String] = js.undefined
     
-    var editor: js.UndefOr[js.Function1[/* props */ js.Any, js.UndefOr[Element]]] = js.native
+    var editor: js.UndefOr[js.Function1[/* props */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var editorValidator: js.UndefOr[js.Function1[/* props */ js.Any, Boolean]] = js.native
+    var editorValidator: js.UndefOr[js.Function1[/* props */ js.Any, Boolean]] = js.undefined
     
-    var editorValidatorEvent: js.UndefOr[String] = js.native
+    var editorValidatorEvent: js.UndefOr[String] = js.undefined
     
-    var excludeGlobalFilter: js.UndefOr[Boolean] = js.native
+    var excludeGlobalFilter: js.UndefOr[Boolean] = js.undefined
     
-    var expander: js.UndefOr[Boolean] = js.native
+    var expander: js.UndefOr[Boolean] = js.undefined
     
-    var exportable: js.UndefOr[Boolean] = js.native
+    var exportable: js.UndefOr[Boolean] = js.undefined
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var filterElement: js.UndefOr[js.Object] = js.native
+    var filterElement: js.UndefOr[js.Object] = js.undefined
     
-    var filterField: js.UndefOr[String] = js.native
+    var filterField: js.UndefOr[String] = js.undefined
     
-    var filterFunction: js.UndefOr[js.Function2[/* value */ js.Any, /* filter */ js.Any, Unit]] = js.native
+    var filterFunction: js.UndefOr[js.Function2[/* value */ js.Any, /* filter */ js.Any, Unit]] = js.undefined
     
-    var filterHeaderClassName: js.UndefOr[String] = js.native
+    var filterHeaderClassName: js.UndefOr[String] = js.undefined
     
-    var filterHeaderStyle: js.UndefOr[js.Object] = js.native
+    var filterHeaderStyle: js.UndefOr[js.Object] = js.undefined
     
-    var filterMatchMode: js.UndefOr[String] = js.native
+    var filterMatchMode: js.UndefOr[String] = js.undefined
     
-    var filterMaxLength: js.UndefOr[Double] = js.native
+    var filterMaxLength: js.UndefOr[Double] = js.undefined
     
-    var filterPlaceholder: js.UndefOr[String] = js.native
+    var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterType: js.UndefOr[String] = js.native
+    var filterType: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var footerClassName: js.UndefOr[String] = js.native
+    var footerClassName: js.UndefOr[String] = js.undefined
     
-    var footerStyle: js.UndefOr[js.Object] = js.native
+    var footerStyle: js.UndefOr[js.Object] = js.undefined
     
-    var frozen: js.UndefOr[Boolean] = js.native
+    var frozen: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.native
+    var headerStyle: js.UndefOr[js.Object] = js.undefined
     
-    var loadingBody: js.UndefOr[js.Any] = js.native
+    var loadingBody: js.UndefOr[js.Any] = js.undefined
     
-    var onEditorCancel: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.native
+    var onEditorCancel: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
     
-    var onEditorInit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.native
+    var onEditorInit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
     
-    var onEditorSubmit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.native
+    var onEditorSubmit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
     
-    var reorderable: js.UndefOr[Boolean] = js.native
+    var reorderable: js.UndefOr[Boolean] = js.undefined
     
-    var rowEditor: js.UndefOr[Boolean] = js.native
+    var rowEditor: js.UndefOr[Boolean] = js.undefined
     
-    var rowReorder: js.UndefOr[Boolean] = js.native
+    var rowReorder: js.UndefOr[Boolean] = js.undefined
     
-    var rowReorderIcon: js.UndefOr[String] = js.native
+    var rowReorderIcon: js.UndefOr[String] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.native
+    var selectionMode: js.UndefOr[String] = js.undefined
     
-    var sortField: js.UndefOr[String] = js.native
+    var sortField: js.UndefOr[String] = js.undefined
     
-    var sortFunction: js.UndefOr[js.Function1[/* e */ Field, Unit]] = js.native
+    var sortFunction: js.UndefOr[js.Function1[/* e */ Field, Unit]] = js.undefined
     
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ColumnProps {
     

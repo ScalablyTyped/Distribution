@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSuppressedDestinationResponse extends StObject {
   
   /**
     * An object containing information about the suppressed email address.
     */
-  var SuppressedDestination: typings.awsSdk.sesv2Mod.SuppressedDestination = js.native
+  var SuppressedDestination: typings.awsSdk.sesv2Mod.SuppressedDestination
 }
 object GetSuppressedDestinationResponse {
   

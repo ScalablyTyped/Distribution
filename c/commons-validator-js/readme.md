@@ -10,9 +10,9 @@ JavaScript port of Apache Commons Validator
 | ------------------ | :-------------: |
 | Full name          | commons-validator-js |
 | Keywords           | apache, commons, validator, javascript |
-| # releases         | 726 |
-| # dependents       | 1 |
-| # downloads        | 647470 |
+| # releases         | 569 |
+| # dependents       | 3 |
+| # downloads        | 649365 |
 | # stars            | 1 |
 
 ## Links

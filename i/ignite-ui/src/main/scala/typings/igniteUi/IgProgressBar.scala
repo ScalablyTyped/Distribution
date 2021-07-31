@@ -4,42 +4,41 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgProgressBar
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animateTimeout: js.UndefOr[Double] = js.native
+  var animateTimeout: js.UndefOr[Double] = js.undefined
   
-  var change: js.UndefOr[ChangeEvent] = js.native
+  var change: js.UndefOr[ChangeEvent] = js.undefined
   
-  var endValue: js.UndefOr[Double] = js.native
+  var endValue: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately.
     */
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object IgProgressBar {
   

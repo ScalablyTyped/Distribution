@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseOldStoriesItem extends StObject {
   
-  var args: NewsRepositoryInboxResponseArgs = js.native
+  var args: NewsRepositoryInboxResponseArgs
   
-  var counts: NewsRepositoryInboxResponseCounts = js.native
+  var counts: NewsRepositoryInboxResponseCounts
   
-  var pk: js.UndefOr[String] = js.native
+  var pk: js.UndefOr[String] = js.undefined
   
-  var story_type: Double = js.native
+  var story_type: Double
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object NewsRepositoryInboxResponseOldStoriesItem {
   

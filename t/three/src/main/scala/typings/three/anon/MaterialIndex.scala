@@ -2,17 +2,15 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaterialIndex extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var materialIndex: js.UndefOr[Double] = js.native
+  var materialIndex: js.UndefOr[Double] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object MaterialIndex {
   

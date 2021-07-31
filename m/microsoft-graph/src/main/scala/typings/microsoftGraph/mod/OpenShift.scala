@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenShift extends ChangeTrackedEntity {
+trait OpenShift
+  extends StObject
+     with ChangeTrackedEntity {
   
   // An unpublished open shift.
-  var draftOpenShift: js.UndefOr[NullableOption[OpenShiftItem]] = js.native
+  var draftOpenShift: js.UndefOr[NullableOption[OpenShiftItem]] = js.undefined
   
   // ID for the scheduling group that the open shift belongs to.
-  var schedulingGroupId: js.UndefOr[NullableOption[String]] = js.native
+  var schedulingGroupId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A published open shift.
-  var sharedOpenShift: js.UndefOr[NullableOption[OpenShiftItem]] = js.native
+  var sharedOpenShift: js.UndefOr[NullableOption[OpenShiftItem]] = js.undefined
 }
 object OpenShift {
   

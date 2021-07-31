@@ -7,28 +7,26 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/preventOverflow.Options> */
-@js.native
 trait PartialOptionsAltAxis extends StObject {
   
-  var altAxis: js.UndefOr[Boolean] = js.native
+  var altAxis: js.UndefOr[Boolean] = js.undefined
   
-  var altBoundary: js.UndefOr[Boolean] = js.native
+  var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[Boundary] = js.native
+  var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var mainAxis: js.UndefOr[Boolean] = js.native
+  var mainAxis: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[RootBoundary] = js.native
+  var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
   
-  var tether: js.UndefOr[Boolean] = js.native
+  var tether: js.UndefOr[Boolean] = js.undefined
   
-  var tetherOffset: js.UndefOr[TetherOffset] = js.native
+  var tetherOffset: js.UndefOr[TetherOffset] = js.undefined
 }
 object PartialOptionsAltAxis {
   

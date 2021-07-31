@@ -2,13 +2,11 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RendererFormattedStrings extends StObject {
   
-  var rendererFormattedStrings: js.UndefOr[AuditGroupExpandTooltip] = js.native
+  var rendererFormattedStrings: js.UndefOr[AuditGroupExpandTooltip] = js.undefined
 }
 object RendererFormattedStrings {
   

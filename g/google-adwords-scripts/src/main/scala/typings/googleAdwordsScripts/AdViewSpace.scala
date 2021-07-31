@@ -2,25 +2,23 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdViewSpace extends StObject {
   
-  def expandedTextAd(): ExpandedTextAd = js.native
+  def expandedTextAd(): ExpandedTextAd
   
-  def gmailImageAd(): GmailImageAd = js.native
+  def gmailImageAd(): GmailImageAd
   
-  def gmailMultiProductAd(): GmailMultiProductAd = js.native
+  def gmailMultiProductAd(): GmailMultiProductAd
   
-  def gmailSinglePromotionAd(): GmailSinglePromotionAd = js.native
+  def gmailSinglePromotionAd(): GmailSinglePromotionAd
   
-  def html5Ad(): Html5Ad = js.native
+  def html5Ad(): Html5Ad
   
-  def imageAd(): ImageAd = js.native
+  def imageAd(): ImageAd
   
-  def responsiveDisplayAd(): ResponsiveDisplayAd = js.native
+  def responsiveDisplayAd(): ResponsiveDisplayAd
 }
 object AdViewSpace {
   

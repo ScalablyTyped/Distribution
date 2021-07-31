@@ -2,13 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PermissionPage extends Page {
+trait PermissionPage
+  extends StObject
+     with Page {
   
-  var permissions: js.Array[Permission] = js.native
+  var permissions: js.Array[Permission]
 }
 object PermissionPage {
   

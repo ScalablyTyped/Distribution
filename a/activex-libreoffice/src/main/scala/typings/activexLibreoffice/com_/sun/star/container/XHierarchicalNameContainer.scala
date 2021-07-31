@@ -3,18 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Insertion and removal of hierarchical elements. */
-@js.native
-trait XHierarchicalNameContainer extends XHierarchicalNameReplace {
+trait XHierarchicalNameContainer
+  extends StObject
+     with XHierarchicalNameReplace {
   
   /** inserts the element at the specified name. */
-  def insertByHierarchicalName(aName: String, aElement: js.Any): Unit = js.native
+  def insertByHierarchicalName(aName: String, aElement: js.Any): Unit
   
   /** removes the element at the specified name. */
-  def removeByHierarchicalName(Name: String): Unit = js.native
+  def removeByHierarchicalName(Name: String): Unit
 }
 object XHierarchicalNameContainer {
   

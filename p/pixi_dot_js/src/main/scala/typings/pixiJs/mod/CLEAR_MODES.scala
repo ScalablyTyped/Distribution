@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,17 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CLEAR_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.CLEAR_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.CLEAR_MODES & Double] = js.native
   
-  /* 5 */ val AUTO: typings.pixiJs.PIXI.CLEAR_MODES.AUTO with Double = js.native
+  /* 5 */ val AUTO: typings.pixiJs.PIXI.CLEAR_MODES.AUTO & Double = js.native
   
-  /* 0 */ val BLEND: typings.pixiJs.PIXI.CLEAR_MODES.BLEND with Double = js.native
+  /* 0 */ val BLEND: typings.pixiJs.PIXI.CLEAR_MODES.BLEND & Double = js.native
   
-  /* 2 */ val BLIT: typings.pixiJs.PIXI.CLEAR_MODES.BLIT with Double = js.native
+  /* 2 */ val BLIT: typings.pixiJs.PIXI.CLEAR_MODES.BLIT & Double = js.native
   
-  /* 1 */ val CLEAR: typings.pixiJs.PIXI.CLEAR_MODES.CLEAR with Double = js.native
+  /* 1 */ val CLEAR: typings.pixiJs.PIXI.CLEAR_MODES.CLEAR & Double = js.native
   
-  /* 3 */ val NO: typings.pixiJs.PIXI.CLEAR_MODES.NO with Double = js.native
+  /* 3 */ val NO: typings.pixiJs.PIXI.CLEAR_MODES.NO & Double = js.native
   
-  /* 4 */ val YES: typings.pixiJs.PIXI.CLEAR_MODES.YES with Double = js.native
+  /* 4 */ val YES: typings.pixiJs.PIXI.CLEAR_MODES.YES & Double = js.native
 }

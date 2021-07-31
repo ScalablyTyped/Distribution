@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AllPermission} is a permission that implies all other permissions.
   * @since OOo 1.1.2
   */
-@js.native
 trait AllPermission extends StObject {
   
-  var dummy: Double = js.native
+  var dummy: Double
 }
 object AllPermission {
   

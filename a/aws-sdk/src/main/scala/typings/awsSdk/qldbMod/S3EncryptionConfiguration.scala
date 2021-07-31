@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3EncryptionConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for a symmetric customer master key (CMK) in AWS Key Management Service (AWS KMS). Amazon QLDB does not support asymmetric CMKs. You must provide a KmsKeyArn if you specify SSE_KMS as the ObjectEncryptionType.  KmsKeyArn is not required if you specify SSE_S3 as the ObjectEncryptionType.
     */
-  var KmsKeyArn: js.UndefOr[Arn] = js.native
+  var KmsKeyArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Amazon S3 object encryption type. To learn more about server-side encryption options in Amazon S3, see Protecting Data Using Server-Side Encryption in the Amazon S3 Developer Guide.
     */
-  var ObjectEncryptionType: S3ObjectEncryptionType = js.native
+  var ObjectEncryptionType: S3ObjectEncryptionType
 }
 object S3EncryptionConfiguration {
   

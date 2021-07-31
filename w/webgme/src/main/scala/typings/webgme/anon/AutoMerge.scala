@@ -5,10 +5,8 @@ import typings.webgme.webgmeStrings.plainSHA1
 import typings.webgme.webgmeStrings.rand160Bits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMerge extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait AutoMerge extends StObject {
     * Use with caution as larger (+100k nodes) projects can slow down the commit rate.
     *   config.storage.autoMerge.enable = false;
     */
-  var autoMerge: Enable = js.native
+  var autoMerge: Enable
   
   /**
     * If true, events regarding project/branch creation/deletion 
@@ -26,21 +24,21 @@ trait AutoMerge extends StObject {
     * Only modify this if you are writing a custom GUI.
     *  config.storage.broadcastProjectEvents = false;
     */
-  var broadcastProjectEvents: Boolean = js.native
+  var broadcastProjectEvents: Boolean
   
   /**
     * Number of core-objects stored before emptying cache (server side).
     *  config.storage.cache = 2000;
     */
-  var cache: Double = js.native
+  var cache: Double
   
   /**
     * Number of core-objects stored before emptying cache (client side).
     *   config.storage.clientCache = 2000;
     */
-  var clientCache: Double = js.native
+  var clientCache: Double
   
-  var database: Type = js.native
+  var database: Type
   
   /**
     * Since v2.6.2 patched objects on the server are being 
@@ -49,27 +47,27 @@ trait AutoMerge extends StObject {
     * If true, no checking at all will take place.
     *   config.storage.disableHashChecks = false;
     */
-  var disableHashChecks: Boolean = js.native
+  var disableHashChecks: Boolean
   
   /**
     * Algorithm used when hashing the objects in the database, 
     * can be 'plainSHA1', 'rand160Bits' or 'ZSSHA'.
     *   config.storage.keyType = 'plainSha';
     */
-  var keyType: plainSHA1 | rand160Bits | ZSSHA = js.native
+  var keyType: plainSHA1 | rand160Bits | ZSSHA
   
   /**
     * Size of bucket before triggering a load of objects from the server.
     *   config.storage.loadBucketSize = 100;
     */
-  var loadBucketSize: Double = js.native
+  var loadBucketSize: Double
   
   /**
     * Time in milliseconds (after a new bucket has been created) 
     * before triggering a load of objects from the server.
     *   config.storage.loadBucketTimer = 10;
     */
-  var loadBucketTimer: Double = js.native
+  var loadBucketTimer: Double
   
   /**
     * If greater than -1, the maximum number of core objects 
@@ -78,14 +76,14 @@ trait AutoMerge extends StObject {
     * any modified data will always be sent as patches.
     *   config.storage.maxEmittedCoreObjects = -1;
     */
-  var maxEmittedCoreObjects: Double = js.native
+  var maxEmittedCoreObjects: Double
   
   /**
     * Options passed to database client 
     * (unless mongo is specified, in that case config.mongo.options are used).
     *   config.storage.database.options = '{}';
     */
-  var options: String = js.native
+  var options: String
   
   /**
     * If config.storage.disableHashChecks is set to 
@@ -94,7 +92,7 @@ trait AutoMerge extends StObject {
     * Set this to false to only log the errors.
     *   config.storage.requireHashesToMatch = true;
     */
-  var requireHashesToMatch: Boolean = js.native
+  var requireHashesToMatch: Boolean
 }
 object AutoMerge {
   

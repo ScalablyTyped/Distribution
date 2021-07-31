@@ -2,34 +2,32 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A particular message pertaining to a Dataflow job.
   */
-@js.native
 trait SchemaJobMessage extends StObject {
   
   /**
     * Deprecated.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Importance level of the message.
     */
-  var messageImportance: js.UndefOr[String] = js.native
+  var messageImportance: js.UndefOr[String] = js.undefined
   
   /**
     * The text of the message.
     */
-  var messageText: js.UndefOr[String] = js.native
+  var messageText: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp of the message.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object SchemaJobMessage {
   

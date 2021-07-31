@@ -3,10 +3,13 @@ package typings.openlayers.mod
 import typings.openlayers.mod.olx.ProjectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proj {
+  
+  @JSImport("openlayers", "proj")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @classdesc
@@ -181,14 +184,13 @@ object proj {
     *     the transformed {@link ol.Coordinate}.
     * @api stable
     */
-  @JSImport("openlayers", "proj.addCoordinateTransforms")
-  @js.native
+  @scala.inline
   def addCoordinateTransforms(
     source: ProjectionLike,
     destination: ProjectionLike,
     forward: js.Function1[/* coords */ Coordinate_, Coordinate_],
     inverse: js.Function1[/* coords */ Coordinate_, Coordinate_]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCoordinateTransforms")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], forward.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Registers transformation functions that don't alter coordinates. Those allow
@@ -197,9 +199,8 @@ object proj {
     * @param projections Projections.
     * @api
     */
-  @JSImport("openlayers", "proj.addEquivalentProjections")
-  @js.native
-  def addEquivalentProjections(projections: js.Array[Projection]): Unit = js.native
+  @scala.inline
+  def addEquivalentProjections(projections: js.Array[Projection]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEquivalentProjections")(projections.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add a Projection object to the list of supported projections that can be
@@ -208,9 +209,8 @@ object proj {
     * @param projection Projection instance.
     * @api stable
     */
-  @JSImport("openlayers", "proj.addProjection")
-  @js.native
-  def addProjection(projection: Projection): Unit = js.native
+  @scala.inline
+  def addProjection(projection: Projection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if two projections are the same, that is every coordinate in one
@@ -222,9 +222,8 @@ object proj {
     * @return Equivalent.
     * @api
     */
-  @JSImport("openlayers", "proj.equivalent")
-  @js.native
-  def equivalent(projection1: Projection, projection2: Projection): Boolean = js.native
+  @scala.inline
+  def equivalent(projection1: Projection, projection2: Projection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalent")(projection1.asInstanceOf[js.Any], projection2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Transforms a coordinate from longitude/latitude to a different projection.
@@ -235,12 +234,10 @@ object proj {
     * @return Coordinate projected to the target projection.
     * @api stable
     */
-  @JSImport("openlayers", "proj.fromLonLat")
-  @js.native
-  def fromLonLat(coordinate: Coordinate_): Coordinate_ = js.native
-  @JSImport("openlayers", "proj.fromLonLat")
-  @js.native
-  def fromLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = js.native
+  @scala.inline
+  def fromLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
+  @scala.inline
+  def fromLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Fetches a Projection object for the code specified.
@@ -251,9 +248,8 @@ object proj {
     * @return Projection object, or null if not in list.
     * @api stable
     */
-  @JSImport("openlayers", "proj.get")
-  @js.native
-  def get(projectionLike: ProjectionLike): Projection = js.native
+  @scala.inline
+  def get(projectionLike: ProjectionLike): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(projectionLike.asInstanceOf[js.Any]).asInstanceOf[Projection]
   
   /**
     * Get the resolution of the point in degrees or distance units. For
@@ -267,9 +263,8 @@ object proj {
     * @param point Point to find adjusted resolution at.
     * @return Point to find adjusted resolution at.
     */
-  @JSImport("openlayers", "proj.getPointResolution")
-  @js.native
-  def getPointResolution(projection: Projection, resolution: Double, point: Coordinate_): Double = js.native
+  @scala.inline
+  def getPointResolution(projection: Projection, resolution: Double, point: Coordinate_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointResolution")(projection.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Given the projection-like objects, searches for a transformation
@@ -281,9 +276,8 @@ object proj {
     * @return Transform function.
     * @api stable
     */
-  @JSImport("openlayers", "proj.getTransform")
-  @js.native
-  def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = js.native
+  @scala.inline
+  def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[TransformFunction]
   
   /**
     * Register proj4. If not explicitly registered, it will be assumed that
@@ -297,9 +291,8 @@ object proj {
     * @param proj4 Proj4.
     * @api
     */
-  @JSImport("openlayers", "proj.setProj4")
-  @js.native
-  def setProj4(proj4: js.Any): Unit = js.native
+  @scala.inline
+  def setProj4(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transforms a coordinate to longitude/latitude.
@@ -310,12 +303,10 @@ object proj {
     *     with longitude as 1st and latitude as 2nd element.
     * @api stable
     */
-  @JSImport("openlayers", "proj.toLonLat")
-  @js.native
-  def toLonLat(coordinate: Coordinate_): Coordinate_ = js.native
-  @JSImport("openlayers", "proj.toLonLat")
-  @js.native
-  def toLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = js.native
+  @scala.inline
+  def toLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
+  @scala.inline
+  def toLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Transforms a coordinate from source projection to destination projection.
@@ -329,9 +320,8 @@ object proj {
     * @param source Source projection-like.
     * @param destination Destination projection-like.
     */
-  @JSImport("openlayers", "proj.transform")
-  @js.native
-  def transform(coordinate: Coordinate_, source: ProjectionLike, destination: ProjectionLike): Coordinate_ = js.native
+  @scala.inline
+  def transform(coordinate: Coordinate_, source: ProjectionLike, destination: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(coordinate.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Transforms an extent from source projection to destination projection.  This
@@ -343,9 +333,8 @@ object proj {
     * @return The transformed extent.
     * @api stable
     */
-  @JSImport("openlayers", "proj.transformExtent")
-  @js.native
-  def transformExtent(extent: Extent_, source: ProjectionLike, destination: ProjectionLike): Extent_ = js.native
+  @scala.inline
+  def transformExtent(extent: Extent_, source: ProjectionLike, destination: ProjectionLike): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Meters per unit lookup table.

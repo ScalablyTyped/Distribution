@@ -7,7 +7,6 @@ import typings.xmlCore.mod.NamespaceManager
 import typings.xmlCore.xmlMod.XmlNodeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canonicalizerMod {
@@ -72,18 +71,24 @@ object canonicalizerMod {
   object XmlCanonicalizerState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[XmlCanonicalizerState with Double] = js.native
+    def apply(value: Double): js.UndefOr[XmlCanonicalizerState & Double] = js.native
     
     @js.native
-    sealed trait AfterDocElement extends XmlCanonicalizerState
-    /* 2 */ val AfterDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.AfterDocElement with Double = js.native
+    sealed trait AfterDocElement
+      extends StObject
+         with XmlCanonicalizerState
+    /* 2 */ val AfterDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.AfterDocElement & Double = js.native
     
     @js.native
-    sealed trait BeforeDocElement extends XmlCanonicalizerState
-    /* 0 */ val BeforeDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.BeforeDocElement with Double = js.native
+    sealed trait BeforeDocElement
+      extends StObject
+         with XmlCanonicalizerState
+    /* 0 */ val BeforeDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.BeforeDocElement & Double = js.native
     
     @js.native
-    sealed trait InsideDocElement extends XmlCanonicalizerState
-    /* 1 */ val InsideDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.InsideDocElement with Double = js.native
+    sealed trait InsideDocElement
+      extends StObject
+         with XmlCanonicalizerState
+    /* 1 */ val InsideDocElement: typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState.InsideDocElement & Double = js.native
   }
 }

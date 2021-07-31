@@ -2,27 +2,25 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeQuery extends StObject {
   
-  var between: js.UndefOr[js.Array[String]] = js.native
+  var between: js.UndefOr[js.Array[String]] = js.undefined
   
-  var equal: js.UndefOr[String] = js.native
+  var equal: js.UndefOr[String] = js.undefined
   
-  var greater: js.UndefOr[String] = js.native
+  var greater: js.UndefOr[String] = js.undefined
   
-  var greater_equal: js.UndefOr[String] = js.native
+  var greater_equal: js.UndefOr[String] = js.undefined
   
-  var less: js.UndefOr[String] = js.native
+  var less: js.UndefOr[String] = js.undefined
   
-  var less_equal: js.UndefOr[String] = js.native
+  var less_equal: js.UndefOr[String] = js.undefined
   
-  var not_between: js.UndefOr[js.Array[String]] = js.native
+  var not_between: js.UndefOr[js.Array[String]] = js.undefined
   
-  var not_equal: js.UndefOr[String] = js.native
+  var not_equal: js.UndefOr[String] = js.undefined
 }
 object TimeQuery {
   

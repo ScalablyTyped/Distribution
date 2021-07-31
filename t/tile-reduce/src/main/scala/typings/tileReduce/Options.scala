@@ -5,35 +5,33 @@ import typings.tileReduce.TileReduce.Source
 import typings.tileReduce.TileReduce.Tile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var bbox: js.UndefOr[BBox] = js.native
+  var bbox: js.UndefOr[BBox] = js.undefined
   
-  var geojson: js.UndefOr[js.Any] = js.native
+  var geojson: js.UndefOr[js.Any] = js.undefined
   
-  var log: js.UndefOr[Boolean] = js.native
+  var log: js.UndefOr[Boolean] = js.undefined
   
-  var map: String = js.native
+  var map: String
   
-  var mapOptions: js.UndefOr[js.Any] = js.native
+  var mapOptions: js.UndefOr[js.Any] = js.undefined
   
-  var maxWorkers: js.UndefOr[Double] = js.native
+  var maxWorkers: js.UndefOr[Double] = js.undefined
   
-  var output: js.UndefOr[js.Any] = js.native
+  var output: js.UndefOr[js.Any] = js.undefined
   
-  var sourceCover: js.UndefOr[String] = js.native
+  var sourceCover: js.UndefOr[String] = js.undefined
   
-  var sources: js.Array[Source] = js.native
+  var sources: js.Array[Source]
   
-  var tileStream: js.UndefOr[js.Any] = js.native
+  var tileStream: js.UndefOr[js.Any] = js.undefined
   
-  var tiles: js.UndefOr[js.Array[Tile]] = js.native
+  var tiles: js.UndefOr[js.Array[Tile]] = js.undefined
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Options {
   

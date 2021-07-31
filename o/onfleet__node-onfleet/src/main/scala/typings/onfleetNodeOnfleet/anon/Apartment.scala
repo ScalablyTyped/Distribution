@@ -2,25 +2,23 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apartment extends StObject {
   
-  var apartment: String = js.native
+  var apartment: String
   
-  var city: String = js.native
+  var city: String
   
-  var country: String = js.native
+  var country: String
   
-  var number: String = js.native
+  var number: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var state: String = js.native
+  var state: String
   
-  var street: String = js.native
+  var street: String
 }
 object Apartment {
   

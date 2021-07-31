@@ -3,23 +3,24 @@ package typings.nodemailerDirectTransport
 import typings.nodemailer.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: DirectOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-direct-transport", JSImport.Namespace)
   @js.native
-  def apply(options: DirectOptions): Transport = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AuthOptions extends StObject {
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
     
-    var xoauth2: js.UndefOr[js.Any] = js.native
+    var xoauth2: js.UndefOr[js.Any] = js.undefined
   }
   object AuthOptions {
     
@@ -52,18 +53,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DirectOptions extends StObject {
     
     /**
       * if true, the connection emits all traffic between client and server as 'log' events
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional hostname of the client, used for identifying to the server
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object DirectOptions {
     

@@ -6,17 +6,19 @@ import typings.pathToRegexp.mod.Match_
 import typings.pathToRegexp.mod.ParseOptions
 import typings.pathToRegexp.mod.Path
 import typings.pathToRegexp.mod.RegexpToFunctionOptions
+import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object universalRouterSyncMod {
   
   @JSImport("universal-router/src/UniversalRouterSync", JSImport.Default)
   @js.native
-  class default[R, C /* <: RouterContext */] protected () extends UniversalRouterSync[R, C] {
+  class default[R, C /* <: RouterContext */] protected ()
+    extends StObject
+       with UniversalRouterSync[R, C] {
     def this(routes: Route[R, C]) = this()
     def this(routes: Routes[R, C]) = this()
     def this(routes: Route[R, C], options: RouterOptions[R, C]) = this()
@@ -25,13 +27,14 @@ object universalRouterSyncMod {
   
   type ErrorHandler[R] = js.Function2[/* error */ RouteError, /* context */ ResolveContext, RouteResultSync[R]]
   
-  @js.native
-  trait ResolveContext extends RouterContext {
+  trait ResolveContext
+    extends StObject
+       with RouterContext {
     
     /**
       * URL which was transmitted to `router.resolve()`.
       */
-    var pathname: String = js.native
+    var pathname: String
   }
   object ResolveContext {
     
@@ -51,7 +54,6 @@ object universalRouterSyncMod {
   
   type ResolveRoute[R, C /* <: RouterContext */] = js.Function2[/* context */ RouteContext[R, C], /* params */ RouteParams, RouteResultSync[R]]
   
-  @js.native
   trait Route[R, C /* <: RouterContext */] extends StObject {
     
     /**
@@ -60,32 +62,32 @@ object universalRouterSyncMod {
       */
     var action: js.UndefOr[
         js.Function2[/* context */ RouteContext[R, C], /* params */ RouteParams, RouteResultSync[R]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An array of Route objects. Nested routes are perfect to be used in middleware routes.
       */
-    var children: js.UndefOr[(Routes[R, C]) | Null] = js.native
+    var children: js.UndefOr[(Routes[R, C]) | Null] = js.undefined
     
     /**
       * The route path match function. Used for internal caching.
       */
-    var `match`: js.UndefOr[MatchFunction[RouteParams]] = js.native
+    var `match`: js.UndefOr[MatchFunction[RouteParams]] = js.undefined
     
     /**
       * A unique string that can be used to generate the route URL.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The link to the parent route is automatically populated by the router. Useful for breadcrumbs.
       */
-    var parent: js.UndefOr[(Route[R, C]) | Null] = js.native
+    var parent: js.UndefOr[(Route[R, C]) | Null] = js.undefined
     
     /**
       * A string, array of strings, or a regular expression. Defaults to an empty string.
       */
-    var path: js.UndefOr[Path] = js.native
+    var path: js.UndefOr[Path] = js.undefined
   }
   object Route {
     
@@ -96,7 +98,7 @@ object universalRouterSyncMod {
     }
     
     @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[_, _], R, C /* <: RouterContext */] (val x: Self with (Route[R, C])) extends AnyVal {
+    implicit class RouteMutableBuilder[Self <: Route[?, ?], R, C /* <: RouterContext */] (val x: Self & (Route[R, C])) extends AnyVal {
       
       @scala.inline
       def setAction(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResultSync[R]): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
@@ -149,7 +151,9 @@ object universalRouterSyncMod {
   }
   
   @js.native
-  trait RouteContext[R, C /* <: RouterContext */] extends ResolveContext {
+  trait RouteContext[R, C /* <: RouterContext */]
+    extends StObject
+       with ResolveContext {
     
     /**
       * Base URL path relative to the path of the current route.
@@ -183,17 +187,11 @@ object universalRouterSyncMod {
     var router: UniversalRouterSync[R, C] = js.native
   }
   
-  /* Inlined std.Error & {  status :number | undefined} */
-  @js.native
-  trait RouteError extends StObject {
+  trait RouteError
+    extends StObject
+       with Error {
     
-    var message: String = js.native
-    
-    var name: String = js.native
-    
-    var stack: js.UndefOr[String] = js.native
-    
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object RouteError {
     
@@ -207,18 +205,6 @@ object universalRouterSyncMod {
     implicit class RouteErrorMutableBuilder[Self <: RouteError] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
-      
-      @scala.inline
       def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -226,16 +212,15 @@ object universalRouterSyncMod {
     }
   }
   
-  @js.native
   trait RouteMatch[R, C /* <: RouterContext */] extends StObject {
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var params: RouteParams = js.native
+    var params: RouteParams
     
-    var path: String = js.native
+    var path: String
     
-    var route: Route[R, C] = js.native
+    var route: Route[R, C]
   }
   object RouteMatch {
     
@@ -246,7 +231,7 @@ object universalRouterSyncMod {
     }
     
     @scala.inline
-    implicit class RouteMatchMutableBuilder[Self <: RouteMatch[_, _], R, C /* <: RouterContext */] (val x: Self with (RouteMatch[R, C])) extends AnyVal {
+    implicit class RouteMatchMutableBuilder[Self <: RouteMatch[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouteMatch[R, C])) extends AnyVal {
       
       @scala.inline
       def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
@@ -269,48 +254,48 @@ object universalRouterSyncMod {
   type RouterContext = StringDictionary[js.Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.pathToRegexp.mod.TokensToRegexpOptions because var conflicts: delimiter. Inlined sensitive, start, encode, endsWith, end, strict */ @js.native
-  trait RouterOptions[R, C /* <: RouterContext */]
-    extends ParseOptions
+  - typings.pathToRegexp.mod.TokensToRegexpOptions because var conflicts: delimiter. Inlined sensitive, start, encode, endsWith, end, strict */ trait RouterOptions[R, C /* <: RouterContext */]
+    extends StObject
+       with ParseOptions
        with RegexpToFunctionOptions {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[C] = js.native
+    var context: js.UndefOr[C] = js.undefined
     
     /**
       * Encode path tokens for use in the `RegExp`.
       */
-    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
     /**
       * When `true` the regexp will match to the end of the string. (default: `true`)
       */
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of characters that can also be "end" characters.
       */
-    var endsWith: js.UndefOr[String] = js.native
+    var endsWith: js.UndefOr[String] = js.undefined
     
-    var errorHandler: js.UndefOr[ErrorHandler[R]] = js.native
+    var errorHandler: js.UndefOr[ErrorHandler[R]] = js.undefined
     
-    var resolveRoute: js.UndefOr[ResolveRoute[R, C]] = js.native
+    var resolveRoute: js.UndefOr[ResolveRoute[R, C]] = js.undefined
     
     /**
       * When `true` the regexp will be case sensitive. (default: `false`)
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` the regexp will match from the beginning of the string. (default: `true`)
       */
-    var start: js.UndefOr[Boolean] = js.native
+    var start: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` the regexp won't allow an optional trailing delimiter to match. (default: `false`)
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object RouterOptions {
     
@@ -321,7 +306,7 @@ object universalRouterSyncMod {
     }
     
     @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions[_, _], R, C /* <: RouterContext */] (val x: Self with (RouterOptions[R, C])) extends AnyVal {
+    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouterOptions[R, C])) extends AnyVal {
       
       @scala.inline
       def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])

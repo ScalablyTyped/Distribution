@@ -11,7 +11,7 @@ JavaScript timezone library based on Olson timezone data
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 859355 |
+| # downloads        | 969685 |
 | # stars            | 3 |
 
 ## Links

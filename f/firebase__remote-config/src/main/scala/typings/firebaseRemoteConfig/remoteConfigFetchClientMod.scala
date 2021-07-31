@@ -3,7 +3,6 @@ package typings.firebaseRemoteConfig
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteConfigFetchClientMod {
@@ -19,7 +18,6 @@ object remoteConfigFetchClientMod {
     var listeners: js.Array[js.Function0[Unit]] = js.native
   }
   
-  @js.native
   trait FetchRequest extends StObject {
     
     /**
@@ -30,7 +28,7 @@ object remoteConfigFetchClientMod {
       * <p>Comparable to passing `headers = { 'Cache-Control': max-age <maxAge> }` to the native
       * Fetch API.
       */
-    var cacheMaxAgeMillis: Double = js.native
+    var cacheMaxAgeMillis: Double
     
     /**
       * The ETag header value from the last response.
@@ -39,7 +37,7 @@ object remoteConfigFetchClientMod {
       *
       * <p>Comparable to passing `headers = { 'If-None-Match': <eTag> }` to the native Fetch API.
       */
-    var eTag: js.UndefOr[String] = js.native
+    var eTag: js.UndefOr[String] = js.undefined
     
     /**
       * An event bus for the signal to abort a request.
@@ -54,7 +52,7 @@ object remoteConfigFetchClientMod {
       * "signals". See the private ConfigFetchRequestBody interface for those:
       * http://google3/firebase/remote_config/web/src/core/rest_client.ts?l=14&rcl=255515243.
       */
-    var signal: RemoteConfigAbortSignal = js.native
+    var signal: RemoteConfigAbortSignal
   }
   object FetchRequest {
     
@@ -81,7 +79,6 @@ object remoteConfigFetchClientMod {
     }
   }
   
-  @js.native
   trait FetchResponse extends StObject {
     
     /**
@@ -89,14 +86,14 @@ object remoteConfigFetchClientMod {
       *
       * <p>Only defined for 200 responses.
       */
-    var config: js.UndefOr[FirebaseRemoteConfigObject] = js.native
+    var config: js.UndefOr[FirebaseRemoteConfigObject] = js.undefined
     
     /**
       * Defines the ETag response header value.
       *
       * <p>Only defined for 200 and 304 responses.
       */
-    var eTag: js.UndefOr[String] = js.native
+    var eTag: js.UndefOr[String] = js.undefined
     
     /**
       * The HTTP status, which is useful for differentiating success responses with data from
@@ -108,7 +105,7 @@ object remoteConfigFetchClientMod {
       * <p>Disambiguation: the fetch response returns a legacy "state" value that is redundant with the
       * HTTP status code. The former is normalized into the latter.
       */
-    var status: Double = js.native
+    var status: Double
   }
   object FetchResponse {
     
@@ -140,13 +137,12 @@ object remoteConfigFetchClientMod {
   
   type FirebaseRemoteConfigObject = StringDictionary[String]
   
-  @js.native
   trait RemoteConfigFetchClient extends StObject {
     
     /**
       * @throws if response status is not 200 or 304.
       */
-    def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
+    def fetch(request: FetchRequest): js.Promise[FetchResponse]
   }
   object RemoteConfigFetchClient {
     

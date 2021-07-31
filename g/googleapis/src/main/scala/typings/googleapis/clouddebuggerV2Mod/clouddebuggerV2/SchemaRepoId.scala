@@ -2,24 +2,22 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A unique identifier for a cloud repo.
   */
-@js.native
 trait SchemaRepoId extends StObject {
   
   /**
     * A combination of a project ID and a repo name.
     */
-  var projectRepoId: js.UndefOr[SchemaProjectRepoId] = js.native
+  var projectRepoId: js.UndefOr[SchemaProjectRepoId] = js.undefined
   
   /**
     * A server-assigned, globally unique identifier.
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object SchemaRepoId {
   

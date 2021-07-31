@@ -3,24 +3,23 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`callback interface`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackInterfaceType
-  extends AbstractContainer
+  extends StObject
+     with AbstractContainer
      with IDLRootType {
   
-  var inheritance: Null = js.native
+  var inheritance: Null
   
   @JSName("members")
-  var members_CallbackInterfaceType: js.Array[IDLCallbackInterfaceMemberType] = js.native
+  var members_CallbackInterfaceType: js.Array[IDLCallbackInterfaceMemberType]
   
   @JSName("parent")
-  var parent_CallbackInterfaceType: Null = js.native
+  var parent_CallbackInterfaceType: Null
   
   @JSName("type")
-  var type_CallbackInterfaceType: `callback interface` = js.native
+  var type_CallbackInterfaceType: `callback interface`
 }
 object CallbackInterfaceType {
   
@@ -31,11 +30,10 @@ object CallbackInterfaceType {
     members: js.Array[IDLCallbackInterfaceMemberType],
     name: String,
     parent: Null,
-    partial: Boolean,
-    `type`: `callback interface`
+    partial: Boolean
   ): CallbackInterfaceType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], inheritance = inheritance.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("callback interface")
     __obj.asInstanceOf[CallbackInterfaceType]
   }
   

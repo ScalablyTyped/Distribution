@@ -2,17 +2,15 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HideLoadingArgs extends StObject {
   
   /**
     * Specifically it means the current page instance. In some
     * scenarios, it is required to specify the exact page for hideLoading.
     */
-  var page: js.Any = js.native
+  var page: js.Any
 }
 object HideLoadingArgs {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildWorkflowExecutionTimedOutEventAttributes extends StObject {
   
   /**
     * The ID of the StartChildWorkflowExecutionInitiated event corresponding to the StartChildWorkflowExecution Decision to start this child workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var initiatedEventId: EventId = js.native
+  var initiatedEventId: EventId
   
   /**
     * The ID of the ChildWorkflowExecutionStarted event recorded when this child workflow execution was started. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
   
   /**
     * The type of the timeout that caused the child workflow execution to time out.
     */
-  var timeoutType: WorkflowExecutionTimeoutType = js.native
+  var timeoutType: WorkflowExecutionTimeoutType
   
   /**
     * The child workflow execution that timed out.
     */
-  var workflowExecution: WorkflowExecution = js.native
+  var workflowExecution: WorkflowExecution
   
   /**
     * The type of the child workflow execution.
     */
-  var workflowType: WorkflowType = js.native
+  var workflowType: WorkflowType
 }
 object ChildWorkflowExecutionTimedOutEventAttributes {
   

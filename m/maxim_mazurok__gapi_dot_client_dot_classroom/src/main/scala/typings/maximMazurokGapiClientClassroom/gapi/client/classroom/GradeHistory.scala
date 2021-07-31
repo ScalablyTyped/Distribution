@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradeHistory extends StObject {
   
   /** The teacher who made the grade change. */
-  var actorUserId: js.UndefOr[String] = js.native
+  var actorUserId: js.UndefOr[String] = js.undefined
   
   /** The type of grade change at this time in the submission grade history. */
-  var gradeChangeType: js.UndefOr[String] = js.native
+  var gradeChangeType: js.UndefOr[String] = js.undefined
   
   /** When the grade of the submission was changed. */
-  var gradeTimestamp: js.UndefOr[String] = js.native
+  var gradeTimestamp: js.UndefOr[String] = js.undefined
   
   /** The denominator of the grade at this time in the submission grade history. */
-  var maxPoints: js.UndefOr[Double] = js.native
+  var maxPoints: js.UndefOr[Double] = js.undefined
   
   /** The numerator of the grade at this time in the submission grade history. */
-  var pointsEarned: js.UndefOr[Double] = js.native
+  var pointsEarned: js.UndefOr[Double] = js.undefined
 }
 object GradeHistory {
   

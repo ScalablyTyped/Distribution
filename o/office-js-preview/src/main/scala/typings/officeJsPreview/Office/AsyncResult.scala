@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Objects
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
   * from the `callback` function's only parameter.
   */
-@js.native
 trait AsyncResult[T] extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait AsyncResult[T] extends StObject {
     * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
     * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
     */
-  var asyncContext: js.Any = js.native
+  var asyncContext: js.Any
   
   /**
     * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
@@ -40,17 +38,17 @@ trait AsyncResult[T] extends StObject {
     *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
     * </table>
     */
-  var diagnostics: js.Any = js.native
+  var diagnostics: js.Any
   
   /**
     * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
     */
-  var error: Error = js.native
+  var error: Error
   
   /**
     * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
     */
-  var status: AsyncResultStatus = js.native
+  var status: AsyncResultStatus
   
   /**
     * Gets the payload or content of this asynchronous operation, if any.
@@ -63,7 +61,7 @@ trait AsyncResult[T] extends StObject {
     * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method.
     * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
     */
-  var value: T = js.native
+  var value: T
 }
 object AsyncResult {
   
@@ -74,7 +72,7 @@ object AsyncResult {
   }
   
   @scala.inline
-  implicit class AsyncResultMutableBuilder[Self <: AsyncResult[_], T] (val x: Self with AsyncResult[T]) extends AnyVal {
+  implicit class AsyncResultMutableBuilder[Self <: AsyncResult[?], T] (val x: Self & AsyncResult[T]) extends AnyVal {
     
     @scala.inline
     def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])

@@ -2,15 +2,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeploymentGroup extends DeploymentGroupReference {
+trait DeploymentGroup
+  extends StObject
+     with DeploymentGroupReference {
   
-  var machineCount: Double = js.native
+  var machineCount: Double
   
-  var machines: js.Array[DeploymentMachine] = js.native
+  var machines: js.Array[DeploymentMachine]
 }
 object DeploymentGroup {
   

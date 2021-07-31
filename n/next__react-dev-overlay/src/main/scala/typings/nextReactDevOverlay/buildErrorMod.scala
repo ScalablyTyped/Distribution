@@ -3,7 +3,6 @@ package typings.nextReactDevOverlay
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildErrorMod {
@@ -16,10 +15,9 @@ object buildErrorMod {
   @js.native
   val styles: String = js.native
   
-  @js.native
   trait BuildErrorProps extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object BuildErrorProps {
     

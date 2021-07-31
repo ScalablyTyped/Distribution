@@ -14,7 +14,6 @@ import typings.officeJs.officeJsStrings.Thick
 import typings.officeJs.officeJsStrings.Thin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellBorder extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait CellBorder extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait CellBorder extends StObject {
     */
   var style: js.UndefOr[
     BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait CellBorder extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[scala.Double] = js.native
+  var tintAndShade: js.UndefOr[scala.Double] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait CellBorder extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.native
+  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined
 }
 object CellBorder {
   

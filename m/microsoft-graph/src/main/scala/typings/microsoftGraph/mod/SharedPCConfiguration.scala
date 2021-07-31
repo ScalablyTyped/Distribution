@@ -2,56 +2,56 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedPCConfiguration extends DeviceConfiguration {
+trait SharedPCConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.
-  var accountManagerPolicy: js.UndefOr[NullableOption[SharedPCAccountManagerPolicy]] = js.native
+  var accountManagerPolicy: js.UndefOr[NullableOption[SharedPCAccountManagerPolicy]] = js.undefined
   
   // Specifies whether local storage is allowed on a shared PC.
-  var allowLocalStorage: js.UndefOr[Boolean] = js.native
+  var allowLocalStorage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates which type of accounts are allowed to use on a shared PC. Possible values are: guest, domain.
-  var allowedAccounts: js.UndefOr[SharedPCAllowedAccountType] = js.native
+  var allowedAccounts: js.UndefOr[SharedPCAllowedAccountType] = js.undefined
   
   // Disables the account manager for shared PC mode.
-  var disableAccountManager: js.UndefOr[Boolean] = js.native
+  var disableAccountManager: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and
     * later, this policy will be applied without setting Enabled to true.
     */
-  var disableEduPolicies: js.UndefOr[Boolean] = js.native
+  var disableEduPolicies: js.UndefOr[Boolean] = js.undefined
   
   // Specifies whether the default shared PC power policies should be disabled.
-  var disablePowerPolicies: js.UndefOr[Boolean] = js.native
+  var disablePowerPolicies: js.UndefOr[Boolean] = js.undefined
   
   // Disables the requirement to sign in whenever the device wakes up from sleep mode.
-  var disableSignInOnResume: js.UndefOr[Boolean] = js.native
+  var disableSignInOnResume: js.UndefOr[Boolean] = js.undefined
   
   // Enables shared PC mode and applies the shared pc policies.
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents
     * the sleep timeout from occurring.
     */
-  var idleTimeBeforeSleepInSeconds: js.UndefOr[NullableOption[Double]] = js.native
+  var idleTimeBeforeSleepInSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Specifies the display text for the account shown on the sign-in screen which launches the app specified by
     * SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.
     */
-  var kioskAppDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var kioskAppDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the application user model ID of the app to use with assigned access.
-  var kioskAppUserModelId: js.UndefOr[NullableOption[String]] = js.native
+  var kioskAppUserModelId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the daily start time of maintenance hour.
-  var maintenanceStartTime: js.UndefOr[NullableOption[String]] = js.native
+  var maintenanceStartTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SharedPCConfiguration {
   

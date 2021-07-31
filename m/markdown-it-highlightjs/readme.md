@@ -10,9 +10,9 @@ Preset to use highlight.js with markdown-it.
 | ------------------ | :-------------: |
 | Full name          | markdown-it-highlightjs |
 | Keywords           | markdown-it-plugin |
-| # releases         | 5 |
-| # dependents       | 60 |
-| # downloads        | 101957 |
+| # releases         | 6 |
+| # dependents       | 62 |
+| # downloads        | 111928 |
 | # stars            | 4 |
 
 ## Links

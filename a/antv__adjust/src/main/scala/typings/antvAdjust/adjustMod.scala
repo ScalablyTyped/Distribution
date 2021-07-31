@@ -7,14 +7,15 @@ import typings.antvAdjust.interfaceMod.Data
 import typings.antvAdjust.interfaceMod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adjustMod {
   
   @JSImport("@antv/adjust/lib/adjusts/adjust", JSImport.Default)
   @js.native
-  abstract class default protected () extends Adjust {
+  abstract class default protected ()
+    extends StObject
+       with Adjust {
     def this(cfg: AdjustCfg) = this()
   }
   

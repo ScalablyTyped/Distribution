@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Harness {
@@ -13,48 +12,49 @@ object Harness {
   /**
     * @singleton
     */
-  @js.native
-  trait IBrowser extends IHarness {
+  trait IBrowser
+    extends StObject
+       with IHarness {
     
-    var autoRun: Boolean = js.native
+    var autoRun: Boolean
     
-    var autoScrollElementsIntoView: Boolean = js.native
+    var autoScrollElementsIntoView: Boolean
     
-    var breakOnFail: Boolean = js.native
+    var breakOnFail: Boolean
     
-    var coverageUnit: String = js.native
+    var coverageUnit: String
     
-    var disableCaching: Boolean = js.native
+    var disableCaching: Boolean
     
-    var enableCodeCoverage: Boolean = js.native
+    var enableCodeCoverage: Boolean
     
-    var excludeCoverageUnits: RegExp = js.native
+    var excludeCoverageUnits: RegExp
     
-    var hostPageUrl: String = js.native
+    var hostPageUrl: String
     
-    var includeCoverageUnits: RegExp = js.native
+    var includeCoverageUnits: RegExp
     
-    var maintainViewportSize: Boolean = js.native
+    var maintainViewportSize: Boolean
     
-    var separateContext: Boolean = js.native
+    var separateContext: Boolean
     
-    var simulateEventsWith: String = js.native
+    var simulateEventsWith: String
     
-    var speedRun: Boolean = js.native
+    var speedRun: Boolean
     
-    var useStrictMode: Boolean = js.native
+    var useStrictMode: Boolean
     
-    var viewDOM: Boolean = js.native
+    var viewDOM: Boolean
     
-    var viewportHeight: Double = js.native
+    var viewportHeight: Double
     
-    var viewportWidth: Double = js.native
+    var viewportWidth: Double
   }
   object IBrowser {
     
     @scala.inline
     def apply(
-      alsoPreload: js.Array[_],
+      alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
       autoScrollElementsIntoView: Boolean,
@@ -79,7 +79,7 @@ object Harness {
       needDone: Boolean,
       overrideSetTimeout: Boolean,
       pauseBetweenTests: Double,
-      preload: js.Array[_],
+      preload: js.Array[js.Any],
       runCore: String,
       separateContext: Boolean,
       simulateEventsWith: String,
@@ -159,25 +159,26 @@ object Harness {
     * @singleton
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.siesta.Siesta.Harness.IBrowserExtJSCore because var conflicts: coverageUnit, excludeCoverageUnits. Inlined installLoaderInstrumentationHook */ @js.native
-  trait IBrowserExtJS extends IBrowser {
+  - typings.siesta.Siesta.Harness.IBrowserExtJSCore because var conflicts: coverageUnit, excludeCoverageUnits. Inlined installLoaderInstrumentationHook */ trait IBrowserExtJS
+    extends StObject
+       with IBrowser {
     
-    var allowExtVersionChange: Boolean = js.native
+    var allowExtVersionChange: Boolean
     
-    var installLoaderInstrumentationHook: Boolean = js.native
+    var installLoaderInstrumentationHook: Boolean
     
-    var loaderPath: js.Any = js.native
+    var loaderPath: js.Any
     
-    var waitForAppReady: js.Any = js.native
+    var waitForAppReady: js.Any
     
-    var waitForExtReady: js.Any = js.native
+    var waitForExtReady: js.Any
   }
   object IBrowserExtJS {
     
     @scala.inline
     def apply(
       allowExtVersionChange: Boolean,
-      alsoPreload: js.Array[_],
+      alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
       autoScrollElementsIntoView: Boolean,
@@ -204,7 +205,7 @@ object Harness {
       needDone: Boolean,
       overrideSetTimeout: Boolean,
       pauseBetweenTests: Double,
-      preload: js.Array[_],
+      preload: js.Array[js.Any],
       runCore: String,
       separateContext: Boolean,
       simulateEventsWith: String,
@@ -249,14 +250,13 @@ object Harness {
   /**
     * @mixin
     */
-  @js.native
   trait IBrowserExtJSCore extends StObject {
     
-    var coverageUnit: String = js.native
+    var coverageUnit: String
     
-    var excludeCoverageUnits: RegExp = js.native
+    var excludeCoverageUnits: RegExp
     
-    var installLoaderInstrumentationHook: Boolean = js.native
+    var installLoaderInstrumentationHook: Boolean
   }
   object IBrowserExtJSCore {
     
@@ -284,20 +284,21 @@ object Harness {
     * @singleton
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.siesta.Siesta.Harness.IBrowserExtJSCore because var conflicts: coverageUnit, excludeCoverageUnits. Inlined installLoaderInstrumentationHook */ @js.native
-  trait IBrowserSenchaTouch extends IBrowser {
+  - typings.siesta.Siesta.Harness.IBrowserExtJSCore because var conflicts: coverageUnit, excludeCoverageUnits. Inlined installLoaderInstrumentationHook */ trait IBrowserSenchaTouch
+    extends StObject
+       with IBrowser {
     
-    var installLoaderInstrumentationHook: Boolean = js.native
+    var installLoaderInstrumentationHook: Boolean
     
-    var loaderPath: js.Any = js.native
+    var loaderPath: js.Any
     
-    var performSetup: Boolean = js.native
+    var performSetup: Boolean
   }
   object IBrowserSenchaTouch {
     
     @scala.inline
     def apply(
-      alsoPreload: js.Array[_],
+      alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
       autoScrollElementsIntoView: Boolean,
@@ -325,7 +326,7 @@ object Harness {
       overrideSetTimeout: Boolean,
       pauseBetweenTests: Double,
       performSetup: Boolean,
-      preload: js.Array[_],
+      preload: js.Array[js.Any],
       runCore: String,
       separateContext: Boolean,
       simulateEventsWith: String,
@@ -359,12 +360,13 @@ object Harness {
     }
   }
   
-  @js.native
-  trait IBrowserSingleton extends IBrowser {
+  trait IBrowserSingleton
+    extends StObject
+       with IBrowser {
     
-    var ExtJS: IBrowserExtJS = js.native
+    var ExtJS: IBrowserExtJS
     
-    var SenchaTouch: IBrowserSenchaTouch = js.native
+    var SenchaTouch: IBrowserSenchaTouch
   }
   object IBrowserSingleton {
     
@@ -372,7 +374,7 @@ object Harness {
     def apply(
       ExtJS: IBrowserExtJS,
       SenchaTouch: IBrowserSenchaTouch,
-      alsoPreload: js.Array[_],
+      alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
       autoScrollElementsIntoView: Boolean,
@@ -397,7 +399,7 @@ object Harness {
       needDone: Boolean,
       overrideSetTimeout: Boolean,
       pauseBetweenTests: Double,
-      preload: js.Array[_],
+      preload: js.Array[js.Any],
       runCore: String,
       separateContext: Boolean,
       simulateEventsWith: String,
@@ -433,12 +435,11 @@ object Harness {
     */
   type IHarnessNodeJS = IHarness
   
-  @js.native
   trait IPreloadContentDescriptor extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IPreloadContentDescriptor {
     
@@ -460,10 +461,9 @@ object Harness {
     }
   }
   
-  @js.native
   trait IPreloadTextDescriptor extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object IPreloadTextDescriptor {
     
@@ -481,12 +481,11 @@ object Harness {
     }
   }
   
-  @js.native
   trait IPreloadUrlDescriptor extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object IPreloadUrlDescriptor {
     
@@ -508,17 +507,16 @@ object Harness {
     }
   }
   
-  @js.native
   trait ITestGroupDescriptor extends StObject {
     
-    var group: String = js.native
+    var group: String
     
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
   }
   object ITestGroupDescriptor {
     
     @scala.inline
-    def apply(group: String, items: js.Array[_]): ITestGroupDescriptor = {
+    def apply(group: String, items: js.Array[js.Any]): ITestGroupDescriptor = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITestGroupDescriptor]
     }
@@ -530,17 +528,16 @@ object Harness {
       def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait ITestUrlDescriptor extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object ITestUrlDescriptor {
     

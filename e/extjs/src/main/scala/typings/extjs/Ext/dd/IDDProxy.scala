@@ -2,38 +2,38 @@ package typings.extjs.Ext.dd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDDProxy extends IDD {
+trait IDDProxy
+  extends StObject
+     with IDD {
   
   /** [Property] (Boolean) */
-  var centerFrame: js.UndefOr[Boolean] = js.native
+  var centerFrame: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Creates the proxy element if it does not yet exist */
-  var createFrame: js.UndefOr[js.Function0[Unit]] = js.native
+  var createFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (String) */
-  var dragElId: js.UndefOr[String] = js.native
+  var dragElId: js.UndefOr[String] = js.undefined
   
   /** [Method] overrides Ext dd DragDrop By default we try to move the element to the last location of the frame
     * @param e Object
     */
   @JSName("endDrag")
-  var endDrag_IDDProxy: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var endDrag_IDDProxy: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Initialization for the drag frame element  */
-  var initFrame: js.UndefOr[js.Function0[Unit]] = js.native
+  var initFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Boolean) */
-  var resizeFrame: js.UndefOr[Boolean] = js.native
+  var resizeFrame: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] toString method
     * @returns String string representation of the dd obj
     */
   @JSName("toString")
-  var toString_FIDDProxy: js.UndefOr[js.Function0[String]] = js.native
+  var toString_FIDDProxy: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object IDDProxy {
   

@@ -3,19 +3,17 @@ package typings.webrtc
 import typings.std.RTCRtpTransceiverDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtptransceiverinit
-@js.native
 trait RTCRtpTransceiverInit extends StObject {
   
-  var direction: js.UndefOr[RTCRtpTransceiverDirection] = js.native
+  var direction: js.UndefOr[RTCRtpTransceiverDirection] = js.undefined
   
-  var sendEncodings: js.UndefOr[js.Array[RTCRtpEncodingParameters]] = js.native
+  var sendEncodings: js.UndefOr[js.Array[RTCRtpEncodingParameters]] = js.undefined
   
   // default = 'sendrecv'
-  var streams: js.UndefOr[js.Array[MediaStream]] = js.native
+  var streams: js.UndefOr[js.Array[MediaStream]] = js.undefined
 }
 object RTCRtpTransceiverInit {
   

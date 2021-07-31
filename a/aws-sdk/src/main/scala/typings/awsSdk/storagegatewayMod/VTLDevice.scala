@@ -2,36 +2,34 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VTLDevice extends StObject {
   
   /**
     * A list of iSCSI information about a VTL device.
     */
-  var DeviceiSCSIAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.DeviceiSCSIAttributes] = js.native
+  var DeviceiSCSIAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.DeviceiSCSIAttributes] = js.undefined
   
   /**
     * Specifies the unique Amazon Resource Name (ARN) of the device (tape drive or media changer).
     */
-  var VTLDeviceARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceARN] = js.native
+  var VTLDeviceARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceARN] = js.undefined
   
   /**
     * Specifies the model number of device that the VTL device emulates.
     */
-  var VTLDeviceProductIdentifier: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceProductIdentifier] = js.native
+  var VTLDeviceProductIdentifier: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceProductIdentifier] = js.undefined
   
   /**
     * Specifies the type of device that the VTL device emulates.
     */
-  var VTLDeviceType: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceType] = js.native
+  var VTLDeviceType: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceType] = js.undefined
   
   /**
     * Specifies the vendor of the device that the VTL device object emulates.
     */
-  var VTLDeviceVendor: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceVendor] = js.native
+  var VTLDeviceVendor: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDeviceVendor] = js.undefined
 }
 object VTLDevice {
   

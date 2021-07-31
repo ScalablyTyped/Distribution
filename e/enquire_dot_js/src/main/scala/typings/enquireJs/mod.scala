@@ -3,7 +3,6 @@ package typings.enquireJs
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,33 +28,32 @@ object mod extends Shortcut {
     def unregister(mediaQuery: String, handler: Options): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * If set to true, defers execution of the setup function until the first time the media query is matched
       */
-    var deferSetup: js.UndefOr[Boolean] = js.native
+    var deferSetup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If supplied, triggered when handler is unregistered. Place cleanup code here
       */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If supplied, triggered when a media query matches.
       */
-    var `match`: js.UndefOr[js.Function0[Unit]] = js.native
+    var `match`: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If supplied, triggered once, when the handler is registered.
       */
-    var setup: js.UndefOr[js.Function0[Unit]] = js.native
+    var setup: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If supplied, triggered when the media query transitions from a matched state to an unmatched state.
       */
-    var unmatch: js.UndefOr[js.Function0[Unit]] = js.native
+    var unmatch: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Options {
     

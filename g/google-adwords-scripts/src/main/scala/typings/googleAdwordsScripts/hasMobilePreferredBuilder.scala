@@ -2,13 +2,11 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasMobilePreferredBuilder[B] extends StObject {
   
-  def withMobilePreferred(): B = js.native
+  def withMobilePreferred(): B
 }
 object hasMobilePreferredBuilder {
   
@@ -19,7 +17,7 @@ object hasMobilePreferredBuilder {
   }
   
   @scala.inline
-  implicit class hasMobilePreferredBuilderMutableBuilder[Self <: hasMobilePreferredBuilder[_], B] (val x: Self with hasMobilePreferredBuilder[B]) extends AnyVal {
+  implicit class hasMobilePreferredBuilderMutableBuilder[Self <: hasMobilePreferredBuilder[?], B] (val x: Self & hasMobilePreferredBuilder[B]) extends AnyVal {
     
     @scala.inline
     def setWithMobilePreferred(value: () => B): Self = StObject.set(x, "withMobilePreferred", js.Any.fromFunction0(value))

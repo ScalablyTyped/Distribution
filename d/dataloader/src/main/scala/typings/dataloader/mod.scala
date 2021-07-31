@@ -4,30 +4,30 @@ import typings.std.ArrayLike
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("dataloader", JSImport.Namespace)
   @js.native
-  class ^[K, V, C] protected () extends DataLoader[K, V, C] {
+  class ^[K, V, C] protected ()
+    extends StObject
+       with DataLoader[K, V, C] {
     def this(batchLoadFn: BatchLoadFn[K, V]) = this()
     def this(batchLoadFn: BatchLoadFn[K, V], options: Options[K, V, C]) = this()
   }
   
   type BatchLoadFn[K, V] = js.Function1[/* keys */ js.Array[K], js.Thenable[ArrayLike[V | Error]]]
   
-  @js.native
   trait CacheMap[K, V] extends StObject {
     
-    def clear(): js.Any = js.native
+    def clear(): js.Any
     
-    def delete(key: K): js.Any = js.native
+    def delete(key: K): js.Any
     
-    def get(key: K): V | Unit = js.native
+    def get(key: K): V | Unit
     
-    def set(key: K, value: V): js.Any = js.native
+    def set(key: K, value: V): js.Any
   }
   object CacheMap {
     
@@ -38,7 +38,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CacheMapMutableBuilder[Self <: CacheMap[_, _], K, V] (val x: Self with (CacheMap[K, V])) extends AnyVal {
+    implicit class CacheMapMutableBuilder[Self <: CacheMap[?, ?], K, V] (val x: Self & (CacheMap[K, V])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -98,7 +98,6 @@ object mod {
     def prime(key: K, value: Error): this.type = js.native
   }
   
-  @js.native
   trait Options[K, V, C] extends StObject {
     
     /**
@@ -106,39 +105,39 @@ object mod {
       * `batchLoadFn` with a single load key. This is equivalent to setting
       * `maxBatchSize` to `1`.
       */
-    var batch: js.UndefOr[Boolean] = js.native
+    var batch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default see https://github.com/graphql/dataloader#batch-scheduling.
       * A function to schedule the later execution of a batch. The function is
       * expected to call the provided callback in the immediate future.
       */
-    var batchScheduleFn: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+    var batchScheduleFn: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
     
     /**
       * Default `true`. Set to `false` to disable memoization caching, creating a
       * new Promise and new key in the `batchLoadFn` for every load of the same
       * key. This is equivalent to setting `cacheMap` to `null`.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default `key => key`. Produces cache key for a given load key. Useful
       * when objects are keys and two objects should be considered equivalent.
       */
-    var cacheKeyFn: js.UndefOr[js.Function1[/* key */ K, C]] = js.native
+    var cacheKeyFn: js.UndefOr[js.Function1[/* key */ K, C]] = js.undefined
     
     /**
       * Default `new Map()`. Instance of `Map` (or an object with a similar API)
       * to be used as cache. May be set to `null` to disable caching.
       */
-    var cacheMap: js.UndefOr[(CacheMap[C, js.Promise[V]]) | Null] = js.native
+    var cacheMap: js.UndefOr[(CacheMap[C, js.Promise[V]]) | Null] = js.undefined
     
     /**
       * Default `Infinity`. Limits the number of items that get passed in to the
       * `batchLoadFn`. May be set to `1` to disable batching.
       */
-    var maxBatchSize: js.UndefOr[Double] = js.native
+    var maxBatchSize: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -149,7 +148,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _, _], K, V, C] (val x: Self with (Options[K, V, C])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?], K, V, C] (val x: Self & (Options[K, V, C])) extends AnyVal {
       
       @scala.inline
       def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])

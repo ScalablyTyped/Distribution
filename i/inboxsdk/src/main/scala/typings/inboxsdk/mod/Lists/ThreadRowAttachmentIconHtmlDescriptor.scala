@@ -2,15 +2,14 @@ package typings.inboxsdk.mod.Lists
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowAttachmentIconHtmlDescriptor
-  extends ThreadRowAttachmentIconDescriptorBase
+  extends StObject
+     with ThreadRowAttachmentIconDescriptorBase
      with ThreadRowAttachmentIconDescriptor {
   
-  var iconHtml: String = js.native
+  var iconHtml: String
 }
 object ThreadRowAttachmentIconHtmlDescriptor {
   

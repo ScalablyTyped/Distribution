@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropProperties extends StObject {
   
   /** The clockwise rotation angle of the crop rectangle around its center, in radians. Rotation is applied after the offsets. */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /** The offset specifies how far inwards the bottom edge of the crop rectangle is from the bottom edge of the original content as a fraction of the original content's height. */
-  var offsetBottom: js.UndefOr[Double] = js.native
+  var offsetBottom: js.UndefOr[Double] = js.undefined
   
   /** The offset specifies how far inwards the left edge of the crop rectangle is from the left edge of the original content as a fraction of the original content's width. */
-  var offsetLeft: js.UndefOr[Double] = js.native
+  var offsetLeft: js.UndefOr[Double] = js.undefined
   
   /** The offset specifies how far inwards the right edge of the crop rectangle is from the right edge of the original content as a fraction of the original content's width. */
-  var offsetRight: js.UndefOr[Double] = js.native
+  var offsetRight: js.UndefOr[Double] = js.undefined
   
   /** The offset specifies how far inwards the top edge of the crop rectangle is from the top edge of the original content as a fraction of the original content's height. */
-  var offsetTop: js.UndefOr[Double] = js.native
+  var offsetTop: js.UndefOr[Double] = js.undefined
 }
 object CropProperties {
   

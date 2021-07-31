@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalacceleratorListenerMod {
@@ -49,6 +48,10 @@ object globalacceleratorListenerMod {
   /* static members */
   object Listener {
     
+    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Listener resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object globalacceleratorListenerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Listener = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Listener = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState): Listener = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/listener", "Listener.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean]
   }
   
-  @js.native
   trait ListenerArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of your accelerator.
       */
-    val acceleratorArn: Input[String] = js.native
+    val acceleratorArn: Input[String]
     
     /**
       * Direct all requests from a user to the same endpoint. Valid values are `NONE`, `SOURCE_IP`. Default: `NONE`. If `NONE`, Global Accelerator uses the "five-tuple" properties of source IP address, source port, destination IP address, destination port, and protocol to select the hash value. If `SOURCE_IP`, Global Accelerator uses the "two-tuple" properties of source (client) IP address and destination IP address to select the hash value.
       */
-    val clientAffinity: js.UndefOr[Input[String]] = js.native
+    val clientAffinity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of port ranges for the connections from clients to the accelerator. Fields documented below.
       */
-    val portRanges: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]] = js.native
+    val portRanges: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]
     
     /**
       * The protocol for the connections from clients to the accelerator. Valid values are `TCP`, `UDP`.
       */
-    val protocol: Input[String] = js.native
+    val protocol: Input[String]
   }
   object ListenerArgs {
     
@@ -138,30 +135,29 @@ object globalacceleratorListenerMod {
     }
   }
   
-  @js.native
   trait ListenerState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of your accelerator.
       */
-    val acceleratorArn: js.UndefOr[Input[String]] = js.native
+    val acceleratorArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Direct all requests from a user to the same endpoint. Valid values are `NONE`, `SOURCE_IP`. Default: `NONE`. If `NONE`, Global Accelerator uses the "five-tuple" properties of source IP address, source port, destination IP address, destination port, and protocol to select the hash value. If `SOURCE_IP`, Global Accelerator uses the "two-tuple" properties of source (client) IP address and destination IP address to select the hash value.
       */
-    val clientAffinity: js.UndefOr[Input[String]] = js.native
+    val clientAffinity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of port ranges for the connections from clients to the accelerator. Fields documented below.
       */
     val portRanges: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The protocol for the connections from clients to the accelerator. Valid values are `TCP`, `UDP`.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
   }
   object ListenerState {
     

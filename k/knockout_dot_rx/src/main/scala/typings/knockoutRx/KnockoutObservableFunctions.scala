@@ -4,15 +4,13 @@ import typings.knockoutRx.Rx.Observable
 import typings.rx.Rx.ISubject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutObservableFunctions[T] extends StObject {
   
-  def toObservableWithReplyLatest(): Observable[T] = js.native
+  def toObservableWithReplyLatest(): Observable[T]
   
-  def toSubject(): ISubject[T] = js.native
+  def toSubject(): ISubject[T]
 }
 object KnockoutObservableFunctions {
   
@@ -23,7 +21,7 @@ object KnockoutObservableFunctions {
   }
   
   @scala.inline
-  implicit class KnockoutObservableFunctionsMutableBuilder[Self <: KnockoutObservableFunctions[_], T] (val x: Self with KnockoutObservableFunctions[T]) extends AnyVal {
+  implicit class KnockoutObservableFunctionsMutableBuilder[Self <: KnockoutObservableFunctions[?], T] (val x: Self & KnockoutObservableFunctions[T]) extends AnyVal {
     
     @scala.inline
     def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))

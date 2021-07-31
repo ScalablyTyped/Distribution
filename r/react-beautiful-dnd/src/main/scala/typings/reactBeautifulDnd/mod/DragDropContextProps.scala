@@ -3,31 +3,29 @@ package typings.reactBeautifulDnd.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragDropContextProps extends StObject {
   
-  var children: ReactNode | Null = js.native
+  var children: ReactNode | Null
   
-  var dragHandleUsageInstructions: js.UndefOr[String] = js.native
+  var dragHandleUsageInstructions: js.UndefOr[String] = js.undefined
   
-  var enableDefaultSensors: js.UndefOr[Boolean] = js.native
+  var enableDefaultSensors: js.UndefOr[Boolean] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var onBeforeCapture: js.UndefOr[js.Function1[/* before */ BeforeCapture, Unit]] = js.native
+  var onBeforeCapture: js.UndefOr[js.Function1[/* before */ BeforeCapture, Unit]] = js.undefined
   
-  var onBeforeDragStart: js.UndefOr[js.Function1[/* initial */ DragStart, Unit]] = js.native
+  var onBeforeDragStart: js.UndefOr[js.Function1[/* initial */ DragStart, Unit]] = js.undefined
   
-  def onDragEnd(result: DropResult, provided: ResponderProvided): Unit = js.native
+  def onDragEnd(result: DropResult, provided: ResponderProvided): Unit
   
-  var onDragStart: js.UndefOr[js.Function2[/* initial */ DragStart, /* provided */ ResponderProvided, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function2[/* initial */ DragStart, /* provided */ ResponderProvided, Unit]] = js.undefined
   
-  var onDragUpdate: js.UndefOr[js.Function2[/* initial */ DragUpdate, /* provided */ ResponderProvided, Unit]] = js.native
+  var onDragUpdate: js.UndefOr[js.Function2[/* initial */ DragUpdate, /* provided */ ResponderProvided, Unit]] = js.undefined
   
-  var sensors: js.UndefOr[js.Array[Sensor]] = js.native
+  var sensors: js.UndefOr[js.Array[Sensor]] = js.undefined
 }
 object DragDropContextProps {
   

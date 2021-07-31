@@ -3,17 +3,15 @@ package typings.inboxsdk
 import typings.inboxsdk.mod.Conversations.MessageViewViewStates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Added extends StObject {
     
-    var added: js.Array[typings.inboxsdk.mod.Common.Contact] = js.native
+    var added: js.Array[typings.inboxsdk.mod.Common.Contact]
     
-    var removed: js.Array[typings.inboxsdk.mod.Common.Contact] = js.native
+    var removed: js.Array[typings.inboxsdk.mod.Common.Contact]
   }
   object Added {
     
@@ -43,10 +41,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Cancel extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object Cancel {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClosedByInboxSDK extends StObject {
     
-    var closedByInboxSDK: Boolean = js.native
+    var closedByInboxSDK: Boolean
     
-    var messageID: String = js.native
+    var messageID: String
   }
   object ClosedByInboxSDK {
     
@@ -90,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Contact extends StObject {
     
-    var contact: typings.inboxsdk.mod.Common.Contact = js.native
+    var contact: typings.inboxsdk.mod.Common.Contact
   }
   object Contact {
     
@@ -111,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fullscreen extends StObject {
     
-    var fullscreen: Boolean = js.native
+    var fullscreen: Boolean
   }
   object Fullscreen {
     
@@ -132,12 +126,11 @@ object anon {
     }
   }
   
-  @js.native
   trait GetMessageID extends StObject {
     
-    def getMessageID(): js.Promise[String] = js.native
+    def getMessageID(): js.Promise[String]
     
-    def getThreadID(): js.Promise[String] = js.native
+    def getThreadID(): js.Promise[String]
   }
   object GetMessageID {
     
@@ -158,10 +151,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsForward extends StObject {
     
-    var isForward: Boolean = js.native
+    var isForward: Boolean
   }
   object IsForward {
     
@@ -179,14 +171,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MessageView extends StObject {
     
-    var messageView: this.type = js.native
+    var messageView: this.type
     
-    var newViewState: MessageViewViewStates = js.native
+    var newViewState: MessageViewViewStates
     
-    var oldViewState: MessageViewViewStates = js.native
+    var oldViewState: MessageViewViewStates
   }
   object MessageView {
     
@@ -210,10 +201,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PreventDefault extends StObject {
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
   }
   object PreventDefault {
     

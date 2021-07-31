@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationOverview extends StObject {
   
   /**
     * Returns the number of targets for the association status. For example, if you created an association with two instances, and one of them was successful, this would return the count of instances by status.
     */
-  var AssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.AssociationStatusAggregatedCount] = js.native
+  var AssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.AssociationStatusAggregatedCount] = js.undefined
   
   /**
     * A detailed status of the association.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.native
+  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The status of the association. Status can be: Pending, Success, or Failed.
     */
-  var Status: js.UndefOr[StatusName] = js.native
+  var Status: js.UndefOr[StatusName] = js.undefined
 }
 object AssociationOverview {
   

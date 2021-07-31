@@ -2,23 +2,21 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedResultsByOutcome extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var duration: js.Any = js.native
+  var duration: js.Any
   
-  var groupByField: String = js.native
+  var groupByField: String
   
-  var groupByValue: js.Any = js.native
+  var groupByValue: js.Any
   
-  var outcome: TestOutcome = js.native
+  var outcome: TestOutcome
   
-  var rerunResultCount: Double = js.native
+  var rerunResultCount: Double
 }
 object AggregatedResultsByOutcome {
   

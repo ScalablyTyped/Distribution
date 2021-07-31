@@ -2,17 +2,15 @@ package typings.imagemagickNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Orientation extends StObject {
     
-    var orientation: Double = js.native
+    var orientation: Double
   }
   object Orientation {
     

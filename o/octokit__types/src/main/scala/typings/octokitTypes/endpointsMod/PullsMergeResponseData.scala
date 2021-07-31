@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsMergeResponseData extends StObject {
   
-  var merged: Boolean = js.native
+  var merged: Boolean
   
-  var message: String = js.native
+  var message: String
   
-  var sha: String = js.native
+  var sha: String
 }
 object PullsMergeResponseData {
   

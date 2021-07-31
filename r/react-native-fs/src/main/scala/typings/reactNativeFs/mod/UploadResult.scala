@@ -2,22 +2,20 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadResult extends StObject {
   
   // The HTTP response headers from the server
-  var body: String = js.native
+  var body: String
   
   // The HTTP status code
-  var headers: Headers = js.native
+  var headers: Headers
   
-  var jobId: Double = js.native
+  var jobId: Double
   
   // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object UploadResult {
   

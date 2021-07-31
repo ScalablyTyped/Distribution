@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFormatRun extends StObject {
   
   /** The format of this run. Absent values inherit the cell's format. */
-  var format: js.UndefOr[TextFormat] = js.native
+  var format: js.UndefOr[TextFormat] = js.undefined
   
   /** The character index where this run starts. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object TextFormatRun {
   

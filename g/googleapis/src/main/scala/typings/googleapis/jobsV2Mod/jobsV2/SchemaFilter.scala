@@ -2,14 +2,12 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated. Use BatchDeleteJobsRequest instead.  Input only.  Filter for
   * jobs to be deleted.
   */
-@js.native
 trait SchemaFilter extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaFilter extends StObject {
     * of listings. name takes precedence over this field The maximum number of
     * allowed characters is 225.
     */
-  var requisitionId: js.UndefOr[String] = js.native
+  var requisitionId: js.UndefOr[String] = js.undefined
 }
 object SchemaFilter {
   

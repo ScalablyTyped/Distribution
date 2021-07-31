@@ -11,7 +11,6 @@ import typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorChangePbMod {
@@ -45,13 +44,11 @@ object validatorChangePbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): ValidatorChangeEventWithProof = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): ValidatorChangeEventWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorChangeEventWithProof]
     
-    @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: ValidatorChangeEventWithProof, reader: BinaryReader): ValidatorChangeEventWithProof = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: ValidatorChangeEventWithProof, reader: BinaryReader): ValidatorChangeEventWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorChangeEventWithProof]
     
     @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof.extensions")
     @js.native
@@ -66,20 +63,17 @@ object validatorChangePbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: ValidatorChangeEventWithProof, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: ValidatorChangeEventWithProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: ValidatorChangeEventWithProof): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: ValidatorChangeEventWithProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var eventWithProof: js.UndefOr[typings.libraCore.eventsPbMod.EventWithProof.AsObject] = js.native
+      var eventWithProof: js.UndefOr[typings.libraCore.eventsPbMod.EventWithProof.AsObject] = js.undefined
       
-      var ledgerInfoWithSigs: js.UndefOr[typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures.AsObject] = js.native
+      var ledgerInfoWithSigs: js.UndefOr[typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures.AsObject] = js.undefined
     }
     object AsObject {
       

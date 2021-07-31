@@ -9,9 +9,9 @@ Create and manage a DOM event delegator.
 | ------------------ | :-------------: |
 | Full name          | ftdomdelegate |
 | Keywords           | origami, component, ft |
-| # releases         | 11 |
-| # dependents       | 9 |
-| # downloads        | 71894 |
+| # releases         | 13 |
+| # dependents       | 10 |
+| # downloads        | 91425 |
 | # stars            | 0 |
 
 ## Links

@@ -10,8 +10,8 @@ jsonnet wrapper for Node.js
 | Full name          | jsonnet |
 | Keywords           | jsonnet, json |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 5130 |
+| # dependents       | 5 |
+| # downloads        | 6917 |
 | # stars            | 0 |
 
 ## Links

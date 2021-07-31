@@ -3,29 +3,27 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentsObject extends StObject {
   
-  var callbacks: js.UndefOr[StringDictionary[ReferenceObject | CallbackObject]] = js.native
+  var callbacks: js.UndefOr[StringDictionary[ReferenceObject | CallbackObject]] = js.undefined
   
-  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.native
+  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.native
+  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.undefined
   
-  var links: js.UndefOr[StringDictionary[ReferenceObject | LinkObject]] = js.native
+  var links: js.UndefOr[StringDictionary[ReferenceObject | LinkObject]] = js.undefined
   
-  var parameters: js.UndefOr[StringDictionary[ReferenceObject | ParameterObject]] = js.native
+  var parameters: js.UndefOr[StringDictionary[ReferenceObject | ParameterObject]] = js.undefined
   
-  var requestBodies: js.UndefOr[StringDictionary[ReferenceObject | RequestBodyObject]] = js.native
+  var requestBodies: js.UndefOr[StringDictionary[ReferenceObject | RequestBodyObject]] = js.undefined
   
-  var responses: js.UndefOr[StringDictionary[ReferenceObject | ResponseObject]] = js.native
+  var responses: js.UndefOr[StringDictionary[ReferenceObject | ResponseObject]] = js.undefined
   
-  var schemas: js.UndefOr[StringDictionary[ReferenceObject | SchemaObject]] = js.native
+  var schemas: js.UndefOr[StringDictionary[ReferenceObject | SchemaObject]] = js.undefined
   
-  var securitySchemes: js.UndefOr[StringDictionary[ReferenceObject | SecuritySchemeObject]] = js.native
+  var securitySchemes: js.UndefOr[StringDictionary[ReferenceObject | SecuritySchemeObject]] = js.undefined
 }
 object ComponentsObject {
   

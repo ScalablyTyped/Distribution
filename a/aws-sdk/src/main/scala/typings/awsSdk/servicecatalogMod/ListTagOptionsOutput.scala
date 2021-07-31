@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagOptionsOutput extends StObject {
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * Information about the TagOptions.
     */
-  var TagOptionDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.TagOptionDetails] = js.native
+  var TagOptionDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.TagOptionDetails] = js.undefined
 }
 object ListTagOptionsOutput {
   

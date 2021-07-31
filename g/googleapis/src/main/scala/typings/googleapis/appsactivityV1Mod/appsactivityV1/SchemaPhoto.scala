@@ -2,19 +2,17 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Photo information for a user.
   */
-@js.native
 trait SchemaPhoto extends StObject {
   
   /**
     * The URL of the photo.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaPhoto {
   

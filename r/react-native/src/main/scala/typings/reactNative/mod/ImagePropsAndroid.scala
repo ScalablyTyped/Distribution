@@ -5,10 +5,8 @@ import typings.reactNative.reactNativeStrings.resize
 import typings.reactNative.reactNativeStrings.scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePropsAndroid extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait ImagePropsAndroid extends StObject {
     *
     * @platform android
     */
-  var fadeDuration: js.UndefOr[Double] = js.native
+  var fadeDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Required if loading images via 'uri' from drawable folder on Android
     * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The mechanism that should be used to resize the image when the image's dimensions
@@ -37,13 +35,13 @@ trait ImagePropsAndroid extends StObject {
     * and produces higher quality images. This should be used if the image is smaller than the view.
     * It should also be used if the image is slightly bigger than the view.
     */
-  var resizeMethod: js.UndefOr[auto | resize | scale] = js.native
+  var resizeMethod: js.UndefOr[auto | resize | scale] = js.undefined
   
   /**
     * Required if loading images via 'uri' from drawable folder on Android.
     * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ImagePropsAndroid {
   

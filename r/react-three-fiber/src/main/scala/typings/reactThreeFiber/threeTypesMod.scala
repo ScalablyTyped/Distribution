@@ -194,7 +194,6 @@ import typings.three.textBufferGeometryMod.TextGeometryParameters
 import typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object threeTypesMod {
@@ -468,26 +467,25 @@ object threeTypesMod {
   
   type EulerProps = Node[typings.three.mod.Euler, TypeofEuler]
   
-  @js.native
   trait EventHandlers extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+    var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
     
-    var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+    var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
     
-    var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+    var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
     
-    var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+    var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
     
-    var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+    var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
   }
   object EventHandlers {
     
@@ -740,28 +738,27 @@ object threeTypesMod {
   
   type MeshToonMaterialProps = MaterialNode[MeshToonMaterial, js.Array[MeshToonMaterialParameters]]
   
-  type NamedArrayTuple[T /* <: js.Function1[/* args */ js.Any, _] */] = Parameters[T]
+  type NamedArrayTuple[T /* <: js.Function1[/* args */ js.Any, js.Any] */] = Parameters[T]
   
   type Node[T, P] = Overwrite[Partial[T], NodeProps[T, P]]
   
-  @js.native
   trait NodeProps[T, P] extends StObject {
     
-    var args: js.UndefOr[Args[P]] = js.native
+    var args: js.UndefOr[Args[P]] = js.undefined
     
-    var attach: js.UndefOr[String] = js.native
+    var attach: js.UndefOr[String] = js.undefined
     
-    var attachArray: js.UndefOr[String] = js.native
+    var attachArray: js.UndefOr[String] = js.undefined
     
-    var attachObject: js.UndefOr[NamedArrayTuple[js.Function2[/* target */ String, /* name */ String, Unit]]] = js.native
+    var attachObject: js.UndefOr[NamedArrayTuple[js.Function2[/* target */ String, /* name */ String, Unit]]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* self */ T, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* self */ T, Unit]] = js.undefined
     
-    var ref: js.UndefOr[Ref[ReactNode]] = js.native
+    var ref: js.UndefOr[Ref[ReactNode]] = js.undefined
   }
   object NodeProps {
     
@@ -772,7 +769,7 @@ object threeTypesMod {
     }
     
     @scala.inline
-    implicit class NodePropsMutableBuilder[Self <: NodeProps[_, _], T, P] (val x: Self with (NodeProps[T, P])) extends AnyVal {
+    implicit class NodePropsMutableBuilder[Self <: NodeProps[?, ?], T, P] (val x: Self & (NodeProps[T, P])) extends AnyVal {
       
       @scala.inline
       def setArgs(value: Args[P]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -832,7 +829,7 @@ object threeTypesMod {
   
   type NonFunctionKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   
-  type Object3DNode[T, P] = (Overwrite[Node[T, P], Dispose]) with EventHandlers
+  type Object3DNode[T, P] = (Overwrite[Node[T, P], Dispose]) & EventHandlers
   
   type OctahedronBufferGeometryProps = BufferGeometryNode[OctahedronBufferGeometry, Instantiable0[OctahedronBufferGeometry]]
   
@@ -849,7 +846,7 @@ object threeTypesMod {
     ]
   ]
   
-  type Overwrite[T, O] = (Omit[T, NonFunctionKeys[O]]) with O
+  type Overwrite[T, O] = (Omit[T, NonFunctionKeys[O]]) & O
   
   type ParametricBufferGeometryProps = BufferGeometryNode[
     ParametricBufferGeometry, 
@@ -928,11 +925,11 @@ object threeTypesMod {
     Instantiable1[/* listener */ typings.three.audioListenerMod.AudioListener, PositionalAudio]
   ]
   
-  @js.native
   trait PrimitiveProps
-    extends /* properties */ StringDictionary[js.Any] {
+    extends StObject
+       with /* properties */ StringDictionary[js.Any] {
     
-    var `object`: js.Any = js.native
+    var `object`: js.Any
   }
   object PrimitiveProps {
     
@@ -1168,270 +1165,269 @@ object threeTypesMod {
     
     object JSX {
       
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var ambientLight: AmbientLightProps = js.native
+        var ambientLight: AmbientLightProps
         
-        var ambientLightProbe: AmbientLightProbeProps = js.native
+        var ambientLightProbe: AmbientLightProbeProps
         
-        var arrayCamera: ArrayCameraProps = js.native
+        var arrayCamera: ArrayCameraProps
         
-        var arrowHelper: ArrowHelperProps = js.native
+        var arrowHelper: ArrowHelperProps
         
-        var audioListener: AudioListenerProps = js.native
+        var audioListener: AudioListenerProps
         
-        var axesHelper: AxesHelperProps = js.native
+        var axesHelper: AxesHelperProps
         
-        var bone: BoneProps = js.native
+        var bone: BoneProps
         
-        var box3Helper: Box3HelperProps = js.native
+        var box3Helper: Box3HelperProps
         
-        var boxBufferGeometry: BoxBufferGeometryProps = js.native
+        var boxBufferGeometry: BoxBufferGeometryProps
         
-        var boxGeometry: BoxGeometryProps = js.native
+        var boxGeometry: BoxGeometryProps
         
-        var boxHelper: BoxHelperProps = js.native
+        var boxHelper: BoxHelperProps
         
-        var bufferAttribute: BufferAttributeProps = js.native
+        var bufferAttribute: BufferAttributeProps
         
-        var bufferGeometry: BufferGeometryProps = js.native
+        var bufferGeometry: BufferGeometryProps
         
-        var camera: CameraProps = js.native
+        var camera: CameraProps
         
-        var cameraHelper: CameraHelperProps = js.native
+        var cameraHelper: CameraHelperProps
         
-        var canvasTexture: CanvasTextureProps = js.native
+        var canvasTexture: CanvasTextureProps
         
-        var circleBufferGeometry: CircleBufferGeometryProps = js.native
+        var circleBufferGeometry: CircleBufferGeometryProps
         
-        var circleGeometry: CircleGeometryProps = js.native
+        var circleGeometry: CircleGeometryProps
         
-        var color: ColorProps = js.native
+        var color: ColorProps
         
-        var compressedTexture: CompressedTextureProps = js.native
+        var compressedTexture: CompressedTextureProps
         
-        var coneBufferGeometry: ConeBufferGeometryProps = js.native
+        var coneBufferGeometry: ConeBufferGeometryProps
         
-        var coneGeometry: ConeGeometryProps = js.native
+        var coneGeometry: ConeGeometryProps
         
-        var cubeCamera: CubeCameraProps = js.native
+        var cubeCamera: CubeCameraProps
         
-        var cubeTexture: CubeTextureProps = js.native
+        var cubeTexture: CubeTextureProps
         
-        var cylinderBufferGeometry: CylinderBufferGeometryProps = js.native
+        var cylinderBufferGeometry: CylinderBufferGeometryProps
         
-        var cylinderGeometry: CylinderGeometryProps = js.native
+        var cylinderGeometry: CylinderGeometryProps
         
-        var dataTexture: DataTextureProps = js.native
+        var dataTexture: DataTextureProps
         
-        var dataTexture3D: DataTexture3DProps = js.native
+        var dataTexture3D: DataTexture3DProps
         
-        var depthTexture: DepthTextureProps = js.native
+        var depthTexture: DepthTextureProps
         
-        var directionalLight: DirectionalLightProps = js.native
+        var directionalLight: DirectionalLightProps
         
-        var directionalLightHelper: DirectionalLightHelperProps = js.native
+        var directionalLightHelper: DirectionalLightHelperProps
         
-        var directionalLightShadow: DirectionalLightShadowProps = js.native
+        var directionalLightShadow: DirectionalLightShadowProps
         
-        var dodecahedronBufferGeometry: DodecahedronBufferGeometryProps = js.native
+        var dodecahedronBufferGeometry: DodecahedronBufferGeometryProps
         
-        var dodecahedronGeometry: DodecahedronGeometryProps = js.native
+        var dodecahedronGeometry: DodecahedronGeometryProps
         
-        var edgesGeometry: EdgesGeometryProps = js.native
+        var edgesGeometry: EdgesGeometryProps
         
-        var euler: EulerProps = js.native
+        var euler: EulerProps
         
-        var extrudeBufferGeometry: ExtrudeBufferGeometryProps = js.native
+        var extrudeBufferGeometry: ExtrudeBufferGeometryProps
         
-        var extrudeGeometry: ExtrudeGeometryProps = js.native
+        var extrudeGeometry: ExtrudeGeometryProps
         
-        var face3: Face3Props = js.native
+        var face3: Face3Props
         
-        var fog: FogProps = js.native
+        var fog: FogProps
         
-        var geometry: GeometryProps = js.native
+        var geometry: GeometryProps
         
-        var gridHelper: GridHelperProps = js.native
+        var gridHelper: GridHelperProps
         
-        var group: GroupProps = js.native
+        var group: GroupProps
         
-        var hemisphereLight: HemisphereLightProps = js.native
+        var hemisphereLight: HemisphereLightProps
         
-        var hemisphereLightHelper: HemisphereLightHelperProps = js.native
+        var hemisphereLightHelper: HemisphereLightHelperProps
         
-        var hemisphereLightProbe: HemisphereLightProbeProps = js.native
+        var hemisphereLightProbe: HemisphereLightProbeProps
         
-        var icosahedronBufferGeometry: IcosahedronBufferGeometryProps = js.native
+        var icosahedronBufferGeometry: IcosahedronBufferGeometryProps
         
-        var icosahedronGeometry: IcosahedronGeometryProps = js.native
+        var icosahedronGeometry: IcosahedronGeometryProps
         
-        var immediateRenderObject: ImmediateRenderObjectProps = js.native
+        var immediateRenderObject: ImmediateRenderObjectProps
         
-        var instancedBufferAttribute: InstancedBufferAttributeProps = js.native
+        var instancedBufferAttribute: InstancedBufferAttributeProps
         
-        var instancedBufferGeometry: InstancedBufferGeometryProps = js.native
+        var instancedBufferGeometry: InstancedBufferGeometryProps
         
-        var instancedMesh: InstancedMeshProps = js.native
+        var instancedMesh: InstancedMeshProps
         
-        var lOD: LODProps = js.native
+        var lOD: LODProps
         
-        var latheBufferGeometry: LatheBufferGeometryProps = js.native
+        var latheBufferGeometry: LatheBufferGeometryProps
         
-        var latheGeometry: LatheGeometryProps = js.native
+        var latheGeometry: LatheGeometryProps
         
-        var light: LightProps = js.native
+        var light: LightProps
         
-        var lightProbe: LightProbeProps = js.native
+        var lightProbe: LightProbeProps
         
-        var lightShadow: LightShadowProps = js.native
+        var lightShadow: LightShadowProps
         
-        var lineBasicMaterial: LineBasicMaterialProps = js.native
+        var lineBasicMaterial: LineBasicMaterialProps
         
-        var lineDashedMaterial: LineDashedMaterialProps = js.native
+        var lineDashedMaterial: LineDashedMaterialProps
         
-        var lineLoop: LineLoopProps = js.native
+        var lineLoop: LineLoopProps
         
-        var lineSegments: LineSegmentsProps = js.native
+        var lineSegments: LineSegmentsProps
         
-        var material: MaterialProps = js.native
+        var material: MaterialProps
         
-        var matrix3: Matrix3Props = js.native
+        var matrix3: Matrix3Props
         
-        var matrix4: Matrix4Props = js.native
+        var matrix4: Matrix4Props
         
-        var mesh: MeshProps = js.native
+        var mesh: MeshProps
         
-        var meshBasicMaterial: MeshBasicMaterialProps = js.native
+        var meshBasicMaterial: MeshBasicMaterialProps
         
-        var meshDepthMaterial: MeshDepthMaterialProps = js.native
+        var meshDepthMaterial: MeshDepthMaterialProps
         
-        var meshDistanceMaterial: MeshDistanceMaterialProps = js.native
+        var meshDistanceMaterial: MeshDistanceMaterialProps
         
-        var meshLambertMaterial: MeshLambertMaterialProps = js.native
+        var meshLambertMaterial: MeshLambertMaterialProps
         
-        var meshMatcapMaterial: MeshMatcapMaterialProps = js.native
+        var meshMatcapMaterial: MeshMatcapMaterialProps
         
-        var meshNormalMaterial: MeshNormalMaterialProps = js.native
+        var meshNormalMaterial: MeshNormalMaterialProps
         
-        var meshPhongMaterial: MeshPhongMaterialProps = js.native
+        var meshPhongMaterial: MeshPhongMaterialProps
         
-        var meshPhysicalMaterial: MeshPhysicalMaterialProps = js.native
+        var meshPhysicalMaterial: MeshPhysicalMaterialProps
         
-        var meshStandardMaterial: MeshStandardMaterialProps = js.native
+        var meshStandardMaterial: MeshStandardMaterialProps
         
-        var meshToonMaterial: MeshToonMaterialProps = js.native
+        var meshToonMaterial: MeshToonMaterialProps
         
-        var octahedronBufferGeometry: OctahedronBufferGeometryProps = js.native
+        var octahedronBufferGeometry: OctahedronBufferGeometryProps
         
-        var octahedronGeometry: OctahedronGeometryProps = js.native
+        var octahedronGeometry: OctahedronGeometryProps
         
-        var orthographicCamera: OrthographicCameraProps = js.native
+        var orthographicCamera: OrthographicCameraProps
         
-        var parametricBufferGeometry: ParametricBufferGeometryProps = js.native
+        var parametricBufferGeometry: ParametricBufferGeometryProps
         
-        var parametricGeometry: ParametricGeometryProps = js.native
+        var parametricGeometry: ParametricGeometryProps
         
-        var perspectiveCamera: PerspectiveCameraProps = js.native
+        var perspectiveCamera: PerspectiveCameraProps
         
-        var planeBufferGeometry: PlaneBufferGeometryProps = js.native
+        var planeBufferGeometry: PlaneBufferGeometryProps
         
-        var planeGeometry: PlaneGeometryProps = js.native
+        var planeGeometry: PlaneGeometryProps
         
-        var planeHelper: PlaneHelperProps = js.native
+        var planeHelper: PlaneHelperProps
         
-        var pointLight: PointLightProps = js.native
+        var pointLight: PointLightProps
         
-        var pointLightHelper: PointLightHelperProps = js.native
+        var pointLightHelper: PointLightHelperProps
         
-        var points: PointsProps = js.native
+        var points: PointsProps
         
-        var pointsMaterial: PointsMaterialProps = js.native
+        var pointsMaterial: PointsMaterialProps
         
-        var polarGridHelper: PolarGridHelperProps = js.native
+        var polarGridHelper: PolarGridHelperProps
         
-        var polyhedronBufferGeometry: PolyhedronBufferGeometryProps = js.native
+        var polyhedronBufferGeometry: PolyhedronBufferGeometryProps
         
-        var polyhedronGeometry: PolyhedronGeometryProps = js.native
+        var polyhedronGeometry: PolyhedronGeometryProps
         
-        var positionalAudio: PositionalAudioProps = js.native
+        var positionalAudio: PositionalAudioProps
         
-        var primitive: PrimitiveProps = js.native
+        var primitive: PrimitiveProps
         
-        var quaternion: QuaternionProps = js.native
+        var quaternion: QuaternionProps
         
-        var rawShaderMaterial: RawShaderMaterialProps = js.native
+        var rawShaderMaterial: RawShaderMaterialProps
         
-        var raycaster: RaycasterProps = js.native
+        var raycaster: RaycasterProps
         
-        var rectAreaLight: RectAreaLightProps = js.native
+        var rectAreaLight: RectAreaLightProps
         
-        var ringBufferGeometry: RingBufferGeometryProps = js.native
+        var ringBufferGeometry: RingBufferGeometryProps
         
-        var ringGeometry: RingGeometryProps = js.native
+        var ringGeometry: RingGeometryProps
         
-        var scene: SceneProps = js.native
+        var scene: SceneProps
         
-        var shaderMaterial: ShaderMaterialProps = js.native
+        var shaderMaterial: ShaderMaterialProps
         
-        var shadowMaterial: ShadowMaterialProps = js.native
+        var shadowMaterial: ShadowMaterialProps
         
-        var shapeBufferGeometry: ShapeBufferGeometryProps = js.native
+        var shapeBufferGeometry: ShapeBufferGeometryProps
         
-        var shapeGeometry: ShapeGeometryProps = js.native
+        var shapeGeometry: ShapeGeometryProps
         
-        var skeleton: SkeletonProps = js.native
+        var skeleton: SkeletonProps
         
-        var skeletonHelper: SkeletonHelperProps = js.native
+        var skeletonHelper: SkeletonHelperProps
         
-        var skinnedMesh: SkinnedMeshProps = js.native
+        var skinnedMesh: SkinnedMeshProps
         
-        var sphereBufferGeometry: SphereBufferGeometryProps = js.native
+        var sphereBufferGeometry: SphereBufferGeometryProps
         
-        var sphereGeometry: SphereGeometryProps = js.native
+        var sphereGeometry: SphereGeometryProps
         
-        var spotLight: SpotLightProps = js.native
+        var spotLight: SpotLightProps
         
-        var spotLightHelper: SpotLightHelperProps = js.native
+        var spotLightHelper: SpotLightHelperProps
         
-        var spotLightShadow: SpotLightShadowProps = js.native
+        var spotLightShadow: SpotLightShadowProps
         
-        var sprite: SpriteProps = js.native
+        var sprite: SpriteProps
         
-        var spriteMaterial: SpriteMaterialProps = js.native
+        var spriteMaterial: SpriteMaterialProps
         
-        var tetrahedronBufferGeometry: TetrahedronBufferGeometryProps = js.native
+        var tetrahedronBufferGeometry: TetrahedronBufferGeometryProps
         
-        var tetrahedronGeometry: TetrahedronGeometryProps = js.native
+        var tetrahedronGeometry: TetrahedronGeometryProps
         
-        var textBufferGeometry: TextBufferGeometryProps = js.native
+        var textBufferGeometry: TextBufferGeometryProps
         
-        var textGeometry: TextGeometryProps = js.native
+        var textGeometry: TextGeometryProps
         
-        var texture: TextureProps = js.native
+        var texture: TextureProps
         
-        var torusBufferGeometry: TorusBufferGeometryProps = js.native
+        var torusBufferGeometry: TorusBufferGeometryProps
         
-        var torusGeometry: TorusGeometryProps = js.native
+        var torusGeometry: TorusGeometryProps
         
-        var torusKnotBufferGeometry: TorusKnotBufferGeometryProps = js.native
+        var torusKnotBufferGeometry: TorusKnotBufferGeometryProps
         
-        var torusKnotGeometry: TorusKnotGeometryProps = js.native
+        var torusKnotGeometry: TorusKnotGeometryProps
         
-        var tubeBufferGeometry: TubeBufferGeometryProps = js.native
+        var tubeBufferGeometry: TubeBufferGeometryProps
         
-        var tubeGeometry: TubeGeometryProps = js.native
+        var tubeGeometry: TubeGeometryProps
         
-        var vector2: Vector2Props = js.native
+        var vector2: Vector2Props
         
-        var vector3: Vector3Props = js.native
+        var vector3: Vector3Props
         
-        var vector4: Vector4Props = js.native
+        var vector4: Vector4Props
         
-        var videoTexture: VideoTextureProps = js.native
+        var videoTexture: VideoTextureProps
         
-        var wireframeGeometry: WireframeGeometryProps = js.native
+        var wireframeGeometry: WireframeGeometryProps
       }
       object IntrinsicElements {
         

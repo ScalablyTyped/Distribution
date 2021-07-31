@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to access named members in a data pilot source level collection.
   * @see com.sun.star.sheet.DataPilotSourceMember
   */
-@js.native
-trait XMembersAccess extends XNameAccess {
+trait XMembersAccess
+  extends StObject
+     with XNameAccess {
   
   /**
     * returns names of data pilot members in a locale independent notation.
@@ -26,7 +26,7 @@ trait XMembersAccess extends XNameAccess {
     * in two immediately consecutive calls to {@link getElementNames()} and {@link getLocaleIndependentElementNames()} maps to the same elements in order.
     * @returns a sequence of all element names in this container.
     */
-  val LocaleIndependentElementNames: SafeArray[String] = js.native
+  val LocaleIndependentElementNames: SafeArray[String]
   
   /**
     * returns names of data pilot members in a locale independent notation.
@@ -39,7 +39,7 @@ trait XMembersAccess extends XNameAccess {
     * in two immediately consecutive calls to {@link getElementNames()} and {@link getLocaleIndependentElementNames()} maps to the same elements in order.
     * @returns a sequence of all element names in this container.
     */
-  def getLocaleIndependentElementNames(): SafeArray[String] = js.native
+  def getLocaleIndependentElementNames(): SafeArray[String]
 }
 object XMembersAccess {
   

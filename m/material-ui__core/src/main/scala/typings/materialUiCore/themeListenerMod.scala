@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeListenerMod extends Shortcut {
@@ -12,16 +11,15 @@ object themeListenerMod extends Shortcut {
   @js.native
   val default: ThemeListener[js.Object] = js.native
   
-  @js.native
   trait Broadcast[S] extends StObject {
     
-    def getState(): S = js.native
+    def getState(): S
     
-    def setState(state: S): Unit = js.native
+    def setState(state: S): Unit
     
-    def subscribe(callback: js.Function1[/* state */ S, Unit]): Double = js.native
+    def subscribe(callback: js.Function1[/* state */ S, Unit]): Double
     
-    def unsubscribe(subscriptionId: Double): Unit = js.native
+    def unsubscribe(subscriptionId: Double): Unit
   }
   object Broadcast {
     
@@ -37,7 +35,7 @@ object themeListenerMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class BroadcastMutableBuilder[Self <: Broadcast[_], S] (val x: Self with Broadcast[S]) extends AnyVal {
+    implicit class BroadcastMutableBuilder[Self <: Broadcast[?], S] (val x: Self & Broadcast[S]) extends AnyVal {
       
       @scala.inline
       def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
@@ -53,10 +51,9 @@ object themeListenerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait MuiContext[S] extends StObject {
     
-    var __THEMING__ : js.UndefOr[Broadcast[S]] = js.native
+    var __THEMING__ : js.UndefOr[Broadcast[S]] = js.undefined
   }
   object MuiContext {
     
@@ -67,7 +64,7 @@ object themeListenerMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class MuiContextMutableBuilder[Self <: MuiContext[_], S] (val x: Self with MuiContext[S]) extends AnyVal {
+    implicit class MuiContextMutableBuilder[Self <: MuiContext[?], S] (val x: Self & MuiContext[S]) extends AnyVal {
       
       @scala.inline
       def set__THEMING__(value: Broadcast[S]): Self = StObject.set(x, "__THEMING__", value.asInstanceOf[js.Any])
@@ -77,14 +74,13 @@ object themeListenerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ThemeListener[S] extends StObject {
     
-    def initial(context: MuiContext[S]): S | Null = js.native
+    def initial(context: MuiContext[S]): S | Null
     
-    def subscribe(context: MuiContext[S], callback: js.Function1[/* state */ S, Unit]): Double | Null = js.native
+    def subscribe(context: MuiContext[S], callback: js.Function1[/* state */ S, Unit]): Double | Null
     
-    def unsubscribe(context: MuiContext[S], subscriptionId: Double): Unit = js.native
+    def unsubscribe(context: MuiContext[S], subscriptionId: Double): Unit
   }
   object ThemeListener {
     
@@ -99,7 +95,7 @@ object themeListenerMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ThemeListenerMutableBuilder[Self <: ThemeListener[_], S] (val x: Self with ThemeListener[S]) extends AnyVal {
+    implicit class ThemeListenerMutableBuilder[Self <: ThemeListener[?], S] (val x: Self & ThemeListener[S]) extends AnyVal {
       
       @scala.inline
       def setInitial(value: MuiContext[S] => S | Null): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))

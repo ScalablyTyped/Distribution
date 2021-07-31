@@ -2,19 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent pubnub.pubnub.v2ObjectParam<Custom> */
 /* Inlined parent std.Partial<pubnub.pubnub.ChannelMetadataFields> */
-@js.native
 trait ChannelMetadata[Custom /* <: ObjectCustom */] extends StObject {
   
-  var custom: js.UndefOr[Custom] = js.native
+  var custom: js.UndefOr[Custom] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ChannelMetadata {
   
@@ -25,7 +23,7 @@ object ChannelMetadata {
   }
   
   @scala.inline
-  implicit class ChannelMetadataMutableBuilder[Self <: ChannelMetadata[_], Custom /* <: ObjectCustom */] (val x: Self with ChannelMetadata[Custom]) extends AnyVal {
+  implicit class ChannelMetadataMutableBuilder[Self <: ChannelMetadata[?], Custom /* <: ObjectCustom */] (val x: Self & ChannelMetadata[Custom]) extends AnyVal {
     
     @scala.inline
     def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])

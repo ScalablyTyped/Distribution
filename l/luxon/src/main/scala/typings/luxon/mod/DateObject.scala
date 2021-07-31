@@ -2,15 +2,14 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateObject
-  extends DateObjectUnits
+  extends StObject
+     with DateObjectUnits
      with LocaleOptions {
   
-  var zone: js.UndefOr[String | Zone] = js.native
+  var zone: js.UndefOr[String | Zone] = js.undefined
 }
 object DateObject {
   

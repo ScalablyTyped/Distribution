@@ -3,18 +3,16 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.appDefinitionMod.LocationDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/app-definition.AppDefinitionProps, 'sys'> */
-@js.native
 trait OmitAppDefinitionPropssys extends StObject {
   
-  var locations: js.Array[LocationDefinition] = js.native
+  var locations: js.Array[LocationDefinition]
   
-  var name: String = js.native
+  var name: String
   
-  var src: String = js.native
+  var src: String
 }
 object OmitAppDefinitionPropssys {
   

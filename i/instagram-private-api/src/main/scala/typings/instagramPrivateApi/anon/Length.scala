@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var source_type: String = js.native
+  var source_type: String
 }
 object Length {
   

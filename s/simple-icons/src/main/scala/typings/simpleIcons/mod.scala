@@ -2,29 +2,30 @@ package typings.simpleIcons
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("simple-icons", "get")
+  @JSImport("simple-icons", JSImport.Namespace)
   @js.native
-  def get(name: String): SimpleIcon = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def get(name: String): SimpleIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[SimpleIcon]
+  
   trait SimpleIcon extends StObject {
     
-    var hex: String = js.native
+    var hex: String
     
-    var path: String = js.native
+    var path: String
     
-    var slug: String = js.native
+    var slug: String
     
-    var source: String = js.native
+    var source: String
     
-    var svg: String = js.native
+    var svg: String
     
-    var title: String = js.native
+    var title: String
   }
   object SimpleIcon {
     

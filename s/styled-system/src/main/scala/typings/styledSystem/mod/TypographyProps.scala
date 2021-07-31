@@ -6,12 +6,11 @@ import typings.styledSystem.styledSystemStrings.letterSpacings
 import typings.styledSystem.styledSystemStrings.lineHeights
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
-  extends FontFamilyProps[ThemeType]
+  extends StObject
+     with FontFamilyProps[ThemeType]
      with FontSizeProps[ThemeType, ThemeValue[fontSizes, ThemeType, js.Any]]
      with FontWeightProps[ThemeType, ThemeValue[fontWeights, ThemeType, js.Any]]
      with LineHeightProps[ThemeType, ThemeValue[lineHeights, ThemeType, js.Any]]

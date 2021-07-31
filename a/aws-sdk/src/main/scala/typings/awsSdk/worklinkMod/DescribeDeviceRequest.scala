@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeviceRequest extends StObject {
   
   /**
     * A unique identifier for a registered user's device.
     */
-  var DeviceId: Id = js.native
+  var DeviceId: Id
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
 }
 object DescribeDeviceRequest {
   

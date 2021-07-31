@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegralAdScience extends StObject {
   
   /** The custom segment ID provided by Integral Ad Science. The ID must be between `1000001` and `1999999`, inclusive. */
-  var customSegmentId: js.UndefOr[js.Array[String]] = js.native
+  var customSegmentId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Display Viewability section (applicable to display line items only). */
-  var displayViewability: js.UndefOr[String] = js.native
+  var displayViewability: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Unrateable**. */
-  var excludeUnrateable: js.UndefOr[Boolean] = js.native
+  var excludeUnrateable: js.UndefOr[Boolean] = js.undefined
   
   /** Ad Fraud settings. */
-  var excludedAdFraudRisk: js.UndefOr[String] = js.native
+  var excludedAdFraudRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Adult content**. */
-  var excludedAdultRisk: js.UndefOr[String] = js.native
+  var excludedAdultRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Alcohol**. */
-  var excludedAlcoholRisk: js.UndefOr[String] = js.native
+  var excludedAlcoholRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Drugs**. */
-  var excludedDrugsRisk: js.UndefOr[String] = js.native
+  var excludedDrugsRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Gambling**. */
-  var excludedGamblingRisk: js.UndefOr[String] = js.native
+  var excludedGamblingRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Hate speech**. */
-  var excludedHateSpeechRisk: js.UndefOr[String] = js.native
+  var excludedHateSpeechRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Illegal downloads**. */
-  var excludedIllegalDownloadsRisk: js.UndefOr[String] = js.native
+  var excludedIllegalDownloadsRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Offensive language**. */
-  var excludedOffensiveLanguageRisk: js.UndefOr[String] = js.native
+  var excludedOffensiveLanguageRisk: js.UndefOr[String] = js.undefined
   
   /** Brand Safety - **Violence**. */
-  var excludedViolenceRisk: js.UndefOr[String] = js.native
+  var excludedViolenceRisk: js.UndefOr[String] = js.undefined
   
   /** True advertising quality (applicable to Display line items only). */
-  var traqScoreOption: js.UndefOr[String] = js.native
+  var traqScoreOption: js.UndefOr[String] = js.undefined
   
   /** Video Viewability Section (applicable to video line items only). */
-  var videoViewability: js.UndefOr[String] = js.native
+  var videoViewability: js.UndefOr[String] = js.undefined
 }
 object IntegralAdScience {
   

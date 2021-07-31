@@ -2,23 +2,21 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tethering {
   
-  @js.native
   trait AcceptedEvent extends StObject {
     
     /**
       * Connection id to be used.
       */
-    var connectionId: String = js.native
+    var connectionId: String
     
     /**
       * Port number that was successfully bound.
       */
-    var port: integer = js.native
+    var port: integer
   }
   object AcceptedEvent {
     
@@ -39,13 +37,12 @@ object Tethering {
     }
   }
   
-  @js.native
   trait BindRequest extends StObject {
     
     /**
       * Port number to bind.
       */
-    var port: integer = js.native
+    var port: integer
   }
   object BindRequest {
     
@@ -63,13 +60,12 @@ object Tethering {
     }
   }
   
-  @js.native
   trait UnbindRequest extends StObject {
     
     /**
       * Port number to unbind.
       */
-    var port: integer = js.native
+    var port: integer
   }
   object UnbindRequest {
     

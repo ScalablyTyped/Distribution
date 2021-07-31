@@ -3,33 +3,31 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRestoreSummaryMod {
   
-  @js.native
   trait RestoreSummary extends StObject {
     
     /**
       * <p>Point in time or source backup time.</p>
       */
-    var RestoreDateTime: Date | String | Double = js.native
+    var RestoreDateTime: Date | String | Double
     
     /**
       * <p>Indicates if a restore is in progress or not.</p>
       */
-    var RestoreInProgress: Boolean = js.native
+    var RestoreInProgress: Boolean
     
     /**
       * <p>ARN of the backup from which the table was restored.</p>
       */
-    var SourceBackupArn: js.UndefOr[String] = js.native
+    var SourceBackupArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>ARN of the source table of the backup that is being restored.</p>
       */
-    var SourceTableArn: js.UndefOr[String] = js.native
+    var SourceTableArn: js.UndefOr[String] = js.undefined
   }
   object RestoreSummary {
     
@@ -62,14 +60,15 @@ object typesRestoreSummaryMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRestoreSummary extends RestoreSummary {
+  trait UnmarshalledRestoreSummary
+    extends StObject
+       with RestoreSummary {
     
     /**
       * <p>Point in time or source backup time.</p>
       */
     @JSName("RestoreDateTime")
-    var RestoreDateTime_UnmarshalledRestoreSummary: Date = js.native
+    var RestoreDateTime_UnmarshalledRestoreSummary: Date
   }
   object UnmarshalledRestoreSummary {
     

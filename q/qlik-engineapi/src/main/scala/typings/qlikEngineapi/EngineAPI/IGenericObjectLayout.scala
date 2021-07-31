@@ -2,43 +2,43 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericObjectLayout...
   */
-@js.native
-trait IGenericObjectLayout extends IGenericBaseLayout {
+trait IGenericObjectLayout
+  extends StObject
+     with IGenericBaseLayout {
   
   /**
     * This parameter is optional.
     * Gives information on the error.
     */
-  var qError: js.UndefOr[INxLayoutErrors] = js.native
+  var qError: js.UndefOr[INxLayoutErrors] = js.undefined
   
   /**
     * Should be set to create an object that is linked to another object.
     * Enter the identifier of the object you want to link to.
     * If you do not want to link your object, set this parameter to an empty string.
     */
-  var qExtendsId: String = js.native
+  var qExtendsId: String
   
   /**
     * Is set to true if the generic object contains some properties that are not persistent
     * (a soft patch was applied).
     */
-  var qHasSoftPatches: Boolean = js.native
+  var qHasSoftPatches: Boolean
   
   /**
     * Information about the selections.
     */
-  var qSelectionInfo: INxSelectionInfo = js.native
+  var qSelectionInfo: INxSelectionInfo
   
   /**
     *     Name of the alternate state. Default is current selections $ .
     */
-  var qStateName: String = js.native
+  var qStateName: String
 }
 object IGenericObjectLayout {
   

@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Concept - reference to a terminology or just  text
   */
-@js.native
-trait CodeableConcept extends Element {
+trait CodeableConcept
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Code defined by a terminology system
     */
-  var coding: js.UndefOr[js.Array[Coding]] = js.native
+  var coding: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Plain text representation of the concept
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object CodeableConcept {
   

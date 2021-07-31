@@ -1,37 +1,36 @@
 package typings.serializeError
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
-import typings.typeFest.basicMod.JsonValue
+import typings.typeFest.basicMod.JsonObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("serialize-error", "deserializeError")
+  @JSImport("serialize-error", JSImport.Namespace)
   @js.native
-  def deserializeError(errorObject: js.Any): Error = js.native
-  @JSImport("serialize-error", "deserializeError")
-  @js.native
-  def deserializeError(errorObject: ErrorObject): Error = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("serialize-error", "serializeError")
-  @js.native
-  def serializeError[ErrorType](error: ErrorType): ErrorObject | ErrorType = js.native
+  @scala.inline
+  def deserializeError(errorObject: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeError")(errorObject.asInstanceOf[js.Any]).asInstanceOf[Error]
+  @scala.inline
+  def deserializeError(errorObject: ErrorObject): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeError")(errorObject.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  /* Inlined {  name :string | undefined,   stack :string | undefined,   message :string | undefined,   code :string | undefined} & type-fest.type-fest.JsonObject */
-  @js.native
-  trait ErrorObject extends /* key */ StringDictionary[JsonValue] {
+  @scala.inline
+  def serializeError[ErrorType](error: ErrorType): ErrorObject | ErrorType = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorObject | ErrorType]
+  
+  trait ErrorObject
+    extends StObject
+       with JsonObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorObject {
     

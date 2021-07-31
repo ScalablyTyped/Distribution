@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type class of this type is com::sun::star::uno::TypeClass::PROPERTY.
   * @since OOo 1.1.2
   */
-@js.native
-trait XPropertyTypeDescription extends XTypeDescription {
+trait XPropertyTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /** @returns the flags defined for this property.  The possible values are defined in {@link com.sun.star.beans.PropertyAttribute} */
-  val PropertyFlags: Double = js.native
+  val PropertyFlags: Double
   
   /** @returns the type description for this property. */
-  val PropertyTypeDescription: XTypeDescription = js.native
+  val PropertyTypeDescription: XTypeDescription
   
   /** @returns the flags defined for this property.  The possible values are defined in {@link com.sun.star.beans.PropertyAttribute} */
-  def getPropertyFlags(): Double = js.native
+  def getPropertyFlags(): Double
   
   /** @returns the type description for this property. */
-  def getPropertyTypeDescription(): XTypeDescription = js.native
+  def getPropertyTypeDescription(): XTypeDescription
 }
 object XPropertyTypeDescription {
   

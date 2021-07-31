@@ -4,32 +4,30 @@ import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Tabs/Tab.TabProps> */
-@js.native
 trait WeakValidationMapTabProps extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var glyph: js.UndefOr[Validator[js.UndefOr[IconGlyph | Null]]] = js.native
+  var glyph: js.UndefOr[Validator[js.UndefOr[IconGlyph | Null]]] = js.undefined
   
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var index: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var index: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var linkProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var linkProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]] = js.undefined
   
-  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var tabContentProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var tabContentProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
 object WeakValidationMapTabProps {
   
@@ -73,13 +71,13 @@ object WeakValidationMapTabProps {
     def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setLinkProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+    def setLinkProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
     @scala.inline
-    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -91,7 +89,7 @@ object WeakValidationMapTabProps {
     def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def setTabContentProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
+    def setTabContentProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTabContentPropsUndefined: Self = StObject.set(x, "tabContentProps", js.undefined)

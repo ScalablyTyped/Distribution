@@ -17,7 +17,6 @@ import typings.xhr2Cookies.xmlHttpRequestEventTargetMod.XMLHttpRequestEventTarge
 import typings.xhr2Cookies.xmlHttpRequestUploadMod.XMLHttpRequestUpload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlHttpRequestMod {
@@ -128,19 +127,13 @@ object xmlHttpRequestMod {
     var onreadystatechange: ProgressEventListener | Null = js.native
     
     def open(method: String, url: String): Unit = js.native
-    def open(
-      method: String,
-      url: String,
-      async: js.UndefOr[scala.Nothing],
-      user: js.UndefOr[scala.Nothing],
-      password: String
-    ): Unit = js.native
-    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String): Unit = js.native
-    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String, password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean): Unit = js.native
-    def open(method: String, url: String, async: Boolean, user: js.UndefOr[scala.Nothing], password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, user: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, user: String, password: String): Unit = js.native
+    def open(method: String, url: String, async: Boolean, user: Unit, password: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, user: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, user: String, password: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, user: Unit, password: String): Unit = js.native
     
     def overrideMimeType(mimeType: String): Unit = js.native
     
@@ -249,21 +242,21 @@ object xmlHttpRequestMod {
     @scala.inline
     def cookieJar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieJar")(x.asInstanceOf[js.Any])
     
-    @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.nodejsSet")
-    @js.native
-    def nodejsSet(options: BaseUrl): Unit = js.native
+    @scala.inline
+    def nodejsSet(options: BaseUrl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nodejsSet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
-  trait XHRUrl extends Url {
+  trait XHRUrl
+    extends StObject
+       with Url {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
   }
   object XHRUrl {
     
     @scala.inline
     def apply(href: String): XHRUrl = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[XHRUrl]
     }
     
@@ -278,10 +271,9 @@ object xmlHttpRequestMod {
     }
   }
   
-  @js.native
   trait XMLHttpRequestOptions extends StObject {
     
-    var anon: js.UndefOr[Boolean] = js.native
+    var anon: js.UndefOr[Boolean] = js.undefined
   }
   object XMLHttpRequestOptions {
     

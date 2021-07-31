@@ -4,13 +4,13 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XLibraryQueryExecutable extends XInterface {
+trait XLibraryQueryExecutable
+  extends StObject
+     with XInterface {
   
-  def HasExecutableCode(name: String): Boolean = js.native
+  def HasExecutableCode(name: String): Boolean
 }
 object XLibraryQueryExecutable {
   

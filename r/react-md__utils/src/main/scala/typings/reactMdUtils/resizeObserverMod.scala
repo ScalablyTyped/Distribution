@@ -8,16 +8,18 @@ import typings.reactMdUtils.useResizeObserverV1Mod.ResizeObserverTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeObserverMod {
   
   object ResizeObserver {
     
+    @scala.inline
+    def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver")
     @js.native
-    def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -57,7 +59,6 @@ object resizeObserverMod {
     }
   }
   
-  @js.native
   trait ResizeObserverProps extends StObject {
     
     /**
@@ -65,7 +66,7 @@ object resizeObserverMod {
       * is provided. You should really not be adding styles to this component as it
       * is hidden.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * This prop will only be used when the `target` prop is `undefined`. Since
@@ -74,28 +75,28 @@ object resizeObserverMod {
       * changes. You really only want to change this up if trying to listen to
       * table resize events and not using the `target` prop.
       */
-    var component: js.UndefOr[ElementType[_]] = js.native
+    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     /**
       * Boolean if the resize observer should stop tracking height changes. This
       * will only update the callback/renderer to not update on height changes, so
       * there will not be a huge performance boost.
       */
-    var disableHeight: js.UndefOr[Boolean] = js.native
+    var disableHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the resize observer should stop tracking width changes. This
       * will only update the callback/renderer to not update on height changes, so
       * there will not be a huge performance boost.
       */
-    var disableWidth: js.UndefOr[Boolean] = js.native
+    var disableWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The resize event handler for the resize observer. The callback will include
       * the next height, width, scrollHeight, scrollWidth, and the element that is
       * being observed.
       */
-    var onResize: OnResizeObserverChange[HTMLElement] = js.native
+    var onResize: OnResizeObserverChange[HTMLElement]
     
     /**
       * An optional resize target to be used instead of the parent element of this
@@ -105,7 +106,7 @@ object resizeObserverMod {
       * Setting this to `null` will result in a "lazy Observer". The observer will
       * not start until it has been updated to be a string or an HTMLElement.
       */
-    var target: js.UndefOr[ResizeObserverTarget[HTMLElement]] = js.native
+    var target: js.UndefOr[ResizeObserverTarget[HTMLElement]] = js.undefined
   }
   object ResizeObserverProps {
     
@@ -125,7 +126,7 @@ object resizeObserverMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

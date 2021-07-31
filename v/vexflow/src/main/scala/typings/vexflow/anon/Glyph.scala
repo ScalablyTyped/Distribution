@@ -2,15 +2,13 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Glyph extends StObject {
   
-  var glyph: typings.vexflow.Vex.Flow.Glyph = js.native
+  var glyph: typings.vexflow.Vex.Flow.Glyph
   
-  var num: Double = js.native
+  var num: Double
 }
 object Glyph {
   

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProfilePhoto extends Entity {
+trait ProfilePhoto
+  extends StObject
+     with Entity {
   
   // The height of the photo. Read-only.
-  var height: js.UndefOr[NullableOption[Double]] = js.native
+  var height: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The width of the photo. Read-only.
-  var width: js.UndefOr[NullableOption[Double]] = js.native
+  var width: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object ProfilePhoto {
   

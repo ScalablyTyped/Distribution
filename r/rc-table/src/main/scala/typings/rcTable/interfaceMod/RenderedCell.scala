@@ -3,15 +3,13 @@ package typings.rcTable.interfaceMod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderedCell[RecordType] extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var props: js.UndefOr[CellType[RecordType]] = js.native
+  var props: js.UndefOr[CellType[RecordType]] = js.undefined
 }
 object RenderedCell {
   
@@ -22,7 +20,7 @@ object RenderedCell {
   }
   
   @scala.inline
-  implicit class RenderedCellMutableBuilder[Self <: RenderedCell[_], RecordType] (val x: Self with RenderedCell[RecordType]) extends AnyVal {
+  implicit class RenderedCellMutableBuilder[Self <: RenderedCell[?], RecordType] (val x: Self & RenderedCell[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

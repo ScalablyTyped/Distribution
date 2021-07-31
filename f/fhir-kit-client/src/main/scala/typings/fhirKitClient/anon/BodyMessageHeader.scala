@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.MessageHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyMessageHeader extends StObject {
   
-  var body: MessageHeader = js.native
+  var body: MessageHeader
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MessageHeader = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MessageHeader
 }
 object BodyMessageHeader {
   
   @scala.inline
-  def apply(body: MessageHeader, resourceType: typings.fhirKitClient.fhirKitClientStrings.MessageHeader): BodyMessageHeader = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: MessageHeader): BodyMessageHeader = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "MessageHeader")
     __obj.asInstanceOf[BodyMessageHeader]
   }
   

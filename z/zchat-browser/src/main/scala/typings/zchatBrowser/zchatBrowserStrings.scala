@@ -5,28 +5,35 @@ import typings.zchatBrowser.mod.EventName
 import typings.zchatBrowser.mod.SendFileErrorMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zchatBrowserStrings {
   
   @js.native
-  sealed trait CONN_ERROR extends SendFileErrorMessage
+  sealed trait CONN_ERROR
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def CONN_ERROR: CONN_ERROR = "CONN_ERROR".asInstanceOf[CONN_ERROR]
   
   @js.native
-  sealed trait EXCEED_SIZE_LIMIT extends SendFileErrorMessage
+  sealed trait EXCEED_SIZE_LIMIT
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def EXCEED_SIZE_LIMIT: EXCEED_SIZE_LIMIT = "EXCEED_SIZE_LIMIT".asInstanceOf[EXCEED_SIZE_LIMIT]
   
   @js.native
-  sealed trait INTERNAL_ERROR extends SendFileErrorMessage
+  sealed trait INTERNAL_ERROR
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
   
   @js.native
-  sealed trait INVALID_EXTENSION extends SendFileErrorMessage
+  sealed trait INVALID_EXTENSION
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def INVALID_EXTENSION: INVALID_EXTENSION = "INVALID_EXTENSION".asInstanceOf[INVALID_EXTENSION]
   
@@ -41,12 +48,16 @@ object zchatBrowserStrings {
   def LIST_TEMPLATE: LIST_TEMPLATE = "LIST_TEMPLATE".asInstanceOf[LIST_TEMPLATE]
   
   @js.native
-  sealed trait NOT_ALLOWED extends SendFileErrorMessage
+  sealed trait NOT_ALLOWED
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def NOT_ALLOWED: NOT_ALLOWED = "NOT_ALLOWED".asInstanceOf[NOT_ALLOWED]
   
   @js.native
-  sealed trait NOT_SUPPORTED extends SendFileErrorMessage
+  sealed trait NOT_SUPPORTED
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def NOT_SUPPORTED: NOT_SUPPORTED = "NOT_SUPPORTED".asInstanceOf[NOT_SUPPORTED]
   
@@ -71,22 +82,30 @@ object zchatBrowserStrings {
   def QUICK_REPLY_ACTION: QUICK_REPLY_ACTION = "QUICK_REPLY_ACTION".asInstanceOf[QUICK_REPLY_ACTION]
   
   @js.native
-  sealed trait UNKNOWN_ERROR extends SendFileErrorMessage
+  sealed trait UNKNOWN_ERROR
+    extends StObject
+       with SendFileErrorMessage
   @scala.inline
   def UNKNOWN_ERROR: UNKNOWN_ERROR = "UNKNOWN_ERROR".asInstanceOf[UNKNOWN_ERROR]
   
   @js.native
-  sealed trait account_status extends EventName
+  sealed trait account_status
+    extends StObject
+       with EventName
   @scala.inline
   def account_status: account_status = "account_status".asInstanceOf[account_status]
   
   @js.native
-  sealed trait agent_update extends EventName
+  sealed trait agent_update
+    extends StObject
+       with EventName
   @scala.inline
   def agent_update: agent_update = "agent_update".asInstanceOf[agent_update]
   
   @js.native
-  sealed trait away extends EventData
+  sealed trait away
+    extends StObject
+       with EventData
   @scala.inline
   def away: away = "away".asInstanceOf[away]
   
@@ -96,7 +115,9 @@ object zchatBrowserStrings {
   def bad: bad = "bad".asInstanceOf[bad]
   
   @js.native
-  sealed trait chat extends EventName
+  sealed trait chat
+    extends StObject
+       with EventName
   @scala.inline
   def chat: chat = "chat".asInstanceOf[chat]
   
@@ -141,32 +162,44 @@ object zchatBrowserStrings {
   def chatDotrequestDotrating: chatDotrequestDotrating = "chat.request.rating".asInstanceOf[chatDotrequestDotrating]
   
   @js.native
-  sealed trait closed extends EventData
+  sealed trait closed
+    extends StObject
+       with EventData
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait connected extends EventData
+  sealed trait connected
+    extends StObject
+       with EventData
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait connecting extends EventData
+  sealed trait connecting
+    extends StObject
+       with EventData
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
-  sealed trait connection_update extends EventName
+  sealed trait connection_update
+    extends StObject
+       with EventName
   @scala.inline
   def connection_update: connection_update = "connection_update".asInstanceOf[connection_update]
   
   @js.native
-  sealed trait department_update extends EventName
+  sealed trait department_update
+    extends StObject
+       with EventName
   @scala.inline
   def department_update: department_update = "department_update".asInstanceOf[department_update]
   
   @js.native
-  sealed trait error extends EventName
+  sealed trait error
+    extends StObject
+       with EventName
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -176,7 +209,9 @@ object zchatBrowserStrings {
   def good: good = "good".asInstanceOf[good]
   
   @js.native
-  sealed trait history extends EventName
+  sealed trait history
+    extends StObject
+       with EventName
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   
@@ -186,22 +221,30 @@ object zchatBrowserStrings {
   def last_read: last_read = "last_read".asInstanceOf[last_read]
   
   @js.native
-  sealed trait offline extends EventData
+  sealed trait offline
+    extends StObject
+       with EventData
   @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
-  sealed trait online extends EventData
+  sealed trait online
+    extends StObject
+       with EventData
   @scala.inline
   def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait typing extends EventName
+  sealed trait typing
+    extends StObject
+       with EventName
   @scala.inline
   def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
-  sealed trait visitor_update extends EventName
+  sealed trait visitor_update
+    extends StObject
+       with EventName
   @scala.inline
   def visitor_update: visitor_update = "visitor_update".asInstanceOf[visitor_update]
 }

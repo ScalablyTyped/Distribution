@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.Date
 import typings.officeJs.officeJsStrings.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customProperty.toJSON()`. */
-@js.native
 trait CustomPropertyData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait CustomPropertyData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -29,7 +27,7 @@ trait CustomPropertyData extends StObject {
     */
   var `type`: js.UndefOr[
     DocumentPropertyType | typings.officeJs.officeJsStrings.String | Number | Date | Boolean
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait CustomPropertyData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CustomPropertyData {
   

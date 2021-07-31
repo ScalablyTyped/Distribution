@@ -3,13 +3,11 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headers extends StObject {
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
 }
 object Headers {
   

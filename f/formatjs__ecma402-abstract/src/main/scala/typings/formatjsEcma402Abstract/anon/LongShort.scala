@@ -2,17 +2,15 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongShort extends StObject {
   
-  var long: RecordDecimalFormatNumLDM1000 = js.native
+  var long: RecordDecimalFormatNumLDM1000
   
-  var short: RecordDecimalFormatNumLDM1000 = js.native
+  var short: RecordDecimalFormatNumLDM1000
   
-  var standard: String = js.native
+  var standard: String
 }
 object LongShort {
   

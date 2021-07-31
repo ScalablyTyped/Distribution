@@ -2,55 +2,53 @@ package typings.neverbounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Academichost extends StObject {
     
-    var academic_host: String = js.native
+    var academic_host: String
     
-    var accepts_all: String = js.native
+    var accepts_all: String
     
-    var bad_dns: String = js.native
+    var bad_dns: String
     
-    var bad_syntax: String = js.native
+    var bad_syntax: String
     
-    var connect_fails: String = js.native
+    var connect_fails: String
     
-    var contains_alias: String = js.native
+    var contains_alias: String
     
-    var contains_subdomain: String = js.native
+    var contains_subdomain: String
     
-    var disposable_email: String = js.native
+    var disposable_email: String
     
-    var free_email_host: String = js.native
+    var free_email_host: String
     
-    var government_host: String = js.native
+    var government_host: String
     
-    var has_dns: String = js.native
+    var has_dns: String
     
-    var has_dns_mx: String = js.native
+    var has_dns_mx: String
     
-    var international_host: String = js.native
+    var international_host: String
     
-    var military_host: String = js.native
+    var military_host: String
     
-    var profanity: String = js.native
+    var profanity: String
     
-    var role_account: String = js.native
+    var role_account: String
     
-    var smtp_connectable: String = js.native
+    var smtp_connectable: String
     
-    var spamtrap_network: String = js.native
+    var spamtrap_network: String
     
-    var spelling_mistake: String = js.native
+    var spelling_mistake: String
     
-    var squatter_host: String = js.native
+    var squatter_host: String
     
-    var temporary_dns_error: String = js.native
+    var temporary_dns_error: String
   }
   object Academichost {
     
@@ -150,26 +148,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Complete extends StObject {
     
-    var complete: String = js.native
+    var complete: String
     
-    var failed: String = js.native
+    var failed: String
     
-    var parsing: String = js.native
+    var parsing: String
     
-    var queued: String = js.native
+    var queued: String
     
-    var running: String = js.native
+    var running: String
     
-    var under_review: String = js.native
+    var under_review: String
     
-    var uploading: String = js.native
+    var uploading: String
     
-    var waiting: String = js.native
+    var waiting: String
     
-    var waiting_analyzed: String = js.native
+    var waiting_analyzed: String
   }
   object Complete {
     
@@ -221,12 +218,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentType extends StObject {
     
-    var `Content-Type`: js.UndefOr[String] = js.native
+    var `Content-Type`: js.UndefOr[String] = js.undefined
     
-    var `User-Agent`: js.UndefOr[String] = js.native
+    var `User-Agent`: js.UndefOr[String] = js.undefined
   }
   object ContentType {
     
@@ -253,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Remote extends StObject {
     
-    var remote: String = js.native
+    var remote: String
     
-    var supplied: String = js.native
+    var supplied: String
   }
   object Remote {
     

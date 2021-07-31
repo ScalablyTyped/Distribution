@@ -2,26 +2,24 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResolverEndpointsResponse extends StObject {
   
   /**
     * The value that you specified for MaxResults in the request.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.route53resolverMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.route53resolverMod.MaxResults] = js.undefined
   
   /**
     * If more than MaxResults IP addresses match the specified criteria, you can submit another ListResolverEndpoint request to get the next group of results. In the next request, specify the value of NextToken from the previous response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
     * The Resolver endpoints that were created by using the current AWS account, and that match the specified filters, if any.
     */
-  var ResolverEndpoints: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverEndpoints] = js.native
+  var ResolverEndpoints: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverEndpoints] = js.undefined
 }
 object ListResolverEndpointsResponse {
   

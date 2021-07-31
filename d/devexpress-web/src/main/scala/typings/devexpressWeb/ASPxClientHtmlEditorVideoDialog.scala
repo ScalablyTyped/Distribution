@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Video dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorVideoDialog extends ASPxClientHtmlEditorMediaDialogBase {
+trait ASPxClientHtmlEditorVideoDialog
+  extends StObject
+     with ASPxClientHtmlEditorMediaDialogBase {
   
   /**
     * Provides access to the client object of the "Auto play" check box in the Html Editor's Video dialog.
     */
-  def GetAutoPlayCheckBox(): ASPxClientCheckBox = js.native
+  def GetAutoPlayCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Loop" check box in the Html Editor's Video dialog.
     */
-  def GetLoopCheckBox(): ASPxClientCheckBox = js.native
+  def GetLoopCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Poster URL" text box in the Html Editor's Video dialog.
     */
-  def GetPosterTextBox(): ASPxClientTextBox = js.native
+  def GetPosterTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "Preload mode" combo box in the Html Editor's Video dialog.
     */
-  def GetPreloadModeComboBox(): ASPxClientComboBox = js.native
+  def GetPreloadModeComboBox(): ASPxClientComboBox
   
   /**
     * Provides access to the client object of the "Show player controls" check box in the Html Editor's Video dialog.
     */
-  def GetShowPlayerControlsCheckBox(): ASPxClientCheckBox = js.native
+  def GetShowPlayerControlsCheckBox(): ASPxClientCheckBox
 }
 object ASPxClientHtmlEditorVideoDialog {
   

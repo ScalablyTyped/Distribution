@@ -2,25 +2,25 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScriptInvocationListenerCallbacks extends InvocationListenerCallbacks {
+trait ScriptInvocationListenerCallbacks
+  extends StObject
+     with InvocationListenerCallbacks {
   
   /**
     * Called synchronously when a thread is about to enter the target function.
     */
   var onEnter: js.UndefOr[
     js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Called synchronously when a thread is about to leave the target function.
     */
   var onLeave: js.UndefOr[
     js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object ScriptInvocationListenerCallbacks {
   

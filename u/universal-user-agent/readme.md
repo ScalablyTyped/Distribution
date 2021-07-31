@@ -10,9 +10,9 @@ Get a user agent string in both browser and node
 | ------------------ | :-------------: |
 | Full name          | universal-user-agent |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 26 |
-| # downloads        | 124421801 |
+| # releases         | 7 |
+| # dependents       | 42 |
+| # downloads        | 200619038 |
 | # stars            | 0 |
 
 ## Links

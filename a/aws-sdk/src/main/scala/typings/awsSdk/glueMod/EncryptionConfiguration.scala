@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfiguration extends StObject {
   
   /**
     * The encryption configuration for Amazon CloudWatch.
     */
-  var CloudWatchEncryption: js.UndefOr[typings.awsSdk.glueMod.CloudWatchEncryption] = js.native
+  var CloudWatchEncryption: js.UndefOr[typings.awsSdk.glueMod.CloudWatchEncryption] = js.undefined
   
   /**
     * The encryption configuration for job bookmarks.
     */
-  var JobBookmarksEncryption: js.UndefOr[typings.awsSdk.glueMod.JobBookmarksEncryption] = js.native
+  var JobBookmarksEncryption: js.UndefOr[typings.awsSdk.glueMod.JobBookmarksEncryption] = js.undefined
   
   /**
     * The encryption configuration for Amazon Simple Storage Service (Amazon S3) data.
     */
-  var S3Encryption: js.UndefOr[S3EncryptionList] = js.native
+  var S3Encryption: js.UndefOr[S3EncryptionList] = js.undefined
 }
 object EncryptionConfiguration {
   

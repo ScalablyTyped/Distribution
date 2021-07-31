@@ -2,25 +2,23 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialLinearScale extends StObject {
   
-  var angleLines: js.UndefOr[AngleLineOptions] = js.native
+  var angleLines: js.UndefOr[AngleLineOptions] = js.undefined
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var gridLines: js.UndefOr[GridLineOptions] = js.native
+  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   
-  var pointLabels: js.UndefOr[PointLabelOptions] = js.native
+  var pointLabels: js.UndefOr[PointLabelOptions] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var ticks: js.UndefOr[LinearTickOptions] = js.native
+  var ticks: js.UndefOr[LinearTickOptions] = js.undefined
 }
 object RadialLinearScale {
   

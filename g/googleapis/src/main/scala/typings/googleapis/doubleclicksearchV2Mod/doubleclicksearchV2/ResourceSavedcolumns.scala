@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclicksearch/v2", "doubleclicksearch_v2.Resource$Savedcolumns")
@@ -31,7 +30,7 @@ class ResourceSavedcolumns protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedColumnList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedColumnList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(params: ParamsResourceSavedcolumnsList): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(params: ParamsResourceSavedcolumnsList, callback: BodyResponseCallback[SchemaSavedColumnList]): Unit = js.native
   def list(

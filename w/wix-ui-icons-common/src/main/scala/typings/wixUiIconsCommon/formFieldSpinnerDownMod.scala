@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formFieldSpinnerDownMod extends Shortcut {
@@ -15,10 +14,11 @@ object formFieldSpinnerDownMod extends Shortcut {
   @js.native
   val default: SFC[FormFieldSpinnerDownProps] = js.native
   
-  @js.native
-  trait FormFieldSpinnerDownProps extends SVGAttributes[SVGElement] {
+  trait FormFieldSpinnerDownProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object FormFieldSpinnerDownProps {
     

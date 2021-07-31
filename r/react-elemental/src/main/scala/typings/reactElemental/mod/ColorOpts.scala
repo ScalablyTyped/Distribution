@@ -2,17 +2,15 @@ package typings.reactElemental.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorOpts extends StObject {
   
-  var primary: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.undefined
   
-  var primaryDark: js.UndefOr[String] = js.native
+  var primaryDark: js.UndefOr[String] = js.undefined
   
-  var primaryLight: js.UndefOr[String] = js.native
+  var primaryLight: js.UndefOr[String] = js.undefined
 }
 object ColorOpts {
   

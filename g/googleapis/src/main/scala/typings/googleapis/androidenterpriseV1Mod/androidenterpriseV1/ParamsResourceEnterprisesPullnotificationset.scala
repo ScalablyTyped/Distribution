@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEnterprisesPullnotificationset extends StandardParameters {
+trait ParamsResourceEnterprisesPullnotificationset
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The request mode for pulling notifications. Specifying
@@ -26,7 +26,7 @@ trait ParamsResourceEnterprisesPullnotificationset extends StandardParameters {
     * pending notifications, or an empty list if no notifications are present.
     * If omitted, defaults to waitForNotifications.
     */
-  var requestMode: js.UndefOr[String] = js.native
+  var requestMode: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEnterprisesPullnotificationset {
   

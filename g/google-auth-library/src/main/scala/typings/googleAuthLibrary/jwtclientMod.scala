@@ -11,7 +11,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwtclientMod {
@@ -75,6 +74,9 @@ object jwtclientMod {
     
     var email: js.UndefOr[String] = js.native
     
+    /* CompleteClass */
+    override def fetchIdToken(targetAudience: String): js.Promise[String] = js.native
+    
     /**
       * Creates a JWT credentials instance using an API Key for authentication.
       * @param apiKey The API Key in string form.
@@ -128,22 +130,23 @@ object jwtclientMod {
     var subject: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait JWTOptions extends RefreshOptions {
+  trait JWTOptions
+    extends StObject
+       with RefreshOptions {
     
-    var additionalClaims: js.UndefOr[js.Object] = js.native
+    var additionalClaims: js.UndefOr[js.Object] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var keyId: js.UndefOr[String] = js.native
+    var keyId: js.UndefOr[String] = js.undefined
     
-    var scopes: js.UndefOr[String | js.Array[String]] = js.native
+    var scopes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object JWTOptions {
     

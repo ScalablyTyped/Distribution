@@ -2,19 +2,17 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalRelativeRouteSettings extends StObject {
   
-  var dynamicHash: js.UndefOr[String] = js.native
+  var dynamicHash: js.UndefOr[String] = js.undefined
   
-  var fromParent: js.UndefOr[Boolean] = js.native
+  var fromParent: js.UndefOr[Boolean] = js.undefined
   
-  var moduleId: js.UndefOr[String] = js.native
+  var moduleId: js.UndefOr[String] = js.undefined
   
-  var route: js.UndefOr[String] = js.native
+  var route: js.UndefOr[String] = js.undefined
 }
 object DurandalRelativeRouteSettings {
   

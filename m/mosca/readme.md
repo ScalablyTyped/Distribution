@@ -11,8 +11,8 @@ MQTT broker as a module
 | Full name          | mosca |
 | Keywords           | mqtt, mqtt server, publish, subscribe, pubsub, rabbitmq, zeromq, 0mq, amqp, mosquitto, websocket |
 | # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 170761 |
+| # dependents       | 73 |
+| # downloads        | 151090 |
 | # stars            | 38 |
 
 ## Links

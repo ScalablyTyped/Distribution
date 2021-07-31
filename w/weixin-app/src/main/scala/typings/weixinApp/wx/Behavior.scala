@@ -2,17 +2,15 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Behavior[Data, Props, Methods] extends StObject {
   
-  var __DO_NOT_USE_INTERNAL_FIELD_DATA: Data = js.native
+  var __DO_NOT_USE_INTERNAL_FIELD_DATA: Data
   
-  var __DO_NOT_USE_INTERNAL_FIELD_METHODS: Methods = js.native
+  var __DO_NOT_USE_INTERNAL_FIELD_METHODS: Methods
   
-  var __DO_NOT_USE_INTERNAL_FIELD_PROPS: Props = js.native
+  var __DO_NOT_USE_INTERNAL_FIELD_PROPS: Props
 }
 object Behavior {
   
@@ -27,7 +25,7 @@ object Behavior {
   }
   
   @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior[_, _, _], Data, Props, Methods] (val x: Self with (Behavior[Data, Props, Methods])) extends AnyVal {
+  implicit class BehaviorMutableBuilder[Self <: Behavior[?, ?, ?], Data, Props, Methods] (val x: Self & (Behavior[Data, Props, Methods])) extends AnyVal {
     
     @scala.inline
     def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])

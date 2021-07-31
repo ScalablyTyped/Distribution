@@ -2,7 +2,6 @@ package typings.rbush
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,20 +19,21 @@ object mod {
     *                   value means faster insertion and slower search, and
     *                   vice versa.
     */
-  class default[T] () extends RBush[T] {
+  class default[T] ()
+    extends StObject
+       with RBush[T] {
     def this(maxEntries: Double) = this()
   }
   
-  @js.native
   trait BBox extends StObject {
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
   }
   object BBox {
     

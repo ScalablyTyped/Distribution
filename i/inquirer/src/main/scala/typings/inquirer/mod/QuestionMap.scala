@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,53 +10,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
 trait QuestionMap[T /* <: Answers */] extends StObject {
   
   /**
     * The `CheckboxQuestion` type.
     */
-  var checkbox: CheckboxQuestion[T] = js.native
+  var checkbox: CheckboxQuestion[T]
   
   /**
     * The `ConfirmQuestion` type.
     */
-  var confirm: ConfirmQuestion[T] = js.native
+  var confirm: ConfirmQuestion[T]
   
   /**
     * The `EditorQuestion` type.
     */
-  var editor: EditorQuestion[T] = js.native
+  var editor: EditorQuestion[T]
   
   /**
     * The `ExpandQuestion` type.
     */
-  var expand: ExpandQuestion[T] = js.native
+  var expand: ExpandQuestion[T]
   
   /**
     * The `InputQuestion` type.
     */
-  var input: InputQuestion[T] = js.native
+  var input: InputQuestion[T]
   
   /**
     * The `ListQuestion` type.
     */
-  var list: ListQuestion[T] = js.native
+  var list: ListQuestion[T]
   
   /**
     * The `NumberQuestion` type.
     */
-  var number: NumberQuestion[T] = js.native
+  var number: NumberQuestion[T]
   
   /**
     * The `PasswordQuestion` type.
     */
-  var password: PasswordQuestion[T] = js.native
+  var password: PasswordQuestion[T]
   
   /**
     * The `RawListQuestion` type.
     */
-  var rawList: RawListQuestion[T] = js.native
+  var rawList: RawListQuestion[T]
 }
 object QuestionMap {
   
@@ -78,7 +76,7 @@ object QuestionMap {
   }
   
   @scala.inline
-  implicit class QuestionMapMutableBuilder[Self <: QuestionMap[_], T /* <: Answers */] (val x: Self with QuestionMap[T]) extends AnyVal {
+  implicit class QuestionMapMutableBuilder[Self <: QuestionMap[?], T /* <: Answers */] (val x: Self & QuestionMap[T]) extends AnyVal {
     
     @scala.inline
     def setCheckbox(value: CheckboxQuestion[T]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])

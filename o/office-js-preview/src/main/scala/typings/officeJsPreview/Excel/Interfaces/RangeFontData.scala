@@ -7,11 +7,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Single
 import typings.officeJsPreview.officeJsPreviewStrings.SingleAccountant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeFont.toJSON()`. */
-@js.native
 trait RangeFontData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait RangeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Double] = js.native
+  var tintAndShade: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait RangeFontData extends StObject {
     */
   var underline: js.UndefOr[
     RangeUnderlineStyle | None | Single | typings.officeJsPreview.officeJsPreviewStrings.Double | SingleAccountant | DoubleAccountant
-  ] = js.native
+  ] = js.undefined
 }
 object RangeFontData {
   

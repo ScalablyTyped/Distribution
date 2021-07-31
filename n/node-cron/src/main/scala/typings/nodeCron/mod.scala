@@ -3,23 +3,22 @@ package typings.nodeCron
 import typings.tzOffset.mod.Timezone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-cron", "schedule")
+  @JSImport("node-cron", JSImport.Namespace)
   @js.native
-  def schedule(cronExpression: String, func: js.Function0[Unit]): ScheduledTask = js.native
-  @JSImport("node-cron", "schedule")
-  @js.native
-  def schedule(cronExpression: String, func: js.Function0[Unit], options: ScheduleOptions): ScheduledTask = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-cron", "validate")
-  @js.native
-  def validate(cronExpression: String): Boolean = js.native
+  @scala.inline
+  def schedule(cronExpression: String, func: js.Function0[Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  @scala.inline
+  def schedule(cronExpression: String, func: js.Function0[Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   
-  @js.native
+  @scala.inline
+  def validate(cronExpression: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cronExpression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait ScheduleOptions extends StObject {
     
     /**
@@ -27,12 +26,12 @@ object mod {
       *
       * Defaults to `true`
       */
-    var scheduled: js.UndefOr[Boolean] = js.native
+    var scheduled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timezone that is used for job scheduling
       */
-    var timezone: js.UndefOr[Timezone] = js.native
+    var timezone: js.UndefOr[Timezone] = js.undefined
   }
   object ScheduleOptions {
     
@@ -59,16 +58,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ScheduledTask extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getStatus(): String = js.native
+    def getStatus(): String
     
-    def start(): this.type = js.native
+    def start(): this.type
     
-    def stop(): this.type = js.native
+    def stop(): this.type
   }
   object ScheduledTask {
     

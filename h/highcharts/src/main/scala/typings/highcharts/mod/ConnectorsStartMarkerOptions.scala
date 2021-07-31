@@ -2,51 +2,49 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorsStartMarkerOptions extends StObject {
   
   /**
     * (Gantt) Horizontal alignment of the markers relative to the points.
     */
-  var align: js.UndefOr[String | AlignValue] = js.native
+  var align: js.UndefOr[String | AlignValue] = js.undefined
   
   /**
     * (Gantt) Set the color of the connector markers. By default this is the
     * same as the connector color.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Gantt) Enable markers for the connectors.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Set the height of the connector markers. If not supplied, this is
     * inferred from the marker radius.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Whether or not to draw the markers inside the points.
     */
-  var inside: js.UndefOr[Boolean] = js.native
+  var inside: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Set the line/border color of the connector markers. By default
     * this is the same as the marker color.
     */
-  var lineColor: js.UndefOr[ColorString] = js.native
+  var lineColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Gantt) Set the line/border width of the pathfinder markers.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set the radius of the connector markers. The default is
@@ -54,23 +52,23 @@ trait ConnectorsStartMarkerOptions extends StObject {
     *
     * Setting marker.width and marker.height will override this setting.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set the symbol of the connector start markers.
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Vertical alignment of the markers relative to the points.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Gantt) Set the width of the connector markers. If not supplied, this is
     * inferred from the marker radius.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ConnectorsStartMarkerOptions {
   

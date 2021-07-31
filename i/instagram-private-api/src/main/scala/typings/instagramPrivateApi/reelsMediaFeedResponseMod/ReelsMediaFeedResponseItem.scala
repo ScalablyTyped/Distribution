@@ -2,95 +2,93 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseItem extends StObject {
   
-  var ad_action: js.UndefOr[String] = js.native
+  var ad_action: js.UndefOr[String] = js.undefined
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: Null = js.native
+  var caption: Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var caption_position: Double = js.native
+  var caption_position: Double
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var device_timestamp: String = js.native
+  var device_timestamp: String
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: Boolean = js.native
+  var has_audio: Boolean
   
-  var has_shared_to_fb: Double = js.native
+  var has_shared_to_fb: Double
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: ReelsMediaFeedResponseImageVersions2 = js.native
+  var image_versions2: ReelsMediaFeedResponseImageVersions2
   
-  var imported_taken_at: js.UndefOr[Double] = js.native
+  var imported_taken_at: js.UndefOr[Double] = js.undefined
   
-  var is_dash_eligible: Double = js.native
+  var is_dash_eligible: Double
   
-  var is_reel_media: Boolean = js.native
+  var is_reel_media: Boolean
   
-  var link_text: js.UndefOr[String] = js.native
+  var link_text: js.UndefOr[String] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var number_of_qualities: Double = js.native
+  var number_of_qualities: Double
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var reel_mentions: js.UndefOr[js.Array[ReelsMediaFeedResponseReelMentionsItem]] = js.native
+  var reel_mentions: js.UndefOr[js.Array[ReelsMediaFeedResponseReelMentionsItem]] = js.undefined
   
-  var show_one_tap_fb_share_tooltip: Boolean = js.native
+  var show_one_tap_fb_share_tooltip: Boolean
   
-  var story_countdowns: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCountdownsItem]] = js.native
+  var story_countdowns: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCountdownsItem]] = js.undefined
   
-  var story_cta: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCtaItem]] = js.native
+  var story_cta: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCtaItem]] = js.undefined
   
-  var story_polls: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryPollsItem]] = js.native
+  var story_polls: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryPollsItem]] = js.undefined
   
-  var story_questions: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuestionsItem]] = js.native
+  var story_questions: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuestionsItem]] = js.undefined
   
-  var story_quizs: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuizsItem]] = js.native
+  var story_quizs: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuizsItem]] = js.undefined
   
-  var story_sliders: js.UndefOr[js.Array[ReelsMediaFeedResponseStorySlidersItem]] = js.native
+  var story_sliders: js.UndefOr[js.Array[ReelsMediaFeedResponseStorySlidersItem]] = js.undefined
   
-  var supports_reel_reactions: Boolean = js.native
+  var supports_reel_reactions: Boolean
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var user: ReelsMediaFeedResponseUser = js.native
+  var user: ReelsMediaFeedResponseUser
   
-  var video_codec: String = js.native
+  var video_codec: String
   
-  var video_dash_manifest: String = js.native
+  var video_dash_manifest: String
   
-  var video_duration: Double = js.native
+  var video_duration: Double
   
-  var video_versions: js.Array[ReelsMediaFeedResponseVideoVersionsItem] = js.native
+  var video_versions: js.Array[ReelsMediaFeedResponseVideoVersionsItem]
 }
 object ReelsMediaFeedResponseItem {
   

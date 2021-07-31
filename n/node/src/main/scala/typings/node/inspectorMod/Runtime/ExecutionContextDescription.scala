@@ -2,34 +2,32 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of an isolated world.
   */
-@js.native
 trait ExecutionContextDescription extends StObject {
   
   /**
     * Embedder-specific auxiliary data.
     */
-  var auxData: js.UndefOr[js.Object] = js.native
+  var auxData: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Unique id of the execution context. It can be used to specify in which execution context script evaluation should be performed.
     */
-  var id: ExecutionContextId = js.native
+  var id: ExecutionContextId
   
   /**
     * Human readable name describing given context.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Execution context origin.
     */
-  var origin: String = js.native
+  var origin: String
 }
 object ExecutionContextDescription {
   

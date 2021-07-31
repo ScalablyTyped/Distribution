@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryPassages. */
-@js.native
 trait QueryPassages extends StObject {
   
   /** The unique identifier of the document from which the passage has been extracted. */
-  var document_id: js.UndefOr[String] = js.native
+  var document_id: js.UndefOr[String] = js.undefined
   
   /** The position of the last character of the extracted passage in the originating field. */
-  var end_offset: js.UndefOr[Double] = js.native
+  var end_offset: js.UndefOr[Double] = js.undefined
   
   /** The label of the field from which the passage has been extracted. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** The confidence score of the passages's analysis. A higher score indicates greater confidence. */
-  var passage_score: js.UndefOr[Double] = js.native
+  var passage_score: js.UndefOr[Double] = js.undefined
   
   /** The content of the extracted passage. */
-  var passage_text: js.UndefOr[String] = js.native
+  var passage_text: js.UndefOr[String] = js.undefined
   
   /** The position of the first character of the extracted passage in the originating field. */
-  var start_offset: js.UndefOr[Double] = js.native
+  var start_offset: js.UndefOr[Double] = js.undefined
 }
 object QueryPassages {
   

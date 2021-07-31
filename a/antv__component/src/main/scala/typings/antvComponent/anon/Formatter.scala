@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formatter extends StObject {
   
-  var align: String = js.native
+  var align: String
   
-  var formatter: js.Any = js.native
+  var formatter: js.Any
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var style: FontFamilyFontSize = js.native
+  var style: FontFamilyFontSize
 }
 object Formatter {
   

@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaTypings.specMod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Normalized extends StObject {
   
-  var normalized: NormalizedUnitSpecTopLeve | NormalizedLayerSpecTopLev | GenericFacetSpecNormalize | GenericConcatSpecGenericS | GenericVConcatSpecGeneric | GenericHConcatSpecGeneric = js.native
+  var normalized: NormalizedUnitSpecTopLeve | NormalizedLayerSpecTopLev | GenericFacetSpecNormalize | GenericConcatSpecGenericS | GenericVConcatSpecGeneric | GenericHConcatSpecGeneric
   
-  var spec: Spec = js.native
+  var spec: Spec
 }
 object Normalized {
   

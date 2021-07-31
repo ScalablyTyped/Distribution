@@ -2,10 +2,13 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promise {
+  
+  @JSImport("selenium-webdriver", "promise")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Wraps a function that expects a node-style callback as its final
@@ -14,16 +17,14 @@ object promise {
     * argument. The callback will the resolve or reject the returned promise,
     * based on its arguments.
     */
-  @JSImport("selenium-webdriver", "promise.checkedNodeCall")
-  @js.native
-  def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = js.native
+  @scala.inline
+  def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkedNodeCall")(fn.asInstanceOf[js.Any], varArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   /**
     * Creates a promise that will be resolved at a set time in the future.
     */
-  @JSImport("selenium-webdriver", "promise.delayed")
-  @js.native
-  def delayed(ms: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def delayed(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delayed")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Calls a function for each element in an array, and if the function returns
@@ -38,34 +39,30 @@ object promise {
     * first failure will be reported; all subsequent errors will be silently
     * ignored.
     */
-  @JSImport("selenium-webdriver", "promise.filter")
-  @js.native
+  @scala.inline
   def filter[T, V](
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.filter")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def filter[T, V](
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
     // value
   optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.filter")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def filter[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.filter")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def filter[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
     // value
   optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
   
   /**
     * Returns a promise that will be resolved with the input value in a
@@ -82,9 +79,8 @@ object promise {
     *     value['self'] = value;
     *     promise.fullyResolved(value);  // Stack overflow.
     */
-  @JSImport("selenium-webdriver", "promise.fullyResolved")
-  @js.native
-  def fullyResolved(value: js.Any): js.Promise[_] = js.native
+  @scala.inline
+  def fullyResolved(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fullyResolved")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   // region Functions
   /**
@@ -92,9 +88,8 @@ object promise {
     * Any object whose 'then' property is a function will be considered a
     * promise.
     */
-  @JSImport("selenium-webdriver", "promise.isPromise")
-  @js.native
-  def isPromise(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isPromise(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Calls a function for each element in an array and inserts the result into a
@@ -109,32 +104,28 @@ object promise {
     * Only the first failure will be reported; all subsequent errors will be
     * silently ignored.
     */
-  @JSImport("selenium-webdriver", "promise.map")
-  @js.native
+  @scala.inline
   def map[T, V](
     arr: js.Array[T],
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.map")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def map[T, V](
     arr: js.Array[T],
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
     optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.map")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def map[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  @JSImport("selenium-webdriver", "promise.map")
-  @js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  @scala.inline
   def map[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
     optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
   
   /**
     * Registers a listener to invoke when a promise is resolved, regardless
@@ -166,7 +157,6 @@ object promise {
     *       throw Error('two');  // Hides Error: one
     *     });
     */
-  @JSImport("selenium-webdriver", "promise.thenFinally")
-  @js.native
-  def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
+  @scala.inline
+  def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenFinally")(promise.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
 }

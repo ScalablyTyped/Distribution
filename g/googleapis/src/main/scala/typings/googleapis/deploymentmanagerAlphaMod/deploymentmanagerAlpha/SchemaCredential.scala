@@ -2,31 +2,29 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The credential used by Deployment Manager and TypeProvider. Only one of the
   * options is permitted.
   */
-@js.native
 trait SchemaCredential extends StObject {
   
   /**
     * Basic Auth Credential, only used by TypeProvider.
     */
-  var basicAuth: js.UndefOr[SchemaBasicAuth] = js.native
+  var basicAuth: js.UndefOr[SchemaBasicAuth] = js.undefined
   
   /**
     * Service Account Credential, only used by Deployment.
     */
-  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
   
   /**
     * Specify to use the project default credential, only supported by
     * Deployment.
     */
-  var useProjectDefault: js.UndefOr[Boolean] = js.native
+  var useProjectDefault: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCredential {
   

@@ -9,27 +9,25 @@ import typings.mjmlReact.mjmlReactStrings.ltr
 import typings.mjmlReact.mjmlReactStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlSectionProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[BackgroundRepeatProperty] = js.native
+  var backgroundRepeat: js.UndefOr[BackgroundRepeatProperty] = js.undefined
   
-  var backgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.native
+  var backgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
   
-  var backgroundUrl: js.UndefOr[String] = js.native
+  var backgroundUrl: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[ltr | rtl] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlignProperty] = js.native
+  var textAlign: js.UndefOr[TextAlignProperty] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
 }
 object MjmlSectionProps {
   

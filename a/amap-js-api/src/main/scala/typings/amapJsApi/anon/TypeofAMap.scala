@@ -9,7 +9,6 @@ import typings.amapJsApi.AMap.LocationValue
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -195,7 +194,7 @@ trait TypeofAMap extends StObject {
     typings.amapJsApi.AMap.Text[js.Object]
   ] = js.native
   
-  val TileLayer: TypeofTileLayer with (Instantiable1[
+  val TileLayer: TypeofTileLayer & (Instantiable1[
     /* options */ js.UndefOr[typings.amapJsApi.AMap.TileLayer.Options], 
     typings.amapJsApi.AMap.TileLayer
   ]) = js.native

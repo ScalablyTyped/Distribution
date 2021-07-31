@@ -3,7 +3,6 @@ package typings.writeFileWebpackPlugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,44 +14,43 @@ object mod {
     def this(userOptions: UserOptionsType) = this()
   }
   
-  @js.native
   trait UserOptionsType extends StObject {
     
     /**
       * Atomically replace files content (i.e., to prevent programs like test watchers from seeing partial files).
       * @default true
       */
-    var atomicReplace: js.UndefOr[Boolean] = js.native
+    var atomicReplace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stop writing files on webpack errors
       * @default true
       */
-    var exitOnErrors: js.UndefOr[Boolean] = js.native
+    var exitOnErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces the execution of the plugin regardless of being using `webpack-dev-server` or not
       * @default false
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Logs names of the files that are being written (or skipped because they have not changed)
       * @default true
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A regular expression or function used to test if file should be written.
       * When not present, all bundle will be written.
       */
-    var test: js.UndefOr[RegExp] = js.native
+    var test: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Use hash index to write only files that have changed since the last iteration.
       * @default true
       */
-    var useHashIndex: js.UndefOr[Boolean] = js.native
+    var useHashIndex: js.UndefOr[Boolean] = js.undefined
   }
   object UserOptionsType {
     

@@ -3,34 +3,32 @@ package typings.twitterForWeb
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for an object representing the event is passed to your JavaScript callback.
   */
-@js.native
 trait TwitterIntentEvent extends StObject {
   
   /**
     * Key/value pairs relevant to the Web Intent just actioned.
     */
-  var data: TwitterIntentEventData = js.native
+  var data: TwitterIntentEventData
   
   /**
     * Extended detail indicating where in a widget a user clicked. For example, button, count, or screen name portions of Tweet button or Follow button integrations, or tweet actions within embedded Tweets.
     */
-  var region: String = js.native
+  var region: String
   
   /**
     * The DOM node where the widget is instantiated. Most like an iframe, but may also be the original embed code element if the widget failed to initialize, or another sandboxed element. Use this value to differentiate between different intents or buttons on the same page.
     */
-  var target: HTMLElement = js.native
+  var target: HTMLElement
   
   /**
     * The type of the event.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TwitterIntentEvent {
   

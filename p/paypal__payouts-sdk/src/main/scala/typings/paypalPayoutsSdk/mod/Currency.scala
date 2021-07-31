@@ -2,15 +2,13 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currency extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var value: String = js.native
+  var value: String
 }
 object Currency {
   

@@ -4,20 +4,18 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableGeneratorOptions> */
-@js.native
 trait PartialStylableGeneratorO extends StObject {
   
-  var afterTransform: js.UndefOr[js.Any] = js.native
+  var afterTransform: js.UndefOr[js.Any] = js.undefined
   
-  var experimentalHMR: js.UndefOr[Boolean] = js.native
+  var experimentalHMR: js.UndefOr[Boolean] = js.undefined
   
-  var includeCSSInJS: js.UndefOr[Boolean] = js.native
+  var includeCSSInJS: js.UndefOr[Boolean] = js.undefined
   
-  var runtimeStylesheetId: js.UndefOr[module | namespace] = js.native
+  var runtimeStylesheetId: js.UndefOr[module | namespace] = js.undefined
 }
 object PartialStylableGeneratorO {
   

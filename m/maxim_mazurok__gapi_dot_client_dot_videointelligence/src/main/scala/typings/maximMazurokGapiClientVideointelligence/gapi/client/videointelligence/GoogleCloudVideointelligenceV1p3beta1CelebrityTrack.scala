@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1CelebrityTrack extends StObject {
   
   /** Top N match of the celebrities for the face in this track. */
-  var celebrities: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity]] = js.native
+  var celebrities: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity]] = js.undefined
   
   /** A track of a person's face. */
-  var faceTrack: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1Track] = js.native
+  var faceTrack: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1Track] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1CelebrityTrack {
   

@@ -2,7 +2,6 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait ReceiverType extends StObject
 object ReceiverType extends StObject {
   
   @js.native
-  sealed trait CAST extends ReceiverType
+  sealed trait CAST
+    extends StObject
+       with ReceiverType
   
   @js.native
-  sealed trait CUSTOM extends ReceiverType
+  sealed trait CUSTOM
+    extends StObject
+       with ReceiverType
   
   @js.native
-  sealed trait DIAL extends ReceiverType
+  sealed trait DIAL
+    extends StObject
+       with ReceiverType
   
   @js.native
-  sealed trait HANGOUT extends ReceiverType
+  sealed trait HANGOUT
+    extends StObject
+       with ReceiverType
 }

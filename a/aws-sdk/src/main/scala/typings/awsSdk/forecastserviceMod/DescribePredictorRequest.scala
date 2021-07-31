@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePredictorRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the predictor that you want information about.
     */
-  var PredictorArn: Arn = js.native
+  var PredictorArn: Arn
 }
 object DescribePredictorRequest {
   

@@ -10,9 +10,9 @@ TypeScript typings for AI Platform Training & Prediction API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.ml |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 53 |
+| # downloads        | 1473 |
 | # stars            | 0 |
 
 ## Links

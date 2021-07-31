@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientServicemanagement.anon.QuotaUser
 import typings.maximMazurokGapiClientServicemanagement.anon.RolloutId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

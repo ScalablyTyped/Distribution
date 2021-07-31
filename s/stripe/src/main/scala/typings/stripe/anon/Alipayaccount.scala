@@ -2,19 +2,17 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alipayaccount extends StObject {
   
-  var alipay_account: js.UndefOr[Double] = js.native
+  var alipay_account: js.UndefOr[Double] = js.undefined
   
-  var bitcoin_receiver: js.UndefOr[Double] = js.native
+  var bitcoin_receiver: js.UndefOr[Double] = js.undefined
   
-  var card: Double = js.native
+  var card: Double
   
-  var customer_bank_account: js.UndefOr[Double] = js.native
+  var customer_bank_account: js.UndefOr[Double] = js.undefined
 }
 object Alipayaccount {
   

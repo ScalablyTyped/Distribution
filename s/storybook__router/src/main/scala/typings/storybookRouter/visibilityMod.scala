@@ -4,21 +4,22 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visibilityMod {
   
-  @JSImport("@storybook/router/dist/visibility", "ToggleVisibility")
+  @JSImport("@storybook/router/dist/visibility", JSImport.Namespace)
   @js.native
-  def ToggleVisibility(hasHiddenChildren: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def ToggleVisibility(hasHiddenChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleVisibility")(hasHiddenChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
   }
   object Props {
     

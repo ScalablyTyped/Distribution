@@ -17,17 +17,15 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.wrap
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexPropsTypeMod {
   
-  @js.native
   trait FlexItemPropsType extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object FlexItemPropsType {
     
@@ -54,22 +52,21 @@ object flexPropsTypeMod {
     }
   }
   
-  @js.native
   trait FlexPropsType extends StObject {
     
-    var align: js.UndefOr[start | center | end | baseline | stretch] = js.native
+    var align: js.UndefOr[start | center | end | baseline | stretch] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var direction: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.native
+    var direction: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var justify: js.UndefOr[start | end | center | between | around] = js.native
+    var justify: js.UndefOr[start | end | center | between | around] = js.undefined
     
     var wrap: js.UndefOr[
         nowrap | typings.antDesignReactNative.antDesignReactNativeStrings.wrap | `wrap-reverse`
-      ] = js.native
+      ] = js.undefined
   }
   object FlexPropsType {
     

@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List Tags Response.
   */
-@js.native
 trait SchemaListTagsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * All GTM Tags of a GTM Container.
     */
-  var tag: js.UndefOr[js.Array[SchemaTag]] = js.native
+  var tag: js.UndefOr[js.Array[SchemaTag]] = js.undefined
 }
 object SchemaListTagsResponse {
   

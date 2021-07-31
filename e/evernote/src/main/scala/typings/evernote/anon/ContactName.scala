@@ -2,21 +2,19 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactName extends StObject {
   
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var hasSharedNotebook: js.UndefOr[Boolean] = js.native
+  var hasSharedNotebook: js.UndefOr[Boolean] = js.undefined
   
-  var joinedUserCount: js.UndefOr[Double] = js.native
+  var joinedUserCount: js.UndefOr[Double] = js.undefined
   
-  var notebookDisplayName: js.UndefOr[String] = js.native
+  var notebookDisplayName: js.UndefOr[String] = js.undefined
 }
 object ContactName {
   

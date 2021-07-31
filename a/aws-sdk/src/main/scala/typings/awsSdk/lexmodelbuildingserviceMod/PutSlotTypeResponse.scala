@@ -2,66 +2,64 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSlotTypeResponse extends StObject {
   
   /**
     * Checksum of the $LATEST version of the slot type.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     *  True if a new version of the slot type was created. If the createVersion field was not specified in the request, the createVersion field is set to false in the response.
     */
-  var createVersion: js.UndefOr[Boolean] = js.native
+  var createVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date that the slot type was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the slot type.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * A list of EnumerationValue objects that defines the values that the slot type can take.
     */
-  var enumerationValues: js.UndefOr[EnumerationValues] = js.native
+  var enumerationValues: js.UndefOr[EnumerationValues] = js.undefined
   
   /**
     * The date that the slot type was updated. When you create a slot type, the creation date and last update date are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the slot type.
     */
-  var name: js.UndefOr[SlotTypeName] = js.native
+  var name: js.UndefOr[SlotTypeName] = js.undefined
   
   /**
     * The built-in slot type used as the parent of the slot type.
     */
-  var parentSlotTypeSignature: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.native
+  var parentSlotTypeSignature: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.undefined
   
   /**
     * Configuration information that extends the parent built-in slot type.
     */
-  var slotTypeConfigurations: js.UndefOr[SlotTypeConfigurations] = js.native
+  var slotTypeConfigurations: js.UndefOr[SlotTypeConfigurations] = js.undefined
   
   /**
     * The slot resolution strategy that Amazon Lex uses to determine the value of the slot. For more information, see PutSlotType.
     */
-  var valueSelectionStrategy: js.UndefOr[SlotValueSelectionStrategy] = js.native
+  var valueSelectionStrategy: js.UndefOr[SlotValueSelectionStrategy] = js.undefined
   
   /**
     * The version of the slot type. For a new slot type, the version is always $LATEST. 
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object PutSlotTypeResponse {
   

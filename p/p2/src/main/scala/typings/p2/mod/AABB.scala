@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "AABB")
@@ -23,17 +22,17 @@ class AABB () extends StObject {
   def overlapsRay(ray: Ray): Double = js.native
   
   def setFromPoints(points: js.Array[js.Tuple2[Double, Double]], position: js.Tuple2[Double, Double]): Unit = js.native
-  def setFromPoints(
-    points: js.Array[js.Tuple2[Double, Double]],
-    position: js.Tuple2[Double, Double],
-    angle: js.UndefOr[scala.Nothing],
-    skinSize: Double
-  ): Unit = js.native
   def setFromPoints(points: js.Array[js.Tuple2[Double, Double]], position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def setFromPoints(
     points: js.Array[js.Tuple2[Double, Double]],
     position: js.Tuple2[Double, Double],
     angle: Double,
+    skinSize: Double
+  ): Unit = js.native
+  def setFromPoints(
+    points: js.Array[js.Tuple2[Double, Double]],
+    position: js.Tuple2[Double, Double],
+    angle: Unit,
     skinSize: Double
   ): Unit = js.native
   

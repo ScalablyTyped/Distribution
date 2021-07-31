@@ -2,24 +2,22 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.set method
   */
-@js.native
 trait InstanceSetOptions extends StObject {
   
   /**
     * If set to true, field and virtual setters will be ignored
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Clear all previously set data values
     */
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
 }
 object InstanceSetOptions {
   

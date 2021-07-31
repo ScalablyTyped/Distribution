@@ -2,39 +2,37 @@ package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryEditReelResponseUser extends StObject {
   
-  var allowed_commenter_type: js.UndefOr[String] = js.native
+  var allowed_commenter_type: js.UndefOr[String] = js.undefined
   
-  var can_boost_post: js.UndefOr[Boolean] = js.native
+  var can_boost_post: js.UndefOr[Boolean] = js.undefined
   
-  var can_see_organic_insights: js.UndefOr[Boolean] = js.native
+  var can_see_organic_insights: js.UndefOr[Boolean] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: js.UndefOr[Boolean] = js.native
+  var is_unpublished: js.UndefOr[Boolean] = js.undefined
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var reel_auto_archive: js.UndefOr[String] = js.native
+  var reel_auto_archive: js.UndefOr[String] = js.undefined
   
-  var show_insights_terms: js.UndefOr[Boolean] = js.native
+  var show_insights_terms: js.UndefOr[Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object HighlightsRepositoryEditReelResponseUser {
   

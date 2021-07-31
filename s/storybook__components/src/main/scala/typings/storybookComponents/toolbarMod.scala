@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
@@ -12,10 +11,9 @@ object toolbarMod {
   @js.native
   val Toolbar: FunctionComponent[ToolbarProps] = js.native
   
-  @js.native
   trait BarProps extends StObject {
     
-    var border: js.UndefOr[Boolean] = js.native
+    var border: js.UndefOr[Boolean] = js.undefined
   }
   object BarProps {
     
@@ -36,12 +34,11 @@ object toolbarMod {
     }
   }
   
-  @js.native
   trait EjectProps extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var storyId: js.UndefOr[String] = js.native
+    var storyId: js.UndefOr[String] = js.undefined
   }
   object EjectProps {
     
@@ -68,14 +65,25 @@ object toolbarMod {
     }
   }
   
-  type ToolbarProps = BarProps with ZoomProps with EjectProps
+  trait ToolbarProps
+    extends StObject
+       with BarProps
+       with ZoomProps
+       with EjectProps
+  object ToolbarProps {
+    
+    @scala.inline
+    def apply(resetZoom: () => Unit, zoom: Double => Unit): ToolbarProps = {
+      val __obj = js.Dynamic.literal(resetZoom = js.Any.fromFunction0(resetZoom), zoom = js.Any.fromFunction1(zoom))
+      __obj.asInstanceOf[ToolbarProps]
+    }
+  }
   
-  @js.native
   trait ZoomProps extends StObject {
     
-    def resetZoom(): Unit = js.native
+    def resetZoom(): Unit
     
-    def zoom(`val`: Double): Unit = js.native
+    def zoom(`val`: Double): Unit
   }
   object ZoomProps {
     

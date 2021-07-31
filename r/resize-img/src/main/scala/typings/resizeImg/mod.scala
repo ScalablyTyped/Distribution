@@ -3,21 +3,22 @@ package typings.resizeImg
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(input: Buffer, options: ResizeImgOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  
   @JSImport("resize-img", JSImport.Namespace)
   @js.native
-  def apply(input: Buffer, options: ResizeImgOptions): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ResizeImgOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ResizeImgOptions {
     

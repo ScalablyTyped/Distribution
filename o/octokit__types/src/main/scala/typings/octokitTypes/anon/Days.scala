@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Days extends StObject {
   
-  var days: js.Array[Double] = js.native
+  var days: js.Array[Double]
   
-  var total: Double = js.native
+  var total: Double
   
-  var week: Double = js.native
+  var week: Double
 }
 object Days {
   

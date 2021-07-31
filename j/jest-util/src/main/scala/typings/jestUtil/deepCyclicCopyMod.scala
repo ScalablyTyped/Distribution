@@ -4,30 +4,28 @@ import typings.std.Set
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deepCyclicCopyMod {
   
-  @JSImport("jest-util/build/deepCyclicCopy", JSImport.Default)
+  @JSImport("jest-util/build/deepCyclicCopy", JSImport.Namespace)
   @js.native
-  def default[T](value: T): T = js.native
-  @JSImport("jest-util/build/deepCyclicCopy", JSImport.Default)
-  @js.native
-  def default[T](value: T, options: js.UndefOr[scala.Nothing], cycles: WeakMap[_, _]): T = js.native
-  @JSImport("jest-util/build/deepCyclicCopy", JSImport.Default)
-  @js.native
-  def default[T](value: T, options: DeepCyclicCopyOptions): T = js.native
-  @JSImport("jest-util/build/deepCyclicCopy", JSImport.Default)
-  @js.native
-  def default[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[_, _]): T = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def default[T](value: T, options: Unit, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def default[T](value: T, options: DeepCyclicCopyOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def default[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   trait DeepCyclicCopyOptions extends StObject {
     
-    var blacklist: js.UndefOr[Set[String]] = js.native
+    var blacklist: js.UndefOr[Set[String]] = js.undefined
     
-    var keepPrototype: js.UndefOr[Boolean] = js.native
+    var keepPrototype: js.UndefOr[Boolean] = js.undefined
   }
   object DeepCyclicCopyOptions {
     

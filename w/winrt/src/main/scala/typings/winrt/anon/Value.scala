@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Media.Capture.PowerlineFrequency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
   
-  var value: PowerlineFrequency = js.native
+  var value: PowerlineFrequency
 }
 object Value {
   

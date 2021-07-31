@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,16 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In case a stream is open with read-write access only one instance of the stream can exist.
   */
-@js.native
 trait StorageStream
-  extends XStream
+  extends StObject
+     with XStream
      with XComponent
      with XPropertySet
      with XSeekable
      with XEncryptionProtectedSource {
   
   /** specifies if the stream should be compressed next time it is stored. */
-  var IsCompressed: Boolean = js.native
+  var IsCompressed: Boolean
   
   /**
     * allows to detect if the stream is encrypted.
@@ -40,13 +39,13 @@ trait StorageStream
     * If somebody sets a password explicitly by using {@link XEncryptionProtectedSource} interface the value is automatically set to `TRUE` . If the
     * interface is used to remove the encryption - the value is automatically set to `FALSE` .
     */
-  var IsEncrypted: Boolean = js.native
+  var IsEncrypted: Boolean
   
   /** allows to get and set media type of the stream. */
-  var MediaType: String = js.native
+  var MediaType: String
   
   /** allows to detect size of the stream in bytes. */
-  var Size: Double = js.native
+  var Size: Double
   
   /**
     * specifies whether the stream will become encrypted next time the common storage password holder is committed.
@@ -64,7 +63,7 @@ trait StorageStream
     * In case stream is encrypted one and the value is set to `TRUE` the stream becomes non-encrypted until the common storage password holder is committed.
     * The data about previously set password ( if any ) will be removed and the stream can be accessed as non-encrypted stream.
     */
-  var UseCommonStoragePasswordEncryption: Boolean = js.native
+  var UseCommonStoragePasswordEncryption: Boolean
 }
 object StorageStream {
   

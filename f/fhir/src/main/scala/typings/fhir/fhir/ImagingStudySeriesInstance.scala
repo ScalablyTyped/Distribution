@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single SOP instance from the series
   */
-@js.native
-trait ImagingStudySeriesInstance extends BackboneElement {
+trait ImagingStudySeriesInstance
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'number'.
     */
-  var _number: js.UndefOr[Element] = js.native
+  var _number: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sopClass'.
     */
-  var _sopClass: js.UndefOr[Element] = js.native
+  var _sopClass: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uid'.
     */
-  var _uid: js.UndefOr[Element] = js.native
+  var _uid: js.UndefOr[Element] = js.undefined
   
   /**
     * The number of this instance in the series
     */
-  var number: js.UndefOr[unsignedInt] = js.native
+  var number: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * DICOM class type
     */
-  var sopClass: oid = js.native
+  var sopClass: oid
   
   /**
     * Description of instance
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Formal DICOM identifier for this instance
     */
-  var uid: oid = js.native
+  var uid: oid
 }
 object ImagingStudySeriesInstance {
   

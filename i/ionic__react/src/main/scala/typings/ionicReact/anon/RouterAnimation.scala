@@ -6,19 +6,17 @@ import typings.ionicReact.routerDirectionMod.RouterDirection
 import typings.ionicReact.routerOptionsMod.RouterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterAnimation extends StObject {
   
-  var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  var routerDirection: js.UndefOr[RouterDirection] = js.native
+  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
   
-  var routerLink: js.UndefOr[String] = js.native
+  var routerLink: js.UndefOr[String] = js.undefined
   
-  var routerOptions: js.UndefOr[RouterOptions] = js.native
+  var routerOptions: js.UndefOr[RouterOptions] = js.undefined
 }
 object RouterAnimation {
   

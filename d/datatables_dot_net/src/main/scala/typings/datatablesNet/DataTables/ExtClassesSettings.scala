@@ -2,199 +2,197 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtClassesSettings extends StObject {
   
   /**
     * Default Value:
     * dataTables_filter
     */
-  var sFilter: js.UndefOr[String] = js.native
+  var sFilter: js.UndefOr[String] = js.undefined
   
-  var sFilterInput: js.UndefOr[String] = js.native
+  var sFilterInput: js.UndefOr[String] = js.undefined
   
-  var sFooterTH: js.UndefOr[String] = js.native
+  var sFooterTH: js.UndefOr[String] = js.undefined
   
-  var sHeaderTH: js.UndefOr[String] = js.native
+  var sHeaderTH: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_info
     */
-  var sInfo: js.UndefOr[String] = js.native
+  var sInfo: js.UndefOr[String] = js.undefined
   
-  var sJUIFooter: js.UndefOr[String] = js.native
+  var sJUIFooter: js.UndefOr[String] = js.undefined
   
-  var sJUIHeader: js.UndefOr[String] = js.native
+  var sJUIHeader: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_length
     */
-  var sLength: js.UndefOr[String] = js.native
+  var sLength: js.UndefOr[String] = js.undefined
   
-  var sLengthSelect: js.UndefOr[String] = js.native
+  var sLengthSelect: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * no-footer
     */
-  var sNoFooter: js.UndefOr[String] = js.native
+  var sNoFooter: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * paginate_button
     */
-  var sPageButton: js.UndefOr[String] = js.native
+  var sPageButton: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * current
     */
-  var sPageButtonActive: js.UndefOr[String] = js.native
+  var sPageButtonActive: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * disabled
     */
-  var sPageButtonDisabled: js.UndefOr[String] = js.native
+  var sPageButtonDisabled: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_paginate paging_
     */
-  var sPaging: js.UndefOr[String] = js.native
+  var sPaging: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_processing
     */
-  var sProcessing: js.UndefOr[String] = js.native
+  var sProcessing: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_empty
     */
-  var sRowEmpty: js.UndefOr[String] = js.native
+  var sRowEmpty: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scrollBody
     */
-  var sScrollBody: js.UndefOr[String] = js.native
+  var sScrollBody: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scrollFoot
     */
-  var sScrollFoot: js.UndefOr[String] = js.native
+  var sScrollFoot: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scrollFootInner
     */
-  var sScrollFootInner: js.UndefOr[String] = js.native
+  var sScrollFootInner: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scrollHead
     */
-  var sScrollHead: js.UndefOr[String] = js.native
+  var sScrollHead: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scrollHeadInner
     */
-  var sScrollHeadInner: js.UndefOr[String] = js.native
+  var sScrollHeadInner: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_scroll
     */
-  var sScrollWrapper: js.UndefOr[String] = js.native
+  var sScrollWrapper: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_asc
     */
-  var sSortAsc: js.UndefOr[String] = js.native
+  var sSortAsc: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_
     */
-  var sSortColumn: js.UndefOr[String] = js.native
+  var sSortColumn: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_desc
     */
-  var sSortDesc: js.UndefOr[String] = js.native
+  var sSortDesc: js.UndefOr[String] = js.undefined
   
-  var sSortIcon: js.UndefOr[String] = js.native
+  var sSortIcon: js.UndefOr[String] = js.undefined
   
-  var sSortJUI: js.UndefOr[String] = js.native
+  var sSortJUI: js.UndefOr[String] = js.undefined
   
-  var sSortJUIAsc: js.UndefOr[String] = js.native
+  var sSortJUIAsc: js.UndefOr[String] = js.undefined
   
-  var sSortJUIAscAllowed: js.UndefOr[String] = js.native
+  var sSortJUIAscAllowed: js.UndefOr[String] = js.undefined
   
-  var sSortJUIDesc: js.UndefOr[String] = js.native
+  var sSortJUIDesc: js.UndefOr[String] = js.undefined
   
-  var sSortJUIDescAllowed: js.UndefOr[String] = js.native
+  var sSortJUIDescAllowed: js.UndefOr[String] = js.undefined
   
-  var sSortJUIWrapper: js.UndefOr[String] = js.native
+  var sSortJUIWrapper: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting
     */
-  var sSortable: js.UndefOr[String] = js.native
+  var sSortable: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_asc_disabled
     */
-  var sSortableAsc: js.UndefOr[String] = js.native
+  var sSortableAsc: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_desc_disabled
     */
-  var sSortableDesc: js.UndefOr[String] = js.native
+  var sSortableDesc: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * sorting_disabled
     */
-  var sSortableNone: js.UndefOr[String] = js.native
+  var sSortableNone: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * even
     */
-  var sStripeEven: js.UndefOr[String] = js.native
+  var sStripeEven: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * odd
     */
-  var sStripeOdd: js.UndefOr[String] = js.native
+  var sStripeOdd: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTable
     */
-  var sTable: js.UndefOr[String] = js.native
+  var sTable: js.UndefOr[String] = js.undefined
   
   /**
     * Default Value:
     * dataTables_wrapper
     */
-  var sWrapper: js.UndefOr[String] = js.native
+  var sWrapper: js.UndefOr[String] = js.undefined
 }
 object ExtClassesSettings {
   

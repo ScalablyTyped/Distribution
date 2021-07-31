@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises")
@@ -36,7 +35,7 @@ class ResourceEnterprises protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaEnterprise] = js.native
   def create(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def create(params: ParamsResourceEnterprisesCreate): GaxiosPromise[SchemaEnterprise] = js.native
   def create(params: ParamsResourceEnterprisesCreate, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def create(
@@ -69,7 +68,7 @@ class ResourceEnterprises protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaEnterprise] = js.native
   def get(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def get(
@@ -100,7 +99,7 @@ class ResourceEnterprises protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(params: ParamsResourceEnterprisesPatch): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(params: ParamsResourceEnterprisesPatch, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def patch(

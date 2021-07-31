@@ -2,19 +2,17 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for BeginTransaction.
   */
-@js.native
 trait SchemaBeginTransactionRequest extends StObject {
   
   /**
     * Required. Options for the new transaction.
     */
-  var options: js.UndefOr[SchemaTransactionOptions] = js.native
+  var options: js.UndefOr[SchemaTransactionOptions] = js.undefined
 }
 object SchemaBeginTransactionRequest {
   

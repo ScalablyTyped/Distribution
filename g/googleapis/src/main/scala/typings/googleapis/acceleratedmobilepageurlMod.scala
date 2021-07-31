@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acceleratedmobilepageurlMod {
+  
+  @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object acceleratedmobilepageurlMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl", "acceleratedmobilepageurl")
-  @js.native
-  def acceleratedmobilepageurl(options: Options): Acceleratedmobilepageurl = js.native
-  @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl", "acceleratedmobilepageurl")
-  @js.native
-  def acceleratedmobilepageurl_v1(version: v1): Acceleratedmobilepageurl = js.native
+  @scala.inline
+  def acceleratedmobilepageurl(options: Options): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(options.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
+  
+  @scala.inline
+  def acceleratedmobilepageurl_v1(version: v1): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(version.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object acceleratedmobilepageurlMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object languageMod {
+  
+  @JSImport("googleapis/build/src/apis/language", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -118,9 +121,12 @@ object languageMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/language", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/language", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -164,22 +170,19 @@ object languageMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language(options: Options): Language = js.native
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language(options: typings.googleapis.languageV1beta1Mod.languageV1beta1.Options): typings.googleapis.languageV1beta1Mod.languageV1beta1.Language = js.native
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language(options: typings.googleapis.languageV1beta2Mod.languageV1beta2.Options): typings.googleapis.languageV1beta2Mod.languageV1beta2.Language = js.native
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language_v1(version: v1): Language = js.native
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language_v1beta1(version: v1beta1): typings.googleapis.languageV1beta1Mod.languageV1beta1.Language = js.native
-  @JSImport("googleapis/build/src/apis/language", "language")
-  @js.native
-  def language_v1beta2(version: v1beta2): typings.googleapis.languageV1beta2Mod.languageV1beta2.Language = js.native
+  @scala.inline
+  def language(options: Options): Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(options.asInstanceOf[js.Any]).asInstanceOf[Language]
+  @scala.inline
+  def language(options: typings.googleapis.languageV1beta1Mod.languageV1beta1.Options): typings.googleapis.languageV1beta1Mod.languageV1beta1.Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.languageV1beta1Mod.languageV1beta1.Language]
+  @scala.inline
+  def language(options: typings.googleapis.languageV1beta2Mod.languageV1beta2.Options): typings.googleapis.languageV1beta2Mod.languageV1beta2.Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.languageV1beta2Mod.languageV1beta2.Language]
+  
+  @scala.inline
+  def language_v1(version: v1): Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(version.asInstanceOf[js.Any]).asInstanceOf[Language]
+  
+  @scala.inline
+  def language_v1beta1(version: v1beta1): typings.googleapis.languageV1beta1Mod.languageV1beta1.Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.languageV1beta1Mod.languageV1beta1.Language]
+  
+  @scala.inline
+  def language_v1beta2(version: v1beta2): typings.googleapis.languageV1beta2Mod.languageV1beta2.Language = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.languageV1beta2Mod.languageV1beta2.Language]
 }

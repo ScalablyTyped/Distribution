@@ -5,10 +5,8 @@ import typings.firebase.firebaseStrings.none
 import typings.firebase.firebaseStrings.previous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SnapshotOptions extends StObject {
     * If omitted or set to 'none', `null` will be returned by default until the
     * server value becomes available.
     */
-  val serverTimestamps: js.UndefOr[estimate | previous | none] = js.native
+  val serverTimestamps: js.UndefOr[estimate | previous | none] = js.undefined
 }
 object SnapshotOptions {
   

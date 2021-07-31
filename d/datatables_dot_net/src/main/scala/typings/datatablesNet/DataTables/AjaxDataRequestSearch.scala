@@ -2,15 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxDataRequestSearch extends StObject {
   
-  var regex: Boolean = js.native
+  var regex: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object AjaxDataRequestSearch {
   

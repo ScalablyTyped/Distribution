@@ -4,31 +4,29 @@ import typings.reactNativeFbsdk.reactNativeFbsdkStrings.f
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.m
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserData extends StObject {
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var dateOfBirth: js.UndefOr[String] = js.native
+  var dateOfBirth: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
-  var gender: js.UndefOr[m | f] = js.native
+  var gender: js.UndefOr[m | f] = js.undefined
   
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var zip: js.UndefOr[String] = js.native
+  var zip: js.UndefOr[String] = js.undefined
 }
 object UserData {
   

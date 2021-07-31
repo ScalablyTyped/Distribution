@@ -2,29 +2,27 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The association between a creative and a deal.
   */
-@js.native
 trait SchemaCreativeDealAssociation extends StObject {
   
   /**
     * The account the creative belongs to.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the creative associated with the deal.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The externalDealId for the deal associated with the creative.
     */
-  var dealsId: js.UndefOr[String] = js.native
+  var dealsId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeDealAssociation {
   

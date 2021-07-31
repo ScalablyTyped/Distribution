@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentiment.anon.Apply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sentiment", JSImport.Namespace)
   @js.native
-  class ^ () extends Sentiment {
+  class ^ ()
+    extends StObject
+       with Sentiment {
     def this(options: SentimentOptions) = this()
   }
   
-  @js.native
   trait AnalysisOptions extends StObject {
     
-    var extras: js.UndefOr[StringDictionary[Double]] = js.native
+    var extras: js.UndefOr[StringDictionary[Double]] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object AnalysisOptions {
     
@@ -47,22 +47,21 @@ object mod {
     }
   }
   
-  @js.native
   trait AnalysisResult extends StObject {
     
-    var calculation: js.Array[StringDictionary[Double]] = js.native
+    var calculation: js.Array[StringDictionary[Double]]
     
-    var comparative: Double = js.native
+    var comparative: Double
     
-    var negative: js.Array[String] = js.native
+    var negative: js.Array[String]
     
-    var positive: js.Array[String] = js.native
+    var positive: js.Array[String]
     
-    var score: Double = js.native
+    var score: Double
     
-    var tokens: js.Array[String] = js.native
+    var tokens: js.Array[String]
     
-    var words: js.Array[String] = js.native
+    var words: js.Array[String]
   }
   object AnalysisResult {
     
@@ -121,12 +120,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LanguageModule extends StObject {
     
-    var labels: StringDictionary[Double] = js.native
+    var labels: StringDictionary[Double]
     
-    var scoringStrategy: js.UndefOr[Apply] = js.native
+    var scoringStrategy: js.UndefOr[Apply] = js.undefined
   }
   object LanguageModule {
     
@@ -156,7 +154,7 @@ object mod {
     def analyze(phrase: String): AnalysisResult = js.native
     def analyze(
       phrase: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ String, /* result */ AnalysisResult, Unit]
     ): AnalysisResult = js.native
     def analyze(phrase: String, options: AnalysisOptions): AnalysisResult = js.native
@@ -171,6 +169,5 @@ object mod {
   
   // No options supported currently
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait SentimentOptions extends StObject
 }

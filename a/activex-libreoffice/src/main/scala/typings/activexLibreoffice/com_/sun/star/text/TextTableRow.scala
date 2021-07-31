@@ -11,54 +11,54 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the properties of a text table row.
   * @see com.sun.star.TextTable
   */
-@js.native
-trait TextTableRow extends XPropertySet {
+trait TextTableRow
+  extends StObject
+     with XPropertySet {
   
   /** specifies the color of the background. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the name of the file filter of a background graphic. */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /**
     * determines the position of the background graphic.
     * @see GraphicLocation
     */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL of a background graphic. */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /** If `TRUE` , the background color value in "BackColor" is not visible. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** contains the height of the table row. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** If the value of this property is `TRUE` , the height of the table row depends on the content of the table cells. */
-  var IsAutoHeight: Boolean = js.native
+  var IsAutoHeight: Boolean
   
   /**
     * If `TRUE` , the row is allowed to be split at page or column breaks.
     * @@since OOo 2.0
     */
-  var IsSplitAllowed: Boolean = js.native
+  var IsSplitAllowed: Boolean
   
   /**
     * Grab bag of row properties, used as a string-any map for interop purposes.
     * @since LibreOffice 4.4  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var RowInteropGrabBag: SafeArray[PropertyValue] = js.native
+  var RowInteropGrabBag: SafeArray[PropertyValue]
   
   /** contains the description of the columns in the table row. */
-  var TableColumnSeparators: SafeArray[TableColumnSeparator] = js.native
+  var TableColumnSeparators: SafeArray[TableColumnSeparator]
 }
 object TextTableRow {
   

@@ -15,7 +15,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,12 +22,13 @@ object mod {
   @JSImport("passport-saml", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(config: SamlConfig, verify: VerifyWithRequest) = this()
     def this(config: SamlConfig, verify: VerifyWithoutRequest) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: AuthenticateOptions): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: AuthorizeOptions): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthorizeOptions): Unit = js.native
     
     def generateServiceProviderMetadata(): String = js.native
     def generateServiceProviderMetadata(decryptionCert: String): String = js.native
@@ -36,16 +36,16 @@ object mod {
     def generateServiceProviderMetadata(decryptionCert: Null, signingCert: String): String = js.native
     
     def logout(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       callback: js.Function2[/* err */ Error | Null, /* url */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
   
-  @js.native
   trait AuthenticateOptions
-    extends typings.passport.mod.AuthenticateOptions {
+    extends StObject
+       with typings.passport.mod.AuthenticateOptions {
     
-    var additionalParams: js.UndefOr[js.Object] = js.native
+    var additionalParams: js.UndefOr[js.Object] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -66,10 +66,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait AuthorizeOptions extends AuthenticateOptions {
+  trait AuthorizeOptions
+    extends StObject
+       with AuthenticateOptions {
     
-    var samlFallback: js.UndefOr[String] = js.native
+    var samlFallback: js.UndefOr[String] = js.undefined
   }
   object AuthorizeOptions {
     
@@ -90,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CacheItem extends StObject {
     
-    var createdAt: Date = js.native
+    var createdAt: Date
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CacheItem {
     
@@ -140,37 +140,37 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Profile
-    extends /* attributeName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* attributeName */ StringDictionary[js.Any] {
     
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     // InCommon Attribute urn:oid:0.9.2342.19200300.100.1.3
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     // get the raw assertion XML
-    def getAssertion(): js.Object = js.native
+    def getAssertion(): js.Object
     
     // `mail` if not present in the assertion
-    def getAssertionXml(): String = js.native
+    def getAssertionXml(): String
     
     // get the assertion XML parsed as a JavaScript object
-    def getSamlResponseXml(): String = js.native
+    def getSamlResponseXml(): String
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var mail: js.UndefOr[String] = js.native
+    var mail: js.UndefOr[String] = js.undefined
     
-    var nameID: js.UndefOr[String] = js.native
+    var nameID: js.UndefOr[String] = js.undefined
     
-    var nameIDFormat: js.UndefOr[String] = js.native
+    var nameIDFormat: js.UndefOr[String] = js.undefined
     
-    var nameQualifier: js.UndefOr[String] = js.native
+    var nameQualifier: js.UndefOr[String] = js.undefined
     
-    var sessionIndex: js.UndefOr[String] = js.native
+    var sessionIndex: js.UndefOr[String] = js.undefined
     
-    var spNameQualifier: js.UndefOr[String] = js.native
+    var spNameQualifier: js.UndefOr[String] = js.undefined
   }
   object Profile {
     
@@ -248,79 +248,78 @@ object mod {
     }
   }
   
-  @js.native
   trait SamlConfig extends StObject {
     
-    var RACComparison: js.UndefOr[exact | minimum | maximum | better] = js.native
+    var RACComparison: js.UndefOr[exact | minimum | maximum | better] = js.undefined
     
-    var acceptedClockSkewMs: js.UndefOr[Double] = js.native
+    var acceptedClockSkewMs: js.UndefOr[Double] = js.undefined
     
-    var additionalAuthorizeParams: js.UndefOr[js.Any] = js.native
+    var additionalAuthorizeParams: js.UndefOr[js.Any] = js.undefined
     
-    var additionalLogoutParams: js.UndefOr[js.Any] = js.native
+    var additionalLogoutParams: js.UndefOr[js.Any] = js.undefined
     
     // Additional SAML behaviors
-    var additionalParams: js.UndefOr[js.Any] = js.native
+    var additionalParams: js.UndefOr[js.Any] = js.undefined
     
-    var attributeConsumingServiceIndex: js.UndefOr[String] = js.native
+    var attributeConsumingServiceIndex: js.UndefOr[String] = js.undefined
     
-    var audience: js.UndefOr[String] = js.native
+    var audience: js.UndefOr[String] = js.undefined
     
-    var authnContext: js.UndefOr[String] = js.native
+    var authnContext: js.UndefOr[String] = js.undefined
     
-    var authnRequestBinding: js.UndefOr[String] = js.native
+    var authnRequestBinding: js.UndefOr[String] = js.undefined
     
-    var cacheProvider: js.UndefOr[CacheProvider] = js.native
+    var cacheProvider: js.UndefOr[CacheProvider] = js.undefined
     
     // Core
-    var callbackUrl: js.UndefOr[String] = js.native
+    var callbackUrl: js.UndefOr[String] = js.undefined
     
-    var cert: js.UndefOr[String | js.Array[String] | CertCallback] = js.native
+    var cert: js.UndefOr[String | js.Array[String] | CertCallback] = js.undefined
     
-    var decryptionPvk: js.UndefOr[String] = js.native
+    var decryptionPvk: js.UndefOr[String] = js.undefined
     
-    var disableRequestedAuthnContext: js.UndefOr[Boolean] = js.native
+    var disableRequestedAuthnContext: js.UndefOr[Boolean] = js.undefined
     
-    var entryPoint: js.UndefOr[String] = js.native
+    var entryPoint: js.UndefOr[String] = js.undefined
     
-    var forceAuthn: js.UndefOr[Boolean] = js.native
+    var forceAuthn: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var identifierFormat: js.UndefOr[String] = js.native
+    var identifierFormat: js.UndefOr[String] = js.undefined
     
-    var idpIssuer: js.UndefOr[String] = js.native
+    var idpIssuer: js.UndefOr[String] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var logoutCallbackUrl: js.UndefOr[String] = js.native
+    var logoutCallbackUrl: js.UndefOr[String] = js.undefined
     
     // Logout
-    var logoutUrl: js.UndefOr[String] = js.native
+    var logoutUrl: js.UndefOr[String] = js.undefined
     
     // Passport
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var privateCert: js.UndefOr[String] = js.native
+    var privateCert: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var providerName: js.UndefOr[String] = js.native
+    var providerName: js.UndefOr[String] = js.undefined
     
-    var requestIdExpirationPeriodMs: js.UndefOr[Double] = js.native
+    var requestIdExpirationPeriodMs: js.UndefOr[Double] = js.undefined
     
-    var signatureAlgorithm: js.UndefOr[sha1 | sha256 | sha512] = js.native
+    var signatureAlgorithm: js.UndefOr[sha1 | sha256 | sha512] = js.undefined
     
-    var skipRequestCompression: js.UndefOr[Boolean] = js.native
+    var skipRequestCompression: js.UndefOr[Boolean] = js.undefined
     
     // InResponseTo Validation
-    var validateInResponseTo: js.UndefOr[Boolean] = js.native
+    var validateInResponseTo: js.UndefOr[Boolean] = js.undefined
   }
   object SamlConfig {
     

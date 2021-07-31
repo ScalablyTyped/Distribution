@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object CommonFileQuery extends StObject {
   
   /** A shallow list of files in the current folder, similar to the list that File Explorer provides. */
   @js.native
-  sealed trait defaultQuery extends CommonFileQuery
+  sealed trait defaultQuery
+    extends StObject
+       with CommonFileQuery
   
   /** A deep, flat list of files in a folder and its subfolders, sorted by System.ItemDate . */
   @js.native
-  sealed trait orderByDate extends CommonFileQuery
+  sealed trait orderByDate
+    extends StObject
+       with CommonFileQuery
   
   /** A deep, flat list of files in a folder and its subfolders, sorted by music properties. */
   @js.native
-  sealed trait orderByMusicProperties extends CommonFileQuery
+  sealed trait orderByMusicProperties
+    extends StObject
+       with CommonFileQuery
   
   /** A deep, flat list of files in a folder and its subfolders, sorted by System.ItemNameDisplay . */
   @js.native
-  sealed trait orderByName extends CommonFileQuery
+  sealed trait orderByName
+    extends StObject
+       with CommonFileQuery
   
   /** A deep, flat list of files in a folder and its subfolders, sorted by System.Search.Rank followed by System.DateModified . */
   @js.native
-  sealed trait orderBySearchRank extends CommonFileQuery
+  sealed trait orderBySearchRank
+    extends StObject
+       with CommonFileQuery
   
   /** A deep, flat list of files in a folder and its subfolders, sorted by System.Title . */
   @js.native
-  sealed trait orderByTitle extends CommonFileQuery
+  sealed trait orderByTitle
+    extends StObject
+       with CommonFileQuery
 }

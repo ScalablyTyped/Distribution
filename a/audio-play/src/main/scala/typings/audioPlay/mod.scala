@@ -4,21 +4,22 @@ import typings.std.AudioBuffer
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(buffer: AudioBuffer, how: Options, cb: js.Function0[Unit]): AudioPlayHandle = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], how.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AudioPlayHandle]
+  
   @JSImport("audio-play", JSImport.Namespace)
   @js.native
-  def apply(buffer: AudioBuffer, how: Options, cb: js.Function0[Unit]): AudioPlayHandle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AudioPlayHandle extends StObject {
     
-    def pause(): js.Any = js.native
+    def pause(): js.Any
     
-    def play(): js.Any = js.native
+    def play(): js.Any
   }
   object AudioPlayHandle {
     
@@ -50,24 +51,23 @@ object mod {
     * @param detune (not implemented) Percentage of fine-tuning. (Default: 0)
     * @param rate (not implemented) Playback rate, in percent, of the audio. (Default: 1)
     */
-  @js.native
   trait Options extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[AudioContext] = js.native
+    var context: js.UndefOr[AudioContext] = js.undefined
     
-    var detune: js.UndefOr[Double] = js.native
+    var detune: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

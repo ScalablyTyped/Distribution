@@ -3,23 +3,21 @@ package typings.googleapis.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatetimeValue extends StObject {
   
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
-  var datetimeValue: js.UndefOr[String] = js.native
+  var datetimeValue: js.UndefOr[String] = js.undefined
   
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
-  var msgValue: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var msgValue: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object DatetimeValue {
   
@@ -51,7 +49,7 @@ object DatetimeValue {
     def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
     @scala.inline
-    def setMsgValue(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
+    def setMsgValue(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMsgValueUndefined: Self = StObject.set(x, "msgValue", js.undefined)

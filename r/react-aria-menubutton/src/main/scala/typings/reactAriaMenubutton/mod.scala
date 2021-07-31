@@ -12,10 +12,13 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-aria-menubutton", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-aria-menubutton", "Button")
   @js.native
@@ -57,29 +60,26 @@ object mod {
     def this(props: WrapperProps[HTMLElement], context: js.Any) = this()
   }
   
-  @JSImport("react-aria-menubutton", "closeMenu")
-  @js.native
-  def closeMenu(wrapperId: String): Unit = js.native
-  @JSImport("react-aria-menubutton", "closeMenu")
-  @js.native
-  def closeMenu(wrapperId: String, closeOptions: FocusButton): Unit = js.native
+  @scala.inline
+  def closeMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def closeMenu(wrapperId: String, closeOptions: FocusButton): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any], closeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-aria-menubutton", "openMenu")
-  @js.native
-  def openMenu(wrapperId: String): Unit = js.native
-  @JSImport("react-aria-menubutton", "openMenu")
-  @js.native
-  def openMenu(wrapperId: String, openOptions: FocusMenu): Unit = js.native
+  @scala.inline
+  def openMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def openMenu(wrapperId: String, openOptions: FocusMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any], openOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait ButtonProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+  trait ButtonProps[T /* <: HTMLElement */]
+    extends StObject
+       with HTMLProps[T] {
     
     /**
       * The HTML tag for this element. Default: 'div'.
       */
     var tag: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ButtonProps {
     
@@ -90,7 +90,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps[_], T /* <: HTMLElement */] (val x: Self with ButtonProps[T]) extends AnyVal {
+    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps[?], T /* <: HTMLElement */] (val x: Self & ButtonProps[T]) extends AnyVal {
       
       @scala.inline
       def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
@@ -100,28 +100,29 @@ object mod {
     }
   }
   
-  @js.native
-  trait MenuItemProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+  trait MenuItemProps[T /* <: HTMLElement */]
+    extends StObject
+       with HTMLProps[T] {
     
     /**
       * The HTML tag for this element. Default: 'div'.
       */
     var tag: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If `text` has a value, its first letter will be the letter a user can
       * type to navigate to that item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * If value has a value, it will be passed to the onSelection handler
       * when the `MenuItem` is selected
       */
     @JSName("value")
-    var value_MenuItemProps: js.UndefOr[js.Any] = js.native
+    var value_MenuItemProps: js.UndefOr[js.Any] = js.undefined
   }
   object MenuItemProps {
     
@@ -132,7 +133,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps[_], T /* <: HTMLElement */] (val x: Self with MenuItemProps[T]) extends AnyVal {
+    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps[?], T /* <: HTMLElement */] (val x: Self & MenuItemProps[T]) extends AnyVal {
       
       @scala.inline
       def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
@@ -154,18 +155,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait MenuProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+  trait MenuProps[T /* <: HTMLElement */]
+    extends StObject
+       with HTMLProps[T] {
     
     @JSName("children")
-    var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element]) = js.native
+    var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])
     
     /**
       * The HTML tag for this element. Default: 'div'.
       */
     var tag: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object MenuProps {
     
@@ -176,7 +178,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MenuPropsMutableBuilder[Self <: MenuProps[_], T /* <: HTMLElement */] (val x: Self with MenuProps[T]) extends AnyVal {
+    implicit class MenuPropsMutableBuilder[Self <: MenuProps[?], T /* <: HTMLElement */] (val x: Self & MenuProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -192,27 +194,28 @@ object mod {
     }
   }
   
-  @js.native
-  trait WrapperProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+  trait WrapperProps[T /* <: HTMLElement */]
+    extends StObject
+       with HTMLProps[T] {
     
     /**
       * By default, it does automatically close.
       * If false, the menu will not automatically close when it
       * blurs. Default: `true`.
       */
-    var closeOnBlur: js.UndefOr[Boolean] = js.native
+    var closeOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, it does automatically close.
       * If false, the menu will not automatically close when a
       * selection is made. Default: `true`.
       */
-    var closeOnSelection: js.UndefOr[Boolean] = js.native
+    var closeOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback to run when the menu is opened or closed.
       */
-    var onMenuToggle: js.UndefOr[js.Function1[/* obj */ WrapperState, _]] = js.native
+    var onMenuToggle: js.UndefOr[js.Function1[/* obj */ WrapperState, js.Any]] = js.undefined
     
     /**
       * A callback to run when the user makes a selection
@@ -220,11 +223,11 @@ object mod {
       * It will be passed the value of the selected `MenuItem` and
       * the React `SyntheticEvent`.
       */
-    var onSelection: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ SyntheticEvent[T, Event], _]] = js.native
+    var onSelection: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ SyntheticEvent[T, Event], js.Any]] = js.undefined
     
     var tag: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object WrapperProps {
     
@@ -235,7 +238,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[_], T /* <: HTMLElement */] (val x: Self with WrapperProps[T]) extends AnyVal {
+    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[?], T /* <: HTMLElement */] (val x: Self & WrapperProps[T]) extends AnyVal {
       
       @scala.inline
       def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
@@ -250,13 +253,13 @@ object mod {
       def setCloseOnSelectionUndefined: Self = StObject.set(x, "closeOnSelection", js.undefined)
       
       @scala.inline
-      def setOnMenuToggle(value: /* obj */ WrapperState => _): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
+      def setOnMenuToggle(value: /* obj */ WrapperState => js.Any): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
       
       @scala.inline
-      def setOnSelection(value: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => _): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      def setOnSelection(value: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => js.Any): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnSelectionUndefined: Self = StObject.set(x, "onSelection", js.undefined)
@@ -269,10 +272,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WrapperState extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object WrapperState {
     

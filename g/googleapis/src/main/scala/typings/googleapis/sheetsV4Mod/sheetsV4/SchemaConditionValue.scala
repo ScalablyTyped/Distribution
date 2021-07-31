@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The value of the condition.
   */
-@js.native
 trait SchemaConditionValue extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaConditionValue extends StObject {
     * dates are not supported in data validation. They are supported only in
     * conditional formatting and conditional filters.
     */
-  var relativeDate: js.UndefOr[String] = js.native
+  var relativeDate: js.UndefOr[String] = js.undefined
   
   /**
     * A value the condition is based on. The value is parsed as if the user
     * typed into a cell. Formulas are supported (and must begin with an `=` or
     * a &#39;+&#39;).
     */
-  var userEnteredValue: js.UndefOr[String] = js.native
+  var userEnteredValue: js.UndefOr[String] = js.undefined
 }
 object SchemaConditionValue {
   

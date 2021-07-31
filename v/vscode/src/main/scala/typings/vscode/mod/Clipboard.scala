@@ -3,23 +3,21 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clipboard extends StObject {
   
   /**
     * Read the current clipboard contents as text.
     * @returns A thenable that resolves to a string.
     */
-  def readText(): Thenable[String] = js.native
+  def readText(): Thenable[String]
   
   /**
     * Writes text into the clipboard.
     * @returns A thenable that resolves when writing happened.
     */
-  def writeText(value: String): Thenable[Unit] = js.native
+  def writeText(value: String): Thenable[Unit]
 }
 object Clipboard {
   

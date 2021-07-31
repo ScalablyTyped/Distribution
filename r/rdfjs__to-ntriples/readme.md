@@ -10,9 +10,9 @@ Converts RDFJS Terms and Quads to N-Triple strings
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/to-ntriples |
 | Keywords           | rdf, rdfjs, ntriples, string |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 35043 |
+| # downloads        | 53683 |
 | # stars            | 0 |
 
 ## Links

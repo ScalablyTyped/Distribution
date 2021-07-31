@@ -2,7 +2,6 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -64,14 +63,14 @@ trait MathNode extends StObject {
     * containing a relative JSON Path.
     * @return Returns an array with nodes for which test returned true
     */
-  def filter(callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, _]): js.Array[MathNode] = js.native
+  def filter(callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, js.Any]): js.Array[MathNode] = js.native
   
   var fn: js.UndefOr[String] = js.native
   
   /**
     * [forEach description]
     */
-  def forEach(callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, _]): js.Array[MathNode] = js.native
+  def forEach(callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, js.Any]): js.Array[MathNode] = js.native
   
   var isAccessorNode: js.UndefOr[Boolean] = js.native
   

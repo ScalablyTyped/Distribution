@@ -11,7 +11,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBarStyleIndexNativeMod {
@@ -61,20 +60,19 @@ object searchBarStyleIndexNativeMod {
     def wrapper_=(x: BackgroundColorFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISearchBarStyle extends StObject {
     
-    var cancelText: TextStyle = js.native
+    var cancelText: TextStyle
     
-    var cancelTextContainer: ViewStyle = js.native
+    var cancelTextContainer: ViewStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var inputWrapper: ViewStyle = js.native
+    var inputWrapper: ViewStyle
     
-    var search: ImageStyle = js.native
+    var search: ImageStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object ISearchBarStyle {
     

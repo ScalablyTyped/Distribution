@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentGatewayAccount extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait PaymentGatewayAccount extends StObject {
     *
     * **Note**: This property is read only and cannot be changed.
     */
-  var allowCustomMetadata: js.UndefOr[Boolean] = js.native
+  var allowCustomMetadata: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property contains metadata about the payment gateway account's configuration such as the API key, `userId`, and `merchantId` details.
     */
-  var config: js.UndefOr[PaymentGatewayAccountSetting] = js.native
+  var config: js.UndefOr[PaymentGatewayAccountSetting] = js.undefined
   
   /**
     * A user-defined name for a connected gateway account.
@@ -31,27 +29,27 @@ trait PaymentGatewayAccount extends StObject {
     *
     * The human-readable version of `paymentGatewayAccountId`.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the payment gateway account is enabled.
     */
-  var isEnabled: js.UndefOr[String] = js.native
+  var isEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var isLegacy: js.UndefOr[String] = js.native
+  var isLegacy: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime that the payment gateway account was last updated.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var payPalLegacySettings: js.UndefOr[PayPalLegacySettings] = js.native
+  var payPalLegacySettings: js.UndefOr[PayPalLegacySettings] = js.undefined
   
   /**
     * Payment gateway used by the connected gateway account.
@@ -64,12 +62,12 @@ trait PaymentGatewayAccount extends StObject {
     * * `Braintree`
     * * `AuthorizeDotNet`
     */
-  var paymentGateway: js.UndefOr[String] = js.native
+  var paymentGateway: js.UndefOr[String] = js.undefined
   
   /**
     * A GUID that identifies the payment gateway account. For a human-readable version use `displayName`.
     */
-  var paymentGatewayAccountId: js.UndefOr[String] = js.native
+  var paymentGatewayAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The display name of the payment gateway that the connected gateway account uses.
@@ -81,7 +79,7 @@ trait PaymentGatewayAccount extends StObject {
     * * Braintree
     * * Authorize.Net
     */
-  var paymentGatewayDisplayName: js.UndefOr[String] = js.native
+  var paymentGatewayDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of ISO 4217 currency codes for the currencies that the payment gateway account supports.
@@ -93,12 +91,12 @@ trait PaymentGatewayAccount extends StObject {
     * - `EUR`
     * - `HKD`
     */
-  var supportedCurrencies: js.UndefOr[js.Array[String]] = js.native
+  var supportedCurrencies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of paymentMethodWithOptions objects that specify the payment methods that are available for the gateway.
     */
-  var supportedPaymentMethods: js.UndefOr[js.Array[String]] = js.native
+  var supportedPaymentMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of `paymentMethodWithOptions` objects that specify the payment methods that are available for the gateway, as well as the payment options that are compatible with
@@ -109,7 +107,7 @@ trait PaymentGatewayAccount extends StObject {
       /* This object contains information about a payment method that the gateway accepts and the payment options that are compatible with it.
     */ PaymentMethodWithOptions
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PaymentGatewayAccount {
   

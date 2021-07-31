@@ -109,477 +109,479 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
   @js.native
-  trait RcFile extends File {
+  trait RcFile
+    extends StObject
+       with File {
     
     var uid: String = js.native
   }
   
   @js.native
-  trait UploadProgressEvent extends ProgressEvent[EventTarget] {
+  trait UploadProgressEvent
+    extends StObject
+       with ProgressEvent[EventTarget] {
     
     var percent: Double = js.native
   }
   
   /* Inlined parent std.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'onError' | 'onProgress'> */
-  @js.native
   trait UploadProps extends StObject {
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String])] = js.native
+    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String])] = js.undefined
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
     var beforeUpload: js.UndefOr[
         js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], Boolean | js.Promise[RcFile]]
-      ] = js.native
+      ] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.native
+    var capture: js.UndefOr[Boolean | String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[JSXElementConstructor[_]] = js.native
+    var component: js.UndefOr[JSXElementConstructor[js.Any]] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var customRequest: js.UndefOr[js.Function0[Unit]] = js.native
+    var customRequest: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var data: js.UndefOr[js.Object | (js.Function1[/* file */ RcFile | String | Blob, js.Object])] = js.native
+    var data: js.UndefOr[js.Object | (js.Function1[/* file */ RcFile | String | Blob, js.Object])] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
-    var form: js.UndefOr[String] = js.native
+    var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String] = js.undefined
     
-    var formEncType: js.UndefOr[String] = js.native
+    var formEncType: js.UndefOr[String] = js.undefined
     
-    var formMethod: js.UndefOr[String] = js.native
+    var formMethod: js.UndefOr[String] = js.undefined
     
-    var formNoValidate: js.UndefOr[Boolean] = js.native
+    var formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    var formTarget: js.UndefOr[String] = js.native
+    var formTarget: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[UploadRequestHeader] = js.native
+    var headers: js.UndefOr[UploadRequestHeader] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.native
+    var max: js.UndefOr[Double | String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[UploadRequestMethod] = js.native
+    var method: js.UndefOr[UploadRequestMethod] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.native
+    var min: js.UndefOr[Double | String] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[
           /* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onError: js.UndefOr[js.Function3[/* error */ Error, /* ret */ js.Object, /* file */ RcFile, Unit]] = js.native
+    var onError: js.UndefOr[js.Function3[/* error */ Error, /* ret */ js.Object, /* file */ RcFile, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onProgress: js.UndefOr[js.Function2[/* event */ UploadProgressEvent, /* file */ RcFile, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function2[/* event */ UploadProgressEvent, /* file */ RcFile, Unit]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* file */ RcFile, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* file */ RcFile, Unit]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     var onSuccess: js.UndefOr[
         js.Function3[/* response */ js.Object, /* file */ RcFile, /* xhr */ js.Object, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
     
-    var openFileDialogOnClick: js.UndefOr[Boolean] = js.native
+    var openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.native
+    var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     var transformFile: js.UndefOr[
         js.Function1[/* file */ RcFile, String | Blob | RcFile | (js.Thenable[String | Blob | RcFile])]
-      ] = js.native
+      ] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object UploadProps {
     
@@ -982,10 +984,10 @@ object interfaceMod {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setComponent(value: JSXElementConstructor[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: JSXElementConstructor[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setComponentFunction1(value: _ => ReactElement | Null): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
+      def setComponentFunction1(value: js.Any => ReactElement | Null): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -1927,14 +1929,15 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait UploadRequestError extends Error {
+  trait UploadRequestError
+    extends StObject
+       with Error {
     
-    var method: js.UndefOr[UploadRequestMethod] = js.native
+    var method: js.UndefOr[UploadRequestMethod] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object UploadRequestError {
     
@@ -1999,20 +2002,19 @@ object interfaceMod {
     def put: put_ = "put".asInstanceOf[put_]
   }
   
-  @js.native
   trait UploadRequestOption[T] extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var data: js.UndefOr[js.Object] = js.native
+    var data: js.UndefOr[js.Object] = js.undefined
     
-    var file: RcFile = js.native
+    var file: RcFile
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[UploadRequestHeader] = js.native
+    var headers: js.UndefOr[UploadRequestHeader] = js.undefined
     
-    var method: UploadRequestMethod = js.native
+    var method: UploadRequestMethod
     
     var onError: js.UndefOr[
         js.Function2[
@@ -2020,13 +2022,13 @@ object interfaceMod {
           /* body */ js.UndefOr[T], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onProgress: js.UndefOr[js.Function1[/* event */ UploadProgressEvent, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* event */ UploadProgressEvent, Unit]] = js.undefined
     
-    var onSuccess: js.UndefOr[js.Function2[/* body */ T, /* xhr */ XMLHttpRequest, Unit]] = js.native
+    var onSuccess: js.UndefOr[js.Function2[/* body */ T, /* xhr */ XMLHttpRequest, Unit]] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object UploadRequestOption {
     
@@ -2037,7 +2039,7 @@ object interfaceMod {
     }
     
     @scala.inline
-    implicit class UploadRequestOptionMutableBuilder[Self <: UploadRequestOption[_], T] (val x: Self with UploadRequestOption[T]) extends AnyVal {
+    implicit class UploadRequestOptionMutableBuilder[Self <: UploadRequestOption[?], T] (val x: Self & UploadRequestOption[T]) extends AnyVal {
       
       @scala.inline
       def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

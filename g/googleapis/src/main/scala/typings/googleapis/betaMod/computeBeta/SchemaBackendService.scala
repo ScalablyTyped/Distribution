@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * machines and their serving capacity. (== resource_for v1.backendService ==)
   * (== resource_for beta.backendService ==)
   */
-@js.native
 trait SchemaBackendService extends StObject {
   
   /**
@@ -20,43 +18,43 @@ trait SchemaBackendService extends StObject {
     * one day.  When the load balancing scheme is INTERNAL, this field is not
     * used.
     */
-  var affinityCookieTtlSec: js.UndefOr[Double] = js.native
+  var affinityCookieTtlSec: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of backends that serve this BackendService.
     */
-  var backends: js.UndefOr[js.Array[SchemaBackend]] = js.native
+  var backends: js.UndefOr[js.Array[SchemaBackend]] = js.undefined
   
   /**
     * Cloud CDN configuration for this BackendService.
     */
-  var cdnPolicy: js.UndefOr[SchemaBackendServiceCdnPolicy] = js.native
+  var cdnPolicy: js.UndefOr[SchemaBackendServiceCdnPolicy] = js.undefined
   
-  var connectionDraining: js.UndefOr[SchemaConnectionDraining] = js.native
+  var connectionDraining: js.UndefOr[SchemaConnectionDraining] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Headers that the HTTP/S load balancer should add to proxied requests.
     */
-  var customRequestHeaders: js.UndefOr[js.Array[String]] = js.native
+  var customRequestHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If true, enable Cloud CDN for this BackendService.  When the load
     * balancing scheme is INTERNAL, this field is not used.
     */
-  var enableCDN: js.UndefOr[Boolean] = js.native
+  var enableCDN: js.UndefOr[Boolean] = js.undefined
   
-  var failoverPolicy: js.UndefOr[SchemaBackendServiceFailoverPolicy] = js.native
+  var failoverPolicy: js.UndefOr[SchemaBackendServiceFailoverPolicy] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
@@ -66,7 +64,7 @@ trait SchemaBackendService extends StObject {
     * will fail with error 412 conditionNotMet.  To see the latest fingerprint,
     * make a get() request to retrieve a BackendService.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The list of URLs to the HttpHealthCheck or HttpsHealthCheck resource for
@@ -76,21 +74,21 @@ trait SchemaBackendService extends StObject {
     * backend and Cloud Function backend.  For internal load balancing, a URL
     * to a HealthCheck resource must be specified instead.
     */
-  var healthChecks: js.UndefOr[js.Array[String]] = js.native
+  var healthChecks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var iap: js.UndefOr[SchemaBackendServiceIAP] = js.native
+  var iap: js.UndefOr[SchemaBackendServiceIAP] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#backendService for backend
     * services.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the backend service will be used with internal or
@@ -98,14 +96,14 @@ trait SchemaBackendService extends StObject {
     * balancing cannot be used with the other. Possible values are INTERNAL and
     * EXTERNAL.
     */
-  var loadBalancingScheme: js.UndefOr[String] = js.native
+  var loadBalancingScheme: js.UndefOr[String] = js.undefined
   
   /**
     * This field denotes the logging options for the load balancer traffic
     * served by this backend service. If logging is enabled, logs will be
     * exported to Stackdriver.
     */
-  var logConfig: js.UndefOr[SchemaBackendServiceLogConfig] = js.native
+  var logConfig: js.UndefOr[SchemaBackendServiceLogConfig] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -116,14 +114,14 @@ trait SchemaBackendService extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated in favor of portName. The TCP port to connect on the backend.
     * The default value is 80.  This cannot be used for internal load
     * balancing.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of backend port. The same name should appear in the instance groups
@@ -131,7 +129,7 @@ trait SchemaBackendService extends StObject {
     * EXTERNAL.  When the load balancing scheme is INTERNAL, this field is not
     * used.
     */
-  var portName: js.UndefOr[String] = js.native
+  var portName: js.UndefOr[String] = js.undefined
   
   /**
     * The protocol this BackendService uses to communicate with backends.
@@ -139,7 +137,7 @@ trait SchemaBackendService extends StObject {
     * internal load balancing, the possible values are TCP and UDP, and the
     * default is TCP.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional backend service
@@ -147,18 +145,18 @@ trait SchemaBackendService extends StObject {
     * must specify this field as part of the HTTP request URL. It is not
     * settable as a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The resource URL for the security policy associated with
     * this backend service.
     */
-  var securityPolicy: js.UndefOr[String] = js.native
+  var securityPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Type of session affinity to use. The default is NONE.  When the load
@@ -167,13 +165,13 @@ trait SchemaBackendService extends StObject {
     * NONE, CLIENT_IP, CLIENT_IP_PROTO, or CLIENT_IP_PORT_PROTO.  When the
     * protocol is UDP, this field is not used.
     */
-  var sessionAffinity: js.UndefOr[String] = js.native
+  var sessionAffinity: js.UndefOr[String] = js.undefined
   
   /**
     * How many seconds to wait for the backend before considering it a failed
     * request. Default is 30 seconds.
     */
-  var timeoutSec: js.UndefOr[Double] = js.native
+  var timeoutSec: js.UndefOr[Double] = js.undefined
 }
 object SchemaBackendService {
   

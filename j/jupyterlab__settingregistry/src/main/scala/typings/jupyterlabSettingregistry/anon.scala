@@ -6,23 +6,21 @@ import typings.luminoCoreutils.jsonMod.PartialJSONValue
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: TypeString = js.native
+    var args: TypeString
     
-    var command: TypeString = js.native
+    var command: TypeString
     
-    var disabled: Default = js.native
+    var disabled: Default
     
-    var keys: MinItems = js.native
+    var keys: MinItems
     
-    var selector: TypeString = js.native
+    var selector: TypeString
   }
   object Args {
     
@@ -52,12 +50,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Composite extends StObject {
     
-    var composite: js.UndefOr[PartialJSONValue] = js.native
+    var composite: js.UndefOr[PartialJSONValue] = js.undefined
     
-    var user: js.UndefOr[PartialJSONValue] = js.native
+    var user: js.UndefOr[PartialJSONValue] = js.undefined
   }
   object Composite {
     
@@ -90,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Default extends StObject {
     
-    var default: Boolean = js.native
+    var default: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Default {
     
@@ -117,14 +113,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var default: js.Array[scala.Nothing] = js.native
+    var default: js.Array[scala.Nothing]
     
-    var items: Ref = js.native
+    var items: Ref
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Items {
     
@@ -152,26 +147,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Jupyterlabsettingdeprecated extends StObject {
     
     @JSName("jupyter.lab.setting-deprecated")
-    var `jupyterDotlabDotsetting-deprecated`: Default = js.native
+    var `jupyterDotlabDotsetting-deprecated`: Default
     
     @JSName("jupyter.lab.setting-icon")
-    var `jupyterDotlabDotsetting-icon`: Type = js.native
+    var `jupyterDotlabDotsetting-icon`: Type
     
     @JSName("jupyter.lab.setting-icon-class")
-    var `jupyterDotlabDotsetting-icon-class`: Type = js.native
+    var `jupyterDotlabDotsetting-icon-class`: Type
     
     @JSName("jupyter.lab.setting-icon-label")
-    var `jupyterDotlabDotsetting-icon-label`: Type = js.native
+    var `jupyterDotlabDotsetting-icon-label`: Type
     
     @JSName("jupyter.lab.shortcuts")
-    var jupyterDotlabDotshortcuts: Items = js.native
+    var jupyterDotlabDotshortcuts: Items
     
     @JSName("jupyter.lab.transform")
-    var jupyterDotlabDottransform: Default = js.native
+    var jupyterDotlabDottransform: Default
   }
   object Jupyterlabsettingdeprecated {
     
@@ -217,14 +211,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MinItems extends StObject {
     
-    var items: TypeString = js.native
+    var items: TypeString
     
-    var minItems: Double = js.native
+    var minItems: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MinItems {
     
@@ -249,14 +242,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Properties extends StObject {
     
-    var properties: Args = js.native
+    var properties: Args
     
-    var required: js.Array[String] = js.native
+    var required: js.Array[String]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Properties {
     
@@ -284,11 +276,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref extends StObject {
     
     @JSName("$ref")
-    var $ref: String = js.native
+    var $ref: String
   }
   object Ref {
     
@@ -306,10 +297,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Shortcut extends StObject {
     
-    var shortcut: Properties = js.native
+    var shortcut: Properties
   }
   object Shortcut {
     
@@ -327,12 +317,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var default: String = js.native
+    var default: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     
@@ -354,10 +343,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeString extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object TypeString {
     
@@ -376,12 +364,11 @@ object anon {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var composite: js.UndefOr[ReadonlyPartialJSONValue] = js.native
+    var composite: js.UndefOr[ReadonlyPartialJSONValue] = js.undefined
     
-    var user: js.UndefOr[ReadonlyPartialJSONValue] = js.native
+    var user: js.UndefOr[ReadonlyPartialJSONValue] = js.undefined
   }
   object User {
     
@@ -415,12 +402,11 @@ object anon {
   }
   
   /* Inlined {[ phase in @jupyterlab/settingregistry.@jupyterlab/settingregistry/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/settingregistry.@jupyterlab/settingregistry/lib/tokens.ISettingRegistry.IPlugin.Transform} */
-  @js.native
   trait phaseinPhaseTransform extends StObject {
     
-    var compose: js.UndefOr[Transform] = js.native
+    var compose: js.UndefOr[Transform] = js.undefined
     
-    var fetch: js.UndefOr[Transform] = js.native
+    var fetch: js.UndefOr[Transform] = js.undefined
   }
   object phaseinPhaseTransform {
     

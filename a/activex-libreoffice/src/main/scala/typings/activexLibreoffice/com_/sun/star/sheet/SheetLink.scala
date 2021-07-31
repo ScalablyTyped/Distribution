@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,20 +20,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To create a linked sheet, the sheet which will be used as linked sheet has to exist already. The method {@link XSheetLinkable.link()} creates a {@link
   * SheetLink} object in the document's {@link SheetLinks} collection and links the sheet to the specified external sheet.
   */
-@js.native
 trait SheetLink
-  extends XNamed
+  extends StObject
+     with XNamed
      with XRefreshable
      with XPropertySet {
   
   /** specifies the name of the filter needed to load the source document. */
-  var Filter: String = js.native
+  var Filter: String
   
   /** specifies the filter options needed to load the source document. */
-  var FilterOptions: String = js.native
+  var FilterOptions: String
   
   /** specifies the URL of the source document. */
-  var Url: String = js.native
+  var Url: String
 }
 object SheetLink {
   

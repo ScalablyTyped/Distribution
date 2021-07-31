@@ -2,17 +2,15 @@ package typings.reactstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hide extends StObject {
     
-    var hide: Double = js.native
+    var hide: Double
     
-    var show: Double = js.native
+    var show: Double
   }
   object Hide {
     
@@ -33,14 +31,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: js.UndefOr[String | Double] = js.native
+    var offset: js.UndefOr[String | Double] = js.undefined
     
-    var order: js.UndefOr[String | Double] = js.native
+    var order: js.UndefOr[String | Double] = js.undefined
     
-    var size: js.UndefOr[Boolean | Double | String] = js.native
+    var size: js.UndefOr[Boolean | Double | String] = js.undefined
   }
   object Offset {
     

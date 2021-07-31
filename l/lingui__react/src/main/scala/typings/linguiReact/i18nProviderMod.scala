@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nProviderMod {
@@ -18,22 +17,21 @@ object i18nProviderMod {
   
   type I18nProvider = Component[I18nProviderProps, js.Object, js.Any]
   
-  @js.native
   trait I18nProviderProps extends StObject {
     
-    var catalogs: js.UndefOr[Catalogs] = js.native
+    var catalogs: js.UndefOr[Catalogs] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultRender: js.UndefOr[ReactNode] = js.native
+    var defaultRender: js.UndefOr[ReactNode] = js.undefined
     
-    var i18n: js.UndefOr[I18n_] = js.native
+    var i18n: js.UndefOr[I18n_] = js.undefined
     
-    var language: String = js.native
+    var language: String
     
-    var locales: js.UndefOr[String | js.Array[String]] = js.native
+    var locales: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var missing: js.UndefOr[String | (js.Function2[/* language */ String, /* id */ String, String])] = js.native
+    var missing: js.UndefOr[String | (js.Function2[/* language */ String, /* id */ String, String])] = js.undefined
   }
   object I18nProviderProps {
     

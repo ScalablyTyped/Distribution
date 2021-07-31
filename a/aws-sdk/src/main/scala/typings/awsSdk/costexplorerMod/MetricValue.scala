@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricValue extends StObject {
   
   /**
     * The actual number that represents the metric.
     */
-  var Amount: js.UndefOr[MetricAmount] = js.native
+  var Amount: js.UndefOr[MetricAmount] = js.undefined
   
   /**
     * The unit that the metric is given in.
     */
-  var Unit: js.UndefOr[MetricUnit] = js.native
+  var Unit: js.UndefOr[MetricUnit] = js.undefined
 }
 object MetricValue {
   

@@ -7,23 +7,21 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delta extends StObject {
   
-  var decreasing: Symbol = js.native
+  var decreasing: Symbol
   
-  var increasing: Symbol = js.native
+  var increasing: Symbol
   
-  var position: top | bottom | left | right = js.native
+  var position: top | bottom | left | right
   
-  var reference: Double = js.native
+  var reference: Double
   
-  var relative: Boolean = js.native
+  var relative: Boolean
   
-  var valueformat: String = js.native
+  var valueformat: String
 }
 object Delta {
   

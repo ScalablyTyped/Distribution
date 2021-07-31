@@ -3,69 +3,69 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelInfo extends ResponseEntry {
+trait ChannelInfo
+  extends StObject
+     with ResponseEntry {
   
-  var channelBannerGfxUrl: String = js.native
+  var channelBannerGfxUrl: String
   
-  var channelBannerMode: Double = js.native
+  var channelBannerMode: Double
   
-  var channelCodec: Double = js.native
+  var channelCodec: Double
   
-  var channelCodecIsUnencrypted: Double = js.native
+  var channelCodecIsUnencrypted: Double
   
-  var channelCodecLatencyFactor: Double = js.native
+  var channelCodecLatencyFactor: Double
   
-  var channelCodecQuality: Double = js.native
+  var channelCodecQuality: Double
   
-  var channelDeleteDelay: Double = js.native
+  var channelDeleteDelay: Double
   
-  var channelDescription: String = js.native
+  var channelDescription: String
   
-  var channelFilepath: String = js.native
+  var channelFilepath: String
   
-  var channelFlagDefault: Boolean = js.native
+  var channelFlagDefault: Boolean
   
-  var channelFlagMaxclientsUnlimited: Boolean = js.native
+  var channelFlagMaxclientsUnlimited: Boolean
   
-  var channelFlagMaxfamilyclientsInherited: Boolean = js.native
+  var channelFlagMaxfamilyclientsInherited: Boolean
   
-  var channelFlagMaxfamilyclientsUnlimited: Boolean = js.native
+  var channelFlagMaxfamilyclientsUnlimited: Boolean
   
-  var channelFlagPassword: Boolean = js.native
+  var channelFlagPassword: Boolean
   
-  var channelFlagPermanent: Boolean = js.native
+  var channelFlagPermanent: Boolean
   
-  var channelFlagSemiPermanent: Boolean = js.native
+  var channelFlagSemiPermanent: Boolean
   
-  var channelForcedSilence: Double = js.native
+  var channelForcedSilence: Double
   
-  var channelIconId: String = js.native
+  var channelIconId: String
   
-  var channelMaxclients: Double = js.native
+  var channelMaxclients: Double
   
-  var channelMaxfamilyclients: Double = js.native
+  var channelMaxfamilyclients: Double
   
-  var channelName: String = js.native
+  var channelName: String
   
-  var channelNamePhonetic: String = js.native
+  var channelNamePhonetic: String
   
-  var channelNeededTalkPower: Double = js.native
+  var channelNeededTalkPower: Double
   
-  var channelOrder: Double = js.native
+  var channelOrder: Double
   
-  var channelPassword: String = js.native
+  var channelPassword: String
   
-  var channelSecuritySalt: String = js.native
+  var channelSecuritySalt: String
   
-  var channelTopic: String = js.native
+  var channelTopic: String
   
-  var pid: String = js.native
+  var pid: String
   
-  var secondsEmpty: Double = js.native
+  var secondsEmpty: Double
 }
 object ChannelInfo {
   

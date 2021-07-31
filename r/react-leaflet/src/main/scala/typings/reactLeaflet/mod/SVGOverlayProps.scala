@@ -4,16 +4,16 @@ import typings.leaflet.mod.ImageOverlayOptions
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet */ @js.native
-trait SVGOverlayProps extends ImageOverlayOptions {
+- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet */ trait SVGOverlayProps
+  extends StObject
+     with ImageOverlayOptions {
   
-  var children: js.UndefOr[Children] = js.native
+  var children: js.UndefOr[Children] = js.undefined
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 object SVGOverlayProps {
   

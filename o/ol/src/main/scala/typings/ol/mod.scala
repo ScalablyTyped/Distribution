@@ -17,10 +17,13 @@ import typings.std.HTMLCanvasElement
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ol", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol", "AssertionError")
   @js.native
@@ -33,8 +36,8 @@ object mod {
   class Collection[T] ()
     extends typings.ol.collectionMod.default[T] {
     def this(opt_array: js.Array[T]) = this()
-    def this(opt_array: js.UndefOr[scala.Nothing], opt_options: Options) = this()
     def this(opt_array: js.Array[T], opt_options: Options) = this()
+    def this(opt_array: Unit, opt_options: Options) = this()
   }
   
   @JSImport("ol", "Disposable")
@@ -70,7 +73,7 @@ object mod {
     extends typings.ol.olImageMod.default {
     def this(
       extent: Extent,
-      resolution: js.UndefOr[scala.Nothing],
+      resolution: Double,
       pixelRatio: Double,
       src: String,
       crossOrigin: String,
@@ -78,7 +81,7 @@ object mod {
     ) = this()
     def this(
       extent: Extent,
-      resolution: Double,
+      resolution: Unit,
       pixelRatio: Double,
       src: String,
       crossOrigin: String,
@@ -90,8 +93,8 @@ object mod {
   @js.native
   abstract class ImageBase protected ()
     extends typings.ol.imageBaseMod.default {
-    def this(extent: Extent, resolution: js.UndefOr[scala.Nothing], pixelRatio: Double, state: ImageState) = this()
     def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
+    def this(extent: Extent, resolution: Unit, pixelRatio: Double, state: ImageState) = this()
   }
   
   @JSImport("ol", "ImageCanvas")
@@ -158,14 +161,14 @@ object mod {
       `type`: String,
       map: typings.ol.pluggableMapMod.default,
       originalEvent: EVENT,
-      opt_dragging: js.UndefOr[scala.Nothing],
+      opt_dragging: Boolean,
       opt_frameState: FrameState
     ) = this()
     def this(
       `type`: String,
       map: typings.ol.pluggableMapMod.default,
       originalEvent: EVENT,
-      opt_dragging: Boolean,
+      opt_dragging: Unit,
       opt_frameState: FrameState
     ) = this()
   }
@@ -229,7 +232,7 @@ object mod {
   @js.native
   class TileQueue protected ()
     extends typings.ol.tileQueueMod.default {
-    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
+    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[js.Any]) = this()
   }
   
   @JSImport("ol", "TileRange")
@@ -286,7 +289,6 @@ object mod {
     def this(opt_options: ViewOptions) = this()
   }
   
-  @JSImport("ol", "getUid")
-  @js.native
-  def getUid(obj: js.Any): String = js.native
+  @scala.inline
+  def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

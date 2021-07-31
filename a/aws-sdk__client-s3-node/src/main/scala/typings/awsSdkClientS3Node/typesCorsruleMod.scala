@@ -3,38 +3,36 @@ package typings.awsSdkClientS3Node
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCorsruleMod {
   
-  @js.native
   trait CORSRule extends StObject {
     
     /**
       * <p>Specifies which headers are allowed in a pre-flight OPTIONS request.</p>
       */
-    var AllowedHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var AllowedHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>Identifies HTTP methods that the domain/origin specified in the rule is allowed to execute.</p>
       */
-    var AllowedMethods: js.Array[String] | Iterable[String] = js.native
+    var AllowedMethods: js.Array[String] | Iterable[String]
     
     /**
       * <p>One or more origins you want customers to be able to access the bucket from.</p>
       */
-    var AllowedOrigins: js.Array[String] | Iterable[String] = js.native
+    var AllowedOrigins: js.Array[String] | Iterable[String]
     
     /**
       * <p>One or more headers in the response that you want customers to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object).</p>
       */
-    var ExposeHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var ExposeHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>The time in seconds that your browser is to cache the preflight response for the specified resource.</p>
       */
-    var MaxAgeSeconds: js.UndefOr[Double] = js.native
+    var MaxAgeSeconds: js.UndefOr[Double] = js.undefined
   }
   object CORSRule {
     
@@ -88,32 +86,33 @@ object typesCorsruleMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCORSRule extends CORSRule {
+  trait UnmarshalledCORSRule
+    extends StObject
+       with CORSRule {
     
     /**
       * <p>Specifies which headers are allowed in a pre-flight OPTIONS request.</p>
       */
     @JSName("AllowedHeaders")
-    var AllowedHeaders_UnmarshalledCORSRule: js.UndefOr[js.Array[String]] = js.native
+    var AllowedHeaders_UnmarshalledCORSRule: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>Identifies HTTP methods that the domain/origin specified in the rule is allowed to execute.</p>
       */
     @JSName("AllowedMethods")
-    var AllowedMethods_UnmarshalledCORSRule: js.Array[String] = js.native
+    var AllowedMethods_UnmarshalledCORSRule: js.Array[String]
     
     /**
       * <p>One or more origins you want customers to be able to access the bucket from.</p>
       */
     @JSName("AllowedOrigins")
-    var AllowedOrigins_UnmarshalledCORSRule: js.Array[String] = js.native
+    var AllowedOrigins_UnmarshalledCORSRule: js.Array[String]
     
     /**
       * <p>One or more headers in the response that you want customers to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object).</p>
       */
     @JSName("ExposeHeaders")
-    var ExposeHeaders_UnmarshalledCORSRule: js.UndefOr[js.Array[String]] = js.native
+    var ExposeHeaders_UnmarshalledCORSRule: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledCORSRule {
     

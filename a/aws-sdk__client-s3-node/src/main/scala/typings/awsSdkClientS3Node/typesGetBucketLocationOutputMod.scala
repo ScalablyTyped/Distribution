@@ -16,14 +16,13 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketLocationOutputMod {
   
-  @js.native
   trait GetBucketLocationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
@@ -31,7 +30,7 @@ object typesGetBucketLocationOutputMod {
       */
     var LocationConstraint: js.UndefOr[
         EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
-      ] = js.native
+      ] = js.undefined
   }
   object GetBucketLocationOutput {
     

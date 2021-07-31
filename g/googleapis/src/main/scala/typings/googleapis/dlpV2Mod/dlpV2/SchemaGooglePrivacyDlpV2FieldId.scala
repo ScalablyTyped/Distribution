@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * General identifier of a data field in a storage service.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2FieldId extends StObject {
   
   /**
     * Name describing the field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2FieldId {
   

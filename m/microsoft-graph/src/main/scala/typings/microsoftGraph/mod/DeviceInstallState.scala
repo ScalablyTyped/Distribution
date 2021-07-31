@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceInstallState extends Entity {
+trait DeviceInstallState
+  extends StObject
+     with Entity {
   
   // Device Id.
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device name.
-  var deviceName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The error code for install failures.
-  var errorCode: js.UndefOr[NullableOption[String]] = js.native
+  var errorCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The install state of the eBook. Possible values are: notApplicable, installed, failed, notInstalled, uninstallFailed,
     * unknown.
     */
-  var installState: js.UndefOr[InstallState] = js.native
+  var installState: js.UndefOr[InstallState] = js.undefined
   
   // Last sync date and time.
-  var lastSyncDateTime: js.UndefOr[String] = js.native
+  var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   // OS Description.
-  var osDescription: js.UndefOr[NullableOption[String]] = js.native
+  var osDescription: js.UndefOr[NullableOption[String]] = js.undefined
   
   // OS Version.
-  var osVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device User Name.
-  var userName: js.UndefOr[NullableOption[String]] = js.native
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeviceInstallState {
   

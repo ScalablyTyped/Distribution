@@ -2,41 +2,39 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationConfigurationUpdate extends StObject {
   
   /**
     * Describes updates to a Flink-based Kinesis Data Analytics application's code configuration.
     */
-  var ApplicationCodeConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationCodeConfigurationUpdate] = js.native
+  var ApplicationCodeConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationCodeConfigurationUpdate] = js.undefined
   
   /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     */
-  var ApplicationSnapshotConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSnapshotConfigurationUpdate] = js.native
+  var ApplicationSnapshotConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSnapshotConfigurationUpdate] = js.undefined
   
   /**
     * Describes updates to the environment properties for a Flink-based Kinesis Data Analytics application.
     */
-  var EnvironmentPropertyUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.EnvironmentPropertyUpdates] = js.native
+  var EnvironmentPropertyUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.EnvironmentPropertyUpdates] = js.undefined
   
   /**
     * Describes updates to a Flink-based Kinesis Data Analytics application's configuration.
     */
-  var FlinkApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkApplicationConfigurationUpdate] = js.native
+  var FlinkApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkApplicationConfigurationUpdate] = js.undefined
   
   /**
     * Describes updates to a SQL-based Kinesis Data Analytics application's configuration.
     */
-  var SqlApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlApplicationConfigurationUpdate] = js.native
+  var SqlApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlApplicationConfigurationUpdate] = js.undefined
   
   /**
     * Updates to the array of descriptions of VPC configurations available to the application.
     */
-  var VpcConfigurationUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationUpdates] = js.native
+  var VpcConfigurationUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationUpdates] = js.undefined
 }
 object ApplicationConfigurationUpdate {
   

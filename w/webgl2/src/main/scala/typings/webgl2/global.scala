@@ -3,7 +3,6 @@ package typings.webgl2
 import typings.std.WebGLObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,7 +11,8 @@ object global {
   @JSGlobal("WebGL2RenderingContext")
   @js.native
   class WebGL2RenderingContext ()
-    extends typings.webgl2.WebGL2RenderingContext
+    extends StObject
+       with typings.webgl2.WebGL2RenderingContext
   object WebGL2RenderingContext {
     
     /* WebGL1 constants */
@@ -2522,25 +2522,35 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLQuery")
   @js.native
-  class WebGLQuery () extends WebGLObject
+  class WebGLQuery ()
+    extends StObject
+       with WebGLObject
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLSampler")
   @js.native
-  class WebGLSampler () extends WebGLObject
+  class WebGLSampler ()
+    extends StObject
+       with WebGLObject
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLSync")
   @js.native
-  class WebGLSync () extends WebGLObject
+  class WebGLSync ()
+    extends StObject
+       with WebGLObject
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLTransformFeedback")
   @js.native
-  class WebGLTransformFeedback () extends WebGLObject
+  class WebGLTransformFeedback ()
+    extends StObject
+       with WebGLObject
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLVertexArrayObject")
   @js.native
-  class WebGLVertexArrayObject () extends WebGLObject
+  class WebGLVertexArrayObject ()
+    extends StObject
+       with WebGLObject
 }

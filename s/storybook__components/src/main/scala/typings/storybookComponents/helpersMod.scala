@@ -3,20 +3,20 @@ package typings.storybookComponents
 import typings.storybookComponents.controlsTypesMod.OptionsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@storybook/components/dist/controls/options/helpers", "selectedKey")
+  @JSImport("@storybook/components/dist/controls/options/helpers", JSImport.Namespace)
   @js.native
-  def selectedKey(value: js.Any, options: OptionsObject): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/components/dist/controls/options/helpers", "selectedKeys")
-  @js.native
-  def selectedKeys(value: js.Array[_], options: OptionsObject): js.Array[String] = js.native
+  @scala.inline
+  def selectedKey(value: js.Any, options: OptionsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKey")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@storybook/components/dist/controls/options/helpers", "selectedValues")
-  @js.native
-  def selectedValues(keys: js.Array[String], options: OptionsObject): js.Array[_] = js.native
+  @scala.inline
+  def selectedKeys(value: js.Array[js.Any], options: OptionsObject): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKeys")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def selectedValues(keys: js.Array[String], options: OptionsObject): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedValues")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

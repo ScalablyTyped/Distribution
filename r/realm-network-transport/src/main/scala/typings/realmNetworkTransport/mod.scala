@@ -7,18 +7,25 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("realm-network-transport", "DefaultNetworkTransport")
   @js.native
-  class DefaultNetworkTransport () extends NetworkTransport {
+  class DefaultNetworkTransport ()
+    extends StObject
+       with NetworkTransport {
     
     var createTimeoutSignal: js.Any = js.native
     
     var fetch: js.Any = js.native
+    
+    /* CompleteClass */
+    override def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody] = js.native
+    
+    /* CompleteClass */
+    override def fetchWithCallbacks[RequestBody /* <: js.Any */](request: Request[RequestBody], handler: ResponseHandler): Unit = js.native
   }
   object DefaultNetworkTransport {
     
@@ -33,7 +40,8 @@ object mod {
       * Constructs an AbortController.
       */
     class AbortController ()
-      extends typings.realmNetworkTransport.mod.AbortController
+      extends StObject
+         with typings.realmNetworkTransport.mod.AbortController
     /* static member */
     @JSImport("realm-network-transport", "DefaultNetworkTransport.AbortController")
     @js.native
@@ -75,14 +83,22 @@ object mod {
     */
   @JSImport("realm-network-transport", "MongoDBRealmError")
   @js.native
-  class MongoDBRealmError protected () extends Error {
+  class MongoDBRealmError protected ()
+    extends StObject
+       with Error {
     def this(method: Method, url: String, statusCode: Double, statusText: String, response: js.Any) = this()
     
     val errorCode: js.UndefOr[String] = js.native
     
     val link: js.UndefOr[String] = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
     val method: Method = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     val statusCode: Double = js.native
     
@@ -94,7 +110,8 @@ object mod {
   /** A controller object that allows you to abort one or more DOM requests as and when desired. */
   @js.native
   trait AbortController
-    extends /**
+    extends StObject
+       with /**
     * Constructs an AbortController.
     */
   Instantiable0[AbortController] {
@@ -120,32 +137,31 @@ object mod {
     js.Promise[FetchResponse]
   ]
   
-  @js.native
   trait FetchBody extends StObject {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    def arrayBuffer(): js.Promise[ArrayBuffer]
     
-    def blob(): js.Promise[_] = js.native
+    def blob(): js.Promise[js.Any]
     
-    val body: js.Any | Null = js.native
+    val body: js.Any | Null
     
-    val bodyUsed: Boolean = js.native
+    val bodyUsed: Boolean
     
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any]
     
-    def text(): js.Promise[String] = js.native
+    def text(): js.Promise[String]
   }
   object FetchBody {
     
     @scala.inline
     def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[_],
+      blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       text: () => js.Promise[String]
     ): FetchBody = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text), body = null)
       __obj.asInstanceOf[FetchBody]
     }
     
@@ -156,7 +172,7 @@ object mod {
       def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setBlob(value: () => js.Promise[_]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      def setBlob(value: () => js.Promise[js.Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
       @scala.inline
       def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -168,7 +184,7 @@ object mod {
       def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       @scala.inline
       def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
@@ -177,20 +193,19 @@ object mod {
   
   type FetchBodyInit = js.Any
   
-  @js.native
   trait FetchHeaders extends StObject {
     
-    def append(name: String, value: String): Unit = js.native
+    def append(name: String, value: String): Unit
     
-    def delete(name: String): Unit = js.native
+    def delete(name: String): Unit
     
-    def forEach(callback: js.Function2[/* value */ String, /* name */ String, Unit]): Unit = js.native
+    def forEach(callback: js.Function2[/* value */ String, /* name */ String, Unit]): Unit
     
-    def get(name: String): String | Null = js.native
+    def get(name: String): String | Null
     
-    def has(name: String): Boolean = js.native
+    def has(name: String): Boolean
     
-    def set(name: String, value: String): Unit = js.native
+    def set(name: String, value: String): Unit
   }
   object FetchHeaders {
     
@@ -233,50 +248,51 @@ object mod {
   type FetchHeadersInit = FetchHeaders | js.Array[js.Array[String]] | (Record[String, String])
   
   /** This Fetch API interface represents a resource request. */
-  @js.native
-  trait FetchRequest extends FetchBody {
+  trait FetchRequest
+    extends StObject
+       with FetchBody {
     
     /**
       * Returns a Headers object consisting of the headers associated with request. Note that headers added in the network layer by the user agent will not be accounted for in this object, e.g., the "Host" header.
       */
-    val headers: FetchHeaders = js.native
+    val headers: FetchHeaders
     
     /**
       * Returns a boolean indicating whether or not request can outlive the global in which it was created.
       */
-    val keepalive: Boolean = js.native
+    val keepalive: Boolean
     
     /**
       * Returns request's HTTP method, which is "GET" by default.
       */
-    val method: String = js.native
+    val method: String
     
     /**
       * Returns the signal associated with request, which is an AbortSignal object indicating whether or not request has been aborted, and its abort event handler.
       */
-    val signal: AbortSignal = js.native
+    val signal: AbortSignal
     
     /**
       * Returns the URL of request as a string.
       */
-    val url: String = js.native
+    val url: String
   }
   object FetchRequest {
     
     @scala.inline
     def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[_],
+      blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
       headers: FetchHeaders,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       keepalive: Boolean,
       method: String,
       signal: AbortSignal,
       text: () => js.Promise[String],
       url: String
     ): FetchRequest = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), keepalive = keepalive.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), keepalive = keepalive.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
       __obj.asInstanceOf[FetchRequest]
     }
     
@@ -302,38 +318,37 @@ object mod {
   
   type FetchRequestInfo = FetchRequest | String
   
-  @js.native
   trait FetchRequestInit extends StObject {
     
     /**
       * A BodyInit object or null to set request's body.
       */
-    var body: js.UndefOr[FetchBodyInit | Null] = js.native
+    var body: js.UndefOr[FetchBodyInit | Null] = js.undefined
     
     /**
       * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
       */
-    var headers: js.UndefOr[FetchHeadersInit] = js.native
+    var headers: js.UndefOr[FetchHeadersInit] = js.undefined
     
     /**
       * A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
       */
-    var integrity: js.UndefOr[String] = js.native
+    var integrity: js.UndefOr[String] = js.undefined
     
     /**
       * A boolean to set request's keepalive.
       */
-    var keepalive: js.UndefOr[Boolean] = js.native
+    var keepalive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string to set request's method.
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * An AbortSignal to set request's signal.
       */
-    var signal: js.UndefOr[AbortSignal | Null] = js.native
+    var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   }
   object FetchRequestInit {
     
@@ -393,32 +408,33 @@ object mod {
     }
   }
   
-  @js.native
-  trait FetchResponse extends FetchBody {
+  trait FetchResponse
+    extends StObject
+       with FetchBody {
     
-    val headers: FetchHeaders = js.native
+    val headers: FetchHeaders
     
-    val ok: Boolean = js.native
+    val ok: Boolean
     
-    val redirected: Boolean = js.native
+    val redirected: Boolean
     
-    val status: Double = js.native
+    val status: Double
     
-    val statusText: String = js.native
+    val statusText: String
     
-    val `type`: js.Any = js.native
+    val `type`: js.Any
     
-    val url: String = js.native
+    val url: String
   }
   object FetchResponse {
     
     @scala.inline
     def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[_],
+      blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
       headers: FetchHeaders,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       ok: Boolean,
       redirected: Boolean,
       status: Double,
@@ -427,7 +443,7 @@ object mod {
       `type`: js.Any,
       url: String
     ): FetchResponse = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchResponse]
     }
@@ -482,12 +498,11 @@ object mod {
     def PUT: typings.realmNetworkTransport.realmNetworkTransportStrings.PUT = "PUT".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.PUT]
   }
   
-  @js.native
   trait NetworkTransport extends StObject {
     
-    def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody] = js.native
+    def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody]
     
-    def fetchWithCallbacks[RequestBody /* <: js.Any */](request: Request[RequestBody], handler: ResponseHandler): Unit = js.native
+    def fetchWithCallbacks[RequestBody /* <: js.Any */](request: Request[RequestBody], handler: ResponseHandler): Unit
   }
   object NetworkTransport {
     
@@ -511,18 +526,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Request[RequestBody] extends StObject {
     
-    var body: js.UndefOr[RequestBody | String] = js.native
+    var body: js.UndefOr[RequestBody | String] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var method: Method = js.native
+    var method: Method
     
-    var timeoutMs: js.UndefOr[Double] = js.native
+    var timeoutMs: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Request {
     
@@ -533,7 +547,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request[_], RequestBody] (val x: Self with Request[RequestBody]) extends AnyVal {
+    implicit class RequestMutableBuilder[Self <: Request[?], RequestBody] (val x: Self & Request[RequestBody]) extends AnyVal {
       
       @scala.inline
       def setBody(value: RequestBody | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -561,14 +575,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Response {
     
@@ -592,16 +605,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseHandler extends StObject {
     
-    def onError(err: Error): Unit = js.native
+    def onError(err: Error): Unit
     @JSName("onError")
-    var onError_Original: ErrorCallback = js.native
+    var onError_Original: ErrorCallback
     
-    def onSuccess(response: Response): Unit = js.native
+    def onSuccess(response: Response): Unit
     @JSName("onSuccess")
-    var onSuccess_Original: SuccessCallback = js.native
+    var onSuccess_Original: SuccessCallback
+  }
+  object ResponseHandler {
+    
+    @scala.inline
+    def apply(onError: /* err */ Error => Unit, onSuccess: /* response */ Response => Unit): ResponseHandler = {
+      val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onSuccess = js.Any.fromFunction1(onSuccess))
+      __obj.asInstanceOf[ResponseHandler]
+    }
+    
+    @scala.inline
+    implicit class ResponseHandlerMutableBuilder[Self <: ResponseHandler] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnSuccess(value: /* response */ Response => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+    }
   }
   
   type SuccessCallback = js.Function1[/* response */ Response, Unit]

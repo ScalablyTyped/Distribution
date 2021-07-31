@@ -6,7 +6,6 @@ import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.Xrm.Ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,52 +13,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link UiElement}
   * @see {@link UiFocusable}
   */
-@js.native
 trait Tab
-  extends UiStandardElement
+  extends StObject
+     with UiStandardElement
      with UiFocusable {
   
   /**
     * Adds a function to be called when the TabStateChange event occurs.
     * @param handler The function to be executed on the TabStateChange event.
     */
-  def addTabStateChange(handler: ContextSensitiveHandler): Unit = js.native
+  def addTabStateChange(handler: ContextSensitiveHandler): Unit
   
   /**
     * Gets display state of the tab.
     * @returns The display state, as either "expanded" or "collapsed"
     */
-  def getDisplayState(): DisplayState = js.native
+  def getDisplayState(): DisplayState
   
   /**
     * Gets the name of the tab.
     * @returns The name.
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Gets a reference to the {@link FormContext.ui formContext.ui} parent of the tab.
     * @returns The parent.
     */
-  def getParent(): Ui = js.native
+  def getParent(): Ui
   
   /**
     * Removes a function to be called when the TabStateChange event occurs.
     * @param handler The function to be removed from the TabStateChange event.
     */
-  def removeTabStateChange(handler: ContextSensitiveHandler): Unit = js.native
+  def removeTabStateChange(handler: ContextSensitiveHandler): Unit
   
   /**
     * A reference to the collection of form sections within this tab.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  var sections: ItemCollection[Section] = js.native
+  var sections: ItemCollection[Section]
   
   /**
     * Sets display state of the tab.
     * @param displayState Display state of the tab, as either "expanded" or "collapsed"
     */
-  def setDisplayState(displayState: DisplayState): Unit = js.native
+  def setDisplayState(displayState: DisplayState): Unit
 }
 object Tab {
   

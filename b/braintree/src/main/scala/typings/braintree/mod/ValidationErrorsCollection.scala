@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationErrorsCollection extends StObject {
   
-  def deepErrors(): js.Array[ValidationError] = js.native
+  def deepErrors(): js.Array[ValidationError]
   
-  def `for`(name: String): ValidationErrorsCollection = js.native
+  def `for`(name: String): ValidationErrorsCollection
   
-  def forIndex(index: Double): ValidationErrorsCollection = js.native
+  def forIndex(index: Double): ValidationErrorsCollection
   
-  def on(name: String): ValidationError = js.native
+  def on(name: String): ValidationError
 }
 object ValidationErrorsCollection {
   

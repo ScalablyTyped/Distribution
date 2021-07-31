@@ -2,21 +2,19 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fee extends StObject {
   
   /**
     * Amount associated to this fee
     */
-  var amount: MoneyHash = js.native
+  var amount: MoneyHash
   
   /**
     * Fee beneficiary ("bank", "coinbase", ...)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Fee {
   

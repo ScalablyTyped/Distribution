@@ -10,9 +10,9 @@ Generate code at build-time with babel-macros
 | ------------------ | :-------------: |
 | Full name          | codegen.macro |
 | Keywords           | babel-plugin-macros, babel-macros |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 62796 |
+| # downloads        | 102459 |
 | # stars            | 0 |
 
 ## Links

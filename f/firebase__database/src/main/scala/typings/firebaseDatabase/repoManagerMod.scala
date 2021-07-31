@@ -9,7 +9,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.repoMod.Repo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repoManagerMod {
@@ -40,12 +39,6 @@ object repoManagerMod {
       * @return {!Database}
       */
     def databaseFromApp(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]): Database = js.native
-    def databaseFromApp(
-      app: FirebaseApp,
-      authProvider: Provider[FirebaseAuthInternalName],
-      url: js.UndefOr[scala.Nothing],
-      nodeAdmin: Boolean
-    ): Database = js.native
     def databaseFromApp(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName], url: String): Database = js.native
     def databaseFromApp(
       app: FirebaseApp,
@@ -53,6 +46,7 @@ object repoManagerMod {
       url: String,
       nodeAdmin: Boolean
     ): Database = js.native
+    def databaseFromApp(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName], url: Unit, nodeAdmin: Boolean): Database = js.native
     
     /**
       * Remove the repo and make sure it is disconnected.
@@ -85,8 +79,11 @@ object repoManagerMod {
   /* static members */
   object RepoManager {
     
-    @JSImport("@firebase/database/dist/src/core/RepoManager", "RepoManager.getInstance")
+    @JSImport("@firebase/database/dist/src/core/RepoManager", "RepoManager")
     @js.native
-    def getInstance(): RepoManager = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getInstance(): RepoManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[RepoManager]
   }
 }

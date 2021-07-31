@@ -10,9 +10,9 @@ Stylable core optimizer
 | ------------------ | :-------------: |
 | Full name          | @stylable/optimizer |
 | Keywords           | - |
-| # releases         | 64 |
+| # releases         | 87 |
 | # dependents       | 3 |
-| # downloads        | 130437 |
+| # downloads        | 193444 |
 | # stars            | 0 |
 
 ## Links

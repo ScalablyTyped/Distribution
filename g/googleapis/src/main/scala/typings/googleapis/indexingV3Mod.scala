@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexingV3Mod {
@@ -70,7 +69,7 @@ object indexingV3Mod {
         */
       def getMetadata(): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
       def getMetadata(callback: BodyResponseCallback[SchemaUrlNotificationMetadata]): Unit = js.native
-      def getMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
+      def getMetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
       def getMetadata(params: ParamsResourceUrlnotificationsGetmetadata): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
       def getMetadata(
         params: ParamsResourceUrlnotificationsGetmetadata,
@@ -102,7 +101,7 @@ object indexingV3Mod {
         */
       def publish(): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
       def publish(callback: BodyResponseCallback[SchemaPublishUrlNotificationResponse]): Unit = js.native
-      def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
+      def publish(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
       def publish(params: ParamsResourceUrlnotificationsPublish): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
       def publish(
         params: ParamsResourceUrlnotificationsPublish,
@@ -121,16 +120,17 @@ object indexingV3Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v3 = js.native
+      var version: v3
     }
     object Options {
       
       @scala.inline
-      def apply(version: v3): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v3")
         __obj.asInstanceOf[Options]
       }
       
@@ -142,18 +142,19 @@ object indexingV3Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrlnotificationsGetmetadata extends StandardParameters {
+    trait ParamsResourceUrlnotificationsGetmetadata
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * URL that is being queried.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceUrlnotificationsGetmetadata {
       
@@ -180,18 +181,19 @@ object indexingV3Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrlnotificationsPublish extends StandardParameters {
+    trait ParamsResourceUrlnotificationsPublish
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaUrlNotification] = js.native
+      var requestBody: js.UndefOr[SchemaUrlNotification] = js.undefined
     }
     object ParamsResourceUrlnotificationsPublish {
       
@@ -221,13 +223,12 @@ object indexingV3Mod {
     /**
       * Output for PublishUrlNotification
       */
-    @js.native
     trait SchemaPublishUrlNotificationResponse extends StObject {
       
       /**
         * Description of the notification events received for this URL.
         */
-      var urlNotificationMetadata: js.UndefOr[SchemaUrlNotificationMetadata] = js.native
+      var urlNotificationMetadata: js.UndefOr[SchemaUrlNotificationMetadata] = js.undefined
     }
     object SchemaPublishUrlNotificationResponse {
       
@@ -252,26 +253,25 @@ object indexingV3Mod {
       * `UrlNotification` is the resource used in all Indexing API calls. It
       * describes one event in the life cycle of a Web Document.
       */
-    @js.native
     trait SchemaUrlNotification extends StObject {
       
       /**
         * Creation timestamp for this notification. Users should _not_ specify it,
         * the field is ignored at the request time.
         */
-      var notifyTime: js.UndefOr[String] = js.native
+      var notifyTime: js.UndefOr[String] = js.undefined
       
       /**
         * The URL life cycle event that Google is being notified about.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
       /**
         * The object of this notification. The URL must be owned by the publisher
         * of this notification and, in case of `URL_UPDATED` notifications, it
         * _must_ be crawlable by Google.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object SchemaUrlNotification {
       
@@ -308,23 +308,22 @@ object indexingV3Mod {
       * Summary of the most recent Indexing API notifications successfully
       * received, for a given URL.
       */
-    @js.native
     trait SchemaUrlNotificationMetadata extends StObject {
       
       /**
         * Latest notification received with type `URL_REMOVED`.
         */
-      var latestRemove: js.UndefOr[SchemaUrlNotification] = js.native
+      var latestRemove: js.UndefOr[SchemaUrlNotification] = js.undefined
       
       /**
         * Latest notification received with type `URL_UPDATED`.
         */
-      var latestUpdate: js.UndefOr[SchemaUrlNotification] = js.native
+      var latestUpdate: js.UndefOr[SchemaUrlNotification] = js.undefined
       
       /**
         * URL to which this metadata refers.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object SchemaUrlNotificationMetadata {
       
@@ -357,68 +356,67 @@ object indexingV3Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectLevelStatistics extends StObject {
   
   /**
     * The total storage size (in bytes) or number of objects that Amazon Macie can't analyze because the objects don't have a file name extension for a supported file or storage format.
     */
-  var fileType: js.UndefOr[long] = js.native
+  var fileType: js.UndefOr[long] = js.undefined
   
   /**
     * The total storage size (in bytes) or number of objects that Amazon Macie can't analyze because the objects use an unsupported storage class.
     */
-  var storageClass: js.UndefOr[long] = js.native
+  var storageClass: js.UndefOr[long] = js.undefined
   
   /**
     * The total storage size (in bytes) or number of objects that Amazon Macie can't analyze because the objects use an unsupported storage class or don't have a file name extension for a supported file or storage format.
     */
-  var total: js.UndefOr[long] = js.native
+  var total: js.UndefOr[long] = js.undefined
 }
 object ObjectLevelStatistics {
   

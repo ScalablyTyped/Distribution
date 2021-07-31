@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,23 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Different to Java, the association between view and interface is fixed and cannot be changed. Otherwise, the AWT messaging would have to be
   * implemented for any window supporting Drag and Drop operations, which would be a performance issue.
   */
-@js.native
-trait XDragGestureRecognizer extends XInterface {
+trait XDragGestureRecognizer
+  extends StObject
+     with XInterface {
   
   /**
     * Registers a new {@link XDragGestureListener} .
     * @param dgl The {@link XDragGestureListener} to register with this {@link XDragGestureRecognizer} .
     */
-  def addDragGestureListener(dgl: XDragGestureListener): Unit = js.native
+  def addDragGestureListener(dgl: XDragGestureListener): Unit
   
   /**
     * Unregisters the specified {@link XDragGestureListener} .
     * @param dgl The {@link XDragGestureListener} to register with this {@link XDragGestureRecognizer} .
     */
-  def removeDragGestureListener(dgl: XDragGestureListener): Unit = js.native
+  def removeDragGestureListener(dgl: XDragGestureListener): Unit
   
   /** Reset the recognizer. If it is currently recognizing a gesture, ignore it. */
-  def resetRecognizer(): Unit = js.native
+  def resetRecognizer(): Unit
 }
 object XDragGestureRecognizer {
   

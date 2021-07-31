@@ -2,24 +2,22 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<ionic.ionic/definitions.HookName, string | std.Array<string> | undefined> */
-@js.native
 trait RecordHookNamestringArray extends StObject {
   
   @JSName("build:after")
-  var buildColonafter: js.UndefOr[String | js.Array[String]] = js.native
+  var buildColonafter: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("build:before")
-  var buildColonbefore: js.UndefOr[String | js.Array[String]] = js.native
+  var buildColonbefore: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("serve:after")
-  var serveColonafter: js.UndefOr[String | js.Array[String]] = js.native
+  var serveColonafter: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("serve:before")
-  var serveColonbefore: js.UndefOr[String | js.Array[String]] = js.native
+  var serveColonbefore: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object RecordHookNamestringArray {
   

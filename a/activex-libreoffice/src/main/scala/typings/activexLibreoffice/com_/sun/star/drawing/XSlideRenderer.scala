@@ -5,11 +5,9 @@ import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Create preview bitmaps for single slides. */
-@js.native
 trait XSlideRenderer extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait XSlideRenderer extends StObject {
     * @param nSlideAspectRatio The aspect ratio must not be 0.
     * @param aMaximumPreviewPixelSize The maximum size of the returned preview size.
     */
-  def calculatePreviewSize(nSlideAspectRatio: Double, aMaximumPreviewPixelSize: Size): Size = js.native
+  def calculatePreviewSize(nSlideAspectRatio: Double, aMaximumPreviewPixelSize: Size): Size
   
   /**
     * Create a preview for the given slide that has the same aspect ratio as the page and is as large as possible but not larger than the specified size.
@@ -29,7 +27,7 @@ trait XSlideRenderer extends StObject {
     * @param aMaximumPreviewPixelSize The maximum size of the preview measured in pixels. When the aspect ratios of this size and of the given slide differ, t
     * @param nSuperSampleFactor When larger than the default 1 then internally a larger preview is created which, before it is returned, is scaled down to the
     */
-  def createPreview(xSlide: XDrawPage, aMaximumPreviewPixelSize: Size, nSuperSampleFactor: Double): XBitmap = js.native
+  def createPreview(xSlide: XDrawPage, aMaximumPreviewPixelSize: Size, nSuperSampleFactor: Double): XBitmap
   
   /**
     * Exactly the same functionality as {@link createPreview()} , only a different return type: {@link com.sun.star.rendering.XBitmap} instead of {@link
@@ -40,7 +38,7 @@ trait XSlideRenderer extends StObject {
     * @param xCanvas This canvas is used create a canvas specific bitmap.
     * @see createPreview
     */
-  def createPreviewForCanvas(xSlide: XDrawPage, aMaximumPreviewPixelSize: Size, nSuperSampleFactor: Double, xCanvas: XCanvas): typings.activexLibreoffice.com_.sun.star.rendering.XBitmap = js.native
+  def createPreviewForCanvas(xSlide: XDrawPage, aMaximumPreviewPixelSize: Size, nSuperSampleFactor: Double, xCanvas: XCanvas): typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 }
 object XSlideRenderer {
   

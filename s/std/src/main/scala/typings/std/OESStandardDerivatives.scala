@@ -2,14 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The OES_standard_derivatives extension is part of the WebGL API and adds the GLSL derivative functions dFdx, dFdy, and fwidth. */
-@js.native
 trait OESStandardDerivatives extends StObject {
   
-  val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum = js.native
+  val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum
 }
 object OESStandardDerivatives {
   

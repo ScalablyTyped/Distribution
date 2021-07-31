@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,11 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object identity {
   
-  @js.native
   trait AccountInfo extends StObject {
     
     /** A unique identifier for the account. This ID will not change for the lifetime of the account. */
-    var id: String = js.native
+    var id: String
   }
   object AccountInfo {
     
@@ -40,7 +38,6 @@ object identity {
   
   type SignInChangeEvent = Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]]
   
-  @js.native
   trait TokenDetails extends StObject {
     
     /**
@@ -49,13 +46,13 @@ object identity {
       * account is only supported when the "enable-new-profile-management" flag is set.
       * @since Chrome 37.
       */
-    var account: js.UndefOr[AccountInfo] = js.native
+    var account: js.UndefOr[AccountInfo] = js.undefined
     
     /**
       * Optional.
       * Fetching a token may require the user to sign-in to Chrome, or approve the application's requested scopes. If the interactive flag is true, getAuthToken will prompt the user as necessary. When the flag is false or omitted, getAuthToken will return failure any time a prompt would be required.
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional.
@@ -63,7 +60,7 @@ object identity {
       * When the scopes field is present, it overrides the list of scopes specified in manifest.json.
       * @since Chrome 37.
       */
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TokenDetails {
     
@@ -99,11 +96,10 @@ object identity {
     }
   }
   
-  @js.native
   trait TokenInformation extends StObject {
     
     /** The specific token that should be removed from the cache. */
-    var token: String = js.native
+    var token: String
   }
   object TokenInformation {
     
@@ -121,14 +117,13 @@ object identity {
     }
   }
   
-  @js.native
   trait UserInfo extends StObject {
     
     /** An email address for the user account signed into the current profile. Empty if the user is not signed in or the identity.email manifest permission is not specified. */
-    var email: String = js.native
+    var email: String
     
     /** A unique identifier for the account. This ID will not change for the lifetime of the account. Empty if the user is not signed in or (in M41+) the identity.email manifest permission is not specified. */
-    var id: String = js.native
+    var id: String
   }
   object UserInfo {
     
@@ -149,7 +144,6 @@ object identity {
     }
   }
   
-  @js.native
   trait WebAuthFlowOptions extends StObject {
     
     /**
@@ -158,10 +152,10 @@ object identity {
       * Since some auth flows may immediately redirect to a result URL, launchWebAuthFlow hides its web view until the first navigation either redirects to the final URL, or finishes loading a page meant to be displayed.
       * If the interactive flag is true, the window will be displayed when a page load completes. If the flag is false or omitted, launchWebAuthFlow will return with an error if the initial navigation does not complete the flow.
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /** The URL that initiates the auth flow. */
-    var url: String = js.native
+    var url: String
   }
   object WebAuthFlowOptions {
     

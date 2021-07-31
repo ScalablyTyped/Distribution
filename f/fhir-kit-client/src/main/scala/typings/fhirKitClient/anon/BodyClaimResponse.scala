@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ClaimResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyClaimResponse extends StObject {
   
-  var body: ClaimResponse = js.native
+  var body: ClaimResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ClaimResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ClaimResponse
 }
 object BodyClaimResponse {
   
   @scala.inline
-  def apply(body: ClaimResponse, resourceType: typings.fhirKitClient.fhirKitClientStrings.ClaimResponse): BodyClaimResponse = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ClaimResponse): BodyClaimResponse = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ClaimResponse")
     __obj.asInstanceOf[BodyClaimResponse]
   }
   

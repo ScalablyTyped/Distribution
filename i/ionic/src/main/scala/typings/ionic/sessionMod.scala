@@ -7,10 +7,13 @@ import typings.ionic.definitionsMod.ISession
 import typings.ionic.definitionsMod.IonicEnvironment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
+  
+  @JSImport("ionic/lib/session", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/session", "BaseSession")
   @js.native
@@ -44,20 +47,27 @@ object sessionMod {
     /* InferMemberOverrides */
     override def isLoggedIn(): Boolean = js.native
     
+    /* CompleteClass */
+    override def login(email: String, password: String): js.Promise[Unit] = js.native
+    
     /* InferMemberOverrides */
     override def logout(): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def ssoLogin(email: String): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def tokenLogin(token: String): js.Promise[Unit] = js.native
   }
   
-  @JSImport("ionic/lib/session", "promptToLogin")
-  @js.native
-  def promptToLogin(env: IonicEnvironment): js.Promise[Unit] = js.native
+  @scala.inline
+  def promptToLogin(env: IonicEnvironment): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptToLogin")(env.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait SessionDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val config: IConfig = js.native
+    val config: IConfig
   }
   object SessionDeps {
     

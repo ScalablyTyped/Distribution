@@ -2,41 +2,39 @@ package typings.cordovaPluginDevice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /** Indicates that Cordova initialize successfully. */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /** Get the version of Cordova running on the device. */
-  var cordova: String = js.native
+  var cordova: String
   
   /** Whether the device is running on a simulator. */
-  var isVirtual: Boolean = js.native
+  var isVirtual: Boolean
   
   /** Get the device's manufacturer. */
-  var manufacturer: String = js.native
+  var manufacturer: String
   
   /**
     * The device.model returns the name of the device's model or product. The value is set
     * by the device manufacturer and may be different across versions of the same product.
     */
-  var model: String = js.native
+  var model: String
   
   /** Get the device's operating system name. */
-  var platform: String = js.native
+  var platform: String
   
   /** Get the device hardware serial number. */
-  var serial: String = js.native
+  var serial: String
   
   /** Get the device's Universally Unique Identifier (UUID). */
-  var uuid: String = js.native
+  var uuid: String
   
   /** Get the operating system version. */
-  var version: String = js.native
+  var version: String
 }
 object Device {
   

@@ -3,7 +3,6 @@ package typings.unimodulesPermissionsInterface
 import typings.unimodulesPermissionsInterface.unimodulesPermissionsInterfaceStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,33 +14,38 @@ object mod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PermissionStatus with String] = js.native
+    def apply(value: String): js.UndefOr[PermissionStatus & String] = js.native
     
     @js.native
-    sealed trait DENIED extends PermissionStatus
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED with String = js.native
+    sealed trait DENIED
+      extends StObject
+         with PermissionStatus
+    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
     
     @js.native
-    sealed trait GRANTED extends PermissionStatus
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED with String = js.native
+    sealed trait GRANTED
+      extends StObject
+         with PermissionStatus
+    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
     
     @js.native
-    sealed trait UNDETERMINED extends PermissionStatus
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED with String = js.native
+    sealed trait UNDETERMINED
+      extends StObject
+         with PermissionStatus
+    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   type PermissionExpiration = never | Double
   
-  @js.native
   trait PermissionResponse extends StObject {
     
-    var canAskAgain: Boolean = js.native
+    var canAskAgain: Boolean
     
-    var expires: PermissionExpiration = js.native
+    var expires: PermissionExpiration
     
-    var granted: Boolean = js.native
+    var granted: Boolean
     
-    var status: PermissionStatus = js.native
+    var status: PermissionStatus
   }
   object PermissionResponse {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource to which to add metadata tags. Required. 
     */
-  var Arn: typings.awsSdk.alexaforbusinessMod.Arn = js.native
+  var Arn: typings.awsSdk.alexaforbusinessMod.Arn
   
   /**
     * The tags to be added to the specified resource. Do not provide system tags. Required. 
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

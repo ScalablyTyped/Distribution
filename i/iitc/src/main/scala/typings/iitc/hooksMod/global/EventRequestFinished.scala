@@ -2,13 +2,11 @@ package typings.iitc.hooksMod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventRequestFinished extends StObject {
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object EventRequestFinished {
   

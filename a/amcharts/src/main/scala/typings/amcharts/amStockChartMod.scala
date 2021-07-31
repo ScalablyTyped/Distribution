@@ -3,16 +3,250 @@ package typings.amcharts
 import typings.amcharts.anon.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amStockChartMod {
   
   @JSImport("amcharts/AmStockChart", JSImport.Default)
   @js.native
-  class default () extends AmStockChart
+  class default ()
+    extends StObject
+       with AmStockChart {
+    
+    /**
+      * Adds event listener.
+      * @param type - One of
+      * "buildStarted", "clickStockEvent", "dataUpdated", "init", "panelRemoved", "rendered", "rollOutStockEvent",
+      * "rollOverStockEvent", "zoomed".
+      * @param handler - The event handler.
+      */
+    /* CompleteClass */
+    override def addListener(`type`: String, handler: js.Function1[/* e */ Date, Unit]): Unit = js.native
+    
+    /**
+      * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
+      */
+    /* CompleteClass */
+    override def addPanel(panel: typings.amcharts.stockPanelMod.default): Unit = js.native
+    
+    /**
+      * Adds panel to the stock chart at a specified index.
+      * Requires stockChart.validateNow() method to be called after this action.
+      */
+    /* CompleteClass */
+    override def addPanelAt(panel: typings.amcharts.stockPanelMod.default, index: Double): Unit = js.native
+    
+    /**
+      * Specifies if animation was already played.
+      * Animation is only played once, when chart is rendered for the first time.
+      * If you want the animation to be repeated, set this property to false.
+      */
+    /* CompleteClass */
+    var animationPlayed: Boolean = js.native
+    
+    /**
+      * Balloon object.
+      */
+    /* CompleteClass */
+    var balloon: typings.amcharts.amBalloonMod.default = js.native
+    
+    /**
+      * Settings for category axes.
+      */
+    /* CompleteClass */
+    var categoryAxesSettings: typings.amcharts.categoryAxesSettingsMod.default = js.native
+    
+    /**
+      * Indicates if the chart is created.
+      */
+    /* CompleteClass */
+    var chartCreated: Boolean = js.native
+    
+    /**
+      * Chart cursor settings.
+      */
+    /* CompleteClass */
+    var chartCursorSettings: typings.amcharts.chartCursorSettingsMod.default = js.native
+    
+    /**
+      * Chart scrollbar settings.
+      */
+    /* CompleteClass */
+    var chartScrollbarSettings: typings.amcharts.chartScrollbarSettingsMod.default = js.native
+    
+    /**
+      * Destroys chart, all timeouts and listeners.
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Array of colors used by data sets if no color was set explicitly on data set itself.
+      * [
+      * #FF6600, "#FCD202", "#B0DE09", "#0D8ECF", "#2A0CD0", "#CD0D74", "#CC0000",
+      * "#00CC00", "#0000CC", "#DDDDDD", "#999999", "#333333", "#990000"
+      * ]
+      */
+    /* CompleteClass */
+    var colors: js.Array[js.Any] = js.native
+    
+    /**
+      * Array of data sets selected for comparing.
+      */
+    /* CompleteClass */
+    var comparedDataSets: js.Array[js.Any] = js.native
+    
+    /**
+      * DataSetSelector object.
+      * You can add it if you have more than one data set and want users to be able to select/compare them.
+      */
+    /* CompleteClass */
+    var dataSetSelector: typings.amcharts.dataSetSelectorMod.default = js.native
+    
+    /**
+      * Array of DataSets.
+      */
+    /* CompleteClass */
+    var dataSets: js.Array[js.Any] = js.native
+    
+    /**
+      * Current end date of the selected period, get only.
+      * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
+      */
+    /* CompleteClass */
+    var endDate: typings.std.Date = js.native
+    
+    /**
+      * Defines on which day week starts. 0 - Sunday, 1 - Monday..
+      * @default 1
+      */
+    /* CompleteClass */
+    var firstDayOfWeek: Double = js.native
+    
+    /**
+      * If set to true the scope of the data view will be set to the end after data update.
+      */
+    /* CompleteClass */
+    var glueToTheEnd: Boolean = js.native
+    
+    /**
+      * Hides event bullets.
+      */
+    /* CompleteClass */
+    override def hideStockEvents(): Unit = js.native
+    
+    /**
+      * Legend settings.
+      */
+    /* CompleteClass */
+    var legendSettings: typings.amcharts.legendSettingsMod.default = js.native
+    
+    /**
+      * Data set selected as main.
+      */
+    /* CompleteClass */
+    var mainDataSet: typings.amcharts.dataSetMod.default = js.native
+    
+    /**
+      * Array of StockPanels (charts).
+      */
+    /* CompleteClass */
+    var panels: js.Array[js.Any] = js.native
+    
+    /**
+      * Settings for stock panels.
+      */
+    /* CompleteClass */
+    var panelsSettings: typings.amcharts.panelSettingsMod.default = js.native
+    
+    /**
+      * Period selector object.
+      * You can add it if you want user's to be able to enter date ranges or
+      * zoom chart with predefined period buttons.
+      */
+    /* CompleteClass */
+    var periodSelector: typings.amcharts.periodSelectorMod.default = js.native
+    
+    /**
+      * Removes event listener from chart object.
+      */
+    /* CompleteClass */
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    
+    /**
+      * Removes panel from the stock chart. Requires stockChart.validateNow() method to be called after this action.
+      */
+    /* CompleteClass */
+    override def removePanel(panel: typings.amcharts.stockPanelMod.default): Unit = js.native
+    
+    /**
+      * Scrollbar's chart object, get only.
+      */
+    /* CompleteClass */
+    var scrollbarChart: typings.amcharts.amSerialChartMod.default = js.native
+    
+    /**
+      * Shows event bullets.
+      */
+    /* CompleteClass */
+    override def showStockEvents(): Unit = js.native
+    
+    /**
+      * Current start date of the selected period, get only.
+      * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
+      */
+    /* CompleteClass */
+    var startDate: typings.std.Date = js.native
+    
+    /**
+      * Settings for stock events.
+      */
+    /* CompleteClass */
+    var stockEventsSettings: js.Any = js.native
+    
+    /**
+      * Method which should be called after data was changed.
+      */
+    /* CompleteClass */
+    override def validateData(): Unit = js.native
+    
+    /**
+      * Method which forces the stock chart to rebuild. Should be called after properties are changed.
+      */
+    /* CompleteClass */
+    override def validateNow(): Unit = js.native
+    
+    /**
+      * Settings for value axes.
+      */
+    /* CompleteClass */
+    var valueAxesSettings: typings.amcharts.valueAxesSettingsMod.default = js.native
+    
+    /**
+      * read-only. Indicates current version of a script.
+      */
+    /* CompleteClass */
+    var version: String = js.native
+    
+    /**
+      * Zooms chart to specified dates. startDate, endDate - Date objects.
+      */
+    /* CompleteClass */
+    override def zoom(startDate: typings.std.Date, endDate: typings.std.Date): Unit = js.native
+    
+    /**
+      * Zooms out the chart.
+      */
+    /* CompleteClass */
+    override def zoomOut(): Unit = js.native
+    
+    /**
+      * Specifies whether the chart should zoom-out when main data set is changed.
+      */
+    /* CompleteClass */
+    var zoomOutOnDataSetChange: Boolean = js.native
+  }
   
-  @js.native
   trait AmStockChart extends StObject {
     
     /**
@@ -22,55 +256,55 @@ object amStockChartMod {
       * "rollOverStockEvent", "zoomed".
       * @param handler - The event handler.
       */
-    def addListener(`type`: String, handler: js.Function1[/* e */ Date, Unit]): Unit = js.native
+    def addListener(`type`: String, handler: js.Function1[/* e */ Date, Unit]): Unit
     
     /**
       * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
       */
-    def addPanel(panel: typings.amcharts.stockPanelMod.default): Unit = js.native
+    def addPanel(panel: typings.amcharts.stockPanelMod.default): Unit
     
     /**
       * Adds panel to the stock chart at a specified index.
       * Requires stockChart.validateNow() method to be called after this action.
       */
-    def addPanelAt(panel: typings.amcharts.stockPanelMod.default, index: Double): Unit = js.native
+    def addPanelAt(panel: typings.amcharts.stockPanelMod.default, index: Double): Unit
     
     /**
       * Specifies if animation was already played.
       * Animation is only played once, when chart is rendered for the first time.
       * If you want the animation to be repeated, set this property to false.
       */
-    var animationPlayed: Boolean = js.native
+    var animationPlayed: Boolean
     
     /**
       * Balloon object.
       */
-    var balloon: typings.amcharts.amBalloonMod.default = js.native
+    var balloon: typings.amcharts.amBalloonMod.default
     
     /**
       * Settings for category axes.
       */
-    var categoryAxesSettings: typings.amcharts.categoryAxesSettingsMod.default = js.native
+    var categoryAxesSettings: typings.amcharts.categoryAxesSettingsMod.default
     
     /**
       * Indicates if the chart is created.
       */
-    var chartCreated: Boolean = js.native
+    var chartCreated: Boolean
     
     /**
       * Chart cursor settings.
       */
-    var chartCursorSettings: typings.amcharts.chartCursorSettingsMod.default = js.native
+    var chartCursorSettings: typings.amcharts.chartCursorSettingsMod.default
     
     /**
       * Chart scrollbar settings.
       */
-    var chartScrollbarSettings: typings.amcharts.chartScrollbarSettingsMod.default = js.native
+    var chartScrollbarSettings: typings.amcharts.chartScrollbarSettingsMod.default
     
     /**
       * Destroys chart, all timeouts and listeners.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * Array of colors used by data sets if no color was set explicitly on data set itself.
@@ -79,138 +313,138 @@ object amStockChartMod {
       * "#00CC00", "#0000CC", "#DDDDDD", "#999999", "#333333", "#990000"
       * ]
       */
-    var colors: js.Array[_] = js.native
+    var colors: js.Array[js.Any]
     
     /**
       * Array of data sets selected for comparing.
       */
-    var comparedDataSets: js.Array[_] = js.native
+    var comparedDataSets: js.Array[js.Any]
     
     /**
       * DataSetSelector object.
       * You can add it if you have more than one data set and want users to be able to select/compare them.
       */
-    var dataSetSelector: typings.amcharts.dataSetSelectorMod.default = js.native
+    var dataSetSelector: typings.amcharts.dataSetSelectorMod.default
     
     /**
       * Array of DataSets.
       */
-    var dataSets: js.Array[_] = js.native
+    var dataSets: js.Array[js.Any]
     
     /**
       * Current end date of the selected period, get only.
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
-    var endDate: typings.std.Date = js.native
+    var endDate: typings.std.Date
     
     /**
       * Defines on which day week starts. 0 - Sunday, 1 - Monday..
       * @default 1
       */
-    var firstDayOfWeek: Double = js.native
+    var firstDayOfWeek: Double
     
     /**
       * If set to true the scope of the data view will be set to the end after data update.
       */
-    var glueToTheEnd: Boolean = js.native
+    var glueToTheEnd: Boolean
     
     /**
       * Hides event bullets.
       */
-    def hideStockEvents(): Unit = js.native
+    def hideStockEvents(): Unit
     
     /**
       * Legend settings.
       */
-    var legendSettings: typings.amcharts.legendSettingsMod.default = js.native
+    var legendSettings: typings.amcharts.legendSettingsMod.default
     
     /**
       * Data set selected as main.
       */
-    var mainDataSet: typings.amcharts.dataSetMod.default = js.native
+    var mainDataSet: typings.amcharts.dataSetMod.default
     
     /**
       * Array of StockPanels (charts).
       */
-    var panels: js.Array[_] = js.native
+    var panels: js.Array[js.Any]
     
     /**
       * Settings for stock panels.
       */
-    var panelsSettings: typings.amcharts.panelSettingsMod.default = js.native
+    var panelsSettings: typings.amcharts.panelSettingsMod.default
     
     /**
       * Period selector object.
       * You can add it if you want user's to be able to enter date ranges or
       * zoom chart with predefined period buttons.
       */
-    var periodSelector: typings.amcharts.periodSelectorMod.default = js.native
+    var periodSelector: typings.amcharts.periodSelectorMod.default
     
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
     
     /**
       * Removes panel from the stock chart. Requires stockChart.validateNow() method to be called after this action.
       */
-    def removePanel(panel: typings.amcharts.stockPanelMod.default): Unit = js.native
+    def removePanel(panel: typings.amcharts.stockPanelMod.default): Unit
     
     /**
       * Scrollbar's chart object, get only.
       */
-    var scrollbarChart: typings.amcharts.amSerialChartMod.default = js.native
+    var scrollbarChart: typings.amcharts.amSerialChartMod.default
     
     /**
       * Shows event bullets.
       */
-    def showStockEvents(): Unit = js.native
+    def showStockEvents(): Unit
     
     /**
       * Current start date of the selected period, get only.
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
-    var startDate: typings.std.Date = js.native
+    var startDate: typings.std.Date
     
     /**
       * Settings for stock events.
       */
-    var stockEventsSettings: js.Any = js.native
+    var stockEventsSettings: js.Any
     
     /**
       * Method which should be called after data was changed.
       */
-    def validateData(): Unit = js.native
+    def validateData(): Unit
     
     /**
       * Method which forces the stock chart to rebuild. Should be called after properties are changed.
       */
-    def validateNow(): Unit = js.native
+    def validateNow(): Unit
     
     /**
       * Settings for value axes.
       */
-    var valueAxesSettings: typings.amcharts.valueAxesSettingsMod.default = js.native
+    var valueAxesSettings: typings.amcharts.valueAxesSettingsMod.default
     
     /**
       * read-only. Indicates current version of a script.
       */
-    var version: String = js.native
+    var version: String
     
     /**
       * Zooms chart to specified dates. startDate, endDate - Date objects.
       */
-    def zoom(startDate: typings.std.Date, endDate: typings.std.Date): Unit = js.native
+    def zoom(startDate: typings.std.Date, endDate: typings.std.Date): Unit
     
     /**
       * Zooms out the chart.
       */
-    def zoomOut(): Unit = js.native
+    def zoomOut(): Unit
     
     /**
       * Specifies whether the chart should zoom-out when main data set is changed.
       */
-    var zoomOutOnDataSetChange: Boolean = js.native
+    var zoomOutOnDataSetChange: Boolean
   }
   object AmStockChart {
     
@@ -226,17 +460,17 @@ object amStockChartMod {
       chartCursorSettings: typings.amcharts.chartCursorSettingsMod.default,
       chartScrollbarSettings: typings.amcharts.chartScrollbarSettingsMod.default,
       clear: () => Unit,
-      colors: js.Array[_],
-      comparedDataSets: js.Array[_],
+      colors: js.Array[js.Any],
+      comparedDataSets: js.Array[js.Any],
       dataSetSelector: typings.amcharts.dataSetSelectorMod.default,
-      dataSets: js.Array[_],
+      dataSets: js.Array[js.Any],
       endDate: typings.std.Date,
       firstDayOfWeek: Double,
       glueToTheEnd: Boolean,
       hideStockEvents: () => Unit,
       legendSettings: typings.amcharts.legendSettingsMod.default,
       mainDataSet: typings.amcharts.dataSetMod.default,
-      panels: js.Array[_],
+      panels: js.Array[js.Any],
       panelsSettings: typings.amcharts.panelSettingsMod.default,
       periodSelector: typings.amcharts.periodSelectorMod.default,
       removeListener: (typings.amcharts.amChartMod.default, String, js.Any) => Unit,
@@ -291,13 +525,13 @@ object amStockChartMod {
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
       @scala.inline
-      def setComparedDataSets(value: js.Array[_]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
+      def setComparedDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComparedDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "comparedDataSets", js.Array(value :_*))
@@ -306,7 +540,7 @@ object amStockChartMod {
       def setDataSetSelector(value: typings.amcharts.dataSetSelectorMod.default): Self = StObject.set(x, "dataSetSelector", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDataSets(value: js.Array[_]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+      def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
@@ -330,7 +564,7 @@ object amStockChartMod {
       def setMainDataSet(value: typings.amcharts.dataSetMod.default): Self = StObject.set(x, "mainDataSet", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPanels(value: js.Array[_]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      def setPanels(value: js.Array[js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPanelsSettings(value: typings.amcharts.panelSettingsMod.default): Self = StObject.set(x, "panelsSettings", value.asInstanceOf[js.Any])

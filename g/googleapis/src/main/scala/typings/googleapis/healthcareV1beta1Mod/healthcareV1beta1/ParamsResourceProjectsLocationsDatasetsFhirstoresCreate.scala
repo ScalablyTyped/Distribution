@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsFhirstoresCreate extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsFhirstoresCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the FHIR store that is being created. The string must match the
     * following regex: `[\p{L}\p{N}_\-\.]{1,256}`.
     */
-  var fhirStoreId: js.UndefOr[String] = js.native
+  var fhirStoreId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the dataset this FHIR store belongs to.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFhirStore] = js.native
+  var requestBody: js.UndefOr[SchemaFhirStore] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresCreate {
   

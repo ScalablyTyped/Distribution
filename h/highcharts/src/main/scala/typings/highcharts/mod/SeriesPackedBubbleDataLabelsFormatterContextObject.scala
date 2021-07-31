@@ -2,23 +2,23 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SeriesPackedBubbleDataLabelsFormatterContextObject extends PointLabelObject {
+trait SeriesPackedBubbleDataLabelsFormatterContextObject
+  extends StObject
+     with PointLabelObject {
   
   /**
     * The color of the node.
     */
   @JSName("color")
-  var color_SeriesPackedBubbleDataLabelsFormatterContextObject: ColorString = js.native
+  var color_SeriesPackedBubbleDataLabelsFormatterContextObject: ColorString
   
   /**
     * The ID of the node.
     */
   @JSName("key")
-  var key_SeriesPackedBubbleDataLabelsFormatterContextObject: String = js.native
+  var key_SeriesPackedBubbleDataLabelsFormatterContextObject: String
 }
 object SeriesPackedBubbleDataLabelsFormatterContextObject {
   

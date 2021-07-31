@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionThreeDSecureInfo extends StObject {
   
-  var enrolled: String = js.native
+  var enrolled: String
   
-  var liabilityShiftPossible: Boolean = js.native
+  var liabilityShiftPossible: Boolean
   
-  var liabilityShifted: Boolean = js.native
+  var liabilityShifted: Boolean
   
-  var status: String = js.native
+  var status: String
 }
 object TransactionThreeDSecureInfo {
   

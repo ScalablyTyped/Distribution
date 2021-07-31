@@ -3,17 +3,15 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameRouteName[RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */] extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: RouteName = js.native
+  var name: RouteName
   
-  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any = js.native
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
 }
 object NameRouteName {
   
@@ -27,7 +25,7 @@ object NameRouteName {
   }
   
   @scala.inline
-  implicit class NameRouteNameMutableBuilder[Self <: NameRouteName[_, _], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */] (val x: Self with (NameRouteName[RouteName, ParamList])) extends AnyVal {
+  implicit class NameRouteNameMutableBuilder[Self <: NameRouteName[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */] (val x: Self & (NameRouteName[RouteName, ParamList])) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

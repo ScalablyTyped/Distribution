@@ -2,28 +2,26 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTaskSetRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set exists in.
     */
-  var cluster: String = js.native
+  var cluster: String
   
-  var scale: Scale = js.native
+  var scale: Scale
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the service that the task set exists in.
     */
-  var service: String = js.native
+  var service: String
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the task set to update.
     */
-  var taskSet: String = js.native
+  var taskSet: String
 }
 object UpdateTaskSetRequest {
   

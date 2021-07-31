@@ -3,33 +3,31 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterBaseObject extends StObject {
   
-  var allowEmptyValue: js.UndefOr[Boolean] = js.native
+  var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
   
-  var allowReserved: js.UndefOr[Boolean] = js.native
+  var allowReserved: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.native
+  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.native
+  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
   
-  var explode: js.UndefOr[Boolean] = js.native
+  var explode: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.native
+  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object ParameterBaseObject {
   

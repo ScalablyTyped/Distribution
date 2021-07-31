@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourcePolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule group or firewall policy whose resource policy you want to delete. 
     */
-  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn
 }
 object DeleteResourcePolicyRequest {
   

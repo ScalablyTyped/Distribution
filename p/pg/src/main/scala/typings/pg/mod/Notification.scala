@@ -2,17 +2,15 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
-  var processId: Double = js.native
+  var processId: Double
 }
 object Notification {
   

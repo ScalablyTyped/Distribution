@@ -6,21 +6,19 @@ import typings.grommet.baseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hour extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var hour: js.UndefOr[Shape] = js.native
+  var hour: js.UndefOr[Shape] = js.undefined
   
-  var minute: js.UndefOr[Shape] = js.native
+  var minute: js.UndefOr[Shape] = js.undefined
   
-  var second: js.UndefOr[Shape] = js.native
+  var second: js.UndefOr[Shape] = js.undefined
   
-  var size: js.UndefOr[Huge] = js.native
+  var size: js.UndefOr[Huge] = js.undefined
 }
 object Hour {
   
@@ -34,10 +32,10 @@ object Hour {
   implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

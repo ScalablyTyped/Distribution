@@ -2,23 +2,21 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpResponse extends StObject {
   
-  var config: js.Any = js.native
+  var config: js.Any
   
-  var data: js.Array[Entity] = js.native
+  var data: js.Array[Entity]
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  def getHeaders(headerName: String): String = js.native
+  def getHeaders(headerName: String): String
   
-  var saveContext: js.UndefOr[js.Any] = js.native
+  var saveContext: js.UndefOr[js.Any] = js.undefined
   
-  var status: Double = js.native
+  var status: Double
 }
 object HttpResponse {
   

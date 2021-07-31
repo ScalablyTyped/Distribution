@@ -5,42 +5,40 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<FormSelectOptions> * / any */ @js.native
-trait FormSelect extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<FormSelectOptions> * / any */ trait FormSelect extends StObject {
   
   /**
     * Instance of the dropdown plugin for this select
     */
-  var dropdown: Dropdown = js.native
+  var dropdown: Dropdown
   
   /**
     * Dropdown UL element
     */
-  var dropdownOptions: HTMLUListElement = js.native
+  var dropdownOptions: HTMLUListElement
   
   /**
     * Get selected values in an array
     */
-  def getSelectedValues(): js.Array[String] = js.native
+  def getSelectedValues(): js.Array[String]
   
   /**
     * Text input that shows current selected option
     */
-  var input: HTMLInputElement = js.native
+  var input: HTMLInputElement
   
   /**
     * If this is a multiple select
     */
-  var isMultiple: Boolean = js.native
+  var isMultiple: Boolean
   
   /**
     * The select wrapper element
     */
-  var wrapper: Element = js.native
+  var wrapper: Element
 }
 object FormSelect {
   

@@ -5,19 +5,19 @@ import typings.rollup.mod.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-commonjs", JSImport.Default)
+  @JSImport("rollup-plugin-commonjs", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-commonjs", JSImport.Default)
-  @js.native
-  def default(options: RollupCommonJSOptions): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: RollupCommonJSOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait RollupCommonJSOptions extends StObject {
     
     /**
@@ -25,14 +25,14 @@ object mod {
     	 * specifically include/exclude files
     	 * @default undefined
     	 */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
     	 * search for files other than .js files (must already
     	 * be transpiled by a previous plugin!)
     	 * @default [ '.js' ]
     	 */
-    var extensions: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var extensions: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
     	 * sometimes you have to leave require statements
@@ -40,33 +40,33 @@ object mod {
     	 * or a `id => boolean` function. Only use this
     	 * option if you know what you're doing!
     	 */
-    var ignore: js.UndefOr[js.Array[String | (js.Function1[/* id */ String, Boolean])]] = js.native
+    var ignore: js.UndefOr[js.Array[String | (js.Function1[/* id */ String, Boolean])]] = js.undefined
     
     /**
     	 * if true then uses of `global` won't be dealt with by this plugin
     	 * @default false
     	 */
-    var ignoreGlobal: js.UndefOr[Boolean] = js.native
+    var ignoreGlobal: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * non-CommonJS modules will be ignored, but you can also
     	 * specifically include/exclude files
     	 * @default undefined
     	 */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
     	 * explicitly specify unresolvable named exports
     	 * ([see below for more details](https://github.com/rollup/rollup-plugin-commonjs#custom-named-exports))
     	 * @default undefined
     	 */
-    var namedExports: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var namedExports: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
     /**
     	 * if false then skip sourceMap generation for CommonJS modules
     	 * @default true
     	 */
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
   }
   object RollupCommonJSOptions {
     

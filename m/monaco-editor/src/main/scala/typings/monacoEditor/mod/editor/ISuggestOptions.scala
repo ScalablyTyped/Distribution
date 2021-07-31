@@ -5,186 +5,184 @@ import typings.monacoEditor.monacoEditorStrings.insert
 import typings.monacoEditor.monacoEditorStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISuggestOptions extends StObject {
   
   /**
     * Enable graceful matching. Defaults to true.
     */
-  var filterGraceful: js.UndefOr[Boolean] = js.native
+  var filterGraceful: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overwrite word ends on accept. Default to false.
     */
-  var insertMode: js.UndefOr[insert | replace] = js.native
+  var insertMode: js.UndefOr[insert | replace] = js.undefined
   
   /**
     * Favours words that appear close to the cursor.
     */
-  var localityBonus: js.UndefOr[Boolean] = js.native
+  var localityBonus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Max suggestions to show in suggestions. Defaults to 12.
     */
-  var maxVisibleSuggestions: js.UndefOr[Double] = js.native
+  var maxVisibleSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable using global storage for remembering suggestions.
     */
-  var shareSuggestSelections: js.UndefOr[Boolean] = js.native
+  var shareSuggestSelections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show class-suggestions.
     */
-  var showClasses: js.UndefOr[Boolean] = js.native
+  var showClasses: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show color-suggestions.
     */
-  var showColors: js.UndefOr[Boolean] = js.native
+  var showColors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show constant-suggestions.
     */
-  var showConstants: js.UndefOr[Boolean] = js.native
+  var showConstants: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show constructor-suggestions.
     */
-  var showConstructors: js.UndefOr[Boolean] = js.native
+  var showConstructors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show enumMember-suggestions.
     */
-  var showEnumMembers: js.UndefOr[Boolean] = js.native
+  var showEnumMembers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show enum-suggestions.
     */
-  var showEnums: js.UndefOr[Boolean] = js.native
+  var showEnums: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show event-suggestions.
     */
-  var showEvents: js.UndefOr[Boolean] = js.native
+  var showEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show field-suggestions.
     */
-  var showFields: js.UndefOr[Boolean] = js.native
+  var showFields: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show file-suggestions.
     */
-  var showFiles: js.UndefOr[Boolean] = js.native
+  var showFiles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show folder-suggestions.
     */
-  var showFolders: js.UndefOr[Boolean] = js.native
+  var showFolders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show function-suggestions.
     */
-  var showFunctions: js.UndefOr[Boolean] = js.native
+  var showFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable icons in suggestions. Defaults to true.
     */
-  var showIcons: js.UndefOr[Boolean] = js.native
+  var showIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show interface-suggestions.
     */
-  var showInterfaces: js.UndefOr[Boolean] = js.native
+  var showInterfaces: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show issue-suggestions.
     */
-  var showIssues: js.UndefOr[Boolean] = js.native
+  var showIssues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show keyword-suggestions.
     */
-  var showKeywords: js.UndefOr[Boolean] = js.native
+  var showKeywords: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show method-suggestions.
     */
-  var showMethods: js.UndefOr[Boolean] = js.native
+  var showMethods: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show module-suggestions.
     */
-  var showModules: js.UndefOr[Boolean] = js.native
+  var showModules: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show operator-suggestions.
     */
-  var showOperators: js.UndefOr[Boolean] = js.native
+  var showOperators: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show property-suggestions.
     */
-  var showProperties: js.UndefOr[Boolean] = js.native
+  var showProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show reference-suggestions.
     */
-  var showReferences: js.UndefOr[Boolean] = js.native
+  var showReferences: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show snippet-suggestions.
     */
-  var showSnippets: js.UndefOr[Boolean] = js.native
+  var showSnippets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show struct-suggestions.
     */
-  var showStructs: js.UndefOr[Boolean] = js.native
+  var showStructs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show typeParameter-suggestions.
     */
-  var showTypeParameters: js.UndefOr[Boolean] = js.native
+  var showTypeParameters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show unit-suggestions.
     */
-  var showUnits: js.UndefOr[Boolean] = js.native
+  var showUnits: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show user-suggestions.
     */
-  var showUsers: js.UndefOr[Boolean] = js.native
+  var showUsers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show value-suggestions.
     */
-  var showValues: js.UndefOr[Boolean] = js.native
+  var showValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show variable-suggestions.
     */
-  var showVariables: js.UndefOr[Boolean] = js.native
+  var showVariables: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show text-suggestions.
     */
-  var showWords: js.UndefOr[Boolean] = js.native
+  var showWords: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prevent quick suggestions when a snippet is active. Defaults to true.
     */
-  var snippetsPreventQuickSuggestions: js.UndefOr[Boolean] = js.native
+  var snippetsPreventQuickSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Status bar related settings.
     */
-  var statusBar: js.UndefOr[Visible] = js.native
+  var statusBar: js.UndefOr[Visible] = js.undefined
 }
 object ISuggestOptions {
   

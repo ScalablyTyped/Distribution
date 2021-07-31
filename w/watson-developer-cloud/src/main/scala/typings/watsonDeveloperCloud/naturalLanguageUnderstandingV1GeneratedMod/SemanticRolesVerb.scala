@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SemanticRolesVerb. */
-@js.native
 trait SemanticRolesVerb extends StObject {
   
   /** Verb tense. */
-  var tense: js.UndefOr[String] = js.native
+  var tense: js.UndefOr[String] = js.undefined
   
   /** The keyword text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SemanticRolesVerb {
   

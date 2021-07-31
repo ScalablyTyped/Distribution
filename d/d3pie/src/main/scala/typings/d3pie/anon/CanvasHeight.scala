@@ -2,19 +2,17 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasHeight extends StObject {
   
-  var canvasHeight: js.UndefOr[Double] = js.native
+  var canvasHeight: js.UndefOr[Double] = js.undefined
   
-  var canvasWidth: js.UndefOr[Double] = js.native
+  var canvasWidth: js.UndefOr[Double] = js.undefined
   
-  var pieInnerRadius: js.UndefOr[String | Double] = js.native
+  var pieInnerRadius: js.UndefOr[String | Double] = js.undefined
   
-  var pieOuterRadius: js.UndefOr[String | Double] = js.native
+  var pieOuterRadius: js.UndefOr[String | Double] = js.undefined
 }
 object CanvasHeight {
   

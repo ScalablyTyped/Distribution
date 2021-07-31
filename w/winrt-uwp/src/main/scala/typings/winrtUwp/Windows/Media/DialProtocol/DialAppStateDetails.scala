@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the state of the DIAL app. */
-@js.native
 trait DialAppStateDetails extends StObject {
   
   /** Gets the entire XML response that is provided by the app when state of the app was requested. */
-  var fullXml: String = js.native
+  var fullXml: String
   
   /** Gets the state of the application at the time the GetAppStateAsync was completed. */
-  var state: DialAppState = js.native
+  var state: DialAppState
 }
 object DialAppStateDetails {
   

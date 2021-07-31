@@ -3,15 +3,13 @@ package typings.wpapi
 import typings.wpapi.mod.HTTPArgumentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Self extends StObject {
     
-    var self: String = js.native
+    var self: String
   }
   object Self {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: HTTPArgumentType = js.native
+    var `type`: HTTPArgumentType
   }
   object Type {
     

@@ -3,19 +3,17 @@ package typings.pulumiPulumi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object automationConfigMod {
   
   type ConfigMap = StringDictionary[ConfigValue]
   
-  @js.native
   trait ConfigValue extends StObject {
     
-    var secret: js.UndefOr[Boolean] = js.native
+    var secret: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ConfigValue {
     

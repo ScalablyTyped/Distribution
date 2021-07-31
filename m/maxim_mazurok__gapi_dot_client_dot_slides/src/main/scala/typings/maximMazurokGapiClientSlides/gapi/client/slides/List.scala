@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait List extends StObject {
   
   /** The ID of the list. */
-  var listId: js.UndefOr[String] = js.native
+  var listId: js.UndefOr[String] = js.undefined
   
   /**
     * A map of nesting levels to the properties of bullets at the associated level. A list has at most nine levels of nesting, so the possible values for the keys of this map are 0
@@ -19,8 +17,8 @@ trait List extends StObject {
   var nestingLevel: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[js.Any]
+  ] = js.undefined
 }
 object List {
   
@@ -43,7 +41,7 @@ object List {
     def setNestingLevel(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[js.Any]
     ): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline

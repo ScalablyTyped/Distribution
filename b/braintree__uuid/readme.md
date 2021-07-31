@@ -11,8 +11,8 @@ A simple node js implementation of uuid v4 for use with Braintree's JS based SDK
 | Full name          | @braintree/uuid |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 60968 |
+| # dependents       | 3 |
+| # downloads        | 1054064 |
 | # stars            | 0 |
 
 ## Links

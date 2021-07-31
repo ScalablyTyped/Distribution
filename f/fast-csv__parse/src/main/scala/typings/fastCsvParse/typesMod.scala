@@ -4,22 +4,23 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("@fast-csv/parse/build/src/types", "isSyncTransform")
+  @JSImport("@fast-csv/parse/build/src/types", JSImport.Namespace)
   @js.native
-  def isSyncTransform[I /* <: Row[_] */, O /* <: Row[_] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@fast-csv/parse/build/src/types", "isSyncValidate")
-  @js.native
-  def isSyncValidate[R /* <: Row[_] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = js.native
+  @scala.inline
+  def isSyncTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean]
   
-  type AsyncRowTransform[I /* <: Row[_] */, O /* <: Row[_] */] = js.Function2[/* row */ I, /* cb */ RowTransformCallback[O], Unit]
+  @scala.inline
+  def isSyncValidate[R /* <: Row[js.Any] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncValidate")(validate.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean]
   
-  type AsyncRowValidate[R /* <: Row[_] */] = js.Function2[/* row */ R, /* cb */ RowValidateCallback, Unit]
+  type AsyncRowTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] = js.Function2[/* row */ I, /* cb */ RowTransformCallback[O], Unit]
+  
+  type AsyncRowValidate[R /* <: Row[js.Any] */] = js.Function2[/* row */ R, /* cb */ RowValidateCallback, Unit]
   
   type HeaderArray = js.Array[js.UndefOr[String | Null]]
   
@@ -31,11 +32,11 @@ object typesMod {
   
   type RowMap[V] = Record[String, V]
   
-  type RowTransformCallback[R /* <: Row[_] */] = js.Function2[/* error */ js.UndefOr[Error | Null], /* row */ js.UndefOr[R], Unit]
+  type RowTransformCallback[R /* <: Row[js.Any] */] = js.Function2[/* error */ js.UndefOr[Error | Null], /* row */ js.UndefOr[R], Unit]
   
-  type RowTransformFunction[I /* <: Row[_] */, O /* <: Row[_] */] = (SyncRowTransform[I, O]) | (AsyncRowTransform[I, O])
+  type RowTransformFunction[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] = (SyncRowTransform[I, O]) | (AsyncRowTransform[I, O])
   
-  type RowValidate[R /* <: Row[_] */] = AsyncRowValidate[R] | SyncRowValidate[R]
+  type RowValidate[R /* <: Row[js.Any] */] = AsyncRowValidate[R] | SyncRowValidate[R]
   
   type RowValidateCallback = js.Function3[
     /* error */ js.UndefOr[Error | Null], 
@@ -44,25 +45,24 @@ object typesMod {
     Unit
   ]
   
-  @js.native
-  trait RowValidationResult[R /* <: Row[_] */] extends StObject {
+  trait RowValidationResult[R /* <: Row[js.Any] */] extends StObject {
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var row: R | Null = js.native
+    var row: R | Null
   }
   object RowValidationResult {
     
     @scala.inline
-    def apply[R /* <: Row[_] */](isValid: Boolean): RowValidationResult[R] = {
-      val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
+    def apply[R /* <: Row[js.Any] */](isValid: Boolean): RowValidationResult[R] = {
+      val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], row = null)
       __obj.asInstanceOf[RowValidationResult[R]]
     }
     
     @scala.inline
-    implicit class RowValidationResultMutableBuilder[Self <: RowValidationResult[_], R /* <: Row[_] */] (val x: Self with RowValidationResult[R]) extends AnyVal {
+    implicit class RowValidationResultMutableBuilder[Self <: RowValidationResult[?], R /* <: Row[js.Any] */] (val x: Self & RowValidationResult[R]) extends AnyVal {
       
       @scala.inline
       def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
@@ -81,9 +81,9 @@ object typesMod {
     }
   }
   
-  type RowValidatorCallback[R /* <: Row[_] */] = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[RowValidationResult[R]], Unit]
+  type RowValidatorCallback[R /* <: Row[js.Any] */] = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[RowValidationResult[R]], Unit]
   
-  type SyncRowTransform[I /* <: Row[_] */, O /* <: Row[_] */] = js.Function1[/* row */ I, O]
+  type SyncRowTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] = js.Function1[/* row */ I, O]
   
-  type SyncRowValidate[R /* <: Row[_] */] = js.Function1[/* row */ R, Boolean]
+  type SyncRowValidate[R /* <: Row[js.Any] */] = js.Function1[/* row */ R, Boolean]
 }

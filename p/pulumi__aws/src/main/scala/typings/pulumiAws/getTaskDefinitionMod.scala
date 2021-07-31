@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTaskDefinitionMod {
   
-  @JSImport("@pulumi/aws/ecs/getTaskDefinition", "getTaskDefinition")
+  @JSImport("@pulumi/aws/ecs/getTaskDefinition", JSImport.Namespace)
   @js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = js.native
-  @JSImport("@pulumi/aws/ecs/getTaskDefinition", "getTaskDefinition")
-  @js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
+  @scala.inline
+  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
+  
   trait GetTaskDefinitionArgs extends StObject {
     
     /**
       * The family for the latest ACTIVE revision, family and revision (family:revision) for a specific revision in the family, the ARN of the task definition to access to.
       */
-    val taskDefinition: String = js.native
+    val taskDefinition: String
   }
   object GetTaskDefinitionArgs {
     
@@ -39,40 +39,39 @@ object getTaskDefinitionMod {
     }
   }
   
-  @js.native
   trait GetTaskDefinitionResult extends StObject {
     
     /**
       * The family of this task definition
       */
-    val family: String = js.native
+    val family: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The Docker networking mode to use for the containers in this task.
       */
-    val networkMode: String = js.native
+    val networkMode: String
     
     /**
       * The revision of this task definition
       */
-    val revision: Double = js.native
+    val revision: Double
     
     /**
       * The status of this task definition
       */
-    val status: String = js.native
+    val status: String
     
-    val taskDefinition: String = js.native
+    val taskDefinition: String
     
     /**
       * The ARN of the IAM role that containers in this task can assume
       */
-    val taskRoleArn: String = js.native
+    val taskRoleArn: String
   }
   object GetTaskDefinitionResult {
     

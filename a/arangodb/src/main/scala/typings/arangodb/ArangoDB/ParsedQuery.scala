@@ -2,21 +2,19 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedQuery extends StObject {
   
-  var ast: js.Array[QueryAstNode] = js.native
+  var ast: js.Array[QueryAstNode]
   
-  var bindVars: js.Array[String] = js.native
+  var bindVars: js.Array[String]
   
-  var collections: js.Array[String] = js.native
+  var collections: js.Array[String]
   
-  var parameters: js.Array[String] = js.native
+  var parameters: js.Array[String]
   
-  var parsed: Boolean = js.native
+  var parsed: Boolean
 }
 object ParsedQuery {
   

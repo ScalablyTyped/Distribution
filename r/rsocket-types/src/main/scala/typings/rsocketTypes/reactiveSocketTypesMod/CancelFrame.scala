@@ -3,26 +3,26 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 import typings.rsocketTypes.rsocketTypesNumbers.`0x09`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CancelFrame extends Frame {
+trait CancelFrame
+  extends StObject
+     with Frame {
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var streamId: Double = js.native
+  var streamId: Double
   
-  var `type`: `0x09` = js.native
+  var `type`: `0x09`
 }
 object CancelFrame {
   
   @scala.inline
-  def apply(flags: Double, streamId: Double, `type`: `0x09`): CancelFrame = {
+  def apply(flags: Double, streamId: Double): CancelFrame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0x09)
     __obj.asInstanceOf[CancelFrame]
   }
   

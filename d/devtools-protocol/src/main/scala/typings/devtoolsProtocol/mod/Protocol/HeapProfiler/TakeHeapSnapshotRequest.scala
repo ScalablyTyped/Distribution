@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeHeapSnapshotRequest extends StObject {
   
   /**
     * If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken.
     */
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, a raw snapshot without artifical roots will be generated
     */
-  var treatGlobalObjectsAsRoots: js.UndefOr[Boolean] = js.native
+  var treatGlobalObjectsAsRoots: js.UndefOr[Boolean] = js.undefined
 }
 object TakeHeapSnapshotRequest {
   

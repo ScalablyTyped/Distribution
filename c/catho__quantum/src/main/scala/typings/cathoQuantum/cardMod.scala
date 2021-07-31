@@ -15,7 +15,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
@@ -83,12 +82,11 @@ object cardMod {
   
   type Card = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var theme: js.UndefOr[`7`] = js.native
+    var theme: js.UndefOr[`7`] = js.undefined
   }
   object Props {
     

@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsBidding extends StObject {
   
-  def getStrategy(): BiddingStrategy = js.native
+  def getStrategy(): BiddingStrategy
   
-  def getStrategySource(): BiddingStrategySource = js.native
+  def getStrategySource(): BiddingStrategySource
   
-  def getStrategyType(): String = js.native
+  def getStrategyType(): String
 }
 object AdWordsBidding {
   

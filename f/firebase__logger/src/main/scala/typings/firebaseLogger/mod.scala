@@ -6,29 +6,32 @@ import typings.firebaseLogger.loggerMod.LogLevelString
 import typings.firebaseLogger.loggerMod.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@firebase/logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/logger", "LogLevel")
   @js.native
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.firebaseLogger.loggerMod.LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.firebaseLogger.loggerMod.LogLevel & Double] = js.native
     
-    /* 0 */ val DEBUG: typings.firebaseLogger.loggerMod.LogLevel.DEBUG with Double = js.native
+    /* 0 */ val DEBUG: typings.firebaseLogger.loggerMod.LogLevel.DEBUG & Double = js.native
     
-    /* 4 */ val ERROR: typings.firebaseLogger.loggerMod.LogLevel.ERROR with Double = js.native
+    /* 4 */ val ERROR: typings.firebaseLogger.loggerMod.LogLevel.ERROR & Double = js.native
     
-    /* 2 */ val INFO: typings.firebaseLogger.loggerMod.LogLevel.INFO with Double = js.native
+    /* 2 */ val INFO: typings.firebaseLogger.loggerMod.LogLevel.INFO & Double = js.native
     
-    /* 5 */ val SILENT: typings.firebaseLogger.loggerMod.LogLevel.SILENT with Double = js.native
+    /* 5 */ val SILENT: typings.firebaseLogger.loggerMod.LogLevel.SILENT & Double = js.native
     
-    /* 1 */ val VERBOSE: typings.firebaseLogger.loggerMod.LogLevel.VERBOSE with Double = js.native
+    /* 1 */ val VERBOSE: typings.firebaseLogger.loggerMod.LogLevel.VERBOSE & Double = js.native
     
-    /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN with Double = js.native
+    /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN & Double = js.native
   }
   
   @JSImport("@firebase/logger", "Logger")
@@ -44,23 +47,17 @@ object mod {
     def this(name: String) = this()
   }
   
-  @JSImport("@firebase/logger", "setLogLevel")
-  @js.native
-  def setLogLevel(level: LogLevel): Unit = js.native
-  @JSImport("@firebase/logger", "setLogLevel")
-  @js.native
-  def setLogLevel(level: LogLevelString): Unit = js.native
+  @scala.inline
+  def setLogLevel(level: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@firebase/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(): Unit = js.native
-  @JSImport("@firebase/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = js.native
-  @JSImport("@firebase/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: LogCallback): Unit = js.native
-  @JSImport("@firebase/logger", "setUserLogHandler")
-  @js.native
-  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = js.native
+  @scala.inline
+  def setUserLogHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: LogCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserLogHandler")(logCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

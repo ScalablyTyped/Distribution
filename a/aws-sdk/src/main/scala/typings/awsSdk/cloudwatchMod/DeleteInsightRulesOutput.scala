@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInsightRulesOutput extends StObject {
   
   /**
     * An array listing the rules that could not be deleted. You cannot delete built-in rules.
     */
-  var Failures: js.UndefOr[BatchFailures] = js.native
+  var Failures: js.UndefOr[BatchFailures] = js.undefined
 }
 object DeleteInsightRulesOutput {
   

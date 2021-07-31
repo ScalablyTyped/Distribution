@@ -2,31 +2,29 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWorkGroupInput extends StObject {
   
   /**
     * The workgroup configuration that will be updated for the given workgroup.
     */
-  var ConfigurationUpdates: js.UndefOr[WorkGroupConfigurationUpdates] = js.native
+  var ConfigurationUpdates: js.UndefOr[WorkGroupConfigurationUpdates] = js.undefined
   
   /**
     * The workgroup description.
     */
-  var Description: js.UndefOr[WorkGroupDescriptionString] = js.native
+  var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
   
   /**
     * The workgroup state that will be updated for the given workgroup.
     */
-  var State: js.UndefOr[WorkGroupState] = js.native
+  var State: js.UndefOr[WorkGroupState] = js.undefined
   
   /**
     * The specified workgroup that will be updated.
     */
-  var WorkGroup: WorkGroupName = js.native
+  var WorkGroup: WorkGroupName
 }
 object UpdateWorkGroupInput {
   

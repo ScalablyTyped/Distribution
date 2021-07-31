@@ -3,11 +3,11 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageWebSocketInformation extends IWebSocketInformation
+trait MessageWebSocketInformation
+  extends StObject
+     with IWebSocketInformation
 object MessageWebSocketInformation {
   
   @scala.inline

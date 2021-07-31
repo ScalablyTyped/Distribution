@@ -2,23 +2,21 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelRgbComponentInfo extends StObject {
   
   /** The RGB blue channel */
-  var b: Double = js.native
+  var b: Double
   
   /** The RGB green channel */
-  var g: Double = js.native
+  var g: Double
   
   /** Hex string of the color, in the format `#XXXXXX`. */
-  var hex: String = js.native
+  var hex: String
   
   /** The RGB red channel */
-  var r: Double = js.native
+  var r: Double
 }
 object RaphaelRgbComponentInfo {
   

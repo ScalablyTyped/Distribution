@@ -2,61 +2,59 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupSummary extends StObject {
   
   /**
     * ARN associated with the backup.
     */
-  var BackupArn: js.UndefOr[typings.awsSdk.dynamodbMod.BackupArn] = js.native
+  var BackupArn: js.UndefOr[typings.awsSdk.dynamodbMod.BackupArn] = js.undefined
   
   /**
     * Time at which the backup was created.
     */
-  var BackupCreationDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.BackupCreationDateTime] = js.native
+  var BackupCreationDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.BackupCreationDateTime] = js.undefined
   
   /**
     * Time at which the automatic on-demand backup created by DynamoDB will expire. This SYSTEM on-demand backup expires automatically 35 days after its creation.
     */
-  var BackupExpiryDateTime: js.UndefOr[Date] = js.native
+  var BackupExpiryDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Name of the specified backup.
     */
-  var BackupName: js.UndefOr[typings.awsSdk.dynamodbMod.BackupName] = js.native
+  var BackupName: js.UndefOr[typings.awsSdk.dynamodbMod.BackupName] = js.undefined
   
   /**
     * Size of the backup in bytes.
     */
-  var BackupSizeBytes: js.UndefOr[typings.awsSdk.dynamodbMod.BackupSizeBytes] = js.native
+  var BackupSizeBytes: js.UndefOr[typings.awsSdk.dynamodbMod.BackupSizeBytes] = js.undefined
   
   /**
     * Backup can be in one of the following states: CREATING, ACTIVE, DELETED.
     */
-  var BackupStatus: js.UndefOr[typings.awsSdk.dynamodbMod.BackupStatus] = js.native
+  var BackupStatus: js.UndefOr[typings.awsSdk.dynamodbMod.BackupStatus] = js.undefined
   
   /**
     * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
     */
-  var BackupType: js.UndefOr[typings.awsSdk.dynamodbMod.BackupType] = js.native
+  var BackupType: js.UndefOr[typings.awsSdk.dynamodbMod.BackupType] = js.undefined
   
   /**
     * ARN associated with the table.
     */
-  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.native
+  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.undefined
   
   /**
     * Unique identifier for the table.
     */
-  var TableId: js.UndefOr[typings.awsSdk.dynamodbMod.TableId] = js.native
+  var TableId: js.UndefOr[typings.awsSdk.dynamodbMod.TableId] = js.undefined
   
   /**
     * Name of the table.
     */
-  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.native
+  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.undefined
 }
 object BackupSummary {
   

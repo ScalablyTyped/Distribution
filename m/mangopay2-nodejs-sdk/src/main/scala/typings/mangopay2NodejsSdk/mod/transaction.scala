@@ -3,78 +3,78 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transaction {
   
-  @js.native
-  trait TransactionData extends EntityBaseData {
+  trait TransactionData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * Details about the funds that are being credited (DebitedFunds – Fees = CreditedFunds)
       */
-    var CreditedFunds: MoneyData = js.native
+    var CreditedFunds: MoneyData
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: String = js.native
+    var CreditedUserId: String
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
     /**
       * The ID of the wallet that was debited
       */
-    var DebitedWalletId: String = js.native
+    var DebitedWalletId: String
     
     /**
       * When the transaction happened
       */
-    var ExecutionDate: Timestamp = js.native
+    var ExecutionDate: Timestamp
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
     /**
       * The nature of the transaction
       */
-    var Nature: TransactionNature = js.native
+    var Nature: TransactionNature
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The status of the transaction
       */
-    var Status: TransactionStatus = js.native
+    var Status: TransactionStatus
     
     /**
       * The type of the transaction
       */
-    var Type: TransactionType = js.native
+    var Type: TransactionType
   }
   object TransactionData {
     

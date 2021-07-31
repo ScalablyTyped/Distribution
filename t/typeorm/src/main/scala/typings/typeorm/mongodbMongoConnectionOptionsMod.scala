@@ -11,346 +11,345 @@ import typings.typeorm.typeormStrings.mongodb
 import typings.typeorm.typeormStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbMongoConnectionOptionsMod {
   
-  @js.native
   trait MongoConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Sets the range of servers to pick when using NEAREST (lowest ping ms + the latency fence, ex: range of 1 to (1 + 15) ms).
       * Default: 15
       */
-    val acceptableLatencyMS: js.UndefOr[Double] = js.native
+    val acceptableLatencyMS: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the application that created this MongoClient instance. MongoDB 3.4 and newer will print this value in the server log upon establishing each connection. It is also recorded in the slow query log and profile collections
       */
-    val appname: js.UndefOr[String] = js.native
+    val appname: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the authentication mechanism that MongoDB will use to authenticate the connection
       */
-    val authMechanism: js.UndefOr[String] = js.native
+    val authMechanism: js.UndefOr[String] = js.undefined
     
     /**
       * If the database authentication is dependent on another databaseName.
       */
-    val authSource: js.UndefOr[String] = js.native
+    val authSource: js.UndefOr[String] = js.undefined
     
     /**
       * Automatic Client-Side Field Level Encryption configuration.
       */
-    val autoEncryption: js.UndefOr[js.Any] = js.native
+    val autoEncryption: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Reconnect on error. Default: true
       */
-    val autoReconnect: js.UndefOr[Boolean] = js.native
+    val autoReconnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable auto reconnecting for single server instances. Default: true
       */
-    val auto_reconnect: js.UndefOr[Boolean] = js.native
+    val auto_reconnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets a cap on how many operations the driver will buffer up before giving up on getting a working connection,
       * default is -1 which is unlimited.
       */
-    val bufferMaxEntries: js.UndefOr[Double] = js.native
+    val bufferMaxEntries: js.UndefOr[Double] = js.undefined
     
     /**
       * Ensure we check server identify during SSL, set to false to disable checking. Only works for Node 0.12.x or higher. You can pass in a boolean or your own checkServerIdentity override function
       * Default: true
       */
-    val checkServerIdentity: js.UndefOr[Boolean | js.Function] = js.native
+    val checkServerIdentity: js.UndefOr[Boolean | js.Function] = js.undefined
     
     /**
       * Type of compression to use: snappy or zlib
       */
-    val compression: js.UndefOr[js.Any] = js.native
+    val compression: js.UndefOr[js.Any] = js.undefined
     
     /**
       * TCP Connection timeout setting. Default: 30000
       */
-    val connectTimeoutMS: js.UndefOr[Double] = js.native
+    val connectTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets if the driver should connect even if no primary is available. Default: false
       */
-    val connectWithNoPrimary: js.UndefOr[Boolean] = js.native
+    val connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database name to connect to.
       */
-    val database: js.UndefOr[String] = js.native
+    val database: js.UndefOr[String] = js.undefined
     
     /**
       * Enable the wrapping of the callback in the current domain, disabled by default to avoid perf hit. Default: false
       */
-    val domainsEnabled: js.UndefOr[Boolean] = js.native
+    val domainsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Version of IP stack. Can be 4, 6.
       * If undefined, will attempt to connect with IPv6, and will fall back to IPv4 on failure
       */
-    val family: js.UndefOr[Double] = js.native
+    val family: js.UndefOr[Double] = js.undefined
     
     /**
       * Force server to assign _id values instead of driver. Default: false
       */
-    val forceServerObjectId: js.UndefOr[Boolean] = js.native
+    val forceServerObjectId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a file sync write concern. Default: false
       */
-    val fsync: js.UndefOr[Boolean] = js.native
+    val fsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Control if high availability monitoring runs for Replicaset or Mongos proxies. Default true
       */
-    val ha: js.UndefOr[Boolean] = js.native
+    val ha: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The High availability period for replicaset inquiry. Default: 10000
       */
-    val haInterval: js.UndefOr[Double] = js.native
+    val haInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Database host.
       */
-    val host: js.UndefOr[String] = js.native
+    val host: js.UndefOr[String] = js.undefined
     
     /**
       * Specify if the BSON serializer should ignore undefined fields. Default: false
       */
-    val ignoreUndefined: js.UndefOr[Boolean] = js.native
+    val ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a journal write concern. Default: false
       */
-    val j: js.UndefOr[Boolean] = js.native
+    val j: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of milliseconds to wait before initiating keepAlive on the TCP socket. Default: 30000
       */
-    val keepAlive: js.UndefOr[Double] = js.native
+    val keepAlive: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the log level used by the driver logger (error/warn/info/debug).
       */
-    val loggerLevel: js.UndefOr[error | warn | info | debug] = js.native
+    val loggerLevel: js.UndefOr[error | warn | info | debug] = js.undefined
     
     /**
       * Specify a maxStalenessSeconds value for secondary reads, minimum is 90 seconds
       */
-    val maxStalenessSeconds: js.UndefOr[Double] = js.native
+    val maxStalenessSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * If present, the connection pool will be initialized with minSize connections, and will never dip below minSize connections
       */
-    val minSize: js.UndefOr[Double] = js.native
+    val minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable command monitoring for this client. Default: false
       */
-    val monitorCommands: js.UndefOr[Boolean] = js.native
+    val monitorCommands: js.UndefOr[Boolean] = js.undefined
     
     /**
       * TCP Socket NoDelay option. Default: true
       */
-    val noDelay: js.UndefOr[Boolean] = js.native
+    val noDelay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of retries for a tailable cursor. Default: 5
       */
-    val numberOfRetries: js.UndefOr[Double] = js.native
+    val numberOfRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * Database password.
       */
-    val password: js.UndefOr[String] = js.native
+    val password: js.UndefOr[String] = js.undefined
     
     /**
       * A primary key factory object for generation of custom _id keys.
       */
-    val pkFactory: js.UndefOr[js.Any] = js.native
+    val pkFactory: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set the maximum poolSize for each individual server or proxy connection.
       */
-    val poolSize: js.UndefOr[Double] = js.native
+    val poolSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Database host port.
       */
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
     
     /**
       * A Promise library class the application wishes to use such as Bluebird, must be ES6 compatible.
       */
-    val promiseLibrary: js.UndefOr[js.Any] = js.native
+    val promiseLibrary: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Promotes Binary BSON values to native Node Buffers. Default: false
       */
-    val promoteBuffers: js.UndefOr[Boolean] = js.native
+    val promoteBuffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Promotes Long values to number if they fit inside the 53 bits resolution. Default: true
       */
-    val promoteLongs: js.UndefOr[Boolean] = js.native
+    val promoteLongs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Promotes BSON values to native types where possible, set to false to only receive wrapper types. Default: true
       */
-    val promoteValues: js.UndefOr[Boolean] = js.native
+    val promoteValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return document results as raw BSON buffers. Default: false
       */
-    val raw: js.UndefOr[Boolean] = js.native
+    val raw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a read concern for the collection. (only MongoDB 3.2 or higher supported).
       */
-    val readConcern: js.UndefOr[js.Any] = js.native
+    val readConcern: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY,
       * ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
       */
-    val readPreference: js.UndefOr[ReadPreference | String] = js.native
+    val readPreference: js.UndefOr[ReadPreference | String] = js.undefined
     
     /**
       * Read preference tags
       */
-    val readPreferenceTags: js.UndefOr[js.Array[_]] = js.native
+    val readPreferenceTags: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Server will wait #milliseconds between retries. Default 1000
       */
-    val reconnectInterval: js.UndefOr[Double] = js.native
+    val reconnectInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Server attempt to reconnect #times. Default 30
       */
-    val reconnectTries: js.UndefOr[Double] = js.native
+    val reconnectTries: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the replicaset to connect to
       */
-    val replicaSet: js.UndefOr[String] = js.native
+    val replicaSet: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the range of servers to pick when using NEAREST (lowest ping ms + the latency fence, ex: range of 1 to (1 + 15) ms).
       * Default: 15
       */
-    val secondaryAcceptableLatencyMS: js.UndefOr[Double] = js.native
+    val secondaryAcceptableLatencyMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Serialize functions on any object. Default: false
       */
-    val serializeFunctions: js.UndefOr[Boolean] = js.native
+    val serializeFunctions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * TCP Socket timeout setting. Default: 360000
       */
-    val socketTimeoutMS: js.UndefOr[Double] = js.native
+    val socketTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Use ssl connection (needs to have a mongod server with ssl support). Default: false
       */
-    val ssl: js.UndefOr[Boolean] = js.native
+    val ssl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of valid certificates either as Buffers or Strings
       * (needs to have a mongod server with ssl support, 2.4 or higher).
       */
-    val sslCA: js.UndefOr[js.Array[Buffer | String]] = js.native
+    val sslCA: js.UndefOr[js.Array[Buffer | String]] = js.undefined
     
     /**
       * SSL Certificate revocation list binary buffer
       * (needs to have a mongod server with ssl support, 2.4 or higher)
       */
-    val sslCRL: js.UndefOr[String | Buffer] = js.native
+    val sslCRL: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * String or buffer containing the certificate we wish to present
       * (needs to have a mongod server with ssl support, 2.4 or higher)
       */
-    val sslCert: js.UndefOr[String | Buffer] = js.native
+    val sslCert: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * String or buffer containing the certificate private key we wish to present
       * (needs to have a mongod server with ssl support, 2.4 or higher)
       */
-    val sslKey: js.UndefOr[String] = js.native
+    val sslKey: js.UndefOr[String] = js.undefined
     
     /**
       * String or buffer containing the certificate password
       * (needs to have a mongod server with ssl support, 2.4 or higher)
       */
-    val sslPass: js.UndefOr[String | Buffer] = js.native
+    val sslPass: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Validate mongod server certificate against ca (needs to have a mongod server with ssl support, 2.4 or higher).
       * Default: true
       */
-    val sslValidate: js.UndefOr[Boolean] = js.native
+    val sslValidate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_MongoConnectionOptions: mongodb = js.native
+    val type_MongoConnectionOptions: mongodb
     
     /**
       * Connection url where perform connection to.
       */
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
     
     /**
       * Determines whether or not to use the new url parser. Default: false
       */
-    val useNewUrlParser: js.UndefOr[Boolean] = js.native
+    val useNewUrlParser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether or not to use the new Server Discovery and Monitoring engine. Default: false
       * https://github.com/mongodb/node-mongodb-native/releases/tag/v3.2.1
       */
-    val useUnifiedTopology: js.UndefOr[Boolean] = js.native
+    val useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database username.
       */
-    val username: js.UndefOr[String] = js.native
+    val username: js.UndefOr[String] = js.undefined
     
     /**
       * Validate MongoClient passed in options for correctness. Default: false
       */
-    val validateOptions: js.UndefOr[Boolean | js.Any] = js.native
+    val validateOptions: js.UndefOr[Boolean | js.Any] = js.undefined
     
     /**
       * The write concern.
       */
-    val w: js.UndefOr[String | Double] = js.native
+    val w: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The write concern timeout value.
       */
-    val wtimeout: js.UndefOr[Double] = js.native
+    val wtimeout: js.UndefOr[Double] = js.undefined
   }
   object MongoConnectionOptions {
     
     @scala.inline
-    def apply(`type`: mongodb): MongoConnectionOptions = {
+    def apply(): MongoConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mongodb")
       __obj.asInstanceOf[MongoConnectionOptions]
     }
     
@@ -595,7 +594,7 @@ object mongodbMongoConnectionOptionsMod {
       def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReadPreferenceTags(value: js.Array[_]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
+      def setReadPreferenceTags(value: js.Array[js.Any]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)

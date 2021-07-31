@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedIdentityId extends StObject {
   
   /**
     * The error code indicating the type of error that occurred.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.cognitoidentityMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.cognitoidentityMod.ErrorCode] = js.undefined
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.undefined
 }
 object UnprocessedIdentityId {
   

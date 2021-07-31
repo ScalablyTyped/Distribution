@@ -2,29 +2,29 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INodeStore extends IStore {
+trait INodeStore
+  extends StObject
+     with IStore {
   
   /** [Property] (Number) */
-  var isExpandingOrCollapsing: js.UndefOr[Double] = js.native
+  var isExpandingOrCollapsing: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Boolean) */
-  var isNodeStore: js.UndefOr[Boolean] = js.native
+  var isNodeStore: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Model) */
-  var node: js.UndefOr[IModel] = js.native
+  var node: js.UndefOr[IModel] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var rootVisible: js.UndefOr[Boolean] = js.native
+  var rootVisible: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.TreeStore) */
-  var treeStore: js.UndefOr[ITreeStore] = js.native
+  var treeStore: js.UndefOr[ITreeStore] = js.undefined
 }
 object INodeStore {
   

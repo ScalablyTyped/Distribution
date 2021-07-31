@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -63,9 +62,9 @@ class Rect () extends StObject {
     * false otherwise.
     */
   def contains(x: Double, y: Double): Boolean = js.native
-  def contains(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Boolean = js.native
   def contains(x: Double, y: Double, w: Double): Boolean = js.native
   def contains(x: Double, y: Double, w: Double, h: Double): Boolean = js.native
+  def contains(x: Double, y: Double, w: Unit, h: Double): Boolean = js.native
   
   /**
     * Indicates whether this Rect contains the given Point.
@@ -240,9 +239,9 @@ class Rect () extends StObject {
     * @param {number=} h The Height of the Rect to include in the new bounds, defaults to zero.
     */
   def union(x: Double, y: Double): Rect = js.native
-  def union(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Rect = js.native
   def union(x: Double, y: Double, w: Double): Rect = js.native
   def union(x: Double, y: Double, w: Double, h: Double): Rect = js.native
+  def union(x: Double, y: Double, w: Unit, h: Double): Rect = js.native
   
   /**
     * Modify this Rect to be exactly big enough to contain both the original Rect and the given Point.
@@ -268,6 +267,10 @@ class Rect () extends StObject {
 }
 object Rect {
   
+  @JSImport("go", "Rect")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function indicates whether a Rect contains the given Point/Rect.
     * @param {number} rx The X coordinate of a Rect.
@@ -281,27 +284,14 @@ object Rect {
     * false otherwise.
     */
   /* static member */
-  @JSImport("go", "Rect.contains")
-  @js.native
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = js.native
-  @JSImport("go", "Rect.contains")
-  @js.native
-  def contains(
-    rx: Double,
-    ry: Double,
-    rw: Double,
-    rh: Double,
-    x: Double,
-    y: Double,
-    w: js.UndefOr[scala.Nothing],
-    h: Double
-  ): Boolean = js.native
-  @JSImport("go", "Rect.contains")
-  @js.native
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = js.native
-  @JSImport("go", "Rect.contains")
-  @js.native
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = js.native
+  @scala.inline
+  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Unit, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * This static function indicates whether a Rect partly or wholly overlaps the given Rect.
@@ -315,25 +305,22 @@ object Rect {
     * @param {number} h
     */
   /* static member */
-  @JSImport("go", "Rect.intersects")
-  @js.native
-  def intersects(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = js.native
+  @scala.inline
+  def intersects(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * This static function can be used to read in a Rect from a string that was produced by Rect.stringify.
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Rect.parse")
-  @js.native
-  def parse(str: String): Rect = js.native
+  @scala.inline
+  def parse(str: String): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Rect]
   
   /**
     * This static function can be used to write out a Rect as a string that can be read by Rect.parse.
     * @param {Rect} val
     */
   /* static member */
-  @JSImport("go", "Rect.stringify")
-  @js.native
-  def stringify(`val`: Rect): String = js.native
+  @scala.inline
+  def stringify(`val`: Rect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

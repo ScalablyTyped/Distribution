@@ -6,10 +6,13 @@ import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("scoped-http-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("scoped-http-client", "ScopedClient")
   @js.native
@@ -17,9 +20,9 @@ object mod {
     def this(url: String, options: Options) = this()
     
     def auth(): ScopedClient = js.native
-    def auth(user: js.UndefOr[scala.Nothing], pass: String): ScopedClient = js.native
     def auth(user: String): ScopedClient = js.native
     def auth(user: String, pass: String): ScopedClient = js.native
+    def auth(user: Unit, pass: String): ScopedClient = js.native
     
     def del(): ResponseCallback = js.native
     def del(callback: RequestCallback): ResponseCallback = js.native
@@ -95,38 +98,34 @@ object mod {
     def timeout(time: js.Any): ScopedClient = js.native
   }
   
-  @JSImport("scoped-http-client", "create")
-  @js.native
-  def create(): ScopedClient = js.native
-  @JSImport("scoped-http-client", "create")
-  @js.native
-  def create(options: Options): ScopedClient = js.native
-  @JSImport("scoped-http-client", "create")
-  @js.native
-  def create(url: js.UndefOr[scala.Nothing], options: Options): ScopedClient = js.native
-  @JSImport("scoped-http-client", "create")
-  @js.native
-  def create(url: String): ScopedClient = js.native
-  @JSImport("scoped-http-client", "create")
-  @js.native
-  def create(url: String, options: Options): ScopedClient = js.native
+  @scala.inline
+  def create(): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ScopedClient]
+  @scala.inline
+  def create(options: Options): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
+  @scala.inline
+  def create(url: String): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
+  @scala.inline
+  def create(url: String, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
+  @scala.inline
+  def create(url: Unit, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
   
-  @js.native
-  trait Options extends ClientRequestArgs {
+  trait Options
+    extends StObject
+       with ClientRequestArgs {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var httpAgent: js.UndefOr[Agent | Boolean] = js.native
+    var httpAgent: js.UndefOr[Agent | Boolean] = js.undefined
     
-    var httpsAgent: js.UndefOr[Agent | Boolean] = js.native
+    var httpsAgent: js.UndefOr[Agent | Boolean] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
-    var slashes: js.UndefOr[js.Any] = js.native
+    var slashes: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

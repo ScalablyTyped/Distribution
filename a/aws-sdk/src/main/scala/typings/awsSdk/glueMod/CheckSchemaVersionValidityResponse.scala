@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckSchemaVersionValidityResponse extends StObject {
   
   /**
     * A validation failure error message.
     */
-  var Error: js.UndefOr[SchemaValidationError] = js.native
+  var Error: js.UndefOr[SchemaValidationError] = js.undefined
   
   /**
     * Return true, if the schema is valid and false otherwise.
     */
-  var Valid: js.UndefOr[IsVersionValid] = js.native
+  var Valid: js.UndefOr[IsVersionValid] = js.undefined
 }
 object CheckSchemaVersionValidityResponse {
   

@@ -2,24 +2,22 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRegionInstanceGroupsListInstancesRequest extends StObject {
   
   /**
     * Instances in which state should be returned. Valid options are:
     * &#39;ALL&#39;, &#39;RUNNING&#39;. By default, it lists all instances.
     */
-  var instanceState: js.UndefOr[String] = js.native
+  var instanceState: js.UndefOr[String] = js.undefined
   
   /**
     * Name of port user is interested in. It is optional. If it is set, only
     * information about this ports will be returned. If it is not set, all the
     * named ports will be returned. Always lists all instances.
     */
-  var portName: js.UndefOr[String] = js.native
+  var portName: js.UndefOr[String] = js.undefined
 }
 object SchemaRegionInstanceGroupsListInstancesRequest {
   

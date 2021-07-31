@@ -2,28 +2,28 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.raphael.mod.RaphaelHslComponentInfo because var conflicts: h, s. Inlined l
-- typings.raphael.mod.RaphaelHsbComponentInfo because var conflicts: b. Inlined h, s */ @js.native
-trait RaphaelFullComponentInfo extends RaphaelRgbComponentInfo {
+- typings.raphael.mod.RaphaelHsbComponentInfo because var conflicts: b. Inlined h, s */ trait RaphaelFullComponentInfo
+  extends StObject
+     with RaphaelRgbComponentInfo {
   
   /**
     * The HSB or HSL hue channel.
     */
-  var h: Double = js.native
+  var h: Double
   
   /**
     * The HSL luminosity channel.
     */
-  var l: Double = js.native
+  var l: Double
   
   /**
     * The HSB or HSL saturation channel.
     */
-  var s: Double = js.native
+  var s: Double
 }
 object RaphaelFullComponentInfo {
   

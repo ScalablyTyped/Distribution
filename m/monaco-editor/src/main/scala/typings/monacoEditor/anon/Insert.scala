@@ -3,15 +3,13 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Insert extends StObject {
   
-  var insert: IRange = js.native
+  var insert: IRange
   
-  var replace: IRange = js.native
+  var replace: IRange
 }
 object Insert {
   

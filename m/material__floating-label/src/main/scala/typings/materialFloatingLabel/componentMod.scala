@@ -5,7 +5,6 @@ import typings.materialFloatingLabel.foundationMod.MDCFloatingLabelFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -13,7 +12,7 @@ object componentMod {
   @JSImport("@material/floating-label/component", "MDCFloatingLabel")
   @js.native
   class MDCFloatingLabel protected () extends MDCComponent[MDCFloatingLabelFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCFloatingLabelFoundation, args: js.Any*) = this()
     
     /**
@@ -39,9 +38,12 @@ object componentMod {
   /* static members */
   object MDCFloatingLabel {
     
-    @JSImport("@material/floating-label/component", "MDCFloatingLabel.attachTo")
+    @JSImport("@material/floating-label/component", "MDCFloatingLabel")
     @js.native
-    def attachTo(root: Element): MDCFloatingLabel = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCFloatingLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFloatingLabel]
   }
   
   type MDCFloatingLabelFactory = js.Function2[

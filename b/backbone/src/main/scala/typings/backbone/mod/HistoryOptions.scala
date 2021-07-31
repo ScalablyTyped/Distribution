@@ -2,15 +2,15 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistoryOptions extends Silenceable {
+trait HistoryOptions
+  extends StObject
+     with Silenceable {
   
-  var pushState: js.UndefOr[Boolean] = js.native
+  var pushState: js.UndefOr[Boolean] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object HistoryOptions {
   

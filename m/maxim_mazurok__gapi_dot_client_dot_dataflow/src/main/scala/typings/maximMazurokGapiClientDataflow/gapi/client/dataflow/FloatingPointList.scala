@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloatingPointList extends StObject {
   
   /** Elements of the list. */
-  var elements: js.UndefOr[js.Array[Double]] = js.native
+  var elements: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object FloatingPointList {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CostCategoryProcessingStatus extends StObject {
   
   /**
     *  The Cost Management product name of the applied status. 
     */
-  var Component: js.UndefOr[CostCategoryStatusComponent] = js.native
+  var Component: js.UndefOr[CostCategoryStatusComponent] = js.undefined
   
   /**
     *  The process status for a specific cost category. 
     */
-  var Status: js.UndefOr[CostCategoryStatus] = js.native
+  var Status: js.UndefOr[CostCategoryStatus] = js.undefined
 }
 object CostCategoryProcessingStatus {
   

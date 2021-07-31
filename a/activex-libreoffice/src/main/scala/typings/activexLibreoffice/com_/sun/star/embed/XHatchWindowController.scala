@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,25 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A hatch window owner is responsible to handle resize/move requests sent by the window. It is also responsible to validate tracking rectangle size.
   */
-@js.native
-trait XHatchWindowController extends XInterface {
+trait XHatchWindowController
+  extends StObject
+     with XInterface {
   
-  def activated(): Unit = js.native
+  def activated(): Unit
   
   /**
     * returns the closest valid rectangle to the provided one.
     * @param aRect a new selected position and size of the tracking rectangle
     * @returns the closest valid position and size to the provided one
     */
-  def calcAdjustedRectangle(aRect: Rectangle): Rectangle = js.native
+  def calcAdjustedRectangle(aRect: Rectangle): Rectangle
   
-  def deactivated(): Unit = js.native
+  def deactivated(): Unit
   
   /**
     * requests window owner to resize/move the window.
     * @param aRect the new requested position and size of the window
     */
-  def requestPositioning(aRect: Rectangle): Unit = js.native
+  def requestPositioning(aRect: Rectangle): Unit
 }
 object XHatchWindowController {
   

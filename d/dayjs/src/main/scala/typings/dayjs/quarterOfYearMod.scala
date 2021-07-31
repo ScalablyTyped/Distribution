@@ -6,7 +6,6 @@ import typings.dayjs.esmMod.PluginFunc
 import typings.dayjs.esmMod.QUnitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quarterOfYearMod extends Shortcut {

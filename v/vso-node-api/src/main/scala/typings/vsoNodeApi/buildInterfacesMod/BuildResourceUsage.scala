@@ -2,31 +2,29 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildResourceUsage extends StObject {
   
   /**
     * The number of build agents.
     */
-  var distributedTaskAgents: Double = js.native
+  var distributedTaskAgents: Double
   
   /**
     * The number of paid private agent slots.
     */
-  var paidPrivateAgentSlots: Double = js.native
+  var paidPrivateAgentSlots: Double
   
   /**
     * The total usage.
     */
-  var totalUsage: Double = js.native
+  var totalUsage: Double
   
   /**
     * The number of XAML controllers.
     */
-  var xamlControllers: Double = js.native
+  var xamlControllers: Double
 }
 object BuildResourceUsage {
   

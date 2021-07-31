@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartSelectEndEvent extends ChartEvent {
+trait ChartSelectEndEvent
+  extends StObject
+     with ChartEvent {
   
-  var axis: js.UndefOr[js.Any] = js.native
+  var axis: js.UndefOr[js.Any] = js.undefined
   
-  var from: js.UndefOr[js.Any] = js.native
+  var from: js.UndefOr[js.Any] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.native
+  var to: js.UndefOr[js.Any] = js.undefined
 }
 object ChartSelectEndEvent {
   

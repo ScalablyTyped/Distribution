@@ -3,14 +3,12 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.runtime.WebViewPartition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Partitions extends StObject {
   
   /** Webview partition list */
-  var partitions: js.Array[WebViewPartition] = js.native
+  var partitions: js.Array[WebViewPartition]
 }
 object Partitions {
   

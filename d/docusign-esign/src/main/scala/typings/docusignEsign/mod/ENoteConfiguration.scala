@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ENoteConfiguration extends StObject {
   
   /**
     * When **false**, the user must configure Connect and eOriginal for the integration to work.
     */
-  var connectConfigured: js.UndefOr[String] = js.native
+  var connectConfigured: js.UndefOr[String] = js.undefined
   
   /**
     * When **false**, the user must configure eNote for the feature to work.
     *
     * **Note**: In the account settings, `allowENoteEOriginal` must be set to **true** to make changes to the configuration.
     */
-  var eNoteConfigured: js.UndefOr[String] = js.native
+  var eNoteConfigured: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the organization.
     */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The user's username.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object ENoteConfiguration {
   

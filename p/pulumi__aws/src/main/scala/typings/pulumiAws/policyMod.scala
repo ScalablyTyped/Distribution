@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policyMod {
@@ -70,6 +69,10 @@ object policyMod {
   /* static members */
   object Policy {
     
+    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -79,62 +82,56 @@ object policyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Policy = js.native
-    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Policy = js.native
-    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState): Policy = js.native
-    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appautoscaling/policy", "Policy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/policy.Policy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/policy.Policy */ Boolean]
   }
   
-  @js.native
   trait PolicyArgs extends StObject {
     
     /**
       * The name of the policy. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy type. Valid values are `StepScaling` and `TargetTrackingScaling`. Defaults to `StepScaling`. Certain services only support only one policy type. For more information see the [Target Tracking Scaling Policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) and [Step Scaling Policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.html) documentation.
       */
-    val policyType: js.UndefOr[Input[String]] = js.native
+    val policyType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val scalableDimension: Input[String] = js.native
+    val scalableDimension: Input[String]
     
     /**
       * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val serviceNamespace: Input[String] = js.native
+    val serviceNamespace: Input[String]
     
     /**
       * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
       */
     val stepScalingPolicyConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.appautoscaling.PolicyStepScalingPolicyConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
@@ -143,7 +140,7 @@ object policyMod {
         Input[
           typings.pulumiAws.inputMod.appautoscaling.PolicyTargetTrackingScalingPolicyConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PolicyArgs {
     
@@ -195,45 +192,44 @@ object policyMod {
     }
   }
   
-  @js.native
   trait PolicyState extends StObject {
     
     /**
       * The ARN assigned by AWS to the scaling policy.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy type. Valid values are `StepScaling` and `TargetTrackingScaling`. Defaults to `StepScaling`. Certain services only support only one policy type. For more information see the [Target Tracking Scaling Policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) and [Step Scaling Policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.html) documentation.
       */
-    val policyType: js.UndefOr[Input[String]] = js.native
+    val policyType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val scalableDimension: js.UndefOr[Input[String]] = js.native
+    val scalableDimension: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
       */
-    val serviceNamespace: js.UndefOr[Input[String]] = js.native
+    val serviceNamespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
       */
     val stepScalingPolicyConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.appautoscaling.PolicyStepScalingPolicyConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
@@ -242,7 +238,7 @@ object policyMod {
         Input[
           typings.pulumiAws.inputMod.appautoscaling.PolicyTargetTrackingScalingPolicyConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PolicyState {
     

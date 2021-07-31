@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInstanceSnapshotRequest extends StObject {
   
   /**
     * The name of the snapshot to delete.
     */
-  var instanceSnapshotName: ResourceName = js.native
+  var instanceSnapshotName: ResourceName
 }
 object DeleteInstanceSnapshotRequest {
   

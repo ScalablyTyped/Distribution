@@ -2,53 +2,51 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableHead extends StObject {
   
-  var activeColumn: js.UndefOr[js.Any] = js.native
+  var activeColumn: js.UndefOr[js.Any] = js.undefined
   
-  var areAllRowsExpanded: js.UndefOr[js.Function0[Boolean]] = js.native
+  var areAllRowsExpanded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var columnOrder: js.Array[Double] = js.native
+  var columnOrder: js.Array[Double]
   
-  var columns: js.UndefOr[js.Array[MUIDataTableColumnDef]] = js.native
+  var columns: js.UndefOr[js.Array[MUIDataTableColumnDef]] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var draggableHeadCellRefs: js.UndefOr[js.Object] = js.native
+  var draggableHeadCellRefs: js.UndefOr[js.Object] = js.undefined
   
-  var expandedRows: js.UndefOr[MUIDataTableStateRows] = js.native
+  var expandedRows: js.UndefOr[MUIDataTableStateRows] = js.undefined
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var rowsPerPage: js.UndefOr[Double] = js.native
+  var rowsPerPage: js.UndefOr[Double] = js.undefined
   
-  var selectRowUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var selectRowUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var selectedRows: js.UndefOr[MUIDataTableStateRows] = js.native
+  var selectedRows: js.UndefOr[MUIDataTableStateRows] = js.undefined
   
-  var setCellRef: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var setCellRef: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var tableRef: js.UndefOr[js.Function0[_]] = js.native
+  var tableRef: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var tabledId: js.UndefOr[String] = js.native
+  var tabledId: js.UndefOr[String] = js.undefined
   
-  var timers: js.UndefOr[js.Object] = js.native
+  var timers: js.UndefOr[js.Object] = js.undefined
   
-  var toggleAllExpandableRows: js.UndefOr[js.Function0[_]] = js.native
+  var toggleAllExpandableRows: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var toggleSort: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var toggleSort: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var updateColumnOrder: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var updateColumnOrder: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object MUIDataTableHead {
   
@@ -101,7 +99,7 @@ object MUIDataTableHead {
     def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -140,7 +138,7 @@ object MUIDataTableHead {
     def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
     
     @scala.inline
-    def setSelectRowUpdate(value: /* repeated */ js.Any => _): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    def setSelectRowUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
@@ -152,13 +150,13 @@ object MUIDataTableHead {
     def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
     @scala.inline
-    def setSetCellRef(value: /* repeated */ js.Any => _): Self = StObject.set(x, "setCellRef", js.Any.fromFunction1(value))
+    def setSetCellRef(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "setCellRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetCellRefUndefined: Self = StObject.set(x, "setCellRef", js.undefined)
     
     @scala.inline
-    def setTableRef(value: () => _): Self = StObject.set(x, "tableRef", js.Any.fromFunction0(value))
+    def setTableRef(value: () => js.Any): Self = StObject.set(x, "tableRef", js.Any.fromFunction0(value))
     
     @scala.inline
     def setTableRefUndefined: Self = StObject.set(x, "tableRef", js.undefined)
@@ -176,19 +174,19 @@ object MUIDataTableHead {
     def setTimersUndefined: Self = StObject.set(x, "timers", js.undefined)
     
     @scala.inline
-    def setToggleAllExpandableRows(value: () => _): Self = StObject.set(x, "toggleAllExpandableRows", js.Any.fromFunction0(value))
+    def setToggleAllExpandableRows(value: () => js.Any): Self = StObject.set(x, "toggleAllExpandableRows", js.Any.fromFunction0(value))
     
     @scala.inline
     def setToggleAllExpandableRowsUndefined: Self = StObject.set(x, "toggleAllExpandableRows", js.undefined)
     
     @scala.inline
-    def setToggleSort(value: /* repeated */ js.Any => _): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
+    def setToggleSort(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToggleSortUndefined: Self = StObject.set(x, "toggleSort", js.undefined)
     
     @scala.inline
-    def setUpdateColumnOrder(value: /* repeated */ js.Any => _): Self = StObject.set(x, "updateColumnOrder", js.Any.fromFunction1(value))
+    def setUpdateColumnOrder(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "updateColumnOrder", js.Any.fromFunction1(value))
     
     @scala.inline
     def setUpdateColumnOrderUndefined: Self = StObject.set(x, "updateColumnOrder", js.undefined)

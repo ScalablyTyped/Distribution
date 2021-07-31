@@ -3,16 +3,15 @@ package typings.paypalRestSdk.mod
 import typings.paypalRestSdk.anon.Paymentmethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentResponse
-  extends Payment_
+  extends StObject
+     with Payment_
      with Response {
   
   /* InferMemberOverrides */
-  override val create_time: js.UndefOr[String] = js.native
+  override val create_time: js.UndefOr[String] = js.undefined
 }
 object PaymentResponse {
   

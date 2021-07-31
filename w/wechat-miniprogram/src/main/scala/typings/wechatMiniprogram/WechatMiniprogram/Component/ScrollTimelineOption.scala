@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollTimelineOption extends StObject {
   
   /** 指定停止驱动动画进度的滚动偏移量，单位 px */
-  var endScrollOffset: Double = js.native
+  var endScrollOffset: Double
   
   /** 指定滚动的方向。有效值为 horizontal 或 vertical */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /** 指定滚动元素的选择器（只支持 scroll-view），该元素滚动时会驱动动画的进度 */
-  var scrollSource: String = js.native
+  var scrollSource: String
   
   /** 指定开始驱动动画进度的滚动偏移量，单位 px */
-  var startScrollOffset: Double = js.native
+  var startScrollOffset: Double
   
   /** 起始和结束的滚动范围映射的时间长度，该时间可用于与关键帧动画里的时间 (duration) 相匹配，单位 ms */
-  var timeRange: Double = js.native
+  var timeRange: Double
 }
 object ScrollTimelineOption {
   

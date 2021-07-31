@@ -5,29 +5,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylePromptMod {
   
-  @JSImport("@ant-design/react-native/lib/modal/style/prompt", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/modal/style/prompt", JSImport.Namespace)
   @js.native
-  def default(variables: Theme): PromptStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(variables: Theme): PromptStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[PromptStyle]
+  
   trait PromptStyle extends StObject {
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var inputFirst: ViewStyle = js.native
+    var inputFirst: ViewStyle
     
-    var inputGroup: ViewStyle = js.native
+    var inputGroup: ViewStyle
     
-    var inputLast: ViewStyle = js.native
+    var inputLast: ViewStyle
     
-    var inputWrapper: ViewStyle = js.native
+    var inputWrapper: ViewStyle
     
-    var message: TextStyle = js.native
+    var message: TextStyle
   }
   object PromptStyle {
     

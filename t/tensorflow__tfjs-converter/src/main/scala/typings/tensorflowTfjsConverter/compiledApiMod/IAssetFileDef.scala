@@ -2,17 +2,15 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAssetFileDef extends StObject {
   
   /** AssetFileDef filename */
-  var filename: js.UndefOr[String | Null] = js.native
+  var filename: js.UndefOr[String | Null] = js.undefined
   
   /** AssetFileDef tensorInfo */
-  var tensorInfo: js.UndefOr[ITensorInfo | Null] = js.native
+  var tensorInfo: js.UndefOr[ITensorInfo | Null] = js.undefined
 }
 object IAssetFileDef {
   

@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lat extends StObject {
   
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
-  var lng: js.UndefOr[Double] = js.native
+  var lng: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var span: js.UndefOr[String] = js.native
+  var span: js.UndefOr[String] = js.undefined
 }
 object Lat {
   

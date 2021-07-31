@@ -3,15 +3,13 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 import typings.onesignalCordovaPlugin.anon.ActionID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSNotificationOpenedResult extends StObject {
   
-  var action: ActionID = js.native
+  var action: ActionID
   
-  var notification: OSNotification = js.native
+  var notification: OSNotification
 }
 object OSNotificationOpenedResult {
   

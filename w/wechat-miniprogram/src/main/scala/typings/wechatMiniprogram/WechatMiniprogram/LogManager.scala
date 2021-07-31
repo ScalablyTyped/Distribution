@@ -2,35 +2,33 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogManager extends StObject {
   
   /** [LogManager.debug()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/LogManager.debug.html)
     *
     * 写 debug 日志 */
   def debug(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过100Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
   
   /** [LogManager.info()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/LogManager.info.html)
     *
     * 写 info 日志 */
   def info(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过100Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
   
   /** [LogManager.log()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/LogManager.log.html)
     *
     * 写 log 日志 */
   def log(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过100Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
   
   /** [LogManager.warn()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/LogManager.warn.html)
     *
     * 写 warn 日志 */
   def warn(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过100Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
 }
 object LogManager {
   

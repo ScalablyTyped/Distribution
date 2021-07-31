@@ -13,31 +13,29 @@ import typings.activexStdole.stdole.EXCEPINFO
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type ApplicationInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait ApplicationInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object ApplicationInvokeParameter {
     
@@ -87,24 +85,23 @@ object EventHelperTypes {
   
   type ChartInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait ChartInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object ChartInvokeParameter {
     
@@ -154,24 +151,23 @@ object EventHelperTypes {
   
   type OLEObjectInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait OLEObjectInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object OLEObjectInvokeParameter {
     
@@ -221,24 +217,23 @@ object EventHelperTypes {
   
   type QueryTableInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait QueryTableInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object QueryTableInvokeParameter {
     
@@ -288,24 +283,23 @@ object EventHelperTypes {
   
   type WorkbookInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait WorkbookInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object WorkbookInvokeParameter {
     
@@ -355,24 +349,23 @@ object EventHelperTypes {
   
   type WorksheetInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait WorksheetInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object WorksheetInvokeParameter {
     

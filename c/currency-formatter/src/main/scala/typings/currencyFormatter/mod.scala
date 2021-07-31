@@ -3,10 +3,13 @@ package typings.currencyFormatter
 import typings.currencyFormatter.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("currency-formatter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("currency-formatter", "currencies")
   @js.native
@@ -16,34 +19,30 @@ object mod {
   @js.native
   val defaultCurrency: Currency = js.native
   
-  @JSImport("currency-formatter", "findCurrency")
-  @js.native
-  def findCurrency(currencyCode: String): Currency = js.native
+  @scala.inline
+  def findCurrency(currencyCode: String): Currency = ^.asInstanceOf[js.Dynamic].applyDynamic("findCurrency")(currencyCode.asInstanceOf[js.Any]).asInstanceOf[Currency]
   
-  @JSImport("currency-formatter", "format")
-  @js.native
-  def format(value: Double, options: Code): String = js.native
+  @scala.inline
+  def format(value: Double, options: Code): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("currency-formatter", "unformat")
-  @js.native
-  def unformat(value: String, options: Code): Double = js.native
+  @scala.inline
+  def unformat(value: String, options: Code): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait Currency extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var decimalDigits: Double = js.native
+    var decimalDigits: Double
     
-    var decimalSeparator: String = js.native
+    var decimalSeparator: String
     
-    var spaceBetweenAmountAndSymbol: Boolean = js.native
+    var spaceBetweenAmountAndSymbol: Boolean
     
-    var symbol: String = js.native
+    var symbol: String
     
-    var symbolOnLeft: Boolean = js.native
+    var symbolOnLeft: Boolean
     
-    var thousandsSeparator: String = js.native
+    var thousandsSeparator: String
   }
   object Currency {
     

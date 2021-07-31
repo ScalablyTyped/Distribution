@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingJobSummary extends StObject {
   
   /**
     * A timestamp that shows when the training job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     *  Timestamp when the training job was last modified. 
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A timestamp that shows when the training job ended. This field is set only if the training job has one of the terminal statuses (Completed, Failed, or Stopped). 
     */
-  var TrainingEndTime: js.UndefOr[Timestamp] = js.native
+  var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the training job.
     */
-  var TrainingJobArn: typings.awsSdk.sagemakerMod.TrainingJobArn = js.native
+  var TrainingJobArn: typings.awsSdk.sagemakerMod.TrainingJobArn
   
   /**
     * The name of the training job that you want a summary for.
     */
-  var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName = js.native
+  var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName
   
   /**
     * The status of the training job.
     */
-  var TrainingJobStatus: typings.awsSdk.sagemakerMod.TrainingJobStatus = js.native
+  var TrainingJobStatus: typings.awsSdk.sagemakerMod.TrainingJobStatus
 }
 object TrainingJobSummary {
   

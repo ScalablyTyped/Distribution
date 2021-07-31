@@ -3,17 +3,15 @@ package typings.reactVis.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Box extends StObject {
   
-  var box: js.UndefOr[CSSProperties] = js.native
+  var box: js.UndefOr[CSSProperties] = js.undefined
   
-  var line: js.UndefOr[CSSProperties] = js.native
+  var line: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[CSSProperties] = js.undefined
 }
 object Box {
   

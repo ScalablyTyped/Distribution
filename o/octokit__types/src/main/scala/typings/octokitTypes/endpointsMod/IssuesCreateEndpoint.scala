@@ -2,45 +2,43 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesCreateEndpoint extends StObject {
   
   /**
     * Login for the user that this issue should be assigned to. _NOTE: Only users with push access can set the assignee for new issues. The assignee is silently dropped otherwise. **This field is deprecated.**_
     */
-  var assignee: js.UndefOr[String] = js.native
+  var assignee: js.UndefOr[String] = js.undefined
   
   /**
     * Logins for Users to assign to this issue. _NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise._
     */
-  var assignees: js.UndefOr[js.Array[String]] = js.native
+  var assignees: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The contents of the issue.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to associate with this issue. _NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise._
     */
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The `number` of the milestone to associate this issue with. _NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise._
     */
-  var milestone: js.UndefOr[Double] = js.native
+  var milestone: js.UndefOr[Double] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The title of the issue.
     */
-  var title: String = js.native
+  var title: String
 }
 object IssuesCreateEndpoint {
   

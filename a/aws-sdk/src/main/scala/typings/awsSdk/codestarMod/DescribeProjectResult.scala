@@ -2,56 +2,54 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProjectResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the project.
     */
-  var arn: js.UndefOr[ProjectArn] = js.native
+  var arn: js.UndefOr[ProjectArn] = js.undefined
   
   /**
     * A user- or system-generated token that identifies the entity that requested project creation. 
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The date and time the project was created, in timestamp format.
     */
-  var createdTimeStamp: js.UndefOr[CreatedTimestamp] = js.native
+  var createdTimeStamp: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * The description of the project, if any.
     */
-  var description: js.UndefOr[ProjectDescription] = js.native
+  var description: js.UndefOr[ProjectDescription] = js.undefined
   
   /**
     * The ID of the project.
     */
-  var id: js.UndefOr[ProjectId] = js.native
+  var id: js.UndefOr[ProjectId] = js.undefined
   
   /**
     * The display name for the project.
     */
-  var name: js.UndefOr[ProjectName] = js.native
+  var name: js.UndefOr[ProjectName] = js.undefined
   
   /**
     * The ID for the AWS CodeStar project template used to create the project.
     */
-  var projectTemplateId: js.UndefOr[ProjectTemplateId] = js.native
+  var projectTemplateId: js.UndefOr[ProjectTemplateId] = js.undefined
   
   /**
     * The ID of the primary stack in AWS CloudFormation used to generate resources for the project.
     */
-  var stackId: js.UndefOr[StackId] = js.native
+  var stackId: js.UndefOr[StackId] = js.undefined
   
   /**
     * The project creation or deletion status.
     */
-  var status: js.UndefOr[ProjectStatus] = js.native
+  var status: js.UndefOr[ProjectStatus] = js.undefined
 }
 object DescribeProjectResult {
   

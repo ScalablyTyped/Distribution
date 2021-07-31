@@ -2,13 +2,11 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainTransferability extends StObject {
   
-  var Transferable: js.UndefOr[typings.awsSdk.route53domainsMod.Transferable] = js.native
+  var Transferable: js.UndefOr[typings.awsSdk.route53domainsMod.Transferable] = js.undefined
 }
 object DomainTransferability {
   

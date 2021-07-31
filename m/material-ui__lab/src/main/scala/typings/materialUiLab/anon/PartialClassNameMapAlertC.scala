@@ -2,44 +2,42 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Alert/Alert.AlertClassKey>> */
-@js.native
 trait PartialClassNameMapAlertC extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var filledError: js.UndefOr[String] = js.native
+  var filledError: js.UndefOr[String] = js.undefined
   
-  var filledInfo: js.UndefOr[String] = js.native
+  var filledInfo: js.UndefOr[String] = js.undefined
   
-  var filledSuccess: js.UndefOr[String] = js.native
+  var filledSuccess: js.UndefOr[String] = js.undefined
   
-  var filledWarning: js.UndefOr[String] = js.native
+  var filledWarning: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var outlinedError: js.UndefOr[String] = js.native
+  var outlinedError: js.UndefOr[String] = js.undefined
   
-  var outlinedInfo: js.UndefOr[String] = js.native
+  var outlinedInfo: js.UndefOr[String] = js.undefined
   
-  var outlinedSuccess: js.UndefOr[String] = js.native
+  var outlinedSuccess: js.UndefOr[String] = js.undefined
   
-  var outlinedWarning: js.UndefOr[String] = js.native
+  var outlinedWarning: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var standardError: js.UndefOr[String] = js.native
+  var standardError: js.UndefOr[String] = js.undefined
   
-  var standardInfo: js.UndefOr[String] = js.native
+  var standardInfo: js.UndefOr[String] = js.undefined
   
-  var standardSuccess: js.UndefOr[String] = js.native
+  var standardSuccess: js.UndefOr[String] = js.undefined
   
-  var standardWarning: js.UndefOr[String] = js.native
+  var standardWarning: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapAlertC {
   

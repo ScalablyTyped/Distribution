@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Key Management Service (KMS) key that Amazon Personalize uses to encrypt or decrypt the input and output files of a batch inference job.
     */
-  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.native
+  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   
   /**
     * The file path of the Amazon S3 bucket.
     */
-  var path: S3Location = js.native
+  var path: S3Location
 }
 object S3DataConfig {
   

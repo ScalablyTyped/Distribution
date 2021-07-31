@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFAssignmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAssignmentClassInfo extends StObject {
   
-  var ApprovalAssignmentClassInfo: IApprovalAssignmentClassInfo = js.native
+  var ApprovalAssignmentClassInfo: IApprovalAssignmentClassInfo
   
-  val AssignmentType: MFAssignmentType = js.native
+  val AssignmentType: MFAssignmentType
   
-  def Clone(): IAssignmentClassInfo = js.native
+  def Clone(): IAssignmentClassInfo
   
-  var TaskAssignmentClassInfo: ITaskAssignmentClassInfo = js.native
+  var TaskAssignmentClassInfo: ITaskAssignmentClassInfo
 }
 object IAssignmentClassInfo {
   

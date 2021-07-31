@@ -2,15 +2,13 @@ package typings.reactNativePushNotification
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Os extends StObject {
     
-    var os: String = js.native
+    var os: String
     
-    var token: String = js.native
+    var token: String
   }
   object Os {
     

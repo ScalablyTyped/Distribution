@@ -12,7 +12,7 @@ A carefully crafted Compass component for React.
 | Keywords           | react, react-component, compass, ui |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 862 |
+| # downloads        | 1498 |
 | # stars            | 0 |
 
 ## Links

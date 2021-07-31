@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartnerEventSourceAccountsRequest extends StObject {
   
   /**
     * The name of the partner event source to display account information about.
     */
-  var EventSourceName: typings.awsSdk.cloudwatcheventsMod.EventSourceName = js.native
+  var EventSourceName: typings.awsSdk.cloudwatcheventsMod.EventSourceName
   
   /**
     * Specifying this limits the number of results returned by this operation. The operation also returns a NextToken which you can use in a subsequent operation to retrieve the next set of results.
     */
-  var Limit: js.UndefOr[LimitMax100] = js.native
+  var Limit: js.UndefOr[LimitMax100] = js.undefined
   
   /**
     * The token returned by a previous call to this operation. Specifying this retrieves the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.undefined
 }
 object ListPartnerEventSourceAccountsRequest {
   

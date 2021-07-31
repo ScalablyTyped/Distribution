@@ -2,46 +2,44 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Problem extends StObject {
   
   /**
     * Information about the associated device.
     */
-  var device: js.UndefOr[Device] = js.native
+  var device: js.UndefOr[Device] = js.undefined
   
   /**
     * Information about the associated job.
     */
-  var job: js.UndefOr[ProblemDetail] = js.native
+  var job: js.UndefOr[ProblemDetail] = js.undefined
   
   /**
     * A message about the problem's result.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * The problem's result. Allowed values include:   PENDING   PASSED   WARNED   FAILED   SKIPPED   ERRORED   STOPPED  
     */
-  var result: js.UndefOr[ExecutionResult] = js.native
+  var result: js.UndefOr[ExecutionResult] = js.undefined
   
   /**
     * Information about the associated run.
     */
-  var run: js.UndefOr[ProblemDetail] = js.native
+  var run: js.UndefOr[ProblemDetail] = js.undefined
   
   /**
     * Information about the associated suite.
     */
-  var suite: js.UndefOr[ProblemDetail] = js.native
+  var suite: js.UndefOr[ProblemDetail] = js.undefined
   
   /**
     * Information about the associated test.
     */
-  var test: js.UndefOr[ProblemDetail] = js.native
+  var test: js.UndefOr[ProblemDetail] = js.undefined
 }
 object Problem {
   

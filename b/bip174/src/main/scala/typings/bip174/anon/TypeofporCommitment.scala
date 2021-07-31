@@ -4,21 +4,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.PorCommitment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofporCommitment extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
+  def canAdd(currentData: js.Any, newData: js.Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PorCommitment */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PorCommitment */ Boolean
   
-  def decode(keyVal: KeyValue): PorCommitment = js.native
+  def decode(keyVal: KeyValue): PorCommitment
   
-  def encode(data: PorCommitment): KeyValue = js.native
+  def encode(data: PorCommitment): KeyValue
   
-  val expected: /* "string" */ String = js.native
+  val expected: /* "string" */ String
 }
 object TypeofporCommitment {
   

@@ -14,44 +14,42 @@ import typings.lokijs.lokijsStrings.normal
 import typings.lokijs.lokijsStrings.pretty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.LokiConstructorOptions> & std.Partial<lokijs.LokiConfigOptions> & std.Partial<lokijs.ThrottledSaveDrainOptions> */
-@js.native
 trait PartialLokiConstructorOpt extends StObject {
   
-  var adapter: js.UndefOr[LokiPersistenceAdapter | Null] = js.native
+  var adapter: js.UndefOr[LokiPersistenceAdapter | Null] = js.undefined
   
-  var autoload: js.UndefOr[Boolean] = js.native
+  var autoload: js.UndefOr[Boolean] = js.undefined
   
-  var autoloadCallback: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.native
+  var autoloadCallback: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.undefined
   
-  var autosave: js.UndefOr[Boolean] = js.native
+  var autosave: js.UndefOr[Boolean] = js.undefined
   
-  var autosaveCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.native
+  var autosaveCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var autosaveInterval: js.UndefOr[String | Double] = js.native
+  var autosaveInterval: js.UndefOr[String | Double] = js.undefined
   
-  var destructureDelimiter: js.UndefOr[String] = js.native
+  var destructureDelimiter: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA] = js.native
+  var env: js.UndefOr[NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA] = js.undefined
   
-  var persistenceMethod: js.UndefOr[fs | localStorage | memory | Null] = js.native
+  var persistenceMethod: js.UndefOr[fs | localStorage | memory | Null] = js.undefined
   
-  var recursiveWait: js.UndefOr[Boolean] = js.native
+  var recursiveWait: js.UndefOr[Boolean] = js.undefined
   
-  var recursiveWaitLimit: js.UndefOr[Boolean] = js.native
+  var recursiveWaitLimit: js.UndefOr[Boolean] = js.undefined
   
-  var recursiveWaitLimitDuration: js.UndefOr[Double] = js.native
+  var recursiveWaitLimitDuration: js.UndefOr[Double] = js.undefined
   
-  var serializationMethod: js.UndefOr[normal | pretty | destructured | Null] = js.native
+  var serializationMethod: js.UndefOr[normal | pretty | destructured | Null] = js.undefined
   
-  var started: js.UndefOr[Double] = js.native
+  var started: js.UndefOr[Double] = js.undefined
   
-  var throttledSaves: js.UndefOr[Boolean] = js.native
+  var throttledSaves: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialLokiConstructorOpt {
   

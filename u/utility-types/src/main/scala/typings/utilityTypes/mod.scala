@@ -2,20 +2,20 @@ package typings.utilityTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("utility-types", "getReturnOfExpression")
+  @JSImport("utility-types", JSImport.Namespace)
   @js.native
-  def getReturnOfExpression[RT](expression: js.Function1[/* repeated */ js.Any, RT]): RT = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("utility-types", "isFalsy")
-  @js.native
-  def isFalsy(`val`: js.Any): /* is utility-types.utility-types/dist/aliases-and-guards.Falsy */ Boolean = js.native
+  @scala.inline
+  def getReturnOfExpression[RT](expression: js.Function1[/* repeated */ js.Any, RT]): RT = ^.asInstanceOf[js.Dynamic].applyDynamic("getReturnOfExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[RT]
   
-  @JSImport("utility-types", "isPrimitive")
-  @js.native
-  def isPrimitive(`val`: js.Any): /* is utility-types.utility-types/dist/aliases-and-guards.Primitive */ Boolean = js.native
+  @scala.inline
+  def isFalsy(`val`: js.Any): /* is utility-types.utility-types/dist/aliases-and-guards.Falsy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFalsy")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is utility-types.utility-types/dist/aliases-and-guards.Falsy */ Boolean]
+  
+  @scala.inline
+  def isPrimitive(`val`: js.Any): /* is utility-types.utility-types/dist/aliases-and-guards.Primitive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is utility-types.utility-types/dist/aliases-and-guards.Primitive */ Boolean]
 }

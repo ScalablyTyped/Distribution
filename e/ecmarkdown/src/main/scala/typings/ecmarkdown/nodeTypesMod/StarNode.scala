@@ -3,25 +3,24 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.star
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StarNode
-  extends FormatNode
+  extends StObject
+     with FormatNode
      with Node {
   
-  var contents: js.Array[FragmentNode] = js.native
+  var contents: js.Array[FragmentNode]
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: star = js.native
+  var name: star
 }
 object StarNode {
   
   @scala.inline
-  def apply(contents: js.Array[FragmentNode], location: LocationRange, name: star): StarNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: js.Array[FragmentNode], location: LocationRange): StarNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "star")
     __obj.asInstanceOf[StarNode]
   }
   

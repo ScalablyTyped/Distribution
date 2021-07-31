@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directoryMod {
@@ -106,6 +105,10 @@ object directoryMod {
   /* static members */
   object Directory {
     
+    @JSImport("@pulumi/aws/directoryservice/directory", "Directory")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Directory resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -115,90 +118,84 @@ object directoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directoryservice/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Directory = js.native
-    @JSImport("@pulumi/aws/directoryservice/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Directory = js.native
-    @JSImport("@pulumi/aws/directoryservice/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState): Directory = js.native
-    @JSImport("@pulumi/aws/directoryservice/directory", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
     
     /**
       * Returns true if the given object is an instance of Directory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directoryservice/directory", "Directory.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean]
   }
   
-  @js.native
   trait DirectoryArgs extends StObject {
     
     /**
       * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enableSso`.
       */
-    val alias: js.UndefOr[Input[String]] = js.native
+    val alias: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Connector related information about the directory. Fields documented below.
       */
-    val connectSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]] = js.native
+    val connectSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]] = js.undefined
     
     /**
       * A textual description for the directory.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The MicrosoftAD edition (`Standard` or `Enterprise`). Defaults to `Enterprise` (applies to MicrosoftAD type only).
       */
-    val edition: js.UndefOr[Input[String]] = js.native
+    val edition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to enable single-sign on for the directory. Requires `alias`. Defaults to `false`.
       */
-    val enableSso: js.UndefOr[Input[Boolean]] = js.native
+    val enableSso: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The fully qualified name for the directory, such as `corp.example.com`
       */
-    val name: Input[String] = js.native
+    val name: Input[String]
     
     /**
       * The password for the directory administrator or connector user.
       */
-    val password: Input[String] = js.native
+    val password: Input[String]
     
     /**
       * The short name of the directory, such as `CORP`.
       */
-    val shortName: js.UndefOr[Input[String]] = js.native
+    val shortName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the directory (`Small` or `Large` are accepted values).
       */
-    val size: js.UndefOr[Input[String]] = js.native
+    val size: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD` are accepted values). Defaults to `SimpleAD`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC related information about the directory. Fields documented below.
       */
-    val vpcSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]] = js.native
+    val vpcSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]] = js.undefined
   }
   object DirectoryArgs {
     
@@ -279,83 +276,82 @@ object directoryMod {
     }
   }
   
-  @js.native
   trait DirectoryState extends StObject {
     
     /**
       * The access URL for the directory, such as `http://alias.awsapps.com`.
       */
-    val accessUrl: js.UndefOr[Input[String]] = js.native
+    val accessUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enableSso`.
       */
-    val alias: js.UndefOr[Input[String]] = js.native
+    val alias: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Connector related information about the directory. Fields documented below.
       */
-    val connectSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]] = js.native
+    val connectSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]] = js.undefined
     
     /**
       * A textual description for the directory.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IP addresses of the DNS servers for the directory or connector.
       */
-    val dnsIpAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dnsIpAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The MicrosoftAD edition (`Standard` or `Enterprise`). Defaults to `Enterprise` (applies to MicrosoftAD type only).
       */
-    val edition: js.UndefOr[Input[String]] = js.native
+    val edition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to enable single-sign on for the directory. Requires `alias`. Defaults to `false`.
       */
-    val enableSso: js.UndefOr[Input[Boolean]] = js.native
+    val enableSso: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The fully qualified name for the directory, such as `corp.example.com`
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The password for the directory administrator or connector user.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the security group created by the directory.
       */
-    val securityGroupId: js.UndefOr[Input[String]] = js.native
+    val securityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The short name of the directory, such as `CORP`.
       */
-    val shortName: js.UndefOr[Input[String]] = js.native
+    val shortName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the directory (`Small` or `Large` are accepted values).
       */
-    val size: js.UndefOr[Input[String]] = js.native
+    val size: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD` are accepted values). Defaults to `SimpleAD`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC related information about the directory. Fields documented below.
       */
-    val vpcSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]] = js.native
+    val vpcSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]] = js.undefined
   }
   object DirectoryState {
     

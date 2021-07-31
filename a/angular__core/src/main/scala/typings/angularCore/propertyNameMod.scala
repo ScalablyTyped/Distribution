@@ -3,18 +3,19 @@ package typings.angularCore
 import typings.typescript.mod.PropertyName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertyNameMod {
   
-  @JSImport("@angular/core/schematics/utils/typescript/property_name", "getPropertyNameText")
+  @JSImport("@angular/core/schematics/utils/typescript/property_name", JSImport.Namespace)
   @js.native
-  def getPropertyNameText(node: PropertyName): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/utils/typescript/property_name", "hasPropertyNameText")
-  @js.native
-  def hasPropertyNameText(node: PropertyName): /* is @angular/core.@angular/core/schematics/utils/typescript/property_name.PropertyNameWithText */ Boolean = js.native
+  @scala.inline
+  def getPropertyNameText(node: PropertyName): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyNameText")(node.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  @scala.inline
+  def hasPropertyNameText(node: PropertyName): /* is @angular/core.@angular/core/schematics/utils/typescript/property_name.PropertyNameWithText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPropertyNameText")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core/schematics/utils/typescript/property_name.PropertyNameWithText */ Boolean]
   
   /** Type that describes a property name with an obtainable text. */
   /* Inlined std.Exclude<typescript.typescript.PropertyName, typescript.typescript.ComputedPropertyName> */

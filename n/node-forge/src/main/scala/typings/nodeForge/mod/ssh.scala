@@ -9,74 +9,66 @@ import typings.nodeForge.nodeForgeStrings.binary
 import typings.nodeForge.nodeForgeStrings.hex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssh {
   
+  @JSImport("node-forge", "ssh")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @description Gets the SSH fingerprint for the given public key
     */
-  @JSImport("node-forge", "ssh.getPublicKeyFingerprint")
-  @js.native
-  def getPublicKeyFingerprint(publicKey: PublicKey): ByteStringBuffer | Hex | String = js.native
-  @JSImport("node-forge", "ssh.getPublicKeyFingerprint")
-  @js.native
-  def getPublicKeyFingerprint(publicKey: PublicKey, options: FingerprintOptions): ByteStringBuffer | Hex | String = js.native
+  @scala.inline
+  def getPublicKeyFingerprint(publicKey: PublicKey): ByteStringBuffer | Hex | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer | Hex | String]
+  @scala.inline
+  def getPublicKeyFingerprint(publicKey: PublicKey, options: FingerprintOptions): ByteStringBuffer | Hex | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ByteStringBuffer | Hex | String]
   
   /**
     * @description Encodes a private RSA key as an OpenSSH file
     */
-  @JSImport("node-forge", "ssh.privateKeyToOpenSSH")
-  @js.native
-  def privateKeyToOpenSSH(privateKey: PrivateKey): String = js.native
-  @JSImport("node-forge", "ssh.privateKeyToOpenSSH")
-  @js.native
-  def privateKeyToOpenSSH(privateKey: PrivateKey, passphrase: String): String = js.native
+  @scala.inline
+  def privateKeyToOpenSSH(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def privateKeyToOpenSSH(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @description Encodes (and optionally encrypts) a private RSA key as a Putty PPK file
     */
-  @JSImport("node-forge", "ssh.privateKeyToPutty")
-  @js.native
-  def privateKeyToPutty(privateKey: PrivateKey): String = js.native
-  @JSImport("node-forge", "ssh.privateKeyToPutty")
-  @js.native
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: js.UndefOr[scala.Nothing], comment: String): String = js.native
-  @JSImport("node-forge", "ssh.privateKeyToPutty")
-  @js.native
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String): String = js.native
-  @JSImport("node-forge", "ssh.privateKeyToPutty")
-  @js.native
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String, comment: String): String = js.native
+  @scala.inline
+  def privateKeyToPutty(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def privateKeyToPutty(privateKey: PrivateKey, passphrase: Unit, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @description Encodes a public RSA key as an OpenSSH file
     */
-  @JSImport("node-forge", "ssh.publicKeyToOpenSSH")
-  @js.native
-  def publicKeyToOpenSSH(publicKey: PublicKey): String | PEM = js.native
-  @JSImport("node-forge", "ssh.publicKeyToOpenSSH")
-  @js.native
-  def publicKeyToOpenSSH(publicKey: PublicKey, comment: String): String | PEM = js.native
+  @scala.inline
+  def publicKeyToOpenSSH(publicKey: PublicKey): String | PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any]).asInstanceOf[String | PEM]
+  @scala.inline
+  def publicKeyToOpenSSH(publicKey: PublicKey, comment: String): String | PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String | PEM]
   
-  @js.native
   trait FingerprintOptions extends StObject {
     
     /**
       * @description the delimiter to use between bytes for `hex` encoded output
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * @description if not specified, the function will return `ByteStringBuffer`
       */
-    var encoding: js.UndefOr[hex | binary] = js.native
+    var encoding: js.UndefOr[hex | binary] = js.undefined
     
     /**
       * @description if not specified defaults to `md.md5`
       */
-    var md: js.UndefOr[MessageDigest] = js.native
+    var md: js.UndefOr[MessageDigest] = js.undefined
   }
   object FingerprintOptions {
     

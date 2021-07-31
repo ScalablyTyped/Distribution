@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchDestination extends StObject {
   
   /**
     * A list of dimensions upon which to categorize your emails when you publish email sending events to Amazon CloudWatch.
     */
-  var DimensionConfigurations: CloudWatchDimensionConfigurations = js.native
+  var DimensionConfigurations: CloudWatchDimensionConfigurations
 }
 object CloudWatchDestination {
   

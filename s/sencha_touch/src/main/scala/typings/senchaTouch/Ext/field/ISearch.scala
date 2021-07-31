@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext.field
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISearch extends IText
+trait ISearch
+  extends StObject
+     with IText
 object ISearch {
   
   @scala.inline

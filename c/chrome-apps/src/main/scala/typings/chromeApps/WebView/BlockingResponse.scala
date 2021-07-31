@@ -2,23 +2,21 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns value for event handlers that have the 'blocking' extraInfoSpec applied. Allows the event handler to modify network requests. */
-@js.native
 trait BlockingResponse extends StObject {
   
   /**
     * Only used as a response to the onAuthRequired event.
     * If set, the request is made using the supplied credentials.
     */
-  var authCredentials: js.UndefOr[AuthCredentials] = js.native
+  var authCredentials: js.UndefOr[AuthCredentials] = js.undefined
   
   /**
     * If true, the request is cancelled.
     * Used in onBeforeRequest, this prevents the request from being sent. */
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only used as a response to the onBeforeRequest and onHeadersReceived events.
@@ -29,13 +27,13 @@ trait BlockingResponse extends StObject {
     * redirect is initiated at the onHeadersReceived stage, then the redirect
     * will be issued using the GET method.
     */
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Only used as a response to the onBeforeSendHeaders event.
     * If set, the request is made with these request headers instead.
     */
-  var requestHeaders: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var requestHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
   
   /**
     * Only used as a response to the onHeadersReceived event.
@@ -44,7 +42,7 @@ trait BlockingResponse extends StObject {
     * want to modify the headers in order to limit the number of conflicts
     * (only one extension may modify responseHeaders for each request).
     */
-  var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
 }
 object BlockingResponse {
   

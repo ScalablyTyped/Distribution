@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrafeasV1beta1ImageDetails extends StObject {
   
   /** Required. Immutable. The child image derived from the base image. */
-  var derivedImage: js.UndefOr[Derived] = js.native
+  var derivedImage: js.UndefOr[Derived] = js.undefined
 }
 object GrafeasV1beta1ImageDetails {
   

@@ -4,24 +4,22 @@ import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines properties used when passing credentials during authentication. */
-@js.native
 trait AllJoynCredentials extends StObject {
   
   /** The mechanism used for credential authentication. */
-  var authenticationMechanism: AllJoynAuthenticationMechanism = js.native
+  var authenticationMechanism: AllJoynAuthenticationMechanism
   
   /** The cryptography certificate used for the Rsa and EcdheEcdsa authentication mechanisms. */
-  var certificate: Certificate = js.native
+  var certificate: Certificate
   
   /** The user name, if any, and password used for authentication. */
-  var passwordCredential: PasswordCredential = js.native
+  var passwordCredential: PasswordCredential
   
   /** The period of time before provided credentials expire. */
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object AllJoynCredentials {
   

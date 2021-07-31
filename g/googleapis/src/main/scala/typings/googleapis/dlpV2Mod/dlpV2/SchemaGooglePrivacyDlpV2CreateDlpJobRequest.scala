@@ -2,17 +2,15 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for CreateDlpJobRequest. Used to initiate long running jobs
   * such as calculating risk metrics or inspecting Google Cloud Storage.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
   
-  var inspectJob: js.UndefOr[SchemaGooglePrivacyDlpV2InspectJobConfig] = js.native
+  var inspectJob: js.UndefOr[SchemaGooglePrivacyDlpV2InspectJobConfig] = js.undefined
   
   /**
     * The job id can contain uppercase and lowercase letters, numbers, and
@@ -20,9 +18,9 @@ trait SchemaGooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
     * The maximum length is 100 characters. Can be empty to allow the system to
     * generate one.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
-  var riskJob: js.UndefOr[SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig] = js.native
+  var riskJob: js.UndefOr[SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CreateDlpJobRequest {
   

@@ -2,17 +2,15 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
-  var onReceiveMessage: js.UndefOr[MessageListener] = js.native
+  var onReceiveMessage: js.UndefOr[MessageListener] = js.undefined
   
-  var onReceiveMetadata: js.UndefOr[MetadataListener] = js.native
+  var onReceiveMetadata: js.UndefOr[MetadataListener] = js.undefined
   
-  var onReceiveStatus: js.UndefOr[StatusListener] = js.native
+  var onReceiveStatus: js.UndefOr[StatusListener] = js.undefined
 }
 object Listener {
   

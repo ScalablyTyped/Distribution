@@ -2,56 +2,54 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventDescription extends StObject {
   
   /**
     * The application associated with the event.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * The name of the environment associated with this event.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * The date when the event occurred.
     */
-  var EventDate: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EventDate] = js.native
+  var EventDate: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EventDate] = js.undefined
   
   /**
     * The event message.
     */
-  var Message: js.UndefOr[EventMessage] = js.native
+  var Message: js.UndefOr[EventMessage] = js.undefined
   
   /**
     * The ARN of the platform version.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * The web service request ID for the activity of this event.
     */
-  var RequestId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RequestId] = js.native
+  var RequestId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RequestId] = js.undefined
   
   /**
     * The severity level of this event.
     */
-  var Severity: js.UndefOr[EventSeverity] = js.native
+  var Severity: js.UndefOr[EventSeverity] = js.undefined
   
   /**
     * The name of the configuration associated with this event.
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
   
   /**
     * The release label for the application version associated with this event.
     */
-  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.native
+  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.undefined
 }
 object EventDescription {
   

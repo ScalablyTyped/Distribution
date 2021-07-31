@@ -14,7 +14,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menusMod {
@@ -70,22 +69,21 @@ object menusMod {
     def scrollActiveItemToView(): Unit = js.native
   }
   
-  @js.native
   trait MenusProps extends StObject {
     
-    var activeValue: js.UndefOr[js.Array[String | Double]] = js.native
+    var activeValue: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var defaultFieldNames: js.UndefOr[CascaderFieldNames] = js.native
+    var defaultFieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
     
-    var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.native
+    var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var expandIcon: js.UndefOr[ReactNode] = js.native
+    var expandIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var expandTrigger: js.UndefOr[String] = js.native
+    var expandTrigger: js.UndefOr[String] = js.undefined
     
-    var fieldNames: js.UndefOr[CascaderFieldNames] = js.native
+    var fieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
     
-    var loadingIcon: js.UndefOr[ReactNode] = js.native
+    var loadingIcon: js.UndefOr[ReactNode] = js.undefined
     
     var onItemDoubleClick: js.UndefOr[
         js.Function3[
@@ -94,7 +92,7 @@ object menusMod {
           /* e */ MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSelect: js.UndefOr[
         js.Function3[
@@ -103,15 +101,15 @@ object menusMod {
           /* e */ KeyboardEvent[HTMLElement], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var options: js.UndefOr[js.Array[CascaderOption]] = js.native
+    var options: js.UndefOr[js.Array[CascaderOption]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Array[String | Double]] = js.native
+    var value: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object MenusProps {
     

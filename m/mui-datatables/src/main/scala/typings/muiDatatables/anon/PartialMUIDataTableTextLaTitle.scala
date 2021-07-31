@@ -2,16 +2,14 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsViewColumns> */
-@js.native
 trait PartialMUIDataTableTextLaTitle extends StObject {
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleAria: js.UndefOr[String] = js.native
+  var titleAria: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLaTitle {
   

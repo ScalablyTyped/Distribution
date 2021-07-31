@@ -2,32 +2,30 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotFormula extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.PivotFormula_typekey")
-  var ExcelDotPivotFormula_typekey: PivotFormula = js.native
+  var ExcelDotPivotFormula_typekey: PivotFormula
   
-  var Formula: String = js.native
+  var Formula: String
   
-  var Index: Double = js.native
+  var Index: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var StandardFormula: String = js.native
+  var StandardFormula: String
   
-  var Value: String = js.native
+  var Value: String
   
-  var _Default: String = js.native
+  var _Default: String
 }
 object PivotFormula {
   

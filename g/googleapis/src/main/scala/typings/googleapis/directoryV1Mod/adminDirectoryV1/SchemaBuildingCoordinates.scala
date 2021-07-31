@@ -2,24 +2,22 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for coordinates of a building in Directory API.
   */
-@js.native
 trait SchemaBuildingCoordinates extends StObject {
   
   /**
     * Latitude in decimal degrees.
     */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /**
     * Longitude in decimal degrees.
     */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
 }
 object SchemaBuildingCoordinates {
   

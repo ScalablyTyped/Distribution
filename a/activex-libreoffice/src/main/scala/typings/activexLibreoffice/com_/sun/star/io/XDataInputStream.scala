@@ -4,42 +4,42 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to read machine-independent simple data types from a stream.
   * @see com.sun.star.io.XDataOutputStream
   */
-@js.native
-trait XDataInputStream extends XInputStream {
+trait XDataInputStream
+  extends StObject
+     with XInputStream {
   
   /** reads in a boolean. It is an 8-bit value. 0 means FALSE; all other values mean TRUE. */
-  def readBoolean(): Double = js.native
+  def readBoolean(): Double
   
   /** reads an 8-bit byte. */
-  def readByte(): Double = js.native
+  def readByte(): Double
   
   /** reads a 16-bit unicode character. */
-  def readChar(): String = js.native
+  def readChar(): String
   
   /** reads a 64-bit IEEE double. */
-  def readDouble(): Double = js.native
+  def readDouble(): Double
   
   /** reads a 32-bit IEEE float. */
-  def readFloat(): Double = js.native
+  def readFloat(): Double
   
   /** reads a 64-bit big endian integer. */
-  def readHyper(): Double = js.native
+  def readHyper(): Double
   
   /** reads a 32-bit big endian integer. */
-  def readLong(): Double = js.native
+  def readLong(): Double
   
   /** reads a 16-bit big endian integer. */
-  def readShort(): Double = js.native
+  def readShort(): Double
   
   /** reads a string of UTF encoded characters. */
-  def readUTF(): String = js.native
+  def readUTF(): String
 }
 object XDataInputStream {
   

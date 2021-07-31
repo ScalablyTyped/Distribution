@@ -8,15 +8,15 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postConfirmationMod {
   
-  @js.native
-  trait BasePostConfirmationTriggerEvent[T /* <: String */] extends BaseTriggerEvent[T] {
+  trait BasePostConfirmationTriggerEvent[T /* <: String */]
+    extends StObject
+       with BaseTriggerEvent[T] {
     
-    var request: UserAttributes = js.native
+    var request: UserAttributes
   }
   object BasePostConfirmationTriggerEvent {
     
@@ -35,7 +35,7 @@ object postConfirmationMod {
     }
     
     @scala.inline
-    implicit class BasePostConfirmationTriggerEventMutableBuilder[Self <: BasePostConfirmationTriggerEvent[_], T /* <: String */] (val x: Self with BasePostConfirmationTriggerEvent[T]) extends AnyVal {
+    implicit class BasePostConfirmationTriggerEventMutableBuilder[Self <: BasePostConfirmationTriggerEvent[?], T /* <: String */] (val x: Self & BasePostConfirmationTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setRequest(value: UserAttributes): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

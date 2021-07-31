@@ -10,9 +10,9 @@ JavaScript image viewer.
 | ------------------ | :-------------: |
 | Full name          | viewerjs |
 | Keywords           | image, viewer, viewerjs, viewer.js, html, css, javascript, front-end, web |
-| # releases         | 14 |
-| # dependents       | 199 |
-| # downloads        | 958703 |
+| # releases         | 16 |
+| # dependents       | 228 |
+| # downloads        | 1029905 |
 | # stars            | 5 |
 
 ## Links

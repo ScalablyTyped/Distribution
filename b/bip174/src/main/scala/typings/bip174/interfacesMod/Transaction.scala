@@ -4,19 +4,17 @@ import typings.bip174.anon.InputCount
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  def addInput(objectArg: js.Any): Unit = js.native
+  def addInput(objectArg: js.Any): Unit
   
-  def addOutput(objectArg: js.Any): Unit = js.native
+  def addOutput(objectArg: js.Any): Unit
   
-  def getInputOutputCounts(): InputCount = js.native
+  def getInputOutputCounts(): InputCount
   
-  def toBuffer(): Buffer = js.native
+  def toBuffer(): Buffer
 }
 object Transaction {
   

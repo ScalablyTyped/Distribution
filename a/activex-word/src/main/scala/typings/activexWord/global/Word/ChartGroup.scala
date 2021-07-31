@@ -2,10 +2,10 @@ package typings.activexWord.global.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Word.ChartGroup")
 @js.native
 class ChartGroup protected ()
-  extends typings.activexWord.Word.ChartGroup
+  extends StObject
+     with typings.activexWord.Word.ChartGroup

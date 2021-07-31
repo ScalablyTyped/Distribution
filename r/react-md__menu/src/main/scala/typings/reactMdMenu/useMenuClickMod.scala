@@ -6,21 +6,22 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMenuClickMod {
   
-  @JSImport("@react-md/menu/types/useMenuClick", "useMenuClick")
+  @JSImport("@react-md/menu/types/useMenuClick", JSImport.Namespace)
   @js.native
-  def useMenuClick(hasOnClickOnRequestClose: MenuClickOptions): MouseEventHandler[HTMLDivElement] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useMenuClick(hasOnClickOnRequestClose: MenuClickOptions): MouseEventHandler[HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuClick")(hasOnClickOnRequestClose.asInstanceOf[js.Any]).asInstanceOf[MouseEventHandler[HTMLDivElement]]
+  
   trait MenuClickOptions extends StObject {
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    def onRequestClose(): Unit = js.native
+    def onRequestClose(): Unit
   }
   object MenuClickOptions {
     

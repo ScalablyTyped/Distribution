@@ -21,39 +21,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCreatePlaneParams extends Object {
+trait MeshCreatePlaneParams
+  extends StObject
+     with Object {
   
   /**
     * Direction the plane is facing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
-  var facing: js.UndefOr[east | west | north | south | up | down] = js.native
+  var facing: js.UndefOr[east | west | north | south | up | down] = js.undefined
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The material to be used for the mesh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
-  var material: js.UndefOr[MeshMaterial] = js.native
+  var material: js.UndefOr[MeshMaterial] = js.undefined
   
   /**
     * A uniform size value or an object containing individual values width and height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
-  var size: js.UndefOr[Double | MeshCreatePlaneParamsSize] = js.native
+  var size: js.UndefOr[Double | MeshCreatePlaneParamsSize] = js.undefined
   
   /**
     * The unit of the size (defaults to the unit of the location's spatial reference).
@@ -62,7 +62,7 @@ trait MeshCreatePlaneParams extends Object {
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
-  ] = js.native
+  ] = js.undefined
 }
 object MeshCreatePlaneParams {
   

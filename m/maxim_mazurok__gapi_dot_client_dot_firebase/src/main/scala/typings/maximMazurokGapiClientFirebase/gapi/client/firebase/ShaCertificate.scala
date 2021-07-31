@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShaCertificate extends StObject {
   
   /** The type of SHA certificate encoded in the hash. */
-  var certType: js.UndefOr[String] = js.native
+  var certType: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the ShaCertificate for the AndroidApp, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID/sha/SHA_HASH * PROJECT_IDENTIFIER: the parent Project's
@@ -18,10 +16,10 @@ trait ShaCertificate extends StObject {
     * APP_ID: the globally unique, Firebase-assigned identifier for the App (see [`appId`](../projects.androidApps#AndroidApp.FIELDS.app_id)). * SHA_HASH: the certificate hash for the App
     * (see [`shaHash`](../projects.androidApps.sha#ShaCertificate.FIELDS.sha_hash)).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The certificate hash for the `AndroidApp`. */
-  var shaHash: js.UndefOr[String] = js.native
+  var shaHash: js.UndefOr[String] = js.undefined
 }
 object ShaCertificate {
   

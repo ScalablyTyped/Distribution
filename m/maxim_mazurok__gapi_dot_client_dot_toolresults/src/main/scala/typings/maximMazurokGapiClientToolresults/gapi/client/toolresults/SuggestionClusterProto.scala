@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestionClusterProto extends StObject {
   
   /** Category in which these types of suggestions should appear. Always set. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * A sequence of suggestions. All of the suggestions within a cluster must have the same SuggestionPriority and belong to the same SuggestionCategory. Suggestions with the same
     * screenshot URL should be adjacent.
     */
-  var suggestions: js.UndefOr[js.Array[SuggestionProto]] = js.native
+  var suggestions: js.UndefOr[js.Array[SuggestionProto]] = js.undefined
 }
 object SuggestionClusterProto {
   

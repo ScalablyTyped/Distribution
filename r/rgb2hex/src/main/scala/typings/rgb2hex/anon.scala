@@ -2,17 +2,15 @@ package typings.rgb2hex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alpha extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var hex: String = js.native
+    var hex: String
   }
   object Alpha {
     

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggingConfigurationMod {
@@ -39,6 +38,10 @@ object loggingConfigurationMod {
   /* static members */
   object LoggingConfiguration {
     
+    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoggingConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,42 +51,36 @@ object loggingConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState): LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): LoggingConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoggingConfigurationState): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
     
     /**
       * Returns true if the given object is an instance of LoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/networkfirewall/loggingConfiguration", "LoggingConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean]
   }
   
-  @js.native
   trait LoggingConfigurationArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Network Firewall firewall.
       */
-    val firewallArn: Input[String] = js.native
+    val firewallArn: Input[String]
     
     /**
       * A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.
       */
     val loggingConfiguration: Input[
         typings.pulumiAws.inputMod.networkfirewall.LoggingConfigurationLoggingConfiguration
-      ] = js.native
+      ]
   }
   object LoggingConfigurationArgs {
     
@@ -113,13 +110,12 @@ object loggingConfigurationMod {
     }
   }
   
-  @js.native
   trait LoggingConfigurationState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Network Firewall firewall.
       */
-    val firewallArn: js.UndefOr[Input[String]] = js.native
+    val firewallArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.
@@ -128,7 +124,7 @@ object loggingConfigurationMod {
         Input[
           typings.pulumiAws.inputMod.networkfirewall.LoggingConfigurationLoggingConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object LoggingConfigurationState {
     

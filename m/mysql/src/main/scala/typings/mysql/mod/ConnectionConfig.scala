@@ -7,11 +7,11 @@ import typings.mysql.mysqlStrings.DATETIME
 import typings.mysql.mysqlStrings.TIMESTAMP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionConfig extends ConnectionOptions {
+trait ConnectionConfig
+  extends StObject
+     with ConnectionOptions {
   
   /**
     * Enabling both supportBigNumbers and bigNumberStrings forces big numbers (BIGINT and DECIMAL columns) to be
@@ -21,18 +21,18 @@ trait ConnectionConfig extends ConnectionOptions {
     * (which happens when they exceed the [-2^53, +2^53] range), otherwise they will be returned as Number objects.
     * This option is ignored if supportBigNumbers is disabled.
     */
-  var bigNumberStrings: js.UndefOr[Boolean] = js.native
+  var bigNumberStrings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10 seconds)
     */
-  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Force date types (TIMESTAMP, DATETIME, DATE) to be returned as strings rather then inflated into JavaScript
     * Date objects. Can be true/false or an array of type names to keep as strings. (Default: false)
     */
-  var dateStrings: js.UndefOr[Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])] = js.native
+  var dateStrings: js.UndefOr[Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])] = js.undefined
   
   /**
     * This will print all incoming and outgoing packets on stdout.
@@ -40,74 +40,74 @@ trait ConnectionConfig extends ConnectionOptions {
     *
     * (Default: false)
     */
-  var debug: js.UndefOr[Boolean | (js.Array[String | Types])] = js.native
+  var debug: js.UndefOr[Boolean | (js.Array[String | Types])] = js.undefined
   
   /**
     * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
     */
-  var flags: js.UndefOr[String | js.Array[String]] = js.native
+  var flags: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * The hostname of the database you are connecting to. (Default: localhost)
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Allow connecting to MySQL instances that ask for the old (insecure) authentication method. (Default: false)
     */
-  var insecureAuth: js.UndefOr[Boolean] = js.native
+  var insecureAuth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The source IP address to use for TCP connection
     */
-  var localAddress: js.UndefOr[String] = js.native
+  var localAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Allow multiple mysql statements per query. Be careful with this, it exposes you to SQL injection attacks. (Default: false)
     */
-  var multipleStatements: js.UndefOr[Boolean] = js.native
+  var multipleStatements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The port number to connect to. (Default: 3306)
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * A custom query format function
     */
-  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, String]] = js.native
+  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, String]] = js.undefined
   
   /**
     * The path to a unix domain socket to connect to. When used host and port are ignored
     */
-  var socketPath: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.undefined
   
   /**
     * object with ssl parameters or a string containing name of ssl profile
     */
-  var ssl: js.UndefOr[String | SecureContextOptionsrejec] = js.native
+  var ssl: js.UndefOr[String | SecureContextOptionsrejec] = js.undefined
   
   /**
     * Stringify objects instead of converting to values. (Default: 'false')
     */
-  var stringifyObjects: js.UndefOr[Boolean] = js.native
+  var stringifyObjects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When dealing with big numbers (BIGINT and DECIMAL columns) in the database, you should enable this option
     * (Default: false)
     */
-  var supportBigNumbers: js.UndefOr[Boolean] = js.native
+  var supportBigNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The timezone used to store local dates. (Default: 'local')
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
   /**
     * Generates stack traces on errors to include call site of library entrance ("long stack traces"). Slight
     * performance penalty for most calls. (Default: true)
     */
-  var trace: js.UndefOr[Boolean] = js.native
+  var trace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
@@ -129,7 +129,7 @@ trait ConnectionConfig extends ConnectionOptions {
     *
     * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
     */
-  var typeCast: js.UndefOr[TypeCast] = js.native
+  var typeCast: js.UndefOr[TypeCast] = js.undefined
 }
 object ConnectionConfig {
   

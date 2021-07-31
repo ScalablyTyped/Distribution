@@ -8,23 +8,23 @@ import typings.activexLibreoffice.com_.sun.star.awt.XTabControllerModel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is superseded by {@link com.sun.star.form.runtime.XFormController} .
   * @deprecated Deprecated
   */
-@js.native
-trait XFormController extends XTabController {
+trait XFormController
+  extends StObject
+     with XTabController {
   
-  val CurrentControl: XControl = js.native
+  val CurrentControl: XControl
   
-  def addActivateListener(l: XFormControllerListener): Unit = js.native
+  def addActivateListener(l: XFormControllerListener): Unit
   
-  def getCurrentControl(): XControl = js.native
+  def getCurrentControl(): XControl
   
-  def removeActivateListener(l: XFormControllerListener): Unit = js.native
+  def removeActivateListener(l: XFormControllerListener): Unit
 }
 object XFormController {
   

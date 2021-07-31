@@ -2,39 +2,37 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingStatus. */
-@js.native
 trait TrainingStatus extends StObject {
   
   /** When `true`, the collection has been successfully trained. */
-  var available: js.UndefOr[Boolean] = js.native
+  var available: js.UndefOr[Boolean] = js.undefined
   
   /** The timestamp of when the data was uploaded. */
-  var data_updated: js.UndefOr[String] = js.native
+  var data_updated: js.UndefOr[String] = js.undefined
   
   /** When `true`, the collection has a sufficent amount of examples added for training to occur. */
-  var minimum_examples_added: js.UndefOr[Boolean] = js.native
+  var minimum_examples_added: js.UndefOr[Boolean] = js.undefined
   
   /** When `true`, the collection has a sufficent amount of queries added for training to occur. */
-  var minimum_queries_added: js.UndefOr[Boolean] = js.native
+  var minimum_queries_added: js.UndefOr[Boolean] = js.undefined
   
   /** The number of notices associated with this data set. */
-  var notices: js.UndefOr[Double] = js.native
+  var notices: js.UndefOr[Double] = js.undefined
   
   /** When `true`, the collection is currently processing training. */
-  var processing: js.UndefOr[Boolean] = js.native
+  var processing: js.UndefOr[Boolean] = js.undefined
   
   /** The timestamp of when the collection was successfully trained. */
-  var successfully_trained: js.UndefOr[String] = js.native
+  var successfully_trained: js.UndefOr[String] = js.undefined
   
   /** When `true`, the collection has a sufficent amount of diversity in labeled results for training to occur. */
-  var sufficient_label_diversity: js.UndefOr[Boolean] = js.native
+  var sufficient_label_diversity: js.UndefOr[Boolean] = js.undefined
   
   /** The total number of training examples uploaded to this collection. */
-  var total_examples: js.UndefOr[Double] = js.native
+  var total_examples: js.UndefOr[Double] = js.undefined
 }
 object TrainingStatus {
   

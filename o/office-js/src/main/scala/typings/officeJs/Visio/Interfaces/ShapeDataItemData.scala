@@ -2,11 +2,9 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "shapeDataItem.toJSON()". */
-@js.native
 trait ShapeDataItemData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ShapeDataItemData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ShapeDataItemData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var formattedValue: js.UndefOr[String] = js.native
+  var formattedValue: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ShapeDataItemData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ShapeDataItemData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ShapeDataItemData {
   

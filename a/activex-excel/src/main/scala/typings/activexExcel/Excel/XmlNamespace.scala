@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XmlNamespace extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.XmlNamespace_typekey")
-  var ExcelDotXmlNamespace_typekey: XmlNamespace = js.native
+  var ExcelDotXmlNamespace_typekey: XmlNamespace
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Prefix: String = js.native
+  val Prefix: String
   
-  val Uri: String = js.native
+  val Uri: String
   
-  val _Default: String = js.native
+  val _Default: String
 }
 object XmlNamespace {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,35 +16,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       // Set other properties as needed.
   *       .setId('field1_id');
   */
-@js.native
 trait Fields extends StObject {
   
-  def asArray(): js.Array[Field] = js.native
+  def asArray(): js.Array[Field]
   
-  def build(): js.Array[_] = js.native
+  def build(): js.Array[js.Any]
   
-  def forIds(ids: js.Array[String]): Fields = js.native
+  def forIds(ids: js.Array[String]): Fields
   
-  def getDefaultDimension(): Field | Null = js.native
+  def getDefaultDimension(): Field | Null
   
-  def getDefaultMetric(): Field | Null = js.native
+  def getDefaultMetric(): Field | Null
   
-  def getFieldById(fieldId: String): Field | Null = js.native
+  def getFieldById(fieldId: String): Field | Null
   
-  def newDimension(): Field = js.native
+  def newDimension(): Field
   
-  def newMetric(): Field = js.native
+  def newMetric(): Field
   
-  def setDefaultDimension(fieldId: String): Unit = js.native
+  def setDefaultDimension(fieldId: String): Unit
   
-  def setDefaultMetric(fieldId: String): Unit = js.native
+  def setDefaultMetric(fieldId: String): Unit
 }
 object Fields {
   
   @scala.inline
   def apply(
     asArray: () => js.Array[Field],
-    build: () => js.Array[_],
+    build: () => js.Array[js.Any],
     forIds: js.Array[String] => Fields,
     getDefaultDimension: () => Field | Null,
     getDefaultMetric: () => Field | Null,
@@ -66,7 +64,7 @@ object Fields {
     def setAsArray(value: () => js.Array[Field]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuild(value: () => js.Array[_]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    def setBuild(value: () => js.Array[js.Any]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
     def setForIds(value: js.Array[String] => Fields): Self = StObject.set(x, "forIds", js.Any.fromFunction1(value))

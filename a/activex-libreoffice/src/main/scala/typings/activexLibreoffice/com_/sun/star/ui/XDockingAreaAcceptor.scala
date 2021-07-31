@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,22 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XFrame
   * @since OOo 2.0
   */
-@js.native
-trait XDockingAreaAcceptor extends XInterface {
+trait XDockingAreaAcceptor
+  extends StObject
+     with XInterface {
   
   /**
     * provide the container window where the layout manager can request border space for docking windows.
     *
     * Additionally the layout manager uses this window to create its own child windows for docking purposes.
     */
-  val ContainerWindow: XWindow = js.native
+  val ContainerWindow: XWindow
   
   /**
     * provide the container window where the layout manager can request border space for docking windows.
     *
     * Additionally the layout manager uses this window to create its own child windows for docking purposes.
     */
-  def getContainerWindow(): XWindow = js.native
+  def getContainerWindow(): XWindow
   
   /**
     * method to ask an implementation if the provided space for docking windows is available or not.
@@ -42,7 +42,7 @@ trait XDockingAreaAcceptor extends XInterface {
     * filled as following: X = requested area on left side (in pixel)Y = requested area on top side (in pixel)Width = requested area on right side (in
     * pixel)Height = requested area on bottom side (in pixel)
     */
-  def requestDockingAreaSpace(RequestedSpace: Rectangle): Boolean = js.native
+  def requestDockingAreaSpace(RequestedSpace: Rectangle): Boolean
   
   /**
     * method to brief an implementation that we need new border space.
@@ -51,7 +51,7 @@ trait XDockingAreaAcceptor extends XInterface {
     * filled by the caller with pixel data. The members of {@link com.sun.star.awt.Rectangle} must be filled as following: X = new area on left side (in
     * pixel)Y = new area on top side (in pixel)Width = new area on right side (in pixel)Height = new area on bottom side (in pixel)
     */
-  def setDockingAreaSpace(BorderSpace: Rectangle): Unit = js.native
+  def setDockingAreaSpace(BorderSpace: Rectangle): Unit
 }
 object XDockingAreaAcceptor {
   

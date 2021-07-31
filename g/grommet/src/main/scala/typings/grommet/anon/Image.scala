@@ -10,27 +10,25 @@ import typings.grommet.grommetStrings.weak
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var dark: js.UndefOr[Boolean | String] = js.native
+  var dark: js.UndefOr[Boolean | String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var light: js.UndefOr[String] = js.native
+  var light: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[weak | medium | strong | Double | Boolean] = js.native
+  var opacity: js.UndefOr[weak | medium | strong | Double | Boolean] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var repeat: js.UndefOr[`no-repeat` | typings.grommet.grommetStrings.repeat | String] = js.native
+  var repeat: js.UndefOr[`no-repeat` | typings.grommet.grommetStrings.repeat | String] = js.undefined
   
-  var size: js.UndefOr[cover | contain | String] = js.native
+  var size: js.UndefOr[cover | contain | String] = js.undefined
 }
 object Image {
   

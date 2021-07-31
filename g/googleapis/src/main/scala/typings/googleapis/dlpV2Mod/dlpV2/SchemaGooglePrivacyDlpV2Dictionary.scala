@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,19 +27,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * these constraints, consider using `LargeCustomDictionaryConfig` in the
   * `StoredInfoType` API.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Dictionary extends StObject {
   
   /**
     * Newline-delimited file of words in Cloud Storage. Only a single file is
     * accepted.
     */
-  var cloudStoragePath: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStoragePath] = js.native
+  var cloudStoragePath: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStoragePath] = js.undefined
   
   /**
     * List of words or phrases to search for.
     */
-  var wordList: js.UndefOr[SchemaGooglePrivacyDlpV2WordList] = js.native
+  var wordList: js.UndefOr[SchemaGooglePrivacyDlpV2WordList] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Dictionary {
   

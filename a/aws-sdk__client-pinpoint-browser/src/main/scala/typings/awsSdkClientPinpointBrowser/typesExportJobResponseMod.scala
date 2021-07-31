@@ -12,53 +12,51 @@ import typings.awsSdkClientPinpointBrowser.typesExportJobResourceMod.Unmarshalle
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesExportJobResponseMod {
   
-  @js.native
   trait ExportJobResponse extends StObject {
     
     /**
       * The unique ID of the application associated with the export job.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The number of pieces that have successfully completed as of the time of the request.
       */
-    var CompletedPieces: js.UndefOr[Double] = js.native
+    var CompletedPieces: js.UndefOr[Double] = js.undefined
     
     /**
       * The date the job completed in ISO 8601 format.
       */
-    var CompletionDate: js.UndefOr[String] = js.native
+    var CompletionDate: js.UndefOr[String] = js.undefined
     
     /**
       * The date the job was created in ISO 8601 format.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The export job settings.
       */
-    var Definition: js.UndefOr[ExportJobResource] = js.native
+    var Definition: js.UndefOr[ExportJobResource] = js.undefined
     
     /**
       * The number of pieces that failed to be processed as of the time of the request.
       */
-    var FailedPieces: js.UndefOr[Double] = js.native
+    var FailedPieces: js.UndefOr[Double] = js.undefined
     
     /**
       * Provides up to 100 of the first failed entries for the job, if any exist.
       */
-    var Failures: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Failures: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * The unique ID of the job.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * The status of the job.
@@ -68,27 +66,27 @@ object typesExportJobResponseMod {
       */
     var JobStatus: js.UndefOr[
         CREATED | INITIALIZING | PROCESSING | COMPLETING | COMPLETED | FAILING | FAILED | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The number of endpoints that were not processed; for example, because of syntax errors.
       */
-    var TotalFailures: js.UndefOr[Double] = js.native
+    var TotalFailures: js.UndefOr[Double] = js.undefined
     
     /**
       * The total number of pieces that must be processed to finish the job. Each piece is an approximately equal portion of the endpoints.
       */
-    var TotalPieces: js.UndefOr[Double] = js.native
+    var TotalPieces: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of endpoints that were processed by the job.
       */
-    var TotalProcessed: js.UndefOr[Double] = js.native
+    var TotalProcessed: js.UndefOr[Double] = js.undefined
     
     /**
       * The job type. Will be 'EXPORT'.
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object ExportJobResponse {
     
@@ -184,20 +182,21 @@ object typesExportJobResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledExportJobResponse extends ExportJobResponse {
+  trait UnmarshalledExportJobResponse
+    extends StObject
+       with ExportJobResponse {
     
     /**
       * The export job settings.
       */
     @JSName("Definition")
-    var Definition_UnmarshalledExportJobResponse: js.UndefOr[UnmarshalledExportJobResource] = js.native
+    var Definition_UnmarshalledExportJobResponse: js.UndefOr[UnmarshalledExportJobResource] = js.undefined
     
     /**
       * Provides up to 100 of the first failed entries for the job, if any exist.
       */
     @JSName("Failures")
-    var Failures_UnmarshalledExportJobResponse: js.UndefOr[js.Array[String]] = js.native
+    var Failures_UnmarshalledExportJobResponse: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledExportJobResponse {
     

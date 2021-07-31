@@ -2,26 +2,24 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOriginEndpointsRequest extends StObject {
   
   /**
     * When specified, the request will return only OriginEndpoints associated with the given Channel ID.
     */
-  var ChannelId: js.UndefOr[string] = js.native
+  var ChannelId: js.UndefOr[string] = js.undefined
   
   /**
     * The upper bound on the number of records to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.mediapackageMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.mediapackageMod.MaxResults] = js.undefined
   
   /**
     * A token used to resume pagination from the end of a previous request.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListOriginEndpointsRequest {
   

@@ -11,7 +11,6 @@ import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,13 @@ object mod {
   }
   object default {
     
-    /* static member */
-    @JSImport("rc-textarea", "default.getDerivedStateFromProps")
+    @JSImport("rc-textarea", JSImport.Default)
     @js.native
-    def getDerivedStateFromProps(nextProps: TextAreaProps): Value = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: TextAreaProps): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[Value]
   }
   
   @JSImport("rc-textarea", "ResizableTextArea")
@@ -58,16 +60,17 @@ object mod {
     def setValue(value: String, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
-  trait TextAreaProps extends TextareaHTMLAttributes[HTMLTextAreaElement] {
+  trait TextAreaProps
+    extends StObject
+       with TextareaHTMLAttributes[HTMLTextAreaElement] {
     
-    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.native
+    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.undefined
     
-    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.native
+    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.undefined
     
-    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object TextAreaProps {
     
@@ -106,10 +109,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TextAreaState extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object TextAreaState {
     

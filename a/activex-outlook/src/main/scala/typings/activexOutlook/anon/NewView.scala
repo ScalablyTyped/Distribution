@@ -2,15 +2,13 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewView extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val NewView: js.Any = js.native
+  val NewView: js.Any
 }
 object NewView {
   

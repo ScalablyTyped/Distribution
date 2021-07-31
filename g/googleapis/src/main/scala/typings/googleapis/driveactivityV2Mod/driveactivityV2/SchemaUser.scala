@@ -2,29 +2,27 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about an end user.
   */
-@js.native
 trait SchemaUser extends StObject {
   
   /**
     * A user whose account has since been deleted.
     */
-  var deletedUser: js.UndefOr[SchemaDeletedUser] = js.native
+  var deletedUser: js.UndefOr[SchemaDeletedUser] = js.undefined
   
   /**
     * A known user.
     */
-  var knownUser: js.UndefOr[SchemaKnownUser] = js.native
+  var knownUser: js.UndefOr[SchemaKnownUser] = js.undefined
   
   /**
     * A user about whom nothing is currently known.
     */
-  var unknownUser: js.UndefOr[SchemaUnknownUser] = js.native
+  var unknownUser: js.UndefOr[SchemaUnknownUser] = js.undefined
 }
 object SchemaUser {
   

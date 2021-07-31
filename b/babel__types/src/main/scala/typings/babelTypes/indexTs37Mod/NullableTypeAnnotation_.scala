@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.NullableTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait NullableTypeAnnotation_
-  extends Flow
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait NullableTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
-  var typeAnnotation: FlowType = js.native
+  var typeAnnotation: FlowType
   
   @JSName("type")
-  var type_NullableTypeAnnotation_ : NullableTypeAnnotation = js.native
+  var type_NullableTypeAnnotation_ : NullableTypeAnnotation
 }
 object NullableTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: NullableTypeAnnotation, typeAnnotation: FlowType): NullableTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: FlowType): NullableTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NullableTypeAnnotation")
     __obj.asInstanceOf[NullableTypeAnnotation_]
   }
   

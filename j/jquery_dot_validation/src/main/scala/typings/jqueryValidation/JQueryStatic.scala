@@ -3,10 +3,8 @@ package typings.jqueryValidation
 import typings.jqueryValidation.JQueryValidation.ValidatorStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
   /**
@@ -14,9 +12,9 @@ trait JQueryStatic extends StObject {
     *
     * @param template The string to format.
     */
-  def format(template: String, arguments: String*): String = js.native
+  def format(template: String, arguments: String*): String
   
-  var validator: ValidatorStatic = js.native
+  var validator: ValidatorStatic
 }
 object JQueryStatic {
   

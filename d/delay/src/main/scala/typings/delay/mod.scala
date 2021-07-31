@@ -7,7 +7,6 @@ import typings.delay.anon.Value
 import typings.delay.delayStrings.abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined delay.delay.Delay & {createWithTimers (timers : {  clearTimeout :{None (handle : number): void, None (): void},   setTimeout :{None (handler : std.TimerHandler, timeout : undefined, arguments : ...any): number, None (handler : std.TimerHandler, timeout : number, arguments : ...any): number}}): delay.delay.Delay,   default :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay * / any} */
@@ -18,12 +17,12 @@ object mod {
   	@param milliseconds - Milliseconds to delay the promise.
   	@returns A promise which resolves after the specified `milliseconds`.
   	*/
-  @JSImport("delay", JSImport.Namespace)
-  @js.native
-  def apply(milliseconds: Double): ClearablePromise[Unit] = js.native
-  @JSImport("delay", JSImport.Namespace)
-  @js.native
-  def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = js.native
+  @scala.inline
+  def apply(milliseconds: Double): ClearablePromise[Unit] = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[Unit]]
+  @scala.inline
+  def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[Unit]]
+  @scala.inline
+  def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
   
   @JSImport("delay", JSImport.Namespace)
   @js.native
@@ -34,9 +33,8 @@ object mod {
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any = js.native
   
-  @JSImport("delay", "createWithTimers")
-  @js.native
-  def createWithTimers(timers: ClearTimeout): Delay = js.native
+  @scala.inline
+  def createWithTimers(timers: ClearTimeout): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithTimers")(timers.asInstanceOf[js.Any]).asInstanceOf[Delay]
   
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
@@ -48,12 +46,10 @@ object mod {
   	@param maximum - Maximum amount of milliseconds to delay the promise.
   	@returns A promise which resolves after a random amount of milliseconds between `maximum` and `maximum` has passed.
   	*/
-  @JSImport("delay", "range")
-  @js.native
-  def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = js.native
-  @JSImport("delay", "range")
-  @js.native
-  def range[T](minimum: Double, maximum: Double, options: Options with Value[T]): ClearablePromise[T] = js.native
+  @scala.inline
+  def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
+  @scala.inline
+  def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
   
   // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 is resolved.
   /**
@@ -61,12 +57,10 @@ object mod {
   	@param milliseconds - Milliseconds to delay the promise.
   	@returns A promise which rejects after the specified `milliseconds`.
   	*/
-  @JSImport("delay", "reject")
-  @js.native
-  def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = js.native
-  @JSImport("delay", "reject")
-  @js.native
-  def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = js.native
+  @scala.inline
+  def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[scala.Nothing]]
+  @scala.inline
+  def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[scala.Nothing]]
   
   /**
   	Minimal subset of `AbortSignal` that delay will use if passed.
@@ -107,6 +101,7 @@ object mod {
     	*/
     def apply(milliseconds: Double): ClearablePromise[Unit] = js.native
     def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = js.native
+    def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = js.native
     
     /**
     	Create a promise which resolves after a random amount of milliseconds between `minimum` and `maximum` has passed.
@@ -116,7 +111,7 @@ object mod {
     	@returns A promise which resolves after a random amount of milliseconds between `maximum` and `maximum` has passed.
     	*/
     def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = js.native
-    def range[T](minimum: Double, maximum: Double, options: Options with Value[T]): ClearablePromise[T] = js.native
+    def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = js.native
     
     // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 is resolved.
     /**
@@ -128,14 +123,13 @@ object mod {
     def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		An optional AbortSignal to abort the delay.
     		If aborted, the Promise will be rejected with an AbortError.
     		*/
-    var signal: js.UndefOr[AbortSignal] = js.native
+    var signal: js.UndefOr[AbortSignal] = js.undefined
   }
   object Options {
     

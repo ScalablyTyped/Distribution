@@ -2,7 +2,6 @@ package typings.cliColor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object throbberMod {
@@ -10,16 +9,18 @@ object throbberMod {
   /**
     * Writes throbber string to *write* function at given *interval*. Optionally throbber output can be formatted with given *format* function
     */
-  @JSImport("cli-color/throbber", JSImport.Namespace)
-  @js.native
-  def apply(write: js.Function1[/* str */ String, Unit], interval: Double): Throbber = js.native
-  @JSImport("cli-color/throbber", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(write: js.Function1[/* str */ String, Unit], interval: Double): Throbber = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Throbber]
+  @scala.inline
   def apply(
     write: js.Function1[/* str */ String, Unit],
     interval: Double,
     format: js.Function1[/* throbber */ String, String]
-  ): Throbber = js.native
+  ): Throbber = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Throbber]
+  
+  @JSImport("cli-color/throbber", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cli-color/throbber", "Iterator")
   @js.native
@@ -34,14 +35,13 @@ object throbberMod {
     val running: Boolean = js.native
   }
   
-  @js.native
   trait Throbber extends StObject {
     
-    def restart(): Unit = js.native
+    def restart(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Throbber {
     

@@ -4,21 +4,19 @@ import typings.formatjsEcma402Abstract.anon.Standard
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawNumberData extends StObject {
   
-  var currency: Record[NumberingSystem, RawCurrencyData] = js.native
+  var currency: Record[NumberingSystem, RawCurrencyData]
   
-  var decimal: Record[NumberingSystem, Standard] = js.native
+  var decimal: Record[NumberingSystem, Standard]
   
-  var nu: js.Array[String] = js.native
+  var nu: js.Array[String]
   
-  var percent: Record[NumberingSystem, String] = js.native
+  var percent: Record[NumberingSystem, String]
   
-  var symbols: Record[NumberingSystem, SymbolsData] = js.native
+  var symbols: Record[NumberingSystem, SymbolsData]
 }
 object RawNumberData {
   

@@ -4,7 +4,6 @@ import typings.materialDataTable.anon.PartialMDCDataTableAdapte
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,7 @@ object mod {
   @js.native
   class MDCDataTable protected ()
     extends typings.materialDataTable.componentMod.MDCDataTable {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialDataTable.foundationMod.MDCDataTableFoundation,
@@ -23,9 +22,12 @@ object mod {
   /* static members */
   object MDCDataTable {
     
-    @JSImport("@material/data-table", "MDCDataTable.attachTo")
+    @JSImport("@material/data-table", "MDCDataTable")
     @js.native
-    def attachTo(root: Element): typings.materialDataTable.componentMod.MDCDataTable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialDataTable.componentMod.MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDataTable.componentMod.MDCDataTable]
   }
   
   @JSImport("@material/data-table", "MDCDataTableFoundation")
@@ -40,15 +42,15 @@ object mod {
   object SortValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.materialDataTable.constantsMod.SortValue with String] = js.native
+    def apply(value: String): js.UndefOr[typings.materialDataTable.constantsMod.SortValue & String] = js.native
     
-    /* "ascending" */ val ASCENDING: typings.materialDataTable.constantsMod.SortValue.ASCENDING with String = js.native
+    /* "ascending" */ val ASCENDING: typings.materialDataTable.constantsMod.SortValue.ASCENDING & String = js.native
     
-    /* "descending" */ val DESCENDING: typings.materialDataTable.constantsMod.SortValue.DESCENDING with String = js.native
+    /* "descending" */ val DESCENDING: typings.materialDataTable.constantsMod.SortValue.DESCENDING & String = js.native
     
-    /* "none" */ val NONE: typings.materialDataTable.constantsMod.SortValue.NONE with String = js.native
+    /* "none" */ val NONE: typings.materialDataTable.constantsMod.SortValue.NONE & String = js.native
     
-    /* "other" */ val OTHER: typings.materialDataTable.constantsMod.SortValue.OTHER with String = js.native
+    /* "other" */ val OTHER: typings.materialDataTable.constantsMod.SortValue.OTHER & String = js.native
   }
   
   object attributes {

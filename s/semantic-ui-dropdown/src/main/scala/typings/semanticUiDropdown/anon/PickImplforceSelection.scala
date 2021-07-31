@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'forceSelection'> */
-@js.native
 trait PickImplforceSelection extends StObject {
   
-  var forceSelection: Boolean = js.native
+  var forceSelection: Boolean
 }
 object PickImplforceSelection {
   

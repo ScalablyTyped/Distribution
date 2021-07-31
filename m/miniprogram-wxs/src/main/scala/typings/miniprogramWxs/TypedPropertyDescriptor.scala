@@ -2,24 +2,22 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // declare var Array: ArrayConstructor;
-@js.native
 trait TypedPropertyDescriptor[T] extends StObject {
   
-  var configurable: js.UndefOr[scala.Boolean] = js.native
+  var configurable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var enumerable: js.UndefOr[scala.Boolean] = js.native
+  var enumerable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var get: js.UndefOr[js.Function0[T]] = js.native
+  var get: js.UndefOr[js.Function0[T]] = js.undefined
   
-  var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+  var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   
-  var value: js.UndefOr[T] = js.native
+  var value: js.UndefOr[T] = js.undefined
   
-  var writable: js.UndefOr[scala.Boolean] = js.native
+  var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 object TypedPropertyDescriptor {
   
@@ -30,7 +28,7 @@ object TypedPropertyDescriptor {
   }
   
   @scala.inline
-  implicit class TypedPropertyDescriptorMutableBuilder[Self <: TypedPropertyDescriptor[_], T] (val x: Self with TypedPropertyDescriptor[T]) extends AnyVal {
+  implicit class TypedPropertyDescriptorMutableBuilder[Self <: TypedPropertyDescriptor[?], T] (val x: Self & TypedPropertyDescriptor[T]) extends AnyVal {
     
     @scala.inline
     def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])

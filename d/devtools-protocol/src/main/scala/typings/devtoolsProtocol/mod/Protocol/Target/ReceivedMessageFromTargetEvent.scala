@@ -2,23 +2,21 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceivedMessageFromTargetEvent extends StObject {
   
-  var message: String = js.native
+  var message: String
   
   /**
     * Identifier of a session which sends a message.
     */
-  var sessionId: SessionID = js.native
+  var sessionId: SessionID
   
   /**
     * Deprecated.
     */
-  var targetId: js.UndefOr[TargetID] = js.native
+  var targetId: js.UndefOr[TargetID] = js.undefined
 }
 object ReceivedMessageFromTargetEvent {
   

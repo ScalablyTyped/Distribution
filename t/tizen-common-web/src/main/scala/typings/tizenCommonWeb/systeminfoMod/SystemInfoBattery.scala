@@ -2,16 +2,16 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoBattery extends SystemInfoProperty {
+trait SystemInfoBattery
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Indicates whether the battery source is currently charging.
     */
-  val isCharging: Boolean = js.native
+  val isCharging: Boolean
   
   /**
     * An attribute to specify the remaining level of an internal battery, scaled from ***0*** to ***1***:
@@ -19,7 +19,7 @@ trait SystemInfoBattery extends SystemInfoProperty {
     * - ***1 ***indicates that the system's charge is maximum.
     * Any threshold parameter used in a watch operation to monitor this property applies to this attribute.
     */
-  val level: Double = js.native
+  val level: Double
   
   /**
     * Estimated time to discharge, in minutes.
@@ -33,7 +33,7 @@ trait SystemInfoBattery extends SystemInfoProperty {
     *
     * @since 4.0
     */
-  val timeToDischarge: js.UndefOr[Double] = js.native
+  val timeToDischarge: js.UndefOr[Double] = js.undefined
   
   /**
     * Estimated time to finish charging battery, in minutes.
@@ -47,7 +47,7 @@ trait SystemInfoBattery extends SystemInfoProperty {
     *
     * @since 4.0
     */
-  val timeToFullCharge: js.UndefOr[Double] = js.native
+  val timeToFullCharge: js.UndefOr[Double] = js.undefined
 }
 object SystemInfoBattery {
   

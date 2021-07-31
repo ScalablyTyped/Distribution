@@ -2,14 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to reflect the zoomAndPan attribute, and is mixed in to other interfaces for elements that support this attribute. */
-@js.native
 trait SVGZoomAndPan extends StObject {
   
-  val zoomAndPan: Double = js.native
+  val zoomAndPan: Double
 }
 object SVGZoomAndPan {
   

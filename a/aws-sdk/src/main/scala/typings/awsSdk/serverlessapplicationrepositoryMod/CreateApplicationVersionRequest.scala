@@ -2,41 +2,39 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationVersionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The semantic version of the new version.
     */
-  var SemanticVersion: string = js.native
+  var SemanticVersion: string
   
   /**
     * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
     */
-  var SourceCodeArchiveUrl: js.UndefOr[string] = js.native
+  var SourceCodeArchiveUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[string] = js.native
+  var SourceCodeUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The raw packaged AWS SAM template of your application.
     */
-  var TemplateBody: js.UndefOr[string] = js.native
+  var TemplateBody: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the packaged AWS SAM template of your application.
     */
-  var TemplateUrl: js.UndefOr[string] = js.native
+  var TemplateUrl: js.UndefOr[string] = js.undefined
 }
 object CreateApplicationVersionRequest {
   

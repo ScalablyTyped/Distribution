@@ -2,25 +2,23 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeComparisonInfo extends StObject {
   
-  def addMessage(message: String): Unit = js.native
+  def addMessage(message: String): Unit
   
-  var flags: TypeRelationshipFlags = js.native
+  var flags: TypeRelationshipFlags
   
-  var indent: js.Any = js.native
+  var indent: js.Any
   
-  /* private */ def indentString(): js.Any = js.native
+  /* private */ def indentString(): js.Any
   
-  var message: String = js.native
+  var message: String
   
-  var onlyCaptureFirstError: Boolean = js.native
+  var onlyCaptureFirstError: Boolean
   
-  var stringConstantVal: AST = js.native
+  var stringConstantVal: AST
 }
 object TypeComparisonInfo {
   

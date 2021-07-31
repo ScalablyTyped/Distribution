@@ -2,22 +2,20 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.dialog.input()
-@js.native
 trait DialogInputConfig extends StObject {
   
-  var buttons: js.UndefOr[js.Array[DialogButton]] = js.native
+  var buttons: js.UndefOr[js.Array[DialogButton]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var placeholderText: js.UndefOr[String] = js.native
+  var placeholderText: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object DialogInputConfig {
   

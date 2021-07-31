@@ -2,7 +2,6 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can change the value of this configuration at runtime.
   *
   */
-@js.native
 trait ZoneRuntimeConfigurations extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait ZoneRuntimeConfigurations extends StObject {
     * If you set `__zone_symbol__ignoreConsoleErrorUncaughtError = true`, `zone.js` does not output
     * the uncaught error to `console.error()`.
     */
-  var __zone_symbol__ignoreConsoleErrorUncaughtError: js.UndefOr[Boolean] = js.native
+  var __zone_symbol__ignoreConsoleErrorUncaughtError: js.UndefOr[Boolean] = js.undefined
 }
 object ZoneRuntimeConfigurations {
   

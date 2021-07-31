@@ -2,34 +2,32 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updated transaction details resulting from a change in shipping contact, including any errors.
   */
-@js.native
 trait ApplePayShippingContactUpdate extends StObject {
   
   /**
     * List of custom errors to display on the payment sheet.
     */
-  var errors: js.UndefOr[js.Array[ApplePayError]] = js.native
+  var errors: js.UndefOr[js.Array[ApplePayError]] = js.undefined
   
   /**
     * An optional list of updated line items.
     */
-  var newLineItems: js.UndefOr[js.Array[ApplePayLineItem]] = js.native
+  var newLineItems: js.UndefOr[js.Array[ApplePayLineItem]] = js.undefined
   
   /**
     * A list of shipping methods that are available to the updated shipping contact.
     */
-  var newShippingMethods: js.UndefOr[js.Array[ApplePayShippingMethod]] = js.native
+  var newShippingMethods: js.UndefOr[js.Array[ApplePayShippingMethod]] = js.undefined
   
   /**
     * The new total resulting from a change in the shipping contact.
     */
-  var newTotal: ApplePayLineItem = js.native
+  var newTotal: ApplePayLineItem
 }
 object ApplePayShippingContactUpdate {
   

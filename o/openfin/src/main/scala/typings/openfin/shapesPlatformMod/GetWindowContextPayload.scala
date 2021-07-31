@@ -4,15 +4,13 @@ import typings.openfin.entityTypeMod.EntityType
 import typings.openfin.shapesIdentityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWindowContextPayload extends StObject {
   
-  var entityType: EntityType = js.native
+  var entityType: EntityType
   
-  var target: Identity = js.native
+  var target: Identity
 }
 object GetWindowContextPayload {
   

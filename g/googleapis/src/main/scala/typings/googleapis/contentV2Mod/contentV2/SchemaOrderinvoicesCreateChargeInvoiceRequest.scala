@@ -2,39 +2,37 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderinvoicesCreateChargeInvoiceRequest extends StObject {
   
   /**
     * [required] The ID of the invoice.
     */
-  var invoiceId: js.UndefOr[String] = js.native
+  var invoiceId: js.UndefOr[String] = js.undefined
   
   /**
     * [required] Invoice summary.
     */
-  var invoiceSummary: js.UndefOr[SchemaInvoiceSummary] = js.native
+  var invoiceSummary: js.UndefOr[SchemaInvoiceSummary] = js.undefined
   
   /**
     * [required] Invoice details per line item.
     */
-  var lineItemInvoices: js.UndefOr[js.Array[SchemaShipmentInvoiceLineItemInvoice]] = js.native
+  var lineItemInvoices: js.UndefOr[js.Array[SchemaShipmentInvoiceLineItemInvoice]] = js.undefined
   
   /**
     * [required] The ID of the operation, unique across all operations for a
     * given order.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * [required] ID of the shipment group. It is assigned by the merchant in
     * the shipLineItems method and is used to group multiple line items that
     * have the same kind of shipping charges.
     */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderinvoicesCreateChargeInvoiceRequest {
   

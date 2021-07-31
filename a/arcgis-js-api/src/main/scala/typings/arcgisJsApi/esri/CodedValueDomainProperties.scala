@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodedValueDomainProperties extends DomainProperties {
+trait CodedValueDomainProperties
+  extends StObject
+     with DomainProperties {
   
   /**
     * An array of the coded values in the domain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var codedValues: js.UndefOr[js.Array[CodedValueDomainCodedValues]] = js.native
+  var codedValues: js.UndefOr[js.Array[CodedValueDomainCodedValues]] = js.undefined
 }
 object CodedValueDomainProperties {
   

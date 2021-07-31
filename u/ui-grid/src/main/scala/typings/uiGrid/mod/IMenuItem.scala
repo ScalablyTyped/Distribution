@@ -3,32 +3,30 @@ package typings.uiGrid.mod
 import typings.angular.mod.IAngularEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMenuItem extends StObject {
   
   /** the method to call when the menu is clicked */
-  var action: js.UndefOr[js.Function1[/* $event */ IAngularEvent, Unit]] = js.native
+  var action: js.UndefOr[js.Function1[/* $event */ IAngularEvent, Unit]] = js.undefined
   
   /** a function to evaluate to determine whether or not the item is currently selected */
-  var active: js.UndefOr[js.Function0[Boolean]] = js.native
+  var active: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** context to pass to the action function, available in this.context in your handler */
-  var context: js.UndefOr[js.Any] = js.native
+  var context: js.UndefOr[js.Any] = js.undefined
   
   /** the icon shown alongside that title */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** if set to true, the menu should stay open after the action, defaults to false */
-  var leaveOpen: js.UndefOr[Boolean] = js.native
+  var leaveOpen: js.UndefOr[Boolean] = js.undefined
   
   /** a function to evaluate to determine whether or not to show the item */
-  var shown: js.UndefOr[js.Function0[Boolean]] = js.native
+  var shown: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** controls the title that is displayed in the menu */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IMenuItem {
   

@@ -2,7 +2,6 @@ package typings.pluralsCldr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,9 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined plurals-cldr.plurals-cldr.Plural & {  ordinal :plurals-cldr.plurals-cldr.Plural} */
 object mod {
   
-  @JSImport("plurals-cldr", JSImport.Namespace)
-  @js.native
-  def apply(locale: String, number: String): Form | Null = js.native
+  @scala.inline
+  def apply(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -22,9 +20,8 @@ object mod {
     * @param number The number to check. May be passed as a string to keep
     *     trailing zeroes.
     */
-  @JSImport("plurals-cldr", JSImport.Namespace)
-  @js.native
-  def apply(locale: String, number: Double): Form | Null = js.native
+  @scala.inline
+  def apply(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   
   @JSImport("plurals-cldr", JSImport.Namespace)
   @js.native
@@ -36,13 +33,11 @@ object mod {
     *
     * @param locale The locale code.
     */
-  @JSImport("plurals-cldr", "forms")
-  @js.native
-  def forms(locale: String): js.Array[Form] | Null = js.native
+  @scala.inline
+  def forms(locale: String): js.Array[Form] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("forms")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Form] | Null]
   
-  @JSImport("plurals-cldr", "indexOf")
-  @js.native
-  def indexOf(locale: String, number: String): Double = js.native
+  @scala.inline
+  def indexOf(locale: String, number: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
     * Returns the index of the form for a given number. If the locale is
     * not supported, returns `-1`.
@@ -56,9 +51,8 @@ object mod {
     * @param number The number to check. May be passed as a string to keep
     *     trailing zeroes.
     */
-  @JSImport("plurals-cldr", "indexOf")
-  @js.native
-  def indexOf(locale: String, number: Double): Double = js.native
+  @scala.inline
+  def indexOf(locale: String, number: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets the CLDR ordinal plural forms for numbers in different locales.
@@ -66,9 +60,8 @@ object mod {
   @JSImport("plurals-cldr", "ordinal")
   @js.native
   def ordinal: Plural = js.native
-  @JSImport("plurals-cldr", "ordinal")
-  @js.native
-  def ordinal(locale: String, number: String): Form | Null = js.native
+  @scala.inline
+  def ordinal(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -80,9 +73,8 @@ object mod {
   /**
     * Gets the CLDR ordinal plural forms for numbers in different locales.
     */
-  @JSImport("plurals-cldr", "ordinal")
-  @js.native
-  def ordinal(locale: String, number: Double): Form | Null = js.native
+  @scala.inline
+  def ordinal(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   @scala.inline
   def ordinal_=(x: Plural): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ordinal")(x.asInstanceOf[js.Any])
   

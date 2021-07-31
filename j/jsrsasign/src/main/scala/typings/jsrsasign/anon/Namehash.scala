@@ -2,19 +2,17 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namehash extends StObject {
   
-  var alg: String = js.native
+  var alg: String
   
-  var keyhash: String = js.native
+  var keyhash: String
   
-  var namehash: String = js.native
+  var namehash: String
   
-  var serial: String = js.native
+  var serial: String
 }
 object Namehash {
   

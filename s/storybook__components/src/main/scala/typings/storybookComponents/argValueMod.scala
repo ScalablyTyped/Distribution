@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.storybookComponents.typesMod.PropSummaryValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argValueMod {
@@ -13,12 +12,11 @@ object argValueMod {
   @js.native
   val ArgValue: FC[ArgValueProps] = js.native
   
-  @js.native
   trait ArgValueProps extends StObject {
     
-    var initialExpandedArgs: js.UndefOr[Boolean] = js.native
+    var initialExpandedArgs: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[PropSummaryValue] = js.native
+    var value: js.UndefOr[PropSummaryValue] = js.undefined
   }
   object ArgValueProps {
     

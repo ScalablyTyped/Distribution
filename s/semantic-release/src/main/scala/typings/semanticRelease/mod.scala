@@ -11,7 +11,6 @@ import typings.semanticRelease.semanticReleaseStrings.minor
 import typings.semanticRelease.semanticReleaseStrings.patch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,14 @@ object mod {
     * object.
     * @async
     */
+  @scala.inline
+  def apply(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(options: Options, environment: Config): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  
   @JSImport("semantic-release", JSImport.Namespace)
   @js.native
-  def apply(options: Options): js.Promise[Result] = js.native
-  @JSImport("semantic-release", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, environment: Config): js.Promise[Result] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Specifies a git branch holding commits to analyze and code to release.
@@ -37,53 +38,52 @@ object mod {
     */
   type BranchSpec = String | Channel
   
-  @js.native
   trait Commit extends StObject {
     
     /**
       * The commit author information.
       */
-    var author: Email = js.native
+    var author: Email
     
     /**
       * The commit body.
       */
-    var body: String = js.native
+    var body: String
     
     /**
       * The commit abbreviated and full hash.
       */
-    var commit: Long = js.native
+    var commit: Long
     
     /**
       * The committer information.
       */
-    var committer: Email = js.native
+    var committer: Email
     
     /**
       * The committer date.
       */
-    var committerDate: String = js.native
+    var committerDate: String
     
     /**
       * The commit hash.
       */
-    var hash: String = js.native
+    var hash: String
     
     /**
       * The commit full message (subject and body).
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The commit subject.
       */
-    var subject: String = js.native
+    var subject: String
     
     /**
       * The commit abbreviated and full tree hash.
       */
-    var tree: Long = js.native
+    var tree: Long
   }
   object Commit {
     
@@ -136,7 +136,6 @@ object mod {
   }
   
   /** semantic-release configuration specific for API usage. */
-  @js.native
   trait Config extends StObject {
     
     /**
@@ -148,7 +147,7 @@ object mod {
       *
       * @default process.cwd
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * The environment variables to use.
@@ -158,7 +157,7 @@ object mod {
       *
       * @default process.env
       */
-    var env: js.UndefOr[StringDictionary[String]] = js.native
+    var env: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The writable stream used to log errors.
@@ -168,7 +167,7 @@ object mod {
       *
       * @default process.stderr
       */
-    var stderr: js.UndefOr[WriteStream] = js.native
+    var stderr: js.UndefOr[WriteStream] = js.undefined
     
     /**
       * The writable stream used to log information.
@@ -178,7 +177,7 @@ object mod {
       *
       * @default process.stdout
       */
-    var stdout: js.UndefOr[WriteStream] = js.native
+    var stdout: js.UndefOr[WriteStream] = js.undefined
   }
   object Config {
     
@@ -217,33 +216,32 @@ object mod {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
     /**
       * Environment variables.
       */
-    var env: StringDictionary[String] = js.native
+    var env: StringDictionary[String]
     
     /**
       * The previous release details.
       */
-    var lastRelease: js.UndefOr[LastRelease] = js.native
+    var lastRelease: js.UndefOr[LastRelease] = js.undefined
     
     /**
       * The shared logger instance of semantic release.
       */
-    var logger: Error = js.native
+    var logger: Error
     
     /**
       * The next release details.
       */
-    var nextRelease: js.UndefOr[NextRelease] = js.native
+    var nextRelease: js.UndefOr[NextRelease] = js.undefined
     
     /**
       * The semantic release configuration itself.
       */
-    var options: js.UndefOr[GlobalConfig] = js.native
+    var options: js.UndefOr[GlobalConfig] = js.undefined
   }
   object Context {
     
@@ -286,8 +284,9 @@ object mod {
     * semantic-release options, after normalization and defaults have been
     * applied.
     */
-  @js.native
-  trait GlobalConfig extends Options {
+  trait GlobalConfig
+    extends StObject
+       with Options {
     
     /**
       * The branches on which releases should happen. By default
@@ -322,7 +321,7 @@ object mod {
       * for more details.
       */
     @JSName("branches")
-    var branches_GlobalConfig: js.Array[BranchSpec] | BranchSpec = js.native
+    var branches_GlobalConfig: js.Array[BranchSpec] | BranchSpec
     
     /**
       * Define the list of plugins to use. Plugins will run in series, in
@@ -343,7 +342,7 @@ object mod {
       * ]`
       */
     @JSName("plugins")
-    var plugins_GlobalConfig: js.Array[PluginSpec] = js.native
+    var plugins_GlobalConfig: js.Array[PluginSpec]
     
     /**
       * The git repository URL.
@@ -354,7 +353,7 @@ object mod {
       * Default: `repository` property in `package.json`, or git origin url.
       */
     @JSName("repositoryUrl")
-    var repositoryUrl_GlobalConfig: String = js.native
+    var repositoryUrl_GlobalConfig: String
     
     /**
       * The git tag format used by **semantic-release** to identify
@@ -366,7 +365,7 @@ object mod {
       * [valid git reference](https://git-scm.com/docs/git-check-ref-format#_description).
       */
     @JSName("tagFormat")
-    var tagFormat_GlobalConfig: String = js.native
+    var tagFormat_GlobalConfig: String
   }
   object GlobalConfig {
     
@@ -404,23 +403,22 @@ object mod {
     }
   }
   
-  @js.native
   trait LastRelease extends StObject {
     
     /**
       * The Git checksum of the last commit of the release.
       */
-    var gitHead: String = js.native
+    var gitHead: String
     
     /**
       * The Git tag of the release.
       */
-    var gitTag: String = js.native
+    var gitTag: String
     
     /**
       * The version name of the release.
       */
-    var version: String = js.native
+    var version: String
   }
   object LastRelease {
     
@@ -444,18 +442,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait NextRelease extends LastRelease {
+  trait NextRelease
+    extends StObject
+       with LastRelease {
     
     /**
       * The release notes of the next release.
       */
-    var notes: String = js.native
+    var notes: String
     
     /**
       * The semver type of the release.
       */
-    var `type`: patch | minor | major = js.native
+    var `type`: patch | minor | major
   }
   object NextRelease {
     
@@ -484,9 +483,9 @@ object mod {
     * Each option will take precedence over options configured in the
     * configuration file and shareable configurations.
     */
-  @js.native
   trait Options
-    extends /**
+    extends StObject
+       with /**
     * Any other options supported by plugins.
     */
   /* name */ StringDictionary[js.Any] {
@@ -523,18 +522,18 @@ object mod {
       * See [Workflow configuration](https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#workflow-configuration)
       * for more details.
       */
-    var branches: js.UndefOr[js.Array[BranchSpec] | BranchSpec] = js.native
+    var branches: js.UndefOr[js.Array[BranchSpec] | BranchSpec] = js.undefined
     
     /**
       * Set to false to skip Continuous Integration environment verifications.
       * This allows for making releases from a local machine.
       */
-    var ci: js.UndefOr[Boolean] = js.native
+    var ci: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Dry-run mode, skip publishing, print next version and release notes.
       */
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of modules or file paths containing a
@@ -548,7 +547,7 @@ object mod {
       * file will take precedence over the ones defined in any shareable
       * configuration.
       */
-    var `extends`: js.UndefOr[js.Array[String] | String] = js.native
+    var `extends`: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * Define the list of plugins to use. Plugins will run in series, in
@@ -568,7 +567,7 @@ object mod {
       *     "@semantic-release/github"
       * ]`
       */
-    var plugins: js.UndefOr[js.Array[PluginSpec]] = js.native
+    var plugins: js.UndefOr[js.Array[PluginSpec]] = js.undefined
     
     /**
       * The git repository URL.
@@ -578,7 +577,7 @@ object mod {
       *
       * Default: `repository` property in `package.json`, or git origin url.
       */
-    var repositoryUrl: js.UndefOr[String] = js.native
+    var repositoryUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The git tag format used by **semantic-release** to identify
@@ -589,7 +588,7 @@ object mod {
       * exactly once and compile to a
       * [valid git reference](https://git-scm.com/docs/git-check-ref-format#_description).
       */
-    var tagFormat: js.UndefOr[String] = js.native
+    var tagFormat: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -668,48 +667,47 @@ object mod {
   /**
     * Details of a release published by a publish plugin.
     */
-  @js.native
   trait Release extends StObject {
     
     /**
       * The sha of the last commit being part of the release.
       */
-    var gitHead: String = js.native
+    var gitHead: String
     
     /**
       * The Git tag associated with the release.
       */
-    var gitTag: String = js.native
+    var gitTag: String
     
     /**
       * The release name, only if set by the corresponding publish plugin.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The release notes for the release.
       */
-    var notes: String = js.native
+    var notes: String
     
     /**
       * The name of the plugin that published the release.
       */
-    var pluginName: String = js.native
+    var pluginName: String
     
     /**
       * The semver type of the release.
       */
-    var `type`: patch | minor | major = js.native
+    var `type`: patch | minor | major
     
     /**
       * The release URL, only if set by the corresponding publish plugin.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the release.
       */
-    var version: String = js.native
+    var version: String
   }
   object Release {
     

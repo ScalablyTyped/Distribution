@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,41 +14,67 @@ sealed trait ChartMarkerStyle extends StObject
 object ChartMarkerStyle extends StObject {
   
   @js.native
-  sealed trait automatic extends ChartMarkerStyle
+  sealed trait automatic
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait circle extends ChartMarkerStyle
+  sealed trait circle
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait dash extends ChartMarkerStyle
+  sealed trait dash
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait diamond extends ChartMarkerStyle
+  sealed trait diamond
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait dot extends ChartMarkerStyle
+  sealed trait dot
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait invalid extends ChartMarkerStyle
+  sealed trait invalid
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait none extends ChartMarkerStyle
+  sealed trait none
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait picture extends ChartMarkerStyle
+  sealed trait picture
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait plus extends ChartMarkerStyle
+  sealed trait plus
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait square extends ChartMarkerStyle
+  sealed trait square
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait star extends ChartMarkerStyle
+  sealed trait star
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait triangle extends ChartMarkerStyle
+  sealed trait triangle
+    extends StObject
+       with ChartMarkerStyle
   
   @js.native
-  sealed trait x extends ChartMarkerStyle
+  sealed trait x
+    extends StObject
+       with ChartMarkerStyle
 }

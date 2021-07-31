@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

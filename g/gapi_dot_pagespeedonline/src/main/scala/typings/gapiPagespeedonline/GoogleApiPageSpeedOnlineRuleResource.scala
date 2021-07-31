@@ -3,31 +3,29 @@ package typings.gapiPagespeedonline
 import typings.gapiPagespeedonline.anon.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiPageSpeedOnlineRuleResource extends StObject {
   
   /**
     * Localized name of the rule, intended for presentation to a user.
     */
-  var localizedRuleName: String = js.native
+  var localizedRuleName: String
   
   /**
     * The impact (unbounded floating point value) that implementing the suggestions for this rule would have on making the page faster.
     */
-  var ruleImpact: Double = js.native
+  var ruleImpact: Double
   
   /**
     * The score (0-100) for this rule. The rule score indicates how well a page implements the recommendations for the given rule.
     */
-  var ruleScore: Double = js.native
+  var ruleScore: Double
   
   /**
     * List of blocks of URLs. Each block may contain a heading and a list of URLs. Each URL may optionally include additional details.
     */
-  var urlBlocks: js.Array[Header] = js.native
+  var urlBlocks: js.Array[Header]
 }
 object GoogleApiPageSpeedOnlineRuleResource {
   

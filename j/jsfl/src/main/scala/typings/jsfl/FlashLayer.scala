@@ -2,31 +2,29 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashLayer extends StObject {
   
-  var color: js.Any = js.native
+  var color: js.Any
   
-  var frameCount: Double = js.native
+  var frameCount: Double
   
-  var frames: js.Array[FlashFrame] = js.native
+  var frames: js.Array[FlashFrame]
   
-  var height: Double = js.native
+  var height: Double
   
-  var layerType: String = js.native
+  var layerType: String
   
-  var locked: Boolean = js.native
+  var locked: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var outline: Boolean = js.native
+  var outline: Boolean
   
-  var parentLayer: FlashLayer = js.native
+  var parentLayer: FlashLayer
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object FlashLayer {
   

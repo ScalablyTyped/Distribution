@@ -10,9 +10,9 @@ Generate errors that contain a code frame that point to source locations.
 | ------------------ | :-------------: |
 | Full name          | babel-code-frame |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 228 |
-| # downloads        | 384923525 |
+| # releases         | 0 |
+| # dependents       | 236 |
+| # downloads        | 406622636 |
 | # stars            | 5 |
 
 ## Links

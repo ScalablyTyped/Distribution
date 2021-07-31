@@ -2,27 +2,27 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UseProps extends CommonPathProps {
+trait UseProps
+  extends StObject
+     with CommonPathProps {
   
-  var height: js.UndefOr[NumberProp] = js.native
+  var height: js.UndefOr[NumberProp] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   
-  var width: js.UndefOr[NumberProp] = js.native
+  var width: js.UndefOr[NumberProp] = js.undefined
   
   @JSName("x")
-  var x_UseProps: js.UndefOr[NumberProp] = js.native
+  var x_UseProps: js.UndefOr[NumberProp] = js.undefined
   
-  var xlinkHref: js.UndefOr[String] = js.native
+  var xlinkHref: js.UndefOr[String] = js.undefined
   
   @JSName("y")
-  var y_UseProps: js.UndefOr[NumberProp] = js.native
+  var y_UseProps: js.UndefOr[NumberProp] = js.undefined
 }
 object UseProps {
   

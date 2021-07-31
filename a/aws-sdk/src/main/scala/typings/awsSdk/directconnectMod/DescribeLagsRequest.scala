@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLagsRequest extends StObject {
   
   /**
     * The ID of the LAG.
     */
-  var lagId: js.UndefOr[LagId] = js.native
+  var lagId: js.UndefOr[LagId] = js.undefined
 }
 object DescribeLagsRequest {
   

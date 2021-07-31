@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatorMod {
@@ -21,16 +20,15 @@ object paginatorMod {
     def this(props: PaginatorProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PageState extends StObject {
     
-    var first: Double = js.native
+    var first: Double
     
-    var page: Double = js.native
+    var page: Double
     
-    var pageCount: Double = js.native
+    var pageCount: Double
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object PageState {
     
@@ -57,36 +55,35 @@ object paginatorMod {
     }
   }
   
-  @js.native
   trait PaginatorProps extends StObject {
     
-    var alwaysShow: js.UndefOr[Boolean] = js.native
+    var alwaysShow: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var currentPageReportTemplate: js.UndefOr[String] = js.native
+    var currentPageReportTemplate: js.UndefOr[String] = js.undefined
     
-    var dropdownAppendTo: js.UndefOr[js.Any] = js.native
+    var dropdownAppendTo: js.UndefOr[js.Any] = js.undefined
     
-    var first: js.UndefOr[Double] = js.native
+    var first: js.UndefOr[Double] = js.undefined
     
-    var leftContent: js.UndefOr[Element] = js.native
+    var leftContent: js.UndefOr[Element] = js.undefined
     
-    var onPageChange: js.UndefOr[js.Function1[/* event */ PageState, Unit]] = js.native
+    var onPageChange: js.UndefOr[js.Function1[/* event */ PageState, Unit]] = js.undefined
     
-    var pageLinkSize: js.UndefOr[Double] = js.native
+    var pageLinkSize: js.UndefOr[Double] = js.undefined
     
-    var rightContent: js.UndefOr[Element] = js.native
+    var rightContent: js.UndefOr[Element] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var rowsPerPageOptions: js.UndefOr[js.Array[_]] = js.native
+    var rowsPerPageOptions: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var totalRecords: js.UndefOr[Double] = js.native
+    var totalRecords: js.UndefOr[Double] = js.undefined
   }
   object PaginatorProps {
     
@@ -157,7 +154,7 @@ object paginatorMod {
       def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRowsPerPageOptions(value: js.Array[_]): Self = StObject.set(x, "rowsPerPageOptions", value.asInstanceOf[js.Any])
+      def setRowsPerPageOptions(value: js.Array[js.Any]): Self = StObject.set(x, "rowsPerPageOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsPerPageOptionsUndefined: Self = StObject.set(x, "rowsPerPageOptions", js.undefined)

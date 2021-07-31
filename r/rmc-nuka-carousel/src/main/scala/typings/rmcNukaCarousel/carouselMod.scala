@@ -25,7 +25,6 @@ import typings.rmcNukaCarousel.rmcNukaCarouselStrings.left
 import typings.rmcNukaCarousel.rmcNukaCarouselStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
@@ -58,41 +57,21 @@ object carouselMod {
     var _rafID: js.Any = js.native
     
     def animateSlide(): Unit = js.native
-    def animateSlide(
-      easing: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      endValue: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Unit = js.native
-    def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], endValue: js.Any): Unit = js.native
-    def animateSlide(
-      easing: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      endValue: js.Any,
-      callback: js.Function
-    ): Unit = js.native
-    def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any): Unit = js.native
-    def animateSlide(
-      easing: js.UndefOr[scala.Nothing],
-      duration: js.Any,
-      endValue: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Unit = js.native
-    def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any, endValue: js.Any): Unit = js.native
-    def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any, endValue: js.Any, callback: js.Function): Unit = js.native
     def animateSlide(easing: js.Any): Unit = js.native
-    def animateSlide(
-      easing: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      endValue: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Unit = js.native
-    def animateSlide(easing: js.Any, duration: js.UndefOr[scala.Nothing], endValue: js.Any): Unit = js.native
-    def animateSlide(easing: js.Any, duration: js.UndefOr[scala.Nothing], endValue: js.Any, callback: js.Function): Unit = js.native
     def animateSlide(easing: js.Any, duration: js.Any): Unit = js.native
-    def animateSlide(easing: js.Any, duration: js.Any, endValue: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def animateSlide(easing: js.Any, duration: js.Any, endValue: js.Any): Unit = js.native
     def animateSlide(easing: js.Any, duration: js.Any, endValue: js.Any, callback: js.Function): Unit = js.native
+    def animateSlide(easing: js.Any, duration: js.Any, endValue: Unit, callback: js.Function): Unit = js.native
+    def animateSlide(easing: js.Any, duration: Unit, endValue: js.Any): Unit = js.native
+    def animateSlide(easing: js.Any, duration: Unit, endValue: js.Any, callback: js.Function): Unit = js.native
+    def animateSlide(easing: js.Any, duration: Unit, endValue: Unit, callback: js.Function): Unit = js.native
+    def animateSlide(easing: Unit, duration: js.Any): Unit = js.native
+    def animateSlide(easing: Unit, duration: js.Any, endValue: js.Any): Unit = js.native
+    def animateSlide(easing: Unit, duration: js.Any, endValue: js.Any, callback: js.Function): Unit = js.native
+    def animateSlide(easing: Unit, duration: js.Any, endValue: Unit, callback: js.Function): Unit = js.native
+    def animateSlide(easing: Unit, duration: Unit, endValue: js.Any): Unit = js.native
+    def animateSlide(easing: Unit, duration: Unit, endValue: js.Any, callback: js.Function): Unit = js.native
+    def animateSlide(easing: Unit, duration: Unit, endValue: Unit, callback: js.Function): Unit = js.native
     
     var autoplayID: js.Any = js.native
     
@@ -135,9 +114,9 @@ object carouselMod {
     def getStyleTagStyles(): String = js.native
     
     def getTargetLeft(): Double = js.native
-    def getTargetLeft(touchOffset: js.UndefOr[scala.Nothing], slide: js.Any): Double = js.native
     def getTargetLeft(touchOffset: js.Any): Double = js.native
     def getTargetLeft(touchOffset: js.Any, slide: js.Any): Double = js.native
+    def getTargetLeft(touchOffset: Unit, slide: js.Any): Double = js.native
     
     def getTouchEvents(): OnTouchCancel | Null = js.native
     
@@ -180,69 +159,68 @@ object carouselMod {
     
     var touchObject: js.Any = js.native
     
-    def tweenState(path: js.Any, hasEasingDurationDelayBeginValueEndValueOnEndStackBehavior: BeginValue): Unit = js.native
+    def tweenState(path: js.Any, hasEasingDurationDelayBeginValueEndValueOnEndConfigSB: BeginValue): Unit = js.native
     
     def unbindEvents(): Unit = js.native
   }
   
-  @js.native
   trait ICarouselProps extends StObject {
     
-    var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var autoplayInterval: js.UndefOr[Double] = js.native
+    var autoplayInterval: js.UndefOr[Double] = js.undefined
     
-    var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* endIndex */ Double, Unit]] = js.native
+    var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* endIndex */ Double, Unit]] = js.undefined
     
-    var cellAlign: js.UndefOr[left | center | right] = js.native
+    var cellAlign: js.UndefOr[left | center | right] = js.undefined
     
-    var cellSpacing: js.UndefOr[Double] = js.native
+    var cellSpacing: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Function0[Unit]] = js.native
+    var data: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var decorators: js.UndefOr[js.Array[_]] = js.native
+    var decorators: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var dragging: js.UndefOr[Boolean] = js.native
+    var dragging: js.UndefOr[Boolean] = js.undefined
     
-    var easing: js.UndefOr[js.Function] = js.native
+    var easing: js.UndefOr[js.Function] = js.undefined
     
-    var edgeEasing: js.UndefOr[js.Function] = js.native
+    var edgeEasing: js.UndefOr[js.Function] = js.undefined
     
-    var frameOverflow: js.UndefOr[String] = js.native
+    var frameOverflow: js.UndefOr[String] = js.undefined
     
-    var framePadding: js.UndefOr[String] = js.native
+    var framePadding: js.UndefOr[String] = js.undefined
     
-    var initialSlideHeight: js.UndefOr[Double] = js.native
+    var initialSlideHeight: js.UndefOr[Double] = js.undefined
     
-    var initialSlideWidth: js.UndefOr[Double] = js.native
+    var initialSlideWidth: js.UndefOr[Double] = js.undefined
     
-    var resetAutoplay: js.UndefOr[Boolean] = js.native
+    var resetAutoplay: js.UndefOr[Boolean] = js.undefined
     
-    var slideIndex: js.UndefOr[Double] = js.native
+    var slideIndex: js.UndefOr[Double] = js.undefined
     
-    var slideWidth: js.UndefOr[String | Double] = js.native
+    var slideWidth: js.UndefOr[String | Double] = js.undefined
     
-    var slidesToScroll: js.UndefOr[Double | auto] = js.native
+    var slidesToScroll: js.UndefOr[Double | auto] = js.undefined
     
-    var slidesToShow: js.UndefOr[Double] = js.native
+    var slidesToShow: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var swipeSpeed: js.UndefOr[Double] = js.native
+    var swipeSpeed: js.UndefOr[Double] = js.undefined
     
-    var swiping: js.UndefOr[Boolean] = js.native
+    var swiping: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapAround: js.UndefOr[Boolean] = js.native
+    var wrapAround: js.UndefOr[Boolean] = js.undefined
   }
   object ICarouselProps {
     
@@ -304,7 +282,7 @@ object carouselMod {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setDecorators(value: js.Array[_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+      def setDecorators(value: js.Array[js.Any]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)

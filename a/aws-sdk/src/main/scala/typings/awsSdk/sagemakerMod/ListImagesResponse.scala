@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImagesResponse extends StObject {
   
   /**
     * A list of images and their properties.
     */
-  var Images: js.UndefOr[typings.awsSdk.sagemakerMod.Images] = js.native
+  var Images: js.UndefOr[typings.awsSdk.sagemakerMod.Images] = js.undefined
   
   /**
     * A token for getting the next set of images, if there are any.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListImagesResponse {
   

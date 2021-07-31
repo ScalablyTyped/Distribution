@@ -9,28 +9,27 @@ import typings.toastifyJs.toastifyJsStrings.right
 import typings.toastifyJs.toastifyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ShowToast = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ShowToast]
+  @scala.inline
+  def apply(options: Options): ShowToast = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ShowToast]
+  
   @JSImport("toastify-js", JSImport.Namespace)
   @js.native
-  def apply(): ShowToast = js.native
-  @JSImport("toastify-js", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ShowToast = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("toastify-js", "reposition")
-  @js.native
-  def reposition(): Unit = js.native
+  @scala.inline
+  def reposition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reposition")().asInstanceOf[Unit]
   
-  @js.native
   trait Offset extends StObject {
     
-    var x: Double | String = js.native
+    var x: Double | String
     
-    var y: Double | String = js.native
+    var y: Double | String
   }
   object Offset {
     
@@ -51,49 +50,48 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Image/icon to be shown before text
       */
-    var avatar: js.UndefOr[String] = js.native
+    var avatar: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Invoked when the toast is dismissed
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var gravity: js.UndefOr[top | bottom] = js.native
+    var gravity: js.UndefOr[top | bottom] = js.undefined
     
-    var newWindow: js.UndefOr[Boolean] = js.native
+    var newWindow: js.UndefOr[Boolean] = js.undefined
     
-    var node: js.UndefOr[Node] = js.native
+    var node: js.UndefOr[Node] = js.undefined
     
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var position: js.UndefOr[left | center | right] = js.native
+    var position: js.UndefOr[left | center | right] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
     /**
       * @default true
       */
-    var stopOnFocus: js.UndefOr[Boolean] = js.native
+    var stopOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Options {
     

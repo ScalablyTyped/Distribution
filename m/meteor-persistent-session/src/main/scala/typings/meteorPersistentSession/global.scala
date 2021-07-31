@@ -3,102 +3,79 @@ package typings.meteorPersistentSession
 import typings.meteor.EJSONable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object Session {
     
-    @JSGlobal("Session.clear")
+    @JSGlobal("Session")
     @js.native
-    def clear(): Unit = js.native
-    @JSGlobal("Session.clear")
-    @js.native
-    def clear(key: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Session.clearAuth")
-    @js.native
-    def clearAuth(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    @scala.inline
+    def clear(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Session.clearPersistent")
-    @js.native
-    def clearPersistent(): Unit = js.native
+    @scala.inline
+    def clearAuth(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAuth")().asInstanceOf[Unit]
     
-    @JSGlobal("Session.clearTemp")
-    @js.native
-    def clearTemp(): Unit = js.native
+    @scala.inline
+    def clearPersistent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPersistent")().asInstanceOf[Unit]
     
-    @JSGlobal("Session.makeAuth")
-    @js.native
-    def makeAuth(key: String): Unit = js.native
+    @scala.inline
+    def clearTemp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTemp")().asInstanceOf[Unit]
     
-    @JSGlobal("Session.makePersistent")
-    @js.native
-    def makePersistent(key: String): Unit = js.native
+    @scala.inline
+    def makeAuth(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAuth")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Session.makeTemp")
-    @js.native
-    def makeTemp(key: String): Unit = js.native
+    @scala.inline
+    def makePersistent(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makePersistent")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Session.setAuth")
-    @js.native
-    def setAuth(key: String, value: String): Boolean = js.native
-    @JSGlobal("Session.setAuth")
-    @js.native
-    def setAuth(key: String, value: js.Any): Boolean = js.native
-    @JSGlobal("Session.setAuth")
-    @js.native
-    def setAuth(key: String, value: Boolean): Boolean = js.native
-    @JSGlobal("Session.setAuth")
-    @js.native
-    def setAuth(key: String, value: Double): Boolean = js.native
+    @scala.inline
+    def makeTemp(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTemp")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Session.setDefaultAuth")
-    @js.native
-    def setDefaultAuth(key: String, value: js.Any): Unit = js.native
-    @JSGlobal("Session.setDefaultAuth")
-    @js.native
-    def setDefaultAuth(key: String, value: EJSONable): Unit = js.native
+    @scala.inline
+    def setAuth(key: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setAuth(key: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setAuth(key: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setAuth(key: String, value: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("Session.setDefaultPersistent")
-    @js.native
-    def setDefaultPersistent(key: String, value: js.Any): Unit = js.native
-    @JSGlobal("Session.setDefaultPersistent")
-    @js.native
-    def setDefaultPersistent(key: String, value: EJSONable): Unit = js.native
+    @scala.inline
+    def setDefaultAuth(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setDefaultAuth(key: String, value: EJSONable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultAuth")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Session.setDefaultTemp")
-    @js.native
-    def setDefaultTemp(key: String, value: js.Any): Unit = js.native
-    @JSGlobal("Session.setDefaultTemp")
-    @js.native
-    def setDefaultTemp(key: String, value: EJSONable): Unit = js.native
+    @scala.inline
+    def setDefaultPersistent(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setDefaultPersistent(key: String, value: EJSONable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Session.setPersistent")
-    @js.native
-    def setPersistent(key: String, value: String): Boolean = js.native
-    @JSGlobal("Session.setPersistent")
-    @js.native
-    def setPersistent(key: String, value: js.Any): Boolean = js.native
-    @JSGlobal("Session.setPersistent")
-    @js.native
-    def setPersistent(key: String, value: Boolean): Boolean = js.native
-    @JSGlobal("Session.setPersistent")
-    @js.native
-    def setPersistent(key: String, value: Double): Boolean = js.native
+    @scala.inline
+    def setDefaultTemp(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setDefaultTemp(key: String, value: EJSONable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Session.setTemp")
-    @js.native
-    def setTemp(key: String, value: String): Boolean = js.native
-    @JSGlobal("Session.setTemp")
-    @js.native
-    def setTemp(key: String, value: js.Any): Boolean = js.native
-    @JSGlobal("Session.setTemp")
-    @js.native
-    def setTemp(key: String, value: Boolean): Boolean = js.native
-    @JSGlobal("Session.setTemp")
-    @js.native
-    def setTemp(key: String, value: Double): Boolean = js.native
+    @scala.inline
+    def setPersistent(key: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setPersistent(key: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setPersistent(key: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setPersistent(key: String, value: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPersistent")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def setTemp(key: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setTemp(key: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setTemp(key: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def setTemp(key: String, value: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemp")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

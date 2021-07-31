@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /**
     * The policy ARN.
     */
-  var policyArn: js.UndefOr[PolicyArn] = js.native
+  var policyArn: js.UndefOr[PolicyArn] = js.undefined
   
   /**
     * The policy name.
     */
-  var policyName: js.UndefOr[PolicyName] = js.native
+  var policyName: js.UndefOr[PolicyName] = js.undefined
 }
 object Policy {
   

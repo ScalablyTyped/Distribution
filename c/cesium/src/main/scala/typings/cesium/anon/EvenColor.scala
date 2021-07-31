@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvenColor extends StObject {
   
-  var evenColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var evenColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var oddColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var oddColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var repeat: js.UndefOr[Property] = js.native
+  var repeat: js.UndefOr[Property] = js.undefined
 }
 object EvenColor {
   

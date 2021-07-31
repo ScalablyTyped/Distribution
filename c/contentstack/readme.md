@@ -10,9 +10,9 @@ Contentstack Javascript SDK
 | ------------------ | :-------------: |
 | Full name          | contentstack |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 284521 |
+| # releases         | 14 |
+| # dependents       | 3 |
+| # downloads        | 430796 |
 | # stars            | 1 |
 
 ## Links

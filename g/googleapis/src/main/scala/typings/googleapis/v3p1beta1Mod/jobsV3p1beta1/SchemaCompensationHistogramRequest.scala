@@ -2,27 +2,25 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Compensation based histogram request.
   */
-@js.native
 trait SchemaCompensationHistogramRequest extends StObject {
   
   /**
     * Required.  Numeric histogram options, like buckets, whether include min
     * or max value.
     */
-  var bucketingOption: js.UndefOr[SchemaNumericBucketingOption] = js.native
+  var bucketingOption: js.UndefOr[SchemaNumericBucketingOption] = js.undefined
   
   /**
     * Required.  Type of the request, representing which field the
     * histogramming should be performed over. A single request can only specify
     * one histogram of each `CompensationHistogramRequestType`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCompensationHistogramRequest {
   

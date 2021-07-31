@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**
     * The list of audio messages.
     */
-  var AudioList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.AudioList] = js.native
+  var AudioList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.AudioList] = js.undefined
   
   /**
     * The list of SSML messages.
     */
-  var SsmlList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SsmlList] = js.native
+  var SsmlList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SsmlList] = js.undefined
   
   /**
     * The list of text messages.
     */
-  var TextList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TextList] = js.native
+  var TextList: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TextList] = js.undefined
 }
 object Content {
   

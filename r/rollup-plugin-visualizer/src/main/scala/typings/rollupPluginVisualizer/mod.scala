@@ -3,32 +3,32 @@ package typings.rollupPluginVisualizer
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-visualizer", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("rollup-plugin-visualizer", JSImport.Namespace)
-  @js.native
-  def apply(options: PluginVisualizerOptions): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: PluginVisualizerOptions): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("rollup-plugin-visualizer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PluginVisualizerOptions extends StObject {
     
-    var bundlesRelative: js.UndefOr[Boolean] = js.native
+    var bundlesRelative: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var sourcemap: js.UndefOr[Boolean] = js.native
+    var sourcemap: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PluginVisualizerOptions {
     

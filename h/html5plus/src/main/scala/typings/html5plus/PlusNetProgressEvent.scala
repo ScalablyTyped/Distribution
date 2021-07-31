@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
   */
-@js.native
 trait PlusNetProgressEvent extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNetProgressEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var lengthComputable: js.UndefOr[Double] = js.native
+  var lengthComputable: js.UndefOr[Double] = js.undefined
   
   /**
     * 当前已经接收到的数据长度
@@ -27,7 +25,7 @@ trait PlusNetProgressEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
   
   /**
     * 事件的目标对象
@@ -35,7 +33,7 @@ trait PlusNetProgressEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var target: js.UndefOr[PlusNetXMLHttpRequest] = js.native
+  var target: js.UndefOr[PlusNetXMLHttpRequest] = js.undefined
   
   /**
     * 总数据长度
@@ -44,7 +42,7 @@ trait PlusNetProgressEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object PlusNetProgressEvent {
   

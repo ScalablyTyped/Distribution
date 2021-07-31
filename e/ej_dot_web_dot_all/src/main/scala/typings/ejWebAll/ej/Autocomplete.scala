@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autocomplete extends Widget_ {
+trait Autocomplete
+  extends StObject
+     with Widget_ {
   
   /** Clears the text in the Autocomplete textbox.
     * @returns {void}
@@ -81,17 +82,20 @@ object Autocomplete {
     ///Supports to animation type with fade type only.
     @js.native
     sealed trait Fade
-      extends typings.ejWebAll.ej.Autocomplete.Animation
+      extends StObject
+         with typings.ejWebAll.ej.Autocomplete.Animation
     
     ///Supports to animation type with none type only.
     @js.native
     sealed trait None
-      extends typings.ejWebAll.ej.Autocomplete.Animation
+      extends StObject
+         with typings.ejWebAll.ej.Autocomplete.Animation
     
     ///Supports to animation type with slide type only.
     @js.native
     sealed trait Slide
-      extends typings.ejWebAll.ej.Autocomplete.Animation
+      extends StObject
+         with typings.ejWebAll.ej.Autocomplete.Animation
   }
   
   @js.native
@@ -103,12 +107,14 @@ object Autocomplete {
     ///Multiple values are separated using a given special character.
     @js.native
     sealed trait Delimiter
-      extends typings.ejWebAll.ej.Autocomplete.MultiSelectMode
+      extends StObject
+         with typings.ejWebAll.ej.Autocomplete.MultiSelectMode
     
     ///Each values are displayed in separate box with close button.
     @js.native
     sealed trait VisualMode
-      extends typings.ejWebAll.ej.Autocomplete.MultiSelectMode
+      extends StObject
+         with typings.ejWebAll.ej.Autocomplete.MultiSelectMode
   }
   
   @js.native
@@ -119,27 +125,30 @@ object Autocomplete {
     
     ///Items to be displayed in the suggestion list in ascending order.
     @js.native
-    sealed trait Ascending extends SortOrder
+    sealed trait Ascending
+      extends StObject
+         with SortOrder
     
     ///Items to be displayed in the suggestion list in descending order.
     @js.native
-    sealed trait Descending extends SortOrder
+    sealed trait Descending
+      extends StObject
+         with SortOrder
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -172,40 +181,39 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -249,7 +257,7 @@ object Autocomplete {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -271,28 +279,27 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -337,40 +344,39 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait ActionSuccessEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -414,7 +420,7 @@ object Autocomplete {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -436,24 +442,23 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the autocomplete textbox.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -492,20 +497,19 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -538,20 +542,19 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -584,20 +587,19 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -630,24 +632,23 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Used to group the suggestion list items.
       */
-    var groupBy: js.UndefOr[String] = js.native
+    var groupBy: js.UndefOr[String] = js.undefined
     
     /** Defines the HTML attributes such as id, class, styles for the item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the specific field name which contains unique key values for the list items.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name in the data source to load the suggestion list with data.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -686,24 +687,23 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait FocusInEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the autocomplete textbox.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusInEventArgs {
     
@@ -742,24 +742,23 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait FocusOutEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the autocomplete textbox.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusOutEventArgs {
     
@@ -798,278 +797,277 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when the AJAX requests Begins.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggers when the AJAX requests complete. The request may get failed or succeed.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when the data requested from AJAX get failed.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when the data requested from AJAX will get successfully loaded in the Autocomplete widget.
       */
-    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.native
+    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.undefined
     
     /** Customize &quot;Add New&quot; text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it.
       * @Default {Add New}
       */
-    var addNewText: js.UndefOr[String] = js.native
+    var addNewText: js.UndefOr[String] = js.undefined
     
     /** Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display â€œNo suggestionsâ€
       * label in the popup.
       * @Default {false}
       */
-    var allowAddNew: js.UndefOr[Boolean] = js.native
+    var allowAddNew: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order.
       * @Default {true}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
       * @Default {slide}
       */
-    var animateType: js.UndefOr[typings.ejWebAll.ej.Animation | String] = js.native
+    var animateType: js.UndefOr[typings.ejWebAll.ej.Animation | String] = js.undefined
     
     /** To focus the items in the suggestion list when the popup is shown. By default first item will be focused.
       * @Default {false}
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the case sensitive search.
       * @Default {false}
       */
-    var caseSensitiveSearch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when the text box value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers after the suggestion popup is closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Triggers when Autocomplete widget is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** The root class for the Autocomplete textbox widget which helps in customizing its theme.
       * @Default {â€â€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** The data source contains the list of data for the suggestions list. It can be a string array or JSON array or service URL that returns JSON.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** The time delay (in milliseconds) after which the suggestion popup will be shown.
       * @Default {200}
       */
-    var delaySuggestionTimeout: js.UndefOr[Double] = js.native
+    var delaySuggestionTimeout: js.UndefOr[Double] = js.undefined
     
     /** The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search
       * operation.
       * @Default {â€™,â€™}
       */
-    var delimiterChar: js.UndefOr[String] = js.native
+    var delimiterChar: js.UndefOr[String] = js.undefined
     
     /** Triggers after the Autocomplete widget is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The text to be displayed in the popup when there are no suggestions available for the entered text.
       * @Default {â€œNo suggestionsâ€}
       */
-    var emptyResultText: js.UndefOr[String] = js.native
+    var emptyResultText: js.UndefOr[String] = js.undefined
     
     /** Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled.
       * @Default {false}
       */
-    var enableAutoFill: js.UndefOr[Boolean] = js.native
+    var enableAutoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables displaying the duplicate names present in the search result.
       * @Default {false}
       */
-    var enableDistinct: js.UndefOr[Boolean] = js.native
+    var enableDistinct: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true. While refreshing the page, it retains the model value
       * from browser cookies or local storage.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the Autocomplete widgetâ€™s content from right to left when enabled.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Autocomplete textbox widget.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Mapping fields for the suggestion items of the Autocomplete textbox widget.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Specifies the search filter type. There are several types of search filter available such as â€˜startswithâ€™, â€˜containsâ€™, â€˜endswithâ€™, â€˜lessthanâ€™,
       * â€˜lessthanorequalâ€™, â€˜greaterthanâ€™, â€˜greaterthanorequalâ€™, â€˜equalâ€™, â€˜notequalâ€™.
       * @Default {ej.filterType.StartsWith}
       */
-    var filterType: js.UndefOr[String] = js.native
+    var filterType: js.UndefOr[String] = js.undefined
     
     /** Triggers after the autocomplete textbox is focused.
       */
-    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.undefined
     
     /** Triggers after the Autocomplete textbox gets out of the focus.
       */
-    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** The height of the Autocomplete textbox.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** The search text can be highlighted in the AutoComplete suggestion list when enabled.
       * @Default {false}
       */
-    var highlightSearch: js.UndefOr[Boolean] = js.native
+    var highlightSearch: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
       * @Default {false}
       */
-    var ignoreAccent: js.UndefOr[Boolean] = js.native
+    var ignoreAccent: js.UndefOr[Boolean] = js.undefined
     
     /** Number of items to be displayed in the suggestion list.
       * @Default {0}
       */
-    var itemsCount: js.UndefOr[Double] = js.native
+    var itemsCount: js.UndefOr[Double] = js.undefined
     
     /** Set the localization culture for Autocomplete Widget.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
       * @Default {1}
       */
-    var minCharacter: js.UndefOr[Double] = js.native
+    var minCharacter: js.UndefOr[Double] = js.undefined
     
     /** An Autocomplete column collection can be defined and customized through the multiColumnSettings property.Column's header, field, and stringFormat can be define via
       * multiColumnSettings properties.
       */
-    var multiColumnSettings: js.UndefOr[MultiColumnSettings] = js.native
+    var multiColumnSettings: js.UndefOr[MultiColumnSettings] = js.undefined
     
     /** Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
       * @Default {ej.MultiSelectMode.None}
       */
-    var multiSelectMode: js.UndefOr[typings.ejWebAll.ej.MultiSelectMode | String] = js.native
+    var multiSelectMode: js.UndefOr[typings.ejWebAll.ej.MultiSelectMode | String] = js.undefined
     
     /** Triggers after the suggestion list is opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** The height of the suggestion list.
       * @Default {â€œ152pxâ€}
       */
-    var popupHeight: js.UndefOr[String] = js.native
+    var popupHeight: js.UndefOr[String] = js.undefined
     
     /** The width of the suggestion list.
       * @Default {â€œautoâ€}
       */
-    var popupWidth: js.UndefOr[String] = js.native
+    var popupWidth: js.UndefOr[String] = js.undefined
     
     /** The query to retrieve the data from the data source.
       * @Default {null}
       */
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
     
     /** Indicates that the autocomplete textbox values can only be readable.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when an item has been selected from the suggestion list.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Sets the value for the Autocomplete textbox based on the given input key value.
       */
-    var selectValueByKey: js.UndefOr[Double] = js.native
+    var selectValueByKey: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables showing the message when there are no suggestions for the entered text.
       * @Default {true}
       */
-    var showEmptyResultText: js.UndefOr[Boolean] = js.native
+    var showEmptyResultText: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
       * @Default {true}
       */
-    var showLoadingIcon: js.UndefOr[Boolean] = js.native
+    var showLoadingIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the showPopup button in autocomplete textbox. When the showPopup button is clicked, it displays all the available data from the data source.
       * @Default {false}
       */
-    var showPopupButton: js.UndefOr[Boolean] = js.native
+    var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables reset icon to clear the textbox values.
       * @Default {false}
       */
-    var showResetIcon: js.UndefOr[Boolean] = js.native
+    var showResetIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables rounded corner.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Sort order specifies whether the suggestion list values has to be displayed in ascending or descending order.
       * @Default {ej.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder_ | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** The template to display the suggestion list items with customized appearance.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** The jQuery validation error message to be displayed on form validation.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** The jQuery validation rules for form validation.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** The value to be displayed in the autocomplete textbox.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of the autocomplete textbox.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The text to be displayed when the value of the autocomplete textbox is empty.
       * @Default {null}
       */
-    var watermarkText: js.UndefOr[String] = js.native
+    var watermarkText: js.UndefOr[String] = js.undefined
     
     /** The width of the Autocomplete textbox.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1167,7 +1165,7 @@ object Autocomplete {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1423,30 +1421,29 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait MultiColumnSettings extends StObject {
     
     /** Field and Header Text collections can be defined and customized through columns field.
       */
-    var columns: js.UndefOr[js.Array[MultiColumnSettingsColumn]] = js.native
+    var columns: js.UndefOr[js.Array[MultiColumnSettingsColumn]] = js.undefined
     
     /** Allow list of data to be displayed in several columns.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
       */
-    var searchColumnIndices: js.UndefOr[js.Array[_]] = js.native
+    var searchColumnIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Allow header text to be displayed in corresponding columns.
       * @Default {true}
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Displayed selected value and autocomplete search based on mentioned column value specified in that format.
       */
-    var stringFormat: js.UndefOr[String] = js.native
+    var stringFormat: js.UndefOr[String] = js.undefined
   }
   object MultiColumnSettings {
     
@@ -1475,7 +1472,7 @@ object Autocomplete {
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
       @scala.inline
-      def setSearchColumnIndices(value: js.Array[_]): Self = StObject.set(x, "searchColumnIndices", value.asInstanceOf[js.Any])
+      def setSearchColumnIndices(value: js.Array[js.Any]): Self = StObject.set(x, "searchColumnIndices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSearchColumnIndicesUndefined: Self = StObject.set(x, "searchColumnIndices", js.undefined)
@@ -1497,41 +1494,40 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait MultiColumnSettingsColumn extends StObject {
     
     /** Gets or sets a value that indicates to render the multicolumn with custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Get or set a value that indicates to display the columns in the autocomplete mapping with column name of the dataSource.
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** Specifies the search filter type. There are several types of search filter available such as â€˜startswithâ€™, â€˜containsâ€™, â€˜endswithâ€™, â€˜lessthanâ€™,
       * â€˜lessthanorequalâ€™, â€˜greaterthanâ€™, â€˜greaterthanorequalâ€™, â€˜equalâ€™, â€˜notequalâ€™.
       * @Default {ej.filterType.StartsWith}
       */
-    var filterType: js.UndefOr[typings.ejWebAll.ej.filterType | String] = js.native
+    var filterType: js.UndefOr[typings.ejWebAll.ej.filterType | String] = js.undefined
     
     /** Get or set a value that indicates to display the title of that particular column.
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /** This defines the text alignment of a particular column header cell value. See headerTextAlign
       * @Default {ej.TextAlign.Left}
       */
-    var headerTextAlign: js.UndefOr[TextAlign | String] = js.native
+    var headerTextAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Gets or sets a value that indicates to align the text within the column. See textAlign
       * @Default {ej.TextAlign.Left}
       */
-    var textAlign: js.UndefOr[TextAlign | String] = js.native
+    var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Specifies the search data type. There are four types of data types available such as string, â€˜numberâ€™, â€˜booleanâ€™ and â€˜dateâ€™.
       * @Default {ej.Type.String}
       */
-    var `type`: js.UndefOr[Type | String] = js.native
+    var `type`: js.UndefOr[Type | String] = js.undefined
   }
   object MultiColumnSettingsColumn {
     
@@ -1588,20 +1584,19 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -1634,36 +1629,35 @@ object Autocomplete {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** Data object of the selected item.
       */
-    var Item: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var Item: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Key of the selected item.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Instance of the autocomplete model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Text of the selected item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Value of the autocomplete textbox.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     

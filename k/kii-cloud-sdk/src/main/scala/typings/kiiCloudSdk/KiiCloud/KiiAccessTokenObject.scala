@@ -3,15 +3,13 @@ package typings.kiiCloudSdk.KiiCloud
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiAccessTokenObject extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var expires_at: Date = js.native
+  var expires_at: Date
 }
 object KiiAccessTokenObject {
   

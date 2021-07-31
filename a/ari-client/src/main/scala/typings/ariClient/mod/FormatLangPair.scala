@@ -2,21 +2,19 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatLangPair extends StObject {
   
   /**
     * Format.
     */
-  var format: String = js.native
+  var format: String
   
   /**
     * Language.
     */
-  var language: String = js.native
+  var language: String
 }
 object FormatLangPair {
   

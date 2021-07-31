@@ -3,22 +3,20 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.ReflectionFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableBackground extends StObject {
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Picture: PictureFormat = js.native
+  val Picture: PictureFormat
   
   @JSName("PowerPoint.TableBackground_typekey")
-  var PowerPointDotTableBackground_typekey: TableBackground = js.native
+  var PowerPointDotTableBackground_typekey: TableBackground
   
-  val Reflection: ReflectionFormat = js.native
+  val Reflection: ReflectionFormat
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
 }
 object TableBackground {
   

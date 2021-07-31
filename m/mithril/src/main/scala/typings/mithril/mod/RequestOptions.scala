@@ -11,68 +11,66 @@ import typings.mithril.mithrilStrings.text
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions[T] extends StObject {
   
   /** Whether the request should be asynchronous. Defaults to true. */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /** If false, redraws mounted components upon completion of the request. If true, it does not. */
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[js.Any | (js.Object with StringDictionary[js.Any])] = js.native
+  var body: js.UndefOr[js.Any | (js.Object & StringDictionary[js.Any])] = js.undefined
   
   /** Exposes the underlying XMLHttpRequest object for low-level configuration. */
   var config: js.UndefOr[
     js.Function2[/* xhr */ XMLHttpRequest, /* options */ this.type, XMLHttpRequest | Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** A deserialization method to be applied to the response. Defaults to a small wrapper around JSON.parse that returns null for empty responses. */
-  var deserialize: js.UndefOr[js.Function1[/* data */ String, T]] = js.native
+  var deserialize: js.UndefOr[js.Function1[/* data */ String, T]] = js.undefined
   
   /** A hook to specify how the XMLHttpRequest response should be read. Useful for reading response headers and cookies. Defaults to a function that returns xhr.responseText */
-  var extract: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* options */ this.type, T]] = js.native
+  var extract: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* options */ this.type, T]] = js.undefined
   
   /** Headers to append to the request before sending it. */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /** The HTTP method to use. */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The data to be interpolated into the URL and serialized into the querystring. */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /** A password for HTTP authorization. */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** The expected type of the response, as a legal value of XMLHttpRequest.responseType. */
-  var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.native
+  var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.undefined
   
   /** A serialization method to be applied to data. Defaults to JSON.stringify, or if options.data is an instance of FormData, defaults to the identity function. */
-  var serialize: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+  var serialize: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
   
   /** Milliseconds a request can take before automatically being terminated. */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.native
+  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
   
   /**
     * Force the use of the HTTP body section for data in GET requests when set to true,
     * or the use of querystring for other HTTP methods when set to false.
     * Defaults to false for GET requests and true for other methods.
     */
-  var useBody: js.UndefOr[Boolean] = js.native
+  var useBody: js.UndefOr[Boolean] = js.undefined
   
   /** A username for HTTP authorization. */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /** Whether to send cookies to 3rd party domains. */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object RequestOptions {
   
@@ -83,7 +81,7 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[_], T] (val x: Self with RequestOptions[T]) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
@@ -98,7 +96,7 @@ object RequestOptions {
     def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setBody(value: js.Any | (js.Object with StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    def setBody(value: js.Any | (js.Object & StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -152,7 +150,7 @@ object RequestOptions {
     def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def setSerialize(value: /* data */ js.Any => _): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    def setSerialize(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)

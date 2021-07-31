@@ -12,7 +12,7 @@ Get a project readme file name
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5114 |
+| # downloads        | 13807 |
 | # stars            | 0 |
 
 ## Links

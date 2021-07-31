@@ -2,17 +2,15 @@ package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseNode extends StObject {
   
-  var _children: js.Array[Node] = js.native
+  var _children: js.Array[Node]
   
-  var _ifName: js.UndefOr[String] = js.native
+  var _ifName: js.UndefOr[String] = js.undefined
   
-  var _parent: js.UndefOr[Node] = js.native
+  var _parent: js.UndefOr[Node] = js.undefined
 }
 object BaseNode {
   

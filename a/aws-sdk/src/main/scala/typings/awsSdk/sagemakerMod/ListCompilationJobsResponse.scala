@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCompilationJobsResponse extends StObject {
   
   /**
     * An array of CompilationJobSummary objects, each describing a model compilation job. 
     */
-  var CompilationJobSummaries: typings.awsSdk.sagemakerMod.CompilationJobSummaries = js.native
+  var CompilationJobSummaries: typings.awsSdk.sagemakerMod.CompilationJobSummaries
   
   /**
     * If the response is truncated, Amazon SageMaker returns this NextToken. To retrieve the next set of model compilation jobs, use this token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListCompilationJobsResponse {
   

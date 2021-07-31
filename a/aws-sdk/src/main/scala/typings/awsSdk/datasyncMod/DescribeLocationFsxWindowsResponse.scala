@@ -2,41 +2,39 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationFsxWindowsResponse extends StObject {
   
   /**
     * The time that the FSx for Windows location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The name of the Windows domain that the FSx for Windows server belongs to.
     */
-  var Domain: js.UndefOr[SmbDomain] = js.native
+  var Domain: js.UndefOr[SmbDomain] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the FSx for Windows location that was described.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the FSx for Windows location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the security groups that are configured for the FSx for Windows file system.
     */
-  var SecurityGroupArns: js.UndefOr[Ec2SecurityGroupArnList] = js.native
+  var SecurityGroupArns: js.UndefOr[Ec2SecurityGroupArnList] = js.undefined
   
   /**
     * The user who has the permissions to access files and folders in the FSx for Windows file system.
     */
-  var User: js.UndefOr[SmbUser] = js.native
+  var User: js.UndefOr[SmbUser] = js.undefined
 }
 object DescribeLocationFsxWindowsResponse {
   

@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeViewVisibilityChangeEvent extends StObject {
   
   /**
     * `true` if the [tree view](#TreeView) is visible otherwise `false`.
     */
-  val visible: Boolean = js.native
+  val visible: Boolean
 }
 object TreeViewVisibilityChangeEvent {
   

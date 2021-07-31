@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.expo.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withExpoRootTypesMod {
   
-  @js.native
   trait InitialProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var exp: Dictkey = js.native
+    var exp: Dictkey
     
-    var shell: js.UndefOr[Boolean] = js.native
+    var shell: js.UndefOr[Boolean] = js.undefined
     
-    var shellManifestUrl: js.UndefOr[String] = js.native
+    var shellManifestUrl: js.UndefOr[String] = js.undefined
   }
   object InitialProps {
     

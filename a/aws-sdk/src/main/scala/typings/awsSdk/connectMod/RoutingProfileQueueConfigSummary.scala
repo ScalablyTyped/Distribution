@@ -2,41 +2,39 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutingProfileQueueConfigSummary extends StObject {
   
   /**
     * The channels this queue supports.
     */
-  var Channel: typings.awsSdk.connectMod.Channel = js.native
+  var Channel: typings.awsSdk.connectMod.Channel
   
   /**
     * The delay, in seconds, that a contact should be in the queue before they are routed to an available agent. For more information, see Queues: priority and delay in the Amazon Connect Administrator Guide.
     */
-  var Delay: typings.awsSdk.connectMod.Delay = js.native
+  var Delay: typings.awsSdk.connectMod.Delay
   
   /**
     * The order in which contacts are to be handled for the queue. For more information, see Queues: priority and delay.
     */
-  var Priority: typings.awsSdk.connectMod.Priority = js.native
+  var Priority: typings.awsSdk.connectMod.Priority
   
   /**
     * The Amazon Resource Name (ARN) of the queue.
     */
-  var QueueArn: ARN = js.native
+  var QueueArn: ARN
   
   /**
     * The identifier of the queue.
     */
-  var QueueId: typings.awsSdk.connectMod.QueueId = js.native
+  var QueueId: typings.awsSdk.connectMod.QueueId
   
   /**
     * The name of the queue.
     */
-  var QueueName: typings.awsSdk.connectMod.QueueName = js.native
+  var QueueName: typings.awsSdk.connectMod.QueueName
 }
 object RoutingProfileQueueConfigSummary {
   

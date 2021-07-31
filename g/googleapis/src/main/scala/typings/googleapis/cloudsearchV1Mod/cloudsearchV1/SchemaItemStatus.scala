@@ -2,29 +2,27 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This contains item&#39;s status and any errors.
   */
-@js.native
 trait SchemaItemStatus extends StObject {
   
   /**
     * Status code.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Error details in case the item is in ERROR state.
     */
-  var processingErrors: js.UndefOr[js.Array[SchemaProcessingError]] = js.native
+  var processingErrors: js.UndefOr[js.Array[SchemaProcessingError]] = js.undefined
   
   /**
     * Repository error reported by connector.
     */
-  var repositoryErrors: js.UndefOr[js.Array[SchemaRepositoryError]] = js.native
+  var repositoryErrors: js.UndefOr[js.Array[SchemaRepositoryError]] = js.undefined
 }
 object SchemaItemStatus {
   

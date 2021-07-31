@@ -2,7 +2,6 @@ package typings.protractor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -71,7 +70,7 @@ trait Typeofpromise extends StObject {
     *     value['self'] = value;
     *     promise.fullyResolved(value);  // Stack overflow.
     */
-  def fullyResolved(value: js.Any): js.Promise[_] = js.native
+  def fullyResolved(value: js.Any): js.Promise[js.Any] = js.native
   
   // region Functions
   /**

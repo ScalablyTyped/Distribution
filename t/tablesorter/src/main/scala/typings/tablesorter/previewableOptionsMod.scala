@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewableOptionsMod {
   
-  @js.native
   trait PreviewableOptions extends StObject {
     
     /**
       * A value indicating whether the value should be visible in the table header.
       */
-    var valueToHeader: js.UndefOr[Boolean] = js.native
+    var valueToHeader: js.UndefOr[Boolean] = js.undefined
   }
   object PreviewableOptions {
     

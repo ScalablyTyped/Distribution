@@ -2,31 +2,29 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkersWithQualificationTypeRequest extends StObject {
   
   /**
     *  Limit the number of results returned. 
     */
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination Token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ID of the Qualification type of the Qualifications to return.
     */
-  var QualificationTypeId: EntityId = js.native
+  var QualificationTypeId: EntityId
   
   /**
     *  The status of the Qualifications to return. Can be Granted | Revoked. 
     */
-  var Status: js.UndefOr[QualificationStatus] = js.native
+  var Status: js.UndefOr[QualificationStatus] = js.undefined
 }
 object ListWorkersWithQualificationTypeRequest {
   

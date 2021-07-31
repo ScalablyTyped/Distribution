@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -54,9 +53,9 @@ trait Datepicker extends StObject {
     * @param preventOnSelect Undocumented as of 5 March 2018
     */
   def setDate(): Unit = js.native
-  def setDate(date: js.UndefOr[scala.Nothing], preventOnSelect: Boolean): Unit = js.native
   def setDate(date: String): Unit = js.native
   def setDate(date: String, preventOnSelect: Boolean): Unit = js.native
+  def setDate(date: Unit, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Date): Unit = js.native
   def setDate(date: Date, preventOnSelect: Boolean): Unit = js.native
   

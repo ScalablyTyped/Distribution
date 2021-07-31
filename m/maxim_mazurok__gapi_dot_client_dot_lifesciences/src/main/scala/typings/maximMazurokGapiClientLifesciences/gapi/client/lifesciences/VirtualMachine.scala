@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualMachine extends StObject {
   
   /** The list of accelerators to attach to the VM. */
-  var accelerators: js.UndefOr[js.Array[Accelerator]] = js.native
+  var accelerators: js.UndefOr[js.Array[Accelerator]] = js.undefined
   
   /**
     * The size of the boot disk, in GB. The boot disk must be large enough to accommodate all of the Docker images from each action in the pipeline at the same time. If not specified, a
     * small but reasonable default value is used.
     */
-  var bootDiskSizeGb: js.UndefOr[Double] = js.native
+  var bootDiskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * The host operating system image to use. Currently, only Container-Optimized OS images can be used. The default value is `projects/cos-cloud/global/images/family/cos-stable`, which
@@ -24,27 +22,27 @@ trait VirtualMachine extends StObject {
     * does not interact negatively with production pipelines. To test a pipeline against the beta release of Container-Optimized OS, use the value
     * `projects/cos-cloud/global/images/family/cos-beta`.
     */
-  var bootImage: js.UndefOr[String] = js.native
+  var bootImage: js.UndefOr[String] = js.undefined
   
   /**
     * The CPU platform to request. An instance based on a newer platform can be allocated, but never one with fewer capabilities. The value of this parameter must be a valid Compute
     * Engine CPU platform name (such as "Intel Skylake"). This parameter is only useful for carefully optimized work loads where the CPU platform has a significant impact. For more
     * information about the effect of this parameter, see https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform.
     */
-  var cpuPlatform: js.UndefOr[String] = js.native
+  var cpuPlatform: js.UndefOr[String] = js.undefined
   
   /** The list of disks to create and attach to the VM. */
-  var disks: js.UndefOr[js.Array[Disk]] = js.native
+  var disks: js.UndefOr[js.Array[Disk]] = js.undefined
   
   /**
     * The Compute Engine Disk Images to use as a Docker cache. The disks will be mounted into the Docker folder in a way that the images present in the cache will not need to be pulled.
     * The digests of the cached images must match those of the tags used or the latest version will still be pulled. The root directory of the ext4 image must contain `image` and
     * `overlay2` directories copied from the Docker directory of a VM where the desired Docker images have already been pulled. Only a single image is supported.
     */
-  var dockerCacheImages: js.UndefOr[js.Array[String]] = js.native
+  var dockerCacheImages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether Stackdriver monitoring should be enabled on the VM. */
-  var enableStackdriverMonitoring: js.UndefOr[Boolean] = js.native
+  var enableStackdriverMonitoring: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional set of labels to apply to the VM and any attached disk resources. These labels must adhere to the [name and value
@@ -54,33 +52,33 @@ trait VirtualMachine extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. The machine type of the virtual machine to create. Must be the short name of a standard machine type (such as "n1-standard-1") or a custom machine type (such as
     * "custom-1-4096", where "1" indicates the number of vCPUs and "4096" indicates the memory in MB). See [Creating an instance with a custom machine
     * type](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) for more specifications on creating a custom machine type.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** The VM network configuration. */
-  var network: js.UndefOr[Network] = js.native
+  var network: js.UndefOr[Network] = js.undefined
   
   /**
     * The NVIDIA driver version to use when attaching an NVIDIA GPU accelerator. The version specified here must be compatible with the GPU libraries contained in the container being
     * executed, and must be one of the drivers hosted in the `nvidia-drivers-us-public` bucket on Google Cloud Storage.
     */
-  var nvidiaDriverVersion: js.UndefOr[String] = js.native
+  var nvidiaDriverVersion: js.UndefOr[String] = js.undefined
   
   /** If true, allocate a preemptible VM. */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /** The service account to install on the VM. This account does not need any permissions other than those required by the pipeline. */
-  var serviceAccount: js.UndefOr[ServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[ServiceAccount] = js.undefined
   
   /** The list of disks and other storage to create or attach to the VM. */
-  var volumes: js.UndefOr[js.Array[Volume]] = js.native
+  var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
 }
 object VirtualMachine {
   
@@ -148,7 +146,7 @@ object VirtualMachine {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

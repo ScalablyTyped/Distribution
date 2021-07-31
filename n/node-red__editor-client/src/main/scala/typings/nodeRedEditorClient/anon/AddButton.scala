@@ -4,41 +4,39 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddButton extends StObject {
   
-  var addButton: js.UndefOr[String | js.Function0[Unit]] = js.native
+  var addButton: js.UndefOr[String | js.Function0[Unit]] = js.undefined
   
-  var addButtonCaption: js.UndefOr[String] = js.native
+  var addButtonCaption: js.UndefOr[String] = js.undefined
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var element: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var element: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
-  var minimumActiveTabWidth: js.UndefOr[Double] = js.native
+  var minimumActiveTabWidth: js.UndefOr[Double] = js.undefined
   
-  var onchange: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.native
+  var onchange: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.undefined
   
-  var onclick: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.undefined
   
-  var ondblclick: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.native
+  var ondblclick: js.UndefOr[js.Function1[/* item */ String, Unit]] = js.undefined
   
-  var onremove: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.native
+  var onremove: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.undefined
   
-  var onselect: js.UndefOr[js.Function1[/* selection */ js.Array[String], Unit]] = js.native
+  var onselect: js.UndefOr[js.Function1[/* selection */ js.Array[String], Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean] = js.native
+  var scrollable: js.UndefOr[Boolean] = js.undefined
   
-  var searchButton: js.UndefOr[String | js.Function0[Unit]] = js.native
+  var searchButton: js.UndefOr[String | js.Function0[Unit]] = js.undefined
   
-  var searchButtonCaption: js.UndefOr[String] = js.native
+  var searchButtonCaption: js.UndefOr[String] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object AddButton {
   

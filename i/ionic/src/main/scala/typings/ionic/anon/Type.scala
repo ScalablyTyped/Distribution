@@ -3,17 +3,15 @@ package typings.ionic.anon
 import typings.ionic.definitionsMod.ProjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: ProjectType = js.native
+  var `type`: ProjectType
 }
 object Type {
   

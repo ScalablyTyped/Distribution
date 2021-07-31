@@ -2,21 +2,21 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineProps extends CommonPathProps {
+trait LineProps
+  extends StObject
+     with CommonPathProps {
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   
-  var x1: js.UndefOr[NumberProp] = js.native
+  var x1: js.UndefOr[NumberProp] = js.undefined
   
-  var x2: js.UndefOr[NumberProp] = js.native
+  var x2: js.UndefOr[NumberProp] = js.undefined
   
-  var y1: js.UndefOr[NumberProp] = js.native
+  var y1: js.UndefOr[NumberProp] = js.undefined
   
-  var y2: js.UndefOr[NumberProp] = js.native
+  var y2: js.UndefOr[NumberProp] = js.undefined
 }
 object LineProps {
   

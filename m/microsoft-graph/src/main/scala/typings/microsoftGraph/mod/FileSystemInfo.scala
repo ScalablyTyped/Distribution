@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemInfo extends StObject {
   
   // The UTC date and time the file was created on a client.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The UTC date and time the file was last accessed. Available for the recent file list only.
-  var lastAccessedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastAccessedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The UTC date and time the file was last modified on a client.
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileSystemInfo {
   

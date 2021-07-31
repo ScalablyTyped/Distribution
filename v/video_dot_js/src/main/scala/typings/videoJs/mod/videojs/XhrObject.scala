@@ -2,11 +2,12 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XhrObject extends Xhr {
+trait XhrObject
+  extends StObject
+     with Xhr {
   
   def del(url: String, callback: XhrCallback): js.Any = js.native
   def del(url: String, options: XhrOptions, callback: XhrCallback): js.Any = js.native

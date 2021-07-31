@@ -11,7 +11,7 @@ This is a node js module, written in TypeScript (module is compiled to JavaScrip
 | Keywords           | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6572 |
+| # downloads        | 6216 |
 | # stars            | 1 |
 
 ## Links

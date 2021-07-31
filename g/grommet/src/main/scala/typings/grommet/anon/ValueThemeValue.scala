@@ -3,13 +3,11 @@ package typings.grommet.anon
 import typings.grommet.themeContextMod.ThemeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueThemeValue extends StObject {
   
-  var value: ThemeValue = js.native
+  var value: ThemeValue
 }
 object ValueThemeValue {
   

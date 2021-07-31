@@ -3,16 +3,15 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseGetUserMinutes200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var automated: js.UndefOr[String] = js.native
+  var automated: js.UndefOr[String] = js.undefined
   
-  var manual: js.UndefOr[String] = js.native
+  var manual: js.UndefOr[String] = js.undefined
 }
 object ResponseGetUserMinutes200 {
   

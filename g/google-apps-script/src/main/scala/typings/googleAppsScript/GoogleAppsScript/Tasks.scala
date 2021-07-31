@@ -8,24 +8,22 @@ import typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.TaskList
 import typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.TaskLists
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tasks extends StObject {
   
-  var Tasklists: js.UndefOr[TasklistsCollection] = js.native
+  var Tasklists: js.UndefOr[TasklistsCollection] = js.undefined
   
-  var Tasks: js.UndefOr[TasksCollection] = js.native
+  var Tasks: js.UndefOr[TasksCollection] = js.undefined
   
   // Create a new instance of Task
-  def newTask(): Task = js.native
+  def newTask(): Task
   
   // Create a new instance of TaskLinks
-  def newTaskLinks(): TaskLinks = js.native
+  def newTaskLinks(): TaskLinks
   
   // Create a new instance of TaskList
-  def newTaskList(): TaskList = js.native
+  def newTaskList(): TaskList
 }
 object Tasks {
   
@@ -98,38 +96,37 @@ object Tasks {
   
   object Schema {
     
-    @js.native
     trait Task extends StObject {
       
-      var completed: js.UndefOr[String] = js.native
+      var completed: js.UndefOr[String] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var due: js.UndefOr[String] = js.native
+      var due: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var links: js.UndefOr[js.Array[TaskLinks]] = js.native
+      var links: js.UndefOr[js.Array[TaskLinks]] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var parent: js.UndefOr[String] = js.native
+      var parent: js.UndefOr[String] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object Task {
       
@@ -237,14 +234,13 @@ object Tasks {
       }
     }
     
-    @js.native
     trait TaskLinks extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object TaskLinks {
       
@@ -277,20 +273,19 @@ object Tasks {
       }
     }
     
-    @js.native
     trait TaskList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object TaskList {
       
@@ -341,16 +336,15 @@ object Tasks {
       }
     }
     
-    @js.native
     trait TaskLists extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[TaskList]] = js.native
+      var items: js.UndefOr[js.Array[TaskList]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object TaskLists {
       
@@ -392,16 +386,15 @@ object Tasks {
       }
     }
     
-    @js.native
     trait Tasks extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Task]] = js.native
+      var items: js.UndefOr[js.Array[Task]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Tasks {
       

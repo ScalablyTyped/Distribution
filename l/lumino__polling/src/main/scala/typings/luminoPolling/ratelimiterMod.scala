@@ -9,7 +9,6 @@ import typings.luminoPolling.pollMod.Poll
 import typings.luminoPolling.ratelimiterMod.Throttler.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratelimiterMod {
@@ -30,7 +29,9 @@ object ratelimiterMod {
   
   @JSImport("@lumino/polling/types/ratelimiter", "RateLimiter")
   @js.native
-  abstract class RateLimiter[T, U] protected () extends IRateLimiter[T, U] {
+  abstract class RateLimiter[T, U] protected ()
+    extends StObject
+       with IRateLimiter[T, U] {
     /**
       * Instantiate a rate limiter.
       *
@@ -42,6 +43,41 @@ object ratelimiterMod {
     def this(fn: js.Function0[T | js.Promise[T]], limit: Double) = this()
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Invoke the rate limited function.
+      */
+    /* CompleteClass */
+    override def invoke(): js.Promise[T] = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    
+    /**
+      * The rate limit in milliseconds.
+      */
+    /* CompleteClass */
+    override val limit: Double = js.native
+    
+    /**
       * A promise that resolves on each successful invocation.
       */
     var payload: PromiseDelegate[T] | Null = js.native
@@ -50,6 +86,12 @@ object ratelimiterMod {
       * The underlying poll instance used by the rate limiter.
       */
     var poll: Poll[T, U, invoked] = js.native
+    
+    /**
+      * Stop the function if it is mid-flight.
+      */
+    /* CompleteClass */
+    override def stop(): js.Promise[Unit] = js.native
   }
   
   @JSImport("@lumino/polling/types/ratelimiter", "Throttler")
@@ -76,19 +118,18 @@ object ratelimiterMod {
     /**
       * Instantiation options for a `Throttler`.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Whether to invoke at the leading or trailing edge of throttle cycle.
         * Defaults to `leading`.
         */
-      var edge: js.UndefOr[leading | trailing] = js.native
+      var edge: js.UndefOr[leading | trailing] = js.undefined
       
       /**
         * The throttling limit; defaults to 500ms.
         */
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

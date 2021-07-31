@@ -4,99 +4,97 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StocksGood extends StObject {
   
   /**
     * True if at least one of the building is owned
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * The building the good is tied to
     */
-  var building: GameObject = js.native
+  var building: GameObject
   
   /**
     * Name of the company which manages the stock (flavour text)
     */
-  var company: String = js.native
+  var company: String
   
   /**
     * The current delta of the stock
     */
-  var d: Double = js.native
+  var d: Double
   
   /**
     * The description of the stock
     */
-  var desc: String = js.native
+  var desc: String
   
   /**
     * Ticks left until next mode
     */
-  var dur: Double = js.native
+  var dur: Double
   
-  var graphIconL: HTMLDivElement = js.native
+  var graphIconL: HTMLDivElement
   
   /**
     * True if the stock was hidden by the player or it's not active yet
     */
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: Double = js.native
+  var id: Double
   
-  var l: HTMLDivElement = js.native
+  var l: HTMLDivElement
   
   /**
     * The last action done on the stock
     */
-  var last: Double = js.native
+  var last: Double
   
   /**
     * The mode of the stock
     */
-  var mode: Double = js.native
+  var mode: Double
   
   /**
     * The displayed name of the stock
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The amount of stocks bought of the good
     */
-  var stock: Double = js.native
+  var stock: Double
   
-  var stockBoxL: HTMLDivElement = js.native
+  var stockBoxL: HTMLDivElement
   
-  var stockL: HTMLSpanElement = js.native
+  var stockL: HTMLSpanElement
   
-  var stockMaxL: HTMLSpanElement = js.native
+  var stockMaxL: HTMLSpanElement
   
   /**
     * Name of the stock in 3 letters
     */
-  var symbol: String = js.native
+  var symbol: String
   
-  var symbolNumL: HTMLSpanElement = js.native
+  var symbolNumL: HTMLSpanElement
   
   /**
     * The current value of the stock
     */
-  var `val`: Double = js.native
+  var `val`: Double
   
   /**
     * History of the stock values
     */
-  var vals: js.Array[Double] = js.native
+  var vals: js.Array[Double]
   
-  var viewHideL: HTMLDivElement = js.native
+  var viewHideL: HTMLDivElement
 }
 object StocksGood {
   

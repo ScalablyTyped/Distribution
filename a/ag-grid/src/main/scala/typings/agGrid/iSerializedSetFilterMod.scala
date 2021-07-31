@@ -3,15 +3,15 @@ package typings.agGrid
 import typings.agGrid.iFilterMod.SerializedFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iSerializedSetFilterMod {
   
-  @js.native
-  trait SerializedSetFilter extends SerializedFilter {
+  trait SerializedSetFilter
+    extends StObject
+       with SerializedFilter {
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object SerializedSetFilter {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuperStickerMetadata extends StObject {
   
   /** Internationalized alt text that describes the sticker image and any animation associated with it. */
-  var altText: js.UndefOr[String] = js.native
+  var altText: js.UndefOr[String] = js.undefined
   
   /** Specifies the localization language in which the alt text is returned. */
-  var altTextLanguage: js.UndefOr[String] = js.native
+  var altTextLanguage: js.UndefOr[String] = js.undefined
   
   /** Unique identifier of the Super Sticker. This is a shorter form of the alt_text that includes pack name and a recognizable characteristic of the sticker. */
-  var stickerId: js.UndefOr[String] = js.native
+  var stickerId: js.UndefOr[String] = js.undefined
 }
 object SuperStickerMetadata {
   

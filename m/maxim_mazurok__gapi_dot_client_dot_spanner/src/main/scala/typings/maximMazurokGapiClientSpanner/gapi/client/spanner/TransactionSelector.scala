@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionSelector extends StObject {
   
   /** Begin a new transaction and execute this read or SQL query in it. The transaction ID of the new transaction is returned in ResultSetMetadata.transaction, which is a Transaction. */
-  var begin: js.UndefOr[TransactionOptions] = js.native
+  var begin: js.UndefOr[TransactionOptions] = js.undefined
   
   /** Execute the read or SQL query in a previously-started transaction. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Execute the read or SQL query in a temporary transaction. This is the most efficient way to execute a transaction that consists of a single SQL query. */
-  var singleUse: js.UndefOr[TransactionOptions] = js.native
+  var singleUse: js.UndefOr[TransactionOptions] = js.undefined
 }
 object TransactionSelector {
   

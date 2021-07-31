@@ -9,7 +9,6 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalPortalMod {
@@ -34,9 +33,9 @@ object portalPortalMod {
   }
   type Portal = Component[PortalProps, js.Object, js.Any]
   
-  @js.native
   trait PortalProps
-    extends StrictPortalProps
+    extends StObject
+       with StrictPortalProps
        with /* key */ StringDictionary[js.Any]
   object PortalProps {
     
@@ -47,48 +46,47 @@ object portalPortalMod {
     }
   }
   
-  @js.native
   trait StrictPortalProps extends StObject {
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Controls whether or not the portal should close on a click outside. */
-    var closeOnDocumentClick: js.UndefOr[Boolean] = js.native
+    var closeOnDocumentClick: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should close when escape is pressed is displayed. */
-    var closeOnEscape: js.UndefOr[Boolean] = js.native
+    var closeOnEscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls whether or not the portal should close when mousing out of the portal.
       * NOTE: This will prevent `closeOnTriggerMouseLeave` when mousing over the
       * gap from the trigger to the portal.
       */
-    var closeOnPortalMouseLeave: js.UndefOr[Boolean] = js.native
+    var closeOnPortalMouseLeave: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should close on blur of the trigger. */
-    var closeOnTriggerBlur: js.UndefOr[Boolean] = js.native
+    var closeOnTriggerBlur: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should close on click of the trigger. */
-    var closeOnTriggerClick: js.UndefOr[Boolean] = js.native
+    var closeOnTriggerClick: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should close when mousing out of the trigger. */
-    var closeOnTriggerMouseLeave: js.UndefOr[Boolean] = js.native
+    var closeOnTriggerMouseLeave: js.UndefOr[Boolean] = js.undefined
     
     /** Initial value of open. */
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Event pool namespace that is used to handle component events. */
-    var eventPool: js.UndefOr[String] = js.native
+    var eventPool: js.UndefOr[String] = js.undefined
     
     /** The node where the portal should mount. */
-    var mountNode: js.UndefOr[js.Any] = js.native
+    var mountNode: js.UndefOr[js.Any] = js.undefined
     
     /** Milliseconds to wait before opening on mouse over */
-    var mouseEnterDelay: js.UndefOr[Double] = js.native
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
     /** Milliseconds to wait before closing on mouse leave */
-    var mouseLeaveDelay: js.UndefOr[Double] = js.native
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Called when a close event happens
@@ -98,7 +96,7 @@ object portalPortalMod {
       */
     var onClose: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is mounted on the DOM
@@ -106,7 +104,7 @@ object portalPortalMod {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalProps, Unit]] = js.native
+    var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalProps, Unit]] = js.undefined
     
     /**
       * Called when an open event happens
@@ -116,7 +114,7 @@ object portalPortalMod {
       */
     var onOpen: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is unmounted from the DOM
@@ -124,25 +122,25 @@ object portalPortalMod {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalProps, Unit]] = js.native
+    var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalProps, Unit]] = js.undefined
     
     /** Controls whether or not the portal is displayed. */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should open when the trigger is clicked. */
-    var openOnTriggerClick: js.UndefOr[Boolean] = js.native
+    var openOnTriggerClick: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should open on focus of the trigger. */
-    var openOnTriggerFocus: js.UndefOr[Boolean] = js.native
+    var openOnTriggerFocus: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether or not the portal should open when mousing over the trigger. */
-    var openOnTriggerMouseEnter: js.UndefOr[Boolean] = js.native
+    var openOnTriggerMouseEnter: js.UndefOr[Boolean] = js.undefined
     
     /** Element to be rendered in-place where the portal is defined. */
-    var trigger: js.UndefOr[ReactNode] = js.native
+    var trigger: js.UndefOr[ReactNode] = js.undefined
     
     /** Called with a ref to the trigger node. */
-    var triggerRef: js.UndefOr[Ref[_]] = js.native
+    var triggerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   }
   object StrictPortalProps {
     
@@ -279,10 +277,10 @@ object portalPortalMod {
       def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTriggerRef(value: Ref[_]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
+      def setTriggerRef(value: Ref[js.Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTriggerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
+      def setTriggerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTriggerRefNull: Self = StObject.set(x, "triggerRef", null)

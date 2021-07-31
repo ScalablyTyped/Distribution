@@ -2,7 +2,6 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -41,7 +40,7 @@ object ScaledValueRef {
   
   @scala.inline
   def Scale(scale: Field): typings.vegaTypings.anon.Scale = {
-    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[typings.vegaTypings.anon.Scale]
   }
   
@@ -53,7 +52,7 @@ object ScaledValueRef {
   
   @scala.inline
   def Value[T](): typings.vegaTypings.anon.Value[T] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[typings.vegaTypings.anon.Value[T]]
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPackageStatusItem extends StObject {
   
   /**
     * if the overall status is Failed, the reason for the failure.
     */
-  var FailureReason: js.UndefOr[String] = js.native
+  var FailureReason: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the model package for which the overall status is being reported.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * The current status.
     */
-  var Status: DetailedModelPackageStatus = js.native
+  var Status: DetailedModelPackageStatus
 }
 object ModelPackageStatusItem {
   

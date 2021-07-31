@@ -2,15 +2,15 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SjclCipherDecryptParams extends SjclCipherParams {
+trait SjclCipherDecryptParams
+  extends StObject
+     with SjclCipherParams {
   
-  var iv: js.UndefOr[BitArray_] = js.native
+  var iv: js.UndefOr[BitArray_] = js.undefined
   
-  var salt: js.UndefOr[BitArray_] = js.native
+  var salt: js.UndefOr[BitArray_] = js.undefined
 }
 object SjclCipherDecryptParams {
   

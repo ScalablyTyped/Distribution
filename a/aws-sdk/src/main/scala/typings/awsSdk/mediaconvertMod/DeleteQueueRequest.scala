@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteQueueRequest extends StObject {
   
   /**
     * The name of the queue that you want to delete.
     */
-  var Name: string = js.native
+  var Name: string
 }
 object DeleteQueueRequest {
   

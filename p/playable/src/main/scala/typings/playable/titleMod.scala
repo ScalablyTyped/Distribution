@@ -6,14 +6,15 @@ import typings.playable.titleTypesMod.ITitle
 import typings.playable.titleTypesMod.ITitleViewConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
   @JSImport("playable/dist/src/modules/ui/title/title", JSImport.Default)
   @js.native
-  class default protected () extends Title {
+  class default protected ()
+    extends StObject
+       with Title {
     def this(hasThemeConfig: ConfigTheme) = this()
   }
   object default {
@@ -53,7 +54,9 @@ object titleMod {
   }
   
   @js.native
-  trait Title extends ITitle {
+  trait Title
+    extends StObject
+       with ITitle {
     
     var _bindCallbacks: js.Any = js.native
     

@@ -26,14 +26,15 @@ import typings.std.IterableIterator
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@ckeditor/ckeditor5-core", "Command")
   @js.native
-  class Command[T] protected () extends Observable {
+  class Command[T] protected ()
+    extends StObject
+       with Observable {
     def this(editor: Editor) = this()
     
     def destroy(): Unit = js.native
@@ -59,20 +60,18 @@ object mod {
   @js.native
   class CommandCollection () extends StObject {
     
-    def add(commandName: String, command: Command[js.UndefOr[scala.Nothing]]): Unit = js.native
+    def add(commandName: String, command: Command[Unit]): Unit = js.native
     
-    def commands(): IterableIterator[Command[js.UndefOr[scala.Nothing]]] = js.native
+    def commands(): IterableIterator[Command[Unit]] = js.native
     
     def destroy(): Unit = js.native
     
     def execute(commandName: String, commandParams: js.Any*): Unit = js.native
     
-    def get(commandName: String): Command[js.UndefOr[scala.Nothing]] = js.native
+    def get(commandName: String): Command[Unit] = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[
-        Iterator[js.Tuple2[String, Command[js.UndefOr[scala.Nothing]]], _, js.UndefOr[scala.Nothing]]
-      ] = js.native
+    var iterator: js.Function0[Iterator[js.Tuple2[String, Command[Unit]], js.Any, Unit]] = js.native
     
     def names(): IterableIterator[String] = js.native
   }
@@ -112,7 +111,7 @@ object mod {
     val hasAny: Boolean = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Observablemessagestring, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[Observablemessagestring, js.Any, Unit]] = js.native
     
     def remove(action: Observablemessagestring): Unit = js.native
   }
@@ -126,7 +125,9 @@ object mod {
   
   @JSImport("@ckeditor/ckeditor5-core", "Plugin")
   @js.native
-  abstract class Plugin[T] protected () extends Observable {
+  abstract class Plugin[T] protected ()
+    extends StObject
+       with Observable {
     def this(editor: Editor) = this()
     
     var afterInit: js.UndefOr[js.Function0[Null | js.Promise[T]]] = js.native
@@ -157,19 +158,17 @@ object mod {
   
   @JSImport("@ckeditor/ckeditor5-core", "PluginCollection")
   @js.native
-  class PluginCollection[P /* <: Plugin[_] */] protected () extends StObject {
+  class PluginCollection[P /* <: Plugin[js.Any] */] protected () extends StObject {
     def this(editor: Editor) = this()
     def this(editor: Editor, availablePlugins: js.Array[Instantiable1[/* editor */ Editor, P]]) = this()
     
-    def destroy(): js.Promise[js.Array[P with Destroy]] = js.native
+    def destroy(): js.Promise[js.Array[P & Destroy]] = js.native
     
     def get(key: String): js.UndefOr[P] = js.native
     def get(key: Instantiable1[/* editor */ Editor, P]): js.UndefOr[P] = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[
-        Iterator[js.Tuple2[Instantiable1[/* editor */ Editor, P], P], _, js.UndefOr[scala.Nothing]]
-      ] = js.native
+    var iterator: js.Function0[Iterator[js.Tuple2[Instantiable1[/* editor */ Editor, P], P], js.Any, Unit]] = js.native
     
     def load(plugins: js.Array[String | (Instantiable1[/* editor */ Editor, P])]): js.Promise[js.Array[P]] = js.native
     def load(
@@ -183,7 +182,9 @@ object mod {
     // core/editor/editor
     @JSImport("@ckeditor/ckeditor5-core", "editor.Editor")
     @js.native
-    class Editor () extends Observable {
+    class Editor ()
+      extends StObject
+         with Observable {
       def this(config: js.Object) = this()
       
       val commands: CommandCollection = js.native
@@ -216,7 +217,7 @@ object mod {
       
       def once(event: String, callback: js.Function, options: `0`): Unit = js.native
       
-      val plugins: PluginCollection[Plugin[_]] = js.native
+      val plugins: PluginCollection[Plugin[js.Any]] = js.native
       
       var state: initializing | ready | destroyed = js.native
       
@@ -237,9 +238,8 @@ object mod {
       def builtinPlugins_=(x: js.Array[Plugin[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builtinPlugins")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("@ckeditor/ckeditor5-core", "editor.Editor.create")
-      @js.native
-      def create(config: js.Object): js.Promise[_] = js.native
+      @scala.inline
+      def create(config: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
       
       /* static member */
       @JSImport("@ckeditor/ckeditor5-core", "editor.Editor.defaultConfig")
@@ -252,7 +252,9 @@ object mod {
     // core/editor/editorui
     @JSImport("@ckeditor/ckeditor5-core", "editor.EditorUI")
     @js.native
-    class EditorUI protected () extends Emitter {
+    class EditorUI protected ()
+      extends StObject
+         with Emitter {
       def this(editor: Editor, view: EditorUIView) = this()
       
       val componentFactory: ComponentFactory = js.native
@@ -276,6 +278,10 @@ object mod {
     
     object utils {
       
+      @JSImport("@ckeditor/ckeditor5-core", "editor.utils")
+      @js.native
+      val ^ : js.Any = js.native
+      
       // core/editor/utils/dataapimixin
       @JSImport("@ckeditor/ckeditor5-core", "editor.utils.DataApiMixin")
       @js.native
@@ -287,16 +293,14 @@ object mod {
       val ElementApiMixin: ElementApi = js.native
       
       // core/editor/utils/attachtoform
-      @JSImport("@ckeditor/ckeditor5-core", "editor.utils.attachToForm")
-      @js.native
-      def attachToForm(editor: Editor with ElementApi): Unit = js.native
+      @scala.inline
+      def attachToForm(editor: Editor & ElementApi): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToForm")(editor.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @js.native
       trait DataApi extends StObject {
         
-        def getData(): String = js.native
+        def getData(): String
         
-        def setData(data: String): Unit = js.native
+        def setData(data: String): Unit
       }
       object DataApi {
         
@@ -317,12 +321,11 @@ object mod {
         }
       }
       
-      @js.native
       trait ElementApi extends StObject {
         
-        val sourceElement: HTMLElement = js.native
+        val sourceElement: HTMLElement
         
-        def updateSourceElement(): Unit = js.native
+        def updateSourceElement(): Unit
       }
       object ElementApi {
         
@@ -345,42 +348,41 @@ object mod {
     }
     
     // core/editor/editorconfig
-    @js.native
     trait EditorConfig extends StObject {
       
-      var alignment: AlignmentConfig = js.native
+      var alignment: AlignmentConfig
       
-      var autosave: AutosaveConfig = js.native
+      var autosave: AutosaveConfig
       
-      var balloonToolbar: js.Array[String] = js.native
+      var balloonToolbar: js.Array[String]
       
-      var blockToolbar: js.Array[String] = js.native
+      var blockToolbar: js.Array[String]
       
-      var ckfinder: CKFinderAdapterConfig = js.native
+      var ckfinder: CKFinderAdapterConfig
       
-      var cloudServices: CloudServicesConfig = js.native
+      var cloudServices: CloudServicesConfig
       
-      var fontFamily: FontFamilyConfig = js.native
+      var fontFamily: FontFamilyConfig
       
-      var fontSize: FontSizeConfig = js.native
+      var fontSize: FontSizeConfig
       
-      var heading: HeadingConfig = js.native
+      var heading: HeadingConfig
       
-      var highlight: HighlightConfig = js.native
+      var highlight: HighlightConfig
       
-      var image: ImageConfig = js.native
+      var image: ImageConfig
       
-      var language: String = js.native
+      var language: String
       
-      var mediaEmbed: MediaEmbedConfig = js.native
+      var mediaEmbed: MediaEmbedConfig
       
-      var plugins: js.Array[String | Plugin[Unit]] = js.native
+      var plugins: js.Array[String | Plugin[Unit]]
       
-      var removePlugins: js.Array[String] = js.native
+      var removePlugins: js.Array[String]
       
-      var toolbar: js.Array[String] | Items = js.native
+      var toolbar: js.Array[String] | Items
       
-      var typing: TypingConfig = js.native
+      var typing: TypingConfig
     }
     object EditorConfig {
       
@@ -480,18 +482,17 @@ object mod {
     }
     
     // core/editor/editorwithui
-    @js.native
     trait EditorWithUI extends StObject {
       
-      val element: HTMLElement | Null = js.native
+      val element: HTMLElement | Null
       
-      val ui: EditorUI = js.native
+      val ui: EditorUI
     }
     object EditorWithUI {
       
       @scala.inline
       def apply(ui: EditorUI): EditorWithUI = {
-        val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any], element = null)
         __obj.asInstanceOf[EditorWithUI]
       }
       
@@ -510,42 +511,29 @@ object mod {
     }
   }
   
-  @js.native
   trait AlignmentConfig extends StObject
   
-  @js.native
   trait AutosaveConfig extends StObject
   
-  @js.native
   trait CKFinderAdapterConfig extends StObject
   
-  @js.native
   trait CloudServicesConfig extends StObject
   
-  @js.native
   trait ComponentFactory extends StObject
   
-  @js.native
   trait EditorUIView extends StObject
   
-  @js.native
   trait FontFamilyConfig extends StObject
   
-  @js.native
   trait FontSizeConfig extends StObject
   
-  @js.native
   trait HeadingConfig extends StObject
   
-  @js.native
   trait HighlightConfig extends StObject
   
-  @js.native
   trait ImageConfig extends StObject
   
-  @js.native
   trait MediaEmbedConfig extends StObject
   
-  @js.native
   trait TypingConfig extends StObject
 }

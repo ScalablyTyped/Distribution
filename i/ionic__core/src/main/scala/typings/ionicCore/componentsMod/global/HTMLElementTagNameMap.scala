@@ -2,185 +2,183 @@ package typings.ionicCore.componentsMod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElementTagNameMap extends StObject {
   
-  var `ion-action-sheet`: HTMLIonActionSheetElement = js.native
+  var `ion-action-sheet`: HTMLIonActionSheetElement
   
-  var `ion-alert`: HTMLIonAlertElement = js.native
+  var `ion-alert`: HTMLIonAlertElement
   
-  var `ion-app`: HTMLIonAppElement = js.native
+  var `ion-app`: HTMLIonAppElement
   
-  var `ion-avatar`: HTMLIonAvatarElement = js.native
+  var `ion-avatar`: HTMLIonAvatarElement
   
-  var `ion-back-button`: HTMLIonBackButtonElement = js.native
+  var `ion-back-button`: HTMLIonBackButtonElement
   
-  var `ion-backdrop`: HTMLIonBackdropElement = js.native
+  var `ion-backdrop`: HTMLIonBackdropElement
   
-  var `ion-badge`: HTMLIonBadgeElement = js.native
+  var `ion-badge`: HTMLIonBadgeElement
   
-  var `ion-button`: HTMLIonButtonElement = js.native
+  var `ion-button`: HTMLIonButtonElement
   
-  var `ion-buttons`: HTMLIonButtonsElement = js.native
+  var `ion-buttons`: HTMLIonButtonsElement
   
-  var `ion-card`: HTMLIonCardElement = js.native
+  var `ion-card`: HTMLIonCardElement
   
-  var `ion-card-content`: HTMLIonCardContentElement = js.native
+  var `ion-card-content`: HTMLIonCardContentElement
   
-  var `ion-card-header`: HTMLIonCardHeaderElement = js.native
+  var `ion-card-header`: HTMLIonCardHeaderElement
   
-  var `ion-card-subtitle`: HTMLIonCardSubtitleElement = js.native
+  var `ion-card-subtitle`: HTMLIonCardSubtitleElement
   
-  var `ion-card-title`: HTMLIonCardTitleElement = js.native
+  var `ion-card-title`: HTMLIonCardTitleElement
   
-  var `ion-checkbox`: HTMLIonCheckboxElement = js.native
+  var `ion-checkbox`: HTMLIonCheckboxElement
   
-  var `ion-chip`: HTMLIonChipElement = js.native
+  var `ion-chip`: HTMLIonChipElement
   
-  var `ion-col`: HTMLIonColElement = js.native
+  var `ion-col`: HTMLIonColElement
   
-  var `ion-content`: HTMLIonContentElement = js.native
+  var `ion-content`: HTMLIonContentElement
   
-  var `ion-datetime`: HTMLIonDatetimeElement = js.native
+  var `ion-datetime`: HTMLIonDatetimeElement
   
-  var `ion-fab`: HTMLIonFabElement = js.native
+  var `ion-fab`: HTMLIonFabElement
   
-  var `ion-fab-button`: HTMLIonFabButtonElement = js.native
+  var `ion-fab-button`: HTMLIonFabButtonElement
   
-  var `ion-fab-list`: HTMLIonFabListElement = js.native
+  var `ion-fab-list`: HTMLIonFabListElement
   
-  var `ion-footer`: HTMLIonFooterElement = js.native
+  var `ion-footer`: HTMLIonFooterElement
   
-  var `ion-grid`: HTMLIonGridElement = js.native
+  var `ion-grid`: HTMLIonGridElement
   
-  var `ion-header`: HTMLIonHeaderElement = js.native
+  var `ion-header`: HTMLIonHeaderElement
   
-  var `ion-img`: HTMLIonImgElement = js.native
+  var `ion-img`: HTMLIonImgElement
   
-  var `ion-infinite-scroll`: HTMLIonInfiniteScrollElement = js.native
+  var `ion-infinite-scroll`: HTMLIonInfiniteScrollElement
   
-  var `ion-infinite-scroll-content`: HTMLIonInfiniteScrollContentElement = js.native
+  var `ion-infinite-scroll-content`: HTMLIonInfiniteScrollContentElement
   
-  var `ion-input`: HTMLIonInputElement = js.native
+  var `ion-input`: HTMLIonInputElement
   
-  var `ion-item`: HTMLIonItemElement = js.native
+  var `ion-item`: HTMLIonItemElement
   
-  var `ion-item-divider`: HTMLIonItemDividerElement = js.native
+  var `ion-item-divider`: HTMLIonItemDividerElement
   
-  var `ion-item-group`: HTMLIonItemGroupElement = js.native
+  var `ion-item-group`: HTMLIonItemGroupElement
   
-  var `ion-item-option`: HTMLIonItemOptionElement = js.native
+  var `ion-item-option`: HTMLIonItemOptionElement
   
-  var `ion-item-options`: HTMLIonItemOptionsElement = js.native
+  var `ion-item-options`: HTMLIonItemOptionsElement
   
-  var `ion-item-sliding`: HTMLIonItemSlidingElement = js.native
+  var `ion-item-sliding`: HTMLIonItemSlidingElement
   
-  var `ion-label`: HTMLIonLabelElement = js.native
+  var `ion-label`: HTMLIonLabelElement
   
-  var `ion-list`: HTMLIonListElement = js.native
+  var `ion-list`: HTMLIonListElement
   
-  var `ion-list-header`: HTMLIonListHeaderElement = js.native
+  var `ion-list-header`: HTMLIonListHeaderElement
   
-  var `ion-loading`: HTMLIonLoadingElement = js.native
+  var `ion-loading`: HTMLIonLoadingElement
   
-  var `ion-menu`: HTMLIonMenuElement = js.native
+  var `ion-menu`: HTMLIonMenuElement
   
-  var `ion-menu-button`: HTMLIonMenuButtonElement = js.native
+  var `ion-menu-button`: HTMLIonMenuButtonElement
   
-  var `ion-menu-toggle`: HTMLIonMenuToggleElement = js.native
+  var `ion-menu-toggle`: HTMLIonMenuToggleElement
   
-  var `ion-modal`: HTMLIonModalElement = js.native
+  var `ion-modal`: HTMLIonModalElement
   
-  var `ion-nav`: HTMLIonNavElement = js.native
+  var `ion-nav`: HTMLIonNavElement
   
-  var `ion-nav-link`: HTMLIonNavLinkElement = js.native
+  var `ion-nav-link`: HTMLIonNavLinkElement
   
-  var `ion-note`: HTMLIonNoteElement = js.native
+  var `ion-note`: HTMLIonNoteElement
   
-  var `ion-picker`: HTMLIonPickerElement = js.native
+  var `ion-picker`: HTMLIonPickerElement
   
-  var `ion-picker-column`: HTMLIonPickerColumnElement = js.native
+  var `ion-picker-column`: HTMLIonPickerColumnElement
   
-  var `ion-popover`: HTMLIonPopoverElement = js.native
+  var `ion-popover`: HTMLIonPopoverElement
   
-  var `ion-progress-bar`: HTMLIonProgressBarElement = js.native
+  var `ion-progress-bar`: HTMLIonProgressBarElement
   
-  var `ion-radio`: HTMLIonRadioElement = js.native
+  var `ion-radio`: HTMLIonRadioElement
   
-  var `ion-radio-group`: HTMLIonRadioGroupElement = js.native
+  var `ion-radio-group`: HTMLIonRadioGroupElement
   
-  var `ion-range`: HTMLIonRangeElement = js.native
+  var `ion-range`: HTMLIonRangeElement
   
-  var `ion-refresher`: HTMLIonRefresherElement = js.native
+  var `ion-refresher`: HTMLIonRefresherElement
   
-  var `ion-refresher-content`: HTMLIonRefresherContentElement = js.native
+  var `ion-refresher-content`: HTMLIonRefresherContentElement
   
-  var `ion-reorder`: HTMLIonReorderElement = js.native
+  var `ion-reorder`: HTMLIonReorderElement
   
-  var `ion-reorder-group`: HTMLIonReorderGroupElement = js.native
+  var `ion-reorder-group`: HTMLIonReorderGroupElement
   
-  var `ion-ripple-effect`: HTMLIonRippleEffectElement = js.native
+  var `ion-ripple-effect`: HTMLIonRippleEffectElement
   
-  var `ion-route`: HTMLIonRouteElement = js.native
+  var `ion-route`: HTMLIonRouteElement
   
-  var `ion-route-redirect`: HTMLIonRouteRedirectElement = js.native
+  var `ion-route-redirect`: HTMLIonRouteRedirectElement
   
-  var `ion-router`: HTMLIonRouterElement = js.native
+  var `ion-router`: HTMLIonRouterElement
   
-  var `ion-router-link`: HTMLIonRouterLinkElement = js.native
+  var `ion-router-link`: HTMLIonRouterLinkElement
   
-  var `ion-router-outlet`: HTMLIonRouterOutletElement = js.native
+  var `ion-router-outlet`: HTMLIonRouterOutletElement
   
-  var `ion-row`: HTMLIonRowElement = js.native
+  var `ion-row`: HTMLIonRowElement
   
-  var `ion-searchbar`: HTMLIonSearchbarElement = js.native
+  var `ion-searchbar`: HTMLIonSearchbarElement
   
-  var `ion-segment`: HTMLIonSegmentElement = js.native
+  var `ion-segment`: HTMLIonSegmentElement
   
-  var `ion-segment-button`: HTMLIonSegmentButtonElement = js.native
+  var `ion-segment-button`: HTMLIonSegmentButtonElement
   
-  var `ion-select`: HTMLIonSelectElement = js.native
+  var `ion-select`: HTMLIonSelectElement
   
-  var `ion-select-option`: HTMLIonSelectOptionElement = js.native
+  var `ion-select-option`: HTMLIonSelectOptionElement
   
-  var `ion-select-popover`: HTMLIonSelectPopoverElement = js.native
+  var `ion-select-popover`: HTMLIonSelectPopoverElement
   
-  var `ion-skeleton-text`: HTMLIonSkeletonTextElement = js.native
+  var `ion-skeleton-text`: HTMLIonSkeletonTextElement
   
-  var `ion-slide`: HTMLIonSlideElement = js.native
+  var `ion-slide`: HTMLIonSlideElement
   
-  var `ion-slides`: HTMLIonSlidesElement = js.native
+  var `ion-slides`: HTMLIonSlidesElement
   
-  var `ion-spinner`: HTMLIonSpinnerElement = js.native
+  var `ion-spinner`: HTMLIonSpinnerElement
   
-  var `ion-split-pane`: HTMLIonSplitPaneElement = js.native
+  var `ion-split-pane`: HTMLIonSplitPaneElement
   
-  var `ion-tab`: HTMLIonTabElement = js.native
+  var `ion-tab`: HTMLIonTabElement
   
-  var `ion-tab-bar`: HTMLIonTabBarElement = js.native
+  var `ion-tab-bar`: HTMLIonTabBarElement
   
-  var `ion-tab-button`: HTMLIonTabButtonElement = js.native
+  var `ion-tab-button`: HTMLIonTabButtonElement
   
-  var `ion-tabs`: HTMLIonTabsElement = js.native
+  var `ion-tabs`: HTMLIonTabsElement
   
-  var `ion-text`: HTMLIonTextElement = js.native
+  var `ion-text`: HTMLIonTextElement
   
-  var `ion-textarea`: HTMLIonTextareaElement = js.native
+  var `ion-textarea`: HTMLIonTextareaElement
   
-  var `ion-thumbnail`: HTMLIonThumbnailElement = js.native
+  var `ion-thumbnail`: HTMLIonThumbnailElement
   
-  var `ion-title`: HTMLIonTitleElement = js.native
+  var `ion-title`: HTMLIonTitleElement
   
-  var `ion-toast`: HTMLIonToastElement = js.native
+  var `ion-toast`: HTMLIonToastElement
   
-  var `ion-toggle`: HTMLIonToggleElement = js.native
+  var `ion-toggle`: HTMLIonToggleElement
   
-  var `ion-toolbar`: HTMLIonToolbarElement = js.native
+  var `ion-toolbar`: HTMLIonToolbarElement
   
-  var `ion-virtual-scroll`: HTMLIonVirtualScrollElement = js.native
+  var `ion-virtual-scroll`: HTMLIonVirtualScrollElement
 }
 object HTMLElementTagNameMap {
   

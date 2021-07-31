@@ -3,19 +3,19 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getIpRangesMod {
   
-  @JSImport("@pulumi/aws/getIpRanges", "getIpRanges")
+  @JSImport("@pulumi/aws/getIpRanges", JSImport.Namespace)
   @js.native
-  def getIpRanges(args: GetIpRangesArgs): js.Promise[GetIpRangesResult] = js.native
-  @JSImport("@pulumi/aws/getIpRanges", "getIpRanges")
-  @js.native
-  def getIpRanges(args: GetIpRangesArgs, opts: InvokeOptions): js.Promise[GetIpRangesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getIpRanges(args: GetIpRangesArgs): js.Promise[GetIpRangesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpRangesResult]]
+  @scala.inline
+  def getIpRanges(args: GetIpRangesArgs, opts: InvokeOptions): js.Promise[GetIpRangesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpRangesResult]]
+  
   trait GetIpRangesArgs extends StObject {
     
     /**
@@ -23,7 +23,7 @@ object getIpRangesMod {
       * omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
       * (e.g. `eu-central-1`)
       */
-    val regions: js.UndefOr[js.Array[String]] = js.native
+    val regions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Filter IP ranges by services. Valid items are `amazon`
@@ -32,12 +32,12 @@ object getIpRangesMod {
       * `route53`, `route53Healthchecks`, `s3` and `workspacesGateways`. See the
       * [`service` attribute][2] documentation for other possible values.
       */
-    val services: js.Array[String] = js.native
+    val services: js.Array[String]
     
     /**
       * Custom URL for source JSON file. Syntax must match [AWS IP Address Ranges documentation](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html). Defaults to `https://ip-ranges.amazonaws.com/ip-ranges.json`.
       */
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object GetIpRangesArgs {
     
@@ -73,40 +73,39 @@ object getIpRangesMod {
     }
   }
   
-  @js.native
   trait GetIpRangesResult extends StObject {
     
     /**
       * The lexically ordered list of CIDR blocks.
       */
-    val cidrBlocks: js.Array[String] = js.native
+    val cidrBlocks: js.Array[String]
     
     /**
       * The publication time of the IP ranges (e.g. `2016-08-03-23-46-05`).
       */
-    val createDate: String = js.native
+    val createDate: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The lexically ordered list of IPv6 CIDR blocks.
       */
-    val ipv6CidrBlocks: js.Array[String] = js.native
+    val ipv6CidrBlocks: js.Array[String]
     
-    val regions: js.UndefOr[js.Array[String]] = js.native
+    val regions: js.UndefOr[js.Array[String]] = js.undefined
     
-    val services: js.Array[String] = js.native
+    val services: js.Array[String]
     
     /**
       * The publication time of the IP ranges, in Unix epoch time format
       * (e.g. `1470267965`).
       */
-    val syncToken: Double = js.native
+    val syncToken: Double
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object GetIpRangesResult {
     

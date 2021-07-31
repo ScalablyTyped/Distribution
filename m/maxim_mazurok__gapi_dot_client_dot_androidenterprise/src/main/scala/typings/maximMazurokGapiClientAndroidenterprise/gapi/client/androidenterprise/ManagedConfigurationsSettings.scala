@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedConfigurationsSettings extends StObject {
   
   /** The last updated time of the managed configuration settings in milliseconds since 1970-01-01T00:00:00Z. */
-  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
+  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /** The ID of the managed configurations settings. */
-  var mcmId: js.UndefOr[String] = js.native
+  var mcmId: js.UndefOr[String] = js.undefined
   
   /** The name of the managed configurations settings. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ManagedConfigurationsSettings {
   

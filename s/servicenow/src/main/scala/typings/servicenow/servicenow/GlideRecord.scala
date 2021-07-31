@@ -4,27 +4,28 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.servicenow.GlideDateTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
+trait GlideRecord
+  extends StObject
+     with Instantiable1[/* type */ String, GlideRecord] {
   
   def _next(): Boolean = js.native
   
   def _query(): Unit = js.native
-  def _query(field: js.UndefOr[scala.Nothing], value: js.Object): Unit = js.native
   def _query(field: String): Unit = js.native
   def _query(field: String, value: js.Object): Unit = js.native
+  def _query(field: Unit, value: js.Object): Unit = js.native
   
   def addActiveQuery(): GlideQueryCondition = js.native
   
   def addEncodedQuery(query: String): Unit = js.native
   
   def addJoinQuery(joinTable: String): GlideQueryCondition = js.native
-  def addJoinQuery(joinTable: String, primaryField: js.UndefOr[scala.Nothing], joinTableField: String): GlideQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String): GlideQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String, joinTableField: String): GlideQueryCondition = js.native
+  def addJoinQuery(joinTable: String, primaryField: Unit, joinTableField: String): GlideQueryCondition = js.native
   
   def addNotNullQuery(fieldName: String): GlideQueryCondition = js.native
   
@@ -112,9 +113,9 @@ trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
   def orderByDesc(name: String): Unit = js.native
   
   def query(): Unit = js.native
-  def query(field: js.UndefOr[scala.Nothing], value: js.Object): Unit = js.native
   def query(field: String): Unit = js.native
   def query(field: String, value: js.Object): Unit = js.native
+  def query(field: Unit, value: js.Object): Unit = js.native
   
   def setAbortAction(b: Boolean): Unit = js.native
   
@@ -126,17 +127,17 @@ trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
   
   def setWorkflow(enable: Boolean): Unit = js.native
   
-  val sys_created_by: String with GlideElement = js.native
+  val sys_created_by: String & GlideElement = js.native
   
-  val sys_created_on: GlideDateTime with GlideElement = js.native
+  val sys_created_on: GlideDateTime & GlideElement = js.native
   
   val sys_id: String = js.native
   
-  val sys_mod_count: Double with GlideElement = js.native
+  val sys_mod_count: Double & GlideElement = js.native
   
-  val sys_updated_by: String with GlideElement = js.native
+  val sys_updated_by: String & GlideElement = js.native
   
-  val sys_updated_on: GlideDateTime with GlideElement = js.native
+  val sys_updated_on: GlideDateTime & GlideElement = js.native
   
   def update(): String = js.native
   def update(reason: String): String = js.native

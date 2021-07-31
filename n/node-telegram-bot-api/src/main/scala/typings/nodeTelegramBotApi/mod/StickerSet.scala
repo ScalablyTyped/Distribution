@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StickerSet extends StObject {
   
-  var contains_masks: Boolean = js.native
+  var contains_masks: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var stickers: js.Array[Sticker] = js.native
+  var stickers: js.Array[Sticker]
   
-  var title: String = js.native
+  var title: String
 }
 object StickerSet {
   

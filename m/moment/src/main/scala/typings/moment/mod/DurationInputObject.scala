@@ -2,25 +2,24 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationInputObject
-  extends MomentInputObject
+  extends StObject
+     with MomentInputObject
      with _DurationInputArg1 {
   
-  var Q: js.UndefOr[numberlike] = js.native
+  var Q: js.UndefOr[numberlike] = js.undefined
   
-  var quarter: js.UndefOr[numberlike] = js.native
+  var quarter: js.UndefOr[numberlike] = js.undefined
   
-  var quarters: js.UndefOr[numberlike] = js.native
+  var quarters: js.UndefOr[numberlike] = js.undefined
   
-  var w: js.UndefOr[numberlike] = js.native
+  var w: js.UndefOr[numberlike] = js.undefined
   
-  var week: js.UndefOr[numberlike] = js.native
+  var week: js.UndefOr[numberlike] = js.undefined
   
-  var weeks: js.UndefOr[numberlike] = js.native
+  var weeks: js.UndefOr[numberlike] = js.undefined
 }
 object DurationInputObject {
   

@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Integer
 import typings.googleAppsScript.anon.ContentsOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,7 @@ trait Sheet extends StObject {
   def addDeveloperMetadata(key: String, value: String, visibility: DeveloperMetadataVisibility): Sheet = js.native
   def addDeveloperMetadata(key: String, visibility: DeveloperMetadataVisibility): Sheet = js.native
   
-  def appendRow(rowContents: js.Array[_]): Sheet = js.native
+  def appendRow(rowContents: js.Array[js.Any]): Sheet = js.native
   
   def autoResizeColumn(columnPosition: Integer): Sheet = js.native
   
@@ -148,7 +147,7 @@ trait Sheet extends StObject {
   
   /** @deprecated DO NOT USE */ def getSheetProtection(): PageProtection = js.native
   
-  def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[_]] = js.native
+  def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[js.Any]] = js.native
   
   def getSlicers(): js.Array[Slicer] = js.native
   

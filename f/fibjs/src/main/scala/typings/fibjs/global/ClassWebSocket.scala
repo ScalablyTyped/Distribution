@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_WebSocket")
 @js.native
 class ClassWebSocket protected ()
-  extends typings.fibjs.ClassWebSocket {
+  extends StObject
+     with typings.fibjs.ClassWebSocket {
   /**
     * 
     * @brief WebSocket 构造函数
@@ -21,6 +21,6 @@ class ClassWebSocket protected ()
     */
   def this(url: String) = this()
   def this(url: String, protocol: String) = this()
-  def this(url: String, protocol: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(url: String, protocol: String, origin: String) = this()
+  def this(url: String, protocol: Unit, origin: String) = this()
 }

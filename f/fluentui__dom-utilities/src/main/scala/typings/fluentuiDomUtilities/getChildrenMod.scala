@@ -3,15 +3,16 @@ package typings.fluentuiDomUtilities
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getChildrenMod {
   
-  @JSImport("@fluentui/dom-utilities/lib/getChildren", "getChildren")
+  @JSImport("@fluentui/dom-utilities/lib/getChildren", JSImport.Namespace)
   @js.native
-  def getChildren(parent: HTMLElement): js.Array[HTMLElement] = js.native
-  @JSImport("@fluentui/dom-utilities/lib/getChildren", "getChildren")
-  @js.native
-  def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
 }

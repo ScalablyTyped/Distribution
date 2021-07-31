@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SubTotalField
   * @see com.sun.star.sheet.SubTotalDescriptor
   */
-@js.native
-trait XSubTotalField extends XInterface {
+trait XSubTotalField
+  extends StObject
+     with XInterface {
   
   /** returns the column by which entries are grouped. */
-  var GroupColumn: Double = js.native
+  var GroupColumn: Double
   
   /** returns the definitions of which columns should have subtotals added to them. */
-  var SubTotalColumns: SafeArray[SubTotalColumn] = js.native
+  var SubTotalColumns: SafeArray[SubTotalColumn]
   
   /** returns the column by which entries are grouped. */
-  def getGroupColumn(): Double = js.native
+  def getGroupColumn(): Double
   
   /** returns the definitions of which columns should have subtotals added to them. */
-  def getSubTotalColumns(): SafeArray[SubTotalColumn] = js.native
+  def getSubTotalColumns(): SafeArray[SubTotalColumn]
   
   /** sets the column by which entries are grouped. */
-  def setGroupColumn(nGroupColumn: Double): Unit = js.native
+  def setGroupColumn(nGroupColumn: Double): Unit
   
   /** sets the definitions of which columns should have subtotals added to them. */
-  def setSubTotalColumns(aSubTotalColumns: SeqEquiv[SubTotalColumn]): Unit = js.native
+  def setSubTotalColumns(aSubTotalColumns: SeqEquiv[SubTotalColumn]): Unit
 }
 object XSubTotalField {
   

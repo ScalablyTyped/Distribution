@@ -2,39 +2,37 @@ package typings.gapiAnalytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataQuery extends StObject {
   
-  var `30daysAgo`: js.UndefOr[String] = js.native
+  var `30daysAgo`: js.UndefOr[String] = js.undefined
   
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
-  var `end-date`: js.UndefOr[String] = js.native
+  var `end-date`: js.UndefOr[String] = js.undefined
   
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
-  var `include-empty-rows`: js.UndefOr[String] = js.native
+  var `include-empty-rows`: js.UndefOr[String] = js.undefined
   
-  var `max-results`: js.UndefOr[String] = js.native
+  var `max-results`: js.UndefOr[String] = js.undefined
   
-  var metrics: js.UndefOr[String] = js.native
+  var metrics: js.UndefOr[String] = js.undefined
   
-  var samplingLevel: js.UndefOr[String] = js.native
+  var samplingLevel: js.UndefOr[String] = js.undefined
   
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var `start-date`: js.UndefOr[String] = js.native
+  var `start-date`: js.UndefOr[String] = js.undefined
   
-  var `start-index`: js.UndefOr[String] = js.native
+  var `start-index`: js.UndefOr[String] = js.undefined
   
-  var yesterday: js.UndefOr[String] = js.native
+  var yesterday: js.UndefOr[String] = js.undefined
 }
 object DataQuery {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The date and time when the event occurred.
     */
-  var Date: js.UndefOr[TStamp] = js.native
+  var Date: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A user-defined message associated with the event.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The source of the event. For example, if the event occurred at the node level, the source would be the node ID.
     */
-  var SourceName: js.UndefOr[String] = js.native
+  var SourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the origin of this event - a cluster, a parameter group, a node ID, etc.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.daxMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.daxMod.SourceType] = js.undefined
 }
 object Event {
   

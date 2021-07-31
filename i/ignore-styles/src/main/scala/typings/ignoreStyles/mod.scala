@@ -3,35 +3,32 @@ package typings.ignoreStyles
 import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ignore-styles", JSImport.Default)
+  @JSImport("ignore-styles", JSImport.Namespace)
   @js.native
-  def default(): Unit = js.native
-  @JSImport("ignore-styles", JSImport.Default)
-  @js.native
-  def default(extensions: js.UndefOr[scala.Nothing], handler: Handler): Unit = js.native
-  @JSImport("ignore-styles", JSImport.Default)
-  @js.native
-  def default(extensions: js.Array[String]): Unit = js.native
-  @JSImport("ignore-styles", JSImport.Default)
-  @js.native
-  def default(extensions: js.Array[String], handler: Handler): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  @scala.inline
+  def default(extensions: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(extensions: js.Array[String], handler: Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensions.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(extensions: Unit, handler: Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensions.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ignore-styles", "DEFAULT_EXTENSIONS")
   @js.native
   val DEFAULT_EXTENSIONS: js.Array[String] = js.native
   
-  @JSImport("ignore-styles", "noOp")
-  @js.native
-  def noOp(): Unit = js.native
+  @scala.inline
+  def noOp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noOp")().asInstanceOf[Unit]
   
-  @JSImport("ignore-styles", "restore")
-  @js.native
-  def restore(): Unit = js.native
+  @scala.inline
+  def restore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[Unit]
   
   type Handler = js.Function2[/* m */ NodeModule, /* filename */ String, js.Any]
 }

@@ -2,7 +2,6 @@ package typings.rmcTooltip
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,9 +21,9 @@ object mod {
       
       @JSImport("rmc-tooltip", "default.defaultProps.arrowContent")
       @js.native
-      def arrowContent: Null = js.native
+      def arrowContent: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
       @scala.inline
-      def arrowContent_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
+      def arrowContent_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
       
       @JSImport("rmc-tooltip", "default.defaultProps.destroyTooltipOnHide")
       @js.native

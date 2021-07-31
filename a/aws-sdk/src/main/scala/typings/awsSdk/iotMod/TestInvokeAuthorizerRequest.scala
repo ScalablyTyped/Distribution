@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeAuthorizerRequest extends StObject {
   
   /**
     * The custom authorizer name.
     */
-  var authorizerName: AuthorizerName = js.native
+  var authorizerName: AuthorizerName
   
   /**
     * Specifies a test HTTP authorization request.
     */
-  var httpContext: js.UndefOr[HttpContext] = js.native
+  var httpContext: js.UndefOr[HttpContext] = js.undefined
   
   /**
     * Specifies a test MQTT authorization request.
     */
-  var mqttContext: js.UndefOr[MqttContext] = js.native
+  var mqttContext: js.UndefOr[MqttContext] = js.undefined
   
   /**
     * Specifies a test TLS authorization request.
     */
-  var tlsContext: js.UndefOr[TlsContext] = js.native
+  var tlsContext: js.UndefOr[TlsContext] = js.undefined
   
   /**
     * The token returned by your custom authentication service.
     */
-  var token: js.UndefOr[Token] = js.native
+  var token: js.UndefOr[Token] = js.undefined
   
   /**
     * The signature made with the token and your custom authentication service's private key. This value must be Base-64-encoded.
     */
-  var tokenSignature: js.UndefOr[TokenSignature] = js.native
+  var tokenSignature: js.UndefOr[TokenSignature] = js.undefined
 }
 object TestInvokeAuthorizerRequest {
   

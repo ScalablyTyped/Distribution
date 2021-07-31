@@ -236,484 +236,482 @@ import typings.googleAppsScript.GoogleAppsScript.Content.Schema.Value
 import typings.googleAppsScript.GoogleAppsScript.Content.Schema.Weight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
   
-  var Accountstatuses: js.UndefOr[AccountstatusesCollection] = js.native
+  var Accountstatuses: js.UndefOr[AccountstatusesCollection] = js.undefined
   
-  var Accounttax: js.UndefOr[AccounttaxCollection] = js.native
+  var Accounttax: js.UndefOr[AccounttaxCollection] = js.undefined
   
-  var Datafeeds: js.UndefOr[DatafeedsCollection] = js.native
+  var Datafeeds: js.UndefOr[DatafeedsCollection] = js.undefined
   
-  var Datafeedstatuses: js.UndefOr[DatafeedstatusesCollection] = js.native
+  var Datafeedstatuses: js.UndefOr[DatafeedstatusesCollection] = js.undefined
   
-  var Inventory: js.UndefOr[InventoryCollection] = js.native
+  var Inventory: js.UndefOr[InventoryCollection] = js.undefined
   
-  var Liasettings: js.UndefOr[LiasettingsCollection] = js.native
+  var Liasettings: js.UndefOr[LiasettingsCollection] = js.undefined
   
-  var Orderinvoices: js.UndefOr[OrderinvoicesCollection] = js.native
+  var Orderinvoices: js.UndefOr[OrderinvoicesCollection] = js.undefined
   
-  var Orderpayments: js.UndefOr[OrderpaymentsCollection] = js.native
+  var Orderpayments: js.UndefOr[OrderpaymentsCollection] = js.undefined
   
-  var Orderreports: js.UndefOr[OrderreportsCollection] = js.native
+  var Orderreports: js.UndefOr[OrderreportsCollection] = js.undefined
   
-  var Orderreturns: js.UndefOr[OrderreturnsCollection] = js.native
+  var Orderreturns: js.UndefOr[OrderreturnsCollection] = js.undefined
   
-  var Orders: js.UndefOr[OrdersCollection] = js.native
+  var Orders: js.UndefOr[OrdersCollection] = js.undefined
   
-  var Pos: js.UndefOr[PosCollection] = js.native
+  var Pos: js.UndefOr[PosCollection] = js.undefined
   
-  var Products: js.UndefOr[ProductsCollection] = js.native
+  var Products: js.UndefOr[ProductsCollection] = js.undefined
   
-  var Productstatuses: js.UndefOr[ProductstatusesCollection] = js.native
+  var Productstatuses: js.UndefOr[ProductstatusesCollection] = js.undefined
   
-  var Shippingsettings: js.UndefOr[ShippingsettingsCollection] = js.native
+  var Shippingsettings: js.UndefOr[ShippingsettingsCollection] = js.undefined
   
   // Create a new instance of Account
-  def newAccount(): Account = js.native
+  def newAccount(): Account
   
   // Create a new instance of AccountAddress
-  def newAccountAddress(): AccountAddress = js.native
+  def newAccountAddress(): AccountAddress
   
   // Create a new instance of AccountAdwordsLink
-  def newAccountAdwordsLink(): AccountAdwordsLink = js.native
+  def newAccountAdwordsLink(): AccountAdwordsLink
   
   // Create a new instance of AccountBusinessInformation
-  def newAccountBusinessInformation(): AccountBusinessInformation = js.native
+  def newAccountBusinessInformation(): AccountBusinessInformation
   
   // Create a new instance of AccountCustomerService
-  def newAccountCustomerService(): AccountCustomerService = js.native
+  def newAccountCustomerService(): AccountCustomerService
   
   // Create a new instance of AccountGoogleMyBusinessLink
-  def newAccountGoogleMyBusinessLink(): AccountGoogleMyBusinessLink = js.native
+  def newAccountGoogleMyBusinessLink(): AccountGoogleMyBusinessLink
   
   // Create a new instance of AccountTax
-  def newAccountTax(): AccountTax = js.native
+  def newAccountTax(): AccountTax
   
   // Create a new instance of AccountTaxTaxRule
-  def newAccountTaxTaxRule(): AccountTaxTaxRule = js.native
+  def newAccountTaxTaxRule(): AccountTaxTaxRule
   
   // Create a new instance of AccountUser
-  def newAccountUser(): AccountUser = js.native
+  def newAccountUser(): AccountUser
   
   // Create a new instance of AccountYouTubeChannelLink
-  def newAccountYouTubeChannelLink(): AccountYouTubeChannelLink = js.native
+  def newAccountYouTubeChannelLink(): AccountYouTubeChannelLink
   
   // Create a new instance of AccountsCustomBatchRequest
-  def newAccountsCustomBatchRequest(): AccountsCustomBatchRequest = js.native
+  def newAccountsCustomBatchRequest(): AccountsCustomBatchRequest
   
   // Create a new instance of AccountsCustomBatchRequestEntry
-  def newAccountsCustomBatchRequestEntry(): AccountsCustomBatchRequestEntry = js.native
+  def newAccountsCustomBatchRequestEntry(): AccountsCustomBatchRequestEntry
   
   // Create a new instance of AccountsCustomBatchRequestEntryLinkRequest
-  def newAccountsCustomBatchRequestEntryLinkRequest(): AccountsCustomBatchRequestEntryLinkRequest = js.native
+  def newAccountsCustomBatchRequestEntryLinkRequest(): AccountsCustomBatchRequestEntryLinkRequest
   
   // Create a new instance of AccountsLinkRequest
-  def newAccountsLinkRequest(): AccountsLinkRequest = js.native
+  def newAccountsLinkRequest(): AccountsLinkRequest
   
   // Create a new instance of AccountstatusesCustomBatchRequest
-  def newAccountstatusesCustomBatchRequest(): AccountstatusesCustomBatchRequest = js.native
+  def newAccountstatusesCustomBatchRequest(): AccountstatusesCustomBatchRequest
   
   // Create a new instance of AccountstatusesCustomBatchRequestEntry
-  def newAccountstatusesCustomBatchRequestEntry(): AccountstatusesCustomBatchRequestEntry = js.native
+  def newAccountstatusesCustomBatchRequestEntry(): AccountstatusesCustomBatchRequestEntry
   
   // Create a new instance of AccounttaxCustomBatchRequest
-  def newAccounttaxCustomBatchRequest(): AccounttaxCustomBatchRequest = js.native
+  def newAccounttaxCustomBatchRequest(): AccounttaxCustomBatchRequest
   
   // Create a new instance of AccounttaxCustomBatchRequestEntry
-  def newAccounttaxCustomBatchRequestEntry(): AccounttaxCustomBatchRequestEntry = js.native
+  def newAccounttaxCustomBatchRequestEntry(): AccounttaxCustomBatchRequestEntry
   
   // Create a new instance of Amount
-  def newAmount(): Amount = js.native
+  def newAmount(): Amount
   
   // Create a new instance of CarrierRate
-  def newCarrierRate(): CarrierRate = js.native
+  def newCarrierRate(): CarrierRate
   
   // Create a new instance of CustomAttribute
-  def newCustomAttribute(): CustomAttribute = js.native
+  def newCustomAttribute(): CustomAttribute
   
   // Create a new instance of CustomGroup
-  def newCustomGroup(): CustomGroup = js.native
+  def newCustomGroup(): CustomGroup
   
   // Create a new instance of CutoffTime
-  def newCutoffTime(): CutoffTime = js.native
+  def newCutoffTime(): CutoffTime
   
   // Create a new instance of Datafeed
-  def newDatafeed(): Datafeed = js.native
+  def newDatafeed(): Datafeed
   
   // Create a new instance of DatafeedFetchSchedule
-  def newDatafeedFetchSchedule(): DatafeedFetchSchedule = js.native
+  def newDatafeedFetchSchedule(): DatafeedFetchSchedule
   
   // Create a new instance of DatafeedFormat
-  def newDatafeedFormat(): DatafeedFormat = js.native
+  def newDatafeedFormat(): DatafeedFormat
   
   // Create a new instance of DatafeedTarget
-  def newDatafeedTarget(): DatafeedTarget = js.native
+  def newDatafeedTarget(): DatafeedTarget
   
   // Create a new instance of DatafeedsCustomBatchRequest
-  def newDatafeedsCustomBatchRequest(): DatafeedsCustomBatchRequest = js.native
+  def newDatafeedsCustomBatchRequest(): DatafeedsCustomBatchRequest
   
   // Create a new instance of DatafeedsCustomBatchRequestEntry
-  def newDatafeedsCustomBatchRequestEntry(): DatafeedsCustomBatchRequestEntry = js.native
+  def newDatafeedsCustomBatchRequestEntry(): DatafeedsCustomBatchRequestEntry
   
   // Create a new instance of DatafeedstatusesCustomBatchRequest
-  def newDatafeedstatusesCustomBatchRequest(): DatafeedstatusesCustomBatchRequest = js.native
+  def newDatafeedstatusesCustomBatchRequest(): DatafeedstatusesCustomBatchRequest
   
   // Create a new instance of DatafeedstatusesCustomBatchRequestEntry
-  def newDatafeedstatusesCustomBatchRequestEntry(): DatafeedstatusesCustomBatchRequestEntry = js.native
+  def newDatafeedstatusesCustomBatchRequestEntry(): DatafeedstatusesCustomBatchRequestEntry
   
   // Create a new instance of DeliveryTime
-  def newDeliveryTime(): DeliveryTime = js.native
+  def newDeliveryTime(): DeliveryTime
   
   // Create a new instance of Error
-  def newError(): Error = js.native
+  def newError(): Error
   
   // Create a new instance of Headers
-  def newHeaders(): Headers = js.native
+  def newHeaders(): Headers
   
   // Create a new instance of HolidayCutoff
-  def newHolidayCutoff(): HolidayCutoff = js.native
+  def newHolidayCutoff(): HolidayCutoff
   
   // Create a new instance of Installment
-  def newInstallment(): Installment = js.native
+  def newInstallment(): Installment
   
   // Create a new instance of Inventory
-  def newInventory(): Inventory = js.native
+  def newInventory(): Inventory
   
   // Create a new instance of InventoryCustomBatchRequest
-  def newInventoryCustomBatchRequest(): InventoryCustomBatchRequest = js.native
+  def newInventoryCustomBatchRequest(): InventoryCustomBatchRequest
   
   // Create a new instance of InventoryCustomBatchRequestEntry
-  def newInventoryCustomBatchRequestEntry(): InventoryCustomBatchRequestEntry = js.native
+  def newInventoryCustomBatchRequestEntry(): InventoryCustomBatchRequestEntry
   
   // Create a new instance of InventoryPickup
-  def newInventoryPickup(): InventoryPickup = js.native
+  def newInventoryPickup(): InventoryPickup
   
   // Create a new instance of InventorySetRequest
-  def newInventorySetRequest(): InventorySetRequest = js.native
+  def newInventorySetRequest(): InventorySetRequest
   
   // Create a new instance of InvoiceSummary
-  def newInvoiceSummary(): InvoiceSummary = js.native
+  def newInvoiceSummary(): InvoiceSummary
   
   // Create a new instance of InvoiceSummaryAdditionalChargeSummary
-  def newInvoiceSummaryAdditionalChargeSummary(): InvoiceSummaryAdditionalChargeSummary = js.native
+  def newInvoiceSummaryAdditionalChargeSummary(): InvoiceSummaryAdditionalChargeSummary
   
   // Create a new instance of LiaAboutPageSettings
-  def newLiaAboutPageSettings(): LiaAboutPageSettings = js.native
+  def newLiaAboutPageSettings(): LiaAboutPageSettings
   
   // Create a new instance of LiaCountrySettings
-  def newLiaCountrySettings(): LiaCountrySettings = js.native
+  def newLiaCountrySettings(): LiaCountrySettings
   
   // Create a new instance of LiaInventorySettings
-  def newLiaInventorySettings(): LiaInventorySettings = js.native
+  def newLiaInventorySettings(): LiaInventorySettings
   
   // Create a new instance of LiaOnDisplayToOrderSettings
-  def newLiaOnDisplayToOrderSettings(): LiaOnDisplayToOrderSettings = js.native
+  def newLiaOnDisplayToOrderSettings(): LiaOnDisplayToOrderSettings
   
   // Create a new instance of LiaPosDataProvider
-  def newLiaPosDataProvider(): LiaPosDataProvider = js.native
+  def newLiaPosDataProvider(): LiaPosDataProvider
   
   // Create a new instance of LiaSettings
-  def newLiaSettings(): LiaSettings = js.native
+  def newLiaSettings(): LiaSettings
   
   // Create a new instance of LiasettingsCustomBatchRequest
-  def newLiasettingsCustomBatchRequest(): LiasettingsCustomBatchRequest = js.native
+  def newLiasettingsCustomBatchRequest(): LiasettingsCustomBatchRequest
   
   // Create a new instance of LiasettingsCustomBatchRequestEntry
-  def newLiasettingsCustomBatchRequestEntry(): LiasettingsCustomBatchRequestEntry = js.native
+  def newLiasettingsCustomBatchRequestEntry(): LiasettingsCustomBatchRequestEntry
   
   // Create a new instance of LocationIdSet
-  def newLocationIdSet(): LocationIdSet = js.native
+  def newLocationIdSet(): LocationIdSet
   
   // Create a new instance of LoyaltyPoints
-  def newLoyaltyPoints(): LoyaltyPoints = js.native
+  def newLoyaltyPoints(): LoyaltyPoints
   
   // Create a new instance of OrderLegacyPromotion
-  def newOrderLegacyPromotion(): OrderLegacyPromotion = js.native
+  def newOrderLegacyPromotion(): OrderLegacyPromotion
   
   // Create a new instance of OrderLegacyPromotionBenefit
-  def newOrderLegacyPromotionBenefit(): OrderLegacyPromotionBenefit = js.native
+  def newOrderLegacyPromotionBenefit(): OrderLegacyPromotionBenefit
   
   // Create a new instance of OrderLineItemProductVariantAttribute
-  def newOrderLineItemProductVariantAttribute(): OrderLineItemProductVariantAttribute = js.native
+  def newOrderLineItemProductVariantAttribute(): OrderLineItemProductVariantAttribute
   
   // Create a new instance of OrderLineItemReturnInfo
-  def newOrderLineItemReturnInfo(): OrderLineItemReturnInfo = js.native
+  def newOrderLineItemReturnInfo(): OrderLineItemReturnInfo
   
   // Create a new instance of OrderLineItemShippingDetails
-  def newOrderLineItemShippingDetails(): OrderLineItemShippingDetails = js.native
+  def newOrderLineItemShippingDetails(): OrderLineItemShippingDetails
   
   // Create a new instance of OrderLineItemShippingDetailsMethod
-  def newOrderLineItemShippingDetailsMethod(): OrderLineItemShippingDetailsMethod = js.native
+  def newOrderLineItemShippingDetailsMethod(): OrderLineItemShippingDetailsMethod
   
   // Create a new instance of OrderMerchantProvidedAnnotation
-  def newOrderMerchantProvidedAnnotation(): OrderMerchantProvidedAnnotation = js.native
+  def newOrderMerchantProvidedAnnotation(): OrderMerchantProvidedAnnotation
   
   // Create a new instance of OrderShipmentLineItemShipment
-  def newOrderShipmentLineItemShipment(): OrderShipmentLineItemShipment = js.native
+  def newOrderShipmentLineItemShipment(): OrderShipmentLineItemShipment
   
   // Create a new instance of OrderinvoicesCreateChargeInvoiceRequest
-  def newOrderinvoicesCreateChargeInvoiceRequest(): OrderinvoicesCreateChargeInvoiceRequest = js.native
+  def newOrderinvoicesCreateChargeInvoiceRequest(): OrderinvoicesCreateChargeInvoiceRequest
   
   // Create a new instance of OrderinvoicesCreateRefundInvoiceRequest
-  def newOrderinvoicesCreateRefundInvoiceRequest(): OrderinvoicesCreateRefundInvoiceRequest = js.native
+  def newOrderinvoicesCreateRefundInvoiceRequest(): OrderinvoicesCreateRefundInvoiceRequest
   
   // Create a new instance of OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
-  def newOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption = js.native
+  def newOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
   
   // Create a new instance of OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
-  def newOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption = js.native
+  def newOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
   
   // Create a new instance of OrderpaymentsNotifyAuthApprovedRequest
-  def newOrderpaymentsNotifyAuthApprovedRequest(): OrderpaymentsNotifyAuthApprovedRequest = js.native
+  def newOrderpaymentsNotifyAuthApprovedRequest(): OrderpaymentsNotifyAuthApprovedRequest
   
   // Create a new instance of OrderpaymentsNotifyAuthDeclinedRequest
-  def newOrderpaymentsNotifyAuthDeclinedRequest(): OrderpaymentsNotifyAuthDeclinedRequest = js.native
+  def newOrderpaymentsNotifyAuthDeclinedRequest(): OrderpaymentsNotifyAuthDeclinedRequest
   
   // Create a new instance of OrderpaymentsNotifyChargeRequest
-  def newOrderpaymentsNotifyChargeRequest(): OrderpaymentsNotifyChargeRequest = js.native
+  def newOrderpaymentsNotifyChargeRequest(): OrderpaymentsNotifyChargeRequest
   
   // Create a new instance of OrderpaymentsNotifyRefundRequest
-  def newOrderpaymentsNotifyRefundRequest(): OrderpaymentsNotifyRefundRequest = js.native
+  def newOrderpaymentsNotifyRefundRequest(): OrderpaymentsNotifyRefundRequest
   
   // Create a new instance of OrdersAcknowledgeRequest
-  def newOrdersAcknowledgeRequest(): OrdersAcknowledgeRequest = js.native
+  def newOrdersAcknowledgeRequest(): OrdersAcknowledgeRequest
   
   // Create a new instance of OrdersCancelLineItemRequest
-  def newOrdersCancelLineItemRequest(): OrdersCancelLineItemRequest = js.native
+  def newOrdersCancelLineItemRequest(): OrdersCancelLineItemRequest
   
   // Create a new instance of OrdersCancelRequest
-  def newOrdersCancelRequest(): OrdersCancelRequest = js.native
+  def newOrdersCancelRequest(): OrdersCancelRequest
   
   // Create a new instance of OrdersCancelTestOrderByCustomerRequest
-  def newOrdersCancelTestOrderByCustomerRequest(): OrdersCancelTestOrderByCustomerRequest = js.native
+  def newOrdersCancelTestOrderByCustomerRequest(): OrdersCancelTestOrderByCustomerRequest
   
   // Create a new instance of OrdersCreateTestOrderRequest
-  def newOrdersCreateTestOrderRequest(): OrdersCreateTestOrderRequest = js.native
+  def newOrdersCreateTestOrderRequest(): OrdersCreateTestOrderRequest
   
   // Create a new instance of OrdersCreateTestReturnRequest
-  def newOrdersCreateTestReturnRequest(): OrdersCreateTestReturnRequest = js.native
+  def newOrdersCreateTestReturnRequest(): OrdersCreateTestReturnRequest
   
   // Create a new instance of OrdersCustomBatchRequest
-  def newOrdersCustomBatchRequest(): OrdersCustomBatchRequest = js.native
+  def newOrdersCustomBatchRequest(): OrdersCustomBatchRequest
   
   // Create a new instance of OrdersCustomBatchRequestEntry
-  def newOrdersCustomBatchRequestEntry(): OrdersCustomBatchRequestEntry = js.native
+  def newOrdersCustomBatchRequestEntry(): OrdersCustomBatchRequestEntry
   
   // Create a new instance of OrdersCustomBatchRequestEntryCancel
-  def newOrdersCustomBatchRequestEntryCancel(): OrdersCustomBatchRequestEntryCancel = js.native
+  def newOrdersCustomBatchRequestEntryCancel(): OrdersCustomBatchRequestEntryCancel
   
   // Create a new instance of OrdersCustomBatchRequestEntryCancelLineItem
-  def newOrdersCustomBatchRequestEntryCancelLineItem(): OrdersCustomBatchRequestEntryCancelLineItem = js.native
+  def newOrdersCustomBatchRequestEntryCancelLineItem(): OrdersCustomBatchRequestEntryCancelLineItem
   
   // Create a new instance of OrdersCustomBatchRequestEntryCreateTestReturnReturnItem
-  def newOrdersCustomBatchRequestEntryCreateTestReturnReturnItem(): OrdersCustomBatchRequestEntryCreateTestReturnReturnItem = js.native
+  def newOrdersCustomBatchRequestEntryCreateTestReturnReturnItem(): OrdersCustomBatchRequestEntryCreateTestReturnReturnItem
   
   // Create a new instance of OrdersCustomBatchRequestEntryInStoreRefundLineItem
-  def newOrdersCustomBatchRequestEntryInStoreRefundLineItem(): OrdersCustomBatchRequestEntryInStoreRefundLineItem = js.native
+  def newOrdersCustomBatchRequestEntryInStoreRefundLineItem(): OrdersCustomBatchRequestEntryInStoreRefundLineItem
   
   // Create a new instance of OrdersCustomBatchRequestEntryRefund
-  def newOrdersCustomBatchRequestEntryRefund(): OrdersCustomBatchRequestEntryRefund = js.native
+  def newOrdersCustomBatchRequestEntryRefund(): OrdersCustomBatchRequestEntryRefund
   
   // Create a new instance of OrdersCustomBatchRequestEntryRejectReturnLineItem
-  def newOrdersCustomBatchRequestEntryRejectReturnLineItem(): OrdersCustomBatchRequestEntryRejectReturnLineItem = js.native
+  def newOrdersCustomBatchRequestEntryRejectReturnLineItem(): OrdersCustomBatchRequestEntryRejectReturnLineItem
   
   // Create a new instance of OrdersCustomBatchRequestEntryReturnLineItem
-  def newOrdersCustomBatchRequestEntryReturnLineItem(): OrdersCustomBatchRequestEntryReturnLineItem = js.native
+  def newOrdersCustomBatchRequestEntryReturnLineItem(): OrdersCustomBatchRequestEntryReturnLineItem
   
   // Create a new instance of OrdersCustomBatchRequestEntryReturnRefundLineItem
-  def newOrdersCustomBatchRequestEntryReturnRefundLineItem(): OrdersCustomBatchRequestEntryReturnRefundLineItem = js.native
+  def newOrdersCustomBatchRequestEntryReturnRefundLineItem(): OrdersCustomBatchRequestEntryReturnRefundLineItem
   
   // Create a new instance of OrdersCustomBatchRequestEntrySetLineItemMetadata
-  def newOrdersCustomBatchRequestEntrySetLineItemMetadata(): OrdersCustomBatchRequestEntrySetLineItemMetadata = js.native
+  def newOrdersCustomBatchRequestEntrySetLineItemMetadata(): OrdersCustomBatchRequestEntrySetLineItemMetadata
   
   // Create a new instance of OrdersCustomBatchRequestEntryShipLineItems
-  def newOrdersCustomBatchRequestEntryShipLineItems(): OrdersCustomBatchRequestEntryShipLineItems = js.native
+  def newOrdersCustomBatchRequestEntryShipLineItems(): OrdersCustomBatchRequestEntryShipLineItems
   
   // Create a new instance of OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo
-  def newOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo(): OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = js.native
+  def newOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo(): OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo
   
   // Create a new instance of OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails
-  def newOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails(): OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails = js.native
+  def newOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails(): OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails
   
   // Create a new instance of OrdersCustomBatchRequestEntryUpdateShipment
-  def newOrdersCustomBatchRequestEntryUpdateShipment(): OrdersCustomBatchRequestEntryUpdateShipment = js.native
+  def newOrdersCustomBatchRequestEntryUpdateShipment(): OrdersCustomBatchRequestEntryUpdateShipment
   
   // Create a new instance of OrdersInStoreRefundLineItemRequest
-  def newOrdersInStoreRefundLineItemRequest(): OrdersInStoreRefundLineItemRequest = js.native
+  def newOrdersInStoreRefundLineItemRequest(): OrdersInStoreRefundLineItemRequest
   
   // Create a new instance of OrdersRefundRequest
-  def newOrdersRefundRequest(): OrdersRefundRequest = js.native
+  def newOrdersRefundRequest(): OrdersRefundRequest
   
   // Create a new instance of OrdersRejectReturnLineItemRequest
-  def newOrdersRejectReturnLineItemRequest(): OrdersRejectReturnLineItemRequest = js.native
+  def newOrdersRejectReturnLineItemRequest(): OrdersRejectReturnLineItemRequest
   
   // Create a new instance of OrdersReturnLineItemRequest
-  def newOrdersReturnLineItemRequest(): OrdersReturnLineItemRequest = js.native
+  def newOrdersReturnLineItemRequest(): OrdersReturnLineItemRequest
   
   // Create a new instance of OrdersReturnRefundLineItemRequest
-  def newOrdersReturnRefundLineItemRequest(): OrdersReturnRefundLineItemRequest = js.native
+  def newOrdersReturnRefundLineItemRequest(): OrdersReturnRefundLineItemRequest
   
   // Create a new instance of OrdersSetLineItemMetadataRequest
-  def newOrdersSetLineItemMetadataRequest(): OrdersSetLineItemMetadataRequest = js.native
+  def newOrdersSetLineItemMetadataRequest(): OrdersSetLineItemMetadataRequest
   
   // Create a new instance of OrdersShipLineItemsRequest
-  def newOrdersShipLineItemsRequest(): OrdersShipLineItemsRequest = js.native
+  def newOrdersShipLineItemsRequest(): OrdersShipLineItemsRequest
   
   // Create a new instance of OrdersUpdateLineItemShippingDetailsRequest
-  def newOrdersUpdateLineItemShippingDetailsRequest(): OrdersUpdateLineItemShippingDetailsRequest = js.native
+  def newOrdersUpdateLineItemShippingDetailsRequest(): OrdersUpdateLineItemShippingDetailsRequest
   
   // Create a new instance of OrdersUpdateMerchantOrderIdRequest
-  def newOrdersUpdateMerchantOrderIdRequest(): OrdersUpdateMerchantOrderIdRequest = js.native
+  def newOrdersUpdateMerchantOrderIdRequest(): OrdersUpdateMerchantOrderIdRequest
   
   // Create a new instance of OrdersUpdateShipmentRequest
-  def newOrdersUpdateShipmentRequest(): OrdersUpdateShipmentRequest = js.native
+  def newOrdersUpdateShipmentRequest(): OrdersUpdateShipmentRequest
   
   // Create a new instance of PosCustomBatchRequest
-  def newPosCustomBatchRequest(): PosCustomBatchRequest = js.native
+  def newPosCustomBatchRequest(): PosCustomBatchRequest
   
   // Create a new instance of PosCustomBatchRequestEntry
-  def newPosCustomBatchRequestEntry(): PosCustomBatchRequestEntry = js.native
+  def newPosCustomBatchRequestEntry(): PosCustomBatchRequestEntry
   
   // Create a new instance of PosInventory
-  def newPosInventory(): PosInventory = js.native
+  def newPosInventory(): PosInventory
   
   // Create a new instance of PosInventoryRequest
-  def newPosInventoryRequest(): PosInventoryRequest = js.native
+  def newPosInventoryRequest(): PosInventoryRequest
   
   // Create a new instance of PosSale
-  def newPosSale(): PosSale = js.native
+  def newPosSale(): PosSale
   
   // Create a new instance of PosSaleRequest
-  def newPosSaleRequest(): PosSaleRequest = js.native
+  def newPosSaleRequest(): PosSaleRequest
   
   // Create a new instance of PosStore
-  def newPosStore(): PosStore = js.native
+  def newPosStore(): PosStore
   
   // Create a new instance of PostalCodeGroup
-  def newPostalCodeGroup(): PostalCodeGroup = js.native
+  def newPostalCodeGroup(): PostalCodeGroup
   
   // Create a new instance of PostalCodeRange
-  def newPostalCodeRange(): PostalCodeRange = js.native
+  def newPostalCodeRange(): PostalCodeRange
   
   // Create a new instance of Price
-  def newPrice(): Price = js.native
+  def newPrice(): Price
   
   // Create a new instance of Product
-  def newProduct(): Product = js.native
+  def newProduct(): Product
   
   // Create a new instance of ProductAspect
-  def newProductAspect(): ProductAspect = js.native
+  def newProductAspect(): ProductAspect
   
   // Create a new instance of ProductDestination
-  def newProductDestination(): ProductDestination = js.native
+  def newProductDestination(): ProductDestination
   
   // Create a new instance of ProductShipping
-  def newProductShipping(): ProductShipping = js.native
+  def newProductShipping(): ProductShipping
   
   // Create a new instance of ProductShippingDimension
-  def newProductShippingDimension(): ProductShippingDimension = js.native
+  def newProductShippingDimension(): ProductShippingDimension
   
   // Create a new instance of ProductShippingWeight
-  def newProductShippingWeight(): ProductShippingWeight = js.native
+  def newProductShippingWeight(): ProductShippingWeight
   
   // Create a new instance of ProductTax
-  def newProductTax(): ProductTax = js.native
+  def newProductTax(): ProductTax
   
   // Create a new instance of ProductUnitPricingBaseMeasure
-  def newProductUnitPricingBaseMeasure(): ProductUnitPricingBaseMeasure = js.native
+  def newProductUnitPricingBaseMeasure(): ProductUnitPricingBaseMeasure
   
   // Create a new instance of ProductUnitPricingMeasure
-  def newProductUnitPricingMeasure(): ProductUnitPricingMeasure = js.native
+  def newProductUnitPricingMeasure(): ProductUnitPricingMeasure
   
   // Create a new instance of ProductsCustomBatchRequest
-  def newProductsCustomBatchRequest(): ProductsCustomBatchRequest = js.native
+  def newProductsCustomBatchRequest(): ProductsCustomBatchRequest
   
   // Create a new instance of ProductsCustomBatchRequestEntry
-  def newProductsCustomBatchRequestEntry(): ProductsCustomBatchRequestEntry = js.native
+  def newProductsCustomBatchRequestEntry(): ProductsCustomBatchRequestEntry
   
   // Create a new instance of ProductstatusesCustomBatchRequest
-  def newProductstatusesCustomBatchRequest(): ProductstatusesCustomBatchRequest = js.native
+  def newProductstatusesCustomBatchRequest(): ProductstatusesCustomBatchRequest
   
   // Create a new instance of ProductstatusesCustomBatchRequestEntry
-  def newProductstatusesCustomBatchRequestEntry(): ProductstatusesCustomBatchRequestEntry = js.native
+  def newProductstatusesCustomBatchRequestEntry(): ProductstatusesCustomBatchRequestEntry
   
   // Create a new instance of Promotion
-  def newPromotion(): Promotion = js.native
+  def newPromotion(): Promotion
   
   // Create a new instance of RateGroup
-  def newRateGroup(): RateGroup = js.native
+  def newRateGroup(): RateGroup
   
   // Create a new instance of Row
-  def newRow(): Row = js.native
+  def newRow(): Row
   
   // Create a new instance of Service
-  def newService(): Service = js.native
+  def newService(): Service
   
   // Create a new instance of ShipmentInvoice
-  def newShipmentInvoice(): ShipmentInvoice = js.native
+  def newShipmentInvoice(): ShipmentInvoice
   
   // Create a new instance of ShipmentInvoiceLineItemInvoice
-  def newShipmentInvoiceLineItemInvoice(): ShipmentInvoiceLineItemInvoice = js.native
+  def newShipmentInvoiceLineItemInvoice(): ShipmentInvoiceLineItemInvoice
   
   // Create a new instance of ShippingSettings
-  def newShippingSettings(): ShippingSettings = js.native
+  def newShippingSettings(): ShippingSettings
   
   // Create a new instance of ShippingsettingsCustomBatchRequest
-  def newShippingsettingsCustomBatchRequest(): ShippingsettingsCustomBatchRequest = js.native
+  def newShippingsettingsCustomBatchRequest(): ShippingsettingsCustomBatchRequest
   
   // Create a new instance of ShippingsettingsCustomBatchRequestEntry
-  def newShippingsettingsCustomBatchRequestEntry(): ShippingsettingsCustomBatchRequestEntry = js.native
+  def newShippingsettingsCustomBatchRequestEntry(): ShippingsettingsCustomBatchRequestEntry
   
   // Create a new instance of Table
-  def newTable(): Table = js.native
+  def newTable(): Table
   
   // Create a new instance of TestOrder
-  def newTestOrder(): TestOrder = js.native
+  def newTestOrder(): TestOrder
   
   // Create a new instance of TestOrderCustomer
-  def newTestOrderCustomer(): TestOrderCustomer = js.native
+  def newTestOrderCustomer(): TestOrderCustomer
   
   // Create a new instance of TestOrderCustomerMarketingRightsInfo
-  def newTestOrderCustomerMarketingRightsInfo(): TestOrderCustomerMarketingRightsInfo = js.native
+  def newTestOrderCustomerMarketingRightsInfo(): TestOrderCustomerMarketingRightsInfo
   
   // Create a new instance of TestOrderLineItem
-  def newTestOrderLineItem(): TestOrderLineItem = js.native
+  def newTestOrderLineItem(): TestOrderLineItem
   
   // Create a new instance of TestOrderLineItemProduct
-  def newTestOrderLineItemProduct(): TestOrderLineItemProduct = js.native
+  def newTestOrderLineItemProduct(): TestOrderLineItemProduct
   
   // Create a new instance of TestOrderPaymentMethod
-  def newTestOrderPaymentMethod(): TestOrderPaymentMethod = js.native
+  def newTestOrderPaymentMethod(): TestOrderPaymentMethod
   
   // Create a new instance of TransitTable
-  def newTransitTable(): TransitTable = js.native
+  def newTransitTable(): TransitTable
   
   // Create a new instance of TransitTableTransitTimeRow
-  def newTransitTableTransitTimeRow(): TransitTableTransitTimeRow = js.native
+  def newTransitTableTransitTimeRow(): TransitTableTransitTimeRow
   
   // Create a new instance of TransitTableTransitTimeRowTransitTimeValue
-  def newTransitTableTransitTimeRowTransitTimeValue(): TransitTableTransitTimeRowTransitTimeValue = js.native
+  def newTransitTableTransitTimeRowTransitTimeValue(): TransitTableTransitTimeRowTransitTimeValue
   
   // Create a new instance of UnitInvoice
-  def newUnitInvoice(): UnitInvoice = js.native
+  def newUnitInvoice(): UnitInvoice
   
   // Create a new instance of UnitInvoiceAdditionalCharge
-  def newUnitInvoiceAdditionalCharge(): UnitInvoiceAdditionalCharge = js.native
+  def newUnitInvoiceAdditionalCharge(): UnitInvoiceAdditionalCharge
   
   // Create a new instance of UnitInvoiceTaxLine
-  def newUnitInvoiceTaxLine(): UnitInvoiceTaxLine = js.native
+  def newUnitInvoiceTaxLine(): UnitInvoiceTaxLine
   
   // Create a new instance of Value
-  def newValue(): Value = js.native
+  def newValue(): Value
   
   // Create a new instance of Weight
-  def newWeight(): Weight = js.native
+  def newWeight(): Weight
 }
 object Content {
   
@@ -881,31 +879,49 @@ object Content {
   object MimeType extends StObject {
     
     @js.native
-    sealed trait ATOM extends MimeType
+    sealed trait ATOM
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait CSV extends MimeType
+    sealed trait CSV
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait ICAL extends MimeType
+    sealed trait ICAL
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait JAVASCRIPT extends MimeType
+    sealed trait JAVASCRIPT
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait JSON extends MimeType
+    sealed trait JSON
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait RSS extends MimeType
+    sealed trait RSS
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait TEXT extends MimeType
+    sealed trait TEXT
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait VCARD extends MimeType
+    sealed trait VCARD
+      extends StObject
+         with MimeType
     
     @js.native
-    sealed trait XML extends MimeType
+    sealed trait XML
+      extends StObject
+         with MimeType
   }
   
   object Collection {
@@ -1135,14 +1151,13 @@ object Content {
       def update(resource: LiaSettings, merchantId: String, accountId: String, optionalArgs: js.Object): LiaSettings = js.native
     }
     
-    @js.native
     trait OrderinvoicesCollection extends StObject {
       
       // Creates a charge invoice for a shipment group, and triggers a charge capture for non-facilitated payment orders.
-      def createchargeinvoice(resource: OrderinvoicesCreateChargeInvoiceRequest, merchantId: String, orderId: String): OrderinvoicesCreateChargeInvoiceResponse = js.native
+      def createchargeinvoice(resource: OrderinvoicesCreateChargeInvoiceRequest, merchantId: String, orderId: String): OrderinvoicesCreateChargeInvoiceResponse
       
       // Creates a refund invoice for one or more shipment groups, and triggers a refund for non-facilitated payment orders. This can only be used for line items that have previously been charged using createChargeInvoice. All amounts (except for the summary) are incremental with respect to the previous invoice.
-      def createrefundinvoice(resource: OrderinvoicesCreateRefundInvoiceRequest, merchantId: String, orderId: String): OrderinvoicesCreateRefundInvoiceResponse = js.native
+      def createrefundinvoice(resource: OrderinvoicesCreateRefundInvoiceRequest, merchantId: String, orderId: String): OrderinvoicesCreateRefundInvoiceResponse
     }
     object OrderinvoicesCollection {
       
@@ -1170,20 +1185,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsCollection extends StObject {
       
       // Notify about successfully authorizing user's payment method for a given amount.
-      def notifyauthapproved(resource: OrderpaymentsNotifyAuthApprovedRequest, merchantId: String, orderId: String): OrderpaymentsNotifyAuthApprovedResponse = js.native
+      def notifyauthapproved(resource: OrderpaymentsNotifyAuthApprovedRequest, merchantId: String, orderId: String): OrderpaymentsNotifyAuthApprovedResponse
       
       // Notify about failure to authorize user's payment method.
-      def notifyauthdeclined(resource: OrderpaymentsNotifyAuthDeclinedRequest, merchantId: String, orderId: String): OrderpaymentsNotifyAuthDeclinedResponse = js.native
+      def notifyauthdeclined(resource: OrderpaymentsNotifyAuthDeclinedRequest, merchantId: String, orderId: String): OrderpaymentsNotifyAuthDeclinedResponse
       
       // Notify about charge on user's selected payments method.
-      def notifycharge(resource: OrderpaymentsNotifyChargeRequest, merchantId: String, orderId: String): OrderpaymentsNotifyChargeResponse = js.native
+      def notifycharge(resource: OrderpaymentsNotifyChargeRequest, merchantId: String, orderId: String): OrderpaymentsNotifyChargeResponse
       
       // Notify about refund on user's selected payments method.
-      def notifyrefund(resource: OrderpaymentsNotifyRefundRequest, merchantId: String, orderId: String): OrderpaymentsNotifyRefundResponse = js.native
+      def notifyrefund(resource: OrderpaymentsNotifyRefundRequest, merchantId: String, orderId: String): OrderpaymentsNotifyRefundResponse
     }
     object OrderpaymentsCollection {
       
@@ -2001,32 +2015,31 @@ object Content {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var adultContent: js.UndefOr[Boolean] = js.native
+      var adultContent: js.UndefOr[Boolean] = js.undefined
       
-      var adwordsLinks: js.UndefOr[js.Array[AccountAdwordsLink]] = js.native
+      var adwordsLinks: js.UndefOr[js.Array[AccountAdwordsLink]] = js.undefined
       
-      var businessInformation: js.UndefOr[AccountBusinessInformation] = js.native
+      var businessInformation: js.UndefOr[AccountBusinessInformation] = js.undefined
       
-      var googleMyBusinessLink: js.UndefOr[AccountGoogleMyBusinessLink] = js.native
+      var googleMyBusinessLink: js.UndefOr[AccountGoogleMyBusinessLink] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var reviewsUrl: js.UndefOr[String] = js.native
+      var reviewsUrl: js.UndefOr[String] = js.undefined
       
-      var sellerId: js.UndefOr[String] = js.native
+      var sellerId: js.UndefOr[String] = js.undefined
       
-      var users: js.UndefOr[js.Array[AccountUser]] = js.native
+      var users: js.UndefOr[js.Array[AccountUser]] = js.undefined
       
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
       
-      var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.native
+      var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.undefined
     }
     object Account {
       
@@ -2122,18 +2135,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountAddress extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var streetAddress: js.UndefOr[String] = js.native
+      var streetAddress: js.UndefOr[String] = js.undefined
     }
     object AccountAddress {
       
@@ -2178,12 +2190,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountAdwordsLink extends StObject {
       
-      var adwordsId: js.UndefOr[String] = js.native
+      var adwordsId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object AccountAdwordsLink {
       
@@ -2210,14 +2221,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountBusinessInformation extends StObject {
       
-      var address: js.UndefOr[AccountAddress] = js.native
+      var address: js.UndefOr[AccountAddress] = js.undefined
       
-      var customerService: js.UndefOr[AccountCustomerService] = js.native
+      var customerService: js.UndefOr[AccountCustomerService] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
     }
     object AccountBusinessInformation {
       
@@ -2250,14 +2260,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountCustomerService extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object AccountCustomerService {
       
@@ -2290,12 +2299,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountGoogleMyBusinessLink extends StObject {
       
-      var gmbEmail: js.UndefOr[String] = js.native
+      var gmbEmail: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object AccountGoogleMyBusinessLink {
       
@@ -2322,12 +2330,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountIdentifier extends StObject {
       
-      var aggregatorId: js.UndefOr[String] = js.native
+      var aggregatorId: js.UndefOr[String] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
     }
     object AccountIdentifier {
       
@@ -2354,20 +2361,19 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatus extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.native
+      var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.undefined
       
-      var dataQualityIssues: js.UndefOr[js.Array[AccountStatusDataQualityIssue]] = js.native
+      var dataQualityIssues: js.UndefOr[js.Array[AccountStatusDataQualityIssue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.native
+      var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.undefined
       
-      var websiteClaimed: js.UndefOr[Boolean] = js.native
+      var websiteClaimed: js.UndefOr[Boolean] = js.undefined
     }
     object AccountStatus {
       
@@ -2427,22 +2433,21 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusAccountLevelIssue extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var detail: js.UndefOr[String] = js.native
+      var detail: js.UndefOr[String] = js.undefined
       
-      var documentation: js.UndefOr[String] = js.native
+      var documentation: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var severity: js.UndefOr[String] = js.native
+      var severity: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object AccountStatusAccountLevelIssue {
       
@@ -2499,30 +2504,29 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusDataQualityIssue extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var detail: js.UndefOr[String] = js.native
+      var detail: js.UndefOr[String] = js.undefined
       
-      var displayedValue: js.UndefOr[String] = js.native
+      var displayedValue: js.UndefOr[String] = js.undefined
       
-      var exampleItems: js.UndefOr[js.Array[AccountStatusExampleItem]] = js.native
+      var exampleItems: js.UndefOr[js.Array[AccountStatusExampleItem]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var lastChecked: js.UndefOr[String] = js.native
+      var lastChecked: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var numItems: js.UndefOr[Double] = js.native
+      var numItems: js.UndefOr[Double] = js.undefined
       
-      var severity: js.UndefOr[String] = js.native
+      var severity: js.UndefOr[String] = js.undefined
       
-      var submittedValue: js.UndefOr[String] = js.native
+      var submittedValue: js.UndefOr[String] = js.undefined
     }
     object AccountStatusDataQualityIssue {
       
@@ -2606,18 +2610,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusExampleItem extends StObject {
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var submittedValue: js.UndefOr[String] = js.native
+      var submittedValue: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var valueOnLandingPage: js.UndefOr[String] = js.native
+      var valueOnLandingPage: js.UndefOr[String] = js.undefined
     }
     object AccountStatusExampleItem {
       
@@ -2662,24 +2665,23 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusItemLevelIssue extends StObject {
       
-      var attributeName: js.UndefOr[String] = js.native
+      var attributeName: js.UndefOr[String] = js.undefined
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var detail: js.UndefOr[String] = js.native
+      var detail: js.UndefOr[String] = js.undefined
       
-      var documentation: js.UndefOr[String] = js.native
+      var documentation: js.UndefOr[String] = js.undefined
       
-      var numItems: js.UndefOr[String] = js.native
+      var numItems: js.UndefOr[String] = js.undefined
       
-      var resolution: js.UndefOr[String] = js.native
+      var resolution: js.UndefOr[String] = js.undefined
       
-      var servability: js.UndefOr[String] = js.native
+      var servability: js.UndefOr[String] = js.undefined
     }
     object AccountStatusItemLevelIssue {
       
@@ -2742,18 +2744,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusProducts extends StObject {
       
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var itemLevelIssues: js.UndefOr[js.Array[AccountStatusItemLevelIssue]] = js.native
+      var itemLevelIssues: js.UndefOr[js.Array[AccountStatusItemLevelIssue]] = js.undefined
       
-      var statistics: js.UndefOr[AccountStatusStatistics] = js.native
+      var statistics: js.UndefOr[AccountStatusStatistics] = js.undefined
     }
     object AccountStatusProducts {
       
@@ -2801,16 +2802,15 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountStatusStatistics extends StObject {
       
-      var active: js.UndefOr[String] = js.native
+      var active: js.UndefOr[String] = js.undefined
       
-      var disapproved: js.UndefOr[String] = js.native
+      var disapproved: js.UndefOr[String] = js.undefined
       
-      var expiring: js.UndefOr[String] = js.native
+      var expiring: js.UndefOr[String] = js.undefined
       
-      var pending: js.UndefOr[String] = js.native
+      var pending: js.UndefOr[String] = js.undefined
     }
     object AccountStatusStatistics {
       
@@ -2849,14 +2849,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountTax extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var rules: js.UndefOr[js.Array[AccountTaxTaxRule]] = js.native
+      var rules: js.UndefOr[js.Array[AccountTaxTaxRule]] = js.undefined
     }
     object AccountTax {
       
@@ -2892,18 +2891,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountTaxTaxRule extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var locationId: js.UndefOr[String] = js.native
+      var locationId: js.UndefOr[String] = js.undefined
       
-      var ratePercent: js.UndefOr[String] = js.native
+      var ratePercent: js.UndefOr[String] = js.undefined
       
-      var shippingTaxed: js.UndefOr[Boolean] = js.native
+      var shippingTaxed: js.UndefOr[Boolean] = js.undefined
       
-      var useGlobalRate: js.UndefOr[Boolean] = js.native
+      var useGlobalRate: js.UndefOr[Boolean] = js.undefined
     }
     object AccountTaxTaxRule {
       
@@ -2948,18 +2946,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountUser extends StObject {
       
-      var admin: js.UndefOr[Boolean] = js.native
+      var admin: js.UndefOr[Boolean] = js.undefined
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var orderManager: js.UndefOr[Boolean] = js.native
+      var orderManager: js.UndefOr[Boolean] = js.undefined
       
-      var paymentsAnalyst: js.UndefOr[Boolean] = js.native
+      var paymentsAnalyst: js.UndefOr[Boolean] = js.undefined
       
-      var paymentsManager: js.UndefOr[Boolean] = js.native
+      var paymentsManager: js.UndefOr[Boolean] = js.undefined
     }
     object AccountUser {
       
@@ -3004,12 +3001,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountYouTubeChannelLink extends StObject {
       
-      var channelId: js.UndefOr[String] = js.native
+      var channelId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object AccountYouTubeChannelLink {
       
@@ -3036,12 +3032,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsAuthInfoResponse extends StObject {
       
-      var accountIdentifiers: js.UndefOr[js.Array[AccountIdentifier]] = js.native
+      var accountIdentifiers: js.UndefOr[js.Array[AccountIdentifier]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountsAuthInfoResponse {
       
@@ -3071,10 +3066,9 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsClaimWebsiteResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountsClaimWebsiteResponse {
       
@@ -3095,10 +3089,9 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccountsCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccountsCustomBatchRequestEntry]] = js.undefined
     }
     object AccountsCustomBatchRequest {
       
@@ -3122,24 +3115,23 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsCustomBatchRequestEntry extends StObject {
       
-      var account: js.UndefOr[Account] = js.native
+      var account: js.UndefOr[Account] = js.undefined
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var force: js.UndefOr[Boolean] = js.native
+      var force: js.UndefOr[Boolean] = js.undefined
       
-      var linkRequest: js.UndefOr[AccountsCustomBatchRequestEntryLinkRequest] = js.native
+      var linkRequest: js.UndefOr[AccountsCustomBatchRequestEntryLinkRequest] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var overwrite: js.UndefOr[Boolean] = js.native
+      var overwrite: js.UndefOr[Boolean] = js.undefined
     }
     object AccountsCustomBatchRequestEntry {
       
@@ -3202,14 +3194,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsCustomBatchRequestEntryLinkRequest extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var linkType: js.UndefOr[String] = js.native
+      var linkType: js.UndefOr[String] = js.undefined
       
-      var linkedAccountId: js.UndefOr[String] = js.native
+      var linkedAccountId: js.UndefOr[String] = js.undefined
     }
     object AccountsCustomBatchRequestEntryLinkRequest {
       
@@ -3242,12 +3233,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccountsCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccountsCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountsCustomBatchResponse {
       
@@ -3277,18 +3267,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsCustomBatchResponseEntry extends StObject {
       
-      var account: js.UndefOr[Account] = js.native
+      var account: js.UndefOr[Account] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var linkStatus: js.UndefOr[String] = js.native
+      var linkStatus: js.UndefOr[String] = js.undefined
     }
     object AccountsCustomBatchResponseEntry {
       
@@ -3333,14 +3322,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsLinkRequest extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var linkType: js.UndefOr[String] = js.native
+      var linkType: js.UndefOr[String] = js.undefined
       
-      var linkedAccountId: js.UndefOr[String] = js.native
+      var linkedAccountId: js.UndefOr[String] = js.undefined
     }
     object AccountsLinkRequest {
       
@@ -3373,10 +3361,9 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsLinkResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountsLinkResponse {
       
@@ -3397,14 +3384,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[Account]] = js.native
+      var resources: js.UndefOr[js.Array[Account]] = js.undefined
     }
     object AccountsListResponse {
       
@@ -3440,10 +3426,9 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountstatusesCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchRequestEntry]] = js.undefined
     }
     object AccountstatusesCustomBatchRequest {
       
@@ -3467,18 +3452,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountstatusesCustomBatchRequestEntry extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var destinations: js.UndefOr[js.Array[String]] = js.native
+      var destinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
     }
     object AccountstatusesCustomBatchRequestEntry {
       
@@ -3526,12 +3510,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountstatusesCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountstatusesCustomBatchResponse {
       
@@ -3561,14 +3544,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountstatusesCustomBatchResponseEntry extends StObject {
       
-      var accountStatus: js.UndefOr[AccountStatus] = js.native
+      var accountStatus: js.UndefOr[AccountStatus] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
     }
     object AccountstatusesCustomBatchResponseEntry {
       
@@ -3601,14 +3583,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccountstatusesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[AccountStatus]] = js.native
+      var resources: js.UndefOr[js.Array[AccountStatus]] = js.undefined
     }
     object AccountstatusesListResponse {
       
@@ -3644,10 +3625,9 @@ object Content {
       }
     }
     
-    @js.native
     trait AccounttaxCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccounttaxCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccounttaxCustomBatchRequestEntry]] = js.undefined
     }
     object AccounttaxCustomBatchRequest {
       
@@ -3671,18 +3651,17 @@ object Content {
       }
     }
     
-    @js.native
     trait AccounttaxCustomBatchRequestEntry extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var accountTax: js.UndefOr[AccountTax] = js.native
+      var accountTax: js.UndefOr[AccountTax] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
     }
     object AccounttaxCustomBatchRequestEntry {
       
@@ -3727,12 +3706,11 @@ object Content {
       }
     }
     
-    @js.native
     trait AccounttaxCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[AccounttaxCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[AccounttaxCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccounttaxCustomBatchResponse {
       
@@ -3762,16 +3740,15 @@ object Content {
       }
     }
     
-    @js.native
     trait AccounttaxCustomBatchResponseEntry extends StObject {
       
-      var accountTax: js.UndefOr[AccountTax] = js.native
+      var accountTax: js.UndefOr[AccountTax] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccounttaxCustomBatchResponseEntry {
       
@@ -3810,14 +3787,13 @@ object Content {
       }
     }
     
-    @js.native
     trait AccounttaxListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[AccountTax]] = js.native
+      var resources: js.UndefOr[js.Array[AccountTax]] = js.undefined
     }
     object AccounttaxListResponse {
       
@@ -3853,12 +3829,11 @@ object Content {
       }
     }
     
-    @js.native
     trait Amount extends StObject {
       
-      var pretax: js.UndefOr[Price] = js.native
+      var pretax: js.UndefOr[Price] = js.undefined
       
-      var tax: js.UndefOr[Price] = js.native
+      var tax: js.UndefOr[Price] = js.undefined
     }
     object Amount {
       
@@ -3885,20 +3860,19 @@ object Content {
       }
     }
     
-    @js.native
     trait CarrierRate extends StObject {
       
-      var carrierName: js.UndefOr[String] = js.native
+      var carrierName: js.UndefOr[String] = js.undefined
       
-      var carrierService: js.UndefOr[String] = js.native
+      var carrierService: js.UndefOr[String] = js.undefined
       
-      var flatAdjustment: js.UndefOr[Price] = js.native
+      var flatAdjustment: js.UndefOr[Price] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var originPostalCode: js.UndefOr[String] = js.native
+      var originPostalCode: js.UndefOr[String] = js.undefined
       
-      var percentageAdjustment: js.UndefOr[String] = js.native
+      var percentageAdjustment: js.UndefOr[String] = js.undefined
     }
     object CarrierRate {
       
@@ -3949,14 +3923,13 @@ object Content {
       }
     }
     
-    @js.native
     trait CarriersCarrier extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var services: js.UndefOr[js.Array[String]] = js.native
+      var services: js.UndefOr[js.Array[String]] = js.undefined
     }
     object CarriersCarrier {
       
@@ -3992,16 +3965,15 @@ object Content {
       }
     }
     
-    @js.native
     trait CustomAttribute extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CustomAttribute {
       
@@ -4040,12 +4012,11 @@ object Content {
       }
     }
     
-    @js.native
     trait CustomGroup extends StObject {
       
-      var attributes: js.UndefOr[js.Array[CustomAttribute]] = js.native
+      var attributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object CustomGroup {
       
@@ -4075,12 +4046,11 @@ object Content {
       }
     }
     
-    @js.native
     trait CustomerReturnReason extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var reasonCode: js.UndefOr[String] = js.native
+      var reasonCode: js.UndefOr[String] = js.undefined
     }
     object CustomerReturnReason {
       
@@ -4107,14 +4077,13 @@ object Content {
       }
     }
     
-    @js.native
     trait CutoffTime extends StObject {
       
-      var hour: js.UndefOr[Double] = js.native
+      var hour: js.UndefOr[Double] = js.undefined
       
-      var minute: js.UndefOr[Double] = js.native
+      var minute: js.UndefOr[Double] = js.undefined
       
-      var timezone: js.UndefOr[String] = js.native
+      var timezone: js.UndefOr[String] = js.undefined
     }
     object CutoffTime {
       
@@ -4147,32 +4116,31 @@ object Content {
       }
     }
     
-    @js.native
     trait Datafeed extends StObject {
       
-      var attributeLanguage: js.UndefOr[String] = js.native
+      var attributeLanguage: js.UndefOr[String] = js.undefined
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var fetchSchedule: js.UndefOr[DatafeedFetchSchedule] = js.native
+      var fetchSchedule: js.UndefOr[DatafeedFetchSchedule] = js.undefined
       
-      var fileName: js.UndefOr[String] = js.native
+      var fileName: js.UndefOr[String] = js.undefined
       
-      var format: js.UndefOr[DatafeedFormat] = js.native
+      var format: js.UndefOr[DatafeedFormat] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var intendedDestinations: js.UndefOr[js.Array[String]] = js.native
+      var intendedDestinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var targets: js.UndefOr[js.Array[DatafeedTarget]] = js.native
+      var targets: js.UndefOr[js.Array[DatafeedTarget]] = js.undefined
     }
     object Datafeed {
       
@@ -4265,26 +4233,25 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedFetchSchedule extends StObject {
       
-      var dayOfMonth: js.UndefOr[Double] = js.native
+      var dayOfMonth: js.UndefOr[Double] = js.undefined
       
-      var fetchUrl: js.UndefOr[String] = js.native
+      var fetchUrl: js.UndefOr[String] = js.undefined
       
-      var hour: js.UndefOr[Double] = js.native
+      var hour: js.UndefOr[Double] = js.undefined
       
-      var minuteOfHour: js.UndefOr[Double] = js.native
+      var minuteOfHour: js.UndefOr[Double] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var paused: js.UndefOr[Boolean] = js.native
+      var paused: js.UndefOr[Boolean] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
       
-      var weekday: js.UndefOr[String] = js.native
+      var weekday: js.UndefOr[String] = js.undefined
     }
     object DatafeedFetchSchedule {
       
@@ -4353,14 +4320,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedFormat extends StObject {
       
-      var columnDelimiter: js.UndefOr[String] = js.native
+      var columnDelimiter: js.UndefOr[String] = js.undefined
       
-      var fileEncoding: js.UndefOr[String] = js.native
+      var fileEncoding: js.UndefOr[String] = js.undefined
       
-      var quotingMode: js.UndefOr[String] = js.native
+      var quotingMode: js.UndefOr[String] = js.undefined
     }
     object DatafeedFormat {
       
@@ -4393,28 +4359,27 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedStatus extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var datafeedId: js.UndefOr[String] = js.native
+      var datafeedId: js.UndefOr[String] = js.undefined
       
-      var errors: js.UndefOr[js.Array[DatafeedStatusError]] = js.native
+      var errors: js.UndefOr[js.Array[DatafeedStatusError]] = js.undefined
       
-      var itemsTotal: js.UndefOr[String] = js.native
+      var itemsTotal: js.UndefOr[String] = js.undefined
       
-      var itemsValid: js.UndefOr[String] = js.native
+      var itemsValid: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
-      var lastUploadDate: js.UndefOr[String] = js.native
+      var lastUploadDate: js.UndefOr[String] = js.undefined
       
-      var processingStatus: js.UndefOr[String] = js.native
+      var processingStatus: js.UndefOr[String] = js.undefined
       
-      var warnings: js.UndefOr[js.Array[DatafeedStatusError]] = js.native
+      var warnings: js.UndefOr[js.Array[DatafeedStatusError]] = js.undefined
     }
     object DatafeedStatus {
       
@@ -4495,16 +4460,15 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedStatusError extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var count: js.UndefOr[String] = js.native
+      var count: js.UndefOr[String] = js.undefined
       
-      var examples: js.UndefOr[js.Array[DatafeedStatusExample]] = js.native
+      var examples: js.UndefOr[js.Array[DatafeedStatusExample]] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object DatafeedStatusError {
       
@@ -4546,14 +4510,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedStatusExample extends StObject {
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var lineNumber: js.UndefOr[String] = js.native
+      var lineNumber: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object DatafeedStatusExample {
       
@@ -4586,16 +4549,15 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedTarget extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var excludedDestinations: js.UndefOr[js.Array[String]] = js.native
+      var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var includedDestinations: js.UndefOr[js.Array[String]] = js.native
+      var includedDestinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
     }
     object DatafeedTarget {
       
@@ -4640,10 +4602,9 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[DatafeedsCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[DatafeedsCustomBatchRequestEntry]] = js.undefined
     }
     object DatafeedsCustomBatchRequest {
       
@@ -4667,18 +4628,17 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var datafeed: js.UndefOr[Datafeed] = js.native
+      var datafeed: js.UndefOr[Datafeed] = js.undefined
       
-      var datafeedId: js.UndefOr[String] = js.native
+      var datafeedId: js.UndefOr[String] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
     }
     object DatafeedsCustomBatchRequestEntry {
       
@@ -4723,12 +4683,11 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[DatafeedsCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[DatafeedsCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object DatafeedsCustomBatchResponse {
       
@@ -4758,14 +4717,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var datafeed: js.UndefOr[Datafeed] = js.native
+      var datafeed: js.UndefOr[Datafeed] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
     }
     object DatafeedsCustomBatchResponseEntry {
       
@@ -4798,10 +4756,9 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsFetchNowResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object DatafeedsFetchNowResponse {
       
@@ -4822,14 +4779,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[Datafeed]] = js.native
+      var resources: js.UndefOr[js.Array[Datafeed]] = js.undefined
     }
     object DatafeedsListResponse {
       
@@ -4865,10 +4821,9 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedstatusesCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchRequestEntry]] = js.undefined
     }
     object DatafeedstatusesCustomBatchRequest {
       
@@ -4892,20 +4847,19 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedstatusesCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var datafeedId: js.UndefOr[String] = js.native
+      var datafeedId: js.UndefOr[String] = js.undefined
       
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
     }
     object DatafeedstatusesCustomBatchRequestEntry {
       
@@ -4956,12 +4910,11 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedstatusesCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object DatafeedstatusesCustomBatchResponse {
       
@@ -4991,14 +4944,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedstatusesCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var datafeedStatus: js.UndefOr[DatafeedStatus] = js.native
+      var datafeedStatus: js.UndefOr[DatafeedStatus] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
     }
     object DatafeedstatusesCustomBatchResponseEntry {
       
@@ -5031,14 +4983,13 @@ object Content {
       }
     }
     
-    @js.native
     trait DatafeedstatusesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[DatafeedStatus]] = js.native
+      var resources: js.UndefOr[js.Array[DatafeedStatus]] = js.undefined
     }
     object DatafeedstatusesListResponse {
       
@@ -5074,22 +5025,21 @@ object Content {
       }
     }
     
-    @js.native
     trait DeliveryTime extends StObject {
       
-      var cutoffTime: js.UndefOr[CutoffTime] = js.native
+      var cutoffTime: js.UndefOr[CutoffTime] = js.undefined
       
-      var holidayCutoffs: js.UndefOr[js.Array[HolidayCutoff]] = js.native
+      var holidayCutoffs: js.UndefOr[js.Array[HolidayCutoff]] = js.undefined
       
-      var maxHandlingTimeInDays: js.UndefOr[Double] = js.native
+      var maxHandlingTimeInDays: js.UndefOr[Double] = js.undefined
       
-      var maxTransitTimeInDays: js.UndefOr[Double] = js.native
+      var maxTransitTimeInDays: js.UndefOr[Double] = js.undefined
       
-      var minHandlingTimeInDays: js.UndefOr[Double] = js.native
+      var minHandlingTimeInDays: js.UndefOr[Double] = js.undefined
       
-      var minTransitTimeInDays: js.UndefOr[Double] = js.native
+      var minTransitTimeInDays: js.UndefOr[Double] = js.undefined
       
-      var transitTimeTable: js.UndefOr[TransitTable] = js.native
+      var transitTimeTable: js.UndefOr[TransitTable] = js.undefined
     }
     object DeliveryTime {
       
@@ -5149,14 +5099,13 @@ object Content {
       }
     }
     
-    @js.native
     trait Error extends StObject {
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object Error {
       
@@ -5189,14 +5138,13 @@ object Content {
       }
     }
     
-    @js.native
     trait Errors extends StObject {
       
-      var code: js.UndefOr[Double] = js.native
+      var code: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[js.Array[Error]] = js.native
+      var errors: js.UndefOr[js.Array[Error]] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object Errors {
       
@@ -5232,12 +5180,11 @@ object Content {
       }
     }
     
-    @js.native
     trait GmbAccounts extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.native
+      var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.undefined
     }
     object GmbAccounts {
       
@@ -5267,16 +5214,15 @@ object Content {
       }
     }
     
-    @js.native
     trait GmbAccountsGmbAccount extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var listingCount: js.UndefOr[String] = js.native
+      var listingCount: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object GmbAccountsGmbAccount {
       
@@ -5315,18 +5261,17 @@ object Content {
       }
     }
     
-    @js.native
     trait Headers extends StObject {
       
-      var locations: js.UndefOr[js.Array[LocationIdSet]] = js.native
+      var locations: js.UndefOr[js.Array[LocationIdSet]] = js.undefined
       
-      var numberOfItems: js.UndefOr[js.Array[String]] = js.native
+      var numberOfItems: js.UndefOr[js.Array[String]] = js.undefined
       
-      var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.native
+      var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var prices: js.UndefOr[js.Array[Price]] = js.native
+      var prices: js.UndefOr[js.Array[Price]] = js.undefined
       
-      var weights: js.UndefOr[js.Array[Weight]] = js.native
+      var weights: js.UndefOr[js.Array[Weight]] = js.undefined
     }
     object Headers {
       
@@ -5386,18 +5331,17 @@ object Content {
       }
     }
     
-    @js.native
     trait HolidayCutoff extends StObject {
       
-      var deadlineDate: js.UndefOr[String] = js.native
+      var deadlineDate: js.UndefOr[String] = js.undefined
       
-      var deadlineHour: js.UndefOr[Double] = js.native
+      var deadlineHour: js.UndefOr[Double] = js.undefined
       
-      var deadlineTimezone: js.UndefOr[String] = js.native
+      var deadlineTimezone: js.UndefOr[String] = js.undefined
       
-      var holidayId: js.UndefOr[String] = js.native
+      var holidayId: js.UndefOr[String] = js.undefined
       
-      var visibleFromDate: js.UndefOr[String] = js.native
+      var visibleFromDate: js.UndefOr[String] = js.undefined
     }
     object HolidayCutoff {
       
@@ -5442,20 +5386,19 @@ object Content {
       }
     }
     
-    @js.native
     trait HolidaysHoliday extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var date: js.UndefOr[String] = js.native
+      var date: js.UndefOr[String] = js.undefined
       
-      var deliveryGuaranteeDate: js.UndefOr[String] = js.native
+      var deliveryGuaranteeDate: js.UndefOr[String] = js.undefined
       
-      var deliveryGuaranteeHour: js.UndefOr[String] = js.native
+      var deliveryGuaranteeHour: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object HolidaysHoliday {
       
@@ -5506,12 +5449,11 @@ object Content {
       }
     }
     
-    @js.native
     trait Installment extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var months: js.UndefOr[String] = js.native
+      var months: js.UndefOr[String] = js.undefined
     }
     object Installment {
       
@@ -5538,40 +5480,39 @@ object Content {
       }
     }
     
-    @js.native
     trait Inventory extends StObject {
       
-      var availability: js.UndefOr[String] = js.native
+      var availability: js.UndefOr[String] = js.undefined
       
-      var customLabel0: js.UndefOr[String] = js.native
+      var customLabel0: js.UndefOr[String] = js.undefined
       
-      var customLabel1: js.UndefOr[String] = js.native
+      var customLabel1: js.UndefOr[String] = js.undefined
       
-      var customLabel2: js.UndefOr[String] = js.native
+      var customLabel2: js.UndefOr[String] = js.undefined
       
-      var customLabel3: js.UndefOr[String] = js.native
+      var customLabel3: js.UndefOr[String] = js.undefined
       
-      var customLabel4: js.UndefOr[String] = js.native
+      var customLabel4: js.UndefOr[String] = js.undefined
       
-      var installment: js.UndefOr[Installment] = js.native
+      var installment: js.UndefOr[Installment] = js.undefined
       
-      var instoreProductLocation: js.UndefOr[String] = js.native
+      var instoreProductLocation: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.native
+      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.undefined
       
-      var pickup: js.UndefOr[InventoryPickup] = js.native
+      var pickup: js.UndefOr[InventoryPickup] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var salePrice: js.UndefOr[Price] = js.native
+      var salePrice: js.UndefOr[Price] = js.undefined
       
-      var salePriceEffectiveDate: js.UndefOr[String] = js.native
+      var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
       
-      var sellOnGoogleQuantity: js.UndefOr[Double] = js.native
+      var sellOnGoogleQuantity: js.UndefOr[Double] = js.undefined
     }
     object Inventory {
       
@@ -5682,10 +5623,9 @@ object Content {
       }
     }
     
-    @js.native
     trait InventoryCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[InventoryCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[InventoryCustomBatchRequestEntry]] = js.undefined
     }
     object InventoryCustomBatchRequest {
       
@@ -5709,18 +5649,17 @@ object Content {
       }
     }
     
-    @js.native
     trait InventoryCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var inventory: js.UndefOr[Inventory] = js.native
+      var inventory: js.UndefOr[Inventory] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
     }
     object InventoryCustomBatchRequestEntry {
       
@@ -5765,12 +5704,11 @@ object Content {
       }
     }
     
-    @js.native
     trait InventoryCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[InventoryCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[InventoryCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object InventoryCustomBatchResponse {
       
@@ -5800,14 +5738,13 @@ object Content {
       }
     }
     
-    @js.native
     trait InventoryCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object InventoryCustomBatchResponseEntry {
       
@@ -5840,12 +5777,11 @@ object Content {
       }
     }
     
-    @js.native
     trait InventoryPickup extends StObject {
       
-      var pickupMethod: js.UndefOr[String] = js.native
+      var pickupMethod: js.UndefOr[String] = js.undefined
       
-      var pickupSla: js.UndefOr[String] = js.native
+      var pickupSla: js.UndefOr[String] = js.undefined
     }
     object InventoryPickup {
       
@@ -5872,38 +5808,37 @@ object Content {
       }
     }
     
-    @js.native
     trait InventorySetRequest extends StObject {
       
-      var availability: js.UndefOr[String] = js.native
+      var availability: js.UndefOr[String] = js.undefined
       
-      var customLabel0: js.UndefOr[String] = js.native
+      var customLabel0: js.UndefOr[String] = js.undefined
       
-      var customLabel1: js.UndefOr[String] = js.native
+      var customLabel1: js.UndefOr[String] = js.undefined
       
-      var customLabel2: js.UndefOr[String] = js.native
+      var customLabel2: js.UndefOr[String] = js.undefined
       
-      var customLabel3: js.UndefOr[String] = js.native
+      var customLabel3: js.UndefOr[String] = js.undefined
       
-      var customLabel4: js.UndefOr[String] = js.native
+      var customLabel4: js.UndefOr[String] = js.undefined
       
-      var installment: js.UndefOr[Installment] = js.native
+      var installment: js.UndefOr[Installment] = js.undefined
       
-      var instoreProductLocation: js.UndefOr[String] = js.native
+      var instoreProductLocation: js.UndefOr[String] = js.undefined
       
-      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.native
+      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.undefined
       
-      var pickup: js.UndefOr[InventoryPickup] = js.native
+      var pickup: js.UndefOr[InventoryPickup] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var salePrice: js.UndefOr[Price] = js.native
+      var salePrice: js.UndefOr[Price] = js.undefined
       
-      var salePriceEffectiveDate: js.UndefOr[String] = js.native
+      var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
       
-      var sellOnGoogleQuantity: js.UndefOr[Double] = js.native
+      var sellOnGoogleQuantity: js.UndefOr[Double] = js.undefined
     }
     object InventorySetRequest {
       
@@ -6008,10 +5943,9 @@ object Content {
       }
     }
     
-    @js.native
     trait InventorySetResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object InventorySetResponse {
       
@@ -6032,20 +5966,19 @@ object Content {
       }
     }
     
-    @js.native
     trait InvoiceSummary extends StObject {
       
-      var additionalChargeSummaries: js.UndefOr[js.Array[InvoiceSummaryAdditionalChargeSummary]] = js.native
+      var additionalChargeSummaries: js.UndefOr[js.Array[InvoiceSummaryAdditionalChargeSummary]] = js.undefined
       
-      var customerBalance: js.UndefOr[Amount] = js.native
+      var customerBalance: js.UndefOr[Amount] = js.undefined
       
-      var googleBalance: js.UndefOr[Amount] = js.native
+      var googleBalance: js.UndefOr[Amount] = js.undefined
       
-      var merchantBalance: js.UndefOr[Amount] = js.native
+      var merchantBalance: js.UndefOr[Amount] = js.undefined
       
-      var productTotal: js.UndefOr[Amount] = js.native
+      var productTotal: js.UndefOr[Amount] = js.undefined
       
-      var promotionSummaries: js.UndefOr[js.Array[Promotion]] = js.native
+      var promotionSummaries: js.UndefOr[js.Array[Promotion]] = js.undefined
     }
     object InvoiceSummary {
       
@@ -6102,12 +6035,11 @@ object Content {
       }
     }
     
-    @js.native
     trait InvoiceSummaryAdditionalChargeSummary extends StObject {
       
-      var totalAmount: js.UndefOr[Amount] = js.native
+      var totalAmount: js.UndefOr[Amount] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object InvoiceSummaryAdditionalChargeSummary {
       
@@ -6134,12 +6066,11 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaAboutPageSettings extends StObject {
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object LiaAboutPageSettings {
       
@@ -6166,22 +6097,21 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaCountrySettings extends StObject {
       
-      var about: js.UndefOr[LiaAboutPageSettings] = js.native
+      var about: js.UndefOr[LiaAboutPageSettings] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.native
+      var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.undefined
       
-      var inventory: js.UndefOr[LiaInventorySettings] = js.native
+      var inventory: js.UndefOr[LiaInventorySettings] = js.undefined
       
-      var onDisplayToOrder: js.UndefOr[LiaOnDisplayToOrderSettings] = js.native
+      var onDisplayToOrder: js.UndefOr[LiaOnDisplayToOrderSettings] = js.undefined
       
-      var posDataProvider: js.UndefOr[LiaPosDataProvider] = js.native
+      var posDataProvider: js.UndefOr[LiaPosDataProvider] = js.undefined
       
-      var storePickupActive: js.UndefOr[Boolean] = js.native
+      var storePickupActive: js.UndefOr[Boolean] = js.undefined
     }
     object LiaCountrySettings {
       
@@ -6238,16 +6168,15 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaInventorySettings extends StObject {
       
-      var inventoryVerificationContactEmail: js.UndefOr[String] = js.native
+      var inventoryVerificationContactEmail: js.UndefOr[String] = js.undefined
       
-      var inventoryVerificationContactName: js.UndefOr[String] = js.native
+      var inventoryVerificationContactName: js.UndefOr[String] = js.undefined
       
-      var inventoryVerificationContactStatus: js.UndefOr[String] = js.native
+      var inventoryVerificationContactStatus: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object LiaInventorySettings {
       
@@ -6286,12 +6215,11 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaOnDisplayToOrderSettings extends StObject {
       
-      var shippingCostPolicyUrl: js.UndefOr[String] = js.native
+      var shippingCostPolicyUrl: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object LiaOnDisplayToOrderSettings {
       
@@ -6318,12 +6246,11 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaPosDataProvider extends StObject {
       
-      var posDataProviderId: js.UndefOr[String] = js.native
+      var posDataProviderId: js.UndefOr[String] = js.undefined
       
-      var posExternalAccountId: js.UndefOr[String] = js.native
+      var posExternalAccountId: js.UndefOr[String] = js.undefined
     }
     object LiaPosDataProvider {
       
@@ -6350,14 +6277,13 @@ object Content {
       }
     }
     
-    @js.native
     trait LiaSettings extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var countrySettings: js.UndefOr[js.Array[LiaCountrySettings]] = js.native
+      var countrySettings: js.UndefOr[js.Array[LiaCountrySettings]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiaSettings {
       
@@ -6393,10 +6319,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[LiasettingsCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[LiasettingsCustomBatchRequestEntry]] = js.undefined
     }
     object LiasettingsCustomBatchRequest {
       
@@ -6420,30 +6345,29 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsCustomBatchRequestEntry extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var contactEmail: js.UndefOr[String] = js.native
+      var contactEmail: js.UndefOr[String] = js.undefined
       
-      var contactName: js.UndefOr[String] = js.native
+      var contactName: js.UndefOr[String] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var gmbEmail: js.UndefOr[String] = js.native
+      var gmbEmail: js.UndefOr[String] = js.undefined
       
-      var liaSettings: js.UndefOr[LiaSettings] = js.native
+      var liaSettings: js.UndefOr[LiaSettings] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var posDataProviderId: js.UndefOr[String] = js.native
+      var posDataProviderId: js.UndefOr[String] = js.undefined
       
-      var posExternalAccountId: js.UndefOr[String] = js.native
+      var posExternalAccountId: js.UndefOr[String] = js.undefined
     }
     object LiasettingsCustomBatchRequestEntry {
       
@@ -6524,12 +6448,11 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[LiasettingsCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[LiasettingsCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsCustomBatchResponse {
       
@@ -6559,20 +6482,19 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var gmbAccounts: js.UndefOr[GmbAccounts] = js.native
+      var gmbAccounts: js.UndefOr[GmbAccounts] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var liaSettings: js.UndefOr[LiaSettings] = js.native
+      var liaSettings: js.UndefOr[LiaSettings] = js.undefined
       
-      var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.native
+      var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.undefined
     }
     object LiasettingsCustomBatchResponseEntry {
       
@@ -6626,14 +6548,13 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsGetAccessibleGmbAccountsResponse extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.native
+      var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsGetAccessibleGmbAccountsResponse {
       
@@ -6669,12 +6590,11 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsListPosDataProvidersResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.native
+      var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.undefined
     }
     object LiasettingsListPosDataProvidersResponse {
       
@@ -6704,14 +6624,13 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[LiaSettings]] = js.native
+      var resources: js.UndefOr[js.Array[LiaSettings]] = js.undefined
     }
     object LiasettingsListResponse {
       
@@ -6747,10 +6666,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsRequestGmbAccessResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsRequestGmbAccessResponse {
       
@@ -6771,10 +6689,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsRequestInventoryVerificationResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsRequestInventoryVerificationResponse {
       
@@ -6795,10 +6712,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsSetInventoryVerificationContactResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsSetInventoryVerificationContactResponse {
       
@@ -6819,10 +6735,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LiasettingsSetPosDataProviderResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LiasettingsSetPosDataProviderResponse {
       
@@ -6843,10 +6758,9 @@ object Content {
       }
     }
     
-    @js.native
     trait LocationIdSet extends StObject {
       
-      var locationIds: js.UndefOr[js.Array[String]] = js.native
+      var locationIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object LocationIdSet {
       
@@ -6870,14 +6784,13 @@ object Content {
       }
     }
     
-    @js.native
     trait LoyaltyPoints extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var pointsValue: js.UndefOr[String] = js.native
+      var pointsValue: js.UndefOr[String] = js.undefined
       
-      var ratio: js.UndefOr[Double] = js.native
+      var ratio: js.UndefOr[Double] = js.undefined
     }
     object LoyaltyPoints {
       
@@ -6910,20 +6823,19 @@ object Content {
       }
     }
     
-    @js.native
     trait MerchantOrderReturn extends StObject {
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var merchantOrderId: js.UndefOr[String] = js.native
+      var merchantOrderId: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
       
-      var orderReturnId: js.UndefOr[String] = js.native
+      var orderReturnId: js.UndefOr[String] = js.undefined
       
-      var returnItems: js.UndefOr[js.Array[MerchantOrderReturnItem]] = js.native
+      var returnItems: js.UndefOr[js.Array[MerchantOrderReturnItem]] = js.undefined
       
-      var returnShipments: js.UndefOr[js.Array[ReturnShipment]] = js.native
+      var returnShipments: js.UndefOr[js.Array[ReturnShipment]] = js.undefined
     }
     object MerchantOrderReturn {
       
@@ -6980,20 +6892,19 @@ object Content {
       }
     }
     
-    @js.native
     trait MerchantOrderReturnItem extends StObject {
       
-      var customerReturnReason: js.UndefOr[CustomerReturnReason] = js.native
+      var customerReturnReason: js.UndefOr[CustomerReturnReason] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var merchantReturnReason: js.UndefOr[RefundReason] = js.native
+      var merchantReturnReason: js.UndefOr[RefundReason] = js.undefined
       
-      var product: js.UndefOr[OrderLineItemProduct] = js.native
+      var product: js.UndefOr[OrderLineItemProduct] = js.undefined
       
-      var returnShipmentIds: js.UndefOr[js.Array[String]] = js.native
+      var returnShipmentIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
     }
     object MerchantOrderReturnItem {
       
@@ -7047,50 +6958,49 @@ object Content {
       }
     }
     
-    @js.native
     trait Order extends StObject {
       
-      var acknowledged: js.UndefOr[Boolean] = js.native
+      var acknowledged: js.UndefOr[Boolean] = js.undefined
       
-      var channelType: js.UndefOr[String] = js.native
+      var channelType: js.UndefOr[String] = js.undefined
       
-      var customer: js.UndefOr[OrderCustomer] = js.native
+      var customer: js.UndefOr[OrderCustomer] = js.undefined
       
-      var deliveryDetails: js.UndefOr[OrderDeliveryDetails] = js.native
+      var deliveryDetails: js.UndefOr[OrderDeliveryDetails] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lineItems: js.UndefOr[js.Array[OrderLineItem]] = js.native
+      var lineItems: js.UndefOr[js.Array[OrderLineItem]] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var merchantOrderId: js.UndefOr[String] = js.native
+      var merchantOrderId: js.UndefOr[String] = js.undefined
       
-      var netAmount: js.UndefOr[Price] = js.native
+      var netAmount: js.UndefOr[Price] = js.undefined
       
-      var paymentMethod: js.UndefOr[OrderPaymentMethod] = js.native
+      var paymentMethod: js.UndefOr[OrderPaymentMethod] = js.undefined
       
-      var paymentStatus: js.UndefOr[String] = js.native
+      var paymentStatus: js.UndefOr[String] = js.undefined
       
-      var placedDate: js.UndefOr[String] = js.native
+      var placedDate: js.UndefOr[String] = js.undefined
       
-      var promotions: js.UndefOr[js.Array[OrderLegacyPromotion]] = js.native
+      var promotions: js.UndefOr[js.Array[OrderLegacyPromotion]] = js.undefined
       
-      var refunds: js.UndefOr[js.Array[OrderRefund]] = js.native
+      var refunds: js.UndefOr[js.Array[OrderRefund]] = js.undefined
       
-      var shipments: js.UndefOr[js.Array[OrderShipment]] = js.native
+      var shipments: js.UndefOr[js.Array[OrderShipment]] = js.undefined
       
-      var shippingCost: js.UndefOr[Price] = js.native
+      var shippingCost: js.UndefOr[Price] = js.undefined
       
-      var shippingCostTax: js.UndefOr[Price] = js.native
+      var shippingCostTax: js.UndefOr[Price] = js.undefined
       
-      var shippingOption: js.UndefOr[String] = js.native
+      var shippingOption: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var taxCollector: js.UndefOr[String] = js.native
+      var taxCollector: js.UndefOr[String] = js.undefined
     }
     object Order {
       
@@ -7243,24 +7153,23 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderAddress extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var fullAddress: js.UndefOr[js.Array[String]] = js.native
+      var fullAddress: js.UndefOr[js.Array[String]] = js.undefined
       
-      var isPostOfficeBox: js.UndefOr[Boolean] = js.native
+      var isPostOfficeBox: js.UndefOr[Boolean] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var recipientName: js.UndefOr[String] = js.native
+      var recipientName: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var streetAddress: js.UndefOr[js.Array[String]] = js.native
+      var streetAddress: js.UndefOr[js.Array[String]] = js.undefined
     }
     object OrderAddress {
       
@@ -7329,18 +7238,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderCancellation extends StObject {
       
-      var actor: js.UndefOr[String] = js.native
+      var actor: js.UndefOr[String] = js.undefined
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrderCancellation {
       
@@ -7385,16 +7293,15 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderCustomer extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var explicitMarketingPreference: js.UndefOr[Boolean] = js.native
+      var explicitMarketingPreference: js.UndefOr[Boolean] = js.undefined
       
-      var fullName: js.UndefOr[String] = js.native
+      var fullName: js.UndefOr[String] = js.undefined
       
-      var marketingRightsInfo: js.UndefOr[OrderCustomerMarketingRightsInfo] = js.native
+      var marketingRightsInfo: js.UndefOr[OrderCustomerMarketingRightsInfo] = js.undefined
     }
     object OrderCustomer {
       
@@ -7433,14 +7340,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderCustomerMarketingRightsInfo extends StObject {
       
-      var explicitMarketingPreference: js.UndefOr[String] = js.native
+      var explicitMarketingPreference: js.UndefOr[String] = js.undefined
       
-      var lastUpdatedTimestamp: js.UndefOr[String] = js.native
+      var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
       
-      var marketingEmailAddress: js.UndefOr[String] = js.native
+      var marketingEmailAddress: js.UndefOr[String] = js.undefined
     }
     object OrderCustomerMarketingRightsInfo {
       
@@ -7473,12 +7379,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderDeliveryDetails extends StObject {
       
-      var address: js.UndefOr[OrderAddress] = js.native
+      var address: js.UndefOr[OrderAddress] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
     }
     object OrderDeliveryDetails {
       
@@ -7505,22 +7410,21 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLegacyPromotion extends StObject {
       
-      var benefits: js.UndefOr[js.Array[OrderLegacyPromotionBenefit]] = js.native
+      var benefits: js.UndefOr[js.Array[OrderLegacyPromotionBenefit]] = js.undefined
       
-      var effectiveDates: js.UndefOr[String] = js.native
+      var effectiveDates: js.UndefOr[String] = js.undefined
       
-      var genericRedemptionCode: js.UndefOr[String] = js.native
+      var genericRedemptionCode: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var longTitle: js.UndefOr[String] = js.native
+      var longTitle: js.UndefOr[String] = js.undefined
       
-      var productApplicability: js.UndefOr[String] = js.native
+      var productApplicability: js.UndefOr[String] = js.undefined
       
-      var redemptionChannel: js.UndefOr[String] = js.native
+      var redemptionChannel: js.UndefOr[String] = js.undefined
     }
     object OrderLegacyPromotion {
       
@@ -7580,18 +7484,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLegacyPromotionBenefit extends StObject {
       
-      var discount: js.UndefOr[Price] = js.native
+      var discount: js.UndefOr[Price] = js.undefined
       
-      var offerIds: js.UndefOr[js.Array[String]] = js.native
+      var offerIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var subType: js.UndefOr[String] = js.native
+      var subType: js.UndefOr[String] = js.undefined
       
-      var taxImpact: js.UndefOr[Price] = js.native
+      var taxImpact: js.UndefOr[Price] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object OrderLegacyPromotionBenefit {
       
@@ -7639,38 +7542,37 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItem extends StObject {
       
-      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.native
+      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.undefined
       
-      var cancellations: js.UndefOr[js.Array[OrderCancellation]] = js.native
+      var cancellations: js.UndefOr[js.Array[OrderCancellation]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var product: js.UndefOr[OrderLineItemProduct] = js.native
+      var product: js.UndefOr[OrderLineItemProduct] = js.undefined
       
-      var quantityCanceled: js.UndefOr[Double] = js.native
+      var quantityCanceled: js.UndefOr[Double] = js.undefined
       
-      var quantityDelivered: js.UndefOr[Double] = js.native
+      var quantityDelivered: js.UndefOr[Double] = js.undefined
       
-      var quantityOrdered: js.UndefOr[Double] = js.native
+      var quantityOrdered: js.UndefOr[Double] = js.undefined
       
-      var quantityPending: js.UndefOr[Double] = js.native
+      var quantityPending: js.UndefOr[Double] = js.undefined
       
-      var quantityReturned: js.UndefOr[Double] = js.native
+      var quantityReturned: js.UndefOr[Double] = js.undefined
       
-      var quantityShipped: js.UndefOr[Double] = js.native
+      var quantityShipped: js.UndefOr[Double] = js.undefined
       
-      var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.native
+      var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.undefined
       
-      var returns: js.UndefOr[js.Array[OrderReturn]] = js.native
+      var returns: js.UndefOr[js.Array[OrderReturn]] = js.undefined
       
-      var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.native
+      var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.undefined
       
-      var tax: js.UndefOr[Price] = js.native
+      var tax: js.UndefOr[Price] = js.undefined
     }
     object OrderLineItem {
       
@@ -7784,40 +7686,39 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemProduct extends StObject {
       
-      var brand: js.UndefOr[String] = js.native
+      var brand: js.UndefOr[String] = js.undefined
       
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
-      var condition: js.UndefOr[String] = js.native
+      var condition: js.UndefOr[String] = js.undefined
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var fees: js.UndefOr[js.Array[OrderLineItemProductFee]] = js.native
+      var fees: js.UndefOr[js.Array[OrderLineItemProductFee]] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var imageLink: js.UndefOr[String] = js.native
+      var imageLink: js.UndefOr[String] = js.undefined
       
-      var itemGroupId: js.UndefOr[String] = js.native
+      var itemGroupId: js.UndefOr[String] = js.undefined
       
-      var mpn: js.UndefOr[String] = js.native
+      var mpn: js.UndefOr[String] = js.undefined
       
-      var offerId: js.UndefOr[String] = js.native
+      var offerId: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var shownImage: js.UndefOr[String] = js.native
+      var shownImage: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.native
+      var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.undefined
     }
     object OrderLineItemProduct {
       
@@ -7934,12 +7835,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemProductFee extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object OrderLineItemProductFee {
       
@@ -7966,12 +7866,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemProductVariantAttribute extends StObject {
       
-      var dimension: js.UndefOr[String] = js.native
+      var dimension: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object OrderLineItemProductVariantAttribute {
       
@@ -7998,14 +7897,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemReturnInfo extends StObject {
       
-      var daysToReturn: js.UndefOr[Double] = js.native
+      var daysToReturn: js.UndefOr[Double] = js.undefined
       
-      var isReturnable: js.UndefOr[Boolean] = js.native
+      var isReturnable: js.UndefOr[Boolean] = js.undefined
       
-      var policyUrl: js.UndefOr[String] = js.native
+      var policyUrl: js.UndefOr[String] = js.undefined
     }
     object OrderLineItemReturnInfo {
       
@@ -8038,14 +7936,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemShippingDetails extends StObject {
       
-      var deliverByDate: js.UndefOr[String] = js.native
+      var deliverByDate: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[OrderLineItemShippingDetailsMethod] = js.native
+      var method: js.UndefOr[OrderLineItemShippingDetailsMethod] = js.undefined
       
-      var shipByDate: js.UndefOr[String] = js.native
+      var shipByDate: js.UndefOr[String] = js.undefined
     }
     object OrderLineItemShippingDetails {
       
@@ -8078,16 +7975,15 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderLineItemShippingDetailsMethod extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var maxDaysInTransit: js.UndefOr[Double] = js.native
+      var maxDaysInTransit: js.UndefOr[Double] = js.undefined
       
-      var methodName: js.UndefOr[String] = js.native
+      var methodName: js.UndefOr[String] = js.undefined
       
-      var minDaysInTransit: js.UndefOr[Double] = js.native
+      var minDaysInTransit: js.UndefOr[Double] = js.undefined
     }
     object OrderLineItemShippingDetailsMethod {
       
@@ -8126,12 +8022,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderMerchantProvidedAnnotation extends StObject {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object OrderMerchantProvidedAnnotation {
       
@@ -8158,20 +8053,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderPaymentMethod extends StObject {
       
-      var billingAddress: js.UndefOr[OrderAddress] = js.native
+      var billingAddress: js.UndefOr[OrderAddress] = js.undefined
       
-      var expirationMonth: js.UndefOr[Double] = js.native
+      var expirationMonth: js.UndefOr[Double] = js.undefined
       
-      var expirationYear: js.UndefOr[Double] = js.native
+      var expirationYear: js.UndefOr[Double] = js.undefined
       
-      var lastFourDigits: js.UndefOr[String] = js.native
+      var lastFourDigits: js.UndefOr[String] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object OrderPaymentMethod {
       
@@ -8222,18 +8116,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderRefund extends StObject {
       
-      var actor: js.UndefOr[String] = js.native
+      var actor: js.UndefOr[String] = js.undefined
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrderRefund {
       
@@ -8278,18 +8171,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderReportDisbursement extends StObject {
       
-      var disbursementAmount: js.UndefOr[Price] = js.native
+      var disbursementAmount: js.UndefOr[Price] = js.undefined
       
-      var disbursementCreationDate: js.UndefOr[String] = js.native
+      var disbursementCreationDate: js.UndefOr[String] = js.undefined
       
-      var disbursementDate: js.UndefOr[String] = js.native
+      var disbursementDate: js.UndefOr[String] = js.undefined
       
-      var disbursementId: js.UndefOr[String] = js.native
+      var disbursementId: js.UndefOr[String] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
     }
     object OrderReportDisbursement {
       
@@ -8334,28 +8226,27 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderReportTransaction extends StObject {
       
-      var disbursementAmount: js.UndefOr[Price] = js.native
+      var disbursementAmount: js.UndefOr[Price] = js.undefined
       
-      var disbursementCreationDate: js.UndefOr[String] = js.native
+      var disbursementCreationDate: js.UndefOr[String] = js.undefined
       
-      var disbursementDate: js.UndefOr[String] = js.native
+      var disbursementDate: js.UndefOr[String] = js.undefined
       
-      var disbursementId: js.UndefOr[String] = js.native
+      var disbursementId: js.UndefOr[String] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var merchantOrderId: js.UndefOr[String] = js.native
+      var merchantOrderId: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
       
-      var productAmount: js.UndefOr[Amount] = js.native
+      var productAmount: js.UndefOr[Amount] = js.undefined
       
-      var productAmountWithRemittedTax: js.UndefOr[ProductAmount] = js.native
+      var productAmountWithRemittedTax: js.UndefOr[ProductAmount] = js.undefined
       
-      var transactionDate: js.UndefOr[String] = js.native
+      var transactionDate: js.UndefOr[String] = js.undefined
     }
     object OrderReportTransaction {
       
@@ -8430,18 +8321,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderReturn extends StObject {
       
-      var actor: js.UndefOr[String] = js.native
+      var actor: js.UndefOr[String] = js.undefined
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrderReturn {
       
@@ -8486,22 +8376,21 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderShipment extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var deliveryDate: js.UndefOr[String] = js.native
+      var deliveryDate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrderShipment {
       
@@ -8561,14 +8450,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderShipmentLineItemShipment extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
     }
     object OrderShipmentLineItemShipment {
       
@@ -8601,18 +8489,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCreateChargeInvoiceRequest extends StObject {
       
-      var invoiceId: js.UndefOr[String] = js.native
+      var invoiceId: js.UndefOr[String] = js.undefined
       
-      var invoiceSummary: js.UndefOr[InvoiceSummary] = js.native
+      var invoiceSummary: js.UndefOr[InvoiceSummary] = js.undefined
       
-      var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.native
+      var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var shipmentGroupId: js.UndefOr[String] = js.native
+      var shipmentGroupId: js.UndefOr[String] = js.undefined
     }
     object OrderinvoicesCreateChargeInvoiceRequest {
       
@@ -8660,12 +8547,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCreateChargeInvoiceResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderinvoicesCreateChargeInvoiceResponse {
       
@@ -8692,18 +8578,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCreateRefundInvoiceRequest extends StObject {
       
-      var invoiceId: js.UndefOr[String] = js.native
+      var invoiceId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var refundOnlyOption: js.UndefOr[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption] = js.native
+      var refundOnlyOption: js.UndefOr[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption] = js.undefined
       
-      var returnOption: js.UndefOr[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption] = js.native
+      var returnOption: js.UndefOr[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption] = js.undefined
       
-      var shipmentInvoices: js.UndefOr[js.Array[ShipmentInvoice]] = js.native
+      var shipmentInvoices: js.UndefOr[js.Array[ShipmentInvoice]] = js.undefined
     }
     object OrderinvoicesCreateRefundInvoiceRequest {
       
@@ -8751,12 +8636,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCreateRefundInvoiceResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderinvoicesCreateRefundInvoiceResponse {
       
@@ -8783,12 +8667,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption {
       
@@ -8815,12 +8698,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption {
       
@@ -8847,12 +8729,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyAuthApprovedRequest extends StObject {
       
-      var authAmountPretax: js.UndefOr[Price] = js.native
+      var authAmountPretax: js.UndefOr[Price] = js.undefined
       
-      var authAmountTax: js.UndefOr[Price] = js.native
+      var authAmountTax: js.UndefOr[Price] = js.undefined
     }
     object OrderpaymentsNotifyAuthApprovedRequest {
       
@@ -8879,12 +8760,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyAuthApprovedResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyAuthApprovedResponse {
       
@@ -8911,10 +8791,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyAuthDeclinedRequest extends StObject {
       
-      var declineReason: js.UndefOr[String] = js.native
+      var declineReason: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyAuthDeclinedRequest {
       
@@ -8935,12 +8814,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyAuthDeclinedResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyAuthDeclinedResponse {
       
@@ -8967,14 +8845,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyChargeRequest extends StObject {
       
-      var chargeState: js.UndefOr[String] = js.native
+      var chargeState: js.UndefOr[String] = js.undefined
       
-      var invoiceId: js.UndefOr[String] = js.native
+      var invoiceId: js.UndefOr[String] = js.undefined
       
-      var invoiceIds: js.UndefOr[js.Array[String]] = js.native
+      var invoiceIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object OrderpaymentsNotifyChargeRequest {
       
@@ -9010,12 +8887,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyChargeResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyChargeResponse {
       
@@ -9042,14 +8918,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyRefundRequest extends StObject {
       
-      var invoiceId: js.UndefOr[String] = js.native
+      var invoiceId: js.UndefOr[String] = js.undefined
       
-      var invoiceIds: js.UndefOr[js.Array[String]] = js.native
+      var invoiceIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var refundState: js.UndefOr[String] = js.native
+      var refundState: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyRefundRequest {
       
@@ -9085,12 +8960,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderpaymentsNotifyRefundResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrderpaymentsNotifyRefundResponse {
       
@@ -9117,14 +8991,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderreportsListDisbursementsResponse extends StObject {
       
-      var disbursements: js.UndefOr[js.Array[OrderReportDisbursement]] = js.native
+      var disbursements: js.UndefOr[js.Array[OrderReportDisbursement]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object OrderreportsListDisbursementsResponse {
       
@@ -9160,14 +9033,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderreportsListTransactionsResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var transactions: js.UndefOr[js.Array[OrderReportTransaction]] = js.native
+      var transactions: js.UndefOr[js.Array[OrderReportTransaction]] = js.undefined
     }
     object OrderreportsListTransactionsResponse {
       
@@ -9203,14 +9075,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrderreturnsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[MerchantOrderReturn]] = js.native
+      var resources: js.UndefOr[js.Array[MerchantOrderReturn]] = js.undefined
     }
     object OrderreturnsListResponse {
       
@@ -9246,10 +9117,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersAcknowledgeRequest extends StObject {
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
     }
     object OrdersAcknowledgeRequest {
       
@@ -9270,12 +9140,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersAcknowledgeResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersAcknowledgeResponse {
       
@@ -9302,10 +9171,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersAdvanceTestOrderResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersAdvanceTestOrderResponse {
       
@@ -9326,26 +9194,25 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelLineItemRequest extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelLineItemRequest {
       
@@ -9414,12 +9281,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelLineItemResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelLineItemResponse {
       
@@ -9446,14 +9312,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelRequest extends StObject {
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelRequest {
       
@@ -9486,12 +9351,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelResponse {
       
@@ -9518,10 +9382,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelTestOrderByCustomerRequest extends StObject {
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelTestOrderByCustomerRequest {
       
@@ -9542,10 +9405,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCancelTestOrderByCustomerResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersCancelTestOrderByCustomerResponse {
       
@@ -9566,14 +9428,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCreateTestOrderRequest extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var templateName: js.UndefOr[String] = js.native
+      var templateName: js.UndefOr[String] = js.undefined
       
-      var testOrder: js.UndefOr[TestOrder] = js.native
+      var testOrder: js.UndefOr[TestOrder] = js.undefined
     }
     object OrdersCreateTestOrderRequest {
       
@@ -9606,12 +9467,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCreateTestOrderResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
     }
     object OrdersCreateTestOrderResponse {
       
@@ -9638,10 +9498,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCreateTestReturnRequest extends StObject {
       
-      var items: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]] = js.native
+      var items: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]] = js.undefined
     }
     object OrdersCreateTestReturnRequest {
       
@@ -9665,12 +9524,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCreateTestReturnResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var returnId: js.UndefOr[String] = js.native
+      var returnId: js.UndefOr[String] = js.undefined
     }
     object OrdersCreateTestReturnResponse {
       
@@ -9697,10 +9555,9 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[OrdersCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[OrdersCustomBatchRequestEntry]] = js.undefined
     }
     object OrdersCustomBatchRequest {
       
@@ -9724,42 +9581,41 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var cancel: js.UndefOr[OrdersCustomBatchRequestEntryCancel] = js.native
+      var cancel: js.UndefOr[OrdersCustomBatchRequestEntryCancel] = js.undefined
       
-      var cancelLineItem: js.UndefOr[OrdersCustomBatchRequestEntryCancelLineItem] = js.native
+      var cancelLineItem: js.UndefOr[OrdersCustomBatchRequestEntryCancelLineItem] = js.undefined
       
-      var inStoreRefundLineItem: js.UndefOr[OrdersCustomBatchRequestEntryInStoreRefundLineItem] = js.native
+      var inStoreRefundLineItem: js.UndefOr[OrdersCustomBatchRequestEntryInStoreRefundLineItem] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var merchantOrderId: js.UndefOr[String] = js.native
+      var merchantOrderId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
       
-      var refund: js.UndefOr[OrdersCustomBatchRequestEntryRefund] = js.native
+      var refund: js.UndefOr[OrdersCustomBatchRequestEntryRefund] = js.undefined
       
-      var rejectReturnLineItem: js.UndefOr[OrdersCustomBatchRequestEntryRejectReturnLineItem] = js.native
+      var rejectReturnLineItem: js.UndefOr[OrdersCustomBatchRequestEntryRejectReturnLineItem] = js.undefined
       
-      var returnLineItem: js.UndefOr[OrdersCustomBatchRequestEntryReturnLineItem] = js.native
+      var returnLineItem: js.UndefOr[OrdersCustomBatchRequestEntryReturnLineItem] = js.undefined
       
-      var returnRefundLineItem: js.UndefOr[OrdersCustomBatchRequestEntryReturnRefundLineItem] = js.native
+      var returnRefundLineItem: js.UndefOr[OrdersCustomBatchRequestEntryReturnRefundLineItem] = js.undefined
       
-      var setLineItemMetadata: js.UndefOr[OrdersCustomBatchRequestEntrySetLineItemMetadata] = js.native
+      var setLineItemMetadata: js.UndefOr[OrdersCustomBatchRequestEntrySetLineItemMetadata] = js.undefined
       
-      var shipLineItems: js.UndefOr[OrdersCustomBatchRequestEntryShipLineItems] = js.native
+      var shipLineItems: js.UndefOr[OrdersCustomBatchRequestEntryShipLineItems] = js.undefined
       
-      var updateLineItemShippingDetails: js.UndefOr[OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] = js.native
+      var updateLineItemShippingDetails: js.UndefOr[OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] = js.undefined
       
-      var updateShipment: js.UndefOr[OrdersCustomBatchRequestEntryUpdateShipment] = js.native
+      var updateShipment: js.UndefOr[OrdersCustomBatchRequestEntryUpdateShipment] = js.undefined
     }
     object OrdersCustomBatchRequestEntry {
       
@@ -9876,12 +9732,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryCancel extends StObject {
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryCancel {
       
@@ -9908,24 +9763,23 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryCancelLineItem extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryCancelLineItem {
       
@@ -9988,12 +9842,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryCreateTestReturnReturnItem extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
     }
     object OrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
       
@@ -10020,22 +9873,21 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryInStoreRefundLineItem extends StObject {
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryInStoreRefundLineItem {
       
@@ -10092,18 +9944,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryRefund extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryRefund {
       
@@ -10148,18 +9999,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryRejectReturnLineItem extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryRejectReturnLineItem {
       
@@ -10204,18 +10054,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryReturnLineItem extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryReturnLineItem {
       
@@ -10260,22 +10109,21 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryReturnRefundLineItem extends StObject {
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryReturnRefundLineItem {
       
@@ -10332,14 +10180,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntrySetLineItemMetadata extends StObject {
       
-      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.native
+      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntrySetLineItemMetadata {
       
@@ -10375,20 +10222,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryShipLineItems extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
       
-      var shipmentGroupId: js.UndefOr[String] = js.native
+      var shipmentGroupId: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.native
+      var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryShipLineItems {
       
@@ -10445,14 +10291,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
       
@@ -10485,16 +10330,15 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails extends StObject {
       
-      var deliverByDate: js.UndefOr[String] = js.native
+      var deliverByDate: js.UndefOr[String] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var shipByDate: js.UndefOr[String] = js.native
+      var shipByDate: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails {
       
@@ -10533,18 +10377,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchRequestEntryUpdateShipment extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var deliveryDate: js.UndefOr[String] = js.native
+      var deliveryDate: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchRequestEntryUpdateShipment {
       
@@ -10589,12 +10432,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[OrdersCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[OrdersCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersCustomBatchResponse {
       
@@ -10624,18 +10466,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var order: js.UndefOr[Order] = js.native
+      var order: js.UndefOr[Order] = js.undefined
     }
     object OrdersCustomBatchResponseEntry {
       
@@ -10680,12 +10521,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersGetByMerchantOrderIdResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var order: js.UndefOr[Order] = js.native
+      var order: js.UndefOr[Order] = js.undefined
     }
     object OrdersGetByMerchantOrderIdResponse {
       
@@ -10712,12 +10552,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersGetTestOrderTemplateResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var template: js.UndefOr[TestOrder] = js.native
+      var template: js.UndefOr[TestOrder] = js.undefined
     }
     object OrdersGetTestOrderTemplateResponse {
       
@@ -10744,24 +10583,23 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersInStoreRefundLineItemRequest extends StObject {
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersInStoreRefundLineItemRequest {
       
@@ -10824,12 +10662,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersInStoreRefundLineItemResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersInStoreRefundLineItemResponse {
       
@@ -10856,14 +10693,13 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[Order]] = js.native
+      var resources: js.UndefOr[js.Array[Order]] = js.undefined
     }
     object OrdersListResponse {
       
@@ -10899,20 +10735,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersRefundRequest extends StObject {
       
-      var amount: js.UndefOr[Price] = js.native
+      var amount: js.UndefOr[Price] = js.undefined
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersRefundRequest {
       
@@ -10963,12 +10798,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersRefundResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersRefundResponse {
       
@@ -10995,20 +10829,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersRejectReturnLineItemRequest extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersRejectReturnLineItemRequest {
       
@@ -11059,12 +10892,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersRejectReturnLineItemResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersRejectReturnLineItemResponse {
       
@@ -11091,20 +10923,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersReturnLineItemRequest extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersReturnLineItemRequest {
       
@@ -11155,12 +10986,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersReturnLineItemResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersReturnLineItemResponse {
       
@@ -11187,24 +11017,23 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersReturnRefundLineItemRequest extends StObject {
       
-      var amountPretax: js.UndefOr[Price] = js.native
+      var amountPretax: js.UndefOr[Price] = js.undefined
       
-      var amountTax: js.UndefOr[Price] = js.native
+      var amountTax: js.UndefOr[Price] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var reasonText: js.UndefOr[String] = js.native
+      var reasonText: js.UndefOr[String] = js.undefined
     }
     object OrdersReturnRefundLineItemRequest {
       
@@ -11267,12 +11096,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersReturnRefundLineItemResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersReturnRefundLineItemResponse {
       
@@ -11299,16 +11127,15 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersSetLineItemMetadataRequest extends StObject {
       
-      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.native
+      var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
     }
     object OrdersSetLineItemMetadataRequest {
       
@@ -11350,12 +11177,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersSetLineItemMetadataResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersSetLineItemMetadataResponse {
       
@@ -11382,22 +11208,21 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersShipLineItemsRequest extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+      var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var shipmentGroupId: js.UndefOr[String] = js.native
+      var shipmentGroupId: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.native
+      var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrdersShipLineItemsRequest {
       
@@ -11460,12 +11285,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersShipLineItemsResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersShipLineItemsResponse {
       
@@ -11492,18 +11316,17 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateLineItemShippingDetailsRequest extends StObject {
       
-      var deliverByDate: js.UndefOr[String] = js.native
+      var deliverByDate: js.UndefOr[String] = js.undefined
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var shipByDate: js.UndefOr[String] = js.native
+      var shipByDate: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateLineItemShippingDetailsRequest {
       
@@ -11548,12 +11371,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateLineItemShippingDetailsResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateLineItemShippingDetailsResponse {
       
@@ -11580,12 +11402,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateMerchantOrderIdRequest extends StObject {
       
-      var merchantOrderId: js.UndefOr[String] = js.native
+      var merchantOrderId: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateMerchantOrderIdRequest {
       
@@ -11612,12 +11433,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateMerchantOrderIdResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateMerchantOrderIdResponse {
       
@@ -11644,20 +11464,19 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateShipmentRequest extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var deliveryDate: js.UndefOr[String] = js.native
+      var deliveryDate: js.UndefOr[String] = js.undefined
       
-      var operationId: js.UndefOr[String] = js.native
+      var operationId: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var trackingId: js.UndefOr[String] = js.native
+      var trackingId: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateShipmentRequest {
       
@@ -11708,12 +11527,11 @@ object Content {
       }
     }
     
-    @js.native
     trait OrdersUpdateShipmentResponse extends StObject {
       
-      var executionStatus: js.UndefOr[String] = js.native
+      var executionStatus: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OrdersUpdateShipmentResponse {
       
@@ -11740,10 +11558,9 @@ object Content {
       }
     }
     
-    @js.native
     trait PosCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[PosCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[PosCustomBatchRequestEntry]] = js.undefined
     }
     object PosCustomBatchRequest {
       
@@ -11767,24 +11584,23 @@ object Content {
       }
     }
     
-    @js.native
     trait PosCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var inventory: js.UndefOr[PosInventory] = js.native
+      var inventory: js.UndefOr[PosInventory] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var sale: js.UndefOr[PosSale] = js.native
+      var sale: js.UndefOr[PosSale] = js.undefined
       
-      var store: js.UndefOr[PosStore] = js.native
+      var store: js.UndefOr[PosStore] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetMerchantId: js.UndefOr[String] = js.native
+      var targetMerchantId: js.UndefOr[String] = js.undefined
     }
     object PosCustomBatchRequestEntry {
       
@@ -11847,12 +11663,11 @@ object Content {
       }
     }
     
-    @js.native
     trait PosCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[PosCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[PosCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object PosCustomBatchResponse {
       
@@ -11882,20 +11697,19 @@ object Content {
       }
     }
     
-    @js.native
     trait PosCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var inventory: js.UndefOr[PosInventory] = js.native
+      var inventory: js.UndefOr[PosInventory] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var sale: js.UndefOr[PosSale] = js.native
+      var sale: js.UndefOr[PosSale] = js.undefined
       
-      var store: js.UndefOr[PosStore] = js.native
+      var store: js.UndefOr[PosStore] = js.undefined
     }
     object PosCustomBatchResponseEntry {
       
@@ -11946,12 +11760,11 @@ object Content {
       }
     }
     
-    @js.native
     trait PosDataProviders extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var posDataProviders: js.UndefOr[js.Array[PosDataProvidersPosDataProvider]] = js.native
+      var posDataProviders: js.UndefOr[js.Array[PosDataProvidersPosDataProvider]] = js.undefined
     }
     object PosDataProviders {
       
@@ -11981,14 +11794,13 @@ object Content {
       }
     }
     
-    @js.native
     trait PosDataProvidersPosDataProvider extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var fullName: js.UndefOr[String] = js.native
+      var fullName: js.UndefOr[String] = js.undefined
       
-      var providerId: js.UndefOr[String] = js.native
+      var providerId: js.UndefOr[String] = js.undefined
     }
     object PosDataProvidersPosDataProvider {
       
@@ -12021,26 +11833,25 @@ object Content {
       }
     }
     
-    @js.native
     trait PosInventory extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosInventory {
       
@@ -12109,24 +11920,23 @@ object Content {
       }
     }
     
-    @js.native
     trait PosInventoryRequest extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosInventoryRequest {
       
@@ -12189,26 +11999,25 @@ object Content {
       }
     }
     
-    @js.native
     trait PosInventoryResponse extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosInventoryResponse {
       
@@ -12277,12 +12086,11 @@ object Content {
       }
     }
     
-    @js.native
     trait PosListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[PosStore]] = js.native
+      var resources: js.UndefOr[js.Array[PosStore]] = js.undefined
     }
     object PosListResponse {
       
@@ -12312,28 +12120,27 @@ object Content {
       }
     }
     
-    @js.native
     trait PosSale extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var saleId: js.UndefOr[String] = js.native
+      var saleId: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosSale {
       
@@ -12408,26 +12215,25 @@ object Content {
       }
     }
     
-    @js.native
     trait PosSaleRequest extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var saleId: js.UndefOr[String] = js.native
+      var saleId: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosSaleRequest {
       
@@ -12496,28 +12302,27 @@ object Content {
       }
     }
     
-    @js.native
     trait PosSaleResponse extends StObject {
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var saleId: js.UndefOr[String] = js.native
+      var saleId: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object PosSaleResponse {
       
@@ -12592,14 +12397,13 @@ object Content {
       }
     }
     
-    @js.native
     trait PosStore extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var storeAddress: js.UndefOr[String] = js.native
+      var storeAddress: js.UndefOr[String] = js.undefined
       
-      var storeCode: js.UndefOr[String] = js.native
+      var storeCode: js.UndefOr[String] = js.undefined
     }
     object PosStore {
       
@@ -12632,14 +12436,13 @@ object Content {
       }
     }
     
-    @js.native
     trait PostalCodeGroup extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var postalCodeRanges: js.UndefOr[js.Array[PostalCodeRange]] = js.native
+      var postalCodeRanges: js.UndefOr[js.Array[PostalCodeRange]] = js.undefined
     }
     object PostalCodeGroup {
       
@@ -12675,12 +12478,11 @@ object Content {
       }
     }
     
-    @js.native
     trait PostalCodeRange extends StObject {
       
-      var postalCodeRangeBegin: js.UndefOr[String] = js.native
+      var postalCodeRangeBegin: js.UndefOr[String] = js.undefined
       
-      var postalCodeRangeEnd: js.UndefOr[String] = js.native
+      var postalCodeRangeEnd: js.UndefOr[String] = js.undefined
     }
     object PostalCodeRange {
       
@@ -12707,12 +12509,11 @@ object Content {
       }
     }
     
-    @js.native
     trait Price extends StObject {
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Price {
       
@@ -12739,164 +12540,163 @@ object Content {
       }
     }
     
-    @js.native
     trait Product extends StObject {
       
-      var additionalImageLinks: js.UndefOr[js.Array[String]] = js.native
+      var additionalImageLinks: js.UndefOr[js.Array[String]] = js.undefined
       
-      var additionalProductTypes: js.UndefOr[js.Array[String]] = js.native
+      var additionalProductTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var adult: js.UndefOr[Boolean] = js.native
+      var adult: js.UndefOr[Boolean] = js.undefined
       
-      var adwordsGrouping: js.UndefOr[String] = js.native
+      var adwordsGrouping: js.UndefOr[String] = js.undefined
       
-      var adwordsLabels: js.UndefOr[js.Array[String]] = js.native
+      var adwordsLabels: js.UndefOr[js.Array[String]] = js.undefined
       
-      var adwordsRedirect: js.UndefOr[String] = js.native
+      var adwordsRedirect: js.UndefOr[String] = js.undefined
       
-      var ageGroup: js.UndefOr[String] = js.native
+      var ageGroup: js.UndefOr[String] = js.undefined
       
-      var aspects: js.UndefOr[js.Array[ProductAspect]] = js.native
+      var aspects: js.UndefOr[js.Array[ProductAspect]] = js.undefined
       
-      var availability: js.UndefOr[String] = js.native
+      var availability: js.UndefOr[String] = js.undefined
       
-      var availabilityDate: js.UndefOr[String] = js.native
+      var availabilityDate: js.UndefOr[String] = js.undefined
       
-      var brand: js.UndefOr[String] = js.native
+      var brand: js.UndefOr[String] = js.undefined
       
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
-      var condition: js.UndefOr[String] = js.native
+      var condition: js.UndefOr[String] = js.undefined
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var costOfGoodsSold: js.UndefOr[Price] = js.native
+      var costOfGoodsSold: js.UndefOr[Price] = js.undefined
       
-      var customAttributes: js.UndefOr[js.Array[CustomAttribute]] = js.native
+      var customAttributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
       
-      var customGroups: js.UndefOr[js.Array[CustomGroup]] = js.native
+      var customGroups: js.UndefOr[js.Array[CustomGroup]] = js.undefined
       
-      var customLabel0: js.UndefOr[String] = js.native
+      var customLabel0: js.UndefOr[String] = js.undefined
       
-      var customLabel1: js.UndefOr[String] = js.native
+      var customLabel1: js.UndefOr[String] = js.undefined
       
-      var customLabel2: js.UndefOr[String] = js.native
+      var customLabel2: js.UndefOr[String] = js.undefined
       
-      var customLabel3: js.UndefOr[String] = js.native
+      var customLabel3: js.UndefOr[String] = js.undefined
       
-      var customLabel4: js.UndefOr[String] = js.native
+      var customLabel4: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var destinations: js.UndefOr[js.Array[ProductDestination]] = js.native
+      var destinations: js.UndefOr[js.Array[ProductDestination]] = js.undefined
       
-      var displayAdsId: js.UndefOr[String] = js.native
+      var displayAdsId: js.UndefOr[String] = js.undefined
       
-      var displayAdsLink: js.UndefOr[String] = js.native
+      var displayAdsLink: js.UndefOr[String] = js.undefined
       
-      var displayAdsSimilarIds: js.UndefOr[js.Array[String]] = js.native
+      var displayAdsSimilarIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var displayAdsTitle: js.UndefOr[String] = js.native
+      var displayAdsTitle: js.UndefOr[String] = js.undefined
       
-      var displayAdsValue: js.UndefOr[Double] = js.native
+      var displayAdsValue: js.UndefOr[Double] = js.undefined
       
-      var energyEfficiencyClass: js.UndefOr[String] = js.native
+      var energyEfficiencyClass: js.UndefOr[String] = js.undefined
       
-      var expirationDate: js.UndefOr[String] = js.native
+      var expirationDate: js.UndefOr[String] = js.undefined
       
-      var gender: js.UndefOr[String] = js.native
+      var gender: js.UndefOr[String] = js.undefined
       
-      var googleProductCategory: js.UndefOr[String] = js.native
+      var googleProductCategory: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var identifierExists: js.UndefOr[Boolean] = js.native
+      var identifierExists: js.UndefOr[Boolean] = js.undefined
       
-      var imageLink: js.UndefOr[String] = js.native
+      var imageLink: js.UndefOr[String] = js.undefined
       
-      var installment: js.UndefOr[Installment] = js.native
+      var installment: js.UndefOr[Installment] = js.undefined
       
-      var isBundle: js.UndefOr[Boolean] = js.native
+      var isBundle: js.UndefOr[Boolean] = js.undefined
       
-      var itemGroupId: js.UndefOr[String] = js.native
+      var itemGroupId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.native
+      var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.undefined
       
-      var material: js.UndefOr[String] = js.native
+      var material: js.UndefOr[String] = js.undefined
       
-      var maxEnergyEfficiencyClass: js.UndefOr[String] = js.native
+      var maxEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
       
-      var maxHandlingTime: js.UndefOr[String] = js.native
+      var maxHandlingTime: js.UndefOr[String] = js.undefined
       
-      var minEnergyEfficiencyClass: js.UndefOr[String] = js.native
+      var minEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
       
-      var minHandlingTime: js.UndefOr[String] = js.native
+      var minHandlingTime: js.UndefOr[String] = js.undefined
       
-      var mobileLink: js.UndefOr[String] = js.native
+      var mobileLink: js.UndefOr[String] = js.undefined
       
-      var mpn: js.UndefOr[String] = js.native
+      var mpn: js.UndefOr[String] = js.undefined
       
-      var multipack: js.UndefOr[String] = js.native
+      var multipack: js.UndefOr[String] = js.undefined
       
-      var offerId: js.UndefOr[String] = js.native
+      var offerId: js.UndefOr[String] = js.undefined
       
-      var onlineOnly: js.UndefOr[Boolean] = js.native
+      var onlineOnly: js.UndefOr[Boolean] = js.undefined
       
-      var pattern: js.UndefOr[String] = js.native
+      var pattern: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var productType: js.UndefOr[String] = js.native
+      var productType: js.UndefOr[String] = js.undefined
       
-      var promotionIds: js.UndefOr[js.Array[String]] = js.native
+      var promotionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var salePrice: js.UndefOr[Price] = js.native
+      var salePrice: js.UndefOr[Price] = js.undefined
       
-      var salePriceEffectiveDate: js.UndefOr[String] = js.native
+      var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
       
-      var sellOnGoogleQuantity: js.UndefOr[String] = js.native
+      var sellOnGoogleQuantity: js.UndefOr[String] = js.undefined
       
-      var shipping: js.UndefOr[js.Array[ProductShipping]] = js.native
+      var shipping: js.UndefOr[js.Array[ProductShipping]] = js.undefined
       
-      var shippingHeight: js.UndefOr[ProductShippingDimension] = js.native
+      var shippingHeight: js.UndefOr[ProductShippingDimension] = js.undefined
       
-      var shippingLabel: js.UndefOr[String] = js.native
+      var shippingLabel: js.UndefOr[String] = js.undefined
       
-      var shippingLength: js.UndefOr[ProductShippingDimension] = js.native
+      var shippingLength: js.UndefOr[ProductShippingDimension] = js.undefined
       
-      var shippingWeight: js.UndefOr[ProductShippingWeight] = js.native
+      var shippingWeight: js.UndefOr[ProductShippingWeight] = js.undefined
       
-      var shippingWidth: js.UndefOr[ProductShippingDimension] = js.native
+      var shippingWidth: js.UndefOr[ProductShippingDimension] = js.undefined
       
-      var sizeSystem: js.UndefOr[String] = js.native
+      var sizeSystem: js.UndefOr[String] = js.undefined
       
-      var sizeType: js.UndefOr[String] = js.native
+      var sizeType: js.UndefOr[String] = js.undefined
       
-      var sizes: js.UndefOr[js.Array[String]] = js.native
+      var sizes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var taxes: js.UndefOr[js.Array[ProductTax]] = js.native
+      var taxes: js.UndefOr[js.Array[ProductTax]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var unitPricingBaseMeasure: js.UndefOr[ProductUnitPricingBaseMeasure] = js.native
+      var unitPricingBaseMeasure: js.UndefOr[ProductUnitPricingBaseMeasure] = js.undefined
       
-      var unitPricingMeasure: js.UndefOr[ProductUnitPricingMeasure] = js.native
+      var unitPricingMeasure: js.UndefOr[ProductUnitPricingMeasure] = js.undefined
       
-      var validatedDestinations: js.UndefOr[js.Array[String]] = js.native
+      var validatedDestinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var warnings: js.UndefOr[js.Array[Error]] = js.native
+      var warnings: js.UndefOr[js.Array[Error]] = js.undefined
     }
     object Product {
       
@@ -13421,14 +13221,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductAmount extends StObject {
       
-      var priceAmount: js.UndefOr[Price] = js.native
+      var priceAmount: js.UndefOr[Price] = js.undefined
       
-      var remittedTaxAmount: js.UndefOr[Price] = js.native
+      var remittedTaxAmount: js.UndefOr[Price] = js.undefined
       
-      var taxAmount: js.UndefOr[Price] = js.native
+      var taxAmount: js.UndefOr[Price] = js.undefined
     }
     object ProductAmount {
       
@@ -13461,14 +13260,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductAspect extends StObject {
       
-      var aspectName: js.UndefOr[String] = js.native
+      var aspectName: js.UndefOr[String] = js.undefined
       
-      var destinationName: js.UndefOr[String] = js.native
+      var destinationName: js.UndefOr[String] = js.undefined
       
-      var intention: js.UndefOr[String] = js.native
+      var intention: js.UndefOr[String] = js.undefined
     }
     object ProductAspect {
       
@@ -13501,12 +13299,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductDestination extends StObject {
       
-      var destinationName: js.UndefOr[String] = js.native
+      var destinationName: js.UndefOr[String] = js.undefined
       
-      var intention: js.UndefOr[String] = js.native
+      var intention: js.UndefOr[String] = js.undefined
     }
     object ProductDestination {
       
@@ -13533,22 +13330,21 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductShipping extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var locationGroupName: js.UndefOr[String] = js.native
+      var locationGroupName: js.UndefOr[String] = js.undefined
       
-      var locationId: js.UndefOr[String] = js.native
+      var locationId: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var service: js.UndefOr[String] = js.native
+      var service: js.UndefOr[String] = js.undefined
     }
     object ProductShipping {
       
@@ -13605,12 +13401,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductShippingDimension extends StObject {
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object ProductShippingDimension {
       
@@ -13637,12 +13432,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductShippingWeight extends StObject {
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object ProductShippingWeight {
       
@@ -13669,30 +13463,29 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductStatus extends StObject {
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var dataQualityIssues: js.UndefOr[js.Array[ProductStatusDataQualityIssue]] = js.native
+      var dataQualityIssues: js.UndefOr[js.Array[ProductStatusDataQualityIssue]] = js.undefined
       
-      var destinationStatuses: js.UndefOr[js.Array[ProductStatusDestinationStatus]] = js.native
+      var destinationStatuses: js.UndefOr[js.Array[ProductStatusDestinationStatus]] = js.undefined
       
-      var googleExpirationDate: js.UndefOr[String] = js.native
+      var googleExpirationDate: js.UndefOr[String] = js.undefined
       
-      var itemLevelIssues: js.UndefOr[js.Array[ProductStatusItemLevelIssue]] = js.native
+      var itemLevelIssues: js.UndefOr[js.Array[ProductStatusItemLevelIssue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastUpdateDate: js.UndefOr[String] = js.native
+      var lastUpdateDate: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var product: js.UndefOr[Product] = js.native
+      var product: js.UndefOr[Product] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object ProductStatus {
       
@@ -13782,26 +13575,25 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductStatusDataQualityIssue extends StObject {
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var detail: js.UndefOr[String] = js.native
+      var detail: js.UndefOr[String] = js.undefined
       
-      var fetchStatus: js.UndefOr[String] = js.native
+      var fetchStatus: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var severity: js.UndefOr[String] = js.native
+      var severity: js.UndefOr[String] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
       
-      var valueOnLandingPage: js.UndefOr[String] = js.native
+      var valueOnLandingPage: js.UndefOr[String] = js.undefined
       
-      var valueProvided: js.UndefOr[String] = js.native
+      var valueProvided: js.UndefOr[String] = js.undefined
     }
     object ProductStatusDataQualityIssue {
       
@@ -13870,16 +13662,15 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductStatusDestinationStatus extends StObject {
       
-      var approvalPending: js.UndefOr[Boolean] = js.native
+      var approvalPending: js.UndefOr[Boolean] = js.undefined
       
-      var approvalStatus: js.UndefOr[String] = js.native
+      var approvalStatus: js.UndefOr[String] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var intention: js.UndefOr[String] = js.native
+      var intention: js.UndefOr[String] = js.undefined
     }
     object ProductStatusDestinationStatus {
       
@@ -13918,24 +13709,23 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductStatusItemLevelIssue extends StObject {
       
-      var attributeName: js.UndefOr[String] = js.native
+      var attributeName: js.UndefOr[String] = js.undefined
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
-      var detail: js.UndefOr[String] = js.native
+      var detail: js.UndefOr[String] = js.undefined
       
-      var documentation: js.UndefOr[String] = js.native
+      var documentation: js.UndefOr[String] = js.undefined
       
-      var resolution: js.UndefOr[String] = js.native
+      var resolution: js.UndefOr[String] = js.undefined
       
-      var servability: js.UndefOr[String] = js.native
+      var servability: js.UndefOr[String] = js.undefined
     }
     object ProductStatusItemLevelIssue {
       
@@ -13998,20 +13788,19 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductTax extends StObject {
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var locationId: js.UndefOr[String] = js.native
+      var locationId: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var rate: js.UndefOr[Double] = js.native
+      var rate: js.UndefOr[Double] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var taxShip: js.UndefOr[Boolean] = js.native
+      var taxShip: js.UndefOr[Boolean] = js.undefined
     }
     object ProductTax {
       
@@ -14062,12 +13851,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductUnitPricingBaseMeasure extends StObject {
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object ProductUnitPricingBaseMeasure {
       
@@ -14094,12 +13882,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductUnitPricingMeasure extends StObject {
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object ProductUnitPricingMeasure {
       
@@ -14126,10 +13913,9 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductsCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[ProductsCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ProductsCustomBatchRequestEntry]] = js.undefined
     }
     object ProductsCustomBatchRequest {
       
@@ -14153,18 +13939,17 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductsCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var product: js.UndefOr[Product] = js.native
+      var product: js.UndefOr[Product] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
     }
     object ProductsCustomBatchRequestEntry {
       
@@ -14209,12 +13994,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductsCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[ProductsCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ProductsCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ProductsCustomBatchResponse {
       
@@ -14244,16 +14028,15 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductsCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var product: js.UndefOr[Product] = js.native
+      var product: js.UndefOr[Product] = js.undefined
     }
     object ProductsCustomBatchResponseEntry {
       
@@ -14292,14 +14075,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[Product]] = js.native
+      var resources: js.UndefOr[js.Array[Product]] = js.undefined
     }
     object ProductsListResponse {
       
@@ -14335,10 +14117,9 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductstatusesCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[ProductstatusesCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ProductstatusesCustomBatchRequestEntry]] = js.undefined
     }
     object ProductstatusesCustomBatchRequest {
       
@@ -14362,20 +14143,19 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductstatusesCustomBatchRequestEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var destinations: js.UndefOr[js.Array[String]] = js.native
+      var destinations: js.UndefOr[js.Array[String]] = js.undefined
       
-      var includeAttributes: js.UndefOr[Boolean] = js.native
+      var includeAttributes: js.UndefOr[Boolean] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
     }
     object ProductstatusesCustomBatchRequestEntry {
       
@@ -14429,12 +14209,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductstatusesCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[ProductstatusesCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ProductstatusesCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ProductstatusesCustomBatchResponse {
       
@@ -14464,16 +14243,15 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductstatusesCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var productStatus: js.UndefOr[ProductStatus] = js.native
+      var productStatus: js.UndefOr[ProductStatus] = js.undefined
     }
     object ProductstatusesCustomBatchResponseEntry {
       
@@ -14512,14 +14290,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ProductstatusesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[ProductStatus]] = js.native
+      var resources: js.UndefOr[js.Array[ProductStatus]] = js.undefined
     }
     object ProductstatusesListResponse {
       
@@ -14555,12 +14332,11 @@ object Content {
       }
     }
     
-    @js.native
     trait Promotion extends StObject {
       
-      var promotionAmount: js.UndefOr[Amount] = js.native
+      var promotionAmount: js.UndefOr[Amount] = js.undefined
       
-      var promotionId: js.UndefOr[String] = js.native
+      var promotionId: js.UndefOr[String] = js.undefined
     }
     object Promotion {
       
@@ -14587,20 +14363,19 @@ object Content {
       }
     }
     
-    @js.native
     trait RateGroup extends StObject {
       
-      var applicableShippingLabels: js.UndefOr[js.Array[String]] = js.native
+      var applicableShippingLabels: js.UndefOr[js.Array[String]] = js.undefined
       
-      var carrierRates: js.UndefOr[js.Array[CarrierRate]] = js.native
+      var carrierRates: js.UndefOr[js.Array[CarrierRate]] = js.undefined
       
-      var mainTable: js.UndefOr[Table] = js.native
+      var mainTable: js.UndefOr[Table] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var singleValue: js.UndefOr[Value] = js.native
+      var singleValue: js.UndefOr[Value] = js.undefined
       
-      var subtables: js.UndefOr[js.Array[Table]] = js.native
+      var subtables: js.UndefOr[js.Array[Table]] = js.undefined
     }
     object RateGroup {
       
@@ -14660,12 +14435,11 @@ object Content {
       }
     }
     
-    @js.native
     trait RefundReason extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var reasonCode: js.UndefOr[String] = js.native
+      var reasonCode: js.UndefOr[String] = js.undefined
     }
     object RefundReason {
       
@@ -14692,22 +14466,21 @@ object Content {
       }
     }
     
-    @js.native
     trait ReturnShipment extends StObject {
       
-      var creationDate: js.UndefOr[String] = js.native
+      var creationDate: js.UndefOr[String] = js.undefined
       
-      var deliveryDate: js.UndefOr[String] = js.native
+      var deliveryDate: js.UndefOr[String] = js.undefined
       
-      var returnMethodType: js.UndefOr[String] = js.native
+      var returnMethodType: js.UndefOr[String] = js.undefined
       
-      var shipmentId: js.UndefOr[String] = js.native
+      var shipmentId: js.UndefOr[String] = js.undefined
       
-      var shipmentTrackingInfos: js.UndefOr[js.Array[ShipmentTrackingInfo]] = js.native
+      var shipmentTrackingInfos: js.UndefOr[js.Array[ShipmentTrackingInfo]] = js.undefined
       
-      var shippingDate: js.UndefOr[String] = js.native
+      var shippingDate: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
     }
     object ReturnShipment {
       
@@ -14767,10 +14540,9 @@ object Content {
       }
     }
     
-    @js.native
     trait Row extends StObject {
       
-      var cells: js.UndefOr[js.Array[Value]] = js.native
+      var cells: js.UndefOr[js.Array[Value]] = js.undefined
     }
     object Row {
       
@@ -14794,24 +14566,23 @@ object Content {
       }
     }
     
-    @js.native
     trait Service extends StObject {
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var deliveryCountry: js.UndefOr[String] = js.native
+      var deliveryCountry: js.UndefOr[String] = js.undefined
       
-      var deliveryTime: js.UndefOr[DeliveryTime] = js.native
+      var deliveryTime: js.UndefOr[DeliveryTime] = js.undefined
       
-      var eligibility: js.UndefOr[String] = js.native
+      var eligibility: js.UndefOr[String] = js.undefined
       
-      var minimumOrderValue: js.UndefOr[Price] = js.native
+      var minimumOrderValue: js.UndefOr[Price] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var rateGroups: js.UndefOr[js.Array[RateGroup]] = js.native
+      var rateGroups: js.UndefOr[js.Array[RateGroup]] = js.undefined
     }
     object Service {
       
@@ -14877,14 +14648,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ShipmentInvoice extends StObject {
       
-      var invoiceSummary: js.UndefOr[InvoiceSummary] = js.native
+      var invoiceSummary: js.UndefOr[InvoiceSummary] = js.undefined
       
-      var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.native
+      var lineItemInvoices: js.UndefOr[js.Array[ShipmentInvoiceLineItemInvoice]] = js.undefined
       
-      var shipmentGroupId: js.UndefOr[String] = js.native
+      var shipmentGroupId: js.UndefOr[String] = js.undefined
     }
     object ShipmentInvoice {
       
@@ -14920,16 +14690,15 @@ object Content {
       }
     }
     
-    @js.native
     trait ShipmentInvoiceLineItemInvoice extends StObject {
       
-      var lineItemId: js.UndefOr[String] = js.native
+      var lineItemId: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var shipmentUnitIds: js.UndefOr[js.Array[String]] = js.native
+      var shipmentUnitIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var unitInvoice: js.UndefOr[UnitInvoice] = js.native
+      var unitInvoice: js.UndefOr[UnitInvoice] = js.undefined
     }
     object ShipmentInvoiceLineItemInvoice {
       
@@ -14971,12 +14740,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ShipmentTrackingInfo extends StObject {
       
-      var carrier: js.UndefOr[String] = js.native
+      var carrier: js.UndefOr[String] = js.undefined
       
-      var trackingNumber: js.UndefOr[String] = js.native
+      var trackingNumber: js.UndefOr[String] = js.undefined
     }
     object ShipmentTrackingInfo {
       
@@ -15003,14 +14771,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingSettings extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var postalCodeGroups: js.UndefOr[js.Array[PostalCodeGroup]] = js.native
+      var postalCodeGroups: js.UndefOr[js.Array[PostalCodeGroup]] = js.undefined
       
-      var services: js.UndefOr[js.Array[Service]] = js.native
+      var services: js.UndefOr[js.Array[Service]] = js.undefined
     }
     object ShippingSettings {
       
@@ -15049,10 +14816,9 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsCustomBatchRequest extends StObject {
       
-      var entries: js.UndefOr[js.Array[ShippingsettingsCustomBatchRequestEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ShippingsettingsCustomBatchRequestEntry]] = js.undefined
     }
     object ShippingsettingsCustomBatchRequest {
       
@@ -15076,18 +14842,17 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsCustomBatchRequestEntry extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var merchantId: js.UndefOr[String] = js.native
+      var merchantId: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var shippingSettings: js.UndefOr[ShippingSettings] = js.native
+      var shippingSettings: js.UndefOr[ShippingSettings] = js.undefined
     }
     object ShippingsettingsCustomBatchRequestEntry {
       
@@ -15132,12 +14897,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsCustomBatchResponse extends StObject {
       
-      var entries: js.UndefOr[js.Array[ShippingsettingsCustomBatchResponseEntry]] = js.native
+      var entries: js.UndefOr[js.Array[ShippingsettingsCustomBatchResponseEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ShippingsettingsCustomBatchResponse {
       
@@ -15167,16 +14931,15 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsCustomBatchResponseEntry extends StObject {
       
-      var batchId: js.UndefOr[Double] = js.native
+      var batchId: js.UndefOr[Double] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var shippingSettings: js.UndefOr[ShippingSettings] = js.native
+      var shippingSettings: js.UndefOr[ShippingSettings] = js.undefined
     }
     object ShippingsettingsCustomBatchResponseEntry {
       
@@ -15215,12 +14978,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsGetSupportedCarriersResponse extends StObject {
       
-      var carriers: js.UndefOr[js.Array[CarriersCarrier]] = js.native
+      var carriers: js.UndefOr[js.Array[CarriersCarrier]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ShippingsettingsGetSupportedCarriersResponse {
       
@@ -15250,12 +15012,11 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsGetSupportedHolidaysResponse extends StObject {
       
-      var holidays: js.UndefOr[js.Array[HolidaysHoliday]] = js.native
+      var holidays: js.UndefOr[js.Array[HolidaysHoliday]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ShippingsettingsGetSupportedHolidaysResponse {
       
@@ -15285,14 +15046,13 @@ object Content {
       }
     }
     
-    @js.native
     trait ShippingsettingsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resources: js.UndefOr[js.Array[ShippingSettings]] = js.native
+      var resources: js.UndefOr[js.Array[ShippingSettings]] = js.undefined
     }
     object ShippingsettingsListResponse {
       
@@ -15328,16 +15088,15 @@ object Content {
       }
     }
     
-    @js.native
     trait Table extends StObject {
       
-      var columnHeaders: js.UndefOr[Headers] = js.native
+      var columnHeaders: js.UndefOr[Headers] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var rowHeaders: js.UndefOr[Headers] = js.native
+      var rowHeaders: js.UndefOr[Headers] = js.undefined
       
-      var rows: js.UndefOr[js.Array[Row]] = js.native
+      var rows: js.UndefOr[js.Array[Row]] = js.undefined
     }
     object Table {
       
@@ -15379,30 +15138,29 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrder extends StObject {
       
-      var customer: js.UndefOr[TestOrderCustomer] = js.native
+      var customer: js.UndefOr[TestOrderCustomer] = js.undefined
       
-      var enableOrderinvoices: js.UndefOr[Boolean] = js.native
+      var enableOrderinvoices: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lineItems: js.UndefOr[js.Array[TestOrderLineItem]] = js.native
+      var lineItems: js.UndefOr[js.Array[TestOrderLineItem]] = js.undefined
       
-      var notificationMode: js.UndefOr[String] = js.native
+      var notificationMode: js.UndefOr[String] = js.undefined
       
-      var paymentMethod: js.UndefOr[TestOrderPaymentMethod] = js.native
+      var paymentMethod: js.UndefOr[TestOrderPaymentMethod] = js.undefined
       
-      var predefinedDeliveryAddress: js.UndefOr[String] = js.native
+      var predefinedDeliveryAddress: js.UndefOr[String] = js.undefined
       
-      var promotions: js.UndefOr[js.Array[OrderLegacyPromotion]] = js.native
+      var promotions: js.UndefOr[js.Array[OrderLegacyPromotion]] = js.undefined
       
-      var shippingCost: js.UndefOr[Price] = js.native
+      var shippingCost: js.UndefOr[Price] = js.undefined
       
-      var shippingCostTax: js.UndefOr[Price] = js.native
+      var shippingCostTax: js.UndefOr[Price] = js.undefined
       
-      var shippingOption: js.UndefOr[String] = js.native
+      var shippingOption: js.UndefOr[String] = js.undefined
     }
     object TestOrder {
       
@@ -15489,16 +15247,15 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrderCustomer extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var explicitMarketingPreference: js.UndefOr[Boolean] = js.native
+      var explicitMarketingPreference: js.UndefOr[Boolean] = js.undefined
       
-      var fullName: js.UndefOr[String] = js.native
+      var fullName: js.UndefOr[String] = js.undefined
       
-      var marketingRightsInfo: js.UndefOr[TestOrderCustomerMarketingRightsInfo] = js.native
+      var marketingRightsInfo: js.UndefOr[TestOrderCustomerMarketingRightsInfo] = js.undefined
     }
     object TestOrderCustomer {
       
@@ -15537,12 +15294,11 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrderCustomerMarketingRightsInfo extends StObject {
       
-      var explicitMarketingPreference: js.UndefOr[String] = js.native
+      var explicitMarketingPreference: js.UndefOr[String] = js.undefined
       
-      var lastUpdatedTimestamp: js.UndefOr[String] = js.native
+      var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
     }
     object TestOrderCustomerMarketingRightsInfo {
       
@@ -15569,18 +15325,17 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrderLineItem extends StObject {
       
-      var product: js.UndefOr[TestOrderLineItemProduct] = js.native
+      var product: js.UndefOr[TestOrderLineItemProduct] = js.undefined
       
-      var quantityOrdered: js.UndefOr[Double] = js.native
+      var quantityOrdered: js.UndefOr[Double] = js.undefined
       
-      var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.native
+      var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.undefined
       
-      var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.native
+      var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.undefined
       
-      var unitTax: js.UndefOr[Price] = js.native
+      var unitTax: js.UndefOr[Price] = js.undefined
     }
     object TestOrderLineItem {
       
@@ -15625,34 +15380,33 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrderLineItemProduct extends StObject {
       
-      var brand: js.UndefOr[String] = js.native
+      var brand: js.UndefOr[String] = js.undefined
       
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
-      var condition: js.UndefOr[String] = js.native
+      var condition: js.UndefOr[String] = js.undefined
       
-      var contentLanguage: js.UndefOr[String] = js.native
+      var contentLanguage: js.UndefOr[String] = js.undefined
       
-      var gtin: js.UndefOr[String] = js.native
+      var gtin: js.UndefOr[String] = js.undefined
       
-      var imageLink: js.UndefOr[String] = js.native
+      var imageLink: js.UndefOr[String] = js.undefined
       
-      var itemGroupId: js.UndefOr[String] = js.native
+      var itemGroupId: js.UndefOr[String] = js.undefined
       
-      var mpn: js.UndefOr[String] = js.native
+      var mpn: js.UndefOr[String] = js.undefined
       
-      var offerId: js.UndefOr[String] = js.native
+      var offerId: js.UndefOr[String] = js.undefined
       
-      var price: js.UndefOr[Price] = js.native
+      var price: js.UndefOr[Price] = js.undefined
       
-      var targetCountry: js.UndefOr[String] = js.native
+      var targetCountry: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.native
+      var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.undefined
     }
     object TestOrderLineItemProduct {
       
@@ -15748,18 +15502,17 @@ object Content {
       }
     }
     
-    @js.native
     trait TestOrderPaymentMethod extends StObject {
       
-      var expirationMonth: js.UndefOr[Double] = js.native
+      var expirationMonth: js.UndefOr[Double] = js.undefined
       
-      var expirationYear: js.UndefOr[Double] = js.native
+      var expirationYear: js.UndefOr[Double] = js.undefined
       
-      var lastFourDigits: js.UndefOr[String] = js.native
+      var lastFourDigits: js.UndefOr[String] = js.undefined
       
-      var predefinedBillingAddress: js.UndefOr[String] = js.native
+      var predefinedBillingAddress: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object TestOrderPaymentMethod {
       
@@ -15804,14 +15557,13 @@ object Content {
       }
     }
     
-    @js.native
     trait TransitTable extends StObject {
       
-      var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.native
+      var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var rows: js.UndefOr[js.Array[TransitTableTransitTimeRow]] = js.native
+      var rows: js.UndefOr[js.Array[TransitTableTransitTimeRow]] = js.undefined
       
-      var transitTimeLabels: js.UndefOr[js.Array[String]] = js.native
+      var transitTimeLabels: js.UndefOr[js.Array[String]] = js.undefined
     }
     object TransitTable {
       
@@ -15853,10 +15605,9 @@ object Content {
       }
     }
     
-    @js.native
     trait TransitTableTransitTimeRow extends StObject {
       
-      var values: js.UndefOr[js.Array[TransitTableTransitTimeRowTransitTimeValue]] = js.native
+      var values: js.UndefOr[js.Array[TransitTableTransitTimeRowTransitTimeValue]] = js.undefined
     }
     object TransitTableTransitTimeRow {
       
@@ -15880,12 +15631,11 @@ object Content {
       }
     }
     
-    @js.native
     trait TransitTableTransitTimeRowTransitTimeValue extends StObject {
       
-      var maxTransitTimeInDays: js.UndefOr[Double] = js.native
+      var maxTransitTimeInDays: js.UndefOr[Double] = js.undefined
       
-      var minTransitTimeInDays: js.UndefOr[Double] = js.native
+      var minTransitTimeInDays: js.UndefOr[Double] = js.undefined
     }
     object TransitTableTransitTimeRowTransitTimeValue {
       
@@ -15912,16 +15662,15 @@ object Content {
       }
     }
     
-    @js.native
     trait UnitInvoice extends StObject {
       
-      var additionalCharges: js.UndefOr[js.Array[UnitInvoiceAdditionalCharge]] = js.native
+      var additionalCharges: js.UndefOr[js.Array[UnitInvoiceAdditionalCharge]] = js.undefined
       
-      var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+      var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
       
-      var unitPricePretax: js.UndefOr[Price] = js.native
+      var unitPricePretax: js.UndefOr[Price] = js.undefined
       
-      var unitPriceTaxes: js.UndefOr[js.Array[UnitInvoiceTaxLine]] = js.native
+      var unitPriceTaxes: js.UndefOr[js.Array[UnitInvoiceTaxLine]] = js.undefined
     }
     object UnitInvoice {
       
@@ -15969,14 +15718,13 @@ object Content {
       }
     }
     
-    @js.native
     trait UnitInvoiceAdditionalCharge extends StObject {
       
-      var additionalChargeAmount: js.UndefOr[Amount] = js.native
+      var additionalChargeAmount: js.UndefOr[Amount] = js.undefined
       
-      var additionalChargePromotions: js.UndefOr[js.Array[Promotion]] = js.native
+      var additionalChargePromotions: js.UndefOr[js.Array[Promotion]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UnitInvoiceAdditionalCharge {
       
@@ -16012,14 +15760,13 @@ object Content {
       }
     }
     
-    @js.native
     trait UnitInvoiceTaxLine extends StObject {
       
-      var taxAmount: js.UndefOr[Price] = js.native
+      var taxAmount: js.UndefOr[Price] = js.undefined
       
-      var taxName: js.UndefOr[String] = js.native
+      var taxName: js.UndefOr[String] = js.undefined
       
-      var taxType: js.UndefOr[String] = js.native
+      var taxType: js.UndefOr[String] = js.undefined
     }
     object UnitInvoiceTaxLine {
       
@@ -16052,18 +15799,17 @@ object Content {
       }
     }
     
-    @js.native
     trait Value extends StObject {
       
-      var carrierRateName: js.UndefOr[String] = js.native
+      var carrierRateName: js.UndefOr[String] = js.undefined
       
-      var flatRate: js.UndefOr[Price] = js.native
+      var flatRate: js.UndefOr[Price] = js.undefined
       
-      var noShipping: js.UndefOr[Boolean] = js.native
+      var noShipping: js.UndefOr[Boolean] = js.undefined
       
-      var pricePercentage: js.UndefOr[String] = js.native
+      var pricePercentage: js.UndefOr[String] = js.undefined
       
-      var subtableName: js.UndefOr[String] = js.native
+      var subtableName: js.UndefOr[String] = js.undefined
     }
     object Value {
       
@@ -16108,12 +15854,11 @@ object Content {
       }
     }
     
-    @js.native
     trait Weight extends StObject {
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Weight {
       
@@ -16156,24 +15901,23 @@ object Content {
     *
     * ContentService
     */
-  @js.native
   trait TextOutput extends StObject {
     
-    def append(addedContent: String): TextOutput = js.native
+    def append(addedContent: String): TextOutput
     
-    def clear(): TextOutput = js.native
+    def clear(): TextOutput
     
-    def downloadAsFile(filename: String): TextOutput = js.native
+    def downloadAsFile(filename: String): TextOutput
     
-    def getContent(): String = js.native
+    def getContent(): String
     
-    def getFileName(): String = js.native
+    def getFileName(): String
     
-    def getMimeType(): MimeType = js.native
+    def getMimeType(): MimeType
     
-    def setContent(content: String): TextOutput = js.native
+    def setContent(content: String): TextOutput
     
-    def setMimeType(mimeType: MimeType): TextOutput = js.native
+    def setMimeType(mimeType: MimeType): TextOutput
   }
   object TextOutput {
     

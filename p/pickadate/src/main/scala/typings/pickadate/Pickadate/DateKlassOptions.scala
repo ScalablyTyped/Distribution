@@ -2,67 +2,67 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateKlassOptions extends KlassOptions {
+trait DateKlassOptions
+  extends StObject
+     with KlassOptions {
   
   // default 'picker__footer'
   // Today & close buttons
-  var buttonClose: js.UndefOr[String] = js.native
+  var buttonClose: js.UndefOr[String] = js.undefined
   
   // default 'picker__button--close'
-  var buttonToday: js.UndefOr[String] = js.native
+  var buttonToday: js.UndefOr[String] = js.undefined
   
   // default 'picker__weekday'
   // Day states
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--outfocus'
   // The picker footer
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
   // The picker header
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   // default 'picker__day'
-  var infocus: js.UndefOr[String] = js.native
+  var infocus: js.UndefOr[String] = js.undefined
   
   // default 'picker__nav--disabled'
   // Month & year labels
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
   // default 'picker__nav--next'
-  var navDisabled: js.UndefOr[String] = js.native
+  var navDisabled: js.UndefOr[String] = js.undefined
   
   // default 'picker__nav--prev'
-  var navNext: js.UndefOr[String] = js.native
+  var navNext: js.UndefOr[String] = js.undefined
   
   // default 'picker__header'
   // Month navigation
-  var navPrev: js.UndefOr[String] = js.native
+  var navPrev: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--infocus'
-  var outfocus: js.UndefOr[String] = js.native
+  var outfocus: js.UndefOr[String] = js.undefined
   
   // default 'picker__year'
   // Month & year dropdowns
-  var selectMonth: js.UndefOr[String] = js.native
+  var selectMonth: js.UndefOr[String] = js.undefined
   
   // default 'picker__select--month'
-  var selectYear: js.UndefOr[String] = js.native
+  var selectYear: js.UndefOr[String] = js.undefined
   
   // default 'picker__select--year'
   // Table of dates
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
   
   // default 'picker__table'
   // Weekday labels
-  var weekdays: js.UndefOr[String] = js.native
+  var weekdays: js.UndefOr[String] = js.undefined
   
   // default 'picker__month'
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object DateKlassOptions {
   

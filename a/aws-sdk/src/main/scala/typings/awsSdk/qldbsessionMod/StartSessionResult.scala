@@ -2,16 +2,14 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSessionResult extends StObject {
   
   /**
     * Session token of the started session. This SessionToken is required for every subsequent command that is issued during the current session.
     */
-  var SessionToken: js.UndefOr[typings.awsSdk.qldbsessionMod.SessionToken] = js.native
+  var SessionToken: js.UndefOr[typings.awsSdk.qldbsessionMod.SessionToken] = js.undefined
 }
 object StartSessionResult {
   

@@ -5,17 +5,17 @@ import typings.analyticsNode.mod.AnalyticsNode.Identity
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait AnonymousId extends Identity {
+  trait AnonymousId
+    extends StObject
+       with Identity {
     
-    var anonymousId: String | Double = js.native
+    var anonymousId: String | Double
     
-    var userId: js.UndefOr[String | Double] = js.native
+    var userId: js.UndefOr[String | Double] = js.undefined
   }
   object AnonymousId {
     
@@ -39,20 +39,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Category extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.native
+    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
   }
   object Category {
     
@@ -103,18 +102,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var _metadata: NodeVersion = js.native
+    var _metadata: NodeVersion
     
-    var context: Dictkey = js.native
+    var context: Dictkey
     
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Context {
     
@@ -151,11 +149,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var library: Name = js.native
+    var library: Name
   }
   object Dictkey {
     
@@ -173,18 +171,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Enable extends StObject {
     
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
-    var flushAt: js.UndefOr[Double] = js.native
+    var flushAt: js.UndefOr[Double] = js.undefined
     
-    var flushInterval: js.UndefOr[Double] = js.native
+    var flushInterval: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double | String] = js.native
+    var timeout: js.UndefOr[Double | String] = js.undefined
   }
   object Enable {
     
@@ -229,18 +226,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var event: String = js.native
+    var event: String
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.native
+    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
   }
   object Event {
     
@@ -282,18 +278,17 @@ object anon {
     }
   }
   
-  @js.native
   trait GroupId extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var groupId: String | Double = js.native
+    var groupId: String | Double
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.native
+    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
     
-    var traits: js.UndefOr[js.Any] = js.native
+    var traits: js.UndefOr[js.Any] = js.undefined
   }
   object GroupId {
     
@@ -335,16 +330,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Integrations extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.native
+    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
     
-    var traits: js.UndefOr[js.Any] = js.native
+    var traits: js.UndefOr[js.Any] = js.undefined
   }
   object Integrations {
     
@@ -383,12 +377,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -409,11 +402,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NodeVersion
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var nodeVersion: String = js.native
+    var nodeVersion: String
   }
   object NodeVersion {
     
@@ -431,12 +424,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PreviousId extends StObject {
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.native
+    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
     
-    var previousId: String | Double = js.native
+    var previousId: String | Double
   }
   object PreviousId {
     
@@ -460,10 +452,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait UserId extends Identity {
+  trait UserId
+    extends StObject
+       with Identity {
     
-    var userId: String | Double = js.native
+    var userId: String | Double
   }
   object UserId {
     

@@ -10,47 +10,45 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarAvatarMod extends Shortcut {
   
   @JSImport("antd/lib/avatar/avatar", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[AvatarProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
   trait AvatarProps extends StObject {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var gap: js.UndefOr[Double] = js.native
+    var gap: js.UndefOr[Double] = js.undefined
     
     /** icon to be used in avatar */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Boolean]] = js.native
+    var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
     /** Shape of avatar, options:`circle`, `square` */
-    var shape: js.UndefOr[circle | square] = js.native
+    var shape: js.UndefOr[circle | square] = js.undefined
     
-    var size: js.UndefOr[AvatarSize] = js.native
+    var size: js.UndefOr[AvatarSize] = js.undefined
     
     /** Src of image avatar */
-    var src: js.UndefOr[ReactNode] = js.native
+    var src: js.UndefOr[ReactNode] = js.undefined
     
     /** Srcset of image avatar */
-    var srcSet: js.UndefOr[String] = js.native
+    var srcSet: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AvatarProps {
     
@@ -143,8 +141,8 @@ object avatarAvatarMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[AvatarProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `avatarAvatarMod.foo` */
-  override def _to: ForwardRefExoticComponent[AvatarProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]] = default
 }

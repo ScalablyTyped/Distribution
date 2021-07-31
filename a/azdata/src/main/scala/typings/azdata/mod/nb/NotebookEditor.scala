@@ -5,7 +5,6 @@ import typings.vscode.Thenable
 import typings.vscode.mod.ViewColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,7 +50,7 @@ trait NotebookEditor extends StObject {
     * Kicks off execution of all code cells. Thenable will resolve only when full execution of all cells is completed.
     */
   def runAllCells(): Thenable[Boolean] = js.native
-  def runAllCells(startCell: js.UndefOr[scala.Nothing], endCell: NotebookCell): Thenable[Boolean] = js.native
+  def runAllCells(startCell: Unit, endCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell, endCell: NotebookCell): Thenable[Boolean] = js.native
   

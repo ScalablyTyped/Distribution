@@ -2,31 +2,29 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var context: String = js.native
+  var context: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var state: String = js.native
+  var state: String
   
-  var target_url: String = js.native
+  var target_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object Context {
   

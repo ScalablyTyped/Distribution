@@ -11,198 +11,149 @@ import typings.std.HTMLAnchorElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hookrouter", "A")
+  @JSImport("hookrouter", JSImport.Namespace)
   @js.native
-  def A(props: AProps): ReactHTMLElement[HTMLAnchorElement] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hookrouter", "confirmNavigation")
-  @js.native
-  def confirmNavigation(): Unit = js.native
+  @scala.inline
+  def A(props: AProps): ReactHTMLElement[HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("A")(props.asInstanceOf[js.Any]).asInstanceOf[ReactHTMLElement[HTMLAnchorElement]]
   
-  @JSImport("hookrouter", "get")
-  @js.native
-  def get(componentId: Double): RouteObject[_] | Null = js.native
+  @scala.inline
+  def confirmNavigation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmNavigation")().asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "getBasepath")
-  @js.native
-  def getBasepath(): String = js.native
+  @scala.inline
+  def get(componentId: Double): RouteObject[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(componentId.asInstanceOf[js.Any]).asInstanceOf[RouteObject[js.Any] | Null]
   
-  @JSImport("hookrouter", "getPath")
-  @js.native
-  def getPath(): String = js.native
+  @scala.inline
+  def getBasepath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasepath")().asInstanceOf[String]
   
-  @JSImport("hookrouter", "getQueryParams")
-  @js.native
-  def getQueryParams(): QueryParams = js.native
+  @scala.inline
+  def getPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")().asInstanceOf[String]
   
-  @JSImport("hookrouter", "getTitle")
-  @js.native
-  def getTitle(): String = js.native
+  @scala.inline
+  def getQueryParams(): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")().asInstanceOf[QueryParams]
   
-  @JSImport("hookrouter", "getWorkingPath")
-  @js.native
-  def getWorkingPath(parentRouterId: String): String = js.native
+  @scala.inline
+  def getTitle(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")().asInstanceOf[String]
   
-  @JSImport("hookrouter", "interceptRoute")
-  @js.native
-  def interceptRoute(previousRoute: String, nextRoute: String): js.Array[String] = js.native
+  @scala.inline
+  def getWorkingPath(parentRouterId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkingPath")(parentRouterId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(
-    url: String,
-    replace: js.UndefOr[scala.Nothing],
-    queryParams: js.UndefOr[scala.Nothing],
-    replaceQueryParams: Boolean
-  ): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: js.UndefOr[scala.Nothing], queryParams: Null, replaceQueryParams: Boolean): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: js.UndefOr[scala.Nothing], queryParams: QueryParams): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(
-    url: String,
-    replace: js.UndefOr[scala.Nothing],
-    queryParams: QueryParams,
-    replaceQueryParams: Boolean
-  ): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: Boolean): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: Boolean, queryParams: js.UndefOr[scala.Nothing], replaceQueryParams: Boolean): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: Boolean, queryParams: Null, replaceQueryParams: Boolean): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: Boolean, queryParams: QueryParams): Unit = js.native
-  @JSImport("hookrouter", "navigate")
-  @js.native
-  def navigate(url: String, replace: Boolean, queryParams: QueryParams, replaceQueryParams: Boolean): Unit = js.native
+  @scala.inline
+  def interceptRoute(previousRoute: String, nextRoute: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptRoute")(previousRoute.asInstanceOf[js.Any], nextRoute.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("hookrouter", "objectToQueryString")
-  @js.native
-  def objectToQueryString(inObj: QueryParams): String = js.native
+  @scala.inline
+  def navigate(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Boolean, queryParams: Null, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Boolean, queryParams: Unit, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Boolean, queryParams: QueryParams): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Boolean, queryParams: QueryParams, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Unit, queryParams: Null, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Unit, queryParams: Unit, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Unit, queryParams: QueryParams): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def navigate(url: String, replace: Unit, queryParams: QueryParams, replaceQueryParams: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replaceQueryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "prepareRoute")
-  @js.native
-  def prepareRoute(inRoute: String): js.Tuple2[RegExp, js.Array[String]] = js.native
+  @scala.inline
+  def objectToQueryString(inObj: QueryParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(inObj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hookrouter", "queryStringToObject")
-  @js.native
-  def queryStringToObject(inStr: String): QueryParams = js.native
+  @scala.inline
+  def prepareRoute(inRoute: String): js.Tuple2[RegExp, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareRoute")(inRoute.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RegExp, js.Array[String]]]
   
-  @JSImport("hookrouter", "remove")
-  @js.native
-  def remove(componentId: Double): Unit = js.native
+  @scala.inline
+  def queryStringToObject(inStr: String): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(inStr.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
   
-  @JSImport("hookrouter", "resetPath")
-  @js.native
-  def resetPath(): Unit = js.native
+  @scala.inline
+  def remove(componentId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(componentId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "resolvePath")
-  @js.native
-  def resolvePath(inPath: String): String = js.native
+  @scala.inline
+  def resetPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPath")().asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "setBasepath")
-  @js.native
-  def setBasepath(inBasepath: String): Unit = js.native
+  @scala.inline
+  def resolvePath(inPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(inPath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hookrouter", "setLinkProps")
-  @js.native
-  def setLinkProps(props: AProps): AProps = js.native
+  @scala.inline
+  def setBasepath(inBasepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBasepath")(inBasepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "setPath")
-  @js.native
-  def setPath(inPath: String): Unit = js.native
+  @scala.inline
+  def setLinkProps(props: AProps): AProps = ^.asInstanceOf[js.Dynamic].applyDynamic("setLinkProps")(props.asInstanceOf[js.Any]).asInstanceOf[AProps]
   
-  @JSImport("hookrouter", "setQueryParams")
-  @js.native
-  def setQueryParams(inObj: QueryParams): Unit = js.native
-  @JSImport("hookrouter", "setQueryParams")
-  @js.native
-  def setQueryParams(inObj: QueryParams, replace: Boolean): Unit = js.native
+  @scala.inline
+  def setPath(inPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(inPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "stopInterception")
-  @js.native
-  def stopInterception(): Unit = js.native
+  @scala.inline
+  def setQueryParams(inObj: QueryParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQueryParams")(inObj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setQueryParams(inObj: QueryParams, replace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setQueryParams")(inObj.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "updatePathHooks")
-  @js.native
-  def updatePathHooks(): Unit = js.native
+  @scala.inline
+  def stopInterception(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopInterception")().asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "useControlledInterceptor")
-  @js.native
-  def useControlledInterceptor(): js.Tuple4[InterceptedPath, js.Function0[Unit], js.Function0[Unit], js.Function0[Unit]] = js.native
+  @scala.inline
+  def updatePathHooks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updatePathHooks")().asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "useInterceptor")
-  @js.native
-  def useInterceptor(handlerFn: js.Function2[/* currentPath */ String, /* nextPath */ String, String]): js.Function0[js.Function1[/* componentId */ Double, Unit]] = js.native
+  @scala.inline
+  def useControlledInterceptor(): js.Tuple4[InterceptedPath, js.Function0[Unit], js.Function0[Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControlledInterceptor")().asInstanceOf[js.Tuple4[InterceptedPath, js.Function0[Unit], js.Function0[Unit], js.Function0[Unit]]]
   
-  @JSImport("hookrouter", "usePath")
-  @js.native
-  def usePath(): String = js.native
-  @JSImport("hookrouter", "usePath")
-  @js.native
-  def usePath(active: js.UndefOr[scala.Nothing], withBasePath: Boolean): String = js.native
-  @JSImport("hookrouter", "usePath")
-  @js.native
-  def usePath(active: Boolean): String = js.native
-  @JSImport("hookrouter", "usePath")
-  @js.native
-  def usePath(active: Boolean, withBasePath: Boolean): String = js.native
+  @scala.inline
+  def useInterceptor(handlerFn: js.Function2[/* currentPath */ String, /* nextPath */ String, String]): js.Function0[js.Function1[/* componentId */ Double, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useInterceptor")(handlerFn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function1[/* componentId */ Double, Unit]]]
   
-  @JSImport("hookrouter", "useQueryParams")
-  @js.native
+  @scala.inline
+  def usePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("usePath")().asInstanceOf[String]
+  @scala.inline
+  def usePath(active: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("usePath")(active.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def usePath(active: Boolean, withBasePath: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("usePath")(active.asInstanceOf[js.Any], withBasePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def usePath(active: Unit, withBasePath: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("usePath")(active.asInstanceOf[js.Any], withBasePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
   def useQueryParams(): js.Tuple2[
     QueryParams, 
     js.Function2[/* inObj */ QueryParams, /* replace */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryParams")().asInstanceOf[js.Tuple2[
+    QueryParams, 
+    js.Function2[/* inObj */ QueryParams, /* replace */ js.UndefOr[Boolean], Unit]
+  ]]
   
-  @JSImport("hookrouter", "useRedirect")
-  @js.native
-  def useRedirect(fromURL: String, toURL: String): Unit = js.native
-  @JSImport("hookrouter", "useRedirect")
-  @js.native
-  def useRedirect(fromURL: String, toURL: String, queryParams: js.UndefOr[scala.Nothing], replace: Boolean): Unit = js.native
-  @JSImport("hookrouter", "useRedirect")
-  @js.native
-  def useRedirect(fromURL: String, toURL: String, queryParams: Null, replace: Boolean): Unit = js.native
-  @JSImport("hookrouter", "useRedirect")
-  @js.native
-  def useRedirect(fromURL: String, toURL: String, queryParams: QueryParams): Unit = js.native
-  @JSImport("hookrouter", "useRedirect")
-  @js.native
-  def useRedirect(fromURL: String, toURL: String, queryParams: QueryParams, replace: Boolean): Unit = js.native
+  @scala.inline
+  def useRedirect(fromURL: String, toURL: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRedirect")(fromURL.asInstanceOf[js.Any], toURL.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRedirect(fromURL: String, toURL: String, queryParams: Null, replace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRedirect")(fromURL.asInstanceOf[js.Any], toURL.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRedirect(fromURL: String, toURL: String, queryParams: Unit, replace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRedirect")(fromURL.asInstanceOf[js.Any], toURL.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRedirect(fromURL: String, toURL: String, queryParams: QueryParams): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRedirect")(fromURL.asInstanceOf[js.Any], toURL.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRedirect(fromURL: String, toURL: String, queryParams: QueryParams, replace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRedirect")(fromURL.asInstanceOf[js.Any], toURL.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hookrouter", "useRoutes")
-  @js.native
-  def useRoutes[T](routeObj: RouteObject[T]): T | Null = js.native
+  @scala.inline
+  def useRoutes[T](routeObj: RouteObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routeObj.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
-  @JSImport("hookrouter", "useTitle")
-  @js.native
-  def useTitle(inString: String): Unit = js.native
+  @scala.inline
+  def useTitle(inString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useTitle")(inString.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object HookRouter {
     
-    @js.native
-    trait AProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+    trait AProps
+      extends StObject
+         with AnchorHTMLAttributes[HTMLAnchorElement] {
       
       @JSName("href")
-      var href_AProps: String = js.native
+      var href_AProps: String
     }
     object AProps {
       

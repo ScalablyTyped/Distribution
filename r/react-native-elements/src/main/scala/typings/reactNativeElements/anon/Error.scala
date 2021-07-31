@@ -2,21 +2,19 @@ package typings.reactNativeElements.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var primary: String = js.native
+  var primary: String
   
-  var secondary: String = js.native
+  var secondary: String
   
-  var success: String = js.native
+  var success: String
   
-  var warning: String = js.native
+  var warning: String
 }
 object Error {
   

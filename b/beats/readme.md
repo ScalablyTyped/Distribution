@@ -12,7 +12,7 @@ A naive but generic beat-detection module.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 488 |
+| # downloads        | 613 |
 | # stars            | 3 |
 
 ## Links

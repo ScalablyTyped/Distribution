@@ -3,29 +3,27 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Check extends StObject {
   
-  var border: js.UndefOr[ColorWidth] = js.native
+  var border: js.UndefOr[ColorWidth] = js.undefined
   
-  var check: js.UndefOr[BackgroundRadius] = js.native
+  var check: js.UndefOr[BackgroundRadius] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var font: js.UndefOr[`10`] = js.native
+  var font: js.UndefOr[`10`] = js.undefined
   
-  var gap: js.UndefOr[String] = js.native
+  var gap: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[`19`] = js.native
+  var hover: js.UndefOr[`19`] = js.undefined
   
-  var icon: js.UndefOr[ExtendSize] = js.native
+  var icon: js.UndefOr[ExtendSize] = js.undefined
   
-  var icons: js.UndefOr[Circle] = js.native
+  var icons: js.UndefOr[Circle] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object Check {
   

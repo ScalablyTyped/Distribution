@@ -4,18 +4,16 @@ import typings.reactSortableTree.mod.NumberOrStringArray
 import typings.reactSortableTree.mod.TreeItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.TreeNode & react-sortable-tree.react-sortable-tree.TreePath & {  lowerSiblingsCounts :std.Array<number>} */
-@js.native
 trait TreeNodeTreePathlowerSibl extends StObject {
   
-  var lowerSiblingsCounts: js.Array[Double] = js.native
+  var lowerSiblingsCounts: js.Array[Double]
   
-  var node: TreeItem = js.native
+  var node: TreeItem
   
-  var path: NumberOrStringArray = js.native
+  var path: NumberOrStringArray
 }
 object TreeNodeTreePathlowerSibl {
   

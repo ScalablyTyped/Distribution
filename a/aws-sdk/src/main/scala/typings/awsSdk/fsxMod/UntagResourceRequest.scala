@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ARN of the Amazon FSx resource to untag.
     */
-  var ResourceARN: typings.awsSdk.fsxMod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.fsxMod.ResourceARN
   
   /**
     * A list of keys of tags on the resource to untag. In case the tag key doesn't exist, the call will still succeed to be idempotent.
     */
-  var TagKeys: typings.awsSdk.fsxMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.fsxMod.TagKeys
 }
 object UntagResourceRequest {
   

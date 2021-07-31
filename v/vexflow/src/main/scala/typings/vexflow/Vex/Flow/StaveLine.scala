@@ -5,28 +5,26 @@ import typings.vexflow.anon.Family
 import typings.vexflow.anon.Lastnote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaveLine extends StObject {
   
-  def applyFontStyle(): Unit = js.native
+  def applyFontStyle(): Unit
   
-  def applyLineStyle(): Unit = js.native
+  def applyLineStyle(): Unit
   
-  def draw(): StaveLine = js.native
+  def draw(): StaveLine
   
   //inconsistent API: this should be set via an options object in the constructor
-  var render_options: Arrowheadangle = js.native
+  var render_options: Arrowheadangle
   
-  def setContext(context: js.Object): StaveLine = js.native
+  def setContext(context: js.Object): StaveLine
   
-  def setFont(font: Family): StaveLine = js.native
+  def setFont(font: Family): StaveLine
   
-  def setNotes(notes: Lastnote): StaveLine = js.native
+  def setNotes(notes: Lastnote): StaveLine
   
-  def setText(text: String): StaveLine = js.native
+  def setText(text: String): StaveLine
 }
 object StaveLine {
   
@@ -52,13 +50,19 @@ object StaveLine {
   object TextJustification extends StObject {
     
     @js.native
-    sealed trait CENTER extends TextJustification
+    sealed trait CENTER
+      extends StObject
+         with TextJustification
     
     @js.native
-    sealed trait LEFT extends TextJustification
+    sealed trait LEFT
+      extends StObject
+         with TextJustification
     
     @js.native
-    sealed trait RIGHT extends TextJustification
+    sealed trait RIGHT
+      extends StObject
+         with TextJustification
   }
   
   @js.native
@@ -68,10 +72,14 @@ object StaveLine {
   object TextVerticalPosition extends StObject {
     
     @js.native
-    sealed trait BOTTOM extends TextVerticalPosition
+    sealed trait BOTTOM
+      extends StObject
+         with TextVerticalPosition
     
     @js.native
-    sealed trait TOP extends TextVerticalPosition
+    sealed trait TOP
+      extends StObject
+         with TextVerticalPosition
   }
   
   @scala.inline

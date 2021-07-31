@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckCapacityResponse extends StObject {
   
   /**
     * The capacity required by the rules and scope.
     */
-  var Capacity: js.UndefOr[ConsumedCapacity] = js.native
+  var Capacity: js.UndefOr[ConsumedCapacity] = js.undefined
 }
 object CheckCapacityResponse {
   

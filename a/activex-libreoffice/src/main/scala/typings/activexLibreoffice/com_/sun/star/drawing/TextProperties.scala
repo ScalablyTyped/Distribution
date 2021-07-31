@@ -25,13 +25,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style for rendering the text area inside a shape. */
-@js.native
 trait TextProperties
-  extends CharacterProperties
+  extends StObject
+     with CharacterProperties
      with CharacterPropertiesAsian
      with CharacterPropertiesComplex
      with ParagraphProperties
@@ -39,105 +38,105 @@ trait TextProperties
      with ParagraphPropertiesComplex {
   
   /** If this is `TRUE` , numbering is ON for the text of this {@link Shape} . */
-  var IsNumbering: Boolean = js.native
+  var IsNumbering: Boolean
   
   /** This is the number of pixels the text is moved in each animation step. */
-  var TextAnimationAmount: Double = js.native
+  var TextAnimationAmount: Double
   
   /**
     * This number defines how many times the text animation is repeated.
     *
     * If this is set to zero, the repeat is endless.
     */
-  var TextAnimationCount: Double = js.native
+  var TextAnimationCount: Double
   
   /** This is the delay in thousandths of a second between each of the animation steps. */
-  var TextAnimationDelay: Double = js.native
+  var TextAnimationDelay: Double
   
   /** This enumeration defines the direction in which the text moves. */
-  var TextAnimationDirection: typings.activexLibreoffice.com_.sun.star.drawing.TextAnimationDirection = js.native
+  var TextAnimationDirection: typings.activexLibreoffice.com_.sun.star.drawing.TextAnimationDirection
   
   /** This value defines the type of animation. */
-  var TextAnimationKind: typings.activexLibreoffice.com_.sun.star.drawing.TextAnimationKind = js.native
+  var TextAnimationKind: typings.activexLibreoffice.com_.sun.star.drawing.TextAnimationKind
   
   /** If this value is `TRUE` , the text is visible at the start of the animation. */
-  var TextAnimationStartInside: Boolean = js.native
+  var TextAnimationStartInside: Boolean
   
   /** If this value is `TRUE` , the text is visible at the end of the animation. */
-  var TextAnimationStopInside: Boolean = js.native
+  var TextAnimationStopInside: Boolean
   
   /** If this value is `TRUE` , the height of the {@link Shape} is automatically expanded/shrunk when text is added to or removed from the {@link Shape} . */
-  var TextAutoGrowHeight: Boolean = js.native
+  var TextAutoGrowHeight: Boolean
   
   /** If this value is `TRUE` , the width of the {@link Shape} is automatically expanded/shrunk when text is added to or removed from the {@link Shape} . */
-  var TextAutoGrowWidth: Boolean = js.native
+  var TextAutoGrowWidth: Boolean
   
   /** If this value is `TRUE` , the left edge of every line of text is aligned with the left edge of this {@link Shape} . */
-  var TextContourFrame: Boolean = js.native
+  var TextContourFrame: Boolean
   
   /** With this set to `TRUE` , the text inside of the {@link Shape} is stretched to fit into the {@link Shape} . */
-  var TextFitToSize: TextFitToSizeType = js.native
+  var TextFitToSize: TextFitToSizeType
   
   /** adjusts the horizontal position of the text inside of the {@link Shape} . */
-  var TextHorizontalAdjust: typings.activexLibreoffice.com_.sun.star.drawing.TextHorizontalAdjust = js.native
+  var TextHorizontalAdjust: typings.activexLibreoffice.com_.sun.star.drawing.TextHorizontalAdjust
   
   /**
     * This is the distance from the left edge of the {@link Shape} to the left edge of the text.
     *
     * This is only useful if {@link Text.TextHorizontalAdjust} is BLOCK or STRETCH or if Text::TextFitSize is `TRUE` .
     */
-  var TextLeftDistance: Double = js.native
+  var TextLeftDistance: Double
   
   /**
     * This is the distance from the lower edge of the {@link Shape} to the lower edge of the text.
     *
     * This is only useful if {@link Text.TextVerticalAdjust} is BLOCK or if Text::TextFitSize is `TRUE` .
     */
-  var TextLowerDistance: Double = js.native
+  var TextLowerDistance: Double
   
   /**
     * with this property you can set the maximum height for a shape with text. On edit, the auto grow feature will not grow the object higher than the value
     * of this property.
     */
-  var TextMaximumFrameHeight: Double = js.native
+  var TextMaximumFrameHeight: Double
   
   /**
     * with this property you can set the maximum width for a shape with text. On edit, the auto grow feature will not grow the objects wider than the value
     * of this property.
     */
-  var TextMaximumFrameWidth: Double = js.native
+  var TextMaximumFrameWidth: Double
   
   /**
     * with this property you can set the minimum height for a shape with text. On edit, the auto grow feature will not shrink the objects height smaller
     * than the value of this property.
     */
-  var TextMinimumFrameHeight: Double = js.native
+  var TextMinimumFrameHeight: Double
   
   /**
     * with this property you can set the minimum width for a shape with text. On edit, the auto grow feature will not shrink the object width smaller than
     * the value of this property.
     */
-  var TextMinimumFrameWidth: Double = js.native
+  var TextMinimumFrameWidth: Double
   
   /**
     * This is the distance from the right edge of the {@link Shape} to the right edge of the text.
     *
     * This is only useful if {@link Text.TextHorizontalAdjust} is BLOCK or STRETCH or if Text::TextFitSize is `TRUE` .
     */
-  var TextRightDistance: Double = js.native
+  var TextRightDistance: Double
   
   /**
     * This is the distance from the upper edge of the {@link Shape} to the upper edge of the text.
     *
     * This is only useful if {@link Text.TextVerticalAdjust} is BLOCK or if Text::TextFitSize is `TRUE` .
     */
-  var TextUpperDistance: Double = js.native
+  var TextUpperDistance: Double
   
   /** adjusts the vertical position of the text inside of the {@link Shape} . */
-  var TextVerticalAdjust: typings.activexLibreoffice.com_.sun.star.drawing.TextVerticalAdjust = js.native
+  var TextVerticalAdjust: typings.activexLibreoffice.com_.sun.star.drawing.TextVerticalAdjust
   
   /** This value selects the writing mode for the text. */
-  var TextWritingMode: WritingMode = js.native
+  var TextWritingMode: WritingMode
 }
 object TextProperties {
   

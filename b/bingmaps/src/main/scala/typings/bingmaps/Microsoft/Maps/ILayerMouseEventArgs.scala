@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILayerMouseEventArgs extends StObject {
   
   /** 
   		* @deprecated use target
   		* The IPrimitive shape (pushpin, polyline, polygon) that the event occurred on. 
   		*/
-  var primitive: IPrimitive = js.native
+  var primitive: IPrimitive
 }
 object ILayerMouseEventArgs {
   

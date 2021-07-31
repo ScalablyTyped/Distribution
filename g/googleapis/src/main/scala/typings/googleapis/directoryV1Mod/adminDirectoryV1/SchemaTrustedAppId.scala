@@ -2,36 +2,34 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Trusted App Ids Resource object in Directory API.
   */
-@js.native
 trait SchemaTrustedAppId extends StObject {
   
   /**
     * Android package name.
     */
-  var androidPackageName: js.UndefOr[String] = js.native
+  var androidPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * SHA1 signature of the app certificate.
     */
-  var certificateHashSHA1: js.UndefOr[String] = js.native
+  var certificateHashSHA1: js.UndefOr[String] = js.undefined
   
   /**
     * SHA256 signature of the app certificate.
     */
-  var certificateHashSHA256: js.UndefOr[String] = js.native
+  var certificateHashSHA256: js.UndefOr[String] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a trusted AppId.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaTrustedAppId {
   

@@ -2,71 +2,69 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Linesegmentsize extends StObject {
   
   /**
     * Sets the transparency of the scale-x / scale-y guide. See the red lines. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the scale-x / scale-y guide. See the blue background in between the red lines. "none" | "transparent"
     *  | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. To be used with background-color-2. "none" | "transparent" |
     * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. To be used with background-color-1. "none" | "transparent" |
     *  "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[BackgroundcolorBordercolor]] = js.native
+  var items: js.UndefOr[js.Array[BackgroundcolorBordercolor]] = js.undefined
   
   /**
     * Sets the line color of the scale-x / scale-y guide. See the red lines. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow
     * " | "rgb(100, 15, 15)" | ...
     */
-  var `line-color`: js.UndefOr[String] = js.native
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
     * When using a dashed or dotted line-type, this will set the size of each gap between line segments. Can be used with line-segment-s
     * ize to create unique dashed or dotted lines. For the scale-x / scale-y guide. See the space between red lines. 4 | "6px" | ...
     */
-  var `line-gap-size`: js.UndefOr[js.Any] = js.native
+  var `line-gap-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * When using a dashed or dotted line-type, this will set the size of each visible segment of line. Can be used with line-gap-size to
     *  create unique dashed or dotted lines. For the scale-x / scale-y guide. See the red lines. 4 | "6px" | ...
     */
-  var `line-segment-size`: js.UndefOr[js.Any] = js.native
+  var `line-segment-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the style applied to lines and borders of the scale-x / scale-y guide. See the red lines. "solid" | "dotted" | "dashed" | "da
     * shdot"
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line width of the object, applicable on non-closed shapes. For the scale-x / scale-y guide. See the red lines. 4 | "6px"
     * | ...
     */
-  var `line-width`: js.UndefOr[js.Any] = js.native
+  var `line-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Linesegmentsize {
   

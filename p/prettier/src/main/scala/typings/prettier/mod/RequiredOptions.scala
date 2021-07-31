@@ -19,47 +19,46 @@ import typings.prettier.prettierStrings.preserve
 import typings.prettier.prettierStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequiredOptions
-  extends typings.prettier.mod.doc.printer.Options {
+  extends StObject
+     with typings.prettier.mod.doc.printer.Options {
   
   /**
     * Include parentheses around a sole arrow function parameter.
     * @default 'always'
     */
-  var arrowParens: avoid | always = js.native
+  var arrowParens: avoid | always
   
   /**
     * Print spaces between brackets in object literals.
     * @default true
     */
-  var bracketSpacing: Boolean = js.native
+  var bracketSpacing: Boolean
   
   /**
     * Control whether Prettier formats quoted code embedded in the file.
     * @default 'auto'
     */
-  var embeddedLanguageFormatting: auto | off = js.native
+  var embeddedLanguageFormatting: auto | off
   
   /**
     * Which end of line characters to apply.
     * @default 'lf'
     */
-  var endOfLine: auto | lf | crlf | cr = js.native
+  var endOfLine: auto | lf | crlf | cr
   
   /**
     * Specify the input filepath. This will be used to do parser inference.
     */
-  var filepath: String = js.native
+  var filepath: String
   
   /**
     * How to handle whitespaces in HTML.
     * @default 'css'
     */
-  var htmlWhitespaceSensitivity: css | strict | ignore = js.native
+  var htmlWhitespaceSensitivity: css | strict | ignore
   
   /**
     * Prettier can insert a special @format marker at the top of files specifying that
@@ -68,85 +67,85 @@ trait RequiredOptions
     * the file then this option will add a newline to it with the @format marker.
     * @default false
     */
-  var insertPragma: Boolean = js.native
+  var insertPragma: Boolean
   
   /**
     * Put the `>` of a multi-line JSX element at the end of the last line instead of being alone on the next line.
     * @default false
     */
-  var jsxBracketSameLine: Boolean = js.native
+  var jsxBracketSameLine: Boolean
   
   /**
     * Use single quotes in JSX.
     * @default false
     */
-  var jsxSingleQuote: Boolean = js.native
+  var jsxSingleQuote: Boolean
   
   /**
     * Specify which parser to use.
     */
-  var parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser = js.native
+  var parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser
   
   /**
     * The plugin API is in a beta state.
     */
-  var plugins: js.Array[String | Plugin[_]] = js.native
+  var plugins: js.Array[String | Plugin[js.Any]]
   
   /**
     * By default, Prettier will wrap markdown text as-is since some services use a linebreak-sensitive renderer.
     * In some cases you may want to rely on editor/viewer soft wrapping instead, so this option allows you to opt out.
     * @default 'preserve'
     */
-  var proseWrap: always | never | preserve = js.native
+  var proseWrap: always | never | preserve
   
   /**
     * Change when properties in objects are quoted.
     * @default 'as-needed'
     */
-  var quoteProps: `as-needed` | consistent | preserve = js.native
+  var quoteProps: `as-needed` | consistent | preserve
   
   /**
     * Format only a segment of a file.
     * @default Infinity
     */
-  var rangeEnd: Double = js.native
+  var rangeEnd: Double
   
   /**
     * Format only a segment of a file.
     * @default 0
     */
-  var rangeStart: Double = js.native
+  var rangeStart: Double
   
   /**
     * Prettier can restrict itself to only format files that contain a special comment, called a pragma, at the top of the file.
     * This is very useful when gradually transitioning large, unformatted codebases to prettier.
     * @default false
     */
-  var requirePragma: Boolean = js.native
+  var requirePragma: Boolean
   
   /**
     * Print semicolons at the ends of statements.
     * @default true
     */
-  var semi: Boolean = js.native
+  var semi: Boolean
   
   /**
     * Use single quotes instead of double quotes.
     * @default false
     */
-  var singleQuote: Boolean = js.native
+  var singleQuote: Boolean
   
   /**
     * Print trailing commas wherever possible.
     * @default 'es5'
     */
-  var trailingComma: none | es5 | all = js.native
+  var trailingComma: none | es5 | all
   
   /**
     * Whether or not to indent the code inside <script> and <style> tags in Vue files.
     * @default false
     */
-  var vueIndentScriptAndStyle: Boolean = js.native
+  var vueIndentScriptAndStyle: Boolean
 }
 object RequiredOptions {
   
@@ -163,7 +162,7 @@ object RequiredOptions {
     jsxBracketSameLine: Boolean,
     jsxSingleQuote: Boolean,
     parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser,
-    plugins: js.Array[String | Plugin[_]],
+    plugins: js.Array[String | Plugin[js.Any]],
     printWidth: Double,
     proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
@@ -218,7 +217,7 @@ object RequiredOptions {
     def setParserFunction3(value: (/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options) => AST): Self = StObject.set(x, "parser", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPlugins(value: js.Array[String | Plugin[_]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[String | Plugin[js.Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPluginsVarargs(value: (String | Plugin[js.Any])*): Self = StObject.set(x, "plugins", js.Array(value :_*))

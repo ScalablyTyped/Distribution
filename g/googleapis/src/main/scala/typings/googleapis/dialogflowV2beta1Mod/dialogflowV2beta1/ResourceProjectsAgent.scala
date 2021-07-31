@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent")
@@ -34,21 +33,21 @@ class ResourceProjectsAgent protected () extends StObject {
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def export(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(params: ParamsResourceProjectsAgentExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(
+  def `export`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def `export`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(params: ParamsResourceProjectsAgentExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsAgentExport,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  def export(
+  def `export`(
     params: ParamsResourceProjectsAgentExport,
     options: BodyResponseCallback[SchemaGoogleLongrunningOperation],
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  def export(params: ParamsResourceProjectsAgentExport, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(
+  def `export`(params: ParamsResourceProjectsAgentExport, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsAgentExport,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
@@ -72,7 +71,7 @@ class ResourceProjectsAgent protected () extends StObject {
     */
   def `import`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `import`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(params: ParamsResourceProjectsAgentImport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsAgentImport,
@@ -109,7 +108,7 @@ class ResourceProjectsAgent protected () extends StObject {
     */
   def restore(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def restore(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def restore(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def restore(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def restore(params: ParamsResourceProjectsAgentRestore): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def restore(
     params: ParamsResourceProjectsAgentRestore,
@@ -147,7 +146,7 @@ class ResourceProjectsAgent protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse] = js.native
   def search(params: ParamsResourceProjectsAgentSearch): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse] = js.native
   def search(
     params: ParamsResourceProjectsAgentSearch,
@@ -183,7 +182,7 @@ class ResourceProjectsAgent protected () extends StObject {
     */
   def train(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def train(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def train(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def train(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def train(params: ParamsResourceProjectsAgentTrain): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def train(
     params: ParamsResourceProjectsAgentTrain,

@@ -10,9 +10,9 @@ Super simple, fast and easy to use tweening engine which incorporates optimised 
 | ------------------ | :-------------: |
 | Full name          | @tweenjs/tween.js |
 | Keywords           | tween, interpolation |
-| # releases         | 20 |
-| # dependents       | 184 |
-| # downloads        | 3219962 |
+| # releases         | 24 |
+| # dependents       | 213 |
+| # downloads        | 4075586 |
 | # stars            | 2 |
 
 ## Links

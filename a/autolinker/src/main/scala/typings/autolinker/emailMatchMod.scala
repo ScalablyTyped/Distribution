@@ -5,7 +5,6 @@ import typings.autolinker.matchMatchMod.Match
 import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emailMatchMod {
@@ -35,10 +34,11 @@ object emailMatchMod {
     def getEmail(): String = js.native
   }
   
-  @js.native
-  trait EmailMatchConfig extends MatchConfig {
+  trait EmailMatchConfig
+    extends StObject
+       with MatchConfig {
     
-    var email: String = js.native
+    var email: String
   }
   object EmailMatchConfig {
     

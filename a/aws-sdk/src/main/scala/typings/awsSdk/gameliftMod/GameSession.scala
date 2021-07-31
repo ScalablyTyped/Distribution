@@ -2,101 +2,99 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameSession extends StObject {
   
   /**
     * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A unique identifier for a player. This ID is used to enforce a resource protection policy (if one exists), that limits the number of game sessions a player can create.
     */
-  var CreatorId: js.UndefOr[NonZeroAndMaxString] = js.native
+  var CreatorId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Number of players currently in the game session.
     */
-  var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.native
+  var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
     */
-  var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.native
+  var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet that this game session is running on. 
     */
-  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
     * A unique identifier for a fleet that the game session is running on.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
     * Set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session). You can search for active game sessions based on this custom data with SearchGameSessions.
     */
-  var GameProperties: js.UndefOr[GamePropertyList] = js.native
+  var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
   /**
     * Set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
     */
-  var GameSessionData: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionData] = js.native
+  var GameSessionData: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionData] = js.undefined
   
   /**
     * A unique identifier for the game session. A game session ARN has the following format: arn:aws:gamelift:&lt;region&gt;::gamesession/&lt;fleet ID&gt;/&lt;custom ID string or idempotency token&gt;.
     */
-  var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.native
+  var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * IP address of the instance that is running the game session. When connecting to a Amazon GameLift game server, a client needs to reference an IP address (or DNS name) and port number.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.undefined
   
   /**
     * Information about the matchmaking process that was used to create the game session. It is in JSON syntax, formatted as a string. In addition the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments. For more details on matchmaker data, see Match Data. Matchmaker data is useful when requesting match backfills, and is updated whenever new players are added during a successful backfill (see StartMatchBackfill). 
     */
-  var MatchmakerData: js.UndefOr[typings.awsSdk.gameliftMod.MatchmakerData] = js.native
+  var MatchmakerData: js.UndefOr[typings.awsSdk.gameliftMod.MatchmakerData] = js.undefined
   
   /**
     * The maximum number of players that can be connected simultaneously to the game session.
     */
-  var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.native
+  var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * A descriptive label that is associated with a game session. Session names do not need to be unique.
     */
-  var Name: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Indicates whether or not the game session is accepting new players.
     */
-  var PlayerSessionCreationPolicy: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionCreationPolicy] = js.native
+  var PlayerSessionCreationPolicy: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionCreationPolicy] = js.undefined
   
   /**
     * Port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
-  var Port: js.UndefOr[PortNumber] = js.native
+  var Port: js.UndefOr[PortNumber] = js.undefined
   
   /**
     * Current status of the game session. A game session must have an ACTIVE status to have player sessions.
     */
-  var Status: js.UndefOr[GameSessionStatus] = js.native
+  var Status: js.UndefOr[GameSessionStatus] = js.undefined
   
   /**
     * Provides additional information about game session status. INTERRUPTED indicates that the game session was hosted on a spot instance that was reclaimed, causing the active game session to be terminated.
     */
-  var StatusReason: js.UndefOr[GameSessionStatusReason] = js.native
+  var StatusReason: js.UndefOr[GameSessionStatusReason] = js.undefined
   
   /**
     * Time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var TerminationTime: js.UndefOr[Timestamp] = js.native
+  var TerminationTime: js.UndefOr[Timestamp] = js.undefined
 }
 object GameSession {
   

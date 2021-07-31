@@ -10,7 +10,6 @@ import typings.uirouterCore.mod.UrlRouter
 import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlRouterProviderMod {
@@ -170,9 +169,12 @@ object urlRouterProviderMod {
   /* static members */
   object UrlRouterProvider {
     
-    @JSImport("@uirouter/angularjs/lib/urlRouterProvider", "UrlRouterProvider.injectableHandler")
+    @JSImport("@uirouter/angularjs/lib/urlRouterProvider", "UrlRouterProvider")
     @js.native
-    def injectableHandler(router: UIRouter, handler: IInjectable): UrlRuleHandlerFn = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def injectableHandler(router: UIRouter, handler: IInjectable): UrlRuleHandlerFn = (^.asInstanceOf[js.Dynamic].applyDynamic("injectableHandler")(router.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[UrlRuleHandlerFn]
   }
   
   type RawNg1RuleFunction = js.Function2[/* $injector */ InjectorLike, /* $location */ LocationServices, String | Unit]

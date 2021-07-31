@@ -2,16 +2,17 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PublicConfigAPI {
   
-  @JSImport("react-imgix", "PublicConfigAPI.disableWarning")
+  @JSImport("react-imgix", "PublicConfigAPI")
   @js.native
-  def disableWarning(name: Warnings): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-imgix", "PublicConfigAPI.enableWarning")
-  @js.native
-  def enableWarning(name: Warnings): Unit = js.native
+  @scala.inline
+  def disableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def enableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

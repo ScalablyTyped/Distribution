@@ -7,31 +7,29 @@ import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignX extends StObject {
   
-  var alignX: js.UndefOr[left | middle | right] = js.native
+  var alignX: js.UndefOr[left | middle | right] = js.undefined
   
-  var alignY: js.UndefOr[top | middle | bottom] = js.native
+  var alignY: js.UndefOr[top | middle | bottom] = js.undefined
   
   /**
     * html 代码
     */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * html的起始位置，值为原始数据值，支持 callback
     */
-  var position: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var position: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object AlignX {
   

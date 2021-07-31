@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDraftsResponse extends StObject {
   
   /** List of drafts. Note that the `Message` property in each `Draft` resource only contains an `id` and a `threadId`. The messages.get method can fetch additional message details. */
-  var drafts: js.UndefOr[js.Array[Draft]] = js.native
+  var drafts: js.UndefOr[js.Array[Draft]] = js.undefined
   
   /** Token to retrieve the next page of results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Estimated total number of results. */
-  var resultSizeEstimate: js.UndefOr[Double] = js.native
+  var resultSizeEstimate: js.UndefOr[Double] = js.undefined
 }
 object ListDraftsResponse {
   

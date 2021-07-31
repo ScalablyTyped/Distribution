@@ -2,27 +2,25 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationAction extends StObject {
   
-  var action: js.UndefOr[NavigationAction] = js.native
+  var action: js.UndefOr[NavigationAction] = js.undefined
   
-  var actions: js.UndefOr[js.Array[NavigationAction]] = js.native
+  var actions: js.UndefOr[js.Array[NavigationAction]] = js.undefined
   
-  var key: js.UndefOr[Nullable[String]] = js.native
+  var key: js.UndefOr[Nullable[String]] = js.undefined
   
-  var meta: js.UndefOr[js.Object] = js.native
+  var meta: js.UndefOr[js.Object] = js.undefined
   
-  var navKey: js.UndefOr[Nullable[String]] = js.native
+  var navKey: js.UndefOr[Nullable[String]] = js.undefined
   
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
   
-  var routeName: js.UndefOr[String] = js.native
+  var routeName: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object NavigationAction {
   

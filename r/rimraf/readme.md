@@ -10,9 +10,9 @@ A deep deletion module for node (like `rm -rf`)
 | ------------------ | :-------------: |
 | Full name          | rimraf |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 9927 |
-| # downloads        | 1487408599 |
+| # releases         | 6 |
+| # dependents       | 10774 |
+| # downloads        | 1930794989 |
 | # stars            | 321 |
 
 ## Links

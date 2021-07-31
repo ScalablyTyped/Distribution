@@ -12,70 +12,69 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldMod {
   
-  @JSImport("formik/dist/Field", "Field")
+  @JSImport("formik/dist/Field", JSImport.Namespace)
   @js.native
-  def Field(hasValidateNameRenderChildrenAsComponentProps: FieldAttributes[_]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("formik/dist/Field", "useField")
-  @js.native
-  def useField[Val](propsOrFieldName: String): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = js.native
-  @JSImport("formik/dist/Field", "useField")
-  @js.native
-  def useField[Val](propsOrFieldName: FieldHookConfig[Val]): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = js.native
+  @scala.inline
+  def Field(hasValidateNameRenderChildrenIsComponentProps: FieldAttributes[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasValidateNameRenderChildrenIsComponentProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  type FieldAttributes[T] = GenericFieldHTMLAttributes with FieldConfig[T] with T with Name
+  @scala.inline
+  def useField[Val](propsOrFieldName: String): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]
+  @scala.inline
+  def useField[Val](propsOrFieldName: FieldHookConfig[Val]): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]
   
-  @js.native
+  type FieldAttributes[T] = GenericFieldHTMLAttributes & FieldConfig[T] & T & Name
+  
   trait FieldConfig[V] extends StObject {
     
     /**
       * Component to render. Can either be a string e.g. 'select', 'input', or 'textarea', or a component.
       */
     var as: js.UndefOr[
-        (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[_]
-      ] = js.native
+        (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[js.Any]
+      ] = js.undefined
     
     /**
       * Children render function <Field name>{props => ...}</Field>)
       */
-    var children: js.UndefOr[(js.Function1[/* props */ FieldProps[V, _], ReactNode]) | ReactNode] = js.native
+    var children: js.UndefOr[(js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]) | ReactNode] = js.undefined
     
     /**
       * Field component to render. Can either be a string like 'select' or a component.
       */
     var component: js.UndefOr[
-        String | (ComponentType[(FieldProps[V, _]) | js.Object]) | ForwardRefExoticComponent[_]
-      ] = js.native
+        String | (ComponentType[(FieldProps[V, js.Any]) | js.Object]) | ForwardRefExoticComponent[js.Any]
+      ] = js.undefined
     
     /** Inner ref */
-    var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, Unit]] = js.native
+    var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, Unit]] = js.undefined
     
     /**
       * Field name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Render prop (works like React router's <Route render={props =>} />)
       * @deprecated
       */
-    var render: js.UndefOr[js.Function1[/* props */ FieldProps[V, _], ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]] = js.undefined
     
     /** HTML input type */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Validate a single field value independently
       */
-    var validate: js.UndefOr[FieldValidator] = js.native
+    var validate: js.UndefOr[FieldValidator] = js.undefined
     
     /** Field value */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object FieldConfig {
     
@@ -86,25 +85,29 @@ object fieldMod {
     }
     
     @scala.inline
-    implicit class FieldConfigMutableBuilder[Self <: FieldConfig[_], V] (val x: Self with FieldConfig[V]) extends AnyVal {
+    implicit class FieldConfigMutableBuilder[Self <: FieldConfig[?], V] (val x: Self & FieldConfig[V]) extends AnyVal {
       
       @scala.inline
-      def setAs(value: (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(
+        value: (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[js.Any]
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       @scala.inline
-      def setChildren(value: (js.Function1[/* props */ FieldProps[V, _], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: (js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChildrenFunction1(value: /* props */ FieldProps[V, _] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildrenFunction1(value: /* props */ FieldProps[V, js.Any] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setComponent(value: String | (ComponentType[(FieldProps[V, _]) | js.Object]) | ForwardRefExoticComponent[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(
+        value: String | (ComponentType[(FieldProps[V, js.Any]) | js.Object]) | ForwardRefExoticComponent[js.Any]
+      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -119,7 +122,7 @@ object fieldMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRender(value: /* props */ FieldProps[V, _] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* props */ FieldProps[V, js.Any] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -144,16 +147,15 @@ object fieldMod {
     }
   }
   
-  type FieldHookConfig[T] = GenericFieldHTMLAttributes with FieldConfig[T]
+  type FieldHookConfig[T] = GenericFieldHTMLAttributes & FieldConfig[T]
   
-  @js.native
   trait FieldProps[V, FormValues] extends StObject {
     
-    var field: FieldInputProps[V] = js.native
+    var field: FieldInputProps[V]
     
-    var form: FormikProps[FormValues] = js.native
+    var form: FormikProps[FormValues]
     
-    var meta: FieldMetaProps[V] = js.native
+    var meta: FieldMetaProps[V]
   }
   object FieldProps {
     
@@ -164,7 +166,7 @@ object fieldMod {
     }
     
     @scala.inline
-    implicit class FieldPropsMutableBuilder[Self <: FieldProps[_, _], V, FormValues] (val x: Self with (FieldProps[V, FormValues])) extends AnyVal {
+    implicit class FieldPropsMutableBuilder[Self <: FieldProps[?, ?], V, FormValues] (val x: Self & (FieldProps[V, FormValues])) extends AnyVal {
       
       @scala.inline
       def setField(value: FieldInputProps[V]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])

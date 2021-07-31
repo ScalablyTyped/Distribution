@@ -7,10 +7,13 @@ import typings.playable.tooltipTypesMod.ITooltipPosition
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
+  
+  @JSImport("playable/dist/src/modules/ui/core/tooltip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip", "Tooltip")
   @js.native
@@ -43,14 +46,12 @@ object tooltipMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("playable/dist/src/modules/ui/core/tooltip", "getTooltipPositionByReferenceElement")
-  @js.native
-  def getTooltipPositionByReferenceElement(tooltipReferenceElement: HTMLElement, tooltipContainerElement: HTMLElement): ITooltipPosition = js.native
-  @JSImport("playable/dist/src/modules/ui/core/tooltip", "getTooltipPositionByReferenceElement")
-  @js.native
+  @scala.inline
+  def getTooltipPositionByReferenceElement(tooltipReferenceElement: HTMLElement, tooltipContainerElement: HTMLElement): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipPositionByReferenceElement")(tooltipReferenceElement.asInstanceOf[js.Any], tooltipContainerElement.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
+  @scala.inline
   def getTooltipPositionByReferenceElement(
     tooltipReferenceElement: HTMLElement,
     tooltipContainerElement: HTMLElement,
     tooltipCenterXfn: ITooltipCenterXfn
-  ): ITooltipPosition = js.native
+  ): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipPositionByReferenceElement")(tooltipReferenceElement.asInstanceOf[js.Any], tooltipContainerElement.asInstanceOf[js.Any], tooltipCenterXfn.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
 }

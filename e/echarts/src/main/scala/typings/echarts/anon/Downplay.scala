@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Downplay extends js.Object {
+trait Downplay extends StObject {
   
   /**
     * Item style when mouse is hovering unrelated items. See
@@ -15,7 +14,7 @@ trait Downplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.downplay
     */
-  var downplay: js.UndefOr[`22`] = js.native
+  var downplay: js.UndefOr[`22`] = js.undefined
   
   /**
     * Item style when mouse is hovering. See
@@ -25,7 +24,7 @@ trait Downplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.emphasis
     */
-  var emphasis: js.UndefOr[`22`] = js.native
+  var emphasis: js.UndefOr[`22`] = js.undefined
   
   /**
     * Item style when mouse is hovering related items. See
@@ -35,7 +34,7 @@ trait Downplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.highlight
     */
-  var highlight: js.UndefOr[`22`] = js.native
+  var highlight: js.UndefOr[`22`] = js.undefined
   
   /**
     * Style of Sunburst sectors.
@@ -72,7 +71,7 @@ trait Downplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.native
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   
   /**
     * `label` sets the text style for every sectors.
@@ -95,7 +94,7 @@ trait Downplay extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.label
     */
-  var label: js.UndefOr[MinAngle] = js.native
+  var label: js.UndefOr[MinAngle] = js.undefined
 }
 object Downplay {
   
@@ -106,48 +105,36 @@ object Downplay {
   }
   
   @scala.inline
-  implicit class DownplayOps[Self <: Downplay] (val x: Self) extends AnyVal {
+  implicit class DownplayMutableBuilder[Self <: Downplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownplay(value: `22`): Self = this.set("downplay", value.asInstanceOf[js.Any])
+    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
     @scala.inline
-    def deleteDownplay: Self = this.set("downplay", js.undefined)
+    def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmphasis(value: `22`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: `22`): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setLabel(value: MinAngle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: MinAngle): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

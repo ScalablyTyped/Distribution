@@ -2,13 +2,11 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for `ListServices`.
   */
-@js.native
 trait SchemaListServicesResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListServicesResponse extends StObject {
     * call `ListServices` again with the `page_token` field set to this value.
     * This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of services.
     */
-  var services: js.UndefOr[js.Array[SchemaService]] = js.native
+  var services: js.UndefOr[js.Array[SchemaService]] = js.undefined
 }
 object SchemaListServicesResponse {
   

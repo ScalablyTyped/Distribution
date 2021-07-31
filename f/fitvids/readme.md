@@ -12,7 +12,7 @@ Makes your videos fluid-width.
 | Keywords           | video, responsive, fluid, width, fitvids, wrapper |
 | # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 122334 |
+| # downloads        | 140036 |
 | # stars            | 4 |
 
 ## Links

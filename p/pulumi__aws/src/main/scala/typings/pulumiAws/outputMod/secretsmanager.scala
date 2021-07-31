@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretsmanager {
   
-  @js.native
   trait GetSecretRotationRotationRule extends StObject {
     
-    var automaticallyAfterDays: Double = js.native
+    var automaticallyAfterDays: Double
   }
   object GetSecretRotationRotationRule {
     
@@ -28,10 +26,9 @@ object secretsmanager {
     }
   }
   
-  @js.native
   trait GetSecretRotationRule extends StObject {
     
-    var automaticallyAfterDays: Double = js.native
+    var automaticallyAfterDays: Double
   }
   object GetSecretRotationRule {
     
@@ -49,13 +46,12 @@ object secretsmanager {
     }
   }
   
-  @js.native
   trait SecretRotationRotationRules extends StObject {
     
     /**
       * Specifies the number of days between automatic scheduled rotations of the secret.
       */
-    var automaticallyAfterDays: Double = js.native
+    var automaticallyAfterDays: Double
   }
   object SecretRotationRotationRules {
     
@@ -73,13 +69,12 @@ object secretsmanager {
     }
   }
   
-  @js.native
   trait SecretRotationRules extends StObject {
     
     /**
       * Specifies the number of days between automatic scheduled rotations of the secret.
       */
-    var automaticallyAfterDays: Double = js.native
+    var automaticallyAfterDays: Double
   }
   object SecretRotationRules {
     

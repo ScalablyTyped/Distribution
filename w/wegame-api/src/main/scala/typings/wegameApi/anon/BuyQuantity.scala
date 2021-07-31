@@ -5,10 +5,8 @@ import typings.wegameApi.wegameApiStrings.android
 import typings.wegameApi.wegameApiStrings.game
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyQuantity extends StObject {
   
   /**
@@ -43,21 +41,21 @@ trait BuyQuantity extends StObject {
     *       328
     *       648
     */
-  var buyQuantity: js.UndefOr[Double] = js.native
+  var buyQuantity: js.UndefOr[Double] = js.undefined
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 币种
     */
-  var currencyType: CNY = js.native
+  var currencyType: CNY
   
   /**
     * 环境配置，默认值0
     *   0 - 米大师正式环境
     *   1 - 米大师沙箱环境
     */
-  var env: js.UndefOr[typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`] = js.native
+  var env: js.UndefOr[typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`] = js.undefined
   
   /**
     * @param res.errCode 有如下值：
@@ -79,36 +77,36 @@ trait BuyQuantity extends StObject {
     *       1000    参数错误
     *       1003    米大师 Portal 错误
     */
-  var fail: js.UndefOr[js.Function1[/* res */ ErrCode, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ ErrCode, Unit]] = js.undefined
   
   /**
     * 支付的类型，不同的支付类型有各自额外要传的附加参数。
     *   game - 购买游戏币
     */
-  var mode: game = js.native
+  var mode: game
   
   /**
     * 在米大师侧申请的应用 id
     */
-  var offerId: String = js.native
+  var offerId: String
   
   /**
     * 申请接入时的平台，platform 与应用id有关。
     */
-  var platform: js.UndefOr[android] = js.native
+  var platform: js.UndefOr[android] = js.undefined
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 分区 ID
     */
-  var zoneId: js.UndefOr[String] = js.native
+  var zoneId: js.UndefOr[String] = js.undefined
 }
 object BuyQuantity {
   
   @scala.inline
-  def apply(currencyType: CNY, mode: game, offerId: String): BuyQuantity = {
-    val __obj = js.Dynamic.literal(currencyType = currencyType.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], offerId = offerId.asInstanceOf[js.Any])
+  def apply(offerId: String): BuyQuantity = {
+    val __obj = js.Dynamic.literal(currencyType = "CNY", mode = "game", offerId = offerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyQuantity]
   }
   

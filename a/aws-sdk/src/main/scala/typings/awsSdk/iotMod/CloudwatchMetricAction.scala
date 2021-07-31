@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudwatchMetricAction extends StObject {
   
   /**
     * The CloudWatch metric name.
     */
-  var metricName: String = js.native
+  var metricName: String
   
   /**
     * The CloudWatch metric namespace name.
     */
-  var metricNamespace: String = js.native
+  var metricNamespace: String
   
   /**
     * An optional Unix timestamp.
     */
-  var metricTimestamp: js.UndefOr[String] = js.native
+  var metricTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The metric unit supported by CloudWatch.
     */
-  var metricUnit: String = js.native
+  var metricUnit: String
   
   /**
     * The CloudWatch metric value.
     */
-  var metricValue: String = js.native
+  var metricValue: String
   
   /**
     * The IAM role that allows access to the CloudWatch metric.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
 }
 object CloudwatchMetricAction {
   

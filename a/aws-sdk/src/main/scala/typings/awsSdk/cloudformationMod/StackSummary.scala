@@ -2,66 +2,64 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackSummary extends StObject {
   
   /**
     * The time the stack was created.
     */
-  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime
   
   /**
     * The time the stack was deleted.
     */
-  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.native
+  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.undefined
   
   /**
     * Summarizes information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
     */
-  var DriftInformation: js.UndefOr[StackDriftInformationSummary] = js.native
+  var DriftInformation: js.UndefOr[StackDriftInformationSummary] = js.undefined
   
   /**
     * The time the stack was last updated. This field will only be returned if the stack has been updated at least once.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.native
+  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.undefined
   
   /**
     * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
     */
-  var ParentId: js.UndefOr[StackId] = js.native
+  var ParentId: js.UndefOr[StackId] = js.undefined
   
   /**
     * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
     */
-  var RootId: js.UndefOr[StackId] = js.native
+  var RootId: js.UndefOr[StackId] = js.undefined
   
   /**
     * Unique stack identifier.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
   
   /**
     * The name associated with the stack.
     */
-  var StackName: typings.awsSdk.cloudformationMod.StackName = js.native
+  var StackName: typings.awsSdk.cloudformationMod.StackName
   
   /**
     * The current status of the stack.
     */
-  var StackStatus: typings.awsSdk.cloudformationMod.StackStatus = js.native
+  var StackStatus: typings.awsSdk.cloudformationMod.StackStatus
   
   /**
     * Success/Failure message associated with the stack status.
     */
-  var StackStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.StackStatusReason] = js.native
+  var StackStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.StackStatusReason] = js.undefined
   
   /**
     * The template description of the template used to create the stack.
     */
-  var TemplateDescription: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateDescription] = js.native
+  var TemplateDescription: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateDescription] = js.undefined
 }
 object StackSummary {
   

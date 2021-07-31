@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MFADevice extends StObject {
   
   /**
     * The date when the MFA device was enabled for the user.
     */
-  var EnableDate: dateType = js.native
+  var EnableDate: dateType
   
   /**
     * The serial number that uniquely identifies the MFA device. For virtual MFA devices, the serial number is the device ARN.
     */
-  var SerialNumber: serialNumberType = js.native
+  var SerialNumber: serialNumberType
   
   /**
     * The user with whom the MFA device is associated.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object MFADevice {
   

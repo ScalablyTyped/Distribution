@@ -3,7 +3,6 @@ package typings.monacoEditor.mod.editor
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -25,7 +24,7 @@ object IEditorViewState {
   
   @scala.inline
   def IDiffEditorViewState(): typings.monacoEditor.mod.editor.IDiffEditorViewState = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(modified = null, original = null)
     __obj.asInstanceOf[typings.monacoEditor.mod.editor.IDiffEditorViewState]
   }
 }

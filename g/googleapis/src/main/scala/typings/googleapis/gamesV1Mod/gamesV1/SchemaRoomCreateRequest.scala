@@ -2,58 +2,56 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a room creation request.
   */
-@js.native
 trait SchemaRoomCreateRequest extends StObject {
   
   /**
     * Criteria for auto-matching players into this room.
     */
-  var autoMatchingCriteria: js.UndefOr[SchemaRoomAutoMatchingCriteria] = js.native
+  var autoMatchingCriteria: js.UndefOr[SchemaRoomAutoMatchingCriteria] = js.undefined
   
   /**
     * The capabilities that this client supports for realtime communication.
     */
-  var capabilities: js.UndefOr[js.Array[String]] = js.native
+  var capabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Client address for the player creating the room.
     */
-  var clientAddress: js.UndefOr[SchemaRoomClientAddress] = js.native
+  var clientAddress: js.UndefOr[SchemaRoomClientAddress] = js.undefined
   
   /**
     * The player IDs to invite to the room.
     */
-  var invitedPlayerIds: js.UndefOr[js.Array[String]] = js.native
+  var invitedPlayerIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomCreateRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Network diagnostics for the client creating the room.
     */
-  var networkDiagnostics: js.UndefOr[SchemaNetworkDiagnostics] = js.native
+  var networkDiagnostics: js.UndefOr[SchemaNetworkDiagnostics] = js.undefined
   
   /**
     * A randomly generated numeric ID. This number is used at the server to
     * ensure that the request is handled correctly across retries.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The variant / mode of the application to be played. This can be any
     * integer value, or left blank. You should use a small number of variants
     * to keep the auto-matching pool as large as possible.
     */
-  var variant: js.UndefOr[Double] = js.native
+  var variant: js.UndefOr[Double] = js.undefined
 }
 object SchemaRoomCreateRequest {
   

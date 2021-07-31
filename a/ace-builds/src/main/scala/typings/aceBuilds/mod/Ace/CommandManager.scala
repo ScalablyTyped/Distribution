@@ -5,11 +5,12 @@ import typings.aceBuilds.aceBuildsStrings.exec
 import typings.aceBuilds.anon.Mac
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandManager extends EventEmitter {
+trait CommandManager
+  extends StObject
+     with EventEmitter {
   
   def addCommand(command: Command): Unit = js.native
   

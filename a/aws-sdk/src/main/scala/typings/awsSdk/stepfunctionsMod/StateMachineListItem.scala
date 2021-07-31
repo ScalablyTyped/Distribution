@@ -2,31 +2,29 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateMachineListItem extends StObject {
   
   /**
     * The date the state machine is created.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * The name of the state machine. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The Amazon Resource Name (ARN) that identifies the state machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * 
     */
-  var `type`: StateMachineType = js.native
+  var `type`: StateMachineType
 }
 object StateMachineListItem {
   

@@ -3,19 +3,17 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.kendo.geometry.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGradientOptions extends StObject {
   
-  var center: js.UndefOr[js.Any | Point] = js.native
+  var center: js.UndefOr[js.Any | Point] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var stops: js.UndefOr[js.Any] = js.native
+  var stops: js.UndefOr[js.Any] = js.undefined
 }
 object RadialGradientOptions {
   

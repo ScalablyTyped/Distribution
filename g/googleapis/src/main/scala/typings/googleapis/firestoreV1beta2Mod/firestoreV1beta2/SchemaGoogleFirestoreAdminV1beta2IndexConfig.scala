@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The index configuration for this field.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2IndexConfig extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaGoogleFirestoreAdminV1beta2IndexConfig extends StObject {
     * true), or from which it *would* be set if this field had no index
     * configuration (when `uses_ancestor_config` is false).
     */
-  var ancestorField: js.UndefOr[String] = js.native
+  var ancestorField: js.UndefOr[String] = js.undefined
   
   /**
     * The indexes supported for this field.
     */
-  var indexes: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta2Index]] = js.native
+  var indexes: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta2Index]] = js.undefined
   
   /**
     * Output only When true, the `Field`&#39;s index configuration is in the
@@ -31,14 +29,14 @@ trait SchemaGoogleFirestoreAdminV1beta2IndexConfig extends StObject {
     * at which point `uses_ancestor_config` will be `true` and `reverting` will
     * be `false`.
     */
-  var reverting: js.UndefOr[Boolean] = js.native
+  var reverting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. When true, the `Field`&#39;s index configuration is set from
     * the configuration specified by the `ancestor_field`. When false, the
     * `Field`&#39;s index configuration is defined explicitly.
     */
-  var usesAncestorConfig: js.UndefOr[Boolean] = js.native
+  var usesAncestorConfig: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2IndexConfig {
   

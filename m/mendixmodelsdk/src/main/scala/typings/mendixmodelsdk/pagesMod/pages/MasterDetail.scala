@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,9 +59,8 @@ object MasterDetail {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.create")
-  @js.native
-  def create(model: IModel): MasterDetail = js.native
+  @scala.inline
+  def create(model: IModel): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -73,9 +71,8 @@ object MasterDetail {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): MasterDetail = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -86,9 +83,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): MasterDetail = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -99,9 +95,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): MasterDetail = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -112,9 +107,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): MasterDetail = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -125,9 +119,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): MasterDetail = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -138,9 +131,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): MasterDetail = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -151,9 +143,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): MasterDetail = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -164,9 +155,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): MasterDetail = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -177,9 +167,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): MasterDetail = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -190,9 +179,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): MasterDetail = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -203,9 +191,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): MasterDetail = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -216,9 +203,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): MasterDetail = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -229,9 +215,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): MasterDetail = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -242,9 +227,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): MasterDetail = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -255,9 +239,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): MasterDetail = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -268,9 +251,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): MasterDetail = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -281,9 +263,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): MasterDetail = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -294,9 +275,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): MasterDetail = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -307,9 +287,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): MasterDetail = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -320,9 +299,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): MasterDetail = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -333,9 +311,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): MasterDetail = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -346,9 +323,8 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): MasterDetail = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.structureTypeName")

@@ -2,13 +2,11 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformFunction extends StObject {
   
-  var transform: js.Function = js.native
+  var transform: js.Function
 }
 object TransformFunction {
   

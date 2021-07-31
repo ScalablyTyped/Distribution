@@ -9,27 +9,25 @@ import typings.chrome.chrome.declarativeContent.SetIcon
 import typings.chrome.chrome.declarativeContent.ShowPageAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdeclarativeContent extends StObject {
   
   var PageStateMatcher: Instantiable1[
     /* options */ PageStateMatcherProperties, 
     typings.chrome.chrome.declarativeContent.PageStateMatcher
-  ] = js.native
+  ]
   
-  var PageStateMatcherProperties: Instantiable0[typings.chrome.chrome.declarativeContent.PageStateMatcherProperties] = js.native
+  var PageStateMatcherProperties: Instantiable0[typings.chrome.chrome.declarativeContent.PageStateMatcherProperties]
   
   var SetIcon: Instantiable1[
     /* options */ js.UndefOr[ImageData], 
     typings.chrome.chrome.declarativeContent.SetIcon
-  ] = js.native
+  ]
   
-  var ShowPageAction: Instantiable0[typings.chrome.chrome.declarativeContent.ShowPageAction] = js.native
+  var ShowPageAction: Instantiable0[typings.chrome.chrome.declarativeContent.ShowPageAction]
   
-  var onPageChanged: PageChangedEvent = js.native
+  var onPageChanged: PageChangedEvent
 }
 object TypeofdeclarativeContent {
   

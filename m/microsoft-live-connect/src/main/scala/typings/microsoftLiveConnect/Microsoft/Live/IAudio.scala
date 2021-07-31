@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,100 +12,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with the user. Use the wl.skydrive_update scope to create, update, or
   * delete Audio objects.
   */
-@js.native
 trait IAudio extends StObject {
   
   /**
     * The audio's album name.
     */
-  var album: String = js.native
+  var album: String
   
   /**
     * The artist name of the audio's album.
     */
-  var album_artist: String = js.native
+  var album_artist: String
   
   /**
     * The audio's artist name.
     */
-  var artist: String = js.native
+  var artist: String
   
   /**
     * The number of comments associated with the audio.
     */
-  var comments_count: Double = js.native
+  var comments_count: Double
   
   /**
     * A value that indicates whether comments are enabled for the audio. If
     * comments can be made, this value is true; otherwise, it is false.
     */
-  var comments_enabled: Boolean = js.native
+  var comments_enabled: Boolean
   
   /**
     * The time, in ISO 8601 format, at which the audio was created.
     */
-  var created_time: String = js.native
+  var created_time: String
   
   /**
     * A description of the audio, or null if no description is specified.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The audio's playing time, in milliseconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Info about the user who uploaded the audio.
     */
-  var from: IUserInfo = js.native
+  var from: IUserInfo
   
   /**
     * The audio's genre.
     */
-  var genre: String = js.native
+  var genre: String
   
   /**
     * The Audio object's ID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value that indicates whether this audio can be embedded. If this
     * audio can be embedded, this value is true; otherwise, it is false.
     */
-  var is_embeddable: Boolean = js.native
+  var is_embeddable: Boolean
   
   /**
     * A URL to view the item on SkyDrive.
     */
-  var link: String = js.native
+  var link: String
   
   /**
     * The name of the audio.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The id of the folder in which the audio is currently stored.
     */
-  var parent_id: String = js.native
+  var parent_id: String
   
   /**
     * A URL to view the audio's picture on SkyDrive.
     */
-  var picture: String = js.native
+  var picture: String
   
   /**
     * The object that contains permission info.
     */
-  var shared_with: ISharedWith = js.native
+  var shared_with: ISharedWith
   
   /**
     * The size, in bytes, of the audio.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The URL to use to download the audio from SkyDrive.
@@ -114,27 +112,27 @@ trait IAudio extends StObject {
     * This value is not persistent. Use it immediately after making the
     * request, and avoid caching.
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * The audio's title.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * The type of object; in this case, "audio".
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The time, in ISO 8601 format, at which the audio was last updated.
     */
-  var updated_time: String = js.native
+  var updated_time: String
   
   /**
     * The URL to use to upload a new audio to overwrite the existing audio.
     */
-  var upload_location: String = js.native
+  var upload_location: String
 }
 object IAudio {
   

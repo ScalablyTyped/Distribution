@@ -5,27 +5,27 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskGroup extends TaskDefinition {
+trait TaskGroup
+  extends StObject
+     with TaskDefinition {
   
-  var comment: String = js.native
+  var comment: String
   
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
-  var owner: String = js.native
+  var owner: String
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var tasks: js.Array[TaskGroupStep] = js.native
+  var tasks: js.Array[TaskGroupStep]
 }
 object TaskGroup {
   
@@ -42,7 +42,7 @@ object TaskGroup {
     createdOn: Date,
     dataSourceBindings: js.Array[DataSourceBinding],
     definitionType: String,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     description: String,
     disabled: Boolean,
     execution: StringDictionary[js.Any],

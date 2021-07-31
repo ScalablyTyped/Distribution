@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.putRepositoryTriggersExceptionsUnionMo
 import typings.awsSdkClientCodecommitNode.testRepositoryTriggersExceptionsUnionMod.TestRepositoryTriggersExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryTriggerBranchNameListRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerBranchNameListRequiredExceptionDetails> * / any */ @js.native
-  trait RepositoryTriggerBranchNameListRequiredException
-    extends PutRepositoryTriggersExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerBranchNameListRequiredExceptionDetails> * / any */ trait RepositoryTriggerBranchNameListRequiredException
+    extends StObject
+       with PutRepositoryTriggersExceptionsUnion
        with TestRepositoryTriggersExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerBranchNameListRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerBranchNameListRequiredException
   }
   object RepositoryTriggerBranchNameListRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerBranchNameListRequiredException
-    ): RepositoryTriggerBranchNameListRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryTriggerBranchNameListRequiredException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryTriggerBranchNameListRequiredException")
       __obj.asInstanceOf[RepositoryTriggerBranchNameListRequiredException]
     }
     
@@ -37,6 +34,5 @@ object typesRepositoryTriggerBranchNameListRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryTriggerBranchNameListRequiredExceptionDetails extends StObject
 }

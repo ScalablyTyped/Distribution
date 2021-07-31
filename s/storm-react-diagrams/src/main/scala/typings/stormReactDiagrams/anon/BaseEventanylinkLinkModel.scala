@@ -6,30 +6,28 @@ import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<any> & {  link :storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModel<storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModelListener>,   isCreated :boolean} */
-@js.native
 trait BaseEventanylinkLinkModel extends StObject {
   
-  var entity: BaseEntity[BaseListener[_]] = js.native
+  var entity: BaseEntity[BaseListener[js.Any]]
   
-  var firing: Boolean = js.native
+  var firing: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var isCreated: Boolean = js.native
+  var isCreated: Boolean
   
-  var link: LinkModel[LinkModelListener] = js.native
+  var link: LinkModel[LinkModelListener]
   
-  def stopPropagation(): js.Any = js.native
+  def stopPropagation(): js.Any
 }
 object BaseEventanylinkLinkModel {
   
   @scala.inline
   def apply(
-    entity: BaseEntity[BaseListener[_]],
+    entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
     isCreated: Boolean,
@@ -44,7 +42,7 @@ object BaseEventanylinkLinkModel {
   implicit class BaseEventanylinkLinkModelMutableBuilder[Self <: BaseEventanylinkLinkModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[_]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])

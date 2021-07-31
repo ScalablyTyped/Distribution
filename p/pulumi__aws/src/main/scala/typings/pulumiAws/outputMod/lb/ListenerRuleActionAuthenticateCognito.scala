@@ -3,51 +3,49 @@ package typings.pulumiAws.outputMod.lb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleActionAuthenticateCognito extends StObject {
   
   /**
     * The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
     */
-  var authenticationRequestExtraParams: js.UndefOr[StringDictionary[String]] = js.native
+  var authenticationRequestExtraParams: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
     */
-  var onUnauthenticatedRequest: String = js.native
+  var onUnauthenticatedRequest: String
   
   /**
     * The set of user claims to be requested from the IdP.
     */
-  var scope: String = js.native
+  var scope: String
   
   /**
     * The name of the cookie used to maintain session information.
     */
-  var sessionCookieName: String = js.native
+  var sessionCookieName: String
   
   /**
     * The maximum duration of the authentication session, in seconds.
     */
-  var sessionTimeout: Double = js.native
+  var sessionTimeout: Double
   
   /**
     * The ARN of the Cognito user pool.
     */
-  var userPoolArn: String = js.native
+  var userPoolArn: String
   
   /**
     * The ID of the Cognito user pool client.
     */
-  var userPoolClientId: String = js.native
+  var userPoolClientId: String
   
   /**
     * The domain prefix or fully-qualified domain name of the Cognito user pool.
     */
-  var userPoolDomain: String = js.native
+  var userPoolDomain: String
 }
 object ListenerRuleActionAuthenticateCognito {
   

@@ -2,31 +2,29 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A summary of errors by error code, plus a count and sample error log
   * entries.
   */
-@js.native
 trait SchemaErrorSummary extends StObject {
   
   /**
     * Required.
     */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /**
     * Count of this type of error. Required.
     */
-  var errorCount: js.UndefOr[String] = js.native
+  var errorCount: js.UndefOr[String] = js.undefined
   
   /**
     * Error samples.  No more than 100 error log entries may be recorded for a
     * given error code for a single task.
     */
-  var errorLogEntries: js.UndefOr[js.Array[SchemaErrorLogEntry]] = js.native
+  var errorLogEntries: js.UndefOr[js.Array[SchemaErrorLogEntry]] = js.undefined
 }
 object SchemaErrorSummary {
   

@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables an object to search in its content. */
-@js.native
-trait XTextSearch extends XInterface {
+trait XTextSearch
+  extends StObject
+     with XInterface {
   
   /**
     * search backward in the searchStr, starts at startPos and ends by endpos. The endpos must be lower then the startpos, because the function searches
     * backward! The result is returned in the {@link SearchResult} .
     */
-  def searchBackward(searchStr: String, startPos: Double, endPos: Double): SearchResult = js.native
+  def searchBackward(searchStr: String, startPos: Double, endPos: Double): SearchResult
   
   /** search forward in the searchStr, starts at startPos and ends by endpos. The result is returned in the {@link SearchResult} . */
-  def searchForward(searchStr: String, startPos: Double, endPos: Double): SearchResult = js.native
+  def searchForward(searchStr: String, startPos: Double, endPos: Double): SearchResult
   
   /** set the options for the forward or backward search. */
-  def setOptions(options: SearchOptions): Unit = js.native
+  def setOptions(options: SearchOptions): Unit
 }
 object XTextSearch {
   

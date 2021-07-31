@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10SecureAssessmentConfiguration extends DeviceConfiguration {
+trait Windows10SecureAssessmentConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Indicates whether or not to allow the app from printing during the test.
-  var allowPrinting: js.UndefOr[Boolean] = js.native
+  var allowPrinting: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow screen capture capability during a test.
-  var allowScreenCapture: js.UndefOr[Boolean] = js.native
+  var allowScreenCapture: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow text suggestions during the test.
-  var allowTextSuggestion: js.UndefOr[Boolean] = js.native
+  var allowTextSuggestion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The account used to configure the Windows device for taking the test. The user can be a domain account (domain/user),
     * an AAD account (username@tenant.com) or a local account (username).
     */
-  var configurationAccount: js.UndefOr[NullableOption[String]] = js.native
+  var configurationAccount: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a
     * valid Url (http[s]://msdn.microsoft.com/).
     */
-  var launchUri: js.UndefOr[NullableOption[String]] = js.native
+  var launchUri: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Windows10SecureAssessmentConfiguration {
   

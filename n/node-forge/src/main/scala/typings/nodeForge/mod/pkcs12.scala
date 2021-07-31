@@ -10,90 +10,66 @@ import typings.nodeForge.mod.pki.PrivateKey
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pkcs12 {
   
-  @JSImport("node-forge", "pkcs12.generateKey")
+  @JSImport("node-forge", "pkcs12")
   @js.native
-  def generateKey(password: js.UndefOr[scala.Nothing], salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = js.native
-  @JSImport("node-forge", "pkcs12.generateKey")
-  @js.native
-  def generateKey(
-    password: js.UndefOr[scala.Nothing],
-    salt: ByteBuffer,
-    id: Byte,
-    iter: Double,
-    n: Double,
-    md: MessageDigest
-  ): ByteBuffer = js.native
-  @JSImport("node-forge", "pkcs12.generateKey")
-  @js.native
-  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = js.native
-  @JSImport("node-forge", "pkcs12.generateKey")
-  @js.native
-  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = js.native
-  @JSImport("node-forge", "pkcs12.generateKey")
-  @js.native
-  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = js.native
-  @JSImport("node-forge", "pkcs12.generateKey")
-  @js.native
-  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-forge", "pkcs12.pkcs12FromAsn1")
-  @js.native
-  def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = js.native
-  @JSImport("node-forge", "pkcs12.pkcs12FromAsn1")
-  @js.native
-  def pkcs12FromAsn1(obj: js.Any, password: String): Pkcs12Pfx = js.native
-  @JSImport("node-forge", "pkcs12.pkcs12FromAsn1")
-  @js.native
-  def pkcs12FromAsn1(obj: js.Any, strict: js.UndefOr[scala.Nothing], password: String): Pkcs12Pfx = js.native
-  @JSImport("node-forge", "pkcs12.pkcs12FromAsn1")
-  @js.native
-  def pkcs12FromAsn1(obj: js.Any, strict: Boolean): Pkcs12Pfx = js.native
-  @JSImport("node-forge", "pkcs12.pkcs12FromAsn1")
-  @js.native
-  def pkcs12FromAsn1(obj: js.Any, strict: Boolean, password: String): Pkcs12Pfx = js.native
+  @scala.inline
+  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate]): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: Null, options: Algorithm): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String, options: Algorithm): Asn1 = js.native
-  @JSImport("node-forge", "pkcs12.toPkcs12Asn1")
-  @js.native
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: Null, options: Algorithm): Asn1 = js.native
+  @scala.inline
+  def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = ^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Pkcs12Pfx]
+  @scala.inline
+  def pkcs12FromAsn1(obj: js.Any, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  @scala.inline
+  def pkcs12FromAsn1(obj: js.Any, strict: Boolean): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  @scala.inline
+  def pkcs12FromAsn1(obj: js.Any, strict: Boolean, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  @scala.inline
+  def pkcs12FromAsn1(obj: js.Any, strict: Unit, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
   
-  @js.native
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: Certificate): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  @scala.inline
+  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  
   trait Bag extends StObject {
     
-    var asn1: Asn1 = js.native
+    var asn1: Asn1
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var cert: js.UndefOr[Certificate] = js.native
+    var cert: js.UndefOr[Certificate] = js.undefined
     
-    var key: js.UndefOr[PrivateKey] = js.native
+    var key: js.UndefOr[PrivateKey] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Bag {
     
@@ -130,16 +106,15 @@ object pkcs12 {
     }
   }
   
-  @js.native
   trait BagsFilter extends StObject {
     
-    var bagType: js.UndefOr[String] = js.native
+    var bagType: js.UndefOr[String] = js.undefined
     
-    var friendlyName: js.UndefOr[String] = js.native
+    var friendlyName: js.UndefOr[String] = js.undefined
     
-    var localKeyId: js.UndefOr[String] = js.native
+    var localKeyId: js.UndefOr[String] = js.undefined
     
-    var localKeyIdHex: js.UndefOr[String] = js.native
+    var localKeyIdHex: js.UndefOr[String] = js.undefined
   }
   object BagsFilter {
     
@@ -178,18 +153,17 @@ object pkcs12 {
     }
   }
   
-  @js.native
   trait Pkcs12Pfx extends StObject {
     
-    def getBags(filter: BagsFilter): Dictkey = js.native
+    def getBags(filter: BagsFilter): Dictkey
     
-    def getBagsByFriendlyName(fiendlyName: String, bagType: String): js.Array[Bag] = js.native
+    def getBagsByFriendlyName(fiendlyName: String, bagType: String): js.Array[Bag]
     
-    def getBagsByLocalKeyId(localKeyId: String, bagType: String): js.Array[Bag] = js.native
+    def getBagsByLocalKeyId(localKeyId: String, bagType: String): js.Array[Bag]
     
-    var safeContents: js.Array[Encrypted] = js.native
+    var safeContents: js.Array[Encrypted]
     
-    var version: String = js.native
+    var version: String
   }
   object Pkcs12Pfx {
     

@@ -6,10 +6,8 @@ import typings.cqrsDomain.anon.Host
 import typings.cqrsDomain.cqrsDomainBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDomainOptions extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait CreateDomainOptions extends StObject {
     * currently supports: mongodb, redis, tingodb, couchdb, azuretable, dynamodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var aggregateLock: js.UndefOr[Db] = js.native
+  var aggregateLock: js.UndefOr[Db] = js.undefined
   
   /**
     * optional, default is 'commandRejected'
     * will be used if an error occurs and an event should be generated
     */
-  var commandRejectedEventName: js.UndefOr[String] = js.native
+  var commandRejectedEventName: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default is not set
@@ -31,7 +29,7 @@ trait CreateDomainOptions extends StObject {
     * currently supports: mongodb, redis, tingodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var deduplication: js.UndefOr[Host] = js.native
+  var deduplication: js.UndefOr[Host] = js.undefined
   
   /**
     * the path to the "working directory"
@@ -39,14 +37,14 @@ trait CreateDomainOptions extends StObject {
     * [set 1](https://github.com/adrai/node-cqrs-domain/tree/master/test/integration/fixture/set1) or
     * [set 2](https://github.com/adrai/node-cqrs-domain/tree/master/test/integration/fixture/set2)
     */
-  var domainPath: String = js.native
+  var domainPath: String
   
   /**
     * optional, default is in-memory
     * currently supports: mongodb, redis, tingodb, azuretable and inmemory
     * hint: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var eventStore: js.UndefOr[AuthSource] = js.native
+  var eventStore: js.UndefOr[AuthSource] = js.undefined
   
   /**
     * optional, default is 800
@@ -54,7 +52,7 @@ trait CreateDomainOptions extends StObject {
     * dispatches to the same worker process, this module tries to catch the concurrency issues and
     * retries to handle the command after a timeout between 0 and the defined value
     */
-  var retryOnConcurrencyTimeout: js.UndefOr[Double] = js.native
+  var retryOnConcurrencyTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * optional, default is 100
@@ -62,13 +60,13 @@ trait CreateDomainOptions extends StObject {
     * defines the amount of loaded events, if there are more events to load, it will do a snapshot, so next loading is faster
     * an individual snapshot threshold defining algorithm can be defined per aggregate (scroll down)
     */
-  var snapshotThreshold: js.UndefOr[Double] = js.native
+  var snapshotThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * optional, default false
     * resolves valid file types from loader extensions instead of default values while parsing definition files
     */
-  var useLoaderExtensions: js.UndefOr[`true`] = js.native
+  var useLoaderExtensions: js.UndefOr[`true`] = js.undefined
 }
 object CreateDomainOptions {
   

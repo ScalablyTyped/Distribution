@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** AlignedElement. */
-@js.native
 trait AlignedElement extends StObject {
   
   /** Identifies two elements that semantically align between the compared documents. */
-  var element_pair: js.UndefOr[js.Array[ElementPair]] = js.native
+  var element_pair: js.UndefOr[js.Array[ElementPair]] = js.undefined
   
   /** Specifies whether the aligned element is identical. Elements are considered identical despite minor differences such as leading punctuation, end-of-sentence punctuation, whitespace, the presence or absence of definite or indefinite articles, and others. */
-  var identical_text: js.UndefOr[Boolean] = js.native
+  var identical_text: js.UndefOr[Boolean] = js.undefined
   
   /** One or more hashed values that you can send to IBM to provide feedback or receive support. */
-  var provenance_ids: js.UndefOr[js.Array[String]] = js.native
+  var provenance_ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Indicates that the elements aligned are contractual clauses of significance. */
-  var significant_elements: js.UndefOr[Boolean] = js.native
+  var significant_elements: js.UndefOr[Boolean] = js.undefined
 }
 object AlignedElement {
   

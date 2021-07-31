@@ -3,27 +3,39 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.TypeArgumentMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol")
 @js.native
 class PullInstantiatedTypeReferenceSymbol protected ()
-  extends typings.typescriptServices.TypeScript.PullInstantiatedTypeReferenceSymbol {
+  extends StObject
+     with typings.typescriptServices.TypeScript.PullInstantiatedTypeReferenceSymbol {
   def this(
     referencedTypeSymbol: typings.typescriptServices.TypeScript.PullTypeSymbol,
     _typeParameterArgumentMap: TypeArgumentMap,
     isInstanceReferenceType: Boolean
   ) = this()
+  
+  /* CompleteClass */
+  override def getAllowedToReferenceTypeParameters(): js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol] = js.native
+  
+  /* CompleteClass */
+  override def getIsSpecialized(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def getTypeParameterArgumentMap(): TypeArgumentMap = js.native
 }
 object PullInstantiatedTypeReferenceSymbol {
   
-  /* static member */
-  @JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol.create")
+  @JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol")
   @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
   def create(
     resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
     `type`: typings.typescriptServices.TypeScript.PullTypeSymbol,
     typeParameterArgumentMap: TypeArgumentMap
-  ): typings.typescriptServices.TypeScript.PullInstantiatedTypeReferenceSymbol = js.native
+  ): typings.typescriptServices.TypeScript.PullInstantiatedTypeReferenceSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], typeParameterArgumentMap.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PullInstantiatedTypeReferenceSymbol]
 }

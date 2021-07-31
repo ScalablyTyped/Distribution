@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fleetMod {
@@ -83,6 +82,10 @@ object fleetMod {
   /* static members */
   object Fleet {
     
+    @JSImport("@pulumi/aws/ec2/fleet", "Fleet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Fleet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,80 +95,74 @@ object fleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Fleet = js.native
-    @JSImport("@pulumi/aws/ec2/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Fleet = js.native
-    @JSImport("@pulumi/aws/ec2/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = js.native
-    @JSImport("@pulumi/aws/ec2/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/fleet", "Fleet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean]
   }
   
-  @js.native
   trait FleetArgs extends StObject {
     
     /**
       * Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
       */
-    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.native
+    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing EC2 Launch Template configurations. Defined below.
       */
-    val launchTemplateConfig: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig] = js.native
+    val launchTemplateConfig: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]
     
     /**
       * Nested argument containing On-Demand configurations. Defined below.
       */
-    val onDemandOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]] = js.native
+    val onDemandOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]] = js.undefined
     
     /**
       * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
       */
-    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
+    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Nested argument containing Spot configurations. Defined below.
       */
-    val spotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]] = js.native
+    val spotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]] = js.undefined
     
     /**
       * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Nested argument containing target capacity configurations. Defined below.
       */
-    val targetCapacitySpecification: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification] = js.native
+    val targetCapacitySpecification: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]
     
     /**
       * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
       */
-    val terminateInstances: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
       */
-    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object FleetArgs {
     
@@ -237,58 +234,57 @@ object fleetMod {
     }
   }
   
-  @js.native
   trait FleetState extends StObject {
     
     /**
       * Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
       */
-    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.native
+    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing EC2 Launch Template configurations. Defined below.
       */
-    val launchTemplateConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]] = js.native
+    val launchTemplateConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]] = js.undefined
     
     /**
       * Nested argument containing On-Demand configurations. Defined below.
       */
-    val onDemandOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]] = js.native
+    val onDemandOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]] = js.undefined
     
     /**
       * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
       */
-    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
+    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Nested argument containing Spot configurations. Defined below.
       */
-    val spotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]] = js.native
+    val spotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]] = js.undefined
     
     /**
       * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Nested argument containing target capacity configurations. Defined below.
       */
-    val targetCapacitySpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]] = js.native
+    val targetCapacitySpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]] = js.undefined
     
     /**
       * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
       */
-    val terminateInstances: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
       */
-    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object FleetState {
     

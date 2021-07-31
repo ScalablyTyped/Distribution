@@ -25,18 +25,16 @@ import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbTypesMod {
   
-  @js.native
   trait IBreadcrumb extends StObject {
     
     /**
       * Sets focus to the first breadcrumb link.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IBreadcrumb {
     
@@ -54,14 +52,13 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
   trait IBreadcrumbData extends StObject {
     
-    var props: IBreadcrumbProps = js.native
+    var props: IBreadcrumbProps
     
-    var renderedItems: js.Array[IBreadcrumbItem] = js.native
+    var renderedItems: js.Array[IBreadcrumbItem]
     
-    var renderedOverflowItems: js.Array[IBreadcrumbItem] = js.native
+    var renderedOverflowItems: js.Array[IBreadcrumbItem]
   }
   object IBreadcrumbData {
     
@@ -95,7 +92,6 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
   trait IBreadcrumbItem extends StObject {
     
     /**
@@ -105,23 +101,23 @@ object breadcrumbTypesMod {
       * any item with a `href` renders as a link, and any item without a `href` renders as a button).
       * This is not generally recommended because it may prevent activating the link using the keyboard.
       */
-    var as: js.UndefOr[h1 | h2 | h3 | h4 | h5 | h6 | a] = js.native
+    var as: js.UndefOr[h1 | h2 | h3 | h4 | h5 | h6 | a] = js.undefined
     
     /**
       * Url to navigate to when this breadcrumb item is clicked.
       */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /**
       * Whether this is the breadcrumb item the user is currently navigated to.
       * If true, `aria-current="page"` will be applied to this breadcrumb item.
       */
-    var isCurrentItem: js.UndefOr[Boolean] = js.native
+    var isCurrentItem: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Arbitrary unique string associated with the breadcrumb item.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Callback issued when the breadcrumb item is selected.
@@ -132,17 +128,17 @@ object breadcrumbTypesMod {
           /* item */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional role for the breadcrumb item (which renders as a button by default)
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Text to display to the user for the breadcrumb item.
       */
-    var text: String = js.native
+    var text: String
   }
   object IBreadcrumbItem {
     
@@ -195,84 +191,85 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
-  trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
+  trait IBreadcrumbProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Aria label for the root element of the breadcrumb (which is a navigation landmark).
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IBreadcrumb interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IBreadcrumb]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IBreadcrumb]] = js.undefined
     
     /**
       * Render a custom divider in place of the default chevron `>`
       */
-    var dividerAs: js.UndefOr[IComponentAs[IDividerAsProps]] = js.native
+    var dividerAs: js.UndefOr[IComponentAs[IDividerAsProps]] = js.undefined
     
     /**
       * Extra props for the root FocusZone.
       */
-    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.native
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
     
     /**
       * Collection of breadcrumbs to render
       */
-    var items: js.Array[IBreadcrumbItem] = js.native
+    var items: js.Array[IBreadcrumbItem]
     
     /**
       * The maximum number of breadcrumbs to display before coalescing.
       * If not specified, all breadcrumbs will be rendered.
       */
-    var maxDisplayedItems: js.UndefOr[Double] = js.native
+    var maxDisplayedItems: js.UndefOr[Double] = js.undefined
     
     /**
       * Method that determines how to group the length of the breadcrumb.
       * Return undefined to never increase breadcrumb length.
       */
-    var onGrowData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.native
+    var onGrowData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.undefined
     
     /**
       * Method that determines how to reduce the length of the breadcrumb.
       * Return undefined to never reduce breadcrumb length.
       */
-    var onReduceData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.native
+    var onReduceData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.undefined
     
     /** Custom render function for each breadcrumb item. */
-    var onRenderItem: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.native
+    var onRenderItem: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
     
     /**
       * Render a custom overflow icon in place of the default icon `...`
       */
-    var onRenderOverflowIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderOverflowIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Aria label for the overflow button.
       */
-    var overflowAriaLabel: js.UndefOr[String] = js.native
+    var overflowAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom component for the overflow button.
       */
-    var overflowButtonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.native
+    var overflowButtonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
     
     /**
       * Optional index where overflow items will be collapsed. Defaults to 0.
       */
-    var overflowIndex: js.UndefOr[Double] = js.native
+    var overflowIndex: js.UndefOr[Double] = js.undefined
     
-    var styles: js.UndefOr[IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles]] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Extra props for the TooltipHost which wraps each breadcrumb item.
       */
-    var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.native
+    var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.undefined
   }
   object IBreadcrumbProps {
     
@@ -393,12 +390,11 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
   trait IBreadcrumbStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IBreadcrumbStyleProps {
     
@@ -422,24 +418,23 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
   trait IBreadcrumbStyles extends StObject {
     
-    var chevron: IStyle = js.native
+    var chevron: IStyle
     
-    var item: IStyle = js.native
+    var item: IStyle
     
-    var itemLink: IStyle = js.native
+    var itemLink: IStyle
     
-    var list: IStyle = js.native
+    var list: IStyle
     
-    var listItem: IStyle = js.native
+    var listItem: IStyle
     
-    var overflow: IStyle = js.native
+    var overflow: IStyle
     
-    var overflowButton: IStyle = js.native
+    var overflowButton: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IBreadcrumbStyles {
     
@@ -526,14 +521,15 @@ object breadcrumbTypesMod {
     }
   }
   
-  @js.native
-  trait IDividerAsProps extends IIconProps {
+  trait IDividerAsProps
+    extends StObject
+       with IIconProps {
     
     /**
       * Breadcrumb item to left of the divider to be passed for custom rendering.
       * For overflowed items, it will be last item in the list.
       */
-    var item: js.UndefOr[IBreadcrumbItem] = js.native
+    var item: js.UndefOr[IBreadcrumbItem] = js.undefined
   }
   object IDividerAsProps {
     

@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.MaskData")
 @js.native
 class MaskData ()
-  extends typings.pixiJs.PIXI.MaskData {
+  extends StObject
+     with typings.pixiJs.PIXI.MaskData {
   def this(maskObject: typings.pixiJs.PIXI.DisplayObject) = this()
 }

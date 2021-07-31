@@ -3,19 +3,17 @@ package typings.arangodb.anon
 import typings.arangodb.ArangoDB.KeyGeneratorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowUserKeys extends StObject {
   
-  var allowUserKeys: js.UndefOr[Boolean] = js.native
+  var allowUserKeys: js.UndefOr[Boolean] = js.undefined
   
-  var increment: js.UndefOr[Double] = js.native
+  var increment: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[KeyGeneratorType] = js.native
+  var `type`: js.UndefOr[KeyGeneratorType] = js.undefined
 }
 object AllowUserKeys {
   

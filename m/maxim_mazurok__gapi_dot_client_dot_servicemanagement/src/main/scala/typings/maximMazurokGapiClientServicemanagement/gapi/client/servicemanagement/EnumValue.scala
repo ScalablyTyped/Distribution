@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValue extends StObject {
   
   /** Enum value name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Enum value number. */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /** Protocol buffer options. */
-  var options: js.UndefOr[js.Array[Option]] = js.native
+  var options: js.UndefOr[js.Array[Option]] = js.undefined
 }
 object EnumValue {
   

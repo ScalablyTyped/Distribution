@@ -2,26 +2,24 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOperationsRequest extends StObject {
   
   /**
     * For an initial request for a list of operations, omit this element. If the number of operations that are not yet complete is greater than the value that you specified for MaxItems, you can use Marker to return additional operations. Get the value of NextPageMarker from the previous response, and submit another request that includes the value of NextPageMarker in the Marker element.
     */
-  var Marker: js.UndefOr[PageMarker] = js.native
+  var Marker: js.UndefOr[PageMarker] = js.undefined
   
   /**
     * Number of domains to be returned. Default: 20
     */
-  var MaxItems: js.UndefOr[PageMaxItems] = js.native
+  var MaxItems: js.UndefOr[PageMaxItems] = js.undefined
   
   /**
     * An optional parameter that lets you get information about all the operations that you submitted after a specified date and time. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
-  var SubmittedSince: js.UndefOr[Timestamp] = js.native
+  var SubmittedSince: js.UndefOr[Timestamp] = js.undefined
 }
 object ListOperationsRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseAddressRequest extends StObject {
   
   /**
     * [EC2-VPC] The allocation ID. Required for EC2-VPC.
     */
-  var AllocationId: js.UndefOr[typings.awsSdk.ec2Mod.AllocationId] = js.native
+  var AllocationId: js.UndefOr[typings.awsSdk.ec2Mod.AllocationId] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses. If you provide an incorrect network border group, you will receive an InvalidAddress.NotFound error. For more information, see Error Codes.  You cannot use a network border group with EC2 Classic. If you attempt this operation on EC2 classic, you will receive an InvalidParameterCombination error. For more information, see Error Codes. 
     */
-  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
   /**
     * [EC2-Classic] The Elastic IP address. Required for EC2-Classic.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
 }
 object ReleaseAddressRequest {
   

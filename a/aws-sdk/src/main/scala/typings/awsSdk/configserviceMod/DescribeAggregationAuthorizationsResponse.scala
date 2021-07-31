@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAggregationAuthorizationsResponse extends StObject {
   
   /**
     * Returns a list of authorizations granted to various aggregator accounts and regions.
     */
-  var AggregationAuthorizations: js.UndefOr[AggregationAuthorizationList] = js.native
+  var AggregationAuthorizations: js.UndefOr[AggregationAuthorizationList] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeAggregationAuthorizationsResponse {
   

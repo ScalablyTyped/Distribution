@@ -3,17 +3,15 @@ package typings.reactSvgMorph
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait From extends StObject {
     
-    var from: ReactElement = js.native
+    var from: ReactElement
     
-    var to: ReactElement = js.native
+    var to: ReactElement
   }
   object From {
     

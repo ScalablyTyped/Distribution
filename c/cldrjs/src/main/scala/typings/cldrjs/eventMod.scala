@@ -5,7 +5,6 @@ import typings.cldrjs.mod.CldrFactory
 import typings.cldrjs.mod.CldrStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod extends Shortcut {
@@ -13,7 +12,9 @@ object eventMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cldr/event", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CldrStatic {
+  class ^ protected ()
+    extends StObject
+       with CldrStatic {
     /**
       * @name constructor
       * @memberof cldr.CldrFactory

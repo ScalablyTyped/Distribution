@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLevelPermissions extends StObject {
   
   /**
     * The permissions settings of the access control list (ACL) for the bucket. This value is null if an ACL hasn't been defined for the bucket.
     */
-  var accessControlList: js.UndefOr[AccessControlList] = js.native
+  var accessControlList: js.UndefOr[AccessControlList] = js.undefined
   
   /**
     * The block public access settings for the bucket.
     */
-  var blockPublicAccess: js.UndefOr[BlockPublicAccess] = js.native
+  var blockPublicAccess: js.UndefOr[BlockPublicAccess] = js.undefined
   
   /**
     * The permissions settings of the bucket policy for the bucket. This value is null if a bucket policy hasn't been defined for the bucket.
     */
-  var bucketPolicy: js.UndefOr[BucketPolicy] = js.native
+  var bucketPolicy: js.UndefOr[BucketPolicy] = js.undefined
 }
 object BucketLevelPermissions {
   

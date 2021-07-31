@@ -15,7 +15,6 @@ import typings.react.mod.TouchEventHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,12 +38,11 @@ object mod {
     def defaultProps_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Finger extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Finger {
     
@@ -133,80 +131,79 @@ object mod {
   
   type GestureHandler = js.Function1[/* s */ IGestureStatus, Unit]
   
-  @js.native
   trait IGesture extends StObject {
     
-    var direction: js.UndefOr[all | vertical | horizontal] = js.native
+    var direction: js.UndefOr[all | vertical | horizontal] = js.undefined
     
-    var enablePinch: js.UndefOr[Boolean] = js.native
+    var enablePinch: js.UndefOr[Boolean] = js.undefined
     
-    var enableRotate: js.UndefOr[Boolean] = js.native
+    var enableRotate: js.UndefOr[Boolean] = js.undefined
     
-    var onPan: js.UndefOr[GestureHandler] = js.native
+    var onPan: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanCancel: js.UndefOr[GestureHandler] = js.native
+    var onPanCancel: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanDown: js.UndefOr[GestureHandler] = js.native
+    var onPanDown: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanEnd: js.UndefOr[GestureHandler] = js.native
+    var onPanEnd: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanLeft: js.UndefOr[GestureHandler] = js.native
+    var onPanLeft: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanMove: js.UndefOr[GestureHandler] = js.native
+    var onPanMove: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanRight: js.UndefOr[GestureHandler] = js.native
+    var onPanRight: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanStart: js.UndefOr[GestureHandler] = js.native
+    var onPanStart: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPanUp: js.UndefOr[GestureHandler] = js.native
+    var onPanUp: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinch: js.UndefOr[GestureHandler] = js.native
+    var onPinch: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchCancel: js.UndefOr[GestureHandler] = js.native
+    var onPinchCancel: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchEnd: js.UndefOr[GestureHandler] = js.native
+    var onPinchEnd: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchIn: js.UndefOr[GestureHandler] = js.native
+    var onPinchIn: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchMove: js.UndefOr[GestureHandler] = js.native
+    var onPinchMove: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchOut: js.UndefOr[GestureHandler] = js.native
+    var onPinchOut: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPinchStart: js.UndefOr[GestureHandler] = js.native
+    var onPinchStart: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPress: js.UndefOr[GestureHandler] = js.native
+    var onPress: js.UndefOr[GestureHandler] = js.undefined
     
-    var onPressUp: js.UndefOr[GestureHandler] = js.native
+    var onPressUp: js.UndefOr[GestureHandler] = js.undefined
     
-    var onRotate: js.UndefOr[GestureHandler] = js.native
+    var onRotate: js.UndefOr[GestureHandler] = js.undefined
     
-    var onRotateCancel: js.UndefOr[GestureHandler] = js.native
+    var onRotateCancel: js.UndefOr[GestureHandler] = js.undefined
     
-    var onRotateEnd: js.UndefOr[GestureHandler] = js.native
+    var onRotateEnd: js.UndefOr[GestureHandler] = js.undefined
     
-    var onRotateMove: js.UndefOr[GestureHandler] = js.native
+    var onRotateMove: js.UndefOr[GestureHandler] = js.undefined
     
-    var onRotateStart: js.UndefOr[GestureHandler] = js.native
+    var onRotateStart: js.UndefOr[GestureHandler] = js.undefined
     
-    var onSwipe: js.UndefOr[GestureHandler] = js.native
+    var onSwipe: js.UndefOr[GestureHandler] = js.undefined
     
-    var onSwipeDown: js.UndefOr[GestureHandler] = js.native
+    var onSwipeDown: js.UndefOr[GestureHandler] = js.undefined
     
-    var onSwipeLeft: js.UndefOr[GestureHandler] = js.native
+    var onSwipeLeft: js.UndefOr[GestureHandler] = js.undefined
     
-    var onSwipeRight: js.UndefOr[GestureHandler] = js.native
+    var onSwipeRight: js.UndefOr[GestureHandler] = js.undefined
     
-    var onSwipeUp: js.UndefOr[GestureHandler] = js.native
+    var onSwipeUp: js.UndefOr[GestureHandler] = js.undefined
     
-    var onTap: js.UndefOr[GestureHandler] = js.native
+    var onTap: js.UndefOr[GestureHandler] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   }
   object IGesture {
     
@@ -437,44 +434,43 @@ object mod {
     }
   }
   
-  @js.native
   trait IGestureStatus extends StObject {
     
-    var availablePan: js.UndefOr[Boolean] = js.native
+    var availablePan: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
     
-    var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.native
+    var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.undefined
     
-    var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+    var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
-    var pan: js.UndefOr[Boolean] = js.native
+    var pan: js.UndefOr[Boolean] = js.undefined
     
-    var pinch: js.UndefOr[Boolean] = js.native
+    var pinch: js.UndefOr[Boolean] = js.undefined
     
-    var preTouches: js.Array[Finger] = js.native
+    var preTouches: js.Array[Finger]
     
-    var press: js.UndefOr[Boolean] = js.native
+    var press: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[Boolean] = js.native
+    var rotate: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var srcEvent: js.Any = js.native
+    var srcEvent: js.Any
     
-    var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+    var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var startTouches: js.Array[Finger] = js.native
+    var startTouches: js.Array[Finger]
     
-    var swipe: js.UndefOr[Boolean] = js.native
+    var swipe: js.UndefOr[Boolean] = js.undefined
     
-    var time: Double = js.native
+    var time: Double
     
-    var touches: js.Array[Finger] = js.native
+    var touches: js.Array[Finger]
   }
   object IGestureStatus {
     
@@ -601,16 +597,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiFingerStatus extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object MultiFingerStatus {
     
@@ -637,20 +632,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SingeFingerMoveStatus extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var time: Double = js.native
+    var time: Double
     
-    var velocity: Double = js.native
+    var velocity: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object SingeFingerMoveStatus {
     

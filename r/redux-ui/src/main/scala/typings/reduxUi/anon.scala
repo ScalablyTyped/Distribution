@@ -2,17 +2,15 @@ package typings.reduxUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Pure extends StObject {
     
-    var pure: js.UndefOr[Boolean] = js.native
+    var pure: js.UndefOr[Boolean] = js.undefined
     
-    var withRef: js.UndefOr[Boolean] = js.native
+    var withRef: js.UndefOr[Boolean] = js.undefined
   }
   object Pure {
     

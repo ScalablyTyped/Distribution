@@ -15,11 +15,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.string
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchLayerField extends Accessor {
+trait SearchLayerField
+  extends StObject
+     with Accessor {
   
   /**
     * Whether or not the field is an exact match.

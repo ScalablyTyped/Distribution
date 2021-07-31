@@ -2,23 +2,21 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Circle extends StObject {
   
-  var circle: String = js.native
+  var circle: String
   
-  var circlemarker: String = js.native
+  var circlemarker: String
   
-  var marker: String = js.native
+  var marker: String
   
-  var polygon: String = js.native
+  var polygon: String
   
-  var polyline: String = js.native
+  var polyline: String
   
-  var rectangle: String = js.native
+  var rectangle: String
 }
 object Circle {
   

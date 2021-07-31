@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotaryResult extends StObject {
   
-  var jurisdictions: js.UndefOr[js.Array[Jurisdiction]] = js.native
+  var jurisdictions: js.UndefOr[js.Array[Jurisdiction]] = js.undefined
   
-  var notary: js.UndefOr[Notary] = js.native
+  var notary: js.UndefOr[Notary] = js.undefined
 }
 object NotaryResult {
   

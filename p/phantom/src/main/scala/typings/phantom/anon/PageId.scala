@@ -2,13 +2,11 @@ package typings.phantom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageId extends StObject {
   
-  var pageId: String = js.native
+  var pageId: String
 }
 object PageId {
   

@@ -2,21 +2,19 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 提供预设的 Wi-Fi 信息列表 */
-@js.native
 trait WifiData extends StObject {
   
   /** Wi-Fi 的 BSSID */
-  var BSSID: js.UndefOr[String] = js.native
+  var BSSID: js.UndefOr[String] = js.undefined
   
   /** Wi-Fi 的 SSID */
-  var SSID: js.UndefOr[String] = js.native
+  var SSID: js.UndefOr[String] = js.undefined
   
   /** Wi-Fi 设备密码 */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
 }
 object WifiData {
   

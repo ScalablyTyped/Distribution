@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestampRange extends StObject {
   
   /**
     * The minimum value of the timestamp range.
     */
-  var beginDate: js.UndefOr[Timestamp] = js.native
+  var beginDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum value of the timestamp range.
     */
-  var endDate: js.UndefOr[Timestamp] = js.native
+  var endDate: js.UndefOr[Timestamp] = js.undefined
 }
 object TimestampRange {
   

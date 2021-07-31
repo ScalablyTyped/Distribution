@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEntitiesRequest extends StObject {
   
   /**
     * An array of entity IDs. The IDs should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:device:DEVICENAME 
     */
-  var ids: Urns = js.native
+  var ids: Urns
   
   /**
     * The version of the user's namespace. Defaults to the latest version of the user's namespace.
     */
-  var namespaceVersion: js.UndefOr[Version] = js.native
+  var namespaceVersion: js.UndefOr[Version] = js.undefined
 }
 object GetEntitiesRequest {
   

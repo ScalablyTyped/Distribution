@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
-@js.native
 trait CommentCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[CommentData]] = js.native
+  var items: js.UndefOr[js.Array[CommentData]] = js.undefined
 }
 object CommentCollectionUpdateData {
   

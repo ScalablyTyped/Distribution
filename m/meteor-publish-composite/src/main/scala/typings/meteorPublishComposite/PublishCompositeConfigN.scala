@@ -3,22 +3,20 @@ package typings.meteorPublishComposite
 import typings.meteor.Mongo.Cursor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishCompositeConfigN extends StObject {
   
-  var children: js.UndefOr[js.Array[PublishCompositeConfigN]] = js.native
+  var children: js.UndefOr[js.Array[PublishCompositeConfigN]] = js.undefined
   
-  var collectionName: js.UndefOr[String] = js.native
+  var collectionName: js.UndefOr[String] = js.undefined
   
-  def find(args: js.Any*): Cursor[_, _] = js.native
+  def find(args: js.Any*): Cursor[js.Any, js.Any]
 }
 object PublishCompositeConfigN {
   
   @scala.inline
-  def apply(find: /* repeated */ js.Any => Cursor[_, _]): PublishCompositeConfigN = {
+  def apply(find: /* repeated */ js.Any => Cursor[js.Any, js.Any]): PublishCompositeConfigN = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
     __obj.asInstanceOf[PublishCompositeConfigN]
   }
@@ -42,6 +40,6 @@ object PublishCompositeConfigN {
     def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
     
     @scala.inline
-    def setFind(value: /* repeated */ js.Any => Cursor[_, _]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    def setFind(value: /* repeated */ js.Any => Cursor[js.Any, js.Any]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

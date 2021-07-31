@@ -2,29 +2,27 @@ package typings.ffi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RTLDDEFAUL extends StObject {
     
-    var RTLD_DEFAUL: Buffer = js.native
+    var RTLD_DEFAUL: Buffer
     
-    var RTLD_GLOBAL: Double = js.native
+    var RTLD_GLOBAL: Double
     
-    var RTLD_LAZY: Double = js.native
+    var RTLD_LAZY: Double
     
-    var RTLD_LOCAL: Double = js.native
+    var RTLD_LOCAL: Double
     
-    var RTLD_NEXT: Buffer = js.native
+    var RTLD_NEXT: Buffer
     
-    var RTLD_NODELETE: Double = js.native
+    var RTLD_NODELETE: Double
     
-    var RTLD_NOLOAD: Double = js.native
+    var RTLD_NOLOAD: Double
     
-    var RTLD_NOW: Double = js.native
+    var RTLD_NOW: Double
   }
   object RTLDDEFAUL {
     

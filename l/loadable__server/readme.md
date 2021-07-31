@@ -10,9 +10,9 @@ Server utilities for loadable.
 | ------------------ | :-------------: |
 | Full name          | @loadable/server |
 | Keywords           | loadable |
-| # releases         | 28 |
-| # dependents       | 51 |
-| # downloads        | 2713990 |
+| # releases         | 13 |
+| # dependents       | 59 |
+| # downloads        | 3662189 |
 | # stars            | 0 |
 
 ## Links

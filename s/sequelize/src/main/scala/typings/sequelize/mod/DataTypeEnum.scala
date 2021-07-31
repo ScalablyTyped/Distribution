@@ -3,11 +3,12 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeEnum extends DataTypeAbstract {
+trait DataTypeEnum
+  extends StObject
+     with DataTypeAbstract {
   
   /**
     * Enum field

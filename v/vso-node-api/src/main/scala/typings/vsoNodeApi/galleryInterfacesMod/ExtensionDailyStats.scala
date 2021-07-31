@@ -2,36 +2,34 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDailyStats extends StObject {
   
   /**
     * List of extension statistics data points
     */
-  var dailyStats: js.Array[ExtensionDailyStat] = js.native
+  var dailyStats: js.Array[ExtensionDailyStat]
   
   /**
     * Id of the extension, this will never be sent back to the client. For internal use only.
     */
-  var extensionId: String = js.native
+  var extensionId: String
   
   /**
     * Name of the extension
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * Name of the publisher
     */
-  var publisherName: String = js.native
+  var publisherName: String
   
   /**
     * Count of stats
     */
-  var statCount: Double = js.native
+  var statCount: Double
 }
 object ExtensionDailyStats {
   

@@ -6,7 +6,6 @@ import typings.xmldsigjs.rsaKeyMod.RsaPSSSignParams
 import typings.xmldsigjs.x509DataMod.X509IncludeOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyInfosMod {
@@ -78,9 +77,12 @@ object keyInfosMod {
   /* static members */
   object PssAlgorithmParams {
     
-    @JSImport("xmldsigjs/build/types/xml/key_infos", "PssAlgorithmParams.FromAlgorithm")
+    @JSImport("xmldsigjs/build/types/xml/key_infos", "PssAlgorithmParams")
     @js.native
-    def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams]
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "RsaKeyValue")
@@ -102,15 +104,15 @@ object keyInfosMod {
   object X509IncludeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.xmldsigjs.x509DataMod.X509IncludeOption with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.xmldsigjs.x509DataMod.X509IncludeOption & Double] = js.native
     
-    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly with Double = js.native
+    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly & Double = js.native
     
-    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot with Double = js.native
+    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot & Double = js.native
     
-    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None with Double = js.native
+    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None & Double = js.native
     
-    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain with Double = js.native
+    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain & Double = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "X509IssuerSerial")

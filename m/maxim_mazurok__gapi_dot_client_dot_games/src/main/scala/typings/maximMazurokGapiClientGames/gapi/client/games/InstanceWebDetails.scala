@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceWebDetails extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#instanceWebDetails`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Launch URL for the game. */
-  var launchUrl: js.UndefOr[String] = js.native
+  var launchUrl: js.UndefOr[String] = js.undefined
   
   /** Indicates that this instance is the default for new installations. */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
 }
 object InstanceWebDetails {
   

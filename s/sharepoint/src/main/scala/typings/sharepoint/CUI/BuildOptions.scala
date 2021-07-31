@@ -2,25 +2,23 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOptions extends StObject {
   
-  var attachToDOM: Boolean = js.native
+  var attachToDOM: Boolean
   
-  var clientID: String = js.native
+  var clientID: String
   
-  var dataExtensions: js.Array[_] = js.native
+  var dataExtensions: js.Array[js.Any]
   
-  var fixedPositioningEnabled: Boolean = js.native
+  var fixedPositioningEnabled: Boolean
   
-  var lazyMenuInit: Boolean = js.native
+  var lazyMenuInit: Boolean
   
-  var trimmedIds: js.Array[String] = js.native
+  var trimmedIds: js.Array[String]
   
-  var validateServerRendering: Boolean = js.native
+  var validateServerRendering: Boolean
 }
 object BuildOptions {
   
@@ -28,7 +26,7 @@ object BuildOptions {
   def apply(
     attachToDOM: Boolean,
     clientID: String,
-    dataExtensions: js.Array[_],
+    dataExtensions: js.Array[js.Any],
     fixedPositioningEnabled: Boolean,
     lazyMenuInit: Boolean,
     trimmedIds: js.Array[String],
@@ -48,7 +46,7 @@ object BuildOptions {
     def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExtensions(value: js.Array[_]): Self = StObject.set(x, "dataExtensions", value.asInstanceOf[js.Any])
+    def setDataExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "dataExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "dataExtensions", js.Array(value :_*))

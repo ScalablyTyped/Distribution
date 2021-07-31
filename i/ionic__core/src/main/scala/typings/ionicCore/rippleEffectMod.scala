@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rippleEffectMod {
   
   @JSImport("@ionic/core/dist/types/components/ripple-effect/ripple-effect", "RippleEffect")
   @js.native
-  class RippleEffect () extends ComponentInterface {
+  class RippleEffect ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * Adds the ripple effect to the parent element.

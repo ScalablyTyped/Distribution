@@ -15,7 +15,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeProviderMod {
@@ -43,27 +42,26 @@ object localeProviderMod {
     def propTypes_=(x: typings.antDesignReactNative.anon.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var DatePicker: DismissText = js.native
+    var DatePicker: DismissText
     
-    var DatePickerView: Day = js.native
+    var DatePickerView: Day
     
-    var InputItem: BackspaceLabel = js.native
+    var InputItem: BackspaceLabel
     
-    var ListView: Done = js.native
+    var ListView: Done
     
-    var Modal: ButtonText = js.native
+    var Modal: ButtonText
     
-    var Pagination: NextText = js.native
+    var Pagination: NextText
     
-    var Picker: Extra = js.native
+    var Picker: Extra
     
-    var SearchBar: CancelText = js.native
+    var SearchBar: CancelText
     
     /** zh_CN */
-    var locale: String = js.native
+    var locale: String
   }
   object Locale {
     
@@ -122,12 +120,11 @@ object localeProviderMod {
     def getChildContext(): AntLocaleDatePicker = js.native
   }
   
-  @js.native
   trait LocaleProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var locale: js.UndefOr[PartialLocale] = js.native
+    var locale: js.UndefOr[PartialLocale] = js.undefined
   }
   object LocaleProviderProps {
     

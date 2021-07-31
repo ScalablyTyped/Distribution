@@ -29,10 +29,13 @@ import typings.react.mod.ComponentType
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("formsy-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("formsy-react", JSImport.Default)
   @js.native
@@ -65,9 +68,8 @@ object mod {
     def propTypes_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("formsy-react", "addValidationRule")
-  @js.native
-  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = js.native
+  @scala.inline
+  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object propTypes {
     
@@ -110,12 +112,16 @@ object mod {
   @js.native
   val validationRules: Validations[js.Any] = js.native
   
-  @JSImport("formsy-react", "withFormsy")
-  @js.native
-  def withFormsy[T, V](WrappedComponent: ComponentType[T with PassDownProps[V]]): ComponentType[
+  @scala.inline
+  def withFormsy[T, V](WrappedComponent: ComponentType[T & PassDownProps[V]]): ComponentType[
     Omit[
-      T with WrapperProps[V], 
+      T & WrapperProps[V], 
       /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFormsy")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    Omit[
+      T & WrapperProps[V], 
+      /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
+    ]
+  ]]
 }

@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,14 +12,22 @@ sealed trait ControlMode extends StObject
 object ControlMode extends StObject {
   
   @js.native
-  sealed trait displayMode extends ControlMode
+  sealed trait displayMode
+    extends StObject
+       with ControlMode
   
   @js.native
-  sealed trait editMode extends ControlMode
+  sealed trait editMode
+    extends StObject
+       with ControlMode
   
   @js.native
-  sealed trait invalid extends ControlMode
+  sealed trait invalid
+    extends StObject
+       with ControlMode
   
   @js.native
-  sealed trait newMode extends ControlMode
+  sealed trait newMode
+    extends StObject
+       with ControlMode
 }

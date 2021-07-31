@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jscodeshift.collectionMod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsxelementMod {
+  
+  @JSImport("jscodeshift/src/collections/JSXElement", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jscodeshift/src/collections/JSXElement", "filters")
   @js.native
@@ -17,9 +20,8 @@ object jsxelementMod {
   @js.native
   val mappings: MappingMethods = js.native
   
-  @JSImport("jscodeshift/src/collections/JSXElement", "register")
-  @js.native
-  def register(): Unit = js.native
+  @scala.inline
+  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
@@ -27,18 +29,17 @@ object jsxelementMod {
   
   type Filter = js.Function1[/* path */ ASTPath[js.Any], Boolean]
   
-  @js.native
   trait FilterMethods extends StObject {
     
     /**
       * Filter method for attributes.
       */
-    def hasAttributes(attributeFilter: StringDictionary[js.Any]): Filter = js.native
+    def hasAttributes(attributeFilter: StringDictionary[js.Any]): Filter
     
     /**
       * Filter elements which contain a specific child type
       */
-    def hasChildren(name: String): Filter = js.native
+    def hasChildren(name: String): Filter
   }
   object FilterMethods {
     
@@ -84,19 +85,18 @@ object jsxelementMod {
   
   type JSXElementChild = /* import warning: importer.ImportType#apply Failed type conversion: jscodeshift.jscodeshift/src/collections/JSXElement.Defined<jscodeshift.jscodeshift/src/collections/JSXElement.JSXElement['children']>[0] */ js.Any
   
-  @js.native
   trait MappingMethods extends StObject {
     
     /**
       * Given a JSXElement, returns its "root" name. E.g. it would return "Foo" for
       * both <Foo /> and <Foo.Bar />.
       */
-    def getRootName(path: ASTPath[_]): String = js.native
+    def getRootName(path: ASTPath[js.Any]): String
   }
   object MappingMethods {
     
     @scala.inline
-    def apply(getRootName: ASTPath[_] => String): MappingMethods = {
+    def apply(getRootName: ASTPath[js.Any] => String): MappingMethods = {
       val __obj = js.Dynamic.literal(getRootName = js.Any.fromFunction1(getRootName))
       __obj.asInstanceOf[MappingMethods]
     }
@@ -105,24 +105,23 @@ object jsxelementMod {
     implicit class MappingMethodsMutableBuilder[Self <: MappingMethods] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetRootName(value: ASTPath[_] => String): Self = StObject.set(x, "getRootName", js.Any.fromFunction1(value))
+      def setGetRootName(value: ASTPath[js.Any] => String): Self = StObject.set(x, "getRootName", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait TraversalMethods extends StObject {
     
     /**
       * Returns all children that are JSXElements.
       * This method only applies to JSXElement typed collections.
       */
-    def childElements(): Collection[JSXElement] = js.native
+    def childElements(): Collection[JSXElement]
     
     /**
       * Returns all child nodes, including literals and expressions.
       * This method only applies to JSXElement typed collections.
       */
-    def childNodes(): Collection[JSXElementChild] = js.native
+    def childNodes(): Collection[JSXElementChild]
   }
   object TraversalMethods {
     

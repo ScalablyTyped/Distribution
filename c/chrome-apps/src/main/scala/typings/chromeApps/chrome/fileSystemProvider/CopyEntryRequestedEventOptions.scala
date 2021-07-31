@@ -4,17 +4,17 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptio
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CopyEntryRequestedEventOptions extends RequestedEventOptions {
+trait CopyEntryRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The source path for the operation. */
-  var sourcePath: String = js.native
+  var sourcePath: String
   
   /** The destination path for the operation. */
-  var targetPath: String = js.native
+  var targetPath: String
 }
 object CopyEntryRequestedEventOptions {
   

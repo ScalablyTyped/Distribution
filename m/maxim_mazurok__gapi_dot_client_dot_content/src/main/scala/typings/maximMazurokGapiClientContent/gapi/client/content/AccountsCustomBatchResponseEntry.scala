@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountsCustomBatchResponseEntry extends StObject {
   
   /** The retrieved, created, or updated account. Not defined if the method was `delete`, `claimwebsite` or `link`. */
-  var account: js.UndefOr[Account] = js.native
+  var account: js.UndefOr[Account] = js.undefined
   
   /** The ID of the request entry this entry responds to. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** A list of errors defined if and only if the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#accountsCustomBatchResponseEntry`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AccountsCustomBatchResponseEntry {
   

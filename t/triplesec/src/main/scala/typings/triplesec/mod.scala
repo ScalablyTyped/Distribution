@@ -4,34 +4,37 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("triplesec", "decrypt")
+  @JSImport("triplesec", JSImport.Namespace)
   @js.native
-  def decrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("triplesec", "encrypt")
-  @js.native
-  def encrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = js.native
+  @scala.inline
+  def decrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def encrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object prng {
     
-    @JSImport("triplesec", "prng.generate")
+    @JSImport("triplesec", "prng")
     @js.native
-    def generate(n: Double, cb: js.Function1[/* words */ WordArray, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def generate(n: Double, cb: js.Function1[/* words */ WordArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(n.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait Arguments extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var key: Buffer = js.native
+    var key: Buffer
     
-    var progress_hook: js.UndefOr[js.Function1[/* progress */ Progress, Unit]] = js.native
+    var progress_hook: js.UndefOr[js.Function1[/* progress */ Progress, Unit]] = js.undefined
   }
   object Arguments {
     
@@ -58,14 +61,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var i: Double = js.native
+    var i: Double
     
-    var total: Double = js.native
+    var total: Double
     
-    var what: String = js.native
+    var what: String
   }
   object Progress {
     
@@ -89,14 +91,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WordArray extends StObject {
     
-    var sigBytes: Double = js.native
+    var sigBytes: Double
     
-    def to_hex(): String = js.native
+    def to_hex(): String
     
-    var words: js.Array[Double] = js.native
+    var words: js.Array[Double]
   }
   object WordArray {
     

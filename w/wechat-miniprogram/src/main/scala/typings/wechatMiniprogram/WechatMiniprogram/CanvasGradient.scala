@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGradient extends StObject {
   
   /** [CanvasGradient.addColorStop(number stop, string color)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.addColorStop.html)
@@ -34,7 +32,7 @@ trait CanvasGradient extends StObject {
   * ![](@program/dev/image/canvas/color-stop.png) */
   def addColorStop(/** 表示渐变中开始与结束之间的位置，范围 0-1。 */
   stop: Double, /** 渐变点的颜色。 */
-  color: String): Unit = js.native
+  color: String): Unit
 }
 object CanvasGradient {
   

@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -69,32 +68,31 @@ object gridMod {
   */
   trait BreakpointsType extends StObject
   
-  @js.native
   trait ColProps extends StObject {
     
-    var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.native
+    var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.undefined
     
-    var large: js.UndefOr[Double] = js.native
+    var large: js.UndefOr[Double] = js.undefined
     
-    var `large-offset`: js.UndefOr[Double] = js.native
+    var `large-offset`: js.UndefOr[Double] = js.undefined
     
-    var medium: js.UndefOr[Double] = js.native
+    var medium: js.UndefOr[Double] = js.undefined
     
-    var `medium-offset`: js.UndefOr[Double] = js.native
+    var `medium-offset`: js.UndefOr[Double] = js.undefined
     
-    var `no-gutters`: js.UndefOr[Boolean] = js.native
+    var `no-gutters`: js.UndefOr[Boolean] = js.undefined
     
-    var small: js.UndefOr[Double] = js.native
+    var small: js.UndefOr[Double] = js.undefined
     
-    var `small-offset`: js.UndefOr[Double] = js.native
+    var `small-offset`: js.UndefOr[Double] = js.undefined
     
-    var xlarge: js.UndefOr[Double] = js.native
+    var xlarge: js.UndefOr[Double] = js.undefined
     
-    var `xlarge-offset`: js.UndefOr[Double] = js.native
+    var `xlarge-offset`: js.UndefOr[Double] = js.undefined
     
-    var xsmall: js.UndefOr[Double] = js.native
+    var xsmall: js.UndefOr[Double] = js.undefined
     
-    var `xsmall-offset`: js.UndefOr[Double] = js.native
+    var `xsmall-offset`: js.UndefOr[Double] = js.undefined
   }
   object ColProps {
     
@@ -184,18 +182,17 @@ object gridMod {
     }
   }
   
-  @js.native
   trait ContainerProps extends StObject {
     
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
-    var hide: js.UndefOr[BreakpointsType | js.Array[String]] = js.native
+    var hide: js.UndefOr[BreakpointsType | js.Array[String]] = js.undefined
     
-    var `no-gutters`: js.UndefOr[Boolean] = js.native
+    var `no-gutters`: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[BreakpointsComponents] = js.native
+    var theme: js.UndefOr[BreakpointsComponents] = js.undefined
     
-    var withBreakpoints: js.UndefOr[Boolean] = js.native
+    var withBreakpoints: js.UndefOr[Boolean] = js.undefined
   }
   object ContainerProps {
     
@@ -243,20 +240,19 @@ object gridMod {
     }
   }
   
-  @js.native
   trait HideProps extends StObject {
     
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
-    var medium: js.UndefOr[Boolean] = js.native
+    var medium: js.UndefOr[Boolean] = js.undefined
     
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[BreakpointsObject] = js.native
+    var theme: js.UndefOr[BreakpointsObject] = js.undefined
     
-    var xlarge: js.UndefOr[Boolean] = js.native
+    var xlarge: js.UndefOr[Boolean] = js.undefined
     
-    var xsmall: js.UndefOr[Boolean] = js.native
+    var xsmall: js.UndefOr[Boolean] = js.undefined
   }
   object HideProps {
     
@@ -307,16 +303,15 @@ object gridMod {
     }
   }
   
-  @js.native
   trait RowProps extends StObject {
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.native
+    var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.undefined
     
-    var `no-gutters`: js.UndefOr[Boolean] = js.native
+    var `no-gutters`: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[`11`] = js.native
+    var theme: js.UndefOr[`11`] = js.undefined
   }
   object RowProps {
     

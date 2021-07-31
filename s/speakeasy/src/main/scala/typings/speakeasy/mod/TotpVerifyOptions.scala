@@ -2,48 +2,48 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TotpVerifyOptions extends SharedOptions {
+trait TotpVerifyOptions
+  extends StObject
+     with SharedOptions {
   
   /**
     * The counter value, calculated from time by default
     */
-  var counter: js.UndefOr[Double] = js.native
+  var counter: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of digits for the one-time passcode, defaults to 6
     */
-  var digits: js.UndefOr[Double] = js.native
+  var digits: js.UndefOr[Double] = js.undefined
   
   /**
     * Initial time since the UNIX epoch from which to calculate the counter value,
     * defaults to 0 (no offset).
     */
-  var epoch: js.UndefOr[Double] = js.native
+  var epoch: js.UndefOr[Double] = js.undefined
   
   /**
     * Shared secret key
     */
-  var secret: String = js.native
+  var secret: String
   
   /**
     * Time step in seconds, defaults to 30
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * Time in seconds with which to calculate
     * counter value, defaults to `Date.now() / 1000`.
     */
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
   /**
     * Passcode to validate
     */
-  var token: String = js.native
+  var token: String
   
   /**
     * The allowable margin for the counter.
@@ -52,7 +52,7 @@ trait TotpVerifyOptions extends SharedOptions {
     * the passcode against all One Time Passcodes between 995 and 1005, inclusive
     * defaults to 0
     */
-  var window: js.UndefOr[Double] = js.native
+  var window: js.UndefOr[Double] = js.undefined
 }
 object TotpVerifyOptions {
   

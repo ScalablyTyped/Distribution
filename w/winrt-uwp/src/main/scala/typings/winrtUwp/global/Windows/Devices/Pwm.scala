@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pwm {
@@ -10,7 +9,33 @@ object Pwm {
   @JSGlobal("Windows.Devices.Pwm.PwmController")
   @js.native
   abstract class PwmController ()
-    extends typings.winrtUwp.Windows.Devices.Pwm.PwmController
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Pwm.PwmController {
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var actualFrequency: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var maxFrequency: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var minFrequency: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var openPin: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var pinCount: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setDesiredFrequency: js.Any = js.native
+  }
   object PwmController {
     
     @JSGlobal("Windows.Devices.Pwm.PwmController")
@@ -36,7 +61,40 @@ object Pwm {
   @JSGlobal("Windows.Devices.Pwm.PwmPin")
   @js.native
   abstract class PwmPin ()
-    extends typings.winrtUwp.Windows.Devices.Pwm.PwmPin
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Pwm.PwmPin {
+    
+    /* CompleteClass */
+    var close: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var controller: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var getActiveDutyCyclePercentage: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var isStarted: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var polarity: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var setActiveDutyCyclePercentage: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var start: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var stop: js.Any = js.native
+  }
   
   object PwmPulsePolarity {
     

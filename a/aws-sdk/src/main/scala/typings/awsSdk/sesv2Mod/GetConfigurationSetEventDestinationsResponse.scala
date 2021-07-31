@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigurationSetEventDestinationsResponse extends StObject {
   
   /**
     * An array that includes all of the events destinations that have been configured for the configuration set.
     */
-  var EventDestinations: js.UndefOr[typings.awsSdk.sesv2Mod.EventDestinations] = js.native
+  var EventDestinations: js.UndefOr[typings.awsSdk.sesv2Mod.EventDestinations] = js.undefined
 }
 object GetConfigurationSetEventDestinationsResponse {
   

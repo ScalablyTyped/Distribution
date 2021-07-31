@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VolumeMount describes a mounting of a Volume within a container.
   */
-@js.native
 trait VolumeMount extends StObject {
   
   /**
     * Path within the container at which the volume should be mounted.  Must not contain ':'.
     */
-  var mountPath: Input[String] = js.native
+  var mountPath: Input[String]
   
   /**
     * mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
     */
-  var mountPropagation: js.UndefOr[Input[String]] = js.native
+  var mountPropagation: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * This must match the Name of a Volume.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
     */
-  var subPath: js.UndefOr[Input[String]] = js.native
+  var subPath: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath are mutually exclusive.
     */
-  var subPathExpr: js.UndefOr[Input[String]] = js.native
+  var subPathExpr: js.UndefOr[Input[String]] = js.undefined
 }
 object VolumeMount {
   

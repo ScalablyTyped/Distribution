@@ -2,18 +2,17 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 界面-----设置置顶信息
-@js.native
 trait SetTopBarTextOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 置顶栏文字内容
     */
-  var text: String = js.native
+  var text: String
 }
 object SetTopBarTextOptions {
   

@@ -11,8 +11,8 @@ a set of utilities to work with JSON / JSON5 documents
 | Full name          | jju |
 | Keywords           | json, json5, parser, serializer, data |
 | # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 30598769 |
+| # dependents       | 93 |
+| # downloads        | 37384583 |
 | # stars            | 3 |
 
 ## Links

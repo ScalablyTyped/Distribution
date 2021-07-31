@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReplayRequest extends StObject {
   
   /**
     * The name of the replay to retrieve.
     */
-  var ReplayName: typings.awsSdk.cloudwatcheventsMod.ReplayName = js.native
+  var ReplayName: typings.awsSdk.cloudwatcheventsMod.ReplayName
 }
 object DescribeReplayRequest {
   

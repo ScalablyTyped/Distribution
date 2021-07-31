@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: GET = js.native
+  var method: GET
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads = js.native
+  var url: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads
 }
 object EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: GET,
-    request: RequestRequestOptions,
-    url: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads
-  ): EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runners/downloads")
     __obj.asInstanceOf[EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions]
   }
   

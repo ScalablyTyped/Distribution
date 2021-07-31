@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionState extends StObject {
   
   /**
     * The user-specified reason why the transition between two stages of a pipeline was disabled.
     */
-  var disabledReason: js.UndefOr[DisabledReason] = js.native
+  var disabledReason: js.UndefOr[DisabledReason] = js.undefined
   
   /**
     * Whether the transition between stages is enabled (true) or disabled (false).
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The timestamp when the transition state was last changed.
     */
-  var lastChangedAt: js.UndefOr[LastChangedAt] = js.native
+  var lastChangedAt: js.UndefOr[LastChangedAt] = js.undefined
   
   /**
     * The ID of the user who last changed the transition state.
     */
-  var lastChangedBy: js.UndefOr[LastChangedBy] = js.native
+  var lastChangedBy: js.UndefOr[LastChangedBy] = js.undefined
 }
 object TransitionState {
   

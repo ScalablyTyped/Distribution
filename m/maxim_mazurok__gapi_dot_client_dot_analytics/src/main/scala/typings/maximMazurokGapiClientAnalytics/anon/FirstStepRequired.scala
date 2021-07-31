@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstStepRequired extends StObject {
   
   /** Determines if the goal URL must exactly match the capitalization of visited URLs. */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** Determines if the first step in this goal is required. */
-  var firstStepRequired: js.UndefOr[Boolean] = js.native
+  var firstStepRequired: js.UndefOr[Boolean] = js.undefined
   
   /** Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX. */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /** List of steps configured for this goal funnel. */
-  var steps: js.UndefOr[js.Array[Number]] = js.native
+  var steps: js.UndefOr[js.Array[Number]] = js.undefined
   
   /** URL for this goal. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object FirstStepRequired {
   

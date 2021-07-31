@@ -2,14 +2,12 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of a specific logging destination (the producer project or
   * the consumer project).
   */
-@js.native
 trait SchemaLoggingDestination extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaLoggingDestination extends StObject {
     * scoped name, it will be automatically prefixed with the service name
     * followed by &quot;/&quot;.
     */
-  var logs: js.UndefOr[js.Array[String]] = js.native
+  var logs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The monitored resource type. The type must be defined in the
     * Service.monitored_resources section.
     */
-  var monitoredResource: js.UndefOr[String] = js.native
+  var monitoredResource: js.UndefOr[String] = js.undefined
 }
 object SchemaLoggingDestination {
   

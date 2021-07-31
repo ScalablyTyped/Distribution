@@ -11,79 +11,77 @@ import typings.leaflet.mod.PopupEvent
 import typings.leaflet.mod.ResizeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapEvents extends StObject {
   
-  var onautopanstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onautopanstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onbaselayerchange: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.native
+  var onbaselayerchange: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
   
-  var onblur: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onblur: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var oncontextmenu: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var oncontextmenu: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var ondblclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var ondblclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var ondrag: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var ondrag: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var ondragend: js.UndefOr[js.Function1[/* event */ DragEndEvent, Unit]] = js.native
+  var ondragend: js.UndefOr[js.Function1[/* event */ DragEndEvent, Unit]] = js.undefined
   
-  var ondragstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var ondragstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onfocus: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onfocus: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onlayeradd: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.native
+  var onlayeradd: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.undefined
   
-  var onlayerremove: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.native
+  var onlayerremove: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.undefined
   
-  var onload: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onload: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onlocationerror: js.UndefOr[js.Function1[/* event */ ErrorEvent, Unit]] = js.native
+  var onlocationerror: js.UndefOr[js.Function1[/* event */ ErrorEvent, Unit]] = js.undefined
   
-  var onlocationfound: js.UndefOr[js.Function1[/* event */ LocationEvent, Unit]] = js.native
+  var onlocationfound: js.UndefOr[js.Function1[/* event */ LocationEvent, Unit]] = js.undefined
   
-  var onmousedown: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onmousedown: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onmousemove: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onmousemove: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onmouseout: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onmouseout: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onmouseover: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onmouseover: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onmouseup: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onmouseup: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onmove: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onmove: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onmoveend: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onmoveend: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onmovestart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onmovestart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onoverlayadd: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.native
+  var onoverlayadd: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
   
-  var onoverlayremove: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.native
+  var onoverlayremove: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
   
-  var onpopupclose: js.UndefOr[js.Function1[/* event */ PopupEvent, Unit]] = js.native
+  var onpopupclose: js.UndefOr[js.Function1[/* event */ PopupEvent, Unit]] = js.undefined
   
-  var onpopupopen: js.UndefOr[js.Function1[/* event */ PopupEvent, Unit]] = js.native
+  var onpopupopen: js.UndefOr[js.Function1[/* event */ PopupEvent, Unit]] = js.undefined
   
-  var onpreclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.native
+  var onpreclick: js.UndefOr[js.Function1[/* event */ LeafletMouseEvent, Unit]] = js.undefined
   
-  var onresize: js.UndefOr[js.Function1[/* event */ ResizeEvent, Unit]] = js.native
+  var onresize: js.UndefOr[js.Function1[/* event */ ResizeEvent, Unit]] = js.undefined
   
-  var onunload: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onunload: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onviewreset: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onviewreset: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onzoomend: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onzoomend: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onzoomlevelschange: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onzoomlevelschange: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
-  var onzoomstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
+  var onzoomstart: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
 }
 object MapEvents {
   

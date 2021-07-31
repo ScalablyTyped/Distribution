@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEbsEncryptionByDefaultResult extends StObject {
   
   /**
     * Indicates whether encryption by default is enabled.
     */
-  var EbsEncryptionByDefault: js.UndefOr[Boolean] = js.native
+  var EbsEncryptionByDefault: js.UndefOr[Boolean] = js.undefined
 }
 object GetEbsEncryptionByDefaultResult {
   

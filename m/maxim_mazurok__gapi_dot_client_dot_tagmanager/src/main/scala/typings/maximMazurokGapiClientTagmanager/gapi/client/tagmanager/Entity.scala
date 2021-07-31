@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   /** Represents how the entity has been changed in the workspace. */
-  var changeStatus: js.UndefOr[String] = js.native
+  var changeStatus: js.UndefOr[String] = js.undefined
   
   /** The client being represented by the entity. */
-  var client: js.UndefOr[Client] = js.native
+  var client: js.UndefOr[Client] = js.undefined
   
   /** The folder being represented by the entity. */
-  var folder: js.UndefOr[Folder] = js.native
+  var folder: js.UndefOr[Folder] = js.undefined
   
   /** The tag being represented by the entity. */
-  var tag: js.UndefOr[Tag] = js.native
+  var tag: js.UndefOr[Tag] = js.undefined
   
   /** The trigger being represented by the entity. */
-  var trigger: js.UndefOr[Trigger] = js.native
+  var trigger: js.UndefOr[Trigger] = js.undefined
   
   /** The variable being represented by the entity. */
-  var variable: js.UndefOr[Variable] = js.native
+  var variable: js.UndefOr[Variable] = js.undefined
 }
 object Entity {
   

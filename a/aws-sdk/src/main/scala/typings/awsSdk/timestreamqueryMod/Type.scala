@@ -2,31 +2,29 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
     * Indicates if the column is an array.
     */
-  var ArrayColumnInfo: js.UndefOr[ColumnInfo] = js.native
+  var ArrayColumnInfo: js.UndefOr[ColumnInfo] = js.undefined
   
   /**
     * Indicates if the column is a row.
     */
-  var RowColumnInfo: js.UndefOr[ColumnInfoList] = js.native
+  var RowColumnInfo: js.UndefOr[ColumnInfoList] = js.undefined
   
   /**
     * Indicates if the column is of type string, integer, boolean, double, timestamp, date, time. 
     */
-  var ScalarType: js.UndefOr[typings.awsSdk.timestreamqueryMod.ScalarType] = js.native
+  var ScalarType: js.UndefOr[typings.awsSdk.timestreamqueryMod.ScalarType] = js.undefined
   
   /**
     * Indicates if the column is a timeseries data type.
     */
-  var TimeSeriesMeasureValueColumnInfo: js.UndefOr[ColumnInfo] = js.native
+  var TimeSeriesMeasureValueColumnInfo: js.UndefOr[ColumnInfo] = js.undefined
 }
 object Type {
   

@@ -2,17 +2,15 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait initPtsFoundData extends StObject {
   
-  var d: String = js.native
+  var d: String
   
-  var frag: Fragment = js.native
+  var frag: Fragment
   
-  var initPTS: Double = js.native
+  var initPTS: Double
 }
 object initPtsFoundData {
   

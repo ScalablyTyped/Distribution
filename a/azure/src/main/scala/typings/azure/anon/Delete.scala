@@ -2,21 +2,19 @@ package typings.azure.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
-  var Delete: Boolean = js.native
+  var Delete: Boolean
   
-  var Read: Boolean = js.native
+  var Read: Boolean
   
-  var RetentionPolicy: Days = js.native
+  var RetentionPolicy: Days
   
-  var Version: Double = js.native
+  var Version: Double
   
-  var Write: Boolean = js.native
+  var Write: Boolean
 }
 object Delete {
   

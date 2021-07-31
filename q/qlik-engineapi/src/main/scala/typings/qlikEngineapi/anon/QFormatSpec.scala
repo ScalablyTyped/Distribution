@@ -3,15 +3,13 @@ package typings.qlikEngineapi.anon
 import typings.qlikEngineapi.EngineAPI.IDataRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QFormatSpec extends StObject {
   
-  var qFormatSpec: String = js.native
+  var qFormatSpec: String
   
-  var qPreview: js.Array[IDataRecord] = js.native
+  var qPreview: js.Array[IDataRecord]
 }
 object QFormatSpec {
   

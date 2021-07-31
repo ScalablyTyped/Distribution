@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeechRecognitionAlternative extends StObject {
   
-  val confidence: Double = js.native
+  val confidence: Double
   
-  val transcript: java.lang.String = js.native
+  val transcript: java.lang.String
 }
 object SpeechRecognitionAlternative {
   

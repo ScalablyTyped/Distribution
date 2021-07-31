@@ -2,11 +2,11 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITextboxOptions extends ITextOptions {
+trait ITextboxOptions
+  extends StObject
+     with ITextOptions {
   
   /**
     * Minimum calculated width of a textbox, in pixels.
@@ -14,19 +14,19 @@ trait ITextboxOptions extends ITextOptions {
     * and is still selectable without text.
     * @type Number
     */
-  var dynamicMinWidth: js.UndefOr[Double] = js.native
+  var dynamicMinWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Is the text wrapping
     * @type Boolean
     */
-  var isWrapping: js.UndefOr[Boolean] = js.native
+  var isWrapping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Minimum width of textbox, in pixels.
     * @type Number
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Use this boolean property in order to split strings that have no white space concept.
@@ -34,7 +34,7 @@ trait ITextboxOptions extends ITextOptions {
     * @type Boolean
     * @since 2.6.0
     */
-  var splitByGrapheme: js.UndefOr[Boolean] = js.native
+  var splitByGrapheme: js.UndefOr[Boolean] = js.undefined
 }
 object ITextboxOptions {
   

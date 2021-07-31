@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkGroupOutput extends StObject {
   
   /**
     * Information about the workgroup.
     */
-  var WorkGroup: js.UndefOr[typings.awsSdk.athenaMod.WorkGroup] = js.native
+  var WorkGroup: js.UndefOr[typings.awsSdk.athenaMod.WorkGroup] = js.undefined
 }
 object GetWorkGroupOutput {
   

@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Words extends StObject {
   
   /** The source, url and attribution for this dictionary data. */
-  var source: js.UndefOr[Attribution] = js.native
+  var source: js.UndefOr[Attribution] = js.undefined
   
-  var words: js.UndefOr[js.Array[Derivatives]] = js.native
+  var words: js.UndefOr[js.Array[Derivatives]] = js.undefined
 }
 object Words {
   

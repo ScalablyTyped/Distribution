@@ -4,24 +4,24 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.resolvefilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResolveFilterTransform extends _Transforms {
+trait ResolveFilterTransform
+  extends StObject
+     with _Transforms {
   
-  var filter: SignalRef = js.native
+  var filter: SignalRef
   
-  var ignore: Double | SignalRef = js.native
+  var ignore: Double | SignalRef
   
-  var `type`: resolvefilter = js.native
+  var `type`: resolvefilter
 }
 object ResolveFilterTransform {
   
   @scala.inline
-  def apply(filter: SignalRef, ignore: Double | SignalRef, `type`: resolvefilter): ResolveFilterTransform = {
+  def apply(filter: SignalRef, ignore: Double | SignalRef): ResolveFilterTransform = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("resolvefilter")
     __obj.asInstanceOf[ResolveFilterTransform]
   }
   

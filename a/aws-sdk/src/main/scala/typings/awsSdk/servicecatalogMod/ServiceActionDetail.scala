@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceActionDetail extends StObject {
   
   /**
     * A map that defines the self-service action.
     */
-  var Definition: js.UndefOr[ServiceActionDefinitionMap] = js.native
+  var Definition: js.UndefOr[ServiceActionDefinitionMap] = js.undefined
   
   /**
     * Summary information about the self-service action.
     */
-  var ServiceActionSummary: js.UndefOr[typings.awsSdk.servicecatalogMod.ServiceActionSummary] = js.native
+  var ServiceActionSummary: js.UndefOr[typings.awsSdk.servicecatalogMod.ServiceActionSummary] = js.undefined
 }
 object ServiceActionDetail {
   

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "QueryFacet")
 @js.native
-class QueryFacet protected () extends Facet {
+class QueryFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet that return a count of the hits matching the given query.
     */

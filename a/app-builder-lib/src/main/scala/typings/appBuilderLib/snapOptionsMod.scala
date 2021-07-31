@@ -10,16 +10,15 @@ import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.linuxOptionsMod.CommonLinuxOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapOptionsMod {
   
   type PlugDescriptor = StringDictionary[StringDictionary[js.Any] | Null]
   
-  @js.native
   trait SnapOptions
-    extends CommonLinuxOptions
+    extends StObject
+       with CommonLinuxOptions
        with TargetSpecificOptions {
     
     /**
@@ -28,58 +27,58 @@ object snapOptionsMod {
       *
       * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom parts `foo` in addition to defaults.
       */
-    val after: js.UndefOr[js.Array[String] | Null] = js.native
+    val after: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * Specifies which files from the app part to stage and which to exclude. Individual files, directories, wildcards, globstars, and exclusions are accepted. See [Snapcraft filesets](https://snapcraft.io/docs/snapcraft-filesets) to learn more about the format.
       *
       * The defaults can be found in [snap.ts](https://github.com/electron-userland/electron-builder/blob/master/packages/app-builder-lib/templates/snap/snapcraft.yaml#L29).
       */
-    val appPartStage: js.UndefOr[js.Array[String] | Null] = js.native
+    val appPartStage: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The list of features that must be supported by the core in order for this snap to install.
       */
-    val assumes: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val assumes: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * Whether or not the snap should automatically start on login.
       * @default false
       */
-    val autoStart: js.UndefOr[Boolean] = js.native
+    val autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of debian packages needs to be installed for building this snap.
       */
-    val buildPackages: js.UndefOr[js.Array[String] | Null] = js.native
+    val buildPackages: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The type of [confinement](https://snapcraft.io/docs/reference/confinement) supported by the snap.
       * @default strict
       */
-    val confinement: js.UndefOr[devmode | strict | classic | Null] = js.native
+    val confinement: js.UndefOr[devmode | strict | classic | Null] = js.undefined
     
     /**
       * The custom environment. Defaults to `{"TMPDIR: "$XDG_RUNTIME_DIR"}`. If you set custom, it will be merged with default.
       */
-    val environment: js.UndefOr[StringDictionary[String] | Null] = js.native
+    val environment: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
     /**
       * The quality grade of the snap. It can be either `devel` (i.e. a development version of the snap, so not to be published to the “stable” or “candidate” channels) or “stable” (i.e. a stable release or release candidate, which can be released to all channels).
       * @default stable
       */
-    val grade: js.UndefOr[devel | stable | Null] = js.native
+    val grade: js.UndefOr[devel | stable | Null] = js.undefined
     
     /**
       * The [hooks](https://docs.snapcraft.io/build-snaps/hooks) directory, relative to `build` (build resources directory).
       * @default build/snap-hooks
       */
-    val hooks: js.UndefOr[String | Null] = js.native
+    val hooks: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Specifies any files to make accessible from locations such as `/usr`, `/var`, and `/etc`. See [snap layouts](https://snapcraft.io/docs/snap-layouts) to learn more.
       */
-    val layout: js.UndefOr[StringDictionary[StringDictionary[String]] | Null] = js.native
+    val layout: js.UndefOr[StringDictionary[StringDictionary[String]] | Null] = js.undefined
     
     /**
       * The list of [plugs](https://snapcraft.io/docs/reference/interfaces).
@@ -100,12 +99,12 @@ object snapOptionsMod {
       *]
       * ```
       */
-    val plugs: js.UndefOr[(js.Array[String | PlugDescriptor]) | PlugDescriptor | Null] = js.native
+    val plugs: js.UndefOr[(js.Array[String | PlugDescriptor]) | PlugDescriptor | Null] = js.undefined
     
     /**
       * The list of [slots](https://snapcraft.io/docs/reference/interfaces).
       */
-    val slots: js.UndefOr[js.Array[String] | Null] = js.native
+    val slots: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The list of Ubuntu packages to use that are needed to support the `app` part creation. Like `depends` for `deb`.
@@ -113,17 +112,17 @@ object snapOptionsMod {
       *
       * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom package `foo` in addition to defaults.
       */
-    val stagePackages: js.UndefOr[js.Array[String] | Null] = js.native
+    val stagePackages: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The 78 character long summary. Defaults to [productName](/configuration/configuration#Configuration-productName).
       */
-    val summary: js.UndefOr[String | Null] = js.native
+    val summary: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to use template snap. Defaults to `true` if `stagePackages` not specified.
       */
-    val useTemplateApp: js.UndefOr[Boolean] = js.native
+    val useTemplateApp: js.UndefOr[Boolean] = js.undefined
   }
   object SnapOptions {
     

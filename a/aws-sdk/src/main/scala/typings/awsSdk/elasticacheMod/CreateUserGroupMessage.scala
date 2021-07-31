@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserGroupMessage extends StObject {
   
   /**
     * Must be Redis. 
     */
-  var Engine: EngineType = js.native
+  var Engine: EngineType
   
   /**
     * The ID of the user group.
     */
-  var UserGroupId: String = js.native
+  var UserGroupId: String
   
   /**
     * The list of user IDs that belong to the user group.
     */
-  var UserIds: js.UndefOr[UserIdListInput] = js.native
+  var UserIds: js.UndefOr[UserIdListInput] = js.undefined
 }
 object CreateUserGroupMessage {
   

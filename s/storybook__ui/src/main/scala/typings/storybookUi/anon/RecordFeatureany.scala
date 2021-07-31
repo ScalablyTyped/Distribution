@@ -2,46 +2,44 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<@storybook/ui.@storybook/ui/dist/settings/shortcuts.Feature, any> */
-@js.native
 trait RecordFeatureany extends StObject {
   
-  var aboutPage: js.Any = js.native
+  var aboutPage: js.Any
   
-  var collapseAll: js.Any = js.native
+  var collapseAll: js.Any
   
-  var expandAll: js.Any = js.native
+  var expandAll: js.Any
   
-  var focusIframe: js.Any = js.native
+  var focusIframe: js.Any
   
-  var focusNav: js.Any = js.native
+  var focusNav: js.Any
   
-  var focusPanel: js.Any = js.native
+  var focusPanel: js.Any
   
-  var fullScreen: js.Any = js.native
+  var fullScreen: js.Any
   
-  var nextComponent: js.Any = js.native
+  var nextComponent: js.Any
   
-  var nextStory: js.Any = js.native
+  var nextStory: js.Any
   
-  var panelPosition: js.Any = js.native
+  var panelPosition: js.Any
   
-  var prevComponent: js.Any = js.native
+  var prevComponent: js.Any
   
-  var prevStory: js.Any = js.native
+  var prevStory: js.Any
   
-  var search: js.Any = js.native
+  var search: js.Any
   
-  var shortcutsPage: js.Any = js.native
+  var shortcutsPage: js.Any
   
-  var toggleNav: js.Any = js.native
+  var toggleNav: js.Any
   
-  var togglePanel: js.Any = js.native
+  var togglePanel: js.Any
   
-  var toolbar: js.Any = js.native
+  var toolbar: js.Any
 }
 object RecordFeatureany {
   

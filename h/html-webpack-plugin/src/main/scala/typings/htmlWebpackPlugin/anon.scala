@@ -5,19 +5,17 @@ import typings.htmlWebpackPlugin.mod.HtmlWebpackPlugin
 import typings.htmlWebpackPlugin.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AssetTags extends StObject {
     
-    var assetTags: Meta = js.native
+    var assetTags: Meta
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object AssetTags {
     
@@ -41,14 +39,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Assets extends StObject {
     
-    var assets: Favicon = js.native
+    var assets: Favicon
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object Assets {
     
@@ -72,12 +69,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BodyTags extends StObject {
     
-    var bodyTags: js.Array[HtmlTagObject] = js.native
+    var bodyTags: js.Array[HtmlTagObject]
     
-    var headTags: js.Array[HtmlTagObject] = js.native
+    var headTags: js.Array[HtmlTagObject]
   }
   object BodyTags {
     
@@ -104,19 +100,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Css extends StObject {
     
-    var css: js.Array[String] = js.native
+    var css: js.Array[String]
     
-    var favicon: js.UndefOr[String] = js.native
+    var favicon: js.UndefOr[String] = js.undefined
     
     @JSName("js")
-    var js_ : js.Array[String] = js.native
+    var js_ : js.Array[String]
     
-    var manifest: js.UndefOr[String] = js.native
+    var manifest: js.UndefOr[String] = js.undefined
     
-    var publicPath: String = js.native
+    var publicPath: String
   }
   object Css {
     
@@ -159,19 +154,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Favicon extends StObject {
     
-    var css: js.Array[String] = js.native
+    var css: js.Array[String]
     
-    var favicon: js.UndefOr[String] = js.native
+    var favicon: js.UndefOr[String] = js.undefined
     
     @JSName("js")
-    var js_ : js.Array[String] = js.native
+    var js_ : js.Array[String]
     
-    var manifest: js.UndefOr[String] = js.native
+    var manifest: js.UndefOr[String] = js.undefined
     
-    var publicPath: String = js.native
+    var publicPath: String
   }
   object Favicon {
     
@@ -214,14 +208,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Files extends StObject {
     
-    var files: Css = js.native
+    var files: Css
     
-    var options: Options = js.native
+    var options: Options
     
-    var tags: BodyTags = js.native
+    var tags: BodyTags
   }
   object Files {
     
@@ -245,16 +238,15 @@ object anon {
     }
   }
   
-  @js.native
   trait HeadTags extends StObject {
     
-    var bodyTags: js.Array[HtmlTagObject] = js.native
+    var bodyTags: js.Array[HtmlTagObject]
     
-    var headTags: js.Array[HtmlTagObject] = js.native
+    var headTags: js.Array[HtmlTagObject]
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object HeadTags {
     
@@ -292,18 +284,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var bodyTags: js.Array[HtmlTagObject] = js.native
+    var bodyTags: js.Array[HtmlTagObject]
     
-    var headTags: js.Array[HtmlTagObject] = js.native
+    var headTags: js.Array[HtmlTagObject]
     
-    var html: String = js.native
+    var html: String
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object Html {
     
@@ -345,14 +336,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var meta: js.Array[HtmlTagObject] = js.native
+    var meta: js.Array[HtmlTagObject]
     
-    var scripts: js.Array[HtmlTagObject] = js.native
+    var scripts: js.Array[HtmlTagObject]
     
-    var styles: js.Array[HtmlTagObject] = js.native
+    var styles: js.Array[HtmlTagObject]
   }
   object Meta {
     
@@ -385,14 +375,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OutputName extends StObject {
     
-    var html: String = js.native
+    var html: String
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object OutputName {
     
@@ -416,12 +405,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    var outputName: String = js.native
+    var outputName: String
     
-    var plugin: HtmlWebpackPlugin = js.native
+    var plugin: HtmlWebpackPlugin
   }
   object Plugin {
     

@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokens extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SemanticTokens extends StObject {
     * structured pls see
     * https://github.com/microsoft/vscode-extension-samples/blob/5ae1f7787122812dcc84e37427ca90af5ee09f14/semantic-tokens-sample/vscode.proposed.d.ts#L71
     */
-  var data: js.Array[Double] = js.native
+  var data: js.Array[Double]
   
   /**
     * An optional result id. If provided and clients support delta updating
@@ -21,7 +19,7 @@ trait SemanticTokens extends StObject {
     * A server can then instead of computing all sematic tokens again simply
     * send a delta.
     */
-  var resultId: js.UndefOr[String] = js.native
+  var resultId: js.UndefOr[String] = js.undefined
 }
 object SemanticTokens {
   
@@ -31,9 +29,12 @@ object SemanticTokens {
     __obj.asInstanceOf[SemanticTokens]
   }
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokens.is")
+  @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokens")
   @js.native
-  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean]
   
   @scala.inline
   implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {

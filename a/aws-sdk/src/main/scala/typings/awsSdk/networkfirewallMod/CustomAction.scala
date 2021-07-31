@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAction extends StObject {
   
   /**
     * The custom action associated with the action name.
     */
-  var ActionDefinition: typings.awsSdk.networkfirewallMod.ActionDefinition = js.native
+  var ActionDefinition: typings.awsSdk.networkfirewallMod.ActionDefinition
   
   /**
     * The descriptive name of the custom action. You can't change the name of a custom action after you create it.
     */
-  var ActionName: typings.awsSdk.networkfirewallMod.ActionName = js.native
+  var ActionName: typings.awsSdk.networkfirewallMod.ActionName
 }
 object CustomAction {
   

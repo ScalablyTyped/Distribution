@@ -2,7 +2,6 @@ package typings.jqueryMockjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,9 +18,9 @@ trait MockJaxStatic extends StObject {
   def handler(): js.Any = js.native
   def handler(id: Double): js.Any = js.native
   
-  def mockedAjaxCalls(): js.Array[_] = js.native
+  def mockedAjaxCalls(): js.Array[js.Any] = js.native
   
-  def unfiredHandlers(): js.Array[_] = js.native
+  def unfiredHandlers(): js.Array[js.Any] = js.native
   
-  def unmockedAjaxCalls(): js.Array[_] = js.native
+  def unmockedAjaxCalls(): js.Array[js.Any] = js.native
 }

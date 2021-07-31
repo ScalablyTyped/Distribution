@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseRootObject extends StObject {
   
-  var badging: IgtvBrowseFeedResponseBadging = js.native
+  var badging: IgtvBrowseFeedResponseBadging
   
-  var banner_token: String = js.native
+  var banner_token: String
   
-  var browse_items: js.Array[IgtvBrowseFeedResponseBrowseItemsItem] = js.native
+  var browse_items: js.Array[IgtvBrowseFeedResponseBrowseItemsItem]
   
-  var channels: js.Array[IgtvBrowseFeedResponseChannelsItem] = js.native
+  var channels: js.Array[IgtvBrowseFeedResponseChannelsItem]
   
-  var composer: IgtvBrowseFeedResponseComposer = js.native
+  var composer: IgtvBrowseFeedResponseComposer
   
-  var max_id: String = js.native
+  var max_id: String
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var my_channel: IgtvBrowseFeedResponseMyChannel = js.native
+  var my_channel: IgtvBrowseFeedResponseMyChannel
   
-  var seen_state: IgtvBrowseFeedResponseSeenState = js.native
+  var seen_state: IgtvBrowseFeedResponseSeenState
   
-  var status: String = js.native
+  var status: String
 }
 object IgtvBrowseFeedResponseRootObject {
   

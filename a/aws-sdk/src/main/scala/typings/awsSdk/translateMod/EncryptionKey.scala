@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionKey extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the encryption key being used to encrypt the custom terminology.
     */
-  var Id: EncryptionKeyID = js.native
+  var Id: EncryptionKeyID
   
   /**
     * The type of encryption key used by Amazon Translate to encrypt custom terminologies.
     */
-  var Type: EncryptionKeyType = js.native
+  var Type: EncryptionKeyType
 }
 object EncryptionKey {
   

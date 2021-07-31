@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataSourcesRequest extends StObject {
   
   /**
     * The identifier of the index that contains the data source.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The maximum number of data sources to return.
     */
-  var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourcesRequest] = js.native
+  var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourcesRequest] = js.undefined
   
   /**
     * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of data sources (DataSourceSummaryItems). 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
 }
 object ListDataSourcesRequest {
   

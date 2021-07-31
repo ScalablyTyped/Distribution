@@ -2,13 +2,11 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An action that gets executed during initialization of the replicas.
   */
-@js.native
 trait SchemaAction extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaAction extends StObject {
     * action is considered a failure and no further actions are run. This also
     * marks the virtual machine or replica as a failure.
     */
-  var commands: js.UndefOr[js.Array[String]] = js.native
+  var commands: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of environment variables to use for the commands in this action.
     */
-  var envVariables: js.UndefOr[js.Array[SchemaEnvVariable]] = js.native
+  var envVariables: js.UndefOr[js.Array[SchemaEnvVariable]] = js.undefined
   
   /**
     * If an action&#39;s commands on a particular replica do not finish in the
@@ -30,7 +28,7 @@ trait SchemaAction extends StObject {
     * spawned or created as the result of running the action&#39;s commands.
     * The default is the max allowed value, 1 hour (i.e. 3600000 milliseconds).
     */
-  var timeoutMilliSeconds: js.UndefOr[Double] = js.native
+  var timeoutMilliSeconds: js.UndefOr[Double] = js.undefined
 }
 object SchemaAction {
   

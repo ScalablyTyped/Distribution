@@ -5,15 +5,13 @@ import typings.react.mod.KeyboardEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var event: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement] = js.native
+  var event: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]
   
-  var item: js.UndefOr[Label | Null] = js.native
+  var item: js.UndefOr[Label | Null] = js.undefined
 }
 object Item {
   

@@ -12,54 +12,52 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.click
 import typings.semanticUiDimmer.semanticUiDimmerStrings.hover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var closable: js.UndefOr[auto | Boolean] = js.native
+  var closable: js.UndefOr[auto | Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var dimmerName: js.UndefOr[`false` | String] = js.native
+  var dimmerName: js.UndefOr[`false` | String] = js.undefined
   
-  var duration: js.UndefOr[Double | DurationSettings] = js.native
+  var duration: js.UndefOr[Double | DurationSettings] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[`false` | hover | click] = js.native
+  var on: js.UndefOr[`false` | hover | click] = js.undefined
   
-  var onChange: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onChange: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var opacity: js.UndefOr[auto | Double] = js.native
+  var opacity: js.UndefOr[auto | Double] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[TemplateSettings] = js.native
+  var template: js.UndefOr[TemplateSettings] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var useCSS: js.UndefOr[Boolean] = js.native
+  var useCSS: js.UndefOr[Boolean] = js.undefined
   
-  var variation: js.UndefOr[`false` | String] = js.native
+  var variation: js.UndefOr[`false` | String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

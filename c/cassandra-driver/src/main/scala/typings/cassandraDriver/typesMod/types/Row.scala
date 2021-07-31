@@ -3,12 +3,12 @@ package typings.cassandraDriver.typesMod.types
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Row
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   def forEach(callback: js.Function1[/* row */ this.type, Unit]): Unit = js.native
   
@@ -17,5 +17,5 @@ trait Row
   
   def keys(): js.Array[String] = js.native
   
-  def values(): js.Array[_] = js.native
+  def values(): js.Array[js.Any] = js.native
 }

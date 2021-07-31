@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSchemaRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the schema to delete.
     */
-  var schemaArn: Arn = js.native
+  var schemaArn: Arn
 }
 object DeleteSchemaRequest {
   

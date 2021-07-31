@@ -10,9 +10,9 @@ Read and parse a JSON file synchronously
 | ------------------ | :-------------: |
 | Full name          | read-json-sync |
 | Keywords           | data, json, file, read, load, bom, parse, synchronous, synchronously, sync |
-| # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 419479 |
+| # releases         | 0 |
+| # dependents       | 45 |
+| # downloads        | 443146 |
 | # stars            | 0 |
 
 ## Links

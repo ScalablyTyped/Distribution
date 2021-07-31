@@ -8,19 +8,17 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Utils {
   
   object ColorManipulator {
     
-    @js.native
     trait MuiColorObject extends StObject {
       
-      var `type`: String = js.native
+      var `type`: String
       
-      var values: js.Array[Double] = js.native
+      var values: js.Array[Double]
     }
     object MuiColorObject {
       
@@ -46,26 +44,25 @@ object Utils {
     }
   }
   
-  @js.native
   trait Dom extends StObject {
     
-    def addClass(el: Element, className: String): Unit = js.native
+    def addClass(el: Element, className: String): Unit
     
-    def forceRedraw(el: HTMLElement): Unit = js.native
+    def forceRedraw(el: HTMLElement): Unit
     
-    def getStyleAttributeAsNumber(el: HTMLElement, attr: String): Double = js.native
+    def getStyleAttributeAsNumber(el: HTMLElement, attr: String): Double
     
-    def hasClass(el: Element, className: String): Boolean = js.native
+    def hasClass(el: Element, className: String): Boolean
     
-    def isDescendant(parent: Node, child: Node): Boolean = js.native
+    def isDescendant(parent: Node, child: Node): Boolean
     
-    def offset(el: Element): Left = js.native
+    def offset(el: Element): Left
     
-    def removeClass(el: Element, className: String): Unit = js.native
+    def removeClass(el: Element, className: String): Unit
     
-    def toggleClass(el: Element, className: String): Unit = js.native
+    def toggleClass(el: Element, className: String): Unit
     
-    def withoutTransition(el: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
+    def withoutTransition(el: HTMLElement, callback: js.Function0[Unit]): Unit
   }
   object Dom {
     
@@ -117,16 +114,15 @@ object Utils {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    def isKeyboard(e: Event): Boolean = js.native
+    def isKeyboard(e: Event): Boolean
     
-    def off(el: Element, `type`: String, callback: EventListener): Unit = js.native
+    def off(el: Element, `type`: String, callback: EventListener): Unit
     
-    def on(el: Element, `type`: String, callback: EventListener): Unit = js.native
+    def on(el: Element, `type`: String, callback: EventListener): Unit
     
-    def once(el: Element, `type`: String, callback: EventListener): Unit = js.native
+    def once(el: Element, `type`: String, callback: EventListener): Unit
   }
   object Events {
     

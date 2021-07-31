@@ -3,11 +3,11 @@ package typings.stripe.mod.invoices
 import typings.stripe.mod.IDataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInvoiceFinalizeOptions extends IDataOptions {
+trait IInvoiceFinalizeOptions
+  extends StObject
+     with IDataOptions {
   
   /**
     * Controls whether Stripe will perform
@@ -15,7 +15,7 @@ trait IInvoiceFinalizeOptions extends IDataOptions {
     * of the invoice. When `false`, the invoice’s state will not automatically advance
     * without an explicit action.
     */
-  var auto_advance: Boolean = js.native
+  var auto_advance: Boolean
 }
 object IInvoiceFinalizeOptions {
   

@@ -3,52 +3,50 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintOptions extends StObject {
   
-  var ActivePrinter: String = js.native
+  var ActivePrinter: String
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Collate: MsoTriState = js.native
+  var Collate: MsoTriState
   
-  var FitToPage: MsoTriState = js.native
+  var FitToPage: MsoTriState
   
-  var FrameSlides: MsoTriState = js.native
+  var FrameSlides: MsoTriState
   
-  var HandoutOrder: PpPrintHandoutOrder = js.native
+  var HandoutOrder: PpPrintHandoutOrder
   
-  var HighQuality: MsoTriState = js.native
+  var HighQuality: MsoTriState
   
-  var NumberOfCopies: Double = js.native
+  var NumberOfCopies: Double
   
-  var OutputType: PpPrintOutputType = js.native
+  var OutputType: PpPrintOutputType
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.PrintOptions_typekey")
-  var PowerPointDotPrintOptions_typekey: PrintOptions = js.native
+  var PowerPointDotPrintOptions_typekey: PrintOptions
   
-  var PrintColorType: PpPrintColorType = js.native
+  var PrintColorType: PpPrintColorType
   
-  var PrintComments: MsoTriState = js.native
+  var PrintComments: MsoTriState
   
-  var PrintFontsAsGraphics: MsoTriState = js.native
+  var PrintFontsAsGraphics: MsoTriState
   
-  var PrintHiddenSlides: MsoTriState = js.native
+  var PrintHiddenSlides: MsoTriState
   
-  var PrintInBackground: MsoTriState = js.native
+  var PrintInBackground: MsoTriState
   
-  var RangeType: PpPrintRangeType = js.native
+  var RangeType: PpPrintRangeType
   
-  val Ranges: PrintRanges = js.native
+  val Ranges: PrintRanges
   
-  var SlideShowName: String = js.native
+  var SlideShowName: String
   
-  var sectionIndex: Double = js.native
+  var sectionIndex: Double
 }
 object PrintOptions {
   

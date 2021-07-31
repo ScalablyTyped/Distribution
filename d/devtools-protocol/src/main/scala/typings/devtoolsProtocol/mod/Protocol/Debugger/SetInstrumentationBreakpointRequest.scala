@@ -4,16 +4,14 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.beforeScriptExecution
 import typings.devtoolsProtocol.devtoolsProtocolStrings.beforeScriptWithSourceMapExecution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInstrumentationBreakpointRequest extends StObject {
   
   /**
     * Instrumentation name. (SetInstrumentationBreakpointRequestInstrumentation enum)
     */
-  var instrumentation: beforeScriptExecution | beforeScriptWithSourceMapExecution = js.native
+  var instrumentation: beforeScriptExecution | beforeScriptWithSourceMapExecution
 }
 object SetInstrumentationBreakpointRequest {
   

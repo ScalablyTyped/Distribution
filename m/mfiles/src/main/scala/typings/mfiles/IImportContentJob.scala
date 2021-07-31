@@ -3,41 +3,39 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFImportContentFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IImportContentJob extends StObject {
   
-  var ActivateAutomaticPermissionsForNewOrChangedDefinitions: Boolean = js.native
+  var ActivateAutomaticPermissionsForNewOrChangedDefinitions: Boolean
   
-  def Clone(): IImportContentJob = js.native
+  def Clone(): IImportContentJob
   
-  var DisableImportedExternalObjectTypeConnections: Boolean = js.native
+  var DisableImportedExternalObjectTypeConnections: Boolean
   
-  var DisableImportedExternalUserGroups: Boolean = js.native
+  var DisableImportedExternalUserGroups: Boolean
   
-  var DisableImportedVaultEventHandlers: Boolean = js.native
+  var DisableImportedVaultEventHandlers: Boolean
   
-  var Flags: MFImportContentFlag = js.native
+  var Flags: MFImportContentFlag
   
-  var IgnoreAutomaticPermissionsDefinedByObjects: Boolean = js.native
+  var IgnoreAutomaticPermissionsDefinedByObjects: Boolean
   
-  var Impersonation: IImpersonation = js.native
+  var Impersonation: IImpersonation
   
-  var MetadataStructureSelectors: IMetadataStructureSelectors = js.native
+  var MetadataStructureSelectors: IMetadataStructureSelectors
   
-  var Permissions: IAccessControlList = js.native
+  var Permissions: IAccessControlList
   
-  var ResetExportTimestamps: Boolean = js.native
+  var ResetExportTimestamps: Boolean
   
-  var SourceLocation: String = js.native
+  var SourceLocation: String
   
-  var UseDefaultObjectTypePermissions: Boolean = js.native
+  var UseDefaultObjectTypePermissions: Boolean
   
-  var UseNamesAsAliases: Boolean = js.native
+  var UseNamesAsAliases: Boolean
   
-  var UsePermissions: Boolean = js.native
+  var UsePermissions: Boolean
 }
 object IImportContentJob {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlOptions extends StObject {
   
-  var alwaysRun: Boolean = js.native
+  var alwaysRun: Boolean
   
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object ControlOptions {
   

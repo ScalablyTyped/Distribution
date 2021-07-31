@@ -5,7 +5,6 @@ import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeScaleMod {
@@ -29,19 +28,22 @@ object timeScaleMod {
       * @return {Date[]}
       */
     def tickInterval(interval: String): js.Array[Date] = js.native
-    def tickInterval(interval: String, step: js.UndefOr[scala.Nothing], useUTC: Boolean): js.Array[Date] = js.native
     def tickInterval(interval: String, step: Double): js.Array[Date] = js.native
     def tickInterval(interval: String, step: Double, useUTC: Boolean): js.Array[Date] = js.native
+    def tickInterval(interval: String, step: Unit, useUTC: Boolean): js.Array[Date] = js.native
   }
   /* static members */
   object Time {
+    
+    @JSImport("plottable/build/src/scales/timeScale", "Time")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
-    @JSImport("plottable/build/src/scales/timeScale", "Time.timeIntervalToD3Time")
-    @js.native
-    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = js.native
+    @scala.inline
+    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
 }

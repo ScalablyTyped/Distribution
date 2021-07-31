@@ -11,7 +11,6 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector4Mod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLRenderTargetMod {
@@ -113,38 +112,37 @@ object webGLRenderTargetMod {
     var wrapT: js.Any = js.native
   }
   
-  @js.native
   trait WebGLRenderTargetOptions extends StObject {
     
     // UnsignedByteType;
-    var anisotropy: js.UndefOr[Double] = js.native
+    var anisotropy: js.UndefOr[Double] = js.undefined
     
     // 1;
-    var depthBuffer: js.UndefOr[Boolean] = js.native
+    var depthBuffer: js.UndefOr[Boolean] = js.undefined
     
     // true;
-    var depthTexture: js.UndefOr[DepthTexture] = js.native
+    var depthTexture: js.UndefOr[DepthTexture] = js.undefined
     
-    var encoding: js.UndefOr[TextureEncoding] = js.native
+    var encoding: js.UndefOr[TextureEncoding] = js.undefined
     
-    var format: js.UndefOr[Double] = js.native
+    var format: js.UndefOr[Double] = js.undefined
     
     // false;
-    var generateMipmaps: js.UndefOr[Boolean] = js.native
+    var generateMipmaps: js.UndefOr[Boolean] = js.undefined
     
-    var magFilter: js.UndefOr[TextureFilter] = js.native
+    var magFilter: js.UndefOr[TextureFilter] = js.undefined
     
-    var minFilter: js.UndefOr[TextureFilter] = js.native
+    var minFilter: js.UndefOr[TextureFilter] = js.undefined
     
     // true;
-    var stencilBuffer: js.UndefOr[Boolean] = js.native
+    var stencilBuffer: js.UndefOr[Boolean] = js.undefined
     
     // RGBAFormat;
-    var `type`: js.UndefOr[TextureDataType] = js.native
+    var `type`: js.UndefOr[TextureDataType] = js.undefined
     
-    var wrapS: js.UndefOr[Wrapping] = js.native
+    var wrapS: js.UndefOr[Wrapping] = js.undefined
     
-    var wrapT: js.UndefOr[Wrapping] = js.native
+    var wrapT: js.UndefOr[Wrapping] = js.undefined
   }
   object WebGLRenderTargetOptions {
     

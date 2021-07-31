@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDirectConnectGatewayRequest extends StObject {
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: DirectConnectGatewayId = js.native
+  var directConnectGatewayId: DirectConnectGatewayId
 }
 object DeleteDirectConnectGatewayRequest {
   

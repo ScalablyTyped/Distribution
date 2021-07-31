@@ -10,37 +10,68 @@ import typings.nodemailer.sharedMod.Logger
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamTransportMod {
   
   @JSImport("nodemailer/lib/stream-transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StreamTransport {
+  class ^ protected ()
+    extends StObject
+       with StreamTransport {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    var logger: Logger = js.native
+    
+    /* CompleteClass */
+    @JSName("mailer")
+    var mailer_StreamTransport: typings.nodemailer.mailerMod.^ = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
+    
+    /* CompleteClass */
+    override def send(
+      mail: typings.nodemailer.mailMessageMod.^,
+      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var verify: (js.UndefOr[
+        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
+    
+    /* CompleteClass */
+    var winbreak: Boolean = js.native
   }
   
   type MailOptions = typings.nodemailer.mailerMod.Options
   
-  @js.native
   trait Options
-    extends typings.nodemailer.mailerMod.Options
+    extends StObject
+       with typings.nodemailer.mailerMod.Options
        with TransportOptions {
     
     /** if true, then returns the message as a Buffer object instead of a stream */
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
     /** either ‘windows’ or ‘unix’ (default). Forces all newlines in the output to either use Windows syntax <CR><LF> or Unix syntax <LF> */
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
-    var streamTransport: `true` = js.native
+    var streamTransport: `true`
   }
   object Options {
     
     @scala.inline
-    def apply(streamTransport: `true`): Options = {
-      val __obj = js.Dynamic.literal(streamTransport = streamTransport.asInstanceOf[js.Any])
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal(streamTransport = true)
       __obj.asInstanceOf[Options]
     }
     
@@ -64,17 +95,16 @@ object streamTransportMod {
     }
   }
   
-  @js.native
   trait SentMessageInfo extends StObject {
     
     /** an envelope object {from:‘address’, to:[‘address’]} */
-    var envelope: Envelope = js.native
+    var envelope: Envelope
     
     /** either stream (default) of buffer depending on the options */
-    var message: Buffer | Readable = js.native
+    var message: Buffer | Readable
     
     /** the Message-ID header value */
-    var messageId: String = js.native
+    var messageId: String
   }
   object SentMessageInfo {
     
@@ -98,17 +128,18 @@ object streamTransportMod {
     }
   }
   
-  @js.native
-  trait StreamTransport extends Transport {
+  trait StreamTransport
+    extends StObject
+       with Transport {
     
-    var logger: Logger = js.native
+    var logger: Logger
     
     @JSName("mailer")
-    var mailer_StreamTransport: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_StreamTransport: typings.nodemailer.mailerMod.^
     
-    var options: Options = js.native
+    var options: Options
     
-    var winbreak: Boolean = js.native
+    var winbreak: Boolean
   }
   object StreamTransport {
     
@@ -121,7 +152,7 @@ object streamTransportMod {
       send: (typings.nodemailer.mailMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]) => Unit,
       verify: (js.UndefOr[
           js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-        ]) with js.UndefOr[js.Function0[js.Promise[`true`]]],
+        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String,
       winbreak: Boolean
     ): StreamTransport = {

@@ -3,18 +3,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.toolbarItemClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapGridBase extends Control {
+trait BootstrapGridBase
+  extends StObject
+     with Control {
   
   def getToolbar(index: Double): BootstrapMenu | Null = js.native
   
   def getToolbarByName(name: String): BootstrapMenu | Null = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[/* this */ this.type, js.UndefOr[EventArgs | GridToolbarItemClickEventArgs], Unit]
   ): this.type = js.native
   @JSName("off")

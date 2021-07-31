@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Catalog extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait Catalog extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the description of the catalog which is a human-readable description of the catalog
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the name of the catalog.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
   
   /**
     * Returns the unique name of the catalog.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object Catalog {
   

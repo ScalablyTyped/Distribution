@@ -2,23 +2,21 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTapeRecoveryPointsInput extends StObject {
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * Specifies that the number of virtual tape recovery points that are described be limited to the specified number.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin describing the virtual tape recovery points.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
 }
 object DescribeTapeRecoveryPointsInput {
   

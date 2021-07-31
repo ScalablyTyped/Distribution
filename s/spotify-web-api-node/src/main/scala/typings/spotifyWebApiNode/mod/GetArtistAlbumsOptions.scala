@@ -2,13 +2,13 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetArtistAlbumsOptions extends PaginationCountryOptions {
+trait GetArtistAlbumsOptions
+  extends StObject
+     with PaginationCountryOptions {
   
-  var include_groups: js.UndefOr[String] = js.native
+  var include_groups: js.UndefOr[String] = js.undefined
 }
 object GetArtistAlbumsOptions {
   

@@ -5,19 +5,22 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lockedFsMod {
   
   @JSImport("browserfs/dist/node/generic/locked_fs", JSImport.Default)
   @js.native
-  class default[T /* <: FileSystem */] protected () extends LockedFS[T] {
+  class default[T /* <: FileSystem */] protected ()
+    extends StObject
+       with LockedFS[T] {
     def this(fs: T) = this()
   }
   
   @js.native
-  trait LockedFS[T /* <: FileSystem */] extends FileSystem {
+  trait LockedFS[T /* <: FileSystem */]
+    extends StObject
+       with FileSystem {
     
     var _fs: js.Any = js.native
     

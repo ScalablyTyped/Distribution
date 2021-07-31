@@ -18,24 +18,23 @@ import typings.std.Element
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-dom", "createPortal")
+  @JSImport("react-dom", JSImport.Namespace)
   @js.native
-  def createPortal(children: ReactNode, container: Element): ReactPortal = js.native
-  @JSImport("react-dom", "createPortal")
-  @js.native
-  def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-dom", "findDOMNode")
-  @js.native
-  def findDOMNode(): Element | Null | Text = js.native
-  @JSImport("react-dom", "findDOMNode")
-  @js.native
-  def findDOMNode(instance: ReactInstance): Element | Null | Text = js.native
+  @scala.inline
+  def createPortal(children: ReactNode, container: Element): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+  @scala.inline
+  def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+  
+  @scala.inline
+  def findDOMNode(): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")().asInstanceOf[Element | Null | Text]
+  @scala.inline
+  def findDOMNode(instance: ReactInstance): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Element | Null | Text]
   
   @JSImport("react-dom", "hydrate")
   @js.native
@@ -45,72 +44,63 @@ object mod {
   @js.native
   val render: Renderer = js.native
   
-  @JSImport("react-dom", "unmountComponentAtNode")
-  @js.native
-  def unmountComponentAtNode(container: DocumentFragment): Boolean = js.native
-  @JSImport("react-dom", "unmountComponentAtNode")
-  @js.native
-  def unmountComponentAtNode(container: Element): Boolean = js.native
+  @scala.inline
+  def unmountComponentAtNode(container: DocumentFragment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def unmountComponentAtNode(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-dom", "unstable_batchedUpdates")
-  @js.native
-  def unstableBatchedUpdates(callback: js.Function0[_]): Unit = js.native
-  @JSImport("react-dom", "unstable_batchedUpdates")
-  @js.native
-  def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
-  @JSImport("react-dom", "unstable_batchedUpdates")
-  @js.native
-  def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
+  @scala.inline
+  def unstableBatchedUpdates(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
+  @scala.inline
   def unstableRenderSubtreeIntoContainer[T /* <: Element */](
-    parentComponent: Component[_, js.Object, _],
+    parentComponent: Component[js.Any, js.Object, js.Any],
     element: DOMElement[DOMAttributes[T], T],
     container: Element
-  ): T = js.native
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def unstableRenderSubtreeIntoContainer[T /* <: Element */](
-    parentComponent: Component[_, js.Object, _],
+    parentComponent: Component[js.Any, js.Object, js.Any],
     element: DOMElement[DOMAttributes[T], T],
     container: Element,
-    callback: js.Function1[/* element */ T, _]
-  ): T = js.native
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
-  def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[_, js.Object, _], element: ReactElement, container: Element): (Component[P, ComponentState, _]) | Element | Unit = js.native
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
+    callback: js.Function1[/* element */ T, js.Any]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[js.Any, js.Object, js.Any], element: ReactElement, container: Element): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
+  @scala.inline
   def unstableRenderSubtreeIntoContainer[P](
-    parentComponent: Component[_, js.Object, _],
+    parentComponent: Component[js.Any, js.Object, js.Any],
     element: ReactElement,
     container: Element,
-    callback: js.Function1[/* component */ js.UndefOr[(Component[P, ComponentState, _]) | Element], _]
-  ): (Component[P, ComponentState, _]) | Element | Unit = js.native
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
-  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](parentComponent: Component[_, js.Object, _], element: CElement[P, T], container: Element): T = js.native
-  @JSImport("react-dom", "unstable_renderSubtreeIntoContainer")
-  @js.native
-  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](
-    parentComponent: Component[_, js.Object, _],
+    callback: js.Function1[
+      /* component */ js.UndefOr[(Component[P, ComponentState, js.Any]) | Element], 
+      js.Any
+    ]
+  ): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
+  @scala.inline
+  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](parentComponent: Component[js.Any, js.Object, js.Any], element: CElement[P, T], container: Element): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](
+    parentComponent: Component[js.Any, js.Object, js.Any],
     element: CElement[P, T],
     container: Element,
-    callback: js.Function1[/* component */ T, _]
-  ): T = js.native
+    callback: js.Function1[/* component */ T, js.Any]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("react-dom", "version")
   @js.native
   val version: String = js.native
   
   // enableSuspenseServerRenderer feature
-  @js.native
   trait HydrationOptions extends StObject {
     
-    var onDeleted: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.native
+    var onDeleted: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.undefined
     
-    var onHydrated: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.native
+    var onHydrated: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.undefined
   }
   object HydrationOptions {
     
@@ -140,30 +130,33 @@ object mod {
   @js.native
   trait Renderer extends StObject {
     
-    def apply(element: js.Array[CElement[_, Component[_, ComponentState, _]]]): Component[_, ComponentState, _] = js.native
+    def apply(element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]]): Component[js.Any, ComponentState, js.Any] = js.native
     def apply(
-      element: js.Array[CElement[_, Component[_, ComponentState, _]]],
+      element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]],
       container: Null,
       callback: js.Function0[Unit]
-    ): Component[_, ComponentState, _] = js.native
-    def apply(element: js.Array[CElement[_, Component[_, ComponentState, _]]], container: DocumentFragment): Component[_, ComponentState, _] = js.native
+    ): Component[js.Any, ComponentState, js.Any] = js.native
     def apply(
-      element: js.Array[CElement[_, Component[_, ComponentState, _]]],
+      element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]],
+      container: DocumentFragment
+    ): Component[js.Any, ComponentState, js.Any] = js.native
+    def apply(
+      element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]],
       container: DocumentFragment,
       callback: js.Function0[Unit]
-    ): Component[_, ComponentState, _] = js.native
-    def apply(element: js.Array[CElement[_, Component[_, ComponentState, _]]], container: Element): Component[_, ComponentState, _] = js.native
+    ): Component[js.Any, ComponentState, js.Any] = js.native
+    def apply(element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]], container: Element): Component[js.Any, ComponentState, js.Any] = js.native
     def apply(
-      element: js.Array[CElement[_, Component[_, ComponentState, _]]],
+      element: js.Array[CElement[js.Any, Component[js.Any, ComponentState, js.Any]]],
       container: Element,
       callback: js.Function0[Unit]
-    ): Component[_, ComponentState, _] = js.native
-    def apply(element: SFCElement[_]): Unit = js.native
-    def apply(element: SFCElement[_], container: Null, callback: js.Function0[Unit]): Unit = js.native
-    def apply(element: SFCElement[_], container: DocumentFragment): Unit = js.native
-    def apply(element: SFCElement[_], container: DocumentFragment, callback: js.Function0[Unit]): Unit = js.native
-    def apply(element: SFCElement[_], container: Element): Unit = js.native
-    def apply(element: SFCElement[_], container: Element, callback: js.Function0[Unit]): Unit = js.native
+    ): Component[js.Any, ComponentState, js.Any] = js.native
+    def apply(element: SFCElement[js.Any]): Unit = js.native
+    def apply(element: SFCElement[js.Any], container: Null, callback: js.Function0[Unit]): Unit = js.native
+    def apply(element: SFCElement[js.Any], container: DocumentFragment): Unit = js.native
+    def apply(element: SFCElement[js.Any], container: DocumentFragment, callback: js.Function0[Unit]): Unit = js.native
+    def apply(element: SFCElement[js.Any], container: Element): Unit = js.native
+    def apply(element: SFCElement[js.Any], container: Element, callback: js.Function0[Unit]): Unit = js.native
     // Deprecated(render): The return value is deprecated.
     // In future releases the render function's return type will be void.
     def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T]): T = js.native
@@ -176,18 +169,18 @@ object mod {
     ): T = js.native
     def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T], container: Element): T = js.native
     def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T], container: Element, callback: js.Function0[Unit]): T = js.native
-    def apply[P](element: ReactElement): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P](element: ReactElement, container: Null, callback: js.Function0[Unit]): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P](element: ReactElement, container: DocumentFragment): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P](element: ReactElement, container: DocumentFragment, callback: js.Function0[Unit]): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P](element: ReactElement, container: Element): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P](element: ReactElement, container: Element, callback: js.Function0[Unit]): (Component[P, ComponentState, _]) | Element | Unit = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T]): T = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: Null, callback: js.Function0[Unit]): T = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: DocumentFragment): T = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: DocumentFragment, callback: js.Function0[Unit]): T = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: Element): T = js.native
-    def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: Element, callback: js.Function0[Unit]): T = js.native
+    def apply[P](element: ReactElement): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P](element: ReactElement, container: Null, callback: js.Function0[Unit]): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P](element: ReactElement, container: DocumentFragment): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P](element: ReactElement, container: DocumentFragment, callback: js.Function0[Unit]): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P](element: ReactElement, container: Element): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P](element: ReactElement, container: Element, callback: js.Function0[Unit]): (Component[P, ComponentState, js.Any]) | Element | Unit = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T]): T = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], container: Null, callback: js.Function0[Unit]): T = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], container: DocumentFragment): T = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], container: DocumentFragment, callback: js.Function0[Unit]): T = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], container: Element): T = js.native
+    def apply[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], container: Element, callback: js.Function0[Unit]): T = js.native
   }
   
   @js.native
@@ -203,12 +196,11 @@ object mod {
   }
   
   // exposeConcurrentModeAPIs features
-  @js.native
   trait RootOptions extends StObject {
     
-    var hydrate: js.UndefOr[Boolean] = js.native
+    var hydrate: js.UndefOr[Boolean] = js.undefined
     
-    var hydrationOptions: js.UndefOr[typings.reactDom.experimentalMod.reactDomAugmentingMod.HydrationOptions] = js.native
+    var hydrationOptions: js.UndefOr[typings.reactDom.experimentalMod.reactDomAugmentingMod.HydrationOptions] = js.undefined
   }
   object RootOptions {
     

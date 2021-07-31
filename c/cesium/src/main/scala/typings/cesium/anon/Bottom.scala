@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var far: Double = js.native
+  var far: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var near: Double = js.native
+  var near: Double
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
 }
 object Bottom {
   

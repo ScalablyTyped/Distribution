@@ -9,10 +9,10 @@ Use webpack with karma
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | karma-webpack |
-| Keywords           | karma, karma-plugin, karma-preprocessor, karma-webpack, webpack |
-| # releases         | 12 |
-| # dependents       | 332 |
-| # downloads        | 19844236 |
+| Keywords           | webpack |
+| # releases         | 8 |
+| # dependents       | 340 |
+| # downloads        | 20343715 |
 | # stars            | 13 |
 
 ## Links

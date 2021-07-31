@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.wxJsSdkDt.wx.Card
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CardList extends StObject {
     
-    var cardList: js.Array[Card] = js.native
+    var cardList: js.Array[Card]
   }
   object CardList {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CheckResult extends StObject {
     
-    var checkResult: StringDictionary[Boolean] = js.native
+    var checkResult: StringDictionary[Boolean]
     
-    var errMsg: Msg = js.native
+    var errMsg: Msg
   }
   object CheckResult {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LocalData extends StObject {
     
-    var localData: String = js.native
+    var localData: String
   }
   object LocalData {
     
@@ -80,10 +76,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LocalId extends StObject {
     
-    var localId: String = js.native
+    var localId: String
   }
   object LocalId {
     
@@ -101,10 +96,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LocalIds extends StObject {
     
-    var localIds: js.Array[String] = js.native
+    var localIds: js.Array[String]
   }
   object LocalIds {
     
@@ -125,10 +119,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Msg extends StObject {
     
-    var msg: String = js.native
+    var msg: String
   }
   object Msg {
     
@@ -146,10 +139,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NetworkType extends StObject {
     
-    var networkType: String = js.native
+    var networkType: String
   }
   object NetworkType {
     
@@ -167,10 +159,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ResultStr extends StObject {
     
-    var resultStr: String = js.native
+    var resultStr: String
   }
   object ResultStr {
     

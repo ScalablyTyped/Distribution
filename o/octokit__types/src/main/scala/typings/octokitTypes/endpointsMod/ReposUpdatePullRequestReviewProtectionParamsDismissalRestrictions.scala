@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions extends StObject {
   
-  var teams: js.UndefOr[js.Array[String]] = js.native
+  var teams: js.UndefOr[js.Array[String]] = js.undefined
   
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions {
   

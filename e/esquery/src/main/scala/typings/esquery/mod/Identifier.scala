@@ -3,26 +3,25 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identifier
-  extends SubjectSelectorAtom
+  extends StObject
+     with SubjectSelectorAtom
      with Selector
      with SubjectSelector {
   
   @JSName("type")
-  var type_Identifier: identifier = js.native
+  var type_Identifier: identifier
   
-  var value: String = js.native
+  var value: String
 }
 object Identifier {
   
   @scala.inline
-  def apply(`type`: identifier, value: String): Identifier = {
+  def apply(value: String): Identifier = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("identifier")
     __obj.asInstanceOf[Identifier]
   }
   

@@ -2,15 +2,13 @@ package typings.cordovaPluginFileTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Optional parameters for download method. */
-@js.native
 trait FileDownloadOptions extends StObject {
   
   /** A map of header name/header values. */
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
 }
 object FileDownloadOptions {
   

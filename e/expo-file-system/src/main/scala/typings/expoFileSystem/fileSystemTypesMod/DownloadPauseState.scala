@@ -2,19 +2,17 @@ package typings.expoFileSystem.fileSystemTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadPauseState extends StObject {
   
-  var fileUri: String = js.native
+  var fileUri: String
   
-  var options: DownloadOptions = js.native
+  var options: DownloadOptions
   
-  var resumeData: js.UndefOr[String] = js.native
+  var resumeData: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object DownloadPauseState {
   

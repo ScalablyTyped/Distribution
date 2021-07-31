@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyticsMod {
+  
+  @JSImport("googleapis/build/src/apis/analytics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,18 +69,16 @@ object analyticsMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/analytics", "analytics")
-  @js.native
-  def analytics(options: Options): Analytics = js.native
-  @JSImport("googleapis/build/src/apis/analytics", "analytics")
-  @js.native
-  def analytics(options: typings.googleapis.v3Mod.analyticsV3.Options): typings.googleapis.v3Mod.analyticsV3.Analytics = js.native
-  @JSImport("googleapis/build/src/apis/analytics", "analytics")
-  @js.native
-  def analytics_v24(version: v2Dot4): Analytics = js.native
-  @JSImport("googleapis/build/src/apis/analytics", "analytics")
-  @js.native
-  def analytics_v3(version: v3): typings.googleapis.v3Mod.analyticsV3.Analytics = js.native
+  @scala.inline
+  def analytics(options: Options): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[Analytics]
+  @scala.inline
+  def analytics(options: typings.googleapis.v3Mod.analyticsV3.Options): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
+  
+  @scala.inline
+  def analytics_v24(version: v2Dot4): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[Analytics]
+  
+  @scala.inline
+  def analytics_v3(version: v3): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
   
   object auth extends Shortcut {
     
@@ -108,9 +109,12 @@ object analyticsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/analytics", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/analytics", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDeviceOrientationOverrideRequest extends StObject {
   
   /**
     * Mock alpha
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * Mock beta
     */
-  var beta: Double = js.native
+  var beta: Double
   
   /**
     * Mock gamma
     */
-  var gamma: Double = js.native
+  var gamma: Double
 }
 object SetDeviceOrientationOverrideRequest {
   

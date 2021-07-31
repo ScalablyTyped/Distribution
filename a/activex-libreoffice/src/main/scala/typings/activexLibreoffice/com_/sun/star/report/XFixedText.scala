@@ -18,14 +18,14 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XFixedText extends XReportControlModel {
+trait XFixedText
+  extends StObject
+     with XReportControlModel {
   
   /** specifies the label of the control. */
-  var Label: String = js.native
+  var Label: String
 }
 object XFixedText {
   

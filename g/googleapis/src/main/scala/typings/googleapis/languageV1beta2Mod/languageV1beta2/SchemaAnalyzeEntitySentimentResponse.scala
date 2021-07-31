@@ -2,26 +2,24 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The entity-level sentiment analysis response message.
   */
-@js.native
 trait SchemaAnalyzeEntitySentimentResponse extends StObject {
   
   /**
     * The recognized entities in the input document with associated sentiments.
     */
-  var entities: js.UndefOr[js.Array[SchemaEntity]] = js.native
+  var entities: js.UndefOr[js.Array[SchemaEntity]] = js.undefined
   
   /**
     * The language of the text, which will be the same as the language
     * specified in the request or, if not specified, the automatically-detected
     * language. See Document.language field for more details.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object SchemaAnalyzeEntitySentimentResponse {
   

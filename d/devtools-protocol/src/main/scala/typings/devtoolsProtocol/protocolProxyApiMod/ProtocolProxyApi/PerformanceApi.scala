@@ -7,39 +7,37 @@ import typings.devtoolsProtocol.mod.Protocol.Performance.MetricsEvent
 import typings.devtoolsProtocol.mod.Protocol.Performance.SetTimeDomainRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceApi extends StObject {
   
   /**
     * Disable collecting and reporting metrics.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enable collecting and reporting metrics.
     */
-  def enable(params: EnableRequest): js.Promise[Unit] = js.native
+  def enable(params: EnableRequest): js.Promise[Unit]
   
   /**
     * Retrieve current values of run-time metrics.
     */
-  def getMetrics(): js.Promise[GetMetricsResponse] = js.native
+  def getMetrics(): js.Promise[GetMetricsResponse]
   
   /**
     * Current values of the metrics.
     */
   @JSName("on")
-  def on_metrics(event: metrics, listener: js.Function1[/* params */ MetricsEvent, Unit]): Unit = js.native
+  def on_metrics(event: metrics, listener: js.Function1[/* params */ MetricsEvent, Unit]): Unit
   
   /**
     * Sets time domain to use for collecting and reporting duration metrics.
     * Note that this must be called before enabling metrics collection. Calling
     * this method while metrics collection is enabled returns an error.
     */
-  def setTimeDomain(params: SetTimeDomainRequest): js.Promise[Unit] = js.native
+  def setTimeDomain(params: SetTimeDomainRequest): js.Promise[Unit]
 }
 object PerformanceApi {
   

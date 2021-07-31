@@ -2,15 +2,13 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateCallbacks[T] extends StObject {
   
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
-  def onMatch(item: T): Unit | EnumerateAction = js.native
+  def onMatch(item: T): Unit | EnumerateAction
 }
 object EnumerateCallbacks {
   
@@ -21,7 +19,7 @@ object EnumerateCallbacks {
   }
   
   @scala.inline
-  implicit class EnumerateCallbacksMutableBuilder[Self <: EnumerateCallbacks[_], T] (val x: Self with EnumerateCallbacks[T]) extends AnyVal {
+  implicit class EnumerateCallbacksMutableBuilder[Self <: EnumerateCallbacks[?], T] (val x: Self & EnumerateCallbacks[T]) extends AnyVal {
     
     @scala.inline
     def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))

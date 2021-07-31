@@ -8,14 +8,15 @@ import typings.electronProgressbar.electronProgressbarStrings.progress
 import typings.electronProgressbar.electronProgressbarStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("electron-progressbar", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ProgressBar {
+  class ^ protected ()
+    extends StObject
+       with ProgressBar {
     def this(options: ProgressBarOptions) = this()
     def this(options: ProgressBarOptions, electronApp: App) = this()
   }
@@ -49,28 +50,27 @@ object mod {
     var value: Double = js.native
   }
   
-  @js.native
   trait ProgressBarOptions extends StObject {
     
-    var abortOnError: js.UndefOr[Boolean] = js.native
+    var abortOnError: js.UndefOr[Boolean] = js.undefined
     
-    var browserWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.native
+    var browserWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
     
-    var closeOnComplete: js.UndefOr[Boolean] = js.native
+    var closeOnComplete: js.UndefOr[Boolean] = js.undefined
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var initialValue: js.UndefOr[Double] = js.native
+    var initialValue: js.UndefOr[Double] = js.undefined
     
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[StyleOptions] = js.native
+    var style: js.UndefOr[StyleOptions] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ProgressBarOptions {
     
@@ -145,16 +145,15 @@ object mod {
     }
   }
   
-  @js.native
   trait StyleOptions extends StObject {
     
-    var bar: js.UndefOr[js.Object] = js.native
+    var bar: js.UndefOr[js.Object] = js.undefined
     
-    var detail: js.UndefOr[js.Object] = js.native
+    var detail: js.UndefOr[js.Object] = js.undefined
     
-    var text: js.UndefOr[js.Object] = js.native
+    var text: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Object] = js.native
+    var value: js.UndefOr[js.Object] = js.undefined
   }
   object StyleOptions {
     

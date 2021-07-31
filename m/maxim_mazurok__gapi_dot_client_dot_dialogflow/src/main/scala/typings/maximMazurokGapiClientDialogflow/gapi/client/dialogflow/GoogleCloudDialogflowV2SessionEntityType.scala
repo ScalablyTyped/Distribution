@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2SessionEntityType extends StObject {
   
   /** Required. The collection of entities associated with this session entity type. */
-  var entities: js.UndefOr[js.Array[GoogleCloudDialogflowV2EntityTypeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[GoogleCloudDialogflowV2EntityTypeEntity]] = js.undefined
   
   /** Required. Indicates whether the additional data should override or supplement the custom entity type definition. */
-  var entityOverrideMode: js.UndefOr[String] = js.native
+  var entityOverrideMode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If
     * `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing
     * entity type in the same agent that will be overridden or supplemented.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2SessionEntityType {
   

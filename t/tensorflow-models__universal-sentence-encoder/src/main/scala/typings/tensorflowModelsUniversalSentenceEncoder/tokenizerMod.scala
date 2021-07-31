@@ -3,10 +3,13 @@ package typings.tensorflowModelsUniversalSentenceEncoder
 import typings.tensorflowModelsUniversalSentenceEncoder.trieMod.Trie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenizerMod {
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer", "Tokenizer")
   @js.native
@@ -23,16 +26,13 @@ object tokenizerMod {
     var vocabulary: js.Any = js.native
   }
   
-  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer", "loadTokenizer")
-  @js.native
-  def loadTokenizer(): js.Promise[Tokenizer] = js.native
-  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer", "loadTokenizer")
-  @js.native
-  def loadTokenizer(pathToVocabulary: String): js.Promise[Tokenizer] = js.native
+  @scala.inline
+  def loadTokenizer(): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")().asInstanceOf[js.Promise[Tokenizer]]
+  @scala.inline
+  def loadTokenizer(pathToVocabulary: String): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tokenizer]]
   
-  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer", "loadVocabulary")
-  @js.native
-  def loadVocabulary(pathToVocabulary: String): js.Promise[_] = js.native
+  @scala.inline
+  def loadVocabulary(pathToVocabulary: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadVocabulary")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   type Vocabulary = js.Array[js.Tuple2[String, Double]]
 }

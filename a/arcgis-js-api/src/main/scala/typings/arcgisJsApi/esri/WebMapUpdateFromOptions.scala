@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebMapUpdateFromOptions extends Object {
+trait WebMapUpdateFromOptions
+  extends StObject
+     with Object {
   
   /**
     * When `true`, the view's background will not be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  var backgroundExcluded: js.UndefOr[Boolean] = js.native
+  var backgroundExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, the view's scale will be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  var scalePreserved: js.UndefOr[Boolean] = js.native
+  var scalePreserved: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, the thumbnail will not be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  var thumbnailExcluded: js.UndefOr[Boolean] = js.native
+  var thumbnailExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  var thumbnailSize: js.UndefOr[WebMapUpdateFromOptionsThumbnailSize] = js.native
+  var thumbnailSize: js.UndefOr[WebMapUpdateFromOptionsThumbnailSize] = js.undefined
   
   /**
     * When `true`, the initial [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) of the view will not be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  var viewpointExcluded: js.UndefOr[Boolean] = js.native
+  var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapUpdateFromOptions {
   

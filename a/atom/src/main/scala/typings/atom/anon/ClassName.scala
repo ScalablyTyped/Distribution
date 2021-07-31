@@ -3,17 +3,15 @@ package typings.atom.anon
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var onDidClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onDidClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ClassName {
   

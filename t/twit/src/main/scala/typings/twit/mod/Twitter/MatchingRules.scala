@@ -2,17 +2,15 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchingRules extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var id_str: String = js.native
+  var id_str: String
   
-  var tag: Null = js.native
+  var tag: Null
 }
 object MatchingRules {
   

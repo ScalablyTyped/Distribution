@@ -2,17 +2,15 @@ package typings.iitc.iitctypesMod.IITC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalDataCore extends StObject {
   
-  var latE6: Double = js.native
+  var latE6: Double
   
-  var lngE6: Double = js.native
+  var lngE6: Double
   
-  var team: String = js.native
+  var team: String
 }
 object PortalDataCore {
   

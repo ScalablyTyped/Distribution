@@ -3,7 +3,6 @@ package typings.reactNativeCommunityCliServerApi
 import typings.reactNativeCommunityCliServerApi.anon.IsDebuggerConnected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debuggerProxyServerMod {

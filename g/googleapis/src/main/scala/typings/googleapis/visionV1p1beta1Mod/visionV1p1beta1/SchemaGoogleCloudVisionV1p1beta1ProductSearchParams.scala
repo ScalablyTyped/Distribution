@@ -2,20 +2,18 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for a product search request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1ProductSearchParams extends StObject {
   
   /**
     * The bounding polygon around the area of interest in the image. Optional.
     * If it is not specified, system discretion will be applied.
     */
-  var boundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1BoundingPoly] = js.native
+  var boundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1BoundingPoly] = js.undefined
   
   /**
     * The filtering expression. This can be used to restrict search results
@@ -25,21 +23,21 @@ trait SchemaGoogleCloudVisionV1p1beta1ProductSearchParams extends StObject {
     * is acceptable, but not &quot;(color = red OR brand = Google)&quot; or
     * &quot;color: red&quot;.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The list of product categories to search in. Currently, we only consider
     * the first category, and either &quot;homegoods&quot;,
     * &quot;apparel&quot;, or &quot;toys&quot; should be specified.
     */
-  var productCategories: js.UndefOr[js.Array[String]] = js.native
+  var productCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The resource name of a ProductSet to be searched for similar images.
     * Format is:
     * `projects/PROJECT_ID/locations/LOC_ID/productSets/PRODUCT_SET_ID`.
     */
-  var productSet: js.UndefOr[String] = js.native
+  var productSet: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1ProductSearchParams {
   

@@ -4,21 +4,19 @@ import typings.jsend.anon.Code
 import typings.jsend.anon.Strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsend {
   
-  @js.native
   trait JSendObject extends StObject {
     
-    var code: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object JSendObject {
     
@@ -55,9 +53,11 @@ object jsend {
   }
   
   @js.native
-  trait jsend extends jsendCore {
+  trait jsend
+    extends StObject
+       with jsendCore {
     
-    def forward(json: js.Object, done: js.Function2[/* err */ js.Any, /* data */ js.Any, _]): Unit = js.native
+    def forward(json: js.Object, done: js.Function2[/* err */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
     
     def fromArguments(err: String): JSendObject = js.native
     def fromArguments(err: String, json: js.Object): JSendObject = js.native
@@ -82,16 +82,19 @@ object jsend {
   
   @js.native
   trait jsendExport
-    extends typings.jsend.jsend.jsend {
+    extends StObject
+       with typings.jsend.jsend.jsend {
     
     def apply(): typings.jsend.jsend.jsend = js.native
-    def apply(config: js.UndefOr[scala.Nothing], host: js.Object): typings.jsend.jsend.jsend = js.native
+    def apply(config: Unit, host: js.Object): typings.jsend.jsend.jsend = js.native
     def apply(config: Strict): typings.jsend.jsend.jsend = js.native
     def apply(config: Strict, host: js.Object): typings.jsend.jsend.jsend = js.native
   }
   
   @js.native
-  trait jsendExpress extends jsendCore {
+  trait jsendExpress
+    extends StObject
+       with jsendCore {
     
     def apply(err: String): Unit = js.native
     def apply(err: String, json: js.Object): Unit = js.native

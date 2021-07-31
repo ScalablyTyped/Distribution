@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntitiesResponse extends StObject {
   
   /**
     *  Array of EntitySummary object.
     */
-  var EntitySummaryList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.EntitySummaryList] = js.native
+  var EntitySummaryList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.EntitySummaryList] = js.undefined
   
   /**
     * The value of the next token if it exists. Null if there is no more result.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.undefined
 }
 object ListEntitiesResponse {
   

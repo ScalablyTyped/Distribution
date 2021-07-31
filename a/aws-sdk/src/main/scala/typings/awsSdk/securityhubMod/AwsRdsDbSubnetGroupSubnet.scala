@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbSubnetGroupSubnet extends StObject {
   
   /**
     * Information about the Availability Zone for a subnet in the subnet group.
     */
-  var SubnetAvailabilityZone: js.UndefOr[AwsRdsDbSubnetGroupSubnetAvailabilityZone] = js.native
+  var SubnetAvailabilityZone: js.UndefOr[AwsRdsDbSubnetGroupSubnetAvailabilityZone] = js.undefined
   
   /**
     * The identifier of a subnet in the subnet group.
     */
-  var SubnetIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var SubnetIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of a subnet in the subnet group.
     */
-  var SubnetStatus: js.UndefOr[NonEmptyString] = js.native
+  var SubnetStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbSubnetGroupSubnet {
   

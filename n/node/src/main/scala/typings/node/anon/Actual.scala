@@ -2,26 +2,24 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actual extends StObject {
   
   /** The `actual` property on the error instance. */
-  var actual: js.UndefOr[js.Any] = js.native
+  var actual: js.UndefOr[js.Any] = js.undefined
   
   /** The `expected` property on the error instance. */
-  var expected: js.UndefOr[js.Any] = js.native
+  var expected: js.UndefOr[js.Any] = js.undefined
   
   /** If provided, the error message is set to this value. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** The `operator` property on the error instance. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /** If provided, the generated stack trace omits frames before this function. */
-  var stackStartFn: js.UndefOr[js.Function] = js.native
+  var stackStartFn: js.UndefOr[js.Function] = js.undefined
 }
 object Actual {
   

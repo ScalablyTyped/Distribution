@@ -10,9 +10,9 @@ help secure Express/Connect apps with various HTTP headers
 | ------------------ | :-------------: |
 | Full name          | helmet |
 | Keywords           | express, security, headers |
-| # releases         | 27 |
-| # dependents       | 1505 |
-| # downloads        | 45305445 |
+| # releases         | 31 |
+| # dependents       | 1566 |
+| # downloads        | 49152889 |
 | # stars            | 284 |
 
 ## Links

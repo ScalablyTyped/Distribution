@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDedicatedIpPoolsResponse extends StObject {
   
   /**
     * A list of all of the dedicated IP pools that are associated with your AWS account in the current Region.
     */
-  var DedicatedIpPools: js.UndefOr[ListOfDedicatedIpPools] = js.native
+  var DedicatedIpPools: js.UndefOr[ListOfDedicatedIpPools] = js.undefined
   
   /**
     * A token that indicates that there are additional IP pools to list. To view additional IP pools, issue another request to ListDedicatedIpPools, passing this token in the NextToken parameter.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
 }
 object ListDedicatedIpPoolsResponse {
   

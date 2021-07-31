@@ -5,18 +5,19 @@ import typings.ionic.definitionsMod.NpmClient
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object npmMod {
   
-  @JSImport("ionic/lib/utils/npm", "pkgFromRegistry")
+  @JSImport("ionic/lib/utils/npm", JSImport.Namespace)
   @js.native
-  def pkgFromRegistry(npmClient: NpmClient, options: PartialPkgManagerOptions): js.Promise[js.UndefOr[PackageJson]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/utils/npm", "pkgManagerArgs")
-  @js.native
-  def pkgManagerArgs(npmClient: NpmClient, options: PkgManagerOptions): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def pkgFromRegistry(npmClient: NpmClient, options: PartialPkgManagerOptions): js.Promise[js.UndefOr[PackageJson]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgFromRegistry")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[PackageJson]]]
+  
+  @scala.inline
+  def pkgManagerArgs(npmClient: NpmClient, options: PkgManagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgManagerArgs")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionic.ionicStrings.dedupe
@@ -48,26 +49,25 @@ object npmMod {
     def uninstall: typings.ionic.ionicStrings.uninstall = "uninstall".asInstanceOf[typings.ionic.ionicStrings.uninstall]
   }
   
-  @js.native
   trait PkgManagerOptions extends StObject {
     
-    var command: PkgManagerCommand = js.native
+    var command: PkgManagerCommand
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var pkg: js.UndefOr[String] = js.native
+    var pkg: js.UndefOr[String] = js.undefined
     
-    var save: js.UndefOr[Boolean] = js.native
+    var save: js.UndefOr[Boolean] = js.undefined
     
-    var saveDev: js.UndefOr[Boolean] = js.native
+    var saveDev: js.UndefOr[Boolean] = js.undefined
     
-    var saveExact: js.UndefOr[Boolean] = js.native
+    var saveExact: js.UndefOr[Boolean] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var scriptArgs: js.UndefOr[js.Array[String]] = js.native
+    var scriptArgs: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PkgManagerOptions {
     

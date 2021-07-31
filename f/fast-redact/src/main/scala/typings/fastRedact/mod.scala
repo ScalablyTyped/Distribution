@@ -2,7 +2,6 @@ package typings.fastRedact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,27 +16,29 @@ object mod {
     * @param redactOptions.strict The strict option, when set to true, will cause the redactor function to throw if instead of an object it finds a primitive.
     * @returns Redacted value from input
     */
+  @scala.inline
+  def apply(redactOptions: RedactOptions): redactFn = ^.asInstanceOf[js.Dynamic].apply(redactOptions.asInstanceOf[js.Any]).asInstanceOf[redactFn]
+  
   @JSImport("fast-redact", JSImport.Namespace)
   @js.native
-  def apply(redactOptions: RedactOptions): redactFn = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait RedactOptions extends StObject {
     
     /** This is the value which overwrites redacted properties. */
-    var censor: js.UndefOr[String | (js.Function1[/* v */ js.Any, _])] = js.native
+    var censor: js.UndefOr[String | (js.Function1[/* v */ js.Any, js.Any])] = js.undefined
     
     /** An array of strings describing the nested location of a key in an object. */
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
     
     /** The remove option, when set to true will cause keys to be removed from the serialized output. */
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
     /** The serialize option may either be a function or a boolean. If a function is supplied, this will be used to serialize the redacted object. */
-    var serialize: js.UndefOr[Boolean | (js.Function1[/* v */ js.Any, _])] = js.native
+    var serialize: js.UndefOr[Boolean | (js.Function1[/* v */ js.Any, js.Any])] = js.undefined
     
     /** The strict option, when set to true, will cause the redactor function to throw if instead of an object it finds a primitive. */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object RedactOptions {
     
@@ -51,10 +52,10 @@ object mod {
     implicit class RedactOptionsMutableBuilder[Self <: RedactOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCensor(value: String | (js.Function1[/* v */ js.Any, _])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
+      def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCensorFunction1(value: /* v */ js.Any => _): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
+      def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
@@ -72,10 +73,10 @@ object mod {
       def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
       @scala.inline
-      def setSerialize(value: Boolean | (js.Function1[/* v */ js.Any, _])): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+      def setSerialize(value: Boolean | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSerializeFunction1(value: /* v */ js.Any => _): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      def setSerializeFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)

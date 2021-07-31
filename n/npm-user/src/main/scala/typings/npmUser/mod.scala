@@ -2,7 +2,6 @@ package typings.npmUser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,9 +24,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-user", JSImport.Namespace)
-  @js.native
-  def apply(name: String): js.Promise[UserInfo] = js.native
+  @scala.inline
+  def apply(name: String): js.Promise[UserInfo] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserInfo]]
   
   @JSImport("npm-user", JSImport.Namespace)
   @js.native
@@ -42,39 +40,38 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmUser */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait UserInfo extends StObject {
     
     /**
     		URL to user's avatar.
     		*/
-    var avatar: String | Null = js.native
+    var avatar: String | Null
     
     /**
     		User's email.
     		*/
-    var email: String | Null = js.native
+    var email: String | Null
     
     /**
     		User's associated GitHub account.
     		*/
-    var github: String | Null = js.native
+    var github: String | Null
     
     /**
     		User's name.
     		*/
-    var name: String | Null = js.native
+    var name: String | Null
     
     /**
     		User's associated Twitter account.
     		*/
-    var twitter: String | Null = js.native
+    var twitter: String | Null
   }
   object UserInfo {
     
     @scala.inline
     def apply(): UserInfo = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(avatar = null, email = null, github = null, name = null, twitter = null)
       __obj.asInstanceOf[UserInfo]
     }
     

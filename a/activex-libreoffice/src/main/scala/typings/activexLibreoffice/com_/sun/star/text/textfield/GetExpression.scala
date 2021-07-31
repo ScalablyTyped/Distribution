@@ -12,50 +12,50 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a get expression text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait GetExpression extends TextField_ {
+trait GetExpression
+  extends StObject
+     with TextField_ {
   
   /** contains the textual content of the field. */
-  var Content: String = js.native
+  var Content: String
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /**
     * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
     * language.
     * @since OOo 1.1.2
     */
-  var IsFixedLanguage: Boolean = js.native
+  var IsFixedLanguage: Boolean
   
   /** determines whether the content is displayed or evaluated. */
-  var IsShowFormula: Boolean = js.native
+  var IsShowFormula: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /** determines the type of the variable as described in {@link com.sun.star.text.SetVariableType} */
-  var SubType: Double = js.native
+  var SubType: Double
   
   /** contains the numerical value of the field. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** deprecated */
-  var VariableSubtype: Double = js.native
+  var VariableSubtype: Double
 }
 object GetExpression {
   

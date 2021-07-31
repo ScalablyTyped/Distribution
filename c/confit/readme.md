@@ -12,7 +12,7 @@ Environment-aware configuration.
 | Keywords           | application, config, configuration |
 | # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 171649 |
+| # downloads        | 201612 |
 | # stars            | 2 |
 
 ## Links

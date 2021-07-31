@@ -2,13 +2,11 @@ package typings.inboxsdk.mod.Lists
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowAttachmentIconDescriptorBase extends StObject {
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object ThreadRowAttachmentIconDescriptorBase {
   

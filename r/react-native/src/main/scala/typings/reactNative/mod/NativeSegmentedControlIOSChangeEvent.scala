@@ -2,15 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NativeSegmentedControlIOSChangeEvent extends TargetedEvent {
+trait NativeSegmentedControlIOSChangeEvent
+  extends StObject
+     with TargetedEvent {
   
-  var selectedSegmentIndex: Double = js.native
+  var selectedSegmentIndex: Double
   
-  var value: String = js.native
+  var value: String
 }
 object NativeSegmentedControlIOSChangeEvent {
   

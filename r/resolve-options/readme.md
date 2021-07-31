@@ -11,8 +11,8 @@ Resolve an options object based on configuration.
 | Full name          | resolve-options |
 | Keywords           | options, functions, resolver, type, configuration, config, opts, opt, default |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 44892410 |
+| # dependents       | 5 |
+| # downloads        | 52829014 |
 | # stars            | 0 |
 
 ## Links

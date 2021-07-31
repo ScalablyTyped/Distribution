@@ -2,10 +2,13 @@ package typings.ink
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusMod {
+  
+  @JSImport("ink/build/hooks/use-focus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Component that uses `useFocus` hook becomes "focusable" to Ink,
@@ -15,25 +18,22 @@ object useFocusMod {
     * This hook returns an object with `isFocused` boolean property, which
     * determines if this component is focused or not.
     */
-  @JSImport("ink/build/hooks/use-focus", JSImport.Default)
-  @js.native
-  def default(): Output = js.native
-  @JSImport("ink/build/hooks/use-focus", JSImport.Default)
-  @js.native
-  def default(hasIsActiveAutoFocus: Input): Output = js.native
+  @scala.inline
+  def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
+  @scala.inline
+  def default(hasIsActiveAutoFocus: Input): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsActiveAutoFocus.asInstanceOf[js.Any]).asInstanceOf[Output]
   
-  @js.native
   trait Input extends StObject {
     
     /**
       * Auto focus this component, if there's no active (focused) component right now.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable this component's focus, while still maintaining its position in the list of focusable components.
       */
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
   }
   object Input {
     
@@ -60,13 +60,12 @@ object useFocusMod {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
     /**
       * Determines whether this component is focused or not.
       */
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
   }
   object Output {
     

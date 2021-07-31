@@ -10,9 +10,9 @@ Compile Sass to CSS with Ruby Sass
 | ------------------ | :-------------: |
 | Full name          | gulp-ruby-sass |
 | Keywords           | gulpplugin, scss, sass, css, compile, preprocessor, style, ruby, source-map, source-maps, sourcemap, sourcemaps |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 59 |
-| # downloads        | 320149 |
+| # downloads        | 302712 |
 | # stars            | 73 |
 
 ## Links

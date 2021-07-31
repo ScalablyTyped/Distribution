@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineDefinitionOutput extends StObject {
   
   /**
     * The parameter objects used in the pipeline definition.
     */
-  var parameterObjects: js.UndefOr[ParameterObjectList] = js.native
+  var parameterObjects: js.UndefOr[ParameterObjectList] = js.undefined
   
   /**
     * The parameter values used in the pipeline definition.
     */
-  var parameterValues: js.UndefOr[ParameterValueList] = js.native
+  var parameterValues: js.UndefOr[ParameterValueList] = js.undefined
   
   /**
     * The objects defined in the pipeline.
     */
-  var pipelineObjects: js.UndefOr[PipelineObjectList] = js.native
+  var pipelineObjects: js.UndefOr[PipelineObjectList] = js.undefined
 }
 object GetPipelineDefinitionOutput {
   

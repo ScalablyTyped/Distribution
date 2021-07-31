@@ -3,34 +3,51 @@ package typings.minimalBitArray
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("minimal-bit-array", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BitArray {
+  class ^ protected ()
+    extends StObject
+       with BitArray {
     def this(length: Double) = this()
-  }
-  
-  /* static member */
-  @JSImport("minimal-bit-array", "fromJSON")
-  @js.native
-  def fromJSON(bitArrayJSON: BitArrayJSON): BitArray = js.native
-  
-  @js.native
-  trait BitArray extends StObject {
     
+    /* CompleteClass */
     var bits: Uint32Array = js.native
     
-    def get(index: Double): Boolean = js.native
+    /* CompleteClass */
+    override def get(index: Double): Boolean = js.native
     
+    /* CompleteClass */
     var length: Double = js.native
     
-    def set(index: Double, value: js.Any): Boolean = js.native
+    /* CompleteClass */
+    override def set(index: Double, value: js.Any): Boolean = js.native
     
-    def toJSON(): BitArrayJSON = js.native
+    /* CompleteClass */
+    override def toJSON(): BitArrayJSON = js.native
+  }
+  @JSImport("minimal-bit-array", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromJSON(bitArrayJSON: BitArrayJSON): BitArray = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(bitArrayJSON.asInstanceOf[js.Any]).asInstanceOf[BitArray]
+  
+  trait BitArray extends StObject {
+    
+    var bits: Uint32Array
+    
+    def get(index: Double): Boolean
+    
+    var length: Double
+    
+    def set(index: Double, value: js.Any): Boolean
+    
+    def toJSON(): BitArrayJSON
   }
   object BitArray {
     
@@ -66,12 +83,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BitArrayJSON extends StObject {
     
-    var bits: js.Array[Double] = js.native
+    var bits: js.Array[Double]
     
-    var length: Double = js.native
+    var length: Double
   }
   object BitArrayJSON {
     

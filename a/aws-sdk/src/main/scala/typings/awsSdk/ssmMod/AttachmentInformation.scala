@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentInformation extends StObject {
   
   /**
     * The name of the attachment.
     */
-  var Name: js.UndefOr[AttachmentName] = js.native
+  var Name: js.UndefOr[AttachmentName] = js.undefined
 }
 object AttachmentInformation {
   

@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.cathoQuantum.cardMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofCardComponent extends Instantiable0[default] {
+trait TypeofCardComponent
+  extends StObject
+     with Instantiable0[default] {
   
   var Content: typings.cathoQuantum.contentMod.Content = js.native
   

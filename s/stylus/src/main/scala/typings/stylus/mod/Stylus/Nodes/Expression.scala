@@ -3,22 +3,22 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Expression extends Node {
+trait Expression
+  extends StObject
+     with Node {
   
-  var isEmpty: scala.Boolean = js.native
+  var isEmpty: scala.Boolean
   
-  var isList: scala.Boolean = js.native
+  var isList: scala.Boolean
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
   /**
     * Push the given node.
     */
-  def push(node: Node): scala.Unit = js.native
+  def push(node: Node): scala.Unit
 }
 object Expression {
   

@@ -6,22 +6,24 @@ import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("duplexer3", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, writableStream: WritableStream, readableStream: ReadableStream): Duplex = js.native
-  @JSImport("duplexer3", JSImport.Namespace)
-  @js.native
-  def apply(writableStream: WritableStream, readableStream: ReadableStream): Duplex = js.native
+  @scala.inline
+  def apply(options: Options, writableStream: WritableStream, readableStream: ReadableStream): Duplex = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  @scala.inline
+  def apply(writableStream: WritableStream, readableStream: ReadableStream): Duplex = (^.asInstanceOf[js.Dynamic].apply(writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
+  @JSImport("duplexer3", JSImport.Namespace)
   @js.native
-  trait Options extends DuplexOptions {
+  val ^ : js.Any = js.native
+  
+  trait Options
+    extends StObject
+       with DuplexOptions {
     
-    var bubbleErrors: js.UndefOr[Boolean] = js.native
+    var bubbleErrors: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

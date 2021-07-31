@@ -2,39 +2,37 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheQueryResultCacheOptionsMod {
   
-  @js.native
   trait QueryResultCacheOptions extends StObject {
     
     /**
       * Duration in milliseconds during which results will be returned from cache.
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * Cache identifier set by user.
       * Can be empty.
       */
-    var identifier: String = js.native
+    var identifier: String
     
     /**
       * Cached query.
       */
-    var query: String = js.native
+    var query: String
     
     /**
       * Query result that will be cached.
       */
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Time, when cache was created.
       */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
   }
   object QueryResultCacheOptions {
     

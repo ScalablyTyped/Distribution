@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerManagedEncryption extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CustomerManagedEncryption extends StObject {
     * in the same location as the replica location. For secrets using the Automatic replication policy type, Cloud KMS CryptoKeys must reside in `global`. The expected format is
     * `projects/∗/locations/∗/keyRings/∗/cryptoKeys/ *`.
     */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
 }
 object CustomerManagedEncryption {
   

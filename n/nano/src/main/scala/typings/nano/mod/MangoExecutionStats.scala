@@ -2,28 +2,26 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/find.html#execution-statistics
-@js.native
 trait MangoExecutionStats extends StObject {
   
   // Total execution time in milliseconds as measured by the database.
-  var execution_time_ms: Double = js.native
+  var execution_time_ms: Double
   
   // Number of results returned from the query.
-  var results_returned: Double = js.native
+  var results_returned: Double
   
   // Number of documents fetched from the database / index, equivalent to using include_docs = true in a view.
-  var total_docs_examined: Double = js.native
+  var total_docs_examined: Double
   
   // Number of index keys examined. Currently always 0.
-  var total_keys_examined: Double = js.native
+  var total_keys_examined: Double
   
   // Number of documents fetched from the database using an out - of - band document fetch.
   // This is only non - zero when read quorum > 1 is specified in the query parameters.
-  var total_quorum_docs_examined: Double = js.native
+  var total_quorum_docs_examined: Double
 }
 object MangoExecutionStats {
   

@@ -10,51 +10,49 @@ import typings.cryptojs.CryptoJS.lib.StreamCipher
 import typings.cryptojs.CryptoJS.lib.WordArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algo {
   
   type AES = IBlockCipherImpl
   
-  @js.native
   trait AlgoStatic extends StObject {
     
-    var AES: typings.cryptojs.CryptoJS.algo.AES = js.native
+    var AES: typings.cryptojs.CryptoJS.algo.AES
     
-    var DES: typings.cryptojs.CryptoJS.algo.DES = js.native
+    var DES: typings.cryptojs.CryptoJS.algo.DES
     
-    var EvpKDF: typings.cryptojs.CryptoJS.algo.EvpKDF = js.native
+    var EvpKDF: typings.cryptojs.CryptoJS.algo.EvpKDF
     
-    var HMAC: typings.cryptojs.CryptoJS.algo.HMAC = js.native
+    var HMAC: typings.cryptojs.CryptoJS.algo.HMAC
     
-    var MD5: typings.cryptojs.CryptoJS.algo.MD5 = js.native
+    var MD5: typings.cryptojs.CryptoJS.algo.MD5
     
-    var PBKDF2: typings.cryptojs.CryptoJS.algo.PBKDF2 = js.native
+    var PBKDF2: typings.cryptojs.CryptoJS.algo.PBKDF2
     
-    var RC4: typings.cryptojs.CryptoJS.algo.RC4 = js.native
+    var RC4: typings.cryptojs.CryptoJS.algo.RC4
     
-    var RC4Drop: typings.cryptojs.CryptoJS.algo.RC4Drop = js.native
+    var RC4Drop: typings.cryptojs.CryptoJS.algo.RC4Drop
     
-    var RIPEMD160: typings.cryptojs.CryptoJS.algo.RIPEMD160 = js.native
+    var RIPEMD160: typings.cryptojs.CryptoJS.algo.RIPEMD160
     
-    var Rabbit: typings.cryptojs.CryptoJS.algo.Rabbit = js.native
+    var Rabbit: typings.cryptojs.CryptoJS.algo.Rabbit
     
-    var RabbitLegacy: typings.cryptojs.CryptoJS.algo.RabbitLegacy = js.native
+    var RabbitLegacy: typings.cryptojs.CryptoJS.algo.RabbitLegacy
     
-    var SHA1: typings.cryptojs.CryptoJS.algo.SHA1 = js.native
+    var SHA1: typings.cryptojs.CryptoJS.algo.SHA1
     
-    var SHA224: typings.cryptojs.CryptoJS.algo.SHA224 = js.native
+    var SHA224: typings.cryptojs.CryptoJS.algo.SHA224
     
-    var SHA256: typings.cryptojs.CryptoJS.algo.SHA256 = js.native
+    var SHA256: typings.cryptojs.CryptoJS.algo.SHA256
     
-    var SHA3: typings.cryptojs.CryptoJS.algo.SHA3 = js.native
+    var SHA3: typings.cryptojs.CryptoJS.algo.SHA3
     
-    var SHA384: typings.cryptojs.CryptoJS.algo.SHA384 = js.native
+    var SHA384: typings.cryptojs.CryptoJS.algo.SHA384
     
-    var SHA512: typings.cryptojs.CryptoJS.algo.SHA512 = js.native
+    var SHA512: typings.cryptojs.CryptoJS.algo.SHA512
     
-    var TripleDES: typings.cryptojs.CryptoJS.algo.TripleDES = js.native
+    var TripleDES: typings.cryptojs.CryptoJS.algo.TripleDES
   }
   object AlgoStatic {
     
@@ -145,7 +143,9 @@ object algo {
   type DES = IBlockCipherImpl
   
   @js.native
-  trait EvpKDF extends Base {
+  trait EvpKDF
+    extends StObject
+       with Base {
     
     var cfg: IEvpKDFCfg = js.native
     
@@ -162,11 +162,13 @@ object algo {
   }
   
   @js.native
-  trait HMAC extends Base {
+  trait HMAC
+    extends StObject
+       with Base {
     
     def create(): HMAC = js.native
-    def create(hasher: js.UndefOr[scala.Nothing], key: String): HMAC = js.native
-    def create(hasher: js.UndefOr[scala.Nothing], key: WordArray): HMAC = js.native
+    def create(hasher: Unit, key: String): HMAC = js.native
+    def create(hasher: Unit, key: WordArray): HMAC = js.native
     def create(hasher: Hasher): HMAC = js.native
     def create(hasher: Hasher, key: String): HMAC = js.native
     def create(hasher: Hasher, key: WordArray): HMAC = js.native
@@ -175,8 +177,8 @@ object algo {
     def finalize(messageUpdate: WordArray): WordArray = js.native
     
     def init(): Unit = js.native
-    def init(hasher: js.UndefOr[scala.Nothing], key: String): Unit = js.native
-    def init(hasher: js.UndefOr[scala.Nothing], key: WordArray): Unit = js.native
+    def init(hasher: Unit, key: String): Unit = js.native
+    def init(hasher: Unit, key: WordArray): Unit = js.native
     def init(hasher: Hasher): Unit = js.native
     def init(hasher: Hasher, key: String): Unit = js.native
     def init(hasher: Hasher, key: WordArray): Unit = js.native
@@ -186,7 +188,9 @@ object algo {
   }
   
   @js.native
-  trait IBlockCipherImpl extends IStreamCipher[IBlockCipherCfg] {
+  trait IBlockCipherImpl
+    extends StObject
+       with IStreamCipher[IBlockCipherCfg] {
     
     def createDecryptor(key: WordArray, cfg: CipherParamsData): IBlockCipherImpl = js.native
     
@@ -197,16 +201,15 @@ object algo {
     def encryptBlock(M: js.Array[Double], offset: Double): Unit = js.native
   }
   
-  @js.native
   trait IEvpKDFCfg extends StObject {
     
     //default 128/32
-    var hasher: js.UndefOr[Hasher] = js.native
+    var hasher: js.UndefOr[Hasher] = js.undefined
     
     //default MD5, or SHA1 with PBKDF2
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var keySize: js.UndefOr[Double] = js.native
+    var keySize: js.UndefOr[Double] = js.undefined
   }
   object IEvpKDFCfg {
     
@@ -252,10 +255,9 @@ object algo {
     def apply(password: WordArray, salt: WordArray, cfg: IEvpKDFCfg): WordArray = js.native
   }
   
-  @js.native
   trait ISHA3Cfg extends StObject {
     
-    var outputLength: js.UndefOr[Double] = js.native
+    var outputLength: js.UndefOr[Double] = js.undefined
   }
   object ISHA3Cfg {
     

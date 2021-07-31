@@ -2,15 +2,13 @@ package typings.orchestrator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dep extends StObject {
     
-    var dep: js.Array[String] = js.native
+    var dep: js.Array[String]
   }
   object Dep {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MissingTasks extends StObject {
     
-    var missingTasks: js.Array[String] = js.native
+    var missingTasks: js.Array[String]
     
-    var recursiveDependencies: js.Array[String] = js.native
+    var recursiveDependencies: js.Array[String]
     
-    var sequence: js.Array[String] = js.native
+    var sequence: js.Array[String]
   }
   object MissingTasks {
     

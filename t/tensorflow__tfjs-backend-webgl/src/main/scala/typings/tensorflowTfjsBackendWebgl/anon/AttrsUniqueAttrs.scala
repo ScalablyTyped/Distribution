@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.UniqueAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.UniqueInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsUniqueAttrs extends StObject {
   
-  var attrs: UniqueAttrs = js.native
+  var attrs: UniqueAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: UniqueInputs = js.native
+  var inputs: UniqueInputs
 }
 object AttrsUniqueAttrs {
   

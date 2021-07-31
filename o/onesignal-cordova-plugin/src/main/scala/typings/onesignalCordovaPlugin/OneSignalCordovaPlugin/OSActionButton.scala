@@ -2,17 +2,15 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSActionButton extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var id: String = js.native
+  var id: String
   
-  var text: String = js.native
+  var text: String
 }
 object OSActionButton {
   

@@ -2,51 +2,49 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents fields that are compatible to be selected for a report of type
   * &quot;REACH&quot;.
   */
-@js.native
 trait SchemaReachReportCompatibleFields extends StObject {
   
   /**
     * Dimensions which are compatible to be selected in the
     * &quot;dimensionFilters&quot; section of the report.
     */
-  var dimensionFilters: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Dimensions which are compatible to be selected in the
     * &quot;dimensions&quot; section of the report.
     */
-  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * The kind of resource this is, in this case
     * dfareporting#reachReportCompatibleFields.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metrics which are compatible to be selected in the
     * &quot;metricNames&quot; section of the report.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * Metrics which are compatible to be selected as activity metrics to pivot
     * on in the &quot;activities&quot; section of the report.
     */
-  var pivotedActivityMetrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var pivotedActivityMetrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * Metrics which are compatible to be selected in the
     * &quot;reachByFrequencyMetricNames&quot; section of the report.
     */
-  var reachByFrequencyMetrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var reachByFrequencyMetrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
 }
 object SchemaReachReportCompatibleFields {
   

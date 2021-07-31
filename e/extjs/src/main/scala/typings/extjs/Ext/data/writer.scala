@@ -3,31 +3,30 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writer {
   
-  @js.native
   trait IJson
-    extends typings.extjs.Ext.data.writer.IWriter {
+    extends StObject
+       with typings.extjs.Ext.data.writer.IWriter {
     
     /** [Config Option] (Boolean) */
-    var allowSingle: js.UndefOr[Boolean] = js.native
+    var allowSingle: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var encode: js.UndefOr[Boolean] = js.native
+    var encode: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var expandData: js.UndefOr[Boolean] = js.native
+    var expandData: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] The Reader classes support dot delimited data mappings for extracting nested raw data into fields so the writer must
       * @param data Object
       */
-    var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object IJson {
     
@@ -72,11 +71,12 @@ object writer {
     }
   }
   
-  @js.native
-  trait IWriter extends IBase {
+  trait IWriter
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String) */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /** [Method] Formats the data for each record before sending it to the server
       * @param record Ext.data.Model The record that we are writing to the server.
@@ -84,23 +84,23 @@ object writer {
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
     var getRecordData: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], _]
-      ] = js.native
+        js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], js.Any]
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var nameProperty: js.UndefOr[String] = js.native
+    var nameProperty: js.UndefOr[String] = js.undefined
     
     /** [Method] Prepares a Proxy s Ext data Request object
       * @param request Ext.data.Request The request object
       * @returns Ext.data.Request The modified request object
       */
-    var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.native
+    var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var writeAllFields: js.UndefOr[Boolean] = js.native
+    var writeAllFields: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var writeRecordId: js.UndefOr[Boolean] = js.native
+    var writeRecordId: js.UndefOr[Boolean] = js.undefined
   }
   object IWriter {
     
@@ -120,7 +120,7 @@ object writer {
       def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
       @scala.inline
-      def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
+      def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
@@ -151,21 +151,21 @@ object writer {
     }
   }
   
-  @js.native
   trait IXml
-    extends typings.extjs.Ext.data.writer.IWriter {
+    extends StObject
+       with typings.extjs.Ext.data.writer.IWriter {
     
     /** [Config Option] (String) */
-    var defaultDocumentRoot: js.UndefOr[String] = js.native
+    var defaultDocumentRoot: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var documentRoot: js.UndefOr[String] = js.native
+    var documentRoot: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var record: js.UndefOr[String] = js.native
+    var record: js.UndefOr[String] = js.undefined
   }
   object IXml {
     

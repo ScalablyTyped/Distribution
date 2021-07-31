@@ -3,95 +3,93 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Filledseats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsUpdateResponseData extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var billing_email: String = js.native
+  var billing_email: String
   
-  var blog: String = js.native
+  var blog: String
   
-  var collaborators: Double = js.native
+  var collaborators: Double
   
-  var company: String = js.native
+  var company: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var default_repository_permission: String = js.native
+  var default_repository_permission: String
   
-  var description: String = js.native
+  var description: String
   
-  var disk_usage: Double = js.native
+  var disk_usage: Double
   
-  var email: String = js.native
+  var email: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var followers: Double = js.native
+  var followers: Double
   
-  var following: Double = js.native
+  var following: Double
   
-  var has_organization_projects: Boolean = js.native
+  var has_organization_projects: Boolean
   
-  var has_repository_projects: Boolean = js.native
+  var has_repository_projects: Boolean
   
-  var hooks_url: String = js.native
+  var hooks_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var issues_url: String = js.native
+  var issues_url: String
   
-  var location: String = js.native
+  var location: String
   
-  var login: String = js.native
+  var login: String
   
-  var members_allowed_repository_creation_type: String = js.native
+  var members_allowed_repository_creation_type: String
   
-  var members_can_create_internal_repositories: Boolean = js.native
+  var members_can_create_internal_repositories: Boolean
   
-  var members_can_create_private_repositories: Boolean = js.native
+  var members_can_create_private_repositories: Boolean
   
-  var members_can_create_public_repositories: Boolean = js.native
+  var members_can_create_public_repositories: Boolean
   
-  var members_can_create_repositories: Boolean = js.native
+  var members_can_create_repositories: Boolean
   
-  var members_url: String = js.native
+  var members_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var owned_private_repos: Double = js.native
+  var owned_private_repos: Double
   
-  var plan: Filledseats = js.native
+  var plan: Filledseats
   
-  var private_gists: Double = js.native
+  var private_gists: Double
   
-  var public_gists: Double = js.native
+  var public_gists: Double
   
-  var public_members_url: String = js.native
+  var public_members_url: String
   
-  var public_repos: Double = js.native
+  var public_repos: Double
   
-  var repos_url: String = js.native
+  var repos_url: String
   
-  var total_private_repos: Double = js.native
+  var total_private_repos: Double
   
-  var twitter_username: String = js.native
+  var twitter_username: String
   
-  var two_factor_requirement_enabled: Boolean = js.native
+  var two_factor_requirement_enabled: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object OrgsUpdateResponseData {
   

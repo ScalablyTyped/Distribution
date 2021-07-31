@@ -2,15 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageAriaLegacy extends StObject {
   
-  var sSortAscending: js.UndefOr[String] = js.native
+  var sSortAscending: js.UndefOr[String] = js.undefined
   
-  var sSortDescending: js.UndefOr[String] = js.native
+  var sSortDescending: js.UndefOr[String] = js.undefined
 }
 object LanguageAriaLegacy {
   

@@ -3,7 +3,6 @@ package typings.pulumiPulumi
 import typings.pulumiPulumi.archiveMod.AssetMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetMod {
@@ -15,13 +14,16 @@ object assetMod {
   /* static members */
   object Archive {
     
+    @JSImport("@pulumi/pulumi/asset", "Archive")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of an Archive.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/pulumi/asset", "Archive.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/asset", "Asset")
@@ -31,13 +33,16 @@ object assetMod {
   /* static members */
   object Asset {
     
+    @JSImport("@pulumi/pulumi/asset", "Asset")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of an Asset.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/pulumi/asset", "Asset.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/asset", "AssetArchive")

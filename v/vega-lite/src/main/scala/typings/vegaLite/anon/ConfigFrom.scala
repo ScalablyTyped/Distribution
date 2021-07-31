@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigFrom extends StObject {
   
-  var configFrom: js.UndefOr[String] = js.native
+  var configFrom: js.UndefOr[String] = js.undefined
   
-  var configValue: js.UndefOr[js.Any] = js.native
+  var configValue: js.UndefOr[js.Any] = js.undefined
 }
 object ConfigFrom {
   

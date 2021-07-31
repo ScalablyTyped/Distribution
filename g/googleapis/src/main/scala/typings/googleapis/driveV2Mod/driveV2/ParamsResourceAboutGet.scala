@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAboutGet extends StandardParameters {
+trait ParamsResourceAboutGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether to count changes outside the My Drive hierarchy. When set to
@@ -23,18 +23,18 @@ trait ParamsResourceAboutGet extends StandardParameters {
     * shared files which have not been added to My Drive will be omitted from
     * the maxChangeIdCount.
     */
-  var includeSubscribed: js.UndefOr[Boolean] = js.native
+  var includeSubscribed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of remaining change IDs to count
     */
-  var maxChangeIdCount: js.UndefOr[String] = js.native
+  var maxChangeIdCount: js.UndefOr[String] = js.undefined
   
   /**
     * Change ID to start counting from when calculating number of remaining
     * change IDs
     */
-  var startChangeId: js.UndefOr[String] = js.native
+  var startChangeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAboutGet {
   

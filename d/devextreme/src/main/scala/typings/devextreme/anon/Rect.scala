@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rect extends StObject {
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var rect: js.UndefOr[js.Array[Double]] = js.native
+  var rect: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var sum: js.UndefOr[Double] = js.native
+  var sum: js.UndefOr[Double] = js.undefined
 }
 object Rect {
   
@@ -26,7 +24,7 @@ object Rect {
   implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

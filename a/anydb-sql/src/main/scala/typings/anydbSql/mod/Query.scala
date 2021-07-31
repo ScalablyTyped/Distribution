@@ -2,12 +2,12 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query[T]
-  extends Executable[T]
+  extends StObject
+     with Executable[T]
      with Queryable[T] {
   
   def from(statement: String): Query[T] = js.native
@@ -24,5 +24,5 @@ trait Query[T]
   def order(criteria: OrderByValueNode*): Query[T] = js.native
   
   def update(o: js.Object): ModifyingQuery = js.native
-  def update(o: Dictionary[_]): ModifyingQuery = js.native
+  def update(o: Dictionary[js.Any]): ModifyingQuery = js.native
 }

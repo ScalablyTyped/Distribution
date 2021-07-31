@@ -10,84 +10,82 @@ import typings.braintree.anon.PreviousNetworkTransactionId
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionRequest extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var billing: js.UndefOr[CountryCodeNumeric] = js.native
+  var billing: js.UndefOr[CountryCodeNumeric] = js.undefined
   
-  var billingAddressId: js.UndefOr[String] = js.native
+  var billingAddressId: js.UndefOr[String] = js.undefined
   
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
-  var creditCard: js.UndefOr[Cvv] = js.native
+  var creditCard: js.UndefOr[Cvv] = js.undefined
   
-  var customFields: js.UndefOr[Record[String, _]] = js.native
+  var customFields: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var customer: js.UndefOr[Email] = js.native
+  var customer: js.UndefOr[Email] = js.undefined
   
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
-  var descriptor: js.UndefOr[Descriptor] = js.native
+  var descriptor: js.UndefOr[Descriptor] = js.undefined
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var deviceSessionId: js.UndefOr[String] = js.native
+  var deviceSessionId: js.UndefOr[String] = js.undefined
   
-  var discountAmount: js.UndefOr[String] = js.native
+  var discountAmount: js.UndefOr[String] = js.undefined
   
-  var externalVault: js.UndefOr[PreviousNetworkTransactionId] = js.native
+  var externalVault: js.UndefOr[PreviousNetworkTransactionId] = js.undefined
   
-  var lineItems: js.UndefOr[js.Array[TransactionLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[TransactionLineItem]] = js.undefined
   
-  var merchantAccountId: js.UndefOr[String] = js.native
+  var merchantAccountId: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[AddBillingAddressToPaymentMethod] = js.native
+  var options: js.UndefOr[AddBillingAddressToPaymentMethod] = js.undefined
   
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
-  var paymentMethodNonce: js.UndefOr[String] = js.native
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
   
-  var paymentMethodToken: js.UndefOr[String] = js.native
+  var paymentMethodToken: js.UndefOr[String] = js.undefined
   
-  var purchaseOrderNumber: js.UndefOr[String] = js.native
+  var purchaseOrderNumber: js.UndefOr[String] = js.undefined
   
-  var recurring: js.UndefOr[Boolean] = js.native
+  var recurring: js.UndefOr[Boolean] = js.undefined
   
   // Deprecated
-  var riskData: js.UndefOr[CustomerRiskData] = js.native
+  var riskData: js.UndefOr[CustomerRiskData] = js.undefined
   
-  var serviceFeeAmount: js.UndefOr[String] = js.native
+  var serviceFeeAmount: js.UndefOr[String] = js.undefined
   
-  var sharedBillingAddressId: js.UndefOr[String] = js.native
+  var sharedBillingAddressId: js.UndefOr[String] = js.undefined
   
-  var sharedCustomerId: js.UndefOr[String] = js.native
+  var sharedCustomerId: js.UndefOr[String] = js.undefined
   
-  var sharedPaymentMethodNonce: js.UndefOr[String] = js.native
+  var sharedPaymentMethodNonce: js.UndefOr[String] = js.undefined
   
-  var sharedPaymentMethodToken: js.UndefOr[String] = js.native
+  var sharedPaymentMethodToken: js.UndefOr[String] = js.undefined
   
-  var sharedShippingAddressId: js.UndefOr[String] = js.native
+  var sharedShippingAddressId: js.UndefOr[String] = js.undefined
   
-  var shipping: js.UndefOr[Company] = js.native
+  var shipping: js.UndefOr[Company] = js.undefined
   
-  var shippingAddressId: js.UndefOr[String] = js.native
+  var shippingAddressId: js.UndefOr[String] = js.undefined
   
-  var shippingAmount: js.UndefOr[String] = js.native
+  var shippingAmount: js.UndefOr[String] = js.undefined
   
-  var shipsFromPostalCode: js.UndefOr[String] = js.native
+  var shipsFromPostalCode: js.UndefOr[String] = js.undefined
   
-  var taxAmount: js.UndefOr[String] = js.native
+  var taxAmount: js.UndefOr[String] = js.undefined
   
-  var taxExempt: js.UndefOr[Boolean] = js.native
+  var taxExempt: js.UndefOr[Boolean] = js.undefined
   
-  var threeDSecurePassThru: js.UndefOr[Cavv] = js.native
+  var threeDSecurePassThru: js.UndefOr[Cavv] = js.undefined
   
-  var transactionSource: js.UndefOr[TransactionRequestSource] = js.native
+  var transactionSource: js.UndefOr[TransactionRequestSource] = js.undefined
 }
 object TransactionRequest {
   
@@ -128,7 +126,7 @@ object TransactionRequest {
     def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
     @scala.inline
-    def setCustomFields(value: Record[String, _]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    def setCustomFields(value: Record[String, js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)

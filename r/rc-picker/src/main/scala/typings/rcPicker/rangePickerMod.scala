@@ -90,7 +90,6 @@ import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangePickerMod {
@@ -106,10 +105,9 @@ object rangePickerMod {
   
   type RangeDateRender[DateType] = js.Function3[/* currentDate */ DateType, /* today */ DateType, /* info */ RangeInfo, ReactNode]
   
-  @js.native
   trait RangeInfo extends StObject {
     
-    var range: RangeType = js.native
+    var range: RangeType
   }
   object RangeInfo {
     
@@ -140,167 +138,168 @@ object rangePickerMod {
   
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> */
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerBaseProps<DateType>> */
-  @js.native
-  trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
+  trait RangePickerBaseProps[DateType]
+    extends StObject
+       with RangePickerProps[DateType] {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.native
+    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.native
+    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
     var disabledTime: js.UndefOr[
         js.Function2[/* date */ EventValue[DateType], /* type */ RangeType, DisabledTimes]
-      ] = js.native
+      ] = js.undefined
     
-    var dropdownAlign: js.UndefOr[AlignType] = js.native
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.native
+    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputReadOnly: js.UndefOr[Boolean] = js.native
+    var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.native
+    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     var onCalendarChange: js.UndefOr[
         js.Function3[
@@ -309,7 +308,7 @@ object rangePickerMod {
           /* info */ RangeInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[
@@ -317,72 +316,72 @@ object rangePickerMod {
           /* formatString */ js.Tuple2[String, String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var onPanelChange: js.UndefOr[
         js.Function2[/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.native
+    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: Exclude[PickerMode, date | time] = js.native
+    var picker: Exclude[PickerMode, date | time]
     
-    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.native
+    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
-    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var popupStyle: js.UndefOr[CSSProperties] = js.native
+    var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var ranges: js.UndefOr[
         Record[
           String, 
           (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suffixIcon: js.UndefOr[ReactNode] = js.native
+    var suffixIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superNextIcon: js.UndefOr[ReactNode] = js.native
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superPrevIcon: js.UndefOr[ReactNode] = js.native
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[RangeValue[DateType]] = js.native
+    var value: js.UndefOr[RangeValue[DateType]] = js.undefined
   }
   object RangePickerBaseProps {
     
@@ -393,7 +392,7 @@ object rangePickerMod {
     }
     
     @scala.inline
-    implicit class RangePickerBasePropsMutableBuilder[Self <: RangePickerBaseProps[_], DateType] (val x: Self with RangePickerBaseProps[DateType]) extends AnyVal {
+    implicit class RangePickerBasePropsMutableBuilder[Self <: RangePickerBaseProps[?], DateType] (val x: Self & RangePickerBaseProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
@@ -1059,167 +1058,168 @@ object rangePickerMod {
   
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> */
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerDateProps<DateType>> */
-  @js.native
-  trait RangePickerDateProps[DateType] extends RangePickerProps[DateType] {
+  trait RangePickerDateProps[DateType]
+    extends StObject
+       with RangePickerProps[DateType] {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.native
+    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.native
+    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
     var disabledTime: js.UndefOr[
         js.Function2[/* date */ EventValue[DateType], /* type */ RangeType, DisabledTimes]
-      ] = js.native
+      ] = js.undefined
     
-    var dropdownAlign: js.UndefOr[AlignType] = js.native
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.native
+    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputReadOnly: js.UndefOr[Boolean] = js.native
+    var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.native
+    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     var onCalendarChange: js.UndefOr[
         js.Function3[
@@ -1228,7 +1228,7 @@ object rangePickerMod {
           /* info */ RangeInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[
@@ -1236,76 +1236,76 @@ object rangePickerMod {
           /* formatString */ js.Tuple2[String, String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var onPanelChange: js.UndefOr[
         js.Function2[/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.native
+    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.native
+    var picker: js.UndefOr[date] = js.undefined
     
-    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.native
+    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
-    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var popupStyle: js.UndefOr[CSSProperties] = js.native
+    var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var ranges: js.UndefOr[
         Record[
           String, 
           (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showTime: js.UndefOr[Boolean | RangeShowTimeObject[DateType]] = js.native
+    var showTime: js.UndefOr[Boolean | RangeShowTimeObject[DateType]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suffixIcon: js.UndefOr[ReactNode] = js.native
+    var suffixIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superNextIcon: js.UndefOr[ReactNode] = js.native
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superPrevIcon: js.UndefOr[ReactNode] = js.native
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[RangeValue[DateType]] = js.native
+    var value: js.UndefOr[RangeValue[DateType]] = js.undefined
   }
   object RangePickerDateProps {
     
@@ -1316,7 +1316,7 @@ object rangePickerMod {
     }
     
     @scala.inline
-    implicit class RangePickerDatePropsMutableBuilder[Self <: RangePickerDateProps[_], DateType] (val x: Self with RangePickerDateProps[DateType]) extends AnyVal {
+    implicit class RangePickerDatePropsMutableBuilder[Self <: RangePickerDateProps[?], DateType] (val x: Self & RangePickerDateProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
@@ -2016,41 +2016,40 @@ object rangePickerMod {
     }
     
     @scala.inline
-    def RangePickerTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: time): typings.rcPicker.rangePickerMod.RangePickerTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+    def RangePickerTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.rangePickerMod.RangePickerTimeProps[DateType] = {
+      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
       __obj.asInstanceOf[typings.rcPicker.rangePickerMod.RangePickerTimeProps[DateType]]
     }
   }
   
-  @js.native
   trait RangePickerSharedProps[DateType] extends StObject {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.native
+    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
     
-    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.native
+    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
     var disabledTime: js.UndefOr[
         js.Function2[/* date */ EventValue[DateType], /* type */ RangeType, DisabledTimes]
-      ] = js.native
+      ] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.native
+    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     var onCalendarChange: js.UndefOr[
         js.Function3[
@@ -2059,7 +2058,7 @@ object rangePickerMod {
           /* info */ RangeInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[
@@ -2067,30 +2066,30 @@ object rangePickerMod {
           /* formatString */ js.Tuple2[String, String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.undefined
     
     var onPanelChange: js.UndefOr[
         js.Function2[/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.native
+    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
     var ranges: js.UndefOr[
         Record[
           String, 
           (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[RangeValue[DateType]] = js.native
+    var value: js.UndefOr[RangeValue[DateType]] = js.undefined
   }
   object RangePickerSharedProps {
     
@@ -2101,7 +2100,7 @@ object rangePickerMod {
     }
     
     @scala.inline
-    implicit class RangePickerSharedPropsMutableBuilder[Self <: RangePickerSharedProps[_], DateType] (val x: Self with RangePickerSharedProps[DateType]) extends AnyVal {
+    implicit class RangePickerSharedPropsMutableBuilder[Self <: RangePickerSharedProps[?], DateType] (val x: Self & RangePickerSharedProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
@@ -2252,181 +2251,182 @@ object rangePickerMod {
   
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> */
   /* Inlined parent rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerTimeProps<DateType>> */
-  @js.native
-  trait RangePickerTimeProps[DateType] extends RangePickerProps[DateType] {
+  trait RangePickerTimeProps[DateType]
+    extends StObject
+       with RangePickerProps[DateType] {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.native
+    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.native
+    var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultOpenValue: js.UndefOr[DateType] = js.native
+    var defaultOpenValue: js.UndefOr[DateType] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
     var disabledTime: js.UndefOr[
         js.Function2[/* date */ EventValue[DateType], /* type */ RangeType, DisabledTimes]
-      ] = js.native
+      ] = js.undefined
     
-    var dropdownAlign: js.UndefOr[AlignType] = js.native
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.native
+    var format: js.UndefOr[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputReadOnly: js.UndefOr[Boolean] = js.native
+    var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.native
+    var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     var onCalendarChange: js.UndefOr[
         js.Function3[
@@ -2435,7 +2435,7 @@ object rangePickerMod {
           /* info */ RangeInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[
@@ -2443,97 +2443,97 @@ object rangePickerMod {
           /* formatString */ js.Tuple2[String, String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var onPanelChange: js.UndefOr[
         js.Function2[/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var order: js.UndefOr[Boolean] = js.native
+    var order: js.UndefOr[Boolean] = js.undefined
     
-    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.native
+    var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: time = js.native
+    var picker: time
     
-    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.native
+    var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
-    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var popupStyle: js.UndefOr[CSSProperties] = js.native
+    var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var ranges: js.UndefOr[
         Record[
           String, 
           (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suffixIcon: js.UndefOr[ReactNode] = js.native
+    var suffixIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superNextIcon: js.UndefOr[ReactNode] = js.native
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superPrevIcon: js.UndefOr[ReactNode] = js.native
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[RangeValue[DateType]] = js.native
+    var value: js.UndefOr[RangeValue[DateType]] = js.undefined
   }
   object RangePickerTimeProps {
     
     @scala.inline
-    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: time): RangePickerTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): RangePickerTimeProps[DateType] = {
+      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
       __obj.asInstanceOf[RangePickerTimeProps[DateType]]
     }
     
     @scala.inline
-    implicit class RangePickerTimePropsMutableBuilder[Self <: RangePickerTimeProps[_], DateType] (val x: Self with RangePickerTimeProps[DateType]) extends AnyVal {
+    implicit class RangePickerTimePropsMutableBuilder[Self <: RangePickerTimeProps[?], DateType] (val x: Self & RangePickerTimeProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
@@ -3282,36 +3282,35 @@ object rangePickerMod {
   }
   
   /* Inlined std.Omit<rc-picker.rc-picker/es/panels/TimePanel.SharedTimeProps<DateType>, 'defaultValue'> & {  defaultValue :std.Array<DateType> | undefined} */
-  @js.native
   trait RangeShowTimeObject[DateType] extends StObject {
     
-    var defaultValue: js.UndefOr[js.Array[DateType]] = js.native
+    var defaultValue: js.UndefOr[js.Array[DateType]] = js.undefined
     
-    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
   }
   object RangeShowTimeObject {
     
@@ -3322,7 +3321,7 @@ object rangePickerMod {
     }
     
     @scala.inline
-    implicit class RangeShowTimeObjectMutableBuilder[Self <: RangeShowTimeObject[_], DateType] (val x: Self with RangeShowTimeObject[DateType]) extends AnyVal {
+    implicit class RangeShowTimeObjectMutableBuilder[Self <: RangeShowTimeObject[?], DateType] (val x: Self & RangeShowTimeObject[DateType]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: js.Array[DateType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])

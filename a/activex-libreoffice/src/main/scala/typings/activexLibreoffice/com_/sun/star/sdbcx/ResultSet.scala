@@ -21,13 +21,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the SDBC {@link ResultSet} by the possibility of bookmark positioning, canceling the positioning, and updating of rows. */
-@js.native
 trait ResultSet
-  extends typings.activexLibreoffice.com_.sun.star.sdbc.ResultSet
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbc.ResultSet
      with XCancellable
      with XRowLocate
      with XDeleteRows {
@@ -36,10 +35,10 @@ trait ResultSet
     * returns whether the result set supports updating of newly inserted rows. This may not work, as the result set may contain automatic generated data
     * which is used as key information.
     */
-  var CanUpdateInsertedRows: Boolean = js.native
+  var CanUpdateInsertedRows: Boolean
   
   /** returns if the result set supports bookmark navigation. */
-  var IsBookmarkable: Boolean = js.native
+  var IsBookmarkable: Boolean
 }
 object ResultSet {
   
@@ -71,7 +70,7 @@ object ResultSet {
     close: () => Unit,
     compareBookmarks: (js.Any, js.Any) => Double,
     deleteRow: () => Unit,
-    deleteRows: SeqEquiv[_] => SafeArray[Double],
+    deleteRows: SeqEquiv[js.Any] => SafeArray[Double],
     dispose: () => Unit,
     findColumn: String => Double,
     first: () => Boolean,

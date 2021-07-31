@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesProtection extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CellPropertiesProtection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var formulaHidden: js.UndefOr[Boolean] = js.native
+  var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CellPropertiesProtection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
 }
 object CellPropertiesProtection {
   

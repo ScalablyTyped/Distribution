@@ -6,41 +6,41 @@ import typings.reactNativeChartsWrapper.anon.Digits
 import typings.reactNativeChartsWrapper.anon.DurationX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartBase extends ViewProps {
+trait ChartBase
+  extends StObject
+     with ViewProps {
   
-  var animation: js.UndefOr[DurationX] = js.native
+  var animation: js.UndefOr[DurationX] = js.undefined
   
-  var chartBackgroundColor: js.UndefOr[Color] = js.native
+  var chartBackgroundColor: js.UndefOr[Color] = js.undefined
   
-  var chartDescription: js.UndefOr[ChartDescription] = js.native
+  var chartDescription: js.UndefOr[ChartDescription] = js.undefined
   
-  var dragDecelerationEnabled: js.UndefOr[Boolean] = js.native
+  var dragDecelerationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var dragDecelerationFrictionCoef: js.UndefOr[Double] = js.native
+  var dragDecelerationFrictionCoef: js.UndefOr[Double] = js.undefined
   
-  var highlightPerTapEnabled: js.UndefOr[Boolean] = js.native
+  var highlightPerTapEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var highlights: js.UndefOr[js.Array[DataIndex]] = js.native
+  var highlights: js.UndefOr[js.Array[DataIndex]] = js.undefined
   
-  var legend: js.UndefOr[ChartLegend] = js.native
+  var legend: js.UndefOr[ChartLegend] = js.undefined
   
-  var logEnabled: js.UndefOr[Boolean] = js.native
+  var logEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var marker: js.UndefOr[Digits] = js.native
+  var marker: js.UndefOr[Digits] = js.undefined
   
-  var noDataText: js.UndefOr[String] = js.native
+  var noDataText: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* event */ ChartChangeEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ ChartChangeEvent, Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* event */ ChartSelectEvent, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* event */ ChartSelectEvent, Unit]] = js.undefined
   
-  var touchEnabled: js.UndefOr[Boolean] = js.native
+  var touchEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var xAxis: js.UndefOr[typings.reactNativeChartsWrapper.mod.xAxis] = js.native
+  var xAxis: js.UndefOr[typings.reactNativeChartsWrapper.mod.xAxis] = js.undefined
 }
 object ChartBase {
   

@@ -3,14 +3,15 @@ package typings.cssstyle
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cssstyle", "CSSStyleDeclaration")
   @js.native
-  class CSSStyleDeclaration () extends /* index */ NumberDictionary[String] {
+  class CSSStyleDeclaration ()
+    extends StObject
+       with /* index */ NumberDictionary[String] {
     def this(onChangeCallback: js.Function1[/* text */ String, Unit]) = this()
     
     // https://drafts.csswg.org/cssom/#ref-for-cssstyledeclaration⑥

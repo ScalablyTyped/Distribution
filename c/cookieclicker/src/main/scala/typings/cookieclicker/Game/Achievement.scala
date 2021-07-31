@@ -3,58 +3,56 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerStrings.achievement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Achievement extends StObject {
   
   /**
     * The description of the upgrade without auto-adjusted text
     */
-  var baseDesc: String = js.native
+  var baseDesc: String
   
   /**
     * Called when the achievement crate is clicked, calls `clickFunction`
     */
-  def click(): Unit = js.native
+  def click(): Unit
   
   /**
     * Called when the achievement crate is clicked
     */
-  var clickFunction: js.UndefOr[js.Function0[Unit]] = js.native
+  var clickFunction: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The description of the upgrade with auto-adjusted text
     */
-  var desc: String = js.native
+  var desc: String
   
   /** Unused @deprecated */
-  var disabled: PseudoBoolean = js.native
+  var disabled: PseudoBoolean
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The place of the achievement in the achievement list
     */
-  var order: Double = js.native
+  var order: Double
   
-  var pool: AchievementPool = js.native
+  var pool: AchievementPool
   
   /**
     * Toggles the achievement state
     */
-  def toggle(): Unit = js.native
+  def toggle(): Unit
   
-  var `type`: achievement = js.native
+  var `type`: achievement
   
-  var vanilla: PseudoBoolean = js.native
+  var vanilla: PseudoBoolean
   
-  var won: PseudoBoolean = js.native
+  var won: PseudoBoolean
 }
 object Achievement {
   
@@ -70,12 +68,11 @@ object Achievement {
     order: Double,
     pool: AchievementPool,
     toggle: () => Unit,
-    `type`: achievement,
     vanilla: PseudoBoolean,
     won: PseudoBoolean
   ): Achievement = {
     val __obj = js.Dynamic.literal(baseDesc = baseDesc.asInstanceOf[js.Any], click = js.Any.fromFunction0(click), desc = desc.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle), vanilla = vanilla.asInstanceOf[js.Any], won = won.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("achievement")
     __obj.asInstanceOf[Achievement]
   }
   

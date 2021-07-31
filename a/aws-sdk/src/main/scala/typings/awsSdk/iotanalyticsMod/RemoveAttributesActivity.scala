@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAttributesActivity extends StObject {
   
   /**
     * A list of 1-50 attributes to remove from the message.
     */
-  var attributes: AttributeNames = js.native
+  var attributes: AttributeNames
   
   /**
     * The name of the removeAttributes activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
 }
 object RemoveAttributesActivity {
   

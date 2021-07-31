@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceContentRequest extends StObject {
   
   /**
     * Frame id to get resource for.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * URL of the resource to get content for.
     */
-  var url: String = js.native
+  var url: String
 }
 object GetResourceContentRequest {
   

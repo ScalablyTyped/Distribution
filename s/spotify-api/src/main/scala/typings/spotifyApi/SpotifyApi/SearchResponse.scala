@@ -2,7 +2,6 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,16 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.AlbumSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.TrackSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.PlaylistSearchResponse> */
-@js.native
 trait SearchResponse extends StObject {
   
-  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.native
+  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.undefined
   
-  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.native
+  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.undefined
   
-  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.native
+  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.undefined
   
-  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.native
+  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.undefined
 }
 object SearchResponse {
   

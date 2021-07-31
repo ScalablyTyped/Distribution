@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestOrderLineItem extends StObject {
   
   /** Required. Product data from the time of the order placement. */
-  var product: js.UndefOr[TestOrderLineItemProduct] = js.native
+  var product: js.UndefOr[TestOrderLineItemProduct] = js.undefined
   
   /** Required. Number of items ordered. */
-  var quantityOrdered: js.UndefOr[Double] = js.native
+  var quantityOrdered: js.UndefOr[Double] = js.undefined
   
   /** Required. Details of the return policy for the line item. */
-  var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.native
+  var returnInfo: js.UndefOr[OrderLineItemReturnInfo] = js.undefined
   
   /** Required. Details of the requested shipping for the line item. */
-  var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.native
+  var shippingDetails: js.UndefOr[OrderLineItemShippingDetails] = js.undefined
 }
 object TestOrderLineItem {
   

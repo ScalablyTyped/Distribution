@@ -3,7 +3,6 @@ package typings.svgMapsUsa
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,14 +11,13 @@ object mod extends Shortcut {
   @js.native
   val default: Map = js.native
   
-  @js.native
   trait Location extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Location {
     
@@ -46,14 +44,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var locations: js.Array[Location] = js.native
+    var locations: js.Array[Location]
     
-    var viewBox: String = js.native
+    var viewBox: String
   }
   object Map {
     

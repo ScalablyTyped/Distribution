@@ -2,13 +2,11 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEngineDefaultParametersResult extends StObject {
   
-  var EngineDefaults: js.UndefOr[typings.awsSdk.elasticacheMod.EngineDefaults] = js.native
+  var EngineDefaults: js.UndefOr[typings.awsSdk.elasticacheMod.EngineDefaults] = js.undefined
 }
 object DescribeEngineDefaultParametersResult {
   

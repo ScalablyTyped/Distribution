@@ -2,17 +2,17 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerSymbol extends Symbol {
+trait MarkerSymbol
+  extends StObject
+     with Symbol {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var xoffset: js.UndefOr[Double] = js.native
+  var xoffset: js.UndefOr[Double] = js.undefined
   
-  var yoffset: js.UndefOr[Double] = js.native
+  var yoffset: js.UndefOr[Double] = js.undefined
 }
 object MarkerSymbol {
   

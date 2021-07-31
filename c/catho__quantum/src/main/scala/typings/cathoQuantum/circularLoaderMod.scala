@@ -11,7 +11,6 @@ import typings.cathoQuantum.cathoQuantumStrings.xxxlarge
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circularLoaderMod {
@@ -23,14 +22,13 @@ object circularLoaderMod {
   
   type CircularLoader = Component[CircularLoaderProps, js.Object, js.Any]
   
-  @js.native
   trait CircularLoaderProps extends StObject {
     
-    var size: js.UndefOr[medium | large | xlarge | xxlarge | xxxlarge] = js.native
+    var size: js.UndefOr[medium | large | xlarge | xxlarge | xxxlarge] = js.undefined
     
-    var skin: js.UndefOr[primary | secondary] = js.native
+    var skin: js.UndefOr[primary | secondary] = js.undefined
     
-    var theme: js.UndefOr[Gutter] = js.native
+    var theme: js.UndefOr[Gutter] = js.undefined
   }
   object CircularLoaderProps {
     

@@ -2,23 +2,21 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserStream extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var crossPod: Boolean = js.native
+  var crossPod: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var roomAttributes: js.UndefOr[RoomAttributes] = js.native
+  var roomAttributes: js.UndefOr[RoomAttributes] = js.undefined
   
-  var streamAttributes: js.UndefOr[StreamAttributes] = js.native
+  var streamAttributes: js.UndefOr[StreamAttributes] = js.undefined
   
-  var streamType: StreamType = js.native
+  var streamType: StreamType
 }
 object UserStream {
   

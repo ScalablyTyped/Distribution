@@ -2,7 +2,6 @@ package typings.apolloServerCaching
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyValueCacheMod {
@@ -18,10 +17,9 @@ object keyValueCacheMod {
     def set(key: String, value: V, options: KeyValueCacheSetOptions): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait KeyValueCacheSetOptions extends StObject {
     
-    var ttl: js.UndefOr[Double | Null] = js.native
+    var ttl: js.UndefOr[Double | Null] = js.undefined
   }
   object KeyValueCacheSetOptions {
     
@@ -46,7 +44,9 @@ object keyValueCacheMod {
   }
   
   @js.native
-  trait TestableKeyValueCache[V] extends KeyValueCache[V] {
+  trait TestableKeyValueCache[V]
+    extends StObject
+       with KeyValueCache[V] {
     
     var close: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
     

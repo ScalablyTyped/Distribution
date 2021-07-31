@@ -5,15 +5,13 @@ import typings.reactTable.mod.IdType
 import typings.reactTable.mod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id[D /* <: js.Object */] extends StObject {
   
-  var Header: Renderer[HeaderProps[D]] = js.native
+  var Header: Renderer[HeaderProps[D]]
   
-  var id: IdType[D] = js.native
+  var id: IdType[D]
 }
 object Id {
   
@@ -24,7 +22,7 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdMutableBuilder[Self <: Id[_], D /* <: js.Object */] (val x: Self with Id[D]) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id[?], D /* <: js.Object */] (val x: Self & Id[D]) extends AnyVal {
     
     @scala.inline
     def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])

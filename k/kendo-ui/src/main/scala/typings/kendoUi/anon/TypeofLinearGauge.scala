@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.LinearGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofLinearGauge extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): LinearGauge = js.native
+  def extend(proto: js.Object): LinearGauge
   
   /* static member */
-  var fn: LinearGauge = js.native
+  var fn: LinearGauge
 }
 object TypeofLinearGauge {
   

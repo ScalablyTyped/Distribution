@@ -3,7 +3,6 @@ package typings.protractor
 import typings.protractor.configMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskSchedulerMod {
@@ -76,16 +75,15 @@ object taskSchedulerMod {
     var taskQueues: js.Array[TaskQueue] = js.native
   }
   
-  @js.native
   trait Task extends StObject {
     
-    var capabilities: js.Any = js.native
+    var capabilities: js.Any
     
-    var done: js.Any = js.native
+    var done: js.Any
     
-    var specs: js.Array[String] = js.native
+    var specs: js.Array[String]
     
-    var taskId: String = js.native
+    var taskId: String
   }
   object Task {
     

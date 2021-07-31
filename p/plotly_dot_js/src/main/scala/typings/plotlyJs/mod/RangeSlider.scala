@@ -2,23 +2,21 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSlider extends StObject {
   
-  var bgcolor: String = js.native
+  var bgcolor: String
   
-  var bordercolor: String = js.native
+  var bordercolor: String
   
-  var borderwidth: Double = js.native
+  var borderwidth: Double
   
-  var range: js.Tuple2[Datum, Datum] = js.native
+  var range: js.Tuple2[Datum, Datum]
   
-  var thickness: Double = js.native
+  var thickness: Double
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object RangeSlider {
   

@@ -4,28 +4,27 @@ import typings.jupyterlabNbformat.anon.PartialIBaseCellJupyterMe
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBaseCellMetadata
-  extends PartialJSONObject
+  extends StObject
+     with PartialJSONObject
      with ICellMetadata {
   
   /**
     * The Jupyter metadata namespace
     */
-  var jupyter: PartialIBaseCellJupyterMe = js.native
+  var jupyter: PartialIBaseCellJupyterMe
   
   /**
     * The cell's name. If present, must be a non-empty string.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The cell's tags. Tags must be unique, and must not contain commas.
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * Whether the cell is trusted.
@@ -36,7 +35,7 @@ trait IBaseCellMetadata
     *
     * See https://jupyter-notebook.readthedocs.io/en/latest/security.html.
     */
-  var trusted: Boolean = js.native
+  var trusted: Boolean
 }
 object IBaseCellMetadata {
   

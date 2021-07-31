@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Argument extends StObject {
   
   /** Optional. Defaults to FIXED_TYPE. */
-  var argumentKind: js.UndefOr[String] = js.native
+  var argumentKind: js.UndefOr[String] = js.undefined
   
   /** Required unless argument_kind = ANY_TYPE. */
-  var dataType: js.UndefOr[StandardSqlDataType] = js.native
+  var dataType: js.UndefOr[StandardSqlDataType] = js.undefined
   
   /** Optional. Specifies whether the argument is input or output. Can be set for procedures only. */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /** Optional. The name of this argument. Can be absent for function return argument. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Argument {
   

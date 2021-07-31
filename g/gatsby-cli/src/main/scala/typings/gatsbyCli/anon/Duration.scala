@@ -4,19 +4,17 @@ import typings.gatsbyCli.constantsMod.ActivityStatuses.Cancelled
 import typings.gatsbyCli.constantsMod.ActivityTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var id: String = js.native
+  var id: String
   
-  var status: Cancelled = js.native
+  var status: Cancelled
   
-  var `type`: ActivityTypes = js.native
+  var `type`: ActivityTypes
 }
 object Duration {
   

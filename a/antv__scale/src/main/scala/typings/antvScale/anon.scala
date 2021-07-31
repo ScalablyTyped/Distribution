@@ -2,19 +2,17 @@ package typings.antvScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var ticks: js.Array[Double] = js.native
+    var ticks: js.Array[Double]
   }
   object Max {
     
@@ -41,19 +39,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Min extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var ticks: js.Array[_] = js.native
+    var ticks: js.Array[js.Any]
   }
   object Min {
     
     @scala.inline
-    def apply(max: Double, min: Double, ticks: js.Array[_]): Min = {
+    def apply(max: Double, min: Double, ticks: js.Array[js.Any]): Min = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
       __obj.asInstanceOf[Min]
     }
@@ -68,26 +65,25 @@ object anon {
       def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Ticks extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var ticks: js.Array[_] = js.native
+    var ticks: js.Array[js.Any]
   }
   object Ticks {
     
     @scala.inline
-    def apply(max: Double, min: Double, ticks: js.Array[_]): Ticks = {
+    def apply(max: Double, min: Double, ticks: js.Array[js.Any]): Ticks = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ticks]
     }
@@ -102,7 +98,7 @@ object anon {
       def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))

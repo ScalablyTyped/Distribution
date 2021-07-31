@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thingPrincipalAttachmentMod {
@@ -39,6 +38,10 @@ object thingPrincipalAttachmentMod {
   /* static members */
   object ThingPrincipalAttachment {
     
+    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ThingPrincipalAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object thingPrincipalAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ThingPrincipalAttachment = js.native
-    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ThingPrincipalAttachment = js.native
-    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState): ThingPrincipalAttachment = js.native
-    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState, opts: CustomResourceOptions): ThingPrincipalAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
     
     /**
       * Returns true if the given object is an instance of ThingPrincipalAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean]
   }
   
-  @js.native
   trait ThingPrincipalAttachmentArgs extends StObject {
     
     /**
       * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
       */
-    val principal: Input[ARN] = js.native
+    val principal: Input[ARN]
     
     /**
       * The name of the thing.
       */
-    val thing: Input[String] = js.native
+    val thing: Input[String]
   }
   object ThingPrincipalAttachmentArgs {
     
@@ -96,18 +93,17 @@ object thingPrincipalAttachmentMod {
     }
   }
   
-  @js.native
   trait ThingPrincipalAttachmentState extends StObject {
     
     /**
       * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
       */
-    val principal: js.UndefOr[Input[ARN]] = js.native
+    val principal: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * The name of the thing.
       */
-    val thing: js.UndefOr[Input[String]] = js.native
+    val thing: js.UndefOr[Input[String]] = js.undefined
   }
   object ThingPrincipalAttachmentState {
     

@@ -2,21 +2,19 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var body: Dictionary[String | js.Object] = js.native
+  var body: Dictionary[String | js.Object]
   
-  var headers: Dictionary[String] = js.native
+  var headers: Dictionary[String]
   
-  var isSuccessful: Boolean = js.native
+  var isSuccessful: Boolean
   
-  var md5: js.UndefOr[String] = js.native
+  var md5: js.UndefOr[String] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object Response {
   

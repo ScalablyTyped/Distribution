@@ -3,7 +3,6 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsStoreMod {
@@ -32,10 +31,9 @@ object suggestionsStoreMod {
     def updateSuggestions(newSuggestions: js.Array[T]): Unit = js.native
   }
   
-  @js.native
   trait SuggestionsStoreOptions[T] extends StObject {
     
-    var getAriaLabel: js.UndefOr[js.Function1[/* item */ T, String]] = js.native
+    var getAriaLabel: js.UndefOr[js.Function1[/* item */ T, String]] = js.undefined
   }
   object SuggestionsStoreOptions {
     
@@ -46,7 +44,7 @@ object suggestionsStoreMod {
     }
     
     @scala.inline
-    implicit class SuggestionsStoreOptionsMutableBuilder[Self <: SuggestionsStoreOptions[_], T] (val x: Self with SuggestionsStoreOptions[T]) extends AnyVal {
+    implicit class SuggestionsStoreOptionsMutableBuilder[Self <: SuggestionsStoreOptions[?], T] (val x: Self & SuggestionsStoreOptions[T]) extends AnyVal {
       
       @scala.inline
       def setGetAriaLabel(value: /* item */ T => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction1(value))

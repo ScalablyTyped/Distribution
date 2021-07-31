@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.entityMod.Entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object newsFeedResponseMod {
@@ -25,32 +24,31 @@ object newsFeedResponseMod {
     var `type`: Double = js.native
   }
   
-  @js.native
   trait NewsFeedResponseArgs extends StObject {
     
-    var comment_id: js.UndefOr[String] = js.native
+    var comment_id: js.UndefOr[String] = js.undefined
     
-    var comment_ids: js.UndefOr[js.Array[String]] = js.native
+    var comment_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var links: js.Array[NewsFeedResponseLinksItem] = js.native
+    var links: js.Array[NewsFeedResponseLinksItem]
     
-    var media: js.UndefOr[js.Array[NewsFeedResponseMediaItem]] = js.native
+    var media: js.UndefOr[js.Array[NewsFeedResponseMediaItem]] = js.undefined
     
-    var profile_id: Double = js.native
+    var profile_id: Double
     
-    var profile_image: String = js.native
+    var profile_image: String
     
-    var profile_image_destination: js.UndefOr[String] = js.native
+    var profile_image_destination: js.UndefOr[String] = js.undefined
     
-    var second_profile_id: js.UndefOr[Double] = js.native
+    var second_profile_id: js.UndefOr[Double] = js.undefined
     
-    var second_profile_image: js.UndefOr[String] = js.native
+    var second_profile_image: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var tuuid: String = js.native
+    var tuuid: String
   }
   object NewsFeedResponseArgs {
     
@@ -135,19 +133,17 @@ object newsFeedResponseMod {
     }
   }
   
-  @js.native
   trait NewsFeedResponseCounts extends StObject
   
-  @js.native
   trait NewsFeedResponseLinksItem extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var id: String = js.native
+    var id: String
     
-    var start: Double = js.native
+    var start: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object NewsFeedResponseLinksItem {
     
@@ -175,14 +171,13 @@ object newsFeedResponseMod {
     }
   }
   
-  @js.native
   trait NewsFeedResponseMediaItem extends StObject {
     
-    var comment_threading_enabled: js.UndefOr[Boolean] = js.native
+    var comment_threading_enabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var image: String = js.native
+    var image: String
   }
   object NewsFeedResponseMediaItem {
     
@@ -209,16 +204,15 @@ object newsFeedResponseMod {
     }
   }
   
-  @js.native
   trait NewsFeedResponseRootObject extends StObject {
     
-    var auto_load_more_enabled: Boolean = js.native
+    var auto_load_more_enabled: Boolean
     
-    var next_max_id: Double = js.native
+    var next_max_id: Double
     
-    var status: String = js.native
+    var status: String
     
-    var stories: js.Array[NewsFeedResponseStoriesItem] = js.native
+    var stories: js.Array[NewsFeedResponseStoriesItem]
   }
   object NewsFeedResponseRootObject {
     

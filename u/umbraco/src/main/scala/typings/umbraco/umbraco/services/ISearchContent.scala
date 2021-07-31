@@ -3,24 +3,22 @@ package typings.umbraco.umbraco.services
 import typings.umbraco.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Search content
   */
-@js.native
 trait ISearchContent extends StObject {
   
-  var editorPath: String = js.native
+  var editorPath: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var menuUrl: String = js.native
+  var menuUrl: String
   
-  var metaData: Url = js.native
+  var metaData: Url
   
-  var subTitle: String = js.native
+  var subTitle: String
 }
 object ISearchContent {
   

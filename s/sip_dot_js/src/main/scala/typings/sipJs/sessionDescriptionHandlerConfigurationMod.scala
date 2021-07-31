@@ -3,12 +3,10 @@ package typings.sipJs
 import typings.std.RTCConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionDescriptionHandlerConfigurationMod {
   
-  @js.native
   trait SessionDescriptionHandlerConfiguration extends StObject {
     
     /**
@@ -16,12 +14,12 @@ object sessionDescriptionHandlerConfigurationMod {
       * If undefined, implementation dependent.
       * If zero, no timeout.
       */
-    var iceGatheringTimeout: js.UndefOr[Double] = js.native
+    var iceGatheringTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Peer connection options.
       */
-    var peerConnectionConfiguration: js.UndefOr[RTCConfiguration] = js.native
+    var peerConnectionConfiguration: js.UndefOr[RTCConfiguration] = js.undefined
   }
   object SessionDescriptionHandlerConfiguration {
     

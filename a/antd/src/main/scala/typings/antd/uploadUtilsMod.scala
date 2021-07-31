@@ -6,35 +6,31 @@ import typings.std.Blob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadUtilsMod {
   
-  @JSImport("antd/lib/upload/utils", "T")
+  @JSImport("antd/lib/upload/utils", JSImport.Namespace)
   @js.native
-  def T(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/upload/utils", "fileToObject")
-  @js.native
-  def fileToObject(file: RcFile): UploadFile[_] = js.native
+  @scala.inline
+  def T(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("T")().asInstanceOf[Boolean]
   
-  @JSImport("antd/lib/upload/utils", "getFileItem")
-  @js.native
-  def getFileItem(file: UploadFile[_], fileList: js.Array[UploadFile[_]]): UploadFile[_] = js.native
+  @scala.inline
+  def fileToObject(file: RcFile): UploadFile[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToObject")(file.asInstanceOf[js.Any]).asInstanceOf[UploadFile[js.Any]]
   
-  @JSImport("antd/lib/upload/utils", "isImageUrl")
-  @js.native
-  def isImageUrl(file: UploadFile[_]): Boolean = js.native
+  @scala.inline
+  def getFileItem(file: UploadFile[js.Any], fileList: js.Array[UploadFile[js.Any]]): UploadFile[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[UploadFile[js.Any]]
   
-  @JSImport("antd/lib/upload/utils", "previewImage")
-  @js.native
-  def previewImage(file: Blob): js.Promise[String] = js.native
-  @JSImport("antd/lib/upload/utils", "previewImage")
-  @js.native
-  def previewImage(file: File): js.Promise[String] = js.native
+  @scala.inline
+  def isImageUrl(file: UploadFile[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageUrl")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("antd/lib/upload/utils", "removeFileItem")
-  @js.native
-  def removeFileItem(file: UploadFile[_], fileList: js.Array[UploadFile[_]]): js.Array[UploadFile[_]] | Null = js.native
+  @scala.inline
+  def previewImage(file: Blob): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def previewImage(file: File): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def removeFileItem(file: UploadFile[js.Any], fileList: js.Array[UploadFile[js.Any]]): js.Array[UploadFile[js.Any]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Array[UploadFile[js.Any]] | Null]
 }

@@ -22,7 +22,6 @@ import typings.semanticUiReact.itemImageMod.ItemImageProps
 import typings.semanticUiReact.itemMetaMod.ItemMetaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemItemMod {
@@ -49,7 +48,9 @@ object itemItemMod {
   }
   
   @js.native
-  trait ItemComponent extends FunctionComponent[ItemProps] {
+  trait ItemComponent
+    extends StObject
+       with FunctionComponent[ItemProps] {
     
     var Content: ComponentClass[ItemContentProps, ComponentState] = js.native
     
@@ -66,9 +67,9 @@ object itemItemMod {
     var Meta: StatelessComponent[ItemMetaProps] = js.native
   }
   
-  @js.native
   trait ItemProps
-    extends StrictItemProps
+    extends StObject
+       with StrictItemProps
        with /* key */ StringDictionary[js.Any]
   object ItemProps {
     
@@ -79,35 +80,34 @@ object itemItemMod {
     }
   }
   
-  @js.native
   trait StrictItemProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for ItemContent component. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for ItemDescription component. */
-    var description: js.UndefOr[SemanticShorthandItem[ItemDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[ItemDescriptionProps]] = js.undefined
     
     /** Shorthand for ItemExtra component. */
-    var extra: js.UndefOr[SemanticShorthandItem[ItemExtraProps]] = js.native
+    var extra: js.UndefOr[SemanticShorthandItem[ItemExtraProps]] = js.undefined
     
     /** Shorthand for ItemHeader component. */
-    var header: js.UndefOr[SemanticShorthandItem[ItemHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[ItemHeaderProps]] = js.undefined
     
     /** Shorthand for ItemImage component. */
-    var image: js.UndefOr[SemanticShorthandItem[ItemImageProps]] = js.native
+    var image: js.UndefOr[SemanticShorthandItem[ItemImageProps]] = js.undefined
     
     /** Shorthand for ItemMeta component. */
-    var meta: js.UndefOr[SemanticShorthandItem[ItemMetaProps]] = js.native
+    var meta: js.UndefOr[SemanticShorthandItem[ItemMetaProps]] = js.undefined
   }
   object StrictItemProps {
     

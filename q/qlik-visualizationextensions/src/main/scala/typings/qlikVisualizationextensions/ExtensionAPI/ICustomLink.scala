@@ -3,25 +3,23 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomLink extends StObject {
   
-  var component: link = js.native
+  var component: link
   
-  var label: String = js.native
+  var label: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object ICustomLink {
   
   @scala.inline
-  def apply(component: link, label: String, `type`: String, url: String): ICustomLink = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(label: String, `type`: String, url: String): ICustomLink = {
+    val __obj = js.Dynamic.literal(component = "link", label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomLink]
   }

@@ -2,29 +2,27 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoJsonObject extends StObject {
   
   /** Geometric coordinates of the object */
-  var coordinates: js.UndefOr[js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]] = js.native
+  var coordinates: js.UndefOr[js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]] = js.undefined
   
   /** Set of features (only applicable if the type is 'featurecollection') */
-  var features: js.UndefOr[js.Array[IGeoJsonObject]] = js.native
+  var features: js.UndefOr[js.Array[IGeoJsonObject]] = js.undefined
   
   /** Set of geometries (only applicable if the type is 'geometrycollection') */
-  var geometries: js.UndefOr[js.Array[IGeoJsonObject]] = js.native
+  var geometries: js.UndefOr[js.Array[IGeoJsonObject]] = js.undefined
   
   /** Geometry (only applicable if the type is 'feature') */
-  var geometry: js.UndefOr[IGeoJsonObject] = js.native
+  var geometry: js.UndefOr[IGeoJsonObject] = js.undefined
   
   /** identifier of a feature (only applicable if the type is 'feature') */
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
   /** Additional properties of the object as a key,value pair */
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
   
   /** 
     * Type of the object 
@@ -39,7 +37,7 @@ trait IGeoJsonObject extends StObject {
     * Feature
     * FeatureCollection 
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IGeoJsonObject {
   

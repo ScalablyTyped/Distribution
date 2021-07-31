@@ -2,45 +2,45 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLookAt extends KmlAbstractView {
+trait KmlLookAt
+  extends StObject
+     with KmlAbstractView {
   
   /**
     * Distance from the earth's surface, in meters.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * Specifies how altitude components in the coordinates element are interpreted.
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   
   /**
     * Direction (that is, North, South, East, West), in degrees. Default=0 (North). Values range from 0 to 360 degrees.
     */
-  def getHeading(): Double = js.native
+  def getHeading(): Double
   
   /**
     * Latitude of the point the camera is looking at.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * Latitude of the point the camera is looking at.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
   
   /**
     * The distance in meters from the point specified by longitude, latitude, and altitude for the LookAt position.
     */
-  def getRange(): Double = js.native
+  def getRange(): Double
   
   /**
     * Angle between the direction of the LookAt position and the normal to the surface of the earth.
@@ -48,7 +48,7 @@ trait KmlLookAt extends KmlAbstractView {
     * A tilt value of 0 degrees indicates viewing from directly above.
     * A tilt value of 90 degrees indicates viewing along the horizon.
     */
-  def getTilt(): Double = js.native
+  def getTilt(): Double
   
   /**
     * Sets the latitude, longitude, altitude, altitudeMode, heading, tilt, and range for the camera.
@@ -61,41 +61,41 @@ trait KmlLookAt extends KmlAbstractView {
     heading: Double,
     tilt: Double,
     range: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Distance from the earth's surface, in meters.
     */
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
   /**
     * Specifies how altitude components in the coordinates element are interpreted.
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit
   
   /**
     * Direction (that is, North, South, East, West), in degrees. Default=0 (North). Values range from 0 to 360 degrees.
     */
-  def setHeading(heading: Double): Unit = js.native
+  def setHeading(heading: Double): Unit
   
   /**
     * Latitude of the point the camera is looking at.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def setLatitude(latitude: Double): Unit = js.native
+  def setLatitude(latitude: Double): Unit
   
   /**
     * Latitude of the point the camera is looking at.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def setLongitude(longitude: Double): Unit = js.native
+  def setLongitude(longitude: Double): Unit
   
   /**
     * The distance in meters from the point specified by longitude, latitude, and altitude for the LookAt position.
     */
-  def setRange(range: Double): Unit = js.native
+  def setRange(range: Double): Unit
   
   /**
     * Angle between the direction of the LookAt position and the normal to the surface of the earth.
@@ -103,7 +103,7 @@ trait KmlLookAt extends KmlAbstractView {
     * A tilt value of 0 degrees indicates viewing from directly above.
     * A tilt value of 90 degrees indicates viewing along the horizon.
     */
-  def setTilt(tilt: Double): Unit = js.native
+  def setTilt(tilt: Double): Unit
 }
 object KmlLookAt {
   

@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Security.Credentials
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of the KeyCredential.GetAttestationAsync method. */
-@js.native
 trait KeyCredentialAttestationResult extends StObject {
   
   /** Gets the attestation information for the KeyCredential. */
-  var attestationBuffer: IBuffer = js.native
+  var attestationBuffer: IBuffer
   
   /** Gets the chain of certificates used to verify the attestation. */
-  var certificateChainBuffer: IBuffer = js.native
+  var certificateChainBuffer: IBuffer
   
   /** Gets the status of the key credential attestation. */
-  var status: KeyCredentialAttestationStatus = js.native
+  var status: KeyCredentialAttestationStatus
 }
 object KeyCredentialAttestationResult {
   

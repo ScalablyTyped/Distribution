@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSourceMappingDestinationConfigOnFailure extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the destination resource.
     */
-  var destinationArn: String = js.native
+  var destinationArn: String
 }
 object EventSourceMappingDestinationConfigOnFailure {
   

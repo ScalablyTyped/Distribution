@@ -2,19 +2,17 @@ package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonMessageFields extends StObject {
   
-  var deliveryTag: Double = js.native
+  var deliveryTag: Double
   
-  var exchange: String = js.native
+  var exchange: String
   
-  var redelivered: Boolean = js.native
+  var redelivered: Boolean
   
-  var routingKey: String = js.native
+  var routingKey: String
 }
 object CommonMessageFields {
   

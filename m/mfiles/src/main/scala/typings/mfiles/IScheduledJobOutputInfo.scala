@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFScheduledJobType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScheduledJobOutputInfo extends StObject {
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var JobType: MFScheduledJobType = js.native
+  var JobType: MFScheduledJobType
   
-  var Message: String = js.native
+  var Message: String
 }
 object IScheduledJobOutputInfo {
   

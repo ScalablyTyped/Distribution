@@ -4,6 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.estree.mod.Node
 import typings.estree.mod.Program
 import typings.tern.anon.Instantiable
+import typings.tern.anon.Objnamestring
+import typings.tern.anon.Primnamebool
+import typings.tern.anon.Primnamenumber
+import typings.tern.anon.Primnamestring
 import typings.tern.anon.State
 import typings.tern.inferMod.AValConstructor
 import typings.tern.inferMod.ArrConstructor
@@ -18,12 +22,18 @@ import typings.tern.ternBooleans.`true`
 import typings.tern.ternMod.ConstructorOptions
 import typings.tern.ternMod.Desc
 import typings.tern.ternMod.TernConstructor
+import typings.tern.ternStrings.bool
+import typings.tern.ternStrings.number
+import typings.tern.ternStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("tern", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tern", "ANull")
   @js.native
@@ -37,7 +47,54 @@ object mod {
   @JSImport("tern", "AVal")
   @js.native
   class AValCls ()
-    extends typings.tern.inferMod.AVal
+    extends StObject
+       with typings.tern.inferMod.AVal {
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+  }
   
   @JSImport("tern", "Arr")
   @js.native
@@ -48,8 +105,66 @@ object mod {
   @js.native
   /** Constructor that creates an array type with the given content type. */
   class ArrCls ()
-    extends typings.tern.inferMod.Arr {
+    extends StObject
+       with typings.tern.inferMod.Arr {
     def this(contentType: typings.tern.inferMod.AVal) = this()
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(): typings.tern.inferMod.Type = js.native
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    /** Queries whether the AVal _currently_ holds the given type. */
+    /* CompleteClass */
+    override def hasType(`type`: typings.tern.inferMod.Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /** The origin file of the type. */
+    /* CompleteClass */
+    var origin: String = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */
+    /* CompleteClass */
+    override def toString(maxDepth: Double): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
   }
   
   @JSImport("tern", "Context")
@@ -60,8 +175,24 @@ object mod {
   @JSImport("tern", "Context")
   @js.native
   class ContextCls protected ()
-    extends typings.tern.inferMod.Context {
-    def this(defs: js.Array[_], parent: typings.tern.ternMod.Server) = this()
+    extends StObject
+       with typings.tern.inferMod.Context {
+    def this(defs: js.Array[js.Any], parent: typings.tern.ternMod.Server) = this()
+    
+    /** The primitive boolean type. */
+    /* CompleteClass */
+    var bool: Primnamebool = js.native
+    
+    /** The primitive number type. */
+    /* CompleteClass */
+    var num: Primnamenumber = js.native
+    
+    /** The primitive string type. */
+    /* CompleteClass */
+    var str: Primnamestring = js.native
+    
+    /* CompleteClass */
+    var topScope: typings.tern.inferMod.Scope = js.native
   }
   
   @JSImport("tern", "Fn")
@@ -72,14 +203,8 @@ object mod {
   @JSImport("tern", "Fn")
   @js.native
   class FnCls protected ()
-    extends typings.tern.inferMod.Fn {
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      self: typings.tern.inferMod.AVal,
-      args: js.Array[typings.tern.inferMod.AVal],
-      argNames: js.Array[String],
-      retval: typings.tern.inferMod.AVal
-    ) = this()
+    extends StObject
+       with typings.tern.inferMod.Fn {
     def this(
       name: String,
       self: typings.tern.inferMod.AVal,
@@ -87,6 +212,70 @@ object mod {
       argNames: js.Array[String],
       retval: typings.tern.inferMod.AVal
     ) = this()
+    def this(
+      name: Unit,
+      self: typings.tern.inferMod.AVal,
+      args: js.Array[typings.tern.inferMod.AVal],
+      argNames: js.Array[String],
+      retval: typings.tern.inferMod.AVal
+    ) = this()
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(): typings.tern.inferMod.Type = js.native
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    /** Queries whether the AVal _currently_ holds the given type. */
+    /* CompleteClass */
+    override def hasType(`type`: typings.tern.inferMod.Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /** The origin file of the type. */
+    /* CompleteClass */
+    var origin: String = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */
+    /* CompleteClass */
+    override def toString(maxDepth: Double): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
   }
   
   @JSImport("tern", "Obj")
@@ -97,12 +286,70 @@ object mod {
   @JSImport("tern", "Obj")
   @js.native
   class ObjCls ()
-    extends typings.tern.inferMod.Obj {
+    extends StObject
+       with typings.tern.inferMod.Obj {
     def this(proto: js.Object) = this()
     def this(proto: `true`) = this()
     def this(proto: js.Object, name: String) = this()
     def this(proto: Null, name: String) = this()
     def this(proto: `true`, name: String) = this()
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(): typings.tern.inferMod.Type = js.native
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    /** Queries whether the AVal _currently_ holds the given type. */
+    /* CompleteClass */
+    override def hasType(`type`: typings.tern.inferMod.Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /** The origin file of the type. */
+    /* CompleteClass */
+    var origin: String = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */
+    /* CompleteClass */
+    override def toString(maxDepth: Double): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
   }
   
   @JSImport("tern", "Prim")
@@ -113,10 +360,81 @@ object mod {
   @JSImport("tern", "Prim")
   @js.native
   class PrimCls ()
-    extends typings.tern.inferMod.Prim {
+    extends StObject
+       with typings.tern.inferMod.Prim {
     def this(proto: js.Object) = this()
     def this(proto: js.Object, name: String) = this()
     def this(proto: Null, name: String) = this()
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    /* CompleteClass */
+    override def gatherProperties(f: js.Function1[/* repeated */ js.Any, Unit], depth: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    /** Get an `AVal` that represents the named property of this type. */
+    /* CompleteClass */
+    override def getProp(prop: String): typings.tern.inferMod.AVal = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(): typings.tern.inferMod.Type = js.native
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    /** Queries whether the AVal _currently_ holds the given type. */
+    /* CompleteClass */
+    override def hasType(`type`: typings.tern.inferMod.Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /** The name of the type, if any. */
+    /* CompleteClass */
+    var name: string | bool | number = js.native
+    
+    /** The origin file of the type. */
+    /* CompleteClass */
+    var origin: String = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /** The prototype of the object, or null. */
+    /* CompleteClass */
+    var proto: Objnamestring = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */
+    /* CompleteClass */
+    override def toString(maxDepth: Double): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
   }
   
   @JSImport("tern", "Scope")
@@ -127,8 +445,66 @@ object mod {
   @JSImport("tern", "Scope")
   @js.native
   class ScopeCls ()
-    extends typings.tern.inferMod.Scope {
+    extends StObject
+       with typings.tern.inferMod.Scope {
     def this(parent: typings.tern.inferMod.Scope, originNode: Node) = this()
+    
+    /* CompleteClass */
+    override def addType(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def forAllProps(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def gatherProperties(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getObjType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def getProp(args: js.Any*): typings.tern.inferMod.ANull = js.native
+    
+    /* CompleteClass */
+    override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull] = js.native
+    
+    /* CompleteClass */
+    override def getType(): typings.tern.inferMod.Type = js.native
+    /* CompleteClass */
+    override def getType(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
+    
+    /* CompleteClass */
+    override def hasType(args: js.Any*): Boolean = js.native
+    /** Queries whether the AVal _currently_ holds the given type. */
+    /* CompleteClass */
+    override def hasType(`type`: typings.tern.inferMod.Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(args: js.Any*): Boolean = js.native
+    
+    /** The origin file of the type. */
+    /* CompleteClass */
+    var origin: String = js.native
+    
+    /* CompleteClass */
+    override def propHint(args: js.Any*): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def propagate(args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def propagatesTo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(args: js.Any*): String = js.native
+    /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */
+    /* CompleteClass */
+    override def toString(maxDepth: Double): String = js.native
+    
+    /* CompleteClass */
+    override def typeHint(args: js.Any*): js.UndefOr[typings.tern.inferMod.ANull | Null] = js.native
   }
   
   @JSImport("tern", "Server")
@@ -139,7 +515,8 @@ object mod {
   @JSImport("tern", "Server")
   @js.native
   class ServerCls ()
-    extends typings.tern.ternMod.Server {
+    extends StObject
+       with typings.tern.ternMod.Server {
     def this(options: ConstructorOptions) = this()
   }
   
@@ -147,142 +524,107 @@ object mod {
   @js.native
   val Type: TypeConstructor = js.native
   
-  @JSImport("tern", "analyze")
-  @js.native
-  def analyze(ast: Program, name: String): Unit = js.native
-  @JSImport("tern", "analyze")
-  @js.native
-  def analyze(ast: Program, name: String, scope: typings.tern.inferMod.Scope): Unit = js.native
+  @scala.inline
+  def analyze(ast: Program, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def analyze(ast: Program, name: String, scope: typings.tern.inferMod.Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("tern", "constraint")
   @js.native
-  class constraint protected () extends Instantiable {
+  class constraint protected ()
+    extends StObject
+       with Instantiable {
     def this(methods: StringDictionary[js.Any]) = this()
   }
   @JSImport("tern", "constraint")
   @js.native
   val constraint: ConstraintConstructor = js.native
   
-  @JSImport("tern", "cx")
-  @js.native
-  def cx(): typings.tern.inferMod.Context = js.native
+  @scala.inline
+  def cx(): typings.tern.inferMod.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("cx")().asInstanceOf[typings.tern.inferMod.Context]
   
-  @JSImport("tern", "defineQueryType")
-  @js.native
-  def defineQueryType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](name: T, desc: Desc[T]): Unit = js.native
+  @scala.inline
+  def defineQueryType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](name: T, desc: Desc[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineQueryType")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "didGuess")
-  @js.native
-  def didGuess(): Boolean = js.native
+  @scala.inline
+  def didGuess(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didGuess")().asInstanceOf[Boolean]
   
-  @JSImport("tern", "expressionType")
-  @js.native
-  def expressionType(expr: State): typings.tern.inferMod.AVal | typings.tern.inferMod.Type = js.native
+  @scala.inline
+  def expressionType(expr: State): typings.tern.inferMod.AVal | typings.tern.inferMod.Type = ^.asInstanceOf[js.Dynamic].applyDynamic("expressionType")(expr.asInstanceOf[js.Any]).asInstanceOf[typings.tern.inferMod.AVal | typings.tern.inferMod.Type]
   
-  @JSImport("tern", "findClosestExpression")
-  @js.native
-  def findClosestExpression(ast: Program, start: js.UndefOr[scala.Nothing], end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findClosestExpression")
-  @js.native
-  def findClosestExpression(ast: Program, start: js.UndefOr[scala.Nothing], end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findClosestExpression")
-  @js.native
-  def findClosestExpression(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findClosestExpression")
-  @js.native
-  def findClosestExpression(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
+  @scala.inline
+  def findClosestExpression(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findClosestExpression(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findClosestExpression(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findClosestExpression(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @JSImport("tern", "findExpressionAround")
-  @js.native
-  def findExpressionAround(ast: Program, start: js.UndefOr[scala.Nothing], end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAround")
-  @js.native
-  def findExpressionAround(ast: Program, start: js.UndefOr[scala.Nothing], end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAround")
-  @js.native
-  def findExpressionAround(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAround")
-  @js.native
-  def findExpressionAround(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
+  @scala.inline
+  def findExpressionAround(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAround(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAround(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAround(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @JSImport("tern", "findExpressionAt")
-  @js.native
-  def findExpressionAt(ast: Program, start: js.UndefOr[scala.Nothing], end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAt")
-  @js.native
-  def findExpressionAt(ast: Program, start: js.UndefOr[scala.Nothing], end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAt")
-  @js.native
-  def findExpressionAt(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = js.native
-  @JSImport("tern", "findExpressionAt")
-  @js.native
-  def findExpressionAt(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = js.native
+  @scala.inline
+  def findExpressionAt(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAt(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAt(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  @scala.inline
+  def findExpressionAt(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @JSImport("tern", "findPropRefs")
-  @js.native
+  @scala.inline
   def findPropRefs(
     ast: Program,
     scope: typings.tern.inferMod.Scope,
     objType: typings.tern.inferMod.Obj,
     propName: String,
     f: js.Function1[/* Node */ Node, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findPropRefs")(ast.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], objType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "findRefs")
-  @js.native
+  @scala.inline
   def findRefs(
     ast: Program,
     scope: typings.tern.inferMod.Scope,
     name: String,
     refScope: typings.tern.inferMod.Scope,
     f: js.Function2[/* Node */ Node, /* Scope */ typings.tern.inferMod.Scope, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findRefs")(ast.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], name.asInstanceOf[js.Any], refScope.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "markVariablesDefinedBy")
-  @js.native
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String]): Unit = js.native
-  @JSImport("tern", "markVariablesDefinedBy")
-  @js.native
-  def markVariablesDefinedBy(
-    scope: typings.tern.inferMod.Scope,
-    origins: js.Array[String],
-    start: js.UndefOr[scala.Nothing],
-    end: Double
-  ): Unit = js.native
-  @JSImport("tern", "markVariablesDefinedBy")
-  @js.native
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double): Unit = js.native
-  @JSImport("tern", "markVariablesDefinedBy")
-  @js.native
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double, end: Double): Unit = js.native
+  @scala.inline
+  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "parse")
-  @js.native
-  def parse(text: String): Program = js.native
-  @JSImport("tern", "parse")
-  @js.native
-  def parse(text: String, options: js.Object): Program = js.native
+  @scala.inline
+  def parse(text: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Program]
+  @scala.inline
+  def parse(text: String, options: js.Object): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @JSImport("tern", "purgeMarkedVariables")
-  @js.native
-  def purgeMarkedVariables(): Unit = js.native
+  @scala.inline
+  def purgeMarkedVariables(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeMarkedVariables")().asInstanceOf[Unit]
   
-  @JSImport("tern", "purgeTypes")
-  @js.native
-  def purgeTypes(origins: js.Array[String]): Unit = js.native
-  @JSImport("tern", "purgeTypes")
-  @js.native
-  def purgeTypes(origins: js.Array[String], start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
-  @JSImport("tern", "purgeTypes")
-  @js.native
-  def purgeTypes(origins: js.Array[String], start: Double): Unit = js.native
-  @JSImport("tern", "purgeTypes")
-  @js.native
-  def purgeTypes(origins: js.Array[String], start: Double, end: Double): Unit = js.native
+  @scala.inline
+  def purgeTypes(origins: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def purgeTypes(origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def purgeTypes(origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def purgeTypes(origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "registerPlugin")
-  @js.native
+  @scala.inline
   def registerPlugin(
     name: String,
     init: js.Function2[
@@ -290,27 +632,22 @@ object mod {
       /* options */ js.UndefOr[ConstructorOptions], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tern", "resetGuessing")
-  @js.native
-  def resetGuessing(): Unit = js.native
-  @JSImport("tern", "resetGuessing")
-  @js.native
-  def resetGuessing(`val`: Boolean): Unit = js.native
+  @scala.inline
+  def resetGuessing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")().asInstanceOf[Unit]
+  @scala.inline
+  def resetGuessing(`val`: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tern", "scopeAt")
-  @js.native
-  def scopeAt(ast: Program, pos: Double): typings.tern.inferMod.Scope = js.native
-  @JSImport("tern", "scopeAt")
-  @js.native
-  def scopeAt(ast: Program, pos: Double, scope: typings.tern.inferMod.Scope): typings.tern.inferMod.Scope = js.native
+  @scala.inline
+  def scopeAt(ast: Program, pos: Double): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
+  @scala.inline
+  def scopeAt(ast: Program, pos: Double, scope: typings.tern.inferMod.Scope): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
   
   @JSImport("tern", "version")
   @js.native
   val version: String = js.native
   
-  @JSImport("tern", "withContext")
-  @js.native
-  def withContext[R](context: typings.tern.inferMod.Context, f: js.Function0[R]): R = js.native
+  @scala.inline
+  def withContext[R](context: typings.tern.inferMod.Context, f: js.Function0[R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(context.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[R]
 }

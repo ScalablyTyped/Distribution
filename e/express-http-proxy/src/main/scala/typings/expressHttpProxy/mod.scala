@@ -12,28 +12,26 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-http-proxy", JSImport.Namespace)
-  @js.native
-  def apply(host: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-http-proxy", JSImport.Namespace)
-  @js.native
-  def apply(host: String, options: ProxyOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-http-proxy", JSImport.Namespace)
-  @js.native
-  def apply(host: js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-http-proxy", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(host: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(host: String, options: ProxyOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(host: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
   def apply(
-    host: js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String],
+    host: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String],
     options: ProxyOptions
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("express-http-proxy", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ProxyOptions extends StObject {
     
     /**
@@ -42,75 +40,82 @@ object mod {
       */
     var filter: js.UndefOr[
         js.Function2[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           Boolean | js.Promise[Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The byte limit of the body. This is the number of bytes or any string
       * format supported by `bytes`, for example `1000`, `'500kb'` or `'3mb'`.
       * See https://github.com/stream-utils/raw-body/blob/master/index.d.ts
       */
-    var limit: js.UndefOr[Double | String] = js.native
+    var limit: js.UndefOr[Double | String] = js.undefined
     
-    var memoizeHost: js.UndefOr[Boolean] = js.native
+    var memoizeHost: js.UndefOr[Boolean] = js.undefined
     
-    var parseReqBody: js.UndefOr[Boolean] = js.native
+    var parseReqBody: js.UndefOr[Boolean] = js.undefined
     
-    var preserveHostHdr: js.UndefOr[Boolean] = js.native
+    var preserveHostHdr: js.UndefOr[Boolean] = js.undefined
     
     var proxyErrorHandler: js.UndefOr[
-        js.Function3[/* err */ js.Any, /* res */ Response_[_], /* next */ NextFunction, _]
-      ] = js.native
+        js.Function3[/* err */ js.Any, /* res */ Response_[js.Any], /* next */ NextFunction, js.Any]
+      ] = js.undefined
     
     var proxyReqBodyDecorator: js.UndefOr[
-        js.Function2[/* bodyContent */ js.Any, /* srcReq */ Request_[ParamsDictionary, _, _, Query], _]
-      ] = js.native
+        js.Function2[
+          /* bodyContent */ js.Any, 
+          /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          js.Any
+        ]
+      ] = js.undefined
     
     var proxyReqOptDecorator: js.UndefOr[
         js.Function2[
           /* proxyReqOpts */ RequestOptions, 
-          /* srcReq */ Request_[ParamsDictionary, _, _, Query], 
+          /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           RequestOptions | js.Promise[RequestOptions]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var proxyReqPathResolver: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String | js.Promise[String]]
-      ] = js.native
+        js.Function1[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          String | js.Promise[String]
+        ]
+      ] = js.undefined
     
-    var reqAsBuffer: js.UndefOr[Boolean] = js.native
+    var reqAsBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var reqBodyEncoding: js.UndefOr[String | Null] = js.native
+    var reqBodyEncoding: js.UndefOr[String | Null] = js.undefined
     
-    var skipToNextHandlerFilter: js.UndefOr[js.Function1[/* proxyRes */ Response_[_], Boolean]] = js.native
+    var skipToNextHandlerFilter: js.UndefOr[js.Function1[/* proxyRes */ Response_[js.Any], Boolean]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     var userResDecorator: js.UndefOr[
         js.Function4[
-          /* proxyRes */ Response_[_], 
+          /* proxyRes */ Response_[js.Any], 
           /* proxyResData */ js.Any, 
-          /* userReq */ Request_[ParamsDictionary, _, _, Query], 
-          /* userRes */ Response_[_], 
+          /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* userRes */ Response_[js.Any], 
           Buffer | String | (js.Promise[Buffer | String])
         ]
-      ] = js.native
+      ] = js.undefined
     
     var userResHeaderDecorator: js.UndefOr[
         js.Function5[
           /* headers */ IncomingHttpHeaders, 
-          /* userReq */ Request_[ParamsDictionary, _, _, Query], 
-          /* userRes */ Response_[_], 
-          /* proxyReq */ Request_[ParamsDictionary, _, _, Query], 
-          /* proxyRes */ Response_[_], 
+          /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* userRes */ Response_[js.Any], 
+          /* proxyReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* proxyRes */ Response_[js.Any], 
           OutgoingHttpHeaders
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ProxyOptions {
     
@@ -125,7 +130,7 @@ object mod {
       
       @scala.inline
       def setFilter(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean | js.Promise[Boolean]
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean | js.Promise[Boolean]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -162,27 +167,29 @@ object mod {
       def setPreserveHostHdrUndefined: Self = StObject.set(x, "preserveHostHdr", js.undefined)
       
       @scala.inline
-      def setProxyErrorHandler(value: (/* err */ js.Any, /* res */ Response_[_], /* next */ NextFunction) => _): Self = StObject.set(x, "proxyErrorHandler", js.Any.fromFunction3(value))
+      def setProxyErrorHandler(value: (/* err */ js.Any, /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any): Self = StObject.set(x, "proxyErrorHandler", js.Any.fromFunction3(value))
       
       @scala.inline
       def setProxyErrorHandlerUndefined: Self = StObject.set(x, "proxyErrorHandler", js.undefined)
       
       @scala.inline
-      def setProxyReqBodyDecorator(value: (/* bodyContent */ js.Any, /* srcReq */ Request_[ParamsDictionary, _, _, Query]) => _): Self = StObject.set(x, "proxyReqBodyDecorator", js.Any.fromFunction2(value))
+      def setProxyReqBodyDecorator(
+        value: (/* bodyContent */ js.Any, /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => js.Any
+      ): Self = StObject.set(x, "proxyReqBodyDecorator", js.Any.fromFunction2(value))
       
       @scala.inline
       def setProxyReqBodyDecoratorUndefined: Self = StObject.set(x, "proxyReqBodyDecorator", js.undefined)
       
       @scala.inline
       def setProxyReqOptDecorator(
-        value: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request_[ParamsDictionary, _, _, Query]) => RequestOptions | js.Promise[RequestOptions]
+        value: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => RequestOptions | js.Promise[RequestOptions]
       ): Self = StObject.set(x, "proxyReqOptDecorator", js.Any.fromFunction2(value))
       
       @scala.inline
       def setProxyReqOptDecoratorUndefined: Self = StObject.set(x, "proxyReqOptDecorator", js.undefined)
       
       @scala.inline
-      def setProxyReqPathResolver(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String | js.Promise[String]): Self = StObject.set(x, "proxyReqPathResolver", js.Any.fromFunction1(value))
+      def setProxyReqPathResolver(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | js.Promise[String]): Self = StObject.set(x, "proxyReqPathResolver", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProxyReqPathResolverUndefined: Self = StObject.set(x, "proxyReqPathResolver", js.undefined)
@@ -203,7 +210,7 @@ object mod {
       def setReqBodyEncodingUndefined: Self = StObject.set(x, "reqBodyEncoding", js.undefined)
       
       @scala.inline
-      def setSkipToNextHandlerFilter(value: /* proxyRes */ Response_[_] => Boolean): Self = StObject.set(x, "skipToNextHandlerFilter", js.Any.fromFunction1(value))
+      def setSkipToNextHandlerFilter(value: /* proxyRes */ Response_[js.Any] => Boolean): Self = StObject.set(x, "skipToNextHandlerFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSkipToNextHandlerFilterUndefined: Self = StObject.set(x, "skipToNextHandlerFilter", js.undefined)
@@ -216,7 +223,7 @@ object mod {
       
       @scala.inline
       def setUserResDecorator(
-        value: (/* proxyRes */ Response_[_], /* proxyResData */ js.Any, /* userReq */ Request_[ParamsDictionary, _, _, Query], /* userRes */ Response_[_]) => Buffer | String | (js.Promise[Buffer | String])
+        value: (/* proxyRes */ Response_[js.Any], /* proxyResData */ js.Any, /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* userRes */ Response_[js.Any]) => Buffer | String | (js.Promise[Buffer | String])
       ): Self = StObject.set(x, "userResDecorator", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -224,7 +231,7 @@ object mod {
       
       @scala.inline
       def setUserResHeaderDecorator(
-        value: (/* headers */ IncomingHttpHeaders, /* userReq */ Request_[ParamsDictionary, _, _, Query], /* userRes */ Response_[_], /* proxyReq */ Request_[ParamsDictionary, _, _, Query], /* proxyRes */ Response_[_]) => OutgoingHttpHeaders
+        value: (/* headers */ IncomingHttpHeaders, /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* userRes */ Response_[js.Any], /* proxyReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* proxyRes */ Response_[js.Any]) => OutgoingHttpHeaders
       ): Self = StObject.set(x, "userResHeaderDecorator", js.Any.fromFunction5(value))
       
       @scala.inline

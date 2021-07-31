@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChildrenResponse extends StObject {
   
   /**
     * The list of children of the specified parent container.
     */
-  var Children: js.UndefOr[typings.awsSdk.organizationsMod.Children] = js.native
+  var Children: js.UndefOr[typings.awsSdk.organizationsMod.Children] = js.undefined
   
   /**
     * If present, indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.organizationsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.organizationsMod.NextToken] = js.undefined
 }
 object ListChildrenResponse {
   

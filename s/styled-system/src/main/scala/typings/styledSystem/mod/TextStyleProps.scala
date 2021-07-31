@@ -2,13 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
-  var textStyle: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.native
+  var textStyle: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.undefined
 }
 object TextStyleProps {
   
@@ -19,7 +17,7 @@ object TextStyleProps {
   }
   
   @scala.inline
-  implicit class TextStylePropsMutableBuilder[Self <: TextStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with TextStyleProps[ThemeType]) extends AnyVal {
+  implicit class TextStylePropsMutableBuilder[Self <: TextStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & TextStyleProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setTextStyle(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])

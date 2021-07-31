@@ -8,17 +8,15 @@ import typings.screeps.screepsNumbers.`500`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LevelOps extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: `100` = js.native
+  var cooldown: `100`
   
-  var duration: js.Tuple5[`100`, `200`, `300`, `400`, `500`] = js.native
+  var duration: js.Tuple5[`100`, `200`, `300`, `400`, `500`]
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`0`, 
@@ -26,18 +24,16 @@ trait LevelOps extends StObject {
     typings.screeps.screepsNumbers.`7`, 
     typings.screeps.screepsNumbers.`14`, 
     typings.screeps.screepsNumbers.`22`
-  ] = js.native
+  ]
   
-  var ops: `100` = js.native
+  var ops: `100`
   
-  var range: typings.screeps.screepsNumbers.`3` = js.native
+  var range: typings.screeps.screepsNumbers.`3`
 }
 object LevelOps {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: `100`,
     duration: js.Tuple5[`100`, `200`, `300`, `400`, `500`],
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`0`, 
@@ -45,11 +41,9 @@ object LevelOps {
       typings.screeps.screepsNumbers.`7`, 
       typings.screeps.screepsNumbers.`14`, 
       typings.screeps.screepsNumbers.`22`
-    ],
-    ops: `100`,
-    range: typings.screeps.screepsNumbers.`3`
+    ]
   ): LevelOps = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 100, duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = 100, range = 3)
     __obj.asInstanceOf[LevelOps]
   }
   

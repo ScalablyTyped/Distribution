@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The message that is spoken by Cortana and shown on the Cortana canvas. */
-@js.native
 trait VoiceCommandUserMessage extends StObject {
   
   /** Gets or sets the message that is shown on the Cortana canvas. */
-  var displayMessage: String = js.native
+  var displayMessage: String
   
   /** The message that is spoken by Cortana. */
-  var spokenMessage: String = js.native
+  var spokenMessage: String
 }
 object VoiceCommandUserMessage {
   

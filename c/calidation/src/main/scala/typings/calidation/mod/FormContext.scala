@@ -3,33 +3,31 @@ package typings.calidation.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormContext[T /* <: js.Object */] extends StObject {
   
-  var dirty: Dirty[T] = js.native
+  var dirty: Dirty[T]
   
-  var errors: Errors[T] = js.native
+  var errors: Errors[T]
   
-  var fields: Fields[T] = js.native
+  var fields: Fields[T]
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  def register(config: FieldsConfig[T], transforms: Transforms[T], initialValues: T): Unit = js.native
+  def register(config: FieldsConfig[T], transforms: Transforms[T], initialValues: T): Unit
   
-  def resetAll(): Unit = js.native
+  def resetAll(): Unit
   
-  def setError(delta: Errors[T]): Unit = js.native
+  def setError(delta: Errors[T]): Unit
   
-  def setField(delta: Partial[T]): Unit = js.native
+  def setField(delta: Partial[T]): Unit
   
-  def submit(): Unit = js.native
+  def submit(): Unit
   
-  var submitted: Boolean = js.native
+  var submitted: Boolean
   
-  def unregister(config: FieldsConfig[T]): Unit = js.native
+  def unregister(config: FieldsConfig[T]): Unit
 }
 object FormContext {
   
@@ -52,7 +50,7 @@ object FormContext {
   }
   
   @scala.inline
-  implicit class FormContextMutableBuilder[Self <: FormContext[_], T /* <: js.Object */] (val x: Self with FormContext[T]) extends AnyVal {
+  implicit class FormContextMutableBuilder[Self <: FormContext[?], T /* <: js.Object */] (val x: Self & FormContext[T]) extends AnyVal {
     
     @scala.inline
     def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])

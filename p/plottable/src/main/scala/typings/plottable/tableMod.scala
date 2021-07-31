@@ -4,7 +4,6 @@ import typings.plottable.componentContainerMod.ComponentContainer
 import typings.plottable.componentMod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -152,16 +151,17 @@ object tableMod {
   /* static members */
   object Table {
     
-    @JSImport("plottable/build/src/components/table", "Table._calcComponentWeights")
+    @JSImport("plottable/build/src/components/table", "Table")
     @js.native
-    def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/components/table", "Table._calcProportionalSpace")
-    @js.native
-    def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = js.native
+    @scala.inline
+    def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("plottable/build/src/components/table", "Table._fixedSpace")
-    @js.native
-    def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
+    @scala.inline
+    def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

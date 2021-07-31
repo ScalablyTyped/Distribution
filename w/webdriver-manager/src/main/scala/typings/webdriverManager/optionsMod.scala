@@ -3,10 +3,13 @@ package typings.webdriverManager
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
+  
+  @JSImport("webdriver-manager/built/lib/cli/options", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webdriver-manager/built/lib/cli/options", "Option")
   @js.native
@@ -35,9 +38,8 @@ object optionsMod {
     var value: Double | String | Boolean = js.native
   }
   
-  @JSImport("webdriver-manager/built/lib/cli/options", "unparseOptions")
-  @js.native
-  def unparseOptions(options: Options): js.Array[String] = js.native
+  @scala.inline
+  def unparseOptions(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type Args = StringDictionary[Double | String | Boolean]
   

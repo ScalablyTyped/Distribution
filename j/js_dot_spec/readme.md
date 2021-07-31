@@ -12,7 +12,7 @@ clojure.spec for Javascript
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 11052 |
+| # downloads        | 14463 |
 | # stars            | 0 |
 
 ## Links

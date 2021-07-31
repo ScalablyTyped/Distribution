@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Splitter extends Widget_ {
+trait Splitter
+  extends StObject
+     with Widget_ {
   
   /** To add a new pane to splitter control.
     * @param {string} content of pane.
@@ -47,32 +48,31 @@ trait Splitter extends Widget_ {
 }
 object Splitter {
   
-  @js.native
   trait BeforeExpandCollapseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns collapsed pane details.
       */
-    var collapsed: js.UndefOr[js.Any] = js.native
+    var collapsed: js.UndefOr[js.Any] = js.undefined
     
     /** returns expanded pane details.
       */
-    var expanded: js.UndefOr[js.Any] = js.native
+    var expanded: js.UndefOr[js.Any] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current split bar index.
       */
-    var splitbarIndex: js.UndefOr[Double] = js.native
+    var splitbarIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeExpandCollapseEventArgs {
     
@@ -123,24 +123,23 @@ object Splitter {
     }
   }
   
-  @js.native
   trait ClickOnExpanderEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element from which click action is triggered.
       */
-    var targetElement: js.UndefOr[js.Any] = js.native
+    var targetElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickOnExpanderEventArgs {
     
@@ -179,20 +178,19 @@ object Splitter {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -225,20 +223,19 @@ object Splitter {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -271,32 +268,31 @@ object Splitter {
     }
   }
   
-  @js.native
   trait ExpandCollapseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns collapsed pane details.
       */
-    var collapsed: js.UndefOr[js.Any] = js.native
+    var collapsed: js.UndefOr[js.Any] = js.undefined
     
     /** returns expanded pane details.
       */
-    var expanded: js.UndefOr[js.Any] = js.native
+    var expanded: js.UndefOr[js.Any] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current split bar index.
       */
-    var splitbarIndex: js.UndefOr[Double] = js.native
+    var splitbarIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ExpandCollapseEventArgs {
     
@@ -347,92 +343,91 @@ object Splitter {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Turns on keyboard interaction with the Splitter panes. You must set this property to true to access the keyboard shortcuts of ejSplitter.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify animation speed for the Splitter pane movement, while collapsing and expanding.
       * @Default {300}
       */
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Fires before expanding / collapsing the split pane of splitter control.
       */
-    var beforeExpandCollapse: js.UndefOr[js.Function1[/* e */ BeforeExpandCollapseEventArgs, Unit]] = js.native
+    var beforeExpandCollapse: js.UndefOr[js.Function1[/* e */ BeforeExpandCollapseEventArgs, Unit]] = js.undefined
     
     /** Triggered when we click on the template icon. (Note: This will work only when expanderTemplate is defined.)
       */
-    var clickOnExpander: js.UndefOr[js.Function1[/* e */ ClickOnExpanderEventArgs, Unit]] = js.native
+    var clickOnExpander: js.UndefOr[js.Function1[/* e */ ClickOnExpanderEventArgs, Unit]] = js.undefined
     
     /** Fires when splitter control pane has been created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to splitter control to achieve custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when splitter control pane has been destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the animation behavior of the splitter.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the splitter control to be displayed in right to left direction.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when expand / collapse operation in splitter control pane has been performed successfully.
       */
-    var expandCollapse: js.UndefOr[js.Function1[/* e */ ExpandCollapseEventArgs, Unit]] = js.native
+    var expandCollapse: js.UndefOr[js.Function1[/* e */ ExpandCollapseEventArgs, Unit]] = js.undefined
     
     /** Specifies HTML element string to replace the existing expand/collapse icons.
       * @Default {null}
       */
-    var expanderTemplate: js.UndefOr[String] = js.native
+    var expanderTemplate: js.UndefOr[String] = js.undefined
     
     /** Specify height for splitter control.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML Attributes of the Splitter.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specify window resizing behavior for splitter control.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the orientation for splitter control. See orientation
       * @Default {ej.orientation.Horizontal or â€œhorizontalâ€}
       */
-    var orientation: js.UndefOr[Orientation | String] = js.native
+    var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Specify properties for each pane like paneSize, minSize, maxSize, collapsible, expandable, resizable.
       * @Default {[]}
       */
-    var properties: js.UndefOr[js.Array[_]] = js.native
+    var properties: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Fires when resize in splitter control pane.
       */
-    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.undefined
     
     /** Specify width for splitter control.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -536,7 +531,7 @@ object Splitter {
       def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
       @scala.inline
-      def setProperties(value: js.Array[_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      def setProperties(value: js.Array[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -558,32 +553,31 @@ object Splitter {
     }
   }
   
-  @js.native
   trait ResizeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the splitter model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns next pane details.
       */
-    var nextPane: js.UndefOr[js.Any] = js.native
+    var nextPane: js.UndefOr[js.Any] = js.undefined
     
     /** returns previous pane details.
       */
-    var prevPane: js.UndefOr[js.Any] = js.native
+    var prevPane: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current split bar index.
       */
-    var splitbarIndex: js.UndefOr[Double] = js.native
+    var splitbarIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeEventArgs {
     

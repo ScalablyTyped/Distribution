@@ -2,51 +2,49 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Album extends StObject {
   
-  var account_id: js.UndefOr[Double] = js.native
+  var account_id: js.UndefOr[Double] = js.undefined
   
-  var account_url: js.UndefOr[String] = js.native
+  var account_url: js.UndefOr[String] = js.undefined
   
-  var cover: String = js.native
+  var cover: String
   
-  var cover_height: Double = js.native
+  var cover_height: Double
   
-  var cover_width: Double = js.native
+  var cover_width: Double
   
-  var datetime: Double = js.native
+  var datetime: Double
   
-  var deletehash: js.UndefOr[String] = js.native
+  var deletehash: js.UndefOr[String] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var favorite: Boolean = js.native
+  var favorite: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var images_count: Double = js.native
+  var images_count: Double
   
-  var layout: String = js.native
+  var layout: String
   
-  var link: String = js.native
+  var link: String
   
-  var nsfw: js.UndefOr[Boolean] = js.native
+  var nsfw: js.UndefOr[Boolean] = js.undefined
   
-  var order: Double = js.native
+  var order: Double
   
-  var privacy: String = js.native
+  var privacy: String
   
-  var section: String = js.native
+  var section: String
   
-  var title: String = js.native
+  var title: String
   
-  var views: Double = js.native
+  var views: Double
 }
 object Album {
   

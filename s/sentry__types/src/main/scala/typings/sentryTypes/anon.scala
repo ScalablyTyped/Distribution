@@ -10,31 +10,29 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[Environment] = js.native
+    var attrs: js.UndefOr[Environment] = js.undefined
     
-    var did: js.UndefOr[String] = js.native
+    var did: js.UndefOr[String] = js.undefined
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var errors: Double = js.native
+    var errors: Double
     
-    var init: Boolean = js.native
+    var init: Boolean
     
-    var sid: String = js.native
+    var sid: String
     
-    var started: String = js.native
+    var started: String
     
-    var status: SessionStatus = js.native
+    var status: SessionStatus
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object Attrs {
     
@@ -90,24 +88,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var op: js.UndefOr[String] = js.native
+    var op: js.UndefOr[String] = js.undefined
     
-    var parent_span_id: js.UndefOr[String] = js.native
+    var parent_span_id: js.UndefOr[String] = js.undefined
     
-    var span_id: String = js.native
+    var span_id: String
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var trace_id: String = js.native
+    var trace_id: String
   }
   object Data {
     
@@ -164,28 +161,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var op: js.UndefOr[String] = js.native
+    var op: js.UndefOr[String] = js.undefined
     
-    var parent_span_id: js.UndefOr[String] = js.native
+    var parent_span_id: js.UndefOr[String] = js.undefined
     
-    var span_id: String = js.native
+    var span_id: String
     
-    var start_timestamp: Double = js.native
+    var start_timestamp: Double
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var trace_id: String = js.native
+    var trace_id: String
   }
   object Description {
     
@@ -251,16 +247,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Environment extends StObject {
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var ip_address: js.UndefOr[String] = js.native
+    var ip_address: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var user_agent: js.UndefOr[String] = js.native
+    var user_agent: js.UndefOr[String] = js.undefined
   }
   object Environment {
     
@@ -300,20 +295,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@sentry/types.@sentry/types/dist/scope.ScopeContext> */
-  @js.native
-  trait PartialScopeContext extends _CaptureContext {
+  trait PartialScopeContext
+    extends StObject
+       with _CaptureContext {
     
-    var contexts: js.UndefOr[Contexts] = js.native
+    var contexts: js.UndefOr[Contexts] = js.undefined
     
-    var extra: js.UndefOr[Extras] = js.native
+    var extra: js.UndefOr[Extras] = js.undefined
     
-    var fingerprint: js.UndefOr[js.Array[String]] = js.native
+    var fingerprint: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[Severity] = js.native
+    var level: js.UndefOr[Severity] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var user: js.UndefOr[User] = js.native
+    var user: js.UndefOr[User] = js.undefined
   }
   object PartialScopeContext {
     
@@ -368,22 +364,21 @@ object anon {
   }
   
   /* Inlined std.Pick<@sentry/types.@sentry/types/dist/span.SpanContext, std.Exclude<keyof @sentry/types.@sentry/types/dist/span.SpanContext, 'spanId' | 'sampled' | 'traceId' | 'parentSpanId'>> */
-  @js.native
   trait PickSpanContextExcludekey extends StObject {
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var endTimestamp: js.UndefOr[Double] = js.native
+    var endTimestamp: js.UndefOr[Double] = js.undefined
     
-    var op: js.UndefOr[String] = js.native
+    var op: js.UndefOr[String] = js.undefined
     
-    var startTimestamp: js.UndefOr[Double] = js.native
+    var startTimestamp: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object PickSpanContextExcludekey {
     
@@ -440,10 +435,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object Value {
     
@@ -461,10 +455,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Values extends StObject {
     
-    var values: js.UndefOr[js.Array[Exception]] = js.native
+    var values: js.UndefOr[js.Array[Exception]] = js.undefined
   }
   object Values {
     

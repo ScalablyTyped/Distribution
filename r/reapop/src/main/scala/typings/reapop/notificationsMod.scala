@@ -5,24 +5,23 @@ import typings.reapop.typesMod.NewNotification
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsMod {
   
-  @JSImport("reapop/dist/services/notifications", "generateId")
+  @JSImport("reapop/dist/services/notifications", JSImport.Namespace)
   @js.native
-  def generateId(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reapop/dist/services/notifications", "prepareNotification")
-  @js.native
-  def prepareNotification(notification: NewNotification): Notification = js.native
+  @scala.inline
+  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   
-  @JSImport("reapop/dist/services/notifications", "resetNotificationsConfig")
-  @js.native
-  def resetNotificationsConfig(): Unit = js.native
+  @scala.inline
+  def prepareNotification(notification: NewNotification): Notification = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Notification]
   
-  @JSImport("reapop/dist/services/notifications", "setUpNotifications")
-  @js.native
-  def setUpNotifications(props: PartialNotificationConfig): Unit = js.native
+  @scala.inline
+  def resetNotificationsConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetNotificationsConfig")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def setUpNotifications(props: PartialNotificationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpNotifications")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

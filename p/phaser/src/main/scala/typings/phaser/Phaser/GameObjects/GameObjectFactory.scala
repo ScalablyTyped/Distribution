@@ -19,7 +19,6 @@ import typings.phaser.integer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -100,31 +99,17 @@ trait GameObjectFactory extends StObject {
     * @param align The alignment of the text in a multi-line BitmapText object. Default 0.
     */
   def bitmapText(x: Double, y: Double, font: String): BitmapText = js.native
-  def bitmapText(
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.UndefOr[scala.Nothing],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: js.UndefOr[scala.Nothing], size: Double): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: js.UndefOr[scala.Nothing], size: Double, align: integer): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: String): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: String, size: js.UndefOr[scala.Nothing], align: integer): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: String, size: Double): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: String, size: Double, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: String, size: Unit, align: integer): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String]): BitmapText = js.native
-  def bitmapText(
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Unit, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Double): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Double, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer): BitmapText = js.native
   
   /**
     * Creates a new Blitter Game Object and adds it to the Scene.
@@ -152,108 +137,37 @@ trait GameObjectFactory extends StObject {
     * @param fillAlpha The alpha the circle will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
   def circle(): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: Double
-  ): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    radius: Double,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double, fillColor: Double): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    radius: Double,
-    fillColor: Double,
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: Double): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: Double, radius: js.UndefOr[scala.Nothing], fillColor: Double): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: Double, radius: Double): Arc = js.native
-  def circle(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    radius: Double,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: Double, radius: Double, fillColor: Double): Arc = js.native
-  def circle(x: js.UndefOr[scala.Nothing], y: Double, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
   def circle(x: Double): Arc = js.native
-  def circle(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: Double, y: js.UndefOr[scala.Nothing], radius: js.UndefOr[scala.Nothing], fillColor: Double): Arc = js.native
-  def circle(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: Double, y: js.UndefOr[scala.Nothing], radius: Double): Arc = js.native
-  def circle(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    radius: Double,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: Double, y: js.UndefOr[scala.Nothing], radius: Double, fillColor: Double): Arc = js.native
-  def circle(x: Double, y: js.UndefOr[scala.Nothing], radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
   def circle(x: Double, y: Double): Arc = js.native
-  def circle(
-    x: Double,
-    y: Double,
-    radius: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Arc = js.native
-  def circle(x: Double, y: Double, radius: js.UndefOr[scala.Nothing], fillColor: Double): Arc = js.native
-  def circle(x: Double, y: Double, radius: js.UndefOr[scala.Nothing], fillColor: Double, fillAlpha: Double): Arc = js.native
   def circle(x: Double, y: Double, radius: Double): Arc = js.native
-  def circle(x: Double, y: Double, radius: Double, fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): Arc = js.native
   def circle(x: Double, y: Double, radius: Double, fillColor: Double): Arc = js.native
   def circle(x: Double, y: Double, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Double, radius: Double, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Double, radius: Unit, fillColor: Double): Arc = js.native
+  def circle(x: Double, y: Double, radius: Unit, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Double, radius: Unit, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Double, fillColor: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Double, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Unit, fillColor: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Unit, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Double, y: Unit, radius: Unit, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Double, fillColor: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Double, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Unit, fillColor: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Unit, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Double, radius: Unit, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Double, fillColor: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Double, fillColor: Unit, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Unit, fillColor: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Unit, fillColor: Double, fillAlpha: Double): Arc = js.native
+  def circle(x: Unit, y: Unit, radius: Unit, fillColor: Unit, fillAlpha: Double): Arc = js.native
   
   /**
     * Creates a new Container Game Object and adds it to the Scene.
@@ -264,17 +178,17 @@ trait GameObjectFactory extends StObject {
     * @param children An optional array of Game Objects to add to this Container.
     */
   def container(): Container = js.native
-  def container(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], children: js.Array[GameObject]): Container = js.native
-  def container(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], children: GameObject): Container = js.native
-  def container(x: js.UndefOr[scala.Nothing], y: Double): Container = js.native
-  def container(x: js.UndefOr[scala.Nothing], y: Double, children: js.Array[GameObject]): Container = js.native
-  def container(x: js.UndefOr[scala.Nothing], y: Double, children: GameObject): Container = js.native
   def container(x: Double): Container = js.native
-  def container(x: Double, y: js.UndefOr[scala.Nothing], children: js.Array[GameObject]): Container = js.native
-  def container(x: Double, y: js.UndefOr[scala.Nothing], children: GameObject): Container = js.native
   def container(x: Double, y: Double): Container = js.native
   def container(x: Double, y: Double, children: js.Array[GameObject]): Container = js.native
   def container(x: Double, y: Double, children: GameObject): Container = js.native
+  def container(x: Double, y: Unit, children: js.Array[GameObject]): Container = js.native
+  def container(x: Double, y: Unit, children: GameObject): Container = js.native
+  def container(x: Unit, y: Double): Container = js.native
+  def container(x: Unit, y: Double, children: js.Array[GameObject]): Container = js.native
+  def container(x: Unit, y: Double, children: GameObject): Container = js.native
+  def container(x: Unit, y: Unit, children: js.Array[GameObject]): Container = js.native
+  def container(x: Unit, y: Unit, children: GameObject): Container = js.native
   
   /**
     * Creates a new Curve Shape Game Object and adds it to the Scene.
@@ -302,143 +216,12 @@ trait GameObjectFactory extends StObject {
     * @param fillAlpha The alpha the curve will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
   def curve(): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: js.UndefOr[scala.Nothing], y: Double): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: js.UndefOr[scala.Nothing], y: Double, curve: js.UndefOr[scala.Nothing], fillColor: Double): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: js.UndefOr[scala.Nothing], y: Double, curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double
-  ): Curve = js.native
-  def curve(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
   def curve(x: Double): Curve = js.native
-  def curve(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: Double, y: js.UndefOr[scala.Nothing], curve: js.UndefOr[scala.Nothing], fillColor: Double): Curve = js.native
-  def curve(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: Double, y: js.UndefOr[scala.Nothing], curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
-  def curve(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double
-  ): Curve = js.native
-  def curve(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: Double,
-    fillAlpha: Double
-  ): Curve = js.native
   def curve(x: Double, y: Double): Curve = js.native
-  def curve(
-    x: Double,
-    y: Double,
-    curve: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
-  def curve(x: Double, y: Double, curve: js.UndefOr[scala.Nothing], fillColor: Double): Curve = js.native
-  def curve(x: Double, y: Double, curve: js.UndefOr[scala.Nothing], fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Double, y: Double, curve: Unit, fillColor: Double): Curve = js.native
+  def curve(x: Double, y: Double, curve: Unit, fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Double, y: Double, curve: Unit, fillColor: Unit, fillAlpha: Double): Curve = js.native
   def curve(x: Double, y: Double, curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
-  def curve(
-    x: Double,
-    y: Double,
-    curve: typings.phaser.Phaser.Curves.Curve,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Curve = js.native
   def curve(x: Double, y: Double, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Double): Curve = js.native
   def curve(
     x: Double,
@@ -447,6 +230,47 @@ trait GameObjectFactory extends StObject {
     fillColor: Double,
     fillAlpha: Double
   ): Curve = js.native
+  def curve(
+    x: Double,
+    y: Double,
+    curve: typings.phaser.Phaser.Curves.Curve,
+    fillColor: Unit,
+    fillAlpha: Double
+  ): Curve = js.native
+  def curve(x: Double, y: Unit, curve: Unit, fillColor: Double): Curve = js.native
+  def curve(x: Double, y: Unit, curve: Unit, fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Double, y: Unit, curve: Unit, fillColor: Unit, fillAlpha: Double): Curve = js.native
+  def curve(x: Double, y: Unit, curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
+  def curve(x: Double, y: Unit, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Double): Curve = js.native
+  def curve(
+    x: Double,
+    y: Unit,
+    curve: typings.phaser.Phaser.Curves.Curve,
+    fillColor: Double,
+    fillAlpha: Double
+  ): Curve = js.native
+  def curve(x: Double, y: Unit, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Unit, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Double): Curve = js.native
+  def curve(x: Unit, y: Double, curve: Unit, fillColor: Double): Curve = js.native
+  def curve(x: Unit, y: Double, curve: Unit, fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Double, curve: Unit, fillColor: Unit, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Double, curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
+  def curve(x: Unit, y: Double, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Double): Curve = js.native
+  def curve(
+    x: Unit,
+    y: Double,
+    curve: typings.phaser.Phaser.Curves.Curve,
+    fillColor: Double,
+    fillAlpha: Double
+  ): Curve = js.native
+  def curve(x: Unit, y: Double, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Unit, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: Unit, fillColor: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: Unit, fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: Unit, fillColor: Unit, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: typings.phaser.Phaser.Curves.Curve): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Double, fillAlpha: Double): Curve = js.native
+  def curve(x: Unit, y: Unit, curve: typings.phaser.Phaser.Curves.Curve, fillColor: Unit, fillAlpha: Double): Curve = js.native
   
   /**
     * A reference to the Scene Display List.
@@ -514,29 +338,23 @@ trait GameObjectFactory extends StObject {
     * @param innerText If given, will be set directly as the elements `innerText` property value, replacing whatever was there before.
     */
   def dom(x: Double, y: Double): DOMElement = js.native
-  def dom(
-    x: Double,
-    y: Double,
-    element: js.UndefOr[scala.Nothing],
-    style: js.UndefOr[scala.Nothing],
-    innerText: String
-  ): DOMElement = js.native
-  def dom(x: Double, y: Double, element: js.UndefOr[scala.Nothing], style: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: js.UndefOr[scala.Nothing], style: String, innerText: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: js.UndefOr[scala.Nothing], style: js.Any): DOMElement = js.native
-  def dom(x: Double, y: Double, element: js.UndefOr[scala.Nothing], style: js.Any, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: String, style: js.UndefOr[scala.Nothing], innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: String, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: js.Any): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: String, style: Unit, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: String, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: js.Any): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: Unit, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement): DOMElement = js.native
-  def dom(x: Double, y: Double, element: HTMLElement, style: js.UndefOr[scala.Nothing], innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: String, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: js.Any): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: HTMLElement, style: Unit, innerText: String): DOMElement = js.native
   
   /**
     * Creates a new Dynamic Bitmap Text Game Object and adds it to the Scene.
@@ -575,11 +393,11 @@ trait GameObjectFactory extends StObject {
     * @param size The font size to set.
     */
   def dynamicBitmapText(x: Double, y: Double, font: String): DynamicBitmapText = js.native
-  def dynamicBitmapText(x: Double, y: Double, font: String, text: js.UndefOr[scala.Nothing], size: Double): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: String): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: String, size: Double): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: js.Array[String]): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double): DynamicBitmapText = js.native
+  def dynamicBitmapText(x: Double, y: Double, font: String, text: Unit, size: Double): DynamicBitmapText = js.native
   
   /**
     * Creates a new Ellipse Shape Game Object and adds it to the Scene.
@@ -711,11 +529,11 @@ trait GameObjectFactory extends StObject {
     * @param config A Group Configuration object.
     */
   def group(): Group = js.native
-  def group(children: js.UndefOr[scala.Nothing], config: GroupConfig): Group = js.native
-  def group(children: js.UndefOr[scala.Nothing], config: GroupCreateConfig): Group = js.native
   def group(children: js.Array[GameObject | GroupConfig]): Group = js.native
   def group(children: js.Array[GameObject | GroupConfig], config: GroupConfig): Group = js.native
   def group(children: js.Array[GameObject | GroupConfig], config: GroupCreateConfig): Group = js.native
+  def group(children: Unit, config: GroupConfig): Group = js.native
+  def group(children: Unit, config: GroupCreateConfig): Group = js.native
   def group(children: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupCreateConfig): Group = js.native
@@ -929,26 +747,26 @@ trait GameObjectFactory extends StObject {
     * @param emitters Configuration settings for one or more emitters to create.
     */
   def particles(texture: String): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: js.UndefOr[scala.Nothing], emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: js.UndefOr[scala.Nothing], emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: String, frame: String): ParticleEmitterManager = js.native
   def particles(texture: String, frame: String, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: String, frame: String, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: String, frame: js.Object): ParticleEmitterManager = js.native
   def particles(texture: String, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: String, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  def particles(texture: String, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
+  def particles(texture: String, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: String, frame: integer): ParticleEmitterManager = js.native
   def particles(texture: String, frame: integer, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: String, frame: integer, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: js.UndefOr[scala.Nothing], emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: js.UndefOr[scala.Nothing], emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: String): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: String, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: String, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: js.Object): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  def particles(texture: Texture, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
+  def particles(texture: Texture, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: integer): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: integer, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: integer, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
@@ -989,108 +807,37 @@ trait GameObjectFactory extends StObject {
     * @param fillAlpha The alpha the polygon will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
   def polygon(): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    points: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    points: js.UndefOr[scala.Nothing],
-    fillColor: Double
-  ): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    points: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], points: js.Any): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    points: js.Any,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    points: js.Any,
-    fillColor: Double,
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: Double): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    points: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: Double, points: js.UndefOr[scala.Nothing], fillColor: Double): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    points: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: Double, points: js.Any): Polygon = js.native
-  def polygon(
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    points: js.Any,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: Double, points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: js.UndefOr[scala.Nothing], y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double): Polygon = js.native
-  def polygon(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    points: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: Double, y: js.UndefOr[scala.Nothing], points: js.UndefOr[scala.Nothing], fillColor: Double): Polygon = js.native
-  def polygon(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    points: js.UndefOr[scala.Nothing],
-    fillColor: Double,
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: Double, y: js.UndefOr[scala.Nothing], points: js.Any): Polygon = js.native
-  def polygon(
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    points: js.Any,
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: Double, y: js.UndefOr[scala.Nothing], points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: Double, y: js.UndefOr[scala.Nothing], points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double): Polygon = js.native
-  def polygon(
-    x: Double,
-    y: Double,
-    points: js.UndefOr[scala.Nothing],
-    fillColor: js.UndefOr[scala.Nothing],
-    fillAlpha: Double
-  ): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.UndefOr[scala.Nothing], fillColor: Double): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.UndefOr[scala.Nothing], fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: js.Any): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.Any, fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: js.Any, fillColor: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Unit, fillColor: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: js.Any): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Unit, fillColor: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: js.Any): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Unit, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: js.Any): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Unit, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   
   /**
     * Creates a new Quad Game Object and adds it to the Scene.
@@ -1151,7 +898,7 @@ trait GameObjectFactory extends StObject {
     * @param height The height of the Render Texture. Default 32.
     */
   def renderTexture(x: Double, y: Double): RenderTexture = js.native
-  def renderTexture(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: integer): RenderTexture = js.native
+  def renderTexture(x: Double, y: Double, width: Unit, height: integer): RenderTexture = js.native
   def renderTexture(x: Double, y: Double, width: integer): RenderTexture = js.native
   def renderTexture(x: Double, y: Double, width: integer, height: integer): RenderTexture = js.native
   
@@ -1207,19 +954,13 @@ trait GameObjectFactory extends StObject {
   ): Shader = js.native
   
   def spine(x: Double, y: Double): SpineGameObject = js.native
-  def spine(
-    x: Double,
-    y: Double,
-    key: js.UndefOr[scala.Nothing],
-    aimationName: js.UndefOr[scala.Nothing],
-    loop: Boolean
-  ): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: js.UndefOr[scala.Nothing], aimationName: String): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: js.UndefOr[scala.Nothing], aimationName: String, loop: Boolean): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: String, aimationName: js.UndefOr[scala.Nothing], loop: Boolean): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String, aimationName: String): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String, aimationName: String, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, aimationName: Unit, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, aimationName: String): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, aimationName: String, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, aimationName: Unit, loop: Boolean): SpineGameObject = js.native
   
   /**
     * Creates a new Sprite Game Object and adds it to the Scene.

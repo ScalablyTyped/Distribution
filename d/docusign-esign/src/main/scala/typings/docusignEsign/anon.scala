@@ -2,17 +2,15 @@ package typings.docusignEsign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BasePath extends StObject {
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var oAuthBasePath: String = js.native
+    var oAuthBasePath: String
   }
   object BasePath {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BasePathDEMO extends StObject {
     
-    var BasePath: DEMO = js.native
+    var BasePath: DEMO
   }
   object BasePathDEMO {
     
@@ -54,18 +51,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CSV extends StObject {
     
-    var CSV: String = js.native
+    var CSV: String
     
-    var MULTI: String = js.native
+    var MULTI: String
     
-    var PIPES: String = js.native
+    var PIPES: String
     
-    var SSV: String = js.native
+    var SSV: String
     
-    var TSV: String = js.native
+    var TSV: String
   }
   object CSV {
     
@@ -95,14 +91,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DEMO extends StObject {
     
-    var DEMO: String = js.native
+    var DEMO: String
     
-    var PRODUCTION: String = js.native
+    var PRODUCTION: String
     
-    var STAGE: String = js.native
+    var STAGE: String
   }
   object DEMO {
     
@@ -126,16 +121,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Include extends StObject {
     
-    var include: js.UndefOr[String] = js.native
+    var include: js.UndefOr[String] = js.undefined
     
-    var includeItems: js.UndefOr[String] = js.native
+    var includeItems: js.UndefOr[String] = js.undefined
     
-    var startPosition: js.UndefOr[String] = js.native
+    var startPosition: js.UndefOr[String] = js.undefined
     
-    var userFilter: js.UndefOr[String] = js.native
+    var userFilter: js.UndefOr[String] = js.undefined
   }
   object Include {
     
@@ -174,10 +168,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IncludeItems extends StObject {
     
-    var includeItems: js.UndefOr[String] = js.native
+    var includeItems: js.UndefOr[String] = js.undefined
   }
   object IncludeItems {
     

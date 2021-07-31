@@ -1,17 +1,15 @@
 package typings.rollup.mod
 
-import typings.rollup.rollupStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _SourceMapInput extends StObject
 object _SourceMapInput {
   
   @scala.inline
-  def `0`(mappings: _empty): typings.rollup.anon.`0` = {
-    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
+  def `0`(): typings.rollup.anon.`0` = {
+    val __obj = js.Dynamic.literal(mappings = "")
     __obj.asInstanceOf[typings.rollup.anon.`0`]
   }
   

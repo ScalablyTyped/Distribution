@@ -3,17 +3,18 @@ package typings.facepaint
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(breakpoints: js.Array[Selector]): DynamicStyleFunction = ^.asInstanceOf[js.Dynamic].apply(breakpoints.asInstanceOf[js.Any]).asInstanceOf[DynamicStyleFunction]
+  @scala.inline
+  def apply(breakpoints: js.Array[Selector], options: Options): DynamicStyleFunction = (^.asInstanceOf[js.Dynamic].apply(breakpoints.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DynamicStyleFunction]
+  
   @JSImport("facepaint", JSImport.Namespace)
   @js.native
-  def apply(breakpoints: js.Array[Selector]): DynamicStyleFunction = js.native
-  @JSImport("facepaint", JSImport.Namespace)
-  @js.native
-  def apply(breakpoints: js.Array[Selector], options: Options): DynamicStyleFunction = js.native
+  val ^ : js.Any = js.native
   
   type Arg = BaseArg | js.Array[BaseArg]
   
@@ -23,12 +24,11 @@ object mod {
   
   type DynamicStyleFunction = js.Function1[/* repeated */ Arg, js.Array[DynamicStyle]]
   
-  @js.native
   trait Options extends StObject {
     
-    var literal: js.UndefOr[Boolean] = js.native
+    var literal: js.UndefOr[Boolean] = js.undefined
     
-    var overlap: js.UndefOr[Boolean] = js.native
+    var overlap: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

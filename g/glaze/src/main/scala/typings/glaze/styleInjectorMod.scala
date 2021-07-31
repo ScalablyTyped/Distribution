@@ -4,65 +4,104 @@ import typings.glaze.ruleManagerMod.RuleManager
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleInjectorMod {
   
   @JSImport("glaze/dist-types/StyleInjector", "DebuggableStyleInjector")
   @js.native
-  class DebuggableStyleInjector () extends StyleInjector {
+  class DebuggableStyleInjector ()
+    extends StObject
+       with StyleInjector {
+    
+    /* CompleteClass */
+    override def addRule(cssText: String): Double = js.native
     
     var freeIndexes: js.Any = js.native
     
     var nodes: js.Any = js.native
     
+    /* CompleteClass */
+    override def nullifyRule(index: Double): Unit = js.native
+    
     def replaceRule(index: Double, cssText: String): Double = js.native
+    
+    /* CompleteClass */
+    var ruleManager: RuleManager = js.native
     
     var styleEl: js.Any = js.native
   }
   
   @JSImport("glaze/dist-types/StyleInjector", "NullStyleInjector")
   @js.native
-  class NullStyleInjector () extends StyleInjector {
+  class NullStyleInjector ()
+    extends StObject
+       with StyleInjector {
     
     def addRule(): Double = js.native
+    /* CompleteClass */
+    override def addRule(cssText: String): Double = js.native
     
     def nullifyRule(): Unit = js.native
+    /* CompleteClass */
+    override def nullifyRule(index: Double): Unit = js.native
+    
+    /* CompleteClass */
+    var ruleManager: RuleManager = js.native
   }
   
   @JSImport("glaze/dist-types/StyleInjector", "OptimizedStyleInjector")
   @js.native
-  class OptimizedStyleInjector () extends StyleInjector {
+  class OptimizedStyleInjector ()
+    extends StObject
+       with StyleInjector {
+    
+    /* CompleteClass */
+    override def addRule(cssText: String): Double = js.native
     
     var freeIndexes: js.Any = js.native
+    
+    /* CompleteClass */
+    override def nullifyRule(index: Double): Unit = js.native
     
     def replaceRule(index: Double, cssText: String): Double = js.native
     
     var ruleCount: js.Any = js.native
+    
+    /* CompleteClass */
+    var ruleManager: RuleManager = js.native
     
     var sheet: js.Any = js.native
   }
   
   @JSImport("glaze/dist-types/StyleInjector", "VirtualStyleInjector")
   @js.native
-  class VirtualStyleInjector () extends StyleInjector {
+  class VirtualStyleInjector ()
+    extends StObject
+       with StyleInjector {
+    
+    /* CompleteClass */
+    override def addRule(cssText: String): Double = js.native
     
     var cssTexts: js.Any = js.native
     
     def getStyleElement(): Element = js.native
     
     def nullifyRule(): Unit = js.native
+    /* CompleteClass */
+    override def nullifyRule(index: Double): Unit = js.native
+    
+    /* CompleteClass */
+    var ruleManager: RuleManager = js.native
   }
   
-  @js.native
   trait StyleInjector extends StObject {
     
-    def addRule(cssText: String): Double = js.native
+    def addRule(cssText: String): Double
     
-    def nullifyRule(index: Double): Unit = js.native
+    def nullifyRule(index: Double): Unit
     
-    var ruleManager: RuleManager = js.native
+    var ruleManager: RuleManager
   }
   object StyleInjector {
     

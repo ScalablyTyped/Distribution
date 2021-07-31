@@ -10,33 +10,35 @@ import typings.passportWindowsauth.anon.OptionspassReqToCallbackt
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-windowsauth", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Strategy {
+  class ^ protected ()
+    extends StObject
+       with Strategy {
     def this(verify: Verify) = this()
     def this(options: OptionspassReqToCallbackt, verify: VerifyWithReq) = this()
     def this(options: Options, verify: Verify) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.native
+    var getUserNameFromHeader: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+      ] = js.undefined
     
-    var integrated: js.UndefOr[Boolean] = js.native
+    var integrated: js.UndefOr[Boolean] = js.undefined
     
-    var ldap: js.UndefOr[Base] = js.native
+    var ldap: js.UndefOr[Base] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
-    var passwordField: js.UndefOr[String] = js.native
+    var passwordField: js.UndefOr[String] = js.undefined
     
-    var usernameField: js.UndefOr[String] = js.native
+    var usernameField: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -50,7 +52,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
+      def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetUserNameFromHeaderUndefined: Self = StObject.set(x, "getUserNameFromHeader", js.undefined)

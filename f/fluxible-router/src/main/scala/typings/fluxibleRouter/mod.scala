@@ -2,17 +2,19 @@ package typings.fluxibleRouter
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.dispatchr.mod.DispatcherInterface
-import typings.fluxible.baseStoreMod.^
 import typings.fluxible.mod.FluxibleContext
 import typings.fluxibleRouter.anon.TypeofComponent
 import typings.fluxibleRouter.anon.TypeofRouteStore
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fluxible-router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fluxible-router", "NavLink")
   @js.native
@@ -46,7 +48,7 @@ object mod {
   @JSImport("fluxible-router", "RouteStore")
   @js.native
   class RouteStore protected ()
-    extends ^[js.Object] {
+    extends typings.fluxible.baseStoreMod.^[js.Object] {
     def this(dispatcher: DispatcherInterface) = this()
     
     @JSName("dehydrate")
@@ -60,36 +62,42 @@ object mod {
   /* static members */
   object RouteStore {
     
-    @JSImport("fluxible-router", "RouteStore.withStaticRoutes")
+    @JSImport("fluxible-router", "RouteStore")
     @js.native
-    def withStaticRoutes(routes: js.Object): TypeofRouteStore = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def withStaticRoutes(routes: js.Object): TypeofRouteStore = ^.asInstanceOf[js.Dynamic].applyDynamic("withStaticRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[TypeofRouteStore]
   }
   
-  @JSImport("fluxible-router", "handleHistory")
-  @js.native
+  @scala.inline
   def handleHistory(
-    Component: TypeofComponent with (Instantiable1[
+    Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
     ])
-  ): TypeofComponent with (Instantiable1[
+  ): TypeofComponent & (Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
     Component[js.Object, js.Object, js.Object]
-  ]) = js.native
-  @JSImport("fluxible-router", "handleHistory")
-  @js.native
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    Component[js.Object, js.Object, js.Object]
+  ])]
+  @scala.inline
   def handleHistory(
-    Component: TypeofComponent with (Instantiable1[
+    Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
     ]),
     opts: js.Object
-  ): TypeofComponent with (Instantiable1[
+  ): TypeofComponent & (Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
     Component[js.Object, js.Object, js.Object]
-  ]) = js.native
+  ]) = (^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    Component[js.Object, js.Object, js.Object]
+  ])]
   
-  @JSImport("fluxible-router", "navigateAction")
-  @js.native
-  def navigateAction(context: FluxibleContext, params: js.Object): js.UndefOr[scala.Nothing] = js.native
+  @scala.inline
+  def navigateAction(context: FluxibleContext, params: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateAction")(context.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

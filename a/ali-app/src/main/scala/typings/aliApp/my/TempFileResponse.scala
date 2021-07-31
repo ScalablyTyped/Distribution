@@ -2,14 +2,12 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFileResponse extends StObject {
   
   /** 文件的临时路径 */
-  var apFilePath: String = js.native
+  var apFilePath: String
 }
 object TempFileResponse {
   

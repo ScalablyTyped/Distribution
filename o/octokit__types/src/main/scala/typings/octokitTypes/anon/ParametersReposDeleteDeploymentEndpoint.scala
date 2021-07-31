@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ReposDeleteDeploymentRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposDeleteDeploymentEndpoint extends StObject {
   
-  var parameters: ReposDeleteDeploymentEndpoint = js.native
+  var parameters: ReposDeleteDeploymentEndpoint
   
-  var request: ReposDeleteDeploymentRequestOptions = js.native
+  var request: ReposDeleteDeploymentRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersReposDeleteDeploymentEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersReposDeleteDeploymentEndpoint {
   def apply(
     parameters: ReposDeleteDeploymentEndpoint,
     request: ReposDeleteDeploymentRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersReposDeleteDeploymentEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersReposDeleteDeploymentEndpoint]
@@ -39,6 +37,6 @@ object ParametersReposDeleteDeploymentEndpoint {
     def setRequest(value: ReposDeleteDeploymentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

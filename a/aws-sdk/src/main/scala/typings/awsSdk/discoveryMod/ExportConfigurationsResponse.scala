@@ -2,16 +2,14 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportConfigurationsResponse extends StObject {
   
   /**
     * A unique identifier that you can use to query the export status.
     */
-  var exportId: js.UndefOr[ConfigurationsExportId] = js.native
+  var exportId: js.UndefOr[ConfigurationsExportId] = js.undefined
 }
 object ExportConfigurationsResponse {
   

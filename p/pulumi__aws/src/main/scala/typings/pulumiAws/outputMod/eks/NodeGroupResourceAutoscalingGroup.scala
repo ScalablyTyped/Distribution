@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupResourceAutoscalingGroup extends StObject {
   
   /**
     * Name of the EC2 Launch Template. Conflicts with `id`.
     */
-  var name: String = js.native
+  var name: String
 }
 object NodeGroupResourceAutoscalingGroup {
   

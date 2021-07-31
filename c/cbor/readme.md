@@ -10,13 +10,13 @@ Encode and parse data in the Concise Binary Object Representation (CBOR) data fo
 | ------------------ | :-------------: |
 | Full name          | cbor |
 | Keywords           | coap, cbor, json |
-| # releases         | 11 |
-| # dependents       | 131 |
-| # downloads        | 6369604 |
+| # releases         | 13 |
+| # dependents       | 159 |
+| # downloads        | 7122270 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](http://hildjj.github.io/node-cbor/)
+- [Homepage](https://github.com/hildjj/node-cbor/tree/master/packages/cbor)
 - [Bugs](https://github.com/hildjj/node-cbor/issues)
 - [Repository](https://github.com/hildjj/node-cbor)
 - [Npm](https://www.npmjs.com/package/cbor)

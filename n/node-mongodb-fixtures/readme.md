@@ -10,9 +10,9 @@ A package and CLI for MongoDB fixtures
 | ------------------ | :-------------: |
 | Full name          | node-mongodb-fixtures |
 | Keywords           | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 0 |
-| # downloads        | 104584 |
+| # downloads        | 111622 |
 | # stars            | 0 |
 
 ## Links

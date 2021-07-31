@@ -18,7 +18,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<paper.paper.PaperScope, std.Exclude<keyof paper.paper.PaperScope, 'PaperScript'>> */
@@ -32,7 +31,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Color")
   @js.native
   class Color protected ()
-    extends typings.paper.paper.Color {
+    extends StObject
+       with typings.paper.paper.Color {
     /** 
       * Creates a RGB Color object.
       * 
@@ -50,7 +50,7 @@ object paperCoreMod {
   }
   @JSImport("paper/dist/paper-core", "Color")
   @js.native
-  def Color: TypeofColor with (Instantiable4[
+  def Color: TypeofColor & (Instantiable4[
     /* red */ Double, 
     /* green */ Double, 
     /* blue */ Double, 
@@ -59,7 +59,7 @@ object paperCoreMod {
   ]) = js.native
   @scala.inline
   def Color_=(
-    x: TypeofColor with (Instantiable4[
+    x: TypeofColor & (Instantiable4[
       /* red */ Double, 
       /* green */ Double, 
       /* blue */ Double, 
@@ -72,7 +72,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "CompoundPath")
   @js.native
   class CompoundPath protected ()
-    extends typings.paper.paper.CompoundPath {
+    extends StObject
+       with typings.paper.paper.CompoundPath {
     /** 
       * Creates a new compound path item from SVG path-data and places it at the
       * top of the active layer.
@@ -92,7 +93,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Curve")
   @js.native
   class Curve protected ()
-    extends typings.paper.paper.Curve {
+    extends StObject
+       with typings.paper.paper.Curve {
     /** 
       * Creates a new curve object.
       */
@@ -110,12 +112,150 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "CurveLocation")
   @js.native
   class CurveLocation protected ()
-    extends typings.paper.paper.CurveLocation {
+    extends StObject
+       with typings.paper.paper.CurveLocation {
     /** 
       * Creates a new CurveLocation object.
       */
     def this(curve: typings.paper.paper.Curve, time: Double) = this()
     def this(curve: typings.paper.paper.Curve, time: Double, point: typings.paper.paper.Point) = this()
+    
+    /** 
+      * The curvature of the {@link #curve} at the given location.
+      */
+    /* CompleteClass */
+    override val curvature: Double = js.native
+    
+    /** 
+      * The curve that this location belongs to.
+      */
+    /* CompleteClass */
+    override val curve: typings.paper.paper.Curve = js.native
+    
+    /** 
+      * The length of the curve from its beginning up to the location described
+      * by this object.
+      */
+    /* CompleteClass */
+    override val curveOffset: Double = js.native
+    
+    /** 
+      * The distance from the queried point to the returned location.
+      * 
+      * @see Curve#getNearestLocation(point)
+      * @see PathItem#getNearestLocation(point)
+      */
+    /* CompleteClass */
+    override val distance: Double = js.native
+    
+    /** 
+      * Checks whether tow CurveLocation objects are describing the same location
+      * on a path, by applying the same tolerances as elsewhere when dealing with
+      * curve-time parameters.
+      * 
+      * @return true if the locations are equal
+      */
+    /* CompleteClass */
+    override def equals(location: typings.paper.paper.CurveLocation): Boolean = js.native
+    
+    /** 
+      * Checks if the location is an intersection with another curve and is
+      * part of an overlap between the two involved paths.
+      * 
+      * @see #isCrossing()
+      * @see #isTouching()
+      * 
+      * @return true if the location is an intersection that is
+      * part of an overlap between the two involved paths
+      */
+    /* CompleteClass */
+    override def hasOverlap(): Boolean = js.native
+    
+    /** 
+      * The index of the {@link #curve} within the {@link Path#curves} list, if
+      * it is part of a {@link Path} item.
+      */
+    /* CompleteClass */
+    override val index: Double = js.native
+    
+    /** 
+      * The curve location on the intersecting curve, if this location is the
+      * result of a call to {@link PathItem#getIntersections} /
+      * {@link Curve#getIntersections}.
+      */
+    /* CompleteClass */
+    override val intersection: typings.paper.paper.CurveLocation = js.native
+    
+    /** 
+      * Checks if the location is an intersection with another curve and is
+      * crossing the other curve, as opposed to just touching it.
+      * 
+      * @see #isTouching()
+      * 
+      * @return true if the location is an intersection that is
+      * crossing another curve
+      */
+    /* CompleteClass */
+    override def isCrossing(): Boolean = js.native
+    
+    /** 
+      * Checks if the location is an intersection with another curve and is
+      * merely touching the other curve, as opposed to crossing it.
+      * 
+      * @see #isCrossing()
+      * 
+      * @return true if the location is an intersection that is
+      * merely touching another curve
+      */
+    /* CompleteClass */
+    override def isTouching(): Boolean = js.native
+    
+    /** 
+      * The normal vector to the {@link #curve} at the given location.
+      */
+    /* CompleteClass */
+    override val normal: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The length of the path from its beginning up to the location described
+      * by this object. If the curve is not part of a path, then the length
+      * within the curve is returned instead.
+      */
+    /* CompleteClass */
+    override val offset: Double = js.native
+    
+    /** 
+      * The path that this locations is situated on.
+      */
+    /* CompleteClass */
+    override val path: typings.paper.paper.Path = js.native
+    
+    /** 
+      * The point which is defined by the {@link #curve} and
+      * {@link #time}.
+      */
+    /* CompleteClass */
+    override val point: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The segment of the curve which is closer to the described location.
+      */
+    /* CompleteClass */
+    override val segment: typings.paper.paper.Segment = js.native
+    
+    /** 
+      * The tangential vector to the {@link #curve} at the given location.
+      */
+    /* CompleteClass */
+    override val tangent: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The curve-time parameter, as used by various bezier curve calculations.
+      * It is value between `0` (beginning of the curve) and `1` (end of the
+      * curve).
+      */
+    /* CompleteClass */
+    override val time: Double = js.native
   }
   @JSImport("paper/dist/paper-core", "CurveLocation")
   @js.native
@@ -148,7 +288,47 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Event")
   @js.native
   class Event ()
-    extends typings.paper.paper.Event
+    extends StObject
+       with typings.paper.paper.Event {
+    
+    /** 
+      * The current state of the keyboard modifiers.
+      * 
+      * @see Key.modifiers
+      */
+    /* CompleteClass */
+    override val modifiers: js.Any = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, without stopping further
+      * propagation of the event.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, and stops stopping further
+      * propagation of the event. This is has the same effect as calling both
+      * {@link #stopPropagation} and {@link #preventDefault}.
+      * 
+      * Any handler can also return `false` to indicate that `stop()` should be
+      * called right after.
+      */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** 
+      * Prevents further propagation of the current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /** 
+      * The time at which the event was created, in milliseconds since the epoch.
+      */
+    /* CompleteClass */
+    override val timeStamp: Double = js.native
+  }
   @JSImport("paper/dist/paper-core", "Event")
   @js.native
   def Event: Instantiable0[typings.paper.paper.Event] = js.native
@@ -159,7 +339,29 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Gradient")
   @js.native
   class Gradient ()
-    extends typings.paper.paper.Gradient
+    extends StObject
+       with typings.paper.paper.Gradient {
+    
+    /** 
+      * Checks whether the gradient is equal to the supplied gradient.
+      * 
+      * @return true if they are equal
+      */
+    /* CompleteClass */
+    override def equals(gradient: typings.paper.paper.Gradient): Boolean = js.native
+    
+    /** 
+      * Specifies whether the gradient is radial or linear.
+      */
+    /* CompleteClass */
+    var radial: Boolean = js.native
+    
+    /** 
+      * The gradient stops on the gradient ramp.
+      */
+    /* CompleteClass */
+    var stops: js.Array[typings.paper.paper.GradientStop] = js.native
+  }
   @JSImport("paper/dist/paper-core", "Gradient")
   @js.native
   def Gradient: Instantiable0[typings.paper.paper.Gradient] = js.native
@@ -176,10 +378,23 @@ object paperCoreMod {
     * assignment.
     */
   class GradientStop ()
-    extends typings.paper.paper.GradientStop {
+    extends StObject
+       with typings.paper.paper.GradientStop {
     def this(color: typings.paper.paper.Color) = this()
-    def this(color: js.UndefOr[scala.Nothing], offset: Double) = this()
+    def this(color: Unit, offset: Double) = this()
     def this(color: typings.paper.paper.Color, offset: Double) = this()
+    
+    /** 
+      * The color of the gradient stop.
+      */
+    /* CompleteClass */
+    var color: typings.paper.paper.Color = js.native
+    
+    /** 
+      * The ramp-point of the gradient stop as a value between `0` and `1`.
+      */
+    /* CompleteClass */
+    var offset: Double = js.native
   }
   @JSImport("paper/dist/paper-core", "GradientStop")
   @js.native
@@ -210,7 +425,8 @@ object paperCoreMod {
     * newly created group
     */
   class Group ()
-    extends typings.paper.paper.Group {
+    extends StObject
+       with typings.paper.paper.Group {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
   }
   @JSImport("paper/dist/paper-core", "Group")
@@ -231,7 +447,58 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "HitResult")
   @js.native
   class HitResult ()
-    extends typings.paper.paper.HitResult
+    extends StObject
+       with typings.paper.paper.HitResult {
+    
+    /** 
+      * If the HitResult has a type of 'pixel', this property refers to the color
+      * of the pixel on the {@link Raster} that was hit.
+      */
+    /* CompleteClass */
+    var color: typings.paper.paper.Color | Null = js.native
+    
+    /** 
+      * The item that was hit.
+      */
+    /* CompleteClass */
+    var item: typings.paper.paper.Item = js.native
+    
+    /** 
+      * If the HitResult has a type of 'curve' or 'stroke', this property gives
+      * more information about the exact position that was hit on the path.
+      */
+    /* CompleteClass */
+    var location: typings.paper.paper.CurveLocation = js.native
+    
+    /** 
+      * If the HitResult has a {@link HitResult#type} of `'bounds'`, this
+      * property describes which corner of the bounding rectangle was hit.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** 
+      * Describes the actual coordinates of the segment, handle or bounding box
+      * corner that was hit.
+      */
+    /* CompleteClass */
+    var point: typings.paper.paper.Point = js.native
+    
+    /** 
+      * If the HitResult has a type of 'stroke', 'segment', 'handle-in' or
+      * 'handle-out', this property refers to the segment that was hit or that
+      * is closest to the hitResult.location on the curve.
+      */
+    /* CompleteClass */
+    var segment: typings.paper.paper.Segment = js.native
+    
+    /** 
+      * Describes the type of the hit result. For example, if you hit a segment
+      * point, the type would be `'segment'`.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   @JSImport("paper/dist/paper-core", "HitResult")
   @js.native
   def HitResult: Instantiable0[typings.paper.paper.HitResult] = js.native
@@ -242,7 +509,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Item")
   @js.native
   class Item ()
-    extends typings.paper.paper.Item
+    extends StObject
+       with typings.paper.paper.Item
   @JSImport("paper/dist/paper-core", "Item")
   @js.native
   def Item: Instantiable0[typings.paper.paper.Item] = js.native
@@ -253,16 +521,78 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Key")
   @js.native
   class Key ()
-    extends typings.paper.paper.Key
+    extends StObject
+       with typings.paper.paper.Key
   @JSImport("paper/dist/paper-core", "Key")
   @js.native
-  def Key: TypeofKey with Instantiable0[typings.paper.paper.Key] = js.native
+  def Key: TypeofKey & Instantiable0[typings.paper.paper.Key] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "KeyEvent")
   @js.native
   class KeyEvent ()
-    extends typings.paper.paper.KeyEvent
+    extends StObject
+       with typings.paper.paper.KeyEvent {
+    
+    /** 
+      * The character representation of the key that caused this key event,
+      * taking into account the current key-modifiers (e.g. shift, control,
+      * caps-lock, etc.)
+      */
+    /* CompleteClass */
+    var character: String = js.native
+    
+    /** 
+      * The key that caused this key event, either as a lower-case character or
+      * special key descriptor.
+      */
+    /* CompleteClass */
+    var key: String = js.native
+    
+    /** 
+      * The current state of the keyboard modifiers.
+      * 
+      * @see Key.modifiers
+      */
+    /* CompleteClass */
+    override val modifiers: js.Any = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, without stopping further
+      * propagation of the event.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, and stops stopping further
+      * propagation of the event. This is has the same effect as calling both
+      * {@link #stopPropagation} and {@link #preventDefault}.
+      * 
+      * Any handler can also return `false` to indicate that `stop()` should be
+      * called right after.
+      */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** 
+      * Prevents further propagation of the current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /** 
+      * The time at which the event was created, in milliseconds since the epoch.
+      */
+    /* CompleteClass */
+    override val timeStamp: Double = js.native
+    
+    /** 
+      * The type of mouse event.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   @JSImport("paper/dist/paper-core", "KeyEvent")
   @js.native
   def KeyEvent: Instantiable0[typings.paper.paper.KeyEvent] = js.native
@@ -270,7 +600,7 @@ object paperCoreMod {
   def KeyEvent_=(x: Instantiable0[typings.paper.paper.KeyEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyEvent")(x.asInstanceOf[js.Any])
   
   @scala.inline
-  def Key_=(x: TypeofKey with Instantiable0[typings.paper.paper.Key]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Key")(x.asInstanceOf[js.Any])
+  def Key_=(x: TypeofKey & Instantiable0[typings.paper.paper.Key]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Key")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Layer")
@@ -284,7 +614,8 @@ object paperCoreMod {
     * newly created layer
     */
   class Layer ()
-    extends typings.paper.paper.Layer {
+    extends StObject
+       with typings.paper.paper.Layer {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
   }
   @JSImport("paper/dist/paper-core", "Layer")
@@ -309,7 +640,8 @@ object paperCoreMod {
     * transformation.
     */
   class Matrix ()
-    extends typings.paper.paper.Matrix
+    extends StObject
+       with typings.paper.paper.Matrix
   @JSImport("paper/dist/paper-core", "Matrix")
   @js.native
   def Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
@@ -320,7 +652,80 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "MouseEvent")
   @js.native
   class MouseEvent ()
-    extends typings.paper.paper.MouseEvent
+    extends StObject
+       with typings.paper.paper.MouseEvent {
+    
+    /** 
+      * The current target for the event, as the event traverses the scene graph.
+      * It always refers to the element the event handler has been attached to as
+      * opposed to {@link #target} which identifies the element on
+      * which the event occurred.
+      */
+    /* CompleteClass */
+    var currentTarget: typings.paper.paper.Item = js.native
+    
+    /* CompleteClass */
+    var delta: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The current state of the keyboard modifiers.
+      * 
+      * @see Key.modifiers
+      */
+    /* CompleteClass */
+    override val modifiers: js.Any = js.native
+    
+    /** 
+      * The position of the mouse in project coordinates when the event was
+      * fired.
+      */
+    /* CompleteClass */
+    var point: typings.paper.paper.Point = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, without stopping further
+      * propagation of the event.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, and stops stopping further
+      * propagation of the event. This is has the same effect as calling both
+      * {@link #stopPropagation} and {@link #preventDefault}.
+      * 
+      * Any handler can also return `false` to indicate that `stop()` should be
+      * called right after.
+      */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** 
+      * Prevents further propagation of the current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /** 
+      * The item that dispatched the event. It is different from
+      * {@link #currentTarget} when the event handler is called during
+      * the bubbling phase of the event.
+      */
+    /* CompleteClass */
+    var target: typings.paper.paper.Item = js.native
+    
+    /** 
+      * The time at which the event was created, in milliseconds since the epoch.
+      */
+    /* CompleteClass */
+    override val timeStamp: Double = js.native
+    
+    /** 
+      * The type of mouse event.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   @JSImport("paper/dist/paper-core", "MouseEvent")
   @js.native
   def MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
@@ -334,12 +739,13 @@ object paperCoreMod {
     * Creates a PaperScope object.
     */
   class PaperScope ()
-    extends typings.paper.paper.PaperScope
+    extends StObject
+       with typings.paper.paper.PaperScope
   @JSImport("paper/dist/paper-core", "PaperScope")
   @js.native
-  def PaperScope: TypeofPaperScope with Instantiable0[typings.paper.paper.PaperScope] = js.native
+  def PaperScope: TypeofPaperScope & Instantiable0[typings.paper.paper.PaperScope] = js.native
   @scala.inline
-  def PaperScope_=(x: TypeofPaperScope with Instantiable0[typings.paper.paper.PaperScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PaperScope")(x.asInstanceOf[js.Any])
+  def PaperScope_=(x: TypeofPaperScope & Instantiable0[typings.paper.paper.PaperScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PaperScope")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Path")
@@ -351,12 +757,13 @@ object paperCoreMod {
     * converted to segments) that will be added to the path
     */
   class Path ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     def this(segments: js.Array[typings.paper.paper.Segment]) = this()
   }
   @JSImport("paper/dist/paper-core", "Path")
   @js.native
-  def Path: TypeofPath with (Instantiable1[
+  def Path: TypeofPath & (Instantiable1[
     /* segments */ js.UndefOr[js.Array[typings.paper.paper.Segment]], 
     typings.paper.paper.Path
   ]) = js.native
@@ -365,16 +772,17 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "PathItem")
   @js.native
   class PathItem ()
-    extends typings.paper.paper.PathItem
+    extends StObject
+       with typings.paper.paper.PathItem
   @JSImport("paper/dist/paper-core", "PathItem")
   @js.native
-  def PathItem: TypeofPathItem with Instantiable0[typings.paper.paper.PathItem] = js.native
+  def PathItem: TypeofPathItem & Instantiable0[typings.paper.paper.PathItem] = js.native
   @scala.inline
-  def PathItem_=(x: TypeofPathItem with Instantiable0[typings.paper.paper.PathItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathItem")(x.asInstanceOf[js.Any])
+  def PathItem_=(x: TypeofPathItem & Instantiable0[typings.paper.paper.PathItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathItem")(x.asInstanceOf[js.Any])
   
   @scala.inline
   def Path_=(
-    x: TypeofPath with (Instantiable1[
+    x: TypeofPath & (Instantiable1[
       /* segments */ js.UndefOr[js.Array[typings.paper.paper.Segment]], 
       typings.paper.paper.Path
     ])
@@ -384,7 +792,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Point")
   @js.native
   class Point protected ()
-    extends typings.paper.paper.Point {
+    extends StObject
+       with typings.paper.paper.Point {
     /** 
       * Creates a Point object with the given x and y coordinates.
       * 
@@ -395,13 +804,14 @@ object paperCoreMod {
   }
   @JSImport("paper/dist/paper-core", "Point")
   @js.native
-  def Point: TypeofPoint with (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point]) = js.native
+  def Point: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point]) = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "PointText")
   @js.native
   class PointText protected ()
-    extends typings.paper.paper.PointText {
+    extends StObject
+       with typings.paper.paper.PointText {
     /** 
       * Creates a point text item
       * 
@@ -416,13 +826,14 @@ object paperCoreMod {
   def PointText_=(x: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointText")(x.asInstanceOf[js.Any])
   
   @scala.inline
-  def Point_=(x: TypeofPoint with (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
+  def Point_=(x: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Project")
   @js.native
   class Project protected ()
-    extends typings.paper.paper.Project {
+    extends StObject
+       with typings.paper.paper.Project {
     def this(element: String) = this()
     def this(element: typings.paper.paper.Size) = this()
     /** 
@@ -469,12 +880,13 @@ object paperCoreMod {
     *     placed
     */
   class Raster ()
-    extends typings.paper.paper.Raster {
+    extends StObject
+       with typings.paper.paper.Raster {
     def this(source: String) = this()
     def this(source: HTMLCanvasElement) = this()
     def this(source: HTMLImageElement) = this()
-    def this(source: js.UndefOr[scala.Nothing], position: typings.paper.paper.Point) = this()
     def this(source: String, position: typings.paper.paper.Point) = this()
+    def this(source: Unit, position: typings.paper.paper.Point) = this()
     def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
     def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
   }
@@ -498,7 +910,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Rectangle")
   @js.native
   class Rectangle protected ()
-    extends typings.paper.paper.Rectangle {
+    extends StObject
+       with typings.paper.paper.Rectangle {
     /** 
       * Creates a Rectangle object.
       * 
@@ -538,25 +951,14 @@ object paperCoreMod {
     *     segment
     */
   class Segment ()
-    extends typings.paper.paper.Segment {
+    extends StObject
+       with typings.paper.paper.Segment {
     def this(point: typings.paper.paper.Point) = this()
-    def this(point: js.UndefOr[scala.Nothing], handleIn: typings.paper.paper.Point) = this()
+    def this(point: Unit, handleIn: typings.paper.paper.Point) = this()
     def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
-    def this(
-      point: js.UndefOr[scala.Nothing],
-      handleIn: js.UndefOr[scala.Nothing],
-      handleOut: typings.paper.paper.Point
-    ) = this()
-    def this(
-      point: js.UndefOr[scala.Nothing],
-      handleIn: typings.paper.paper.Point,
-      handleOut: typings.paper.paper.Point
-    ) = this()
-    def this(
-      point: typings.paper.paper.Point,
-      handleIn: js.UndefOr[scala.Nothing],
-      handleOut: typings.paper.paper.Point
-    ) = this()
+    def this(point: Unit, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
+    def this(point: Unit, handleIn: typings.paper.paper.Point, handleOut: typings.paper.paper.Point) = this()
+    def this(point: typings.paper.paper.Point, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
     def this(
       point: typings.paper.paper.Point,
       handleIn: typings.paper.paper.Point,
@@ -585,18 +987,20 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Shape")
   @js.native
   class Shape ()
-    extends typings.paper.paper.Shape
+    extends StObject
+       with typings.paper.paper.Shape
   @JSImport("paper/dist/paper-core", "Shape")
   @js.native
-  def Shape: TypeofShape with Instantiable0[typings.paper.paper.Shape] = js.native
+  def Shape: TypeofShape & Instantiable0[typings.paper.paper.Shape] = js.native
   @scala.inline
-  def Shape_=(x: TypeofShape with Instantiable0[typings.paper.paper.Shape]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
+  def Shape_=(x: TypeofShape & Instantiable0[typings.paper.paper.Shape]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Size")
   @js.native
   class Size protected ()
-    extends typings.paper.paper.Size {
+    extends StObject
+       with typings.paper.paper.Size {
     /** 
       * Creates a Size object with the given width and height values.
       * 
@@ -607,23 +1011,153 @@ object paperCoreMod {
   }
   @JSImport("paper/dist/paper-core", "Size")
   @js.native
-  def Size: TypeofSize with (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size]) = js.native
+  def Size: TypeofSize & (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size]) = js.native
   @scala.inline
-  def Size_=(
-    x: TypeofSize with (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Size")(x.asInstanceOf[js.Any])
+  def Size_=(x: TypeofSize & (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Size")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Style")
   @js.native
   class Style protected ()
-    extends typings.paper.paper.Style {
+    extends StObject
+       with typings.paper.paper.Style {
     /** 
       * Style objects don't need to be created directly. Just pass an object to
       * {@link Item#style} or {@link Project#currentStyle}, it will be converted
       * to a Style object internally.
       */
     def this(style: js.Object) = this()
+    
+    /** 
+      * Specifies an array containing the dash and gap lengths of the stroke.
+      */
+    /* CompleteClass */
+    var dashArray: js.Array[Double] = js.native
+    
+    /** 
+      * The dash offset of the stroke.
+      */
+    /* CompleteClass */
+    var dashOffset: Double = js.native
+    
+    /** 
+      * The fill color.
+      */
+    /* CompleteClass */
+    var fillColor: typings.paper.paper.Color | Null = js.native
+    
+    /** 
+      * The fill-rule with which the shape gets filled. Please note that only
+      * modern browsers support fill-rules other than `'nonzero'`.
+      */
+    /* CompleteClass */
+    var fillRule: String = js.native
+    
+    /** 
+      * The font-family to be used in text content.
+      */
+    /* CompleteClass */
+    var fontFamily: String = js.native
+    
+    /** 
+      * The font size of text content, as a number in pixels, or as a string with
+      * optional units `'px'`, `'pt'` and `'em'`.
+      */
+    /* CompleteClass */
+    var fontSize: Double | String = js.native
+    
+    /** 
+      * The font-weight to be used in text content.
+      */
+    /* CompleteClass */
+    var fontWeight: String | Double = js.native
+    
+    /** 
+      * The justification of text paragraphs.
+      */
+    /* CompleteClass */
+    var justification: String = js.native
+    
+    /** 
+      * The text leading of text content.
+      */
+    /* CompleteClass */
+    var leading: Double | String = js.native
+    
+    /** 
+      * The miter limit of the stroke. When two line segments meet at a sharp
+      * angle and miter joins have been specified for {@link #strokeJoin}, it is
+      * possible for the miter to extend far beyond the {@link #strokeWidth} of
+      * the path. The miterLimit imposes a limit on the ratio of the miter length
+      * to the {@link #strokeWidth}.
+      */
+    /* CompleteClass */
+    var miterLimit: Double = js.native
+    
+    /** 
+      * The color the item is highlighted with when selected. If the item does
+      * not specify its own color, the color defined by its layer is used instead.
+      */
+    /* CompleteClass */
+    var selectedColor: typings.paper.paper.Color | Null = js.native
+    
+    /** 
+      * The shadow's blur radius.
+      */
+    /* CompleteClass */
+    var shadowBlur: Double = js.native
+    
+    /** 
+      * The shadow color.
+      */
+    /* CompleteClass */
+    var shadowColor: typings.paper.paper.Color | Null = js.native
+    
+    /** 
+      * The shadow's offset.
+      */
+    /* CompleteClass */
+    var shadowOffset: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The shape to be used at the beginning and end of open {@link Path} items,
+      * when they have a stroke.
+      */
+    /* CompleteClass */
+    var strokeCap: String = js.native
+    
+    /** 
+      * The color of the stroke.
+      */
+    /* CompleteClass */
+    var strokeColor: typings.paper.paper.Color | Null = js.native
+    
+    /** 
+      * The shape to be used at the segments and corners of {@link Path} items
+      * when they have a stroke.
+      */
+    /* CompleteClass */
+    var strokeJoin: String = js.native
+    
+    /** 
+      * Specifies whether the stroke is to be drawn taking the current affine
+      * transformation into account (the default behavior), or whether it should
+      * appear as a non-scaling stroke.
+      */
+    /* CompleteClass */
+    var strokeScaling: Boolean = js.native
+    
+    /** 
+      * The width of the stroke.
+      */
+    /* CompleteClass */
+    var strokeWidth: Double = js.native
+    
+    /** 
+      * The view that this style belongs to.
+      */
+    /* CompleteClass */
+    override val view: typings.paper.paper.View = js.native
   }
   @JSImport("paper/dist/paper-core", "Style")
   @js.native
@@ -635,7 +1169,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "SymbolDefinition")
   @js.native
   class SymbolDefinition protected ()
-    extends typings.paper.paper.SymbolDefinition {
+    extends StObject
+       with typings.paper.paper.SymbolDefinition {
     /** 
       * Creates a Symbol definition.
       * 
@@ -665,7 +1200,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "SymbolItem")
   @js.native
   class SymbolItem protected ()
-    extends typings.paper.paper.SymbolItem {
+    extends StObject
+       with typings.paper.paper.SymbolItem {
     def this(definition: typings.paper.paper.Item) = this()
     /** 
       * Creates a new symbol item.
@@ -698,7 +1234,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "TextItem")
   @js.native
   class TextItem ()
-    extends typings.paper.paper.TextItem
+    extends StObject
+       with typings.paper.paper.TextItem
   @JSImport("paper/dist/paper-core", "TextItem")
   @js.native
   def TextItem: Instantiable0[typings.paper.paper.TextItem] = js.native
@@ -709,13 +1246,114 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Tool")
   @js.native
   class Tool ()
-    extends typings.paper.paper.Tool
+    extends StObject
+       with typings.paper.paper.Tool
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "ToolEvent")
   @js.native
   class ToolEvent ()
-    extends typings.paper.paper.ToolEvent
+    extends StObject
+       with typings.paper.paper.ToolEvent {
+    
+    /** 
+      * The number of times the mouse event was fired.
+      */
+    /* CompleteClass */
+    var count: Double = js.native
+    
+    /** 
+      * The difference between the current position and the last position of the
+      * mouse when the event was fired. In case of the mouseup event, the
+      * difference to the mousedown position is returned.
+      */
+    /* CompleteClass */
+    var delta: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The position of the mouse in project coordinates when the mouse button
+      * was last clicked.
+      */
+    /* CompleteClass */
+    var downPoint: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The item at the position of the mouse (if any).
+      * 
+      * If the item is contained within one or more {@link Group} or
+      * {@link CompoundPath} items, the most top level group or compound path
+      * that it is contained within is returned.
+      */
+    /* CompleteClass */
+    var item: typings.paper.paper.Item = js.native
+    
+    /** 
+      * The position of the mouse in project coordinates when the previous
+      * event was fired.
+      */
+    /* CompleteClass */
+    var lastPoint: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The point in the middle between {@link #lastPoint} and
+      * {@link #point}. This is a useful position to use when creating
+      * artwork based on the moving direction of the mouse, as returned by
+      * {@link #delta}.
+      */
+    /* CompleteClass */
+    var middlePoint: typings.paper.paper.Point = js.native
+    
+    /** 
+      * The current state of the keyboard modifiers.
+      * 
+      * @see Key.modifiers
+      */
+    /* CompleteClass */
+    override val modifiers: js.Any = js.native
+    
+    /** 
+      * The position of the mouse in project coordinates when the event was
+      * fired.
+      */
+    /* CompleteClass */
+    var point: typings.paper.paper.Point = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, without stopping further
+      * propagation of the event.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /** 
+      * Cancels the event if it is cancelable, and stops stopping further
+      * propagation of the event. This is has the same effect as calling both
+      * {@link #stopPropagation} and {@link #preventDefault}.
+      * 
+      * Any handler can also return `false` to indicate that `stop()` should be
+      * called right after.
+      */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** 
+      * Prevents further propagation of the current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /** 
+      * The time at which the event was created, in milliseconds since the epoch.
+      */
+    /* CompleteClass */
+    override val timeStamp: Double = js.native
+    
+    /** 
+      * The type of tool event.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   @JSImport("paper/dist/paper-core", "ToolEvent")
   @js.native
   def ToolEvent: Instantiable0[typings.paper.paper.ToolEvent] = js.native
@@ -733,7 +1371,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Tween")
   @js.native
   class Tween protected ()
-    extends typings.paper.paper.Tween {
+    extends StObject
+       with typings.paper.paper.Tween {
     /** 
       * Creates a new tween.
       * 
@@ -753,14 +1392,6 @@ object paperCoreMod {
       from: js.Object,
       to: js.Object,
       duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      start: Boolean
-    ) = this()
-    def this(
-      `object`: js.Object,
-      from: js.Object,
-      to: js.Object,
-      duration: Double,
       easing: String,
       start: Boolean
     ) = this()
@@ -772,6 +1403,43 @@ object paperCoreMod {
       easing: js.Function,
       start: Boolean
     ) = this()
+    def this(
+      `object`: js.Object,
+      from: js.Object,
+      to: js.Object,
+      duration: Double,
+      easing: Unit,
+      start: Boolean
+    ) = this()
+    
+    /** 
+      * The function to be called when the tween is updated. It receives an
+      * object as its sole argument, containing the current progress of the
+      * tweening and the factor calculated by the easing function.
+      */
+    /* CompleteClass */
+    var onUpdate: js.Function | Null = js.native
+    
+    /** 
+      * Start tweening.
+      */
+    /* CompleteClass */
+    override def start(): typings.paper.paper.Tween = js.native
+    
+    /** 
+      * Stop tweening.
+      */
+    /* CompleteClass */
+    override def stop(): typings.paper.paper.Tween = js.native
+    
+    /** 
+      * Set a function that will be executed when the tween completes.
+      * 
+      * @param function - the function to execute when the tween
+      *     completes
+      */
+    /* CompleteClass */
+    override def `then`(callback: js.Function): typings.paper.paper.Tween = js.native
   }
   @JSImport("paper/dist/paper-core", "Tween")
   @js.native
@@ -801,7 +1469,8 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "View")
   @js.native
   class View ()
-    extends typings.paper.paper.View
+    extends StObject
+       with typings.paper.paper.View
   @JSImport("paper/dist/paper-core", "View")
   @js.native
   def View_ : Instantiable0[typings.paper.paper.View] = js.native
@@ -809,9 +1478,8 @@ object paperCoreMod {
   @scala.inline
   def View__=(x: Instantiable0[typings.paper.paper.View]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
   
-  @JSImport("paper/dist/paper-core", "activate")
-  @js.native
-  def activate(): Unit = js.native
+  @scala.inline
+  def activate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")().asInstanceOf[Unit]
   @JSImport("paper/dist/paper-core", "activate")
   @js.native
   def activate_FpaperCoreMod: js.Function0[Unit] = js.native
@@ -822,21 +1490,18 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "execute")
   @js.native
   def execute: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit] = js.native
-  @JSImport("paper/dist/paper-core", "execute")
-  @js.native
-  def execute(code: String): Unit = js.native
-  @JSImport("paper/dist/paper-core", "execute")
-  @js.native
-  def execute(code: String, options: js.Object): Unit = js.native
+  @scala.inline
+  def execute(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def execute(code: String, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def execute_=(x: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("execute")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "install")
   @js.native
   def install: js.Function1[/* scope */ js.Any, Unit] = js.native
-  @JSImport("paper/dist/paper-core", "install")
-  @js.native
-  def install(scope: js.Any): Unit = js.native
+  @scala.inline
+  def install(scope: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
   @scala.inline
   def install_=(x: js.Function1[/* scope */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   
@@ -861,15 +1526,12 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "setup")
   @js.native
   def setup: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit] = js.native
-  @JSImport("paper/dist/paper-core", "setup")
-  @js.native
-  def setup(element: String): Unit = js.native
-  @JSImport("paper/dist/paper-core", "setup")
-  @js.native
-  def setup(element: typings.paper.paper.Size): Unit = js.native
-  @JSImport("paper/dist/paper-core", "setup")
-  @js.native
-  def setup(element: HTMLCanvasElement): Unit = js.native
+  @scala.inline
+  def setup(element: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setup(element: typings.paper.paper.Size): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setup(element: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   @scala.inline
   def setup_=(x: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
   

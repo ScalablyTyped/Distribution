@@ -3,20 +3,18 @@ package typings.blueprintjsCore.anon
 import typings.blueprintjsCore.asyncControllableInputMod.InputValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/forms/asyncControllableInput.IAsyncControllableInputState> */
-@js.native
 trait PartialIAsyncControllable extends StObject {
   
-  var hasPendingUpdate: js.UndefOr[Boolean] = js.native
+  var hasPendingUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var isComposing: js.UndefOr[Boolean] = js.native
+  var isComposing: js.UndefOr[Boolean] = js.undefined
   
-  var nextValue: js.UndefOr[InputValue] = js.native
+  var nextValue: js.UndefOr[InputValue] = js.undefined
   
-  var value: js.UndefOr[InputValue] = js.native
+  var value: js.UndefOr[InputValue] = js.undefined
 }
 object PartialIAsyncControllable {
   

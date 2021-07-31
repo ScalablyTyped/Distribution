@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeviceInstancesRequest extends StObject {
   
   /**
     * An integer that specifies the maximum number of items you want to return in the API response.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListDeviceInstancesRequest {
   

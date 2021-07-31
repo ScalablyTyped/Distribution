@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the physical location of a device in its enclosure. */
-@js.native
 trait EnclosureLocation extends StObject {
   
   /** Indicates whether the device is physically located in the docking station of the portable computer. */
-  var inDock: Boolean = js.native
+  var inDock: Boolean
   
   /** Indicates whether the device is physically located in the lid of the portable computer. */
-  var inLid: Boolean = js.native
+  var inLid: Boolean
   
   /** Indicates which panel of the computer the device is physically located on. */
-  var panel: Panel = js.native
+  var panel: Panel
 }
 object EnclosureLocation {
   

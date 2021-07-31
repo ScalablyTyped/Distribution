@@ -2,25 +2,23 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response returned when requesting for access token
   * https://developer.spotify.com/documentation/general/guides/authorization-guide/#2-have-your-application-request-refresh-and-access-tokens-spotify-returns-access-and-refresh-tokens
   */
-@js.native
 trait AuthorizationCodeGrantResponse extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var expires_in: Double = js.native
+  var expires_in: Double
   
-  var refresh_token: String = js.native
+  var refresh_token: String
   
-  var scope: String = js.native
+  var scope: String
   
-  var token_type: String = js.native
+  var token_type: String
 }
 object AuthorizationCodeGrantResponse {
   

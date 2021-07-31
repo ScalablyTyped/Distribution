@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettingsChange extends StObject {
   
   /** The set of changes made to restrictions. */
-  var restrictionChanges: js.UndefOr[js.Array[RestrictionChange]] = js.native
+  var restrictionChanges: js.UndefOr[js.Array[RestrictionChange]] = js.undefined
 }
 object SettingsChange {
   

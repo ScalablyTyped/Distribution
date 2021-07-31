@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.frame.XController
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In the drawing framework a slide sorter is regarded as a view.
   */
-@js.native
-trait SlideSorter extends XSlideSorterBase {
+trait SlideSorter
+  extends StObject
+     with XSlideSorterBase {
   
   /**
     * Create a new slide sorter object.
@@ -26,7 +26,7 @@ trait SlideSorter extends XSlideSorterBase {
     * @param xController The access point to an impress document.
     * @param xParentWindow The parent window which will be completely covered by the new slide sorter.
     */
-  def create(xViewId: XResourceId, xController: XController, xParentWindow: XWindow): Unit = js.native
+  def create(xViewId: XResourceId, xController: XController, xParentWindow: XWindow): Unit
 }
 object SlideSorter {
   

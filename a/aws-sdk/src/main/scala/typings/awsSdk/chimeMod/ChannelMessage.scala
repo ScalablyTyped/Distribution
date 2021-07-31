@@ -2,63 +2,61 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelMessage extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The message content.
     */
-  var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.native
+  var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.undefined
   
   /**
     * The time at which the message was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which a message was edited.
     */
-  var LastEditedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastEditedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which a message was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of a message.
     */
-  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.native
+  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
   
   /**
     * The message metadata.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
-  var Persistence: js.UndefOr[ChannelMessagePersistenceType] = js.native
+  var Persistence: js.UndefOr[ChannelMessagePersistenceType] = js.undefined
   
   /**
     * Hides the content of a message. The message still exists on the back end, but this action only returns metadata.
     */
-  var Redacted: js.UndefOr[NonNullableBoolean] = js.native
+  var Redacted: js.UndefOr[NonNullableBoolean] = js.undefined
   
   /**
     * The message sender.
     */
-  var Sender: js.UndefOr[Identity] = js.native
+  var Sender: js.UndefOr[Identity] = js.undefined
   
   /**
     * The message type.
     */
-  var Type: js.UndefOr[ChannelMessageType] = js.native
+  var Type: js.UndefOr[ChannelMessageType] = js.undefined
 }
 object ChannelMessage {
   

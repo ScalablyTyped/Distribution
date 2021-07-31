@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDatafeedsFetchnow extends StandardParameters {
+trait ParamsResourceDatafeedsFetchnow
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the datafeed to be fetched.
     */
-  var datafeedId: js.UndefOr[String] = js.native
+  var datafeedId: js.UndefOr[String] = js.undefined
   
   /**
     * Flag to simulate a request like in a live environment. If set to true,
     * dry-run mode checks the validity of the request and returns errors (if
     * any).
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the account that manages the datafeed. This account cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceDatafeedsFetchnow {
   

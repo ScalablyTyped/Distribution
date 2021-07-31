@@ -5,15 +5,13 @@ import typings.exceljs.exceljsStrings.custom
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentMargins extends StObject {
   
-  var inset: js.Array[Number] = js.native
+  var inset: js.Array[Number]
   
-  var insetmode: auto | custom = js.native
+  var insetmode: auto | custom
 }
 object CommentMargins {
   

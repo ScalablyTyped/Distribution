@@ -2,10 +2,8 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfAssignmentError extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait IfAssignmentError extends StObject {
     * // No error is returned when = is used within an <<if>> or <<elseif>> conditional
     * Config.macros.ifAssignmentError = false;
     */
-  var ifAssignmentError: Boolean = js.native
+  var ifAssignmentError: Boolean
   
   /**
     * Sets the maximum number of iterations allowed before the `<<for>>` macro conditional forms are terminated with an error.
@@ -35,7 +33,7 @@ trait IfAssignmentError extends StObject {
     * // Allow only 5000 iterations
     * Config.macros.maxLoopIterations = 5000;
     */
-  var maxLoopIterations: Double = js.native
+  var maxLoopIterations: Double
   
   /**
     * Sets the default KeyboardEvent.key value that causes the currently running <<type>> macro instance to finish
@@ -46,7 +44,7 @@ trait IfAssignmentError extends StObject {
     * // Change the default skip key to Control (CTRL)
     * Config.macros.typeSkipKey = "Control";
     */
-  var typeSkipKey: String = js.native
+  var typeSkipKey: String
   
   /**
     * Determines whether the <<type>> macro types out content on previously visited passages or simply outputs it
@@ -57,7 +55,7 @@ trait IfAssignmentError extends StObject {
     * // Do not type on previously visited passages
     * Config.macros.typeVisitedPassages = false;
     */
-  var typeVisitedPassages: Boolean = js.native
+  var typeVisitedPassages: Boolean
 }
 object IfAssignmentError {
   

@@ -3,38 +3,36 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesStatesSelectOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) Animation setting for hovering the graph in
     * line-type series.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highmaps) The border color of the point in this state.
     */
-  var borderColor: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highmaps) The border width of the point in this state
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The color of the shape in this state.
     */
-  var color: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Enable separate styles for the hovered series to visualize
     * that the user hovers either the series itself or the legend.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Options for the halo appearing around the hovered
@@ -46,20 +44,20 @@ trait SeriesStatesSelectOptionsObject extends StObject {
     * In styled mode, the halo is styled with the `.highcharts-halo` class,
     * with colors inherited from `.highcharts-color-{n}`.
     */
-  var halo: js.UndefOr[SeriesStatesHoverHaloOptionsObject | Null] = js.native
+  var halo: js.UndefOr[SeriesStatesHoverHaloOptionsObject | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock) Pixel width of the graph line. By default this
     * property is undefined, and the `lineWidthPlus` property dictates how much
     * to increase the linewidth from normal state.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The additional line width for the graph of a
     * hovered series.
     */
-  var lineWidthPlus: js.UndefOr[Double] = js.native
+  var lineWidthPlus: js.UndefOr[Double] = js.undefined
 }
 object SeriesStatesSelectOptionsObject {
   

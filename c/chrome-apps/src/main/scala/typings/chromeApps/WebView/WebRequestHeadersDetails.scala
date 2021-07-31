@@ -5,14 +5,14 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRequestHeadersDetails extends WebRequestDetails {
+trait WebRequestHeadersDetails
+  extends StObject
+     with WebRequestDetails {
   
   /** Optional. The HTTP request headers that are going to be sent out with this request. */
-  var requestHeaders: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var requestHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
 }
 object WebRequestHeadersDetails {
   

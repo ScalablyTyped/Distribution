@@ -19,66 +19,66 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.small
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonProps extends TouchableOpacityProps {
+trait ButtonProps
+  extends StObject
+     with TouchableOpacityProps {
   
-  var background: js.UndefOr[BackgroundProps] = js.native
+  var background: js.UndefOr[BackgroundProps] = js.undefined
   
-  var badgeAccessibilityLabel: js.UndefOr[String] = js.native
+  var badgeAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var badgeText: js.UndefOr[String] = js.native
+  var badgeText: js.UndefOr[String] = js.undefined
   
-  var badgeTextAccessibilityLabel: js.UndefOr[String] = js.native
+  var badgeTextAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var badgeTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var badgeTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var border: js.UndefOr[String | Boolean | Double] = js.native
+  var border: js.UndefOr[String | Boolean | Double] = js.undefined
   
-  var disabledOpacity: js.UndefOr[Double] = js.native
+  var disabledOpacity: js.UndefOr[Double] = js.undefined
   
   @JSName("disabled")
-  var disabled_ButtonProps: js.UndefOr[Boolean] = js.native
+  var disabled_ButtonProps: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconPath: js.UndefOr[String] = js.native
+  var iconPath: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var imageColor: js.UndefOr[String] = js.native
+  var imageColor: js.UndefOr[String] = js.undefined
   
-  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
-  var size: js.UndefOr[large | normal | small | noSet | Double] = js.native
+  var size: js.UndefOr[large | normal | small | noSet | Double] = js.undefined
   
-  var stretch: js.UndefOr[Boolean] = js.native
+  var stretch: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textAccessibilityLabel: js.UndefOr[String] = js.native
+  var textAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var textDirection: js.UndefOr[left | top | right | bottom | center] = js.native
+  var textDirection: js.UndefOr[left | top | right | bottom | center] = js.undefined
   
-  var textSingleLine: js.UndefOr[Boolean] = js.native
+  var textSingleLine: js.UndefOr[Boolean] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: js.UndefOr[BgColor] = js.native
+  var theme: js.UndefOr[BgColor] = js.undefined
   
-  var `type`: js.UndefOr[primary | normal] = js.native
+  var `type`: js.UndefOr[primary | normal] = js.undefined
   
-  var useART: js.UndefOr[Boolean] = js.native
+  var useART: js.UndefOr[Boolean] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object ButtonProps {
   

@@ -4,28 +4,26 @@ import typings.webgme.GmeCommon.Path
 import typings.webgme.webgmeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined webgme.GmeCommon.MetaCardRule & {  min :1,   max :1} */
-@js.native
 trait MetaCardRulemin1max1 extends StObject {
   
-  var items: js.Array[Path] = js.native
+  var items: js.Array[Path]
   
-  var max: `1` = js.native
+  var max: `1`
   
-  var maxItems: js.Array[Double] = js.native
+  var maxItems: js.Array[Double]
   
-  var min: `1` = js.native
+  var min: `1`
   
-  var minItems: js.Array[Double] = js.native
+  var minItems: js.Array[Double]
 }
 object MetaCardRulemin1max1 {
   
   @scala.inline
-  def apply(items: js.Array[Path], max: `1`, maxItems: js.Array[Double], min: `1`, minItems: js.Array[Double]): MetaCardRulemin1max1 = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxItems = maxItems.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minItems = minItems.asInstanceOf[js.Any])
+  def apply(items: js.Array[Path], maxItems: js.Array[Double], minItems: js.Array[Double]): MetaCardRulemin1max1 = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], max = 1, maxItems = maxItems.asInstanceOf[js.Any], min = 1, minItems = minItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaCardRulemin1max1]
   }
   

@@ -3,11 +3,12 @@ package typings.webix.webix.ui
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait toolbar extends baseview {
+trait toolbar
+  extends StObject
+     with baseview {
   
   def addView(view: js.Any): String | Double = js.native
   def addView(view: js.Any, index: Double): String | Double = js.native
@@ -17,7 +18,7 @@ trait toolbar extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clear(): Unit = js.native
   
@@ -45,10 +46,10 @@ trait toolbar extends baseview {
   
   def isDirty(): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   

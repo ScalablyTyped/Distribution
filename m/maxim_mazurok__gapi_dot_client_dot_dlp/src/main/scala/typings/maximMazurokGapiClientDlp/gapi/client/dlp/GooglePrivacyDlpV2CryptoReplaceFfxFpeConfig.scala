@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
   
   /** Common alphabets. */
-  var commonAlphabet: js.UndefOr[String] = js.native
+  var commonAlphabet: js.UndefOr[String] = js.undefined
   
   /**
     * The 'tweak', a context may be used for higher security since the same identifier in two different contexts won't be given the same surrogate. If the context is not set, a default
@@ -18,20 +16,20 @@ trait GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
     * referenced field may be of value type integer or string. The tweak is constructed as a sequence of bytes in big endian byte order such that: - a 64 bit integer is encoded followed
     * by a single byte of value 1 - a string is encoded in UTF-8 format followed by a single byte of value 2
     */
-  var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** Required. The key used by the encryption algorithm. */
-  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**
     * This is supported by mapping these to the alphanumeric characters that the FFX mode natively supports. This happens before/after encryption/decryption. Each character listed must
     * appear only once. Number of characters must be in the range [2, 95]. This must be encoded as ASCII. The order of characters does not matter. The full list of allowed characters is:
     * 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ~`!@#$%^&*()_-+={[}]|\:;"'<,>.?/
     */
-  var customAlphabet: js.UndefOr[String] = js.native
+  var customAlphabet: js.UndefOr[String] = js.undefined
   
   /** The native way to select the alphabet. Must be in the range [2, 95]. */
-  var radix: js.UndefOr[Double] = js.native
+  var radix: js.UndefOr[Double] = js.undefined
   
   /**
     * The custom infoType to annotate the surrogate with. This annotation will be applied to the surrogate by prefixing it with the name of the custom infoType followed by the number of
@@ -43,7 +41,7 @@ trait GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
     * has a high chance of yielding reliable detection is to include one or more unicode characters that are highly improbable to exist in your data. For example, assuming your data is
     * entered from a regular ASCII keyboard, the symbol with the hex code point 29DD might be used like so: ⧝MY_TOKEN_TYPE
     */
-  var surrogateInfoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.native
+  var surrogateInfoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.undefined
 }
 object GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
   

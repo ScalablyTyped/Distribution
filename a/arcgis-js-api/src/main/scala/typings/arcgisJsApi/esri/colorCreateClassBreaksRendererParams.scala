@@ -18,179 +18,179 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait colorCreateClassBreaksRendererParams extends Object {
+trait colorCreateClassBreaksRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * The classification method used for generating breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var classificationMethod: js.UndefOr[`equal-interval` | `natural-breaks` | quantile | `standard-deviation`] = js.native
+  var classificationMethod: js.UndefOr[`equal-interval` | `natural-breaks` | quantile | `standard-deviation`] = js.undefined
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var colorMixMode: js.UndefOr[String] = js.native
+  var colorMixMode: js.UndefOr[String] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var colorScheme: js.UndefOr[ColorScheme] = js.native
+  var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value and features that do not fall within the configured data range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.native
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to add edges to the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var edgesType: js.UndefOr[solid | none] = js.native
+  var edgesType: js.UndefOr[solid | none] = js.undefined
   
   /**
     * The name of the field whose data will be queried for statistics and classified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Provides options for setting a title to describe a field instead of using the field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var legendOptions: js.UndefOr[colorCreateClassBreaksRendererParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[colorCreateClassBreaksRendererParamsLegendOptions] = js.undefined
   
   /**
     * A maximum value set by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * A minimum value set by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the field to normalize the values of the given `field`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
     * When `normalizationType` is `percent-of-total`, this property contains the total of all data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var normalizationTotal: js.UndefOr[Double] = js.native
+  var normalizationTotal: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates how the data is normalized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var normalizationType: js.UndefOr[field | log | `percent-of-total`] = js.native
+  var normalizationType: js.UndefOr[field | log | `percent-of-total`] = js.undefined
   
   /**
     * The number of class breaks to generate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var numClasses: js.UndefOr[Double] = js.native
+  var numClasses: js.UndefOr[Double] = js.undefined
   
   /**
     * For polygon layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var sqlExpression: js.UndefOr[String] = js.native
+  var sqlExpression: js.UndefOr[String] = js.undefined
   
   /**
     * A SQL where clause used to filter features for the statistics query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var sqlWhere: js.UndefOr[String] = js.native
+  var sqlWhere: js.UndefOr[String] = js.undefined
   
   /**
     * If a `standard-deviation` classification method is used, then this indicates the interval by which to generate class breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var standardDeviationInterval: js.UndefOr[Double] = js.native
+  var standardDeviationInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of symbol to generate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.native
+  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var valueExpression: js.UndefOr[String] = js.native
+  var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Text describing the value returned from the `valueExpression`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer)
     */
-  var valueExpressionTitle: js.UndefOr[String] = js.native
+  var valueExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
 }
 object colorCreateClassBreaksRendererParams {
   

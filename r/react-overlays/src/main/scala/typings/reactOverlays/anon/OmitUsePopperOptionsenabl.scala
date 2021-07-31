@@ -4,18 +4,16 @@ import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.typesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-overlays.react-overlays/esm/usePopper.UsePopperOptions, 'enabled' | 'placement'> */
-@js.native
 trait OmitUsePopperOptionsenabl extends StObject {
   
-  var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.native
+  var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.undefined
   
-  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.native
+  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
-  var strategy: js.UndefOr[PositioningStrategy] = js.native
+  var strategy: js.UndefOr[PositioningStrategy] = js.undefined
 }
 object OmitUsePopperOptionsenabl {
   

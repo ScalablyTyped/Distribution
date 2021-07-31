@@ -2,17 +2,15 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidationContext[T] extends StObject {
   
-  var Data: T = js.native
+  var Data: T
   
-  var Key: String = js.native
+  var Key: String
   
-  var Value: String = js.native
+  var Value: String
 }
 object IValidationContext {
   
@@ -23,7 +21,7 @@ object IValidationContext {
   }
   
   @scala.inline
-  implicit class IValidationContextMutableBuilder[Self <: IValidationContext[_], T] (val x: Self with IValidationContext[T]) extends AnyVal {
+  implicit class IValidationContextMutableBuilder[Self <: IValidationContext[?], T] (val x: Self & IValidationContext[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])

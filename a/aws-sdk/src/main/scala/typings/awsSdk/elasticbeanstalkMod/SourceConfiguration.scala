@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceConfiguration extends StObject {
   
   /**
     * The name of the application associated with the configuration.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * The name of the configuration template.
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
 }
 object SourceConfiguration {
   

@@ -3,17 +3,15 @@ package typings.dygraphs
 import typings.dygraphs.dygraphs.PerAxisOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var v: Double = js.native
+    var v: Double
   }
   object Label {
     
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[PerAxisOptions] = js.native
+    var x: js.UndefOr[PerAxisOptions] = js.undefined
     
-    var y: js.UndefOr[PerAxisOptions] = js.native
+    var y: js.UndefOr[PerAxisOptions] = js.undefined
     
-    var y2: js.UndefOr[PerAxisOptions] = js.native
+    var y2: js.UndefOr[PerAxisOptions] = js.undefined
   }
   object X {
     

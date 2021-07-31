@@ -2,186 +2,184 @@ package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SauceConnectOptions extends StObject {
   
   /**
     * Perform basic authentication when an URL on <host:port> asks for a username and password.
     */
-  var auth: js.UndefOr[String] = js.native
+  var auth: js.UndefOr[String] = js.undefined
   
   /**
     * CA certificate bundle to use for verifying REST connections. (default "/usr/local/etc/openssl/cert.pem")
     */
-  var cainfo: js.UndefOr[String] = js.native
+  var cainfo: js.UndefOr[String] = js.undefined
   
   /**
     * Directory of CA certs to use for verifying REST connections. (default "/etc/ssl/certs")
     */
-  var capath: js.UndefOr[String] = js.native
+  var capath: js.UndefOr[String] = js.undefined
   
   /**
     * Path to YAML config file. Please refer to https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Command+Line+Reference for a sample configuration file.
     */
-  var configFile: js.UndefOr[String] = js.native
+  var configFile: js.UndefOr[String] = js.undefined
   
   /**
     * Comma-separated list of domains. Requests whose host matches one of these will be relayed directly through the internet, instead of through the tunnel.
     */
-  var directDomains: js.UndefOr[String] = js.native
+  var directDomains: js.UndefOr[String] = js.undefined
   
   /**
     * Use specified name server. To specify multiple servers, separate them with comma. Use IP addresses, optionally with a port number, the two separated by a colon. Example: --dns 8.8.8.8,8.8.4.4:53
     */
-  var dns: js.UndefOr[String] = js.native
+  var dns: js.UndefOr[String] = js.undefined
   
   /**
     * Perform checks to detect possible misconfiguration or problems.
     */
-  var doctor: js.UndefOr[Boolean] = js.native
+  var doctor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comma-separated list of regular expressions. Requests matching one of these will get dropped instantly and will not go through the tunnel.
     */
-  var fastFailRegexps: js.UndefOr[String] = js.native
+  var fastFailRegexps: js.UndefOr[String] = js.undefined
   
   /**
     * Log statistics about HTTP traffic every <seconds>.
     */
-  var logStats: js.UndefOr[Double] = js.native
+  var logStats: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify custom logfile.
     */
-  var logfile: js.UndefOr[String] = js.native
+  var logfile: js.UndefOr[String] = js.undefined
   
   /**
     * A function to optionally write sauce-connect-launcher log messages, e.g. console.log
     */
-  var logger: js.UndefOr[js.Function1[/* output */ String, Unit]] = js.native
+  var logger: js.UndefOr[js.Function1[/* output */ String, Unit]] = js.undefined
   
   /**
     * Rotate logfile after reaching <bytes> size. Disabled by default.
     */
-  var maxLogsize: js.UndefOr[Double] = js.native
+  var maxLogsize: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum amount of keepalive acks that can be missed before the client will trigger a reconnect. (default 30) (default: 30)
     */
-  var maxMissedAcks: js.UndefOr[Double] = js.native
+  var maxMissedAcks: js.UndefOr[Double] = js.undefined
   
   /**
     * host:port for the internal web server used to expose client side metrics. (default "localhost:8888")
     */
-  var metricsAddress: js.UndefOr[String] = js.native
+  var metricsAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Disable the autodetection of proxy settings.
     */
-  var noAutodetect: js.UndefOr[Boolean] = js.native
+  var noAutodetect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable caching in Sauce Connect. All requests will be sent through the tunnel.
     */
-  var noProxyCaching: js.UndefOr[Boolean] = js.native
+  var noProxyCaching: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Don't remove identified tunnels with the same name, or any other default tunnels if this is a default tunnel. Jobs will be distributed between these tunnels, enabling load balancing and high availability. By default, colliding tunnels will be removed when Sauce Connect is starting up.
     */
-  var noRemoveCollidingTunnels: js.UndefOr[Boolean] = js.native
+  var noRemoveCollidingTunnels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comma-separated list of domains. Requests whose host matches one of these will not be SSL re-encrypted.
     */
-  var noSslBumpDomains: js.UndefOr[String] = js.native
+  var noSslBumpDomains: js.UndefOr[String] = js.undefined
   
   /**
     * Proxy autoconfiguration. Can be an http(s) or local file:// (absolute path only) URI.
     */
-  var pac: js.UndefOr[String] = js.native
+  var pac: js.UndefOr[String] = js.undefined
   
   /**
     * File that will be created with the pid of the process.
     */
-  var pidfile: js.UndefOr[String] = js.native
+  var pidfile: js.UndefOr[String] = js.undefined
   
   /**
     * Use the proxy configured with -p for the tunnel connection.
     */
-  var proxyTunnel: js.UndefOr[Boolean] = js.native
+  var proxyTunnel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Username and password required to access the proxy configured with -p.
     */
-  var proxyUserpwd: js.UndefOr[String] = js.native
+  var proxyUserpwd: js.UndefOr[String] = js.undefined
   
   /**
     * File that will be touched to signal when tunnel is ready.
     */
-  var readyfile: js.UndefOr[String] = js.native
+  var readyfile: js.UndefOr[String] = js.undefined
   
   /**
     * Advanced feature: Connect to Sauce REST API at alternative URL. Use only if directed to do so by Sauce Labs support. (default "https://saucelabs.com/rest/v1")
     */
-  var restUrl: js.UndefOr[String] = js.native
+  var restUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the Sauce Connect version you want to use. (default: 4.6.2)
     */
-  var scVersion: js.UndefOr[String] = js.native
+  var scVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Port on which scproxy will be listening.
     */
-  var scproxyPort: js.UndefOr[String] = js.native
+  var scproxyPort: js.UndefOr[String] = js.undefined
   
   /**
     * Rate limit reads in scproxy to X bytes per second. This option can be used to adjust local network transfer rate in order not to overload the tunnel connection.
     */
-  var scproxyReadLimit: js.UndefOr[String] = js.native
+  var scproxyReadLimit: js.UndefOr[String] = js.undefined
   
   /**
     * Rate limit writes in scproxy to X bytes per second. This option can be used to adjust local network transfer rate in order not to overload the tunnel connection.
     */
-  var scproxyWriteLimit: js.UndefOr[String] = js.native
+  var scproxyWriteLimit: js.UndefOr[String] = js.undefined
   
   /**
     * Port on which Sauce Connect's Selenium relay will listen for requests. Selenium commands reaching Connect on this port will be relayed to Sauce Labs securely and reliably through Connect's tunnel (default 4445) (default: 4445)
     */
-  var sePort: js.UndefOr[Double] = js.native
+  var sePort: js.UndefOr[Double] = js.undefined
   
   /**
     * Let sub-accounts of the tunnel owner use the tunnel if requested.
     */
-  var sharedTunnel: js.UndefOr[Boolean] = js.native
+  var sharedTunnel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CA certificate bundle to use for verifying tunnel connections. (default "/usr/local/etc/openssl/cert.pem")
     */
-  var tunnelCainfo: js.UndefOr[String] = js.native
+  var tunnelCainfo: js.UndefOr[String] = js.undefined
   
   /**
     * Directory of CA certs to use for verifying tunnel connections. (default "/etc/ssl/certs")
     */
-  var tunnelCapath: js.UndefOr[String] = js.native
+  var tunnelCapath: js.UndefOr[String] = js.undefined
   
   /**
     * Specify certificate to use for the tunnel connection, either public or private. Default: private. (default "private")
     */
-  var tunnelCert: js.UndefOr[String] = js.native
+  var tunnelCert: js.UndefOr[String] = js.undefined
   
   /**
     * Inverse of '--direct-domains'. Only requests for domains in this list will be sent through the tunnel. Overrides '--direct-domains'.
     */
-  var tunnelDomains: js.UndefOr[String] = js.native
+  var tunnelDomains: js.UndefOr[String] = js.undefined
   
   /**
     * Don't automatically assign jobs to this tunnel. Jobs will use it only by explicitly providing the right identifier.
     */
-  var tunnelIdentifier: js.UndefOr[String] = js.native
+  var tunnelIdentifier: js.UndefOr[String] = js.undefined
 }
 object SauceConnectOptions {
   

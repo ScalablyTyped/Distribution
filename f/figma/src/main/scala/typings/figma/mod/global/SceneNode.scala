@@ -2,7 +2,6 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -20,4 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.mod.global.RectangleNode
   - typings.figma.mod.global.TextNode
 */
-trait SceneNode extends BaseNode
+trait SceneNode
+  extends StObject
+     with BaseNode

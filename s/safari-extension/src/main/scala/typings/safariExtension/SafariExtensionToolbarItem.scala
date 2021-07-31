@@ -2,11 +2,12 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariExtensionToolbarItem extends SafariEventTarget {
+trait SafariExtensionToolbarItem
+  extends StObject
+     with SafariEventTarget {
   
   /**
     * The current badge number.

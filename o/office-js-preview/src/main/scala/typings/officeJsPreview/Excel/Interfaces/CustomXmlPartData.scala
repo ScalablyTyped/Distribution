@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
-@js.native
 trait CustomXmlPartData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CustomXmlPartData extends StObject {
     *
     * [Api set: ExcelApi 1.5]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait CustomXmlPartData extends StObject {
     *
     * [Api set: ExcelApi 1.5]
     */
-  var namespaceUri: js.UndefOr[String] = js.native
+  var namespaceUri: js.UndefOr[String] = js.undefined
 }
 object CustomXmlPartData {
   

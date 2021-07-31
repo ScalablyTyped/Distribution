@@ -4,7 +4,6 @@ import typings.antdMobile.anon.EnableDragHandle
 import typings.antdMobile.drawerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "Drawer")

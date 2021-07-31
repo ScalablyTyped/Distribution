@@ -14,7 +14,6 @@ import typings.activexMsxml2.activexMsxml2Numbers.`8`
 import typings.activexMsxml2.activexMsxml2Numbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for XHR properties */

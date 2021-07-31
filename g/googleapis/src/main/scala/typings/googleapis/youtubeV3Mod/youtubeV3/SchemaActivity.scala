@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with the action, and the resource(s) associated with the action, such as
   * the video that was rated or uploaded.
   */
-@js.native
 trait SchemaActivity extends StObject {
   
   /**
@@ -23,29 +21,29 @@ trait SchemaActivity extends StObject {
     * videoRated, then the contentDetails object&#39;s content identifies the
     * rated video.
     */
-  var contentDetails: js.UndefOr[SchemaActivityContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaActivityContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the activity.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#activity&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the activity, including
     * the activity&#39;s type and group ID.
     */
-  var snippet: js.UndefOr[SchemaActivitySnippet] = js.native
+  var snippet: js.UndefOr[SchemaActivitySnippet] = js.undefined
 }
 object SchemaActivity {
   

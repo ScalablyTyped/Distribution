@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object limitRangeListMod {
@@ -27,7 +26,7 @@ object limitRangeListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: LimitRangeListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: LimitRangeListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object limitRangeListMod {
   /* static members */
   object LimitRangeList {
     
+    @JSImport("@pulumi/kubernetes/core/v1/limitRangeList", "LimitRangeList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LimitRangeList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object limitRangeListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/limitRangeList", "LimitRangeList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LimitRangeList = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/limitRangeList", "LimitRangeList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): LimitRangeList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LimitRangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LimitRangeList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): LimitRangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LimitRangeList]
     
     /**
       * Returns true if the given object is an instance of LimitRangeList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/limitRangeList", "LimitRangeList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/limitRangeList.LimitRangeList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/limitRangeList.LimitRangeList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/limitRangeList.LimitRangeList */ Boolean]
   }
   
-  @js.native
   trait LimitRangeListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * Items is a list of LimitRange objects. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.LimitRange]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.LimitRange]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.LimitRangeList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.LimitRangeList]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object LimitRangeListArgs {
     

@@ -3,7 +3,6 @@ package typings.gulpDiff
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,36 +11,35 @@ object mod {
     * Gulp task to diff files in the stream against a destination.
     * @param dest target directory to diff against, defaults to diff against original source file
     */
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(dest: String): Transform = ^.asInstanceOf[js.Dynamic].apply(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gulp-diff", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-diff", JSImport.Namespace)
-  @js.native
-  def apply(dest: String): Transform = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gulp-diff", "diff")
   @js.native
   val diff: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gulp_diff */ js.Any = js.native
   
-  @JSImport("gulp-diff", "reporter")
-  @js.native
-  def reporter(): Transform = js.native
-  @JSImport("gulp-diff", "reporter")
-  @js.native
-  def reporter(opts: ReporterOptions): Transform = js.native
+  @scala.inline
+  def reporter(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")().asInstanceOf[Transform]
+  @scala.inline
+  def reporter(opts: ReporterOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
-  @js.native
   trait ReporterOptions extends StObject {
     
     /**
       * emit an error on finding diffs, defaults to `false`
       */
-    var fail: js.UndefOr[Boolean] = js.native
+    var fail: js.UndefOr[Boolean] = js.undefined
     
     /**
       * do not show diff information, defaults to `false`
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
   }
   object ReporterOptions {
     

@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemTrigger extends ISystemTrigger
+trait SystemTrigger
+  extends StObject
+     with ISystemTrigger
 object SystemTrigger {
   
   @scala.inline

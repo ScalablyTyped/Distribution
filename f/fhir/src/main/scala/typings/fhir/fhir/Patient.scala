@@ -2,145 +2,145 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about an individual or animal receiving health care services
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Patient extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Patient
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'birthDate'.
     */
-  var _birthDate: js.UndefOr[Element] = js.native
+  var _birthDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deceasedBoolean'.
     */
-  var _deceasedBoolean: js.UndefOr[Element] = js.native
+  var _deceasedBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deceasedDateTime'.
     */
-  var _deceasedDateTime: js.UndefOr[Element] = js.native
+  var _deceasedDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.native
+  var _gender: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'multipleBirthBoolean'.
     */
-  var _multipleBirthBoolean: js.UndefOr[Element] = js.native
+  var _multipleBirthBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'multipleBirthInteger'.
     */
-  var _multipleBirthInteger: js.UndefOr[Element] = js.native
+  var _multipleBirthInteger: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether this patient's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Addresses for the individual
     */
-  var address: js.UndefOr[js.Array[Address]] = js.native
+  var address: js.UndefOr[js.Array[Address]] = js.undefined
   
   /**
     * This patient is known to be an animal (non-human)
     */
-  var animal: js.UndefOr[PatientAnimal] = js.native
+  var animal: js.UndefOr[PatientAnimal] = js.undefined
   
   /**
     * The date of birth for the individual
     */
-  var birthDate: js.UndefOr[date] = js.native
+  var birthDate: js.UndefOr[date] = js.undefined
   
   /**
     * A list of Languages which may be used to communicate with the patient about their health
     */
-  var communication: js.UndefOr[js.Array[PatientCommunication]] = js.native
+  var communication: js.UndefOr[js.Array[PatientCommunication]] = js.undefined
   
   /**
     * A contact party (e.g. guardian, partner, friend) for the patient
     */
-  var contact: js.UndefOr[js.Array[PatientContact]] = js.native
+  var contact: js.UndefOr[js.Array[PatientContact]] = js.undefined
   
   /**
     * Indicates if the individual is deceased or not
     */
-  var deceasedBoolean: js.UndefOr[Boolean] = js.native
+  var deceasedBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the individual is deceased or not
     */
-  var deceasedDateTime: js.UndefOr[dateTime] = js.native
+  var deceasedDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.native
+  var gender: js.UndefOr[code] = js.undefined
   
   /**
     * Patient's nominated primary care provider
     */
-  var generalPractitioner: js.UndefOr[js.Array[Reference]] = js.native
+  var generalPractitioner: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * An identifier for this patient
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Link to another patient resource that concerns the same actual person
     */
-  var link: js.UndefOr[js.Array[PatientLink]] = js.native
+  var link: js.UndefOr[js.Array[PatientLink]] = js.undefined
   
   /**
     * Organization that is the custodian of the patient record
     */
-  var managingOrganization: js.UndefOr[Reference] = js.native
+  var managingOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
     * Marital (civil) status of a patient
     */
-  var maritalStatus: js.UndefOr[CodeableConcept] = js.native
+  var maritalStatus: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Whether patient is part of a multiple birth
     */
-  var multipleBirthBoolean: js.UndefOr[Boolean] = js.native
+  var multipleBirthBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether patient is part of a multiple birth
     */
-  var multipleBirthInteger: js.UndefOr[integer] = js.native
+  var multipleBirthInteger: js.UndefOr[integer] = js.undefined
   
   /**
     * A name associated with the patient
     */
-  var name: js.UndefOr[js.Array[HumanName]] = js.native
+  var name: js.UndefOr[js.Array[HumanName]] = js.undefined
   
   /**
     * Image of the patient
     */
-  var photo: js.UndefOr[js.Array[Attachment]] = js.native
+  var photo: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
     * A contact detail for the individual
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object Patient {
   

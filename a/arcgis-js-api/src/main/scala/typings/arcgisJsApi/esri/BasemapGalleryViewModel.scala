@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapGalleryViewModel extends Accessor {
+trait BasemapGalleryViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).

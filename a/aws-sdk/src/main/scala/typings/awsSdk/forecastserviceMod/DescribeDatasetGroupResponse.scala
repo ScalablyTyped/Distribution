@@ -2,46 +2,44 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetGroupResponse extends StObject {
   
   /**
     * When the dataset group was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An array of Amazon Resource Names (ARNs) of the datasets contained in the dataset group.
     */
-  var DatasetArns: js.UndefOr[ArnList] = js.native
+  var DatasetArns: js.UndefOr[ArnList] = js.undefined
   
   /**
     * The ARN of the dataset group.
     */
-  var DatasetGroupArn: js.UndefOr[Arn] = js.native
+  var DatasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the dataset group.
     */
-  var DatasetGroupName: js.UndefOr[Name] = js.native
+  var DatasetGroupName: js.UndefOr[Name] = js.undefined
   
   /**
     * The domain associated with the dataset group.
     */
-  var Domain: js.UndefOr[typings.awsSdk.forecastserviceMod.Domain] = js.native
+  var Domain: js.UndefOr[typings.awsSdk.forecastserviceMod.Domain] = js.undefined
   
   /**
     * When the dataset group was created or last updated from a call to the UpdateDatasetGroup operation. While the dataset group is being updated, LastModificationTime is the current time of the DescribeDatasetGroup call.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the dataset group. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     UPDATE_PENDING, UPDATE_IN_PROGRESS, UPDATE_FAILED    The UPDATE states apply when you call the UpdateDatasetGroup operation.  The Status of the dataset group must be ACTIVE before you can use the dataset group to create a predictor. 
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
 object DescribeDatasetGroupResponse {
   

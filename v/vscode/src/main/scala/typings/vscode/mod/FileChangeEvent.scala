@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileChangeEvent extends StObject {
   
   /**
     * The type of change.
     */
-  val `type`: FileChangeType = js.native
+  val `type`: FileChangeType
   
   /**
     * The uri of the file that has changed.
     */
-  val uri: Uri = js.native
+  val uri: Uri
 }
 object FileChangeEvent {
   

@@ -10,9 +10,9 @@ Get the name of the current operating system. Example: macOS Sierra
 | ------------------ | :-------------: |
 | Full name          | os-name |
 | Keywords           | os, operating, system, platform, name, title, release, version, macos, windows, linux |
-| # releases         | 2 |
-| # dependents       | 102 |
-| # downloads        | 116485767 |
+| # releases         | 3 |
+| # dependents       | 121 |
+| # downloads        | 148183313 |
 | # stars            | 3 |
 
 ## Links

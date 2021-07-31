@@ -11,13 +11,14 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECS extends Service {
+trait ECS
+  extends StObject
+     with Service {
   
-  var config: ConfigBase with ClientConfiguration = js.native
+  var config: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new capacity provider. Capacity providers are associated with an Amazon ECS cluster and are used in capacity provider strategies to facilitate cluster auto scaling. Only capacity providers using an Auto Scaling group can be created. Amazon ECS tasks on AWS Fargate use the FARGATE and FARGATE_SPOT capacity providers which are already created and available to all accounts in Regions supported by AWS Fargate.

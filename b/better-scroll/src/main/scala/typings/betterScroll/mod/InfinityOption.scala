@@ -3,17 +3,15 @@ package typings.betterScroll.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfinityOption extends StObject {
   
-  def createTombstone(): Element = js.native
+  def createTombstone(): Element
   
-  def fetch(count: Double): Unit = js.native
+  def fetch(count: Double): Unit
   
-  def render(item: js.Any, div: Element): Element = js.native
+  def render(item: js.Any, div: Element): Element
 }
 object InfinityOption {
   

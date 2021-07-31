@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transposeMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Transpose", "transpose")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Transpose", JSImport.Namespace)
   @js.native
-  def transpose(args: AttrsTransposeAttrs): TensorInfo = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def transpose(args: AttrsTransposeAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Transpose", "transposeConfig")
   @js.native

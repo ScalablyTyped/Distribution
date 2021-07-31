@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState")
@@ -41,13 +40,11 @@ object AccountState {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): AccountState = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): AccountState = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountState]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: AccountState, reader: BinaryReader): AccountState = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: AccountState, reader: BinaryReader): AccountState = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountState]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState.extensions")
   @js.native
@@ -62,20 +59,17 @@ object AccountState {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: AccountState, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: AccountState, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "AccountState.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: AccountState): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: AccountState): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var address: Uint8Array | String = js.native
+    var address: Uint8Array | String
     
-    var blob: Uint8Array | String = js.native
+    var blob: Uint8Array | String
   }
   object AsObject {
     

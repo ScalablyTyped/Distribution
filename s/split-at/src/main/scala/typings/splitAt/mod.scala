@@ -2,17 +2,14 @@ package typings.splitAt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("split-at", JSImport.Namespace)
-  @js.native
-  def apply(string: String, index: js.Array[Double]): js.Array[String] = js.native
-  @JSImport("split-at", JSImport.Namespace)
-  @js.native
-  def apply(string: String, index: js.Array[Double], options: Options): js.Array[String] = js.native
+  @scala.inline
+  def apply(string: String, index: js.Array[Double]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(string: String, index: js.Array[Double], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   /**
   Split a string at one or more indices.
   @param string - String to be split.
@@ -30,14 +27,15 @@ object mod {
   //=> ['unicorn', 'rainbow']
   ```
   */
-  @JSImport("split-at", JSImport.Namespace)
-  @js.native
-  def apply(string: String, index: Double): js.Array[String] = js.native
-  @JSImport("split-at", JSImport.Namespace)
-  @js.native
-  def apply(string: String, index: Double, options: Options): js.Array[String] = js.native
+  @scala.inline
+  def apply(string: String, index: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(string: String, index: Double, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
+  @JSImport("split-at", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -45,7 +43,7 @@ object mod {
     		Similar to the default `String#split` behaviour.
     		@default false
     		*/
-    val remove: js.UndefOr[Boolean] = js.native
+    val remove: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

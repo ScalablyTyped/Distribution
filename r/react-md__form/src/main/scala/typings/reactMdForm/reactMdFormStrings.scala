@@ -8,7 +8,6 @@ import typings.reactMdForm.typesMod.SliderEventHandlerNames
 import typings.reactMdForm.typesMod._SliderDraggingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdFormStrings {
@@ -49,17 +48,23 @@ object reactMdFormStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends TextAreaResize
+  sealed trait auto
+    extends StObject
+       with TextAreaResize
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait both extends TextAreaResize
+  sealed trait both
+    extends StObject
+       with TextAreaResize
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait center extends FormUnderlineDirection
+  sealed trait center
+    extends StObject
+       with FormUnderlineDirection
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -69,7 +74,9 @@ object reactMdFormStrings {
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait color extends SupportedInputTypes
+  sealed trait color
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
@@ -79,12 +86,16 @@ object reactMdFormStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait date extends SupportedInputTypes
+  sealed trait date
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `datetime-local` extends SupportedInputTypes
+  sealed trait `datetime-local`
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
   
@@ -119,7 +130,9 @@ object reactMdFormStrings {
   def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait email extends SupportedInputTypes
+  sealed trait email
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -134,7 +147,9 @@ object reactMdFormStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait filled extends FormTheme
+  sealed trait filled
+    extends StObject
+       with FormTheme
   @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
   
@@ -154,7 +169,9 @@ object reactMdFormStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait horizontal extends TextAreaResize
+  sealed trait horizontal
+    extends StObject
+       with TextAreaResize
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -179,7 +196,9 @@ object reactMdFormStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait left extends FormUnderlineDirection
+  sealed trait left
+    extends StObject
+       with FormUnderlineDirection
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -224,12 +243,16 @@ object reactMdFormStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait month extends SupportedInputTypes
+  sealed trait month
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait mouse extends _SliderDraggingType
+  sealed trait mouse
+    extends StObject
+       with _SliderDraggingType
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   
@@ -265,13 +288,16 @@ object reactMdFormStrings {
   
   @js.native
   sealed trait none
-    extends FormTheme
+    extends StObject
+       with FormTheme
        with TextAreaResize
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends SupportedInputTypes
+  sealed trait number
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -291,22 +317,30 @@ object reactMdFormStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onKeyDown extends SliderEventHandlerNames
+  sealed trait onKeyDown
+    extends StObject
+       with SliderEventHandlerNames
   @scala.inline
   def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
   
   @js.native
-  sealed trait onKeyUp extends SliderEventHandlerNames
+  sealed trait onKeyUp
+    extends StObject
+       with SliderEventHandlerNames
   @scala.inline
   def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
   
   @js.native
-  sealed trait onMouseDown extends SliderEventHandlerNames
+  sealed trait onMouseDown
+    extends StObject
+       with SliderEventHandlerNames
   @scala.inline
   def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
   
   @js.native
-  sealed trait onTouchStart extends SliderEventHandlerNames
+  sealed trait onTouchStart
+    extends StObject
+       with SliderEventHandlerNames
   @scala.inline
   def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   
@@ -316,7 +350,9 @@ object reactMdFormStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outline extends FormTheme
+  sealed trait outline
+    extends StObject
+       with FormTheme
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   
@@ -326,7 +362,9 @@ object reactMdFormStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait password extends SupportedInputTypes
+  sealed trait password
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   
@@ -366,7 +404,9 @@ object reactMdFormStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait right extends FormUnderlineDirection
+  sealed trait right
+    extends StObject
+       with FormUnderlineDirection
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -406,12 +446,16 @@ object reactMdFormStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait tel extends SupportedInputTypes
+  sealed trait tel
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends SupportedInputTypes
+  sealed trait text
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -426,12 +470,16 @@ object reactMdFormStrings {
   def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait time extends SupportedInputTypes
+  sealed trait time
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait touch extends _SliderDraggingType
+  sealed trait touch
+    extends StObject
+       with _SliderDraggingType
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   
@@ -456,22 +504,30 @@ object reactMdFormStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait underline extends FormTheme
+  sealed trait underline
+    extends StObject
+       with FormTheme
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait url extends SupportedInputTypes
+  sealed trait url
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait vertical extends TextAreaResize
+  sealed trait vertical
+    extends StObject
+       with TextAreaResize
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait week extends SupportedInputTypes
+  sealed trait week
+    extends StObject
+       with SupportedInputTypes
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   

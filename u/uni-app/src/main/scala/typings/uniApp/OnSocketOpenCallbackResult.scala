@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSocketOpenCallbackResult extends StObject {
   
   /**
     * 连接成功的 HTTP 响应 Header
     */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
 }
 object OnSocketOpenCallbackResult {
   

@@ -5,27 +5,25 @@ import typings.nano.nanoStrings.json
 import typings.nano.nanoStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/find.html#db-index
-@js.native
 trait CreateIndexRequest extends StObject {
   
   // Name of the design document in which the index will be created.
-  var ddoc: js.UndefOr[String] = js.native
+  var ddoc: js.UndefOr[String] = js.undefined
   
   // JSON object describing the index to create
-  var index: Fields = js.native
+  var index: Fields
   
   // Name of the index. If no name is provided, a name will be generated automatically.
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // This field sets whether the created index will be a partitioned or global index.
-  var partitioned: js.UndefOr[Boolean] = js.native
+  var partitioned: js.UndefOr[Boolean] = js.undefined
   
   // Can be "json" or "text". Defaults to json.
-  var `type`: js.UndefOr[json | text] = js.native
+  var `type`: js.UndefOr[json | text] = js.undefined
 }
 object CreateIndexRequest {
   

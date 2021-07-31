@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicationTaskAssessmentRunMessage extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the premigration assessment run to be deleted.
     */
-  var ReplicationTaskAssessmentRunArn: String = js.native
+  var ReplicationTaskAssessmentRunArn: String
 }
 object DeleteReplicationTaskAssessmentRunMessage {
   

@@ -6,27 +6,26 @@ import typings.auth0Js.auth0JsStrings.code
 import typings.auth0Js.auth0JsStrings.recaptcha_v2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0Challenge
-  extends /* other */ StringDictionary[js.Any] {
+  extends StObject
+     with /* other */ StringDictionary[js.Any] {
   
-  var image: String = js.native
+  var image: String
   
-  var provider: auth0 | recaptcha_v2 = js.native
+  var provider: auth0 | recaptcha_v2
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var `type`: code = js.native
+  var `type`: code
 }
 object Auth0Challenge {
   
   @scala.inline
-  def apply(image: String, provider: auth0 | recaptcha_v2, required: Boolean, `type`: code): Auth0Challenge = {
+  def apply(image: String, provider: auth0 | recaptcha_v2, required: Boolean): Auth0Challenge = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Auth0Challenge]
   }
   

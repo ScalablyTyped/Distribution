@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.Conv2DBackpropFilterAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.Conv2DBackpropFilterInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsConv2DBackpropFilterAttrs extends StObject {
   
-  var attrs: Conv2DBackpropFilterAttrs = js.native
+  var attrs: Conv2DBackpropFilterAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: Conv2DBackpropFilterInputs = js.native
+  var inputs: Conv2DBackpropFilterInputs
 }
 object AttrsConv2DBackpropFilterAttrs {
   

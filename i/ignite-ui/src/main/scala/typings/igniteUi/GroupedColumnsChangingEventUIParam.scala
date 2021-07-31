@@ -2,46 +2,44 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupedColumnsChangingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the current child grid element, in case it's an hierarchical grid(not set if called from modal dialog).
     */
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the current groupedColumns.
     */
-  var groupedColumns: js.UndefOr[js.Array[_]] = js.native
+  var groupedColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the current column's key that's being grouped(not set if called from modal dialog).
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the current layout object, if any(not set if called from modal dialog).
     */
-  var layout: js.UndefOr[js.Any] = js.native
+  var layout: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the object of the new grouped columns that should be applied.(it is set ONLY if called from modal dialog)
     */
-  var newGroupedColumns: js.UndefOr[js.Any] = js.native
+  var newGroupedColumns: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets which user interaction triggers the event - possible options are dragAndDrop|modalDialog|sortStateChanged|removeButton|regroup.
     */
-  var triggeredBy: js.UndefOr[String] = js.native
+  var triggeredBy: js.UndefOr[String] = js.undefined
 }
 object GroupedColumnsChangingEventUIParam {
   
@@ -61,7 +59,7 @@ object GroupedColumnsChangingEventUIParam {
     def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def setGroupedColumns(value: js.Array[_]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)

@@ -3,7 +3,6 @@ package typings.sipJs.mod
 import typings.sipJs.subscriptionOptionsMod.SubscriptionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Subscription")

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedOpsItem extends StObject {
   
   /**
     * The ID of an OpsItem related to the current OpsItem.
     */
-  var OpsItemId: String = js.native
+  var OpsItemId: String
 }
 object RelatedOpsItem {
   

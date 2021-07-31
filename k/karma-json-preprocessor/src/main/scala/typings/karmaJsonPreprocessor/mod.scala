@@ -2,19 +2,17 @@ package typings.karmaJsonPreprocessor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * see {@link https://github.com/mjeanroy/karma-json-preprocessor#configuration-1}
       */
-    var jsonPreprocessor: js.UndefOr[JsonPreprocessorOptions] = js.native
+    var jsonPreprocessor: js.UndefOr[JsonPreprocessorOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -39,18 +37,17 @@ object mod {
     * Default global variable name is by default `__json__`,
     * but you can override it with your own name in karma configuration:
     */
-  @js.native
   trait JsonPreprocessorOptions extends StObject {
     
     /**
       * @default ''
       */
-    var stripPrefix: js.UndefOr[String] = js.native
+    var stripPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * @default '__json__'
       */
-    var varName: js.UndefOr[String] = js.native
+    var varName: js.UndefOr[String] = js.undefined
   }
   object JsonPreprocessorOptions {
     

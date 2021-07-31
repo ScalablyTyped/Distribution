@@ -3,23 +3,21 @@ package typings.datatablesNetKeytable
 import typings.datatablesNetKeytable.DataTables.Api
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Disable extends StObject {
     
     /*
       * Disable KeyTable's interactions (mouse and keyboard)
       */
-    def disable(): Api = js.native
+    def disable(): Api
     
     /*
       * Enable or disable KeyTable's interactions (mouse and keyboard)
       */
-    def enable(): Api = js.native
+    def enable(): Api
   }
   object Disable {
     

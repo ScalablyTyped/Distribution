@@ -3,34 +3,33 @@ package typings.saucelabs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assets
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var assets: Boolean = js.native
+  var assets: Boolean
   
-  var browser: String = js.native
+  var browser: String
   
-  var browserDisplay: String = js.native
+  var browserDisplay: String
   
-  var browserVersionDisplay: String = js.native
+  var browserVersionDisplay: String
   
-  var device: js.UndefOr[String] = js.native
+  var device: js.UndefOr[String] = js.undefined
   
-  var os: String = js.native
+  var os: String
   
-  var osDisplay: String = js.native
+  var osDisplay: String
   
-  var res: String = js.native
+  var res: String
   
-  var tunnel: js.UndefOr[String] = js.native
+  var tunnel: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var version: String = js.native
+  var version: String
 }
 object Assets {
   

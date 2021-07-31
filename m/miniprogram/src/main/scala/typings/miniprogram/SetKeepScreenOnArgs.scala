@@ -2,13 +2,13 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetKeepScreenOnArgs extends AsyncCallback[Unit] {
+trait SetKeepScreenOnArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var keepScreenOn: Boolean = js.native
+  var keepScreenOn: Boolean
 }
 object SetKeepScreenOnArgs {
   

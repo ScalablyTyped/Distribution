@@ -7,30 +7,28 @@ import typings.popperjsCore.typesMod.State
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.Modifier<any, any>> */
-@js.native
 trait PartialModifieranyany extends StObject {
   
-  var data: js.UndefOr[Obj] = js.native
+  var data: js.UndefOr[Obj] = js.undefined
   
-  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[_], js.Function0[Unit] | Unit]] = js.native
+  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Any], js.Function0[Unit] | Unit]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[_], State | Unit]] = js.native
+  var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Any], State | Unit]] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[js.Any] = js.undefined
   
-  var options: js.UndefOr[Partial[_]] = js.native
+  var options: js.UndefOr[Partial[js.Any]] = js.undefined
   
-  var phase: js.UndefOr[ModifierPhases_] = js.native
+  var phase: js.UndefOr[ModifierPhases_] = js.undefined
   
-  var requires: js.UndefOr[js.Array[String]] = js.native
+  var requires: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiresIfExists: js.UndefOr[js.Array[String]] = js.native
+  var requiresIfExists: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PartialModifieranyany {
   
@@ -50,7 +48,7 @@ object PartialModifieranyany {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setEffect(value: /* arg0 */ ModifierArguments[_] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+    def setEffect(value: /* arg0 */ ModifierArguments[js.Any] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
     
     @scala.inline
     def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
@@ -62,7 +60,7 @@ object PartialModifieranyany {
     def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setFn(value: /* arg0 */ ModifierArguments[_] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    def setFn(value: /* arg0 */ ModifierArguments[js.Any] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
@@ -74,7 +72,7 @@ object PartialModifieranyany {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOptions(value: Partial[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: Partial[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinLogCoordinates extends StObject {
   
   /** Name of the binary log file for a Cloud SQL instance. */
-  var binLogFileName: js.UndefOr[String] = js.native
+  var binLogFileName: js.UndefOr[String] = js.undefined
   
   /** Position (offset) within the binary log file. */
-  var binLogPosition: js.UndefOr[String] = js.native
+  var binLogPosition: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#binLogCoordinates*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object BinLogCoordinates {
   

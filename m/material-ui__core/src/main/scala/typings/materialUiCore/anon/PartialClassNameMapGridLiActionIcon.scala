@@ -2,34 +2,32 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey>> */
-@js.native
 trait PartialClassNameMapGridLiActionIcon extends StObject {
   
-  var actionIcon: js.UndefOr[String] = js.native
+  var actionIcon: js.UndefOr[String] = js.undefined
   
-  var actionIconActionPosLeft: js.UndefOr[String] = js.native
+  var actionIconActionPosLeft: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var rootSubtitle: js.UndefOr[String] = js.native
+  var rootSubtitle: js.UndefOr[String] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titlePositionBottom: js.UndefOr[String] = js.native
+  var titlePositionBottom: js.UndefOr[String] = js.undefined
   
-  var titlePositionTop: js.UndefOr[String] = js.native
+  var titlePositionTop: js.UndefOr[String] = js.undefined
   
-  var titleWrap: js.UndefOr[String] = js.native
+  var titleWrap: js.UndefOr[String] = js.undefined
   
-  var titleWrapActionPosLeft: js.UndefOr[String] = js.native
+  var titleWrapActionPosLeft: js.UndefOr[String] = js.undefined
   
-  var titleWrapActionPosRight: js.UndefOr[String] = js.native
+  var titleWrapActionPosRight: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapGridLiActionIcon {
   

@@ -2,15 +2,13 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailSettings extends StObject {
   
-  var Scte35SpliceInsert: js.UndefOr[typings.awsSdk.medialiveMod.Scte35SpliceInsert] = js.native
+  var Scte35SpliceInsert: js.UndefOr[typings.awsSdk.medialiveMod.Scte35SpliceInsert] = js.undefined
   
-  var Scte35TimeSignalApos: js.UndefOr[typings.awsSdk.medialiveMod.Scte35TimeSignalApos] = js.native
+  var Scte35TimeSignalApos: js.UndefOr[typings.awsSdk.medialiveMod.Scte35TimeSignalApos] = js.undefined
 }
 object AvailSettings {
   

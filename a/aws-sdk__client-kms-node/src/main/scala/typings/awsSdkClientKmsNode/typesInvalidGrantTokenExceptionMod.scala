@@ -9,15 +9,14 @@ import typings.awsSdkClientKmsNode.reEncryptExceptionsUnionMod.ReEncryptExceptio
 import typings.awsSdkClientKmsNode.retireGrantExceptionsUnionMod.RetireGrantExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidGrantTokenExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidGrantTokenExceptionDetails> * / any */ @js.native
-  trait InvalidGrantTokenException
-    extends CreateGrantExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidGrantTokenExceptionDetails> * / any */ trait InvalidGrantTokenException
+    extends StObject
+       with CreateGrantExceptionsUnion
        with DecryptExceptionsUnion
        with EncryptExceptionsUnion
        with GenerateDataKeyExceptionsUnion
@@ -25,13 +24,13 @@ object typesInvalidGrantTokenExceptionMod {
        with ReEncryptExceptionsUnion
        with RetireGrantExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException
   }
   object InvalidGrantTokenException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException): InvalidGrantTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidGrantTokenException = {
+      val __obj = js.Dynamic.literal(name = "InvalidGrantTokenException")
       __obj.asInstanceOf[InvalidGrantTokenException]
     }
     
@@ -43,13 +42,12 @@ object typesInvalidGrantTokenExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidGrantTokenExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidGrantTokenExceptionDetails {
     

@@ -3,22 +3,22 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.optional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionalPattern extends BlockPattern {
+trait OptionalPattern
+  extends StObject
+     with BlockPattern {
   
-  var patterns: js.Array[Pattern] = js.native
+  var patterns: js.Array[Pattern]
   
-  var `type`: optional = js.native
+  var `type`: optional
 }
 object OptionalPattern {
   
   @scala.inline
-  def apply(patterns: js.Array[Pattern], `type`: optional): OptionalPattern = {
+  def apply(patterns: js.Array[Pattern]): OptionalPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("optional")
     __obj.asInstanceOf[OptionalPattern]
   }
   

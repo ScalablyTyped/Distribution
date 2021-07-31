@@ -3,23 +3,21 @@ package typings.inboxsdk.mod
 import typings.inboxsdk.mod.Common.Contact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object User {
   
-  @js.native
   trait UserInstance extends StObject {
     
-    def getAccountSwitcherContactList(): js.Array[Contact] = js.native
+    def getAccountSwitcherContactList(): js.Array[Contact]
     
-    def getEmailAddress(): String = js.native
+    def getEmailAddress(): String
     
-    def getLanguage(): String = js.native
+    def getLanguage(): String
     
-    def isConversationViewDisabled(): Boolean = js.native
+    def isConversationViewDisabled(): Boolean
     
-    def isUsingGmailMaterialUI(): Boolean = js.native
+    def isUsingGmailMaterialUI(): Boolean
   }
   object UserInstance {
     

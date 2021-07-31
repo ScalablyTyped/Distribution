@@ -3,12 +3,13 @@ package typings.orientjs.mod
 import typings.std.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ORID")
 @js.native
-class ORID () extends String {
+class ORID ()
+  extends StObject
+     with String {
   
   var cluster: js.UndefOr[Double] = js.native
   
@@ -19,9 +20,9 @@ class ORID () extends String {
     js.Function1[/* input */ js.UndefOr[java.lang.String | this.type | js.Any], Boolean]
   ] = js.native
   
-  var parse: (js.UndefOr[js.Function1[/* input */ java.lang.String, Boolean]]) with (js.UndefOr[js.Function1[/* input */ java.lang.String, this.type]]) with (js.UndefOr[js.Function1[/* input */ java.lang.String, js.Array[this.type]]]) = js.native
+  var parse: (js.UndefOr[js.Function1[/* input */ java.lang.String, Boolean]]) & (js.UndefOr[js.Function1[/* input */ java.lang.String, this.type]]) & (js.UndefOr[js.Function1[/* input */ java.lang.String, js.Array[this.type]]]) = js.native
   
   var position: js.UndefOr[Double] = js.native
   
-  var toRid: js.UndefOr[js.Function2[/* cluster */ Double, /* position */ Double, _]] = js.native
+  var toRid: js.UndefOr[js.Function2[/* cluster */ Double, /* position */ Double, js.Any]] = js.native
 }

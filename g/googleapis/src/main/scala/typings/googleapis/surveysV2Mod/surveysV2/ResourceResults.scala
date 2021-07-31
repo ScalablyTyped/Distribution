@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/surveys/v2", "surveys_v2.Resource$Results")
@@ -33,7 +32,7 @@ class ResourceResults protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSurveyResults] = js.native
   def get(callback: BodyResponseCallback[SchemaSurveyResults]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurveyResults] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurveyResults] = js.native
   def get(params: ParamsResourceResultsGet): GaxiosPromise[SchemaSurveyResults] = js.native
   def get(params: ParamsResourceResultsGet, callback: BodyResponseCallback[SchemaSurveyResults]): Unit = js.native
   def get(

@@ -2,15 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceResourceAccess extends StObject {
   
-  var permissions: js.UndefOr[js.Array[ResourcePermission]] = js.native
+  var permissions: js.UndefOr[js.Array[ResourcePermission]] = js.undefined
   
-  var resourceAppId: js.UndefOr[String] = js.native
+  var resourceAppId: js.UndefOr[String] = js.undefined
 }
 object InstanceResourceAccess {
   

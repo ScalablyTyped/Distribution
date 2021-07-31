@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fast-html-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait NodeType extends StObject
@@ -16,23 +19,25 @@ object mod {
   object NodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NodeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[NodeType & Double] = js.native
     
     @js.native
-    sealed trait ELEMENT_NODE extends NodeType
-    /* 1 */ val ELEMENT_NODE: typings.fastHtmlParser.mod.NodeType.ELEMENT_NODE with Double = js.native
+    sealed trait ELEMENT_NODE
+      extends StObject
+         with NodeType
+    /* 1 */ val ELEMENT_NODE: typings.fastHtmlParser.mod.NodeType.ELEMENT_NODE & Double = js.native
     
     @js.native
-    sealed trait TEXT_NODE extends NodeType
-    /* 3 */ val TEXT_NODE: typings.fastHtmlParser.mod.NodeType.TEXT_NODE with Double = js.native
+    sealed trait TEXT_NODE
+      extends StObject
+         with NodeType
+    /* 3 */ val TEXT_NODE: typings.fastHtmlParser.mod.NodeType.TEXT_NODE & Double = js.native
   }
   
-  @JSImport("fast-html-parser", "parse")
-  @js.native
-  def parse(data: String): HTMLElement = js.native
-  @JSImport("fast-html-parser", "parse")
-  @js.native
-  def parse(data: String, options: ParseOptions): HTMLElement = js.native
+  @scala.inline
+  def parse(data: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def parse(data: String, options: ParseOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   type Attributes = StringDictionary[String]
   
@@ -81,16 +86,15 @@ object mod {
     def trimRight(pattern: RegExp): HTMLElement = js.native
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.native
+    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
     
-    var pre: js.UndefOr[Boolean] = js.native
+    var pre: js.UndefOr[Boolean] = js.undefined
     
-    var script: js.UndefOr[Boolean] = js.native
+    var script: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Boolean] = js.native
+    var style: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     

@@ -2,31 +2,29 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHealthStatus extends StObject {
   
   /**
     * Health state of the instance.
     */
-  var healthState: js.UndefOr[String] = js.native
+  var healthState: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the instance resource.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address represented by this resource.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The port on the instance.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SchemaHealthStatus {
   

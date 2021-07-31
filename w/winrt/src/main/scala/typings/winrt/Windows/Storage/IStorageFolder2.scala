@@ -3,13 +3,11 @@ package typings.winrt.Windows.Storage
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStorageFolder2 extends StObject {
   
-  def tryGetItemAsync(name: String): IAsyncOperation[IStorageItem] = js.native
+  def tryGetItemAsync(name: String): IAsyncOperation[IStorageItem]
 }
 object IStorageFolder2 {
   

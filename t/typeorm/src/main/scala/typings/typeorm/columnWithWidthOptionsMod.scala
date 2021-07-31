@@ -2,30 +2,28 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnWithWidthOptionsMod {
   
-  @js.native
   trait ColumnWithWidthOptions extends StObject {
     
     /**
       * Puts UNSIGNED attribute on to numeric column. Works only for MySQL.
       */
-    var unsigned: js.UndefOr[Boolean] = js.native
+    var unsigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type's display width. Used only on some column types in MySQL.
       * For example, INT(4) specifies an INT with a display width of four digits.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Puts ZEROFILL attribute on to numeric column. Works only for MySQL.
       * If you specify ZEROFILL for a numeric column, MySQL automatically adds the UNSIGNED attribute to this column
       */
-    var zerofill: js.UndefOr[Boolean] = js.native
+    var zerofill: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnWithWidthOptions {
     

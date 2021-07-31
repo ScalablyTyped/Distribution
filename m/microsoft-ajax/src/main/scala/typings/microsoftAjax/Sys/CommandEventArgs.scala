@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Event handlers can use the cancel property to cancel the operation in progress. The semantics of canceling an event depend on the event source.
   * @see {@link http://msdn.microsoft.com/en-us/library/dd393715(v=vs.100).aspx
   */
-@js.native
-trait CommandEventArgs extends EventArgs {
+trait CommandEventArgs
+  extends StObject
+     with EventArgs {
   
   /**
     * Gets a value that represents the command argument.
     */
-  def get_commandArgument(): js.Any = js.native
+  def get_commandArgument(): js.Any
   
   //#endregion
   //#region Properties
   /**
     * Gets a string that specifies the command name.
     */
-  def get_commandName(): String = js.native
+  def get_commandName(): String
   
   /**
     * Gets a value that represents the command source.
     */
-  def get_commandSource(): js.Any = js.native
+  def get_commandSource(): js.Any
 }
 object CommandEventArgs {
   

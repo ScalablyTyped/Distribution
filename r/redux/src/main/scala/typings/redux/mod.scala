@@ -9,148 +9,124 @@ import typings.redux.anon.`2`
 import typings.redux.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux", "applyMiddleware")
+  @JSImport("redux", JSImport.Namespace)
   @js.native
-  def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
-  def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, _]): StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
-  def applyMiddleware[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[DispatchExt[Ext], js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
-  def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, _], middleware2: Middleware[Ext2, S, _]): StoreEnhancer[`0`[Ext1, Ext2], js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  @scala.inline
+  def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, js.Any]): StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object]]
+  @scala.inline
+  def applyMiddleware[Ext, S](middlewares: (Middleware[js.Any, S, js.Any])*): StoreEnhancer[DispatchExt[Ext], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middlewares.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[DispatchExt[Ext], js.Object]]
+  @scala.inline
+  def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, js.Any], middleware2: Middleware[Ext2, S, js.Any]): StoreEnhancer[`0`[Ext1, Ext2], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`0`[Ext1, Ext2], js.Object]]
+  @scala.inline
   def applyMiddleware[Ext1, Ext2, Ext3, S](
-    middleware1: Middleware[Ext1, S, _],
-    middleware2: Middleware[Ext2, S, _],
-    middleware3: Middleware[Ext3, S, _]
-  ): StoreEnhancer[`1`[Ext1, Ext2, Ext3], js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
+    middleware1: Middleware[Ext1, S, js.Any],
+    middleware2: Middleware[Ext2, S, js.Any],
+    middleware3: Middleware[Ext3, S, js.Any]
+  ): StoreEnhancer[`1`[Ext1, Ext2, Ext3], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`1`[Ext1, Ext2, Ext3], js.Object]]
+  @scala.inline
   def applyMiddleware[Ext1, Ext2, Ext3, Ext4, S](
-    middleware1: Middleware[Ext1, S, _],
-    middleware2: Middleware[Ext2, S, _],
-    middleware3: Middleware[Ext3, S, _],
-    middleware4: Middleware[Ext4, S, _]
-  ): StoreEnhancer[`2`[Ext1, Ext2, Ext3, Ext4], js.Object] = js.native
-  @JSImport("redux", "applyMiddleware")
-  @js.native
+    middleware1: Middleware[Ext1, S, js.Any],
+    middleware2: Middleware[Ext2, S, js.Any],
+    middleware3: Middleware[Ext3, S, js.Any],
+    middleware4: Middleware[Ext4, S, js.Any]
+  ): StoreEnhancer[`2`[Ext1, Ext2, Ext3, Ext4], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`2`[Ext1, Ext2, Ext3, Ext4], js.Object]]
+  @scala.inline
   def applyMiddleware[Ext1, Ext2, Ext3, Ext4, Ext5, S](
-    middleware1: Middleware[Ext1, S, _],
-    middleware2: Middleware[Ext2, S, _],
-    middleware3: Middleware[Ext3, S, _],
-    middleware4: Middleware[Ext4, S, _],
-    middleware5: Middleware[Ext5, S, _]
-  ): StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object] = js.native
+    middleware1: Middleware[Ext1, S, js.Any],
+    middleware2: Middleware[Ext2, S, js.Any],
+    middleware3: Middleware[Ext3, S, js.Any],
+    middleware4: Middleware[Ext4, S, js.Any],
+    middleware5: Middleware[Ext5, S, js.Any]
+  ): StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object]]
   
-  @JSImport("redux", "bindActionCreators")
-  @js.native
-  def bindActionCreators[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
-  @JSImport("redux", "bindActionCreators")
-  @js.native
-  def bindActionCreators_AC_ActionCreatorA_C[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
-  @JSImport("redux", "bindActionCreators")
-  @js.native
-  def bindActionCreators_A_ActionCreatorWildcardB_ActionCreatorWildcard_B[A /* <: ActionCreator[_] */, B /* <: ActionCreator[_] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = js.native
-  @JSImport("redux", "bindActionCreators")
-  @js.native
-  def bindActionCreators_M_ActionCreatorsMapObjectWildcardN_ActionCreatorsMapObjectWildcard_N[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
+  @scala.inline
+  def bindActionCreators[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[M]
   
-  @JSImport("redux", "combineReducers")
-  @js.native
-  def combineReducers[M /* <: ReducersMapObject[_, _] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = js.native
-  @JSImport("redux", "combineReducers")
-  @js.native
-  def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[CombinedState[S], AnyAction] = js.native
-  @JSImport("redux", "combineReducers")
-  @js.native
-  def combineReducers_SA_ActionWildcard[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = js.native
+  @scala.inline
+  def bindActionCreators_AC_ActionCreatorA_C[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[C]
   
-  @JSImport("redux", "compose")
-  @js.native
-  def compose(): js.Function1[/* a */ js.Any, _] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[F /* <: js.Function */](f: F): F = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, R](f1: js.Function1[/* b */ A, R], f2: Func0[A]): Func0[R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func0[A]): Func0[R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: Func1[T1, A]): Func1[T1, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
+  @scala.inline
+  def bindActionCreators_A_ActionCreatorAnyB_ActionCreatorAny_B[A /* <: ActionCreator[js.Any] */, B /* <: ActionCreator[js.Any] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[B]
+  
+  @scala.inline
+  def bindActionCreators_M_ActionCreatorsMapObjectAnyN_ActionCreatorsMapObjectAny_N[M /* <: ActionCreatorsMapObject[js.Any] */, N /* <: ActionCreatorsMapObject[js.Any] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[N]
+  
+  @scala.inline
+  def combineReducers[M /* <: ReducersMapObject[js.Any, js.Any] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]]]
+  @scala.inline
+  def combineReducers[S](reducers: ReducersMapObject[S, js.Any]): Reducer[CombinedState[S], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], AnyAction]]
+  
+  @scala.inline
+  def combineReducers_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], A]]
+  
+  @scala.inline
+  def compose(): js.Function1[/* a */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")().asInstanceOf[js.Function1[/* a */ js.Any, js.Any]]
+  @scala.inline
+  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], funcs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
+  @scala.inline
+  def compose[F /* <: js.Function */](f: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f.asInstanceOf[js.Any]).asInstanceOf[F]
+  @scala.inline
+  def compose[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
+  @scala.inline
+  def compose[A, R](f1: js.Function1[/* b */ A, R], f2: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
+  @scala.inline
+  def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
+  @scala.inline
+  def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
+  @scala.inline
   def compose[A, B, C, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func0[A]
-  ): Func0[R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func1[T1, A]): Func1[T1, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: Func2[T1, T2, A]): Func2[T1, T2, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
+  ): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
+  @scala.inline
+  def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
+  @scala.inline
+  def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
+  @scala.inline
   def compose[A, B, C, T1, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func1[T1, A]
-  ): Func1[T1, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func2[T1, T2, A]): Func2[T1, T2, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
+  ): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
+  @scala.inline
+  def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
+  @scala.inline
+  def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
+  @scala.inline
   def compose[A, B, C, T1, T2, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func2[T1, T2, A]
-  ): Func2[T1, T2, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
-  def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = js.native
-  @JSImport("redux", "compose")
-  @js.native
+  ): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
+  @scala.inline
+  def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
+  @scala.inline
   def compose[A, B, C, T1, T2, T3, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func3[T1, T2, T3, A]
-  ): Func3[T1, T2, T3, R] = js.native
+  ): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
   
   @JSImport("redux", "createStore")
   @js.native
   val createStore: StoreCreator = js.native
   
-  @js.native
   trait Action[T] extends StObject {
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Action {
     
@@ -162,7 +138,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], T] (val x: Self with Action[T]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -177,9 +153,9 @@ object mod {
   
   type ActionFromReducersMapObject[M] = ActionFromReducer[ReducerFromReducersMapObject[M]]
   
-  @js.native
   trait AnyAction
-    extends Action[js.Any]
+    extends StObject
+       with Action[js.Any]
        with // Allows any extra properties to be defined in an action.
   /* extraProps */ StringDictionary[js.Any]
   object AnyAction {
@@ -192,13 +168,13 @@ object mod {
     }
   }
   
-  type CombinedState[S] = typings.redux.anon.CombinedState with S
+  type CombinedState[S] = typings.redux.anon.CombinedState & S
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias redux.redux.DeepPartial<T[K]> * / object : T[K]}
-    */ typings.redux.reduxStrings.DeepPartial with TopLevel[js.Any]
+    */ typings.redux.reduxStrings.DeepPartial & TopLevel[js.Any]
   
-  type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
+  type Dispatch[A /* <: Action[js.Any] */] = js.Function1[/* action */ A, A]
   
   /* compose */
   type Func0[R] = js.Function0[R]
@@ -207,19 +183,22 @@ object mod {
   
   type Func2[T1, T2, R] = js.Function2[/* a1 */ T1, /* a2 */ T2, R]
   
-  type Func3[T1, T2, T3, R] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* repeated */ js.Any, R]
+  @js.native
+  trait Func3[T1, T2, T3, R] extends StObject {
+    
+    def apply(a1: T1, a2: T2, a3: T3, args: js.Any*): R = js.native
+  }
   
   type Middleware[DispatchExt, S, D /* <: Dispatch[AnyAction] */] = js.Function1[
     /* api */ MiddlewareAPI[D, S], 
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
   ]
   
-  @js.native
   trait MiddlewareAPI[D /* <: Dispatch[AnyAction] */, S] extends StObject {
     
-    var dispatch: D = js.native
+    var dispatch: D
     
-    def getState(): S = js.native
+    def getState(): S
   }
   object MiddlewareAPI {
     
@@ -230,7 +209,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MiddlewareAPIMutableBuilder[Self <: MiddlewareAPI[_, _], D /* <: Dispatch[AnyAction] */, S] (val x: Self with (MiddlewareAPI[D, S])) extends AnyVal {
+    implicit class MiddlewareAPIMutableBuilder[Self <: MiddlewareAPI[?, ?], D /* <: Dispatch[AnyAction] */, S] (val x: Self & (MiddlewareAPI[D, S])) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: D): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
@@ -256,10 +235,9 @@ object mod {
     def subscribe(observer: Observer[T]): /* import warning: importer.ImportType#apply Failed type conversion: redux.anon.Unsubscribe[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
   }
   
-  @js.native
   trait Observer[T] extends StObject {
     
-    var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+    var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   }
   object Observer {
     
@@ -270,7 +248,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       @scala.inline
       def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
@@ -282,22 +260,22 @@ object mod {
   
   type PreloadedState[S] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: S[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias redux.redux.PreloadedState<S[K]> * / object : S[K]}
-    */ typings.redux.reduxStrings.PreloadedState with TopLevel[js.Any]
+    */ typings.redux.reduxStrings.PreloadedState & TopLevel[js.Any]
   
-  type Reducer[S, A /* <: Action[_] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
+  type Reducer[S, A /* <: Action[js.Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
   type ReducerFromReducersMapObject[M] = js.Any
   
-  type ReducersMapObject[S, A /* <: Action[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ReducersMapObject[S, A /* <: Action[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: redux.redux.Reducer<S[K], A>}
-    */ typings.redux.reduxStrings.ReducersMapObject with TopLevel[S]
+    */ typings.redux.reduxStrings.ReducersMapObject & TopLevel[S]
   
   type StateFromReducersMapObject[M] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof M ]: M[P] extends redux.redux.Reducer<infer S, any>? any : never}
-    */ typings.redux.reduxStrings.StateFromReducersMapObject with TopLevel[M]
+    */ typings.redux.reduxStrings.StateFromReducersMapObject & TopLevel[M]
   
   @js.native
-  trait Store[S, A /* <: Action[_] */] extends StObject {
+  trait Store[S, A /* <: Action[js.Any] */] extends StObject {
     
     def apply(): Observable[S] = js.native
     
@@ -405,15 +383,11 @@ object mod {
   @js.native
   trait StoreCreator extends StObject {
     
-    def apply[S, A /* <: Action[_] */, Ext, StateExt](reducer: Reducer[S, A]): (Store[S with StateExt, A]) with Ext = js.native
-    def apply[S, A /* <: Action[_] */, Ext, StateExt](reducer: Reducer[S, A], enhancer: StoreEnhancer[Ext, StateExt]): (Store[S with StateExt, A]) with Ext = js.native
-    def apply[S, A /* <: Action[_] */, Ext, StateExt](
-      reducer: Reducer[S, A],
-      preloadedState: js.UndefOr[scala.Nothing],
-      enhancer: StoreEnhancer[Ext, js.Object]
-    ): (Store[S with StateExt, A]) with Ext = js.native
-    def apply[S, A /* <: Action[_] */, Ext, StateExt](reducer: Reducer[S, A], preloadedState: PreloadedState[S]): (Store[S with StateExt, A]) with Ext = js.native
-    def apply[S, A /* <: Action[_] */, Ext, StateExt](reducer: Reducer[S, A], preloadedState: PreloadedState[S], enhancer: StoreEnhancer[Ext, js.Object]): (Store[S with StateExt, A]) with Ext = js.native
+    def apply[S, A /* <: Action[js.Any] */, Ext, StateExt](reducer: Reducer[S, A]): (Store[S & StateExt, A]) & Ext = js.native
+    def apply[S, A /* <: Action[js.Any] */, Ext, StateExt](reducer: Reducer[S, A], enhancer: StoreEnhancer[Ext, StateExt]): (Store[S & StateExt, A]) & Ext = js.native
+    def apply[S, A /* <: Action[js.Any] */, Ext, StateExt](reducer: Reducer[S, A], preloadedState: Unit, enhancer: StoreEnhancer[Ext, js.Object]): (Store[S & StateExt, A]) & Ext = js.native
+    def apply[S, A /* <: Action[js.Any] */, Ext, StateExt](reducer: Reducer[S, A], preloadedState: PreloadedState[S]): (Store[S & StateExt, A]) & Ext = js.native
+    def apply[S, A /* <: Action[js.Any] */, Ext, StateExt](reducer: Reducer[S, A], preloadedState: PreloadedState[S], enhancer: StoreEnhancer[Ext, js.Object]): (Store[S & StateExt, A]) & Ext = js.native
   }
   
   type StoreEnhancer[Ext, StateExt] = js.Function1[
@@ -424,7 +398,7 @@ object mod {
   type StoreEnhancerStoreCreator[Ext, StateExt] = js.Function2[
     /* reducer */ Reducer[js.Any, AnyAction], 
     /* preloadedState */ js.UndefOr[PreloadedState[js.Any]], 
-    (Store[js.Any with StateExt, AnyAction]) with Ext
+    (Store[js.Any & StateExt, AnyAction]) & Ext
   ]
   
   type Unsubscribe = js.Function0[Unit]

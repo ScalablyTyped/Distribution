@@ -22,7 +22,6 @@ import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navTypesMod {
@@ -48,13 +47,14 @@ object navTypesMod {
     var selectedKey: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait INavButtonProps extends IButtonProps {
+  trait INavButtonProps
+    extends StObject
+       with IButtonProps {
     
     /**
       * (Optional) Link to be rendered.
       */
-    var link: js.UndefOr[INavLink] = js.native
+    var link: js.UndefOr[INavLink] = js.undefined
   }
   object INavButtonProps {
     
@@ -75,9 +75,9 @@ object navTypesMod {
     }
   }
   
-  @js.native
   trait INavLink
-    extends /**
+    extends StObject
+       with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
   /* propertyName */ StringDictionary[js.Any] {
@@ -85,76 +85,76 @@ object navTypesMod {
     /**
       * Aria-current token for active nav links. Must be a valid token value, and defaults to 'page'.
       */
-    var ariaCurrent: js.UndefOr[page | step | location | date | time | `true`] = js.native
+    var ariaCurrent: js.UndefOr[page | step | location | date | time | `true`] = js.undefined
     
     /**
       * Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The name to use for functional automation tests
       */
-    var automationId: js.UndefOr[String] = js.native
+    var automationId: js.UndefOr[String] = js.undefined
     
     /**
       * ARIA label when group is collapsed and can be expanded.
       */
-    var collapseAriaLabel: js.UndefOr[String] = js.native
+    var collapseAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the link is disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ARIA label when group is collapsed and can be expanded.
       */
-    var expandAriaLabel: js.UndefOr[String] = js.native
+    var expandAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) By default, any link with onClick defined will render as a button.
       * Set this property to true to override that behavior. (Links without onClick defined
       * will render as anchors by default.)
       */
-    var forceAnchor: js.UndefOr[Boolean] = js.native
+    var forceAnchor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of an icon to render next to the link button.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * Deprecated. Use `iconProps.className` instead.
       * @deprecated Use `iconProps.className` instead.
       */
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Props for an icon to render next to the link button.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Whether or not the link is in an expanded state
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Unique, stable key for the link, used when rendering the list of links and for tracking
       * the currently selected link.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Child links to this link, if any
       */
-    var links: js.UndefOr[js.Array[INavLink]] = js.native
+    var links: js.UndefOr[js.Array[INavLink]] = js.undefined
     
     /**
       * Text to render for this link
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Callback invoked when this link is clicked. Providing this callback will cause the link
@@ -166,22 +166,22 @@ object navTypesMod {
           /* item */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Link <a> target.
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * Text for title tooltip and ARIA description.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * URL to navigate to for this link
       */
-    var url: String = js.native
+    var url: String
   }
   object INavLink {
     
@@ -303,43 +303,42 @@ object navTypesMod {
     }
   }
   
-  @js.native
   trait INavLinkGroup extends StObject {
     
     /**
       * The name to use for functional automation tests
       */
-    var automationId: js.UndefOr[String] = js.native
+    var automationId: js.UndefOr[String] = js.undefined
     
     /**
       * ARIA label when group is collapsed and can be expanded.
       */
-    var collapseAriaLabel: js.UndefOr[String] = js.native
+    var collapseAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * If true, the group should render collapsed by default
       */
-    var collapseByDefault: js.UndefOr[Boolean] = js.native
+    var collapseByDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ARIA label when group is collapsed and can be expanded.
       */
-    var expandAriaLabel: js.UndefOr[String] = js.native
+    var expandAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) Any additional properties to apply to a group.
       */
-    var groupData: js.UndefOr[js.Any] = js.native
+    var groupData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Links to render within this group
       */
-    var links: js.Array[INavLink] = js.native
+    var links: js.Array[INavLink]
     
     /**
       * Text to render as the header of a group
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Callback invoked when a group header is clicked
@@ -350,7 +349,7 @@ object navTypesMod {
           /* isCollapsing */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object INavLinkGroup {
     
@@ -415,25 +414,24 @@ object navTypesMod {
     }
   }
   
-  @js.native
   trait INavProps extends StObject {
     
     /**
       * (Optional) The nav container aria label.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Additional css class to apply to the Nav
       * @defaultvalue undefined
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the INav interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[INav]] = js.native
+    var componentRef: js.UndefOr[IRefObject[INav]] = js.undefined
     
     /**
       * (Optional) The nav container aria label. The link name is prepended to this label.
@@ -441,28 +439,28 @@ object navTypesMod {
       *
       * @deprecated - Use expandAriaLabel and collapseAriaLabel on groups instead
       */
-    var expandButtonAriaLabel: js.UndefOr[String] = js.native
+    var expandButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * A collection of link groups to display in the navigation bar
       */
-    var groups: js.Array[INavLinkGroup] | Null = js.native
+    var groups: js.Array[INavLinkGroup] | Null
     
     /**
       * (Optional) The key of the nav item initially selected.
       */
-    var initialSelectedKey: js.UndefOr[String] = js.native
+    var initialSelectedKey: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether the navigation component renders on top of other content in the UI
       */
-    var isOnTop: js.UndefOr[Boolean] = js.native
+    var isOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Render a custom link in place of the normal one.
       * This replaces the entire button rather than simply button content
       */
-    var linkAs: js.UndefOr[IComponentAs[INavButtonProps]] = js.native
+    var linkAs: js.UndefOr[IComponentAs[INavButtonProps]] = js.undefined
     
     /**
       * Function callback invoked when a link in the navigation is clicked
@@ -473,7 +471,7 @@ object navTypesMod {
           /* item */ js.UndefOr[INavLink], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function callback invoked when the chevron on a link is clicked
@@ -484,46 +482,46 @@ object navTypesMod {
           /* item */ js.UndefOr[INavLink], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Used to customize how content inside the group header is rendered
       * @defaultvalue Default group header rendering
       */
-    var onRenderGroupHeader: js.UndefOr[IRenderFunction[IRenderGroupHeaderProps]] = js.native
+    var onRenderGroupHeader: js.UndefOr[IRenderFunction[IRenderGroupHeaderProps]] = js.undefined
     
     /**
       * Used to customize how content inside the link tag is rendered
       * @defaultvalue Default link rendering
       */
-    var onRenderLink: js.UndefOr[IRenderFunction[INavLink]] = js.native
+    var onRenderLink: js.UndefOr[IRenderFunction[INavLink]] = js.undefined
     
     /**
       * (Deprecated) Use ariaCurrent on links instead
       * @deprecated Use ariaCurrent on links instead
       */
-    var selectedAriaLabel: js.UndefOr[String] = js.native
+    var selectedAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) The key of the nav item selected by caller.
       */
-    var selectedKey: js.UndefOr[String] = js.native
+    var selectedKey: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[INavStyleProps, INavStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[INavStyleProps, INavStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object INavProps {
     
     @scala.inline
     def apply(): INavProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(groups = null)
       __obj.asInstanceOf[INavProps]
     }
     
@@ -645,90 +643,89 @@ object navTypesMod {
     }
   }
   
-  @js.native
   trait INavStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Inherited from INavProps
       * A collection of link groups to display in the navigation bar
       */
-    var groups: js.Array[INavLinkGroup] | Null = js.native
+    var groups: js.Array[INavLinkGroup] | Null
     
     /**
       * is button
       */
-    var isButtonEntry: js.UndefOr[Boolean] = js.native
+    var isButtonEntry: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element disabled
       */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element expanded boolean
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element a group boolean
       */
-    var isGroup: js.UndefOr[Boolean] = js.native
+    var isGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element a link boolean
       */
-    var isLink: js.UndefOr[Boolean] = js.native
+    var isLink: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element on top boolean
       */
-    var isOnTop: js.UndefOr[Boolean] = js.native
+    var isOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is element selected boolean
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * left padding value
       */
-    var leftPadding: js.UndefOr[Double] = js.native
+    var leftPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * left padding when expanded value
       */
-    var leftPaddingExpanded: js.UndefOr[Double] = js.native
+    var leftPaddingExpanded: js.UndefOr[Double] = js.undefined
     
     /**
       * Nav height value
       */
-    var navHeight: js.UndefOr[Double] = js.native
+    var navHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * position value
       */
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
     /**
       * right padding value
       */
-    var rightPadding: js.UndefOr[Double] = js.native
+    var rightPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object INavStyleProps {
     
     @scala.inline
     def apply(theme: ITheme): INavStyleProps = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any], groups = null)
       __obj.asInstanceOf[INavStyleProps]
     }
     
@@ -827,61 +824,60 @@ object navTypesMod {
     }
   }
   
-  @js.native
   trait INavStyles extends StObject {
     
     /**
       * Style set for the chevron button inside the composite
       * link and group elements.
       */
-    var chevronButton: IStyle = js.native
+    var chevronButton: IStyle
     
     /**
       * Style set for the chevron icon inside the composite
       * link and group elements.
       */
-    var chevronIcon: IStyle = js.native
+    var chevronIcon: IStyle
     
     /**
       * Style set for the composite link container div element
       */
-    var compositeLink: IStyle = js.native
+    var compositeLink: IStyle
     
     /**
       * Style set for the group root div.
       */
-    var group: IStyle = js.native
+    var group: IStyle
     
     /**
       * Style set for the group content div inside group.
       */
-    var groupContent: IStyle = js.native
+    var groupContent: IStyle
     
     /**
       * Style set for the link element extending the
       * root style set for ActionButton component.
       */
-    var link: IStyle = js.native
+    var link: IStyle
     
     /**
       * Style set for the link text container div element.
       */
-    var linkText: IStyle = js.native
+    var linkText: IStyle
     
     /**
       * Style set for the nav links li element.
       */
-    var navItem: IStyle = js.native
+    var navItem: IStyle
     
     /**
       * Style set for the nav links ul element.
       */
-    var navItems: IStyle = js.native
+    var navItems: IStyle
     
     /**
       * Style set for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object INavStyles {
     
@@ -986,13 +982,14 @@ object navTypesMod {
     }
   }
   
-  @js.native
-  trait IRenderGroupHeaderProps extends INavLinkGroup {
+  trait IRenderGroupHeaderProps
+    extends StObject
+       with INavLinkGroup {
     
     /**
       * Whether or not the group is presently expanded.
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
   }
   object IRenderGroupHeaderProps {
     

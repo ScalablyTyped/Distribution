@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the GridView extension.
   */
 @js.native
-trait MVCxClientGridView extends ASPxClientGridView {
+trait MVCxClientGridView
+  extends StObject
+     with ASPxClientGridView {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

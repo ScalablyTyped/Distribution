@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** KeyboardEvent objects describe a user interaction with the keyboard; each event describes a single interaction between the user and a key (or combination of a key with modifier keys) on the keyboard. */
 @js.native
-trait KeyboardEvent extends UIEvent {
+trait KeyboardEvent
+  extends StObject
+     with UIEvent {
   
   val DOM_KEY_LOCATION_LEFT: Double = js.native
   

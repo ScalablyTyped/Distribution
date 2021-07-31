@@ -5,21 +5,21 @@ import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.SmsRecipientRes
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TriggerNameSmsRecipientResponseMissed extends WebhookTriggerType {
+trait TriggerNameSmsRecipientResponseMissed
+  extends StObject
+     with WebhookTriggerType {
   
-  var triggerId: `14` = js.native
+  var triggerId: `14`
   
-  var triggerName: SmsRecipientResponseMissed = js.native
+  var triggerName: SmsRecipientResponseMissed
 }
 object TriggerNameSmsRecipientResponseMissed {
   
   @scala.inline
-  def apply(triggerId: `14`, triggerName: SmsRecipientResponseMissed): TriggerNameSmsRecipientResponseMissed = {
-    val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+  def apply(triggerName: SmsRecipientResponseMissed): TriggerNameSmsRecipientResponseMissed = {
+    val __obj = js.Dynamic.literal(triggerId = 14, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameSmsRecipientResponseMissed]
   }
   

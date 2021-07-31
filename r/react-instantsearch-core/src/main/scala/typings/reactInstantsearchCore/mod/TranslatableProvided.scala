@@ -2,13 +2,11 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslatableProvided extends StObject {
   
-  def translate(key: String, params: js.Any*): String = js.native
+  def translate(key: String, params: js.Any*): String
 }
 object TranslatableProvided {
   

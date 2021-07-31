@@ -6,7 +6,6 @@ import typings.twilsock.packetinterfaceMod.PacketInterface
 import typings.twilsock.telemetryMod.TelemetryEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object telemetrytrackerMod {
@@ -18,19 +17,25 @@ object telemetrytrackerMod {
   object EventSendingLimitation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EventSendingLimitation with Double] = js.native
+    def apply(value: Double): js.UndefOr[EventSendingLimitation & Double] = js.native
     
     @js.native
-    sealed trait AnyEvents extends EventSendingLimitation
-    /* 1 */ val AnyEvents: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.AnyEvents with Double = js.native
+    sealed trait AnyEvents
+      extends StObject
+         with EventSendingLimitation
+    /* 1 */ val AnyEvents: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.AnyEvents & Double = js.native
     
     @js.native
-    sealed trait AnyEventsIncludingUnfinished extends EventSendingLimitation
-    /* 2 */ val AnyEventsIncludingUnfinished: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.AnyEventsIncludingUnfinished with Double = js.native
+    sealed trait AnyEventsIncludingUnfinished
+      extends StObject
+         with EventSendingLimitation
+    /* 2 */ val AnyEventsIncludingUnfinished: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.AnyEventsIncludingUnfinished & Double = js.native
     
     @js.native
-    sealed trait MinEventsPortion extends EventSendingLimitation
-    /* 0 */ val MinEventsPortion: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.MinEventsPortion with Double = js.native
+    sealed trait MinEventsPortion
+      extends StObject
+         with EventSendingLimitation
+    /* 0 */ val MinEventsPortion: typings.twilsock.telemetrytrackerMod.EventSendingLimitation.MinEventsPortion & Double = js.native
   }
   
   @JSImport("twilsock/lib/services/telemetrytracker", "TelemetryEventDescription")
@@ -38,33 +43,12 @@ object telemetrytrackerMod {
   class TelemetryEventDescription protected () extends StObject {
     def this(title: String, details: String, start: Date) = this()
     def this(title: String, details: String, start: Date, end: Date) = this()
-    def this(title: String, details: String, start: Date, end: js.UndefOr[scala.Nothing], `type`: String) = this()
+    def this(title: String, details: String, start: Date, end: Unit, `type`: String) = this()
     def this(title: String, details: String, start: Date, end: Date, `type`: String) = this()
-    def this(
-      title: String,
-      details: String,
-      start: Date,
-      end: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      id: String
-    ) = this()
-    def this(
-      title: String,
-      details: String,
-      start: Date,
-      end: js.UndefOr[scala.Nothing],
-      `type`: String,
-      id: String
-    ) = this()
-    def this(
-      title: String,
-      details: String,
-      start: Date,
-      end: Date,
-      `type`: js.UndefOr[scala.Nothing],
-      id: String
-    ) = this()
+    def this(title: String, details: String, start: Date, end: Unit, `type`: String, id: String) = this()
+    def this(title: String, details: String, start: Date, end: Unit, `type`: Unit, id: String) = this()
     def this(title: String, details: String, start: Date, end: Date, `type`: String, id: String) = this()
+    def this(title: String, details: String, start: Date, end: Date, `type`: Unit, id: String) = this()
     
     val details: String = js.native
     
@@ -88,15 +72,19 @@ object telemetrytrackerMod {
   object TelemetryPoint extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TelemetryPoint with Double] = js.native
+    def apply(value: Double): js.UndefOr[TelemetryPoint & Double] = js.native
     
     @js.native
-    sealed trait End extends TelemetryPoint
-    /* 1 */ val End: typings.twilsock.telemetrytrackerMod.TelemetryPoint.End with Double = js.native
+    sealed trait End
+      extends StObject
+         with TelemetryPoint
+    /* 1 */ val End: typings.twilsock.telemetrytrackerMod.TelemetryPoint.End & Double = js.native
     
     @js.native
-    sealed trait Start extends TelemetryPoint
-    /* 0 */ val Start: typings.twilsock.telemetrytrackerMod.TelemetryPoint.Start with Double = js.native
+    sealed trait Start
+      extends StObject
+         with TelemetryPoint
+    /* 0 */ val Start: typings.twilsock.telemetrytrackerMod.TelemetryPoint.Start & Double = js.native
   }
   
   @JSImport("twilsock/lib/services/telemetrytracker", "TelemetryTracker")

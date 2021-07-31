@@ -2,18 +2,16 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigDetails extends StObject {
   
   /**
     * Details for antenna demod decode Config in a contact.
     */
-  var antennaDemodDecodeDetails: js.UndefOr[AntennaDemodDecodeDetails] = js.native
+  var antennaDemodDecodeDetails: js.UndefOr[AntennaDemodDecodeDetails] = js.undefined
   
-  var endpointDetails: js.UndefOr[EndpointDetails] = js.native
+  var endpointDetails: js.UndefOr[EndpointDetails] = js.undefined
 }
 object ConfigDetails {
   

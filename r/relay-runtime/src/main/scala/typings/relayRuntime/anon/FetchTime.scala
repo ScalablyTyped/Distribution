@@ -4,21 +4,21 @@ import typings.relayRuntime.relayRuntimeStrings.available
 import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchTime extends OperationAvailability {
+trait FetchTime
+  extends StObject
+     with OperationAvailability {
   
-  var fetchTime: js.UndefOr[Double | Null] = js.native
+  var fetchTime: js.UndefOr[Double | Null] = js.undefined
   
-  var status: available = js.native
+  var status: available
 }
 object FetchTime {
   
   @scala.inline
-  def apply(status: available): FetchTime = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+  def apply(): FetchTime = {
+    val __obj = js.Dynamic.literal(status = "available")
     __obj.asInstanceOf[FetchTime]
   }
   

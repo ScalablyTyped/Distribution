@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlOperatorOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HtmlOperatorOptions extends StObject {
     * operator return all items where *<value>* matches the value of any html properties or text within the content field for the item. The operator name can only contain lowercase
     * letters (a-z). The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object HtmlOperatorOptions {
   

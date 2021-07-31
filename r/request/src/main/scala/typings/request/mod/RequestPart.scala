@@ -2,15 +2,13 @@ package typings.request.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPart extends StObject {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
 }
 object RequestPart {
   

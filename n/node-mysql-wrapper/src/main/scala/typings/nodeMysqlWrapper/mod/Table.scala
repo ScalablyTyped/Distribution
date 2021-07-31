@@ -2,7 +2,6 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Table")
@@ -61,28 +60,28 @@ class Table[T] protected () extends StObject {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def extend(functionName: String, theFunction: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def extend(functionName: String, theFunction: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     *
     */
   def find(criteriaRawJsObject: js.Any): typings.bluebird.mod.^[js.Array[T]] = js.native
   // only criteria
-  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
+  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], js.Any]): typings.bluebird.mod.^[js.Array[T]] = js.native
   
   def findAll(): typings.bluebird.mod.^[js.Array[T]] = js.native
-  def findAll(tableRules: js.UndefOr[scala.Nothing], callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
+  def findAll(tableRules: Unit, callback: js.Function1[/* _results */ js.Array[T], js.Any]): typings.bluebird.mod.^[js.Array[T]] = js.native
   // only criteria and promise
   def findAll(tableRules: RawRules): typings.bluebird.mod.^[js.Array[T]] = js.native
-  def findAll(tableRules: RawRules, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
+  def findAll(tableRules: RawRules, callback: js.Function1[/* _results */ js.Array[T], js.Any]): typings.bluebird.mod.^[js.Array[T]] = js.native
   
   def findById(id: String): typings.bluebird.mod.^[T] = js.native
-  def findById(id: String, callback: js.Function1[/* result */ T, _]): typings.bluebird.mod.^[T] = js.native
+  def findById(id: String, callback: js.Function1[/* result */ T, js.Any]): typings.bluebird.mod.^[T] = js.native
   def findById(id: Double): typings.bluebird.mod.^[T] = js.native
-  def findById(id: Double, callback: js.Function1[/* result */ T, _]): typings.bluebird.mod.^[T] = js.native
+  def findById(id: Double, callback: js.Function1[/* result */ T, js.Any]): typings.bluebird.mod.^[T] = js.native
   
   def findSingle(criteriaRawJsObject: js.Any): typings.bluebird.mod.^[T] = js.native
-  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): typings.bluebird.mod.^[T] = js.native
+  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, js.Any]): typings.bluebird.mod.^[T] = js.native
   
   /**
     * Returns the primary key's value from an object.
@@ -98,7 +97,7 @@ class Table[T] protected () extends StObject {
     * @returnType {array}
     * @return {array}
     */
-  def getRowAsArray(jsObject: js.Any): js.Array[_] = js.native
+  def getRowAsArray(jsObject: js.Any): js.Array[js.Any] = js.native
   
   /**
     * Use it when you want to check if extended function is exists here.
@@ -128,7 +127,7 @@ class Table[T] protected () extends StObject {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def off(evtType: String, callbackToRemove: js.Function1[/* rawResults */ js.Array[_], Unit]): Unit = js.native
+  def off(evtType: String, callbackToRemove: js.Function1[/* rawResults */ js.Array[js.Any], Unit]): Unit = js.native
   
   /**
     * Adds or turn on an event listener/watcher on a table for a 'database event'.
@@ -137,16 +136,16 @@ class Table[T] protected () extends StObject {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def on(evtType: String, callback: js.Function1[/* rawResults */ js.Array[_], Unit]): Unit = js.native
+  def on(evtType: String, callback: js.Function1[/* rawResults */ js.Array[js.Any], Unit]): Unit = js.native
   
   /**
     * The name of the primary key column which this table is using.
     */
   var primaryKey: String = js.native
   
-  def remove(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
-  def remove(criteriaOrID: js.Any, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
-  def remove(criteriaOrID: Double, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, js.Any]): typings.bluebird.mod.^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: js.Any, callback: js.Function1[/* _result */ DeleteAnswer, js.Any]): typings.bluebird.mod.^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: Double, callback: js.Function1[/* _result */ DeleteAnswer, js.Any]): typings.bluebird.mod.^[DeleteAnswer] = js.native
   // ID without callback
   // criteria obj without callback
   def remove(criteriaRawObject: js.Any): typings.bluebird.mod.^[DeleteAnswer] = js.native
@@ -167,6 +166,6 @@ class Table[T] protected () extends StObject {
     */
   var rules: SelectQueryRules = js.native
   
-  def save(criteriaRawJsObject: js.Any): typings.bluebird.mod.^[_] = js.native
-  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): typings.bluebird.mod.^[_] = js.native
+  def save(criteriaRawJsObject: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, js.Any]): typings.bluebird.mod.^[js.Any] = js.native
 }

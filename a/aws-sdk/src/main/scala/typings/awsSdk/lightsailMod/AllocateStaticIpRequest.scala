@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateStaticIpRequest extends StObject {
   
   /**
     * The name of the static IP address.
     */
-  var staticIpName: ResourceName = js.native
+  var staticIpName: ResourceName
 }
 object AllocateStaticIpRequest {
   

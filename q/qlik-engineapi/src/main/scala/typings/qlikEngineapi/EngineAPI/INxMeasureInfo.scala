@@ -2,78 +2,76 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxMeasureInfo...
   */
-@js.native
 trait INxMeasureInfo extends StObject {
   
   /**
     * Length of the longest value in the field.
     * Integer
     */
-  var qApprMaxGlyphCount: Double = js.native
+  var qApprMaxGlyphCount: Double
   
   /**
     * List of attribute dimensions.
     */
-  var qAttrDimInfo: js.Array[INxMeasureInfo] = js.native
+  var qAttrDimInfo: js.Array[INxMeasureInfo]
   
   /**
     * List of attribute expressions.
     */
-  var qAttrExprInfo: js.Array[INxAttrExprInfo] = js.native
+  var qAttrExprInfo: js.Array[INxAttrExprInfo]
   
   /**
     * Number of distinct field values.
     * Integer
     */
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
   /**
     * This parameter is optional. Gives information on the error.
     */
-  var qError: js.UndefOr[INxValidationError] = js.native
+  var qError: js.UndefOr[INxValidationError] = js.undefined
   
   /**
     * Corresponds to the label of the measure. If the label is not defined then the measure name is used.
     * String
     */
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
   /**
     * This parameter is set to true if qNumFormat is set to U (unknown). The engine guesses the type of the field based on the field's expression.
     */
-  var qIsAutoFormat: Boolean = js.native
+  var qIsAutoFormat: Boolean
   
   /**
     * Highest value in the range.
     */
-  var qMax: Double = js.native
+  var qMax: Double
   
   /**
     * Lowest value in the range.
     */
-  var qMin: Double = js.native
+  var qMin: Double
   
   /**
     * Format of the field. This parameter is optional.
     * One of: N for no sorting, A for sorting ascending, D for sorting descending
     */
-  var qNumFormat: js.UndefOr[IFieldAttributes] = js.native
+  var qNumFormat: js.UndefOr[IFieldAttributes] = js.undefined
   
   /**
     * If set to true, it inverts the sort criteria in the field.
     */
-  var qReverseSort: Boolean = js.native
+  var qReverseSort: Boolean
   
   /**
     * Sort indicator. This parameter is optional. The default value is no sorting.
     */
-  var qSortIndicator: js.UndefOr[SortIndicatorType] = js.native
+  var qSortIndicator: js.UndefOr[SortIndicatorType] = js.undefined
 }
 object INxMeasureInfo {
   

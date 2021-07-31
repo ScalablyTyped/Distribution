@@ -2,17 +2,17 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RuleRaws extends ContainerRaws {
+trait RuleRaws
+  extends StObject
+     with ContainerRaws {
   
   /**
     * The rule's full selector. If there are multiple comma-separated selectors,
     * the entire group will be included.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object RuleRaws {
   

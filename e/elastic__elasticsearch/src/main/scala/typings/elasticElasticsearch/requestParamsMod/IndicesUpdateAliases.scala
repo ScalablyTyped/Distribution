@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesUpdateAliases[T] extends Generic {
+trait IndicesUpdateAliases[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object IndicesUpdateAliases {
   
@@ -23,7 +23,7 @@ object IndicesUpdateAliases {
   }
   
   @scala.inline
-  implicit class IndicesUpdateAliasesMutableBuilder[Self <: IndicesUpdateAliases[_], T] (val x: Self with IndicesUpdateAliases[T]) extends AnyVal {
+  implicit class IndicesUpdateAliasesMutableBuilder[Self <: IndicesUpdateAliases[?], T] (val x: Self & IndicesUpdateAliases[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

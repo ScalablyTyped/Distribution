@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkAxes extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.SparkAxes_typekey")
-  var ExcelDotSparkAxes_typekey: SparkAxes = js.native
+  var ExcelDotSparkAxes_typekey: SparkAxes
   
-  val Horizontal: SparkHorizontalAxis = js.native
+  val Horizontal: SparkHorizontalAxis
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Vertical: SparkVerticalAxis = js.native
+  val Vertical: SparkVerticalAxis
 }
 object SparkAxes {
   

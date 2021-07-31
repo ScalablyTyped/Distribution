@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBlobsGettree extends StandardParameters {
+trait ParamsResourceBlobsGettree
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The hash. In the case of SHA-256, it will always be a lowercase hex
     * string exactly 64 characters long.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * The instance of the execution system to operate against. A server may
@@ -30,7 +30,7 @@ trait ParamsResourceBlobsGettree extends StandardParameters {
     * to select between them in an implementation-defined fashion, otherwise it
     * can be omitted.
     */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
   /**
     * A maximum page size to request. If present, the server will request no
@@ -39,19 +39,19 @@ trait ParamsResourceBlobsGettree extends StandardParameters {
     * be returned and require the client to retrieve more items using a
     * subsequent request.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A page token, which must be a value received in a previous
     * GetTreeResponse. If present, the server will use it to return the
     * following page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the blob, in bytes.
     */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBlobsGettree {
   

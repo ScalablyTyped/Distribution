@@ -2,26 +2,24 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApproveAssignmentRequest extends StObject {
   
   /**
     *  The ID of the assignment. The assignment must correspond to a HIT created by the Requester. 
     */
-  var AssignmentId: EntityId = js.native
+  var AssignmentId: EntityId
   
   /**
     *  A flag indicating that an assignment should be approved even if it was previously rejected. Defaults to False. 
     */
-  var OverrideRejection: js.UndefOr[Boolean] = js.native
+  var OverrideRejection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  A message for the Worker, which the Worker can see in the Status section of the web site. 
     */
-  var RequesterFeedback: js.UndefOr[String] = js.native
+  var RequesterFeedback: js.UndefOr[String] = js.undefined
 }
 object ApproveAssignmentRequest {
   

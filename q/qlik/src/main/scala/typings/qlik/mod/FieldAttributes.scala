@@ -28,25 +28,23 @@ import typings.qlik.qlikStrings.TS
 import typings.qlik.qlikStrings.U
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldAttributes extends StObject {
   
-  var qDec: String = js.native
+  var qDec: String
   
-  var qFmt: String = js.native
+  var qFmt: String
   
-  var qSAFEARRAY: js.Array[_] = js.native
+  var qSAFEARRAY: js.Array[js.Any]
   
-  var qThou: String = js.native
+  var qThou: String
   
-  var qType: U | A | I | R | F | M | D | T | TS | IV = js.native
+  var qType: U | A | I | R | F | M | D | T | TS | IV
   
-  var qUseThou: `0` | `1` = js.native
+  var qUseThou: `0` | `1`
   
-  var qnDec: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
+  var qnDec: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
 }
 object FieldAttributes {
   
@@ -54,7 +52,7 @@ object FieldAttributes {
   def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[_],
+    qSAFEARRAY: js.Array[js.Any],
     qThou: String,
     qType: U | A | I | R | F | M | D | T | TS | IV,
     qUseThou: `0` | `1`,
@@ -74,7 +72,7 @@ object FieldAttributes {
     def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSAFEARRAY(value: js.Array[_]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))

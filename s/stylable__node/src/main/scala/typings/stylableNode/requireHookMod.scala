@@ -4,30 +4,30 @@ import typings.stylableNode.anon.PartialOptions
 import typings.stylableNode.anon.PartialStylableConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requireHookMod {
   
-  @JSImport("@stylable/node/cjs/require-hook", "attachHook")
+  @JSImport("@stylable/node/cjs/require-hook", JSImport.Namespace)
   @js.native
-  def attachHook(): Unit = js.native
-  @JSImport("@stylable/node/cjs/require-hook", "attachHook")
-  @js.native
-  def attachHook(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules: PartialOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def attachHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")().asInstanceOf[Unit]
+  @scala.inline
+  def attachHook(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var afterCompile: js.UndefOr[js.Function2[/* code */ String, /* filename */ String, String]] = js.native
+    var afterCompile: js.UndefOr[js.Function2[/* code */ String, /* filename */ String, String]] = js.undefined
     
-    var ignoreJSModules: js.UndefOr[Boolean] = js.native
+    var ignoreJSModules: js.UndefOr[Boolean] = js.undefined
     
-    def matcher(filename: String): Boolean = js.native
+    def matcher(filename: String): Boolean
     
-    var runtimePath: js.UndefOr[String] = js.native
+    var runtimePath: js.UndefOr[String] = js.undefined
     
-    var stylableConfig: PartialStylableConfig = js.native
+    var stylableConfig: PartialStylableConfig
   }
   object Options {
     

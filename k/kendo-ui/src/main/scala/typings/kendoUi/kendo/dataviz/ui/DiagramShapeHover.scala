@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShapeHover extends StObject {
   
-  var fill: js.UndefOr[String | DiagramShapeHoverFill] = js.native
+  var fill: js.UndefOr[String | DiagramShapeHoverFill] = js.undefined
 }
 object DiagramShapeHover {
   

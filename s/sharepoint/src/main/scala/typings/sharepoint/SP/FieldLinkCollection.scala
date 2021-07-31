@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldLinkCollection extends ClientObjectCollection[FieldLink] {
+trait FieldLinkCollection
+  extends StObject
+     with ClientObjectCollection[FieldLink] {
   
   def add(parameters: FieldLinkCreationInformation): FieldLink = js.native
   

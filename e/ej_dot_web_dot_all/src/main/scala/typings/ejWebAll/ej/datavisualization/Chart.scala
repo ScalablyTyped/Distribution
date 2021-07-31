@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart extends Widget_ {
+trait Chart
+  extends StObject
+     with Widget_ {
   
   /** Animates the series and/or indicators in Chart. When parameter is not passed to this method, then all the series and indicators present in Chart are animated.
     * @param {any} If an array collection is passed as parameter, series and indicator objects passed in array collection are animated.ExampleIf a series or indicator object is passed
@@ -26,7 +27,7 @@ trait Chart extends Widget_ {
     * default, it is false.Example,
     * @returns {any}
     */
-  def export(`type`: String, URL: String, exportMultipleChart: Boolean): js.Any = js.native
+  def `export`(`type`: String, URL: String, exportMultipleChart: Boolean): js.Any = js.native
   
   @JSName("model")
   var model_Chart: Model = js.native
@@ -51,15 +52,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Center extends Alignment
+    sealed trait Center
+      extends StObject
+         with Alignment
     
     //string
     @js.native
-    sealed trait Far extends Alignment
+    sealed trait Far
+      extends StObject
+         with Alignment
     
     //string
     @js.native
-    sealed trait Near extends Alignment
+    sealed trait Near
+      extends StObject
+         with Alignment
   }
   
   @js.native
@@ -70,11 +77,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Horizontal extends AxisOrientation
+    sealed trait Horizontal
+      extends StObject
+         with AxisOrientation
     
     //string
     @js.native
-    sealed trait Vertical extends AxisOrientation
+    sealed trait Vertical
+      extends StObject
+         with AxisOrientation
   }
   
   @js.native
@@ -85,11 +96,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Cylinder extends ColumnFacet
+    sealed trait Cylinder
+      extends StObject
+         with ColumnFacet
     
     //string
     @js.native
-    sealed trait Rectangle extends ColumnFacet
+    sealed trait Rectangle
+      extends StObject
+         with ColumnFacet
   }
   
   @js.native
@@ -100,11 +115,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bezier extends ConnectorLineType
+    sealed trait Bezier
+      extends StObject
+         with ConnectorLineType
     
     //string
     @js.native
-    sealed trait Line extends ConnectorLineType
+    sealed trait Line
+      extends StObject
+         with ConnectorLineType
   }
   
   @js.native
@@ -115,15 +134,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait None extends CoordinateUnit
+    sealed trait None
+      extends StObject
+         with CoordinateUnit
     
     //string
     @js.native
-    sealed trait Pixels extends CoordinateUnit
+    sealed trait Pixels
+      extends StObject
+         with CoordinateUnit
     
     //string
     @js.native
-    sealed trait Points extends CoordinateUnit
+    sealed trait Points
+      extends StObject
+         with CoordinateUnit
   }
   
   @js.native
@@ -134,11 +159,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Float extends CrosshairMode
+    sealed trait Float
+      extends StObject
+         with CrosshairMode
     
     //string
     @js.native
-    sealed trait Grouping extends CrosshairMode
+    sealed trait Grouping
+      extends StObject
+         with CrosshairMode
   }
   
   @js.native
@@ -149,11 +178,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Crosshair extends CrosshairType
+    sealed trait Crosshair
+      extends StObject
+         with CrosshairType
     
     //string
     @js.native
-    sealed trait Trackball extends CrosshairType
+    sealed trait Trackball
+      extends StObject
+         with CrosshairType
   }
   
   @js.native
@@ -164,15 +197,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Area extends DrawType
+    sealed trait Area
+      extends StObject
+         with DrawType
     
     //string
     @js.native
-    sealed trait Column extends DrawType
+    sealed trait Column
+      extends StObject
+         with DrawType
     
     //string
     @js.native
-    sealed trait Line extends DrawType
+    sealed trait Line
+      extends StObject
+         with DrawType
   }
   
   @js.native
@@ -183,15 +222,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Hide extends EdgeLabelPlacement
+    sealed trait Hide
+      extends StObject
+         with EdgeLabelPlacement
     
     //string
     @js.native
-    sealed trait None extends EdgeLabelPlacement
+    sealed trait None
+      extends StObject
+         with EdgeLabelPlacement
     
     //string
     @js.native
-    sealed trait Shift extends EdgeLabelPlacement
+    sealed trait Shift
+      extends StObject
+         with EdgeLabelPlacement
   }
   
   @js.native
@@ -202,15 +247,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Average extends EmptyPointMode
+    sealed trait Average
+      extends StObject
+         with EmptyPointMode
     
     //string
     @js.native
-    sealed trait Gap extends EmptyPointMode
+    sealed trait Gap
+      extends StObject
+         with EmptyPointMode
     
     //string
     @js.native
-    sealed trait Zero extends EmptyPointMode
+    sealed trait Zero
+      extends StObject
+         with EmptyPointMode
   }
   
   @js.native
@@ -221,15 +272,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Both extends ErrorBarDirection
+    sealed trait Both
+      extends StObject
+         with ErrorBarDirection
     
     //string
     @js.native
-    sealed trait Minus extends ErrorBarDirection
+    sealed trait Minus
+      extends StObject
+         with ErrorBarDirection
     
     //string
     @js.native
-    sealed trait Plus extends ErrorBarDirection
+    sealed trait Plus
+      extends StObject
+         with ErrorBarDirection
   }
   
   @js.native
@@ -240,15 +297,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Both extends ErrorBarMode
+    sealed trait Both
+      extends StObject
+         with ErrorBarMode
     
     //string
     @js.native
-    sealed trait Horizontal extends ErrorBarMode
+    sealed trait Horizontal
+      extends StObject
+         with ErrorBarMode
     
     //string
     @js.native
-    sealed trait Vertical extends ErrorBarMode
+    sealed trait Vertical
+      extends StObject
+         with ErrorBarMode
   }
   
   @js.native
@@ -259,19 +322,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait FixedValue extends ErrorBarType
+    sealed trait FixedValue
+      extends StObject
+         with ErrorBarType
     
     //string
     @js.native
-    sealed trait Percentage extends ErrorBarType
+    sealed trait Percentage
+      extends StObject
+         with ErrorBarType
     
     //string
     @js.native
-    sealed trait StandardDeviation extends ErrorBarType
+    sealed trait StandardDeviation
+      extends StObject
+         with ErrorBarType
     
     //string
     @js.native
-    sealed trait StandardError extends ErrorBarType
+    sealed trait StandardError
+      extends StObject
+         with ErrorBarType
   }
   
   @js.native
@@ -282,11 +353,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait ClientSide extends ExportingMode
+    sealed trait ClientSide
+      extends StObject
+         with ExportingMode
     
     //string
     @js.native
-    sealed trait ServerSide extends ExportingMode
+    sealed trait ServerSide
+      extends StObject
+         with ExportingMode
   }
   
   @js.native
@@ -297,11 +372,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Landscape extends ExportingOrientation
+    sealed trait Landscape
+      extends StObject
+         with ExportingOrientation
     
     //string
     @js.native
-    sealed trait Portrait extends ExportingOrientation
+    sealed trait Portrait
+      extends StObject
+         with ExportingOrientation
   }
   
   @js.native
@@ -312,27 +391,39 @@ object Chart {
     
     //string
     @js.native
-    sealed trait DOCX extends ExportingType
+    sealed trait DOCX
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait JPG extends ExportingType
+    sealed trait JPG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait PDF extends ExportingType
+    sealed trait PDF
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait PNG extends ExportingType
+    sealed trait PNG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait SVG extends ExportingType
+    sealed trait SVG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait XLSX extends ExportingType
+    sealed trait XLSX
+      extends StObject
+         with ExportingType
   }
   
   @js.native
@@ -343,11 +434,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Normal extends FontStyle
+    sealed trait Normal
+      extends StObject
+         with FontStyle
   }
   
   @js.native
@@ -358,15 +453,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bold extends FontWeight
+    sealed trait Bold
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Lighter extends FontWeight
+    sealed trait Lighter
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Regular extends FontWeight
+    sealed trait Regular
+      extends StObject
+         with FontWeight
   }
   
   @js.native
@@ -377,15 +478,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Left extends HorizontalAlignment
+    sealed trait Left
+      extends StObject
+         with HorizontalAlignment
     
     //string
     @js.native
-    sealed trait Middle extends HorizontalAlignment
+    sealed trait Middle
+      extends StObject
+         with HorizontalAlignment
     
     //string
     @js.native
-    sealed trait Right extends HorizontalAlignment
+    sealed trait Right
+      extends StObject
+         with HorizontalAlignment
   }
   
   @js.native
@@ -396,15 +503,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Center extends HorizontalTextAlignment
+    sealed trait Center
+      extends StObject
+         with HorizontalTextAlignment
     
     //string
     @js.native
-    sealed trait Far extends HorizontalTextAlignment
+    sealed trait Far
+      extends StObject
+         with HorizontalTextAlignment
     
     //string
     @js.native
-    sealed trait Near extends HorizontalTextAlignment
+    sealed trait Near
+      extends StObject
+         with HorizontalTextAlignment
   }
   
   @js.native
@@ -415,31 +528,45 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Days extends IntervalType
+    sealed trait Days
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Hours extends IntervalType
+    sealed trait Hours
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Milliseconds extends IntervalType
+    sealed trait Milliseconds
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Minutes extends IntervalType
+    sealed trait Minutes
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Months extends IntervalType
+    sealed trait Months
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Seconds extends IntervalType
+    sealed trait Seconds
+      extends StObject
+         with IntervalType
     
     //string
     @js.native
-    sealed trait Years extends IntervalType
+    sealed trait Years
+      extends StObject
+         with IntervalType
   }
   
   @js.native
@@ -450,15 +577,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Center extends LabelAlignment
+    sealed trait Center
+      extends StObject
+         with LabelAlignment
     
     //string
     @js.native
-    sealed trait Far extends LabelAlignment
+    sealed trait Far
+      extends StObject
+         with LabelAlignment
     
     //string
     @js.native
-    sealed trait Near extends LabelAlignment
+    sealed trait Near
+      extends StObject
+         with LabelAlignment
   }
   
   @js.native
@@ -469,35 +602,51 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Hide extends LabelIntersectAction
+    sealed trait Hide
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait MultipleRows extends LabelIntersectAction
+    sealed trait MultipleRows
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait None extends LabelIntersectAction
+    sealed trait None
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait Rotate45 extends LabelIntersectAction
+    sealed trait Rotate45
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait Rotate90 extends LabelIntersectAction
+    sealed trait Rotate90
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait Trim extends LabelIntersectAction
+    sealed trait Trim
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait Wrap extends LabelIntersectAction
+    sealed trait Wrap
+      extends StObject
+         with LabelIntersectAction
     
     //string
     @js.native
-    sealed trait WrapByword extends LabelIntersectAction
+    sealed trait WrapByword
+      extends StObject
+         with LabelIntersectAction
   }
   
   @js.native
@@ -508,11 +657,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait BetweenTicks extends LabelPlacement
+    sealed trait BetweenTicks
+      extends StObject
+         with LabelPlacement
     
     //string
     @js.native
-    sealed trait OnTicks extends LabelPlacement
+    sealed trait OnTicks
+      extends StObject
+         with LabelPlacement
   }
   
   @js.native
@@ -523,15 +676,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Inside extends LabelPosition
+    sealed trait Inside
+      extends StObject
+         with LabelPosition
     
     //string
     @js.native
-    sealed trait Outside extends LabelPosition
+    sealed trait Outside
+      extends StObject
+         with LabelPosition
     
     //string
     @js.native
-    sealed trait OutsideExtended extends LabelPosition
+    sealed trait OutsideExtended
+      extends StObject
+         with LabelPosition
   }
   
   @js.native
@@ -542,15 +701,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Butt extends LineCap
+    sealed trait Butt
+      extends StObject
+         with LineCap
     
     //string
     @js.native
-    sealed trait Round extends LineCap
+    sealed trait Round
+      extends StObject
+         with LineCap
     
     //string
     @js.native
-    sealed trait Square extends LineCap
+    sealed trait Square
+      extends StObject
+         with LineCap
   }
   
   @js.native
@@ -561,15 +726,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bevel extends LineJoin
+    sealed trait Bevel
+      extends StObject
+         with LineJoin
     
     //string
     @js.native
-    sealed trait Miter extends LineJoin
+    sealed trait Miter
+      extends StObject
+         with LineJoin
     
     //string
     @js.native
-    sealed trait Round extends LineJoin
+    sealed trait Round
+      extends StObject
+         with LineJoin
   }
   
   @js.native
@@ -580,19 +751,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Cluster extends Mode
+    sealed trait Cluster
+      extends StObject
+         with Mode
     
     //string
     @js.native
-    sealed trait Point extends Mode
+    sealed trait Point
+      extends StObject
+         with Mode
     
     //string
     @js.native
-    sealed trait Range extends Mode
+    sealed trait Range
+      extends StObject
+         with Mode
     
     //string
     @js.native
-    sealed trait Series extends Mode
+    sealed trait Series
+      extends StObject
+         with Mode
   }
   
   @js.native
@@ -603,23 +782,33 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Brace extends MultiLevelLabelsBorderType
+    sealed trait Brace
+      extends StObject
+         with MultiLevelLabelsBorderType
     
     //string
     @js.native
-    sealed trait CurlyBrace extends MultiLevelLabelsBorderType
+    sealed trait CurlyBrace
+      extends StObject
+         with MultiLevelLabelsBorderType
     
     //string
     @js.native
-    sealed trait None extends MultiLevelLabelsBorderType
+    sealed trait None
+      extends StObject
+         with MultiLevelLabelsBorderType
     
     //string
     @js.native
-    sealed trait Rectangle extends MultiLevelLabelsBorderType
+    sealed trait Rectangle
+      extends StObject
+         with MultiLevelLabelsBorderType
     
     //string
     @js.native
-    sealed trait WithoutTopAndBottom extends MultiLevelLabelsBorderType
+    sealed trait WithoutTopAndBottom
+      extends StObject
+         with MultiLevelLabelsBorderType
   }
   
   @js.native
@@ -630,19 +819,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bottom extends Position
+    sealed trait Bottom
+      extends StObject
+         with Position
     
     //string
     @js.native
-    sealed trait Left extends Position
+    sealed trait Left
+      extends StObject
+         with Position
     
     //string
     @js.native
-    sealed trait Right extends Position
+    sealed trait Right
+      extends StObject
+         with Position
     
     //string
     @js.native
-    sealed trait Top extends Position
+    sealed trait Top
+      extends StObject
+         with Position
   }
   
   @js.native
@@ -653,11 +850,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Linear extends PyramidMode
+    sealed trait Linear
+      extends StObject
+         with PyramidMode
     
     //string
     @js.native
-    sealed trait Surface extends PyramidMode
+    sealed trait Surface
+      extends StObject
+         with PyramidMode
   }
   
   @js.native
@@ -668,11 +869,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Auto extends RadiusMode
+    sealed trait Auto
+      extends StObject
+         with RadiusMode
     
     //string
     @js.native
-    sealed trait MinMax extends RadiusMode
+    sealed trait MinMax
+      extends StObject
+         with RadiusMode
   }
   
   @js.native
@@ -683,19 +888,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Additional extends RangePadding
+    sealed trait Additional
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait None extends RangePadding
+    sealed trait None
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait Normal extends RangePadding
+    sealed trait Normal
+      extends StObject
+         with RangePadding
     
     //string
     @js.native
-    sealed trait Round extends RangePadding
+    sealed trait Round
+      extends StObject
+         with RangePadding
   }
   
   @js.native
@@ -706,15 +919,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait X extends RangeType
+    sealed trait X
+      extends StObject
+         with RangeType
     
     //string
     @js.native
-    sealed trait XY extends RangeType
+    sealed trait XY
+      extends StObject
+         with RangeType
     
     //string
     @js.native
-    sealed trait Y extends RangeType
+    sealed trait Y
+      extends StObject
+         with RangeType
   }
   
   @js.native
@@ -725,11 +944,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Chart extends Region
+    sealed trait Chart
+      extends StObject
+         with Region
     
     //string
     @js.native
-    sealed trait Series extends Region
+    sealed trait Series
+      extends StObject
+         with Region
   }
   
   @js.native
@@ -740,11 +963,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Multiple extends SelectionType
+    sealed trait Multiple
+      extends StObject
+         with SelectionType
     
     //string
     @js.native
-    sealed trait Single extends SelectionType
+    sealed trait Single
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -755,79 +982,117 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Circle extends Shape
+    sealed trait Circle
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Cross extends Shape
+    sealed trait Cross
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Diamond extends Shape
+    sealed trait Diamond
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait DownArrow extends Shape
+    sealed trait DownArrow
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Ellipse extends Shape
+    sealed trait Ellipse
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Hexagon extends Shape
+    sealed trait Hexagon
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait HorizLine extends Shape
+    sealed trait HorizLine
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Image extends Shape
+    sealed trait Image
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait LeftArrow extends Shape
+    sealed trait LeftArrow
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait None extends Shape
+    sealed trait None
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Pentagon extends Shape
+    sealed trait Pentagon
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Rectangle extends Shape
+    sealed trait Rectangle
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait RightArrow extends Shape
+    sealed trait RightArrow
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait SeriesType extends Shape
+    sealed trait SeriesType
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Star extends Shape
+    sealed trait Star
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Trapezoid extends Shape
+    sealed trait Trapezoid
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait Triangle extends Shape
+    sealed trait Triangle
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait UpArrow extends Shape
+    sealed trait UpArrow
+      extends StObject
+         with Shape
     
     //string
     @js.native
-    sealed trait VertLine extends Shape
+    sealed trait VertLine
+      extends StObject
+         with Shape
   }
   
   @js.native
@@ -838,19 +1103,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Cardinal extends SplineType
+    sealed trait Cardinal
+      extends StObject
+         with SplineType
     
     //string
     @js.native
-    sealed trait Clamped extends SplineType
+    sealed trait Clamped
+      extends StObject
+         with SplineType
     
     //string
     @js.native
-    sealed trait Monotonic extends SplineType
+    sealed trait Monotonic
+      extends StObject
+         with SplineType
     
     //string
     @js.native
-    sealed trait Natural extends SplineType
+    sealed trait Natural
+      extends StObject
+         with SplineType
   }
   
   @js.native
@@ -861,19 +1134,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Indexes extends SplitMode
+    sealed trait Indexes
+      extends StObject
+         with SplitMode
     
     //string
     @js.native
-    sealed trait Percentage extends SplitMode
+    sealed trait Percentage
+      extends StObject
+         with SplitMode
     
     //string
     @js.native
-    sealed trait Position extends SplitMode
+    sealed trait Position
+      extends StObject
+         with SplitMode
     
     //string
     @js.native
-    sealed trait Value extends SplitMode
+    sealed trait Value
+      extends StObject
+         with SplitMode
   }
   
   @js.native
@@ -884,15 +1165,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait MiddleBottom extends TextAlignment
+    sealed trait MiddleBottom
+      extends StObject
+         with TextAlignment
     
     //string
     @js.native
-    sealed trait MiddleCenter extends TextAlignment
+    sealed trait MiddleCenter
+      extends StObject
+         with TextAlignment
     
     //string
     @js.native
-    sealed trait MiddleTop extends TextAlignment
+    sealed trait MiddleTop
+      extends StObject
+         with TextAlignment
   }
   
   @js.native
@@ -903,19 +1190,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait None extends TextOverflow
+    sealed trait None
+      extends StObject
+         with TextOverflow
     
     //string
     @js.native
-    sealed trait Trim extends TextOverflow
+    sealed trait Trim
+      extends StObject
+         with TextOverflow
     
     //string
     @js.native
-    sealed trait Wrap extends TextOverflow
+    sealed trait Wrap
+      extends StObject
+         with TextOverflow
     
     //string
     @js.native
-    sealed trait WrapAndTrim extends TextOverflow
+    sealed trait WrapAndTrim
+      extends StObject
+         with TextOverflow
   }
   
   @js.native
@@ -926,15 +1221,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bottom extends TextPosition
+    sealed trait Bottom
+      extends StObject
+         with TextPosition
     
     //string
     @js.native
-    sealed trait Middle extends TextPosition
+    sealed trait Middle
+      extends StObject
+         with TextPosition
     
     //string
     @js.native
-    sealed trait Top extends TextPosition
+    sealed trait Top
+      extends StObject
+         with TextPosition
   }
   
   @js.native
@@ -945,43 +1246,63 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Azure extends Theme
+    sealed trait Azure
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Azuredark extends Theme
+    sealed trait Azuredark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait FlatDark extends Theme
+    sealed trait FlatDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait FlatLight extends Theme
+    sealed trait FlatLight
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait GradientDark extends Theme
+    sealed trait GradientDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait GradientLight extends Theme
+    sealed trait GradientLight
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Lime extends Theme
+    sealed trait Lime
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait LimeDark extends Theme
+    sealed trait LimeDark
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait Saffron extends Theme
+    sealed trait Saffron
+      extends StObject
+         with Theme
     
     //string
     @js.native
-    sealed trait SaffronDark extends Theme
+    sealed trait SaffronDark
+      extends StObject
+         with Theme
   }
   
   @js.native
@@ -992,11 +1313,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Inside extends TickLinesPosition
+    sealed trait Inside
+      extends StObject
+         with TickLinesPosition
     
     //string
     @js.native
-    sealed trait Outside extends TickLinesPosition
+    sealed trait Outside
+      extends StObject
+         with TickLinesPosition
   }
   
   @js.native
@@ -1007,23 +1332,33 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Exponential extends TrendlinesType
+    sealed trait Exponential
+      extends StObject
+         with TrendlinesType
     
     //string
     @js.native
-    sealed trait Linear extends TrendlinesType
+    sealed trait Linear
+      extends StObject
+         with TrendlinesType
     
     //string
     @js.native
-    sealed trait Logarithmic extends TrendlinesType
+    sealed trait Logarithmic
+      extends StObject
+         with TrendlinesType
     
     //string
     @js.native
-    sealed trait Polynomial extends TrendlinesType
+    sealed trait Polynomial
+      extends StObject
+         with TrendlinesType
     
     //string
     @js.native
-    sealed trait Power extends TrendlinesType
+    sealed trait Power
+      extends StObject
+         with TrendlinesType
   }
   
   @js.native
@@ -1034,119 +1369,177 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Area extends Type
+    sealed trait Area
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Bar extends Type
+    sealed trait Bar
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Bubble extends Type
+    sealed trait Bubble
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Candle extends Type
+    sealed trait Candle
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Column extends Type
+    sealed trait Column
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Doughnut extends Type
+    sealed trait Doughnut
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Funnel extends Type
+    sealed trait Funnel
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait HiLo extends Type
+    sealed trait HiLo
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait HiLoOpenClose extends Type
+    sealed trait HiLoOpenClose
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Line extends Type
+    sealed trait Line
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Pie extends Type
+    sealed trait Pie
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Polar extends Type
+    sealed trait Polar
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Pyramid extends Type
+    sealed trait Pyramid
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Radar extends Type
+    sealed trait Radar
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait RangeArea extends Type
+    sealed trait RangeArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait RangeColumn extends Type
+    sealed trait RangeColumn
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Scatter extends Type
+    sealed trait Scatter
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait Spline extends Type
+    sealed trait Spline
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait SplineArea extends Type
+    sealed trait SplineArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingArea extends Type
+    sealed trait StackingArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingArea100 extends Type
+    sealed trait StackingArea100
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingBar extends Type
+    sealed trait StackingBar
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingBar100 extends Type
+    sealed trait StackingBar100
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingColumn extends Type
+    sealed trait StackingColumn
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingColumn100 extends Type
+    sealed trait StackingColumn100
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingSplineArea extends Type
+    sealed trait StackingSplineArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StackingSplineArea100 extends Type
+    sealed trait StackingSplineArea100
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StepArea extends Type
+    sealed trait StepArea
+      extends StObject
+         with Type
     
     //string
     @js.native
-    sealed trait StepLine extends Type
+    sealed trait StepLine
+      extends StObject
+         with Type
   }
   
   @js.native
@@ -1158,12 +1551,14 @@ object Chart {
     //string
     @js.native
     sealed trait Percentage
-      extends typings.ejWebAll.ej.datavisualization.Chart.Unit
+      extends StObject
+         with typings.ejWebAll.ej.datavisualization.Chart.Unit
     
     //string
     @js.native
     sealed trait Pixel
-      extends typings.ejWebAll.ej.datavisualization.Chart.Unit
+      extends StObject
+         with typings.ejWebAll.ej.datavisualization.Chart.Unit
   }
   
   @js.native
@@ -1174,19 +1569,27 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Category extends ValueType
+    sealed trait Category
+      extends StObject
+         with ValueType
     
     //string
     @js.native
-    sealed trait DateTime extends ValueType
+    sealed trait DateTime
+      extends StObject
+         with ValueType
     
     //string
     @js.native
-    sealed trait Double extends ValueType
+    sealed trait Double
+      extends StObject
+         with ValueType
     
     //string
     @js.native
-    sealed trait Logarithmic extends ValueType
+    sealed trait Logarithmic
+      extends StObject
+         with ValueType
   }
   
   @js.native
@@ -1197,15 +1600,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Bottom extends VerticalAlignment
+    sealed trait Bottom
+      extends StObject
+         with VerticalAlignment
     
     //string
     @js.native
-    sealed trait Middle extends VerticalAlignment
+    sealed trait Middle
+      extends StObject
+         with VerticalAlignment
     
     //string
     @js.native
-    sealed trait Top extends VerticalAlignment
+    sealed trait Top
+      extends StObject
+         with VerticalAlignment
   }
   
   @js.native
@@ -1216,15 +1625,21 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Center extends VerticalTextAlignment
+    sealed trait Center
+      extends StObject
+         with VerticalTextAlignment
     
     //string
     @js.native
-    sealed trait Far extends VerticalTextAlignment
+    sealed trait Far
+      extends StObject
+         with VerticalTextAlignment
     
     //string
     @js.native
-    sealed trait Near extends VerticalTextAlignment
+    sealed trait Near
+      extends StObject
+         with VerticalTextAlignment
   }
   
   @js.native
@@ -1235,11 +1650,15 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Inside extends ZIndex
+    sealed trait Inside
+      extends StObject
+         with ZIndex
     
     //string
     @js.native
-    sealed trait Over extends ZIndex
+    sealed trait Over
+      extends StObject
+         with ZIndex
   }
   
   @js.native
@@ -1250,36 +1669,41 @@ object Chart {
     
     //string
     @js.native
-    sealed trait Exclusive extends boxPlotMode
+    sealed trait Exclusive
+      extends StObject
+         with boxPlotMode
     
     //string
     @js.native
-    sealed trait Inclusive extends boxPlotMode
+    sealed trait Inclusive
+      extends StObject
+         with boxPlotMode
     
     //string
     @js.native
-    sealed trait Normal extends boxPlotMode
+    sealed trait Normal
+      extends StObject
+         with boxPlotMode
   }
   
-  @js.native
   trait AfterResizeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** width - Chart width, after resize    height - Chart height, after resize    prevWidth - Chart width, before resize    prevHeight - Chart height, before resize
       * originalWidth- Chart width, when the chart was first rendered    originalHeight - Chart height, when the chart was first rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AfterResizeEventArgs {
     
@@ -1318,24 +1742,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait AnimationCompleteEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** series - Instance of the series that completed has animation.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AnimationCompleteEventArgs {
     
@@ -1374,71 +1797,70 @@ object Chart {
     }
   }
   
-  @js.native
   trait Annotation extends StObject {
     
     /** Angle to rotate the annotation in degrees.
       * @Default {'0'}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Text content or id of a HTML element to be displayed as annotation.
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** Specifies how annotations have to be placed in Chart.
       * @Default {none. See CoordinateUnit}
       */
-    var coordinateUnit: js.UndefOr[CoordinateUnit | String] = js.native
+    var coordinateUnit: js.UndefOr[CoordinateUnit | String] = js.undefined
     
     /** Specifies the horizontal alignment of the annotation.
       * @Default {middle. See HorizontalAlignment}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Options to customize the margin of annotation.
       */
-    var margin: js.UndefOr[AnnotationsMargin] = js.native
+    var margin: js.UndefOr[AnnotationsMargin] = js.undefined
     
     /** Controls the opacity of the annotation.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether annotation has to be placed with respect to chart or series.
       * @Default {chart. See Region}
       */
-    var region: js.UndefOr[Region | String] = js.native
+    var region: js.UndefOr[Region | String] = js.undefined
     
     /** Specifies the vertical alignment of the annotation.
       * @Default {middle. See VerticalAlignment}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Controls the visibility of the annotation.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Represents the horizontal offset when coordinateUnit is pixels.when coordinateUnit is points, it represents the x-coordinate of axis bounded with xAxisName property or primary X
       * axis when xAxisName is not provided.This property is not applicable when coordinateUnit is none.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Name of the horizontal axis to be used for positioning the annotation. This property is applicable only when coordinateUnit is points.
       */
-    var xAxisName: js.UndefOr[String] = js.native
+    var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Represents the vertical offset when coordinateUnit is pixels.When coordinateUnit is points, it represents the y-coordinate of axis bounded with yAxisName property or primary Y
       * axis when yAxisName is not provided.This property is not applicable when coordinateUnit is none.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
     /** Name of the vertical axis to be used for positioning the annotation.This property is applicable only when coordinateUnit is points.
       */
-    var yAxisName: js.UndefOr[String] = js.native
+    var yAxisName: js.UndefOr[String] = js.undefined
   }
   object Annotation {
     
@@ -1531,25 +1953,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait AnnotationClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the annotation in chart area.     contentData - Information about the annotation, like Coordinate unit, Region, content    pageX-
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AnnotationClickEventArgs {
     
@@ -1588,28 +2009,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait AnnotationsMargin extends StObject {
     
     /** Annotation is placed at the specified value above its original position.
       * @Default {0}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value from left side of its original position.
       * @Default {0}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value from the right side of its original position.
       * @Default {0}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value under its original position.
       * @Default {0}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object AnnotationsMargin {
     
@@ -1648,16 +2068,15 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesAlternateGridBand extends StObject {
     
     /** Options for customizing even grid band.
       */
-    var even: js.UndefOr[AxesAlternateGridBandEven] = js.native
+    var even: js.UndefOr[AxesAlternateGridBandEven] = js.undefined
     
     /** Options for customizing odd grid band.
       */
-    var odd: js.UndefOr[AxesAlternateGridBandOdd] = js.native
+    var odd: js.UndefOr[AxesAlternateGridBandOdd] = js.undefined
   }
   object AxesAlternateGridBand {
     
@@ -1684,18 +2103,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object AxesAlternateGridBandEven {
     
@@ -1722,18 +2140,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object AxesAlternateGridBandOdd {
     
@@ -1760,32 +2177,31 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesAxisLine extends StObject {
     
     /** Color of axis line.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
       * @Default {null}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesAxisLine {
     
@@ -1830,13 +2246,12 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AxesCrosshairLabel {
     
@@ -1857,33 +2272,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesFont extends StObject {
     
     /** Font family of labels.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
       * @Default {13px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object AxesFont {
     
@@ -1928,18 +2342,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesLabelBorder {
     
@@ -1966,24 +2379,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesLabelRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** axis - Instance of the corresponding axis.        label - Arguments of axis label value and text.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxesLabelRenderingEventArgs {
     
@@ -2022,24 +2434,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesLabelsInitializeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** dataAxes - Collection of axes in Chart
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxesLabelsInitializeEventArgs {
     
@@ -2078,33 +2489,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMajorGridLines extends StObject {
     
     /** Color of the major grid line.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesMajorGridLines {
     
@@ -2149,23 +2559,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesMajorTickLines {
     
@@ -2198,23 +2607,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesMinorGridLines {
     
@@ -2247,23 +2655,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesMinorTickLines {
     
@@ -2296,55 +2703,54 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMultiLevelLabel extends StObject {
     
     /** Options for customizing the border of the series.
       */
-    var border: js.UndefOr[AxesMultiLevelLabelsBorder] = js.native
+    var border: js.UndefOr[AxesMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
       * @Default {null}
       */
-    var end: js.UndefOr[js.Any] = js.native
+    var end: js.UndefOr[js.Any] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[AxesMultiLevelLabelsFont] = js.native
+    var font: js.UndefOr[AxesMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
       * @Default {0}
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
       * @Default {null}
       */
-    var maximumTextWidth: js.UndefOr[Double] = js.native
+    var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
       * @Default {null}
       */
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
     
     /** Text of the multi level labels.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
       * @Default {center. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
       * @Default {center. See TextOverflow}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AxesMultiLevelLabel {
     
@@ -2419,23 +2825,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
       * @Default {rectangle. See Type}
       */
-    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.native
+    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AxesMultiLevelLabelsBorder {
     
@@ -2468,38 +2873,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object AxesMultiLevelLabelsFont {
     
@@ -2550,23 +2954,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesRange extends StObject {
     
     /** Interval of the axis range.
       * @Default {null}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object AxesRange {
     
@@ -2599,25 +3002,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesRangeCalculateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** delta - Difference between minimum and maximum value of axis range.    interval - Interval value of axis range. Grid lines, tick lines and axis labels are drawn based on this
       * interval value.    max - Maximum value of axis range.    min - Minimum value of axis range.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxesRangeCalculateEventArgs {
     
@@ -2656,27 +3058,26 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
       * @Default {false}
       */
-    var canResize: js.UndefOr[Boolean] = js.native
+    var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
       * @Default {null}
       */
-    var pointsLength: js.UndefOr[Double] = js.native
+    var pointsLength: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range for the scrollbar in the axis.
       */
-    var range: js.UndefOr[AxesScrollbarSettingsRange] = js.native
+    var range: js.UndefOr[AxesScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enable or disable the scrollbar.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AxesScrollbarSettings {
     
@@ -2715,18 +3116,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object AxesScrollbarSettingsRange {
     
@@ -2753,63 +3153,62 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesStripLine extends StObject {
     
     /** Border color of the strip line.
       * @Default {gray}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
       * @Default {gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
       * @Default {null}
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[AxesStripLineFont] = js.native
+    var font: js.UndefOr[AxesStripLineFont] = js.undefined
     
     /** Start value of the strip line.
       * @Default {null}
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
       * @Default {false}
       */
-    var startFromAxis: js.UndefOr[Boolean] = js.native
+    var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
       * @Default {stripLine}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
       * @Default {middlecenter. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order where the strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered under the series and when it is â€œoverâ€, it is
       * rendered above the series.
       * @Default {over. See ZIndex}
       */
-    var zIndex: js.UndefOr[ZIndex | String] = js.native
+    var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
   object AxesStripLine {
     
@@ -2890,38 +3289,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesStripLineFont extends StObject {
     
     /** Font color of the strip line text.
       * @Default {black}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object AxesStripLineFont {
     
@@ -2972,46 +3370,45 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesTitle extends StObject {
     
     /** Specifies the position of the axis title.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[TextAlignment | String] = js.native
+    var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the title font.
       */
-    var font: js.UndefOr[AxesTitleFont] = js.native
+    var font: js.UndefOr[AxesTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
       * @Default {34}
       */
-    var maximumTitleWidth: js.UndefOr[Double] = js.native
+    var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
       * @Default {0}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
       * @Default {outside. See Position}
       */
-    var position: js.UndefOr[LabelPosition | String] = js.native
+    var position: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Title for the axis.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AxesTitle {
     
@@ -3074,33 +3471,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesTitleFont extends StObject {
     
     /** Font family of the title text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
       * @Default {16px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object AxesTitleFont {
     
@@ -3145,25 +3541,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxesTitleRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** axes - Instance of the axis whose title is being rendered    locationX - X-coordinate of title location    locationY - Y-coordinate of title location    title - Axis title
       * text. You can add custom text to the title.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxesTitleRenderingEventArgs {
     
@@ -3202,227 +3597,226 @@ object Chart {
     }
   }
   
-  @js.native
   trait Axis extends StObject {
     
     /** Specifies the position of the axis labels.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[LabelAlignment | String] = js.native
+    var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
     /** Options for customizing axis alternate grid band.
       */
-    var alternateGridBand: js.UndefOr[AxesAlternateGridBand] = js.native
+    var alternateGridBand: js.UndefOr[AxesAlternateGridBand] = js.undefined
     
     /** Options for customizing the axis line.
       */
-    var axisLine: js.UndefOr[AxesAxisLine] = js.native
+    var axisLine: js.UndefOr[AxesAxisLine] = js.undefined
     
     /** Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
       * @Default {null}
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of columns or plot areas an axis has to span horizontally.
       * @Default {null}
       */
-    var columnSpan: js.UndefOr[Double] = js.native
+    var columnSpan: js.UndefOr[Double] = js.undefined
     
     /** Specifies where axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of
       * crossing axis, then axis will be placed at the opposite side.
       * @Default {null}
       */
-    var crossesAt: js.UndefOr[Double] = js.native
+    var crossesAt: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the crosshair label.
       */
-    var crosshairLabel: js.UndefOr[AxesCrosshairLabel] = js.native
+    var crosshairLabel: js.UndefOr[AxesCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
       * @Default {null}
       */
-    var desiredIntervals: js.UndefOr[Double] = js.native
+    var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
       * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
-    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.native
+    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
       * @Default {true}
       */
-    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.native
+    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the font of the axis Labels.
       */
-    var font: js.UndefOr[AxesFont] = js.native
+    var font: js.UndefOr[AxesFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
       * @Default {null. See IntervalType}
       */
-    var intervalType: js.UndefOr[IntervalType | String] = js.native
+    var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting â€˜isIndexedâ€™ property to true.
       * @Default {false}
       */
-    var isIndexed: js.UndefOr[Boolean] = js.native
+    var isIndexed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to inverse the axis.
       * @Default {false}
       */
-    var isInversed: js.UndefOr[Boolean] = js.native
+    var isInversed: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the border of the labels.
       */
-    var labelBorder: js.UndefOr[AxesLabelBorder] = js.native
+    var labelBorder: js.UndefOr[AxesLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
       * @Default {null}
       */
-    var labelFormat: js.UndefOr[String] = js.native
+    var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
       * @Default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
       */
-    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.native
+    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
       * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
-    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.native
+    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
       * @Default {outside. See LabelPosition}
       */
-    var labelPosition: js.UndefOr[LabelPosition | String] = js.native
+    var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Angle in degrees to rotate the axis labels.
       * @Default {null}
       */
-    var labelRotation: js.UndefOr[Double] = js.native
+    var labelRotation: js.UndefOr[Double] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
       * @Default {10}
       */
-    var logBase: js.UndefOr[Double] = js.native
+    var logBase: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing major gird lines.
       */
-    var majorGridLines: js.UndefOr[AxesMajorGridLines] = js.native
+    var majorGridLines: js.UndefOr[AxesMajorGridLines] = js.undefined
     
     /** Options for customizing the major tick lines.
       */
-    var majorTickLines: js.UndefOr[AxesMajorTickLines] = js.native
+    var majorTickLines: js.UndefOr[AxesMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
       * @Default {34}
       */
-    var maximumLabelWidth: js.UndefOr[Double] = js.native
+    var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
       * @Default {3}
       */
-    var maximumLabels: js.UndefOr[Double] = js.native
+    var maximumLabels: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the minor grid lines.
       */
-    var minorGridLines: js.UndefOr[AxesMinorGridLines] = js.native
+    var minorGridLines: js.UndefOr[AxesMinorGridLines] = js.undefined
     
     /** Options for customizing the minor tick lines.
       */
-    var minorTickLines: js.UndefOr[AxesMinorTickLines] = js.native
+    var minorTickLines: js.UndefOr[AxesMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
       * @Default {null}
       */
-    var minorTicksPerInterval: js.UndefOr[Double] = js.native
+    var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
       * @Default {[ ]}
       */
-    var multiLevelLabels: js.UndefOr[js.Array[AxesMultiLevelLabel]] = js.native
+    var multiLevelLabels: js.UndefOr[js.Array[AxesMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
       * @Default {false}
       */
-    var opposedPosition: js.UndefOr[Boolean] = js.native
+    var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line in the chart.
       * @Default {'horizontal'}
       */
-    var orientation: js.UndefOr[AxisOrientation | String] = js.native
+    var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
       * @Default {10}
       */
-    var plotOffset: js.UndefOr[Double] = js.native
+    var plotOffset: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range of the axis.
       */
-    var range: js.UndefOr[AxesRange] = js.native
+    var range: js.UndefOr[AxesRange] = js.undefined
     
     /** Specifies the padding for the axis range.
       * @Default {None. See RangePadding}
       */
-    var rangePadding: js.UndefOr[RangePadding | String] = js.native
+    var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
       * @Default {null}
       */
-    var roundingPlaces: js.UndefOr[Double] = js.native
+    var roundingPlaces: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the axis scrollbar.
       */
-    var scrollbarSettings: js.UndefOr[AxesScrollbarSettings] = js.native
+    var scrollbarSettings: js.UndefOr[AxesScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
       * @Default {true}
       */
-    var showNextToAxisLine: js.UndefOr[Boolean] = js.native
+    var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
       * @Default {[ ]}
       */
-    var stripLine: js.UndefOr[js.Array[AxesStripLine]] = js.native
+    var stripLine: js.UndefOr[js.Array[AxesStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
       * @Default {outside. See TickLinesPosition}
       */
-    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.native
+    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
     /** Options for customizing the axis title.
       */
-    var title: js.UndefOr[AxesTitle] = js.native
+    var title: js.UndefOr[AxesTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
       * @Default {null. See ValueType}
       */
-    var valueType: js.UndefOr[ValueType | String] = js.native
+    var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
       * @Default {1}
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1.
       * @Default {0}
       */
-    var zoomPosition: js.UndefOr[Double] = js.native
+    var zoomPosition: js.UndefOr[Double] = js.undefined
   }
   object Axis {
     
@@ -3719,25 +4113,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxisLabelClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the labels in chart area.         index - Index of the label.    axis - Instance of the corresponding axis.    text - Label that is clicked.
       *
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxisLabelClickEventArgs {
     
@@ -3776,25 +4169,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait AxisLabelMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the labels in chart area.         index - Index of the label.    axis - Instance of the corresponding axis.    text - Label that is hovered.
       *
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AxisLabelMouseMoveEventArgs {
     
@@ -3833,24 +4225,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait BeforeResizeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** currentWidth - Chart width, before resize    currentHeight - Chart height, before resize    newWidth - Chart width, after resize    newHeight - Chart height, after resize
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeResizeEventArgs {
     
@@ -3889,23 +4280,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait Border extends StObject {
     
     /** Border color of the chart.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Opacity of the chart border.
       * @Default {0.3}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the Chart border.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Border {
     
@@ -3938,17 +4328,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartArea extends StObject {
     
     /** Background color of the plot area.
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the border of the plot area.
       */
-    var border: js.UndefOr[ChartAreaBorder] = js.native
+    var border: js.UndefOr[ChartAreaBorder] = js.undefined
   }
   object ChartArea {
     
@@ -3975,23 +4364,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartAreaBorder extends StObject {
     
     /** Border color of the plot area.
       * @Default {Gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Opacity of the plot area border.
       * @Default {0.3}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Border width of the plot area.
       * @Default {0.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ChartAreaBorder {
     
@@ -4024,25 +4412,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartAreaBoundsCalculateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** areaBoundsHeight - Height of the chart area.    areaBoundsWidth - Width of the chart area.    areaBoundsX - X-coordinate of the chart area.    areaBoundsY - Y-coordinate of the
       * chart area.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartAreaBoundsCalculateEventArgs {
     
@@ -4081,25 +4468,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to chart area.id - ID of the target element.    size - Width and height of the chart.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartClickEventArgs {
     
@@ -4138,25 +4524,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartDoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to chart area.id - ID of the target element.    size - Width and height of the chart.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartDoubleClickEventArgs {
     
@@ -4195,25 +4580,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartMouseLeaveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to chart area.id - ID of the target element.    size - Width and height of the chart.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartMouseLeaveEventArgs {
     
@@ -4252,25 +4636,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ChartMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to chart area.id - ID of the target element.    size - Width and height of the chart.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartMouseMoveEventArgs {
     
@@ -4309,28 +4692,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait ColumnDefinition extends StObject {
     
     /** Width of the column in plotting area. Width is measured in either pixel or percentage based on the value of unit property.
       * @Default {50}
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Color of the line that indicates the starting point of the column in plotting area.
       * @Default {transparent}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Width of the line that indicates the starting point of the column in plot area.
       * @Default {1}
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the unit to measure the width of the column in plotting area.
       * @Default {'pixel'. See Unit}
       */
-    var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.native
+    var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.undefined
   }
   object ColumnDefinition {
     
@@ -4369,331 +4751,330 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptions extends StObject {
     
     /** Specifies animation duration for series rendering
       * @Default {null}
       */
-    var animationDuration: js.UndefOr[String] = js.native
+    var animationDuration: js.UndefOr[String] = js.undefined
     
     /** Options to customize the border of all the series.
       */
-    var border: js.UndefOr[CommonSeriesOptionsBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsBorder] = js.undefined
     
     /** Quartile calculation has been performed in three different formulas to render the box and whisker series.
       * @Default {exclusive}
       */
-    var boxPlotMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.boxPlotMode | String] = js.native
+    var boxPlotMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.boxPlotMode | String] = js.undefined
     
     /** Options for customizing the bubble options of the Bubble series
       */
-    var bubbleOptions: js.UndefOr[CommonSeriesOptionsBubbleOptions] = js.native
+    var bubbleOptions: js.UndefOr[CommonSeriesOptionsBubbleOptions] = js.undefined
     
     /** Specifies spline tension value for cardinal spline type. Value ranges from 0 to 1.
       * @Default {0.5}
       */
-    var cardinalSplineTension: js.UndefOr[Double] = js.native
+    var cardinalSplineTension: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains close value for the series.
       * @Default {null}
       */
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
     /** To render the column and bar type series in rectangle/cylinder shape. See
       * @Default {rectangle}
       */
-    var columnFacet: js.UndefOr[ColumnFacet | String] = js.native
+    var columnFacet: js.UndefOr[ColumnFacet | String] = js.undefined
     
     /** Spacing between columns of different series. Value ranges from 0 to 1
       * @Default {0}
       */
-    var columnSpacing: js.UndefOr[Double] = js.native
+    var columnSpacing: js.UndefOr[Double] = js.undefined
     
     /** Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon columnSpacing property.
       * @Default {0.7}
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the waterfall connector line.
       */
-    var connectorLine: js.UndefOr[CommonSeriesOptionsConnectorLine] = js.native
+    var connectorLine: js.UndefOr[CommonSeriesOptionsConnectorLine] = js.undefined
     
     /** Options for customizing the corner radius. cornerRadius property also takes the numeric input and applies it for all the four corners of the column.
       */
-    var cornerRadius: js.UndefOr[CommonSeriesOptionsCornerRadius] = js.native
+    var cornerRadius: js.UndefOr[CommonSeriesOptionsCornerRadius] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke all the line type series.
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Set the dataSource for all series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Controls the size of the hole in doughnut series. Value ranges from 0 to 1
       * @Default {0.4}
       */
-    var doughnutCoefficient: js.UndefOr[Double] = js.native
+    var doughnutCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the doughnut series. Value ranges from 0 to 1.
       * @Default {0.8}
       */
-    var doughnutSize: js.UndefOr[Double] = js.native
+    var doughnutSize: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the drag and drop in series.
       */
-    var dragSettings: js.UndefOr[CommonSeriesOptionsDragSettings] = js.native
+    var dragSettings: js.UndefOr[CommonSeriesOptionsDragSettings] = js.undefined
     
     /** Specifies the type of series to be drawn in radar or polar series.
       * @Default {line. See DrawType}
       */
-    var drawType: js.UndefOr[DrawType | String] = js.native
+    var drawType: js.UndefOr[DrawType | String] = js.undefined
     
     /** Options for customizing the empty point in the series.
       */
-    var emptyPointSettings: js.UndefOr[CommonSeriesOptionsEmptyPointSettings] = js.native
+    var emptyPointSettings: js.UndefOr[CommonSeriesOptionsEmptyPointSettings] = js.undefined
     
     /** Enable/disable the animation for all the series.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** To avoid overlapping of data labels smartly.
       * @Default {true}
       */
-    var enableSmartLabels: js.UndefOr[Boolean] = js.native
+    var enableSmartLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Start angle of pie/doughnut series.
       * @Default {null}
       */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the error bar in series.
       */
-    var errorBar: js.UndefOr[CommonSeriesOptionsErrorBar] = js.native
+    var errorBar: js.UndefOr[CommonSeriesOptionsErrorBar] = js.undefined
     
     /** Explodes the pie/doughnut slices on mouse move.
       * @Default {false}
       */
-    var explode: js.UndefOr[Boolean] = js.native
+    var explode: js.UndefOr[Boolean] = js.undefined
     
     /** Explodes all the slice of pie/doughnut on render.
       * @Default {false}
       */
-    var explodeAll: js.UndefOr[Boolean] = js.native
+    var explodeAll: js.UndefOr[Boolean] = js.undefined
     
     /** Index of the point to be exploded from pie/doughnut/pyramid/funnel.
       * @Default {null}
       */
-    var explodeIndex: js.UndefOr[Double] = js.native
+    var explodeIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance of the slice from the center, when it is exploded.
       * @Default {0.4}
       */
-    var explodeOffset: js.UndefOr[Double] = js.native
+    var explodeOffset: js.UndefOr[Double] = js.undefined
     
     /** Fill color for all the series.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the font of all the series.
       */
-    var font: js.UndefOr[CommonSeriesOptionsFont] = js.native
+    var font: js.UndefOr[CommonSeriesOptionsFont] = js.undefined
     
     /** Sets the height of the funnel in funnel series. Values can be either pixel or percentage.
       * @Default {32.7%}
       */
-    var funnelHeight: js.UndefOr[String] = js.native
+    var funnelHeight: js.UndefOr[String] = js.undefined
     
     /** Sets the width of the funnel in funnel series. Values can be either pixel or percentage.
       * @Default {11.6%}
       */
-    var funnelWidth: js.UndefOr[String] = js.native
+    var funnelWidth: js.UndefOr[String] = js.undefined
     
     /** Gap between the slices in pyramid and funnel series.
       * @Default {0}
       */
-    var gapRatio: js.UndefOr[Double] = js.native
+    var gapRatio: js.UndefOr[Double] = js.undefined
     
     /** Distance between the two pie's in pieOfPie series.
       * @Default {50}
       */
-    var gapWidth: js.UndefOr[Double] = js.native
+    var gapWidth: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains high value for the series.
       * @Default {null}
       */
-    var high: js.UndefOr[String] = js.native
+    var high: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the appearance of the series or data point while highlighting.
       */
-    var highlightSettings: js.UndefOr[CommonSeriesOptionsHighlightSettings] = js.native
+    var highlightSettings: js.UndefOr[CommonSeriesOptionsHighlightSettings] = js.undefined
     
     /** Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
       * @Default {true}
       */
-    var isClosed: js.UndefOr[Boolean] = js.native
+    var isClosed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to stack the column series in polar/radar charts.
       * @Default {false}
       */
-    var isStacking: js.UndefOr[Boolean] = js.native
+    var isStacking: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the chart vertically. This is applicable only for Cartesian type series.
       * @Default {false}
       */
-    var isTransposed: js.UndefOr[Boolean] = js.native
+    var isTransposed: js.UndefOr[Boolean] = js.undefined
     
     /** Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
       * @Default {inside. See LabelPosition}
       */
-    var labelPosition: js.UndefOr[LabelPosition | String] = js.native
+    var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Specifies the line cap of the series.
       * @Default {butt. See LineCap}
       */
-    var lineCap: js.UndefOr[LineCap | String] = js.native
+    var lineCap: js.UndefOr[LineCap | String] = js.undefined
     
     /** Specifies the type of shape to be used where two lines meet.
       * @Default {round. See LineJoin}
       */
-    var lineJoin: js.UndefOr[LineJoin | String] = js.native
+    var lineJoin: js.UndefOr[LineJoin | String] = js.undefined
     
     /** Name of the property in the datasource that contains low value for the series.
       * @Default {null}
       */
-    var low: js.UndefOr[String] = js.native
+    var low: js.UndefOr[String] = js.undefined
     
     /** Options for displaying and customizing marker for individual point in a series. Marker contains shapes and/or data labels.
       */
-    var marker: js.UndefOr[CommonSeriesOptionsMarker] = js.native
+    var marker: js.UndefOr[CommonSeriesOptionsMarker] = js.undefined
     
     /** Opacity of the series.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains open value for the series.
       * @Default {null}
       */
-    var open: js.UndefOr[String] = js.native
+    var open: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the outlier of the series.
       */
-    var outlierSettings: js.UndefOr[CommonSeriesOptionsOutlierSettings] = js.native
+    var outlierSettings: js.UndefOr[CommonSeriesOptionsOutlierSettings] = js.undefined
     
     /** Name of a field in data source, where the fill color for all the data points is generated.
       */
-    var palette: js.UndefOr[String] = js.native
+    var palette: js.UndefOr[String] = js.undefined
     
     /** Controls the size of pie series. Value ranges from 0 to 1.
       * @Default {0.8}
       */
-    var pieCoefficient: js.UndefOr[Double] = js.native
+    var pieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
       * @Default {0.6}
       */
-    var pieOfPieCoefficient: js.UndefOr[Double] = js.native
+    var pieOfPieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains fill color for the series.
       * @Default {null}
       */
-    var pointColorMappingName: js.UndefOr[String] = js.native
+    var pointColorMappingName: js.UndefOr[String] = js.undefined
     
     /** Fill color for the positive column of the waterfall.
       * @Default {null}
       */
-    var positiveFill: js.UndefOr[String] = js.native
+    var positiveFill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the pyramid series.
       * @Default {linear. See PyramidMode}
       */
-    var pyramidMode: js.UndefOr[PyramidMode | String] = js.native
+    var pyramidMode: js.UndefOr[PyramidMode | String] = js.undefined
     
     /** Options for customizing the appearance of the series/data point on selection.
       */
-    var selectionSettings: js.UndefOr[CommonSeriesOptionsSelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[CommonSeriesOptionsSelectionSettings] = js.undefined
     
     /** Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
       * @Default {true}
       */
-    var showMedian: js.UndefOr[Boolean] = js.native
+    var showMedian: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains the size value for the bubble series.
       * @Default {null}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** To render the spline series curve in different forms.
       * @Default {natural. See SplineType}
       */
-    var splineType: js.UndefOr[SplineType | String] = js.native
+    var splineType: js.UndefOr[SplineType | String] = js.undefined
     
     /** Specifies the mode for splitting the data points in pieOfPie series.
       * @Default {value. See SplitMode}
       */
-    var splitMode: js.UndefOr[SplitMode | String] = js.native
+    var splitMode: js.UndefOr[SplitMode | String] = js.undefined
     
     /** Split Value of pieOfPie series.
       * @Default {null}
       */
-    var splitValue: js.UndefOr[String] = js.native
+    var splitValue: js.UndefOr[String] = js.undefined
     
     /** Group of the stacking collection series.
       */
-    var stackingGroup: js.UndefOr[String] = js.native
+    var stackingGroup: js.UndefOr[String] = js.undefined
     
     /** Start angle from where the pie/doughnut series renders. By default it starts from 0.
       * @Default {null}
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the tooltip of chart.
       */
-    var tooltip: js.UndefOr[CommonSeriesOptionsTooltip] = js.native
+    var tooltip: js.UndefOr[CommonSeriesOptionsTooltip] = js.undefined
     
     /** Option to add the trendlines to chart.
       */
-    var trendlines: js.UndefOr[js.Array[CommonSeriesOptionsTrendline]] = js.native
+    var trendlines: js.UndefOr[js.Array[CommonSeriesOptionsTrendline]] = js.undefined
     
     /** Specifies the type of the series to render in chart.
       * @Default {column. See Type}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
       * @Default {visible}
       */
-    var visibleOnLegend: js.UndefOr[String] = js.native
+    var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
       * @Default {null}
       */
-    var xAxisName: js.UndefOr[String] = js.native
+    var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
       * @Default {null}
       */
-    var yAxisName: js.UndefOr[String] = js.native
+    var yAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
     
     /** Z-order of the series.
       * @Default {0}
       */
-    var zOrder: js.UndefOr[Double] = js.native
+    var zOrder: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptions {
     
@@ -5119,23 +5500,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsBorder extends StObject {
     
     /** Border color of all series.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** DashArray for border of the series.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Border width of all series.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsBorder {
     
@@ -5168,23 +5548,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsBubbleOptions extends StObject {
     
     /** Used for setting the maximum radius of the bubble
       * @Default {3}
       */
-    var maxRadius: js.UndefOr[Double] = js.native
+    var maxRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the setting the minimum radius of the bubble
       * @Default {1}
       */
-    var minRadius: js.UndefOr[Double] = js.native
+    var minRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the calculation of the bubble radius based on the mode selected
       * @Default {minMax}
       */
-    var radiusMode: js.UndefOr[RadiusMode | String] = js.native
+    var radiusMode: js.UndefOr[RadiusMode | String] = js.undefined
   }
   object CommonSeriesOptionsBubbleOptions {
     
@@ -5217,28 +5596,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsConnectorLine extends StObject {
     
     /** Color of the connector line.
       * @Default {#565656}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the connector line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsConnectorLine {
     
@@ -5277,28 +5655,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsCornerRadius extends StObject {
     
     /** Specifies the radius for the bottom left corner.
       * @Default {0}
       */
-    var bottomLeft: js.UndefOr[Double] = js.native
+    var bottomLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the bottom right corner.
       * @Default {0}
       */
-    var bottomRight: js.UndefOr[Double] = js.native
+    var bottomRight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top left corner.
       * @Default {0}
       */
-    var topLeft: js.UndefOr[Double] = js.native
+    var topLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top right corner.
       * @Default {0}
       */
-    var topRight: js.UndefOr[Double] = js.native
+    var topRight: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsCornerRadius {
     
@@ -5337,18 +5714,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsDragSettings extends StObject {
     
     /** drag/drop the series
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of drag settings.
       * @Default {xy}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsDragSettings {
     
@@ -5375,22 +5751,21 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsEmptyPointSettings extends StObject {
     
     /** Specifies the mode of empty point.
       * @Default {gap}
       */
-    var displayMode: js.UndefOr[EmptyPointMode | String] = js.native
+    var displayMode: js.UndefOr[EmptyPointMode | String] = js.undefined
     
     /** Options for customizing the color and border of the empty point in the series.
       */
-    var style: js.UndefOr[CommonSeriesOptionsEmptyPointSettingsStyle] = js.native
+    var style: js.UndefOr[CommonSeriesOptionsEmptyPointSettingsStyle] = js.undefined
     
     /** Controls the visibility of the empty point.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CommonSeriesOptionsEmptyPointSettings {
     
@@ -5423,16 +5798,15 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsEmptyPointSettingsStyle extends StObject {
     
     /** Options for customizing border of the empty point in the series.
       */
-    var border: js.UndefOr[CommonSeriesOptionsEmptyPointSettingsStyleBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsEmptyPointSettingsStyleBorder] = js.undefined
     
     /** Color of the empty point.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsEmptyPointSettingsStyle {
     
@@ -5459,17 +5833,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsEmptyPointSettingsStyleBorder extends StObject {
     
     /** Border color of the empty point.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the empty point.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsEmptyPointSettingsStyleBorder {
     
@@ -5496,72 +5869,71 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsErrorBar extends StObject {
     
     /** Options for customizing the error bar cap.
       */
-    var cap: js.UndefOr[CommonSeriesOptionsErrorBarCap] = js.native
+    var cap: js.UndefOr[CommonSeriesOptionsErrorBarCap] = js.undefined
     
     /** Specifies the direction of error bar.
       * @Default {both}
       */
-    var direction: js.UndefOr[ErrorBarDirection | String] = js.native
+    var direction: js.UndefOr[ErrorBarDirection | String] = js.undefined
     
     /** Fill color of the error bar.
       * @Default {#000000}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Value of horizontal  error bar.
       * @Default {1}
       */
-    var horizontalErrorValue: js.UndefOr[Double] = js.native
+    var horizontalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative horizontal error bar.
       * @Default {1}
       */
-    var horizontalNegativeErrorValue: js.UndefOr[Double] = js.native
+    var horizontalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive horizontal error bar.
       * @Default {1}
       */
-    var horizontalPositiveErrorValue: js.UndefOr[Double] = js.native
+    var horizontalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of error bar.
       * @Default {vertical}
       */
-    var mode: js.UndefOr[ErrorBarMode | String] = js.native
+    var mode: js.UndefOr[ErrorBarMode | String] = js.undefined
     
     /** Specifies the type of error bar.
       * @Default {FixedValue}
       */
-    var `type`: js.UndefOr[ErrorBarType | String] = js.native
+    var `type`: js.UndefOr[ErrorBarType | String] = js.undefined
     
     /** Value of vertical error bar.
       * @Default {3}
       */
-    var verticalErrorValue: js.UndefOr[Double] = js.native
+    var verticalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative vertical error bar.
       * @Default {5}
       */
-    var verticalNegativeErrorValue: js.UndefOr[Double] = js.native
+    var verticalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive vertical error bar.
       * @Default {5}
       */
-    var verticalPositiveErrorValue: js.UndefOr[Double] = js.native
+    var verticalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the error bar
       * @Default {visible}
       */
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsErrorBar {
     
@@ -5654,28 +6026,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsErrorBarCap extends StObject {
     
     /** Color of the error bar cap.
       * @Default {â€œ#000000â€}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Length of the error bar cap.
       * @Default {1}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Show/Hides the error bar cap.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar cap.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsErrorBarCap {
     
@@ -5714,38 +6085,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsFont extends StObject {
     
     /** Font color of the text in all series.
       * @Default {#707070}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for all the series.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for all the series.
       * @Default {normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font weight for all the series.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity for text in all the series.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in all the series.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsFont {
     
@@ -5796,40 +6166,39 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsHighlightSettings extends StObject {
     
     /** Options for customizing the border of series on highlight.
       */
-    var border: js.UndefOr[CommonSeriesOptionsHighlightSettingsBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsHighlightSettingsBorder] = js.undefined
     
     /** Color of the series/point on highlight.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Custom pattern for the series on highlight.
       */
-    var customPattern: js.UndefOr[String] = js.native
+    var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight the series or data point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the series or data point has to be highlighted.
       * @Default {series. See Mode}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on highlight.
       * @Default {0.6}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on highlight.
       * @Default {none. See Pattern}
       */
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsHighlightSettings {
     
@@ -5886,17 +6255,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsHighlightSettingsBorder extends StObject {
     
     /** Border color of the series/point on highlight.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on highlight.
       * @Default {2}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsHighlightSettingsBorder {
     
@@ -5923,44 +6291,43 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarker extends StObject {
     
     /** Options for customizing the border of the marker shape.
       */
-    var border: js.UndefOr[CommonSeriesOptionsMarkerBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsMarkerBorder] = js.undefined
     
     /** Options for displaying and customizing data labels.
       */
-    var dataLabel: js.UndefOr[CommonSeriesOptionsMarkerDataLabel] = js.native
+    var dataLabel: js.UndefOr[CommonSeriesOptionsMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** The URL for the Image to be displayed as marker. In order to display image as marker, set series.marker.shape as â€˜imageâ€™.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
       * @Default {circle. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options for customizing the size of the marker shape.
       */
-    var size: js.UndefOr[CommonSeriesOptionsMarkerSize] = js.native
+    var size: js.UndefOr[CommonSeriesOptionsMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CommonSeriesOptionsMarker {
     
@@ -6023,18 +6390,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
       * @Default {white}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerBorder {
     
@@ -6061,97 +6427,96 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
       * @Default {null}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the border of the data label.
       */
-    var border: js.UndefOr[CommonSeriesOptionsMarkerDataLabelBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsMarkerDataLabelBorder] = js.undefined
     
     /** Options for displaying and customizing the line that connects point and data label.
       */
-    var connectorLine: js.UndefOr[CommonSeriesOptionsMarkerDataLabelConnectorLine] = js.native
+    var connectorLine: js.UndefOr[CommonSeriesOptionsMarkerDataLabelConnectorLine] = js.undefined
     
     /** Enables saturation to the data label.
       * @Default {false}
       */
-    var enableContrastColor: js.UndefOr[Boolean] = js.native
+    var enableContrastColor: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the wrap option to the data label.
       * @Default {false}
       */
-    var enableWrap: js.UndefOr[Boolean] = js.native
+    var enableWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the data label.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the data label font.
       */
-    var font: js.UndefOr[CommonSeriesOptionsMarkerDataLabelFont] = js.native
+    var font: js.UndefOr[CommonSeriesOptionsMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
       * @Default {center}
       */
-    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.native
+    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
     /** Margin of the text to its background shape. The size of the background shape increases based on the margin applied to its text.
       */
-    var margin: js.UndefOr[CommonSeriesOptionsMarkerDataLabelMargin] = js.native
+    var margin: js.UndefOr[CommonSeriesOptionsMarkerDataLabelMargin] = js.undefined
     
     /** Maximum label width of the data label.
       * @Default {null}
       */
-    var maximumLabelWidth: js.UndefOr[Double] = js.native
+    var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the datalabel positions
       */
-    var offset: js.UndefOr[CommonSeriesOptionsMarkerDataLabelOffset] = js.native
+    var offset: js.UndefOr[CommonSeriesOptionsMarkerDataLabelOffset] = js.undefined
     
     /** Opacity of the data label.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
       * @Default {none. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Displays the partially visible labels inside the chart Area
       * @Default {false}
       */
-    var showEdgeLabels: js.UndefOr[Boolean] = js.native
+    var showEdgeLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Custom template to format the data label content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Name of a field in data source, where datalabel text is displayed.
       */
-    var textMappingName: js.UndefOr[String] = js.native
+    var textMappingName: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
       * @Default {top. See TextPosition}
       */
-    var textPosition: js.UndefOr[TextPosition | String] = js.native
+    var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
       * @Default {center}
       */
-    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.native
+    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabel {
     
@@ -6280,18 +6645,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
       * @Default {0.1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabelBorder {
     
@@ -6318,28 +6682,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabelConnectorLine extends StObject {
     
     /** Color of the connector line.
       * @Default {#565656}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Height of the connector line.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
       * @Default {line. See ConnectorLineType}
       */
-    var `type`: js.UndefOr[ConnectorLineType | String] = js.native
+    var `type`: js.UndefOr[ConnectorLineType | String] = js.undefined
     
     /** Width of the connector.
       * @Default {0.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabelConnectorLine {
     
@@ -6378,38 +6741,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabelFont extends StObject {
     
     /** Font color of the data label text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
       * @Default {regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabelFont {
     
@@ -6460,28 +6822,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
       * @Default {5}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
       * @Default {5}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
       * @Default {5}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
       * @Default {5}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabelMargin {
     
@@ -6520,18 +6881,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerDataLabelOffset extends StObject {
     
     /** X value or horizontal offset to position the labels in chart.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the labels.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerDataLabelOffset {
     
@@ -6558,18 +6918,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsMarkerSize extends StObject {
     
     /** Height of the marker.
       * @Default {6}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
       * @Default {6}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsMarkerSize {
     
@@ -6596,17 +6955,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsOutlierSettings extends StObject {
     
     /** Specifies the shape of the outlier.
       * @Default {circle. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options for customizing the size of the outlier shape.
       */
-    var size: js.UndefOr[CommonSeriesOptionsOutlierSettingsSize] = js.native
+    var size: js.UndefOr[CommonSeriesOptionsOutlierSettingsSize] = js.undefined
   }
   object CommonSeriesOptionsOutlierSettings {
     
@@ -6633,18 +6991,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsOutlierSettingsSize extends StObject {
     
     /** Height of the outlier shape.
       * @Default {6}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the outlier shape.
       * @Default {6}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsOutlierSettingsSize {
     
@@ -6671,50 +7028,49 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsSelectionSettings extends StObject {
     
     /** Options for customizing the border of the series on selection.
       */
-    var border: js.UndefOr[CommonSeriesOptionsSelectionSettingsBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsSelectionSettingsBorder] = js.undefined
     
     /** Color of the series/point on selection.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Custom pattern for the series on selection.
       */
-    var customPattern: js.UndefOr[String] = js.native
+    var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select a series/data point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the series or data point has to be selected.
       * @Default {series. See Mode}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on selection.
       * @Default {0.6}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on selection.
       * @Default {none. See Pattern}
       */
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
     /** Specifies the drawn rectangle type.
       * @Default {xy}
       */
-    var rangeType: js.UndefOr[RangeType | String] = js.native
+    var rangeType: js.UndefOr[RangeType | String] = js.undefined
     
     /** Specifies the type of selection.
       * @Default {single}
       */
-    var `type`: js.UndefOr[SelectionType | String] = js.native
+    var `type`: js.UndefOr[SelectionType | String] = js.undefined
   }
   object CommonSeriesOptionsSelectionSettings {
     
@@ -6783,17 +7139,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsSelectionSettingsBorder extends StObject {
     
     /** Border color of the series/point on selection.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on selection.
       * @Default {2}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object CommonSeriesOptionsSelectionSettingsBorder {
     
@@ -6820,57 +7175,56 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsTooltip extends StObject {
     
     /** Options for customizing the border of the tooltip.
       */
-    var border: js.UndefOr[CommonSeriesOptionsTooltipBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
       * @Default {500ms}
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the tooltip when moving from one point to other.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content.
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the tooltip.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
       * @Default {0}
       */
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
       * @Default {0}
       */
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
     /** Custom template to format the tooltip content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of the tooltip.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CommonSeriesOptionsTooltip {
     
@@ -6945,18 +7299,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsTooltipBorder extends StObject {
     
     /** Border color of the tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsTooltipBorder {
     
@@ -6983,75 +7336,74 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsTrendline extends StObject {
     
     /** Past trends of the current series.
       * @Default {0}
       */
-    var backwardForecast: js.UndefOr[Double] = js.native
+    var backwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the trendline.
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Fill color of the trendlines.
       * @Default {#0000FF}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Future trends of the current series.
       * @Default {0}
       */
-    var forwardForecast: js.UndefOr[Double] = js.native
+    var forwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Specifies the intercept value of the trendlines.
       * @Default {null}
       */
-    var intercept: js.UndefOr[Double] = js.native
+    var intercept: js.UndefOr[Double] = js.undefined
     
     /** Name for the trendlines that is to be displayed in the legend text.
       * @Default {trendline}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the moving average starting period value.
       * @Default {2}
       */
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order of the polynomial trendlines.
       * @Default {0}
       */
-    var polynomialOrder: js.UndefOr[Double] = js.native
+    var polynomialOrder: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the tooltip of the trendlines in the chart.
       */
-    var tooltip: js.UndefOr[CommonSeriesOptionsTrendlinesTooltip] = js.native
+    var tooltip: js.UndefOr[CommonSeriesOptionsTrendlinesTooltip] = js.undefined
     
     /** Specifies the type of the trendline for the series.
       * @Default {linear. See TrendlinesType}
       */
-    var `type`: js.UndefOr[TrendlinesType | String] = js.native
+    var `type`: js.UndefOr[TrendlinesType | String] = js.undefined
     
     /** Show/hides the trendline.
       */
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Show/hides the trendline legend.
       * @Default {visible}
       */
-    var visibleOnLegend: js.UndefOr[String] = js.native
+    var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Width of the trendlines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsTrendline {
     
@@ -7150,47 +7502,46 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsTrendlinesTooltip extends StObject {
     
     /** Options for customizing the border of the  trendline tooltip.
       */
-    var border: js.UndefOr[CommonSeriesOptionsTrendlinesTooltipBorder] = js.native
+    var border: js.UndefOr[CommonSeriesOptionsTrendlinesTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
       * @Default {500ms}
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the trendline tooltip when moving from one point to other.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the trendline tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content displayed in the trendlines.
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline tooltip.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
       * @Default {0}
       */
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
       * @Default {0}
       */
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsTrendlinesTooltip {
     
@@ -7253,18 +7604,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptionsTrendlinesTooltipBorder extends StObject {
     
     /** Border color of the trendline tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trendline tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonSeriesOptionsTrendlinesTooltipBorder {
     
@@ -7291,20 +7641,19 @@ object Chart {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -7337,30 +7686,29 @@ object Chart {
     }
   }
   
-  @js.native
   trait Crosshair extends StObject {
     
     /** Options for customizing the crosshair line.
       */
-    var line: js.UndefOr[CrosshairLine] = js.native
+    var line: js.UndefOr[CrosshairLine] = js.undefined
     
     /** Options for customizing the marker in crosshair.
       */
-    var marker: js.UndefOr[CrosshairMarker] = js.native
+    var marker: js.UndefOr[CrosshairMarker] = js.undefined
     
     /** Options for customizing the trackball tooltip.
       */
-    var trackballTooltipSettings: js.UndefOr[CrosshairTrackballTooltipSettings] = js.native
+    var trackballTooltipSettings: js.UndefOr[CrosshairTrackballTooltipSettings] = js.undefined
     
     /** Specifies the type of the crosshair. It can be trackball or crosshair
       * @Default {crosshair. See CrosshairType}
       */
-    var `type`: js.UndefOr[CrosshairType | String] = js.native
+    var `type`: js.UndefOr[CrosshairType | String] = js.undefined
     
     /** Show/hides the crosshair/trackball visibility.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Crosshair {
     
@@ -7405,18 +7753,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairLine extends StObject {
     
     /** Color of the crosshair line.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Width of the crosshair line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CrosshairLine {
     
@@ -7443,26 +7790,25 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairMarker extends StObject {
     
     /** Options for customizing the border.
       */
-    var border: js.UndefOr[CrosshairMarkerBorder] = js.native
+    var border: js.UndefOr[CrosshairMarkerBorder] = js.undefined
     
     /** Opacity of the marker.
       * @Default {true}
       */
-    var opacity: js.UndefOr[Boolean] = js.native
+    var opacity: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the size of the marker.
       */
-    var size: js.UndefOr[CrosshairMarkerSize] = js.native
+    var size: js.UndefOr[CrosshairMarkerSize] = js.undefined
     
     /** Show/hides the marker.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CrosshairMarker {
     
@@ -7501,13 +7847,12 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairMarkerBorder extends StObject {
     
     /** Border width of the marker.
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CrosshairMarkerBorder {
     
@@ -7528,18 +7873,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairMarkerSize extends StObject {
     
     /** Height of the marker.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
       * @Default {10}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CrosshairMarkerSize {
     
@@ -7566,37 +7910,36 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairTrackballTooltipSettings extends StObject {
     
     /** Options for customizing the trackball tooltip border.
       */
-    var border: js.UndefOr[CrosshairTrackballTooltipSettingsBorder] = js.native
+    var border: js.UndefOr[CrosshairTrackballTooltipSettingsBorder] = js.undefined
     
     /** Background color of the trackball tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the trackball tooltip.
       * @Default {float. See CrosshairMode}
       */
-    var mode: js.UndefOr[CrosshairMode | String] = js.native
+    var mode: js.UndefOr[CrosshairMode | String] = js.undefined
     
     /** Opacity value of the trackball tooltip.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Rounded corner x value of the trackball tooltip.
       * @Default {3}
       */
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
     /** Rounded corner y value of the trackball tooltip.
       * @Default {3}
       */
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
   }
   object CrosshairTrackballTooltipSettings {
     
@@ -7647,18 +7990,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait CrosshairTrackballTooltipSettingsBorder extends StObject {
     
     /** Border color of the trackball tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trackball tooltip.
       * @Default {null}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CrosshairTrackballTooltipSettingsBorder {
     
@@ -7685,20 +8027,19 @@ object Chart {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -7731,26 +8072,25 @@ object Chart {
     }
   }
   
-  @js.native
   trait DisplayTextRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** text - Text displayed in data label. You can add custom text to the data label    locationX - X-coordinate of data label location    locationY - Y-coordinate of data label
       * location    seriesIndex - Index of the series in series Collection whose data label is being rendered    pointIndex - Index of the point in series whose data label is being
       * rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DisplayTextRenderingEventArgs {
     
@@ -7789,25 +8129,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait DragEndEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** seriesIndex - Series Index of the point held for dragging    pointIndex - PointIndex of the point held for dragging    oldValue - Previous value of the point before dragging
       * newValue - Current value of the point    series - Contains the all the series information of the chart
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragEndEventArgs {
     
@@ -7846,24 +8185,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait DragStartEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** seriesIndex - Series Index of the point held for dragging    pointIndex - PointIndex of the point held for dragging    point - Information of the point held for dragging
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStartEventArgs {
     
@@ -7902,25 +8240,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait DraggingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** seriesIndex - Series Index of the point held for dragging    pointIndex - PointIndex of the point held for dragging    oldValue - Previous value of the point before dragging
       * newValue - Current value of the point
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DraggingEventArgs {
     
@@ -7959,24 +8296,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait ErrorBarRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** errorBar - Error bar Object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ErrorBarRenderingEventArgs {
     
@@ -8015,42 +8351,41 @@ object Chart {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Specifies the name of the action URL
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the angle for rotation
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the downloading filename
       * @Default {chart}
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
       * @Default {client}
       */
-    var mode: js.UndefOr[ExportingMode | String] = js.native
+    var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Enable/ disable the multiple excel exporting
       * @Default {false}
       */
-    var multipleExport: js.UndefOr[Boolean] = js.native
+    var multipleExport: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the document
       * @Default {portrait}
       */
-    var orientation: js.UndefOr[ExportingOrientation | String] = js.native
+    var orientation: js.UndefOr[ExportingOrientation | String] = js.undefined
     
     /** Specifies the format of the file to export
       * @Default {png}
       */
-    var `type`: js.UndefOr[ExportingType | String] = js.native
+    var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
   object ExportSettings {
     
@@ -8107,114 +8442,113 @@ object Chart {
     }
   }
   
-  @js.native
   trait Indicator extends StObject {
     
     /** Specifies animation duration for indicator rendering.
       * @Default {null}
       */
-    var animationDuration: js.UndefOr[Boolean] = js.native
+    var animationDuration: js.UndefOr[Boolean] = js.undefined
     
     /** The dPeriod value for stochastic indicator.
       * @Default {3}
       */
-    var dPeriod: js.UndefOr[Double] = js.native
+    var dPeriod: js.UndefOr[Double] = js.undefined
     
     /** Enables/disables the animation.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Color of the technical indicator.
       * @Default {#00008B}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options to customize the histogram in MACD indicator.
       */
-    var histogram: js.UndefOr[IndicatorsHistogram] = js.native
+    var histogram: js.UndefOr[IndicatorsHistogram] = js.undefined
     
     /** Specifies the k period in stochastic indicator.
       * @Default {3}
       */
-    var kPeriod: js.UndefOr[Double] = js.native
+    var kPeriod: js.UndefOr[Double] = js.undefined
     
     /** Specifies the long period in MACD indicator.
       * @Default {26}
       */
-    var longPeriod: js.UndefOr[Double] = js.native
+    var longPeriod: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the lower line in indicators.
       */
-    var lowerLine: js.UndefOr[IndicatorsLowerLine] = js.native
+    var lowerLine: js.UndefOr[IndicatorsLowerLine] = js.undefined
     
     /** Options to customize the MACD line.
       */
-    var macdLine: js.UndefOr[IndicatorsMacdLine] = js.native
+    var macdLine: js.UndefOr[IndicatorsMacdLine] = js.undefined
     
     /** Specifies the type of the MACD indicator.
       * @Default {line. See MACDType}
       */
-    var macdType: js.UndefOr[String] = js.native
+    var macdType: js.UndefOr[String] = js.undefined
     
     /** Specifies period value in indicator.
       * @Default {14}
       */
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the period line in indicators.
       */
-    var periodLine: js.UndefOr[IndicatorsPeriodLine] = js.native
+    var periodLine: js.UndefOr[IndicatorsPeriodLine] = js.undefined
     
     /** Name of the series for which indicator has to be drawn.
       */
-    var seriesName: js.UndefOr[String] = js.native
+    var seriesName: js.UndefOr[String] = js.undefined
     
     /** Specifies the short period in MACD indicator.
       * @Default {13}
       */
-    var shortPeriod: js.UndefOr[Double] = js.native
+    var shortPeriod: js.UndefOr[Double] = js.undefined
     
     /** Specifies the standard deviation value for Bollinger band indicator.
       * @Default {2}
       */
-    var standardDeviations: js.UndefOr[Double] = js.native
+    var standardDeviations: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the tooltip.
       */
-    var tooltip: js.UndefOr[IndicatorsTooltip] = js.native
+    var tooltip: js.UndefOr[IndicatorsTooltip] = js.undefined
     
     /** Trigger value of MACD indicator.
       * @Default {9}
       */
-    var trigger: js.UndefOr[Double] = js.native
+    var trigger: js.UndefOr[Double] = js.undefined
     
     /** Specifies the type of indicator that has to be rendered.
       * @Default {sma. See IndicatorsType}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Options to customize the upper line in indicators
       */
-    var upperLine: js.UndefOr[IndicatorsUpperLine] = js.native
+    var upperLine: js.UndefOr[IndicatorsUpperLine] = js.undefined
     
     /** Specifies the visibility of indicator.
       * @Default {visible}
       */
-    var visibility: js.UndefOr[String] = js.native
+    var visibility: js.UndefOr[String] = js.undefined
     
     /** Width of the indicator line.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Name of the horizontal axis used for indicator. Primary X axis is used when x axis name is not specified.
       */
-    var xAxisName: js.UndefOr[String] = js.native
+    var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the vertical axis used for indicator. Primary Y axis is used when y axis name is not specified
       */
-    var yAxisName: js.UndefOr[String] = js.native
+    var yAxisName: js.UndefOr[String] = js.undefined
   }
   object Indicator {
     
@@ -8367,22 +8701,21 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsHistogram extends StObject {
     
     /** Options to customize the histogram border in MACD indicator.
       */
-    var border: js.UndefOr[IndicatorsHistogramBorder] = js.native
+    var border: js.UndefOr[IndicatorsHistogramBorder] = js.undefined
     
     /** Color of histogram columns in MACD indicator.
       * @Default {#ccccff}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of histogram columns in MACD indicator.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsHistogram {
     
@@ -8415,18 +8748,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsHistogramBorder extends StObject {
     
     /** Color of the histogram border in MACD indicator.
       * @Default {#9999ff}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Controls the width of histogram border line in MACD indicator.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsHistogramBorder {
     
@@ -8453,18 +8785,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsLowerLine extends StObject {
     
     /** Color of lower line.
       * @Default {#008000}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the lower line.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsLowerLine {
     
@@ -8491,18 +8822,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsMacdLine extends StObject {
     
     /** Color of MACD line.
       * @Default {#ff9933}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the MACD line.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsMacdLine {
     
@@ -8529,18 +8859,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsPeriodLine extends StObject {
     
     /** Color of period line in indicator.
       * @Default {blue}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the period line in indicators.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsPeriodLine {
     
@@ -8567,42 +8896,41 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsTooltip extends StObject {
     
     /** Option to customize the border of indicator tooltip.
       */
-    var border: js.UndefOr[IndicatorsTooltipBorder] = js.native
+    var border: js.UndefOr[IndicatorsTooltipBorder] = js.undefined
     
     /** Specifies the animation duration of indicator tooltip.
       * @Default {500ms}
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the tooltip animation.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of indicator tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Format of indicator tooltip. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of indicator tooltip.
       * @Default {0.95}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of indicator tooltip.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object IndicatorsTooltip {
     
@@ -8659,18 +8987,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsTooltipBorder extends StObject {
     
     /** Border color of indicator tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of indicator tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsTooltipBorder {
     
@@ -8697,18 +9024,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait IndicatorsUpperLine extends StObject {
     
     /** Fill color of the upper line in indicators
       * @Default {#ff9933}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the upper line in indicators.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IndicatorsUpperLine {
     
@@ -8735,102 +9061,101 @@ object Chart {
     }
   }
   
-  @js.native
   trait Legend extends StObject {
     
     /** Horizontal alignment of the legend.
       * @Default {Center. See Alignment}
       */
-    var alignment: js.UndefOr[Alignment | String] = js.native
+    var alignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Background for the legend. Use this property to add a background image or background color for the legend.
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the legend border.
       */
-    var border: js.UndefOr[LegendBorder] = js.native
+    var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Number of columns to arrange the legend items.
       * @Default {null}
       */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Controls whether legend has to use scrollbar or not. When enabled, scroll bar appears depending upon size and position properties of legend.
       * @Default {true}
       */
-    var enableScrollbar: js.UndefOr[Boolean] = js.native
+    var enableScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /** Fill color for the legend items. By using this property, it displays all legend item shapes in same color.Legend items representing invisible series is displayed in gray color.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options to customize the font used for legend item text.
       */
-    var font: js.UndefOr[LegendFont] = js.native
+    var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
       * @Default {10}
       */
-    var itemPadding: js.UndefOr[Double] = js.native
+    var itemPadding: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the style of legend items.
       */
-    var itemStyle: js.UndefOr[LegendItemStyle] = js.native
+    var itemStyle: js.UndefOr[LegendItemStyle] = js.undefined
     
     /** Options to customize the location of chart legend. Legend is placed in provided location only when value of position property is custom
       */
-    var location: js.UndefOr[LegendLocation] = js.native
+    var location: js.UndefOr[LegendLocation] = js.undefined
     
     /** Opacity of the legend.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set
       * **custom** as value to this property.
       * @Default {Bottom. See Position}
       */
-    var position: js.UndefOr[Position | String] = js.native
+    var position: js.UndefOr[Position | String] = js.undefined
     
     /** Number of rows to arrange the legend items.
       * @Default {null}
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Shape of the legend items. Default shape for pie and doughnut series is circle and all other series uses rectangle.
       * @Default {None. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options to customize the size of the legend.
       */
-    var size: js.UndefOr[LegendSize] = js.native
+    var size: js.UndefOr[LegendSize] = js.undefined
     
     /** Specifies the action taken when the legend width is more than the textWidth.
       * @Default {none. See textOverflow}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Text width for legend item.
       * @Default {34}
       */
-    var textWidth: js.UndefOr[Double] = js.native
+    var textWidth: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the legend title.
       */
-    var title: js.UndefOr[LegendTitle] = js.native
+    var title: js.UndefOr[LegendTitle] = js.undefined
     
     /** Controls the selection through the legend.
       * @Default {true}
       */
-    var toggleSeriesVisibility: js.UndefOr[Boolean] = js.native
+    var toggleSeriesVisibility: js.UndefOr[Boolean] = js.undefined
     
     /** Controls the visibility of the legend.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Legend {
     
@@ -8965,18 +9290,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendBorder {
     
@@ -9003,24 +9327,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendBoundsCalculateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** legendBoundsHeight - Height of the legend    legendBoundsWidth - Width of the legend.    legendBoundsRows - Number of rows to display the legend items
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendBoundsCalculateEventArgs {
     
@@ -9059,28 +9382,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendFont extends StObject {
     
     /** Font family for legend item text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend item text.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend item text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LegendFont {
     
@@ -9119,27 +9441,26 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendItemClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** startX - X-coordinate of legend item in pixel    startY - Y-coordinate of legend item in pixel    LegendItem - Instance of the legend item object that is about to be rendered
       * style - Options to customize the legend item styles such as border, color, size, etcâ€¦,    Bounds - Instance that holds information about legend bounds and legend item bounds.
       * symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering    series - Instance of the series object corresponding to the
       * legend item
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemClickEventArgs {
     
@@ -9178,27 +9499,26 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendItemMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** startX - X-coordinate of legend item in pixel    startY - Y-coordinate of legend item in pixel    LegendItem - Instance of the legend item object that is about to be rendered
       * style - Options to customize the legend item styles such as border, color, size, etcâ€¦,    Bounds - Instance that holds information about legend bounds and legend item bounds.
       * symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering    series - Instance of the series object corresponding to the
       * legend item
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemMouseMoveEventArgs {
     
@@ -9237,26 +9557,25 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendItemRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** startX - X-coordinate of legend item in pixel    startY - Y-coordinate of legend item in pixel    legendItem - Instance of the legend item object that is about to be rendered
       * style - Options to customize the legend item styles such as border, color, size, etc.    symbolShape - Name of the legend item shape. Use this option to customize legend item
       * shape before rendering
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemRenderingEventArgs {
     
@@ -9295,22 +9614,21 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendItemStyle extends StObject {
     
     /** Options for customizing the border of legend items.
       */
-    var border: js.UndefOr[LegendItemStyleBorder] = js.native
+    var border: js.UndefOr[LegendItemStyleBorder] = js.undefined
     
     /** Height of the shape in legend items.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the shape in legend items.
       * @Default {10}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendItemStyle {
     
@@ -9343,18 +9661,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendItemStyleBorder extends StObject {
     
     /** Border color of the legend items.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend items.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendItemStyleBorder {
     
@@ -9381,18 +9698,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendLocation extends StObject {
     
     /** X value or horizontal offset to position the legend in chart.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the legend.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object LegendLocation {
     
@@ -9419,18 +9735,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendSize extends StObject {
     
     /** Height of the legend. Height can be specified in either pixel or percentage.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the legend. Width can be specified in either pixel or percentage.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LegendSize {
     
@@ -9457,21 +9772,20 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendTitle extends StObject {
     
     /** Options to customize the font used for legend title
       */
-    var font: js.UndefOr[LegendTitleFont] = js.native
+    var font: js.UndefOr[LegendTitleFont] = js.undefined
     
     /** Text to be displayed in legend title.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the legend title.
       * @Default {center. See Alignment}
       */
-    var textAlignment: js.UndefOr[Alignment | String] = js.native
+    var textAlignment: js.UndefOr[Alignment | String] = js.undefined
   }
   object LegendTitle {
     
@@ -9504,28 +9818,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait LegendTitleFont extends StObject {
     
     /** Font family for the text in legend title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend title.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend title.
       * @Default {normal. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend title.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LegendTitleFont {
     
@@ -9564,20 +9877,19 @@ object Chart {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -9610,28 +9922,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait Margin extends StObject {
     
     /** Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
       * @Default {10}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
       * @Default {10}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
       * @Default {10}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
       * @Default {10}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Margin {
     
@@ -9670,357 +9981,356 @@ object Chart {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, after the chart is resized.
       */
-    var afterResize: js.UndefOr[js.Function1[/* e */ AfterResizeEventArgs, scala.Unit]] = js.native
+    var afterResize: js.UndefOr[js.Function1[/* e */ AfterResizeEventArgs, scala.Unit]] = js.undefined
     
     /** Fires after the series animation is completed. This event will be triggered for each series when animation is enabled.
       */
-    var animationComplete: js.UndefOr[js.Function1[/* e */ AnimationCompleteEventArgs, scala.Unit]] = js.native
+    var animationComplete: js.UndefOr[js.Function1[/* e */ AnimationCompleteEventArgs, scala.Unit]] = js.undefined
     
     /** Fires on clicking the annotation.
       */
-    var annotationClick: js.UndefOr[js.Function1[/* e */ AnnotationClickEventArgs, scala.Unit]] = js.native
+    var annotationClick: js.UndefOr[js.Function1[/* e */ AnnotationClickEventArgs, scala.Unit]] = js.undefined
     
     /** Options for adding and customizing annotations in Chart.
       */
-    var annotations: js.UndefOr[js.Array[Annotation]] = js.native
+    var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
     
     /** To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the seriesâ€™s
       * xAxisName property to link both axis and series.
       */
-    var axes: js.UndefOr[js.Array[Axis]] = js.native
+    var axes: js.UndefOr[js.Array[Axis]] = js.undefined
     
     /** Fires before rendering the labels. This event is fired for each label in axis. You can use this event to add custom text to axis labels.
       */
-    var axesLabelRendering: js.UndefOr[js.Function1[/* e */ AxesLabelRenderingEventArgs, scala.Unit]] = js.native
+    var axesLabelRendering: js.UndefOr[js.Function1[/* e */ AxesLabelRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires during the initialization of axis labels.
       */
-    var axesLabelsInitialize: js.UndefOr[js.Function1[/* e */ AxesLabelsInitializeEventArgs, scala.Unit]] = js.native
+    var axesLabelsInitialize: js.UndefOr[js.Function1[/* e */ AxesLabelsInitializeEventArgs, scala.Unit]] = js.undefined
     
     /** Fires during axes range calculation. This event is fired for each axis present in Chart. You can use this event to customize axis range as required.
       */
-    var axesRangeCalculate: js.UndefOr[js.Function1[/* e */ AxesRangeCalculateEventArgs, scala.Unit]] = js.native
+    var axesRangeCalculate: js.UndefOr[js.Function1[/* e */ AxesRangeCalculateEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering the axis title. This event is triggered for each axis with title. You can use this event to add custom text to axis title.
       */
-    var axesTitleRendering: js.UndefOr[js.Function1[/* e */ AxesTitleRenderingEventArgs, scala.Unit]] = js.native
+    var axesTitleRendering: js.UndefOr[js.Function1[/* e */ AxesTitleRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires, on clicking the axis label.
       */
-    var axisLabelClick: js.UndefOr[js.Function1[/* e */ AxisLabelClickEventArgs, scala.Unit]] = js.native
+    var axisLabelClick: js.UndefOr[js.Function1[/* e */ AxisLabelClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires on moving mouse over the axis label.
       */
-    var axisLabelMouseMove: js.UndefOr[js.Function1[/* e */ AxisLabelMouseMoveEventArgs, scala.Unit]] = js.native
+    var axisLabelMouseMove: js.UndefOr[js.Function1[/* e */ AxisLabelMouseMoveEventArgs, scala.Unit]] = js.undefined
     
     /** URL of the image to be used as chart background.
       * @Default {null}
       */
-    var backGroundImageUrl: js.UndefOr[String] = js.native
+    var backGroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Sets the background color of the  chart.
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Fires, when chart size is changing.
       */
-    var beforeResize: js.UndefOr[js.Function1[/* e */ BeforeResizeEventArgs, scala.Unit]] = js.native
+    var beforeResize: js.UndefOr[js.Function1[/* e */ BeforeResizeEventArgs, scala.Unit]] = js.undefined
     
     /** Options for customizing the color, opacity and width of the chart border.
       */
-    var border: js.UndefOr[Border] = js.native
+    var border: js.UndefOr[Border] = js.undefined
     
     /** Options for configuring the border and background of the plot area.
       */
-    var chartArea: js.UndefOr[ChartArea] = js.native
+    var chartArea: js.UndefOr[ChartArea] = js.undefined
     
     /** Fires during the calculation of chart area bounds. You can use this event to customize the bounds of chart area.
       */
-    var chartAreaBoundsCalculate: js.UndefOr[js.Function1[/* e */ ChartAreaBoundsCalculateEventArgs, scala.Unit]] = js.native
+    var chartAreaBoundsCalculate: js.UndefOr[js.Function1[/* e */ ChartAreaBoundsCalculateEventArgs, scala.Unit]] = js.undefined
     
     /** Fires, on the clicking the chart.
       */
-    var chartClick: js.UndefOr[js.Function1[/* e */ ChartClickEventArgs, scala.Unit]] = js.native
+    var chartClick: js.UndefOr[js.Function1[/* e */ ChartClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires, on double clicking the chart.
       */
-    var chartDoubleClick: js.UndefOr[js.Function1[/* e */ ChartDoubleClickEventArgs, scala.Unit]] = js.native
+    var chartDoubleClick: js.UndefOr[js.Function1[/* e */ ChartDoubleClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires when the mouse pointer leaves the chart
       */
-    var chartMouseLeave: js.UndefOr[js.Function1[/* e */ ChartMouseLeaveEventArgs, scala.Unit]] = js.native
+    var chartMouseLeave: js.UndefOr[js.Function1[/* e */ ChartMouseLeaveEventArgs, scala.Unit]] = js.undefined
     
     /** Fires on moving mouse over the chart.
       */
-    var chartMouseMove: js.UndefOr[js.Function1[/* e */ ChartMouseMoveEventArgs, scala.Unit]] = js.native
+    var chartMouseMove: js.UndefOr[js.Function1[/* e */ ChartMouseMoveEventArgs, scala.Unit]] = js.undefined
     
     /** Options to split Chart into multiple plotting areas vertically. Each object in the collection represents a plotting area in Chart.
       */
-    var columnDefinitions: js.UndefOr[js.Array[ColumnDefinition]] = js.native
+    var columnDefinitions: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
     
     /** Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
       */
-    var commonSeriesOptions: js.UndefOr[CommonSeriesOptions] = js.native
+    var commonSeriesOptions: js.UndefOr[CommonSeriesOptions] = js.undefined
     
     /** Fires after chart is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, scala.Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, scala.Unit]] = js.undefined
     
     /** Options for displaying and customizing the crosshair.
       */
-    var crosshair: js.UndefOr[Crosshair] = js.native
+    var crosshair: js.UndefOr[Crosshair] = js.undefined
     
     /** Depth of the 3D Chart from front view of series to background wall. This property is applicable only for 3D view.
       * @Default {100}
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /** Fires when chart is destroyed completely.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, scala.Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering the data labels. This event is triggered for each data label in the series. You can use this event to add custom text in data labels.
       */
-    var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, scala.Unit]] = js.native
+    var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires when the dragging is completed
       */
-    var dragEnd: js.UndefOr[js.Function1[/* e */ DragEndEventArgs, scala.Unit]] = js.native
+    var dragEnd: js.UndefOr[js.Function1[/* e */ DragEndEventArgs, scala.Unit]] = js.undefined
     
     /** Fires when the dragging is started
       */
-    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, scala.Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, scala.Unit]] = js.undefined
     
     /** Fires while  dragging
       */
-    var dragging: js.UndefOr[js.Function1[/* e */ DraggingEventArgs, scala.Unit]] = js.native
+    var dragging: js.UndefOr[js.Function1[/* e */ DraggingEventArgs, scala.Unit]] = js.undefined
     
     /** Controls whether 3D view has to be enabled or not. 3D view is supported only for column, bar. Stacking column, stacking bar, pie and doughnut series types.
       * @Default {false}
       */
-    var enable3D: js.UndefOr[Boolean] = js.native
+    var enable3D: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering supports all functionalities in SVG rendering except 3D Charts.
       * @Default {false}
       */
-    var enableCanvasRendering: js.UndefOr[Boolean] = js.native
+    var enableCanvasRendering: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether 3D view has to be rotated on dragging. This property is applicable only for 3D view.
       * @Default {false}
       */
-    var enableRotation: js.UndefOr[Boolean] = js.native
+    var enableRotation: js.UndefOr[Boolean] = js.undefined
     
     /** Fires, when error bar is rendering.
       */
-    var errorBarRendering: js.UndefOr[js.Function1[/* e */ ErrorBarRenderingEventArgs, scala.Unit]] = js.native
+    var errorBarRendering: js.UndefOr[js.Function1[/* e */ ErrorBarRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** This provides options for customizing export settings
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Options to customize the technical indicators.
       */
-    var indicators: js.UndefOr[js.Array[Indicator]] = js.native
+    var indicators: js.UndefOr[js.Array[Indicator]] = js.undefined
     
     /** Controls whether the series has to be rendered at initial loading of chart, this will be useful in scenarios where chart is placed at the bottom of the web page and we need to
       * render the series only when the chart is visible while scrolling to the top.
       * @Default {true}
       */
-    var initSeriesRender: js.UndefOr[Boolean] = js.native
+    var initSeriesRender: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Chart has to be responsive while resizing.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the legend items and legend title.
       */
-    var legend: js.UndefOr[Legend] = js.native
+    var legend: js.UndefOr[Legend] = js.undefined
     
     /** Fires during the calculation of legend bounds. You can use this event to customize the bounds of legend.
       */
-    var legendBoundsCalculate: js.UndefOr[js.Function1[/* e */ LegendBoundsCalculateEventArgs, scala.Unit]] = js.native
+    var legendBoundsCalculate: js.UndefOr[js.Function1[/* e */ LegendBoundsCalculateEventArgs, scala.Unit]] = js.undefined
     
     /** Fires on clicking the legend item.
       */
-    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, scala.Unit]] = js.native
+    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires when moving mouse over legend item. You can use this event for hit testing on legend items.
       */
-    var legendItemMouseMove: js.UndefOr[js.Function1[/* e */ LegendItemMouseMoveEventArgs, scala.Unit]] = js.native
+    var legendItemMouseMove: js.UndefOr[js.Function1[/* e */ LegendItemMouseMoveEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering the legend item. This event is fired for each legend item in Chart. You can use this event to customize legend item shape or add custom text to legend item.
       */
-    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, scala.Unit]] = js.native
+    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before loading the chart.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, scala.Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, scala.Unit]] = js.undefined
     
     /** Name of the culture based on which chart should be localized. Number and date time values are localized with respect to the culture name.String type properties like title text are
       * not localized automatically. Provide localized text as value to string type properties.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Options to customize the left, right, top and bottom margins of chart area.
       */
-    var margin: js.UndefOr[Margin] = js.native
+    var margin: js.UndefOr[Margin] = js.undefined
     
     /** Fires, on the clicking the Multi level labels of the chart .
       */
-    var multiLevelLabelClick: js.UndefOr[js.Function1[/* e */ MultiLevelLabelClickEventArgs, scala.Unit]] = js.native
+    var multiLevelLabelClick: js.UndefOr[js.Function1[/* e */ MultiLevelLabelClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires, when multi level labels are rendering.
       */
-    var multiLevelLabelRendering: js.UndefOr[js.Function1[/* e */ MultiLevelLabelRenderingEventArgs, scala.Unit]] = js.native
+    var multiLevelLabelRendering: js.UndefOr[js.Function1[/* e */ MultiLevelLabelRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Palette is used to store the series fill color in array and apply the color to series collection in the order of series index.
       * @Default {null}
       */
-    var palette: js.UndefOr[js.Array[_]] = js.native
+    var palette: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Perspective angle of the 3D view. Chart appears closer when perspective angle is decreased, and distant when perspective angle is increased.This property is applicable only when
       * 3D view is enabled
       * @Default {90}
       */
-    var perspectiveAngle: js.UndefOr[Double] = js.native
+    var perspectiveAngle: js.UndefOr[Double] = js.undefined
     
     /** Fires on clicking a point in chart. You can use this event to handle clicks made on points.
       */
-    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, scala.Unit]] = js.native
+    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires when mouse is moved over a point.
       */
-    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, scala.Unit]] = js.native
+    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering chart.
       */
-    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, scala.Unit]] = js.native
+    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, scala.Unit]] = js.undefined
     
     /** This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create
       * an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the seriesâ€™s xAxisName property to link both axis and series.
       */
-    var primaryXAxis: js.UndefOr[PrimaryXAxis] = js.native
+    var primaryXAxis: js.UndefOr[PrimaryXAxis] = js.undefined
     
     /** This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an
       * axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the seriesâ€™s yAxisName property to link both axis and series.
       */
-    var primaryYAxis: js.UndefOr[PrimaryYAxis] = js.native
+    var primaryYAxis: js.UndefOr[PrimaryYAxis] = js.undefined
     
     /** Fires after selected the data in chart.
       */
-    var rangeSelected: js.UndefOr[js.Function1[/* e */ RangeSelectedEventArgs, scala.Unit]] = js.native
+    var rangeSelected: js.UndefOr[js.Function1[/* e */ RangeSelectedEventArgs, scala.Unit]] = js.undefined
     
     /** Rotation angle of the 3D view. This property is applicable only when 3D view is enabled.
       * @Default {0}
       */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /** Options to split Chart into multiple plotting areas horizontally. Each object in the collection represents a plotting area in Chart.
       */
-    var rowDefinitions: js.UndefOr[js.Array[RowDefinition]] = js.native
+    var rowDefinitions: js.UndefOr[js.Array[RowDefinition]] = js.undefined
     
     /** Trigger, after the scrollbar position is changed.
       */
-    var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, scala.Unit]] = js.native
+    var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, scala.Unit]] = js.undefined
     
     /** Event triggered when scroll end
       */
-    var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, scala.Unit]] = js.native
+    var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, scala.Unit]] = js.undefined
     
     /** Event triggered when scroll starts
       */
-    var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, scala.Unit]] = js.native
+    var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, scala.Unit]] = js.undefined
     
     /** Options for displaying the chart along with selected points while loading
       * @Default {[ ]}
       */
-    var selectedDataPointIndexes: js.UndefOr[js.Array[_]] = js.native
+    var selectedDataPointIndexes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the properties used for customizing the series.
       */
-    var series: js.UndefOr[js.Array[Series]] = js.native
+    var series: js.UndefOr[js.Array[Series]] = js.undefined
     
     /** Fires after selecting a series. This event is triggered after selecting a series only if selection mode is series.
       */
-    var seriesRegionClick: js.UndefOr[js.Function1[/* e */ SeriesRegionClickEventArgs, scala.Unit]] = js.native
+    var seriesRegionClick: js.UndefOr[js.Function1[/* e */ SeriesRegionClickEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering a series. This event is fired for each series in Chart.
       */
-    var seriesRendering: js.UndefOr[js.Function1[/* e */ SeriesRenderingEventArgs, scala.Unit]] = js.native
+    var seriesRendering: js.UndefOr[js.Function1[/* e */ SeriesRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Controls whether data points has to be displayed side by side or along the depth of the axis.
       * @Default {false}
       */
-    var sideBySideSeriesPlacement: js.UndefOr[Boolean] = js.native
+    var sideBySideSeriesPlacement: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the Chart size.
       */
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
     /** Fires when the sub Title of the chart is rendered
       */
-    var subTitleRendering: js.UndefOr[js.Function1[/* e */ SubTitleRenderingEventArgs, scala.Unit]] = js.native
+    var subTitleRendering: js.UndefOr[js.Function1[/* e */ SubTitleRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering the marker symbols. This event is triggered for each marker in Chart.
       */
-    var symbolRendering: js.UndefOr[js.Function1[/* e */ SymbolRenderingEventArgs, scala.Unit]] = js.native
+    var symbolRendering: js.UndefOr[js.Function1[/* e */ SymbolRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Specifies the theme for Chart.
       * @Default {Flatlight. See Theme}
       */
-    var theme: js.UndefOr[Theme | String] = js.native
+    var theme: js.UndefOr[Theme | String] = js.undefined
     
     /** Slope angle of 3D Chart. This property is applicable only when 3D view is enabled.
       * @Default {0}
       */
-    var tilt: js.UndefOr[Double] = js.native
+    var tilt: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the title and subtitle of Chart.
       */
-    var title: js.UndefOr[Title] = js.native
+    var title: js.UndefOr[Title] = js.undefined
     
     /** Fires before rendering the Chart title. You can use this event to add custom text in Chart title.
       */
-    var titleRendering: js.UndefOr[js.Function1[/* e */ TitleRenderingEventArgs, scala.Unit]] = js.native
+    var titleRendering: js.UndefOr[js.Function1[/* e */ TitleRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering the tooltip. This event is fired when tooltip is enabled and mouse is hovered on a Chart point. You can use this event to customize tooltip before rendering.
       */
-    var toolTipInitialize: js.UndefOr[js.Function1[/* e */ ToolTipInitializeEventArgs, scala.Unit]] = js.native
+    var toolTipInitialize: js.UndefOr[js.Function1[/* e */ ToolTipInitializeEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering crosshair tooltip in axis. This event is fired for each axis with crosshair label enabled. You can use this event to customize crosshair label before
       * rendering
       */
-    var trackAxisToolTip: js.UndefOr[js.Function1[/* e */ TrackAxisToolTipEventArgs, scala.Unit]] = js.native
+    var trackAxisToolTip: js.UndefOr[js.Function1[/* e */ TrackAxisToolTipEventArgs, scala.Unit]] = js.undefined
     
     /** Fires before rendering trackball tooltip. This event is fired for each series in Chart because trackball tooltip is displayed for all the series. You can use this event to
       * customize the text displayed in trackball tooltip.
       */
-    var trackToolTip: js.UndefOr[js.Function1[/* e */ TrackToolTipEventArgs, scala.Unit]] = js.native
+    var trackToolTip: js.UndefOr[js.Function1[/* e */ TrackToolTipEventArgs, scala.Unit]] = js.undefined
     
     /** Fires, when trendlines are rendering.
       */
-    var trendlineRendering: js.UndefOr[js.Function1[/* e */ TrendlineRenderingEventArgs, scala.Unit]] = js.native
+    var trendlineRendering: js.UndefOr[js.Function1[/* e */ TrendlineRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Width of the wall used in 3D Chart. Wall is present only in Cartesian type 3D series and not in 3D pie or Doughnut series. This property is applicable only when 3D view is enabled.
       * @Default {2}
       */
-    var wallSize: js.UndefOr[Double] = js.native
+    var wallSize: js.UndefOr[Double] = js.undefined
     
     /** Fires while performing rectangle zooming in chart.
       */
-    var zoomed: js.UndefOr[js.Function1[/* e */ ZoomedEventArgs, scala.Unit]] = js.native
+    var zoomed: js.UndefOr[js.Function1[/* e */ ZoomedEventArgs, scala.Unit]] = js.undefined
     
     /** Options for enabling zooming feature of chart.
       */
-    var zooming: js.UndefOr[Zooming] = js.native
+    var zooming: js.UndefOr[Zooming] = js.undefined
   }
   object Model {
     
@@ -10340,7 +10650,7 @@ object Chart {
       def setMultiLevelLabelRenderingUndefined: Self = StObject.set(x, "multiLevelLabelRendering", js.undefined)
       
       @scala.inline
-      def setPalette(value: js.Array[_]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
@@ -10424,7 +10734,7 @@ object Chart {
       def setScrollStartUndefined: Self = StObject.set(x, "scrollStart", js.undefined)
       
       @scala.inline
-      def setSelectedDataPointIndexes(value: js.Array[_]): Self = StObject.set(x, "selectedDataPointIndexes", value.asInstanceOf[js.Any])
+      def setSelectedDataPointIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedDataPointIndexes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedDataPointIndexesUndefined: Self = StObject.set(x, "selectedDataPointIndexes", js.undefined)
@@ -10545,24 +10855,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait MultiLevelLabelClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to chart area.    axis - axis of the multi level labels.    multiLevelLabel - Multi level label details
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MultiLevelLabelClickEventArgs {
     
@@ -10601,24 +10910,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait MultiLevelLabelRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** MultiLevelLabels - MultiLevel Label Object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MultiLevelLabelRenderingEventArgs {
     
@@ -10657,25 +10965,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait PointRegionClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** locationX - X-coordinate of point in pixel    locationY - Y-coordinate of point in pixel    seriesIndex - Index of the series in series collection to which the point belongs
       * pointIndex - Index of the point in series
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionClickEventArgs {
     
@@ -10714,25 +11021,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait PointRegionMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** locationX - X-coordinate of point in pixel    locationY - Y-coordinate of point in pixel    seriesIndex - Index of the series in series collection to which the point belongs
       * pointIndex - Index of the point in series
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionMouseMoveEventArgs {
     
@@ -10771,20 +11077,19 @@ object Chart {
     }
   }
   
-  @js.native
   trait PreRenderEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PreRenderEventArgs {
     
@@ -10817,233 +11122,232 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxis extends StObject {
     
     /** Specifies the position of the axis labels.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[LabelAlignment | String] = js.native
+    var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
     /** Options for customizing horizontal axis alternate grid band.
       */
-    var alternateGridBand: js.UndefOr[PrimaryXAxisAlternateGridBand] = js.native
+    var alternateGridBand: js.UndefOr[PrimaryXAxisAlternateGridBand] = js.undefined
     
     /** Options for customizing the axis line.
       */
-    var axisLine: js.UndefOr[PrimaryXAxisAxisLine] = js.native
+    var axisLine: js.UndefOr[PrimaryXAxisAxisLine] = js.undefined
     
     /** Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
       * @Default {null}
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of columns or plot areas an axis has to span horizontally.
       * @Default {null}
       */
-    var columnSpan: js.UndefOr[Double] = js.native
+    var columnSpan: js.UndefOr[Double] = js.undefined
     
     /** Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum
       * value of crossing axis, then axis will be placed at the opposite side.
       * @Default {null}
       */
-    var crossesAt: js.UndefOr[Double] = js.native
+    var crossesAt: js.UndefOr[Double] = js.undefined
     
     /** Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X
       * axis or primary Y axis will be used for crossing
       * @Default {null}
       */
-    var crossesInAxis: js.UndefOr[String] = js.native
+    var crossesInAxis: js.UndefOr[String] = js.undefined
     
     /** Options to customize the crosshair label.
       */
-    var crosshairLabel: js.UndefOr[PrimaryXAxisCrosshairLabel] = js.native
+    var crosshairLabel: js.UndefOr[PrimaryXAxisCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
       * @Default {null}
       */
-    var desiredIntervals: js.UndefOr[Double] = js.native
+    var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
       * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
-    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.native
+    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
       * @Default {true}
       */
-    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.native
+    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the font of the axis Labels.
       */
-    var font: js.UndefOr[PrimaryXAxisFont] = js.native
+    var font: js.UndefOr[PrimaryXAxisFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
       * @Default {null. See IntervalType}
       */
-    var intervalType: js.UndefOr[IntervalType | String] = js.native
+    var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting â€˜isIndexedâ€™ property to true.
       * @Default {false}
       */
-    var isIndexed: js.UndefOr[Boolean] = js.native
+    var isIndexed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to inverse the axis.
       * @Default {false}
       */
-    var isInversed: js.UndefOr[Boolean] = js.native
+    var isInversed: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the border of the labels.
       */
-    var labelBorder: js.UndefOr[PrimaryXAxisLabelBorder] = js.native
+    var labelBorder: js.UndefOr[PrimaryXAxisLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
       * @Default {null}
       */
-    var labelFormat: js.UndefOr[String] = js.native
+    var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
       * @Default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
       */
-    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.native
+    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
       * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
-    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.native
+    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
       * @Default {outside. See LabelPosition}
       */
-    var labelPosition: js.UndefOr[LabelPosition | String] = js.native
+    var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Angle in degrees to rotate the axis labels.
       * @Default {null}
       */
-    var labelRotation: js.UndefOr[Double] = js.native
+    var labelRotation: js.UndefOr[Double] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
       * @Default {10}
       */
-    var logBase: js.UndefOr[Double] = js.native
+    var logBase: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing major gird lines.
       */
-    var majorGridLines: js.UndefOr[PrimaryXAxisMajorGridLines] = js.native
+    var majorGridLines: js.UndefOr[PrimaryXAxisMajorGridLines] = js.undefined
     
     /** Options for customizing the major tick lines.
       */
-    var majorTickLines: js.UndefOr[PrimaryXAxisMajorTickLines] = js.native
+    var majorTickLines: js.UndefOr[PrimaryXAxisMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
       * @Default {34}
       */
-    var maximumLabelWidth: js.UndefOr[Double] = js.native
+    var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
       * @Default {3}
       */
-    var maximumLabels: js.UndefOr[Double] = js.native
+    var maximumLabels: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the minor grid lines.
       */
-    var minorGridLines: js.UndefOr[PrimaryXAxisMinorGridLines] = js.native
+    var minorGridLines: js.UndefOr[PrimaryXAxisMinorGridLines] = js.undefined
     
     /** Options for customizing the minor tick lines.
       */
-    var minorTickLines: js.UndefOr[PrimaryXAxisMinorTickLines] = js.native
+    var minorTickLines: js.UndefOr[PrimaryXAxisMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
       * @Default {null}
       */
-    var minorTicksPerInterval: js.UndefOr[Double] = js.native
+    var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
       * @Default {[ ]}
       */
-    var multiLevelLabels: js.UndefOr[js.Array[PrimaryXAxisMultiLevelLabel]] = js.native
+    var multiLevelLabels: js.UndefOr[js.Array[PrimaryXAxisMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
       * @Default {false}
       */
-    var opposedPosition: js.UndefOr[Boolean] = js.native
+    var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line
       * @Default {Horizontal}
       */
-    var orientation: js.UndefOr[AxisOrientation | String] = js.native
+    var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
       * @Default {10}
       */
-    var plotOffset: js.UndefOr[Double] = js.native
+    var plotOffset: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range of the axis.
       */
-    var range: js.UndefOr[PrimaryXAxisRange] = js.native
+    var range: js.UndefOr[PrimaryXAxisRange] = js.undefined
     
     /** Specifies the padding for the axis range.
       * @Default {None. See RangePadding}
       */
-    var rangePadding: js.UndefOr[RangePadding | String] = js.native
+    var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
       * @Default {null}
       */
-    var roundingPlaces: js.UndefOr[Double] = js.native
+    var roundingPlaces: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the axis scrollbar
       */
-    var scrollbarSettings: js.UndefOr[PrimaryXAxisScrollbarSettings] = js.native
+    var scrollbarSettings: js.UndefOr[PrimaryXAxisScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
       * @Default {true}
       */
-    var showNextToAxisLine: js.UndefOr[Boolean] = js.native
+    var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
       * @Default {[ ]}
       */
-    var stripLine: js.UndefOr[js.Array[PrimaryXAxisStripLine]] = js.native
+    var stripLine: js.UndefOr[js.Array[PrimaryXAxisStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
       * @Default {outside. See TickLinesPosition}
       */
-    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.native
+    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
     /** Options for customizing the axis title.
       */
-    var title: js.UndefOr[PrimaryXAxisTitle] = js.native
+    var title: js.UndefOr[PrimaryXAxisTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
       * @Default {null. See ValueType}
       */
-    var valueType: js.UndefOr[ValueType | String] = js.native
+    var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
       * @Default {1}
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1.
       * @Default {0}
       */
-    var zoomPosition: js.UndefOr[Double] = js.native
+    var zoomPosition: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxis {
     
@@ -11346,16 +11650,15 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisAlternateGridBand extends StObject {
     
     /** Options for customizing even grid band.
       */
-    var even: js.UndefOr[PrimaryXAxisAlternateGridBandEven] = js.native
+    var even: js.UndefOr[PrimaryXAxisAlternateGridBandEven] = js.undefined
     
     /** Options for customizing odd grid band.
       */
-    var odd: js.UndefOr[PrimaryXAxisAlternateGridBandOdd] = js.native
+    var odd: js.UndefOr[PrimaryXAxisAlternateGridBandOdd] = js.undefined
   }
   object PrimaryXAxisAlternateGridBand {
     
@@ -11382,18 +11685,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisAlternateGridBandEven {
     
@@ -11420,18 +11722,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisAlternateGridBandOdd {
     
@@ -11458,32 +11759,31 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisAxisLine extends StObject {
     
     /** Default Value
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
       * @Default {null}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisAxisLine {
     
@@ -11528,13 +11828,12 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryXAxisCrosshairLabel {
     
@@ -11555,33 +11854,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisFont extends StObject {
     
     /** Font family of labels.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
       * @Default {13px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryXAxisFont {
     
@@ -11626,18 +11924,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisLabelBorder {
     
@@ -11664,33 +11961,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMajorGridLines extends StObject {
     
     /** Color of the major grid line.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisMajorGridLines {
     
@@ -11735,23 +12031,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisMajorTickLines {
     
@@ -11784,23 +12079,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisMinorGridLines {
     
@@ -11833,23 +12127,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisMinorTickLines {
     
@@ -11882,55 +12175,54 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMultiLevelLabel extends StObject {
     
     /** Options for customizing the border of the series.
       */
-    var border: js.UndefOr[PrimaryXAxisMultiLevelLabelsBorder] = js.native
+    var border: js.UndefOr[PrimaryXAxisMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
       * @Default {null}
       */
-    var end: js.UndefOr[js.Any] = js.native
+    var end: js.UndefOr[js.Any] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[PrimaryXAxisMultiLevelLabelsFont] = js.native
+    var font: js.UndefOr[PrimaryXAxisMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
       * @Default {0}
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
       * @Default {null}
       */
-    var maximumTextWidth: js.UndefOr[Double] = js.native
+    var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
       * @Default {null}
       */
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
     
     /** Text of the multi level labels.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
       * @Default {center. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
       * @Default {center. See TextOverflow}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryXAxisMultiLevelLabel {
     
@@ -12005,23 +12297,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
       * @Default {rectangle. See Type}
       */
-    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.native
+    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisMultiLevelLabelsBorder {
     
@@ -12054,38 +12345,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryXAxisMultiLevelLabelsFont {
     
@@ -12136,23 +12426,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisRange extends StObject {
     
     /** Interval of the axis range.
       * @Default {null}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisRange {
     
@@ -12185,27 +12474,26 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
       * @Default {false}
       */
-    var canResize: js.UndefOr[Boolean] = js.native
+    var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
       * @Default {null}
       */
-    var pointsLength: js.UndefOr[Double] = js.native
+    var pointsLength: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range for the scrollbar in the axis.
       */
-    var range: js.UndefOr[PrimaryXAxisScrollbarSettingsRange] = js.native
+    var range: js.UndefOr[PrimaryXAxisScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enables or disables the scroll bar.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryXAxisScrollbarSettings {
     
@@ -12244,18 +12532,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object PrimaryXAxisScrollbarSettingsRange {
     
@@ -12282,63 +12569,62 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisStripLine extends StObject {
     
     /** Border color of the strip line.
       * @Default {gray}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
       * @Default {gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
       * @Default {null}
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[PrimaryXAxisStripLineFont] = js.native
+    var font: js.UndefOr[PrimaryXAxisStripLineFont] = js.undefined
     
     /** Start value of the strip line.
       * @Default {null}
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
       * @Default {false}
       */
-    var startFromAxis: js.UndefOr[Boolean] = js.native
+    var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
       * @Default {stripLine}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
       * @Default {middlecenter. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order where the strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered under the series and when it is â€œoverâ€, it is
       * rendered above the series.
       * @Default {over. See ZIndex}
       */
-    var zIndex: js.UndefOr[ZIndex | String] = js.native
+    var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
   object PrimaryXAxisStripLine {
     
@@ -12419,38 +12705,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisStripLineFont extends StObject {
     
     /** Font color of the strip line text.
       * @Default {black}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryXAxisStripLineFont {
     
@@ -12501,46 +12786,45 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisTitle extends StObject {
     
     /** Specifies the position of the axis title.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[TextAlignment | String] = js.native
+    var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the title font.
       */
-    var font: js.UndefOr[PrimaryXAxisTitleFont] = js.native
+    var font: js.UndefOr[PrimaryXAxisTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
       * @Default {34}
       */
-    var maximumTitleWidth: js.UndefOr[Double] = js.native
+    var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
       * @Default {0}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
       * @Default {outside. See Position}
       */
-    var position: js.UndefOr[LabelPosition | String] = js.native
+    var position: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Title for the axis.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryXAxisTitle {
     
@@ -12603,33 +12887,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryXAxisTitleFont extends StObject {
     
     /** Font family of the title text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
       * @Default {16px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryXAxisTitleFont {
     
@@ -12674,223 +12957,222 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxis extends StObject {
     
     /** Specifies the position of the axis labels.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[LabelAlignment | String] = js.native
+    var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
     /** Options for customizing vertical axis alternate grid band.
       */
-    var alternateGridBand: js.UndefOr[PrimaryYAxisAlternateGridBand] = js.native
+    var alternateGridBand: js.UndefOr[PrimaryYAxisAlternateGridBand] = js.undefined
     
     /** Options for customizing the axis line.
       */
-    var axisLine: js.UndefOr[PrimaryYAxisAxisLine] = js.native
+    var axisLine: js.UndefOr[PrimaryYAxisAxisLine] = js.undefined
     
     /** Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum
       * value of crossing axis, then axis will be placed at the opposite side.
       * @Default {null}
       */
-    var crossesAt: js.UndefOr[Double] = js.native
+    var crossesAt: js.UndefOr[Double] = js.undefined
     
     /** Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X
       * axis or primary Y axis will be used for crossing
       * @Default {null}
       */
-    var crossesInAxis: js.UndefOr[String] = js.native
+    var crossesInAxis: js.UndefOr[String] = js.undefined
     
     /** Options to customize the crosshair label.
       */
-    var crosshairLabel: js.UndefOr[PrimaryYAxisCrosshairLabel] = js.native
+    var crosshairLabel: js.UndefOr[PrimaryYAxisCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
       * @Default {null}
       */
-    var desiredIntervals: js.UndefOr[Double] = js.native
+    var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
       * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
-    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.native
+    var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
       * @Default {true}
       */
-    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.native
+    var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the font of the axis Labels.
       */
-    var font: js.UndefOr[PrimaryYAxisFont] = js.native
+    var font: js.UndefOr[PrimaryYAxisFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
       * @Default {null. See IntervalType}
       */
-    var intervalType: js.UndefOr[IntervalType | String] = js.native
+    var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Specifies whether to inverse the axis.
       * @Default {false}
       */
-    var isInversed: js.UndefOr[Boolean] = js.native
+    var isInversed: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the border of the labels.
       */
-    var labelBorder: js.UndefOr[PrimaryYAxisLabelBorder] = js.native
+    var labelBorder: js.UndefOr[PrimaryYAxisLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
       * @Default {null}
       */
-    var labelFormat: js.UndefOr[String] = js.native
+    var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
       * @Default {ej.datavisualization.Chart.LabelIntersectAction.None}
       */
-    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.native
+    var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
       * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
-    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.native
+    var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
       * @Default {outside. See LabelPosition}
       */
-    var labelPosition: js.UndefOr[LabelPosition | String] = js.native
+    var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
       * @Default {10}
       */
-    var logBase: js.UndefOr[Double] = js.native
+    var logBase: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing major gird lines.
       */
-    var majorGridLines: js.UndefOr[PrimaryYAxisMajorGridLines] = js.native
+    var majorGridLines: js.UndefOr[PrimaryYAxisMajorGridLines] = js.undefined
     
     /** Options for customizing the major tick lines.
       */
-    var majorTickLines: js.UndefOr[PrimaryYAxisMajorTickLines] = js.native
+    var majorTickLines: js.UndefOr[PrimaryYAxisMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
       * @Default {ej.datavisualization.Chart.maximumLabelWidth type {int}}
       */
-    var maximumLabelWidth: js.UndefOr[Double] = js.native
+    var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
       * @Default {3}
       */
-    var maximumLabels: js.UndefOr[Double] = js.native
+    var maximumLabels: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the minor grid lines.
       */
-    var minorGridLines: js.UndefOr[PrimaryYAxisMinorGridLines] = js.native
+    var minorGridLines: js.UndefOr[PrimaryYAxisMinorGridLines] = js.undefined
     
     /** Options for customizing the minor tick lines.
       */
-    var minorTickLines: js.UndefOr[PrimaryYAxisMinorTickLines] = js.native
+    var minorTickLines: js.UndefOr[PrimaryYAxisMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
       * @Default {null}
       */
-    var minorTicksPerInterval: js.UndefOr[Double] = js.native
+    var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
       * @Default {[ ]}
       */
-    var multiLevelLabels: js.UndefOr[js.Array[PrimaryYAxisMultiLevelLabel]] = js.native
+    var multiLevelLabels: js.UndefOr[js.Array[PrimaryYAxisMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
       * @Default {false}
       */
-    var opposedPosition: js.UndefOr[Boolean] = js.native
+    var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line in the chart.
       * @Default {Vertical}
       */
-    var orientation: js.UndefOr[AxisOrientation | String] = js.native
+    var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
       * @Default {10}
       */
-    var plotOffset: js.UndefOr[Double] = js.native
+    var plotOffset: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range of the axis.
       */
-    var range: js.UndefOr[PrimaryYAxisRange] = js.native
+    var range: js.UndefOr[PrimaryYAxisRange] = js.undefined
     
     /** Specifies the padding for the axis range.
       * @Default {ej.datavisualization.Chart.RangePadding.None. See RangePadding}
       */
-    var rangePadding: js.UndefOr[RangePadding | String] = js.native
+    var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
       * @Default {null}
       */
-    var roundingPlaces: js.UndefOr[Double] = js.native
+    var roundingPlaces: js.UndefOr[Double] = js.undefined
     
     /** Specifies the index of the row to which the axis is associated, when the chart area is divided into multiple plot areas by using rowDefinitions.
       * @Default {null}
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of row or plot areas an axis has to span vertically.
       * @Default {null}
       */
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the axis scrollbar.
       */
-    var scrollbarSettings: js.UndefOr[PrimaryYAxisScrollbarSettings] = js.native
+    var scrollbarSettings: js.UndefOr[PrimaryYAxisScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
       * @Default {true}
       */
-    var showNextToAxisLine: js.UndefOr[Boolean] = js.native
+    var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
       * @Default {[ ]}
       */
-    var stripLine: js.UndefOr[js.Array[PrimaryYAxisStripLine]] = js.native
+    var stripLine: js.UndefOr[js.Array[PrimaryYAxisStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
       * @Default {outside. See TickLinesPosition}
       */
-    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.native
+    var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
     /** Options for customizing the axis title.
       */
-    var title: js.UndefOr[PrimaryYAxisTitle] = js.native
+    var title: js.UndefOr[PrimaryYAxisTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
       * @Default {null. See ValueType}
       */
-    var valueType: js.UndefOr[ValueType | String] = js.native
+    var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
       * @Default {1}
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1
       * @Default {0}
       */
-    var zoomPosition: js.UndefOr[Double] = js.native
+    var zoomPosition: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxis {
     
@@ -13181,16 +13463,15 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisAlternateGridBand extends StObject {
     
     /** Options for customizing even grid band.
       */
-    var even: js.UndefOr[PrimaryYAxisAlternateGridBandEven] = js.native
+    var even: js.UndefOr[PrimaryYAxisAlternateGridBandEven] = js.undefined
     
     /** Options for customizing odd grid band.
       */
-    var odd: js.UndefOr[PrimaryYAxisAlternateGridBandOdd] = js.native
+    var odd: js.UndefOr[PrimaryYAxisAlternateGridBandOdd] = js.undefined
   }
   object PrimaryYAxisAlternateGridBand {
     
@@ -13217,18 +13498,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisAlternateGridBandEven {
     
@@ -13255,18 +13535,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands.
       * @Default {transparent}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisAlternateGridBandOdd {
     
@@ -13293,32 +13572,31 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisAxisLine extends StObject {
     
     /** Color of axis line.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
       * @Default {null}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisAxisLine {
     
@@ -13363,13 +13641,12 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryYAxisCrosshairLabel {
     
@@ -13390,33 +13667,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisFont extends StObject {
     
     /** Font family of labels.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
       * @Default {13px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryYAxisFont {
     
@@ -13461,18 +13737,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisLabelBorder {
     
@@ -13499,33 +13774,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMajorGridLines extends StObject {
     
     /** Color of the major grid lines.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisMajorGridLines {
     
@@ -13570,23 +13844,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisMajorTickLines {
     
@@ -13619,23 +13892,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisMinorGridLines {
     
@@ -13668,23 +13940,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisMinorTickLines {
     
@@ -13717,55 +13988,54 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMultiLevelLabel extends StObject {
     
     /** Options for customizing the border of the series.
       */
-    var border: js.UndefOr[PrimaryYAxisMultiLevelLabelsBorder] = js.native
+    var border: js.UndefOr[PrimaryYAxisMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
       * @Default {null}
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[PrimaryYAxisMultiLevelLabelsFont] = js.native
+    var font: js.UndefOr[PrimaryYAxisMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
       * @Default {0}
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
       * @Default {null}
       */
-    var maximumTextWidth: js.UndefOr[Double] = js.native
+    var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
       * @Default {null}
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** Text of the multi level labels.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
       * @Default {center. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
       * @Default {center. See TextOverflow}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryYAxisMultiLevelLabel {
     
@@ -13840,23 +14110,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
       * @Default {rectangle. See Type}
       */
-    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.native
+    var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisMultiLevelLabelsBorder {
     
@@ -13889,38 +14158,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryYAxisMultiLevelLabelsFont {
     
@@ -13971,23 +14239,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisRange extends StObject {
     
     /** Interval for the range.
       * @Default {null}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisRange {
     
@@ -14020,27 +14287,26 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
       * @Default {false}
       */
-    var canResize: js.UndefOr[Boolean] = js.native
+    var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
       * @Default {null}
       */
-    var pointsLength: js.UndefOr[Double] = js.native
+    var pointsLength: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the range for the scrollbar in the axis.
       */
-    var range: js.UndefOr[PrimaryYAxisScrollbarSettingsRange] = js.native
+    var range: js.UndefOr[PrimaryYAxisScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enable or disable the scrollbar.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryYAxisScrollbarSettings {
     
@@ -14079,18 +14345,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object PrimaryYAxisScrollbarSettingsRange {
     
@@ -14117,63 +14382,62 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisStripLine extends StObject {
     
     /** Border color of the strip line.
       * @Default {gray}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
       * @Default {gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
       * @Default {null}
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the font of the text.
       */
-    var font: js.UndefOr[PrimaryYAxisStripLineFont] = js.native
+    var font: js.UndefOr[PrimaryYAxisStripLineFont] = js.undefined
     
     /** Start value of the strip line.
       * @Default {null}
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property wonâ€™t work when start property is set.
       * @Default {false}
       */
-    var startFromAxis: js.UndefOr[Boolean] = js.native
+    var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
       * @Default {stripLine}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
       * @Default {middlecenter. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[TextAlignment | String] = js.native
+    var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order in which strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered below the series and when it is â€œoverâ€, it is
       * rendered above the series.
       * @Default {over. See ZIndex}
       */
-    var zIndex: js.UndefOr[ZIndex | String] = js.native
+    var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
   object PrimaryYAxisStripLine {
     
@@ -14254,38 +14518,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisStripLineFont extends StObject {
     
     /** Font color of the strip line text.
       * @Default {black}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
       * @Default {regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryYAxisStripLineFont {
     
@@ -14336,46 +14599,45 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisTitle extends StObject {
     
     /** Specifies the position of the axis title.
       * @Default {center. See Alignment}
       */
-    var alignment: js.UndefOr[TextAlignment | String] = js.native
+    var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
       * @Default {ej.datavisualization.Chart.enableTrim}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the title font.
       */
-    var font: js.UndefOr[PrimaryYAxisTitleFont] = js.native
+    var font: js.UndefOr[PrimaryYAxisTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
       * @Default {ej.datavisualization.Chart.maximumTitleWidth.null}
       */
-    var maximumTitleWidth: js.UndefOr[Double] = js.native
+    var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
       * @Default {0}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
       * @Default {outside. See Position}
       */
-    var position: js.UndefOr[LabelPosition | String] = js.native
+    var position: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Title for the axis.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryYAxisTitle {
     
@@ -14438,33 +14700,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait PrimaryYAxisTitleFont extends StObject {
     
     /** Font family of the title text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
       * @Default {ej.datavisualization.Chart.FontStyle.Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
       * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
       * @Default {16px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PrimaryYAxisTitleFont {
     
@@ -14509,24 +14770,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait RangeSelectedEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Selected data collection of object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RangeSelectedEventArgs {
     
@@ -14565,28 +14825,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait RowDefinition extends StObject {
     
     /** Color of the line that indicates the starting point of the row in plotting area.
       * @Default {transparent}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Width of the line that indicates the starting point of the row in plot area.
       * @Default {1}
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Height of the row in plotting area. Height is measured in either pixel or percentage based on the value of unit property.
       * @Default {50}
       */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the unit to measure the height of the row in plotting area.
       * @Default {'pixel'. See Unit}
       */
-    var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.native
+    var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.undefined
   }
   object RowDefinition {
     
@@ -14625,25 +14884,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ScrollChangedEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** oldRange - returns the scrollbar position old start and end range value on change end of scrollbar    newRange - returns the scrollbar position new start and end range value
       * on change end of scrollbar
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollChangedEventArgs {
     
@@ -14682,25 +14940,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ScrollEndEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** oldRange - returns the scrollbar position old start and end range value on change end of scrollbar    newRange - returns the scrollbar position new start and end range value
       * on change end of scrollbar
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollEndEventArgs {
     
@@ -14739,24 +14996,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait ScrollStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** startRange - returns the scrollbar position starting range value on changing scrollbar    endRange - returns the scrollbar position end range value on changing scrollbar
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollStartEventArgs {
     
@@ -14795,360 +15051,359 @@ object Chart {
     }
   }
   
-  @js.native
   trait Series extends StObject {
     
     /** Specifies animation duration for series rendering.
       * @Default {null}
       */
-    var animationDuration: js.UndefOr[String] = js.native
+    var animationDuration: js.UndefOr[String] = js.undefined
     
     /** Color of the point, where the close is up in financial chart.
       * @Default {null}
       */
-    var bearFillColor: js.UndefOr[String] = js.native
+    var bearFillColor: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the border of the series.
       */
-    var border: js.UndefOr[SeriesBorder] = js.native
+    var border: js.UndefOr[SeriesBorder] = js.undefined
     
     /** Quartile calculation has been performed in three different formulas to render the boxplot series .
       * @Default {exclusive.See BoxPlotMode}
       */
-    var boxPlotMode: js.UndefOr[LabelPosition | String] = js.native
+    var boxPlotMode: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Options for customizing the bubble options of the Bubble series
       */
-    var bubbleOptions: js.UndefOr[SeriesBubbleOptions] = js.native
+    var bubbleOptions: js.UndefOr[SeriesBubbleOptions] = js.undefined
     
     /** Color of the point, where the close is down in financial chart.
       * @Default {null}
       */
-    var bullFillColor: js.UndefOr[String] = js.native
+    var bullFillColor: js.UndefOr[String] = js.undefined
     
     /** Specifies spline tension values for cardinal spline type.Value ranges from 0 to 1.
       * @Default {0.5}
       */
-    var cardinalSplineTension: js.UndefOr[Double] = js.native
+    var cardinalSplineTension: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains close value for the series.
       * @Default {null}
       */
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
     /** To render the column and bar type series in rectangle/cylinder shape. See ColumnFacet
       * @Default {rectangle}
       */
-    var columnFacet: js.UndefOr[ColumnFacet | String] = js.native
+    var columnFacet: js.UndefOr[ColumnFacet | String] = js.undefined
     
     /** Spacing between columns of different series. Value ranges from 0 to 1
       * @Default {0}
       */
-    var columnSpacing: js.UndefOr[Double] = js.native
+    var columnSpacing: js.UndefOr[Double] = js.undefined
     
     /** Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon columnSpacing property.
       * @Default {0.7}
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the waterfall connector line.
       */
-    var connectorLine: js.UndefOr[SeriesConnectorLine] = js.native
+    var connectorLine: js.UndefOr[SeriesConnectorLine] = js.undefined
     
     /** Options for customizing the corner radius. cornerRadius property also takes the numeric input and applies it for all the four corners of the column.
       */
-    var cornerRadius: js.UndefOr[SeriesCornerRadius] = js.native
+    var cornerRadius: js.UndefOr[SeriesCornerRadius] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the line type series.
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
       * @Default {0.4}
       */
-    var doughnutCoefficient: js.UndefOr[Double] = js.native
+    var doughnutCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the doughnut series. Value ranges from 0 to 1.
       * @Default {0.8}
       */
-    var doughnutSize: js.UndefOr[Double] = js.native
+    var doughnutSize: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the drag and drop in series.
       */
-    var dragSettings: js.UndefOr[SeriesDragSettings] = js.native
+    var dragSettings: js.UndefOr[SeriesDragSettings] = js.undefined
     
     /** Type of series to be drawn in radar or polar series.
       * @Default {line. See DrawType}
       */
-    var drawType: js.UndefOr[DrawType | String] = js.native
+    var drawType: js.UndefOr[DrawType | String] = js.undefined
     
     /** Options for customizing the empty point in the series.
       */
-    var emptyPointSettings: js.UndefOr[SeriesEmptyPointSettings] = js.native
+    var emptyPointSettings: js.UndefOr[SeriesEmptyPointSettings] = js.undefined
     
     /** Enable/disable the animation of series.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** To avoid overlapping of data labels smartly.
       * @Default {null}
       */
-    var enableSmartLabels: js.UndefOr[Double] = js.native
+    var enableSmartLabels: js.UndefOr[Double] = js.undefined
     
     /** End angle of pie/doughnut series. For a complete circle, it has to be 360, by default.
       * @Default {null}
       */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the error bar in series.
       */
-    var errorBar: js.UndefOr[SeriesErrorBar] = js.native
+    var errorBar: js.UndefOr[SeriesErrorBar] = js.undefined
     
     /** Explodes the pie/doughnut slices on mouse move.
       * @Default {false}
       */
-    var explode: js.UndefOr[Boolean] = js.native
+    var explode: js.UndefOr[Boolean] = js.undefined
     
     /** Explodes all the slice of pie/doughnut on render.
       * @Default {null}
       */
-    var explodeAll: js.UndefOr[Boolean] = js.native
+    var explodeAll: js.UndefOr[Boolean] = js.undefined
     
     /** Index of the point to be exploded from pie/doughnut/pyramid/funnel.
       * @Default {null}
       */
-    var explodeIndex: js.UndefOr[Double] = js.native
+    var explodeIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance of the slice from the center, when it is exploded.
       * @Default {25}
       */
-    var explodeOffset: js.UndefOr[Double] = js.native
+    var explodeOffset: js.UndefOr[Double] = js.undefined
     
     /** Fill color of the series.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the series font.
       */
-    var font: js.UndefOr[SeriesFont] = js.native
+    var font: js.UndefOr[SeriesFont] = js.undefined
     
     /** Specifies the height of the funnel in funnel series. Values can be in both pixel and percentage.
       * @Default {32.7%}
       */
-    var funnelHeight: js.UndefOr[String] = js.native
+    var funnelHeight: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the funnel in funnel series. Values can be in both pixel and percentage.
       * @Default {11.6%}
       */
-    var funnelWidth: js.UndefOr[String] = js.native
+    var funnelWidth: js.UndefOr[String] = js.undefined
     
     /** Gap between the slices of pyramid/funnel series.
       * @Default {0}
       */
-    var gapRatio: js.UndefOr[Double] = js.native
+    var gapRatio: js.UndefOr[Double] = js.undefined
     
     /** Distance between the two pie's in pieOfPie series.
       * @Default {50}
       */
-    var gapWidth: js.UndefOr[Double] = js.native
+    var gapWidth: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains high value for the series.
       * @Default {null}
       */
-    var high: js.UndefOr[String] = js.native
+    var high: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the appearance of the series or data point while highlighting.
       */
-    var highlightSettings: js.UndefOr[SeriesHighlightSettings] = js.native
+    var highlightSettings: js.UndefOr[SeriesHighlightSettings] = js.undefined
     
     /** Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
       * @Default {true}
       */
-    var isClosed: js.UndefOr[Boolean] = js.native
+    var isClosed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to stack the column series in polar/radar charts.
       * @Default {true}
       */
-    var isStacking: js.UndefOr[Boolean] = js.native
+    var isStacking: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the chart vertically. This is applicable only for Cartesian type series.
       * @Default {false}
       */
-    var isTransposed: js.UndefOr[Boolean] = js.native
+    var isTransposed: js.UndefOr[Boolean] = js.undefined
     
     /** Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
       * @Default {inside. See LabelPosition}
       */
-    var labelPosition: js.UndefOr[LabelPosition | String] = js.native
+    var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Specifies the line cap of the series.
       * @Default {Butt. See LineCap}
       */
-    var lineCap: js.UndefOr[LineCap | String] = js.native
+    var lineCap: js.UndefOr[LineCap | String] = js.undefined
     
     /** Specifies the type of shape to be used where two lines meet.
       * @Default {Round. See LineJoin}
       */
-    var lineJoin: js.UndefOr[LineJoin | String] = js.native
+    var lineJoin: js.UndefOr[LineJoin | String] = js.undefined
     
     /** Name of the property in the datasource that contains low value for the series.
       * @Default {null}
       */
-    var low: js.UndefOr[String] = js.native
+    var low: js.UndefOr[String] = js.undefined
     
     /** Options for displaying and customizing marker for individual point in a series. Marker contains shapes and/or data labels.
       */
-    var marker: js.UndefOr[SeriesMarker] = js.native
+    var marker: js.UndefOr[SeriesMarker] = js.undefined
     
     /** Name of the series, that is to be displayed in the legend.
       * @Default {Add a comment to this line}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the series.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains open value for the series.
       * @Default {null}
       */
-    var open: js.UndefOr[String] = js.native
+    var open: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the outlier of individual series.
       */
-    var outlierSettings: js.UndefOr[SeriesOutlierSettings] = js.native
+    var outlierSettings: js.UndefOr[SeriesOutlierSettings] = js.undefined
     
     /** Name of a field in data source where fill color for all the data points is generated.
       */
-    var palette: js.UndefOr[String] = js.native
+    var palette: js.UndefOr[String] = js.undefined
     
     /** Controls the size of pie series. Value ranges from 0 to 1.
       * @Default {0.8}
       */
-    var pieCoefficient: js.UndefOr[Double] = js.native
+    var pieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
       * @Default {0.6}
       */
-    var pieOfPieCoefficient: js.UndefOr[Double] = js.native
+    var pieOfPieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains fill color for the series.
       * @Default {null}
       */
-    var pointColorMappingName: js.UndefOr[String] = js.native
+    var pointColorMappingName: js.UndefOr[String] = js.undefined
     
     /** Option to add data points; each point should have x and y property. Also, optionally, you can customize the points color, border, marker by using fill, border and marker options.
       */
-    var points: js.UndefOr[js.Array[SeriesPoint]] = js.native
+    var points: js.UndefOr[js.Array[SeriesPoint]] = js.undefined
     
     /** Fill color for the positive column of the waterfall.
       * @Default {null}
       */
-    var positiveFill: js.UndefOr[String] = js.native
+    var positiveFill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the pyramid series.
       * @Default {linear}
       */
-    var pyramidMode: js.UndefOr[PyramidMode | String] = js.native
+    var pyramidMode: js.UndefOr[PyramidMode | String] = js.undefined
     
     /** Specifies ej.Query to select data from dataSource. This property is applicable only when the dataSource is ej.DataManager.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Options for customizing the appearance of the series/data point on selection.
       */
-    var selectionSettings: js.UndefOr[SeriesSelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[SeriesSelectionSettings] = js.undefined
     
     /** Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
       * @Default {true}
       */
-    var showMedian: js.UndefOr[Boolean] = js.native
+    var showMedian: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains the size value for the bubble series.
       * @Default {null}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Specifies the different types of spline curve.
       * @Default {Natural. See SplineType}
       */
-    var splineType: js.UndefOr[SplineType | String] = js.native
+    var splineType: js.UndefOr[SplineType | String] = js.undefined
     
     /** Specifies the mode for splitting the data points in pieOfPie series.
       * @Default {value. See SplitMode}
       */
-    var splitMode: js.UndefOr[SplitMode | String] = js.native
+    var splitMode: js.UndefOr[SplitMode | String] = js.undefined
     
     /** Split Value of pieOfPie series.
       * @Default {null}
       */
-    var splitValue: js.UndefOr[String] = js.native
+    var splitValue: js.UndefOr[String] = js.undefined
     
     /** To group the series of stacking collection.
       */
-    var stackingGroup: js.UndefOr[String] = js.native
+    var stackingGroup: js.UndefOr[String] = js.undefined
     
     /** Start angle from where the pie/doughnut series renders. It starts from 0, by default.
       * @Default {null}
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the tooltip of chart.
       */
-    var tooltip: js.UndefOr[SeriesTooltip] = js.native
+    var tooltip: js.UndefOr[SeriesTooltip] = js.undefined
     
     /** Option to add trendlines to chart.
       */
-    var trendlines: js.UndefOr[js.Array[SeriesTrendline]] = js.native
+    var trendlines: js.UndefOr[js.Array[SeriesTrendline]] = js.undefined
     
     /** Specifies the type of the series to render in chart.
       * @Default {column. see Type}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Controls the visibility of the series.
       * @Default {visible}
       */
-    var visibility: js.UndefOr[String] = js.native
+    var visibility: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
       * @Default {visible}
       */
-    var visibleOnLegend: js.UndefOr[String] = js.native
+    var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
       * @Default {null}
       */
-    var xAxisName: js.UndefOr[String] = js.native
+    var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
       * @Default {null}
       */
-    var yAxisName: js.UndefOr[String] = js.native
+    var yAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
     
     /** Z-order of the series.
       * @Default {0}
       */
-    var zOrder: js.UndefOr[Double] = js.native
+    var zOrder: js.UndefOr[Double] = js.undefined
   }
   object Series {
     
@@ -15613,23 +15868,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesBorder extends StObject {
     
     /** Border color of the series.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** DashArray for border of the series.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Border width of the series.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesBorder {
     
@@ -15662,23 +15916,22 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesBubbleOptions extends StObject {
     
     /** Used for setting the maximum radius of the bubble
       * @Default {3}
       */
-    var maxRadius: js.UndefOr[Double] = js.native
+    var maxRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the setting the minimum radius of the bubble
       * @Default {1}
       */
-    var minRadius: js.UndefOr[Double] = js.native
+    var minRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the calculation of the bubble radius based on the mode selected
       * @Default {minMax .See RadiusMode}
       */
-    var radiusMode: js.UndefOr[RadiusMode | String] = js.native
+    var radiusMode: js.UndefOr[RadiusMode | String] = js.undefined
   }
   object SeriesBubbleOptions {
     
@@ -15711,28 +15964,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesConnectorLine extends StObject {
     
     /** Color of the connector line.
       * @Default {#565656}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
       * @Default {null}
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of the connector line.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the connector line.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesConnectorLine {
     
@@ -15771,28 +16023,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesCornerRadius extends StObject {
     
     /** Specifies the radius for the bottom left corner.
       * @Default {0}
       */
-    var bottomLeft: js.UndefOr[Double] = js.native
+    var bottomLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the bottom right corner.
       * @Default {0}
       */
-    var bottomRight: js.UndefOr[Double] = js.native
+    var bottomRight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top left corner.
       * @Default {0}
       */
-    var topLeft: js.UndefOr[Double] = js.native
+    var topLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top right corner.
       * @Default {0}
       */
-    var topRight: js.UndefOr[Double] = js.native
+    var topRight: js.UndefOr[Double] = js.undefined
   }
   object SeriesCornerRadius {
     
@@ -15831,18 +16082,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesDragSettings extends StObject {
     
     /** drag/drop the series
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of drag settings.
       * @Default {xy}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SeriesDragSettings {
     
@@ -15869,22 +16119,21 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesEmptyPointSettings extends StObject {
     
     /** Specifies the mode of empty point.
       * @Default {gap}
       */
-    var displayMode: js.UndefOr[EmptyPointMode | String] = js.native
+    var displayMode: js.UndefOr[EmptyPointMode | String] = js.undefined
     
     /** Options for customizing the color and border of the empty point in the series.
       */
-    var style: js.UndefOr[SeriesEmptyPointSettingsStyle] = js.native
+    var style: js.UndefOr[SeriesEmptyPointSettingsStyle] = js.undefined
     
     /** Controls the visibility of the empty point.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesEmptyPointSettings {
     
@@ -15917,16 +16166,15 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesEmptyPointSettingsStyle extends StObject {
     
     /** Options for customizing border of the empty point in the series.
       */
-    var border: js.UndefOr[SeriesEmptyPointSettingsStyleBorder] = js.native
+    var border: js.UndefOr[SeriesEmptyPointSettingsStyleBorder] = js.undefined
     
     /** Color of the empty point.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object SeriesEmptyPointSettingsStyle {
     
@@ -15953,17 +16201,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesEmptyPointSettingsStyleBorder extends StObject {
     
     /** Border color of the empty point.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the empty point.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesEmptyPointSettingsStyleBorder {
     
@@ -15990,72 +16237,71 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesErrorBar extends StObject {
     
     /** Options for customizing the error bar cap.
       */
-    var cap: js.UndefOr[SeriesErrorBarCap] = js.native
+    var cap: js.UndefOr[SeriesErrorBarCap] = js.undefined
     
     /** Specifies the direction of error bar.
       * @Default {both}
       */
-    var direction: js.UndefOr[ErrorBarDirection | String] = js.native
+    var direction: js.UndefOr[ErrorBarDirection | String] = js.undefined
     
     /** Fill color of the error bar.
       * @Default {#000000}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Value of horizontal  error bar.
       * @Default {1}
       */
-    var horizontalErrorValue: js.UndefOr[Double] = js.native
+    var horizontalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative horizontal error bar.
       * @Default {1}
       */
-    var horizontalNegativeErrorValue: js.UndefOr[Double] = js.native
+    var horizontalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive horizontal error bar.
       * @Default {1}
       */
-    var horizontalPositiveErrorValue: js.UndefOr[Double] = js.native
+    var horizontalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of error bar.
       * @Default {vertical}
       */
-    var mode: js.UndefOr[ErrorBarMode | String] = js.native
+    var mode: js.UndefOr[ErrorBarMode | String] = js.undefined
     
     /** Specifies the type of error bar.
       * @Default {FixedValue}
       */
-    var `type`: js.UndefOr[ErrorBarType | String] = js.native
+    var `type`: js.UndefOr[ErrorBarType | String] = js.undefined
     
     /** Value of vertical error bar.
       * @Default {3}
       */
-    var verticalErrorValue: js.UndefOr[Double] = js.native
+    var verticalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative vertical error bar.
       * @Default {5}
       */
-    var verticalNegativeErrorValue: js.UndefOr[Double] = js.native
+    var verticalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive vertical error bar.
       * @Default {5}
       */
-    var verticalPositiveErrorValue: js.UndefOr[Double] = js.native
+    var verticalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the error bar
       * @Default {visible}
       */
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesErrorBar {
     
@@ -16148,28 +16394,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesErrorBarCap extends StObject {
     
     /** Color of the error bar cap.
       * @Default {#000000}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Length of the error bar cap.
       * @Default {1}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Show/Hides the error bar cap.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar cap.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesErrorBarCap {
     
@@ -16208,38 +16453,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesFont extends StObject {
     
     /** Font color of the series text.
       * @Default {#707070}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font Family of the series.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font Style of the series.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the series.
       * @Default {Regular}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of series text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Size of the series text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SeriesFont {
     
@@ -16290,40 +16534,39 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesHighlightSettings extends StObject {
     
     /** Options for customizing the border of series on highlight.
       */
-    var border: js.UndefOr[SeriesHighlightSettingsBorder] = js.native
+    var border: js.UndefOr[SeriesHighlightSettingsBorder] = js.undefined
     
     /** Color of the series/point on highlight.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Custom pattern for the series on highlight.
       */
-    var customPattern: js.UndefOr[String] = js.native
+    var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight series or data point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether series or data point has to be highlighted.
       * @Default {series. See Mode}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on highlight.
       * @Default {0.6}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on highlight.
       * @Default {none. See Pattern}
       */
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
   }
   object SeriesHighlightSettings {
     
@@ -16380,17 +16623,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesHighlightSettingsBorder extends StObject {
     
     /** Border color of the series/point on highlight.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on highlight.
       * @Default {2}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SeriesHighlightSettingsBorder {
     
@@ -16417,44 +16659,43 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarker extends StObject {
     
     /** Options for customizing the border of the marker shape.
       */
-    var border: js.UndefOr[SeriesMarkerBorder] = js.native
+    var border: js.UndefOr[SeriesMarkerBorder] = js.undefined
     
     /** Options for displaying and customizing data labels.
       */
-    var dataLabel: js.UndefOr[SeriesMarkerDataLabel] = js.native
+    var dataLabel: js.UndefOr[SeriesMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as â€˜imageâ€™.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
       * @Default {circle. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options for customizing the size of the marker shape.
       */
-    var size: js.UndefOr[SeriesMarkerSize] = js.native
+    var size: js.UndefOr[SeriesMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesMarker {
     
@@ -16517,18 +16758,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
       * @Default {white}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerBorder {
     
@@ -16555,97 +16795,96 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
       * @Default {null}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the border of the data label.
       */
-    var border: js.UndefOr[SeriesMarkerDataLabelBorder] = js.native
+    var border: js.UndefOr[SeriesMarkerDataLabelBorder] = js.undefined
     
     /** Options for displaying and customizing the line that connects point and data label.
       */
-    var connectorLine: js.UndefOr[SeriesMarkerDataLabelConnectorLine] = js.native
+    var connectorLine: js.UndefOr[SeriesMarkerDataLabelConnectorLine] = js.undefined
     
     /** Enables saturation to the data label.
       * @Default {false}
       */
-    var enableContrastColor: js.UndefOr[Boolean] = js.native
+    var enableContrastColor: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the wrap option to the data label.
       * @Default {false}
       */
-    var enableWrap: js.UndefOr[Boolean] = js.native
+    var enableWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the data label.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the data label font.
       */
-    var font: js.UndefOr[SeriesMarkerDataLabelFont] = js.native
+    var font: js.UndefOr[SeriesMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
       * @Default {center}
       */
-    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.native
+    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
     /** Margin of the text to its background shape. The size of the background shape increases based on the margin applied to its text.
       */
-    var margin: js.UndefOr[SeriesMarkerDataLabelMargin] = js.native
+    var margin: js.UndefOr[SeriesMarkerDataLabelMargin] = js.undefined
     
     /** Maximum label width of the data label.
       * @Default {null}
       */
-    var maximumLabelWidth: js.UndefOr[Double] = js.native
+    var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the datalabel positions
       */
-    var offset: js.UndefOr[SeriesMarkerDataLabelOffset] = js.native
+    var offset: js.UndefOr[SeriesMarkerDataLabelOffset] = js.undefined
     
     /** Opacity of the data label.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
       * @Default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Displays the partially visible data labels inside the chart Area.
       * @Default {false}
       */
-    var showEdgeLabels: js.UndefOr[Boolean] = js.native
+    var showEdgeLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Custom template to format the data label content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Name of a field in data source where datalabel text is displayed.
       */
-    var textMappingName: js.UndefOr[String] = js.native
+    var textMappingName: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
       * @Default {top. See TextPosition}
       */
-    var textPosition: js.UndefOr[TextPosition | String] = js.native
+    var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
       * @Default {'center'}
       */
-    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.native
+    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesMarkerDataLabel {
     
@@ -16774,18 +17013,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
       * @Default {0.1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerDataLabelBorder {
     
@@ -16812,28 +17050,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabelConnectorLine extends StObject {
     
     /** Color of the connector.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Height of the connector.
       * @Default {null}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
       * @Default {line. See ConnectorLineType}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Width of the connector.
       * @Default {0.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerDataLabelConnectorLine {
     
@@ -16872,38 +17109,37 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabelFont extends StObject {
     
     /** Font color of the data label text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
       * @Default {regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SeriesMarkerDataLabelFont {
     
@@ -16954,28 +17190,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
       * @Default {5}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
       * @Default {5}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
       * @Default {5}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
       * @Default {5}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerDataLabelMargin {
     
@@ -17014,18 +17249,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerDataLabelOffset extends StObject {
     
     /** X value or horizontal offset to position the labels in chart.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the labels.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerDataLabelOffset {
     
@@ -17052,18 +17286,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesMarkerSize extends StObject {
     
     /** Height of the marker.
       * @Default {6}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
       * @Default {6}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesMarkerSize {
     
@@ -17090,17 +17323,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesOutlierSettings extends StObject {
     
     /** Specifies the shape of the outlier.
       * @Default {circle. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options for customizing the size of the outlier shape.
       */
-    var size: js.UndefOr[SeriesOutlierSettingsSize] = js.native
+    var size: js.UndefOr[SeriesOutlierSettingsSize] = js.undefined
   }
   object SeriesOutlierSettings {
     
@@ -17127,18 +17359,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesOutlierSettingsSize extends StObject {
     
     /** Height of the outlier shape.
       * @Default {6}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the outlier shape.
       * @Default {6}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesOutlierSettingsSize {
     
@@ -17165,76 +17396,75 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPoint extends StObject {
     
     /** Options for customizing the border of a point. This is applicable only for column type series and accumulation type series.
       */
-    var border: js.UndefOr[SeriesPointsBorder] = js.native
+    var border: js.UndefOr[SeriesPointsBorder] = js.undefined
     
     /** Close value of the point. Close value is applicable only for financial type series.
       * @Default {null}
       */
-    var close: js.UndefOr[Double] = js.native
+    var close: js.UndefOr[Double] = js.undefined
     
     /** Background color of the point. This is applicable only for column type series and accumulation type series.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** High value of the point. High value is applicable only for financial type series, range area series and range column series.
       * @Default {null}
       */
-    var high: js.UndefOr[Double] = js.native
+    var high: js.UndefOr[Double] = js.undefined
     
     /** Low value of the point. Low value is applicable only for financial type series, range area series and range column series.
       * @Default {null}
       */
-    var low: js.UndefOr[Double] = js.native
+    var low: js.UndefOr[Double] = js.undefined
     
     /** Options for displaying and customizing marker for a data point. Marker contains shapes and/or data labels.
       */
-    var marker: js.UndefOr[SeriesPointsMarker] = js.native
+    var marker: js.UndefOr[SeriesPointsMarker] = js.undefined
     
     /** Open value of the point. This is applicable only for financial type series.
       * @Default {null}
       */
-    var open: js.UndefOr[Double] = js.native
+    var open: js.UndefOr[Double] = js.undefined
     
     /** To show/hide the intermediate summary from the last intermediate point.
       * @Default {false}
       */
-    var showIntermediateSum: js.UndefOr[Boolean] = js.native
+    var showIntermediateSum: js.UndefOr[Boolean] = js.undefined
     
     /** To show/hide the total summary of the waterfall series.
       * @Default {false}
       */
-    var showTotalSum: js.UndefOr[Boolean] = js.native
+    var showTotalSum: js.UndefOr[Boolean] = js.undefined
     
     /** Size of a bubble in the bubble series. This is applicable only for the bubble series.
       * @Default {null}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Datalabel text for the point.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
       * @Default {visible}
       */
-    var visibleOnLegend: js.UndefOr[String] = js.native
+    var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** X value of the point.
       * @Default {null}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Y value of the point.
       * @Default {null}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object SeriesPoint {
     
@@ -17333,18 +17563,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsBorder extends StObject {
     
     /** Border color of the point.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the point.
       * @Default {null}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsBorder {
     
@@ -17371,44 +17600,43 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarker extends StObject {
     
     /** Options for customizing the border of the marker shape.
       */
-    var border: js.UndefOr[SeriesPointsMarkerBorder] = js.native
+    var border: js.UndefOr[SeriesPointsMarkerBorder] = js.undefined
     
     /** Options for displaying and customizing data label.
       */
-    var dataLabel: js.UndefOr[SeriesPointsMarkerDataLabel] = js.native
+    var dataLabel: js.UndefOr[SeriesPointsMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as â€˜imageâ€™.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
       * @Default {circle. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Options for customizing the size of the marker shape.
       */
-    var size: js.UndefOr[SeriesPointsMarkerSize] = js.native
+    var size: js.UndefOr[SeriesPointsMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesPointsMarker {
     
@@ -17471,18 +17699,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
       * @Default {white}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsMarkerBorder {
     
@@ -17509,74 +17736,73 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
       * @Default {null}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the border of the data label.
       */
-    var border: js.UndefOr[SeriesPointsMarkerDataLabelBorder] = js.native
+    var border: js.UndefOr[SeriesPointsMarkerDataLabelBorder] = js.undefined
     
     /** Options for displaying and customizing the line that connects point and data label.
       */
-    var connectorLine: js.UndefOr[SeriesPointsMarkerDataLabelConnectorLine] = js.native
+    var connectorLine: js.UndefOr[SeriesPointsMarkerDataLabelConnectorLine] = js.undefined
     
     /** Background color of the data label.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the data label font.
       */
-    var font: js.UndefOr[SeriesPointsMarkerDataLabelFont] = js.native
+    var font: js.UndefOr[SeriesPointsMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
       * @Default {center}
       */
-    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.native
+    var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
     /** Margin of the text to its background shape. The size of the background shape increases based on the margin applied to its text.
       */
-    var margin: js.UndefOr[SeriesPointsMarkerDataLabelMargin] = js.native
+    var margin: js.UndefOr[SeriesPointsMarkerDataLabelMargin] = js.undefined
     
     /** Moves the label vertically by specified offset.
       * @Default {0}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Opacity of the data label.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
       * @Default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
       */
-    var shape: js.UndefOr[Shape | String] = js.native
+    var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Custom template to format the data label content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
       * @Default {top. See TextPosition}
       */
-    var textPosition: js.UndefOr[TextPosition | String] = js.native
+    var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
       * @Default {'center'}
       */
-    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.native
+    var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesPointsMarkerDataLabel {
     
@@ -17675,18 +17901,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
       * @Default {0.1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsMarkerDataLabelBorder {
     
@@ -17713,18 +17938,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerDataLabelConnectorLine extends StObject {
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
       * @Default {line. See ConnectorLineType}
       */
-    var `type`: js.UndefOr[ConnectorLineType | String] = js.native
+    var `type`: js.UndefOr[ConnectorLineType | String] = js.undefined
     
     /** Width of the connector.
       * @Default {0.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsMarkerDataLabelConnectorLine {
     
@@ -17751,33 +17975,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerDataLabelFont extends StObject {
     
     /** Font family of the data label.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
       * @Default {regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SeriesPointsMarkerDataLabelFont {
     
@@ -17822,28 +18045,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
       * @Default {5}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
       * @Default {5}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
       * @Default {5}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
       * @Default {5}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsMarkerDataLabelMargin {
     
@@ -17882,18 +18104,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesPointsMarkerSize extends StObject {
     
     /** Height of the marker.
       * @Default {6}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
       * @Default {6}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesPointsMarkerSize {
     
@@ -17920,24 +18141,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesRegionClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** series - Instance of the selected series    seriesIndex - Index of the selected series
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SeriesRegionClickEventArgs {
     
@@ -17976,24 +18196,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** series - Instance of the series which is about to get rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SeriesRenderingEventArgs {
     
@@ -18032,50 +18251,49 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesSelectionSettings extends StObject {
     
     /** Options for customizing the border of series on selection.
       */
-    var border: js.UndefOr[SeriesSelectionSettingsBorder] = js.native
+    var border: js.UndefOr[SeriesSelectionSettingsBorder] = js.undefined
     
     /** Color of the series/point on selection.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Custom pattern for the series on selection.
       */
-    var customPattern: js.UndefOr[String] = js.native
+    var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select a series/data point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether series or data point has to be selected.
       * @Default {series. See Mode}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on selection.
       * @Default {0.6}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on selection.
       * @Default {none. See Pattern}
       */
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
     /** Specifies the drawn rectangle type.
       * @Default {xy}
       */
-    var rangeType: js.UndefOr[RangeType | String] = js.native
+    var rangeType: js.UndefOr[RangeType | String] = js.undefined
     
     /** Specifies the type of selection.
       * @Default {single}
       */
-    var `type`: js.UndefOr[SelectionType | String] = js.native
+    var `type`: js.UndefOr[SelectionType | String] = js.undefined
   }
   object SeriesSelectionSettings {
     
@@ -18144,17 +18362,16 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesSelectionSettingsBorder extends StObject {
     
     /** Border color of the series/point on selection.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on selection.
       * @Default {2}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SeriesSelectionSettingsBorder {
     
@@ -18181,57 +18398,56 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesTooltip extends StObject {
     
     /** Options for customizing the border of the tooltip.
       */
-    var border: js.UndefOr[SeriesTooltipBorder] = js.native
+    var border: js.UndefOr[SeriesTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
       * @Default {500ms}
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the tooltip when moving from one point to another.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content.
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the tooltip.
       * @Default {0.95}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
       * @Default {0}
       */
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
       * @Default {0}
       */
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
     /** Custom template to format the tooltip content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of the tooltip.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SeriesTooltip {
     
@@ -18306,18 +18522,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesTooltipBorder extends StObject {
     
     /** Border Color of the tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border Width of the tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesTooltipBorder {
     
@@ -18344,75 +18559,74 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesTrendline extends StObject {
     
     /** Past trends of the current series.
       * @Default {0}
       */
-    var backwardForecast: js.UndefOr[Double] = js.native
+    var backwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the trendline.
       */
-    var dashArray: js.UndefOr[String] = js.native
+    var dashArray: js.UndefOr[String] = js.undefined
     
     /** Fill color of the trendlines.
       * @Default {#0000FF}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Future trends of the current series.
       * @Default {0}
       */
-    var forwardForecast: js.UndefOr[Double] = js.native
+    var forwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Specifies the trendline intercept value
       * @Default {null}
       */
-    var intercept: js.UndefOr[Double] = js.native
+    var intercept: js.UndefOr[Double] = js.undefined
     
     /** Name for the trendlines that is to be displayed in legend text.
       * @Default {Trendline}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the moving average starting period  value.
       * @Default {2}
       */
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order of polynomial trendlines.
       * @Default {0}
       */
-    var polynomialOrder: js.UndefOr[Double] = js.native
+    var polynomialOrder: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the trendline tooltip
       */
-    var tooltip: js.UndefOr[SeriesTrendlinesTooltip] = js.native
+    var tooltip: js.UndefOr[SeriesTrendlinesTooltip] = js.undefined
     
     /** Specifies the type of trendline for the series.
       * @Default {linear. See TrendlinesType}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Show/hides the trendline.
       */
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Show/hides the trendline legend.
       * @Default {visible}
       */
-    var visibleOnLegend: js.UndefOr[String] = js.native
+    var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Width of the trendlines.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesTrendline {
     
@@ -18511,47 +18725,46 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesTrendlinesTooltip extends StObject {
     
     /** Options for customizing the border of the trendline tooltip.
       */
-    var border: js.UndefOr[SeriesTrendlinesTooltipBorder] = js.native
+    var border: js.UndefOr[SeriesTrendlinesTooltipBorder] = js.undefined
     
     /** Specifies the duration of the trendline tooltip to be displayed.
       * @Default {500ms}
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the trendline tooltip when moving from one point to other.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the trendline tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the trendline tooltip content.
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline tooltip.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
       * @Default {0}
       */
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
       * @Default {0}
       */
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
   }
   object SeriesTrendlinesTooltip {
     
@@ -18614,18 +18827,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait SeriesTrendlinesTooltipBorder extends StObject {
     
     /** Specify the Border color of the  trendline tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trendline tooltip.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SeriesTrendlinesTooltipBorder {
     
@@ -18652,18 +18864,17 @@ object Chart {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
     /** Height of the Chart. Height can be specified in either pixel or percentage.
       * @Default {'450'}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Chart. Width can be specified in either pixel or percentage.
       * @Default {'450'}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Size {
     
@@ -18690,24 +18901,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait SubTitleRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - location of the subTitle text    subtitle - text of the subtitle    size - Size of the Subtitle text
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SubTitleRenderingEventArgs {
     
@@ -18746,24 +18956,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait SymbolRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - Instance that holds the location of marker symbol    style - Options to customize the marker style such as color, border and size
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SymbolRenderingEventArgs {
     
@@ -18802,54 +19011,53 @@ object Chart {
     }
   }
   
-  @js.native
   trait Title extends StObject {
     
     /** Background color for the chart title.
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options to customize the border of the title.
       */
-    var border: js.UndefOr[TitleBorder] = js.native
+    var border: js.UndefOr[TitleBorder] = js.undefined
     
     /** Specifies whether to trim the Chart Title when the width of the title exceeds the maximumWidth.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the font of Chart title.
       */
-    var font: js.UndefOr[TitleFont] = js.native
+    var font: js.UndefOr[TitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
       * @Default {auto}
       */
-    var maximumWidth: js.UndefOr[String] = js.native
+    var maximumWidth: js.UndefOr[String] = js.undefined
     
     /** Options to customize the sub title of Chart.
       */
-    var subTitle: js.UndefOr[TitleSubTitle] = js.native
+    var subTitle: js.UndefOr[TitleSubTitle] = js.undefined
     
     /** Text to be displayed in Chart title.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the title text.
       * @Default {Center. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[Alignment | String] = js.native
+    var textAlignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Specifies the action taken when the Chart width is more than the titleWidth.
       * @Default {trim.}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Controls the visibility of the Chart title
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Title {
     
@@ -18924,28 +19132,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleBorder extends StObject {
     
     /** color of the title border.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** opacity of the title border.
       * @Default {0.8}
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** opacity of the title border.
       * @Default {0.8}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the title border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TitleBorder {
     
@@ -18984,33 +19191,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleFont extends StObject {
     
     /** Font family for Chart title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for Chart title.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for Chart title.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the Chart title.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for Chart title.
       * @Default {20px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TitleFont {
     
@@ -19055,24 +19261,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - Option to customize the title location in pixels    size - Read-only option to find the size of the title    title - Use this option to add custom text in title
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TitleRenderingEventArgs {
     
@@ -19111,50 +19316,49 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleSubTitle extends StObject {
     
     /** Background color for the chart subtitle.
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options to customize the border of the title.
       */
-    var border: js.UndefOr[TitleSubTitleBorder] = js.native
+    var border: js.UndefOr[TitleSubTitleBorder] = js.undefined
     
     /** Specifies whether to trim the Chart SubTitle when the width of the Subtitle exceeds the maximumWidth.
       * @Default {false}
       */
-    var enableTrim: js.UndefOr[Boolean] = js.native
+    var enableTrim: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the font of sub title.
       */
-    var font: js.UndefOr[TitleSubTitleFont] = js.native
+    var font: js.UndefOr[TitleSubTitleFont] = js.undefined
     
     /** Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
       * @Default {auto}
       */
-    var maximumWidth: js.UndefOr[String] = js.native
+    var maximumWidth: js.UndefOr[String] = js.undefined
     
     /** Text to be displayed in sub title.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of sub title text.
       * @Default {far. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[Alignment | String] = js.native
+    var textAlignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Specifies the action taken when the Chart width is more than the SubTitleWidth.
       * @Default {trim.}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Controls the visibility of the Chart SubTitle
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object TitleSubTitle {
     
@@ -19223,28 +19427,27 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleSubTitleBorder extends StObject {
     
     /** color of the subtitle border.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** opacity of the subtitle border.
       * @Default {0.8}
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** opacity of the subtitle border.
       * @Default {0.8}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the subtitle border.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TitleSubTitleBorder {
     
@@ -19283,33 +19486,32 @@ object Chart {
     }
   }
   
-  @js.native
   trait TitleSubTitleFont extends StObject {
     
     /** Font family of sub title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for sub title.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for sub title.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the sub title.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for sub title.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TitleSubTitleFont {
     
@@ -19354,25 +19556,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait ToolTipInitializeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** currentText - Text to be displayed in tooltip. Set this option to customize the text displayed in tooltip    pointIndex - Index of the point on which mouse is hovered
       * seriesIndex - Index of the series in series collection whose point is hovered by mouse
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToolTipInitializeEventArgs {
     
@@ -19411,25 +19612,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait TrackAxisToolTipEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - Location of the crosshair label in pixels    axisIndex - Index of the axis for which crosshair label is displayed    crossAxis - Instance of the chart axis object
       * for which cross hair label is displayed    currentTrackText - Text to be displayed in crosshair label. Use this option to add custom text in crosshair label
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TrackAxisToolTipEventArgs {
     
@@ -19468,26 +19668,25 @@ object Chart {
     }
   }
   
-  @js.native
   trait TrackToolTipEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - Location of the trackball tooltip in pixels    pointIndex - Index of the point for which trackball tooltip is displayed    seriesIndex - Index of the series in
       * series collection    currentText - Text to be displayed in trackball tooltip. Use this option to add custom text in trackball tooltip    series - Instance of the series object
       * for which trackball tooltip is displayed.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TrackToolTipEventArgs {
     
@@ -19526,25 +19725,24 @@ object Chart {
     }
   }
   
-  @js.native
   trait TrendlineRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** trendlines - Trendline Object    series - Series data of the chart    forwardForecast - Forward Forecast value for the trendline    backwardForecast - Backward Forecast value
       * for the trendline
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TrendlineRenderingEventArgs {
     
@@ -19583,24 +19781,23 @@ object Chart {
     }
   }
   
-  @js.native
   trait ZoomedEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Selected data collection of object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the chart model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ZoomedEventArgs {
     
@@ -19639,43 +19836,42 @@ object Chart {
     }
   }
   
-  @js.native
   trait Zooming extends StObject {
     
     /** Enables or disables zooming.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disables the differed zooming. When it is enabled, chart is updated only on mouse up action while zooming and panning.
       * @Default {false}
       */
-    var enableDeferredZoom: js.UndefOr[Boolean] = js.native
+    var enableDeferredZoom: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the ability to zoom the chart on moving the mouse wheel.
       * @Default {false}
       */
-    var enableMouseWheel: js.UndefOr[Boolean] = js.native
+    var enableMouseWheel: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables pinch zooming.
       * @Default {true}
       */
-    var enablePinching: js.UndefOr[Boolean] = js.native
+    var enablePinching: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the scrollbar, which will be displayed while zooming.
       * @Default {false}
       */
-    var enableScrollbar: js.UndefOr[Boolean] = js.native
+    var enableScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /** To display user specified buttons in zooming toolbar.
       * @Default {[zoomIn, zoomOut, zoom, pan, reset]}
       */
-    var toolbarItems: js.UndefOr[js.Array[_]] = js.native
+    var toolbarItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies whether to allow zooming the chart vertically or horizontally or in both ways.
       * @Default {'x,y'}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Zooming {
     
@@ -19719,7 +19915,7 @@ object Chart {
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
       @scala.inline
-      def setToolbarItems(value: js.Array[_]): Self = StObject.set(x, "toolbarItems", value.asInstanceOf[js.Any])
+      def setToolbarItems(value: js.Array[js.Any]): Self = StObject.set(x, "toolbarItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setToolbarItemsUndefined: Self = StObject.set(x, "toolbarItems", js.undefined)

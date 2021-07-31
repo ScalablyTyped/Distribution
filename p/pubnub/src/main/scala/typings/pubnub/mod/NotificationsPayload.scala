@@ -3,33 +3,31 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Apns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationsPayload extends StObject {
   
-  var apns: APNSNotificationPayload = js.native
+  var apns: APNSNotificationPayload
   
-  var badge: js.UndefOr[Double] = js.native
+  var badge: js.UndefOr[Double] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  def buildPayload(platforms: js.Array[String]): js.Object = js.native
+  def buildPayload(platforms: js.Array[String]): js.Object
   
-  var debugging: Boolean = js.native
+  var debugging: Boolean
   
-  var fcm: FCMNotificationPayload = js.native
+  var fcm: FCMNotificationPayload
   
-  var mpns: MPNSNotificationPayload = js.native
+  var mpns: MPNSNotificationPayload
   
-  var payload: Apns = js.native
+  var payload: Apns
   
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object NotificationsPayload {
   

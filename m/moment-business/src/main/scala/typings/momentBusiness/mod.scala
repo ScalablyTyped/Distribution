@@ -3,32 +3,29 @@ package typings.momentBusiness
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("moment-business", "addWeekDays")
+  @JSImport("moment-business", JSImport.Namespace)
   @js.native
-  def addWeekDays(moment: Moment, amount: Double): Moment = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("moment-business", "isWeekDay")
-  @js.native
-  def isWeekDay(moment: Moment): Boolean = js.native
+  @scala.inline
+  def addWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
-  @JSImport("moment-business", "isWeekendDay")
-  @js.native
-  def isWeekendDay(moment: Moment): Boolean = js.native
+  @scala.inline
+  def isWeekDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("moment-business", "subtractWeekDays")
-  @js.native
-  def subtractWeekDays(moment: Moment, amount: Double): Moment = js.native
+  @scala.inline
+  def isWeekendDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekendDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("moment-business", "weekDays")
-  @js.native
-  def weekDays(startMoment: Moment, endMoment: Moment): Double = js.native
+  @scala.inline
+  def subtractWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
-  @JSImport("moment-business", "weekendDays")
-  @js.native
-  def weekendDays(startMoment: Moment, endMoment: Moment): Double = js.native
+  @scala.inline
+  def weekDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def weekendDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekendDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

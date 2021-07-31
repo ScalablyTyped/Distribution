@@ -5,7 +5,6 @@ import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.interfacesLabelMod.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distLabelMod {
@@ -16,5 +15,17 @@ object distLabelMod {
     extends GitHubRef
        with Label {
     def this(data: typings.typedGithubApi.labelMod.Label, options: OptionsOrRef) = this()
+    
+    /* CompleteClass */
+    var default: Boolean = js.native
+    
+    /* CompleteClass */
+    var color: String = js.native
+    
+    /* CompleteClass */
+    var id: Double = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
 }

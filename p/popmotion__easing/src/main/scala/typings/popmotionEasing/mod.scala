@@ -2,10 +2,13 @@ package typings.popmotionEasing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@popmotion/easing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@popmotion/easing", "anticipate")
   @js.native
@@ -23,17 +26,14 @@ object mod {
   @js.native
   val backOut: Easing = js.native
   
-  @JSImport("@popmotion/easing", "bounceIn")
-  @js.native
-  def bounceIn(p: Double): Double = js.native
+  @scala.inline
+  def bounceIn(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceIn")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@popmotion/easing", "bounceInOut")
-  @js.native
-  def bounceInOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceInOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceInOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@popmotion/easing", "bounceOut")
-  @js.native
-  def bounceOut(p: Double): Double = js.native
+  @scala.inline
+  def bounceOut(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bounceOut")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("@popmotion/easing", "circIn")
   @js.native
@@ -47,17 +47,14 @@ object mod {
   @js.native
   val circOut: Easing = js.native
   
-  @JSImport("@popmotion/easing", "createAnticipateEasing")
-  @js.native
-  def createAnticipateEasing(power: Double): Easing = js.native
+  @scala.inline
+  def createAnticipateEasing(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnticipateEasing")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("@popmotion/easing", "createBackIn")
-  @js.native
-  def createBackIn(power: Double): Easing = js.native
+  @scala.inline
+  def createBackIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createBackIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("@popmotion/easing", "createExpoIn")
-  @js.native
-  def createExpoIn(power: Double): Easing = js.native
+  @scala.inline
+  def createExpoIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpoIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
   @JSImport("@popmotion/easing", "createMirroredEasing")
   @js.native
@@ -67,9 +64,8 @@ object mod {
   @js.native
   val createReversedEasing: EasingModifier = js.native
   
-  @JSImport("@popmotion/easing", "cubicBezier")
-  @js.native
-  def cubicBezier(mX1: Double, mY1: Double, mX2: Double, mY2: Double): js.Function1[/* aX */ Double, Double] = js.native
+  @scala.inline
+  def cubicBezier(mX1: Double, mY1: Double, mX2: Double, mY2: Double): js.Function1[/* aX */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicBezier")(mX1.asInstanceOf[js.Any], mY1.asInstanceOf[js.Any], mX2.asInstanceOf[js.Any], mY2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* aX */ Double, Double]]
   
   @JSImport("@popmotion/easing", "easeIn")
   @js.native

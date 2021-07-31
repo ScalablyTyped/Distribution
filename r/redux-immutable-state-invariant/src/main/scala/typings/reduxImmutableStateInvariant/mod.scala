@@ -5,7 +5,6 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,11 @@ object mod {
     Middleware[js.Object, js.Any, Dispatch[AnyAction]]
   ]
   
-  @js.native
   trait immutableStateInvariantMiddlewareOptions extends StObject {
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isImmutable: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.native
+    var isImmutable: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.undefined
   }
   object immutableStateInvariantMiddlewareOptions {
     

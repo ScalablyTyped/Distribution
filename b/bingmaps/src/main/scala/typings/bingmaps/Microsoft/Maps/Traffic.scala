@@ -2,7 +2,6 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Traffic {
   
-  @js.native
   trait ITrafficOptions extends StObject {
     
     /** Displays the traffic flow layer. */
-    var flowVisible: js.UndefOr[Boolean] = js.native
+    var flowVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Displays all traffic incidents. */
-    var incidentsVisible: js.UndefOr[Boolean] = js.native
+    var incidentsVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the traffic legend. */
-    var legendVisible: js.UndefOr[Boolean] = js.native
+    var legendVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the opacity of the traffic flow tile layer. Must be a number between 0 and 1. The default is 1 unless the map
       * mode is set to lite, in which case the default is set to 0.7.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object ITrafficOptions {
     
@@ -66,38 +64,37 @@ object Traffic {
     }
   }
   
-  @js.native
   trait TrafficManager extends StObject {
     
     /** Hides all traffic data. */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /** Hides the traffic flow layer. */
-    def hideFlow(): Unit = js.native
+    def hideFlow(): Unit
     
     /** Hides all traffic incidents. */
-    def hideIncidents(): Unit = js.native
+    def hideIncidents(): Unit
     
     /** Hides the traffic legend. */
-    def hideLegend(): Unit = js.native
+    def hideLegend(): Unit
     
     /**
       * Sets the options for the traffic manager.
       * @param options The options for the traffic manager.
       */
-    def setOptions(options: ITrafficOptions): Unit = js.native
+    def setOptions(options: ITrafficOptions): Unit
     
     /** Displays all traffic data. */
-    def show(): Unit = js.native
+    def show(): Unit
     
     /** Displays the traffic flow layer. */
-    def showFlow(): Unit = js.native
+    def showFlow(): Unit
     
     /** Displays all traffic incidents. */
-    def showIncidents(): Unit = js.native
+    def showIncidents(): Unit
     
     /** Displays the traffic legend. */
-    def showLegend(): Unit = js.native
+    def showLegend(): Unit
   }
   object TrafficManager {
     

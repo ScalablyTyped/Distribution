@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfigurationTableCopy extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait JobConfigurationTableCopy extends StObject {
     * CREATE_NEVER: The table must already exist. If it does not, a 'notFound' error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append
     * actions occur as one atomic update upon job completion.
     */
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
   /** Custom encryption configuration (e.g., Cloud KMS keys). */
-  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
   /** [Optional] The time when the destination table expires. Expired tables will be deleted and their storage reclaimed. */
-  var destinationExpirationTime: js.UndefOr[js.Any] = js.native
+  var destinationExpirationTime: js.UndefOr[js.Any] = js.undefined
   
   /** [Required] The destination table */
-  var destinationTable: js.UndefOr[TableReference] = js.native
+  var destinationTable: js.UndefOr[TableReference] = js.undefined
   
   /** [Optional] Supported operation types in table copy job. */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /** [Pick one] Source table to copy. */
-  var sourceTable: js.UndefOr[TableReference] = js.native
+  var sourceTable: js.UndefOr[TableReference] = js.undefined
   
   /** [Pick one] Source tables to copy. */
-  var sourceTables: js.UndefOr[js.Array[TableReference]] = js.native
+  var sourceTables: js.UndefOr[js.Array[TableReference]] = js.undefined
   
   /**
     * [Optional] Specifies the action that occurs if the destination table already exists. The following values are supported: WRITE_TRUNCATE: If the table already exists, BigQuery
@@ -39,7 +37,7 @@ trait JobConfigurationTableCopy extends StObject {
     * 'duplicate' error is returned in the job result. The default value is WRITE_EMPTY. Each action is atomic and only occurs if BigQuery is able to complete the job successfully.
     * Creation, truncation and append actions occur as one atomic update upon job completion.
     */
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object JobConfigurationTableCopy {
   

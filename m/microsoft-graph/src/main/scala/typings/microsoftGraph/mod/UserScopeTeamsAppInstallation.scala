@@ -2,13 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserScopeTeamsAppInstallation extends TeamsAppInstallation {
+trait UserScopeTeamsAppInstallation
+  extends StObject
+     with TeamsAppInstallation {
   
-  var chat: js.UndefOr[NullableOption[Chat]] = js.native
+  var chat: js.UndefOr[NullableOption[Chat]] = js.undefined
 }
 object UserScopeTeamsAppInstallation {
   

@@ -4,17 +4,41 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.playable.anon.InteractionIndicator
 import typings.playable.screenTypesMod.IScreen
 import typings.playable.screenTypesMod.IScreenViewConfig
+import typings.playable.screenTypesMod.VideoViewMode
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenMod {
   
   @JSImport("playable/dist/src/modules/ui/screen/screen", JSImport.Default)
   @js.native
-  class default protected () extends Screen {
+  class default protected ()
+    extends StObject
+       with Screen {
     def this(hasConfigEventEmitterEngineFullScreenManagerInteractionIndicatorRootContainer: InteractionIndicator) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hideCursor(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setVideoViewMode(viewMode: VideoViewMode): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showCursor(): Unit = js.native
   }
   object default {
     
@@ -53,7 +77,9 @@ object screenMod {
   }
   
   @js.native
-  trait Screen extends IScreen {
+  trait Screen
+    extends StObject
+       with IScreen {
     
     var _bindCallbacks: js.Any = js.native
     

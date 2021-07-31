@@ -2,19 +2,17 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var selectable: Boolean = js.native
+  var selectable: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object MenuItem {
   

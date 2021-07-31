@@ -2,7 +2,6 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/symbol/
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.novaEditorNode.novaEditorNodeStrings.`class`
   - typings.novaEditorNode.novaEditorNodeStrings.category
   - typings.novaEditorNode.novaEditorNodeStrings.interface
-  - typings.novaEditorNode.novaEditorNodeStrings.enum
+  - typings.novaEditorNode.novaEditorNodeStrings.`enum`
   - typings.novaEditorNode.novaEditorNodeStrings.union
   - typings.novaEditorNode.novaEditorNodeStrings.struct
   - typings.novaEditorNode.novaEditorNodeStrings.function
@@ -106,7 +105,7 @@ object NovaSymbolType {
   def destructor: typings.novaEditorNode.novaEditorNodeStrings.destructor = "destructor".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.destructor]
   
   @scala.inline
-  def enum: typings.novaEditorNode.novaEditorNodeStrings.enum = "enum".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.enum]
+  def `enum`: typings.novaEditorNode.novaEditorNodeStrings.`enum` = "enum".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.`enum`]
   
   @scala.inline
   def `enum-member`: typings.novaEditorNode.novaEditorNodeStrings.`enum-member` = "enum-member".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.`enum-member`]

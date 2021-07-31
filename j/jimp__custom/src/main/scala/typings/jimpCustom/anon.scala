@@ -6,17 +6,15 @@ import typings.jimpCore.pluginsMod.JimpType
 import typings.jimpCore.utilsMod.FunctionRet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Plugins[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */] extends StObject {
     
-    var plugins: js.UndefOr[PluginFuncArr] = js.native
+    var plugins: js.UndefOr[PluginFuncArr] = js.undefined
     
-    var types: js.UndefOr[TypesFuncArr] = js.native
+    var types: js.UndefOr[TypesFuncArr] = js.undefined
   }
   object Plugins {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins[_, _], TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */] (val x: Self with (Plugins[TypesFuncArr, PluginFuncArr])) extends AnyVal {
+    implicit class PluginsMutableBuilder[Self <: Plugins[?, ?], TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */] (val x: Self & (Plugins[TypesFuncArr, PluginFuncArr])) extends AnyVal {
       
       @scala.inline
       def setPlugins(value: PluginFuncArr): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])

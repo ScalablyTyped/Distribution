@@ -12,7 +12,7 @@ Get packages by a npm user
 | Keywords           | api, homepage, npm, packages, user, version |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 1893 |
+| # downloads        | 1651 |
 | # stars            | 1 |
 
 ## Links

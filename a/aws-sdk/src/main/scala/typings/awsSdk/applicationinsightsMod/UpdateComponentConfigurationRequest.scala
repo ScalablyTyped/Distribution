@@ -2,36 +2,34 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateComponentConfigurationRequest extends StObject {
   
   /**
     * The configuration settings of the component. The value is the escaped JSON of the configuration. For more information about the JSON format, see Working with JSON. You can send a request to DescribeComponentConfigurationRecommendation to see the recommended configuration for a component. For the complete format of the component configuration file, see Component Configuration.
     */
-  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.native
+  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.undefined
   
   /**
     * The name of the component.
     */
-  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName = js.native
+  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName
   
   /**
     * Indicates whether the application component is monitored.
     */
-  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.native
+  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
   
   /**
     * The tier of the application component. Supported tiers include DOT_NET_WORKER, DOT_NET_WEB, DOT_NET_CORE, SQL_SERVER, and DEFAULT.
     */
-  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.native
+  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.undefined
 }
 object UpdateComponentConfigurationRequest {
   

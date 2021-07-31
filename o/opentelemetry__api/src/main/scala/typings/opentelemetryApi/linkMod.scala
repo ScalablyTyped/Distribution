@@ -4,19 +4,17 @@ import typings.opentelemetryApi.attributesMod.Attributes
 import typings.opentelemetryApi.linkContextMod.LinkContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkMod {
   
-  @js.native
   trait Link extends StObject {
     
     /** A set of {@link Attributes} on the link. */
-    var attributes: js.UndefOr[Attributes] = js.native
+    var attributes: js.UndefOr[Attributes] = js.undefined
     
     /** The {@link LinkContext} of a linked span. */
-    var context: LinkContext = js.native
+    var context: LinkContext
   }
   object Link {
     

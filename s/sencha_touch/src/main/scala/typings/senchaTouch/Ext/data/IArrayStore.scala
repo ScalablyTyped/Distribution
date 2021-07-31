@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IArrayStore extends IStore {
+trait IArrayStore
+  extends StObject
+     with IStore {
   
   /** [Method] Loads an array of data straight into the Store
     * @param data Object
@@ -15,7 +15,7 @@ trait IArrayStore extends IStore {
   @JSName("loadData")
   var loadData_IArrayStore: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IArrayStore {
   

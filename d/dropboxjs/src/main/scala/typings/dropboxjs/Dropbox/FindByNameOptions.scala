@@ -2,19 +2,17 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindByNameOptions extends StObject {
   
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
-  var httpCache: js.UndefOr[Boolean] = js.native
+  var httpCache: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var removed: js.UndefOr[Boolean] = js.native
+  var removed: js.UndefOr[Boolean] = js.undefined
 }
 object FindByNameOptions {
   

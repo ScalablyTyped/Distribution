@@ -2,31 +2,29 @@ package typings.intercomWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Createdat extends StObject {
     
-    var created_at: js.UndefOr[Double] = js.native
+    var created_at: js.UndefOr[Double] = js.undefined
     
-    var id: String | Double = js.native
+    var id: String | Double
     
-    var industry: js.UndefOr[String] = js.native
+    var industry: js.UndefOr[String] = js.undefined
     
-    var monthly_spend: js.UndefOr[Double] = js.native
+    var monthly_spend: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var plan: js.UndefOr[String] = js.native
+    var plan: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var user_count: js.UndefOr[Double] = js.native
+    var user_count: js.UndefOr[Double] = js.undefined
     
-    var website: js.UndefOr[String] = js.native
+    var website: js.UndefOr[String] = js.undefined
   }
   object Createdat {
     

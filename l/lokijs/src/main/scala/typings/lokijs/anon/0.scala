@@ -3,19 +3,17 @@ package typings.lokijs.anon
 import typings.lokijs.lokijsStrings.destructured
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var serializationMethod: destructured = js.native
+  var serializationMethod: destructured
 }
 object `0` {
   
   @scala.inline
-  def apply(serializationMethod: destructured): `0` = {
-    val __obj = js.Dynamic.literal(serializationMethod = serializationMethod.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(serializationMethod = "destructured")
     __obj.asInstanceOf[`0`]
   }
   

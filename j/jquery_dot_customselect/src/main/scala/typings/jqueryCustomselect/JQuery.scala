@@ -2,13 +2,11 @@ package typings.jqueryCustomselect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def customSelect(`val`: JQueryCustomSelectOption): JQuery = js.native
+  def customSelect(`val`: JQueryCustomSelectOption): JQuery
 }
 object JQuery {
   

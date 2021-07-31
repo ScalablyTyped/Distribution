@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaterfallChartColumnStyle extends StObject {
   
   /** The color of the column. */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /** The color of the column. If color is also set, this field takes precedence. */
-  var colorStyle: js.UndefOr[ColorStyle] = js.native
+  var colorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The label of the column's legend. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object WaterfallChartColumnStyle {
   

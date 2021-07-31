@@ -6,7 +6,6 @@ import typings.nodegit.nodegitNumbers.`1`
 import typings.nodegit.nodegitNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
@@ -17,9 +16,12 @@ object fetchMod {
   /* static members */
   object Fetch {
     
-    @JSImport("nodegit/fetch", "Fetch.initOptions")
+    @JSImport("nodegit/fetch", "Fetch")
     @js.native
-    def initOptions(opts: FetchOptions, version: Double): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def initOptions(opts: FetchOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

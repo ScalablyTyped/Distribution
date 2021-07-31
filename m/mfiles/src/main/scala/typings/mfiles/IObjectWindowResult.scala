@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFObjectWindowResultCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectWindowResult extends StObject {
   
-  val AccessControlList: IAccessControlList = js.native
+  val AccessControlList: IAccessControlList
   
-  val ObjVer: IObjVer = js.native
+  val ObjVer: IObjVer
   
-  val Properties: IPropertyValues = js.native
+  val Properties: IPropertyValues
   
-  val Result: MFObjectWindowResultCode = js.native
+  val Result: MFObjectWindowResultCode
   
-  val SelectedFileClass: IFileClass = js.native
+  val SelectedFileClass: IFileClass
   
-  val UseAsDefaults: Boolean = js.native
+  val UseAsDefaults: Boolean
   
-  val Visible: Boolean = js.native
+  val Visible: Boolean
 }
 object IObjectWindowResult {
   

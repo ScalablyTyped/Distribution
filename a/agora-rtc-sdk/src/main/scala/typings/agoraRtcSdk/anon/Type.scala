@@ -3,22 +3,20 @@ package typings.agoraRtcSdk.anon
 import typings.agoraRtcSdk.agoraRtcSdkStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var reason: js.Any = js.native
+  var reason: js.Any
   
-  var `type`: error = js.native
+  var `type`: error
 }
 object Type {
   
   @scala.inline
-  def apply(reason: js.Any, `type`: error): Type = {
+  def apply(reason: js.Any): Type = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[Type]
   }
   

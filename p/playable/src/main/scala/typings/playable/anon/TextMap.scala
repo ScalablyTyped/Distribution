@@ -6,19 +6,17 @@ import typings.playable.themeTypesMod.IThemeService
 import typings.playable.tooltipTypesMod.ITooltipService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextMap extends StObject {
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var textMap: ITextMap = js.native
+  var textMap: ITextMap
   
-  var theme: IThemeService = js.native
+  var theme: IThemeService
   
-  var tooltipService: ITooltipService = js.native
+  var tooltipService: ITooltipService
 }
 object TextMap {
   

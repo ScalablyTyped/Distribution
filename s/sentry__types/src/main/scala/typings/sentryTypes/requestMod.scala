@@ -3,27 +3,25 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
   
-  @js.native
   trait Request extends StObject {
     
-    var cookies: js.UndefOr[StringDictionary[String]] = js.native
+    var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var env: js.UndefOr[StringDictionary[String]] = js.native
+    var env: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var query_string: js.UndefOr[String] = js.native
+    var query_string: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Request {
     
@@ -80,14 +78,13 @@ object requestMod {
     }
   }
   
-  @js.native
   trait SentryRequest extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var `type`: SentryRequestType = js.native
+    var `type`: SentryRequestType
     
-    var url: String = js.native
+    var url: String
   }
   object SentryRequest {
     

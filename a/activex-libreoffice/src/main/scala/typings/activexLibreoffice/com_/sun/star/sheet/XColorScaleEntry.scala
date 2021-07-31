@@ -3,32 +3,30 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XColorScaleEntry extends StObject {
   
-  var Color: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  var Color: typings.activexLibreoffice.com_.sun.star.util.Color
   
-  var Formula: String = js.native
-  
-  /** See {@link com.sun.star.sheet.ColorScaleEntryType} for possible values */
-  var Type: Double = js.native
-  
-  def getColor(): Color = js.native
-  
-  def getFormula(): String = js.native
+  var Formula: String
   
   /** See {@link com.sun.star.sheet.ColorScaleEntryType} for possible values */
-  def getType(): Double = js.native
+  var Type: Double
   
-  def setColor(Color: Color): Unit = js.native
+  def getColor(): Color
   
-  def setFormula(Formula: String): Unit = js.native
+  def getFormula(): String
   
   /** See {@link com.sun.star.sheet.ColorScaleEntryType} for possible values */
-  def setType(Type: Double): Unit = js.native
+  def getType(): Double
+  
+  def setColor(Color: Color): Unit
+  
+  def setFormula(Formula: String): Unit
+  
+  /** See {@link com.sun.star.sheet.ColorScaleEntryType} for possible values */
+  def setType(Type: Double): Unit
 }
 object XColorScaleEntry {
   

@@ -2,121 +2,119 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stack extends StObject {
   
   /**
     * The capabilities allowed in the stack.
     */
-  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
+  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
   /**
     * The unique ID of the change set.
     */
-  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.native
+  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.undefined
   
   /**
     * The time at which the stack was created.
     */
-  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime
   
   /**
     * The time the stack was deleted.
     */
-  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.native
+  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.undefined
   
   /**
     * A user-defined description associated with the stack.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * Boolean to enable or disable rollback on stack creation failures:    true: disable rollback    false: enable rollback  
     */
-  var DisableRollback: js.UndefOr[typings.awsSdk.cloudformationMod.DisableRollback] = js.native
+  var DisableRollback: js.UndefOr[typings.awsSdk.cloudformationMod.DisableRollback] = js.undefined
   
   /**
     * Information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
     */
-  var DriftInformation: js.UndefOr[StackDriftInformation] = js.native
+  var DriftInformation: js.UndefOr[StackDriftInformation] = js.undefined
   
   /**
     * Whether termination protection is enabled for the stack.  For nested stacks, termination protection is set on the root stack and cannot be changed directly on the nested stack. For more information, see Protecting a Stack From Being Deleted in the AWS CloudFormation User Guide.
     */
-  var EnableTerminationProtection: js.UndefOr[typings.awsSdk.cloudformationMod.EnableTerminationProtection] = js.native
+  var EnableTerminationProtection: js.UndefOr[typings.awsSdk.cloudformationMod.EnableTerminationProtection] = js.undefined
   
   /**
     * The time the stack was last updated. This field will only be returned if the stack has been updated at least once.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.native
+  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.undefined
   
   /**
     * SNS topic ARNs to which stack related events are published.
     */
-  var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.native
+  var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.undefined
   
   /**
     * A list of output structures.
     */
-  var Outputs: js.UndefOr[typings.awsSdk.cloudformationMod.Outputs] = js.native
+  var Outputs: js.UndefOr[typings.awsSdk.cloudformationMod.Outputs] = js.undefined
   
   /**
     * A list of Parameter structures.
     */
-  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.undefined
   
   /**
     * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
     */
-  var ParentId: js.UndefOr[StackId] = js.native
+  var ParentId: js.UndefOr[StackId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that is associated with the stack. During a stack operation, AWS CloudFormation uses this role's credentials to make calls on your behalf.
     */
-  var RoleARN: js.UndefOr[RoleARN_] = js.native
+  var RoleARN: js.UndefOr[RoleARN_] = js.undefined
   
   /**
     * The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
     */
-  var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.native
+  var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.undefined
   
   /**
     * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
     */
-  var RootId: js.UndefOr[StackId] = js.native
+  var RootId: js.UndefOr[StackId] = js.undefined
   
   /**
     * Unique identifier of the stack.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
   
   /**
     * The name associated with the stack.
     */
-  var StackName: typings.awsSdk.cloudformationMod.StackName = js.native
+  var StackName: typings.awsSdk.cloudformationMod.StackName
   
   /**
     * Current status of the stack.
     */
-  var StackStatus: typings.awsSdk.cloudformationMod.StackStatus = js.native
+  var StackStatus: typings.awsSdk.cloudformationMod.StackStatus
   
   /**
     * Success/failure message associated with the stack status.
     */
-  var StackStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.StackStatusReason] = js.native
+  var StackStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.StackStatusReason] = js.undefined
   
   /**
     * A list of Tags that specify information about the stack.
     */
-  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.undefined
   
   /**
     * The amount of time within which stack creation should complete.
     */
-  var TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.native
+  var TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
 }
 object Stack {
   

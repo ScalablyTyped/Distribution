@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnvVarSource represents a source for the value of an EnvVar.
   */
-@js.native
 trait EnvVarSource extends StObject {
   
   /**
     * Selects a key of a ConfigMap.
     */
-  var configMapKeyRef: js.UndefOr[Input[ConfigMapKeySelector]] = js.native
+  var configMapKeyRef: js.UndefOr[Input[ConfigMapKeySelector]] = js.undefined
   
   /**
     * Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
     */
-  var fieldRef: js.UndefOr[Input[ObjectFieldSelector]] = js.native
+  var fieldRef: js.UndefOr[Input[ObjectFieldSelector]] = js.undefined
   
   /**
     * Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     */
-  var resourceFieldRef: js.UndefOr[Input[ResourceFieldSelector]] = js.native
+  var resourceFieldRef: js.UndefOr[Input[ResourceFieldSelector]] = js.undefined
   
   /**
     * Selects a key of a secret in the pod's namespace
     */
-  var secretKeyRef: js.UndefOr[Input[SecretKeySelector]] = js.native
+  var secretKeyRef: js.UndefOr[Input[SecretKeySelector]] = js.undefined
 }
 object EnvVarSource {
   

@@ -3,25 +3,25 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_keySessionCreated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeySessionEvent extends Event {
+trait KeySessionEvent
+  extends StObject
+     with Event {
   
-  var data: SessionToken | Null = js.native
+  var data: SessionToken | Null
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_KeySessionEvent: public_keySessionCreated = js.native
+  var type_KeySessionEvent: public_keySessionCreated
 }
 object KeySessionEvent {
   
   @scala.inline
-  def apply(`type`: public_keySessionCreated): KeySessionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): KeySessionEvent = {
+    val __obj = js.Dynamic.literal(data = null)
+    __obj.updateDynamic("type")("public_keySessionCreated")
     __obj.asInstanceOf[KeySessionEvent]
   }
   

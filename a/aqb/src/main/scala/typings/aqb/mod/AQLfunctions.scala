@@ -2,7 +2,6 @@ package typings.aqb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and throw an Error if they are not well-formed.
   */
 @js.native
-trait AQLfunctions extends Expression {
+trait AQLfunctions
+  extends StObject
+     with Expression {
   
   /**
     * Boolean
@@ -98,7 +99,7 @@ trait AQLfunctions extends Expression {
     * Any list elements that are not already  values will be converted automatically.
     *
     */
-  def list(value: js.Array[_]): ListLiteral = js.native
+  def list(value: js.Array[js.Any]): ListLiteral = js.native
   
   /**
     * Number

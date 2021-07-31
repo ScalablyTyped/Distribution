@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingComputationConfig extends StObject {
   
   /** Unique identifier for this computation. */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /** Instructions that comprise the computation. */
-  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.native
+  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.undefined
   
   /** Stage name of this computation. */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /** System defined name for this computation. */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /** Map from user name of stateful transforms in this stage to their state family. */
   var transformUserNameToStateFamily: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object StreamingComputationConfig {
   
@@ -70,7 +68,7 @@ object StreamingComputationConfig {
     def setTransformUserNameToStateFamily(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
     @scala.inline

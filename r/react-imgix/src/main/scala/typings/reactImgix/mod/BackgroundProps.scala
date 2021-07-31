@@ -2,21 +2,19 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disableLibraryParam: js.UndefOr[Boolean] = js.native
+  var disableLibraryParam: js.UndefOr[Boolean] = js.undefined
   
-  var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.native
+  var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.undefined
   
-  var imgixParams: js.UndefOr[ImigixParams] = js.native
+  var imgixParams: js.UndefOr[ImigixParams] = js.undefined
   
-  var src: String = js.native
+  var src: String
 }
 object BackgroundProps {
   

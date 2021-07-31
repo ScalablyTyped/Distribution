@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooleanRule extends StObject {
   
   /** The condition of the rule. If the condition evaluates to true, the format is applied. */
-  var condition: js.UndefOr[BooleanCondition] = js.native
+  var condition: js.UndefOr[BooleanCondition] = js.undefined
   
   /** The format to apply. Conditional formatting can only apply a subset of formatting: bold, italic, strikethrough, foreground color & background color. */
-  var format: js.UndefOr[CellFormat] = js.native
+  var format: js.UndefOr[CellFormat] = js.undefined
 }
 object BooleanRule {
   

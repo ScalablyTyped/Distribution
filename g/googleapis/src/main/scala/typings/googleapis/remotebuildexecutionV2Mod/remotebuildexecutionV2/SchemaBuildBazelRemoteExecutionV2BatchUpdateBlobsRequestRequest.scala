@@ -2,24 +2,22 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request corresponding to a single blob that the client wants to upload.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends StObject {
   
   /**
     * The raw binary data.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The digest of the blob. This MUST be the digest of `data`.
     */
-  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest {
   

@@ -2,24 +2,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SupportCodeConfig. */
-@js.native
 trait ISupportCodeConfig extends StObject {
   
   /** SupportCodeConfig afterTestCaseHooks */
-  var afterTestCaseHooks: js.UndefOr[js.Array[IHook] | Null] = js.native
+  var afterTestCaseHooks: js.UndefOr[js.Array[IHook] | Null] = js.undefined
   
   /** SupportCodeConfig beforeTestCaseHooks */
-  var beforeTestCaseHooks: js.UndefOr[js.Array[IHook] | Null] = js.native
+  var beforeTestCaseHooks: js.UndefOr[js.Array[IHook] | Null] = js.undefined
   
   /** SupportCodeConfig parameterTypes */
-  var parameterTypes: js.UndefOr[js.Array[IParameterType] | Null] = js.native
+  var parameterTypes: js.UndefOr[js.Array[IParameterType] | Null] = js.undefined
   
   /** SupportCodeConfig stepDefinitions */
-  var stepDefinitions: js.UndefOr[js.Array[IStepDefinition] | Null] = js.native
+  var stepDefinitions: js.UndefOr[js.Array[IStepDefinition] | Null] = js.undefined
 }
 object ISupportCodeConfig {
   

@@ -10,9 +10,9 @@ Array quantifier assertions for chai assertion library
 | ------------------ | :-------------: |
 | Full name          | chai-quantifiers |
 | Keywords           | chai, assertions, chai-plugin, quantifiers, array |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 54260 |
+| # downloads        | 90072 |
 | # stars            | 1 |
 
 ## Links

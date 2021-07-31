@@ -4,81 +4,81 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocatorAddressToLocationsParams extends Object {
+trait LocatorAddressToLocationsParams
+  extends StObject
+     with Object {
   
   /**
     * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var address: js.Any = js.native
+  var address: js.Any
   
   /**
     * Limit result to one or more categories.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Limit result to a specific country.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * Allows the results of single geocode transactions to be persisted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var forStorage: js.UndefOr[Boolean] = js.native
+  var forStorage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to weight returned results for a specified area.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var location: js.UndefOr[Point] = js.native
+  var location: js.UndefOr[Point] = js.undefined
   
   /**
     * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * A `suggestLocations` result ID (magicKey).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var magicKey: js.UndefOr[String] = js.native
+  var magicKey: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum results to return from the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var maxLocations: js.UndefOr[Double] = js.native
+  var maxLocations: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of fields included in the returned result set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Defines the extent within which the geocode server will search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
     */
-  var searchExtent: js.UndefOr[Extent] = js.native
+  var searchExtent: js.UndefOr[Extent] = js.undefined
 }
 object LocatorAddressToLocationsParams {
   

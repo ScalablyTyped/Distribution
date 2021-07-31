@@ -2,40 +2,38 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollBar extends StObject {
   
   /**
     * Returns the width of the scroll bar.
     **/
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
   /**
     * Emitted when the scroll bar, well, scrolls.
     * @param e Contains one property, `"data"`, which indicates the current scroll top position
     **/
-  def onScroll(e: js.Any): Unit = js.native
+  def onScroll(e: js.Any): Unit
   
   /**
     * Sets the height of the scroll bar, in pixels.
     * @param height The new height
     **/
-  def setHeight(height: Double): Unit = js.native
+  def setHeight(height: Double): Unit
   
   /**
     * Sets the inner height of the scroll bar, in pixels.
     * @param height The new inner height
     **/
-  def setInnerHeight(height: Double): Unit = js.native
+  def setInnerHeight(height: Double): Unit
   
   /**
     * Sets the scroll top of the scroll bar.
     * @param scrollTop The new scroll top
     **/
-  def setScrollTop(scrollTop: Double): Unit = js.native
+  def setScrollTop(scrollTop: Double): Unit
 }
 object ScrollBar {
   

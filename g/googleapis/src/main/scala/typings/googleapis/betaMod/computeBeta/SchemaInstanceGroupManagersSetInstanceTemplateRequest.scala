@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersSetInstanceTemplateRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaInstanceGroupManagersSetInstanceTemplateRequest extends StObject {
     * instance group. The group uses this template to create all new instances
     * in the managed instance group.
     */
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupManagersSetInstanceTemplateRequest {
   

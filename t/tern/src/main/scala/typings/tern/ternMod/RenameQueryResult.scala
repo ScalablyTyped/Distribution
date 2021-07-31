@@ -2,14 +2,12 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameQueryResult extends StObject {
   
   /** Array of changes that must be performed to apply the rename. The client is responsible for doing the actual modification. */
-  var changes: js.Array[typings.tern.anon.File] = js.native
+  var changes: js.Array[typings.tern.anon.File]
 }
 object RenameQueryResult {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousParameterRangeSpecification extends StObject {
   
   /**
     * The maximum floating-point value allowed.
     */
-  var MaxValue: ParameterValue = js.native
+  var MaxValue: ParameterValue
   
   /**
     * The minimum floating-point value allowed.
     */
-  var MinValue: ParameterValue = js.native
+  var MinValue: ParameterValue
 }
 object ContinuousParameterRangeSpecification {
   

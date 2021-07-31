@@ -7,7 +7,6 @@ import typings.reactNative.mod.ThemeAttributeBackgroundPropType
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,25 +24,24 @@ object mod {
   /* static members */
   object default {
     
-    @JSImport("react-native-platform-touchable", "default.Ripple")
+    @JSImport("react-native-platform-touchable", JSImport.Default)
     @js.native
-    def Ripple(color: String): RippleBackgroundPropType = js.native
-    @JSImport("react-native-platform-touchable", "default.Ripple")
-    @js.native
-    def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Ripple(color: String): RippleBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any]).asInstanceOf[RippleBackgroundPropType]
+    @scala.inline
+    def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any])).asInstanceOf[RippleBackgroundPropType]
     
     // TouchableNativeFeedback (default Android)
-    @JSImport("react-native-platform-touchable", "default.SelectableBackground")
-    @js.native
-    def SelectableBackground(): ThemeAttributeBackgroundPropType = js.native
+    @scala.inline
+    def SelectableBackground(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")().asInstanceOf[ThemeAttributeBackgroundPropType]
     
-    @JSImport("react-native-platform-touchable", "default.SelectableBackgroundBorderless")
-    @js.native
-    def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = js.native
+    @scala.inline
+    def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackgroundBorderless")().asInstanceOf[ThemeAttributeBackgroundPropType]
     
-    @JSImport("react-native-platform-touchable", "default.canUseNativeForeground")
-    @js.native
-    def canUseNativeForeground(): Boolean = js.native
+    @scala.inline
+    def canUseNativeForeground(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseNativeForeground")().asInstanceOf[Boolean]
   }
   
   @JSImport("react-native-platform-touchable", "Touchable")
@@ -63,44 +61,44 @@ object mod {
   /* static members */
   object Touchable {
     
-    @JSImport("react-native-platform-touchable", "Touchable.Ripple")
+    @JSImport("react-native-platform-touchable", "Touchable")
     @js.native
-    def Ripple(color: String): RippleBackgroundPropType = js.native
-    @JSImport("react-native-platform-touchable", "Touchable.Ripple")
-    @js.native
-    def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Ripple(color: String): RippleBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any]).asInstanceOf[RippleBackgroundPropType]
+    @scala.inline
+    def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any])).asInstanceOf[RippleBackgroundPropType]
     
     // TouchableNativeFeedback (default Android)
-    @JSImport("react-native-platform-touchable", "Touchable.SelectableBackground")
-    @js.native
-    def SelectableBackground(): ThemeAttributeBackgroundPropType = js.native
+    @scala.inline
+    def SelectableBackground(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")().asInstanceOf[ThemeAttributeBackgroundPropType]
     
-    @JSImport("react-native-platform-touchable", "Touchable.SelectableBackgroundBorderless")
-    @js.native
-    def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = js.native
+    @scala.inline
+    def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackgroundBorderless")().asInstanceOf[ThemeAttributeBackgroundPropType]
     
-    @JSImport("react-native-platform-touchable", "Touchable.canUseNativeForeground")
-    @js.native
-    def canUseNativeForeground(): Boolean = js.native
+    @scala.inline
+    def canUseNativeForeground(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseNativeForeground")().asInstanceOf[Boolean]
   }
   
-  @js.native
-  trait PlatformTouchableProps extends TouchableWithoutFeedbackProps {
+  trait PlatformTouchableProps
+    extends StObject
+       with TouchableWithoutFeedbackProps {
     
     // TouchableOpacity (default iOS)
-    var activeOpacity: js.UndefOr[Double] = js.native
+    var activeOpacity: js.UndefOr[Double] = js.undefined
     
     // TouchableNativeFeedback (default Android)
-    var background: js.UndefOr[BackgroundPropType] = js.native
+    var background: js.UndefOr[BackgroundPropType] = js.undefined
     
-    var foreground: js.UndefOr[BackgroundPropType] = js.native
+    var foreground: js.UndefOr[BackgroundPropType] = js.undefined
     
-    var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // TouchableHighlight
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object PlatformTouchableProps {
     

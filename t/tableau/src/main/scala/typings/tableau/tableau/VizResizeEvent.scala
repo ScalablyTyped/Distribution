@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VizResizeEvent extends TableauEvent {
+trait VizResizeEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the sheetSize record for the current sheet. For more information, see SheetSizeOptions Record. */
-  def getVizSize(): Size = js.native
+  def getVizSize(): Size
 }
 object VizResizeEvent {
   

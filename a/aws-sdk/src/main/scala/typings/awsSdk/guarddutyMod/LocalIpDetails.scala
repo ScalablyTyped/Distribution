@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalIpDetails extends StObject {
   
   /**
     * The IPv4 local address of the connection.
     */
-  var IpAddressV4: js.UndefOr[String] = js.native
+  var IpAddressV4: js.UndefOr[String] = js.undefined
 }
 object LocalIpDetails {
   

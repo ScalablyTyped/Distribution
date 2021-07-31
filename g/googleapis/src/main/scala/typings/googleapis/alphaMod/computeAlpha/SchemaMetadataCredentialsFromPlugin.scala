@@ -2,25 +2,23 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom authenticator credentials.
   */
-@js.native
 trait SchemaMetadataCredentialsFromPlugin extends StObject {
   
   /**
     * Plugin name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A text proto that conforms to a Struct type definition interpreted by the
     * plugin.
     */
-  var structConfig: js.UndefOr[String] = js.native
+  var structConfig: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadataCredentialsFromPlugin {
   

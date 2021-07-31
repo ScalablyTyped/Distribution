@@ -2,25 +2,25 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExistingDecodedSourceMap extends DecodedSourceMapOrMissing {
+trait ExistingDecodedSourceMap
+  extends StObject
+     with DecodedSourceMapOrMissing {
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var mappings: js.Array[js.Array[SourceMapSegment]] = js.native
+  var mappings: js.Array[js.Array[SourceMapSegment]]
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
-  var sourceRoot: js.UndefOr[String] = js.native
+  var sourceRoot: js.UndefOr[String] = js.undefined
   
-  var sources: js.Array[String] = js.native
+  var sources: js.Array[String]
   
-  var sourcesContent: js.UndefOr[js.Array[String]] = js.native
+  var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: Double = js.native
+  var version: Double
 }
 object ExistingDecodedSourceMap {
   

@@ -2,17 +2,15 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedSelection extends StObject {
   
-  var end: Point = js.native
+  var end: Point
   
-  var isBackwards: Boolean = js.native
+  var isBackwards: Boolean
   
-  var start: Point = js.native
+  var start: Point
 }
 object SavedSelection {
   

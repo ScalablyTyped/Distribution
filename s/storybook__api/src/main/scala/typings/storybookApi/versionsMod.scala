@@ -5,7 +5,6 @@ import typings.storybookApi.anon.Plain
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object versionsMod {
@@ -14,14 +13,13 @@ object versionsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def getCurrentVersion(): Version = js.native
+    def getCurrentVersion(): Version
     
-    def getLatestVersion(): Version = js.native
+    def getLatestVersion(): Version
     
-    def versionUpdateAvailable(): Boolean = js.native
+    def versionUpdateAvailable(): Boolean
   }
   object SubAPI {
     
@@ -49,19 +47,18 @@ object versionsMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var dismissedVersionNotification: js.UndefOr[String] = js.native
+    var dismissedVersionNotification: js.UndefOr[String] = js.undefined
     
-    var lastVersionCheck: Double = js.native
+    var lastVersionCheck: Double
     
-    var versions: Versions with UnknownEntries = js.native
+    var versions: Versions & UnknownEntries
   }
   object SubState {
     
     @scala.inline
-    def apply(lastVersionCheck: Double, versions: Versions with UnknownEntries): SubState = {
+    def apply(lastVersionCheck: Double, versions: Versions & UnknownEntries): SubState = {
       val __obj = js.Dynamic.literal(lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
@@ -79,19 +76,19 @@ object versionsMod {
       def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setVersions(value: Versions with UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     }
   }
   
   type UnknownEntries = StringDictionary[StringDictionary[js.Any]]
   
-  @js.native
   trait Version
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var info: js.UndefOr[Plain] = js.native
+    var info: js.UndefOr[Plain] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object Version {
     
@@ -115,14 +112,13 @@ object versionsMod {
     }
   }
   
-  @js.native
   trait Versions extends StObject {
     
-    var current: js.UndefOr[Version] = js.native
+    var current: js.UndefOr[Version] = js.undefined
     
-    var latest: js.UndefOr[Version] = js.native
+    var latest: js.UndefOr[Version] = js.undefined
     
-    var next: js.UndefOr[Version] = js.native
+    var next: js.UndefOr[Version] = js.undefined
   }
   object Versions {
     

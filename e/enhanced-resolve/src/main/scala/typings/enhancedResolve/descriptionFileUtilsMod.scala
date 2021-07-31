@@ -2,45 +2,42 @@ package typings.enhancedResolve
 
 import typings.enhancedResolve.concordMod.Concord
 import typings.enhancedResolve.concordMod.Dictionary
-import typings.enhancedResolve.resolverMod.^
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptionFileUtilsMod {
   
-  @JSImport("enhanced-resolve/lib/DescriptionFileUtils", "cdUp")
+  @JSImport("enhanced-resolve/lib/DescriptionFileUtils", JSImport.Namespace)
   @js.native
-  def cdUp(directory: String): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("enhanced-resolve/lib/DescriptionFileUtils", "getField")
-  @js.native
-  def getField(content: Null, field: String): js.Any = js.native
-  @JSImport("enhanced-resolve/lib/DescriptionFileUtils", "getField")
-  @js.native
-  def getField(content: Dictionary[_], field: String): js.Any = js.native
+  @scala.inline
+  def cdUp(directory: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cdUp")(directory.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("enhanced-resolve/lib/DescriptionFileUtils", "loadDescriptionFile")
-  @js.native
+  @scala.inline
+  def getField(content: Null, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getField(content: Dictionary[js.Any], field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
   def loadDescriptionFile(
-    resolver: ^,
+    resolver: typings.enhancedResolve.resolverMod.^,
     directory: String,
     filenames: js.Array[String],
     callback: js.Function2[
       /* err */ js.UndefOr[Error | Null], 
       /* result */ js.UndefOr[LoadDescriptionFileResult], 
-      _
+      js.Any
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadDescriptionFile")(resolver.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], filenames.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait DescriptionFileData extends StObject {
     
-    var browser: js.UndefOr[Dictionary[String | Boolean]] = js.native
+    var browser: js.UndefOr[Dictionary[String | Boolean]] = js.undefined
     
-    var concord: js.UndefOr[Concord] = js.native
+    var concord: js.UndefOr[Concord] = js.undefined
   }
   object DescriptionFileData {
     
@@ -67,14 +64,13 @@ object descriptionFileUtilsMod {
     }
   }
   
-  @js.native
   trait LoadDescriptionFileResult extends StObject {
     
-    var content: DescriptionFileData = js.native
+    var content: DescriptionFileData
     
-    var directory: String = js.native
+    var directory: String
     
-    var path: String = js.native
+    var path: String
   }
   object LoadDescriptionFileResult {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberOrder extends StObject {
   
   /**
     * The phone number order creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The ordered phone number details, such as the phone number in E.164 format and the phone number status.
     */
-  var OrderedPhoneNumbers: js.UndefOr[OrderedPhoneNumberList] = js.native
+  var OrderedPhoneNumbers: js.UndefOr[OrderedPhoneNumberList] = js.undefined
   
   /**
     * The phone number order ID.
     */
-  var PhoneNumberOrderId: js.UndefOr[GuidString] = js.native
+  var PhoneNumberOrderId: js.UndefOr[GuidString] = js.undefined
   
   /**
     * The phone number order product type.
     */
-  var ProductType: js.UndefOr[PhoneNumberProductType] = js.native
+  var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
   
   /**
     * The status of the phone number order.
     */
-  var Status: js.UndefOr[PhoneNumberOrderStatus] = js.native
+  var Status: js.UndefOr[PhoneNumberOrderStatus] = js.undefined
   
   /**
     * The updated phone number order timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object PhoneNumberOrder {
   

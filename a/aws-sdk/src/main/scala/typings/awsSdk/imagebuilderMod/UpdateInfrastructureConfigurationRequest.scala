@@ -2,71 +2,69 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInfrastructureConfigurationRequest extends StObject {
   
   /**
     * The idempotency token used to make this request idempotent. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The description of the infrastructure configuration. 
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration that you want to update. 
     */
-  var infrastructureConfigurationArn: InfrastructureConfigurationArn = js.native
+  var infrastructureConfigurationArn: InfrastructureConfigurationArn
   
   /**
     * The instance profile to associate with the instance used to customize your EC2 AMI. 
     */
-  var instanceProfileName: NonEmptyString = js.native
+  var instanceProfileName: NonEmptyString
   
   /**
     * The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability. 
     */
-  var instanceTypes: js.UndefOr[InstanceTypeList] = js.native
+  var instanceTypes: js.UndefOr[InstanceTypeList] = js.undefined
   
   /**
     * The key pair of the infrastructure configuration. This can be used to log on to and debug the instance used to create your image. 
     */
-  var keyPair: js.UndefOr[NonEmptyString] = js.native
+  var keyPair: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The logging configuration of the infrastructure configuration. 
     */
-  var logging: js.UndefOr[Logging] = js.native
+  var logging: js.UndefOr[Logging] = js.undefined
   
   /**
     * The tags attached to the resource created by Image Builder.
     */
-  var resourceTags: js.UndefOr[ResourceTagMap] = js.native
+  var resourceTags: js.UndefOr[ResourceTagMap] = js.undefined
   
   /**
     * The security group IDs to associate with the instance used to customize your EC2 AMI. 
     */
-  var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.native
+  var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
     * The SNS topic on which to send image build events. 
     */
-  var snsTopicArn: js.UndefOr[SnsTopicArn] = js.native
+  var snsTopicArn: js.UndefOr[SnsTopicArn] = js.undefined
   
   /**
     * The subnet ID to place the instance used to customize your EC2 AMI in. 
     */
-  var subnetId: js.UndefOr[NonEmptyString] = js.native
+  var subnetId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails. 
     */
-  var terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.native
+  var terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
 }
 object UpdateInfrastructureConfigurationRequest {
   

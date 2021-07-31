@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the target app the user chose to share content with. To get this object, you must handle the TargetApplicationChosen event. */
-@js.native
 trait TargetApplicationChosenEventArgs extends StObject {
   
   /** Contains the name of the app that the user chose to share content with. */
-  var applicationName: String = js.native
+  var applicationName: String
 }
 object TargetApplicationChosenEventArgs {
   

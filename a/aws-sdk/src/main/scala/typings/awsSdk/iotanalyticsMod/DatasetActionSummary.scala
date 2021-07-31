@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetActionSummary extends StObject {
   
   /**
     * The name of the action that automatically creates the dataset's contents.
     */
-  var actionName: js.UndefOr[DatasetActionName] = js.native
+  var actionName: js.UndefOr[DatasetActionName] = js.undefined
   
   /**
     * The type of action by which the dataset's contents are automatically created.
     */
-  var actionType: js.UndefOr[DatasetActionType] = js.native
+  var actionType: js.UndefOr[DatasetActionType] = js.undefined
 }
 object DatasetActionSummary {
   

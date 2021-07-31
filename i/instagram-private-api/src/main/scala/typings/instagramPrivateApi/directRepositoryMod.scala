@@ -9,7 +9,6 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.reshare
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directRepositoryMod {
@@ -24,7 +23,7 @@ object directRepositoryMod {
     def getPresence(): js.Promise[DirectRepositoryGetPresenceResponseRootObject] = js.native
     
     def rankedRecipients(): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
-    def rankedRecipients(mode: js.UndefOr[scala.Nothing], query: String): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
+    def rankedRecipients(mode: Unit, query: String): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
     @JSName("rankedRecipients")
     def rankedRecipients_raven(mode: raven): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
     @JSName("rankedRecipients")

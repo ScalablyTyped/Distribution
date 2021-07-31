@@ -2,36 +2,34 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceRegistryEnrichActivity extends StObject {
   
   /**
     * The name of the attribute that is added to the message.
     */
-  var attribute: AttributeName = js.native
+  var attribute: AttributeName
   
   /**
     * The name of the deviceRegistryEnrich activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
   
   /**
     * The ARN of the role that allows access to the device's registry information.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The name of the IoT device whose registry information is added to the message.
     */
-  var thingName: AttributeName = js.native
+  var thingName: AttributeName
 }
 object DeviceRegistryEnrichActivity {
   

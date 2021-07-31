@@ -3,56 +3,54 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionDetails extends StObject {
   
   /**
     * Column number of the exception location (0-based).
     */
-  var columnNumber: integer = js.native
+  var columnNumber: integer
   
   /**
     * Exception object if available.
     */
-  var exception: js.UndefOr[RemoteObject] = js.native
+  var exception: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * Exception id.
     */
-  var exceptionId: integer = js.native
+  var exceptionId: integer
   
   /**
     * Identifier of the context where exception happened.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Line number of the exception location (0-based).
     */
-  var lineNumber: integer = js.native
+  var lineNumber: integer
   
   /**
     * Script ID of the exception location.
     */
-  var scriptId: js.UndefOr[ScriptId] = js.native
+  var scriptId: js.UndefOr[ScriptId] = js.undefined
   
   /**
     * JavaScript stack trace if available.
     */
-  var stackTrace: js.UndefOr[StackTrace] = js.native
+  var stackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Exception text, which should be used together with exception object when available.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * URL of the exception location, to be used when the script was not reported.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ExceptionDetails {
   

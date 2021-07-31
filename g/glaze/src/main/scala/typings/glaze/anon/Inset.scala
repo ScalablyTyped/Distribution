@@ -16,27 +16,25 @@ import typings.glaze.glazeStrings.top
 import typings.glaze.glazeStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inset extends StObject {
   
-  val inset: js.Tuple4[top, right, bottom, left] = js.native
+  val inset: js.Tuple4[top, right, bottom, left]
   
-  val insetX: js.Tuple2[left, right] = js.native
+  val insetX: js.Tuple2[left, right]
   
-  val insetY: js.Tuple2[top, bottom] = js.native
+  val insetY: js.Tuple2[top, bottom]
   
-  val marginX: js.Tuple2[marginLeft, marginRight] = js.native
+  val marginX: js.Tuple2[marginLeft, marginRight]
   
-  val marginY: js.Tuple2[marginTop, marginBottom] = js.native
+  val marginY: js.Tuple2[marginTop, marginBottom]
   
-  val paddingX: js.Tuple2[paddingLeft, paddingRight] = js.native
+  val paddingX: js.Tuple2[paddingLeft, paddingRight]
   
-  val paddingY: js.Tuple2[paddingTop, paddingBottom] = js.native
+  val paddingY: js.Tuple2[paddingTop, paddingBottom]
   
-  val size: js.Tuple2[width, height] = js.native
+  val size: js.Tuple2[width, height]
 }
 object Inset {
   

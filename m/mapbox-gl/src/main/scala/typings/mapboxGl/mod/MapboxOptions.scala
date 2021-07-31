@@ -8,10 +8,8 @@ import typings.mapboxGl.mapboxGlStrings.`top-right`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapboxOptions extends StObject {
   
   /**
@@ -19,30 +17,30 @@ trait MapboxOptions extends StObject {
     *
     * @default null
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the gl context will be created with MSA antialiasing, which can be useful for antialiasing custom layers.
     * This is false by default as a performance optimization.
     */
-  var antialias: js.UndefOr[Boolean] = js.native
+  var antialias: js.UndefOr[Boolean] = js.undefined
   
   /** If true, an attribution control will be added to the map. */
-  var attributionControl: js.UndefOr[Boolean] = js.native
+  var attributionControl: js.UndefOr[Boolean] = js.undefined
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
   /** Snap to north threshold in degrees. */
-  var bearingSnap: js.UndefOr[Double] = js.native
+  var bearingSnap: js.UndefOr[Double] = js.undefined
   
   /** The initial bounds of the map. If bounds is specified, it overrides center and zoom constructor options. */
-  var bounds: js.UndefOr[LngLatBoundsLike] = js.native
+  var bounds: js.UndefOr[LngLatBoundsLike] = js.undefined
   
   /** If true, enable the "box zoom" interaction (see BoxZoomHandler) */
-  var boxZoom: js.UndefOr[Boolean] = js.native
+  var boxZoom: js.UndefOr[Boolean] = js.undefined
   
   /** initial map center */
-  var center: js.UndefOr[LngLatLike] = js.native
+  var center: js.UndefOr[LngLatLike] = js.undefined
   
   /**
     * The max number of pixels a user can shift the mouse pointer during a click for it to be
@@ -50,7 +48,7 @@ trait MapboxOptions extends StObject {
     *
     * @default 3
     */
-  var clickTolerance: js.UndefOr[Double] = js.native
+  var clickTolerance: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, Resource Timing API information will be collected for requests made by GeoJSON
@@ -60,10 +58,10 @@ trait MapboxOptions extends StObject {
     *
     * @default false
     */
-  var collectResourceTiming: js.UndefOr[Boolean] = js.native
+  var collectResourceTiming: js.UndefOr[Boolean] = js.undefined
   
   /** ID of the container element */
-  var container: String | HTMLElement = js.native
+  var container: String | HTMLElement
   
   /**
     * If `true`, symbols from multiple sources can collide with each other during collision
@@ -71,20 +69,20 @@ trait MapboxOptions extends StObject {
     *
     * @default true
     */
-  var crossSourceCollisions: js.UndefOr[Boolean] = js.native
+  var crossSourceCollisions: js.UndefOr[Boolean] = js.undefined
   
   /** String or strings to show in an AttributionControl.
     * Only applicable if options.attributionControl is `true`. */
-  var customAttribution: js.UndefOr[String | js.Array[String]] = js.native
+  var customAttribution: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** If true, enable the "double click to zoom" interaction (see DoubleClickZoomHandler). */
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
   /** If true, enable the "drag to pan" interaction (see DragPanHandler). */
-  var dragPan: js.UndefOr[Boolean] = js.native
+  var dragPan: js.UndefOr[Boolean] = js.undefined
   
   /** If true, enable the "drag to rotate" interaction (see DragRotateHandler). */
-  var dragRotate: js.UndefOr[Boolean] = js.native
+  var dragRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls the duration of the fade-in/fade-out animation for label collisions, in milliseconds.
@@ -93,13 +91,13 @@ trait MapboxOptions extends StObject {
     *
     * @default 300
     */
-  var fadeDuration: js.UndefOr[Double] = js.native
+  var fadeDuration: js.UndefOr[Double] = js.undefined
   
   /** If true, map creation will fail if the implementation determines that the performance of the created WebGL context would be dramatically lower than expected. */
-  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.native
+  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
   
   /** A fitBounds options object to use only when setting the bounds option. */
-  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.native
+  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
   
   /** If `true`, the map's position (zoom, center latitude, center longitude, bearing, and pitch) will be synced with the hash fragment of the page's URL.
     * For example, `http://path/to/my/page.html#2.59/39.26/53.07/-24.1/60`.
@@ -107,13 +105,13 @@ trait MapboxOptions extends StObject {
     * e.g. http://path/to/my/page.html#map=2.59/39.26/53.07/-24.1/60&foo=bar, where foo
     * is a custom parameter and bar is an arbitrary hash distinct from the map hash.
     * */
-  var hash: js.UndefOr[Boolean | String] = js.native
+  var hash: js.UndefOr[Boolean | String] = js.undefined
   
   /** If false, no mouse, touch, or keyboard listeners are attached to the map, so it will not respond to input */
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
   /** If true, enable keyboard shortcuts (see KeyboardHandler). */
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If specified, defines a CSS font-family for locally overriding generation of glyphs in the
@@ -123,7 +121,7 @@ trait MapboxOptions extends StObject {
     *
     * @default null
     */
-  var localIdeographFontFamily: js.UndefOr[String] = js.native
+  var localIdeographFontFamily: js.UndefOr[String] = js.undefined
   
   /** A patch to apply to the default localization table for UI strings, e.g. control tooltips.
     * The `locale` object maps namespaced UI string IDs to translated strings in the target language;
@@ -131,20 +129,20 @@ trait MapboxOptions extends StObject {
     * The object may specify all UI strings (thereby adding support for a new translation) or
     * only a subset of strings (thereby patching the default translation table).
     */
-  var locale: js.UndefOr[StringDictionary[String]] = js.native
+  var locale: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A string representing the position of the Mapbox wordmark on the map.
     *
     * @default "bottom-left"
     */
-  var logoPosition: js.UndefOr[`top-left` | `top-right` | `bottom-left` | `bottom-right`] = js.native
+  var logoPosition: js.UndefOr[`top-left` | `top-right` | `bottom-left` | `bottom-right`] = js.undefined
   
   /** If set, the map is constrained to the given bounds. */
-  var maxBounds: js.UndefOr[LngLatBoundsLike] = js.native
+  var maxBounds: js.UndefOr[LngLatBoundsLike] = js.undefined
   
   /** Maximum pitch of the map. */
-  var maxPitch: js.UndefOr[Double] = js.native
+  var maxPitch: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of tiles stored in the tile cache for a given source. If omitted, the
@@ -152,16 +150,16 @@ trait MapboxOptions extends StObject {
     *
     * @default null
     */
-  var maxTileCacheSize: js.UndefOr[Double] = js.native
+  var maxTileCacheSize: js.UndefOr[Double] = js.undefined
   
   /** Maximum zoom of the map. */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /** Minimum pitch of the map. */
-  var minPitch: js.UndefOr[Double] = js.native
+  var minPitch: js.UndefOr[Double] = js.undefined
   
   /** Minimum zoom of the map. */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The initial pitch (tilt) of the map, measured in degrees away from the plane of the
@@ -169,17 +167,17 @@ trait MapboxOptions extends StObject {
     *
     * @default 0
     */
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
   /**
     * If `false`, the map's pitch (tilt) control with "drag to rotate" interaction will be disabled.
     *
     * @default true
     */
-  var pitchWithRotate: js.UndefOr[Boolean] = js.native
+  var pitchWithRotate: js.UndefOr[Boolean] = js.undefined
   
   /** If true, The maps canvas can be exported to a PNG using map.getCanvas().toDataURL();. This is false by default as a performance optimization. */
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `false`, the map won't attempt to re-request tiles once they expire per their HTTP
@@ -187,29 +185,29 @@ trait MapboxOptions extends StObject {
     *
     * @default true
     */
-  var refreshExpiredTiles: js.UndefOr[Boolean] = js.native
+  var refreshExpiredTiles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, multiple copies of the world will be rendered, when zoomed out.
     *
     * @default true
     */
-  var renderWorldCopies: js.UndefOr[Boolean] = js.native
+  var renderWorldCopies: js.UndefOr[Boolean] = js.undefined
   
   /** If true, enable the "scroll to zoom" interaction */
-  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.undefined
   
   /** stylesheet location */
-  var style: js.UndefOr[Style | String] = js.native
+  var style: js.UndefOr[Style | String] = js.undefined
   
   /** If true, the "drag to pitch" interaction is enabled */
-  var touchPitch: js.UndefOr[Boolean] = js.native
+  var touchPitch: js.UndefOr[Boolean] = js.undefined
   
   /** If true, enable the "pinch to rotate and zoom" interaction (see TouchZoomRotateHandler). */
-  var touchZoomRotate: js.UndefOr[Boolean] = js.native
+  var touchZoomRotate: js.UndefOr[Boolean] = js.undefined
   
   /** If  true, the map will automatically resize when the browser window resizes */
-  var trackResize: js.UndefOr[Boolean] = js.native
+  var trackResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A callback run before the Map makes a request for an external URL. The callback can be
@@ -217,10 +215,10 @@ trait MapboxOptions extends StObject {
     *
     * @default null
     */
-  var transformRequest: js.UndefOr[TransformRequestFunction] = js.native
+  var transformRequest: js.UndefOr[TransformRequestFunction] = js.undefined
   
   /** Initial zoom level */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object MapboxOptions {
   

@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLayerVersionMod {
   
-  @JSImport("@pulumi/aws/lambda/getLayerVersion", "getLayerVersion")
+  @JSImport("@pulumi/aws/lambda/getLayerVersion", JSImport.Namespace)
   @js.native
-  def getLayerVersion(args: GetLayerVersionArgs): js.Promise[GetLayerVersionResult] = js.native
-  @JSImport("@pulumi/aws/lambda/getLayerVersion", "getLayerVersion")
-  @js.native
-  def getLayerVersion(args: GetLayerVersionArgs, opts: InvokeOptions): js.Promise[GetLayerVersionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLayerVersion(args: GetLayerVersionArgs): js.Promise[GetLayerVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLayerVersionResult]]
+  @scala.inline
+  def getLayerVersion(args: GetLayerVersionArgs, opts: InvokeOptions): js.Promise[GetLayerVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLayerVersionResult]]
+  
   trait GetLayerVersionArgs extends StObject {
     
     /**
       * Specific runtime the layer version must support. Conflicts with `version`. If specified, the latest available layer version supporting the provided runtime will be used.
       */
-    val compatibleRuntime: js.UndefOr[String] = js.native
+    val compatibleRuntime: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the lambda layer.
       */
-    val layerName: String = js.native
+    val layerName: String
     
     /**
       * Specific layer version. Conflicts with `compatibleRuntime`. If omitted, the latest available layer version will be used.
       */
-    val version: js.UndefOr[Double] = js.native
+    val version: js.UndefOr[Double] = js.undefined
   }
   object GetLayerVersionArgs {
     
@@ -61,62 +61,61 @@ object getLayerVersionMod {
     }
   }
   
-  @js.native
   trait GetLayerVersionResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Lambda Layer with version.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val compatibleRuntime: js.UndefOr[String] = js.native
+    val compatibleRuntime: js.UndefOr[String] = js.undefined
     
     /**
       * A list of [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_GetLayerVersion.html#SSS-GetLayerVersion-response-CompatibleRuntimes) the specific Lambda Layer version is compatible with.
       */
-    val compatibleRuntimes: js.Array[String] = js.native
+    val compatibleRuntimes: js.Array[String]
     
     /**
       * The date this resource was created.
       */
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * Description of the specific Lambda Layer version.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The Amazon Resource Name (ARN) of the Lambda Layer without version.
       */
-    val layerArn: String = js.native
+    val layerArn: String
     
-    val layerName: String = js.native
+    val layerName: String
     
     /**
       * License info associated with the specific Lambda Layer version.
       */
-    val licenseInfo: String = js.native
+    val licenseInfo: String
     
     /**
       * Base64-encoded representation of raw SHA-256 sum of the zip file.
       */
-    val sourceCodeHash: String = js.native
+    val sourceCodeHash: String
     
     /**
       * The size in bytes of the function .zip file.
       */
-    val sourceCodeSize: Double = js.native
+    val sourceCodeSize: Double
     
     /**
       * This Lamba Layer version.
       */
-    val version: Double = js.native
+    val version: Double
   }
   object GetLayerVersionResult {
     

@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Rule extends StObject {
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var suffix: String = js.native
+  var suffix: String
 }
 object S3Rule {
   

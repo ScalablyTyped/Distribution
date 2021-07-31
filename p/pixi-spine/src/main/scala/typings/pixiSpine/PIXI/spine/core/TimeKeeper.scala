@@ -2,27 +2,25 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeKeeper extends StObject {
   
-  var delta: Double = js.native
+  var delta: Double
   
-  var frameCount: js.Any = js.native
+  var frameCount: js.Any
   
-  var frameTime: js.Any = js.native
+  var frameTime: js.Any
   
-  var framesPerSecond: Double = js.native
+  var framesPerSecond: Double
   
-  var lastTime: js.Any = js.native
+  var lastTime: js.Any
   
-  var maxDelta: Double = js.native
+  var maxDelta: Double
   
-  var totalTime: Double = js.native
+  var totalTime: Double
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object TimeKeeper {
   

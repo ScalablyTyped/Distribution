@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFeedRequest extends StObject {
   
   /**
     * Required. The new values of feed details. It must match an existing feed and the field `name` must be in the format of: projects/project_number/feeds/feed_id or
     * folders/folder_number/feeds/feed_id or organizations/organization_number/feeds/feed_id.
     */
-  var feed: js.UndefOr[Feed] = js.native
+  var feed: js.UndefOr[Feed] = js.undefined
   
   /** Required. Only updates the `feed` fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateFeedRequest {
   

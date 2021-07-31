@@ -22,7 +22,6 @@ import typings.micromark.micromarkStrings.string
 import typings.micromark.micromarkStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantConstantsMod extends Shortcut {
@@ -113,117 +112,81 @@ object constantConstantsMod extends Shortcut {
     def text: typings.micromark.micromarkStrings.text = "text".asInstanceOf[typings.micromark.micromarkStrings.text]
   }
   
-  @js.native
   trait Constants extends StObject {
     
-    var asciiAlphaCaseDifference: `32` = js.native
+    var asciiAlphaCaseDifference: `32`
     
-    var attentionSideAfter: `2` = js.native
+    var attentionSideAfter: `2`
     
-    var attentionSideBefore: `1` = js.native
+    var attentionSideBefore: `1`
     
-    var atxHeadingOpeningFenceSizeMax: `6` = js.native
+    var atxHeadingOpeningFenceSizeMax: `6`
     
-    var autolinkDomainSizeMax: `63` = js.native
+    var autolinkDomainSizeMax: `63`
     
-    var autolinkSchemeSizeMax: `32` = js.native
+    var autolinkSchemeSizeMax: `32`
     
-    var cdataOpeningString: `CDATA[` = js.native
+    var cdataOpeningString: `CDATA[`
     
-    var characterGroupPunctuation: `2` = js.native
+    var characterGroupPunctuation: `2`
     
-    var characterGroupWhitespace: `1` = js.native
+    var characterGroupWhitespace: `1`
     
-    var characterReferenceDecimalSizeMax: `7` = js.native
+    var characterReferenceDecimalSizeMax: `7`
     
-    var characterReferenceHexadecimalSizeMax: `6` = js.native
+    var characterReferenceHexadecimalSizeMax: `6`
     
-    var characterReferenceNamedSizeMax: `31` = js.native
+    var characterReferenceNamedSizeMax: `31`
     
-    var codeFencedSequenceSizeMin: `3` = js.native
+    var codeFencedSequenceSizeMin: `3`
     
-    var contentTypeContent: content = js.native
+    var contentTypeContent: content
     
-    var contentTypeFlow: flow = js.native
+    var contentTypeFlow: flow
     
-    var contentTypeString: string = js.native
+    var contentTypeString: string
     
-    var contentTypeText: text = js.native
+    var contentTypeText: text
     
-    var hardBreakPrefixSizeMin: `2` = js.native
+    var hardBreakPrefixSizeMin: `2`
     
-    var htmlBasic: `6` = js.native
+    var htmlBasic: `6`
     
-    var htmlCdata: `5` = js.native
+    var htmlCdata: `5`
     
-    var htmlComment: `2` = js.native
+    var htmlComment: `2`
     
-    var htmlComplete: `7` = js.native
+    var htmlComplete: `7`
     
-    var htmlDeclaration: `4` = js.native
+    var htmlDeclaration: `4`
     
-    var htmlInstruction: `3` = js.native
+    var htmlInstruction: `3`
     
-    var htmlRaw: `1` = js.native
+    var htmlRaw: `1`
     
-    var htmlRawSizeMax: `6` = js.native
+    var htmlRawSizeMax: `6`
     
-    var linkReferenceSizeMax: `999` = js.native
+    var linkReferenceSizeMax: `999`
     
-    var linkResourceDestinationBalanceMax: `3` = js.native
+    var linkResourceDestinationBalanceMax: `3`
     
-    var listItemValueSizeMax: `10` = js.native
+    var listItemValueSizeMax: `10`
     
-    var numericBaseDecimal: `10` = js.native
+    var numericBaseDecimal: `10`
     
-    var numericBaseHexadecimal: `16` = js.native
+    var numericBaseHexadecimal: `16`
     
-    var tabSize: `4` = js.native
+    var tabSize: `4`
     
-    var thematicBreakMarkerCountMin: `3` = js.native
+    var thematicBreakMarkerCountMin: `3`
     
-    var v8MaxSafeChunkSize: `10000` = js.native
+    var v8MaxSafeChunkSize: `10000`
   }
   object Constants {
     
     @scala.inline
-    def apply(
-      asciiAlphaCaseDifference: `32`,
-      attentionSideAfter: `2`,
-      attentionSideBefore: `1`,
-      atxHeadingOpeningFenceSizeMax: `6`,
-      autolinkDomainSizeMax: `63`,
-      autolinkSchemeSizeMax: `32`,
-      cdataOpeningString: `CDATA[`,
-      characterGroupPunctuation: `2`,
-      characterGroupWhitespace: `1`,
-      characterReferenceDecimalSizeMax: `7`,
-      characterReferenceHexadecimalSizeMax: `6`,
-      characterReferenceNamedSizeMax: `31`,
-      codeFencedSequenceSizeMin: `3`,
-      contentTypeContent: content,
-      contentTypeFlow: flow,
-      contentTypeString: string,
-      contentTypeText: text,
-      hardBreakPrefixSizeMin: `2`,
-      htmlBasic: `6`,
-      htmlCdata: `5`,
-      htmlComment: `2`,
-      htmlComplete: `7`,
-      htmlDeclaration: `4`,
-      htmlInstruction: `3`,
-      htmlRaw: `1`,
-      htmlRawSizeMax: `6`,
-      linkReferenceSizeMax: `999`,
-      linkResourceDestinationBalanceMax: `3`,
-      listItemValueSizeMax: `10`,
-      numericBaseDecimal: `10`,
-      numericBaseHexadecimal: `16`,
-      tabSize: `4`,
-      thematicBreakMarkerCountMin: `3`,
-      v8MaxSafeChunkSize: `10000`
-    ): Constants = {
-      val __obj = js.Dynamic.literal(asciiAlphaCaseDifference = asciiAlphaCaseDifference.asInstanceOf[js.Any], attentionSideAfter = attentionSideAfter.asInstanceOf[js.Any], attentionSideBefore = attentionSideBefore.asInstanceOf[js.Any], atxHeadingOpeningFenceSizeMax = atxHeadingOpeningFenceSizeMax.asInstanceOf[js.Any], autolinkDomainSizeMax = autolinkDomainSizeMax.asInstanceOf[js.Any], autolinkSchemeSizeMax = autolinkSchemeSizeMax.asInstanceOf[js.Any], cdataOpeningString = cdataOpeningString.asInstanceOf[js.Any], characterGroupPunctuation = characterGroupPunctuation.asInstanceOf[js.Any], characterGroupWhitespace = characterGroupWhitespace.asInstanceOf[js.Any], characterReferenceDecimalSizeMax = characterReferenceDecimalSizeMax.asInstanceOf[js.Any], characterReferenceHexadecimalSizeMax = characterReferenceHexadecimalSizeMax.asInstanceOf[js.Any], characterReferenceNamedSizeMax = characterReferenceNamedSizeMax.asInstanceOf[js.Any], codeFencedSequenceSizeMin = codeFencedSequenceSizeMin.asInstanceOf[js.Any], contentTypeContent = contentTypeContent.asInstanceOf[js.Any], contentTypeFlow = contentTypeFlow.asInstanceOf[js.Any], contentTypeString = contentTypeString.asInstanceOf[js.Any], contentTypeText = contentTypeText.asInstanceOf[js.Any], hardBreakPrefixSizeMin = hardBreakPrefixSizeMin.asInstanceOf[js.Any], htmlBasic = htmlBasic.asInstanceOf[js.Any], htmlCdata = htmlCdata.asInstanceOf[js.Any], htmlComment = htmlComment.asInstanceOf[js.Any], htmlComplete = htmlComplete.asInstanceOf[js.Any], htmlDeclaration = htmlDeclaration.asInstanceOf[js.Any], htmlInstruction = htmlInstruction.asInstanceOf[js.Any], htmlRaw = htmlRaw.asInstanceOf[js.Any], htmlRawSizeMax = htmlRawSizeMax.asInstanceOf[js.Any], linkReferenceSizeMax = linkReferenceSizeMax.asInstanceOf[js.Any], linkResourceDestinationBalanceMax = linkResourceDestinationBalanceMax.asInstanceOf[js.Any], listItemValueSizeMax = listItemValueSizeMax.asInstanceOf[js.Any], numericBaseDecimal = numericBaseDecimal.asInstanceOf[js.Any], numericBaseHexadecimal = numericBaseHexadecimal.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], thematicBreakMarkerCountMin = thematicBreakMarkerCountMin.asInstanceOf[js.Any], v8MaxSafeChunkSize = v8MaxSafeChunkSize.asInstanceOf[js.Any])
+    def apply(): Constants = {
+      val __obj = js.Dynamic.literal(asciiAlphaCaseDifference = 32, attentionSideAfter = 2, attentionSideBefore = 1, atxHeadingOpeningFenceSizeMax = 6, autolinkDomainSizeMax = 63, autolinkSchemeSizeMax = 32, cdataOpeningString = "CDATA[", characterGroupPunctuation = 2, characterGroupWhitespace = 1, characterReferenceDecimalSizeMax = 7, characterReferenceHexadecimalSizeMax = 6, characterReferenceNamedSizeMax = 31, codeFencedSequenceSizeMin = 3, contentTypeContent = "content", contentTypeFlow = "flow", contentTypeString = "string", contentTypeText = "text", hardBreakPrefixSizeMin = 2, htmlBasic = 6, htmlCdata = 5, htmlComment = 2, htmlComplete = 7, htmlDeclaration = 4, htmlInstruction = 3, htmlRaw = 1, htmlRawSizeMax = 6, linkReferenceSizeMax = 999, linkResourceDestinationBalanceMax = 3, listItemValueSizeMax = 10, numericBaseDecimal = 10, numericBaseHexadecimal = 16, tabSize = 4, thematicBreakMarkerCountMin = 3, v8MaxSafeChunkSize = 10000)
       __obj.asInstanceOf[Constants]
     }
     

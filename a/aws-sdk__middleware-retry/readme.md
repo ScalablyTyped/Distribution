@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-retry/rc.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-retry) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-retry.svg)](https://www.npmjs.com/package/@aws-sdk
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-retry/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-retry) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-retry.svg)](https://www.npmjs.com/package/@aws
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-retry |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 235 |
-| # downloads        | 3528984 |
+| # releases         | 42 |
+| # dependents       | 247 |
+| # downloads        | 6954027 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/middleware-retry)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-retry)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmiddleware-retry)

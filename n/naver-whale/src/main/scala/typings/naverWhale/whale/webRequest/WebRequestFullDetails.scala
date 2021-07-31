@@ -2,21 +2,20 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.chrome.chrome.webRequest.ResourceRequest because Already inherited
 - typings.chrome.chrome.webRequest.WebRequestDetails because Already inherited
-- typings.chrome.chrome.webRequest.WebRequestBodyDetails because var conflicts: frameId, initiator, method, parentFrameId, requestId, tabId, timeStamp, `type`, url. Inlined requestBody */ @js.native
-trait WebRequestFullDetails
-  extends typings.chrome.chrome.webRequest.WebRequestHeadersDetails {
+- typings.chrome.chrome.webRequest.WebRequestBodyDetails because var conflicts: frameId, initiator, method, parentFrameId, requestId, tabId, timeStamp, `type`, url. Inlined requestBody */ trait WebRequestFullDetails
+  extends StObject
+     with typings.chrome.chrome.webRequest.WebRequestHeadersDetails {
   
   /**
     * Contains the HTTP request body data. Only provided if extraInfoSpec contains 'requestBody'.
     * @since Chrome 23.
     */
-  var requestBody: typings.chrome.chrome.webRequest.WebRequestBody = js.native
+  var requestBody: typings.chrome.chrome.webRequest.WebRequestBody
 }
 object WebRequestFullDetails {
   

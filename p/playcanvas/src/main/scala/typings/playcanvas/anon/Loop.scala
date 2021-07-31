@@ -2,19 +2,17 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loop extends StObject {
   
-  var fps: js.UndefOr[Double] = js.native
+  var fps: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[js.Any] = js.native
+  var loop: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var spriteAsset: js.UndefOr[Double] = js.native
+  var spriteAsset: js.UndefOr[Double] = js.undefined
 }
 object Loop {
   

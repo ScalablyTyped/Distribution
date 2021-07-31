@@ -7,16 +7,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.processed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media sample used by the MediaStreamSource . */
 @js.native
 trait MediaStreamSample extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_processed(`type`: processed, listener: TypedEventHandler[MediaStreamSample, _]): Unit = js.native
+  def addEventListener_processed(`type`: processed, listener: TypedEventHandler[MediaStreamSample, js.Any]): Unit = js.native
   
   /** Gets the buffer which encapsulates the MediaStreamSample data. */
   var buffer: Buffer = js.native
@@ -37,17 +36,17 @@ trait MediaStreamSample extends StObject {
   var keyFrame: Boolean = js.native
   
   /** Occurs when the MediaStreamSample has been processed by the media pipeline. */
-  def onprocessed(ev: js.Any with WinRTEvent[MediaStreamSample]): Unit = js.native
+  def onprocessed(ev: js.Any & WinRTEvent[MediaStreamSample]): Unit = js.native
   /** Occurs when the MediaStreamSample has been processed by the media pipeline. */
   @JSName("onprocessed")
-  var onprocessed_Original: TypedEventHandler[MediaStreamSample, _] = js.native
+  var onprocessed_Original: TypedEventHandler[MediaStreamSample, js.Any] = js.native
   
   /** Gets a MediaStreamSampleProtectionProperties object, which is used for getting and setting properties that are specific to the Digital Rights Management (DRM) protection of the MediaStreamSample . */
   var protection: MediaStreamSampleProtectionProperties = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_processed(`type`: processed, listener: TypedEventHandler[MediaStreamSample, _]): Unit = js.native
+  def removeEventListener_processed(`type`: processed, listener: TypedEventHandler[MediaStreamSample, js.Any]): Unit = js.native
   
   /** Gets the time at which a sample should be rendered. This is also referred to as the presentation time. */
   var timestamp: Double = js.native

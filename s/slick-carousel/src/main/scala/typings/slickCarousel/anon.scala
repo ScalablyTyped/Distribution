@@ -2,31 +2,29 @@ package typings.slickCarousel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurX extends StObject {
     
-    var curX: js.UndefOr[Double] = js.native
+    var curX: js.UndefOr[Double] = js.undefined
     
-    var curY: js.UndefOr[Double] = js.native
+    var curY: js.UndefOr[Double] = js.undefined
     
-    var edgeHit: js.UndefOr[Boolean] = js.native
+    var edgeHit: js.UndefOr[Boolean] = js.undefined
     
-    var fingerCount: js.UndefOr[Double] = js.native
+    var fingerCount: js.UndefOr[Double] = js.undefined
     
-    var minSwipe: js.UndefOr[Double] = js.native
+    var minSwipe: js.UndefOr[Double] = js.undefined
     
-    var startX: js.UndefOr[Double] = js.native
+    var startX: js.UndefOr[Double] = js.undefined
     
-    var startY: js.UndefOr[Double] = js.native
+    var startY: js.UndefOr[Double] = js.undefined
     
-    var swipeLength: js.UndefOr[Double] = js.native
+    var swipeLength: js.UndefOr[Double] = js.undefined
     
-    var verticalSwiping: js.UndefOr[Boolean] = js.native
+    var verticalSwiping: js.UndefOr[Boolean] = js.undefined
   }
   object CurX {
     

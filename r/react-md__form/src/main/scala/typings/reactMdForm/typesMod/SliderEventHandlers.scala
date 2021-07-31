@@ -10,20 +10,18 @@ import typings.react.mod.TouchEventHandler
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react.react.HTMLAttributes<std.HTMLSpanElement>, @react-md/form.@react-md/form/types/slider/types.SliderEventHandlerNames> */
-@js.native
 trait SliderEventHandlers extends StObject {
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.undefined
 }
 object SliderEventHandlers {
   

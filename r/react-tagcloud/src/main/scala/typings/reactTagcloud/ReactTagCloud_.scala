@@ -7,28 +7,27 @@ import typings.react.mod.ComponentState
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactTagCloud_ {
   
   @js.native
   trait DefaultRendererFactory
-    extends Instantiable0[RendererFunction]
+    extends StObject
+       with Instantiable0[RendererFunction]
        with Instantiable1[/* _ref */ DefaultRendererFactoryOptions, RendererFunction] {
     
     def apply(): RendererFunction = js.native
     def apply(_ref: DefaultRendererFactoryOptions): RendererFunction = js.native
   }
   
-  @js.native
   trait DefaultRendererFactoryOptions extends StObject {
     
-    var colorOptions: js.UndefOr[js.Any] = js.native
+    var colorOptions: js.UndefOr[js.Any] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.native
+    var props: js.UndefOr[js.Any] = js.undefined
     
-    var tagRenderer: js.UndefOr[js.Function] = js.native
+    var tagRenderer: js.UndefOr[js.Function] = js.undefined
   }
   object DefaultRendererFactoryOptions {
     
@@ -71,31 +70,32 @@ object ReactTagCloud_ {
   
   type TagCloudClass = ComponentClass[TagCloudProps, ComponentState]
   
-  @js.native
-  trait TagCloudProps extends Props[Unit] {
+  trait TagCloudProps
+    extends StObject
+       with Props[Unit] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colorOptions: js.UndefOr[js.Object] = js.native
+    var colorOptions: js.UndefOr[js.Object] = js.undefined
     
-    var disableRandomColor: js.UndefOr[Boolean] = js.native
+    var disableRandomColor: js.UndefOr[Boolean] = js.undefined
     
-    var maxSize: Double = js.native
+    var maxSize: Double
     
-    var minSize: Double = js.native
+    var minSize: Double
     
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
-    var renderer: js.UndefOr[js.Function] = js.native
+    var renderer: js.UndefOr[js.Function] = js.undefined
     
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.Array[_] = js.native
+    var tags: js.Array[js.Any]
   }
   object TagCloudProps {
     
     @scala.inline
-    def apply(maxSize: Double, minSize: Double, tags: js.Array[_]): TagCloudProps = {
+    def apply(maxSize: Double, minSize: Double, tags: js.Array[js.Any]): TagCloudProps = {
       val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagCloudProps]
     }
@@ -146,7 +146,7 @@ object ReactTagCloud_ {
       def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
       
       @scala.inline
-      def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))

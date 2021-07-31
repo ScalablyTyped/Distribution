@@ -3,17 +3,15 @@ package typings.sparqljs
 import typings.sparqljs.mod.IriTerm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.Array[IriTerm] = js.native
+    var default: js.Array[IriTerm]
     
-    var named: js.Array[IriTerm] = js.native
+    var named: js.Array[IriTerm]
   }
   object Default {
     

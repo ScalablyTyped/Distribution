@@ -5,23 +5,21 @@ import typings.steamClient.mod.EMsg
 import typings.steamClient.steamClientBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Msg extends StObject {
     
     /**
       * A value from EMsg
       */
-    var msg: EMsg = js.native
+    var msg: EMsg
     
     /**
       * A CMsgProtoBufHeader object if this message is protobuf-backed, otherwise header.proto is falsy.
       */
-    var proto: js.UndefOr[CMsgProtoBufHeader | `false`] = js.native
+    var proto: js.UndefOr[CMsgProtoBufHeader | `false`] = js.undefined
   }
   object Msg {
     

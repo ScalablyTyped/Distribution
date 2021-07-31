@@ -16,7 +16,6 @@ import typings.std.Response
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -25,44 +24,44 @@ object anon {
   trait Fn0 extends StObject {
     
     def apply[T](marbles: String): HotObservable[T] = js.native
-    def apply[T](marbles: String, values: js.UndefOr[scala.Nothing], error: js.Any): HotObservable[T] = js.native
     def apply[T](marbles: String, values: StringDictionary[T]): HotObservable[T] = js.native
     def apply[T](marbles: String, values: StringDictionary[T], error: js.Any): HotObservable[T] = js.native
+    def apply[T](marbles: String, values: Unit, error: js.Any): HotObservable[T] = js.native
   }
   
   @js.native
   trait FnCall extends StObject {
     
     def apply[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
+    def apply[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = js.native
+    def apply[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
     def apply[T, F](
       condition: js.Function0[Boolean],
-      trueResult: js.UndefOr[SubscribableOrPromise[T]],
+      trueResult: SubscribableOrPromise[T],
       falseResult: SubscribableOrPromise[F]
     ): Observable[T | F] = js.native
-    def apply[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
   }
   
   @js.native
   trait FnCallMarblesValuesError extends StObject {
     
     def apply[T](marbles: String): ColdObservable[T] = js.native
-    def apply[T](marbles: String, values: js.UndefOr[scala.Nothing], error: js.Any): ColdObservable[T] = js.native
     def apply[T](marbles: String, values: StringDictionary[T]): ColdObservable[T] = js.native
     def apply[T](marbles: String, values: StringDictionary[T], error: js.Any): ColdObservable[T] = js.native
+    def apply[T](marbles: String, values: Unit, error: js.Any): ColdObservable[T] = js.native
   }
   
-  @js.native
   trait Index[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var keys: js.Array[String] = js.native
+    var keys: js.Array[String]
     
-    var obj: js.Object = js.native
+    var obj: js.Object
     
-    var subscriber: Subscriber[js.Tuple2[String, T]] = js.native
+    var subscriber: Subscriber[js.Tuple2[String, T]]
     
-    var subscription: Subscription = js.native
+    var subscription: Subscription
   }
   object Index {
     
@@ -79,7 +78,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[_], T] (val x: Self with Index[T]) extends AnyVal {
+    implicit class IndexMutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -103,17 +102,17 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* url */ String, WebSocket]
+    extends StObject
+       with Instantiable1[/* url */ String, WebSocket]
        with Instantiable2[
           /* url */ String, 
           (/* protocols */ js.Array[String]) | (/* protocols */ String), 
           WebSocket
         ]
   
-  @js.native
   trait Selector[T] extends StObject {
     
-    def selector(response: Response): ObservableInput[T] = js.native
+    def selector(response: Response): ObservableInput[T]
   }
   object Selector {
     
@@ -124,30 +123,62 @@ object anon {
     }
     
     @scala.inline
-    implicit class SelectorMutableBuilder[Self <: Selector[_], T] (val x: Self with Selector[T]) extends AnyVal {
+    implicit class SelectorMutableBuilder[Self <: Selector[?], T] (val x: Self & Selector[T]) extends AnyVal {
       
       @scala.inline
       def setSelector(value: Response => ObservableInput[T]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait ToBe extends StObject {
     
-    def toBe(marbles: String): Unit = js.native
-    def toBe(marbles: String, values: js.UndefOr[scala.Nothing], errorValue: js.Any): Unit = js.native
-    def toBe(marbles: String, values: js.Any): Unit = js.native
-    def toBe(marbles: String, values: js.Any, errorValue: js.Any): Unit = js.native
+    def toBe(marbles: String): Unit
+    def toBe(marbles: String, values: js.Any): Unit
+    def toBe(marbles: String, values: js.Any, errorValue: js.Any): Unit
+    def toBe(marbles: String, values: Unit, errorValue: js.Any): Unit
     @JSName("toBe")
-    var toBe_Original: observableToBeFn = js.native
+    var toBe_Original: observableToBeFn
+  }
+  object ToBe {
+    
+    @scala.inline
+    def apply(
+      toBe: (/* marbles */ String, /* values */ js.UndefOr[js.Any], /* errorValue */ js.UndefOr[js.Any]) => Unit
+    ): ToBe = {
+      val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction3(toBe))
+      __obj.asInstanceOf[ToBe]
+    }
+    
+    @scala.inline
+    implicit class ToBeMutableBuilder[Self <: ToBe] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setToBe(
+        value: (/* marbles */ String, /* values */ js.UndefOr[js.Any], /* errorValue */ js.UndefOr[js.Any]) => Unit
+      ): Self = StObject.set(x, "toBe", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait ToBeSubscriptionLogsToBeFn extends StObject {
     
-    def toBe(marbles: String): Unit = js.native
-    def toBe(marbles: js.Array[String]): Unit = js.native
+    def toBe(marbles: String): Unit
+    def toBe(marbles: js.Array[String]): Unit
     @JSName("toBe")
-    var toBe_Original: subscriptionLogsToBeFn = js.native
+    var toBe_Original: subscriptionLogsToBeFn
+  }
+  object ToBeSubscriptionLogsToBeFn {
+    
+    @scala.inline
+    def apply(toBe: /* marbles */ String | js.Array[String] => Unit): ToBeSubscriptionLogsToBeFn = {
+      val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction1(toBe))
+      __obj.asInstanceOf[ToBeSubscriptionLogsToBeFn]
+    }
+    
+    @scala.inline
+    implicit class ToBeSubscriptionLogsToBeFnMutableBuilder[Self <: ToBeSubscriptionLogsToBeFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setToBe(value: /* marbles */ String | js.Array[String] => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
+    }
   }
 }

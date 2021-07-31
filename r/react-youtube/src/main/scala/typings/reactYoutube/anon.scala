@@ -2,17 +2,15 @@ package typings.reactYoutube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Double = js.native
+    var data: Double
     
-    var target: js.Any = js.native
+    var target: js.Any
   }
   object Data {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DataTarget extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var target: js.Any = js.native
+    var target: js.Any
   }
   object DataTarget {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: js.Any = js.native
+    var target: js.Any
   }
   object Target {
     

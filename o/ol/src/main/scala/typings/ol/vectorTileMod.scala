@@ -12,7 +12,6 @@ import typings.ol.styleStyleMod.StyleLike
 import typings.ol.vectorTileRenderTypeMod.VectorTileRenderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vectorTileMod {
@@ -23,48 +22,47 @@ object vectorTileMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var declutter: js.UndefOr[Boolean] = js.native
+    var declutter: js.UndefOr[Boolean] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Double] = js.native
+    var preload: js.UndefOr[Double] = js.undefined
     
-    var renderBuffer: js.UndefOr[Double] = js.native
+    var renderBuffer: js.UndefOr[Double] = js.undefined
     
-    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.native
+    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.undefined
     
-    var renderOrder: js.UndefOr[OrderFunction] = js.native
+    var renderOrder: js.UndefOr[OrderFunction] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorTileMod.default] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorTileMod.default] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.native
+    var style: js.UndefOr[StyleLike] = js.undefined
     
-    var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+    var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
-    var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+    var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
     
-    var useInterimTilesOnError: js.UndefOr[Boolean] = js.native
+    var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

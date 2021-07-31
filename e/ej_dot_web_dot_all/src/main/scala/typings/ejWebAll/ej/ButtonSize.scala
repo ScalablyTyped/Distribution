@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,21 +12,31 @@ object ButtonSize extends StObject {
   
   //Creates button with Built-in large size height, width specified
   @js.native
-  sealed trait Large extends ButtonSize
+  sealed trait Large
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in medium size height, width specified
   @js.native
-  sealed trait Medium extends ButtonSize
+  sealed trait Medium
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in mini size height, width specified
   @js.native
-  sealed trait Mini extends ButtonSize
+  sealed trait Mini
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in default size height, width specified
   @js.native
-  sealed trait Normal extends ButtonSize
+  sealed trait Normal
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in small size height, width specified
   @js.native
-  sealed trait Small extends ButtonSize
+  sealed trait Small
+    extends StObject
+       with ButtonSize
 }

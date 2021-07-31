@@ -14,12 +14,10 @@ import typings.awsSdkClientS3Node.typesNotificationConfigurationFilterMod.Unmars
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesQueueConfigurationMod {
   
-  @js.native
   trait QueueConfiguration extends StObject {
     
     /**
@@ -29,22 +27,22 @@ object typesQueueConfigurationMod {
         s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
       ]) | (Iterable[
         s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
-      ]) = js.native
+      ])
     
     /**
       * <p>Container for object key name filtering rules. For information about key name filtering, go to <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html">Configuring Event Notifications</a> in the Amazon Simple Storage Service Developer Guide.</p>
       */
-    var Filter: js.UndefOr[NotificationConfigurationFilter] = js.native
+    var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     
     /**
       * <p>Optional unique identifier for configurations in a notification configuration. If you don't provide one, Amazon S3 will assign an ID.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Amazon SQS queue ARN to which Amazon S3 will publish a message when it detects events of specified type.</p>
       */
-    var QueueArn: String = js.native
+    var QueueArn: String
   }
   object QueueConfiguration {
     
@@ -95,8 +93,9 @@ object typesQueueConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledQueueConfiguration extends QueueConfiguration {
+  trait UnmarshalledQueueConfiguration
+    extends StObject
+       with QueueConfiguration {
     
     /**
       * _EventList shape
@@ -104,13 +103,13 @@ object typesQueueConfigurationMod {
     @JSName("Events")
     var Events_UnmarshalledQueueConfiguration: js.Array[
         s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
-      ] = js.native
+      ]
     
     /**
       * <p>Container for object key name filtering rules. For information about key name filtering, go to <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html">Configuring Event Notifications</a> in the Amazon Simple Storage Service Developer Guide.</p>
       */
     @JSName("Filter")
-    var Filter_UnmarshalledQueueConfiguration: js.UndefOr[UnmarshalledNotificationConfigurationFilter] = js.native
+    var Filter_UnmarshalledQueueConfiguration: js.UndefOr[UnmarshalledNotificationConfigurationFilter] = js.undefined
   }
   object UnmarshalledQueueConfiguration {
     

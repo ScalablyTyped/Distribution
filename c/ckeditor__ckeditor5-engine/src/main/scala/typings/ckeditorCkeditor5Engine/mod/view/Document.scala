@@ -7,13 +7,14 @@ import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/document
 @JSImport("@ckeditor/ckeditor5-engine", "view.Document")
 @js.native
-class Document () extends Observable {
+class Document ()
+  extends StObject
+     with Observable {
   
   /* protected */ def _callPostFixers(writer: DowncastWriter): Unit = js.native
   

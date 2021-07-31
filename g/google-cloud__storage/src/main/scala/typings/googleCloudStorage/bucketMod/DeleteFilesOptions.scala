@@ -2,13 +2,13 @@ package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeleteFilesOptions extends GetFilesOptions {
+trait DeleteFilesOptions
+  extends StObject
+     with GetFilesOptions {
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteFilesOptions {
   

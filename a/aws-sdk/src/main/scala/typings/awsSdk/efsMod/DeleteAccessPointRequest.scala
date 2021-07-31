@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAccessPointRequest extends StObject {
   
   /**
     * The ID of the access point that you want to delete.
     */
-  var AccessPointId: typings.awsSdk.efsMod.AccessPointId = js.native
+  var AccessPointId: typings.awsSdk.efsMod.AccessPointId
 }
 object DeleteAccessPointRequest {
   

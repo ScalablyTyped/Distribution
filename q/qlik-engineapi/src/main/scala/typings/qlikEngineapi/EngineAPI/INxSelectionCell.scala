@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxSelectionCell...
   */
-@js.native
 trait INxSelectionCell extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait INxSelectionCell extends StObject {
     *   T, the index is based on the data matrix
     *   L, the index is based on the left dimensions indexes
     */
-  var qCol: Double = js.native
+  var qCol: Double
   
   /**
     * Row index to select
@@ -29,7 +27,7 @@ trait INxSelectionCell extends StObject {
     * - T, the index is based on the top dimensions indexes
     * - L, the index is based on the data matrix
     */
-  var qRow: Double = js.native
+  var qRow: Double
   
   /**
     * Type of cells to select
@@ -38,7 +36,7 @@ trait INxSelectionCell extends StObject {
     *                 T for top dimension cells
     *                 L for left dimension cells
     */
-  var qType: NxSelectionCellType = js.native
+  var qType: NxSelectionCellType
 }
 object INxSelectionCell {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statement extends StObject {
   
   /**
     * The row and column of the end of a Statement in an IAM policy.
     */
-  var EndPosition: js.UndefOr[Position] = js.native
+  var EndPosition: js.UndefOr[Position] = js.undefined
   
   /**
     * The identifier of the policy that was provided as an input.
     */
-  var SourcePolicyId: js.UndefOr[PolicyIdentifierType] = js.native
+  var SourcePolicyId: js.UndefOr[PolicyIdentifierType] = js.undefined
   
   /**
     * The type of the policy.
     */
-  var SourcePolicyType: js.UndefOr[PolicySourceType] = js.native
+  var SourcePolicyType: js.UndefOr[PolicySourceType] = js.undefined
   
   /**
     * The row and column of the beginning of the Statement in an IAM policy.
     */
-  var StartPosition: js.UndefOr[Position] = js.native
+  var StartPosition: js.UndefOr[Position] = js.undefined
 }
 object Statement {
   

@@ -3,24 +3,23 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.adjacent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adjacent
-  extends BinarySelectorAtom
+  extends StObject
+     with BinarySelectorAtom
      with BinarySelector
      with Selector {
   
   @JSName("type")
-  var type_Adjacent: adjacent = js.native
+  var type_Adjacent: adjacent
 }
 object Adjacent {
   
   @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector, `type`: adjacent): Adjacent = {
+  def apply(left: SubjectSelector, right: SubjectSelector): Adjacent = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("adjacent")
     __obj.asInstanceOf[Adjacent]
   }
   

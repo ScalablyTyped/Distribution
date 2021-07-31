@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Web Token
   * (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32).
   */
-@js.native
 trait SchemaAuthProvider extends StObject {
   
   /**
@@ -25,19 +23,19 @@ trait SchemaAuthProvider extends StObject {
     * Example:      audiences: bookstore_android.apps.googleusercontent.com,
     * bookstore_web.apps.googleusercontent.com
     */
-  var audiences: js.UndefOr[String] = js.native
+  var audiences: js.UndefOr[String] = js.undefined
   
   /**
     * Redirect URL if JWT token is required but not present or is expired.
     * Implement authorizationUrl of securityDefinitions in OpenAPI spec.
     */
-  var authorizationUrl: js.UndefOr[String] = js.native
+  var authorizationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the auth provider. It will be referred to by
     * `AuthRequirement.provider_id`.  Example: &quot;bookstore_auth&quot;.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the principal that issued the JWT. See
@@ -46,7 +44,7 @@ trait SchemaAuthProvider extends StObject {
     * https://securetoken.google.com Example:
     * 1234567-compute@developer.gserviceaccount.com
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the provider&#39;s public key set to validate signature of the
@@ -58,7 +56,7 @@ trait SchemaAuthProvider extends StObject {
     * a Google  service account).  Example:
     * https://www.googleapis.com/oauth2/v1/certs
     */
-  var jwksUri: js.UndefOr[String] = js.native
+  var jwksUri: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthProvider {
   

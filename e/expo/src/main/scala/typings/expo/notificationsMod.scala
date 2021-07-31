@@ -13,96 +13,81 @@ import typings.expo.notificationsTypesMod.Notification
 import typings.fbemitter.mod.EventSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsMod {
   
+  @JSImport("expo/build/Notifications/Notifications", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("expo/build/Notifications/Notifications", "default.addListener")
+    @JSImport("expo/build/Notifications/Notifications", JSImport.Default)
     @js.native
-    def addListener(listener: js.Function1[/* notification */ Notification, _]): EventSubscription = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo/build/Notifications/Notifications", "default.cancelAllScheduledNotificationsAsync")
-    @js.native
-    def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def addListener(listener: js.Function1[/* notification */ Notification, js.Any]): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.cancelScheduledNotificationAsync")
-    @js.native
-    def cancelScheduledNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = js.native
+    @scala.inline
+    def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAllScheduledNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.createCategoryAsync")
-    @js.native
-    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType]): js.Promise[Unit] = js.native
-    @JSImport("expo/build/Notifications/Notifications", "default.createCategoryAsync")
-    @js.native
-    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType], previewPlaceholder: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def cancelScheduledNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelScheduledNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.createChannelAndroidAsync")
-    @js.native
-    def createChannelAndroidAsync(id: String, channel: Channel): js.Promise[Unit] = js.native
+    @scala.inline
+    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCategoryAsync")(categoryId.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def createCategoryAsync(categoryId: String, actions: js.Array[ActionType], previewPlaceholder: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCategoryAsync")(categoryId.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], previewPlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.deleteCategoryAsync")
-    @js.native
-    def deleteCategoryAsync(categoryId: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def createChannelAndroidAsync(id: String, channel: Channel): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createChannelAndroidAsync")(id.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.deleteChannelAndroidAsync")
-    @js.native
-    def deleteChannelAndroidAsync(id: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def deleteCategoryAsync(categoryId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCategoryAsync")(categoryId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.dismissAllNotificationsAsync")
-    @js.native
-    def dismissAllNotificationsAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def deleteChannelAndroidAsync(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteChannelAndroidAsync")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.dismissNotificationAsync")
-    @js.native
-    def dismissNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = js.native
+    @scala.inline
+    def dismissAllNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAllNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.getBadgeNumberAsync")
-    @js.native
-    def getBadgeNumberAsync(): js.Promise[Double] = js.native
+    @scala.inline
+    def dismissNotificationAsync(notificationId: LocalNotificationId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.getDevicePushTokenAsync")
-    @js.native
-    def getDevicePushTokenAsync(config: GcmSenderId): js.Promise[Type] = js.native
+    @scala.inline
+    def getBadgeNumberAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeNumberAsync")().asInstanceOf[js.Promise[Double]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.getExpoPushTokenAsync")
-    @js.native
-    def getExpoPushTokenAsync(): js.Promise[String] = js.native
+    @scala.inline
+    def getDevicePushTokenAsync(config: GcmSenderId): js.Promise[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Type]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.presentLocalNotificationAsync")
-    @js.native
-    def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = js.native
+    @scala.inline
+    def getExpoPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpoPushTokenAsync")().asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.scheduleLocalNotificationAsync")
-    @js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = js.native
-    @JSImport("expo/build/Notifications/Notifications", "default.scheduleLocalNotificationAsync")
-    @js.native
-    def scheduleLocalNotificationAsync(notification: LocalNotification, options: IntervalMs): js.Promise[LocalNotificationId] = js.native
+    @scala.inline
+    def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentLocalNotificationAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.scheduleNotificationWithCalendarAsync")
-    @js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
-    @JSImport("expo/build/Notifications/Notifications", "default.scheduleNotificationWithCalendarAsync")
-    @js.native
-    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Day): js.Promise[String] = js.native
+    @scala.inline
+    def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotificationAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
+    @scala.inline
+    def scheduleLocalNotificationAsync(notification: LocalNotification, options: IntervalMs): js.Promise[LocalNotificationId] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotificationAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LocalNotificationId]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.scheduleNotificationWithTimerAsync")
-    @js.native
-    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Interval): js.Promise[String] = js.native
+    @scala.inline
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithCalendarAsync")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Day): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithCalendarAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default.setBadgeNumberAsync")
-    @js.native
-    def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Interval): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleNotificationWithTimerAsync")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @JSImport("expo/build/Notifications/Notifications", "default._setInitialNotification")
-    @js.native
-    def setInitialNotification(notification: Notification): Unit = js.native
+    @scala.inline
+    def setBadgeNumberAsync(number: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeNumberAsync")(number.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def setInitialNotification(notification: Notification): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setInitialNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("expo/build/Notifications/Notifications", "emitNotification")
-  @js.native
-  def emitNotification(notification: js.Any): Unit = js.native
+  @scala.inline
+  def emitNotification(notification: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

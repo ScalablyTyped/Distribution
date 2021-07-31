@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,35 +17,36 @@ object mod {
   trait ReactHolder
     extends Component[ReactHolderProp, js.Object, js.Any]
   
-  @js.native
-  trait ReactHolderProp extends HTMLAttributes[ReactHolder] {
+  trait ReactHolderProp
+    extends StObject
+       with HTMLAttributes[ReactHolder] {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var lineWrap: js.UndefOr[Double] = js.native
+    var lineWrap: js.UndefOr[Double] = js.undefined
     
-    var outline: js.UndefOr[Boolean] = js.native
+    var outline: js.UndefOr[Boolean] = js.undefined
     
-    var random: js.UndefOr[Boolean] = js.native
+    var random: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     // config args
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var updateOnResize: Boolean = js.native
+    var updateOnResize: Boolean
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object ReactHolderProp {
     

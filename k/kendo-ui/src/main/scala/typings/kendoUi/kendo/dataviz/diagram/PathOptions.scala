@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathOptions extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var endCap: js.UndefOr[String | PathEndCap] = js.native
+  var endCap: js.UndefOr[String | PathEndCap] = js.undefined
   
-  var fill: js.UndefOr[String | PathFill] = js.native
+  var fill: js.UndefOr[String | PathFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var startCap: js.UndefOr[String | PathStartCap] = js.native
+  var startCap: js.UndefOr[String | PathStartCap] = js.undefined
   
-  var stroke: js.UndefOr[PathStroke] = js.native
+  var stroke: js.UndefOr[PathStroke] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PathOptions {
   

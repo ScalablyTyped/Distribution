@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendResponse extends StObject {
   
   /**
     * A batch identifier that you can use to get the status of the batch.
     */
-  var batchId: js.UndefOr[String] = js.native
+  var batchId: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID of the envelope or template that was sent.
     */
-  var envelopeOrTemplateId: js.UndefOr[String] = js.native
+  var envelopeOrTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable object that describes errors that occur. It is only valid for responses and ignored in requests.
     */
-  var errorDetails: js.UndefOr[js.Array[String]] = js.native
+  var errorDetails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of errors that occurred. This information is intended to be parsed by machine.
     */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BulkSendResponse {
   

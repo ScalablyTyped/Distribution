@@ -7,15 +7,13 @@ import typings.contentfulManagement.environmentMod.Environment
 import typings.contentfulManagement.environmentMod.EnvironmentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofenvironment extends StObject {
   
-  def wrapEnvironment(http: AxiosInstance, data: EnvironmentProps): Environment = js.native
+  def wrapEnvironment(http: AxiosInstance, data: EnvironmentProps): Environment
   
-  def wrapEnvironmentCollection(http: AxiosInstance, data: CollectionProp[EnvironmentProps]): Collection[Environment, EnvironmentProps] = js.native
+  def wrapEnvironmentCollection(http: AxiosInstance, data: CollectionProp[EnvironmentProps]): Collection[Environment, EnvironmentProps]
 }
 object Typeofenvironment {
   

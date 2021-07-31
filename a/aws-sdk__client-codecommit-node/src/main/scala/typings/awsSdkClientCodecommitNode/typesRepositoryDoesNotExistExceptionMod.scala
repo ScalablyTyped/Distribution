@@ -28,15 +28,14 @@ import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsU
 import typings.awsSdkClientCodecommitNode.updateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryDoesNotExistExceptionDetails> * / any */ @js.native
-  trait RepositoryDoesNotExistException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryDoesNotExistExceptionDetails> * / any */ trait RepositoryDoesNotExistException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with DeleteBranchExceptionsUnion
        with DeleteFileExceptionsUnion
@@ -63,15 +62,13 @@ object typesRepositoryDoesNotExistExceptionMod {
        with UpdateRepositoryDescriptionExceptionsUnion
        with UpdateRepositoryNameExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryDoesNotExistException
   }
   object RepositoryDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryDoesNotExistException
-    ): RepositoryDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryDoesNotExistException")
       __obj.asInstanceOf[RepositoryDoesNotExistException]
     }
     
@@ -85,6 +82,5 @@ object typesRepositoryDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryDoesNotExistExceptionDetails extends StObject
 }

@@ -7,7 +7,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,34 +23,33 @@ object mod extends Shortcut {
     def apply(options: IVinylOptions): ReadWriteStream = js.native
   }
   
-  @js.native
   trait IFsStats extends StObject {
     
-    var atime: js.UndefOr[Date] = js.native
+    var atime: js.UndefOr[Date] = js.undefined
     
-    var blksize: js.UndefOr[Double] = js.native
+    var blksize: js.UndefOr[Double] = js.undefined
     
-    var blocks: js.UndefOr[Double] = js.native
+    var blocks: js.UndefOr[Double] = js.undefined
     
-    var ctime: js.UndefOr[Date] = js.native
+    var ctime: js.UndefOr[Date] = js.undefined
     
-    var dev: js.UndefOr[Double] = js.native
+    var dev: js.UndefOr[Double] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var ino: js.UndefOr[Double] = js.native
+    var ino: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
-    var nlink: js.UndefOr[Double] = js.native
+    var nlink: js.UndefOr[Double] = js.undefined
     
-    var rdev: js.UndefOr[Double] = js.native
+    var rdev: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object IFsStats {
     
@@ -144,10 +142,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
-    var newLine: String = js.native
+    var newLine: String
   }
   object IOptions {
     
@@ -165,18 +162,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IVinylOptions extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var contents: js.UndefOr[ReadableStream | Buffer] = js.native
+    var contents: js.UndefOr[ReadableStream | Buffer] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var stat: js.UndefOr[IFsStats] = js.native
+    var stat: js.UndefOr[IFsStats] = js.undefined
   }
   object IVinylOptions {
     

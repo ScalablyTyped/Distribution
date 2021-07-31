@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThingGroupsRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[RegistryMaxResults] = js.native
+  var maxResults: js.UndefOr[RegistryMaxResults] = js.undefined
   
   /**
     * A filter that limits the results to those with the specified name prefix.
     */
-  var namePrefixFilter: js.UndefOr[ThingGroupName] = js.native
+  var namePrefixFilter: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * To retrieve the next set of results, the nextToken value from a previous response; otherwise null to receive the first set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A filter that limits the results to those with the specified parent group.
     */
-  var parentGroup: js.UndefOr[ThingGroupName] = js.native
+  var parentGroup: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * If true, return child groups as well.
     */
-  var recursive: js.UndefOr[RecursiveWithoutDefault] = js.native
+  var recursive: js.UndefOr[RecursiveWithoutDefault] = js.undefined
 }
 object ListThingGroupsRequest {
   

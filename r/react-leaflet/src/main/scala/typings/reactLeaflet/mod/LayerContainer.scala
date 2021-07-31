@@ -3,15 +3,13 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerContainer extends StObject {
   
-  var addLayer: AddLayerHandler = js.native
+  var addLayer: AddLayerHandler
   
-  var removeLayer: RemoveLayerHandler = js.native
+  var removeLayer: RemoveLayerHandler
 }
 object LayerContainer {
   

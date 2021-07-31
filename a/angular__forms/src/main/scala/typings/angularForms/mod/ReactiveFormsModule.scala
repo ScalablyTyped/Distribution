@@ -4,7 +4,6 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.angularForms.anon.WarnOnNgModelWithFormControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "ReactiveFormsModule")
@@ -12,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ReactiveFormsModule () extends StObject
 /* static members */
 object ReactiveFormsModule {
+  
+  @JSImport("@angular/forms", "ReactiveFormsModule")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @description
@@ -21,7 +24,6 @@ object ReactiveFormsModule {
     * * `warnOnNgModelWithFormControl` Configures when to emit a warning when an `ngModel`
     * binding is used with reactive form directives.
     */
-  @JSImport("@angular/forms", "ReactiveFormsModule.withConfig")
-  @js.native
-  def withConfig(opts: WarnOnNgModelWithFormControl): ModuleWithProviders[ReactiveFormsModule] = js.native
+  @scala.inline
+  def withConfig(opts: WarnOnNgModelWithFormControl): ModuleWithProviders[ReactiveFormsModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[ReactiveFormsModule]]
 }

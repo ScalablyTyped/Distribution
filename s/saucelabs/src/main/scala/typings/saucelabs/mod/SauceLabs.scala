@@ -17,7 +17,6 @@ import typings.saucelabs.saucelabsStrings.appium_
 import typings.saucelabs.saucelabsStrings.webdriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -599,7 +598,7 @@ trait SauceLabs extends StObject {
     * @param {} body - TestObject provides access to devices, Appium, storage and your session history via REST API.</br></br>API endpoints requiring authentication use basic authentication. For endpoints requiring "API Key" authentication, the basic authentication should contain your username and have your project's API key as the password. For endpoints requiring "Password" authentication, the basic authentication should contain your username and password. All endpoints in Appium Suites API require basic authentication with the API Key as the username and the password left blank. Please note that the Appium Watcher API does not require basic authentication.</br></br>The base URL for the API is https://app.testobject.com/api/rest/
     */
   def startSuite(suiteId: Double): js.Promise[ApiSuiteReport] = js.native
-  def startSuite(suiteId: Double, options: js.UndefOr[scala.Nothing], body: js.Array[ApiTestV2]): js.Promise[ApiSuiteReport] = js.native
+  def startSuite(suiteId: Double, options: Unit, body: js.Array[ApiTestV2]): js.Promise[ApiSuiteReport] = js.native
   def startSuite(suiteId: Double, options: AppId): js.Promise[ApiSuiteReport] = js.native
   def startSuite(suiteId: Double, options: AppId, body: js.Array[ApiTestV2]): js.Promise[ApiSuiteReport] = js.native
   
@@ -655,164 +654,9 @@ trait SauceLabs extends StObject {
     * @param {} body - TestObject provides access to devices, Appium, storage and your session history via REST API.</br></br>API endpoints requiring authentication use basic authentication. For endpoints requiring "API Key" authentication, the basic authentication should contain your username and have your project's API key as the password. For endpoints requiring "Password" authentication, the basic authentication should contain your username and password. All endpoints in Appium Suites API require basic authentication with the API Key as the username and the password left blank. Please note that the Appium Watcher API does not require basic authentication.</br></br>The base URL for the API is https://app.testobject.com/api/rest/
     */
   def uploadApp(): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(appType: js.UndefOr[scala.Nothing], appIdentifier: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(appType: js.UndefOr[scala.Nothing], appIdentifier: String, appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: String,
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: String,
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: js.UndefOr[scala.Nothing],
-    appIdentifier: String,
-    appDisplayName: String,
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(appType: String, appIdentifier: js.UndefOr[scala.Nothing], appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: js.UndefOr[scala.Nothing],
-    appDisplayName: String,
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: String, appIdentifier: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean
-  ): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: String,
-    appDisplayName: js.UndefOr[scala.Nothing],
-    appActive: Boolean,
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: String, appIdentifier: String, appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
-  def uploadApp(
-    appType: String,
-    appIdentifier: String,
-    appDisplayName: String,
-    appActive: js.UndefOr[scala.Nothing],
-    body: InputStream
-  ): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: String, appIdentifier: String, appDisplayName: String, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(
     appType: String,
@@ -821,6 +665,50 @@ trait SauceLabs extends StObject {
     appActive: Boolean,
     body: InputStream
   ): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: String, appDisplayName: String, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: String, appDisplayName: Unit, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(
+    appType: String,
+    appIdentifier: String,
+    appDisplayName: Unit,
+    appActive: Boolean,
+    body: InputStream
+  ): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: String, appDisplayName: Unit, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: String, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(
+    appType: String,
+    appIdentifier: Unit,
+    appDisplayName: String,
+    appActive: Boolean,
+    body: InputStream
+  ): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: String, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: String, appIdentifier: Unit, appDisplayName: Unit, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: String, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(
+    appType: Unit,
+    appIdentifier: String,
+    appDisplayName: String,
+    appActive: Boolean,
+    body: InputStream
+  ): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: String, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: Unit, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: Unit, appActive: Boolean, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: String, appDisplayName: Unit, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: String): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: String, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: String, appActive: Boolean, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: String, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
   
   var username: String = js.native
   

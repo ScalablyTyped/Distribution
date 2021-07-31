@@ -2,71 +2,69 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function used to consolidate the annotations from individual workers into a label for a data object. For more information, see Annotation Consolidation.
     */
-  var AnnotationConsolidationLambdaArn: js.UndefOr[LambdaFunctionArn] = js.native
+  var AnnotationConsolidationLambdaArn: js.UndefOr[LambdaFunctionArn] = js.undefined
   
   /**
     * The date and time that the job was created (timestamp).
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * If the LabelingJobStatus field is Failed, this field contains a description of the error.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * Input configuration for the labeling job.
     */
-  var InputConfig: js.UndefOr[LabelingJobInputConfig] = js.native
+  var InputConfig: js.UndefOr[LabelingJobInputConfig] = js.undefined
   
   /**
     * Counts showing the progress of the labeling job.
     */
-  var LabelCounters: typings.awsSdk.sagemakerMod.LabelCounters = js.native
+  var LabelCounters: typings.awsSdk.sagemakerMod.LabelCounters
   
   /**
     * The Amazon Resource Name (ARN) assigned to the labeling job when it was created.
     */
-  var LabelingJobArn: typings.awsSdk.sagemakerMod.LabelingJobArn = js.native
+  var LabelingJobArn: typings.awsSdk.sagemakerMod.LabelingJobArn
   
   /**
     * The name of the labeling job.
     */
-  var LabelingJobName: typings.awsSdk.sagemakerMod.LabelingJobName = js.native
+  var LabelingJobName: typings.awsSdk.sagemakerMod.LabelingJobName
   
   /**
     * The location of the output produced by the labeling job.
     */
-  var LabelingJobOutput: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobOutput] = js.native
+  var LabelingJobOutput: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobOutput] = js.undefined
   
   /**
     * The current status of the labeling job. 
     */
-  var LabelingJobStatus: typings.awsSdk.sagemakerMod.LabelingJobStatus = js.native
+  var LabelingJobStatus: typings.awsSdk.sagemakerMod.LabelingJobStatus
   
   /**
     * The date and time that the job was last modified (timestamp).
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of a Lambda function. The function is run before each data object is sent to a worker.
     */
-  var PreHumanTaskLambdaArn: LambdaFunctionArn = js.native
+  var PreHumanTaskLambdaArn: LambdaFunctionArn
   
   /**
     * The Amazon Resource Name (ARN) of the work team assigned to the job.
     */
-  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn = js.native
+  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
 }
 object LabelingJobSummary {
   

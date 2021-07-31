@@ -2,26 +2,24 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUpdateRequest extends StObject {
   
   /**
     * The name of the Amazon EKS cluster associated with the update.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The name of the Amazon EKS node group associated with the update.
     */
-  var nodegroupName: js.UndefOr[String] = js.native
+  var nodegroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the update to describe.
     */
-  var updateId: String = js.native
+  var updateId: String
 }
 object DescribeUpdateRequest {
   

@@ -2,36 +2,34 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length extends StObject {
   
   /**
     * The length.
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * The offset.
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * The alternative type.
     */
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
   
   /**
     * The number of typos.
     */
-  var typos: Double = js.native
+  var typos: Double
   
   /**
     * The list of alternative words.
     */
-  var words: js.Array[String] = js.native
+  var words: js.Array[String]
 }
 object Length {
   

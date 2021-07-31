@@ -4,7 +4,6 @@ import typings.primereact.anon.DirectionOriginalEvent
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickListTransferControlsMod {
@@ -21,18 +20,17 @@ object pickListTransferControlsMod {
     def this(props: PickListTransferControlsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PickListTransferControlsProps extends StObject {
     
-    var onTransfer: js.UndefOr[js.Function1[/* e */ DirectionOriginalEvent, Unit]] = js.native
+    var onTransfer: js.UndefOr[js.Function1[/* e */ DirectionOriginalEvent, Unit]] = js.undefined
     
-    var source: js.UndefOr[js.Array[_]] = js.native
+    var source: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var sourceSelection: js.UndefOr[js.Array[_]] = js.native
+    var sourceSelection: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var target: js.UndefOr[js.Array[_]] = js.native
+    var target: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var targetSelection: js.UndefOr[js.Array[_]] = js.native
+    var targetSelection: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object PickListTransferControlsProps {
     
@@ -52,10 +50,10 @@ object pickListTransferControlsMod {
       def setOnTransferUndefined: Self = StObject.set(x, "onTransfer", js.undefined)
       
       @scala.inline
-      def setSource(value: js.Array[_]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSourceSelection(value: js.Array[_]): Self = StObject.set(x, "sourceSelection", value.asInstanceOf[js.Any])
+      def setSourceSelection(value: js.Array[js.Any]): Self = StObject.set(x, "sourceSelection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSourceSelectionUndefined: Self = StObject.set(x, "sourceSelection", js.undefined)
@@ -70,10 +68,10 @@ object pickListTransferControlsMod {
       def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
       
       @scala.inline
-      def setTarget(value: js.Array[_]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      def setTarget(value: js.Array[js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTargetSelection(value: js.Array[_]): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
+      def setTargetSelection(value: js.Array[js.Any]): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)

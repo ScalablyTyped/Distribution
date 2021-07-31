@@ -10,16 +10,15 @@ import typings.winrtUwp.winrtUwpStrings.beginvalidation
 import typings.winrtUwp.winrtUwpStrings.optionchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of events, methods and properties for advanced print tasks. */
 @js.native
 trait PrintTaskOptionDetails extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_beginvalidation(`type`: beginvalidation, listener: TypedEventHandler[PrintTaskOptionDetails, _]): Unit = js.native
+  def addEventListener_beginvalidation(`type`: beginvalidation, listener: TypedEventHandler[PrintTaskOptionDetails, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionchanged(
     `type`: optionchanged,
@@ -53,13 +52,13 @@ trait PrintTaskOptionDetails extends StObject {
   def getPageDescription(jobPageNumber: Double): PrintPageDescription = js.native
   
   /** Raised when the print system begins a validation pass on the current state of the print ticket. */
-  def onbeginvalidation(ev: js.Any with WinRTEvent[PrintTaskOptionDetails]): Unit = js.native
+  def onbeginvalidation(ev: js.Any & WinRTEvent[PrintTaskOptionDetails]): Unit = js.native
   /** Raised when the print system begins a validation pass on the current state of the print ticket. */
   @JSName("onbeginvalidation")
-  var onbeginvalidation_Original: TypedEventHandler[PrintTaskOptionDetails, _] = js.native
+  var onbeginvalidation_Original: TypedEventHandler[PrintTaskOptionDetails, js.Any] = js.native
   
   /** Raised when any one of the advanced print task options is changed. */
-  def onoptionchanged(ev: PrintTaskOptionChangedEventArgs with WinRTEvent[PrintTaskOptionDetails]): Unit = js.native
+  def onoptionchanged(ev: PrintTaskOptionChangedEventArgs & WinRTEvent[PrintTaskOptionDetails]): Unit = js.native
   /** Raised when any one of the advanced print task options is changed. */
   @JSName("onoptionchanged")
   var onoptionchanged_Original: TypedEventHandler[PrintTaskOptionDetails, PrintTaskOptionChangedEventArgs] = js.native
@@ -67,9 +66,9 @@ trait PrintTaskOptionDetails extends StObject {
   /** Gets the list of options for the advanced print task. */
   var options: IMapView[String, IPrintOptionDetails] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_beginvalidation(`type`: beginvalidation, listener: TypedEventHandler[PrintTaskOptionDetails, _]): Unit = js.native
+  def removeEventListener_beginvalidation(`type`: beginvalidation, listener: TypedEventHandler[PrintTaskOptionDetails, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_optionchanged(
     `type`: optionchanged,

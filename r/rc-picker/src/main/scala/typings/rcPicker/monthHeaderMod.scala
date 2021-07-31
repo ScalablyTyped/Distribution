@@ -5,31 +5,32 @@ import typings.rcPicker.interfaceMod.Locale
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monthHeaderMod {
   
-  @JSImport("rc-picker/es/panels/MonthPanel/MonthHeader", JSImport.Default)
+  @JSImport("rc-picker/es/panels/MonthPanel/MonthHeader", JSImport.Namespace)
   @js.native
-  def default[DateType](props: MonthHeaderProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: MonthHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait MonthHeaderProps[DateType] extends StObject {
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    def onNextYear(): Unit = js.native
+    def onNextYear(): Unit
     
-    def onPrevYear(): Unit = js.native
+    def onPrevYear(): Unit
     
-    def onYearClick(): Unit = js.native
+    def onYearClick(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object MonthHeaderProps {
     
@@ -48,7 +49,7 @@ object monthHeaderMod {
     }
     
     @scala.inline
-    implicit class MonthHeaderPropsMutableBuilder[Self <: MonthHeaderProps[_], DateType] (val x: Self with MonthHeaderProps[DateType]) extends AnyVal {
+    implicit class MonthHeaderPropsMutableBuilder[Self <: MonthHeaderProps[?], DateType] (val x: Self & MonthHeaderProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])

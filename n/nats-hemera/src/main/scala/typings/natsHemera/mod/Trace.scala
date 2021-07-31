@@ -2,25 +2,23 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trace extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var method: String = js.native
+  var method: String
   
-  var parentSpanId: String = js.native
+  var parentSpanId: String
   
-  var service: String = js.native
+  var service: String
   
-  var spanId: String = js.native
+  var spanId: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var traceId: String = js.native
+  var traceId: String
 }
 object Trace {
   

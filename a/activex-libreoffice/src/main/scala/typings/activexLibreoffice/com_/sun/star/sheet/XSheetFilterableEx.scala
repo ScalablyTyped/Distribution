@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In general the current object will be used only to create the descriptor to filter another object, i.e. the advanced filter feature in a spreadsheet.
   * @see com.sun.star.sheet.SheetCellRange
   */
-@js.native
-trait XSheetFilterableEx extends XSheetFilterable {
+trait XSheetFilterableEx
+  extends StObject
+     with XSheetFilterable {
   
   /** creates a filter descriptor for the specified filterable object from the contents of this object. */
-  def createFilterDescriptorByObject(xObject: XSheetFilterable): XSheetFilterDescriptor = js.native
+  def createFilterDescriptorByObject(xObject: XSheetFilterable): XSheetFilterDescriptor
 }
 object XSheetFilterableEx {
   

@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the card type of the recently swiped card. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes")
 @js.native
 abstract class MagneticStripeReaderCardTypes ()
-  extends typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderCardTypes
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderCardTypes
 object MagneticStripeReaderCardTypes {
   
   @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes")

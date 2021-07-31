@@ -4,26 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.webpackBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildMeta extends StObject {
   
   /**
   		 * Meta information about the module
   		 */
-  var buildMeta: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var buildMeta: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   		 * Information about the provided exports of the module
   		 */
-  var exports: js.UndefOr[`true` | js.Array[String]] = js.native
+  var exports: js.UndefOr[`true` | js.Array[String]] = js.undefined
   
   /**
   		 * Module ID
   		 */
-  var id: Double | String = js.native
+  var id: Double | String
 }
 object BuildMeta {
   

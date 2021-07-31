@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesServerSideEncryptionRuleMod.UnmarshalledS
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServerSideEncryptionConfigurationMod {
   
-  @js.native
   trait ServerSideEncryptionConfiguration extends StObject {
     
     /**
       * <p>Container for information about a particular server-side encryption configuration rule.</p>
       */
-    var Rules: js.Array[ServerSideEncryptionRule] | Iterable[ServerSideEncryptionRule] = js.native
+    var Rules: js.Array[ServerSideEncryptionRule] | Iterable[ServerSideEncryptionRule]
   }
   object ServerSideEncryptionConfiguration {
     
@@ -37,14 +35,15 @@ object typesServerSideEncryptionConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledServerSideEncryptionConfiguration extends ServerSideEncryptionConfiguration {
+  trait UnmarshalledServerSideEncryptionConfiguration
+    extends StObject
+       with ServerSideEncryptionConfiguration {
     
     /**
       * <p>Container for information about a particular server-side encryption configuration rule.</p>
       */
     @JSName("Rules")
-    var Rules_UnmarshalledServerSideEncryptionConfiguration: js.Array[UnmarshalledServerSideEncryptionRule] = js.native
+    var Rules_UnmarshalledServerSideEncryptionConfiguration: js.Array[UnmarshalledServerSideEncryptionRule]
   }
   object UnmarshalledServerSideEncryptionConfiguration {
     

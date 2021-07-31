@@ -2,46 +2,44 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamRecord extends StObject {
   
   /**
     * The approximate date and time when the stream record was created, in UNIX epoch time format.
     */
-  var ApproximateCreationDateTime: js.UndefOr[Date] = js.native
+  var ApproximateCreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The primary key attribute(s) for the DynamoDB item that was modified.
     */
-  var Keys: js.UndefOr[AttributeMap] = js.native
+  var Keys: js.UndefOr[AttributeMap] = js.undefined
   
   /**
     * The item in the DynamoDB table as it appeared after it was modified.
     */
-  var NewImage: js.UndefOr[AttributeMap] = js.native
+  var NewImage: js.UndefOr[AttributeMap] = js.undefined
   
   /**
     * The item in the DynamoDB table as it appeared before it was modified.
     */
-  var OldImage: js.UndefOr[AttributeMap] = js.native
+  var OldImage: js.UndefOr[AttributeMap] = js.undefined
   
   /**
     * The sequence number of the stream record.
     */
-  var SequenceNumber: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.SequenceNumber] = js.native
+  var SequenceNumber: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.SequenceNumber] = js.undefined
   
   /**
     * The size of the stream record, in bytes.
     */
-  var SizeBytes: js.UndefOr[PositiveLongObject] = js.native
+  var SizeBytes: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The type of data from the modified DynamoDB item that was captured in this stream record:    KEYS_ONLY - only the key attributes of the modified item.    NEW_IMAGE - the entire item, as it appeared after it was modified.    OLD_IMAGE - the entire item, as it appeared before it was modified.    NEW_AND_OLD_IMAGES - both the new and the old item images of the item.  
     */
-  var StreamViewType: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.StreamViewType] = js.native
+  var StreamViewType: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.StreamViewType] = js.undefined
 }
 object StreamRecord {
   

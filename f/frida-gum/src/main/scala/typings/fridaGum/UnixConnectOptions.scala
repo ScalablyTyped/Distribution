@@ -3,37 +3,37 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.unix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnixConnectOptions extends SocketConnectOptions {
+trait UnixConnectOptions
+  extends StObject
+     with SocketConnectOptions {
   
   /**
     * Address family.
     */
-  var family: unix = js.native
+  var family: unix
   
   /**
     * Path to UNIX socket to connect to.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Whether to create a TLS connection. Defaults to `false`.
     */
-  var tls: js.UndefOr[Boolean] = js.native
+  var tls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of UNIX socket to connect to. Defaults to UnixSocketType.Path.
     */
-  var `type`: js.UndefOr[UnixSocketType] = js.native
+  var `type`: js.UndefOr[UnixSocketType] = js.undefined
 }
 object UnixConnectOptions {
   
   @scala.inline
-  def apply(family: unix, path: String): UnixConnectOptions = {
-    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  def apply(path: String): UnixConnectOptions = {
+    val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixConnectOptions]
   }
   

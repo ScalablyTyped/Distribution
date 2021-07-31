@@ -13,7 +13,6 @@ import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,7 +29,7 @@ trait IonRouterOutlet extends StObject {
   var animation: js.UndefOr[AnimationBuilder] = js.native
   
   def commit(enteringEl: HTMLElement): js.Promise[Boolean] = js.native
-  def commit(enteringEl: HTMLElement, leavingEl: js.UndefOr[scala.Nothing], opts: RouterOutletOptions): js.Promise[Boolean] = js.native
+  def commit(enteringEl: HTMLElement, leavingEl: Unit, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
   def commit(enteringEl: HTMLElement, leavingEl: HTMLElement): js.Promise[Boolean] = js.native
   def commit(enteringEl: HTMLElement, leavingEl: HTMLElement, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
   
@@ -43,13 +42,8 @@ trait IonRouterOutlet extends StObject {
     */
   var mode: ios | md = js.native
   
-  def setRouteId(id: String, params: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[RouteWrite] = js.native
-  def setRouteId(
-    id: String,
-    params: js.UndefOr[scala.Nothing],
-    direction: RouterDirection,
-    animation: AnimationBuilder
-  ): js.Promise[RouteWrite] = js.native
+  def setRouteId(id: String, params: Unit, direction: RouterDirection): js.Promise[RouteWrite] = js.native
+  def setRouteId(id: String, params: Unit, direction: RouterDirection, animation: AnimationBuilder): js.Promise[RouteWrite] = js.native
   def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection): js.Promise[RouteWrite] = js.native
   def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection, animation: AnimationBuilder): js.Promise[RouteWrite] = js.native
   

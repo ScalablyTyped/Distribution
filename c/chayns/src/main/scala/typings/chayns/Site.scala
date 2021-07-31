@@ -2,20 +2,18 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.findSite()
-@js.native
 trait Site extends StObject {
   
-  var appstoreName: String = js.native
+  var appstoreName: String
   
-  var facebookId: String = js.native
+  var facebookId: String
   
-  var locationId: Double = js.native
+  var locationId: Double
   
-  var siteId: String = js.native
+  var siteId: String
 }
 object Site {
   

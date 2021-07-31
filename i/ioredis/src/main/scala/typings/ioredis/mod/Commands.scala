@@ -25,7 +25,6 @@ import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -283,9 +282,9 @@ trait Commands extends StObject {
   @JSName("bzpopmin")
   var bzpopmin_Original: OverloadedBlockingListCommand[KeyType, js.Tuple3[String, String, String]] = js.native
   
-  def client(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def client(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
-  def client(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def client(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def client(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
+  def client(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def client(
     arg1: ValueType,
     arg2: ValueType,
@@ -293,7 +292,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def client(
     arg1: ValueType,
@@ -301,19 +300,19 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def client(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def client(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def client(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def client(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def client(args: ValueType*): js.Promise[_] = js.native
+  def client(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def client(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def client(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def client(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def client(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("client")
-  var client_Original: OverloadedSubCommand[ValueType, _] = js.native
+  var client_Original: OverloadedSubCommand[ValueType, js.Any] = js.native
   
-  def cluster(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def cluster(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
-  def cluster(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def cluster(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def cluster(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
+  def cluster(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def cluster(
     arg1: ValueType,
     arg2: ValueType,
@@ -321,7 +320,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def cluster(
     arg1: ValueType,
@@ -329,15 +328,15 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def cluster(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def cluster(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def cluster(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def cluster(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def cluster(args: ValueType*): js.Promise[_] = js.native
+  def cluster(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def cluster(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def cluster(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def cluster(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def cluster(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("cluster")
-  var cluster_Original: OverloadedSubCommand[ValueType, _] = js.native
+  var cluster_Original: OverloadedSubCommand[ValueType, js.Any] = js.native
   
   @JSName("config")
   def config_GET(op: GET, cfg: String): js.Promise[js.Array[String]] = js.native
@@ -359,9 +358,9 @@ trait Commands extends StObject {
   def dbsize(): js.Promise[Double] = js.native
   def dbsize(callback: Callback[Double]): Unit = js.native
   
-  def debug(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def debug(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
-  def debug(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def debug(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def debug(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
+  def debug(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def debug(
     arg1: ValueType,
     arg2: ValueType,
@@ -369,7 +368,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def debug(
     arg1: ValueType,
@@ -377,15 +376,15 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def debug(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def debug(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def debug(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def debug(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def debug(args: ValueType*): js.Promise[_] = js.native
+  def debug(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def debug(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def debug(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def debug(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def debug(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("debug")
-  var debug_Original: OverloadedSubCommand[ValueType, _] = js.native
+  var debug_Original: OverloadedSubCommand[ValueType, js.Any] = js.native
   
   def decr(key: KeyType): js.Promise[Double] = js.native
   def decr(key: KeyType, callback: Callback[Double]): Unit = js.native
@@ -426,9 +425,9 @@ trait Commands extends StObject {
   // All arguments are by default flattened, declaring all possible permuatations
   // would be unreasonable (and probably impossible)
   def eval(args: js.Array[ValueType]): js.Any = js.native
-  def eval(args: js.Array[ValueType], callback: Callback[_]): js.Any = js.native
-  def eval(script: String, numKeys: Double, arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def eval(script: String, numKeys: Double, arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def eval(args: js.Array[ValueType], callback: Callback[js.Any]): js.Any = js.native
+  def eval(script: String, numKeys: Double, arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def eval(script: String, numKeys: Double, arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def eval(
     script: String,
     numKeys: Double,
@@ -438,7 +437,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def eval(
     script: String,
@@ -448,7 +447,7 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def eval(
     script: String,
@@ -457,7 +456,7 @@ trait Commands extends StObject {
     arg2: ValueType,
     arg3: ValueType,
     arg4: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def eval(
     script: String,
@@ -465,21 +464,21 @@ trait Commands extends StObject {
     arg1: ValueType,
     arg2: ValueType,
     arg3: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def eval(script: String, numKeys: Double, arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def eval(script: String, numKeys: Double, arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def eval(script: String, numKeys: Double, args: ValueType*): js.Promise[_] = js.native
+  def eval(script: String, numKeys: Double, arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def eval(script: String, numKeys: Double, arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def eval(script: String, numKeys: Double, args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("eval")
-  var eval_Original: OverloadedEvalCommand[ValueType, _] = js.native
+  var eval_Original: OverloadedEvalCommand[ValueType, js.Any] = js.native
   
   // This overload exists specifically to retain compatibility to `redlock`
   // All arguments are by default flattened, declaring all possible permuatations
   // would be unreasonable (and probably impossible)
   def evalsha(args: js.Array[ValueType]): js.Any = js.native
-  def evalsha(args: js.Array[ValueType], callback: Callback[_]): js.Any = js.native
-  def evalsha(script: String, numKeys: Double, arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def evalsha(script: String, numKeys: Double, arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def evalsha(args: js.Array[ValueType], callback: Callback[js.Any]): js.Any = js.native
+  def evalsha(script: String, numKeys: Double, arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def evalsha(script: String, numKeys: Double, arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def evalsha(
     script: String,
     numKeys: Double,
@@ -489,7 +488,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def evalsha(
     script: String,
@@ -499,7 +498,7 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def evalsha(
     script: String,
@@ -508,7 +507,7 @@ trait Commands extends StObject {
     arg2: ValueType,
     arg3: ValueType,
     arg4: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def evalsha(
     script: String,
@@ -516,13 +515,13 @@ trait Commands extends StObject {
     arg1: ValueType,
     arg2: ValueType,
     arg3: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def evalsha(script: String, numKeys: Double, arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def evalsha(script: String, numKeys: Double, arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def evalsha(script: String, numKeys: Double, args: ValueType*): js.Promise[_] = js.native
+  def evalsha(script: String, numKeys: Double, arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def evalsha(script: String, numKeys: Double, arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def evalsha(script: String, numKeys: Double, args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("evalsha")
-  var evalsha_Original: OverloadedEvalCommand[ValueType, _] = js.native
+  var evalsha_Original: OverloadedEvalCommand[ValueType, js.Any] = js.native
   
   def exec(): js.Promise[js.Array[js.Tuple2[Error | Null, String]]] = js.native
   def exec(callback: Callback[js.Array[js.Tuple2[Error | Null, String]]]): Unit = js.native
@@ -1025,13 +1024,13 @@ trait Commands extends StObject {
   var msetnx_Original: OverloadedHashCommand[ValueType, BooleanResponse] = js.native
   
   def multi(): Pipeline = js.native
-  def multi(commands: js.UndefOr[scala.Nothing], options: MultiOptions): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]]): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]], options: MultiOptions): Pipeline = js.native
+  def multi(commands: Unit, options: MultiOptions): Pipeline = js.native
   def multi(options: typings.ioredis.anon.Pipeline): js.Promise[Ok] = js.native
   
-  def `object`(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def `object`(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def `object`(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def `object`(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def `object`(
     arg1: ValueType,
     arg2: ValueType,
@@ -1039,7 +1038,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def `object`(
     arg1: ValueType,
@@ -1047,15 +1046,15 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def `object`(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def `object`(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def `object`(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def `object`(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def `object`(args: ValueType*): js.Promise[_] = js.native
+  def `object`(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def `object`(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def `object`(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def `object`(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def `object`(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("object")
-  var object_Original: OverloadedListCommand[ValueType, _] = js.native
+  var object_Original: OverloadedListCommand[ValueType, js.Any] = js.native
   
   def persist(key: KeyType): js.Promise[BooleanResponse] = js.native
   def persist(key: KeyType, callback: Callback[BooleanResponse]): Unit = js.native
@@ -1617,9 +1616,9 @@ trait Commands extends StObject {
   def scard(key: KeyType): js.Promise[Double] = js.native
   def scard(key: KeyType, callback: Callback[Double]): Unit = js.native
   
-  def script(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def script(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
-  def script(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def script(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def script(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
+  def script(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def script(
     arg1: ValueType,
     arg2: ValueType,
@@ -1627,7 +1626,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def script(
     arg1: ValueType,
@@ -1635,15 +1634,15 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def script(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def script(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def script(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def script(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def script(args: ValueType*): js.Promise[_] = js.native
+  def script(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def script(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def script(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def script(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def script(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("script")
-  var script_Original: OverloadedSubCommand[ValueType, _] = js.native
+  var script_Original: OverloadedSubCommand[ValueType, js.Any] = js.native
   
   def sdiff(arg1: js.Array[KeyType]): js.Promise[js.Array[String]] = js.native
   def sdiff(arg1: js.Array[KeyType], cb: Callback[js.Array[String]]): Unit = js.native
@@ -1706,65 +1705,7 @@ trait Commands extends StObject {
   
   def set(key: KeyType, value: ValueType): js.Promise[Ok | Null] = js.native
   def set(key: KeyType, value: ValueType, callback: Callback[Ok]): Unit = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.UndefOr[scala.Nothing], time: String): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: String,
-    setMode: String
-  ): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: String,
-    setMode: Double
-  ): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.UndefOr[scala.Nothing], time: Double): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: Double,
-    setMode: String
-  ): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: Double,
-    setMode: Double
-  ): js.Promise[Ok | Null] = js.native
   def set(key: KeyType, value: ValueType, expiryMode: String): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: String,
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: String,
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Ok | Null] = js.native
   def set(key: KeyType, value: ValueType, expiryMode: String, time: String): js.Promise[Ok | Null] = js.native
   def set(key: KeyType, value: ValueType, expiryMode: String, time: String, callback: Callback[Ok]): Unit = js.native
   def set(key: KeyType, value: ValueType, expiryMode: String, time: String, setMode: String): js.Promise[Ok | Null] = js.native
@@ -1805,91 +1746,31 @@ trait Commands extends StObject {
     setMode: Double,
     callback: Callback[Ok | Null]
   ): Unit = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_]): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.Array[_],
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Ok | Null] = js.native
-  def set(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.Array[_],
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String, setMode: String): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String, setMode: Double): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double, setMode: String): js.Promise[Ok | Null] = js.native
-  def set(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: String, time: Unit, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: String, time: Unit, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any]): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Unit, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Unit, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: String, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: String, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: Double, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: Double, setMode: Double): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: Unit, setMode: String): js.Promise[Ok | Null] = js.native
+  def set(key: KeyType, value: ValueType, expiryMode: Unit, time: Unit, setMode: Double): js.Promise[Ok | Null] = js.native
   def set(key: KeyType, value: ValueType, setMode: String, callback: Callback[Ok | Null]): Unit = js.native
-  def set(key: KeyType, value: ValueType, setMode: js.Array[_], callback: Callback[Ok | Null]): Unit = js.native
+  def set(key: KeyType, value: ValueType, setMode: js.Array[js.Any], callback: Callback[Ok | Null]): Unit = js.native
   
   def setBuffer(key: KeyType, value: ValueType): js.Promise[Buffer] = js.native
   def setBuffer(key: KeyType, value: ValueType, callback: Callback[Buffer]): Unit = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.UndefOr[scala.Nothing], time: String): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: String,
-    setMode: String
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: String,
-    setMode: Double
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.UndefOr[scala.Nothing], time: Double): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: Double,
-    setMode: String
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.UndefOr[scala.Nothing],
-    time: Double,
-    setMode: Double
-  ): js.Promise[Buffer] = js.native
   def setBuffer(key: KeyType, value: ValueType, expiryMode: String): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: String,
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: String,
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Buffer] = js.native
   def setBuffer(key: KeyType, value: ValueType, expiryMode: String, time: String): js.Promise[Buffer] = js.native
   def setBuffer(key: KeyType, value: ValueType, expiryMode: String, time: String, setMode: String): js.Promise[Buffer] = js.native
   def setBuffer(
@@ -1929,27 +1810,25 @@ trait Commands extends StObject {
     setMode: Double,
     callback: Callback[Buffer]
   ): Unit = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_]): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.Array[_],
-    time: js.UndefOr[scala.Nothing],
-    setMode: String
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(
-    key: KeyType,
-    value: ValueType,
-    expiryMode: js.Array[_],
-    time: js.UndefOr[scala.Nothing],
-    setMode: Double
-  ): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String, setMode: String): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: String, setMode: Double): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double, setMode: String): js.Promise[Buffer] = js.native
-  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[_], time: Double, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: String, time: Unit, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: String, time: Unit, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any]): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: String, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Double, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Unit, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: js.Array[js.Any], time: Unit, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: String, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: String, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: Double, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: Double, setMode: Double): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: Unit, setMode: String): js.Promise[Buffer] = js.native
+  def setBuffer(key: KeyType, value: ValueType, expiryMode: Unit, time: Unit, setMode: Double): js.Promise[Buffer] = js.native
   def setBuffer(key: KeyType, value: ValueType, setMode: String, callback: Callback[Buffer]): Unit = js.native
   
   def setbit(key: KeyType, offset: Double, value: ValueType): js.Promise[Double] = js.native
@@ -2521,8 +2400,8 @@ trait Commands extends StObject {
   @JSName("sunionstore")
   var sunionstore_Original: OverloadedKeyCommand[KeyType, Double] = js.native
   
-  def sync(): js.Promise[_] = js.native
-  def sync(callback: Callback[_]): Unit = js.native
+  def sync(): js.Promise[js.Any] = js.native
+  def sync(callback: Callback[js.Any]): Unit = js.native
   
   def time(): js.Promise[js.Tuple2[String, String]] = js.native
   def time(callback: Callback[js.Tuple2[String, String]]): Unit = js.native
@@ -2777,9 +2656,9 @@ trait Commands extends StObject {
   @JSName("xgroup")
   var xgroup_Original: OverloadedSubCommand[ValueType, Ok] = js.native
   
-  def xinfo(arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def xinfo(arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
-  def xinfo(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def xinfo(arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def xinfo(arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
+  def xinfo(arg1: ValueType, arg2: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def xinfo(
     arg1: ValueType,
     arg2: ValueType,
@@ -2787,7 +2666,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def xinfo(
     arg1: ValueType,
@@ -2795,21 +2674,21 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def xinfo(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def xinfo(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def xinfo(arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def xinfo(arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def xinfo(args: ValueType*): js.Promise[_] = js.native
+  def xinfo(arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xinfo(arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xinfo(arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xinfo(arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xinfo(args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("xinfo")
-  var xinfo_Original: OverloadedSubCommand[ValueType, _] = js.native
+  var xinfo_Original: OverloadedSubCommand[ValueType, js.Any] = js.native
   
   def xlen(key: KeyType): js.Promise[Double] = js.native
   def xlen(key: KeyType, callback: Callback[Double]): Unit = js.native
   
-  def xpending(key: KeyType, arg1: js.Array[ValueType]): js.Promise[_] = js.native
-  def xpending(key: KeyType, arg1: js.Array[ValueType], cb: Callback[_]): Unit = js.native
+  def xpending(key: KeyType, arg1: js.Array[ValueType]): js.Promise[js.Any] = js.native
+  def xpending(key: KeyType, arg1: js.Array[ValueType], cb: Callback[js.Any]): Unit = js.native
   def xpending(
     key: KeyType,
     arg1: ValueType,
@@ -2818,7 +2697,7 @@ trait Commands extends StObject {
     arg4: ValueType,
     arg5: ValueType,
     arg6: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
   def xpending(
     key: KeyType,
@@ -2827,15 +2706,22 @@ trait Commands extends StObject {
     arg3: ValueType,
     arg4: ValueType,
     arg5: ValueType,
-    cb: Callback[_]
+    cb: Callback[js.Any]
   ): Unit = js.native
-  def xpending(key: KeyType, arg1: ValueType, arg2: ValueType, arg3: ValueType, arg4: ValueType, cb: Callback[_]): Unit = js.native
-  def xpending(key: KeyType, arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[_]): Unit = js.native
-  def xpending(key: KeyType, arg1: ValueType, arg2: ValueType, cb: Callback[_]): Unit = js.native
-  def xpending(key: KeyType, arg1: ValueType, cb: Callback[_]): Unit = js.native
-  def xpending(key: KeyType, args: ValueType*): js.Promise[_] = js.native
+  def xpending(
+    key: KeyType,
+    arg1: ValueType,
+    arg2: ValueType,
+    arg3: ValueType,
+    arg4: ValueType,
+    cb: Callback[js.Any]
+  ): Unit = js.native
+  def xpending(key: KeyType, arg1: ValueType, arg2: ValueType, arg3: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xpending(key: KeyType, arg1: ValueType, arg2: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xpending(key: KeyType, arg1: ValueType, cb: Callback[js.Any]): Unit = js.native
+  def xpending(key: KeyType, args: ValueType*): js.Promise[js.Any] = js.native
   @JSName("xpending")
-  var xpending_Original: OverloadedKeyCommand[ValueType, _] = js.native
+  var xpending_Original: OverloadedKeyCommand[ValueType, js.Any] = js.native
   
   def xrange(key: KeyType, arg1: js.Array[ValueType]): js.Promise[js.Array[js.Tuple2[String, js.Array[String]]]] = js.native
   def xrange(

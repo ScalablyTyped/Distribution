@@ -7,7 +7,6 @@ import typings.wordpressEditPost.anon.OmitPropsname
 import typings.wordpressEditPost.pluginPostStatusInfoMod.PluginPostStatusInfo.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginPostStatusInfoMod {
@@ -30,9 +29,9 @@ object pluginPostStatusInfoMod {
     */
   object default {
     
-    @JSImport("@wordpress/edit-post/components/sidebar/plugin-post-status-info", JSImport.Default)
-    @js.native
-    def apply(props: Props): Element = js.native
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/edit-post/components/sidebar/plugin-post-status-info", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -46,15 +45,14 @@ object pluginPostStatusInfoMod {
   
   object PluginPostStatusInfo {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * An optional class name added to the row.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
     }
     object Props {
       

@@ -2,26 +2,24 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ToastOptions> */
-@js.native
 trait PartialToastOptions extends StObject {
   
-  var activationPercent: js.UndefOr[Double] = js.native
+  var activationPercent: js.UndefOr[Double] = js.undefined
   
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
-  var completeCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var completeCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var displayLength: js.UndefOr[Double] = js.native
+  var displayLength: js.UndefOr[Double] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var inDuration: js.UndefOr[Double] = js.native
+  var inDuration: js.UndefOr[Double] = js.undefined
   
-  var outDuration: js.UndefOr[Double] = js.native
+  var outDuration: js.UndefOr[Double] = js.undefined
 }
 object PartialToastOptions {
   

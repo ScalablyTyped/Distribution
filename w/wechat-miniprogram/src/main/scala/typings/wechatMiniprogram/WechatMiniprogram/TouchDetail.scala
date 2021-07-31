@@ -2,27 +2,25 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Touch 对象 */
-@js.native
 trait TouchDetail extends StObject {
   
   /** 距离页面可显示区域 (屏幕除去导航条) 左上角距离，横向为 X 轴 */
-  var clientX: Double = js.native
+  var clientX: Double
   
   /** 距离页面可显示区域 (屏幕除去导航条) 左上角距离，纵向为 Y 轴 */
-  var clientY: Double = js.native
+  var clientY: Double
   
   /** 触摸点的标识符 */
-  var identifier: Double = js.native
+  var identifier: Double
   
   /** 距离文档左上角的距离，文档的左上角为原点，横向为 X 轴 */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /** 距离文档左上角的距离，文档的左上角为原点，纵向为 Y 轴 */
-  var pageY: Double = js.native
+  var pageY: Double
 }
 object TouchDetail {
   

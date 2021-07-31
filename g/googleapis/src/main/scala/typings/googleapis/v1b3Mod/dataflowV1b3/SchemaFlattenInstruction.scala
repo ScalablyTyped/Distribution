@@ -2,20 +2,18 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction that copies its inputs (zero or more) to its (single)
   * output.
   */
-@js.native
 trait SchemaFlattenInstruction extends StObject {
   
   /**
     * Describes the inputs to the flatten instruction.
     */
-  var inputs: js.UndefOr[js.Array[SchemaInstructionInput]] = js.native
+  var inputs: js.UndefOr[js.Array[SchemaInstructionInput]] = js.undefined
 }
 object SchemaFlattenInstruction {
   

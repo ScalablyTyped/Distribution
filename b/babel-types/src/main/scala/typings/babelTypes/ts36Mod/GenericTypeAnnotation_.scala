@@ -3,21 +3,20 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.GenericTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterInstantiation_ = js.native
+  var typeParameters: TypeParameterInstantiation_
   
   @JSName("type")
-  var type_GenericTypeAnnotation_ : GenericTypeAnnotation = js.native
+  var type_GenericTypeAnnotation_ : GenericTypeAnnotation
 }
 object GenericTypeAnnotation_ {
   
@@ -27,11 +26,10 @@ object GenericTypeAnnotation_ {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: GenericTypeAnnotation,
     typeParameters: TypeParameterInstantiation_
   ): GenericTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("GenericTypeAnnotation")
     __obj.asInstanceOf[GenericTypeAnnotation_]
   }
   

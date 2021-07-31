@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertificateSelfManagedSslCertificate extends StObject {
   
   /** A local certificate file. The certificate must be in PEM format. The certificate chain must be no greater than 5 certs long. The chain must include at least one intermediate cert. */
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
   /** A write-only private key in PEM format. Only insert requests will include this field. */
-  var privateKey: js.UndefOr[String] = js.native
+  var privateKey: js.UndefOr[String] = js.undefined
 }
 object SslCertificateSelfManagedSslCertificate {
   

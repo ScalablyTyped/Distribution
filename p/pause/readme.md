@@ -11,8 +11,8 @@ Pause a stream's data events
 | Full name          | pause |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 43059333 |
+| # dependents       | 45 |
+| # downloads        | 49072948 |
 | # stars            | 2 |
 
 ## Links

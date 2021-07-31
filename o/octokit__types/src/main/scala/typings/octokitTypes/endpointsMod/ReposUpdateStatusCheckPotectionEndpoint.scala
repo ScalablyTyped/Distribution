@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateStatusCheckPotectionEndpoint extends StObject {
   
-  var branch: String = js.native
+  var branch: String
   
   /**
     * The list of status checks to require in order to merge into this branch
     */
-  var contexts: js.UndefOr[js.Array[String]] = js.native
+  var contexts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Require branches to be up to date before merging.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object ReposUpdateStatusCheckPotectionEndpoint {
   

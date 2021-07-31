@@ -2,15 +2,13 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageSourceOptions extends StObject {
   
-  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ImageSourceOptions {
   

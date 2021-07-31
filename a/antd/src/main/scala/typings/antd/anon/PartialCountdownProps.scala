@@ -12,48 +12,46 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/statistic/Countdown.CountdownProps> */
-@js.native
 trait PartialCountdownProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var formatter: js.UndefOr[Formatter] = js.native
+  var formatter: js.UndefOr[Formatter] = js.undefined
   
-  var groupSeparator: js.UndefOr[String] = js.native
+  var groupSeparator: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var onFinish: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var prefix: js.UndefOr[ReactNode] = js.native
+  var prefix: js.UndefOr[ReactNode] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var suffix: js.UndefOr[ReactNode] = js.native
+  var suffix: js.UndefOr[ReactNode] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
   
-  var value: js.UndefOr[countdownValueType] = js.native
+  var value: js.UndefOr[countdownValueType] = js.undefined
   
-  var valueRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.native
+  var valueRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
   
-  var valueStyle: js.UndefOr[CSSProperties] = js.native
+  var valueStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialCountdownProps {
   

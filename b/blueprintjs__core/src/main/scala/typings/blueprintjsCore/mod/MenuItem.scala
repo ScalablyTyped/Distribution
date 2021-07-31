@@ -5,15 +5,14 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "MenuItem")
 @js.native
 class MenuItem protected ()
   extends typings.blueprintjsCore.componentsMod.MenuItem {
-  def this(props: IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-  def this(props: IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+  def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+  def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
 }
 /* static members */
 object MenuItem {

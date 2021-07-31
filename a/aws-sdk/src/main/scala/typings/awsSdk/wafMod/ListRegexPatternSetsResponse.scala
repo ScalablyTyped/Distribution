@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegexPatternSetsResponse extends StObject {
   
   /**
     * If you have more RegexPatternSet objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more RegexPatternSet objects, submit another ListRegexPatternSets request, and specify the NextMarker value from the response in the NextMarker value in the next request.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafMod.NextMarker] = js.undefined
   
   /**
     * An array of RegexPatternSetSummary objects.
     */
-  var RegexPatternSets: js.UndefOr[RegexPatternSetSummaries] = js.native
+  var RegexPatternSets: js.UndefOr[RegexPatternSetSummaries] = js.undefined
 }
 object ListRegexPatternSetsResponse {
   

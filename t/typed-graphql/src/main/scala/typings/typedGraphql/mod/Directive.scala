@@ -2,20 +2,20 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Directives
-@js.native
-trait Directive extends Node {
+trait Directive
+  extends StObject
+     with Node {
   
-  var arguments: js.UndefOr[js.Array[Argument]] = js.native
+  var arguments: js.UndefOr[js.Array[Argument]] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var name: Name = js.native
+  var name: Name
 }
 object Directive {
   

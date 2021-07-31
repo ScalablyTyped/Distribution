@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
+trait ParamsResourceOrganizationsAssetsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * When compare_duration is set, the ListAssetResult's "state" attribute is
@@ -36,13 +36,13 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * state is "UNUSED", which indicates that the asset is present at
     * read_time.
     */
-  var compareDuration: js.UndefOr[String] = js.native
+  var compareDuration: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A field mask to specify the ListAssetsResult fields to be
     * listed in the response. An empty field mask will list all fields.
     */
-  var fieldMask: js.UndefOr[String] = js.native
+  var fieldMask: js.UndefOr[String] = js.undefined
   
   /**
     * Expression that defines the filter to apply across assets. The expression
@@ -60,7 +60,7 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * quotes.  For example, `resource_properties.size = 100` is a valid filter
     * string.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Expression that defines what fields and order to use for sorting. The
@@ -72,26 +72,26 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * syntax are insignificant. "name desc,resource_properties.a_property" and
     * " name     desc  ,   resource_properties.a_property  " are equivalent.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results to return in a single response. Default is
     * 10, minimum is 1, maximum is 1000.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The value returned by the last `ListAssetsResponse`; indicates that this
     * is a continuation of a prior `ListAssets` call, and that the system
     * should return the next page of data.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the organization assets should belong to. Its format is
     * "organizations/[organization_id]".
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Time used as a reference point when filtering assets. The filter is
@@ -99,7 +99,7 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * those at that specific time. Absence of this field will default to the
     * API's version of NOW.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsAssetsList {
   

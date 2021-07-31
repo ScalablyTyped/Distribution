@@ -3,40 +3,39 @@ package typings.highcharts.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAttributes
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var d: js.UndefOr[String | SVGPathArray] = js.native
+  var d: js.UndefOr[String | SVGPathArray] = js.undefined
   
-  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
-  var matrix: js.UndefOr[js.Array[Double]] = js.native
+  var matrix: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var rotationOriginX: js.UndefOr[Double] = js.native
+  var rotationOriginX: js.UndefOr[Double] = js.undefined
   
-  var rotationOriginY: js.UndefOr[Double] = js.native
+  var rotationOriginY: js.UndefOr[Double] = js.undefined
   
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var stroke: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
-  var style: js.UndefOr[String | CSSObject] = js.native
+  var style: js.UndefOr[String | CSSObject] = js.undefined
   
-  var translateX: js.UndefOr[Double] = js.native
+  var translateX: js.UndefOr[Double] = js.undefined
   
-  var translateY: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object SVGAttributes {
   

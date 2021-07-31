@@ -14,7 +14,6 @@ import typings.jointjs.mod.dia.Graph.ExploreOptions
 import typings.jointjs.mod.g.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.Graph")
@@ -22,8 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Graph ()
   extends Model[js.Any, ModelSetOptions, js.Object] {
   def this(attributes: js.Any) = this()
-  def this(attributes: js.UndefOr[scala.Nothing], opt: CellModel) = this()
   def this(attributes: js.Any, opt: CellModel) = this()
+  def this(attributes: Unit, opt: CellModel) = this()
   
   def addCell(cell: js.Array[Cell]): this.type = js.native
   def addCell(cell: js.Array[Cell], opt: StringDictionary[js.Any]): this.type = js.native
@@ -164,18 +163,19 @@ class Graph ()
   def toJSON(): js.Any = js.native
   
   def translate(tx: Double): this.type = js.native
-  def translate(tx: Double, ty: js.UndefOr[scala.Nothing], opt: TranslateOptions): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
   def translate(tx: Double, ty: Double, opt: TranslateOptions): this.type = js.native
+  def translate(tx: Double, ty: Unit, opt: TranslateOptions): this.type = js.native
 }
 object Graph {
   
-  @js.native
-  trait ConnectionOptions extends EmbeddableOptions {
+  trait ConnectionOptions
+    extends StObject
+       with EmbeddableOptions {
     
-    var inbound: js.UndefOr[Boolean] = js.native
+    var inbound: js.UndefOr[Boolean] = js.undefined
     
-    var outbound: js.UndefOr[Boolean] = js.native
+    var outbound: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectionOptions {
     
@@ -202,10 +202,11 @@ object Graph {
     }
   }
   
-  @js.native
-  trait ExploreOptions extends ConnectionOptions {
+  trait ExploreOptions
+    extends StObject
+       with ConnectionOptions {
     
-    var breadthFirst: js.UndefOr[Boolean] = js.native
+    var breadthFirst: js.UndefOr[Boolean] = js.undefined
   }
   object ExploreOptions {
     

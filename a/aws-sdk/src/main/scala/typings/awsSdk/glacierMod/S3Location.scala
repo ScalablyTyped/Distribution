@@ -2,51 +2,49 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * A list of grants that control access to the staged results.
     */
-  var AccessControlList: js.UndefOr[AccessControlPolicyList] = js.native
+  var AccessControlList: js.UndefOr[AccessControlPolicyList] = js.undefined
   
   /**
     * The name of the Amazon S3 bucket where the job results are stored.
     */
-  var BucketName: js.UndefOr[String] = js.native
+  var BucketName: js.UndefOr[String] = js.undefined
   
   /**
     * The canned access control list (ACL) to apply to the job results.
     */
-  var CannedACL: js.UndefOr[typings.awsSdk.glacierMod.CannedACL] = js.native
+  var CannedACL: js.UndefOr[typings.awsSdk.glacierMod.CannedACL] = js.undefined
   
   /**
     * Contains information about the encryption used to store the job results in Amazon S3.
     */
-  var Encryption: js.UndefOr[typings.awsSdk.glacierMod.Encryption] = js.native
+  var Encryption: js.UndefOr[typings.awsSdk.glacierMod.Encryption] = js.undefined
   
   /**
     * The prefix that is prepended to the results for this request.
     */
-  var Prefix: js.UndefOr[String] = js.native
+  var Prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The storage class used to store the job results.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.glacierMod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.glacierMod.StorageClass] = js.undefined
   
   /**
     * The tag-set that is applied to the job results.
     */
-  var Tagging: js.UndefOr[hashmap] = js.native
+  var Tagging: js.UndefOr[hashmap] = js.undefined
   
   /**
     * A map of metadata to store with the job results in Amazon S3.
     */
-  var UserMetadata: js.UndefOr[hashmap] = js.native
+  var UserMetadata: js.UndefOr[hashmap] = js.undefined
 }
 object S3Location {
   

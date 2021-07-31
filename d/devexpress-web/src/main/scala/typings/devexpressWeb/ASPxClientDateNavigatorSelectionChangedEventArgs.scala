@@ -3,19 +3,19 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDateNavigator.SelectionChanged event.
   */
-@js.native
-trait ASPxClientDateNavigatorSelectionChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDateNavigatorSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns the selected dates related to the event.
     */
-  var selectedDates: js.Array[Date] = js.native
+  var selectedDates: js.Array[Date]
 }
 object ASPxClientDateNavigatorSelectionChangedEventArgs {
   

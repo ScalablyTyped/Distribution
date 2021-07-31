@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.styleToObject.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(style: String): StringDictionary[String] | Null = ^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String] | Null]
+  @scala.inline
+  def apply(style: String, iterator: Iterator): StringDictionary[String] | Null = (^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String] | Null]
+  
   @JSImport("style-to-object", JSImport.Namespace)
   @js.native
-  def apply(style: String): StringDictionary[String] | Null = js.native
-  @JSImport("style-to-object", JSImport.Namespace)
-  @js.native
-  def apply(style: String, iterator: Iterator): StringDictionary[String] | Null = js.native
+  val ^ : js.Any = js.native
   
   // declaration is an object from module `inline-style-parser`
-  @js.native
   trait Declaration extends StObject {
     
-    var position: End = js.native
+    var position: End
     
-    var property: String = js.native
+    var property: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Declaration {
     
@@ -54,12 +54,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DeclarationPos extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object DeclarationPos {
     

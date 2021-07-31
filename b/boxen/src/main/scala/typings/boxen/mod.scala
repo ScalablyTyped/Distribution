@@ -32,7 +32,6 @@ import typings.cliBoxes.mod.BoxStyle
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,12 +59,14 @@ object mod {
   	//
   	```
   	*/
+  @scala.inline
+  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("boxen", JSImport.Namespace)
   @js.native
-  def apply(text: String): String = js.native
-  @JSImport("boxen", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.boxen.boxenStrings.single
@@ -127,14 +128,13 @@ object mod {
   	*/
   type CustomBorderStyle = BoxStyle
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Align the text in the box based on the widest line.
     		@default 'left'
     		*/
-    val align: js.UndefOr[left | right | center] = js.native
+    val align: js.UndefOr[left | right | center] = js.undefined
     
     /**
     		Color of the background.
@@ -144,7 +144,7 @@ object mod {
           black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
     		Color of the box border.
@@ -154,37 +154,37 @@ object mod {
           black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
     		Style of the box border.
     		@default BorderStyle.Single
     		*/
-    val borderStyle: js.UndefOr[BorderStyle | CustomBorderStyle] = js.native
+    val borderStyle: js.UndefOr[BorderStyle | CustomBorderStyle] = js.undefined
     
     /**
     		Reduce opacity of the border.
     		@default false
     		*/
-    val dimBorder: js.UndefOr[Boolean] = js.native
+    val dimBorder: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Float the box on the available terminal screen space.
     		@default 'left'
     		*/
-    val float: js.UndefOr[left | right | center] = js.native
+    val float: js.UndefOr[left | right | center] = js.undefined
     
     /**
     		Space around the box.
     		@default 0
     		*/
-    val margin: js.UndefOr[Double | Spacing] = js.native
+    val margin: js.UndefOr[Double | Spacing] = js.undefined
     
     /**
     		Space between the text and box border.
     		@default 0
     		*/
-    val padding: js.UndefOr[Double | Spacing] = js.native
+    val padding: js.UndefOr[Double | Spacing] = js.undefined
   }
   object Options {
     
@@ -260,16 +260,15 @@ object mod {
   /**
   	Spacing used for `padding` and `margin`.
   	*/
-  @js.native
   trait Spacing extends StObject {
     
-    val bottom: Double = js.native
+    val bottom: Double
     
-    val left: Double = js.native
+    val left: Double
     
-    val right: Double = js.native
+    val right: Double
     
-    val top: Double = js.native
+    val top: Double
   }
   object Spacing {
     

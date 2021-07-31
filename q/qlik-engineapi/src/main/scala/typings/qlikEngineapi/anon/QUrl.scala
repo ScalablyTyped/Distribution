@@ -2,21 +2,19 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QUrl extends StObject {
   
   /**
     * Name of the Service
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * URL of the Service
     */
-  var qUrl: String = js.native
+  var qUrl: String
 }
 object QUrl {
   

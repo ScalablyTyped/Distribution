@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateInfo extends StObject {
   
   /**
     * The identifier of the certificate.
     */
-  var CertificateId: js.UndefOr[typings.awsSdk.directoryserviceMod.CertificateId] = js.native
+  var CertificateId: js.UndefOr[typings.awsSdk.directoryserviceMod.CertificateId] = js.undefined
   
   /**
     * The common name for the certificate.
     */
-  var CommonName: js.UndefOr[CertificateCN] = js.native
+  var CommonName: js.UndefOr[CertificateCN] = js.undefined
   
   /**
     * The date and time when the certificate will expire.
     */
-  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.native
+  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.undefined
   
   /**
     * The state of the certificate.
     */
-  var State: js.UndefOr[CertificateState] = js.native
+  var State: js.UndefOr[CertificateState] = js.undefined
 }
 object CertificateInfo {
   

@@ -3,33 +3,31 @@ package typings.phaser.Phaser.Physics.Matter
 import typings.phaser.Phaser.Types.Physics.Matter.MatterCollisionData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
   
-  @js.native
   trait AfterAddEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array of the object(s) that have been added. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[_] = js.native
+    var `object`: js.Array[js.Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object AfterAddEvent {
     
     @scala.inline
-    def apply(name: String, `object`: js.Array[_], source: js.Any): AfterAddEvent = {
+    def apply(name: String, `object`: js.Array[js.Any], source: js.Any): AfterAddEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterAddEvent]
@@ -42,7 +40,7 @@ object Events {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: js.Array[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
@@ -52,28 +50,27 @@ object Events {
     }
   }
   
-  @js.native
   trait AfterRemoveEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array of the object(s) that were removed. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[_] = js.native
+    var `object`: js.Array[js.Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object AfterRemoveEvent {
     
     @scala.inline
-    def apply(name: String, `object`: js.Array[_], source: js.Any): AfterRemoveEvent = {
+    def apply(name: String, `object`: js.Array[js.Any], source: js.Any): AfterRemoveEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterRemoveEvent]
@@ -86,7 +83,7 @@ object Events {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: js.Array[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
@@ -96,23 +93,22 @@ object Events {
     }
   }
   
-  @js.native
   trait AfterUpdateEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object AfterUpdateEvent {
     
@@ -136,28 +132,27 @@ object Events {
     }
   }
   
-  @js.native
   trait BeforeAddEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array of the object(s) to be added. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[_] = js.native
+    var `object`: js.Array[js.Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object BeforeAddEvent {
     
     @scala.inline
-    def apply(name: String, `object`: js.Array[_], source: js.Any): BeforeAddEvent = {
+    def apply(name: String, `object`: js.Array[js.Any], source: js.Any): BeforeAddEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeAddEvent]
@@ -170,7 +165,7 @@ object Events {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: js.Array[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
@@ -180,28 +175,27 @@ object Events {
     }
   }
   
-  @js.native
   trait BeforeRemoveEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array of the object(s) to be removed. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[_] = js.native
+    var `object`: js.Array[js.Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object BeforeRemoveEvent {
     
     @scala.inline
-    def apply(name: String, `object`: js.Array[_], source: js.Any): BeforeRemoveEvent = {
+    def apply(name: String, `object`: js.Array[js.Any], source: js.Any): BeforeRemoveEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeRemoveEvent]
@@ -214,7 +208,7 @@ object Events {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: js.Array[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
@@ -224,23 +218,22 @@ object Events {
     }
   }
   
-  @js.native
   trait BeforeUpdateEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object BeforeUpdateEvent {
     
@@ -264,28 +257,27 @@ object Events {
     }
   }
   
-  @js.native
   trait CollisionActiveEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A list of all affected pairs in the collision.
       */
-    var pairs: js.Array[MatterCollisionData] = js.native
+    var pairs: js.Array[MatterCollisionData]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object CollisionActiveEvent {
     
@@ -315,28 +307,27 @@ object Events {
     }
   }
   
-  @js.native
   trait CollisionEndEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A list of all affected pairs in the collision.
       */
-    var pairs: js.Array[MatterCollisionData] = js.native
+    var pairs: js.Array[MatterCollisionData]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object CollisionEndEvent {
     
@@ -366,28 +357,27 @@ object Events {
     }
   }
   
-  @js.native
   trait CollisionStartEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A list of all affected pairs in the collision.
       */
-    var pairs: js.Array[MatterCollisionData] = js.native
+    var pairs: js.Array[MatterCollisionData]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object CollisionStartEvent {
     
@@ -417,18 +407,17 @@ object Events {
     }
   }
   
-  @js.native
   trait SleepEndEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object SleepEndEvent {
     
@@ -449,18 +438,17 @@ object Events {
     }
   }
   
-  @js.native
   trait SleepStartEvent extends StObject {
     
     /**
       * The name of the event.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The source object of the event.
       */
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object SleepStartEvent {
     

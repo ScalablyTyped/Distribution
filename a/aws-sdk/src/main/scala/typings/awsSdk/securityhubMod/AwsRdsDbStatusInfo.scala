@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbStatusInfo extends StObject {
   
   /**
     * If the read replica is currently in an error state, provides the error details.
     */
-  var Message: js.UndefOr[NonEmptyString] = js.native
+  var Message: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the read replica instance is operating normally.
     */
-  var Normal: js.UndefOr[Boolean] = js.native
+  var Normal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The status of the read replica instance.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of status. For a read replica, the status type is read replication.
     */
-  var StatusType: js.UndefOr[NonEmptyString] = js.native
+  var StatusType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbStatusInfo {
   

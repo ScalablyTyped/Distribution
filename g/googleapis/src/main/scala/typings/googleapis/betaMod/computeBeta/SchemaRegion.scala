@@ -2,67 +2,65 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Region resource. (== resource_for beta.regions ==) (== resource_for
   * v1.regions ==)
   */
-@js.native
 trait SchemaRegion extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The deprecation status associated with this region.
     */
-  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.native
+  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.undefined
   
   /**
     * [Output Only] Textual description of the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#region for regions.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Quotas assigned to this region.
     */
-  var quotas: js.UndefOr[js.Array[SchemaQuota]] = js.native
+  var quotas: js.UndefOr[js.Array[SchemaQuota]] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Status of the region, either UP or DOWN.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A list of zones available in this region, in the form of
     * resource URLs.
     */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRegion {
   

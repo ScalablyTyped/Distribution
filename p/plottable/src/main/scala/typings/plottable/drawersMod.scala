@@ -14,10 +14,13 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawersMod {
+  
+  @JSImport("plottable/build/src/drawers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable/build/src/drawers", "ArcOutlineSVGDrawer")
   @js.native
@@ -111,60 +114,54 @@ object drawersMod {
   class SymbolSVGDrawer ()
     extends typings.plottable.symbolDrawerMod.SymbolSVGDrawer
   
-  @JSImport("plottable/build/src/drawers", "getStrokeDashArray")
-  @js.native
-  def getStrokeDashArray(style: Record[String, _]): js.Array[Double] = js.native
+  @scala.inline
+  def getStrokeDashArray(style: Record[String, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plottable/build/src/drawers", "getStrokeWidth")
-  @js.native
-  def getStrokeWidth(style: Record[String, _]): Double = js.native
+  @scala.inline
+  def getStrokeWidth(style: Record[String, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plottable/build/src/drawers", "makeAreaCanvasDrawStep")
-  @js.native
-  def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[_]], d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
+  @scala.inline
+  def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[js.Any]], d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAreaCanvasDrawStep")(d3AreaFactory.asInstanceOf[js.Any], d3LineFactory.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
   
-  @JSImport("plottable/build/src/drawers", "makeLineCanvasDrawStep")
-  @js.native
-  def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
+  @scala.inline
+  def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
   
-  @JSImport("plottable/build/src/drawers", "makeSymbolCanvasDrawStep")
-  @js.native
+  @scala.inline
   def makeSymbolCanvasDrawStep(
     dataset: Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]]
-  ): CanvasDrawStep = js.native
-  @JSImport("plottable/build/src/drawers", "makeSymbolCanvasDrawStep")
-  @js.native
+  ): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSymbolCanvasDrawStep")(dataset.asInstanceOf[js.Any], symbolProjector.asInstanceOf[js.Any], sizeProjector.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
+  @scala.inline
   def makeSymbolCanvasDrawStep(
     dataset: Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]],
     stepBuffer: CanvasBuffer
-  ): CanvasDrawStep = js.native
+  ): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSymbolCanvasDrawStep")(dataset.asInstanceOf[js.Any], symbolProjector.asInstanceOf[js.Any], sizeProjector.asInstanceOf[js.Any], stepBuffer.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
   
-  @JSImport("plottable/build/src/drawers", "renderArea")
-  @js.native
+  @scala.inline
   def renderArea(
     context: CanvasRenderingContext2D,
-    d3Area: Area_[_],
-    data: js.Array[_],
-    style: IFillStyle with IStrokeStyle
-  ): Unit = js.native
+    d3Area: Area_[js.Any],
+    data: js.Array[js.Any],
+    style: IFillStyle & IStrokeStyle
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderArea")(context.asInstanceOf[js.Any], d3Area.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers", "renderLine")
-  @js.native
-  def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[_], data: js.Array[_], style: IStrokeStyle): Unit = js.native
+  @scala.inline
+  def renderLine(
+    context: CanvasRenderingContext2D,
+    d3Line: Line_[js.Any],
+    data: js.Array[js.Any],
+    style: IStrokeStyle
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers", "renderPathWithStyle")
-  @js.native
-  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, _]): Unit = js.native
+  @scala.inline
+  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers", "resolveAttributes")
-  @js.native
-  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
+  @scala.inline
+  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("plottable/build/src/drawers", "resolveAttributesSubsetWithStyles")
-  @js.native
-  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
+  @scala.inline
+  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
 }

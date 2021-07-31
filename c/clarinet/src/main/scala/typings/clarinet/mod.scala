@@ -4,10 +4,13 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("clarinet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("clarinet", "CParser")
   @js.native
@@ -82,6 +85,102 @@ object mod {
     @JSImport("clarinet", "STATE")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("clarinet", "STATE.0")
+    @js.native
+    val `0`: String = js.native
+    
+    @JSImport("clarinet", "STATE.1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("clarinet", "STATE.10")
+    @js.native
+    val `10`: String = js.native
+    
+    @JSImport("clarinet", "STATE.11")
+    @js.native
+    val `11`: String = js.native
+    
+    @JSImport("clarinet", "STATE.12")
+    @js.native
+    val `12`: String = js.native
+    
+    @JSImport("clarinet", "STATE.13")
+    @js.native
+    val `13`: String = js.native
+    
+    @JSImport("clarinet", "STATE.14")
+    @js.native
+    val `14`: String = js.native
+    
+    @JSImport("clarinet", "STATE.15")
+    @js.native
+    val `15`: String = js.native
+    
+    @JSImport("clarinet", "STATE.16")
+    @js.native
+    val `16`: String = js.native
+    
+    @JSImport("clarinet", "STATE.17")
+    @js.native
+    val `17`: String = js.native
+    
+    @JSImport("clarinet", "STATE.18")
+    @js.native
+    val `18`: String = js.native
+    
+    @JSImport("clarinet", "STATE.19")
+    @js.native
+    val `19`: String = js.native
+    
+    @JSImport("clarinet", "STATE.2")
+    @js.native
+    val `2`: String = js.native
+    
+    @JSImport("clarinet", "STATE.20")
+    @js.native
+    val `20`: String = js.native
+    
+    @JSImport("clarinet", "STATE.21")
+    @js.native
+    val `21`: String = js.native
+    
+    @JSImport("clarinet", "STATE.22")
+    @js.native
+    val `22`: String = js.native
+    
+    @JSImport("clarinet", "STATE.23")
+    @js.native
+    val `23`: String = js.native
+    
+    @JSImport("clarinet", "STATE.3")
+    @js.native
+    val `3`: String = js.native
+    
+    @JSImport("clarinet", "STATE.4")
+    @js.native
+    val `4`: String = js.native
+    
+    @JSImport("clarinet", "STATE.5")
+    @js.native
+    val `5`: String = js.native
+    
+    @JSImport("clarinet", "STATE.6")
+    @js.native
+    val `6`: String = js.native
+    
+    @JSImport("clarinet", "STATE.7")
+    @js.native
+    val `7`: String = js.native
+    
+    @JSImport("clarinet", "STATE.8")
+    @js.native
+    val `8`: String = js.native
+    
+    @JSImport("clarinet", "STATE.9")
+    @js.native
+    val `9`: String = js.native
     
     @JSImport("clarinet", "STATE.BACKSLASH")
     @js.native
@@ -229,124 +328,23 @@ object mod {
     def VALUE: Double = js.native
     @scala.inline
     def VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
-    
-    @JSImport("clarinet", "STATE.0")
-    @js.native
-    val `0`: String = js.native
-    
-    @JSImport("clarinet", "STATE.1")
-    @js.native
-    val `1`: String = js.native
-    
-    @JSImport("clarinet", "STATE.10")
-    @js.native
-    val `10`: String = js.native
-    
-    @JSImport("clarinet", "STATE.11")
-    @js.native
-    val `11`: String = js.native
-    
-    @JSImport("clarinet", "STATE.12")
-    @js.native
-    val `12`: String = js.native
-    
-    @JSImport("clarinet", "STATE.13")
-    @js.native
-    val `13`: String = js.native
-    
-    @JSImport("clarinet", "STATE.14")
-    @js.native
-    val `14`: String = js.native
-    
-    @JSImport("clarinet", "STATE.15")
-    @js.native
-    val `15`: String = js.native
-    
-    @JSImport("clarinet", "STATE.16")
-    @js.native
-    val `16`: String = js.native
-    
-    @JSImport("clarinet", "STATE.17")
-    @js.native
-    val `17`: String = js.native
-    
-    @JSImport("clarinet", "STATE.18")
-    @js.native
-    val `18`: String = js.native
-    
-    @JSImport("clarinet", "STATE.19")
-    @js.native
-    val `19`: String = js.native
-    
-    @JSImport("clarinet", "STATE.2")
-    @js.native
-    val `2`: String = js.native
-    
-    @JSImport("clarinet", "STATE.20")
-    @js.native
-    val `20`: String = js.native
-    
-    @JSImport("clarinet", "STATE.21")
-    @js.native
-    val `21`: String = js.native
-    
-    @JSImport("clarinet", "STATE.22")
-    @js.native
-    val `22`: String = js.native
-    
-    @JSImport("clarinet", "STATE.23")
-    @js.native
-    val `23`: String = js.native
-    
-    @JSImport("clarinet", "STATE.3")
-    @js.native
-    val `3`: String = js.native
-    
-    @JSImport("clarinet", "STATE.4")
-    @js.native
-    val `4`: String = js.native
-    
-    @JSImport("clarinet", "STATE.5")
-    @js.native
-    val `5`: String = js.native
-    
-    @JSImport("clarinet", "STATE.6")
-    @js.native
-    val `6`: String = js.native
-    
-    @JSImport("clarinet", "STATE.7")
-    @js.native
-    val `7`: String = js.native
-    
-    @JSImport("clarinet", "STATE.8")
-    @js.native
-    val `8`: String = js.native
-    
-    @JSImport("clarinet", "STATE.9")
-    @js.native
-    val `9`: String = js.native
   }
   
-  @JSImport("clarinet", "createStream")
-  @js.native
-  def createStream(): CStream = js.native
-  @JSImport("clarinet", "createStream")
-  @js.native
-  def createStream(opt: Options): CStream = js.native
+  @scala.inline
+  def createStream(): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[CStream]
+  @scala.inline
+  def createStream(opt: Options): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opt.asInstanceOf[js.Any]).asInstanceOf[CStream]
   
-  @JSImport("clarinet", "parser")
-  @js.native
-  def parser(): CParser = js.native
-  @JSImport("clarinet", "parser")
-  @js.native
-  def parser(opt: Options): CParser = js.native
+  @scala.inline
+  def parser(): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[CParser]
+  @scala.inline
+  def parser(opt: Options): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(opt.asInstanceOf[js.Any]).asInstanceOf[CParser]
   
-  @js.native
   trait Options extends StObject {
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

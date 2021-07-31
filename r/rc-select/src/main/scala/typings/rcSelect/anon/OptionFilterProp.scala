@@ -3,17 +3,15 @@ package typings.rcSelect.anon
 import typings.rcSelect.generatorMod.FilterFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionFilterProp extends StObject {
   
   var filterOption: Boolean | (FilterFunc[
     /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
-  ]) = js.native
+  ])
   
-  var optionFilterProp: String = js.native
+  var optionFilterProp: String
 }
 object OptionFilterProp {
   

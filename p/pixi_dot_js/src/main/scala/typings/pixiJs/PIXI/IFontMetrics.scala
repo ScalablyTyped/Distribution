@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} descent - Font descent
   * @property {number} fontSize - Font size
   */
-@js.native
 trait IFontMetrics extends StObject {
   
-  var ascent: Double = js.native
+  var ascent: Double
   
-  var descent: Double = js.native
+  var descent: Double
   
-  var fontSize: Double = js.native
+  var fontSize: Double
 }
 object IFontMetrics {
   

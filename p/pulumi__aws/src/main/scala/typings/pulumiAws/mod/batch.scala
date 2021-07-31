@@ -16,10 +16,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batch {
+  
+  @JSImport("@pulumi/aws", "batch")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "batch.ComputeEnvironment")
   @js.native
@@ -38,6 +41,10 @@ object batch {
   /* static members */
   object ComputeEnvironment {
     
+    @JSImport("@pulumi/aws", "batch.ComputeEnvironment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ComputeEnvironment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,26 +54,21 @@ object batch {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "batch.ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws", "batch.ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws", "batch.ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws", "batch.ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComputeEnvironmentState): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment]
     
     /**
       * Returns true if the given object is an instance of ComputeEnvironment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "batch.ComputeEnvironment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "batch.JobDefinition")
@@ -86,6 +88,10 @@ object batch {
   /* static members */
   object JobDefinition {
     
+    @JSImport("@pulumi/aws", "batch.JobDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing JobDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -95,26 +101,21 @@ object batch {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "batch.JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
-    @JSImport("@pulumi/aws", "batch.JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
-    @JSImport("@pulumi/aws", "batch.JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobDefinitionState): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
-    @JSImport("@pulumi/aws", "batch.JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.jobDefinitionMod.JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobDefinitionMod.JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobDefinitionMod.JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobDefinitionState): typings.pulumiAws.jobDefinitionMod.JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobDefinitionMod.JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobDefinitionMod.JobDefinition]
     
     /**
       * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "batch.JobDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "batch.JobQueue")
@@ -134,6 +135,10 @@ object batch {
   /* static members */
   object JobQueue {
     
+    @JSImport("@pulumi/aws", "batch.JobQueue")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing JobQueue resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -143,39 +148,30 @@ object batch {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "batch.JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.jobQueueMod.JobQueue = js.native
-    @JSImport("@pulumi/aws", "batch.JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = js.native
-    @JSImport("@pulumi/aws", "batch.JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobQueueState): typings.pulumiAws.jobQueueMod.JobQueue = js.native
-    @JSImport("@pulumi/aws", "batch.JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.jobQueueMod.JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobQueueMod.JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobQueueMod.JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobQueueState): typings.pulumiAws.jobQueueMod.JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobQueueMod.JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.jobQueueMod.JobQueue]
     
     /**
       * Returns true if the given object is an instance of JobQueue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "batch.JobQueue.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "batch.getComputeEnvironment")
-  @js.native
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = js.native
-  @JSImport("@pulumi/aws", "batch.getComputeEnvironment")
-  @js.native
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = js.native
+  @scala.inline
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
+  @scala.inline
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
   
-  @JSImport("@pulumi/aws", "batch.getJobQueue")
-  @js.native
-  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = js.native
-  @JSImport("@pulumi/aws", "batch.getJobQueue")
-  @js.native
-  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = js.native
+  @scala.inline
+  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetJobQueueResult]]
+  @scala.inline
+  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJobQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetJobQueueResult]]
 }

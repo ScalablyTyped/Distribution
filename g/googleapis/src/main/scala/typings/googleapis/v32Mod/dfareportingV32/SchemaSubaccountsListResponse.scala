@@ -2,30 +2,28 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Subaccount List Response
   */
-@js.native
 trait SchemaSubaccountsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#subaccountsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount collection.
     */
-  var subaccounts: js.UndefOr[js.Array[SchemaSubaccount]] = js.native
+  var subaccounts: js.UndefOr[js.Array[SchemaSubaccount]] = js.undefined
 }
 object SchemaSubaccountsListResponse {
   

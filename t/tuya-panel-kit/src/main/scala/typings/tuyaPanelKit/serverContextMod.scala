@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.tuyaPanelKit.anon.Pathname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverContextMod extends Shortcut {
@@ -14,10 +13,9 @@ object serverContextMod extends Shortcut {
   @js.native
   val default: Context[js.UndefOr[ServerContextType]] = js.native
   
-  @js.native
   trait ServerContextType extends StObject {
     
-    var location: js.UndefOr[Pathname] = js.native
+    var location: js.UndefOr[Pathname] = js.undefined
   }
   object ServerContextType {
     

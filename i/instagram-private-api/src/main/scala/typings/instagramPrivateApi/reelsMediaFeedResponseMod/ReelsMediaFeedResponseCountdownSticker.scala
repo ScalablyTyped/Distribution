@@ -2,35 +2,33 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseCountdownSticker extends StObject {
   
-  var attribution: Null = js.native
+  var attribution: Null
   
-  var countdown_id: Double = js.native
+  var countdown_id: Double
   
-  var digit_card_color: String = js.native
+  var digit_card_color: String
   
-  var digit_color: String = js.native
+  var digit_color: String
   
-  var end_background_color: String = js.native
+  var end_background_color: String
   
-  var end_ts: Double = js.native
+  var end_ts: Double
   
-  var following_enabled: Boolean = js.native
+  var following_enabled: Boolean
   
-  var is_owner: Boolean = js.native
+  var is_owner: Boolean
   
-  var start_background_color: String = js.native
+  var start_background_color: String
   
-  var text: String = js.native
+  var text: String
   
-  var text_color: String = js.native
+  var text_color: String
   
-  var viewer_is_following: Boolean = js.native
+  var viewer_is_following: Boolean
 }
 object ReelsMediaFeedResponseCountdownSticker {
   

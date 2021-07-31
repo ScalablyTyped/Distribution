@@ -2,24 +2,22 @@ package typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A accelerator type that a Node can be configured with.
   */
-@js.native
 trait SchemaAcceleratorType extends StObject {
   
   /**
     * The resource name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * the accelerator type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAcceleratorType {
   

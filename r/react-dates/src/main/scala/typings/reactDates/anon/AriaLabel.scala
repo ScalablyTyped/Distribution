@@ -8,21 +8,19 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AriaLabel extends StObject {
   
-  var ariaLabel: String = js.native
+  var ariaLabel: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[Element]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[Element]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[Element]] = js.undefined
 }
 object AriaLabel {
   

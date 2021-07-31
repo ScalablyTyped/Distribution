@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,44 +9,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * been changed in this suggestion. For any field set to true, there is a new
   * suggested value.
   */
-@js.native
 trait SchemaImagePropertiesSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to angle.
     */
-  var angleSuggested: js.UndefOr[Boolean] = js.native
+  var angleSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to brightness.
     */
-  var brightnessSuggested: js.UndefOr[Boolean] = js.native
+  var brightnessSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to content_uri.
     */
-  var contentUriSuggested: js.UndefOr[Boolean] = js.native
+  var contentUriSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to contrast.
     */
-  var contrastSuggested: js.UndefOr[Boolean] = js.native
+  var contrastSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A mask that indicates which of the fields in crop_properties have been
     * changed in this suggestion.
     */
-  var cropPropertiesSuggestionState: js.UndefOr[SchemaCropPropertiesSuggestionState] = js.native
+  var cropPropertiesSuggestionState: js.UndefOr[SchemaCropPropertiesSuggestionState] = js.undefined
   
   /**
     * Indicates if there was a suggested change to source_uri.
     */
-  var sourceUriSuggested: js.UndefOr[Boolean] = js.native
+  var sourceUriSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to transparency.
     */
-  var transparencySuggested: js.UndefOr[Boolean] = js.native
+  var transparencySuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaImagePropertiesSuggestionState {
   

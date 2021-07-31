@@ -11,8 +11,8 @@ A TOML loader for Cosmiconfig
 | Full name          | cosmiconfig-toml-loader |
 | Keywords           | coscmiconfig, toml, loader, load, configuration, config |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 52 |
+| # dependents       | 1 |
+| # downloads        | 4316144 |
 | # stars            | 0 |
 
 ## Links

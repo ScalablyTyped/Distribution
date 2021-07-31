@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.XSingleLayerStratum
   * @since OOo 1.1.2
   */
-@js.native
-trait XMultiLayerStratum extends XInterface {
+trait XMultiLayerStratum
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves a layer associated to a layer id, if newer than indicated.
@@ -33,7 +33,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the layer id is invalid or if the timestamp is invalid
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getLayer(aLayerId: String, aTimestamp: String): XLayer = js.native
+  def getLayer(aLayerId: String, aTimestamp: String): XLayer
   
   /**
     * retrieves the layers associated to a series of layer ids, if newer than indicated.
@@ -47,7 +47,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the layer ids is invalid or if the timestamp is invalid
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getLayers(aLayerIds: SeqEquiv[String], aTimestamp: String): SafeArray[XLayer] = js.native
+  def getLayers(aLayerIds: SeqEquiv[String], aTimestamp: String): SafeArray[XLayer]
   
   /**
     * retrieves the layers associated to a series of layer ids, if newer than indicated for each layer.
@@ -61,7 +61,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the layer ids is invalid or if one of the timestamps is invalid or if the lengths of the
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getMultipleLayers(aLayerIds: SeqEquiv[String], aTimestamps: SeqEquiv[String]): SafeArray[XLayer] = js.native
+  def getMultipleLayers(aLayerIds: SeqEquiv[String], aTimestamps: SeqEquiv[String]): SafeArray[XLayer]
   
   /**
     * retrieves a writable representation of the layer associated to a layer id.
@@ -71,7 +71,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::NoSupportException if the implementation does not support updates.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getUpdatableLayer(aLayerId: String): XUpdatableLayer = js.native
+  def getUpdatableLayer(aLayerId: String): XUpdatableLayer
   
   /**
     * identifies the layer which should be modified to update data of a component on behalf of an entity.
@@ -86,7 +86,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::NoSupportException if the implementation does not support updates.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getUpdateLayerId(aComponent: String, aEntity: String): String = js.native
+  def getUpdateLayerId(aComponent: String, aEntity: String): String
   
   /**
     * identifies the layers within this stratum which should be read and merged to determine data of a component for an entity
@@ -100,7 +100,7 @@ trait XMultiLayerStratum extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid or if the entity doesn't exist.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listLayerIds(aComponent: String, aEntity: String): SafeArray[String] = js.native
+  def listLayerIds(aComponent: String, aEntity: String): SafeArray[String]
 }
 object XMultiLayerStratum {
   

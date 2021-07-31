@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsVpcConfiguration extends StObject {
   
   /**
     * Whether the task's elastic network interface receives a public IP address. The default value is DISABLED.
     */
-  var assignPublicIp: js.UndefOr[AssignPublicIp] = js.native
+  var assignPublicIp: js.UndefOr[AssignPublicIp] = js.undefined
   
   /**
     * The IDs of the security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used. There is a limit of 5 security groups that can be specified per AwsVpcConfiguration.  All specified security groups must be from the same VPC. 
     */
-  var securityGroups: js.UndefOr[StringList] = js.native
+  var securityGroups: js.UndefOr[StringList] = js.undefined
   
   /**
     * The IDs of the subnets associated with the task or service. There is a limit of 16 subnets that can be specified per AwsVpcConfiguration.  All specified subnets must be from the same VPC. 
     */
-  var subnets: StringList = js.native
+  var subnets: StringList
 }
 object AwsVpcConfiguration {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBudgetsForResourceOutput extends StObject {
   
   /**
     * Information about the associated budgets.
     */
-  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.native
+  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.undefined
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
     */
-  var NextPageToken: js.UndefOr[PageToken] = js.native
+  var NextPageToken: js.UndefOr[PageToken] = js.undefined
 }
 object ListBudgetsForResourceOutput {
   

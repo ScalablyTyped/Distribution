@@ -2,13 +2,11 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checked extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
 }
 object Checked {
   

@@ -2,24 +2,30 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterFilterMod {
   
   @JSImport("ol/format/filter/Filter", JSImport.Default)
   @js.native
-  abstract class default protected () extends Filter {
+  abstract class default protected ()
+    extends StObject
+       with Filter {
     def this(tagName: String) = this()
+    
+    /**
+      * The XML tag name for a filter.
+      */
+    /* CompleteClass */
+    override def getTagName(): String = js.native
   }
   
-  @js.native
   trait Filter extends StObject {
     
     /**
       * The XML tag name for a filter.
       */
-    def getTagName(): String = js.native
+    def getTagName(): String
   }
   object Filter {
     

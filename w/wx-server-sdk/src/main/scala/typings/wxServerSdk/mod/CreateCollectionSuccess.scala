@@ -2,17 +2,15 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interface GeoJSON<T> {
 //     type: T;
 //     coordinates: [];
 // }
-@js.native
 trait CreateCollectionSuccess extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object CreateCollectionSuccess {
   

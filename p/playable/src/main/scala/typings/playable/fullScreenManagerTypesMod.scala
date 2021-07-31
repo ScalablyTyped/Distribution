@@ -2,35 +2,33 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullScreenManagerTypesMod {
   
-  @js.native
   trait IFullScreenAPI extends StObject {
     
-    var disableEnterFullScreenOnPlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var disableEnterFullScreenOnPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var disableExitFullScreenOnEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var disableExitFullScreenOnEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var disableExitFullScreenOnPause: js.UndefOr[js.Function0[Unit]] = js.native
+    var disableExitFullScreenOnPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var disablePauseVideoOnFullScreenExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var disablePauseVideoOnFullScreenExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enableEnterFullScreenOnPlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var enableEnterFullScreenOnPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enableExitFullScreenOnEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var enableExitFullScreenOnEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enableExitFullScreenOnPause: js.UndefOr[js.Function0[Unit]] = js.native
+    var enableExitFullScreenOnPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enablePauseVideoOnFullScreenExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var enablePauseVideoOnFullScreenExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enterFullScreen: js.UndefOr[js.Function0[Unit]] = js.native
+    var enterFullScreen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var exitFullScreen: js.UndefOr[js.Function0[Unit]] = js.native
+    var exitFullScreen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var isInFullScreen: js.UndefOr[Boolean] = js.native
+    var isInFullScreen: js.UndefOr[Boolean] = js.undefined
   }
   object IFullScreenAPI {
     
@@ -111,16 +109,15 @@ object fullScreenManagerTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenConfig extends StObject {
     
-    var enterFullScreenOnPlay: js.UndefOr[Boolean] = js.native
+    var enterFullScreenOnPlay: js.UndefOr[Boolean] = js.undefined
     
-    var exitFullScreenOnEnd: js.UndefOr[Boolean] = js.native
+    var exitFullScreenOnEnd: js.UndefOr[Boolean] = js.undefined
     
-    var exitFullScreenOnPause: js.UndefOr[Boolean] = js.native
+    var exitFullScreenOnPause: js.UndefOr[Boolean] = js.undefined
     
-    var pauseVideoOnFullScreenExit: js.UndefOr[Boolean] = js.native
+    var pauseVideoOnFullScreenExit: js.UndefOr[Boolean] = js.undefined
   }
   object IFullScreenConfig {
     
@@ -159,20 +156,19 @@ object fullScreenManagerTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenHelper extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def exit(): Unit = js.native
+    def exit(): Unit
     
-    var isAPIExist: Boolean = js.native
+    var isAPIExist: Boolean
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    var isInFullScreen: Boolean = js.native
+    var isInFullScreen: Boolean
     
-    def request(): Unit = js.native
+    def request(): Unit
   }
   object IFullScreenHelper {
     
@@ -212,34 +208,33 @@ object fullScreenManagerTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenManager extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disableEnterFullScreenOnPlay(): Unit = js.native
+    def disableEnterFullScreenOnPlay(): Unit
     
-    def disableExitFullScreenOnEnd(): Unit = js.native
+    def disableExitFullScreenOnEnd(): Unit
     
-    def disableExitFullScreenOnPause(): Unit = js.native
+    def disableExitFullScreenOnPause(): Unit
     
-    def disablePauseVideoOnFullScreenExit(): Unit = js.native
+    def disablePauseVideoOnFullScreenExit(): Unit
     
-    def enableEnterFullScreenOnPlay(): Unit = js.native
+    def enableEnterFullScreenOnPlay(): Unit
     
-    def enableExitFullScreenOnEnd(): Unit = js.native
+    def enableExitFullScreenOnEnd(): Unit
     
-    def enableExitFullScreenOnPause(): Unit = js.native
+    def enableExitFullScreenOnPause(): Unit
     
-    def enablePauseVideoOnFullScreenExit(): Unit = js.native
+    def enablePauseVideoOnFullScreenExit(): Unit
     
-    def enterFullScreen(): Unit = js.native
+    def enterFullScreen(): Unit
     
-    def exitFullScreen(): Unit = js.native
+    def exitFullScreen(): Unit
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    var isInFullScreen: Boolean = js.native
+    var isInFullScreen: Boolean
   }
   object IFullScreenManager {
     

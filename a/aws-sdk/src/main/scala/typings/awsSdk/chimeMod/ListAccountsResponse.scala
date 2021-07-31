@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccountsResponse extends StObject {
   
   /**
     * The list of accounts.
     */
-  var Accounts: js.UndefOr[AccountList] = js.native
+  var Accounts: js.UndefOr[AccountList] = js.undefined
   
   /**
     * The account's user token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListAccountsResponse {
   

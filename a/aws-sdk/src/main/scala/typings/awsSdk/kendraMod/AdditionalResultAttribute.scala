@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalResultAttribute extends StObject {
   
   /**
     * The key that identifies the attribute.
     */
-  var Key: String = js.native
+  var Key: String
   
   /**
     * An object that contains the attribute value.
     */
-  var Value: AdditionalResultAttributeValue = js.native
+  var Value: AdditionalResultAttributeValue
   
   /**
     * The data type of the Value property.
     */
-  var ValueType: AdditionalResultAttributeValueType = js.native
+  var ValueType: AdditionalResultAttributeValueType
 }
 object AdditionalResultAttribute {
   

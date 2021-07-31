@@ -2,21 +2,19 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CombinedData extends StObject {
   
-  var barData: js.UndefOr[BarData] = js.native
+  var barData: js.UndefOr[BarData] = js.undefined
   
-  var bubbleData: js.UndefOr[BubbleData] = js.native
+  var bubbleData: js.UndefOr[BubbleData] = js.undefined
   
-  var candleData: js.UndefOr[CandleStickData] = js.native
+  var candleData: js.UndefOr[CandleStickData] = js.undefined
   
-  var lineData: js.UndefOr[LineData] = js.native
+  var lineData: js.UndefOr[LineData] = js.undefined
   
-  var scatterData: js.UndefOr[ScatterData] = js.native
+  var scatterData: js.UndefOr[ScatterData] = js.undefined
 }
 object CombinedData {
   

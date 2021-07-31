@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramResult extends Object {
+trait HistogramResult
+  extends StObject
+     with Object {
   
   /**
     * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
     */
-  var bins: js.Array[Bin] = js.native
+  var bins: js.Array[Bin]
   
   /**
     * The maximum value returned by the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
     */
-  var maxValue: Double = js.native
+  var maxValue: Double
   
   /**
     * The minimum value returned by the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
     */
-  var minValue: Double = js.native
+  var minValue: Double
 }
 object HistogramResult {
   

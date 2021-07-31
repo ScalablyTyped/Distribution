@@ -4,79 +4,77 @@ import typings.evernote.mod.Types.ReminderEmailConfig
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessAddress extends StObject {
   
-  var businessAddress: js.UndefOr[String] = js.native
+  var businessAddress: js.UndefOr[String] = js.undefined
   
-  var clipFullPage: js.UndefOr[Boolean] = js.native
+  var clipFullPage: js.UndefOr[Boolean] = js.undefined
   
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
-  var dailyEmailLimit: js.UndefOr[Double] = js.native
+  var dailyEmailLimit: js.UndefOr[Double] = js.undefined
   
-  var dateAgreedToTermsOfService: js.UndefOr[Timestamp] = js.native
+  var dateAgreedToTermsOfService: js.UndefOr[Timestamp] = js.undefined
   
-  var defaultLatitude: js.UndefOr[Double] = js.native
+  var defaultLatitude: js.UndefOr[Double] = js.undefined
   
-  var defaultLocationName: js.UndefOr[String] = js.native
+  var defaultLocationName: js.UndefOr[String] = js.undefined
   
-  var defaultLongitude: js.UndefOr[Double] = js.native
+  var defaultLongitude: js.UndefOr[Double] = js.undefined
   
-  var educationalDiscount: js.UndefOr[Boolean] = js.native
+  var educationalDiscount: js.UndefOr[Boolean] = js.undefined
   
-  var emailAddressLastConfirmed: js.UndefOr[Timestamp] = js.native
+  var emailAddressLastConfirmed: js.UndefOr[Timestamp] = js.undefined
   
-  var emailOptOutDate: js.UndefOr[Timestamp] = js.native
+  var emailOptOutDate: js.UndefOr[Timestamp] = js.undefined
   
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
-  var hideSponsorBilling: js.UndefOr[Boolean] = js.native
+  var hideSponsorBilling: js.UndefOr[Boolean] = js.undefined
   
-  var incomingEmailAddress: js.UndefOr[String] = js.native
+  var incomingEmailAddress: js.UndefOr[String] = js.undefined
   
-  var maxReferrals: js.UndefOr[Double] = js.native
+  var maxReferrals: js.UndefOr[Double] = js.undefined
   
-  var partnerEmailOptInDate: js.UndefOr[Timestamp] = js.native
+  var partnerEmailOptInDate: js.UndefOr[Timestamp] = js.undefined
   
-  var passwordUpdated: js.UndefOr[Timestamp] = js.native
+  var passwordUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var preactivation: js.UndefOr[Boolean] = js.native
+  var preactivation: js.UndefOr[Boolean] = js.undefined
   
-  var preferredCountry: js.UndefOr[String] = js.native
+  var preferredCountry: js.UndefOr[String] = js.undefined
   
-  var preferredLanguage: js.UndefOr[String] = js.native
+  var preferredLanguage: js.UndefOr[String] = js.undefined
   
-  var recentMailedAddresses: js.UndefOr[js.Array[String]] = js.native
+  var recentMailedAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var recognitionLanguage: js.UndefOr[String] = js.native
+  var recognitionLanguage: js.UndefOr[String] = js.undefined
   
-  var refererCode: js.UndefOr[String] = js.native
+  var refererCode: js.UndefOr[String] = js.undefined
   
-  var referralCount: js.UndefOr[Double] = js.native
+  var referralCount: js.UndefOr[Double] = js.undefined
   
-  var referralProof: js.UndefOr[String] = js.native
+  var referralProof: js.UndefOr[String] = js.undefined
   
-  var reminderEmailConfig: js.UndefOr[ReminderEmailConfig] = js.native
+  var reminderEmailConfig: js.UndefOr[ReminderEmailConfig] = js.undefined
   
-  var salesforcePushEnabled: js.UndefOr[Boolean] = js.native
+  var salesforcePushEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var sentEmailCount: js.UndefOr[Double] = js.native
+  var sentEmailCount: js.UndefOr[Double] = js.undefined
   
-  var sentEmailDate: js.UndefOr[Timestamp] = js.native
+  var sentEmailDate: js.UndefOr[Timestamp] = js.undefined
   
-  var taxExempt: js.UndefOr[Boolean] = js.native
+  var taxExempt: js.UndefOr[Boolean] = js.undefined
   
-  var twitterId: js.UndefOr[String] = js.native
+  var twitterId: js.UndefOr[String] = js.undefined
   
-  var twitterUserName: js.UndefOr[String] = js.native
+  var twitterUserName: js.UndefOr[String] = js.undefined
   
-  var useEmailAutoFiling: js.UndefOr[Boolean] = js.native
+  var useEmailAutoFiling: js.UndefOr[Boolean] = js.undefined
   
-  var viewedPromotions: js.UndefOr[js.Array[String]] = js.native
+  var viewedPromotions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BusinessAddress {
   

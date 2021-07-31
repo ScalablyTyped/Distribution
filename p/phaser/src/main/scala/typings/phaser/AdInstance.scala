@@ -2,31 +2,29 @@ package typings.phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdInstance extends StObject {
   
   /**
     * Represents an instance of an ad.
     */
-  var instance: js.Any = js.native
+  var instance: js.Any
   
   /**
     * The Audience Network placement ID of this ad instance.
     */
-  var placementID: String = js.native
+  var placementID: String
   
   /**
     * Has this ad already been shown in-game?
     */
-  var shown: Boolean = js.native
+  var shown: Boolean
   
   /**
     * Is this a video ad?
     */
-  var video: Boolean = js.native
+  var video: Boolean
 }
 object AdInstance {
   

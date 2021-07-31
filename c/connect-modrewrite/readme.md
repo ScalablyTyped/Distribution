@@ -11,7 +11,7 @@ connect-modrewrite adds modrewrite functionality to connect/express server
 | Keywords           | modrewrite |
 | # releases         | 0 |
 | # dependents       | 46 |
-| # downloads        | 836223 |
+| # downloads        | 987937 |
 | # stars            | 14 |
 
 ## Links

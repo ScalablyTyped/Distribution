@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyMod extends Shortcut {
@@ -21,24 +20,23 @@ object bodyMod extends Shortcut {
   @js.native
   val default: MemoExoticComponent[FnCall] = js.native
   
-  @js.native
   trait BodyProps[RecordType] extends StObject {
     
-    var childrenColumnName: String = js.native
+    var childrenColumnName: String
     
-    var data: js.Array[RecordType] = js.native
+    var data: js.Array[RecordType]
     
-    var emptyNode: ReactNode = js.native
+    var emptyNode: ReactNode
     
-    var expandedKeys: Set[Key] = js.native
+    var expandedKeys: Set[Key]
     
-    var getRowKey: GetRowKey[RecordType] = js.native
+    var getRowKey: GetRowKey[RecordType]
     
-    var measureColumnWidth: Boolean = js.native
+    var measureColumnWidth: Boolean
     
-    var onRow: GetComponentProps[RecordType] = js.native
+    var onRow: GetComponentProps[RecordType]
     
-    def rowExpandable(record: RecordType): Boolean = js.native
+    def rowExpandable(record: RecordType): Boolean
   }
   object BodyProps {
     
@@ -57,7 +55,7 @@ object bodyMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class BodyPropsMutableBuilder[Self <: BodyProps[_], RecordType] (val x: Self with BodyProps[RecordType]) extends AnyVal {
+    implicit class BodyPropsMutableBuilder[Self <: BodyProps[?], RecordType] (val x: Self & BodyProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])

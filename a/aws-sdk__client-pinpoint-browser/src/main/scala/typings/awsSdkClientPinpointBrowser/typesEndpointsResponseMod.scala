@@ -5,18 +5,16 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointResponseMod.Unmarshalled
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointsResponseMod {
   
-  @js.native
   trait EndpointsResponse extends StObject {
     
     /**
       * The list of endpoints.
       */
-    var Item: js.UndefOr[js.Array[EndpointResponse] | Iterable[EndpointResponse]] = js.native
+    var Item: js.UndefOr[js.Array[EndpointResponse] | Iterable[EndpointResponse]] = js.undefined
   }
   object EndpointsResponse {
     
@@ -40,14 +38,15 @@ object typesEndpointsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEndpointsResponse extends EndpointsResponse {
+  trait UnmarshalledEndpointsResponse
+    extends StObject
+       with EndpointsResponse {
     
     /**
       * The list of endpoints.
       */
     @JSName("Item")
-    var Item_UnmarshalledEndpointsResponse: js.UndefOr[js.Array[UnmarshalledEndpointResponse]] = js.native
+    var Item_UnmarshalledEndpointsResponse: js.UndefOr[js.Array[UnmarshalledEndpointResponse]] = js.undefined
   }
   object UnmarshalledEndpointsResponse {
     

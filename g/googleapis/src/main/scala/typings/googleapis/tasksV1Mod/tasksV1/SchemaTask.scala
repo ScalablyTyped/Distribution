@@ -3,66 +3,64 @@ package typings.googleapis.tasksV1Mod.tasksV1
 import typings.googleapis.anon.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTask extends StObject {
   
   /**
     * Completion date of the task (as a RFC 3339 timestamp). This field is
     * omitted if the task has not been completed.
     */
-  var completed: js.UndefOr[String] = js.native
+  var completed: js.UndefOr[String] = js.undefined
   
   /**
     * Flag indicating whether the task has been deleted. The default if False.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Due date of the task (as a RFC 3339 timestamp). Optional.
     */
-  var due: js.UndefOr[String] = js.native
+  var due: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Flag indicating whether the task is hidden. This is the case if the task
     * had been marked completed when the task list was last cleared. The
     * default is False. This field is read-only.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Task identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource. This is always &quot;tasks#task&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Collection of links. This collection is read-only.
     */
-  var links: js.UndefOr[js.Array[Link]] = js.native
+  var links: js.UndefOr[js.Array[Link]] = js.undefined
   
   /**
     * Notes describing the task. Optional.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Parent task identifier. This field is omitted if it is a top-level task.
     * This field is read-only. Use the &quot;move&quot; method to move the task
     * under a different parent or to the top level.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * String indicating the position of the task among its sibling tasks under
@@ -73,28 +71,28 @@ trait SchemaTask extends StObject {
     * read-only. Use the &quot;move&quot; method to move the task to another
     * position.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * URL pointing to this task. Used to retrieve, update, or delete this task.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the task. This is either &quot;needsAction&quot; or
     * &quot;completed&quot;.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the task.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Last modification time of the task (as a RFC 3339 timestamp).
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaTask {
   

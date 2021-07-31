@@ -6,7 +6,6 @@ import typings.std.ProgressEvent
 import typings.three.loadingManagerMod.LoadingManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderMod {
@@ -25,8 +24,8 @@ object loaderMod {
     	load(): void;
     	parse(): void;
     	*/
-    def loadAsync(url: String): js.Promise[_] = js.native
-    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[_] = js.native
+    def loadAsync(url: String): js.Promise[js.Any] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[js.Any] = js.native
     
     var manager: LoadingManager = js.native
     

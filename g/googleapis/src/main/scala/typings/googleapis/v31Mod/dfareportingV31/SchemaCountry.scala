@@ -2,41 +2,39 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a country that can be targeted by ads.
   */
-@js.native
 trait SchemaCountry extends StObject {
   
   /**
     * Country code.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of this country. This is the ID used for targeting and generating
     * reports.
     */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#country&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this country.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether ad serving supports secure servers in this country.
     */
-  var sslEnabled: js.UndefOr[Boolean] = js.native
+  var sslEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCountry {
   

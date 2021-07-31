@@ -61,11 +61,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Tabloid
 import typings.officeJsPreview.officeJsPreviewStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
-@js.native
 trait PageLayoutUpdateData extends StObject {
   
   /**
@@ -74,7 +72,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var blackAndWhite: js.UndefOr[Boolean] = js.native
+  var blackAndWhite: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottomMargin: js.UndefOr[Double] = js.native
+  var bottomMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerHorizontally: js.UndefOr[Boolean] = js.native
+  var centerHorizontally: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerVertically: js.UndefOr[Boolean] = js.native
+  var centerVertically: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var draftMode: js.UndefOr[Boolean] = js.native
+  var draftMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPageNumber: js.UndefOr[Double | _empty] = js.native
+  var firstPageNumber: js.UndefOr[Double | _empty] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var footerMargin: js.UndefOr[Double] = js.native
+  var footerMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var headerMargin: js.UndefOr[Double] = js.native
+  var headerMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var headersFooters: js.UndefOr[HeaderFooterGroupUpdateData] = js.native
+  var headersFooters: js.UndefOr[HeaderFooterGroupUpdateData] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftMargin: js.UndefOr[Double] = js.native
+  var leftMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var orientation: js.UndefOr[PageOrientation | Portrait | Landscape] = js.native
+  var orientation: js.UndefOr[PageOrientation | Portrait | Landscape] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait PageLayoutUpdateData extends StObject {
     */
   var paperSize: js.UndefOr[
     PaperType | Letter | LetterSmall | Tabloid | Ledger | Legal | Statement | Executive | A3 | A4 | A4Small | A5 | B4 | B5 | Folio | Quatro | Paper10x14 | Paper11x17 | Note | Envelope9 | Envelope10 | Envelope11 | Envelope12 | Envelope14 | Csheet | Dsheet | Esheet | EnvelopeDL | EnvelopeC5 | EnvelopeC3 | EnvelopeC4 | EnvelopeC6 | EnvelopeC65 | EnvelopeB4 | EnvelopeB5 | EnvelopeB6 | EnvelopeItaly | EnvelopeMonarch | EnvelopePersonal | FanfoldUS | FanfoldStdGerman | FanfoldLegalGerman
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -172,7 +170,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printComments: js.UndefOr[PrintComments | NoComments | EndSheet | InPlace] = js.native
+  var printComments: js.UndefOr[PrintComments | NoComments | EndSheet | InPlace] = js.undefined
   
   /**
     *
@@ -180,7 +178,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printErrors: js.UndefOr[PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable] = js.native
+  var printErrors: js.UndefOr[PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable] = js.undefined
   
   /**
     *
@@ -188,7 +186,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printGridlines: js.UndefOr[Boolean] = js.native
+  var printGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -196,7 +194,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printHeadings: js.UndefOr[Boolean] = js.native
+  var printHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -204,7 +202,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var printOrder: js.UndefOr[PrintOrder | DownThenOver | OverThenDown] = js.native
+  var printOrder: js.UndefOr[PrintOrder | DownThenOver | OverThenDown] = js.undefined
   
   /**
     *
@@ -212,7 +210,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightMargin: js.UndefOr[Double] = js.native
+  var rightMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -220,7 +218,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var topMargin: js.UndefOr[Double] = js.native
+  var topMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -229,7 +227,7 @@ trait PageLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var zoom: js.UndefOr[PageLayoutZoomOptions] = js.native
+  var zoom: js.UndefOr[PageLayoutZoomOptions] = js.undefined
 }
 object PageLayoutUpdateData {
   

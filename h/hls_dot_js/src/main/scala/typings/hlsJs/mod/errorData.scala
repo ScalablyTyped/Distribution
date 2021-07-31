@@ -3,33 +3,31 @@ package typings.hlsJs.mod
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait errorData extends StObject {
   
-  var buffer: js.UndefOr[Double] = js.native
+  var buffer: js.UndefOr[Double] = js.undefined
   
-  var context: js.UndefOr[LoaderContext] = js.native
+  var context: js.UndefOr[LoaderContext] = js.undefined
   
-  var details: String = js.native
+  var details: String
   
-  var fatal: Boolean = js.native
+  var fatal: Boolean
   
-  var frag: js.UndefOr[Fragment] = js.native
+  var frag: js.UndefOr[Fragment] = js.undefined
   
-  var levelRetry: js.UndefOr[Boolean] = js.native
+  var levelRetry: js.UndefOr[Boolean] = js.undefined
   
-  var loader: js.UndefOr[Loader] = js.native
+  var loader: js.UndefOr[Loader] = js.undefined
   
-  var networkDetails: js.UndefOr[XMLHttpRequest] = js.native
+  var networkDetails: js.UndefOr[XMLHttpRequest] = js.undefined
   
-  var response: js.UndefOr[LoaderError] = js.native
+  var response: js.UndefOr[LoaderError] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object errorData {
   

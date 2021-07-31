@@ -2,16 +2,16 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReleaseDefinitionDeployStep extends ReleaseDefinitionEnvironmentStep {
+trait ReleaseDefinitionDeployStep
+  extends StObject
+     with ReleaseDefinitionEnvironmentStep {
   
   /**
     * The list of steps for this definition.
     */
-  var tasks: js.Array[WorkflowTask] = js.native
+  var tasks: js.Array[WorkflowTask]
 }
 object ReleaseDefinitionDeployStep {
   

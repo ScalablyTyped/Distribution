@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateDetails extends StObject {
   
   /** The rate type. Acceptable values are `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`, `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and `INVENTORY_SOURCE_RATE_TYPE_CPD`. */
-  var inventorySourceRateType: js.UndefOr[String] = js.native
+  var inventorySourceRateType: js.UndefOr[String] = js.undefined
   
   /** Output only. The amount that the buyer has committed to spending on the inventory source up front. Only applicable for guaranteed inventory sources. */
-  var minimumSpend: js.UndefOr[Money] = js.native
+  var minimumSpend: js.UndefOr[Money] = js.undefined
   
   /** The rate for the inventory source. */
-  var rate: js.UndefOr[Money] = js.native
+  var rate: js.UndefOr[Money] = js.undefined
   
   /** Required for guaranteed inventory sources. The number of impressions guaranteed by the seller. */
-  var unitsPurchased: js.UndefOr[String] = js.native
+  var unitsPurchased: js.UndefOr[String] = js.undefined
 }
 object RateDetails {
   

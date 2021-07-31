@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureViewModelFormattedAttributes extends Object {
+trait FeatureViewModelFormattedAttributes
+  extends StObject
+     with Object {
   
   /**
     * The formatted attributes for an individual content element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#formattedAttributes)
     */
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The formatted attributes specified at the root level of the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) using the [PopupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property.
     *
     * [Read more...](global.html)
     */
-  var global: js.UndefOr[js.Any] = js.native
+  var global: js.UndefOr[js.Any] = js.undefined
 }
 object FeatureViewModelFormattedAttributes {
   

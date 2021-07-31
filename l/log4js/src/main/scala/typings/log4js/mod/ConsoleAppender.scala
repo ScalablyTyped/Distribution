@@ -3,23 +3,23 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConsoleAppender extends Appender {
+trait ConsoleAppender
+  extends StObject
+     with Appender {
   
   // defaults to colouredLayout
-  var layout: js.UndefOr[Layout] = js.native
+  var layout: js.UndefOr[Layout] = js.undefined
   
-  var `type`: console = js.native
+  var `type`: console
 }
 object ConsoleAppender {
   
   @scala.inline
-  def apply(`type`: console): ConsoleAppender = {
+  def apply(): ConsoleAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("console")
     __obj.asInstanceOf[ConsoleAppender]
   }
   

@@ -2,20 +2,18 @@ package typings.elasticApmNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterizedMessageObject extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var params: js.Array[_] = js.native
+  var params: js.Array[js.Any]
 }
 object ParameterizedMessageObject {
   
   @scala.inline
-  def apply(message: String, params: js.Array[_]): ParameterizedMessageObject = {
+  def apply(message: String, params: js.Array[js.Any]): ParameterizedMessageObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterizedMessageObject]
   }
@@ -27,7 +25,7 @@ object ParameterizedMessageObject {
     def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))

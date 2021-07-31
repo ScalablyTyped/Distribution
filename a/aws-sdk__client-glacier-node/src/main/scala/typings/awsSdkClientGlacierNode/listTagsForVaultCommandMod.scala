@@ -7,16 +7,18 @@ import typings.awsSdkClientGlacierNode.typesListTagsForVaultInputMod.ListTagsFor
 import typings.awsSdkClientGlacierNode.typesListTagsForVaultOutputMod.ListTagsForVaultOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listTagsForVaultCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/ListTagsForVaultCommand", "ListTagsForVaultCommand")
   @js.native
-  class ListTagsForVaultCommand protected () extends Command[
+  class ListTagsForVaultCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           ListTagsForVaultInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object listTagsForVaultCommandMod {
         ] {
     def this(input: ListTagsForVaultInput) = this()
     
+    /* CompleteClass */
+    override val input: ListTagsForVaultInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[ListTagsForVaultInput, ListTagsForVaultOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: GlacierResolvedConfiguration
+    ): Handler[ListTagsForVaultInput, ListTagsForVaultOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: GlacierResolvedConfiguration,
+      options: js.Any
     ): Handler[ListTagsForVaultInput, ListTagsForVaultOutput] = js.native
   }
 }

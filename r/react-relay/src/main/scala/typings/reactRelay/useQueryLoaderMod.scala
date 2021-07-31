@@ -11,17 +11,18 @@ import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useQueryLoaderMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useQueryLoader", "useQueryLoader")
+  @JSImport("react-relay/lib/relay-experimental/useQueryLoader", JSImport.Namespace)
   @js.native
-  def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: PreloadableConcreteRequest[TQuery]): useQueryLoaderHookType[TQuery] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useQueryLoader", "useQueryLoader")
-  @js.native
-  def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: GraphQLTaggedNode): useQueryLoaderHookType[TQuery] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: PreloadableConcreteRequest[TQuery]): useQueryLoaderHookType[TQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any]).asInstanceOf[useQueryLoaderHookType[TQuery]]
+  @scala.inline
+  def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: GraphQLTaggedNode): useQueryLoaderHookType[TQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any]).asInstanceOf[useQueryLoaderHookType[TQuery]]
   
   type useQueryLoaderHookType[TQuery /* <: OperationType */] = js.Tuple3[
     js.UndefOr[

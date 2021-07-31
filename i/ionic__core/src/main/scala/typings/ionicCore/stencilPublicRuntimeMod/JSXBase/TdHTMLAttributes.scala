@@ -2,17 +2,17 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TdHTMLAttributes[T] extends HTMLAttributes[T] {
+trait TdHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
 }
 object TdHTMLAttributes {
   
@@ -23,7 +23,7 @@ object TdHTMLAttributes {
   }
   
   @scala.inline
-  implicit class TdHTMLAttributesMutableBuilder[Self <: TdHTMLAttributes[_], T] (val x: Self with TdHTMLAttributes[T]) extends AnyVal {
+  implicit class TdHTMLAttributesMutableBuilder[Self <: TdHTMLAttributes[?], T] (val x: Self & TdHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])

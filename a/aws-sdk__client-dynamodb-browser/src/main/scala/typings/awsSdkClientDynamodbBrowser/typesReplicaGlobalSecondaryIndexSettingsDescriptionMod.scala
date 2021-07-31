@@ -8,43 +8,41 @@ import typings.awsSdkClientDynamodbBrowser.typesAutoScalingSettingsDescriptionMo
 import typings.awsSdkClientDynamodbBrowser.typesAutoScalingSettingsDescriptionMod.UnmarshalledAutoScalingSettingsDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaGlobalSecondaryIndexSettingsDescriptionMod {
   
-  @js.native
   trait ReplicaGlobalSecondaryIndexSettingsDescription extends StObject {
     
     /**
       * <p>The name of the global secondary index. The name must be unique among all other indexes on this table.</p>
       */
-    var IndexName: String = js.native
+    var IndexName: String
     
     /**
       * <p> The current status of the global secondary index:</p> <ul> <li> <p> <code>CREATING</code> - The global secondary index is being created.</p> </li> <li> <p> <code>UPDATING</code> - The global secondary index is being updated.</p> </li> <li> <p> <code>DELETING</code> - The global secondary index is being deleted.</p> </li> <li> <p> <code>ACTIVE</code> - The global secondary index is ready for use.</p> </li> </ul>
       */
-    var IndexStatus: js.UndefOr[CREATING | UPDATING | DELETING | ACTIVE | String] = js.native
+    var IndexStatus: js.UndefOr[CREATING | UPDATING | DELETING | ACTIVE | String] = js.undefined
     
     /**
       * <p>Autoscaling settings for a global secondary index replica's read capacity units.</p>
       */
-    var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+    var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>The maximum number of strongly consistent reads consumed per second before DynamoDB returns a <code>ThrottlingException</code>.</p>
       */
-    var ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.native
+    var ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>AutoScaling settings for a global secondary index replica's write capacity units.</p>
       */
-    var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+    var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>The maximum number of writes consumed per second before DynamoDB returns a <code>ThrottlingException</code>.</p>
       */
-    var ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.native
+    var ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object ReplicaGlobalSecondaryIndexSettingsDescription {
     
@@ -92,20 +90,21 @@ object typesReplicaGlobalSecondaryIndexSettingsDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription extends ReplicaGlobalSecondaryIndexSettingsDescription {
+  trait UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription
+    extends StObject
+       with ReplicaGlobalSecondaryIndexSettingsDescription {
     
     /**
       * <p>Autoscaling settings for a global secondary index replica's read capacity units.</p>
       */
     @JSName("ProvisionedReadCapacityAutoScalingSettings")
-    var ProvisionedReadCapacityAutoScalingSettings_UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.native
+    var ProvisionedReadCapacityAutoScalingSettings_UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>AutoScaling settings for a global secondary index replica's write capacity units.</p>
       */
     @JSName("ProvisionedWriteCapacityAutoScalingSettings")
-    var ProvisionedWriteCapacityAutoScalingSettings_UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.native
+    var ProvisionedWriteCapacityAutoScalingSettings_UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.undefined
   }
   object UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription {
     

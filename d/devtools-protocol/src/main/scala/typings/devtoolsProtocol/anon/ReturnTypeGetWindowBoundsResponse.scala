@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.GetWindowBoundsRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.GetWindowBoundsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetWindowBoundsResponse extends StObject {
   
-  var paramsType: js.Array[GetWindowBoundsRequest] = js.native
+  var paramsType: js.Array[GetWindowBoundsRequest]
   
-  var returnType: GetWindowBoundsResponse = js.native
+  var returnType: GetWindowBoundsResponse
 }
 object ReturnTypeGetWindowBoundsResponse {
   

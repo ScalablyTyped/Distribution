@@ -9,23 +9,21 @@ import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchViewModelUpdateEvent extends StObject {
   
-  var aborted: Boolean = js.native
+  var aborted: Boolean
   
-  var graphics: js.Array[Graphic] = js.native
+  var graphics: js.Array[Graphic]
   
-  var state: start | active | complete = js.native
+  var state: start | active | complete
   
-  var tool: move | transform | reshape = js.native
+  var tool: move | transform | reshape
   
-  var toolEventInfo: UpdateToolEventInfo = js.native
+  var toolEventInfo: UpdateToolEventInfo
   
-  var `type`: update = js.native
+  var `type`: update
 }
 object SketchViewModelUpdateEvent {
   
@@ -35,11 +33,10 @@ object SketchViewModelUpdateEvent {
     graphics: js.Array[Graphic],
     state: start | active | complete,
     tool: move | transform | reshape,
-    toolEventInfo: UpdateToolEventInfo,
-    `type`: update
+    toolEventInfo: UpdateToolEventInfo
   ): SketchViewModelUpdateEvent = {
     val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], graphics = graphics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], toolEventInfo = toolEventInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[SketchViewModelUpdateEvent]
   }
   

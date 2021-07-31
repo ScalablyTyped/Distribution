@@ -2,25 +2,23 @@ package typings.findInFiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var line: String | Null = js.native
+    var line: String | Null
     
-    var matches: js.Array[String] = js.native
+    var matches: js.Array[String]
   }
   object Count {
     
     @scala.inline
     def apply(count: Double, matches: js.Array[String]): Count = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], line = null)
       __obj.asInstanceOf[Count]
     }
     

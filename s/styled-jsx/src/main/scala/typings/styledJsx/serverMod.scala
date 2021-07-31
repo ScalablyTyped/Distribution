@@ -4,22 +4,21 @@ import typings.react.mod.ReactElement
 import typings.styledJsx.anon.Nonce
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
   
-  @JSImport("styled-jsx/server", JSImport.Default)
+  @JSImport("styled-jsx/server", JSImport.Namespace)
   @js.native
-  def default[T](): js.Array[ReactElement] = js.native
-  @JSImport("styled-jsx/server", JSImport.Default)
-  @js.native
-  def default[T](opts: Nonce): js.Array[ReactElement] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("styled-jsx/server", "flushToHTML")
-  @js.native
-  def flushToHTML(): String = js.native
-  @JSImport("styled-jsx/server", "flushToHTML")
-  @js.native
-  def flushToHTML(opts: Nonce): String = js.native
+  @scala.inline
+  def default[T](): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[ReactElement]]
+  @scala.inline
+  def default[T](opts: Nonce): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
+  
+  @scala.inline
+  def flushToHTML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")().asInstanceOf[String]
+  @scala.inline
+  def flushToHTML(opts: Nonce): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
 }

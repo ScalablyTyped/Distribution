@@ -2,13 +2,11 @@ package typings.node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportMeta extends StObject {
   
-  var url: java.lang.String = js.native
+  var url: java.lang.String
 }
 object ImportMeta {
   

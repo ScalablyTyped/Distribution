@@ -2,26 +2,24 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Compute Engine metadata entry. Identical to the metadata on the
   * corresponding Compute Engine resource.
   */
-@js.native
 trait SchemaMetadata extends StObject {
   
   /**
     * The fingerprint of the metadata. Required for updating the metadata
     * entries for this instance.
     */
-  var fingerPrint: js.UndefOr[String] = js.native
+  var fingerPrint: js.UndefOr[String] = js.undefined
   
   /**
     * A list of metadata items.
     */
-  var items: js.UndefOr[js.Array[SchemaMetadataItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaMetadataItem]] = js.undefined
 }
 object SchemaMetadata {
   

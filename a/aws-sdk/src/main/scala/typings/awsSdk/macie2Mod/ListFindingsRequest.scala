@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsRequest extends StObject {
   
   /**
     * The criteria to use to filter the results.
     */
-  var findingCriteria: js.UndefOr[FindingCriteria] = js.native
+  var findingCriteria: js.UndefOr[FindingCriteria] = js.undefined
   
   /**
     * The maximum number of items to include in each page of the response.
     */
-  var maxResults: js.UndefOr[integer] = js.native
+  var maxResults: js.UndefOr[integer] = js.undefined
   
   /**
     * The nextToken string that specifies which page of results to return in a paginated response.
     */
-  var nextToken: js.UndefOr[string] = js.native
+  var nextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The criteria to use to sort the results.
     */
-  var sortCriteria: js.UndefOr[SortCriteria] = js.native
+  var sortCriteria: js.UndefOr[SortCriteria] = js.undefined
 }
 object ListFindingsRequest {
   

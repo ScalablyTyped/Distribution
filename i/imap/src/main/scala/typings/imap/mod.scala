@@ -14,7 +14,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,29 +23,114 @@ object mod {
   class ^ protected () extends Connection {
     /** @constructor */
     def this(config: Config) = this()
+    
+    /** Adds flag(s) to message(s). */
+    /* CompleteClass */
+    override def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
+    /* CompleteClass */
+    override def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Copies message(s) in the currently open mailbox to another mailbox. */
+    /* CompleteClass */
+    override def copy(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Removes flag(s) from message(s). */
+    /* CompleteClass */
+    override def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
+    /* CompleteClass */
+    override def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
+    /* CompleteClass */
+    override def fetch(source: js.Any, options: FetchOptions): ImapFetch = js.native
+    
+    /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
+    /* CompleteClass */
+    override def move(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
+      The following message flags are valid types that do not have arguments:
+      ALL:            void;    // All messages.
+      ANSWERED:       void;    // Messages with the Answered flag set.
+      DELETED:        void;    // Messages with the Deleted flag set.
+      DRAFT:          void;    // Messages with the Draft flag set.
+      FLAGGED:        void;    // Messages with the Flagged flag set.
+      NEW:            void;    // Messages that have the Recent flag set but not the Seen flag.
+      SEEN:           void;    // Messages that have the Seen flag set.
+      RECENT:         void;    // Messages that have the Recent flag set.
+      OLD:            void;    // Messages that do not have the Recent flag set. This is functionally equivalent to "!RECENT" (as opposed to "!NEW").
+      UNANSWERED:     void;    // Messages that do not have the Answered flag set.
+      UNDELETED:      void;    // Messages that do not have the Deleted flag set.
+      UNDRAFT:        void;    // Messages that do not have the Draft flag set.
+      UNFLAGGED:      void;    // Messages that do not have the Flagged flag set.
+      UNSEEN:         void;    // Messages that do not have the Seen flag set.
+      The following are valid types that require string value(s):
+      BCC:            any;    // Messages that contain the specified string in the BCC field.
+      CC:             any;    // Messages that contain the specified string in the CC field.
+      FROM:           any;    // Messages that contain the specified string in the FROM field.
+      SUBJECT:        any;    // Messages that contain the specified string in the SUBJECT field.
+      TO:             any;    // Messages that contain the specified string in the TO field.
+      BODY:           any;    // Messages that contain the specified string in the message body.
+      TEXT:           any;    // Messages that contain the specified string in the header OR the message body.
+      KEYWORD:        any;    // Messages with the specified keyword set.
+      HEADER:         any;    // Requires two string values, with the first being the header name and the second being the value to search for. If this second string is empty, all messages that contain the given header name will be returned.
+      The following are valid types that require a string parseable by JavaScripts Date object OR a Date instance:
+      BEFORE:         any;    // Messages whose internal date (disregarding time and timezone) is earlier than the specified date.
+      ON:             any;    // Messages whose internal date (disregarding time and timezone) is within the specified date.
+      SINCE:          any;    // Messages whose internal date (disregarding time and timezone) is within or later than the specified date.
+      SENTBEFORE:     any;    // Messages whose Date header (disregarding time and timezone) is earlier than the specified date.
+      SENTON:         any;    // Messages whose Date header (disregarding time and timezone) is within the specified date.
+      SENTSINCE:      any;    // Messages whose Date header (disregarding time and timezone) is within or later than the specified date.
+      The following are valid types that require one Integer value:
+      LARGER:         number;    // Messages with a size larger than the specified number of bytes.
+      SMALLER:        number;    // Messages with a size smaller than the specified number of bytes.
+      The following are valid criterion that require one or more Integer values:
+      UID:            any;    // Messages with UIDs corresponding to the specified UID set. Ranges are permitted (e.g. '2504:2507' or '*' or '2504:*').
+      */
+    /* CompleteClass */
+    override def search(
+      criteria: js.Array[js.Any],
+      callback: js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]
+    ): Unit = js.native
+    
+    /** Checks if the server supports the specified capability. */
+    /* CompleteClass */
+    override def serverSupports(capability: String): Boolean = js.native
+    
+    /** Sets the flag(s) for message(s). */
+    /* CompleteClass */
+    override def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
+    /* CompleteClass */
+    override def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   }
+  @JSImport("imap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Parses a raw header and returns an object keyed on header fields and the values are Arrays of header field values. Set disableAutoDecode to true to disable automatic decoding of MIME encoded-words that may exist in header field values. */
   /* static member */
-  @JSImport("imap", "parseHeader")
-  @js.native
-  def parseHeader(rawHeader: String): StringDictionary[js.Array[String]] = js.native
-  @JSImport("imap", "parseHeader")
-  @js.native
-  def parseHeader(rawHeader: String, disableAutoDecode: Boolean): StringDictionary[js.Array[String]] = js.native
+  @scala.inline
+  def parseHeader(rawHeader: String): StringDictionary[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(rawHeader.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[String]]]
+  @scala.inline
+  def parseHeader(rawHeader: String, disableAutoDecode: Boolean): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(rawHeader.asInstanceOf[js.Any], disableAutoDecode.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  @js.native
   trait AppendOptions extends StObject {
     
     /* string|string[] */
     /** What to use for message arrival date/time. Default: (current date/time) */
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
     /** A single flag (e.g. 'Seen') or an array of flags (e.g. ['Seen', 'Flagged']) to append to the message. Default: (no flags) */
-    var flags: js.UndefOr[js.Any] = js.native
+    var flags: js.UndefOr[js.Any] = js.undefined
     
     /** The name of the mailbox to append the message to. Default: the currently open mailbox */
-    var mailbox: js.UndefOr[String] = js.native
+    var mailbox: js.UndefOr[String] = js.undefined
   }
   object AppendOptions {
     
@@ -79,35 +163,34 @@ object mod {
     }
   }
   
-  @js.native
   trait Box extends StObject {
     
     /** array - A list of system-defined flags applicable for this mailbox. Flags in this list but not in permFlags may be stored for the current session only. Additional server implementation-specific flags may also be available. */
-    var flags: js.Array[String] = js.native
+    var flags: js.Array[String]
     
     /** Contains various message counts for this mailbox: */
-    var messages: New = js.native
+    var messages: New
     
     /** The name of this mailbox. */
-    var name: String = js.native
+    var name: String
     
     /** True if new keywords can be added to messages in this mailbox. */
-    var newKeywords: Boolean = js.native
+    var newKeywords: Boolean
     
     /** A list of flags that can be permanently added/removed to/from messages in this mailbox. */
-    var permFlags: js.Array[String] = js.native
+    var permFlags: js.Array[String]
     
     /** Whether or not this mailbox has persistent UIDs. This should almost always be true for modern mailboxes and should only be false for legacy mail stores where supporting persistent UIDs was not technically feasible. */
-    var persistentUIDs: Boolean = js.native
+    var persistentUIDs: Boolean
     
     /** True if this mailbox was opened in read-only mode. (Only available with openBox() calls) */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** The uid that will be assigned to the next message that arrives at this mailbox. */
-    var uidnext: Double = js.native
+    var uidnext: Double
     
     /** A 32-bit number that can be used to determine if UIDs in this mailbox have changed since the last time this mailbox was opened. */
-    var uidvalidity: Double = js.native
+    var uidvalidity: Double
   }
   object Box {
     
@@ -167,48 +250,47 @@ object mod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
     /** Number of milliseconds to wait to be authenticated after a connection has been established. Default: 5000 */
-    var authTimeout: js.UndefOr[Double] = js.native
+    var authTimeout: js.UndefOr[Double] = js.undefined
     
     /** Set to 'always' to always attempt connection upgrades via STARTTLS, 'required' only if upgrading is required, or 'never' to never attempt upgrading. Default: 'never' */
-    var autotls: js.UndefOr[String] = js.native
+    var autotls: js.UndefOr[String] = js.undefined
     
     /** Number of milliseconds to wait for a connection to be established. Default: 10000 */
-    var connTimeout: js.UndefOr[Double] = js.native
+    var connTimeout: js.UndefOr[Double] = js.undefined
     
     /* boolean|KeepAlive */
     /** If set, the function will be called with one argument, a string containing some debug info Default: (no debug output) */
-    var debug: js.UndefOr[js.Function] = js.native
+    var debug: js.UndefOr[js.Function] = js.undefined
     
     /** Hostname or IP address of the IMAP server. Default: "localhost" */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /** Configures the keepalive mechanism. Set to true to enable keepalive with defaults or set to object to enable and configure keepalive behavior: Default: true */
-    var keepalive: js.UndefOr[js.Any] = js.native
+    var keepalive: js.UndefOr[js.Any] = js.undefined
     
     /** Password for plain-text authentication. */
-    var password: String = js.native
+    var password: String
     
     /** Port number of the IMAP server. Default: 143 */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Perform implicit TLS connection? Default: false */
-    var tls: js.UndefOr[Boolean] = js.native
+    var tls: js.UndefOr[Boolean] = js.undefined
     
     /** Options object to pass to tls.connect() Default: (none) */
-    var tlsOptions: js.UndefOr[js.Object] = js.native
+    var tlsOptions: js.UndefOr[js.Object] = js.undefined
     
     /** Username for plain-text authentication. */
-    var user: String = js.native
+    var user: String
     
     /** Base64-encoded OAuth token for OAuth authentication for servers that support it (See Andris Reinman's xoauth.js module to help generate this string). */
-    var xoauth: js.UndefOr[String] = js.native
+    var xoauth: js.UndefOr[String] = js.undefined
     
     /** Base64-encoded OAuth2 token for The SASL XOAUTH2 Mechanism for servers that support it (See Andris Reinman's xoauth2 module to help generate this string). */
-    var xoauth2: js.UndefOr[String] = js.native
+    var xoauth2: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -389,26 +471,25 @@ object mod {
     def unsubscribeBox(mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FetchOptions extends StObject {
     
     /** A string or Array of strings containing the body part section to fetch. Default: (none) Example sections: */
-    var bodies: js.UndefOr[String | js.Array[String]] = js.native
+    var bodies: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Fetch the message envelope. Default: false */
-    var envelope: js.UndefOr[Boolean] = js.native
+    var envelope: js.UndefOr[Boolean] = js.undefined
     
     /** Mark message(s) as read when fetched. Default: false */
-    var markSeen: js.UndefOr[Boolean] = js.native
+    var markSeen: js.UndefOr[Boolean] = js.undefined
     
     /** Fetch modifiers defined by IMAP extensions. Default: (none) */
-    var modifiers: js.UndefOr[js.Object] = js.native
+    var modifiers: js.UndefOr[js.Object] = js.undefined
     
     /** Fetch the RFC822 size. Default: false */
-    var size: js.UndefOr[Boolean] = js.native
+    var size: js.UndefOr[Boolean] = js.undefined
     
     /** Fetch the message structure. Default: false */
-    var struct: js.UndefOr[Boolean] = js.native
+    var struct: js.UndefOr[Boolean] = js.undefined
   }
   object FetchOptions {
     
@@ -462,20 +543,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Folder extends StObject {
     
     /** mailbox attributes. An attribute of 'NOSELECT' indicates the mailbox cannot be opened */
-    var attribs: js.Array[String] = js.native
+    var attribs: js.Array[String]
     
     /** an object containing another structure similar in format to this top level, otherwise null if no children */
-    var children: MailBoxes = js.native
+    var children: MailBoxes
     
     /** hierarchy delimiter for accessing this mailbox's direct children. */
-    var delimiter: String = js.native
+    var delimiter: String
     
     /** pointer to parent mailbox, null if at the top level */
-    var parent: Folder = js.native
+    var parent: Folder
   }
   object Folder {
     
@@ -507,7 +587,8 @@ object mod {
   
   @js.native
   trait ImapFetch
-    extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+    extends StObject
+       with typings.node.eventsMod.global.NodeJS.EventEmitter {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
@@ -522,7 +603,8 @@ object mod {
   
   @js.native
   trait ImapMessage
-    extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+    extends StObject
+       with typings.node.eventsMod.global.NodeJS.EventEmitter {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
@@ -536,23 +618,22 @@ object mod {
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait ImapMessageAttributes extends StObject {
     
     /** The internal server date for the message. */
-    var date: Date = js.native
+    var date: Date
     
     /** A list of flags currently set on this message. */
-    var flags: js.Array[String] = js.native
+    var flags: js.Array[String]
     
     /** The RFC822 message size (only set if requested with fetch()). */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** The message's body structure (only set if requested with fetch()). */
-    var struct: js.UndefOr[js.Array[_]] = js.native
+    var struct: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** A 32-bit ID that uniquely identifies this message within its mailbox. */
-    var uid: Double = js.native
+    var uid: Double
   }
   object ImapMessageAttributes {
     
@@ -581,7 +662,7 @@ object mod {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setStruct(value: js.Array[_]): Self = StObject.set(x, "struct", value.asInstanceOf[js.Any])
+      def setStruct(value: js.Array[js.Any]): Self = StObject.set(x, "struct", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStructUndefined: Self = StObject.set(x, "struct", js.undefined)
@@ -594,14 +675,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ImapMessageBodyInfo extends StObject {
     
     /** The size of this body in bytes. */
-    var size: Double = js.native
+    var size: Double
     
     /** The specifier for this body (e.g. 'TEXT', 'HEADER.FIELDS (TO FROM SUBJECT)', etc). */
-    var which: String = js.native
+    var which: String
   }
   object ImapMessageBodyInfo {
     
@@ -622,17 +702,16 @@ object mod {
     }
   }
   
-  @js.native
   trait KeepAlive extends StObject {
     
     /** Set to true to force use of NOOP keepalive on servers also support IDLE. Default: false */
-    var forceNoop: js.UndefOr[Boolean] = js.native
+    var forceNoop: js.UndefOr[Boolean] = js.undefined
     
     /** This is the interval (in milliseconds) at which an IDLE command (for servers that support IDLE) is re-sent. Default: 300000 (5 mins) */
-    var idleInterval: js.UndefOr[Double] = js.native
+    var idleInterval: js.UndefOr[Double] = js.undefined
     
     /** This is the interval (in milliseconds) at which NOOPs are sent and the interval at which idleInterval is checked. Default: 10000 */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object KeepAlive {
     
@@ -667,29 +746,28 @@ object mod {
   
   type MailBoxes = StringDictionary[Folder]
   
-  @js.native
   trait MessageFunctions extends StObject {
     
     /** Adds flag(s) to message(s). */
-    def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
-    def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Copies message(s) in the currently open mailbox to another mailbox. */
-    def copy(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def copy(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Removes flag(s) from message(s). */
-    def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
-    def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
-    def fetch(source: js.Any, options: FetchOptions): ImapFetch = js.native
+    def fetch(source: js.Any, options: FetchOptions): ImapFetch
     
     /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
-    def move(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def move(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
       The following message flags are valid types that do not have arguments:
@@ -731,18 +809,18 @@ object mod {
       UID:            any;    // Messages with UIDs corresponding to the specified UID set. Ranges are permitted (e.g. '2504:2507' or '*' or '2504:*').
       */
     def search(
-      criteria: js.Array[_],
+      criteria: js.Array[js.Any],
       callback: js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]
-    ): Unit = js.native
+    ): Unit
     
     /** Checks if the server supports the specified capability. */
-    def serverSupports(capability: String): Boolean = js.native
+    def serverSupports(capability: String): Boolean
     
     /** Sets the flag(s) for message(s). */
-    def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
     
     /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
-    def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
   }
   object MessageFunctions {
     
@@ -755,7 +833,7 @@ object mod {
       delKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
       fetch: (js.Any, FetchOptions) => ImapFetch,
       move: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit,
-      search: (js.Array[_], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit,
+      search: (js.Array[js.Any], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit,
       serverSupports: String => Boolean,
       setFlags: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
       setKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit
@@ -789,7 +867,9 @@ object mod {
       def setMove(value: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setSearch(value: (js.Array[_], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+      def setSearch(
+        value: (js.Array[js.Any], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
       @scala.inline
       def setServerSupports(value: String => Boolean): Self = StObject.set(x, "serverSupports", js.Any.fromFunction1(value))

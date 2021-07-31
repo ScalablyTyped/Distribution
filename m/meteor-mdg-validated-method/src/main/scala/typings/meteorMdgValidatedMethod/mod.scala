@@ -8,7 +8,6 @@ import typings.meteorMdgValidatedMethod.anon.Name
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-single-declare-module
@@ -16,8 +15,8 @@ object mod {
   
   @JSImport("meteor/mdg:validated-method", "ValidatedMethod")
   @js.native
-  class ValidatedMethod[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] protected () extends StObject {
-    def this(options: (ValidatedMethodOptionsWithMixins[TName, TRun]) with (ThisType[ValidatedMethodThisBase with Name[TName]])) = this()
+  class ValidatedMethod[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] protected () extends StObject {
+    def this(options: (ValidatedMethodOptionsWithMixins[TName, TRun]) & (ThisType[ValidatedMethodThisBase & Name[TName]])) = this()
     
     var _execute: (js.Function2[/* context */ StringDictionary[js.Any], /* args */ Argument[TRun], Return[TRun]]) | (js.Function1[/* context */ StringDictionary[js.Any], Return[TRun]]) = js.native
     
@@ -25,14 +24,14 @@ object mod {
         /* arg */ Argument[TRun], 
         /* callback */ js.Function2[/* error */ Error, /* result */ Return[TRun], Unit], 
         Unit
-      ]) with (js.Function1[/* arg */ Argument[TRun], Return[TRun]])) | ((js.Function2[
+      ]) & (js.Function1[/* arg */ Argument[TRun], Return[TRun]])) | ((js.Function2[
         /* unusedArg */ js.Any, 
         /* callback */ js.Function2[/* error */ Error, /* result */ Return[TRun], Unit], 
         Unit
-      ]) with (js.Function1[
+      ]) & (js.Function1[
         /* callback */ js.Function2[/* error */ Error, /* result */ Return[TRun], Unit], 
         Unit
-      ]) with js.Function0[Return[TRun]]) = js.native
+      ]) & js.Function0[Return[TRun]]) = js.native
   }
   
   type Argument[TFunc] = NoArguments
@@ -42,12 +41,12 @@ object mod {
     ValidatedMethodOptions[String, js.Function1[/* repeated */ js.Any, js.Any]]
   ]
   
-  type Mixin[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Function1[
+  type Mixin[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Function1[
     /* options */ ValidatedMethodOptions[TName, TRun], 
     ValidatedMethodOptions[TName, TRun]
   ]
   
-  type NoArguments = js.UndefOr[scala.Nothing]
+  type NoArguments = Unit
   
   type Return[TFunc] = js.Any
   
@@ -55,28 +54,29 @@ object mod {
   
   type ValidatedMethodName[T] = js.Any
   
-  @js.native
-  trait ValidatedMethodOptions[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] extends ValidatedMethodOptionsMixinFields[Argument[TRun], Return[TRun]] {
+  trait ValidatedMethodOptions[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+    extends StObject
+       with ValidatedMethodOptionsMixinFields[Argument[TRun], Return[TRun]] {
     
-    var applyOptions: js.UndefOr[Dictkey] = js.native
+    var applyOptions: js.UndefOr[Dictkey] = js.undefined
     
     // Force the name to be a string literal
-    var name: TName with String = js.native
+    var name: TName & String
     
-    var run: TRun = js.native
+    var run: TRun
     
-    var validate: (js.Function1[/* arg */ Argument[TRun], _]) | Null = js.native
+    var validate: (js.Function1[/* arg */ Argument[TRun], js.Any]) | Null
   }
   object ValidatedMethodOptions {
     
     @scala.inline
-    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */](name: TName with String, run: TRun): ValidatedMethodOptions[TName, TRun] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
+    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptions[TName, TRun] = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], validate = null)
       __obj.asInstanceOf[ValidatedMethodOptions[TName, TRun]]
     }
     
     @scala.inline
-    implicit class ValidatedMethodOptionsMutableBuilder[Self <: ValidatedMethodOptions[_, _], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with (ValidatedMethodOptions[TName, TRun])) extends AnyVal {
+    implicit class ValidatedMethodOptionsMutableBuilder[Self <: ValidatedMethodOptions[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & (ValidatedMethodOptions[TName, TRun])) extends AnyVal {
       
       @scala.inline
       def setApplyOptions(value: Dictkey): Self = StObject.set(x, "applyOptions", value.asInstanceOf[js.Any])
@@ -85,45 +85,45 @@ object mod {
       def setApplyOptionsUndefined: Self = StObject.set(x, "applyOptions", js.undefined)
       
       @scala.inline
-      def setName(value: TName with String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      def setName(value: TName & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRun(value: TRun): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValidate(value: /* arg */ Argument[TRun] => _): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      def setValidate(value: /* arg */ Argument[TRun] => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValidateNull: Self = StObject.set(x, "validate", null)
     }
   }
   
-  type ValidatedMethodOptionsArgument[TOptions /* <: ValidatedMethodOptions[_, _] */] = Argument[js.Any]
+  type ValidatedMethodOptionsArgument[TOptions /* <: ValidatedMethodOptions[js.Any, js.Any] */] = Argument[js.Any]
   
-  @js.native
   trait ValidatedMethodOptionsMixinFields[TRunArg, TRunReturn] extends StObject
   
-  type ValidatedMethodOptionsReturn[TOptions /* <: ValidatedMethodOptions[_, _] */] = Return[js.Any]
+  type ValidatedMethodOptionsReturn[TOptions /* <: ValidatedMethodOptions[js.Any, js.Any] */] = Return[js.Any]
   
-  @js.native
-  trait ValidatedMethodOptionsWithMixins[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] extends ValidatedMethodOptions[TName, TRun] {
+  trait ValidatedMethodOptionsWithMixins[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+    extends StObject
+       with ValidatedMethodOptions[TName, TRun] {
     
     // Force TRun to be inferred from run itself rather than from the elements of mixins
-    var mixins: js.UndefOr[js.Array[Mixin[TName, _]]] = js.native
+    var mixins: js.UndefOr[js.Array[Mixin[TName, js.Any]]] = js.undefined
   }
   object ValidatedMethodOptionsWithMixins {
     
     @scala.inline
-    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */](name: TName with String, run: TRun): ValidatedMethodOptionsWithMixins[TName, TRun] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
+    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptionsWithMixins[TName, TRun] = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], validate = null)
       __obj.asInstanceOf[ValidatedMethodOptionsWithMixins[TName, TRun]]
     }
     
     @scala.inline
-    implicit class ValidatedMethodOptionsWithMixinsMutableBuilder[Self <: ValidatedMethodOptionsWithMixins[_, _], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with (ValidatedMethodOptionsWithMixins[TName, TRun])) extends AnyVal {
+    implicit class ValidatedMethodOptionsWithMixinsMutableBuilder[Self <: ValidatedMethodOptionsWithMixins[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & (ValidatedMethodOptionsWithMixins[TName, TRun])) extends AnyVal {
       
       @scala.inline
-      def setMixins(value: js.Array[Mixin[TName, _]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      def setMixins(value: js.Array[Mixin[TName, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)

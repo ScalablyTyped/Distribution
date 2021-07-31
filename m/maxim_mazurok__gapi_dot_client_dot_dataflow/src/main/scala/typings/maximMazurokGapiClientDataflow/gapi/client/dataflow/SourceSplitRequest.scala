@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceSplitRequest extends StObject {
   
   /** Hints for tuning the splitting process. */
-  var options: js.UndefOr[SourceSplitOptions] = js.native
+  var options: js.UndefOr[SourceSplitOptions] = js.undefined
   
   /** Specification of the source to be split. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object SourceSplitRequest {
   

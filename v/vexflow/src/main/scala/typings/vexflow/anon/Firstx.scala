@@ -2,21 +2,19 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Firstx extends StObject {
   
-  var first_x: Double = js.native
+  var first_x: Double
   
-  var first_y: Double = js.native
+  var first_y: Double
   
-  var last_x: Double = js.native
+  var last_x: Double
   
-  var last_y: Double = js.native
+  var last_y: Double
   
-  var staff_height: Double = js.native
+  var staff_height: Double
 }
 object Firstx {
   

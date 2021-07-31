@@ -3,40 +3,39 @@ package typings.jupyterlabNbformat.mod
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExecuteResult
-  extends IBaseOutput
+  extends StObject
+     with IBaseOutput
      with _IOutput {
   
   /**
     * A mime-type keyed dictionary of data.
     */
-  var data: IMimeBundle = js.native
+  var data: IMimeBundle
   
   /**
     * A result's prompt number.
     */
-  var execution_count: ExecutionCount = js.native
+  var execution_count: ExecutionCount
   
   /**
     * Cell output metadata.
     */
-  var metadata: OutputMetadata = js.native
+  var metadata: OutputMetadata
   
   /**
     * Type of cell output.
     */
   @JSName("output_type")
-  var output_type_IExecuteResult: execute_result = js.native
+  var output_type_IExecuteResult: execute_result
 }
 object IExecuteResult {
   
   @scala.inline
-  def apply(data: IMimeBundle, metadata: OutputMetadata, output_type: execute_result): IExecuteResult = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
+  def apply(data: IMimeBundle, metadata: OutputMetadata): IExecuteResult = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = "execute_result", execution_count = null)
     __obj.asInstanceOf[IExecuteResult]
   }
   

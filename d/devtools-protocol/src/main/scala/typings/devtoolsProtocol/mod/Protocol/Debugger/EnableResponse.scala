@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.UniqueDebuggerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableResponse extends StObject {
   
   /**
     * Unique identifier of the debugger.
     */
-  var debuggerId: UniqueDebuggerId = js.native
+  var debuggerId: UniqueDebuggerId
 }
 object EnableResponse {
   

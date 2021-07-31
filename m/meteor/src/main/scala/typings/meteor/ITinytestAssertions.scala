@@ -3,7 +3,6 @@ package typings.meteor
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,26 +12,26 @@ trait ITinytestAssertions extends StObject {
   def _stringEqual(actual: String, expected: String, msg: String): Unit = js.native
   
   def equal[T](actual: T, expected: T): Unit = js.native
-  def equal[T](actual: T, expected: T, message: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def equal[T](actual: T, expected: T, message: String): Unit = js.native
   def equal[T](actual: T, expected: T, message: String, not: Boolean): Unit = js.native
+  def equal[T](actual: T, expected: T, message: Unit, not: Boolean): Unit = js.native
   
   def expect_fail(): Unit = js.native
   
   def fail(doc: js.Object): Unit = js.native
   
   def include[T](s: String, value: js.Any): Unit = js.native
-  def include[T](s: String, value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def include[T](s: String, value: js.Any, msg: String): Unit = js.native
   def include[T](s: String, value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def include[T](s: String, value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   def include[T](s: js.Array[T], value: js.Any): Unit = js.native
-  def include[T](s: js.Array[T], value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def include[T](s: js.Array[T], value: js.Any, msg: String): Unit = js.native
   def include[T](s: js.Array[T], value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def include[T](s: js.Array[T], value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   def include[T](s: js.Object, value: js.Any): Unit = js.native
-  def include[T](s: js.Object, value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def include[T](s: js.Object, value: js.Any, msg: String): Unit = js.native
   def include[T](s: js.Object, value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def include[T](s: js.Object, value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   
   def instanceOf(obj: js.Object, klass: js.Function): Unit = js.native
   def instanceOf(obj: js.Object, klass: js.Function, message: String): Unit = js.native
@@ -71,17 +70,17 @@ trait ITinytestAssertions extends StObject {
   def notEqual[T](actual: T, expected: T, message: String): Unit = js.native
   
   def notInclude[T](s: String, value: js.Any): Unit = js.native
-  def notInclude[T](s: String, value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def notInclude[T](s: String, value: js.Any, msg: String): Unit = js.native
   def notInclude[T](s: String, value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def notInclude[T](s: String, value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   def notInclude[T](s: js.Array[T], value: js.Any): Unit = js.native
-  def notInclude[T](s: js.Array[T], value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def notInclude[T](s: js.Array[T], value: js.Any, msg: String): Unit = js.native
   def notInclude[T](s: js.Array[T], value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def notInclude[T](s: js.Array[T], value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   def notInclude[T](s: js.Object, value: js.Any): Unit = js.native
-  def notInclude[T](s: js.Object, value: js.Any, msg: js.UndefOr[scala.Nothing], not: Boolean): Unit = js.native
   def notInclude[T](s: js.Object, value: js.Any, msg: String): Unit = js.native
   def notInclude[T](s: js.Object, value: js.Any, msg: String, not: Boolean): Unit = js.native
+  def notInclude[T](s: js.Object, value: js.Any, msg: Unit, not: Boolean): Unit = js.native
   
   def notInstanceOf(obj: js.Object, klass: js.Function): Unit = js.native
   def notInstanceOf(obj: js.Object, klass: js.Function, message: String): Unit = js.native

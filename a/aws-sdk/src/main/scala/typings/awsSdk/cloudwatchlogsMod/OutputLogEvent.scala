@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputLogEvent extends StObject {
   
   /**
     * The time the event was ingested, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var ingestionTime: js.UndefOr[Timestamp] = js.native
+  var ingestionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The data contained in the log event.
     */
-  var message: js.UndefOr[EventMessage] = js.native
+  var message: js.UndefOr[EventMessage] = js.undefined
   
   /**
     * The time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.native
+  var timestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object OutputLogEvent {
   

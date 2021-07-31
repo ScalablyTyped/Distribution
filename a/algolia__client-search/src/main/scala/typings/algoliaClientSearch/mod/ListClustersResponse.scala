@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersResponse extends StObject {
   
   /**
     * List of clusters.
     */
-  var clusters: js.Array[Cluster] = js.native
+  var clusters: js.Array[Cluster]
 }
 object ListClustersResponse {
   

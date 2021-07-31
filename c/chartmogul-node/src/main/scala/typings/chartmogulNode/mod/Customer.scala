@@ -7,62 +7,53 @@ import typings.chartmogulNode.commonMod.Map
 import typings.chartmogulNode.commonMod.Strings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Customer {
   
-  @JSImport("chartmogul-node", "Customer.all")
+  @JSImport("chartmogul-node", "Customer")
   @js.native
-  def all(config: Config): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
-  @JSImport("chartmogul-node", "Customer.all")
-  @js.native
-  def all(config: Config, params: ListCustomersParams): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "Customer.attributes")
-  @js.native
-  def attributes(config: Config, uuid: String): js.Promise[Attributes_] = js.native
+  @scala.inline
+  def all(config: Config): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
+  @scala.inline
+  def all(config: Config, params: ListCustomersParams): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
   
-  @JSImport("chartmogul-node", "Customer.create")
-  @js.native
-  def create(config: Config, data: NewCustomer): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = js.native
+  @scala.inline
+  def attributes(config: Config, uuid: String): js.Promise[Attributes_] = (^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Attributes_]]
   
-  @JSImport("chartmogul-node", "Customer.destroy")
-  @js.native
-  def destroy(config: Config, uuid: String): js.Promise[js.Object] = js.native
+  @scala.inline
+  def create(config: Config, data: NewCustomer): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Customer.Customer]]
   
-  @JSImport("chartmogul-node", "Customer.merge")
-  @js.native
-  def merge(config: Config): js.Promise[js.Object] = js.native
-  @JSImport("chartmogul-node", "Customer.merge")
-  @js.native
-  def merge(config: Config, params: MergeCustomersParams): js.Promise[js.Object] = js.native
+  @scala.inline
+  def destroy(config: Config, uuid: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("chartmogul-node", "Customer.modify")
-  @js.native
-  def modify(config: Config, uuid: String, data: UpdateCustomer): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = js.native
+  @scala.inline
+  def merge(config: Config): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def merge(config: Config, params: MergeCustomersParams): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("chartmogul-node", "Customer.retrieve")
-  @js.native
-  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = js.native
+  @scala.inline
+  def modify(config: Config, uuid: String, data: UpdateCustomer): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = (^.asInstanceOf[js.Dynamic].applyDynamic("modify")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Customer.Customer]]
   
-  @JSImport("chartmogul-node", "Customer.search")
-  @js.native
-  def search(config: Config): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
-  @JSImport("chartmogul-node", "Customer.search")
-  @js.native
-  def search(config: Config, params: SearchCustomersParams): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
+  @scala.inline
+  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Customer.Customer] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Customer.Customer]]
   
-  @js.native
+  @scala.inline
+  def search(config: Config): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
+  @scala.inline
+  def search(config: Config, params: SearchCustomersParams): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
+  
   trait Attributes_ extends StObject {
     
-    var clearbit: js.UndefOr[Map] = js.native
+    var clearbit: js.UndefOr[Map] = js.undefined
     
-    var custom: js.UndefOr[Map] = js.native
+    var custom: js.UndefOr[Map] = js.undefined
     
-    var stripe: js.UndefOr[Map] = js.native
+    var stripe: js.UndefOr[Map] = js.undefined
     
-    var tags: js.UndefOr[Strings] = js.native
+    var tags: js.UndefOr[Strings] = js.undefined
   }
   object Attributes_ {
     
@@ -104,60 +95,59 @@ object Customer {
     }
   }
   
-  @js.native
   trait Customer extends StObject {
     
-    var address: js.UndefOr[Addresszip] = js.native
+    var address: js.UndefOr[Addresszip] = js.undefined
     
-    var arr: js.UndefOr[Double] = js.native
+    var arr: js.UndefOr[Double] = js.undefined
     
-    var attributes: js.UndefOr[Attributes_] = js.native
+    var attributes: js.UndefOr[Attributes_] = js.undefined
     
-    var `billing-system-type`: js.UndefOr[String] = js.native
+    var `billing-system-type`: js.UndefOr[String] = js.undefined
     
-    var `billing-system-url`: js.UndefOr[String] = js.native
+    var `billing-system-url`: js.UndefOr[String] = js.undefined
     
-    var `chartmogul-url`: js.UndefOr[String] = js.native
+    var `chartmogul-url`: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var `currency-sign`: js.UndefOr[String] = js.native
+    var `currency-sign`: js.UndefOr[String] = js.undefined
     
-    var `customer-since`: js.UndefOr[String] = js.native
+    var `customer-since`: js.UndefOr[String] = js.undefined
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var data_source_uuids: js.UndefOr[Strings] = js.native
+    var data_source_uuids: js.UndefOr[Strings] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var external_ids: js.UndefOr[Strings] = js.native
+    var external_ids: js.UndefOr[Strings] = js.undefined
     
-    var free_trial_started_at: js.UndefOr[String] = js.native
+    var free_trial_started_at: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
-    var lead_created_at: js.UndefOr[String] = js.native
+    var lead_created_at: js.UndefOr[String] = js.undefined
     
-    var mrr: js.UndefOr[Double] = js.native
+    var mrr: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
     
-    var zip: js.UndefOr[String] = js.native
+    var zip: js.UndefOr[String] = js.undefined
   }
   object Customer {
     
@@ -334,16 +324,17 @@ object Customer {
     }
   }
   
-  @js.native
-  trait ListCustomersParams extends CursorParams {
+  trait ListCustomersParams
+    extends StObject
+       with CursorParams {
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
   }
   object ListCustomersParams {
     
@@ -382,12 +373,11 @@ object Customer {
     }
   }
   
-  @js.native
   trait MergeCustomersParams extends StObject {
     
-    var from: MergeID = js.native
+    var from: MergeID
     
-    var into: MergeID = js.native
+    var into: MergeID
   }
   object MergeCustomersParams {
     
@@ -408,12 +398,11 @@ object Customer {
     }
   }
   
-  @js.native
   trait MergeID extends StObject {
     
-    var customer_uuid: js.UndefOr[String] = js.native
+    var customer_uuid: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
   }
   object MergeID {
     
@@ -440,12 +429,11 @@ object Customer {
     }
   }
   
-  @js.native
   trait NewAttributes extends StObject {
     
-    var custom: js.UndefOr[js.Array[NewCustomAttributes]] = js.native
+    var custom: js.UndefOr[js.Array[NewCustomAttributes]] = js.undefined
     
-    var tags: js.UndefOr[Strings] = js.native
+    var tags: js.UndefOr[Strings] = js.undefined
   }
   object NewAttributes {
     
@@ -478,16 +466,15 @@ object Customer {
     }
   }
   
-  @js.native
   trait NewCustomAttributes extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object NewCustomAttributes {
     
@@ -520,32 +507,31 @@ object Customer {
     }
   }
   
-  @js.native
   trait NewCustomer extends StObject {
     
-    var attributes: js.UndefOr[NewAttributes] = js.native
+    var attributes: js.UndefOr[NewAttributes] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var data_source_uuid: String = js.native
+    var data_source_uuid: String
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var free_trial_started_at: js.UndefOr[String] = js.native
+    var free_trial_started_at: js.UndefOr[String] = js.undefined
     
-    var lead_created_at: js.UndefOr[String] = js.native
+    var lead_created_at: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var zip: js.UndefOr[String] = js.native
+    var zip: js.UndefOr[String] = js.undefined
   }
   object NewCustomer {
     
@@ -623,10 +609,11 @@ object Customer {
     }
   }
   
-  @js.native
-  trait SearchCustomersParams extends CursorParams {
+  trait SearchCustomersParams
+    extends StObject
+       with CursorParams {
     
-    var email: String = js.native
+    var email: String
   }
   object SearchCustomersParams {
     
@@ -644,28 +631,27 @@ object Customer {
     }
   }
   
-  @js.native
   trait UpdateCustomer extends StObject {
     
-    var attributes: js.UndefOr[NewAttributes] = js.native
+    var attributes: js.UndefOr[NewAttributes] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var free_trial_started_at: js.UndefOr[String] = js.native
+    var free_trial_started_at: js.UndefOr[String] = js.undefined
     
-    var lead_created_at: js.UndefOr[String] = js.native
+    var lead_created_at: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var zip: js.UndefOr[String] = js.native
+    var zip: js.UndefOr[String] = js.undefined
   }
   object UpdateCustomer {
     

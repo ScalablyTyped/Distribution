@@ -13,17 +13,18 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String): Watcher = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Watcher]
+  @scala.inline
+  def apply(dir: String, options: Options): Watcher = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Watcher]
+  
   @JSImport("sane", JSImport.Namespace)
   @js.native
-  def apply(dir: String): Watcher = js.native
-  @JSImport("sane", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Options): Watcher = js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sane", "FSEventsWatcher")
@@ -119,22 +120,21 @@ object mod {
     def ready: typings.sane.saneStrings.ready = "ready".asInstanceOf[typings.sane.saneStrings.ready]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var fsevents: js.UndefOr[Boolean] = js.native
+    var fsevents: js.UndefOr[Boolean] = js.undefined
     
-    var glob: js.UndefOr[String | js.Array[String]] = js.native
+    var glob: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignored: js.UndefOr[AnymatchMatcher | js.Array[AnymatchMatcher]] = js.native
+    var ignored: js.UndefOr[AnymatchMatcher | js.Array[AnymatchMatcher]] = js.undefined
     
-    var poll: js.UndefOr[Boolean] = js.native
+    var poll: js.UndefOr[Boolean] = js.undefined
     
-    var watcher: js.UndefOr[String] = js.native
+    var watcher: js.UndefOr[String] = js.undefined
     
-    var watchman: js.UndefOr[Boolean] = js.native
+    var watchman: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

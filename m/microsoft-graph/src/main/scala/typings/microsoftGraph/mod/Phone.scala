@@ -2,24 +2,22 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phone extends StObject {
   
-  var language: js.UndefOr[NullableOption[String]] = js.native
+  var language: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The phone number.
-  var number: js.UndefOr[NullableOption[String]] = js.native
+  var number: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var region: js.UndefOr[NullableOption[String]] = js.native
+  var region: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of phone number. The possible values are: home, business, mobile, other, assistant, homeFax, businessFax,
     * otherFax, pager, radio.
     */
-  var `type`: js.UndefOr[NullableOption[PhoneType]] = js.native
+  var `type`: js.UndefOr[NullableOption[PhoneType]] = js.undefined
 }
 object Phone {
   

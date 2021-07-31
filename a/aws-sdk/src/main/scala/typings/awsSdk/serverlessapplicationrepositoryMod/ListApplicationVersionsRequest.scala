@@ -2,26 +2,24 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationVersionsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The total number of items to return.
     */
-  var MaxItems: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.MaxItems] = js.native
+  var MaxItems: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.MaxItems] = js.undefined
   
   /**
     * A token to specify where to start paginating.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListApplicationVersionsRequest {
   

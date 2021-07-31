@@ -10,9 +10,9 @@ Automatically cleanup expired items in a Map
 | ------------------ | :-------------: |
 | Full name          | map-age-cleaner |
 | Keywords           | map, age, cleaner, maxage, expire, expiration, expiring |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 364466235 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 360615499 |
 | # stars            | 0 |
 
 ## Links

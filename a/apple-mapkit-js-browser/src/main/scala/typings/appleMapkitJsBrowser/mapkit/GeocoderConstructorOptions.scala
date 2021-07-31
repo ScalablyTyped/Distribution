@@ -2,26 +2,24 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialization options for geocoder objects.
   */
-@js.native
 trait GeocoderConstructorOptions extends StObject {
   
   /**
     * A Boolean value that indicates whether the geocoder should return results
     * near the user's current location.
     */
-  var getsUserLocation: js.UndefOr[Boolean] = js.native
+  var getsUserLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that indicates whether the geocoder should return results
     * near the user's current location.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object GeocoderConstructorOptions {
   

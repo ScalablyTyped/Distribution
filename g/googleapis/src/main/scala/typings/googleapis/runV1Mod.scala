@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runV1Mod {
@@ -52,7 +51,7 @@ object runV1Mod {
         */
       def get(): GaxiosPromise[SchemaLocation] = js.native
       def get(callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
       def get(params: ParamsResourceProjectsLocationsGet): GaxiosPromise[SchemaLocation] = js.native
       def get(params: ParamsResourceProjectsLocationsGet, callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
       def get(
@@ -95,16 +94,17 @@ object runV1Mod {
       var projects: ResourceProjects = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -116,18 +116,19 @@ object runV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsLocationsGet extends StandardParameters {
+    trait ParamsResourceProjectsLocationsGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Resource name for the location.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceProjectsLocationsGet {
       
@@ -157,37 +158,36 @@ object runV1Mod {
     /**
       * A resource that represents Google Cloud Platform location.
       */
-    @js.native
     trait SchemaLocation extends StObject {
       
       /**
         * The friendly name for this location, typically a nearby city name. For
         * example, &quot;Tokyo&quot;.
         */
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
       /**
         * Cross-service attributes for the location. For example
         * {&quot;cloud.googleapis.com/region&quot;: &quot;us-east1&quot;}
         */
-      var labels: js.UndefOr[StringDictionary[String]] = js.native
+      var labels: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * The canonical id for this location. For example: `&quot;us-east1&quot;`.
         */
-      var locationId: js.UndefOr[String] = js.native
+      var locationId: js.UndefOr[String] = js.undefined
       
       /**
         * Service-specific metadata. For example the available capacity at the
         * given location.
         */
-      var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
       
       /**
         * Resource name for the location, which may vary between implementations.
         * For example: `&quot;projects/example-project/locations/us-east1&quot;`
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object SchemaLocation {
       
@@ -232,68 +232,67 @@ object runV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

@@ -2,26 +2,24 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcRouteMatch extends StObject {
   
   /**
     * An object that represents the data to match from the request.
     */
-  var metadata: js.UndefOr[GrpcRouteMetadataList] = js.native
+  var metadata: js.UndefOr[GrpcRouteMetadataList] = js.undefined
   
   /**
     * The method name to match from the request. If you specify a name, you must also specify a serviceName.
     */
-  var methodName: js.UndefOr[MethodName] = js.native
+  var methodName: js.UndefOr[MethodName] = js.undefined
   
   /**
     * The fully qualified domain name for the service to match from the request.
     */
-  var serviceName: js.UndefOr[ServiceName] = js.native
+  var serviceName: js.UndefOr[ServiceName] = js.undefined
 }
 object GrpcRouteMatch {
   

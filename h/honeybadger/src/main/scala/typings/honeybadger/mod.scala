@@ -13,7 +13,6 @@ import typings.std.Console
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,24 +23,23 @@ object mod extends Shortcut {
   
   type CallbackFunction = js.Function2[/* err */ Error | Null, /* notice */ js.Object | Null, Unit]
   
-  @js.native
   trait ConfigureOptions extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var developmentEnvironments: js.UndefOr[js.Array[String]] = js.native
+    var developmentEnvironments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var filters: js.UndefOr[js.Array[String]] = js.native
+    var filters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Console] = js.native
+    var logger: js.UndefOr[Console] = js.undefined
     
-    var projectRoot: js.UndefOr[String] = js.native
+    var projectRoot: js.UndefOr[String] = js.undefined
   }
   object ConfigureOptions {
     
@@ -114,72 +112,51 @@ object mod extends Shortcut {
     
     def errorHandler(
       err: js.Any,
-      req: Request[ParamsDictionary, _, _, Query],
-      res: Response[_, Double],
+      req: Request[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response[js.Any, Double],
       next: NextFunction
     ): js.Any = js.native
     @JSName("errorHandler")
-    var errorHandler_Original: ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+    var errorHandler_Original: ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     def factory(): HoneyBadgerInstance = js.native
     def factory(options: ConfigureOptions): HoneyBadgerInstance = js.native
     
     def lambdaHandler(handler: LambdaHandler): LambdaHandler = js.native
     
-    def notify(
-      err: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      extra: js.UndefOr[scala.Nothing],
-      callback: CallbackFunction
-    ): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], extra: CallbackFunction): Unit = js.native
-    def notify(
-      err: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      extra: CallbackFunction,
-      callback: CallbackFunction
-    ): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], extra: metadata): Unit = js.native
-    def notify(
-      err: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      extra: metadata,
-      callback: CallbackFunction
-    ): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.Any): Unit = js.native
-    def notify(
-      err: js.UndefOr[scala.Nothing],
-      name: js.Any,
-      extra: js.UndefOr[scala.Nothing],
-      callback: CallbackFunction
-    ): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: CallbackFunction): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: metadata): Unit = js.native
-    def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
     def notify(err: js.Any): Unit = js.native
-    def notify(
-      err: js.Any,
-      name: js.UndefOr[scala.Nothing],
-      extra: js.UndefOr[scala.Nothing],
-      callback: CallbackFunction
-    ): Unit = js.native
-    def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: metadata): Unit = js.native
-    def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: metadata, callback: CallbackFunction): Unit = js.native
     def notify(err: js.Any, name: js.Any): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: js.UndefOr[scala.Nothing], callback: CallbackFunction): Unit = js.native
+    def notify(err: js.Any, name: js.Any, extra: Unit, callback: CallbackFunction): Unit = js.native
     def notify(err: js.Any, name: js.Any, extra: CallbackFunction): Unit = js.native
     def notify(err: js.Any, name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
     def notify(err: js.Any, name: js.Any, extra: metadata): Unit = js.native
     def notify(err: js.Any, name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: js.Any, name: Unit, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: js.Any, name: Unit, extra: CallbackFunction): Unit = js.native
+    def notify(err: js.Any, name: Unit, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: js.Any, name: Unit, extra: metadata): Unit = js.native
+    def notify(err: js.Any, name: Unit, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: js.Any): Unit = js.native
+    def notify(err: Unit, name: js.Any, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: js.Any, extra: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: js.Any, extra: metadata): Unit = js.native
+    def notify(err: Unit, name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Unit, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Unit, extra: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Unit, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Unit, extra: metadata): Unit = js.native
+    def notify(err: Unit, name: Unit, extra: metadata, callback: CallbackFunction): Unit = js.native
     
     def onUncaughtException(func: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
-    def requestHandler(req: Request[ParamsDictionary, _, _, Query], res: Response[_, Double], next: NextFunction): js.Any = js.native
+    def requestHandler(
+      req: Request[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response[js.Any, Double],
+      next: NextFunction
+    ): js.Any = js.native
     @JSName("requestHandler")
-    var requestHandler_Original: RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    var requestHandler_Original: RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     def resetContext(): Unit = js.native
     def resetContext(context: js.Object): Unit = js.native
@@ -194,30 +171,29 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: HoneyBadgerInstance = ^
   
-  @js.native
   trait metadata extends StObject {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
-    var cgiData: js.UndefOr[js.Object] = js.native
+    var cgiData: js.UndefOr[js.Object] = js.undefined
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Object] = js.native
+    var context: js.UndefOr[js.Object] = js.undefined
     
-    var fingerprint: js.UndefOr[String] = js.native
+    var fingerprint: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var session: js.UndefOr[js.Object] = js.native
+    var session: js.UndefOr[js.Object] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object metadata {
     

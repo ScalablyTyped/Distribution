@@ -3,13 +3,11 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropLocation extends StObject {
   
-  var dropLocation: js.UndefOr[ColumnDragEndLocation] = js.native
+  var dropLocation: js.UndefOr[ColumnDragEndLocation] = js.undefined
 }
 object DropLocation {
   

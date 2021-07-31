@@ -26,7 +26,6 @@ import typings.puppeteerLottie.puppeteerLottieStrings.veryfast
 import typings.puppeteerLottie.puppeteerLottieStrings.veryslow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,26 +36,27 @@ object mod {
     * You must pass either `path` or `animationData` to specify the Lottie animation.
     * @async
     */
+  @scala.inline
+  def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(opts: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("puppeteer-lottie", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[Unit] = js.native
-  @JSImport("puppeteer-lottie", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Optional ffmpeg settings
     */
-  @js.native
   trait FFmpegOptions extends StObject {
     
-    var crf: js.UndefOr[Double] = js.native
+    var crf: js.UndefOr[Double] = js.undefined
     
     var preset: js.UndefOr[
         ultrafast | superfast | veryfast | faster | fast | medium | slow | slower | veryslow | placebo
-      ] = js.native
+      ] = js.undefined
     
-    var profileVideo: js.UndefOr[baseline | main | high | high10 | high422 | high444] = js.native
+    var profileVideo: js.UndefOr[baseline | main | high | high10 | high422 | high444] = js.undefined
   }
   object FFmpegOptions {
     
@@ -91,33 +91,32 @@ object mod {
     }
   }
   
-  @js.native
   trait GifskiOptions extends StObject {
     
     /**
       * Lower quality, but faster encode
       */
-    var fast: js.UndefOr[Boolean] = js.native
+    var fast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Resize to max this height if width is set. Note that aspect ratio is not preserved.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, looping is disabled
       */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 1-100, but useful range is 50-100. Recommended to set to 100.
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * Resize to max this width if set
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GifskiOptions {
     
@@ -162,23 +161,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Inject extends StObject {
     
     /**
       * Optionally injected into the document <body>
       */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /**
       *  Optionally injected into the document <head>
       */
-    var head: js.UndefOr[String] = js.native
+    var head: js.UndefOr[String] = js.undefined
     
     /**
       * Optionally injected into a <style> tag within the document <head>
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
   }
   object Inject {
     
@@ -214,92 +212,91 @@ object mod {
   /**
     * Configuration options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * JSON exported animation data
       */
-    var animationData: js.UndefOr[js.Object] = js.native
+    var animationData: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional puppeteer instance to reuse
       */
-    var browser: js.UndefOr[Browser] = js.native
+    var browser: js.UndefOr[Browser] = js.undefined
     
     /**
       * Window device scale factor
       * @default 1
       */
-    var deviceScaleFactor: js.UndefOr[Double] = js.native
+    var deviceScaleFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional ffmpeg settings for crf, profileVideo and preset values
       */
-    var ffmpegOptions: js.UndefOr[FFmpegOptions] = js.native
+    var ffmpegOptions: js.UndefOr[FFmpegOptions] = js.undefined
     
     /**
       * Optional gifski settings (only for GIF outputs)
       */
-    var gifskiOptions: js.UndefOr[js.Object] = js.native
+    var gifskiOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional output height
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Optionally injects arbitrary string content into the head, style, or body elements.
       */
-    var inject: js.UndefOr[Inject] = js.native
+    var inject: js.UndefOr[Inject] = js.undefined
     
     /**
       * JPEG quality for frames (does nothing if using png)
       * @default 90
       */
-    var jpegQuality: js.UndefOr[Double] = js.native
+    var jpegQuality: js.UndefOr[Double] = js.undefined
     
     /**
       * Path or pattern to store result
       */
-    var output: String = js.native
+    var output: String
     
     /**
       * Relative path to the JSON file containing animation data
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Optional puppeteer launch settings
       */
-    var puppeteerOptions: js.UndefOr[LaunchOptions] = js.native
+    var puppeteerOptions: js.UndefOr[LaunchOptions] = js.undefined
     
     /**
       * Set to true to disable console output
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Which lottie-web renderer to use
       * @default 'svg'
       */
-    var renderer: js.UndefOr[svg | canvas | html] = js.native
+    var renderer: js.UndefOr[svg | canvas | html] = js.undefined
     
     /**
       * Optional lottie renderer settings
       */
-    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.native
+    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.undefined
     
     /**
       * Optional JS
       * [CSS styles](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) to apply to the animation container
       */
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional output width
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

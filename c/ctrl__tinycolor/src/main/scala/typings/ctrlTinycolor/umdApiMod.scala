@@ -20,7 +20,6 @@ import typings.ctrlTinycolor.randomMod.RandomOptions
 import typings.ctrlTinycolor.readabilityMod.WCAG2FallbackParms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object umdApiMod {
@@ -36,7 +35,8 @@ object umdApiMod {
     @js.native
     class TinyColor () extends TinyColor_ {
       def this(color: ColorInput) = this()
-      def this(color: js.UndefOr[ColorInput], opts: PartialTinyColorOptions) = this()
+      def this(color: Unit, opts: PartialTinyColorOptions) = this()
+      def this(color: ColorInput, opts: PartialTinyColorOptions) = this()
     }
     
     type _To = TinyColorUMD
@@ -107,7 +107,7 @@ object umdApiMod {
     
     def stringInputToObject(color: String): js.Any = js.native
     @JSName("stringInputToObject")
-    var stringInputToObject_Original: js.Function1[/* color */ String, _] = js.native
+    var stringInputToObject_Original: js.Function1[/* color */ String, js.Any] = js.native
     
     def toMsFilter(firstColor: ColorInput): String = js.native
     def toMsFilter(firstColor: ColorInput, secondColor: ColorInput): String = js.native

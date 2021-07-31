@@ -2,83 +2,81 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyJob extends StObject {
   
   /**
     * The account ID that owns the copy job.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.undefined
   
   /**
     * The size, in bytes, of a copy job.
     */
-  var BackupSizeInBytes: js.UndefOr[Long_] = js.native
+  var BackupSizeInBytes: js.UndefOr[Long_] = js.undefined
   
   /**
     * The date and time a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.native
+  var CompletionDate: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Uniquely identifies a copy job.
     */
-  var CopyJobId: js.UndefOr[String] = js.native
+  var CopyJobId: js.UndefOr[String] = js.undefined
   
-  var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.native
+  var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.undefined
   
   /**
     * The date and time a copy job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.native
+  var CreationDate: js.UndefOr[timestamp] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a destination copy vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
     */
-  var DestinationBackupVaultArn: js.UndefOr[ARN] = js.native
+  var DestinationBackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * An ARN that uniquely identifies a destination recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
-  var DestinationRecoveryPointArn: js.UndefOr[ARN] = js.native
+  var DestinationRecoveryPointArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Specifies the IAM role ARN used to copy the target recovery point; for example, arn:aws:iam::123456789012:role/S3Access.
     */
-  var IamRoleArn: js.UndefOr[IAMRoleArn] = js.native
+  var IamRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
     * The AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
-  var ResourceArn: js.UndefOr[ARN] = js.native
+  var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The type of AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. 
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a source copy vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault. 
     */
-  var SourceBackupVaultArn: js.UndefOr[ARN] = js.native
+  var SourceBackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * An ARN that uniquely identifies a source recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
-  var SourceRecoveryPointArn: js.UndefOr[ARN] = js.native
+  var SourceRecoveryPointArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The current state of a copy job.
     */
-  var State: js.UndefOr[CopyJobState] = js.native
+  var State: js.UndefOr[CopyJobState] = js.undefined
   
   /**
     * A detailed message explaining the status of the job to copy a resource.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
 }
 object CopyJob {
   

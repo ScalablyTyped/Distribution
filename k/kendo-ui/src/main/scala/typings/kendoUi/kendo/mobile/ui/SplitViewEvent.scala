@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitViewEvent extends StObject {
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var sender: SplitView = js.native
+  var sender: SplitView
 }
 object SplitViewEvent {
   

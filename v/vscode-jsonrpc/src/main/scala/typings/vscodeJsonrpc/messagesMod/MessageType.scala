@@ -2,15 +2,13 @@ package typings.vscodeJsonrpc.messagesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageType extends StObject {
   
-  val method: String = js.native
+  val method: String
   
-  val numberOfParams: Double = js.native
+  val numberOfParams: Double
 }
 object MessageType {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HiddenPlayer extends StObject {
   
   /** Output only. The time this player was hidden. */
-  var hiddenTimeMillis: js.UndefOr[String] = js.native
+  var hiddenTimeMillis: js.UndefOr[String] = js.undefined
   
   /** Output only. Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#hiddenPlayer`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Output only. The player information. */
-  var player: js.UndefOr[Player] = js.native
+  var player: js.UndefOr[Player] = js.undefined
 }
 object HiddenPlayer {
   

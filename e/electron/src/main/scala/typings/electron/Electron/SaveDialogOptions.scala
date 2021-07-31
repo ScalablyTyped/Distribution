@@ -7,44 +7,42 @@ import typings.electron.electronStrings.showOverwriteConfirmation
 import typings.electron.electronStrings.treatPackageAsDirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveDialogOptions extends StObject {
   
   /**
     * Custom label for the confirmation button, when left empty the default label will
     * be used.
     */
-  var buttonLabel: js.UndefOr[String] = js.native
+  var buttonLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Absolute directory path, absolute file path, or file name to use by default.
     */
-  var defaultPath: js.UndefOr[String] = js.native
+  var defaultPath: js.UndefOr[String] = js.undefined
   
-  var filters: js.UndefOr[js.Array[FileFilter]] = js.native
+  var filters: js.UndefOr[js.Array[FileFilter]] = js.undefined
   
   /**
     * Message to display above text fields.
     *
     * @platform darwin
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label for the text displayed in front of the filename text field.
     *
     * @platform darwin
     */
-  var nameFieldLabel: js.UndefOr[String] = js.native
+  var nameFieldLabel: js.UndefOr[String] = js.undefined
   
   var properties: js.UndefOr[
     js.Array[
       showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Create a security scoped bookmark when packaged for the Mac App Store. If this
@@ -53,16 +51,16 @@ trait SaveDialogOptions extends StObject {
     *
     * @platform darwin,mas
     */
-  var securityScopedBookmarks: js.UndefOr[Boolean] = js.native
+  var securityScopedBookmarks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show the tags input box, defaults to `true`.
     *
     * @platform darwin
     */
-  var showsTagField: js.UndefOr[Boolean] = js.native
+  var showsTagField: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SaveDialogOptions {
   

@@ -7,7 +7,6 @@ import typings.w2ui.W2UI.W2Grid.Ranges
 import typings.w2ui.W2UI.W2Grid.Records
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object W2UI {
@@ -46,12 +45,11 @@ object W2UI {
     def trigger(eventData: js.Object): js.Object = js.native
   }
   
-  @js.native
   trait W2Event extends StObject {
     
-    def onComplete(): Unit = js.native
+    def onComplete(): Unit
     
-    var target: String = js.native
+    var target: String
   }
   object W2Event {
     
@@ -76,7 +74,8 @@ object W2UI {
   
   @js.native
   trait W2Form
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2Object {
     
     def action(action: String): Unit = js.native
@@ -137,23 +136,23 @@ object W2UI {
     def reload(callback: js.Function): Unit = js.native
     
     def request(): Unit = js.native
-    def request(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def request(postData: js.Object): Unit = js.native
     def request(postData: js.Object, callback: js.Function): Unit = js.native
+    def request(postData: Unit, callback: js.Function): Unit = js.native
     
     var routeData: String = js.native
     
     def save(): Unit = js.native
-    def save(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def save(postData: js.Object): Unit = js.native
     def save(postData: js.Object, callback: js.Function): Unit = js.native
+    def save(postData: Unit, callback: js.Function): Unit = js.native
     
     def set(field: String, obj: js.Object): Boolean = js.native
     
     def submit(): Unit = js.native
-    def submit(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def submit(postData: js.Object): Unit = js.native
     def submit(postData: js.Object, callback: js.Function): Unit = js.native
+    def submit(postData: Unit, callback: js.Function): Unit = js.native
     
     var tabs: js.Object = js.native
     
@@ -169,7 +168,8 @@ object W2UI {
   
   @js.native
   trait W2Grid
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2OnClickable
        with W2Object {
     
@@ -225,9 +225,9 @@ object W2UI {
     def delete(force: Boolean): Unit = js.native
     
     def editField(recid: String, column: Double): Unit = js.native
-    def editField(recid: String, column: Double, value: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
     def editField(recid: String, column: Double, value: String): Unit = js.native
     def editField(recid: String, column: Double, value: String, event: js.Object): Unit = js.native
+    def editField(recid: String, column: Double, value: Unit, event: js.Object): Unit = js.native
     
     def error(msg: String): Unit = js.native
     
@@ -386,18 +386,13 @@ object W2UI {
     var reorderRows: Boolean = js.native
     
     def request(cmd: String): Unit = js.native
-    def request(
-      cmd: String,
-      params: js.UndefOr[scala.Nothing],
-      url: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Unit = js.native
-    def request(cmd: String, params: js.UndefOr[scala.Nothing], url: String): Unit = js.native
-    def request(cmd: String, params: js.UndefOr[scala.Nothing], url: String, callback: js.Function): Unit = js.native
     def request(cmd: String, params: js.Object): Unit = js.native
-    def request(cmd: String, params: js.Object, url: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def request(cmd: String, params: js.Object, url: String): Unit = js.native
     def request(cmd: String, params: js.Object, url: String, callback: js.Function): Unit = js.native
+    def request(cmd: String, params: js.Object, url: Unit, callback: js.Function): Unit = js.native
+    def request(cmd: String, params: Unit, url: String): Unit = js.native
+    def request(cmd: String, params: Unit, url: String, callback: js.Function): Unit = js.native
+    def request(cmd: String, params: Unit, url: Unit, callback: js.Function): Unit = js.native
     
     def requestComplete(status: String, cmd: String): Unit = js.native
     def requestComplete(status: String, cmd: String, callback: js.Function): Unit = js.native
@@ -457,9 +452,9 @@ object W2UI {
     
     def sort(): Unit = js.native
     def sort(field: String): Unit = js.native
-    def sort(field: String, direction: js.UndefOr[scala.Nothing], multiField: Boolean): Unit = js.native
     def sort(field: String, direction: String): Unit = js.native
     def sort(field: String, direction: String, multiField: Boolean): Unit = js.native
+    def sort(field: String, direction: Unit, multiField: Boolean): Unit = js.native
     
     var sortData: js.Array[js.Object] = js.native
     
@@ -499,37 +494,33 @@ object W2UI {
   }
   object W2Grid {
     
-    @js.native
     trait Columns extends StObject
     
-    @js.native
     trait Ranges extends StObject
     
-    @js.native
     trait Records extends StObject
   }
   
   /* Primitives (first alphabetically, then by documentation order) */
-  @js.native
   trait W2Item extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var img: js.UndefOr[String] = js.native
+    var img: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Array[W2Item]] = js.native
+    var items: js.UndefOr[js.Array[W2Item]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object W2Item {
     
@@ -603,7 +594,8 @@ object W2UI {
   
   @js.native
   trait W2Layout
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2Object {
     
     def content(`type`: String): js.Array[HTMLElement] | W2Object = js.native
@@ -624,18 +616,18 @@ object W2UI {
     def hideToolbar(`type`: String): Unit = js.native
     
     def html(`type`: String): String = js.native
-    def html(`type`: String, content: js.UndefOr[scala.Nothing], transition: String): Unit = js.native
     def html(`type`: String, content: String): Unit = js.native
     def html(`type`: String, content: String, transition: String): Unit = js.native
     def html(`type`: String, content: js.Object): Unit = js.native
     def html(`type`: String, content: js.Object, transition: String): Unit = js.native
+    def html(`type`: String, content: Unit, transition: String): Unit = js.native
     @JSName("html")
     def html_Unit(`type`: String): Unit = js.native
     
     def load(`type`: String, url: String): Unit = js.native
-    def load(`type`: String, url: String, transition: js.UndefOr[scala.Nothing], onLoad: js.Function): Unit = js.native
     def load(`type`: String, url: String, transition: String): Unit = js.native
     def load(`type`: String, url: String, transition: String, onLoad: js.Function): Unit = js.native
+    def load(`type`: String, url: String, transition: Unit, onLoad: js.Function): Unit = js.native
     
     def lock(panel: String, message: String): Unit = js.native
     def lock(panel: String, message: String, showSpinner: Boolean): Unit = js.native
@@ -687,26 +679,25 @@ object W2UI {
     def onClick(id: String, data: W2Event): Unit = js.native
   }
   
-  @js.native
   trait W2Panel extends StObject {
     
-    var content: js.UndefOr[String | JQuery] = js.native
+    var content: js.UndefOr[String | JQuery] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var overflow: js.UndefOr[String] = js.native
+    var overflow: js.UndefOr[String] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var tabs: js.UndefOr[W2Tabs] = js.native
+    var tabs: js.UndefOr[W2Tabs] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object W2Panel {
     
@@ -777,7 +768,8 @@ object W2UI {
   
   @js.native
   trait W2Popup
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2Object {
     
     def clear(): Unit = js.native
@@ -808,13 +800,13 @@ object W2UI {
     
     def reset(): Unit = js.native
     
-    def resize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
-    def resize(width: js.UndefOr[scala.Nothing], height: Double): Double = js.native
-    def resize(width: js.UndefOr[scala.Nothing], height: Double, callback: js.Function): Double = js.native
     def resize(width: Double): Double = js.native
-    def resize(width: Double, height: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
     def resize(width: Double, height: Double): Double = js.native
     def resize(width: Double, height: Double, callback: js.Function): Double = js.native
+    def resize(width: Double, height: Unit, callback: js.Function): Double = js.native
+    def resize(width: Unit, height: Double): Double = js.native
+    def resize(width: Unit, height: Double, callback: js.Function): Double = js.native
+    def resize(width: Unit, height: Unit, callback: js.Function): Double = js.native
     @JSName("resize")
     def resize_Unit(): Unit = js.native
     
@@ -831,7 +823,8 @@ object W2UI {
   
   @js.native
   trait W2Sidebar
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2OnClickable
        with W2Object {
     
@@ -934,12 +927,11 @@ object W2UI {
     def unselect(id: String): Boolean = js.native
   }
   
-  @js.native
   trait W2Tab extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object W2Tab {
     
@@ -968,7 +960,8 @@ object W2UI {
   
   @js.native
   trait W2Tabs
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2OnClickable
        with W2Object {
     
@@ -1016,7 +1009,8 @@ object W2UI {
   
   @js.native
   trait W2Toolbar
-    extends W2Common
+    extends StObject
+       with W2Common
        with W2OnClickable
        with W2Object {
     

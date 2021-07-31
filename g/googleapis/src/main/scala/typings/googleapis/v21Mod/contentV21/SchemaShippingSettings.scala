@@ -2,32 +2,30 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The merchant account&#39;s shipping settings. All methods except
   * getsupportedcarriers and getsupportedholidays require the admin role.
   */
-@js.native
 trait SchemaShippingSettings extends StObject {
   
   /**
     * The ID of the account to which these account shipping settings belong.
     * Ignored upon update, always present in get request responses.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of postal code groups that can be referred to in services.
     * Optional.
     */
-  var postalCodeGroups: js.UndefOr[js.Array[SchemaPostalCodeGroup]] = js.native
+  var postalCodeGroups: js.UndefOr[js.Array[SchemaPostalCodeGroup]] = js.undefined
   
   /**
     * The target account&#39;s list of services. Optional.
     */
-  var services: js.UndefOr[js.Array[SchemaService]] = js.native
+  var services: js.UndefOr[js.Array[SchemaService]] = js.undefined
 }
 object SchemaShippingSettings {
   

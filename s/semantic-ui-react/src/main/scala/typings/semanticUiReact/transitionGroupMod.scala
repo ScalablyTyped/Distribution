@@ -10,7 +10,6 @@ import typings.semanticUiReact.genericMod.SemanticTRANSITIONS
 import typings.semanticUiReact.transitionTransitionMod.TransitionPropDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionGroupMod extends Shortcut {
@@ -27,23 +26,22 @@ object transitionGroupMod extends Shortcut {
   @js.native
   val default: TransitionGroupComponent = js.native
   
-  @js.native
   trait StrictTransitionGroupProps extends StObject {
     
     /** Named animation event to used. Must be defined in CSS. */
-    var animation: js.UndefOr[SemanticTRANSITIONS | String] = js.native
+    var animation: js.UndefOr[SemanticTRANSITIONS | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Whether it is directional animation event or not. Use it only for custom transitions. */
-    var directional: js.UndefOr[Boolean] = js.native
+    var directional: js.UndefOr[Boolean] = js.undefined
     
     /** Duration of the CSS transition animation in milliseconds. */
-    var duration: js.UndefOr[Double | String | TransitionPropDuration] = js.native
+    var duration: js.UndefOr[Double | String | TransitionPropDuration] = js.undefined
   }
   object StrictTransitionGroupProps {
     
@@ -90,9 +88,9 @@ object transitionGroupMod extends Shortcut {
   
   type TransitionGroupComponent = ComponentClass[TransitionGroupProps, ComponentState]
   
-  @js.native
   trait TransitionGroupProps
-    extends StrictTransitionGroupProps
+    extends StObject
+       with StrictTransitionGroupProps
        with /* key */ StringDictionary[js.Any]
   object TransitionGroupProps {
     

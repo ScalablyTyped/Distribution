@@ -3,10 +3,13 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unaryopGpuMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "ABS")
   @js.native
@@ -144,12 +147,10 @@ object unaryopGpuMod {
   @js.native
   val SQRT: /* "return sqrt(x);" */ String = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "STEP")
-  @js.native
-  def STEP(): String = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "STEP")
-  @js.native
-  def STEP(alpha: Double): String = js.native
+  @scala.inline
+  def STEP(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")().asInstanceOf[String]
+  @scala.inline
+  def STEP(alpha: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")(alpha.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "TANH")
   @js.native
@@ -157,7 +158,18 @@ object unaryopGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "UnaryOpProgram")
   @js.native
-  class UnaryOpProgram protected () extends GPGPUProgram {
+  class UnaryOpProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(aShape: js.Array[Double], opSnippet: String) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
 }

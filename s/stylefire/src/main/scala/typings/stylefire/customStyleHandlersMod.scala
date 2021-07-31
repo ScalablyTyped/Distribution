@@ -3,17 +3,15 @@ package typings.stylefire
 import typings.stylefire.typesMod.ResolvedState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customStyleHandlersMod {
   
-  @js.native
   trait CustomStyleHandler extends StObject {
     
-    var get: js.UndefOr[String] = js.native
+    var get: js.UndefOr[String] = js.undefined
     
-    def set(output: ResolvedState, value: js.Any): Unit = js.native
+    def set(output: ResolvedState, value: js.Any): Unit
   }
   object CustomStyleHandler {
     

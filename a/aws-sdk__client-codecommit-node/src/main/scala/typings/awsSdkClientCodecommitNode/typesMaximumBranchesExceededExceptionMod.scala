@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.putRepositoryTriggersExceptionsUnionMo
 import typings.awsSdkClientCodecommitNode.testRepositoryTriggersExceptionsUnionMod.TestRepositoryTriggersExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMaximumBranchesExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumBranchesExceededExceptionDetails> * / any */ @js.native
-  trait MaximumBranchesExceededException
-    extends PutRepositoryTriggersExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumBranchesExceededExceptionDetails> * / any */ trait MaximumBranchesExceededException
+    extends StObject
+       with PutRepositoryTriggersExceptionsUnion
        with TestRepositoryTriggersExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumBranchesExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumBranchesExceededException
   }
   object MaximumBranchesExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumBranchesExceededException
-    ): MaximumBranchesExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): MaximumBranchesExceededException = {
+      val __obj = js.Dynamic.literal(name = "MaximumBranchesExceededException")
       __obj.asInstanceOf[MaximumBranchesExceededException]
     }
     
@@ -37,6 +34,5 @@ object typesMaximumBranchesExceededExceptionMod {
     }
   }
   
-  @js.native
   trait MaximumBranchesExceededExceptionDetails extends StObject
 }

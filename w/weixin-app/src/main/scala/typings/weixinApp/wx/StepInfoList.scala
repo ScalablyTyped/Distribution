@@ -2,14 +2,12 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 用户过去三十天的微信运动步数 */
-@js.native
 trait StepInfoList extends StObject {
   
-  var stepInfoList: js.Array[StepInfo] = js.native
+  var stepInfoList: js.Array[StepInfo]
 }
 object StepInfoList {
   

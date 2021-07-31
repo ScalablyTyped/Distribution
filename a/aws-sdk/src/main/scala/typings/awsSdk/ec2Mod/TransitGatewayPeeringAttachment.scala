@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayPeeringAttachment extends StObject {
   
   /**
     * Information about the accepter transit gateway.
     */
-  var AccepterTgwInfo: js.UndefOr[PeeringTgwInfo] = js.native
+  var AccepterTgwInfo: js.UndefOr[PeeringTgwInfo] = js.undefined
   
   /**
     * The time the transit gateway peering attachment was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Information about the requester transit gateway.
     */
-  var RequesterTgwInfo: js.UndefOr[PeeringTgwInfo] = js.native
+  var RequesterTgwInfo: js.UndefOr[PeeringTgwInfo] = js.undefined
   
   /**
     * The state of the transit gateway peering attachment. Note that the initiating state has been deprecated.
     */
-  var State: js.UndefOr[TransitGatewayAttachmentState] = js.native
+  var State: js.UndefOr[TransitGatewayAttachmentState] = js.undefined
   
   /**
     * The status of the transit gateway peering attachment.
     */
-  var Status: js.UndefOr[PeeringAttachmentStatus] = js.native
+  var Status: js.UndefOr[PeeringAttachmentStatus] = js.undefined
   
   /**
     * The tags for the transit gateway peering attachment.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the transit gateway peering attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayPeeringAttachment {
   

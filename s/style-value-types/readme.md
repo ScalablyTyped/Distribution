@@ -10,9 +10,9 @@ Parsers, transformers and tests for special value types, eg: %, hex codes etc.
 | ------------------ | :-------------: |
 | Full name          | style-value-types |
 | Keywords           | css, svg, hex, rgba, hsla |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 12 |
-| # downloads        | 8371061 |
+| # downloads        | 13286797 |
 | # stars            | 0 |
 
 ## Links

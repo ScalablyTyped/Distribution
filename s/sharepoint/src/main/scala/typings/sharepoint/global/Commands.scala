@@ -2,7 +2,6 @@ package typings.sharepoint.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Commands {
@@ -10,7 +9,8 @@ object Commands {
   @JSGlobal("Commands.CommandIds")
   @js.native
   class CommandIds ()
-    extends typings.sharepoint.Commands.CommandIds
+    extends StObject
+       with typings.sharepoint.Commands.CommandIds
   object CommandIds {
     
     @JSGlobal("Commands.CommandIds")
@@ -56,7 +56,8 @@ object Commands {
   @JSGlobal("Commands.GlobalRedoProperties")
   @js.native
   class GlobalRedoProperties ()
-    extends typings.sharepoint.Commands.GlobalRedoProperties
+    extends StObject
+       with typings.sharepoint.Commands.GlobalRedoProperties
   object GlobalRedoProperties {
     
     @JSGlobal("Commands.GlobalRedoProperties")
@@ -74,7 +75,8 @@ object Commands {
   @JSGlobal("Commands.GlobalUndoProperties")
   @js.native
   class GlobalUndoProperties ()
-    extends typings.sharepoint.Commands.GlobalUndoProperties
+    extends StObject
+       with typings.sharepoint.Commands.GlobalUndoProperties
   object GlobalUndoProperties {
     
     @JSGlobal("Commands.GlobalUndoProperties")
@@ -92,7 +94,8 @@ object Commands {
   @JSGlobal("Commands.RedoProperties")
   @js.native
   class RedoProperties ()
-    extends typings.sharepoint.Commands.RedoProperties
+    extends StObject
+       with typings.sharepoint.Commands.RedoProperties
   object RedoProperties {
     
     @JSGlobal("Commands.RedoProperties")
@@ -110,7 +113,8 @@ object Commands {
   @JSGlobal("Commands.UndoProperties")
   @js.native
   class UndoProperties ()
-    extends typings.sharepoint.Commands.UndoProperties
+    extends StObject
+       with typings.sharepoint.Commands.UndoProperties
   object UndoProperties {
     
     @JSGlobal("Commands.UndoProperties")

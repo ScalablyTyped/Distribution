@@ -5,7 +5,6 @@ import typings.stylus.mod.Stylus.Nodes.Expression
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -95,12 +94,12 @@ trait Utils extends StObject {
   /**
     * Return param names for `fn`.
     */
-  def params(fn: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
+  def params(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
   
   /**
     * Returns an array with unique values.
     */
-  def uniq(arr: js.Array[_]): js.Array[_] = js.native
+  def uniq(arr: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     * Unwrap `expr`.

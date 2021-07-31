@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePurchasesSubscriptionsDefer extends StandardParameters {
+trait ParamsResourcePurchasesSubscriptionsDefer
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The package name of the application for which this subscription was
     * purchased (for example, 'com.some.thing').
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSubscriptionPurchasesDeferRequest] = js.native
+  var requestBody: js.UndefOr[SchemaSubscriptionPurchasesDeferRequest] = js.undefined
   
   /**
     * The purchased subscription ID (for example, 'monthly001').
     */
-  var subscriptionId: js.UndefOr[String] = js.native
+  var subscriptionId: js.UndefOr[String] = js.undefined
   
   /**
     * The token provided to the user's device when the subscription was
     * purchased.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePurchasesSubscriptionsDefer {
   

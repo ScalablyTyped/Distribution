@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountsLinkRequest extends StObject {
   
   /** Action to perform for this link. The `"request"` action is only available to select merchants. Acceptable values are: - "`approve`" - "`remove`" - "`request`" */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** Type of the link between the two accounts. Acceptable values are: - "`channelPartner`" - "`eCommercePlatform`" */
-  var linkType: js.UndefOr[String] = js.native
+  var linkType: js.UndefOr[String] = js.undefined
   
   /** The ID of the linked account. */
-  var linkedAccountId: js.UndefOr[String] = js.native
+  var linkedAccountId: js.UndefOr[String] = js.undefined
   
   /** List of provided services. */
-  var services: js.UndefOr[js.Array[String]] = js.native
+  var services: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccountsLinkRequest {
   

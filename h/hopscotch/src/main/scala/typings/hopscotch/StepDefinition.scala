@@ -4,57 +4,55 @@ import typings.hopscotch.hopscotchStrings.center
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepDefinition extends StObject {
   
-  var arrowOffset: js.UndefOr[Double | center] = js.native
+  var arrowOffset: js.UndefOr[Double | center] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var ctaLabel: js.UndefOr[String] = js.native
+  var ctaLabel: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var fixedElement: js.UndefOr[Boolean] = js.native
+  var fixedElement: js.UndefOr[Boolean] = js.undefined
   
-  var multipage: js.UndefOr[Boolean] = js.native
+  var multipage: js.UndefOr[Boolean] = js.undefined
   
-  var nextOnTargetClick: js.UndefOr[Boolean] = js.native
+  var nextOnTargetClick: js.UndefOr[Boolean] = js.undefined
   
-  var onCTA: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onCTA: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onNext: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onNext: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onPrev: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onPrev: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onShow: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onShow: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var placement: placementTypes = js.native
+  var placement: placementTypes
   
-  var showCTAButton: js.UndefOr[Boolean] = js.native
+  var showCTAButton: js.UndefOr[Boolean] = js.undefined
   
-  var showNextButton: js.UndefOr[Boolean] = js.native
+  var showNextButton: js.UndefOr[Boolean] = js.undefined
   
-  var showPrevButton: js.UndefOr[Boolean] = js.native
+  var showPrevButton: js.UndefOr[Boolean] = js.undefined
   
-  var showSkip: js.UndefOr[Boolean] = js.native
+  var showSkip: js.UndefOr[Boolean] = js.undefined
   
-  var target: String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  var target: String | HTMLElement | (js.Array[String | HTMLElement])
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xOffset: js.UndefOr[Double | center] = js.native
+  var xOffset: js.UndefOr[Double | center] = js.undefined
   
-  var yOffset: js.UndefOr[Double | center] = js.native
+  var yOffset: js.UndefOr[Double | center] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object StepDefinition {
   

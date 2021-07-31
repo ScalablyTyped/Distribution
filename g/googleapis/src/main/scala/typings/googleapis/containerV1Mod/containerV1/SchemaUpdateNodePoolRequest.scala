@@ -2,38 +2,36 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * UpdateNodePoolRequests update a node pool&#39;s image and/or version.
   */
-@js.native
 trait SchemaUpdateNodePoolRequest extends StObject {
   
   /**
     * Deprecated. The name of the cluster to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The desired image type for the node pool.
     */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * The name (project, location, cluster, node pool) of the node pool to
     * update. Specified in the format
     * &#39;projects/x/locations/x/clusters/x/nodePools/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the node pool to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var nodePoolId: js.UndefOr[String] = js.native
+  var nodePoolId: js.UndefOr[String] = js.undefined
   
   /**
     * The Kubernetes version to change the nodes to (typically an upgrade).
@@ -45,21 +43,21 @@ trait SchemaUpdateNodePoolRequest extends StObject {
     * the 1.X.Y version - &quot;1.X.Y-gke.N&quot;: picks an explicit Kubernetes
     * version - &quot;-&quot;: picks the Kubernetes master version
     */
-  var nodeVersion: js.UndefOr[String] = js.native
+  var nodeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840). This field has
     * been deprecated and replaced by the name field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides. This
     * field has been deprecated and replaced by the name field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateNodePoolRequest {
   

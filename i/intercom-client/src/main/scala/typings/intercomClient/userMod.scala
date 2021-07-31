@@ -15,24 +15,22 @@ import typings.intercomClient.intercomClientStrings.user
 import typings.intercomClient.intercomClientStrings.userDotlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
   
-  @js.native
   trait Avatar extends StObject {
     
-    var image_url: String | Null = js.native
+    var image_url: String | Null
     
-    var `type`: avatar = js.native
+    var `type`: avatar
   }
   object Avatar {
     
     @scala.inline
-    def apply(`type`: avatar): Avatar = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): Avatar = {
+      val __obj = js.Dynamic.literal(image_url = null)
+      __obj.updateDynamic("type")("avatar")
       __obj.asInstanceOf[Avatar]
     }
     
@@ -50,46 +48,45 @@ object userMod {
     }
   }
   
-  @js.native
   trait BaseUser extends StObject {
     
-    var anonymous: Boolean = js.native
+    var anonymous: Boolean
     
-    var app_id: js.UndefOr[String] = js.native
+    var app_id: js.UndefOr[String] = js.undefined
     
-    var avatar: Avatar = js.native
+    var avatar: Avatar
     
-    val created_at: Double = js.native
+    val created_at: Double
     
-    var custom_attributes: StringDictionary[js.Any] = js.native
+    var custom_attributes: StringDictionary[js.Any]
     
-    var email: String | Null = js.native
+    var email: String | Null
     
-    val id: String = js.native
+    val id: String
     
-    var last_request_at: Double | Null = js.native
+    var last_request_at: Double | Null
     
-    var last_seen_ip: String | Null = js.native
+    var last_seen_ip: String | Null
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var phone: String | Null = js.native
+    var phone: String | Null
     
-    var pseudonym: String | Null = js.native
+    var pseudonym: String | Null
     
-    var session_count: Double = js.native
+    var session_count: Double
     
-    var signed_up_at: Double | Null = js.native
+    var signed_up_at: Double | Null
     
-    var `type`: user | contact = js.native
+    var `type`: user | contact
     
-    var unsubscribed_from_emails: Boolean = js.native
+    var unsubscribed_from_emails: Boolean
     
-    val updated_at: Double = js.native
+    val updated_at: Double
     
-    var user_agent_data: String | Null = js.native
+    var user_agent_data: String | Null
     
-    var user_id: String | Null = js.native
+    var user_id: String | Null
   }
   object BaseUser {
     
@@ -105,7 +102,7 @@ object userMod {
       unsubscribed_from_emails: Boolean,
       updated_at: Double
     ): BaseUser = {
-      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, pseudonym = null, signed_up_at = null, user_agent_data = null, user_id = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseUser]
     }
@@ -202,10 +199,11 @@ object userMod {
     }
   }
   
-  @js.native
-  trait CreateUpdateUser extends BaseUser {
+  trait CreateUpdateUser
+    extends StObject
+       with BaseUser {
     
-    var companies: js.Array[PartialCompanyremoveboole] = js.native
+    var companies: js.Array[PartialCompanyremoveboole]
   }
   object CreateUpdateUser {
     
@@ -222,7 +220,7 @@ object userMod {
       unsubscribed_from_emails: Boolean,
       updated_at: Double
     ): CreateUpdateUser = {
-      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, pseudonym = null, signed_up_at = null, user_agent_data = null, user_id = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateUpdateUser]
     }
@@ -238,23 +236,22 @@ object userMod {
     }
   }
   
-  @js.native
   trait List extends StObject {
     
-    var pages: Next = js.native
+    var pages: Next
     
-    var total_count: Double = js.native
+    var total_count: Double
     
-    var `type`: userDotlist = js.native
+    var `type`: userDotlist
     
-    var users: js.Array[User] = js.native
+    var users: js.Array[User]
   }
   object List {
     
     @scala.inline
-    def apply(pages: Next, total_count: Double, `type`: userDotlist, users: js.Array[User]): List = {
+    def apply(pages: Next, total_count: Double, users: js.Array[User]): List = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("user.list")
       __obj.asInstanceOf[List]
     }
     
@@ -278,35 +275,34 @@ object userMod {
     }
   }
   
-  @js.native
   trait LocationData extends StObject {
     
-    var city_name: String | Null = js.native
+    var city_name: String | Null
     
-    var continent_code: String | Null = js.native
+    var continent_code: String | Null
     
-    var country_code: String | Null = js.native
+    var country_code: String | Null
     
-    var country_name: String | Null = js.native
+    var country_name: String | Null
     
-    var latitude: Double | Null = js.native
+    var latitude: Double | Null
     
-    var longitude: Double | Null = js.native
+    var longitude: Double | Null
     
-    var postal_code: String | Null = js.native
+    var postal_code: String | Null
     
-    var region_name: String | Null = js.native
+    var region_name: String | Null
     
-    var timezone: String | Null = js.native
+    var timezone: String | Null
     
-    var `type`: location_data = js.native
+    var `type`: location_data
   }
   object LocationData {
     
     @scala.inline
-    def apply(`type`: location_data): LocationData = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): LocationData = {
+      val __obj = js.Dynamic.literal(city_name = null, continent_code = null, country_code = null, country_name = null, latitude = null, longitude = null, postal_code = null, region_name = null, timezone = null)
+      __obj.updateDynamic("type")("location_data")
       __obj.asInstanceOf[LocationData]
     }
     
@@ -372,10 +368,9 @@ object userMod {
     }
   }
   
-  @js.native
   trait Segment extends StObject {
     
-    val id: String = js.native
+    val id: String
   }
   object Segment {
     
@@ -393,22 +388,21 @@ object userMod {
     }
   }
   
-  @js.native
   trait SocialProfile extends StObject {
     
-    val id: String | Null = js.native
+    val id: String | Null
     
-    var name: Twitter = js.native
+    var name: Twitter
     
-    var url: String | Null = js.native
+    var url: String | Null
     
-    var username: String | Null = js.native
+    var username: String | Null
   }
   object SocialProfile {
     
     @scala.inline
-    def apply(name: Twitter): SocialProfile = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): SocialProfile = {
+      val __obj = js.Dynamic.literal(name = "Twitter", id = null, url = null, username = null)
       __obj.asInstanceOf[SocialProfile]
     }
     
@@ -438,10 +432,9 @@ object userMod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    val id: String = js.native
+    val id: String
   }
   object Tag {
     
@@ -459,18 +452,19 @@ object userMod {
     }
   }
   
-  @js.native
-  trait User extends BaseUser {
+  trait User
+    extends StObject
+       with BaseUser {
     
-    var companies: Companies = js.native
+    var companies: Companies
     
-    var location_data: LocationData | js.Object = js.native
+    var location_data: LocationData | js.Object
     
-    var segments: Segments = js.native
+    var segments: Segments
     
-    var social_profiles: Socialprofiles = js.native
+    var social_profiles: Socialprofiles
     
-    var tags: Tags = js.native
+    var tags: Tags
   }
   object User {
     
@@ -491,7 +485,7 @@ object userMod {
       unsubscribed_from_emails: Boolean,
       updated_at: Double
     ): User = {
-      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, pseudonym = null, signed_up_at = null, user_agent_data = null, user_id = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[User]
     }
@@ -516,10 +510,11 @@ object userMod {
     }
   }
   
-  @js.native
-  trait UserEmailIdentifier extends UserIdentifier {
+  trait UserEmailIdentifier
+    extends StObject
+       with UserIdentifier {
     
-    var email: String = js.native
+    var email: String
   }
   object UserEmailIdentifier {
     
@@ -541,7 +536,9 @@ object userMod {
     - typings.intercomClient.anon.Id
     - typings.intercomClient.anon.Userid
   */
-  trait UserIdIdentifier extends UserIdentifier
+  trait UserIdIdentifier
+    extends StObject
+       with UserIdentifier
   object UserIdIdentifier {
     
     @scala.inline

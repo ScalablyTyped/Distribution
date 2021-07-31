@@ -3,21 +3,20 @@ package typings.reactMdl.mod
 import typings.react.mod.DOMAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[Slider] {
   
   @JSName("max")
-  var max_SliderProps: Double = js.native
+  var max_SliderProps: Double
   
   @JSName("min")
-  var min_SliderProps: Double = js.native
+  var min_SliderProps: Double
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SliderProps {
   

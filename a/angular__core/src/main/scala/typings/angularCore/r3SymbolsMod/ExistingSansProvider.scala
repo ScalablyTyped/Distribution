@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @publicApi
   */
-@js.native
 trait ExistingSansProvider extends StObject {
   
   /**
     * Existing `token` to return. (Equivalent to `injector.get(useExisting)`)
     */
-  var useExisting: js.Any = js.native
+  var useExisting: js.Any
 }
 object ExistingSansProvider {
   

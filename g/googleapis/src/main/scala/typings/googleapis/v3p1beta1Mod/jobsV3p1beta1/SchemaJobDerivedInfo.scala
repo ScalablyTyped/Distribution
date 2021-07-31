@@ -2,25 +2,23 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Derived details about the job posting.
   */
-@js.native
 trait SchemaJobDerivedInfo extends StObject {
   
   /**
     * Job categories derived from Job.title and Job.description.
     */
-  var jobCategories: js.UndefOr[js.Array[String]] = js.native
+  var jobCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Structured locations of the job, resolved from Job.addresses.  locations
     * are exactly matched to Job.addresses in the same order.
     */
-  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
 }
 object SchemaJobDerivedInfo {
   

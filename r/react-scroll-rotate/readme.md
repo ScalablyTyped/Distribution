@@ -12,7 +12,7 @@ Very simple react component for rotate element based on scroll position
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 1425 |
+| # downloads        | 2196 |
 | # stars            | 0 |
 
 ## Links

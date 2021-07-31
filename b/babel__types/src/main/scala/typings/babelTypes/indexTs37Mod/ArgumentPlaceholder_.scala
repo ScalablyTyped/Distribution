@@ -3,23 +3,22 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ArgumentPlaceholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgumentPlaceholder_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   @JSName("type")
-  var type_ArgumentPlaceholder_ : ArgumentPlaceholder = js.native
+  var type_ArgumentPlaceholder_ : ArgumentPlaceholder
 }
 object ArgumentPlaceholder_ {
   
   @scala.inline
-  def apply(`type`: ArgumentPlaceholder): ArgumentPlaceholder_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): ArgumentPlaceholder_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ArgumentPlaceholder")
     __obj.asInstanceOf[ArgumentPlaceholder_]
   }
   

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents physical identification data for a specific NetworkAdapter object. */
-@js.native
 trait LanIdentifier extends StObject {
   
   /** Gets a LanIdentifierData object containing locality identification information for the network adapter's connection. */
-  var infrastructureId: LanIdentifierData = js.native
+  var infrastructureId: LanIdentifierData
   
   /** Gets the adapter GUID that identifies the network adapter to associate with the locality information. */
-  var networkAdapterId: String = js.native
+  var networkAdapterId: String
   
   /** Gets a LanIdentifierData object containing the port ID from the Link Layer Discovery Protocol (LLDP) locality information for an Ethernet type network adapter. */
-  var portId: LanIdentifierData = js.native
+  var portId: LanIdentifierData
 }
 object LanIdentifier {
   

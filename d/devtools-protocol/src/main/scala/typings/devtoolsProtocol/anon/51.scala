@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.DOM.FocusRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `51` extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[FocusRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[FocusRequest]]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `51` {
   

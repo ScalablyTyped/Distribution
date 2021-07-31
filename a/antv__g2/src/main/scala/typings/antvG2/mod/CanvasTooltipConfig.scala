@@ -6,35 +6,34 @@ import typings.antvG2.mod.Styles.background
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasTooltipConfig
-  extends CommonTooltipConfig
+  extends StObject
+     with CommonTooltipConfig
      with TooltipConfig {
   
-  var boardStyle: js.UndefOr[background] = js.native
+  var boardStyle: js.UndefOr[background] = js.undefined
   
-  var itemGap: js.UndefOr[Double] = js.native
+  var itemGap: js.UndefOr[Double] = js.undefined
   
-  var nameStyle: js.UndefOr[text] = js.native
+  var nameStyle: js.UndefOr[text] = js.undefined
   
-  var titleStyle: js.UndefOr[text] = js.native
+  var titleStyle: js.UndefOr[text] = js.undefined
   
   @JSName("type")
-  var type_CanvasTooltipConfig: js.UndefOr[default] = js.native
+  var type_CanvasTooltipConfig: js.UndefOr[default] = js.undefined
   
   @JSName("useHtml")
-  var useHtml_CanvasTooltipConfig: `false` = js.native
+  var useHtml_CanvasTooltipConfig: `false`
   
-  var valueStyle: js.UndefOr[text] = js.native
+  var valueStyle: js.UndefOr[text] = js.undefined
 }
 object CanvasTooltipConfig {
   
   @scala.inline
-  def apply(useHtml: `false`): CanvasTooltipConfig = {
-    val __obj = js.Dynamic.literal(useHtml = useHtml.asInstanceOf[js.Any])
+  def apply(): CanvasTooltipConfig = {
+    val __obj = js.Dynamic.literal(useHtml = false)
     __obj.asInstanceOf[CanvasTooltipConfig]
   }
   

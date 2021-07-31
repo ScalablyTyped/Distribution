@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationInputProcessingConfigurationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationARN: js.UndefOr[ResourceARN] = js.native
+  var ApplicationARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The current application version ID.
     */
-  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.native
+  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.undefined
 }
 object DeleteApplicationInputProcessingConfigurationResponse {
   

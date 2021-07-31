@@ -2,15 +2,13 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchSizeReadPreference extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
-  var readPreference: js.UndefOr[typings.typeorm.mongodbTypingsMod.ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[typings.typeorm.mongodbTypingsMod.ReadPreference | String] = js.undefined
 }
 object BatchSizeReadPreference {
   

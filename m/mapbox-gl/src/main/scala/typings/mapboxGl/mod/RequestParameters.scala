@@ -8,30 +8,28 @@ import typings.mapboxGl.mapboxGlStrings.`same-origin`
 import typings.mapboxGl.mapboxGlStrings.include
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestParameters extends StObject {
   
-  var collectResourceTiming: js.UndefOr[Boolean] = js.native
+  var collectResourceTiming: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use `'include'` to send cookies with cross-origin requests.
     */
-  var credentials: js.UndefOr[`same-origin` | include] = js.native
+  var credentials: js.UndefOr[`same-origin` | include] = js.undefined
   
   /**
     * The headers to be sent with the request.
     */
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var method: js.UndefOr[GET | POST | PUT] = js.native
+  var method: js.UndefOr[GET | POST | PUT] = js.undefined
   
   /**
     * The URL to be requested.
     */
-  var url: String = js.native
+  var url: String
 }
 object RequestParameters {
   

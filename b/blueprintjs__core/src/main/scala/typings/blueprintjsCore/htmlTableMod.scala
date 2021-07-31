@@ -6,7 +6,6 @@ import typings.react.mod.TableHTMLAttributes
 import typings.std.HTMLTableElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlTableMod {
@@ -19,28 +18,28 @@ object htmlTableMod {
     def this(props: IHTMLTableProps, context: js.Any) = this()
   }
   
-  @js.native
   trait IHTMLTableProps
-    extends TableHTMLAttributes[HTMLTableElement]
+    extends StObject
+       with TableHTMLAttributes[HTMLTableElement]
        with IElementRefProps[HTMLTableElement] {
     
     /** Enables borders between rows and cells. */
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
     /** Use small, condensed appearance. */
-    var condensed: js.UndefOr[Boolean] = js.native
+    var condensed: js.UndefOr[Boolean] = js.undefined
     
     /** Enables hover styles on row. */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use small, condensed appearance for this element and all child elements.
       * @deprecated
       */
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
     
     /** Use an alternate background color on odd rows. */
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
   }
   object IHTMLTableProps {
     

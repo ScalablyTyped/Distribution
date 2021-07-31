@@ -10,9 +10,9 @@ Levenshtein edit distance. No cruft. Real fast.
 | ------------------ | :-------------: |
 | Full name          | levenshtein-edit-distance |
 | Keywords           | vladimir, levenshtein, edit, distance, bin, cli |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 1564876 |
+| # releases         | 3 |
+| # dependents       | 15 |
+| # downloads        | 1982332 |
 | # stars            | 2 |
 
 ## Links

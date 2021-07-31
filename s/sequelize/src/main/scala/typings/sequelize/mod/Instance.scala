@@ -5,7 +5,6 @@ import typings.sequelize.anon.Skip
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -87,12 +86,12 @@ trait Instance[TAttributes] extends StObject {
   /**
     * Check whether all values of this and `other` Instance are the same
     */
-  def equals(other: Instance[_]): Boolean = js.native
+  def equals(other: Instance[js.Any]): Boolean = js.native
   
   /**
     * Check if this is eqaul to one of `others` by calling equals
     */
-  def equalsOneOf(others: js.Array[Instance[_]]): Boolean = js.native
+  def equalsOneOf(others: js.Array[Instance[js.Any]]): Boolean = js.native
   
   def get(): TAttributes = js.native
   /**

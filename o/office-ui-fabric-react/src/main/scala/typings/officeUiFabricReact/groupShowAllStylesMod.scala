@@ -4,12 +4,14 @@ import typings.officeUiFabricReact.anon.RequiredPickIGroupShowAll
 import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupShowAllStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupShowAll.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupShowAll.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: RequiredPickIGroupShowAll): IGroupShowAllStyles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getStyles(props: RequiredPickIGroupShowAll): IGroupShowAllStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupShowAllStyles]
 }

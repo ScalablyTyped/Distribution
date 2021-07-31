@@ -11,8 +11,8 @@ native js function for hashing messages with SHA-1
 | Full name          | sha1 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 553 |
-| # downloads        | 5929482 |
+| # dependents       | 573 |
+| # downloads        | 5885483 |
 | # stars            | 17 |
 
 ## Links

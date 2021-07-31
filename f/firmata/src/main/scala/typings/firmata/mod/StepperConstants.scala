@@ -5,17 +5,15 @@ import typings.firmata.anon.CCW
 import typings.firmata.anon.DRIVER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepperConstants extends StObject {
   
-  var DIRECTION: CCW = js.native
+  var DIRECTION: CCW
   
-  var RUNSTATE: ACCEL = js.native
+  var RUNSTATE: ACCEL
   
-  var TYPE: DRIVER = js.native
+  var TYPE: DRIVER
 }
 object StepperConstants {
   

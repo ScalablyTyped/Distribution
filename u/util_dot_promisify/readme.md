@@ -10,9 +10,9 @@ Polyfill/shim for util.promisify in node versions < v8
 | ------------------ | :-------------: |
 | Full name          | util.promisify |
 | Keywords           | promisify, promise, util, polyfill, shim, util.promisify |
-| # releases         | 2 |
-| # dependents       | 298 |
-| # downloads        | 505668609 |
+| # releases         | 4 |
+| # dependents       | 316 |
+| # downloads        | 619333153 |
 | # stars            | 4 |
 
 ## Links

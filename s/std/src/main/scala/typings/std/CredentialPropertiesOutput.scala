@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialPropertiesOutput extends StObject {
   
-  var rk: js.UndefOr[scala.Boolean] = js.native
+  var rk: js.UndefOr[scala.Boolean] = js.undefined
 }
 object CredentialPropertiesOutput {
   

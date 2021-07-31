@@ -3,18 +3,19 @@ package typings.next
 import typings.next.anon.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontUtilsMod {
   
-  @JSImport("next/dist/next-server/server/font-utils", "getFontDefinitionFromManifest")
+  @JSImport("next/dist/next-server/server/font-utils", JSImport.Namespace)
   @js.native
-  def getFontDefinitionFromManifest(url: String, manifest: FontManifest): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("next/dist/next-server/server/font-utils", "getFontDefinitionFromNetwork")
-  @js.native
-  def getFontDefinitionFromNetwork(url: String): js.Promise[String] = js.native
+  @scala.inline
+  def getFontDefinitionFromManifest(url: String, manifest: FontManifest): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromManifest")(url.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getFontDefinitionFromNetwork(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromNetwork")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   type FontManifest = js.Array[Content]
 }

@@ -5,7 +5,6 @@ import typings.reactAriaLive.reactAriaLiveStrings.assertive
 import typings.reactAriaLive.reactAriaLiveStrings.polite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -20,14 +19,13 @@ object anon {
     def announcePolite(message: String, id: String): Unit = js.native
   }
   
-  @js.native
   trait Arialive extends StObject {
     
-    var `aria-live`: assertive | polite = js.native
+    var `aria-live`: assertive | polite
     
-    var clearOnUnmount: js.UndefOr[Boolean] = js.native
+    var clearOnUnmount: js.UndefOr[Boolean] = js.undefined
     
-    var message: String = js.native
+    var message: String
   }
   object Arialive {
     
@@ -55,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    def children(contextProps: AnnounceAssertive): ReactNode = js.native
+    def children(contextProps: AnnounceAssertive): ReactNode
   }
   object Children {
     

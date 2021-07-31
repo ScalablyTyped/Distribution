@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparisonValue extends StObject {
   
   /** Type of comparison. Possible values are LESS_THAN or GREATER_THAN. */
-  var comparisonType: js.UndefOr[String] = js.native
+  var comparisonType: js.UndefOr[String] = js.undefined
   
   /** Value used for this comparison. */
-  var comparisonValue: js.UndefOr[String] = js.native
+  var comparisonValue: js.UndefOr[String] = js.undefined
 }
 object ComparisonValue {
   

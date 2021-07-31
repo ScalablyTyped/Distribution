@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardsSubscriptionRequest extends StObject {
   
   /**
     * The ARN of the standard that you want to enable. To view the list of available standards and their ARNs, use the  DescribeStandards  operation.
     */
-  var StandardsArn: NonEmptyString = js.native
+  var StandardsArn: NonEmptyString
   
   /**
     * A key-value pair of input for the standard.
     */
-  var StandardsInput: js.UndefOr[StandardsInputParameterMap] = js.native
+  var StandardsInput: js.UndefOr[StandardsInputParameterMap] = js.undefined
 }
 object StandardsSubscriptionRequest {
   

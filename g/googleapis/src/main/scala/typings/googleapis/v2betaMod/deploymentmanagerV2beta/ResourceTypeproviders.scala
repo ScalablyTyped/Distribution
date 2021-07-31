@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Typeproviders")
@@ -31,7 +30,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTypeprovidersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTypeprovidersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTypeProvider] = js.native
   def get(callback: BodyResponseCallback[SchemaTypeProvider]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTypeProvider] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTypeProvider] = js.native
   def get(params: ParamsResourceTypeprovidersGet): GaxiosPromise[SchemaTypeProvider] = js.native
   def get(params: ParamsResourceTypeprovidersGet, callback: BodyResponseCallback[SchemaTypeProvider]): Unit = js.native
   def get(
@@ -92,7 +91,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def getType(): GaxiosPromise[SchemaTypeInfo] = js.native
   def getType(callback: BodyResponseCallback[SchemaTypeInfo]): Unit = js.native
-  def getType(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTypeInfo] = js.native
+  def getType(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTypeInfo] = js.native
   def getType(params: ParamsResourceTypeprovidersGettype): GaxiosPromise[SchemaTypeInfo] = js.native
   def getType(params: ParamsResourceTypeprovidersGettype, callback: BodyResponseCallback[SchemaTypeInfo]): Unit = js.native
   def getType(
@@ -122,7 +121,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTypeprovidersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTypeprovidersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -155,7 +154,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTypeProvidersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTypeProvidersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTypeProvidersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTypeProvidersListResponse] = js.native
   def list(params: ParamsResourceTypeprovidersList): GaxiosPromise[SchemaTypeProvidersListResponse] = js.native
   def list(
     params: ParamsResourceTypeprovidersList,
@@ -192,7 +191,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def listTypes(): GaxiosPromise[SchemaTypeProvidersListTypesResponse] = js.native
   def listTypes(callback: BodyResponseCallback[SchemaTypeProvidersListTypesResponse]): Unit = js.native
-  def listTypes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTypeProvidersListTypesResponse] = js.native
+  def listTypes(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTypeProvidersListTypesResponse] = js.native
   def listTypes(params: ParamsResourceTypeprovidersListtypes): GaxiosPromise[SchemaTypeProvidersListTypesResponse] = js.native
   def listTypes(
     params: ParamsResourceTypeprovidersListtypes,
@@ -226,7 +225,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceTypeprovidersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceTypeprovidersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -257,7 +256,7 @@ class ResourceTypeproviders protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceTypeprovidersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceTypeprovidersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

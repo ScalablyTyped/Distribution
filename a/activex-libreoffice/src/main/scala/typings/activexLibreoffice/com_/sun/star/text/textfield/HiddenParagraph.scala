@@ -12,25 +12,25 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a hidden paragraph field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait HiddenParagraph extends TextField_ {
+trait HiddenParagraph
+  extends StObject
+     with TextField_ {
   
   /** contains the condition. */
-  var Condition: String = js.native
+  var Condition: String
   
   /**
     * contains the result of the last evaluation of the condition.
     *
     * This property has to be read/written in file export/import to save and restore the result without initiation of a new evaluation.
     */
-  var IsHidden: Boolean = js.native
+  var IsHidden: Boolean
 }
 object HiddenParagraph {
   

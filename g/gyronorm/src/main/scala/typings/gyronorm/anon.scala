@@ -2,21 +2,19 @@ package typings.gyronorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Absolute extends StObject {
     
-    var absolute: Double = js.native
+    var absolute: Double
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var beta: Double = js.native
+    var beta: Double
     
-    var gamma: Double = js.native
+    var gamma: Double
   }
   object Absolute {
     
@@ -43,26 +41,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Alpha extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var beta: Double = js.native
+    var beta: Double
     
-    var gamma: Double = js.native
+    var gamma: Double
     
-    var gx: Double = js.native
+    var gx: Double
     
-    var gy: Double = js.native
+    var gy: Double
     
-    var gz: Double = js.native
+    var gz: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object Alpha {
     

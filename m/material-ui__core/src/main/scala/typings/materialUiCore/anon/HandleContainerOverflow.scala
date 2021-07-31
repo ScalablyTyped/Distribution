@@ -2,15 +2,13 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleContainerOverflow extends StObject {
   
-  var handleContainerOverflow: js.UndefOr[Boolean] = js.native
+  var handleContainerOverflow: js.UndefOr[Boolean] = js.undefined
   
-  var hideSiblingNodes: js.UndefOr[Boolean] = js.native
+  var hideSiblingNodes: js.UndefOr[Boolean] = js.undefined
 }
 object HandleContainerOverflow {
   

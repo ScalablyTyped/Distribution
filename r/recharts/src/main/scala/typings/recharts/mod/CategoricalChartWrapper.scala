@@ -4,59 +4,57 @@ import typings.react.mod.ReactNode
 import typings.recharts.anon.PartialMargin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoricalChartWrapper[L] extends StObject {
   
-  var barCategoryGap: js.UndefOr[Double | String] = js.native
+  var barCategoryGap: js.UndefOr[Double | String] = js.undefined
   
-  var barGap: js.UndefOr[Double | String] = js.native
+  var barGap: js.UndefOr[Double | String] = js.undefined
   
-  var barSize: js.UndefOr[Double | String] = js.native
+  var barSize: js.UndefOr[Double | String] = js.undefined
   
-  var baseValue: js.UndefOr[BaseValueType] = js.native
+  var baseValue: js.UndefOr[BaseValueType] = js.undefined
   
-  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.native
+  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var layout: js.UndefOr[L] = js.native
+  var layout: js.UndefOr[L] = js.undefined
   
-  var margin: js.UndefOr[PartialMargin] = js.native
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   
-  var maxBarSize: js.UndefOr[Double] = js.native
+  var maxBarSize: js.UndefOr[Double] = js.undefined
   
-  var onClick: js.UndefOr[RechartsFunction] = js.native
+  var onClick: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseDown: js.UndefOr[RechartsFunction] = js.native
+  var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseEnter: js.UndefOr[RechartsFunction] = js.native
+  var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseLeave: js.UndefOr[RechartsFunction] = js.native
+  var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseMove: js.UndefOr[RechartsFunction] = js.native
+  var onMouseMove: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseUp: js.UndefOr[RechartsFunction] = js.native
+  var onMouseUp: js.UndefOr[RechartsFunction] = js.undefined
   
-  var reverseStackOrder: js.UndefOr[Boolean] = js.native
+  var reverseStackOrder: js.UndefOr[Boolean] = js.undefined
   
-  var stackOffset: js.UndefOr[StackOffsetType] = js.native
+  var stackOffset: js.UndefOr[StackOffsetType] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var syncId: js.UndefOr[String | Double] = js.native
+  var syncId: js.UndefOr[String | Double] = js.undefined
   
-  var throttleDelay: js.UndefOr[Double] = js.native
+  var throttleDelay: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CategoricalChartWrapper {
   
@@ -67,7 +65,7 @@ object CategoricalChartWrapper {
   }
   
   @scala.inline
-  implicit class CategoricalChartWrapperMutableBuilder[Self <: CategoricalChartWrapper[_], L] (val x: Self with CategoricalChartWrapper[L]) extends AnyVal {
+  implicit class CategoricalChartWrapperMutableBuilder[Self <: CategoricalChartWrapper[?], L] (val x: Self & CategoricalChartWrapper[L]) extends AnyVal {
     
     @scala.inline
     def setBarCategoryGap(value: Double | String): Self = StObject.set(x, "barCategoryGap", value.asInstanceOf[js.Any])
@@ -148,37 +146,37 @@ object CategoricalChartWrapper {
     def setMaxBarSizeUndefined: Self = StObject.set(x, "maxBarSize", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: RechartsFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnMouseDown(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseDown(value: RechartsFunction): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: RechartsFunction): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: RechartsFunction): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: RechartsFunction): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def setOnMouseUp(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    def setOnMouseUp(value: RechartsFunction): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)

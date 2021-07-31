@@ -3,45 +3,43 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the property values for a PlayReady-ND transmitter certificate. */
-@js.native
 trait INDTransmitterProperties extends StObject {
   
   /** Gets the certificate type for the transmitter. */
-  var certificateType: NDCertificateType = js.native
+  var certificateType: NDCertificateType
   
   /** Gets the client identifier from the transmitter certificate. */
-  var clientID: Double = js.native
+  var clientID: Double
   
   /** Gets the expiration date and time from the transmitter certificate. */
-  var expirationDate: Date = js.native
+  var expirationDate: Date
   
   /** Gets the model digest from a transmitter certificate. */
-  var modelDigest: Double = js.native
+  var modelDigest: Double
   
   /** Gets the model manufacturer name from a transmitter certificate. */
-  var modelManufacturerName: String = js.native
+  var modelManufacturerName: String
   
   /** Gets the model name from a transmitter certificate. */
-  var modelName: String = js.native
+  var modelName: String
   
   /** Gets the model number from a transmitter certificate. */
-  var modelNumber: String = js.native
+  var modelNumber: String
   
   /** Gets the platform identifier from a transmitter certificate. */
-  var platformIdentifier: NDCertificatePlatformID = js.native
+  var platformIdentifier: NDCertificatePlatformID
   
   /** Gets the security level from a transmitter certificate. */
-  var securityLevel: Double = js.native
+  var securityLevel: Double
   
   /** Gets the security version from a transmitter certificate. */
-  var securityVersion: Double = js.native
+  var securityVersion: Double
   
   /** Gets the list of supported features from the transmitter certificate. */
-  var supportedFeatures: NDCertificateFeature = js.native
+  var supportedFeatures: NDCertificateFeature
 }
 object INDTransmitterProperties {
   

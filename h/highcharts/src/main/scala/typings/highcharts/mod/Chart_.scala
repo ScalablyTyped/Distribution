@@ -5,7 +5,6 @@ import typings.highcharts.boostMod.highchartsAugmentingMod.Chart
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Chart")
@@ -76,37 +75,17 @@ class Chart_ protected () extends StObject {
     * @return The newly generated Axis object.
     */
   def addAxis(options: AxisOptions): Axis = js.native
-  def addAxis(
-    options: AxisOptions,
-    isX: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Axis = js.native
-  def addAxis(
-    options: AxisOptions,
-    isX: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Axis = js.native
-  def addAxis(options: AxisOptions, isX: js.UndefOr[scala.Nothing], redraw: Boolean): Axis = js.native
-  def addAxis(options: AxisOptions, isX: js.UndefOr[scala.Nothing], redraw: Boolean, animation: Boolean): Axis = js.native
-  def addAxis(
-    options: AxisOptions,
-    isX: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Axis = js.native
   def addAxis(options: AxisOptions, isX: Boolean): Axis = js.native
-  def addAxis(options: AxisOptions, isX: Boolean, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Axis = js.native
-  def addAxis(
-    options: AxisOptions,
-    isX: Boolean,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Axis = js.native
   def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean): Axis = js.native
   def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
   def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: PartialAnimationOptionsOb): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean, redraw: Unit, animation: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Boolean, redraw: Unit, animation: PartialAnimationOptionsOb): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Unit, redraw: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Unit, redraw: Boolean, animation: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Unit, redraw: Unit, animation: Boolean): Axis = js.native
+  def addAxis(options: AxisOptions, isX: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Axis = js.native
   
   /**
     * Add a color axis to the chart after render time. Note that this method
@@ -127,11 +106,11 @@ class Chart_ protected () extends StObject {
     * @return The newly generated Axis object.
     */
   def addColorAxis(options: ColorAxisOptions): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: js.UndefOr[scala.Nothing], animation: Boolean): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): ColorAxis = js.native
   def addColorAxis(options: ColorAxisOptions, redraw: Boolean): ColorAxis = js.native
   def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: Boolean): ColorAxis = js.native
   def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: PartialAnimationOptionsOb): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: Boolean): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: PartialAnimationOptionsOb): ColorAxis = js.native
   
   /**
     * Set a new credits label for the chart.
@@ -165,15 +144,11 @@ class Chart_ protected () extends StObject {
     * @fires Highcharts.Chart#afterAddSeries
     */
   def addSeries(options: SeriesOptionsType): Series = js.native
-  def addSeries(options: SeriesOptionsType, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Series = js.native
-  def addSeries(
-    options: SeriesOptionsType,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Series = js.native
   def addSeries(options: SeriesOptionsType, redraw: Boolean): Series = js.native
   def addSeries(options: SeriesOptionsType, redraw: Boolean, animation: Boolean): Series = js.native
   def addSeries(options: SeriesOptionsType, redraw: Boolean, animation: PartialAnimationOptionsOb): Series = js.native
+  def addSeries(options: SeriesOptionsType, redraw: Unit, animation: Boolean): Series = js.native
+  def addSeries(options: SeriesOptionsType, redraw: Unit, animation: PartialAnimationOptionsOb): Series = js.native
   
   /**
     * Add a series to the chart as drilldown from a specific point in the
@@ -303,7 +278,7 @@ class Chart_ protected () extends StObject {
     *        for export only.
     */
   def exportChartLocal(): Unit = js.native
-  def exportChartLocal(exportingOptions: js.UndefOr[scala.Nothing], chartOptions: Options): Unit = js.native
+  def exportChartLocal(exportingOptions: Unit, chartOptions: Options): Unit = js.native
   def exportChartLocal(exportingOptions: ExportingOptions): Unit = js.native
   def exportChartLocal(exportingOptions: ExportingOptions, chartOptions: Options): Unit = js.native
   
@@ -332,7 +307,7 @@ class Chart_ protected () extends StObject {
   def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.MapCoordinateObject): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
   def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
   
-  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ js.Any) = js.native
+  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ js.Any) = js.native
   
   /**
     * Get an axis, series or point object by `id` as given in the configuration
@@ -547,7 +522,7 @@ class Chart_ protected () extends StObject {
     *
     * @return The formatted string.
     */
-  def langFormat(langKey: String, context: Dictionary[_]): String = js.native
+  def langFormat(langKey: String, context: Dictionary[js.Any]): String = js.native
   
   /**
     * The overview of the chart's series.
@@ -579,156 +554,46 @@ class Chart_ protected () extends StObject {
     *        Fix the zoom to this position if possible.
     */
   def mapZoom(): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: js.UndefOr[scala.Nothing], centerY: Double): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: Double,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: Double,
-    mouseX: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: Double,
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: Double,
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: Double,
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: Double,
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double, centerY: Double): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: Double,
-    centerY: Double,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(
-    howMuch: js.UndefOr[scala.Nothing],
-    centerX: Double,
-    centerY: Double,
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
   def mapZoom(howMuch: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double
-  ): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: js.UndefOr[scala.Nothing], centerY: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: Double,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: js.UndefOr[scala.Nothing], centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: js.UndefOr[scala.Nothing],
-    centerY: Double,
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: Double,
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: js.UndefOr[scala.Nothing], mouseX: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: Double,
-    centerY: js.UndefOr[scala.Nothing],
-    mouseX: Double,
-    mouseY: Double
-  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double): Unit = js.native
-  def mapZoom(
-    howMuch: Double,
-    centerX: Double,
-    centerY: Double,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: Double
-  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
   
   /**
     * Callback function to override the default function that formats all the
     * numbers in the chart. Returns a string with the formatted number.
     */
   def numberFormatter(number: Double, decimals: Double): String = js.native
-  def numberFormatter(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
   def numberFormatter(number: Double, decimals: Double, decimalPoint: String): String = js.native
   def numberFormatter(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
+  def numberFormatter(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = js.native
   /**
     * Callback function to override the default function that formats all the
     * numbers in the chart. Returns a string with the formatted number.
@@ -798,7 +663,7 @@ class Chart_ protected () extends StObject {
     * These properties require a full reflow of chart elements, best
     * implemented through running `Chart.setSize` internally (#8190).
     */
-  var propsRequireReflow: js.Array[_] = js.native
+  var propsRequireReflow: js.Array[js.Any] = js.native
   
   /**
     * These properties cause all series to be updated when updating. Can be
@@ -936,32 +801,28 @@ class Chart_ protected () extends StObject {
     * @fires Highcharts.Chart#resize
     */
   def setSize(): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def setSize(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double, animation: Boolean): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Double, animation: PartialAnimationOptionsOb): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Null, animation: Boolean): Unit = js.native
-  def setSize(width: js.UndefOr[scala.Nothing], height: Null, animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Double): Unit = js.native
-  def setSize(width: Double, height: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def setSize(width: Double, height: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Double, height: Double): Unit = js.native
   def setSize(width: Double, height: Double, animation: Boolean): Unit = js.native
   def setSize(width: Double, height: Double, animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Double, height: Null, animation: Boolean): Unit = js.native
   def setSize(width: Double, height: Null, animation: PartialAnimationOptionsOb): Unit = js.native
-  def setSize(width: Null, height: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def setSize(width: Null, height: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
+  def setSize(width: Double, height: Unit, animation: Boolean): Unit = js.native
+  def setSize(width: Double, height: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Null, height: Double): Unit = js.native
   def setSize(width: Null, height: Double, animation: Boolean): Unit = js.native
   def setSize(width: Null, height: Double, animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Null, height: Null, animation: Boolean): Unit = js.native
   def setSize(width: Null, height: Null, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setSize(width: Null, height: Unit, animation: Boolean): Unit = js.native
+  def setSize(width: Null, height: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setSize(width: Unit, height: Double): Unit = js.native
+  def setSize(width: Unit, height: Double, animation: Boolean): Unit = js.native
+  def setSize(width: Unit, height: Double, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setSize(width: Unit, height: Null, animation: Boolean): Unit = js.native
+  def setSize(width: Unit, height: Null, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setSize(width: Unit, height: Unit, animation: Boolean): Unit = js.native
+  def setSize(width: Unit, height: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
   def setSonifyCursor(points: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.Point]): Unit = js.native
   /**
@@ -1000,15 +861,11 @@ class Chart_ protected () extends StObject {
     *        `chart.redraw()`.
     */
   def setTitle(): Unit = js.native
-  def setTitle(
-    titleOptions: js.UndefOr[scala.Nothing],
-    subtitleOptions: js.UndefOr[scala.Nothing],
-    redraw: Boolean
-  ): Unit = js.native
-  def setTitle(titleOptions: js.UndefOr[scala.Nothing], subtitleOptions: SubtitleOptions): Unit = js.native
-  def setTitle(titleOptions: js.UndefOr[scala.Nothing], subtitleOptions: SubtitleOptions, redraw: Boolean): Unit = js.native
+  def setTitle(titleOptions: Unit, subtitleOptions: Unit, redraw: Boolean): Unit = js.native
+  def setTitle(titleOptions: Unit, subtitleOptions: SubtitleOptions): Unit = js.native
+  def setTitle(titleOptions: Unit, subtitleOptions: SubtitleOptions, redraw: Boolean): Unit = js.native
   def setTitle(titleOptions: TitleOptions): Unit = js.native
-  def setTitle(titleOptions: TitleOptions, subtitleOptions: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
+  def setTitle(titleOptions: TitleOptions, subtitleOptions: Unit, redraw: Boolean): Unit = js.native
   def setTitle(titleOptions: TitleOptions, subtitleOptions: SubtitleOptions): Unit = js.native
   def setTitle(titleOptions: TitleOptions, subtitleOptions: SubtitleOptions, redraw: Boolean): Unit = js.native
   
@@ -1151,37 +1008,17 @@ class Chart_ protected () extends StObject {
     * @fires Highcharts.Chart#afterUpdate
     */
   def update(options: Options): Unit = js.native
-  def update(
-    options: Options,
-    redraw: js.UndefOr[scala.Nothing],
-    oneToOne: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Unit = js.native
-  def update(
-    options: Options,
-    redraw: js.UndefOr[scala.Nothing],
-    oneToOne: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def update(options: Options, redraw: js.UndefOr[scala.Nothing], oneToOne: Boolean): Unit = js.native
-  def update(options: Options, redraw: js.UndefOr[scala.Nothing], oneToOne: Boolean, animation: Boolean): Unit = js.native
-  def update(
-    options: Options,
-    redraw: js.UndefOr[scala.Nothing],
-    oneToOne: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
   def update(options: Options, redraw: Boolean): Unit = js.native
-  def update(options: Options, redraw: Boolean, oneToOne: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def update(
-    options: Options,
-    redraw: Boolean,
-    oneToOne: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
   def update(options: Options, redraw: Boolean, oneToOne: Boolean): Unit = js.native
   def update(options: Options, redraw: Boolean, oneToOne: Boolean, animation: Boolean): Unit = js.native
   def update(options: Options, redraw: Boolean, oneToOne: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def update(options: Options, redraw: Boolean, oneToOne: Unit, animation: Boolean): Unit = js.native
+  def update(options: Options, redraw: Boolean, oneToOne: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def update(options: Options, redraw: Unit, oneToOne: Boolean): Unit = js.native
+  def update(options: Options, redraw: Unit, oneToOne: Boolean, animation: Boolean): Unit = js.native
+  def update(options: Options, redraw: Unit, oneToOne: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def update(options: Options, redraw: Unit, oneToOne: Unit, animation: Boolean): Unit = js.native
+  def update(options: Options, redraw: Unit, oneToOne: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
   /**
     * The original options given to the constructor or a chart factory like

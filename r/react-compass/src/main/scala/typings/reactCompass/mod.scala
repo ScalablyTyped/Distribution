@@ -3,10 +3,13 @@ package typings.reactCompass
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-compass", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-compass", JSImport.Default)
   @js.native
@@ -31,20 +34,17 @@ object mod {
     def this(props: ReactCompassProps, context: js.Any) = this()
   }
   
-  @JSImport("react-compass", "directionName")
-  @js.native
-  def directionName(dir: Double): String = js.native
+  @scala.inline
+  def directionName(dir: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directionName")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-compass", "normalizeAngle")
-  @js.native
-  def normalizeAngle(direction: Double): Double = js.native
+  @scala.inline
+  def normalizeAngle(direction: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAngle")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait ReactCompassProps extends StObject {
     
-    var direction: Double = js.native
+    var direction: Double
     
-    var directionNames: js.UndefOr[js.Array[String]] = js.native
+    var directionNames: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ReactCompassProps {
     

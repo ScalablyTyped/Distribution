@@ -6,14 +6,13 @@ import typings.react.mod.SVGProps
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagramMod {
   
   @JSImport("grommet/components/Diagram", "Diagram")
   @js.native
-  val Diagram: FC[DiagramProps with SVGProps[SVGSVGElement]] = js.native
+  val Diagram: FC[DiagramProps & SVGProps[SVGSVGElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.center
@@ -51,10 +50,9 @@ object diagramMod {
     def rectilinear: typings.grommet.grommetStrings.rectilinear = "rectilinear".asInstanceOf[typings.grommet.grommetStrings.rectilinear]
   }
   
-  @js.native
   trait DiagramProps extends StObject {
     
-    var connections: js.Array[Anchor] = js.native
+    var connections: js.Array[Anchor]
   }
   object DiagramProps {
     

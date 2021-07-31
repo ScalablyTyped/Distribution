@@ -4,27 +4,25 @@ import typings.diff.mod.Callback
 import typings.diff.mod.Change
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined diff.diff.ArrayOptions<any, any> & std.Partial<diff.diff.CallbackOptions> */
-  @js.native
   trait ArrayOptionsanyanyPartial extends StObject {
     
-    var callback: js.UndefOr[Callback] = js.native
+    var callback: js.UndefOr[Callback] = js.undefined
     
     /**
       * Comparator for custom equality checks.
       */
-    var comparator: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]] = js.native
+    var comparator: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]] = js.undefined
     
     /**
       * `true` to ignore casing difference.
       * @default false
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
   }
   object ArrayOptionsanyanyPartial {
     
@@ -38,7 +36,7 @@ object anon {
     implicit class ArrayOptionsanyanyPartialMutableBuilder[Self <: ArrayOptionsanyanyPartial] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: (/* err */ js.UndefOr[scala.Nothing], /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -57,10 +55,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Strict extends StObject {
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Strict {
     

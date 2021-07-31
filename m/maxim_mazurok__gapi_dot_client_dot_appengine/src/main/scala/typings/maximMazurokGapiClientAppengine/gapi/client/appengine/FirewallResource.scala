@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallResource extends StObject {
   
-  var ingressRules: IngressRulesResource = js.native
+  var ingressRules: IngressRulesResource
 }
 object FirewallResource {
   

@@ -2,24 +2,22 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLDataTransfer extends StObject {
   
   @JSName("MSHTML.IHTMLDataTransfer_typekey")
-  var MSHTMLDotIHTMLDataTransfer_typekey: IHTMLDataTransfer = js.native
+  var MSHTMLDotIHTMLDataTransfer_typekey: IHTMLDataTransfer
   
-  def clearData(format: String): Boolean = js.native
+  def clearData(format: String): Boolean
   
-  var dropEffect: String = js.native
+  var dropEffect: String
   
-  var effectAllowed: String = js.native
+  var effectAllowed: String
   
-  def getData(format: String): js.Any = js.native
+  def getData(format: String): js.Any
   
-  def setData(format: String, data: js.Any): Boolean = js.native
+  def setData(format: String, data: js.Any): Boolean
 }
 object IHTMLDataTransfer {
   

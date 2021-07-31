@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analyticsreporting/v4", "analyticsreporting_v4.Resource$Reports")
@@ -28,7 +27,7 @@ class ResourceReports protected () extends StObject {
     */
   def batchGet(): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaGetReportsResponse]): Unit = js.native
-  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetReportsResponse] = js.native
+  def batchGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(params: ParamsResourceReportsBatchget): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(params: ParamsResourceReportsBatchget, callback: BodyResponseCallback[SchemaGetReportsResponse]): Unit = js.native
   def batchGet(

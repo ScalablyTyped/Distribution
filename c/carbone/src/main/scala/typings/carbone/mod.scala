@@ -7,75 +7,65 @@ import typings.node.NodeJS.ErrnoException
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("carbone", "addFormatters")
+  @JSImport("carbone", JSImport.Namespace)
   @js.native
-  def addFormatters(customFormatters: Formatters): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("carbone", "addTemplate")
-  @js.native
-  def addTemplate(fileId: String, data: String, callback: VoidCallback): Unit = js.native
-  @JSImport("carbone", "addTemplate")
-  @js.native
-  def addTemplate(fileId: String, data: Buffer, callback: VoidCallback): Unit = js.native
+  @scala.inline
+  def addFormatters(customFormatters: Formatters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFormatters")(customFormatters.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("carbone", "convert")
-  @js.native
-  def convert(data: Buffer, convertTo: String, callback: ConvertCallback): Unit = js.native
-  @JSImport("carbone", "convert")
-  @js.native
-  def convert(data: Buffer, convertTo: String, options: js.Object, callback: ConvertCallback): Unit = js.native
+  @scala.inline
+  def addTemplate(fileId: String, data: String, callback: VoidCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTemplate")(fileId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addTemplate(fileId: String, data: Buffer, callback: VoidCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTemplate")(fileId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("carbone", "listConversionFormats")
-  @js.native
-  def listConversionFormats(documentType: DocumentType): js.Array[ConversionFormat] = js.native
+  @scala.inline
+  def convert(data: Buffer, convertTo: String, callback: ConvertCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], convertTo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def convert(data: Buffer, convertTo: String, options: js.Object, callback: ConvertCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], convertTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("carbone", "removeTemplate")
-  @js.native
-  def removeTemplate(fileId: String, callback: VoidCallback): Unit = js.native
+  @scala.inline
+  def listConversionFormats(documentType: DocumentType): js.Array[ConversionFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("listConversionFormats")(documentType.asInstanceOf[js.Any]).asInstanceOf[js.Array[ConversionFormat]]
   
-  @JSImport("carbone", "render")
-  @js.native
-  def render(templatePath: String, data: js.Object, callback: RenderCallback): Unit = js.native
-  @JSImport("carbone", "render")
-  @js.native
-  def render(templatePath: String, data: js.Object, options: RenderOptions, callback: RenderCallback): Unit = js.native
+  @scala.inline
+  def removeTemplate(fileId: String, callback: VoidCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTemplate")(fileId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("carbone", "renderXML")
-  @js.native
-  def renderXML(xml: String, data: js.Object, callback: RenderXMLCallback): Unit = js.native
-  @JSImport("carbone", "renderXML")
-  @js.native
-  def renderXML(xml: String, data: js.Object, options: RenderXMLOptions, callback: RenderXMLCallback): Unit = js.native
+  @scala.inline
+  def render(templatePath: String, data: js.Object, callback: RenderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templatePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def render(templatePath: String, data: js.Object, options: RenderOptions, callback: RenderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templatePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("carbone", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def renderXML(xml: String, data: js.Object, callback: RenderXMLCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderXML")(xml.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def renderXML(xml: String, data: js.Object, options: RenderXMLOptions, callback: RenderXMLCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderXML")(xml.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("carbone", "set")
-  @js.native
-  def set(options: Options): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def set(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ConversionFormat extends StObject {
     
-    var desc: String = js.native
+    var desc: String
     
-    var extension: String = js.native
+    var `extension`: String
     
-    var format: String = js.native
+    var format: String
     
-    var id: String = js.native
+    var id: String
   }
   object ConversionFormat {
     
     @scala.inline
-    def apply(desc: String, extension: String, format: String, id: String): ConversionFormat = {
-      val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    def apply(desc: String, `extension`: String, format: String, id: String): ConversionFormat = {
+      val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConversionFormat]
     }
     
@@ -128,26 +118,31 @@ object mod {
   
   type Enums = StringDictionary[js.Array[String] | StringDictionary[String]]
   
-  type Formatter = js.ThisFunction2[/* this */ FormatterContext, /* data */ js.Any, /* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Formatter extends StObject {
+    
+    def apply(data: js.Any, params: js.Any*): Unit = js.native
+  }
+  
   trait FormatterContext extends StObject {
     
-    var currency: Rates = js.native
+    var currency: Rates
     
-    var enum: Enums = js.native
+    var `enum`: Enums
     
-    var extension: String = js.native
+    var `extension`: String
     
-    var lang: String = js.native
+    var lang: String
     
-    var stopPropagation: Boolean = js.native
+    var stopPropagation: Boolean
   }
   object FormatterContext {
     
     @scala.inline
-    def apply(currency: Rates, enum: Enums, extension: String, lang: String, stopPropagation: Boolean): FormatterContext = {
-      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any])
+    def apply(currency: Rates, `enum`: Enums, `extension`: String, lang: String, stopPropagation: Boolean): FormatterContext = {
+      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any])
+      __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatterContext]
     }
     
@@ -173,22 +168,21 @@ object mod {
   
   type Formatters = StringDictionary[Formatter]
   
-  @js.native
   trait Options extends StObject {
     
-    var currencyRates: js.UndefOr[CurrencyRates] = js.native
+    var currencyRates: js.UndefOr[CurrencyRates] = js.undefined
     
-    var currencySource: js.UndefOr[String] = js.native
+    var currencySource: js.UndefOr[String] = js.undefined
     
-    var currencyTarget: js.UndefOr[String] = js.native
+    var currencyTarget: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var tempPath: js.UndefOr[String] = js.native
+    var tempPath: js.UndefOr[String] = js.undefined
     
-    var templatePath: js.UndefOr[String] = js.native
+    var templatePath: js.UndefOr[String] = js.undefined
     
-    var translations: js.UndefOr[Translations] = js.native
+    var translations: js.UndefOr[Translations] = js.undefined
   }
   object Options {
     
@@ -252,26 +246,25 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var complement: js.UndefOr[js.Object] = js.native
+    var complement: js.UndefOr[js.Object] = js.undefined
     
-    var convertTo: js.UndefOr[String | js.Object] = js.native
+    var convertTo: js.UndefOr[String | js.Object] = js.undefined
     
-    var currencyRates: js.UndefOr[CurrencyRates] = js.native
+    var currencyRates: js.UndefOr[CurrencyRates] = js.undefined
     
-    var currencySource: js.UndefOr[String] = js.native
+    var currencySource: js.UndefOr[String] = js.undefined
     
-    var currencyTarget: js.UndefOr[String] = js.native
+    var currencyTarget: js.UndefOr[String] = js.undefined
     
-    var enum: js.UndefOr[Enums] = js.native
+    var `enum`: js.UndefOr[Enums] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var translations: js.UndefOr[Translations] = js.native
+    var translations: js.UndefOr[Translations] = js.undefined
     
-    var variableStr: js.UndefOr[String] = js.native
+    var variableStr: js.UndefOr[String] = js.undefined
   }
   object RenderOptions {
     
@@ -342,20 +335,19 @@ object mod {
   
   type RenderXMLCallback = js.Function2[/* err */ ErrnoException | Null, /* xmlResult */ String, Unit]
   
-  @js.native
   trait RenderXMLOptions extends StObject {
     
-    var complement: js.UndefOr[js.Object] = js.native
+    var complement: js.UndefOr[js.Object] = js.undefined
     
-    var existingVariables: js.UndefOr[js.Array[Variable]] = js.native
+    var existingVariables: js.UndefOr[js.Array[Variable]] = js.undefined
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var formatters: js.UndefOr[Formatters] = js.native
+    var formatters: js.UndefOr[Formatters] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var translations: js.UndefOr[Translations] = js.native
+    var translations: js.UndefOr[Translations] = js.undefined
   }
   object RenderXMLOptions {
     
@@ -411,14 +403,13 @@ object mod {
   
   type Translations = StringDictionary[StringDictionary[String]]
   
-  @js.native
   trait Variable extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var name: String = js.native
+    var name: String
     
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Variable {
     

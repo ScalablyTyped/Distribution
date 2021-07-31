@@ -2,14 +2,12 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'image'> */
-@js.native
 trait FlipLeftRightInputs extends StObject {
   
-  var image: js.UndefOr[js.Any] = js.native
+  var image: js.UndefOr[js.Any] = js.undefined
 }
 object FlipLeftRightInputs {
   

@@ -4,34 +4,34 @@ import typings.parameter.parameterStrings.password
 import typings.parameter.parameterStrings.passwordQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<parameter.parameter.ParameterRuleString, 'type' | 'format'> */
-@js.native
-trait ParameterRulePassword extends _ParameterRuleItem {
+trait ParameterRulePassword
+  extends StObject
+     with _ParameterRuleItem {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var compare: js.UndefOr[String] = js.native
+  var compare: js.UndefOr[String] = js.undefined
   
-  var convertType: js.UndefOr[ParameterConvertType] = js.native
+  var convertType: js.UndefOr[ParameterConvertType] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: password | passwordQuestionmark = js.native
+  var `type`: password | passwordQuestionmark
   
-  var widelyUndefined: js.UndefOr[Boolean] = js.native
+  var widelyUndefined: js.UndefOr[Boolean] = js.undefined
 }
 object ParameterRulePassword {
   

@@ -2,19 +2,17 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLInterfaceTypeConfig extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap = js.native
+  var fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap
   
-  var name: String = js.native
+  var name: String
   
-  var resolveType: js.UndefOr[GraphQLTypeResolveFn] = js.native
+  var resolveType: js.UndefOr[GraphQLTypeResolveFn] = js.undefined
 }
 object GraphQLInterfaceTypeConfig {
   

@@ -11,8 +11,8 @@ Tiny Module for emitting folding syntax for Travis CI output
 | Full name          | travis-fold |
 | Keywords           | travis, travis-ci, folding |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 216132 |
+| # dependents       | 5 |
+| # downloads        | 209643 |
 | # stars            | 0 |
 
 ## Links

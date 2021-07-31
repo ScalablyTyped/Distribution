@@ -2,18 +2,16 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bounding polygon for the detected image annotation.
   */
-@js.native
 trait SchemaBoundingPoly extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var vertices: js.UndefOr[js.Array[SchemaVertex]] = js.native
+  var vertices: js.UndefOr[js.Array[SchemaVertex]] = js.undefined
 }
 object SchemaBoundingPoly {
   

@@ -2,298 +2,298 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
+trait AllHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var default: js.UndefOr[Boolean | String] = js.native
+  var default: js.UndefOr[Boolean | String] = js.undefined
   
   // Standard HTML Attributes
-  var accept: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.undefined
   
-  var `accept-charset`: js.UndefOr[String] = js.native
+  var `accept-charset`: js.UndefOr[String] = js.undefined
   
-  var acceptCharset: js.UndefOr[String] = js.native
+  var acceptCharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var allowFullScreen: js.UndefOr[Boolean] = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var allowTransparency: js.UndefOr[Boolean] = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.undefined
   
-  var allowfullscreen: js.UndefOr[Boolean | String] = js.native
+  var allowfullscreen: js.UndefOr[Boolean | String] = js.undefined
   
-  var allowtransparency: js.UndefOr[Boolean | String] = js.native
+  var allowtransparency: js.UndefOr[Boolean | String] = js.undefined
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var as: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.undefined
   
-  var async: js.UndefOr[Boolean | String] = js.native
+  var async: js.UndefOr[Boolean | String] = js.undefined
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var autocomplete: js.UndefOr[String] = js.native
+  var autocomplete: js.UndefOr[String] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean | String] = js.native
+  var autofocus: js.UndefOr[Boolean | String] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean | String] = js.native
+  var autoplay: js.UndefOr[Boolean | String] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.native
+  var capture: js.UndefOr[Boolean | String] = js.undefined
   
-  var cellPadding: js.UndefOr[Double | String] = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.undefined
   
-  var cellSpacing: js.UndefOr[Double | String] = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.undefined
   
-  var cellpadding: js.UndefOr[Double | String] = js.native
+  var cellpadding: js.UndefOr[Double | String] = js.undefined
   
-  var cellspacing: js.UndefOr[Double | String] = js.native
+  var cellspacing: js.UndefOr[Double | String] = js.undefined
   
-  var challenge: js.UndefOr[String] = js.native
+  var challenge: js.UndefOr[String] = js.undefined
   
-  var charSet: js.UndefOr[String] = js.native
+  var charSet: js.UndefOr[String] = js.undefined
   
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
-  var checked: js.UndefOr[Boolean | String] = js.native
+  var checked: js.UndefOr[Boolean | String] = js.undefined
   
-  var cite: js.UndefOr[String] = js.native
+  var cite: js.UndefOr[String] = js.undefined
   
-  var classID: js.UndefOr[String] = js.native
+  var classID: js.UndefOr[String] = js.undefined
   
-  var classid: js.UndefOr[String] = js.native
+  var classid: js.UndefOr[String] = js.undefined
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var cols: js.UndefOr[Double | String] = js.native
+  var cols: js.UndefOr[Double | String] = js.undefined
   
-  var colspan: js.UndefOr[Double | String] = js.native
+  var colspan: js.UndefOr[Double | String] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var controls: js.UndefOr[Boolean | String] = js.native
+  var controls: js.UndefOr[Boolean | String] = js.undefined
   
-  var coords: js.UndefOr[String] = js.native
+  var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var dateTime: js.UndefOr[String] = js.native
+  var dateTime: js.UndefOr[String] = js.undefined
   
-  var datetime: js.UndefOr[String] = js.native
+  var datetime: js.UndefOr[String] = js.undefined
   
-  var defer: js.UndefOr[Boolean | String] = js.native
+  var defer: js.UndefOr[Boolean | String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | String] = js.native
+  var disabled: js.UndefOr[Boolean | String] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.native
+  var download: js.UndefOr[js.Any] = js.undefined
   
-  var encType: js.UndefOr[String] = js.native
+  var encType: js.UndefOr[String] = js.undefined
   
-  var enctype: js.UndefOr[String] = js.native
+  var enctype: js.UndefOr[String] = js.undefined
   
-  var `for`: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.undefined
   
-  var formEncType: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.undefined
   
-  var formMethod: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.undefined
   
-  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.undefined
   
-  var formTarget: js.UndefOr[String] = js.native
+  var formTarget: js.UndefOr[String] = js.undefined
   
-  var formaction: js.UndefOr[String] = js.native
+  var formaction: js.UndefOr[String] = js.undefined
   
-  var formenctype: js.UndefOr[String] = js.native
+  var formenctype: js.UndefOr[String] = js.undefined
   
-  var formmethod: js.UndefOr[String] = js.native
+  var formmethod: js.UndefOr[String] = js.undefined
   
-  var formnovalidate: js.UndefOr[Boolean | String] = js.native
+  var formnovalidate: js.UndefOr[Boolean | String] = js.undefined
   
-  var formtarget: js.UndefOr[String] = js.native
+  var formtarget: js.UndefOr[String] = js.undefined
   
-  var frameBorder: js.UndefOr[Double | String] = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.undefined
   
-  var frameborder: js.UndefOr[Double | String] = js.native
+  var frameborder: js.UndefOr[Double | String] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var high: js.UndefOr[Double | String] = js.native
+  var high: js.UndefOr[Double | String] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var hrefLang: js.UndefOr[String] = js.native
+  var hrefLang: js.UndefOr[String] = js.undefined
   
-  var hreflang: js.UndefOr[String] = js.native
+  var hreflang: js.UndefOr[String] = js.undefined
   
-  var htmlFor: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.undefined
   
-  var `http-equiv`: js.UndefOr[String] = js.native
+  var `http-equiv`: js.UndefOr[String] = js.undefined
   
-  var httpEquiv: js.UndefOr[String] = js.native
+  var httpEquiv: js.UndefOr[String] = js.undefined
   
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
-  var keyParams: js.UndefOr[String] = js.native
+  var keyParams: js.UndefOr[String] = js.undefined
   
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
-  var keyparams: js.UndefOr[String] = js.native
+  var keyparams: js.UndefOr[String] = js.undefined
   
-  var keytype: js.UndefOr[String] = js.native
+  var keytype: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean | String] = js.native
+  var loop: js.UndefOr[Boolean | String] = js.undefined
   
-  var low: js.UndefOr[Double | String] = js.native
+  var low: js.UndefOr[Double | String] = js.undefined
   
-  var manifest: js.UndefOr[String] = js.native
+  var manifest: js.UndefOr[String] = js.undefined
   
-  var marginHeight: js.UndefOr[Double] = js.native
+  var marginHeight: js.UndefOr[Double] = js.undefined
   
-  var marginWidth: js.UndefOr[Double] = js.native
+  var marginWidth: js.UndefOr[Double] = js.undefined
   
-  var marginheight: js.UndefOr[Double | String] = js.native
+  var marginheight: js.UndefOr[Double | String] = js.undefined
   
-  var marginwidth: js.UndefOr[Double | String] = js.native
+  var marginwidth: js.UndefOr[Double | String] = js.undefined
   
-  var max: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double | String] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var maxlength: js.UndefOr[Double | String] = js.native
+  var maxlength: js.UndefOr[Double | String] = js.undefined
   
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
-  var mediaGroup: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.undefined
   
-  var mediagroup: js.UndefOr[String] = js.native
+  var mediagroup: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[Double | String] = js.native
+  var min: js.UndefOr[Double | String] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var minlength: js.UndefOr[Double | String] = js.native
+  var minlength: js.UndefOr[Double | String] = js.undefined
   
-  var multiple: js.UndefOr[Boolean | String] = js.native
+  var multiple: js.UndefOr[Boolean | String] = js.undefined
   
-  var muted: js.UndefOr[Boolean | String] = js.native
+  var muted: js.UndefOr[Boolean | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noValidate: js.UndefOr[Boolean] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var novalidate: js.UndefOr[Boolean | String] = js.native
+  var novalidate: js.UndefOr[Boolean | String] = js.undefined
   
-  var open: js.UndefOr[Boolean | String] = js.native
+  var open: js.UndefOr[Boolean | String] = js.undefined
   
-  var optimum: js.UndefOr[Double | String] = js.native
+  var optimum: js.UndefOr[Double | String] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var playsInline: js.UndefOr[Boolean] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean | String] = js.native
+  var playsinline: js.UndefOr[Boolean | String] = js.undefined
   
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var readonly: js.UndefOr[Boolean | String] = js.native
+  var readonly: js.UndefOr[Boolean | String] = js.undefined
   
-  var rel: js.UndefOr[String] = js.native
+  var rel: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean | String] = js.native
+  var required: js.UndefOr[Boolean | String] = js.undefined
   
-  var reversed: js.UndefOr[Boolean | String] = js.native
+  var reversed: js.UndefOr[Boolean | String] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var rows: js.UndefOr[Double | String] = js.native
+  var rows: js.UndefOr[Double | String] = js.undefined
   
-  var rowspan: js.UndefOr[Double | String] = js.native
+  var rowspan: js.UndefOr[Double | String] = js.undefined
   
-  var sandbox: js.UndefOr[String] = js.native
+  var sandbox: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var scoped: js.UndefOr[Boolean | String] = js.native
+  var scoped: js.UndefOr[Boolean | String] = js.undefined
   
-  var scrolling: js.UndefOr[String] = js.native
+  var scrolling: js.UndefOr[String] = js.undefined
   
-  var seamless: js.UndefOr[Boolean | String] = js.native
+  var seamless: js.UndefOr[Boolean | String] = js.undefined
   
-  var selected: js.UndefOr[Boolean | String] = js.native
+  var selected: js.UndefOr[Boolean | String] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var span: js.UndefOr[Double | String] = js.native
+  var span: js.UndefOr[Double | String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcDoc: js.UndefOr[String] = js.native
+  var srcDoc: js.UndefOr[String] = js.undefined
   
-  var srcLang: js.UndefOr[String] = js.native
+  var srcLang: js.UndefOr[String] = js.undefined
   
-  var srcSet: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.undefined
   
-  var srcdoc: js.UndefOr[String] = js.native
+  var srcdoc: js.UndefOr[String] = js.undefined
   
-  var srclang: js.UndefOr[String] = js.native
+  var srclang: js.UndefOr[String] = js.undefined
   
-  var srcset: js.UndefOr[String] = js.native
+  var srcset: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Double | String] = js.native
+  var start: js.UndefOr[Double | String] = js.undefined
   
-  var step: js.UndefOr[Double | String] = js.native
+  var step: js.UndefOr[Double | String] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var useMap: js.UndefOr[String] = js.native
+  var useMap: js.UndefOr[String] = js.undefined
   
-  var usemap: js.UndefOr[String] = js.native
+  var usemap: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var wmode: js.UndefOr[String] = js.native
+  var wmode: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.undefined
 }
 object AllHTMLAttributes {
   
@@ -304,7 +304,7 @@ object AllHTMLAttributes {
   }
   
   @scala.inline
-  implicit class AllHTMLAttributesMutableBuilder[Self <: AllHTMLAttributes[_], T] (val x: Self with AllHTMLAttributes[T]) extends AnyVal {
+  implicit class AllHTMLAttributesMutableBuilder[Self <: AllHTMLAttributes[?], T] (val x: Self & AllHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])

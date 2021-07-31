@@ -2,17 +2,15 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThresholdOptions extends StObject {
   
   /** alternative spelling for greyscale. (optional, default true) */
-  var grayscale: js.UndefOr[Boolean] = js.native
+  var grayscale: js.UndefOr[Boolean] = js.undefined
   
   /** convert to single channel greyscale. (optional, default true) */
-  var greyscale: js.UndefOr[Boolean] = js.native
+  var greyscale: js.UndefOr[Boolean] = js.undefined
 }
 object ThresholdOptions {
   

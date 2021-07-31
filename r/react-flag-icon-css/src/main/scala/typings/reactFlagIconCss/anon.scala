@@ -6,22 +6,18 @@ import typings.csstype.mod.PropertiesHyphen
 import typings.reactFlagIconCss.reactFlagIconCssNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<react-flag-icon-css.react-flag-icon-css.FlagIconOptions> */
-  @js.native
   trait ReadonlyFlagIconOptions extends StObject {
     
-    val customCodes: js.UndefOr[StringDictionary[String]] = js.native
+    val customCodes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val themeStyles: js.UndefOr[
-        StringDictionary[(Properties[String | `0`]) with (PropertiesHyphen[String | `0`])]
-      ] = js.native
+    val themeStyles: js.UndefOr[StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]] = js.undefined
     
-    val useCssModules: js.UndefOr[Boolean] = js.native
+    val useCssModules: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyFlagIconOptions {
     
@@ -41,7 +37,7 @@ object anon {
       def setCustomCodesUndefined: Self = StObject.set(x, "customCodes", js.undefined)
       
       @scala.inline
-      def setThemeStyles(value: StringDictionary[(Properties[String | `0`]) with (PropertiesHyphen[String | `0`])]): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
+      def setThemeStyles(value: StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setThemeStylesUndefined: Self = StObject.set(x, "themeStyles", js.undefined)

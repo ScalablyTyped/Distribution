@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrafficMirrorSessionResult extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the Traffic Mirror session.
     */
-  var TrafficMirrorSession: js.UndefOr[typings.awsSdk.ec2Mod.TrafficMirrorSession] = js.native
+  var TrafficMirrorSession: js.UndefOr[typings.awsSdk.ec2Mod.TrafficMirrorSession] = js.undefined
 }
 object CreateTrafficMirrorSessionResult {
   

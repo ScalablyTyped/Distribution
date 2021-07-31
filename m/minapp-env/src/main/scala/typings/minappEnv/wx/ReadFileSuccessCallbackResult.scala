@@ -3,14 +3,12 @@ package typings.minappEnv.wx
 import typings.minappEnv.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadFileSuccessCallbackResult extends StObject {
   
   /** 文件内容 */
-  var data: String | ArrayBuffer = js.native
+  var data: String | ArrayBuffer
 }
 object ReadFileSuccessCallbackResult {
   

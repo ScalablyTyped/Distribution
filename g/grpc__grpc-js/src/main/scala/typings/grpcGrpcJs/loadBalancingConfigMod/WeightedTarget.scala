@@ -2,15 +2,13 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedTarget extends StObject {
   
-  var child_policy: js.Array[LoadBalancingConfig] = js.native
+  var child_policy: js.Array[LoadBalancingConfig]
   
-  var weight: Double = js.native
+  var weight: Double
 }
 object WeightedTarget {
   

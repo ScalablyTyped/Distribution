@@ -2,19 +2,19 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeightfieldOptions extends SharedShapeOptions {
+trait HeightfieldOptions
+  extends StObject
+     with SharedShapeOptions {
   
-  var elementWidth: js.UndefOr[Double] = js.native
+  var elementWidth: js.UndefOr[Double] = js.undefined
   
-  var heights: js.UndefOr[js.Array[Double]] = js.native
+  var heights: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
 }
 object HeightfieldOptions {
   

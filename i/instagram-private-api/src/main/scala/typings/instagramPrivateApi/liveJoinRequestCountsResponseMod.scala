@@ -2,25 +2,23 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveJoinRequestCountsResponseMod {
   
-  @js.native
   trait LiveJoinRequestCountsResponseRootObject extends StObject {
     
-    var fetch_ts: Double = js.native
+    var fetch_ts: Double
     
-    var num_new_requests: Double = js.native
+    var num_new_requests: Double
     
-    var num_total_requests: Double = js.native
+    var num_total_requests: Double
     
-    var num_unseen_requests: Double = js.native
+    var num_unseen_requests: Double
     
-    var status: String = js.native
+    var status: String
     
-    var users: js.Array[LiveJoinRequestCountsResponseUsersItem] = js.native
+    var users: js.Array[LiveJoinRequestCountsResponseUsersItem]
   }
   object LiveJoinRequestCountsResponseRootObject {
     
@@ -63,24 +61,23 @@ object liveJoinRequestCountsResponseMod {
     }
   }
   
-  @js.native
   trait LiveJoinRequestCountsResponseUsersItem extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var live_with_eligibility: String = js.native
+    var live_with_eligibility: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveJoinRequestCountsResponseUsersItem {
     

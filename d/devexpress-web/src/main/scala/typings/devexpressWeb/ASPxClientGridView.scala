@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxGridView object.
   */
 @js.native
-trait ASPxClientGridView extends ASPxClientGridBase {
+trait ASPxClientGridView
+  extends StObject
+     with ASPxClientGridBase {
   
   /**
     * Adds a new record.
@@ -429,7 +430,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   /**
     * Returns key values of selected rows displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[_] = js.native
+  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
   
   /**
     * Returns the number of selected rows.
@@ -471,22 +472,22 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   def GotoPage(pageIndex: Double): Unit = js.native
   
   def GroupBy(column: String): Unit = js.native
-  def GroupBy(column: String, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: String, groupIndex: Double): Unit = js.native
   def GroupBy(column: String, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: String, groupIndex: Unit, sortOrder: String): Unit = js.native
   def GroupBy(column: Double): Unit = js.native
-  def GroupBy(column: Double, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Unit, sortOrder: String): Unit = js.native
   /**
     * Groups data by the values of the specified data column with the specified sort order. If several columns are involved in grouping, the specified column will reside at the specified grouping level.
     * @param groupIndex An integer value that specifies the grouping level. &#0045;1 to cancel grouping by the column's values.
     * @param sortOrder A string value that specifies the column's sort order.
     */
   def GroupBy(column: ASPxClientGridViewColumn): Unit = js.native
-  def GroupBy(column: ASPxClientGridViewColumn, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double): Unit = js.native
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Unit, sortOrder: String): Unit = js.native
   
   /**
     * Closes the Customization Window.
@@ -623,11 +624,11 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param selected true to select the specified rows; false to deselect the rows.
     */
   def SelectRows(): Unit = js.native
-  def SelectRows(visibleIndices: js.UndefOr[scala.Nothing], selected: Boolean): Unit = js.native
   def SelectRows(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectRows(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
   def SelectRows(visibleIndices: Double): Unit = js.native
   def SelectRows(visibleIndices: Double, selected: Boolean): Unit = js.native
+  def SelectRows(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
   def SelectRowsByKey(keys: js.Any): Unit = js.native
   def SelectRowsByKey(keys: js.Any, selected: Boolean): Unit = js.native
@@ -635,8 +636,8 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * Selects or deselects the specified row in the grid.
     * @param selected true to select the specified row; false to deselect the row.
     */
-  def SelectRowsByKey(keys: js.Array[_]): Unit = js.native
-  def SelectRowsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
   
   /**
     * Fires when a user selects a row.
@@ -739,31 +740,21 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   def ShowFilterControl(): Unit = js.native
   
   def SortBy(column: String): Unit = js.native
-  def SortBy(
-    column: String,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String): Unit = js.native
-  def SortBy(column: String, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   def SortBy(column: Double): Unit = js.native
-  def SortBy(
-    column: Double,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String): Unit = js.native
-  def SortBy(column: Double, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   /**
     * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
     * @param column An ASPxClientGridViewColumn object that represents the data column.
@@ -772,28 +763,13 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. &#0045;1 if data is not sorted by this column.
     */
   def SortBy(column: ASPxClientGridViewColumn): Unit = js.native
-  def SortBy(
-    column: ASPxClientGridViewColumn,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: ASPxClientGridViewColumn, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(
-    column: ASPxClientGridViewColumn,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: Boolean,
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String): Unit = js.native
-  def SortBy(
-    column: ASPxClientGridViewColumn,
-    sortOrder: String,
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientGridViewColumn, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: ASPxClientGridViewColumn, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientGridViewColumn, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   
   /**
     * Switches the grid to edit mode.
@@ -851,7 +827,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
   /**
     * Deselects the specified row displayed within the grid.
     */
-  def UnselectRowsByKey(keys: js.Array[_]): Unit = js.native
+  def UnselectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
   
   /**
     * Saves all the changes made and switches the grid to browse mode.

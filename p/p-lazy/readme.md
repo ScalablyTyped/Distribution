@@ -10,9 +10,9 @@ Create a lazy promise that defers execution until it's awaited or when `.then()`
 | ------------------ | :-------------: |
 | Full name          | p-lazy |
 | Keywords           | promise, lazy, defer, deferred, then, catch, fulfilled, async, function, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 21 |
-| # downloads        | 5189994 |
+| # releases         | 4 |
+| # dependents       | 24 |
+| # downloads        | 4549427 |
 | # stars            | 1 |
 
 ## Links

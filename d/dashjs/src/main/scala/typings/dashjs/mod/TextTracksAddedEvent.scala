@@ -3,27 +3,27 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.allTextTracksAdded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextTracksAddedEvent extends Event {
+trait TextTracksAddedEvent
+  extends StObject
+     with Event {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var index: Double = js.native
+  var index: Double
   
-  var tracks: js.Array[TextTrackInfo] = js.native
+  var tracks: js.Array[TextTrackInfo]
   
   @JSName("type")
-  var type_TextTracksAddedEvent: allTextTracksAdded = js.native
+  var type_TextTracksAddedEvent: allTextTracksAdded
 }
 object TextTracksAddedEvent {
   
   @scala.inline
-  def apply(enabled: Boolean, index: Double, tracks: js.Array[TextTrackInfo], `type`: allTextTracksAdded): TextTracksAddedEvent = {
+  def apply(enabled: Boolean, index: Double, tracks: js.Array[TextTrackInfo]): TextTracksAddedEvent = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("allTextTracksAdded")
     __obj.asInstanceOf[TextTracksAddedEvent]
   }
   

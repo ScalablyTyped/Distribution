@@ -6,49 +6,50 @@ import typings.sendmail.anon.KeySelector
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): SendMailFn = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SendMailFn]
+  
   @JSImport("sendmail", JSImport.Namespace)
   @js.native
-  def apply(options: Options): SendMailFn = js.native
+  val ^ : js.Any = js.native
   
   type CallbackFn = js.Function2[/* err */ Error, /* domain */ String, Unit]
   
-  @js.native
   trait MailInput extends StObject {
     
-    var attachments: js.UndefOr[js.Array[Content]] = js.native
+    var attachments: js.UndefOr[js.Array[Content]] = js.undefined
     
-    var bcc: js.UndefOr[String] = js.native
+    var bcc: js.UndefOr[String] = js.undefined
     
-    var cc: js.UndefOr[String] = js.native
+    var cc: js.UndefOr[String] = js.undefined
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var from: String = js.native
+    var from: String
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var replyTo: js.UndefOr[String] = js.native
+    var replyTo: js.UndefOr[String] = js.undefined
     
-    var returnTo: js.UndefOr[String] = js.native
+    var returnTo: js.UndefOr[String] = js.undefined
     
-    var subject: String = js.native
+    var subject: String
     
-    var to: String = js.native
+    var to: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MailInput {
     
@@ -147,27 +148,26 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Default: localhost */
-    var devHost: js.UndefOr[String] = js.native
+    var devHost: js.UndefOr[String] = js.undefined
     
     /** Default: False */
-    var devPort: js.UndefOr[Double | Boolean] = js.native
+    var devPort: js.UndefOr[Double | Boolean] = js.undefined
     
     /** Default: False */
-    var dkim: js.UndefOr[Boolean | KeySelector] = js.native
+    var dkim: js.UndefOr[Boolean | KeySelector] = js.undefined
     
-    var logger: js.UndefOr[Debug] = js.native
+    var logger: js.UndefOr[Debug] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /** Default: -1 - extra smtp host after resolveMX */
-    var smtpHost: js.UndefOr[String | Double] = js.native
+    var smtpHost: js.UndefOr[String | Double] = js.undefined
     
     /** Default: 25 */
-    var smtpPort: js.UndefOr[Double] = js.native
+    var smtpPort: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

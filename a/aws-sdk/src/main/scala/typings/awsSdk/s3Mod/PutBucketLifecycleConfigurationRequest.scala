@@ -2,26 +2,24 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketLifecycleConfigurationRequest extends StObject {
   
   /**
     * The name of the bucket for which to set the configuration.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Container for lifecycle rules. You can add as many as 1,000 rules.
     */
-  var LifecycleConfiguration: js.UndefOr[BucketLifecycleConfiguration] = js.native
+  var LifecycleConfiguration: js.UndefOr[BucketLifecycleConfiguration] = js.undefined
 }
 object PutBucketLifecycleConfigurationRequest {
   

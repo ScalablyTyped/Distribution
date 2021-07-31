@@ -1,12 +1,10 @@
 organization := "org.scalablytyped"
 name := "rolling-rate-limiter"
-version := "0.1-dt-20180510Z-67f982"
-scalaVersion := "2.13.3"
+version := "0.1-dt-20180510Z-901d76"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

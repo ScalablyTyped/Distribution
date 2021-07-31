@@ -2,15 +2,13 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameWithData extends StObject {
   
-  var data: js.UndefOr[Encodable] = js.native
+  var data: js.UndefOr[Encodable] = js.undefined
   
-  var metadata: js.UndefOr[Encodable] = js.native
+  var metadata: js.UndefOr[Encodable] = js.undefined
 }
 object FrameWithData {
   

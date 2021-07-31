@@ -3,7 +3,6 @@ package typings.angularRouter.mod
 import typings.angularCore.mod.ModuleWithProviders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterModule")
@@ -13,6 +12,10 @@ class RouterModule protected () extends StObject {
 }
 /* static members */
 object RouterModule {
+  
+  @JSImport("@angular/router", "RouterModule")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a module with all the router directives and a provider registering routes,
@@ -30,9 +33,8 @@ object RouterModule {
     * @return The new NgModule.
     *
     */
-  @JSImport("@angular/router", "RouterModule.forChild")
-  @js.native
-  def forChild(routes: Routes): ModuleWithProviders[RouterModule] = js.native
+  @scala.inline
+  def forChild(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forChild")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
   
   /**
     * Creates and configures a module with all the router providers and directives.
@@ -52,10 +54,8 @@ object RouterModule {
     * @return The new `NgModule`.
     *
     */
-  @JSImport("@angular/router", "RouterModule.forRoot")
-  @js.native
-  def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = js.native
-  @JSImport("@angular/router", "RouterModule.forRoot")
-  @js.native
-  def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = js.native
+  @scala.inline
+  def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
+  @scala.inline
+  def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterModule]]
 }

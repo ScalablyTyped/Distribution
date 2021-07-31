@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadingStyles extends StObject {
   
-  def Add(Style: js.Any, Level: Double): HeadingStyle = js.native
+  def Add(Style: js.Any, Level: Double): HeadingStyle
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): HeadingStyle = js.native
+  def Item(Index: Double): HeadingStyle
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.HeadingStyles_typekey")
-  var WordDotHeadingStyles_typekey: HeadingStyles = js.native
+  var WordDotHeadingStyles_typekey: HeadingStyles
 }
 object HeadingStyles {
   

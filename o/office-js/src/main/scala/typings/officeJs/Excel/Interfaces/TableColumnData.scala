@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
-@js.native
 trait TableColumnData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableColumnData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var filter: js.UndefOr[FilterData] = js.native
+  var filter: js.UndefOr[FilterData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableColumnData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableColumnData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableColumnData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableColumnData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object TableColumnData {
   
@@ -85,7 +83,7 @@ object TableColumnData {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

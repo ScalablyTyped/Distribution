@@ -3,7 +3,6 @@ package typings.antd
 import typings.antd.resultMod.ExceptionStatusType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdNumbers {
@@ -34,12 +33,16 @@ object antdNumbers {
   def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
-  sealed trait `403` extends ExceptionStatusType
+  sealed trait `403`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `403`: `403` = 403.asInstanceOf[`403`]
   
   @js.native
-  sealed trait `404` extends ExceptionStatusType
+  sealed trait `404`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `404`: `404` = 404.asInstanceOf[`404`]
   
@@ -49,7 +52,9 @@ object antdNumbers {
   def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
-  sealed trait `500` extends ExceptionStatusType
+  sealed trait `500`
+    extends StObject
+       with ExceptionStatusType
   @scala.inline
   def `500`: `500` = 500.asInstanceOf[`500`]
 }

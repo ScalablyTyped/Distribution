@@ -2,13 +2,11 @@ package typings.styledComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme[T] extends StObject {
   
-  var theme: js.UndefOr[T] = js.native
+  var theme: js.UndefOr[T] = js.undefined
 }
 object Theme {
   
@@ -19,7 +17,7 @@ object Theme {
   }
   
   @scala.inline
-  implicit class ThemeMutableBuilder[Self <: Theme[_], T] (val x: Self with Theme[T]) extends AnyVal {
+  implicit class ThemeMutableBuilder[Self <: Theme[?], T] (val x: Self & Theme[T]) extends AnyVal {
     
     @scala.inline
     def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

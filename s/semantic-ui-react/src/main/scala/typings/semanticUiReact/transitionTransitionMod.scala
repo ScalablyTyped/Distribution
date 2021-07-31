@@ -11,7 +11,6 @@ import typings.semanticUiReact.transitionGroupMod.TransitionGroupComponent
 import typings.semanticUiReact.transitionGroupMod.TransitionGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionTransitionMod {
@@ -45,23 +44,22 @@ object transitionTransitionMod {
     override def _to: TransitionComponent = ^
   }
   
-  @js.native
   trait StrictTransitionProps extends StObject {
     
     /** Named animation event to used. Must be defined in CSS. */
-    var animation: js.UndefOr[SemanticTRANSITIONS | String] = js.native
+    var animation: js.UndefOr[SemanticTRANSITIONS | String] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Whether it is directional animation event or not. Use it only for custom transitions. */
-    var directional: js.UndefOr[Boolean] = js.native
+    var directional: js.UndefOr[Boolean] = js.undefined
     
     /** Duration of the CSS transition animation in milliseconds. */
-    var duration: js.UndefOr[Double | String | TransitionPropDuration] = js.native
+    var duration: js.UndefOr[Double | String | TransitionPropDuration] = js.undefined
     
     /** Wait until the first "enter" transition to mount the component (add it to the DOM). */
-    var mountOnShow: js.UndefOr[Boolean] = js.native
+    var mountOnShow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback on each transition that changes visibility to shown.
@@ -69,7 +67,7 @@ object transitionTransitionMod {
       * @param {null}
       * @param {object} data - All props with status.
       */
-    var onComplete: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.undefined
     
     /**
       * Callback on each transition that changes visibility to hidden.
@@ -77,7 +75,7 @@ object transitionTransitionMod {
       * @param {null}
       * @param {object} data - All props with status.
       */
-    var onHide: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.undefined
     
     /**
       * Callback on each transition that changes visibility to shown.
@@ -85,7 +83,7 @@ object transitionTransitionMod {
       * @param {null}
       * @param {object} data - All props with status.
       */
-    var onShow: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.undefined
     
     /**
       * Callback on animation start.
@@ -93,19 +91,19 @@ object transitionTransitionMod {
       * @param {null}
       * @param {object} data - All props with status.
       */
-    var onStart: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ TransitionEventData, Unit]] = js.undefined
     
     /** React's key of the element. */
-    var reactKey: js.UndefOr[String] = js.native
+    var reactKey: js.UndefOr[String] = js.undefined
     
     /** Run the enter animation when the component mounts, if it is initially shown. */
-    var transitionOnMount: js.UndefOr[Boolean] = js.native
+    var transitionOnMount: js.UndefOr[Boolean] = js.undefined
     
     /** Unmount the component (remove it from the DOM) when it is not shown. */
-    var unmountOnHide: js.UndefOr[Boolean] = js.native
+    var unmountOnHide: js.UndefOr[Boolean] = js.undefined
     
     /** Show the component; triggers the enter or exit animation. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object StrictTransitionProps {
     
@@ -225,7 +223,9 @@ object transitionTransitionMod {
   }
   
   @js.native
-  trait TransitionComponent extends ComponentClass[TransitionProps, ComponentState] {
+  trait TransitionComponent
+    extends StObject
+       with ComponentClass[TransitionProps, ComponentState] {
     
     var ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = js.native
     
@@ -240,10 +240,11 @@ object transitionTransitionMod {
     var UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = js.native
   }
   
-  @js.native
-  trait TransitionEventData extends TransitionProps {
+  trait TransitionEventData
+    extends StObject
+       with TransitionProps {
     
-    var status: TRANSITION_STATUSES = js.native
+    var status: TRANSITION_STATUSES
   }
   object TransitionEventData {
     
@@ -261,12 +262,11 @@ object transitionTransitionMod {
     }
   }
   
-  @js.native
   trait TransitionPropDuration extends StObject {
     
-    var hide: Double = js.native
+    var hide: Double
     
-    var show: Double = js.native
+    var show: Double
   }
   object TransitionPropDuration {
     
@@ -287,9 +287,9 @@ object transitionTransitionMod {
     }
   }
   
-  @js.native
   trait TransitionProps
-    extends StrictTransitionProps
+    extends StObject
+       with StrictTransitionProps
        with /* key */ StringDictionary[js.Any]
   object TransitionProps {
     

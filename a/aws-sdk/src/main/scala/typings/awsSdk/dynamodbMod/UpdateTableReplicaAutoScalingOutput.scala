@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableReplicaAutoScalingOutput extends StObject {
   
   /**
     * Returns information about the auto scaling settings of a table with replicas.
     */
-  var TableAutoScalingDescription: js.UndefOr[typings.awsSdk.dynamodbMod.TableAutoScalingDescription] = js.native
+  var TableAutoScalingDescription: js.UndefOr[typings.awsSdk.dynamodbMod.TableAutoScalingDescription] = js.undefined
 }
 object UpdateTableReplicaAutoScalingOutput {
   

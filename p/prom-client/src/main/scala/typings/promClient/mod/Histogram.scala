@@ -3,12 +3,13 @@ package typings.promClient.mod
 import typings.promClient.mod.Histogram.Internal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Histogram")
 @js.native
-class Histogram[T /* <: String */] protected () extends Metric_[T] {
+class Histogram[T /* <: String */] protected ()
+  extends StObject
+     with Metric_[T] {
   /**
   	 * @param configuration Configuration when creating the Histogram. Name and Help is mandatory
   	 */
@@ -54,13 +55,12 @@ class Histogram[T /* <: String */] protected () extends Metric_[T] {
 }
 object Histogram {
   
-  @js.native
   trait Config extends StObject {
     
     /**
     		 * Buckets used in the histogram
     		 */
-    var buckets: js.UndefOr[js.Array[Double]] = js.native
+    var buckets: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Config {
     
@@ -84,21 +84,20 @@ object Histogram {
     }
   }
   
-  @js.native
   trait Internal[T /* <: String */] extends StObject {
     
     /**
     		 * Observe value
     		 * @param value The value to observe
     		 */
-    def observe(value: Double): Unit = js.native
+    def observe(value: Double): Unit
     
     /**
     		 * Start a timer where the value in seconds will observed
     		 * @param labels Object with label keys and values
     		 * @return Function to invoke when timer should be stopped
     		 */
-    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
+    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]
   }
   object Internal {
     
@@ -112,7 +111,7 @@ object Histogram {
     }
     
     @scala.inline
-    implicit class InternalMutableBuilder[Self <: Internal[_], T /* <: String */] (val x: Self with Internal[T]) extends AnyVal {
+    implicit class InternalMutableBuilder[Self <: Internal[?], T /* <: String */] (val x: Self & Internal[T]) extends AnyVal {
       
       @scala.inline
       def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))

@@ -2,7 +2,6 @@ package typings.ydnDb.ydn.db
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait Policy extends StObject
 object Policy extends StObject {
   
   @js.native
-  sealed trait all extends Policy
+  sealed trait all
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait atomic extends Policy
+  sealed trait atomic
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait multi extends Policy
+  sealed trait multi
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait repeat extends Policy
+  sealed trait repeat
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait single extends Policy
+  sealed trait single
+    extends StObject
+       with Policy
 }

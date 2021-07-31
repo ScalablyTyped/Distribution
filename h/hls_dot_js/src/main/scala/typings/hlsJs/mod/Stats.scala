@@ -2,32 +2,30 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var mtime: Double = js.native
+  var mtime: Double
   
-  var tbuffered: js.UndefOr[Double] = js.native
+  var tbuffered: js.UndefOr[Double] = js.undefined
   
   /**
     * performance.now() of first received byte
     */
-  var tfirst: Double = js.native
+  var tfirst: Double
   
   /**
     * performance.now() on load complete
     */
-  var tload: Double = js.native
+  var tload: Double
   
   /**
     * performance.now() just after load() has been called
     */
-  var trequest: Double = js.native
+  var trequest: Double
 }
 object Stats {
   

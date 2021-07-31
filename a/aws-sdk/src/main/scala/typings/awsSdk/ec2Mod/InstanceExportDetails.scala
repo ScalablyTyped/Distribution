@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceExportDetails extends StObject {
   
   /**
     * The ID of the resource being exported.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The target virtualization environment.
     */
-  var TargetEnvironment: js.UndefOr[ExportEnvironment] = js.native
+  var TargetEnvironment: js.UndefOr[ExportEnvironment] = js.undefined
 }
 object InstanceExportDetails {
   

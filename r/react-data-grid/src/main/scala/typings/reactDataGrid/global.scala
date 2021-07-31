@@ -6,7 +6,6 @@ import typings.reactDataGrid.AdazzleReactDataGridPlugins.AutoCompleteTokensEdito
 import typings.reactDataGrid.AdazzleReactDataGridPlugins.DropDownEditorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -43,17 +42,17 @@ object global {
     object SCROLL_DIRECTION extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION with String] = js.native
+      def apply(value: String): js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION & String] = js.native
       
-      /* "downwards" */ val DOWN: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.DOWN with String = js.native
+      /* "downwards" */ val DOWN: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.DOWN & String = js.native
       
-      /* "left" */ val LEFT: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.LEFT with String = js.native
+      /* "left" */ val LEFT: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.LEFT & String = js.native
       
-      /* "none" */ val NONE: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.NONE with String = js.native
+      /* "none" */ val NONE: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.NONE & String = js.native
       
-      /* "right" */ val RIGHT: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.RIGHT with String = js.native
+      /* "right" */ val RIGHT: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.RIGHT & String = js.native
       
-      /* "upwards" */ val UP: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.UP with String = js.native
+      /* "upwards" */ val UP: typings.reactDataGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.UP & String = js.native
     }
   }
   
@@ -63,13 +62,15 @@ object global {
       
       object Selectors {
         
-        @JSGlobal("AdazzleReactDataGridPlugins.Data.Selectors.getRows")
+        @JSGlobal("AdazzleReactDataGridPlugins.Data.Selectors")
         @js.native
-        def getRows(state: js.Object): js.Array[js.Object] = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("AdazzleReactDataGridPlugins.Data.Selectors.getSelectedRowsByKey")
-        @js.native
-        def getSelectedRowsByKey(state: js.Object): js.Array[js.Object] = js.native
+        @scala.inline
+        def getRows(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRows")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+        
+        @scala.inline
+        def getSelectedRowsByKey(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedRowsByKey")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
       }
     }
     
@@ -147,17 +148,19 @@ object global {
     
     object Menu {
       
+      @JSGlobal("AdazzleReactDataGridPlugins.Menu")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.ContextMenu")
       @js.native
       class ContextMenu ()
         extends Component[js.Any, js.Object, js.Any]
       
-      @JSGlobal("AdazzleReactDataGridPlugins.Menu.ContextMenuLayer")
-      @js.native
-      def ContextMenuLayer(identifier: js.Any): js.Function1[/* Component */ js.Any, _] = js.native
-      @JSGlobal("AdazzleReactDataGridPlugins.Menu.ContextMenuLayer")
-      @js.native
-      def ContextMenuLayer(identifier: js.Any, configure: js.Function1[/* props */ js.Any, _]): js.Function1[/* Component */ js.Any, _] = js.native
+      @scala.inline
+      def ContextMenuLayer(identifier: js.Any): js.Function1[/* Component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
+      @scala.inline
+      def ContextMenuLayer(identifier: js.Any, configure: js.Function1[/* props */ js.Any, js.Any]): js.Function1[/* Component */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.MenuHeader")
       @js.native
@@ -174,23 +177,23 @@ object global {
       class SubMenu ()
         extends Component[js.Any, js.Object, js.Any]
       
-      @JSGlobal("AdazzleReactDataGridPlugins.Menu.connect")
-      @js.native
-      def connect(Menu: js.Any): js.Any = js.native
+      @scala.inline
+      def connect(Menu: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(Menu.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       object monitor {
         
-        @JSGlobal("AdazzleReactDataGridPlugins.Menu.monitor.getItem")
+        @JSGlobal("AdazzleReactDataGridPlugins.Menu.monitor")
         @js.native
-        def getItem(): js.Any = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("AdazzleReactDataGridPlugins.Menu.monitor.getPosition")
-        @js.native
-        def getPosition(): js.Any = js.native
+        @scala.inline
+        def getItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")().asInstanceOf[js.Any]
         
-        @JSGlobal("AdazzleReactDataGridPlugins.Menu.monitor.hideMenu")
-        @js.native
-        def hideMenu(): Unit = js.native
+        @scala.inline
+        def getPosition(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")().asInstanceOf[js.Any]
+        
+        @scala.inline
+        def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
       }
     }
     

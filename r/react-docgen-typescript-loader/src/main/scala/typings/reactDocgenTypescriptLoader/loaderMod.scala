@@ -2,21 +2,22 @@ package typings.reactDocgenTypescriptLoader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderMod {
   
-  @JSImport("react-docgen-typescript-loader/dist/loader", JSImport.Default)
+  @JSImport("react-docgen-typescript-loader/dist/loader", JSImport.Namespace)
   @js.native
-  def default(source: String): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(source: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
   trait TSFile extends StObject {
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object TSFile {
     

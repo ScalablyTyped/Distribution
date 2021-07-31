@@ -2,19 +2,17 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandMetadataInput extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var validators: js.UndefOr[js.Array[Validator]] = js.native
+  var validators: js.UndefOr[js.Array[Validator]] = js.undefined
 }
 object CommandMetadataInput {
   

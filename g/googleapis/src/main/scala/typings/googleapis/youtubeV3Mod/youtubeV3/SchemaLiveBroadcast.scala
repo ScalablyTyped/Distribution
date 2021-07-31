@@ -2,14 +2,12 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A liveBroadcast resource represents an event that will be streamed, via
   * live video, on YouTube.
   */
-@js.native
 trait SchemaLiveBroadcast extends StObject {
   
   /**
@@ -18,29 +16,29 @@ trait SchemaLiveBroadcast extends StObject {
     * video player or if it will be archived and therefore available for
     * viewing after the event has concluded.
     */
-  var contentDetails: js.UndefOr[SchemaLiveBroadcastContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaLiveBroadcastContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the broadcast.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#liveBroadcast&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the event, including its
     * title, description, start time, and end time.
     */
-  var snippet: js.UndefOr[SchemaLiveBroadcastSnippet] = js.native
+  var snippet: js.UndefOr[SchemaLiveBroadcastSnippet] = js.undefined
   
   /**
     * The statistics object contains info about the event&#39;s current stats.
@@ -48,12 +46,12 @@ trait SchemaLiveBroadcast extends StObject {
     * change (in either direction) during the lifetime of an event. Statistics
     * are only returned while the event is live.
     */
-  var statistics: js.UndefOr[SchemaLiveBroadcastStatistics] = js.native
+  var statistics: js.UndefOr[SchemaLiveBroadcastStatistics] = js.undefined
   
   /**
     * The status object contains information about the event&#39;s status.
     */
-  var status: js.UndefOr[SchemaLiveBroadcastStatus] = js.native
+  var status: js.UndefOr[SchemaLiveBroadcastStatus] = js.undefined
 }
 object SchemaLiveBroadcast {
   

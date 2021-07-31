@@ -2,17 +2,15 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSGenerateOptions extends StObject {
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var decorate: js.UndefOr[js.Function2[/* result */ String, /* node */ DSNode, Unit]] = js.native
+  var decorate: js.UndefOr[js.Function2[/* result */ String, /* node */ DSNode, Unit]] = js.undefined
   
-  var forceBraces: js.UndefOr[Boolean] = js.native
+  var forceBraces: js.UndefOr[Boolean] = js.undefined
 }
 object DSGenerateOptions {
   

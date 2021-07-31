@@ -6,18 +6,17 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var context: js.UndefOr[Record[String, String]] = js.native
+  var context: js.UndefOr[Record[String, String]] = js.undefined
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var id: js.UndefOr[ErrorId] = js.native
+  var id: js.UndefOr[ErrorId] = js.undefined
 }
 object Dictkey {
   

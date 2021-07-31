@@ -2,11 +2,9 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Messaging handle to a guest window. */
-@js.native
 trait ContentWindow extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ContentWindow extends StObject {
     * @param message Message object to send to the guest.
     * @param targetOrigin Specifies what the origin of the guest window must be for the event to be dispatched.
     */
-  def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
+  def postMessage(message: js.Any, targetOrigin: String): Unit
 }
 object ContentWindow {
   

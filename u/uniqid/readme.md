@@ -10,9 +10,9 @@ Unique ID Generator
 | ------------------ | :-------------: |
 | Full name          | uniqid |
 | Keywords           | unique id, uniqid, unique identifier, hexatridecimal |
-| # releases         | 3 |
-| # dependents       | 425 |
-| # downloads        | 19290863 |
+| # releases         | 2 |
+| # dependents       | 475 |
+| # downloads        | 18305983 |
 | # stars            | 15 |
 
 ## Links

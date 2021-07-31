@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlEstimateModelMemory[T] extends Generic {
+trait MlEstimateModelMemory[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object MlEstimateModelMemory {
   
@@ -19,7 +19,7 @@ object MlEstimateModelMemory {
   }
   
   @scala.inline
-  implicit class MlEstimateModelMemoryMutableBuilder[Self <: MlEstimateModelMemory[_], T] (val x: Self with MlEstimateModelMemory[T]) extends AnyVal {
+  implicit class MlEstimateModelMemoryMutableBuilder[Self <: MlEstimateModelMemory[?], T] (val x: Self & MlEstimateModelMemory[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

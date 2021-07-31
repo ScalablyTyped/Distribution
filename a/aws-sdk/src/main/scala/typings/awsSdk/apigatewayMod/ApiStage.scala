@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiStage extends StObject {
   
   /**
     * API Id of the associated API stage in a usage plan.
     */
-  var apiId: js.UndefOr[String] = js.native
+  var apiId: js.UndefOr[String] = js.undefined
   
   /**
     * API stage name of the associated API stage in a usage plan.
     */
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
   /**
     * Map containing method level throttling information for API stage in a usage plan.
     */
-  var throttle: js.UndefOr[MapOfApiStageThrottleSettings] = js.native
+  var throttle: js.UndefOr[MapOfApiStageThrottleSettings] = js.undefined
 }
 object ApiStage {
   

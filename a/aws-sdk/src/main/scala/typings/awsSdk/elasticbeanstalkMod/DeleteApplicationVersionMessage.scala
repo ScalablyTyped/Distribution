@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationVersionMessage extends StObject {
   
   /**
     * The name of the application to which the version belongs.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * Set to true to delete the source bundle from your storage bucket. Otherwise, the application version is deleted only from Elastic Beanstalk and the source bundle remains in Amazon S3.
     */
-  var DeleteSourceBundle: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.DeleteSourceBundle] = js.native
+  var DeleteSourceBundle: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.DeleteSourceBundle] = js.undefined
   
   /**
     * The label of the version to delete.
     */
-  var VersionLabel: typings.awsSdk.elasticbeanstalkMod.VersionLabel = js.native
+  var VersionLabel: typings.awsSdk.elasticbeanstalkMod.VersionLabel
 }
 object DeleteApplicationVersionMessage {
   

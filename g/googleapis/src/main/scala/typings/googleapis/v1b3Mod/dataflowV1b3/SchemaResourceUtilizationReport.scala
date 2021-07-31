@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * metrics accumulated from a variety of sources. For more information, see
   * go/df-resource-signals.
   */
-@js.native
 trait SchemaResourceUtilizationReport extends StObject {
   
   /**
     * CPU utilization samples.
     */
-  var cpuTime: js.UndefOr[js.Array[SchemaCPUTime]] = js.native
+  var cpuTime: js.UndefOr[js.Array[SchemaCPUTime]] = js.undefined
 }
 object SchemaResourceUtilizationReport {
   

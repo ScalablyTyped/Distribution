@@ -2,17 +2,15 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillParams extends StObject {
   
-  var bg: js.UndefOr[ImgixParamType] = js.native
+  var bg: js.UndefOr[ImgixParamType] = js.undefined
   
-  var fill: js.UndefOr[ImgixParamType] = js.native
+  var fill: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `fill-color`: js.UndefOr[ImgixParamType] = js.native
+  var `fill-color`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object FillParams {
   

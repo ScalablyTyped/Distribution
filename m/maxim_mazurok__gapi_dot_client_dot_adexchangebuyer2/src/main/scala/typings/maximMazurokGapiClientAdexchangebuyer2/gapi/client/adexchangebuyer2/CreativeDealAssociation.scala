@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeDealAssociation extends StObject {
   
   /** The account the creative belongs to. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The ID of the creative associated with the deal. */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /** The externalDealId for the deal associated with the creative. */
-  var dealsId: js.UndefOr[String] = js.native
+  var dealsId: js.UndefOr[String] = js.undefined
 }
 object CreativeDealAssociation {
   

@@ -19,7 +19,6 @@ import typings.openfin.wireMod.WireConstructor
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
@@ -30,12 +29,11 @@ object transportMod {
     def this(WireType: WireConstructor, environment: Environment) = this()
   }
   
-  @js.native
   trait AuthorizationPayload extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var token: String = js.native
+    var token: String
   }
   object AuthorizationPayload {
     
@@ -56,17 +54,18 @@ object transportMod {
     }
   }
   
-  @js.native
-  trait EventMessage extends Message[RuntimeEvent[String, String]] {
+  trait EventMessage
+    extends StObject
+       with Message[RuntimeEvent[String, String]] {
     
     @JSName("action")
-    var action_EventMessage: `process-desktop-event` = js.native
+    var action_EventMessage: `process-desktop-event`
   }
   object EventMessage {
     
     @scala.inline
-    def apply(action: `process-desktop-event`, payload: RuntimeEvent[String, String]): EventMessage = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    def apply(payload: RuntimeEvent[String, String]): EventMessage = {
+      val __obj = js.Dynamic.literal(action = "process-desktop-event", payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMessage]
     }
     
@@ -78,14 +77,13 @@ object transportMod {
     }
   }
   
-  @js.native
   trait Message[T] extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var correlationId: js.UndefOr[Double] = js.native
+    var correlationId: js.UndefOr[Double] = js.undefined
     
-    var payload: T = js.native
+    var payload: T
   }
   object Message {
     
@@ -96,7 +94,7 @@ object transportMod {
     }
     
     @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message[_], T] (val x: Self with Message[T]) extends AnyVal {
+    implicit class MessageMutableBuilder[Self <: Message[?], T] (val x: Self & Message[T]) extends AnyVal {
       
       @scala.inline
       def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
@@ -114,12 +112,11 @@ object transportMod {
   
   type MessageHandler = js.Function1[/* data */ js.Any, Boolean]
   
-  @js.native
   trait NotificationEvent extends StObject {
     
-    var payload: NotificationId = js.native
+    var payload: NotificationId
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object NotificationEvent {
     
@@ -141,17 +138,18 @@ object transportMod {
     }
   }
   
-  @js.native
-  trait NotificationEventMessage extends Message[NotificationEvent] {
+  trait NotificationEventMessage
+    extends StObject
+       with Message[NotificationEvent] {
     
     @JSName("action")
-    var action_NotificationEventMessage: `process-notification-event` = js.native
+    var action_NotificationEventMessage: `process-notification-event`
   }
   object NotificationEventMessage {
     
     @scala.inline
-    def apply(action: `process-notification-event`, payload: NotificationEvent): NotificationEventMessage = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    def apply(payload: NotificationEvent): NotificationEventMessage = {
+      val __obj = js.Dynamic.literal(action = "process-notification-event", payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationEventMessage]
     }
     
@@ -163,12 +161,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object Payload {
     
@@ -206,13 +203,13 @@ object transportMod {
     
     var eventAggregator: EventAggregator = js.native
     
-    def ferryAction(data: js.Any): js.Promise[Message[_]] = js.native
+    def ferryAction(data: js.Any): js.Promise[Message[js.Any]] = js.native
     
     def getPort(): String = js.native
     
     /* protected */ def handleMessage(data: Message[Payload]): Boolean = js.native
     
-    var me: Identity with EntityTypeHelpers = js.native
+    var me: Identity & EntityTypeHelpers = js.native
     
     var messageHandlers: js.Array[MessageHandler] = js.native
     
@@ -223,9 +220,9 @@ object transportMod {
     def sendAction(action: String, payload: js.Object, uncorrelated: Boolean): js.Promise[Message[Payload]] = js.native
     def sendAction(action: `request-external-authorization`, payload: js.Object, uncorrelated: `true`): js.Promise[Message[AuthorizationPayload]] = js.native
     
-    def sendRaw(data: js.Any): js.Promise[_] = js.native
+    def sendRaw(data: js.Any): js.Promise[js.Any] = js.native
     @JSName("sendRaw")
-    var sendRaw_Original: js.Function1[/* data */ js.Any, js.Promise[_]] = js.native
+    var sendRaw_Original: js.Function1[/* data */ js.Any, js.Promise[js.Any]] = js.native
     
     def shutdown(): js.Promise[Unit] = js.native
     

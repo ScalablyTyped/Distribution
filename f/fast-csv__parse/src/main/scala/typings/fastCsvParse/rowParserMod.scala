@@ -5,7 +5,6 @@ import typings.fastCsvParse.scannerMod.Scanner
 import typings.fastCsvParse.typesMod.RowArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowParserMod {
@@ -19,7 +18,7 @@ object rowParserMod {
     
     var getStartToken: js.Any = js.native
     
-    def parse(scanner: Scanner): RowArray[_] | Null = js.native
+    def parse(scanner: Scanner): RowArray[js.Any] | Null = js.native
     
     val parserOptions: js.Any = js.native
     

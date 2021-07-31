@@ -2,22 +2,20 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO rename to PlaceOpeningHoursTime https://developers.google.com/maps/documentation/javascript/reference/places-service#PlaceOpeningHoursTime
-@js.native
 trait OpeningHoursTime extends StObject {
   
-  var day: Double = js.native
+  var day: Double
   
-  var hours: Double = js.native
+  var hours: Double
   
-  var minutes: Double = js.native
+  var minutes: Double
   
-  var nextDate: Double = js.native
+  var nextDate: Double
   
-  var time: String = js.native
+  var time: String
 }
 object OpeningHoursTime {
   

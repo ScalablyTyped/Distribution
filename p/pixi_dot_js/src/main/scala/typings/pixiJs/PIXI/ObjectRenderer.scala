@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @extends PIXI.System
   * @memberof PIXI
   */
-@js.native
-trait ObjectRenderer extends System {
+trait ObjectRenderer
+  extends StObject
+     with System {
   
   /**
     * Stub method that should be used to empty the current
     * batch by rendering objects now.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Keeps the object to render. It doesn't have to be
@@ -28,7 +28,7 @@ trait ObjectRenderer extends System {
     *
     * @param {PIXI.DisplayObject} object - The object to render.
     */
-  def render(`object`: DisplayObject): Unit = js.native
+  def render(`object`: DisplayObject): Unit
   
   /**
     * Stub method that initializes any state required before
@@ -36,13 +36,13 @@ trait ObjectRenderer extends System {
     * signal, which occurs every frame, in that it is called
     * whenever an object requests _this_ renderer specifically.
     */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /**
     * Stops the renderer. It should free up any state and
     * become dormant.
     */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object ObjectRenderer {
   

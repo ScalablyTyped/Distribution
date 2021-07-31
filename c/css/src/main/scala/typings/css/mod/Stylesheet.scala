@@ -2,13 +2,13 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Stylesheet extends Node {
+trait Stylesheet
+  extends StObject
+     with Node {
   
-  var stylesheet: js.UndefOr[StyleRules] = js.native
+  var stylesheet: js.UndefOr[StyleRules] = js.undefined
 }
 object Stylesheet {
   

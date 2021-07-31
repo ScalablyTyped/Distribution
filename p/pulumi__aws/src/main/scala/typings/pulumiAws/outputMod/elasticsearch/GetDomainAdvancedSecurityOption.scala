@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainAdvancedSecurityOption extends StObject {
   
   /**
     * Whether node to node encryption is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Whether the internal user database is enabled.
     */
-  var internalUserDatabaseEnabled: Boolean = js.native
+  var internalUserDatabaseEnabled: Boolean
 }
 object GetDomainAdvancedSecurityOption {
   

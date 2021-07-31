@@ -2,25 +2,23 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stemdirection extends StObject {
   
-  var stem_direction: js.UndefOr[Double] = js.native
+  var stem_direction: js.UndefOr[Double] = js.undefined
   
-  var stem_extension: js.UndefOr[Double] = js.native
+  var stem_extension: js.UndefOr[Double] = js.undefined
   
-  var x_begin: js.UndefOr[Double] = js.native
+  var x_begin: js.UndefOr[Double] = js.undefined
   
-  var x_end: js.UndefOr[Double] = js.native
+  var x_end: js.UndefOr[Double] = js.undefined
   
-  var y_bottom: js.UndefOr[Double] = js.native
+  var y_bottom: js.UndefOr[Double] = js.undefined
   
-  var y_extend: js.UndefOr[Double] = js.native
+  var y_extend: js.UndefOr[Double] = js.undefined
   
-  var y_top: js.UndefOr[Double] = js.native
+  var y_top: js.UndefOr[Double] = js.undefined
 }
 object Stemdirection {
   

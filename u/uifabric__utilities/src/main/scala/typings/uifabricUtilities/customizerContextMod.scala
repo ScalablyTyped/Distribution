@@ -4,7 +4,6 @@ import typings.react.mod.Context
 import typings.uifabricUtilities.customizationsMod.ICustomizations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customizerContextMod {
@@ -13,10 +12,9 @@ object customizerContextMod {
   @js.native
   val CustomizerContext: Context[ICustomizerContext] = js.native
   
-  @js.native
   trait ICustomizerContext extends StObject {
     
-    var customizations: ICustomizations = js.native
+    var customizations: ICustomizations
   }
   object ICustomizerContext {
     

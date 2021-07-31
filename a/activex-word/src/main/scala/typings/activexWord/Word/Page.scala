@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Breaks: typings.activexWord.Word.Breaks = js.native
+  val Breaks: typings.activexWord.Word.Breaks
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val EnhMetaFileBits: js.Any = js.native
+  val EnhMetaFileBits: js.Any
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val Left: Double = js.native
+  val Left: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Rectangles: typings.activexWord.Word.Rectangles = js.native
+  val Rectangles: typings.activexWord.Word.Rectangles
   
-  val Top: Double = js.native
+  val Top: Double
   
-  val Width: Double = js.native
+  val Width: Double
   
   @JSName("Word.Page_typekey")
-  var WordDotPage_typekey: Page = js.native
+  var WordDotPage_typekey: Page
 }
 object Page {
   

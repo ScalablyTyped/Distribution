@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** must be supported to provide access to a container of {@link GluePoint2} . */
-@js.native
-trait XGluePointsSupplier extends XInterface {
+trait XGluePointsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns a container of {@link GluePoint2} structs. */
-  val GluePoints: XIndexContainer = js.native
+  val GluePoints: XIndexContainer
   
   /** @returns a container of {@link GluePoint2} structs. */
-  def getGluePoints(): XIndexContainer = js.native
+  def getGluePoints(): XIndexContainer
 }
 object XGluePointsSupplier {
   

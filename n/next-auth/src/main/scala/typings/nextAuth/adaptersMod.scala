@@ -1,7 +1,6 @@
 package typings.nextAuth
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.nextAuth.anon.ModelMapping
 import typings.nextAuth.anon.Models
 import typings.nextAuth.anon.`0`
@@ -13,7 +12,6 @@ import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
 import typings.typeorm.entitySchemaEntitySchemaOptionsMod.EntitySchemaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adaptersMod extends Shortcut {
@@ -22,18 +20,17 @@ object adaptersMod extends Shortcut {
   @js.native
   val default: Adapters = js.native
   
-  @js.native
   trait Adapters extends StObject {
     
     var Default: js.Function2[
         /* typeOrmConfig */ ConnectionOptions, 
         /* options */ js.UndefOr[Models], 
-        Adapter[_, Profile, _, _]
-      ] = js.native
+        Adapter[js.Any, Profile, js.Any, js.Any]
+      ]
     
-    var Prisma: PrismaAdapter = js.native
+    var Prisma: PrismaAdapter
     
-    var TypeORM: TypeORMAdapter[_, _, _, _] = js.native
+    var TypeORM: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]
   }
   object Adapters {
     
@@ -46,14 +43,14 @@ object adaptersMod extends Shortcut {
       
       @scala.inline
       def setDefault(
-        value: (/* typeOrmConfig */ ConnectionOptions, /* options */ js.UndefOr[Models]) => Adapter[_, Profile, _, _]
+        value: (/* typeOrmConfig */ ConnectionOptions, /* options */ js.UndefOr[Models]) => Adapter[js.Any, Profile, js.Any, js.Any]
       ): Self = StObject.set(x, "Default", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPrisma(value: PrismaAdapter): Self = StObject.set(x, "Prisma", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeORM(value: TypeORMAdapter[_, _, _, _]): Self = StObject.set(x, "TypeORM", value.asInstanceOf[js.Any])
+      def setTypeORM(value: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "TypeORM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,14 +70,6 @@ object adaptersMod extends Shortcut {
       providerId: String,
       providerType: String,
       providerAccountId: String,
-      refreshToken: js.UndefOr[scala.Nothing],
-      accessToken: String
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
       refreshToken: String,
       accessToken: String
     ) = this()
@@ -89,16 +78,15 @@ object adaptersMod extends Shortcut {
       providerId: String,
       providerType: String,
       providerAccountId: String,
-      refreshToken: js.UndefOr[scala.Nothing],
-      accessToken: js.UndefOr[scala.Nothing],
-      accessTokenExpires: Date
+      refreshToken: Unit,
+      accessToken: String
     ) = this()
     def this(
       userId: Double,
       providerId: String,
       providerType: String,
       providerAccountId: String,
-      refreshToken: js.UndefOr[scala.Nothing],
+      refreshToken: String,
       accessToken: String,
       accessTokenExpires: Date
     ) = this()
@@ -108,7 +96,7 @@ object adaptersMod extends Shortcut {
       providerType: String,
       providerAccountId: String,
       refreshToken: String,
-      accessToken: js.UndefOr[scala.Nothing],
+      accessToken: Unit,
       accessTokenExpires: Date
     ) = this()
     def this(
@@ -116,8 +104,17 @@ object adaptersMod extends Shortcut {
       providerId: String,
       providerType: String,
       providerAccountId: String,
-      refreshToken: String,
+      refreshToken: Unit,
       accessToken: String,
+      accessTokenExpires: Date
+    ) = this()
+    def this(
+      userId: Double,
+      providerId: String,
+      providerType: String,
+      providerAccountId: String,
+      refreshToken: Unit,
+      accessToken: Unit,
       accessTokenExpires: Date
     ) = this()
     
@@ -140,54 +137,49 @@ object adaptersMod extends Shortcut {
   
   @JSImport("next-auth/adapters", "TypeORMSessionModel")
   @js.native
-  class TypeORMSessionModel protected () extends Session {
+  class TypeORMSessionModel protected ()
+    extends StObject
+       with Session {
     def this(userId: Double, expires: Date) = this()
     def this(userId: Double, expires: Date, sessionToken: String) = this()
-    def this(userId: Double, expires: Date, sessionToken: js.UndefOr[scala.Nothing], accessToken: String) = this()
     def this(userId: Double, expires: Date, sessionToken: String, accessToken: String) = this()
+    def this(userId: Double, expires: Date, sessionToken: Unit, accessToken: String) = this()
     
+    /* CompleteClass */
+    var accessToken: String = js.native
+    
+    /* CompleteClass */
+    var expires: Date = js.native
+    
+    /* CompleteClass */
+    var sessionToken: String = js.native
+    
+    /* CompleteClass */
+    var userId: String | Double | js.Object = js.native
     @JSName("userId")
     var userId_TypeORMSessionModel: Double = js.native
   }
   
   @JSImport("next-auth/adapters", "TypeORMUserModel")
   @js.native
-  class TypeORMUserModel () extends User {
+  class TypeORMUserModel ()
+    extends StObject
+       with User {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], email: String) = this()
     def this(name: String, email: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], email: js.UndefOr[scala.Nothing], image: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], email: String, image: String) = this()
-    def this(name: String, email: js.UndefOr[scala.Nothing], image: String) = this()
+    def this(name: Unit, email: String) = this()
     def this(name: String, email: String, image: String) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      email: js.UndefOr[scala.Nothing],
-      image: js.UndefOr[scala.Nothing],
-      emailVerified: Date
-    ) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      email: js.UndefOr[scala.Nothing],
-      image: String,
-      emailVerified: Date
-    ) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      email: String,
-      image: js.UndefOr[scala.Nothing],
-      emailVerified: Date
-    ) = this()
-    def this(name: js.UndefOr[scala.Nothing], email: String, image: String, emailVerified: Date) = this()
-    def this(
-      name: String,
-      email: js.UndefOr[scala.Nothing],
-      image: js.UndefOr[scala.Nothing],
-      emailVerified: Date
-    ) = this()
-    def this(name: String, email: js.UndefOr[scala.Nothing], image: String, emailVerified: Date) = this()
-    def this(name: String, email: String, image: js.UndefOr[scala.Nothing], emailVerified: Date) = this()
+    def this(name: String, email: Unit, image: String) = this()
+    def this(name: Unit, email: String, image: String) = this()
+    def this(name: Unit, email: Unit, image: String) = this()
     def this(name: String, email: String, image: String, emailVerified: Date) = this()
+    def this(name: String, email: String, image: Unit, emailVerified: Date) = this()
+    def this(name: String, email: Unit, image: String, emailVerified: Date) = this()
+    def this(name: String, email: Unit, image: Unit, emailVerified: Date) = this()
+    def this(name: Unit, email: String, image: String, emailVerified: Date) = this()
+    def this(name: Unit, email: String, image: Unit, emailVerified: Date) = this()
+    def this(name: Unit, email: Unit, image: String, emailVerified: Date) = this()
+    def this(name: Unit, email: Unit, image: Unit, emailVerified: Date) = this()
     
     var emailVerified: js.UndefOr[Date] = js.native
     
@@ -203,14 +195,24 @@ object adaptersMod extends Shortcut {
   
   @JSImport("next-auth/adapters", "TypeORMVerificationRequestModel")
   @js.native
-  class TypeORMVerificationRequestModel protected () extends VerificationRequest {
+  class TypeORMVerificationRequestModel protected ()
+    extends StObject
+       with VerificationRequest {
     def this(identifier: String, token: String, expires: Date) = this()
+    
+    /* CompleteClass */
+    var expires: Date = js.native
+    
+    /* CompleteClass */
+    var identifier: String = js.native
+    
+    /* CompleteClass */
+    var token: String = js.native
   }
   
-  @js.native
   trait Adapter[TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */] extends StObject {
     
-    def getAdapter(appOptions: AppOptions): js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]] = js.native
+    def getAdapter(appOptions: AppOptions): js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]
   }
   object Adapter {
     
@@ -223,7 +225,7 @@ object adaptersMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter[_, _, _, _], TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */] (val x: Self with (Adapter[TUser, TProfile, TSession, TVerificationRequest])) extends AnyVal {
+    implicit class AdapterMutableBuilder[Self <: Adapter[?, ?, ?, ?], TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */] (val x: Self & (Adapter[TUser, TProfile, TSession, TVerificationRequest])) extends AnyVal {
       
       @scala.inline
       def setGetAdapter(value: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]): Self = StObject.set(x, "getAdapter", js.Any.fromFunction1(value))
@@ -295,24 +297,13 @@ object adaptersMod extends Shortcut {
     def updateUser(user: TUser): js.Promise[TUser] = js.native
   }
   
-  /* Inlined next-auth.next-auth/client.SessionProvider & {sendVerificationRequest (params : next-auth.next-auth/adapters.SendVerificationRequestParams): std.Promise<void>,   maxAge :number | undefined} */
-  @js.native
   trait EmailSessionProvider
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with SessionProvider {
     
-    var callbackUrl: String = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var id: String = js.native
-    
-    var maxAge: js.UndefOr[Double] = js.native
-    
-    var name: String = js.native
-    
-    def sendVerificationRequest(params: SendVerificationRequestParams): js.Promise[Unit] = js.native
-    
-    var signinUrl: String = js.native
-    
-    var `type`: String = js.native
+    def sendVerificationRequest(params: SendVerificationRequestParams): js.Promise[Unit]
   }
   object EmailSessionProvider {
     
@@ -334,40 +325,24 @@ object adaptersMod extends Shortcut {
     implicit class EmailSessionProviderMutableBuilder[Self <: EmailSessionProvider] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setSendVerificationRequest(value: SendVerificationRequestParams => js.Promise[Unit]): Self = StObject.set(x, "sendVerificationRequest", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PrismaAdapter extends StObject {
     
-    def Adapter(config: ModelMapping): typings.nextAuth.adaptersMod.Adapter[_, _, _, _] = js.native
+    def Adapter(config: ModelMapping): typings.nextAuth.adaptersMod.Adapter[js.Any, js.Any, js.Any, js.Any]
   }
   object PrismaAdapter {
     
     @scala.inline
-    def apply(Adapter: ModelMapping => Adapter[_, _, _, _]): PrismaAdapter = {
+    def apply(Adapter: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): PrismaAdapter = {
       val __obj = js.Dynamic.literal(Adapter = js.Any.fromFunction1(Adapter))
       __obj.asInstanceOf[PrismaAdapter]
     }
@@ -376,26 +351,25 @@ object adaptersMod extends Shortcut {
     implicit class PrismaAdapterMutableBuilder[Self <: PrismaAdapter] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdapter(value: ModelMapping => Adapter[_, _, _, _]): Self = StObject.set(x, "Adapter", js.Any.fromFunction1(value))
+      def setAdapter(value: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "Adapter", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Profile extends StObject {
     
-    var email: String | Null = js.native
+    var email: String | Null
     
-    var id: String = js.native
+    var id: String
     
-    var image: js.UndefOr[String | Null] = js.native
+    var image: js.UndefOr[String | Null] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Profile {
     
     @scala.inline
     def apply(id: String, name: String): Profile = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], email = null)
       __obj.asInstanceOf[Profile]
     }
     
@@ -427,18 +401,17 @@ object adaptersMod extends Shortcut {
   
   type Schema[T] = EntitySchemaOptions[T]
   
-  @js.native
   trait SendVerificationRequestParams extends StObject {
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var provider: SessionProvider = js.native
+    var provider: SessionProvider
     
-    var token: String = js.native
+    var token: String
     
-    var url: String = js.native
+    var url: String
   }
   object SendVerificationRequestParams {
     
@@ -468,16 +441,15 @@ object adaptersMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var sessionToken: String = js.native
+    var sessionToken: String
     
-    var userId: String | Double | js.Object = js.native
+    var userId: String | Double | js.Object
   }
   object Session {
     
@@ -516,14 +488,13 @@ object adaptersMod extends Shortcut {
     var Models: typings.nextAuth.anon.User = js.native
   }
   
-  @js.native
   trait VerificationRequest extends StObject {
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var token: String = js.native
+    var token: String
   }
   object VerificationRequest {
     

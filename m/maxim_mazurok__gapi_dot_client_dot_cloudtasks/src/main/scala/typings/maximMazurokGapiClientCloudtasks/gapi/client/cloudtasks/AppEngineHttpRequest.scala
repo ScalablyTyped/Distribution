@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineHttpRequest extends StObject {
   
   /**
     * Task-level setting for App Engine routing. * If app_engine_routing_override is set on the queue, this value is used for all tasks in the queue, no matter what the setting is for the
     * task-level app_engine_routing.
     */
-  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.native
+  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.undefined
   
   /** HTTP request body. A request body is allowed only if the HTTP method is POST or PUT. It is an error to set a body on a task with an incompatible HttpMethod. */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP request headers. This map contains the header field names and values. Headers can be set when the task is created. Repeated headers are not supported but a header value can
@@ -33,8 +31,8 @@ trait AppEngineHttpRequest extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The HTTP method to use for the request. The default is POST. The app's request handler for the task's target URL must be able to handle HTTP requests with this http_method,
@@ -42,13 +40,13 @@ trait AppEngineHttpRequest extends StObject {
     * handler](https://cloud.google.com/appengine/docs/java/taskqueue/push/creating-handlers#writing_a_push_task_request_handler) and the App Engine documentation for your runtime on [How
     * Requests are Handled](https://cloud.google.com/appengine/docs/standard/python3/how-requests-are-handled).
     */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI. The relative URI must begin with "/" and must be a valid HTTP relative URI. It can contain a path and query string arguments. If the relative URI is empty, then
     * the root path "/" will be used. No spaces are allowed, and the maximum length allowed is 2083 characters.
     */
-  var relativeUri: js.UndefOr[String] = js.native
+  var relativeUri: js.UndefOr[String] = js.undefined
 }
 object AppEngineHttpRequest {
   
@@ -77,7 +75,7 @@ object AppEngineHttpRequest {
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline

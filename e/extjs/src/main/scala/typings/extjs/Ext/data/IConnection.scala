@@ -3,61 +3,61 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IConnection extends IObservable {
+trait IConnection
+  extends StObject
+     with IObservable {
   
   /** [Method] Aborts an active request
     * @param request Object Defaults to the last request
     */
-  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.native
+  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Aborts all active requests */
-  var abortAll: js.UndefOr[js.Function0[Unit]] = js.native
+  var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoAbort: js.UndefOr[Boolean] = js.native
+  var autoAbort: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var cors: js.UndefOr[Boolean] = js.native
+  var cors: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultHeaders: js.UndefOr[js.Any] = js.native
+  var defaultHeaders: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disableCaching: js.UndefOr[Boolean] = js.native
+  var disableCaching: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var disableCachingParam: js.UndefOr[String] = js.native
+  var disableCachingParam: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.native
+  var extraParams: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Determines whether this object has a request outstanding
     * @param request Object Defaults to the last transaction
     * @returns Boolean True if there is an outstanding request.
     */
-  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.native
+  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
   
   /** [Config Option] (String) */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** [Method] Checks if the response status was successful
     * @param status Number The status code
     * @returns Object An object containing success/status state
     */
-  var parseStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Double], _]] = js.native
+  var parseStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Double], js.Any]] = js.undefined
   
   /** [Method] Sends an HTTP request to a remote server
     * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform postprocessing in a callback because it is passed to callback functions.)
     * @returns Object The request object. This may be used to cancel the request.
     */
-  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.native
+  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets various options such as the url params for the request
     * @param options Object The initial options
@@ -65,11 +65,11 @@ trait IConnection extends IObservable {
     * @returns Object The params for the request
     */
   var setOptions: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Config Option] (Number) */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** [Method] Uploads a form using a hidden iframe
     * @param form String/HTMLElement/Ext.Element The form to upload
@@ -85,10 +85,10 @@ trait IConnection extends IObservable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object IConnection {
   
@@ -168,19 +168,19 @@ object IConnection {
     def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setParseStatus(value: /* status */ js.UndefOr[Double] => _): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
+    def setParseStatus(value: /* status */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
     @scala.inline
-    def setRequest(value: /* options */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)

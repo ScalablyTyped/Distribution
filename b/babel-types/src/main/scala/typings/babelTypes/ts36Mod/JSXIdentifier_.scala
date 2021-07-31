@@ -3,26 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.JSXIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXIdentifier_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with JSX {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_JSXIdentifier_ : JSXIdentifier = js.native
+  var type_JSXIdentifier_ : JSXIdentifier
 }
 object JSXIdentifier_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, name: String, start: Double, `type`: JSXIdentifier): JSXIdentifier_ = {
+  def apply(end: Double, loc: SourceLocation, name: String, start: Double): JSXIdentifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[JSXIdentifier_]
   }
   

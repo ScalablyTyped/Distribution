@@ -6,47 +6,45 @@ import typings.gatsbyCli.gatsbyCliStrings.USER
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredStackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activitytotal extends StObject {
   
-  var activity_current: js.UndefOr[Double] = js.native
+  var activity_current: js.UndefOr[Double] = js.undefined
   
-  var activity_total: js.UndefOr[Double] = js.native
+  var activity_total: js.UndefOr[Double] = js.undefined
   
-  var activity_type: js.UndefOr[String] = js.native
+  var activity_type: js.UndefOr[String] = js.undefined
   
-  var activity_uuid: js.UndefOr[String] = js.native
+  var activity_uuid: js.UndefOr[String] = js.undefined
   
-  var category: js.UndefOr[USER | SYSTEM | THIRD_PARTY] = js.native
+  var category: js.UndefOr[USER | SYSTEM | THIRD_PARTY] = js.undefined
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var docsUrl: js.UndefOr[String] = js.native
+  var docsUrl: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var level: String = js.native
+  var level: String
   
-  var location: js.UndefOr[End] = js.native
+  var location: js.UndefOr[End] = js.undefined
   
-  var pluginName: js.UndefOr[String] = js.native
+  var pluginName: js.UndefOr[String] = js.undefined
   
-  var stack: js.UndefOr[js.Array[IStructuredStackFrame]] = js.native
+  var stack: js.UndefOr[js.Array[IStructuredStackFrame]] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Activitytotal {
   

@@ -2,13 +2,11 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QLineage extends StObject {
   
-  var qLineage: js.Array[QDiscriminator] = js.native
+  var qLineage: js.Array[QDiscriminator]
 }
 object QLineage {
   

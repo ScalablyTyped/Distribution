@@ -6,7 +6,6 @@ import typings.reduxForm.anon.Props
 import typings.reduxForm.fieldMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldArrayMod {
@@ -22,7 +21,7 @@ object fieldArrayMod {
     def this(props: BaseFieldArrayProps[P, FieldValue], context: js.Any) = this()
   }
   
-  type BaseFieldArrayProps[P, FieldValue] = (P | Props[P]) with (_BaseFieldArrayProps[P, FieldValue])
+  type BaseFieldArrayProps[P, FieldValue] = (P | Props[P]) & (_BaseFieldArrayProps[P, FieldValue])
   
   @js.native
   trait FieldArrayFieldsProps[FieldValue] extends StObject {
@@ -61,26 +60,25 @@ object fieldArrayMod {
     def unshift(value: FieldValue): Unit = js.native
   }
   
-  @js.native
   trait FieldArrayMetaProps extends StObject {
     
-    var dirty: Boolean = js.native
+    var dirty: Boolean
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var form: String = js.native
+    var form: String
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var pristine: Boolean = js.native
+    var pristine: Boolean
     
-    var submitFailed: Boolean = js.native
+    var submitFailed: Boolean
     
-    var submitting: Boolean = js.native
+    var submitting: Boolean
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var warning: js.UndefOr[js.Any] = js.native
+    var warning: js.UndefOr[js.Any] = js.undefined
   }
   object FieldArrayMetaProps {
     
@@ -147,19 +145,18 @@ object fieldArrayMod {
   trait GenericFieldArray[FieldValue, P]
     extends Component[BaseFieldArrayProps[P, FieldValue], js.Object, js.Any] {
     
-    def getRenderedComponent(): Component[WrappedFieldArrayProps[FieldValue] with P, js.Object, _] = js.native
+    def getRenderedComponent(): Component[WrappedFieldArrayProps[FieldValue] & P, js.Object, js.Any] = js.native
     
     var name: String = js.native
     
     var valid: Boolean = js.native
   }
   
-  @js.native
   trait WrappedFieldArrayProps[FieldValue] extends StObject {
     
-    var fields: FieldArrayFieldsProps[FieldValue] = js.native
+    var fields: FieldArrayFieldsProps[FieldValue]
     
-    var meta: FieldArrayMetaProps = js.native
+    var meta: FieldArrayMetaProps
   }
   object WrappedFieldArrayProps {
     
@@ -170,7 +167,7 @@ object fieldArrayMod {
     }
     
     @scala.inline
-    implicit class WrappedFieldArrayPropsMutableBuilder[Self <: WrappedFieldArrayProps[_], FieldValue] (val x: Self with WrappedFieldArrayProps[FieldValue]) extends AnyVal {
+    implicit class WrappedFieldArrayPropsMutableBuilder[Self <: WrappedFieldArrayProps[?], FieldValue] (val x: Self & WrappedFieldArrayProps[FieldValue]) extends AnyVal {
       
       @scala.inline
       def setFields(value: FieldArrayFieldsProps[FieldValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -180,34 +177,33 @@ object fieldArrayMod {
     }
   }
   
-  @js.native
   trait _BaseFieldArrayProps[P, FieldValue] extends StObject {
     
-    var component: ComponentType[WrappedFieldArrayProps[FieldValue] with P] = js.native
+    var component: ComponentType[WrappedFieldArrayProps[FieldValue] & P]
     
-    var name: String = js.native
+    var name: String
     
-    var rerenderOnEveryChange: js.UndefOr[Boolean] = js.native
+    var rerenderOnEveryChange: js.UndefOr[Boolean] = js.undefined
     
-    var validate: js.UndefOr[Validator | js.Array[Validator]] = js.native
+    var validate: js.UndefOr[Validator | js.Array[Validator]] = js.undefined
     
-    var warn: js.UndefOr[Validator | js.Array[Validator]] = js.native
+    var warn: js.UndefOr[Validator | js.Array[Validator]] = js.undefined
     
-    var withRef: js.UndefOr[Boolean] = js.native
+    var withRef: js.UndefOr[Boolean] = js.undefined
   }
   object _BaseFieldArrayProps {
     
     @scala.inline
-    def apply[P, FieldValue](component: ComponentType[WrappedFieldArrayProps[FieldValue] with P], name: String): _BaseFieldArrayProps[P, FieldValue] = {
+    def apply[P, FieldValue](component: ComponentType[WrappedFieldArrayProps[FieldValue] & P], name: String): _BaseFieldArrayProps[P, FieldValue] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[_BaseFieldArrayProps[P, FieldValue]]
     }
     
     @scala.inline
-    implicit class _BaseFieldArrayPropsMutableBuilder[Self <: _BaseFieldArrayProps[_, _], P, FieldValue] (val x: Self with (_BaseFieldArrayProps[P, FieldValue])) extends AnyVal {
+    implicit class _BaseFieldArrayPropsMutableBuilder[Self <: _BaseFieldArrayProps[?, ?], P, FieldValue] (val x: Self & (_BaseFieldArrayProps[P, FieldValue])) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[WrappedFieldArrayProps[FieldValue] with P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[WrappedFieldArrayProps[FieldValue] & P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

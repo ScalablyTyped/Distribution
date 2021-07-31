@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataUsage extends StObject {
   
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
-  var bytesSent: Double = js.native
+  var bytesSent: Double
 }
 object IDataUsage {
   

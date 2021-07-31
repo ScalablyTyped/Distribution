@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmergencyCallingConfiguration extends StObject {
   
   /**
     * The Dialed Number Identification Service (DNIS) emergency calling configuration details.
     */
-  var DNIS: js.UndefOr[DNISEmergencyCallingConfigurationList] = js.native
+  var DNIS: js.UndefOr[DNISEmergencyCallingConfigurationList] = js.undefined
 }
 object EmergencyCallingConfiguration {
   

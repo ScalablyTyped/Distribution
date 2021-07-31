@@ -2,31 +2,29 @@ package typings.tuyaPanelKit.stackTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackCardInterpolatedStyle extends StObject {
   
   /**
     * Interpolated style for the view representing the card.
     */
-  var cardStyle: js.UndefOr[js.Any] = js.native
+  var cardStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the container view wrapping the card.
     */
-  var containerStyle: js.UndefOr[js.Any] = js.native
+  var containerStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the view representing the semi-transparent overlay below the card.
     */
-  var overlayStyle: js.UndefOr[js.Any] = js.native
+  var overlayStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style representing the card shadow.
     */
-  var shadowStyle: js.UndefOr[js.Any] = js.native
+  var shadowStyle: js.UndefOr[js.Any] = js.undefined
 }
 object StackCardInterpolatedStyle {
   

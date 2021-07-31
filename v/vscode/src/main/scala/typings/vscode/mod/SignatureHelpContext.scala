@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpContext extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SignatureHelpContext extends StObject {
     * The `activeSignatureHelp` has its [`SignatureHelp.activeSignature`] field updated based on
     * the user arrowing through available signatures.
     */
-  val activeSignatureHelp: js.UndefOr[SignatureHelp] = js.native
+  val activeSignatureHelp: js.UndefOr[SignatureHelp] = js.undefined
   
   /**
     * `true` if signature help was already showing when it was triggered.
@@ -22,7 +20,7 @@ trait SignatureHelpContext extends StObject {
     * Retriggers occur when the signature help is already active and can be caused by actions such as
     * typing a trigger character, a cursor move, or document content changes.
     */
-  val isRetrigger: Boolean = js.native
+  val isRetrigger: Boolean
   
   /**
     * Character that caused signature help to be triggered.
@@ -30,12 +28,12 @@ trait SignatureHelpContext extends StObject {
     * This is `undefined` when signature help is not triggered by typing, such as when manually invoking
     * signature help or when moving the cursor.
     */
-  val triggerCharacter: js.UndefOr[String] = js.native
+  val triggerCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * Action that caused signature help to be triggered.
     */
-  val triggerKind: SignatureHelpTriggerKind = js.native
+  val triggerKind: SignatureHelpTriggerKind
 }
 object SignatureHelpContext {
   

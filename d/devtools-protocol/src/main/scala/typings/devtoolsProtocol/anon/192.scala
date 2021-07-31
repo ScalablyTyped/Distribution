@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Target.DetachFromTargetRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `192` extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[DetachFromTargetRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[DetachFromTargetRequest]]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `192` {
   

@@ -3,53 +3,51 @@ package typings.vsoNodeApi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vsoBaseInterfacesMod {
   
-  @js.native
   trait ApiResourceLocation extends StObject {
     
     /**
       * Area name for this resource
       */
-    var area: String = js.native
+    var area: String
     
     /**
       * Unique Identifier for this location
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Maximum api version that this resource supports (current server version for this resource)
       */
-    var maxVersion: String = js.native
+    var maxVersion: String
     
     /**
       * Minimum api version that this resource supports
       */
-    var minVersion: String = js.native
+    var minVersion: String
     
     /**
       * The latest version of this resource location that is in "Release" (non-preview) mode
       */
-    var releasedVersion: String = js.native
+    var releasedVersion: String
     
     /**
       * Resource name
       */
-    var resourceName: String = js.native
+    var resourceName: String
     
     /**
       * The current resource version supported by this resource location
       */
-    var resourceVersion: Double = js.native
+    var resourceVersion: Double
     
     /**
       * This location's route template (templated relative path)
       */
-    var routeTemplate: String = js.native
+    var routeTemplate: String
   }
   object ApiResourceLocation {
     
@@ -97,12 +95,11 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  @js.native
   trait IBasicCredentials extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object IBasicCredentials {
     
@@ -123,16 +120,15 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  @js.native
   trait ICertConfiguration extends StObject {
     
-    var caFile: js.UndefOr[String] = js.native
+    var caFile: js.UndefOr[String] = js.undefined
     
-    var certFile: js.UndefOr[String] = js.native
+    var certFile: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
   }
   object ICertConfiguration {
     
@@ -173,12 +169,11 @@ object vsoBaseInterfacesMod {
   
   type IHeaders = StringDictionary[js.Any]
   
-  @js.native
   trait IHttpResponse extends StObject {
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object IHttpResponse {
     
@@ -202,16 +197,15 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  @js.native
   trait IProxyConfiguration extends StObject {
     
-    var proxyBypassHosts: js.UndefOr[js.Array[String]] = js.native
+    var proxyBypassHosts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var proxyPassword: js.UndefOr[String] = js.native
+    var proxyPassword: js.UndefOr[String] = js.undefined
     
-    var proxyUrl: String = js.native
+    var proxyUrl: String
     
-    var proxyUsername: js.UndefOr[String] = js.native
+    var proxyUsername: js.UndefOr[String] = js.undefined
   }
   object IProxyConfiguration {
     
@@ -250,14 +244,13 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  @js.native
   trait IRequestHandler extends StObject {
     
-    def canHandleAuthentication(res: IHttpResponse): Boolean = js.native
+    def canHandleAuthentication(res: IHttpResponse): Boolean
     
-    def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit = js.native
+    def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit
     
-    def prepareRequest(options: js.Any): Unit = js.native
+    def prepareRequest(options: js.Any): Unit
   }
   object IRequestHandler {
     
@@ -285,16 +278,15 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  @js.native
   trait IRequestOptions extends StObject {
     
-    var cert: js.UndefOr[ICertConfiguration] = js.native
+    var cert: js.UndefOr[ICertConfiguration] = js.undefined
     
-    var ignoreSslError: js.UndefOr[Boolean] = js.native
+    var ignoreSslError: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[IProxyConfiguration] = js.native
+    var proxy: js.UndefOr[IProxyConfiguration] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
   }
   object IRequestOptions {
     

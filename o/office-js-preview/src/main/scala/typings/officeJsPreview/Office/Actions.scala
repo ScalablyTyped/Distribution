@@ -2,19 +2,17 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to associate an action name to a function.
   */
-@js.native
 trait Actions extends StObject {
   
   /**
     * Function to associate a name with the action function.
     */
-  def associate(actionName: String, action: js.Function1[/* arg */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def associate(actionName: String, action: js.Function1[/* arg */ js.UndefOr[js.Any], Unit]): Unit
 }
 object Actions {
   

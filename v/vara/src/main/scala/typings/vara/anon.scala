@@ -2,17 +2,15 @@ package typings.vara
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BreakPoints extends StObject {
     
-    var breakPoints: js.Array[js.Array[String | Double]] = js.native
+    var breakPoints: js.Array[js.Array[String | Double]]
     
-    var width: Double = js.native
+    var width: Double
   }
   object BreakPoints {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[Boolean] = js.native
+    var x: js.UndefOr[Boolean] = js.undefined
     
-    var y: js.UndefOr[Boolean] = js.native
+    var y: js.UndefOr[Boolean] = js.undefined
   }
   object X {
     
@@ -68,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait XY extends StObject {
     
-    var x: Boolean = js.native
+    var x: Boolean
     
-    var y: Boolean = js.native
+    var y: Boolean
   }
   object XY {
     
@@ -94,12 +90,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Y {
     

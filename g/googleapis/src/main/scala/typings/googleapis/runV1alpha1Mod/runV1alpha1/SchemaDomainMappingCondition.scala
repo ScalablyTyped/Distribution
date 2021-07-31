@@ -2,36 +2,34 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DomainMappingCondition contains state information for a DomainMapping.
   */
-@js.native
 trait SchemaDomainMappingCondition extends StObject {
   
   /**
     * Human readable message indicating details about the current status.
     * +optional
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * One-word CamelCase reason for the condition&#39;s current status.
     * +optional
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Type of domain mapping condition.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDomainMappingCondition {
   

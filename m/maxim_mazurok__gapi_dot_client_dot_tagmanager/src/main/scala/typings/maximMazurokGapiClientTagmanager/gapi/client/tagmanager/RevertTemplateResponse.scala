@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevertTemplateResponse extends StObject {
   
   /**
     * Template as it appears in the latest container version since the last workspace synchronization operation. If no template is present, that means the template was deleted in the
     * latest container version.
     */
-  var template: js.UndefOr[CustomTemplate] = js.native
+  var template: js.UndefOr[CustomTemplate] = js.undefined
 }
 object RevertTemplateResponse {
   

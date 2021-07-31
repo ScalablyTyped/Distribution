@@ -3,17 +3,15 @@ package typings.ranjs
 import typings.ranjs.mod.la.Matrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accepted extends StObject {
     
-    var accepted: Boolean = js.native
+    var accepted: Boolean
     
-    var x: js.Array[Double] = js.native
+    var x: js.Array[Double]
   }
   object Accepted {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Chi2 extends StObject {
     
-    var chi2: Double = js.native
+    var chi2: Double
     
-    var passed: Boolean = js.native
+    var passed: Boolean
   }
   object Chi2 {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Closed extends StObject {
     
-    var closed: Boolean = js.native
+    var closed: Boolean
     
-    var value: Double = js.native
+    var value: Double
   }
   object Closed {
     
@@ -89,14 +85,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Cv extends StObject {
     
-    var cv: Double = js.native
+    var cv: Double
     
-    var mean: Double = js.native
+    var mean: Double
     
-    var std: Double = js.native
+    var std: Double
   }
   object Cv {
     
@@ -120,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait D extends StObject {
     
-    var D: Matrix = js.native
+    var D: Matrix
     
-    var L: Matrix = js.native
+    var L: Matrix
   }
   object D {
     
@@ -146,12 +140,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dim extends StObject {
     
-    var dim: js.UndefOr[Double] = js.native
+    var dim: js.UndefOr[Double] = js.undefined
     
-    var maxHistory: js.UndefOr[Double] = js.native
+    var maxHistory: js.UndefOr[Double] = js.undefined
   }
   object Dim {
     
@@ -178,12 +171,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Passed extends StObject {
     
-    var U: Double = js.native
+    var U: Double
     
-    var passed: Boolean = js.native
+    var passed: Boolean
   }
   object Passed {
     
@@ -204,12 +196,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Rate extends StObject {
     
-    var rate: Double = js.native
+    var rate: Double
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object Rate {
     
@@ -230,12 +221,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Statistics extends StObject {
     
-    var passed: Boolean = js.native
+    var passed: Boolean
     
-    var statistics: Double = js.native
+    var statistics: Double
   }
   object Statistics {
     

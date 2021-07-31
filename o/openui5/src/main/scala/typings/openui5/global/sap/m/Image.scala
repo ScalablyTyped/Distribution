@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.Image")
 @js.native
 class Image protected ()
-  extends typings.openui5.sap.m.Image {
+  extends StObject
+     with typings.openui5.sap.m.Image {
   /**
     * Constructor for a new Image.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

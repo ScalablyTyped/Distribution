@@ -2,13 +2,11 @@ package typings.amapJsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type[N /* <: String */] extends StObject {
   
-  var `type`: N = js.native
+  var `type`: N
 }
 object Type {
   
@@ -20,7 +18,7 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[_], N /* <: String */] (val x: Self with Type[N]) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type[?], N /* <: String */] (val x: Self & Type[N]) extends AnyVal {
     
     @scala.inline
     def setType(value: N): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

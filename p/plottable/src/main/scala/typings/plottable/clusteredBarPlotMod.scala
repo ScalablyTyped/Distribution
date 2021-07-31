@@ -4,7 +4,6 @@ import typings.plottable.barPlotMod.Bar
 import typings.plottable.barPlotMod.BarOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusteredBarPlotMod {

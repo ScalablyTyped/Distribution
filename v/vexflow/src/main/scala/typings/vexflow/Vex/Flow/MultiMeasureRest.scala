@@ -5,11 +5,12 @@ import typings.vexflow.anon.Left
 import typings.vexflow.anon.Linethickness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiMeasureRest extends Element {
+trait MultiMeasureRest
+  extends StObject
+     with Element {
   
   def draw(): Unit = js.native
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetError extends StObject {
   
   /**
     * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
     */
-  var ErrorCode: js.UndefOr[String] = js.native
+  var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error message that describes why the instance could not be launched. For more information about error messages, see Error Codes.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The launch templates and overrides that were used for launching the instances. The values that you specify in the Overrides replace the values in the launch template.
     */
-  var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.native
+  var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
   
   /**
     * Indicates if the instance that could not be launched was a Spot Instance or On-Demand Instance.
     */
-  var Lifecycle: js.UndefOr[InstanceLifecycle] = js.native
+  var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
 }
 object DescribeFleetError {
   

@@ -8,15 +8,13 @@ import typings.gulpUtil.gulpUtilBooleans.`false`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: Path = js.native
+    var file: Path
   }
   object File {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Path {
     

@@ -6,30 +6,29 @@ import typings.babelTypes.babelTypesStrings.`protected`
 import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSParameterProperty_
-  extends LVal
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSParameterProperty_
+  extends StObject
+     with BaseNode
+     with LVal {
   
-  var accessibility: public | `private` | `protected` | Null = js.native
+  var accessibility: public | `private` | `protected` | Null
   
-  var parameter: Identifier_ | AssignmentPattern_ = js.native
+  var parameter: Identifier_ | AssignmentPattern_
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
   @JSName("type")
-  var type_TSParameterProperty_ : TSParameterProperty = js.native
+  var type_TSParameterProperty_ : TSParameterProperty
 }
 object TSParameterProperty_ {
   
   @scala.inline
-  def apply(parameter: Identifier_ | AssignmentPattern_, `type`: TSParameterProperty): TSParameterProperty_ = {
-    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(parameter: Identifier_ | AssignmentPattern_): TSParameterProperty_ = {
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], accessibility = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSParameterProperty")
     __obj.asInstanceOf[TSParameterProperty_]
   }
   

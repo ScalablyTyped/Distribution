@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentFilterSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object contentFilterSmallMod extends Shortcut {
   @js.native
   val default: SFC[ContentFilterSmallProps] = js.native
   
-  @js.native
-  trait ContentFilterSmallProps extends SVGAttributes[SVGElement] {
+  trait ContentFilterSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ContentFilterSmallProps {
     

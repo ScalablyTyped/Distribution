@@ -6,22 +6,22 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdb.RowChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to register a component for confirming deletions of rows in a {@link com.sun.star.form.component.DataForm} .
   * @see XConfirmDeleteBroadcaster
   */
-@js.native
-trait XConfirmDeleteListener extends XEventListener {
+trait XConfirmDeleteListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when the current record of a database form will be deleted.
     * @param aEvent A descriptor specifying the deletion request.
     * @returns `TRUE` when the row can be deleted, otherwise `FALSE` .
     */
-  def confirmDelete(aEvent: RowChangeEvent): Boolean = js.native
+  def confirmDelete(aEvent: RowChangeEvent): Boolean
 }
 object XConfirmDeleteListener {
   

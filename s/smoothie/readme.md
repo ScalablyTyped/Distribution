@@ -10,9 +10,9 @@ Smoothie Charts: smooooooth JavaScript charts for realtime streaming data
 | ------------------ | :-------------: |
 | Full name          | smoothie |
 | Keywords           | charts, charting, realtime, stock-ticker, time series, time-series, responsive |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 47529 |
+| # downloads        | 66888 |
 | # stars            | 6 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.pgPromise.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnSetOptions extends StObject {
   
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
-  var table: js.UndefOr[String | ITable | TableName] = js.native
+  var table: js.UndefOr[String | ITable | TableName] = js.undefined
 }
 object IColumnSetOptions {
   

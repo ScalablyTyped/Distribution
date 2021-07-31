@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This struct extends the original {@link OpenCommandArgument} , which must not be changed for compatibility reasons.
   * @see XCommandProcessor
   */
-@js.native
-trait OpenCommandArgument2 extends OpenCommandArgument {
+trait OpenCommandArgument2
+  extends StObject
+     with OpenCommandArgument {
   
   /**
     * The sort criteria for the rows of the returned {@link ContentResultSet} .
@@ -23,7 +23,7 @@ trait OpenCommandArgument2 extends OpenCommandArgument {
     * The result set implementation may ignore this parameter, if it cannot sort the data by the given criteria in an efficient way (i.e. directly using the
     * underlying data source -> SQL-database -> ORDER BY).
     */
-  var SortingInfo: SafeArray[NumberedSortingInfo] = js.native
+  var SortingInfo: SafeArray[NumberedSortingInfo]
 }
 object OpenCommandArgument2 {
   

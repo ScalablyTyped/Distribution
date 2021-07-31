@@ -2,11 +2,12 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICircleGeometryAccess extends IFreezable {
+trait ICircleGeometryAccess
+  extends StObject
+     with IFreezable {
   
   def contains(position: js.Array[Double]): Boolean = js.native
   

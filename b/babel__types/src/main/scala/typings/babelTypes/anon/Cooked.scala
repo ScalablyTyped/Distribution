@@ -2,15 +2,13 @@ package typings.babelTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cooked extends StObject {
   
-  var cooked: js.UndefOr[String] = js.native
+  var cooked: js.UndefOr[String] = js.undefined
   
-  var raw: String = js.native
+  var raw: String
 }
 object Cooked {
   

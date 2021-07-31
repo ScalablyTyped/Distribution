@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for more information on how to perform signature
   * verification and decryption of a payment response.
   */
-@js.native
 trait DirectTokenizationParameters extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait DirectTokenizationParameters extends StObject {
     * should be using the latest version defined in
     * https://developers.google.com/pay/api/web/payment-data-cryptography.
     */
-  var protocolVersion: String = js.native
+  var protocolVersion: String
   
   /**
     * Elliptic Curve public key suitable for using with the NIST P-126
@@ -41,7 +39,7 @@ trait DirectTokenizationParameters extends StObject {
     *
     * This field is required when the payment method requires encryption.
     */
-  var publicKey: String = js.native
+  var publicKey: String
 }
 object DirectTokenizationParameters {
   

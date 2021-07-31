@@ -2,15 +2,13 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subtext extends StObject {
   
-  var subtext: js.UndefOr[String] = js.native
+  var subtext: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object Subtext {
   

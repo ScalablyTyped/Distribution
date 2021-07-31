@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Rating")
 @js.native
 class Rating protected ()
-  extends typings.ejWebAll.ej.Rating {
+  extends StObject
+     with typings.ejWebAll.ej.Rating {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -34,13 +34,13 @@ object Rating {
   object Precision extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Rating.Precision with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Rating.Precision & Double] = js.native
     
-    /* 0 */ val Exact: typings.ejWebAll.ej.Rating.Precision.Exact with Double = js.native
+    /* 0 */ val Exact: typings.ejWebAll.ej.Rating.Precision.Exact & Double = js.native
     
-    /* 1 */ val Full: typings.ejWebAll.ej.Rating.Precision.Full with Double = js.native
+    /* 1 */ val Full: typings.ejWebAll.ej.Rating.Precision.Full & Double = js.native
     
-    /* 2 */ val Half: typings.ejWebAll.ej.Rating.Precision.Half with Double = js.native
+    /* 2 */ val Half: typings.ejWebAll.ej.Rating.Precision.Half & Double = js.native
   }
   
   /* static member */

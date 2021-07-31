@@ -2,36 +2,34 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAutoScalingGroupRecommendationsRequest extends StObject {
   
   /**
     * The IDs of the AWS accounts for which to return Auto Scaling group recommendations. If your account is the master account of an organization, use this parameter to specify the member accounts for which you want to return Auto Scaling group recommendations. Only one account ID can be specified per request.
     */
-  var accountIds: js.UndefOr[AccountIds] = js.native
+  var accountIds: js.UndefOr[AccountIds] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Auto Scaling groups for which to return recommendations.
     */
-  var autoScalingGroupArns: js.UndefOr[AutoScalingGroupArns] = js.native
+  var autoScalingGroupArns: js.UndefOr[AutoScalingGroupArns] = js.undefined
   
   /**
     * An array of objects that describe a filter that returns a more specific list of Auto Scaling group recommendations.
     */
-  var filters: js.UndefOr[Filters] = js.native
+  var filters: js.UndefOr[Filters] = js.undefined
   
   /**
     * The maximum number of Auto Scaling group recommendations to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to advance to the next page of Auto Scaling group recommendations.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetAutoScalingGroupRecommendationsRequest {
   

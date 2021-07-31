@@ -10,9 +10,9 @@ A service worker helper library that uses the Broadcast Channel API to announce 
 | ------------------ | :-------------: |
 | Full name          | workbox-broadcast-update |
 | Keywords           | workbox, workboxjs, service worker, sw, workbox-plugin |
-| # releases         | 30 |
-| # dependents       | 3 |
-| # downloads        | 84985124 |
+| # releases         | 29 |
+| # dependents       | 6 |
+| # downloads        | 101972414 |
 | # stars            | 0 |
 
 ## Links

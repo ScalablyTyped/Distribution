@@ -2,39 +2,37 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogTheme extends StObject {
   
-  var bg: String = js.native
+  var bg: String
   
-  var cancelFontColor: String = js.native
+  var cancelFontColor: String
   
-  var cancelFontSize: Double = js.native
+  var cancelFontSize: Double
   
-  var cellHeight: Double = js.native
+  var cellHeight: Double
   
-  var confirmFontColor: String = js.native
+  var confirmFontColor: String
   
-  var confirmFontSize: Double = js.native
+  var confirmFontSize: Double
   
-  var lineColor: String = js.native
+  var lineColor: String
   
-  var prompt: PromptTheme = js.native
+  var prompt: PromptTheme
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var subTitleFontColor: String = js.native
+  var subTitleFontColor: String
   
-  var subTitleFontSize: Double = js.native
+  var subTitleFontSize: Double
   
-  var titleFontColor: String = js.native
+  var titleFontColor: String
   
-  var titleFontSize: Double = js.native
+  var titleFontSize: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object DialogTheme {
   

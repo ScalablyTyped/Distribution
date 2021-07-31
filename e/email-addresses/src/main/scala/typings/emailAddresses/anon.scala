@@ -3,23 +3,21 @@ package typings.emailAddresses
 import typings.emailAddresses.emailAddresses.ASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: ASTNode = js.native
+    var address: ASTNode
     
-    var comments: js.Array[ASTNode] = js.native
+    var comments: js.Array[ASTNode]
     
-    var domain: ASTNode = js.native
+    var domain: ASTNode
     
-    var local: ASTNode = js.native
+    var local: ASTNode
     
-    var name: ASTNode = js.native
+    var name: ASTNode
   }
   object Address {
     
@@ -52,10 +50,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: ASTNode = js.native
+    var name: ASTNode
   }
   object Name {
     

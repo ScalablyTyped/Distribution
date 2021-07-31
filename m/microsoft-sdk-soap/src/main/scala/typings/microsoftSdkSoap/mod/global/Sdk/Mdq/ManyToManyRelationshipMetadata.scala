@@ -2,45 +2,43 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManyToManyRelationshipMetadata extends StObject {
   
-  var Entity1AssociatedMenuConfiguration: AssociatedMenuConfiguration = js.native
+  var Entity1AssociatedMenuConfiguration: AssociatedMenuConfiguration
   
-  var Entity1IntersectAttribute: String = js.native
+  var Entity1IntersectAttribute: String
   
-  var Entity1LogicalName: String = js.native
+  var Entity1LogicalName: String
   
-  var Entity2AssociatedMenuConfiguration: AssociatedMenuConfiguration = js.native
+  var Entity2AssociatedMenuConfiguration: AssociatedMenuConfiguration
   
-  var Entity2IntersectAttribute: String = js.native
+  var Entity2IntersectAttribute: String
   
-  var Entity2LogicalName: String = js.native
+  var Entity2LogicalName: String
   
-  var HasChanged: Boolean = js.native
+  var HasChanged: Boolean
   
-  var IntersectEntityName: String = js.native
+  var IntersectEntityName: String
   
-  var IntroducedVersion: js.Any = js.native
+  var IntroducedVersion: js.Any
   
-  var IsCustomRelationship: Boolean = js.native
+  var IsCustomRelationship: Boolean
   
-  var IsCustomizable: ManagedProperty[Boolean] = js.native
+  var IsCustomizable: ManagedProperty[Boolean]
   
-  var IsManaged: Boolean = js.native
+  var IsManaged: Boolean
   
-  var IsValidForAdvancedFind: Boolean = js.native
+  var IsValidForAdvancedFind: Boolean
   
-  var MetadataId: String = js.native
+  var MetadataId: String
   
-  var RelationshipType: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType = js.native
+  var RelationshipType: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType
   
-  var SchemaName: String = js.native
+  var SchemaName: String
   
-  var SecurityTypes: SecurityType = js.native
+  var SecurityTypes: SecurityType
 }
 object ManyToManyRelationshipMetadata {
   

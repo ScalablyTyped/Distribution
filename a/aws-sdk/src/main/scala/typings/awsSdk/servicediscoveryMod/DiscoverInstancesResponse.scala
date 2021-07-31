@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoverInstancesResponse extends StObject {
   
   /**
     * A complex type that contains one HttpInstanceSummary for each registered instance.
     */
-  var Instances: js.UndefOr[HttpInstanceSummaryList] = js.native
+  var Instances: js.UndefOr[HttpInstanceSummaryList] = js.undefined
 }
 object DiscoverInstancesResponse {
   

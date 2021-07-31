@@ -7,7 +7,6 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerComponentMod {
@@ -34,14 +33,13 @@ object headerComponentMod {
     def row: typings.vegaLite.vegaLiteStrings.row = "row".asInstanceOf[typings.vegaLite.vegaLiteStrings.row]
   }
   
-  @js.native
   trait HeaderComponent extends StObject {
     
-    var axes: js.Array[Axis] = js.native
+    var axes: js.Array[Axis]
     
-    var labels: Boolean = js.native
+    var labels: Boolean
     
-    var sizeSignal: Signal = js.native
+    var sizeSignal: Signal
   }
   object HeaderComponent {
     
@@ -82,26 +80,25 @@ object headerComponentMod {
     def header: typings.vegaLite.vegaLiteStrings.header = "header".asInstanceOf[typings.vegaLite.vegaLiteStrings.header]
   }
   
-  @js.native
   trait LayoutHeaderComponent extends StObject {
     
-    var facetFieldDef: js.UndefOr[FacetFieldDef[String, SignalRef]] = js.native
+    var facetFieldDef: js.UndefOr[FacetFieldDef[String, SignalRef]] = js.undefined
     
     /**
       * An array of header components for footers.
       * For facet, there should be only one header component, which is data-driven.
       * For concat, there can be multiple header components that explicitly list different axes.
       */
-    var footer: js.UndefOr[js.Array[HeaderComponent]] = js.native
+    var footer: js.UndefOr[js.Array[HeaderComponent]] = js.undefined
     
     /**
       * An array of header components for headers.
       * For facet, there should be only one header component, which is data-driven.
       * For concat, there can be multiple header components that explicitly list different axes.
       */
-    var header: js.UndefOr[js.Array[HeaderComponent]] = js.native
+    var header: js.UndefOr[js.Array[HeaderComponent]] = js.undefined
     
-    var title: js.UndefOr[Text | SignalRef] = js.native
+    var title: js.UndefOr[Text | SignalRef] = js.undefined
   }
   object LayoutHeaderComponent {
     
@@ -149,14 +146,13 @@ object headerComponentMod {
     }
   }
   
-  @js.native
   trait LayoutHeaderComponentIndex extends StObject {
     
-    var column: js.UndefOr[LayoutHeaderComponent] = js.native
+    var column: js.UndefOr[LayoutHeaderComponent] = js.undefined
     
-    var facet: js.UndefOr[LayoutHeaderComponent] = js.native
+    var facet: js.UndefOr[LayoutHeaderComponent] = js.undefined
     
-    var row: js.UndefOr[LayoutHeaderComponent] = js.native
+    var row: js.UndefOr[LayoutHeaderComponent] = js.undefined
   }
   object LayoutHeaderComponentIndex {
     

@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.standard_
 import typings.chromeApps.chromeAppsStrings.vendor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CLASS extends StObject {
   
-  var CLASS: class_ = js.native
+  var CLASS: class_
   
-  var RESERVED: reserved_ = js.native
+  var RESERVED: reserved_
   
-  var STANDARD: standard_ = js.native
+  var STANDARD: standard_
   
-  var VENDOR: vendor_ = js.native
+  var VENDOR: vendor_
 }
 object CLASS {
   
   @scala.inline
-  def apply(CLASS: class_, RESERVED: reserved_, STANDARD: standard_, VENDOR: vendor_): CLASS = {
-    val __obj = js.Dynamic.literal(CLASS = CLASS.asInstanceOf[js.Any], RESERVED = RESERVED.asInstanceOf[js.Any], STANDARD = STANDARD.asInstanceOf[js.Any], VENDOR = VENDOR.asInstanceOf[js.Any])
+  def apply(): CLASS = {
+    val __obj = js.Dynamic.literal(CLASS = "class", RESERVED = "reserved", STANDARD = "standard", VENDOR = "vendor")
     __obj.asInstanceOf[CLASS]
   }
   

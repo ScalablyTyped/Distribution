@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertificateManagedSslCertificate extends StObject {
   
   /** [Output only] Detailed statuses of the domains specified for managed certificate resource. */
   var domainStatus: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The domains for which a managed SSL certificate will be generated. Currently only single-domain certs are supported. */
-  var domains: js.UndefOr[js.Array[String]] = js.native
+  var domains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output only] Status of the managed certificate resource. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SslCertificateManagedSslCertificate {
   
@@ -37,7 +35,7 @@ object SslCertificateManagedSslCertificate {
     def setDomainStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[js.Any]
     ): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
     @scala.inline

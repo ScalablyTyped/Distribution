@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerMean extends StObject {
   
   /** The number of values being aggregated. */
-  var count: js.UndefOr[SplitInt64] = js.native
+  var count: js.UndefOr[SplitInt64] = js.undefined
   
   /** The sum of all values being aggregated. */
-  var sum: js.UndefOr[SplitInt64] = js.native
+  var sum: js.UndefOr[SplitInt64] = js.undefined
 }
 object IntegerMean {
   

@@ -12,7 +12,7 @@ Library of matcher objects for JavaScript, based on the ideas behind Hamcrest.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 26774 |
+| # downloads        | 37478 |
 | # stars            | 0 |
 
 ## Links

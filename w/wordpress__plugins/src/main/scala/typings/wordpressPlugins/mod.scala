@@ -4,43 +4,42 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@wordpress/plugins", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@wordpress/plugins", "PluginArea")
   @js.native
   val PluginArea: ComponentType[js.Object] = js.native
   
-  @JSImport("@wordpress/plugins", "getPlugin")
-  @js.native
-  def getPlugin(name: String): js.UndefOr[Plugin] = js.native
+  @scala.inline
+  def getPlugin(name: String): js.UndefOr[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Plugin]]
   
-  @JSImport("@wordpress/plugins", "getPlugins")
-  @js.native
-  def getPlugins(): js.Array[Plugin] = js.native
+  @scala.inline
+  def getPlugins(): js.Array[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugins")().asInstanceOf[js.Array[Plugin]]
   
-  @JSImport("@wordpress/plugins", "registerPlugin")
-  @js.native
-  def registerPlugin(name: String, settings: PluginSettings): PluginSettings = js.native
+  @scala.inline
+  def registerPlugin(name: String, settings: PluginSettings): PluginSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[PluginSettings]
   
-  @JSImport("@wordpress/plugins", "unregisterPlugin")
-  @js.native
-  def unregisterPlugin(name: String): js.UndefOr[Plugin] = js.native
+  @scala.inline
+  def unregisterPlugin(name: String): js.UndefOr[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Plugin]]
   
-  @JSImport("@wordpress/plugins", "withPluginContext")
-  @js.native
-  def withPluginContext[CP, OP](mapContextToProps: js.Function2[/* context */ PluginContext, /* props */ OP, CP]): js.Function1[/* Component */ ComponentType[CP with OP], ComponentType[OP]] = js.native
+  @scala.inline
+  def withPluginContext[CP, OP](mapContextToProps: js.Function2[/* context */ PluginContext, /* props */ OP, CP]): js.Function1[/* Component */ ComponentType[CP & OP], ComponentType[OP]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withPluginContext")(mapContextToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[CP & OP], ComponentType[OP]]]
   
-  @js.native
-  trait Plugin extends PluginSettings {
+  trait Plugin
+    extends StObject
+       with PluginSettings {
     
     /**
       * A string identifying the plugin. Must be unique across all registered
       * plugins.
       */
-    var name: String = js.native
+    var name: String
   }
   object Plugin {
     
@@ -59,12 +58,11 @@ object mod {
   }
   
   /* Inlined std.Omit<@wordpress/plugins.@wordpress/plugins.Plugin, 'render'> */
-  @js.native
   trait PluginContext extends StObject {
     
-    var icon: Icon | ComponentType[js.Object] = js.native
+    var icon: Icon | ComponentType[js.Object]
     
-    var name: String = js.native
+    var name: String
   }
   object PluginContext {
     
@@ -85,7 +83,6 @@ object mod {
     }
   }
   
-  @js.native
   trait PluginSettings extends StObject {
     
     /**
@@ -93,12 +90,12 @@ object mod {
       * element (or function returning an element) if you choose to render your
       * own SVG.
       */
-    var icon: Icon | ComponentType[js.Object] = js.native
+    var icon: Icon | ComponentType[js.Object]
     
     /**
       * A component containing the UI elements to be rendered.
       */
-    var render: ComponentType[js.Object] = js.native
+    var render: ComponentType[js.Object]
   }
   object PluginSettings {
     

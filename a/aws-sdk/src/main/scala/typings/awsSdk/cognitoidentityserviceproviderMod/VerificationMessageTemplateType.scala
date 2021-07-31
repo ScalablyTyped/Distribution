@@ -2,41 +2,39 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerificationMessageTemplateType extends StObject {
   
   /**
     * The default email option.
     */
-  var DefaultEmailOption: js.UndefOr[DefaultEmailOptionType] = js.native
+  var DefaultEmailOption: js.UndefOr[DefaultEmailOptionType] = js.undefined
   
   /**
     * The email message template.
     */
-  var EmailMessage: js.UndefOr[EmailVerificationMessageType] = js.native
+  var EmailMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
     * The email message template for sending a confirmation link to the user.
     */
-  var EmailMessageByLink: js.UndefOr[EmailVerificationMessageByLinkType] = js.native
+  var EmailMessageByLink: js.UndefOr[EmailVerificationMessageByLinkType] = js.undefined
   
   /**
     * The subject line for the email message template.
     */
-  var EmailSubject: js.UndefOr[EmailVerificationSubjectType] = js.native
+  var EmailSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
     * The subject line for the email message template for sending a confirmation link to the user.
     */
-  var EmailSubjectByLink: js.UndefOr[EmailVerificationSubjectByLinkType] = js.native
+  var EmailSubjectByLink: js.UndefOr[EmailVerificationSubjectByLinkType] = js.undefined
   
   /**
     * The SMS message template.
     */
-  var SmsMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
 }
 object VerificationMessageTemplateType {
   

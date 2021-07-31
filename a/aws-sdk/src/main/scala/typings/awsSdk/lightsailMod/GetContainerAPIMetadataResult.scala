@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContainerAPIMetadataResult extends StObject {
   
   /**
     * Metadata about Lightsail containers, such as the current version of the Lightsail Control (lightsailctl) plugin.
     */
-  var metadata: js.UndefOr[ContainerServiceMetadataEntryList] = js.native
+  var metadata: js.UndefOr[ContainerServiceMetadataEntryList] = js.undefined
 }
 object GetContainerAPIMetadataResult {
   

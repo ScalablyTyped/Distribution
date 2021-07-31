@@ -3,23 +3,21 @@ package typings.winkPosTagger
 import typings.winkPosTagger.winkPosTaggerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lemma extends StObject {
     
-    var lemma: `true` = js.native
+    var lemma: `true`
     
-    var normal: `true` = js.native
+    var normal: `true`
   }
   object Lemma {
     
     @scala.inline
-    def apply(lemma: `true`, normal: `true`): Lemma = {
-      val __obj = js.Dynamic.literal(lemma = lemma.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any])
+    def apply(): Lemma = {
+      val __obj = js.Dynamic.literal(lemma = true, normal = true)
       __obj.asInstanceOf[Lemma]
     }
     

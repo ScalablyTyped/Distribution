@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListIntentsResponse. */
-@js.native
 trait IListIntentsResponse extends StObject {
   
   /** ListIntentsResponse intents */
-  var intents: js.UndefOr[js.Array[IIntent] | Null] = js.native
+  var intents: js.UndefOr[js.Array[IIntent] | Null] = js.undefined
   
   /** ListIntentsResponse nextPageToken */
-  var nextPageToken: js.UndefOr[String | Null] = js.native
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object IListIntentsResponse {
   

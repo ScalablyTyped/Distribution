@@ -7,40 +7,40 @@ import typings.electronGet.typesMod.ElectronPlatformArtifactDetailsWithDefaults
 import typings.electronGet.typesMod.MirrorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @electron/get.@electron/get/dist/cjs/types.Omit<@electron/get.@electron/get/dist/cjs/types.ElectronPlatformArtifactDetails, 'platform' | 'arch'> & {  platform :string | undefined,   arch :string | undefined} */
-  @js.native
-  trait OmitElectronPlatformArtif extends ElectronPlatformArtifactDetailsWithDefaults {
+  trait OmitElectronPlatformArtif
+    extends StObject
+       with ElectronPlatformArtifactDetailsWithDefaults {
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var artifactName: String = js.native
+    var artifactName: String
     
-    var artifactSuffix: js.UndefOr[String] = js.native
+    var artifactSuffix: js.UndefOr[String] = js.undefined
     
-    var cacheRoot: js.UndefOr[String] = js.native
+    var cacheRoot: js.UndefOr[String] = js.undefined
     
-    var downloadOptions: js.UndefOr[DownloadOptions] = js.native
+    var downloadOptions: js.UndefOr[DownloadOptions] = js.undefined
     
-    var downloader: js.UndefOr[Downloader[_]] = js.native
+    var downloader: js.UndefOr[Downloader[js.Any]] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var isGeneric: js.UndefOr[`false`] = js.native
+    var isGeneric: js.UndefOr[`false`] = js.undefined
     
-    var mirrorOptions: js.UndefOr[MirrorOptions] = js.native
+    var mirrorOptions: js.UndefOr[MirrorOptions] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var tempDirectory: js.UndefOr[String] = js.native
+    var tempDirectory: js.UndefOr[String] = js.undefined
     
-    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
+    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object OmitElectronPlatformArtif {
     
@@ -81,7 +81,7 @@ object anon {
       def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
       
       @scala.inline
-      def setDownloader(value: Downloader[_]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+      def setDownloader(value: Downloader[js.Any]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
@@ -128,35 +128,35 @@ object anon {
   }
   
   /* Inlined @electron/get.@electron/get/dist/esm/types.Omit<@electron/get.@electron/get/dist/esm/types.ElectronPlatformArtifactDetails, 'platform' | 'arch'> & {  platform :string | undefined,   arch :string | undefined} */
-  @js.native
   trait OmitElectronPlatformArtifArch
-    extends typings.electronGet.esmTypesMod.ElectronPlatformArtifactDetailsWithDefaults {
+    extends StObject
+       with typings.electronGet.esmTypesMod.ElectronPlatformArtifactDetailsWithDefaults {
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var artifactName: String = js.native
+    var artifactName: String
     
-    var artifactSuffix: js.UndefOr[String] = js.native
+    var artifactSuffix: js.UndefOr[String] = js.undefined
     
-    var cacheRoot: js.UndefOr[String] = js.native
+    var cacheRoot: js.UndefOr[String] = js.undefined
     
-    var downloadOptions: js.UndefOr[typings.electronGet.esmTypesMod.DownloadOptions] = js.native
+    var downloadOptions: js.UndefOr[typings.electronGet.esmTypesMod.DownloadOptions] = js.undefined
     
-    var downloader: js.UndefOr[typings.electronGet.esmDownloaderMod.Downloader[_]] = js.native
+    var downloader: js.UndefOr[typings.electronGet.esmDownloaderMod.Downloader[js.Any]] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var isGeneric: js.UndefOr[`false`] = js.native
+    var isGeneric: js.UndefOr[`false`] = js.undefined
     
-    var mirrorOptions: js.UndefOr[typings.electronGet.esmTypesMod.MirrorOptions] = js.native
+    var mirrorOptions: js.UndefOr[typings.electronGet.esmTypesMod.MirrorOptions] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var tempDirectory: js.UndefOr[String] = js.native
+    var tempDirectory: js.UndefOr[String] = js.undefined
     
-    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
+    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object OmitElectronPlatformArtifArch {
     
@@ -197,7 +197,7 @@ object anon {
       def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
       
       @scala.inline
-      def setDownloader(value: typings.electronGet.esmDownloaderMod.Downloader[_]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+      def setDownloader(value: typings.electronGet.esmDownloaderMod.Downloader[js.Any]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)

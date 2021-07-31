@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod extends Shortcut {
@@ -15,15 +14,16 @@ object circleMod extends Shortcut {
   @js.native
   val default: FC[CircleProps] = js.native
   
-  @js.native
-  trait CircleProps extends ProgressProps {
+  trait CircleProps
+    extends StObject
+       with ProgressProps {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     @JSName("prefixCls")
-    var prefixCls_CircleProps: String = js.native
+    var prefixCls_CircleProps: String
     
-    var progressStatus: String = js.native
+    var progressStatus: String
   }
   object CircleProps {
     

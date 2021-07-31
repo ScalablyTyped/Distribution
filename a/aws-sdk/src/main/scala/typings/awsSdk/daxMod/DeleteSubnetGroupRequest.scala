@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSubnetGroupRequest extends StObject {
   
   /**
     * The name of the subnet group to delete.
     */
-  var SubnetGroupName: String = js.native
+  var SubnetGroupName: String
 }
 object DeleteSubnetGroupRequest {
   

@@ -2,23 +2,21 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMetadataResponse extends StObject {
   
   /**
     * the entries count
     */
-  var entriesCount: Double = js.native
+  var entriesCount: Double
   
   /**
     * the current value of key generator, to become the next inserted
     * key into the object store. Valid if objectStore.autoIncrement
     * is true.
     */
-  var keyGeneratorValue: Double = js.native
+  var keyGeneratorValue: Double
 }
 object GetMetadataResponse {
   

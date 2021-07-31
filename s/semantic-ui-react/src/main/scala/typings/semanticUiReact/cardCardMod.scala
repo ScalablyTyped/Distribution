@@ -24,7 +24,6 @@ import typings.semanticUiReact.imageImageMod.ImageProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardCardMod extends Shortcut {
@@ -42,7 +41,9 @@ object cardCardMod extends Shortcut {
   val default: CardComponent = js.native
   
   @js.native
-  trait CardComponent extends ComponentClass[CardProps, ComponentState] {
+  trait CardComponent
+    extends StObject
+       with ComponentClass[CardProps, ComponentState] {
     
     var Content: StatelessComponent[CardContentProps] = js.native
     
@@ -55,9 +56,9 @@ object cardCardMod extends Shortcut {
     var Meta: StatelessComponent[CardMetaProps] = js.native
   }
   
-  @js.native
   trait CardProps
-    extends StrictCardProps
+    extends StObject
+       with StrictCardProps
        with /* key */ StringDictionary[js.Any]
   object CardProps {
     
@@ -68,50 +69,49 @@ object cardCardMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCardProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A Card can center itself inside its container. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A Card can be formatted to display different colors. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for CardDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[CardDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[CardDescriptionProps]] = js.undefined
     
     /** Shorthand for primary content of CardContent. */
-    var extra: js.UndefOr[SemanticShorthandContent] = js.native
+    var extra: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A Card can be formatted to take up the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for CardHeader. */
-    var header: js.UndefOr[SemanticShorthandItem[CardHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[CardHeaderProps]] = js.undefined
     
     /** Render as an `a` tag instead of a `div` and adds the href attribute. */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** A card can contain an Image component. */
-    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.native
+    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.undefined
     
     /** A card can be formatted to link to other content. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for CardMeta. */
-    var meta: js.UndefOr[SemanticShorthandItem[CardMetaProps]] = js.native
+    var meta: js.UndefOr[SemanticShorthandItem[CardMetaProps]] = js.undefined
     
     /**
       * Called on click. When passed, the component renders as an `a`
@@ -126,10 +126,10 @@ object cardCardMod extends Shortcut {
           /* data */ CardProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A Card can be formatted to raise above the page. */
-    var raised: js.UndefOr[Boolean] = js.native
+    var raised: js.UndefOr[Boolean] = js.undefined
   }
   object StrictCardProps {
     

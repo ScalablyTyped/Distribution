@@ -3,16 +3,15 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.encodeMod.ScaledValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldScale
-  extends ScaledValueRef[js.Any] {
+  extends StObject
+     with ScaledValueRef[js.Any] {
   
-  var field: typings.vegaTypings.encodeMod.Field = js.native
+  var field: typings.vegaTypings.encodeMod.Field
   
-  var scale: typings.vegaTypings.encodeMod.Field = js.native
+  var scale: typings.vegaTypings.encodeMod.Field
 }
 object FieldScale {
   

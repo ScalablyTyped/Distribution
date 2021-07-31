@@ -2,31 +2,29 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployOptions extends StObject {
   
-  var allowMissingFiles: js.UndefOr[Boolean] = js.native
+  var allowMissingFiles: js.UndefOr[Boolean] = js.undefined
   
-  var autoUpdatePackage: js.UndefOr[Boolean] = js.native
+  var autoUpdatePackage: js.UndefOr[Boolean] = js.undefined
   
-  var checkOnly: js.UndefOr[Boolean] = js.native
+  var checkOnly: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreWarnings: js.UndefOr[Boolean] = js.native
+  var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var performRetrieve: js.UndefOr[Boolean] = js.native
+  var performRetrieve: js.UndefOr[Boolean] = js.undefined
   
-  var purgeOnDelete: js.UndefOr[Boolean] = js.native
+  var purgeOnDelete: js.UndefOr[Boolean] = js.undefined
   
-  var rollbackOnError: js.UndefOr[Boolean] = js.native
+  var rollbackOnError: js.UndefOr[Boolean] = js.undefined
   
-  var runAllTests: js.UndefOr[Boolean] = js.native
+  var runAllTests: js.UndefOr[Boolean] = js.undefined
   
-  var runTests: js.UndefOr[js.Array[String]] = js.native
+  var runTests: js.UndefOr[js.Array[String]] = js.undefined
   
-  var singlePackage: js.UndefOr[Boolean] = js.native
+  var singlePackage: js.UndefOr[Boolean] = js.undefined
 }
 object DeployOptions {
   

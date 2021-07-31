@@ -19,14 +19,13 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XForms
-  extends XNameContainer
+  extends StObject
      with XContainer
+     with XNameContainer
      with XIndexContainer
      with XEnumerationAccess
      with XEventAttacherManager

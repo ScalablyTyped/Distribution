@@ -2,16 +2,14 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBudgetResponse extends StObject {
   
   /**
     * The description of the budget.
     */
-  var Budget: js.UndefOr[typings.awsSdk.budgetsMod.Budget] = js.native
+  var Budget: js.UndefOr[typings.awsSdk.budgetsMod.Budget] = js.undefined
 }
 object DescribeBudgetResponse {
   

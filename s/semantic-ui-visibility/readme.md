@@ -12,7 +12,7 @@ Single component release of visibility
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6993 |
+| # downloads        | 6354 |
 | # stars            | 0 |
 
 ## Links

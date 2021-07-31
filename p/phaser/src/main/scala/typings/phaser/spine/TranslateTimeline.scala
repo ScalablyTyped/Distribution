@@ -2,17 +2,17 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TranslateTimeline extends CurveTimeline {
+trait TranslateTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var boneIndex: Double = js.native
+  var boneIndex: Double
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def setFrame(frameIndex: Double, time: Double, x: Double, y: Double): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, x: Double, y: Double): Unit
 }
 object TranslateTimeline {
   

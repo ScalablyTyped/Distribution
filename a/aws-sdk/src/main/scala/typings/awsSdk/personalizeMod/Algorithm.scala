@@ -2,61 +2,59 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Algorithm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm.
     */
-  var algorithmArn: js.UndefOr[Arn] = js.native
+  var algorithmArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The URI of the Docker container for the algorithm image.
     */
-  var algorithmImage: js.UndefOr[AlgorithmImage] = js.native
+  var algorithmImage: js.UndefOr[AlgorithmImage] = js.undefined
   
   /**
     * The date and time (in Unix time) that the algorithm was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Specifies the default hyperparameters, their ranges, and whether they are tunable. A tunable hyperparameter can have its value determined during hyperparameter optimization (HPO).
     */
-  var defaultHyperParameterRanges: js.UndefOr[DefaultHyperParameterRanges] = js.native
+  var defaultHyperParameterRanges: js.UndefOr[DefaultHyperParameterRanges] = js.undefined
   
   /**
     * Specifies the default hyperparameters.
     */
-  var defaultHyperParameters: js.UndefOr[HyperParameters] = js.native
+  var defaultHyperParameters: js.UndefOr[HyperParameters] = js.undefined
   
   /**
     * Specifies the default maximum number of training jobs and parallel training jobs.
     */
-  var defaultResourceConfig: js.UndefOr[ResourceConfig] = js.native
+  var defaultResourceConfig: js.UndefOr[ResourceConfig] = js.undefined
   
   /**
     * The date and time (in Unix time) that the algorithm was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the algorithm.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role.
     */
-  var roleArn: js.UndefOr[Arn] = js.native
+  var roleArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The training input mode.
     */
-  var trainingInputMode: js.UndefOr[TrainingInputMode] = js.native
+  var trainingInputMode: js.UndefOr[TrainingInputMode] = js.undefined
 }
 object Algorithm {
   

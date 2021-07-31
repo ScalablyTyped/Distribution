@@ -2,49 +2,98 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportSettingsMod {
   
   @JSImport("amcharts/ExportSettings", JSImport.Default)
   @js.native
-  class default () extends ExportSettings
-  
-  @js.native
-  trait ExportSettings extends StObject {
+  class default ()
+    extends StObject
+       with ExportSettings {
     
-    def capture(config: js.Any, callback: js.Function0[Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def capture(config: js.Any, callback: js.Function0[Unit]): js.Any = js.native
     
+    /* CompleteClass */
     var config: js.Any = js.native
     
+    /* CompleteClass */
     var enabled: Boolean = js.native
     
+    /* CompleteClass */
     var libs: js.Object = js.native
     
+    /* CompleteClass */
     var menu: js.Object = js.native
     
-    def toArray(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toArray(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toBlob(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toBlob(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toCSV(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toCSV(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toCanvas(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toCanvas(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toImage(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toImage(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toJPG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toJPG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toJSON(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toPDF(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toPDF(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toPNG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toPNG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toSVG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toSVG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
     
-    def toXLSX(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def toXLSX(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+  }
+  
+  trait ExportSettings extends StObject {
+    
+    def capture(config: js.Any, callback: js.Function0[Unit]): js.Any
+    
+    var config: js.Any
+    
+    var enabled: Boolean
+    
+    var libs: js.Object
+    
+    var menu: js.Object
+    
+    def toArray(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toBlob(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toCSV(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toCanvas(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toImage(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toJPG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toJSON(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toPDF(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toPNG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toSVG(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
+    
+    def toXLSX(options: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Any
   }
   object ExportSettings {
     

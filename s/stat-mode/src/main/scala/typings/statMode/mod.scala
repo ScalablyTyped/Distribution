@@ -2,20 +2,20 @@ package typings.statMode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Mode = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mode]
+  @scala.inline
+  def apply(stat: Double): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  @scala.inline
+  def apply(stat: StatsMode): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  
   @JSImport("stat-mode", JSImport.Namespace)
   @js.native
-  def apply(): Mode = js.native
-  @JSImport("stat-mode", JSImport.Namespace)
-  @js.native
-  def apply(stat: Double): Mode = js.native
-  @JSImport("stat-mode", JSImport.Namespace)
-  @js.native
-  def apply(stat: StatsMode): Mode = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("stat-mode", "Group")
   @js.native
@@ -217,15 +217,13 @@ object mod {
     def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("stat-mode", "isStatsMode")
-  @js.native
-  def isStatsMode(v: js.Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = js.native
+  @scala.inline
+  def isStatsMode(v: js.Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatsMode")(v.asInstanceOf[js.Any]).asInstanceOf[/* is stat-mode.stat-mode.StatsMode */ Boolean]
   
   /* Inlined std.Pick<node.fs.Stats, 'mode'> */
-  @js.native
   trait StatsMode extends StObject {
     
-    var mode: Double = js.native
+    var mode: Double
   }
   object StatsMode {
     

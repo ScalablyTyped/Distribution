@@ -11,7 +11,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Mention
 import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait CommentCollection extends ClientObject {
+trait CommentCollection
+  extends StObject
+     with ClientObject {
   
   def add(cellAddress: String, content: String): Comment = js.native
   def add(cellAddress: String, content: String, contentType: ContentType): Comment = js.native
@@ -114,7 +115,7 @@ trait CommentCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CommentCollection = js.native
-  def load(options: CommentCollectionLoadOptions with CollectionLoadOptions): CommentCollection = js.native
+  def load(options: CommentCollectionLoadOptions & CollectionLoadOptions): CommentCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): CommentCollection = js.native
   def load(propertyNames: String): CommentCollection = js.native
   def load(propertyNames: js.Array[String]): CommentCollection = js.native

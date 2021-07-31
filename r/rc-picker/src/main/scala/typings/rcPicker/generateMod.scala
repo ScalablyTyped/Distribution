@@ -3,57 +3,55 @@ package typings.rcPicker
 import typings.rcPicker.anon.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateMod {
   
-  @js.native
   trait GenerateConfig[DateType] extends StObject {
     
-    def addDate(value: DateType, diff: Double): DateType = js.native
+    def addDate(value: DateType, diff: Double): DateType
     
-    def addMonth(value: DateType, diff: Double): DateType = js.native
+    def addMonth(value: DateType, diff: Double): DateType
     
-    def addYear(value: DateType, diff: Double): DateType = js.native
+    def addYear(value: DateType, diff: Double): DateType
     
-    def getDate(value: DateType): Double = js.native
+    def getDate(value: DateType): Double
     
-    def getEndDate(value: DateType): DateType = js.native
+    def getEndDate(value: DateType): DateType
     
-    def getFixedDate(fixed: String): DateType = js.native
+    def getFixedDate(fixed: String): DateType
     
-    def getHour(value: DateType): Double = js.native
+    def getHour(value: DateType): Double
     
-    def getMinute(value: DateType): Double = js.native
+    def getMinute(value: DateType): Double
     
-    def getMonth(value: DateType): Double = js.native
+    def getMonth(value: DateType): Double
     
-    def getNow(): DateType = js.native
+    def getNow(): DateType
     
-    def getSecond(value: DateType): Double = js.native
+    def getSecond(value: DateType): Double
     
-    def getWeekDay(value: DateType): Double = js.native
+    def getWeekDay(value: DateType): Double
     
-    def getYear(value: DateType): Double = js.native
+    def getYear(value: DateType): Double
     
-    def isAfter(date1: DateType, date2: DateType): Boolean = js.native
+    def isAfter(date1: DateType, date2: DateType): Boolean
     
-    def isValidate(date: DateType): Boolean = js.native
+    def isValidate(date: DateType): Boolean
     
-    var locale: Format[DateType] = js.native
+    var locale: Format[DateType]
     
-    def setDate(value: DateType, date: Double): DateType = js.native
+    def setDate(value: DateType, date: Double): DateType
     
-    def setHour(value: DateType, hour: Double): DateType = js.native
+    def setHour(value: DateType, hour: Double): DateType
     
-    def setMinute(value: DateType, minute: Double): DateType = js.native
+    def setMinute(value: DateType, minute: Double): DateType
     
-    def setMonth(value: DateType, month: Double): DateType = js.native
+    def setMonth(value: DateType, month: Double): DateType
     
-    def setSecond(value: DateType, second: Double): DateType = js.native
+    def setSecond(value: DateType, second: Double): DateType
     
-    def setYear(value: DateType, year: Double): DateType = js.native
+    def setYear(value: DateType, year: Double): DateType
   }
   object GenerateConfig {
     
@@ -87,7 +85,7 @@ object generateMod {
     }
     
     @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[_], DateType] (val x: Self with GenerateConfig[DateType]) extends AnyVal {
+    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
       
       @scala.inline
       def setAddDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "addDate", js.Any.fromFunction2(value))

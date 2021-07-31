@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishRecipeResponse extends StObject {
   
   /**
     * The name of the recipe that you published.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
 }
 object PublishRecipeResponse {
   

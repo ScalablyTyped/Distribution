@@ -2,56 +2,54 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDescription extends StObject {
   
   /**
     * Returns the in-application stream names that are mapped to the stream source.
     */
-  var InAppStreamNames: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InAppStreamNames] = js.native
+  var InAppStreamNames: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InAppStreamNames] = js.undefined
   
   /**
     * Input ID associated with the application input. This is the ID that Amazon Kinesis Analytics assigns to each input configuration you add to your application. 
     */
-  var InputId: js.UndefOr[Id] = js.native
+  var InputId: js.UndefOr[Id] = js.undefined
   
   /**
     * Describes the configured parallelism (number of in-application streams mapped to the streaming source).
     */
-  var InputParallelism: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputParallelism] = js.native
+  var InputParallelism: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputParallelism] = js.undefined
   
   /**
     * The description of the preprocessor that executes on records in this input before the application's code is run.
     */
-  var InputProcessingConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputProcessingConfigurationDescription] = js.native
+  var InputProcessingConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputProcessingConfigurationDescription] = js.undefined
   
   /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. 
     */
-  var InputSchema: js.UndefOr[SourceSchema] = js.native
+  var InputSchema: js.UndefOr[SourceSchema] = js.undefined
   
   /**
     * Point at which the application is configured to read from the input stream.
     */
-  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration] = js.native
+  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration] = js.undefined
   
   /**
     * If an Amazon Kinesis Firehose delivery stream is configured as a streaming source, provides the delivery stream's ARN and an IAM role that enables Amazon Kinesis Analytics to access the stream on your behalf.
     */
-  var KinesisFirehoseInputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseInputDescription] = js.native
+  var KinesisFirehoseInputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseInputDescription] = js.undefined
   
   /**
     * If an Amazon Kinesis stream is configured as streaming source, provides Amazon Kinesis stream's Amazon Resource Name (ARN) and an IAM role that enables Amazon Kinesis Analytics to access the stream on your behalf.
     */
-  var KinesisStreamsInputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsInputDescription] = js.native
+  var KinesisStreamsInputDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsInputDescription] = js.undefined
   
   /**
     * In-application name prefix.
     */
-  var NamePrefix: js.UndefOr[InAppStreamName] = js.native
+  var NamePrefix: js.UndefOr[InAppStreamName] = js.undefined
 }
 object InputDescription {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEC2InstanceRecommendationsResponse extends StObject {
   
   /**
     * An array of objects that describe errors of the request. For example, an error is returned if you request recommendations for an instance of an unsupported instance family.
     */
-  var errors: js.UndefOr[GetRecommendationErrors] = js.native
+  var errors: js.UndefOr[GetRecommendationErrors] = js.undefined
   
   /**
     * An array of objects that describe instance recommendations.
     */
-  var instanceRecommendations: js.UndefOr[InstanceRecommendations] = js.native
+  var instanceRecommendations: js.UndefOr[InstanceRecommendations] = js.undefined
   
   /**
     * The token to use to advance to the next page of instance recommendations. This value is null when there are no more pages of instance recommendations to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetEC2InstanceRecommendationsResponse {
   

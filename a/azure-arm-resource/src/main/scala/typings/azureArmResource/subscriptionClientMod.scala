@@ -9,7 +9,6 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionClientMod {
@@ -44,12 +43,8 @@ object subscriptionClientMod {
       */
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String) = this()
-    def this(
-      credentials: ServiceClientCredentials,
-      baseUri: js.UndefOr[scala.Nothing],
-      options: AzureServiceClientOptions
-    ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
+    def this(credentials: ServiceClientCredentials, baseUri: Unit, options: AzureServiceClientOptions) = this()
   }
   
   @JSImport("azure-arm-resource/lib/subscription/subscriptionClient", "SubscriptionClient")
@@ -82,12 +77,8 @@ object subscriptionClientMod {
       */
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String) = this()
-    def this(
-      credentials: ServiceClientCredentials,
-      baseUri: js.UndefOr[scala.Nothing],
-      options: AzureServiceClientOptions
-    ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
+    def this(credentials: ServiceClientCredentials, baseUri: Unit, options: AzureServiceClientOptions) = this()
     
     var acceptLanguage: String = js.native
     

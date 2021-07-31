@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a successful or unsuccessful completion of an authentication operation. */
-@js.native
 trait AllJoynAuthenticationCompleteEventArgs extends StObject {
   
   /** The mechanism used during authentication. */
-  var authenticationMechanism: AllJoynAuthenticationMechanism = js.native
+  var authenticationMechanism: AllJoynAuthenticationMechanism
   
   /** The unique bus name of the Consumer being authenticated. On the initiating side this will be the unique bus name of the remote app being authenticated. On the accepting side this will be the unique bus name for the remote app. */
-  var peerUniqueName: String = js.native
+  var peerUniqueName: String
   
   /** Indicates if the remote app was authenticated. */
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object AllJoynAuthenticationCompleteEventArgs {
   

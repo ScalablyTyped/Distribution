@@ -4,15 +4,13 @@ import typings.node.Buffer
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudPath extends StObject {
   
-  var cloudPath: String = js.native
+  var cloudPath: String
   
-  var fileContent: Buffer | ReadStream = js.native
+  var fileContent: Buffer | ReadStream
 }
 object CloudPath {
   

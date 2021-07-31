@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.dom.elementPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait command
-  extends event
+  extends StObject
+     with event
      with commandDefinition {
   
   def checkAllowed(noCache: Boolean): Boolean = js.native
@@ -35,5 +35,5 @@ trait command
   
   def toggleState(): Unit = js.native
   
-  var uiItems: js.Array[_] = js.native
+  var uiItems: js.Array[js.Any] = js.native
 }

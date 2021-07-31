@@ -4,21 +4,19 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import typings.devtoolsProtocol.mod.Protocol.Network.CookieParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetCookiesRequest extends StObject {
   
   /**
     * Browser context to use when called on the browser endpoint.
     */
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
   
   /**
     * Cookies to be set.
     */
-  var cookies: js.Array[CookieParam] = js.native
+  var cookies: js.Array[CookieParam]
 }
 object SetCookiesRequest {
   

@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -24,7 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * newly created layer
   */
 class Layer ()
-  extends typings.paper.paper.Layer {
+  extends StObject
+     with typings.paper.paper.Layer {
   def this(children: js.Array[typings.paper.paper.Item]) = this()
   /** 
     * Creates a new Layer item and places it at the end of the

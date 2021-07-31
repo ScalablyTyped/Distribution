@@ -3,7 +3,6 @@ package typings.awsLambda
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerMod {
@@ -14,14 +13,13 @@ object handlerMod {
     Unit
   ]
   
-  @js.native
   trait ClientContext extends StObject {
     
-    var Custom: js.UndefOr[js.Any] = js.native
+    var Custom: js.UndefOr[js.Any] = js.undefined
     
-    var client: ClientContextClient = js.native
+    var client: ClientContextClient
     
-    var env: ClientContextEnv = js.native
+    var env: ClientContextEnv
   }
   object ClientContext {
     
@@ -48,18 +46,17 @@ object handlerMod {
     }
   }
   
-  @js.native
   trait ClientContextClient extends StObject {
     
-    var appPackageName: String = js.native
+    var appPackageName: String
     
-    var appTitle: String = js.native
+    var appTitle: String
     
-    var appVersionCode: String = js.native
+    var appVersionCode: String
     
-    var appVersionName: String = js.native
+    var appVersionName: String
     
-    var installationId: String = js.native
+    var installationId: String
   }
   object ClientContextClient {
     
@@ -95,18 +92,17 @@ object handlerMod {
     }
   }
   
-  @js.native
   trait ClientContextEnv extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var make: String = js.native
+    var make: String
     
-    var model: String = js.native
+    var model: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var platformVersion: String = js.native
+    var platformVersion: String
   }
   object ClientContextEnv {
     
@@ -136,12 +132,11 @@ object handlerMod {
     }
   }
   
-  @js.native
   trait CognitoIdentity extends StObject {
     
-    var cognitoIdentityId: String = js.native
+    var cognitoIdentityId: String
     
-    var cognitoIdentityPoolId: String = js.native
+    var cognitoIdentityPoolId: String
   }
   object CognitoIdentity {
     
@@ -176,7 +171,7 @@ object handlerMod {
     // as of the 12.x runtime, so they are not removed from the types.
     /** @deprecated Use handler callback or promise result */
     def done(): Unit = js.native
-    def done(error: js.UndefOr[scala.Nothing], result: js.Any): Unit = js.native
+    def done(error: Unit, result: js.Any): Unit = js.native
     def done(error: Error): Unit = js.native
     def done(error: Error, result: js.Any): Unit = js.native
     

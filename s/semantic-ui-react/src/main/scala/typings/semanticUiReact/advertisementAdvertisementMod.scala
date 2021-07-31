@@ -30,7 +30,6 @@ import typings.semanticUiReact.semanticUiReactStrings.skyscraper
 import typings.semanticUiReact.semanticUiReactStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object advertisementAdvertisementMod extends Shortcut {
@@ -39,9 +38,9 @@ object advertisementAdvertisementMod extends Shortcut {
   @js.native
   val default: StatelessComponent[AdvertisementProps] = js.native
   
-  @js.native
   trait AdvertisementProps
-    extends StrictAdvertisementProps
+    extends StObject
+       with StrictAdvertisementProps
        with /* key */ StringDictionary[js.Any]
   object AdvertisementProps {
     
@@ -54,29 +53,28 @@ object advertisementAdvertisementMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictAdvertisementProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Center the advertisement. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Text to be displayed on the advertisement. */
-    var test: js.UndefOr[Boolean | String | Double] = js.native
+    var test: js.UndefOr[Boolean | String | Double] = js.undefined
     
     /** Varies the size of the advertisement. */
-    var unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`) = js.native
+    var unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
   }
   object StrictAdvertisementProps {
     

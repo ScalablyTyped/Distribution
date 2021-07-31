@@ -9,12 +9,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -22,7 +21,7 @@ trait PopupProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions)
     */
-  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.native
+  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.undefined
   
   /**
     * Position of the popup in relation to the selected feature.
@@ -31,154 +30,154 @@ trait PopupProperties
     */
   var alignment: js.UndefOr[
     auto | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` | js.Function
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoCloseEnabled)
     */
-  var autoCloseEnabled: js.UndefOr[Boolean] = js.native
+  var autoCloseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoOpenEnabled)
     */
-  var autoOpenEnabled: js.UndefOr[Boolean] = js.native
+  var autoOpenEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to enable collapse functionality for the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapseEnabled)
     */
-  var collapseEnabled: js.UndefOr[Boolean] = js.native
+  var collapseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the popup displays its content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapsed)
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The content of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content)
     */
-  var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.native
+  var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.undefined
   
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
     */
-  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.native
+  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the placement of the popup is docked to the side of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockEnabled)
     */
-  var dockEnabled: js.UndefOr[Boolean] = js.native
+  var dockEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Docking the popup allows for a better user experience, particularly when opening popups in apps on mobile devices.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
-  var dockOptions: js.UndefOr[PopupDockOptions] = js.native
+  var dockOptions: js.UndefOr[PopupDockOptions] = js.undefined
   
   /**
     * Shows pagination for the popup if available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#featureNavigationEnabled)
     */
-  var featureNavigationEnabled: js.UndefOr[Boolean] = js.native
+  var featureNavigationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of features associated with the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features)
     */
-  var features: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#highlightEnabled)
     */
-  var highlightEnabled: js.UndefOr[Boolean] = js.native
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Point used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location)
     */
-  var location: js.UndefOr[PointProperties] = js.native
+  var location: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Defines the maximum icons displayed at one time in the action area.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
     */
-  var maxInlineActions: js.UndefOr[Double | js.Any] = js.native
+  var maxInlineActions: js.UndefOr[Double | js.Any] = js.undefined
   
   /**
     * An array of pending Promises that have not yet been fulfilled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[_]]] = js.native
+  var promises: js.UndefOr[js.Array[js.Promise[js.Any]]] = js.undefined
   
   /**
     * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeatureIndex)
     */
-  var selectedFeatureIndex: js.UndefOr[Double] = js.native
+  var selectedFeatureIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to display a spinner at the popup location prior to its display when it has pending promises.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#spinnerEnabled)
     */
-  var spinnerEnabled: js.UndefOr[Boolean] = js.native
+  var spinnerEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The title of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * This is a class that contains all the logic (properties and methods) that controls this widget's behavior.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#viewModel)
     */
-  var viewModel: js.UndefOr[PopupViewModelProperties] = js.native
+  var viewModel: js.UndefOr[PopupViewModelProperties] = js.undefined
   
   /**
     * Indicates whether the popup is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[PopupVisibleElements] = js.native
+  var visibleElements: js.UndefOr[PopupVisibleElements] = js.undefined
 }
 object PopupProperties {
   
@@ -290,7 +289,7 @@ object PopupProperties {
     def setMaxInlineActionsUndefined: Self = StObject.set(x, "maxInlineActions", js.undefined)
     
     @scala.inline
-    def setPromises(value: js.Array[js.Promise[_]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    def setPromises(value: js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)

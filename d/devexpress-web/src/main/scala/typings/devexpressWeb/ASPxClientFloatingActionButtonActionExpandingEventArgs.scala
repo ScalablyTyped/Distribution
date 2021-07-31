@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ActionExpanding event.
   */
-@js.native
-trait ASPxClientFloatingActionButtonActionExpandingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFloatingActionButtonActionExpandingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the FAB action's context name.
     */
-  var contextName: String = js.native
+  var contextName: String
 }
 object ASPxClientFloatingActionButtonActionExpandingEventArgs {
   

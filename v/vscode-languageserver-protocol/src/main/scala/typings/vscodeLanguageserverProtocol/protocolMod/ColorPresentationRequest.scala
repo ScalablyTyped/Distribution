@@ -5,7 +5,6 @@ import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.ColorPresen
 import typings.vscodeLanguageserverTypes.mod.ColorPresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColorPresentationRequest {
@@ -17,6 +16,6 @@ object ColorPresentationRequest {
     js.Array[ColorPresentation], 
     js.Array[ColorPresentation], 
     Unit, 
-    WorkDoneProgressOptions with TextDocumentRegistrationOptions
+    WorkDoneProgressOptions & TextDocumentRegistrationOptions
   ] = js.native
 }

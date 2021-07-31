@@ -2,31 +2,29 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowExecutionMessage extends StObject {
   
   /**
     * The type of flow event .
     */
-  var eventType: js.UndefOr[FlowExecutionEventType] = js.native
+  var eventType: js.UndefOr[FlowExecutionEventType] = js.undefined
   
   /**
     * The unique identifier of the message.
     */
-  var messageId: js.UndefOr[FlowExecutionMessageId] = js.native
+  var messageId: js.UndefOr[FlowExecutionMessageId] = js.undefined
   
   /**
     * A string containing information about the flow event.
     */
-  var payload: js.UndefOr[FlowExecutionMessagePayload] = js.native
+  var payload: js.UndefOr[FlowExecutionMessagePayload] = js.undefined
   
   /**
     * The date and time when the message was last updated.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.native
+  var timestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object FlowExecutionMessage {
   

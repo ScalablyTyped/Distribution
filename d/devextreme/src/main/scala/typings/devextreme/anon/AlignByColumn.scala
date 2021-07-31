@@ -9,31 +9,29 @@ import typings.devextreme.devextremeStrings.sum
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignByColumn extends StObject {
   
-  var alignByColumn: js.UndefOr[Boolean] = js.native
+  var alignByColumn: js.UndefOr[Boolean] = js.undefined
   
-  var column: js.UndefOr[String] = js.native
+  var column: js.UndefOr[String] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Value, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Value, String]] = js.undefined
   
-  var displayFormat: js.UndefOr[String] = js.native
+  var displayFormat: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var showInColumn: js.UndefOr[String] = js.native
+  var showInColumn: js.UndefOr[String] = js.undefined
   
-  var showInGroupFooter: js.UndefOr[Boolean] = js.native
+  var showInGroupFooter: js.UndefOr[Boolean] = js.undefined
   
-  var skipEmptyValues: js.UndefOr[Boolean] = js.native
+  var skipEmptyValues: js.UndefOr[Boolean] = js.undefined
   
-  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.native
+  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
   
-  var valueFormat: js.UndefOr[format] = js.native
+  var valueFormat: js.UndefOr[format] = js.undefined
 }
 object AlignByColumn {
   

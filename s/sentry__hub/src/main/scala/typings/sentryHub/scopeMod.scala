@@ -13,15 +13,19 @@ import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scopeMod {
   
+  @JSImport("@sentry/hub/dist/scope", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@sentry/hub/dist/scope", "Scope")
   @js.native
   class Scope ()
-    extends typings.sentryTypes.scopeMod.Scope {
+    extends StObject
+       with typings.sentryTypes.scopeMod.Scope {
     
     /**
       * Applies fingerprint from the scope to the event if there's one,
@@ -51,11 +55,11 @@ object scopeMod {
       * This will be called after {@link applyToEvent} is finished.
       */
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor]): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: js.UndefOr[scala.Nothing], index: Double): js.Thenable[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: Unit, index: Double): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: js.UndefOr[scala.Nothing], index: Double): js.Thenable[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: Unit, index: Double): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
     
@@ -114,12 +118,14 @@ object scopeMod {
   /* static members */
   object Scope {
     
-    @JSImport("@sentry/hub/dist/scope", "Scope.clone")
+    @JSImport("@sentry/hub/dist/scope", "Scope")
     @js.native
-    def clone(scope: Scope): Scope = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def clone(scope: Scope): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[Scope]
   }
   
-  @JSImport("@sentry/hub/dist/scope", "addGlobalEventProcessor")
-  @js.native
-  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
+  @scala.inline
+  def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,46 +2,44 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningProfile extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the signing profile.
     */
-  var arn: js.UndefOr[java.lang.String] = js.native
+  var arn: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * The ID of a platform that is available for use by a signing profile.
     */
-  var platformId: js.UndefOr[PlatformId] = js.native
+  var platformId: js.UndefOr[PlatformId] = js.undefined
   
   /**
     * The name of the signing profile.
     */
-  var profileName: js.UndefOr[ProfileName] = js.native
+  var profileName: js.UndefOr[ProfileName] = js.undefined
   
   /**
     * The ACM certificate that is available for use by a signing profile.
     */
-  var signingMaterial: js.UndefOr[SigningMaterial] = js.native
+  var signingMaterial: js.UndefOr[SigningMaterial] = js.undefined
   
   /**
     * The parameters that are available for use by a code signing user.
     */
-  var signingParameters: js.UndefOr[SigningParameters] = js.native
+  var signingParameters: js.UndefOr[SigningParameters] = js.undefined
   
   /**
     * The status of a code signing profile.
     */
-  var status: js.UndefOr[SigningProfileStatus] = js.native
+  var status: js.UndefOr[SigningProfileStatus] = js.undefined
   
   /**
     * A list of tags associated with the signing profile.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object SigningProfile {
   

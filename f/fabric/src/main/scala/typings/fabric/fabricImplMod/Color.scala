@@ -3,7 +3,6 @@ package typings.fabric.fabricImplMod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Color")
@@ -95,48 +94,42 @@ object Color {
     * Returns new color object, when given a color in HEX format
     * @param color Color value ex: FF5555
     */
-  @JSImport("fabric/fabric-impl", "Color.fromHex")
-  @js.native
-  def fromHex(color: String): Color = js.native
+  @scala.inline
+  def fromHex(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Returns new color object, when given a color in HSL format
     * @param color Color value ex: hsl(0-260,0%-100%,0%-100%)
     */
-  @JSImport("fabric/fabric-impl", "Color.fromHsl")
-  @js.native
-  def fromHsl(color: String): Color = js.native
+  @scala.inline
+  def fromHsl(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Returns new color object, when given a color in HSLA format
     * @param color Color value ex: hsl(0-260,0%-100%,0%-100%)
     */
-  @JSImport("fabric/fabric-impl", "Color.fromHsla")
-  @js.native
-  def fromHsla(color: String): Color = js.native
+  @scala.inline
+  def fromHsla(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsla")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Returns new color object, when given a color in RGB format
     * @param color Color value ex: rgb(0-255,0-255,0-255)
     */
-  @JSImport("fabric/fabric-impl", "Color.fromRgb")
-  @js.native
-  def fromRgb(color: String): Color = js.native
+  @scala.inline
+  def fromRgb(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRgb")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Returns new color object, when given a color in RGBA format
     * @param color Color value ex: rgb(0-255,0-255,0-255)
     */
-  @JSImport("fabric/fabric-impl", "Color.fromRgba")
-  @js.native
-  def fromRgba(color: String): Color = js.native
+  @scala.inline
+  def fromRgba(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRgba")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Returns new color object, when given color in array representation (ex: [200, 100, 100, 0.5])
     */
-  @JSImport("fabric/fabric-impl", "Color.fromSource")
-  @js.native
-  def fromSource(source: js.Array[Double]): Color = js.native
+  @scala.inline
+  def fromSource(source: js.Array[Double]): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSource")(source.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Regex matching color in HSL or HSLA formats (ex: hsl(200, 80%, 10%), hsla(300, 50%, 80%, 0.5), hsla( 300 , 50% , 80% , 0.5 ))
@@ -178,23 +171,20 @@ object Color {
     * Returns array represenatation (ex: [100, 100, 200, 1]) of a color that's in HEX format
     * @param color ex: FF5555
     */
-  @JSImport("fabric/fabric-impl", "Color.sourceFromHex")
-  @js.native
-  def sourceFromHex(color: String): js.Array[Double] = js.native
+  @scala.inline
+  def sourceFromHex(color: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceFromHex")(color.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /**
     * Returns array represenatation (ex: [100, 100, 200, 1]) of a color that's in HSL or HSLA format.
     * @param color Color value ex: hsl(0-360,0%-100%,0%-100%) or hsla(0-360,0%-100%,0%-100%, 0-1)
     */
-  @JSImport("fabric/fabric-impl", "Color.sourceFromHsl")
-  @js.native
-  def sourceFromHsl(color: String): js.Array[Double] = js.native
+  @scala.inline
+  def sourceFromHsl(color: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceFromHsl")(color.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /**
     * Returns array represenatation (ex: [100, 100, 200, 1]) of a color that's in RGB or RGBA format
     * @param color Color value ex: rgb(0-255,0-255,0-255), rgb(0%-100%,0%-100%,0%-100%)
     */
-  @JSImport("fabric/fabric-impl", "Color.sourceFromRgb")
-  @js.native
-  def sourceFromRgb(color: String): js.Array[Double] = js.native
+  @scala.inline
+  def sourceFromRgb(color: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceFromRgb")(color.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

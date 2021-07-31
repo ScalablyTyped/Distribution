@@ -3,19 +3,17 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerStrings.cookie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieUpgrade extends StObject {
   
-  var pool: cookie = js.native
+  var pool: cookie
 }
 object CookieUpgrade {
   
   @scala.inline
-  def apply(pool: cookie): CookieUpgrade = {
-    val __obj = js.Dynamic.literal(pool = pool.asInstanceOf[js.Any])
+  def apply(): CookieUpgrade = {
+    val __obj = js.Dynamic.literal(pool = "cookie")
     __obj.asInstanceOf[CookieUpgrade]
   }
   

@@ -2,36 +2,34 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLifecyclePolicyRequest extends StObject {
   
   /**
     * A description of the lifecycle policy.
     */
-  var Description: js.UndefOr[PolicyDescription] = js.native
+  var Description: js.UndefOr[PolicyDescription] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy.
     */
-  var ExecutionRoleArn: js.UndefOr[typings.awsSdk.dlmMod.ExecutionRoleArn] = js.native
+  var ExecutionRoleArn: js.UndefOr[typings.awsSdk.dlmMod.ExecutionRoleArn] = js.undefined
   
   /**
     * The configuration of the lifecycle policy. You cannot update the policy type or the resource type.
     */
-  var PolicyDetails: js.UndefOr[typings.awsSdk.dlmMod.PolicyDetails] = js.native
+  var PolicyDetails: js.UndefOr[typings.awsSdk.dlmMod.PolicyDetails] = js.undefined
   
   /**
     * The identifier of the lifecycle policy.
     */
-  var PolicyId: typings.awsSdk.dlmMod.PolicyId = js.native
+  var PolicyId: typings.awsSdk.dlmMod.PolicyId
   
   /**
     * The desired activation state of the lifecycle policy after creation.
     */
-  var State: js.UndefOr[SettablePolicyStateValues] = js.native
+  var State: js.UndefOr[SettablePolicyStateValues] = js.undefined
 }
 object UpdateLifecyclePolicyRequest {
   

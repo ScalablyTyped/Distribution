@@ -5,28 +5,28 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("solr-client", "createClient")
+  @JSImport("solr-client", JSImport.Namespace)
   @js.native
-  def createClient(): Client = js.native
-  @JSImport("solr-client", "createClient")
-  @js.native
-  def createClient(options: Options): Client = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+  @scala.inline
+  def createClient(options: Options): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+  
   trait AddRemoteResourceOptions extends StObject {
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var format: String = js.native
+    var format: String
     
-    var parameters: js.Object = js.native
+    var parameters: js.Object
     
-    var path: String = js.native
+    var path: String
   }
   object AddRemoteResourceOptions {
     
@@ -59,7 +59,7 @@ object mod {
     def add(docs: js.Array[js.Object]): ClientRequest = js.native
     def add(
       docs: js.Array[js.Object],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
     def add(docs: js.Array[js.Object], options: Options): ClientRequest = js.native
@@ -81,10 +81,7 @@ object mod {
     def basicAuth(username: String, password: String): Client = js.native
     
     def commit(): ClientRequest = js.native
-    def commit(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def commit(options: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def commit(options: Options): ClientRequest = js.native
     def commit(options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     
@@ -92,7 +89,7 @@ object mod {
     def delete(
       field: String,
       text: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
     def delete(field: String, text: String, options: Options): ClientRequest = js.native
@@ -104,36 +101,21 @@ object mod {
     ): ClientRequest = js.native
     
     def deleteAll(): ClientRequest = js.native
-    def deleteAll(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def deleteAll(options: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def deleteAll(options: Options): ClientRequest = js.native
     def deleteAll(options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     
     def deleteByID(id: String): ClientRequest = js.native
-    def deleteByID(
-      id: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def deleteByID(id: String, options: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def deleteByID(id: String, options: Options): ClientRequest = js.native
     def deleteByID(id: String, options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def deleteByID(id: Double): ClientRequest = js.native
-    def deleteByID(
-      id: Double,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def deleteByID(id: Double, options: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def deleteByID(id: Double, options: Options): ClientRequest = js.native
     def deleteByID(id: Double, options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     
     def deleteByQuery(query: String): ClientRequest = js.native
-    def deleteByQuery(
-      query: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def deleteByQuery(query: String, options: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def deleteByQuery(query: String, options: Options): ClientRequest = js.native
     def deleteByQuery(
       query: String,
@@ -142,13 +124,6 @@ object mod {
     ): ClientRequest = js.native
     
     def deleteByRange(field: String, start: String, stop: String): ClientRequest = js.native
-    def deleteByRange(
-      field: String,
-      start: String,
-      stop: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
     def deleteByRange(field: String, start: String, stop: String, options: js.Object): ClientRequest = js.native
     def deleteByRange(
       field: String,
@@ -157,14 +132,14 @@ object mod {
       options: js.Object,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
-    def deleteByRange(field: String, start: String, stop: Date): ClientRequest = js.native
     def deleteByRange(
       field: String,
       start: String,
-      stop: Date,
-      options: js.UndefOr[scala.Nothing],
+      stop: String,
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
+    def deleteByRange(field: String, start: String, stop: Date): ClientRequest = js.native
     def deleteByRange(field: String, start: String, stop: Date, options: js.Object): ClientRequest = js.native
     def deleteByRange(
       field: String,
@@ -173,14 +148,14 @@ object mod {
       options: js.Object,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
-    def deleteByRange(field: String, start: Date, stop: String): ClientRequest = js.native
     def deleteByRange(
       field: String,
-      start: Date,
-      stop: String,
-      options: js.UndefOr[scala.Nothing],
+      start: String,
+      stop: Date,
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
+    def deleteByRange(field: String, start: Date, stop: String): ClientRequest = js.native
     def deleteByRange(field: String, start: Date, stop: String, options: js.Object): ClientRequest = js.native
     def deleteByRange(
       field: String,
@@ -189,20 +164,27 @@ object mod {
       options: js.Object,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
-    def deleteByRange(field: String, start: Date, stop: Date): ClientRequest = js.native
     def deleteByRange(
       field: String,
       start: Date,
-      stop: Date,
-      options: js.UndefOr[scala.Nothing],
+      stop: String,
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
+    def deleteByRange(field: String, start: Date, stop: Date): ClientRequest = js.native
     def deleteByRange(field: String, start: Date, stop: Date, options: js.Object): ClientRequest = js.native
     def deleteByRange(
       field: String,
       start: Date,
       stop: Date,
       options: js.Object,
+      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+    ): ClientRequest = js.native
+    def deleteByRange(
+      field: String,
+      start: Date,
+      stop: Date,
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
     
@@ -254,17 +236,13 @@ object mod {
     def query(): Query = js.native
     
     def realTimeGet(ids: String): ClientRequest = js.native
-    def realTimeGet(
-      ids: String,
-      query: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
+    def realTimeGet(ids: String, query: Unit, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def realTimeGet(ids: String, query: Query): ClientRequest = js.native
     def realTimeGet(ids: String, query: Query, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
     def realTimeGet(ids: js.Array[String]): ClientRequest = js.native
     def realTimeGet(
       ids: js.Array[String],
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
     def realTimeGet(ids: js.Array[String], query: Query): ClientRequest = js.native
@@ -291,43 +269,42 @@ object mod {
     def unauth(): Client = js.native
     
     def update(data: js.Object): ClientRequest = js.native
-    def update(
-      data: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
-    ): ClientRequest = js.native
     def update(data: js.Object, options: js.Object): ClientRequest = js.native
     def update(
       data: js.Object,
       options: js.Object,
       callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
     ): ClientRequest = js.native
+    def update(
+      data: js.Object,
+      options: Unit,
+      callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+    ): ClientRequest = js.native
   }
   
-  @js.native
   trait FacetOptions extends StObject {
     
-    var field: js.UndefOr[String | js.Array[String]] = js.native
+    var field: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var mincout: js.UndefOr[Double] = js.native
+    var mincout: js.UndefOr[Double] = js.undefined
     
-    var missing: js.UndefOr[Boolean] = js.native
+    var missing: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var on: Boolean = js.native
+    var on: Boolean
     
-    var pivot: js.UndefOr[String | js.Array[String]] = js.native
+    var pivot: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
   }
   object FacetOptions {
     
@@ -408,28 +385,27 @@ object mod {
     }
   }
   
-  @js.native
   trait GroupOptions extends StObject {
     
-    var cache: js.UndefOr[Double] = js.native
+    var cache: js.UndefOr[Double] = js.undefined
     
-    var field: js.UndefOr[String | js.Array[String]] = js.native
+    var field: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var main: js.UndefOr[Boolean] = js.native
+    var main: js.UndefOr[Boolean] = js.undefined
     
-    var ngroups: js.UndefOr[Boolean] = js.native
+    var ngroups: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var on: js.UndefOr[Boolean] = js.native
+    var on: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
     
-    var truncate: js.UndefOr[Boolean] = js.native
+    var truncate: js.UndefOr[Boolean] = js.undefined
   }
   object GroupOptions {
     
@@ -507,56 +483,55 @@ object mod {
     }
   }
   
-  @js.native
   trait HighlightOptions extends StObject {
     
-    var alternateField: js.UndefOr[String] = js.native
+    var alternateField: js.UndefOr[String] = js.undefined
     
-    var fl: js.UndefOr[String | js.Array[String]] = js.native
+    var fl: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var formatter: js.UndefOr[String] = js.native
+    var formatter: js.UndefOr[String] = js.undefined
     
-    var fragmenter: js.UndefOr[String] = js.native
+    var fragmenter: js.UndefOr[String] = js.undefined
     
-    var fragsize: js.UndefOr[Double] = js.native
+    var fragsize: js.UndefOr[Double] = js.undefined
     
-    var highlightMultiTerm: js.UndefOr[Boolean] = js.native
+    var highlightMultiTerm: js.UndefOr[Boolean] = js.undefined
     
-    var maxAlternateFieldLength: js.UndefOr[Double] = js.native
+    var maxAlternateFieldLength: js.UndefOr[Double] = js.undefined
     
-    var maxAnalyzedChars: js.UndefOr[Double] = js.native
+    var maxAnalyzedChars: js.UndefOr[Double] = js.undefined
     
-    var maxMultiValuedToExamine: js.UndefOr[Double] = js.native
+    var maxMultiValuedToExamine: js.UndefOr[Double] = js.undefined
     
-    var maxMultiValuedToMatch: js.UndefOr[Double] = js.native
+    var maxMultiValuedToMatch: js.UndefOr[Double] = js.undefined
     
-    var mergeContiguous: js.UndefOr[Boolean] = js.native
+    var mergeContiguous: js.UndefOr[Boolean] = js.undefined
     
-    var on: Boolean = js.native
+    var on: Boolean
     
-    var payloads: js.UndefOr[Boolean] = js.native
+    var payloads: js.UndefOr[Boolean] = js.undefined
     
-    var preserveMulti: js.UndefOr[Boolean] = js.native
+    var preserveMulti: js.UndefOr[Boolean] = js.undefined
     
-    var q: js.UndefOr[String | js.Array[String]] = js.native
+    var q: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var qparser: js.UndefOr[String] = js.native
+    var qparser: js.UndefOr[String] = js.undefined
     
-    var regexMaxAnalyzedChars: js.UndefOr[Double] = js.native
+    var regexMaxAnalyzedChars: js.UndefOr[Double] = js.undefined
     
-    var regexPattern: js.UndefOr[String] = js.native
+    var regexPattern: js.UndefOr[String] = js.undefined
     
-    var regexSlop: js.UndefOr[Double] = js.native
+    var regexSlop: js.UndefOr[Double] = js.undefined
     
-    var requireFieldMatch: js.UndefOr[Boolean] = js.native
+    var requireFieldMatch: js.UndefOr[Boolean] = js.undefined
     
-    var simplePost: js.UndefOr[String] = js.native
+    var simplePost: js.UndefOr[String] = js.undefined
     
-    var simplePre: js.UndefOr[String] = js.native
+    var simplePre: js.UndefOr[String] = js.undefined
     
-    var snippets: js.UndefOr[Double] = js.native
+    var snippets: js.UndefOr[Double] = js.undefined
     
-    var usePhraseHighlighter: js.UndefOr[Boolean] = js.native
+    var usePhraseHighlighter: js.UndefOr[Boolean] = js.undefined
   }
   object HighlightOptions {
     
@@ -718,30 +693,29 @@ object mod {
     }
   }
   
-  @js.native
   trait MoreLikeThisOptions extends StObject {
     
-    var boost: js.UndefOr[Boolean] = js.native
+    var boost: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var fl: js.UndefOr[String | js.Array[String]] = js.native
+    var fl: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var maxntp: js.UndefOr[Double] = js.native
+    var maxntp: js.UndefOr[Double] = js.undefined
     
-    var maxqt: js.UndefOr[Double] = js.native
+    var maxqt: js.UndefOr[Double] = js.undefined
     
-    var maxwl: js.UndefOr[Double] = js.native
+    var maxwl: js.UndefOr[Double] = js.undefined
     
-    var mindf: js.UndefOr[Double] = js.native
+    var mindf: js.UndefOr[Double] = js.undefined
     
-    var mintf: js.UndefOr[Double] = js.native
+    var mintf: js.UndefOr[Double] = js.undefined
     
-    var minwl: js.UndefOr[Double] = js.native
+    var minwl: js.UndefOr[Double] = js.undefined
     
-    var on: Boolean = js.native
+    var on: Boolean
     
-    var qf: js.UndefOr[String | js.Object] = js.native
+    var qf: js.UndefOr[String | js.Object] = js.undefined
   }
   object MoreLikeThisOptions {
     
@@ -822,24 +796,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var agent: js.UndefOr[String] = js.native
+    var agent: js.UndefOr[String] = js.undefined
     
-    var bigint: js.UndefOr[String] = js.native
+    var bigint: js.UndefOr[String] = js.undefined
     
-    var core: js.UndefOr[String] = js.native
+    var core: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var solrVersion: js.UndefOr[String] = js.native
+    var solrVersion: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -976,14 +949,13 @@ object mod {
     def timeout(time: Double): Query = js.native
   }
   
-  @js.native
   trait RangeFilterOption extends StObject {
     
-    var end: String | Double | Date = js.native
+    var end: String | Double | Date
     
-    var field: String = js.native
+    var field: String
     
-    var start: String | Double | Date = js.native
+    var start: String | Double | Date
   }
   object RangeFilterOption {
     

@@ -7,24 +7,22 @@ import typings.plotlyJs.plotlyJsStrings.skip
 import typings.plotlyJs.plotlyJsStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.SliderStep> */
-@js.native
 trait PartialSliderStep extends StObject {
   
-  var args: js.UndefOr[js.Array[_]] = js.native
+  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var execute: js.UndefOr[Boolean] = js.native
+  var execute: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[animate | relayout | restyle | skip | update] = js.native
+  var method: js.UndefOr[animate | relayout | restyle | skip | update] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSliderStep {
   
@@ -38,7 +36,7 @@ object PartialSliderStep {
   implicit class PartialSliderStepMutableBuilder[Self <: PartialSliderStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

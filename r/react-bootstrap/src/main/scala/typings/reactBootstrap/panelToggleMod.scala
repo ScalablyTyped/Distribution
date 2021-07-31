@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelToggleMod {
@@ -18,10 +17,11 @@ object panelToggleMod {
   trait PanelToggle
     extends Component[PanelToggleProps, js.Object, js.Any]
   
-  @js.native
-  trait PanelToggleProps extends HTMLProps[PanelToggle] {
+  trait PanelToggleProps
+    extends StObject
+       with HTMLProps[PanelToggle] {
     
-    var componentClass: js.UndefOr[String] = js.native
+    var componentClass: js.UndefOr[String] = js.undefined
   }
   object PanelToggleProps {
     

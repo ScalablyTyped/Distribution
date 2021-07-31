@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.ui.modeswitch.init()
-@js.native
 trait ModeSwitchConfig extends StObject {
   
-  def callback(result: ModeSwitchItem): Unit = js.native
+  def callback(result: ModeSwitchItem): Unit
   
-  var headline: js.UndefOr[String] = js.native
+  var headline: js.UndefOr[String] = js.undefined
   
-  var items: js.Array[ModeSwitchItem] = js.native
+  var items: js.Array[ModeSwitchItem]
   
-  var preventclose: js.UndefOr[Boolean] = js.native
+  var preventclose: js.UndefOr[Boolean] = js.undefined
 }
 object ModeSwitchConfig {
   

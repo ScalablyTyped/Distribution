@@ -1,20 +1,27 @@
 package typings.tabris
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XMLHttpRequestEventTargetEventMap extends js.Object {
+trait XMLHttpRequestEventTargetEventMap extends StObject {
+  
   var abort: Event
+  
   var error: ErrorEvent
+  
   var load: Event
+  
   var loadend: ProgressEvent
+  
   var loadstart: Event
+  
   var progress: ProgressEvent
+  
   var timeout: ProgressEvent
 }
-
 object XMLHttpRequestEventTargetEventMap {
+  
   @scala.inline
   def apply(
     abort: Event,
@@ -28,5 +35,29 @@ object XMLHttpRequestEventTargetEventMap {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadend = loadend.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLHttpRequestEventTargetEventMap]
   }
+  
+  @scala.inline
+  implicit class XMLHttpRequestEventTargetEventMapMutableBuilder[Self <: XMLHttpRequestEventTargetEventMap] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoad(value: Event): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoadend(value: ProgressEvent): Self = StObject.set(x, "loadend", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoadstart(value: Event): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProgress(value: ProgressEvent): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTimeout(value: ProgressEvent): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAdjustmentTypesAnswer extends StObject {
   
   /**
     * The policy adjustment types.
     */
-  var AdjustmentTypes: js.UndefOr[typings.awsSdk.autoscalingMod.AdjustmentTypes] = js.native
+  var AdjustmentTypes: js.UndefOr[typings.awsSdk.autoscalingMod.AdjustmentTypes] = js.undefined
 }
 object DescribeAdjustmentTypesAnswer {
   

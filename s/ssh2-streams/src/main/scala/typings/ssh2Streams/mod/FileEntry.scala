@@ -2,17 +2,15 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileEntry extends StObject {
   
-  var attrs: Attributes = js.native
+  var attrs: Attributes
   
-  var filename: String = js.native
+  var filename: String
   
-  var longname: String = js.native
+  var longname: String
 }
 object FileEntry {
   

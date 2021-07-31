@@ -3,19 +3,17 @@ package typings.scrivito.mod
 import typings.scrivito.anon.Toolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeProps extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[Toolbar] = js.native
+  var options: js.UndefOr[Toolbar] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Array[AttributeValue]] = js.native
+  var values: js.UndefOr[js.Array[AttributeValue]] = js.undefined
 }
 object AttributeProps {
   

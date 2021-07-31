@@ -2,17 +2,16 @@ package typings.lodash
 
 import typings.lodash.mod.ArrayIterator
 import typings.lodash.mod.Collection
+import typings.lodash.mod.Function
 import typings.lodash.mod.List
 import typings.lodash.mod.ListIterator
 import typings.lodash.mod.MapCacheConstructor
 import typings.lodash.mod.MemoizedFunction
-import typings.lodash.mod.Object
 import typings.lodash.mod.ObjectIterator
 import typings.lodash.mod.StringIterator
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -20,8 +19,8 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply[T /* <: js.Function1[/* args */ js.Any, _] */](func: T): T with MemoizedFunction = js.native
-    def apply[T /* <: js.Function1[/* args */ js.Any, _] */](func: T, resolver: js.Function1[/* args */ Parameters[T], _]): T with MemoizedFunction = js.native
+    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T): T & MemoizedFunction = js.native
+    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T, resolver: js.Function1[/* args */ Parameters[T], js.Any]): T & MemoizedFunction = js.native
     
     var Cache: MapCacheConstructor = js.native
   }
@@ -30,22 +29,21 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(collection: String): String = js.native
-    def apply(collection: String, iteratee: StringIterator[_]): String = js.native
+    def apply(collection: String, iteratee: StringIterator[js.Any]): String = js.native
     def apply[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
     def apply[T /* <: js.Object */](collection: T): T = js.native
-    def apply[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, _]): T = js.native
-    def apply[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
+    def apply[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, js.Any]): T = js.native
     def apply[T](collection: js.Array[T]): js.Array[T] = js.native
-    def apply[T](collection: js.Array[T], iteratee: ArrayIterator[T, _]): js.Array[T] = js.native
-    def apply[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
+    def apply[T](collection: js.Array[T], iteratee: ArrayIterator[T, js.Any]): js.Array[T] = js.native
+    def apply[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, js.Any]): js.UndefOr[T | Null] = js.native
+    def apply[T /* <: js.Object */](collection: Unit, iteratee: ObjectIterator[T, js.Any]): js.UndefOr[T | Null] = js.native
     def apply[T](collection: List[T]): List[T] = js.native
-    def apply[T](collection: List[T], iteratee: ListIterator[T, _]): List[T] = js.native
+    def apply[T](collection: List[T], iteratee: ListIterator[T, js.Any]): List[T] = js.native
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -63,10 +61,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LodashAnyHack extends StObject {
     
-    var __lodashAnyHack: js.Any = js.native
+    var __lodashAnyHack: js.Any
   }
   object LodashAnyHack {
     
@@ -84,10 +81,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TrapAny extends StObject {
     
-    var __trapAny: js.Any = js.native
+    var __trapAny: js.Any
   }
   object TrapAny {
     
@@ -110,7 +106,7 @@ object anon {
     
     def apply(): typings.lodash.mod.String = js.native
     def apply(value: String): typings.lodash.mod.String = js.native
-    def apply[T /* <: js.Object */](value: T): Object[T] = js.native
+    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
     def apply[T](value: List[T]): Collection[T] = js.native
   }
 }

@@ -2,15 +2,15 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataTypeAbstractNumber[T] extends DataTypeAbstract {
+trait DataTypeAbstractNumber[T]
+  extends StObject
+     with DataTypeAbstract {
   
-  var UNSIGNED: T = js.native
+  var UNSIGNED: T
   
-  var ZEROFILL: T = js.native
+  var ZEROFILL: T
 }
 object DataTypeAbstractNumber {
   
@@ -21,7 +21,7 @@ object DataTypeAbstractNumber {
   }
   
   @scala.inline
-  implicit class DataTypeAbstractNumberMutableBuilder[Self <: DataTypeAbstractNumber[_], T] (val x: Self with DataTypeAbstractNumber[T]) extends AnyVal {
+  implicit class DataTypeAbstractNumberMutableBuilder[Self <: DataTypeAbstractNumber[?], T] (val x: Self & DataTypeAbstractNumber[T]) extends AnyVal {
     
     @scala.inline
     def setUNSIGNED(value: T): Self = StObject.set(x, "UNSIGNED", value.asInstanceOf[js.Any])

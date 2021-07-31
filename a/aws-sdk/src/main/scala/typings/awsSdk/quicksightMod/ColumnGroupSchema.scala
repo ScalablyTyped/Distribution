@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnGroupSchema extends StObject {
   
   /**
     * A structure containing the list of schemas for column group columns.
     */
-  var ColumnGroupColumnSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnGroupColumnSchemaList] = js.native
+  var ColumnGroupColumnSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnGroupColumnSchemaList] = js.undefined
   
   /**
     * The name of the column group schema.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object ColumnGroupSchema {
   

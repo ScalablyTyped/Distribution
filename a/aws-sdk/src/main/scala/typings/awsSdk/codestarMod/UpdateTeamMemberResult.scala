@@ -2,26 +2,24 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTeamMemberResult extends StObject {
   
   /**
     * The project role granted to the user.
     */
-  var projectRole: js.UndefOr[Role] = js.native
+  var projectRole: js.UndefOr[Role] = js.undefined
   
   /**
     * Whether a team member is allowed to remotely access project resources using the SSH public key associated with the user's profile.
     */
-  var remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.native
+  var remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user whose team membership attributes were updated.
     */
-  var userArn: js.UndefOr[UserArn] = js.native
+  var userArn: js.UndefOr[UserArn] = js.undefined
 }
 object UpdateTeamMemberResult {
   

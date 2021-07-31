@@ -6,7 +6,6 @@ import typings.kramed.anon.Instantiable
 import typings.kramed.anon.InstantiableKramedParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,14 +19,79 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("kramed", "kramed.Parser")
     @js.native
-    class Parser protected () extends KramedParser {
+    class Parser protected ()
+      extends StObject
+         with KramedParser {
       def this(options: KramedOptions) = this()
+      
+      /* CompleteClass */
+      override def parse(source: js.Array[js.Any]): String = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("kramed", "kramed.Renderer")
     @js.native
-    class Renderer () extends KramedRenderer
+    class Renderer ()
+      extends StObject
+         with KramedRenderer {
+      
+      /* CompleteClass */
+      override def blockquote(quote: String): String = js.native
+      
+      /* CompleteClass */
+      override def br(): String = js.native
+      
+      /* CompleteClass */
+      override def code(code: String, language: String): String = js.native
+      
+      /* CompleteClass */
+      override def codespan(code: String): String = js.native
+      
+      /* CompleteClass */
+      override def del(text: String): String = js.native
+      
+      /* CompleteClass */
+      override def em(text: String): String = js.native
+      
+      /* CompleteClass */
+      override def heading(text: String, level: Double, raw: String): String = js.native
+      
+      /* CompleteClass */
+      override def hr(): String = js.native
+      
+      /* CompleteClass */
+      override def html(html: String): String = js.native
+      
+      /* CompleteClass */
+      override def image(href: String, title: String, text: String): String = js.native
+      
+      /* CompleteClass */
+      override def link(href: String, title: String, text: String): String = js.native
+      
+      /* CompleteClass */
+      override def list(body: String, ordered: Boolean): String = js.native
+      
+      /* CompleteClass */
+      override def listitem(text: String): String = js.native
+      
+      /* CompleteClass */
+      override def paragraph(text: String): String = js.native
+      
+      /* CompleteClass */
+      override def strong(text: String): String = js.native
+      
+      /* CompleteClass */
+      override def table(header: String, body: String): String = js.native
+      
+      /* CompleteClass */
+      override def tablecell(content: String, flags: Align): String = js.native
+      
+      /* CompleteClass */
+      override def tablerow(content: String): String = js.native
+      
+      /* CompleteClass */
+      override def text(text: String): String = js.native
+    }
     
     type _To = KramedStatic
     
@@ -35,18 +99,17 @@ object mod {
     override def _to: KramedStatic = ^
   }
   
-  @js.native
   trait KramedOptions extends StObject {
     
     /**
       * Enable GFM line breaks. This option requires the gfm option to be true.
       */
-    var breaks: js.UndefOr[Boolean] = js.native
+    var breaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable GitHub flavored kramdown.
       */
-    var gfm: js.UndefOr[Boolean] = js.native
+    var gfm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function to highlight code blocks. The function takes three arguments: code, lang, and callback.
@@ -58,49 +121,49 @@ object mod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Set the prefix for code block classes.
       */
-    var langPrefix: js.UndefOr[String] = js.native
+    var langPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Conform to obscure parts of kramdown.pl as much as possible. Don't fix any of the original kramdown bugs or poor behavior.
       */
-    var pedantic: js.UndefOr[Boolean] = js.native
+    var pedantic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: object Default: new Renderer()
       *
       * An object containing functions to render tokens to HTML.
       */
-    var renderer: js.UndefOr[KramedRenderer] = js.native
+    var renderer: js.UndefOr[KramedRenderer] = js.undefined
     
     /**
       * Sanitize the output. Ignore any HTML that has been input.
       */
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows an HTML error message when rendering fails.
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use smarter list behavior than the original kramdown. May eventually be default with the old behavior moved into pedantic.
       */
-    var smartLists: js.UndefOr[Boolean] = js.native
+    var smartLists: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use "smart" typograhic punctuation for things like quotes and dashes.
       */
-    var smartypants: js.UndefOr[Boolean] = js.native
+    var smartypants: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable GFM tables. This option requires the gfm option to be true.
       */
-    var tables: js.UndefOr[Boolean] = js.native
+    var tables: js.UndefOr[Boolean] = js.undefined
   }
   object KramedOptions {
     
@@ -183,15 +246,14 @@ object mod {
     }
   }
   
-  @js.native
   trait KramedParser extends StObject {
     
-    def parse(source: js.Array[_]): String = js.native
+    def parse(source: js.Array[js.Any]): String
   }
   object KramedParser {
     
     @scala.inline
-    def apply(parse: js.Array[_] => String): KramedParser = {
+    def apply(parse: js.Array[js.Any] => String): KramedParser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[KramedParser]
     }
@@ -200,50 +262,49 @@ object mod {
     implicit class KramedParserMutableBuilder[Self <: KramedParser] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setParse(value: js.Array[_] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      def setParse(value: js.Array[js.Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait KramedRenderer extends StObject {
     
-    def blockquote(quote: String): String = js.native
+    def blockquote(quote: String): String
     
-    def br(): String = js.native
+    def br(): String
     
-    def code(code: String, language: String): String = js.native
+    def code(code: String, language: String): String
     
-    def codespan(code: String): String = js.native
+    def codespan(code: String): String
     
-    def del(text: String): String = js.native
+    def del(text: String): String
     
-    def em(text: String): String = js.native
+    def em(text: String): String
     
-    def heading(text: String, level: Double, raw: String): String = js.native
+    def heading(text: String, level: Double, raw: String): String
     
-    def hr(): String = js.native
+    def hr(): String
     
-    def html(html: String): String = js.native
+    def html(html: String): String
     
-    def image(href: String, title: String, text: String): String = js.native
+    def image(href: String, title: String, text: String): String
     
-    def link(href: String, title: String, text: String): String = js.native
+    def link(href: String, title: String, text: String): String
     
-    def list(body: String, ordered: Boolean): String = js.native
+    def list(body: String, ordered: Boolean): String
     
-    def listitem(text: String): String = js.native
+    def listitem(text: String): String
     
-    def paragraph(text: String): String = js.native
+    def paragraph(text: String): String
     
-    def strong(text: String): String = js.native
+    def strong(text: String): String
     
-    def table(header: String, body: String): String = js.native
+    def table(header: String, body: String): String
     
-    def tablecell(content: String, flags: Align): String = js.native
+    def tablecell(content: String, flags: Align): String
     
-    def tablerow(content: String): String = js.native
+    def tablerow(content: String): String
     
-    def text(text: String): String = js.native
+    def text(text: String): String
   }
   object KramedRenderer {
     
@@ -355,7 +416,7 @@ object mod {
       * @return String of compiled HTML
       */
     def apply(src: String, callback: js.Function0[Unit]): String = js.native
-    def apply(src: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
+    def apply(src: String, options: Unit, callback: js.Function0[Unit]): String = js.native
     def apply(src: String, options: KramedOptions): String = js.native
     def apply(src: String, options: KramedOptions, callback: js.Function0[Unit]): String = js.native
     
@@ -367,8 +428,8 @@ object mod {
       * @param src String of kramdown source to be compiled
       * @param options Hash of options
       */
-    def lexer(src: String): js.Array[_] = js.native
-    def lexer(src: String, options: KramedOptions): js.Array[_] = js.native
+    def lexer(src: String): js.Array[js.Any] = js.native
+    def lexer(src: String, options: KramedOptions): js.Array[js.Any] = js.native
     
     /**
       * Compiles kramdown to HTML.
@@ -387,15 +448,15 @@ object mod {
       * @return String of compiled HTML
       */
     def parse(src: String, callback: js.Function0[Unit]): String = js.native
-    def parse(src: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
+    def parse(src: String, options: Unit, callback: js.Function0[Unit]): String = js.native
     def parse(src: String, options: KramedOptions): String = js.native
     def parse(src: String, options: KramedOptions, callback: js.Function0[Unit]): String = js.native
     
     /**
       * @param options Hash of options
       */
-    def parser(src: js.Array[_]): String = js.native
-    def parser(src: js.Array[_], options: KramedOptions): String = js.native
+    def parser(src: js.Array[js.Any]): String = js.native
+    def parser(src: js.Array[js.Any], options: KramedOptions): String = js.native
     
     /**
       * Sets the default options.

@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Plays audio from a file in Telephony Gateway.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends 
     * other sources, consider using the `TelephonySynthesizeSpeech` message
     * with SSML.
     */
-  var audioUri: js.UndefOr[String] = js.native
+  var audioUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   

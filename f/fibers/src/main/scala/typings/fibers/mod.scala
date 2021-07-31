@@ -6,7 +6,6 @@ import typings.fibers.futureMod.global.Function
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,7 +17,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("fibers", JSImport.Namespace)
   @js.native
-  class Class protected () extends Fiber {
+  class Class protected ()
+    extends StObject
+       with Fiber {
     /**
       * Instantiate a new Fiber. You may invoke this either as a function or as
       * a constructor; the behavior is the same.
@@ -77,7 +78,8 @@ object mod extends Shortcut {
   
   @js.native
   trait FiberConstructor
-    extends /**
+    extends StObject
+       with /**
     * Instantiate a new Fiber. You may invoke this either as a function or as
     * a constructor; the behavior is the same.
     *

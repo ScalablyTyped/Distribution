@@ -2,10 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IconPool {
+  
+  @JSGlobal("sap.ui.core.IconPool")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Register an additional icon to the sap.ui.core.IconPool.
@@ -16,9 +19,8 @@ object IconPool {
     * @returns the info object of the registered icon which has the name, collection, uri, fontFamily,
     * content and suppressMirroring properties.
     */
-  @JSGlobal("sap.ui.core.IconPool.addIcon")
-  @js.native
-  def addIcon(iconName: String, collectionName: String, iconInfo: js.Any): js.Any = js.native
+  @scala.inline
+  def addIcon(iconName: String, collectionName: String, iconInfo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addIcon")(iconName.asInstanceOf[js.Any], collectionName.asInstanceOf[js.Any], iconInfo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Creates an instance of {@link sap.ui.core.Icon} if the given URI is an icon URI, otherwise the given
@@ -29,20 +31,17 @@ object IconPool {
     * @param constructor the constructor function which is called when the given URI isn't an icon URI
     * @returns either an instance of sap.ui.core.Icon or instance created by calling the given constructor
     */
-  @JSGlobal("sap.ui.core.IconPool.createControlByURI")
-  @js.native
-  def createControlByURI(setting: String, constructor: js.Any): typings.openui5.sap.ui.core.Control = js.native
-  @JSGlobal("sap.ui.core.IconPool.createControlByURI")
-  @js.native
-  def createControlByURI(setting: js.Any, constructor: js.Any): typings.openui5.sap.ui.core.Control = js.native
+  @scala.inline
+  def createControlByURI(setting: String, constructor: js.Any): typings.openui5.sap.ui.core.Control = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlByURI")(setting.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control]
+  @scala.inline
+  def createControlByURI(setting: js.Any, constructor: js.Any): typings.openui5.sap.ui.core.Control = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlByURI")(setting.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control]
   
   /**
     * Returns all names of registered collections in IconPool
     * @returns An array contains all of the registered collections' names.
     */
-  @JSGlobal("sap.ui.core.IconPool.getIconCollectionNames")
-  @js.native
-  def getIconCollectionNames(): js.Array[_] = js.native
+  @scala.inline
+  def getIconCollectionNames(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconCollectionNames")().asInstanceOf[js.Array[js.Any]]
   
   /**
     * Returns the icon url based on the given mime type
@@ -50,9 +49,8 @@ object IconPool {
     * @param sMimeType the mime type of a file (e.g. "application/zip")
     * @returns the icon url (e.g. "sap-icon://attachment-zip-file")
     */
-  @JSGlobal("sap.ui.core.IconPool.getIconForMimeType")
-  @js.native
-  def getIconForMimeType(sMimeType: String): String = js.native
+  @scala.inline
+  def getIconForMimeType(sMimeType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconForMimeType")(sMimeType.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Returns an info object for the icon with the given <code>iconName</code> and
@@ -72,21 +70,18 @@ object IconPool {
     * name
     * @returns Info object for the icon or <code>undefined</code> when the icon can't be found.
     */
-  @JSGlobal("sap.ui.core.IconPool.getIconInfo")
-  @js.native
-  def getIconInfo(iconName: String): js.Any = js.native
-  @JSGlobal("sap.ui.core.IconPool.getIconInfo")
-  @js.native
-  def getIconInfo(iconName: String, collectionName: String): js.Any = js.native
+  @scala.inline
+  def getIconInfo(iconName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconInfo")(iconName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getIconInfo(iconName: String, collectionName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIconInfo")(iconName.asInstanceOf[js.Any], collectionName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Returns all name of icons that are registerd under the given collection.
     * @param collectionName the name of collection where icon names are retrieved.
     * @returns An array contains all of the registered icon names under the given collection.
     */
-  @JSGlobal("sap.ui.core.IconPool.getIconNames")
-  @js.native
-  def getIconNames(collectionName: String): js.Array[_] = js.native
+  @scala.inline
+  def getIconNames(collectionName: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconNames")(collectionName.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Returns the URI of the icon in the pool which has the given <code>iconName</code> and
@@ -96,12 +91,10 @@ object IconPool {
     * name
     * @returns URI of the icon or <code>undefined</code> if the icon can't be found in the IconPool
     */
-  @JSGlobal("sap.ui.core.IconPool.getIconURI")
-  @js.native
-  def getIconURI(iconName: String): String = js.native
-  @JSGlobal("sap.ui.core.IconPool.getIconURI")
-  @js.native
-  def getIconURI(iconName: String, collectionName: String): String = js.native
+  @scala.inline
+  def getIconURI(iconName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconURI")(iconName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getIconURI(iconName: String, collectionName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getIconURI")(iconName.asInstanceOf[js.Any], collectionName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns whether the given <code>uri</code> is an icon URI.A string is an icon URI when it can be
@@ -111,7 +104,6 @@ object IconPool {
     * @param uri The URI to check
     * @returns Whether the URI matches the icon URI format
     */
-  @JSGlobal("sap.ui.core.IconPool.isIconURI")
-  @js.native
-  def isIconURI(uri: String): Boolean = js.native
+  @scala.inline
+  def isIconURI(uri: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIconURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

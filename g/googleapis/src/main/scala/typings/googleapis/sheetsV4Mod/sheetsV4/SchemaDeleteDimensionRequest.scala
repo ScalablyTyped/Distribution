@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes the dimensions from the sheet.
   */
-@js.native
 trait SchemaDeleteDimensionRequest extends StObject {
   
   /**
     * The dimensions to delete from the sheet.
     */
-  var range: js.UndefOr[SchemaDimensionRange] = js.native
+  var range: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaDeleteDimensionRequest {
   

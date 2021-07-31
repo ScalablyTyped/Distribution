@@ -38,7 +38,6 @@ import typings.node.processMod.global.NodeJS.Process
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,64 +46,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire(module: String): js.Any = js.native
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire_bfsutils(module: bfs_utils): TypeofBFSUtils = js.native
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire_buffer(module: buffer): Typeofbuffer = js.native
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire_fs(module: fs): FSModule = js.native
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire_path(module: path): PlatformPath = js.native
-  @JSImport("browserfs", "BFSRequire")
-  @js.native
-  def BFSRequire_process(module: process): Process = js.native
+  @scala.inline
+  def BFSRequire(module: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def BFSRequire_bfsutils(module: bfs_utils): TypeofBFSUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[TypeofBFSUtils]
+  
+  @scala.inline
+  def BFSRequire_buffer(module: buffer): Typeofbuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Typeofbuffer]
+  
+  @scala.inline
+  def BFSRequire_fs(module: fs): FSModule = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[FSModule]
+  
+  @scala.inline
+  def BFSRequire_path(module: path): PlatformPath = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[PlatformPath]
+  
+  @scala.inline
+  def BFSRequire_process(module: process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Process]
   
   @JSImport("browserfs", "EmscriptenFS")
   @js.native
   class EmscriptenFS ()
     extends typings.browserfs.nodeMod.EmscriptenFS {
     def this(_FS: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.UndefOr[scala.Nothing], _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.Any, _PATH: js.UndefOr[scala.Nothing], _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: default
-    ) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.Any,
-      nodefs: default
-    ) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.Any,
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: default
-    ) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: default) = this()
-    def this(
-      _FS: js.Any,
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: default
-    ) = this()
-    def this(_FS: js.Any, _PATH: js.UndefOr[scala.Nothing], _ERRNO_CODES: js.Any, nodefs: default) = this()
-    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.UndefOr[scala.Nothing], nodefs: default) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: default) = this()
+    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: default) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: default) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: default) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: default) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: default) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: default) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: default) = this()
   }
   
   object Errors {
@@ -125,53 +103,47 @@ object mod {
         */
       def this(`type`: ErrorCode) = this()
       def this(`type`: ErrorCode, message: String) = this()
-      def this(`type`: ErrorCode, message: js.UndefOr[scala.Nothing], path: String) = this()
       def this(`type`: ErrorCode, message: String, path: String) = this()
+      def this(`type`: ErrorCode, message: Unit, path: String) = this()
     }
     /* static members */
     object ApiError {
       
-      @JSImport("browserfs", "Errors.ApiError.EEXIST")
+      @JSImport("browserfs", "Errors.ApiError")
       @js.native
-      def EEXIST(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("browserfs", "Errors.ApiError.EISDIR")
-      @js.native
-      def EISDIR(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def EEXIST(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.ENOENT")
-      @js.native
-      def ENOENT(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def EISDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.ENOTDIR")
-      @js.native
-      def ENOTDIR(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def ENOENT(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.ENOTEMPTY")
-      @js.native
-      def ENOTEMPTY(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def ENOTDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.EPERM")
-      @js.native
-      def EPERM(path: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def ENOTEMPTY(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.FileError")
-      @js.native
-      def FileError(code: ErrorCode, p: String): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def EPERM(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      
+      @scala.inline
+      def FileError(code: ErrorCode, p: String): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
       /**
         * Creates an ApiError object from a buffer.
         */
-      @JSImport("browserfs", "Errors.ApiError.fromBuffer")
-      @js.native
-      def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = js.native
-      @JSImport("browserfs", "Errors.ApiError.fromBuffer")
-      @js.native
-      def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      @scala.inline
+      def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @JSImport("browserfs", "Errors.ApiError.fromJSON")
-      @js.native
-      def fromJSON(json: js.Any): typings.browserfs.apiErrorMod.ApiError = js.native
+      @scala.inline
+      def fromJSON(json: js.Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
     }
     
     @JSImport("browserfs", "Errors.ErrorCode")
@@ -179,37 +151,37 @@ object mod {
     object ErrorCode extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.browserfs.apiErrorMod.ErrorCode with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.browserfs.apiErrorMod.ErrorCode & Double] = js.native
       
-      /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES with Double = js.native
+      /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES & Double = js.native
       
-      /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF with Double = js.native
+      /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF & Double = js.native
       
-      /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY with Double = js.native
+      /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY & Double = js.native
       
-      /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST with Double = js.native
+      /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST & Double = js.native
       
-      /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG with Double = js.native
+      /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG & Double = js.native
       
-      /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL with Double = js.native
+      /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL & Double = js.native
       
-      /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO with Double = js.native
+      /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO & Double = js.native
       
-      /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR with Double = js.native
+      /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR & Double = js.native
       
-      /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT with Double = js.native
+      /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT & Double = js.native
       
-      /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC with Double = js.native
+      /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC & Double = js.native
       
-      /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR with Double = js.native
+      /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR & Double = js.native
       
-      /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY with Double = js.native
+      /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY & Double = js.native
       
-      /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP with Double = js.native
+      /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP & Double = js.native
       
-      /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM with Double = js.native
+      /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM & Double = js.native
       
-      /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS with Double = js.native
+      /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS & Double = js.native
     }
   }
   
@@ -330,12 +302,12 @@ object mod {
     class HTML5FS ()
       extends typings.browserfs.html5fsMod.default {
       def this(size: Double) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: Double) = this()
       def this(size: Double, `type`: Double) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
-      def this(size: js.UndefOr[scala.Nothing], `type`: Double, deprecateMsg: Boolean) = this()
-      def this(size: Double, `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Double) = this()
       def this(size: Double, `type`: Double, deprecateMsg: Boolean) = this()
+      def this(size: Double, `type`: Unit, deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Double, deprecateMsg: Boolean) = this()
+      def this(size: Unit, `type`: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs", "FileSystem.HTML5FS")
     @js.native
@@ -371,8 +343,8 @@ object mod {
         */
       def this(cb: BFSCallback[IndexedDBFileSystem]) = this()
       def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String) = this()
-      def this(cb: BFSCallback[IndexedDBFileSystem], storeName: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String, deprecateMsg: Boolean) = this()
+      def this(cb: BFSCallback[IndexedDBFileSystem], storeName: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs", "FileSystem.IndexedDB")
     @js.native
@@ -394,8 +366,8 @@ object mod {
         */
       def this(data: Buffer) = this()
       def this(data: Buffer, name: String) = this()
-      def this(data: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(data: Buffer, name: String, deprecateMsg: Boolean) = this()
+      def this(data: Buffer, name: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs", "FileSystem.IsoFS")
     @js.native
@@ -502,10 +474,10 @@ object mod {
       def this(listingUrlOrObj: js.Object) = this()
       def this(listingUrlOrObj: String, prefixUrl: String) = this()
       def this(listingUrlOrObj: js.Object, prefixUrl: String) = this()
-      def this(listingUrlOrObj: String, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(listingUrlOrObj: String, prefixUrl: String, deprecateMsg: Boolean) = this()
-      def this(listingUrlOrObj: js.Object, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(listingUrlOrObj: String, prefixUrl: Unit, deprecateMsg: Boolean) = this()
       def this(listingUrlOrObj: js.Object, prefixUrl: String, deprecateMsg: Boolean) = this()
+      def this(listingUrlOrObj: js.Object, prefixUrl: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs", "FileSystem.XmlHttpRequest")
     @js.native
@@ -525,10 +497,10 @@ object mod {
       def this(input: Buffer) = this()
       def this(input: ZipTOC, name: String) = this()
       def this(input: Buffer, name: String) = this()
-      def this(input: ZipTOC, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
       def this(input: ZipTOC, name: String, deprecateMsg: Boolean) = this()
-      def this(input: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+      def this(input: ZipTOC, name: Unit, deprecateMsg: Boolean) = this()
       def this(input: Buffer, name: String, deprecateMsg: Boolean) = this()
+      def this(input: Buffer, name: Unit, deprecateMsg: Boolean) = this()
     }
     @JSImport("browserfs", "FileSystem.ZipFS")
     @js.native
@@ -537,25 +509,20 @@ object mod {
     def ZipFS_=(x: TypeofZipFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipFS")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("browserfs", "configure")
-  @js.native
-  def configure(config: FileSystemConfiguration, cb: BFSOneArgCallback): Unit = js.native
+  @scala.inline
+  def configure(config: FileSystemConfiguration, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs", "getFileSystem")
-  @js.native
-  def getFileSystem(config: FileSystemConfiguration, cb: BFSCallback[FileSystem]): Unit = js.native
+  @scala.inline
+  def getFileSystem(config: FileSystemConfiguration, cb: BFSCallback[FileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("browserfs", "initialize")
-  @js.native
-  def initialize(rootfs: FileSystem): FileSystem = js.native
+  @scala.inline
+  def initialize(rootfs: FileSystem): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(rootfs.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
   
-  @JSImport("browserfs", "install")
-  @js.native
-  def install(obj: js.Any): Unit = js.native
+  @scala.inline
+  def install(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("browserfs", "registerFileSystem")
-  @js.native
-  def registerFileSystem(name: String, fs: FileSystemConstructor): Unit = js.native
+  @scala.inline
+  def registerFileSystem(name: String, fs: FileSystemConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystem")(name.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("browserfs", "setImmediate")
   @js.native

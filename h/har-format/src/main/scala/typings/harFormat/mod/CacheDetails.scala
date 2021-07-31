@@ -2,17 +2,15 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheDetails extends StObject {
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** Etag */
-  var eTag: String = js.native
+  var eTag: String
   
   /**
     * Expiration time of the cache entry.
@@ -20,10 +18,10 @@ trait CacheDetails extends StObject {
     * _(Format not documente but assumingly ISO 8601 -
     * `YYYY-MM-DDThh:mm:ss.sTZD`)_
     */
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
   /** The number of times the cache entry has been opened. */
-  var hitCount: Double = js.native
+  var hitCount: Double
   
   /**
     * The last time the cache entry was opened.
@@ -31,7 +29,7 @@ trait CacheDetails extends StObject {
     * _(Format not documente but assumingly ISO 8601 -
     * `YYYY-MM-DDThh:mm:ss.sTZD`)_
     */
-  var lastAccess: String = js.native
+  var lastAccess: String
 }
 object CacheDetails {
   

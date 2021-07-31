@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaselineValueFormat extends StObject {
   
   /** The comparison type of key value with baseline value. */
-  var comparisonType: js.UndefOr[String] = js.native
+  var comparisonType: js.UndefOr[String] = js.undefined
   
   /** Description which is appended after the baseline value. This field is optional. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Color to be used, in case baseline value represents a negative change for key value. This field is optional. */
-  var negativeColor: js.UndefOr[Color] = js.native
+  var negativeColor: js.UndefOr[Color] = js.undefined
   
   /** Color to be used, in case baseline value represents a negative change for key value. This field is optional. If negative_color is also set, this field takes precedence. */
-  var negativeColorStyle: js.UndefOr[ColorStyle] = js.native
+  var negativeColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** Specifies the horizontal text positioning of baseline value. This field is optional. If not specified, default positioning is used. */
-  var position: js.UndefOr[TextPosition] = js.native
+  var position: js.UndefOr[TextPosition] = js.undefined
   
   /** Color to be used, in case baseline value represents a positive change for key value. This field is optional. */
-  var positiveColor: js.UndefOr[Color] = js.native
+  var positiveColor: js.UndefOr[Color] = js.undefined
   
   /** Color to be used, in case baseline value represents a positive change for key value. This field is optional. If positive_color is also set, this field takes precedence. */
-  var positiveColorStyle: js.UndefOr[ColorStyle] = js.native
+  var positiveColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** Text formatting options for baseline value. */
-  var textFormat: js.UndefOr[TextFormat] = js.native
+  var textFormat: js.UndefOr[TextFormat] = js.undefined
 }
 object BaselineValueFormat {
   

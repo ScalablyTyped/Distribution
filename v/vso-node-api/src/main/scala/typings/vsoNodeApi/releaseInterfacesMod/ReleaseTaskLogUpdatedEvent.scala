@@ -2,17 +2,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReleaseTaskLogUpdatedEvent extends RealtimeReleaseEvent {
+trait ReleaseTaskLogUpdatedEvent
+  extends StObject
+     with RealtimeReleaseEvent {
   
-  var environmentId: Double = js.native
+  var environmentId: Double
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
-  var timelineRecordId: String = js.native
+  var timelineRecordId: String
 }
 object ReleaseTaskLogUpdatedEvent {
   

@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonElementParentNode extends StObject {
   
   /**
     * Returns the first element within node's descendants whose ID is elementId.
     */
-  def getElementById(elementId: java.lang.String): Element | Null = js.native
+  def getElementById(elementId: java.lang.String): Element | Null
 }
 object NonElementParentNode {
   

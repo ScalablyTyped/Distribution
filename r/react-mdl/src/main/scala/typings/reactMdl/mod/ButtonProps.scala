@@ -3,20 +3,19 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with RippleComponent
      with CustomRenderedComponent {
   
-  var accent: js.UndefOr[Boolean] = js.native
+  var accent: js.UndefOr[Boolean] = js.undefined
   
-  var colored: js.UndefOr[Boolean] = js.native
+  var colored: js.UndefOr[Boolean] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonProps {
   

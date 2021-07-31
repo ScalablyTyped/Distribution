@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.sliced
 import typings.arcgisJsApi.arcgisJsApiStrings.slicing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliceViewModel extends Accessor {
+trait SliceViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * Clears the current slice.

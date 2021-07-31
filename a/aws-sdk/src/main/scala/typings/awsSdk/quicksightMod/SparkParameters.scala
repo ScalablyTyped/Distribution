@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkParameters extends StObject {
   
   /**
     * Host.
     */
-  var Host: typings.awsSdk.quicksightMod.Host = js.native
+  var Host: typings.awsSdk.quicksightMod.Host
   
   /**
     * Port.
     */
-  var Port: typings.awsSdk.quicksightMod.Port = js.native
+  var Port: typings.awsSdk.quicksightMod.Port
 }
 object SparkParameters {
   

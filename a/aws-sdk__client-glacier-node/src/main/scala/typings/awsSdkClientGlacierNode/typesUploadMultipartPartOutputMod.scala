@@ -4,24 +4,24 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUploadMultipartPartOutputMod {
   
-  @js.native
-  trait UploadMultipartPartOutput extends _OutputTypesUnion {
+  trait UploadMultipartPartOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The SHA256 tree hash that Amazon Glacier computed for the uploaded part.</p>
       */
-    var checksum: js.UndefOr[String] = js.native
+    var checksum: js.UndefOr[String] = js.undefined
   }
   object UploadMultipartPartOutput {
     

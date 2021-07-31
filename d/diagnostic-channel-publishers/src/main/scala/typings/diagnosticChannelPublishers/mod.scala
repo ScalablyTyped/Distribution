@@ -3,12 +3,19 @@ package typings.diagnosticChannelPublishers
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("diagnostic-channel-publishers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object azuresdk {
+    
+    @JSImport("diagnostic-channel-publishers", "azuresdk")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("diagnostic-channel-publishers", "azuresdk.AzureMonitorSymbol")
     @js.native
@@ -18,42 +25,47 @@ object mod {
     @js.native
     val azureCoreTracing: IModulePatcher = js.native
     
-    @JSImport("diagnostic-channel-publishers", "azuresdk.enable")
-    @js.native
-    def enable(): Unit = js.native
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   }
   
   object bunyan {
     
+    @JSImport("diagnostic-channel-publishers", "bunyan")
+    @js.native
+    val ^ : js.Any = js.native
     @JSImport("diagnostic-channel-publishers", "bunyan.bunyan")
     @js.native
     val bunyan: IModulePatcher = js.native
     
-    @JSImport("diagnostic-channel-publishers", "bunyan.enable")
-    @js.native
-    def enable(): Unit = js.native
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   }
   
   object console {
     
+    @JSImport("diagnostic-channel-publishers", "console")
+    @js.native
+    val ^ : js.Any = js.native
     @JSImport("diagnostic-channel-publishers", "console.console")
     @js.native
     val console: IModulePatcher = js.native
     
-    @JSImport("diagnostic-channel-publishers", "console.enable")
-    @js.native
-    def enable(): Unit = js.native
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   }
   
-  @JSImport("diagnostic-channel-publishers", "enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   object mongodb {
     
-    @JSImport("diagnostic-channel-publishers", "mongodb.enable")
+    @JSImport("diagnostic-channel-publishers", "mongodb")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "mongodb.mongo2")
     @js.native
@@ -70,9 +82,12 @@ object mod {
   
   object mongodbCore {
     
-    @JSImport("diagnostic-channel-publishers", "mongodbCore.enable")
+    @JSImport("diagnostic-channel-publishers", "mongodbCore")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "mongodbCore.mongoCore")
     @js.native
@@ -81,9 +96,12 @@ object mod {
   
   object mysql {
     
-    @JSImport("diagnostic-channel-publishers", "mysql.enable")
+    @JSImport("diagnostic-channel-publishers", "mysql")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "mysql.mysql")
     @js.native
@@ -92,9 +110,12 @@ object mod {
   
   object pg {
     
-    @JSImport("diagnostic-channel-publishers", "pg.enable")
+    @JSImport("diagnostic-channel-publishers", "pg")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "pg.postgres6")
     @js.native
@@ -107,9 +128,12 @@ object mod {
   
   object pgPool {
     
-    @JSImport("diagnostic-channel-publishers", "pgPool.enable")
+    @JSImport("diagnostic-channel-publishers", "pgPool")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "pgPool.postgresPool1")
     @js.native
@@ -118,9 +142,12 @@ object mod {
   
   object redis {
     
-    @JSImport("diagnostic-channel-publishers", "redis.enable")
+    @JSImport("diagnostic-channel-publishers", "redis")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "redis.redis")
     @js.native
@@ -129,9 +156,12 @@ object mod {
   
   object tedious {
     
-    @JSImport("diagnostic-channel-publishers", "tedious.enable")
+    @JSImport("diagnostic-channel-publishers", "tedious")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "tedious.tedious")
     @js.native
@@ -140,9 +170,12 @@ object mod {
   
   object winston {
     
-    @JSImport("diagnostic-channel-publishers", "winston.enable")
+    @JSImport("diagnostic-channel-publishers", "winston")
     @js.native
-    def enable(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
     @JSImport("diagnostic-channel-publishers", "winston.winston2")
     @js.native

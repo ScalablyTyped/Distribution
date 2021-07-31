@@ -3,7 +3,6 @@ package typings.offscreencanvas
 import typings.std.CanvasImageSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage

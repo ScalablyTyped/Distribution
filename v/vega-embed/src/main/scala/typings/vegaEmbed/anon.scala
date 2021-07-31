@@ -2,21 +2,19 @@ package typings.vegaEmbed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -56,20 +54,19 @@ object anon {
   }
   
   /* Inlined std.Partial<{  CLICK_TO_VIEW_ACTIONS :string,   COMPILED_ACTION :string,   EDITOR_ACTION :string,   PNG_ACTION :string,   SOURCE_ACTION :string,   SVG_ACTION :string}> */
-  @js.native
   trait PartialCLICKTOVIEWACTIONS extends StObject {
     
-    var CLICK_TO_VIEW_ACTIONS: js.UndefOr[String] = js.native
+    var CLICK_TO_VIEW_ACTIONS: js.UndefOr[String] = js.undefined
     
-    var COMPILED_ACTION: js.UndefOr[String] = js.native
+    var COMPILED_ACTION: js.UndefOr[String] = js.undefined
     
-    var EDITOR_ACTION: js.UndefOr[String] = js.native
+    var EDITOR_ACTION: js.UndefOr[String] = js.undefined
     
-    var PNG_ACTION: js.UndefOr[String] = js.native
+    var PNG_ACTION: js.UndefOr[String] = js.undefined
     
-    var SOURCE_ACTION: js.UndefOr[String] = js.native
+    var SOURCE_ACTION: js.UndefOr[String] = js.undefined
     
-    var SVG_ACTION: js.UndefOr[String] = js.native
+    var SVG_ACTION: js.UndefOr[String] = js.undefined
   }
   object PartialCLICKTOVIEWACTIONS {
     
@@ -120,12 +117,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Png extends StObject {
     
-    var png: js.UndefOr[Boolean] = js.native
+    var png: js.UndefOr[Boolean] = js.undefined
     
-    var svg: js.UndefOr[Boolean] = js.native
+    var svg: js.UndefOr[Boolean] = js.undefined
   }
   object Png {
     
@@ -152,12 +148,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Svg extends StObject {
     
-    var png: Boolean = js.native
+    var png: Boolean
     
-    var svg: Boolean = js.native
+    var svg: Boolean
   }
   object Svg {
     

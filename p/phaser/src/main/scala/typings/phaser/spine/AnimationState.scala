@@ -2,28 +2,26 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationState extends StObject {
   
-  def _animationsChanged(): Unit = js.native
+  def _animationsChanged(): Unit
   
-  def addAnimation(trackIndex: Double, animationName: String, loop: Boolean, delay: Double): TrackEntry = js.native
+  def addAnimation(trackIndex: Double, animationName: String, loop: Boolean, delay: Double): TrackEntry
   
-  def addAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean, delay: Double): TrackEntry = js.native
+  def addAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean, delay: Double): TrackEntry
   
-  def addEmptyAnimation(trackIndex: Double, mixDuration: Double, delay: Double): TrackEntry = js.native
+  def addEmptyAnimation(trackIndex: Double, mixDuration: Double, delay: Double): TrackEntry
   
-  def addListener(listener: AnimationStateListener2): Unit = js.native
+  def addListener(listener: AnimationStateListener2): Unit
   
-  var animationsChanged: Boolean = js.native
+  var animationsChanged: Boolean
   
   @JSName("apply")
-  def apply(skeleton: Skeleton): Boolean = js.native
+  def apply(skeleton: Skeleton): Boolean
   
-  def applyMixingFrom(to: TrackEntry, skeleton: Skeleton, blend: MixBlend): Double = js.native
+  def applyMixingFrom(to: TrackEntry, skeleton: Skeleton, blend: MixBlend): Double
   
   def applyRotateTimeline(
     timeline: Timeline,
@@ -34,61 +32,61 @@ trait AnimationState extends StObject {
     timelinesRotation: js.Array[Double],
     i: Double,
     firstFrame: Boolean
-  ): Unit = js.native
+  ): Unit
   
-  def clearListenerNotifications(): Unit = js.native
+  def clearListenerNotifications(): Unit
   
-  def clearListeners(): Unit = js.native
+  def clearListeners(): Unit
   
-  def clearTrack(trackIndex: Double): Unit = js.native
+  def clearTrack(trackIndex: Double): Unit
   
-  def clearTracks(): Unit = js.native
+  def clearTracks(): Unit
   
-  def computeHold(entry: TrackEntry): Unit = js.native
+  def computeHold(entry: TrackEntry): Unit
   
-  def computeNotLast(entry: TrackEntry): Unit = js.native
+  def computeNotLast(entry: TrackEntry): Unit
   
-  var data: AnimationStateData = js.native
+  var data: AnimationStateData
   
-  def disposeNext(entry: TrackEntry): Unit = js.native
+  def disposeNext(entry: TrackEntry): Unit
   
-  var events: js.Array[Event] = js.native
+  var events: js.Array[Event]
   
-  def expandToIndex(index: Double): TrackEntry = js.native
+  def expandToIndex(index: Double): TrackEntry
   
-  def getCurrent(trackIndex: Double): TrackEntry = js.native
+  def getCurrent(trackIndex: Double): TrackEntry
   
-  var listeners: js.Array[AnimationStateListener2] = js.native
+  var listeners: js.Array[AnimationStateListener2]
   
-  var propertyIDs: IntSet = js.native
+  var propertyIDs: IntSet
   
-  var queue: EventQueue = js.native
+  var queue: EventQueue
   
-  def queueEvents(entry: TrackEntry, animationTime: Double): Unit = js.native
+  def queueEvents(entry: TrackEntry, animationTime: Double): Unit
   
-  def removeListener(listener: AnimationStateListener2): Unit = js.native
+  def removeListener(listener: AnimationStateListener2): Unit
   
-  def setAnimation(trackIndex: Double, animationName: String, loop: Boolean): TrackEntry = js.native
+  def setAnimation(trackIndex: Double, animationName: String, loop: Boolean): TrackEntry
   
-  def setAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean): TrackEntry = js.native
+  def setAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean): TrackEntry
   
-  def setCurrent(index: Double, current: TrackEntry, interrupt: Boolean): Unit = js.native
+  def setCurrent(index: Double, current: TrackEntry, interrupt: Boolean): Unit
   
-  def setEmptyAnimation(trackIndex: Double, mixDuration: Double): TrackEntry = js.native
+  def setEmptyAnimation(trackIndex: Double, mixDuration: Double): TrackEntry
   
-  def setEmptyAnimations(mixDuration: Double): Unit = js.native
+  def setEmptyAnimations(mixDuration: Double): Unit
   
-  var timeScale: Double = js.native
+  var timeScale: Double
   
-  def trackEntry(trackIndex: Double, animation: Animation, loop: Boolean, last: TrackEntry): TrackEntry = js.native
+  def trackEntry(trackIndex: Double, animation: Animation, loop: Boolean, last: TrackEntry): TrackEntry
   
-  var trackEntryPool: Pool[TrackEntry] = js.native
+  var trackEntryPool: Pool[TrackEntry]
   
-  var tracks: js.Array[TrackEntry] = js.native
+  var tracks: js.Array[TrackEntry]
   
-  def update(delta: Double): Unit = js.native
+  def update(delta: Double): Unit
   
-  def updateMixingFrom(to: TrackEntry, delta: Double): Boolean = js.native
+  def updateMixingFrom(to: TrackEntry, delta: Double): Boolean
 }
 object AnimationState {
   

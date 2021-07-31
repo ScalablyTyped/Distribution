@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a number formatter which can preview number formats without inserting them.
   * @see NumberFormatter
   */
-@js.native
-trait XNumberFormatPreviewer extends XInterface {
+trait XNumberFormatPreviewer
+  extends StObject
+     with XInterface {
   
   /**
     * formats a value using a format string, without inserting a number format into the list.
@@ -24,7 +24,7 @@ trait XNumberFormatPreviewer extends XInterface {
     * @returns the formatted string.
     * @throws com::sun::star::util::MalformedNumberFormatException if the format string is invalid.
     */
-  def convertNumberToPreviewString(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean): String = js.native
+  def convertNumberToPreviewString(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean): String
   
   /**
     * returns the color which is to be used for a number.
@@ -36,7 +36,7 @@ trait XNumberFormatPreviewer extends XInterface {
     * @returns the color that should used to output the formatted string.
     * @throws com::sun::star::util::MalformedNumberFormatException if the format string is invalid.
     */
-  def queryPreviewColorForNumber(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean, aDefaultColor: Color): Color = js.native
+  def queryPreviewColorForNumber(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean, aDefaultColor: Color): Color
 }
 object XNumberFormatPreviewer {
   

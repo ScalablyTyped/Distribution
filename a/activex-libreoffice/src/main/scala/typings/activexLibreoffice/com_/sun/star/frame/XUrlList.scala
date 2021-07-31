@@ -5,14 +5,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XUrlList extends XInterface {
+trait XUrlList
+  extends StObject
+     with XInterface {
   
-  var List: SafeArray[String] = js.native
+  var List: SafeArray[String]
 }
 object XUrlList {
   

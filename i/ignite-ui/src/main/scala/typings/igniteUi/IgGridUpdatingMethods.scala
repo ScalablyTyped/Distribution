@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -62,9 +61,9 @@ trait IgGridUpdatingMethods extends StObject {
     * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
     */
   def endEdit(): Boolean = js.native
-  def endEdit(update: js.UndefOr[scala.Nothing], raiseEvents: Boolean): Boolean = js.native
   def endEdit(update: Boolean): Boolean = js.native
   def endEdit(update: Boolean, raiseEvents: Boolean): Boolean = js.native
+  def endEdit(update: Unit, raiseEvents: Boolean): Boolean = js.native
   
   /**
     * Finds and returns the key of the first column the editor for which has invalid value.

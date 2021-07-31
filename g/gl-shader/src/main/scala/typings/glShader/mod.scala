@@ -8,38 +8,36 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gl-shader", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, options: Attributes): Shader = js.native
-  @JSImport("gl-shader", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String): Shader = js.native
-  @JSImport("gl-shader", JSImport.Namespace)
-  @js.native
-  def apply(
-    gl: WebGLRenderingContext,
-    vertex: String,
-    fragment: String,
-    uniforms: js.UndefOr[scala.Nothing],
-    attributes: js.Array[Parameter]
-  ): Shader = js.native
-  @JSImport("gl-shader", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String, uniforms: js.Array[Parameter]): Shader = js.native
-  @JSImport("gl-shader", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, options: Attributes): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String, uniforms: js.Array[Parameter]): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  @scala.inline
   def apply(
     gl: WebGLRenderingContext,
     vertex: String,
     fragment: String,
     uniforms: js.Array[Parameter],
     attributes: js.Array[Parameter]
-  ): Shader = js.native
+  ): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  @scala.inline
+  def apply(
+    gl: WebGLRenderingContext,
+    vertex: String,
+    fragment: String,
+    uniforms: Unit,
+    attributes: js.Array[Parameter]
+  ): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  
+  @JSImport("gl-shader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Attribute extends StObject {
@@ -47,49 +45,28 @@ object mod {
     var location: js.Array[Double] | Double = js.native
     
     def pointer(): Double = js.native
-    def pointer(
-      `type`: js.UndefOr[scala.Nothing],
-      normalized: js.UndefOr[scala.Nothing],
-      stride: js.UndefOr[scala.Nothing],
-      offset: Double
-    ): Double = js.native
-    def pointer(`type`: js.UndefOr[scala.Nothing], normalized: js.UndefOr[scala.Nothing], stride: Double): Double = js.native
-    def pointer(
-      `type`: js.UndefOr[scala.Nothing],
-      normalized: js.UndefOr[scala.Nothing],
-      stride: Double,
-      offset: Double
-    ): Double = js.native
-    def pointer(`type`: js.UndefOr[scala.Nothing], normalized: Boolean): Double = js.native
-    def pointer(
-      `type`: js.UndefOr[scala.Nothing],
-      normalized: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      offset: Double
-    ): Double = js.native
-    def pointer(`type`: js.UndefOr[scala.Nothing], normalized: Boolean, stride: Double): Double = js.native
-    def pointer(`type`: js.UndefOr[scala.Nothing], normalized: Boolean, stride: Double, offset: Double): Double = js.native
     def pointer(`type`: Double): Double = js.native
-    def pointer(
-      `type`: Double,
-      normalized: js.UndefOr[scala.Nothing],
-      stride: js.UndefOr[scala.Nothing],
-      offset: Double
-    ): Double = js.native
-    def pointer(`type`: Double, normalized: js.UndefOr[scala.Nothing], stride: Double): Double = js.native
-    def pointer(`type`: Double, normalized: js.UndefOr[scala.Nothing], stride: Double, offset: Double): Double = js.native
     def pointer(`type`: Double, normalized: Boolean): Double = js.native
-    def pointer(`type`: Double, normalized: Boolean, stride: js.UndefOr[scala.Nothing], offset: Double): Double = js.native
     def pointer(`type`: Double, normalized: Boolean, stride: Double): Double = js.native
     def pointer(`type`: Double, normalized: Boolean, stride: Double, offset: Double): Double = js.native
+    def pointer(`type`: Double, normalized: Boolean, stride: Unit, offset: Double): Double = js.native
+    def pointer(`type`: Double, normalized: Unit, stride: Double): Double = js.native
+    def pointer(`type`: Double, normalized: Unit, stride: Double, offset: Double): Double = js.native
+    def pointer(`type`: Double, normalized: Unit, stride: Unit, offset: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Boolean): Double = js.native
+    def pointer(`type`: Unit, normalized: Boolean, stride: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Boolean, stride: Double, offset: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Boolean, stride: Unit, offset: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Unit, stride: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Unit, stride: Double, offset: Double): Double = js.native
+    def pointer(`type`: Unit, normalized: Unit, stride: Unit, offset: Double): Double = js.native
   }
   
-  @js.native
   trait Parameter extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Parameter {
     
@@ -114,7 +91,7 @@ object mod {
   @js.native
   trait Shader extends StObject {
     
-    val attributes: StringDictionary[Attribute with js.Array[_]] = js.native
+    val attributes: StringDictionary[Attribute & js.Array[js.Any]] = js.native
     
     def bind(): Unit = js.native
     
@@ -130,14 +107,9 @@ object mod {
     
     def update(obj: Fragment): Unit = js.native
     def update(vertex: String, fragment: String): Unit = js.native
-    def update(
-      vertex: String,
-      fragment: String,
-      uniforms: js.UndefOr[scala.Nothing],
-      attributes: js.Array[Parameter]
-    ): Unit = js.native
     def update(vertex: String, fragment: String, uniforms: js.Array[Parameter]): Unit = js.native
     def update(vertex: String, fragment: String, uniforms: js.Array[Parameter], attributes: js.Array[Parameter]): Unit = js.native
+    def update(vertex: String, fragment: String, uniforms: Unit, attributes: js.Array[Parameter]): Unit = js.native
     
     val vertShader: WebGLShader = js.native
   }

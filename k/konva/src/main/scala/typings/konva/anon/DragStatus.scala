@@ -8,21 +8,19 @@ import typings.konva.nodeMod.NodeConfig
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragStatus extends StObject {
   
-  var dragStatus: stopped | ready | dragging = js.native
+  var dragStatus: stopped | ready | dragging
   
-  var node: Node[NodeConfig] = js.native
+  var node: Node[NodeConfig]
   
-  var offset: Vector2d = js.native
+  var offset: Vector2d
   
-  var pointerId: js.UndefOr[Double] = js.native
+  var pointerId: js.UndefOr[Double] = js.undefined
   
-  var startPointerPos: Vector2d = js.native
+  var startPointerPos: Vector2d
 }
 object DragStatus {
   

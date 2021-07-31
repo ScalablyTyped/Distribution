@@ -2,18 +2,16 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsFilter> */
-@js.native
 trait PartialMUIDataTableTextLaAll extends StObject {
   
-  var all: js.UndefOr[String] = js.native
+  var all: js.UndefOr[String] = js.undefined
   
-  var reset: js.UndefOr[String] = js.native
+  var reset: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLaAll {
   

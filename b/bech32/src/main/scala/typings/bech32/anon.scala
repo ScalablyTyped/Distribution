@@ -2,17 +2,15 @@ package typings.bech32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Prefix extends StObject {
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var words: js.Array[Double] = js.native
+    var words: js.Array[Double]
   }
   object Prefix {
     

@@ -5,47 +5,47 @@ import typings.elasticsearch.elasticsearchStrings.internal
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateDocumentParams extends GenericParams {
+trait UpdateDocumentParams
+  extends StObject
+     with GenericParams {
   
-  var _source: js.UndefOr[NameList] = js.native
+  var _source: js.UndefOr[NameList] = js.undefined
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var fields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var index: String = js.native
+  var index: String
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[Refresh] = js.native
+  var refresh: js.UndefOr[Refresh] = js.undefined
   
-  var retryOnConflict: js.UndefOr[Double] = js.native
+  var retryOnConflict: js.UndefOr[Double] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var timestamp: js.UndefOr[Date | Double] = js.native
+  var timestamp: js.UndefOr[Date | Double] = js.undefined
   
-  var ttl: js.UndefOr[TimeSpan] = js.native
+  var ttl: js.UndefOr[TimeSpan] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var versionType: js.UndefOr[internal | force] = js.native
+  var versionType: js.UndefOr[internal | force] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
 }
 object UpdateDocumentParams {
   

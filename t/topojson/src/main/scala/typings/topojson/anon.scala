@@ -5,19 +5,17 @@ import typings.topojsonSpecification.mod.MultiPolygon
 import typings.topojsonSpecification.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Counties extends StObject {
     
-    var counties: Geometries = js.native
+    var counties: Geometries
     
-    var nation: GeometryCollection[js.Object] = js.native
+    var nation: GeometryCollection[js.Object]
     
-    var states: Geometries = js.native
+    var states: Geometries
   }
   object Counties {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Countries extends StObject {
     
-    var countries: Geometries = js.native
+    var countries: Geometries
     
-    var land: GeometryCollection[js.Object] = js.native
+    var land: GeometryCollection[js.Object]
   }
   object Countries {
     
@@ -67,22 +64,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Geometries extends StObject {
     
-    var geometries: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]] = js.native
+    var geometries: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]
     
-    var `type`: typings.topojson.topojsonStrings.GeometryCollection = js.native
+    var `type`: typings.topojson.topojsonStrings.GeometryCollection
   }
   object Geometries {
     
     @scala.inline
-    def apply(
-      geometries: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]],
-      `type`: typings.topojson.topojsonStrings.GeometryCollection
-    ): Geometries = {
+    def apply(geometries: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]): Geometries = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[Geometries]
     }
     

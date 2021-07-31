@@ -2,21 +2,19 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ################################################################ #
   * Represents the input to API methods.
   */
-@js.native
 trait SchemaDocument extends StObject {
   
   /**
     * The content of the input in string format. Cloud audit logging exempt
     * since it is based on user data.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The Google Cloud Storage URI where the file content is located. This URI
@@ -24,7 +22,7 @@ trait SchemaDocument extends StObject {
     * https://cloud.google.com/storage/docs/reference-uris. NOTE: Cloud Storage
     * object versioning is not supported.
     */
-  var gcsContentUri: js.UndefOr[String] = js.native
+  var gcsContentUri: js.UndefOr[String] = js.undefined
   
   /**
     * The language of the document (if not specified, the language is
@@ -35,13 +33,13 @@ trait SchemaDocument extends StObject {
     * supported by the called API method, an `INVALID_ARGUMENT` error is
     * returned.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Required. If the type is not set or is `TYPE_UNSPECIFIED`, returns an
     * `INVALID_ARGUMENT` error.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDocument {
   

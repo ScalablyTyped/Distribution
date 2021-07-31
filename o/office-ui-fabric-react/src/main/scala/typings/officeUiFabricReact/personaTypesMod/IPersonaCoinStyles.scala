@@ -3,21 +3,19 @@ package typings.officeUiFabricReact.personaTypesMod
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonaCoinStyles extends StObject {
   
-  var coin: IStyle = js.native
+  var coin: IStyle
   
-  var image: IStyle = js.native
+  var image: IStyle
   
-  var imageArea: IStyle = js.native
+  var imageArea: IStyle
   
-  var initials: IStyle = js.native
+  var initials: IStyle
   
-  var size10WithoutPresenceIcon: IStyle = js.native
+  var size10WithoutPresenceIcon: IStyle
 }
 object IPersonaCoinStyles {
   

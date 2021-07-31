@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usagePlanKeyMod {
@@ -53,6 +52,10 @@ object usagePlanKeyMod {
   /* static members */
   object UsagePlanKey {
     
+    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UsagePlanKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,45 +65,39 @@ object usagePlanKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UsagePlanKey = js.native
-    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UsagePlanKey = js.native
-    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UsagePlanKeyState): UsagePlanKey = js.native
-    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): UsagePlanKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UsagePlanKeyState): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
     
     /**
       * Returns true if the given object is an instance of UsagePlanKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean]
   }
   
-  @js.native
   trait UsagePlanKeyArgs extends StObject {
     
     /**
       * The identifier of the API key resource.
       */
-    val keyId: Input[String] = js.native
+    val keyId: Input[String]
     
     /**
       * The type of the API key resource. Currently, the valid key type is API_KEY.
       */
-    val keyType: Input[String] = js.native
+    val keyType: Input[String]
     
     /**
       * The Id of the usage plan resource representing to associate the key to.
       */
-    val usagePlanId: Input[String] = js.native
+    val usagePlanId: Input[String]
   }
   object UsagePlanKeyArgs {
     
@@ -124,33 +121,32 @@ object usagePlanKeyMod {
     }
   }
   
-  @js.native
   trait UsagePlanKeyState extends StObject {
     
     /**
       * The identifier of the API key resource.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the API key resource. Currently, the valid key type is API_KEY.
       */
-    val keyType: js.UndefOr[Input[String]] = js.native
+    val keyType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of a usage plan key.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Id of the usage plan resource representing to associate the key to.
       */
-    val usagePlanId: js.UndefOr[Input[String]] = js.native
+    val usagePlanId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value of a usage plan key.
       */
-    val value: js.UndefOr[Input[String]] = js.native
+    val value: js.UndefOr[Input[String]] = js.undefined
   }
   object UsagePlanKeyState {
     

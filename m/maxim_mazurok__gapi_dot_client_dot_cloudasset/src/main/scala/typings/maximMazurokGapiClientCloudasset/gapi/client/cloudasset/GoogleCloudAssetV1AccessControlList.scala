@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssetV1AccessControlList extends StObject {
   
   /**
     * The accesses that match one of the following conditions: - The access_selector, if it is specified in request; - Otherwise, access specifiers reachable from the policy binding's
     * role.
     */
-  var accesses: js.UndefOr[js.Array[GoogleCloudAssetV1Access]] = js.native
+  var accesses: js.UndefOr[js.Array[GoogleCloudAssetV1Access]] = js.undefined
   
   /**
     * Resource edges of the graph starting from the policy attached resource to any descendant resources. The Edge.source_node contains the full resource name of a parent resource and
     * Edge.target_node contains the full resource name of a child resource. This field is present only if the output_resource_edges option is enabled in request.
     */
-  var resourceEdges: js.UndefOr[js.Array[GoogleCloudAssetV1Edge]] = js.native
+  var resourceEdges: js.UndefOr[js.Array[GoogleCloudAssetV1Edge]] = js.undefined
   
   /** The resources that match one of the following conditions: - The resource_selector, if it is specified in request; - Otherwise, resources reachable from the policy attached resource. */
-  var resources: js.UndefOr[js.Array[GoogleCloudAssetV1Resource]] = js.native
+  var resources: js.UndefOr[js.Array[GoogleCloudAssetV1Resource]] = js.undefined
 }
 object GoogleCloudAssetV1AccessControlList {
   

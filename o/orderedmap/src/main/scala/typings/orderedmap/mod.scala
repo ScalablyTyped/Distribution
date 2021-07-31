@@ -3,25 +3,26 @@ package typings.orderedmap
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("orderedmap", JSImport.Namespace)
   @js.native
-  class ^[T] () extends OrderedMap[T]
+  class ^[T] ()
+    extends StObject
+       with OrderedMap[T]
+  @JSImport("orderedmap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("orderedmap", "from")
-  @js.native
-  def from[T](): OrderedMap[T] = js.native
-  @JSImport("orderedmap", "from")
-  @js.native
-  def from[T](value: StringDictionary[T]): OrderedMap[T] = js.native
-  @JSImport("orderedmap", "from")
-  @js.native
-  def from[T](value: OrderedMap[T]): OrderedMap[T] = js.native
+  @scala.inline
+  def from[T](): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[OrderedMap[T]]
+  @scala.inline
+  def from[T](value: StringDictionary[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
+  @scala.inline
+  def from[T](value: OrderedMap[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
   
   @js.native
   trait OrderedMap[T] extends StObject {

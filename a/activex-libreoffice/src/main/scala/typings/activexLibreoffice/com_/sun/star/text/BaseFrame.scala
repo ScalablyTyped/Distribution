@@ -21,51 +21,50 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the base service of text frames, graphic objects, and embedded objects */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.activexLibreoffice.com_.sun.star.drawing.XShape because var conflicts: Size. Inlined getPosition, getSize, Position, setPosition, setSize */ @js.native
-trait BaseFrame
-  extends TextContent
+- typings.activexLibreoffice.com_.sun.star.drawing.XShape because var conflicts: Size. Inlined getPosition, getSize, Position, setPosition, setSize */ trait BaseFrame
+  extends StObject
      with BaseFrameProperties
+     with TextContent
      with XPropertySet
      with XNamed
      with XShapeDescriptor {
   
   /** contains the name of the frame style that is applied to this object. */
-  var FrameStyleName: String = js.native
+  var FrameStyleName: String
   
   /**
     * gets the current position of this object.
     * @returns the position of the top left edge in 100/th mm
     */
-  var Position: Point = js.native
+  var Position: Point
   
   /**
     * gets the current position of this object.
     * @returns the position of the top left edge in 100/th mm
     */
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
   /**
     * gets the size of this object.
     * @returns the size in 100/th mm
     */
-  def getSize(): Size = js.native
+  def getSize(): Size
   
   /**
     * sets the current position of this object
     * @param aPosition the position of the top left edge in 100/th mm
     */
-  def setPosition(aPosition: Point): Unit = js.native
+  def setPosition(aPosition: Point): Unit
   
   /**
     * sets the size of this object.
     * @param aSize the size in 100/th mm
     */
-  def setSize(aSize: Size): Unit = js.native
+  def setSize(aSize: Size): Unit
 }
 object BaseFrame {
   

@@ -2,15 +2,13 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: Code = js.native
+  var `type`: Code
 }
 object Type {
   

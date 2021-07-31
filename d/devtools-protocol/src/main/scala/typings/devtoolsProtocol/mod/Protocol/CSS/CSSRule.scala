@@ -2,38 +2,36 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSRule extends StObject {
   
   /**
     * Media list array (for rules involving media queries). The array enumerates media queries
     * starting with the innermost one, going outwards.
     */
-  var media: js.UndefOr[js.Array[CSSMedia]] = js.native
+  var media: js.UndefOr[js.Array[CSSMedia]] = js.undefined
   
   /**
     * Parent stylesheet's origin.
     */
-  var origin: StyleSheetOrigin = js.native
+  var origin: StyleSheetOrigin
   
   /**
     * Rule selector data.
     */
-  var selectorList: SelectorList = js.native
+  var selectorList: SelectorList
   
   /**
     * Associated style declaration.
     */
-  var style: CSSStyle = js.native
+  var style: CSSStyle
   
   /**
     * The css style sheet identifier (absent for user agent stylesheet and user-specified
     * stylesheet rules) this rule came from.
     */
-  var styleSheetId: js.UndefOr[StyleSheetId] = js.native
+  var styleSheetId: js.UndefOr[StyleSheetId] = js.undefined
 }
 object CSSRule {
   

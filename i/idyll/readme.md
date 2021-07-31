@@ -10,9 +10,9 @@ Command line interface for idyll lang
 | ------------------ | :-------------: |
 | Full name          | idyll |
 | Keywords           | idyll |
-| # releases         | 58 |
+| # releases         | 64 |
 | # dependents       | 0 |
-| # downloads        | 9804 |
+| # downloads        | 12850 |
 | # stars            | 0 |
 
 ## Links

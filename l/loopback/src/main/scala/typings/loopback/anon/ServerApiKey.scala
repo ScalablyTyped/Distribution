@@ -2,13 +2,11 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerApiKey extends StObject {
   
-  var serverApiKey: String = js.native
+  var serverApiKey: String
 }
 object ServerApiKey {
   

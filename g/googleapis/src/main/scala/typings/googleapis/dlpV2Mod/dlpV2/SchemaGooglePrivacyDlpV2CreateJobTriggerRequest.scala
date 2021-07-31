@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for CreateJobTrigger.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
   
   /**
     * The JobTrigger to create.
     */
-  var jobTrigger: js.UndefOr[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
+  var jobTrigger: js.UndefOr[SchemaGooglePrivacyDlpV2JobTrigger] = js.undefined
   
   /**
     * The trigger id can contain uppercase and lowercase letters, numbers, and
@@ -22,7 +20,7 @@ trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
     * The maximum length is 100 characters. Can be empty to allow the system to
     * generate one.
     */
-  var triggerId: js.UndefOr[String] = js.native
+  var triggerId: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CreateJobTriggerRequest {
   

@@ -3,17 +3,17 @@ package typings.scrollmagic.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneProgressEvent[T] extends Event[T] {
+trait SceneProgressEvent[T]
+  extends StObject
+     with Event[T] {
   
-  val progress: Double = js.native
+  val progress: Double
   
-  val scrollDirection: ScrollDirection = js.native
+  val scrollDirection: ScrollDirection
   
-  val state: SceneState = js.native
+  val state: SceneState
 }
 object SceneProgressEvent {
   
@@ -35,7 +35,7 @@ object SceneProgressEvent {
   }
   
   @scala.inline
-  implicit class SceneProgressEventMutableBuilder[Self <: SceneProgressEvent[_], T] (val x: Self with SceneProgressEvent[T]) extends AnyVal {
+  implicit class SceneProgressEventMutableBuilder[Self <: SceneProgressEvent[?], T] (val x: Self & SceneProgressEvent[T]) extends AnyVal {
     
     @scala.inline
     def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])

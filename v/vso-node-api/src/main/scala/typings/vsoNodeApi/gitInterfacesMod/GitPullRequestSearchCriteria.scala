@@ -2,51 +2,49 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPullRequestSearchCriteria extends StObject {
   
   /**
     * If set, search for pull requests that were created by this identity.
     */
-  var creatorId: String = js.native
+  var creatorId: String
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
   /**
     * If set, search for pull requests whose target branch is in this repository.
     */
-  var repositoryId: String = js.native
+  var repositoryId: String
   
   /**
     * If set, search for pull requests that have this identity as a reviewer.
     */
-  var reviewerId: String = js.native
+  var reviewerId: String
   
   /**
     * If set, search for pull requests from this branch.
     */
-  var sourceRefName: String = js.native
+  var sourceRefName: String
   
   /**
     * If set, search for pull requests whose source branch is in this repository.
     */
-  var sourceRepositoryId: String = js.native
+  var sourceRepositoryId: String
   
   /**
     * If set, search for pull requests that are in this state.
     */
-  var status: PullRequestStatus = js.native
+  var status: PullRequestStatus
   
   /**
     * If set, search for pull requests into this branch.
     */
-  var targetRefName: String = js.native
+  var targetRefName: String
 }
 object GitPullRequestSearchCriteria {
   

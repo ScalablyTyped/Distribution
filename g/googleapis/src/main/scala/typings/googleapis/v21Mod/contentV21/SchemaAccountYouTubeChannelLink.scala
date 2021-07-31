@@ -2,16 +2,14 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountYouTubeChannelLink extends StObject {
   
   /**
     * Channel ID.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the link between this Merchant Center account and the YouTube
@@ -25,7 +23,7 @@ trait SchemaAccountYouTubeChannelLink extends StObject {
     * at all and will delete the link if it was active or cancel the link
     * request if it was pending.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountYouTubeChannelLink {
   

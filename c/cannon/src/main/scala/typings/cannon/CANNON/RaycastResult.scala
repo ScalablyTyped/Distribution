@@ -2,27 +2,25 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaycastResult extends StObject {
   
-  var body: Body = js.native
+  var body: Body
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var hasHit: Boolean = js.native
+  var hasHit: Boolean
   
-  var hitNormalWorld: Vec3 = js.native
+  var hitNormalWorld: Vec3
   
-  var hitPointWorld: Vec3 = js.native
+  var hitPointWorld: Vec3
   
-  var rayFromWorld: Vec3 = js.native
+  var rayFromWorld: Vec3
   
-  var rayToWorld: Vec3 = js.native
+  var rayToWorld: Vec3
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   def set(
     rayFromWorld: Vec3,
@@ -32,9 +30,9 @@ trait RaycastResult extends StObject {
     shape: Shape,
     body: Body,
     distance: Double
-  ): Unit = js.native
+  ): Unit
   
-  var shape: Shape = js.native
+  var shape: Shape
 }
 object RaycastResult {
   

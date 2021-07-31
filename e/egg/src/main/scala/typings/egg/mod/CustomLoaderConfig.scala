@@ -5,38 +5,36 @@ import typings.egg.eggStrings.ctx
 import typings.eggCore.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent egg.egg.RemoveSpecProp<egg-core.egg-core.FileLoaderOption, 'inject' | 'target'> */
-@js.native
 trait CustomLoaderConfig extends StObject {
   
-  var call: js.UndefOr[Boolean] = js.native
+  var call: js.UndefOr[Boolean] = js.undefined
   
-  var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.native
+  var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
   
-  var directory: String | js.Array[String] = js.native
+  var directory: String | js.Array[String]
   
-  var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
   
-  var ignore: js.UndefOr[String | js.Array[String]] = js.native
+  var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.native
+  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
   
   /**
     * an object you wanner load to, value can only be 'ctx' or 'app'. default to app
     */
-  var inject: js.UndefOr[ctx | app] = js.native
+  var inject: js.UndefOr[ctx | app] = js.undefined
   
   /**
     * whether need to load files in plugins or framework, default to false
     */
-  var loadunit: js.UndefOr[Boolean] = js.native
+  var loadunit: js.UndefOr[Boolean] = js.undefined
   
-  var `match`: js.UndefOr[String | js.Array[String]] = js.native
+  var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `override`: js.UndefOr[Boolean] = js.native
+  var `override`: js.UndefOr[Boolean] = js.undefined
 }
 object CustomLoaderConfig {
   
@@ -86,7 +84,7 @@ object CustomLoaderConfig {
     def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+    def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)

@@ -3,33 +3,31 @@ package typings.wordpressApiFetch.anon
 import typings.wordpressApiFetch.wordpressApiFetchBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
-  var author: js.UndefOr[`true`] = js.native
+  var author: js.UndefOr[`true`] = js.undefined
   
-  var comments: js.UndefOr[`true`] = js.native
+  var comments: js.UndefOr[`true`] = js.undefined
   
-  var `custom-fields`: js.UndefOr[`true`] = js.native
+  var `custom-fields`: js.UndefOr[`true`] = js.undefined
   
-  var editor: js.UndefOr[`true`] = js.native
+  var editor: js.UndefOr[`true`] = js.undefined
   
-  var excerpt: js.UndefOr[`true`] = js.native
+  var excerpt: js.UndefOr[`true`] = js.undefined
   
-  var `page-attributes`: js.UndefOr[`true`] = js.native
+  var `page-attributes`: js.UndefOr[`true`] = js.undefined
   
-  var `post-formats`: js.UndefOr[`true`] = js.native
+  var `post-formats`: js.UndefOr[`true`] = js.undefined
   
-  var revisions: js.UndefOr[`true`] = js.native
+  var revisions: js.UndefOr[`true`] = js.undefined
   
-  var thumbnail: js.UndefOr[`true`] = js.native
+  var thumbnail: js.UndefOr[`true`] = js.undefined
   
-  var title: js.UndefOr[`true`] = js.native
+  var title: js.UndefOr[`true`] = js.undefined
   
-  var trackbacks: js.UndefOr[`true`] = js.native
+  var trackbacks: js.UndefOr[`true`] = js.undefined
 }
 object Author {
   

@@ -4,18 +4,20 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textIconSpacingMod {
   
   object TextIconSpacing {
     
+    @scala.inline
+    def apply(
+      hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing")
     @js.native
-    def apply(
-      hasClassNameIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -86,7 +88,6 @@ object textIconSpacingMod {
     }
   }
   
-  @js.native
   trait TextIconSpacingProps extends StObject {
     
     /**
@@ -94,31 +95,31 @@ object textIconSpacingMod {
       * This is used when the `stacked` prop is enabled and the `iconAfter` prop is
       * disabled or omitted.
       */
-    var aboveClassName: js.UndefOr[String] = js.native
+    var aboveClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The class name to use for an icon that is placed after text.
       */
-    var afterClassName: js.UndefOr[String] = js.native
+    var afterClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The class name to use for an icon that is placed before text.
       */
-    var beforeClassName: js.UndefOr[String] = js.native
+    var beforeClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The class name to use for an icon that is placed before above the text.
       * This is used when the `stacked` prop is enabled and the `iconAfter` prop is
       * enabled.
       */
-    var belowClassName: js.UndefOr[String] = js.native
+    var belowClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The children to render before or after the provided icon. This is defaulted
       * to `null` so that providing a `null` icon will correctly render without
       * React crashing.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the surroudning `<span>` when the
@@ -126,13 +127,13 @@ object textIconSpacingMod {
       * If the `forceIconWrap` prop is not enabled, it will be cloned into the icon
       * instead.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the icon should be forced into a `<span>` with the class names
       * applied instead of attempting to clone into the provided icon.
       */
-    var forceIconWrap: js.UndefOr[Boolean] = js.native
+    var forceIconWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional icon to display with a text button. This is invalid for icon
@@ -144,19 +145,19 @@ object textIconSpacingMod {
       * If this is not a valid react element, the icon will be wrapped in a
       * `<span>` instead with the class names applied.
       */
-    var icon: js.UndefOr[ReactElement | ReactNode] = js.native
+    var icon: js.UndefOr[ReactElement | ReactNode] = js.undefined
     
     /**
       * Boolean if the icon should appear after the text instead of before.
       */
-    var iconAfter: js.UndefOr[Boolean] = js.native
+    var iconAfter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the icon and text should be stacked instead of inline. Note:
       * You'll normally want to update the container element to have `display:
       * flex` and `flex-direction: column` for this to work.
       */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
   }
   object TextIconSpacingProps {
     

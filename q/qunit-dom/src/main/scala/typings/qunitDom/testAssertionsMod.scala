@@ -4,14 +4,15 @@ import typings.qunitDom.assertionsMod.AssertionResult
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testAssertionsMod {
   
   @JSImport("qunit-dom/dist/helpers/test-assertions", JSImport.Default)
   @js.native
-  class default () extends TestAssertions
+  class default ()
+    extends StObject
+       with TestAssertions
   
   @js.native
   trait TestAssertions extends StObject {

@@ -2,36 +2,34 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePackagingConfigurationResponse extends StObject {
   
   /**
     * The ARN of the PackagingConfiguration.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
-  var CmafPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.CmafPackage] = js.native
+  var CmafPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.CmafPackage] = js.undefined
   
-  var DashPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.DashPackage] = js.native
+  var DashPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.DashPackage] = js.undefined
   
-  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.HlsPackage] = js.native
+  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.HlsPackage] = js.undefined
   
   /**
     * The ID of the PackagingConfiguration.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
-  var MssPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.MssPackage] = js.native
+  var MssPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.MssPackage] = js.undefined
   
   /**
     * The ID of a PackagingGroup.
     */
-  var PackagingGroupId: js.UndefOr[string] = js.native
+  var PackagingGroupId: js.UndefOr[string] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.undefined
 }
 object CreatePackagingConfigurationResponse {
   

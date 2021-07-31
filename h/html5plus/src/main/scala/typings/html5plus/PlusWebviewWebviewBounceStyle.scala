@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewBounceStyle extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var changeoffset: js.UndefOr[js.Any] = js.native
+  var changeoffset: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Webview窗口拖拽偏移的位置
@@ -36,7 +34,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var offset: js.UndefOr[js.Any] = js.native
+  var offset: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Webview窗口支持回弹效果的方向
@@ -51,7 +49,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Webview窗口是否阻止touch事件传递给DOM元素
@@ -59,7 +57,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var preventTouchEvent: js.UndefOr[Boolean] = js.native
+  var preventTouchEvent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Webview窗口侧滑时停靠的位置
@@ -71,7 +69,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var slideoffset: js.UndefOr[js.Any] = js.native
+  var slideoffset: js.UndefOr[js.Any] = js.undefined
 }
 object PlusWebviewWebviewBounceStyle {
   

@@ -3,13 +3,11 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeResponseBodyAsStreamResponse extends StObject {
   
-  var stream: StreamHandle = js.native
+  var stream: StreamHandle
 }
 object TakeResponseBodyAsStreamResponse {
   

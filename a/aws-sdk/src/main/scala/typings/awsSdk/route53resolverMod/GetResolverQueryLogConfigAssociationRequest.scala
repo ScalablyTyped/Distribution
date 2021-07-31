@@ -2,16 +2,14 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResolverQueryLogConfigAssociationRequest extends StObject {
   
   /**
     * The ID of the Resolver query logging configuration association that you want to get information about.
     */
-  var ResolverQueryLogConfigAssociationId: ResourceId = js.native
+  var ResolverQueryLogConfigAssociationId: ResourceId
 }
 object GetResolverQueryLogConfigAssociationRequest {
   

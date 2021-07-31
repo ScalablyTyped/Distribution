@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipRendererResult extends Object {
+trait relationshipRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal fill colors of the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * Describes each class break for both fields considered in the relationship visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var classBreaks: RendererResultClassBreaks = js.native
+  var classBreaks: RendererResultClassBreaks
   
   /**
     * The relationship scheme used by the renderer based on the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var relationshipScheme: RelationshipScheme = js.native
+  var relationshipScheme: RelationshipScheme
   
   /**
     * The renderer object representing the relationship visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var renderer: UniqueValueRenderer = js.native
+  var renderer: UniqueValueRenderer
   
   /**
     * Describes each container or bin used in the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var uniqueValueInfos: js.Array[typeUniqueValueInfo] = js.native
+  var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 object relationshipRendererResult {
   

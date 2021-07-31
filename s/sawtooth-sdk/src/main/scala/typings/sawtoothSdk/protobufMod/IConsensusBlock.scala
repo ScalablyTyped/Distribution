@@ -3,31 +3,29 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusBlock extends StObject {
   
   /** ConsensusBlock blockId */
-  var blockId: js.UndefOr[Uint8Array | Null] = js.native
+  var blockId: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusBlock blockNum */
   var blockNum: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** ConsensusBlock payload */
-  var payload: js.UndefOr[Uint8Array | Null] = js.native
+  var payload: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusBlock previousId */
-  var previousId: js.UndefOr[Uint8Array | Null] = js.native
+  var previousId: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusBlock signerId */
-  var signerId: js.UndefOr[Uint8Array | Null] = js.native
+  var signerId: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusBlock summary */
-  var summary: js.UndefOr[Uint8Array | Null] = js.native
+  var summary: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IConsensusBlock {
   

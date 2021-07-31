@@ -2,37 +2,70 @@ package typings.eventEmitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("event-emitter", JSImport.Namespace)
-  @js.native
-  def apply(): Emitter = js.native
-  @JSImport("event-emitter", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any): Emitter = js.native
+  @scala.inline
+  def apply(): Emitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter]
+  @scala.inline
+  def apply(obj: js.Any): Emitter = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter]
   
+  @JSImport("event-emitter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Emitter extends StObject {
     
-    def emit(`type`: String, args: js.Any*): Unit = js.native
+    def emit(`type`: String, args: js.Any*): Unit
     
-    def off(`type`: String, listener: EventListener): Unit = js.native
+    def off(`type`: String, listener: EventListener): Unit
     @JSName("off")
-    var off_Original: EmitterMethod = js.native
+    var off_Original: EmitterMethod
     
-    def on(`type`: String, listener: EventListener): Unit = js.native
+    def on(`type`: String, listener: EventListener): Unit
     @JSName("on")
-    var on_Original: EmitterMethod = js.native
+    var on_Original: EmitterMethod
     
-    def once(`type`: String, listener: EventListener): Unit = js.native
+    def once(`type`: String, listener: EventListener): Unit
     @JSName("once")
-    var once_Original: EmitterMethod = js.native
+    var once_Original: EmitterMethod
+  }
+  object Emitter {
+    
+    @scala.inline
+    def apply(
+      emit: (String, /* repeated */ js.Any) => Unit,
+      off: (/* type */ String, /* listener */ EventListener) => Unit,
+      on: (/* type */ String, /* listener */ EventListener) => Unit,
+      once: (/* type */ String, /* listener */ EventListener) => Unit
+    ): Emitter = {
+      val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once))
+      __obj.asInstanceOf[Emitter]
+    }
+    
+    @scala.inline
+    implicit class EmitterMutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOff(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOn(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnce(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+    }
   }
   
   type EmitterMethod = js.Function2[/* type */ String, /* listener */ EventListener, Unit]
   
-  type EventListener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait EventListener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
 }

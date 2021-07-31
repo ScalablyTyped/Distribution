@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridAutoRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GridAutoRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)
     */
-  var gridAutoRows: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var gridAutoRows: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object GridAutoRowsProps {
   
@@ -24,7 +22,7 @@ object GridAutoRowsProps {
   }
   
   @scala.inline
-  implicit class GridAutoRowsPropsMutableBuilder[Self <: GridAutoRowsProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridAutoRowsProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridAutoRowsPropsMutableBuilder[Self <: GridAutoRowsProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridAutoRowsProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setGridAutoRows(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])

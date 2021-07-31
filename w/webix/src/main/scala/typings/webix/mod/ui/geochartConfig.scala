@@ -5,69 +5,67 @@ import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait geochartConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
-  var columns: js.UndefOr[js.Array[_]] = js.native
+  var columns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datathrottle: js.UndefOr[Double] = js.native
+  var datathrottle: js.UndefOr[Double] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.native
+  var save: js.UndefOr[js.Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var tooltip: js.UndefOr[String | WebixCallback] = js.native
+  var tooltip: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object geochartConfig {
   
@@ -99,7 +97,7 @@ object geochartConfig {
     def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
@@ -120,7 +118,7 @@ object geochartConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -213,7 +211,7 @@ object geochartConfig {
     def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -238,9 +236,6 @@ object geochartConfig {
     
     @scala.inline
     def setTooltip(value: String | WebixCallback): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)

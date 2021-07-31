@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.NamedExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipMod {
@@ -13,14 +12,13 @@ object chipMod {
   @js.native
   val Chip: NamedExoticComponent[ChipProps] = js.native
   
-  @js.native
   trait ChipProps extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ChipProps {
     

@@ -2,23 +2,21 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stat extends StObject {
   
-  def isDirectory(): Boolean = js.native
+  def isDirectory(): Boolean
   
-  def isFile(): Boolean = js.native
+  def isFile(): Boolean
   
-  var lastAccessedTime: Double = js.native
+  var lastAccessedTime: Double
   
-  var lastModifiedTime: Double = js.native
+  var lastModifiedTime: Double
   
-  var mode: String = js.native
+  var mode: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object Stat {
   

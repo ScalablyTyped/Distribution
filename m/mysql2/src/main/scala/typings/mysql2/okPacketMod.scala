@@ -3,31 +3,29 @@ package typings.mysql2
 import typings.mysql2.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object okPacketMod {
   
-  @js.native
   trait OkPacket extends StObject {
     
-    var affectedRows: Double = js.native
+    var affectedRows: Double
     
-    var changedRows: Double = js.native
+    var changedRows: Double
     
-    var constructor: `1` = js.native
+    var constructor: `1`
     
-    var fieldCount: Double = js.native
+    var fieldCount: Double
     
-    var insertId: Double = js.native
+    var insertId: Double
     
-    var message: String = js.native
+    var message: String
     
-    var procotol41: Boolean = js.native
+    var procotol41: Boolean
     
-    var serverStatus: Double = js.native
+    var serverStatus: Double
     
-    var warningCount: Double = js.native
+    var warningCount: Double
   }
   object OkPacket {
     

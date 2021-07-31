@@ -2,26 +2,24 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryExternalConnectionInfo extends StObject {
   
   /**
     *  The name of the external connection associated with a repository. 
     */
-  var externalConnectionName: js.UndefOr[ExternalConnectionName] = js.native
+  var externalConnectionName: js.UndefOr[ExternalConnectionName] = js.undefined
   
   /**
     *  The package format associated with a repository's external connection. The valid package formats are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
     */
-  var packageFormat: js.UndefOr[PackageFormat] = js.native
+  var packageFormat: js.UndefOr[PackageFormat] = js.undefined
   
   /**
     *  The status of the external connection of a repository. There is one valid value, Available. 
     */
-  var status: js.UndefOr[ExternalConnectionStatus] = js.native
+  var status: js.UndefOr[ExternalConnectionStatus] = js.undefined
 }
 object RepositoryExternalConnectionInfo {
   

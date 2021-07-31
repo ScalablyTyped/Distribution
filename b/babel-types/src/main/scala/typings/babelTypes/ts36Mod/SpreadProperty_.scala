@@ -3,25 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.SpreadProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadProperty_
-  extends Node
+  extends StObject
+     with Node
      with UnaryLike {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_SpreadProperty_ : SpreadProperty = js.native
+  var type_SpreadProperty_ : SpreadProperty
 }
 object SpreadProperty_ {
   
   @scala.inline
-  def apply(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: SpreadProperty): SpreadProperty_ = {
+  def apply(argument: Expression, end: Double, loc: SourceLocation, start: Double): SpreadProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SpreadProperty")
     __obj.asInstanceOf[SpreadProperty_]
   }
   

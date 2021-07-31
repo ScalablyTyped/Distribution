@@ -6,33 +6,42 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("keygrip", JSImport.Namespace)
   @js.native
-  val ^ : KeygripFunction = js.native
+  val ^ : js.Object & KeygripFunction = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("keygrip", JSImport.Namespace)
   @js.native
-  class Class protected () extends Keygrip {
+  class Class protected ()
+    extends StObject
+       with Keygrip {
     def this(keys: js.Array[String]) = this()
     def this(keys: js.Array[String], algorithm: String) = this()
-    def this(keys: js.Array[String], algorithm: js.UndefOr[scala.Nothing], encoding: String) = this()
     def this(keys: js.Array[String], algorithm: String, encoding: String) = this()
+    def this(keys: js.Array[String], algorithm: Unit, encoding: String) = this()
+    
+    /* CompleteClass */
+    override def index(data: js.Any, digest: String): Double = js.native
+    
+    /* CompleteClass */
+    override def sign(data: js.Any): String = js.native
+    
+    /* CompleteClass */
+    override def verify(data: js.Any, digest: String): Boolean = js.native
   }
   
-  @js.native
   trait Keygrip extends StObject {
     
-    def index(data: js.Any, digest: String): Double = js.native
+    def index(data: js.Any, digest: String): Double
     
-    def sign(data: js.Any): String = js.native
+    def sign(data: js.Any): String
     
-    def verify(data: js.Any, digest: String): Boolean = js.native
+    def verify(data: js.Any, digest: String): Boolean
   }
   object Keygrip {
     
@@ -58,23 +67,24 @@ object mod extends Shortcut {
   
   @js.native
   trait KeygripFunction
-    extends Instantiable1[/* keys */ js.Array[String], Keygrip]
+    extends StObject
+       with Instantiable1[/* keys */ js.Array[String], Keygrip]
        with Instantiable2[/* keys */ js.Array[String], /* algorithm */ String, Keygrip]
        with Instantiable3[
           /* keys */ js.Array[String], 
-          js.UndefOr[/* algorithm */ String], 
+          (/* algorithm */ String) | (/* algorithm */ Unit), 
           /* encoding */ String, 
           Keygrip
         ] {
     
     def apply(keys: js.Array[String]): Keygrip = js.native
-    def apply(keys: js.Array[String], algorithm: js.UndefOr[scala.Nothing], encoding: String): Keygrip = js.native
     def apply(keys: js.Array[String], algorithm: String): Keygrip = js.native
     def apply(keys: js.Array[String], algorithm: String, encoding: String): Keygrip = js.native
+    def apply(keys: js.Array[String], algorithm: Unit, encoding: String): Keygrip = js.native
   }
   
-  type _To = KeygripFunction
+  type _To = js.Object & KeygripFunction
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: KeygripFunction = ^
+  override def _to: js.Object & KeygripFunction = ^
 }

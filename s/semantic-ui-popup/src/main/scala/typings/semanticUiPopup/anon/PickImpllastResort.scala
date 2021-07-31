@@ -2,14 +2,12 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'lastResort'> */
-@js.native
 trait PickImpllastResort extends StObject {
   
-  var lastResort: Boolean | String = js.native
+  var lastResort: Boolean | String
 }
 object PickImpllastResort {
   

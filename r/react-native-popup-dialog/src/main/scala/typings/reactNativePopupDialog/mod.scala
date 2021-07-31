@@ -9,7 +9,6 @@ import typings.reactNativePopupDialog.anon.AnimationDuration
 import typings.reactNativePopupDialog.anon.SlideFrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -139,24 +138,23 @@ object mod {
     def show(onShown: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait DialogButtonProps extends StObject {
     
-    var activeOpacity: js.UndefOr[Double] = js.native
+    var activeOpacity: js.UndefOr[Double] = js.undefined
     
-    var align: js.UndefOr[AlignTypes] = js.native
+    var align: js.UndefOr[AlignTypes] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object DialogButtonProps {
     
@@ -222,10 +220,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DialogContentProps extends StObject {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object DialogContentProps {
     
@@ -249,12 +246,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DialogFooterProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object DialogFooterProps {
     
@@ -284,46 +280,45 @@ object mod {
     }
   }
   
-  @js.native
   trait DialogProps extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dialogAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.native
+    var dialogAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.undefined
     
-    var dialogStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dialogStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dialogTitle: js.UndefOr[js.Any] = js.native
+    var dialogTitle: js.UndefOr[js.Any] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var hasOverlay: js.UndefOr[Boolean] = js.native
+    var hasOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.native
+    var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var overlayBackgroundColor: js.UndefOr[String] = js.native
+    var overlayBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var overlayOpacity: js.UndefOr[Double] = js.native
+    var overlayOpacity: js.UndefOr[Double] = js.undefined
     
-    var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.native
+    var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object DialogProps {
     
@@ -458,18 +453,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DialogTitleProps extends StObject {
     
-    var align: js.UndefOr[AlignTypes] = js.native
+    var align: js.UndefOr[AlignTypes] = js.undefined
     
-    var hasTitleBar: js.UndefOr[Boolean] = js.native
+    var hasTitleBar: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object DialogTitleProps {
     
@@ -531,24 +525,23 @@ object mod {
     def none: typings.reactNativePopupDialog.reactNativePopupDialogStrings.none = "none".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.none]
   }
   
-  @js.native
   trait OverlayProps extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    def onPress(event: GestureResponderEvent): Unit = js.native
+    def onPress(event: GestureResponderEvent): Unit
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pointerEvents: js.UndefOr[String] = js.native
+    var pointerEvents: js.UndefOr[String] = js.undefined
     
-    var showOverlay: js.UndefOr[Boolean] = js.native
+    var showOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object OverlayProps {
     

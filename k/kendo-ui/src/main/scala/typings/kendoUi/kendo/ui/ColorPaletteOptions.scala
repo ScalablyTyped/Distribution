@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPaletteOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ ColorPaletteEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ColorPaletteEvent, Unit]] = js.undefined
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var palette: js.UndefOr[String | js.Any] = js.native
+  var palette: js.UndefOr[String | js.Any] = js.undefined
   
-  var tileSize: js.UndefOr[ColorPaletteTileSize] = js.native
+  var tileSize: js.UndefOr[ColorPaletteTileSize] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ColorPaletteOptions {
   

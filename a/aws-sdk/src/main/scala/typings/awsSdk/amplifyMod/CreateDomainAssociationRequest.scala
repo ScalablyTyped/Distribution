@@ -2,41 +2,39 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDomainAssociationRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  Sets the branch patterns for automatic subdomain creation. 
     */
-  var autoSubDomainCreationPatterns: js.UndefOr[AutoSubDomainCreationPatterns] = js.native
+  var autoSubDomainCreationPatterns: js.UndefOr[AutoSubDomainCreationPatterns] = js.undefined
   
   /**
     *  The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains. 
     */
-  var autoSubDomainIAMRole: js.UndefOr[AutoSubDomainIAMRole] = js.native
+  var autoSubDomainIAMRole: js.UndefOr[AutoSubDomainIAMRole] = js.undefined
   
   /**
     *  The domain name for the domain association. 
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
   
   /**
     *  Enables the automated creation of subdomains for branches. 
     */
-  var enableAutoSubDomain: js.UndefOr[EnableAutoSubDomain] = js.native
+  var enableAutoSubDomain: js.UndefOr[EnableAutoSubDomain] = js.undefined
   
   /**
     *  The setting for the subdomain. 
     */
-  var subDomainSettings: SubDomainSettings = js.native
+  var subDomainSettings: SubDomainSettings
 }
 object CreateDomainAssociationRequest {
   

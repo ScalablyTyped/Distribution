@@ -15,42 +15,40 @@ import typings.node.processMod.global.NodeJS.Signals
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & node.child_process.ExecFileOptionsWithBufferEncoding> */
-  @js.native
   trait ReadonlyOptionsExecFileOp extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val encoding: js.UndefOr[buffer | Null] = js.native
+    val encoding: js.UndefOr[buffer | Null] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[Boolean | String] = js.native
+    val shell: js.UndefOr[Boolean | String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
     
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsExecFileOp {
     
@@ -153,36 +151,35 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & node.child_process.ExecFileOptionsWithStringEncoding> */
-  @js.native
   trait ReadonlyOptionsExecFileOpCapture extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val encoding: BufferEncoding = js.native
+    val encoding: BufferEncoding
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[Boolean | String] = js.native
+    val shell: js.UndefOr[Boolean | String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
     
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsExecFileOpCapture {
     
@@ -279,32 +276,31 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & node.child_process.ExecOptions> */
-  @js.native
   trait ReadonlyOptionsExecOption extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[String] = js.native
+    val shell: js.UndefOr[String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsExecOption {
     
@@ -392,36 +388,35 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & node.child_process.ForkOptions> */
-  @js.native
   trait ReadonlyOptionsForkOption extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val detached: js.UndefOr[Boolean] = js.native
+    val detached: js.UndefOr[Boolean] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val execArgv: js.UndefOr[js.Array[String]] = js.native
+    val execArgv: js.UndefOr[js.Array[String]] = js.undefined
     
-    val execPath: js.UndefOr[String] = js.native
+    val execPath: js.UndefOr[String] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val serialization: js.UndefOr[SerializationType] = js.native
+    val serialization: js.UndefOr[SerializationType] = js.undefined
     
-    val silent: js.UndefOr[Boolean] = js.native
+    val silent: js.UndefOr[Boolean] = js.undefined
     
-    val stdio: js.UndefOr[StdioOptions] = js.native
+    val stdio: js.UndefOr[StdioOptions] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsForkOption {
     
@@ -527,38 +522,37 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & node.child_process.SpawnOptions> */
-  @js.native
   trait ReadonlyOptionsSpawnOptio extends StObject {
     
-    val argv0: js.UndefOr[String] = js.native
+    val argv0: js.UndefOr[String] = js.undefined
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val detached: js.UndefOr[Boolean] = js.native
+    val detached: js.UndefOr[Boolean] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val serialization: js.UndefOr[SerializationType] = js.native
+    val serialization: js.UndefOr[SerializationType] = js.undefined
     
-    val shell: js.UndefOr[Boolean | String] = js.native
+    val shell: js.UndefOr[Boolean | String] = js.undefined
     
-    val stdio: js.UndefOr[StdioOptions] = js.native
+    val stdio: js.UndefOr[StdioOptions] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
     
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsSpawnOptio {
     
@@ -667,34 +661,33 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :node.BufferEncoding | undefined} & node.child_process.ExecOptions> */
-  @js.native
   trait ReadonlyOptionsencodingBu_ extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val encoding: js.UndefOr[BufferEncoding] = js.native
+    val encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[String] = js.native
+    val shell: js.UndefOr[String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsencodingBu_ {
     
@@ -788,34 +781,33 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :'buffer' | null} & node.child_process.ExecOptions> */
-  @js.native
   trait ReadonlyOptionsencodingbu extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val encoding: js.UndefOr[buffer | Null] = js.native
+    val encoding: js.UndefOr[buffer | Null] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[String] = js.native
+    val shell: js.UndefOr[String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsencodingbu {
     
@@ -912,34 +904,33 @@ object anon {
   }
   
   /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :string | undefined} & node.child_process.ExecOptions> */
-  @js.native
   trait ReadonlyOptionsencodingst extends StObject {
     
     val capture: js.UndefOr[
         (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-      ] = js.native
+      ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val encoding: js.UndefOr[String] = js.native
+    val encoding: js.UndefOr[String] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val killSignal: js.UndefOr[Signals | Double] = js.native
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
-    val shell: js.UndefOr[String] = js.native
+    val shell: js.UndefOr[String] = js.undefined
     
-    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+    val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyOptionsencodingst {
     

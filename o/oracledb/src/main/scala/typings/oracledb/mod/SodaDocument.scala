@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SodaDocuments represents the document for SODA read and write operations.
   */
-@js.native
 trait SodaDocument extends StObject {
   
   /** Creation time of the document as a string in the UTC time zone using an ISO8601 format. */
-  val createdOn: js.UndefOr[String] = js.native
+  val createdOn: js.UndefOr[String] = js.undefined
   
   /**
     * A synchronous method that returns the document content as an object.
@@ -23,7 +21,7 @@ trait SodaDocument extends StObject {
     *
     * @since 3.0
     */
-  def getContent(): Record[String, _] = js.native
+  def getContent(): Record[String, js.Any]
   
   /**
     * A synchronous method that returns the document content as a Buffer.
@@ -35,7 +33,7 @@ trait SodaDocument extends StObject {
     *
     * @since 3.0
     */
-  def getContentAsBuffer(): Buffer = js.native
+  def getContentAsBuffer(): Buffer
   
   /**
     * A synchronous method that returns JSON document content as a String.
@@ -46,13 +44,13 @@ trait SodaDocument extends StObject {
     *
     * @since 3.0
     */
-  def getContentAsString(): String = js.native
+  def getContentAsString(): String
   
   /** Unique key value for this document. */
-  val key: js.UndefOr[String] = js.native
+  val key: js.UndefOr[String] = js.undefined
   
   /** Last modified time of the document as a string in the UTC time zone using an ISO8601 format. */
-  val lastModified: String = js.native
+  val lastModified: String
   
   /**
     * An arbitrary string value designating the content media type. The recommendation when creating documents is to use a MIME type for the media type.
@@ -62,16 +60,16 @@ trait SodaDocument extends StObject {
     * 
     * @default 'application/json'
     */
-  val mediaType: js.UndefOr[String] = js.native
+  val mediaType: js.UndefOr[String] = js.undefined
   
   /** Version of the document. */
-  val version: String = js.native
+  val version: String
 }
 object SodaDocument {
   
   @scala.inline
   def apply(
-    getContent: () => Record[String, _],
+    getContent: () => Record[String, js.Any],
     getContentAsBuffer: () => Buffer,
     getContentAsString: () => String,
     lastModified: String,
@@ -91,7 +89,7 @@ object SodaDocument {
     def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
     @scala.inline
-    def setGetContent(value: () => Record[String, _]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    def setGetContent(value: () => Record[String, js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetContentAsBuffer(value: () => Buffer): Self = StObject.set(x, "getContentAsBuffer", js.Any.fromFunction0(value))

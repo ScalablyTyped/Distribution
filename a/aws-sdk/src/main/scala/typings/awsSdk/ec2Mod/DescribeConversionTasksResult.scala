@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConversionTasksResult extends StObject {
   
   /**
     * Information about the conversion tasks.
     */
-  var ConversionTasks: js.UndefOr[DescribeConversionTaskList] = js.native
+  var ConversionTasks: js.UndefOr[DescribeConversionTaskList] = js.undefined
 }
 object DescribeConversionTasksResult {
   

@@ -2,19 +2,17 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableResults extends StObject {
   
-  var destinations: js.Array[Waypoint] = js.native
+  var destinations: js.Array[Waypoint]
   
-  var distances: js.UndefOr[js.Array[js.Array[Distance]]] = js.native
+  var distances: js.UndefOr[js.Array[js.Array[Distance]]] = js.undefined
   
-  var durations: js.Array[js.Array[Duration]] = js.native
+  var durations: js.Array[js.Array[Duration]]
   
-  var sources: js.Array[Waypoint] = js.native
+  var sources: js.Array[Waypoint]
 }
 object TableResults {
   

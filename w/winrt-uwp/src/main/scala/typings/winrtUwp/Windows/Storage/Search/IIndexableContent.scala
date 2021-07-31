@@ -4,29 +4,32 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents app content and properties that can be added to the ContentIndexer . */
-@js.native
 trait IIndexableContent extends StObject {
   
   /** Gets or sets the identifier for the content properties in the IIndexableContent object. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the content properties. */
-  var properties: IMap[String, _] = js.native
+  var properties: IMap[String, js.Any]
   
   /** Gets or sets a stream that provides full-text content. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
-  var stream: IRandomAccessStream = js.native
+  var stream: IRandomAccessStream
   
   /** Specifies the type of content in the Stream . */
-  var streamContentType: String = js.native
+  var streamContentType: String
 }
 object IIndexableContent {
   
   @scala.inline
-  def apply(id: String, properties: IMap[String, _], stream: IRandomAccessStream, streamContentType: String): IIndexableContent = {
+  def apply(
+    id: String,
+    properties: IMap[String, js.Any],
+    stream: IRandomAccessStream,
+    streamContentType: String
+  ): IIndexableContent = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], streamContentType = streamContentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIndexableContent]
   }
@@ -38,7 +41,7 @@ object IIndexableContent {
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMap[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])

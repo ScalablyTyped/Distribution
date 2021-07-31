@@ -6,15 +6,13 @@ import typings.vueCompilerCore.mod.ParserOptions
 import typings.vueCompilerCore.mod.RootNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateCompiler extends StObject {
   
-  def compile(template: String, options: CompilerOptions): CodegenResult = js.native
+  def compile(template: String, options: CompilerOptions): CodegenResult
   
-  def parse(template: String, options: ParserOptions): RootNode = js.native
+  def parse(template: String, options: ParserOptions): RootNode
 }
 object TemplateCompiler {
   

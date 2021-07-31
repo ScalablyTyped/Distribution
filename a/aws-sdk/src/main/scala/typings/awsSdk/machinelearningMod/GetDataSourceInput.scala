@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataSourceInput extends StObject {
   
   /**
     * The ID assigned to the DataSource at creation.
     */
-  var DataSourceId: EntityId = js.native
+  var DataSourceId: EntityId
   
   /**
     * Specifies whether the GetDataSource operation should return DataSourceSchema. If true, DataSourceSchema is returned. If false, DataSourceSchema is not returned.
     */
-  var Verbose: js.UndefOr[typings.awsSdk.machinelearningMod.Verbose] = js.native
+  var Verbose: js.UndefOr[typings.awsSdk.machinelearningMod.Verbose] = js.undefined
 }
 object GetDataSourceInput {
   

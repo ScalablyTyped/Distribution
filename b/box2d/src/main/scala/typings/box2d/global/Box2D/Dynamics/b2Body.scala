@@ -2,13 +2,13 @@ package typings.box2d.global.Box2D.Dynamics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Box2D.Dynamics.b2Body")
 @js.native
 class b2Body ()
-  extends typings.box2d.Box2D.Dynamics.b2Body
+  extends StObject
+     with typings.box2d.Box2D.Dynamics.b2Body
 /* static members */
 object b2Body {
   

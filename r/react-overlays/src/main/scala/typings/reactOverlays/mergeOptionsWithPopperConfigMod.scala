@@ -10,51 +10,48 @@ import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeOptionsWithPopperConfigMod {
   
-  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", JSImport.Default)
+  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", JSImport.Namespace)
   @js.native
-  def default(hasEnabledEnableEventsPlacementFlipOffsetContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", "toModifierArray")
-  @js.native
-  def toModifierArray(): js.Array[PartialModifieranyany] = js.native
-  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", "toModifierArray")
-  @js.native
-  def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = js.native
+  @scala.inline
+  def default(hasEnabledEnableEventsPlacementFlipOffsetContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEnabledEnableEventsPlacementFlipOffsetContainerPaddingArrowElementPopperConfig.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
   
-  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", "toModifierMap")
-  @js.native
-  def toModifierMap(): Record[String, PartialModifieranyany] = js.native
-  @JSImport("react-overlays/cjs/mergeOptionsWithPopperConfig", "toModifierMap")
-  @js.native
-  def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyany] = js.native
+  @scala.inline
+  def toModifierArray(): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyany]]
+  @scala.inline
+  def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
   
-  @js.native
+  @scala.inline
+  def toModifierMap(): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyany]]
+  @scala.inline
+  def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyany]]
+  
   trait Config extends StObject {
     
-    var alignEnd: js.UndefOr[Boolean] = js.native
+    var alignEnd: js.UndefOr[Boolean] = js.undefined
     
-    var arrowElement: js.UndefOr[Element | Null] = js.native
+    var arrowElement: js.UndefOr[Element | Null] = js.undefined
     
-    var containerPadding: js.UndefOr[Double] = js.native
+    var containerPadding: js.UndefOr[Double] = js.undefined
     
-    var enableEvents: js.UndefOr[Boolean] = js.native
+    var enableEvents: js.UndefOr[Boolean] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var popperConfig: js.UndefOr[UsePopperOptions] = js.native
+    var popperConfig: js.UndefOr[UsePopperOptions] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

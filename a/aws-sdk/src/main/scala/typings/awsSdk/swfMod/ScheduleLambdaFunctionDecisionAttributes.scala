@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleLambdaFunctionDecisionAttributes extends StObject {
   
   /**
     * The data attached to the event that the decider can use in subsequent workflow tasks. This data isn't sent to the Lambda task.
     */
-  var control: js.UndefOr[Data] = js.native
+  var control: js.UndefOr[Data] = js.undefined
   
   /**
     * A string that identifies the Lambda function execution in the event history.
     */
-  var id: FunctionId = js.native
+  var id: FunctionId
   
   /**
     * The optional input data to be supplied to the Lambda function.
     */
-  var input: js.UndefOr[FunctionInput] = js.native
+  var input: js.UndefOr[FunctionInput] = js.undefined
   
   /**
     * The name, or ARN, of the Lambda function to schedule.
     */
-  var name: FunctionName = js.native
+  var name: FunctionName
   
   /**
     * The timeout value, in seconds, after which the Lambda function is considered to be failed once it has started. This can be any integer from 1-300 (1s-5m). If no value is supplied, than a default value of 300s is assumed.
     */
-  var startToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var startToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
 }
 object ScheduleLambdaFunctionDecisionAttributes {
   

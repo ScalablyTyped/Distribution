@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The web app details for an enterprise.
   */
-@js.native
 trait SchemaWebAppsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#webAppsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The manifest describing a web app.
     */
-  var webApp: js.UndefOr[js.Array[SchemaWebApp]] = js.native
+  var webApp: js.UndefOr[js.Array[SchemaWebApp]] = js.undefined
 }
 object SchemaWebAppsListResponse {
   

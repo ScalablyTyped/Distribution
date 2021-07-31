@@ -2,36 +2,34 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     * The GuardDuty finding activity type.
     */
-  var ActionType: js.UndefOr[String] = js.native
+  var ActionType: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the AWS_API_CALL action described in this finding.
     */
-  var AwsApiCallAction: js.UndefOr[typings.awsSdk.guarddutyMod.AwsApiCallAction] = js.native
+  var AwsApiCallAction: js.UndefOr[typings.awsSdk.guarddutyMod.AwsApiCallAction] = js.undefined
   
   /**
     * Information about the DNS_REQUEST action described in this finding.
     */
-  var DnsRequestAction: js.UndefOr[typings.awsSdk.guarddutyMod.DnsRequestAction] = js.native
+  var DnsRequestAction: js.UndefOr[typings.awsSdk.guarddutyMod.DnsRequestAction] = js.undefined
   
   /**
     * Information about the NETWORK_CONNECTION action described in this finding.
     */
-  var NetworkConnectionAction: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkConnectionAction] = js.native
+  var NetworkConnectionAction: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkConnectionAction] = js.undefined
   
   /**
     * Information about the PORT_PROBE action described in this finding.
     */
-  var PortProbeAction: js.UndefOr[typings.awsSdk.guarddutyMod.PortProbeAction] = js.native
+  var PortProbeAction: js.UndefOr[typings.awsSdk.guarddutyMod.PortProbeAction] = js.undefined
 }
 object Action {
   

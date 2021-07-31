@@ -2,29 +2,29 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is the layout for GenericVariableProperties.
   */
-@js.native
-trait IGenericVariableLayout extends IGenericBaseLayout {
+trait IGenericVariableLayout
+  extends StObject
+     with IGenericBaseLayout {
   
   /**
     * If set to true, it means that the variable was defined via script.
     */
-  var qIsScriptCreated: Boolean = js.native
+  var qIsScriptCreated: Boolean
   
   /**
     * A value.
     */
-  var qNum: Double = js.native
+  var qNum: Double
   
   /**
     * Some text.
     */
-  var qText: String = js.native
+  var qText: String
 }
 object IGenericVariableLayout {
   

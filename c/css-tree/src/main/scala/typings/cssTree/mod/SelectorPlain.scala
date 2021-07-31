@@ -2,25 +2,24 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectorPlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var children: js.Array[CssNodePlain] = js.native
+  var children: js.Array[CssNodePlain]
   
   @JSName("type")
-  var type_SelectorPlain: typings.cssTree.cssTreeStrings.Selector = js.native
+  var type_SelectorPlain: typings.cssTree.cssTreeStrings.Selector
 }
 object SelectorPlain {
   
   @scala.inline
-  def apply(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Selector): SelectorPlain = {
+  def apply(children: js.Array[CssNodePlain]): SelectorPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Selector")
     __obj.asInstanceOf[SelectorPlain]
   }
   

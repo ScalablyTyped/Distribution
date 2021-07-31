@@ -4,25 +4,23 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceInfo
 import typings.activexLibreoffice.com_.sun.star.lang.XTypeProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides documentation for UNO services
   * @since LibreOffice 5.1
   */
-@js.native
 trait XServiceDocumenter extends StObject {
   
-  var CoreBaseUrl: String = js.native
+  var CoreBaseUrl: String
   
-  var ServiceBaseUrl: String = js.native
+  var ServiceBaseUrl: String
   
-  def showCoreDocs(xService: XServiceInfo): Unit = js.native
+  def showCoreDocs(xService: XServiceInfo): Unit
   
-  def showInterfaceDocs(xTypeProvider: XTypeProvider): Unit = js.native
+  def showInterfaceDocs(xTypeProvider: XTypeProvider): Unit
   
-  def showServiceDocs(xService: XServiceInfo): Unit = js.native
+  def showServiceDocs(xService: XServiceInfo): Unit
 }
 object XServiceDocumenter {
   

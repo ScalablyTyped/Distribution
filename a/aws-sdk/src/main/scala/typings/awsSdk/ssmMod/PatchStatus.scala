@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchStatus extends StObject {
   
   /**
     * The date the patch was approved (or will be approved if the status is PENDING_APPROVAL).
     */
-  var ApprovalDate: js.UndefOr[DateTime] = js.native
+  var ApprovalDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The compliance severity level for a patch.
     */
-  var ComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.native
+  var ComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
     * The approval status of a patch (APPROVED, PENDING_APPROVAL, EXPLICIT_APPROVED, EXPLICIT_REJECTED).
     */
-  var DeploymentStatus: js.UndefOr[PatchDeploymentStatus] = js.native
+  var DeploymentStatus: js.UndefOr[PatchDeploymentStatus] = js.undefined
 }
 object PatchStatus {
   

@@ -2,7 +2,6 @@ package typings.googlemaps.global.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object StrokePosition extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.StrokePosition with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.StrokePosition & Double] = js.native
   
-  /* 0 */ val CENTER: typings.googlemaps.google.maps.StrokePosition.CENTER with Double = js.native
+  /* 0 */ val CENTER: typings.googlemaps.google.maps.StrokePosition.CENTER & Double = js.native
   
-  /* 1 */ val INSIDE: typings.googlemaps.google.maps.StrokePosition.INSIDE with Double = js.native
+  /* 1 */ val INSIDE: typings.googlemaps.google.maps.StrokePosition.INSIDE & Double = js.native
   
-  /* 2 */ val OUTSIDE: typings.googlemaps.google.maps.StrokePosition.OUTSIDE with Double = js.native
+  /* 2 */ val OUTSIDE: typings.googlemaps.google.maps.StrokePosition.OUTSIDE & Double = js.native
 }

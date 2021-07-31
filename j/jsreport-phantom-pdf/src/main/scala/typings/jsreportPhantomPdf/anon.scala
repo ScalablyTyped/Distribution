@@ -7,22 +7,20 @@ import typings.jsreportPhantomPdf.jsreportPhantomPdfStrings.portrait
 import typings.jsreportPhantomPdf.mod.Margin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<jsreport-phantom-pdf.jsreport-phantom-pdf.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var allowLocalFilesAccess: js.UndefOr[Boolean] = js.native
+    var allowLocalFilesAccess: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPhantomjsVersion: js.UndefOr[String] = js.native
+    var defaultPhantomjsVersion: js.UndefOr[String] = js.undefined
     
-    var strategy: js.UndefOr[`dedicated-process` | `phantom-server`] = js.native
+    var strategy: js.UndefOr[`dedicated-process` | `phantom-server`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     
@@ -62,38 +60,37 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-phantom-pdf.jsreport-phantom-pdf.Phantom> */
-  @js.native
   trait PartialPhantom extends StObject {
     
-    var blockJavaScript: js.UndefOr[Boolean] = js.native
+    var blockJavaScript: js.UndefOr[Boolean] = js.undefined
     
-    var customPhantomJS: js.UndefOr[Boolean] = js.native
+    var customPhantomJS: js.UndefOr[Boolean] = js.undefined
     
-    var fitToPage: js.UndefOr[Boolean] = js.native
+    var fitToPage: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[String] = js.native
+    var footer: js.UndefOr[String] = js.undefined
     
-    var footerHeight: js.UndefOr[String] = js.native
+    var footerHeight: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var headerHeight: js.UndefOr[String] = js.native
+    var headerHeight: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[String | Margin] = js.native
+    var margin: js.UndefOr[String | Margin] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var phantomjsVersion: js.UndefOr[String] = js.native
+    var phantomjsVersion: js.UndefOr[String] = js.undefined
     
-    var resourceTimeout: js.UndefOr[Double] = js.native
+    var resourceTimeout: js.UndefOr[Double] = js.undefined
     
-    var waitForJS: js.UndefOr[Boolean] = js.native
+    var waitForJS: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object PartialPhantom {
     

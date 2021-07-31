@@ -6,7 +6,6 @@ import typings.std.Response
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeHandlerMod {
@@ -15,18 +14,17 @@ object routeHandlerMod {
   
   type RouteHandlerCallback = js.Function1[/* context */ RouteHandlerCallbackContext, js.Promise[Response]]
   
-  @js.native
   trait RouteHandlerCallbackContext extends StObject {
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var params: js.UndefOr[js.Array[String] | (Record[String, String])] = js.native
+    var params: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
     
-    var request: js.UndefOr[Request] = js.native
+    var request: js.UndefOr[Request] = js.undefined
     
-    var url: URL = js.native
+    var url: URL
   }
   object RouteHandlerCallbackContext {
     
@@ -67,11 +65,25 @@ object routeHandlerMod {
     }
   }
   
-  @js.native
   trait RouteHandlerObject extends StObject {
     
-    def handle(context: RouteHandlerCallbackContext): js.Promise[Response] = js.native
+    def handle(context: RouteHandlerCallbackContext): js.Promise[Response]
     @JSName("handle")
-    var handle_Original: RouteHandlerCallback = js.native
+    var handle_Original: RouteHandlerCallback
+  }
+  object RouteHandlerObject {
+    
+    @scala.inline
+    def apply(handle: /* context */ RouteHandlerCallbackContext => js.Promise[Response]): RouteHandlerObject = {
+      val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
+      __obj.asInstanceOf[RouteHandlerObject]
+    }
+    
+    @scala.inline
+    implicit class RouteHandlerObjectMutableBuilder[Self <: RouteHandlerObject] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setHandle(value: /* context */ RouteHandlerCallbackContext => js.Promise[Response]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+    }
   }
 }

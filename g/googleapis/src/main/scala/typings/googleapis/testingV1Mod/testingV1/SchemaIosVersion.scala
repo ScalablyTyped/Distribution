@@ -2,43 +2,41 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An iOS version.
   */
-@js.native
 trait SchemaIosVersion extends StObject {
   
   /**
     * An opaque id for this iOS version. Use this id to invoke the
     * TestExecutionService.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * An integer representing the major iOS version. Examples: &quot;8&quot;,
     * &quot;9&quot;.
     */
-  var majorVersion: js.UndefOr[Double] = js.native
+  var majorVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * An integer representing the minor iOS version. Examples: &quot;1&quot;,
     * &quot;2&quot;.
     */
-  var minorVersion: js.UndefOr[Double] = js.native
+  var minorVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * The available Xcode versions for this version.
     */
-  var supportedXcodeVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var supportedXcodeVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Tags for this dimension. Examples: &quot;default&quot;,
     * &quot;preview&quot;, &quot;deprecated&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaIosVersion {
   

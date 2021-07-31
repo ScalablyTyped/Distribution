@@ -3,12 +3,11 @@ package typings.sinon.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<sinon.sinon.SinonSpyCallApi<TArgs, TReturnValue>, std.Exclude<keyof sinon.sinon.SinonSpyCallApi<TArgs, TReturnValue>, 'args'>> */
 @js.native
-trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends StObject {
+trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   
   // Methods
   def apply(
@@ -102,25 +101,25 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends StObject {
     * Returns true if the spy was called after @param anotherSpy
     * @param anotherSpy
     */
-  def calledAfter(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if the spy was called before @param anotherSpy
     * @param anotherSpy
     */
-  def calledBefore(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called after @param anotherSpy, and no spy calls occurred between @param anotherSpy and spy.
     * @param anotherSpy
     */
-  def calledImmediatelyAfter(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called before @param anotherSpy, and no spy calls occurred between spy and @param anotherSpy.
     * @param anotherSpy
     */
-  def calledImmediatelyBefore(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   def calledOn(obj: js.Any): Boolean = js.native
   @JSName("calledOn")
@@ -181,7 +180,7 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends StObject {
     * Array of exception objects thrown, spy.exceptions[0] is the exception thrown by the first call.
     * If the call did not throw an error, the value at the call’s location in .exceptions will be undefined.
     */
-  var exceptions: js.Array[_] = js.native
+  var exceptions: js.Array[js.Any] = js.native
   
   /**
     * The first call
@@ -303,7 +302,7 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends StObject {
   /**
     * Array of this objects, spy.thisValues[0] is the this object for the first call.
     */
-  var thisValues: js.Array[_] = js.native
+  var thisValues: js.Array[js.Any] = js.native
   
   def threw(): Boolean = js.native
   @JSName("threw")

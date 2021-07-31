@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamsApp extends Entity {
+trait TeamsApp
+  extends StObject
+     with Entity {
   
   // The details for each version of the app.
-  var appDefinitions: js.UndefOr[NullableOption[js.Array[TeamsAppDefinition]]] = js.native
+  var appDefinitions: js.UndefOr[NullableOption[js.Array[TeamsAppDefinition]]] = js.undefined
   
   // The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The method of distribution for the app. Read-only.
-  var distributionMethod: js.UndefOr[NullableOption[TeamsAppDistributionMethod]] = js.native
+  var distributionMethod: js.UndefOr[NullableOption[TeamsAppDistributionMethod]] = js.undefined
   
   // The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TeamsApp {
   

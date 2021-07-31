@@ -14,17 +14,18 @@ import typings.googleGax.googleErrorMod.GoogleError
 import typings.googleGax.streamingMod.StreamProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiCallerMod {
   
-  @JSImport("google-gax/build/src/apiCaller", "createAPICaller")
+  @JSImport("google-gax/build/src/apiCaller", JSImport.Namespace)
   @js.native
-  def createAPICaller(settings: CallSettings): APICaller = js.native
-  @JSImport("google-gax/build/src/apiCaller", "createAPICaller")
-  @js.native
-  def createAPICaller(settings: CallSettings, descriptor: Descriptor): APICaller = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createAPICaller(settings: CallSettings): APICaller = ^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any]).asInstanceOf[APICaller]
+  @scala.inline
+  def createAPICaller(settings: CallSettings, descriptor: Descriptor): APICaller = (^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[APICaller]
   
   @js.native
   trait APICaller extends StObject {

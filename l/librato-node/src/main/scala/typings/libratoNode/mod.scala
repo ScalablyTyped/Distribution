@@ -9,120 +9,111 @@ import typings.libratoNode.libratoNodeStrings.error
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("librato-node", "configure")
+  @JSImport("librato-node", JSImport.Namespace)
   @js.native
-  def configure(config: LibratoConfig): Unit = js.native
-  @JSImport("librato-node", "configure")
-  @js.native
-  def configure(config: LibratoSimulate): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("librato-node", "flush")
-  @js.native
-  def flush(): Unit = js.native
-  @JSImport("librato-node", "flush")
-  @js.native
-  def flush(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  @scala.inline
+  def configure(config: LibratoConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: LibratoSimulate): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("librato-node", "increment")
-  @js.native
-  def increment(name: String): Unit = js.native
-  @JSImport("librato-node", "increment")
-  @js.native
-  def increment(name: String, value: js.UndefOr[scala.Nothing], opts: CustomSource): Unit = js.native
-  @JSImport("librato-node", "increment")
-  @js.native
-  def increment(name: String, value: Double): Unit = js.native
-  @JSImport("librato-node", "increment")
-  @js.native
-  def increment(name: String, value: Double, opts: CustomSource): Unit = js.native
+  @scala.inline
+  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  @scala.inline
+  def flush(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("librato-node", "measure")
-  @js.native
-  def measure(name: String, value: Double): Unit = js.native
-  @JSImport("librato-node", "measure")
-  @js.native
-  def measure(name: String, value: Double, opts: CustomSource): Unit = js.native
+  @scala.inline
+  def increment(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def increment(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(name: String, value: Double, opts: CustomSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def increment(name: String, value: Unit, opts: CustomSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("librato-node", "middleware")
-  @js.native
+  @scala.inline
+  def measure(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def measure(name: String, value: Double, opts: CustomSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def middleware(): js.Function3[
     /* req */ js.Object, 
     /* res */ js.Object, 
     /* next */ js.Function0[Unit | js.Promise[Unit]], 
     Unit
-  ] = js.native
-  @JSImport("librato-node", "middleware")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[js.Function3[
+    /* req */ js.Object, 
+    /* res */ js.Object, 
+    /* next */ js.Function0[Unit | js.Promise[Unit]], 
+    Unit
+  ]]
+  @scala.inline
   def middleware(config: RequestCountKey): js.Function3[
     /* req */ js.Object, 
     /* res */ js.Object, 
     /* next */ js.Function0[Unit | js.Promise[Unit]], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ js.Object, 
+    /* res */ js.Object, 
+    /* next */ js.Function0[Unit | js.Promise[Unit]], 
+    Unit
+  ]]
   
-  @JSImport("librato-node", "on")
-  @js.native
-  def on_SIGINT(event: SIGINT, handler: js.Function0[Unit]): Unit = js.native
-  @JSImport("librato-node", "on")
-  @js.native
-  def on_error(event: error, handler: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def on_SIGINT(event: SIGINT, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("librato-node", "start")
-  @js.native
-  def start(): Unit = js.native
+  @scala.inline
+  def on_error(event: error, handler: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("librato-node", "stop")
-  @js.native
-  def stop(): Unit = js.native
-  @JSImport("librato-node", "stop")
-  @js.native
-  def stop(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  @scala.inline
+  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
-  @JSImport("librato-node", "timing")
-  @js.native
-  def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit]): Unit = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  @scala.inline
+  def stop(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): Unit = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): Unit = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
-  def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit], opts: CustomSource): Unit = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit], opts: CustomSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
     opts: CustomSource,
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): Unit = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def timing_T_T[T](
     name: String,
     fn: js.Function1[
       /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
       Unit
     ]
-  ): T = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def timing_T_T[T](
     name: String,
     fn: js.Function1[
@@ -130,20 +121,18 @@ object mod {
       Unit
     ],
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): T = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def timing_T_T[T](
     name: String,
     fn: js.Function1[
       /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
       Unit
     ],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): T = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def timing_T_T[T](
     name: String,
     fn: js.Function1[
@@ -151,9 +140,8 @@ object mod {
       Unit
     ],
     opts: CustomSource
-  ): T = js.native
-  @JSImport("librato-node", "timing")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def timing_T_T[T](
     name: String,
     fn: js.Function1[
@@ -162,12 +150,11 @@ object mod {
     ],
     opts: CustomSource,
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @js.native
   trait CustomSource extends StObject {
     
-    var source: String = js.native
+    var source: String
   }
   object CustomSource {
     
@@ -185,22 +172,21 @@ object mod {
     }
   }
   
-  @js.native
   trait LibratoConfig extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var requestOptions: js.UndefOr[LibratoRequestOptions] = js.native
+    var requestOptions: js.UndefOr[LibratoRequestOptions] = js.undefined
     
-    var simulate: js.UndefOr[`false`] = js.native
+    var simulate: js.UndefOr[`false`] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var token: String = js.native
+    var token: String
   }
   object LibratoConfig {
     
@@ -251,24 +237,23 @@ object mod {
     }
   }
   
-  @js.native
   trait LibratoRequestOptions extends StObject {
     
-    var authorization: js.UndefOr[String] = js.native
+    var authorization: js.UndefOr[String] = js.undefined
     
-    var delayStrategy: js.UndefOr[js.Function0[Double]] = js.native
+    var delayStrategy: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var `user-agent`: js.UndefOr[String] = js.native
+    var `user-agent`: js.UndefOr[String] = js.undefined
   }
   object LibratoRequestOptions {
     
@@ -331,16 +316,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LibratoSimulate extends StObject {
     
-    var simulate: `true` = js.native
+    var simulate: `true`
   }
   object LibratoSimulate {
     
     @scala.inline
-    def apply(simulate: `true`): LibratoSimulate = {
-      val __obj = js.Dynamic.literal(simulate = simulate.asInstanceOf[js.Any])
+    def apply(): LibratoSimulate = {
+      val __obj = js.Dynamic.literal(simulate = true)
       __obj.asInstanceOf[LibratoSimulate]
     }
     

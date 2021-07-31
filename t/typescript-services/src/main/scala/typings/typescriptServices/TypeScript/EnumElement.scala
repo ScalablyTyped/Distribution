@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumElement extends AST {
+trait EnumElement
+  extends StObject
+     with AST {
   
-  var equalsValueClause: EqualsValueClause = js.native
+  var equalsValueClause: EqualsValueClause
   
-  var propertyName: IASTToken = js.native
+  var propertyName: IASTToken
 }
 object EnumElement {
   

@@ -10,15 +10,15 @@ Find the best icon for a web page
 | ------------------ | :-------------: |
 | Full name          | page-icon |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 167473 |
+| # releases         | 4 |
+| # dependents       | 18 |
+| # downloads        | 202815 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/jiahaog/page-icon#readme)
-- [Bugs](https://github.com/jiahaog/page-icon/issues)
-- [Repository](https://github.com/jiahaog/page-icon)
+- [Homepage](https://github.com/nativefier/page-icon#readme)
+- [Bugs](https://github.com/nativefier/page-icon/issues)
+- [Repository](https://github.com/nativefier/page-icon)
 - [Npm](https://www.npmjs.com/package/page-icon)
     
 

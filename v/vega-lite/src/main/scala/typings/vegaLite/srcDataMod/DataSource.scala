@@ -2,7 +2,6 @@ package typings.vegaLite.srcDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaLite.srcDataMod.InlineData
   - typings.vegaLite.srcDataMod.NamedData
 */
-trait DataSource extends Data
+trait DataSource
+  extends StObject
+     with Data
 object DataSource {
   
   @scala.inline

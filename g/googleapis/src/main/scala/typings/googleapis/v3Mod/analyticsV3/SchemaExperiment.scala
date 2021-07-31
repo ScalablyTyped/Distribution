@@ -4,42 +4,40 @@ import typings.googleapis.anon.Href
 import typings.googleapis.anon.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Analytics experiment resource.
   */
-@js.native
 trait SchemaExperiment extends StObject {
   
   /**
     * Account ID to which this experiment belongs. This field is read-only.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Time the experiment was created. This field is read-only.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Notes about this experiment.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the end user will be able to edit the experiment via the Google
     * Analytics user interface.
     */
-  var editableInGaUi: js.UndefOr[Boolean] = js.native
+  var editableInGaUi: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ending time of the experiment (the time the status changed from
     * RUNNING to ENDED). This field is present only if the experiment has
     * ended. This field is read-only.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean specifying whether to distribute traffic evenly across all
@@ -48,36 +46,36 @@ trait SchemaExperiment extends StObject {
     * performance. Optional -- defaults to False. This field may not be changed
     * for an experiment whose status is ENDED.
     */
-  var equalWeighting: js.UndefOr[Boolean] = js.native
+  var equalWeighting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Experiment ID. Required for patch and update. Disallowed for create.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Internal ID for the web property to which this experiment belongs. This
     * field is read-only.
     */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for an Analytics experiment. This field is read-only.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An integer number in [3, 90]. Specifies the minimum length of the
     * experiment. Can be changed for a running experiment. This field may not
     * be changed for an experiments whose status is ENDED.
     */
-  var minimumExperimentLengthInDays: js.UndefOr[Double] = js.native
+  var minimumExperimentLengthInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Experiment name. This field may not be changed for an experiment whose
     * status is ENDED. This field is required when creating an experiment.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The metric that the experiment is optimizing. Valid values:
@@ -89,7 +87,7 @@ trait SchemaExperiment extends StObject {
     * &quot;RUNNING&quot; and servingFramework is one of &quot;REDIRECT&quot;
     * or &quot;API&quot;.
     */
-  var objectiveMetric: js.UndefOr[String] = js.native
+  var objectiveMetric: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the objectiveMetric should be minimized or maximized. Possible
@@ -97,19 +95,19 @@ trait SchemaExperiment extends StObject {
     * &quot;MAXIMUM&quot;. Cannot be specified without objectiveMetric. Cannot
     * be modified when status is &quot;RUNNING&quot; or &quot;ENDED&quot;.
     */
-  var optimizationType: js.UndefOr[String] = js.native
+  var optimizationType: js.UndefOr[String] = js.undefined
   
   /**
     * Parent link for an experiment. Points to the view (profile) to which this
     * experiment belongs.
     */
-  var parentLink: js.UndefOr[Href] = js.native
+  var parentLink: js.UndefOr[Href] = js.undefined
   
   /**
     * View (Profile) ID to which this experiment belongs. This field is
     * read-only.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Why the experiment ended. Possible values: &quot;STOPPED_BY_USER&quot;,
@@ -120,19 +118,19 @@ trait SchemaExperiment extends StObject {
     * is changed via the API to ENDED this field is set to STOPPED_BY_USER.
     * This field is read-only.
     */
-  var reasonExperimentEnded: js.UndefOr[String] = js.native
+  var reasonExperimentEnded: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean specifying whether variations URLS are rewritten to match those
     * of the original. This field may not be changed for an experiments whose
     * status is ENDED.
     */
-  var rewriteVariationUrlsAsOriginal: js.UndefOr[Boolean] = js.native
+  var rewriteVariationUrlsAsOriginal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Link for this experiment. This field is read-only.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The framework used to serve the experiment variations and evaluate the
@@ -145,20 +143,20 @@ trait SchemaExperiment extends StObject {
     * caller is responsible for serving the selected variation and evaluating
     * the results.
     */
-  var servingFramework: js.UndefOr[String] = js.native
+  var servingFramework: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet of code to include on the control page(s). This field is
     * read-only.
     */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
   
   /**
     * The starting time of the experiment (the time the status changed from
     * READY_TO_RUN to RUNNING). This field is present only if the experiment
     * has started. This field is read-only.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Experiment status. Possible values: &quot;DRAFT&quot;,
@@ -167,7 +165,7 @@ trait SchemaExperiment extends StObject {
     * &quot;READY_TO_RUN&quot; or &quot;RUNNING&quot; state. This field is
     * required when creating an experiment.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * A floating-point number in (0, 1]. Specifies the fraction of the traffic
@@ -175,12 +173,12 @@ trait SchemaExperiment extends StObject {
     * experiment. This field may not be changed for an experiments whose status
     * is ENDED.
     */
-  var trafficCoverage: js.UndefOr[Double] = js.native
+  var trafficCoverage: js.UndefOr[Double] = js.undefined
   
   /**
     * Time the experiment was last modified. This field is read-only.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * Array of variations. The first variation in the array is the original.
@@ -188,26 +186,26 @@ trait SchemaExperiment extends StObject {
     * RUNNING state. At least two variations are required before status can be
     * set to RUNNING.
     */
-  var variations: js.UndefOr[js.Array[Status]] = js.native
+  var variations: js.UndefOr[js.Array[Status]] = js.undefined
   
   /**
     * Web property ID to which this experiment belongs. The web property ID is
     * of the form UA-XXXXX-YY. This field is read-only.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
   
   /**
     * A floating-point number in (0, 1). Specifies the necessary confidence
     * level to choose a winner. This field may not be changed for an
     * experiments whose status is ENDED.
     */
-  var winnerConfidenceLevel: js.UndefOr[Double] = js.native
+  var winnerConfidenceLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * Boolean specifying whether a winner has been found for this experiment.
     * This field is read-only.
     */
-  var winnerFound: js.UndefOr[Boolean] = js.native
+  var winnerFound: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaExperiment {
   

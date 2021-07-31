@@ -8,16 +8,15 @@ import typings.wordpressBlockEditor.mod.EditorTemplateLock
 import typings.wordpressBlocks.templatesMod.TemplateArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object innerBlocksMod {
   
   object default {
     
-    @JSImport("@wordpress/block-editor/components/inner-blocks", JSImport.Default)
-    @js.native
-    def apply(props: Props): Element = js.native
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor/components/inner-blocks", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -51,15 +50,14 @@ object innerBlocksMod {
   
   object InnerBlocks {
     
-    @js.native
     trait Props extends StObject {
       
-      var allowedBlocks: js.UndefOr[js.Array[String]] = js.native
+      var allowedBlocks: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * A 'render prop' function that can be used to customize the block's appender.
         */
-      var renderAppender: js.UndefOr[ComponentType[js.Object]] = js.native
+      var renderAppender: js.UndefOr[ComponentType[js.Object]] = js.undefined
       
       /**
         * The template is defined as a list of block items. Such blocks can have predefined
@@ -68,14 +66,14 @@ object innerBlocksMod {
         *
         * See {@link https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/block-api/block-templates.md }
         */
-      var template: js.UndefOr[TemplateArray] = js.native
+      var template: js.UndefOr[TemplateArray] = js.undefined
       
       /**
         * If `true` when child blocks in the template are inserted the selection is updated.
         * If `false` the selection should not be updated when child blocks specified in the template are inserted.
         * @defaultValue true
         */
-      var templateInsertUpdatesSelection: js.UndefOr[Boolean] = js.native
+      var templateInsertUpdatesSelection: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Template locking allows locking the `InnerBlocks` area for the current template.
@@ -88,7 +86,7 @@ object innerBlocksMod {
         *
         * If the block is a top level block: the locking of the Custom Post Type is used.
         */
-      var templateLock: js.UndefOr[EditorTemplateLock] = js.native
+      var templateLock: js.UndefOr[EditorTemplateLock] = js.undefined
     }
     object Props {
       

@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.FusedDepthwiseConv2DAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.FusedDepthwiseConv2DInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsFusedDepthwiseConv2DAttrs extends StObject {
   
-  var attrs: FusedDepthwiseConv2DAttrs = js.native
+  var attrs: FusedDepthwiseConv2DAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: FusedDepthwiseConv2DInputs = js.native
+  var inputs: FusedDepthwiseConv2DInputs
 }
 object AttrsFusedDepthwiseConv2DAttrs {
   

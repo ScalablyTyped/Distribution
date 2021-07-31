@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait BatchTextureArray extends StObject {
   
   /**
     * number of filled elements
     * @member {number} PIXI.BatchTextureArray#count
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * inside textures array
     * @member {PIXI.BaseTexture[]} PIXI.BatchTextureArray#elements
     */
-  var elements: js.Array[BaseTexture] = js.native
+  var elements: js.Array[BaseTexture]
   
   /**
     * Respective locations for textures
     * @member {number[]} PIXI.BatchTextureArray#ids
     */
-  var ids: js.Array[Double] = js.native
+  var ids: js.Array[Double]
 }
 object BatchTextureArray {
   

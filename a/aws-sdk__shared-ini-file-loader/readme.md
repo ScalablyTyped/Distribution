@@ -4,18 +4,21 @@
 Typings are for version 1.0.0-rc.3
 
 ## Library description:
-This module provides a function that reads from AWS SDK configuration files and returns a promise that will resolve with a hash of the parsed contents of the AWS credentials file and of the AWS config file. Given the [sample  files](#sample-files) below,
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/shared-ini-file-loader/latest.svg)](https://www.npmjs.com/package/@aws-sdk/shared-ini-file-loader) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/shared-ini-file-loader.svg)](https://www.npmj
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/shared-ini-file-loader |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 28 |
 | # dependents       | 8 |
-| # downloads        | 2111136 |
+| # downloads        | 7096276 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/shared-ini-file-loader)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fshared-ini-file-loader)
     
 

@@ -2,15 +2,13 @@ package typings.prismReactRenderer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrismToken extends StObject {
   
-  var content: (js.Array[PrismToken | String]) | String = js.native
+  var content: (js.Array[PrismToken | String]) | String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object PrismToken {
   

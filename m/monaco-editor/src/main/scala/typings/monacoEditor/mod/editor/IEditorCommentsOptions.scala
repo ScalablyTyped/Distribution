@@ -2,23 +2,21 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorCommentsOptions extends StObject {
   
   /**
     * Ignore empty lines when inserting line comments.
     * Defaults to true.
     */
-  var ignoreEmptyLines: js.UndefOr[Boolean] = js.native
+  var ignoreEmptyLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Insert a space after the line comment token and inside the block comments tokens.
     * Defaults to true.
     */
-  var insertSpace: js.UndefOr[Boolean] = js.native
+  var insertSpace: js.UndefOr[Boolean] = js.undefined
 }
 object IEditorCommentsOptions {
   

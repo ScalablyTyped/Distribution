@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImportJobRequest extends StObject {
   
   /**
     * The data source for the import job.
     */
-  var ImportDataSource: typings.awsSdk.sesv2Mod.ImportDataSource = js.native
+  var ImportDataSource: typings.awsSdk.sesv2Mod.ImportDataSource
   
   /**
     * The destination for the import job.
     */
-  var ImportDestination: typings.awsSdk.sesv2Mod.ImportDestination = js.native
+  var ImportDestination: typings.awsSdk.sesv2Mod.ImportDestination
 }
 object CreateImportJobRequest {
   

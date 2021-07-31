@@ -4,42 +4,40 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__HyperparameterOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1HyperparameterOutput extends StObject {
   
   /** All recorded object metrics for this trial. This field is not currently populated. */
-  var allMetrics: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]] = js.native
+  var allMetrics: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]] = js.undefined
   
   /** Details related to built-in algorithms jobs. Only set for trials of built-in algorithms jobs that have succeeded. */
-  var builtInAlgorithmOutput: js.UndefOr[GoogleCloudMlV1BuiltInAlgorithmOutput] = js.native
+  var builtInAlgorithmOutput: js.UndefOr[GoogleCloudMlV1BuiltInAlgorithmOutput] = js.undefined
   
   /** Output only. End time for the trial. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The final objective metric seen for this trial. */
-  var finalMetric: js.UndefOr[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric] = js.native
+  var finalMetric: js.UndefOr[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric] = js.undefined
   
   /** The hyperparameters given to this trial. */
   var hyperparameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__HyperparameterOutput with TopLevel[js.Any]
-  ] = js.native
+    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[js.Any]
+  ] = js.undefined
   
   /** True if the trial is stopped early. */
-  var isTrialStoppedEarly: js.UndefOr[Boolean] = js.native
+  var isTrialStoppedEarly: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Start time for the trial. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The detailed state of the trial. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The trial id for these results. */
-  var trialId: js.UndefOr[String] = js.native
+  var trialId: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1HyperparameterOutput {
   
@@ -83,7 +81,7 @@ object GoogleCloudMlV1HyperparameterOutput {
     def setHyperparameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__HyperparameterOutput with TopLevel[js.Any]
+      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[js.Any]
     ): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
     @scala.inline

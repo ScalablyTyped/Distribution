@@ -2,16 +2,14 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for all GET responses. Should not be used directly.
   */
-@js.native
 trait ResponseBase extends StObject {
   
-  var result: js.Any = js.native
+  var result: js.Any
 }
 object ResponseBase {
   

@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionLabel extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val BuiltIn: Boolean = js.native
+  val BuiltIn: Boolean
   
-  var ChapterStyleLevel: Double = js.native
+  var ChapterStyleLevel: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val ID: WdCaptionLabelID = js.native
+  val ID: WdCaptionLabelID
   
-  var IncludeChapterNumber: Boolean = js.native
+  var IncludeChapterNumber: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  var NumberStyle: WdCaptionNumberStyle = js.native
+  var NumberStyle: WdCaptionNumberStyle
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: WdCaptionPosition = js.native
+  var Position: WdCaptionPosition
   
-  var Separator: WdSeparatorType = js.native
+  var Separator: WdSeparatorType
   
   @JSName("Word.CaptionLabel_typekey")
-  var WordDotCaptionLabel_typekey: CaptionLabel = js.native
+  var WordDotCaptionLabel_typekey: CaptionLabel
 }
 object CaptionLabel {
   

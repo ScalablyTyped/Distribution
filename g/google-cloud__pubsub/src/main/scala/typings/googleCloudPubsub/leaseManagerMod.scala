@@ -5,7 +5,6 @@ import typings.googleCloudPubsub.subscriberMod.Subscriber
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leaseManagerMod {
@@ -129,16 +128,15 @@ object leaseManagerMod {
     def size: Double = js.native
   }
   
-  @js.native
   trait FlowControlOptions extends StObject {
     
-    var allowExcessMessages: js.UndefOr[Boolean] = js.native
+    var allowExcessMessages: js.UndefOr[Boolean] = js.undefined
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var maxExtension: js.UndefOr[Double] = js.native
+    var maxExtension: js.UndefOr[Double] = js.undefined
     
-    var maxMessages: js.UndefOr[Double] = js.native
+    var maxMessages: js.UndefOr[Double] = js.undefined
   }
   object FlowControlOptions {
     

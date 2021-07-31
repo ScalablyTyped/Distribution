@@ -11,8 +11,8 @@ A free and unlimited API for Google Translate
 | Full name          | google-translate-api |
 | Keywords           | translate, translator, google, translate, api, free, language |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 290709 |
+| # dependents       | 55 |
+| # downloads        | 619786 |
 | # stars            | 21 |
 
 ## Links

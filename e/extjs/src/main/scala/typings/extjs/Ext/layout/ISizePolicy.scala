@@ -2,23 +2,21 @@ package typings.extjs.Ext.layout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISizePolicy extends StObject {
   
   /** [Property] (Boolean) */
-  var readsHeight: js.UndefOr[Boolean] = js.native
+  var readsHeight: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var readsWidth: js.UndefOr[Boolean] = js.native
+  var readsWidth: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var setsHeight: js.UndefOr[Boolean] = js.native
+  var setsHeight: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var setsWidth: js.UndefOr[Boolean] = js.native
+  var setsWidth: js.UndefOr[Boolean] = js.undefined
 }
 object ISizePolicy {
   

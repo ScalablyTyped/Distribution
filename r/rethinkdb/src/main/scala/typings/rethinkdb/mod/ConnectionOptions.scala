@@ -2,7 +2,6 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,33 +9,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See: https://rethinkdb.com/api/javascript/connect/
   */
-@js.native
 trait ConnectionOptions extends StObject {
   
   /** The default database (default `test`) */
-  var db: js.UndefOr[String] = js.native
+  var db: js.UndefOr[String] = js.undefined
   
   /** The host to connect to (default `localhost`) */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** The password for the user account to connect as (default `''`, empty) */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** The port to connect on (default `28015`) */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * A hash of options to support SSL connections (default `null`). Currently,
     * there is only one option available, and if the `ssl` option is specified,
     * this key is required.
     */
-  var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.native
+  var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.undefined
   
   /** Timeout period in seconds for the connection to be opened (default `20`) */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** The user account to connect as (default `admin`) */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object ConnectionOptions {
   

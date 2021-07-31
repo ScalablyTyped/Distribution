@@ -9,92 +9,90 @@ import typings.rollup.rollupStrings.named
 import typings.rollup.rollupStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputOptions extends StObject {
   
-  var amd: js.UndefOr[Define] = js.native
+  var amd: js.UndefOr[Define] = js.undefined
   
-  var assetFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])] = js.native
+  var assetFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])] = js.undefined
   
-  var banner: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.native
+  var banner: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   
-  var chunkFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.native
+  var chunkFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
   // only required for bundle.write
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /** @deprecated Use the "renderDynamicImport" plugin hook instead. */
-  var dynamicImportFunction: js.UndefOr[String] = js.native
+  var dynamicImportFunction: js.UndefOr[String] = js.undefined
   
-  var entryFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.native
+  var entryFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.undefined
   
-  var esModule: js.UndefOr[Boolean] = js.native
+  var esModule: js.UndefOr[Boolean] = js.undefined
   
-  var exports: js.UndefOr[default | named | none | auto] = js.native
+  var exports: js.UndefOr[default | named | none | auto] = js.undefined
   
-  var extend: js.UndefOr[Boolean] = js.native
+  var extend: js.UndefOr[Boolean] = js.undefined
   
-  var externalLiveBindings: js.UndefOr[Boolean] = js.native
+  var externalLiveBindings: js.UndefOr[Boolean] = js.undefined
   
   // only required for bundle.write
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var footer: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.native
+  var footer: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   
-  var format: js.UndefOr[ModuleFormat] = js.native
+  var format: js.UndefOr[ModuleFormat] = js.undefined
   
-  var freeze: js.UndefOr[Boolean] = js.native
+  var freeze: js.UndefOr[Boolean] = js.undefined
   
-  var globals: js.UndefOr[GlobalsOption] = js.native
+  var globals: js.UndefOr[GlobalsOption] = js.undefined
   
-  var hoistTransitiveImports: js.UndefOr[Boolean] = js.native
+  var hoistTransitiveImports: js.UndefOr[Boolean] = js.undefined
   
-  var indent: js.UndefOr[String | Boolean] = js.native
+  var indent: js.UndefOr[String | Boolean] = js.undefined
   
-  var inlineDynamicImports: js.UndefOr[Boolean] = js.native
+  var inlineDynamicImports: js.UndefOr[Boolean] = js.undefined
   
-  var interop: js.UndefOr[InteropType | GetInterop] = js.native
+  var interop: js.UndefOr[InteropType | GetInterop] = js.undefined
   
-  var intro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.native
+  var intro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   
-  var manualChunks: js.UndefOr[ManualChunksOption] = js.native
+  var manualChunks: js.UndefOr[ManualChunksOption] = js.undefined
   
-  var minifyInternalExports: js.UndefOr[Boolean] = js.native
+  var minifyInternalExports: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespaceToStringTag: js.UndefOr[Boolean] = js.native
+  var namespaceToStringTag: js.UndefOr[Boolean] = js.undefined
   
-  var noConflict: js.UndefOr[Boolean] = js.native
+  var noConflict: js.UndefOr[Boolean] = js.undefined
   
-  var outro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.native
+  var outro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   
-  var paths: js.UndefOr[OptionsPaths] = js.native
+  var paths: js.UndefOr[OptionsPaths] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[OutputPlugin]] = js.native
+  var plugins: js.UndefOr[js.Array[OutputPlugin]] = js.undefined
   
-  var preferConst: js.UndefOr[Boolean] = js.native
+  var preferConst: js.UndefOr[Boolean] = js.undefined
   
-  var preserveModules: js.UndefOr[Boolean] = js.native
+  var preserveModules: js.UndefOr[Boolean] = js.undefined
   
-  var preserveModulesRoot: js.UndefOr[String] = js.native
+  var preserveModulesRoot: js.UndefOr[String] = js.undefined
   
-  var sourcemap: js.UndefOr[Boolean | `inline` | hidden] = js.native
+  var sourcemap: js.UndefOr[Boolean | `inline` | hidden] = js.undefined
   
-  var sourcemapExcludeSources: js.UndefOr[Boolean] = js.native
+  var sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined
   
-  var sourcemapFile: js.UndefOr[String] = js.native
+  var sourcemapFile: js.UndefOr[String] = js.undefined
   
-  var sourcemapPathTransform: js.UndefOr[SourcemapPathTransformOption] = js.native
+  var sourcemapPathTransform: js.UndefOr[SourcemapPathTransformOption] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var systemNullSetters: js.UndefOr[Boolean] = js.native
+  var systemNullSetters: js.UndefOr[Boolean] = js.undefined
 }
 object OutputOptions {
   

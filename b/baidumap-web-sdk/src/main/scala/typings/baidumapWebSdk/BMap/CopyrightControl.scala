@@ -3,19 +3,19 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CopyrightControl extends Control {
+trait CopyrightControl
+  extends StObject
+     with Control {
   
-  def addCopyright(copyright: Copyright): Unit = js.native
+  def addCopyright(copyright: Copyright): Unit
   
-  def getCopyright(id: Double): Copyright = js.native
+  def getCopyright(id: Double): Copyright
   
-  def getCopyrightCollection(): js.Array[Copyright] = js.native
+  def getCopyrightCollection(): js.Array[Copyright]
   
-  def removeCopyright(id: Double): Unit = js.native
+  def removeCopyright(id: Double): Unit
 }
 object CopyrightControl {
   

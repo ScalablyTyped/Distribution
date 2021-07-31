@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object RemoteSystemPlatform extends StObject {
   
   /** The device is running Android. */
   @js.native
-  sealed trait android extends RemoteSystemPlatform
+  sealed trait android
+    extends StObject
+       with RemoteSystemPlatform
   
   /** The device is running iOS. */
   @js.native
-  sealed trait ios extends RemoteSystemPlatform
+  sealed trait ios
+    extends StObject
+       with RemoteSystemPlatform
   
   /** The device is running Linux. */
   @js.native
-  sealed trait linux extends RemoteSystemPlatform
+  sealed trait linux
+    extends StObject
+       with RemoteSystemPlatform
   
   /** The OS platform is unknown. */
   @js.native
-  sealed trait unknown extends RemoteSystemPlatform
+  sealed trait unknown
+    extends StObject
+       with RemoteSystemPlatform
   
   /** The device is running Windows. */
   @js.native
-  sealed trait windows extends RemoteSystemPlatform
+  sealed trait windows
+    extends StObject
+       with RemoteSystemPlatform
 }

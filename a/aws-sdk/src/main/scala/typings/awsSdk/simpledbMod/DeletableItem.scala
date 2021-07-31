@@ -2,15 +2,13 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletableItem extends StObject {
   
-  var Attributes: js.UndefOr[DeletableAttributeList] = js.native
+  var Attributes: js.UndefOr[DeletableAttributeList] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
 }
 object DeletableItem {
   

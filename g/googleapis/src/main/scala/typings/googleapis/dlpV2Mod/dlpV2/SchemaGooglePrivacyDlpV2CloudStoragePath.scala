@@ -2,20 +2,18 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message representing a single file or path in Cloud Storage.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CloudStoragePath extends StObject {
   
   /**
     * A url representing a file or path (no wildcards) in Cloud Storage.
     * Example: gs://[BUCKET_NAME]/dictionary.txt
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CloudStoragePath {
   

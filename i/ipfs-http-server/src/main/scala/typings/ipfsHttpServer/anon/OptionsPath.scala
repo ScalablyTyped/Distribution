@@ -2,17 +2,15 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsPath extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var options: Ext = js.native
+  var options: Ext
   
-  var path: String = js.native
+  var path: String
 }
 object OptionsPath {
   

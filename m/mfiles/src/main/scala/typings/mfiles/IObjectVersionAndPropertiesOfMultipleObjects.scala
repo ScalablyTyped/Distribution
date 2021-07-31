@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectVersionAndPropertiesOfMultipleObjects extends StObject {
   
-  def Add(Index: Double, ObjectVersionAndProperties: IObjectVersionAndProperties): Unit = js.native
+  def Add(Index: Double, ObjectVersionAndProperties: IObjectVersionAndProperties): Unit
   
-  def Clone(): IObjectVersionAndPropertiesOfMultipleObjects = js.native
+  def Clone(): IObjectVersionAndPropertiesOfMultipleObjects
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IObjectVersionAndProperties = js.native
+  def Item(Index: Double): IObjectVersionAndProperties
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IObjectVersionAndPropertiesOfMultipleObjects {
   

@@ -10,9 +10,9 @@ A cross browser utility to create HTML or SVG runtime content
 | ------------------ | :-------------: |
 | Full name          | @ungap/create-content |
 | Keywords           | HTMLTemplateElement, createContent, dom, utility, ungap |
-| # releases         | 8 |
-| # dependents       | 8 |
-| # downloads        | 87049 |
+| # releases         | 4 |
+| # dependents       | 9 |
+| # downloads        | 84914 |
 | # stars            | 0 |
 
 ## Links

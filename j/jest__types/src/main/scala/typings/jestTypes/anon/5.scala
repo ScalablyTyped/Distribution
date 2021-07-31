@@ -4,19 +4,19 @@ import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.jestTypesStrings.run_start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `5` extends AsyncEvent {
+trait `5`
+  extends StObject
+     with AsyncEvent {
   
-  var name: run_start = js.native
+  var name: run_start
 }
 object `5` {
   
   @scala.inline
-  def apply(name: run_start): `5` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `5` = {
+    val __obj = js.Dynamic.literal(name = "run_start")
     __obj.asInstanceOf[`5`]
   }
   

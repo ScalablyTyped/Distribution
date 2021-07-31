@@ -3,17 +3,16 @@ package typings.scrivito.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * scrivito top-level definitions
   */
-@js.native
 trait WidgetComponentProps
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var widget: Widget = js.native
+  var widget: Widget
 }
 object WidgetComponentProps {
   

@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s name.
   */
-@js.native
 trait SchemaName extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaName extends StObject {
     * the viewer&#39;s account or the &lt;code&gt;Accept-Language&lt;/code&gt;
     * HTTP header.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
 }
 object SchemaName {
   

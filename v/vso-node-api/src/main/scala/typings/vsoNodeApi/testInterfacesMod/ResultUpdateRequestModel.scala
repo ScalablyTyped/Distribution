@@ -2,21 +2,19 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultUpdateRequestModel extends StObject {
   
-  var actionResultDeletes: js.Array[TestActionResultModel] = js.native
+  var actionResultDeletes: js.Array[TestActionResultModel]
   
-  var actionResults: js.Array[TestActionResultModel] = js.native
+  var actionResults: js.Array[TestActionResultModel]
   
-  var parameterDeletes: js.Array[TestResultParameterModel] = js.native
+  var parameterDeletes: js.Array[TestResultParameterModel]
   
-  var parameters: js.Array[TestResultParameterModel] = js.native
+  var parameters: js.Array[TestResultParameterModel]
   
-  var testCaseResult: TestCaseResultUpdateModel = js.native
+  var testCaseResult: TestCaseResultUpdateModel
 }
 object ResultUpdateRequestModel {
   

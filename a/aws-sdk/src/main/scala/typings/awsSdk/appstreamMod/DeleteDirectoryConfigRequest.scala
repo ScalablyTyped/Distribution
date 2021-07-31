@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDirectoryConfigRequest extends StObject {
   
   /**
     * The name of the directory configuration.
     */
-  var DirectoryName: typings.awsSdk.appstreamMod.DirectoryName = js.native
+  var DirectoryName: typings.awsSdk.appstreamMod.DirectoryName
 }
 object DeleteDirectoryConfigRequest {
   

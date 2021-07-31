@@ -2,7 +2,6 @@ package typings.anybar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,14 @@ object mod {
   // The Anybar.app menubar icon turned purple
   ```
   */
+  @scala.inline
+  def apply(status: AnybarStatus): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("anybar", JSImport.Namespace)
   @js.native
-  def apply(status: AnybarStatus): js.Promise[Unit] = js.native
-  @JSImport("anybar", JSImport.Namespace)
-  @js.native
-  def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.anybar.anybarStrings.white
@@ -79,14 +80,13 @@ object mod {
     def yellow: typings.anybar.anybarStrings.yellow = "yellow".asInstanceOf[typings.anybar.anybarStrings.yellow]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Port to communicate with the AnyBar.app.
     		@default 1738
     		*/
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

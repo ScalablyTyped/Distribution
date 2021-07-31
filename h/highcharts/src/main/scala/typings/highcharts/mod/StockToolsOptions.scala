@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsOptions extends StObject {
   
   /**
     * (Highstock) Definitions of buttons in Stock Tools GUI.
     */
-  var gui: js.UndefOr[StockToolsGuiOptions] = js.native
+  var gui: js.UndefOr[StockToolsGuiOptions] = js.undefined
 }
 object StockToolsOptions {
   

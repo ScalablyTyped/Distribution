@@ -3,7 +3,6 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/
 class SplitView ()
-  extends typings.winjs.WinJS.UI.SplitView {
+  extends StObject
+     with typings.winjs.WinJS.UI.SplitView {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object SplitView {
@@ -40,6 +40,13 @@ object SplitView {
     val ^ : js.Any = js.native
     
     /**
+      * When the pane is closed, it occupies space leaving less room for the SplitView's content.
+      **/
+    @JSImport("winjs", "UI.SplitView.ClosedDisplayMode.inline")
+    @js.native
+    val `inline`: String = js.native
+    
+    /**
       * When the pane is closed, it is not visible and doesn't take up any space.
       **/
     @JSImport("winjs", "UI.SplitView.ClosedDisplayMode.none")
@@ -47,13 +54,6 @@ object SplitView {
     def none: String = js.native
     @scala.inline
     def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
-    
-    /**
-      * When the pane is closed, it occupies space leaving less room for the SplitView's content.
-      **/
-    @JSImport("winjs", "UI.SplitView.ClosedDisplayMode.inline")
-    @js.native
-    val `inline`: String = js.native
   }
   
   /**
@@ -67,6 +67,13 @@ object SplitView {
     val ^ : js.Any = js.native
     
     /**
+      * When the pane is open, it occupies space leaving less room for the SplitView's content.
+      **/
+    @JSImport("winjs", "UI.SplitView.OpenedDisplayMode.inline")
+    @js.native
+    val `inline`: String = js.native
+    
+    /**
       * When the pane is open, it doesn't take up any space and it is light dismissable.
       **/
     @JSImport("winjs", "UI.SplitView.OpenedDisplayMode.overlay")
@@ -74,13 +81,6 @@ object SplitView {
     def overlay: String = js.native
     @scala.inline
     def overlay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlay")(x.asInstanceOf[js.Any])
-    
-    /**
-      * When the pane is open, it occupies space leaving less room for the SplitView's content.
-      **/
-    @JSImport("winjs", "UI.SplitView.OpenedDisplayMode.inline")
-    @js.native
-    val `inline`: String = js.native
   }
   
   /**

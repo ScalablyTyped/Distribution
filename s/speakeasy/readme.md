@@ -11,8 +11,8 @@ Two-factor authentication for Node.js. One-time passcode generator (HOTP/TOTP) w
 | Full name          | speakeasy |
 | Keywords           | authentication, google authenticator, hmac, hotp, multi-factor, one-time password, passwords, totp, two factor, two-factor, two-factor authentication |
 | # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 2526004 |
+| # dependents       | 101 |
+| # downloads        | 3315327 |
 | # stars            | 37 |
 
 ## Links

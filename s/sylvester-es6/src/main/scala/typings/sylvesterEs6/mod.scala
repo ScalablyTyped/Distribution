@@ -4,10 +4,13 @@ import typings.sylvesterEs6.sylvesterEs6Strings.convex
 import typings.sylvesterEs6.sylvesterEs6Strings.reflex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("sylvester-es6", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sylvester-es6", "CircularLinkedList")
   @js.native
@@ -49,12 +52,15 @@ object mod {
   /* static members */
   object CircularLinkedList {
     
+    @JSImport("sylvester-es6", "CircularLinkedList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a linked list from an array
       */
-    @JSImport("sylvester-es6", "CircularLinkedList.fromArray")
-    @js.native
-    def fromArray(list: js.Array[_], useNodes: Boolean): CircularLinkedList = js.native
+    @scala.inline
+    def fromArray(list: js.Array[js.Any], useNodes: Boolean): CircularLinkedList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(list.asInstanceOf[js.Any], useNodes.asInstanceOf[js.Any])).asInstanceOf[CircularLinkedList]
   }
   
   @JSImport("sylvester-es6", "Line")
@@ -297,7 +303,7 @@ object mod {
       */
     def at(i: Double): LinkedListNode = js.native
     
-    def each(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, _], context: js.Any): Unit = js.native
+    def each(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, js.Any], context: js.Any): Unit = js.native
     
     /**
       * The first element in the linked list.
@@ -307,7 +313,7 @@ object mod {
     /**
       * Executes a function to each of the node.
       */
-    def forEach(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, _], context: js.Any): Unit = js.native
+    def forEach(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, js.Any], context: js.Any): Unit = js.native
     
     /**
       * The last element in the linked list.
@@ -327,24 +333,26 @@ object mod {
     /**
       * Convert this linked list into an array.
       */
-    def toArray(): js.Array[_] = js.native
+    def toArray(): js.Array[js.Any] = js.native
   }
   /* static members */
   object LinkedList {
     
+    @JSImport("sylvester-es6", "LinkedList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a circular linked list
       */
-    @JSImport("sylvester-es6", "LinkedList.Circular")
-    @js.native
-    def Circular(data: js.Any): CircularLinkedList = js.native
+    @scala.inline
+    def Circular(data: js.Any): CircularLinkedList = ^.asInstanceOf[js.Dynamic].applyDynamic("Circular")(data.asInstanceOf[js.Any]).asInstanceOf[CircularLinkedList]
     
     /**
       * Creates a node given the data.
       */
-    @JSImport("sylvester-es6", "LinkedList.Node")
-    @js.native
-    def Node(data: js.Any): LinkedListNode = js.native
+    @scala.inline
+    def Node(data: js.Any): LinkedListNode = ^.asInstanceOf[js.Dynamic].applyDynamic("Node")(data.asInstanceOf[js.Any]).asInstanceOf[LinkedListNode]
   }
   
   @JSImport("sylvester-es6", "LinkedListNode")
@@ -487,7 +495,7 @@ object mod {
     /**
       * Maps the matrix to another matrix (of the same dimensions) according to the given function.
       */
-    def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, _]): Matrix = js.native
+    def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, js.Any]): Matrix = js.native
     
     /**
       * Returns the (absolute) largest element of the matrix.
@@ -583,61 +591,54 @@ object mod {
   /* static members */
   object Matrix {
     
+    @JSImport("sylvester-es6", "Matrix")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Diagonal matrix - all off-diagonal elements are zero
       */
-    @JSImport("sylvester-es6", "Matrix.Diagonal")
-    @js.native
-    def Diagonal(elements: js.Array[js.Array[Double] | Double]): Matrix = js.native
-    @JSImport("sylvester-es6", "Matrix.Diagonal")
-    @js.native
-    def Diagonal(elements: Matrix): Matrix = js.native
-    @JSImport("sylvester-es6", "Matrix.Diagonal")
-    @js.native
-    def Diagonal(elements: Vector): Matrix = js.native
+    @scala.inline
+    def Diagonal(elements: js.Array[js.Array[Double] | Double]): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Diagonal")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    @scala.inline
+    def Diagonal(elements: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Diagonal")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    @scala.inline
+    def Diagonal(elements: Vector): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Diagonal")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
     /**
       * Identity matrix of size n.
       */
-    @JSImport("sylvester-es6", "Matrix.I")
-    @js.native
-    def I(n: Double): Matrix = js.native
+    @scala.inline
+    def I(n: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("I")(n.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
     /**
       * Random matrix of n rows, m columns.
       */
-    @JSImport("sylvester-es6", "Matrix.Random")
-    @js.native
-    def Random(n: Double, m: Double): Matrix = js.native
+    @scala.inline
+    def Random(n: Double, m: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Rotation matrix about some axis. If no axis is supplied, assume we're after a 2D transform.
       */
-    @JSImport("sylvester-es6", "Matrix.Rotation")
-    @js.native
-    def Rotation(theta: Double): Matrix = js.native
-    @JSImport("sylvester-es6", "Matrix.Rotation")
-    @js.native
-    def Rotation(theta: Double, a: Vector): Matrix = js.native
+    @scala.inline
+    def Rotation(theta: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Rotation")(theta.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    @scala.inline
+    def Rotation(theta: Double, a: Vector): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotation")(theta.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
-    @JSImport("sylvester-es6", "Matrix.RotationX")
-    @js.native
-    def RotationX(t: Double): Matrix = js.native
+    @scala.inline
+    def RotationX(t: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationX")(t.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @JSImport("sylvester-es6", "Matrix.RotationY")
-    @js.native
-    def RotationY(t: Double): Matrix = js.native
+    @scala.inline
+    def RotationY(t: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationY")(t.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @JSImport("sylvester-es6", "Matrix.RotationZ")
-    @js.native
-    def RotationZ(t: Double): Matrix = js.native
+    @scala.inline
+    def RotationZ(t: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationZ")(t.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
     /**
       * Matrix filled with zeros.
       */
-    @JSImport("sylvester-es6", "Matrix.Zero")
-    @js.native
-    def Zero(n: Double, m: Double): Matrix = js.native
+    @scala.inline
+    def Zero(n: Double, m: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Zero")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   }
   
   @JSImport("sylvester-es6", "PRECISION")
@@ -800,9 +801,8 @@ object mod {
     /**
       * Constructs a plane from a list of points.
       */
-    @JSImport("sylvester-es6", "Plane.fromPoints")
-    @js.native
-    def fromPoints(points: js.Array[js.Array[Double] | Vector]): Plane = js.native
+    @scala.inline
+    def fromPoints(points: js.Array[js.Array[Double] | Vector]): Plane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[Plane]
   }
   
   @JSImport("sylvester-es6", "Polygon")
@@ -935,7 +935,7 @@ object mod {
       * Updates the plane properties of all the cached triangles belonging to the
       * polygon according to the given function.
       */
-    def updateTrianglePlanes(fn: js.Function1[/* plane */ Plane, _]): Unit = js.native
+    def updateTrianglePlanes(fn: js.Function1[/* plane */ Plane, js.Any]): Unit = js.native
     
     /**
       * Gets the data of the vertex given the index.
@@ -1007,7 +1007,7 @@ object mod {
     /**
       * Calls the iterator for each element of the vector in turn.
       */
-    def each(fn: js.Function2[/* x */ Double, /* i */ Double, _]): Unit = js.native
+    def each(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Unit = js.native
     
     /**
       * Gets an array containing the vector's elements.
@@ -1058,7 +1058,7 @@ object mod {
     /**
       * Maps the vector to another vector according to the given function.
       */
-    def map(fn: js.Function2[/* x */ Double, /* i */ Double, _]): Vector = js.native
+    def map(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Vector = js.native
     
     /**
       * Returns the (absolute) largest element of the vector.
@@ -1144,16 +1144,14 @@ object mod {
     /**
       * Random vector of size n.
       */
-    @JSImport("sylvester-es6", "Vector.Random")
-    @js.native
-    def Random(n: Double): Vector = js.native
+    @scala.inline
+    def Random(n: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(n.asInstanceOf[js.Any]).asInstanceOf[Vector]
     
     /**
       * Vector filled with zeros.
       */
-    @JSImport("sylvester-es6", "Vector.Zero")
-    @js.native
-    def Zero(n: Double): Vector = js.native
+    @scala.inline
+    def Zero(n: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")(n.asInstanceOf[js.Any]).asInstanceOf[Vector]
     
     @JSImport("sylvester-es6", "Vector.i")
     @js.native
@@ -1203,20 +1201,21 @@ object mod {
   /* static members */
   object Vertex {
     
+    @JSImport("sylvester-es6", "Vertex")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Convert points into an array of Vertex.
       */
-    @JSImport("sylvester-es6", "Vertex.convert")
-    @js.native
-    def convert(points: js.Array[js.Array[Double] | Vector]): js.Array[Vertex] = js.native
+    @scala.inline
+    def convert(points: js.Array[js.Array[Double] | Vector]): js.Array[Vertex] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vertex]]
   }
   
-  @JSImport("sylvester-es6", "makeFrustum")
-  @js.native
-  def makeFrustum(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = js.native
+  @scala.inline
+  def makeFrustum(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFrustum")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("sylvester-es6", "makeLookAt")
-  @js.native
+  @scala.inline
   def makeLookAt(
     ex: Double,
     ey: Double,
@@ -1227,17 +1226,14 @@ object mod {
     ux: Double,
     uy: Double,
     uz: Double
-  ): Matrix = js.native
+  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLookAt")(ex.asInstanceOf[js.Any], ey.asInstanceOf[js.Any], ez.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], cz.asInstanceOf[js.Any], ux.asInstanceOf[js.Any], uy.asInstanceOf[js.Any], uz.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("sylvester-es6", "makeOrtho")
-  @js.native
-  def makeOrtho(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = js.native
+  @scala.inline
+  def makeOrtho(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("makeOrtho")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("sylvester-es6", "makePerspective")
-  @js.native
-  def makePerspective(fovy: Double, aspect: Double, znear: Double, zfar: Double): Matrix = js.native
+  @scala.inline
+  def makePerspective(fovy: Double, aspect: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("makePerspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("sylvester-es6", "mht")
-  @js.native
-  def mht(m: Matrix): String = js.native
+  @scala.inline
+  def mht(m: Matrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mht")(m.asInstanceOf[js.Any]).asInstanceOf[String]
 }

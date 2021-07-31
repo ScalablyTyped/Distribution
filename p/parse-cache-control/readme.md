@@ -11,8 +11,8 @@ Parse Cache-Control headers.
 | Full name          | parse-cache-control |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 14292939 |
+| # dependents       | 26 |
+| # downloads        | 19514489 |
 | # stars            | 0 |
 
 ## Links

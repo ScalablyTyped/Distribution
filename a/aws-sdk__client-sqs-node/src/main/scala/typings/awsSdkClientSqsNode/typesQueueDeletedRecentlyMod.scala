@@ -3,22 +3,22 @@ package typings.awsSdkClientSqsNode
 import typings.awsSdkClientSqsNode.createQueueExceptionsUnionMod.CreateQueueExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesQueueDeletedRecentlyMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_QueueDeletedRecentlyDetails> * / any */ @js.native
-  trait QueueDeletedRecently extends CreateQueueExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_QueueDeletedRecentlyDetails> * / any */ trait QueueDeletedRecently
+    extends StObject
+       with CreateQueueExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently
   }
   object QueueDeletedRecently {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently): QueueDeletedRecently = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): QueueDeletedRecently = {
+      val __obj = js.Dynamic.literal(name = "QueueDeletedRecently")
       __obj.asInstanceOf[QueueDeletedRecently]
     }
     
@@ -30,6 +30,5 @@ object typesQueueDeletedRecentlyMod {
     }
   }
   
-  @js.native
   trait QueueDeletedRecentlyDetails extends StObject
 }

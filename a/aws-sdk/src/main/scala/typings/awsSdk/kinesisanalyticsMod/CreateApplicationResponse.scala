@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationResponse extends StObject {
   
   /**
     * In response to your CreateApplication request, Amazon Kinesis Analytics returns a response with a summary of the application it created, including the application Amazon Resource Name (ARN), name, and status.
     */
-  var ApplicationSummary: typings.awsSdk.kinesisanalyticsMod.ApplicationSummary = js.native
+  var ApplicationSummary: typings.awsSdk.kinesisanalyticsMod.ApplicationSummary
 }
 object CreateApplicationResponse {
   

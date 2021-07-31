@@ -12,7 +12,7 @@ The lodash method `_.at` exported as a module.
 | Keywords           | lodash-modularized, at |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 47006130 |
+| # downloads        | 47984064 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Answers extends StObject {
   
   /**
     * Gets or sets the vs marketplace extension name
     */
-  var vSMarketplaceExtensionName: String = js.native
+  var vSMarketplaceExtensionName: String
   
   /**
     * Gets or sets the vs marketplace publsiher name
     */
-  var vSMarketplacePublisherName: String = js.native
+  var vSMarketplacePublisherName: String
 }
 object Answers {
   

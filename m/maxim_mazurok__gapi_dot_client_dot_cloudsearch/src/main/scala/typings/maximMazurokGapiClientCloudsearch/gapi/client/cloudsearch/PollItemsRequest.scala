@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollItemsRequest extends StObject {
   
   /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /** Common debug options. */
-  var debugOptions: js.UndefOr[DebugOptions] = js.native
+  var debugOptions: js.UndefOr[DebugOptions] = js.undefined
   
   /** Maximum number of items to return. The maximum value is 100 and the default value is 20. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** Queue name to fetch items from. If unspecified, PollItems will fetch from 'default' queue. The maximum length is 100 characters. */
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
   /** Limit the items polled to the ones with these statuses. */
-  var statusCodes: js.UndefOr[js.Array[String]] = js.native
+  var statusCodes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PollItemsRequest {
   

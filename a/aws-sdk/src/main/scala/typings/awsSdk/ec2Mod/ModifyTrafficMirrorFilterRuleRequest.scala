@@ -2,71 +2,69 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTrafficMirrorFilterRuleRequest extends StObject {
   
   /**
     * The description to assign to the Traffic Mirror rule.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The destination CIDR block to assign to the Traffic Mirror rule.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The destination ports that are associated with the Traffic Mirror rule.
     */
-  var DestinationPortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.native
+  var DestinationPortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The protocol, for example TCP, to assign to the Traffic Mirror rule.
     */
-  var Protocol: js.UndefOr[Integer] = js.native
+  var Protocol: js.UndefOr[Integer] = js.undefined
   
   /**
     * The properties that you want to remove from the Traffic Mirror filter rule. When you remove a property from a Traffic Mirror filter rule, the property is set to the default.
     */
-  var RemoveFields: js.UndefOr[TrafficMirrorFilterRuleFieldList] = js.native
+  var RemoveFields: js.UndefOr[TrafficMirrorFilterRuleFieldList] = js.undefined
   
   /**
     * The action to assign to the rule.
     */
-  var RuleAction: js.UndefOr[TrafficMirrorRuleAction] = js.native
+  var RuleAction: js.UndefOr[TrafficMirrorRuleAction] = js.undefined
   
   /**
     * The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
     */
-  var RuleNumber: js.UndefOr[Integer] = js.native
+  var RuleNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * The source CIDR block to assign to the Traffic Mirror rule.
     */
-  var SourceCidrBlock: js.UndefOr[String] = js.native
+  var SourceCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The port range to assign to the Traffic Mirror rule.
     */
-  var SourcePortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.native
+  var SourcePortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.undefined
   
   /**
     * The type of traffic (ingress | egress) to assign to the rule.
     */
-  var TrafficDirection: js.UndefOr[typings.awsSdk.ec2Mod.TrafficDirection] = js.native
+  var TrafficDirection: js.UndefOr[typings.awsSdk.ec2Mod.TrafficDirection] = js.undefined
   
   /**
     * The ID of the Traffic Mirror rule.
     */
-  var TrafficMirrorFilterRuleId: typings.awsSdk.ec2Mod.TrafficMirrorFilterRuleId = js.native
+  var TrafficMirrorFilterRuleId: typings.awsSdk.ec2Mod.TrafficMirrorFilterRuleId
 }
 object ModifyTrafficMirrorFilterRuleRequest {
   

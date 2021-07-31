@@ -2,26 +2,24 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateResolverRuleRequest extends StObject {
   
   /**
     * A name for the association that you're creating between a Resolver rule and a VPC.
     */
-  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
     * The ID of the Resolver rule that you want to associate with the VPC. To list the existing Resolver rules, use ListResolverRules.
     */
-  var ResolverRuleId: ResourceId = js.native
+  var ResolverRuleId: ResourceId
   
   /**
     * The ID of the VPC that you want to associate the Resolver rule with.
     */
-  var VPCId: ResourceId = js.native
+  var VPCId: ResourceId
 }
 object AssociateResolverRuleRequest {
   

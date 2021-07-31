@@ -2,7 +2,6 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-map", "SourceNode")
@@ -52,10 +51,12 @@ class SourceNode () extends StObject {
 /* static members */
 object SourceNode {
   
-  @JSImport("source-map", "SourceNode.fromStringWithSourceMap")
+  @JSImport("source-map", "SourceNode")
   @js.native
-  def fromStringWithSourceMap(code: String, sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): SourceNode = js.native
-  @JSImport("source-map", "SourceNode.fromStringWithSourceMap")
-  @js.native
-  def fromStringWithSourceMap(code: String, sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer, relativePath: String): SourceNode = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromStringWithSourceMap(code: String, sourceMapConsumer: SourceMapConsumer): SourceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringWithSourceMap")(code.asInstanceOf[js.Any], sourceMapConsumer.asInstanceOf[js.Any])).asInstanceOf[SourceNode]
+  @scala.inline
+  def fromStringWithSourceMap(code: String, sourceMapConsumer: SourceMapConsumer, relativePath: String): SourceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringWithSourceMap")(code.asInstanceOf[js.Any], sourceMapConsumer.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[SourceNode]
 }

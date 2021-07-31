@@ -3,26 +3,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitLastChangeTreeItems extends StObject {
   
   /**
     * The list of commits referenced by Items, if they were requested.
     */
-  var commits: js.Array[GitCommitRef] = js.native
+  var commits: js.Array[GitCommitRef]
   
   /**
     * The last change of items.
     */
-  var items: js.Array[GitLastChangeItem] = js.native
+  var items: js.Array[GitLastChangeItem]
   
   /**
     * The last explored time, in case the result is not comprehensive. Null otherwise.
     */
-  var lastExploredTime: Date = js.native
+  var lastExploredTime: Date
 }
 object GitLastChangeTreeItems {
   

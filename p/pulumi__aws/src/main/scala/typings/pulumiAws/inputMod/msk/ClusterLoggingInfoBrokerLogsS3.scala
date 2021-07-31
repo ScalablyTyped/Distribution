@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.msk
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterLoggingInfoBrokerLogsS3 extends StObject {
   
   /**
     * Name of the S3 bucket to deliver logs to.
     */
-  var bucket: js.UndefOr[Input[String]] = js.native
+  var bucket: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs.
     */
-  var enabled: Input[Boolean] = js.native
+  var enabled: Input[Boolean]
   
   /**
     * Prefix to append to the folder name.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
 }
 object ClusterLoggingInfoBrokerLogsS3 {
   

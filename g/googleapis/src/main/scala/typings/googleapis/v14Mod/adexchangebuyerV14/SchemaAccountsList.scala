@@ -2,25 +2,23 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An account feed lists Ad Exchange buyer accounts that the user has access
   * to. Each entry in the feed corresponds to a single buyer account.
   */
-@js.native
 trait SchemaAccountsList extends StObject {
   
   /**
     * A list of accounts.
     */
-  var items: js.UndefOr[js.Array[SchemaAccount]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAccount]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountsList {
   

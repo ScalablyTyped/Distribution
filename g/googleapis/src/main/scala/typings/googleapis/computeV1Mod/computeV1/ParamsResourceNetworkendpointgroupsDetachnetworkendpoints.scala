@@ -5,32 +5,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceNetworkendpointgroupsDetachnetworkendpoints extends StandardParameters {
+trait ParamsResourceNetworkendpointgroupsDetachnetworkendpoints
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name of the network endpoint group where you are removing network
     * endpoints. It should comply with RFC1035.
     */
-  var networkEndpointGroup: js.UndefOr[String] = js.native
+  var networkEndpointGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaNetworkEndpointGroupsDetachEndpointsRequest] = js.native
+  var requestBody: js.UndefOr[SchemaNetworkEndpointGroupsDetachEndpointsRequest] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -44,13 +44,13 @@ trait ParamsResourceNetworkendpointgroupsDetachnetworkendpoints extends Standard
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the zone where the network endpoint group is located. It
     * should comply with RFC1035.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceNetworkendpointgroupsDetachnetworkendpoints {
   

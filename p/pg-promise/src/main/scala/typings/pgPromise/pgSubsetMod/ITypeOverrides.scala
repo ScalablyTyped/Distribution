@@ -2,7 +2,6 @@ package typings.pgPromise.pgSubsetMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Interface for TypeOverrides;
@@ -14,7 +13,7 @@ trait ITypeOverrides extends StObject {
   def getTypeParser(id: TypeId, format: ParserFormat): js.Any = js.native
   
   def setTypeParser(id: TypeId, format: ParserFormat, parseFn: String): Unit = js.native
-  def setTypeParser(id: TypeId, format: ParserFormat, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
+  def setTypeParser(id: TypeId, format: ParserFormat, parseFn: js.Function1[/* value */ String, js.Any]): Unit = js.native
   def setTypeParser(id: TypeId, parseFn: String): Unit = js.native
-  def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
+  def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, js.Any]): Unit = js.native
 }

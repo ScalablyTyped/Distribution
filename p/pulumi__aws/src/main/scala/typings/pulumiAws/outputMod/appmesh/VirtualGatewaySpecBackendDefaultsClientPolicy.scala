@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecBackendDefaultsClientPolicy extends StObject {
   
   /**
     * The Transport Layer Security (TLS) client policy.
     */
-  var tls: js.UndefOr[VirtualGatewaySpecBackendDefaultsClientPolicyTls] = js.native
+  var tls: js.UndefOr[VirtualGatewaySpecBackendDefaultsClientPolicyTls] = js.undefined
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicy {
   

@@ -2,17 +2,15 @@ package typings.bip32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Private extends StObject {
     
-    var `private`: Double = js.native
+    var `private`: Double
     
-    var public: Double = js.native
+    var public: Double
   }
   object Private {
     

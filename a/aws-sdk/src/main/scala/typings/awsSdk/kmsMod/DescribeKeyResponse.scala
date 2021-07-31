@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeKeyResponse extends StObject {
   
   /**
     * Metadata associated with the key.
     */
-  var KeyMetadata: js.UndefOr[typings.awsSdk.kmsMod.KeyMetadata] = js.native
+  var KeyMetadata: js.UndefOr[typings.awsSdk.kmsMod.KeyMetadata] = js.undefined
 }
 object DescribeKeyResponse {
   

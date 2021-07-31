@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RandomizeRangeRequest extends StObject {
   
   /** The range to randomize. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
 }
 object RandomizeRangeRequest {
   

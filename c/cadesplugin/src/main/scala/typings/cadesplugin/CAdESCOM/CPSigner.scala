@@ -5,7 +5,6 @@ import typings.cadesplugin.CADESCommon.VarDate
 import typings.cadesplugin.CAPICOM.CAPICOM_CERTIFICATE_INCLUDE_OPTION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,9 +15,9 @@ trait CPSigner extends StObject {
   var CheckCertificate: Boolean = js.native
   
   def Display(): Unit = js.native
-  def Display(hwndParent: js.UndefOr[scala.Nothing], title: String): Unit = js.native
   def Display(hwndParent: Double): Unit = js.native
   def Display(hwndParent: Double, title: String): Unit = js.native
+  def Display(hwndParent: Unit, title: String): Unit = js.native
   
   var KeyPin: String = js.native
   

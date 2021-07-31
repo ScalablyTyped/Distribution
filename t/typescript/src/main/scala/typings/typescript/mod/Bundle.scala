@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bundle extends Node {
+trait Bundle
+  extends StObject
+     with Node {
   
   @JSName("kind")
   val kind_Bundle: typings.typescript.mod.SyntaxKind.Bundle = js.native

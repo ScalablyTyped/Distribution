@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Appointment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersOptionsResourceType extends StObject {
   
-  var body: Appointment = js.native
+  var body: Appointment
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Appointment = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Appointment
 }
 object HeadersOptionsResourceType {
   
   @scala.inline
-  def apply(body: Appointment, resourceType: typings.fhirKitClient.fhirKitClientStrings.Appointment): HeadersOptionsResourceType = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Appointment): HeadersOptionsResourceType = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "Appointment")
     __obj.asInstanceOf[HeadersOptionsResourceType]
   }
   

@@ -2,69 +2,69 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insurer added line items
   */
-@js.native
-trait ClaimResponseAddItem extends BackboneElement {
+trait ClaimResponseAddItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'noteNumber'.
     */
-  var _noteNumber: js.UndefOr[js.Array[Element]] = js.native
+  var _noteNumber: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[js.Array[Element]] = js.native
+  var _sequenceLinkId: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Added items adjudication
     */
-  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.native
+  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.undefined
   
   /**
     * Type of service or product
     */
-  var category: js.UndefOr[CodeableConcept] = js.native
+  var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Added items details
     */
-  var detail: js.UndefOr[js.Array[ClaimResponseAddItemDetail]] = js.native
+  var detail: js.UndefOr[js.Array[ClaimResponseAddItemDetail]] = js.undefined
   
   /**
     * Professional fee or Product charge
     */
-  var fee: js.UndefOr[Money] = js.native
+  var fee: js.UndefOr[Money] = js.undefined
   
   /**
     * Service/Product billing modifiers
     */
-  var modifier: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var modifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * List of note numbers which apply
     */
-  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.native
+  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.undefined
   
   /**
     * Revenue or cost center code
     */
-  var revenue: js.UndefOr[CodeableConcept] = js.native
+  var revenue: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Service instances
     */
-  var sequenceLinkId: js.UndefOr[js.Array[positiveInt]] = js.native
+  var sequenceLinkId: js.UndefOr[js.Array[positiveInt]] = js.undefined
   
   /**
     * Group, Service or Product
     */
-  var service: js.UndefOr[CodeableConcept] = js.native
+  var service: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ClaimResponseAddItem {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoveryMod {
+  
+  @JSImport("googleapis/build/src/apis/discovery", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object discoveryMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/discovery", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/discovery", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object discoveryMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/discovery", "discovery")
-  @js.native
-  def discovery(options: Options): Discovery = js.native
-  @JSImport("googleapis/build/src/apis/discovery", "discovery")
-  @js.native
-  def discovery_v1(version: v1): Discovery = js.native
+  @scala.inline
+  def discovery(options: Options): Discovery = ^.asInstanceOf[js.Dynamic].applyDynamic("discovery")(options.asInstanceOf[js.Any]).asInstanceOf[Discovery]
+  
+  @scala.inline
+  def discovery_v1(version: v1): Discovery = ^.asInstanceOf[js.Dynamic].applyDynamic("discovery")(version.asInstanceOf[js.Any]).asInstanceOf[Discovery]
 }

@@ -10,14 +10,15 @@ import typings.opentelemetryTracing.typesMod.SDKRegistrationConfig
 import typings.opentelemetryTracing.typesMod.TracerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicTracerProviderMod {
   
   @JSImport("@opentelemetry/tracing/build/src/BasicTracerProvider", "BasicTracerProvider")
   @js.native
-  class BasicTracerProvider () extends TracerProvider {
+  class BasicTracerProvider ()
+    extends StObject
+       with TracerProvider {
     def this(config: TracerConfig) = this()
     
     var _cleanNotifyOnGlobalShutdown: js.Any = js.native
@@ -40,8 +41,8 @@ object basicTracerProviderMod {
     
     def getActiveSpanProcessor(): SpanProcessor = js.native
     
-    def getTracer(name: String, version: js.UndefOr[scala.Nothing], config: TracerConfig): Tracer = js.native
     def getTracer(name: String, version: String, config: TracerConfig): Tracer = js.native
+    def getTracer(name: String, version: Unit, config: TracerConfig): Tracer = js.native
     
     val logger: Logger = js.native
     

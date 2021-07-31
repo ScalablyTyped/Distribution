@@ -2,13 +2,13 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InsertResult[T /* <: js.Object */] extends DocumentMetadata {
+trait InsertResult[T /* <: js.Object */]
+  extends StObject
+     with DocumentMetadata {
   
-  var `new`: js.UndefOr[Document[T]] = js.native
+  var `new`: js.UndefOr[Document[T]] = js.undefined
 }
 object InsertResult {
   
@@ -19,7 +19,7 @@ object InsertResult {
   }
   
   @scala.inline
-  implicit class InsertResultMutableBuilder[Self <: InsertResult[_], T /* <: js.Object */] (val x: Self with InsertResult[T]) extends AnyVal {
+  implicit class InsertResultMutableBuilder[Self <: InsertResult[?], T /* <: js.Object */] (val x: Self & InsertResult[T]) extends AnyVal {
     
     @scala.inline
     def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])

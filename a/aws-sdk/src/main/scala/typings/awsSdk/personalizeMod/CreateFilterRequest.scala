@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFilterRequest extends StObject {
   
   /**
     * The ARN of the dataset group that the filter will belong to.
     */
-  var datasetGroupArn: Arn = js.native
+  var datasetGroupArn: Arn
   
   /**
     * The filter expression that designates the interaction types that the filter will filter out. A filter expression must follow the following format:  EXCLUDE itemId WHERE INTERACTIONS.event_type in ("EVENT_TYPE")  Where "EVENT_TYPE" is the type of event to filter out. To filter out all items with any interactions history, set "*" as the EVENT_TYPE. For more information, see Using Filters with Amazon Personalize.
     */
-  var filterExpression: FilterExpression = js.native
+  var filterExpression: FilterExpression
   
   /**
     * The name of the filter to create.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object CreateFilterRequest {
   

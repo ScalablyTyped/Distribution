@@ -3,13 +3,11 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stack extends StObject {
   
-  def create(options: Fill): StackInstance = js.native
+  def create(options: Fill): StackInstance
 }
 object Stack {
   

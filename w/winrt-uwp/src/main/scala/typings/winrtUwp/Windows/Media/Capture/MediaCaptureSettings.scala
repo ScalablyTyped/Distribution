@@ -3,51 +3,49 @@ package typings.winrtUwp.Windows.Media.Capture
 import typings.winrtUwp.Windows.Media.AudioProcessing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains read-only configuration settings for the MediaCapture object. */
-@js.native
 trait MediaCaptureSettings extends StObject {
   
   /** Gets the DeviceInformation.Id of the microphone. */
-  var audioDeviceId: String = js.native
+  var audioDeviceId: String
   
   /** Gets the audio processing mode. */
-  var audioProcessing: AudioProcessing = js.native
+  var audioProcessing: AudioProcessing
   
   /** Gets a value that indicates if the operating system will make a sound when the capture device takes a picture. */
-  var cameraSoundRequiredForRegion: Boolean = js.native
+  var cameraSoundRequiredForRegion: Boolean
   
   /** Gets a value that indicates if the capture device supports recording video and taking a photo sequence at the same time. */
-  var concurrentRecordAndPhotoSequenceSupported: Boolean = js.native
+  var concurrentRecordAndPhotoSequenceSupported: Boolean
   
   /** Gets a value that indicates if the capture device supports recording video and taking a photo at the same time. */
-  var concurrentRecordAndPhotoSupported: Boolean = js.native
+  var concurrentRecordAndPhotoSupported: Boolean
   
   /** Gets the horizontal 35mm equivalent focal length of the camera lens on the capture device. */
-  var horizontal35mmEquivalentFocalLength: Double = js.native
+  var horizontal35mmEquivalentFocalLength: Double
   
   /** Gets the media category of the media. */
-  var mediaCategory: MediaCategory = js.native
+  var mediaCategory: MediaCategory
   
   /** Gets the stream that is used for photo capture. */
-  var photoCaptureSource: PhotoCaptureSource = js.native
+  var photoCaptureSource: PhotoCaptureSource
   
   /** Gets the pitch offset of the camera in degrees. */
-  var pitchOffsetDegrees: Double = js.native
+  var pitchOffsetDegrees: Double
   
   /** Gets the streaming mode. */
-  var streamingCaptureMode: StreamingCaptureMode = js.native
+  var streamingCaptureMode: StreamingCaptureMode
   
   /** Gets the vertical 35mm equivalent focal length of the camera lens on the capture device. */
-  var vertical35mmEquivalentFocalLength: Double = js.native
+  var vertical35mmEquivalentFocalLength: Double
   
   /** Gets a value that indicates which video streams are independent of each other. */
-  var videoDeviceCharacteristic: VideoDeviceCharacteristic = js.native
+  var videoDeviceCharacteristic: VideoDeviceCharacteristic
   
   /** Gets the DeviceInformation.Id of the video camera. */
-  var videoDeviceId: String = js.native
+  var videoDeviceId: String
 }
 object MediaCaptureSettings {
   

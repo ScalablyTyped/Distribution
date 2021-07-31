@@ -8,7 +8,6 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -45,12 +44,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("get-stream", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream): js.Promise[String] = js.native
-  @JSImport("get-stream", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[String] = js.native
+  @scala.inline
+  def apply(stream: Stream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("get-stream", JSImport.Namespace)
   @js.native
@@ -64,14 +61,25 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("get-stream", "MaxBufferError")
   @js.native
-  class MaxBufferErrorCls () extends MaxBufferErrorClass
+  class MaxBufferErrorCls ()
+    extends StObject
+       with MaxBufferErrorClass {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_MaxBufferErrorClass: typings.getStream.getStreamStrings.MaxBufferError = js.native
+  }
   
   @scala.inline
   def MaxBufferError_=(x: Instantiable0[MaxBufferErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxBufferError")(x.asInstanceOf[js.Any])
   
-  @JSImport("get-stream", "array")
-  @js.native
-  def array(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def array(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   /**
   	Get the `stream` as an array of values.
   	It honors both the `maxBuffer` and `encoding` options. The behavior changes slightly based on the encoding chosen:
@@ -79,38 +87,35 @@ object mod {
   	- When `encoding` is set to `buffer`, it collects an array of buffers. `maxBuffer` refers to the summed byte lengths of every buffer in the array.
   	- When `encoding` is set to anything else, it collects an array of strings. `maxBuffer` refers to the summed character lengths of every string in the array.
   	*/
-  @JSImport("get-stream", "array")
-  @js.native
-  def array[StreamObjectModeType](stream: Stream): js.Promise[js.Array[StreamObjectModeType]] = js.native
-  @JSImport("get-stream", "array")
-  @js.native
-  def array[StreamObjectModeType](stream: Stream, options: Options): js.Promise[js.Array[StreamObjectModeType]] = js.native
-  @JSImport("get-stream", "array")
-  @js.native
-  def array_buffer(stream: Stream, options: OptionsWithEncoding[buffer]): js.Promise[js.Array[Buffer]] = js.native
+  @scala.inline
+  def array[StreamObjectModeType](stream: Stream): js.Promise[js.Array[StreamObjectModeType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StreamObjectModeType]]]
+  @scala.inline
+  def array[StreamObjectModeType](stream: Stream, options: Options): js.Promise[js.Array[StreamObjectModeType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[StreamObjectModeType]]]
+  
+  @scala.inline
+  def array_buffer(stream: Stream, options: OptionsWithEncoding[buffer]): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
   
   /**
   	Get the `stream` as a buffer.
   	It honors the `maxBuffer` option as above, but it refers to byte length rather than string length.
   	*/
-  @JSImport("get-stream", "buffer")
-  @js.native
-  def buffer(stream: Stream): js.Promise[Buffer] = js.native
-  @JSImport("get-stream", "buffer")
-  @js.native
-  def buffer(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[Buffer] = js.native
+  @scala.inline
+  def buffer(stream: Stream): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def buffer(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @js.native
-  trait MaxBufferErrorClass extends Error {
+  trait MaxBufferErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_MaxBufferErrorClass: typings.getStream.getStreamStrings.MaxBufferError = js.native
+    val name_MaxBufferErrorClass: typings.getStream.getStreamStrings.MaxBufferError
   }
   object MaxBufferErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.getStream.getStreamStrings.MaxBufferError): MaxBufferErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): MaxBufferErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "MaxBufferError")
       __obj.asInstanceOf[MaxBufferErrorClass]
     }
     
@@ -122,14 +127,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Maximum length of the returned string. If it exceeds this value before the stream ends, the promise will be rejected with a `MaxBufferError` error.
     		@default Infinity
     		*/
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -150,14 +154,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsWithEncoding[EncodingType] extends Options {
+  trait OptionsWithEncoding[EncodingType]
+    extends StObject
+       with Options {
     
     /**
     		[Encoding](https://nodejs.org/api/buffer.html#buffer_buffer) of the incoming stream.
     		@default 'utf8'
     		*/
-    val encoding: js.UndefOr[EncodingType] = js.native
+    val encoding: js.UndefOr[EncodingType] = js.undefined
   }
   object OptionsWithEncoding {
     
@@ -168,7 +173,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsWithEncodingMutableBuilder[Self <: OptionsWithEncoding[_], EncodingType] (val x: Self with OptionsWithEncoding[EncodingType]) extends AnyVal {
+    implicit class OptionsWithEncodingMutableBuilder[Self <: OptionsWithEncoding[?], EncodingType] (val x: Self & OptionsWithEncoding[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
   /**
     * Change types are single string values that describe your intention for the change. Each change type is unique for each EntityType provided in the change's scope.
     */
-  var ChangeType: typings.awsSdk.marketplacecatalogMod.ChangeType = js.native
+  var ChangeType: typings.awsSdk.marketplacecatalogMod.ChangeType
   
   /**
     * This object contains details specific to the change type of the requested change.
     */
-  var Details: Json = js.native
+  var Details: Json
   
   /**
     * The entity to be changed.
     */
-  var Entity: typings.awsSdk.marketplacecatalogMod.Entity = js.native
+  var Entity: typings.awsSdk.marketplacecatalogMod.Entity
 }
 object Change {
   

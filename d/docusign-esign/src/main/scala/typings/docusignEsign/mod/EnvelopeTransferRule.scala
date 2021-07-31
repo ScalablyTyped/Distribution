@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeTransferRule extends StObject {
   
   /**
     * When set to **true**, the original owner is added as a carbon copy recipient after envelope transfer. The default value is **false**.
     */
-  var carbonCopyOriginalOwner: js.UndefOr[String] = js.native
+  var carbonCopyOriginalOwner: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the envelope transfer rule is active.
     */
-  var enabled: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the envelope transfer rule. The system generates this id when the rule is first created.
     */
-  var envelopeTransferRuleId: js.UndefOr[String] = js.native
+  var envelopeTransferRuleId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of envelope event that triggers the transfer. Valid values are:
@@ -30,37 +28,37 @@ trait EnvelopeTransferRule extends StObject {
     * - `before sent`
     * - `completed`
     */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the group that triggers the transfer.
     */
-  var fromGroup: js.UndefOr[/* This object contains information about a group. */ Group] = js.native
+  var fromGroup: js.UndefOr[/* This object contains information about a group. */ Group] = js.undefined
   
   /**
     * Information about the user who triggers the transfer.
     */
-  var fromUser: js.UndefOr[UserInformation] = js.native
+  var fromUser: js.UndefOr[UserInformation] = js.undefined
   
   /**
     * The UTC DateTime when the envelope transfer rule was last modified. This property is read only.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the user who last modified the envelope transfer rule.
     */
-  var modifiedUser: js.UndefOr[UserInformation] = js.native
+  var modifiedUser: js.UndefOr[UserInformation] = js.undefined
   
   /**
     * Information about the destination folder to which the envelope is transferred.
     */
-  var toFolder: js.UndefOr[/* This object contains details about a folder. */ Folder] = js.native
+  var toFolder: js.UndefOr[/* This object contains details about a folder. */ Folder] = js.undefined
   
   /**
     * Information about the user to which the envelope is transferred.
     */
-  var toUser: js.UndefOr[UserInformation] = js.native
+  var toUser: js.UndefOr[UserInformation] = js.undefined
 }
 object EnvelopeTransferRule {
   

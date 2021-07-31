@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,28 +14,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XGridDataListener
   * @since OOo 3.3
   */
-@js.native
-trait GridDataEvent extends EventObject {
+trait GridDataEvent
+  extends StObject
+     with EventObject {
   
   /**
     * denotes the first column affected by a change.
     *
     * If `FirstColumn` is -1, the listener should assume that all rows of a grid's data model are affected.
     */
-  var FirstColumn: Double = js.native
+  var FirstColumn: Double
   
   /**
     * denotes the first row affected by a change.
     *
     * If `FirstRow` is -1, the listener should assume that all rows of a grid's data model are affected.
     */
-  var FirstRow: Double = js.native
+  var FirstRow: Double
   
   /** denotes the last column affected by a change */
-  var LastColumn: Double = js.native
+  var LastColumn: Double
   
   /** denotes the last row affected by a change */
-  var LastRow: Double = js.native
+  var LastRow: Double
 }
 object GridDataEvent {
   

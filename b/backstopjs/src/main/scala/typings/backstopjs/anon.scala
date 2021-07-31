@@ -2,23 +2,21 @@ package typings.backstopjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var chromeFlags: js.UndefOr[js.Array[String]] = js.native
+    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var chromePath: js.UndefOr[String] = js.native
+    var chromePath: js.UndefOr[String] = js.undefined
     
-    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.native
+    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
     
-    var waitTimeout: js.UndefOr[Double] = js.native
+    var waitTimeout: js.UndefOr[Double] = js.undefined
   }
   object Args {
     
@@ -66,20 +64,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Bitmapsreference extends StObject {
     
-    var bitmaps_reference: js.UndefOr[String] = js.native
+    var bitmaps_reference: js.UndefOr[String] = js.undefined
     
-    var bitmaps_test: js.UndefOr[String] = js.native
+    var bitmaps_test: js.UndefOr[String] = js.undefined
     
-    var ci_report: js.UndefOr[String] = js.native
+    var ci_report: js.UndefOr[String] = js.undefined
     
-    var engine_scripts: js.UndefOr[String] = js.native
+    var engine_scripts: js.UndefOr[String] = js.undefined
     
-    var html_report: js.UndefOr[String] = js.native
+    var html_report: js.UndefOr[String] = js.undefined
     
-    var json_report: js.UndefOr[String] = js.native
+    var json_report: js.UndefOr[String] = js.undefined
   }
   object Bitmapsreference {
     
@@ -130,14 +127,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Blue extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object Blue {
     
@@ -161,12 +157,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: js.UndefOr[typings.backstopjs.mod.Config | String] = js.native
+    var config: js.UndefOr[typings.backstopjs.mod.Config | String] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -193,17 +188,16 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrorColor extends StObject {
     
     // See https://github.com/rsmbl/Resemble.js
-    var errorColor: js.UndefOr[Blue] = js.native
+    var errorColor: js.UndefOr[Blue] = js.undefined
     
-    var errorType: js.UndefOr[String] = js.native
+    var errorType: js.UndefOr[String] = js.undefined
     
-    var ignoreAntialiasing: js.UndefOr[Boolean] = js.native
+    var ignoreAntialiasing: js.UndefOr[Boolean] = js.undefined
     
-    var transparency: js.UndefOr[Double] = js.native
+    var transparency: js.UndefOr[Double] = js.undefined
   }
   object ErrorColor {
     
@@ -242,14 +236,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var testReportFileName: js.UndefOr[String] = js.native
+    var testReportFileName: js.UndefOr[String] = js.undefined
     
-    var testSuiteName: js.UndefOr[String] = js.native
+    var testSuiteName: js.UndefOr[String] = js.undefined
   }
   object Format {
     

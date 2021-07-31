@@ -4,13 +4,14 @@ import typings.videoJs.mod.videojs.ComponentOptions
 import typings.videoJs.mod.videojs.TimeToolTip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js", "default.TimeToolTip")
 @js.native
-class TimeToolTipCls protected () extends TimeToolTip {
+class TimeToolTipCls protected ()
+  extends StObject
+     with TimeToolTip {
   /**
     * Creates an instance of this class.
     *

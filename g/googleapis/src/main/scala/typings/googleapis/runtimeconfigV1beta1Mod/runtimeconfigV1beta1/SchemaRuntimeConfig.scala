@@ -2,7 +2,6 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service. A RuntimeConfig resource consists of metadata and a hierarchy of
   * variables.
   */
-@js.native
 trait SchemaRuntimeConfig extends StObject {
   
   /**
     * An optional description of the RuntimeConfig object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of a runtime config. The name must have the format:
@@ -28,7 +26,7 @@ trait SchemaRuntimeConfig extends StObject {
     * will validate that the name adheres to this format. After you create the
     * resource, you cannot change the resource&#39;s name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaRuntimeConfig {
   

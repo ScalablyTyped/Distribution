@@ -2,7 +2,6 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the existing object types in ioBroker */
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.iobrokerStrings.channel
   - typings.iobroker.iobrokerStrings.device
   - typings.iobroker.iobrokerStrings.folder
-  - typings.iobroker.iobrokerStrings.enum
+  - typings.iobroker.iobrokerStrings.`enum`
   - typings.iobroker.iobrokerStrings.adapter
   - typings.iobroker.iobrokerStrings.config
   - typings.iobroker.iobrokerStrings.group
@@ -42,7 +41,7 @@ object ObjectType {
   def device: typings.iobroker.iobrokerStrings.device = "device".asInstanceOf[typings.iobroker.iobrokerStrings.device]
   
   @scala.inline
-  def enum: typings.iobroker.iobrokerStrings.enum = "enum".asInstanceOf[typings.iobroker.iobrokerStrings.enum]
+  def `enum`: typings.iobroker.iobrokerStrings.`enum` = "enum".asInstanceOf[typings.iobroker.iobrokerStrings.`enum`]
   
   @scala.inline
   def folder: typings.iobroker.iobrokerStrings.folder = "folder".asInstanceOf[typings.iobroker.iobrokerStrings.folder]

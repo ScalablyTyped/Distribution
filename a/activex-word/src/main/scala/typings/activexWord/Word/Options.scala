@@ -3,417 +3,415 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var AddBiDirectionalMarksWhenSavingTextFile: Boolean = js.native
+  var AddBiDirectionalMarksWhenSavingTextFile: Boolean
   
-  var AddControlCharacters: Boolean = js.native
+  var AddControlCharacters: Boolean
   
-  var AddHebDoubleQuote: Boolean = js.native
+  var AddHebDoubleQuote: Boolean
   
-  var AllowAccentedUppercase: Boolean = js.native
+  var AllowAccentedUppercase: Boolean
   
-  var AllowClickAndTypeMouse: Boolean = js.native
+  var AllowClickAndTypeMouse: Boolean
   
-  var AllowCombinedAuxiliaryForms: Boolean = js.native
+  var AllowCombinedAuxiliaryForms: Boolean
   
-  var AllowCompoundNounProcessing: Boolean = js.native
+  var AllowCompoundNounProcessing: Boolean
   
-  var AllowDragAndDrop: Boolean = js.native
+  var AllowDragAndDrop: Boolean
   
-  var AllowFastSave: Boolean = js.native
+  var AllowFastSave: Boolean
   
-  var AllowOpenInDraftView: Boolean = js.native
+  var AllowOpenInDraftView: Boolean
   
-  var AllowPixelUnits: Boolean = js.native
+  var AllowPixelUnits: Boolean
   
-  var AllowReadingMode: Boolean = js.native
+  var AllowReadingMode: Boolean
   
-  var AlwaysUseClearType: Boolean = js.native
+  var AlwaysUseClearType: Boolean
   
-  var AnimateScreenMovements: Boolean = js.native
+  var AnimateScreenMovements: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var ApplyFarEastFontsToAscii: Boolean = js.native
+  var ApplyFarEastFontsToAscii: Boolean
   
-  var ArabicMode: WdAraSpeller = js.native
+  var ArabicMode: WdAraSpeller
   
-  var ArabicNumeral: WdArabicNumeral = js.native
+  var ArabicNumeral: WdArabicNumeral
   
-  var AutoCreateNewDrawings: Boolean = js.native
+  var AutoCreateNewDrawings: Boolean
   
-  var AutoFormatApplyBulletedLists: Boolean = js.native
+  var AutoFormatApplyBulletedLists: Boolean
   
-  var AutoFormatApplyFirstIndents: Boolean = js.native
+  var AutoFormatApplyFirstIndents: Boolean
   
-  var AutoFormatApplyHeadings: Boolean = js.native
+  var AutoFormatApplyHeadings: Boolean
   
-  var AutoFormatApplyLists: Boolean = js.native
+  var AutoFormatApplyLists: Boolean
   
-  var AutoFormatApplyOtherParas: Boolean = js.native
+  var AutoFormatApplyOtherParas: Boolean
   
-  var AutoFormatAsYouTypeApplyBorders: Boolean = js.native
+  var AutoFormatAsYouTypeApplyBorders: Boolean
   
-  var AutoFormatAsYouTypeApplyBulletedLists: Boolean = js.native
+  var AutoFormatAsYouTypeApplyBulletedLists: Boolean
   
-  var AutoFormatAsYouTypeApplyClosings: Boolean = js.native
+  var AutoFormatAsYouTypeApplyClosings: Boolean
   
-  var AutoFormatAsYouTypeApplyDates: Boolean = js.native
+  var AutoFormatAsYouTypeApplyDates: Boolean
   
-  var AutoFormatAsYouTypeApplyFirstIndents: Boolean = js.native
+  var AutoFormatAsYouTypeApplyFirstIndents: Boolean
   
-  var AutoFormatAsYouTypeApplyHeadings: Boolean = js.native
+  var AutoFormatAsYouTypeApplyHeadings: Boolean
   
-  var AutoFormatAsYouTypeApplyNumberedLists: Boolean = js.native
+  var AutoFormatAsYouTypeApplyNumberedLists: Boolean
   
-  var AutoFormatAsYouTypeApplyTables: Boolean = js.native
+  var AutoFormatAsYouTypeApplyTables: Boolean
   
-  var AutoFormatAsYouTypeAutoLetterWizard: Boolean = js.native
+  var AutoFormatAsYouTypeAutoLetterWizard: Boolean
   
-  var AutoFormatAsYouTypeDefineStyles: Boolean = js.native
+  var AutoFormatAsYouTypeDefineStyles: Boolean
   
-  var AutoFormatAsYouTypeDeleteAutoSpaces: Boolean = js.native
+  var AutoFormatAsYouTypeDeleteAutoSpaces: Boolean
   
-  var AutoFormatAsYouTypeFormatListItemBeginning: Boolean = js.native
+  var AutoFormatAsYouTypeFormatListItemBeginning: Boolean
   
-  var AutoFormatAsYouTypeInsertClosings: Boolean = js.native
+  var AutoFormatAsYouTypeInsertClosings: Boolean
   
-  var AutoFormatAsYouTypeInsertOvers: Boolean = js.native
+  var AutoFormatAsYouTypeInsertOvers: Boolean
   
-  var AutoFormatAsYouTypeMatchParentheses: Boolean = js.native
+  var AutoFormatAsYouTypeMatchParentheses: Boolean
   
-  var AutoFormatAsYouTypeReplaceFarEastDashes: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceFarEastDashes: Boolean
   
-  var AutoFormatAsYouTypeReplaceFractions: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceFractions: Boolean
   
-  var AutoFormatAsYouTypeReplaceHyperlinks: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceHyperlinks: Boolean
   
-  var AutoFormatAsYouTypeReplaceOrdinals: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceOrdinals: Boolean
   
-  var AutoFormatAsYouTypeReplacePlainTextEmphasis: Boolean = js.native
+  var AutoFormatAsYouTypeReplacePlainTextEmphasis: Boolean
   
-  var AutoFormatAsYouTypeReplaceQuotes: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceQuotes: Boolean
   
-  var AutoFormatAsYouTypeReplaceSymbols: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceSymbols: Boolean
   
-  var AutoFormatDeleteAutoSpaces: Boolean = js.native
+  var AutoFormatDeleteAutoSpaces: Boolean
   
-  var AutoFormatMatchParentheses: Boolean = js.native
+  var AutoFormatMatchParentheses: Boolean
   
-  var AutoFormatPlainTextWordMail: Boolean = js.native
+  var AutoFormatPlainTextWordMail: Boolean
   
-  var AutoFormatPreserveStyles: Boolean = js.native
+  var AutoFormatPreserveStyles: Boolean
   
-  var AutoFormatReplaceFarEastDashes: Boolean = js.native
+  var AutoFormatReplaceFarEastDashes: Boolean
   
-  var AutoFormatReplaceFractions: Boolean = js.native
+  var AutoFormatReplaceFractions: Boolean
   
-  var AutoFormatReplaceHyperlinks: Boolean = js.native
+  var AutoFormatReplaceHyperlinks: Boolean
   
-  var AutoFormatReplaceOrdinals: Boolean = js.native
+  var AutoFormatReplaceOrdinals: Boolean
   
-  var AutoFormatReplacePlainTextEmphasis: Boolean = js.native
+  var AutoFormatReplacePlainTextEmphasis: Boolean
   
-  var AutoFormatReplaceQuotes: Boolean = js.native
+  var AutoFormatReplaceQuotes: Boolean
   
-  var AutoFormatReplaceSymbols: Boolean = js.native
+  var AutoFormatReplaceSymbols: Boolean
   
-  var AutoKeyboardSwitching: Boolean = js.native
+  var AutoKeyboardSwitching: Boolean
   
-  var AutoWordSelection: Boolean = js.native
+  var AutoWordSelection: Boolean
   
-  var BackgroundOpen: Boolean = js.native
+  var BackgroundOpen: Boolean
   
-  var BackgroundSave: Boolean = js.native
+  var BackgroundSave: Boolean
   
-  var BibliographySort: String = js.native
+  var BibliographySort: String
   
-  var BibliographyStyle: String = js.native
+  var BibliographyStyle: String
   
-  var BlueScreen: Boolean = js.native
+  var BlueScreen: Boolean
   
-  var BrazilReform: WdPortugueseReform = js.native
+  var BrazilReform: WdPortugueseReform
   
-  var ButtonFieldClicks: Double = js.native
+  var ButtonFieldClicks: Double
   
-  var CheckGrammarAsYouType: Boolean = js.native
+  var CheckGrammarAsYouType: Boolean
   
-  var CheckGrammarWithSpelling: Boolean = js.native
+  var CheckGrammarWithSpelling: Boolean
   
-  var CheckHangulEndings: Boolean = js.native
+  var CheckHangulEndings: Boolean
   
-  var CheckSpellingAsYouType: Boolean = js.native
+  var CheckSpellingAsYouType: Boolean
   
-  var CommentsColor: WdColorIndex = js.native
+  var CommentsColor: WdColorIndex
   
-  var ConfirmConversions: Boolean = js.native
+  var ConfirmConversions: Boolean
   
-  var ContextualSpeller: Boolean = js.native
+  var ContextualSpeller: Boolean
   
-  var ConvertHighAnsiToFarEast: Boolean = js.native
+  var ConvertHighAnsiToFarEast: Boolean
   
-  var CreateBackup: Boolean = js.native
+  var CreateBackup: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var CtrlClickHyperlinkToOpen: Boolean = js.native
+  var CtrlClickHyperlinkToOpen: Boolean
   
-  var CursorMovement: WdCursorMovement = js.native
+  var CursorMovement: WdCursorMovement
   
-  var DefaultBorderColor: WdColor = js.native
+  var DefaultBorderColor: WdColor
   
-  var DefaultBorderColorIndex: WdColorIndex = js.native
+  var DefaultBorderColorIndex: WdColorIndex
   
-  var DefaultBorderLineStyle: WdLineStyle = js.native
+  var DefaultBorderLineStyle: WdLineStyle
   
-  var DefaultBorderLineWidth: WdLineWidth = js.native
+  var DefaultBorderLineWidth: WdLineWidth
   
-  var DefaultEPostageApp: String = js.native
+  var DefaultEPostageApp: String
   
-  def DefaultFilePath(Path: WdDefaultFilePath): String = js.native
+  def DefaultFilePath(Path: WdDefaultFilePath): String
   
-  var DefaultHighlightColorIndex: WdColorIndex = js.native
+  var DefaultHighlightColorIndex: WdColorIndex
   
-  var DefaultOpenFormat: WdOpenFormat = js.native
+  var DefaultOpenFormat: WdOpenFormat
   
-  var DefaultTextEncoding: MsoEncoding = js.native
+  var DefaultTextEncoding: MsoEncoding
   
-  var DefaultTray: String = js.native
+  var DefaultTray: String
   
-  var DefaultTrayID: Double = js.native
+  var DefaultTrayID: Double
   
-  var DeletedCellColor: WdCellColor = js.native
+  var DeletedCellColor: WdCellColor
   
-  var DeletedTextColor: WdColorIndex = js.native
+  var DeletedTextColor: WdColorIndex
   
-  var DeletedTextMark: WdDeletedTextMark = js.native
+  var DeletedTextMark: WdDeletedTextMark
   
-  var DiacriticColorVal: WdColor = js.native
+  var DiacriticColorVal: WdColor
   
-  var DisableFeaturesIntroducedAfterbyDefault: WdDisableFeaturesIntroducedAfter = js.native
+  var DisableFeaturesIntroducedAfterbyDefault: WdDisableFeaturesIntroducedAfter
   
-  var DisableFeaturesbyDefault: Boolean = js.native
+  var DisableFeaturesbyDefault: Boolean
   
-  var DisplayGridLines: Boolean = js.native
+  var DisplayGridLines: Boolean
   
-  var DisplayPasteOptions: Boolean = js.native
+  var DisplayPasteOptions: Boolean
   
-  var DisplaySmartTagButtons: Boolean = js.native
+  var DisplaySmartTagButtons: Boolean
   
-  var DoNotPromptForConvert: Boolean = js.native
+  var DoNotPromptForConvert: Boolean
   
-  var DocumentViewDirection: WdDocumentViewDirection = js.native
+  var DocumentViewDirection: WdDocumentViewDirection
   
-  var EnableHangulHanjaRecentOrdering: Boolean = js.native
+  var EnableHangulHanjaRecentOrdering: Boolean
   
-  var EnableLegacyIMEMode: Boolean = js.native
+  var EnableLegacyIMEMode: Boolean
   
-  var EnableLivePreview: Boolean = js.native
+  var EnableLivePreview: Boolean
   
-  var EnableMisusedWordsDictionary: Boolean = js.native
+  var EnableMisusedWordsDictionary: Boolean
   
-  var EnableSound: Boolean = js.native
+  var EnableSound: Boolean
   
-  val EnvelopeFeederInstalled: Boolean = js.native
+  val EnvelopeFeederInstalled: Boolean
   
-  var FormatScanning: Boolean = js.native
+  var FormatScanning: Boolean
   
-  var FrenchReform: WdFrenchSpeller = js.native
+  var FrenchReform: WdFrenchSpeller
   
-  var GridDistanceHorizontal: Double = js.native
+  var GridDistanceHorizontal: Double
   
-  var GridDistanceVertical: Double = js.native
+  var GridDistanceVertical: Double
   
-  var GridOriginHorizontal: Double = js.native
+  var GridOriginHorizontal: Double
   
-  var GridOriginVertical: Double = js.native
+  var GridOriginVertical: Double
   
-  var HangulHanjaFastConversion: Boolean = js.native
+  var HangulHanjaFastConversion: Boolean
   
-  var HebrewMode: WdHebSpellStart = js.native
+  var HebrewMode: WdHebSpellStart
   
-  var IMEAutomaticControl: Boolean = js.native
+  var IMEAutomaticControl: Boolean
   
-  var INSKeyForOvertype: Boolean = js.native
+  var INSKeyForOvertype: Boolean
   
-  var INSKeyForPaste: Boolean = js.native
+  var INSKeyForPaste: Boolean
   
-  var IgnoreInternetAndFileAddresses: Boolean = js.native
+  var IgnoreInternetAndFileAddresses: Boolean
   
-  var IgnoreMixedDigits: Boolean = js.native
+  var IgnoreMixedDigits: Boolean
   
-  var IgnoreUppercase: Boolean = js.native
+  var IgnoreUppercase: Boolean
   
-  var InlineConversion: Boolean = js.native
+  var InlineConversion: Boolean
   
-  var InsertedCellColor: WdCellColor = js.native
+  var InsertedCellColor: WdCellColor
   
-  var InsertedTextColor: WdColorIndex = js.native
+  var InsertedTextColor: WdColorIndex
   
-  var InsertedTextMark: WdInsertedTextMark = js.native
+  var InsertedTextMark: WdInsertedTextMark
   
-  var InterpretHighAnsi: WdHighAnsiText = js.native
+  var InterpretHighAnsi: WdHighAnsiText
   
-  var LabelSmartTags: Boolean = js.native
+  var LabelSmartTags: Boolean
   
-  var LocalNetworkFile: Boolean = js.native
+  var LocalNetworkFile: Boolean
   
-  var MapPaperSize: Boolean = js.native
+  var MapPaperSize: Boolean
   
-  var MatchFuzzyAY: Boolean = js.native
+  var MatchFuzzyAY: Boolean
   
-  var MatchFuzzyBV: Boolean = js.native
+  var MatchFuzzyBV: Boolean
   
-  var MatchFuzzyByte: Boolean = js.native
+  var MatchFuzzyByte: Boolean
   
-  var MatchFuzzyCase: Boolean = js.native
+  var MatchFuzzyCase: Boolean
   
-  var MatchFuzzyDZ: Boolean = js.native
+  var MatchFuzzyDZ: Boolean
   
-  var MatchFuzzyDash: Boolean = js.native
+  var MatchFuzzyDash: Boolean
   
-  var MatchFuzzyHF: Boolean = js.native
+  var MatchFuzzyHF: Boolean
   
-  var MatchFuzzyHiragana: Boolean = js.native
+  var MatchFuzzyHiragana: Boolean
   
-  var MatchFuzzyIterationMark: Boolean = js.native
+  var MatchFuzzyIterationMark: Boolean
   
-  var MatchFuzzyKanji: Boolean = js.native
+  var MatchFuzzyKanji: Boolean
   
-  var MatchFuzzyKiKu: Boolean = js.native
+  var MatchFuzzyKiKu: Boolean
   
-  var MatchFuzzyOldKana: Boolean = js.native
+  var MatchFuzzyOldKana: Boolean
   
-  var MatchFuzzyProlongedSoundMark: Boolean = js.native
+  var MatchFuzzyProlongedSoundMark: Boolean
   
-  var MatchFuzzyPunctuation: Boolean = js.native
+  var MatchFuzzyPunctuation: Boolean
   
-  var MatchFuzzySmallKana: Boolean = js.native
+  var MatchFuzzySmallKana: Boolean
   
-  var MatchFuzzySpace: Boolean = js.native
+  var MatchFuzzySpace: Boolean
   
-  var MatchFuzzyTC: Boolean = js.native
+  var MatchFuzzyTC: Boolean
   
-  var MatchFuzzyZJ: Boolean = js.native
+  var MatchFuzzyZJ: Boolean
   
-  var MeasurementUnit: WdMeasurementUnits = js.native
+  var MeasurementUnit: WdMeasurementUnits
   
-  var MergedCellColor: WdCellColor = js.native
+  var MergedCellColor: WdCellColor
   
-  var MonthNames: WdMonthNames = js.native
+  var MonthNames: WdMonthNames
   
-  var MoveFromTextColor: WdColorIndex = js.native
+  var MoveFromTextColor: WdColorIndex
   
-  var MoveFromTextMark: WdMoveFromTextMark = js.native
+  var MoveFromTextMark: WdMoveFromTextMark
   
-  var MoveToTextColor: WdColorIndex = js.native
+  var MoveToTextColor: WdColorIndex
   
-  var MoveToTextMark: WdMoveToTextMark = js.native
+  var MoveToTextMark: WdMoveToTextMark
   
-  var MultipleWordConversionsMode: WdMultipleWordConversionsMode = js.native
+  var MultipleWordConversionsMode: WdMultipleWordConversionsMode
   
-  var OMathAutoBuildUp: Boolean = js.native
+  var OMathAutoBuildUp: Boolean
   
-  var OMathCopyLF: Boolean = js.native
+  var OMathCopyLF: Boolean
   
-  var OptimizeForWord97byDefault: Boolean = js.native
+  var OptimizeForWord97byDefault: Boolean
   
-  var Overtype: Boolean = js.native
+  var Overtype: Boolean
   
-  var Pagination: Boolean = js.native
+  var Pagination: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PasteAdjustParagraphSpacing: Boolean = js.native
+  var PasteAdjustParagraphSpacing: Boolean
   
-  var PasteAdjustTableFormatting: Boolean = js.native
+  var PasteAdjustTableFormatting: Boolean
   
-  var PasteAdjustWordSpacing: Boolean = js.native
+  var PasteAdjustWordSpacing: Boolean
   
-  var PasteFormatBetweenDocuments: WdPasteOptions = js.native
+  var PasteFormatBetweenDocuments: WdPasteOptions
   
-  var PasteFormatBetweenStyledDocuments: WdPasteOptions = js.native
+  var PasteFormatBetweenStyledDocuments: WdPasteOptions
   
-  var PasteFormatFromExternalSource: WdPasteOptions = js.native
+  var PasteFormatFromExternalSource: WdPasteOptions
   
-  var PasteFormatWithinDocument: WdPasteOptions = js.native
+  var PasteFormatWithinDocument: WdPasteOptions
   
-  var PasteMergeFromPPT: Boolean = js.native
+  var PasteMergeFromPPT: Boolean
   
-  var PasteMergeFromXL: Boolean = js.native
+  var PasteMergeFromXL: Boolean
   
-  var PasteMergeLists: Boolean = js.native
+  var PasteMergeLists: Boolean
   
-  var PasteOptionKeepBulletsAndNumbers: Boolean = js.native
+  var PasteOptionKeepBulletsAndNumbers: Boolean
   
-  var PasteSmartCutPaste: Boolean = js.native
+  var PasteSmartCutPaste: Boolean
   
-  var PasteSmartStyleBehavior: Boolean = js.native
+  var PasteSmartStyleBehavior: Boolean
   
-  var PictureEditor: String = js.native
+  var PictureEditor: String
   
-  var PictureWrapType: WdWrapTypeMerged = js.native
+  var PictureWrapType: WdWrapTypeMerged
   
-  var PortugalReform: WdPortugueseReform = js.native
+  var PortugalReform: WdPortugueseReform
   
-  var PrecisePositioning: Boolean = js.native
+  var PrecisePositioning: Boolean
   
-  var PrintBackground: Boolean = js.native
+  var PrintBackground: Boolean
   
-  var PrintBackgrounds: Boolean = js.native
+  var PrintBackgrounds: Boolean
   
-  var PrintComments: Boolean = js.native
+  var PrintComments: Boolean
   
-  var PrintDraft: Boolean = js.native
+  var PrintDraft: Boolean
   
-  var PrintDrawingObjects: Boolean = js.native
+  var PrintDrawingObjects: Boolean
   
-  var PrintEvenPagesInAscendingOrder: Boolean = js.native
+  var PrintEvenPagesInAscendingOrder: Boolean
   
-  var PrintFieldCodes: Boolean = js.native
+  var PrintFieldCodes: Boolean
   
-  var PrintHiddenText: Boolean = js.native
+  var PrintHiddenText: Boolean
   
-  var PrintOddPagesInAscendingOrder: Boolean = js.native
+  var PrintOddPagesInAscendingOrder: Boolean
   
-  var PrintProperties: Boolean = js.native
+  var PrintProperties: Boolean
   
-  var PrintReverse: Boolean = js.native
+  var PrintReverse: Boolean
   
-  var PrintXMLTag: Boolean = js.native
+  var PrintXMLTag: Boolean
   
-  var PromptUpdateStyle: Boolean = js.native
+  var PromptUpdateStyle: Boolean
   
-  var RTFInClipboard: Boolean = js.native
+  var RTFInClipboard: Boolean
   
-  var RepeatWord: Boolean = js.native
+  var RepeatWord: Boolean
   
-  var ReplaceSelection: Boolean = js.native
+  var ReplaceSelection: Boolean
   
-  var RevisedLinesColor: WdColorIndex = js.native
+  var RevisedLinesColor: WdColorIndex
   
-  var RevisedLinesMark: WdRevisedLinesMark = js.native
+  var RevisedLinesMark: WdRevisedLinesMark
   
-  var RevisedPropertiesColor: WdColorIndex = js.native
+  var RevisedPropertiesColor: WdColorIndex
   
-  var RevisedPropertiesMark: WdRevisedPropertiesMark = js.native
+  var RevisedPropertiesMark: WdRevisedPropertiesMark
   
-  var RevisionsBalloonPrintOrientation: WdRevisionsBalloonPrintOrientation = js.native
+  var RevisionsBalloonPrintOrientation: WdRevisionsBalloonPrintOrientation
   
-  var SaveInterval: Double = js.native
+  var SaveInterval: Double
   
-  var SaveNormalPrompt: Boolean = js.native
+  var SaveNormalPrompt: Boolean
   
-  var SavePropertiesPrompt: Boolean = js.native
+  var SavePropertiesPrompt: Boolean
   
-  var SendMailAttach: Boolean = js.native
+  var SendMailAttach: Boolean
   
-  var SequenceCheck: Boolean = js.native
+  var SequenceCheck: Boolean
   
   def SetWPHelpOptions(
     CommandKeyHelp: js.UndefOr[js.Any],
@@ -422,88 +420,88 @@ trait Options extends StObject {
     DemoGuidance: js.UndefOr[js.Any],
     DemoSpeed: js.UndefOr[js.Any],
     HelpType: js.UndefOr[js.Any]
-  ): Unit = js.native
+  ): Unit
   
-  var ShortMenuNames: Boolean = js.native
+  var ShortMenuNames: Boolean
   
-  var ShowControlCharacters: Boolean = js.native
+  var ShowControlCharacters: Boolean
   
-  var ShowDevTools: Boolean = js.native
+  var ShowDevTools: Boolean
   
-  var ShowDiacritics: Boolean = js.native
+  var ShowDiacritics: Boolean
   
-  var ShowFormatError: Boolean = js.native
+  var ShowFormatError: Boolean
   
-  var ShowMarkupOpenSave: Boolean = js.native
+  var ShowMarkupOpenSave: Boolean
   
-  var ShowMenuFloaties: Boolean = js.native
+  var ShowMenuFloaties: Boolean
   
-  var ShowReadabilityStatistics: Boolean = js.native
+  var ShowReadabilityStatistics: Boolean
   
-  var ShowSelectionFloaties: Boolean = js.native
+  var ShowSelectionFloaties: Boolean
   
-  var SmartCursoring: Boolean = js.native
+  var SmartCursoring: Boolean
   
-  var SmartCutPaste: Boolean = js.native
+  var SmartCutPaste: Boolean
   
-  var SmartParaSelection: Boolean = js.native
+  var SmartParaSelection: Boolean
   
-  var SnapToGrid: Boolean = js.native
+  var SnapToGrid: Boolean
   
-  var SnapToShapes: Boolean = js.native
+  var SnapToShapes: Boolean
   
-  var SpanishMode: WdSpanishSpeller = js.native
+  var SpanishMode: WdSpanishSpeller
   
-  var SplitCellColor: WdCellColor = js.native
+  var SplitCellColor: WdCellColor
   
-  var StoreRSIDOnSave: Boolean = js.native
+  var StoreRSIDOnSave: Boolean
   
-  var StrictFinalYaa: Boolean = js.native
+  var StrictFinalYaa: Boolean
   
-  var StrictInitialAlefHamza: Boolean = js.native
+  var StrictInitialAlefHamza: Boolean
   
-  var StrictRussianE: Boolean = js.native
+  var StrictRussianE: Boolean
   
-  var StrictTaaMarboota: Boolean = js.native
+  var StrictTaaMarboota: Boolean
   
-  var SuggestFromMainDictionaryOnly: Boolean = js.native
+  var SuggestFromMainDictionaryOnly: Boolean
   
-  var SuggestSpellingCorrections: Boolean = js.native
+  var SuggestSpellingCorrections: Boolean
   
-  var TabIndentKey: Boolean = js.native
+  var TabIndentKey: Boolean
   
-  var TypeNReplace: Boolean = js.native
+  var TypeNReplace: Boolean
   
-  var UpdateFieldsAtPrint: Boolean = js.native
+  var UpdateFieldsAtPrint: Boolean
   
-  var UpdateFieldsWithTrackedChangesAtPrint: Boolean = js.native
+  var UpdateFieldsWithTrackedChangesAtPrint: Boolean
   
-  var UpdateLinksAtOpen: Boolean = js.native
+  var UpdateLinksAtOpen: Boolean
   
-  var UpdateLinksAtPrint: Boolean = js.native
+  var UpdateLinksAtPrint: Boolean
   
-  var UpdateStyleListBehavior: WdUpdateStyleListBehavior = js.native
+  var UpdateStyleListBehavior: WdUpdateStyleListBehavior
   
-  var UseCharacterUnit: Boolean = js.native
+  var UseCharacterUnit: Boolean
   
-  var UseDiffDiacColor: Boolean = js.native
+  var UseDiffDiacColor: Boolean
   
-  var UseGermanSpellingReform: Boolean = js.native
+  var UseGermanSpellingReform: Boolean
   
-  var UseNormalStyleForList: Boolean = js.native
+  var UseNormalStyleForList: Boolean
   
-  var VirusProtection: Boolean = js.native
+  var VirusProtection: Boolean
   
-  var VisualSelection: WdVisualSelection = js.native
+  var VisualSelection: WdVisualSelection
   
-  var WPDocNavKeys: Boolean = js.native
+  var WPDocNavKeys: Boolean
   
-  var WPHelp: Boolean = js.native
+  var WPHelp: Boolean
   
-  var WarnBeforeSavingPrintingSendingMarkup: Boolean = js.native
+  var WarnBeforeSavingPrintingSendingMarkup: Boolean
   
   @JSName("Word.Options_typekey")
-  var WordDotOptions_typekey: Options = js.native
+  var WordDotOptions_typekey: Options
 }
 object Options {
   

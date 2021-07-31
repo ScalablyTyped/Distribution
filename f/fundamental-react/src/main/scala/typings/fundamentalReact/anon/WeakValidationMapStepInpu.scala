@@ -3,28 +3,26 @@ package typings.fundamentalReact.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/StepInput/StepInput.StepInputProps> */
-@js.native
 trait WeakValidationMapStepInpu extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var localizedText: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var localizedText: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var validationState: js.UndefOr[Validator[js.UndefOr[Null | State]]] = js.native
+  var validationState: js.UndefOr[Validator[js.UndefOr[Null | State]]] = js.undefined
   
-  var value: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var value: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
 }
 object WeakValidationMapStepInpu {
   
@@ -56,7 +54,7 @@ object WeakValidationMapStepInpu {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setLocalizedText(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+    def setLocalizedText(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBotResponse extends StObject {
   
   /**
     * The bot details.
     */
-  var Bot: js.UndefOr[typings.awsSdk.chimeMod.Bot] = js.native
+  var Bot: js.UndefOr[typings.awsSdk.chimeMod.Bot] = js.undefined
 }
 object CreateBotResponse {
   

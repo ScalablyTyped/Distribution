@@ -3,47 +3,47 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.data.proxy.IAjax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRestProxy extends IAjax {
+trait IRestProxy
+  extends StObject
+     with IAjax {
   
   /** [Config Option] (Boolean) */
-  var appendId: js.UndefOr[Boolean] = js.native
+  var appendId: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of actionMethods
     * @returns Object
     */
-  var getActionMethods: js.UndefOr[js.Function0[_]] = js.native
+  var getActionMethods: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of appendId
     * @returns Boolean
     */
-  var getAppendId: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAppendId: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of format
     * @returns String
     */
-  var getFormat: js.UndefOr[js.Function0[String]] = js.native
+  var getFormat: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Sets the value of actionMethods
     * @param actionMethods Object The new value.
     */
-  var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.native
+  var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of appendId
     * @param appendId Boolean The new value.
     */
-  var setAppendId: js.UndefOr[js.Function1[/* appendId */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAppendId: js.UndefOr[js.Function1[/* appendId */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of format
     * @param format String The new value.
     */
-  var setFormat: js.UndefOr[js.Function1[/* format */ js.UndefOr[String], Unit]] = js.native
+  var setFormat: js.UndefOr[js.Function1[/* format */ js.UndefOr[String], Unit]] = js.undefined
 }
 object IRestProxy {
   
@@ -69,7 +69,7 @@ object IRestProxy {
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setGetActionMethods(value: () => _): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
+    def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)

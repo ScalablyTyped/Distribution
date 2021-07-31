@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObservableObjectSetEvent extends ObservableObjectEvent {
+trait ObservableObjectSetEvent
+  extends StObject
+     with ObservableObjectEvent {
   
-  var preventDefault: js.UndefOr[js.Function] = js.native
+  var preventDefault: js.UndefOr[js.Function] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ObservableObjectSetEvent {
   

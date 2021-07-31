@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfferingStatus extends StObject {
   
   /**
     * The date on which the offering is effective.
     */
-  var effectiveOn: js.UndefOr[DateTime] = js.native
+  var effectiveOn: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Represents the metadata of an offering status.
     */
-  var offering: js.UndefOr[Offering] = js.native
+  var offering: js.UndefOr[Offering] = js.undefined
   
   /**
     * The number of available devices in the offering.
     */
-  var quantity: js.UndefOr[Integer] = js.native
+  var quantity: js.UndefOr[Integer] = js.undefined
   
   /**
     * The type specified for the offering status.
     */
-  var `type`: js.UndefOr[OfferingTransactionType] = js.native
+  var `type`: js.UndefOr[OfferingTransactionType] = js.undefined
 }
 object OfferingStatus {
   

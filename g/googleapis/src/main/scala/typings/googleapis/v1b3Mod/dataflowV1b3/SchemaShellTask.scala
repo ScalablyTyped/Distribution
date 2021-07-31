@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A task which consists of a shell command for the worker to execute.
   */
-@js.native
 trait SchemaShellTask extends StObject {
   
   /**
     * The shell command to run.
     */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
   /**
     * Exit code for the task.
     */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
 }
 object SchemaShellTask {
   

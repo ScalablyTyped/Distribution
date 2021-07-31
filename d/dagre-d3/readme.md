@@ -10,9 +10,9 @@ A D3-based renderer for Dagre
 | ------------------ | :-------------: |
 | Full name          | dagre-d3 |
 | Keywords           | graph, dagre, graphlib, renderer |
-| # releases         | 4 |
-| # dependents       | 35 |
-| # downloads        | 2697074 |
+| # releases         | 2 |
+| # dependents       | 44 |
+| # downloads        | 4383692 |
 | # stars            | 1 |
 
 ## Links

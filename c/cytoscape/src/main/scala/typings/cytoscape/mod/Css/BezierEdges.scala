@@ -5,7 +5,6 @@ import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * http://js.cytoscape.org/#style/bezier-edges
   */
-@js.native
 trait BezierEdges extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait BezierEdges extends StObject {
     * Because it overrides the step size, bezier edges with the same value will overlap.
     * Thus, it’s best to use this as a one- off value for particular edges if need be.
     */
-  var `control-point-distance`: PropertyValueEdge[Double] = js.native
+  var `control-point-distance`: PropertyValueEdge[Double]
   
   /**
     * From the line perpendicular from source to target,
     * this value specifies the distance between successive bezier edges.
     */
-  var `control-point-step-size`: PropertyValueEdge[Double] = js.native
+  var `control-point-step-size`: PropertyValueEdge[Double]
   
   /**
     * A single value that weights control points along the line from source to target.
@@ -36,7 +34,7 @@ trait BezierEdges extends StObject {
     * 1 towards the target node —
     * but larger or smaller values can also be used.
     */
-  var `control-point-weight`: PropertyValueEdge[Double] = js.native
+  var `control-point-weight`: PropertyValueEdge[Double]
   
   /**
     * With value intersection (default),
@@ -48,7 +46,7 @@ trait BezierEdges extends StObject {
     * — but it should be used carefully because you can create invalid
     * points that intersection would have automatically corrected.
     */
-  var `edge-distances`: PropertyValueEdge[intersection | `node-position`] = js.native
+  var `edge-distances`: PropertyValueEdge[intersection | `node-position`]
 }
 object BezierEdges {
   

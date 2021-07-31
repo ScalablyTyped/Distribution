@@ -5,24 +5,24 @@ import typings.highcharts.highchartsStrings.flap
 import typings.highcharts.highchartsStrings.ortho
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisTitleOptions extends AxisTitleOptions {
+trait YAxisTitleOptions
+  extends StObject
+     with AxisTitleOptions {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment of the title relative
     * to the axis values. Possible values are "low", "middle" or "high".
     */
-  var align: js.UndefOr[AxisTitleAlignValue] = js.native
+  var align: js.UndefOr[AxisTitleAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel distance between the
     * axis labels and the title. Positive values are outside the axis line,
     * negative are inside.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The distance of the axis title
@@ -30,7 +30,7 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     * width of the labels, the labels' distance from the axis and the title's
     * margin. However when the offset option is set, it overrides all this.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Defines how the title is repositioned according to the 3D
@@ -53,19 +53,19 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     *
     * - `undefined`: Will use the config from `labels.position3d`
     */
-  var position3d: js.UndefOr[chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho | Null] = js.native
+  var position3d: js.UndefOr[chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to reserve space for the title
     * when laying out the axis.
     */
-  var reserveSpace: js.UndefOr[Boolean] = js.native
+  var reserveSpace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The rotation of the text in
     * degrees. 0 is horizontal, 270 is vertical reading from bottom to top.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) If enabled, the axis title will skewed to follow the
@@ -78,7 +78,7 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     *
     * A `null` value will use the config from `labels.skew3d`.
     */
-  var skew3d: js.UndefOr[Boolean | Null] = js.native
+  var skew3d: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the title. If the
@@ -89,7 +89,7 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     * In styled mode, the stroke width is given in the `.highcharts-axis-title`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The actual text of the axis title.
@@ -97,7 +97,7 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     * vector techniques and must be clean text. The Y axis title is disabled by
     * setting the `text` option to `undefined`.
     */
-  var text: js.UndefOr[String | Null] = js.native
+  var text: js.UndefOr[String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment of the text, can be
@@ -128,25 +128,25 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     * - for `align` = `"high"` and `opposite` = `false` `textAlign` is set to
     * `right`
     */
-  var textAlign: js.UndefOr[AlignValue] = js.native
+  var textAlign: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the axis
     * title.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Horizontal pixel offset of the title
     * position.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Vertical pixel offset of the title
     * position.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object YAxisTitleOptions {
   

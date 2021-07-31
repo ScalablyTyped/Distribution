@@ -6,31 +6,29 @@ import typings.evernote.mod.UserStore.PublicUserInfo
 import typings.evernote.mod.UserStore.UserUrls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationToken extends StObject {
   
-  var authenticationToken: js.UndefOr[String] = js.native
+  var authenticationToken: js.UndefOr[String] = js.undefined
   
-  var currentTime: js.UndefOr[Timestamp] = js.native
+  var currentTime: js.UndefOr[Timestamp] = js.undefined
   
-  var expiration: js.UndefOr[Timestamp] = js.native
+  var expiration: js.UndefOr[Timestamp] = js.undefined
   
-  var noteStoreUrl: js.UndefOr[String] = js.native
+  var noteStoreUrl: js.UndefOr[String] = js.undefined
   
-  var publicUserInfo: js.UndefOr[PublicUserInfo] = js.native
+  var publicUserInfo: js.UndefOr[PublicUserInfo] = js.undefined
   
-  var secondFactorDeliveryHint: js.UndefOr[String] = js.native
+  var secondFactorDeliveryHint: js.UndefOr[String] = js.undefined
   
-  var secondFactorRequired: js.UndefOr[Boolean] = js.native
+  var secondFactorRequired: js.UndefOr[Boolean] = js.undefined
   
-  var urls: js.UndefOr[UserUrls] = js.native
+  var urls: js.UndefOr[UserUrls] = js.undefined
   
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
   
-  var webApiUrlPrefix: js.UndefOr[String] = js.native
+  var webApiUrlPrefix: js.UndefOr[String] = js.undefined
 }
 object AuthenticationToken {
   

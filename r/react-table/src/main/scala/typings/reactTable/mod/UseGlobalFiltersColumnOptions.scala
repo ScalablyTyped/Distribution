@@ -2,14 +2,12 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  disableGlobalFilter :boolean | undefined}> */
-@js.native
 trait UseGlobalFiltersColumnOptions[D /* <: js.Object */] extends StObject {
   
-  var disableGlobalFilter: js.UndefOr[Boolean] = js.native
+  var disableGlobalFilter: js.UndefOr[Boolean] = js.undefined
 }
 object UseGlobalFiltersColumnOptions {
   
@@ -20,7 +18,7 @@ object UseGlobalFiltersColumnOptions {
   }
   
   @scala.inline
-  implicit class UseGlobalFiltersColumnOptionsMutableBuilder[Self <: UseGlobalFiltersColumnOptions[_], D /* <: js.Object */] (val x: Self with UseGlobalFiltersColumnOptions[D]) extends AnyVal {
+  implicit class UseGlobalFiltersColumnOptionsMutableBuilder[Self <: UseGlobalFiltersColumnOptions[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersColumnOptions[D]) extends AnyVal {
     
     @scala.inline
     def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])

@@ -5,21 +5,19 @@ import typings.ecol.collectionEventMod.CollectionEvent.Listener
 import typings.ecol.collectionEventMod.CollectionEvent.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ieventdispatcherMod {
   
-  @js.native
   trait IEventDispatcher[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] extends StObject {
     
-    def addEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit = js.native
+    def addEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit
     
-    def dispatchEvent(event: CollectionEvent[T, SourceT, IteratorT, ReverseT]): Unit = js.native
+    def dispatchEvent(event: CollectionEvent[T, SourceT, IteratorT, ReverseT]): Unit
     
-    def hasEventListener(`type`: Type): Boolean = js.native
+    def hasEventListener(`type`: Type): Boolean
     
-    def removeEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit = js.native
+    def removeEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit
   }
   object IEventDispatcher {
     
@@ -35,7 +33,7 @@ object ieventdispatcherMod {
     }
     
     @scala.inline
-    implicit class IEventDispatcherMutableBuilder[Self <: IEventDispatcher[_, _, _, _], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] (val x: Self with (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) extends AnyVal {
+    implicit class IEventDispatcherMutableBuilder[Self <: IEventDispatcher[?, ?, ?, ?], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] (val x: Self & (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) extends AnyVal {
       
       @scala.inline
       def setAddEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlwaysOnVpnPackage extends StObject {
   
   /** Disallows networking when the VPN is not connected. */
-  var lockdownEnabled: js.UndefOr[Boolean] = js.native
+  var lockdownEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** The package name of the VPN app. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object AlwaysOnVpnPackage {
   

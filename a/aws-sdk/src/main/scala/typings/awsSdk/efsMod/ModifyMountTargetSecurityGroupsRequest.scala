@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyMountTargetSecurityGroupsRequest extends StObject {
   
   /**
     * The ID of the mount target whose security groups you want to modify.
     */
-  var MountTargetId: typings.awsSdk.efsMod.MountTargetId = js.native
+  var MountTargetId: typings.awsSdk.efsMod.MountTargetId
   
   /**
     * An array of up to five VPC security group IDs.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.efsMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.efsMod.SecurityGroups] = js.undefined
 }
 object ModifyMountTargetSecurityGroupsRequest {
   

@@ -10,9 +10,9 @@ TypeScript typings for Stackdriver Profiler API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudprofiler |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 42 |
+| # downloads        | 1118 |
 | # stars            | 0 |
 
 ## Links

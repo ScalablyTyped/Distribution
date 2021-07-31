@@ -189,13 +189,13 @@ import typings.std.stdStrings.wbr
 import typings.std.stdStrings.xmp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native
 trait Document
-  extends Node
+  extends StObject
+     with Node
      with DocumentAndElementEventHandlers
      with DocumentOrShadowRoot
      with GlobalEventHandlers
@@ -219,87 +219,90 @@ trait Document
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -1011,7 +1014,7 @@ trait Document
   @JSName("createEvent")
   def createEvent_CompositionEvent(eventInterface: typings.std.stdStrings.CompositionEvent): CompositionEvent = js.native
   @JSName("createEvent")
-  def createEvent_CustomEvent(eventInterface: typings.std.stdStrings.CustomEvent): CustomEvent[_] = js.native
+  def createEvent_CustomEvent(eventInterface: typings.std.stdStrings.CustomEvent): CustomEvent[js.Any] = js.native
   @JSName("createEvent")
   def createEvent_DeviceLightEvent(eventInterface: typings.std.stdStrings.DeviceLightEvent): DeviceLightEvent = js.native
   @JSName("createEvent")
@@ -1063,7 +1066,7 @@ trait Document
   @JSName("createEvent")
   def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
   @JSName("createEvent")
-  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[_] = js.native
+  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[js.Any] = js.native
   @JSName("createEvent")
   def createEvent_MouseEvent(eventInterface: typings.std.stdStrings.MouseEvent): MouseEvent = js.native
   @JSName("createEvent")
@@ -1159,9 +1162,9 @@ trait Document
     * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
   def createNodeIterator(root: Node): NodeIterator = js.native
-  def createNodeIterator(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
+  def createNodeIterator(root: Node, whatToShow: Unit, filter: NodeFilter): NodeIterator = js.native
   
   /**
     * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
@@ -1187,11 +1190,11 @@ trait Document
     * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
   def createTreeWalker(root: Node): TreeWalker = js.native
-  def createTreeWalker(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
+  def createTreeWalker(root: Node, whatToShow: Unit, filter: NodeFilter): TreeWalker = js.native
   
   /**
     * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
@@ -1200,7 +1203,7 @@ trait Document
     */
   val currentScript: HTMLOrSVGScriptElement | Null = js.native
   
-  val defaultView: (WindowProxy with (/* globalThis */ js.Any)) | Null = js.native
+  val defaultView: (WindowProxy & (/* globalThis */ js.Any)) | Null = js.native
   
   /**
     * Sets or gets a value that indicates whether the document can be edited.
@@ -1244,9 +1247,9 @@ trait Document
     * @param value Value to assign.
     */
   def execCommand(commandId: java.lang.String): scala.Boolean = js.native
-  def execCommand(commandId: java.lang.String, showUI: js.UndefOr[scala.Nothing], value: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
+  def execCommand(commandId: java.lang.String, showUI: Unit, value: java.lang.String): scala.Boolean = js.native
   
   /**
     * Stops document's fullscreen element from being displayed fullscreen and resolves promise when done.
@@ -1708,21 +1711,21 @@ trait Document
     */
   var location: Location = js.native
   
-  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   /**
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
@@ -1732,56 +1735,21 @@ trait Document
     * @param replace Specifies whether the existing entry for the document is replaced in the history list.
     */
   def open(): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: scala.Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: java.lang.String): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: java.lang.String,
-    replace: scala.Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: java.lang.String): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    features: js.UndefOr[scala.Nothing],
-    replace: scala.Boolean
-  ): Document = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: java.lang.String, features: java.lang.String): Document = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    features: java.lang.String,
-    replace: scala.Boolean
-  ): Document = js.native
   def open(url: java.lang.String): Document = js.native
-  def open(
-    url: java.lang.String,
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: scala.Boolean
-  ): Document = js.native
-  def open(url: java.lang.String, name: js.UndefOr[scala.Nothing], features: java.lang.String): Document = js.native
-  def open(
-    url: java.lang.String,
-    name: js.UndefOr[scala.Nothing],
-    features: java.lang.String,
-    replace: scala.Boolean
-  ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String): Document = js.native
-  def open(
-    url: java.lang.String,
-    name: java.lang.String,
-    features: js.UndefOr[scala.Nothing],
-    replace: scala.Boolean
-  ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
+  def open(url: java.lang.String, name: java.lang.String, features: Unit, replace: scala.Boolean): Document = js.native
+  def open(url: java.lang.String, name: Unit, features: java.lang.String): Document = js.native
+  def open(url: java.lang.String, name: Unit, features: java.lang.String, replace: scala.Boolean): Document = js.native
+  def open(url: java.lang.String, name: Unit, features: Unit, replace: scala.Boolean): Document = js.native
+  def open(url: Unit, name: java.lang.String): Document = js.native
+  def open(url: Unit, name: java.lang.String, features: java.lang.String): Document = js.native
+  def open(url: Unit, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
+  def open(url: Unit, name: java.lang.String, features: Unit, replace: scala.Boolean): Document = js.native
+  def open(url: Unit, name: Unit, features: java.lang.String): Document = js.native
+  def open(url: Unit, name: Unit, features: java.lang.String, replace: scala.Boolean): Document = js.native
+  def open(url: Unit, name: Unit, features: Unit, replace: scala.Boolean): Document = js.native
   
   @JSName("ownerDocument")
   val ownerDocument_Document: Null = js.native
@@ -1845,87 +1813,90 @@ trait Document
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

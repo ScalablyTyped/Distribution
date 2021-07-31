@@ -9,10 +9,10 @@ Split a string on the first occurance of a given separator
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | split-on-first |
-| Keywords           | split, string, first, occurrence, separator, delimiter, text |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 69281516 |
+| Keywords           | split, string, first, once, occurrence, separator, delimiter, text |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 102427471 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOrganizationConfigRuleRequest extends StObject {
   
   /**
     * The name of organization config rule that you want to delete.
     */
-  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName = js.native
+  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName
 }
 object DeleteOrganizationConfigRuleRequest {
   

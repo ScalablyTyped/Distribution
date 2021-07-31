@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMasterAccountResponse extends StObject {
   
   /**
     * A list of details about the Security Hub master account for the current member account. 
     */
-  var Master: js.UndefOr[Invitation] = js.native
+  var Master: js.UndefOr[Invitation] = js.undefined
 }
 object GetMasterAccountResponse {
   

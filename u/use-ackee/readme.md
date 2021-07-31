@@ -12,7 +12,7 @@ Use Ackee in React
 | Keywords           | react, hooks, hook, tracker, analytics, tracking, ackee |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 1200 |
+| # downloads        | 4128 |
 | # stars            | 0 |
 
 ## Links

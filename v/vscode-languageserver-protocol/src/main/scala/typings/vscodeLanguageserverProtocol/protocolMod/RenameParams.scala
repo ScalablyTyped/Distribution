@@ -4,28 +4,28 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenameParams extends WorkDoneProgressParams {
+trait RenameParams
+  extends StObject
+     with WorkDoneProgressParams {
   
   /**
     * The new name of the symbol. If the given name is not valid the
     * request must return a [ResponseError](#ResponseError) with an
     * appropriate message set.
     */
-  var newName: String = js.native
+  var newName: String
   
   /**
     * The position at which this request was sent.
     */
-  var position: Position = js.native
+  var position: Position
   
   /**
     * The document to rename.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object RenameParams {
   

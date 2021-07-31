@@ -2,41 +2,39 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationResponse extends StObject {
   
   /**
     * Required. The Amazon Resource Name (ARN) of the configuration.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * Required. The date and time of the configuration.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.native
+  var Created: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The latest revision of the configuration.
     */
-  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.native
+  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
   
   /**
     * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The list of the first 20 warnings about the configuration XML elements or attributes that were sanitized.
     */
-  var Warnings: js.UndefOr[listOfSanitizationWarning] = js.native
+  var Warnings: js.UndefOr[listOfSanitizationWarning] = js.undefined
 }
 object UpdateConfigurationResponse {
   

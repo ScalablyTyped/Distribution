@@ -2,19 +2,17 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapSegments extends StObject {
   
-  var capSegments: js.UndefOr[Double] = js.native
+  var capSegments: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var heightSegments: js.UndefOr[Double] = js.native
+  var heightSegments: js.UndefOr[Double] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object CapSegments {
   

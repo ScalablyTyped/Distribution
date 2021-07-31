@@ -6,23 +6,24 @@ import typings.reactMdStates.typesMod.RipplesOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useRipplesMod {
   
-  @JSImport("@react-md/states/types/ripples/useRipples", "useRipples")
+  @JSImport("@react-md/states/types/ripples/useRipples", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useRipples[E /* <: HTMLElement */](
     hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions: RipplesOptions[E]
-  ): ReturnValue[E] = js.native
+  ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRipples")(hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
-  @js.native
   trait ReturnValue[E /* <: HTMLElement */] extends StObject {
     
-    var handlers: MergableRippleHandlers[E] = js.native
+    var handlers: MergableRippleHandlers[E]
     
-    var ripples: ReactNode = js.native
+    var ripples: ReactNode
   }
   object ReturnValue {
     
@@ -33,7 +34,7 @@ object useRipplesMod {
     }
     
     @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue[_], E /* <: HTMLElement */] (val x: Self with ReturnValue[E]) extends AnyVal {
+    implicit class ReturnValueMutableBuilder[Self <: ReturnValue[?], E /* <: HTMLElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
       
       @scala.inline
       def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])

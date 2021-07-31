@@ -2,13 +2,11 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectAdministrators extends StObject {
   
-  var userId: Double = js.native
+  var userId: Double
 }
 object DeleteProjectAdministrators {
   

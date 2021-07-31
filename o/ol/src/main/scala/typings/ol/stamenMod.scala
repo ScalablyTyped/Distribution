@@ -4,7 +4,6 @@ import typings.ol.olTileMod.LoadFunction
 import typings.ol.olTileMod.Tile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stamenMod {
@@ -15,28 +14,27 @@ object stamenMod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var layer: String = js.native
+    var layer: String
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var tileLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

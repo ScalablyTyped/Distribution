@@ -3,36 +3,36 @@ package typings.jweixin.mod
 import typings.jweixin.anon.CardList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================微信卡券================================*/
-@js.native
-trait IchooseCard extends BaseParams {
+trait IchooseCard
+  extends StObject
+     with BaseParams {
   
   // 卡券类型
-  var cardId: String = js.native
+  var cardId: String
   
   // 签名方式，默认'SHA1'
-  var cardSign: String = js.native
+  var cardSign: String
   
   // 门店Id
-  var cardType: String = js.native
+  var cardType: String
   
   // 卡券签名时间戳
-  var nonceStr: String = js.native
+  var nonceStr: String
   
-  var shopId: String = js.native
+  var shopId: String
   
   // 卡券签名随机串
-  var signType: String = js.native
+  var signType: String
   
   // 卡券签名
   @JSName("success")
-  def success_MIchooseCard(res: CardList): Unit = js.native
+  def success_MIchooseCard(res: CardList): Unit
   
   // 卡券Id
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object IchooseCard {
   

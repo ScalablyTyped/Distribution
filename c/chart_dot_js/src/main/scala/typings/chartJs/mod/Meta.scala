@@ -3,30 +3,28 @@ package typings.chartJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
   @JSName("$filler")
-  var $filler: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var $filler: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var controller: StringDictionary[js.Any] = js.native
+  var controller: StringDictionary[js.Any]
   
-  var data: js.Array[MetaData] = js.native
+  var data: js.Array[MetaData]
   
-  var dataset: js.UndefOr[ChartDataSets] = js.native
+  var dataset: js.UndefOr[ChartDataSets] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var total: js.UndefOr[String] = js.native
+  var total: js.UndefOr[String] = js.undefined
   
-  var `type`: ChartType = js.native
+  var `type`: ChartType
   
-  var xAxisID: js.UndefOr[String] = js.native
+  var xAxisID: js.UndefOr[String] = js.undefined
   
-  var yAxisID: js.UndefOr[String] = js.native
+  var yAxisID: js.UndefOr[String] = js.undefined
 }
 object Meta {
   

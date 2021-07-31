@@ -4,7 +4,6 @@ import typings.openlayers.mod.events.Event
 import typings.openlayers.mod.events.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Observable")
@@ -95,16 +94,18 @@ class Observable () extends EventTarget {
 /* static members */
 object Observable {
   
-  @JSImport("openlayers", "Observable.unByKey")
+  @JSImport("openlayers", "Observable")
   @js.native
-  def unByKey(key: js.Array[EventsKey]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unByKey(key: js.Array[EventsKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Removes an event listener using the key returned by `on()` or `once()`.
     * @param key The key returned by `on()`
     *     or `once()` (or an array of keys).
     * @api stable
     */
-  @JSImport("openlayers", "Observable.unByKey")
-  @js.native
-  def unByKey(key: EventsKey): Unit = js.native
+  @scala.inline
+  def unByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -5,7 +5,6 @@ import typings.react.mod.ReactSVGElement
 import typings.react.mod.SVGProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,13 +16,14 @@ object mod {
   
   type IconBaseClass = Component[IconBaseProps, js.Object, js.Any]
   
-  @js.native
-  trait IconBaseProps extends SVGProps[ReactSVGElement] {
+  trait IconBaseProps
+    extends StObject
+       with SVGProps[ReactSVGElement] {
     
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
     
     @JSName("style")
-    var style_IconBaseProps: js.UndefOr[js.Any] = js.native
+    var style_IconBaseProps: js.UndefOr[js.Any] = js.undefined
   }
   object IconBaseProps {
     

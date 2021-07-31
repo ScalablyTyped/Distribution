@@ -2,35 +2,33 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alpha extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var blue: js.UndefOr[Double] = js.native
+  var blue: js.UndefOr[Double] = js.undefined
   
-  var green: js.UndefOr[Double] = js.native
+  var green: js.UndefOr[Double] = js.undefined
   
-  var maximumAlpha: js.UndefOr[Double] = js.native
+  var maximumAlpha: js.UndefOr[Double] = js.undefined
   
-  var maximumBlue: js.UndefOr[Double] = js.native
+  var maximumBlue: js.UndefOr[Double] = js.undefined
   
-  var maximumGreen: js.UndefOr[Double] = js.native
+  var maximumGreen: js.UndefOr[Double] = js.undefined
   
-  var maximumRed: js.UndefOr[Double] = js.native
+  var maximumRed: js.UndefOr[Double] = js.undefined
   
-  var minimumAlpha: js.UndefOr[Double] = js.native
+  var minimumAlpha: js.UndefOr[Double] = js.undefined
   
-  var minimumBlue: js.UndefOr[Double] = js.native
+  var minimumBlue: js.UndefOr[Double] = js.undefined
   
-  var minimumGreen: js.UndefOr[Double] = js.native
+  var minimumGreen: js.UndefOr[Double] = js.undefined
   
-  var minimumRed: js.UndefOr[Double] = js.native
+  var minimumRed: js.UndefOr[Double] = js.undefined
   
-  var red: js.UndefOr[Double] = js.native
+  var red: js.UndefOr[Double] = js.undefined
 }
 object Alpha {
   

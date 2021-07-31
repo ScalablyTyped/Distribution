@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ExecutionCapabilities extends StObject {
   
   /** Remote execution may only support a single digest function. */
-  var digestFunction: js.UndefOr[String] = js.native
+  var digestFunction: js.UndefOr[String] = js.undefined
   
   /** Whether remote execution is enabled for the particular server/instance. */
-  var execEnabled: js.UndefOr[Boolean] = js.native
+  var execEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Supported execution priority range. */
-  var executionPriorityCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2PriorityCapabilities] = js.native
+  var executionPriorityCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2PriorityCapabilities] = js.undefined
   
   /** Supported node properties. */
-  var supportedNodeProperties: js.UndefOr[js.Array[String]] = js.native
+  var supportedNodeProperties: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecutionCapabilities {
   

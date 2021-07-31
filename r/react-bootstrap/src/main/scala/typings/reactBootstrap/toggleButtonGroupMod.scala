@@ -12,7 +12,6 @@ import typings.reactBootstrap.reactBootstrapStrings.radio
 import typings.reactBootstrap.reactBootstrapStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleButtonGroupMod {
@@ -22,20 +21,19 @@ object toggleButtonGroupMod {
   class ^ ()
     extends Component[ToggleButtonGroupProps, js.Object, js.Any]
   
-  @js.native
   trait BaseProps extends StObject {
     
     /**
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object BaseProps {
     
@@ -62,21 +60,20 @@ object toggleButtonGroupMod {
     }
   }
   
-  @js.native
   trait CheckboxProps extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[_], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[js.Any], Unit]] = js.undefined
     
-    var `type`: checkbox = js.native
+    var `type`: checkbox
   }
   object CheckboxProps {
     
     @scala.inline
-    def apply(`type`: checkbox): CheckboxProps = {
+    def apply(): CheckboxProps = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("checkbox")
       __obj.asInstanceOf[CheckboxProps]
     }
     
@@ -90,7 +87,7 @@ object toggleButtonGroupMod {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* values */ js.Array[_] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* values */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -100,22 +97,21 @@ object toggleButtonGroupMod {
     }
   }
   
-  @js.native
   trait RadioProps extends StObject {
     
     /** Required if `type` is set to "radio" */
-    var name: String = js.native
+    var name: String
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var `type`: radio = js.native
+    var `type`: radio
   }
   object RadioProps {
     
     @scala.inline
-    def apply(name: String, `type`: radio): RadioProps = {
+    def apply(name: String): RadioProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("radio")
       __obj.asInstanceOf[RadioProps]
     }
     
@@ -140,5 +136,5 @@ object toggleButtonGroupMod {
   trait ToggleButtonGroup
     extends Component[ToggleButtonGroupProps, js.Object, js.Any]
   
-  type ToggleButtonGroupProps = BaseProps with (RadioProps | CheckboxProps) with (Omit[ButtonGroupProps, onChange]) with (Omit[HTMLProps[ToggleButtonGroup], defaultValue | `type` | value | onChange])
+  type ToggleButtonGroupProps = BaseProps & (RadioProps | CheckboxProps) & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[ToggleButtonGroup], defaultValue | `type` | value | onChange])
 }

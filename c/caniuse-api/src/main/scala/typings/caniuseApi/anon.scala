@@ -2,23 +2,21 @@ package typings.caniuseApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var n: js.UndefOr[Double] = js.native
+    var n: js.UndefOr[Double] = js.undefined
     
-    var p: js.UndefOr[Double] = js.native
+    var p: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object A {
     

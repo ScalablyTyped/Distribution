@@ -2,13 +2,13 @@ package typings.winrtUwp.global.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.System.TimeZoneSettings")
 @js.native
 abstract class TimeZoneSettings ()
-  extends typings.winrtUwp.Windows.System.TimeZoneSettings
+  extends StObject
+     with typings.winrtUwp.Windows.System.TimeZoneSettings
 object TimeZoneSettings {
   
   @JSGlobal("Windows.System.TimeZoneSettings")

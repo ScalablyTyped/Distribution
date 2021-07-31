@@ -3,28 +3,26 @@ package typings.algoliaTransporter
 import typings.algoliaTransporter.mod.CallType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accept extends StObject {
     
     /**
       * The type of host. Defaults to `Any`.
       */
-    val accept: js.UndefOr[CallType] = js.native
+    val accept: js.UndefOr[CallType] = js.undefined
     
     /**
       * The protocol. Defaults to `https`.
       */
-    val protocol: js.UndefOr[String] = js.native
+    val protocol: js.UndefOr[String] = js.undefined
     
     /**
       * The url of the server, without the protocol.
       */
-    val url: String = js.native
+    val url: String
   }
   object Accept {
     

@@ -5,10 +5,8 @@ import typings.kiiCloudSdk.KiiCloud.KiiGroup
 import typings.kiiCloudSdk.KiiCloud.KiiUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureSuccess extends StObject {
   
   def failure(
@@ -16,9 +14,9 @@ trait FailureSuccess extends StObject {
     anErrorString: String,
     addMembersArray: js.Array[KiiUser],
     removeMembersArray: js.Array[KiiUser]
-  ): js.Any = js.native
+  ): js.Any
   
-  def success(adminContext: KiiAppAdminContext): js.Any = js.native
+  def success(adminContext: KiiAppAdminContext): js.Any
 }
 object FailureSuccess {
   

@@ -2,29 +2,29 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapCalendarEventMap extends BootstrapClientEditEventMap {
+trait BootstrapCalendarEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var customDisabledDate: CalendarCustomDisabledDateEventArgs = js.native
+  var customDisabledDate: CalendarCustomDisabledDateEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var keyDown: EditKeyEventArgs = js.native
+  var keyDown: EditKeyEventArgs
   
-  var keyPress: EditKeyEventArgs = js.native
+  var keyPress: EditKeyEventArgs
   
-  var keyUp: EditKeyEventArgs = js.native
+  var keyUp: EditKeyEventArgs
   
-  var selectionChanged: ProcessingModeEventArgs = js.native
+  var selectionChanged: ProcessingModeEventArgs
   
-  var visibleMonthChanged: ProcessingModeEventArgs = js.native
+  var visibleMonthChanged: ProcessingModeEventArgs
 }
 object BootstrapCalendarEventMap {
   

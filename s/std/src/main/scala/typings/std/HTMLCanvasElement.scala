@@ -6,13 +6,13 @@ import typings.std.stdStrings.webgl
 import typings.std.stdStrings.webgl2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties and methods for manipulating the layout and presentation of <canvas> elements. The HTMLCanvasElement interface also inherits the properties and methods of the HTMLElement interface. */
 @js.native
 trait HTMLCanvasElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with CanvasImageSource
      with TexImageSource {
   
@@ -67,18 +67,18 @@ trait HTMLCanvasElement
   ): Unit = js.native
   
   def toBlob(callback: BlobCallback): Unit = js.native
-  def toBlob(callback: BlobCallback, `type`: js.UndefOr[scala.Nothing], quality: js.Any): Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String): Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String, quality: js.Any): Unit = js.native
+  def toBlob(callback: BlobCallback, `type`: Unit, quality: js.Any): Unit = js.native
   
   /**
     * Returns the content of the current canvas as an image that you can use as a source for another canvas or an HTML element.
     * @param type The standard MIME type for the image format to return. If you do not specify this parameter, the default value is a PNG format image.
     */
   def toDataURL(): java.lang.String = js.native
-  def toDataURL(`type`: js.UndefOr[scala.Nothing], quality: js.Any): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String, quality: js.Any): java.lang.String = js.native
+  def toDataURL(`type`: Unit, quality: js.Any): java.lang.String = js.native
   
   def transferControlToOffscreen(): OffscreenCanvas = js.native
   

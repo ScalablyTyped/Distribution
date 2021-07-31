@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.astInFuture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AstInFutureEvent extends Event {
+trait AstInFutureEvent
+  extends StObject
+     with Event {
   
-  var delay: Double = js.native
+  var delay: Double
   
   @JSName("type")
-  var type_AstInFutureEvent: astInFuture = js.native
+  var type_AstInFutureEvent: astInFuture
 }
 object AstInFutureEvent {
   
   @scala.inline
-  def apply(delay: Double, `type`: astInFuture): AstInFutureEvent = {
+  def apply(delay: Double): AstInFutureEvent = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("astInFuture")
     __obj.asInstanceOf[AstInFutureEvent]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentLink extends StObject {
   
   /**
     * The name of the linked environment (the dependency).
     */
-  var EnvironmentName: js.UndefOr[String] = js.native
+  var EnvironmentName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the link.
     */
-  var LinkName: js.UndefOr[String] = js.native
+  var LinkName: js.UndefOr[String] = js.undefined
 }
 object EnvironmentLink {
   

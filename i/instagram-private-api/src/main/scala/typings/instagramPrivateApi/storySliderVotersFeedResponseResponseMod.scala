@@ -2,25 +2,23 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storySliderVotersFeedResponseResponseMod {
   
-  @js.native
   trait StorySliderVotersFeedResponseResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object StorySliderVotersFeedResponseResponseFriendshipStatus {
     
@@ -60,12 +58,11 @@ object storySliderVotersFeedResponseResponseMod {
     }
   }
   
-  @js.native
   trait StorySliderVotersFeedResponseResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var voter_info: StorySliderVotersFeedResponseResponseVoterInfo = js.native
+    var voter_info: StorySliderVotersFeedResponseResponseVoterInfo
   }
   object StorySliderVotersFeedResponseResponseRootObject {
     
@@ -86,24 +83,23 @@ object storySliderVotersFeedResponseResponseMod {
     }
   }
   
-  @js.native
   trait StorySliderVotersFeedResponseResponseUser extends StObject {
     
-    var friendship_status: StorySliderVotersFeedResponseResponseFriendshipStatus = js.native
+    var friendship_status: StorySliderVotersFeedResponseResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object StorySliderVotersFeedResponseResponseUser {
     
@@ -151,18 +147,17 @@ object storySliderVotersFeedResponseResponseMod {
     }
   }
   
-  @js.native
   trait StorySliderVotersFeedResponseResponseVoterInfo extends StObject {
     
-    var latest_slider_vote_time: Double = js.native
+    var latest_slider_vote_time: Double
     
-    var max_id: Null = js.native
+    var max_id: Null
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var slider_id: String = js.native
+    var slider_id: String
     
-    var voters: js.Array[StorySliderVotersFeedResponseResponseVotersItem] = js.native
+    var voters: js.Array[StorySliderVotersFeedResponseResponseVotersItem]
   }
   object StorySliderVotersFeedResponseResponseVoterInfo {
     
@@ -201,14 +196,13 @@ object storySliderVotersFeedResponseResponseMod {
     }
   }
   
-  @js.native
   trait StorySliderVotersFeedResponseResponseVotersItem extends StObject {
     
-    var ts: Double = js.native
+    var ts: Double
     
-    var user: StorySliderVotersFeedResponseResponseUser = js.native
+    var user: StorySliderVotersFeedResponseResponseUser
     
-    var vote: Double = js.native
+    var vote: Double
   }
   object StorySliderVotersFeedResponseResponseVotersItem {
     

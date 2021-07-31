@@ -2,17 +2,15 @@ package typings.aframe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSequence extends StObject {
   
   /* static member */
-  var _nextId: js.Any = js.native
+  var _nextId: js.Any
   
   /* static member */
-  def nextId(): Double = js.native
+  def nextId(): Double
 }
 object TypeofSequence {
   

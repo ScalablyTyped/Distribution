@@ -7,37 +7,37 @@ import typings.mergeImg.mergeImgStrings.start
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("merge-img", JSImport.Default)
+  @JSImport("merge-img", JSImport.Namespace)
   @js.native
-  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp]): js.Promise[DepreciatedJimp] = js.native
-  @JSImport("merge-img", JSImport.Default)
-  @js.native
-  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp], options: Options): js.Promise[DepreciatedJimp] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp]): js.Promise[DepreciatedJimp] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepreciatedJimp]]
+  @scala.inline
+  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp], options: Options): js.Promise[DepreciatedJimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DepreciatedJimp]]
+  
   trait ImageDescriptor extends StObject {
     
     /**
       * x offset to affect this image
       * @default 0
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * y offset to affect this image
       * @default 0
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /**
       * A single image source to concat
       */
-    var src: String | Buffer = js.native
+    var src: String | Buffer
   }
   object ImageDescriptor {
     
@@ -67,32 +67,31 @@ object mod {
     }
   }
   
-  @js.native
   trait MarginOptions extends StObject {
     
     /**
       * Margin on bottom side of result image
       * @default 0
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /**
       * Margin on left side of result image
       * @default 0
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * Margin on right side of result image
       * @default 0
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /**
       * Margin on top side of result image
       * @default 0
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object MarginOptions {
     
@@ -131,40 +130,39 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Aligning of given images. If the images are not all the same size, images will be sorted to largest image
       * @default 'start'
       */
-    var align: js.UndefOr[start | center | end] = js.native
+    var align: js.UndefOr[start | center | end] = js.undefined
     
     /**
       * Default background color represented by RGBA hex value.
       * @default 0x00000000
       */
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
     /**
       * Direction of the merged image. If this value is true, the images will be merged vertically (column).
       * Otherwise, the images will be merged horizontally (row)
       * @default false
       */
-    var direction: js.UndefOr[Boolean] = js.native
+    var direction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Margin of the result image.
       * If `number` or `string` is passed, it will be considered as standard
       * css shorthand properties (e.g. '40 40 0 10')
       */
-    var margin: js.UndefOr[Double | String | MarginOptions] = js.native
+    var margin: js.UndefOr[Double | String | MarginOptions] = js.undefined
     
     /**
       * Offset in pixels between each image
       * @default 0
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

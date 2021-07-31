@@ -2,37 +2,35 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitOptions extends StObject {
   
-  var URI: js.UndefOr[String] = js.native
+  var URI: js.UndefOr[String] = js.undefined
   
-  var callTimeout: js.UndefOr[Double] = js.native
+  var callTimeout: js.UndefOr[Double] = js.undefined
   
-  var callback: js.UndefOr[CbCallback] = js.native
+  var callback: js.UndefOr[CbCallback] = js.undefined
   
-  var defaultQoS: js.UndefOr[MessagingQOS] = js.native
+  var defaultQoS: js.UndefOr[MessagingQOS] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var logging: js.UndefOr[Boolean] = js.native
+  var logging: js.UndefOr[Boolean] = js.undefined
   
-  var messagingPort: js.UndefOr[Double] = js.native
+  var messagingPort: js.UndefOr[Double] = js.undefined
   
-  var messagingURI: js.UndefOr[String] = js.native
+  var messagingURI: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var registerUser: js.UndefOr[Boolean] = js.native
+  var registerUser: js.UndefOr[Boolean] = js.undefined
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  var useUser: js.UndefOr[APIUser] = js.native
+  var useUser: js.UndefOr[APIUser] = js.undefined
 }
 object InitOptions {
   

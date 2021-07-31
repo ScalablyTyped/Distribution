@@ -3,10 +3,8 @@ package typings.vscode.anon
 import typings.vscode.mod.WebviewPanelOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportsMultipleEditorsPerDocument extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait SupportsMultipleEditorsPerDocument extends StObject {
     * editor. In this case, the custom editor must make sure it can properly synchronize the states of all
     * editor instances for a resource so that they are consistent.
     */
-  val supportsMultipleEditorsPerDocument: js.UndefOr[Boolean] = js.native
+  val supportsMultipleEditorsPerDocument: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Content settings for the webview panels created for this custom editor.
     */
-  val webviewOptions: js.UndefOr[WebviewPanelOptions] = js.native
+  val webviewOptions: js.UndefOr[WebviewPanelOptions] = js.undefined
 }
 object SupportsMultipleEditorsPerDocument {
   

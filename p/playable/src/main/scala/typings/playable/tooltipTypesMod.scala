@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipTypesMod {
@@ -16,33 +15,36 @@ object tooltipTypesMod {
   object TooltipPositionPlacement extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TooltipPositionPlacement with String] = js.native
+    def apply(value: String): js.UndefOr[TooltipPositionPlacement & String] = js.native
     
     @js.native
-    sealed trait BOTTOM extends TooltipPositionPlacement
-    /* "bottom" */ val BOTTOM: typings.playable.tooltipTypesMod.TooltipPositionPlacement.BOTTOM with String = js.native
+    sealed trait BOTTOM
+      extends StObject
+         with TooltipPositionPlacement
+    /* "bottom" */ val BOTTOM: typings.playable.tooltipTypesMod.TooltipPositionPlacement.BOTTOM & String = js.native
     
     @js.native
-    sealed trait TOP extends TooltipPositionPlacement
-    /* "top" */ val TOP: typings.playable.tooltipTypesMod.TooltipPositionPlacement.TOP with String = js.native
+    sealed trait TOP
+      extends StObject
+         with TooltipPositionPlacement
+    /* "top" */ val TOP: typings.playable.tooltipTypesMod.TooltipPositionPlacement.TOP & String = js.native
   }
   
-  @js.native
   trait ITooltip extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    def setStyle(style: StringDictionary[String | Double]): Unit = js.native
+    def setStyle(style: StringDictionary[String | Double]): Unit
     
-    def setText(text: String): Unit = js.native
+    def setText(text: String): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ITooltip {
     
@@ -86,12 +88,11 @@ object tooltipTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipPosition extends StObject {
     
-    var placement: TooltipPositionPlacement = js.native
+    var placement: TooltipPositionPlacement
     
-    var x: Double = js.native
+    var x: Double
   }
   object ITooltipPosition {
     
@@ -114,24 +115,23 @@ object tooltipTypesMod {
   
   type ITooltipPositionFunction = js.Function1[/* tooltipContainerElement */ HTMLElement, ITooltipPosition]
   
-  @js.native
   trait ITooltipReference extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disable(): Unit = js.native
+    def disable(): Unit
     
-    def enable(): Unit = js.native
+    def enable(): Unit
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isDisabled: Boolean = js.native
+    var isDisabled: Boolean
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    def setText(text: String): Unit = js.native
+    def setText(text: String): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ITooltipReference {
     
@@ -179,12 +179,11 @@ object tooltipTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipReferenceOptions extends StObject {
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ITooltipReferenceOptions {
     
@@ -211,22 +210,21 @@ object tooltipTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipService extends StObject {
     
-    def createReference(reference: HTMLElement, options: ITooltipReferenceOptions): ITooltipReference = js.native
+    def createReference(reference: HTMLElement, options: ITooltipReferenceOptions): ITooltipReference
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    def setText(text: String): Unit = js.native
+    def setText(text: String): Unit
     
-    def show(options: ITooltipShowOptions): Unit = js.native
+    def show(options: ITooltipShowOptions): Unit
     
-    var tooltipContainerElement: HTMLElement = js.native
+    var tooltipContainerElement: HTMLElement
   }
   object ITooltipService {
     
@@ -270,14 +268,13 @@ object tooltipTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipShowOptions extends StObject {
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var position: ITooltipPosition | ITooltipPositionFunction = js.native
+    var position: ITooltipPosition | ITooltipPositionFunction
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ITooltipShowOptions {
     
@@ -310,18 +307,17 @@ object tooltipTypesMod {
     }
   }
   
-  @js.native
   trait ITooltipStyles extends StObject {
     
-    var showAsElement: String = js.native
+    var showAsElement: String
     
-    var showAsText: String = js.native
+    var showAsText: String
     
-    var tooltip: String = js.native
+    var tooltip: String
     
-    var tooltipInner: String = js.native
+    var tooltipInner: String
     
-    var tooltipVisible: String = js.native
+    var tooltipVisible: String
   }
   object ITooltipStyles {
     

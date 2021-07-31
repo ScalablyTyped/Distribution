@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesCorsruleMod.UnmarshalledCORSRule
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCorsconfigurationMod {
   
-  @js.native
   trait CORSConfiguration extends StObject {
     
     /**
       * _CORSRules shape
       */
-    var CORSRules: js.Array[CORSRule] | Iterable[CORSRule] = js.native
+    var CORSRules: js.Array[CORSRule] | Iterable[CORSRule]
   }
   object CORSConfiguration {
     
@@ -37,14 +35,15 @@ object typesCorsconfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCORSConfiguration extends CORSConfiguration {
+  trait UnmarshalledCORSConfiguration
+    extends StObject
+       with CORSConfiguration {
     
     /**
       * _CORSRules shape
       */
     @JSName("CORSRules")
-    var CORSRules_UnmarshalledCORSConfiguration: js.Array[UnmarshalledCORSRule] = js.native
+    var CORSRules_UnmarshalledCORSConfiguration: js.Array[UnmarshalledCORSRule]
   }
   object UnmarshalledCORSConfiguration {
     

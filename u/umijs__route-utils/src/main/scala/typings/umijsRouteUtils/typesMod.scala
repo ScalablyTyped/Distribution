@@ -4,34 +4,33 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.umijsRouteUtils.umijsRouteUtilsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MenuDataItem
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[js.Array[MenuDataItem]] = js.native
+    var children: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
-    var hideChildrenInMenu: js.UndefOr[Boolean] = js.native
+    var hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined
     
-    var hideInMenu: js.UndefOr[Boolean] = js.native
+    var hideInMenu: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String | `false`] = js.native
+    var locale: js.UndefOr[String | `false`] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parentKeys: js.UndefOr[js.Array[String]] = js.native
+    var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pro_layout_parentKeys: js.UndefOr[js.Array[String]] = js.native
+    var pro_layout_parentKeys: js.UndefOr[js.Array[String]] = js.undefined
   }
   object MenuDataItem {
     
@@ -115,14 +114,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MessageDescriptor extends StObject {
     
-    var defaultMessage: js.UndefOr[String] = js.native
+    var defaultMessage: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var id: js.Any = js.native
+    var id: js.Any
   }
   object MessageDescriptor {
     
@@ -152,10 +150,11 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait Route extends MenuDataItem {
+  trait Route
+    extends StObject
+       with MenuDataItem {
     
-    var routes: js.UndefOr[js.Array[Route]] = js.native
+    var routes: js.UndefOr[js.Array[Route]] = js.undefined
   }
   object Route {
     

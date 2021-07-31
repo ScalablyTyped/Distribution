@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
-  var groups: StringDictionary[Double] = js.native
+  var groups: StringDictionary[Double]
   
-  var re: RegExp = js.native
+  var re: RegExp
 }
 object Groups {
   

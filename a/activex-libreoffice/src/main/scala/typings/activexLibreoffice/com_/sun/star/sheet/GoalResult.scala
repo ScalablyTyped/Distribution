@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the result of a goal seek operation. */
-@js.native
 trait GoalResult extends StObject {
   
   /** the amount by which the result changed in the last iteration. */
-  var Divergence: Double = js.native
+  var Divergence: Double
   
   /** the resulting value. */
-  var Result: Double = js.native
+  var Result: Double
 }
 object GoalResult {
   

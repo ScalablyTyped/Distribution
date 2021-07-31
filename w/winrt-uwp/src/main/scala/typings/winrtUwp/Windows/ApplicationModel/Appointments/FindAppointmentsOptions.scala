@@ -2,23 +2,21 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of options that modifies a query for appointments. */
-@js.native
 trait FindAppointmentsOptions extends StObject {
   
-  var calendarIds: js.Any = js.native
+  var calendarIds: js.Any
   
   /* unmapped type */
-  var fetchProperties: js.Any = js.native
+  var fetchProperties: js.Any
   
   /* unmapped type */
-  var includeHidden: js.Any = js.native
+  var includeHidden: js.Any
   
   /* unmapped type */
-  var maxCount: js.Any = js.native
+  var maxCount: js.Any
 }
 object FindAppointmentsOptions {
   

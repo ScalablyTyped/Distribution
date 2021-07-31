@@ -7,16 +7,17 @@ import typings.inquirer.anon.Ui
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inquirer extends PromptModuleBase {
+trait Inquirer
+  extends StObject
+     with PromptModuleBase {
   
   /**
     * Represents a choice-item separator.
     */
-  var Separator: TypeofSeparator with (Instantiable1[/* line */ js.UndefOr[String], typings.inquirer.separatorMod.^]) = js.native
+  var Separator: TypeofSeparator & (Instantiable1[/* line */ js.UndefOr[String], typings.inquirer.separatorMod.^]) = js.native
   
   /**
     * Creates a prompt-module.
@@ -36,8 +37,8 @@ trait Inquirer extends PromptModuleBase {
   /**
     * The default prompt-module.
     */
-  def prompt[T](questions: QuestionCollection[T]): js.Promise[T] with Ui = js.native
-  def prompt[T](questions: QuestionCollection[T], initialAnswers: Partial[T]): js.Promise[T] with Ui = js.native
+  def prompt[T](questions: QuestionCollection[T]): js.Promise[T] & Ui = js.native
+  def prompt[T](questions: QuestionCollection[T], initialAnswers: Partial[T]): js.Promise[T] & Ui = js.native
   /**
     * The default prompt-module.
     */

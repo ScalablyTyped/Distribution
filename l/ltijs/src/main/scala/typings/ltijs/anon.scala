@@ -4,17 +4,15 @@ import typings.ltijs.idTokenMod.IdToken
 import typings.ltijs.platformMod.PlatformContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cert extends StObject {
     
-    var cert: String = js.native
+    var cert: String
     
-    var key: String = js.native
+    var key: String
   }
   object Cert {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var context: js.UndefOr[PlatformContext] = js.native
+    var context: js.UndefOr[PlatformContext] = js.undefined
     
-    var token: js.UndefOr[IdToken] = js.native
+    var token: js.UndefOr[IdToken] = js.undefined
   }
   object Context {
     
@@ -67,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var iv: String = js.native
+    var iv: String
   }
   object Data {
     
@@ -93,14 +89,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Documenttarget extends StObject {
     
-    var document_target: String = js.native
+    var document_target: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var return_url: String = js.native
+    var return_url: String
   }
   object Documenttarget {
     
@@ -124,14 +119,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var label: String = js.native
+    var label: String
     
-    var title: String = js.native
+    var title: String
   }
   object Id {
     
@@ -155,18 +149,17 @@ object anon {
     }
   }
   
-  @js.native
   trait KeepAlive extends StObject {
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var keepAliveInitialDelay: js.UndefOr[Double] = js.native
+    var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
-    var pass: String = js.native
+    var pass: String
     
-    var useNewUrlParser: js.UndefOr[Boolean] = js.native
+    var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
     
-    var user: String = js.native
+    var user: String
   }
   object KeepAlive {
     
@@ -205,22 +198,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var label: String = js.native
+    var label: String
     
-    var title: String = js.native
+    var title: String
     
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    var `type`: js.Array[_] = js.native
+    var `type`: js.Array[js.Any]
   }
   object Label {
     
     @scala.inline
-    def apply(id: String, label: String, title: String, `type`: js.Array[_]): Label = {
+    def apply(id: String, label: String, title: String, `type`: js.Array[js.Any]): Label = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
@@ -239,21 +231,20 @@ object anon {
       def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: js.Array[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait LineItem extends StObject {
     
-    var lineItem: String = js.native
+    var lineItem: String
     
-    var lineItems: String = js.native
+    var lineItems: String
     
-    var scope: js.Array[String] = js.native
+    var scope: js.Array[String]
   }
   object LineItem {
     
@@ -280,12 +271,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var route: String = js.native
+    var route: String
   }
   object Method {
     
@@ -306,12 +296,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SameSite extends StObject {
     
-    var sameSite: js.UndefOr[String] = js.native
+    var sameSite: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object SameSite {
     
@@ -338,12 +327,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Title extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var title: String = js.native
+    var title: String
   }
   object Title {
     

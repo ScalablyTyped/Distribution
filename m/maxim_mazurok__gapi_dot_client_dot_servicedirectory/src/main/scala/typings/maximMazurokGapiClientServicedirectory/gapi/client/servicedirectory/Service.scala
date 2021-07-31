@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /** Output only. Endpoints associated with this service. Returned on LookupService.Resolve. Control plane clients should use RegistrationService.ListEndpoints. */
-  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.native
+  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.undefined
   
   /**
     * Optional. Metadata for the service. This data can be consumed by service clients. Restrictions: - The entire metadata dictionary may contain up to 2000 characters, spread accoss all
@@ -23,11 +21,11 @@ trait Service extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Service with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Service & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Immutable. The resource name for the service in the format 'projects/∗/locations/∗/namespaces/∗/services/ *'. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Service {
   
@@ -53,7 +51,7 @@ object Service {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Service with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Service & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentElementViewModelProperties extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait MomentElementViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#state)
     */
-  var state: js.UndefOr[ready] = js.native
+  var state: js.UndefOr[ready] = js.undefined
   
   /**
     * The selected date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#value)
     */
-  var value: js.UndefOr[DateProperties] = js.native
+  var value: js.UndefOr[DateProperties] = js.undefined
 }
 object MomentElementViewModelProperties {
   

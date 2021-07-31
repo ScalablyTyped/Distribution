@@ -6,38 +6,36 @@ import typings.awsSdkClientDynamodbNode.typesCapacityMod.UnmarshalledCapacity
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesConsumedCapacityMod {
   
-  @js.native
   trait ConsumedCapacity extends StObject {
     
     /**
       * <p>The total number of capacity units consumed by the operation.</p>
       */
-    var CapacityUnits: js.UndefOr[Double] = js.native
+    var CapacityUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on each global index affected by the operation.</p>
       */
-    var GlobalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.native
+    var GlobalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on each local index affected by the operation.</p>
       */
-    var LocalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.native
+    var LocalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on the table affected by the operation.</p>
       */
-    var Table: js.UndefOr[Capacity] = js.native
+    var Table: js.UndefOr[Capacity] = js.undefined
     
     /**
       * <p>The name of the table that was affected by the operation.</p>
       */
-    var TableName: js.UndefOr[String] = js.native
+    var TableName: js.UndefOr[String] = js.undefined
   }
   object ConsumedCapacity {
     
@@ -82,26 +80,27 @@ object typesConsumedCapacityMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledConsumedCapacity extends ConsumedCapacity {
+  trait UnmarshalledConsumedCapacity
+    extends StObject
+       with ConsumedCapacity {
     
     /**
       * <p>The amount of throughput consumed on each global index affected by the operation.</p>
       */
     @JSName("GlobalSecondaryIndexes")
-    var GlobalSecondaryIndexes_UnmarshalledConsumedCapacity: js.UndefOr[StringDictionary[UnmarshalledCapacity]] = js.native
+    var GlobalSecondaryIndexes_UnmarshalledConsumedCapacity: js.UndefOr[StringDictionary[UnmarshalledCapacity]] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on each local index affected by the operation.</p>
       */
     @JSName("LocalSecondaryIndexes")
-    var LocalSecondaryIndexes_UnmarshalledConsumedCapacity: js.UndefOr[StringDictionary[UnmarshalledCapacity]] = js.native
+    var LocalSecondaryIndexes_UnmarshalledConsumedCapacity: js.UndefOr[StringDictionary[UnmarshalledCapacity]] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on the table affected by the operation.</p>
       */
     @JSName("Table")
-    var Table_UnmarshalledConsumedCapacity: js.UndefOr[UnmarshalledCapacity] = js.native
+    var Table_UnmarshalledConsumedCapacity: js.UndefOr[UnmarshalledCapacity] = js.undefined
   }
   object UnmarshalledConsumedCapacity {
     

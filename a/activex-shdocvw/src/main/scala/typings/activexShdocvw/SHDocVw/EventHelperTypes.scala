@@ -17,29 +17,27 @@ import typings.activexShdocvw.activexShdocvwStrings.strName
 import typings.activexShdocvw.activexShdocvwStrings.strUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type InternetExplorerBeforeNavigate2ArgNames = js.Tuple7[pDisp, URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait InternetExplorerBeforeNavigate2Parameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: js.Any = js.native
+    val Flags: js.Any
     
-    val Headers: js.Any = js.native
+    val Headers: js.Any
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: js.Any = js.native
+    val TargetFrameName: js.Any
     
-    val URL: js.Any = js.native
+    val URL: js.Any
     
-    val pDisp: js.Any = js.native
+    val pDisp: js.Any
   }
   object InternetExplorerBeforeNavigate2Parameter {
     
@@ -85,22 +83,21 @@ object EventHelperTypes {
   
   type InternetExplorerMediumBeforeNavigate2ArgNames = js.Tuple7[pDisp, URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait InternetExplorerMediumBeforeNavigate2Parameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: js.Any = js.native
+    val Flags: js.Any
     
-    val Headers: js.Any = js.native
+    val Headers: js.Any
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: js.Any = js.native
+    val TargetFrameName: js.Any
     
-    val URL: js.Any = js.native
+    val URL: js.Any
     
-    val pDisp: js.Any = js.native
+    val pDisp: js.Any
   }
   object InternetExplorerMediumBeforeNavigate2Parameter {
     
@@ -146,22 +143,21 @@ object EventHelperTypes {
   
   type ShellBrowserWindowBeforeNavigate2ArgNames = js.Tuple7[pDisp, URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait ShellBrowserWindowBeforeNavigate2Parameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: js.Any = js.native
+    val Flags: js.Any
     
-    val Headers: js.Any = js.native
+    val Headers: js.Any
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: js.Any = js.native
+    val TargetFrameName: js.Any
     
-    val URL: js.Any = js.native
+    val URL: js.Any
     
-    val pDisp: js.Any = js.native
+    val pDisp: js.Any
   }
   object ShellBrowserWindowBeforeNavigate2Parameter {
     
@@ -207,22 +203,21 @@ object EventHelperTypes {
   
   type ShellNameSpaceFavoritesSelectionChangeArgNames = js.Tuple7[cItems, hItem, strName, strUrl, cVisits, strDate, fAvailableOffline]
   
-  @js.native
   trait ShellNameSpaceFavoritesSelectionChangeParameter extends StObject {
     
-    val cItems: Double = js.native
+    val cItems: Double
     
-    val cVisits: Double = js.native
+    val cVisits: Double
     
-    val fAvailableOffline: Double = js.native
+    val fAvailableOffline: Double
     
-    val hItem: Double = js.native
+    val hItem: Double
     
-    val strDate: String = js.native
+    val strDate: String
     
-    val strName: String = js.native
+    val strName: String
     
-    val strUrl: String = js.native
+    val strUrl: String
   }
   object ShellNameSpaceFavoritesSelectionChangeParameter {
     
@@ -268,22 +263,21 @@ object EventHelperTypes {
   
   type WebBrowserBeforeNavigate2ArgNames = js.Tuple7[pDisp, URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait WebBrowserBeforeNavigate2Parameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: js.Any = js.native
+    val Flags: js.Any
     
-    val Headers: js.Any = js.native
+    val Headers: js.Any
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: js.Any = js.native
+    val TargetFrameName: js.Any
     
-    val URL: js.Any = js.native
+    val URL: js.Any
     
-    val pDisp: js.Any = js.native
+    val pDisp: js.Any
   }
   object WebBrowserBeforeNavigate2Parameter {
     
@@ -329,20 +323,19 @@ object EventHelperTypes {
   
   type WebBrowserV1BeforeNavigateArgNames = js.Tuple6[URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait WebBrowserV1BeforeNavigateParameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: Double = js.native
+    val Flags: Double
     
-    val Headers: String = js.native
+    val Headers: String
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: String = js.native
+    val TargetFrameName: String
     
-    val URL: String = js.native
+    val URL: String
   }
   object WebBrowserV1BeforeNavigateParameter {
     
@@ -384,20 +377,19 @@ object EventHelperTypes {
   
   type WebBrowserV1FrameBeforeNavigateArgNames = js.Tuple6[URL, Flags, TargetFrameName, PostData, Headers, Cancel]
   
-  @js.native
   trait WebBrowserV1FrameBeforeNavigateParameter extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Flags: Double = js.native
+    val Flags: Double
     
-    val Headers: String = js.native
+    val Headers: String
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    val TargetFrameName: String = js.native
+    val TargetFrameName: String
     
-    val URL: String = js.native
+    val URL: String
   }
   object WebBrowserV1FrameBeforeNavigateParameter {
     
@@ -439,20 +431,19 @@ object EventHelperTypes {
   
   type WebBrowserV1FrameNewWindowArgNames = js.Tuple6[URL, Flags, TargetFrameName, PostData, Headers, Processed]
   
-  @js.native
   trait WebBrowserV1FrameNewWindowParameter extends StObject {
     
-    val Flags: Double = js.native
+    val Flags: Double
     
-    val Headers: String = js.native
+    val Headers: String
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    var Processed: Boolean = js.native
+    var Processed: Boolean
     
-    val TargetFrameName: String = js.native
+    val TargetFrameName: String
     
-    val URL: String = js.native
+    val URL: String
   }
   object WebBrowserV1FrameNewWindowParameter {
     
@@ -494,20 +485,19 @@ object EventHelperTypes {
   
   type WebBrowserV1NewWindowArgNames = js.Tuple6[URL, Flags, TargetFrameName, PostData, Headers, Processed]
   
-  @js.native
   trait WebBrowserV1NewWindowParameter extends StObject {
     
-    val Flags: Double = js.native
+    val Flags: Double
     
-    val Headers: String = js.native
+    val Headers: String
     
-    val PostData: js.Any = js.native
+    val PostData: js.Any
     
-    var Processed: Boolean = js.native
+    var Processed: Boolean
     
-    val TargetFrameName: String = js.native
+    val TargetFrameName: String
     
-    val URL: String = js.native
+    val URL: String
   }
   object WebBrowserV1NewWindowParameter {
     

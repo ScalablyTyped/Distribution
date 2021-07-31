@@ -4,27 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jjv.anon.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Env = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Env]
+  
   @JSImport("jjv", JSImport.Namespace)
   @js.native
-  def apply(): Env = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Env extends StObject {
     
-    def addCheck(name: String, check: js.Function2[/* input */ js.Any, /* comparator */ js.Any, _]): Unit = js.native
+    def addCheck(name: String, check: js.Function2[/* input */ js.Any, /* comparator */ js.Any, js.Any]): Unit = js.native
     
-    def addFormat(name: String, parse: js.Function1[/* input */ js.Any, _]): Unit = js.native
+    def addFormat(name: String, parse: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
     
     def addSchema(name: String, schema: js.Object): Unit = js.native
     
-    def addType(name: String, parse: js.Function1[/* input */ js.Any, _]): Unit = js.native
+    def addType(name: String, parse: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
     
-    def addTypeCoercion(name: String, coerce: js.Function1[/* input */ js.Any, _]): Unit = js.native
+    def addTypeCoercion(name: String, coerce: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
     
     var defaultOptions: Options = js.native
     
@@ -34,10 +36,9 @@ object mod {
     def validate(schema: js.Object, `object`: js.Any, options: Options): Errors = js.native
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    var validation: StringDictionary[Required] = js.native
+    var validation: StringDictionary[Required]
   }
   object Errors {
     
@@ -55,16 +56,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var checkRequired: js.UndefOr[Boolean] = js.native
+    var checkRequired: js.UndefOr[Boolean] = js.undefined
     
-    var removeAdditional: js.UndefOr[Boolean] = js.native
+    var removeAdditional: js.UndefOr[Boolean] = js.undefined
     
-    var useCoerce: js.UndefOr[Boolean] = js.native
+    var useCoerce: js.UndefOr[Boolean] = js.undefined
     
-    var useDefault: js.UndefOr[Boolean] = js.native
+    var useDefault: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

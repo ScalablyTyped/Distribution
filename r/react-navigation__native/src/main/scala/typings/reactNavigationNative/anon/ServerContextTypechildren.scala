@@ -6,20 +6,18 @@ import typings.react.mod.Ref
 import typings.reactNavigationNative.typesMod.ServerContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @react-navigation/native.@react-navigation/native/lib/typescript/src/ServerContext.ServerContextType & {  children :react.react.ReactNode} & react.react.RefAttributes<@react-navigation/native.@react-navigation/native/lib/typescript/src/types.ServerContainerRef> */
-@js.native
 trait ServerContextTypechildren extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var location: js.UndefOr[Pathname] = js.native
+  var location: js.UndefOr[Pathname] = js.undefined
   
-  var ref: js.UndefOr[Ref[ServerContainerRef]] = js.native
+  var ref: js.UndefOr[Ref[ServerContainerRef]] = js.undefined
 }
 object ServerContextTypechildren {
   

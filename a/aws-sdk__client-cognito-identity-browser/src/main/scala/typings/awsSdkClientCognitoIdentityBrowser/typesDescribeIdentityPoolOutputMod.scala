@@ -6,59 +6,59 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesCognitoIdentityProviderMo
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribeIdentityPoolOutputMod {
   
-  @js.native
-  trait DescribeIdentityPoolOutput extends OutputTypesUnion {
+  trait DescribeIdentityPoolOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>TRUE if the identity pool supports unauthenticated logins.</p>
       */
-    var AllowUnauthenticatedIdentities: Boolean = js.native
+    var AllowUnauthenticatedIdentities: Boolean
     
     /**
       * <p>A list representing an Amazon Cognito Identity User Pool and its client ID.</p>
       */
-    var CognitoIdentityProviders: js.UndefOr[js.Array[UnmarshalledCognitoIdentityProvider]] = js.native
+    var CognitoIdentityProviders: js.UndefOr[js.Array[UnmarshalledCognitoIdentityProvider]] = js.undefined
     
     /**
       * <p>The "domain" by which Cognito will refer to your users.</p>
       */
-    var DeveloperProviderName: js.UndefOr[String] = js.native
+    var DeveloperProviderName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An identity pool ID in the format REGION:GUID.</p>
       */
-    var IdentityPoolId: String = js.native
+    var IdentityPoolId: String
     
     /**
       * <p>A string that you provide.</p>
       */
-    var IdentityPoolName: String = js.native
+    var IdentityPoolName: String
     
     /**
       * <p>A list of OpendID Connect provider ARNs.</p>
       */
-    var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String]] = js.native
+    var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity pool.</p>
       */
-    var SamlProviderARNs: js.UndefOr[js.Array[String]] = js.native
+    var SamlProviderARNs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>Optional key:value pairs mapping provider names to provider app IDs.</p>
       */
-    var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.native
+    var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object DescribeIdentityPoolOutput {
     

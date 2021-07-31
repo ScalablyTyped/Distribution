@@ -19,7 +19,6 @@ import typings.inkGradient.inkGradientStrings.vice
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,13 +27,12 @@ object mod extends Shortcut {
   @js.native
   val ^ : FC[GradientProps] = js.native
   
-  type GradientProps = (XOR[PropsName, PropsColor]) with Children
+  type GradientProps = (XOR[PropsName, PropsColor]) & Children
   
   // note, object[] in this case refers to objects interpretable by tinycolor2
-  @js.native
   trait PropsColor extends StObject {
     
-    var colors: js.Array[js.Object | String] = js.native
+    var colors: js.Array[js.Object | String]
   }
   object PropsColor {
     
@@ -55,10 +53,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PropsName extends StObject {
     
-    var name: cristal | teen | mind | morning | vice | passion | fruit | instagram | atlas | retro | summer | pastel | rainbow = js.native
+    var name: cristal | teen | mind | morning | vice | passion | fruit | instagram | atlas | retro | summer | pastel | rainbow
   }
   object PropsName {
     
@@ -85,9 +82,9 @@ object mod extends Shortcut {
   // a user gives both of the mutually exclusive props.
   type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-    */ typings.inkGradient.inkGradientStrings.Without with TopLevel[js.Any]
+    */ typings.inkGradient.inkGradientStrings.Without & TopLevel[js.Any]
   
-  type XOR[T, U] = T | U | ((Without[T, U]) with U) | ((Without[U, T]) with T)
+  type XOR[T, U] = T | U | ((Without[T, U]) & U) | ((Without[U, T]) & T)
   
   type _To = FC[GradientProps]
   

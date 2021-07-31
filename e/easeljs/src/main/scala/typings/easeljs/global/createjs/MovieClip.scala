@@ -2,48 +2,28 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.MovieClip")
 @js.native
 class MovieClip ()
-  extends typings.easeljs.createjs.MovieClip {
+  extends StObject
+     with typings.easeljs.createjs.MovieClip {
   def this(mode: String) = this()
-  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double) = this()
   def this(mode: String, startPosition: Double) = this()
-  def this(mode: js.UndefOr[scala.Nothing], startPosition: js.UndefOr[scala.Nothing], loop: Boolean) = this()
-  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double, loop: Boolean) = this()
-  def this(mode: String, startPosition: js.UndefOr[scala.Nothing], loop: Boolean) = this()
+  def this(mode: Unit, startPosition: Double) = this()
   def this(mode: String, startPosition: Double, loop: Boolean) = this()
-  def this(
-    mode: js.UndefOr[scala.Nothing],
-    startPosition: js.UndefOr[scala.Nothing],
-    loop: js.UndefOr[scala.Nothing],
-    labels: js.Object
-  ) = this()
-  def this(
-    mode: js.UndefOr[scala.Nothing],
-    startPosition: js.UndefOr[scala.Nothing],
-    loop: Boolean,
-    labels: js.Object
-  ) = this()
-  def this(
-    mode: js.UndefOr[scala.Nothing],
-    startPosition: Double,
-    loop: js.UndefOr[scala.Nothing],
-    labels: js.Object
-  ) = this()
-  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double, loop: Boolean, labels: js.Object) = this()
-  def this(
-    mode: String,
-    startPosition: js.UndefOr[scala.Nothing],
-    loop: js.UndefOr[scala.Nothing],
-    labels: js.Object
-  ) = this()
-  def this(mode: String, startPosition: js.UndefOr[scala.Nothing], loop: Boolean, labels: js.Object) = this()
-  def this(mode: String, startPosition: Double, loop: js.UndefOr[scala.Nothing], labels: js.Object) = this()
+  def this(mode: String, startPosition: Unit, loop: Boolean) = this()
+  def this(mode: Unit, startPosition: Double, loop: Boolean) = this()
+  def this(mode: Unit, startPosition: Unit, loop: Boolean) = this()
   def this(mode: String, startPosition: Double, loop: Boolean, labels: js.Object) = this()
+  def this(mode: String, startPosition: Double, loop: Unit, labels: js.Object) = this()
+  def this(mode: String, startPosition: Unit, loop: Boolean, labels: js.Object) = this()
+  def this(mode: String, startPosition: Unit, loop: Unit, labels: js.Object) = this()
+  def this(mode: Unit, startPosition: Double, loop: Boolean, labels: js.Object) = this()
+  def this(mode: Unit, startPosition: Double, loop: Unit, labels: js.Object) = this()
+  def this(mode: Unit, startPosition: Unit, loop: Boolean, labels: js.Object) = this()
+  def this(mode: Unit, startPosition: Unit, loop: Unit, labels: js.Object) = this()
 }
 /* static members */
 object MovieClip {

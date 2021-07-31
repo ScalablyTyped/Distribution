@@ -2,15 +2,13 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableMask extends StObject {
   
-  var enableMask: Boolean = js.native
+  var enableMask: Boolean
   
-  var show: Boolean = js.native
+  var show: Boolean
 }
 object EnableMask {
   

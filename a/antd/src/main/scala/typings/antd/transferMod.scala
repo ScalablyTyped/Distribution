@@ -28,7 +28,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferMod {
@@ -49,7 +48,7 @@ object transferMod {
     @js.native
     class List[RecordType /* <: KeyWiseTransferItem */] protected ()
       extends typings.antd.transferListMod.default[RecordType] {
-      def this(props: TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ _]) = this()
+      def this(props: TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ js.Any]) = this()
     }
     /* static member */
     /* was `typeof List` */
@@ -114,9 +113,8 @@ object transferMod {
       @scala.inline
       def dataSource_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
       
-      @JSImport("antd/lib/transfer", "default.defaultProps.listStyle")
-      @js.native
-      def listStyle(): Unit = js.native
+      @scala.inline
+      def listStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listStyle")().asInstanceOf[Unit]
       
       @JSImport("antd/lib/transfer", "default.defaultProps.showSearch")
       @js.native
@@ -126,30 +124,29 @@ object transferMod {
     }
     
     /* static member */
-    @JSImport("antd/lib/transfer", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedKeysTargetKeysPaginationChildren.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
   }
   
-  type KeyWise[T] = T with Key
+  type KeyWise[T] = T & Key
   
   /* Inlined antd.antd/lib/transfer.KeyWise<antd.antd/lib/transfer.TransferItem> */
-  @js.native
   trait KeyWiseTransferItem
-    extends /* customProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProp */ StringDictionary[js.Any] {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] with String = js.native
+    var key: js.UndefOr[String] & String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object KeyWiseTransferItem {
     
     @scala.inline
-    def apply(key: js.UndefOr[String] with String): KeyWiseTransferItem = {
+    def apply(key: js.UndefOr[String] & String): KeyWiseTransferItem = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyWiseTransferItem]
     }
@@ -170,7 +167,7 @@ object transferMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setKey(value: js.UndefOr[String] with String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      def setKey(value: js.UndefOr[String] & String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -180,10 +177,9 @@ object transferMod {
     }
   }
   
-  @js.native
   trait ListStyle extends StObject {
     
-    var direction: TransferDirection = js.native
+    var direction: TransferDirection
   }
   object ListStyle {
     
@@ -203,12 +199,11 @@ object transferMod {
   
   type RenderResult = ReactElement | RenderResultObject | String | Null
   
-  @js.native
   trait RenderResultObject extends StObject {
     
-    var label: ReactElement = js.native
+    var label: ReactElement
     
-    var value: String = js.native
+    var value: String
   }
   object RenderResultObject {
     
@@ -309,17 +304,17 @@ object transferMod {
     def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
   }
   
-  @js.native
   trait TransferItem
-    extends /* customProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProp */ StringDictionary[js.Any] {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object TransferItem {
     
@@ -358,30 +353,29 @@ object transferMod {
     }
   }
   
-  @js.native
   trait TransferLocale extends StObject {
     
-    var itemUnit: String = js.native
+    var itemUnit: String
     
-    var itemsUnit: String = js.native
+    var itemsUnit: String
     
-    var notFoundContent: js.UndefOr[ReactNode] = js.native
+    var notFoundContent: js.UndefOr[ReactNode] = js.undefined
     
-    var remove: String = js.native
+    var remove: String
     
-    var removeAll: String = js.native
+    var removeAll: String
     
-    var removeCurrent: String = js.native
+    var removeCurrent: String
     
-    var searchPlaceholder: String = js.native
+    var searchPlaceholder: String
     
-    var selectAll: String = js.native
+    var selectAll: String
     
-    var selectCurrent: String = js.native
+    var selectCurrent: String
     
-    var selectInvert: String = js.native
+    var selectInvert: String
     
-    var titles: js.Array[String] = js.native
+    var titles: js.Array[String]
   }
   object TransferLocale {
     
@@ -446,24 +440,23 @@ object transferMod {
     }
   }
   
-  @js.native
   trait TransferProps[RecordType] extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* props */ TransferListBodyProps[RecordType], ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* props */ TransferListBodyProps[RecordType], ReactNode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataSource: js.Array[RecordType] = js.native
+    var dataSource: js.Array[RecordType]
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filterOption: js.UndefOr[js.Function2[/* inputValue */ String, /* item */ RecordType, Boolean]] = js.native
+    var filterOption: js.UndefOr[js.Function2[/* inputValue */ String, /* item */ RecordType, Boolean]] = js.undefined
     
-    var footer: js.UndefOr[js.Function1[/* props */ TransferListProps[RecordType], ReactNode]] = js.native
+    var footer: js.UndefOr[js.Function1[/* props */ TransferListProps[RecordType], ReactNode]] = js.undefined
     
-    var listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties = js.native
+    var listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties
     
-    var locale: js.UndefOr[PartialTransferLocale] = js.native
+    var locale: js.UndefOr[PartialTransferLocale] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[
@@ -472,7 +465,7 @@ object transferMod {
           /* moveKeys */ js.Array[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onScroll: js.UndefOr[
         js.Function2[
@@ -480,9 +473,9 @@ object transferMod {
           /* e */ SyntheticEvent[HTMLUListElement, Event], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function2[/* direction */ TransferDirection, /* value */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function2[/* direction */ TransferDirection, /* value */ String, Unit]] = js.undefined
     
     var onSelectChange: js.UndefOr[
         js.Function2[
@@ -490,35 +483,35 @@ object transferMod {
           /* targetSelectedKeys */ js.Array[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var oneWay: js.UndefOr[Boolean] = js.native
+    var oneWay: js.UndefOr[Boolean] = js.undefined
     
-    var operationStyle: js.UndefOr[CSSProperties] = js.native
+    var operationStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var operations: js.UndefOr[js.Array[String]] = js.native
+    var operations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pagination: js.UndefOr[PaginationType] = js.native
+    var pagination: js.UndefOr[PaginationType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var render: js.UndefOr[TransferRender[RecordType]] = js.native
+    var render: js.UndefOr[TransferRender[RecordType]] = js.undefined
     
-    var rowKey: js.UndefOr[js.Function1[/* record */ RecordType, String]] = js.native
+    var rowKey: js.UndefOr[js.Function1[/* record */ RecordType, String]] = js.undefined
     
-    var selectAllLabels: js.UndefOr[js.Array[SelectAllLabel]] = js.native
+    var selectAllLabels: js.UndefOr[js.Array[SelectAllLabel]] = js.undefined
     
-    var selectedKeys: js.UndefOr[js.Array[String]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var showSearch: js.UndefOr[Boolean] = js.native
+    var showSearch: js.UndefOr[Boolean] = js.undefined
     
-    var showSelectAll: js.UndefOr[Boolean] = js.native
+    var showSelectAll: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var targetKeys: js.UndefOr[js.Array[String]] = js.native
+    var targetKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var titles: js.UndefOr[js.Array[String]] = js.native
+    var titles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TransferProps {
     
@@ -532,7 +525,7 @@ object transferMod {
     }
     
     @scala.inline
-    implicit class TransferPropsMutableBuilder[Self <: TransferProps[_], RecordType] (val x: Self with TransferProps[RecordType]) extends AnyVal {
+    implicit class TransferPropsMutableBuilder[Self <: TransferProps[?], RecordType] (val x: Self & TransferProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: /* props */ TransferListBodyProps[RecordType] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
@@ -715,12 +708,11 @@ object transferMod {
   
   type TransferRender[RecordType] = js.Function1[/* item */ RecordType, RenderResult]
   
-  @js.native
   trait TransferState extends StObject {
     
-    var sourceSelectedKeys: js.Array[String] = js.native
+    var sourceSelectedKeys: js.Array[String]
     
-    var targetSelectedKeys: js.Array[String] = js.native
+    var targetSelectedKeys: js.Array[String]
   }
   object TransferState {
     

@@ -1,6 +1,5 @@
 package typings.mobxTask
 
-import typings.mobxTask.mobxTaskStrings.args
 import typings.mobxTask.mobxTaskStrings.error
 import typings.mobxTask.mobxTaskStrings.result
 import typings.mobxTask.mobxTaskStrings.state
@@ -9,9 +8,9 @@ import typings.std.Exclude
 import typings.std.MethodDecorator
 import typings.std.Pick
 import typings.std.PropertyDecorator
+import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskMod {
@@ -23,23 +22,32 @@ object taskMod {
   @js.native
   val task: TaskFactory = js.native
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - js.Function because Already inherited
-  - typings.std.PropertyDecorator because var conflicts: length. Inlined  */ @js.native
-  trait TaskCreator[K /* <: /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow */] extends MethodDecorator {
+  @js.native
+  trait TaskCreator[K /* <: /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow */]
+    extends MethodDecorator
+       with PropertyDecorator {
     
-    def apply(options: Pick[TaskOptions[_, _], K]): PropertyDecorator = js.native
+    def apply(options: Pick[TaskOptions[js.Any, js.Any], K]): PropertyDecorator = js.native
     /**
       * Calls the actual task function.
       */
-    def apply[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
-    def apply[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R], options: Pick[TaskOptions[A, R], K]): Task_[A, R] = js.native
+    def apply[A /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
+    def apply[A /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ A, R], options: Pick[TaskOptions[A, R], K]): Task_[A, R] = js.native
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* target */ js.Object, arg2: /* propertyKey */ String | js.Symbol): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* target */ js.Object,
+      arg2: /* propertyKey */ String | js.Symbol,
+      arg3: /* descriptor */ TypedPropertyDescriptor[js.Any]
+    ): TypedPropertyDescriptor[js.Any] | Unit = js.native
   }
   
   @js.native
   trait TaskFactory
     extends TaskCreator[
-          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow
+          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow
         ] {
     
     /**
@@ -48,14 +56,14 @@ object taskMod {
     /**
       * Creates a task in the `rejected` state.
       */
-    def rejected[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
+    def rejected[A /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
     /**
       * Creates a task in the `rejected` state.
       */
     @JSName("rejected")
     var rejected_Original: TaskCreator[
         Exclude[
-          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
           state
         ]
       ] = js.native
@@ -65,20 +73,20 @@ object taskMod {
     @JSName("rejected")
     def rejected_state(
       options: Pick[
-          TaskOptions[_, _], 
+          TaskOptions[js.Any, js.Any], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
     ): PropertyDecorator = js.native
     @JSName("rejected")
-    def rejected_state[A /* <: js.Array[_] */, R](
+    def rejected_state[A /* <: js.Array[js.Any] */, R](
       func: js.Function1[/* args */ A, R],
       options: Pick[
           TaskOptions[A, R], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
@@ -89,9 +97,9 @@ object taskMod {
     @JSName("rejected")
     def rejected_state_MethodDecorator(
       options: Pick[
-          TaskOptions[_, _], 
+          TaskOptions[js.Any, js.Any], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
@@ -103,14 +111,14 @@ object taskMod {
     /**
       * Creates a task in the `resolved` state.
       */
-    def resolved[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
+    def resolved[A /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
     /**
       * Creates a task in the `resolved` state.
       */
     @JSName("resolved")
     var resolved_Original: TaskCreator[
         Exclude[
-          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+          /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
           state
         ]
       ] = js.native
@@ -120,20 +128,20 @@ object taskMod {
     @JSName("resolved")
     def resolved_state(
       options: Pick[
-          TaskOptions[_, _], 
+          TaskOptions[js.Any, js.Any], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
     ): PropertyDecorator = js.native
     @JSName("resolved")
-    def resolved_state[A /* <: js.Array[_] */, R](
+    def resolved_state[A /* <: js.Array[js.Any] */, R](
       func: js.Function1[/* args */ A, R],
       options: Pick[
           TaskOptions[A, R], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
@@ -144,36 +152,35 @@ object taskMod {
     @JSName("resolved")
     def resolved_state_MethodDecorator(
       options: Pick[
-          TaskOptions[_, _], 
+          TaskOptions[js.Any, js.Any], 
           Exclude[
-            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+            /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | typings.mobxTask.mobxTaskStrings.args | swallow, 
             state
           ]
         ]
     ): MethodDecorator = js.native
   }
   
-  type TaskFunc[A /* <: js.Array[_] */, R] = js.Function1[/* args */ A, js.Promise[R]]
+  type TaskFunc[A /* <: js.Array[js.Any] */, R] = js.Function1[/* args */ A, js.Promise[R]]
   
-  @js.native
-  trait TaskMatchProps[T1, T2, T3, A /* <: js.Array[_] */, R] extends StObject {
+  trait TaskMatchProps[T1, T2, T3, A /* <: js.Array[js.Any] */, R] extends StObject {
     
-    var pending: js.UndefOr[js.Function1[/* args */ A, T1]] = js.native
+    var pending: js.UndefOr[js.Function1[/* args */ A, T1]] = js.undefined
     
-    var rejected: js.UndefOr[js.Function1[/* error */ js.Any, T2]] = js.native
+    var rejected: js.UndefOr[js.Function1[/* error */ js.Any, T2]] = js.undefined
     
-    var resolved: js.UndefOr[js.Function1[/* result */ WithoutPromise[R], T3]] = js.native
+    var resolved: js.UndefOr[js.Function1[/* result */ WithoutPromise[R], T3]] = js.undefined
   }
   object TaskMatchProps {
     
     @scala.inline
-    def apply[T1, T2, T3, A /* <: js.Array[_] */, R](): TaskMatchProps[T1, T2, T3, A, R] = {
+    def apply[T1, T2, T3, A /* <: js.Array[js.Any] */, R](): TaskMatchProps[T1, T2, T3, A, R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskMatchProps[T1, T2, T3, A, R]]
     }
     
     @scala.inline
-    implicit class TaskMatchPropsMutableBuilder[Self <: TaskMatchProps[_, _, _, _, _], T1, T2, T3, A /* <: js.Array[_] */, R] (val x: Self with (TaskMatchProps[T1, T2, T3, A, R])) extends AnyVal {
+    implicit class TaskMatchPropsMutableBuilder[Self <: TaskMatchProps[?, ?, ?, ?, ?], T1, T2, T3, A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskMatchProps[T1, T2, T3, A, R])) extends AnyVal {
       
       @scala.inline
       def setPending(value: /* args */ A => T1): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
@@ -195,24 +202,23 @@ object taskMod {
     }
   }
   
-  @js.native
-  trait TaskMethods[A /* <: js.Array[_] */, R] extends StObject {
+  trait TaskMethods[A /* <: js.Array[js.Any] */, R] extends StObject {
     
     /**
       * Pattern-matches on the task status.
       * @param props
       */
-    def `match`[PT, ET, RT](props: TaskMatchProps[PT, ET, RT, A, R]): PT | ET | RT = js.native
+    def `match`[PT, ET, RT](props: TaskMatchProps[PT, ET, RT, A, R]): PT | ET | RT
     
     /**
       * Resets the state.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * Sets the state.
       */
-    def setState(props: TaskOptions[A, R]): Unit = js.native
+    def setState(props: TaskOptions[A, R]): Unit
     
     /**
       * Wraps the task by invoking `func` with the inner task function, which returns the wrapped function
@@ -220,12 +226,12 @@ object taskMod {
       *
       * @param func
       */
-    def wrap[NA /* <: js.Array[_] */, NR](func: js.Function1[/* inner */ js.Function1[/* args */ A, R], js.Function1[/* args */ NA, NR]]): Task_[NA, NR] = js.native
+    def wrap[NA /* <: js.Array[js.Any] */, NR](func: js.Function1[/* inner */ js.Function1[/* args */ A, R], js.Function1[/* args */ NA, NR]]): Task_[NA, NR]
   }
   object TaskMethods {
     
     @scala.inline
-    def apply[A /* <: js.Array[_] */, R](
+    def apply[A /* <: js.Array[js.Any] */, R](
       `match`: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any,
       reset: () => Unit,
       setState: TaskOptions[A, R] => Unit,
@@ -237,7 +243,7 @@ object taskMod {
     }
     
     @scala.inline
-    implicit class TaskMethodsMutableBuilder[Self <: TaskMethods[_, _], A /* <: js.Array[_] */, R] (val x: Self with (TaskMethods[A, R])) extends AnyVal {
+    implicit class TaskMethodsMutableBuilder[Self <: TaskMethods[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskMethods[A, R])) extends AnyVal {
       
       @scala.inline
       def setMatch(value: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
@@ -255,29 +261,28 @@ object taskMod {
     }
   }
   
-  @js.native
-  trait TaskOptions[A /* <: js.Array[_] */, R] extends StObject {
+  trait TaskOptions[A /* <: js.Array[js.Any] */, R] extends StObject {
     
-    var args: js.UndefOr[A] = js.native
+    var args: js.UndefOr[A] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[WithoutPromise[R]] = js.native
+    var result: js.UndefOr[WithoutPromise[R]] = js.undefined
     
-    var state: js.UndefOr[TaskStatus] = js.native
+    var state: js.UndefOr[TaskStatus] = js.undefined
     
-    var swallow: js.UndefOr[Boolean] = js.native
+    var swallow: js.UndefOr[Boolean] = js.undefined
   }
   object TaskOptions {
     
     @scala.inline
-    def apply[A /* <: js.Array[_] */, R](): TaskOptions[A, R] = {
+    def apply[A /* <: js.Array[js.Any] */, R](): TaskOptions[A, R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskOptions[A, R]]
     }
     
     @scala.inline
-    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions[_, _], A /* <: js.Array[_] */, R] (val x: Self with (TaskOptions[A, R])) extends AnyVal {
+    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskOptions[A, R])) extends AnyVal {
       
       @scala.inline
       def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -311,54 +316,53 @@ object taskMod {
     }
   }
   
-  @js.native
-  trait TaskState[A /* <: js.Array[_] */, R] extends StObject {
+  trait TaskState[A /* <: js.Array[js.Any] */, R] extends StObject {
     
     /**
       * The last arguments passed to the task.
       */
-    val args: A = js.native
+    val args: A
     
     /**
       * The error of the last failed invocation.
       */
-    val error: js.UndefOr[js.Any] = js.native
+    val error: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Convenience getter for `state === 'pending'`.
       */
-    val pending: Boolean = js.native
+    val pending: Boolean
     
     /**
       * Convenience getter for `state === 'rejected'`.
       */
-    val rejected: Boolean = js.native
+    val rejected: Boolean
     
     /**
       * Convenience getter for `state === 'resolved'`.
       */
-    val resolved: Boolean = js.native
+    val resolved: Boolean
     
     /**
       * The result of the last invocation.
       */
-    val result: js.UndefOr[WithoutPromise[R]] = js.native
+    val result: js.UndefOr[WithoutPromise[R]] = js.undefined
     
     /**
       * The status (resolved, rejected, pending)
       */
-    val state: TaskStatus = js.native
+    val state: TaskStatus
   }
   object TaskState {
     
     @scala.inline
-    def apply[A /* <: js.Array[_] */, R](args: A, pending: Boolean, rejected: Boolean, resolved: Boolean, state: TaskStatus): TaskState[A, R] = {
+    def apply[A /* <: js.Array[js.Any] */, R](args: A, pending: Boolean, rejected: Boolean, resolved: Boolean, state: TaskStatus): TaskState[A, R] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskState[A, R]]
     }
     
     @scala.inline
-    implicit class TaskStateMutableBuilder[Self <: TaskState[_, _], A /* <: js.Array[_] */, R] (val x: Self with (TaskState[A, R])) extends AnyVal {
+    implicit class TaskStateMutableBuilder[Self <: TaskState[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskState[A, R])) extends AnyVal {
       
       @scala.inline
       def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -407,7 +411,21 @@ object taskMod {
     def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
   }
   
-  type Task_[A /* <: js.Array[_] */, R] = (TaskFunc[A, WithoutPromise[R]]) with (TaskState[A, R]) with (TaskMethods[A, R])
+  @js.native
+  trait Task_[A /* <: js.Array[js.Any] */, R]
+    extends TaskFunc[A, WithoutPromise[R]]
+       with TaskState[A, R]
+       with TaskMethods[A, R] {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: A): js.Promise[WithoutPromise[R]] = js.native
+    
+    /**
+      * The last arguments passed to the task.
+      */
+    /* InferMemberOverrides */
+    override val args: A & String = js.native
+  }
   
   type WithoutPromise[T] = T
 }

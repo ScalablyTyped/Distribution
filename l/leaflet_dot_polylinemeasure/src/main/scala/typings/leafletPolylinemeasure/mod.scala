@@ -1,12 +1,9 @@
 package typings.leafletPolylinemeasure
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.leafletPolylinemeasure.mod.Control_.PolylineMeasure
 import typings.leafletPolylinemeasure.mod.Control_.PolylineMeasureOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -14,64 +11,74 @@ object mod {
   
   object control {
     
-    @JSImport("leaflet", "control.polylineMeasure")
+    @JSImport("leaflet", "control")
     @js.native
-    def polylineMeasure(): PolylineMeasure = js.native
-    @JSImport("leaflet", "control.polylineMeasure")
-    @js.native
-    def polylineMeasure(options: PolylineMeasureOptions): PolylineMeasure = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def polylineMeasure(): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")().asInstanceOf[PolylineMeasure]
+    @scala.inline
+    def polylineMeasure(options: PolylineMeasureOptions): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")(options.asInstanceOf[js.Any]).asInstanceOf[PolylineMeasure]
   }
   
   object Control_ {
     
-    @js.native
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - scala.Any because Inheritance from two classes. Inlined 
+    - scala.AnyRef because Inheritance from two classes. Inlined 
+    - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+    - js.Any because Inheritance from two classes. Inlined 
+    - scala.AnyRef because Inheritance from two classes. Inlined 
+    - js.Object because Inheritance from two classes. Inlined 
+    - js.Any because Inheritance from two classes. Inlined 
+    - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+    - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+    - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+    - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
     trait PolylineMeasure
       extends typings.leaflet.mod.Control_
-         with Instantiable0[js.Any]
-         with Instantiable1[/* options */ PolylineMeasureOptions, js.Any]
     
-    @js.native
     trait PolylineMeasureOptions extends StObject {
       
-      var backgroundColor: js.UndefOr[String] = js.native
+      var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var clearControlClasses: js.UndefOr[js.Array[_]] = js.native
+      var clearControlClasses: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var clearControlLabel: js.UndefOr[String] = js.native
+      var clearControlLabel: js.UndefOr[String] = js.undefined
       
-      var clearControlTitle: js.UndefOr[String] = js.native
+      var clearControlTitle: js.UndefOr[String] = js.undefined
       
-      var clearMeasurementsOnStop: js.UndefOr[Boolean] = js.native
+      var clearMeasurementsOnStop: js.UndefOr[Boolean] = js.undefined
       
-      var currentCircle: js.UndefOr[js.Any] = js.native
+      var currentCircle: js.UndefOr[js.Any] = js.undefined
       
-      var cursor: js.UndefOr[String] = js.native
+      var cursor: js.UndefOr[String] = js.undefined
       
-      var endCircle: js.UndefOr[js.Any] = js.native
+      var endCircle: js.UndefOr[js.Any] = js.undefined
       
-      var fixedLine: js.UndefOr[js.Any] = js.native
+      var fixedLine: js.UndefOr[js.Any] = js.undefined
       
-      var intermedCircle: js.UndefOr[js.Any] = js.native
+      var intermedCircle: js.UndefOr[js.Any] = js.undefined
       
-      var measureControlClasses: js.UndefOr[js.Array[_]] = js.native
+      var measureControlClasses: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var measureControlLabel: js.UndefOr[String] = js.native
+      var measureControlLabel: js.UndefOr[String] = js.undefined
       
-      var measureControlTitleOff: js.UndefOr[String] = js.native
+      var measureControlTitleOff: js.UndefOr[String] = js.undefined
       
-      var measureControlTitleOn: js.UndefOr[String] = js.native
+      var measureControlTitleOn: js.UndefOr[String] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var showMeasurementsClearControl: js.UndefOr[Boolean] = js.native
+      var showMeasurementsClearControl: js.UndefOr[Boolean] = js.undefined
       
-      var showUnitControl: js.UndefOr[Boolean] = js.native
+      var showUnitControl: js.UndefOr[Boolean] = js.undefined
       
-      var startCircle: js.UndefOr[js.Any] = js.native
+      var startCircle: js.UndefOr[js.Any] = js.undefined
       
-      var tempLine: js.UndefOr[js.Any] = js.native
+      var tempLine: js.UndefOr[js.Any] = js.undefined
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
     }
     object PolylineMeasureOptions {
       
@@ -91,7 +98,7 @@ object mod {
         def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
         @scala.inline
-        def setClearControlClasses(value: js.Array[_]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
+        def setClearControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setClearControlClassesUndefined: Self = StObject.set(x, "clearControlClasses", js.undefined)
@@ -148,7 +155,7 @@ object mod {
         def setIntermedCircleUndefined: Self = StObject.set(x, "intermedCircle", js.undefined)
         
         @scala.inline
-        def setMeasureControlClasses(value: js.Array[_]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
+        def setMeasureControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMeasureControlClassesUndefined: Self = StObject.set(x, "measureControlClasses", js.undefined)

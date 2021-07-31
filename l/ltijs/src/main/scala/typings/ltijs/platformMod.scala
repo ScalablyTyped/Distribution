@@ -7,7 +7,6 @@ import typings.ltijs.ltijsBooleans.`false`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
@@ -43,12 +42,11 @@ object platformMod {
     def remove(): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait PlatformAuthConfig extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var method: String = js.native
+    var method: String
   }
   object PlatformAuthConfig {
     
@@ -69,20 +67,19 @@ object platformMod {
     }
   }
   
-  @js.native
   trait PlatformConfig extends StObject {
     
-    var accesstokenEndpoint: String = js.native
+    var accesstokenEndpoint: String
     
-    var authConfig: PlatformAuthConfig = js.native
+    var authConfig: PlatformAuthConfig
     
-    var authenticationEndpoint: String = js.native
+    var authenticationEndpoint: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object PlatformConfig {
     
@@ -122,35 +119,34 @@ object platformMod {
     }
   }
   
-  @js.native
   trait PlatformContext extends StObject {
     
-    var __id: String = js.native
+    var __id: String
     
-    var __v: Double = js.native
+    var __v: Double
     
-    var context: Label = js.native
+    var context: Label
     
-    var createdAt: Date = js.native
+    var createdAt: Date
     
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    var custom: js.Any = js.native
+    var custom: js.Any
     
-    var deploymentId: String = js.native
+    var deploymentId: String
     
-    var launchPresentation: Documenttarget = js.native
+    var launchPresentation: Documenttarget
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var path: String = js.native
+    var path: String
     
-    var resource: Title = js.native
+    var resource: Title
     
-    var targetLinkUri: String = js.native
+    var targetLinkUri: String
     
-    var user: String = js.native
+    var user: String
     
-    var version: String = js.native
+    var version: String
   }
   object PlatformContext {
     
@@ -218,16 +214,15 @@ object platformMod {
     }
   }
   
-  @js.native
   trait PlatformInfo extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var family_code: String = js.native
+    var family_code: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object PlatformInfo {
     

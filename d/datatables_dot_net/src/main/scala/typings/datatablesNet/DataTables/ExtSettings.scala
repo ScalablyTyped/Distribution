@@ -2,79 +2,77 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "SettingsLegacy"
 //#region "ext internal"
-@js.native
 trait ExtSettings extends StObject {
   
-  var aTypes: js.Array[_] = js.native
+  var aTypes: js.Array[js.Any]
   
-  var afnFiltering: js.Array[_] = js.native
+  var afnFiltering: js.Array[js.Any]
   
-  var afnSortData: js.Object = js.native
+  var afnSortData: js.Object
   
-  var aoFeatures: js.Array[_] = js.native
+  var aoFeatures: js.Array[js.Any]
   
-  var builder: String = js.native
+  var builder: String
   
-  var classes: ExtClassesSettings = js.native
+  var classes: ExtClassesSettings
   
-  var errMode: String = js.native
+  var errMode: String
   
-  var feature: js.Array[_] = js.native
+  var feature: js.Array[js.Any]
   
-  def fnVersionCheck(version: String): String = js.native
+  def fnVersionCheck(version: String): String
   
-  var iApiIndex: Double = js.native
+  var iApiIndex: Double
   
-  var internal: js.Object = js.native
+  var internal: js.Object
   
-  var legacy: js.Object = js.native
+  var legacy: js.Object
   
-  var oApi: js.Object = js.native
+  var oApi: js.Object
   
-  var oJUIClasses: js.Object = js.native
+  var oJUIClasses: js.Object
   
-  var oPagination: js.Object = js.native
+  var oPagination: js.Object
   
-  var oSort: js.Object = js.native
+  var oSort: js.Object
   
-  var oStdClasses: ExtClassesSettings = js.native
+  var oStdClasses: ExtClassesSettings
   
-  var ofnSearch: js.Object = js.native
+  var ofnSearch: js.Object
   
-  var order: js.Object = js.native
+  var order: js.Object
   
-  var pager: js.Object = js.native
+  var pager: js.Object
   
-  var renderer: js.Object = js.native
+  var renderer: js.Object
   
-  var sVersion: String = js.native
+  var sVersion: String
   
-  var search: js.Array[_] = js.native
+  var search: js.Array[js.Any]
   
-  var selector: js.Object = js.native
+  var selector: js.Object
   
   /**
     * Type based plug-ins.
     */
-  var `type`: ExtTypeSettings = js.native
+  var `type`: ExtTypeSettings
 }
 object ExtSettings {
   
   @scala.inline
   def apply(
-    aTypes: js.Array[_],
-    afnFiltering: js.Array[_],
+    aTypes: js.Array[js.Any],
+    afnFiltering: js.Array[js.Any],
     afnSortData: js.Object,
-    aoFeatures: js.Array[_],
+    aoFeatures: js.Array[js.Any],
     builder: String,
     classes: ExtClassesSettings,
     errMode: String,
-    feature: js.Array[_],
+    feature: js.Array[js.Any],
     fnVersionCheck: String => String,
     iApiIndex: Double,
     internal: js.Object,
@@ -89,7 +87,7 @@ object ExtSettings {
     pager: js.Object,
     renderer: js.Object,
     sVersion: String,
-    search: js.Array[_],
+    search: js.Array[js.Any],
     selector: js.Object,
     `type`: ExtTypeSettings
   ): ExtSettings = {
@@ -102,13 +100,13 @@ object ExtSettings {
   implicit class ExtSettingsMutableBuilder[Self <: ExtSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setATypes(value: js.Array[_]): Self = StObject.set(x, "aTypes", value.asInstanceOf[js.Any])
+    def setATypes(value: js.Array[js.Any]): Self = StObject.set(x, "aTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setATypesVarargs(value: js.Any*): Self = StObject.set(x, "aTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAfnFiltering(value: js.Array[_]): Self = StObject.set(x, "afnFiltering", value.asInstanceOf[js.Any])
+    def setAfnFiltering(value: js.Array[js.Any]): Self = StObject.set(x, "afnFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAfnFilteringVarargs(value: js.Any*): Self = StObject.set(x, "afnFiltering", js.Array(value :_*))
@@ -117,7 +115,7 @@ object ExtSettings {
     def setAfnSortData(value: js.Object): Self = StObject.set(x, "afnSortData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAoFeatures(value: js.Array[_]): Self = StObject.set(x, "aoFeatures", value.asInstanceOf[js.Any])
+    def setAoFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "aoFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAoFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "aoFeatures", js.Array(value :_*))
@@ -132,7 +130,7 @@ object ExtSettings {
     def setErrMode(value: String): Self = StObject.set(x, "errMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: js.Array[_]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    def setFeature(value: js.Array[js.Any]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFeatureVarargs(value: js.Any*): Self = StObject.set(x, "feature", js.Array(value :_*))
@@ -180,7 +178,7 @@ object ExtSettings {
     def setSVersion(value: String): Self = StObject.set(x, "sVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: js.Array[_]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    def setSearch(value: js.Array[js.Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSearchVarargs(value: js.Any*): Self = StObject.set(x, "search", js.Array(value :_*))

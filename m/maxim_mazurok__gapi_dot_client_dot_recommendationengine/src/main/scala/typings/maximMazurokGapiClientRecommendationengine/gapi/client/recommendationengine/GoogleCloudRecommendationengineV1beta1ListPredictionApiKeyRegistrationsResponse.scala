@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse extends StObject {
   
   /** If empty, the list is complete. If nonempty, pass the token to the next request's `ListPredictionApiKeysRegistrationsRequest.pageToken`. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of registered API keys. */
-  var predictionApiKeyRegistrations: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration]] = js.native
+  var predictionApiKeyRegistrations: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration]] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse {
   

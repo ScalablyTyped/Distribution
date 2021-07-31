@@ -2,17 +2,17 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterPutSettingsParams extends GenericParams {
+trait ClusterPutSettingsParams
+  extends StObject
+     with GenericParams {
   
-  var flatSettings: js.UndefOr[Boolean] = js.native
+  var flatSettings: js.UndefOr[Boolean] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
 object ClusterPutSettingsParams {
   

@@ -2,17 +2,15 @@ package typings.firebase.mod.firebase.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsCallOptions extends StObject {
   
   /**
     * If true, this config or event call applies globally to all
     * analytics properties on the page.
     */
-  var global: Boolean = js.native
+  var global: Boolean
 }
 object AnalyticsCallOptions {
   

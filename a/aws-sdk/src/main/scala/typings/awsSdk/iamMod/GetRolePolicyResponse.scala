@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRolePolicyResponse extends StObject {
   
   /**
     * The policy document. IAM stores policies in JSON format. However, resources that were created using AWS CloudFormation templates can be formatted in YAML. AWS CloudFormation always converts a YAML policy to JSON format before submitting it to IAM.
     */
-  var PolicyDocument: policyDocumentType = js.native
+  var PolicyDocument: policyDocumentType
   
   /**
     * The name of the policy.
     */
-  var PolicyName: policyNameType = js.native
+  var PolicyName: policyNameType
   
   /**
     * The role the policy is associated with.
     */
-  var RoleName: roleNameType = js.native
+  var RoleName: roleNameType
 }
 object GetRolePolicyResponse {
   

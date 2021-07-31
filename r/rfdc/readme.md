@@ -10,9 +10,9 @@ Really Fast Deep Clone
 | ------------------ | :-------------: |
 | Full name          | rfdc |
 | Keywords           | object, obj, properties, clone, copy, deep, recursive, key, keys, values, prop, deep-clone, deepclone, deep-copy, deepcopy, fast, performance, performant, fastclone, fastcopy, fast-clone, fast-deep-clone, fast-copy, fast-deep-copy |
-| # releases         | 3 |
-| # dependents       | 53 |
-| # downloads        | 76844525 |
+| # releases         | 4 |
+| # dependents       | 72 |
+| # downloads        | 86468622 |
 | # stars            | 0 |
 
 ## Links

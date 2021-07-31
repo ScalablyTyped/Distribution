@@ -11,77 +11,70 @@ import typings.reactDnd.interfacesMod.DropTargetSpec
 import typings.reactDnd.optionsMod.DndOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
   
-  @JSImport("react-dnd/lib/decorators", "DragLayer")
+  @JSImport("react-dnd/lib/decorators", JSImport.Namespace)
   @js.native
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DragLayer")
-  @js.native
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-dnd/lib/decorators", "DragSource")
-  @js.native
+  @scala.inline
+  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any]).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
+  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  
+  @scala.inline
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DragSource")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DragSource")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: SourceType,
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DragSource")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: SourceType,
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
   
-  @JSImport("react-dnd/lib/decorators", "DropTarget")
-  @js.native
+  @scala.inline
   def DropTarget[RequiredProps, CollectedProps](
     `type`: js.Function1[/* props */ RequiredProps, TargetType],
     spec: DropTargetSpec[RequiredProps],
     collect: DropTargetCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DropTarget")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DropTarget")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DropTarget[RequiredProps, CollectedProps](
     `type`: js.Function1[/* props */ RequiredProps, TargetType],
     spec: DropTargetSpec[RequiredProps],
     collect: DropTargetCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DropTarget")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DropTarget")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DropTarget[RequiredProps, CollectedProps](
     `type`: TargetType,
     spec: DropTargetSpec[RequiredProps],
     collect: DropTargetCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  @JSImport("react-dnd/lib/decorators", "DropTarget")
-  @js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DropTarget")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  @scala.inline
   def DropTarget[RequiredProps, CollectedProps](
     `type`: TargetType,
     spec: DropTargetSpec[RequiredProps],
     collect: DropTargetCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
+  ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DropTarget")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
 }

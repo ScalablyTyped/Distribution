@@ -5,30 +5,30 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link XFrame} instead of this one
   * @deprecated Deprecated
   */
-@js.native
-trait XTask extends XFrame {
+trait XTask
+  extends StObject
+     with XFrame {
   
   /** @deprecated Deprecated */
-  def arrangeWindowsHorizontal(): Unit = js.native
+  def arrangeWindowsHorizontal(): Unit
   
   /** @deprecated Deprecated */
-  def arrangeWindowsVertical(): Unit = js.native
+  def arrangeWindowsVertical(): Unit
   
   /**
     * use {@link com.sun.star.util.XCloseable} or {@link com.sun.star.lang.XComponent.dispose()} at a {@link Frame} instead of this one
     * @deprecated Deprecated
     */
-  def close(): Boolean = js.native
+  def close(): Boolean
   
   /** @deprecated Deprecated */
-  def tileWindows(): Unit = js.native
+  def tileWindows(): Unit
 }
 object XTask {
   

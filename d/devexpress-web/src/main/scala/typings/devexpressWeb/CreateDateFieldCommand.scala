@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a DATE field displaying the current date.
   */
-@js.native
-trait CreateDateFieldCommand extends CommandWithSimpleStateBase {
+trait CreateDateFieldCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CreateDateFieldCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CreateDateFieldCommand {
   

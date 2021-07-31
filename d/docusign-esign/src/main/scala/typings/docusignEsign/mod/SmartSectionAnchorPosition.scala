@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartSectionAnchorPosition extends StObject {
   
   /**
     * The page number being accessed.
     */
-  var pageNumber: js.UndefOr[Double] = js.native
+  var pageNumber: js.UndefOr[Double] = js.undefined
   
   // int32
   /**
@@ -20,13 +18,13 @@ trait SmartSectionAnchorPosition extends StObject {
     * Required. May be zero.
     *
     */
-  var xPosition: js.UndefOr[Double] = js.native
+  var xPosition: js.UndefOr[Double] = js.undefined
   
   // double
   /**
     * This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.
     */
-  var yPosition: js.UndefOr[Double] = js.native
+  var yPosition: js.UndefOr[Double] = js.undefined
 }
 object SmartSectionAnchorPosition {
   

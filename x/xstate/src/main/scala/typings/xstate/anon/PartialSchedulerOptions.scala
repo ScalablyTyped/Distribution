@@ -2,14 +2,12 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<xstate.xstate/lib/scheduler.SchedulerOptions> */
-@js.native
 trait PartialSchedulerOptions extends StObject {
   
-  var deferEvents: js.UndefOr[Boolean] = js.native
+  var deferEvents: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSchedulerOptions {
   

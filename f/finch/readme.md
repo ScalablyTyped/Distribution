@@ -12,7 +12,7 @@ The finch package has been deprecated in favor of @finch. See: https://www.npmjs
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1633 |
+| # downloads        | 1935 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,26 +30,26 @@ trait ModelView extends StObject {
   /**
     * Raised when the view closed.
     */
-  def onClosed(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
   def onClosed(
-    listener: js.Function1[/* e */ js.Any, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Any, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Raised when the model view's valid property changes
     */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
   def onValidityChanged(
-    listener: js.Function1[/* e */ Boolean, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Boolean, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * The info on the server for the dashboard

@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
@@ -33,26 +32,27 @@ object sliderMod {
   trait Slider
     extends Component[SliderProps, js.Any, js.Any]
   
-  @js.native
-  trait SliderProps extends SliderPropsType {
+  trait SliderProps
+    extends StObject
+       with SliderPropsType {
     
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
-    var handleStyle: js.UndefOr[CSSProperties] = js.native
+    var handleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var included: js.UndefOr[Boolean] = js.native
+    var included: js.UndefOr[Boolean] = js.undefined
     
-    var marks: js.UndefOr[NumberDictionary[String]] = js.native
+    var marks: js.UndefOr[NumberDictionary[String]] = js.undefined
     
-    var maximumTrackStyle: js.UndefOr[CSSProperties] = js.native
+    var maximumTrackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var minimumTrackStyle: js.UndefOr[CSSProperties] = js.native
+    var minimumTrackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var railStyle: js.UndefOr[CSSProperties] = js.native
+    var railStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var trackStyle: js.UndefOr[CSSProperties] = js.native
+    var trackStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object SliderProps {
     

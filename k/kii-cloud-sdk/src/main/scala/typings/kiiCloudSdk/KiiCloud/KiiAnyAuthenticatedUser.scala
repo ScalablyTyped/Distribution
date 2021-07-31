@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *     When retrieving ACL from an object, test for this class to determine the subject type. Example:
   */
-@js.native
-trait KiiAnyAuthenticatedUser extends KiiACLSubject {
+trait KiiAnyAuthenticatedUser
+  extends StObject
+     with KiiACLSubject {
   
   /**
     * Returns the ID of AuthenticatedUser user.
     */
-  def getID(): String = js.native
+  def getID(): String
 }
 object KiiAnyAuthenticatedUser {
   

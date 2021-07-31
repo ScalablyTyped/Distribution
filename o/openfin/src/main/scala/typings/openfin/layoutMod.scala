@@ -5,14 +5,15 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.utilsMod.LayoutPresetTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
   
   @JSImport("openfin/_v2/api/platform/layout", JSImport.Default)
   @js.native
-  class default () extends LayoutModule
+  class default ()
+    extends StObject
+       with LayoutModule
   
   @JSImport("openfin/_v2/api/platform/layout", "Layout")
   @js.native
@@ -54,12 +55,11 @@ object layoutMod {
     def replace(layout: Config): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait InitLayoutOptions extends StObject {
     
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[Config] = js.native
+    var layout: js.UndefOr[Config] = js.undefined
   }
   object InitLayoutOptions {
     
@@ -138,10 +138,9 @@ object layoutMod {
     def wrapSync(identity: Identity): Layout = js.native
   }
   
-  @js.native
   trait PresetLayoutOptions extends StObject {
     
-    var presetType: LayoutPresetTypes = js.native
+    var presetType: LayoutPresetTypes
   }
   object PresetLayoutOptions {
     

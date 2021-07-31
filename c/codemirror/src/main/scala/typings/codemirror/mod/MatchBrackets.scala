@@ -2,36 +2,34 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchBrackets extends StObject {
   
   /**
     * Only use the character after the start position, never the one before it.
     */
-  var afterCursor: js.UndefOr[Boolean] = js.native
+  var afterCursor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Don't highlight a bracket in a line longer than this. Defaults to 1000.
     */
-  var maxHighlightLineLength: js.UndefOr[Double] = js.native
+  var maxHighlightLineLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Ignore lines longer than this. Defaults to 10000.
     */
-  var maxScanLineLength: js.UndefOr[Double] = js.native
+  var maxScanLineLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Stop after scanning this amount of lines without a successful match. Defaults to 1000.
     */
-  var maxScanLines: js.UndefOr[Double] = js.native
+  var maxScanLines: js.UndefOr[Double] = js.undefined
   
   /**
     * Causes only matches where both brackets are at the same side of the start position to be considered.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object MatchBrackets {
   

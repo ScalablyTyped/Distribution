@@ -3,17 +3,17 @@ package typings.rollup.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupError extends RollupLogProps {
+trait RollupError
+  extends StObject
+     with RollupLogProps {
   
-  var parserError: js.UndefOr[Error] = js.native
+  var parserError: js.UndefOr[Error] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var watchFiles: js.UndefOr[js.Array[String]] = js.native
+  var watchFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RollupError {
   

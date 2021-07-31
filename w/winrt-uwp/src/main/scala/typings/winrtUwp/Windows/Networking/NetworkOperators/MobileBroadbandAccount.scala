@@ -4,33 +4,31 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband account and related information about the network provider for the account. */
-@js.native
 trait MobileBroadbandAccount extends StObject {
   
   /** Gets the mobile broadband device information associated with this account. */
-  var currentDeviceInformation: MobileBroadbandDeviceInformation = js.native
+  var currentDeviceInformation: MobileBroadbandDeviceInformation
   
   /** Gets the Mobile Broadband network object for this account. */
-  var currentNetwork: MobileBroadbandNetwork = js.native
+  var currentNetwork: MobileBroadbandNetwork
   
   /**
     * Retrieves an array of ConnectionProfile objects that represent connections associated with the Mobile Broadband account.
     * @return An array of ConnectionProfile objects.
     */
-  def getConnectionProfiles(): IVectorView[ConnectionProfile] = js.native
+  def getConnectionProfiles(): IVectorView[ConnectionProfile]
   
   /** Gets a unique identifier for the mobile broadband account. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
   
   /** A unique identifier for the network provider for the mobile broadband account. */
-  var serviceProviderGuid: String = js.native
+  var serviceProviderGuid: String
   
   /** The name of the network provider for the mobile broadband account. */
-  var serviceProviderName: String = js.native
+  var serviceProviderName: String
 }
 object MobileBroadbandAccount {
   

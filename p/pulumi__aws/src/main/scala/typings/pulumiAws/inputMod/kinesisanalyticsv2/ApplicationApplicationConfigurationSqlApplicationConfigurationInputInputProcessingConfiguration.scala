@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
     */
   var inputLambdaProcessor: Input[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
-  ] = js.native
+  ]
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration {
   

@@ -2,17 +2,15 @@ package typings.randomatic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Chars extends StObject {
     
-    var chars: js.UndefOr[String] = js.native
+    var chars: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Chars {
     

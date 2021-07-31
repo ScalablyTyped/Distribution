@@ -12,32 +12,31 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@react-md/card", "Card")
   @js.native
-  val Card: ForwardRefExoticComponent[CardProps with RefAttributes[HTMLDivElement]] = js.native
+  val Card: ForwardRefExoticComponent[CardProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/card", "CardActions")
   @js.native
-  val CardActions: ForwardRefExoticComponent[CardActionsProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardActions: ForwardRefExoticComponent[CardActionsProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/card", "CardContent")
   @js.native
-  val CardContent: ForwardRefExoticComponent[CardContentProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardContent: ForwardRefExoticComponent[CardContentProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/card", "CardHeader")
   @js.native
-  val CardHeader: ForwardRefExoticComponent[CardHeaderProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardHeader: ForwardRefExoticComponent[CardHeaderProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/card", "CardSubtitle")
   @js.native
-  val CardSubtitle: ForwardRefExoticComponent[CardSubtitleProps with RefAttributes[HTMLHeadingElement]] = js.native
+  val CardSubtitle: ForwardRefExoticComponent[CardSubtitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
   @JSImport("@react-md/card", "CardTitle")
   @js.native
-  val CardTitle: ForwardRefExoticComponent[CardTitleProps with RefAttributes[HTMLHeadingElement]] = js.native
+  val CardTitle: ForwardRefExoticComponent[CardTitleProps & RefAttributes[HTMLHeadingElement]] = js.native
 }

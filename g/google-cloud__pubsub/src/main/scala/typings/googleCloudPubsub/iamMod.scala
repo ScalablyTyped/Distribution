@@ -12,7 +12,6 @@ import typings.googleGax.iamServiceMod.google.iam.v1.ITestIamPermissionsResponse
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamMod {
@@ -57,14 +56,13 @@ object iamMod {
   type IamPermissionsMap = StringDictionary[Boolean]
   
   /* Inlined {  etag :string | node.Buffer | undefined} & @google-cloud/pubsub.@google-cloud/pubsub/build/src/pubsub.Omit<google-gax.google-gax.IamProtos.google.iam.v1.IPolicy, 'etag'> */
-  @js.native
   trait Policy extends StObject {
     
-    var bindings: js.UndefOr[js.Array[IBinding] | Null] = js.native
+    var bindings: js.UndefOr[js.Array[IBinding] | Null] = js.undefined
     
-    var etag: js.UndefOr[String | Buffer] = js.native
+    var etag: js.UndefOr[String | Buffer] = js.undefined
     
-    var version: js.UndefOr[Double | Null] = js.native
+    var version: js.UndefOr[Double | Null] = js.undefined
   }
   object Policy {
     

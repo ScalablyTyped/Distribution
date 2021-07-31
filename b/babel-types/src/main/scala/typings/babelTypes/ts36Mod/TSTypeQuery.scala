@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSTypeQuery
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var exprName: TSEntityName = js.native
+  var exprName: TSEntityName
   
   @JSName("type")
-  var type_TSTypeQuery: typings.babelTypes.babelTypesStrings.TSTypeQuery = js.native
+  var type_TSTypeQuery: typings.babelTypes.babelTypesStrings.TSTypeQuery
 }
 object TSTypeQuery {
   

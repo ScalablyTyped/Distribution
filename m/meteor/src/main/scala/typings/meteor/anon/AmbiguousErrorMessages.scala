@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.meteor.meteorNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmbiguousErrorMessages extends StObject {
   
-  var ambiguousErrorMessages: js.UndefOr[Boolean] = js.native
+  var ambiguousErrorMessages: js.UndefOr[Boolean] = js.undefined
   
-  var defaultFieldSelector: js.UndefOr[StringDictionary[typings.meteor.meteorNumbers.`0` | `1`]] = js.native
+  var defaultFieldSelector: js.UndefOr[StringDictionary[typings.meteor.meteorNumbers.`0` | `1`]] = js.undefined
   
-  var forbidClientAccountCreation: js.UndefOr[Boolean] = js.native
+  var forbidClientAccountCreation: js.UndefOr[Boolean] = js.undefined
   
-  var loginExpirationInDays: js.UndefOr[Double] = js.native
+  var loginExpirationInDays: js.UndefOr[Double] = js.undefined
   
-  var oauthSecretKey: js.UndefOr[String] = js.native
+  var oauthSecretKey: js.UndefOr[String] = js.undefined
   
-  var passwordEnrollTokenExpirationInDays: js.UndefOr[Double] = js.native
+  var passwordEnrollTokenExpirationInDays: js.UndefOr[Double] = js.undefined
   
-  var passwordResetTokenExpirationInDays: js.UndefOr[Double] = js.native
+  var passwordResetTokenExpirationInDays: js.UndefOr[Double] = js.undefined
   
-  var restrictCreationByEmailDomain: js.UndefOr[String | js.Function] = js.native
+  var restrictCreationByEmailDomain: js.UndefOr[String | js.Function] = js.undefined
   
-  var sendVerificationEmail: js.UndefOr[Boolean] = js.native
+  var sendVerificationEmail: js.UndefOr[Boolean] = js.undefined
 }
 object AmbiguousErrorMessages {
   

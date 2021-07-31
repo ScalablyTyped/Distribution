@@ -5,7 +5,6 @@ import typings.std.ArrayBuffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,44 +24,43 @@ object mod extends Shortcut {
     def noConflict(): String = js.native
     
     def parse(id: String): ArrayBuffer = js.native
-    def parse(id: String, buffer: js.UndefOr[scala.Nothing], offset: Double): ArrayBuffer = js.native
+    def parse(id: String, buffer: Unit, offset: Double): ArrayBuffer = js.native
     def parse(id: String, buffer: ArrayBuffer): ArrayBuffer = js.native
     def parse(id: String, buffer: ArrayBuffer, offset: Double): ArrayBuffer = js.native
     
     def unparse(): String = js.native
-    def unparse(buffer: js.UndefOr[scala.Nothing], offset: Double): String = js.native
+    def unparse(buffer: Unit, offset: Double): String = js.native
     def unparse(buffer: ArrayBuffer): String = js.native
     def unparse(buffer: ArrayBuffer, offset: Double): String = js.native
     
     def v1(): String = js.native
-    def v1(options: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], offset: Double): String = js.native
-    def v1(options: js.UndefOr[scala.Nothing], buffer: ArrayBuffer): String = js.native
-    def v1(options: js.UndefOr[scala.Nothing], buffer: ArrayBuffer, offset: Double): String = js.native
+    def v1(options: Unit, buffer: Unit, offset: Double): String = js.native
+    def v1(options: Unit, buffer: ArrayBuffer): String = js.native
+    def v1(options: Unit, buffer: ArrayBuffer, offset: Double): String = js.native
     def v1(options: typings.reactNativeUuid.mod.v1): String = js.native
-    def v1(options: typings.reactNativeUuid.mod.v1, buffer: js.UndefOr[scala.Nothing], offset: Double): String = js.native
+    def v1(options: typings.reactNativeUuid.mod.v1, buffer: Unit, offset: Double): String = js.native
     def v1(options: typings.reactNativeUuid.mod.v1, buffer: ArrayBuffer): String = js.native
     def v1(options: typings.reactNativeUuid.mod.v1, buffer: ArrayBuffer, offset: Double): String = js.native
     
     def v4(): String = js.native
-    def v4(options: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], offset: Double): String = js.native
-    def v4(options: js.UndefOr[scala.Nothing], buffer: ArrayBuffer): String = js.native
-    def v4(options: js.UndefOr[scala.Nothing], buffer: ArrayBuffer, offset: Double): String = js.native
+    def v4(options: Unit, buffer: Unit, offset: Double): String = js.native
+    def v4(options: Unit, buffer: ArrayBuffer): String = js.native
+    def v4(options: Unit, buffer: ArrayBuffer, offset: Double): String = js.native
     def v4(options: typings.reactNativeUuid.mod.v4): String = js.native
-    def v4(options: typings.reactNativeUuid.mod.v4, buffer: js.UndefOr[scala.Nothing], offset: Double): String = js.native
+    def v4(options: typings.reactNativeUuid.mod.v4, buffer: Unit, offset: Double): String = js.native
     def v4(options: typings.reactNativeUuid.mod.v4, buffer: ArrayBuffer): String = js.native
     def v4(options: typings.reactNativeUuid.mod.v4, buffer: ArrayBuffer, offset: Double): String = js.native
   }
   
-  @js.native
   trait v1 extends StObject {
     
-    var clockseq: Double = js.native
+    var clockseq: Double
     
-    var msecs: Double | Date = js.native
+    var msecs: Double | Date
     
-    var node: js.Array[Double] = js.native
+    var node: js.Array[Double]
     
-    var nsecs: Double = js.native
+    var nsecs: Double
   }
   object v1 {
     
@@ -92,12 +90,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait v4 extends StObject {
     
-    var random: js.UndefOr[js.Array[Double]] = js.native
+    var random: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var rng: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
+    var rng: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   }
   object v4 {
     

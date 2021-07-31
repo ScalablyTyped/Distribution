@@ -2,20 +2,18 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Settings for callback notifications. For more details see [G Suite Alert
   * Notification](/admin-sdk/alertcenter/guides/notifications).
   */
-@js.native
 trait SchemaNotification extends StObject {
   
   /**
     * A Google Cloud Pub/sub topic destination.
     */
-  var cloudPubsubTopic: js.UndefOr[SchemaCloudPubsubTopic] = js.native
+  var cloudPubsubTopic: js.UndefOr[SchemaCloudPubsubTopic] = js.undefined
 }
 object SchemaNotification {
   

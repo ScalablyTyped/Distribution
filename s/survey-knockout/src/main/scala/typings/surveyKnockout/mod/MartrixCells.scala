@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MartrixCells")
@@ -12,7 +11,7 @@ class MartrixCells protected () extends StObject {
   
   var cellsOwner: IMatrixCellsOwner = js.native
   
-  val columns: js.Array[_] = js.native
+  val columns: js.Array[js.Any] = js.native
   
   /* protected */ def createString(): LocalizableString = js.native
   
@@ -32,7 +31,7 @@ class MartrixCells protected () extends StObject {
   
   val isEmpty: Boolean = js.native
   
-  val rows: js.Array[_] = js.native
+  val rows: js.Array[js.Any] = js.native
   
   def setCellText(row: js.Any, column: js.Any, `val`: String): Unit = js.native
   

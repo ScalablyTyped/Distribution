@@ -1,26 +1,41 @@
 package typings.wonderJs
 
 import typings.wonderJs.programMod.Program
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", JSImport.Namespace)
-@js.native
-object programTableMod extends js.Object {
-  @js.native
-  class ProgramTable () extends js.Object
+object programTableMod {
   
+  @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", "ProgramTable")
+  @js.native
+  class ProgramTable () extends StObject
   /* static members */
-  @js.native
-  object ProgramTable extends js.Object {
-    var lastUsedProgram: Program = js.native
-    def addProgram(key: String, program: Program): Unit = js.native
-    def clearAll(): Unit = js.native
-    def dispose(): Unit = js.native
-    def getProgram(key: String): Program = js.native
-    def hasProgram(key: String): Boolean = js.native
+  object ProgramTable {
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", "ProgramTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addProgram(key: String, program: Program): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addProgram")(key.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def getProgram(key: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("getProgram")(key.asInstanceOf[js.Any]).asInstanceOf[Program]
+    
+    @scala.inline
+    def hasProgram(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProgram")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", "ProgramTable.lastUsedProgram")
+    @js.native
+    def lastUsedProgram: Program = js.native
+    @scala.inline
+    def lastUsedProgram_=(x: Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastUsedProgram")(x.asInstanceOf[js.Any])
   }
-  
 }
-

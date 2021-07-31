@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundRepeatProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait BackgroundRepeatProps[ThemeType /* <: Theme[TLengthStyledSystem] */] exten
     */
   var backgroundRepeat: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BackgroundRepeatProps {
   
@@ -30,12 +28,12 @@ object BackgroundRepeatProps {
   }
   
   @scala.inline
-  implicit class BackgroundRepeatPropsMutableBuilder[Self <: BackgroundRepeatProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with BackgroundRepeatProps[ThemeType]) extends AnyVal {
+  implicit class BackgroundRepeatPropsMutableBuilder[Self <: BackgroundRepeatProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BackgroundRepeatProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setBackgroundRepeat(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object BackgroundRepeatProps {
     def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     @scala.inline
-    def setBackgroundRepeatVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
+    def setBackgroundRepeatVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any) | Null)*
+    ): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
   }
 }

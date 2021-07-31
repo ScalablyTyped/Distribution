@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfusionMatrix extends StObject {
   
   /**
     * The number of matches in the data that the transform didn't find, in the confusion matrix for your transform.
     */
-  var NumFalseNegatives: js.UndefOr[RecordsCount] = js.native
+  var NumFalseNegatives: js.UndefOr[RecordsCount] = js.undefined
   
   /**
     * The number of nonmatches in the data that the transform incorrectly classified as a match, in the confusion matrix for your transform.
     */
-  var NumFalsePositives: js.UndefOr[RecordsCount] = js.native
+  var NumFalsePositives: js.UndefOr[RecordsCount] = js.undefined
   
   /**
     * The number of nonmatches in the data that the transform correctly rejected, in the confusion matrix for your transform.
     */
-  var NumTrueNegatives: js.UndefOr[RecordsCount] = js.native
+  var NumTrueNegatives: js.UndefOr[RecordsCount] = js.undefined
   
   /**
     * The number of matches in the data that the transform correctly found, in the confusion matrix for your transform.
     */
-  var NumTruePositives: js.UndefOr[RecordsCount] = js.native
+  var NumTruePositives: js.UndefOr[RecordsCount] = js.undefined
 }
 object ConfusionMatrix {
   

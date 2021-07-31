@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionFilter extends StObject {
   
   /**
     * The dimension name to be matched.
     */
-  var Name: DimensionName = js.native
+  var Name: DimensionName
   
   /**
     * The value of the dimension to be matched.
     */
-  var Value: js.UndefOr[DimensionValue] = js.native
+  var Value: js.UndefOr[DimensionValue] = js.undefined
 }
 object DimensionFilter {
   

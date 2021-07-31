@@ -2,49 +2,49 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the SeriesPoint class.
   */
-@js.native
-trait ASPxClientSeriesPoint extends ASPxClientWebChartElement {
+trait ASPxClientSeriesPoint
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the data point's argument.
     */
-  var argument: js.Any = js.native
+  var argument: js.Any
   
   /**
     * Gets the color of a series point.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Gets the percent value of a series point.
     */
-  var percentValue: Double = js.native
+  var percentValue: Double
   
   /**
     * Gets the series that owns the current series point object.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
   
   /**
     * Gets a hint that is shown in series points tooltips.
     */
-  var toolTipHint: String = js.native
+  var toolTipHint: String
   
   /**
     * Gets the text to be displayed within series points tooltips.
     */
-  var toolTipText: String = js.native
+  var toolTipText: String
   
   /**
     * Gets the point's data value(s).
     */
-  var values: js.Array[_] = js.native
+  var values: js.Array[js.Any]
 }
 object ASPxClientSeriesPoint {
   
@@ -57,7 +57,7 @@ object ASPxClientSeriesPoint {
     series: ASPxClientSeries,
     toolTipHint: String,
     toolTipText: String,
-    values: js.Array[_]
+    values: js.Array[js.Any]
   ): ASPxClientSeriesPoint = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], percentValue = percentValue.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], toolTipHint = toolTipHint.asInstanceOf[js.Any], toolTipText = toolTipText.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSeriesPoint]
@@ -85,7 +85,7 @@ object ASPxClientSeriesPoint {
     def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))

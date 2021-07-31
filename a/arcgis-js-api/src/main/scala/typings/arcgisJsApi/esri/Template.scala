@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Template extends Object {
+trait Template
+  extends StObject
+     with Object {
   
   /**
     * The name of the auto-generated PopupTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Template)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The title of the PopupTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Template)
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * The suggested PopupTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Template)
     */
-  var value: PopupTemplate = js.native
+  var value: PopupTemplate
 }
 object Template {
   

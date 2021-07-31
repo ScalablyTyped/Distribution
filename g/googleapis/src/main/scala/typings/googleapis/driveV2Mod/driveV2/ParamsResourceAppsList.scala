@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsList extends StandardParameters {
+trait ParamsResourceAppsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * A comma-separated list of file extensions for open with filtering. All
@@ -19,7 +19,7 @@ trait ParamsResourceAppsList extends StandardParameters {
     * are provided as well, the result is a union of the two resulting app
     * lists.
     */
-  var appFilterExtensions: js.UndefOr[String] = js.native
+  var appFilterExtensions: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of MIME types for open with filtering. All apps
@@ -27,18 +27,18 @@ trait ParamsResourceAppsList extends StandardParameters {
     * types will be included in the response. If appFilterExtensions are
     * provided as well, the result is a union of the two resulting app lists.
     */
-  var appFilterMimeTypes: js.UndefOr[String] = js.native
+  var appFilterMimeTypes: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A language or locale code, as defined by BCP 47, with some extensions
     * from Unicode's LDML format (http://www.unicode.org/reports/tr35/).
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAppsList {
   

@@ -2,19 +2,17 @@ package typings.iconGen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ico extends StObject {
     
-    var ico: js.Array[Double] = js.native
+    var ico: js.Array[Double]
     
-    var name: String = js.native
+    var name: String
     
-    var sizes: js.Array[Double] = js.native
+    var sizes: js.Array[Double]
   }
   object Ico {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var sizes: js.Array[Double] = js.native
+    var sizes: js.Array[Double]
   }
   object Name {
     

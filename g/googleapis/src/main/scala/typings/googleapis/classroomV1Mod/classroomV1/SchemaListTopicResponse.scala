@@ -2,25 +2,23 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response when listing topics.
   */
-@js.native
 trait SchemaListTopicResponse extends StObject {
   
   /**
     * Token identifying the next page of results to return. If empty, no
     * further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Topic items that match the request.
     */
-  var topic: js.UndefOr[js.Array[SchemaTopic]] = js.native
+  var topic: js.UndefOr[js.Array[SchemaTopic]] = js.undefined
 }
 object SchemaListTopicResponse {
   

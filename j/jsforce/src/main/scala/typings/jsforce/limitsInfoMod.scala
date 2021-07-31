@@ -2,27 +2,27 @@ package typings.jsforce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object limitsInfoMod {
   
-  @js.native
-  trait DailyApiRequests extends Limit {
+  trait DailyApiRequests
+    extends StObject
+       with Limit {
     
-    var `Chatter Desktop`: Limit = js.native
+    var `Chatter Desktop`: Limit
     
-    var `Chatter Mobile for BlackBerry`: Limit = js.native
+    var `Chatter Mobile for BlackBerry`: Limit
     
-    var `Salesforce Files`: Limit = js.native
+    var `Salesforce Files`: Limit
     
-    var `Salesforce Marketing Cloud`: Limit = js.native
+    var `Salesforce Marketing Cloud`: Limit
     
-    var `Salesforce for Android`: Limit = js.native
+    var `Salesforce for Android`: Limit
     
-    var `Salesforce for iOS`: Limit = js.native
+    var `Salesforce for iOS`: Limit
     
-    var SalesforceA: Limit = js.native
+    var SalesforceA: Limit
   }
   object DailyApiRequests {
     
@@ -74,12 +74,11 @@ object limitsInfoMod {
     }
   }
   
-  @js.native
   trait Limit extends StObject {
     
-    var Max: Double = js.native
+    var Max: Double
     
-    var Remaining: Double = js.native
+    var Remaining: Double
   }
   object Limit {
     
@@ -100,62 +99,61 @@ object limitsInfoMod {
     }
   }
   
-  @js.native
   trait LimitsInfo extends StObject {
     
-    var ConcurrentAsyncGetReportInstances: Limit = js.native
+    var ConcurrentAsyncGetReportInstances: Limit
     
-    var ConcurrentSyncReportRuns: Limit = js.native
+    var ConcurrentSyncReportRuns: Limit
     
-    var DailyAnalyticsDataflowJobExecutions: Limit = js.native
+    var DailyAnalyticsDataflowJobExecutions: Limit
     
-    var DailyApiRequests: typings.jsforce.limitsInfoMod.DailyApiRequests = js.native
+    var DailyApiRequests: typings.jsforce.limitsInfoMod.DailyApiRequests
     
-    var DailyAsyncApexExecutions: Limit = js.native
+    var DailyAsyncApexExecutions: Limit
     
-    var DailyBulkApiRequests: DailyApiRequests = js.native
+    var DailyBulkApiRequests: DailyApiRequests
     
-    var DailyDurableGenericStreamingApiEvents: Limit = js.native
+    var DailyDurableGenericStreamingApiEvents: Limit
     
-    var DailyDurableStreamingApiEvents: Limit = js.native
+    var DailyDurableStreamingApiEvents: Limit
     
-    var DailyGenericStreamingApiEvents: DailyApiRequests = js.native
+    var DailyGenericStreamingApiEvents: DailyApiRequests
     
-    var DailyStreamingApiEvents: DailyApiRequests = js.native
+    var DailyStreamingApiEvents: DailyApiRequests
     
-    var DailyWorkflowEmails: Limit = js.native
+    var DailyWorkflowEmails: Limit
     
-    var DataStorageMB: Limit = js.native
+    var DataStorageMB: Limit
     
-    var DurableStreamingApiConcurrentClients: Limit = js.native
+    var DurableStreamingApiConcurrentClients: Limit
     
-    var FileStorageMB: Limit = js.native
+    var FileStorageMB: Limit
     
-    var HourlyAsyncReportRuns: Limit = js.native
+    var HourlyAsyncReportRuns: Limit
     
-    var HourlyDashboardRefreshes: Limit = js.native
+    var HourlyDashboardRefreshes: Limit
     
-    var HourlyDashboardResults: Limit = js.native
+    var HourlyDashboardResults: Limit
     
-    var HourlyDashboardStatuses: Limit = js.native
+    var HourlyDashboardStatuses: Limit
     
-    var HourlyODataCallout: Limit = js.native
+    var HourlyODataCallout: Limit
     
-    var HourlySyncReportRuns: Limit = js.native
+    var HourlySyncReportRuns: Limit
     
-    var HourlyTimeBasedWorkflow: Limit = js.native
+    var HourlyTimeBasedWorkflow: Limit
     
-    var MassEmail: Limit = js.native
+    var MassEmail: Limit
     
-    var MonthlyPlatformEvents: Limit = js.native
+    var MonthlyPlatformEvents: Limit
     
-    var Package2VersionCreates: Limit = js.native
+    var Package2VersionCreates: Limit
     
-    var PermissionSets: typings.jsforce.limitsInfoMod.PermissionSets = js.native
+    var PermissionSets: typings.jsforce.limitsInfoMod.PermissionSets
     
-    var SingleEmail: Limit = js.native
+    var SingleEmail: Limit
     
-    var StreamingApiConcurrentClients: Limit = js.native
+    var StreamingApiConcurrentClients: Limit
   }
   object LimitsInfo {
     
@@ -279,10 +277,11 @@ object limitsInfoMod {
     }
   }
   
-  @js.native
-  trait PermissionSets extends Limit {
+  trait PermissionSets
+    extends StObject
+       with Limit {
     
-    var CreateCustom: Limit = js.native
+    var CreateCustom: Limit
   }
   object PermissionSets {
     

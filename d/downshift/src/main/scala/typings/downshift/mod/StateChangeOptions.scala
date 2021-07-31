@@ -2,22 +2,20 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<downshift.downshift.DownshiftState<Item>> */
-@js.native
 trait StateChangeOptions[Item] extends StObject {
   
-  var highlightedIndex: js.UndefOr[Double | Null] = js.native
+  var highlightedIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var inputValue: js.UndefOr[String | Null] = js.native
+  var inputValue: js.UndefOr[String | Null] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var `type`: StateChangeTypes = js.native
+  var `type`: StateChangeTypes
 }
 object StateChangeOptions {
   
@@ -29,7 +27,7 @@ object StateChangeOptions {
   }
   
   @scala.inline
-  implicit class StateChangeOptionsMutableBuilder[Self <: StateChangeOptions[_], Item] (val x: Self with StateChangeOptions[Item]) extends AnyVal {
+  implicit class StateChangeOptionsMutableBuilder[Self <: StateChangeOptions[?], Item] (val x: Self & StateChangeOptions[Item]) extends AnyVal {
     
     @scala.inline
     def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])

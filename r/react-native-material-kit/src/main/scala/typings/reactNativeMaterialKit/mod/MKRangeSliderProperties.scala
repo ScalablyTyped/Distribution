@@ -3,21 +3,21 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MKRangeSliderProperties extends BaseSlider {
+trait MKRangeSliderProperties
+  extends StObject
+     with BaseSlider {
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* curValue */ Max, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* curValue */ Max, Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function1[/* curValue */ Max, Unit]] = js.native
+  var onConfirm: js.UndefOr[js.Function1[/* curValue */ Max, Unit]] = js.undefined
   
-  var onStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object MKRangeSliderProperties {
   

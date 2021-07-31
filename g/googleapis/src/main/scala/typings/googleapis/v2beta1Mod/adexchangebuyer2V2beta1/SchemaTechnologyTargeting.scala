@@ -2,29 +2,27 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents targeting about various types of technology.
   */
-@js.native
 trait SchemaTechnologyTargeting extends StObject {
   
   /**
     * IDs of device capabilities to be included/excluded.
     */
-  var deviceCapabilityTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.native
+  var deviceCapabilityTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.undefined
   
   /**
     * IDs of device categories to be included/excluded.
     */
-  var deviceCategoryTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.native
+  var deviceCategoryTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.undefined
   
   /**
     * Operating system related targeting information.
     */
-  var operatingSystemTargeting: js.UndefOr[SchemaOperatingSystemTargeting] = js.native
+  var operatingSystemTargeting: js.UndefOr[SchemaOperatingSystemTargeting] = js.undefined
 }
 object SchemaTechnologyTargeting {
   

@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoProviderOptions extends StObject {
   
   /**
     * If set, the renderer will use technologies (like webgl) that only work when cors headers are appropiately set on the provided images.
     * It is the developer's task to serve the images correctly in combination with this flag, which might otherwise lead to SecurityErrors.
     */
-  var cors: js.UndefOr[Boolean] = js.native
+  var cors: js.UndefOr[Boolean] = js.undefined
 }
 object PanoProviderOptions {
   

@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Trigger")
@@ -13,8 +12,8 @@ class Trigger () extends Base {
   
   def check(value: js.Any): Unit = js.native
   
-  def checkExpression(keys: js.Any, values: HashTable[_]): Unit = js.native
-  def checkExpression(keys: js.Any, values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  def checkExpression(keys: js.Any, values: HashTable[js.Any]): Unit = js.native
+  def checkExpression(keys: js.Any, values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
   var expression: String = js.native
   
@@ -22,7 +21,7 @@ class Trigger () extends Base {
   
   /* protected */ def onFailure(): Unit = js.native
   
-  /* protected */ def onSuccess(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  /* protected */ def onSuccess(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
   var operator: String = js.native
   

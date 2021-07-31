@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,43 +12,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * translate_x;      y&#39; = scale_y * y + shear_y * x + translate_y;  This
   * message is therefore composed of these six matrix elements.
   */
-@js.native
 trait SchemaAffineTransform extends StObject {
   
   /**
     * The X coordinate scaling element.
     */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
     * The Y coordinate scaling element.
     */
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
   /**
     * The X coordinate shearing element.
     */
-  var shearX: js.UndefOr[Double] = js.native
+  var shearX: js.UndefOr[Double] = js.undefined
   
   /**
     * The Y coordinate shearing element.
     */
-  var shearY: js.UndefOr[Double] = js.native
+  var shearY: js.UndefOr[Double] = js.undefined
   
   /**
     * The X coordinate translation element.
     */
-  var translateX: js.UndefOr[Double] = js.native
+  var translateX: js.UndefOr[Double] = js.undefined
   
   /**
     * The Y coordinate translation element.
     */
-  var translateY: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.undefined
   
   /**
     * The units for translate elements.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object SchemaAffineTransform {
   

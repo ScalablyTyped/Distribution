@@ -2,13 +2,11 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsMobilePhoneOptions extends StObject {
   
-  var strictMode: js.UndefOr[Boolean] = js.native
+  var strictMode: js.UndefOr[Boolean] = js.undefined
 }
 object IsMobilePhoneOptions {
   

@@ -5,52 +5,52 @@ import typings.rxLite.Rx.IScheduler
 import typings.rxLite.Rx.internals.ScheduledItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
   
   type HistoricalScheduler = VirtualTimeScheduler[Double, Double]
   
-  @js.native
-  trait VirtualTimeScheduler[TAbsolute, TRelative] extends IScheduler {
+  trait VirtualTimeScheduler[TAbsolute, TRelative]
+    extends StObject
+       with IScheduler {
     
-    /* protected abstract */ def add(from: TAbsolute, by: TRelative): TAbsolute = js.native
+    /* protected abstract */ def add(from: TAbsolute, by: TRelative): TAbsolute
     
     // protected constructor(initialClock: TAbsolute, comparer: (first: TAbsolute, second: TAbsolute) => number);
-    def advanceBy(time: TRelative): Unit = js.native
+    def advanceBy(time: TRelative): Unit
     
-    def advanceTo(time: TAbsolute): Unit = js.native
+    def advanceTo(time: TAbsolute): Unit
     
-    /* protected */ def getNext(): ScheduledItem[TAbsolute] = js.native
+    /* protected */ def getNext(): ScheduledItem[TAbsolute]
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    def scheduleAbsolute(dueTime: TAbsolute, action: js.Function0[Unit]): IDisposable = js.native
+    def scheduleAbsolute(dueTime: TAbsolute, action: js.Function0[Unit]): IDisposable
     
     def scheduleAbsoluteWithState[TState](
       state: TState,
       dueTime: TAbsolute,
       action: js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, /* state */ TState, IDisposable]
-    ): IDisposable = js.native
+    ): IDisposable
     
-    def scheduleRelative(dueTime: TRelative, action: js.Function0[Unit]): IDisposable = js.native
+    def scheduleRelative(dueTime: TRelative, action: js.Function0[Unit]): IDisposable
     
     def scheduleRelativeWithState[TState](
       state: TState,
       dueTime: TRelative,
       action: js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, /* state */ TState, IDisposable]
-    ): IDisposable = js.native
+    ): IDisposable
     
-    def sleep(time: TRelative): Unit = js.native
+    def sleep(time: TRelative): Unit
     
-    def start(): IDisposable = js.native
+    def start(): IDisposable
     
-    def stop(): Unit = js.native
+    def stop(): Unit
     
-    /* protected abstract */ def toDateTimeOffset(duetime: TAbsolute): Double = js.native
+    /* protected abstract */ def toDateTimeOffset(duetime: TAbsolute): Double
     
-    /* protected abstract */ def toRelative(duetime: Double): TRelative = js.native
+    /* protected abstract */ def toRelative(duetime: Double): TRelative
   }
   object VirtualTimeScheduler {
     
@@ -92,7 +92,7 @@ object Rx {
     }
     
     @scala.inline
-    implicit class VirtualTimeSchedulerMutableBuilder[Self <: VirtualTimeScheduler[_, _], TAbsolute, TRelative] (val x: Self with (VirtualTimeScheduler[TAbsolute, TRelative])) extends AnyVal {
+    implicit class VirtualTimeSchedulerMutableBuilder[Self <: VirtualTimeScheduler[?, ?], TAbsolute, TRelative] (val x: Self & (VirtualTimeScheduler[TAbsolute, TRelative])) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (TAbsolute, TRelative) => TAbsolute): Self = StObject.set(x, "add", js.Any.fromFunction2(value))

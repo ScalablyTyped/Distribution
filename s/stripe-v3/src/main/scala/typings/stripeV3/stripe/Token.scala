@@ -2,29 +2,27 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
-  var bank_account: js.UndefOr[BankAccount] = js.native
+  var bank_account: js.UndefOr[BankAccount] = js.undefined
   
-  var card: js.UndefOr[Card] = js.native
+  var card: js.UndefOr[Card] = js.undefined
   
-  var client_ip: String = js.native
+  var client_ip: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var id: String = js.native
+  var id: String
   
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var used: Boolean = js.native
+  var used: Boolean
 }
 object Token {
   

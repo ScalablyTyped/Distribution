@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object events {
   
   /** An object which allows the addition and removal of listeners for a Chrome event. */
-  @js.native
   trait Event extends StObject {
     
     /**
       * Registers an event listener _callback_ to an event.
       * @param callback Called when an event occurs. The parameters of this function depend on the type of event.
       */
-    def addListener(callback: js.Function0[Unit]): Unit = js.native
+    def addListener(callback: js.Function0[Unit]): Unit
     
     /**
       * Registers rules to handle events.
@@ -36,7 +34,7 @@ object events {
           /* rules */ js.Array[Rule], 
           js.Promise[js.Array[Rule]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Returns currently registered rules.
@@ -52,22 +50,22 @@ object events {
           /* ruleIdentifiers */ js.UndefOr[js.Array[String]], 
           js.Promise[js.Array[Rule]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @param callback Listener whose registration status shall be tested.
       * @returns True if _callback_ is registered to the event.
       */
-    def hasListener(callback: js.Function0[Unit]): Boolean = js.native
+    def hasListener(callback: js.Function0[Unit]): Boolean
     
     /** @returns True if any event listeners are registered to the event. */
-    def hasListeners(): Boolean = js.native
+    def hasListeners(): Boolean
     
     /**
       * Deregisters an event listener _callback_ from an event.
       * @param callback Listener that shall be unregistered.
       */
-    def removeListener(callback: js.Function0[Unit]): Unit = js.native
+    def removeListener(callback: js.Function0[Unit]): Unit
     
     /**
       * Unregisters currently registered rules.
@@ -83,7 +81,7 @@ object events {
           /* ruleIdentifiers */ js.UndefOr[js.Array[String]], 
           js.Promise[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Event {
     
@@ -141,28 +139,27 @@ object events {
   
   /* events types */
   /** Description of a declarative rule for handling events. */
-  @js.native
   trait Rule extends StObject {
     
     /** List of actions that are triggered if one of the condtions is fulfilled. */
-    var actions: js.Array[_] = js.native
+    var actions: js.Array[js.Any]
     
     /** List of conditions that can trigger the actions. */
-    var conditions: js.Array[_] = js.native
+    var conditions: js.Array[js.Any]
     
     /** Optional identifier that allows referencing this rule. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Optional priority of this rule. Defaults to 100. */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** Tags can be used to annotate rules and perform operations on sets of rules. */
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Rule {
     
     @scala.inline
-    def apply(actions: js.Array[_], conditions: js.Array[_]): Rule = {
+    def apply(actions: js.Array[js.Any], conditions: js.Array[js.Any]): Rule = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
@@ -171,13 +168,13 @@ object events {
     implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActions(value: js.Array[_]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
       @scala.inline
-      def setConditions(value: js.Array[_]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      def setConditions(value: js.Array[js.Any]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConditionsVarargs(value: js.Any*): Self = StObject.set(x, "conditions", js.Array(value :_*))
@@ -206,84 +203,83 @@ object events {
   }
   
   /** Filters URLs for various criteria. See event filtering. All criteria are case sensitive. */
-  @js.native
   trait UrlFilter extends StObject {
     
     /**
       * Matches if the host name of the URL contains a specified string. To test whether a host name component has a prefix 'foo', use hostContains: '.foo'. This matches 'www.foobar.com' and 'foo.com', because an implicit dot is added at the beginning of the host name. Similarly, hostContains can be used to match against component suffix ('foo.') and to exactly match against components ('.foo.'). Suffix- and exact-matching for the last components need to be done separately using hostSuffix, because no implicit dot is added at the end of the host name.
       */
-    var hostContains: js.UndefOr[String] = js.native
+    var hostContains: js.UndefOr[String] = js.undefined
     
     /** Matches if the host name of the URL is equal to a specified string. */
-    var hostEquals: js.UndefOr[String] = js.native
+    var hostEquals: js.UndefOr[String] = js.undefined
     
     /** Matches if the host name of the URL starts with a specified string. */
-    var hostPrefix: js.UndefOr[String] = js.native
+    var hostPrefix: js.UndefOr[String] = js.undefined
     
     /** Matches if the host name of the URL ends with a specified string. */
-    var hostSuffix: js.UndefOr[String] = js.native
+    var hostSuffix: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the URL without query segment and fragment identifier matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the [RE2 syntax](https://github.com/google/re2/blob/master/doc/syntax.txt).
       */
-    var originAndPathMatches: js.UndefOr[String] = js.native
+    var originAndPathMatches: js.UndefOr[String] = js.undefined
     
     /** Matches if the path segment of the URL contains a specified string. */
-    var pathContains: js.UndefOr[String] = js.native
+    var pathContains: js.UndefOr[String] = js.undefined
     
     /** Matches if the path segment of the URL is equal to a specified string. */
-    var pathEquals: js.UndefOr[String] = js.native
+    var pathEquals: js.UndefOr[String] = js.undefined
     
     /** Matches if the path segment of the URL starts with a specified string. */
-    var pathPrefix: js.UndefOr[String] = js.native
+    var pathPrefix: js.UndefOr[String] = js.undefined
     
     /** Matches if the path segment of the URL ends with a specified string. */
-    var pathSuffix: js.UndefOr[String] = js.native
+    var pathSuffix: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the port of the URL is contained in any of the specified port lists. For example `[80, 443, [1000, 1200]]` matches all requests on port 80, 443 and in the range 1000-1200.
       */
-    var ports: js.UndefOr[js.Array[Double | (js.Tuple2[Double, Double])]] = js.native
+    var ports: js.UndefOr[js.Array[Double | (js.Tuple2[Double, Double])]] = js.undefined
     
     /** Matches if the query segment of the URL contains a specified string. */
-    var queryContains: js.UndefOr[String] = js.native
+    var queryContains: js.UndefOr[String] = js.undefined
     
     /** Matches if the query segment of the URL is equal to a specified string. */
-    var queryEquals: js.UndefOr[String] = js.native
+    var queryEquals: js.UndefOr[String] = js.undefined
     
     /** Matches if the query segment of the URL starts with a specified string. */
-    var queryPrefix: js.UndefOr[String] = js.native
+    var queryPrefix: js.UndefOr[String] = js.undefined
     
     /** Matches if the query segment of the URL ends with a specified string. */
-    var querySuffix: js.UndefOr[String] = js.native
+    var querySuffix: js.UndefOr[String] = js.undefined
     
     /** Matches if the scheme of the URL is equal to any of the schemes specified in the array. */
-    var schemes: js.UndefOr[js.Array[String]] = js.native
+    var schemes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Matches if the URL (without fragment identifier) contains a specified string. Port numbers are stripped from the URL if they match the default port number.
       */
-    var urlContains: js.UndefOr[String] = js.native
+    var urlContains: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the URL (without fragment identifier) is equal to a specified string. Port numbers are stripped from the URL if they match the default port number.
       */
-    var urlEquals: js.UndefOr[String] = js.native
+    var urlEquals: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the URL (without fragment identifier) matches a specified regular expression. Port numbers are stripped from the URL if they match the default port number. The regular expressions use the [RE2 syntax](https://github.com/google/re2/blob/master/doc/syntax.txt).
       */
-    var urlMatches: js.UndefOr[String] = js.native
+    var urlMatches: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the URL (without fragment identifier) starts with a specified string. Port numbers are stripped from the URL if they match the default port number.
       */
-    var urlPrefix: js.UndefOr[String] = js.native
+    var urlPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Matches if the URL (without fragment identifier) ends with a specified string. Port numbers are stripped from the URL if they match the default port number.
       */
-    var urlSuffix: js.UndefOr[String] = js.native
+    var urlSuffix: js.UndefOr[String] = js.undefined
   }
   object UrlFilter {
     

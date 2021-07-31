@@ -2,13 +2,11 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
   */
-@js.native
 trait Slice extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait Slice extends StObject {
     * 
     * Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if required.
     */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     * Gets the zero-based index of the file slice.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the size of the slice in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Slice {
   

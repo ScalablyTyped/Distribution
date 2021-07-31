@@ -6,30 +6,30 @@ import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefetchVariables extends Action {
+trait RefetchVariables
+  extends StObject
+     with Action {
   
-  var environment: js.UndefOr[typings.relayRuntime.relayStoreTypesMod.Environment | Null] = js.native
+  var environment: js.UndefOr[typings.relayRuntime.relayStoreTypesMod.Environment | Null] = js.undefined
   
-  var fetchPolicy: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy] = js.native
+  var fetchPolicy: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* args */ typings.std.Error | Null, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* args */ typings.std.Error | Null, Unit]] = js.undefined
   
-  var refetchVariables: Variables = js.native
+  var refetchVariables: Variables
   
-  var renderPolicy: js.UndefOr[RenderPolicy] = js.native
+  var renderPolicy: js.UndefOr[RenderPolicy] = js.undefined
   
-  var `type`: refetch = js.native
+  var `type`: refetch
 }
 object RefetchVariables {
   
   @scala.inline
-  def apply(refetchVariables: Variables, `type`: refetch): RefetchVariables = {
+  def apply(refetchVariables: Variables): RefetchVariables = {
     val __obj = js.Dynamic.literal(refetchVariables = refetchVariables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("refetch")
     __obj.asInstanceOf[RefetchVariables]
   }
   

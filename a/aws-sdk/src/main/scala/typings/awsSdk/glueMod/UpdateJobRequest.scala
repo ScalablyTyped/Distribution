@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobRequest extends StObject {
   
   /**
     * The name of the job definition to update.
     */
-  var JobName: NameString = js.native
+  var JobName: NameString
   
   /**
     * Specifies the values with which to update the job definition.
     */
-  var JobUpdate: typings.awsSdk.glueMod.JobUpdate = js.native
+  var JobUpdate: typings.awsSdk.glueMod.JobUpdate
 }
 object UpdateJobRequest {
   

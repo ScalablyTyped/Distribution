@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlarmsOutput extends StObject {
   
   /**
     * The information about any composite alarms returned by the operation.
     */
-  var CompositeAlarms: js.UndefOr[typings.awsSdk.cloudwatchMod.CompositeAlarms] = js.native
+  var CompositeAlarms: js.UndefOr[typings.awsSdk.cloudwatchMod.CompositeAlarms] = js.undefined
   
   /**
     * The information about any metric alarms returned by the operation.
     */
-  var MetricAlarms: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricAlarms] = js.native
+  var MetricAlarms: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricAlarms] = js.undefined
   
   /**
     * The token that marks the start of the next batch of returned results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
 }
 object DescribeAlarmsOutput {
   

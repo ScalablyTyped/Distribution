@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssociationBatchRequest extends StObject {
   
   /**
     * One or more associations.
     */
-  var Entries: CreateAssociationBatchRequestEntries = js.native
+  var Entries: CreateAssociationBatchRequestEntries
 }
 object CreateAssociationBatchRequest {
   

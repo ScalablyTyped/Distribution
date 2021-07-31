@@ -2,17 +2,17 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RaphaelReadAttributes extends RaphaelAttributes {
+trait RaphaelReadAttributes
+  extends StObject
+     with RaphaelAttributes {
   
   /**
     * The transform property of this element.
     */
   @JSName("transform")
-  var transform_RaphaelReadAttributes: js.Array[RaphaelTransformSegment] = js.native
+  var transform_RaphaelReadAttributes: js.Array[RaphaelTransformSegment]
 }
 object RaphaelReadAttributes {
   

@@ -3,13 +3,13 @@ package typings.modernizr
 import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlashBoolean extends Boolean {
+trait FlashBoolean
+  extends StObject
+     with Boolean {
   
-  var blocked: scala.Boolean = js.native
+  var blocked: scala.Boolean
 }
 object FlashBoolean {
   

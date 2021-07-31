@@ -2,15 +2,13 @@ package typings.aceBuilds.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageX extends StObject {
   
-  var pageX: Double = js.native
+  var pageX: Double
   
-  var pageY: Double = js.native
+  var pageY: Double
 }
 object PageX {
   

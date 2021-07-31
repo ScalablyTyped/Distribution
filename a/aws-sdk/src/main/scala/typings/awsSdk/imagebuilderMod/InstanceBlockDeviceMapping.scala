@@ -2,31 +2,29 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceBlockDeviceMapping extends StObject {
   
   /**
     * The device to which these mappings apply.
     */
-  var deviceName: js.UndefOr[NonEmptyString] = js.native
+  var deviceName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Use to manage Amazon EBS-specific configuration for this mapping.
     */
-  var ebs: js.UndefOr[EbsInstanceBlockDeviceSpecification] = js.native
+  var ebs: js.UndefOr[EbsInstanceBlockDeviceSpecification] = js.undefined
   
   /**
     * Use to remove a mapping from the parent image.
     */
-  var noDevice: js.UndefOr[EmptyString] = js.native
+  var noDevice: js.UndefOr[EmptyString] = js.undefined
   
   /**
     * Use to manage instance ephemeral devices.
     */
-  var virtualName: js.UndefOr[NonEmptyString] = js.native
+  var virtualName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object InstanceBlockDeviceMapping {
   

@@ -3,25 +3,23 @@ package typings.handlebars
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  var DEBUG: Double = js.native
+  var DEBUG: Double
   
-  var ERROR: Double = js.native
+  var ERROR: Double
   
-  var INFO: Double = js.native
+  var INFO: Double
   
-  var WARN: Double = js.native
+  var WARN: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  def log(level: Double, obj: String): Unit = js.native
+  def log(level: Double, obj: String): Unit
   
-  var methodMap: NumberDictionary[String] = js.native
+  var methodMap: NumberDictionary[String]
 }
 object Logger {
   

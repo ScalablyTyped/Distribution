@@ -10,9 +10,9 @@ An Ethereum VM implementation
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-vm |
 | Keywords           | ethereum, VM |
-| # releases         | 12 |
-| # dependents       | 88 |
-| # downloads        | 2884443 |
+| # releases         | 9 |
+| # dependents       | 99 |
+| # downloads        | 3514852 |
 | # stars            | 0 |
 
 ## Links

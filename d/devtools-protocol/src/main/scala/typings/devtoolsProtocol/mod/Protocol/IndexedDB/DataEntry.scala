@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataEntry extends StObject {
   
   /**
     * Key object.
     */
-  var key: RemoteObject = js.native
+  var key: RemoteObject
   
   /**
     * Primary key object.
     */
-  var primaryKey: RemoteObject = js.native
+  var primaryKey: RemoteObject
   
   /**
     * Value object.
     */
-  var value: RemoteObject = js.native
+  var value: RemoteObject
 }
 object DataEntry {
   

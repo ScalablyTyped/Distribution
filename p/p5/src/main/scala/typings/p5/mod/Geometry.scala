@@ -2,10 +2,8 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
   /**
@@ -13,30 +11,30 @@ trait Geometry extends StObject {
     *   surfaces
     *   @chainable
     */
-  def averageNormals(): Geometry = js.native
+  def averageNormals(): Geometry
   
   /**
     *   Averages pole normals. Used in spherical
     *   primitives
     *   @chainable
     */
-  def averagePoleNormals(): Geometry = js.native
+  def averagePoleNormals(): Geometry
   
-  def computeFaces(): Geometry = js.native
+  def computeFaces(): Geometry
   
   /**
     *   computes smooth normals per vertex as an average
     *   of each face.
     *   @chainable
     */
-  def computeNormals(): Geometry = js.native
+  def computeNormals(): Geometry
   
   /**
     *   Modifies all vertices to be centered within the
     *   range -100 to 100.
     *   @chainable
     */
-  def normalize(): Geometry = js.native
+  def normalize(): Geometry
 }
 object Geometry {
   

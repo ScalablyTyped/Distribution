@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /** The filter string to use for notification filtering. Currently, this is assumed to be a CEL program. See https://opensource.google/projects/cel for more. */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /** Configuration for HTTP delivery. */
-  var httpDelivery: js.UndefOr[HTTPDelivery] = js.native
+  var httpDelivery: js.UndefOr[HTTPDelivery] = js.undefined
   
   /** Configuration for Slack delivery. */
-  var slackDelivery: js.UndefOr[SlackDelivery] = js.native
+  var slackDelivery: js.UndefOr[SlackDelivery] = js.undefined
   
   /** Configuration for SMTP (email) delivery. */
-  var smtpDelivery: js.UndefOr[SMTPDelivery] = js.native
+  var smtpDelivery: js.UndefOr[SMTPDelivery] = js.undefined
   
   /** Escape hatch for users to supply custom delivery configs. */
   var structDelivery: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Notification {
   
@@ -67,7 +65,7 @@ object Notification {
     def setStructDelivery(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[js.Any]
     ): Self = StObject.set(x, "structDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline

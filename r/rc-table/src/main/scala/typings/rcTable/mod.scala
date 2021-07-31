@@ -9,34 +9,38 @@ import typings.rcTable.tableMod.TableProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("rc-table", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
+    
+    @scala.inline
+    def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("rc-table", JSImport.Default)
     @js.native
-    def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = js.native
+    val ^ : js.Any = js.native
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_Column.default` */
-    @JSImport("rc-table", "default.Column")
-    @js.native
-    def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+    @scala.inline
+    def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_ColumnGroup.default` */
-    @JSImport("rc-table", "default.ColumnGroup")
-    @js.native
-    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+    @scala.inline
+    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     object Summary {
       
@@ -63,9 +67,8 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("rc-table", "default.defaultProps.emptyText")
-      @js.native
-      def emptyText(): String = js.native
+      @scala.inline
+      def emptyText(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyText")().asInstanceOf[String]
       
       @JSImport("rc-table", "default.defaultProps.prefixCls")
       @js.native
@@ -85,17 +88,15 @@ object mod {
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  @JSImport("rc-table", "Column")
-  @js.native
-  def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+  @scala.inline
+  def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  @JSImport("rc-table", "ColumnGroup")
-  @js.native
-  def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+  @scala.inline
+  def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("rc-table", "INTERNAL_COL_DEFINE")
   @js.native

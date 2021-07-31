@@ -2,21 +2,19 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstrainDragToContainer extends StObject {
   
-  var constrainDragToContainer: js.UndefOr[Boolean] = js.native
+  var constrainDragToContainer: js.UndefOr[Boolean] = js.undefined
   
-  var popoutWholeStack: js.UndefOr[Boolean] = js.native
+  var popoutWholeStack: js.UndefOr[Boolean] = js.undefined
   
-  var showCloseIcon: js.UndefOr[Boolean] = js.native
+  var showCloseIcon: js.UndefOr[Boolean] = js.undefined
   
-  var showMaximiseIcon: js.UndefOr[Boolean] = js.native
+  var showMaximiseIcon: js.UndefOr[Boolean] = js.undefined
   
-  var showPopoutIcon: js.UndefOr[Boolean] = js.native
+  var showPopoutIcon: js.UndefOr[Boolean] = js.undefined
 }
 object ConstrainDragToContainer {
   

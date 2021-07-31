@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
   /** The API version for this call such as "serving.knative.dev/v1". */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** The kind of this resource, in this case always "Route". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metadata associated with this Route, including name, namespace, labels, and annotations. */
-  var metadata: js.UndefOr[ObjectMeta] = js.native
+  var metadata: js.UndefOr[ObjectMeta] = js.undefined
   
   /** Spec holds the desired state of the Route (from the client). */
-  var spec: js.UndefOr[RouteSpec] = js.native
+  var spec: js.UndefOr[RouteSpec] = js.undefined
   
   /** Status communicates the observed state of the Route (from the controller). */
-  var status: js.UndefOr[RouteStatus] = js.native
+  var status: js.UndefOr[RouteStatus] = js.undefined
 }
 object Route {
   

@@ -1,133 +1,81 @@
 package typings.ionicCore.componentsMod.global
 
-import typings.ionicCore.ionicCoreStrings.always
-import typings.ionicCore.ionicCoreStrings.decimal
-import typings.ionicCore.ionicCoreStrings.done
-import typings.ionicCore.ionicCoreStrings.email
-import typings.ionicCore.ionicCoreStrings.enter
-import typings.ionicCore.ionicCoreStrings.focus
-import typings.ionicCore.ionicCoreStrings.go
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
-import typings.ionicCore.ionicCoreStrings.never
-import typings.ionicCore.ionicCoreStrings.next
-import typings.ionicCore.ionicCoreStrings.none
-import typings.ionicCore.ionicCoreStrings.number
-import typings.ionicCore.ionicCoreStrings.numeric
-import typings.ionicCore.ionicCoreStrings.off
-import typings.ionicCore.ionicCoreStrings.on
-import typings.ionicCore.ionicCoreStrings.password
-import typings.ionicCore.ionicCoreStrings.previous
-import typings.ionicCore.ionicCoreStrings.search
-import typings.ionicCore.ionicCoreStrings.send
-import typings.ionicCore.ionicCoreStrings.tel
-import typings.ionicCore.ionicCoreStrings.text
-import typings.ionicCore.ionicCoreStrings.url
-import typings.ionicCore.mod.AutocompleteTypes
-import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
-import typings.std.HTMLInputElement
+import typings.ionicCore.componentsMod.Components.IonSearchbar
+import typings.std.AddEventListenerOptions
+import typings.std.DocumentAndElementEventHandlers
+import typings.std.Element
+import typings.std.ElementCSSInlineStyle
+import typings.std.ElementContentEditable
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
+import typings.std.GlobalEventHandlers
+import typings.std.HTMLOrSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.ionicCore.componentsMod.Components.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, disabled, enterkeyhint, getInputElement, inputmode, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
-trait HTMLIonSearchbarElement extends HTMLStencilElement {
+- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- js.Any because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+- typings.std.HTMLElement because Inheritance from two classes. Inlined accessKeyLabel, offsetWidth, accessKey, offsetTop, innerText, offsetLeft, offsetParent, lang, translate, autocapitalize, dir, draggable, hidden, title, offsetHeight, click, addEventListener, addEventListener, removeEventListener, removeEventListener, addEventListener, removeEventListener
+- typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement because Inheritance from two classes. Inlined componentOnReady */ @js.native
+trait HTMLIonSearchbarElement
+  extends StObject
+     with IonSearchbar
+     with Element
+     with DocumentAndElementEventHandlers
+     with ElementCSSInlineStyle
+     with ElementContentEditable
+     with GlobalEventHandlers
+     with HTMLOrSVGElement {
   
-  /**
-    * If `true`, enable searchbar animation.
-    */
-  var animated: Boolean = js.native
+  var accessKey: String = js.native
   
-  /**
-    * Set the input's autocomplete property.
-    */
-  var autocomplete: AutocompleteTypes = js.native
+  val accessKeyLabel: String = js.native
   
-  /**
-    * Set the input's autocorrect property.
-    */
-  var autocorrect: on | off = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
-  /**
-    * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
-    */
-  var cancelButtonIcon: String = js.native
+  var autocapitalize: String = js.native
   
-  /**
-    * Set the the cancel button text. Only applies to `ios` mode.
-    */
-  var cancelButtonText: String = js.native
+  def click(): Unit = js.native
   
-  /**
-    * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
-    */
-  var clearIcon: js.UndefOr[String] = js.native
+  def componentOnReady(): js.Promise[this.type] = js.native
   
-  /**
-    * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
-    */
-  var color: js.UndefOr[Color] = js.native
+  var dir: String = js.native
   
-  /**
-    * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.
-    */
-  var debounce: Double = js.native
+  var draggable: Boolean = js.native
   
-  /**
-    * If `true`, the user cannot interact with the input.
-    */
-  var disabled: Boolean = js.native
+  var hidden: Boolean = js.native
   
-  /**
-    * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
-    */
-  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+  var innerText: String = js.native
   
-  /**
-    * Returns the native `<input>` element used under the hood.
-    */
-  def getInputElement(): js.Promise[HTMLInputElement] = js.native
+  var lang: String = js.native
   
-  /**
-    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
-    */
-  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  val offsetHeight: Double = js.native
   
-  /**
-    * The mode determines which platform styles to use.
-    */
-  var mode: js.UndefOr[ios | md] = js.native
+  val offsetLeft: Double = js.native
   
-  /**
-    * Set the input's placeholder. `placeholder` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
-    */
-  var placeholder: String = js.native
+  val offsetParent: Element | Null = js.native
   
-  /**
-    * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
-    */
-  var searchIcon: js.UndefOr[String] = js.native
+  val offsetTop: Double = js.native
   
-  /**
-    * Sets focus on the specified `ion-searchbar`. Use this method instead of the global `input.focus()`.
-    */
-  def setFocus(): js.Promise[Unit] = js.native
+  val offsetWidth: Double = js.native
   
-  /**
-    * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
-    */
-  var showCancelButton: never | focus | always = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
-  /**
-    * Set the type of the input.
-    */
-  var `type`: text | password | email | number | search | tel | url = js.native
+  var title: String = js.native
   
-  /**
-    * the value of the searchbar.
-    */
-  var value: js.UndefOr[String | Null] = js.native
+  var translate: Boolean = js.native
 }

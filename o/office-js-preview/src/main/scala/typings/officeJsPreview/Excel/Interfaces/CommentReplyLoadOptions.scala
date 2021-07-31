@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.10]
   */
-@js.native
 trait CommentReplyLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var authorEmail: js.UndefOr[Boolean] = js.native
+  var authorEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var authorName: js.UndefOr[Boolean] = js.native
+  var authorName: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var content: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var contentType: js.UndefOr[Boolean] = js.native
+  var contentType: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var creationDate: js.UndefOr[Boolean] = js.native
+  var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var mentions: js.UndefOr[Boolean] = js.native
+  var mentions: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var resolved: js.UndefOr[Boolean] = js.native
+  var resolved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait CommentReplyLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var richContent: js.UndefOr[Boolean] = js.native
+  var richContent: js.UndefOr[Boolean] = js.undefined
 }
 object CommentReplyLoadOptions {
   

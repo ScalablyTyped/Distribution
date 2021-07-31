@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatorOptions extends StObject {
   
-  var errorTemplate: js.UndefOr[String] = js.native
+  var errorTemplate: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[js.Any] = js.native
+  var messages: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.native
+  var rules: js.UndefOr[js.Any] = js.undefined
   
-  var validate: js.UndefOr[js.Function1[/* e */ ValidatorValidateEvent, Unit]] = js.native
+  var validate: js.UndefOr[js.Function1[/* e */ ValidatorValidateEvent, Unit]] = js.undefined
   
-  var validateInput: js.UndefOr[js.Function1[/* e */ ValidatorValidateInputEvent, Unit]] = js.native
+  var validateInput: js.UndefOr[js.Function1[/* e */ ValidatorValidateInputEvent, Unit]] = js.undefined
   
-  var validateOnBlur: js.UndefOr[Boolean] = js.native
+  var validateOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var validationSummary: js.UndefOr[Boolean | ValidationSummary] = js.native
+  var validationSummary: js.UndefOr[Boolean | ValidationSummary] = js.undefined
 }
 object ValidatorOptions {
   

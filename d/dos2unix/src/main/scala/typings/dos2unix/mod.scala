@@ -15,7 +15,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,10 +53,9 @@ object mod {
     def process(globPatterns: js.Array[String], options: Options): Unit = js.native
   }
   
-  @js.native
   trait FileData extends StObject {
     
-    var file: String = js.native
+    var file: String
   }
   object FileData {
     
@@ -75,10 +73,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MessageData extends FileData {
+  trait MessageData
+    extends StObject
+       with FileData {
     
-    var message: String = js.native
+    var message: String
   }
   object MessageData {
     
@@ -96,12 +95,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var glob: js.UndefOr[IOptions] = js.native
+    var glob: js.UndefOr[IOptions] = js.undefined
     
-    var maxConcurrency: js.UndefOr[Double] = js.native
+    var maxConcurrency: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -128,14 +126,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var error: Double = js.native
+    var error: Double
     
-    var fix: Double = js.native
+    var fix: Double
     
-    var skip: Double = js.native
+    var skip: Double
   }
   object Stats {
     

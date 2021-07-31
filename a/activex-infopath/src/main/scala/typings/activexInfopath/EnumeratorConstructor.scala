@@ -30,12 +30,12 @@ import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import typings.std.Enumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorConstructor
-  extends // tslint:disable-line:use-default-type-parameter
+  extends StObject
+     with // tslint:disable-line:use-default-type-parameter
 Instantiable1[
       (/* col */ DataAdaptersCollection) | (/* col */ DataObjectsCollection) | (/* col */ ErrorsCollection) | (/* col */ InputParameterCollection) | (/* col */ PermissionObject) | (/* col */ SignatureLinesCollection) | (/* col */ SignaturesCollection) | (/* col */ SignedDataBlocksCollection) | (/* col */ TaskPanesCollection) | (/* col */ ViewInfosCollection) | (/* col */ WindowsCollection) | (/* col */ XDocuments) | (/* col */ XDocumentsCollection) | (/* col */ XMLNodesCollection), 
       Enumerator[

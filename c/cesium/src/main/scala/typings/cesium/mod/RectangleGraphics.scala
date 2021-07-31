@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.CloseTop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "RectangleGraphics")
@@ -19,7 +18,7 @@ class RectangleGraphics () extends StObject {
   
   var coordinates: Property = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var extrudedHeight: Property = js.native
   

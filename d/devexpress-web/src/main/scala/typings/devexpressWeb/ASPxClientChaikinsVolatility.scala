@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ChaikinsVolatility class.
   */
-@js.native
-trait ASPxClientChaikinsVolatility extends ASPxSeparatePaneIndicator {
+trait ASPxClientChaikinsVolatility
+  extends StObject
+     with ASPxSeparatePaneIndicator {
   
   /**
     * Gets the number of data points used to calculate the indicator values.
     */
-  var pointsCount: Double = js.native
+  var pointsCount: Double
 }
 object ASPxClientChaikinsVolatility {
   

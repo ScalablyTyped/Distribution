@@ -3,86 +3,84 @@ package typings.slimerjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FsModule extends StObject {
   
-  def absolute(path: String): String = js.native
+  def absolute(path: String): String
   
-  def base(path: String): String = js.native
+  def base(path: String): String
   
-  def basename(path: String): String = js.native
+  def basename(path: String): String
   
-  def changeWorkingDirectory(path: String): Unit = js.native
+  def changeWorkingDirectory(path: String): Unit
   
-  def copy(source: String, target: String): Unit = js.native
+  def copy(source: String, target: String): Unit
   
-  def copyTree(source: String, target: String): Unit = js.native
+  def copyTree(source: String, target: String): Unit
   
-  def directory(path: String): String = js.native
+  def directory(path: String): String
   
-  def dirname(path: String): String = js.native
+  def dirname(path: String): String
   
-  def exists(path: String): Boolean = js.native
+  def exists(path: String): Boolean
   
-  def extension(path: String, withoutdot: Boolean): String = js.native
+  def `extension`(path: String, withoutdot: Boolean): String
   
-  def isAbsolute(path: String): Boolean = js.native
+  def isAbsolute(path: String): Boolean
   
-  def isDirectory(path: String): Boolean = js.native
+  def isDirectory(path: String): Boolean
   
-  def isExecutable(path: String): Boolean = js.native
+  def isExecutable(path: String): Boolean
   
-  def isFile(path: String): Boolean = js.native
+  def isFile(path: String): Boolean
   
-  def isLink(path: String): Boolean = js.native
+  def isLink(path: String): Boolean
   
-  def isReadable(path: String): Boolean = js.native
+  def isReadable(path: String): Boolean
   
-  def isWritable(path: String): Boolean = js.native
+  def isWritable(path: String): Boolean
   
   // last argument should be the filename
-  def join(basepath: String, dirname: String, args: String*): String = js.native
+  def join(basepath: String, dirname: String, args: String*): String
   
-  def lastModified(path: String): Date = js.native
+  def lastModified(path: String): Date
   
-  def list(path: String): js.Array[String] = js.native
+  def list(path: String): js.Array[String]
   
-  def makeDirectory(path: String): Unit = js.native
+  def makeDirectory(path: String): Unit
   
-  def makeTree(path: String): Unit = js.native
+  def makeTree(path: String): Unit
   
-  def mkpath(path: String): Unit = js.native
+  def mkpath(path: String): Unit
   
-  def move(source: String, target: String): Unit = js.native
+  def move(source: String, target: String): Unit
   
-  def open(filename: String, opts: Opts): Unit = js.native
+  def open(filename: String, opts: Opts): Unit
   
-  def read(path: String, mode: String): String = js.native
+  def read(path: String, mode: String): String
   
-  def readLink(path: String): String = js.native
+  def readLink(path: String): String
   
-  def remove(path: String): Unit = js.native
+  def remove(path: String): Unit
   
-  def removeDirectory(path: String): Unit = js.native
+  def removeDirectory(path: String): Unit
   
-  def removeTree(path: String): Unit = js.native
+  def removeTree(path: String): Unit
   
-  def rename(path: String, newname: String): Unit = js.native
+  def rename(path: String, newname: String): Unit
   
-  def rmdir(path: String): Unit = js.native
+  def rmdir(path: String): Unit
   
-  var separator: String = js.native
+  var separator: String
   
-  def size(path: String): Double = js.native
+  def size(path: String): Double
   
-  def split(path: String): js.Array[String] = js.native
+  def split(path: String): js.Array[String]
   
-  def touch(path: String, date: Date): Unit = js.native
+  def touch(path: String, date: Date): Unit
   
-  var workingDirectory: String = js.native
+  var workingDirectory: String
   
   /*
     Mode is a string that can contain character which describes a characteristic of the returned stream.
@@ -92,7 +90,7 @@ trait FsModule extends StObject {
     opened in text mode, and its contents are assumed to be UTF-8.
     "a" means to open as "append" mode: the file is open in write-only mode and all written character are append to the file
     */
-  def write(path: String, content: js.Any, mode: String): Unit = js.native
+  def write(path: String, content: js.Any, mode: String): Unit
 }
 object FsModule {
   
@@ -107,7 +105,7 @@ object FsModule {
     directory: String => String,
     dirname: String => String,
     exists: String => Boolean,
-    extension: (String, Boolean) => String,
+    `extension`: (String, Boolean) => String,
     isAbsolute: String => Boolean,
     isDirectory: String => Boolean,
     isExecutable: String => Boolean,
@@ -137,7 +135,8 @@ object FsModule {
     workingDirectory: String,
     write: (String, js.Any, String) => Unit
   ): FsModule = {
-    val __obj = js.Dynamic.literal(absolute = js.Any.fromFunction1(absolute), base = js.Any.fromFunction1(base), basename = js.Any.fromFunction1(basename), changeWorkingDirectory = js.Any.fromFunction1(changeWorkingDirectory), copy = js.Any.fromFunction2(copy), copyTree = js.Any.fromFunction2(copyTree), directory = js.Any.fromFunction1(directory), dirname = js.Any.fromFunction1(dirname), exists = js.Any.fromFunction1(exists), extension = js.Any.fromFunction2(extension), isAbsolute = js.Any.fromFunction1(isAbsolute), isDirectory = js.Any.fromFunction1(isDirectory), isExecutable = js.Any.fromFunction1(isExecutable), isFile = js.Any.fromFunction1(isFile), isLink = js.Any.fromFunction1(isLink), isReadable = js.Any.fromFunction1(isReadable), isWritable = js.Any.fromFunction1(isWritable), join = js.Any.fromFunction3(join), lastModified = js.Any.fromFunction1(lastModified), list = js.Any.fromFunction1(list), makeDirectory = js.Any.fromFunction1(makeDirectory), makeTree = js.Any.fromFunction1(makeTree), mkpath = js.Any.fromFunction1(mkpath), move = js.Any.fromFunction2(move), open = js.Any.fromFunction2(open), read = js.Any.fromFunction2(read), readLink = js.Any.fromFunction1(readLink), remove = js.Any.fromFunction1(remove), removeDirectory = js.Any.fromFunction1(removeDirectory), removeTree = js.Any.fromFunction1(removeTree), rename = js.Any.fromFunction2(rename), rmdir = js.Any.fromFunction1(rmdir), separator = separator.asInstanceOf[js.Any], size = js.Any.fromFunction1(size), split = js.Any.fromFunction1(split), touch = js.Any.fromFunction2(touch), workingDirectory = workingDirectory.asInstanceOf[js.Any], write = js.Any.fromFunction3(write))
+    val __obj = js.Dynamic.literal(absolute = js.Any.fromFunction1(absolute), base = js.Any.fromFunction1(base), basename = js.Any.fromFunction1(basename), changeWorkingDirectory = js.Any.fromFunction1(changeWorkingDirectory), copy = js.Any.fromFunction2(copy), copyTree = js.Any.fromFunction2(copyTree), directory = js.Any.fromFunction1(directory), dirname = js.Any.fromFunction1(dirname), exists = js.Any.fromFunction1(exists), isAbsolute = js.Any.fromFunction1(isAbsolute), isDirectory = js.Any.fromFunction1(isDirectory), isExecutable = js.Any.fromFunction1(isExecutable), isFile = js.Any.fromFunction1(isFile), isLink = js.Any.fromFunction1(isLink), isReadable = js.Any.fromFunction1(isReadable), isWritable = js.Any.fromFunction1(isWritable), join = js.Any.fromFunction3(join), lastModified = js.Any.fromFunction1(lastModified), list = js.Any.fromFunction1(list), makeDirectory = js.Any.fromFunction1(makeDirectory), makeTree = js.Any.fromFunction1(makeTree), mkpath = js.Any.fromFunction1(mkpath), move = js.Any.fromFunction2(move), open = js.Any.fromFunction2(open), read = js.Any.fromFunction2(read), readLink = js.Any.fromFunction1(readLink), remove = js.Any.fromFunction1(remove), removeDirectory = js.Any.fromFunction1(removeDirectory), removeTree = js.Any.fromFunction1(removeTree), rename = js.Any.fromFunction2(rename), rmdir = js.Any.fromFunction1(rmdir), separator = separator.asInstanceOf[js.Any], size = js.Any.fromFunction1(size), split = js.Any.fromFunction1(split), touch = js.Any.fromFunction2(touch), workingDirectory = workingDirectory.asInstanceOf[js.Any], write = js.Any.fromFunction3(write))
+    __obj.updateDynamic("extension")(js.Any.fromFunction2(`extension`))
     __obj.asInstanceOf[FsModule]
   }
   

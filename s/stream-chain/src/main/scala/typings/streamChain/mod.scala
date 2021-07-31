@@ -7,7 +7,6 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,20 @@ object mod {
     def this(fns: js.Array[StreamItem]) = this()
     def this(fns: js.Array[StreamItem], options: ChainOptions) = this()
   }
+  @JSImport("stream-chain", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("stream-chain", "chain")
-  @js.native
-  def chain(fns: js.Array[StreamItem]): Chain_ = js.native
-  @JSImport("stream-chain", "chain")
-  @js.native
-  def chain(fns: js.Array[StreamItem], options: ChainOptions): Chain_ = js.native
+  @scala.inline
+  def chain(fns: js.Array[StreamItem]): Chain_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any]).asInstanceOf[Chain_]
+  @scala.inline
+  def chain(fns: js.Array[StreamItem], options: ChainOptions): Chain_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain_]
   
-  @js.native
-  trait ChainOptions extends DuplexOptions {
+  trait ChainOptions
+    extends StObject
+       with DuplexOptions {
     
-    var skipEvents: js.UndefOr[Boolean] = js.native
+    var skipEvents: js.UndefOr[Boolean] = js.undefined
   }
   object ChainOptions {
     

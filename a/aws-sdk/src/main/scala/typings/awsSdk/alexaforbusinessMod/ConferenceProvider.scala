@@ -2,41 +2,39 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceProvider extends StObject {
   
   /**
     * The ARN of the newly created conference provider.
     */
-  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.undefined
   
   /**
     * The IP endpoint and protocol for calling.
     */
-  var IPDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IPDialIn] = js.native
+  var IPDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IPDialIn] = js.undefined
   
   /**
     * The meeting settings for the conference provider.
     */
-  var MeetingSetting: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MeetingSetting] = js.native
+  var MeetingSetting: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MeetingSetting] = js.undefined
   
   /**
     * The name of the conference provider.
     */
-  var Name: js.UndefOr[ConferenceProviderName] = js.native
+  var Name: js.UndefOr[ConferenceProviderName] = js.undefined
   
   /**
     * The information for PSTN conferencing.
     */
-  var PSTNDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PSTNDialIn] = js.native
+  var PSTNDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PSTNDialIn] = js.undefined
   
   /**
     * The type of conference providers.
     */
-  var Type: js.UndefOr[ConferenceProviderType] = js.native
+  var Type: js.UndefOr[ConferenceProviderType] = js.undefined
 }
 object ConferenceProvider {
   

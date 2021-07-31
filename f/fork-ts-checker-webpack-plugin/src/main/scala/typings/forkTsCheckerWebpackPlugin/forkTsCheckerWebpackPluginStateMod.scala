@@ -7,31 +7,32 @@ import typings.tapable.mod.Tap
 import typings.tapable.mod.TapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkTsCheckerWebpackPluginStateMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPluginState", "createForkTsCheckerWebpackPluginState")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPluginState", JSImport.Namespace)
   @js.native
-  def createForkTsCheckerWebpackPluginState(): ForkTsCheckerWebpackPluginState = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createForkTsCheckerWebpackPluginState(): ForkTsCheckerWebpackPluginState = ^.asInstanceOf[js.Dynamic].applyDynamic("createForkTsCheckerWebpackPluginState")().asInstanceOf[ForkTsCheckerWebpackPluginState]
+  
   trait ForkTsCheckerWebpackPluginState extends StObject {
     
-    var dependenciesPromise: js.Promise[js.UndefOr[Dependencies]] = js.native
+    var dependenciesPromise: js.Promise[js.UndefOr[Dependencies]]
     
-    var initialized: Boolean = js.native
+    var initialized: Boolean
     
-    var issuesPromise: js.Promise[js.UndefOr[js.Array[Issue]]] = js.native
+    var issuesPromise: js.Promise[js.UndefOr[js.Array[Issue]]]
     
-    var lastDependencies: js.UndefOr[Dependencies] = js.native
+    var lastDependencies: js.UndefOr[Dependencies] = js.undefined
     
-    var reportPromise: js.Promise[js.UndefOr[Report]] = js.native
+    var reportPromise: js.Promise[js.UndefOr[Report]]
     
-    var watching: Boolean = js.native
+    var watching: Boolean
     
-    var webpackDevServerDoneTap: js.UndefOr[Tap[TapType, _, _, _, _]] = js.native
+    var webpackDevServerDoneTap: js.UndefOr[Tap[TapType, js.Any, js.Any, js.Any, js.Any]] = js.undefined
   }
   object ForkTsCheckerWebpackPluginState {
     
@@ -72,7 +73,7 @@ object forkTsCheckerWebpackPluginStateMod {
       def setWatching(value: Boolean): Self = StObject.set(x, "watching", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWebpackDevServerDoneTap(value: Tap[TapType, _, _, _, _]): Self = StObject.set(x, "webpackDevServerDoneTap", value.asInstanceOf[js.Any])
+      def setWebpackDevServerDoneTap(value: Tap[TapType, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "webpackDevServerDoneTap", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWebpackDevServerDoneTapUndefined: Self = StObject.set(x, "webpackDevServerDoneTap", js.undefined)

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plus/v1", "plus_v1.Resource$Activities")
@@ -31,7 +30,7 @@ class ResourceActivities protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaActivity] = js.native
   def get(callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivity] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaActivity] = js.native
   def get(params: ParamsResourceActivitiesGet): GaxiosPromise[SchemaActivity] = js.native
   def get(params: ParamsResourceActivitiesGet, callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
   def get(
@@ -64,7 +63,7 @@ class ResourceActivities protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaActivityFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaActivityFeed]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivityFeed] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaActivityFeed] = js.native
   def list(params: ParamsResourceActivitiesList): GaxiosPromise[SchemaActivityFeed] = js.native
   def list(params: ParamsResourceActivitiesList, callback: BodyResponseCallback[SchemaActivityFeed]): Unit = js.native
   def list(
@@ -98,7 +97,7 @@ class ResourceActivities protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaActivityFeed] = js.native
   def search(callback: BodyResponseCallback[SchemaActivityFeed]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivityFeed] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaActivityFeed] = js.native
   def search(params: ParamsResourceActivitiesSearch): GaxiosPromise[SchemaActivityFeed] = js.native
   def search(params: ParamsResourceActivitiesSearch, callback: BodyResponseCallback[SchemaActivityFeed]): Unit = js.native
   def search(

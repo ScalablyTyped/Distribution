@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Page.SetLifecycleEventsEnabledRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `158` extends StObject {
   
-  var paramsType: js.Array[SetLifecycleEventsEnabledRequest] = js.native
+  var paramsType: js.Array[SetLifecycleEventsEnabledRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `158` {
   

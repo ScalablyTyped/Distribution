@@ -3,20 +3,18 @@ package typings.googleCloudCommon.utilMod
 import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedHttpRespMessage extends StObject {
   
-  var err: js.UndefOr[ApiError] = js.native
+  var err: js.UndefOr[ApiError] = js.undefined
   
-  var resp: Response[_] = js.native
+  var resp: Response[js.Any]
 }
 object ParsedHttpRespMessage {
   
   @scala.inline
-  def apply(resp: Response[_]): ParsedHttpRespMessage = {
+  def apply(resp: Response[js.Any]): ParsedHttpRespMessage = {
     val __obj = js.Dynamic.literal(resp = resp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedHttpRespMessage]
   }
@@ -31,6 +29,6 @@ object ParsedHttpRespMessage {
     def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
     @scala.inline
-    def setResp(value: Response[_]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
+    def setResp(value: Response[js.Any]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
   }
 }

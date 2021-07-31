@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.navigableToolbarMod.NavigableToolbar.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigableToolbarMod {
@@ -25,10 +24,9 @@ object navigableToolbarMod {
   object NavigableToolbar {
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigableMenu.Props * / any */ @js.native
-    trait Props extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigableMenu.Props * / any */ trait Props extends StObject {
       
-      var focusOnMount: js.UndefOr[Boolean] = js.native
+      var focusOnMount: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

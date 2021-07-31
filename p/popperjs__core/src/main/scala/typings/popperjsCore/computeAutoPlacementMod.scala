@@ -9,32 +9,32 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computeAutoPlacementMod {
   
-  @JSImport("@popperjs/core/lib/utils/computeAutoPlacement", JSImport.Default)
+  @JSImport("@popperjs/core/lib/utils/computeAutoPlacement", JSImport.Namespace)
   @js.native
-  def default(state: PartialStateAttributes): js.Array[ComputedPlacement] = js.native
-  @JSImport("@popperjs/core/lib/utils/computeAutoPlacement", JSImport.Default)
-  @js.native
-  def default(state: PartialStateAttributes, options: Options): js.Array[ComputedPlacement] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(state: PartialStateAttributes): js.Array[ComputedPlacement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComputedPlacement]]
+  @scala.inline
+  def default(state: PartialStateAttributes, options: Options): js.Array[ComputedPlacement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedPlacement]]
+  
   trait Options extends StObject {
     
-    var allowedAutoPlacements: js.UndefOr[js.Array[Placement]] = js.native
+    var allowedAutoPlacements: js.UndefOr[js.Array[Placement]] = js.undefined
     
-    var boundary: Boundary = js.native
+    var boundary: Boundary
     
-    var flipVariations: Boolean = js.native
+    var flipVariations: Boolean
     
-    var padding: Padding = js.native
+    var padding: Padding
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var rootBoundary: RootBoundary = js.native
+    var rootBoundary: RootBoundary
   }
   object Options {
     

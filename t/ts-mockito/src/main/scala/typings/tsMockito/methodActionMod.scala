@@ -3,7 +3,6 @@ package typings.tsMockito
 import typings.tsMockito.matcherMod.Matcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodActionMod {
@@ -11,9 +10,9 @@ object methodActionMod {
   @JSImport("ts-mockito/lib/MethodAction", "MethodAction")
   @js.native
   class MethodAction protected () extends StObject {
-    def this(methodName: String, args: js.Array[_]) = this()
+    def this(methodName: String, args: js.Array[js.Any]) = this()
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any] = js.native
     
     var callIndex: js.Any = js.native
     

@@ -3,62 +3,60 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.LabIcon.IResolvable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A file type to associate with the renderer.
   */
-@js.native
 trait IFileType extends StObject {
   
   /**
     * An optional display name for the file type.
     */
-  val displayName: js.UndefOr[String] = js.native
+  val displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The extensions of the file type (e.g. `".txt"`).  Can be a compound
     * extension (e.g. `".table.json`).
     */
-  val extensions: js.Array[String] = js.native
+  val extensions: js.Array[String]
   
   /**
     * The file format for the file type ('text', 'base64', or 'json').
     */
-  val fileFormat: js.UndefOr[String] = js.native
+  val fileFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The icon for the file type. Can either be a string containing the name
     * of an existing icon, or an object with {name, svgstr} fields, where
     * svgstr is a string containing the raw contents of an svg file.
     */
-  val icon: js.UndefOr[IResolvable] = js.native
+  val icon: js.UndefOr[IResolvable] = js.undefined
   
   /**
     * The icon class name for the file type.
     */
-  val iconClass: js.UndefOr[String] = js.native
+  val iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * The icon label for the file type.
     */
-  val iconLabel: js.UndefOr[String] = js.native
+  val iconLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The mime types associated the file type.
     */
-  val mimeTypes: js.Array[String] = js.native
+  val mimeTypes: js.Array[String]
   
   /**
     * The name of the file type.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * An optional pattern for a file name (e.g. `^Dockerfile$`).
     */
-  val pattern: js.UndefOr[String] = js.native
+  val pattern: js.UndefOr[String] = js.undefined
 }
 object IFileType {
   

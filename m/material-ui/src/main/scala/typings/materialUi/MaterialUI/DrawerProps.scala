@@ -3,39 +3,37 @@ package typings.materialUi.MaterialUI
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var containerClassName: js.UndefOr[String] = js.native
+  var containerClassName: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[CSSProperties] = js.native
+  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var disableSwipeToOpen: js.UndefOr[Boolean] = js.native
+  var disableSwipeToOpen: js.UndefOr[Boolean] = js.undefined
   
-  var docked: js.UndefOr[Boolean] = js.native
+  var docked: js.UndefOr[Boolean] = js.undefined
   
-  var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.native
+  var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var openSecondary: js.UndefOr[Boolean] = js.native
+  var openSecondary: js.UndefOr[Boolean] = js.undefined
   
-  var overlayClassName: js.UndefOr[String] = js.native
+  var overlayClassName: js.UndefOr[String] = js.undefined
   
-  var overlayStyle: js.UndefOr[CSSProperties] = js.native
+  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var swipeAreaWidth: js.UndefOr[Double] = js.native
+  var swipeAreaWidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var zDepth: js.UndefOr[Double] = js.native
+  var zDepth: js.UndefOr[Double] = js.undefined
 }
 object DrawerProps {
   

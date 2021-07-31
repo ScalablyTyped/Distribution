@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.modelTypesMod.SavedModelTensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inputs extends StObject {
   
-  var inputs: StringDictionary[SavedModelTensorInfo] = js.native
+  var inputs: StringDictionary[SavedModelTensorInfo]
   
-  var outputs: StringDictionary[SavedModelTensorInfo] = js.native
+  var outputs: StringDictionary[SavedModelTensorInfo]
 }
 object Inputs {
   

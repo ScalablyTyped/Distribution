@@ -2,21 +2,19 @@ package typings.awsSdk.stsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FederatedUser extends StObject {
   
   /**
     * The ARN that specifies the federated user that is associated with the credentials. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
     */
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The string that identifies the federated user associated with the credentials, similar to the unique ID of an IAM user.
     */
-  var FederatedUserId: federatedIdType = js.native
+  var FederatedUserId: federatedIdType
 }
 object FederatedUser {
   

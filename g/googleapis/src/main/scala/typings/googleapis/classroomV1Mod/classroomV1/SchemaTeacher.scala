@@ -2,24 +2,22 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Teacher of a course.
   */
-@js.native
 trait SchemaTeacher extends StObject {
   
   /**
     * Identifier of the course.  Read-only.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Global user information for the teacher.  Read-only.
     */
-  var profile: js.UndefOr[SchemaUserProfile] = js.native
+  var profile: js.UndefOr[SchemaUserProfile] = js.undefined
   
   /**
     * Identifier of the user.  When specified as a parameter of a request, this
@@ -27,7 +25,7 @@ trait SchemaTeacher extends StObject {
     * user * the email address of the user * the string literal
     * `&quot;me&quot;`, indicating the requesting user
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaTeacher {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MigrationsSetLfsPreferenceResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsSetLfsPreferenceEndpoint extends StObject {
   
-  var parameters: MigrationsSetLfsPreferenceEndpoint = js.native
+  var parameters: MigrationsSetLfsPreferenceEndpoint
   
-  var request: MigrationsSetLfsPreferenceRequestOptions = js.native
+  var request: MigrationsSetLfsPreferenceRequestOptions
   
-  var response: OctokitResponse[MigrationsSetLfsPreferenceResponseData] = js.native
+  var response: OctokitResponse[MigrationsSetLfsPreferenceResponseData]
 }
 object ParametersMigrationsSetLfsPreferenceEndpoint {
   

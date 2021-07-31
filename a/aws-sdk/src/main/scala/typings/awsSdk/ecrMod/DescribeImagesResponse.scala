@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImagesResponse extends StObject {
   
   /**
     * A list of ImageDetail objects that contain data about the image.
     */
-  var imageDetails: js.UndefOr[ImageDetailList] = js.native
+  var imageDetails: js.UndefOr[ImageDetailList] = js.undefined
   
   /**
     * The nextToken value to include in a future DescribeImages request. When the results of a DescribeImages request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeImagesResponse {
   

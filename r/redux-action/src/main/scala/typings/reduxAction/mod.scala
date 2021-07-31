@@ -6,70 +6,60 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Reducer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-action", "createAction")
+  @JSImport("redux-action", JSImport.Namespace)
   @js.native
-  def createAction[Payload](): ActionFunction1[_, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction[Payload](`type`: String): ActionFunction1[_, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createAction[Payload](): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  @scala.inline
+  def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
+  @scala.inline
+  def createAction[Payload](`type`: String): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  @scala.inline
+  def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
+  @scala.inline
+  def createAction[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
+  @scala.inline
   def createAction[Payload, Meta](
     payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload],
     metaCreator: ActionFunctionAny[Meta]
-  ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
+  ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkMetaAction[Payload, Meta]]]
+  @scala.inline
   def createAction[Payload, Meta](
     `type`: String,
     payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload],
     metaCreator: ActionFunctionAny[Meta]
-  ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction[Payload, Arg1, Arg2](payloadCreator: ActionFunction2[Arg1, Arg2, js.Promise[Payload] | Payload]): ActionFunction2[Arg1, Arg2, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction[Payload, Arg1, Arg2, Arg3](payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, js.Promise[Payload] | Payload]): ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction_PayloadArg[Payload, Arg](): ActionFunction1[Arg, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction_PayloadArg[Payload, Arg](`type`: String): ActionFunction1[Arg, ThunkAction[Payload]] = js.native
-  @JSImport("redux-action", "createAction")
-  @js.native
-  def createAction_PayloadArg_ActionFunction1[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = js.native
+  ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkMetaAction[Payload, Meta]]]
+  @scala.inline
+  def createAction[Payload, Arg1, Arg2](payloadCreator: ActionFunction2[Arg1, Arg2, js.Promise[Payload] | Payload]): ActionFunction2[Arg1, Arg2, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction2[Arg1, Arg2, ThunkAction[Payload]]]
+  @scala.inline
+  def createAction[Payload, Arg1, Arg2, Arg3](payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, js.Promise[Payload] | Payload]): ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]]]
   
-  @JSImport("redux-action", "createReducer")
-  @js.native
-  def createReducer[State](defaultState: State, handlers: ReducerHandlers[State]): Reducer[State, AnyAction] = js.native
+  @scala.inline
+  def createAction_PayloadArg[Payload, Arg](): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
+  @scala.inline
+  def createAction_PayloadArg[Payload, Arg](`type`: String): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
   
-  @JSImport("redux-action", "createSyncAction")
-  @js.native
-  def createSyncAction[Payload](`type`: String): ActionFunctionAny[Action[Payload]] = js.native
-  @JSImport("redux-action", "createSyncAction")
-  @js.native
-  def createSyncAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[Payload]): ActionFunctionAny[Action[Payload]] = js.native
-  @JSImport("redux-action", "createSyncAction")
-  @js.native
-  def createSyncAction[Payload, Meta](`type`: String, payloadCreator: ActionFunctionAny[Payload], metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[MetaAction[Payload, Meta]] = js.native
+  @scala.inline
+  def createReducer[State](defaultState: State, handlers: ReducerHandlers[State]): Reducer[State, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(defaultState.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Reducer[State, AnyAction]]
   
-  @js.native
-  trait Action[Payload] extends BaseAction {
+  @scala.inline
+  def createSyncAction[Payload](`type`: String): ActionFunctionAny[Action[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[Action[Payload]]]
+  @scala.inline
+  def createSyncAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[Payload]): ActionFunctionAny[Action[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[Action[Payload]]]
+  @scala.inline
+  def createSyncAction[Payload, Meta](`type`: String, payloadCreator: ActionFunctionAny[Payload], metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[MetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[MetaAction[Payload, Meta]]]
+  
+  trait Action[Payload]
+    extends StObject
+       with BaseAction {
     
-    var payload: Payload = js.native
+    var payload: Payload
   }
   object Action {
     
@@ -81,7 +71,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], Payload] (val x: Self with Action[Payload]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
@@ -96,12 +86,15 @@ object mod {
   
   type ActionFunction3[T1, T2, T3, R] = js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]
   
-  type ActionFunctionAny[R] = js.Function1[/* repeated */ js.Any, R]
-  
   @js.native
+  trait ActionFunctionAny[R] extends StObject {
+    
+    def apply(args: js.Any*): R = js.native
+  }
+  
   trait BaseAction extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BaseAction {
     
@@ -120,10 +113,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MetaAction[Payload, Meta] extends Action[Payload] {
+  trait MetaAction[Payload, Meta]
+    extends StObject
+       with Action[Payload] {
     
-    var meta: Meta = js.native
+    var meta: Meta
   }
   object MetaAction {
     
@@ -135,7 +129,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MetaActionMutableBuilder[Self <: MetaAction[_, _], Payload, Meta] (val x: Self with (MetaAction[Payload, Meta])) extends AnyVal {
+    implicit class MetaActionMutableBuilder[Self <: MetaAction[?, ?], Payload, Meta] (val x: Self & (MetaAction[Payload, Meta])) extends AnyVal {
       
       @scala.inline
       def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])

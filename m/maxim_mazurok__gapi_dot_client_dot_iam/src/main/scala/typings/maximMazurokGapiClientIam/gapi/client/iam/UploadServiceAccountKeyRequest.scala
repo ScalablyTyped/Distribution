@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadServiceAccountKeyRequest extends StObject {
   
   /**
     * A field that allows clients to upload their own public key. If set, use this public key data to create a service account key for given service account. Please note, the expected
     * format for this field is X509_PEM.
     */
-  var publicKeyData: js.UndefOr[String] = js.native
+  var publicKeyData: js.UndefOr[String] = js.undefined
 }
 object UploadServiceAccountKeyRequest {
   

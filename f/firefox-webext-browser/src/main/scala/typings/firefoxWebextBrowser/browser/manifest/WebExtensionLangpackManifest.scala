@@ -2,36 +2,34 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a WebExtension language pack manifest.json file */
-@js.native
 trait WebExtensionLangpackManifest extends StObject {
   
-  var applications: js.UndefOr[WebExtensionLangpackManifestApplications] = js.native
+  var applications: js.UndefOr[WebExtensionLangpackManifestApplications] = js.undefined
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var browser_specific_settings: js.UndefOr[WebExtensionLangpackManifestBrowserSpecificSettings] = js.native
+  var browser_specific_settings: js.UndefOr[WebExtensionLangpackManifestBrowserSpecificSettings] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var homepage_url: js.UndefOr[String] = js.native
+  var homepage_url: js.UndefOr[String] = js.undefined
   
-  var langpack_id: String = js.native
+  var langpack_id: String
   
-  var languages: WebExtensionLangpackManifestLanguages = js.native
+  var languages: WebExtensionLangpackManifestLanguages
   
-  var manifest_version: Double = js.native
+  var manifest_version: Double
   
-  var name: String = js.native
+  var name: String
   
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
-  var sources: js.UndefOr[WebExtensionLangpackManifestSources] = js.native
+  var sources: js.UndefOr[WebExtensionLangpackManifestSources] = js.undefined
   
-  var version: String = js.native
+  var version: String
 }
 object WebExtensionLangpackManifest {
   

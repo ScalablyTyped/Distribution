@@ -2,10 +2,8 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStreamBase extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait TextStreamBase extends StObject {
     * It is not necessary to close standard streams; they close automatically when the process ends. If
     * you close a standard stream, be aware that any other pointers to that standard stream become invalid.
     */
-  def Close(): Unit = js.native
+  def Close(): Unit
   
   /**
     * The column number of the current character position in an input stream.
     */
-  var Column: Double = js.native
+  var Column: Double
   
   /**
     * The current line number in an input stream.
     */
-  var Line: Double = js.native
+  var Line: Double
 }
 object TextStreamBase {
   

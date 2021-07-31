@@ -2,21 +2,19 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationMetaData extends StObject {
   
   /**
     * An attribute to store the key of the application meta data
     */
-  val key: String = js.native
+  val key: String
   
   /**
     * An attribute to store the value of the application meta data
     */
-  val value: String = js.native
+  val value: String
 }
 object ApplicationMetaData {
   

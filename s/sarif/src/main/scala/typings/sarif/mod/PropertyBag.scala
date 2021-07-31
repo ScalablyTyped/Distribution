@@ -3,12 +3,11 @@ package typings.sarif.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyBag
-  extends /**
+  extends StObject
+     with /**
   * Additional Properties
   */
 /* key */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait PropertyBag
   /**
     * A set of distinct strings that provide additional information.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PropertyBag {
   

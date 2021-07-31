@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RgbColor extends StObject {
   
   // Blue value
-  var b: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[Double] = js.undefined
   
   // Green value
-  var g: js.UndefOr[Double] = js.native
+  var g: js.UndefOr[Double] = js.undefined
   
   // Red value
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
 }
 object RgbColor {
   

@@ -36,12 +36,13 @@ import typings.algoliasearchHelper.mod.SearchParameters.OperatorList
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("algoliasearch-helper", "SearchParameters")
 @js.native
-class SearchParameters () extends PlainSearchParameters {
+class SearchParameters ()
+  extends StObject
+     with PlainSearchParameters {
   def this(newParameters: PlainSearchParameters) = this()
   
   /* Add a disjunctive facet to the disjunctiveFacets attribute of the helper configuration, if it isn't already present. */
@@ -411,7 +412,7 @@ class SearchParameters () extends PlainSearchParameters {
   def isHierarchicalFacetRefined(facet: String, value: String): Boolean = js.native
   
   def isNumericRefined(attribute: String): Boolean = js.native
-  def isNumericRefined(attribute: String, operator: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
+  def isNumericRefined(attribute: String, operator: Unit, value: String): Boolean = js.native
   def isNumericRefined(attribute: String, operator: Operator): Boolean = js.native
   def isNumericRefined(attribute: String, operator: Operator, value: String): Boolean = js.native
   
@@ -570,9 +571,9 @@ class SearchParameters () extends PlainSearchParameters {
   def removeHierarchicalFacetRefinement(facet: String): SearchParameters = js.native
   
   def removeNumericRefinement(attribute: String): SearchParameters = js.native
-  def removeNumericRefinement(attribute: String, operator: js.UndefOr[scala.Nothing], value: String): SearchParameters = js.native
   def removeNumericRefinement(attribute: String, operator: String): SearchParameters = js.native
   def removeNumericRefinement(attribute: String, operator: String, value: String): SearchParameters = js.native
+  def removeNumericRefinement(attribute: String, operator: Unit, value: String): SearchParameters = js.native
   
   /**
     * Remove stop words from the query before executing it
@@ -756,24 +757,25 @@ class SearchParameters () extends PlainSearchParameters {
 /* static members */
 object SearchParameters {
   
-  @JSImport("algoliasearch-helper", "SearchParameters.make")
+  @JSImport("algoliasearch-helper", "SearchParameters")
   @js.native
-  def make(newParameters: PlainSearchParameters): SearchParameters = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("algoliasearch-helper", "SearchParameters.validate")
-  @js.native
-  def validate(currentState: SearchParameters, parameters: PlainSearchParameters): Null | Error = js.native
+  @scala.inline
+  def make(newParameters: PlainSearchParameters): SearchParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(newParameters.asInstanceOf[js.Any]).asInstanceOf[SearchParameters]
+  
+  @scala.inline
+  def validate(currentState: SearchParameters, parameters: PlainSearchParameters): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(currentState.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
   
   type FacetList = js.Array[String]
   
-  @js.native
   trait HierarchicalFacet extends StObject {
     
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var separator: String = js.native
+    var separator: String
   }
   object HierarchicalFacet {
     
@@ -831,26 +833,25 @@ object SearchParameters {
   }
   
   /* Inlined {[ k in algoliasearch-helper.algoliasearch-helper.SearchParameters.Operator ]:? std.Array<number | std.Array<number>>} */
-  @js.native
   trait OperatorList extends StObject {
     
     @JSName("=")
-    var Equalssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var Equalssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     @JSName("!=")
-    var ExclamationmarkEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var ExclamationmarkEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     @JSName(">")
-    var Greaterthansign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var Greaterthansign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     @JSName(">=")
-    var GreaterthansignEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var GreaterthansignEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     @JSName("<")
-    var Lessthansign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var Lessthansign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     @JSName("<=")
-    var LessthansignEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+    var LessthansignEqualssign: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
   }
   object OperatorList {
     

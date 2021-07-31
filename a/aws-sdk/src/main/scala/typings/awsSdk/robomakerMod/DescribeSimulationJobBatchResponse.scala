@@ -2,71 +2,69 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSimulationJobBatchResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the batch.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The batch policy.
     */
-  var batchPolicy: js.UndefOr[BatchPolicy] = js.native
+  var batchPolicy: js.UndefOr[BatchPolicy] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * A list of created simulation job summaries.
     */
-  var createdRequests: js.UndefOr[SimulationJobSummaries] = js.native
+  var createdRequests: js.UndefOr[SimulationJobSummaries] = js.undefined
   
   /**
     * A list of failed create simulation job requests. The request failed to be created into a simulation job. Failed requests do not have a simulation job ID. 
     */
-  var failedRequests: js.UndefOr[FailedCreateSimulationJobRequests] = js.native
+  var failedRequests: js.UndefOr[FailedCreateSimulationJobRequests] = js.undefined
   
   /**
     * The failure code of the simulation job batch.
     */
-  var failureCode: js.UndefOr[SimulationJobBatchErrorCode] = js.native
+  var failureCode: js.UndefOr[SimulationJobBatchErrorCode] = js.undefined
   
   /**
     * The reason the simulation job batch failed.
     */
-  var failureReason: js.UndefOr[GenericString] = js.native
+  var failureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * A list of pending simulation job requests. These requests have not yet been created into simulation jobs.
     */
-  var pendingRequests: js.UndefOr[CreateSimulationJobRequests] = js.native
+  var pendingRequests: js.UndefOr[CreateSimulationJobRequests] = js.undefined
   
   /**
     * The status of the batch.  Pending  The simulation job batch request is pending.  InProgress  The simulation job batch is in progress.   Failed  The simulation job batch failed. One or more simulation job requests could not be completed due to an internal failure (like InternalServiceError). See failureCode and failureReason for more information.  Completed  The simulation batch job completed. A batch is complete when (1) there are no pending simulation job requests in the batch and none of the failed simulation job requests are due to InternalServiceError and (2) when all created simulation jobs have reached a terminal state (for example, Completed or Failed).   Canceled  The simulation batch job was cancelled.  Canceling  The simulation batch job is being cancelled.  Completing  The simulation batch job is completing.  TimingOut  The simulation job batch is timing out. If a batch timing out, and there are pending requests that were failing due to an internal failure (like InternalServiceError), the batch status will be Failed. If there are no such failing request, the batch status will be TimedOut.   TimedOut  The simulation batch job timed out.  
     */
-  var status: js.UndefOr[SimulationJobBatchStatus] = js.native
+  var status: js.UndefOr[SimulationJobBatchStatus] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the simulation job batch.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeSimulationJobBatchResponse {
   

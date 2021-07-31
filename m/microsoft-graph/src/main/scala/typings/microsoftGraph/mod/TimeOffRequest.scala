@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeOffRequest extends ScheduleChangeRequest {
+trait TimeOffRequest
+  extends StObject
+     with ScheduleChangeRequest {
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The reason for the time off.
-  var timeOffReasonId: js.UndefOr[NullableOption[String]] = js.native
+  var timeOffReasonId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TimeOffRequest {
   

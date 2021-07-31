@@ -2,64 +2,62 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPosSaleResponse extends StObject {
   
   /**
     * The two-letter ISO 639-1 language code for the item.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Global Trade Item Number.
     */
-  var gtin: js.UndefOr[String] = js.native
+  var gtin: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the item.
     */
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#posSaleResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The price of the item.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The relative change of the available quantity. Negative for items
     * returned.
     */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID to group items from the same sale event.
     */
-  var saleId: js.UndefOr[String] = js.native
+  var saleId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the merchant&#39;s store. Either a storeCode inserted
     * via the API or the code of the store in Google My Business.
     */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
   
   /**
     * The CLDR territory code for the item.
     */
-  var targetCountry: js.UndefOr[String] = js.native
+  var targetCountry: js.UndefOr[String] = js.undefined
   
   /**
     * The inventory timestamp, in ISO 8601 format.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaPosSaleResponse {
   

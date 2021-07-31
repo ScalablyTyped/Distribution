@@ -3,23 +3,21 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Clientid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsGetGrantResponseData extends StObject {
   
-  var app: Clientid = js.native
+  var app: Clientid
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object OauthAuthorizationsGetGrantResponseData {
   

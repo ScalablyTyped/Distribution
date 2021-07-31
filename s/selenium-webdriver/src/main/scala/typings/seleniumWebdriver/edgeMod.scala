@@ -10,10 +10,13 @@ import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object edgeMod {
+  
+  @JSImport("selenium-webdriver/edge", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/edge", "Driver")
   @js.native
@@ -38,6 +41,10 @@ object edgeMod {
   /* static members */
   object Driver {
     
+    @JSImport("selenium-webdriver/edge", "Driver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new browser session for Microsoft's Edge browser.
       *
@@ -47,18 +54,14 @@ object edgeMod {
       *     the {@linkplain #getDefaultService default service} by default.
       * @return {!Driver} A new driver instance.
       */
-    @JSImport("selenium-webdriver/edge", "Driver.createSession")
-    @js.native
-    def createSession(): Driver = js.native
-    @JSImport("selenium-webdriver/edge", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/edge", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: CreateSessionCapabilities): Driver = js.native
-    @JSImport("selenium-webdriver/edge", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
+    @scala.inline
+    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: CreateSessionCapabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/edge", "Options")
@@ -71,7 +74,7 @@ object edgeMod {
   class Options () extends Capabilities {
     def this(other: js.Object) = this()
     def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-    def this(other: Map[String, _]) = this()
+    def this(other: Map[String, js.Any]) = this()
   }
   
   @JSImport("selenium-webdriver/edge", "ServiceBuilder")
@@ -87,11 +90,9 @@ object edgeMod {
     def this(opt_exe: String) = this()
   }
   
-  @JSImport("selenium-webdriver/edge", "getDefaultService")
-  @js.native
-  def getDefaultService(): DriverService = js.native
+  @scala.inline
+  def getDefaultService(): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultService")().asInstanceOf[DriverService]
   
-  @JSImport("selenium-webdriver/edge", "setDefaultService")
-  @js.native
-  def setDefaultService(service: DriverService): Unit = js.native
+  @scala.inline
+  def setDefaultService(service: DriverService): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Validation based on regular expressions.
   */
-@js.native
 trait SchemaRegexValidation extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRegexValidation extends StObject {
     * value. The value must match the regex in its entirety (substring matches
     * are not sufficient).
     */
-  var regexes: js.UndefOr[js.Array[String]] = js.native
+  var regexes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRegexValidation {
   

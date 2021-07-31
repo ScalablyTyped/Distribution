@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a Boolean control for a given HID device. */
-@js.native
 trait HidBooleanControlDescription extends StObject {
   
   /** Retrieves the identifier for a given Boolean control. */
-  var id: Double = js.native
+  var id: Double
   
   /** Retrieves the parent collection for a given Boolean control. */
-  var parentCollections: IVectorView[HidCollection] = js.native
+  var parentCollections: IVectorView[HidCollection]
   
   /** Retrieves the identifier for the report associated with the given Boolean control. */
-  var reportId: Double = js.native
+  var reportId: Double
   
   /** Retrieves the report type for the report associated with the given Boolean control. */
-  var reportType: HidReportType = js.native
+  var reportType: HidReportType
   
   /** Retrieves the usage identifier associated with the given Boolean control. */
-  var usageId: Double = js.native
+  var usageId: Double
   
   /** Retrieves the usage page associated with the given Boolean control. */
-  var usagePage: Double = js.native
+  var usagePage: Double
 }
 object HidBooleanControlDescription {
   

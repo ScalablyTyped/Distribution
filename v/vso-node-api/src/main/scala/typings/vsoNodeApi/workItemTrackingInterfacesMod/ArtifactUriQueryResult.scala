@@ -3,16 +3,14 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactUriQueryResult extends StObject {
   
   /**
     * A Dictionary that maps a list of work item references to the given list of artifact URI.
     */
-  var artifactUrisQueryResult: StringDictionary[js.Array[WorkItemReference]] = js.native
+  var artifactUrisQueryResult: StringDictionary[js.Array[WorkItemReference]]
 }
 object ArtifactUriQueryResult {
   

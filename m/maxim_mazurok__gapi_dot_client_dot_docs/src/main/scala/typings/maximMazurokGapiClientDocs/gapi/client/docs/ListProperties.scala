@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProperties extends StObject {
   
   /**
     * Describes the properties of the bullets at the associated level. A list has at most nine levels of nesting with nesting level 0 corresponding to the top-most level and nesting level
     * 8 corresponding to the most nested level. The nesting levels are returned in ascending order with the least nested returned first.
     */
-  var nestingLevels: js.UndefOr[js.Array[NestingLevel]] = js.native
+  var nestingLevels: js.UndefOr[js.Array[NestingLevel]] = js.undefined
 }
 object ListProperties {
   

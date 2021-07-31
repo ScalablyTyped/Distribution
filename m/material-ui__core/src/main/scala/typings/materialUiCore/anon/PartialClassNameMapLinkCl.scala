@@ -2,22 +2,20 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Link/Link.LinkClassKey>> */
-@js.native
 trait PartialClassNameMapLinkCl extends StObject {
   
-  var button: js.UndefOr[String] = js.native
+  var button: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var underlineAlways: js.UndefOr[String] = js.native
+  var underlineAlways: js.UndefOr[String] = js.undefined
   
-  var underlineHover: js.UndefOr[String] = js.native
+  var underlineHover: js.UndefOr[String] = js.undefined
   
-  var underlineNone: js.UndefOr[String] = js.native
+  var underlineNone: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapLinkCl {
   

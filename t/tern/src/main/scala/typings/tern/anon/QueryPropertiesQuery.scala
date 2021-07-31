@@ -4,15 +4,13 @@ import typings.tern.ternMod.PropertiesQuery
 import typings.tern.ternMod.PropertiesQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryPropertiesQuery extends StObject {
   
-  var query: PropertiesQuery = js.native
+  var query: PropertiesQuery
   
-  var result: PropertiesQueryResult = js.native
+  var result: PropertiesQueryResult
 }
 object QueryPropertiesQuery {
   

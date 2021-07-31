@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property looping - Determines whether skeleton is looping its animation.
   * @param graph - The root pc.GraphNode of the skeleton.
   */
-@js.native
 trait Skeleton extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait Skeleton extends StObject {
     end).
     * @param delta - The time in seconds to progress the skeleton's animation.
     */
-  def addTime(delta: Double): Unit = js.native
+  def addTime(delta: Double): Unit
   
   /**
     * Animation currently assigned to skeleton.
     */
-  var animation: Animation = js.native
+  var animation: Animation
   
   /**
     * Blends two skeletons together.
@@ -36,23 +34,23 @@ trait Skeleton extends StObject {
     skeletons. The value is in the range 0 to 1, 0 generating skel1, 1 generating skel2 and anything
     in between generating a spherical interpolation between the two.
     */
-  def blend(skel1: Skeleton, skel2: Skeleton, alpha: Double): Unit = js.native
+  def blend(skel1: Skeleton, skel2: Skeleton, alpha: Double): Unit
   
   /**
     * Current time of currently active animation in seconds.
     This value is between zero and the duration of the animation.
     */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
   /**
     * Determines whether skeleton is looping its animation.
     */
-  var looping: Boolean = js.native
+  var looping: Boolean
   
   /**
     * Read-only property that returns number of nodes of a skeleton.
     */
-  val numNodes: Double = js.native
+  val numNodes: Double
   
   /**
     * Links a skeleton to a node hierarchy. The nodes animated skeleton are
@@ -60,7 +58,7 @@ trait Skeleton extends StObject {
     hierarchy.
     * @param graph - The root node of the graph that the skeleton is to drive.
     */
-  def setGraph(graph: GraphNode): Unit = js.native
+  def setGraph(graph: GraphNode): Unit
   
   /**
     * Synchronizes the currently linked node hierarchy with the current state of the
@@ -68,7 +66,7 @@ trait Skeleton extends StObject {
     skeleton into the local transformation matrix at each corresponding node in the linked node
     hierarchy.
     */
-  def updateGraph(): Unit = js.native
+  def updateGraph(): Unit
 }
 object Skeleton {
   

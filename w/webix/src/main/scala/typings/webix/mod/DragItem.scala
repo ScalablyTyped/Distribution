@@ -4,39 +4,71 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragItem extends StObject {
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String = js.native
+  def $drag(source: HTMLElement, ev: Event): String
   
   @JSName("$dragHTML")
-  def $dragHTML(args: js.Any*): js.Any = js.native
+  def $dragHTML(args: js.Any*): js.Any
   @JSName("$dragHTML")
-  var $dragHTML_Original: WebixCallback = js.native
+  var $dragHTML_Original: WebixCallback
   
   @JSName("$dragIn")
-  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
+  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement
   
   @JSName("$dragMark")
-  def $dragMark(context: js.Any, ev: Event): Boolean = js.native
+  def $dragMark(context: js.Any, ev: Event): Boolean
   
   @JSName("$dragOut")
-  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
+  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit
   
   @JSName("$drop")
-  def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
+  def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit
   
   @JSName("$dropAllow")
-  def $dropAllow(args: js.Any*): js.Any = js.native
+  def $dropAllow(args: js.Any*): js.Any
   @JSName("$dropAllow")
-  var $dropAllow_Original: WebixCallback = js.native
+  var $dropAllow_Original: WebixCallback
   
   @JSName("$dropHTML")
-  def $dropHTML(args: js.Any*): js.Any = js.native
+  def $dropHTML(args: js.Any*): js.Any
   @JSName("$dropHTML")
-  var $dropHTML_Original: WebixCallback = js.native
+  var $dropHTML_Original: WebixCallback
+}
+object DragItem {
+  
+  @JSImport("webix", "DragItem")
+  @js.native
+  val ^ : DragItem = js.native
+  
+  @scala.inline
+  implicit class DragItemMutableBuilder[Self <: DragItem] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def set$dragHTML(value: WebixCallback): Self = StObject.set(x, "$dragHTML", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def set$dragMark(value: (js.Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def set$drop(value: (HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$drop", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def set$dropAllow(value: WebixCallback): Self = StObject.set(x, "$dropAllow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set$dropHTML(value: WebixCallback): Self = StObject.set(x, "$dropHTML", value.asInstanceOf[js.Any])
+  }
 }

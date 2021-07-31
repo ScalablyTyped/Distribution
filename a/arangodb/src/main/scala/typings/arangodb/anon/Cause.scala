@@ -3,15 +3,13 @@ package typings.arangodb.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cause extends StObject {
   
-  var cause: js.UndefOr[Error] = js.native
+  var cause: js.UndefOr[Error] = js.undefined
   
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[js.Any] = js.undefined
 }
 object Cause {
   

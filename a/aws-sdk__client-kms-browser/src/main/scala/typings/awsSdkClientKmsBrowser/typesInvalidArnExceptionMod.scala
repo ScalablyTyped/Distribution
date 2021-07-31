@@ -26,15 +26,14 @@ import typings.awsSdkClientKmsBrowser.untagResourceExceptionsUnionMod.UntagResou
 import typings.awsSdkClientKmsBrowser.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidArnExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidArnExceptionDetails> * / any */ @js.native
-  trait InvalidArnException
-    extends CancelKeyDeletionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidArnExceptionDetails> * / any */ trait InvalidArnException
+    extends StObject
+       with CancelKeyDeletionExceptionsUnion
        with CreateGrantExceptionsUnion
        with CreateKeyExceptionsUnion
        with DeleteImportedKeyMaterialExceptionsUnion
@@ -59,13 +58,13 @@ object typesInvalidArnExceptionMod {
        with UntagResourceExceptionsUnion
        with UpdateKeyDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidArnException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidArnException
   }
   object InvalidArnException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidArnException): InvalidArnException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[InvalidArnException]
     }
     
@@ -77,13 +76,12 @@ object typesInvalidArnExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidArnExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidArnExceptionDetails {
     

@@ -7,14 +7,14 @@ import typings.reactNativeFirebase.mod.App
 import typings.reactNativeFirebase.mod.AuthCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auth {
   
   @js.native
   trait Auth
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     val app: App = js.native
     
@@ -170,15 +170,11 @@ object auth {
       * authentication purposes.
       */
     def verifyPhoneNumber(phoneNumber: String): PhoneAuthListener = js.native
-    def verifyPhoneNumber(
-      phoneNumber: String,
-      autoVerifyTimeoutOrForceResend: js.UndefOr[scala.Nothing],
-      forceResend: Boolean
-    ): PhoneAuthListener = js.native
     def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Boolean): PhoneAuthListener = js.native
     def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Boolean, forceResend: Boolean): PhoneAuthListener = js.native
     def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Double): PhoneAuthListener = js.native
     def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Double, forceResend: Boolean): PhoneAuthListener = js.native
+    def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Unit, forceResend: Boolean): PhoneAuthListener = js.native
   }
   
   type AuthListenerCallback = js.Function1[/* user */ OrNull[User], Unit]
@@ -196,7 +192,6 @@ object auth {
   
   type AuthResult = Authenticated | Null
   
-  @js.native
   trait AuthSettings extends StObject {
     
     /**
@@ -205,7 +200,7 @@ object auth {
       * @platform iOS
       * @param disabled
       */
-    var appVerificationDisabledForTesting: Boolean = js.native
+    var appVerificationDisabledForTesting: Boolean
     
     /**
       * The phone number and SMS code here must have been configured in the
@@ -219,7 +214,7 @@ object auth {
       * @param smsCode
       * @return {*}
       */
-    def setAutoRetrievedSmsCodeForPhoneNumber(phoneNumber: String, smsCode: String): js.Promise[Null] = js.native
+    def setAutoRetrievedSmsCodeForPhoneNumber(phoneNumber: String, smsCode: String): js.Promise[Null]
   }
   object AuthSettings {
     
@@ -243,26 +238,25 @@ object auth {
     }
   }
   
-  @js.native
   trait AuthStatics extends StObject {
     
-    var AppleAuthProvider: AuthProvider = js.native
+    var AppleAuthProvider: AuthProvider
     
-    var EmailAuthProvider: typings.reactNativeFirebase.mod.RNFirebase.auth.EmailAuthProvider = js.native
+    var EmailAuthProvider: typings.reactNativeFirebase.mod.RNFirebase.auth.EmailAuthProvider
     
-    var FacebookAuthProvider: AuthProvider = js.native
+    var FacebookAuthProvider: AuthProvider
     
-    var GithubAuthProvider: AuthProvider = js.native
+    var GithubAuthProvider: AuthProvider
     
-    var GoogleAuthProvider: AuthProvider = js.native
+    var GoogleAuthProvider: AuthProvider
     
-    var OAuthProvider: AuthProvider = js.native
+    var OAuthProvider: AuthProvider
     
-    var PhoneAuthProvider: AuthProvider = js.native
+    var PhoneAuthProvider: AuthProvider
     
-    var PhoneAuthState: AUTOVERIFIED = js.native
+    var PhoneAuthState: AUTOVERIFIED
     
-    var TwitterAuthProvider: AuthProvider = js.native
+    var TwitterAuthProvider: AuthProvider
   }
   object AuthStatics {
     
@@ -314,18 +308,17 @@ object auth {
     }
   }
   
-  @js.native
   trait EmailAuthProvider extends StObject {
     
-    var EMAIL_LINK_SIGN_IN_METHOD: String = js.native
+    var EMAIL_LINK_SIGN_IN_METHOD: String
     
-    var EMAIL_PASSWORD_SIGN_IN_METHOD: String = js.native
+    var EMAIL_PASSWORD_SIGN_IN_METHOD: String
     
-    var PROVIDER_ID: String = js.native
+    var PROVIDER_ID: String
     
-    def credential(email: String, password: String): AuthCredential = js.native
+    def credential(email: String, password: String): AuthCredential
     
-    def credentialWithLink(email: String, emailLink: String): AuthCredential = js.native
+    def credentialWithLink(email: String, emailLink: String): AuthCredential
   }
   object EmailAuthProvider {
     

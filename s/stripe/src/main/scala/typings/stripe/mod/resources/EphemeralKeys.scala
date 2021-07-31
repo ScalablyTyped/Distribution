@@ -6,7 +6,6 @@ import typings.stripe.mod.ephemeralKeys.IEphemeralKey
 import typings.stripe.mod.ephemeralKeys.IStripeVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.EphemeralKeys")

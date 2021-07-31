@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrationGenerateCommandMod {
@@ -29,28 +28,28 @@ object migrationGenerateCommandMod {
   /* static members */
   object MigrationGenerateCommand {
     
+    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets contents of the migration file.
       */
-    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.getTemplate")
-    @js.native
-    def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = js.native
+    @scala.inline
+    def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], upSqls.asInstanceOf[js.Any], downSqls.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       */
-    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.prettifyQuery")
-    @js.native
-    def prettifyQuery(query: String): String = js.native
+    @scala.inline
+    def prettifyQuery(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Formats query parameters for migration queries if parameters actually exist
       */
-    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.queryParams")
-    @js.native
-    def queryParams(): String = js.native
-    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.queryParams")
-    @js.native
-    def queryParams(parameters: js.Array[_]): String = js.native
+    @scala.inline
+    def queryParams(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")().asInstanceOf[String]
+    @scala.inline
+    def queryParams(parameters: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(parameters.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -2,20 +2,18 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomMapStyle extends StObject {
   
   /** A list of map elements to be styled. */
-  var elements: js.UndefOr[IMapElements] = js.native
+  var elements: js.UndefOr[IMapElements] = js.undefined
   
   /** Global Settings. */
-  var settings: js.UndefOr[ISettingsStyle] = js.native
+  var settings: js.UndefOr[ISettingsStyle] = js.undefined
   
   /** The version of the style syntax used. */
-  var version: String = js.native
+  var version: String
 }
 object ICustomMapStyle {
   

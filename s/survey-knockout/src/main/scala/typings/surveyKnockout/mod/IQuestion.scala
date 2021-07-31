@@ -2,45 +2,44 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQuestion
-  extends IElement
+  extends StObject
+     with IElement
      with ISurveyErrorOwner {
   
-  def clearUnusedValues(): js.Any = js.native
+  def clearUnusedValues(): js.Any
   
-  def clearValue(): js.Any = js.native
+  def clearValue(): js.Any
   
-  def clearValueIfInvisible(): js.Any = js.native
+  def clearValueIfInvisible(): js.Any
   
-  def getDisplayValue(keysAsText: Boolean, value: js.Any): js.Any = js.native
+  def getDisplayValue(keysAsText: Boolean, value: js.Any): js.Any
   
-  def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
+  def getQuestionFromArray(name: String, index: Double): IQuestion
   
-  def getValueName(): String = js.native
+  def getValueName(): String
   
-  var hasTitle: Boolean = js.native
+  var hasTitle: Boolean
   
-  def isAnswerCorrect(): Boolean = js.native
+  def isAnswerCorrect(): Boolean
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  def onSurveyValueChanged(newValue: js.Any): js.Any = js.native
+  def onSurveyValueChanged(newValue: js.Any): js.Any
   
-  def supportGoNextPageAutomatic(): Boolean = js.native
+  def supportGoNextPageAutomatic(): Boolean
   
-  var survey: js.Any = js.native
+  var survey: js.Any
   
-  def updateCommentFromSurvey(newValue: js.Any): js.Any = js.native
+  def updateCommentFromSurvey(newValue: js.Any): js.Any
   
-  def updateValueFromSurvey(newValue: js.Any): js.Any = js.native
+  def updateValueFromSurvey(newValue: js.Any): js.Any
   
-  def updateValueWithDefaults(): js.Any = js.native
+  def updateValueWithDefaults(): js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IQuestion {
   
@@ -82,7 +81,7 @@ object IQuestion {
     removeElement: IElement => Boolean,
     renderWidth: String,
     rightIndent: Double,
-    runCondition: (HashTable[_], HashTable[_]) => js.Any,
+    runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any,
     setSurveyImpl: ISurveyImpl => js.Any,
     setVisibleIndex: Double => Double,
     startWithNewLine: Boolean,

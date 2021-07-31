@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectSyntaxRequest extends StObject {
   
   /**
     * The language code of the input documents. You can specify any of the following languages supported by Amazon Comprehend: German ("de"), English ("en"), Spanish ("es"), French ("fr"), Italian ("it"), or Portuguese ("pt").
     */
-  var LanguageCode: SyntaxLanguageCode = js.native
+  var LanguageCode: SyntaxLanguageCode
   
   /**
     * A UTF-8 string. Each string must contain fewer that 5,000 bytes of UTF encoded characters.
     */
-  var Text: CustomerInputString = js.native
+  var Text: CustomerInputString
 }
 object DetectSyntaxRequest {
   

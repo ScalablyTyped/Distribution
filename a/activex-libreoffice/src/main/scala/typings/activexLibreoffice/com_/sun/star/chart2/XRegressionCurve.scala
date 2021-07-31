@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRegressionCurve extends XInterface {
+trait XRegressionCurve
+  extends StObject
+     with XInterface {
   
-  val Calculator: XRegressionCurveCalculator = js.native
+  val Calculator: XRegressionCurveCalculator
   
-  var EquationProperties: XPropertySet = js.native
+  var EquationProperties: XPropertySet
   
-  def getCalculator(): XRegressionCurveCalculator = js.native
+  def getCalculator(): XRegressionCurveCalculator
   
-  def getEquationProperties(): XPropertySet = js.native
+  def getEquationProperties(): XPropertySet
   
-  def setEquationProperties(xEquationProperties: XPropertySet): Unit = js.native
+  def setEquationProperties(xEquationProperties: XPropertySet): Unit
 }
 object XRegressionCurve {
   

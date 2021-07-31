@@ -3,26 +3,25 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.containsText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainsTextRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var operator: js.UndefOr[ContainsTextOperators] = js.native
+  var operator: js.UndefOr[ContainsTextOperators] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: containsText = js.native
+  var `type`: containsText
 }
 object ContainsTextRuleType {
   
   @scala.inline
-  def apply(priority: Double, `type`: containsText): ContainsTextRuleType = {
+  def apply(priority: Double): ContainsTextRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("containsText")
     __obj.asInstanceOf[ContainsTextRuleType]
   }
   

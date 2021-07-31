@@ -12,47 +12,45 @@ import typings.recharts.rechartsStrings.right
 import typings.recharts.rechartsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendProps extends StObject {
   
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
-  var chartHeight: js.UndefOr[Double] = js.native
+  var chartHeight: js.UndefOr[Double] = js.undefined
   
-  var chartWidth: js.UndefOr[Double] = js.native
+  var chartWidth: js.UndefOr[Double] = js.undefined
   
-  var content: js.UndefOr[ReactElement | ContentRenderer[LegendProps]] = js.native
+  var content: js.UndefOr[ReactElement | ContentRenderer[LegendProps]] = js.undefined
   
-  var formatter: js.UndefOr[LegendValueFormatter] = js.native
+  var formatter: js.UndefOr[LegendValueFormatter] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var iconType: js.UndefOr[IconType] = js.native
+  var iconType: js.UndefOr[IconType] = js.undefined
   
-  var layout: js.UndefOr[LayoutType] = js.native
+  var layout: js.UndefOr[LayoutType] = js.undefined
   
-  var margin: js.UndefOr[PartialMargin] = js.native
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   
-  var onBBoxUpdate: js.UndefOr[BBoxUpdateCallback] = js.native
+  var onBBoxUpdate: js.UndefOr[BBoxUpdateCallback] = js.undefined
   
-  var onClick: js.UndefOr[RechartsFunction] = js.native
+  var onClick: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseEnter: js.UndefOr[RechartsFunction] = js.native
+  var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseLeave: js.UndefOr[RechartsFunction] = js.native
+  var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
   
-  var payload: js.UndefOr[js.Array[LegendPayload]] = js.native
+  var payload: js.UndefOr[js.Array[LegendPayload]] = js.undefined
   
-  var verticalAlign: js.UndefOr[top | middle | bottom] = js.native
+  var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wrapperStyle: js.UndefOr[js.Object] = js.native
+  var wrapperStyle: js.UndefOr[js.Object] = js.undefined
 }
 object LegendProps {
   
@@ -139,19 +137,19 @@ object LegendProps {
     def setOnBBoxUpdateUndefined: Self = StObject.set(x, "onBBoxUpdate", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: RechartsFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: RechartsFunction): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: RechartsFunction): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)

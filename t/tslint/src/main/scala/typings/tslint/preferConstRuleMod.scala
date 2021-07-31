@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preferConstRuleMod {
@@ -22,9 +21,8 @@ object preferConstRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/preferConstRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(identifier: String, blockScoped: Boolean): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(identifier: String, blockScoped: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(identifier.asInstanceOf[js.Any], blockScoped.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/preferConstRule", "Rule.metadata")
     @js.native

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickListItemMod {
@@ -22,18 +21,17 @@ object pickListItemMod {
     def this(props: PickListItemProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PickListItemProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var template: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object PickListItemProps {
     

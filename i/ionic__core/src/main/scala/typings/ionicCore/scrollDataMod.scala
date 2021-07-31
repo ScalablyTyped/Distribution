@@ -3,25 +3,26 @@ package typings.ionicCore
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollDataMod {
   
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/scroll-data", "getScrollData")
+  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/scroll-data", JSImport.Namespace)
   @js.native
-  def getScrollData(componentEl: HTMLElement, contentEl: HTMLElement, keyboardHeight: Double): ScrollData = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getScrollData(componentEl: HTMLElement, contentEl: HTMLElement, keyboardHeight: Double): ScrollData = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollData")(componentEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[ScrollData]
+  
   trait ScrollData extends StObject {
     
-    var inputSafeY: Double = js.native
+    var inputSafeY: Double
     
-    var scrollAmount: Double = js.native
+    var scrollAmount: Double
     
-    var scrollDuration: Double = js.native
+    var scrollDuration: Double
     
-    var scrollPadding: Double = js.native
+    var scrollPadding: Double
   }
   object ScrollData {
     

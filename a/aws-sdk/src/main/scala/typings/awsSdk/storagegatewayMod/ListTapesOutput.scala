@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTapesOutput extends StObject {
   
   /**
     * A string that indicates the position at which to begin returning the next list of tapes. Use the marker in your next request to continue pagination of tapes. If there are no more tapes to list, this element does not appear in the response body.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
-  var TapeInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeInfos] = js.native
+  var TapeInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeInfos] = js.undefined
 }
 object ListTapesOutput {
   

@@ -9,17 +9,15 @@ import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupAvatarProps extends StObject {
   
-  var collaborators: js.Array[Name] = js.native
+  var collaborators: js.Array[Name]
   
-  var outline: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[xs | sm | md | lg | xl | fit] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl | fit] = js.undefined
 }
 object GroupAvatarProps {
   

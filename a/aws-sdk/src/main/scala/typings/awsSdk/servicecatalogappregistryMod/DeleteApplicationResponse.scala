@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationResponse extends StObject {
   
   /**
     * Information about the deleted application.
     */
-  var application: js.UndefOr[ApplicationSummary] = js.native
+  var application: js.UndefOr[ApplicationSummary] = js.undefined
 }
 object DeleteApplicationResponse {
   

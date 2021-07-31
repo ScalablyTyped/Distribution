@@ -15,7 +15,6 @@ import typings.cytoscape.cytoscapeStrings.taxi
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * http://js.cytoscape.org/#style/edge-line
   */
-@js.native
 trait EdgeLine extends StObject {
   
   /**
@@ -39,52 +37,52 @@ trait EdgeLine extends StObject {
     */
   var `curve-style`: js.UndefOr[
     PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The cap of the edge's line.
     */
-  var `line-cap`: js.UndefOr[PropertyValueEdge[butt | round | square]] = js.native
+  var `line-cap`: js.UndefOr[PropertyValueEdge[butt | round | square]] = js.undefined
   
   /**
     * The colour of the edge’s line.
     */
-  var `line-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `line-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /**
     * The dashed line offset.
     */
-  var `line-dash-offset`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `line-dash-offset`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   /**
     * The dashed line pattern which specifies alternating lengths of lines and gaps.
     */
-  var `line-dash-pattern`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.native
+  var `line-dash-pattern`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.undefined
   
   /**
     * The filling style of the edge's line.
     */
-  var `line-fill`: js.UndefOr[PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]] = js.native
+  var `line-fill`: js.UndefOr[PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]] = js.undefined
   
   /**
     * The style of the edge’s line.
     */
-  var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.native
+  var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
   
   /**
     * The distance the edge ends from its source.
     */
-  var `source-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `source-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   /**
     * The distance the edge ends from its target.
     */
-  var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   /**
     * The width of an edge’s line.
     */
-  var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.native
+  var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
 }
 object EdgeLine {
   

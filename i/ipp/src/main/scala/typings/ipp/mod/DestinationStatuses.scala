@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationStatuses extends StObject {
   
-  var `destination-uri`: js.UndefOr[String] = js.native
+  var `destination-uri`: js.UndefOr[String] = js.undefined
   
-  var `images-completed`: js.UndefOr[Double] = js.native
+  var `images-completed`: js.UndefOr[Double] = js.undefined
   
-  var `transmission-status`: js.UndefOr[TransmissionStatus] = js.native
+  var `transmission-status`: js.UndefOr[TransmissionStatus] = js.undefined
 }
 object DestinationStatuses {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBoxModelResponse extends StObject {
   
   /**
     * Box model for the node.
     */
-  var model: BoxModel = js.native
+  var model: BoxModel
 }
 object GetBoxModelResponse {
   

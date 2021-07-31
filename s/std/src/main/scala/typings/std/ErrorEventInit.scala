@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorEventInit extends EventInit {
+trait ErrorEventInit
+  extends StObject
+     with EventInit {
   
-  var colno: js.UndefOr[Double] = js.native
+  var colno: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var filename: js.UndefOr[java.lang.String] = js.native
+  var filename: js.UndefOr[java.lang.String] = js.undefined
   
-  var lineno: js.UndefOr[Double] = js.native
+  var lineno: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[java.lang.String] = js.native
+  var message: js.UndefOr[java.lang.String] = js.undefined
 }
 object ErrorEventInit {
   

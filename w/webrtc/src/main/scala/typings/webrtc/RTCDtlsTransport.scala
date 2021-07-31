@@ -3,24 +3,22 @@ package typings.webrtc
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCDtlsTransport extends StObject {
   
   //readonly state: RTCDtlsTransportState;
-  def getRemoteCertificates(): js.Array[ArrayBuffer] = js.native
+  def getRemoteCertificates(): js.Array[ArrayBuffer]
   
-  var onstatechange: DtlsTransportEventHandler = js.native
+  var onstatechange: DtlsTransportEventHandler
   
-  val transport: RTCIceTransport = js.native
+  val transport: RTCIceTransport
 }
 object RTCDtlsTransport {
   
   @scala.inline
   def apply(getRemoteCertificates: () => js.Array[ArrayBuffer], transport: RTCIceTransport): RTCDtlsTransport = {
-    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), transport = transport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), transport = transport.asInstanceOf[js.Any], onstatechange = null)
     __obj.asInstanceOf[RTCDtlsTransport]
   }
   

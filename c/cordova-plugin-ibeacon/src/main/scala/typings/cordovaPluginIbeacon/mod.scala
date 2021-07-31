@@ -9,7 +9,6 @@ import typings.cordovaPluginIbeacon.mod.global.BeaconPlugin.LocationManager
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,22 +17,21 @@ object mod {
     
     object BeaconPlugin {
       
-      @js.native
       trait Beacon extends StObject {
         
-        var accuracy: Double = js.native
+        var accuracy: Double
         
-        var major: String = js.native
+        var major: String
         
-        var minor: String = js.native
+        var minor: String
         
-        var proximity: String = js.native
+        var proximity: String
         
-        var rssi: Double = js.native
+        var rssi: Double
         
-        var tx: Double = js.native
+        var tx: Double
         
-        var uuid: String = js.native
+        var uuid: String
       }
       object Beacon {
         
@@ -79,21 +77,22 @@ object mod {
       
       @js.native
       trait BeaconRegion
-        extends Region
+        extends StObject
+           with Region
            with Instantiable2[/* identifier */ String, /* uuid */ String, BeaconRegion]
            with Instantiable3[/* identifier */ String, /* uuid */ String, /* major */ Double, BeaconRegion]
            with Instantiable4[
                   /* identifier */ String, 
                   /* uuid */ String, 
-                  js.UndefOr[/* major */ Double], 
+                  (/* major */ Double) | (/* major */ Unit), 
                   /* minor */ Double, 
                   BeaconRegion
                 ]
            with Instantiable5[
                   /* identifier */ String, 
                   /* uuid */ String, 
-                  js.UndefOr[/* major */ Double], 
-                  js.UndefOr[/* minor */ Double], 
+                  (/* major */ Double) | (/* major */ Unit), 
+                  (/* minor */ Double) | (/* minor */ Unit), 
                   /* notifyEntryStateOnDisplay */ Boolean, 
                   BeaconRegion
                 ] {
@@ -109,7 +108,8 @@ object mod {
       
       @js.native
       trait CircularRegion
-        extends Region
+        extends StObject
+           with Region
            with Instantiable4[
                   /* identifier */ String, 
                   /* latitude */ Double, 
@@ -125,26 +125,25 @@ object mod {
         var radius: Double = js.native
       }
       
-      @js.native
       trait Delegate extends StObject {
         
-        def didChangeAuthorizationStatus(authorizationStatus: String): Unit = js.native
+        def didChangeAuthorizationStatus(authorizationStatus: String): Unit
         
-        def didDetermineStateForRegion(pluginResult: PluginResult): Unit = js.native
+        def didDetermineStateForRegion(pluginResult: PluginResult): Unit
         
-        def didEnterRegion(pluginResult: PluginResult): Unit = js.native
+        def didEnterRegion(pluginResult: PluginResult): Unit
         
-        def didExitRegion(pluginResult: PluginResult): Unit = js.native
+        def didExitRegion(pluginResult: PluginResult): Unit
         
-        def didRangeBeaconsInRegion(pluginResult: PluginResult): Unit = js.native
+        def didRangeBeaconsInRegion(pluginResult: PluginResult): Unit
         
-        def didStartMonitoringForRegion(pluginResult: PluginResult): Unit = js.native
+        def didStartMonitoringForRegion(pluginResult: PluginResult): Unit
         
-        def monitoringDidFailForRegionWithError(pluginResult: PluginResult): Unit = js.native
+        def monitoringDidFailForRegionWithError(pluginResult: PluginResult): Unit
         
-        def peripheralManagerDidStartAdvertising(pluginResult: PluginResult): Unit = js.native
+        def peripheralManagerDidStartAdvertising(pluginResult: PluginResult): Unit
         
-        def peripheralManagerDidUpdateState(pluginResult: PluginResult): Unit = js.native
+        def peripheralManagerDidUpdateState(pluginResult: PluginResult): Unit
       }
       object Delegate {
         
@@ -196,64 +195,63 @@ object mod {
         }
       }
       
-      @js.native
       trait LocationManager extends StObject {
         
-        var BeaconRegion: typings.cordovaPluginIbeacon.mod.global.BeaconPlugin.BeaconRegion = js.native
+        var BeaconRegion: typings.cordovaPluginIbeacon.mod.global.BeaconPlugin.BeaconRegion
         
-        var Region: typings.cordovaPluginIbeacon.mod.global.BeaconPlugin.Region = js.native
+        var Region: typings.cordovaPluginIbeacon.mod.global.BeaconPlugin.Region
         
-        def appendToDeviceLog(message: String): Promise[String] = js.native
+        def appendToDeviceLog(message: String): Promise[String]
         
-        var delegate: Delegate = js.native
+        var delegate: Delegate
         
-        def disableBluetooth(): Promise[Unit] = js.native
+        def disableBluetooth(): Promise[Unit]
         
-        def disableDebugLogs(): Promise[Unit] = js.native
+        def disableDebugLogs(): Promise[Unit]
         
-        def disableDebugNotifications(): Promise[Unit] = js.native
+        def disableDebugNotifications(): Promise[Unit]
         
-        def enableBluetooth(): Promise[Unit] = js.native
+        def enableBluetooth(): Promise[Unit]
         
-        def enableDebugLogs(): Promise[Unit] = js.native
+        def enableDebugLogs(): Promise[Unit]
         
-        def enableDebugNotifications(): Promise[Unit] = js.native
+        def enableDebugNotifications(): Promise[Unit]
         
-        def getAuthorizationStatus(): Promise[PluginResult] = js.native
+        def getAuthorizationStatus(): Promise[PluginResult]
         
-        def getMonitoredRegions(): Promise[js.Array[Region]] = js.native
+        def getMonitoredRegions(): Promise[js.Array[Region]]
         
-        def getRangedRegions(): Promise[js.Array[Region]] = js.native
+        def getRangedRegions(): Promise[js.Array[Region]]
         
-        def isAdvertising(): Promise[Boolean] = js.native
+        def isAdvertising(): Promise[Boolean]
         
-        def isAdvertisingAvailable(): Promise[Boolean] = js.native
+        def isAdvertisingAvailable(): Promise[Boolean]
         
-        def isBluetoothEnabled(): Promise[Boolean] = js.native
+        def isBluetoothEnabled(): Promise[Boolean]
         
-        def isMonitoringAvailableForClass(region: Region): Promise[Boolean] = js.native
+        def isMonitoringAvailableForClass(region: Region): Promise[Boolean]
         
-        def isRangingAvailable(): Promise[Boolean] = js.native
+        def isRangingAvailable(): Promise[Boolean]
         
-        def onDomDelegateReady(): Promise[Unit] = js.native
+        def onDomDelegateReady(): Promise[Unit]
         
-        def requestAlwaysAuthorization(): Promise[Unit] = js.native
+        def requestAlwaysAuthorization(): Promise[Unit]
         
-        def requestStateForRegion(region: Region): Promise[Unit] = js.native
+        def requestStateForRegion(region: Region): Promise[Unit]
         
-        def requestWhenInUseAuthorization(): Promise[Unit] = js.native
+        def requestWhenInUseAuthorization(): Promise[Unit]
         
-        def startAdvertising(region: Region, measuredPower: Boolean): Promise[Unit] = js.native
+        def startAdvertising(region: Region, measuredPower: Boolean): Promise[Unit]
         
-        def startMonitoringForRegion(region: Region): Promise[Unit] = js.native
+        def startMonitoringForRegion(region: Region): Promise[Unit]
         
-        def startRangingBeaconsInRegion(region: Region): Promise[Unit] = js.native
+        def startRangingBeaconsInRegion(region: Region): Promise[Unit]
         
-        def stopAdvertising(): Promise[Unit] = js.native
+        def stopAdvertising(): Promise[Unit]
         
-        def stopMonitoringForRegion(region: Region): Promise[Unit] = js.native
+        def stopMonitoringForRegion(region: Region): Promise[Unit]
         
-        def stopRangingBeaconsInRegion(region: Region): Promise[Unit] = js.native
+        def stopRangingBeaconsInRegion(region: Region): Promise[Unit]
       }
       object LocationManager {
         
@@ -381,20 +379,19 @@ object mod {
         }
       }
       
-      @js.native
       trait PluginResult extends StObject {
         
-        var authorizationStatus: String = js.native
+        var authorizationStatus: String
         
-        var beacons: js.Array[Beacon] = js.native
+        var beacons: js.Array[Beacon]
         
-        var error: String = js.native
+        var error: String
         
-        var eventType: String = js.native
+        var eventType: String
         
-        var region: Region = js.native
+        var region: Region
         
-        var state: String = js.native
+        var state: String
       }
       object PluginResult {
         
@@ -438,16 +435,17 @@ object mod {
       }
       
       @js.native
-      trait Region extends Instantiable1[/* identifier */ String, Region] {
+      trait Region
+        extends StObject
+           with Instantiable1[/* identifier */ String, Region] {
         
         var identifier: String = js.native
       }
     }
     
-    @js.native
     trait CordovaPlugins extends StObject {
       
-      var locationManager: LocationManager = js.native
+      var locationManager: LocationManager
     }
     object CordovaPlugins {
       

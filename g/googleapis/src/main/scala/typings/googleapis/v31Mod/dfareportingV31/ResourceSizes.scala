@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Sizes")
@@ -31,7 +30,7 @@ class ResourceSizes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSize] = js.native
   def get(callback: BodyResponseCallback[SchemaSize]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSize] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSize] = js.native
   def get(params: ParamsResourceSizesGet): GaxiosPromise[SchemaSize] = js.native
   def get(params: ParamsResourceSizesGet, callback: BodyResponseCallback[SchemaSize]): Unit = js.native
   def get(
@@ -57,7 +56,7 @@ class ResourceSizes protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaSize] = js.native
   def insert(callback: BodyResponseCallback[SchemaSize]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSize] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSize] = js.native
   def insert(params: ParamsResourceSizesInsert): GaxiosPromise[SchemaSize] = js.native
   def insert(params: ParamsResourceSizesInsert, callback: BodyResponseCallback[SchemaSize]): Unit = js.native
   def insert(
@@ -93,7 +92,7 @@ class ResourceSizes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSizesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSizesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSizesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSizesListResponse] = js.native
   def list(params: ParamsResourceSizesList): GaxiosPromise[SchemaSizesListResponse] = js.native
   def list(params: ParamsResourceSizesList, callback: BodyResponseCallback[SchemaSizesListResponse]): Unit = js.native
   def list(

@@ -2,63 +2,27 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PivotLayout extends StObject {
   
   def AddFields(): Unit = js.native
-  def AddFields(
-    RowFields: js.UndefOr[scala.Nothing],
-    ColumnFields: js.UndefOr[scala.Nothing],
-    PageFields: js.UndefOr[scala.Nothing],
-    AppendField: js.Any
-  ): Unit = js.native
-  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.UndefOr[scala.Nothing], PageFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.UndefOr[scala.Nothing],
-    ColumnFields: js.UndefOr[scala.Nothing],
-    PageFields: js.Any,
-    AppendField: js.Any
-  ): Unit = js.native
-  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.UndefOr[scala.Nothing],
-    ColumnFields: js.Any,
-    PageFields: js.UndefOr[scala.Nothing],
-    AppendField: js.Any
-  ): Unit = js.native
-  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.UndefOr[scala.Nothing],
-    ColumnFields: js.Any,
-    PageFields: js.Any,
-    AppendField: js.Any
-  ): Unit = js.native
   def AddFields(RowFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.Any,
-    ColumnFields: js.UndefOr[scala.Nothing],
-    PageFields: js.UndefOr[scala.Nothing],
-    AppendField: js.Any
-  ): Unit = js.native
-  def AddFields(RowFields: js.Any, ColumnFields: js.UndefOr[scala.Nothing], PageFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.Any,
-    ColumnFields: js.UndefOr[scala.Nothing],
-    PageFields: js.Any,
-    AppendField: js.Any
-  ): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any): Unit = js.native
-  def AddFields(
-    RowFields: js.Any,
-    ColumnFields: js.Any,
-    PageFields: js.UndefOr[scala.Nothing],
-    AppendField: js.Any
-  ): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: Unit, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: js.Any, ColumnFields: Unit, PageFields: js.Any): Unit = js.native
+  def AddFields(RowFields: js.Any, ColumnFields: Unit, PageFields: js.Any, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: js.Any, ColumnFields: Unit, PageFields: Unit, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: js.Any, PageFields: js.Any, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: js.Any, PageFields: Unit, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: js.Any, AppendField: js.Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: Unit, AppendField: js.Any): Unit = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

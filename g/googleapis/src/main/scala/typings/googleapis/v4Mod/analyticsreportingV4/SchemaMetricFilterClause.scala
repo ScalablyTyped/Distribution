@@ -2,27 +2,25 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a group of metric filters. Set the operator value to specify how
   * the filters are logically combined.
   */
-@js.native
 trait SchemaMetricFilterClause extends StObject {
   
   /**
     * The repeated set of filters. They are logically combined based on the
     * operator specified.
     */
-  var filters: js.UndefOr[js.Array[SchemaMetricFilter]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaMetricFilter]] = js.undefined
   
   /**
     * The operator for combining multiple metric filters. If unspecified, it is
     * treated as an `OR`.
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricFilterClause {
   

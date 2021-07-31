@@ -2,31 +2,29 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNotificationRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget that you want to create a notification for.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The name of the budget that you want AWS to notify you about. Budget names must be unique within an account.
     */
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
     * The notification that you want to create.
     */
-  var Notification: typings.awsSdk.budgetsMod.Notification = js.native
+  var Notification: typings.awsSdk.budgetsMod.Notification
   
   /**
     * A list of subscribers that you want to associate with the notification. Each notification can have one SNS subscriber and up to 10 email subscribers.
     */
-  var Subscribers: typings.awsSdk.budgetsMod.Subscribers = js.native
+  var Subscribers: typings.awsSdk.budgetsMod.Subscribers
 }
 object CreateNotificationRequest {
   

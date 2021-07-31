@@ -11,8 +11,8 @@ A data loading utility to reduce requests to a backend via batching and caching.
 | Full name          | dataloader |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 395 |
-| # downloads        | 18340405 |
+| # dependents       | 456 |
+| # downloads        | 34492338 |
 | # stars            | 12 |
 
 ## Links

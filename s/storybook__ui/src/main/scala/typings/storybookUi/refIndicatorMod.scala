@@ -17,7 +17,6 @@ import typings.storybookUi.storybookUiStrings.loading
 import typings.storybookUi.storybookUiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refIndicatorMod {
@@ -36,12 +35,11 @@ object refIndicatorMod {
   
   type ClickHandler = /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react.react.FunctionComponent<@storybook/components.@storybook/components/dist/tooltip/TooltipLinkList.TooltipLinkListProps>>['links'][number]['onClick'] */ js.Any
   
-  @js.native
   trait CurrentVersionProps extends StObject {
     
-    var url: String = js.native
+    var url: String
     
-    var versions: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/ui.@storybook/ui/dist/components/sidebar/types.RefType['versions'] */ js.Any = js.native
+    var versions: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/ui.@storybook/ui/dist/components/sidebar/types.RefType['versions'] */ js.Any
   }
   object CurrentVersionProps {
     
@@ -67,7 +65,6 @@ object refIndicatorMod {
     }
   }
   
-  @js.native
   trait IndicatorIconProps extends StObject {
     
     var `type`: ReturnType[
@@ -78,7 +75,7 @@ object refIndicatorMod {
           /* isEmpty */ Boolean, 
           auth | error | loading | empty | ready
         ]
-      ] = js.native
+      ]
   }
   object IndicatorIconProps {
     

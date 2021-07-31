@@ -2,15 +2,13 @@ package typings.wolfy87Eventemitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Listener extends StObject {
     
-    var listener: js.Function = js.native
+    var listener: js.Function
   }
   object Listener {
     

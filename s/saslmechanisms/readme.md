@@ -12,7 +12,7 @@ JavaScript framework for SASL authentication.
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 187361 |
+| # downloads        | 292833 |
 | # stars            | 0 |
 
 ## Links

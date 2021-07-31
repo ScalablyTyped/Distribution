@@ -19,31 +19,29 @@ import typings.activexStdole.stdole.EXCEPINFO
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type FaxAccountInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait FaxAccountInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object FaxAccountInvokeParameter {
     
@@ -93,24 +91,23 @@ object EventHelperTypes {
   
   type FaxServerInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait FaxServerInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object FaxServerInvokeParameter {
     
@@ -160,20 +157,19 @@ object EventHelperTypes {
   
   type FaxServerOnDeviceStatusChangeArgNames = js.Tuple6[pFaxServer, lDeviceId, bPoweredOff, bSending, bReceiving, bRinging]
   
-  @js.native
   trait FaxServerOnDeviceStatusChangeParameter extends StObject {
     
-    val bPoweredOff: Boolean = js.native
+    val bPoweredOff: Boolean
     
-    val bReceiving: Boolean = js.native
+    val bReceiving: Boolean
     
-    val bRinging: Boolean = js.native
+    val bRinging: Boolean
     
-    val bSending: Boolean = js.native
+    val bSending: Boolean
     
-    val lDeviceId: Double = js.native
+    val lDeviceId: Double
     
-    val pFaxServer: FaxServer = js.native
+    val pFaxServer: FaxServer
   }
   object FaxServerOnDeviceStatusChangeParameter {
     

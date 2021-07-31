@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webAclLoggingConfigurationMod {
@@ -44,6 +43,10 @@ object webAclLoggingConfigurationMod {
   /* static members */
   object WebAclLoggingConfiguration {
     
+    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebAclLoggingConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,35 +56,29 @@ object webAclLoggingConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WebAclLoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WebAclLoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState): WebAclLoggingConfiguration = js.native
-    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState, opts: CustomResourceOptions): WebAclLoggingConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
     
     /**
       * Returns true if the given object is an instance of WebAclLoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafv2/webAclLoggingConfiguration", "WebAclLoggingConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean]
   }
   
-  @js.native
   trait WebAclLoggingConfigurationArgs extends StObject {
     
     /**
       * The Amazon Kinesis Data Firehose Amazon Resource Name (ARNs) that you want to associate with the web ACL. Currently, only 1 ARN is supported.
       */
-    val logDestinationConfigs: Input[js.Array[Input[String]]] = js.native
+    val logDestinationConfigs: Input[js.Array[Input[String]]]
     
     /**
       * The parts of the request that you want to keep out of the logs. Up to 100 `redactedFields` blocks are supported.
@@ -90,12 +87,12 @@ object webAclLoggingConfigurationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the web ACL that you want to associate with `logDestinationConfigs`.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
   }
   object WebAclLoggingConfigurationArgs {
     
@@ -132,13 +129,12 @@ object webAclLoggingConfigurationMod {
     }
   }
   
-  @js.native
   trait WebAclLoggingConfigurationState extends StObject {
     
     /**
       * The Amazon Kinesis Data Firehose Amazon Resource Name (ARNs) that you want to associate with the web ACL. Currently, only 1 ARN is supported.
       */
-    val logDestinationConfigs: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val logDestinationConfigs: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The parts of the request that you want to keep out of the logs. Up to 100 `redactedFields` blocks are supported.
@@ -147,12 +143,12 @@ object webAclLoggingConfigurationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the web ACL that you want to associate with `logDestinationConfigs`.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
   }
   object WebAclLoggingConfigurationState {
     

@@ -2,15 +2,13 @@ package typings.hex2dec
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Prefix extends StObject {
     
-    var prefix: js.UndefOr[Boolean] = js.native
+    var prefix: js.UndefOr[Boolean] = js.undefined
   }
   object Prefix {
     

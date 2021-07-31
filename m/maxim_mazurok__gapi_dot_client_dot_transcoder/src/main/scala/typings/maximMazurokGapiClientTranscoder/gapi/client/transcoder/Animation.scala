@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
   /** End previous animation. */
-  var animationEnd: js.UndefOr[AnimationEnd] = js.native
+  var animationEnd: js.UndefOr[AnimationEnd] = js.undefined
   
   /** Display overlay object with fade animation. */
-  var animationFade: js.UndefOr[AnimationFade] = js.native
+  var animationFade: js.UndefOr[AnimationFade] = js.undefined
   
   /** Display static overlay object. */
-  var animationStatic: js.UndefOr[AnimationStatic] = js.native
+  var animationStatic: js.UndefOr[AnimationStatic] = js.undefined
 }
 object Animation {
   

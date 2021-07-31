@@ -2,24 +2,22 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A minimum and maximum camera distance as meters from the center of the map.
   */
-@js.native
 trait CameraZoomRange extends StObject {
   
   /**
     * The maximum allowed distance of the camera from the center of the map in meters.
     */
-  var maxCameraDistance: Double = js.native
+  var maxCameraDistance: Double
   
   /**
     * The minimum allowed distance of the camera from the center of the map in meters.
     */
-  var minCameraDistance: Double = js.native
+  var minCameraDistance: Double
 }
 object CameraZoomRange {
   

@@ -3,19 +3,17 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialProvider extends StObject {
   
-  def deleteCredential(credentialId: String): Thenable[Boolean] = js.native
+  def deleteCredential(credentialId: String): Thenable[Boolean]
   
-  var handle: Double = js.native
+  var handle: Double
   
-  def readCredential(credentialId: String): Thenable[Credential] = js.native
+  def readCredential(credentialId: String): Thenable[Credential]
   
-  def saveCredential(credentialId: String, password: String): Thenable[Boolean] = js.native
+  def saveCredential(credentialId: String, password: String): Thenable[Boolean]
 }
 object CredentialProvider {
   

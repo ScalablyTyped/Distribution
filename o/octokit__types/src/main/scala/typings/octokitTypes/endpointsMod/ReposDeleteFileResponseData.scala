@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.octokitTypes.anon.Committer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposDeleteFileResponseData extends StObject {
   
-  var commit: Committer = js.native
+  var commit: Committer
   
-  var content: StringDictionary[js.Any] = js.native
+  var content: StringDictionary[js.Any]
 }
 object ReposDeleteFileResponseData {
   

@@ -7,13 +7,13 @@ import typings.htmlValidator.htmlValidatorStrings.xhtml
 import typings.htmlValidator.htmlValidatorStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionsForExternalUrlAsValidationTargetAndTextAsResults extends OptionsForHtmlFileAsValidationTarget {
+trait OptionsForExternalUrlAsValidationTargetAndTextAsResults
+  extends StObject
+     with OptionsForHtmlFileAsValidationTarget {
   
-  var format: html | xhtml | xml | gnu | text = js.native
+  var format: html | xhtml | xml | gnu | text
 }
 object OptionsForExternalUrlAsValidationTargetAndTextAsResults {
   

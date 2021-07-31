@@ -2,32 +2,28 @@ package typings.yamljs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yamljs", "load")
+  @JSImport("yamljs", JSImport.Namespace)
   @js.native
-  def load(path: String): js.Any = js.native
-  @JSImport("yamljs", "load")
-  @js.native
-  def load(path: String, callback: js.Function1[/* res */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("yamljs", "parse")
-  @js.native
-  def parse(yamlString: String): js.Any = js.native
+  @scala.inline
+  def load(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def load(path: String, callback: js.Function1[/* res */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yamljs", "stringify")
-  @js.native
-  def stringify(nativeObject: js.Any): String = js.native
-  @JSImport("yamljs", "stringify")
-  @js.native
-  def stringify(nativeObject: js.Any, `inline`: js.UndefOr[scala.Nothing], spaces: Double): String = js.native
-  @JSImport("yamljs", "stringify")
-  @js.native
-  def stringify(nativeObject: js.Any, `inline`: Double): String = js.native
-  @JSImport("yamljs", "stringify")
-  @js.native
-  def stringify(nativeObject: js.Any, `inline`: Double, spaces: Double): String = js.native
+  @scala.inline
+  def parse(yamlString: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(yamlString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def stringify(nativeObject: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(nativeObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(nativeObject: js.Any, `inline`: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(nativeObject.asInstanceOf[js.Any], `inline`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(nativeObject: js.Any, `inline`: Double, spaces: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(nativeObject.asInstanceOf[js.Any], `inline`.asInstanceOf[js.Any], spaces.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(nativeObject: js.Any, `inline`: Unit, spaces: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(nativeObject.asInstanceOf[js.Any], `inline`.asInstanceOf[js.Any], spaces.asInstanceOf[js.Any])).asInstanceOf[String]
 }

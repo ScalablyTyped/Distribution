@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvideAnomalyFeedbackRequest extends StObject {
   
   /**
     *  A cost anomaly ID. 
     */
-  var AnomalyId: GenericString = js.native
+  var AnomalyId: GenericString
   
   /**
     * Describes whether the cost anomaly was a planned activity or you considered it an anomaly. 
     */
-  var Feedback: AnomalyFeedbackType = js.native
+  var Feedback: AnomalyFeedbackType
 }
 object ProvideAnomalyFeedbackRequest {
   

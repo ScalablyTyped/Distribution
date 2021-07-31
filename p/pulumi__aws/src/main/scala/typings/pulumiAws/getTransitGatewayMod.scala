@@ -5,41 +5,39 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetTransitGatewayFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTransitGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getTransitGateway", "getTransitGateway")
+  @JSImport("@pulumi/aws/ec2transitgateway/getTransitGateway", JSImport.Namespace)
   @js.native
-  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getTransitGateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getTransitGateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getTransitGateway", "getTransitGateway")
-  @js.native
-  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")().asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: Unit, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  @scala.inline
+  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  
   trait GetTransitGatewayArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetTransitGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetTransitGatewayFilter]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetTransitGatewayArgs {
     
@@ -75,75 +73,74 @@ object getTransitGatewayMod {
     }
   }
   
-  @js.native
   trait GetTransitGatewayResult extends StObject {
     
     /**
       * Private Autonomous System Number (ASN) for the Amazon side of a BGP session
       */
-    val amazonSideAsn: Double = js.native
+    val amazonSideAsn: Double
     
     /**
       * EC2 Transit Gateway Amazon Resource Name (ARN)
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Identifier of the default association route table
       */
-    val associationDefaultRouteTableId: String = js.native
+    val associationDefaultRouteTableId: String
     
     /**
       * Whether resource attachment requests are automatically accepted.
       */
-    val autoAcceptSharedAttachments: String = js.native
+    val autoAcceptSharedAttachments: String
     
     /**
       * Whether resource attachments are automatically associated with the default association route table.
       */
-    val defaultRouteTableAssociation: String = js.native
+    val defaultRouteTableAssociation: String
     
     /**
       * Whether resource attachments automatically propagate routes to the default propagation route table.
       */
-    val defaultRouteTablePropagation: String = js.native
+    val defaultRouteTablePropagation: String
     
     /**
       * Description of the EC2 Transit Gateway
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Whether DNS support is enabled.
       */
-    val dnsSupport: String = js.native
+    val dnsSupport: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter]] = js.undefined
     
     /**
       * EC2 Transit Gateway identifier
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the AWS account that owns the EC2 Transit Gateway
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * Identifier of the default propagation route table.
       */
-    val propagationDefaultRouteTableId: String = js.native
+    val propagationDefaultRouteTableId: String
     
     /**
       * Key-value tags for the EC2 Transit Gateway
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Whether VPN Equal Cost Multipath Protocol support is enabled.
       */
-    val vpnEcmpSupport: String = js.native
+    val vpnEcmpSupport: String
   }
   object GetTransitGatewayResult {
     

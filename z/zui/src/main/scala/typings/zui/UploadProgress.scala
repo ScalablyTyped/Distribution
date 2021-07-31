@@ -2,25 +2,23 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadProgress extends StObject {
   
-  var bytesPerSec: js.UndefOr[Double] = js.native
+  var bytesPerSec: js.UndefOr[Double] = js.undefined
   
-  var failed: js.UndefOr[Double] = js.native
+  var failed: js.UndefOr[Double] = js.undefined
   
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
   
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
-  var queued: js.UndefOr[Double] = js.native
+  var queued: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var uploaded: js.UndefOr[Double] = js.native
+  var uploaded: js.UndefOr[Double] = js.undefined
 }
 object UploadProgress {
   

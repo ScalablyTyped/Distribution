@@ -3,16 +3,17 @@ package typings.bip32
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
   
-  @JSImport("bip32/types/crypto", "hash160")
+  @JSImport("bip32/types/crypto", JSImport.Namespace)
   @js.native
-  def hash160(buffer: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip32/types/crypto", "hmacSHA512")
-  @js.native
-  def hmacSHA512(key: Buffer, data: Buffer): Buffer = js.native
+  @scala.inline
+  def hash160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def hmacSHA512(key: Buffer, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSHA512")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

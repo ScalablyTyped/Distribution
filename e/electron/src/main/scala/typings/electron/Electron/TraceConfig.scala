@@ -7,10 +7,8 @@ import typings.electron.electronStrings.`trace-to-console`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceConfig extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/trace-config
@@ -19,39 +17,39 @@ trait TraceConfig extends StObject {
     * manually vetted to not include any PII. See the implementation in Chromium for
     * specifics.
     */
-  var enable_argument_filter: js.UndefOr[Boolean] = js.native
+  var enable_argument_filter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a list of tracing categories to exclude. Can include glob-like patterns using
     * `*` at the end of the category name. See tracing categories for the list of
     * categories.
     */
-  var excluded_categories: js.UndefOr[js.Array[String]] = js.native
+  var excluded_categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * a list of histogram names to report with the trace.
     */
-  var histogram_names: js.UndefOr[js.Array[String]] = js.native
+  var histogram_names: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * a list of tracing categories to include. Can include glob-like patterns using
     * `*` at the end of the category name. See tracing categories for the list of
     * categories.
     */
-  var included_categories: js.UndefOr[js.Array[String]] = js.native
+  var included_categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * a list of process IDs to include in the trace. If not specified, trace all
     * processes.
     */
-  var included_process_ids: js.UndefOr[js.Array[Double]] = js.native
+  var included_process_ids: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * if the `disabled-by-default-memory-infra` category is enabled, this contains
     * optional additional configuration for data collection. See the Chromium
     * memory-infra docs for more information.
     */
-  var memory_dump_config: js.UndefOr[Record[String, _]] = js.native
+  var memory_dump_config: js.UndefOr[Record[String, js.Any]] = js.undefined
   
   /**
     * Can be `record-until-full`, `record-continuously`, `record-as-much-as-possible`
@@ -59,17 +57,17 @@ trait TraceConfig extends StObject {
     */
   var recording_mode: js.UndefOr[
     `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * maximum size of the trace recording buffer in events.
     */
-  var trace_buffer_size_in_events: js.UndefOr[Double] = js.native
+  var trace_buffer_size_in_events: js.UndefOr[Double] = js.undefined
   
   /**
     * maximum size of the trace recording buffer in kilobytes. Defaults to 100MB.
     */
-  var trace_buffer_size_in_kb: js.UndefOr[Double] = js.native
+  var trace_buffer_size_in_kb: js.UndefOr[Double] = js.undefined
 }
 object TraceConfig {
   
@@ -125,7 +123,7 @@ object TraceConfig {
     def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value :_*))
     
     @scala.inline
-    def setMemory_dump_config(value: Record[String, _]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
+    def setMemory_dump_config(value: Record[String, js.Any]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)

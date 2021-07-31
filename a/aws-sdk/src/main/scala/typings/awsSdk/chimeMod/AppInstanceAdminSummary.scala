@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInstanceAdminSummary extends StObject {
   
   /**
     * The name and metadata of the app instance administrator.
     */
-  var Admin: js.UndefOr[Identity] = js.native
+  var Admin: js.UndefOr[Identity] = js.undefined
 }
 object AppInstanceAdminSummary {
   

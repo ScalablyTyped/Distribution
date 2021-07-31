@@ -4,10 +4,8 @@ import typings.activexScripting.Scripting.Dictionary
 import typings.activexScripting.activexScriptingStrings.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObject extends StObject {
   
   @JSName("set")
@@ -16,7 +14,7 @@ trait ActiveXObject extends StObject {
     propertyName: Item,
     parameterTypes: js.Array[TKey],
     newValue: TValue
-  ): Unit = js.native
+  ): Unit
 }
 object ActiveXObject {
   

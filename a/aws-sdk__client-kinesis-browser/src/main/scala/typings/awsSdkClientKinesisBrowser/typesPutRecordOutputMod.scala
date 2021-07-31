@@ -6,34 +6,34 @@ import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPutRecordOutputMod {
   
-  @js.native
-  trait PutRecordOutput extends OutputTypesUnion {
+  trait PutRecordOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The encryption type to use on the record. This parameter can be one of the following values:</p> <ul> <li> <p> <code>NONE</code>: Do not encrypt the records in the stream.</p> </li> <li> <p> <code>KMS</code>: Use server-side encryption on the records in the stream using a customer-managed AWS KMS key.</p> </li> </ul>
       */
-    var EncryptionType: js.UndefOr[NONE | KMS | String] = js.native
+    var EncryptionType: js.UndefOr[NONE | KMS | String] = js.undefined
     
     /**
       * <p>The sequence number identifier that was assigned to the put data record. The sequence number for the record is unique across all records in the stream. A sequence number is the identifier associated with every record put into the stream.</p>
       */
-    var SequenceNumber: String = js.native
+    var SequenceNumber: String
     
     /**
       * <p>The shard ID of the shard where the data record was placed.</p>
       */
-    var ShardId: String = js.native
+    var ShardId: String
   }
   object PutRecordOutput {
     

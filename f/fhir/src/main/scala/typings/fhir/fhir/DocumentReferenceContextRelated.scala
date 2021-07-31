@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Related identifiers or resources
   */
-@js.native
-trait DocumentReferenceContextRelated extends BackboneElement {
+trait DocumentReferenceContextRelated
+  extends StObject
+     with BackboneElement {
   
   /**
     * Identifier of related objects or events
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Related Resource
     */
-  var ref: js.UndefOr[Reference] = js.native
+  var ref: js.UndefOr[Reference] = js.undefined
 }
 object DocumentReferenceContextRelated {
   

@@ -2,15 +2,13 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsProvided extends StObject {
   
-  var nbHits: Double = js.native
+  var nbHits: Double
   
-  var processingTimeMS: Double = js.native
+  var processingTimeMS: Double
 }
 object StatsProvided {
   

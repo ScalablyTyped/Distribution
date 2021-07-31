@@ -2,21 +2,19 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryTimelineSample extends StObject {
   
-  var activeUnits: js.UndefOr[String] = js.native
+  var activeUnits: js.UndefOr[String] = js.undefined
   
-  var completedUnits: js.UndefOr[String] = js.native
+  var completedUnits: js.UndefOr[String] = js.undefined
   
-  var elapsedMs: js.UndefOr[String] = js.native
+  var elapsedMs: js.UndefOr[String] = js.undefined
   
-  var pendingUnits: js.UndefOr[String] = js.native
+  var pendingUnits: js.UndefOr[String] = js.undefined
   
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
 }
 object QueryTimelineSample {
   

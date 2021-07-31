@@ -5,24 +5,23 @@ import typings.aliApp.aliAppNumbers.`11`
 import typings.aliApp.anon.Mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 联系人 https://docs.alipay.com/mini/api/ui-contact
-@js.native
 trait ChoosePhoneContactOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 10    没有权限
     * 11    用户取消操作(或设备未授权使用通讯录)
     */
   @JSName("fail")
-  var fail_ChoosePhoneContactOptions: js.UndefOr[js.Function1[/* error */ `10` | `11`, Unit]] = js.native
+  var fail_ChoosePhoneContactOptions: js.UndefOr[js.Function1[/* error */ `10` | `11`, Unit]] = js.undefined
   
   @JSName("success")
-  def success_MChoosePhoneContactOptions(result: Mobile): Unit = js.native
+  def success_MChoosePhoneContactOptions(result: Mobile): Unit
 }
 object ChoosePhoneContactOptions {
   

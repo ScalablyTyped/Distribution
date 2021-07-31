@@ -12,60 +12,59 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardLocationTypesMod {
   
-  @js.native
   trait IDocumentCardLocation extends StObject
   
-  @js.native
-  trait IDocumentCardLocationProps extends ClassAttributes[DocumentCardLocationBase] {
+  trait IDocumentCardLocationProps
+    extends StObject
+       with ClassAttributes[DocumentCardLocationBase] {
     
     /**
       * Aria label for the link to the document location.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardLocation]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardLocation]] = js.undefined
     
     /**
       * Text for the location of the document.
       */
-    var location: String = js.native
+    var location: String
     
     /**
       * URL to navigate to for this location.
       */
-    var locationHref: js.UndefOr[String] = js.native
+    var locationHref: js.UndefOr[String] = js.undefined
     
     /**
       * Function to call when the location is clicked.
       */
     var onClick: js.UndefOr[
         js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IDocumentCardLocationStyleProps, IDocumentCardLocationStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardLocationProps {
     
@@ -131,18 +130,17 @@ object documentCardLocationTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardLocationStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardLocationStyleProps {
     
@@ -166,10 +164,9 @@ object documentCardLocationTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardLocationStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardLocationStyles {
     

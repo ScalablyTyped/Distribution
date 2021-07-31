@@ -5,7 +5,6 @@ import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -14,10 +13,9 @@ object interfaceMod {
   
   type RenderFunc[T] = js.Function3[/* item */ T, /* index */ Double, /* props */ Style, ReactNode]
   
-  @js.native
   trait SharedConfig[T] extends StObject {
     
-    def getKey(item: T): Key = js.native
+    def getKey(item: T): Key
   }
   object SharedConfig {
     
@@ -28,7 +26,7 @@ object interfaceMod {
     }
     
     @scala.inline
-    implicit class SharedConfigMutableBuilder[Self <: SharedConfig[_], T] (val x: Self with SharedConfig[T]) extends AnyVal {
+    implicit class SharedConfigMutableBuilder[Self <: SharedConfig[?], T] (val x: Self & SharedConfig[T]) extends AnyVal {
       
       @scala.inline
       def setGetKey(value: T => Key): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))

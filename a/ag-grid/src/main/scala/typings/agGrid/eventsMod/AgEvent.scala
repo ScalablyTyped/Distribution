@@ -2,13 +2,11 @@ package typings.agGrid.eventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgEvent extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AgEvent {
   

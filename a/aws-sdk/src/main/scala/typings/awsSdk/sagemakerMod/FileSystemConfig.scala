@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemConfig extends StObject {
   
   /**
     * The default POSIX group ID (GID). If not specified, defaults to 100.
     */
-  var DefaultGid: js.UndefOr[typings.awsSdk.sagemakerMod.DefaultGid] = js.native
+  var DefaultGid: js.UndefOr[typings.awsSdk.sagemakerMod.DefaultGid] = js.undefined
   
   /**
     * The default POSIX user ID (UID). If not specified, defaults to 1000.
     */
-  var DefaultUid: js.UndefOr[typings.awsSdk.sagemakerMod.DefaultUid] = js.native
+  var DefaultUid: js.UndefOr[typings.awsSdk.sagemakerMod.DefaultUid] = js.undefined
   
   /**
     * The path within the image to mount the user's EFS home directory. The directory should be empty. If not specified, defaults to /home/sagemaker-user.
     */
-  var MountPath: js.UndefOr[typings.awsSdk.sagemakerMod.MountPath] = js.native
+  var MountPath: js.UndefOr[typings.awsSdk.sagemakerMod.MountPath] = js.undefined
 }
 object FileSystemConfig {
   

@@ -10,9 +10,9 @@ Select a one- or two-dimensional region using the mouse or touch.
 | ------------------ | :-------------: |
 | Full name          | d3-brush |
 | Keywords           | d3, d3-module, brush, interaction |
-| # releases         | 13 |
-| # dependents       | 110 |
-| # downloads        | 35755019 |
+| # releases         | 16 |
+| # dependents       | 124 |
+| # downloads        | 41502144 |
 | # stars            | 0 |
 
 ## Links

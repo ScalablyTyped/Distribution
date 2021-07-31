@@ -2,19 +2,17 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveInSuccessionOptions extends StObject {
   
   /** Whether to move the tabs before (false) or after (true) tabId in the succession. Defaults to false. */
-  var append: js.UndefOr[Boolean] = js.native
+  var append: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to link up the current predecessors or successor (depending on options.append) of tabId to the other side of the chain after it is prepended or appended. If true, one of the following happens: if options.append is false, the first tab in the array is set as the successor of any current predecessors of tabId; if options.append is true, the current successor of tabId is set as the successor of the last tab in the array. Defaults to false.
     */
-  var insert: js.UndefOr[Boolean] = js.native
+  var insert: js.UndefOr[Boolean] = js.undefined
 }
 object MoveInSuccessionOptions {
   

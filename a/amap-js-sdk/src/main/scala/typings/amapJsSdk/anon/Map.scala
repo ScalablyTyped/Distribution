@@ -2,21 +2,19 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map extends StObject {
   
-  var detectRetina: js.UndefOr[Boolean] = js.native
+  var detectRetina: js.UndefOr[Boolean] = js.undefined
   
-  var map: typings.amapJsSdk.AMap.Map = js.native
+  var map: typings.amapJsSdk.AMap.Map
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
-  var zooms: js.UndefOr[js.Array[Double]] = js.native
+  var zooms: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Map {
   

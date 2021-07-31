@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstancesResult extends StObject {
   
   /**
     * An array of Instance objects that describe the instances.
     */
-  var Instances: js.UndefOr[typings.awsSdk.opsworksMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.opsworksMod.Instances] = js.undefined
 }
 object DescribeInstancesResult {
   

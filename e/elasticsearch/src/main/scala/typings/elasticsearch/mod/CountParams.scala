@@ -2,41 +2,41 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CountParams extends GenericParams {
+trait CountParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var minScore: js.UndefOr[Double] = js.native
+  var minScore: js.UndefOr[Double] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[NameList] = js.native
+  var `type`: js.UndefOr[NameList] = js.undefined
 }
 object CountParams {
   

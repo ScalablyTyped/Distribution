@@ -1,22 +1,31 @@
 package typings.writableConsumableStream
 
+import typings.std.IteratorResult
 import typings.writableConsumableStream.anon.Done
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object consumerMod {
   
   @JSImport("writable-consumable-stream/consumer", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Consumer[T] {
+  class ^[T] protected ()
+    extends StObject
+       with Consumer[T] {
     def this(stream: typings.writableConsumableStream.mod.^[T], id: Double, startNode: Node[T], timeout: Double) = this()
+    
+    /* CompleteClass */
+    override def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
+    
+    /* CompleteClass */
+    override def `return`(): Unit = js.native
   }
   
   @js.native
   trait Consumer[T]
-    extends typings.consumableStream.mod.Consumer[T] {
+    extends StObject
+       with typings.consumableStream.mod.Consumer[T] {
     
     var currentNode: Node[T] = js.native
     
@@ -40,14 +49,13 @@ object consumerMod {
     def write(packet: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ConsumerStats extends StObject {
     
-    var backpressure: Double = js.native
+    var backpressure: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ConsumerStats {
     
@@ -74,23 +82,22 @@ object consumerMod {
     }
   }
   
-  @js.native
   trait Node[T] extends StObject {
     
-    var data: Done[T] = js.native
+    var data: Done[T]
     
-    var next: Node[T] | Null = js.native
+    var next: Node[T] | Null
   }
   object Node {
     
     @scala.inline
     def apply[T](data: Done[T]): Node[T] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[Node[T]]
     }
     
     @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[_], T] (val x: Self with Node[T]) extends AnyVal {
+    implicit class NodeMutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: Done[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

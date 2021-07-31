@@ -4,66 +4,64 @@ import typings.googleapis.anon.Entity
 import typings.googleapis.anon.MainPageSuffix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bucket.
   */
-@js.native
 trait SchemaBucket extends StObject {
   
   /**
     * Access controls on the bucket.
     */
-  var acl: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.native
+  var acl: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.undefined
   
   /**
     * Default access controls to apply to new objects when no ACL is provided.
     */
-  var defaultObjectAcl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.native
+  var defaultObjectAcl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.undefined
   
   /**
     * The name of the bucket.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For buckets, this is always storage#bucket.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the bucket. Object data for objects in the bucket resides
     * in physical storage in this location. Can be US or EU. Defaults to US.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the bucket. This will always be the project team&#39;s owner
     * group.
     */
-  var owner: js.UndefOr[Entity] = js.native
+  var owner: js.UndefOr[Entity] = js.undefined
   
   /**
     * The project the bucket belongs to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of this bucket.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Creation time of the bucket in RFC 3339 format.
     */
-  var timeCreated: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket&#39;s website configuration.
     */
-  var website: js.UndefOr[MainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.undefined
 }
 object SchemaBucket {
   

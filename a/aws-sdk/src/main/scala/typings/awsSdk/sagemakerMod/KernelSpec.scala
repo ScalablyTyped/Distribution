@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelSpec extends StObject {
   
   /**
     * The display name of the kernel.
     */
-  var DisplayName: js.UndefOr[KernelDisplayName] = js.native
+  var DisplayName: js.UndefOr[KernelDisplayName] = js.undefined
   
   /**
     * The name of the kernel.
     */
-  var Name: KernelName = js.native
+  var Name: KernelName
 }
 object KernelSpec {
   

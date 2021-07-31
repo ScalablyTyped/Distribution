@@ -2,21 +2,19 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calls extends StObject {
   
-  var calls: Double = js.native
+  var calls: Double
   
-  var frame: Double = js.native
+  var frame: Double
   
-  var lines: Double = js.native
+  var lines: Double
   
-  var points: Double = js.native
+  var points: Double
   
-  var triangles: Double = js.native
+  var triangles: Double
 }
 object Calls {
   

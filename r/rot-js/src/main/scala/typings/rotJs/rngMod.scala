@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rngMod extends Shortcut {
@@ -38,9 +37,9 @@ object rngMod extends Shortcut {
       * @returns A normally distributed pseudorandom value
       */
     def getNormal(): Double = js.native
-    def getNormal(mean: js.UndefOr[scala.Nothing], stddev: Double): Double = js.native
     def getNormal(mean: Double): Double = js.native
     def getNormal(mean: Double, stddev: Double): Double = js.native
+    def getNormal(mean: Unit, stddev: Double): Double = js.native
     
     /**
       * @returns Pseudorandom value [1,100] inclusive, uniformly distributed
@@ -71,7 +70,7 @@ object rngMod extends Shortcut {
       * @param data key=whatever, value=weight (relative probability)
       * @returns whatever
       */
-    def getWeightedValue(data: StringDictionary[Double] with NumberDictionary[Double]): js.UndefOr[String] = js.native
+    def getWeightedValue(data: StringDictionary[Double] & NumberDictionary[Double]): js.UndefOr[String] = js.native
     
     /**
       * Seed the number generator

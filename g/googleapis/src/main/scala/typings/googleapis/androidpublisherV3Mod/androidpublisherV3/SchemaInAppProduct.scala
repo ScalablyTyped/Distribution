@@ -3,23 +3,21 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInAppProduct extends StObject {
   
   /**
     * The default language of the localized data, as defined by BCP 47. e.g.
     * &quot;en-US&quot;, &quot;en-GB&quot;.
     */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Default price cannot be zero. In-app products can never be free. Default
     * price is always in the developer&#39;s Checkout merchant currency.
     */
-  var defaultPrice: js.UndefOr[SchemaPrice] = js.native
+  var defaultPrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Grace period of the subscription, specified in ISO 8601 format. It will
@@ -27,41 +25,41 @@ trait SchemaInAppProduct extends StObject {
     * payment for the new recurrence period is declined. Acceptable values =
     * &quot;P3D&quot; (three days) and &quot;P7D&quot; (seven days)
     */
-  var gracePeriod: js.UndefOr[String] = js.native
+  var gracePeriod: js.UndefOr[String] = js.undefined
   
   /**
     * List of localized title and description data.
     */
-  var listings: js.UndefOr[StringDictionary[SchemaInAppProductListing]] = js.native
+  var listings: js.UndefOr[StringDictionary[SchemaInAppProductListing]] = js.undefined
   
   /**
     * The package name of the parent app.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Prices per buyer region. None of these prices should be zero. In-app
     * products can never be free.
     */
-  var prices: js.UndefOr[StringDictionary[SchemaPrice]] = js.native
+  var prices: js.UndefOr[StringDictionary[SchemaPrice]] = js.undefined
   
   /**
     * Purchase type enum value. Unmodifiable after creation.
     */
-  var purchaseType: js.UndefOr[String] = js.native
+  var purchaseType: js.UndefOr[String] = js.undefined
   
   /**
     * Definition of a season for a seasonal subscription. Can be defined only
     * for yearly subscriptions.
     */
-  var season: js.UndefOr[SchemaSeason] = js.native
+  var season: js.UndefOr[SchemaSeason] = js.undefined
   
   /**
     * The stock-keeping-unit (SKU) of the product, unique within an app.
     */
-  var sku: js.UndefOr[String] = js.native
+  var sku: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Subscription period, specified in ISO 8601 format. Acceptable values are
@@ -69,14 +67,14 @@ trait SchemaInAppProduct extends StObject {
     * (three months), &quot;P6M&quot; (six months), and &quot;P1Y&quot; (one
     * year).
     */
-  var subscriptionPeriod: js.UndefOr[String] = js.native
+  var subscriptionPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * Trial period, specified in ISO 8601 format. Acceptable values are
     * anything between &quot;P7D&quot; (seven days) and &quot;P999D&quot; (999
     * days). Seasonal subscriptions cannot have a trial period.
     */
-  var trialPeriod: js.UndefOr[String] = js.native
+  var trialPeriod: js.UndefOr[String] = js.undefined
 }
 object SchemaInAppProduct {
   

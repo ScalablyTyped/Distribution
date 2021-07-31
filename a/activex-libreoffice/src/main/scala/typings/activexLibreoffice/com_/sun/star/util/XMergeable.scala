@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a range of cells that can be merged. */
-@js.native
-trait XMergeable extends XInterface {
+trait XMergeable
+  extends StObject
+     with XInterface {
   
   /** @returns `TRUE` if the area specified by this object is merged, or `FALSE` otherwise. */
-  val IsMerged: Boolean = js.native
+  val IsMerged: Boolean
   
   /** @returns `TRUE` if the area specified by this object is merged, or `FALSE` otherwise. */
-  def getIsMerged(): Boolean = js.native
+  def getIsMerged(): Boolean
   
   /** merges/unmerges the area specified by this object. */
-  def merge(bMerge: Boolean): Unit = js.native
+  def merge(bMerge: Boolean): Unit
 }
 object XMergeable {
   

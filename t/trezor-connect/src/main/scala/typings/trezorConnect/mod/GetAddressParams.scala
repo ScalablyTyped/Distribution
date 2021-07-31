@@ -2,21 +2,21 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAddressParams extends CommonParams {
+trait GetAddressParams
+  extends StObject
+     with CommonParams {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var coin: js.UndefOr[String] = js.native
+  var coin: js.UndefOr[String] = js.undefined
   
-  var crossChain: js.UndefOr[Boolean] = js.native
+  var crossChain: js.UndefOr[Boolean] = js.undefined
   
-  var path: String | js.Array[Double] = js.native
+  var path: String | js.Array[Double]
   
-  var showOnTrezor: js.UndefOr[Boolean] = js.native
+  var showOnTrezor: js.UndefOr[Boolean] = js.undefined
 }
 object GetAddressParams {
   

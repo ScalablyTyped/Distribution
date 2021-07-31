@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotPoint extends StObject {
   
-  def add(offset: Double): SnapshotPoint = js.native
+  def add(offset: Double): SnapshotPoint
   
-  def getContainingLine(): ITextSnapshotLine = js.native
+  def getContainingLine(): ITextSnapshotLine
   
-  var position: Double = js.native
+  var position: Double
   
-  var snapshot: ITextSnapshot = js.native
+  var snapshot: ITextSnapshot
 }
 object SnapshotPoint {
   

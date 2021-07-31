@@ -4,7 +4,6 @@ import typings.baseui.snackbarMod.DurationT
 import typings.baseui.snackbarMod.SnackbarElementPropsT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

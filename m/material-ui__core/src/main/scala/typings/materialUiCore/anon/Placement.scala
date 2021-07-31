@@ -4,15 +4,13 @@ import typings.materialUiCore.popperPopperMod.PopperPlacementType
 import typings.materialUiCore.transitionMod.TransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placement extends StObject {
   
-  var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.native
+  var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
   
-  var placement: PopperPlacementType = js.native
+  var placement: PopperPlacementType
 }
 object Placement {
   

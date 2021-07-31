@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait BatchShaderGenerator extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait BatchShaderGenerator extends StObject {
     *
     * @member {string} PIXI.BatchShaderGenerator#fragTemplate
     */
-  var fragTemplate: String = js.native
+  var fragTemplate: String
   
   /**
     * Reference to the vertex shader source.
     *
     * @member {string} PIXI.BatchShaderGenerator#vertexSrc
     */
-  var vertexSrc: String = js.native
+  var vertexSrc: String
 }
 object BatchShaderGenerator {
   

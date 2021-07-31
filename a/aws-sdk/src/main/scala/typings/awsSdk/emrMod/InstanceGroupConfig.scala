@@ -2,56 +2,54 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupConfig extends StObject {
   
   /**
     * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
     */
-  var AutoScalingPolicy: js.UndefOr[typings.awsSdk.emrMod.AutoScalingPolicy] = js.native
+  var AutoScalingPolicy: js.UndefOr[typings.awsSdk.emrMod.AutoScalingPolicy] = js.undefined
   
   /**
     * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
     */
-  var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.native
+  var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
     */
-  var Configurations: js.UndefOr[ConfigurationList] = js.native
+  var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
     * EBS configurations that will be attached to each EC2 instance in the instance group.
     */
-  var EbsConfiguration: js.UndefOr[typings.awsSdk.emrMod.EbsConfiguration] = js.native
+  var EbsConfiguration: js.UndefOr[typings.awsSdk.emrMod.EbsConfiguration] = js.undefined
   
   /**
     * Target number of instances for the instance group.
     */
-  var InstanceCount: Integer = js.native
+  var InstanceCount: Integer
   
   /**
     * The role of the instance group in the cluster.
     */
-  var InstanceRole: InstanceRoleType = js.native
+  var InstanceRole: InstanceRoleType
   
   /**
     * The EC2 instance type for all instances in the instance group.
     */
-  var InstanceType: typings.awsSdk.emrMod.InstanceType = js.native
+  var InstanceType: typings.awsSdk.emrMod.InstanceType
   
   /**
     * Market type of the EC2 instances used to create a cluster node.
     */
-  var Market: js.UndefOr[MarketType] = js.native
+  var Market: js.UndefOr[MarketType] = js.undefined
   
   /**
     * Friendly name given to the instance group.
     */
-  var Name: js.UndefOr[XmlStringMaxLen256] = js.native
+  var Name: js.UndefOr[XmlStringMaxLen256] = js.undefined
 }
 object InstanceGroupConfig {
   

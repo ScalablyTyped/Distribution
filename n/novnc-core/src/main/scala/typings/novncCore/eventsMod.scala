@@ -6,24 +6,23 @@ import typings.std.Touch
 import typings.std.TouchList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @JSImport("novnc-core/lib/util/events", "getPointerEvent")
+  @JSImport("novnc-core/lib/util/events", JSImport.Namespace)
   @js.native
-  def getPointerEvent(event: Event): TouchList | js.Array[Touch] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("novnc-core/lib/util/events", "releaseCapture")
-  @js.native
-  def releaseCapture(): Unit = js.native
+  @scala.inline
+  def getPointerEvent(event: Event): TouchList | js.Array[Touch] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerEvent")(event.asInstanceOf[js.Any]).asInstanceOf[TouchList | js.Array[Touch]]
   
-  @JSImport("novnc-core/lib/util/events", "setCapture")
-  @js.native
-  def setCapture(el: Element): Unit = js.native
+  @scala.inline
+  def releaseCapture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")().asInstanceOf[Unit]
   
-  @JSImport("novnc-core/lib/util/events", "stopEvent")
-  @js.native
-  def stopEvent(event: Event): Unit = js.native
+  @scala.inline
+  def setCapture(el: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCapture")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stopEvent(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

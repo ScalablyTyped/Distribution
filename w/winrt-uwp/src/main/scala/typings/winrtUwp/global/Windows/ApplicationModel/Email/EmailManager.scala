@@ -4,15 +4,19 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows an application to launch the email application with a new message displayed. Use this to allow users to send email from your application. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailManager")
 @js.native
 abstract class EmailManager ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Email.EmailManager
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Email.EmailManager
 object EmailManager {
+  
+  @JSGlobal("Windows.ApplicationModel.Email.EmailManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets an email store that is within the specified scope.
@@ -20,9 +24,8 @@ object EmailManager {
     * @return The requested email store.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Email.EmailManager.requestStoreAsync")
-  @js.native
-  def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Email.EmailStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore] = js.native
+  @scala.inline
+  def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Email.EmailStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore]]
   
   /**
     * Launches the email application with a new message displayed.
@@ -30,7 +33,6 @@ object EmailManager {
     * @return An asynchronous action.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Email.EmailManager.showComposeNewEmailAsync")
-  @js.native
-  def showComposeNewEmailAsync(message: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessage): IPromiseWithIAsyncAction = js.native
+  @scala.inline
+  def showComposeNewEmailAsync(message: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessage): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showComposeNewEmailAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
 }

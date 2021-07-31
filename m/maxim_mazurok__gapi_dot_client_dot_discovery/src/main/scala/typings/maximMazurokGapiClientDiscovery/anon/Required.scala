@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDiscovery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Required extends StObject {
   
   /** A list of methods for which this property is required on requests. */
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Required {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTemplateRequest extends StObject {
   
   /**
     * The name of the template to be deleted.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
 }
 object DeleteTemplateRequest {
   

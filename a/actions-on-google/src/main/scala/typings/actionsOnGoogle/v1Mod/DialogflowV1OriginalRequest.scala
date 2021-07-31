@@ -3,17 +3,15 @@ package typings.actionsOnGoogle.v1Mod
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2AppRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1OriginalRequest extends StObject {
   
-  var data: js.UndefOr[GoogleActionsV2AppRequest] = js.native
+  var data: js.UndefOr[GoogleActionsV2AppRequest] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1OriginalRequest {
   

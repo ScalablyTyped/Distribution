@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.ClusterBillboards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityCluster")
@@ -13,7 +12,7 @@ class EntityCluster () extends StObject {
   
   var clusterBillboards: Boolean = js.native
   
-  var clusterEvent: Event[js.Array[_]] = js.native
+  var clusterEvent: Event[js.Array[js.Any]] = js.native
   
   var clusterLabels: Boolean = js.native
   

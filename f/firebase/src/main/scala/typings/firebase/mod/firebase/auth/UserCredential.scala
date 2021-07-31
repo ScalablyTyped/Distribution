@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase.auth
 import typings.firebase.mod.firebase.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,22 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * operationType could be 'signIn' for a sign-in operation, 'link' for a linking
   * operation and 'reauthenticate' for a reauthentication operation.
   */
-@js.native
 trait UserCredential extends StObject {
   
-  var additionalUserInfo: js.UndefOr[AdditionalUserInfo | Null] = js.native
+  var additionalUserInfo: js.UndefOr[AdditionalUserInfo | Null] = js.undefined
   
-  var credential: AuthCredential | Null = js.native
+  var credential: AuthCredential | Null
   
-  var operationType: js.UndefOr[String | Null] = js.native
+  var operationType: js.UndefOr[String | Null] = js.undefined
   
-  var user: User | Null = js.native
+  var user: User | Null
 }
 object UserCredential {
   
   @scala.inline
   def apply(): UserCredential = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(credential = null, user = null)
     __obj.asInstanceOf[UserCredential]
   }
   

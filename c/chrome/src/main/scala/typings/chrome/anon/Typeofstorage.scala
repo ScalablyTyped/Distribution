@@ -6,19 +6,17 @@ import typings.chrome.chrome.storage.StorageChangedEvent
 import typings.chrome.chrome.storage.SyncStorageArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofstorage extends StObject {
   
-  var local: LocalStorageArea = js.native
+  var local: LocalStorageArea
   
-  var managed: StorageArea = js.native
+  var managed: StorageArea
   
-  var onChanged: StorageChangedEvent = js.native
+  var onChanged: StorageChangedEvent
   
-  var sync: SyncStorageArea = js.native
+  var sync: SyncStorageArea
 }
 object Typeofstorage {
   

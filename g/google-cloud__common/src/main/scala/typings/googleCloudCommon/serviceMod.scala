@@ -15,7 +15,6 @@ import typings.std.Error
 import typings.teenyRequest.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
@@ -115,33 +114,32 @@ object serviceMod {
     var timeout: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait ServiceConfig extends StObject {
     
     /**
       * The API Endpoint to use when connecting to the service.
       * Example:  storage.googleapis.com
       */
-    var apiEndpoint: String = js.native
+    var apiEndpoint: String
     
     /**
       * Reuse an existing GoogleAuth client instead of creating a new one.
       */
-    var authClient: js.UndefOr[GoogleAuth] = js.native
+    var authClient: js.UndefOr[GoogleAuth] = js.undefined
     
     /**
       * The base URL to make API requests to.
       */
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var packageJson: PackageJson = js.native
+    var packageJson: PackageJson
     
-    var projectIdRequired: js.UndefOr[Boolean] = js.native
+    var projectIdRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The scopes required for the request.
       */
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
   }
   object ServiceConfig {
     
@@ -183,20 +181,21 @@ object serviceMod {
     }
   }
   
-  @js.native
-  trait ServiceOptions extends GoogleAuthOptions {
+  trait ServiceOptions
+    extends StObject
+       with GoogleAuthOptions {
     
-    var authClient: js.UndefOr[GoogleAuth] = js.native
+    var authClient: js.UndefOr[GoogleAuth] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.native
+    var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object ServiceOptions {
     
@@ -250,17 +249,18 @@ object serviceMod {
     }
   }
   
-  @js.native
-  trait StreamRequestOptions extends DecorateRequestOptions {
+  trait StreamRequestOptions
+    extends StObject
+       with DecorateRequestOptions {
     
     @JSName("shouldReturnStream")
-    var shouldReturnStream_StreamRequestOptions: `true` = js.native
+    var shouldReturnStream_StreamRequestOptions: `true`
   }
   object StreamRequestOptions {
     
     @scala.inline
-    def apply(shouldReturnStream: `true`, uri: String): StreamRequestOptions = {
-      val __obj = js.Dynamic.literal(shouldReturnStream = shouldReturnStream.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    def apply(uri: String): StreamRequestOptions = {
+      val __obj = js.Dynamic.literal(shouldReturnStream = true, uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamRequestOptions]
     }
     

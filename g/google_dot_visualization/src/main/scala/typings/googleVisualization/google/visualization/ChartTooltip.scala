@@ -2,21 +2,19 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltip extends StObject {
   
-  var ignoreBounds: js.UndefOr[Boolean] = js.native
+  var ignoreBounds: js.UndefOr[Boolean] = js.undefined
   
-  var isHtml: js.UndefOr[Boolean] = js.native
+  var isHtml: js.UndefOr[Boolean] = js.undefined
   
-  var showColorCode: js.UndefOr[Boolean] = js.native
+  var showColorCode: js.UndefOr[Boolean] = js.undefined
   
-  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
 }
 object ChartTooltip {
   

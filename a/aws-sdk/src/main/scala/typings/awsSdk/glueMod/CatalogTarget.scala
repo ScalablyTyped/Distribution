@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTarget extends StObject {
   
   /**
     * The name of the database to be synchronized.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of the tables to be synchronized.
     */
-  var Tables: CatalogTablesList = js.native
+  var Tables: CatalogTablesList
 }
 object CatalogTarget {
   

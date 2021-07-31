@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.diffMatchPatch.anon.Chars1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,9 +65,9 @@ object mod {
     def diff_linesToChars_(text1: String, text2: String): Chars1 = js.native
     
     def diff_main(text1: String, text2: String): js.Array[Diff] = js.native
-    def diff_main(text1: String, text2: String, opt_checklines: js.UndefOr[scala.Nothing], opt_deadline: Double): js.Array[Diff] = js.native
     def diff_main(text1: String, text2: String, opt_checklines: Boolean): js.Array[Diff] = js.native
     def diff_main(text1: String, text2: String, opt_checklines: Boolean, opt_deadline: Double): js.Array[Diff] = js.native
+    def diff_main(text1: String, text2: String, opt_checklines: Unit, opt_deadline: Double): js.Array[Diff] = js.native
     
     def diff_prettyHtml(diffs: js.Array[Diff]): String = js.native
     

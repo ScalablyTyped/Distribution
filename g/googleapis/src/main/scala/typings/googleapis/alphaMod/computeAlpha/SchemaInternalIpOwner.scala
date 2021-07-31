@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInternalIpOwner extends StObject {
   
   /**
     * IP CIDR range being owned.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * URLs of the IP owners of the IP CIDR range.
     */
-  var owners: js.UndefOr[js.Array[String]] = js.native
+  var owners: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether this IP CIDR range is reserved for system use.
     */
-  var systemOwned: js.UndefOr[Boolean] = js.native
+  var systemOwned: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInternalIpOwner {
   

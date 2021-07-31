@@ -11,7 +11,6 @@ import typings.reactLazylog.anon.Text
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineMod {
@@ -36,30 +35,29 @@ object lineMod {
   
   type Line = Component[LineProps, js.Object, js.Any]
   
-  @js.native
   trait LineProps extends StObject {
     
-    var data: js.Array[Text] = js.native
+    var data: js.Array[Text]
     
-    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var number: Double = js.native
+    var number: Double
     
-    var onLineNumberClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.native
+    var onLineNumberClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
     /**
       * This is never called
       * https://github.com/mozilla-frontend-infra/react-lazylog/issues/18
       */
-    var onRowClick: js.UndefOr[js.Function0[_]] = js.native
+    var onRowClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var rowHeight: Double = js.native
+    var rowHeight: Double
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object LineProps {
     
@@ -100,7 +98,7 @@ object lineMod {
       def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
       
       @scala.inline
-      def setOnRowClick(value: () => _): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
+      def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)

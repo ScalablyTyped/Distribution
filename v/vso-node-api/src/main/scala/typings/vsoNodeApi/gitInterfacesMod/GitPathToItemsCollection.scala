@@ -3,13 +3,11 @@ package typings.vsoNodeApi.gitInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPathToItemsCollection extends StObject {
   
-  var items: StringDictionary[js.Array[GitItem]] = js.native
+  var items: StringDictionary[js.Array[GitItem]]
 }
 object GitPathToItemsCollection {
   

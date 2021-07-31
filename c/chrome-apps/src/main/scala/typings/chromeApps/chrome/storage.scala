@@ -9,7 +9,6 @@ import typings.chromeApps.chromeAppsNumbers.`5242880`
 import typings.chromeApps.chromeAppsNumbers.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.sockets.*
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object storage {
   
   @js.native
-  trait LocalStorageArea extends StorageArea {
+  trait LocalStorageArea
+    extends StObject
+       with StorageArea {
     
     /**
       * The maximum amount (in bytes) of data that can be stored in local storage,
@@ -42,7 +43,8 @@ object storage {
   
   @js.native
   trait StorageArea
-    extends StorageAreaRead
+    extends StObject
+       with StorageAreaRead
        with StorageAreaWrite
   
   @js.native
@@ -134,14 +136,13 @@ object storage {
     def sync: typings.chromeApps.chromeAppsStrings.sync = "sync".asInstanceOf[typings.chromeApps.chromeAppsStrings.sync]
   }
   
-  @js.native
   trait StorageChange extends StObject {
     
     /** The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
   }
   object StorageChange {
     
@@ -169,7 +170,9 @@ object storage {
   }
   
   @js.native
-  trait SyncStorageArea extends StorageArea {
+  trait SyncStorageArea
+    extends StObject
+       with StorageArea {
     
     /**
       * The maximum number of items that can be stored in sync storage.

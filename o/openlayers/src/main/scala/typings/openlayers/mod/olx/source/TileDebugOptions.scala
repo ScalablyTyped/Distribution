@@ -4,17 +4,15 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.tilegrid.TileGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileDebugOptions extends StObject {
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var tileGrid: js.UndefOr[TileGrid] = js.native
+  var tileGrid: js.UndefOr[TileGrid] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object TileDebugOptions {
   

@@ -2,17 +2,15 @@ package typings.agGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForceRefresh extends StObject {
   
-  var forceRefresh: js.UndefOr[Boolean] = js.native
+  var forceRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var newData: js.UndefOr[Boolean] = js.native
+  var newData: js.UndefOr[Boolean] = js.undefined
   
-  var suppressFlash: js.UndefOr[Boolean] = js.native
+  var suppressFlash: js.UndefOr[Boolean] = js.undefined
 }
 object ForceRefresh {
   

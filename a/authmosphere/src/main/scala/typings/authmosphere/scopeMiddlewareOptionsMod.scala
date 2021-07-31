@@ -9,19 +9,17 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scopeMiddlewareOptionsMod {
   
-  @js.native
   trait ScopeMiddlewareOptions extends StObject {
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var onAuthorizationFailedHandler: js.UndefOr[typings.authmosphere.scopeMiddlewareOptionsMod.onAuthorizationFailedHandler] = js.native
+    var onAuthorizationFailedHandler: js.UndefOr[typings.authmosphere.scopeMiddlewareOptionsMod.onAuthorizationFailedHandler] = js.undefined
     
-    var precedenceOptions: js.UndefOr[PrecedenceOptions] = js.native
+    var precedenceOptions: js.UndefOr[PrecedenceOptions] = js.undefined
   }
   object ScopeMiddlewareOptions {
     

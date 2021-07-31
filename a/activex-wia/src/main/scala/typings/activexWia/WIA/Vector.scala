@@ -4,7 +4,6 @@ import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,7 @@ trait Vector[TItem] extends StObject {
   def Add(Value: TItem, Index: Double): Unit = js.native
   
   /** Returns/Sets the Vector of Bytes as an array of bytes */
-  var BinaryData: SafeArray[_] = js.native
+  var BinaryData: SafeArray[js.Any] = js.native
   
   /** Removes all elements. */
   def Clear(): Unit = js.native
@@ -44,9 +43,9 @@ trait Vector[TItem] extends StObject {
     * @param number [Height=0]
     */
   def ImageFile(): typings.activexWia.WIA.ImageFile = js.native
-  def ImageFile(Width: js.UndefOr[scala.Nothing], Height: Double): typings.activexWia.WIA.ImageFile = js.native
   def ImageFile(Width: Double): typings.activexWia.WIA.ImageFile = js.native
   def ImageFile(Width: Double, Height: Double): typings.activexWia.WIA.ImageFile = js.native
+  def ImageFile(Width: Unit, Height: Double): typings.activexWia.WIA.ImageFile = js.native
   
   /** Returns the specified item in the vector by position */
   def Item(Index: Double): TItem = js.native
@@ -58,9 +57,9 @@ trait Vector[TItem] extends StObject {
     * @param number [Height=0]
     */
   def Picture(): js.Any = js.native
-  def Picture(Width: js.UndefOr[scala.Nothing], Height: Double): js.Any = js.native
   def Picture(Width: Double): js.Any = js.native
   def Picture(Width: Double, Height: Double): js.Any = js.native
+  def Picture(Width: Unit, Height: Double): js.Any = js.native
   
   /** Removes the designated element and returns it if successful */
   def Remove(Index: Double): TItem | Null = js.native
@@ -72,9 +71,9 @@ trait Vector[TItem] extends StObject {
     * @param boolean [Unicode=true]
     */
   def SetFromString(Value: String): Unit = js.native
-  def SetFromString(Value: String, Resizable: js.UndefOr[scala.Nothing], Unicode: Boolean): Unit = js.native
   def SetFromString(Value: String, Resizable: Boolean): Unit = js.native
   def SetFromString(Value: String, Resizable: Boolean, Unicode: Boolean): Unit = js.native
+  def SetFromString(Value: String, Resizable: Unit, Unicode: Boolean): Unit = js.native
   
   /**
     * Returns a Vector of Bytes as a String

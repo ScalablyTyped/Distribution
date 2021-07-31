@@ -2,7 +2,6 @@ package typings.screeps.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<screeps.BuildableStructureConstant, number> */
@@ -26,9 +25,7 @@ object CONSTRUCTION_COST {
   
   @JSGlobal("CONSTRUCTION_COST.extension")
   @js.native
-  def extension: Double = js.native
-  @scala.inline
-  def extension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extension")(x.asInstanceOf[js.Any])
+  val `extension`: Double = js.native
   
   @JSGlobal("CONSTRUCTION_COST.extractor")
   @js.native

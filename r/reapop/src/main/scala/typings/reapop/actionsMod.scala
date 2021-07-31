@@ -8,41 +8,38 @@ import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
   
-  @JSImport("reapop/dist/reducers/notifications/actions", "dismissNotification")
+  @JSImport("reapop/dist/reducers/notifications/actions", JSImport.Namespace)
   @js.native
-  def dismissNotification(notificationId: String): DismissNotificationAction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reapop/dist/reducers/notifications/actions", "dismissNotifications")
-  @js.native
-  def dismissNotifications(): DismissNotificationsAction = js.native
+  @scala.inline
+  def dismissNotification(notificationId: String): DismissNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")(notificationId.asInstanceOf[js.Any]).asInstanceOf[DismissNotificationAction]
   
-  @JSImport("reapop/dist/reducers/notifications/actions", "notify")
-  @js.native
-  def notify_(message: String): UpsertNotificationAction = js.native
-  @JSImport("reapop/dist/reducers/notifications/actions", "notify")
-  @js.native
-  def notify_(message: String, options: PartialNotification): UpsertNotificationAction = js.native
-  @JSImport("reapop/dist/reducers/notifications/actions", "notify")
-  @js.native
-  def notify_(message: String, status: Status): UpsertNotificationAction = js.native
-  @JSImport("reapop/dist/reducers/notifications/actions", "notify")
-  @js.native
-  def notify_(message: String, status: Status, options: PartialNotification): UpsertNotificationAction = js.native
-  @JSImport("reapop/dist/reducers/notifications/actions", "notify")
-  @js.native
-  def notify_(notification: PartialNotification): UpsertNotificationAction = js.native
+  @scala.inline
+  def dismissNotifications(): DismissNotificationsAction = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotifications")().asInstanceOf[DismissNotificationsAction]
   
-  @js.native
-  trait DismissNotificationAction extends NotificationActions {
+  @scala.inline
+  def notify_(message: String): UpsertNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any]).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, options: PartialNotification): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, status: Status): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, status: Status, options: PartialNotification): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(notification: PartialNotification): UpsertNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(notification.asInstanceOf[js.Any]).asInstanceOf[UpsertNotificationAction]
+  
+  trait DismissNotificationAction
+    extends StObject
+       with NotificationActions {
     
-    var payload: String = js.native
+    var payload: String
     
-    var `type`: DismissNotification = js.native
+    var `type`: DismissNotification
   }
   object DismissNotificationAction {
     
@@ -64,10 +61,11 @@ object actionsMod {
     }
   }
   
-  @js.native
-  trait DismissNotificationsAction extends NotificationActions {
+  trait DismissNotificationsAction
+    extends StObject
+       with NotificationActions {
     
-    var `type`: DismissNotifications = js.native
+    var `type`: DismissNotifications
   }
   object DismissNotificationsAction {
     
@@ -116,12 +114,13 @@ object actionsMod {
     }
   }
   
-  @js.native
-  trait UpsertNotificationAction extends NotificationActions {
+  trait UpsertNotificationAction
+    extends StObject
+       with NotificationActions {
     
-    var payload: Notification = js.native
+    var payload: Notification
     
-    var `type`: UpsertNotification = js.native
+    var `type`: UpsertNotification
   }
   object UpsertNotificationAction {
     

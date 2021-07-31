@@ -4,24 +4,24 @@ import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetShardIteratorOutputMod {
   
-  @js.native
-  trait GetShardIteratorOutput extends OutputTypesUnion {
+  trait GetShardIteratorOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The position in the shard from which to start reading data records sequentially. A shard iterator specifies this position using the sequence number of a data record in a shard.</p>
       */
-    var ShardIterator: js.UndefOr[String] = js.native
+    var ShardIterator: js.UndefOr[String] = js.undefined
   }
   object GetShardIteratorOutput {
     

@@ -2,13 +2,11 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
-  var scope: js.Array[String] | typings.atom.mod.ScopeDescriptor = js.native
+  var scope: js.Array[String] | typings.atom.mod.ScopeDescriptor
 }
 object Scope {
   

@@ -3,7 +3,6 @@ package typings.typescriptCollections
 import typings.typescriptCollections.utilMod.IEqualsFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiDictionaryMod {
@@ -45,23 +44,15 @@ object multiDictionaryMod {
     *
     * @param allowDuplicateValues
     */
-  class default[K, V] () extends MultiDictionary[K, V] {
+  class default[K, V] ()
+    extends StObject
+       with MultiDictionary[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
-    def this(toStrFunction: js.UndefOr[scala.Nothing], valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
-    def this(
-      toStrFunction: js.UndefOr[scala.Nothing],
-      valuesEqualsFunction: js.UndefOr[scala.Nothing],
-      allowDuplicateValues: Boolean
-    ) = this()
-    def this(
-      toStrFunction: js.UndefOr[scala.Nothing],
-      valuesEqualsFunction: IEqualsFunction[V],
-      allowDuplicateValues: Boolean
-    ) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(
       toStrFunction: js.Function1[/* key */ K, String],
-      valuesEqualsFunction: js.UndefOr[scala.Nothing],
+      valuesEqualsFunction: Unit,
       allowDuplicateValues: Boolean
     ) = this()
     def this(
@@ -69,6 +60,8 @@ object multiDictionaryMod {
       valuesEqualsFunction: IEqualsFunction[V],
       allowDuplicateValues: Boolean
     ) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: Unit, allowDuplicateValues: Boolean) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V], allowDuplicateValues: Boolean) = this()
   }
   
   @js.native

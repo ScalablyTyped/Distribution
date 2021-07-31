@@ -3,17 +3,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MachineGroupDeploymentInput extends DeploymentInput {
+trait MachineGroupDeploymentInput
+  extends StObject
+     with DeploymentInput {
   
-  var deploymentHealthOption: String = js.native
+  var deploymentHealthOption: String
   
-  var healthPercent: Double = js.native
+  var healthPercent: Double
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object MachineGroupDeploymentInput {
   
@@ -21,7 +21,7 @@ object MachineGroupDeploymentInput {
   def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     deploymentHealthOption: String,
     enableAccessToken: Boolean,
     healthPercent: Double,

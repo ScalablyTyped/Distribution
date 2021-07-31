@@ -2,17 +2,15 @@ package typings.removeMarkdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Gfm extends StObject {
     
-    var gfm: js.UndefOr[Boolean] = js.native
+    var gfm: js.UndefOr[Boolean] = js.undefined
     
-    var stripListLeaders: js.UndefOr[Boolean] = js.native
+    var stripListLeaders: js.UndefOr[Boolean] = js.undefined
   }
   object Gfm {
     

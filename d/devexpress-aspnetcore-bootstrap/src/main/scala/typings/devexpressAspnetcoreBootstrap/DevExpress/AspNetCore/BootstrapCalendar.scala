@@ -12,11 +12,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapCalendar extends BootstrapClientEdit {
+trait BootstrapCalendar
+  extends StObject
+     with BootstrapClientEdit {
   
   def clearSelection(): Unit = js.native
   

@@ -2,13 +2,11 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for ListRepos.  The size is not set in the returned repositories.
   */
-@js.native
 trait SchemaListReposResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListReposResponse extends StObject {
     * be retrieved by including this value in the next ListReposRequest&#39;s
     * page_token field.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The listed repos.
     */
-  var repos: js.UndefOr[js.Array[SchemaRepo]] = js.native
+  var repos: js.UndefOr[js.Array[SchemaRepo]] = js.undefined
 }
 object SchemaListReposResponse {
   

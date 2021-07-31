@@ -10,12 +10,15 @@ Determines the length of a request body in browsers
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-body-length-browser |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 402 |
-| # downloads        | 1552263 |
+| # releases         | 24 |
+| # dependents       | 248 |
+| # downloads        | 6715442 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-body-length-browser)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-body-length-browser)
     
 

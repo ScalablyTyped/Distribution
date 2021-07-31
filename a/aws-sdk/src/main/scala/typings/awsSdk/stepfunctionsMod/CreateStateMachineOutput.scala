@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStateMachineOutput extends StObject {
   
   /**
     * The date the state machine is created.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) that identifies the created state machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
 }
 object CreateStateMachineOutput {
   

@@ -10,9 +10,9 @@ Generate massive amounts of fake contextual data
 | ------------------ | :-------------: |
 | Full name          | faker |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 1046 |
-| # downloads        | 63224272 |
+| # releases         | 5 |
+| # dependents       | 1162 |
+| # downloads        | 78172478 |
 | # stars            | 272 |
 
 ## Links

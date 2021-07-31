@@ -2,30 +2,28 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Google Ads account.
   */
-@js.native
 trait SchemaAdWordsAccount extends StObject {
   
   /**
     * True if auto-tagging is enabled on the Google Ads account. Read-only
     * after the insert operation.
     */
-  var autoTaggingEnabled: js.UndefOr[Boolean] = js.native
+  var autoTaggingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customer ID. This field is required when creating a Google Ads link.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for Google Ads account.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAdWordsAccount {
   

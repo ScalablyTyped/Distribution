@@ -2,27 +2,25 @@ package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISmsDevice extends StObject {
   
-  var accountPhoneNumber: String = js.native
+  var accountPhoneNumber: String
   
-  def calculateLength(message: SmsTextMessage): SmsEncodedLength = js.native
+  def calculateLength(message: SmsTextMessage): SmsEncodedLength
   
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
-  var deviceStatus: SmsDeviceStatus = js.native
+  var deviceStatus: SmsDeviceStatus
   
-  var messageStore: SmsDeviceMessageStore = js.native
+  var messageStore: SmsDeviceMessageStore
   
-  var onsmsdevicestatuschanged: js.Any = js.native
+  var onsmsdevicestatuschanged: js.Any
   
-  var onsmsmessagereceived: js.Any = js.native
+  var onsmsmessagereceived: js.Any
   
-  def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation = js.native
+  def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation
 }
 object ISmsDevice {
   

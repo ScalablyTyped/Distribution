@@ -3,17 +3,15 @@ package typings.knuddelsUserappsApi.anon
 import typings.knuddelsUserappsApi.mod.global.KnuddelPot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPotSealed extends StObject {
   
-  var onPotSealed: js.UndefOr[js.Function1[/* pot */ KnuddelPot, Unit]] = js.native
+  var onPotSealed: js.UndefOr[js.Function1[/* pot */ KnuddelPot, Unit]] = js.undefined
   
-  var payoutTimeoutMinutes: js.UndefOr[Double] = js.native
+  var payoutTimeoutMinutes: js.UndefOr[Double] = js.undefined
   
-  var shouldSealPot: js.UndefOr[js.Function1[/* pot */ KnuddelPot, Boolean]] = js.native
+  var shouldSealPot: js.UndefOr[js.Function1[/* pot */ KnuddelPot, Boolean]] = js.undefined
 }
 object OnPotSealed {
   

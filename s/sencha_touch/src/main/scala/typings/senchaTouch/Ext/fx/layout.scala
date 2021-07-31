@@ -4,7 +4,6 @@ import typings.senchaTouch.Ext.IBase
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layout {
@@ -13,48 +12,49 @@ object layout {
   
   object card {
     
-    @js.native
-    trait IAbstract extends IEvented {
+    trait IAbstract
+      extends StObject
+         with IEvented {
       
       /** [Method] Returns the value of direction
         * @returns String
         */
-      var getDirection: js.UndefOr[js.Function0[String]] = js.native
+      var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
       
       /** [Method] Returns the value of duration
         * @returns Object
         */
-      var getDuration: js.UndefOr[js.Function0[_]] = js.native
+      var getDuration: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of layout
         * @returns Object
         */
-      var getLayout: js.UndefOr[js.Function0[_]] = js.native
+      var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of reverse
         * @returns Object
         */
-      var getReverse: js.UndefOr[js.Function0[_]] = js.native
+      var getReverse: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
         */
-      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+      var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
       
       /** [Method] Sets the value of duration
         * @param duration Object The new value.
         */
-      var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[js.Any], Unit]] = js.native
+      var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of layout
         * @param layout Object The new value.
         */
-      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.native
+      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of reverse
         * @param reverse Object The new value.
         */
-      var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.native
+      var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object IAbstract {
       
@@ -74,19 +74,19 @@ object layout {
         def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
         @scala.inline
-        def setGetDuration(value: () => _): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        def setGetDuration(value: () => js.Any): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
         @scala.inline
-        def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+        def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
         
         @scala.inline
-        def setGetReverse(value: () => _): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
+        def setGetReverse(value: () => js.Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetReverseUndefined: Self = StObject.set(x, "getReverse", js.undefined)
@@ -117,8 +117,9 @@ object layout {
       }
     }
     
-    @js.native
-    trait ICover extends IStyle
+    trait ICover
+      extends StObject
+         with IStyle
     object ICover {
       
       @scala.inline
@@ -128,8 +129,9 @@ object layout {
       }
     }
     
-    @js.native
-    trait ICube extends IStyle
+    trait ICube
+      extends StObject
+         with IStyle
     object ICube {
       
       @scala.inline
@@ -139,8 +141,9 @@ object layout {
       }
     }
     
-    @js.native
-    trait IFade extends IStyle
+    trait IFade
+      extends StObject
+         with IStyle
     object IFade {
       
       @scala.inline
@@ -150,20 +153,21 @@ object layout {
       }
     }
     
-    @js.native
-    trait IFlip extends IStyle {
+    trait IFlip
+      extends StObject
+         with IStyle {
       
       /** [Method] Returns the value of duration
         * @returns Number
         */
       @JSName("getDuration")
-      var getDuration_IFlip: js.UndefOr[js.Function0[Double]] = js.native
+      var getDuration_IFlip: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of duration
         * @param duration Number The new value.
         */
       @JSName("setDuration")
-      var setDuration_IFlip: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
+      var setDuration_IFlip: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object IFlip {
       
@@ -190,20 +194,21 @@ object layout {
       }
     }
     
-    @js.native
-    trait IPop extends IStyle {
+    trait IPop
+      extends StObject
+         with IStyle {
       
       /** [Method] Returns the value of duration
         * @returns Number
         */
       @JSName("getDuration")
-      var getDuration_IPop: js.UndefOr[js.Function0[Double]] = js.native
+      var getDuration_IPop: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of duration
         * @param duration Number The new value.
         */
       @JSName("setDuration")
-      var setDuration_IPop: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
+      var setDuration_IPop: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object IPop {
       
@@ -230,8 +235,9 @@ object layout {
       }
     }
     
-    @js.native
-    trait IReveal extends IStyle
+    trait IReveal
+      extends StObject
+         with IStyle
     object IReveal {
       
       @scala.inline
@@ -241,20 +247,21 @@ object layout {
       }
     }
     
-    @js.native
-    trait IScroll extends IAbstract {
+    trait IScroll
+      extends StObject
+         with IAbstract {
       
       /** [Method] Returns the value of duration
         * @returns Number
         */
       @JSName("getDuration")
-      var getDuration_IScroll: js.UndefOr[js.Function0[Double]] = js.native
+      var getDuration_IScroll: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Sets the value of duration
         * @param duration Number The new value.
         */
       @JSName("setDuration")
-      var setDuration_IScroll: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
+      var setDuration_IScroll: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
     }
     object IScroll {
       
@@ -285,8 +292,9 @@ object layout {
     
     type IScrollReveal = IScroll
     
-    @js.native
-    trait ISlide extends IStyle
+    trait ISlide
+      extends StObject
+         with IStyle
     object ISlide {
       
       @scala.inline
@@ -296,28 +304,29 @@ object layout {
       }
     }
     
-    @js.native
-    trait IStyle extends IAbstract {
+    trait IStyle
+      extends StObject
+         with IAbstract {
       
       /** [Method] Returns the value of inAnimation
         * @returns Object
         */
-      var getInAnimation: js.UndefOr[js.Function0[_]] = js.native
+      var getInAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of outAnimation
         * @returns Object
         */
-      var getOutAnimation: js.UndefOr[js.Function0[_]] = js.native
+      var getOutAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of inAnimation
         * @param inAnimation Object The new value.
         */
-      var setInAnimation: js.UndefOr[js.Function1[/* inAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+      var setInAnimation: js.UndefOr[js.Function1[/* inAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of outAnimation
         * @param outAnimation Object The new value.
         */
-      var setOutAnimation: js.UndefOr[js.Function1[/* outAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+      var setOutAnimation: js.UndefOr[js.Function1[/* outAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object IStyle {
       
@@ -331,13 +340,13 @@ object layout {
       implicit class IStyleMutableBuilder[Self <: IStyle] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setGetInAnimation(value: () => _): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
+        def setGetInAnimation(value: () => js.Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetInAnimationUndefined: Self = StObject.set(x, "getInAnimation", js.undefined)
         
         @scala.inline
-        def setGetOutAnimation(value: () => _): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
+        def setGetOutAnimation(value: () => js.Any): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetOutAnimationUndefined: Self = StObject.set(x, "getOutAnimation", js.undefined)

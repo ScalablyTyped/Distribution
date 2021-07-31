@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNamespacesResponse extends StObject {
   
   /**
     * An array that contains one NamespaceSummary object for each namespace that matches the specified filter criteria.
     */
-  var Namespaces: js.UndefOr[NamespaceSummariesList] = js.native
+  var Namespaces: js.UndefOr[NamespaceSummariesList] = js.undefined
   
   /**
     * If the response contains NextToken, submit another ListNamespaces request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  AWS Cloud Map gets MaxResults namespaces and then filters them based on the specified criteria. It's possible that no namespaces in the first MaxResults namespaces matched the specified criteria but that subsequent groups of MaxResults namespaces do contain namespaces that match the criteria. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
 }
 object ListNamespacesResponse {
   

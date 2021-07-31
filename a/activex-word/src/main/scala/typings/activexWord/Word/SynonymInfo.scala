@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynonymInfo extends StObject {
   
-  val AntonymList: js.Any = js.native
+  val AntonymList: js.Any
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Found: Boolean = js.native
+  val Found: Boolean
   
-  val MeaningCount: Double = js.native
+  val MeaningCount: Double
   
-  val MeaningList: js.Any = js.native
+  val MeaningList: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PartOfSpeechList: js.Any = js.native
+  val PartOfSpeechList: js.Any
   
-  val RelatedExpressionList: js.Any = js.native
+  val RelatedExpressionList: js.Any
   
-  val RelatedWordList: js.Any = js.native
+  val RelatedWordList: js.Any
   
-  def SynonymList(Meaning: js.Any): js.Any = js.native
+  def SynonymList(Meaning: js.Any): js.Any
   
-  val Word: String = js.native
+  val Word: String
   
   @JSName("Word.SynonymInfo_typekey")
-  var WordDotSynonymInfo_typekey: SynonymInfo = js.native
+  var WordDotSynonymInfo_typekey: SynonymInfo
 }
 object SynonymInfo {
   

@@ -2,17 +2,15 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolConfig extends StObject {
   
-  val data: js.UndefOr[StringList] = js.native
+  val data: js.UndefOr[StringList] = js.undefined
   
-  val enabled: js.UndefOr[Boolean] = js.native
+  val enabled: js.UndefOr[Boolean] = js.undefined
   
-  val position: js.UndefOr[Double] = js.native
+  val position: js.UndefOr[Double] = js.undefined
 }
 object ToolConfig {
   

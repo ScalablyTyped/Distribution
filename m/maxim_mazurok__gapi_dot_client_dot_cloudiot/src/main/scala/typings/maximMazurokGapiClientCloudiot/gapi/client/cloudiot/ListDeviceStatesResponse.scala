@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeviceStatesResponse extends StObject {
   
   /** The last few device states. States are listed in descending order of server update time, starting from the most recent one. */
-  var deviceStates: js.UndefOr[js.Array[DeviceState]] = js.native
+  var deviceStates: js.UndefOr[js.Array[DeviceState]] = js.undefined
 }
 object ListDeviceStatesResponse {
   

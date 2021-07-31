@@ -2,24 +2,22 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<std.Partial<std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/plural-rules.LDMLPluralRule, T>>, 'other'> & {  other :T} */
-@js.native
 trait LDMLPluralRuleMap[T] extends StObject {
   
-  var few: js.UndefOr[T] = js.native
+  var few: js.UndefOr[T] = js.undefined
   
-  var many: js.UndefOr[T] = js.native
+  var many: js.UndefOr[T] = js.undefined
   
-  var one: js.UndefOr[T] = js.native
+  var one: js.UndefOr[T] = js.undefined
   
-  var other: T = js.native
+  var other: T
   
-  var two: js.UndefOr[T] = js.native
+  var two: js.UndefOr[T] = js.undefined
   
-  var zero: js.UndefOr[T] = js.native
+  var zero: js.UndefOr[T] = js.undefined
 }
 object LDMLPluralRuleMap {
   
@@ -30,7 +28,7 @@ object LDMLPluralRuleMap {
   }
   
   @scala.inline
-  implicit class LDMLPluralRuleMapMutableBuilder[Self <: LDMLPluralRuleMap[_], T] (val x: Self with LDMLPluralRuleMap[T]) extends AnyVal {
+  implicit class LDMLPluralRuleMapMutableBuilder[Self <: LDMLPluralRuleMap[?], T] (val x: Self & LDMLPluralRuleMap[T]) extends AnyVal {
     
     @scala.inline
     def setFew(value: T): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])

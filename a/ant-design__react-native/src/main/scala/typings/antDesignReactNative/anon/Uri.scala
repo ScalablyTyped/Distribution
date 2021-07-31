@@ -2,13 +2,11 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uri extends StObject {
   
-  var uri: js.Any = js.native
+  var uri: js.Any
 }
 object Uri {
   

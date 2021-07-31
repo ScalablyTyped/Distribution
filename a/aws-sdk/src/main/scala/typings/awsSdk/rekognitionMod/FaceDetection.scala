@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaceDetection extends StObject {
   
   /**
     * The face properties for the detected face.
     */
-  var Face: js.UndefOr[FaceDetail] = js.native
+  var Face: js.UndefOr[FaceDetail] = js.undefined
   
   /**
     * Time, in milliseconds from the start of the video, that the face was detected.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object FaceDetection {
   

@@ -3,26 +3,24 @@ package typings.sharp.mod
 import typings.sharp.anon.B
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
   /** Array of channel statistics for each channel in the image. */
-  var channels: js.Array[ChannelStats] = js.native
+  var channels: js.Array[ChannelStats]
   
   /** Object containing most dominant sRGB colour based on a 4096-bin 3D histogram (experimental) */
-  var dominant: B = js.native
+  var dominant: B
   
   /** Histogram-based estimation of greyscale entropy, discarding alpha channel if any (experimental) */
-  var entropy: Double = js.native
+  var entropy: Double
   
   /** Value to identify if the image is opaque or transparent, based on the presence and use of alpha channel */
-  var isOpaque: Boolean = js.native
+  var isOpaque: Boolean
   
   /** Estimation of greyscale sharpness based on the standard deviation of a Laplacian convolution, discarding alpha channel if any (experimental) */
-  var sharpness: Double = js.native
+  var sharpness: Double
 }
 object Stats {
   

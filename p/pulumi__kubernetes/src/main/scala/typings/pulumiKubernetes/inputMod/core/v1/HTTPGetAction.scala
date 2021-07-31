@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTTPGetAction describes an action based on HTTP Get requests.
   */
-@js.native
 trait HTTPGetAction extends StObject {
   
   /**
     * Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
     */
-  var host: js.UndefOr[Input[String]] = js.native
+  var host: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Custom headers to set in the request. HTTP allows repeated headers.
     */
-  var httpHeaders: js.UndefOr[Input[js.Array[Input[HTTPHeader]]]] = js.native
+  var httpHeaders: js.UndefOr[Input[js.Array[Input[HTTPHeader]]]] = js.undefined
   
   /**
     * Path to access on the HTTP server.
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
     */
-  var port: Input[Double | String] = js.native
+  var port: Input[Double | String]
   
   /**
     * Scheme to use for connecting to the host. Defaults to HTTP.
     */
-  var scheme: js.UndefOr[Input[String]] = js.native
+  var scheme: js.UndefOr[Input[String]] = js.undefined
 }
 object HTTPGetAction {
   

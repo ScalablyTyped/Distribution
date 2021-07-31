@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraLarge extends StObject {
   
-  var extraLarge: js.UndefOr[String] = js.native
+  var extraLarge: js.UndefOr[String] = js.undefined
   
-  var large: js.UndefOr[String] = js.native
+  var large: js.UndefOr[String] = js.undefined
   
-  var medium: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.undefined
   
-  var small: js.UndefOr[String] = js.native
+  var small: js.UndefOr[String] = js.undefined
   
-  var smallThumbnail: js.UndefOr[String] = js.native
+  var smallThumbnail: js.UndefOr[String] = js.undefined
   
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
 }
 object ExtraLarge {
   

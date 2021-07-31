@@ -5,29 +5,29 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the access to a container of database forms.
   * @see Forms
   */
-@js.native
-trait XFormDocumentsSupplier extends XInterface {
+trait XFormDocumentsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of forms.
     * @returns the form documents
     * @see Forms
     */
-  val FormDocuments: XNameAccess = js.native
+  val FormDocuments: XNameAccess
   
   /**
     * returns the container of forms.
     * @returns the form documents
     * @see Forms
     */
-  def getFormDocuments(): XNameAccess = js.native
+  def getFormDocuments(): XNameAccess
 }
 object XFormDocumentsSupplier {
   

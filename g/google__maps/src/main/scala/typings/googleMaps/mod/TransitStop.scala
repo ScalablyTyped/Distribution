@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitStop extends StObject {
   
   /** the location of the transit station/stop, represented as a `lat` and `lng` field. */
-  var location: LatLngLiteral = js.native
+  var location: LatLngLiteral
   
   /** the name of the transit station/stop. eg. "Union Square". */
-  var name: String = js.native
+  var name: String
 }
 object TransitStop {
   

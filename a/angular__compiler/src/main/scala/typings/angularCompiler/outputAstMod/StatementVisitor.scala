@@ -2,27 +2,25 @@ package typings.angularCompiler.outputAstMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatementVisitor extends StObject {
   
-  def visitDeclareClassStmt(stmt: ClassStmt, context: js.Any): js.Any = js.native
+  def visitDeclareClassStmt(stmt: ClassStmt, context: js.Any): js.Any
   
-  def visitDeclareFunctionStmt(stmt: DeclareFunctionStmt, context: js.Any): js.Any = js.native
+  def visitDeclareFunctionStmt(stmt: DeclareFunctionStmt, context: js.Any): js.Any
   
-  def visitDeclareVarStmt(stmt: DeclareVarStmt, context: js.Any): js.Any = js.native
+  def visitDeclareVarStmt(stmt: DeclareVarStmt, context: js.Any): js.Any
   
-  def visitExpressionStmt(stmt: ExpressionStatement, context: js.Any): js.Any = js.native
+  def visitExpressionStmt(stmt: ExpressionStatement, context: js.Any): js.Any
   
-  def visitIfStmt(stmt: IfStmt_, context: js.Any): js.Any = js.native
+  def visitIfStmt(stmt: IfStmt_, context: js.Any): js.Any
   
-  def visitReturnStmt(stmt: ReturnStatement, context: js.Any): js.Any = js.native
+  def visitReturnStmt(stmt: ReturnStatement, context: js.Any): js.Any
   
-  def visitThrowStmt(stmt: ThrowStmt, context: js.Any): js.Any = js.native
+  def visitThrowStmt(stmt: ThrowStmt, context: js.Any): js.Any
   
-  def visitTryCatchStmt(stmt: TryCatchStmt, context: js.Any): js.Any = js.native
+  def visitTryCatchStmt(stmt: TryCatchStmt, context: js.Any): js.Any
 }
 object StatementVisitor {
   

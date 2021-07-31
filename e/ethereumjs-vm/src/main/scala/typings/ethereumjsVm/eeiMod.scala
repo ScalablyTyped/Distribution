@@ -5,14 +5,15 @@ import typings.bnJs.mod.^
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eeiMod {
   
   @JSImport("ethereumjs-vm/dist/evm/eei", JSImport.Default)
   @js.native
-  class default protected () extends EEI {
+  class default protected ()
+    extends StObject
+       with EEI {
     def this(
       env: Env,
       state: typings.ethereumjsVm.promisifiedMod.default,
@@ -279,34 +280,33 @@ object eeiMod {
     def useGas(amount: ^): Unit = js.native
   }
   
-  @js.native
   trait Env extends StObject {
     
-    var address: Buffer = js.native
+    var address: Buffer
     
-    var block: js.Any = js.native
+    var block: js.Any
     
-    var blockchain: typings.ethereumjsBlockchain.mod.default = js.native
+    var blockchain: typings.ethereumjsBlockchain.mod.default
     
-    var callData: Buffer = js.native
+    var callData: Buffer
     
-    var callValue: ^ = js.native
+    var callValue: ^
     
-    var caller: Buffer = js.native
+    var caller: Buffer
     
-    var code: Buffer = js.native
+    var code: Buffer
     
-    var codeAddress: Buffer = js.native
+    var codeAddress: Buffer
     
-    var contract: typings.ethereumjsAccount.mod.default = js.native
+    var contract: typings.ethereumjsAccount.mod.default
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var gasPrice: Buffer = js.native
+    var gasPrice: Buffer
     
-    var isStatic: Boolean = js.native
+    var isStatic: Boolean
     
-    var origin: Buffer = js.native
+    var origin: Buffer
   }
   object Env {
     
@@ -374,17 +374,16 @@ object eeiMod {
     }
   }
   
-  @js.native
   trait RunResult extends StObject {
     
-    var logs: js.Any = js.native
+    var logs: js.Any
     
-    var returnValue: js.UndefOr[Buffer] = js.native
+    var returnValue: js.UndefOr[Buffer] = js.undefined
     
     /**
       * A map from the accounts that have self-destructed to the addresses to send their funds to
       */
-    var selfdestruct: StringDictionary[Buffer] = js.native
+    var selfdestruct: StringDictionary[Buffer]
   }
   object RunResult {
     

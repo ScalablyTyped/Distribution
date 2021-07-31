@@ -5,17 +5,15 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentPointer extends StObject {
   
-  var __fragmentOwner: RequestDescriptor = js.native
+  var __fragmentOwner: RequestDescriptor
   
-  var __fragments: StringDictionary[Variables] = js.native
+  var __fragments: StringDictionary[Variables]
   
-  var __id: DataID = js.native
+  var __id: DataID
 }
 object FragmentPointer {
   

@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction that writes records. Takes one input, produces no outputs.
   */
-@js.native
 trait SchemaWriteInstruction extends StObject {
   
   /**
     * The input.
     */
-  var input: js.UndefOr[SchemaInstructionInput] = js.native
+  var input: js.UndefOr[SchemaInstructionInput] = js.undefined
   
   /**
     * The sink to write to.
     */
-  var sink: js.UndefOr[SchemaSink] = js.native
+  var sink: js.UndefOr[SchemaSink] = js.undefined
 }
 object SchemaWriteInstruction {
   

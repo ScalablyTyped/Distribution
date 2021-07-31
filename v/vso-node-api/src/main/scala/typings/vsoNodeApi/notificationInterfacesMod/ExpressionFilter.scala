@@ -2,13 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExpressionFilter extends BaseSubscriptionFilter {
+trait ExpressionFilter
+  extends StObject
+     with BaseSubscriptionFilter {
   
-  var criteria: ExpressionFilterModel = js.native
+  var criteria: ExpressionFilterModel
 }
 object ExpressionFilter {
   

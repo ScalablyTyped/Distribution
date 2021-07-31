@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Patchurl extends StObject {
   
-  var diff_url: String = js.native
+  var diff_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var patch_url: String = js.native
+  var patch_url: String
 }
 object Patchurl {
   

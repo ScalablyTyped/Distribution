@@ -5,7 +5,6 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.endpointMod.Endpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoveryMod {
@@ -53,12 +52,11 @@ object discoveryMod {
     var transporter: js.Any = js.native
   }
   
-  @js.native
   trait DiscoveryOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var includePrivate: js.UndefOr[Boolean] = js.native
+    var includePrivate: js.UndefOr[Boolean] = js.undefined
   }
   object DiscoveryOptions {
     

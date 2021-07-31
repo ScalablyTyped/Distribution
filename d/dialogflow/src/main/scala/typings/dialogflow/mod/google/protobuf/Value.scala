@@ -13,7 +13,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Value. */
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Value.
   * @param [properties] Properties to set
   */
-class Value () extends IValue {
+class Value ()
+  extends StObject
+     with IValue {
   def this(properties: IValue) = this()
   
   /** Value boolValue. */
@@ -53,18 +54,20 @@ class Value () extends IValue {
 }
 object Value {
   
+  @JSImport("dialogflow/protos/protos", "google.protobuf.Value")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Value instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Value instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.create")
-  @js.native
-  def create(): Value = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.create")
-  @js.native
-  def create(properties: IValue): Value = js.native
+  @scala.inline
+  def create(): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Value]
+  @scala.inline
+  def create(properties: IValue): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Value]
   
   /**
     * Decodes a Value message from the specified reader or buffer.
@@ -75,18 +78,14 @@ object Value {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decode")
-  @js.native
-  def decode(reader: Reader): Value = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Value = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decode")
-  @js.native
-  def decode(reader: Uint8Array): Value = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Value = js.native
+  @scala.inline
+  def decode(reader: Reader): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def decode(reader: Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Value]
   
   /**
     * Decodes a Value message from the specified reader or buffer, length delimited.
@@ -96,12 +95,10 @@ object Value {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Value = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Value = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Value]
   
   /**
     * Encodes the specified Value message. Does not implicitly {@link google.protobuf.Value.verify|verify} messages.
@@ -110,12 +107,10 @@ object Value {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.encode")
-  @js.native
-  def encode(message: IValue): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.encode")
-  @js.native
-  def encode(message: IValue, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IValue): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IValue, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Value message, length delimited. Does not implicitly {@link google.protobuf.Value.verify|verify} messages.
@@ -124,12 +119,10 @@ object Value {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValue): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValue, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IValue): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IValue, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Value message from a plain object. Also converts values to their respective internal types.
@@ -137,9 +130,8 @@ object Value {
     * @returns Value
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Value = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Value]
   
   /**
     * Creates a plain object from a Value message. Also converts values to other types if specified.
@@ -148,12 +140,10 @@ object Value {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.toObject")
-  @js.native
-  def toObject(message: Value): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.toObject")
-  @js.native
-  def toObject(message: Value, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Value): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Value, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Value message.
@@ -161,7 +151,6 @@ object Value {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.Value.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

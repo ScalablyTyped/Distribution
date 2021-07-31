@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,34 +26,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Controller
   * @see com.sun.star.view.XSelectionSupplier
   */
-@js.native
-trait XModel extends XComponent {
+trait XModel
+  extends StObject
+     with XComponent {
   
   /**
     * provides read access on currently representation of the {@link com.sun.star.document.MediaDescriptor} of this model which describes the model and its
     * state
     * @returns the arguments with which the model was originally created or stored the last time.
     */
-  val Args: SafeArray[PropertyValue] = js.native
+  val Args: SafeArray[PropertyValue]
   
   /**
     * provides access to the controller which currently controls this model
     * @returns If the controller which is active is a controller of this model, it will be returned. If not, the controller which was the last active of this mo
     */
-  var CurrentController: XController = js.native
+  var CurrentController: XController
   
   /**
     * provides read access on current selection on controller
     * @returns the current selection in the current controller. If there is no current controller, it returns `NULL` .
     */
-  val CurrentSelection: XInterface = js.native
+  val CurrentSelection: XInterface
   
   /**
     * provides information about the location of this model
     * @returns the URL of the resource which is represented by this model.
     * @see XStorable.getLocation()
     */
-  val URL: String = js.native
+  val URL: String
   
   /**
     * informs a model about its resource description.
@@ -62,7 +62,7 @@ trait XModel extends XComponent {
     * @param Arguments are optional arguments for that resource (see {@link com.sun.star.document.MediaDescriptor} )
     * @returns `TRUE` for success ; `FALSE` otherwise
     */
-  def attachResource(URL: String, Arguments: SeqEquiv[PropertyValue]): Boolean = js.native
+  def attachResource(URL: String, Arguments: SeqEquiv[PropertyValue]): Boolean
   
   /**
     * is called whenever a new controller is created for this model.
@@ -71,7 +71,7 @@ trait XModel extends XComponent {
     * @param Controller a new controller for this model
     * @see XModel.disconnectController()
     */
-  def connectController(Controller: XController): Unit = js.native
+  def connectController(Controller: XController): Unit
   
   /**
     * is called whenever an existing controller should be deregistered at this model.
@@ -80,33 +80,33 @@ trait XModel extends XComponent {
     * @param Controller the existing controller which should be deregistered
     * @see XModel.connectController()
     */
-  def disconnectController(Controller: XController): Unit = js.native
+  def disconnectController(Controller: XController): Unit
   
   /**
     * provides read access on currently representation of the {@link com.sun.star.document.MediaDescriptor} of this model which describes the model and its
     * state
     * @returns the arguments with which the model was originally created or stored the last time.
     */
-  def getArgs(): SafeArray[PropertyValue] = js.native
+  def getArgs(): SafeArray[PropertyValue]
   
   /**
     * provides access to the controller which currently controls this model
     * @returns If the controller which is active is a controller of this model, it will be returned. If not, the controller which was the last active of this mo
     */
-  def getCurrentController(): XController = js.native
+  def getCurrentController(): XController
   
   /**
     * provides read access on current selection on controller
     * @returns the current selection in the current controller. If there is no current controller, it returns `NULL` .
     */
-  def getCurrentSelection(): XInterface = js.native
+  def getCurrentSelection(): XInterface
   
   /**
     * provides information about the location of this model
     * @returns the URL of the resource which is represented by this model.
     * @see XStorable.getLocation()
     */
-  def getURL(): String = js.native
+  def getURL(): String
   
   /**
     * determines if there is at least one lock remaining.
@@ -114,7 +114,7 @@ trait XModel extends XComponent {
     * While there is at least one lock remaining, some notifications for display updates are not broadcasted to the controllers.
     * @returns `TRUE` if any lock exist ; `FALSE` otherwise
     */
-  def hasControllersLocked(): Boolean = js.native
+  def hasControllersLocked(): Boolean
   
   /**
     * suspends some notifications to the controllers which are used for display updates.
@@ -122,14 +122,14 @@ trait XModel extends XComponent {
     * The calls to {@link XModel.lockControllers()} and {@link XModel.unlockControllers()} may be nested and even overlapping, but they must be in pairs.
     * While there is at least one lock remaining, some notifications for display updates are not broadcasted.
     */
-  def lockControllers(): Unit = js.native
+  def lockControllers(): Unit
   
   /**
     * sets a registered controller as the current controller.
     * @param Controller reference to an already existing connected controller, which should be the new active one
     * @throws com::sun::star::container::NoSuchElementException if **xController** isn't an already connected controller on this model
     */
-  def setCurrentController(Controller: XController): Unit = js.native
+  def setCurrentController(Controller: XController): Unit
   
   /**
     * resumes the notifications which were suspended by {@link XModel.lockControllers()} .
@@ -137,7 +137,7 @@ trait XModel extends XComponent {
     * The calls to {@link XModel.lockControllers()} and {@link XModel.unlockControllers()} may be nested and even overlapping, but they must be in pairs.
     * While there is at least one lock remaining, some notifications for display updates are not broadcasted.
     */
-  def unlockControllers(): Unit = js.native
+  def unlockControllers(): Unit
 }
 object XModel {
   

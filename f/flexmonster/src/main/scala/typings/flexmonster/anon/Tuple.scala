@@ -3,17 +3,15 @@ package typings.flexmonster.anon
 import typings.flexmonster.mod.MeasureObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tuple extends StObject {
   
-  var measure: MeasureObject = js.native
+  var measure: MeasureObject
   
-  var tuple: js.Array[String] = js.native
+  var tuple: js.Array[String]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Tuple {
   

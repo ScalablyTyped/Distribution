@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceCreationLimitPolicy extends StObject {
   
   /**
     * The maximum number of game sessions that an individual can create during the policy period. 
     */
-  var NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.native
+  var NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * The time span used in evaluating the resource creation limit policy. 
     */
-  var PolicyPeriodInMinutes: js.UndefOr[WholeNumber] = js.native
+  var PolicyPeriodInMinutes: js.UndefOr[WholeNumber] = js.undefined
 }
 object ResourceCreationLimitPolicy {
   

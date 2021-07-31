@@ -2,43 +2,41 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackEaseIn extends StObject {
   
-  def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+  def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any
   
-  def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+  def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any
   
-  def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+  def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any
   
-  def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
   
-  def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+  def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any
 }
 object BackEaseIn {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioSelector extends StObject {
   
   /**
     * The name of this AudioSelector. AudioDescriptions will use this name to uniquely identify this Selector.  Selector names should be unique per input.
     */
-  var Name: stringMin1 = js.native
+  var Name: stringMin1
   
   /**
     * The audio selector settings.
     */
-  var SelectorSettings: js.UndefOr[AudioSelectorSettings] = js.native
+  var SelectorSettings: js.UndefOr[AudioSelectorSettings] = js.undefined
 }
 object AudioSelector {
   

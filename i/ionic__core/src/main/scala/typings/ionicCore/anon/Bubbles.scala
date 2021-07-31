@@ -2,25 +2,23 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bubbles extends StObject {
   
-  var bubbles: Circles = js.native
+  var bubbles: Circles
   
-  var circles: Circles = js.native
+  var circles: Circles
   
-  var circular: Dur = js.native
+  var circular: Dur
   
-  var crescent: Fn = js.native
+  var crescent: Fn
   
-  var dots: CirclesDur = js.native
+  var dots: CirclesDur
   
-  var lines: Lines = js.native
+  var lines: Lines
   
-  var `lines-small`: Lines = js.native
+  var `lines-small`: Lines
 }
 object Bubbles {
   

@@ -2,10 +2,13 @@ package typings.publicIp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("public-ip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get your public IP address - very fast!
@@ -21,12 +24,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("public-ip", "v4")
-  @js.native
-  def v4(): CancelablePromise[String] = js.native
-  @JSImport("public-ip", "v4")
-  @js.native
-  def v4(options: Options): CancelablePromise[String] = js.native
+  @scala.inline
+  def v4(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[CancelablePromise[String]]
+  @scala.inline
+  def v4(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
   
   /**
   	Get your public IP address - very fast!
@@ -42,59 +43,18 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("public-ip", "v6")
-  @js.native
-  def v6(): CancelablePromise[String] = js.native
-  @JSImport("public-ip", "v6")
-  @js.native
-  def v6(options: Options): CancelablePromise[String] = js.native
+  @scala.inline
+  def v6(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[CancelablePromise[String]]
+  @scala.inline
+  def v6(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
   
-  /* Inlined std.Promise<T> & {cancel (): void} */
   @js.native
-  trait CancelablePromise[T] extends StObject {
+  trait CancelablePromise[T]
+    extends js.Promise[T] {
     
     def cancel(): Unit = js.native
-    
-    /**
-      * Attaches a callback for only the rejection of the Promise.
-      * @param onrejected The callback to execute when the Promise is rejected.
-      * @returns A Promise for the completion of the callback.
-      */
-    def `catch`[TResult](): js.Promise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
-    
-    /**
-      * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-      * resolved value cannot be modified from the callback.
-      * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
-      * @returns A Promise for the completion of the callback.
-      */
-    def `finally`(): js.Promise[T] = js.native
-    def `finally`(onfinally: js.Function0[Unit]): js.Promise[T] = js.native
-    
-    /**
-      * Attaches callbacks for the resolution and/or rejection of the Promise.
-      * @param onfulfilled The callback to execute when the Promise is resolved.
-      * @param onrejected The callback to execute when the Promise is rejected.
-      * @returns A Promise for the completion of which ever callback is executed.
-      */
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    val toStringTag: String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -112,19 +72,19 @@ object mod {
     		})();
     		```
     		*/
-    val fallbackUrls: js.UndefOr[js.Array[String]] = js.native
+    val fallbackUrls: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Use a HTTPS check using the [icanhazip.com](https://github.com/major/icanhaz) service instead of the DNS query. [ipify.org](https://www.ipify.org) is used as a fallback if `icanhazip.com` fails. This check is much more secure and tamper-proof, but also a lot slower. __This option is only available in the Node.js version__. The default behaviour is to check aginst DNS before using HTTPS fallback. If set to `true`, it will _only_ check against HTTPS.
     		@default false
     		*/
-    val onlyHttps: js.UndefOr[Boolean] = js.native
+    val onlyHttps: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The time in milliseconds until a request is considered timed out.
     		@default 5000
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -3,7 +3,6 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,9 +74,9 @@ trait Frame extends StObject {
   def Repaint(): Unit = js.native
   
   def Scroll(): Unit = js.native
-  def Scroll(xAction: js.UndefOr[scala.Nothing], yAction: js.Any): Unit = js.native
   def Scroll(xAction: js.Any): Unit = js.native
   def Scroll(xAction: js.Any, yAction: js.Any): Unit = js.native
+  def Scroll(xAction: Unit, yAction: js.Any): Unit = js.native
   
   var ScrollBars: fmScrollBars = js.native
   

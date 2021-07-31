@@ -2,36 +2,34 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentMember extends StObject {
   
   /**
     * The ID of the environment for the environment member.
     */
-  var environmentId: js.UndefOr[EnvironmentId] = js.native
+  var environmentId: js.UndefOr[EnvironmentId] = js.undefined
   
   /**
     * The time, expressed in epoch time format, when the environment member last opened the environment.
     */
-  var lastAccess: js.UndefOr[Timestamp] = js.native
+  var lastAccess: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of environment member permissions associated with this environment member. Available values include:    owner: Owns the environment.    read-only: Has read-only access to the environment.    read-write: Has read-write access to the environment.  
     */
-  var permissions: js.UndefOr[Permissions] = js.native
+  var permissions: js.UndefOr[Permissions] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the environment member.
     */
-  var userArn: js.UndefOr[UserArn] = js.native
+  var userArn: js.UndefOr[UserArn] = js.undefined
   
   /**
     * The user ID in AWS Identity and Access Management (AWS IAM) of the environment member.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object EnvironmentMember {
   

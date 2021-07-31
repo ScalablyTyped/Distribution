@@ -3,20 +3,18 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 import typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for CalendarEventActionResponse objects.
   */
-@js.native
 trait CalendarEventActionResponseBuilder extends StObject {
   
-  def addAttendees(emails: js.Array[String]): CalendarEventActionResponseBuilder = js.native
+  def addAttendees(emails: js.Array[String]): CalendarEventActionResponseBuilder
   
-  def build(): CalendarEventActionResponse = js.native
+  def build(): CalendarEventActionResponse
   
-  def setConferenceData(conferenceData: ConferenceData): CalendarEventActionResponseBuilder = js.native
+  def setConferenceData(conferenceData: ConferenceData): CalendarEventActionResponseBuilder
 }
 object CalendarEventActionResponseBuilder {
   

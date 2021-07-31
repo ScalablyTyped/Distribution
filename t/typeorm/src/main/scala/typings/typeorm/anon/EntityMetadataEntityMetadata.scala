@@ -3,15 +3,13 @@ package typings.typeorm.anon
 import typings.typeorm.exclusionMetadataArgsMod.ExclusionMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityMetadataEntityMetadata extends StObject {
   
-  var args: js.UndefOr[ExclusionMetadataArgs] = js.native
+  var args: js.UndefOr[ExclusionMetadataArgs] = js.undefined
   
-  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata
 }
 object EntityMetadataEntityMetadata {
   

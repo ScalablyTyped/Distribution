@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /** A user whose account has since been deleted. */
-  var deletedUser: js.UndefOr[js.Any] = js.native
+  var deletedUser: js.UndefOr[js.Any] = js.undefined
   
   /** A known user. */
-  var knownUser: js.UndefOr[KnownUser] = js.native
+  var knownUser: js.UndefOr[KnownUser] = js.undefined
   
   /** A user about whom nothing is currently known. */
-  var unknownUser: js.UndefOr[js.Any] = js.native
+  var unknownUser: js.UndefOr[js.Any] = js.undefined
 }
 object User {
   

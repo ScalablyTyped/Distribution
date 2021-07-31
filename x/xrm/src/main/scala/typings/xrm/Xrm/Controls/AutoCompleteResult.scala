@@ -2,29 +2,27 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for Result value of AutoCompleteResultSet
   */
-@js.native
 trait AutoCompleteResult extends StObject {
   
   /**
     * Display value(s) for this auto-complete option
     */
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
   /**
     * Url of the icon to display
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The Identifier
     */
-  var id: String | Double = js.native
+  var id: String | Double
 }
 object AutoCompleteResult {
   

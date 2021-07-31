@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeSpecification extends StObject {
   
   /** Companion sizes may be filled in only when this is a video creative. */
-  var creativeCompanionSizes: js.UndefOr[js.Array[AdSize]] = js.native
+  var creativeCompanionSizes: js.UndefOr[js.Array[AdSize]] = js.undefined
   
   /** The size of the creative. */
-  var creativeSize: js.UndefOr[AdSize] = js.native
+  var creativeSize: js.UndefOr[AdSize] = js.undefined
 }
 object CreativeSpecification {
   

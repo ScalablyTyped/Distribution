@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,22 +15,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.PreparedStatement
   * @since OOo 1.1.2
   */
-@js.native
-trait XGeneratedResultSet extends XInterface {
+trait XGeneratedResultSet
+  extends StObject
+     with XInterface {
   
   /**
     * gives access to automatically generated values after a new row was inserted.
     * @returns a result set that contains the data produced by the query
     * @throws SQLException if a database access error occurs.
     */
-  val GeneratedValues: XResultSet = js.native
+  val GeneratedValues: XResultSet
   
   /**
     * gives access to automatically generated values after a new row was inserted.
     * @returns a result set that contains the data produced by the query
     * @throws SQLException if a database access error occurs.
     */
-  def getGeneratedValues(): XResultSet = js.native
+  def getGeneratedValues(): XResultSet
 }
 object XGeneratedResultSet {
   

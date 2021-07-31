@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetDiscoveryConfig extends StObject {
   
   /** The mode to use for filtering asset discovery. */
-  var inclusionMode: js.UndefOr[String] = js.native
+  var inclusionMode: js.UndefOr[String] = js.undefined
   
   /** The project ids to use for filtering asset discovery. */
-  var projectIds: js.UndefOr[js.Array[String]] = js.native
+  var projectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AssetDiscoveryConfig {
   

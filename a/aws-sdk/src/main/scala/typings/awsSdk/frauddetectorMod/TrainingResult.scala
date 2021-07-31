@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingResult extends StObject {
   
   /**
     * The validation metrics.
     */
-  var dataValidationMetrics: js.UndefOr[DataValidationMetrics] = js.native
+  var dataValidationMetrics: js.UndefOr[DataValidationMetrics] = js.undefined
   
   /**
     * The training metric details.
     */
-  var trainingMetrics: js.UndefOr[TrainingMetrics] = js.native
+  var trainingMetrics: js.UndefOr[TrainingMetrics] = js.undefined
 }
 object TrainingResult {
   

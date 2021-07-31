@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEndpointsResponse extends StObject {
   
   /**
     * Displays a list of endpoint properties being retrieved by the service in response to the request.
     */
-  var EndpointPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EndpointPropertiesList] = js.native
+  var EndpointPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EndpointPropertiesList] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListEndpointsResponse {
   

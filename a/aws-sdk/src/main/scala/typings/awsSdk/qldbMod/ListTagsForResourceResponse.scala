@@ -2,16 +2,14 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * The tags that are currently associated with the specified Amazon QLDB resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.qldbMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.qldbMod.Tags] = js.undefined
 }
 object ListTagsForResourceResponse {
   

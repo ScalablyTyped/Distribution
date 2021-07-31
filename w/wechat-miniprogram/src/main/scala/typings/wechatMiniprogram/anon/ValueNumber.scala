@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueNumber extends StObject {
   
   /** slider 的数值 0 - 100 */
-  var value: Double = js.native
+  var value: Double
 }
 object ValueNumber {
   

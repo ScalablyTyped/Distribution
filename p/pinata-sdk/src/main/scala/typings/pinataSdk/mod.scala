@@ -2,26 +2,25 @@ package typings.pinataSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pinata-sdk", "configure")
+  @JSImport("pinata-sdk", JSImport.Namespace)
   @js.native
-  def configure(apiKey: String, privateApiKey: String): PinataConfig = js.native
-  @JSImport("pinata-sdk", "configure")
-  @js.native
-  def configure(apiKey: String, privateApiKey: String, apiURL: String): PinataConfig = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pinata-sdk", "pinHashToIPFS")
-  @js.native
-  def pinHashToIPFS(config: PinataConfig, hash: String): js.Promise[PinHashToIPFSResponseJS] = js.native
+  @scala.inline
+  def configure(apiKey: String, privateApiKey: String): PinataConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(apiKey.asInstanceOf[js.Any], privateApiKey.asInstanceOf[js.Any])).asInstanceOf[PinataConfig]
+  @scala.inline
+  def configure(apiKey: String, privateApiKey: String, apiURL: String): PinataConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(apiKey.asInstanceOf[js.Any], privateApiKey.asInstanceOf[js.Any], apiURL.asInstanceOf[js.Any])).asInstanceOf[PinataConfig]
   
-  @js.native
+  @scala.inline
+  def pinHashToIPFS(config: PinataConfig, hash: String): js.Promise[PinHashToIPFSResponseJS] = (^.asInstanceOf[js.Dynamic].applyDynamic("pinHashToIPFS")(config.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PinHashToIPFSResponseJS]]
+  
   trait PinHashToIPFSResponseJS extends StObject {
     
-    var ipfsHash: String = js.native
+    var ipfsHash: String
   }
   object PinHashToIPFSResponseJS {
     
@@ -39,14 +38,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PinataConfig extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var apiURL: String = js.native
+    var apiURL: String
     
-    var privateApiKey: String = js.native
+    var privateApiKey: String
   }
   object PinataConfig {
     

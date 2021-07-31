@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditionUpgradeConfiguration extends DeviceConfiguration {
+trait EditionUpgradeConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Edition Upgrade License File Content.
-  var license: js.UndefOr[NullableOption[String]] = js.native
+  var license: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Edition Upgrade License Type. Possible values are: productKey, licenseFile.
-  var licenseType: js.UndefOr[EditionUpgradeLicenseType] = js.native
+  var licenseType: js.UndefOr[EditionUpgradeLicenseType] = js.undefined
   
   // Edition Upgrade Product Key.
-  var productKey: js.UndefOr[NullableOption[String]] = js.native
+  var productKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education,
@@ -23,7 +23,7 @@ trait EditionUpgradeConfiguration extends DeviceConfiguration {
     * windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN,
     * windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
     */
-  var targetEdition: js.UndefOr[Windows10EditionType] = js.native
+  var targetEdition: js.UndefOr[Windows10EditionType] = js.undefined
 }
 object EditionUpgradeConfiguration {
   

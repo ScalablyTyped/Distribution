@@ -7,23 +7,21 @@ import typings.leafletDraw.mod.DrawOptions.PolylineOptions
 import typings.leafletDraw.mod.DrawOptions.RectangleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarOptions extends StObject {
   
-  var circle: js.UndefOr[CircleOptions] = js.native
+  var circle: js.UndefOr[CircleOptions] = js.undefined
   
-  var circlemarker: js.UndefOr[CircleOptions] = js.native
+  var circlemarker: js.UndefOr[CircleOptions] = js.undefined
   
-  var marker: js.UndefOr[MarkerOptions] = js.native
+  var marker: js.UndefOr[MarkerOptions] = js.undefined
   
-  var polygon: js.UndefOr[PolygonOptions] = js.native
+  var polygon: js.UndefOr[PolygonOptions] = js.undefined
   
-  var polyline: js.UndefOr[PolylineOptions] = js.native
+  var polyline: js.UndefOr[PolylineOptions] = js.undefined
   
-  var rectangle: js.UndefOr[RectangleOptions] = js.native
+  var rectangle: js.UndefOr[RectangleOptions] = js.undefined
 }
 object ToolbarOptions {
   

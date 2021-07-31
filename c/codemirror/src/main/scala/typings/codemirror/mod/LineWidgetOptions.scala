@@ -2,35 +2,33 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineWidgetOptions extends StObject {
   
   /** Causes the widget to be placed above instead of below the text of the line. */
-  var above: js.UndefOr[Boolean] = js.native
+  var above: js.UndefOr[Boolean] = js.undefined
   
   /** Add an extra CSS class name to the wrapper element created for the widget. */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** Whether the widget should cover the gutter. */
-  var coverGutter: js.UndefOr[Boolean] = js.native
+  var coverGutter: js.UndefOr[Boolean] = js.undefined
   
   /** Determines whether the editor will capture mouse and drag events occurring in this widget.
     Default is false—the events will be left alone for the default browser handler, or specific handlers on the widget, to capture. */
-  var handleMouseEvents: js.UndefOr[Boolean] = js.native
+  var handleMouseEvents: js.UndefOr[Boolean] = js.undefined
   
   /** By default, the widget is added below other widgets for the line.
     This option can be used to place it at a different position (zero for the top, N to put it after the Nth other widget).
     Note that this only has effect once, when the widget is created. */
-  var insertAt: js.UndefOr[Double] = js.native
+  var insertAt: js.UndefOr[Double] = js.undefined
   
   /** Whether the widget should stay fixed in the face of horizontal scrolling. */
-  var noHScroll: js.UndefOr[Boolean] = js.native
+  var noHScroll: js.UndefOr[Boolean] = js.undefined
   
   /** When true, will cause the widget to be rendered even if the line it is associated with is hidden. */
-  var showIfHidden: js.UndefOr[Boolean] = js.native
+  var showIfHidden: js.UndefOr[Boolean] = js.undefined
 }
 object LineWidgetOptions {
   

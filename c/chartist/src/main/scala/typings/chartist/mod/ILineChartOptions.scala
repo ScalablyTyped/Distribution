@@ -4,43 +4,43 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chartist.anon.AreaBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILineChartOptions extends IChartOptions {
+trait ILineChartOptions
+  extends StObject
+     with IChartOptions {
   
-  var areaBase: js.UndefOr[Double] = js.native
+  var areaBase: js.UndefOr[Double] = js.undefined
   
-  var axisX: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.native
+  var axisX: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.undefined
   
-  var axisY: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.native
+  var axisY: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.undefined
   
-  var chartPadding: js.UndefOr[IChartPadding] = js.native
+  var chartPadding: js.UndefOr[IChartPadding] = js.undefined
   
-  var classNames: js.UndefOr[ILineChartClasses] = js.native
+  var classNames: js.UndefOr[ILineChartClasses] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var high: js.UndefOr[Double] = js.native
+  var high: js.UndefOr[Double] = js.undefined
   
-  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.native
+  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.undefined
   
-  var low: js.UndefOr[Double] = js.native
+  var low: js.UndefOr[Double] = js.undefined
   
-  var series: js.UndefOr[StringDictionary[AreaBase]] = js.native
+  var series: js.UndefOr[StringDictionary[AreaBase]] = js.undefined
   
-  var showArea: js.UndefOr[Boolean] = js.native
+  var showArea: js.UndefOr[Boolean] = js.undefined
   
-  var showLine: js.UndefOr[Boolean] = js.native
+  var showLine: js.UndefOr[Boolean] = js.undefined
   
-  var showPoint: js.UndefOr[Boolean] = js.native
+  var showPoint: js.UndefOr[Boolean] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[String | Double]] = js.native
+  var ticks: js.UndefOr[js.Array[String | Double]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ILineChartOptions {
   

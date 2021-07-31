@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionExpression extends StObject {
   
   /**
     * A specific condition to apply to a recipe action. For more information, see Recipe structure in the AWS Glue DataBrew Developer Guide.
     */
-  var Condition: typings.awsSdk.databrewMod.Condition = js.native
+  var Condition: typings.awsSdk.databrewMod.Condition
   
   /**
     * A column to apply this condition to, within an AWS Glue DataBrew dataset.
     */
-  var TargetColumn: typings.awsSdk.databrewMod.TargetColumn = js.native
+  var TargetColumn: typings.awsSdk.databrewMod.TargetColumn
   
   /**
     * A value that the condition must evaluate to for the condition to succeed.
     */
-  var Value: js.UndefOr[ConditionValue] = js.native
+  var Value: js.UndefOr[ConditionValue] = js.undefined
 }
 object ConditionExpression {
   

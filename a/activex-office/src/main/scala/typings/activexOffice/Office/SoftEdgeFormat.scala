@@ -2,22 +2,20 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftEdgeFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.SoftEdgeFormat_typekey")
-  var OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat = js.native
+  var OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat
   
-  var Radius: Double = js.native
+  var Radius: Double
   
-  var Type: MsoSoftEdgeType = js.native
+  var Type: MsoSoftEdgeType
 }
 object SoftEdgeFormat {
   

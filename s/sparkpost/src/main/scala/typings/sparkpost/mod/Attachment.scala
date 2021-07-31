@@ -2,10 +2,8 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait Attachment extends StObject {
     * The SparkPost systems will add line breaks as necessary to ensure the Base64 encoded lines contain no more than 76 characters each.
     *
     */
-  var data: String = js.native
+  var data: String
   
   /**   The filename of the attachment (for example, “document.pdf”). This is inserted into the filename parameter of the Content-Disposition header. */
-  var name: String = js.native
+  var name: String
   
   /**
     * The MIME type of the attachment; e.g., “text/plain”, “image/jpeg”, “audio/mp3”, “video/mp4”, “application/msword”, “application/pdf”, etc.,
@@ -25,7 +23,7 @@ trait Attachment extends StObject {
     * The value will apply “as-is” to the “Content-Type” header of the generated MIME part for the attachment.
     *
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Attachment {
   

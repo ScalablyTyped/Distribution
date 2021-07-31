@@ -16,15 +16,13 @@ import typings.std.Record
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var attachStacktrace: js.UndefOr[Boolean] = js.native
+    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -45,12 +43,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AttachStacktrace extends StObject {
     
-    var attachStacktrace: js.UndefOr[Boolean] = js.native
+    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
     
-    var rejection: js.UndefOr[Boolean] = js.native
+    var rejection: js.UndefOr[Boolean] = js.undefined
   }
   object AttachStacktrace {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -126,12 +122,11 @@ object anon {
     var response: typings.std.Response | XMLHttpRequest = js.native
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object Key {
     
@@ -158,10 +153,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mechanism extends StObject {
     
-    var mechanism: js.UndefOr[typings.sentryTypes.mechanismMod.Mechanism] = js.native
+    var mechanism: js.UndefOr[typings.sentryTypes.mechanismMod.Mechanism] = js.undefined
   }
   object Mechanism {
     
@@ -183,20 +177,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@sentry/browser.@sentry/browser/dist/integrations/breadcrumbs.BreadcrumbsOptions> */
-  @js.native
   trait PartialBreadcrumbsOptions extends StObject {
     
-    var console: js.UndefOr[Boolean] = js.native
+    var console: js.UndefOr[Boolean] = js.undefined
     
-    var dom: js.UndefOr[Boolean] = js.native
+    var dom: js.UndefOr[Boolean] = js.undefined
     
-    var fetch: js.UndefOr[Boolean] = js.native
+    var fetch: js.UndefOr[Boolean] = js.undefined
     
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
-    var sentry: js.UndefOr[Boolean] = js.native
+    var sentry: js.UndefOr[Boolean] = js.undefined
     
-    var xhr: js.UndefOr[Boolean] = js.native
+    var xhr: js.UndefOr[Boolean] = js.undefined
   }
   object PartialBreadcrumbsOptions {
     
@@ -248,18 +241,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@sentry/browser.@sentry/browser/dist/integrations/trycatch.TryCatchOptions> */
-  @js.native
   trait PartialTryCatchOptions extends StObject {
     
-    var XMLHttpRequest: js.UndefOr[Boolean] = js.native
+    var XMLHttpRequest: js.UndefOr[Boolean] = js.undefined
     
-    var eventTarget: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var eventTarget: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var requestAnimationFrame: js.UndefOr[Boolean] = js.native
+    var requestAnimationFrame: js.UndefOr[Boolean] = js.undefined
     
-    var setInterval: js.UndefOr[Boolean] = js.native
+    var setInterval: js.UndefOr[Boolean] = js.undefined
     
-    var setTimeout: js.UndefOr[Boolean] = js.native
+    var setTimeout: js.UndefOr[Boolean] = js.undefined
   }
   object PartialTryCatchOptions {
     
@@ -309,7 +301,8 @@ object anon {
   
   @js.native
   trait TypeofBreadcrumbs
-    extends Instantiable0[Breadcrumbs]
+    extends StObject
+       with Instantiable0[Breadcrumbs]
        with Instantiable1[/* options */ PartialBreadcrumbsOptions, Breadcrumbs] {
     
     /**
@@ -319,7 +312,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofCoreIntegrations extends Instantiable0[FunctionToString] {
+  trait TypeofCoreIntegrations
+    extends StObject
+       with Instantiable0[FunctionToString] {
     
     /**
       * @inheritDoc
@@ -328,7 +323,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofCoreIntegrationsInstantiable extends Instantiable0[InboundFilters] {
+  trait TypeofCoreIntegrationsInstantiable
+    extends StObject
+       with Instantiable0[InboundFilters] {
     
     /**
       * @inheritDoc
@@ -338,7 +335,8 @@ object anon {
   
   @js.native
   trait TypeofGlobalHandlers
-    extends Instantiable0[GlobalHandlers]
+    extends StObject
+       with Instantiable0[GlobalHandlers]
        with Instantiable1[/* options */ GlobalHandlersIntegrations, GlobalHandlers] {
     
     /**
@@ -349,7 +347,8 @@ object anon {
   
   @js.native
   trait TypeofLinkedErrors
-    extends Instantiable0[LinkedErrors]
+    extends StObject
+       with Instantiable0[LinkedErrors]
        with Instantiable1[/* options */ Key, LinkedErrors] {
     
     /**
@@ -360,7 +359,8 @@ object anon {
   
   @js.native
   trait TypeofTryCatch
-    extends Instantiable0[TryCatch]
+    extends StObject
+       with Instantiable0[TryCatch]
        with Instantiable1[/* options */ PartialTryCatchOptions, TryCatch] {
     
     /**
@@ -370,7 +370,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofUserAgent extends Instantiable0[UserAgent] {
+  trait TypeofUserAgent
+    extends StObject
+       with Instantiable0[UserAgent] {
     
     /**
       * @inheritDoc

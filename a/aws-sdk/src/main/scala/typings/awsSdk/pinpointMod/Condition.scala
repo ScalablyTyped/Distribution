@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * The conditions to evaluate for the activity.
     */
-  var Conditions: js.UndefOr[ListOfSimpleCondition] = js.native
+  var Conditions: js.UndefOr[ListOfSimpleCondition] = js.undefined
   
   /**
     * Specifies how to handle multiple conditions for the activity. For example, if you specify two conditions for an activity, whether both or only one of the conditions must be met for the activity to be performed.
     */
-  var Operator: js.UndefOr[typings.awsSdk.pinpointMod.Operator] = js.native
+  var Operator: js.UndefOr[typings.awsSdk.pinpointMod.Operator] = js.undefined
 }
 object Condition {
   

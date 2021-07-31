@@ -2,17 +2,15 @@ package typings.kdbxweb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var binaries: js.UndefOr[Boolean] = js.native
+  var binaries: js.UndefOr[Boolean] = js.undefined
   
-  var customIcons: js.UndefOr[Boolean] = js.native
+  var customIcons: js.UndefOr[Boolean] = js.undefined
   
-  var historyRules: js.UndefOr[Boolean] = js.native
+  var historyRules: js.UndefOr[Boolean] = js.undefined
 }
 object Settings {
   

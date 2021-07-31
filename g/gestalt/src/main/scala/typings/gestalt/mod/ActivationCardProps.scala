@@ -8,23 +8,21 @@ import typings.gestalt.gestaltStrings.notStarted
 import typings.gestalt.gestaltStrings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivationCardProps extends StObject {
   
-  var dismissButton: js.UndefOr[AccessibilityLabel] = js.native
+  var dismissButton: js.UndefOr[AccessibilityLabel] = js.undefined
   
-  var link: js.UndefOr[Href] = js.native
+  var link: js.UndefOr[Href] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var status: notStarted | pending | needsAttention | complete = js.native
+  var status: notStarted | pending | needsAttention | complete
   
-  var statusMessage: String = js.native
+  var statusMessage: String
   
-  var title: String = js.native
+  var title: String
 }
 object ActivationCardProps {
   

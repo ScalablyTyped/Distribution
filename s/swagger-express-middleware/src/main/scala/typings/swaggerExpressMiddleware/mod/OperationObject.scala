@@ -2,35 +2,33 @@ package typings.swaggerExpressMiddleware.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationObject extends StObject {
   
-  var consumes: js.UndefOr[MimeTypes] = js.native
+  var consumes: js.UndefOr[MimeTypes] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[Parameters] = js.native
+  var parameters: js.UndefOr[Parameters] = js.undefined
   
-  var produces: js.UndefOr[MimeTypes] = js.native
+  var produces: js.UndefOr[MimeTypes] = js.undefined
   
-  var responses: ResponsesObject = js.native
+  var responses: ResponsesObject
   
-  var schemes: js.UndefOr[js.Array[String]] = js.native
+  var schemes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.native
+  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OperationObject {
   

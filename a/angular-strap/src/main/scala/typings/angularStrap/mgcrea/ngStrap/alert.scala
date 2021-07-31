@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IRootScopeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -13,17 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object alert {
   
-  @js.native
   trait IAlert extends StObject {
     
     @JSName("$promise")
-    var $promise: IPromise[Unit] = js.native
+    var $promise: IPromise[Unit]
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object IAlert {
     
@@ -50,42 +48,41 @@ object alert {
     }
   }
   
-  @js.native
   trait IAlertOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var controller: js.UndefOr[js.Any] = js.native
+    var controller: js.UndefOr[js.Any] = js.undefined
     
-    var controllerAs: js.UndefOr[String] = js.native
+    var controllerAs: js.UndefOr[String] = js.undefined
     
-    var dismissable: js.UndefOr[Boolean] = js.native
+    var dismissable: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double | Boolean] = js.native
+    var duration: js.UndefOr[Double | Boolean] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* alert */ IAlert, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IAlertOptions {
     
@@ -202,10 +199,9 @@ object alert {
     }
   }
   
-  @js.native
   trait IAlertProvider extends StObject {
     
-    var defaults: IAlertOptions = js.native
+    var defaults: IAlertOptions
   }
   object IAlertProvider {
     
@@ -224,7 +220,9 @@ object alert {
   }
   
   @js.native
-  trait IAlertScope extends IRootScopeService {
+  trait IAlertScope
+    extends StObject
+       with IRootScopeService {
     
     @JSName("$hide")
     def $hide(): Unit = js.native

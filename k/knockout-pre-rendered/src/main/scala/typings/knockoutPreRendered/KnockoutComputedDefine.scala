@@ -3,25 +3,23 @@ package typings.knockoutPreRendered
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutComputedDefine[T] extends StObject {
   
-  var deferEvaluation: js.UndefOr[Boolean] = js.native
+  var deferEvaluation: js.UndefOr[Boolean] = js.undefined
   
-  var disposeWhen: js.UndefOr[js.Function0[Boolean]] = js.native
+  var disposeWhen: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var disposeWhenNodeIsRemoved: js.UndefOr[Node] = js.native
+  var disposeWhenNodeIsRemoved: js.UndefOr[Node] = js.undefined
   
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
-  var pure: js.UndefOr[Boolean] = js.native
+  var pure: js.UndefOr[Boolean] = js.undefined
   
-  def read(): T = js.native
+  def read(): T
   
-  var write: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+  var write: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
 }
 object KnockoutComputedDefine {
   
@@ -32,7 +30,7 @@ object KnockoutComputedDefine {
   }
   
   @scala.inline
-  implicit class KnockoutComputedDefineMutableBuilder[Self <: KnockoutComputedDefine[_], T] (val x: Self with KnockoutComputedDefine[T]) extends AnyVal {
+  implicit class KnockoutComputedDefineMutableBuilder[Self <: KnockoutComputedDefine[?], T] (val x: Self & KnockoutComputedDefine[T]) extends AnyVal {
     
     @scala.inline
     def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])

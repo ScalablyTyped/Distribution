@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionProperties extends StObject {
   
   /**
     * The duration for which data must be stored in the magnetic store. 
     */
-  var MagneticStoreRetentionPeriodInDays: typings.awsSdk.timestreamwriteMod.MagneticStoreRetentionPeriodInDays = js.native
+  var MagneticStoreRetentionPeriodInDays: typings.awsSdk.timestreamwriteMod.MagneticStoreRetentionPeriodInDays
   
   /**
     * The duration for which data must be stored in the memory store. 
     */
-  var MemoryStoreRetentionPeriodInHours: typings.awsSdk.timestreamwriteMod.MemoryStoreRetentionPeriodInHours = js.native
+  var MemoryStoreRetentionPeriodInHours: typings.awsSdk.timestreamwriteMod.MemoryStoreRetentionPeriodInHours
 }
 object RetentionProperties {
   

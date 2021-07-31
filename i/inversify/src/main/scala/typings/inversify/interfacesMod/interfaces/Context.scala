@@ -2,23 +2,21 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  def addPlan(plan: Plan): Unit = js.native
+  def addPlan(plan: Plan): Unit
   
-  var container: Container = js.native
+  var container: Container
   
-  var currentRequest: Request = js.native
+  var currentRequest: Request
   
-  var id: Double = js.native
+  var id: Double
   
-  var plan: Plan = js.native
+  var plan: Plan
   
-  def setCurrentRequest(request: Request): Unit = js.native
+  def setCurrentRequest(request: Request): Unit
 }
 object Context {
   

@@ -2,30 +2,28 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template to map fields of ApplicationDataTransfer resource.
   */
-@js.native
 trait SchemaApplicationDataTransfer extends StObject {
   
   /**
     * The application&#39;s ID.
     */
-  var applicationId: js.UndefOr[String] = js.native
+  var applicationId: js.UndefOr[String] = js.undefined
   
   /**
     * The transfer parameters for the application. These parameters are used to
     * select the data which will get transfered in context of this application.
     */
-  var applicationTransferParams: js.UndefOr[js.Array[SchemaApplicationTransferParam]] = js.native
+  var applicationTransferParams: js.UndefOr[js.Array[SchemaApplicationTransferParam]] = js.undefined
   
   /**
     * Current status of transfer for this application. (Read-only)
     */
-  var applicationTransferStatus: js.UndefOr[String] = js.native
+  var applicationTransferStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaApplicationDataTransfer {
   

@@ -22,18 +22,17 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a paragraph fragment.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleParagraphView
-  extends XAccessibleEditableText
+  extends StObject
      with XAccessibleContext
      with XAccessibleComponent
+     with XAccessibleEditableText
      with XAccessibleSelection
      with XAccessibleEventBroadcaster
      with XAccessibleTextAttributes

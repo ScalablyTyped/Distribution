@@ -3,15 +3,13 @@ package typings.baseui.anon
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemAny extends StObject {
   
-  var event: typings.std.Event | KeyboardEvent = js.native
+  var event: typings.std.Event | KeyboardEvent
   
-  var item: js.Any = js.native
+  var item: js.Any
 }
 object ItemAny {
   

@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("normalizr", "denormalize")
+  @JSImport("normalizr", JSImport.Namespace)
   @js.native
-  def denormalize(input: js.Any, schema: Schema_[_], entities: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("normalizr", "normalize")
-  @js.native
-  def normalize[T, E, R](data: js.Any, schema: Schema_[T]): NormalizedSchema[E, R] = js.native
+  @scala.inline
+  def denormalize(input: js.Any, schema: Schema_[js.Any], entities: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("denormalize")(input.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def normalize[T, E, R](data: js.Any, schema: Schema_[T]): NormalizedSchema[E, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[NormalizedSchema[E, R]]
+  
   trait NormalizedSchema[E, R] extends StObject {
     
-    var entities: E = js.native
+    var entities: E
     
-    var result: R = js.native
+    var result: R
   }
   object NormalizedSchema {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NormalizedSchemaMutableBuilder[Self <: NormalizedSchema[_, _], E, R] (val x: Self with (NormalizedSchema[E, R])) extends AnyVal {
+    implicit class NormalizedSchemaMutableBuilder[Self <: NormalizedSchema[?, ?], E, R] (val x: Self & (NormalizedSchema[E, R])) extends AnyVal {
       
       @scala.inline
       def setEntities(value: E): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
@@ -45,12 +45,13 @@ object mod {
   
   @js.native
   trait SchemaArray[T]
-    extends Array[Schema_[T]]
+    extends StObject
+       with Array[Schema_[T]]
        with Schema_[T]
   
-  @js.native
   trait SchemaObject[T]
-    extends /* key */ StringDictionary[SchemaValue[T]]
+    extends StObject
+       with /* key */ StringDictionary[SchemaValue[T]]
        with Schema_[T]
   object SchemaObject {
     
@@ -77,53 +78,81 @@ object mod {
   
   object schema {
     
-    @js.native
     trait Array[T] extends StObject {
       
-      def define(definition: Schema_[_]): Unit = js.native
+      def define(definition: Schema_[js.Any]): Unit
     }
     object Array {
       
       @scala.inline
-      def apply[T](define: Schema_[_] => Unit): typings.normalizr.mod.schema.Array[T] = {
+      def apply[T](define: Schema_[js.Any] => Unit): typings.normalizr.mod.schema.Array[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[typings.normalizr.mod.schema.Array[T]]
       }
       
       @scala.inline
-      implicit class ArrayMutableBuilder[Self <: typings.normalizr.mod.schema.Array[_], T] (val x: Self with typings.normalizr.mod.schema.Array[T]) extends AnyVal {
+      implicit class ArrayMutableBuilder[Self <: typings.normalizr.mod.schema.Array[?], T] (val x: Self & typings.normalizr.mod.schema.Array[T]) extends AnyVal {
         
         @scala.inline
-        def setDefine(value: Schema_[_] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
-    @js.native
-    trait Entity[T] extends Schema_[T] {
+    trait Entity[T]
+      extends StObject
+         with Schema_[T] {
       
-      def _processStrategy(value: js.Any, parent: js.Any, key: String): T = js.native
+      def _processStrategy(value: js.Any, parent: js.Any, key: String): T
       @JSName("_processStrategy")
-      var _processStrategy_Original: StrategyFunction[T] = js.native
+      var _processStrategy_Original: StrategyFunction[T]
       
-      def define(definition: Schema_[_]): Unit = js.native
+      def define(definition: Schema_[js.Any]): Unit
       
-      def getId(value: js.Any, parent: js.Any, key: String): String = js.native
+      def getId(value: js.Any, parent: js.Any, key: String): String
       @JSName("getId")
-      var getId_Original: SchemaFunction = js.native
+      var getId_Original: SchemaFunction
       
-      var key: String = js.native
+      var key: String
+    }
+    object Entity {
+      
+      @scala.inline
+      def apply[T](
+        _processStrategy: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T,
+        define: Schema_[js.Any] => Unit,
+        getId: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String,
+        key: String
+      ): Entity[T] = {
+        val __obj = js.Dynamic.literal(_processStrategy = js.Any.fromFunction3(_processStrategy), define = js.Any.fromFunction1(define), getId = js.Any.fromFunction3(getId), key = key.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Entity[T]]
+      }
+      
+      @scala.inline
+      implicit class EntityMutableBuilder[Self <: Entity[?], T] (val x: Self & Entity[T]) extends AnyVal {
+        
+        @scala.inline
+        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setGetId(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String): Self = StObject.set(x, "getId", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def set_processStrategy(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T): Self = StObject.set(x, "_processStrategy", js.Any.fromFunction3(value))
+      }
     }
     
-    @js.native
     trait EntityOptions[T] extends StObject {
       
-      var fallbackStrategy: js.UndefOr[FallbackFunction[T]] = js.native
+      var fallbackStrategy: js.UndefOr[FallbackFunction[T]] = js.undefined
       
-      var idAttribute: js.UndefOr[String | SchemaFunction] = js.native
+      var idAttribute: js.UndefOr[String | SchemaFunction] = js.undefined
       
-      var mergeStrategy: js.UndefOr[MergeFunction] = js.native
+      var mergeStrategy: js.UndefOr[MergeFunction] = js.undefined
       
-      var processStrategy: js.UndefOr[StrategyFunction[T]] = js.native
+      var processStrategy: js.UndefOr[StrategyFunction[T]] = js.undefined
     }
     object EntityOptions {
       
@@ -134,7 +163,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class EntityOptionsMutableBuilder[Self <: EntityOptions[_], T] (val x: Self with EntityOptions[T]) extends AnyVal {
+      implicit class EntityOptionsMutableBuilder[Self <: EntityOptions[?], T] (val x: Self & EntityOptions[T]) extends AnyVal {
         
         @scala.inline
         def setFallbackStrategy(value: (/* key */ String, /* schema */ Entity[T]) => T): Self = StObject.set(x, "fallbackStrategy", js.Any.fromFunction2(value))
@@ -169,24 +198,25 @@ object mod {
     
     type MergeFunction = js.Function2[/* entityA */ js.Any, /* entityB */ js.Any, js.Any]
     
-    @js.native
-    trait Object[T] extends Schema_[T] {
+    trait Object[T]
+      extends StObject
+         with Schema_[T] {
       
-      def define(definition: Schema_[_]): Unit = js.native
+      def define(definition: Schema_[js.Any]): Unit
     }
     object Object {
       
       @scala.inline
-      def apply[T](define: Schema_[_] => Unit): Object[T] = {
+      def apply[T](define: Schema_[js.Any] => Unit): Object[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Object[T]]
       }
       
       @scala.inline
-      implicit class ObjectMutableBuilder[Self <: Object[_], T] (val x: Self with Object[T]) extends AnyVal {
+      implicit class ObjectMutableBuilder[Self <: Object[?], T] (val x: Self & Object[T]) extends AnyVal {
         
         @scala.inline
-        def setDefine(value: Schema_[_] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
@@ -194,45 +224,47 @@ object mod {
     
     type StrategyFunction[T] = js.Function3[/* value */ js.Any, /* parent */ js.Any, /* key */ String, T]
     
-    @js.native
-    trait Union[T] extends Schema_[T] {
+    trait Union[T]
+      extends StObject
+         with Schema_[T] {
       
-      def define(definition: Schema_[_]): Unit = js.native
+      def define(definition: Schema_[js.Any]): Unit
     }
     object Union {
       
       @scala.inline
-      def apply[T](define: Schema_[_] => Unit): Union[T] = {
+      def apply[T](define: Schema_[js.Any] => Unit): Union[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Union[T]]
       }
       
       @scala.inline
-      implicit class UnionMutableBuilder[Self <: Union[_], T] (val x: Self with Union[T]) extends AnyVal {
+      implicit class UnionMutableBuilder[Self <: Union[?], T] (val x: Self & Union[T]) extends AnyVal {
         
         @scala.inline
-        def setDefine(value: Schema_[_] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
-    @js.native
-    trait Values[T] extends Schema_[T] {
+    trait Values[T]
+      extends StObject
+         with Schema_[T] {
       
-      def define(definition: Schema_[_]): Unit = js.native
+      def define(definition: Schema_[js.Any]): Unit
     }
     object Values {
       
       @scala.inline
-      def apply[T](define: Schema_[_] => Unit): Values[T] = {
+      def apply[T](define: Schema_[js.Any] => Unit): Values[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Values[T]]
       }
       
       @scala.inline
-      implicit class ValuesMutableBuilder[Self <: Values[_], T] (val x: Self with Values[T]) extends AnyVal {
+      implicit class ValuesMutableBuilder[Self <: Values[?], T] (val x: Self & Values[T]) extends AnyVal {
         
         @scala.inline
-        def setDefine(value: Schema_[_] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
   }

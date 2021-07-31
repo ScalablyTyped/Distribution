@@ -4,19 +4,17 @@ import typings.bnJs.mod.^
 import typings.web3Utils.mod._Mixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait R extends StObject {
     
-    var r: String = js.native
+    var r: String
     
-    var s: String = js.native
+    var s: String
     
-    var v: Double = js.native
+    var v: Double
   }
   object R {
     
@@ -40,12 +38,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait T extends _Mixed {
+  trait T
+    extends StObject
+       with _Mixed {
     
-    var t: String = js.native
+    var t: String
     
-    var v: String | ^ | Double = js.native
+    var v: String | ^ | Double
   }
   object T {
     
@@ -66,12 +65,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Type extends _Mixed {
+  trait Type
+    extends StObject
+       with _Mixed {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Type {
     

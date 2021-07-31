@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DataPivotHierarchyCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var field: js.UndefOr[PivotFieldLoadOptions] = js.native
+  var field: js.UndefOr[PivotFieldLoadOptions] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[Boolean] = js.native
+  var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAs: js.UndefOr[Boolean] = js.native
+  var showAs: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait DataPivotHierarchyCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var summarizeBy: js.UndefOr[Boolean] = js.native
+  var summarizeBy: js.UndefOr[Boolean] = js.undefined
 }
 object DataPivotHierarchyCollectionLoadOptions {
   

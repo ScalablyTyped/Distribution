@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEventTypesResult extends StObject {
   
   /**
     * Information about each event, including service name, resource type, event ID, and event name.
     */
-  var EventTypes: js.UndefOr[EventTypeBatch] = js.native
+  var EventTypes: js.UndefOr[EventTypeBatch] = js.undefined
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.NextToken] = js.undefined
 }
 object ListEventTypesResult {
   

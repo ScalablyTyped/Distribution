@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,17 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The data that is stored in this container may contain different types.
   */
-@js.native
-trait XDataSequence extends XInterface {
+trait XDataSequence
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  val Data: SafeArray[_] = js.native
+  val Data: SafeArray[js.Any]
   
   /** returns the (UI) range representation string used by this {@link XDataSequence} . */
-  val SourceRangeRepresentation: String = js.native
+  val SourceRangeRepresentation: String
   
   /**
     * creates a label that describes the origin of this data sequence.
@@ -37,13 +37,13 @@ trait XDataSequence extends XInterface {
     * @param eLabelOrigin denotes what part of the range should be used for label generation. If you have, e.g., one cell only, the parameter COLUMN enables y
     * @returns Suitable labels for the given sequence depending on the range of the sequence and the parameter `eLabelOrigin` passed. In a spreadsheet this woul
     */
-  def generateLabel(eLabelOrigin: LabelOrigin): SafeArray[String] = js.native
+  def generateLabel(eLabelOrigin: LabelOrigin): SafeArray[String]
   
   /**
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  def getData(): SafeArray[_] = js.native
+  def getData(): SafeArray[js.Any]
   
   /**
     * returns a number format key for the value at the given index in the data sequence. If nIndex is -1, a key for the entire sequence should be returned,
@@ -54,20 +54,20 @@ trait XDataSequence extends XInterface {
     * The number format key must be valid for the {@link com.sun.star.util.XNumberFormatsSupplier} given by the {@link XDataProvider} , or 0 which is
     * assumed to be always valid.
     */
-  def getNumberFormatKeyByIndex(nIndex: Double): Double = js.native
+  def getNumberFormatKeyByIndex(nIndex: Double): Double
   
   /** returns the (UI) range representation string used by this {@link XDataSequence} . */
-  def getSourceRangeRepresentation(): String = js.native
+  def getSourceRangeRepresentation(): String
 }
 object XDataSequence {
   
   @scala.inline
   def apply(
-    Data: SafeArray[_],
+    Data: SafeArray[js.Any],
     SourceRangeRepresentation: String,
     acquire: () => Unit,
     generateLabel: LabelOrigin => SafeArray[String],
-    getData: () => SafeArray[_],
+    getData: () => SafeArray[js.Any],
     getNumberFormatKeyByIndex: Double => Double,
     getSourceRangeRepresentation: () => String,
     queryInterface: `type` => js.Any,
@@ -81,13 +81,13 @@ object XDataSequence {
   implicit class XDataSequenceMutableBuilder[Self <: XDataSequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: SafeArray[_]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    def setData(value: SafeArray[js.Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = StObject.set(x, "generateLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetData(value: () => SafeArray[_]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    def setGetData(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetNumberFormatKeyByIndex(value: Double => Double): Self = StObject.set(x, "getNumberFormatKeyByIndex", js.Any.fromFunction1(value))

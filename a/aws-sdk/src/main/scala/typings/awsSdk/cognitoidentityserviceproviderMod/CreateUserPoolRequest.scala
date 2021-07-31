@@ -2,116 +2,114 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserPoolRequest extends StObject {
   
   /**
     * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
     */
-  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.native
+  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.undefined
   
   /**
     * The configuration for AdminCreateUser requests.
     */
-  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.native
+  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.undefined
   
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username.
     */
-  var AliasAttributes: js.UndefOr[AliasAttributesListType] = js.native
+  var AliasAttributes: js.UndefOr[AliasAttributesListType] = js.undefined
   
   /**
     * The attributes to be auto-verified. Possible values: email, phone_number.
     */
-  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.native
+  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
     * The device configuration.
     */
-  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.native
+  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
   
   /**
     * The email configuration.
     */
-  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.native
+  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.undefined
   
   /**
     * A string representing the email verification message.
     */
-  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.native
+  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
     * A string representing the email verification subject.
     */
-  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.native
+  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
     * The Lambda trigger configuration information for the new user pool.  In a push model, event sources (such as Amazon S3 and custom applications) need permission to invoke a function. So you will need to make an extra call to add permission for these event sources to invoke your Lambda function.  For more information on using the Lambda API to add permission, see  AddPermission .  For adding permission using the AWS CLI, see  add-permission . 
     */
-  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.native
+  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
     * Specifies MFA configuration details.
     */
-  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.native
+  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   
   /**
     * The policies associated with the new user pool.
     */
-  var Policies: js.UndefOr[UserPoolPolicyType] = js.native
+  var Policies: js.UndefOr[UserPoolPolicyType] = js.undefined
   
   /**
     * A string used to name the user pool.
     */
-  var PoolName: UserPoolNameType = js.native
+  var PoolName: UserPoolNameType
   
   /**
     * An array of schema attributes for the new user pool. These attributes can be standard or custom attributes.
     */
-  var Schema: js.UndefOr[SchemaAttributesListType] = js.native
+  var Schema: js.UndefOr[SchemaAttributesListType] = js.undefined
   
   /**
     * A string representing the SMS authentication message.
     */
-  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * The SMS configuration.
     */
-  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.native
+  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
   
   /**
     * A string representing the SMS verification message.
     */
-  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * Used to enable advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
     */
-  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.native
+  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
   
   /**
     * The tag keys and values to assign to the user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria.
     */
-  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.native
+  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
   
   /**
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up.
     */
-  var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.native
+  var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.undefined
   
   /**
     * You can choose to set case sensitivity on the username input for the selected sign-in option. For example, when this is set to False, users will be able to sign in using either "username" or "Username". This configuration is immutable once it has been set. For more information, see UsernameConfigurationType.
     */
-  var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.native
+  var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.undefined
   
   /**
     * The template for the verification message that the user sees when the app requests permission to access the user's information.
     */
-  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.native
+  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.undefined
 }
 object CreateUserPoolRequest {
   

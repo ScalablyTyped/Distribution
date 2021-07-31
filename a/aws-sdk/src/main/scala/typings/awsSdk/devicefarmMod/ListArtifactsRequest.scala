@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListArtifactsRequest extends StObject {
   
   /**
     * The run, job, suite, or test ARN.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The artifacts' type. Allowed values include:   FILE   LOG   SCREENSHOT  
     */
-  var `type`: ArtifactCategory = js.native
+  var `type`: ArtifactCategory
 }
 object ListArtifactsRequest {
   

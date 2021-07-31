@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by this interface.
   * @see com.sun.star.ui.dialogs.FilePicker
   */
-@js.native
-trait XFilePickerControlAccess extends XFilePicker {
+trait XFilePickerControlAccess
+  extends StObject
+     with XFilePicker {
   
   /**
     * Enables or disables a control.
@@ -24,7 +24,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.CommonFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
-  def enableControl(ControlId: Double, bEnable: Boolean): Unit = js.native
+  def enableControl(ControlId: Double, bEnable: Boolean): Unit
   
   /**
     * Returns the label of the specified element.
@@ -33,7 +33,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.CommonFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
-  def getLabel(aControlId: Double): String = js.native
+  def getLabel(aControlId: Double): String
   
   /**
     * Get the value of an additional element within a {@link FilePicker}
@@ -44,7 +44,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ControlActions
     */
-  def getValue(aControlId: Double, aControlAction: Double): js.Any = js.native
+  def getValue(aControlId: Double, aControlAction: Double): js.Any
   
   /**
     * Set the label of the specified element. If the specified element doesn't support setting a label, this method has no effect.
@@ -53,7 +53,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.CommonFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
-  def setLabel(aControlId: Double, aLabel: String): Unit = js.native
+  def setLabel(aControlId: Double, aLabel: String): Unit
   
   /**
     * Set the value of an additional element within a {@link FilePicker} .
@@ -64,7 +64,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ControlActions
     */
-  def setValue(ControlId: Double, aControlAction: Double, aValue: js.Any): Unit = js.native
+  def setValue(ControlId: Double, aControlAction: Double, aValue: js.Any): Unit
 }
 object XFilePickerControlAccess {
   

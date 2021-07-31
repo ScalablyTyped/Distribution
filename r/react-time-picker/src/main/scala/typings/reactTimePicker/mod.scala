@@ -6,56 +6,57 @@ import typings.reactTimePicker.reactTimePickerStrings.second
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-time-picker", JSImport.Default)
+  @JSImport("react-time-picker", JSImport.Namespace)
   @js.native
-  def default(props: TimePickerProps[TimePickerValue]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: TimePickerProps[TimePickerValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* Inlined std.Omit<react-clock.react-clock.ClockProps<react-clock.react-clock.ClockValue>, 'value' | 'className'> */
-  @js.native
   trait TimePickerClockProps extends StObject {
     
-    var hourHandLength: js.UndefOr[Double] = js.native
+    var hourHandLength: js.UndefOr[Double] = js.undefined
     
-    var hourHandOppositeLength: js.UndefOr[Double] = js.native
+    var hourHandOppositeLength: js.UndefOr[Double] = js.undefined
     
-    var hourHandWidth: js.UndefOr[Double] = js.native
+    var hourHandWidth: js.UndefOr[Double] = js.undefined
     
-    var hourMarksLength: js.UndefOr[Double] = js.native
+    var hourMarksLength: js.UndefOr[Double] = js.undefined
     
-    var hourMarksWidth: js.UndefOr[Double] = js.native
+    var hourMarksWidth: js.UndefOr[Double] = js.undefined
     
-    var minuteHandLength: js.UndefOr[Double] = js.native
+    var minuteHandLength: js.UndefOr[Double] = js.undefined
     
-    var minuteHandOppositeLength: js.UndefOr[Double] = js.native
+    var minuteHandOppositeLength: js.UndefOr[Double] = js.undefined
     
-    var minuteHandWidth: js.UndefOr[Double] = js.native
+    var minuteHandWidth: js.UndefOr[Double] = js.undefined
     
-    var minuteMarksLength: js.UndefOr[Double] = js.native
+    var minuteMarksLength: js.UndefOr[Double] = js.undefined
     
-    var minuteMarksWidth: js.UndefOr[Double] = js.native
+    var minuteMarksWidth: js.UndefOr[Double] = js.undefined
     
-    var renderHourMarks: js.UndefOr[Boolean] = js.native
+    var renderHourMarks: js.UndefOr[Boolean] = js.undefined
     
-    var renderMinuteHand: js.UndefOr[Boolean] = js.native
+    var renderMinuteHand: js.UndefOr[Boolean] = js.undefined
     
-    var renderMinuteMarks: js.UndefOr[Boolean] = js.native
+    var renderMinuteMarks: js.UndefOr[Boolean] = js.undefined
     
-    var renderNumbers: js.UndefOr[Boolean] = js.native
+    var renderNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var renderSecondHand: js.UndefOr[Boolean] = js.native
+    var renderSecondHand: js.UndefOr[Boolean] = js.undefined
     
-    var secondHandLength: js.UndefOr[Double] = js.native
+    var secondHandLength: js.UndefOr[Double] = js.undefined
     
-    var secondHandOppositeLength: js.UndefOr[Double] = js.native
+    var secondHandOppositeLength: js.UndefOr[Double] = js.undefined
     
-    var secondHandWidth: js.UndefOr[Double] = js.native
+    var secondHandWidth: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object TimePickerClockProps {
     
@@ -184,172 +185,173 @@ object mod {
     }
   }
   
-  @js.native
-  trait TimePickerProps[T] extends TimePickerClockProps {
+  trait TimePickerProps[T]
+    extends StObject
+       with TimePickerClockProps {
     
     /**
       * aria-label for the AM/PM select input.
       */
-    var amPmAriaLabel: js.UndefOr[String] = js.native
+    var amPmAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Automatically focuses the input on mount.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name(s) that will be added along with "react-time-picker" to the main React-Time-Picker <div> element.
       */
-    var className: js.UndefOr[String | js.Array[String]] = js.native
+    var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * aria-label for the clear button.
       */
-    var clearAriaLabel: js.UndefOr[String] = js.native
+    var clearAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Content of the clear button. Setting the value explicitly to null will hide the icon.
       */
     var clearIcon: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
     /**
       * aria-label for the clock button.
       */
-    var clockAriaLabel: js.UndefOr[String] = js.native
+    var clockAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Class name(s) that will be added along with "react-clock" to the main React-Clock <time> element.
       */
-    var clockClassName: js.UndefOr[String | js.Array[String]] = js.native
+    var clockClassName: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Content of the clock button. Setting the value explicitly to null will hide the icon.
       */
     var clockIcon: js.UndefOr[
         String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether to close the clock on value selection.
       * @default true
       */
-    var closeClock: js.UndefOr[Boolean] = js.native
+    var closeClock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set to true, will remove the clock and the button toggling its visibility.
       * @default false
       */
-    var disableClock: js.UndefOr[Boolean] = js.native
+    var disableClock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the time picker should be disabled.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Input format based on Unicode Technical Standard #35.
       * Supported values are: H, HH, h, hh, m, mm, s, ss, a.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * aria-label for the hour input.
       */
-    var hourAriaLabel: js.UndefOr[String] = js.native
+    var hourAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * placeholder for the hour input.
       * @default "--"
       */
-    var hourPlaceholder: js.UndefOr[String] = js.native
+    var hourPlaceholder: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the clock should be opened.
       * @default false
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Locale that should be used by the time picker and the clock. Can be any IETF language tag.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
       * How detailed time picking shall be. Can be "hour", "minute" or "second".
       * @default "minute"
       */
-    var maxDetail: js.UndefOr[hour | minute | second] = js.native
+    var maxDetail: js.UndefOr[hour | minute | second] = js.undefined
     
     /**
       * Maximum time that the user can select.
       */
-    var maxTime: js.UndefOr[T] = js.native
+    var maxTime: js.UndefOr[T] = js.undefined
     
     /**
       * Minimum date that the user can select.
       */
-    var minTime: js.UndefOr[T] = js.native
+    var minTime: js.UndefOr[T] = js.undefined
     
     /**
       * aria-label for the minute input.
       */
-    var minuteAriaLabel: js.UndefOr[String] = js.native
+    var minuteAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * placeholder for the minute input.
       * @default "--"
       */
-    var minutePlaceholder: js.UndefOr[String] = js.native
+    var minutePlaceholder: js.UndefOr[String] = js.undefined
     
     /**
       * Input name.
       * @default "time"
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * aria-label for the native time input.
       */
-    var nativeInputAriaLabel: js.UndefOr[String] = js.native
+    var nativeInputAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Function called when the user picks a valid time.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
     
     /**
       * Function called when the clock closes.
       */
-    var onClockClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClockClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function called when the clock opens.
       */
-    var onClockOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClockOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Whether date input should be required.
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * aria-label for the second input.
       */
-    var secondAriaLabel: js.UndefOr[String] = js.native
+    var secondAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * placeholder for the second input.
       * @default "--"
       */
-    var secondPlaceholder: js.UndefOr[String] = js.native
+    var secondPlaceholder: js.UndefOr[String] = js.undefined
     
     /**
       * Input value.
       */
-    var value: T = js.native
+    var value: T
   }
   object TimePickerProps {
     
@@ -360,7 +362,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TimePickerPropsMutableBuilder[Self <: TimePickerProps[_], T] (val x: Self with TimePickerProps[T]) extends AnyVal {
+    implicit class TimePickerPropsMutableBuilder[Self <: TimePickerProps[?], T] (val x: Self & TimePickerProps[T]) extends AnyVal {
       
       @scala.inline
       def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])

@@ -5,7 +5,6 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait ParagraphInfo extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ParagraphInfo extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var bulletType: String = js.native
+  var bulletType: String
   
   /**
     *
@@ -33,7 +31,7 @@ trait ParagraphInfo extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     *
@@ -42,7 +40,7 @@ trait ParagraphInfo extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var listType: ListType | None | Number | Bullet = js.native
+  var listType: ListType | None | Number | Bullet
   
   /**
     *
@@ -51,7 +49,7 @@ trait ParagraphInfo extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any = js.native
+  var numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any
 }
 object ParagraphInfo {
   

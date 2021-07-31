@@ -2,19 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenRect extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var screenX: Double = js.native
+  var screenX: Double
   
-  var screenY: Double = js.native
+  var screenY: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object ScreenRect {
   

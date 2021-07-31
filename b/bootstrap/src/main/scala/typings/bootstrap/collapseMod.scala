@@ -6,33 +6,68 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
   
   @JSImport("bootstrap/js/dist/collapse", JSImport.Default)
   @js.native
-  class default protected () extends Collapse {
+  class default protected ()
+    extends StObject
+       with Collapse {
     def this(element: Element) = this()
     def this(element: Element, options: PartialOptionsParent) = this()
+    
+    /**
+      * Destroys an element's collapse.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Hides a collapsible element. Returns to the caller before the collapsible
+      * element has actually been hidden (e.g., before the hidden.bs.collapse
+      * event occurs).
+      */
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /**
+      * Shows a collapsible element. Returns to the caller before the collapsible
+      * element has actually been shown (e.g., before the shown.bs.collapse event
+      * occurs).
+      */
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /**
+      * Toggles a collapsible element to shown or hidden. Returns to the caller
+      * before the collapsible element has actually been shown or hidden (i.e.
+      * before the shown.bs.collapse or hidden.bs.collapse event occurs).
+      */
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/collapse", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/collapse", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.collapseMod.Collapse.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.collapseMod.Collapse.Events & String] = js.native
       
-      /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.collapseMod.Collapse.Events.hidden with String = js.native
+      /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.collapseMod.Collapse.Events.hidden & String = js.native
       
-      /* "hide.bs.collapse" */ val hide: typings.bootstrap.collapseMod.Collapse.Events.hide with String = js.native
+      /* "hide.bs.collapse" */ val hide: typings.bootstrap.collapseMod.Collapse.Events.hide & String = js.native
       
-      /* "show.bs.collapse" */ val show: typings.bootstrap.collapseMod.Collapse.Events.show with String = js.native
+      /* "show.bs.collapse" */ val show: typings.bootstrap.collapseMod.Collapse.Events.show & String = js.native
       
-      /* "shown.bs.collapse" */ val shown: typings.bootstrap.collapseMod.Collapse.Events.shown with String = js.native
+      /* "shown.bs.collapse" */ val shown: typings.bootstrap.collapseMod.Collapse.Events.shown & String = js.native
     }
     
     /**
@@ -40,42 +75,39 @@ object collapseMod {
       * with a DOM element.
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/collapse", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Collapse = js.native
-    @JSImport("bootstrap/js/dist/collapse", "default.getInstance")
-    @js.native
-    def getInstance(element: Element, options: PartialOptionsParent): Collapse = js.native
+    @scala.inline
+    def getInstance(element: Element): Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Collapse]
+    @scala.inline
+    def getInstance(element: Element, options: PartialOptionsParent): Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Collapse]
   }
   
-  @js.native
   trait Collapse extends StObject {
     
     /**
       * Destroys an element's collapse.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Hides a collapsible element. Returns to the caller before the collapsible
       * element has actually been hidden (e.g., before the hidden.bs.collapse
       * event occurs).
       */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**
       * Shows a collapsible element. Returns to the caller before the collapsible
       * element has actually been shown (e.g., before the shown.bs.collapse event
       * occurs).
       */
-    def show(): Unit = js.native
+    def show(): Unit
     
     /**
       * Toggles a collapsible element to shown or hidden. Returns to the caller
       * before the collapsible element has actually been shown or hidden (i.e.
       * before the shown.bs.collapse or hidden.bs.collapse event occurs).
       */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object Collapse {
     
@@ -96,25 +128,33 @@ object collapseMod {
         * user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * This event is fired immediately when the hide method has been called.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * This event fires immediately when the show instance method is called.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
     @scala.inline
@@ -133,7 +173,6 @@ object collapseMod {
       def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -144,14 +183,14 @@ object collapseMod {
         *
         * @default false
         */
-      var parent: String | Element | JQuery[HTMLElement] = js.native
+      var parent: String | Element | JQuery[HTMLElement]
       
       /**
         * Toggles the collapsible element on invocation
         *
         * @default true
         */
-      var toggle: Boolean = js.native
+      var toggle: Boolean
     }
     object Options {
       

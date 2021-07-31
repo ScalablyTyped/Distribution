@@ -4,15 +4,15 @@
 Typings are for version 1.4.5
 
 ## Library description:
-[![Build Status](https://secure.travis-ci.org/socketio/socket.io-client.svg?branch=master)](http://travis-ci.org/socketio/socket.io-client) [![Dependency Status](https://david-dm.org/socketio/socket.io-client.svg)](https://david-dm.org/socketio/socket.io-
+[![Build Status](https://github.com/socketio/socket.io-client/workflows/CI/badge.svg?branch=master)](https://github.com/socketio/socket.io-client/actions) [![Dependency Status](https://david-dm.org/socketio/socket.io-client.svg)](https://david-dm.org/sock
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socket.io-client |
 | Keywords           | realtime, framework, websocket, tcp, events, client |
-| # releases         | 10 |
-| # dependents       | 3816 |
-| # downloads        | 219264930 |
+| # releases         | 14 |
+| # dependents       | 3962 |
+| # downloads        | 234602659 |
 | # stars            | 111 |
 
 ## Links

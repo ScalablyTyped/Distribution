@@ -11,8 +11,8 @@ utility to return a react components display name
 | Full name          | react-display-name |
 | Keywords           | react, redux, getDisplayName |
 | # releases         | 2 |
-| # dependents       | 160 |
-| # downloads        | 9328393 |
+| # dependents       | 165 |
+| # downloads        | 11383717 |
 | # stars            | 0 |
 
 ## Links

@@ -2,46 +2,44 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreTableFromBackupInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) associated with the backup.
     */
-  var BackupArn: typings.awsSdk.dynamodbMod.BackupArn = js.native
+  var BackupArn: typings.awsSdk.dynamodbMod.BackupArn
   
   /**
     * The billing mode of the restored table.
     */
-  var BillingModeOverride: js.UndefOr[BillingMode] = js.native
+  var BillingModeOverride: js.UndefOr[BillingMode] = js.undefined
   
   /**
     * List of global secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
     */
-  var GlobalSecondaryIndexOverride: js.UndefOr[GlobalSecondaryIndexList] = js.native
+  var GlobalSecondaryIndexOverride: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
   
   /**
     * List of local secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
     */
-  var LocalSecondaryIndexOverride: js.UndefOr[LocalSecondaryIndexList] = js.native
+  var LocalSecondaryIndexOverride: js.UndefOr[LocalSecondaryIndexList] = js.undefined
   
   /**
     * Provisioned throughput settings for the restored table.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[ProvisionedThroughput] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[ProvisionedThroughput] = js.undefined
   
   /**
     * The new server-side encryption settings for the restored table.
     */
-  var SSESpecificationOverride: js.UndefOr[SSESpecification] = js.native
+  var SSESpecificationOverride: js.UndefOr[SSESpecification] = js.undefined
   
   /**
     * The name of the new table to which the backup must be restored.
     */
-  var TargetTableName: TableName = js.native
+  var TargetTableName: TableName
 }
 object RestoreTableFromBackupInput {
   

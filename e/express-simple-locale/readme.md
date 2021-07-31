@@ -10,9 +10,9 @@ A simple Express middleware to guess the short-locale of a user.
 | ------------------ | :-------------: |
 | Full name          | express-simple-locale |
 | Keywords           | express, middleware, locale, language, i18n |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 56882 |
+| # downloads        | 52048 |
 | # stars            | 0 |
 
 ## Links

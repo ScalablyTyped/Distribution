@@ -2,24 +2,22 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * interface to define the actions on a control notification
   */
-@js.native
 trait ControlNotificationAction extends StObject {
   
   /**
     * Array of functions. The corresponding actions for the message.
     */
-  var actions: js.Array[js.Function0[Unit]] = js.native
+  var actions: js.Array[js.Function0[Unit]]
   
   /**
     * The body message of the notification to be displayed to the user. Limit your message to 100 characters for optimal user experience.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object ControlNotificationAction {
   

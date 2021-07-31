@@ -2,17 +2,15 @@ package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandColumnRendererProps extends StObject {
   
-  var expandable: Boolean = js.native
+  var expandable: Boolean
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
-  var rowKey: String = js.native
+  var rowKey: String
 }
 object ExpandColumnRendererProps {
   

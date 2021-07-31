@@ -2,17 +2,15 @@ package typings.reactDocgenTypescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Description extends StObject {
     
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Description {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FileName extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var name: String = js.native
+    var name: String
   }
   object FileName {
     

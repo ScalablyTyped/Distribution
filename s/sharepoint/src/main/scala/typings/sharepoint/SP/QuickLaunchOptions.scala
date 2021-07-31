@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait QuickLaunchOptions extends StObject
 object QuickLaunchOptions extends StObject {
   
   @js.native
-  sealed trait defaultValue extends QuickLaunchOptions
+  sealed trait defaultValue
+    extends StObject
+       with QuickLaunchOptions
   
   @js.native
-  sealed trait off extends QuickLaunchOptions
+  sealed trait off
+    extends StObject
+       with QuickLaunchOptions
   
   @js.native
-  sealed trait on extends QuickLaunchOptions
+  sealed trait on
+    extends StObject
+       with QuickLaunchOptions
 }

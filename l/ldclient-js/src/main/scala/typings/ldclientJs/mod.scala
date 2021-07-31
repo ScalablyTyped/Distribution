@@ -6,10 +6,13 @@ import typings.ldclientJsCommon.mod.LDOptionsBase
 import typings.ldclientJsCommon.mod.LDUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ldclient-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // This is @ignored because TypeDoc does not show default exports correctly. We'll just explain
   // the export situation in the comment for initialize().
@@ -20,12 +23,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ldclient-js", "default.initialize")
-    @js.native
-    def initialize(envKey: String, user: LDUser): LDClient = js.native
-    @JSImport("ldclient-js", "default.initialize")
-    @js.native
-    def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = js.native
+    @scala.inline
+    def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+    @scala.inline
+    def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
     
     @JSImport("ldclient-js", "default.version")
     @js.native
@@ -34,23 +35,22 @@ object mod {
     def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ldclient-js", "createConsoleLogger")
-  @js.native
-  def createConsoleLogger(minimumLevel: String): LDLogger = js.native
+  @scala.inline
+  def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
   
-  @JSImport("ldclient-js", "initialize")
-  @js.native
-  def initialize(envKey: String, user: LDUser): LDClient = js.native
-  @JSImport("ldclient-js", "initialize")
-  @js.native
-  def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = js.native
+  @scala.inline
+  def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+  @scala.inline
+  def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
   
   @JSImport("ldclient-js", "version")
   @js.native
   val version: String = js.native
   
   @js.native
-  trait LDClient extends LDClientBase {
+  trait LDClient
+    extends StObject
+       with LDClientBase {
     
     /**
       * Allows you to wait until the client has received goals data from LaunchDarkly.
@@ -71,8 +71,9 @@ object mod {
     def waitUntilGoalsReady(): js.Promise[Unit] = js.native
   }
   
-  @js.native
-  trait LDOptions extends LDOptionsBase {
+  trait LDOptions
+    extends StObject
+       with LDOptionsBase {
     
     /**
       * Whether the client should make a request to LaunchDarkly for A/B testing goals.
@@ -80,7 +81,7 @@ object mod {
       * This is true by default, meaning that this request will be made on every page load.
       * Set it to false if you are not using A/B testing and want to skip the request.
       */
-    var fetchGoals: js.UndefOr[Boolean] = js.native
+    var fetchGoals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The signed user key for Secure Mode.
@@ -88,7 +89,7 @@ object mod {
       * For more information, see the JavaScript SDK Reference Guide on
       * [Secure mode](https://github.com/launchdarkly/js-client#secure-mode).
       */
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
   }
   object LDOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedThroughputOverride extends StObject {
   
   /**
     * Replica-specific read capacity units. If not specified, uses the source table's read capacity settings.
     */
-  var ReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var ReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 object ProvisionedThroughputOverride {
   

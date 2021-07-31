@@ -4,21 +4,19 @@ import typings.highcharts.highchartsStrings.auto
 import typings.highcharts.highchartsStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chart3dFrameTopOptions extends StObject {
   
   /**
     * (Highcharts) The color of the panel.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The thickness of the panel.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Whether to display the frame. Possible values are `true`,
@@ -26,7 +24,7 @@ trait Chart3dFrameTopOptions extends StObject {
     * `"default"` to display faces behind the data based on the axis layout,
     * ignoring the point of view.
     */
-  var visible: js.UndefOr[auto | default | Boolean] = js.native
+  var visible: js.UndefOr[auto | default | Boolean] = js.undefined
 }
 object Chart3dFrameTopOptions {
   

@@ -10,9 +10,9 @@ Light wrapper over redis_node with first class async & promise support.
 | ------------------ | :-------------: |
 | Full name          | async-redis |
 | Keywords           | redis, async, promise, es6 |
-| # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 1454542 |
+| # releases         | 2 |
+| # dependents       | 64 |
+| # downloads        | 1887741 |
 | # stars            | 1 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.agGrid.mainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/main", "GridOptionsWrapper")
@@ -88,7 +87,6 @@ object GridOptionsWrapper {
   @scala.inline
   def PROP_SUPPRESS_ROW_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_ROW_DRAG")(x.asInstanceOf[js.Any])
   
-  @JSImport("ag-grid/dist/lib/main", "GridOptionsWrapper.checkEventDeprecation")
-  @js.native
-  def checkEventDeprecation(eventName: String): Unit = js.native
+  @scala.inline
+  def checkEventDeprecation(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEventDeprecation")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -6,7 +6,6 @@ import typings.bezierJs.BezierJs.Point
 import typings.bezierJs.anon.Typeofutils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,59 +20,46 @@ object mod {
     */
   @JSImport("bezier-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Bezier {
+  class ^ protected ()
+    extends StObject
+       with Bezier {
     def this(points: js.Array[Double | Point]) = this()
     def this(p1: Point, p2: Point, p3: Point) = this()
     def this(p1: Point, p2: Point, p3: Point, p4: Point) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double) = this()
-    def this(
-      x1: Double,
-      y1: Double,
-      x2: Double,
-      y2: Double,
-      x3: Double,
-      y3: Double,
-      x4: js.UndefOr[scala.Nothing],
-      y4: Double
-    ) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double) = this()
+    def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Unit, y4: Double) = this()
   }
+  @JSImport("bezier-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("bezier-js", "cubicFromPoints")
-  @js.native
-  def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = js.native
-  @JSImport("bezier-js", "cubicFromPoints")
-  @js.native
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): Bezier = js.native
-  @JSImport("bezier-js", "cubicFromPoints")
-  @js.native
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = js.native
-  @JSImport("bezier-js", "cubicFromPoints")
-  @js.native
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = js.native
+  @scala.inline
+  def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  @scala.inline
+  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  @scala.inline
+  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  @scala.inline
+  def cubicFromPoints(S: Point, B: Point, E: Point, t: Unit, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
   
   /* static member */
-  @JSImport("bezier-js", "fromSVG")
-  @js.native
-  def fromSVG(svgString: String): Bezier = js.native
+  @scala.inline
+  def fromSVG(svgString: String): Bezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVG")(svgString.asInstanceOf[js.Any]).asInstanceOf[Bezier]
   
   /* static member */
-  @JSImport("bezier-js", "getABC")
-  @js.native
-  def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = js.native
+  @scala.inline
+  def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = (^.asInstanceOf[js.Dynamic].applyDynamic("getABC")(n.asInstanceOf[js.Any], S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[ABC]
   
   /* static member */
-  @JSImport("bezier-js", "getUtils")
-  @js.native
-  def getUtils(): Typeofutils = js.native
+  @scala.inline
+  def getUtils(): Typeofutils = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")().asInstanceOf[Typeofutils]
   
   /* static member */
-  @JSImport("bezier-js", "quadraticFromPoints")
-  @js.native
-  def quadraticFromPoints(p1: Point, p2: Point, p3: Point): Bezier = js.native
-  @JSImport("bezier-js", "quadraticFromPoints")
-  @js.native
-  def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): Bezier = js.native
+  @scala.inline
+  def quadraticFromPoints(p1: Point, p2: Point, p3: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  @scala.inline
+  def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
 }

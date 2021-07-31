@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DisMaxQuery")
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   A query that generates the union of documents produced by its subqueries such
   as termQuerys, phraseQuerys, boolQuerys, etc.
   */
-class DisMaxQuery () extends Query {
+class DisMaxQuery ()
+  extends StObject
+     with Query {
   
   /*
     The type of ejs object.  For internal use only.

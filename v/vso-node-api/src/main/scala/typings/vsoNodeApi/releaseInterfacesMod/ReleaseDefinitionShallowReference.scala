@@ -2,31 +2,29 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionShallowReference extends StObject {
   
   /**
     * Gets the links to related resources, APIs, and views for the release definition.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets the unique identifier of release definition.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets or sets the name of the release definition.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the REST API url to access the release definition.
     */
-  var url: String = js.native
+  var url: String
 }
 object ReleaseDefinitionShallowReference {
   

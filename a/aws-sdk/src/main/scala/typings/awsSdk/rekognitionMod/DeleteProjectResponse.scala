@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectResponse extends StObject {
   
   /**
     * The current status of the delete project operation.
     */
-  var Status: js.UndefOr[ProjectStatus] = js.native
+  var Status: js.UndefOr[ProjectStatus] = js.undefined
 }
 object DeleteProjectResponse {
   

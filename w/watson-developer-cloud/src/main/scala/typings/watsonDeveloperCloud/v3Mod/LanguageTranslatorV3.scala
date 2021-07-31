@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.v3Mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,8 +49,8 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createModel(params: CreateModelParams): js.Promise[_] | Unit = js.native
-  def createModel(params: CreateModelParams, callback: Callback[TranslationModel]): js.Promise[_] | Unit = js.native
+  def createModel(params: CreateModelParams): js.Promise[js.Any] | Unit = js.native
+  def createModel(params: CreateModelParams, callback: Callback[TranslationModel]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete model.
@@ -64,8 +63,8 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteModel(params: DeleteModelParams): js.Promise[_] | Unit = js.native
-  def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResult]): js.Promise[_] | Unit = js.native
+  def deleteModel(params: DeleteModelParams): js.Promise[js.Any] | Unit = js.native
+  def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResult]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get model details.
@@ -79,8 +78,8 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getModel(params: GetModelParams): js.Promise[_] | Unit = js.native
-  def getModel(params: GetModelParams, callback: Callback[TranslationModel]): js.Promise[_] | Unit = js.native
+  def getModel(params: GetModelParams): js.Promise[js.Any] | Unit = js.native
+  def getModel(params: GetModelParams, callback: Callback[TranslationModel]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * identification
@@ -96,8 +95,8 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def identify(params: IdentifyParams): js.Promise[_] | Unit = js.native
-  def identify(params: IdentifyParams, callback: Callback[IdentifiedLanguages]): js.Promise[_] | Unit = js.native
+  def identify(params: IdentifyParams): js.Promise[js.Any] | Unit = js.native
+  def identify(params: IdentifyParams, callback: Callback[IdentifiedLanguages]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List identifiable languages.
@@ -110,10 +109,10 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listIdentifiableLanguages(): js.Promise[_] | Unit = js.native
-  def listIdentifiableLanguages(params: js.UndefOr[scala.Nothing], callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
-  def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams): js.Promise[_] | Unit = js.native
-  def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams, callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
+  def listIdentifiableLanguages(): js.Promise[js.Any] | Unit = js.native
+  def listIdentifiableLanguages(params: Unit, callback: Callback[IdentifiableLanguages]): js.Promise[js.Any] | Unit = js.native
+  def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams): js.Promise[js.Any] | Unit = js.native
+  def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams, callback: Callback[IdentifiableLanguages]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List models.
@@ -131,10 +130,10 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listModels(): js.Promise[_] | Unit = js.native
-  def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
-  def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
-  def listModels(params: ListModelsParams, callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
+  def listModels(): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: Unit, callback: Callback[TranslationModels]): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: ListModelsParams): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: ListModelsParams, callback: Callback[TranslationModels]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * translation
@@ -155,6 +154,6 @@ trait LanguageTranslatorV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def translate(params: TranslateParams): js.Promise[_] | Unit = js.native
-  def translate(params: TranslateParams, callback: Callback[TranslationResult]): js.Promise[_] | Unit = js.native
+  def translate(params: TranslateParams): js.Promise[js.Any] | Unit = js.native
+  def translate(params: TranslateParams, callback: Callback[TranslationResult]): js.Promise[js.Any] | Unit = js.native
 }

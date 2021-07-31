@@ -10,19 +10,19 @@ import typings.std.SVGElement
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("domtagger", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = js.native
-  @JSImport("domtagger", JSImport.Namespace)
-  @js.native
-  def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = js.native
+  @scala.inline
+  def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement]]
+  @scala.inline
+  def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement]]
   
+  @JSImport("domtagger", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -31,7 +31,7 @@ object mod {
       * @param node The node
       * @param childNodes
       */
-    def any(node: Node, childNodes: js.Array[ChildNode]): js.Function1[/* markup */ js.Any, Unit] = js.native
+    def any(node: Node, childNodes: js.Array[ChildNode]): js.Function1[/* markup */ js.Any, Unit]
     
     /**
       * Called when the parsed result is an attribute node.
@@ -54,13 +54,13 @@ object mod {
       * }
       * ```
       */
-    def attribute(element: Element, name: String, attribute: Attr): js.Function1[/* value */ js.Any, Unit] = js.native
+    def attribute(element: Element, name: String, attribute: Attr): js.Function1[/* value */ js.Any, Unit]
     
     /**
       * Used to provide a custom algorithm for converting a template
       * to a valid HTML text.
       */
-    var convert: js.UndefOr[js.Function1[/* template */ TemplateStringsArray, String]] = js.native
+    var convert: js.UndefOr[js.Function1[/* template */ TemplateStringsArray, String]] = js.undefined
     
     /**
       * How to handle cases where content can only be some text.
@@ -76,14 +76,14 @@ object mod {
       * }
       * ```
       */
-    def text(node: Node): js.Function1[/* textContent */ js.Any, Unit] = js.native
+    def text(node: Node): js.Function1[/* textContent */ js.Any, Unit]
     
     /**
       * Used to postprocess the result of `convert`.
       *
       * @param transform The default transformation.
       */
-    var transform: js.UndefOr[js.Function1[/* markup */ String, String]] = js.native
+    var transform: js.UndefOr[js.Function1[/* markup */ String, String]] = js.undefined
     
     /**
       * The type of content to create.
@@ -92,7 +92,7 @@ object mod {
       *
       * @default 'html'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -138,11 +138,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait SVGOptions extends Options {
+  trait SVGOptions
+    extends StObject
+       with Options {
     
     @JSName("type")
-    var type_SVGOptions: svg = js.native
+    var type_SVGOptions: svg
   }
   object SVGOptions {
     
@@ -150,11 +151,10 @@ object mod {
     def apply(
       any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit],
       attribute: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit],
-      text: Node => js.Function1[/* textContent */ js.Any, Unit],
-      `type`: svg
+      text: Node => js.Function1[/* textContent */ js.Any, Unit]
     ): SVGOptions = {
       val __obj = js.Dynamic.literal(any = js.Any.fromFunction2(any), attribute = js.Any.fromFunction3(attribute), text = js.Any.fromFunction1(text))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("svg")
       __obj.asInstanceOf[SVGOptions]
     }
     

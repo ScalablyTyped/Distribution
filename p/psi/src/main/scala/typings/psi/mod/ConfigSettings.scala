@@ -2,17 +2,15 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigSettings extends StObject {
   
-  var emulatedFormFactor: String = js.native
+  var emulatedFormFactor: String
   
-  var locale: String = js.native
+  var locale: String
   
-  var onlyCategories: js.Object = js.native
+  var onlyCategories: js.Object
 }
 object ConfigSettings {
   

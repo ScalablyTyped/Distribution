@@ -2,22 +2,20 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepIntoRequest extends StObject {
   
   /**
     * Debugger will pause on the execution of the first async task which was scheduled
     * before next pause.
     */
-  var breakOnAsyncCall: js.UndefOr[Boolean] = js.native
+  var breakOnAsyncCall: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The skipList specifies location ranges that should be skipped on step into.
     */
-  var skipList: js.UndefOr[js.Array[LocationRange]] = js.native
+  var skipList: js.UndefOr[js.Array[LocationRange]] = js.undefined
 }
 object StepIntoRequest {
   

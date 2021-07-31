@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstanceEventStartTimeRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the event whose date and time you are modifying.
     */
-  var InstanceEventId: String = js.native
+  var InstanceEventId: String
   
   /**
     * The ID of the instance with the scheduled event.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
     * The new date and time when the event will take place.
     */
-  var NotBefore: DateTime = js.native
+  var NotBefore: DateTime
 }
 object ModifyInstanceEventStartTimeRequest {
   

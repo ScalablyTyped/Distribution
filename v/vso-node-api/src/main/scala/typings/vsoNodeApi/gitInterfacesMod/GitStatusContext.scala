@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitStatusContext extends StObject {
   
   /**
     * Genre of the status. Typically name of the service/tool generating the status, can be empty.
     */
-  var genre: String = js.native
+  var genre: String
   
   /**
     * Name identifier of the status, cannot be null or empty.
     */
-  var name: String = js.native
+  var name: String
 }
 object GitStatusContext {
   

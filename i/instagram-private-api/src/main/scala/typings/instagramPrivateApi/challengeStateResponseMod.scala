@@ -3,31 +3,29 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.accountRepositoryLoginResponseMod.AccountRepositoryLoginResponseLoggedInUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object challengeStateResponseMod {
   
-  @js.native
   trait ChallengeRepositoryStateResponseStepData extends StObject {
     
-    var big_blue_token: String = js.native
+    var big_blue_token: String
     
-    var choice: String = js.native
+    var choice: String
     
-    var contact_point: String = js.native
+    var contact_point: String
     
-    var email: String = js.native
+    var email: String
     
-    var fb_access_token: String = js.native
+    var fb_access_token: String
     
-    var form_type: String = js.native
+    var form_type: String
     
-    var google_oauth_token: String = js.native
+    var google_oauth_token: String
     
-    var resend_delay: Double = js.native
+    var resend_delay: Double
     
-    var security_code: String = js.native
+    var security_code: String
   }
   object ChallengeRepositoryStateResponseStepData {
     
@@ -79,22 +77,21 @@ object challengeStateResponseMod {
     }
   }
   
-  @js.native
   trait ChallengeStateResponse extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var logged_in_user: js.UndefOr[AccountRepositoryLoginResponseLoggedInUser] = js.native
+    var logged_in_user: js.UndefOr[AccountRepositoryLoginResponseLoggedInUser] = js.undefined
     
-    var nonce_code: String = js.native
+    var nonce_code: String
     
-    var status: String = js.native
+    var status: String
     
-    var step_data: ChallengeRepositoryStateResponseStepData = js.native
+    var step_data: ChallengeRepositoryStateResponseStepData
     
-    var step_name: String = js.native
+    var step_name: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object ChallengeStateResponse {
     

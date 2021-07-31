@@ -5,29 +5,29 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.transportMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilEntityTypeMod {
   
-  @JSImport("openfin/_v2/util/entity-type", "getEntityTypeHelpers")
+  @JSImport("openfin/_v2/util/entity-type", JSImport.Namespace)
   @js.native
-  def getEntityTypeHelpers(entityType: EntityType): EntityTypeHelpers = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("openfin/_v2/util/entity-type", "getInstanceByEntityType")
-  @js.native
-  def getInstanceByEntityType(entityType: String, wire: default, identity: Identity): js.Object = js.native
+  @scala.inline
+  def getEntityTypeHelpers(entityType: EntityType): EntityTypeHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntityTypeHelpers")(entityType.asInstanceOf[js.Any]).asInstanceOf[EntityTypeHelpers]
   
-  @js.native
+  @scala.inline
+  def getInstanceByEntityType(entityType: String, wire: default, identity: Identity): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByEntityType")(entityType.asInstanceOf[js.Any], wire.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait EntityTypeHelpers extends StObject {
     
-    var isExternal: Boolean = js.native
+    var isExternal: Boolean
     
-    var isFrame: Boolean = js.native
+    var isFrame: Boolean
     
-    var isView: Boolean = js.native
+    var isView: Boolean
     
-    var isWindow: Boolean = js.native
+    var isWindow: Boolean
   }
   object EntityTypeHelpers {
     

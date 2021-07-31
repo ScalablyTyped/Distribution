@@ -2,36 +2,34 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExclusionsPreviewRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment template for which the exclusions preview was requested.
     */
-  var assessmentTemplateArn: Arn = js.native
+  var assessmentTemplateArn: Arn
   
   /**
     * The locale into which you want to translate the exclusion's title, description, and recommendation.
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
   /**
     * You can use this parameter to indicate the maximum number of items you want in the response. The default value is 100. The maximum value is 500.
     */
-  var maxResults: js.UndefOr[ListMaxResults] = js.native
+  var maxResults: js.UndefOr[ListMaxResults] = js.undefined
   
   /**
     * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the GetExclusionsPreviewRequest action. Subsequent calls to the action fill nextToken in the request with the value of nextToken from the previous response to continue listing data.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The unique identifier associated of the exclusions preview.
     */
-  var previewToken: UUID = js.native
+  var previewToken: UUID
 }
 object GetExclusionsPreviewRequest {
   

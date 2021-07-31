@@ -2,10 +2,8 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemporalFilterSettings extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait TemporalFilterSettings extends StObject {
   - If the source content is noisy (it contains excessive digital artifacts), the filter cleans up the source.
   - If the source content is already clean, the filter tends to decrease the bitrate, especially when the rate control mode is QVBR.
     */
-  var PostFilterSharpening: js.UndefOr[TemporalFilterPostFilterSharpening] = js.native
+  var PostFilterSharpening: js.UndefOr[TemporalFilterPostFilterSharpening] = js.undefined
   
   /**
     * Choose a filter strength. We recommend a strength of 1 or 2. A higher strength might take out good information, resulting in an image that is overly soft.
     */
-  var Strength: js.UndefOr[TemporalFilterStrength] = js.native
+  var Strength: js.UndefOr[TemporalFilterStrength] = js.undefined
 }
 object TemporalFilterSettings {
   

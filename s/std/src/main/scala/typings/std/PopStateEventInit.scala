@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopStateEventInit extends EventInit {
+trait PopStateEventInit
+  extends StObject
+     with EventInit {
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
 }
 object PopStateEventInit {
   

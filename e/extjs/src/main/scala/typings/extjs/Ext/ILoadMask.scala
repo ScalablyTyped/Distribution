@@ -4,86 +4,86 @@ import typings.extjs.Ext.data.IAbstractStore
 import typings.extjs.Ext.data.IStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ @js.native
-trait ILoadMask extends IComponent {
+- typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait ILoadMask
+  extends StObject
+     with IComponent {
   
   /** [Method] Invoked after the Component is shown after onShow is called */
   @JSName("afterShow")
-  var afterShow_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterShow_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Changes the data store bound to this LoadMask
     * @param store Ext.data.Store The store to bind to this LoadMask
     */
-  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], Unit]] = js.native
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], Unit]] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
     * @param store Ext.data.AbstractStore The store to bind to
     */
-  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.native
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
   
   /** [Method] Center this Component in its container
     * @returns Ext.Component this
     */
   @JSName("center")
-  var center_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.native
+  var center_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Moves this floating Component into a constrain region
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
     */
   @JSName("doConstrain")
-  var doConstrain_ILoadMask: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], Unit]] = js.native
+  var doConstrain_ILoadMask: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Gets the current store instance
     * @returns Ext.data.AbstractStore The store, null if one does not exist.
     */
-  var getStore: js.UndefOr[js.Function0[IAbstractStore]] = js.native
+  var getStore: js.UndefOr[js.Function0[IAbstractStore]] = js.undefined
   
   /** [Method] Gets the listeners to bind to a new store
     * @param store Object
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], _]] = js.native
+  var getStoreListeners: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], js.Any]] = js.undefined
   
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
     * @returns Ext.Component this
     */
   @JSName("hide")
-  var hide_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.native
+  var hide_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Config Option] (String) */
-  var maskCls: js.UndefOr[java.lang.String] = js.native
+  var maskCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var msg: js.UndefOr[java.lang.String] = js.native
+  var msg: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var msgCls: js.UndefOr[java.lang.String] = js.native
+  var msgCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Template method it is called when a new store is bound to the current instance
     * @param store Ext.data.AbstractStore The store being bound
     * @param initial Boolean True if this store is being bound as initialization of the instance.
     */
-  var onBindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.native
+  var onBindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Possibly animates down to a target element  */
   @JSName("onHide")
-  var onHide_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Allows addition of behavior to the show operation  */
   @JSName("onShow")
-  var onShow_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow_ILoadMask: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Template method it is called when an existing store is unbound from the current instance
     * @param store Ext.data.AbstractStore The store being unbound
     * @param initial Boolean True if this store is being bound as initialization of the instance.
     */
-  var onUnbindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.native
+  var onUnbindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] This method is called internally by Ext ZIndexManager to signal that a floating Component has either been moved to th
     * @param active Boolean True to activate the Component, false to deactivate it.
@@ -92,43 +92,43 @@ trait ILoadMask extends IComponent {
   @JSName("setActive")
   var setActive_ILoadMask: js.UndefOr[
     js.Function2[/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Shows this Component rendering it first if autoRender or floating are true
     * @returns Ext.Component this
     */
   @JSName("show")
-  var show_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.native
+  var show_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Config Option] (Ext.data.Store) */
-  var store: js.UndefOr[IStore] = js.native
+  var store: js.UndefOr[IStore] = js.undefined
   
   /** [Config Option] (Ext.Component) */
-  var target: js.UndefOr[IComponent] = js.native
+  var target: js.UndefOr[IComponent] = js.undefined
   
   /** [Method] Sends this Component to the back of lower z index than any other visible windows
     * @returns Ext.Component this
     */
   @JSName("toBack")
-  var toBack_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.native
+  var toBack_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Brings this floating Component to the front of any other visible floating Components managed by the same ZIndexManag
     * @param preventFocus Boolean Specify true to prevent the Component from being focused.
     * @returns Ext.Component this
     */
   @JSName("toFront")
-  var toFront_ILoadMask: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[Boolean], IComponent]] = js.native
+  var toFront_ILoadMask: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[Boolean], IComponent]] = js.undefined
   
   /** [Method] Unbinds listeners from this component to the store
     * @param store Ext.data.AbstractStore The store to unbind from
     */
-  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.native
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useMsg: js.UndefOr[Boolean] = js.native
+  var useMsg: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useTargetEl: js.UndefOr[Boolean] = js.native
+  var useTargetEl: js.UndefOr[Boolean] = js.undefined
 }
 object ILoadMask {
   
@@ -175,7 +175,7 @@ object ILoadMask {
     def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStoreListeners(value: js.UndefOr[js.Any | IStore] => _): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    def setGetStoreListeners(value: js.UndefOr[js.Any | IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)

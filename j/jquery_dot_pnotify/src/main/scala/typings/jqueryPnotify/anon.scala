@@ -2,19 +2,17 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Close extends StObject {
     
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
-    var stick: js.UndefOr[String] = js.native
+    var stick: js.UndefOr[String] = js.undefined
     
-    var unstick: js.UndefOr[String] = js.native
+    var unstick: js.UndefOr[String] = js.undefined
   }
   object Close {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Closer extends StObject {
     
-    var closer: js.UndefOr[String] = js.native
+    var closer: js.UndefOr[String] = js.undefined
     
-    var pin_down: js.UndefOr[String] = js.native
+    var pin_down: js.UndefOr[String] = js.undefined
     
-    var pin_up: js.UndefOr[String] = js.native
+    var pin_up: js.UndefOr[String] = js.undefined
   }
   object Closer {
     
@@ -87,28 +84,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Closerhover extends StObject {
     
     /**
       * Provide a button for the user to manually close the notice.
       */
-    var closer: js.UndefOr[Boolean] = js.native
+    var closer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only show the closer button on hover.
       */
-    var closer_hover: js.UndefOr[Boolean] = js.native
+    var closer_hover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide a button for the user to manually stick the notice.
       */
-    var sticker: js.UndefOr[Boolean] = js.native
+    var sticker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only show the sticker button on hover.
       */
-    var sticker_hover: js.UndefOr[Boolean] = js.native
+    var sticker_hover: js.UndefOr[Boolean] = js.undefined
   }
   object Closerhover {
     
@@ -147,18 +143,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Nonblock extends StObject {
     
     /**
       * Create a non-blocking notice. It lets the user click elements underneath it.
       */
-    var nonblock: js.UndefOr[Boolean] = js.native
+    var nonblock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The opacity of the notice (if it's non-blocking) when the mouse is over it.
       */
-    var nonblock_opacity: js.UndefOr[Double] = js.native
+    var nonblock_opacity: js.UndefOr[Double] = js.undefined
   }
   object Nonblock {
     

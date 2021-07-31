@@ -6,34 +6,32 @@ import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/interactions/reorderable.IDragReorderable> */
-@js.native
 trait PartialIDragReorderable extends StObject {
   
-  var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.native
+  var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.undefined
   
-  var locateClick: js.UndefOr[js.Function1[/* event */ MouseEvent, IRegion]] = js.native
+  var locateClick: js.UndefOr[js.Function1[/* event */ MouseEvent, IRegion]] = js.undefined
   
-  var locateDrag: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Double]] = js.native
+  var locateDrag: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Double]] = js.undefined
   
-  var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.native
+  var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.undefined
   
   var onReordered: js.UndefOr[
     js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onReordering: js.UndefOr[
     js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSelection: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.native
+  var onSelection: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.undefined
   
-  var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+  var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
   
-  var toRegion: js.UndefOr[js.Function2[/* index1 */ Double, /* index2 */ js.UndefOr[Double], IRegion]] = js.native
+  var toRegion: js.UndefOr[js.Function2[/* index1 */ Double, /* index2 */ js.UndefOr[Double], IRegion]] = js.undefined
 }
 object PartialIDragReorderable {
   

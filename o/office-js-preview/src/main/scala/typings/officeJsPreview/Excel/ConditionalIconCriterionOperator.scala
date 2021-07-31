@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,17 @@ sealed trait ConditionalIconCriterionOperator extends StObject
 object ConditionalIconCriterionOperator extends StObject {
   
   @js.native
-  sealed trait greaterThan extends ConditionalIconCriterionOperator
+  sealed trait greaterThan
+    extends StObject
+       with ConditionalIconCriterionOperator
   
   @js.native
-  sealed trait greaterThanOrEqual extends ConditionalIconCriterionOperator
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with ConditionalIconCriterionOperator
   
   @js.native
-  sealed trait invalid extends ConditionalIconCriterionOperator
+  sealed trait invalid
+    extends StObject
+       with ConditionalIconCriterionOperator
 }

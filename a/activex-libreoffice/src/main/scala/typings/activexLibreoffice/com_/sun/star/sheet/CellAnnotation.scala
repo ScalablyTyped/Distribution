@@ -11,18 +11,17 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a cell annotation object attached to a spreadsheet cell.
   * @see com.sun.star.sheet.SheetCell
   */
-@js.native
 trait CellAnnotation
-  extends XSimpleText
+  extends StObject
      with XSheetAnnotation
      with XChild
+     with XSimpleText
      with XSheetAnnotationShapeSupplier
 object CellAnnotation {
   

@@ -9,7 +9,6 @@ import typings.rxjs.rxjsNumbers.`1`
 import typings.rxjs.typesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualTimeSchedulerMod {
@@ -32,14 +31,14 @@ object virtualTimeSchedulerMod {
     var index: Double = js.native
     
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler): js.Any = js.native
-    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: Double): js.Any = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): js.Any = js.native
     
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: Double): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): js.Any = js.native
     
     @JSName("scheduler")
     var scheduler_VirtualAction: VirtualTimeScheduler = js.native
@@ -47,9 +46,12 @@ object virtualTimeSchedulerMod {
   /* static members */
   object VirtualAction {
     
-    @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualAction.sortActions")
+    @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualAction")
     @js.native
-    def sortActions[T](a: VirtualAction[T], b: VirtualAction[T]): `1` | `0` | `-1` = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def sortActions[T](a: VirtualAction[T], b: VirtualAction[T]): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sortActions")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   }
   
   @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualTimeScheduler")
@@ -64,7 +66,6 @@ object virtualTimeSchedulerMod {
             ], 
             AsyncAction[js.Object]
           ]) = this()
-    def this(SchedulerAction: js.UndefOr[scala.Nothing], maxFrames: Double) = this()
     def this(
       SchedulerAction: Instantiable2[
             /* scheduler */ AsyncScheduler, 
@@ -77,6 +78,7 @@ object virtualTimeSchedulerMod {
           ],
       maxFrames: Double
     ) = this()
+    def this(SchedulerAction: Unit, maxFrames: Double) = this()
     
     /**
       * Prompt the Scheduler to execute all of its queued actions, therefore

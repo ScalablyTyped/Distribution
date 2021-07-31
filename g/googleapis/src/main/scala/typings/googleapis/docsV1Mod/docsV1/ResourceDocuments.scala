@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/docs/v1", "docs_v1.Resource$Documents")
@@ -42,7 +41,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdateDocumentResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(params: ParamsResourceDocumentsBatchupdate): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(
     params: ParamsResourceDocumentsBatchupdate,
@@ -78,7 +77,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaDocument] = js.native
   def create(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def create(params: ParamsResourceDocumentsCreate): GaxiosPromise[SchemaDocument] = js.native
   def create(params: ParamsResourceDocumentsCreate, callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
   def create(
@@ -108,7 +107,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDocument] = js.native
   def get(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def get(params: ParamsResourceDocumentsGet): GaxiosPromise[SchemaDocument] = js.native
   def get(params: ParamsResourceDocumentsGet, callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
   def get(

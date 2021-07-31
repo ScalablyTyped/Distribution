@@ -5,14 +5,15 @@ import typings.eventemitter3.mod.ListenerFn
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardInterceptorMod {
   
   @JSImport("playable/dist/src/utils/keyboard-interceptor", JSImport.Default)
   @js.native
-  class default protected () extends KeyboardInterceptorCore {
+  class default protected ()
+    extends StObject
+       with KeyboardInterceptorCore {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, callbacks: ICallbacks) = this()
   }

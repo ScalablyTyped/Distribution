@@ -3,15 +3,15 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Group extends RibbonComponent {
+trait Group
+  extends StObject
+     with RibbonComponent {
   
-  def selectLayout(layoutType: String, popupLayoutTitle: String): scala.Unit = js.native
+  def selectLayout(layoutType: String, popupLayoutTitle: String): scala.Unit
   
-  def unselectLayout(): scala.Unit = js.native
+  def unselectLayout(): scala.Unit
 }
 object Group {
   

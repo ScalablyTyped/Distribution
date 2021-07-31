@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.officeJsPreviewStrings.WorksheetDeactivated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetDeactivatedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WorksheetDeactivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetDeactivated = js.native
+  var `type`: WorksheetDeactivated
   
   /**
     *
@@ -29,14 +27,14 @@ trait WorksheetDeactivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetDeactivatedEventArgs {
   
   @scala.inline
-  def apply(`type`: WorksheetDeactivated, worksheetId: String): WorksheetDeactivatedEventArgs = {
+  def apply(worksheetId: String): WorksheetDeactivatedEventArgs = {
     val __obj = js.Dynamic.literal(worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetDeactivated")
     __obj.asInstanceOf[WorksheetDeactivatedEventArgs]
   }
   

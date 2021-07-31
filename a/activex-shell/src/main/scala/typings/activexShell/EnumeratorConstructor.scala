@@ -10,11 +10,12 @@ import typings.activexShell.Shell32.ShellWindows
 import typings.std.Enumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumeratorConstructor extends Instantiable1[
+trait EnumeratorConstructor
+  extends StObject
+     with Instantiable1[
       (/* col */ FolderItemVerbs) | (/* col */ FolderItems3) | (/* col */ ShellWindows), 
       Enumerator[FolderItemVerb | InternetExplorer | ShellFolderItem]
     ]

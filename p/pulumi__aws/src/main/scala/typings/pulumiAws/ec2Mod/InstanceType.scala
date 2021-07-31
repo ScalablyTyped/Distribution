@@ -169,7 +169,6 @@ import typings.pulumiAws.pulumiAwsStrings.z1dDotlarge
 import typings.pulumiAws.pulumiAwsStrings.z1dDotxlarge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InstanceType {

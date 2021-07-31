@@ -2,55 +2,53 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Labels extends StObject {
   
-  var assignee: String = js.native
+  var assignee: String
   
-  var body: String = js.native
+  var body: String
   
-  var closed_at: String = js.native
+  var closed_at: String
   
-  var comments: Double = js.native
+  var comments: Double
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var labels: js.Array[ColorId] = js.native
+  var labels: js.Array[ColorId]
   
-  var labels_url: String = js.native
+  var labels_url: String
   
-  var milestone: String = js.native
+  var milestone: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var pull_request: Patchurl = js.native
+  var pull_request: Patchurl
   
-  var repository_url: String = js.native
+  var repository_url: String
   
-  var score: Double = js.native
+  var score: Double
   
-  var state: String = js.native
+  var state: String
   
-  var title: String = js.native
+  var title: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: Followingurl = js.native
+  var user: Followingurl
 }
 object Labels {
   

@@ -2,21 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesRolloverParams extends GenericParams {
+trait IndicesRolloverParams
+  extends StObject
+     with GenericParams {
   
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var newIndex: js.UndefOr[String] = js.native
+  var newIndex: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[Double | String] = js.native
+  var waitForActiveShards: js.UndefOr[Double | String] = js.undefined
 }
 object IndicesRolloverParams {
   

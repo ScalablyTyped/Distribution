@@ -3,15 +3,13 @@ package typings.reactInstantsearchDom
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hit[T] extends StObject {
     
-    var hit: typings.reactInstantsearchCore.mod.Hit[T] = js.native
+    var hit: typings.reactInstantsearchCore.mod.Hit[T]
   }
   object Hit {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HitMutableBuilder[Self <: Hit[_], T] (val x: Self with Hit[T]) extends AnyVal {
+    implicit class HitMutableBuilder[Self <: Hit[?], T] (val x: Self & Hit[T]) extends AnyVal {
       
       @scala.inline
       def setHit(value: typings.reactInstantsearchCore.mod.Hit[T]): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
@@ -30,26 +28,25 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-instantsearch-core.react-instantsearch-core.InstantSearchProps> */
-  @js.native
   trait ReadonlyInstantSearchProp extends StObject {
     
-    val createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    val createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    val indexName: String = js.native
+    val indexName: String
     
-    val onSearchParameters: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    val onSearchParameters: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    val onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    val onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    val refresh: js.UndefOr[Boolean] = js.native
+    val refresh: js.UndefOr[Boolean] = js.undefined
     
-    val resultsState: js.UndefOr[js.Any] = js.native
+    val resultsState: js.UndefOr[js.Any] = js.undefined
     
-    val searchClient: js.Any = js.native
+    val searchClient: js.Any
     
-    val searchState: js.UndefOr[js.Any] = js.native
+    val searchState: js.UndefOr[js.Any] = js.undefined
     
-    val stalledSearchDelay: js.UndefOr[Double] = js.native
+    val stalledSearchDelay: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyInstantSearchProp {
     
@@ -63,7 +60,7 @@ object anon {
     implicit class ReadonlyInstantSearchPropMutableBuilder[Self <: ReadonlyInstantSearchProp] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreateURL(value: /* repeated */ js.Any => _): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+      def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCreateURLUndefined: Self = StObject.set(x, "createURL", js.undefined)
@@ -72,13 +69,13 @@ object anon {
       def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSearchParameters(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSearchParameters", js.Any.fromFunction1(value))
+      def setOnSearchParameters(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSearchParameters", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSearchParametersUndefined: Self = StObject.set(x, "onSearchParameters", js.undefined)
       
       @scala.inline
-      def setOnSearchStateChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSearchStateChange", js.Any.fromFunction1(value))
+      def setOnSearchStateChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSearchStateChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSearchStateChangeUndefined: Self = StObject.set(x, "onSearchStateChange", js.undefined)
@@ -112,10 +109,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Translations extends StObject {
     
-    var translations: js.UndefOr[StringDictionary[js.Function2[/* n */ Double, /* ms */ Double, String]]] = js.native
+    var translations: js.UndefOr[StringDictionary[js.Function2[/* n */ Double, /* ms */ Double, String]]] = js.undefined
   }
   object Translations {
     

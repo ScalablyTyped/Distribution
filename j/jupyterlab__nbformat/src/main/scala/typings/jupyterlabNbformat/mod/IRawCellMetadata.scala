@@ -3,17 +3,17 @@ package typings.jupyterlabNbformat.mod
 import typings.jupyterlabNbformat.anon.PartialIBaseCellJupyterMe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ @js.native
-trait IRawCellMetadata extends IBaseCellMetadata {
+- typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ trait IRawCellMetadata
+  extends StObject
+     with IBaseCellMetadata {
   
   /**
     * Raw cell metadata format for nbconvert.
     */
-  var format: String = js.native
+  var format: String
 }
 object IRawCellMetadata {
   

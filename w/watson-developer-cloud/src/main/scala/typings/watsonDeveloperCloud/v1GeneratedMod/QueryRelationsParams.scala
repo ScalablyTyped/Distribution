@@ -3,39 +3,37 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `queryRelations` operation. */
-@js.native
 trait QueryRelationsParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** Entity text to provide context for the queried entity and rank based on that association. For example, if you wanted to query the city of London in England your query would look for `London` with the context of `England`. */
-  var context: js.UndefOr[QueryEntitiesContext] = js.native
+  var context: js.UndefOr[QueryEntitiesContext] = js.undefined
   
   /** The number of results to return. The default is `10`. The maximum is `1000`. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** An array of entities to find relationships for. */
-  var entities: js.UndefOr[js.Array[QueryRelationsEntity]] = js.native
+  var entities: js.UndefOr[js.Array[QueryRelationsEntity]] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
   /** The number of evidence items to return for each result. The default is `0`. The maximum number of evidence items per query is 10,000. */
-  var evidence_count: js.UndefOr[Double] = js.native
+  var evidence_count: js.UndefOr[Double] = js.undefined
   
-  var filter: js.UndefOr[QueryRelationsFilter] = js.native
+  var filter: js.UndefOr[QueryRelationsFilter] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The sorting method for the relationships, can be `score` or `frequency`. `frequency` is the number of unique times each entity is identified. The default is `score`. This parameter cannot be used in the same query as the **bias** parameter. */
-  var sort: js.UndefOr[Sort | String] = js.native
+  var sort: js.UndefOr[Sort | String] = js.undefined
 }
 object QueryRelationsParams {
   

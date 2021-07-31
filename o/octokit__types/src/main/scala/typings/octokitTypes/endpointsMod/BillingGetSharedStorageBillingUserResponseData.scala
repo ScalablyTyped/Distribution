@@ -2,26 +2,24 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingGetSharedStorageBillingUserResponseData extends StObject {
   
   /**
     * Numbers of days left in billing cycle.
     */
-  var days_left_in_billing_cycle: Double = js.native
+  var days_left_in_billing_cycle: Double
   
   /**
     * Estimated storage space (GB) used in billing cycle.
     */
-  var estimated_paid_storage_for_month: Double = js.native
+  var estimated_paid_storage_for_month: Double
   
   /**
     * Estimated sum of free and paid storage space (GB) used in billing cycle.
     */
-  var estimated_storage_for_month: Double = js.native
+  var estimated_storage_for_month: Double
 }
 object BillingGetSharedStorageBillingUserResponseData {
   

@@ -2,29 +2,27 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the owner of a Drive item.
   */
-@js.native
 trait SchemaOwner extends StObject {
   
   /**
     * The domain of the Drive item owner.
     */
-  var domain: js.UndefOr[SchemaDomain] = js.native
+  var domain: js.UndefOr[SchemaDomain] = js.undefined
   
   /**
     * The Team Drive that owns the Drive item.
     */
-  var teamDrive: js.UndefOr[SchemaTeamDriveReference] = js.native
+  var teamDrive: js.UndefOr[SchemaTeamDriveReference] = js.undefined
   
   /**
     * The user that owns the Drive item.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaOwner {
   

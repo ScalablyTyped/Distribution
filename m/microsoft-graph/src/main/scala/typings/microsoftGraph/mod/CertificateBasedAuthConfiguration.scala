@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CertificateBasedAuthConfiguration extends Entity {
+trait CertificateBasedAuthConfiguration
+  extends StObject
+     with Entity {
   
   // Collection of certificate authorities which creates a trusted certificate chain.
-  var certificateAuthorities: js.UndefOr[js.Array[CertificateAuthority]] = js.native
+  var certificateAuthorities: js.UndefOr[js.Array[CertificateAuthority]] = js.undefined
 }
 object CertificateBasedAuthConfiguration {
   

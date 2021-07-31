@@ -4,20 +4,18 @@ import typings.reactSortableTree.mod.NumberOrStringArray
 import typings.reactSortableTree.mod.TreeItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & react-sortable-tree.react-sortable-tree.TreeIndex & react-sortable-tree.react-sortable-tree.TreePath & {  parentNode :react-sortable-tree.react-sortable-tree.TreeItem} */
-@js.native
 trait FullTreeTreeIndexTreePath extends StObject {
   
-  var parentNode: TreeItem = js.native
+  var parentNode: TreeItem
   
-  var path: NumberOrStringArray = js.native
+  var path: NumberOrStringArray
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
   
-  var treeIndex: Double = js.native
+  var treeIndex: Double
 }
 object FullTreeTreeIndexTreePath {
   

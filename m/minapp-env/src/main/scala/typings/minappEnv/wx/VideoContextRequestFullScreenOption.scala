@@ -5,10 +5,8 @@ import typings.minappEnv.minappEnvNumbers.`0`
 import typings.minappEnv.minappEnvNumbers.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoContextRequestFullScreenOption extends StObject {
   
   /** 设置全屏时视频的方向，不指定则根据宽高比自动判断。
@@ -19,7 +17,7 @@ trait VideoContextRequestFullScreenOption extends StObject {
     * - -90: 屏幕顺时针90度;
     *
     * 最低基础库： `1.7.0` */
-  var direction: js.UndefOr[`0` | `90` | `-90`] = js.native
+  var direction: js.UndefOr[`0` | `90` | `-90`] = js.undefined
 }
 object VideoContextRequestFullScreenOption {
   

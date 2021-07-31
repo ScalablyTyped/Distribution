@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceFleetTimeline extends StObject {
   
   /**
     * The time and date the instance fleet was created.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time and date the instance fleet terminated.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time and date the instance fleet was ready to run jobs.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.native
+  var ReadyDateTime: js.UndefOr[Date] = js.undefined
 }
 object InstanceFleetTimeline {
   

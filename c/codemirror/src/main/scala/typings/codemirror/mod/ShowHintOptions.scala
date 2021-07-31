@@ -5,33 +5,31 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowHintOptions extends StObject {
   
-  var alignWithWord: js.UndefOr[Boolean] = js.native
+  var alignWithWord: js.UndefOr[Boolean] = js.undefined
   
-  var closeCharacters: js.UndefOr[RegExp] = js.native
+  var closeCharacters: js.UndefOr[RegExp] = js.undefined
   
-  var closeOnUnfocus: js.UndefOr[Boolean] = js.native
+  var closeOnUnfocus: js.UndefOr[Boolean] = js.undefined
   
-  var completeOnSingleClick: js.UndefOr[Boolean] = js.native
+  var completeOnSingleClick: js.UndefOr[Boolean] = js.undefined
   
-  var completeSingle: js.UndefOr[Boolean] = js.native
+  var completeSingle: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[HTMLElement | Null] = js.native
+  var container: js.UndefOr[HTMLElement | Null] = js.undefined
   
   var customKeys: js.UndefOr[
     (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]) | Null
-  ] = js.native
+  ] = js.undefined
   
   var extraKeys: js.UndefOr[
     (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]) | Null
-  ] = js.native
+  ] = js.undefined
   
-  var hint: HintFunction | AsyncHintFunction = js.native
+  var hint: HintFunction | AsyncHintFunction
 }
 object ShowHintOptions {
   

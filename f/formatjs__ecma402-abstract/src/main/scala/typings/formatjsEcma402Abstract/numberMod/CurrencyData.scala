@@ -2,17 +2,15 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyData extends StObject {
   
-  var displayName: LDMLPluralRuleMap[String] = js.native
+  var displayName: LDMLPluralRuleMap[String]
   
-  var narrow: String = js.native
+  var narrow: String
   
-  var symbol: String = js.native
+  var symbol: String
 }
 object CurrencyData {
   

@@ -4,38 +4,36 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemFieldReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessConfiguration extends StObject {
   
   /**
     * Details about bug work items
     */
-  var bugWorkItems: CategoryConfiguration = js.native
+  var bugWorkItems: CategoryConfiguration
   
   /**
     * Details about portfolio backlogs
     */
-  var portfolioBacklogs: js.Array[CategoryConfiguration] = js.native
+  var portfolioBacklogs: js.Array[CategoryConfiguration]
   
   /**
     * Details of requirement backlog
     */
-  var requirementBacklog: CategoryConfiguration = js.native
+  var requirementBacklog: CategoryConfiguration
   
   /**
     * Details of task backlog
     */
-  var taskBacklog: CategoryConfiguration = js.native
+  var taskBacklog: CategoryConfiguration
   
   /**
     * Type fields for the process configuration
     */
-  var typeFields: StringDictionary[WorkItemFieldReference] = js.native
+  var typeFields: StringDictionary[WorkItemFieldReference]
   
-  var url: String = js.native
+  var url: String
 }
 object ProcessConfiguration {
   

@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAutomaticPermissions extends StObject {
   
-  var CanDeactivate: Boolean = js.native
+  var CanDeactivate: Boolean
   
-  def Clone(): IAutomaticPermissions = js.native
+  def Clone(): IAutomaticPermissions
   
-  val IsBasedOnObjectACL: Boolean = js.native
+  val IsBasedOnObjectACL: Boolean
   
-  val IsDefault: Boolean = js.native
+  val IsDefault: Boolean
   
-  val NamedACL: INamedACL = js.native
+  val NamedACL: INamedACL
   
-  def SetBasedOnObjectACL(): Unit = js.native
+  def SetBasedOnObjectACL(): Unit
   
-  def SetNamedACL(NamedACL: INamedACL): Unit = js.native
+  def SetNamedACL(NamedACL: INamedACL): Unit
 }
 object IAutomaticPermissions {
   

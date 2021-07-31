@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait DeveloperMetadataLocationType extends StObject
 object DeveloperMetadataLocationType extends StObject {
   
   @js.native
-  sealed trait COLUMN extends DeveloperMetadataLocationType
+  sealed trait COLUMN
+    extends StObject
+       with DeveloperMetadataLocationType
   
   @js.native
-  sealed trait ROW extends DeveloperMetadataLocationType
+  sealed trait ROW
+    extends StObject
+       with DeveloperMetadataLocationType
   
   @js.native
-  sealed trait SHEET extends DeveloperMetadataLocationType
+  sealed trait SHEET
+    extends StObject
+       with DeveloperMetadataLocationType
   
   @js.native
-  sealed trait SPREADSHEET extends DeveloperMetadataLocationType
+  sealed trait SPREADSHEET
+    extends StObject
+       with DeveloperMetadataLocationType
 }

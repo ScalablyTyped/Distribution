@@ -4,35 +4,33 @@ import typings.react.mod.ReactNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChangeMonth extends StObject {
     
-    def changeMonth(month: Double): Unit = js.native
+    def changeMonth(month: Double): Unit
     
-    def changeYear(year: Double): Unit = js.native
+    def changeYear(year: Double): Unit
     
-    var date: Date = js.native
+    var date: Date
     
-    def decreaseMonth(): Unit = js.native
+    def decreaseMonth(): Unit
     
-    def decreaseYear(): Unit = js.native
+    def decreaseYear(): Unit
     
-    def increaseMonth(): Unit = js.native
+    def increaseMonth(): Unit
     
-    def increaseYear(): Unit = js.native
+    def increaseYear(): Unit
     
-    var nextMonthButtonDisabled: Boolean = js.native
+    var nextMonthButtonDisabled: Boolean
     
-    var nextYearButtonDisabled: Boolean = js.native
+    var nextYearButtonDisabled: Boolean
     
-    var prevMonthButtonDisabled: Boolean = js.native
+    var prevMonthButtonDisabled: Boolean
     
-    var prevYearButtonDisabled: Boolean = js.native
+    var prevYearButtonDisabled: Boolean
   }
   object ChangeMonth {
     
@@ -92,10 +90,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.Array[ReactNode] = js.native
+    var children: js.Array[ReactNode]
   }
   object Children {
     
@@ -116,12 +113,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var msg: String = js.native
+    var msg: String
   }
   object Code {
     

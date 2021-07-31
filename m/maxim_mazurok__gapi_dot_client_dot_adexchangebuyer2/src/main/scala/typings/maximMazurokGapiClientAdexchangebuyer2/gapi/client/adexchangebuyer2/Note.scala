@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Note extends StObject {
   
   /** Output only. The timestamp for when this note was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The role of the person (buyer/seller) creating the note. */
-  var creatorRole: js.UndefOr[String] = js.native
+  var creatorRole: js.UndefOr[String] = js.undefined
   
   /**
     * The actual note to attach. (max-length: 1024 unicode code units) Note: This field may be set only when creating the resource. Modifying this field while updating the resource will
     * result in an error.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID for the note. */
-  var noteId: js.UndefOr[String] = js.native
+  var noteId: js.UndefOr[String] = js.undefined
   
   /** Output only. The revision number of the proposal when the note is created. */
-  var proposalRevision: js.UndefOr[String] = js.native
+  var proposalRevision: js.UndefOr[String] = js.undefined
 }
 object Note {
   

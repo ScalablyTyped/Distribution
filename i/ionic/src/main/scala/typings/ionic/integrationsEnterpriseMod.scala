@@ -9,7 +9,6 @@ import typings.ionicCliFramework.configMod.BaseConfigOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationsEnterpriseMod {
@@ -31,7 +30,7 @@ object integrationsEnterpriseMod {
     def this(e: IntegrationDeps) = this()
     
     @JSName("archiveUrl")
-    val archiveUrl_Integration: js.UndefOr[scala.Nothing] = js.native
+    val archiveUrl_Integration: Unit = js.native
     
     var chooseApp: js.Any = js.native
     

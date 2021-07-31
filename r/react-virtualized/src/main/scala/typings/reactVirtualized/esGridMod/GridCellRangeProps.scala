@@ -8,55 +8,53 @@ import typings.reactVirtualized.esCellMeasurerMod.MeasuredCellParent
 import typings.reactVirtualized.mod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridCellRangeProps extends StObject {
   
-  var cellCache: Map[_] = js.native
+  var cellCache: Map[js.Any]
   
-  var cellRenderer: GridCellRenderer = js.native
+  var cellRenderer: GridCellRenderer
   
-  var columnSizeAndPositionManager: CellSizeAndPositionManager = js.native
+  var columnSizeAndPositionManager: CellSizeAndPositionManager
   
-  var columnStartIndex: Double = js.native
+  var columnStartIndex: Double
   
-  var columnStopIndex: Double = js.native
+  var columnStopIndex: Double
   
-  var deferredMeasurementCache: CellMeasurerCache = js.native
+  var deferredMeasurementCache: CellMeasurerCache
   
-  var horizontalOffsetAdjustment: Double = js.native
+  var horizontalOffsetAdjustment: Double
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var isScrollingOptOut: Boolean = js.native
+  var isScrollingOptOut: Boolean
   
-  var parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent = js.native
+  var parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent
   
-  var rowSizeAndPositionManager: CellSizeAndPositionManager = js.native
+  var rowSizeAndPositionManager: CellSizeAndPositionManager
   
-  var rowStartIndex: Double = js.native
+  var rowStartIndex: Double
   
-  var rowStopIndex: Double = js.native
+  var rowStopIndex: Double
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
   
-  var styleCache: Map[CSSProperties] = js.native
+  var styleCache: Map[CSSProperties]
   
-  var verticalOffsetAdjustment: Double = js.native
+  var verticalOffsetAdjustment: Double
   
-  var visibleColumnIndices: VisibleCellRange = js.native
+  var visibleColumnIndices: VisibleCellRange
   
-  var visibleRowIndices: VisibleCellRange = js.native
+  var visibleRowIndices: VisibleCellRange
 }
 object GridCellRangeProps {
   
   @scala.inline
   def apply(
-    cellCache: Map[_],
+    cellCache: Map[js.Any],
     cellRenderer: /* props */ GridCellProps => ReactNode,
     columnSizeAndPositionManager: CellSizeAndPositionManager,
     columnStartIndex: Double,
@@ -65,7 +63,7 @@ object GridCellRangeProps {
     horizontalOffsetAdjustment: Double,
     isScrolling: Boolean,
     isScrollingOptOut: Boolean,
-    parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent,
+    parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent,
     rowSizeAndPositionManager: CellSizeAndPositionManager,
     rowStartIndex: Double,
     rowStopIndex: Double,
@@ -84,7 +82,7 @@ object GridCellRangeProps {
   implicit class GridCellRangePropsMutableBuilder[Self <: GridCellRangeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCellCache(value: Map[_]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
+    def setCellCache(value: Map[js.Any]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
@@ -111,7 +109,7 @@ object GridCellRangeProps {
     def setIsScrollingOptOut(value: Boolean): Self = StObject.set(x, "isScrollingOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "rowSizeAndPositionManager", value.asInstanceOf[js.Any])

@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A base for client equivalents of recurrence controls available in the XtraScheduler library.
   */
-@js.native
-trait ASPxClientRecurrenceControlBase extends ASPxClientControl {
+trait ASPxClientRecurrenceControlBase
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns an object providing access to the ASPxClientRecurrenceControlBase control's editor values.
     */
-  def CreateValueAccessor(): DefaultRecurrenceRuleValuesAccessor = js.native
+  def CreateValueAccessor(): DefaultRecurrenceRuleValuesAccessor
   
   /**
     * Updates values of editors displayed by the ASPxClientRecurrenceControlBase control.
     * @param recurrenceInfo An ASPxClientRecurrenceInfo object containing new editor values.
     */
-  def Update(recurrenceInfo: ASPxClientRecurrenceInfo): Unit = js.native
+  def Update(recurrenceInfo: ASPxClientRecurrenceInfo): Unit
 }
 object ASPxClientRecurrenceControlBase {
   

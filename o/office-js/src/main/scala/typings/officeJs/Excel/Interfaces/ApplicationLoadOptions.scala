@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait ApplicationLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationEngineVersion: js.UndefOr[Boolean] = js.native
+  var calculationEngineVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
-  var calculationMode: js.UndefOr[Boolean] = js.native
+  var calculationMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationState: js.UndefOr[Boolean] = js.native
+  var calculationState: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var cultureInfo: js.UndefOr[CultureInfoLoadOptions] = js.native
+  var cultureInfo: js.UndefOr[CultureInfoLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var decimalSeparator: js.UndefOr[Boolean] = js.native
+  var decimalSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.native
+  var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var thousandsSeparator: js.UndefOr[Boolean] = js.native
+  var thousandsSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ApplicationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var useSystemSeparators: js.UndefOr[Boolean] = js.native
+  var useSystemSeparators: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationLoadOptions {
   

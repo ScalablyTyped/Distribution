@@ -2,15 +2,13 @@ package typings.popcorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopcornLocale extends StObject {
   
-  def get(): String = js.native
+  def get(): String
   
-  def set(langRegion: String): js.Any = js.native
+  def set(langRegion: String): js.Any
 }
 object PopcornLocale {
   

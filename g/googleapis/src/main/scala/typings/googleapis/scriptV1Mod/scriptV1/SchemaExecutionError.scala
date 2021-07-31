@@ -2,7 +2,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object. The `Status` object&#39;s `details` field contains an array with a
   * single one of these `ExecutionError` objects.
   */
-@js.native
 trait SchemaExecutionError extends StObject {
   
   /**
     * The error message thrown by Apps Script, usually localized into the
     * user&#39;s language.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The error type, for example `TypeError` or `ReferenceError`. If the error
     * type is unavailable, this field is not included.
     */
-  var errorType: js.UndefOr[String] = js.native
+  var errorType: js.UndefOr[String] = js.undefined
   
   /**
     * An array of objects that provide a stack trace through the script to show
     * where the execution failed, with the deepest call first.
     */
-  var scriptStackTraceElements: js.UndefOr[js.Array[SchemaScriptStackTraceElement]] = js.native
+  var scriptStackTraceElements: js.UndefOr[js.Array[SchemaScriptStackTraceElement]] = js.undefined
 }
 object SchemaExecutionError {
   

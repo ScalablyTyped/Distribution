@@ -2,21 +2,21 @@ package typings.hasura.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JSONBColumnBoolExp extends ColumnBoolExp[String] {
+trait JSONBColumnBoolExp
+  extends StObject
+     with ColumnBoolExp[String] {
   
-  var _contained_in: js.UndefOr[String] = js.native
+  var _contained_in: js.UndefOr[String] = js.undefined
   
-  var _contains: js.UndefOr[String] = js.native
+  var _contains: js.UndefOr[String] = js.undefined
   
-  var _has_key: js.UndefOr[String] = js.native
+  var _has_key: js.UndefOr[String] = js.undefined
   
-  var _has_keys_all: js.UndefOr[String] = js.native
+  var _has_keys_all: js.UndefOr[String] = js.undefined
   
-  var _has_keys_any: js.UndefOr[String] = js.native
+  var _has_keys_any: js.UndefOr[String] = js.undefined
 }
 object JSONBColumnBoolExp {
   

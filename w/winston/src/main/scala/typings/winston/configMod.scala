@@ -7,7 +7,6 @@ import typings.winston.anon.ColorsLevels
 import typings.winston.anon.Levels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod extends Shortcut {
@@ -16,12 +15,11 @@ object configMod extends Shortcut {
   @js.native
   val ^ : Config = js.native
   
-  @js.native
   trait AbstractConfigSet extends StObject {
     
-    var colors: AbstractConfigSetColors = js.native
+    var colors: AbstractConfigSetColors
     
-    var levels: AbstractConfigSetLevels = js.native
+    var levels: AbstractConfigSetLevels
   }
   object AbstractConfigSet {
     
@@ -46,28 +44,29 @@ object configMod extends Shortcut {
   
   type AbstractConfigSetLevels = StringDictionary[Double]
   
-  @js.native
-  trait CliConfigSetColors extends AbstractConfigSetColors {
+  trait CliConfigSetColors
+    extends StObject
+       with AbstractConfigSetColors {
     
-    var data: String | js.Array[String] = js.native
+    var data: String | js.Array[String]
     
-    var debug: String | js.Array[String] = js.native
+    var debug: String | js.Array[String]
     
-    var error: String | js.Array[String] = js.native
+    var error: String | js.Array[String]
     
-    var help: String | js.Array[String] = js.native
+    var help: String | js.Array[String]
     
-    var info: String | js.Array[String] = js.native
+    var info: String | js.Array[String]
     
-    var input: String | js.Array[String] = js.native
+    var input: String | js.Array[String]
     
-    var prompt: String | js.Array[String] = js.native
+    var prompt: String | js.Array[String]
     
-    var silly: String | js.Array[String] = js.native
+    var silly: String | js.Array[String]
     
-    var verbose: String | js.Array[String] = js.native
+    var verbose: String | js.Array[String]
     
-    var warn: String | js.Array[String] = js.native
+    var warn: String | js.Array[String]
   }
   object CliConfigSetColors {
     
@@ -153,28 +152,29 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CliConfigSetLevels extends AbstractConfigSetLevels {
+  trait CliConfigSetLevels
+    extends StObject
+       with AbstractConfigSetLevels {
     
-    var data: Double = js.native
+    var data: Double
     
-    var debug: Double = js.native
+    var debug: Double
     
-    var error: Double = js.native
+    var error: Double
     
-    var help: Double = js.native
+    var help: Double
     
-    var info: Double = js.native
+    var info: Double
     
-    var input: Double = js.native
+    var input: Double
     
-    var prompt: Double = js.native
+    var prompt: Double
     
-    var silly: Double = js.native
+    var silly: Double
     
-    var verbose: Double = js.native
+    var verbose: Double
     
-    var warn: Double = js.native
+    var warn: Double
   }
   object CliConfigSetLevels {
     
@@ -230,18 +230,17 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    def addColors(colors: AbstractConfigSetColors): Unit = js.native
+    def addColors(colors: AbstractConfigSetColors): Unit
     
-    var allColors: AbstractConfigSetColors = js.native
+    var allColors: AbstractConfigSetColors
     
-    var cli: Colors = js.native
+    var cli: Colors
     
-    var npm: Levels = js.native
+    var npm: Levels
     
-    var syslog: ColorsLevels = js.native
+    var syslog: ColorsLevels
   }
   object Config {
     
@@ -277,20 +276,21 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait NpmConfigSetColors extends AbstractConfigSetColors {
+  trait NpmConfigSetColors
+    extends StObject
+       with AbstractConfigSetColors {
     
-    var debug: String | js.Array[String] = js.native
+    var debug: String | js.Array[String]
     
-    var error: String | js.Array[String] = js.native
+    var error: String | js.Array[String]
     
-    var info: String | js.Array[String] = js.native
+    var info: String | js.Array[String]
     
-    var silly: String | js.Array[String] = js.native
+    var silly: String | js.Array[String]
     
-    var verbose: String | js.Array[String] = js.native
+    var verbose: String | js.Array[String]
     
-    var warn: String | js.Array[String] = js.native
+    var warn: String | js.Array[String]
   }
   object NpmConfigSetColors {
     
@@ -348,22 +348,23 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait NpmConfigSetLevels extends AbstractConfigSetLevels {
+  trait NpmConfigSetLevels
+    extends StObject
+       with AbstractConfigSetLevels {
     
-    var debug: Double = js.native
+    var debug: Double
     
-    var error: Double = js.native
+    var error: Double
     
-    var http: Double = js.native
+    var http: Double
     
-    var info: Double = js.native
+    var info: Double
     
-    var silly: Double = js.native
+    var silly: Double
     
-    var verbose: Double = js.native
+    var verbose: Double
     
-    var warn: Double = js.native
+    var warn: Double
   }
   object NpmConfigSetLevels {
     
@@ -407,24 +408,25 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SyslogConfigSetColors extends AbstractConfigSetColors {
+  trait SyslogConfigSetColors
+    extends StObject
+       with AbstractConfigSetColors {
     
-    var alert: String | js.Array[String] = js.native
+    var alert: String | js.Array[String]
     
-    var crit: String | js.Array[String] = js.native
+    var crit: String | js.Array[String]
     
-    var debug: String | js.Array[String] = js.native
+    var debug: String | js.Array[String]
     
-    var emerg: String | js.Array[String] = js.native
+    var emerg: String | js.Array[String]
     
-    var error: String | js.Array[String] = js.native
+    var error: String | js.Array[String]
     
-    var info: String | js.Array[String] = js.native
+    var info: String | js.Array[String]
     
-    var notice: String | js.Array[String] = js.native
+    var notice: String | js.Array[String]
     
-    var warning: String | js.Array[String] = js.native
+    var warning: String | js.Array[String]
   }
   object SyslogConfigSetColors {
     
@@ -496,24 +498,25 @@ object configMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SyslogConfigSetLevels extends AbstractConfigSetLevels {
+  trait SyslogConfigSetLevels
+    extends StObject
+       with AbstractConfigSetLevels {
     
-    var alert: Double = js.native
+    var alert: Double
     
-    var crit: Double = js.native
+    var crit: Double
     
-    var debug: Double = js.native
+    var debug: Double
     
-    var emerg: Double = js.native
+    var emerg: Double
     
-    var error: Double = js.native
+    var error: Double
     
-    var info: Double = js.native
+    var info: Double
     
-    var notice: Double = js.native
+    var notice: Double
     
-    var warning: Double = js.native
+    var warning: Double
   }
   object SyslogConfigSetLevels {
     

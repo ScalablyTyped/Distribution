@@ -11,8 +11,8 @@ Detect the dominant newline character of a string
 | Full name          | detect-newline |
 | Keywords           | newline, linebreak, line-break, line, lf, crlf, eol, linefeed, character, char |
 | # releases         | 3 |
-| # dependents       | 135 |
-| # downloads        | 325836238 |
+| # dependents       | 175 |
+| # downloads        | 433075561 |
 | # stars            | 0 |
 
 ## Links

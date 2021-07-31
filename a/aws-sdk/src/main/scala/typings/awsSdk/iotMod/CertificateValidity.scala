@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateValidity extends StObject {
   
   /**
     * The certificate is not valid after this date.
     */
-  var notAfter: js.UndefOr[DateType] = js.native
+  var notAfter: js.UndefOr[DateType] = js.undefined
   
   /**
     * The certificate is not valid before this date.
     */
-  var notBefore: js.UndefOr[DateType] = js.native
+  var notBefore: js.UndefOr[DateType] = js.undefined
 }
 object CertificateValidity {
   

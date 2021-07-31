@@ -2,24 +2,22 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows autoscaling based on Stackdriver metrics.
   */
-@js.native
 trait SchemaCustomMetric extends StObject {
   
   /**
     * Allows filtering on the metric&#39;s fields.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the metric.
     */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
   
   /**
     * May be used instead of target_utilization when an instance can handle a
@@ -28,18 +26,18 @@ trait SchemaCustomMetric extends StObject {
     * number of instances equal to the metric value divided by
     * single_instance_assignment.
     */
-  var singleInstanceAssignment: js.UndefOr[Double] = js.native
+  var singleInstanceAssignment: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of the metric. Must be a string representing a Stackdriver
     * metric type e.g. GAGUE, DELTA_PER_SECOND, etc.
     */
-  var targetType: js.UndefOr[String] = js.native
+  var targetType: js.UndefOr[String] = js.undefined
   
   /**
     * The target value for the metric.
     */
-  var targetUtilization: js.UndefOr[Double] = js.native
+  var targetUtilization: js.UndefOr[Double] = js.undefined
 }
 object SchemaCustomMetric {
   

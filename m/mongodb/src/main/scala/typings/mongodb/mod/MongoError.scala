@@ -3,12 +3,13 @@ package typings.mongodb.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "MongoError")
 @js.native
-class MongoError protected () extends Error {
+class MongoError protected ()
+  extends StObject
+     with Error {
   def this(message: String) = this()
   def this(message: js.Object) = this()
   def this(message: Error) = this()
@@ -38,20 +39,27 @@ class MongoError protected () extends Error {
     * Checks the error to see if it has an error label
     */
   def hasErrorLabel(label: String): Boolean = js.native
+  
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
 }
 /* static members */
 object MongoError {
   
+  @JSImport("mongodb", "MongoError")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @deprecated
     */
-  @JSImport("mongodb", "MongoError.create")
-  @js.native
-  def create(options: String): MongoError = js.native
-  @JSImport("mongodb", "MongoError.create")
-  @js.native
-  def create(options: js.Object): MongoError = js.native
-  @JSImport("mongodb", "MongoError.create")
-  @js.native
-  def create(options: Error): MongoError = js.native
+  @scala.inline
+  def create(options: String): MongoError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[MongoError]
+  @scala.inline
+  def create(options: js.Object): MongoError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[MongoError]
+  @scala.inline
+  def create(options: Error): MongoError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[MongoError]
 }

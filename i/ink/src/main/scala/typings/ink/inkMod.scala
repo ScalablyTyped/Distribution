@@ -6,14 +6,15 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inkMod {
   
   @JSImport("ink/build/ink", JSImport.Default)
   @js.native
-  class default protected () extends Ink {
+  class default protected ()
+    extends StObject
+       with Ink {
     def this(options: Options) = this()
   }
   
@@ -68,22 +69,21 @@ object inkMod {
     def writeToStdout(data: String): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var exitOnCtrlC: Boolean = js.native
+    var exitOnCtrlC: Boolean
     
-    var patchConsole: Boolean = js.native
+    var patchConsole: Boolean
     
-    var stderr: WriteStream = js.native
+    var stderr: WriteStream
     
-    var stdin: ReadStream = js.native
+    var stdin: ReadStream
     
-    var stdout: WriteStream = js.native
+    var stdout: WriteStream
     
-    var waitUntilExit: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+    var waitUntilExit: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   }
   object Options {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingMaintenanceAction extends StObject {
   
   /**
     * The type of pending maintenance action that is available for the resource.
     */
-  var Action: js.UndefOr[String] = js.native
+  var Action: js.UndefOr[String] = js.undefined
   
   /**
     * The date of the maintenance window when the action is to be applied. The maintenance action is applied to the resource during its first maintenance window after this date. If this date is specified, any next-maintenance opt-in requests are ignored.
     */
-  var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.native
+  var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The effective date when the pending maintenance action will be applied to the resource. This date takes into account opt-in requests received from the ApplyPendingMaintenanceAction API operation, and also the AutoAppliedAfterDate and ForcedApplyDate parameter values. This value is blank if an opt-in request has not been received and nothing has been specified for AutoAppliedAfterDate or ForcedApplyDate.
     */
-  var CurrentApplyDate: js.UndefOr[TStamp] = js.native
+  var CurrentApplyDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A description providing more detail about the maintenance action.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the maintenance action will be automatically applied. The maintenance action is applied to the resource on this date regardless of the maintenance window for the resource. If this date is specified, any immediate opt-in requests are ignored.
     */
-  var ForcedApplyDate: js.UndefOr[TStamp] = js.native
+  var ForcedApplyDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The type of opt-in request that has been received for the resource.
     */
-  var OptInStatus: js.UndefOr[String] = js.native
+  var OptInStatus: js.UndefOr[String] = js.undefined
 }
 object PendingMaintenanceAction {
   

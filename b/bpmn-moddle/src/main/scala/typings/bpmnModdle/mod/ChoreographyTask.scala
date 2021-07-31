@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChoreographyTask extends ChoreographyActivity {
+trait ChoreographyTask
+  extends StObject
+     with ChoreographyActivity {
   
-  var messageFlowRef: js.Array[MessageFlow] = js.native
+  var messageFlowRef: js.Array[MessageFlow]
 }
 object ChoreographyTask {
   

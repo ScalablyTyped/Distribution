@@ -2,19 +2,17 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiFactorInfo extends StObject {
   
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
-  var enrollmentTime: String = js.native
+  var enrollmentTime: String
   
-  var factorId: String = js.native
+  var factorId: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object MultiFactorInfo {
   

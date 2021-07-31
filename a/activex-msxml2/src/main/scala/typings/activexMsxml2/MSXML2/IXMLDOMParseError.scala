@@ -2,36 +2,34 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** structure for reporting parser errors */
-@js.native
 trait IXMLDOMParseError extends StObject {
   
   @JSName("MSXML2.IXMLDOMParseError_typekey")
-  var MSXML2DotIXMLDOMParseError_typekey: IXMLDOMParseError = js.native
+  var MSXML2DotIXMLDOMParseError_typekey: IXMLDOMParseError
   
   /** the error code */
-  val errorCode: Double = js.native
+  val errorCode: Double
   
   /** the absolute file position in the XML document containing the error */
-  val filepos: Double = js.native
+  val filepos: Double
   
   /** the line number in the XML document where the error occurred */
-  val line: Double = js.native
+  val line: Double
   
   /** the character position in the line containing the error */
-  val linepos: Double = js.native
+  val linepos: Double
   
   /** the cause of the error */
-  val reason: String = js.native
+  val reason: String
   
   /** the data where the error occurred */
-  val srcText: String = js.native
+  val srcText: String
   
   /** the URL of the XML document containing the error */
-  val url: String = js.native
+  val url: String
 }
 object IXMLDOMParseError {
   

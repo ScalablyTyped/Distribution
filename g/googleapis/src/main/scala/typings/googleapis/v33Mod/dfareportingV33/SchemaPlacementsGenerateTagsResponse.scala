@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Placement GenerateTags Response
   */
-@js.native
 trait SchemaPlacementsGenerateTagsResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#placementsGenerateTagsResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Set of generated tags for the specified placements.
     */
-  var placementTags: js.UndefOr[js.Array[SchemaPlacementTag]] = js.native
+  var placementTags: js.UndefOr[js.Array[SchemaPlacementTag]] = js.undefined
 }
 object SchemaPlacementsGenerateTagsResponse {
   

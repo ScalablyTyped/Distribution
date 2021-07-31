@@ -3,7 +3,6 @@ package typings.reactCloseOnEscape
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,13 +14,12 @@ object mod {
   
   type CloseOnEscape = Component[CloseOnEscapeProps, js.Object, js.Any]
   
-  @js.native
   trait CloseOnEscapeProps extends StObject {
     
     /**
       * Callback triggered by pressing ESC
       */
-    def onEscape(): Unit = js.native
+    def onEscape(): Unit
   }
   object CloseOnEscapeProps {
     

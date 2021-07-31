@@ -2,165 +2,163 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseMediaOrAd extends StObject {
   
-  var ad_action: js.UndefOr[String] = js.native
+  var ad_action: js.UndefOr[String] = js.undefined
   
-  var ad_header_style: js.UndefOr[Double] = js.native
+  var ad_header_style: js.UndefOr[Double] = js.undefined
   
-  var ad_id: js.UndefOr[String] = js.native
+  var ad_id: js.UndefOr[String] = js.undefined
   
-  var ad_link_type: js.UndefOr[Double] = js.native
+  var ad_link_type: js.UndefOr[Double] = js.undefined
   
-  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.native
+  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.undefined
   
-  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.native
+  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.undefined
   
-  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.native
+  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined
   
-  var can_view_more_preview_comments: Boolean = js.native
+  var can_view_more_preview_comments: Boolean
   
-  var can_viewer_reshare: js.UndefOr[Boolean] = js.native
+  var can_viewer_reshare: js.UndefOr[Boolean] = js.undefined
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: TimelineFeedResponseCaption = js.native
+  var caption: TimelineFeedResponseCaption
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var carousel_media: js.UndefOr[js.Array[TimelineFeedResponseCarouselMediaItem]] = js.native
+  var carousel_media: js.UndefOr[js.Array[TimelineFeedResponseCarouselMediaItem]] = js.undefined
   
-  var carousel_media_count: js.UndefOr[Double] = js.native
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
   
-  var carousel_media_type: js.UndefOr[Double] = js.native
+  var carousel_media_type: js.UndefOr[Double] = js.undefined
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var collapse_comments: js.UndefOr[Boolean] = js.native
+  var collapse_comments: js.UndefOr[Boolean] = js.undefined
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var comment_likes_enabled: Boolean = js.native
+  var comment_likes_enabled: Boolean
   
-  var comment_threading_enabled: Boolean = js.native
+  var comment_threading_enabled: Boolean
   
-  var device_timestamp: String | Double = js.native
+  var device_timestamp: String | Double
   
-  var direct_reply_to_author_enabled: Boolean = js.native
+  var direct_reply_to_author_enabled: Boolean
   
-  var dominant_color: js.UndefOr[String] = js.native
+  var dominant_color: js.UndefOr[String] = js.undefined
   
-  var dr_ad_type: js.UndefOr[Double] = js.native
+  var dr_ad_type: js.UndefOr[Double] = js.undefined
   
-  var expiring_at: js.UndefOr[Double] = js.native
+  var expiring_at: js.UndefOr[Double] = js.undefined
   
-  var facepile_top_likers: js.UndefOr[js.Array[TimelineFeedResponseFacepileTopLikersItem]] = js.native
+  var facepile_top_likers: js.UndefOr[js.Array[TimelineFeedResponseFacepileTopLikersItem]] = js.undefined
   
-  var fb_page_url: js.UndefOr[String] = js.native
+  var fb_page_url: js.UndefOr[String] = js.undefined
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var follower_count: js.UndefOr[Double] = js.native
+  var follower_count: js.UndefOr[Double] = js.undefined
   
-  var force_overlay: js.UndefOr[Boolean] = js.native
+  var force_overlay: js.UndefOr[Boolean] = js.undefined
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_liked: Boolean = js.native
+  var has_liked: Boolean
   
-  var has_more_comments: Boolean = js.native
+  var has_more_comments: Boolean
   
-  var hide_nux_text: js.UndefOr[Boolean] = js.native
+  var hide_nux_text: js.UndefOr[Boolean] = js.undefined
   
-  var iTunesItem: js.UndefOr[Null] = js.native
+  var iTunesItem: js.UndefOr[Null] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: js.UndefOr[TimelineFeedResponseImageVersions2] = js.native
+  var image_versions2: js.UndefOr[TimelineFeedResponseImageVersions2] = js.undefined
   
-  var injected: js.UndefOr[TimelineFeedResponseInjected] = js.native
+  var injected: js.UndefOr[TimelineFeedResponseInjected] = js.undefined
   
-  var inline_composer_display_condition: js.UndefOr[String] = js.native
+  var inline_composer_display_condition: js.UndefOr[String] = js.undefined
   
-  var inline_composer_imp_trigger_time: js.UndefOr[Double] = js.native
+  var inline_composer_imp_trigger_time: js.UndefOr[Double] = js.undefined
   
-  var inventory_source: String = js.native
+  var inventory_source: String
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_eof: Boolean = js.native
+  var is_eof: Boolean
   
-  var is_seen: Boolean = js.native
+  var is_seen: Boolean
   
-  var is_sidecar_child: js.UndefOr[Boolean] = js.native
+  var is_sidecar_child: js.UndefOr[Boolean] = js.undefined
   
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var link_hint_text: js.UndefOr[String] = js.native
+  var link_hint_text: js.UndefOr[String] = js.undefined
   
-  var link_text: js.UndefOr[String] = js.native
+  var link_text: js.UndefOr[String] = js.undefined
   
-  var lng: js.UndefOr[Double] = js.native
+  var lng: js.UndefOr[Double] = js.undefined
   
-  var location: js.UndefOr[TimelineFeedResponseLocation] = js.native
+  var location: js.UndefOr[TimelineFeedResponseLocation] = js.undefined
   
-  var max_num_visible_preview_comments: Double = js.native
+  var max_num_visible_preview_comments: Double
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var next_max_id: js.UndefOr[String] = js.native
+  var next_max_id: js.UndefOr[String] = js.undefined
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: js.UndefOr[Double] = js.native
+  var original_height: js.UndefOr[Double] = js.undefined
   
-  var original_width: js.UndefOr[Double] = js.native
+  var original_width: js.UndefOr[Double] = js.undefined
   
-  var overlay_subtitle: js.UndefOr[String] = js.native
+  var overlay_subtitle: js.UndefOr[String] = js.undefined
   
-  var overlay_text: js.UndefOr[String] = js.native
+  var overlay_text: js.UndefOr[String] = js.undefined
   
-  var overlay_title: js.UndefOr[String] = js.native
+  var overlay_title: js.UndefOr[String] = js.undefined
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var post_count: js.UndefOr[Double] = js.native
+  var post_count: js.UndefOr[Double] = js.undefined
   
-  var preview: js.UndefOr[String] = js.native
+  var preview: js.UndefOr[String] = js.undefined
   
-  var preview_comments: js.Array[TimelineFeedResponsePreviewCommentsItem] = js.native
+  var preview_comments: js.Array[TimelineFeedResponsePreviewCommentsItem]
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var top_likers: js.Array[String] = js.native
+  var top_likers: js.Array[String]
   
-  var user: TimelineFeedResponseUser = js.native
+  var user: TimelineFeedResponseUser
   
-  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[TimelineFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[TimelineFeedResponseVideoVersionsItem]] = js.undefined
   
-  var view_count: js.UndefOr[Double] = js.native
+  var view_count: js.UndefOr[Double] = js.undefined
 }
 object TimelineFeedResponseMediaOrAd {
   

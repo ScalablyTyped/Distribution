@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAuthorizationTokenResult extends StObject {
   
   /**
     *  The returned authentication token. 
     */
-  var authorizationToken: js.UndefOr[String] = js.native
+  var authorizationToken: js.UndefOr[String] = js.undefined
   
   /**
     *  A timestamp that specifies the date and time the authorization token expires. 
     */
-  var expiration: js.UndefOr[Timestamp] = js.native
+  var expiration: js.UndefOr[Timestamp] = js.undefined
 }
 object GetAuthorizationTokenResult {
   

@@ -6,12 +6,12 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.openfin.anon.HttpResponseCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinWindowStatic
-  extends /**
+  extends StObject
+     with /**
   * Class: Window
   *
   * new Window(options, callbackopt, errorCallbackopt)
@@ -33,7 +33,7 @@ Instantiable1[/* options */ WindowOption, OpenFinWindow]
     ]
      with Instantiable3[
       /* options */ WindowOption, 
-      js.UndefOr[/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]], 
+      (/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]) | (/* callback */ Unit), 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinWindow
     ] {

@@ -2,29 +2,27 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEasComplianceResults extends StObject {
   
-  var compliant: Boolean = js.native
+  var compliant: Boolean
   
-  var disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult = js.native
+  var disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult
   
-  var maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult = js.native
+  var maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult
   
-  var maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult = js.native
+  var maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult
   
-  var minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult = js.native
+  var minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult
   
-  var minPasswordLengthResult: EasMinPasswordLengthResult = js.native
+  var minPasswordLengthResult: EasMinPasswordLengthResult
   
-  var passwordExpirationResult: EasPasswordExpirationResult = js.native
+  var passwordExpirationResult: EasPasswordExpirationResult
   
-  var passwordHistoryResult: EasPasswordHistoryResult = js.native
+  var passwordHistoryResult: EasPasswordHistoryResult
   
-  var requireEncryptionResult: EasRequireEncryptionResult = js.native
+  var requireEncryptionResult: EasRequireEncryptionResult
 }
 object IEasComplianceResults {
   

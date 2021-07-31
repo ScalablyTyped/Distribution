@@ -2,27 +2,27 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonMenuShareTimeline extends BaseParams {
+trait IonMenuShareTimeline
+  extends StObject
+     with BaseParams {
   
   // 用户取消分享后执行的回调函数
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   // 分享链接
-  var imgUrl: String = js.native
+  var imgUrl: String
   
   // 分享标题
-  var link: String = js.native
+  var link: String
   
   // 分享图标
   // 用户确认分享后执行的回调函数
   @JSName("success")
-  def success_MIonMenuShareTimeline(): Unit = js.native
+  def success_MIonMenuShareTimeline(): Unit
   
-  var title: String = js.native
+  var title: String
 }
 object IonMenuShareTimeline {
   

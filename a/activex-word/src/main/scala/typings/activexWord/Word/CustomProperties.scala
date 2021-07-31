@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomProperties extends StObject {
   
-  def Add(Name: String, Value: String): CustomProperty = js.native
+  def Add(Name: String, Value: String): CustomProperty
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): CustomProperty = js.native
+  def Item(Index: js.Any): CustomProperty
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.CustomProperties_typekey")
-  var WordDotCustomProperties_typekey: CustomProperties = js.native
+  var WordDotCustomProperties_typekey: CustomProperties
 }
 object CustomProperties {
   

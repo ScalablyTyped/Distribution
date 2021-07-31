@@ -4,7 +4,6 @@ import typings.naverWhale.whale.topSites.MostVisitedURL
 import typings.naverWhale.whale.topSites.MostVisitedURL2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topSites {
@@ -13,16 +12,13 @@ object topSites {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("whale.topSites.add")
-  @js.native
-  def add(url: String, title: String): Unit = js.native
-  @JSGlobal("whale.topSites.add")
-  @js.native
-  def add(url: String, title: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def add(url: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(url.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def add(url: String, title: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(url.asInstanceOf[js.Any], title.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("whale.topSites.block")
-  @js.native
-  def block(url: String): Unit = js.native
+  @scala.inline
+  def block(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 자주 가는 사이트에서 해당 url을 삭제합니다.
@@ -35,26 +31,20 @@ object topSites {
   @scala.inline
   def delete_=(x: js.Function1[/* url */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("whale.topSites.get")
-  @js.native
-  def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = js.native
+  @scala.inline
+  def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("whale.topSites.isBlocked")
-  @js.native
-  def isBlocked(url: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isBlocked(url: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBlocked")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("whale.topSites.search")
-  @js.native
-  def search(term: String, count: Double): Unit = js.native
-  @JSGlobal("whale.topSites.search")
-  @js.native
-  def search(term: String, count: Double, callback: js.Function1[/* result */ js.Array[MostVisitedURL2], Unit]): Unit = js.native
+  @scala.inline
+  def search(term: String, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(term.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def search(term: String, count: Double, callback: js.Function1[/* result */ js.Array[MostVisitedURL2], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(term.asInstanceOf[js.Any], count.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("whale.topSites.unblock")
-  @js.native
-  def unblock(url: String): Unit = js.native
+  @scala.inline
+  def unblock(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unblock")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("whale.topSites.update")
-  @js.native
-  def update(urls: js.Array[MostVisitedURL2]): js.Any = js.native
+  @scala.inline
+  def update(urls: js.Array[MostVisitedURL2]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

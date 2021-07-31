@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkloadIdentityPoolsResource extends StObject {
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
   
-  var providers: ProvidersResource = js.native
+  var providers: ProvidersResource
 }
 object WorkloadIdentityPoolsResource {
   

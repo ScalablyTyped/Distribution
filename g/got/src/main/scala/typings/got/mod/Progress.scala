@@ -2,23 +2,21 @@ package typings.got.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress extends StObject {
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var total: Double | Null = js.native
+  var total: Double | Null
   
-  var transferred: Double = js.native
+  var transferred: Double
 }
 object Progress {
   
   @scala.inline
   def apply(percent: Double, transferred: Double): Progress = {
-    val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any], total = null)
     __obj.asInstanceOf[Progress]
   }
   

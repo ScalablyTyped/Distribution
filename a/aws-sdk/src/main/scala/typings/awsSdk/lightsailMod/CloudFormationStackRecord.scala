@@ -2,51 +2,49 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFormationStackRecord extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the CloudFormation stack record.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date when the CloudFormation stack record was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * A list of objects describing the destination service, which is AWS CloudFormation, and the Amazon Resource Name (ARN) of the AWS CloudFormation stack.
     */
-  var destinationInfo: js.UndefOr[DestinationInfo] = js.native
+  var destinationInfo: js.UndefOr[DestinationInfo] = js.undefined
   
   /**
     * A list of objects describing the Availability Zone and AWS Region of the CloudFormation stack record.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the CloudFormation stack record. It starts with CloudFormationStackRecord followed by a GUID.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., CloudFormationStackRecord).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * A list of objects describing the source of the CloudFormation stack record.
     */
-  var sourceInfo: js.UndefOr[CloudFormationStackRecordSourceInfoList] = js.native
+  var sourceInfo: js.UndefOr[CloudFormationStackRecordSourceInfoList] = js.undefined
   
   /**
     * The current state of the CloudFormation stack record.
     */
-  var state: js.UndefOr[RecordState] = js.native
+  var state: js.UndefOr[RecordState] = js.undefined
 }
 object CloudFormationStackRecord {
   

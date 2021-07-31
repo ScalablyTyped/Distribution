@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropRowRangeRequest extends StObject {
   
   /** Delete all rows in the table. Setting this to false is a no-op. */
-  var deleteAllDataFromTable: js.UndefOr[Boolean] = js.native
+  var deleteAllDataFromTable: js.UndefOr[Boolean] = js.undefined
   
   /** Delete all rows that start with this row key prefix. Prefix cannot be zero length. */
-  var rowKeyPrefix: js.UndefOr[String] = js.native
+  var rowKeyPrefix: js.UndefOr[String] = js.undefined
 }
 object DropRowRangeRequest {
   

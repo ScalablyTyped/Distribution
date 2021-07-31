@@ -2,30 +2,28 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message to list customers of the vendor.
   */
-@js.native
 trait SchemaListVendorCustomersResponse extends StObject {
   
   /**
     * List of customers of the vendor.
     */
-  var customers: js.UndefOr[js.Array[SchemaCompany]] = js.native
+  var customers: js.UndefOr[js.Array[SchemaCompany]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Omitted if no further
     * results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total count of items in the list irrespective of pagination.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaListVendorCustomersResponse {
   

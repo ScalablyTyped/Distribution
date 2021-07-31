@@ -3,31 +3,29 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFieldProps extends StObject {
   
   /**
     * Custom css class name
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Default value for the search field
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * callback funciton to call when a key is released
     */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ KeyboardEvent[_], Unit]] = js.native
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ KeyboardEvent[js.Any], Unit]] = js.undefined
   
   /**
     * Placeholder text for the search field
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
 }
 object SearchFieldProps {
   
@@ -53,7 +51,7 @@ object SearchFieldProps {
     def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setOnKeyUp(value: /* e */ KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    def setOnKeyUp(value: /* e */ KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)

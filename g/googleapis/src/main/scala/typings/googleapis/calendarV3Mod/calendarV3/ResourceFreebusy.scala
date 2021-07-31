@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Freebusy")
@@ -30,7 +29,7 @@ class ResourceFreebusy protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaFreeBusyResponse]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFreeBusyResponse] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(params: ParamsResourceFreebusyQuery): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(params: ParamsResourceFreebusyQuery, callback: BodyResponseCallback[SchemaFreeBusyResponse]): Unit = js.native
   def query(

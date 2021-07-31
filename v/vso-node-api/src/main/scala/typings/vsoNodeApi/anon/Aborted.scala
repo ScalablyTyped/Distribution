@@ -2,43 +2,41 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aborted extends StObject {
   
-  var aborted: scala.Double = js.native
+  var aborted: scala.Double
   
-  var blocked: scala.Double = js.native
+  var blocked: scala.Double
   
-  var error: scala.Double = js.native
+  var error: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var inconclusive: scala.Double = js.native
+  var inconclusive: scala.Double
   
-  var maxValue: scala.Double = js.native
+  var maxValue: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var notApplicable: scala.Double = js.native
+  var notApplicable: scala.Double
   
-  var notExecuted: scala.Double = js.native
+  var notExecuted: scala.Double
   
-  var notImpacted: scala.Double = js.native
+  var notImpacted: scala.Double
   
-  var passed: scala.Double = js.native
+  var passed: scala.Double
   
-  var paused: scala.Double = js.native
+  var paused: scala.Double
   
-  var timeout: scala.Double = js.native
+  var timeout: scala.Double
   
-  var unspecified: scala.Double = js.native
+  var unspecified: scala.Double
   
-  var warning: scala.Double = js.native
+  var warning: scala.Double
 }
 object Aborted {
   

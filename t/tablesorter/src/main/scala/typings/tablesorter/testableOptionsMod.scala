@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testableOptionsMod {
   
-  @js.native
   trait TestableOptions extends StObject {
     
     /**
       * A value indicating whether tests should be skipped.
       */
-    var skipTest: js.UndefOr[Boolean] = js.native
+    var skipTest: js.UndefOr[Boolean] = js.undefined
   }
   object TestableOptions {
     

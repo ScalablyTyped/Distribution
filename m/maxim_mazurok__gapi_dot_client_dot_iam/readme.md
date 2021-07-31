@@ -10,9 +10,9 @@ TypeScript typings for Identity and Access Management (IAM) API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.iam |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 880 |
+| # downloads        | 973 |
 | # stars            | 0 |
 
 ## Links

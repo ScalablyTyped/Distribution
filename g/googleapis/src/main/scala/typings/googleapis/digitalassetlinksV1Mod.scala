@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object digitalassetlinksV1Mod {
@@ -92,7 +91,7 @@ object digitalassetlinksV1Mod {
         */
       def check(): GaxiosPromise[SchemaCheckResponse] = js.native
       def check(callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
-      def check(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
+      def check(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
       def check(params: ParamsResourceAssetlinksCheck): GaxiosPromise[SchemaCheckResponse] = js.native
       def check(params: ParamsResourceAssetlinksCheck, callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
       def check(
@@ -147,7 +146,7 @@ object digitalassetlinksV1Mod {
         */
       def list(): GaxiosPromise[SchemaListResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListResponse] = js.native
       def list(params: ParamsResourceStatementsList): GaxiosPromise[SchemaListResponse] = js.native
       def list(params: ParamsResourceStatementsList, callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
       def list(
@@ -163,16 +162,17 @@ object digitalassetlinksV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -184,13 +184,14 @@ object digitalassetlinksV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceAssetlinksCheck extends StandardParameters {
+    trait ParamsResourceAssetlinksCheck
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Query string for the relation.  We identify relations with strings of the
@@ -205,7 +206,7 @@ object digitalassetlinksV1Mod {
         * `delegate_permission/common.handle_all_urls` matches an asset link with
         * relation `delegate_permission/common.handle_all_urls`.
         */
-      var relation: js.UndefOr[String] = js.native
+      var relation: js.UndefOr[String] = js.undefined
       
       /**
         * The uppercase SHA-265 fingerprint of the certificate.  From the PEM
@@ -224,7 +225,7 @@ object digitalassetlinksV1Mod {
         * representations of each octet, separated by colons).
         */
       @JSName("source.androidApp.certificate.sha256Fingerprint")
-      var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+      var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
       
       /**
         * Android App assets are naturally identified by their Java package name.
@@ -232,7 +233,7 @@ object digitalassetlinksV1Mod {
         * `com.google.android.apps.maps`. REQUIRED
         */
       @JSName("source.androidApp.packageName")
-      var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+      var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
       
       /**
         * Web assets are identified by a URL that contains only the scheme,
@@ -254,7 +255,7 @@ object digitalassetlinksV1Mod {
         * `https://www.google.com:444/`  (port does not match) REQUIRED
         */
       @JSName("source.web.site")
-      var sourceDotwebDotsite: js.UndefOr[String] = js.native
+      var sourceDotwebDotsite: js.UndefOr[String] = js.undefined
       
       /**
         * The uppercase SHA-265 fingerprint of the certificate.  From the PEM
@@ -273,7 +274,7 @@ object digitalassetlinksV1Mod {
         * representations of each octet, separated by colons).
         */
       @JSName("target.androidApp.certificate.sha256Fingerprint")
-      var targetDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+      var targetDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
       
       /**
         * Android App assets are naturally identified by their Java package name.
@@ -281,7 +282,7 @@ object digitalassetlinksV1Mod {
         * `com.google.android.apps.maps`. REQUIRED
         */
       @JSName("target.androidApp.packageName")
-      var targetDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+      var targetDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
       
       /**
         * Web assets are identified by a URL that contains only the scheme,
@@ -303,7 +304,7 @@ object digitalassetlinksV1Mod {
         * `https://www.google.com:444/`  (port does not match) REQUIRED
         */
       @JSName("target.web.site")
-      var targetDotwebDotsite: js.UndefOr[String] = js.native
+      var targetDotwebDotsite: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceAssetlinksCheck {
       
@@ -366,13 +367,14 @@ object digitalassetlinksV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatementsList extends StandardParameters {
+    trait ParamsResourceStatementsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Use only associations that match the specified relation.  See the
@@ -384,7 +386,7 @@ object digitalassetlinksV1Mod {
         * `delegate_permission/common.handle_all_urls` matches an asset link with
         * relation `delegate_permission/common.handle_all_urls`.
         */
-      var relation: js.UndefOr[String] = js.native
+      var relation: js.UndefOr[String] = js.undefined
       
       /**
         * The uppercase SHA-265 fingerprint of the certificate.  From the PEM
@@ -403,7 +405,7 @@ object digitalassetlinksV1Mod {
         * representations of each octet, separated by colons).
         */
       @JSName("source.androidApp.certificate.sha256Fingerprint")
-      var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+      var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
       
       /**
         * Android App assets are naturally identified by their Java package name.
@@ -411,7 +413,7 @@ object digitalassetlinksV1Mod {
         * `com.google.android.apps.maps`. REQUIRED
         */
       @JSName("source.androidApp.packageName")
-      var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+      var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
       
       /**
         * Web assets are identified by a URL that contains only the scheme,
@@ -433,7 +435,7 @@ object digitalassetlinksV1Mod {
         * `https://www.google.com:444/`  (port does not match) REQUIRED
         */
       @JSName("source.web.site")
-      var sourceDotwebDotsite: js.UndefOr[String] = js.native
+      var sourceDotwebDotsite: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceStatementsList {
       
@@ -481,7 +483,6 @@ object digitalassetlinksV1Mod {
     /**
       * Describes an android app asset.
       */
-    @js.native
     trait SchemaAndroidAppAsset extends StObject {
       
       /**
@@ -497,14 +498,14 @@ object digitalassetlinksV1Mod {
         * statements contain syntactic sugar to easily let you specify apps that
         * are known by multiple certificates.) REQUIRED
         */
-      var certificate: js.UndefOr[SchemaCertificateInfo] = js.native
+      var certificate: js.UndefOr[SchemaCertificateInfo] = js.undefined
       
       /**
         * Android App assets are naturally identified by their Java package name.
         * For example, the Google Maps app uses the package name
         * `com.google.android.apps.maps`. REQUIRED
         */
-      var packageName: js.UndefOr[String] = js.native
+      var packageName: js.UndefOr[String] = js.undefined
     }
     object SchemaAndroidAppAsset {
       
@@ -537,18 +538,17 @@ object digitalassetlinksV1Mod {
       * Examples of assets are websites, Android apps, Twitter feeds, and Plus
       * Pages.
       */
-    @js.native
     trait SchemaAsset extends StObject {
       
       /**
         * Set if this is an Android App asset.
         */
-      var androidApp: js.UndefOr[SchemaAndroidAppAsset] = js.native
+      var androidApp: js.UndefOr[SchemaAndroidAppAsset] = js.undefined
       
       /**
         * Set if this is a web asset.
         */
-      var web: js.UndefOr[SchemaWebAsset] = js.native
+      var web: js.UndefOr[SchemaWebAsset] = js.undefined
     }
     object SchemaAsset {
       
@@ -578,7 +578,6 @@ object digitalassetlinksV1Mod {
     /**
       * Describes an X509 certificate.
       */
-    @js.native
     trait SchemaCertificateInfo extends StObject {
       
       /**
@@ -597,7 +596,7 @@ object digitalassetlinksV1Mod {
         * and represent the result as a hexstring (that is, uppercase hexadecimal
         * representations of each octet, separated by colons).
         */
-      var sha256Fingerprint: js.UndefOr[String] = js.native
+      var sha256Fingerprint: js.UndefOr[String] = js.undefined
     }
     object SchemaCertificateInfo {
       
@@ -621,7 +620,6 @@ object digitalassetlinksV1Mod {
     /**
       * Response message for the CheckAssetLinks call.
       */
-    @js.native
     trait SchemaCheckResponse extends StObject {
       
       /**
@@ -633,24 +631,24 @@ object digitalassetlinksV1Mod {
         * You should not attempt to programmatically parse this data.  For
         * programmatic access, use the error_code field below.
         */
-      var debugString: js.UndefOr[String] = js.native
+      var debugString: js.UndefOr[String] = js.undefined
       
       /**
         * Error codes that describe the result of the Check operation.
         */
-      var errorCode: js.UndefOr[js.Array[String]] = js.native
+      var errorCode: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Set to true if the assets specified in the request are linked by the
         * relation specified in the request.
         */
-      var linked: js.UndefOr[Boolean] = js.native
+      var linked: js.UndefOr[Boolean] = js.undefined
       
       /**
         * From serving time, how much longer the response should be considered
         * valid barring further updates. REQUIRED
         */
-      var maxAge: js.UndefOr[String] = js.native
+      var maxAge: js.UndefOr[String] = js.undefined
     }
     object SchemaCheckResponse {
       
@@ -695,7 +693,6 @@ object digitalassetlinksV1Mod {
     /**
       * Response message for the List call.
       */
-    @js.native
     trait SchemaListResponse extends StObject {
       
       /**
@@ -707,23 +704,23 @@ object digitalassetlinksV1Mod {
         * You should not attempt to programmatically parse this data.  For
         * programmatic access, use the error_code field below.
         */
-      var debugString: js.UndefOr[String] = js.native
+      var debugString: js.UndefOr[String] = js.undefined
       
       /**
         * Error codes that describe the result of the List operation.
         */
-      var errorCode: js.UndefOr[js.Array[String]] = js.native
+      var errorCode: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * From serving time, how much longer the response should be considered
         * valid barring further updates. REQUIRED
         */
-      var maxAge: js.UndefOr[String] = js.native
+      var maxAge: js.UndefOr[String] = js.undefined
       
       /**
         * A list of all the matching statements that have been found.
         */
-      var statements: js.UndefOr[js.Array[SchemaStatement]] = js.native
+      var statements: js.UndefOr[js.Array[SchemaStatement]] = js.undefined
     }
     object SchemaListResponse {
       
@@ -776,7 +773,6 @@ object digitalassetlinksV1Mod {
       * assets, please refer to our [API documentation landing
       * page](/digital-asset-links/v1/getting-started).
       */
-    @js.native
     trait SchemaStatement extends StObject {
       
       /**
@@ -791,17 +787,17 @@ object digitalassetlinksV1Mod {
         * list of supported relations.  Example:
         * `delegate_permission/common.handle_all_urls` REQUIRED
         */
-      var relation: js.UndefOr[String] = js.native
+      var relation: js.UndefOr[String] = js.undefined
       
       /**
         * Every statement has a source asset. REQUIRED
         */
-      var source: js.UndefOr[SchemaAsset] = js.native
+      var source: js.UndefOr[SchemaAsset] = js.undefined
       
       /**
         * Every statement has a target asset. REQUIRED
         */
-      var target: js.UndefOr[SchemaAsset] = js.native
+      var target: js.UndefOr[SchemaAsset] = js.undefined
     }
     object SchemaStatement {
       
@@ -837,7 +833,6 @@ object digitalassetlinksV1Mod {
     /**
       * Describes a web asset.
       */
-    @js.native
     trait SchemaWebAsset extends StObject {
       
       /**
@@ -860,7 +855,7 @@ object digitalassetlinksV1Mod {
         * `https://google.com/`          (hostname does not match)   *
         * `https://www.google.com:444/`  (port does not match) REQUIRED
         */
-      var site: js.UndefOr[String] = js.native
+      var site: js.UndefOr[String] = js.undefined
     }
     object SchemaWebAsset {
       
@@ -881,68 +876,67 @@ object digitalassetlinksV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

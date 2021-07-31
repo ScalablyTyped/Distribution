@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DensifyParametersProperties extends StObject {
   
   /**
@@ -19,28 +17,28 @@ trait DensifyParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geodesic)
     */
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The array of geometries to be densified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geometries)
     */
-  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.native
+  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
     * The length unit of `maxSegmentLength`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#lengthUnit)
     */
-  var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
     * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#maxSegmentLength)
     */
-  var maxSegmentLength: js.UndefOr[Double] = js.native
+  var maxSegmentLength: js.UndefOr[Double] = js.undefined
 }
 object DensifyParametersProperties {
   

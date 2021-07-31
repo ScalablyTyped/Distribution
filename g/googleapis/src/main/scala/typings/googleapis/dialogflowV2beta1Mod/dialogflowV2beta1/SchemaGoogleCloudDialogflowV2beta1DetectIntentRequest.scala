@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to detect user&#39;s intent.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest extends StObject {
     * should be populated iff `query_input` is set to an input audio config. A
     * single request can contain up to 1 minute of speech audio data.
     */
-  var inputAudio: js.UndefOr[String] = js.native
+  var inputAudio: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Instructs the speech synthesizer how to generate the output
     * audio. If this field is not set and agent-level speech synthesizer is not
     * configured, no output audio is generated.
     */
-  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] = js.native
+  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] = js.undefined
   
   /**
     * Required. The input specification. It can be set to:  1.  an audio config
@@ -31,12 +29,12 @@ trait SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest extends StObject {
     * a conversational query in the form of text, or  3.  an event that
     * specifies which intent to trigger.
     */
-  var queryInput: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryInput] = js.native
+  var queryInput: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryInput] = js.undefined
   
   /**
     * Optional. The parameters of this query.
     */
-  var queryParams: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryParameters] = js.native
+  var queryParams: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryParameters] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest {
   

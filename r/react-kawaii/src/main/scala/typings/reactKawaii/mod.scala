@@ -3,7 +3,6 @@ package typings.reactKawaii
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -82,14 +81,13 @@ object mod {
     def shocked: typings.reactKawaii.reactKawaiiStrings.shocked = "shocked".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.shocked]
   }
   
-  @js.native
   trait KawaiiProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var mood: js.UndefOr[KawaiiMood] = js.native
+    var mood: js.UndefOr[KawaiiMood] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object KawaiiProps {
     

@@ -12,17 +12,15 @@ import typings.devextreme.devextremeStrings.rightCenter
 import typings.devextreme.devextremeStrings.rightTop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationUrl extends StObject {
   
   var location: js.UndefOr[
     center | centerBottom | centerTop | full | leftBottom | leftCenter | leftTop | rightBottom | rightCenter | rightTop
-  ] = js.native
+  ] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object LocationUrl {
   

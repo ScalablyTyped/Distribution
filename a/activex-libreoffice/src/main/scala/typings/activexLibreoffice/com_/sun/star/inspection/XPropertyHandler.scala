@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,8 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see LineDescriptor
   * @since OOo 2.0.3
   */
-@js.native
-trait XPropertyHandler extends XComponent {
+trait XPropertyHandler
+  extends StObject
+     with XComponent {
   
   /**
     * retrieve the actuating properties which this handler is interested in
@@ -39,7 +39,7 @@ trait XPropertyHandler extends XComponent {
     *
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called
     */
-  val ActuatingProperties: SafeArray[String] = js.native
+  val ActuatingProperties: SafeArray[String]
   
   /**
     * returns the properties which are to be superseded by this handler
@@ -66,7 +66,7 @@ trait XPropertyHandler extends XComponent {
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called.
     * @see XObjectInspectorModel.HandlerFactories
     */
-  val SupersededProperties: SafeArray[String] = js.native
+  val SupersededProperties: SafeArray[String]
   
   /**
     * returns the properties which the handler can handle
@@ -77,7 +77,7 @@ trait XPropertyHandler extends XComponent {
     *
     * In the case of returning an empty sequence here, the property handler is ignored by all further processing in the object inspector.
     */
-  val SupportedProperties: SafeArray[Property] = js.native
+  val SupportedProperties: SafeArray[Property]
   
   /**
     * updates the UI of dependent properties when the value of a certain actuating property changed
@@ -97,7 +97,7 @@ trait XPropertyHandler extends XComponent {
     OldValue: js.Any,
     InspectorUI: XObjectInspectorUI,
     FirstTimeInit: Boolean
-  ): Unit = js.native
+  ): Unit
   
   /**
     * registers a listener for notification about property value changes
@@ -112,7 +112,7 @@ trait XPropertyHandler extends XComponent {
     * @see removePropertyChangeListener
     * @throws com::sun::star::lang::NullPointerException if the listener is `NULL`
     */
-  def addPropertyChangeListener(Listener: XPropertyChangeListener): Unit = js.native
+  def addPropertyChangeListener(Listener: XPropertyChangeListener): Unit
   
   /**
     * converts a given property value to a control-compatible value
@@ -138,7 +138,7 @@ trait XPropertyHandler extends XComponent {
     * @see getPropertyValue
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def convertToControlValue(PropertyName: String, PropertyValue: js.Any, ControlValueType: `type`): js.Any = js.native
+  def convertToControlValue(PropertyName: String, PropertyValue: js.Any, ControlValueType: `type`): js.Any
   
   /**
     * converts a given control-compatible value to a property value
@@ -156,7 +156,7 @@ trait XPropertyHandler extends XComponent {
     * @see getPropertyValue
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def convertToPropertyValue(PropertyName: String, ControlValue: js.Any): js.Any = js.native
+  def convertToPropertyValue(PropertyName: String, ControlValue: js.Any): js.Any
   
   /**
     * describes the UI to be used to represent the property
@@ -168,7 +168,7 @@ trait XPropertyHandler extends XComponent {
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by this handler
     * @throws com::sun::star::lang::NullPointerException if ControlFactory is `NULL` .
     */
-  def describePropertyLine(PropertyName: String, ControlFactory: XPropertyControlFactory): LineDescriptor = js.native
+  def describePropertyLine(PropertyName: String, ControlFactory: XPropertyControlFactory): LineDescriptor
   
   /**
     * retrieve the actuating properties which this handler is interested in
@@ -183,21 +183,21 @@ trait XPropertyHandler extends XComponent {
     *
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called
     */
-  def getActuatingProperties(): SafeArray[String] = js.native
+  def getActuatingProperties(): SafeArray[String]
   
   /**
     * returns the state of a property
     * @param PropertyName the name of the property whose state is to be retrieved
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def getPropertyState(PropertyName: String): PropertyState = js.native
+  def getPropertyState(PropertyName: String): PropertyState
   
   /**
     * retrieves the current value of a property
     * @param PropertyName the name of the property whose value is to be retrieved
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def getPropertyValue(PropertyName: String): js.Any = js.native
+  def getPropertyValue(PropertyName: String): js.Any
   
   /**
     * returns the properties which are to be superseded by this handler
@@ -224,7 +224,7 @@ trait XPropertyHandler extends XComponent {
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called.
     * @see XObjectInspectorModel.HandlerFactories
     */
-  def getSupersededProperties(): SafeArray[String] = js.native
+  def getSupersededProperties(): SafeArray[String]
   
   /**
     * returns the properties which the handler can handle
@@ -235,14 +235,14 @@ trait XPropertyHandler extends XComponent {
     *
     * In the case of returning an empty sequence here, the property handler is ignored by all further processing in the object inspector.
     */
-  def getSupportedProperties(): SafeArray[Property] = js.native
+  def getSupportedProperties(): SafeArray[Property]
   
   /**
     * binds the property handler to a new component
     * @param Component the component to inspect. Must not be `NULL`
     * @throws com::sun::star::lang::NullPointerException if the component is `NULL`
     */
-  def inspect(Component: XInterface): Unit = js.native
+  def inspect(Component: XInterface): Unit
   
   /**
     * determines whether a given property, which the handler is responsible for, is composable.
@@ -253,7 +253,7 @@ trait XPropertyHandler extends XComponent {
     * @param PropertyName the name of the property whose composability is to be determined
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def isComposable(PropertyName: String): Boolean = js.native
+  def isComposable(PropertyName: String): Boolean
   
   /**
     * called when a browse button belonging to a property UI representation has been clicked
@@ -287,13 +287,13 @@ trait XPropertyHandler extends XComponent {
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     * @throws com::sun::star::lang::NullPointerException if InspectorUI is `NULL`
     */
-  def onInteractivePropertySelection(PropertyName: String, Primary: Boolean, outData: js.Array[_], InspectorUI: XObjectInspectorUI): InteractiveSelectionResult = js.native
+  def onInteractivePropertySelection(PropertyName: String, Primary: Boolean, outData: js.Array[js.Any], InspectorUI: XObjectInspectorUI): InteractiveSelectionResult
   
   /**
     * revokes a listener for notification about property value changes
     * @see addPropertyChangeListener
     */
-  def removePropertyChangeListener(Listener: XPropertyChangeListener): Unit = js.native
+  def removePropertyChangeListener(Listener: XPropertyChangeListener): Unit
   
   /**
     * sets the value of a property
@@ -301,7 +301,7 @@ trait XPropertyHandler extends XComponent {
     * @param Value the property value to set
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def setPropertyValue(PropertyName: String, Value: js.Any): Unit = js.native
+  def setPropertyValue(PropertyName: String, Value: js.Any): Unit
   
   /**
     * suspends the handler
@@ -318,7 +318,7 @@ trait XPropertyHandler extends XComponent {
     * @param Suspend Whether the handler is to be suspended `TRUE` or reactivated ( `FALSE` ). The latter happens if a handler was successfully suspended, but
     * @returns `TRUE` if the handler does allow suspension, `FALSE` if it vetoes it.
     */
-  def suspend(Suspend: Boolean): Boolean = js.native
+  def suspend(Suspend: Boolean): Boolean
 }
 object XPropertyHandler {
   
@@ -342,7 +342,7 @@ object XPropertyHandler {
     getSupportedProperties: () => SafeArray[Property],
     inspect: XInterface => Unit,
     isComposable: String => Boolean,
-    onInteractivePropertySelection: (String, Boolean, js.Array[_], XObjectInspectorUI) => InteractiveSelectionResult,
+    onInteractivePropertySelection: (String, Boolean, js.Array[js.Any], XObjectInspectorUI) => InteractiveSelectionResult,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
@@ -397,7 +397,7 @@ object XPropertyHandler {
     def setIsComposable(value: String => Boolean): Self = StObject.set(x, "isComposable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[_], XObjectInspectorUI) => InteractiveSelectionResult): Self = StObject.set(x, "onInteractivePropertySelection", js.Any.fromFunction4(value))
+    def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[js.Any], XObjectInspectorUI) => InteractiveSelectionResult): Self = StObject.set(x, "onInteractivePropertySelection", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRemovePropertyChangeListener(value: XPropertyChangeListener => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction1(value))

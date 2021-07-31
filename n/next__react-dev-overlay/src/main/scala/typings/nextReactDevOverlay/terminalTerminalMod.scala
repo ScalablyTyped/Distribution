@@ -3,7 +3,6 @@ package typings.nextReactDevOverlay
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object terminalTerminalMod {
@@ -12,10 +11,9 @@ object terminalTerminalMod {
   @js.native
   val Terminal: FC[TerminalProps] = js.native
   
-  @js.native
   trait TerminalProps extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object TerminalProps {
     

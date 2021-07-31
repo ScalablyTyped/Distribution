@@ -2,39 +2,39 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerViewProperties extends LayerViewProperties {
+trait FeatureLayerViewProperties
+  extends StObject
+     with LayerViewProperties {
   
   /**
     * The effect applied to the layer view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#effect)
     */
-  var effect: js.UndefOr[FeatureEffectProperties] = js.native
+  var effect: js.UndefOr[FeatureEffectProperties] = js.undefined
   
   /**
     * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter)
     */
-  var filter: js.UndefOr[FeatureFilterProperties] = js.native
+  var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
     * The maximum number of features that can be displayed at a time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#maximumNumberOfFeatures)
     */
-  var maximumNumberOfFeatures: js.UndefOr[Double] = js.native
+  var maximumNumberOfFeatures: js.UndefOr[Double] = js.undefined
   
   /**
     * Signifies whether the maximum number of features has been exceeded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#maximumNumberOfFeaturesExceeded)
     */
-  var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.native
+  var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureLayerViewProperties {
   

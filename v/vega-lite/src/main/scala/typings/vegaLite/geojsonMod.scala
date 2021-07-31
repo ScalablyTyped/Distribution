@@ -7,7 +7,6 @@ import typings.vegaTypings.transformMod.GeoJSONTransform
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geojsonMod {
@@ -17,22 +16,12 @@ object geojsonMod {
   class GeoJSONNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode) = this()
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef]) = this()
-    def this(parent: DataFlowNode, fields: js.UndefOr[scala.Nothing], geojson: String) = this()
+    def this(parent: DataFlowNode, fields: Unit, geojson: String) = this()
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef], geojson: String) = this()
-    def this(
-      parent: DataFlowNode,
-      fields: js.UndefOr[scala.Nothing],
-      geojson: js.UndefOr[scala.Nothing],
-      signal: String
-    ) = this()
-    def this(parent: DataFlowNode, fields: js.UndefOr[scala.Nothing], geojson: String, signal: String) = this()
-    def this(
-      parent: DataFlowNode,
-      fields: Vector2[String | ExprRef],
-      geojson: js.UndefOr[scala.Nothing],
-      signal: String
-    ) = this()
+    def this(parent: DataFlowNode, fields: Unit, geojson: String, signal: String) = this()
+    def this(parent: DataFlowNode, fields: Unit, geojson: Unit, signal: String) = this()
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef], geojson: String, signal: String) = this()
+    def this(parent: DataFlowNode, fields: Vector2[String | ExprRef], geojson: Unit, signal: String) = this()
     
     def assemble(): GeoJSONTransform = js.native
     
@@ -45,8 +34,11 @@ object geojsonMod {
   /* static members */
   object GeoJSONNode {
     
-    @JSImport("vega-lite/build/src/compile/data/geojson", "GeoJSONNode.parseAll")
+    @JSImport("vega-lite/build/src/compile/data/geojson", "GeoJSONNode")
     @js.native
-    def parseAll(parent: DataFlowNode, model: UnitModel): DataFlowNode = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def parseAll(parent: DataFlowNode, model: UnitModel): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
   }
 }

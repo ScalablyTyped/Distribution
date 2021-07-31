@@ -2,7 +2,6 @@ package typings.tsNameof
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -18,15 +17,16 @@ object global {
       *
       * @param obj An expression for which the last identifier will be parsed.
       */
+    @scala.inline
+    def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply[T](): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+    @scala.inline
+    def apply[T](func: js.Function1[/* obj */ T, js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[String]
+    
     @JSGlobal("nameof")
     @js.native
-    def apply(obj: js.Any): String = js.native
-    @JSGlobal("nameof")
-    @js.native
-    def apply[T](): String = js.native
-    @JSGlobal("nameof")
-    @js.native
-    def apply[T](func: js.Function1[/* obj */ T, _]): String = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets the string representation of the entire given expression.
@@ -40,12 +40,10 @@ object global {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
-    @JSGlobal("nameof.full")
-    @js.native
-    def full(obj: js.Any): String = js.native
-    @JSGlobal("nameof.full")
-    @js.native
-    def full(obj: js.Any, periodIndex: Double): String = js.native
+    @scala.inline
+    def full(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def full(obj: js.Any, periodIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(obj.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Gets the string representation of the entire type parameter expression.
       *
@@ -59,9 +57,8 @@ object global {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
-    @JSGlobal("nameof.full")
-    @js.native
-    def full[T](): String = js.native
+    @scala.inline
+    def full[T](): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")().asInstanceOf[String]
     /**
       * Gets the string representation of the entire resultant expression.
       *
@@ -75,15 +72,12 @@ object global {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
-    @JSGlobal("nameof.full")
-    @js.native
-    def full[T](func: js.Function1[/* obj */ T, _]): String = js.native
-    @JSGlobal("nameof.full")
-    @js.native
-    def full[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): String = js.native
-    @JSGlobal("nameof.full")
-    @js.native
-    def full[T](periodIndex: Double): String = js.native
+    @scala.inline
+    def full[T](func: js.Function1[/* obj */ T, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")(func.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def full[T](func: js.Function1[/* obj */ T, js.Any], periodIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(func.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def full[T](periodIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")(periodIndex.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Embeds an expression into the string representation of the result of nameof.full.
@@ -92,9 +86,8 @@ object global {
       *
       * @param value The value to interpolate.
       */
-    @JSGlobal("nameof.interpolate")
-    @js.native
-    def interpolate[T](value: T): T = js.native
+    @scala.inline
+    def interpolate[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Gets an array of strings where each element is a subsequent part of the expression provided.
@@ -108,12 +101,10 @@ object global {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
-    @JSGlobal("nameof.split")
-    @js.native
-    def split(obj: js.Any): js.Array[String] = js.native
-    @JSGlobal("nameof.split")
-    @js.native
-    def split(obj: js.Any, periodIndex: Double): js.Array[String] = js.native
+    @scala.inline
+    def split(obj: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def split(obj: js.Any, periodIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(obj.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     /**
       * Gets an array of strings where each element is a subsequent part of the expression provided.
       *
@@ -127,12 +118,10 @@ object global {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
-    @JSGlobal("nameof.split")
-    @js.native
-    def split[T](func: js.Function1[/* obj */ T, _]): js.Array[String] = js.native
-    @JSGlobal("nameof.split")
-    @js.native
-    def split[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): js.Array[String] = js.native
+    @scala.inline
+    def split[T](func: js.Function1[/* obj */ T, js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def split[T](func: js.Function1[/* obj */ T, js.Any], periodIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(func.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Gets an array containing the string representation of each expression in the arguments.
@@ -142,9 +131,8 @@ object global {
       *
       * @param args An array of expressions to be parsed.
       */
-    @JSGlobal("nameof.toArray")
-    @js.native
-    def toArray(args: js.Any*): js.Array[String] = js.native
+    @scala.inline
+    def toArray(args: js.Any*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     /**
       * Gets an array containing the string representation of the final identifier of each expression in the array returned by the provided function.
       *
@@ -154,8 +142,7 @@ object global {
       * @param func A function returning an array of expressions to be parsed, excluding the parameter's identifier.
       */
     // tslint:disable-next-line no-unnecessary-generics
-    @JSGlobal("nameof.toArray")
-    @js.native
-    def toArray[T](func: js.Function1[/* obj */ T, js.Array[_]]): js.Array[String] = js.native
+    @scala.inline
+    def toArray[T](func: js.Function1[/* obj */ T, js.Array[js.Any]]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
 }

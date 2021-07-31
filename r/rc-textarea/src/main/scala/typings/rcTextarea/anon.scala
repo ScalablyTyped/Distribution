@@ -2,17 +2,15 @@ package typings.rcTextarea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -33,16 +31,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxHeight extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var maxHeight: Double = js.native
+    var maxHeight: Double
     
-    var minHeight: Double = js.native
+    var minHeight: Double
     
-    var overflowY: js.Any = js.native
+    var overflowY: js.Any
   }
   object MaxHeight {
     
@@ -69,10 +66,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String | Double | js.Array[String] = js.native
+    var value: String | Double | js.Array[String]
   }
   object Value {
     

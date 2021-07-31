@@ -2,13 +2,11 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergePullRequestByThreeWayOutput extends StObject {
   
-  var pullRequest: js.UndefOr[PullRequest] = js.native
+  var pullRequest: js.UndefOr[PullRequest] = js.undefined
 }
 object MergePullRequestByThreeWayOutput {
   

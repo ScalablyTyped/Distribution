@@ -3,15 +3,13 @@ package typings.matchSorter
 import typings.matchSorter.mod.KeyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key[T] extends StObject {
     
-    var key: KeyOptions[T] = js.native
+    var key: KeyOptions[T]
   }
   object Key {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[_], T] (val x: Self with Key[T]) extends AnyVal {
+    implicit class KeyMutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: KeyOptions[T]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxRanking extends StObject {
     
-    var maxRanking: Double = js.native
+    var maxRanking: Double
   }
   object MaxRanking {
     
@@ -53,10 +50,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MinRanking extends StObject {
     
-    var minRanking: Double = js.native
+    var minRanking: Double
   }
   object MinRanking {
     
@@ -74,10 +70,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Threshold extends StObject {
     
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object Threshold {
     

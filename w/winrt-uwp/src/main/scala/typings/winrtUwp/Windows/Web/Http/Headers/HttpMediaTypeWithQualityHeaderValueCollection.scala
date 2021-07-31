@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpMediaTypeWithQualityHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Accept HTTP header on an HTTP request. */
 @js.native
-trait HttpMediaTypeWithQualityHeaderValueCollection extends Array[HttpMediaTypeWithQualityHeaderValue] {
+trait HttpMediaTypeWithQualityHeaderValueCollection
+  extends StObject
+     with Array[HttpMediaTypeWithQualityHeaderValue] {
   
   /**
     * Adds a new HttpMediaTypeWithQualityHeaderValue item to the end of the collection.

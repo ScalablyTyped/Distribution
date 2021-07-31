@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_protectiondestroyed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProtectionDestroyedEvent extends Event {
+trait ProtectionDestroyedEvent
+  extends StObject
+     with Event {
   
-  var data: String = js.native
+  var data: String
   
   @JSName("type")
-  var type_ProtectionDestroyedEvent: public_protectiondestroyed = js.native
+  var type_ProtectionDestroyedEvent: public_protectiondestroyed
 }
 object ProtectionDestroyedEvent {
   
   @scala.inline
-  def apply(data: String, `type`: public_protectiondestroyed): ProtectionDestroyedEvent = {
+  def apply(data: String): ProtectionDestroyedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public_protectiondestroyed")
     __obj.asInstanceOf[ProtectionDestroyedEvent]
   }
   

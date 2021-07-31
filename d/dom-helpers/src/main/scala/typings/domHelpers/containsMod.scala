@@ -3,12 +3,14 @@ package typings.domHelpers
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containsMod {
   
-  @JSImport("dom-helpers/cjs/contains", JSImport.Default)
+  @JSImport("dom-helpers/cjs/contains", JSImport.Namespace)
   @js.native
-  def default(context: Element, node: Element): js.UndefOr[Boolean] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(context: Element, node: Element): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
 }

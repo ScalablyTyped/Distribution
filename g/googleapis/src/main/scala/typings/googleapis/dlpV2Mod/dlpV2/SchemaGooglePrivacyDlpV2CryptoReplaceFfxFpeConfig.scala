@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,10 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * require preserving the input alphabet space and size, plus warrant
   * referential integrity.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
   
-  var commonAlphabet: js.UndefOr[String] = js.native
+  var commonAlphabet: js.UndefOr[String] = js.undefined
   
   /**
     * The &#39;tweak&#39;, a context may be used for higher security since the
@@ -38,12 +36,12 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
     * followed by a single byte of value 1 - a string is encoded in UTF-8
     * format followed by a single byte of value 2
     */
-  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * The key used by the encryption algorithm. [required]
     */
-  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**
     * This is supported by mapping these to the alphanumeric characters that
@@ -52,12 +50,12 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
     * Number of characters must be in the range [2, 62]. This must be encoded
     * as ASCII. The order of characters does not matter.
     */
-  var customAlphabet: js.UndefOr[String] = js.native
+  var customAlphabet: js.UndefOr[String] = js.undefined
   
   /**
     * The native way to select the alphabet. Must be in the range [2, 62].
     */
-  var radix: js.UndefOr[Double] = js.native
+  var radix: js.UndefOr[Double] = js.undefined
   
   /**
     * The custom infoType to annotate the surrogate with. This annotation will
@@ -81,7 +79,7 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends StObject {
     * your data is entered from a regular ASCII keyboard, the symbol with the
     * hex code point 29DD might be used like so: ⧝MY_TOKEN_TYPE
     */
-  var surrogateInfoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var surrogateInfoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
   

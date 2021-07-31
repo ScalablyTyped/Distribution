@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Any extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait Any extends StObject {
     * currently available in the official protobuf release, and it is not used for type URLs beginning with type.googleapis.com. Schemes other than `http`, `https` (or the empty scheme)
     * might be used with implementation specific semantics.
     */
-  var typeUrl: js.UndefOr[String] = js.native
+  var typeUrl: js.UndefOr[String] = js.undefined
   
   /** Must be a valid serialized protocol buffer of the above specified type. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Any {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationContext extends StObject {
   
   /**
     * IDs representing the geo location for this context. Please refer to the [geo-table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-table.csv) file for different geo
     * criteria IDs.
     */
-  var geoCriteriaIds: js.UndefOr[js.Array[Double]] = js.native
+  var geoCriteriaIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object LocationContext {
   

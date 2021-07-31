@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.contactremoved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables apps to create and remove contacts. */
@@ -23,15 +22,21 @@ object Provider {
     
     /** The contact was added. */
     @js.native
-    sealed trait added extends AddContactResult
+    sealed trait added
+      extends StObject
+         with AddContactResult
     
     /** The contact was already selected by the user. */
     @js.native
-    sealed trait alreadyAdded extends AddContactResult
+    sealed trait alreadyAdded
+      extends StObject
+         with AddContactResult
     
     /** The contact was unavailable and was not added. */
     @js.native
-    sealed trait unavailable extends AddContactResult
+    sealed trait unavailable
+      extends StObject
+         with AddContactResult
   }
   
   /** Allows you to call the contact picker UI so you can select one or more contacts. */
@@ -52,7 +57,7 @@ object Provider {
       */
     def addContact(id: String, contact: Contact): AddContactResult = js.native
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_contactremoved(`type`: contactremoved, listener: TypedEventHandler[ContactPickerUI, ContactRemovedEventArgs]): Unit = js.native
     
@@ -70,7 +75,7 @@ object Provider {
     var desiredFieldsWithContactFieldType: IVector[ContactFieldType] = js.native
     
     /** Occurs when the user deselects or removes the contact. */
-    def oncontactremoved(ev: ContactRemovedEventArgs with WinRTEvent[ContactPickerUI]): Unit = js.native
+    def oncontactremoved(ev: ContactRemovedEventArgs & WinRTEvent[ContactPickerUI]): Unit = js.native
     /** Occurs when the user deselects or removes the contact. */
     @JSName("oncontactremoved")
     var oncontactremoved_Original: TypedEventHandler[ContactPickerUI, ContactRemovedEventArgs] = js.native
@@ -81,7 +86,7 @@ object Provider {
       */
     def removeContact(id: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_contactremoved(`type`: contactremoved, listener: TypedEventHandler[ContactPickerUI, ContactRemovedEventArgs]): Unit = js.native
     
@@ -90,11 +95,10 @@ object Provider {
   }
   
   /** Contains info about a removed contact. Returned when a ContactRemoved event occurs. */
-  @js.native
   trait ContactRemovedEventArgs extends StObject {
     
     /** Contains a unique identifier for the contact. */
-    var id: String = js.native
+    var id: String
   }
   object ContactRemovedEventArgs {
     

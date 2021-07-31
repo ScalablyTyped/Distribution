@@ -2,19 +2,17 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BiosData extends StObject {
   
-  var releaseDate: String = js.native
+  var releaseDate: String
   
-  var revision: String = js.native
+  var revision: String
   
-  var vendor: String = js.native
+  var vendor: String
   
-  var version: String = js.native
+  var version: String
 }
 object BiosData {
   

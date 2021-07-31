@@ -4,90 +4,189 @@ import typings.sqltoolsFormatter.typesMod.Config
 import typings.sqltoolsFormatter.typesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {
   
   @JSImport("@sqltools/formatter/lib/core/Formatter", JSImport.Default)
   @js.native
-  class default protected () extends Formatter {
+  class default protected ()
+    extends StObject
+       with Formatter {
     def this(cfg: Config, tokenizer: typings.sqltoolsFormatter.tokenizerMod.default) = this()
     def this(
       cfg: Config,
       tokenizer: typings.sqltoolsFormatter.tokenizerMod.default,
       tokenOverride: js.Function2[/* token */ Token, /* previousToken */ js.UndefOr[Token], Token]
     ) = this()
-  }
-  
-  @js.native
-  trait Formatter extends StObject {
     
-    def addNewline(query: String): String = js.native
+    /* CompleteClass */
+    override def addNewline(query: String): String = js.native
     
+    /* CompleteClass */
     var cfg: Config = js.native
     
-    def equalizeWhitespace(value: String): String = js.native
+    /* CompleteClass */
+    override def equalizeWhitespace(value: String): String = js.native
     
-    def format(query: String): String = js.native
+    /* CompleteClass */
+    override def format(query: String): String = js.native
     
-    def formatBlockComment(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatBlockComment(token: Token, query: String): String = js.native
     
-    def formatCase(value: String): String = js.native
+    /* CompleteClass */
+    override def formatCase(value: String): String = js.native
     
-    def formatClosingParentheses(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatClosingParentheses(token: Token, query: String): String = js.native
     
-    def formatComma(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatComma(token: Token, query: String): String = js.native
     
-    def formatLineComment(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatLineComment(token: Token, query: String): String = js.native
     
-    def formatNewlineReservedWord(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatNewlineReservedWord(token: Token, query: String): String = js.native
     
-    def formatOpeningParentheses(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatOpeningParentheses(token: Token, query: String): String = js.native
     
-    def formatPlaceholder(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatPlaceholder(token: Token, query: String): String = js.native
     
-    def formatQuerySeparator(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatQuerySeparator(token: Token, query: String): String = js.native
     
-    def formatReserved(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatReserved(token: Token, query: String): String = js.native
     
-    def formatReservedWord(value: String): String = js.native
+    /* CompleteClass */
+    override def formatReservedWord(value: String): String = js.native
     
-    def formatTopLevelReservedWord(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatTopLevelReservedWord(token: Token, query: String): String = js.native
     
-    def formatTopLevelReservedWordNoIndent(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatTopLevelReservedWordNoIndent(token: Token, query: String): String = js.native
     
-    def formatWhitespace(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatWhitespace(token: Token, query: String): String = js.native
     
-    def formatWithSpaceAfter(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatWithSpaceAfter(token: Token, query: String): String = js.native
     
-    def formatWithSpaces(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatWithSpaces(token: Token, query: String): String = js.native
     
-    def formatWithoutSpaces(token: Token, query: String): String = js.native
+    /* CompleteClass */
+    override def formatWithoutSpaces(token: Token, query: String): String = js.native
     
-    def getFormattedQueryFromTokens(): String = js.native
+    /* CompleteClass */
+    override def getFormattedQueryFromTokens(): String = js.native
     
-    def indentComment(comment: String): String = js.native
+    /* CompleteClass */
+    override def indentComment(comment: String): String = js.native
     
+    /* CompleteClass */
     var indentation: js.Any = js.native
     
+    /* CompleteClass */
     var index: js.Any = js.native
     
+    /* CompleteClass */
     var inlineBlock: js.Any = js.native
     
+    /* CompleteClass */
     var params: js.Any = js.native
     
+    /* CompleteClass */
     var previousNonWhiteSpace: js.Any = js.native
     
+    /* CompleteClass */
     var previousReservedWord: js.Any = js.native
     
-    def previousToken(): Token = js.native
+    /* CompleteClass */
+    override def previousToken(): Token = js.native
     
+    /* CompleteClass */
     var tokenOverride: js.Any = js.native
     
+    /* CompleteClass */
     var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default = js.native
     
+    /* CompleteClass */
     var tokens: js.Any = js.native
+  }
+  
+  trait Formatter extends StObject {
+    
+    def addNewline(query: String): String
+    
+    var cfg: Config
+    
+    def equalizeWhitespace(value: String): String
+    
+    def format(query: String): String
+    
+    def formatBlockComment(token: Token, query: String): String
+    
+    def formatCase(value: String): String
+    
+    def formatClosingParentheses(token: Token, query: String): String
+    
+    def formatComma(token: Token, query: String): String
+    
+    def formatLineComment(token: Token, query: String): String
+    
+    def formatNewlineReservedWord(token: Token, query: String): String
+    
+    def formatOpeningParentheses(token: Token, query: String): String
+    
+    def formatPlaceholder(token: Token, query: String): String
+    
+    def formatQuerySeparator(token: Token, query: String): String
+    
+    def formatReserved(token: Token, query: String): String
+    
+    def formatReservedWord(value: String): String
+    
+    def formatTopLevelReservedWord(token: Token, query: String): String
+    
+    def formatTopLevelReservedWordNoIndent(token: Token, query: String): String
+    
+    def formatWhitespace(token: Token, query: String): String
+    
+    def formatWithSpaceAfter(token: Token, query: String): String
+    
+    def formatWithSpaces(token: Token, query: String): String
+    
+    def formatWithoutSpaces(token: Token, query: String): String
+    
+    def getFormattedQueryFromTokens(): String
+    
+    def indentComment(comment: String): String
+    
+    var indentation: js.Any
+    
+    var index: js.Any
+    
+    var inlineBlock: js.Any
+    
+    var params: js.Any
+    
+    var previousNonWhiteSpace: js.Any
+    
+    var previousReservedWord: js.Any
+    
+    def previousToken(): Token
+    
+    var tokenOverride: js.Any
+    
+    var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default
+    
+    var tokens: js.Any
   }
   object Formatter {
     

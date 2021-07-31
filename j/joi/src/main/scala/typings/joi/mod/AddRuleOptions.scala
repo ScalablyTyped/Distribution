@@ -3,15 +3,13 @@ package typings.joi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddRuleOptions extends StObject {
   
-  var args: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object AddRuleOptions {
   

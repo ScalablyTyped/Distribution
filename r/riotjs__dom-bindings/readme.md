@@ -10,9 +10,9 @@ Riot.js DOM bindings
 | ------------------ | :-------------: |
 | Full name          | @riotjs/dom-bindings |
 | Keywords           | riot, dom-bindings |
-| # releases         | 60 |
-| # dependents       | 1 |
-| # downloads        | 47246 |
+| # releases         | 53 |
+| # dependents       | 2 |
+| # downloads        | 41522 |
 | # stars            | 0 |
 
 ## Links

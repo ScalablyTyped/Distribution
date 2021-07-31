@@ -2,46 +2,44 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transformation to apply to text that is identified as a specific
   * info_type.
   */
-@js.native
 trait SchemaInfoTypeTransformation extends StObject {
   
   /**
     * Config for character mask.
     */
-  var characterMaskConfig: js.UndefOr[SchemaCharacterMaskConfig] = js.native
+  var characterMaskConfig: js.UndefOr[SchemaCharacterMaskConfig] = js.undefined
   
   /**
     * Config for crypto hash.
     */
-  var cryptoHashConfig: js.UndefOr[SchemaCryptoHashConfig] = js.native
+  var cryptoHashConfig: js.UndefOr[SchemaCryptoHashConfig] = js.undefined
   
   /**
     * Config for date shift.
     */
-  var dateShiftConfig: js.UndefOr[SchemaDateShiftConfig] = js.native
+  var dateShiftConfig: js.UndefOr[SchemaDateShiftConfig] = js.undefined
   
   /**
     * InfoTypes to apply this transformation to. If this is not specified, the
     * transformation applies to any info_type.
     */
-  var infoTypes: js.UndefOr[js.Array[String]] = js.native
+  var infoTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Config for text redaction.
     */
-  var redactConfig: js.UndefOr[SchemaRedactConfig] = js.native
+  var redactConfig: js.UndefOr[SchemaRedactConfig] = js.undefined
   
   /**
     * Config for replace with InfoType.
     */
-  var replaceWithInfoTypeConfig: js.UndefOr[SchemaReplaceWithInfoTypeConfig] = js.native
+  var replaceWithInfoTypeConfig: js.UndefOr[SchemaReplaceWithInfoTypeConfig] = js.undefined
 }
 object SchemaInfoTypeTransformation {
   

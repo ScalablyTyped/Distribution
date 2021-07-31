@@ -7,7 +7,6 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tfjsBindingMod {
@@ -34,67 +33,66 @@ object tfjsBindingMod {
     var shape: js.Array[Double] = js.native
   }
   
-  @js.native
   trait TFJSBinding extends StObject {
     
-    var TFEOpAttr: Instantiable0[typings.tensorflowTfjsNode.tfjsBindingMod.TFEOpAttr] = js.native
+    var TFEOpAttr: Instantiable0[typings.tensorflowTfjsNode.tfjsBindingMod.TFEOpAttr]
     
-    var TF_ATTR_BOOL: Double = js.native
+    var TF_ATTR_BOOL: Double
     
-    var TF_ATTR_FLOAT: Double = js.native
+    var TF_ATTR_FLOAT: Double
     
-    var TF_ATTR_INT: Double = js.native
+    var TF_ATTR_INT: Double
     
-    var TF_ATTR_RESOURCE: Double = js.native
+    var TF_ATTR_RESOURCE: Double
     
-    var TF_ATTR_SHAPE: Double = js.native
+    var TF_ATTR_SHAPE: Double
     
-    var TF_ATTR_STRING: Double = js.native
+    var TF_ATTR_STRING: Double
     
-    var TF_ATTR_TYPE: Double = js.native
+    var TF_ATTR_TYPE: Double
     
-    var TF_BOOL: Double = js.native
+    var TF_BOOL: Double
     
-    var TF_COMPLEX64: Double = js.native
+    var TF_COMPLEX64: Double
     
-    var TF_FLOAT: Double = js.native
+    var TF_FLOAT: Double
     
-    var TF_INT32: Double = js.native
+    var TF_INT32: Double
     
-    var TF_INT64: Double = js.native
+    var TF_INT64: Double
     
-    var TF_RESOURCE: Double = js.native
+    var TF_RESOURCE: Double
     
-    var TF_STRING: Double = js.native
+    var TF_STRING: Double
     
-    var TF_UINT8: Double = js.native
+    var TF_UINT8: Double
     
-    var TF_Version: String = js.native
+    var TF_Version: String
     
-    var TensorMetadata: Instantiable0[typings.tensorflowTfjsNode.tfjsBindingMod.TensorMetadata] = js.native
+    var TensorMetadata: Instantiable0[typings.tensorflowTfjsNode.tfjsBindingMod.TensorMetadata]
     
-    def createTensor(shape: js.Array[Double], dtype: Double, buffer: BackendValues): Double = js.native
+    def createTensor(shape: js.Array[Double], dtype: Double, buffer: BackendValues): Double
     
-    def deleteSavedModel(savedModelId: Double): Unit = js.native
+    def deleteSavedModel(savedModelId: Double): Unit
     
-    def deleteTensor(tensorId: Double): Unit = js.native
+    def deleteTensor(tensorId: Double): Unit
     
-    def executeOp(opName: String, opAttrs: js.Array[TFEOpAttr], inputTensorIds: js.Array[Double], numOutputs: Double): js.Array[TensorMetadata] = js.native
+    def executeOp(opName: String, opAttrs: js.Array[TFEOpAttr], inputTensorIds: js.Array[Double], numOutputs: Double): js.Array[TensorMetadata]
     
-    def getNumOfSavedModels(): Double = js.native
+    def getNumOfSavedModels(): Double
     
-    def isUsingGpuDevice(): Boolean = js.native
+    def isUsingGpuDevice(): Boolean
     
-    def loadSavedModel(exportDir: String, tags: String): Double = js.native
+    def loadSavedModel(exportDir: String, tags: String): Double
     
     def runSavedModel(
       savedModelId: Double,
       inputTensorIds: js.Array[Double],
       inputOpNames: String,
       outputOpNames: String
-    ): js.Array[TensorMetadata] = js.native
+    ): js.Array[TensorMetadata]
     
-    def tensorDataSync(tensorId: Double): Float32Array | Int32Array | Uint8Array = js.native
+    def tensorDataSync(tensorId: Double): Float32Array | Int32Array | Uint8Array
   }
   object TFJSBinding {
     

@@ -2,32 +2,32 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods and properties to store and retrieve metrics regarding the browser's document navigation events. For example, this interface can be used to determine how much time it takes to load or unload a document. */
-@js.native
-trait PerformanceNavigationTiming extends PerformanceResourceTiming {
+trait PerformanceNavigationTiming
+  extends StObject
+     with PerformanceResourceTiming {
   
-  val domComplete: Double = js.native
+  val domComplete: Double
   
-  val domContentLoadedEventEnd: Double = js.native
+  val domContentLoadedEventEnd: Double
   
-  val domContentLoadedEventStart: Double = js.native
+  val domContentLoadedEventStart: Double
   
-  val domInteractive: Double = js.native
+  val domInteractive: Double
   
-  val loadEventEnd: Double = js.native
+  val loadEventEnd: Double
   
-  val loadEventStart: Double = js.native
+  val loadEventStart: Double
   
-  val redirectCount: Double = js.native
+  val redirectCount: Double
   
-  val `type`: NavigationType = js.native
+  val `type`: NavigationType
   
-  val unloadEventEnd: Double = js.native
+  val unloadEventEnd: Double
   
-  val unloadEventStart: Double = js.native
+  val unloadEventStart: Double
 }
 object PerformanceNavigationTiming {
   

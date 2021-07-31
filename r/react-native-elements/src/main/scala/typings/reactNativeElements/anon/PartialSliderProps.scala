@@ -10,56 +10,54 @@ import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.SliderProps> */
-@js.native
 trait PartialSliderProps extends StObject {
   
-  var allowTouchTrack: js.UndefOr[Boolean] = js.native
+  var allowTouchTrack: js.UndefOr[Boolean] = js.undefined
   
-  var animateTransitions: js.UndefOr[Boolean] = js.native
+  var animateTransitions: js.UndefOr[Boolean] = js.undefined
   
-  var animationConfig: js.UndefOr[TimingAnimationConfig | SpringAnimationConfig] = js.native
+  var animationConfig: js.UndefOr[TimingAnimationConfig | SpringAnimationConfig] = js.undefined
   
-  var animationType: js.UndefOr[spring | timing] = js.native
+  var animationType: js.UndefOr[spring | timing] = js.undefined
   
-  var debugTouchArea: js.UndefOr[Boolean] = js.native
+  var debugTouchArea: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var maximumValue: js.UndefOr[Double] = js.native
+  var maximumValue: js.UndefOr[Double] = js.undefined
   
-  var minimumTrackTintColor: js.UndefOr[String] = js.native
+  var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var minimumValue: js.UndefOr[Double] = js.native
+  var minimumValue: js.UndefOr[Double] = js.undefined
   
-  var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var onSlidingStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onSlidingStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumbProps: js.UndefOr[js.Any] = js.native
+  var thumbProps: js.UndefOr[js.Any] = js.undefined
   
-  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbTouchSize: js.UndefOr[Height] = js.native
+  var thumbTouchSize: js.UndefOr[Height] = js.undefined
   
-  var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object PartialSliderProps {
   

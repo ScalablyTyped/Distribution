@@ -2,10 +2,8 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastError extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait VastError extends StObject {
     *      VAST error 302: Wrapper limit reached.
     *      VAST error 303: No VAST response after one or more Wrappers.
     */
-  var ERRORCODE: String | Double = js.native
+  var ERRORCODE: String | Double
   
-  var ERRORMESSAGE: js.UndefOr[String] = js.native
+  var ERRORMESSAGE: js.UndefOr[String] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.native
+  var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.undefined
   
-  var system: js.UndefOr[VastSystem | String | Null] = js.native
+  var system: js.UndefOr[VastSystem | String | Null] = js.undefined
 }
 object VastError {
   

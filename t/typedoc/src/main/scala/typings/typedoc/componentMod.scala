@@ -9,10 +9,13 @@ import typings.typedoc.utilsEventsMod.EventDispatcher
 import typings.typedoc.utilsEventsMod.EventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
+  
+  @JSImport("typedoc/dist/lib/utils/component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("typedoc/dist/lib/utils/component", "AbstractComponent")
   @js.native
@@ -26,6 +29,8 @@ object componentMod {
     
     var _componentOwner: js.Any = js.native
     
+    /* CompleteClass */
+    override val application: Application = js.native
     @JSName("application")
     def application_MAbstractComponent: Application = js.native
     
@@ -66,9 +71,8 @@ object componentMod {
     def removeComponent(name: String): js.UndefOr[C] = js.native
   }
   
-  @JSImport("typedoc/dist/lib/utils/component", "Component")
-  @js.native
-  def Component(options: ComponentOptions): ClassDecorator = js.native
+  @scala.inline
+  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   type Component = AbstractComponent[ComponentHost]
   
   @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent")
@@ -109,10 +113,9 @@ object componentMod {
     extends js.Function
        with Instantiable1[/* owner */ O, T]
   
-  @js.native
   trait ComponentHost extends StObject {
     
-    val application: Application = js.native
+    val application: Application
   }
   object ComponentHost {
     
@@ -130,14 +133,13 @@ object componentMod {
     }
   }
   
-  @js.native
   trait ComponentOptions extends StObject {
     
-    var childClass: js.UndefOr[js.Function] = js.native
+    var childClass: js.UndefOr[js.Function] = js.undefined
     
-    var internal: js.UndefOr[Boolean] = js.native
+    var internal: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ComponentOptions {
     

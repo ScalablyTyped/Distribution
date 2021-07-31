@@ -4,15 +4,13 @@ import typings.csstype.mod.BoxSizingProperty
 import typings.csstype.mod.WidthProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CustomOption extends StObject {
     
-    var customOption: Boolean = js.native
+    var customOption: Boolean
   }
   object CustomOption {
     
@@ -31,12 +29,11 @@ object anon {
   }
   
   /* Inlined std.Pick<react.react.CSSProperties, 'boxSizing' | 'width'> */
-  @js.native
   trait PickCSSPropertiesboxSizin extends StObject {
     
-    var boxSizing: js.UndefOr[BoxSizingProperty] = js.native
+    var boxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
     
-    var width: js.UndefOr[WidthProperty[String | Double]] = js.native
+    var width: js.UndefOr[WidthProperty[String | Double]] = js.undefined
   }
   object PickCSSPropertiesboxSizin {
     

@@ -3,27 +3,28 @@ package typings.jjve
 import typings.jjv.mod.Errors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(jjv: typings.jjv.mod.Env): Env = ^.asInstanceOf[js.Dynamic].apply(jjv.asInstanceOf[js.Any]).asInstanceOf[Env]
+  
   @JSImport("jjve", JSImport.Namespace)
   @js.native
-  def apply(jjv: typings.jjv.mod.Env): Env = js.native
+  val ^ : js.Any = js.native
   
   type Env = js.Function3[/* schema */ js.Object, /* data */ js.Any, /* errors */ Errors, js.Array[Issue]]
   
-  @js.native
   trait Issue extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var path: String = js.native
+    var path: String
   }
   object Issue {
     

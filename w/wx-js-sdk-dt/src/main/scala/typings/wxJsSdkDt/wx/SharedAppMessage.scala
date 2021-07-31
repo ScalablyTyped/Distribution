@@ -2,30 +2,30 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 消息分享对象
   * @deprecated
   */
-@js.native
-trait SharedAppMessage extends ShareTimelineConfig {
+trait SharedAppMessage
+  extends StObject
+     with ShareTimelineConfig {
   
   /**
     * 如果 type 是 music 或 video，则要提供数据链接，默认为空
     */
-  var dataUrl: js.UndefOr[String] = js.native
+  var dataUrl: js.UndefOr[String] = js.undefined
   
   /**
     * 分享描述
     */
-  var desc: String = js.native
+  var desc: String
   
   /**
     * 分享类型, music、video 或 link，不填默认为 link
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SharedAppMessage {
   

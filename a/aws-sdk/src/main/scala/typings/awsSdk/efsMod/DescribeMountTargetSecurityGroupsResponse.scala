@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMountTargetSecurityGroupsResponse extends StObject {
   
   /**
     * An array of security groups.
     */
-  var SecurityGroups: typings.awsSdk.efsMod.SecurityGroups = js.native
+  var SecurityGroups: typings.awsSdk.efsMod.SecurityGroups
 }
 object DescribeMountTargetSecurityGroupsResponse {
   

@@ -2,15 +2,17 @@ package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
+import typings.std.AddEventListenerOptions
 import typings.std.DOMRect
 import typings.std.Element
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.MouseEvent
 import typings.std.Window
 import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positioningTypesMod {
@@ -22,23 +24,31 @@ object positioningTypesMod {
   object Position extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Position with Double] = js.native
+    def apply(value: Double): js.UndefOr[Position & Double] = js.native
     
     @js.native
-    sealed trait bottom extends Position
-    /* 1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.Position.bottom with Double = js.native
+    sealed trait bottom
+      extends StObject
+         with Position
+    /* 1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.Position.bottom & Double = js.native
     
     @js.native
-    sealed trait end extends Position
-    /* 3 */ val end: typings.officeUiFabricReact.positioningTypesMod.Position.end with Double = js.native
+    sealed trait end
+      extends StObject
+         with Position
+    /* 3 */ val end: typings.officeUiFabricReact.positioningTypesMod.Position.end & Double = js.native
     
     @js.native
-    sealed trait start extends Position
-    /* 2 */ val start: typings.officeUiFabricReact.positioningTypesMod.Position.start with Double = js.native
+    sealed trait start
+      extends StObject
+         with Position
+    /* 2 */ val start: typings.officeUiFabricReact.positioningTypesMod.Position.start & Double = js.native
     
     @js.native
-    sealed trait top extends Position
-    /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top with Double = js.native
+    sealed trait top
+      extends StObject
+         with Position
+    /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top & Double = js.native
   }
   
   @js.native
@@ -48,29 +58,38 @@ object positioningTypesMod {
   object RectangleEdge extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RectangleEdge with Double] = js.native
+    def apply(value: Double): js.UndefOr[RectangleEdge & Double] = js.native
     
     @js.native
-    sealed trait bottom extends RectangleEdge
-    /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom with Double = js.native
+    sealed trait bottom
+      extends StObject
+         with RectangleEdge
+    /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom & Double = js.native
     
     @js.native
-    sealed trait left extends RectangleEdge
-    /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left with Double = js.native
+    sealed trait left
+      extends StObject
+         with RectangleEdge
+    /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left & Double = js.native
     
     @js.native
-    sealed trait right extends RectangleEdge
-    /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right with Double = js.native
+    sealed trait right
+      extends StObject
+         with RectangleEdge
+    /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right & Double = js.native
     
     @js.native
-    sealed trait top extends RectangleEdge
-    /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top with Double = js.native
+    sealed trait top
+      extends StObject
+         with RectangleEdge
+    /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top & Double = js.native
   }
   
-  @js.native
-  trait ICalloutBeakPositionedInfo extends IPositionedData {
+  trait ICalloutBeakPositionedInfo
+    extends StObject
+       with IPositionedData {
     
-    var closestEdge: RectangleEdge = js.native
+    var closestEdge: RectangleEdge
   }
   object ICalloutBeakPositionedInfo {
     
@@ -88,18 +107,19 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
-  trait ICalloutPositionProps extends IPositionProps {
+  trait ICalloutPositionProps
+    extends StObject
+       with IPositionProps {
     
     /**
       * The width of the beak.
       */
-    var beakWidth: js.UndefOr[Double] = js.native
+    var beakWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not the beak is visible
       */
-    var isBeakVisible: js.UndefOr[Boolean] = js.native
+    var isBeakVisible: js.UndefOr[Boolean] = js.undefined
   }
   object ICalloutPositionProps {
     
@@ -126,10 +146,11 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
-  trait ICalloutPositionedInfo extends IPositionedData {
+  trait ICalloutPositionedInfo
+    extends StObject
+       with IPositionedData {
     
-    var beakPosition: ICalloutBeakPositionedInfo = js.native
+    var beakPosition: ICalloutBeakPositionedInfo
   }
   object ICalloutPositionedInfo {
     
@@ -147,17 +168,17 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
   trait IPosition
-    extends /* key */ StringDictionary[js.UndefOr[Double]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[Double]] {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object IPosition {
     
@@ -196,16 +217,15 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
   trait IPositionDirectionalHintData extends StObject {
     
-    var alignTargetEdge: js.UndefOr[Boolean] = js.native
+    var alignTargetEdge: js.UndefOr[Boolean] = js.undefined
     
-    var alignmentEdge: js.UndefOr[RectangleEdge] = js.native
+    var alignmentEdge: js.UndefOr[RectangleEdge] = js.undefined
     
-    var isAuto: js.UndefOr[Boolean] = js.native
+    var isAuto: js.UndefOr[Boolean] = js.undefined
     
-    var targetEdge: RectangleEdge = js.native
+    var targetEdge: RectangleEdge
   }
   object IPositionDirectionalHintData {
     
@@ -241,46 +261,45 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
   trait IPositionProps extends StObject {
     
     /**
       * If true the positioning logic will prefer flipping edges over nudging the rectangle to fit within bounds,
       * thus making sure the element align perfectly with target.
       */
-    var alignTargetEdge: js.UndefOr[Boolean] = js.native
+    var alignTargetEdge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The bounding rectangle for which  the contextual menu can appear in.
       */
-    var bounds: js.UndefOr[IRectangle] = js.native
+    var bounds: js.UndefOr[IRectangle] = js.undefined
     
     /**
       * If true the position returned will have the menu element cover the target.
       * If false then it will position next to the target;
       */
-    var coverTarget: js.UndefOr[Boolean] = js.native
+    var coverTarget: js.UndefOr[Boolean] = js.undefined
     
     /** how the element should be positioned */
-    var directionalHint: js.UndefOr[DirectionalHint] = js.native
+    var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * If true the position will not change edges in an attempt to fit the rectangle within bounds.
       * It will still attempt to align it to whatever bounds are given.
       * @defaultvalue false
       */
-    var directionalHintFixed: js.UndefOr[Boolean] = js.native
+    var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How the element should be positioned in RTL layouts.
       * If not specified, a mirror of `directionalHint` will be used instead
       */
-    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.native
+    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
     
     /** The gap between the callout and the target */
-    var gapSpace: js.UndefOr[Double] = js.native
+    var gapSpace: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[Element | MouseEvent | Point] = js.native
+    var target: js.UndefOr[Element | MouseEvent | Point] = js.undefined
   }
   object IPositionProps {
     
@@ -343,26 +362,25 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
   trait IPositionedData extends StObject {
     
     /**
       * The finalized alignment edge that the element is aligning too. For instance, RectangleEdge.left means
       * that the left edge of the target should be in line with the left edge of the element being positioned.
       */
-    var alignmentEdge: js.UndefOr[RectangleEdge] = js.native
+    var alignmentEdge: js.UndefOr[RectangleEdge] = js.undefined
     
     /**
       * The new position of the element.
       */
-    var elementPosition: IPosition = js.native
+    var elementPosition: IPosition
     
     /**
       * The finalized target edge that element is aligning to. For instance RectangleEdge.bottom would mean
       * that the bottom edge of the target is being aligned to by the RectangleEdge.top of the element
       * that is being positioned.
       */
-    var targetEdge: RectangleEdge = js.native
+    var targetEdge: RectangleEdge
   }
   object IPositionedData {
     
@@ -389,16 +407,15 @@ object positioningTypesMod {
     }
   }
   
-  @js.native
   trait IRelativePositions extends StObject {
     
-    var beakPosition: typings.officeUiFabricReact.anon.Position = js.native
+    var beakPosition: typings.officeUiFabricReact.anon.Position
     
-    var calloutPosition: IPosition = js.native
+    var calloutPosition: IPosition
     
-    var directionalClassName: String = js.native
+    var directionalClassName: String
     
-    var submenuDirection: DirectionalHint = js.native
+    var submenuDirection: DirectionalHint
   }
   object IRelativePositions {
     
@@ -431,8 +448,30 @@ object positioningTypesMod {
   }
   
   @js.native
-  trait IWindowWithSegments extends Window {
+  trait IWindowWithSegments
+    extends StObject
+       with Window {
+    
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var getWindowSegments: js.UndefOr[js.Function0[js.Array[DOMRect]]] = js.native
+    
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
 }

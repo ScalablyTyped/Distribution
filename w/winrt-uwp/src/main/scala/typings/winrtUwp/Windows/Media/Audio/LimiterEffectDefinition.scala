@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.Audio
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a limiter effect definition supported by the audio graph. */
-@js.native
 trait LimiterEffectDefinition extends StObject {
   
   /** Gets the activatable class ID for the limiter effect definition object. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets or sets the loudness included in the limiter effect definition. */
-  var loudness: Double = js.native
+  var loudness: Double
   
   /** Gets the properties supported by the limiter effect definition. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
   /** Gets or sets the release included in the limiter effect definition. */
-  var release: Double = js.native
+  var release: Double
 }
 object LimiterEffectDefinition {
   

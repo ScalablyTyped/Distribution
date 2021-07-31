@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMembersOutput extends StObject {
   
   /**
     * An array of MemberSummary objects. Each object contains details about a network member.
     */
-  var Members: js.UndefOr[MemberSummaryList] = js.native
+  var Members: js.UndefOr[MemberSummaryList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListMembersOutput {
   

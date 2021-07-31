@@ -32,7 +32,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.Whole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait Table extends ClientObject {
+trait Table
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.

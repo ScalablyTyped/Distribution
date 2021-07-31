@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TransformationSummary extends StObject {
   
   /** Set if the transformation was limited to a specific FieldId. */
-  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** The field transformation that was applied. If multiple field transformations are requested for a single field, this list will contain all of them; otherwise, only one is supplied. */
-  var fieldTransformations: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldTransformation]] = js.native
+  var fieldTransformations: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldTransformation]] = js.undefined
   
   /** Set if the transformation was limited to a specific InfoType. */
-  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.undefined
   
   /** The specific suppression option these stats apply to. */
-  var recordSuppress: js.UndefOr[GooglePrivacyDlpV2RecordSuppression] = js.native
+  var recordSuppress: js.UndefOr[GooglePrivacyDlpV2RecordSuppression] = js.undefined
   
   /** Collection of all transformations that took place or had an error. */
-  var results: js.UndefOr[js.Array[GooglePrivacyDlpV2SummaryResult]] = js.native
+  var results: js.UndefOr[js.Array[GooglePrivacyDlpV2SummaryResult]] = js.undefined
   
   /** The specific transformation these stats apply to. */
-  var transformation: js.UndefOr[GooglePrivacyDlpV2PrimitiveTransformation] = js.native
+  var transformation: js.UndefOr[GooglePrivacyDlpV2PrimitiveTransformation] = js.undefined
   
   /** Total size in bytes that were transformed in some way. */
-  var transformedBytes: js.UndefOr[String] = js.native
+  var transformedBytes: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2TransformationSummary {
   

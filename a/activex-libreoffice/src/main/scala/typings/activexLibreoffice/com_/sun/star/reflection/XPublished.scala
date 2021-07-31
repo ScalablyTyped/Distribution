@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,14 +33,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * entity, {@link com.sun.star.reflection.XPublished} should not be supported.
   * @since OOo 2.0
   */
-@js.native
 trait XPublished extends StObject {
   
   /**
     * Returns the " published " status of a UNOIDL entity.
     * @returns `TRUE` if the UNOIDL entity represented by this object is published
     */
-  def isPublished(): Boolean = js.native
+  def isPublished(): Boolean
 }
 object XPublished {
   

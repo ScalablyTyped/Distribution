@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressConfiguration extends StObject {
   
   /**
     * The message body to use instead of the default message body. This value overrides the default message body.
     */
-  var BodyOverride: js.UndefOr[string] = js.native
+  var BodyOverride: js.UndefOr[string] = js.undefined
   
   /**
     * The channel to use when sending the message.
     */
-  var ChannelType: js.UndefOr[typings.awsSdk.pinpointMod.ChannelType] = js.native
+  var ChannelType: js.UndefOr[typings.awsSdk.pinpointMod.ChannelType] = js.undefined
   
   /**
     * An object that maps custom attributes to attributes for the address and is attached to the message. Attribute names are case sensitive. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
     */
-  var Context: js.UndefOr[MapOfString] = js.native
+  var Context: js.UndefOr[MapOfString] = js.undefined
   
   /**
     * The raw, JSON-formatted string to use as the payload for the message. If specified, this value overrides all other values for the message.
     */
-  var RawContent: js.UndefOr[string] = js.native
+  var RawContent: js.UndefOr[string] = js.undefined
   
   /**
     * A map of the message variables to merge with the variables specified by properties of the DefaultMessage object. The variables specified in this map take precedence over all other variables.
     */
-  var Substitutions: js.UndefOr[MapOfListOfString] = js.native
+  var Substitutions: js.UndefOr[MapOfListOfString] = js.undefined
   
   /**
     * The message title to use instead of the default message title. This value overrides the default message title.
     */
-  var TitleOverride: js.UndefOr[string] = js.native
+  var TitleOverride: js.UndefOr[string] = js.undefined
 }
 object AddressConfiguration {
   

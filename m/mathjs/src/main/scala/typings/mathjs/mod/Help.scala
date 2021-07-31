@@ -2,13 +2,11 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Help extends StObject {
   
-  def toJSON(): String = js.native
+  def toJSON(): String
 }
 object Help {
   

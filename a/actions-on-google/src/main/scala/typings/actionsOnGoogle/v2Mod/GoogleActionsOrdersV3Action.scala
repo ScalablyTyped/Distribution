@@ -2,32 +2,30 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3Action extends StObject {
   
   /**
     * Metadata associated with an action.
     */
-  var actionMetadata: js.UndefOr[GoogleActionsOrdersV3ActionActionMetadata] = js.native
+  var actionMetadata: js.UndefOr[GoogleActionsOrdersV3ActionActionMetadata] = js.undefined
   
   /**
     * Action to take.
     */
-  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.native
+  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
   
   /**
     * Title or label of the action, displayed to the user.
     * Max allowed length is 100 chars.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Required: Type of action.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3ActionType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3ActionType] = js.undefined
 }
 object GoogleActionsOrdersV3Action {
   

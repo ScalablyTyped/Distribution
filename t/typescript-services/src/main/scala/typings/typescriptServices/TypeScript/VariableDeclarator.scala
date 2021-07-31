@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableDeclarator extends AST {
+trait VariableDeclarator
+  extends StObject
+     with AST {
   
-  var equalsValueClause: EqualsValueClause = js.native
+  var equalsValueClause: EqualsValueClause
   
-  var propertyName: IASTToken = js.native
+  var propertyName: IASTToken
   
-  var typeAnnotation: TypeAnnotation = js.native
+  var typeAnnotation: TypeAnnotation
 }
 object VariableDeclarator {
   

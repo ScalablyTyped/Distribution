@@ -2,27 +2,25 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of Page that are only relevant for pages with page_type
   * SLIDE.
   */
-@js.native
 trait SchemaSlideProperties extends StObject {
   
   /**
     * The object ID of the layout that this slide is based on. This property is
     * read-only.
     */
-  var layoutObjectId: js.UndefOr[String] = js.native
+  var layoutObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the master that this slide is based on. This property is
     * read-only.
     */
-  var masterObjectId: js.UndefOr[String] = js.native
+  var masterObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The notes page that this slide is associated with. It defines the visual
@@ -34,7 +32,7 @@ trait SchemaSlideProperties extends StObject {
     * text content and styles of the speaker notes shape. This property is
     * read-only.
     */
-  var notesPage: js.UndefOr[SchemaPage] = js.native
+  var notesPage: js.UndefOr[SchemaPage] = js.undefined
 }
 object SchemaSlideProperties {
   

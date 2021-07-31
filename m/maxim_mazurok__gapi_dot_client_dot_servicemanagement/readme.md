@@ -10,9 +10,9 @@ TypeScript typings for Service Management API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicemanagement |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 55 |
+| # downloads        | 1726 |
 | # stars            | 0 |
 
 ## Links

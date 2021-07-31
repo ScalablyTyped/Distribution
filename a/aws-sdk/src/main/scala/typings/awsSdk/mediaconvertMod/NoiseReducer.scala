@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoiseReducer extends StObject {
   
   /**
     * Use Noise reducer filter (NoiseReducerFilter) to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer (NoiseReducer). * Bilateral preserves edges while reducing noise. * Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. * Conserve does min/max noise reduction. * Spatial does frequency-domain filtering based on JND principles. * Temporal optimizes video quality for complex motion.
     */
-  var Filter: js.UndefOr[NoiseReducerFilter] = js.native
+  var Filter: js.UndefOr[NoiseReducerFilter] = js.undefined
   
   /**
     * Settings for a noise reducer filter
     */
-  var FilterSettings: js.UndefOr[NoiseReducerFilterSettings] = js.native
+  var FilterSettings: js.UndefOr[NoiseReducerFilterSettings] = js.undefined
   
   /**
     * Noise reducer filter settings for spatial filter.
     */
-  var SpatialFilterSettings: js.UndefOr[NoiseReducerSpatialFilterSettings] = js.native
+  var SpatialFilterSettings: js.UndefOr[NoiseReducerSpatialFilterSettings] = js.undefined
   
   /**
     * Noise reducer filter settings for temporal filter.
     */
-  var TemporalFilterSettings: js.UndefOr[NoiseReducerTemporalFilterSettings] = js.native
+  var TemporalFilterSettings: js.UndefOr[NoiseReducerTemporalFilterSettings] = js.undefined
 }
 object NoiseReducer {
   

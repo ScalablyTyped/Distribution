@@ -12,7 +12,7 @@ A JavaScript model of a Gaussian distribution
 | Keywords           | gaussian, normal, distribution |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 455527 |
+| # downloads        | 346701 |
 | # stars            | 5 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopActivationOutput extends StObject {
   
   /**
     * Shows the result of condition evaluations, including those conditions which activated a human review.
     */
-  var HumanLoopActivationConditionsEvaluationResults: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationConditionsEvaluationResults] = js.native
+  var HumanLoopActivationConditionsEvaluationResults: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationConditionsEvaluationResults] = js.undefined
   
   /**
     * Shows if and why human review was needed.
     */
-  var HumanLoopActivationReasons: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationReasons] = js.native
+  var HumanLoopActivationReasons: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationReasons] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the HumanLoop created.
     */
-  var HumanLoopArn: js.UndefOr[typings.awsSdk.textractMod.HumanLoopArn] = js.native
+  var HumanLoopArn: js.UndefOr[typings.awsSdk.textractMod.HumanLoopArn] = js.undefined
 }
 object HumanLoopActivationOutput {
   

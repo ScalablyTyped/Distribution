@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowFieldDragging extends StObject {
   
-  var allowFieldDragging: js.UndefOr[Boolean] = js.native
+  var allowFieldDragging: js.UndefOr[Boolean] = js.undefined
   
-  var showColumnFields: js.UndefOr[Boolean] = js.native
+  var showColumnFields: js.UndefOr[Boolean] = js.undefined
   
-  var showDataFields: js.UndefOr[Boolean] = js.native
+  var showDataFields: js.UndefOr[Boolean] = js.undefined
   
-  var showFilterFields: js.UndefOr[Boolean] = js.native
+  var showFilterFields: js.UndefOr[Boolean] = js.undefined
   
-  var showRowFields: js.UndefOr[Boolean] = js.native
+  var showRowFields: js.UndefOr[Boolean] = js.undefined
   
-  var texts: js.UndefOr[ColumnFieldArea] = js.native
+  var texts: js.UndefOr[ColumnFieldArea] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AllowFieldDragging {
   

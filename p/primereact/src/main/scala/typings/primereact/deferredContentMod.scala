@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deferredContentMod {
@@ -21,10 +20,9 @@ object deferredContentMod {
     def this(props: DeferredContentProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DeferredContentProps extends StObject {
     
-    var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   }
   object DeferredContentProps {
     

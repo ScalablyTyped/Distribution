@@ -34,11 +34,9 @@ import typings.officeJs.officeJsStrings.TwoPhaseColor
 import typings.officeJs.officeJsStrings.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartSeries.toJSON()`. */
-@js.native
 trait ChartSeriesData extends StObject {
   
   /**
@@ -47,7 +45,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var axisGroup: js.UndefOr[ChartAxisGroup | Primary | Secondary] = js.native
+  var axisGroup: js.UndefOr[ChartAxisGroup | Primary | Secondary] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var binOptions: js.UndefOr[ChartBinOptionsData] = js.native
+  var binOptions: js.UndefOr[ChartBinOptionsData] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsData] = js.native
+  var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsData] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bubbleScale: js.UndefOr[Double] = js.native
+  var bubbleScale: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait ChartSeriesData extends StObject {
     */
   var chartType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var dataLabels: js.UndefOr[ChartDataLabelsData] = js.native
+  var dataLabels: js.UndefOr[ChartDataLabelsData] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var doughnutHoleSize: js.UndefOr[Double] = js.native
+  var doughnutHoleSize: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var explosion: js.UndefOr[Double] = js.native
+  var explosion: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var filtered: js.UndefOr[Boolean] = js.native
+  var filtered: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var firstSliceAngle: js.UndefOr[Double] = js.native
+  var firstSliceAngle: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartSeriesFormatData] = js.native
+  var format: js.UndefOr[ChartSeriesFormatData] = js.undefined
   
   /**
     *
@@ -139,7 +137,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var gapWidth: js.UndefOr[Double] = js.native
+  var gapWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -147,7 +145,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMaximumColor: js.UndefOr[String] = js.native
+  var gradientMaximumColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -155,7 +153,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMaximumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.native
+  var gradientMaximumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
   
   /**
     *
@@ -163,7 +161,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMaximumValue: js.UndefOr[Double] = js.native
+  var gradientMaximumValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -171,7 +169,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMidpointColor: js.UndefOr[String] = js.native
+  var gradientMidpointColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -179,7 +177,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMidpointType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.native
+  var gradientMidpointType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
   
   /**
     *
@@ -187,7 +185,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMidpointValue: js.UndefOr[Double] = js.native
+  var gradientMidpointValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -195,7 +193,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMinimumColor: js.UndefOr[String] = js.native
+  var gradientMinimumColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -203,7 +201,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMinimumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.native
+  var gradientMinimumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
   
   /**
     *
@@ -211,7 +209,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientMinimumValue: js.UndefOr[Double] = js.native
+  var gradientMinimumValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -219,7 +217,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var gradientStyle: js.UndefOr[ChartGradientStyle | TwoPhaseColor | ThreePhaseColor] = js.native
+  var gradientStyle: js.UndefOr[ChartGradientStyle | TwoPhaseColor | ThreePhaseColor] = js.undefined
   
   /**
     *
@@ -227,7 +225,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var hasDataLabels: js.UndefOr[Boolean] = js.native
+  var hasDataLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -235,7 +233,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var invertColor: js.UndefOr[String] = js.native
+  var invertColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -243,7 +241,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var invertIfNegative: js.UndefOr[Boolean] = js.native
+  var invertIfNegative: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -251,7 +249,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var mapOptions: js.UndefOr[ChartMapOptionsData] = js.native
+  var mapOptions: js.UndefOr[ChartMapOptionsData] = js.undefined
   
   /**
     *
@@ -259,7 +257,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerBackgroundColor: js.UndefOr[String] = js.native
+  var markerBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -267,7 +265,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerForegroundColor: js.UndefOr[String] = js.native
+  var markerForegroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -275,7 +273,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -285,7 +283,7 @@ trait ChartSeriesData extends StObject {
     */
   var markerStyle: js.UndefOr[
     ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -293,7 +291,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -301,7 +299,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var overlap: js.UndefOr[Double] = js.native
+  var overlap: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -309,7 +307,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var parentLabelStrategy: js.UndefOr[ChartParentLabelStrategy | None | Banner | Overlapping] = js.native
+  var parentLabelStrategy: js.UndefOr[ChartParentLabelStrategy | None | Banner | Overlapping] = js.undefined
   
   /**
     *
@@ -317,7 +315,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var plotOrder: js.UndefOr[Double] = js.native
+  var plotOrder: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -325,7 +323,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var points: js.UndefOr[js.Array[ChartPointData]] = js.native
+  var points: js.UndefOr[js.Array[ChartPointData]] = js.undefined
   
   /**
     *
@@ -333,7 +331,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var secondPlotSize: js.UndefOr[Double] = js.native
+  var secondPlotSize: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -341,7 +339,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showConnectorLines: js.UndefOr[Boolean] = js.native
+  var showConnectorLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -349,7 +347,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showLeaderLines: js.UndefOr[Boolean] = js.native
+  var showLeaderLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -357,7 +355,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showShadow: js.UndefOr[Boolean] = js.native
+  var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -365,7 +363,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var smooth: js.UndefOr[Boolean] = js.native
+  var smooth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -375,7 +373,7 @@ trait ChartSeriesData extends StObject {
     */
   var splitType: js.UndefOr[
     ChartSplitType | SplitByPosition | SplitByValue | SplitByPercentValue | SplitByCustomSplit
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -383,7 +381,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var splitValue: js.UndefOr[Double] = js.native
+  var splitValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -391,7 +389,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var trendlines: js.UndefOr[js.Array[ChartTrendlineData]] = js.native
+  var trendlines: js.UndefOr[js.Array[ChartTrendlineData]] = js.undefined
   
   /**
     *
@@ -399,7 +397,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var varyByCategories: js.UndefOr[Boolean] = js.native
+  var varyByCategories: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -407,7 +405,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var xErrorBars: js.UndefOr[ChartErrorBarsData] = js.native
+  var xErrorBars: js.UndefOr[ChartErrorBarsData] = js.undefined
   
   /**
     *
@@ -415,7 +413,7 @@ trait ChartSeriesData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var yErrorBars: js.UndefOr[ChartErrorBarsData] = js.native
+  var yErrorBars: js.UndefOr[ChartErrorBarsData] = js.undefined
 }
 object ChartSeriesData {
   

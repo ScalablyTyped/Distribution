@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.i18nextSprintfPostprocessor.mod.I18nextSprintfPostProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonjsMod {

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Prompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPrompt extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Prompt = js.native
+  def extend(proto: js.Object): Prompt
   
   /* static member */
-  var fn: Prompt = js.native
+  var fn: Prompt
 }
 object TypeofPrompt {
   

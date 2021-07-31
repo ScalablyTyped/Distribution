@@ -11,8 +11,8 @@ Library will help you to detect if the locale is right-to-left language.
 | Full name          | rtl-detect |
 | Keywords           | rtl-detect, rtl-detect, locale direction, locale dir, locale, intl direction, intl dir, intl, right-to-left, left-to-right, rtl, ltr, intl-lang |
 | # releases         | 0 |
-| # dependents       | 222 |
-| # downloads        | 1367578 |
+| # dependents       | 233 |
+| # downloads        | 1746091 |
 | # stars            | 0 |
 
 ## Links

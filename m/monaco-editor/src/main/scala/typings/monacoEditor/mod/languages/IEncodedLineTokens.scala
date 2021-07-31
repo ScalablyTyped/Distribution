@@ -3,17 +3,15 @@ package typings.monacoEditor.mod.languages
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEncodedLineTokens extends StObject {
   
   /**
     * The tokenization end state.
     * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
     */
-  var endState: IState = js.native
+  var endState: IState
   
   /**
     * The tokens on the line in a binary, encoded format. Each token occupies two array indices. For token i:
@@ -35,7 +33,7 @@ trait IEncodedLineTokens extends StObject {
     * e.g. colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
     * id = 1 is for the default foreground color, id = 2 for the default background.
     */
-  var tokens: Uint32Array = js.native
+  var tokens: Uint32Array
 }
 object IEncodedLineTokens {
   

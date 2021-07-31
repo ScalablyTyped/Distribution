@@ -22,7 +22,6 @@ import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -78,7 +77,7 @@ trait Pipeline extends StObject {
   def del(keys: KeyType*): Pipeline = js.native
   
   def discard(): Pipeline = js.native
-  def discard(callback: Callback[_]): Pipeline = js.native
+  def discard(callback: Callback[js.Any]): Pipeline = js.native
   
   def dump(key: KeyType): Pipeline = js.native
   def dump(key: KeyType, callback: Callback[String]): Pipeline = js.native
@@ -90,8 +89,8 @@ trait Pipeline extends StObject {
   
   def evalsha(scriptSha: String, numKeys: String, args: ValueType*): Pipeline = js.native
   
-  def exec(): js.Promise[js.Array[js.Tuple2[Error | Null, _]]] = js.native
-  def exec(callback: Callback[js.Array[js.Tuple2[Error | Null, _]]]): js.Promise[js.Array[js.Tuple2[Error | Null, _]]] = js.native
+  def exec(): js.Promise[js.Array[js.Tuple2[Error | Null, js.Any]]] = js.native
+  def exec(callback: Callback[js.Array[js.Tuple2[Error | Null, js.Any]]]): js.Promise[js.Array[js.Tuple2[Error | Null, js.Any]]] = js.native
   
   def exists(keys: KeyType*): Pipeline = js.native
   
@@ -156,8 +155,8 @@ trait Pipeline extends StObject {
   def hmset(key: KeyType, args: ValueType*): Pipeline = js.native
   def hmset(key: KeyType, data: js.Object): Pipeline = js.native
   def hmset(key: KeyType, data: js.Object, callback: Callback[BooleanResponse]): Pipeline = js.native
-  def hmset(key: KeyType, data: Map[String, _]): Pipeline = js.native
-  def hmset(key: KeyType, data: Map[String, _], callback: Callback[BooleanResponse]): Pipeline = js.native
+  def hmset(key: KeyType, data: Map[String, js.Any]): Pipeline = js.native
+  def hmset(key: KeyType, data: Map[String, js.Any], callback: Callback[BooleanResponse]): Pipeline = js.native
   
   def hscan(key: KeyType, cursor: String, args: ValueType*): Pipeline = js.native
   def hscan(key: KeyType, cursor: Double, args: ValueType*): Pipeline = js.native
@@ -165,8 +164,8 @@ trait Pipeline extends StObject {
   def hset(key: KeyType, args: ValueType*): Pipeline = js.native
   def hset(key: KeyType, data: js.Object): Pipeline = js.native
   def hset(key: KeyType, data: js.Object, callback: Callback[BooleanResponse]): Pipeline = js.native
-  def hset(key: KeyType, data: Map[String, _]): Pipeline = js.native
-  def hset(key: KeyType, data: Map[String, _], callback: Callback[BooleanResponse]): Pipeline = js.native
+  def hset(key: KeyType, data: Map[String, js.Any]): Pipeline = js.native
+  def hset(key: KeyType, data: Map[String, js.Any], callback: Callback[BooleanResponse]): Pipeline = js.native
   def hset(key: KeyType, field: String, value: ValueType): Pipeline = js.native
   def hset(key: KeyType, field: String, value: ValueType, callback: Callback[BooleanResponse]): Pipeline = js.native
   
@@ -265,14 +264,14 @@ trait Pipeline extends StObject {
   def mset(args: ValueType*): Pipeline = js.native
   def mset(data: js.Object): Pipeline = js.native
   def mset(data: js.Object, callback: Callback[String]): Pipeline = js.native
-  def mset(data: Map[String, _]): Pipeline = js.native
-  def mset(data: Map[String, _], callback: Callback[String]): Pipeline = js.native
+  def mset(data: Map[String, js.Any]): Pipeline = js.native
+  def mset(data: Map[String, js.Any], callback: Callback[String]): Pipeline = js.native
   
   def msetnx(args: ValueType*): Pipeline = js.native
   def msetnx(data: js.Object): Pipeline = js.native
   def msetnx(data: js.Object, callback: Callback[BooleanResponse]): Pipeline = js.native
-  def msetnx(data: Map[String, _]): Pipeline = js.native
-  def msetnx(data: Map[String, _], callback: Callback[BooleanResponse]): Pipeline = js.native
+  def msetnx(data: Map[String, js.Any]): Pipeline = js.native
+  def msetnx(data: Map[String, js.Any], callback: Callback[BooleanResponse]): Pipeline = js.native
   
   def multi(): Pipeline = js.native
   def multi(callback: Callback[String]): Pipeline = js.native
@@ -494,7 +493,7 @@ trait Pipeline extends StObject {
   def sunionstore(destination: String, keys: KeyType*): Pipeline = js.native
   
   def sync(): Pipeline = js.native
-  def sync(callback: Callback[_]): Pipeline = js.native
+  def sync(callback: Callback[js.Any]): Pipeline = js.native
   
   def time(): Pipeline = js.native
   def time(callback: Callback[js.Tuple2[String, String]]): Pipeline = js.native

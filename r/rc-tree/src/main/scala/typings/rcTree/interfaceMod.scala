@@ -1,41 +1,34 @@
 package typings.rcTree
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.rcTree.anon.IsTreeNode
-import typings.rcTree.anon.ReadonlyTreeNodeProps
-import typings.rcTree.anon.ReadonlyTreeNodePropsRead
 import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.react.mod.CSSProperties
-import typings.react.mod.ErrorInfo
-import typings.react.mod.ReactInstance
+import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.Error
 import typings.std.HTMLSpanElement
-import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
   /* Inlined parent std.Omit<rc-tree.rc-tree/es/interface.Entity, 'node' | 'parent' | 'children'> */
-  @js.native
   trait DataEntity extends StObject {
     
-    var children: js.UndefOr[js.Array[DataEntity]] = js.native
+    var children: js.UndefOr[js.Array[DataEntity]] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: Key = js.native
+    var key: Key
     
-    var level: Double = js.native
+    var level: Double
     
-    var node: DataNode = js.native
+    var node: DataNode
     
-    var parent: js.UndefOr[DataEntity] = js.native
+    var parent: js.UndefOr[DataEntity] = js.undefined
     
-    var pos: String = js.native
+    var pos: String
   }
   object DataEntity {
     
@@ -80,33 +73,32 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait DataNode extends StObject {
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[DataNode]] = js.native
+    var children: js.UndefOr[js.Array[DataNode]] = js.undefined
     
     /** Set style of TreeNode. This is not recommend if you don't have any force requirement */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableCheckbox: js.UndefOr[Boolean] = js.native
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[IconType] = js.native
+    var icon: js.UndefOr[IconType] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var key: String | Double = js.native
+    var key: String | Double
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var switcherIcon: js.UndefOr[IconType] = js.native
+    var switcherIcon: js.UndefOr[IconType] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object DataNode {
     
@@ -199,20 +191,19 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait Entity extends StObject {
     
-    var children: js.UndefOr[js.Array[Entity]] = js.native
+    var children: js.UndefOr[js.Array[Entity]] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: Key = js.native
+    var key: Key
     
-    var node: NodeElement = js.native
+    var node: NodeElement
     
-    var parent: js.UndefOr[Entity] = js.native
+    var parent: js.UndefOr[Entity] = js.undefined
     
-    var pos: String = js.native
+    var pos: String
   }
   object Entity {
     
@@ -254,30 +245,31 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait EventDataNode extends DataNode {
+  trait EventDataNode
+    extends StObject
+       with DataNode {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var dragOver: Boolean = js.native
+    var dragOver: Boolean
     
-    var dragOverGapBottom: Boolean = js.native
+    var dragOverGapBottom: Boolean
     
-    var dragOverGapTop: Boolean = js.native
+    var dragOverGapTop: Boolean
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    var halfChecked: Boolean = js.native
+    var halfChecked: Boolean
     
-    var loaded: Boolean = js.native
+    var loaded: Boolean
     
-    var loading: Boolean = js.native
+    var loading: Boolean
     
-    var pos: String = js.native
+    var pos: String
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object EventDataNode {
     
@@ -338,20 +330,19 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait FlattenNode extends StObject {
     
-    var children: js.Array[FlattenNode] = js.native
+    var children: js.Array[FlattenNode]
     
-    var data: DataNode = js.native
+    var data: DataNode
     
-    var isEnd: js.Array[Boolean] = js.native
+    var isEnd: js.Array[Boolean]
     
-    var isStart: js.Array[Boolean] = js.native
+    var isStart: js.Array[Boolean]
     
-    var parent: FlattenNode | Null = js.native
+    var parent: FlattenNode | Null
     
-    var pos: String = js.native
+    var pos: String
   }
   object FlattenNode {
     
@@ -363,7 +354,7 @@ object interfaceMod {
       isStart: js.Array[Boolean],
       pos: String
     ): FlattenNode = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isEnd = isEnd.asInstanceOf[js.Any], isStart = isStart.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isEnd = isEnd.asInstanceOf[js.Any], isStart = isStart.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], parent = null)
       __obj.asInstanceOf[FlattenNode]
     }
     
@@ -410,23 +401,20 @@ object interfaceMod {
   
   type Key = String | Double
   
-  /* Inlined react.react.ReactElement & {  selectHandle :std.HTMLSpanElement | undefined,   type :{  isTreeNode :boolean}} */
-  @js.native
-  trait NodeElement extends StObject {
+  trait NodeElement
+    extends StObject
+       with ReactElement {
     
-    var key: typings.react.mod.Key | Null = js.native
+    var selectHandle: js.UndefOr[HTMLSpanElement] = js.undefined
     
-    var props: js.Any = js.native
-    
-    var selectHandle: js.UndefOr[HTMLSpanElement] = js.native
-    
-    var `type`: js.Any with IsTreeNode = js.native
+    @JSName("type")
+    var type_NodeElement: IsTreeNode
   }
   object NodeElement {
     
     @scala.inline
-    def apply(props: js.Any, `type`: js.Any with IsTreeNode): NodeElement = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    def apply(props: js.Any, `type`: IsTreeNode): NodeElement = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeElement]
     }
@@ -435,263 +423,21 @@ object interfaceMod {
     implicit class NodeElementMutableBuilder[Self <: NodeElement] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
-      
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setSelectHandle(value: HTMLSpanElement): Self = StObject.set(x, "selectHandle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectHandleUndefined: Self = StObject.set(x, "selectHandle", js.undefined)
       
       @scala.inline
-      def setType(value: js.Any with IsTreeNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: IsTreeNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined react.react.Component<rc-tree.rc-tree/es/TreeNode.TreeNodeProps, {}, any> & {  selectHandle :std.HTMLSpanElement | undefined} */
   @js.native
-  trait NodeInstance extends StObject {
-    
-    /**
-      * Called immediately before mounting occurs, and before `Component#render`.
-      * Avoid introducing any side-effects or subscriptions in this method.
-      *
-      * This method will not stop working in React 17.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use componentDidMount or the constructor instead
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    /**
-      * Called when the component may be receiving new props.
-      * React may call this even if props have not changed, so be sure to compare new and existing
-      * props if you only want to handle changes.
-      *
-      * Calling `Component#setState` generally does not trigger this method.
-      *
-      * This method will not stop working in React 17.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use static getDerivedStateFromProps instead
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var UNSAFE_componentWillReceiveProps: js.UndefOr[
-        js.Function2[/* nextProps */ ReadonlyTreeNodeProps, /* nextContext */ js.Any, Unit]
-      ] = js.native
-    
-    /**
-      * Called immediately before rendering when new props or state is received. Not called for the initial render.
-      *
-      * Note: You cannot call `Component#setState` here.
-      *
-      * This method will not stop working in React 17.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use getSnapshotBeforeUpdate instead
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var UNSAFE_componentWillUpdate: js.UndefOr[
-        js.Function3[
-          /* nextProps */ ReadonlyTreeNodeProps, 
-          /* nextState */ js.Object, 
-          /* nextContext */ js.Any, 
-          Unit
-        ]
-      ] = js.native
-    
-    /**
-      * Catches exceptions generated in descendant components. Unhandled exceptions will cause
-      * the entire component tree to unmount.
-      */
-    var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
-    
-    /**
-      * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
-      */
-    var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    /**
-      * Called immediately after updating occurs. Not called for the initial render.
-      *
-      * The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
-      */
-    var componentDidUpdate: js.UndefOr[
-        js.Function3[
-          /* prevProps */ ReadonlyTreeNodeProps, 
-          /* prevState */ js.Object, 
-          /* snapshot */ js.UndefOr[js.Any], 
-          Unit
-        ]
-      ] = js.native
-    
-    /**
-      * Called immediately before mounting occurs, and before `Component#render`.
-      * Avoid introducing any side-effects or subscriptions in this method.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use componentDidMount or the constructor instead; will stop working in React 17
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    /**
-      * Called when the component may be receiving new props.
-      * React may call this even if props have not changed, so be sure to compare new and existing
-      * props if you only want to handle changes.
-      *
-      * Calling `Component#setState` generally does not trigger this method.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use static getDerivedStateFromProps instead; will stop working in React 17
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var componentWillReceiveProps: js.UndefOr[
-        js.Function2[/* nextProps */ ReadonlyTreeNodeProps, /* nextContext */ js.Any, Unit]
-      ] = js.native
-    
-    /**
-      * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
-      * cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
-      */
-    var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    /**
-      * Called immediately before rendering when new props or state is received. Not called for the initial render.
-      *
-      * Note: You cannot call `Component#setState` here.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
-      * prevents this from being invoked.
-      *
-      * @deprecated 16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-      * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
-      */
-    var componentWillUpdate: js.UndefOr[
-        js.Function3[
-          /* nextProps */ ReadonlyTreeNodeProps, 
-          /* nextState */ js.Object, 
-          /* nextContext */ js.Any, 
-          Unit
-        ]
-      ] = js.native
-    
-    /**
-      * If using the new style context, re-declare this in your class to be the
-      * `React.ContextType` of your `static contextType`.
-      * Should be used with type annotation or static contextType.
-      *
-      * ```ts
-      * static contextType = MyContext
-      * // For TS pre-3.7:
-      * context!: React.ContextType<typeof MyContext>
-      * // For TS 3.7 and above:
-      * declare context: React.ContextType<typeof MyContext>
-      * ```
-      *
-      * @see https://reactjs.org/docs/context.html
-      */
-    // TODO (TypeScript 3.0): unknown
-    var context: js.Any = js.native
-    
-    def forceUpdate(): Unit = js.native
-    def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * Runs before React applies the result of `render` to the document, and
-      * returns an object to be given to componentDidUpdate. Useful for saving
-      * things such as scroll position before `render` causes changes to it.
-      *
-      * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
-      * lifecycle events from running.
-      */
-    var getSnapshotBeforeUpdate: js.UndefOr[
-        js.Function2[/* prevProps */ ReadonlyTreeNodeProps, /* prevState */ js.Object, _ | Null]
-      ] = js.native
-    
-    // React.Props<T> is now deprecated, which means that the `children`
-    // property is not available on `P` by default, even though you can
-    // always pass children as variadic arguments to `createElement`.
-    // In the future, if we can define its call signature conditionally
-    // on the existence of `children` in `P`, then we should remove this.
-    val props: ReadonlyTreeNodePropsRead = js.native
-    
-    /**
-      * @deprecated
-      * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
-      */
-    var refs: StringDictionary[ReactInstance] = js.native
-    
-    def render(): ReactNode = js.native
+  trait NodeInstance
+    extends Component[TreeNodeProps, js.Object, js.Any] {
     
     var selectHandle: js.UndefOr[HTMLSpanElement] = js.native
-    
-    // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
-    // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
-    // Also, the ` | S` allows intellisense to not be dumbisense
-    def setState[K /* <: /* keyof {} */ String */](): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](
-      state: js.Function2[
-          /* prevState */ js.Object, 
-          /* props */ ReadonlyTreeNodeProps, 
-          (Pick[js.Object, K]) | js.Object | Null
-        ]
-    ): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](
-      state: js.Function2[
-          /* prevState */ js.Object, 
-          /* props */ ReadonlyTreeNodeProps, 
-          (Pick[js.Object, K]) | js.Object | Null
-        ],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](state: js.Object): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K]): Unit = js.native
-    def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * Called to determine whether the change in props and state should trigger a re-render.
-      *
-      * `Component` always returns true.
-      * `PureComponent` implements a shallow comparison on props and state and returns true if any
-      * props or states have changed.
-      *
-      * If false is returned, `Component#render`, `componentWillUpdate`
-      * and `componentDidUpdate` will not be called.
-      */
-    var shouldComponentUpdate: js.UndefOr[
-        js.Function3[
-          /* nextProps */ ReadonlyTreeNodeProps, 
-          /* nextState */ js.Object, 
-          /* nextContext */ js.Any, 
-          Boolean
-        ]
-      ] = js.native
   }
   
   type ScrollTo = js.Function1[/* scroll */ typings.rcTree.anon.Key, Unit]

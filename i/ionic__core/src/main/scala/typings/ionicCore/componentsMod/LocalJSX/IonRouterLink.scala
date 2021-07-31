@@ -6,41 +6,39 @@ import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonRouterLink extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
     */
-  var rel: js.UndefOr[String] = js.native
+  var rel: js.UndefOr[String] = js.undefined
   
   /**
     * When using a router, it specifies the transition animation when navigating to another page using `href`.
     */
-  var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[RouterDirection] = js.native
+  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
   
   /**
     * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object IonRouterLink {
   

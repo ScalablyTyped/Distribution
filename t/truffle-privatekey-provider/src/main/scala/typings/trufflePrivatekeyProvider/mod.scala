@@ -2,23 +2,29 @@ package typings.trufflePrivatekeyProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("truffle-privatekey-provider", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PrivateKeyProvider {
+  class ^ protected ()
+    extends StObject
+       with PrivateKeyProvider {
     def this(privateKey: js.Any, providerUrl: js.Any) = this()
+    
+    /* CompleteClass */
+    override def send(args: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def sendAsync(args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait PrivateKeyProvider extends StObject {
     
-    def send(args: js.Any*): js.Any = js.native
+    def send(args: js.Any*): js.Any
     
-    def sendAsync(args: js.Any*): Unit = js.native
+    def sendAsync(args: js.Any*): Unit
   }
   object PrivateKeyProvider {
     

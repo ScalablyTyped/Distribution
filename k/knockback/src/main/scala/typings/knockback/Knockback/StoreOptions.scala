@@ -2,19 +2,17 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreOptions extends StObject {
   
-  var creator: js.Any = js.native
+  var creator: js.Any
   
-  var factory: Factory = js.native
+  var factory: Factory
   
-  var path: String = js.native
+  var path: String
   
-  var store: Store = js.native
+  var store: Store
 }
 object StoreOptions {
   

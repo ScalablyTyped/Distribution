@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafv2RegexPatternSetMod {
@@ -62,6 +61,10 @@ object wafv2RegexPatternSetMod {
   /* static members */
   object RegexPatternSet {
     
+    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RegexPatternSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,40 +74,34 @@ object wafv2RegexPatternSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RegexPatternSet = js.native
-    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RegexPatternSet = js.native
-    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexPatternSetState): RegexPatternSet = js.native
-    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): RegexPatternSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexPatternSetState): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
     
     /**
       * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafv2/regexPatternSet", "RegexPatternSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean]
   }
   
-  @js.native
   trait RegexPatternSetArgs extends StObject {
     
     /**
       * A friendly description of the regular expression pattern set.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the regular expression pattern set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more blocks of regular expression patterns that you want AWS WAF to search for, such as `B[a@]dB[o0]t`. See Regular Expression below for details.
@@ -113,17 +110,17 @@ object wafv2RegexPatternSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: Input[String] = js.native
+    val scope: Input[String]
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RegexPatternSetArgs {
     
@@ -172,25 +169,24 @@ object wafv2RegexPatternSetMod {
     }
   }
   
-  @js.native
   trait RegexPatternSetState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the cluster.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly description of the regular expression pattern set.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
-    val lockToken: js.UndefOr[Input[String]] = js.native
+    val lockToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the regular expression pattern set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more blocks of regular expression patterns that you want AWS WAF to search for, such as `B[a@]dB[o0]t`. See Regular Expression below for details.
@@ -199,17 +195,17 @@ object wafv2RegexPatternSetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: js.UndefOr[Input[String]] = js.native
+    val scope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RegexPatternSetState {
     

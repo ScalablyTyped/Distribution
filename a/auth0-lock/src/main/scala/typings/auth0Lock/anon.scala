@@ -2,23 +2,21 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aud extends StObject {
     
-    var aud: String = js.native
+    var aud: String
     
-    var exp: Double = js.native
+    var exp: Double
     
-    var iat: Double = js.native
+    var iat: Double
     
-    var iss: String = js.native
+    var iss: String
     
-    var sub: String = js.native
+    var sub: String
   }
   object Aud {
     
@@ -48,12 +46,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Hint extends StObject {
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Hint {
     

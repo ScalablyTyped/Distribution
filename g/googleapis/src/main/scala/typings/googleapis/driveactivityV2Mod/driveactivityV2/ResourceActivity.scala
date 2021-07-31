@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/driveactivity/v2", "driveactivity_v2.Resource$Activity")
@@ -30,7 +29,7 @@ class ResourceActivity protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaQueryDriveActivityResponse]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(params: ParamsResourceActivityQuery): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(
     params: ParamsResourceActivityQuery,

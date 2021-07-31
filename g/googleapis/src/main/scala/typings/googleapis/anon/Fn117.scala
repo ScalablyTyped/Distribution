@@ -7,7 +7,6 @@ import typings.googleapis.servicebrokerV1Mod.servicebrokerV1.Options
 import typings.googleapis.servicebrokerV1Mod.servicebrokerV1.Servicebroker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

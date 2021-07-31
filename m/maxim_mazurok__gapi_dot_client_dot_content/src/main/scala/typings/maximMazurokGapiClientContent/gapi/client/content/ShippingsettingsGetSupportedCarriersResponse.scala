@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingsettingsGetSupportedCarriersResponse extends StObject {
   
   /** A list of supported carriers. May be empty. */
-  var carriers: js.UndefOr[js.Array[CarriersCarrier]] = js.native
+  var carriers: js.UndefOr[js.Array[CarriersCarrier]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#shippingsettingsGetSupportedCarriersResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ShippingsettingsGetSupportedCarriersResponse {
   

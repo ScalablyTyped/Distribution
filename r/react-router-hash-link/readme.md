@@ -10,9 +10,9 @@ Hash link scroll functionality for React Router v4/5
 | ------------------ | :-------------: |
 | Full name          | react-router-hash-link |
 | Keywords           | react, react-router, link, hash-link, scroll |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 3206840 |
+| # releases         | 8 |
+| # dependents       | 38 |
+| # downloads        | 3734729 |
 | # stars            | 1 |
 
 ## Links

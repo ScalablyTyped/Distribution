@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.queryString.mod.StringifyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,6 @@ object mod extends Shortcut {
   @js.native
   val default: urlJoin = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -22,32 +20,32 @@ object mod extends Shortcut {
       *
       * **Default**: `true`
       */
-    var leadingSlash: js.UndefOr[Boolean] = js.native
+    var leadingSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Protocol relative URLs.
       *
       * **Default**: `false`
       */
-    var protocolRelative: js.UndefOr[Boolean] = js.native
+    var protocolRelative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Query string object that will be properly stringified and appended to the url.
       * It will be merged with the query string in the url, if it exists.
       */
-    var query: js.UndefOr[StringDictionary[String | Double | (js.Array[String | Double])]] = js.native
+    var query: js.UndefOr[StringDictionary[String | Double | (js.Array[String | Double])]] = js.undefined
     
     /**
       * [query-string](https://github.com/sindresorhus/query-string#stringifyobject-options) singify method options to be considered when stringifying the query.
       */
-    var queryOptions: js.UndefOr[StringifyOptions] = js.native
+    var queryOptions: js.UndefOr[StringifyOptions] = js.undefined
     
     /**
       * Add a trailing slash.
       *
       * **Default**: `false`
       */
-    var trailingSlash: js.UndefOr[Boolean] = js.native
+    var trailingSlash: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

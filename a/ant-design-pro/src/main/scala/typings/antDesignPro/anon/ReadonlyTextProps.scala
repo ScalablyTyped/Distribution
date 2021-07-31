@@ -3,26 +3,24 @@ package typings.antDesignPro.anon
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.Guide.TextProps> */
-@js.native
 trait ReadonlyTextProps extends StObject {
   
-  val content: js.UndefOr[String] = js.native
+  val content: js.UndefOr[String] = js.undefined
   
-  val offsetX: js.UndefOr[Double] = js.native
+  val offsetX: js.UndefOr[Double] = js.undefined
   
-  val offsetY: js.UndefOr[Double] = js.native
+  val offsetY: js.UndefOr[Double] = js.undefined
   
   val position: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val style: js.UndefOr[text] = js.native
+  val style: js.UndefOr[text] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyTextProps {
   
@@ -55,11 +53,11 @@ object ReadonlyTextProps {
     
     @scala.inline
     def setPosition(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
     @scala.inline
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

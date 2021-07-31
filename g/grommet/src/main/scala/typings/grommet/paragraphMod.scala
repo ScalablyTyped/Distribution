@@ -19,7 +19,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLParagraphElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paragraphMod {
@@ -27,32 +26,31 @@ object paragraphMod {
   @JSImport("grommet/components/Paragraph", "Paragraph")
   @js.native
   val Paragraph: FC[
-    ParagraphProps with (Omit[
+    ParagraphProps & (Omit[
       DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
       color
     ])
   ] = js.native
   
-  @js.native
   trait ParagraphProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | xxlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | xxlarge | String] = js.undefined
     
-    var textAlign: js.UndefOr[TextAlignType] = js.native
+    var textAlign: js.UndefOr[TextAlignType] = js.undefined
   }
   object ParagraphProps {
     

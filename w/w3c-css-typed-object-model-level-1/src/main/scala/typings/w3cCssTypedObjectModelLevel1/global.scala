@@ -1,190 +1,313 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.DOMMatrix
 import typings.std.DOMMatrixReadOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object CSS {
     
-    @JSGlobal("CSS.Hz")
+    @JSGlobal("CSS")
     @js.native
-    def Hz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("CSS.Q")
-    @js.native
-    def Q(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def Hz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Hz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.ch")
-    @js.native
-    def ch(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def Q(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Q")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.cm")
-    @js.native
-    def cm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def ch(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ch")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.deg")
-    @js.native
-    def deg(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def cm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("cm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.dpcm")
-    @js.native
-    def dpcm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def deg(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deg")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.dpi")
-    @js.native
-    def dpi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def dpcm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpcm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.dppx")
-    @js.native
-    def dppx(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def dpi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.em")
-    @js.native
-    def em(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def dppx(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dppx")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.ex")
-    @js.native
-    def ex(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def em(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.fr")
-    @js.native
-    def fr(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def ex(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ex")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.grad")
-    @js.native
-    def grad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def fr(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fr")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.ic")
-    @js.native
-    def ic(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def grad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("grad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS._in")
-    @js.native
-    def in(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def ic(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ic")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.kHz")
-    @js.native
-    def kHz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def in(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("_in")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.lh")
-    @js.native
-    def lh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def kHz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("kHz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.mm")
-    @js.native
-    def mm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def lh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("lh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.ms")
-    @js.native
-    def ms(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def mm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("mm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.number")
-    @js.native
-    def number(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def ms(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.pc")
-    @js.native
-    def pc(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def number(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.percent")
-    @js.native
-    def percent(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def pc(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pc")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.pt")
-    @js.native
-    def pt(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def percent(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.px")
-    @js.native
-    def px(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def pt(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.rad")
-    @js.native
-    def rad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def px(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("px")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.rem")
-    @js.native
-    def rem(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def rad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.rlh")
-    @js.native
-    def rlh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def rem(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.s")
-    @js.native
-    def s(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def rlh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rlh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.turn")
-    @js.native
-    def turn(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def s(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vb")
-    @js.native
-    def vb(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def turn(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("turn")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vh")
-    @js.native
-    def vh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def vb(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vb")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vi")
-    @js.native
-    def vi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def vh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vmax")
-    @js.native
-    def vmax(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def vi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vmin")
-    @js.native
-    def vmin(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def vmax(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmax")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @JSGlobal("CSS.vw")
-    @js.native
-    def vw(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    @scala.inline
+    def vmin(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmin")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    
+    @scala.inline
+    def vw(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vw")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
   }
   
   @JSGlobal("CSSImageValue")
   @js.native
   class CSSImageValue ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
   
   @JSGlobal("CSSKeywordValue")
   @js.native
   class CSSKeywordValue protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSKeywordValue {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSKeywordValue {
     def this(value: String) = this()
+    
+    /* CompleteClass */
+    var value: String = js.native
   }
   
   @JSGlobal("CSSMathInvert")
   @js.native
   class CSSMathInvert protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathInvert {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathInvert {
     def this(arg: CSSNumberish) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val value: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
   @JSGlobal("CSSMathMax")
   @js.native
   class CSSMathMax protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathMax {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathMax {
     def this(args: CSSNumberish*) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
   @JSGlobal("CSSMathMin")
   @js.native
   class CSSMathMin protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathMin {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathMin {
     def this(args: CSSNumberish*) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
   @JSGlobal("CSSMathNegate")
   @js.native
   class CSSMathNegate protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathNegate {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathNegate {
     def this(arg: CSSNumberish) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val value: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
   @JSGlobal("CSSMathOperator")
@@ -192,48 +315,167 @@ object global {
   object CSSMathOperator extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSMathOperator with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSMathOperator & Double] = js.native
     
-    /* 6 */ val clamp: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.clamp with Double = js.native
+    /* 6 */ val clamp: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.clamp & Double = js.native
     
-    /* 3 */ val invert: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.invert with Double = js.native
+    /* 3 */ val invert: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.invert & Double = js.native
     
-    /* 5 */ val max: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.max with Double = js.native
+    /* 5 */ val max: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.max & Double = js.native
     
-    /* 4 */ val min: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.min with Double = js.native
+    /* 4 */ val min: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.min & Double = js.native
     
-    /* 2 */ val negate: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.negate with Double = js.native
+    /* 2 */ val negate: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.negate & Double = js.native
     
-    /* 1 */ val product: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.product with Double = js.native
+    /* 1 */ val product: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.product & Double = js.native
     
-    /* 0 */ val sum: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.sum with Double = js.native
+    /* 0 */ val sum: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.sum & Double = js.native
   }
   
   @JSGlobal("CSSMathProduct")
   @js.native
   class CSSMathProduct protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathProduct {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathProduct {
     def this(args: CSSNumberish*) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
   @JSGlobal("CSSMathSum")
   @js.native
   class CSSMathSum protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathSum {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathSum {
     def this(args: CSSNumberish*) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
   @JSGlobal("CSSMathValue")
   @js.native
   class CSSMathValue ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMathValue
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathValue {
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: CSSMathOperator = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+  }
   
   @JSGlobal("CSSMatrixComponent")
   @js.native
   class CSSMatrixComponent protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSMatrixComponent {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMatrixComponent {
     def this(matrix: DOMMatrixReadOnly) = this()
     def this(matrix: DOMMatrixReadOnly, options: CSSMatrixComponentOptions) = this()
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    var matrix: DOMMatrix = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
   }
   
   // TODO(yavanosta): conflict with base class properties
@@ -248,40 +490,76 @@ object global {
   @JSGlobal("CSSNumericArray")
   @js.native
   class CSSNumericArray ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSNumericArray
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSNumericArray
   
   @JSGlobal("CSSNumericBaseType")
   @js.native
   object CSSNumericBaseType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType & Double] = js.native
     
-    /* 1 */ val angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.angle with Double = js.native
+    /* 1 */ val angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.angle & Double = js.native
     
-    /* 5 */ val flex: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.flex with Double = js.native
+    /* 5 */ val flex: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.flex & Double = js.native
     
-    /* 3 */ val frequency: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.frequency with Double = js.native
+    /* 3 */ val frequency: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.frequency & Double = js.native
     
-    /* 0 */ val length: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.length with Double = js.native
+    /* 0 */ val length: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.length & Double = js.native
     
-    /* 6 */ val percent: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.percent with Double = js.native
+    /* 6 */ val percent: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.percent & Double = js.native
     
-    /* 4 */ val resolution: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.resolution with Double = js.native
+    /* 4 */ val resolution: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.resolution & Double = js.native
     
-    /* 2 */ val time: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.time with Double = js.native
+    /* 2 */ val time: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.time & Double = js.native
   }
   
   @JSGlobal("CSSNumericValue")
   @js.native
   class CSSNumericValue ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSNumericValue {
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+  }
   object CSSNumericValue {
     
-    /* static member */
-    @JSGlobal("CSSNumericValue.parse")
+    @JSGlobal("CSSNumericValue")
     @js.native
-    def parse(cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def parse(cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cssText.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSNumericValue]
   }
   
   /* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),
@@ -289,14 +567,25 @@ object global {
   @JSGlobal("CSSPerspective")
   @js.native
   class CSSPerspective protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSPerspective {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSPerspective {
     def this(length: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    var length: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
   }
   
   @JSGlobal("CSSRotate")
   @js.native
   class CSSRotate protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSRotate {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSRotate {
     def this(angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
     def this(
       x: CSSNumberish,
@@ -304,73 +593,153 @@ object global {
       z: CSSNumberish,
       angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
     ) = this()
+    
+    /* CompleteClass */
+    var angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
+    
+    /* CompleteClass */
+    var x: CSSNumberish = js.native
+    
+    /* CompleteClass */
+    var y: CSSNumberish = js.native
+    
+    /* CompleteClass */
+    var z: CSSNumberish = js.native
   }
   
   @JSGlobal("CSSScale")
   @js.native
   class CSSScale protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSScale {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSScale {
     def this(x: CSSNumberish, y: CSSNumberish) = this()
     def this(x: CSSNumberish, y: CSSNumberish, z: CSSNumberish) = this()
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
+    
+    /* CompleteClass */
+    var x: CSSNumberish = js.native
+    
+    /* CompleteClass */
+    var y: CSSNumberish = js.native
+    
+    /* CompleteClass */
+    var z: CSSNumberish = js.native
   }
   
   @JSGlobal("CSSSkew")
   @js.native
   class CSSSkew protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSSkew {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSSkew {
     def this(
       ax: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue,
       ay: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
     ) = this()
+    
+    /* CompleteClass */
+    var ax: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var ay: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
   }
   
   @JSGlobal("CSSSkewX")
   @js.native
   class CSSSkewX protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSSkewX {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSSkewX {
     def this(ax: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
+    
+    /* CompleteClass */
+    var ax: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
   }
   
   @JSGlobal("CSSSkewY")
   @js.native
   class CSSSkewY protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSSkewY {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSSkewY {
     def this(ay: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
+    
+    /* CompleteClass */
+    var ay: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
   }
   
   @JSGlobal("CSSStyleValue")
   @js.native
   class CSSStyleValue ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
   object CSSStyleValue {
     
-    /* static member */
-    @JSGlobal("CSSStyleValue.parse")
+    @JSGlobal("CSSStyleValue")
     @js.native
-    def parse(property: String, cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSStyleValue = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("CSSStyleValue.parseAll")
-    @js.native
-    def parseAll(property: String, cssText: String): js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue] = js.native
+    @scala.inline
+    def parse(property: String, cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSStyleValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]
+    
+    /* static member */
+    @scala.inline
+    def parseAll(property: String, cssText: String): js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]]
   }
   
   @JSGlobal("CSSTransformComponent")
   @js.native
   class CSSTransformComponent ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSTransformComponent
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSTransformComponent {
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
+  }
   
   @JSGlobal("CSSTransformValue")
   @js.native
   class CSSTransformValue protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSTransformValue {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSTransformValue {
     def this(transforms: js.Array[typings.w3cCssTypedObjectModelLevel1.CSSTransformComponent]) = this()
   }
   
   @JSGlobal("CSSTranslate")
   @js.native
   class CSSTranslate protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSTranslate {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSTranslate {
     def this(
       x: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue,
       y: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
@@ -380,37 +749,96 @@ object global {
       y: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue,
       z: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
     ) = this()
+    
+    /* CompleteClass */
+    var is2D: Boolean = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(): DOMMatrix = js.native
+    
+    /* CompleteClass */
+    var x: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var y: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    var z: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
   @JSGlobal("CSSUnitValue")
   @js.native
   class CSSUnitValue protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSUnitValue {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSUnitValue {
     def this(value: Double, unit: String) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(values: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val unit: String = js.native
+    
+    /* CompleteClass */
+    var value: Double = js.native
   }
   
   @JSGlobal("CSSUnparsedValue")
   @js.native
   class CSSUnparsedValue protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue {
     def this(members: js.Array[CSSUnparsedSegment]) = this()
   }
   
   @JSGlobal("CSSVariableReferenceValue")
   @js.native
   class CSSVariableReferenceValue protected ()
-    extends typings.w3cCssTypedObjectModelLevel1.CSSVariableReferenceValue {
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSVariableReferenceValue {
     def this(variable: String) = this()
     def this(variable: String, fallback: typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue) = this()
+    
+    /* CompleteClass */
+    var variable: String = js.native
   }
   
   @JSGlobal("StylePropertyMap")
   @js.native
   class StylePropertyMap ()
-    extends typings.w3cCssTypedObjectModelLevel1.StylePropertyMap
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.StylePropertyMap
   
   @JSGlobal("StylePropertyMapReadOnly")
   @js.native
   class StylePropertyMapReadOnly ()
-    extends typings.w3cCssTypedObjectModelLevel1.StylePropertyMapReadOnly
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.StylePropertyMapReadOnly
 }

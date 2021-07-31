@@ -7,18 +7,17 @@ import typings.reactMdTable.configMod.TableConfiguration
 import typings.std.HTMLTableElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
   
   @JSImport("@react-md/table/types/Table", "Table")
   @js.native
-  val Table: ForwardRefExoticComponent[TableProps with RefAttributes[HTMLTableElement]] = js.native
+  val Table: ForwardRefExoticComponent[TableProps & RefAttributes[HTMLTableElement]] = js.native
   
-  @js.native
   trait TableProps
-    extends TableHTMLAttributes[HTMLTableElement]
+    extends StObject
+       with TableHTMLAttributes[HTMLTableElement]
        with TableConfiguration
   object TableProps {
     

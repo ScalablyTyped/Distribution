@@ -2,19 +2,17 @@ package typings.ssh2SftpClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Group extends StObject {
     
-    var group: String = js.native
+    var group: String
     
-    var other: String = js.native
+    var other: String
     
-    var user: String = js.native
+    var user: String
   }
   object Group {
     

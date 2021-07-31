@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkOptions extends StObject {
   
   /**
     * The number of objects per batch.
     */
-  val batchSize: js.UndefOr[Double] = js.native
+  val batchSize: js.UndefOr[Double] = js.undefined
 }
 object ChunkOptions {
   

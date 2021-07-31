@@ -2,76 +2,68 @@ package typings.reactWithStyles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themedStyleSheetMod {
   
   object default {
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.create")
+    @JSImport("react-with-styles/lib/ThemedStyleSheet", JSImport.Default)
     @js.native
-    def create(makeFromTheme: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.createLTR")
-    @js.native
-    def createLTR(makeFromTheme: js.Any): js.Any = js.native
+    @scala.inline
+    def create(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.createRTL")
-    @js.native
-    def createRTL(makeFromTheme: js.Any): js.Any = js.native
+    @scala.inline
+    def createLTR(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createLTR")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.flush")
-    @js.native
-    def flush(): Unit = js.native
+    @scala.inline
+    def createRTL(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createRTL")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.get")
-    @js.native
-    def get(): js.Any = js.native
+    @scala.inline
+    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.registerInterface")
-    @js.native
-    def registerInterface(registerInterface: js.Any): Unit = js.native
+    @scala.inline
+    def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.registerTheme")
-    @js.native
-    def registerTheme(theme: js.Any): Unit = js.native
+    @scala.inline
+    def registerInterface(registerInterface: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterface")(registerInterface.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.resolve")
-    @js.native
-    def resolve(): js.Any = js.native
+    @scala.inline
+    def registerTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.resolveLTR")
-    @js.native
-    def resolveLTR(): js.Any = js.native
+    @scala.inline
+    def resolve(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[js.Any]
     
-    @JSImport("react-with-styles/lib/ThemedStyleSheet", "default.resolveRTL")
-    @js.native
-    def resolveRTL(): js.Any = js.native
+    @scala.inline
+    def resolveLTR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLTR")().asInstanceOf[js.Any]
+    
+    @scala.inline
+    def resolveRTL(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRTL")().asInstanceOf[js.Any]
   }
   
-  @js.native
   trait ThemedStyleSheet extends StObject {
     
-    def create(makeFromTheme: js.Any): js.Any = js.native
+    def create(makeFromTheme: js.Any): js.Any
     
-    def createLTR(makeFromTheme: js.Any): js.Any = js.native
+    def createLTR(makeFromTheme: js.Any): js.Any
     
-    def createRTL(makeFromTheme: js.Any): js.Any = js.native
+    def createRTL(makeFromTheme: js.Any): js.Any
     
-    def flush(): Unit = js.native
+    def flush(): Unit
     
-    def get(): js.Any = js.native
+    def get(): js.Any
     
-    def registerInterface(registerInterface: js.Any): Unit = js.native
+    def registerInterface(registerInterface: js.Any): Unit
     
-    def registerTheme(theme: js.Any): Unit = js.native
+    def registerTheme(theme: js.Any): Unit
     
-    def resolve(): js.Any = js.native
+    def resolve(): js.Any
     
-    def resolveLTR(): js.Any = js.native
+    def resolveLTR(): js.Any
     
-    def resolveRTL(): js.Any = js.native
+    def resolveRTL(): js.Any
   }
   object ThemedStyleSheet {
     

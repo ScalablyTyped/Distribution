@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visibilityVisibilityMod extends Shortcut {
@@ -32,32 +31,31 @@ object visibilityVisibilityMod extends Shortcut {
   @js.native
   val default: ComponentClass[VisibilityProps, ComponentState] = js.native
   
-  @js.native
   trait StrictVisibilityProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Context which sticky element should stick to. */
-    var context: js.UndefOr[Document | Window | HTMLElement] = js.native
+    var context: js.UndefOr[Document | Window | HTMLElement] = js.undefined
     
     /**
       * When set to true a callback will occur anytime an element passes a condition not just immediately after the
       * threshold is met.
       */
-    var continuous: js.UndefOr[Boolean] = js.native
+    var continuous: js.UndefOr[Boolean] = js.undefined
     
     /** Fires callbacks immediately after mount. */
-    var fireOnMount: js.UndefOr[Boolean] = js.native
+    var fireOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Value that context should be adjusted in pixels. Useful for making content appear below content fixed to the
       * page.
       */
-    var offset: js.UndefOr[Double | String | (js.Array[Double | String])] = js.native
+    var offset: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
     
     /**
       * Element's bottom edge has passed top of screen.
@@ -65,7 +63,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onBottomPassed: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onBottomPassed: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's bottom edge has not passed top of screen.
@@ -73,7 +71,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onBottomPassedReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onBottomPassedReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's bottom edge has passed bottom of screen
@@ -81,7 +79,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onBottomVisible: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onBottomVisible: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's bottom edge has not passed bottom of screen.
@@ -89,7 +87,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onBottomVisibleReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onBottomVisibleReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element is not visible on the screen.
@@ -97,7 +95,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onOffScreen: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onOffScreen: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element is visible on the screen.
@@ -105,10 +103,10 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onOnScreen: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onOnScreen: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /** Element is not visible on the screen. */
-    var onPassed: js.UndefOr[VisibilityOnPassed] = js.native
+    var onPassed: js.UndefOr[VisibilityOnPassed] = js.undefined
     
     /**
       * Any part of an element is visible on screen.
@@ -116,7 +114,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onPassing: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onPassing: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top has not passed top of screen but bottom has.
@@ -124,7 +122,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onPassingReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onPassingReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top edge has passed top of the screen.
@@ -132,7 +130,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onTopPassed: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onTopPassed: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top edge has not passed top of the screen.
@@ -140,7 +138,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onTopPassedReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onTopPassedReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top edge has passed bottom of screen.
@@ -148,7 +146,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onTopVisible: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onTopVisible: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top edge has not passed bottom of screen.
@@ -156,7 +154,7 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onTopVisibleReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onTopVisibleReverse: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /**
       * Element's top edge has passed bottom of screen.
@@ -164,17 +162,17 @@ object visibilityVisibilityMod extends Shortcut {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onUpdate: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]] = js.undefined
     
     /** When set to false a callback will occur each time an element passes the threshold for a condition. */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows to choose the mode of the position calculations:
       * - `events` - (default) update and fire callbacks only on scroll/resize events
       * - `repaint` - update and fire callbacks on browser repaint (animation frames)
       */
-    var updateOn: js.UndefOr[events | repaint] = js.native
+    var updateOn: js.UndefOr[events | repaint] = js.undefined
   }
   object StrictVisibilityProps {
     
@@ -324,34 +322,33 @@ object visibilityVisibilityMod extends Shortcut {
     }
   }
   
-  @js.native
   trait VisibilityCalculations extends StObject {
     
-    var bottomPassed: Boolean = js.native
+    var bottomPassed: Boolean
     
-    var bottomVisible: Boolean = js.native
+    var bottomVisible: Boolean
     
-    var direction: down | up = js.native
+    var direction: down | up
     
-    var fits: Boolean = js.native
+    var fits: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var offScreen: Boolean = js.native
+    var offScreen: Boolean
     
-    var onScreen: Boolean = js.native
+    var onScreen: Boolean
     
-    var passing: Boolean = js.native
+    var passing: Boolean
     
-    var percentagePassed: Double = js.native
+    var percentagePassed: Double
     
-    var pixelsPassed: Double = js.native
+    var pixelsPassed: Double
     
-    var topPassed: Boolean = js.native
+    var topPassed: Boolean
     
-    var topVisible: Boolean = js.native
+    var topVisible: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object VisibilityCalculations {
     
@@ -419,10 +416,11 @@ object visibilityVisibilityMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait VisibilityEventData extends VisibilityProps {
+  trait VisibilityEventData
+    extends StObject
+       with VisibilityProps {
     
-    var calculations: VisibilityCalculations = js.native
+    var calculations: VisibilityCalculations
   }
   object VisibilityEventData {
     
@@ -442,9 +440,9 @@ object visibilityVisibilityMod extends Shortcut {
   
   type VisibilityOnPassed = StringDictionary[js.Function2[/* nothing */ Null, /* data */ VisibilityEventData, Unit]]
   
-  @js.native
   trait VisibilityProps
-    extends StrictVisibilityProps
+    extends StObject
+       with StrictVisibilityProps
        with /* key */ StringDictionary[js.Any]
   object VisibilityProps {
     

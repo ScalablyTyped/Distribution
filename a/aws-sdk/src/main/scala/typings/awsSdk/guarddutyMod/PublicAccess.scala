@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicAccess extends StObject {
   
   /**
     * Describes the effective permission on this bucket after factoring all attached policies.
     */
-  var EffectivePermission: js.UndefOr[String] = js.native
+  var EffectivePermission: js.UndefOr[String] = js.undefined
   
   /**
     * Contains information about how permissions are configured for the S3 bucket.
     */
-  var PermissionConfiguration: js.UndefOr[typings.awsSdk.guarddutyMod.PermissionConfiguration] = js.native
+  var PermissionConfiguration: js.UndefOr[typings.awsSdk.guarddutyMod.PermissionConfiguration] = js.undefined
 }
 object PublicAccess {
   

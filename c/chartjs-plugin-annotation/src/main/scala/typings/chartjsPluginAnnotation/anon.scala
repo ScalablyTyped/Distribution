@@ -8,17 +8,15 @@ import typings.chartjsPluginAnnotation.mod.LineAnnotation
 import typings.chartjsPluginAnnotation.mod.LineAnnotationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Box extends StObject {
     
-    var box: Instantiable1[/* options */ AnnotationElementOptions[BoxAnnotationOptions], BoxAnnotation] = js.native
+    var box: Instantiable1[/* options */ AnnotationElementOptions[BoxAnnotationOptions], BoxAnnotation]
     
-    var line: Instantiable1[/* options */ AnnotationElementOptions[LineAnnotationOptions], LineAnnotation] = js.native
+    var line: Instantiable1[/* options */ AnnotationElementOptions[LineAnnotationOptions], LineAnnotation]
   }
   object Box {
     

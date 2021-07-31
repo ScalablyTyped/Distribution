@@ -2,31 +2,29 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAppLaunchConfigurationRequest extends StObject {
   
   /**
     * The ID of the application.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * Indicates whether the application is configured to launch automatically after replication is complete.
     */
-  var autoLaunch: js.UndefOr[AutoLaunch] = js.native
+  var autoLaunch: js.UndefOr[AutoLaunch] = js.undefined
   
   /**
     * The name of service role in the customer's account that AWS CloudFormation uses to launch the application.
     */
-  var roleName: js.UndefOr[RoleName] = js.native
+  var roleName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * Information about the launch configurations for server groups in the application.
     */
-  var serverGroupLaunchConfigurations: js.UndefOr[ServerGroupLaunchConfigurations] = js.native
+  var serverGroupLaunchConfigurations: js.UndefOr[ServerGroupLaunchConfigurations] = js.undefined
 }
 object PutAppLaunchConfigurationRequest {
   

@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * captions selection menus.
   */
 @js.native
-trait Menu extends Component {
+trait Menu
+  extends StObject
+     with Component {
   
   /**
     * Add a {@link MenuItem} to the menu.

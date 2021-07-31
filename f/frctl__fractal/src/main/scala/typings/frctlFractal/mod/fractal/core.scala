@@ -12,7 +12,6 @@ import typings.node.streamMod.Readable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
@@ -143,7 +142,7 @@ object core {
       
       val parent: Entity = js.native
       
-      val source: EntitySource[typings.frctlFractal.mod.fractal.core.entities.Entity, _] = js.native
+      val source: EntitySource[typings.frctlFractal.mod.fractal.core.entities.Entity, js.Any] = js.native
       
       var title: String = js.native
       
@@ -195,17 +194,17 @@ object core {
       
       def forEach(fn: js.Function1[/* item */ T, Unit]): this.type = js.native
       
-      val isAsset: js.UndefOr[scala.Nothing] = js.native
+      val isAsset: Unit = js.native
       
       val isCollection: `true` = js.native
       
-      val isComponent: js.UndefOr[scala.Nothing] = js.native
+      val isComponent: Unit = js.native
       
-      val isDoc: js.UndefOr[scala.Nothing] = js.native
+      val isDoc: Unit = js.native
       
-      val isFile: js.UndefOr[scala.Nothing] = js.native
+      val isFile: Unit = js.native
       
-      val isVariant: js.UndefOr[scala.Nothing] = js.native
+      val isVariant: Unit = js.native
       
       val items: js.Array[T] = js.native
       
@@ -271,14 +270,13 @@ object core {
     }
   }
   
-  @js.native
   trait StatusInfo extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
   }
   object StatusInfo {
     

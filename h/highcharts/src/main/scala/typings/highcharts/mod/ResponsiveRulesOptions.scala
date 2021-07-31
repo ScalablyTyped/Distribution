@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponsiveRulesOptions extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait ResponsiveRulesOptions extends StObject {
     * will cause the existing chart's two series to be updated with respective
     * options.
     */
-  var chartOptions: js.UndefOr[Options] = js.native
+  var chartOptions: js.UndefOr[Options] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Under which conditions the rule
     * applies.
     */
-  var condition: js.UndefOr[ResponsiveRulesConditionOptions] = js.native
+  var condition: js.UndefOr[ResponsiveRulesConditionOptions] = js.undefined
 }
 object ResponsiveRulesOptions {
   

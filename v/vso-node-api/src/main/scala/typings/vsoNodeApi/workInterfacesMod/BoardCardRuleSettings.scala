@@ -3,17 +3,15 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardCardRuleSettings extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var rules: StringDictionary[js.Array[Rule]] = js.native
+  var rules: StringDictionary[js.Array[Rule]]
   
-  var url: String = js.native
+  var url: String
 }
 object BoardCardRuleSettings {
   

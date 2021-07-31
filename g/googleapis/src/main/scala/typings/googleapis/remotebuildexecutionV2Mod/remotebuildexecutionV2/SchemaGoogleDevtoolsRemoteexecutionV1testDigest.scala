@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,19 +31,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * should be taken to avoid shortcuts. For instance, concatenating two
   * messages to merge them may produce duplicate fields.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testDigest extends StObject {
   
   /**
     * The hash. In the case of SHA-256, it will always be a lowercase hex
     * string exactly 64 characters long.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the blob, in bytes.
     */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testDigest {
   

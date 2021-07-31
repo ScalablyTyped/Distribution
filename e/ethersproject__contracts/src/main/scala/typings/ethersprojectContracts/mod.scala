@@ -23,7 +23,6 @@ import typings.ethersprojectContracts.anon.Object
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,7 +30,8 @@ object mod {
   @JSImport("@ethersproject/contracts", "Contract")
   @js.native
   class Contract protected ()
-    extends /* key */ StringDictionary[ContractFunction[_] | js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[ContractFunction[js.Any] | js.Any] {
     def this(addressOrName: String, contractInterface: ContractInterface) = this()
     def this(addressOrName: String, contractInterface: ContractInterface, signerOrProvider: Provider) = this()
     def this(addressOrName: String, contractInterface: ContractInterface, signerOrProvider: Signer) = this()
@@ -59,7 +59,7 @@ object mod {
     
     def attach(addressOrName: String): Contract = js.native
     
-    val callStatic: StringDictionary[ContractFunction[_]] = js.native
+    val callStatic: StringDictionary[ContractFunction[js.Any]] = js.native
     
     def connect(signerOrProvider: String): Contract = js.native
     def connect(signerOrProvider: Provider): Contract = js.native
@@ -79,7 +79,7 @@ object mod {
     
     val filters: StringDictionary[js.Function1[/* repeated */ js.Any, EventFilter]] = js.native
     
-    val functions: StringDictionary[ContractFunction[_]] = js.native
+    val functions: StringDictionary[ContractFunction[js.Any]] = js.native
     
     val interface: Interface = js.native
     
@@ -105,10 +105,11 @@ object mod {
     val provider: Provider = js.native
     
     def queryFilter(event: EventFilter): js.Promise[js.Array[Event]] = js.native
-    def queryFilter(event: EventFilter, fromBlockOrBlockhash: js.UndefOr[BlockTag], toBlock: BlockTag): js.Promise[js.Array[Event]] = js.native
     def queryFilter(event: EventFilter, fromBlockOrBlockhash: String): js.Promise[js.Array[Event]] = js.native
     def queryFilter(event: EventFilter, fromBlockOrBlockhash: String, toBlock: BlockTag): js.Promise[js.Array[Event]] = js.native
+    def queryFilter(event: EventFilter, fromBlockOrBlockhash: Unit, toBlock: BlockTag): js.Promise[js.Array[Event]] = js.native
     def queryFilter(event: EventFilter, fromBlockOrBlockhash: BlockTag): js.Promise[js.Array[Event]] = js.native
+    def queryFilter(event: EventFilter, fromBlockOrBlockhash: BlockTag, toBlock: BlockTag): js.Promise[js.Array[Event]] = js.native
     
     def removeAllListeners(): this.type = js.native
     def removeAllListeners(eventName: String): this.type = js.native
@@ -124,17 +125,18 @@ object mod {
   /* static members */
   object Contract {
     
-    @JSImport("@ethersproject/contracts", "Contract.getContractAddress")
+    @JSImport("@ethersproject/contracts", "Contract")
     @js.native
-    def getContractAddress(transaction: From): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/contracts", "Contract.getInterface")
-    @js.native
-    def getInterface(contractInterface: ContractInterface): Interface = js.native
+    @scala.inline
+    def getContractAddress(transaction: From): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContractAddress")(transaction.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@ethersproject/contracts", "Contract.isIndexed")
-    @js.native
-    def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi.Indexed */ Boolean = js.native
+    @scala.inline
+    def getInterface(contractInterface: ContractInterface): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterface")(contractInterface.asInstanceOf[js.Any]).asInstanceOf[Interface]
+    
+    @scala.inline
+    def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi.Indexed */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexed")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi.Indexed */ Boolean]
   }
   
   @JSImport("@ethersproject/contracts", "ContractFactory")
@@ -162,35 +164,34 @@ object mod {
   /* static members */
   object ContractFactory {
     
-    @JSImport("@ethersproject/contracts", "ContractFactory.fromSolidity")
+    @JSImport("@ethersproject/contracts", "ContractFactory")
     @js.native
-    def fromSolidity(compilerOutput: js.Any): ContractFactory = js.native
-    @JSImport("@ethersproject/contracts", "ContractFactory.fromSolidity")
-    @js.native
-    def fromSolidity(compilerOutput: js.Any, signer: Signer): ContractFactory = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/contracts", "ContractFactory.getContract")
-    @js.native
-    def getContract(address: String, contractInterface: ContractInterface): Contract = js.native
-    @JSImport("@ethersproject/contracts", "ContractFactory.getContract")
-    @js.native
-    def getContract(address: String, contractInterface: ContractInterface, signer: Signer): Contract = js.native
+    @scala.inline
+    def fromSolidity(compilerOutput: js.Any): ContractFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSolidity")(compilerOutput.asInstanceOf[js.Any]).asInstanceOf[ContractFactory]
+    @scala.inline
+    def fromSolidity(compilerOutput: js.Any, signer: Signer): ContractFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSolidity")(compilerOutput.asInstanceOf[js.Any], signer.asInstanceOf[js.Any])).asInstanceOf[ContractFactory]
     
-    @JSImport("@ethersproject/contracts", "ContractFactory.getContractAddress")
-    @js.native
-    def getContractAddress(tx: Nonce): String = js.native
+    @scala.inline
+    def getContract(address: String, contractInterface: ContractInterface): Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getContract")(address.asInstanceOf[js.Any], contractInterface.asInstanceOf[js.Any])).asInstanceOf[Contract]
+    @scala.inline
+    def getContract(address: String, contractInterface: ContractInterface, signer: Signer): Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getContract")(address.asInstanceOf[js.Any], contractInterface.asInstanceOf[js.Any], signer.asInstanceOf[js.Any])).asInstanceOf[Contract]
     
-    @JSImport("@ethersproject/contracts", "ContractFactory.getInterface")
-    @js.native
-    def getInterface(contractInterface: ContractInterface): Interface = js.native
+    @scala.inline
+    def getContractAddress(tx: Nonce): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContractAddress")(tx.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def getInterface(contractInterface: ContractInterface): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterface")(contractInterface.asInstanceOf[js.Any]).asInstanceOf[Interface]
   }
   
-  @js.native
-  trait CallOverrides extends PayableOverrides {
+  trait CallOverrides
+    extends StObject
+       with PayableOverrides {
     
-    var blockTag: js.UndefOr[BlockTag | js.Promise[BlockTag]] = js.native
+    var blockTag: js.UndefOr[BlockTag | js.Promise[BlockTag]] = js.undefined
     
-    var from: js.UndefOr[String | js.Promise[String]] = js.native
+    var from: js.UndefOr[String | js.Promise[String]] = js.undefined
   }
   object CallOverrides {
     
@@ -217,14 +218,19 @@ object mod {
     }
   }
   
-  type ContractFunction[T] = js.Function1[/* repeated */ js.Any, js.Promise[T]]
+  @js.native
+  trait ContractFunction[T] extends StObject {
+    
+    def apply(args: js.Any*): js.Promise[T] = js.native
+  }
   
   type ContractInterface = String | (js.Array[Fragment | JsonFragment | String]) | Interface
   
-  @js.native
-  trait ContractReceipt extends TransactionReceipt {
+  trait ContractReceipt
+    extends StObject
+       with TransactionReceipt {
     
-    var events: js.UndefOr[js.Array[Event]] = js.native
+    var events: js.UndefOr[js.Array[Event]] = js.undefined
   }
   object ContractReceipt {
     
@@ -263,28 +269,33 @@ object mod {
   }
   
   @js.native
-  trait ContractTransaction extends TransactionResponse
+  trait ContractTransaction
+    extends StObject
+       with TransactionResponse
   
-  @js.native
-  trait Event extends Log {
+  trait Event
+    extends StObject
+       with Log {
     
-    var args: js.UndefOr[Result] = js.native
+    var args: js.UndefOr[Result] = js.undefined
     
-    var decode: js.UndefOr[js.Function2[/* data */ String, /* topics */ js.UndefOr[js.Array[String]], _]] = js.native
+    var decode: js.UndefOr[
+        js.Function2[/* data */ String, /* topics */ js.UndefOr[js.Array[String]], js.Any]
+      ] = js.undefined
     
-    var decodeError: js.UndefOr[Error] = js.native
+    var decodeError: js.UndefOr[Error] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var eventSignature: js.UndefOr[String] = js.native
+    var eventSignature: js.UndefOr[String] = js.undefined
     
-    def getBlock(): js.Promise[Block] = js.native
+    def getBlock(): js.Promise[Block]
     
-    def getTransaction(): js.Promise[TransactionResponse] = js.native
+    def getTransaction(): js.Promise[TransactionResponse]
     
-    def getTransactionReceipt(): js.Promise[TransactionReceipt] = js.native
+    def getTransactionReceipt(): js.Promise[TransactionReceipt]
     
-    def removeListener(): Unit = js.native
+    def removeListener(): Unit
   }
   object Event {
     
@@ -318,7 +329,7 @@ object mod {
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
       @scala.inline
-      def setDecode(value: (/* data */ String, /* topics */ js.UndefOr[js.Array[String]]) => _): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      def setDecode(value: (/* data */ String, /* topics */ js.UndefOr[js.Array[String]]) => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDecodeError(value: Error): Self = StObject.set(x, "decodeError", value.asInstanceOf[js.Any])
@@ -355,12 +366,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EventFilter extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var topics: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+    var topics: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object EventFilter {
     
@@ -390,14 +400,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Overrides extends StObject {
     
-    var gasLimit: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.native
+    var gasLimit: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.undefined
     
-    var gasPrice: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.native
+    var gasPrice: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.undefined
     
-    var nonce: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.native
+    var nonce: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.undefined
   }
   object Overrides {
     
@@ -430,10 +439,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PayableOverrides extends Overrides {
+  trait PayableOverrides
+    extends StObject
+       with Overrides {
     
-    var value: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.native
+    var value: js.UndefOr[BigNumberish | js.Promise[BigNumberish]] = js.undefined
   }
   object PayableOverrides {
     
@@ -454,24 +464,23 @@ object mod {
     }
   }
   
-  @js.native
   trait PopulatedTransaction extends StObject {
     
-    var chainId: js.UndefOr[Double] = js.native
+    var chainId: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var gasLimit: js.UndefOr[BigNumber] = js.native
+    var gasLimit: js.UndefOr[BigNumber] = js.undefined
     
-    var gasPrice: js.UndefOr[BigNumber] = js.native
+    var gasPrice: js.UndefOr[BigNumber] = js.undefined
     
-    var nonce: js.UndefOr[Double] = js.native
+    var nonce: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[BigNumber] = js.native
+    var value: js.UndefOr[BigNumber] = js.undefined
   }
   object PopulatedTransaction {
     
@@ -534,30 +543,29 @@ object mod {
     }
   }
   
-  @js.native
   trait RunningEvent extends StObject {
     
-    var _listeners: js.Any = js.native
+    var _listeners: js.Any
     
-    def addListener(listener: Listener, once: Boolean): Unit = js.native
+    def addListener(listener: Listener, once: Boolean): Unit
     
-    val filter: EventFilter = js.native
+    val filter: EventFilter
     
-    def getEmit(event: Event): js.Array[_] = js.native
+    def getEmit(event: Event): js.Array[js.Any]
     
-    def listenerCount(): Double = js.native
+    def listenerCount(): Double
     
-    def listeners(): js.Array[Listener] = js.native
+    def listeners(): js.Array[Listener]
     
-    def prepareEvent(event: Event): Unit = js.native
+    def prepareEvent(event: Event): Unit
     
-    def removeAllListeners(): Unit = js.native
+    def removeAllListeners(): Unit
     
-    def removeListener(listener: Listener): Unit = js.native
+    def removeListener(listener: Listener): Unit
     
-    def run(args: js.Array[_]): Double = js.native
+    def run(args: js.Array[js.Any]): Double
     
-    val tag: String = js.native
+    val tag: String
   }
   object RunningEvent {
     
@@ -566,13 +574,13 @@ object mod {
       _listeners: js.Any,
       addListener: (Listener, Boolean) => Unit,
       filter: EventFilter,
-      getEmit: Event => js.Array[_],
+      getEmit: Event => js.Array[js.Any],
       listenerCount: () => Double,
       listeners: () => js.Array[Listener],
       prepareEvent: Event => Unit,
       removeAllListeners: () => Unit,
       removeListener: Listener => Unit,
-      run: js.Array[_] => Double,
+      run: js.Array[js.Any] => Double,
       tag: String
     ): RunningEvent = {
       val __obj = js.Dynamic.literal(_listeners = _listeners.asInstanceOf[js.Any], addListener = js.Any.fromFunction2(addListener), filter = filter.asInstanceOf[js.Any], getEmit = js.Any.fromFunction1(getEmit), listenerCount = js.Any.fromFunction0(listenerCount), listeners = js.Any.fromFunction0(listeners), prepareEvent = js.Any.fromFunction1(prepareEvent), removeAllListeners = js.Any.fromFunction0(removeAllListeners), removeListener = js.Any.fromFunction1(removeListener), run = js.Any.fromFunction1(run), tag = tag.asInstanceOf[js.Any])
@@ -589,7 +597,7 @@ object mod {
       def setFilter(value: EventFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGetEmit(value: Event => js.Array[_]): Self = StObject.set(x, "getEmit", js.Any.fromFunction1(value))
+      def setGetEmit(value: Event => js.Array[js.Any]): Self = StObject.set(x, "getEmit", js.Any.fromFunction1(value))
       
       @scala.inline
       def setListenerCount(value: () => Double): Self = StObject.set(x, "listenerCount", js.Any.fromFunction0(value))
@@ -607,7 +615,7 @@ object mod {
       def setRemoveListener(value: Listener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRun(value: js.Array[_] => Double): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+      def setRun(value: js.Array[js.Any] => Double): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])

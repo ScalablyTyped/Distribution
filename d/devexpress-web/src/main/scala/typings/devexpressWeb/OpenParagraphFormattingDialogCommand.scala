@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Paragraph dialog allowing end-users to set paragraph formatting.
   */
-@js.native
-trait OpenParagraphFormattingDialogCommand extends CommandWithSimpleStateBase {
+trait OpenParagraphFormattingDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenParagraphFormattingDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenParagraphFormattingDialogCommand {
   

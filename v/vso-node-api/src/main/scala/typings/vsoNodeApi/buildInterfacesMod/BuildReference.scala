@@ -4,58 +4,56 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildReference extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The build number.
     */
-  var buildNumber: String = js.native
+  var buildNumber: String
   
   /**
     * Indicates whether the build has been deleted.
     */
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
   /**
     * The time that the build was completed.
     */
-  var finishTime: Date = js.native
+  var finishTime: Date
   
   /**
     * The ID of the build.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The time that the build was queued.
     */
-  var queueTime: Date = js.native
+  var queueTime: Date
   
   /**
     * The identity on whose behalf the build was queued.
     */
-  var requestedFor: IdentityRef = js.native
+  var requestedFor: IdentityRef
   
   /**
     * The build result.
     */
-  var result: BuildResult = js.native
+  var result: BuildResult
   
   /**
     * The time that the build was started.
     */
-  var startTime: Date = js.native
+  var startTime: Date
   
   /**
     * The build status.
     */
-  var status: BuildStatus = js.native
+  var status: BuildStatus
 }
 object BuildReference {
   

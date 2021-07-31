@@ -3,17 +3,15 @@ package typings.aframe.anon
 import typings.aframe.mod.Coordinate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsCoordinate extends StObject {
   
-  def isCoordinate(value: String): Boolean = js.native
+  def isCoordinate(value: String): Boolean
   
-  def parse(value: String): Coordinate = js.native
+  def parse(value: String): Coordinate
   
-  def stringify(coord: Coordinate): String = js.native
+  def stringify(coord: Coordinate): String
 }
 object IsCoordinate {
   

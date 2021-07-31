@@ -10,9 +10,9 @@ React Interactive
 | ------------------ | :-------------: |
 | Full name          | react-interactive |
 | Keywords           | react, interactive, touch, hover, active, focus, keyboard |
-| # releases         | 4 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 39830 |
+| # downloads        | 65344 |
 | # stars            | 0 |
 
 ## Links

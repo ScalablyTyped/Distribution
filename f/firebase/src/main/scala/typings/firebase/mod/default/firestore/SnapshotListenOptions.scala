@@ -2,17 +2,15 @@ package typings.firebase.mod.default.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotListenOptions extends StObject {
   
   /**
     * Include a change even if only the metadata of the query or of a document
     * changed. Default is false.
     */
-  val includeMetadataChanges: js.UndefOr[Boolean] = js.native
+  val includeMetadataChanges: js.UndefOr[Boolean] = js.undefined
 }
 object SnapshotListenOptions {
   

@@ -4,62 +4,51 @@ import typings.mobx.derivationMod.IDerivation
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreActionMod {
   
-  @JSImport("mobx/lib/core/action", "allowStateChanges")
+  @JSImport("mobx/lib/core/action", JSImport.Namespace)
   @js.native
-  def allowStateChanges[T](allowStateChanges: Boolean, func: js.Function0[T]): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/core/action", "allowStateChangesEnd")
-  @js.native
-  def allowStateChangesEnd(prev: Boolean): Unit = js.native
+  @scala.inline
+  def allowStateChanges[T](allowStateChanges: Boolean, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChanges")(allowStateChanges.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("mobx/lib/core/action", "allowStateChangesInsideComputed")
-  @js.native
-  def allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native
+  @scala.inline
+  def allowStateChangesEnd(prev: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/action", "allowStateChangesStart")
-  @js.native
-  def allowStateChangesStart(allowStateChanges: Boolean): Boolean = js.native
+  @scala.inline
+  def allowStateChangesInsideComputed[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesInsideComputed")(func.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx/lib/core/action", "createAction")
-  @js.native
-  def createAction(actionName: String, fn: js.Function): js.Function with IAction = js.native
-  @JSImport("mobx/lib/core/action", "createAction")
-  @js.native
-  def createAction(actionName: String, fn: js.Function, ref: js.Object): js.Function with IAction = js.native
+  @scala.inline
+  def allowStateChangesStart(allowStateChanges: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesStart")(allowStateChanges.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/core/action", "_endAction")
-  @js.native
-  def endAction(runInfo: IActionRunInfo): Unit = js.native
+  @scala.inline
+  def createAction(actionName: String, fn: js.Function): js.Function & IAction = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function & IAction]
+  @scala.inline
+  def createAction(actionName: String, fn: js.Function, ref: js.Object): js.Function & IAction = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Function & IAction]
   
-  @JSImport("mobx/lib/core/action", "executeAction")
-  @js.native
-  def executeAction(actionName: String, fn: js.Function): js.Any = js.native
-  @JSImport("mobx/lib/core/action", "executeAction")
-  @js.native
-  def executeAction(actionName: String, fn: js.Function, scope: js.UndefOr[scala.Nothing], args: IArguments): js.Any = js.native
-  @JSImport("mobx/lib/core/action", "executeAction")
-  @js.native
-  def executeAction(actionName: String, fn: js.Function, scope: js.Any): js.Any = js.native
-  @JSImport("mobx/lib/core/action", "executeAction")
-  @js.native
-  def executeAction(actionName: String, fn: js.Function, scope: js.Any, args: IArguments): js.Any = js.native
+  @scala.inline
+  def endAction(runInfo: IActionRunInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endAction")(runInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/action", "_startAction")
-  @js.native
-  def startAction(actionName: String, scope: js.Any): IActionRunInfo = js.native
-  @JSImport("mobx/lib/core/action", "_startAction")
-  @js.native
-  def startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = js.native
+  @scala.inline
+  def executeAction(actionName: String, fn: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def executeAction(actionName: String, fn: js.Function, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def executeAction(actionName: String, fn: js.Function, scope: js.Any, args: IArguments): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def executeAction(actionName: String, fn: js.Function, scope: Unit, args: IArguments): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def startAction(actionName: String, scope: js.Any): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
+  @scala.inline
+  def startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
+  
   trait IAction extends StObject {
     
-    var isMobxAction: Boolean = js.native
+    var isMobxAction: Boolean
   }
   object IAction {
     
@@ -77,24 +66,23 @@ object coreActionMod {
     }
   }
   
-  @js.native
   trait IActionRunInfo extends StObject {
     
-    var actionId: Double = js.native
+    var actionId: Double
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var notifySpy: Boolean = js.native
+    var notifySpy: Boolean
     
-    var parentActionId: Double = js.native
+    var parentActionId: Double
     
-    var prevAllowStateChanges: Boolean = js.native
+    var prevAllowStateChanges: Boolean
     
-    var prevAllowStateReads: Boolean = js.native
+    var prevAllowStateReads: Boolean
     
-    var prevDerivation: IDerivation | Null = js.native
+    var prevDerivation: IDerivation | Null
     
-    var startTime: Double = js.native
+    var startTime: Double
   }
   object IActionRunInfo {
     
@@ -107,7 +95,7 @@ object coreActionMod {
       prevAllowStateReads: Boolean,
       startTime: Double
     ): IActionRunInfo = {
-      val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], notifySpy = notifySpy.asInstanceOf[js.Any], parentActionId = parentActionId.asInstanceOf[js.Any], prevAllowStateChanges = prevAllowStateChanges.asInstanceOf[js.Any], prevAllowStateReads = prevAllowStateReads.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], notifySpy = notifySpy.asInstanceOf[js.Any], parentActionId = parentActionId.asInstanceOf[js.Any], prevAllowStateChanges = prevAllowStateChanges.asInstanceOf[js.Any], prevAllowStateReads = prevAllowStateReads.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], prevDerivation = null)
       __obj.asInstanceOf[IActionRunInfo]
     }
     

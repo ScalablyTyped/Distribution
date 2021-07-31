@@ -2,27 +2,25 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipItem extends StObject {
   
-  var datasetIndex: js.UndefOr[Double] = js.native
+  var datasetIndex: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xLabel: js.UndefOr[String | Double] = js.native
+  var xLabel: js.UndefOr[String | Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yLabel: js.UndefOr[String | Double] = js.native
+  var yLabel: js.UndefOr[String | Double] = js.undefined
 }
 object ChartTooltipItem {
   

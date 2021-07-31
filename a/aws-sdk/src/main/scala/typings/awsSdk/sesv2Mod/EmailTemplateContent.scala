@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailTemplateContent extends StObject {
   
   /**
     * The HTML body of the email.
     */
-  var Html: js.UndefOr[EmailTemplateHtml] = js.native
+  var Html: js.UndefOr[EmailTemplateHtml] = js.undefined
   
   /**
     * The subject line of the email.
     */
-  var Subject: js.UndefOr[EmailTemplateSubject] = js.native
+  var Subject: js.UndefOr[EmailTemplateSubject] = js.undefined
   
   /**
     * The email body that will be visible to recipients whose email clients do not display HTML.
     */
-  var Text: js.UndefOr[EmailTemplateText] = js.native
+  var Text: js.UndefOr[EmailTemplateText] = js.undefined
 }
 object EmailTemplateContent {
   

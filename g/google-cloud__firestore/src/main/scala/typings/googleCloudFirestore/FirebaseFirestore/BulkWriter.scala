@@ -3,7 +3,6 @@ package typings.googleCloudFirestore.FirebaseFirestore
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -53,8 +52,8 @@ trait BulkWriter extends StObject {
     * delete fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def delete(documentRef: DocumentReference[_]): js.Promise[WriteResult] = js.native
-  def delete(documentRef: DocumentReference[_], precondition: Precondition): js.Promise[WriteResult] = js.native
+  def delete(documentRef: DocumentReference[js.Any]): js.Promise[WriteResult] = js.native
+  def delete(documentRef: DocumentReference[js.Any], precondition: Precondition): js.Promise[WriteResult] = js.native
   
   /**
     * Commits all writes that have been enqueued up to this point in parallel.
@@ -145,8 +144,8 @@ trait BulkWriter extends StObject {
     * write fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def update(documentRef: DocumentReference[_], data: UpdateData): js.Promise[WriteResult] = js.native
-  def update(documentRef: DocumentReference[_], data: UpdateData, precondition: Precondition): js.Promise[WriteResult] = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData): js.Promise[WriteResult] = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData, precondition: Precondition): js.Promise[WriteResult] = js.native
   /**
     * Update fields of the document referred to by the provided
     * [DocumentReference]{@link DocumentReference}. If the document doesn't yet
@@ -171,6 +170,16 @@ trait BulkWriter extends StObject {
     * write fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def update(documentRef: DocumentReference[_], field: String, value: js.Any, fieldsOrPrecondition: js.Any*): js.Promise[WriteResult] = js.native
-  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, fieldsOrPrecondition: js.Any*): js.Promise[WriteResult] = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: String,
+    value: js.Any,
+    fieldsOrPrecondition: js.Any*
+  ): js.Promise[WriteResult] = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: FieldPath,
+    value: js.Any,
+    fieldsOrPrecondition: js.Any*
+  ): js.Promise[WriteResult] = js.native
 }

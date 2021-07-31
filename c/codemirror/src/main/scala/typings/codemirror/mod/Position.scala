@@ -2,17 +2,15 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var ch: Double = js.native
+  var ch: Double
   
-  var line: Double = js.native
+  var line: Double
   
-  var sticky: js.UndefOr[String] = js.native
+  var sticky: js.UndefOr[String] = js.undefined
 }
 object Position {
   

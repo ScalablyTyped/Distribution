@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRuleVariablesIpSetIpSet extends StObject {
   
   /**
     * Set of IP addresses and address ranges, in CIDR notation.
     */
-  var definitions: js.Array[String] = js.native
+  var definitions: js.Array[String]
 }
 object RuleGroupRuleGroupRuleVariablesIpSetIpSet {
   

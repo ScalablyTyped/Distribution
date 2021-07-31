@@ -8,7 +8,6 @@ import typings.phaser.integer
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Data {
@@ -31,7 +30,6 @@ object Data {
       */
     def destroy(): Unit = js.native
     
-    def each(callback: DataEachCallback, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
     /**
       * Passes all data entries to the given callback.
       * @param callback The function to call.
@@ -39,6 +37,7 @@ object Data {
       * @param args Additional arguments that will be passed to the callback, after the game object, key, and data.
       */
     def each(callback: DataEachCallback, context: js.Any, args: js.Any*): this.type = js.native
+    def each(callback: DataEachCallback, context: Unit, args: js.Any*): this.type = js.native
     
     /**
       * The DataManager's event emitter.
@@ -242,7 +241,9 @@ object Data {
     * or have a property called `events` that is an instance of it.
     */
   @js.native
-  trait DataManagerPlugin extends DataManager {
+  trait DataManagerPlugin
+    extends StObject
+       with DataManager {
     
     /**
       * A reference to the Scene that this DataManager belongs to.

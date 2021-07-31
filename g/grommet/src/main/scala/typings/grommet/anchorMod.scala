@@ -22,7 +22,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorMod {
@@ -30,38 +29,37 @@ object anchorMod {
   @JSImport("grommet/components/Anchor", "Anchor")
   @js.native
   val Anchor: FC[
-    AnchorProps with (Omit[
+    AnchorProps & (Omit[
       DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
       color
     ])
   ] = js.native
   
-  @js.native
   trait AnchorProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var as: js.UndefOr[PolymorphicType] = js.native
+    var as: js.UndefOr[PolymorphicType] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
   }
   object AnchorProps {
     

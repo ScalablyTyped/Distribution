@@ -4,56 +4,54 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkConfigMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   /** Arc-specific Config */
-  var arc: js.UndefOr[RectConfig[ES]] = js.native
+  var arc: js.UndefOr[RectConfig[ES]] = js.undefined
   
   /** Area-Specific Config */
-  var area: js.UndefOr[AreaConfig[ES]] = js.native
+  var area: js.UndefOr[AreaConfig[ES]] = js.undefined
   
   /** Bar-Specific Config */
-  var bar: js.UndefOr[BarConfig[ES]] = js.native
+  var bar: js.UndefOr[BarConfig[ES]] = js.undefined
   
   /** Circle-Specific Config */
-  var circle: js.UndefOr[MarkConfig[ES]] = js.native
+  var circle: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Geoshape-Specific Config */
-  var geoshape: js.UndefOr[MarkConfig[ES]] = js.native
+  var geoshape: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Image-specific Config */
-  var image: js.UndefOr[RectConfig[ES]] = js.native
+  var image: js.UndefOr[RectConfig[ES]] = js.undefined
   
   /** Line-Specific Config */
-  var line: js.UndefOr[LineConfig[ES]] = js.native
+  var line: js.UndefOr[LineConfig[ES]] = js.undefined
   
   /** Mark Config */
-  var mark: js.UndefOr[MarkConfig[ES]] = js.native
+  var mark: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Point-Specific Config */
-  var point: js.UndefOr[MarkConfig[ES]] = js.native
+  var point: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Rect-Specific Config */
-  var rect: js.UndefOr[RectConfig[ES]] = js.native
+  var rect: js.UndefOr[RectConfig[ES]] = js.undefined
   
   /** Rule-Specific Config */
-  var rule: js.UndefOr[MarkConfig[ES]] = js.native
+  var rule: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Square-Specific Config */
-  var square: js.UndefOr[MarkConfig[ES]] = js.native
+  var square: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Text-Specific Config */
-  var text: js.UndefOr[MarkConfig[ES]] = js.native
+  var text: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /** Tick-Specific Config */
-  var tick: js.UndefOr[TickConfig[ES]] = js.native
+  var tick: js.UndefOr[TickConfig[ES]] = js.undefined
   
   /** Trail-Specific Config */
-  var trail: js.UndefOr[LineConfig[ES]] = js.native
+  var trail: js.UndefOr[LineConfig[ES]] = js.undefined
 }
 object MarkConfigMixins {
   
@@ -64,7 +62,7 @@ object MarkConfigMixins {
   }
   
   @scala.inline
-  implicit class MarkConfigMixinsMutableBuilder[Self <: MarkConfigMixins[_], ES /* <: ExprRef | SignalRef */] (val x: Self with MarkConfigMixins[ES]) extends AnyVal {
+  implicit class MarkConfigMixinsMutableBuilder[Self <: MarkConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkConfigMixins[ES]) extends AnyVal {
     
     @scala.inline
     def setArc(value: RectConfig[ES]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])

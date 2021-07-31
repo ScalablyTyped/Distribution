@@ -10,9 +10,9 @@ SDP parsing and serialization utilities
 | ------------------ | :-------------: |
 | Full name          | sdp |
 | Keywords           | sdp, webrtc |
-| # releases         | 10 |
-| # dependents       | 19 |
-| # downloads        | 5260491 |
+| # releases         | 9 |
+| # dependents       | 20 |
+| # downloads        | 6389440 |
 | # stars            | 0 |
 
 ## Links

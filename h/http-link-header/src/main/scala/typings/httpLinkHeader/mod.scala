@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,52 +17,49 @@ object mod {
     * Link
     * @param value Link header to parse
     */
-  class ^ () extends Link {
+  class ^ ()
+    extends StObject
+       with Link {
     def this(value: String) = this()
   }
+  @JSImport("http-link-header", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("http-link-header", "escapeQuotes")
-  @js.native
-  def escapeQuotes(value: String): String = js.native
+  @scala.inline
+  def escapeQuotes(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQuotes")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Format a given attribute and it's value
     */
   /* static member */
-  @JSImport("http-link-header", "formatAttribute")
-  @js.native
-  def formatAttribute(attr: String, value: String): String = js.native
-  @JSImport("http-link-header", "formatAttribute")
-  @js.native
-  def formatAttribute(attr: String, value: js.Array[String | Buffer]): String = js.native
-  @JSImport("http-link-header", "formatAttribute")
-  @js.native
-  def formatAttribute(attr: String, value: Buffer): String = js.native
+  @scala.inline
+  def formatAttribute(attr: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatAttribute(attr: String, value: js.Array[String | Buffer]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatAttribute(attr: String, value: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("http-link-header", "formatExtendedAttribute")
-  @js.native
-  def formatExtendedAttribute(attr: String, data: LinkData): String = js.native
+  @scala.inline
+  def formatExtendedAttribute(attr: String, data: LinkData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExtendedAttribute")(attr.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Determines whether an encoding can be
     * natively handled with a `Buffer`
     */
   /* static member */
-  @JSImport("http-link-header", "isCompatibleEncoding")
-  @js.native
-  def isCompatibleEncoding(value: String): Boolean = js.native
+  @scala.inline
+  def isCompatibleEncoding(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompatibleEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("http-link-header", "isSingleOccurenceAttr")
-  @js.native
-  def isSingleOccurenceAttr(attr: String): Boolean = js.native
+  @scala.inline
+  def isSingleOccurenceAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleOccurenceAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("http-link-header", "isTokenAttr")
-  @js.native
-  def isTokenAttr(attr: String): Boolean = js.native
+  @scala.inline
+  def isTokenAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a new Link by parsing a link header beginning at the provided
@@ -73,12 +69,10 @@ object mod {
     * @return A new Link
     */
   /* static member */
-  @JSImport("http-link-header", "parse")
-  @js.native
-  def parse(value: String): Link = js.native
-  @JSImport("http-link-header", "parse")
-  @js.native
-  def parse(value: String, offset: Double): Link = js.native
+  @scala.inline
+  def parse(value: String): Link = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Link]
+  @scala.inline
+  def parse(value: String, offset: Double): Link = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Link]
   
   /**
     * Parse & format HTTP link headers according to RFC 8288
@@ -117,16 +111,15 @@ object mod {
     def set(ref: Reference): Link = js.native
   }
   
-  @js.native
   trait LinkData extends StObject {
     
     /** @default 'utf-8' */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** @default 'en' */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var value: String | Buffer = js.native
+    var value: String | Buffer
   }
   object LinkData {
     
@@ -156,12 +149,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait Reference extends /* index */ StringDictionary[String] {
+  trait Reference
+    extends StObject
+       with /* index */ StringDictionary[String] {
     
-    var rel: String = js.native
+    var rel: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Reference {
     

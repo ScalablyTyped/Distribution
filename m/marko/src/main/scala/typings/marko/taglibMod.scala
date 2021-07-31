@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.marko.tagMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taglibMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Taglib", JSImport.Default)
   @js.native
-  class default protected () extends Taglib {
+  class default protected ()
+    extends StObject
+       with Taglib {
     def this(filePath: String) = this()
   }
   

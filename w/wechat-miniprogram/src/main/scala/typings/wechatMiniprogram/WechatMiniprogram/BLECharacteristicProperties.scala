@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 该特征值支持的操作类型 */
-@js.native
 trait BLECharacteristicProperties extends StObject {
   
   /** 该特征值是否支持 indicate 操作 */
-  var indicate: Boolean = js.native
+  var indicate: Boolean
   
   /** 该特征值是否支持 notify 操作 */
   @JSName("notify")
-  var notify_FBLECharacteristicProperties: Boolean = js.native
+  var notify_FBLECharacteristicProperties: Boolean
   
   /** 该特征值是否支持 read 操作 */
-  var read: Boolean = js.native
+  var read: Boolean
   
   /** 该特征值是否支持 write 操作 */
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object BLECharacteristicProperties {
   

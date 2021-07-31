@@ -2,35 +2,31 @@ package typings.storybookAddonLinks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presetMod {
   
-  @JSImport("@storybook/addon-links/dist/preset", "config")
+  @JSImport("@storybook/addon-links/dist/preset", JSImport.Namespace)
   @js.native
-  def config(): js.Array[_] = js.native
-  @JSImport("@storybook/addon-links/dist/preset", "config")
-  @js.native
-  def config(entry: js.UndefOr[scala.Nothing], hasAddDecorator: LinkOptions): js.Array[_] = js.native
-  @JSImport("@storybook/addon-links/dist/preset", "config")
-  @js.native
-  def config(entry: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@storybook/addon-links/dist/preset", "config")
-  @js.native
-  def config(entry: js.Array[_], hasAddDecorator: LinkOptions): js.Array[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-links/dist/preset", "managerEntries")
-  @js.native
-  def managerEntries(): js.Array[_] = js.native
-  @JSImport("@storybook/addon-links/dist/preset", "managerEntries")
-  @js.native
-  def managerEntries(entry: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: js.Array[js.Any], hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def config(entry: Unit, hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
+  @scala.inline
+  def managerEntries(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")().asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def managerEntries(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  
   trait LinkOptions extends StObject {
     
-    var addDecorator: js.UndefOr[Boolean] = js.native
+    var addDecorator: js.UndefOr[Boolean] = js.undefined
   }
   object LinkOptions {
     

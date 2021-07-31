@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options that modify how specified output is handled. */
-@js.native
 trait DialogNodeOutputModifiers extends StObject {
   
   /** Whether values in the output will overwrite output values in an array specified by previously executed dialog nodes. If this option is set to **false**, new values will be appended to previously specified values. */
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
 }
 object DialogNodeOutputModifiers {
   

@@ -4,7 +4,6 @@ import typings.fabric.fabricImplMod.IPathOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Path")
@@ -18,9 +17,9 @@ class Path ()
   extends typings.fabric.fabricImplMod.Path {
   def this(path: String) = this()
   def this(path: js.Array[typings.fabric.fabricImplMod.Point]) = this()
-  def this(path: js.UndefOr[scala.Nothing], options: IPathOptions) = this()
   def this(path: String, options: IPathOptions) = this()
   def this(path: js.Array[typings.fabric.fabricImplMod.Point], options: IPathOptions) = this()
+  def this(path: Unit, options: IPathOptions) = this()
 }
 /* static members */
 object Path {
@@ -44,18 +43,15 @@ object Path {
     * @param callback Callback to invoke when an fabric.Path instance is created
     * @param [options] Options object
     */
-  @JSImport("fabric", "fabric.Path.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Path = js.native
-  @JSImport("fabric", "fabric.Path.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): typings.fabric.fabricImplMod.Path = js.native
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
   
   /**
     * Creates an instance of fabric.Path from an object
     * @param callback Callback to invoke when an fabric.Path instance is created
     */
-  @JSImport("fabric", "fabric.Path.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
 }

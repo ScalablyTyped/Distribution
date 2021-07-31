@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.karmaSnapshot.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * See {@link https://github.com/localvoid/karma-snapshot#config}
       */
-    var snapshot: js.UndefOr[SnapshotOptions] = js.native
+    var snapshot: js.UndefOr[SnapshotOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -40,29 +38,28 @@ object mod {
   /**
     * details about snapshot.
     */
-  @js.native
   trait Snapshot extends StObject {
     
     /**
       * snapshot value that will be checked by an assertion plugin
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * Flag that should be marked by an assertion plugin when it updates or adds a new snapshot
       */
-    var dirty: js.UndefOr[Boolean] = js.native
+    var dirty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * which language should be used in a markdown format to improve readability
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * Flag that should be marked by an assertion plugin when it visits suites and snapshots.
       * Visited flags are used to automatically prune removed snapshots
       */
-    var visited: js.UndefOr[Boolean] = js.native
+    var visited: js.UndefOr[Boolean] = js.undefined
   }
   object Snapshot {
     
@@ -98,44 +95,43 @@ object mod {
     }
   }
   
-  @js.native
   trait SnapshotOptions extends StObject {
     
     /**
       * Checks existince of the source file associated with tests
       * @default false
       */
-    var checkSourceFile: js.UndefOr[Boolean] = js.native
+    var checkSourceFile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Snapshot format
       * @default 'md'
       */
-    var format: js.UndefOr[String | SnapshotSerializer] = js.native
+    var format: js.UndefOr[String | SnapshotSerializer] = js.undefined
     
     /**
       * Limit number of unused snapshots reported in the warning.
       * `-1` means unlimited.
       * @default -1
       */
-    var limitUnusedSnapshotsInWarning: js.UndefOr[Double] = js.native
+    var limitUnusedSnapshotsInWarning: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom path resolver
       */
-    var pathResolver: js.UndefOr[SnapshotPathResolver] = js.native
+    var pathResolver: js.UndefOr[SnapshotPathResolver] = js.undefined
     
     /**
       * Prune unused snapshots
       * @default false
       */
-    var prune: js.UndefOr[Boolean] = js.native
+    var prune: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Run snapshot tests in UPDATE mode
       * @default false
       */
-    var update: js.UndefOr[Boolean] = js.native
+    var update: js.UndefOr[Boolean] = js.undefined
   }
   object SnapshotOptions {
     
@@ -194,12 +190,11 @@ object mod {
   /**
     * Custom serializer
     */
-  @js.native
   trait SnapshotSerializer extends StObject {
     
-    def deserialize(content: String): Name = js.native
+    def deserialize(content: String): Name
     
-    def serialize(name: String, suite: SnapshotSuite): String = js.native
+    def serialize(name: String, suite: SnapshotSuite): String
   }
   object SnapshotSerializer {
     
@@ -224,18 +219,17 @@ object mod {
   /**
     * a tree with snapshots that has a similar structure to test suites
     */
-  @js.native
   trait SnapshotSuite extends StObject {
     
     /** references to children suites, */
-    var children: StringDictionary[SnapshotSuite] = js.native
+    var children: StringDictionary[SnapshotSuite]
     
-    var dirty: js.UndefOr[Boolean] = js.native
+    var dirty: js.UndefOr[Boolean] = js.undefined
     
     /** snapshot lists for tests in the current snapshot */
-    var snapshots: StringDictionary[js.Array[Snapshot]] = js.native
+    var snapshots: StringDictionary[js.Array[Snapshot]]
     
-    var visited: js.UndefOr[Boolean] = js.native
+    var visited: js.UndefOr[Boolean] = js.undefined
   }
   object SnapshotSuite {
     

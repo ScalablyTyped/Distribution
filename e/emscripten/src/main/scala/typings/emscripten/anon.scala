@@ -4,15 +4,13 @@ import typings.emscripten.emscriptenStrings.binary
 import typings.emscripten.emscriptenStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
   }
   object `0` {
     
@@ -33,18 +31,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: binary = js.native
+    var encoding: binary
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
     @scala.inline
-    def apply(encoding: binary): Encoding = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): Encoding = {
+      val __obj = js.Dynamic.literal(encoding = "binary")
       __obj.asInstanceOf[Encoding]
     }
     
@@ -62,18 +59,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Flags extends StObject {
     
-    var encoding: utf8 = js.native
+    var encoding: utf8
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
   }
   object Flags {
     
     @scala.inline
-    def apply(encoding: utf8): Flags = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): Flags = {
+      val __obj = js.Dynamic.literal(encoding = "utf8")
       __obj.asInstanceOf[Flags]
     }
     
@@ -91,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Kind extends StObject {
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
   }
   object Kind {
     
@@ -117,14 +112,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Module extends StObject {
     
-    var kind: String = js.native
+    var kind: String
     
-    var module: String = js.native
+    var module: String
     
-    var name: String = js.native
+    var name: String
   }
   object Module {
     

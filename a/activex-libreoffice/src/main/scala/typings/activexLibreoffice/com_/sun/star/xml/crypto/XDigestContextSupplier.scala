@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface allows to get an object to generate a digest of a specified format.
   * @since OOo 3.4
   */
-@js.native
-trait XDigestContextSupplier extends XInterface {
+trait XDigestContextSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns an object that allows to generate the specified digest.
@@ -22,7 +22,7 @@ trait XDigestContextSupplier extends XInterface {
     * @param aParams optional parameters that could be used to initialize the digest, for example, it could contain a key and etc.
     * @throws com::sun::star::lang::IllegalArgumentException one of provided arguments is illegal
     */
-  def getDigestContext(nDigestID: Double, aParams: SeqEquiv[NamedValue]): XDigestContext = js.native
+  def getDigestContext(nDigestID: Double, aParams: SeqEquiv[NamedValue]): XDigestContext
 }
 object XDigestContextSupplier {
   

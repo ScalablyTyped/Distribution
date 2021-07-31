@@ -3,34 +3,33 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.unix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnixListenOptions
-  extends BaseListenOptions
+  extends StObject
+     with BaseListenOptions
      with SocketListenOptions {
   
   /**
     * Address family.
     */
-  var family: unix = js.native
+  var family: unix
   
   /**
     * UNIX socket path to listen on.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Type of UNIX socket to listen on. Defaults to UnixSocketType.Path.
     */
-  var `type`: js.UndefOr[UnixSocketType] = js.native
+  var `type`: js.UndefOr[UnixSocketType] = js.undefined
 }
 object UnixListenOptions {
   
   @scala.inline
-  def apply(family: unix, path: String): UnixListenOptions = {
-    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  def apply(path: String): UnixListenOptions = {
+    val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixListenOptions]
   }
   

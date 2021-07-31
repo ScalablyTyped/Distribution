@@ -2,32 +2,30 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait System[T /* <: js.Object */] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var el: Entity[ObjectMap[Component[_, System[_]]]] = js.native
+  var el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def pause(): Unit = js.native
+  def pause(): Unit
   
-  def play(): Unit = js.native
+  def play(): Unit
   
-  var schema: Schema_[T] = js.native
+  var schema: Schema_[T]
   
-  var tick: js.UndefOr[js.Function2[/* t */ Double, /* dt */ Double, Unit]] = js.native
+  var tick: js.UndefOr[js.Function2[/* t */ Double, /* dt */ Double, Unit]] = js.undefined
 }
 object System {
   
   @scala.inline
   def apply[T /* <: js.Object */](
     data: T,
-    el: Entity[ObjectMap[Component[_, System[_]]]],
+    el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]],
     init: () => Unit,
     pause: () => Unit,
     play: () => Unit,
@@ -38,13 +36,13 @@ object System {
   }
   
   @scala.inline
-  implicit class SystemMutableBuilder[Self <: System[_], T /* <: js.Object */] (val x: Self with System[T]) extends AnyVal {
+  implicit class SystemMutableBuilder[Self <: System[?], T /* <: js.Object */] (val x: Self & System[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))

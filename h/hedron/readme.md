@@ -12,7 +12,7 @@ A no-frills flexbox grid system for React.
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 20836 |
+| # downloads        | 13887 |
 | # stars            | 0 |
 
 ## Links

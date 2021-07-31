@@ -5,55 +5,55 @@ import typings.extjs.Ext.button.IButton
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFile extends ITrigger {
+trait IFile
+  extends StObject
+     with ITrigger {
   
   /** [Property] (Ext.button.Button) */
-  var button: js.UndefOr[IButton] = js.native
+  var button: js.UndefOr[IButton] = js.undefined
   
   /** [Config Option] (Object) */
-  var buttonConfig: js.UndefOr[js.Any] = js.native
+  var buttonConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var buttonMargin: js.UndefOr[Double] = js.native
+  var buttonMargin: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var buttonOnly: js.UndefOr[Boolean] = js.native
+  var buttonOnly: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var buttonText: js.UndefOr[String] = js.native
+  var buttonText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var clearOnSubmit: js.UndefOr[Boolean] = js.native
+  var clearOnSubmit: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Only relevant if the instance s isFileUpload method returns true
     * @returns HTMLElement
     */
   @JSName("extractFileInput")
-  var extractFileInput_IFile: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var extractFileInput_IFile: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var fileInputEl: js.UndefOr[IElement] = js.native
+  var fileInputEl: js.UndefOr[IElement] = js.undefined
   
   /** [Method] Gets the markup to be inserted into the subTplMarkup  */
-  var getTriggerMarkup: js.UndefOr[js.Function0[Unit]] = js.native
+  var getTriggerMarkup: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
     * @returns Boolean
     */
   @JSName("isFileUpload")
-  var isFileUpload_IFile: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFileUpload_IFile: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Allows addition of behavior to the show operation  */
   @JSName("onShow")
-  var onShow_IFile: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow_IFile: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Overridden to do nothing */
   @JSName("setValue")
-  var setValue_IFile: js.UndefOr[js.Function0[Unit]] = js.native
+  var setValue_IFile: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IFile {
   

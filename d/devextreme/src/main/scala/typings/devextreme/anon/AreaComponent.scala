@@ -6,25 +6,23 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridFieldChooser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaComponent extends StObject {
   
-  var area: js.UndefOr[String] = js.native
+  var area: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[dxPivotGridFieldChooser] = js.native
+  var component: js.UndefOr[dxPivotGridFieldChooser] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var field: js.UndefOr[PivotGridDataSourceField] = js.native
+  var field: js.UndefOr[PivotGridDataSourceField] = js.undefined
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object AreaComponent {
   
@@ -68,7 +66,7 @@ object AreaComponent {
     def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

@@ -2,19 +2,17 @@ package typings.strongholdPayJs.mod.global.Stronghold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var onError: js.UndefOr[OnError] = js.native
+  var onError: js.UndefOr[OnError] = js.undefined
   
-  var onEvent: js.UndefOr[OnEvent] = js.native
+  var onEvent: js.UndefOr[OnEvent] = js.undefined
   
-  var onExit: js.UndefOr[OnExit] = js.native
+  var onExit: js.UndefOr[OnExit] = js.undefined
   
-  var onReady: js.UndefOr[OnReady] = js.native
+  var onReady: js.UndefOr[OnReady] = js.undefined
 }
 object Options {
   

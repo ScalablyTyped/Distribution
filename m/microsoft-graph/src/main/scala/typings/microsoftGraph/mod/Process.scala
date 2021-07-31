@@ -2,54 +2,52 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Process extends StObject {
   
   // User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-  var accountName: js.UndefOr[NullableOption[String]] = js.native
+  var accountName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The full process invocation commandline including all parameters.
-  var commandLine: js.UndefOr[NullableOption[String]] = js.native
+  var commandLine: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
     */
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Complex type containing file hashes (cryptographic and location-sensitive).
-  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.native
+  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.undefined
   
   // The integrity level of the process. Possible values are: unknown, untrusted, low, medium, high, system.
-  var integrityLevel: js.UndefOr[NullableOption[ProcessIntegrityLevel]] = js.native
+  var integrityLevel: js.UndefOr[NullableOption[ProcessIntegrityLevel]] = js.undefined
   
   // True if the process is elevated.
-  var isElevated: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isElevated: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The name of the process' Image file.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO
     * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'.
     */
-  var parentProcessCreatedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var parentProcessCreatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Process ID (PID) of the parent process.
-  var parentProcessId: js.UndefOr[NullableOption[Double]] = js.native
+  var parentProcessId: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The name of the image file of the parent process.
-  var parentProcessName: js.UndefOr[NullableOption[String]] = js.native
+  var parentProcessName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Full path, including filename.
-  var path: js.UndefOr[NullableOption[String]] = js.native
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Process ID (PID) of the process.
-  var processId: js.UndefOr[NullableOption[Double]] = js.native
+  var processId: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Process {
   

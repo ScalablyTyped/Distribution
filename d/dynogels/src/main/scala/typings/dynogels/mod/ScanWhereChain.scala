@@ -2,13 +2,13 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScanWhereChain extends ExtendedChain[Scan] {
+trait ScanWhereChain
+  extends StObject
+     with ExtendedChain[Scan] {
   
-  def notNull(): Scan = js.native
+  def notNull(): Scan
 }
 object ScanWhereChain {
   
@@ -22,7 +22,7 @@ object ScanWhereChain {
     exists: () => Scan,
     gt: js.Any => Scan,
     gte: js.Any => Scan,
-    in: js.Array[_] => Scan,
+    in: js.Array[js.Any] => Scan,
     lt: js.Any => Scan,
     lte: js.Any => Scan,
     ne_ : js.Any => Scan,

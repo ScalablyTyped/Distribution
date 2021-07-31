@@ -5,7 +5,6 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,10 +23,11 @@ object mod {
     */
   type MaskedViewComponent = Component[MaskedViewProps, js.Object, js.Any]
   
-  @js.native
-  trait MaskedViewProps extends ViewProps {
+  trait MaskedViewProps
+    extends StObject
+       with ViewProps {
     
-    var maskElement: ReactElement = js.native
+    var maskElement: ReactElement
   }
   object MaskedViewProps {
     

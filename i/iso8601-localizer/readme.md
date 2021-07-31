@@ -12,7 +12,7 @@ Simple to use getTimezoneOffset based ISO8601 localizer with source written in T
 | Keywords           | js, iso8601-localizer, iso8601, localizer, typescript |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 588 |
+| # downloads        | 727 |
 | # stars            | 0 |
 
 ## Links

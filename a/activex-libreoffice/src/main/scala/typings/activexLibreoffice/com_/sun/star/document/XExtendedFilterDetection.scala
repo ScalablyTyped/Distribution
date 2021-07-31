@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see TypeDetection
   * @see FilterFactory
   */
-@js.native
-trait XExtendedFilterDetection extends XInterface {
+trait XExtendedFilterDetection
+  extends StObject
+     with XInterface {
   
   /**
     * controls agreement of a "flat" {@link TypeDetection} with given URL or arguments
@@ -30,7 +30,7 @@ trait XExtendedFilterDetection extends XInterface {
     * @param Descriptor represent a {@link MediaDescriptor} which can be used to get/set information about the detected document
     * @returns an internal type name if format was detected successfully ;  or an empty value for an unknown document format.
     */
-  def detect(Descriptor: js.Array[SeqEquiv[PropertyValue]]): String = js.native
+  def detect(Descriptor: js.Array[SeqEquiv[PropertyValue]]): String
 }
 object XExtendedFilterDetection {
   

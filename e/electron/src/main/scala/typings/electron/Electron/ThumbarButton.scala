@@ -2,30 +2,28 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbarButton extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/thumbar-button
-  var click: js.Function = js.native
+  var click: js.Function
   
   /**
     * Control specific states and behaviors of the button. By default, it is
     * `['enabled']`.
     */
-  var flags: js.UndefOr[js.Array[String]] = js.native
+  var flags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The icon showing in thumbnail toolbar.
     */
-  var icon: NativeImage_ = js.native
+  var icon: NativeImage_
   
   /**
     * The text of the button's tooltip.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object ThumbarButton {
   

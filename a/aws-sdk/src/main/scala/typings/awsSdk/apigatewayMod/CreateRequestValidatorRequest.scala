@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRequestValidatorRequest extends StObject {
   
   /**
     * The name of the to-be-created RequestValidator.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * A Boolean flag to indicate whether to validate request body according to the configured model schema for the method (true) or not (false).
     */
-  var validateRequestBody: js.UndefOr[Boolean] = js.native
+  var validateRequestBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean flag to indicate whether to validate request parameters, true, or not false.
     */
-  var validateRequestParameters: js.UndefOr[Boolean] = js.native
+  var validateRequestParameters: js.UndefOr[Boolean] = js.undefined
 }
 object CreateRequestValidatorRequest {
   

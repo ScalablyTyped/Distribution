@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the TextAnnotation class.
   */
-@js.native
-trait ASPxClientTextAnnotation extends ASPxClientWebChartElementNamed {
+trait ASPxClientTextAnnotation
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Gets the lines of text within an annotation.
     */
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
 }
 object ASPxClientTextAnnotation {
   

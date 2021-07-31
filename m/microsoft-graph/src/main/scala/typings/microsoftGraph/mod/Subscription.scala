@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Subscription extends Entity {
+trait Subscription
+  extends StObject
+     with Entity {
   
   // Identifier of the application used to create the subscription. Read-only.
-  var applicationId: js.UndefOr[NullableOption[String]] = js.native
+  var applicationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported
@@ -17,7 +17,7 @@ trait Subscription extends Entity {
     * item and list change notifications support only the updated changeType. User and group change notifications support
     * updated and deleted changeType.
     */
-  var changeType: js.UndefOr[String] = js.native
+  var changeType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum
@@ -25,33 +25,33 @@ trait Subscription extends Entity {
     * value of the clientState property sent with the subscription with the value of the clientState property received with
     * each change notification.
     */
-  var clientState: js.UndefOr[NullableOption[String]] = js.native
+  var clientState: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Identifier of the user or service principal that created the subscription. If the app used delegated permissions to
     * create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used
     * application permissions, this field contains the id of the service principal corresponding to the app. Read-only.
     */
-  var creatorId: js.UndefOr[NullableOption[String]] = js.native
+  var creatorId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A base64-encoded representation of a certificate with a public key used to encrypt resource data in change
     * notifications. Optional. Required when includeResourceData is true.
     */
-  var encryptionCertificate: js.UndefOr[NullableOption[String]] = js.native
+  var encryptionCertificate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional.
-  var encryptionCertificateId: js.UndefOr[NullableOption[String]] = js.native
+  var encryptionCertificateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount
     * of time from subscription creation that varies for the resource subscribed to. See the table below for maximum
     * supported subscription length of time.
     */
-  var expirationDateTime: js.UndefOr[String] = js.native
+  var expirationDateTime: js.UndefOr[String] = js.undefined
   
   // When set to true, change notifications include resource data (such as content of a chat message). Optional.
-  var includeResourceData: js.UndefOr[NullableOption[Boolean]] = js.native
+  var includeResourceData: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by
@@ -62,26 +62,26 @@ trait Subscription extends Entity {
     * subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases,
     * Microsoft Graph defaults the property to v1_2.
     */
-  var latestSupportedTlsVersion: js.UndefOr[NullableOption[String]] = js.native
+  var latestSupportedTlsVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications.
     * This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle
     * notifications.
     */
-  var lifecycleNotificationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var lifecycleNotificationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS
     * protocol.
     */
-  var notificationUrl: js.UndefOr[String] = js.native
+  var notificationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Specifies the resource that will be monitored for changes. Do not include the base URL
     * (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object Subscription {
   

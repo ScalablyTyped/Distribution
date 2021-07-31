@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains the necessary information for a three-dimensional cube.
   * @since OOo 2.0
   */
-@js.native
 trait RealRectangle3D extends StObject {
   
-  var X1: Double = js.native
+  var X1: Double
   
   /**
     * maximum X coordinate.
@@ -21,25 +19,25 @@ trait RealRectangle3D extends StObject {
     *
     * .
     */
-  var X2: Double = js.native
+  var X2: Double
   
-  var Y1: Double = js.native
+  var Y1: Double
   
   /**
     * maximum Y coordinate.
     *
     * Must be greater than Y1 for non-empty cubes.
     */
-  var Y2: Double = js.native
+  var Y2: Double
   
-  var Z1: Double = js.native
+  var Z1: Double
   
   /**
     * maximum Z coordinate.
     *
     * Must be greater than Z1 for non-empty cubes.
     */
-  var Z2: Double = js.native
+  var Z2: Double
 }
 object RealRectangle3D {
   

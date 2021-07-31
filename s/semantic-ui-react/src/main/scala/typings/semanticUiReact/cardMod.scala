@@ -7,7 +7,6 @@ import typings.semanticUiReact.cardCardMod.CardComponent
 import typings.semanticUiReact.cardCardMod.CardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod extends Shortcut {

@@ -4,22 +4,22 @@ import typings.reduxPersist.typesMod.MigrationManifest
 import typings.reduxPersist.typesMod.PersistMigrate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMigrateMod {
   
-  @JSImport("redux-persist/es/createMigrate", JSImport.Default)
+  @JSImport("redux-persist/es/createMigrate", JSImport.Namespace)
   @js.native
-  def default(migrations: MigrationManifest): PersistMigrate = js.native
-  @JSImport("redux-persist/es/createMigrate", JSImport.Default)
-  @js.native
-  def default(migrations: MigrationManifest, config: MigrationConfig): PersistMigrate = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(migrations: MigrationManifest): PersistMigrate = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(migrations.asInstanceOf[js.Any]).asInstanceOf[PersistMigrate]
+  @scala.inline
+  def default(migrations: MigrationManifest, config: MigrationConfig): PersistMigrate = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(migrations.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[PersistMigrate]
+  
   trait MigrationConfig extends StObject {
     
-    var debug: Boolean = js.native
+    var debug: Boolean
   }
   object MigrationConfig {
     

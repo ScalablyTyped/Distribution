@@ -2,52 +2,50 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpellingOptions extends StObject {
   
-  var ArabicModes: XlArabicModes = js.native
+  var ArabicModes: XlArabicModes
   
-  var ArabicStrictAlefHamza: Boolean = js.native
+  var ArabicStrictAlefHamza: Boolean
   
-  var ArabicStrictFinalYaa: Boolean = js.native
+  var ArabicStrictFinalYaa: Boolean
   
-  var ArabicStrictTaaMarboota: Boolean = js.native
+  var ArabicStrictTaaMarboota: Boolean
   
-  var BrazilReform: XlPortugueseReform = js.native
+  var BrazilReform: XlPortugueseReform
   
-  var DictLang: Double = js.native
+  var DictLang: Double
   
   @JSName("Excel.SpellingOptions_typekey")
-  var ExcelDotSpellingOptions_typekey: SpellingOptions = js.native
+  var ExcelDotSpellingOptions_typekey: SpellingOptions
   
-  var GermanPostReform: Boolean = js.native
+  var GermanPostReform: Boolean
   
-  var HebrewModes: XlHebrewModes = js.native
+  var HebrewModes: XlHebrewModes
   
-  var IgnoreCaps: Boolean = js.native
+  var IgnoreCaps: Boolean
   
-  var IgnoreFileNames: Boolean = js.native
+  var IgnoreFileNames: Boolean
   
-  var IgnoreMixedDigits: Boolean = js.native
+  var IgnoreMixedDigits: Boolean
   
-  var KoreanCombineAux: Boolean = js.native
+  var KoreanCombineAux: Boolean
   
-  var KoreanProcessCompound: Boolean = js.native
+  var KoreanProcessCompound: Boolean
   
-  var KoreanUseAutoChangeList: Boolean = js.native
+  var KoreanUseAutoChangeList: Boolean
   
-  var PortugalReform: XlPortugueseReform = js.native
+  var PortugalReform: XlPortugueseReform
   
-  var RussianStrictE: Boolean = js.native
+  var RussianStrictE: Boolean
   
-  var SpanishModes: XlSpanishModes = js.native
+  var SpanishModes: XlSpanishModes
   
-  var SuggestMainOnly: Boolean = js.native
+  var SuggestMainOnly: Boolean
   
-  var UserDict: String = js.native
+  var UserDict: String
 }
 object SpellingOptions {
   

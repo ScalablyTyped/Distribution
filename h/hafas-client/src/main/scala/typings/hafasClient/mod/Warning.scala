@@ -4,37 +4,35 @@ import typings.hafasClient.hafasClientStrings.status
 import typings.hafasClient.hafasClientStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Warning extends StObject {
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var edges: js.UndefOr[js.Array[_]] = js.native
+  var edges: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var events: js.UndefOr[js.Array[_]] = js.native
+  var events: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var products: js.UndefOr[Products] = js.native
+  var products: js.UndefOr[Products] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: status | warning = js.native
+  var `type`: status | warning
   
-  var validFrom: js.UndefOr[String] = js.native
+  var validFrom: js.UndefOr[String] = js.undefined
   
-  var validUntil: js.UndefOr[String] = js.native
+  var validUntil: js.UndefOr[String] = js.undefined
 }
 object Warning {
   
@@ -55,7 +53,7 @@ object Warning {
     def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setEdges(value: js.Array[_]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
@@ -64,7 +62,7 @@ object Warning {
     def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)

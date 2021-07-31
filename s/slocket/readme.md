@@ -12,7 +12,7 @@ A locking socket alternative to file-system mutex locks
 | Keywords           | mutex, lock, socket, file system, lockfile |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 856 |
+| # downloads        | 860 |
 | # stars            | 0 |
 
 ## Links

@@ -5,35 +5,34 @@ import typings.react.mod.ReactElement
 import typings.reactPose.reactPoseBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionTypesMod {
   
-  @js.native
   trait Props
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var animateOnMount: js.UndefOr[Boolean] = js.native
+    var animateOnMount: js.UndefOr[Boolean] = js.undefined
     
-    var children: TransitionChildren[_] = js.native
+    var children: TransitionChildren[js.Any]
     
-    var enterAfterExit: js.UndefOr[Boolean] = js.native
+    var enterAfterExit: js.UndefOr[Boolean] = js.undefined
     
-    var enterPose: js.UndefOr[String] = js.native
+    var enterPose: js.UndefOr[String] = js.undefined
     
-    var exitPose: js.UndefOr[String] = js.native
+    var exitPose: js.UndefOr[String] = js.undefined
     
-    var flipMove: js.UndefOr[Boolean] = js.native
+    var flipMove: js.UndefOr[Boolean] = js.undefined
     
-    var onRest: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preEnterPose: js.UndefOr[String] = js.native
+    var preEnterPose: js.UndefOr[String] = js.undefined
   }
   object Props {
     
     @scala.inline
-    def apply(children: TransitionChildren[_]): Props = {
+    def apply(children: TransitionChildren[js.Any]): Props = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
@@ -48,7 +47,7 @@ object transitionTypesMod {
       def setAnimateOnMountUndefined: Self = StObject.set(x, "animateOnMount", js.undefined)
       
       @scala.inline
-      def setChildren(value: TransitionChildren[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: TransitionChildren[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenVarargs(value: TransitionChild[js.Any]*): Self = StObject.set(x, "children", js.Array(value :_*))
@@ -91,18 +90,17 @@ object transitionTypesMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var displayedChildren: js.Array[ReactElement] = js.native
+    var displayedChildren: js.Array[ReactElement]
     
-    var finishedLeaving: StringDictionary[Boolean] = js.native
+    var finishedLeaving: StringDictionary[Boolean]
     
-    var hasInitialized: Boolean = js.native
+    var hasInitialized: Boolean
     
-    var indexedChildren: StringDictionary[ReactElement] = js.native
+    var indexedChildren: StringDictionary[ReactElement]
     
-    def scheduleChildRemoval(key: String): Unit = js.native
+    def scheduleChildRemoval(key: String): Unit
   }
   object State {
     

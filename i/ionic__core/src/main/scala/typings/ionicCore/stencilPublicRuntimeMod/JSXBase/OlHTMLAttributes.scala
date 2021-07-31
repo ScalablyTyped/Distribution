@@ -2,15 +2,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OlHTMLAttributes[T] extends HTMLAttributes[T] {
+trait OlHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object OlHTMLAttributes {
   
@@ -21,7 +21,7 @@ object OlHTMLAttributes {
   }
   
   @scala.inline
-  implicit class OlHTMLAttributesMutableBuilder[Self <: OlHTMLAttributes[_], T] (val x: Self with OlHTMLAttributes[T]) extends AnyVal {
+  implicit class OlHTMLAttributesMutableBuilder[Self <: OlHTMLAttributes[?], T] (val x: Self & OlHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])

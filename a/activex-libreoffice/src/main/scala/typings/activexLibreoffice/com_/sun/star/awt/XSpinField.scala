@@ -4,33 +4,33 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value of a spin field and makes it possible to register for spin events. */
-@js.native
-trait XSpinField extends XInterface {
+trait XSpinField
+  extends StObject
+     with XInterface {
   
   /** registers a listener for spin events. */
-  def addSpinListener(l: XSpinListener): Unit = js.native
+  def addSpinListener(l: XSpinListener): Unit
   
   /** decreases the value by one step. */
-  def down(): Unit = js.native
+  def down(): Unit
   
   /** enables/disables automatic repeat mode. */
-  def enableRepeat(bRepeat: Boolean): Unit = js.native
+  def enableRepeat(bRepeat: Boolean): Unit
   
   /** sets the value to the previously set lower value. */
-  def first(): Unit = js.native
+  def first(): Unit
   
   /** sets the value to the previously set upper value. */
-  def last(): Unit = js.native
+  def last(): Unit
   
   /** unregisters a listener for spin events. */
-  def removeSpinListener(l: XSpinListener): Unit = js.native
+  def removeSpinListener(l: XSpinListener): Unit
   
   /** increases the value by one step. */
-  def up(): Unit = js.native
+  def up(): Unit
 }
 object XSpinField {
   

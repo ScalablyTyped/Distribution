@@ -2,76 +2,74 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterHistory extends StObject {
   
   /**
     * Parameter names can include the following letters and symbols. a-zA-Z0-9_.-
     */
-  var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.native
+  var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.undefined
   
   /**
     * The data type of the parameter, such as text or aws:ec2:image. The default is text.
     */
-  var DataType: js.UndefOr[ParameterDataType] = js.native
+  var DataType: js.UndefOr[ParameterDataType] = js.undefined
   
   /**
     * Information about the parameter.
     */
-  var Description: js.UndefOr[ParameterDescription] = js.native
+  var Description: js.UndefOr[ParameterDescription] = js.undefined
   
   /**
     * The ID of the query key used for this parameter.
     */
-  var KeyId: js.UndefOr[ParameterKeyId] = js.native
+  var KeyId: js.UndefOr[ParameterKeyId] = js.undefined
   
   /**
     * Labels assigned to the parameter version.
     */
-  var Labels: js.UndefOr[ParameterLabelList] = js.native
+  var Labels: js.UndefOr[ParameterLabelList] = js.undefined
   
   /**
     * Date the parameter was last changed or updated.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.native
+  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the AWS user who last changed the parameter.
     */
-  var LastModifiedUser: js.UndefOr[String] = js.native
+  var LastModifiedUser: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var Name: js.UndefOr[PSParameterName] = js.native
+  var Name: js.UndefOr[PSParameterName] = js.undefined
   
   /**
     * Information about the policies assigned to a parameter.  Assigning parameter policies in the AWS Systems Manager User Guide.
     */
-  var Policies: js.UndefOr[ParameterPolicyList] = js.native
+  var Policies: js.UndefOr[ParameterPolicyList] = js.undefined
   
   /**
     * The parameter tier.
     */
-  var Tier: js.UndefOr[ParameterTier] = js.native
+  var Tier: js.UndefOr[ParameterTier] = js.undefined
   
   /**
     * The type of parameter used.
     */
-  var Type: js.UndefOr[ParameterType] = js.native
+  var Type: js.UndefOr[ParameterType] = js.undefined
   
   /**
     * The parameter value.
     */
-  var Value: js.UndefOr[PSParameterValue] = js.native
+  var Value: js.UndefOr[PSParameterValue] = js.undefined
   
   /**
     * The parameter version.
     */
-  var Version: js.UndefOr[PSParameterVersion] = js.native
+  var Version: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object ParameterHistory {
   

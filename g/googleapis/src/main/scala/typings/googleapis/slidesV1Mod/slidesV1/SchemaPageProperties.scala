@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * parent page. Depending on the page type the hierarchy is defined in either
   * SlideProperties or LayoutProperties.
   */
-@js.native
 trait SchemaPageProperties extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaPageProperties extends StObject {
     * from a parent page. If the page has no parent, the color scheme uses a
     * default Slides color scheme. This field is read-only.
     */
-  var colorScheme: js.UndefOr[SchemaColorScheme] = js.native
+  var colorScheme: js.UndefOr[SchemaColorScheme] = js.undefined
   
   /**
     * The background fill of the page. If unset, the background fill is
@@ -26,7 +24,7 @@ trait SchemaPageProperties extends StObject {
     * then the background fill defaults to the corresponding fill in the Slides
     * editor.
     */
-  var pageBackgroundFill: js.UndefOr[SchemaPageBackgroundFill] = js.native
+  var pageBackgroundFill: js.UndefOr[SchemaPageBackgroundFill] = js.undefined
 }
 object SchemaPageProperties {
   

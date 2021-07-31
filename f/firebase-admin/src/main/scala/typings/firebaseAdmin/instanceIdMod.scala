@@ -3,19 +3,20 @@ package typings.firebaseAdmin
 import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceIdMod {
   
   object instanceId {
     
+    @scala.inline
+    def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
+    @scala.inline
+    def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
+    
     @JSImport("firebase-admin/lib/instance-id", "instanceId")
     @js.native
-    def apply(): InstanceId = js.native
-    @JSImport("firebase-admin/lib/instance-id", "instanceId")
-    @js.native
-    def apply(app: App): InstanceId = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets the {@link InstanceId `InstanceId`} service for the
@@ -31,10 +32,9 @@ object instanceIdMod {
       * @return The `InstanceId` service for the
       *   current app.
       */
-    @js.native
     trait InstanceId extends StObject {
       
-      var app: App = js.native
+      var app: App
       
       /**
         * Deletes the specified instance ID and the associated data from Firebase.
@@ -49,7 +49,7 @@ object instanceIdMod {
         *
         * @return A promise fulfilled when the instance ID is deleted.
         */
-      def deleteInstanceId(instanceId: String): js.Promise[Unit] = js.native
+      def deleteInstanceId(instanceId: String): js.Promise[Unit]
     }
     object InstanceId {
       

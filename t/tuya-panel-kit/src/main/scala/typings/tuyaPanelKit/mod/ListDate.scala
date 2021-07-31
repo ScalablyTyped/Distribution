@@ -5,17 +5,17 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListDate extends TYFlatListData {
+trait ListDate
+  extends StObject
+     with TYFlatListData {
   
-  var Icon: js.UndefOr[ElementType[_]] = js.native
+  var Icon: js.UndefOr[ElementType[js.Any]] = js.undefined
   
-  var styles: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var styles: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ListDate {
   
@@ -29,7 +29,7 @@ object ListDate {
   implicit class ListDateMutableBuilder[Self <: ListDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setIcon(value: ElementType[_]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    def setIcon(value: ElementType[js.Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingComputationRanges extends StObject {
   
   /** The ID of the computation. */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /** Data disk assignments for ranges from this computation. */
-  var rangeAssignments: js.UndefOr[js.Array[KeyRangeDataDiskAssignment]] = js.native
+  var rangeAssignments: js.UndefOr[js.Array[KeyRangeDataDiskAssignment]] = js.undefined
 }
 object StreamingComputationRanges {
   

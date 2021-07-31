@@ -5,25 +5,26 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentMod {
   
-  @JSImport("rc-tooltip/es/Content", JSImport.Default)
+  @JSImport("rc-tooltip/es/Content", JSImport.Namespace)
   @js.native
-  def default(props: ContentProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: ContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ContentProps extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var overlay: js.Function0[ReactNode] | ReactNode = js.native
+    var overlay: js.Function0[ReactNode] | ReactNode
     
-    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object ContentProps {
     

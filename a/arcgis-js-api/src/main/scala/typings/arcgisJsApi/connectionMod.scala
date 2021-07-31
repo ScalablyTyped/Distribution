@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.Connection
 import typings.arcgisJsApi.esri.ConnectionConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod extends Shortcut {
@@ -22,7 +21,9 @@ object connectionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html)
     */
-  class Class () extends Connection
+  class Class ()
+    extends StObject
+       with Connection
   
   type _To = ConnectionConstructor
   

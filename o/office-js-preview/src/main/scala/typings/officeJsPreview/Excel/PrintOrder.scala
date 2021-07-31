@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,12 +18,16 @@ object PrintOrder extends StObject {
     *
     */
   @js.native
-  sealed trait downThenOver extends PrintOrder
+  sealed trait downThenOver
+    extends StObject
+       with PrintOrder
   
   /**
     * Process across pages or page fields to the right before moving down the rows.
     *
     */
   @js.native
-  sealed trait overThenDown extends PrintOrder
+  sealed trait overThenDown
+    extends StObject
+       with PrintOrder
 }

@@ -2,7 +2,6 @@ package typings.skmeans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,47 +15,71 @@ object mod {
     * @param iterations Maximum number of iterations. If not provided, it will be set to 10000.
     * @param distance Custom distance function. Takes two points as arguments and returns a scalar number.
     */
-  @JSImport("skmeans", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = js.native
-  @JSImport("skmeans", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: Unit, iterations: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
-    centroids: js.UndefOr[CentroidValues],
-    iterations: js.UndefOr[scala.Nothing],
-    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
-  ): Data = js.native
-  @JSImport("skmeans", JSImport.Namespace)
-  @js.native
-  def apply(
-    data: js.Array[js.Array[Double] | Double],
-    k: Double,
-    centroids: js.UndefOr[CentroidValues],
-    iterations: Double
-  ): Data = js.native
-  @JSImport("skmeans", JSImport.Namespace)
-  @js.native
-  def apply(
-    data: js.Array[js.Array[Double] | Double],
-    k: Double,
-    centroids: js.UndefOr[CentroidValues],
+    centroids: Unit,
     iterations: Double,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
-  ): Data = js.native
-  @JSImport("skmeans", JSImport.Namespace)
-  @js.native
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
-    centroids: js.UndefOr[CentroidValues],
+    centroids: Unit,
     iterations: Null,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
-  ): Data = js.native
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: Unit,
+    iterations: Unit,
+    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: CentroidValues,
+    iterations: Double
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: CentroidValues,
+    iterations: Double,
+    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: CentroidValues,
+    iterations: Null,
+    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  @scala.inline
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: CentroidValues,
+    iterations: Unit,
+    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
+  ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
+  
   @JSImport("skmeans", JSImport.Namespace)
   @js.native
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.skmeans.skmeansStrings.kmrand

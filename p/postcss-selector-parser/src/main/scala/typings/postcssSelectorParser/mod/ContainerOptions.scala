@@ -2,13 +2,13 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContainerOptions extends NodeOptions[String] {
+trait ContainerOptions
+  extends StObject
+     with NodeOptions[String] {
   
-  var nodes: js.UndefOr[js.Array[Node]] = js.native
+  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
 }
 object ContainerOptions {
   

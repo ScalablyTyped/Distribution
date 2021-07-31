@@ -3,7 +3,6 @@ package typings.scriptableIos.global
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Location {
   
+  @JSGlobal("Location")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * _Fetches your location._
     *
@@ -19,9 +22,8 @@ object Location {
     * vertical accuracy measured in meters.
     * @see https://docs.scriptable.app/location/#current
     */
-  @JSGlobal("Location.current")
-  @js.native
-  def current(): js.Promise[_] = js.native
+  @scala.inline
+  def current(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * _Performs reverse-geocoding for a location._
@@ -32,12 +34,10 @@ object Location {
     * @param locale - Optional. Preferred locale to fetch information in. Uses the default locale of the device if null.
     * @see https://docs.scriptable.app/location/#reversegeocode
     */
-  @JSGlobal("Location.reverseGeocode")
-  @js.native
-  def reverseGeocode(latitude: Double, longitude: Double): js.Array[StringDictionary[_]] = js.native
-  @JSGlobal("Location.reverseGeocode")
-  @js.native
-  def reverseGeocode(latitude: Double, longitude: Double, locale: String): js.Array[StringDictionary[_]] = js.native
+  @scala.inline
+  def reverseGeocode(latitude: Double, longitude: Double): js.Array[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[js.Any]]]
+  @scala.inline
+  def reverseGeocode(latitude: Double, longitude: Double, locale: String): js.Array[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[js.Any]]]
   
   /**
     * _Uses best accuracy. This is default._
@@ -45,39 +45,34 @@ object Location {
     * Set this when you want to achieve the best possible accuracy when retrieving your location. This is the default accuracy.
     * @see https://docs.scriptable.app/location/#setaccuracytobest
     */
-  @JSGlobal("Location.setAccuracyToBest")
-  @js.native
-  def setAccuracyToBest(): Unit = js.native
+  @scala.inline
+  def setAccuracyToBest(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccuracyToBest")().asInstanceOf[Unit]
   
   /**
     * _Sets accuracy to within hundred meters._
     * @see https://docs.scriptable.app/location/#setaccuracytohundredmeters
     */
-  @JSGlobal("Location.setAccuracyToHundredMeters")
-  @js.native
-  def setAccuracyToHundredMeters(): Unit = js.native
+  @scala.inline
+  def setAccuracyToHundredMeters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccuracyToHundredMeters")().asInstanceOf[Unit]
   
   /**
     * _Sets accuracy to within one kilometer._
     * @see https://docs.scriptable.app/location/#setaccuracytokilometer
     */
-  @JSGlobal("Location.setAccuracyToKilometer")
-  @js.native
-  def setAccuracyToKilometer(): Unit = js.native
+  @scala.inline
+  def setAccuracyToKilometer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccuracyToKilometer")().asInstanceOf[Unit]
   
   /**
     * _Sets accuracy to within ten meters._
     * @see https://docs.scriptable.app/location/#setaccuracytotenmeters
     */
-  @JSGlobal("Location.setAccuracyToTenMeters")
-  @js.native
-  def setAccuracyToTenMeters(): Unit = js.native
+  @scala.inline
+  def setAccuracyToTenMeters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccuracyToTenMeters")().asInstanceOf[Unit]
   
   /**
     * _Sets accuracy to within three kilometers._
     * @see https://docs.scriptable.app/location/#setaccuracytothreekilometers
     */
-  @JSGlobal("Location.setAccuracyToThreeKilometers")
-  @js.native
-  def setAccuracyToThreeKilometers(): Unit = js.native
+  @scala.inline
+  def setAccuracyToThreeKilometers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccuracyToThreeKilometers")().asInstanceOf[Unit]
 }

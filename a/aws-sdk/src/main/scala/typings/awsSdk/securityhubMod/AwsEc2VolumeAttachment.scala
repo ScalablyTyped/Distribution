@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2VolumeAttachment extends StObject {
   
   /**
     * The datetime when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[NonEmptyString] = js.native
+  var AttachTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the EBS volume is deleted when the EC2 instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifier of the EC2 instance.
     */
-  var InstanceId: js.UndefOr[NonEmptyString] = js.native
+  var InstanceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The attachment state of the volume.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2VolumeAttachment {
   

@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -64,5 +63,5 @@ trait SqliteStatement extends StObject {
     * query, or `null` when the last result is reached. You should call
     * `reset()` at that point if you intend to use this object again.
     */
-  def step(): js.Array[_] | Null = js.native
+  def step(): js.Array[js.Any] | Null = js.native
 }

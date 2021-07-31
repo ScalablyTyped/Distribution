@@ -3,21 +3,19 @@ package typings.kineticjs.Kinetic
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICanvas extends StObject {
   
-  var _canvas: HTMLCanvasElement = js.native
+  var _canvas: HTMLCanvasElement
   
-  def getPixelRatio(): Double = js.native
+  def getPixelRatio(): Double
   
-  var height: Double = js.native
+  var height: Double
   
-  def setPixelRatio(pixelRatio: Double): js.Any = js.native
+  def setPixelRatio(pixelRatio: Double): js.Any
   
-  var width: Double = js.native
+  var width: Double
 }
 object ICanvas {
   

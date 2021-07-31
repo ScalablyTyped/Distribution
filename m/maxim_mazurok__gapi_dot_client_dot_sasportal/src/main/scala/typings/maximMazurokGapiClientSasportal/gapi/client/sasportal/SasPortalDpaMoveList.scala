@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalDpaMoveList extends StObject {
   
   /** The ID of the DPA. */
-  var dpaId: js.UndefOr[String] = js.native
+  var dpaId: js.UndefOr[String] = js.undefined
   
   /** The frequency range that the move list affects. */
-  var frequencyRange: js.UndefOr[SasPortalFrequencyRange] = js.native
+  var frequencyRange: js.UndefOr[SasPortalFrequencyRange] = js.undefined
 }
 object SasPortalDpaMoveList {
   

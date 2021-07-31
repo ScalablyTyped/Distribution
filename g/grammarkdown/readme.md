@@ -12,7 +12,7 @@ Markdown-like DSL for defining syntactic grammars for programming languages.
 | Keywords           | grammar, language, syntax, dsl, javascript, typescript, ecmascript |
 | # releases         | 23 |
 | # dependents       | 1 |
-| # downloads        | 11157 |
+| # downloads        | 13649 |
 | # stars            | 1 |
 
 ## Links

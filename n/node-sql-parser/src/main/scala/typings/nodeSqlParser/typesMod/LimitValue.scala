@@ -2,15 +2,13 @@ package typings.nodeSqlParser.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LimitValue extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object LimitValue {
   

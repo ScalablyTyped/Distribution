@@ -3,22 +3,22 @@ package typings.twilioVideo.mod
 import typings.twilioVideo.twilioVideoStrings.VP8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VP8CodecSettings extends VideoCodecSettings {
+trait VP8CodecSettings
+  extends StObject
+     with VideoCodecSettings {
   
   @JSName("codec")
-  var codec_VP8CodecSettings: VP8 = js.native
+  var codec_VP8CodecSettings: VP8
   
-  var simulcast: js.UndefOr[Boolean] = js.native
+  var simulcast: js.UndefOr[Boolean] = js.undefined
 }
 object VP8CodecSettings {
   
   @scala.inline
-  def apply(codec: VP8): VP8CodecSettings = {
-    val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any])
+  def apply(): VP8CodecSettings = {
+    val __obj = js.Dynamic.literal(codec = "VP8")
     __obj.asInstanceOf[VP8CodecSettings]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocalGatewayRouteRequest extends StObject {
   
   /**
     * The CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  var DestinationCidrBlock: String = js.native
+  var DestinationCidrBlock: String
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId
   
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId = js.native
+  var LocalGatewayVirtualInterfaceGroupId: typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId
 }
 object CreateLocalGatewayRouteRequest {
   

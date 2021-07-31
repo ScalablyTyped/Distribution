@@ -8,7 +8,6 @@ import typings.scriptableIos.scriptableIosStrings.unavailable
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In order to add the event to your calendar, you must call the save() function.
   * @see https://docs.scriptable.app/calendarevent/#-new-calendarevent
   */
-@js.native
 trait CalendarEvent extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait CalendarEvent extends StObject {
     * @param recurrenceRule - Recurrence rule to add to the reminder.
     * @see https://docs.scriptable.app/calendarevent/#-addrecurrencerule
     */
-  def addRecurrenceRule(recurrenceRule: RecurrenceRule): Unit = js.native
+  def addRecurrenceRule(recurrenceRule: RecurrenceRule): Unit
   
   /**
     * _Attendees associated with the event._
@@ -45,7 +43,7 @@ trait CalendarEvent extends StObject {
     * Note that the property is read-only since iOS does not expose API to modify the attendees of an event.
     * @see https://docs.scriptable.app/calendarevent/#attendees
     */
-  var attendees: js.Array[Attendees] = js.native
+  var attendees: js.Array[Attendees]
   
   /**
     * _Availability during the event._
@@ -61,43 +59,43 @@ trait CalendarEvent extends StObject {
     * calendar supports a specific availability.
     * @see https://docs.scriptable.app/calendarevent/#availability
     */
-  var availability: busy | free | tentative | unavailable = js.native
+  var availability: busy | free | tentative | unavailable
   
   /**
     * _Calendar the event is stored in._
     * @see https://docs.scriptable.app/calendarevent/#calendar
     */
-  var calendar: Calendar = js.native
+  var calendar: Calendar
   
   /**
     * _End date of event._
     * @see https://docs.scriptable.app/calendarevent/#enddate
     */
-  var endDate: Date = js.native
+  var endDate: Date
   
   /**
     * _Identifier of event._
     * @see https://docs.scriptable.app/calendarevent/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Whether the event is an all-day event._
     * @see https://docs.scriptable.app/calendarevent/#isallday
     */
-  var isAllDay: Boolean = js.native
+  var isAllDay: Boolean
   
   /**
     * _Location of event._
     * @see https://docs.scriptable.app/calendarevent/#location
     */
-  var location: String = js.native
+  var location: String
   
   /**
     * _Notes associated with event._
     * @see https://docs.scriptable.app/calendarevent/#notes
     */
-  var notes: String = js.native
+  var notes: String
   
   /**
     * _Presents a view for editing the calendar event._
@@ -105,19 +103,19 @@ trait CalendarEvent extends StObject {
     * The presented view supports editing various attributes of the event, including title, location, dates, recurrence and alerts.
     * @see https://docs.scriptable.app/calendarevent/#-presentedit
     */
-  def presentEdit(): js.Promise[CalendarEvent] = js.native
+  def presentEdit(): js.Promise[CalendarEvent]
   
   /**
     * _Removes event from calendar._
     * @see https://docs.scriptable.app/calendarevent/#-remove
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   /**
     * _Removes all recurrence rules._
     * @see https://docs.scriptable.app/calendarevent/#-removeallrecurrencerules
     */
-  def removeAllRecurrenceRules(): Unit = js.native
+  def removeAllRecurrenceRules(): Unit
   
   /**
     * _Saves event._
@@ -125,13 +123,13 @@ trait CalendarEvent extends StObject {
     * Saves changes to an event, inserting it into the calendar if it is newly created.
     * @see https://docs.scriptable.app/calendarevent/#-save
     */
-  def save(): Unit = js.native
+  def save(): Unit
   
   /**
     * _Start date of event._
     * @see https://docs.scriptable.app/calendarevent/#startdate
     */
-  var startDate: Date = js.native
+  var startDate: Date
   
   /**
     * _Time zone of event._
@@ -139,13 +137,13 @@ trait CalendarEvent extends StObject {
     * Geopolitical region identifier that identifies the time zone, e.g. "Europe/Copenhagen", "America/New\_York" and "Asia/Tokyo".
     * @see https://docs.scriptable.app/calendarevent/#timezone
     */
-  var timeZone: String = js.native
+  var timeZone: String
   
   /**
     * _Title of event._
     * @see https://docs.scriptable.app/calendarevent/#title
     */
-  var title: String = js.native
+  var title: String
 }
 object CalendarEvent {
   
@@ -172,18 +170,17 @@ object CalendarEvent {
     __obj.asInstanceOf[CalendarEvent]
   }
   
-  @js.native
   trait Attendees extends StObject {
     
-    var isCurrentUser: Boolean = js.native
+    var isCurrentUser: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var role: String = js.native
+    var role: String
     
-    var status: String = js.native
+    var status: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Attendees {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVolumeRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The target IOPS rate of the volume. This is only valid for Provisioned IOPS SSD (io1 and io2) volumes. For moreinformation, see  Provisioned IOPS SSD (io1 and io2) volumes. Default: If no IOPS value is specified, the existing value is retained.
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The target size of the volume, in GiB. The target volume size must be greater than or equal to than the existing size of the volume. For information about available EBS volume sizes, see Amazon EBS Volume Types. Default: If no size is specified, the existing size is retained.
     */
-  var Size: js.UndefOr[Integer] = js.native
+  var Size: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: typings.awsSdk.ec2Mod.VolumeId = js.native
+  var VolumeId: typings.awsSdk.ec2Mod.VolumeId
   
   /**
     * The target EBS volume type of the volume. Default: If no type is specified, the existing type is retained.
     */
-  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.native
+  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.undefined
 }
 object ModifyVolumeRequest {
   

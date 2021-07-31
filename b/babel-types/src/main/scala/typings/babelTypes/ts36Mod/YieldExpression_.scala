@@ -3,35 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YieldExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Terminatorless {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var delegate: Boolean = js.native
+  var delegate: Boolean
   
   @JSName("type")
-  var type_YieldExpression_ : YieldExpression = js.native
+  var type_YieldExpression_ : YieldExpression
 }
 object YieldExpression_ {
   
   @scala.inline
-  def apply(
-    argument: Expression,
-    delegate: Boolean,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: YieldExpression
-  ): YieldExpression_ = {
+  def apply(argument: Expression, delegate: Boolean, end: Double, loc: SourceLocation, start: Double): YieldExpression_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[YieldExpression_]
   }
   

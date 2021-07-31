@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPublicKeyConfigResult extends StObject {
   
   /**
     * The identifier for this version of the public key configuration.
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * A public key configuration.
     */
-  var PublicKeyConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKeyConfig] = js.native
+  var PublicKeyConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.PublicKeyConfig] = js.undefined
 }
 object GetPublicKeyConfigResult {
   

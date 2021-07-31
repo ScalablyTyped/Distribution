@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateShapePropertiesRequest extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait UpdateShapePropertiesRequest extends StObject {
     * for listing every field. For example to update the shape background solid fill color, set `fields` to `"shapeBackgroundFill.solidFill.color"`. To reset a property to its default
     * value, include its field name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The object ID of the shape the updates are applied to. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The shape properties to update. */
-  var shapeProperties: js.UndefOr[ShapeProperties] = js.native
+  var shapeProperties: js.UndefOr[ShapeProperties] = js.undefined
 }
 object UpdateShapePropertiesRequest {
   

@@ -2,25 +2,23 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListOperationsResponse is the result of ListOperationsRequest.
   */
-@js.native
 trait SchemaListOperationsResponse extends StObject {
   
   /**
     * If any zones are listed here, the list of operations returned may be
     * missing the operations from those zones.
     */
-  var missingZones: js.UndefOr[js.Array[String]] = js.native
+  var missingZones: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of operations in the project in the specified zone.
     */
-  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.native
+  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.undefined
 }
 object SchemaListOperationsResponse {
   

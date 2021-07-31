@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see MouseEvent
   * @since OOo 2.0
   */
-@js.native
-trait EnhancedMouseEvent extends MouseEvent {
+trait EnhancedMouseEvent
+  extends StObject
+     with MouseEvent {
   
   /** contains the object on the location of the mouse. */
-  var Target: XInterface = js.native
+  var Target: XInterface
 }
 object EnhancedMouseEvent {
   

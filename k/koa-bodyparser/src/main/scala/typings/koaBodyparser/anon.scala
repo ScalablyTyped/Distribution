@@ -2,19 +2,17 @@ package typings.koaBodyparser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Form extends StObject {
     
-    var form: js.UndefOr[js.Array[String]] = js.native
+    var form: js.UndefOr[js.Array[String]] = js.undefined
     
-    var json: js.UndefOr[js.Array[String]] = js.native
+    var json: js.UndefOr[js.Array[String]] = js.undefined
     
-    var text: js.UndefOr[js.Array[String]] = js.native
+    var text: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Form {
     

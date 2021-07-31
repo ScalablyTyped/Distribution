@@ -4,137 +4,137 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSVLayerCapabilitiesQuery extends Object {
+trait CSVLayerCapabilitiesQuery
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the geometry centroid associated with each polygon feature can be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsCentroid: Boolean = js.native
+  var supportsCentroid: Boolean
   
   /**
     * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsDisjointSpatialRelationship: Boolean = js.native
+  var supportsDisjointSpatialRelationship: Boolean
   
   /**
     * Indicates if the layer's query operation supports a buffer distance for input geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsDistance: Boolean = js.native
+  var supportsDistance: Boolean
   
   /**
     * Indicates if the layer supports queries for distinct values based on fields specified in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#outFields).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsDistinct: Boolean = js.native
+  var supportsDistinct: Boolean
   
   /**
     * Indicates if the layer's query response includes the extent of features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsExtent: Boolean = js.native
+  var supportsExtent: Boolean
   
   /**
     * Indicates if the layer's query response contains geometry attributes, including shape area and length attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsGeometryProperties: Boolean = js.native
+  var supportsGeometryProperties: Boolean
   
   /**
     * Indicates if the layer supports the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having) clause on the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsHavingClause: Boolean = js.native
+  var supportsHavingClause: Boolean
   
   /**
     * Indicates if the layer supports historic moment query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsHistoricMoment: Boolean = js.native
+  var supportsHistoricMoment: Boolean
   
   /**
     * Indicates if features returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsOrderBy: Boolean = js.native
+  var supportsOrderBy: Boolean
   
   /**
     * Indicates if the query response supports pagination.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsPagination: Boolean = js.native
+  var supportsPagination: Boolean
   
   /**
     * Indicates if the layer supports [percentile statisticType](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsPercentileStatistics: Boolean = js.native
+  var supportsPercentileStatistics: Boolean
   
   /**
     * Indicates if the query operation supports the projection of geometries onto a virtual grid.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsQuantization: Boolean = js.native
+  var supportsQuantization: Boolean
   
   /**
     * Indicates if the query operation supports quantization designed to be used in edit mode (highest resolution at the given spatial reference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsQuantizationEditMode: Boolean = js.native
+  var supportsQuantizationEditMode: Boolean
   
   /**
     * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsQueryGeometry: Boolean = js.native
+  var supportsQueryGeometry: Boolean
   
   /**
     * Indicates if the number of features returned by the query operation can be controlled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsResultType: Boolean = js.native
+  var supportsResultType: Boolean
   
   /**
     * Indicates if the query operation supports SQL expressions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsSqlExpression: Boolean = js.native
+  var supportsSqlExpression: Boolean
   
   /**
     * Indicates if the query operation supports using standardized queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsStandardizedQueriesOnly: Boolean = js.native
+  var supportsStandardizedQueriesOnly: Boolean
   
   /**
     * Indicates if the layer supports field-based statistical functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var supportsStatistics: Boolean = js.native
+  var supportsStatistics: Boolean
 }
 object CSVLayerCapabilitiesQuery {
   

@@ -11,35 +11,33 @@ import typings.aceBuilds.aceBuildsStrings.printmargin_
 import typings.aceBuilds.aceBuildsStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditSessionOptions extends StObject {
   
-  var firstLineNumber: Double = js.native
+  var firstLineNumber: Double
   
-  var foldStyle: markbegin | markbeginend | manual = js.native
+  var foldStyle: markbegin | markbeginend | manual
   
-  var indentedSoftWrap: Boolean = js.native
+  var indentedSoftWrap: Boolean
   
-  var mode: String = js.native
+  var mode: String
   
-  var navigateWithinSoftTabs: Boolean = js.native
+  var navigateWithinSoftTabs: Boolean
   
-  var newLineMode: NewLineMode = js.native
+  var newLineMode: NewLineMode
   
-  var overwrite: Boolean = js.native
+  var overwrite: Boolean
   
-  var tabSize: Double = js.native
+  var tabSize: Double
   
-  var useSoftTabs: Boolean = js.native
+  var useSoftTabs: Boolean
   
-  var useWorker: Boolean = js.native
+  var useWorker: Boolean
   
-  var wrap: off | free | printmargin_ | Boolean | Double = js.native
+  var wrap: off | free | printmargin_ | Boolean | Double
   
-  var wrapMethod: code | text | auto = js.native
+  var wrapMethod: code | text | auto
 }
 object EditSessionOptions {
   

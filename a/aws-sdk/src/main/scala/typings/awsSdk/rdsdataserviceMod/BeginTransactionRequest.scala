@@ -2,31 +2,29 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginTransactionRequest extends StObject {
   
   /**
     * The name of the database.
     */
-  var database: js.UndefOr[DbName] = js.native
+  var database: js.UndefOr[DbName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Aurora Serverless DB cluster.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The name of the database schema.
     */
-  var schema: js.UndefOr[DbName] = js.native
+  var schema: js.UndefOr[DbName] = js.undefined
   
   /**
     * The name or ARN of the secret that enables access to the DB cluster.
     */
-  var secretArn: Arn = js.native
+  var secretArn: Arn
 }
 object BeginTransactionRequest {
   

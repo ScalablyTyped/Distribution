@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Sentiment. */
-@js.native
 trait ISentiment extends StObject {
   
   /** Sentiment magnitude */
-  var magnitude: js.UndefOr[Double | Null] = js.native
+  var magnitude: js.UndefOr[Double | Null] = js.undefined
   
   /** Sentiment score */
-  var score: js.UndefOr[Double | Null] = js.native
+  var score: js.UndefOr[Double | Null] = js.undefined
 }
 object ISentiment {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFlowsResponse extends StObject {
   
   /**
     *  The list of flows associated with your account. 
     */
-  var flows: js.UndefOr[FlowList] = js.native
+  var flows: js.UndefOr[FlowList] = js.undefined
   
   /**
     *  The pagination token for next page of data. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListFlowsResponse {
   

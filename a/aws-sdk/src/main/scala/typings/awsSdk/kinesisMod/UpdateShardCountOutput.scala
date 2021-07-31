@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateShardCountOutput extends StObject {
   
   /**
     * The current number of shards.
     */
-  var CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.native
+  var CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
   
   /**
     * The name of the stream.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisMod.StreamName] = js.undefined
   
   /**
     * The updated number of shards.
     */
-  var TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.native
+  var TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
 }
 object UpdateShardCountOutput {
   

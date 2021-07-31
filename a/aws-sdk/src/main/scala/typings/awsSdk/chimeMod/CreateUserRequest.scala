@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The user's email address.
     */
-  var Email: js.UndefOr[EmailAddress] = js.native
+  var Email: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The user type.
     */
-  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.native
+  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.undefined
   
   /**
     * The user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object CreateUserRequest {
   

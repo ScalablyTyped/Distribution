@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2SaveFindings extends StObject {
   
   /** Location to store findings outside of DLP. */
-  var outputConfig: js.UndefOr[GooglePrivacyDlpV2OutputStorageConfig] = js.native
+  var outputConfig: js.UndefOr[GooglePrivacyDlpV2OutputStorageConfig] = js.undefined
 }
 object GooglePrivacyDlpV2SaveFindings {
   

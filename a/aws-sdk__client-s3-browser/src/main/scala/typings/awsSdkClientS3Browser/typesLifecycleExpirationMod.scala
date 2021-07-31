@@ -3,28 +3,26 @@ package typings.awsSdkClientS3Browser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLifecycleExpirationMod {
   
-  @js.native
   trait LifecycleExpiration extends StObject {
     
     /**
       * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
       */
-    var Date: js.UndefOr[typings.std.Date | String | Double] = js.native
+    var Date: js.UndefOr[typings.std.Date | String | Double] = js.undefined
     
     /**
       * <p>Indicates the lifetime, in days, of the objects that are subject to the rule. The value must be a non-zero positive integer.</p>
       */
-    var Days: js.UndefOr[Double] = js.native
+    var Days: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action. This cannot be specified with Days or Date in a Lifecycle Expiration Policy.</p>
       */
-    var ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.native
+    var ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
   }
   object LifecycleExpiration {
     
@@ -57,14 +55,15 @@ object typesLifecycleExpirationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledLifecycleExpiration extends LifecycleExpiration {
+  trait UnmarshalledLifecycleExpiration
+    extends StObject
+       with LifecycleExpiration {
     
     /**
       * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
       */
     @JSName("Date")
-    var Date_UnmarshalledLifecycleExpiration: js.UndefOr[Date] = js.native
+    var Date_UnmarshalledLifecycleExpiration: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledLifecycleExpiration {
     

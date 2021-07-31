@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ContactsContainer")
 @js.native
 class ContactsContainer ()
-  extends typings.scriptableIos.ContactsContainer
+  extends StObject
+     with typings.scriptableIos.ContactsContainer {
+  
+  /**
+    * _Identifier of the contacts container._
+    * @see https://docs.scriptable.app/contactscontainer/#identifier
+    */
+  /* CompleteClass */
+  var identifier: String = js.native
+  
+  /**
+    * _Name of the contacts container._
+    * @see https://docs.scriptable.app/contactscontainer/#name
+    */
+  /* CompleteClass */
+  var name: String = js.native
+}
 object ContactsContainer {
+  
+  @JSGlobal("ContactsContainer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Fetches default contacts container._
     * @see https://docs.scriptable.app/contactscontainer/#default
     */
   /* static member */
-  @JSGlobal("ContactsContainer.default")
-  @js.native
-  def default(): js.Promise[typings.scriptableIos.ContactsContainer] = js.native
+  @scala.inline
+  def default(): js.Promise[typings.scriptableIos.ContactsContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[typings.scriptableIos.ContactsContainer]]
   
   /**
     * _Fetches all contacts containers._
     * @see https://docs.scriptable.app/contactscontainer/#all
     */
   /* static member */
-  @JSGlobal("ContactsContainer.all")
-  @js.native
-  def all(): js.Promise[js.Array[typings.scriptableIos.ContactsContainer]] = js.native
+  @scala.inline
+  def all(): js.Promise[js.Array[typings.scriptableIos.ContactsContainer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.ContactsContainer]]]
   
   /**
     * _Fetches a contacts container._
@@ -39,7 +56,6 @@ object ContactsContainer {
     * @see https://docs.scriptable.app/contactscontainer/#withidentifier
     */
   /* static member */
-  @JSGlobal("ContactsContainer.withIdentifier")
-  @js.native
-  def withIdentifier(identifier: String): js.Promise[typings.scriptableIos.ContactsContainer] = js.native
+  @scala.inline
+  def withIdentifier(identifier: String): js.Promise[typings.scriptableIos.ContactsContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("withIdentifier")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.ContactsContainer]]
 }

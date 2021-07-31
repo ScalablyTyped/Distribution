@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramEditableResizeHandles extends StObject {
   
-  var fill: js.UndefOr[String | DiagramEditableResizeHandlesFill] = js.native
+  var fill: js.UndefOr[String | DiagramEditableResizeHandlesFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[DiagramEditableResizeHandlesHover] = js.native
+  var hover: js.UndefOr[DiagramEditableResizeHandlesHover] = js.undefined
   
-  var stroke: js.UndefOr[DiagramEditableResizeHandlesStroke] = js.native
+  var stroke: js.UndefOr[DiagramEditableResizeHandlesStroke] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DiagramEditableResizeHandles {
   

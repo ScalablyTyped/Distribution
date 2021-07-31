@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Endpoint extends DirectoryObject {
+trait Endpoint
+  extends StObject
+     with DirectoryObject {
   
   /**
     * Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable.
     * Read-only.
     */
-  var capability: js.UndefOr[String] = js.native
+  var capability: js.UndefOr[String] = js.undefined
   
   // Application id of the publishing underlying service. Not nullable. Read-only.
-  var providerId: js.UndefOr[NullableOption[String]] = js.native
+  var providerId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the publishing underlying service. Read-only.
-  var providerName: js.UndefOr[NullableOption[String]] = js.native
+  var providerName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable.
     * Read-only.
     */
-  var providerResourceId: js.UndefOr[NullableOption[String]] = js.native
+  var providerResourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URL of the published resource. Not nullable. Read-only.
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Endpoint {
   

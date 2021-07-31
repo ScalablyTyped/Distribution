@@ -2,19 +2,17 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RGBA extends StObject {
   
-  val a: Double = js.native
+  val a: Double
   
-  val b: Double = js.native
+  val b: Double
   
-  val g: Double = js.native
+  val g: Double
   
-  val r: Double = js.native
+  val r: Double
 }
 object RGBA {
   

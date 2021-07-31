@@ -2,46 +2,44 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Webhook extends StObject {
   
   /**
     *  The name for a branch that is part of an Amplify app. 
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     *  The create date and time for a webhook. 
     */
-  var createTime: CreateTime = js.native
+  var createTime: CreateTime
   
   /**
     *  The description for a webhook. 
     */
-  var description: Description = js.native
+  var description: Description
   
   /**
     *  Updates the date and time for a webhook. 
     */
-  var updateTime: UpdateTime = js.native
+  var updateTime: UpdateTime
   
   /**
     *  The Amazon Resource Name (ARN) for the webhook. 
     */
-  var webhookArn: WebhookArn = js.native
+  var webhookArn: WebhookArn
   
   /**
     *  The ID of the webhook. 
     */
-  var webhookId: WebhookId = js.native
+  var webhookId: WebhookId
   
   /**
     *  The URL of the webhook. 
     */
-  var webhookUrl: WebhookUrl = js.native
+  var webhookUrl: WebhookUrl
 }
 object Webhook {
   

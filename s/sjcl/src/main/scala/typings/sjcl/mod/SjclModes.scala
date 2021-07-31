@@ -2,24 +2,22 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@js.native
 trait SjclModes extends StObject {
   
-  var cbc: SjclCBCMode = js.native
+  var cbc: SjclCBCMode
   
-  var ccm: SjclCCMMode = js.native
+  var ccm: SjclCCMMode
   
-  var ctr: SjclCTRMode = js.native
+  var ctr: SjclCTRMode
   
-  var gcm: SjclGCMMode = js.native
+  var gcm: SjclGCMMode
   
-  var ocb2: SjclOCB2Mode = js.native
+  var ocb2: SjclOCB2Mode
   
-  var ocb2progressive: SjclOCB2ProgressiveMode = js.native
+  var ocb2progressive: SjclOCB2ProgressiveMode
 }
 object SjclModes {
   

@@ -2,26 +2,24 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   /**
     * 图片高度
     */
-  var height: String = js.native
+  var height: String
   
   /**
     * 临时图片路径
     */
-  var tempImagePath: String = js.native
+  var tempImagePath: String
   
   /**
     * 图片宽度
     */
-  var width: String = js.native
+  var width: String
 }
 object Height {
   

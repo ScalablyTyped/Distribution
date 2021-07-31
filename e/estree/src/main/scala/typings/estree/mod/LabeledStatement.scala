@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabeledStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var label: Identifier = js.native
+  var label: Identifier
   
   @JSName("type")
-  var type_LabeledStatement: typings.estree.estreeStrings.LabeledStatement = js.native
+  var type_LabeledStatement: typings.estree.estreeStrings.LabeledStatement
 }
 object LabeledStatement {
   
   @scala.inline
-  def apply(body: Statement, label: Identifier, `type`: typings.estree.estreeStrings.LabeledStatement): LabeledStatement = {
+  def apply(body: Statement, label: Identifier): LabeledStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LabeledStatement")
     __obj.asInstanceOf[LabeledStatement]
   }
   

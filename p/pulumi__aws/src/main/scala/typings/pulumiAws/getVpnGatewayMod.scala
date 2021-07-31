@@ -5,62 +5,60 @@ import typings.pulumiAws.inputMod.ec2.GetVpnGatewayFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpnGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpnGateway", "getVpnGateway")
+  @JSImport("@pulumi/aws/ec2/getVpnGateway", JSImport.Namespace)
   @js.native
-  def getVpnGateway(): js.Promise[GetVpnGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpnGateway", "getVpnGateway")
-  @js.native
-  def getVpnGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpnGateway", "getVpnGateway")
-  @js.native
-  def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpnGateway", "getVpnGateway")
-  @js.native
-  def getVpnGateway(args: GetVpnGatewayArgs, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpnGateway(): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")().asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  @scala.inline
+  def getVpnGateway(args: Unit, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  @scala.inline
+  def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  @scala.inline
+  def getVpnGateway(args: GetVpnGatewayArgs, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  
   trait GetVpnGatewayArgs extends StObject {
     
     /**
       * The Autonomous System Number (ASN) for the Amazon side of the specific VPN Gateway to retrieve.
       */
-    val amazonSideAsn: js.UndefOr[String] = js.native
+    val amazonSideAsn: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of a VPC attached to the specific VPN Gateway to retrieve.
       */
-    val attachedVpcId: js.UndefOr[String] = js.native
+    val attachedVpcId: js.UndefOr[String] = js.undefined
     
     /**
       * The Availability Zone of the specific VPN Gateway to retrieve.
       */
-    val availabilityZone: js.UndefOr[String] = js.native
+    val availabilityZone: js.UndefOr[String] = js.undefined
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpnGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpnGatewayFilter]] = js.undefined
     
     /**
       * The ID of the specific VPN Gateway to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The state of the specific VPN Gateway to retrieve.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired VPN Gateway.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpnGatewayArgs {
     
@@ -120,24 +118,23 @@ object getVpnGatewayMod {
     }
   }
   
-  @js.native
   trait GetVpnGatewayResult extends StObject {
     
-    val amazonSideAsn: String = js.native
+    val amazonSideAsn: String
     
-    val arn: String = js.native
+    val arn: String
     
-    val attachedVpcId: String = js.native
+    val attachedVpcId: String
     
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
-    val state: String = js.native
+    val state: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVpnGatewayResult {
     

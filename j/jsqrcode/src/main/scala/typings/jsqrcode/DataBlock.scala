@@ -2,19 +2,17 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataBlock extends StObject {
   
-  val Codewords: js.Array[Double] = js.native
+  val Codewords: js.Array[Double]
   
-  val NumDataCodewords: Double = js.native
+  val NumDataCodewords: Double
   
-  var codewords: js.Array[Double] = js.native
+  var codewords: js.Array[Double]
   
-  var numDataCodewords: Double = js.native
+  var numDataCodewords: Double
 }
 object DataBlock {
   

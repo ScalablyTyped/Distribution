@@ -3,25 +3,23 @@ package typings.vegaLite.anon
 import typings.vegaTypings.axisMod.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From extends StObject {
   
-  var axes: js.UndefOr[js.Array[Axis]] = js.native
+  var axes: js.UndefOr[js.Array[Axis]] = js.undefined
   
-  var encode: js.UndefOr[Update] = js.native
+  var encode: js.UndefOr[Update] = js.undefined
   
-  var from: js.UndefOr[Data] = js.native
+  var from: js.UndefOr[Data] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var role: String = js.native
+  var role: String
   
-  var title: js.UndefOr[Dx | Encode | Font | FontStyle] = js.native
+  var title: js.UndefOr[Dx | Encode | Font | FontStyle] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object From {
   

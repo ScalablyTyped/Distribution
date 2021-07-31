@@ -3,11 +3,14 @@ package typings.mapboxGlLeaflet
 import typings.leaflet.mod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
+  
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("leaflet", "MapboxGL")
   @js.native
@@ -15,16 +18,14 @@ object mod {
     def this(options: MapboxGLOptions) = this()
   }
   
-  @JSImport("leaflet", "mapboxGL")
-  @js.native
-  def mapboxGL(options: MapboxGLOptions): MapboxGL_ = js.native
+  @scala.inline
+  def mapboxGL(options: MapboxGLOptions): MapboxGL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapboxGL")(options.asInstanceOf[js.Any]).asInstanceOf[MapboxGL_]
   
-  @js.native
   trait MapboxGLOptions extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var style: String = js.native
+    var style: String
   }
   object MapboxGLOptions {
     

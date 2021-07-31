@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Segment extends StObject {
   
   /** A dynamic segment definition in the request. */
-  var dynamicSegment: js.UndefOr[DynamicSegment] = js.native
+  var dynamicSegment: js.UndefOr[DynamicSegment] = js.undefined
   
   /** The segment ID of a built-in or custom segment, for example `gaid::-3`. */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
 }
 object Segment {
   

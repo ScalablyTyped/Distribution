@@ -6,25 +6,23 @@ import typings.storybookUi.sidebarTypesMod.SearchChildrenFn
 import typings.storybookUi.sidebarTypesMod.StoryRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearLastViewed extends StObject {
   
-  var children: SearchChildrenFn = js.native
+  var children: SearchChildrenFn
   
-  def clearLastViewed(): Unit = js.native
+  def clearLastViewed(): Unit
   
-  var dataset: CombinedDataset = js.native
+  var dataset: CombinedDataset
   
-  var enableShortcuts: js.UndefOr[Boolean] = js.native
+  var enableShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  def getLastViewed(): js.Array[StoryRef] = js.native
+  def getLastViewed(): js.Array[StoryRef]
   
-  var initialQuery: js.UndefOr[String] = js.native
+  var initialQuery: js.UndefOr[String] = js.undefined
   
-  var isLoading: js.UndefOr[Boolean] = js.native
+  var isLoading: js.UndefOr[Boolean] = js.undefined
 }
 object ClearLastViewed {
   

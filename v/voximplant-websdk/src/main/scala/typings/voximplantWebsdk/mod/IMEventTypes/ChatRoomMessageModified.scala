@@ -3,49 +3,49 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when chat room message modified
   */
-@js.native
-trait ChatRoomMessageModified extends VoxImplantIMEvent {
+trait ChatRoomMessageModified
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * New message content
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * User id
     */
-  var from: String = js.native
+  var from: String
   
   /**
     * Modified message id
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     * Private/public message flag
     */
-  var private_message: String = js.native
+  var private_message: String
   
   /**
     * Resource name
     */
-  var resource: String = js.native
+  var resource: String
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
   
   /**
     * Message timestamp
     */
-  var timestamp: String = js.native
+  var timestamp: String
 }
 object ChatRoomMessageModified {
   

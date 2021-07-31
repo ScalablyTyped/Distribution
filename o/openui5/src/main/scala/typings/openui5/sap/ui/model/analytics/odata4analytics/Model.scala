@@ -2,10 +2,8 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Model extends StObject {
     * @param sName Fully qualified name of query result entity set
     * @returns The query result object         with this name or null if it does not exist
     */
-  def findQueryResultByName(sName: String): QueryResult = js.native
+  def findQueryResultByName(sName: String): QueryResult
   
   /**
     * Get the names of all query results (entity sets) offered by the model
     * @returns List of all query result names
     */
-  def getAllQueryResultNames(): js.Array[String] = js.native
+  def getAllQueryResultNames(): js.Array[String]
   
   /**
     * Get all query results offered by the model
@@ -28,13 +26,13 @@ trait Model extends StObject {
     * names         of the JS object properties are given by the entity set names         representing the
     * query results.
     */
-  def getAllQueryResults(): js.Any = js.native
+  def getAllQueryResults(): js.Any
   
   /**
     * Get underlying OData model provided by SAP UI5
     * @returns The SAP UI5 representation of the model.
     */
-  def getODataModel(): js.Any = js.native
+  def getODataModel(): js.Any
 }
 object Model {
   
@@ -65,12 +63,9 @@ object Model {
     def setGetODataModel(value: () => js.Any): Self = StObject.set(x, "getODataModel", js.Any.fromFunction0(value))
   }
   
-  @js.native
   trait ReferenceByModel extends StObject
   
-  @js.native
   trait ReferenceByURI extends StObject
   
-  @js.native
   trait ReferenceWithWorkaround extends StObject
 }

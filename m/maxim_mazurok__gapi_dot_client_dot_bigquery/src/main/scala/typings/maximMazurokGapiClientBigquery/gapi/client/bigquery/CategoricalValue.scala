@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoricalValue extends StObject {
   
   /**
     * Counts of all categories for the categorical feature. If there are more than ten categories, we return top ten (by count) and return one more CategoryCount with category "_OTHER_"
     * and count as aggregate counts of remaining categories.
     */
-  var categoryCounts: js.UndefOr[js.Array[CategoryCount]] = js.native
+  var categoryCounts: js.UndefOr[js.Array[CategoryCount]] = js.undefined
 }
 object CategoricalValue {
   

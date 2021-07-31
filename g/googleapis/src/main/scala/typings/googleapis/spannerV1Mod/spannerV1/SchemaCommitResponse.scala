@@ -2,19 +2,17 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Commit.
   */
-@js.native
 trait SchemaCommitResponse extends StObject {
   
   /**
     * The Cloud Spanner timestamp at which the transaction committed.
     */
-  var commitTimestamp: js.UndefOr[String] = js.native
+  var commitTimestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaCommitResponse {
   

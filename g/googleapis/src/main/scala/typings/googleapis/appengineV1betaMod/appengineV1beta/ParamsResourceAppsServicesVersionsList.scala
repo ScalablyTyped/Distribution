@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsServicesVersionsList extends StandardParameters {
+trait ParamsResourceAppsServicesVersionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `parent`. Name of the parent Service resource. Example:
     * apps/myapp/services/default.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Maximum results to return per page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Part of `parent`. See documentation of `appsId`.
     */
-  var servicesId: js.UndefOr[String] = js.native
+  var servicesId: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the set of fields returned in the List response.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAppsServicesVersionsList {
   

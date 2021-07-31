@@ -2,25 +2,23 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawSourceMap extends StObject {
   
-  var file: String = js.native
+  var file: String
   
-  var mappings: String = js.native
+  var mappings: String
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
-  var sourceRoot: js.UndefOr[String] = js.native
+  var sourceRoot: js.UndefOr[String] = js.undefined
   
-  var sources: js.Array[String] = js.native
+  var sources: js.Array[String]
   
-  var sourcesContent: js.UndefOr[js.Array[String]] = js.native
+  var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: Double = js.native
+  var version: Double
 }
 object RawSourceMap {
   

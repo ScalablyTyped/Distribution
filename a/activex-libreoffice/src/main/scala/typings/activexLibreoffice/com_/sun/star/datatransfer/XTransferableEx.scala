@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.datatransfer.DataFlavor
   * @see com.sun.star.datatransfer.XTransferable
   */
-@js.native
-trait XTransferableEx extends XInterface {
+trait XTransferableEx
+  extends StObject
+     with XInterface {
   
   /**
     * @param requestedFlavors Sequence of {@link DataFlavor} of interest. Specify an empty sequence for interest in all data flavors with top-level MIME conte
     * @returns The list of the matching supported {@link DataFlavor} that were requested. For each requested top-level MIME content-type, all supported subtypes
     */
-  def queryTransferDataFlavors(requestedFlavors: SeqEquiv[DataFlavor]): SafeArray[DataFlavor] = js.native
+  def queryTransferDataFlavors(requestedFlavors: SeqEquiv[DataFlavor]): SafeArray[DataFlavor]
 }
 object XTransferableEx {
   

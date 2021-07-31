@@ -2,21 +2,19 @@ package typings.stripe.mod.invoices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomField extends StObject {
   
   /**
     * The name of the custom field.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the custom field.
     */
-  var value: String = js.native
+  var value: String
 }
 object ICustomField {
   

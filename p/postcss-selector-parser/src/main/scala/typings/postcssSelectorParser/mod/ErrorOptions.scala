@@ -2,18 +2,16 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* copied from postcss -- so we don't need to add a dependency */
-@js.native
 trait ErrorOptions extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var plugin: js.UndefOr[String] = js.native
+  var plugin: js.UndefOr[String] = js.undefined
   
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object ErrorOptions {
   

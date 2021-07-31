@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCenterAtParams extends Object {
+trait MeshCenterAtParams
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The origin at which to center.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
     */
-  var origin: js.UndefOr[Point] = js.native
+  var origin: js.UndefOr[Point] = js.undefined
 }
 object MeshCenterAtParams {
   

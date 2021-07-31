@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Achievements")
@@ -33,7 +32,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def increment(): GaxiosPromise[SchemaAchievementIncrementResponse] = js.native
   def increment(callback: BodyResponseCallback[SchemaAchievementIncrementResponse]): Unit = js.native
-  def increment(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementIncrementResponse] = js.native
+  def increment(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementIncrementResponse] = js.native
   def increment(params: ParamsResourceAchievementsIncrement): GaxiosPromise[SchemaAchievementIncrementResponse] = js.native
   def increment(
     params: ParamsResourceAchievementsIncrement,
@@ -70,7 +69,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlayerAchievementListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlayerAchievementListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerAchievementListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerAchievementListResponse] = js.native
   def list(params: ParamsResourceAchievementsList): GaxiosPromise[SchemaPlayerAchievementListResponse] = js.native
   def list(
     params: ParamsResourceAchievementsList,
@@ -103,7 +102,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def reveal(): GaxiosPromise[SchemaAchievementRevealResponse] = js.native
   def reveal(callback: BodyResponseCallback[SchemaAchievementRevealResponse]): Unit = js.native
-  def reveal(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementRevealResponse] = js.native
+  def reveal(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementRevealResponse] = js.native
   def reveal(params: ParamsResourceAchievementsReveal): GaxiosPromise[SchemaAchievementRevealResponse] = js.native
   def reveal(
     params: ParamsResourceAchievementsReveal,
@@ -139,7 +138,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def setStepsAtLeast(): GaxiosPromise[SchemaAchievementSetStepsAtLeastResponse] = js.native
   def setStepsAtLeast(callback: BodyResponseCallback[SchemaAchievementSetStepsAtLeastResponse]): Unit = js.native
-  def setStepsAtLeast(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementSetStepsAtLeastResponse] = js.native
+  def setStepsAtLeast(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementSetStepsAtLeastResponse] = js.native
   def setStepsAtLeast(params: ParamsResourceAchievementsSetstepsatleast): GaxiosPromise[SchemaAchievementSetStepsAtLeastResponse] = js.native
   def setStepsAtLeast(
     params: ParamsResourceAchievementsSetstepsatleast,
@@ -172,7 +171,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def unlock(): GaxiosPromise[SchemaAchievementUnlockResponse] = js.native
   def unlock(callback: BodyResponseCallback[SchemaAchievementUnlockResponse]): Unit = js.native
-  def unlock(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementUnlockResponse] = js.native
+  def unlock(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementUnlockResponse] = js.native
   def unlock(params: ParamsResourceAchievementsUnlock): GaxiosPromise[SchemaAchievementUnlockResponse] = js.native
   def unlock(
     params: ParamsResourceAchievementsUnlock,
@@ -206,7 +205,7 @@ class ResourceAchievements protected () extends StObject {
     */
   def updateMultiple(): GaxiosPromise[SchemaAchievementUpdateMultipleResponse] = js.native
   def updateMultiple(callback: BodyResponseCallback[SchemaAchievementUpdateMultipleResponse]): Unit = js.native
-  def updateMultiple(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementUpdateMultipleResponse] = js.native
+  def updateMultiple(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementUpdateMultipleResponse] = js.native
   def updateMultiple(params: ParamsResourceAchievementsUpdatemultiple): GaxiosPromise[SchemaAchievementUpdateMultipleResponse] = js.native
   def updateMultiple(
     params: ParamsResourceAchievementsUpdatemultiple,

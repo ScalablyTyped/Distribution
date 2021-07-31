@@ -3,18 +3,17 @@ package typings.msRestAzure.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenResponse
-  extends typings.adalNode.mod.TokenResponse {
+  extends StObject
+     with typings.adalNode.mod.TokenResponse {
   
   /**
     * @property {number} [notBefore] The time from which the access token becomes usable.
     * The date is represented as the number of seconds from 1970-01-01T0:0:0Z UTC until time of validity for the token.
     */
-  var notBefore: js.UndefOr[Double] = js.native
+  var notBefore: js.UndefOr[Double] = js.undefined
 }
 object TokenResponse {
   

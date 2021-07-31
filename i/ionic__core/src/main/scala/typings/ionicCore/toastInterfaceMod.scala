@@ -13,25 +13,23 @@ import typings.ionicCore.mod.Mode
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastInterfaceMod {
   
-  @js.native
   trait ToastButton extends StObject {
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.native
+    var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[cancel | String] = js.native
+    var role: js.UndefOr[cancel | String] = js.undefined
     
-    var side: js.UndefOr[start | end] = js.native
+    var side: js.UndefOr[start | end] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ToastButton {
     
@@ -85,36 +83,35 @@ object toastInterfaceMod {
     }
   }
   
-  @js.native
   trait ToastOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
+    var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.undefined
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var message: js.UndefOr[String | IonicSafeString] = js.native
+    var message: js.UndefOr[String | IonicSafeString] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var position: js.UndefOr[top | bottom | middle] = js.native
+    var position: js.UndefOr[top | bottom | middle] = js.undefined
     
-    var translucent: js.UndefOr[Boolean] = js.native
+    var translucent: js.UndefOr[Boolean] = js.undefined
   }
   object ToastOptions {
     

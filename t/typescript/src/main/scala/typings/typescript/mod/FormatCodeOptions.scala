@@ -2,43 +2,43 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormatCodeOptions extends EditorOptions {
+trait FormatCodeOptions
+  extends StObject
+     with EditorOptions {
   
-  var InsertSpaceAfterCommaDelimiter: Boolean = js.native
+  var InsertSpaceAfterCommaDelimiter: Boolean
   
-  var InsertSpaceAfterConstructor: js.UndefOr[Boolean] = js.native
+  var InsertSpaceAfterConstructor: js.UndefOr[Boolean] = js.undefined
   
-  var InsertSpaceAfterFunctionKeywordForAnonymousFunctions: Boolean = js.native
+  var InsertSpaceAfterFunctionKeywordForAnonymousFunctions: Boolean
   
-  var InsertSpaceAfterKeywordsInControlFlowStatements: Boolean = js.native
+  var InsertSpaceAfterKeywordsInControlFlowStatements: Boolean
   
-  var InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.undefined
   
-  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.undefined
   
-  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: Boolean = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: Boolean
   
-  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Boolean = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Boolean
   
-  var InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: Boolean = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: Boolean
   
-  var InsertSpaceAfterSemicolonInForStatements: Boolean = js.native
+  var InsertSpaceAfterSemicolonInForStatements: Boolean
   
-  var InsertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.native
+  var InsertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.undefined
   
-  var InsertSpaceBeforeAndAfterBinaryOperators: Boolean = js.native
+  var InsertSpaceBeforeAndAfterBinaryOperators: Boolean
   
-  var InsertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.native
+  var InsertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.undefined
   
-  var PlaceOpenBraceOnNewLineForControlBlocks: Boolean = js.native
+  var PlaceOpenBraceOnNewLineForControlBlocks: Boolean
   
-  var PlaceOpenBraceOnNewLineForFunctions: Boolean = js.native
+  var PlaceOpenBraceOnNewLineForFunctions: Boolean
   
-  var insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.native
+  var insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.undefined
 }
 object FormatCodeOptions {
   

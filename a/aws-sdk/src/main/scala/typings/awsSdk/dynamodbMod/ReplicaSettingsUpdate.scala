@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaSettingsUpdate extends StObject {
   
   /**
     * The Region of the replica to be added.
     */
-  var RegionName: typings.awsSdk.dynamodbMod.RegionName = js.native
+  var RegionName: typings.awsSdk.dynamodbMod.RegionName
   
   /**
     * Represents the settings of a global secondary index for a global table that will be modified.
     */
-  var ReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[ReplicaGlobalSecondaryIndexSettingsUpdateList] = js.native
+  var ReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[ReplicaGlobalSecondaryIndexSettingsUpdateList] = js.undefined
   
   /**
     * Auto scaling settings for managing a global table replica's read capacity units.
     */
-  var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+  var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
   
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. For more information, see Specifying Read and Write Requirements in the Amazon DynamoDB Developer Guide. 
     */
-  var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 object ReplicaSettingsUpdate {
   

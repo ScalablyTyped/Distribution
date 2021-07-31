@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The leading sentences in a section or subsection of the input document. */
-@js.native
 trait LeadingSentence extends StObject {
   
   /** An array of `location` objects that lists the locations of detected leading sentences. */
-  var element_locations: js.UndefOr[js.Array[ElementLocations]] = js.native
+  var element_locations: js.UndefOr[js.Array[ElementLocations]] = js.undefined
   
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** The text of the leading sentence. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object LeadingSentence {
   

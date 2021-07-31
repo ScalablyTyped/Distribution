@@ -6,29 +6,29 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRegressionCurveContainer extends XInterface {
+trait XRegressionCurveContainer
+  extends StObject
+     with XInterface {
   
   /** retrieve all regression curves */
-  var RegressionCurves: SafeArray[XRegressionCurve] = js.native
+  var RegressionCurves: SafeArray[XRegressionCurve]
   
   /**
     * add an regression curve to the container
     * @throws IllegalArgumentException If the given regression curve is already contained in the container.
     */
-  def addRegressionCurve(aRegressionCurve: XRegressionCurve): Unit = js.native
+  def addRegressionCurve(aRegressionCurve: XRegressionCurve): Unit
   
   /** retrieve all regression curves */
-  def getRegressionCurves(): SafeArray[XRegressionCurve] = js.native
+  def getRegressionCurves(): SafeArray[XRegressionCurve]
   
   /** removes one regression curve from the container. */
-  def removeRegressionCurve(aRegressionCurve: XRegressionCurve): Unit = js.native
+  def removeRegressionCurve(aRegressionCurve: XRegressionCurve): Unit
   
   /** set all regression curves */
-  def setRegressionCurves(aRegressionCurves: SeqEquiv[XRegressionCurve]): Unit = js.native
+  def setRegressionCurves(aRegressionCurves: SeqEquiv[XRegressionCurve]): Unit
 }
 object XRegressionCurveContainer {
   

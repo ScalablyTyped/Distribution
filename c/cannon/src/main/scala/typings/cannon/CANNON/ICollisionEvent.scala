@@ -2,13 +2,13 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICollisionEvent extends IBodyEvent {
+trait ICollisionEvent
+  extends StObject
+     with IBodyEvent {
   
-  var contact: js.Any = js.native
+  var contact: js.Any
 }
 object ICollisionEvent {
   

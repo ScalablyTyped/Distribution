@@ -4,77 +4,75 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnProps extends StObject {
   
   /** Optional aria-label value to set on the column header */
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
   /**
     * Callback responsible for returning a cell's data, given its :dataKey
     * ({ columnData: any, dataKey: string, rowData: any }): any
     */
-  var cellDataGetter: js.UndefOr[TableCellDataGetter] = js.native
+  var cellDataGetter: js.UndefOr[TableCellDataGetter] = js.undefined
   
   /**
     * Callback responsible for rendering a cell's contents.
     * ({ cellData: any, columnData: any, dataKey: string, rowData: any, rowIndex: number }): node
     */
-  var cellRenderer: js.UndefOr[TableCellRenderer] = js.native
+  var cellRenderer: js.UndefOr[TableCellRenderer] = js.undefined
   
   /** Optional CSS class to apply to cell */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** Optional additional data passed to this column's :cellDataGetter */
-  var columnData: js.UndefOr[js.Any] = js.native
+  var columnData: js.UndefOr[js.Any] = js.undefined
   
   /** Uniquely identifies the row-data attribute correspnding to this cell */
-  var dataKey: js.Any = js.native
+  var dataKey: js.Any
   
   /** Default sort order when clicked for the first time. Valid options include "ASC" and "DESC". Defaults to "ASC" */
-  var defaultSortDirection: js.UndefOr[SortDirectionType] = js.native
+  var defaultSortDirection: js.UndefOr[SortDirectionType] = js.undefined
   
   /** If sort is enabled for the table at large, disable it for this column */
-  var disableSort: js.UndefOr[Boolean] = js.native
+  var disableSort: js.UndefOr[Boolean] = js.undefined
   
   /** Flex grow style; defaults to 0 */
-  var flexGrow: js.UndefOr[Double] = js.native
+  var flexGrow: js.UndefOr[Double] = js.undefined
   
   /** Flex shrink style; defaults to 1 */
-  var flexShrink: js.UndefOr[Double] = js.native
+  var flexShrink: js.UndefOr[Double] = js.undefined
   
   /** Optional CSS class to apply to this column's header */
-  var headerClassName: js.UndefOr[String] = js.native
+  var headerClassName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional callback responsible for rendering a column header contents.
     * ({ columnData: object, dataKey: string, disableSort: boolean, label: string, sortBy: string, sortDirection: string }): PropTypes.node
     */
-  var headerRenderer: js.UndefOr[TableHeaderRenderer] = js.native
+  var headerRenderer: js.UndefOr[TableHeaderRenderer] = js.undefined
   
   /** Optional inline style to apply to this column's header */
-  var headerStyle: js.UndefOr[CSSProperties] = js.native
+  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /** Optional id to set on the column header; used for aria-describedby */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Header label for this column */
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
   /** Maximum width of column; this property will only be used if :flexGrow is > 0. */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** Minimum width of column. */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /** Optional inline style to apply to cell */
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   /** Flex basis (width) for this column; This value can grow or shrink based on :flexGrow and :flexShrink properties. */
-  var width: Double = js.native
+  var width: Double
 }
 object ColumnProps {
   

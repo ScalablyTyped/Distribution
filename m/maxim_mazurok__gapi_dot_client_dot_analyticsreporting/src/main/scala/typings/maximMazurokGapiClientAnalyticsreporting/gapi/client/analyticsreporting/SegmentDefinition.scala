@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDefinition extends StObject {
   
   /** A segment is defined by a set of segment filters which are combined together with a logical `AND` operation. */
-  var segmentFilters: js.UndefOr[js.Array[SegmentFilter]] = js.native
+  var segmentFilters: js.UndefOr[js.Array[SegmentFilter]] = js.undefined
 }
 object SegmentDefinition {
   

@@ -2,17 +2,15 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConductCode extends StObject {
   
-  var getAllCodesOfConduct: `673` = js.native
+  var getAllCodesOfConduct: `673`
   
-  var getConductCode: `674` = js.native
+  var getConductCode: `674`
   
-  var getForRepo: `675` = js.native
+  var getForRepo: `675`
 }
 object GetConductCode {
   

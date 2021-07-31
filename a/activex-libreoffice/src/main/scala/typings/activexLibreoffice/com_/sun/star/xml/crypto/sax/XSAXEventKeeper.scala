@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * There are two kinds of element mark, one is element collector, which is used to collect a particular element from the SAX event stream; the other is
   * blocker, which is used to block the SAX event stream.
   */
-@js.native
-trait XSAXEventKeeper extends XInterface {
+trait XSAXEventKeeper
+  extends StObject
+     with XInterface {
   
   /**
     * Gets the element which current blocking happens.
@@ -26,7 +26,7 @@ trait XSAXEventKeeper extends XInterface {
     * This element is the working element of the first blocker in tree order.
     * @returns the current blocking element
     */
-  val CurrentBlockingNode: XXMLElementWrapper = js.native
+  val CurrentBlockingNode: XXMLElementWrapper
   
   /**
     * Adds a new blocker on the next element in the SAX event stream.
@@ -34,13 +34,13 @@ trait XSAXEventKeeper extends XInterface {
     * No SAX event starting from the next element will be forwarded until this blocker is removed.
     * @returns the keeper id of the new blocker
     */
-  def addBlocker(): Double = js.native
+  def addBlocker(): Double
   
   /**
     * Adds a new element collector on the next element in the SAX event stream.
     * @returns the keeper id of the new element collector
     */
-  def addElementCollector(): Double = js.native
+  def addElementCollector(): Double
   
   /**
     * Gets the element which current blocking happens.
@@ -48,37 +48,37 @@ trait XSAXEventKeeper extends XInterface {
     * This element is the working element of the first blocker in tree order.
     * @returns the current blocking element
     */
-  def getCurrentBlockingNode(): XXMLElementWrapper = js.native
+  def getCurrentBlockingNode(): XXMLElementWrapper
   
   /**
     * Gets the element of an element mark.
     * @param id the keeper id of the element mark, it can be a element collector or a blocker
     */
-  def getElement(id: Double): XXMLElementWrapper = js.native
+  def getElement(id: Double): XXMLElementWrapper
   
   /**
     * Checks whether the SAX event stream is blocking.
     * @returns `true` if blocking, `false` otherwise
     */
-  def isBlocking(): Boolean = js.native
+  def isBlocking(): Boolean
   
   /**
     * Prints information about all buffered elements.
     * @returns a tree-style string including all buffer information
     */
-  def printBufferNodeTree(): String = js.native
+  def printBufferNodeTree(): String
   
   /**
     * Removes a blocker
     * @param id the keeper id of the blocker to be removed
     */
-  def removeBlocker(id: Double): Unit = js.native
+  def removeBlocker(id: Double): Unit
   
   /**
     * Removes an element collector.
     * @param id the keeper id of the element collector to be removed
     */
-  def removeElementCollector(id: Double): Unit = js.native
+  def removeElementCollector(id: Double): Unit
   
   /**
     * Sets the element of an element mark.
@@ -87,7 +87,7 @@ trait XSAXEventKeeper extends XInterface {
     * @param id the keeper id of the element mark to be set
     * @param aElement the new element for this element mark.
     */
-  def setElement(id: Double, aElement: XXMLElementWrapper): Unit = js.native
+  def setElement(id: Double, aElement: XXMLElementWrapper): Unit
   
   /**
     * Sets the next document handler in the SAX chain.
@@ -96,7 +96,7 @@ trait XSAXEventKeeper extends XInterface {
     * @param nextHandler the next handler in the SAX chain
     * @returns the old next handler
     */
-  def setNextHandler(nextHandler: XDocumentHandler): XDocumentHandler = js.native
+  def setNextHandler(nextHandler: XDocumentHandler): XDocumentHandler
 }
 object XSAXEventKeeper {
   

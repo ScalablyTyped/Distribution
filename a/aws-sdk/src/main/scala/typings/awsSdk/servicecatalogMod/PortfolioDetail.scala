@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortfolioDetail extends StObject {
   
   /**
     * The ARN assigned to the portfolio.
     */
-  var ARN: js.UndefOr[ResourceARN] = js.native
+  var ARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[CreationTime] = js.native
+  var CreatedTime: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * The description of the portfolio.
     */
-  var Description: js.UndefOr[PortfolioDescription] = js.native
+  var Description: js.UndefOr[PortfolioDescription] = js.undefined
   
   /**
     * The name to use for display purposes.
     */
-  var DisplayName: js.UndefOr[PortfolioDisplayName] = js.native
+  var DisplayName: js.UndefOr[PortfolioDisplayName] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * The name of the portfolio provider.
     */
-  var ProviderName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProviderName] = js.native
+  var ProviderName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProviderName] = js.undefined
 }
 object PortfolioDetail {
   

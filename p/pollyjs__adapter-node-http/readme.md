@@ -10,9 +10,9 @@ Node HTTP adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-node-http |
 | Keywords           | polly, pollyjs, record, replay, http, adapter |
-| # releases         | 27 |
+| # releases         | 26 |
 | # dependents       | 9 |
-| # downloads        | 483543 |
+| # downloads        | 609370 |
 | # stars            | 0 |
 
 ## Links

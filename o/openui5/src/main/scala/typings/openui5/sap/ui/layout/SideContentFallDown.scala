@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait SideContentFallDown extends StObject
 object SideContentFallDown extends StObject {
   
   @js.native
-  sealed trait BelowL extends SideContentFallDown
+  sealed trait BelowL
+    extends StObject
+       with SideContentFallDown
   
   @js.native
-  sealed trait BelowM extends SideContentFallDown
+  sealed trait BelowM
+    extends StObject
+       with SideContentFallDown
   
   @js.native
-  sealed trait BelowXL extends SideContentFallDown
+  sealed trait BelowXL
+    extends StObject
+       with SideContentFallDown
   
   @js.native
-  sealed trait OnMinimumWidth extends SideContentFallDown
+  sealed trait OnMinimumWidth
+    extends StObject
+       with SideContentFallDown
 }

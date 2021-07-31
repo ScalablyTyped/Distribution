@@ -5,7 +5,6 @@ import typings.rest.mod.Client
 import typings.rest.mod.Interceptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hateoasMod extends Shortcut {
@@ -14,12 +13,11 @@ object hateoasMod extends Shortcut {
   @js.native
   val ^ : Interceptor[Config] = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var client: js.UndefOr[Client] = js.native
+    var client: js.UndefOr[Client] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object Config {
     

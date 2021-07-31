@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Campaigncreativeassociations")
@@ -34,7 +33,7 @@ class ResourceCampaigncreativeassociations protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(callback: BodyResponseCallback[SchemaCampaignCreativeAssociation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(params: ParamsResourceCampaigncreativeassociationsInsert): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(
     params: ParamsResourceCampaigncreativeassociationsInsert,
@@ -71,7 +70,7 @@ class ResourceCampaigncreativeassociations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCampaignCreativeAssociationsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(params: ParamsResourceCampaigncreativeassociationsList): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(
     params: ParamsResourceCampaigncreativeassociationsList,

@@ -2,42 +2,40 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in weixin-app.wx.Scope ]: boolean} */
-@js.native
 trait keyinScopeboolean extends StObject {
   
   @JSName("scope.address")
-  var scopeDotaddress: Boolean = js.native
+  var scopeDotaddress: Boolean
   
   @JSName("scope.camera")
-  var scopeDotcamera: Boolean = js.native
+  var scopeDotcamera: Boolean
   
   @JSName("scope.invoice")
-  var scopeDotinvoice: Boolean = js.native
+  var scopeDotinvoice: Boolean
   
   @JSName("scope.invoiceTitle")
-  var scopeDotinvoiceTitle: Boolean = js.native
+  var scopeDotinvoiceTitle: Boolean
   
   @JSName("scope.record")
-  var scopeDotrecord: Boolean = js.native
+  var scopeDotrecord: Boolean
   
   @JSName("scope.userInfo")
-  var scopeDotuserInfo: Boolean = js.native
+  var scopeDotuserInfo: Boolean
   
   @JSName("scope.userLocation")
-  var scopeDotuserLocation: Boolean = js.native
+  var scopeDotuserLocation: Boolean
   
   @JSName("scope.userLocationBackground")
-  var scopeDotuserLocationBackground: Boolean = js.native
+  var scopeDotuserLocationBackground: Boolean
   
   @JSName("scope.werun")
-  var scopeDotwerun: Boolean = js.native
+  var scopeDotwerun: Boolean
   
   @JSName("scope.writePhotosAlbum")
-  var scopeDotwritePhotosAlbum: Boolean = js.native
+  var scopeDotwritePhotosAlbum: Boolean
 }
 object keyinScopeboolean {
   

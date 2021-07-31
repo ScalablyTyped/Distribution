@@ -16,10 +16,13 @@ import typings.std.PropertyDescriptor
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("inversify", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("inversify", "AsyncContainerModule")
   @js.native
@@ -44,13 +47,16 @@ object mod {
   }
   object Container {
     
-    /* static member */
-    @JSImport("inversify", "Container.merge")
+    @JSImport("inversify", "Container")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def merge(
       container1: typings.inversify.interfacesMod.interfaces.Container,
       container2: typings.inversify.interfacesMod.interfaces.Container
-    ): typings.inversify.interfacesMod.interfaces.Container = js.native
+    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
   }
   
   @JSImport("inversify", "ContainerModule")
@@ -123,109 +129,90 @@ object mod {
   @js.native
   val TargetTypeEnum: typings.inversify.interfacesMod.interfaces.TargetTypeEnum = js.native
   
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any): Unit = js.native
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: String): Unit = js.native
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: Double): Unit = js.native
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: ClassDecorator, target: js.Any): Unit = js.native
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: String): Unit = js.native
-  @JSImport("inversify", "decorate")
-  @js.native
-  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: Double): Unit = js.native
+  @scala.inline
+  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decorate(decorator: ClassDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("inversify", "getServiceIdentifierAsString")
-  @js.native
-  def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[_]): String = js.native
+  @scala.inline
+  def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("inversify", "id")
-  @js.native
-  def id(): Double = js.native
+  @scala.inline
+  def id(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Double]
   
-  @JSImport("inversify", "inject")
-  @js.native
-  def inject(serviceIdentifier: ServiceIdentifierOrFunc): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
+  @scala.inline
+  def inject(serviceIdentifier: ServiceIdentifierOrFunc): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
-  @JSImport("inversify", "injectable")
-  @js.native
-  def injectable(): js.Function1[/* target */ js.Any, _] = js.native
+  @scala.inline
+  def injectable(): js.Function1[/* target */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectable")().asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
   
-  @JSImport("inversify", "multiBindToService")
-  @js.native
+  @scala.inline
   def multiBindToService(container: typings.inversify.interfacesMod.interfaces.Container): js.Function1[
-    /* service */ String | js.Symbol | Newable[_] | Abstract[_], 
-    js.Function1[/* repeated */ String | js.Symbol | Newable[_] | Abstract[_], Unit]
-  ] = js.native
+    /* service */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function1[/* repeated */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], Unit]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiBindToService")(container.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* service */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function1[/* repeated */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], Unit]
+  ]]
   
-  @JSImport("inversify", "multiInject")
-  @js.native
-  def multiInject(serviceIdentifier: ServiceIdentifier[_]): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
+  @scala.inline
+  def multiInject(serviceIdentifier: ServiceIdentifier[js.Any]): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiInject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
-  @JSImport("inversify", "named")
-  @js.native
-  def named(name: String): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
-  @JSImport("inversify", "named")
-  @js.native
-  def named(name: js.Symbol): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
-  @JSImport("inversify", "named")
-  @js.native
-  def named(name: Double): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
+  @scala.inline
+  def named(name: String): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  @scala.inline
+  def named(name: js.Symbol): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  @scala.inline
+  def named(name: Double): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
-  @JSImport("inversify", "namedConstraint")
-  @js.native
-  def namedConstraint(value: js.Any): ConstraintFunction = js.native
+  @scala.inline
+  def namedConstraint(value: js.Any): ConstraintFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("namedConstraint")(value.asInstanceOf[js.Any]).asInstanceOf[ConstraintFunction]
   
-  @JSImport("inversify", "optional")
-  @js.native
-  def optional(): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
+  @scala.inline
+  def optional(): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")().asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
-  @JSImport("inversify", "postConstruct")
-  @js.native
+  @scala.inline
   def postConstruct(): js.Function3[
     /* target */ js.Any, 
     /* propertyKey */ String, 
     /* descriptor */ PropertyDescriptor, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("postConstruct")().asInstanceOf[js.Function3[
+    /* target */ js.Any, 
+    /* propertyKey */ String, 
+    /* descriptor */ PropertyDescriptor, 
+    Unit
+  ]]
   
-  @JSImport("inversify", "tagged")
-  @js.native
-  def tagged(metadataKey: String, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
-  @JSImport("inversify", "tagged")
-  @js.native
-  def tagged(metadataKey: js.Symbol, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
-  @JSImport("inversify", "tagged")
-  @js.native
-  def tagged(metadataKey: Double, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
+  @scala.inline
+  def tagged(metadataKey: String, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tagged")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  @scala.inline
+  def tagged(metadataKey: js.Symbol, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tagged")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  @scala.inline
+  def tagged(metadataKey: Double, metadataValue: js.Any): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tagged")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
-  @JSImport("inversify", "taggedConstraint")
-  @js.native
-  def taggedConstraint(key: PropertyKey): js.Function1[/* value */ js.Any, ConstraintFunction] = js.native
+  @scala.inline
+  def taggedConstraint(key: PropertyKey): js.Function1[/* value */ js.Any, ConstraintFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("taggedConstraint")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ js.Any, ConstraintFunction]]
   
-  @JSImport("inversify", "targetName")
-  @js.native
-  def targetName(name: String): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit] = js.native
+  @scala.inline
+  def targetName(name: String): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("targetName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit]]
   
-  @JSImport("inversify", "traverseAncerstors")
-  @js.native
-  def traverseAncerstors(request: Request, constraint: ConstraintFunction): Boolean = js.native
+  @scala.inline
+  def traverseAncerstors(request: Request, constraint: ConstraintFunction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseAncerstors")(request.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("inversify", "typeConstraint")
-  @js.native
-  def typeConstraint(`type`: String): js.Function1[/* request */ Request | Null, Boolean] = js.native
-  @JSImport("inversify", "typeConstraint")
-  @js.native
-  def typeConstraint(`type`: js.Function): js.Function1[/* request */ Request | Null, Boolean] = js.native
+  @scala.inline
+  def typeConstraint(`type`: String): js.Function1[/* request */ Request | Null, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeConstraint")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ Request | Null, Boolean]]
+  @scala.inline
+  def typeConstraint(`type`: js.Function): js.Function1[/* request */ Request | Null, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeConstraint")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ Request | Null, Boolean]]
   
-  @JSImport("inversify", "unmanaged")
-  @js.native
-  def unmanaged(): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit] = js.native
+  @scala.inline
+  def unmanaged(): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmanaged")().asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ Double, Unit]]
 }

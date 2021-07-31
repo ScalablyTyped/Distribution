@@ -4,7 +4,6 @@ import typings.firebaseFirestoreTypes.anon.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "DocumentReference")
@@ -28,16 +27,16 @@ class DocumentReference[T] protected () extends StObject {
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, observer: Error[T]): js.Function0[Unit] = js.native
@@ -45,18 +44,18 @@ class DocumentReference[T] protected () extends StObject {
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    options: SnapshotListenOptions,
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   

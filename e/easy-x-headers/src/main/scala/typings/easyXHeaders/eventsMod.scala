@@ -2,7 +2,6 @@ package typings.easyXHeaders
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
@@ -10,12 +9,16 @@ object eventsMod {
   @JSImport("events", "EventEmitter")
   @js.native
   class EventEmitter ()
-    extends typings.easyXHeaders.NodeJS.EventEmitter
+    extends StObject
+       with typings.easyXHeaders.NodeJS.EventEmitter
   /* static members */
   object EventEmitter {
     
-    @JSImport("events", "EventEmitter.listenerCount")
+    @JSImport("events", "EventEmitter")
     @js.native
-    def listenerCount(emitter: EventEmitter, event: String): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def listenerCount(emitter: EventEmitter, event: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

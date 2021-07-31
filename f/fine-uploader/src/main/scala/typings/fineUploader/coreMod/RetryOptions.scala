@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryOptions extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait RetryOptions extends StObject {
     *
     * @default `5`
     */
-  var autoAttemptDelay: js.UndefOr[Double] = js.native
+  var autoAttemptDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable or disable retrying uploads that receive any error response
     *
     * @default `false`
     */
-  var enableAuto: js.UndefOr[Boolean] = js.native
+  var enableAuto: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of times to attempt to retry a failed upload
     *
     * @default `3`
     */
-  var maxAutoAttempts: js.UndefOr[Double] = js.native
+  var maxAutoAttempts: js.UndefOr[Double] = js.undefined
   
   /**
     * This property will be looked for in the server response and, if found and `true`, will indicate that no more retries should be attempted for this item
     *
     * @default `'preventRetry'`
     */
-  var preventRetryResponseProperty: js.UndefOr[String] = js.native
+  var preventRetryResponseProperty: js.UndefOr[String] = js.undefined
 }
 object RetryOptions {
   

@@ -2,39 +2,39 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChangeLogItemQuery extends ClientValueObject {
+trait ChangeLogItemQuery
+  extends StObject
+     with ClientValueObject {
   
-  def get_changeToken(): String = js.native
+  def get_changeToken(): String
   
-  def get_contains(): String = js.native
+  def get_contains(): String
   
-  def get_query(): String = js.native
+  def get_query(): String
   
-  def get_queryOptions(): String = js.native
+  def get_queryOptions(): String
   
-  def get_rowLimit(): String = js.native
+  def get_rowLimit(): String
   
-  def get_viewFields(): String = js.native
+  def get_viewFields(): String
   
-  def get_viewName(): String = js.native
+  def get_viewName(): String
   
-  def set_changeToken(value: String): Unit = js.native
+  def set_changeToken(value: String): Unit
   
-  def set_contains(value: String): Unit = js.native
+  def set_contains(value: String): Unit
   
-  def set_query(value: String): Unit = js.native
+  def set_query(value: String): Unit
   
-  def set_queryOptions(value: String): Unit = js.native
+  def set_queryOptions(value: String): Unit
   
-  def set_rowLimit(value: String): Unit = js.native
+  def set_rowLimit(value: String): Unit
   
-  def set_viewFields(value: String): Unit = js.native
+  def set_viewFields(value: String): Unit
   
-  def set_viewName(value: String): Unit = js.native
+  def set_viewName(value: String): Unit
 }
 object ChangeLogItemQuery {
   

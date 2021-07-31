@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CdiInputSpecification extends StObject {
   
   /**
     * Maximum CDI input resolution
     */
-  var Resolution: js.UndefOr[CdiInputResolution] = js.native
+  var Resolution: js.UndefOr[CdiInputResolution] = js.undefined
 }
 object CdiInputSpecification {
   

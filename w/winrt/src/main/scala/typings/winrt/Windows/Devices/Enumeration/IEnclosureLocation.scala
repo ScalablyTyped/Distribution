@@ -2,17 +2,15 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnclosureLocation extends StObject {
   
-  var inDock: Boolean = js.native
+  var inDock: Boolean
   
-  var inLid: Boolean = js.native
+  var inLid: Boolean
   
-  var panel: Panel = js.native
+  var panel: Panel
 }
 object IEnclosureLocation {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolchainSource extends StObject {
   
   /**
     * The Amazon S3 bucket where the toolchain template file provided with the project request is stored.
     */
-  var s3: S3Location = js.native
+  var s3: S3Location
 }
 object ToolchainSource {
   

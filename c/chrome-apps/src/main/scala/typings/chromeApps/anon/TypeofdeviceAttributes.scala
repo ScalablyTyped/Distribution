@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdeviceAttributes extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TypeofdeviceAttributes extends StObject {
     * If the current user is not affiliated or no Annotated Location has been set by the administrator, returns an empty string.
     * @param callback Called with the Annotated Location of the device.
     */
-  def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
+  def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit
   
   /**
     * @since Chrome 66.
@@ -24,7 +22,7 @@ trait TypeofdeviceAttributes extends StObject {
     * If the current user is not affiliated or no Asset Id has been set by the administrator, returns an empty string.
     * @param callback Called with the Asset ID of the device.
     */
-  def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
+  def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit
   
   /**
     * @since Chrome 66.
@@ -36,7 +34,7 @@ trait TypeofdeviceAttributes extends StObject {
     * If the current user is not affiliated, returns an empty string.
     * @param callback Called with the serial number of the device.
     */
-  def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
+  def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit
   
   /**
     * @description
@@ -46,7 +44,7 @@ trait TypeofdeviceAttributes extends StObject {
     * If the current user is not affiliated, returns an empty string.
     * @param callback Called with the device identifier of the directory API when received.
     */
-  def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
+  def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit
 }
 object TypeofdeviceAttributes {
   

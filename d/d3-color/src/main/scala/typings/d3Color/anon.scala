@@ -2,21 +2,19 @@ package typings.d3Color
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
-    var l: js.UndefOr[Double] = js.native
+    var l: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object A {
     
@@ -55,16 +53,15 @@ object anon {
     }
   }
   
-  @js.native
   trait B extends StObject {
     
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
-    var g: js.UndefOr[Double] = js.native
+    var g: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
   }
   object B {
     
@@ -103,16 +100,15 @@ object anon {
     }
   }
   
-  @js.native
   trait C extends StObject {
     
-    var c: js.UndefOr[Double] = js.native
+    var c: js.UndefOr[Double] = js.undefined
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var l: js.UndefOr[Double] = js.native
+    var l: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object C {
     
@@ -151,16 +147,15 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var l: js.UndefOr[Double] = js.native
+    var l: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var s: js.UndefOr[Double] = js.native
+    var s: js.UndefOr[Double] = js.undefined
   }
   object H {
     

@@ -3,10 +3,8 @@ package typings.twineSugarcube.anon
 import typings.twineSugarcube.audioMod.AudioList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
   /**
@@ -86,33 +84,33 @@ trait Delete extends StObject {
     *         }
     * );
     */
-  def add(listId: String, sources: (String | Id)*): Unit = js.native
+  def add(listId: String, sources: (String | Id)*): Unit
   
   /**
     * Deletes all playlists.
     * @since 2.28.0
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Deletes the playlist with the given list ID
     * @param listId The ID of the playlist.
     * @since 2.28.0
     */
-  def delete(listId: String): Unit = js.native
+  def delete(listId: String): Unit
   
   /**
     * Returns the AudioList instance with the given list ID, or null on failure.
     * @param listId The ID of the playlist.
     * @returns AudioList instance with the given list ID, or null on failure.
     */
-  def get(listId: String): AudioList | Null = js.native
+  def get(listId: String): AudioList | Null
   
   /**
     * Returns whether a playlist with the given list ID exists.
     * @param listId The ID of the playlist.
     */
-  def has(listId: String): Boolean = js.native
+  def has(listId: String): Boolean
 }
 object Delete {
   

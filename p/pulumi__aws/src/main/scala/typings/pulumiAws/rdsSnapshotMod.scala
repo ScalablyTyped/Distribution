@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsSnapshotMod {
@@ -123,6 +122,10 @@ object rdsSnapshotMod {
   /* static members */
   object Snapshot {
     
+    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Snapshot resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -132,45 +135,39 @@ object rdsSnapshotMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Snapshot = js.native
-    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Snapshot = js.native
-    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotState): Snapshot = js.native
-    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotState, opts: CustomResourceOptions): Snapshot = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotState): Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotState, opts: CustomResourceOptions): Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snapshot]
     
     /**
       * Returns true if the given object is an instance of Snapshot.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/snapshot", "Snapshot.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/snapshot.Snapshot */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/snapshot.Snapshot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/snapshot.Snapshot */ Boolean]
   }
   
-  @js.native
   trait SnapshotArgs extends StObject {
     
     /**
       * The DB Instance Identifier from which to take the snapshot.
       */
-    val dbInstanceIdentifier: Input[String] = js.native
+    val dbInstanceIdentifier: Input[String]
     
     /**
       * The Identifier for the snapshot.
       */
-    val dbSnapshotIdentifier: Input[String] = js.native
+    val dbSnapshotIdentifier: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SnapshotArgs {
     
@@ -197,102 +194,101 @@ object rdsSnapshotMod {
     }
   }
   
-  @js.native
   trait SnapshotState extends StObject {
     
     /**
       * Specifies the allocated storage size in gigabytes (GB).
       */
-    val allocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DB Instance Identifier from which to take the snapshot.
       */
-    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the DB snapshot.
       */
-    val dbSnapshotArn: js.UndefOr[Input[String]] = js.native
+    val dbSnapshotArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Identifier for the snapshot.
       */
-    val dbSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the DB snapshot is encrypted.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the name of the database engine.
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the version of the database engine.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
       */
-    val iops: js.UndefOr[Input[Double]] = js.native
+    val iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * License model information for the restored DB instance.
       */
-    val licenseModel: js.UndefOr[Input[String]] = js.native
+    val licenseModel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provides the option group name for the DB snapshot.
       */
-    val optionGroupName: js.UndefOr[Input[String]] = js.native
+    val optionGroupName: js.UndefOr[Input[String]] = js.undefined
     
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
-    val snapshotType: js.UndefOr[Input[String]] = js.native
+    val snapshotType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
       */
-    val sourceDbSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val sourceDbSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The region that the DB snapshot was created in or copied from.
       */
-    val sourceRegion: js.UndefOr[Input[String]] = js.native
+    val sourceRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the status of this DB snapshot.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the storage type associated with DB snapshot.
       */
-    val storageType: js.UndefOr[Input[String]] = js.native
+    val storageType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the storage type associated with DB snapshot.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object SnapshotState {
     

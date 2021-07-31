@@ -2,19 +2,17 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdeviceAttributes extends StObject {
   
-  def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
+  def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit
   
-  def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
+  def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit
   
-  def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
+  def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit
   
-  def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
+  def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit
 }
 object TypeofdeviceAttributes {
   

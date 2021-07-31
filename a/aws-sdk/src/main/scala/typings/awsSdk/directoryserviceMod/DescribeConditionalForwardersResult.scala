@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConditionalForwardersResult extends StObject {
   
   /**
     * The list of conditional forwarders that have been created.
     */
-  var ConditionalForwarders: js.UndefOr[typings.awsSdk.directoryserviceMod.ConditionalForwarders] = js.native
+  var ConditionalForwarders: js.UndefOr[typings.awsSdk.directoryserviceMod.ConditionalForwarders] = js.undefined
 }
 object DescribeConditionalForwardersResult {
   

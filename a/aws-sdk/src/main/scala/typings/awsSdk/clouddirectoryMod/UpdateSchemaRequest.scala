@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaRequest extends StObject {
   
   /**
     * The name of the schema.
     */
-  var Name: SchemaName = js.native
+  var Name: SchemaName
   
   /**
     * The Amazon Resource Name (ARN) of the development schema. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object UpdateSchemaRequest {
   

@@ -2,249 +2,247 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElementTagNameMap extends StObject {
   
-  var a: HTMLAnchorElement = js.native
+  var a: HTMLAnchorElement
   
-  var abbr: HTMLElement = js.native
+  var abbr: HTMLElement
   
-  var address: HTMLElement = js.native
+  var address: HTMLElement
   
-  var applet: HTMLAppletElement = js.native
+  var applet: HTMLAppletElement
   
-  var area: HTMLAreaElement = js.native
+  var area: HTMLAreaElement
   
-  var article: HTMLElement = js.native
+  var article: HTMLElement
   
-  var aside: HTMLElement = js.native
+  var aside: HTMLElement
   
-  var audio: HTMLAudioElement = js.native
+  var audio: HTMLAudioElement
   
-  var b: HTMLElement = js.native
+  var b: HTMLElement
   
-  var base: HTMLBaseElement = js.native
+  var base: HTMLBaseElement
   
-  var basefont: HTMLBaseFontElement = js.native
+  var basefont: HTMLBaseFontElement
   
-  var bdi: HTMLElement = js.native
+  var bdi: HTMLElement
   
-  var bdo: HTMLElement = js.native
+  var bdo: HTMLElement
   
-  var blockquote: HTMLQuoteElement = js.native
+  var blockquote: HTMLQuoteElement
   
-  var body: HTMLBodyElement = js.native
+  var body: HTMLBodyElement
   
-  var br: HTMLBRElement = js.native
+  var br: HTMLBRElement
   
-  var button: HTMLButtonElement = js.native
+  var button: HTMLButtonElement
   
-  var canvas: HTMLCanvasElement = js.native
+  var canvas: HTMLCanvasElement
   
-  var caption: HTMLTableCaptionElement = js.native
+  var caption: HTMLTableCaptionElement
   
-  var cite: HTMLElement = js.native
+  var cite: HTMLElement
   
-  var code: HTMLElement = js.native
+  var code: HTMLElement
   
-  var col: HTMLTableColElement = js.native
+  var col: HTMLTableColElement
   
-  var colgroup: HTMLTableColElement = js.native
+  var colgroup: HTMLTableColElement
   
-  var data: HTMLDataElement = js.native
+  var data: HTMLDataElement
   
-  var datalist: HTMLDataListElement = js.native
+  var datalist: HTMLDataListElement
   
-  var dd: HTMLElement = js.native
+  var dd: HTMLElement
   
-  var del: HTMLModElement = js.native
+  var del: HTMLModElement
   
-  var details: HTMLDetailsElement = js.native
+  var details: HTMLDetailsElement
   
-  var dfn: HTMLElement = js.native
+  var dfn: HTMLElement
   
-  var dialog: HTMLDialogElement = js.native
+  var dialog: HTMLDialogElement
   
-  var dir: HTMLDirectoryElement = js.native
+  var dir: HTMLDirectoryElement
   
-  var div: HTMLDivElement = js.native
+  var div: HTMLDivElement
   
-  var dl: HTMLDListElement = js.native
+  var dl: HTMLDListElement
   
-  var dt: HTMLElement = js.native
+  var dt: HTMLElement
   
-  var em: HTMLElement = js.native
+  var em: HTMLElement
   
-  var embed: HTMLEmbedElement = js.native
+  var embed: HTMLEmbedElement
   
-  var fieldset: HTMLFieldSetElement = js.native
+  var fieldset: HTMLFieldSetElement
   
-  var figcaption: HTMLElement = js.native
+  var figcaption: HTMLElement
   
-  var figure: HTMLElement = js.native
+  var figure: HTMLElement
   
-  var font: HTMLFontElement = js.native
+  var font: HTMLFontElement
   
-  var footer: HTMLElement = js.native
+  var footer: HTMLElement
   
-  var form: HTMLFormElement = js.native
+  var form: HTMLFormElement
   
-  var frame: HTMLFrameElement = js.native
+  var frame: HTMLFrameElement
   
-  var frameset: HTMLFrameSetElement = js.native
+  var frameset: HTMLFrameSetElement
   
-  var h1: HTMLHeadingElement = js.native
+  var h1: HTMLHeadingElement
   
-  var h2: HTMLHeadingElement = js.native
+  var h2: HTMLHeadingElement
   
-  var h3: HTMLHeadingElement = js.native
+  var h3: HTMLHeadingElement
   
-  var h4: HTMLHeadingElement = js.native
+  var h4: HTMLHeadingElement
   
-  var h5: HTMLHeadingElement = js.native
+  var h5: HTMLHeadingElement
   
-  var h6: HTMLHeadingElement = js.native
+  var h6: HTMLHeadingElement
   
-  var head: HTMLHeadElement = js.native
+  var head: HTMLHeadElement
   
-  var header: HTMLElement = js.native
+  var header: HTMLElement
   
-  var hgroup: HTMLElement = js.native
+  var hgroup: HTMLElement
   
-  var hr: HTMLHRElement = js.native
+  var hr: HTMLHRElement
   
-  var html: HTMLHtmlElement = js.native
+  var html: HTMLHtmlElement
   
-  var i: HTMLElement = js.native
+  var i: HTMLElement
   
-  var iframe: HTMLIFrameElement = js.native
+  var iframe: HTMLIFrameElement
   
-  var img: HTMLImageElement = js.native
+  var img: HTMLImageElement
   
-  var input: HTMLInputElement = js.native
+  var input: HTMLInputElement
   
-  var ins: HTMLModElement = js.native
+  var ins: HTMLModElement
   
-  var kbd: HTMLElement = js.native
+  var kbd: HTMLElement
   
-  var label: HTMLLabelElement = js.native
+  var label: HTMLLabelElement
   
-  var legend: HTMLLegendElement = js.native
+  var legend: HTMLLegendElement
   
-  var li: HTMLLIElement = js.native
+  var li: HTMLLIElement
   
-  var link: HTMLLinkElement = js.native
+  var link: HTMLLinkElement
   
-  var main: HTMLElement = js.native
+  var main: HTMLElement
   
-  var map: HTMLMapElement = js.native
+  var map: HTMLMapElement
   
-  var mark: HTMLElement = js.native
+  var mark: HTMLElement
   
-  var marquee: HTMLMarqueeElement = js.native
+  var marquee: HTMLMarqueeElement
   
-  var menu: HTMLMenuElement = js.native
+  var menu: HTMLMenuElement
   
-  var meta: HTMLMetaElement = js.native
+  var meta: HTMLMetaElement
   
-  var meter: HTMLMeterElement = js.native
+  var meter: HTMLMeterElement
   
-  var nav: HTMLElement = js.native
+  var nav: HTMLElement
   
-  var noscript: HTMLElement = js.native
+  var noscript: HTMLElement
   
-  var `object`: HTMLObjectElement = js.native
+  var `object`: HTMLObjectElement
   
-  var ol: HTMLOListElement = js.native
+  var ol: HTMLOListElement
   
-  var optgroup: HTMLOptGroupElement = js.native
+  var optgroup: HTMLOptGroupElement
   
-  var option: HTMLOptionElement = js.native
+  var option: HTMLOptionElement
   
-  var output: HTMLOutputElement = js.native
+  var output: HTMLOutputElement
   
-  var p: HTMLParagraphElement = js.native
+  var p: HTMLParagraphElement
   
-  var param: HTMLParamElement = js.native
+  var param: HTMLParamElement
   
-  var picture: HTMLPictureElement = js.native
+  var picture: HTMLPictureElement
   
-  var pre: HTMLPreElement = js.native
+  var pre: HTMLPreElement
   
-  var progress: HTMLProgressElement = js.native
+  var progress: HTMLProgressElement
   
-  var q: HTMLQuoteElement = js.native
+  var q: HTMLQuoteElement
   
-  var rp: HTMLElement = js.native
+  var rp: HTMLElement
   
-  var rt: HTMLElement = js.native
+  var rt: HTMLElement
   
-  var ruby: HTMLElement = js.native
+  var ruby: HTMLElement
   
-  var s: HTMLElement = js.native
+  var s: HTMLElement
   
-  var samp: HTMLElement = js.native
+  var samp: HTMLElement
   
-  var script: HTMLScriptElement = js.native
+  var script: HTMLScriptElement
   
-  var section: HTMLElement = js.native
+  var section: HTMLElement
   
-  var select: HTMLSelectElement = js.native
+  var select: HTMLSelectElement
   
-  var slot: HTMLSlotElement = js.native
+  var slot: HTMLSlotElement
   
-  var small: HTMLElement = js.native
+  var small: HTMLElement
   
-  var source: HTMLSourceElement = js.native
+  var source: HTMLSourceElement
   
-  var span: HTMLSpanElement = js.native
+  var span: HTMLSpanElement
   
-  var strong: HTMLElement = js.native
+  var strong: HTMLElement
   
-  var style: HTMLStyleElement = js.native
+  var style: HTMLStyleElement
   
-  var sub: HTMLElement = js.native
+  var sub: HTMLElement
   
-  var summary: HTMLElement = js.native
+  var summary: HTMLElement
   
-  var sup: HTMLElement = js.native
+  var sup: HTMLElement
   
-  var table: HTMLTableElement = js.native
+  var table: HTMLTableElement
   
-  var tbody: HTMLTableSectionElement = js.native
+  var tbody: HTMLTableSectionElement
   
-  var td: HTMLTableDataCellElement = js.native
+  var td: HTMLTableDataCellElement
   
-  var template: HTMLTemplateElement = js.native
+  var template: HTMLTemplateElement
   
-  var textarea: HTMLTextAreaElement = js.native
+  var textarea: HTMLTextAreaElement
   
-  var tfoot: HTMLTableSectionElement = js.native
+  var tfoot: HTMLTableSectionElement
   
-  var th: HTMLTableHeaderCellElement = js.native
+  var th: HTMLTableHeaderCellElement
   
-  var thead: HTMLTableSectionElement = js.native
+  var thead: HTMLTableSectionElement
   
-  var time: HTMLTimeElement = js.native
+  var time: HTMLTimeElement
   
-  var title: HTMLTitleElement = js.native
+  var title: HTMLTitleElement
   
-  var tr: HTMLTableRowElement = js.native
+  var tr: HTMLTableRowElement
   
-  var track: HTMLTrackElement = js.native
+  var track: HTMLTrackElement
   
-  var u: HTMLElement = js.native
+  var u: HTMLElement
   
-  var ul: HTMLUListElement = js.native
+  var ul: HTMLUListElement
   
-  var `var`: HTMLElement = js.native
+  var `var`: HTMLElement
   
-  var video: HTMLVideoElement = js.native
+  var video: HTMLVideoElement
   
-  var wbr: HTMLElement = js.native
+  var wbr: HTMLElement
 }
 object HTMLElementTagNameMap {
   

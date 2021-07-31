@@ -2,26 +2,24 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The details of the login action.
   */
-@js.native
 trait SchemaLoginDetails extends StObject {
   
   /**
     * Optional. The human-readable IP address (for example, `11.22.33.44`) that
     * is associated with the warning event.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The successful login time that is associated with the warning
     * event. This will not be present for blocked login attempts.
     */
-  var loginTime: js.UndefOr[String] = js.native
+  var loginTime: js.UndefOr[String] = js.undefined
 }
 object SchemaLoginDetails {
   

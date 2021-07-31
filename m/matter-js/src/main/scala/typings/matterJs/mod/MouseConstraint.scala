@@ -2,7 +2,6 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "MouseConstraint")
@@ -57,6 +56,10 @@ class MouseConstraint () extends StObject {
 /* static members */
 object MouseConstraint {
   
+  @JSImport("matter-js", "MouseConstraint")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new mouse constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -66,10 +69,8 @@ object MouseConstraint {
     * @param {} options
     * @return {MouseConstraint} A new MouseConstraint
     */
-  @JSImport("matter-js", "MouseConstraint.create")
-  @js.native
-  def create(engine: Engine): MouseConstraint = js.native
-  @JSImport("matter-js", "MouseConstraint.create")
-  @js.native
-  def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = js.native
+  @scala.inline
+  def create(engine: Engine): MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[MouseConstraint]
+  @scala.inline
+  def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MouseConstraint]
 }

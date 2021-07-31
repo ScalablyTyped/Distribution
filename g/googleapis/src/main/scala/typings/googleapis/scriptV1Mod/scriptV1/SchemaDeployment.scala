@@ -2,34 +2,32 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a single script deployment.
   */
-@js.native
 trait SchemaDeployment extends StObject {
   
   /**
     * The deployment configuration.
     */
-  var deploymentConfig: js.UndefOr[SchemaDeploymentConfig] = js.native
+  var deploymentConfig: js.UndefOr[SchemaDeploymentConfig] = js.undefined
   
   /**
     * The deployment ID for this deployment.
     */
-  var deploymentId: js.UndefOr[String] = js.native
+  var deploymentId: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment&#39;s entry points.
     */
-  var entryPoints: js.UndefOr[js.Array[SchemaEntryPoint]] = js.native
+  var entryPoints: js.UndefOr[js.Array[SchemaEntryPoint]] = js.undefined
   
   /**
     * Last modified date time stamp.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDeployment {
   

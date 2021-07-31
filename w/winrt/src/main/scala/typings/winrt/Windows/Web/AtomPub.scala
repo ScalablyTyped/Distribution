@@ -20,13 +20,13 @@ import typings.winrt.Windows.Web.Syndication.SyndicationItem
 import typings.winrt.Windows.Web.Syndication.TransferProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AtomPub {
   
-  @js.native
-  trait AtomPubClient extends IAtomPubClient
+  trait AtomPubClient
+    extends StObject
+       with IAtomPubClient
   object AtomPubClient {
     
     @scala.inline
@@ -55,30 +55,31 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait IAtomPubClient extends ISyndicationClient {
+  trait IAtomPubClient
+    extends StObject
+       with ISyndicationClient {
     
-    def cancelAsyncOperations(): Unit = js.native
+    def cancelAsyncOperations(): Unit
     
-    def createMediaResourceAsync(uri: Uri, mediaType: String, description: String, mediaStream: IInputStream): IAsyncOperationWithProgress[SyndicationItem, TransferProgress] = js.native
+    def createMediaResourceAsync(uri: Uri, mediaType: String, description: String, mediaStream: IInputStream): IAsyncOperationWithProgress[SyndicationItem, TransferProgress]
     
-    def createResourceAsync(uri: Uri, description: String, item: SyndicationItem): IAsyncOperationWithProgress[SyndicationItem, TransferProgress] = js.native
+    def createResourceAsync(uri: Uri, description: String, item: SyndicationItem): IAsyncOperationWithProgress[SyndicationItem, TransferProgress]
     
-    def deleteResourceAsync(uri: Uri): IAsyncActionWithProgress[TransferProgress] = js.native
+    def deleteResourceAsync(uri: Uri): IAsyncActionWithProgress[TransferProgress]
     
-    def deleteResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
+    def deleteResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress]
     
-    def retrieveMediaResourceAsync(uri: Uri): IAsyncOperationWithProgress[IInputStream, RetrievalProgress] = js.native
+    def retrieveMediaResourceAsync(uri: Uri): IAsyncOperationWithProgress[IInputStream, RetrievalProgress]
     
-    def retrieveResourceAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationItem, RetrievalProgress] = js.native
+    def retrieveResourceAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationItem, RetrievalProgress]
     
-    def retrieveServiceDocumentAsync(uri: Uri): IAsyncOperationWithProgress[ServiceDocument, RetrievalProgress] = js.native
+    def retrieveServiceDocumentAsync(uri: Uri): IAsyncOperationWithProgress[ServiceDocument, RetrievalProgress]
     
-    def updateMediaResourceAsync(uri: Uri, mediaType: String, mediaStream: IInputStream): IAsyncActionWithProgress[TransferProgress] = js.native
+    def updateMediaResourceAsync(uri: Uri, mediaType: String, mediaStream: IInputStream): IAsyncActionWithProgress[TransferProgress]
     
-    def updateResourceAsync(uri: Uri, item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
+    def updateResourceAsync(uri: Uri, item: SyndicationItem): IAsyncActionWithProgress[TransferProgress]
     
-    def updateResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress] = js.native
+    def updateResourceItemAsync(item: SyndicationItem): IAsyncActionWithProgress[TransferProgress]
   }
   object IAtomPubClient {
     
@@ -149,10 +150,9 @@ object AtomPub {
     }
   }
   
-  @js.native
   trait IAtomPubClientFactory extends StObject {
     
-    def createAtomPubClientWithCredentials(serverCredential: PasswordCredential): AtomPubClient = js.native
+    def createAtomPubClientWithCredentials(serverCredential: PasswordCredential): AtomPubClient
   }
   object IAtomPubClientFactory {
     
@@ -170,16 +170,17 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait IResourceCollection extends ISyndicationNode {
+  trait IResourceCollection
+    extends StObject
+       with ISyndicationNode {
     
-    var accepts: IVectorView[String] = js.native
+    var accepts: IVectorView[String]
     
-    var categories: IVectorView[SyndicationCategory] = js.native
+    var categories: IVectorView[SyndicationCategory]
     
-    var title: ISyndicationText = js.native
+    var title: ISyndicationText
     
-    var uri: Uri = js.native
+    var uri: Uri
   }
   object IResourceCollection {
     
@@ -219,10 +220,11 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait IServiceDocument extends ISyndicationNode {
+  trait IServiceDocument
+    extends StObject
+       with ISyndicationNode {
     
-    var workspaces: IVectorView[Workspace] = js.native
+    var workspaces: IVectorView[Workspace]
   }
   object IServiceDocument {
     
@@ -250,12 +252,13 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait IWorkspace extends ISyndicationNode {
+  trait IWorkspace
+    extends StObject
+       with ISyndicationNode {
     
-    var collections: IVectorView[ResourceCollection] = js.native
+    var collections: IVectorView[ResourceCollection]
     
-    var title: ISyndicationText = js.native
+    var title: ISyndicationText
   }
   object IWorkspace {
     
@@ -287,8 +290,9 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait ResourceCollection extends IResourceCollection
+  trait ResourceCollection
+    extends StObject
+       with IResourceCollection
   object ResourceCollection {
     
     @scala.inline
@@ -311,8 +315,9 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait ServiceDocument extends IServiceDocument
+  trait ServiceDocument
+    extends StObject
+       with IServiceDocument
   object ServiceDocument {
     
     @scala.inline
@@ -332,8 +337,9 @@ object AtomPub {
     }
   }
   
-  @js.native
-  trait Workspace extends IWorkspace
+  trait Workspace
+    extends StObject
+       with IWorkspace
   object Workspace {
     
     @scala.inline

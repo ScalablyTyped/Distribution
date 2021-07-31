@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnrollmentConfigurationAssignment extends Entity {
+trait EnrollmentConfigurationAssignment
+  extends StObject
+     with Entity {
   
   // Not yet documented
-  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.native
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object EnrollmentConfigurationAssignment {
   

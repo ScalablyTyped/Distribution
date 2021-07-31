@@ -10,7 +10,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -33,6 +32,10 @@ object buttonMod {
       @scala.inline
       def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
+      @JSImport("antd-mobile/lib/button", "default.defaultProps.inline")
+      @js.native
+      val `inline`: Boolean = js.native
+      
       @JSImport("antd-mobile/lib/button", "default.defaultProps.loading")
       @js.native
       def loading: Boolean = js.native
@@ -50,10 +53,6 @@ object buttonMod {
       def size: String = js.native
       @scala.inline
       def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
-      
-      @JSImport("antd-mobile/lib/button", "default.defaultProps.inline")
-      @js.native
-      val `inline`: Boolean = js.native
     }
   }
   
@@ -61,26 +60,27 @@ object buttonMod {
   trait Button
     extends Component[ButtonProps, js.Any, js.Any]
   
-  @js.native
-  trait ButtonProps extends ButtonPropsType {
+  trait ButtonProps
+    extends StObject
+       with ButtonPropsType {
     
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
-    var activeStyle: js.UndefOr[Boolean | CSSProperties] = js.native
+    var activeStyle: js.UndefOr[Boolean | CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ButtonProps {
     

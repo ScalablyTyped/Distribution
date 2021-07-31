@@ -2,19 +2,17 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FraudManagementFiltersDetails extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var filter_id: String = js.native
+  var filter_id: String
   
-  var filter_type: String = js.native
+  var filter_type: String
   
-  var name: String = js.native
+  var name: String
 }
 object FraudManagementFiltersDetails {
   

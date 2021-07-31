@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAudioContext extends StObject {
   
   /**
     * 暂停
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * 播放
     */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /**
     * 跳转到指定位置，单位 s
     */
-  def seek(): Unit = js.native
+  def seek(): Unit
   
   /**
     * 音频的地址
     */
-  def setSrc(): Unit = js.native
+  def setSrc(): Unit
 }
 object CreateAudioContext {
   

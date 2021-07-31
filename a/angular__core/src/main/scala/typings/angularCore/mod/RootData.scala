@@ -2,27 +2,25 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RootData extends StObject {
   
-  var errorHandler: ErrorHandler = js.native
+  var errorHandler: ErrorHandler
   
-  var injector: Injector = js.native
+  var injector: Injector
   
-  var ngModule: NgModuleRef[_] = js.native
+  var ngModule: NgModuleRef[js.Any]
   
-  var projectableNodes: js.Array[js.Array[_]] = js.native
+  var projectableNodes: js.Array[js.Array[js.Any]]
   
-  var renderer: Renderer2 = js.native
+  var renderer: Renderer2
   
-  var rendererFactory: RendererFactory2 = js.native
+  var rendererFactory: RendererFactory2
   
-  var sanitizer: Sanitizer = js.native
+  var sanitizer: Sanitizer
   
-  var selectorOrNode: js.Any = js.native
+  var selectorOrNode: js.Any
 }
 object RootData {
   
@@ -30,8 +28,8 @@ object RootData {
   def apply(
     errorHandler: ErrorHandler,
     injector: Injector,
-    ngModule: NgModuleRef[_],
-    projectableNodes: js.Array[js.Array[_]],
+    ngModule: NgModuleRef[js.Any],
+    projectableNodes: js.Array[js.Array[js.Any]],
     renderer: Renderer2,
     rendererFactory: RendererFactory2,
     sanitizer: Sanitizer,
@@ -51,10 +49,10 @@ object RootData {
     def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNgModule(value: NgModuleRef[_]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    def setNgModule(value: NgModuleRef[js.Any]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectableNodes(value: js.Array[js.Array[_]]): Self = StObject.set(x, "projectableNodes", value.asInstanceOf[js.Any])
+    def setProjectableNodes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "projectableNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProjectableNodesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "projectableNodes", js.Array(value :_*))

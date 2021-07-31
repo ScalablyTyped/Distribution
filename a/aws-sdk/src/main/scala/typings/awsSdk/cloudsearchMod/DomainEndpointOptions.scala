@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainEndpointOptions extends StObject {
   
   /**
     * Whether the domain is HTTPS only enabled.
     */
-  var EnforceHTTPS: js.UndefOr[Boolean] = js.native
+  var EnforceHTTPS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The minimum required TLS version
     */
-  var TLSSecurityPolicy: js.UndefOr[typings.awsSdk.cloudsearchMod.TLSSecurityPolicy] = js.native
+  var TLSSecurityPolicy: js.UndefOr[typings.awsSdk.cloudsearchMod.TLSSecurityPolicy] = js.undefined
 }
 object DomainEndpointOptions {
   

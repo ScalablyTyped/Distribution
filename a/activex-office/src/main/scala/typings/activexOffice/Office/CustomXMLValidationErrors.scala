@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,9 @@ trait CustomXMLValidationErrors extends StObject {
     * @param ClearedOnUpdate [ClearedOnUpdate=true]
     */
   def Add(Node: CustomXMLNode, ErrorName: String): Unit = js.native
-  def Add(
-    Node: CustomXMLNode,
-    ErrorName: String,
-    ErrorText: js.UndefOr[scala.Nothing],
-    ClearedOnUpdate: Boolean
-  ): Unit = js.native
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: String): Unit = js.native
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: String, ClearedOnUpdate: Boolean): Unit = js.native
+  def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: Unit, ClearedOnUpdate: Boolean): Unit = js.native
   
   val Application: js.Any = js.native
   

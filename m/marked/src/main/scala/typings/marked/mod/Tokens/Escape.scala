@@ -4,24 +4,24 @@ import typings.marked.markedStrings.escape
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Escape extends Token {
+trait Escape
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: escape = js.native
+  var `type`: escape
 }
 object Escape {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: escape): Escape = {
+  def apply(raw: String, text: String): Escape = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("escape")
     __obj.asInstanceOf[Escape]
   }
   

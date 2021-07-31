@@ -5,39 +5,32 @@ import typings.grayPercentage.grayPercentageStrings.slate
 import typings.grayPercentage.grayPercentageStrings.warm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(lightness: Double): String = ^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: Double): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: Double, darkBackground: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any], darkBackground.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: Unit, darkBackground: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any], darkBackground.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: cool): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: cool, darkBackground: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any], darkBackground.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: slate): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: slate, darkBackground: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any], darkBackground.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: warm): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(lightness: Double, hue: warm, darkBackground: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(lightness.asInstanceOf[js.Any], hue.asInstanceOf[js.Any], darkBackground.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("gray-percentage", JSImport.Namespace)
   @js.native
-  def apply(lightness: Double): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: js.UndefOr[scala.Nothing], darkBackground: Boolean): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: Double): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: Double, darkBackground: Boolean): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: cool): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: cool, darkBackground: Boolean): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: slate): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: slate, darkBackground: Boolean): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: warm): String = js.native
-  @JSImport("gray-percentage", JSImport.Namespace)
-  @js.native
-  def apply(lightness: Double, hue: warm, darkBackground: Boolean): String = js.native
+  val ^ : js.Any = js.native
 }

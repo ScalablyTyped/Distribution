@@ -10,9 +10,9 @@ A Stylelint plugin for webpack
 | ------------------ | :-------------: |
 | Full name          | stylelint-webpack-plugin |
 | Keywords           | stylelint, lint, linter, plugin, webpack |
-| # releases         | 15 |
-| # dependents       | 209 |
-| # downloads        | 7297310 |
+| # releases         | 16 |
+| # dependents       | 225 |
+| # downloads        | 9122864 |
 | # stars            | 6 |
 
 ## Links

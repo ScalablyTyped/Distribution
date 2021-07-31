@@ -3,23 +3,21 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFDBEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISQLDatabase extends StObject {
   
-  var AdminUser: IImpersonation = js.native
+  var AdminUser: IImpersonation
   
-  var BasicUser: IImpersonation = js.native
+  var BasicUser: IImpersonation
   
-  def Clone(): ISQLDatabase = js.native
+  def Clone(): ISQLDatabase
   
-  var Engine: MFDBEngine = js.native
+  var Engine: MFDBEngine
   
-  var Name: String = js.native
+  var Name: String
   
-  var Server: String = js.native
+  var Server: String
 }
 object ISQLDatabase {
   

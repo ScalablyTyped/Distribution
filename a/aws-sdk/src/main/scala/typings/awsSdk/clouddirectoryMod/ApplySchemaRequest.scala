@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplySchemaRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory into which the schema is copied. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * Published schema Amazon Resource Name (ARN) that needs to be copied. For more information, see arns.
     */
-  var PublishedSchemaArn: Arn = js.native
+  var PublishedSchemaArn: Arn
 }
 object ApplySchemaRequest {
   

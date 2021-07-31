@@ -3,21 +3,22 @@ package typings.xmlParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(xml: String): Document = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[Document]
+  
   @JSImport("xml-parser", JSImport.Namespace)
   @js.native
-  def apply(xml: String): Document = js.native
+  val ^ : js.Any = js.native
   
   type Attributes = StringDictionary[String]
   
-  @js.native
   trait Declaration extends StObject {
     
-    var attributes: Attributes = js.native
+    var attributes: Attributes
   }
   object Declaration {
     
@@ -35,12 +36,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Document extends StObject {
     
-    var declaration: Declaration = js.native
+    var declaration: Declaration
     
-    var root: Node = js.native
+    var root: Node
   }
   object Document {
     
@@ -61,16 +61,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var attributes: Attributes = js.native
+    var attributes: Attributes
     
-    var children: js.Array[Node] = js.native
+    var children: js.Array[Node]
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Node {
     

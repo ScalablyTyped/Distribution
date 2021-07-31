@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TextInput. */
-@js.native
 trait ITextInput extends StObject {
   
   /** TextInput languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** TextInput text */
-  var text: js.UndefOr[String | Null] = js.native
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object ITextInput {
   

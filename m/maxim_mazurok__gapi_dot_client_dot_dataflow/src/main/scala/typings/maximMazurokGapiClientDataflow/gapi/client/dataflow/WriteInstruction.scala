@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteInstruction extends StObject {
   
   /** The input. */
-  var input: js.UndefOr[InstructionInput] = js.native
+  var input: js.UndefOr[InstructionInput] = js.undefined
   
   /** The sink to write to. */
-  var sink: js.UndefOr[Sink] = js.native
+  var sink: js.UndefOr[Sink] = js.undefined
 }
 object WriteInstruction {
   

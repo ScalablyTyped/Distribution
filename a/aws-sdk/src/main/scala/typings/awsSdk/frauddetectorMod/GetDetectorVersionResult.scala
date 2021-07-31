@@ -2,66 +2,64 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDetectorVersionResult extends StObject {
   
   /**
     * The detector version ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The timestamp when the detector version was created. 
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The detector version description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The detector ID.
     */
-  var detectorId: js.UndefOr[identifier] = js.native
+  var detectorId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The detector version ID.
     */
-  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.native
+  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.undefined
   
   /**
     * The Amazon SageMaker model endpoints included in the detector version.
     */
-  var externalModelEndpoints: js.UndefOr[ListOfStrings] = js.native
+  var externalModelEndpoints: js.UndefOr[ListOfStrings] = js.undefined
   
   /**
     * The timestamp when the detector version was last updated. 
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The model versions included in the detector version. 
     */
-  var modelVersions: js.UndefOr[ListOfModelVersions] = js.native
+  var modelVersions: js.UndefOr[ListOfModelVersions] = js.undefined
   
   /**
     * The execution mode of the rule in the dectector  FIRST_MATCHED indicates that Amazon Fraud Detector evaluates rules sequentially, first to last, stopping at the first matched rule. Amazon Fraud dectector then provides the outcomes for that single rule.  ALL_MATCHED indicates that Amazon Fraud Detector evaluates all rules and returns the outcomes for all matched rules. You can define and edit the rule mode at the detector version level, when it is in draft status.
     */
-  var ruleExecutionMode: js.UndefOr[RuleExecutionMode] = js.native
+  var ruleExecutionMode: js.UndefOr[RuleExecutionMode] = js.undefined
   
   /**
     * The rules included in the detector version.
     */
-  var rules: js.UndefOr[RuleList] = js.native
+  var rules: js.UndefOr[RuleList] = js.undefined
   
   /**
     * The status of the detector version.
     */
-  var status: js.UndefOr[DetectorVersionStatus] = js.native
+  var status: js.UndefOr[DetectorVersionStatus] = js.undefined
 }
 object GetDetectorVersionResult {
   

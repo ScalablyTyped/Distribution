@@ -2,18 +2,17 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISplitButton
-  extends typings.extjs.Ext.button.IButton {
+  extends StObject
+     with typings.extjs.Ext.button.IButton {
   
   /** [Config Option] (Function) */
-  var arrowHandler: js.UndefOr[js.Any] = js.native
+  var arrowHandler: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var arrowTooltip: js.UndefOr[java.lang.String] = js.native
+  var arrowTooltip: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets this button s arrow click handler
     * @param handler Function The function to call when the arrow is clicked.
@@ -21,7 +20,7 @@ trait ISplitButton
     */
   var setArrowHandler: js.UndefOr[
     js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object ISplitButton {
   

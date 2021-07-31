@@ -4,21 +4,22 @@ import typings.firebaseAppTypes.privateMod.FirebaseNamespace
 import typings.firebaseRemoteConfigTypes.mod.RemoteConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@firebase/remote-config", "registerRemoteConfig")
+  @JSImport("@firebase/remote-config", JSImport.Namespace)
   @js.native
-  def registerRemoteConfig(firebaseInstance: FirebaseNamespace): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def registerRemoteConfig(firebaseInstance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRemoteConfig")(firebaseInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object firebaseAppTypesAugmentingMod {
     
-    @js.native
     trait FirebaseApp extends StObject {
       
-      def remoteConfig(): RemoteConfig = js.native
+      def remoteConfig(): RemoteConfig
     }
     object FirebaseApp {
       
@@ -36,10 +37,9 @@ object mod {
       }
     }
     
-    @js.native
     trait FirebaseNamespace extends StObject {
       
-      var remoteConfig: js.UndefOr[js.Function1[/* app */ js.UndefOr[FirebaseApp], RemoteConfig]] = js.native
+      var remoteConfig: js.UndefOr[js.Function1[/* app */ js.UndefOr[FirebaseApp], RemoteConfig]] = js.undefined
     }
     object FirebaseNamespace {
       
@@ -63,10 +63,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var FIREBASE_REMOTE_CONFIG_URL_BASE: String = js.native
+      var FIREBASE_REMOTE_CONFIG_URL_BASE: String
     }
     object Window {
       

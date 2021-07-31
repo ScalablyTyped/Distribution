@@ -3,19 +3,19 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Src
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CertificateDefinition extends PropertyDefinition {
+trait CertificateDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var cert: js.UndefOr[Src | String] = js.native
+  var cert: js.UndefOr[Src | String] = js.undefined
   
-  var key: js.UndefOr[Src | String] = js.native
+  var key: js.UndefOr[Src | String] = js.undefined
   
-  var matches: js.UndefOr[js.Array[String] | UrlMatchPatternList] = js.native
+  var matches: js.UndefOr[js.Array[String] | UrlMatchPatternList] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 object CertificateDefinition {
   

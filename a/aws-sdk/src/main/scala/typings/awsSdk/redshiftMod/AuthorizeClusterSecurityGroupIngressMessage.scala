@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeClusterSecurityGroupIngressMessage extends StObject {
   
   /**
     * The IP range to be added the Amazon Redshift security group.
     */
-  var CIDRIP: js.UndefOr[String] = js.native
+  var CIDRIP: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the security group to which the ingress rule is added.
     */
-  var ClusterSecurityGroupName: String = js.native
+  var ClusterSecurityGroupName: String
   
   /**
     * The EC2 security group to be added the Amazon Redshift security group.
     */
-  var EC2SecurityGroupName: js.UndefOr[String] = js.native
+  var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account number of the owner of the security group specified by the EC2SecurityGroupName parameter. The AWS Access Key ID is not an acceptable value.  Example: 111122223333 
     */
-  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
 }
 object AuthorizeClusterSecurityGroupIngressMessage {
   

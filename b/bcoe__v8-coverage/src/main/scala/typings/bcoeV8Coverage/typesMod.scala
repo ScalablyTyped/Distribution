@@ -2,19 +2,17 @@ package typings.bcoeV8Coverage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait FunctionCov extends StObject {
     
-    var functionName: String = js.native
+    var functionName: String
     
-    var isBlockCoverage: Boolean = js.native
+    var isBlockCoverage: Boolean
     
-    var ranges: js.Array[RangeCov] = js.native
+    var ranges: js.Array[RangeCov]
   }
   object FunctionCov {
     
@@ -41,10 +39,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ProcessCov extends StObject {
     
-    var result: js.Array[ScriptCov] = js.native
+    var result: js.Array[ScriptCov]
   }
   object ProcessCov {
     
@@ -65,12 +62,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    val end: Double = js.native
+    val end: Double
     
-    val start: Double = js.native
+    val start: Double
   }
   object Range {
     
@@ -91,14 +87,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RangeCov extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var endOffset: Double = js.native
+    var endOffset: Double
     
-    var startOffset: Double = js.native
+    var startOffset: Double
   }
   object RangeCov {
     
@@ -122,14 +117,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ScriptCov extends StObject {
     
-    var functions: js.Array[FunctionCov] = js.native
+    var functions: js.Array[FunctionCov]
     
-    var scriptId: String = js.native
+    var scriptId: String
     
-    var url: String = js.native
+    var url: String
   }
   object ScriptCov {
     

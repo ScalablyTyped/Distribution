@@ -6,80 +6,75 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-sslify", JSImport.Default)
+  @JSImport("koa-sslify", JSImport.Namespace)
   @js.native
-  def default(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-sslify", JSImport.Default)
-  @js.native
-  def default(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("koa-sslify", "azureResolver")
-  @js.native
-  def azureResolver(ctx: Context): Boolean = js.native
+  @scala.inline
+  def default(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def default(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @JSImport("koa-sslify", "customProtoHeaderResolver")
-  @js.native
-  def customProtoHeaderResolver(header: String): js.Function1[/* ctx */ Context, Boolean] = js.native
+  @scala.inline
+  def azureResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("azureResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("koa-sslify", "forwardedResolver")
-  @js.native
-  def forwardedResolver(ctx: Context): Boolean = js.native
+  @scala.inline
+  def customProtoHeaderResolver(header: String): js.Function1[/* ctx */ Context, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("customProtoHeaderResolver")(header.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ctx */ Context, Boolean]]
   
-  @JSImport("koa-sslify", "httpsResolver")
-  @js.native
-  def httpsResolver(ctx: Context): Boolean = js.native
+  @scala.inline
+  def forwardedResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardedResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("koa-sslify", "xForwardedProtoResolver")
-  @js.native
-  def xForwardedProtoResolver(ctx: Context): Boolean = js.native
+  @scala.inline
+  def httpsResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def xForwardedProtoResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("xForwardedProtoResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait Options extends StObject {
     
     /**
       * Status returned for disallowed methods
       */
-    var disallowStatus: js.UndefOr[Double] = js.native
+    var disallowStatus: js.UndefOr[Double] = js.undefined
     
     /**
       * Hostname for redirect (uses request host if not set)
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore url path (redirect to domain)
       */
-    var ignoreUrl: js.UndefOr[Boolean] = js.native
+    var ignoreUrl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Port of HTTPS server
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Whitelist methods that should be redirected
       */
-    var redirectMethods: js.UndefOr[js.Array[String]] = js.native
+    var redirectMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Function used to test if request is secure
       */
-    var resolver: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.native
+    var resolver: js.UndefOr[js.Function1[/* ctx */ Context, Boolean]] = js.undefined
     
     /**
       * Avoid :443 port in redirect url
       */
-    var skipDefaultPort: js.UndefOr[Boolean] = js.native
+    var skipDefaultPort: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Temporary mode (use 307 Temporary Redirect)
       */
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

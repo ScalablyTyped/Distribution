@@ -2,81 +2,79 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mail extends StObject {
   
-  def addAttachment(attachment: Attachment): Unit = js.native
+  def addAttachment(attachment: Attachment): Unit
   
-  def addCategory(category: Category): Unit = js.native
+  def addCategory(category: Category): Unit
   
-  def addContent(content: Content): Unit = js.native
+  def addContent(content: Content): Unit
   
-  def addCustomArg(customArg: CustomArgs): Unit = js.native
+  def addCustomArg(customArg: CustomArgs): Unit
   
-  def addHeader(header: Header): Unit = js.native
+  def addHeader(header: Header): Unit
   
-  def addMailSettings(settings: MailSettings): Unit = js.native
+  def addMailSettings(settings: MailSettings): Unit
   
-  def addPersonalization(personalization: Personalization): Unit = js.native
+  def addPersonalization(personalization: Personalization): Unit
   
-  def addSection(section: Section): Unit = js.native
+  def addSection(section: Section): Unit
   
-  def addTrackingSettings(settings: TrackingSettings): Unit = js.native
+  def addTrackingSettings(settings: TrackingSettings): Unit
   
-  def getAsm(): Asm = js.native
+  def getAsm(): Asm
   
-  def getAttachments(): js.Array[Attachment] = js.native
+  def getAttachments(): js.Array[Attachment]
   
-  def getBatchId(): String = js.native
+  def getBatchId(): String
   
-  def getCategories(): js.Array[Category] = js.native
+  def getCategories(): js.Array[Category]
   
-  def getContents(): js.Array[Content] = js.native
+  def getContents(): js.Array[Content]
   
-  def getCustomArgs(): js.Array[CustomArgs] = js.native
+  def getCustomArgs(): js.Array[CustomArgs]
   
-  def getFrom(): Email = js.native
+  def getFrom(): Email
   
-  def getHeaders(): js.Array[Header] = js.native
+  def getHeaders(): js.Array[Header]
   
-  def getIpPoolName(): String = js.native
+  def getIpPoolName(): String
   
-  def getMailSettings(): MailSettings = js.native
+  def getMailSettings(): MailSettings
   
-  def getPersonalizations(): js.Array[Personalization] = js.native
+  def getPersonalizations(): js.Array[Personalization]
   
-  def getReplyTo(): Email = js.native
+  def getReplyTo(): Email
   
-  def getSections(): js.Array[Section] = js.native
+  def getSections(): js.Array[Section]
   
-  def getSendAt(): Double = js.native
+  def getSendAt(): Double
   
-  def getSubject(): String = js.native
+  def getSubject(): String
   
-  def getTemplateId(): String = js.native
+  def getTemplateId(): String
   
-  def getTrackingSettings(): TrackingSettings = js.native
+  def getTrackingSettings(): TrackingSettings
   
-  def setAsm(asm: Asm): Unit = js.native
+  def setAsm(asm: Asm): Unit
   
-  def setBatchId(batch_id: String): Unit = js.native
+  def setBatchId(batch_id: String): Unit
   
-  def setFrom(email: Email): Unit = js.native
+  def setFrom(email: Email): Unit
   
-  def setIpPoolName(name: String): Unit = js.native
+  def setIpPoolName(name: String): Unit
   
-  def setReplyTo(email: Email): Unit = js.native
+  def setReplyTo(email: Email): Unit
   
-  def setSendAt(sendAt: Double): Unit = js.native
+  def setSendAt(sendAt: Double): Unit
   
-  def setSubject(subject: String): Unit = js.native
+  def setSubject(subject: String): Unit
   
-  def setTemplateId(templateId: String): Unit = js.native
+  def setTemplateId(templateId: String): Unit
   
-  def toJSON(): typings.sendgrid.anon.Asm = js.native
+  def toJSON(): typings.sendgrid.anon.Asm
 }
 object Mail {
   

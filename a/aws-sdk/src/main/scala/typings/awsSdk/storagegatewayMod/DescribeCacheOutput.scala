@@ -2,43 +2,41 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCacheOutput extends StObject {
   
   /**
     * The amount of cache in bytes allocated to a gateway.
     */
-  var CacheAllocatedInBytes: js.UndefOr[long] = js.native
+  var CacheAllocatedInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The file share's contribution to the overall percentage of the gateway's cache that has not been persisted to AWS. The sample is taken at the end of the reporting period.
     */
-  var CacheDirtyPercentage: js.UndefOr[double] = js.native
+  var CacheDirtyPercentage: js.UndefOr[double] = js.undefined
   
   /**
     * Percent of application read operations from the file shares that are served from cache. The sample is taken at the end of the reporting period.
     */
-  var CacheHitPercentage: js.UndefOr[double] = js.native
+  var CacheHitPercentage: js.UndefOr[double] = js.undefined
   
   /**
     * Percent of application read operations from the file shares that are not served from cache. The sample is taken at the end of the reporting period.
     */
-  var CacheMissPercentage: js.UndefOr[double] = js.native
+  var CacheMissPercentage: js.UndefOr[double] = js.undefined
   
   /**
     * Percent use of the gateway's cache storage. This metric applies only to the gateway-cached volume setup. The sample is taken at the end of the reporting period.
     */
-  var CacheUsedPercentage: js.UndefOr[double] = js.native
+  var CacheUsedPercentage: js.UndefOr[double] = js.undefined
   
   /**
     * An array of strings that identify disks that are to be configured as working storage. Each string has a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
     */
-  var DiskIds: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskIds] = js.native
+  var DiskIds: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskIds] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
 }
 object DescribeCacheOutput {
   

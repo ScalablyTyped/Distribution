@@ -2,15 +2,13 @@ package typings.reachRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryListenerParameter extends StObject {
   
-  var action: HistoryActionType = js.native
+  var action: HistoryActionType
   
-  var location: HistoryLocation = js.native
+  var location: HistoryLocation
 }
 object HistoryListenerParameter {
   

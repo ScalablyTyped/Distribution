@@ -3,15 +3,15 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowExternalProcessExitedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowExternalProcessExitedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var exitCode: Double = js.native
+  var exitCode: Double
   
-  var processUuid: String = js.native
+  var processUuid: String
 }
 object WindowExternalProcessExitedEvent {
   
@@ -23,7 +23,7 @@ object WindowExternalProcessExitedEvent {
   }
   
   @scala.inline
-  implicit class WindowExternalProcessExitedEventMutableBuilder[Self <: WindowExternalProcessExitedEvent[_, _], Topic, Type] (val x: Self with (WindowExternalProcessExitedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowExternalProcessExitedEventMutableBuilder[Self <: WindowExternalProcessExitedEvent[?, ?], Topic, Type] (val x: Self & (WindowExternalProcessExitedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])

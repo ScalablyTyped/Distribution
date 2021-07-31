@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceCompromisedSecurityDetail extends StObject {
   
   /** The device compromised state. Possible values are "`Compromised`" or "`Not Compromised`". */
-  var deviceCompromisedState: js.UndefOr[String] = js.native
+  var deviceCompromisedState: js.UndefOr[String] = js.undefined
   
   /** Required. The device ID. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** The model of the device. */
-  var deviceModel: js.UndefOr[String] = js.native
+  var deviceModel: js.UndefOr[String] = js.undefined
   
   /** The type of the device. */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
   
   /** Required for iOS, empty for others. */
-  var iosVendorId: js.UndefOr[String] = js.native
+  var iosVendorId: js.UndefOr[String] = js.undefined
   
   /** The device resource ID. */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /** The serial number of the device. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
 }
 object DeviceCompromisedSecurityDetail {
   

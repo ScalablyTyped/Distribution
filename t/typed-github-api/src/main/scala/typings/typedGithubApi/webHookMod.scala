@@ -19,7 +19,6 @@ import typings.typescriptEventHandler.funcMod.Action
 import typings.typescriptEventHandler.funcMod.AsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webHookMod {
@@ -29,16 +28,16 @@ object webHookMod {
   class IssueWebHook protected ()
     extends WebHook[IssueWebHookData, typings.typedGithubApi.webHooksMod.IssueWebHookData] {
     def this(options: OptionsOrRef) = this()
-    def this(secret: js.UndefOr[scala.Nothing], options: OptionsOrRef) = this()
     def this(secret: String, options: OptionsOrRef) = this()
+    def this(secret: Unit, options: OptionsOrRef) = this()
   }
   
   @JSImport("typed-github-api/dist/web-hook", "WebHook")
   @js.native
   abstract class WebHook[TData /* <: WebHookData */, TApiData /* <: typings.typedGithubApi.webHooksMod.WebHookData */] protected () extends GitHubRef {
     def this(options: OptionsOrRef) = this()
-    def this(secret: js.UndefOr[scala.Nothing], options: OptionsOrRef) = this()
     def this(secret: String, options: OptionsOrRef) = this()
+    def this(secret: Unit, options: OptionsOrRef) = this()
     
     /* protected */ def convertData(request: WebHookData, data: TApiData): TData = js.native
     
@@ -55,13 +54,14 @@ object webHookMod {
     var secret: js.Any = js.native
   }
   
-  @js.native
-  trait IssueWebHookData extends WebHookData {
+  trait IssueWebHookData
+    extends StObject
+       with WebHookData {
     
     @JSName("action")
-    var action_IssueWebHookData: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened = js.native
+    var action_IssueWebHookData: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
     
-    var issue: Issue = js.native
+    var issue: Issue
   }
   object IssueWebHookData {
     
@@ -90,16 +90,15 @@ object webHookMod {
     }
   }
   
-  @js.native
   trait WebHookData extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var event: String = js.native
+    var event: String
     
-    var id: String = js.native
+    var id: String
     
-    var sender: UserSummary = js.native
+    var sender: UserSummary
   }
   object WebHookData {
     

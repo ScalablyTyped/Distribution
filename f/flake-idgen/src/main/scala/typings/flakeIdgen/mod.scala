@@ -4,29 +4,29 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("flake-idgen", JSImport.Namespace)
   @js.native
-  class ^ () extends FlakeId {
+  class ^ ()
+    extends StObject
+       with FlakeId {
     def this(options: ConstructorOptions) = this()
   }
   
-  @js.native
   trait ConstructorOptions extends StObject {
     
-    var datacenter: js.UndefOr[Double] = js.native
+    var datacenter: js.UndefOr[Double] = js.undefined
     
-    var epoch: js.UndefOr[Double] = js.native
+    var epoch: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
-    var seqMask: js.UndefOr[Double] = js.native
+    var seqMask: js.UndefOr[Double] = js.undefined
     
-    var worker: js.UndefOr[Double] = js.native
+    var worker: js.UndefOr[Double] = js.undefined
   }
   object ConstructorOptions {
     

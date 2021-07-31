@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.geometry.Point
 import typings.kendoUi.kendo.geometry.Transformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element extends Class {
+trait Element
+  extends StObject
+     with Class {
   
   def bbox(): typings.kendoUi.kendo.geometry.Rect = js.native
   

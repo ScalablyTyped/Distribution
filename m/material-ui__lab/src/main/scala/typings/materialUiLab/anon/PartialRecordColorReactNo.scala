@@ -3,20 +3,18 @@ package typings.materialUiLab.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<@material-ui/lab.@material-ui/lab/Alert/Alert.Color, react.react.ReactNode>> */
-@js.native
 trait PartialRecordColorReactNo extends StObject {
   
-  var error: js.UndefOr[ReactNode] = js.native
+  var error: js.UndefOr[ReactNode] = js.undefined
   
-  var info: js.UndefOr[ReactNode] = js.native
+  var info: js.UndefOr[ReactNode] = js.undefined
   
-  var success: js.UndefOr[ReactNode] = js.native
+  var success: js.UndefOr[ReactNode] = js.undefined
   
-  var warning: js.UndefOr[ReactNode] = js.native
+  var warning: js.UndefOr[ReactNode] = js.undefined
 }
 object PartialRecordColorReactNo {
   

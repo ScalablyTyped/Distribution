@@ -10,9 +10,9 @@ Package to share code between ipfs and ipfs-http-client
 | ------------------ | :-------------: |
 | Full name          | ipfs-core-utils |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 6 |
-| # downloads        | 193415 |
+| # releases         | 86 |
+| # dependents       | 9 |
+| # downloads        | 389020 |
 | # stars            | 0 |
 
 ## Links

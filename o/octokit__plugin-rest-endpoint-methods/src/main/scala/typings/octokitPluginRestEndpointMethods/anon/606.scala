@@ -10,24 +10,22 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `606` extends StObject {
   
-  var parameters: RequestParameters with (Omit[
+  var parameters: RequestParameters & (Omit[
     ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
     baseUrl | headers | mediaType
-  ]) = js.native
+  ])
   
-  var response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]
 }
 object `606` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[
+    parameters: RequestParameters & (Omit[
       ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
       baseUrl | headers | mediaType
     ]),
@@ -42,7 +40,7 @@ object `606` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[
+      value: RequestParameters & (Omit[
           ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
           baseUrl | headers | mediaType
         ])

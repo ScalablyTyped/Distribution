@@ -1,28 +1,31 @@
 package typings.insertCss
 
+import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleSheet
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("insert-css", "insertCss")
+  @JSImport("insert-css", JSImport.Namespace)
   @js.native
-  def insertCss(css: String): InsertCssStyleElement = js.native
-  @JSImport("insert-css", "insertCss")
-  @js.native
-  def insertCss(css: String, options: InsertCssOptions): InsertCssStyleElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def insertCss(css: String): InsertCssStyleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any]).asInstanceOf[InsertCssStyleElement]
+  @scala.inline
+  def insertCss(css: String, options: InsertCssOptions): InsertCssStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[InsertCssStyleElement]
+  
   trait InsertCssOptions extends StObject {
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var prepend: js.UndefOr[Boolean] = js.native
+    var prepend: js.UndefOr[Boolean] = js.undefined
   }
   object InsertCssOptions {
     
@@ -50,7 +53,29 @@ object mod {
   }
   
   @js.native
-  trait InsertCssStyleElement extends HTMLStyleElement {
+  trait InsertCssStyleElement
+    extends StObject
+       with HTMLStyleElement {
+    
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     var styleSheet: js.UndefOr[CSSStyleSheet] = js.native
   }

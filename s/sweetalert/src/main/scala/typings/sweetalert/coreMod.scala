@@ -6,7 +6,6 @@ import typings.sweetalert.stateMod.ActionOptions
 import typings.sweetalert.stateMod.SwalState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod extends Shortcut {
@@ -22,7 +21,7 @@ object coreMod extends Shortcut {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type SwalParams is not an array type */ params: SwalParams
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     var close: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[String], Unit]] = js.native
     

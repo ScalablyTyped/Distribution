@@ -3,19 +3,17 @@ package typings.devextreme.anon
 import typings.devextreme.devextremeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseSize extends StObject {
   
-  var baseSize: js.UndefOr[Double | auto] = js.native
+  var baseSize: js.UndefOr[Double | auto] = js.undefined
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var screen: js.UndefOr[String] = js.native
+  var screen: js.UndefOr[String] = js.undefined
   
-  var shrink: js.UndefOr[Double] = js.native
+  var shrink: js.UndefOr[Double] = js.undefined
 }
 object BaseSize {
   

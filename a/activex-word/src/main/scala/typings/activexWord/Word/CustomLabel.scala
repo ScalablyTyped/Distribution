@@ -2,48 +2,46 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLabel extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DotMatrix: Boolean = js.native
+  val DotMatrix: Boolean
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var HorizontalPitch: Double = js.native
+  var HorizontalPitch: Double
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var NumberAcross: Double = js.native
+  var NumberAcross: Double
   
-  var NumberDown: Double = js.native
+  var NumberDown: Double
   
-  var PageSize: WdCustomLabelPageSize = js.native
+  var PageSize: WdCustomLabelPageSize
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var SideMargin: Double = js.native
+  var SideMargin: Double
   
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
-  val Valid: Boolean = js.native
+  val Valid: Boolean
   
-  var VerticalPitch: Double = js.native
+  var VerticalPitch: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
   @JSName("Word.CustomLabel_typekey")
-  var WordDotCustomLabel_typekey: CustomLabel = js.native
+  var WordDotCustomLabel_typekey: CustomLabel
 }
 object CustomLabel {
   

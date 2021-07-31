@@ -4,10 +4,13 @@ import typings.playable.anon.Scoped
 import typings.playable.typesMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registrationsMod {
+  
+  @JSImport("playable/dist/src/core/dependency-container/registrations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -27,9 +30,8 @@ object registrationsMod {
     @scala.inline
     def asFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asFunction")(x.asInstanceOf[js.Any])
     
-    @JSImport("playable/dist/src/core/dependency-container/registrations", "default.asValue")
-    @js.native
-    def asValue(value: js.Any): js.Any = js.native
+    @scala.inline
+    def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("playable/dist/src/core/dependency-container/registrations", "PROPERTY_FOR_DEPENDENCIES")
@@ -44,11 +46,9 @@ object registrationsMod {
   @js.native
   val asFunction: js.Any = js.native
   
-  @JSImport("playable/dist/src/core/dependency-container/registrations", "asValue")
-  @js.native
-  def asValue(value: js.Any): js.Any = js.native
+  @scala.inline
+  def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("playable/dist/src/core/dependency-container/registrations", "makeFluidInterface")
-  @js.native
-  def makeFluidInterface(obj: IOptions): Scoped = js.native
+  @scala.inline
+  def makeFluidInterface(obj: IOptions): Scoped = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFluidInterface")(obj.asInstanceOf[js.Any]).asInstanceOf[Scoped]
 }

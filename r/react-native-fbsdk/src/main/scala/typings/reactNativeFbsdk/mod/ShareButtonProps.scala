@@ -3,21 +3,19 @@ package typings.reactNativeFbsdk.mod
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareButtonProps extends StObject {
   
   /**
     * Content to be shared.
     */
-  var shareContent: ShareContent = js.native
+  var shareContent: ShareContent
   
   /**
     * View style, if any.
     */
-  var style: js.UndefOr[ViewStyle] = js.native
+  var style: js.UndefOr[ViewStyle] = js.undefined
 }
 object ShareButtonProps {
   

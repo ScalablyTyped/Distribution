@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskEncryptionStatus extends StObject {
   
   /** This is always *sql#diskEncryptionStatus*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** KMS key version used to encrypt the Cloud SQL instance resource */
-  var kmsKeyVersionName: js.UndefOr[String] = js.native
+  var kmsKeyVersionName: js.UndefOr[String] = js.undefined
 }
 object DiskEncryptionStatus {
   

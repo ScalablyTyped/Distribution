@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServiceActionExecutionParametersInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The identifier of the provisioned product.
     */
-  var ProvisionedProductId: Id = js.native
+  var ProvisionedProductId: Id
   
   /**
     * The self-service action identifier.
     */
-  var ServiceActionId: Id = js.native
+  var ServiceActionId: Id
 }
 object DescribeServiceActionExecutionParametersInput {
   

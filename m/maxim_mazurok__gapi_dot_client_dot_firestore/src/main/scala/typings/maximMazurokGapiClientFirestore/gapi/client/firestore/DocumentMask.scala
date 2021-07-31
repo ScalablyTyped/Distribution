@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentMask extends StObject {
   
   /** The list of field paths in the mask. See Document.fields for a field path syntax reference. */
-  var fieldPaths: js.UndefOr[js.Array[String]] = js.native
+  var fieldPaths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DocumentMask {
   

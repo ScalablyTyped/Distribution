@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.SelectionChanged event.
   */
-@js.native
-trait ASPxClientVerticalGridSelectionEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientVerticalGridSelectionEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets whether all records displayed within a page have been selected or unselected.
     */
-  var isAllRecordsOnPage: Boolean = js.native
+  var isAllRecordsOnPage: Boolean
   
   /**
     * Gets whether a selection has been changed on the server.
     */
-  var isChangedOnServer: Boolean = js.native
+  var isChangedOnServer: Boolean
   
   /**
     * Gets whether the record has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
   
   /**
     * Gets the visible index of the record whose selected state has been changed.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientVerticalGridSelectionEventArgs {
   

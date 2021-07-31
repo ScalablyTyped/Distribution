@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerManagedDatastoreS3Storage extends StObject {
   
   /**
     * The name of the S3 bucket in which data store data is stored.
     */
-  var bucket: BucketName = js.native
+  var bucket: BucketName
   
   /**
     * Optional. The prefix used to create the keys of the data store data objects. Each object in an S3 bucket has a key that is its unique identifier in the bucket. Each object in a bucket has exactly one key. The prefix must end with a forward slash (/).
     */
-  var keyPrefix: js.UndefOr[S3KeyPrefix] = js.native
+  var keyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
   
   /**
     * The ARN of the role that grants AWS IoT Analytics permission to interact with your Amazon S3 resources.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object CustomerManagedDatastoreS3Storage {
   

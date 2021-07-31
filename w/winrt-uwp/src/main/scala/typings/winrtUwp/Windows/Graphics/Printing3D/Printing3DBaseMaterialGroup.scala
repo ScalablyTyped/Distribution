@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of base materials used in the 3D model. */
-@js.native
 trait Printing3DBaseMaterialGroup extends StObject {
   
   /** Gets a group of base materials used in the 3D model. */
-  var bases: IVector[Printing3DBaseMaterial] = js.native
+  var bases: IVector[Printing3DBaseMaterial]
   
   /** Gets the identifier (ID) of the base material group. */
-  var materialGroupId: Double = js.native
+  var materialGroupId: Double
 }
 object Printing3DBaseMaterialGroup {
   

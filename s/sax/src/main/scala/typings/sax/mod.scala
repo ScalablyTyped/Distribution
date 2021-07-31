@@ -32,10 +32,13 @@ import typings.sax.saxStrings.unpipe
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("sax", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sax", "EVENTS")
   @js.native
@@ -45,8 +48,8 @@ object mod {
   @js.native
   class SAXParser () extends StObject {
     def this(strict: Boolean) = this()
-    def this(strict: js.UndefOr[scala.Nothing], opt: SAXOptions) = this()
     def this(strict: Boolean, opt: SAXOptions) = this()
+    def this(strict: Unit, opt: SAXOptions) = this()
     
     var ENTITIES: StringDictionary[String] = js.native
     
@@ -119,8 +122,8 @@ object mod {
   @js.native
   class SAXStream () extends Duplex {
     def this(strict: Boolean) = this()
-    def this(strict: js.UndefOr[scala.Nothing], opt: SAXOptions) = this()
     def this(strict: Boolean, opt: SAXOptions) = this()
+    def this(strict: Unit, opt: SAXOptions) = this()
     
     var _parser: SAXParser = js.native
     
@@ -180,38 +183,29 @@ object mod {
     def on_unpipe(event: unpipe, listener: js.ThisFunction1[/* this */ this.type, /* src */ Readable, Unit]): this.type = js.native
   }
   
-  @JSImport("sax", "createStream")
-  @js.native
-  def createStream(): SAXStream = js.native
-  @JSImport("sax", "createStream")
-  @js.native
-  def createStream(strict: js.UndefOr[scala.Nothing], opt: SAXOptions): SAXStream = js.native
-  @JSImport("sax", "createStream")
-  @js.native
-  def createStream(strict: Boolean): SAXStream = js.native
-  @JSImport("sax", "createStream")
-  @js.native
-  def createStream(strict: Boolean, opt: SAXOptions): SAXStream = js.native
+  @scala.inline
+  def createStream(): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[SAXStream]
+  @scala.inline
+  def createStream(strict: Boolean): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXStream]
+  @scala.inline
+  def createStream(strict: Boolean, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
+  @scala.inline
+  def createStream(strict: Unit, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
   
-  @JSImport("sax", "parser")
-  @js.native
-  def parser(): SAXParser = js.native
-  @JSImport("sax", "parser")
-  @js.native
-  def parser(strict: js.UndefOr[scala.Nothing], opt: SAXOptions): SAXParser = js.native
-  @JSImport("sax", "parser")
-  @js.native
-  def parser(strict: Boolean): SAXParser = js.native
-  @JSImport("sax", "parser")
-  @js.native
-  def parser(strict: Boolean, opt: SAXOptions): SAXParser = js.native
+  @scala.inline
+  def parser(): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[SAXParser]
+  @scala.inline
+  def parser(strict: Boolean): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXParser]
+  @scala.inline
+  def parser(strict: Boolean, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
+  @scala.inline
+  def parser(strict: Unit, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
   
-  @js.native
   trait BaseTag extends StObject {
     
-    var isSelfClosing: Boolean = js.native
+    var isSelfClosing: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object BaseTag {
     
@@ -232,10 +226,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait QualifiedAttribute extends QualifiedName {
+  trait QualifiedAttribute
+    extends StObject
+       with QualifiedName {
     
-    var value: String = js.native
+    var value: String
   }
   object QualifiedAttribute {
     
@@ -253,16 +248,15 @@ object mod {
     }
   }
   
-  @js.native
   trait QualifiedName extends StObject {
     
-    var local: String = js.native
+    var local: String
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object QualifiedName {
     
@@ -290,14 +284,15 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.sax.mod.BaseTag because var conflicts: name. Inlined isSelfClosing */ @js.native
-  trait QualifiedTag extends QualifiedName {
+  - typings.sax.mod.BaseTag because var conflicts: name. Inlined isSelfClosing */ trait QualifiedTag
+    extends StObject
+       with QualifiedName {
     
-    var attributes: StringDictionary[QualifiedAttribute] = js.native
+    var attributes: StringDictionary[QualifiedAttribute]
     
-    var isSelfClosing: Boolean = js.native
+    var isSelfClosing: Boolean
     
-    var ns: StringDictionary[String] = js.native
+    var ns: StringDictionary[String]
   }
   object QualifiedTag {
     
@@ -329,20 +324,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SAXOptions extends StObject {
     
-    var lowercase: js.UndefOr[Boolean] = js.native
+    var lowercase: js.UndefOr[Boolean] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var noscript: js.UndefOr[Boolean] = js.native
+    var noscript: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[Boolean] = js.native
+    var position: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var xmlns: js.UndefOr[Boolean] = js.native
+    var xmlns: js.UndefOr[Boolean] = js.undefined
   }
   object SAXOptions {
     
@@ -393,10 +387,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Tag extends BaseTag {
+  trait Tag
+    extends StObject
+       with BaseTag {
     
-    var attributes: StringDictionary[String] = js.native
+    var attributes: StringDictionary[String]
   }
   object Tag {
     

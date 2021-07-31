@@ -2,21 +2,19 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverComponentSpec extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var hovering: Boolean = js.native
+  var hovering: Boolean
   
-  var left: Double = js.native
+  var left: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object HoverComponentSpec {
   

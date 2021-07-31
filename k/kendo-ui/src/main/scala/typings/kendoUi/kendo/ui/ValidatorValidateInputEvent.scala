@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValidatorValidateInputEvent extends ValidatorEvent {
+trait ValidatorValidateInputEvent
+  extends StObject
+     with ValidatorEvent {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[JQuery] = js.native
+  var input: js.UndefOr[JQuery] = js.undefined
   
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object ValidatorValidateInputEvent {
   

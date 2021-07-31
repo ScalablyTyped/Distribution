@@ -2,101 +2,99 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsLambdaFunctionDetails extends StObject {
   
   /**
     * An AwsLambdaFunctionCode object.
     */
-  var Code: js.UndefOr[AwsLambdaFunctionCode] = js.native
+  var Code: js.UndefOr[AwsLambdaFunctionCode] = js.undefined
   
   /**
     * The SHA256 hash of the function's deployment package.
     */
-  var CodeSha256: js.UndefOr[NonEmptyString] = js.native
+  var CodeSha256: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The function's dead letter queue.
     */
-  var DeadLetterConfig: js.UndefOr[AwsLambdaFunctionDeadLetterConfig] = js.native
+  var DeadLetterConfig: js.UndefOr[AwsLambdaFunctionDeadLetterConfig] = js.undefined
   
   /**
     * The function's environment variables.
     */
-  var Environment: js.UndefOr[AwsLambdaFunctionEnvironment] = js.native
+  var Environment: js.UndefOr[AwsLambdaFunctionEnvironment] = js.undefined
   
   /**
     * The name of the function.
     */
-  var FunctionName: js.UndefOr[NonEmptyString] = js.native
+  var FunctionName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The function that Lambda calls to begin executing your function.
     */
-  var Handler: js.UndefOr[NonEmptyString] = js.native
+  var Handler: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed CMK.
     */
-  var KmsKeyArn: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the function was last updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastModified: js.UndefOr[NonEmptyString] = js.native
+  var LastModified: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The function's layers.
     */
-  var Layers: js.UndefOr[AwsLambdaFunctionLayerList] = js.native
+  var Layers: js.UndefOr[AwsLambdaFunctionLayerList] = js.undefined
   
   /**
     * For Lambda@Edge functions, the ARN of the master function.
     */
-  var MasterArn: js.UndefOr[NonEmptyString] = js.native
+  var MasterArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The memory that's allocated to the function.
     */
-  var MemorySize: js.UndefOr[Integer] = js.native
+  var MemorySize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The latest updated revision of the function or alias.
     */
-  var RevisionId: js.UndefOr[NonEmptyString] = js.native
+  var RevisionId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The function's execution role.
     */
-  var Role: js.UndefOr[NonEmptyString] = js.native
+  var Role: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The runtime environment for the Lambda function.
     */
-  var Runtime: js.UndefOr[NonEmptyString] = js.native
+  var Runtime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The amount of time that Lambda allows a function to run before stopping it.
     */
-  var Timeout: js.UndefOr[Integer] = js.native
+  var Timeout: js.UndefOr[Integer] = js.undefined
   
   /**
     * The function's AWS X-Ray tracing configuration.
     */
-  var TracingConfig: js.UndefOr[AwsLambdaFunctionTracingConfig] = js.native
+  var TracingConfig: js.UndefOr[AwsLambdaFunctionTracingConfig] = js.undefined
   
   /**
     * The version of the Lambda function.
     */
-  var Version: js.UndefOr[NonEmptyString] = js.native
+  var Version: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The function's networking configuration.
     */
-  var VpcConfig: js.UndefOr[AwsLambdaFunctionVpcConfig] = js.native
+  var VpcConfig: js.UndefOr[AwsLambdaFunctionVpcConfig] = js.undefined
 }
 object AwsLambdaFunctionDetails {
   

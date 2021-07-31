@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicIds extends StObject {
   
   /**
     * A list of Freebase topic IDs associated with the video. You can retrieve information about each topic using the Freebase Topic API.
     */
-  var topicIds: js.Array[String] = js.native
+  var topicIds: js.Array[String]
 }
 object TopicIds {
   

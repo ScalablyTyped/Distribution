@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BCCEmailArchive_ extends StObject {
   
   /**
@@ -15,37 +13,37 @@ trait BCCEmailArchive_ extends StObject {
     js.Array[
       /* Contains details about the history of the BCC email archive configuration. */ BccEmailArchiveHistory
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The last index position in the result set.
     */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the next chunk of records based on the search request. It is `null` if this is the last set of results for the search.
     */
-  var nextUri: js.UndefOr[String] = js.native
+  var nextUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the prior chunk of records based on the search request. It is `null` if this is the first set of results for the search.
     */
-  var previousUri: js.UndefOr[String] = js.native
+  var previousUri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results in this response. Because you can filter which entries are included in the response, this value is always less than or equal to the `totalSetSize`.
     */
-  var resultSetSize: js.UndefOr[String] = js.native
+  var resultSetSize: js.UndefOr[String] = js.undefined
   
   /**
     * The starting index position of the current result set.
     */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the result set. This value is always greater than or equal to the value of `resultSetSize`.
     */
-  var totalSetSize: js.UndefOr[String] = js.native
+  var totalSetSize: js.UndefOr[String] = js.undefined
 }
 object BCCEmailArchive_ {
   

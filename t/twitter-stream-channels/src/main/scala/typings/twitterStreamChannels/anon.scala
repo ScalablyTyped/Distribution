@@ -2,15 +2,13 @@ package typings.twitterStreamChannels
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RemoveAllListeners extends StObject {
     
-    var removeAllListeners: Boolean = js.native
+    var removeAllListeners: Boolean
   }
   object RemoveAllListeners {
     

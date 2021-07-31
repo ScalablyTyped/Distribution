@@ -3,39 +3,37 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRow extends StObject {
   
   /** The zero-based end index of this row, exclusive, in UTF-16 code units. */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /** The zero-based start index of this row, in UTF-16 code units. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /** The suggested deletion IDs. If empty, then there are no suggested deletions of this content. */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested insertion IDs. A TableRow may have multiple insertion IDs if it is a nested suggested change. If empty, then this is not a suggested insertion. */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested style changes to this row, keyed by suggestion ID. */
   var suggestedTableRowStyleChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The contents and style of each cell in this row. It is possible for a table to be non-rectangular, so some rows may have a different number of cells than other rows in the same
     * table.
     */
-  var tableCells: js.UndefOr[js.Array[TableCell]] = js.native
+  var tableCells: js.UndefOr[js.Array[TableCell]] = js.undefined
   
   /** The style of the table row. */
-  var tableRowStyle: js.UndefOr[TableRowStyle] = js.native
+  var tableRowStyle: js.UndefOr[TableRowStyle] = js.undefined
 }
 object TableRow {
   
@@ -82,7 +80,7 @@ object TableRow {
     def setSuggestedTableRowStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline

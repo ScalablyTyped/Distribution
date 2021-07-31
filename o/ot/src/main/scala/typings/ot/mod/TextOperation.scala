@@ -2,7 +2,6 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "TextOperation")
@@ -110,48 +109,45 @@ class TextOperation () extends StObject {
 /* static members */
 object TextOperation {
   
+  @JSImport("ot", "TextOperation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Converts a plain JS object into an operation and validates it.
     * @param operation The op
     */
-  @JSImport("ot", "TextOperation.fromJSON")
-  @js.native
-  def fromJSON(operation: SerializedTextOperation): TextOperation = js.native
+  @scala.inline
+  def fromJSON(operation: SerializedTextOperation): TextOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(operation.asInstanceOf[js.Any]).asInstanceOf[TextOperation]
   
   /**
     * Delete ops: Delete the next n characters. Represented by negative ints.
     * @param operation The op
     */
-  @JSImport("ot", "TextOperation.isDelete")
-  @js.native
-  def isDelete(operation: String): Boolean = js.native
-  @JSImport("ot", "TextOperation.isDelete")
-  @js.native
-  def isDelete(operation: Double): Boolean = js.native
+  @scala.inline
+  def isDelete(operation: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDelete")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDelete(operation: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDelete")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Insert ops: Insert a given string at the current cursor position.
     *   Represented by strings.
     * @param operation The op
     */
-  @JSImport("ot", "TextOperation.isInsert")
-  @js.native
-  def isInsert(operation: String): Boolean = js.native
-  @JSImport("ot", "TextOperation.isInsert")
-  @js.native
-  def isInsert(operation: Double): Boolean = js.native
+  @scala.inline
+  def isInsert(operation: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInsert")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isInsert(operation: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInsert")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Retain ops: Advance the cursor position by a given number of characters.
     *   Represented by positive ints.
     * @param operation The op
     */
-  @JSImport("ot", "TextOperation.isRetain")
-  @js.native
-  def isRetain(operation: String): Boolean = js.native
-  @JSImport("ot", "TextOperation.isRetain")
-  @js.native
-  def isRetain(operation: Double): Boolean = js.native
+  @scala.inline
+  def isRetain(operation: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetain")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isRetain(operation: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetain")(operation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Transform takes two operations A and B that happened concurrently and
@@ -161,7 +157,6 @@ object TextOperation {
     * @param left The left op
     * @param right The right op
     */
-  @JSImport("ot", "TextOperation.transform")
-  @js.native
-  def transform(left: TextOperation, right: TextOperation): TextOperation = js.native
+  @scala.inline
+  def transform(left: TextOperation, right: TextOperation): TextOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[TextOperation]
 }

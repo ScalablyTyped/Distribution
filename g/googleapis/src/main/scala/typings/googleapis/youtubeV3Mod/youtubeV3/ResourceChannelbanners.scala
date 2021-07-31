@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Channelbanners")
@@ -43,7 +42,7 @@ class ResourceChannelbanners protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(callback: BodyResponseCallback[SchemaChannelBannerResource]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelBannerResource] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(params: ParamsResourceChannelbannersInsert): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(
     params: ParamsResourceChannelbannersInsert,

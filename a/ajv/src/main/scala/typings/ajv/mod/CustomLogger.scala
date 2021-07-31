@@ -2,17 +2,15 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLogger extends StObject {
   
-  def error(args: js.Any*): js.Any = js.native
+  def error(args: js.Any*): js.Any
   
-  def log(args: js.Any*): js.Any = js.native
+  def log(args: js.Any*): js.Any
   
-  def warn(args: js.Any*): js.Any = js.native
+  def warn(args: js.Any*): js.Any
 }
 object CustomLogger {
   

@@ -8,10 +8,13 @@ import typings.vegaTypings.runtimeMod.Item
 import typings.vegaTypings.runtimeMod.TooltipHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("vega-tooltip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a tooltip handler and register it with the provided view.
@@ -19,12 +22,10 @@ object mod {
     * @param view The Vega view.
     * @param opt Tooltip options.
     */
-  @JSImport("vega-tooltip", JSImport.Default)
-  @js.native
-  def default(view: View): Handler = js.native
-  @JSImport("vega-tooltip", JSImport.Default)
-  @js.native
-  def default(view: View, opt: Options): Handler = js.native
+  @scala.inline
+  def default(view: View): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  @scala.inline
+  def default(view: View, opt: Options): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
   object DEFAULT_OPTIONS {
     
@@ -65,9 +66,8 @@ object mod {
     @JSImport("vega-tooltip", "DEFAULT_OPTIONS.sanitize")
     @js.native
     def sanitize: js.Function1[/* value */ js.Any, String] = js.native
-    @JSImport("vega-tooltip", "DEFAULT_OPTIONS.sanitize")
-    @js.native
-    def sanitize(value: js.Any): String = js.native
+    @scala.inline
+    def sanitize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def sanitize_=(x: js.Function1[/* value */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitize")(x.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object mod {
     /**
       * The handler function. We bind this to this function in the constructor.
       */
-    def call(handler: js.Any, event: MouseEvent, item: Item[_], value: js.Any): Unit = js.native
+    def call(handler: js.Any, event: MouseEvent, item: Item[js.Any], value: js.Any): Unit = js.native
     /**
       * The handler function. We bind this to this function in the constructor.
       */
@@ -131,22 +131,19 @@ object mod {
     * @param offsetX Horizontal offset.
     * @param offsetY Vertical offset.
     */
-  @JSImport("vega-tooltip", "calculatePosition")
-  @js.native
-  def calculatePosition(event: MouseEvent, tooltipBox: Height, offsetX: Double, offsetY: Double): X = js.native
+  @scala.inline
+  def calculatePosition(event: MouseEvent, tooltipBox: Height, offsetX: Double, offsetY: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePosition")(event.asInstanceOf[js.Any], tooltipBox.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[X]
   
-  @JSImport("vega-tooltip", "createDefaultStyle")
-  @js.native
-  def createDefaultStyle(id: String): String = js.native
+  @scala.inline
+  def createDefaultStyle(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultStyle")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Escape special HTML characters.
     *
     * @param value A value to convert to string and HTML-escape.
     */
-  @JSImport("vega-tooltip", "escapeHTML")
-  @js.native
-  def escapeHTML(value: js.Any): String = js.native
+  @scala.inline
+  def escapeHTML(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Format the value to be shown in the tooltip.
@@ -154,46 +151,42 @@ object mod {
     * @param value The value to show in the tooltip.
     * @param valueToHtml Function to convert a single cell value to an HTML string
     */
-  @JSImport("vega-tooltip", "formatValue")
-  @js.native
-  def formatValue(value: js.Any, valueToHtml: js.Function1[/* value */ js.Any, String], maxDepth: Double): String = js.native
+  @scala.inline
+  def formatValue(value: js.Any, valueToHtml: js.Function1[/* value */ js.Any, String], maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], valueToHtml.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-tooltip", "replacer")
-  @js.native
-  def replacer(maxDepth: Double): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _] = js.native
+  @scala.inline
+  def replacer(maxDepth: Double): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(maxDepth.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]]
   
   /**
     * Stringify any JS object to valid JSON
     */
-  @JSImport("vega-tooltip", "stringify")
-  @js.native
-  def stringify(obj: js.Any, maxDepth: Double): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("vega-tooltip", "version")
   @js.native
   val version: String = js.native
   
   /* Inlined std.Partial<{  offsetX :number,   offsetY :number,   id :string,   styleId :string,   theme :string,   disableDefaultStyle :boolean,   sanitize :typeof escapeHTML,   maxDepth :number}> */
-  @js.native
   trait Options extends StObject {
     
-    var disableDefaultStyle: js.UndefOr[Boolean] = js.native
+    var disableDefaultStyle: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     var sanitize: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof escapeHTML */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var styleId: js.UndefOr[String] = js.native
+    var styleId: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object Options {
     

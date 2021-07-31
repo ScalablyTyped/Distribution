@@ -2,19 +2,17 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var creator: js.UndefOr[UserId] = js.native
+  var creator: js.UndefOr[UserId] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object Query {
   

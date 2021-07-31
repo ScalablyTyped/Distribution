@@ -5,7 +5,6 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.menu.IMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menu {
@@ -13,7 +12,8 @@ object menu {
   @JSGlobal("Ext.menu.Manager")
   @js.native
   class Manager ()
-    extends typings.extjs.Ext.menu.Manager
+    extends StObject
+       with typings.extjs.Ext.menu.Manager
   /* static members */
   object Manager {
     
@@ -25,74 +25,61 @@ object menu {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.menu.Manager.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.menu.Manager.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.menu.Manager.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.menu.Manager.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.menu.Manager.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.menu.Manager.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a Ext menu Menu object
       * @param menu String/Object The string menu id, an existing menu object reference, or a Menu config that will be used to generate and return a new Menu this.
       * @returns Ext.menu.Menu The specified menu, or null if none are found
       */
-    @JSGlobal("Ext.menu.Manager.get")
-    @js.native
-    def get(): IMenu = js.native
-    @JSGlobal("Ext.menu.Manager.get")
-    @js.native
-    def get(menu: js.Any): IMenu = js.native
+    @scala.inline
+    def get(): IMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[IMenu]
+    @scala.inline
+    def get(menu: js.Any): IMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(menu.asInstanceOf[js.Any]).asInstanceOf[IMenu]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.menu.Manager.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.menu.Manager.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Hides all menus that are currently visible
       * @returns Boolean success True if any active menus were hidden.
       */
-    @JSGlobal("Ext.menu.Manager.hideAll")
-    @js.native
-    def hideAll(): Boolean = js.native
+    @scala.inline
+    def hideAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAll")().asInstanceOf[Boolean]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.menu.Manager.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.menu.Manager.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.menu.Manager.self")
@@ -104,15 +91,15 @@ object menu {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.menu.Manager.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
   
   @JSGlobal("Ext.menu.MenuMgr")
   @js.native
   class MenuMgr ()
-    extends typings.extjs.Ext.menu.MenuMgr
+    extends StObject
+       with typings.extjs.Ext.menu.MenuMgr
   /* static members */
   object MenuMgr {
     
@@ -124,74 +111,61 @@ object menu {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.menu.MenuMgr.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.menu.MenuMgr.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.menu.MenuMgr.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.menu.MenuMgr.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.menu.MenuMgr.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.menu.MenuMgr.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns a Ext menu Menu object
       * @param menu String/Object The string menu id, an existing menu object reference, or a Menu config that will be used to generate and return a new Menu this.
       * @returns Ext.menu.Menu The specified menu, or null if none are found
       */
-    @JSGlobal("Ext.menu.MenuMgr.get")
-    @js.native
-    def get(): IMenu = js.native
-    @JSGlobal("Ext.menu.MenuMgr.get")
-    @js.native
-    def get(menu: js.Any): IMenu = js.native
+    @scala.inline
+    def get(): IMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[IMenu]
+    @scala.inline
+    def get(menu: js.Any): IMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(menu.asInstanceOf[js.Any]).asInstanceOf[IMenu]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.menu.MenuMgr.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.menu.MenuMgr.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Hides all menus that are currently visible
       * @returns Boolean success True if any active menus were hidden.
       */
-    @JSGlobal("Ext.menu.MenuMgr.hideAll")
-    @js.native
-    def hideAll(): Boolean = js.native
+    @scala.inline
+    def hideAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAll")().asInstanceOf[Boolean]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.menu.MenuMgr.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.menu.MenuMgr.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.menu.MenuMgr.self")
@@ -203,8 +177,7 @@ object menu {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.menu.MenuMgr.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
 }

@@ -2,29 +2,27 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearStorageDataOptions extends StObject {
   
   /**
     * Should follow `window.location.origin`’s representation `scheme://host:port`.
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /**
     * The types of quotas to clear, can contain: `temporary`, `persistent`,
     * `syncable`. If not specified, clear all quotas.
     */
-  var quotas: js.UndefOr[js.Array[String]] = js.native
+  var quotas: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The types of storages to clear, can contain: `appcache`, `cookies`,
     * `filesystem`, `indexdb`, `localstorage`, `shadercache`, `websql`,
     * `serviceworkers`, `cachestorage`. If not specified, clear all storage types.
     */
-  var storages: js.UndefOr[js.Array[String]] = js.native
+  var storages: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ClearStorageDataOptions {
   

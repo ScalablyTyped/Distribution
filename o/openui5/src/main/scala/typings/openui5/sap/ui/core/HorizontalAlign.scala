@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait HorizontalAlign extends StObject
 object HorizontalAlign extends StObject {
   
   @js.native
-  sealed trait Begin extends HorizontalAlign
+  sealed trait Begin
+    extends StObject
+       with HorizontalAlign
   
   @js.native
-  sealed trait Center extends HorizontalAlign
+  sealed trait Center
+    extends StObject
+       with HorizontalAlign
   
   @js.native
-  sealed trait End extends HorizontalAlign
+  sealed trait End
+    extends StObject
+       with HorizontalAlign
   
   @js.native
-  sealed trait Left extends HorizontalAlign
+  sealed trait Left
+    extends StObject
+       with HorizontalAlign
   
   @js.native
-  sealed trait Right extends HorizontalAlign
+  sealed trait Right
+    extends StObject
+       with HorizontalAlign
 }

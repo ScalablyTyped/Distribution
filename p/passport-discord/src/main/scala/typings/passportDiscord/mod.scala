@@ -12,14 +12,15 @@ import typings.passportOauth2.mod.VerifyCallback
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-discord", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Strategy {
+  class ^ protected ()
+    extends StObject
+       with Strategy {
     def this(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ js.Any,
       verify: js.Function4[
@@ -35,7 +36,7 @@ object mod {
     def this(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
       verify: js.Function5[
-            (/* req */ Request_[ParamsDictionary, _, _, Query]) | (/* accessToken */ String), 
+            (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) | (/* accessToken */ String), 
             /* refreshToken */ /* accessToken */ String, 
             (/* params */ js.Any) | (/* refreshToken */ String), 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
@@ -48,7 +49,7 @@ object mod {
     def this(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
       verify: js.Function6[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* params */ js.Any, 
             /* refreshToken */ String, 
@@ -59,20 +60,19 @@ object mod {
     ) = this()
   }
   
-  @js.native
   trait ConnectionInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var show_activity: Boolean = js.native
+    var show_activity: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var verified: Boolean = js.native
+    var verified: Boolean
     
-    var visibility: Double = js.native
+    var visibility: Double
   }
   object ConnectionInfo {
     
@@ -113,18 +113,17 @@ object mod {
     }
   }
   
-  @js.native
   trait GuildInfo extends StObject {
     
-    var icon: String = js.native
+    var icon: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var owner: Boolean = js.native
+    var owner: Boolean
     
-    var permissions: Double = js.native
+    var permissions: Double
   }
   object GuildInfo {
     
@@ -154,31 +153,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var avatar: String = js.native
+    var avatar: String
     
     // requires "email" scope
-    var connections: js.UndefOr[js.Array[ConnectionInfo]] = js.native
+    var connections: js.UndefOr[js.Array[ConnectionInfo]] = js.undefined
     
-    var discriminator: String = js.native
+    var discriminator: String
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var fetchedAt: String = js.native
+    var fetchedAt: String
     
-    var flags: Double = js.native
+    var flags: Double
     
     // requires "connection" scope
-    var guilds: js.UndefOr[js.Array[GuildInfo]] = js.native
+    var guilds: js.UndefOr[js.Array[GuildInfo]] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var mfa_enabled: Boolean = js.native
+    var mfa_enabled: Boolean
     
-    var verified: Boolean = js.native
+    var verified: Boolean
   }
   object Profile {
     
@@ -250,7 +249,9 @@ object mod {
   }
   
   @js.native
-  trait Strategy extends OAuth2Strategy {
+  trait Strategy
+    extends StObject
+       with OAuth2Strategy {
     
     def checkScope(
       scope: String,
@@ -259,10 +260,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
-  trait StrategyOptions extends StrategyOptionsBase {
+  trait StrategyOptions
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOptions {
     
@@ -283,31 +285,30 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsBase extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
     /** @see https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes */
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionsBase {
     
@@ -385,16 +386,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends StrategyOptionsBase {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     

@@ -8,45 +8,40 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {
   
-  @JSImport("flatpickr/dist/utils/dom", "clearNode")
+  @JSImport("flatpickr/dist/utils/dom", JSImport.Namespace)
   @js.native
-  def clearNode(node: HTMLElement): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("flatpickr/dist/utils/dom", "createElement")
-  @js.native
+  @scala.inline
+  def clearNode(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def createElement[T /* <: HTMLElement */](
     tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
     className: String
-  ): T = js.native
-  @JSImport("flatpickr/dist/utils/dom", "createElement")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def createElement[T /* <: HTMLElement */](
     tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
     className: String,
     content: String
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("flatpickr/dist/utils/dom", "createNumberInput")
-  @js.native
-  def createNumberInput(inputClassName: String): HTMLDivElement = js.native
-  @JSImport("flatpickr/dist/utils/dom", "createNumberInput")
-  @js.native
-  def createNumberInput(inputClassName: String, opts: Record[String, _]): HTMLDivElement = js.native
+  @scala.inline
+  def createNumberInput(inputClassName: String): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberInput")(inputClassName.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
+  @scala.inline
+  def createNumberInput(inputClassName: String, opts: Record[String, js.Any]): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumberInput")(inputClassName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
   
-  @JSImport("flatpickr/dist/utils/dom", "findParent")
-  @js.native
-  def findParent(node: Element, condition: js.Function1[/* n */ Element, Boolean]): js.UndefOr[Element] = js.native
+  @scala.inline
+  def findParent(node: Element, condition: js.Function1[/* n */ Element, Boolean]): js.UndefOr[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParent")(node.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Element]]
   
-  @JSImport("flatpickr/dist/utils/dom", "getEventTarget")
-  @js.native
-  def getEventTarget(event: Event): EventTarget | Null = js.native
+  @scala.inline
+  def getEventTarget(event: Event): EventTarget | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventTarget")(event.asInstanceOf[js.Any]).asInstanceOf[EventTarget | Null]
   
-  @JSImport("flatpickr/dist/utils/dom", "toggleClass")
-  @js.native
-  def toggleClass(elem: HTMLElement, className: String, bool: Boolean): Unit = js.native
+  @scala.inline
+  def toggleClass(elem: HTMLElement, className: String, bool: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleClass")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

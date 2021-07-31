@@ -5,15 +5,13 @@ import typings.spotifyWebPlaybackSdk.Spotify.PlayerInit
 import typings.spotifyWebPlaybackSdk.Spotify.SpotifyPlayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofSpotify extends StObject {
     
-    var SpotifyPlayer: Instantiable1[/* options */ PlayerInit, typings.spotifyWebPlaybackSdk.Spotify.SpotifyPlayer] = js.native
+    var SpotifyPlayer: Instantiable1[/* options */ PlayerInit, typings.spotifyWebPlaybackSdk.Spotify.SpotifyPlayer]
   }
   object TypeofSpotify {
     

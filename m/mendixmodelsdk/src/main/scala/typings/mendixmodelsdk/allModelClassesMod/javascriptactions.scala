@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object javascriptactions {
@@ -43,9 +42,8 @@ object javascriptactions {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction.structureTypeName")
@@ -91,9 +89,8 @@ object javascriptactions {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.structureTypeName")
@@ -138,9 +135,8 @@ object javascriptactions {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.structureTypeName")

@@ -21,7 +21,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XGridRowSelection.addSelectionListener()} . You than will be notified for any selection change.
   * @since OOo 3.3
   */
-@js.native
 trait UnoControlGrid
-  extends UnoControl
+  extends StObject
+     with UnoControl
      with XGridControl
      with XGridRowSelection
 object UnoControlGrid {

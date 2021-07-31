@@ -3,12 +3,11 @@ package typings.fridaGum
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortableInvocationContext
-  extends /**
+  extends StObject
+     with /**
   * User-defined invocation data. Useful if you want to read an argument in `onEnter` and act on it in `onLeave`.
   */
 /* x */ StringDictionary[js.Any]
@@ -17,22 +16,22 @@ trait PortableInvocationContext
   /**
     * CPU registers. You may also update register values by assigning to these keys.
     */
-  var context: CpuContext = js.native
+  var context: CpuContext
   
   /**
     * Call depth of relative to other invocations.
     */
-  var depth: Double = js.native
+  var depth: Double
   
   /**
     * Return address.
     */
-  var returnAddress: NativePointer = js.native
+  var returnAddress: NativePointer
   
   /**
     * OS thread ID.
     */
-  var threadId: ThreadId = js.native
+  var threadId: ThreadId
 }
 object PortableInvocationContext {
   

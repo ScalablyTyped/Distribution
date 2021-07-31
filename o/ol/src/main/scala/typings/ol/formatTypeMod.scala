@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatTypeMod {
@@ -12,15 +11,15 @@ object formatTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FormatType with String] = js.native
+    def apply(value: String): js.UndefOr[FormatType & String] = js.native
     
-    /* "arraybuffer" */ val ARRAY_BUFFER: typings.ol.formatTypeMod.FormatType.ARRAY_BUFFER with String = js.native
+    /* "arraybuffer" */ val ARRAY_BUFFER: typings.ol.formatTypeMod.FormatType.ARRAY_BUFFER & String = js.native
     
-    /* "json" */ val JSON: typings.ol.formatTypeMod.FormatType.JSON with String = js.native
+    /* "json" */ val JSON: typings.ol.formatTypeMod.FormatType.JSON & String = js.native
     
-    /* "text" */ val TEXT: typings.ol.formatTypeMod.FormatType.TEXT with String = js.native
+    /* "text" */ val TEXT: typings.ol.formatTypeMod.FormatType.TEXT & String = js.native
     
-    /* "xml" */ val XML: typings.ol.formatTypeMod.FormatType.XML with String = js.native
+    /* "xml" */ val XML: typings.ol.formatTypeMod.FormatType.XML & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object formatTypeMod {
   object FormatType extends StObject {
     
     @js.native
-    sealed trait ARRAY_BUFFER extends FormatType
+    sealed trait ARRAY_BUFFER
+      extends StObject
+         with FormatType
     
     @js.native
-    sealed trait JSON extends FormatType
+    sealed trait JSON
+      extends StObject
+         with FormatType
     
     @js.native
-    sealed trait TEXT extends FormatType
+    sealed trait TEXT
+      extends StObject
+         with FormatType
     
     @js.native
-    sealed trait XML extends FormatType
+    sealed trait XML
+      extends StObject
+         with FormatType
   }
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DestinationAccessControl extends StObject {
   
   /**
     * Choose an Amazon S3 canned ACL for MediaConvert to apply to this output.
     */
-  var CannedAcl: js.UndefOr[S3ObjectCannedAcl] = js.native
+  var CannedAcl: js.UndefOr[S3ObjectCannedAcl] = js.undefined
 }
 object S3DestinationAccessControl {
   

@@ -2,21 +2,19 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharsToEscape extends StObject {
   
   /**
     * The characters to escape.
     */
-  var charsToEscape: String = js.native
+  var charsToEscape: String
   
   /**
     * The escape character.
     */
-  var escapeChar: String = js.native
+  var escapeChar: String
 }
 object CharsToEscape {
   

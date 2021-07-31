@@ -2,20 +2,20 @@ package typings.glReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Visitors {
   
-  @JSImport("gl-react", "Visitors.add")
+  @JSImport("gl-react", "Visitors")
   @js.native
-  def add(visitor: Visitor): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gl-react", "Visitors.get")
-  @js.native
-  def get(): js.Array[Visitor] = js.native
+  @scala.inline
+  def add(visitor: Visitor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gl-react", "Visitors.remove")
-  @js.native
-  def remove(visitor: Visitor): Unit = js.native
+  @scala.inline
+  def get(): js.Array[Visitor] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[Visitor]]
+  
+  @scala.inline
+  def remove(visitor: Visitor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

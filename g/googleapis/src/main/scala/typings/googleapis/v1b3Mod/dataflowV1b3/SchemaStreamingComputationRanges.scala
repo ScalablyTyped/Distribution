@@ -2,25 +2,23 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes full or partial data disk assignment information of the
   * computation ranges.
   */
-@js.native
 trait SchemaStreamingComputationRanges extends StObject {
   
   /**
     * The ID of the computation.
     */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /**
     * Data disk assignments for ranges from this computation.
     */
-  var rangeAssignments: js.UndefOr[js.Array[SchemaKeyRangeDataDiskAssignment]] = js.native
+  var rangeAssignments: js.UndefOr[js.Array[SchemaKeyRangeDataDiskAssignment]] = js.undefined
 }
 object SchemaStreamingComputationRanges {
   

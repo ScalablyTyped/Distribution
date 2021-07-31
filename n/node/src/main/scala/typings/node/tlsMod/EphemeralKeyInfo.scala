@@ -2,26 +2,24 @@ package typings.node.tlsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EphemeralKeyInfo extends StObject {
   
   /**
     * The name property is available only when type is 'ECDH'.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The size of parameter of an ephemeral key exchange.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The supported types are 'DH' and 'ECDH'.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object EphemeralKeyInfo {
   

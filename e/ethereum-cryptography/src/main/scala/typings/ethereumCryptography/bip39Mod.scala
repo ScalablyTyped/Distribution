@@ -3,41 +3,35 @@ package typings.ethereumCryptography
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bip39Mod {
   
-  @JSImport("ethereum-cryptography/bip39", "entropyToMnemonic")
+  @JSImport("ethereum-cryptography/bip39", JSImport.Namespace)
   @js.native
-  def entropyToMnemonic(entropy: Buffer, wordlist: js.Array[String]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereum-cryptography/bip39", "generateMnemonic")
-  @js.native
-  def generateMnemonic(wordlist: js.Array[String]): String = js.native
-  @JSImport("ethereum-cryptography/bip39", "generateMnemonic")
-  @js.native
-  def generateMnemonic(wordlist: js.Array[String], strength: Double): String = js.native
+  @scala.inline
+  def entropyToMnemonic(entropy: Buffer, wordlist: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ethereum-cryptography/bip39", "mnemonicToEntropy")
-  @js.native
-  def mnemonicToEntropy(mnemonic: String, wordlist: js.Array[String]): Buffer = js.native
+  @scala.inline
+  def generateMnemonic(wordlist: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMnemonic")(wordlist.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generateMnemonic(wordlist: js.Array[String], strength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMnemonic")(wordlist.asInstanceOf[js.Any], strength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ethereum-cryptography/bip39", "mnemonicToSeed")
-  @js.native
-  def mnemonicToSeed(mnemonic: String): js.Promise[Buffer] = js.native
-  @JSImport("ethereum-cryptography/bip39", "mnemonicToSeed")
-  @js.native
-  def mnemonicToSeed(mnemonic: String, passphrase: String): js.Promise[Buffer] = js.native
+  @scala.inline
+  def mnemonicToEntropy(mnemonic: String, wordlist: js.Array[String]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToEntropy")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/bip39", "mnemonicToSeedSync")
-  @js.native
-  def mnemonicToSeedSync(mnemonic: String): Buffer = js.native
-  @JSImport("ethereum-cryptography/bip39", "mnemonicToSeedSync")
-  @js.native
-  def mnemonicToSeedSync(mnemonic: String, passphrase: String): Buffer = js.native
+  @scala.inline
+  def mnemonicToSeed(mnemonic: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeed")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def mnemonicToSeed(mnemonic: String, passphrase: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeed")(mnemonic.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("ethereum-cryptography/bip39", "validateMnemonic")
-  @js.native
-  def validateMnemonic(mnemonic: String, wordlist: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def mnemonicToSeedSync(mnemonic: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeedSync")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def mnemonicToSeedSync(mnemonic: String, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeedSync")(mnemonic.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def validateMnemonic(mnemonic: String, wordlist: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMnemonic")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

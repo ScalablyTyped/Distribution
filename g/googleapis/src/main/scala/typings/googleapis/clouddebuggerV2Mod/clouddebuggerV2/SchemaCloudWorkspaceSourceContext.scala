@@ -2,25 +2,23 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A CloudWorkspaceSourceContext denotes a workspace at a particular snapshot.
   */
-@js.native
 trait SchemaCloudWorkspaceSourceContext extends StObject {
   
   /**
     * The ID of the snapshot. An empty snapshot_id refers to the most recent
     * snapshot.
     */
-  var snapshotId: js.UndefOr[String] = js.native
+  var snapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the workspace.
     */
-  var workspaceId: js.UndefOr[SchemaCloudWorkspaceId] = js.native
+  var workspaceId: js.UndefOr[SchemaCloudWorkspaceId] = js.undefined
 }
 object SchemaCloudWorkspaceSourceContext {
   

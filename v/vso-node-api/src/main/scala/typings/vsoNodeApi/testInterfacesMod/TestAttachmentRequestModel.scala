@@ -2,19 +2,17 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestAttachmentRequestModel extends StObject {
   
-  var attachmentType: String = js.native
+  var attachmentType: String
   
-  var comment: String = js.native
+  var comment: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var stream: String = js.native
+  var stream: String
 }
 object TestAttachmentRequestModel {
   

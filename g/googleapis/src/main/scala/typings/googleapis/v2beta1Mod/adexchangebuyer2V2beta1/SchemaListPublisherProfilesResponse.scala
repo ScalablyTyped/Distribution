@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for profiles visible to the buyer.
   */
-@js.native
 trait SchemaListPublisherProfilesResponse extends StObject {
   
   /**
     * List pagination support
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of matching publisher profiles.
     */
-  var publisherProfiles: js.UndefOr[js.Array[SchemaPublisherProfile]] = js.native
+  var publisherProfiles: js.UndefOr[js.Array[SchemaPublisherProfile]] = js.undefined
 }
 object SchemaListPublisherProfilesResponse {
   

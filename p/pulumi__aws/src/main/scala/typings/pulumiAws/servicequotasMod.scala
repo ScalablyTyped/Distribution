@@ -12,10 +12,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicequotasMod {
+  
+  @JSImport("@pulumi/aws/servicequotas", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/servicequotas", "ServiceQuota")
   @js.native
@@ -34,6 +37,10 @@ object servicequotasMod {
   /* static members */
   object ServiceQuota {
     
+    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ServiceQuota resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -43,39 +50,30 @@ object servicequotasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceQuotaState): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
-    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.serviceQuotaMod.ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceQuotaMod.ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceQuotaMod.ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceQuotaState): typings.pulumiAws.serviceQuotaMod.ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceQuotaMod.ServiceQuota]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceQuotaMod.ServiceQuota]
     
     /**
       * Returns true if the given object is an instance of ServiceQuota.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicequotas", "ServiceQuota.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/servicequotas", "getService")
-  @js.native
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
-  @JSImport("@pulumi/aws/servicequotas", "getService")
-  @js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  @scala.inline
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  @scala.inline
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
   
-  @JSImport("@pulumi/aws/servicequotas", "getServiceQuota")
-  @js.native
-  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = js.native
-  @JSImport("@pulumi/aws/servicequotas", "getServiceQuota")
-  @js.native
-  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = js.native
+  @scala.inline
+  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceQuotaResult]]
+  @scala.inline
+  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceQuotaResult]]
 }

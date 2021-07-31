@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignInFrequencySessionControl extends ConditionalAccessSessionControl {
+trait SignInFrequencySessionControl
+  extends StObject
+     with ConditionalAccessSessionControl {
   
   // Possible values are: days, hours.
-  var `type`: js.UndefOr[NullableOption[SigninFrequencyType]] = js.native
+  var `type`: js.UndefOr[NullableOption[SigninFrequencyType]] = js.undefined
   
   // The number of days or hours.
-  var value: js.UndefOr[NullableOption[Double]] = js.native
+  var value: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object SignInFrequencySessionControl {
   

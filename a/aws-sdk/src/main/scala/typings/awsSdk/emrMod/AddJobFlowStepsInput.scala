@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddJobFlowStepsInput extends StObject {
   
   /**
     * A string that uniquely identifies the job flow. This identifier is returned by RunJobFlow and can also be obtained from ListClusters. 
     */
-  var JobFlowId: XmlStringMaxLen256 = js.native
+  var JobFlowId: XmlStringMaxLen256
   
   /**
     *  A list of StepConfig to be executed by the job flow. 
     */
-  var Steps: StepConfigList = js.native
+  var Steps: StepConfigList
 }
 object AddJobFlowStepsInput {
   

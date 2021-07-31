@@ -6,41 +6,39 @@ import typings.reactDataGrid.reactDataGridStrings.columnFill
 import typings.reactDataGrid.reactDataGridStrings.copyPaste
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about some update to the grid's contents. Generic event type returns untyped row, use parameterized type with the row type as the parameter
   * @default T = any
   */
-@js.native
 trait GridRowsUpdatedEvent[T] extends StObject {
   
   /**
     * The action that occurred to trigger this event.
     * One of 'cellUpdate', 'cellDrag', 'columnFill', or 'copyPaste'.
     */
-  var action: cellUpdate | cellDrag | columnFill | copyPaste = js.native
+  var action: cellUpdate | cellDrag | columnFill | copyPaste
   
   /**
     * The key of the column where the event occurred.
     */
-  var cellKey: String = js.native
+  var cellKey: String
   
   /**
     * The top row affected by the event.
     */
-  var fromRow: Double = js.native
+  var fromRow: Double
   
   /**
     * The bottom row affected by the event.
     */
-  var toRow: Double = js.native
+  var toRow: Double
   
   /**
     * The columns that were updated and their values.
     */
-  var updated: T = js.native
+  var updated: T
 }
 object GridRowsUpdatedEvent {
   
@@ -57,7 +55,7 @@ object GridRowsUpdatedEvent {
   }
   
   @scala.inline
-  implicit class GridRowsUpdatedEventMutableBuilder[Self <: GridRowsUpdatedEvent[_], T] (val x: Self with GridRowsUpdatedEvent[T]) extends AnyVal {
+  implicit class GridRowsUpdatedEventMutableBuilder[Self <: GridRowsUpdatedEvent[?], T] (val x: Self & GridRowsUpdatedEvent[T]) extends AnyVal {
     
     @scala.inline
     def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

@@ -5,21 +5,19 @@ import typings.paypalRestSdk.mod.Item
 import typings.paypalRestSdk.mod.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: typings.paypalRestSdk.mod.Address = js.native
+    var address: typings.paypalRestSdk.mod.Address
     
-    var business_name: js.UndefOr[String] = js.native
+    var business_name: js.UndefOr[String] = js.undefined
     
-    var first_name: String = js.native
+    var first_name: String
     
-    var last_name: String = js.native
+    var last_name: String
   }
   object Address {
     
@@ -49,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Allowedpaymentmethod extends StObject {
     
-    var allowed_payment_method: String = js.native
+    var allowed_payment_method: String
   }
   object Allowedpaymentmethod {
     
@@ -70,14 +67,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Brandname extends StObject {
     
-    var brand_name: js.UndefOr[String] = js.native
+    var brand_name: js.UndefOr[String] = js.undefined
     
-    var display_phone: js.UndefOr[Phone] = js.native
+    var display_phone: js.UndefOr[Phone] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
   }
   object Brandname {
     
@@ -110,28 +106,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Cancelledby extends StObject {
     
-    var cancelled_by: js.UndefOr[String] = js.native
+    var cancelled_by: js.UndefOr[String] = js.undefined
     
-    var cancelled_date: js.UndefOr[String] = js.native
+    var cancelled_date: js.UndefOr[String] = js.undefined
     
-    var created_by: js.UndefOr[String] = js.native
+    var created_by: js.UndefOr[String] = js.undefined
     
-    var created_date: js.UndefOr[String] = js.native
+    var created_date: js.UndefOr[String] = js.undefined
     
-    var first_sent_date: js.UndefOr[String] = js.native
+    var first_sent_date: js.UndefOr[String] = js.undefined
     
-    var last_sent_by: js.UndefOr[String] = js.native
+    var last_sent_by: js.UndefOr[String] = js.undefined
     
-    var last_sent_date: js.UndefOr[String] = js.native
+    var last_sent_date: js.UndefOr[String] = js.undefined
     
-    var last_updated_by: js.UndefOr[String] = js.native
+    var last_updated_by: js.UndefOr[String] = js.undefined
     
-    var last_updated_date: js.UndefOr[String] = js.native
+    var last_updated_date: js.UndefOr[String] = js.undefined
     
-    var payer_view_url: js.UndefOr[String] = js.native
+    var payer_view_url: js.UndefOr[String] = js.undefined
   }
   object Cancelledby {
     
@@ -206,12 +201,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cancelurl extends StObject {
     
-    var cancel_url: js.UndefOr[String] = js.native
+    var cancel_url: js.UndefOr[String] = js.undefined
     
-    var return_url: js.UndefOr[String] = js.native
+    var return_url: js.UndefOr[String] = js.undefined
   }
   object Cancelurl {
     
@@ -238,22 +232,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Giftwrap extends StObject {
     
-    var gift_wrap: js.UndefOr[String] = js.native
+    var gift_wrap: js.UndefOr[String] = js.undefined
     
-    var handling_fee: js.UndefOr[String] = js.native
+    var handling_fee: js.UndefOr[String] = js.undefined
     
-    var insurance: js.UndefOr[String] = js.native
+    var insurance: js.UndefOr[String] = js.undefined
     
-    var shipping: js.UndefOr[String] = js.native
+    var shipping: js.UndefOr[String] = js.undefined
     
-    var shipping_discout: js.UndefOr[String] = js.native
+    var shipping_discout: js.UndefOr[String] = js.undefined
     
-    var subtotal: js.UndefOr[String] = js.native
+    var subtotal: js.UndefOr[String] = js.undefined
     
-    var tax: js.UndefOr[String] = js.native
+    var tax: js.UndefOr[String] = js.undefined
   }
   object Giftwrap {
     
@@ -310,16 +303,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.Array[Item] = js.native
+    var items: js.Array[Item]
     
-    var shipping_address: js.UndefOr[typings.paypalRestSdk.mod.Address] = js.native
+    var shipping_address: js.UndefOr[typings.paypalRestSdk.mod.Address] = js.undefined
     
-    var shipping_method: js.UndefOr[String] = js.native
+    var shipping_method: js.UndefOr[String] = js.undefined
     
-    var shipping_phone_number: js.UndefOr[String] = js.native
+    var shipping_phone_number: js.UndefOr[String] = js.undefined
   }
   object Items {
     
@@ -358,12 +350,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Other extends StObject {
     
-    var other: Currency = js.native
+    var other: Currency
     
-    var paypal: Currency = js.native
+    var paypal: Currency
   }
   object Other {
     
@@ -384,10 +375,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Paymentmethod extends StObject {
     
-    var payment_method: String = js.native
+    var payment_method: String
   }
   object Paymentmethod {
     

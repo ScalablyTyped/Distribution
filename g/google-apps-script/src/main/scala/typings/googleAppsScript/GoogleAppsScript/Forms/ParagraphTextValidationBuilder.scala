@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .requireTextLengthGreatherThan(100);
   *     paragraphTextItem.setValidation(paragraphtextValidation);
   */
-@js.native
 trait ParagraphTextValidationBuilder extends StObject {
   
-  def requireTextContainsPattern(pattern: String): ParagraphTextValidationBuilder = js.native
+  def requireTextContainsPattern(pattern: String): ParagraphTextValidationBuilder
   
-  def requireTextDoesNotContainPattern(pattern: String): ParagraphTextValidationBuilder = js.native
+  def requireTextDoesNotContainPattern(pattern: String): ParagraphTextValidationBuilder
   
-  def requireTextDoesNotMatchPattern(pattern: String): ParagraphTextValidationBuilder = js.native
+  def requireTextDoesNotMatchPattern(pattern: String): ParagraphTextValidationBuilder
   
-  def requireTextLengthGreaterThanOrEqualTo(number: Integer): ParagraphTextValidationBuilder = js.native
+  def requireTextLengthGreaterThanOrEqualTo(number: Integer): ParagraphTextValidationBuilder
   
-  def requireTextLengthLessThanOrEqualTo(number: Integer): ParagraphTextValidationBuilder = js.native
+  def requireTextLengthLessThanOrEqualTo(number: Integer): ParagraphTextValidationBuilder
   
-  def requireTextMatchesPattern(pattern: String): ParagraphTextValidationBuilder = js.native
+  def requireTextMatchesPattern(pattern: String): ParagraphTextValidationBuilder
 }
 object ParagraphTextValidationBuilder {
   

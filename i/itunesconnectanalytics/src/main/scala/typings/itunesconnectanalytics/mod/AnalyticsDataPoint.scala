@@ -3,41 +3,39 @@ package typings.itunesconnectanalytics.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsDataPoint extends StObject {
   
-  var activeDevices: js.UndefOr[Double] = js.native
+  var activeDevices: js.UndefOr[Double] = js.undefined
   
-  var crashes: js.UndefOr[Double] = js.native
+  var crashes: js.UndefOr[Double] = js.undefined
   
-  var date: Date = js.native
+  var date: Date
   
-  var iap: js.UndefOr[Double] = js.native
+  var iap: js.UndefOr[Double] = js.undefined
   
-  var impressionsTotal: js.UndefOr[Double] = js.native
+  var impressionsTotal: js.UndefOr[Double] = js.undefined
   
-  var impressionsTotalUnique: js.UndefOr[Double] = js.native
+  var impressionsTotalUnique: js.UndefOr[Double] = js.undefined
   
-  var installs: js.UndefOr[Double] = js.native
+  var installs: js.UndefOr[Double] = js.undefined
   
-  var pageViewCount: js.UndefOr[Double] = js.native
+  var pageViewCount: js.UndefOr[Double] = js.undefined
   
-  var pageViewUnique: js.UndefOr[Double] = js.native
+  var pageViewUnique: js.UndefOr[Double] = js.undefined
   
-  var payingUsers: js.UndefOr[Double] = js.native
+  var payingUsers: js.UndefOr[Double] = js.undefined
   
-  var rollingActiveDevices: js.UndefOr[Double] = js.native
+  var rollingActiveDevices: js.UndefOr[Double] = js.undefined
   
-  var sales: js.UndefOr[Double] = js.native
+  var sales: js.UndefOr[Double] = js.undefined
   
-  var sessions: js.UndefOr[Double] = js.native
+  var sessions: js.UndefOr[Double] = js.undefined
   
-  var uninstalls: js.UndefOr[Double] = js.native
+  var uninstalls: js.UndefOr[Double] = js.undefined
   
-  var units: js.UndefOr[Double] = js.native
+  var units: js.UndefOr[Double] = js.undefined
 }
 object AnalyticsDataPoint {
   

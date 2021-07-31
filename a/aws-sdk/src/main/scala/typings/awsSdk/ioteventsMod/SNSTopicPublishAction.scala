@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SNSTopicPublishAction extends StObject {
   
   /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
     */
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
   
   /**
     * The ARN of the Amazon SNS target where the message is sent.
     */
-  var targetArn: AmazonResourceName = js.native
+  var targetArn: AmazonResourceName
 }
 object SNSTopicPublishAction {
   

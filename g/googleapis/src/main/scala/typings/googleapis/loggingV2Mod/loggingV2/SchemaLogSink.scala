@@ -2,7 +2,6 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * exported. The sink must be created within a project, organization, billing
   * account, or folder.
   */
-@js.native
 trait SchemaLogSink extends StObject {
   
   /**
     * Output only. The creation timestamp of the sink.This field may not be
     * present for older sinks.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The export destination:
@@ -30,7 +28,7 @@ trait SchemaLogSink extends StObject {
     * permission to write to the destination or else the log entries are not
     * exported. For more information, see Exporting Logs with Sinks.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. An advanced logs filter. The only exported log entries are
@@ -38,7 +36,7 @@ trait SchemaLogSink extends StObject {
     * For example: logName=&quot;projects/[PROJECT_ID]/logs/[LOG_ID]&quot; AND
     * severity&gt;=ERROR
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. This field applies only to sinks owned by organizations and
@@ -55,7 +53,7 @@ trait SchemaLogSink extends StObject {
     * logName:(&quot;projects/test-project1/&quot; OR
     * &quot;projects/test-project2/&quot;) AND resource.type=gce_instance
     */
-  var includeChildren: js.UndefOr[Boolean] = js.native
+  var includeChildren: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The client-assigned sink identifier, unique within the project.
@@ -64,19 +62,19 @@ trait SchemaLogSink extends StObject {
     * upper and lower-case alphanumeric characters, underscores, hyphens, and
     * periods.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The log entry format to use for this sink&#39;s exported log
     * entries. The v2 format is used by default and cannot be changed.
     */
-  var outputVersionFormat: js.UndefOr[String] = js.native
+  var outputVersionFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The last update timestamp of the sink.This field may not be
     * present for older sinks.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. An IAM identity&amp;mdash;a service account or
@@ -89,7 +87,7 @@ trait SchemaLogSink extends StObject {
     * documentation to determine the appropriate IAM roles to assign to the
     * identity.
     */
-  var writerIdentity: js.UndefOr[String] = js.native
+  var writerIdentity: js.UndefOr[String] = js.undefined
 }
 object SchemaLogSink {
   

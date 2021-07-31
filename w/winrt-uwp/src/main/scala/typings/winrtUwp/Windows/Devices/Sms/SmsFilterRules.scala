@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Sms
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of SmsFilterRule instances. */
-@js.native
 trait SmsFilterRules extends StObject {
   
   /** The SmsFilterActionType for this set of filter rules. */
-  var actionType: SmsFilterActionType = js.native
+  var actionType: SmsFilterActionType
   
   /** Gets the list of rules in this SmsFilterRules instance. */
-  var rules: IVector[SmsFilterRule] = js.native
+  var rules: IVector[SmsFilterRule]
 }
 object SmsFilterRules {
   

@@ -3,7 +3,6 @@ package typings.furiganaMarkdownIt
 import typings.markdownIt.libMod.PluginSimple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,17 +10,18 @@ object mod {
   /**
     * A markdown-it plugin which adds furigana support.
     */
+  @scala.inline
+  def apply(): PluginSimple = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PluginSimple]
+  @scala.inline
+  def apply(options: Options): PluginSimple = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PluginSimple]
+  
   @JSImport("furigana-markdown-it", JSImport.Namespace)
   @js.native
-  def apply(): PluginSimple = js.native
-  @JSImport("furigana-markdown-it", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): PluginSimple = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Options can be provided during initialization of the plugin
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -31,7 +31,7 @@ object mod {
       * Default combinators are + and ＋.
       * If you need additional combinator characters, provide them with this option.
       */
-    var extraCombinators: js.UndefOr[String] = js.native
+    var extraCombinators: js.UndefOr[String] = js.undefined
     
     /**
       * separators are characters that allow you to split furigana between individual kanji (read the usage section).
@@ -39,7 +39,7 @@ object mod {
       *
       * If you want additional characters to act as separators, provide them with this option.
       */
-    var extraSeparators: js.UndefOr[String] = js.native
+    var extraSeparators: js.UndefOr[String] = js.undefined
     
     /**
       * fallback parentheses to use in contexts where <ruby> tags are unavailable.
@@ -48,7 +48,7 @@ object mod {
       *
       * This option takes a string with the opening bracket followed by the closing bracket.
       */
-    var fallbackParens: js.UndefOr[String] = js.native
+    var fallbackParens: js.UndefOr[String] = js.undefined
   }
   object Options {
     

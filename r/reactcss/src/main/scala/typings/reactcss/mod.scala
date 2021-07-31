@@ -9,32 +9,32 @@ import typings.react.mod.StatelessComponent
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("reactcss", JSImport.Default)
+  @JSImport("reactcss", JSImport.Namespace)
   @js.native
-  def default[T](classes: Classes[T], activations: js.Any*): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reactcss", "hover")
-  @js.native
-  def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = js.native
-  @JSImport("reactcss", "hover")
-  @js.native
-  def hover[A](component: StatelessComponent[A]): ComponentClass[A, ComponentState] = js.native
+  @scala.inline
+  def default[T](classes: Classes[T], activations: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any], activations.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("reactcss", "loop")
-  @js.native
-  def loop(index: Double, length: Double): LoopableProps = js.native
+  @scala.inline
+  def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
+  @scala.inline
+  def hover[A](component: StatelessComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
+  
+  @scala.inline
+  def loop(index: Double, length: Double): LoopableProps = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(index.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LoopableProps]
   
   type CSS = CSSProperties
   
-  @js.native
-  trait Classes[T] extends /* scope */ StringDictionary[Partial[T]] {
+  trait Classes[T]
+    extends StObject
+       with /* scope */ StringDictionary[Partial[T]] {
     
-    var default: Partial[T] = js.native
+    var default: Partial[T]
   }
   object Classes {
     
@@ -45,17 +45,18 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClassesMutableBuilder[Self <: Classes[_], T] (val x: Self with Classes[T]) extends AnyVal {
+    implicit class ClassesMutableBuilder[Self <: Classes[?], T] (val x: Self & Classes[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: Partial[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait HoverProps[T] extends Props[T] {
+  trait HoverProps[T]
+    extends StObject
+       with Props[T] {
     
-    var hover: js.UndefOr[Boolean] = js.native
+    var hover: js.UndefOr[Boolean] = js.undefined
   }
   object HoverProps {
     
@@ -66,7 +67,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HoverPropsMutableBuilder[Self <: HoverProps[_], T] (val x: Self with HoverProps[T]) extends AnyVal {
+    implicit class HoverPropsMutableBuilder[Self <: HoverProps[?], T] (val x: Self & HoverProps[T]) extends AnyVal {
       
       @scala.inline
       def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
@@ -76,19 +77,19 @@ object mod {
     }
   }
   
-  @js.native
   trait LoopableProps
-    extends Props[js.Any] {
+    extends StObject
+       with Props[js.Any] {
     
-    var even: js.UndefOr[Boolean] = js.native
+    var even: js.UndefOr[Boolean] = js.undefined
     
-    var `first-child`: js.UndefOr[Boolean] = js.native
+    var `first-child`: js.UndefOr[Boolean] = js.undefined
     
-    var `last-child`: js.UndefOr[Boolean] = js.native
+    var `last-child`: js.UndefOr[Boolean] = js.undefined
     
-    var `nth-child`: Double = js.native
+    var `nth-child`: Double
     
-    var odd: js.UndefOr[Boolean] = js.native
+    var odd: js.UndefOr[Boolean] = js.undefined
   }
   object LoopableProps {
     

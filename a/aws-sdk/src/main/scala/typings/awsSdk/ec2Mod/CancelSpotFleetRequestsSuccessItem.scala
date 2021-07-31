@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSpotFleetRequestsSuccessItem extends StObject {
   
   /**
     * The current state of the Spot Fleet request.
     */
-  var CurrentSpotFleetRequestState: js.UndefOr[BatchState] = js.native
+  var CurrentSpotFleetRequestState: js.UndefOr[BatchState] = js.undefined
   
   /**
     * The previous state of the Spot Fleet request.
     */
-  var PreviousSpotFleetRequestState: js.UndefOr[BatchState] = js.native
+  var PreviousSpotFleetRequestState: js.UndefOr[BatchState] = js.undefined
   
   /**
     * The ID of the Spot Fleet request.
     */
-  var SpotFleetRequestId: js.UndefOr[String] = js.native
+  var SpotFleetRequestId: js.UndefOr[String] = js.undefined
 }
 object CancelSpotFleetRequestsSuccessItem {
   

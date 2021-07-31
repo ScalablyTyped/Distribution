@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Leaderboard extends StObject {
   
   /** The icon for the leaderboard. */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /** The leaderboard ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the icon image being returned is a default image, or is game-provided. */
-  var isIconUrlDefault: js.UndefOr[Boolean] = js.native
+  var isIconUrlDefault: js.UndefOr[Boolean] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboard`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the leaderboard. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** How scores are ordered. */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
 }
 object Leaderboard {
   

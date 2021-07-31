@@ -4,34 +4,32 @@ import typings.microsoftLiveConnect.anon.Business
 import typings.microsoftLiveConnect.anon.Employer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new contact.
   */
-@js.native
 trait INewContact extends StObject {
   
   /**
     * The contact's email addresses.
     */
-  var emails: js.UndefOr[Business] = js.native
+  var emails: js.UndefOr[Business] = js.undefined
   
   /**
     * The contact's first name.
     */
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
   /**
     * The contact's last name.
     */
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
   /**
     * An array that contains the contact's work info.
     */
-  var work: js.UndefOr[js.Array[Employer]] = js.native
+  var work: js.UndefOr[js.Array[Employer]] = js.undefined
 }
 object INewContact {
   

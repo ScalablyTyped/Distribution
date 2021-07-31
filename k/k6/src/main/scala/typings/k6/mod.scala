@@ -4,32 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("k6", "check")
+  @JSImport("k6", JSImport.Namespace)
   @js.native
-  def check[VT](`val`: VT, sets: Checkers[VT]): Boolean = js.native
-  @JSImport("k6", "check")
-  @js.native
-  def check[VT](`val`: VT, sets: Checkers[VT], tags: js.Object): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("k6", "fail")
-  @js.native
-  def fail(): scala.Nothing = js.native
-  @JSImport("k6", "fail")
-  @js.native
-  def fail(err: String): scala.Nothing = js.native
+  @scala.inline
+  def check[VT](`val`: VT, sets: Checkers[VT]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(`val`.asInstanceOf[js.Any], sets.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def check[VT](`val`: VT, sets: Checkers[VT], tags: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(`val`.asInstanceOf[js.Any], sets.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("k6", "group")
-  @js.native
-  def group[RT](name: String, fn: js.Function0[RT]): RT = js.native
+  @scala.inline
+  def fail(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[scala.Nothing]
+  @scala.inline
+  def fail(err: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(err.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @JSImport("k6", "sleep")
-  @js.native
-  def sleep(t: Double): Unit = js.native
+  @scala.inline
+  def group[RT](name: String, fn: js.Function0[RT]): RT = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[RT]
+  
+  @scala.inline
+  def sleep(t: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Checker[VT] = js.Function1[/* val */ VT, Boolean]
   
@@ -37,12 +34,13 @@ object mod {
   
   @js.native
   trait JSONArray
-    extends Array[JSONValue]
+    extends StObject
+       with Array[JSONValue]
        with _JSONValue
   
-  @js.native
   trait JSONObject
-    extends /* key */ StringDictionary[JSONValue]
+    extends StObject
+       with /* key */ StringDictionary[JSONValue]
        with _JSONValue
   object JSONObject {
     

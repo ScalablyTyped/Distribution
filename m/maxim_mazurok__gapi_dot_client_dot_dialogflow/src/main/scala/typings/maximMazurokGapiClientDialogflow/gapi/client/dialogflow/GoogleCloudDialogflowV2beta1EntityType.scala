@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1EntityType extends StObject {
   
   /** Optional. Indicates whether the entity type can be automatically expanded. */
-  var autoExpansionMode: js.UndefOr[String] = js.native
+  var autoExpansionMode: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the entity type. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Optional. Enables fuzzy entity extraction during classification. */
-  var enableFuzzyExtraction: js.UndefOr[Boolean] = js.native
+  var enableFuzzyExtraction: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. The collection of entity entries associated with the entity type. */
-  var entities: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1EntityTypeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1EntityTypeEntity]] = js.undefined
   
   /** Required. Indicates the kind of entity type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes methods. Supported formats: -
     * `projects//agent/entityTypes/` - `projects//locations//agent/entityTypes/`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1EntityType {
   

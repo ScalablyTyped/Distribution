@@ -3,7 +3,6 @@ package typings.rethinkdb.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rethinkdb", "Cursor")
@@ -23,7 +22,7 @@ class Cursor () extends StObject {
   
   def hasNext(): Boolean = js.native
   
-  def next(): js.Promise[_] = js.native
+  def next(): js.Promise[js.Any] = js.native
   // returning false stops iteration
   def next(cb: js.Function2[/* err */ Error, /* row */ js.Any, Unit]): Unit = js.native
   @JSName("next")
@@ -31,8 +30,8 @@ class Cursor () extends StObject {
   @JSName("next")
   def next_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Unit]): Unit = js.native
   
-  def toArray(): js.Promise[js.Array[_]] = js.native
-  def toArray(cb: js.Function2[/* err */ Error, /* rows */ js.Array[_], Unit]): Unit = js.native
+  def toArray(): js.Promise[js.Array[js.Any]] = js.native
+  def toArray(cb: js.Function2[/* err */ Error, /* rows */ js.Array[js.Any], Unit]): Unit = js.native
   @JSName("toArray")
   def toArray_T[T](): js.Promise[js.Array[T]] = js.native
   @JSName("toArray")

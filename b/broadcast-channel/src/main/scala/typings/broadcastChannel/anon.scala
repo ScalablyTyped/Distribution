@@ -2,19 +2,17 @@ package typings.broadcastChannel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FallbackInterval extends StObject {
     
-    var fallbackInterval: js.UndefOr[Double] = js.native
+    var fallbackInterval: js.UndefOr[Double] = js.undefined
     
-    var onclose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object FallbackInterval {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ttl extends StObject {
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var useFastPath: js.UndefOr[Boolean] = js.native
+    var useFastPath: js.UndefOr[Boolean] = js.undefined
   }
   object Ttl {
     

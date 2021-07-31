@@ -2,19 +2,17 @@ package typings.koaRatelimitLru
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Remaining extends StObject {
     
-    val remaining: js.UndefOr[String] = js.native
+    val remaining: js.UndefOr[String] = js.undefined
     
-    val reset: js.UndefOr[String] = js.native
+    val reset: js.UndefOr[String] = js.undefined
     
-    val total: js.UndefOr[String] = js.native
+    val total: js.UndefOr[String] = js.undefined
   }
   object Remaining {
     

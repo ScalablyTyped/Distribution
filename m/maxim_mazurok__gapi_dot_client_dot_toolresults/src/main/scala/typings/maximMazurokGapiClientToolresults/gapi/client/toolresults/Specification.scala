@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Specification extends StObject {
   
   /** An Android mobile test execution specification. */
-  var androidTest: js.UndefOr[AndroidTest] = js.native
+  var androidTest: js.UndefOr[AndroidTest] = js.undefined
   
   /** An iOS mobile test execution specification. */
-  var iosTest: js.UndefOr[IosTest] = js.native
+  var iosTest: js.UndefOr[IosTest] = js.undefined
 }
 object Specification {
   

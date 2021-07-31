@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetBackgroundColorsRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetBackgroundColorsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetBackgroundColorsResponse extends StObject {
   
-  var paramsType: js.Array[GetBackgroundColorsRequest] = js.native
+  var paramsType: js.Array[GetBackgroundColorsRequest]
   
-  var returnType: GetBackgroundColorsResponse = js.native
+  var returnType: GetBackgroundColorsResponse
 }
 object ReturnTypeGetBackgroundColorsResponse {
   

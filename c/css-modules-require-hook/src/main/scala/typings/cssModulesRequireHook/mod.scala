@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,53 +12,52 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Function1[/* options */ js.UndefOr[Options], Unit] = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /** Appends custom plugins to the end of the PostCSS pipeline. */
-    var append: js.UndefOr[js.Array[_]] = js.native
+    var append: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Camelizes exported class names. */
-    var camelCase: js.UndefOr[Boolean] = js.native
+    var camelCase: js.UndefOr[Boolean] = js.undefined
     
     /** Short alias for the postcss-modules-extract-imports plugin's createImportedName option. */
-    var createImportedName: js.UndefOr[js.Function] = js.native
+    var createImportedName: js.UndefOr[js.Function] = js.undefined
     
     /** Helps you to invalidate cache of all require calls. */
-    var devMode: js.UndefOr[Boolean] = js.native
+    var devMode: js.UndefOr[Boolean] = js.undefined
     
     /** Attach the require hook to additional file extensions. */
-    var extensions: js.UndefOr[String | js.Array[String]] = js.native
+    var extensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Short alias for the postcss-modules-scope plugin's option. */
-    var generateScopedName: js.UndefOr[String | js.Function] = js.native
+    var generateScopedName: js.UndefOr[String | js.Function] = js.undefined
     
     /** Short alias for the generic-names helper option. */
-    var hashPrefix: js.UndefOr[String] = js.native
+    var hashPrefix: js.UndefOr[String] = js.undefined
     
     /** Provides possibility to exclude particular files from processing. */
-    var ignore: js.UndefOr[String | RegExp | (js.Function1[/* filepath */ String, Boolean])] = js.native
+    var ignore: js.UndefOr[String | RegExp | (js.Function1[/* filepath */ String, Boolean])] = js.undefined
     
     /** Short alias for the postcss-modules-local-by-default plugin's option. */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /** Prepends custom plugins to the beginning of the PostCSS pipeline. */
-    var prepend: js.UndefOr[js.Array[_]] = js.native
+    var prepend: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** In rare cases you may want to precompile styles, before they will be passed to the PostCSS pipeline. */
-    var preprocessCss: js.UndefOr[js.Function] = js.native
+    var preprocessCss: js.UndefOr[js.Function] = js.undefined
     
     /** In rare cases you may want to get compiled styles in runtime, so providing this option helps. */
-    var processCss: js.UndefOr[js.Function] = js.native
+    var processCss: js.UndefOr[js.Function] = js.undefined
     
     /** Provides possibility to pass custom options to the LazyResult instance. */
-    var processorOpts: js.UndefOr[js.Object] = js.native
+    var processorOpts: js.UndefOr[js.Object] = js.undefined
     
     /** Provides absolute path to the project directory. */
-    var rootDir: js.UndefOr[String] = js.native
+    var rootDir: js.UndefOr[String] = js.undefined
     
     /** Provides the full list of PostCSS plugins to the pipeline. */
-    var use: js.UndefOr[js.Array[_]] = js.native
+    var use: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Options {
     
@@ -73,7 +71,7 @@ object mod extends Shortcut {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAppend(value: js.Array[_]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      def setAppend(value: js.Array[js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
@@ -136,7 +134,7 @@ object mod extends Shortcut {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setPrepend(value: js.Array[_]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      def setPrepend(value: js.Array[js.Any]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
@@ -169,7 +167,7 @@ object mod extends Shortcut {
       def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
       
       @scala.inline
-      def setUse(value: js.Array[_]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      def setUse(value: js.Array[js.Any]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUseUndefined: Self = StObject.set(x, "use", js.undefined)

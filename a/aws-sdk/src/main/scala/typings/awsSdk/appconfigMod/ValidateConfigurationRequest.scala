@@ -2,26 +2,24 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateConfigurationRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The configuration profile ID.
     */
-  var ConfigurationProfileId: Id = js.native
+  var ConfigurationProfileId: Id
   
   /**
     * The version of the configuration to validate.
     */
-  var ConfigurationVersion: Version = js.native
+  var ConfigurationVersion: Version
 }
 object ValidateConfigurationRequest {
   

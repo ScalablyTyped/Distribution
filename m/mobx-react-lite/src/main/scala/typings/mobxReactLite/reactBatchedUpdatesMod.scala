@@ -2,18 +2,18 @@ package typings.mobxReactLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBatchedUpdatesMod {
   
-  @JSImport("mobx-react-lite/dist/utils/reactBatchedUpdates", "unstable_batchedUpdates")
+  @JSImport("mobx-react-lite/dist/utils/reactBatchedUpdates", JSImport.Namespace)
   @js.native
-  def unstableBatchedUpdates(callback: js.Function0[_]): Unit = js.native
-  @JSImport("mobx-react-lite/dist/utils/reactBatchedUpdates", "unstable_batchedUpdates")
-  @js.native
-  def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
-  @JSImport("mobx-react-lite/dist/utils/reactBatchedUpdates", "unstable_batchedUpdates")
-  @js.native
-  def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unstableBatchedUpdates(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

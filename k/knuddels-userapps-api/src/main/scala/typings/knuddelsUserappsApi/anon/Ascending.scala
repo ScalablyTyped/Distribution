@@ -3,17 +3,15 @@ package typings.knuddelsUserappsApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ascending extends StObject {
   
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
-  var labelMapping: js.UndefOr[StringDictionary[String]] = js.native
+  var labelMapping: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var sortIndex: js.UndefOr[Double] = js.native
+  var sortIndex: js.UndefOr[Double] = js.undefined
 }
 object Ascending {
   

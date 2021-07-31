@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object JumpListSystemGroupKind extends StObject {
   
   /** Specifies that the system managed frequent group be used in the jump list. */
   @js.native
-  sealed trait frequent extends JumpListSystemGroupKind
+  sealed trait frequent
+    extends StObject
+       with JumpListSystemGroupKind
   
   /** Specifies that no system managed group be used in the jump list. */
   @js.native
-  sealed trait none extends JumpListSystemGroupKind
+  sealed trait none
+    extends StObject
+       with JumpListSystemGroupKind
   
   /** Specifies that the system managed recent group be used in the jump list. */
   @js.native
-  sealed trait recent extends JumpListSystemGroupKind
+  sealed trait recent
+    extends StObject
+       with JumpListSystemGroupKind
 }

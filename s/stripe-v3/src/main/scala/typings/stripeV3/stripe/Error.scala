@@ -4,71 +4,69 @@ import typings.stripeV3.stripe.paymentIntents.PaymentIntent
 import typings.stripeV3.stripe.paymentMethod.PaymentMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
   /**
     * For card errors, the ID of the failed charge.
     */
-  var charge: String = js.native
+  var charge: String
   
   /**
     * For some errors that could be handled programmatically,
     * a short string indicating the error code reported.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * For card errors resulting from a card issuer decline,
     * a short string indicating the card issuer’s reason for
     * the decline if they provide one.
     */
-  var decline_code: js.UndefOr[String] = js.native
+  var decline_code: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to more information about the error code reported.
     */
-  var doc_url: js.UndefOr[String] = js.native
+  var doc_url: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable message providing more details about the
     * error. For card errors, these messages can be shown to
     * your users.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * If the error is parameter-specific, the parameter related
     * to the error. For example, you can use this to display a
     * message near the correct form field.
     */
-  var param: js.UndefOr[String] = js.native
+  var param: js.UndefOr[String] = js.undefined
   
   /**
     * The PaymentIntent object for errors returned on a request
     * involving a PaymentIntent.
     */
-  var payment_intent: js.UndefOr[PaymentIntent] = js.native
+  var payment_intent: js.UndefOr[PaymentIntent] = js.undefined
   
   /**
     * The PaymentMethod object for errors returned on a
     * request involving a PaymentMethod.
     */
-  var payment_method: js.UndefOr[PaymentMethod] = js.native
+  var payment_method: js.UndefOr[PaymentMethod] = js.undefined
   
   /**
     * The source object for errors returned on a request involving
     * a source.
     */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /**
     * The type of error returned.
     */
-  var `type`: ErrorType = js.native
+  var `type`: ErrorType
 }
 object Error {
   

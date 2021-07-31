@@ -2,47 +2,47 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlashTextAttrs extends FlashText {
+trait FlashTextAttrs
+  extends StObject
+     with FlashText {
   
-  var aliasText: Boolean = js.native
+  var aliasText: Boolean
   
-  var alignment: String = js.native
+  var alignment: String
   
-  var autoKern: Boolean = js.native
+  var autoKern: Boolean
   
-  var bold: Boolean = js.native
+  var bold: Boolean
   
-  var characterPosition: String = js.native
+  var characterPosition: String
   
-  var characterSpacing: Double = js.native
+  var characterSpacing: Double
   
-  var face: String = js.native
+  var face: String
   
-  var fillColor: js.Any = js.native
+  var fillColor: js.Any
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var italic: Boolean = js.native
+  var italic: Boolean
   
-  var leftMargin: Double = js.native
+  var leftMargin: Double
   
-  var letterSpacing: Double = js.native
+  var letterSpacing: Double
   
-  var lineSpacing: Double = js.native
+  var lineSpacing: Double
   
-  var rightMargin: Double = js.native
+  var rightMargin: Double
   
-  var rotation: Boolean = js.native
+  var rotation: Boolean
   
-  var size: Double = js.native
+  var size: Double
   
-  var target: String = js.native
+  var target: String
   
-  var url: String = js.native
+  var url: String
 }
 object FlashTextAttrs {
   

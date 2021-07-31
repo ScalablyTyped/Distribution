@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentLanguage extends StObject {
   
   /**
     * The list of Docker images that are related by the specified programming language.
     */
-  var images: js.UndefOr[EnvironmentImages] = js.native
+  var images: js.UndefOr[EnvironmentImages] = js.undefined
   
   /**
     * The programming language for the Docker images.
     */
-  var language: js.UndefOr[LanguageType] = js.native
+  var language: js.UndefOr[LanguageType] = js.undefined
 }
 object EnvironmentLanguage {
   

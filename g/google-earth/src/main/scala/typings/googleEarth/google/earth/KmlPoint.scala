@@ -2,26 +2,26 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlPoint extends KmlExtrudableGeometry {
+trait KmlPoint
+  extends StObject
+     with KmlExtrudableGeometry {
   
   /**
     * The point's altitude, in meters.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * The point's latitude, in degrees.
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * The point's longitude, in degrees.
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
   
   /**
     * Sets altitudeMode, extrude, tessellate, latitude, longitude, and altitude values.
@@ -33,32 +33,32 @@ trait KmlPoint extends KmlExtrudableGeometry {
     altitudeMode: KmlAltitudeModeEnum,
     extrude: Boolean,
     tessellate: Boolean
-  ): Unit = js.native
+  ): Unit
   
   /**
     * The point's altitude, in meters.
     */
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
   /**
     * Sets the latitude and longitude.
     */
-  def setLatLng(latitude: Double, longitude: Double): Unit = js.native
+  def setLatLng(latitude: Double, longitude: Double): Unit
   
   /**
     * Sets the latitude, longitude, and altitide.
     */
-  def setLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit = js.native
+  def setLatLngAlt(latitude: Double, longitude: Double, altitude: Double): Unit
   
   /**
     * The point's latitude, in degrees.
     */
-  def setLatitude(latitude: Double): Unit = js.native
+  def setLatitude(latitude: Double): Unit
   
   /**
     * The point's longitude, in degrees.
     */
-  def setLongitude(longitude: Double): Unit = js.native
+  def setLongitude(longitude: Double): Unit
 }
 object KmlPoint {
   

@@ -36,7 +36,6 @@ import typings.semanticUiReact.semanticUiReactStrings.two
 import typings.semanticUiReact.stepStepMod.StepProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepGroupMod extends Shortcut {
@@ -45,9 +44,9 @@ object stepGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[StepGroupProps] = js.native
   
-  @js.native
   trait StepGroupProps
-    extends StrictStepGroupProps
+    extends StObject
+       with StrictStepGroupProps
        with /* key */ StringDictionary[js.Any]
   object StepGroupProps {
     
@@ -58,49 +57,48 @@ object stepGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStepGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Steps can be attached to other elements. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.native
+    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A fluid step takes up the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand array of props for Step. */
-    var items: js.UndefOr[SemanticShorthandCollection[StepProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[StepProps]] = js.undefined
     
     /** A step can show a ordered sequence of steps. */
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
     
     /** Steps can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
     
     /** A step can stack vertically only on smaller screens. */
-    var stackable: js.UndefOr[tablet] = js.native
+    var stackable: js.UndefOr[tablet] = js.undefined
     
     /** A step can prevent itself from stacking on mobile. */
-    var unstackable: js.UndefOr[Boolean] = js.native
+    var unstackable: js.UndefOr[Boolean] = js.undefined
     
     /** A step can be displayed stacked vertically. */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /** Steps can be divided evenly inside their parent. */
     var widths: js.UndefOr[
         `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | typings.semanticUiReact.semanticUiReactStrings.`1` | typings.semanticUiReact.semanticUiReactStrings.`2` | typings.semanticUiReact.semanticUiReactStrings.`3` | typings.semanticUiReact.semanticUiReactStrings.`4` | typings.semanticUiReact.semanticUiReactStrings.`5` | typings.semanticUiReact.semanticUiReactStrings.`6` | typings.semanticUiReact.semanticUiReactStrings.`7` | typings.semanticUiReact.semanticUiReactStrings.`8` | one | two | three | four | five | six | seven | eight
-      ] = js.native
+      ] = js.undefined
   }
   object StrictStepGroupProps {
     

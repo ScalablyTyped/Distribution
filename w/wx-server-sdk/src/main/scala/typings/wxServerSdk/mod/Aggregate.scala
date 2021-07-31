@@ -12,43 +12,41 @@ import typings.wxServerSdk.wxServerSdkNumbers.`-1`
 import typings.wxServerSdk.wxServerSdkNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aggregate extends StObject {
   
-  def addFields(fieldObj: StringDictionary[js.Any]): Aggregate = js.native
+  def addFields(fieldObj: StringDictionary[js.Any]): Aggregate
   
-  def bucket(bucketObj: Boundaries): Aggregate = js.native
+  def bucket(bucketObj: Boundaries): Aggregate
   
-  def bucketAuto(bucketObj: Buckets): Aggregate = js.native
+  def bucketAuto(bucketObj: Buckets): Aggregate
   
-  def count(expr: String): js.Any = js.native
+  def count(expr: String): js.Any
   
-  def end(): Unit = js.native
+  def end(): Unit
   
-  def geoNear(geoNearObj: DistanceField): Aggregate = js.native
+  def geoNear(geoNearObj: DistanceField): Aggregate
   
-  def group(groupObj: DictfieldName): Aggregate = js.native
+  def group(groupObj: DictfieldName): Aggregate
   
-  def limit(limitRecords: Double): js.Any = js.native
+  def limit(limitRecords: Double): js.Any
   
-  def `match`(matchObj: StringDictionary[js.Any]): Aggregate = js.native
+  def `match`(matchObj: StringDictionary[js.Any]): Aggregate
   
-  def project(projectObj: StringDictionary[js.Any]): Aggregate = js.native
+  def project(projectObj: StringDictionary[js.Any]): Aggregate
   
-  def replaceRoot(replaceRootObj: NewRoot): Aggregate = js.native
+  def replaceRoot(replaceRootObj: NewRoot): Aggregate
   
-  def sample(replaceRootObj: Size): Aggregate = js.native
+  def sample(replaceRootObj: Size): Aggregate
   
-  def skip(skipNum: Double): js.Any = js.native
+  def skip(skipNum: Double): js.Any
   
-  def sort(replaceRootObj: StringDictionary[`1` | `-1`]): Aggregate = js.native
+  def sort(replaceRootObj: StringDictionary[`1` | `-1`]): Aggregate
   
-  def sortByCount(fieldName: String): Aggregate = js.native
+  def sortByCount(fieldName: String): Aggregate
   
-  def unwind(unwindObj: IncludeArrayIndex): Aggregate = js.native
+  def unwind(unwindObj: IncludeArrayIndex): Aggregate
 }
 object Aggregate {
   

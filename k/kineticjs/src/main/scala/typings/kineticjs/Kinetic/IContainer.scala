@@ -2,11 +2,12 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContainer extends INode {
+trait IContainer
+  extends StObject
+     with INode {
   
   def add(child: INode): js.Any = js.native
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.CodeScanningGetAlertResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint extends StObject {
   
-  var parameters: CodeScanningGetAlertDeprecatedAlertIdEndpoint = js.native
+  var parameters: CodeScanningGetAlertDeprecatedAlertIdEndpoint
   
-  var request: CodeScanningGetAlertRequestOptions = js.native
+  var request: CodeScanningGetAlertRequestOptions
   
-  var response: OctokitResponse[CodeScanningGetAlertResponseData] = js.native
+  var response: OctokitResponse[CodeScanningGetAlertResponseData]
 }
 object ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1alpha", "websecurityscanner_v1alpha.Resource$Projects$Scanconfigs")
@@ -31,7 +30,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaScanConfig] = js.native
   def create(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def create(params: ParamsResourceProjectsScanconfigsCreate): GaxiosPromise[SchemaScanConfig] = js.native
   def create(params: ParamsResourceProjectsScanconfigsCreate, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def create(
@@ -60,7 +59,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsScanconfigsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsScanconfigsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -89,7 +88,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaScanConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def get(
@@ -120,7 +119,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScanConfigsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsList): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsList,
@@ -155,7 +154,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def patch(
@@ -187,7 +186,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def start(): GaxiosPromise[SchemaScanRun] = js.native
   def start(callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
-  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
+  def start(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
   def start(params: ParamsResourceProjectsScanconfigsStart): GaxiosPromise[SchemaScanRun] = js.native
   def start(params: ParamsResourceProjectsScanconfigsStart, callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
   def start(

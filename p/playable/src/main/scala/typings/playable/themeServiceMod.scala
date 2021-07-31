@@ -7,15 +7,33 @@ import typings.playable.themeTypesMod.IThemeConfig
 import typings.playable.themeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", JSImport.Default)
   @js.native
-  class default protected () extends ThemeService {
+  class default protected ()
+    extends StObject
+       with ThemeService {
     def this(hasThemeConfig: ThemeConfig) = this()
+    
+    /* CompleteClass */
+    var _styleSheet: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(module: js.Any): IStyles = js.native
+    /* CompleteClass */
+    override def get(module: js.Object): IStyles = js.native
+    
+    /* CompleteClass */
+    override def registerModuleTheme(module: js.Object, rules: ICSSRules): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateTheme(config: IThemeConfig): Unit = js.native
   }
   object default {
     
@@ -63,12 +81,13 @@ object themeServiceMod {
     def progressColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressColor")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ThemeService extends IThemeService {
+  trait ThemeService
+    extends StObject
+       with IThemeService {
     
-    var _styleSheet: js.Any = js.native
+    var _styleSheet: js.Any
     
-    def get(module: js.Any): IStyles = js.native
+    def get(module: js.Any): IStyles
   }
   object ThemeService {
     

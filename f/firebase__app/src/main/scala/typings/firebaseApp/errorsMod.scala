@@ -10,7 +10,6 @@ import typings.firebaseApp.firebaseAppStrings.`no-app`
 import typings.firebaseUtil.mod.ErrorFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -50,20 +49,19 @@ object errorsMod {
   }
   
   /* Inlined {[ key in @firebase/app.@firebase/app/dist/packages/app/src/errors.AppError ]: {  appName :string}} */
-  @js.native
   trait ErrorParams extends StObject {
     
-    var `app-deleted`: AppName = js.native
+    var `app-deleted`: AppName
     
-    var `bad-app-name`: AppName = js.native
+    var `bad-app-name`: AppName
     
-    var `duplicate-app`: AppName = js.native
+    var `duplicate-app`: AppName
     
-    var `invalid-app-argument`: AppName = js.native
+    var `invalid-app-argument`: AppName
     
-    var `invalid-log-argument`: AppName = js.native
+    var `invalid-log-argument`: AppName
     
-    var `no-app`: AppName = js.native
+    var `no-app`: AppName
   }
   object ErrorParams {
     

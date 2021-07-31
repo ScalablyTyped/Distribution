@@ -3,29 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellListingEvents extends IEvents {
+trait IShellListingEvents
+  extends StObject
+     with IEvents {
   
-  var OnContentChanged: js.UndefOr[js.Function1[/* items */ IShellItems, Unit]] = js.native
+  var OnContentChanged: js.UndefOr[js.Function1[/* items */ IShellItems, Unit]] = js.undefined
   
-  var OnListingActivated: js.UndefOr[js.Function1[/* oldListing */ Null | IShellListing, Unit]] = js.native
+  var OnListingActivated: js.UndefOr[js.Function1[/* oldListing */ Null | IShellListing, Unit]] = js.undefined
   
-  var OnListingDeactivated: js.UndefOr[js.Function1[/* newListing */ Null | IShellListing, Unit]] = js.native
+  var OnListingDeactivated: js.UndefOr[js.Function1[/* newListing */ Null | IShellListing, Unit]] = js.undefined
   
-  var OnSelectedItemsChanged: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.native
+  var OnSelectedItemsChanged: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.undefined
   
-  var OnSelectionChanged: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.native
+  var OnSelectionChanged: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.undefined
   
-  var OnShowContextMenu: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.native
+  var OnShowContextMenu: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.undefined
   
-  var OnShowMainMenu: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.native
+  var OnShowMainMenu: js.UndefOr[js.Function1[/* selectedItems */ IShellItems, Unit]] = js.undefined
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IShellListingEvents {
   

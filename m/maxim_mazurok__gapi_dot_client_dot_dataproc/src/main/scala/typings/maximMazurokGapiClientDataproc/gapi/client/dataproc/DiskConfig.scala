@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskConfig extends StObject {
   
   /** Optional. Size in GB of the boot disk (default is 500GB). */
-  var bootDiskSizeGb: js.UndefOr[Double] = js.native
+  var bootDiskSizeGb: js.UndefOr[Double] = js.undefined
   
   /** Optional. Type of the boot disk (default is "pd-standard"). Valid values: "pd-ssd" (Persistent Disk Solid State Drive) or "pd-standard" (Persistent Disk Hard Disk Drive). */
-  var bootDiskType: js.UndefOr[String] = js.native
+  var bootDiskType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS
     * (https://hadoop.apache.org/docs/r1.2.1/hdfs_user_guide.html) data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only
     * basic config and installed binaries.
     */
-  var numLocalSsds: js.UndefOr[Double] = js.native
+  var numLocalSsds: js.UndefOr[Double] = js.undefined
 }
 object DiskConfig {
   

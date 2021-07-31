@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPU extends StObject {
   
   /**
     * The CPU's architecture (for example, x86 or ARM).
     */
-  var architecture: js.UndefOr[String] = js.native
+  var architecture: js.UndefOr[String] = js.undefined
   
   /**
     * The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
     */
-  var clock: js.UndefOr[Double] = js.native
+  var clock: js.UndefOr[Double] = js.undefined
   
   /**
     * The CPU's frequency.
     */
-  var frequency: js.UndefOr[String] = js.native
+  var frequency: js.UndefOr[String] = js.undefined
 }
 object CPU {
   

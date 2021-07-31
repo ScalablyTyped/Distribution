@@ -2,14 +2,15 @@ package typings.typedJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("typed.js", JSImport.Default)
   @js.native
-  class default protected () extends Typed {
+  class default protected ()
+    extends StObject
+       with Typed {
     def this(elementId: String, options: TypedOptions) = this()
   }
   
@@ -28,153 +29,152 @@ object mod {
     def toggle(): Unit = js.native
   }
   
-  @js.native
   trait TypedOptions extends StObject {
     
     /**
       * attribute for typing Ex: input placeholder, value, or just HTML text
       */
-    var attr: js.UndefOr[String] = js.native
+    var attr: js.UndefOr[String] = js.undefined
     
     /**
       * insert CSS for cursor and fadeOut into HTML
       */
-    var autoInsertCss: js.UndefOr[Boolean] = js.native
+    var autoInsertCss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * time before backspacing in milliseconds
       */
-    var backDelay: js.UndefOr[Double] = js.native
+    var backDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * backspacing speed in milliseconds
       */
-    var backSpeed: js.UndefOr[Double] = js.native
+    var backSpeed: js.UndefOr[Double] = js.undefined
     
     /**
       * bind to focus and blur if el is text input
       */
-    var bindInputFocusEvents: js.UndefOr[Boolean] = js.native
+    var bindInputFocusEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 'html' or 'null' for plaintext
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * character for cursor
       */
-    var cursorChar: js.UndefOr[String] = js.native
+    var cursorChar: js.UndefOr[String] = js.undefined
     
     /**
       * Fade out instead of backspace
       */
-    var fadeOut: js.UndefOr[Boolean] = js.native
+    var fadeOut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * css class for fade animation
       */
-    var fadeOutClass: js.UndefOr[String] = js.native
+    var fadeOutClass: js.UndefOr[String] = js.undefined
     
     /**
       * Fade out delay in milliseconds
       */
-    var fadeOutDelay: js.UndefOr[Boolean] = js.native
+    var fadeOutDelay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * loop strings
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * amount of loops
       */
-    var loopCount: js.UndefOr[Double] = js.native
+    var loopCount: js.UndefOr[Double] = js.undefined
     
     /**
       * All typing is complete
       */
-    var onComplete: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.undefined
     
     /**
       * After destroy
       */
-    var onDestroy: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.native
+    var onDestroy: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.undefined
     
     /**
       * During looping, after last string is typed
       */
-    var onLastStringBackspaced: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.native
+    var onLastStringBackspaced: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.undefined
     
     /**
       * After reset
       */
-    var onReset: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.native
+    var onReset: js.UndefOr[js.Function1[/* self */ Typed, Unit]] = js.undefined
     
     /**
       * After start
       */
-    var onStart: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * After stop
       */
-    var onStop: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var onStop: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * After each string is typed
       */
-    var onStringTyped: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var onStringTyped: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * Typing has been stopped
       */
-    var onTypingPaused: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var onTypingPaused: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * Typing has been started after being stopped
       */
-    var onTypingResumed: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var onTypingResumed: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * Before each string is typed
       */
-    var preStringTyped: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.native
+    var preStringTyped: js.UndefOr[js.Function2[/* arrayPos */ Double, /* self */ Typed, Unit]] = js.undefined
     
     /**
       * show cursor
       */
-    var showCursor: js.UndefOr[Boolean] = js.native
+    var showCursor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * shuffle the strings
       */
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * only backspace what doesn't match the previous string
       */
-    var smartBackspace: js.UndefOr[Boolean] = js.native
+    var smartBackspace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * time before typing starts in milliseconds
       */
-    var startDelay: js.UndefOr[Double] = js.native
+    var startDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * strings to be typed
       */
-    var strings: js.UndefOr[js.Array[String]] = js.native
+    var strings: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * ID of element containing string children
       */
-    var stringsElement: js.UndefOr[String] = js.native
+    var stringsElement: js.UndefOr[String] = js.undefined
     
     /**
       * type speed in milliseconds
       */
-    var typeSpeed: js.UndefOr[Double] = js.native
+    var typeSpeed: js.UndefOr[Double] = js.undefined
   }
   object TypedOptions {
     

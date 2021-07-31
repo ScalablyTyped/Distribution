@@ -3,38 +3,36 @@ package typings.swaggerExpressMiddleware.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /** A Buffer of the entire file (MemoryStorage) */
-  var buffer: Buffer = js.native
+  var buffer: Buffer
   
   /** The folder to which the file has been saved (DiskStorage) */
-  var destination: String = js.native
+  var destination: String
   
   /** Encoding type of the file */
-  var encoding: String = js.native
+  var encoding: String
   
   /** Field name specified in the form */
-  var fieldname: String = js.native
+  var fieldname: String
   
   /** The name of the file within the destination (DiskStorage) */
-  var filename: String = js.native
+  var filename: String
   
   /** Mime type of the file */
-  var mimetype: String = js.native
+  var mimetype: String
   
   /** Name of the file on the user's computer */
-  var originalname: String = js.native
+  var originalname: String
   
   /** Location of the uploaded file (DiskStorage) */
-  var path: String = js.native
+  var path: String
   
   /** Size of the file in bytes */
-  var size: Double = js.native
+  var size: Double
 }
 object File {
   

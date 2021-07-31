@@ -6,20 +6,30 @@ import typings.postcss.mod.SourceMapOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("css-minimizer-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends CssMinimizerPlugin {
+  class ^ ()
+    extends StObject
+       with CssMinimizerPlugin {
     def this(options: Options) = this()
+    
+    /**
+      * Apply the plugin
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
   
-  @js.native
   trait CacheKeys
-    extends DefaultCacheKeys
+    extends StObject
+       with DefaultCacheKeys
        with /* key */ StringDictionary[String]
   object CacheKeys {
     
@@ -39,8 +49,7 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ @js.native
-  trait CssMinimizerPlugin extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ trait CssMinimizerPlugin extends StObject {
     
     /**
       * Apply the plugin
@@ -48,7 +57,7 @@ object mod {
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object CssMinimizerPlugin {
     
@@ -73,18 +82,17 @@ object mod {
   /**
     * Default cache keys
     */
-  @js.native
   trait DefaultCacheKeys extends StObject {
     
-    var `css-minimizer-webpack-plugin`: String = js.native
+    var `css-minimizer-webpack-plugin`: String
     
-    var `css-minimizer-webpack-plugin-options`: String = js.native
+    var `css-minimizer-webpack-plugin-options`: String
     
-    var cssMinimizer: String = js.native
+    var cssMinimizer: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var path: String = js.native
+    var path: String
   }
   object DefaultCacheKeys {
     
@@ -122,57 +130,56 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Enable file caching.
       * @default 'node_modules/.cache/css-minimizer-webpack-plugin'
       */
-    var cache: js.UndefOr[Boolean | String] = js.native
+    var cache: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Allows you to override default cache keys.
       */
-    var cacheKeys: js.UndefOr[js.Function2[/* defaultCacheKeys */ CacheKeys, /* file */ String, CacheKeys]] = js.native
+    var cacheKeys: js.UndefOr[js.Function2[/* defaultCacheKeys */ CacheKeys, /* file */ String, CacheKeys]] = js.undefined
     
     /**
       * Files to exclude.
       */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Files to include
       */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Allows you to override default minify function.
       * By default plugin uses cssnano package. Useful for using and testing unpublished versions or forks.
       */
     var minify: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any, _]
-      ] = js.native
+        js.Function3[/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any, js.Any]
+      ] = js.undefined
     
-    var minimizerOptions: js.UndefOr[CssNanoOptions] = js.native
+    var minimizerOptions: js.UndefOr[CssNanoOptions] = js.undefined
     
     /**
       * Use multi-process parallel running to improve the build speed.
       * Default number of concurrent runs: os.cpus().length - 1.
       */
-    var parallel: js.UndefOr[Boolean | Double] = js.native
+    var parallel: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Enable (and configure) source map support.
       * Use PostCss SourceMap options.
       * Default configuration when enabled: { inline: false }.
       */
-    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.native
+    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.undefined
     
     /**
       * Test to match files against.
       */
-    var test: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var test: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Allow to filter css-minimizer warnings (By default cssnano).
@@ -185,7 +192,7 @@ object mod {
           /* source */ String, 
           js.UndefOr[Boolean | Null]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -229,7 +236,7 @@ object mod {
       def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
       @scala.inline
-      def setMinify(value: (/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any) => _): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
+      def setMinify(value: (/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any) => js.Any): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
       
       @scala.inline
       def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)

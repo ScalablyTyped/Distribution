@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamFunSettings extends StObject {
   
   // If set to true, enables users to include custom memes.
-  var allowCustomMemes: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowCustomMemes: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, enables Giphy use.
-  var allowGiphy: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowGiphy: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If set to true, enables users to include stickers and memes.
-  var allowStickersAndMemes: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowStickersAndMemes: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Giphy content rating. Possible values are: moderate, strict.
-  var giphyContentRating: js.UndefOr[NullableOption[GiphyRatingType]] = js.native
+  var giphyContentRating: js.UndefOr[NullableOption[GiphyRatingType]] = js.undefined
 }
 object TeamFunSettings {
   

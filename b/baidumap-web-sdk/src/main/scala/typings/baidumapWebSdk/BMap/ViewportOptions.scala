@@ -2,19 +2,17 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportOptions extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var enableAnimation: js.UndefOr[Boolean] = js.native
+  var enableAnimation: js.UndefOr[Boolean] = js.undefined
   
-  var margins: js.UndefOr[js.Array[Double]] = js.native
+  var margins: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var zoomFactor: js.UndefOr[Double] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.undefined
 }
 object ViewportOptions {
   

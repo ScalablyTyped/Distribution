@@ -2,19 +2,17 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillNoDataOptions extends StObject {
   
-  var mask: js.UndefOr[RasterBand] = js.native
+  var mask: js.UndefOr[RasterBand] = js.undefined
   
-  var searchDist: Double = js.native
+  var searchDist: Double
   
-  var smoothingIterations: js.UndefOr[Double] = js.native
+  var smoothingIterations: js.UndefOr[Double] = js.undefined
   
-  var src: RasterBand = js.native
+  var src: RasterBand
 }
 object FillNoDataOptions {
   

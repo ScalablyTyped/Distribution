@@ -2,15 +2,13 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Method extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
 }
 object Method {
   

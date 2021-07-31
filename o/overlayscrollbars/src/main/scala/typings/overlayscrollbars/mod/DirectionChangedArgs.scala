@@ -2,15 +2,13 @@ package typings.overlayscrollbars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionChangedArgs extends StObject {
   
-  var dir: String = js.native
+  var dir: String
   
-  var isRTL: Double = js.native
+  var isRTL: Double
 }
 object DirectionChangedArgs {
   

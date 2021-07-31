@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCommentResponse extends StObject {
   
   /**
     * The comment that has been created.
     */
-  var Comment: js.UndefOr[typings.awsSdk.workdocsMod.Comment] = js.native
+  var Comment: js.UndefOr[typings.awsSdk.workdocsMod.Comment] = js.undefined
 }
 object CreateCommentResponse {
   

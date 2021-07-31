@@ -12,7 +12,6 @@ import typings.typeFest.basicMod.TypedArray
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,12 +31,10 @@ object mod {
   		//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/name_3c085674ad31223b9653c88f725d6b41'
   		```
   		*/
-  @JSImport("tempy", "directory")
-  @js.native
-  def directory(): String = js.native
-  @JSImport("tempy", "directory")
-  @js.native
-  def directory(options: DirectoryOptions): String = js.native
+  @scala.inline
+  def directory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")().asInstanceOf[String]
+  @scala.inline
+  def directory(options: DirectoryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("tempy", "directory")
   @js.native
   def directory_Fmod: Task = js.native
@@ -60,12 +57,10 @@ object mod {
   		//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/2f3d094aec2cb1b93bb0f4cffce5ebd6'
   		```
   		*/
-  @JSImport("tempy", "file")
-  @js.native
-  def file(): String = js.native
-  @JSImport("tempy", "file")
-  @js.native
-  def file(options: FileOptions): String = js.native
+  @scala.inline
+  def file(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[String]
+  @scala.inline
+  def file(options: FileOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("tempy", "file")
   @js.native
   def file_Fmod: Call = js.native
@@ -93,36 +88,26 @@ object mod {
   		//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/2f3d094aec2cb1b93bb0f4cffce5ebd6'
   		```
   		*/
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: String): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: String, options: FileOptions): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: Buffer): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: Buffer, options: FileOptions): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: ReadableStream): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: ReadableStream, options: FileOptions): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: DataView): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: DataView, options: FileOptions): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: TypedArray): js.Promise[String] = js.native
-  @JSImport("tempy", "write")
-  @js.native
-  def write(fileContent: TypedArray, options: FileOptions): js.Promise[String] = js.native
+  @scala.inline
+  def write(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: String, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: Buffer, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: ReadableStream, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: DataView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: DataView, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: TypedArray): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def write(fileContent: TypedArray, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Synchronously write data to a random temp file.
@@ -133,35 +118,26 @@ object mod {
   	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/2f3d094aec2cb1b93bb0f4cffce5ebd6'
   	```
   	*/
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: String): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: String, options: FileOptions): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: Buffer): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: Buffer, options: FileOptions): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: DataView): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: DataView, options: FileOptions): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: TypedArray): String = js.native
-  @JSImport("tempy", "writeSync")
-  @js.native
-  def writeSync(fileContent: TypedArray, options: FileOptions): String = js.native
+  @scala.inline
+  def writeSync(fileContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: String, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: Buffer, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: DataView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: DataView, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def writeSync(fileContent: TypedArray, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @scala.inline
   def write_=(x: CallTask): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("write")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait DirectoryOptions extends StObject {
     
     /**
@@ -169,7 +145,7 @@ object mod {
     		Directory prefix.
     		Useful for testing by making it easier to identify cache directories that are created.
     		*/
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
   }
   object DirectoryOptions {
     

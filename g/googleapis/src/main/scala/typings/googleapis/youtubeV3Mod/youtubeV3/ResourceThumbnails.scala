@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Thumbnails")
@@ -35,7 +34,7 @@ class ResourceThumbnails protected () extends StObject {
     */
   def set(): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaThumbnailSetResponse]): Unit = js.native
-  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
+  def set(params: Unit, options: MethodOptions): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(params: ParamsResourceThumbnailsSet): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(params: ParamsResourceThumbnailsSet, callback: BodyResponseCallback[SchemaThumbnailSetResponse]): Unit = js.native
   def set(

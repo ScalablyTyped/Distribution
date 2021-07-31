@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVolumeAttributeRequest extends StObject {
   
   /**
     * The attribute of the volume. This parameter is required.
     */
-  var Attribute: VolumeAttributeName = js.native
+  var Attribute: VolumeAttributeName
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: typings.awsSdk.ec2Mod.VolumeId = js.native
+  var VolumeId: typings.awsSdk.ec2Mod.VolumeId
 }
 object DescribeVolumeAttributeRequest {
   

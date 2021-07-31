@@ -2,36 +2,34 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickListMetadataModel extends StObject {
   
   /**
     * ID of the picklist
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Is input values by user only limited to suggested values
     */
-  var isSuggested: Boolean = js.native
+  var isSuggested: Boolean
   
   /**
     * Name of the picklist
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Type of picklist
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Url of the picklist
     */
-  var url: String = js.native
+  var url: String
 }
 object PickListMetadataModel {
   

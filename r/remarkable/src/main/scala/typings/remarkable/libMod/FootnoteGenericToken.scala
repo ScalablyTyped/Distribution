@@ -2,22 +2,22 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait FootnoteGenericToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait FootnoteGenericToken
+  extends StObject
+     with TagToken {
   
   /**
     * Footnote id.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Footnote sub id.
     */
-  var subId: js.UndefOr[Double] = js.native
+  var subId: js.UndefOr[Double] = js.undefined
 }
 object FootnoteGenericToken {
   

@@ -2,131 +2,129 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualInterface extends StObject {
   
   /**
     * The address family for the BGP peer.
     */
-  var addressFamily: js.UndefOr[AddressFamily] = js.native
+  var addressFamily: js.UndefOr[AddressFamily] = js.undefined
   
   /**
     * The IP address assigned to the Amazon interface.
     */
-  var amazonAddress: js.UndefOr[AmazonAddress] = js.native
+  var amazonAddress: js.UndefOr[AmazonAddress] = js.undefined
   
   /**
     * The autonomous system number (ASN) for the Amazon side of the connection.
     */
-  var amazonSideAsn: js.UndefOr[LongAsn] = js.native
+  var amazonSideAsn: js.UndefOr[LongAsn] = js.undefined
   
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration. The valid values are 1-2147483647.
     */
-  var asn: js.UndefOr[ASN] = js.native
+  var asn: js.UndefOr[ASN] = js.undefined
   
   /**
     * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
-  var authKey: js.UndefOr[BGPAuthKey] = js.native
+  var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   
   /**
     * The Direct Connect endpoint on which the virtual interface terminates.
     */
-  var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.native
+  var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
   
   /**
     * The BGP peers configured on this virtual interface.
     */
-  var bgpPeers: js.UndefOr[BGPPeerList] = js.native
+  var bgpPeers: js.UndefOr[BGPPeerList] = js.undefined
   
   /**
     * The ID of the connection.
     */
-  var connectionId: js.UndefOr[ConnectionId] = js.native
+  var connectionId: js.UndefOr[ConnectionId] = js.undefined
   
   /**
     * The IP address assigned to the customer interface.
     */
-  var customerAddress: js.UndefOr[CustomerAddress] = js.native
+  var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   
   /**
     * The customer router configuration.
     */
-  var customerRouterConfig: js.UndefOr[RouterConfig] = js.native
+  var customerRouterConfig: js.UndefOr[RouterConfig] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * Indicates whether jumbo frames (9001 MTU) are supported.
     */
-  var jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.native
+  var jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined
   
   /**
     * The location of the connection.
     */
-  var location: js.UndefOr[LocationCode] = js.native
+  var location: js.UndefOr[LocationCode] = js.undefined
   
   /**
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
-  var mtu: js.UndefOr[MTU] = js.native
+  var mtu: js.UndefOr[MTU] = js.undefined
   
   /**
     * The ID of the AWS account that owns the virtual interface.
     */
-  var ownerAccount: js.UndefOr[OwnerAccount] = js.native
+  var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The AWS Region where the virtual interface is located.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     * The routes to be advertised to the AWS network in this Region. Applies to public virtual interfaces.
     */
-  var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.native
+  var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
   /**
     * The tags associated with the virtual interface.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the virtual private gateway. Applies only to private virtual interfaces.
     */
-  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.native
+  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
   
   /**
     * The name of the virtual interface assigned by the customer network. The name has a maximum of 100 characters. The following are valid characters: a-z, 0-9 and a hyphen (-).
     */
-  var virtualInterfaceName: js.UndefOr[VirtualInterfaceName] = js.native
+  var virtualInterfaceName: js.UndefOr[VirtualInterfaceName] = js.undefined
   
   /**
     * The state of the virtual interface. The following are the possible values:    confirming: The creation of the virtual interface is pending confirmation from the virtual interface owner. If the owner of the virtual interface is different from the owner of the connection on which it is provisioned, then the virtual interface will remain in this state until it is confirmed by the virtual interface owner.    verifying: This state only applies to public virtual interfaces. Each public virtual interface needs validation before the virtual interface can be created.    pending: A virtual interface is in this state from the time that it is created until the virtual interface is ready to forward traffic.    available: A virtual interface that is able to forward traffic.    down: A virtual interface that is BGP down.    deleting: A virtual interface is in this state immediately after calling DeleteVirtualInterface until it can no longer forward traffic.    deleted: A virtual interface that cannot forward traffic.    rejected: The virtual interface owner has declined creation of the virtual interface. If a virtual interface in the Confirming state is deleted by the virtual interface owner, the virtual interface enters the Rejected state.    unknown: The state of the virtual interface is not available.  
     */
-  var virtualInterfaceState: js.UndefOr[VirtualInterfaceState] = js.native
+  var virtualInterfaceState: js.UndefOr[VirtualInterfaceState] = js.undefined
   
   /**
     * The type of virtual interface. The possible values are private and public.
     */
-  var virtualInterfaceType: js.UndefOr[VirtualInterfaceType] = js.native
+  var virtualInterfaceType: js.UndefOr[VirtualInterfaceType] = js.undefined
   
   /**
     * The ID of the VLAN.
     */
-  var vlan: js.UndefOr[VLAN] = js.native
+  var vlan: js.UndefOr[VLAN] = js.undefined
 }
 object VirtualInterface {
   

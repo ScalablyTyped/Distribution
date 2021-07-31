@@ -2,101 +2,99 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Finding extends StObject {
   
   /**
     * The unique identifier for the AWS account that the finding applies to. This is typically the account that owns the affected resource.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the finding is archived.
     */
-  var archived: js.UndefOr[boolean] = js.native
+  var archived: js.UndefOr[boolean] = js.undefined
   
   /**
     * The category of the finding. Possible values are: CLASSIFICATION, for a sensitive data finding; and, POLICY, for a policy finding.
     */
-  var category: js.UndefOr[FindingCategory] = js.native
+  var category: js.UndefOr[FindingCategory] = js.undefined
   
   /**
     * The details of a sensitive data finding. This value is null for a policy finding.
     */
-  var classificationDetails: js.UndefOr[ClassificationDetails] = js.native
+  var classificationDetails: js.UndefOr[ClassificationDetails] = js.undefined
   
   /**
     * The total number of occurrences of the finding. For sensitive data findings, this value is always 1. All sensitive data findings are considered new (unique) because they derive from individual classification jobs.
     */
-  var count: js.UndefOr[long] = js.native
+  var count: js.UndefOr[long] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the finding was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.native
+  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The description of the finding.
     */
-  var description: js.UndefOr[string] = js.native
+  var description: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the finding. This is a random string that Amazon Macie generates and assigns to a finding when it creates the finding.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
   
   /**
     * The AWS partition that Amazon Macie created the finding in.
     */
-  var partition: js.UndefOr[string] = js.native
+  var partition: js.UndefOr[string] = js.undefined
   
   /**
     * The details of a policy finding. This value is null for a sensitive data finding.
     */
-  var policyDetails: js.UndefOr[PolicyDetails] = js.native
+  var policyDetails: js.UndefOr[PolicyDetails] = js.undefined
   
   /**
     * The AWS Region that Amazon Macie created the finding in.
     */
-  var region: js.UndefOr[string] = js.native
+  var region: js.UndefOr[string] = js.undefined
   
   /**
     * The resources that the finding applies to.
     */
-  var resourcesAffected: js.UndefOr[ResourcesAffected] = js.native
+  var resourcesAffected: js.UndefOr[ResourcesAffected] = js.undefined
   
   /**
     * Specifies whether the finding is a sample finding. A sample finding is a finding that uses example data to demonstrate what a finding might contain.
     */
-  var sample: js.UndefOr[boolean] = js.native
+  var sample: js.UndefOr[boolean] = js.undefined
   
   /**
     * The version of the schema that was used to define the data structures in the finding.
     */
-  var schemaVersion: js.UndefOr[string] = js.native
+  var schemaVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The severity level and score for the finding.
     */
-  var severity: js.UndefOr[Severity] = js.native
+  var severity: js.UndefOr[Severity] = js.undefined
   
   /**
     * The brief description of the finding.
     */
-  var title: js.UndefOr[string] = js.native
+  var title: js.UndefOr[string] = js.undefined
   
   /**
     * The type of the finding.
     */
-  var `type`: js.UndefOr[FindingType] = js.native
+  var `type`: js.UndefOr[FindingType] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the finding was last updated. For sensitive data findings, this value is the same as the value for the createdAt property. All sensitive data findings are considered new (unique) because they derive from individual classification jobs.
     */
-  var updatedAt: js.UndefOr[timestampIso8601] = js.native
+  var updatedAt: js.UndefOr[timestampIso8601] = js.undefined
 }
 object Finding {
   

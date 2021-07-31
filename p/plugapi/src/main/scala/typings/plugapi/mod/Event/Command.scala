@@ -4,23 +4,23 @@ import typings.plugapi.mod.RawChatMessage
 import typings.plugapi.mod.User.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Command extends Chat {
+trait Command
+  extends StObject
+     with Chat {
   
-  var args: js.Array[String] = js.native
+  var args: js.Array[String]
   
-  var command: String = js.native
+  var command: String
   
-  def havePermission(args: js.Any*): Boolean = js.native
+  def havePermission(args: js.Any*): Boolean
   
-  def isFrom(args: js.Any*): Boolean = js.native
+  def isFrom(args: js.Any*): Boolean
   
-  def respond(args: js.Any*): js.Any = js.native
+  def respond(args: js.Any*): js.Any
   
-  def respondTimeout(args: js.Any*): js.Any = js.native
+  def respondTimeout(args: js.Any*): js.Any
 }
 object Command {
   
@@ -32,7 +32,7 @@ object Command {
     havePermission: /* repeated */ js.Any => Boolean,
     id: String,
     isFrom: /* repeated */ js.Any => Boolean,
-    mentions: js.Array[_],
+    mentions: js.Array[js.Any],
     message: String,
     muted: Boolean,
     raw: RawChatMessage,

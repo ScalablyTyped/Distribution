@@ -2,7 +2,6 @@ package typings.playerframework.global.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.InteractionType")
@@ -10,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object InteractionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.playerframework.PlayerFramework.InteractionType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.playerframework.PlayerFramework.InteractionType & Double] = js.native
   
-  /* 3 */ val all: typings.playerframework.PlayerFramework.InteractionType.all with Double = js.native
+  /* 3 */ val all: typings.playerframework.PlayerFramework.InteractionType.all & Double = js.native
   
-  /* 2 */ val hard: typings.playerframework.PlayerFramework.InteractionType.hard with Double = js.native
+  /* 2 */ val hard: typings.playerframework.PlayerFramework.InteractionType.hard & Double = js.native
   
-  /* 0 */ val none: typings.playerframework.PlayerFramework.InteractionType.none with Double = js.native
+  /* 0 */ val none: typings.playerframework.PlayerFramework.InteractionType.none & Double = js.native
   
-  /* 1 */ val soft: typings.playerframework.PlayerFramework.InteractionType.soft with Double = js.native
+  /* 1 */ val soft: typings.playerframework.PlayerFramework.InteractionType.soft & Double = js.native
 }

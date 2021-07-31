@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.strange.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -24,18 +23,23 @@ object treeMod {
     */
   @JSImport("strange/tree", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Date | Double | String */] protected () extends RangeTree[T] {
+  class ^[T /* <: Date | Double | String */] protected ()
+    extends StObject
+       with RangeTree[T] {
     def this(ranges: js.Array[Range[T]]) = this()
     def this(ranges: Range[T]) = this()
     def this(ranges: js.Array[Range[T]], left: RangeTree[T]) = this()
     def this(ranges: Range[T], left: RangeTree[T]) = this()
-    def this(ranges: js.Array[Range[T]], left: js.UndefOr[scala.Nothing], right: RangeTree[T]) = this()
     def this(ranges: js.Array[Range[T]], left: Null, right: RangeTree[T]) = this()
+    def this(ranges: js.Array[Range[T]], left: Unit, right: RangeTree[T]) = this()
     def this(ranges: js.Array[Range[T]], left: RangeTree[T], right: RangeTree[T]) = this()
-    def this(ranges: Range[T], left: js.UndefOr[scala.Nothing], right: RangeTree[T]) = this()
     def this(ranges: Range[T], left: Null, right: RangeTree[T]) = this()
+    def this(ranges: Range[T], left: Unit, right: RangeTree[T]) = this()
     def this(ranges: Range[T], left: RangeTree[T], right: RangeTree[T]) = this()
   }
+  @JSImport("strange/tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create an interval tree (implemented as an augmented binary search tree)
@@ -51,9 +55,8 @@ object treeMod {
     * RangeTree.from(ranges).search(42) // => [new Range(40, 50)]
     */
   /* static member */
-  @JSImport("strange/tree", "from")
-  @js.native
-  def from[U /* <: Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = js.native
+  @scala.inline
+  def from[U /* <: Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(ranges.asInstanceOf[js.Any]).asInstanceOf[RangeTree[U]]
   
   /**
     * Create an interval tree node.

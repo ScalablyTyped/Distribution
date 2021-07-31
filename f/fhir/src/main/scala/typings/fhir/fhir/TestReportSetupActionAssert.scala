@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The assertion to perform
   */
-@js.native
-trait TestReportSetupActionAssert extends BackboneElement {
+trait TestReportSetupActionAssert
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'detail'.
     */
-  var _detail: js.UndefOr[Element] = js.native
+  var _detail: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'message'.
     */
-  var _message: js.UndefOr[Element] = js.native
+  var _message: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'result'.
     */
-  var _result: js.UndefOr[Element] = js.native
+  var _result: js.UndefOr[Element] = js.undefined
   
   /**
     * A link to further details on the result
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * A message associated with the result
     */
-  var message: js.UndefOr[markdown] = js.native
+  var message: js.UndefOr[markdown] = js.undefined
   
   /**
     * pass | skip | fail | warning | error
     */
-  var result: code = js.native
+  var result: code
 }
 object TestReportSetupActionAssert {
   

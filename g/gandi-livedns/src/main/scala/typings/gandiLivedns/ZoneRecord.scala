@@ -2,22 +2,20 @@ package typings.gandiLivedns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneRecord extends StObject {
   
-  var rrset_name: String = js.native
+  var rrset_name: String
   
-  var rrset_ttl: Double = js.native
+  var rrset_ttl: Double
   
   /**
     * One of A, AAA, CNAME, MX, NS, TXT, WKS, SRV, LOC, SPF, SSHFP, DNAME
     */
-  var rrset_type: String = js.native
+  var rrset_type: String
   
-  var rrset_values: js.Array[String] = js.native
+  var rrset_values: js.Array[String]
 }
 object ZoneRecord {
   

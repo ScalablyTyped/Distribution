@@ -12,7 +12,7 @@ ArangoDB AQL query builder.
 | Keywords           | arangodb, aql, nosql, query |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 5306 |
+| # downloads        | 5406 |
 | # stars            | 6 |
 
 ## Links

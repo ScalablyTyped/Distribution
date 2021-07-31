@@ -2,25 +2,23 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListSnapshots` method.
   */
-@js.native
 trait SchemaListSnapshotsResponse extends StObject {
   
   /**
     * If not empty, indicates that there may be more snapshot that match the
     * request; this value should be passed in a new `ListSnapshotsRequest`.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The resulting snapshots.
     */
-  var snapshots: js.UndefOr[js.Array[SchemaSnapshot]] = js.native
+  var snapshots: js.UndefOr[js.Array[SchemaSnapshot]] = js.undefined
 }
 object SchemaListSnapshotsResponse {
   

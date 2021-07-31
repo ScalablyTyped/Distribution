@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryNoticesResponse. */
-@js.native
 trait QueryNoticesResponse extends StObject {
   
   /** Array of aggregation results that match the query. */
-  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.undefined
   
   /** The number of duplicates removed from this notices query. */
-  var duplicates_removed: js.UndefOr[Double] = js.native
+  var duplicates_removed: js.UndefOr[Double] = js.undefined
   
   /** The number of matching results. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
   
   /** Array of passage results that match the query. */
-  var passages: js.UndefOr[js.Array[QueryPassages]] = js.native
+  var passages: js.UndefOr[js.Array[QueryPassages]] = js.undefined
   
   /** Array of document results that match the query. */
-  var results: js.UndefOr[js.Array[QueryNoticesResult]] = js.native
+  var results: js.UndefOr[js.Array[QueryNoticesResult]] = js.undefined
 }
 object QueryNoticesResponse {
   

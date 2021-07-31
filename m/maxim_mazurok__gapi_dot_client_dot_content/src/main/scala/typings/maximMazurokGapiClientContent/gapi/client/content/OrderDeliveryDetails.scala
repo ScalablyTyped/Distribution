@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderDeliveryDetails extends StObject {
   
   /** The delivery address */
-  var address: js.UndefOr[OrderAddress] = js.native
+  var address: js.UndefOr[OrderAddress] = js.undefined
   
   /** The phone number of the person receiving the delivery. */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
 }
 object OrderDeliveryDetails {
   

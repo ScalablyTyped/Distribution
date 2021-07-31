@@ -6,7 +6,6 @@ import typings.reactDateRange.anon.PartialClassNames
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,11 +48,12 @@ object mod {
   
   type AnyDate = String | Date
   
-  @js.native
-  trait CalendarProps extends CommonCalendarProps {
+  trait CalendarProps
+    extends StObject
+       with CommonCalendarProps {
     
     /** default: today */
-    var date: DateInputType = js.native
+    var date: DateInputType
   }
   object CalendarProps {
     
@@ -74,52 +74,51 @@ object mod {
     }
   }
   
-  @js.native
   trait CalendarTheme extends StObject {
     
-    var Calendar: js.UndefOr[CSSProperties] = js.native
+    var Calendar: js.UndefOr[CSSProperties] = js.undefined
     
-    var DateRange: js.UndefOr[CSSProperties] = js.native
+    var DateRange: js.UndefOr[CSSProperties] = js.undefined
     
-    var Day: js.UndefOr[CSSProperties] = js.native
+    var Day: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayActive: js.UndefOr[CSSProperties] = js.native
+    var DayActive: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayEndEdge: js.UndefOr[CSSProperties] = js.native
+    var DayEndEdge: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayHover: js.UndefOr[CSSProperties] = js.native
+    var DayHover: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayInRange: js.UndefOr[CSSProperties] = js.native
+    var DayInRange: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayPassive: js.UndefOr[CSSProperties] = js.native
+    var DayPassive: js.UndefOr[CSSProperties] = js.undefined
     
-    var DaySelected: js.UndefOr[CSSProperties] = js.native
+    var DaySelected: js.UndefOr[CSSProperties] = js.undefined
     
-    var DaySpecialDay: js.UndefOr[CSSProperties] = js.native
+    var DaySpecialDay: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayStartEdge: js.UndefOr[CSSProperties] = js.native
+    var DayStartEdge: js.UndefOr[CSSProperties] = js.undefined
     
-    var DaySunday: js.UndefOr[CSSProperties] = js.native
+    var DaySunday: js.UndefOr[CSSProperties] = js.undefined
     
-    var DayToday: js.UndefOr[CSSProperties] = js.native
+    var DayToday: js.UndefOr[CSSProperties] = js.undefined
     
-    var MonthAndYear: js.UndefOr[CSSProperties] = js.native
+    var MonthAndYear: js.UndefOr[CSSProperties] = js.undefined
     
-    var MonthArrow: js.UndefOr[CSSProperties] = js.native
+    var MonthArrow: js.UndefOr[CSSProperties] = js.undefined
     
-    var MonthArrowNext: js.UndefOr[CSSProperties] = js.native
+    var MonthArrowNext: js.UndefOr[CSSProperties] = js.undefined
     
-    var MonthArrowPrev: js.UndefOr[CSSProperties] = js.native
+    var MonthArrowPrev: js.UndefOr[CSSProperties] = js.undefined
     
-    var MonthButton: js.UndefOr[CSSProperties] = js.native
+    var MonthButton: js.UndefOr[CSSProperties] = js.undefined
     
-    var PredefinedRanges: js.UndefOr[CSSProperties] = js.native
+    var PredefinedRanges: js.UndefOr[CSSProperties] = js.undefined
     
-    var PredefinedRangesItem: js.UndefOr[CSSProperties] = js.native
+    var PredefinedRangesItem: js.UndefOr[CSSProperties] = js.undefined
     
-    var PredefinedRangesItemActive: js.UndefOr[CSSProperties] = js.native
+    var PredefinedRangesItemActive: js.UndefOr[CSSProperties] = js.undefined
     
-    var Weekday: js.UndefOr[CSSProperties] = js.native
+    var Weekday: js.UndefOr[CSSProperties] = js.undefined
   }
   object CalendarTheme {
     
@@ -266,110 +265,109 @@ object mod {
     }
   }
   
-  @js.native
   trait ClassNames extends StObject {
     
-    var calendarWrapper: String = js.native
+    var calendarWrapper: String
     
-    var dateDisplay: String = js.native
+    var dateDisplay: String
     
-    var dateDisplayItem: String = js.native
+    var dateDisplayItem: String
     
-    var dateDisplayItemActive: String = js.native
+    var dateDisplayItemActive: String
     
-    var dateDisplayWrapper: String = js.native
+    var dateDisplayWrapper: String
     
-    var dateRangePickerWrapper: String = js.native
+    var dateRangePickerWrapper: String
     
-    var dateRangeWrapper: String = js.native
+    var dateRangeWrapper: String
     
-    var day: String = js.native
+    var day: String
     
-    var dayActive: String = js.native
+    var dayActive: String
     
-    var dayDisabled: String = js.native
+    var dayDisabled: String
     
-    var dayEndOfMonth: String = js.native
+    var dayEndOfMonth: String
     
-    var dayEndOfWeek: String = js.native
+    var dayEndOfWeek: String
     
-    var dayEndPreview: String = js.native
+    var dayEndPreview: String
     
-    var dayHovered: String = js.native
+    var dayHovered: String
     
-    var dayInPreview: String = js.native
+    var dayInPreview: String
     
-    var dayNumber: String = js.native
+    var dayNumber: String
     
-    var dayPassive: String = js.native
+    var dayPassive: String
     
-    var daySelected: String = js.native
+    var daySelected: String
     
-    var dayStartOfMonth: String = js.native
+    var dayStartOfMonth: String
     
-    var dayStartOfWeek: String = js.native
+    var dayStartOfWeek: String
     
-    var dayStartPreview: String = js.native
+    var dayStartPreview: String
     
-    var dayToday: String = js.native
+    var dayToday: String
     
-    var dayWeekend: String = js.native
+    var dayWeekend: String
     
-    var days: String = js.native
+    var days: String
     
-    var definedRangesWrapper: String = js.native
+    var definedRangesWrapper: String
     
-    var endEdge: String = js.native
+    var endEdge: String
     
-    var inRange: String = js.native
+    var inRange: String
     
-    var infiniteMonths: String = js.native
+    var infiniteMonths: String
     
-    var inputRange: String = js.native
+    var inputRange: String
     
-    var inputRangeInput: String = js.native
+    var inputRangeInput: String
     
-    var inputRanges: String = js.native
+    var inputRanges: String
     
-    var month: String = js.native
+    var month: String
     
-    var monthAndYearPickers: String = js.native
+    var monthAndYearPickers: String
     
-    var monthAndYearWrapper: String = js.native
+    var monthAndYearWrapper: String
     
-    var monthName: String = js.native
+    var monthName: String
     
-    var monthPicker: String = js.native
+    var monthPicker: String
     
-    var months: String = js.native
+    var months: String
     
-    var monthsHorizontal: String = js.native
+    var monthsHorizontal: String
     
-    var monthsVertical: String = js.native
+    var monthsVertical: String
     
-    var nextButton: String = js.native
+    var nextButton: String
     
-    var nextPrevButton: String = js.native
+    var nextPrevButton: String
     
-    var prevButton: String = js.native
+    var prevButton: String
     
-    var selected: String = js.native
+    var selected: String
     
-    var startEdge: String = js.native
+    var startEdge: String
     
-    var staticRange: String = js.native
+    var staticRange: String
     
-    var staticRangeLabel: String = js.native
+    var staticRangeLabel: String
     
-    var staticRangeSelected: String = js.native
+    var staticRangeSelected: String
     
-    var staticRanges: String = js.native
+    var staticRanges: String
     
-    var weekDay: String = js.native
+    var weekDay: String
     
-    var weekDays: String = js.native
+    var weekDays: String
     
-    var yearPicker: String = js.native
+    var yearPicker: String
   }
   object ClassNames {
     
@@ -589,16 +587,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonCalendarProps extends StObject {
     
     /** Custom class names for elements */
-    var classNames: js.UndefOr[PartialClassNames] = js.native
+    var classNames: js.UndefOr[PartialClassNames] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
     /** default: DD/MM/YYY */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Calendar languages.
@@ -608,21 +605,21 @@ object mod {
       * 'es' - Spanish, 'ru' - Russian,
       * 'tr' - Turkish) default: none
       */
-    var lang: js.UndefOr[LanguageType] = js.native
+    var lang: js.UndefOr[LanguageType] = js.undefined
     
     /** default: none */
-    var maxDate: js.UndefOr[DateInputType] = js.native
+    var maxDate: js.UndefOr[DateInputType] = js.undefined
     
     /** default: none */
-    var minDate: js.UndefOr[DateInputType] = js.native
+    var minDate: js.UndefOr[DateInputType] = js.undefined
     
     /** default: none */
-    var onChange: js.UndefOr[js.Function1[/* range */ OnChangeProps, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* range */ OnChangeProps, Unit]] = js.undefined
     
     /** default: none */
-    var onInit: js.UndefOr[js.Function1[/* range */ Range, Unit]] = js.native
+    var onInit: js.UndefOr[js.Function1[/* range */ Range, Unit]] = js.undefined
     
-    var theme: js.UndefOr[CalendarTheme] = js.native
+    var theme: js.UndefOr[CalendarTheme] = js.undefined
   }
   object CommonCalendarProps {
     
@@ -697,10 +694,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DateContainerType extends StObject {
     
-    var date: Date = js.native
+    var date: Date
   }
   object DateContainerType {
     
@@ -744,12 +740,11 @@ object mod {
     def Yesterday: typings.reactDateRange.reactDateRangeStrings.Yesterday = "Yesterday".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.Yesterday]
   }
   
-  @js.native
   trait DateRangeObject extends StObject {
     
-    def endDate(now: Date): Date = js.native
+    def endDate(now: Date): Date
     
-    def startDate(now: Date): Date = js.native
+    def startDate(now: Date): Date
   }
   object DateRangeObject {
     
@@ -770,88 +765,88 @@ object mod {
     }
   }
   
-  @js.native
   trait DateRangeProps
-    extends Range
+    extends StObject
+       with Range
        with CommonCalendarProps {
     
     /** default: 2 */
-    var calendars: js.UndefOr[Double] = js.native
+    var calendars: js.UndefOr[Double] = js.undefined
     
     /** default: */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** default: MMM d, yyyy */
-    var dateDisplayFormat: js.UndefOr[String] = js.native
+    var dateDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** default: d */
-    var dayDisplayFormat: js.UndefOr[String] = js.native
+    var dayDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** default: vertical */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** default: */
-    var disabledDates: js.UndefOr[js.Array[Date]] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date]] = js.undefined
     
     /** default: false */
-    var editableDateInputs: js.UndefOr[Boolean] = js.native
+    var editableDateInputs: js.UndefOr[Boolean] = js.undefined
     
     /** default: Continuous */
-    var endDatePlaceholder: js.UndefOr[String] = js.native
+    var endDatePlaceholder: js.UndefOr[String] = js.undefined
     
     /** default: false */
-    var linkedCalendars: js.UndefOr[Boolean] = js.native
+    var linkedCalendars: js.UndefOr[Boolean] = js.undefined
     
     /** default: enUs from locale. Complete list here https://github.com/Adphorus/react-date-range/blob/next/src/locale/index.js */
-    var locale: js.UndefOr[js.Object] = js.native
+    var locale: js.UndefOr[js.Object] = js.undefined
     
     /** default: MMM yyyy */
-    var monthDisplayFormat: js.UndefOr[String] = js.native
+    var monthDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** default: 1 */
-    var months: js.UndefOr[Double] = js.native
+    var months: js.UndefOr[Double] = js.undefined
     
     /** default: false */
-    var moveRangeOnFirstSelection: js.UndefOr[Boolean] = js.native
+    var moveRangeOnFirstSelection: js.UndefOr[Boolean] = js.undefined
     
     /** default: [] */
-    var rangeColors: js.UndefOr[js.Array[String]] = js.native
+    var rangeColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** default: false */
-    var rangedCalendars: js.UndefOr[Boolean] = js.native
+    var rangedCalendars: js.UndefOr[Boolean] = js.undefined
     
     /** default: none */
-    var ranges: js.UndefOr[js.Object] = js.native
+    var ranges: js.UndefOr[js.Object] = js.undefined
     
     /** default: { enabled: false } */
-    var scroll: js.UndefOr[js.Object] = js.native
+    var scroll: js.UndefOr[js.Object] = js.undefined
     
     /** default: true */
-    var showMonthAndYearPickers: js.UndefOr[Boolean] = js.native
+    var showMonthAndYearPickers: js.UndefOr[Boolean] = js.undefined
     
     /** default: true */
-    var showMonthArrow: js.UndefOr[Boolean] = js.native
+    var showMonthArrow: js.UndefOr[Boolean] = js.undefined
     
     /** default: false */
-    var showSelectionPreview: js.UndefOr[Boolean] = js.native
+    var showSelectionPreview: js.UndefOr[Boolean] = js.undefined
     
     /** default: */
-    var shownDate: js.UndefOr[Date] = js.native
+    var shownDate: js.UndefOr[Date] = js.undefined
     
     /** default: none */
-    var specialDays: js.UndefOr[js.Array[DateContainerType]] = js.native
+    var specialDays: js.UndefOr[js.Array[DateContainerType]] = js.undefined
     
     /** default: Early */
-    var startDatePlaceholder: js.UndefOr[String] = js.native
+    var startDatePlaceholder: js.UndefOr[String] = js.undefined
     
     /** default: false */
-    var twoStepChange: js.UndefOr[Boolean] = js.native
+    var twoStepChange: js.UndefOr[Boolean] = js.undefined
     
     /** default: */
-    var weekStartsOn: js.UndefOr[Double] = js.native
+    var weekStartsOn: js.UndefOr[Double] = js.undefined
     
     /** default: E */
-    var weekdayDisplayFormat: js.UndefOr[String] = js.native
+    var weekdayDisplayFormat: js.UndefOr[String] = js.undefined
   }
   object DateRangeProps {
     
@@ -1080,14 +1075,15 @@ object mod {
   */
   type OnChangeProps = _OnChangeProps | Date
   
-  @js.native
-  trait Range extends _OnChangeProps {
+  trait Range
+    extends StObject
+       with _OnChangeProps {
     
     /** default: today */
-    var endDate: js.UndefOr[Date] = js.native
+    var endDate: js.UndefOr[Date] = js.undefined
     
     /** default: today */
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
   }
   object Range {
     

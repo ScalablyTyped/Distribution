@@ -2,36 +2,34 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecommendationsResponse extends StObject {
   
   /**
     *  The list of anomalies that the analysis has found for this profile. 
     */
-  var anomalies: Anomalies = js.native
+  var anomalies: Anomalies
   
   /**
     *  The end time of the profile the analysis data is about. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var profileEndTime: Timestamp = js.native
+  var profileEndTime: Timestamp
   
   /**
     *  The start time of the profile the analysis data is about. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var profileStartTime: Timestamp = js.native
+  var profileStartTime: Timestamp
   
   /**
     * The name of the profiling group the analysis data is about.
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
   
   /**
     * The list of recommendations that the analysis found for this profile.
     */
-  var recommendations: Recommendations = js.native
+  var recommendations: Recommendations
 }
 object GetRecommendationsResponse {
   

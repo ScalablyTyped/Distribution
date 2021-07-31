@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMigrationMessage extends StObject {
   
   /**
     * List of endpoints from which data should be migrated. For Redis (cluster mode disabled), list should have only one element.
     */
-  var CustomerNodeEndpointList: typings.awsSdk.elasticacheMod.CustomerNodeEndpointList = js.native
+  var CustomerNodeEndpointList: typings.awsSdk.elasticacheMod.CustomerNodeEndpointList
   
   /**
     * The ID of the replication group to which data should be migrated.
     */
-  var ReplicationGroupId: String = js.native
+  var ReplicationGroupId: String
 }
 object StartMigrationMessage {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRenderEmailTemplateResponse extends StObject {
   
   /**
     * The complete MIME message rendered by applying the data in the TemplateData parameter to the template specified in the TemplateName parameter.
     */
-  var RenderedTemplate: RenderedEmailTemplate = js.native
+  var RenderedTemplate: RenderedEmailTemplate
 }
 object TestRenderEmailTemplateResponse {
   

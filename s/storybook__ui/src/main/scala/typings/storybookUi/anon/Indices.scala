@@ -2,15 +2,13 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indices extends StObject {
   
-  var indices: js.Array[js.Array[Double]] = js.native
+  var indices: js.Array[js.Array[Double]]
   
-  var value: String = js.native
+  var value: String
 }
 object Indices {
   

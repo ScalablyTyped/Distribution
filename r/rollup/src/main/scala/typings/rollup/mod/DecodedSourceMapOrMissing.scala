@@ -1,9 +1,7 @@
 package typings.rollup.mod
 
-import typings.rollup.rollupBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -25,8 +23,8 @@ object DecodedSourceMapOrMissing {
   }
   
   @scala.inline
-  def Mappings(missing: `true`, plugin: String): typings.rollup.anon.Mappings = {
-    val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+  def Mappings(plugin: String): typings.rollup.anon.Mappings = {
+    val __obj = js.Dynamic.literal(missing = true, plugin = plugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.rollup.anon.Mappings]
   }
 }

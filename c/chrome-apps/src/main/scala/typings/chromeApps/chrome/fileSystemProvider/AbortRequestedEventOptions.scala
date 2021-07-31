@@ -4,14 +4,14 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptio
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbortRequestedEventOptions extends RequestedEventOptions {
+trait AbortRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** An ID of the request to which this operation is related. */
-  var operationRequestId: integer = js.native
+  var operationRequestId: integer
 }
 object AbortRequestedEventOptions {
   

@@ -2,20 +2,18 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Download line items response.
   */
-@js.native
 trait SchemaDownloadLineItemsResponse extends StObject {
   
   /**
     * Retrieved line items in CSV format. For more information about file
     * formats, see  Entity Write File Format.
     */
-  var lineItems: js.UndefOr[String] = js.native
+  var lineItems: js.UndefOr[String] = js.undefined
 }
 object SchemaDownloadLineItemsResponse {
   

@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LicensePostStartBasic extends Generic {
+trait LicensePostStartBasic
+  extends StObject
+     with Generic {
   
-  var acknowledge: js.UndefOr[Boolean] = js.native
+  var acknowledge: js.UndefOr[Boolean] = js.undefined
 }
 object LicensePostStartBasic {
   

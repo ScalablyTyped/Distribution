@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeploymentsResponse extends StObject {
   
   /** The list of deployments. */
-  var deployments: js.UndefOr[js.Array[Deployment]] = js.native
+  var deployments: js.UndefOr[js.Array[Deployment]] = js.undefined
   
   /** The token that can be used in the next call to get the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDeploymentsResponse {
   

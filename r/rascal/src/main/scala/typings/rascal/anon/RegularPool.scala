@@ -2,15 +2,13 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegularPool extends StObject {
   
-  var confirmPool: Autostart = js.native
+  var confirmPool: Autostart
   
-  var regularPool: Autostart = js.native
+  var regularPool: Autostart
 }
 object RegularPool {
   

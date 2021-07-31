@@ -5,7 +5,6 @@ import typings.orientjs.mod.Migration.MigrationManager
 import typings.orientjs.mod.Migration.MigrationManagerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OrientDBClient")
@@ -26,8 +25,8 @@ class OrientDBClient () extends EventEmitter {
   def existsDatabase(): js.Promise[Boolean] = js.native
   def existsDatabase(options: DatabaseOptions): js.Promise[Boolean] = js.native
   
-  def listDatabases(): js.Promise[js.Array[_]] = js.native
-  def listDatabases(options: ServerOptions): js.Promise[js.Array[_]] = js.native
+  def listDatabases(): js.Promise[js.Array[js.Any]] = js.native
+  def listDatabases(options: ServerOptions): js.Promise[js.Array[js.Any]] = js.native
   
   def migrator(): MigrationManager = js.native
   def migrator(config: MigrationManagerConfig): MigrationManager = js.native
@@ -40,11 +39,13 @@ class OrientDBClient () extends EventEmitter {
 }
 object OrientDBClient {
   
+  @JSImport("orientjs", "OrientDBClient")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("orientjs", "OrientDBClient.connect")
-  @js.native
-  def connect(): js.Promise[OrientDBClient] = js.native
-  @JSImport("orientjs", "OrientDBClient.connect")
-  @js.native
-  def connect(options: OrientDBClientConfig): js.Promise[OrientDBClient] = js.native
+  @scala.inline
+  def connect(): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[OrientDBClient]]
+  @scala.inline
+  def connect(options: OrientDBClientConfig): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OrientDBClient]]
 }

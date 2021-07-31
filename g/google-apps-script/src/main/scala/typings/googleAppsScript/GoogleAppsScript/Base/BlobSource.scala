@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,12 +44,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * StaticMapAllows for the creation and decoration of static map images.
   */
-@js.native
 trait BlobSource extends StObject {
   
-  def getAs(contentType: String): Blob = js.native
+  def getAs(contentType: String): Blob
   
-  def getBlob(): Blob = js.native
+  def getBlob(): Blob
 }
 object BlobSource {
   

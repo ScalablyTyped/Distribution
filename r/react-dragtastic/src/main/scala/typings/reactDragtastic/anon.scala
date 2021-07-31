@@ -11,17 +11,15 @@ import typings.reactDragtastic.mod.Type
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait OnMouseDown extends StObject {
     
-    var onMouseDown: MouseEventHandler[Element] = js.native
+    var onMouseDown: MouseEventHandler[Element]
     
-    var onTouchStart: TouchEventHandler[Element] = js.native
+    var onTouchStart: TouchEventHandler[Element]
   }
   object OnMouseDown {
     
@@ -45,14 +43,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OnMouseEnter extends StObject {
     
-    def onMouseEnter(): Unit = js.native
+    def onMouseEnter(): Unit
     
-    def onMouseLeave(): Unit = js.native
+    def onMouseLeave(): Unit
     
-    def onMouseUp(): Unit = js.native
+    def onMouseUp(): Unit
   }
   object OnMouseEnter {
     
@@ -77,43 +74,42 @@ object anon {
   }
   
   /* Inlined react-dragtastic.react-dragtastic.State & {  isActive :boolean,   events :{  onMouseDown :react.react.MouseEventHandler<std.Element>,   onTouchStart :react.react.TouchEventHandler<std.Element>}} */
-  @js.native
   trait StateisActivebooleanevent extends StObject {
     
     /** The id of the currently dragging element. */
-    var currentlyDraggingId: js.UndefOr[Id] = js.native
+    var currentlyDraggingId: js.UndefOr[Id] = js.undefined
     
     /** The accepts property of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.native
+    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.undefined
     
     /** The id of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.native
+    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var events: OnMouseDown = js.native
+    var events: OnMouseDown
     
     /** A boolean representing if the draggable is currently active. */
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
     /** A boolean representing whether the user is currently dragging. */
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
     
     /** The user's initial horizontal position on the page when they started dragging. */
-    var startingX: Double = js.native
+    var startingX: Double
     
     /** The user's initial vertical position on the page when they started dragging. */
-    var startingY: Double = js.native
+    var startingY: Double
     
     /** The type of the component being currently dragged. null if not dragging. */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
     /** The user's current horizontal position on the page. */
-    var x: Double = js.native
+    var x: Double
     
     /** The user's current vertical position on the page. */
-    var y: Double = js.native
+    var y: Double
   }
   object StateisActivebooleanevent {
     
@@ -189,41 +185,40 @@ object anon {
   }
   
   /* Inlined react-dragtastic.react-dragtastic.State & {  isOverAccepted :boolean} */
-  @js.native
   trait StateisOverAcceptedboolea extends StObject {
     
     /** The id of the currently dragging element. */
-    var currentlyDraggingId: js.UndefOr[Id] = js.native
+    var currentlyDraggingId: js.UndefOr[Id] = js.undefined
     
     /** The accepts property of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.native
+    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.undefined
     
     /** The id of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.native
+    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /** A boolean representing whether the user is currently dragging. */
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
     
     /** A boolean representing whether the user is currently hovering a <Droppable/> that accepts the type of the currently active <Draggable/> */
-    var isOverAccepted: Boolean = js.native
+    var isOverAccepted: Boolean
     
     /** The user's initial horizontal position on the page when they started dragging. */
-    var startingX: Double = js.native
+    var startingX: Double
     
     /** The user's initial vertical position on the page when they started dragging. */
-    var startingY: Double = js.native
+    var startingY: Double
     
     /** The type of the component being currently dragged. null if not dragging. */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
     /** The user's current horizontal position on the page. */
-    var x: Double = js.native
+    var x: Double
     
     /** The user's current vertical position on the page. */
-    var y: Double = js.native
+    var y: Double
   }
   object StateisOverAcceptedboolea {
     
@@ -295,46 +290,45 @@ object anon {
   }
   
   /* Inlined react-dragtastic.react-dragtastic.State & {  isOver :boolean,   willAccept :boolean,   events :{onMouseEnter (): void, onMouseLeave (): void, onMouseUp (): void}} */
-  @js.native
   trait StateisOverbooleanwillAcc extends StObject {
     
     /** The id of the currently dragging element. */
-    var currentlyDraggingId: js.UndefOr[Id] = js.native
+    var currentlyDraggingId: js.UndefOr[Id] = js.undefined
     
     /** The accepts property of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.native
+    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.undefined
     
     /** The id of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.native
+    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var events: OnMouseEnter = js.native
+    var events: OnMouseEnter
     
     /** A boolean representing whether the user is currently dragging. */
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
     
     /** A boolean representing if the user is currently hovering the <Droppable/>. */
-    var isOver: Boolean = js.native
+    var isOver: Boolean
     
     /** The user's initial horizontal position on the page when they started dragging. */
-    var startingX: Double = js.native
+    var startingX: Double
     
     /** The user's initial vertical position on the page when they started dragging. */
-    var startingY: Double = js.native
+    var startingY: Double
     
     /** The type of the component being currently dragged. null if not dragging. */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
     /** A boolean representing if this droppable will accept the currently dragging <DragComponent/>. */
-    var willAccept: Boolean = js.native
+    var willAccept: Boolean
     
     /** The user's current horizontal position on the page. */
-    var x: Double = js.native
+    var x: Double
     
     /** The user's current vertical position on the page. */
-    var y: Double = js.native
+    var y: Double
   }
   object StateisOverbooleanwillAcc {
     

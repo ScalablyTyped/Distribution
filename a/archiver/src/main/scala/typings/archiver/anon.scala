@@ -4,24 +4,22 @@ import typings.node.fsMod.Stats
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined archiver.archiver.Partial<archiver.archiver.EntryData> */
-  @js.native
   trait PartialEntryData extends StObject {
     
-    var date: js.UndefOr[Date | String] = js.native
+    var date: js.UndefOr[Date | String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
   }
   object PartialEntryData {
     
@@ -66,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Processed extends StObject {
     
-    var processed: Double = js.native
+    var processed: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Processed {
     
@@ -92,12 +89,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ProcessedBytes extends StObject {
     
-    var processedBytes: Double = js.native
+    var processedBytes: Double
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object ProcessedBytes {
     

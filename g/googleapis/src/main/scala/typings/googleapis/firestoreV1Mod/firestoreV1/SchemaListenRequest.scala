@@ -3,29 +3,27 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for Firestore.Listen
   */
-@js.native
 trait SchemaListenRequest extends StObject {
   
   /**
     * A target to add to this stream.
     */
-  var addTarget: js.UndefOr[SchemaTarget] = js.native
+  var addTarget: js.UndefOr[SchemaTarget] = js.undefined
   
   /**
     * Labels associated with this target change.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The ID of a target to remove from this stream.
     */
-  var removeTarget: js.UndefOr[Double] = js.native
+  var removeTarget: js.UndefOr[Double] = js.undefined
 }
 object SchemaListenRequest {
   

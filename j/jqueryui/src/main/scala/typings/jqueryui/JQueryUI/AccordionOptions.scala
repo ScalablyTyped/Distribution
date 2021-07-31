@@ -2,30 +2,30 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Accordion //////////////////////////////////////////////////
-@js.native
-trait AccordionOptions extends AccordionEvents {
+trait AccordionOptions
+  extends StObject
+     with AccordionEvents {
   
-  var active: js.UndefOr[js.Any] = js.native
+  var active: js.UndefOr[js.Any] = js.undefined
   
   // boolean or number
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
   // boolean, number, string or object
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var heightStyle: js.UndefOr[String] = js.native
+  var heightStyle: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
 }
 object AccordionOptions {
   

@@ -2,14 +2,12 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Google Cloud Storage location for a csv file which preserves a list of
   * ImportProductSetRequests in each line.
   */
-@js.native
 trait SchemaImportProductSetsGcsSource extends StObject {
   
   /**
@@ -48,7 +46,7 @@ trait SchemaImportProductSetsGcsSource extends StObject {
     * [0, 1] for normalized bounding polygons.  The system will resize the
     * image if the image resolution is too large to process (larger than 20MP).
     */
-  var csvFileUri: js.UndefOr[String] = js.native
+  var csvFileUri: js.UndefOr[String] = js.undefined
 }
 object SchemaImportProductSetsGcsSource {
   

@@ -4,17 +4,15 @@ import typings.asana.anon.AsanaBaseUrl
 import typings.asana.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceList[T /* <: typings.asana.mod.resources.Resource */] extends StObject {
+trait ResourceList[T /* <: Resource */] extends StObject {
   
-  var _dispatcher: AsanaBaseUrl = js.native
+  var _dispatcher: AsanaBaseUrl
   
-  var _response: Data[T] = js.native
+  var _response: Data[T]
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
   /**
     * Get the next page of results in a collection.
@@ -22,12 +20,12 @@ trait ResourceList[T /* <: typings.asana.mod.resources.Resource */] extends StOb
     * @returns {Promise<Collection?>} Resolves to either a collection representing
     *     the next page of results, or null if no more pages.
     */
-  def nextPage(): typings.bluebird.mod.^[ResourceList[T] | Null] = js.native
+  def nextPage(): typings.bluebird.mod.^[ResourceList[T] | Null]
 }
 object ResourceList {
   
   @scala.inline
-  def apply[T /* <: typings.asana.mod.resources.Resource */](
+  def apply[T /* <: Resource */](
     _dispatcher: AsanaBaseUrl,
     _response: Data[T],
     data: js.Array[T],
@@ -38,7 +36,7 @@ object ResourceList {
   }
   
   @scala.inline
-  implicit class ResourceListMutableBuilder[Self <: ResourceList[_], T /* <: typings.asana.mod.resources.Resource */] (val x: Self with ResourceList[T]) extends AnyVal {
+  implicit class ResourceListMutableBuilder[Self <: ResourceList[?], T /* <: Resource */] (val x: Self & ResourceList[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

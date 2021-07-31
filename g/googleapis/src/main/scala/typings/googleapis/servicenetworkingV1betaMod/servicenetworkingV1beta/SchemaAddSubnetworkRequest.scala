@@ -2,13 +2,11 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to create a subnetwork in a previously peered service network.
   */
-@js.native
 trait SchemaAddSubnetworkRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaAddSubnetworkRequest extends StObject {
     * a Shared VPC network. In those cases, Service Networking validates that
     * this resource belongs to that Shared VPC.
     */
-  var consumer: js.UndefOr[String] = js.native
+  var consumer: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the service consumer&#39;s VPC network. The network
@@ -28,12 +26,12 @@ trait SchemaAddSubnetworkRequest extends StObject {
     * project number, such as `12345`. {network} is the name of a VPC network
     * in the project.
     */
-  var consumerNetwork: js.UndefOr[String] = js.native
+  var consumerNetwork: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of the subnet.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The prefix length of the subnet&#39;s IP address range.  Use
@@ -41,13 +39,13 @@ trait SchemaAddSubnetworkRequest extends StObject {
     * `x.x.x.x/30` CIDR range. The IP address range is drawn from a pool of
     * available ranges in the service consumer&#39;s allocated range.
     */
-  var ipPrefixLength: js.UndefOr[Double] = js.native
+  var ipPrefixLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. The name of a [region](/compute/docs/regions-zones) for the
     * subnet, such `europe-west1`.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The starting address of a range. The address must be a valid
@@ -56,7 +54,7 @@ trait SchemaAddSubnetworkRequest extends StObject {
     * the allocated range that is assigned to the private connection. If the
     * CIDR range isn&#39;t available, the call fails.
     */
-  var requestedAddress: js.UndefOr[String] = js.native
+  var requestedAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A name for the new subnet. For information about the naming
@@ -64,13 +62,13 @@ trait SchemaAddSubnetworkRequest extends StObject {
     * [subnetwork](/compute/docs/reference/rest/v1/subnetworks) in the Compute
     * API documentation.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * A list of members that are granted the `compute.networkUser` role on the
     * subnet.
     */
-  var subnetworkUsers: js.UndefOr[js.Array[String]] = js.native
+  var subnetworkUsers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAddSubnetworkRequest {
   

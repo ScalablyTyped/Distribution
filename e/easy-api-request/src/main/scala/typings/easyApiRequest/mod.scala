@@ -1,6 +1,5 @@
 package typings.easyApiRequest
 
-import typings.bunyan.mod.^
 import typings.easyApiRequest.anon.Cb
 import typings.easyApiRequest.anon.Config
 import typings.express.mod.Request_
@@ -13,14 +12,16 @@ import typings.request.mod.Request
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("easy-api-request", "create")
+  @JSImport("easy-api-request", JSImport.Namespace)
   @js.native
-  def create(opts: Config): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(opts: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait BaseRequest extends StObject {
@@ -31,59 +32,61 @@ object mod {
     def _parseOptions(args: IArguments, `type`: String): Cb = js.native
     
     def _request(): js.Any = js.native
-    def _request(opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
     def _request(opts: js.Any): js.Any = js.native
     def _request(opts: js.Any, cb: js.Any): js.Any = js.native
+    def _request(opts: Unit, cb: js.Any): js.Any = js.native
     
     var base: Request = js.native
     
     def del(): js.Any = js.native
-    def del(url: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
-    def del(url: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
-    def del(url: js.UndefOr[scala.Nothing], opts: js.Any, cb: js.Any): js.Any = js.native
     def del(url: js.Any): js.Any = js.native
-    def del(url: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
     def del(url: js.Any, opts: js.Any): js.Any = js.native
     def del(url: js.Any, opts: js.Any, cb: js.Any): js.Any = js.native
+    def del(url: js.Any, opts: Unit, cb: js.Any): js.Any = js.native
+    def del(url: Unit, opts: js.Any): js.Any = js.native
+    def del(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
+    def del(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
     def get(): js.Any = js.native
-    def get(url: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
-    def get(url: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
-    def get(url: js.UndefOr[scala.Nothing], opts: js.Any, cb: js.Any): js.Any = js.native
     def get(url: js.Any): js.Any = js.native
-    def get(url: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
     def get(url: js.Any, opts: js.Any): js.Any = js.native
     def get(url: js.Any, opts: js.Any, cb: js.Any): js.Any = js.native
+    def get(url: js.Any, opts: Unit, cb: js.Any): js.Any = js.native
+    def get(url: Unit, opts: js.Any): js.Any = js.native
+    def get(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
+    def get(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
     var jSend: Boolean = js.native
     
-    var log: ^ = js.native
+    var log: typings.bunyan.mod.^ = js.native
     
     def patch(): js.Any = js.native
-    def patch(url: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
-    def patch(url: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
-    def patch(url: js.UndefOr[scala.Nothing], opts: js.Any, cb: js.Any): js.Any = js.native
     def patch(url: js.Any): js.Any = js.native
-    def patch(url: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
     def patch(url: js.Any, opts: js.Any): js.Any = js.native
     def patch(url: js.Any, opts: js.Any, cb: js.Any): js.Any = js.native
+    def patch(url: js.Any, opts: Unit, cb: js.Any): js.Any = js.native
+    def patch(url: Unit, opts: js.Any): js.Any = js.native
+    def patch(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
+    def patch(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
     def post(): js.Any = js.native
-    def post(url: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
-    def post(url: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
-    def post(url: js.UndefOr[scala.Nothing], opts: js.Any, cb: js.Any): js.Any = js.native
     def post(url: js.Any): js.Any = js.native
-    def post(url: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Any): js.Any = js.native
     def post(url: js.Any, opts: js.Any): js.Any = js.native
     def post(url: js.Any, opts: js.Any, cb: js.Any): js.Any = js.native
+    def post(url: js.Any, opts: Unit, cb: js.Any): js.Any = js.native
+    def post(url: Unit, opts: js.Any): js.Any = js.native
+    def post(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
+    def post(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
     var replyCookies: js.Array[String] = js.native
     
-    var req: Request_[ParamsDictionary, _, _, Query] = js.native
+    var req: Request_[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   @js.native
-  trait CBPromiseRequest extends BaseRequest {
+  trait CBPromiseRequest
+    extends StObject
+       with BaseRequest {
     
     def _request(opts: js.Object): Stream = js.native
     
@@ -151,16 +154,15 @@ object mod {
     def apply(stream: Boolean): StreamRequest | CBPromiseRequest = js.native
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var err: js.UndefOr[js.Any] = js.native
+    var err: js.UndefOr[js.Any] = js.undefined
     
-    var response: IncomingMessage = js.native
+    var response: IncomingMessage
   }
   object Result {
     
@@ -194,7 +196,9 @@ object mod {
   }
   
   @js.native
-  trait StreamRequest extends BaseRequest {
+  trait StreamRequest
+    extends StObject
+       with BaseRequest {
     
     def _request(opts: js.Object): Stream = js.native
     

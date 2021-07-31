@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalDiskMod {
   
-  @JSImport("@pulumi/aws/storagegateway/getLocalDisk", "getLocalDisk")
+  @JSImport("@pulumi/aws/storagegateway/getLocalDisk", JSImport.Namespace)
   @js.native
-  def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = js.native
-  @JSImport("@pulumi/aws/storagegateway/getLocalDisk", "getLocalDisk")
-  @js.native
-  def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalDiskResult]]
+  @scala.inline
+  def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalDiskResult]]
+  
   trait GetLocalDiskArgs extends StObject {
     
     /**
       * The device node of the local disk to retrieve. For example, `/dev/sdb`.
       */
-    val diskNode: js.UndefOr[String] = js.native
+    val diskNode: js.UndefOr[String] = js.undefined
     
     /**
       * The device path of the local disk to retrieve. For example, `/dev/xvdb` or `/dev/nvme1n1`.
       */
-    val diskPath: js.UndefOr[String] = js.native
+    val diskPath: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: String = js.native
+    val gatewayArn: String
   }
   object GetLocalDiskArgs {
     
@@ -61,24 +61,23 @@ object getLocalDiskMod {
     }
   }
   
-  @js.native
   trait GetLocalDiskResult extends StObject {
     
     /**
       * The disk identifier. e.g. `pci-0000:03:00.0-scsi-0:0:0:0`
       */
-    val diskId: String = js.native
+    val diskId: String
     
-    val diskNode: js.UndefOr[String] = js.native
+    val diskNode: js.UndefOr[String] = js.undefined
     
-    val diskPath: js.UndefOr[String] = js.native
+    val diskPath: js.UndefOr[String] = js.undefined
     
-    val gatewayArn: String = js.native
+    val gatewayArn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetLocalDiskResult {
     

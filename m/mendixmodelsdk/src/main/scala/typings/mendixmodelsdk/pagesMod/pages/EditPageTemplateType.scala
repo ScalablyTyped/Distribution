@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object EditPageTemplateType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditPageTemplateType.create")
-  @js.native
-  def create(model: IModel): EditPageTemplateType = js.native
+  @scala.inline
+  def create(model: IModel): EditPageTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EditPageTemplateType]
   
   /**
     * Creates and returns a new EditPageTemplateType instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object EditPageTemplateType {
     *  8.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditPageTemplateType.createIn")
-  @js.native
-  def createIn(container: PageTemplate): EditPageTemplateType = js.native
+  @scala.inline
+  def createIn(container: PageTemplate): EditPageTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EditPageTemplateType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditPageTemplateType.structureTypeName")

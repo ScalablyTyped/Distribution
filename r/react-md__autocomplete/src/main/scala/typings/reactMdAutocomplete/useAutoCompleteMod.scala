@@ -26,35 +26,37 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useAutoCompleteMod {
   
-  @JSImport("@react-md/autocomplete/types/useAutoComplete", "useAutoComplete")
+  @JSImport("@react-md/autocomplete/types/useAutoComplete", JSImport.Namespace)
   @js.native
-  def useAutoComplete(
-    hasSuggestionsIdDataPropValueDefaultValueFilterFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete: AutoCompleteOptions
-  ): AutoCompleteReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useAutoComplete(
+    hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete: AutoCompleteOptions
+  ): AutoCompleteReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoComplete")(hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete.asInstanceOf[js.Any]).asInstanceOf[AutoCompleteReturnValue]
+  
   trait AutoCompleteOptions
-    extends EventHandlers
+    extends StObject
+       with EventHandlers
        with OptionalAutoCompleteProps
        with RequiredAutoCompleteProps
        with AutoCompleteListboxPositionOptions {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var forwardedRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var forwardedRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var isInlineAutocomplete: Boolean = js.native
+    var isInlineAutocomplete: Boolean
     
-    var isListAutocomplete: Boolean = js.native
+    var isListAutocomplete: Boolean
     
-    var propValue: js.UndefOr[String] = js.native
+    var propValue: js.UndefOr[String] = js.undefined
     
-    var suggestionsId: String = js.native
+    var suggestionsId: String
   }
   object AutoCompleteOptions {
     
@@ -152,18 +154,17 @@ object useAutoCompleteMod {
   }
   
   /* Inlined std.Pick<react.react.HTMLAttributes<std.HTMLInputElement>, 'onBlur' | 'onFocus' | 'onChange' | 'onClick' | 'onKeyDown'> */
-  @js.native
   trait EventHandlers extends StObject {
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   }
   object EventHandlers {
     
@@ -209,12 +210,11 @@ object useAutoCompleteMod {
   }
   
   /* Inlined std.Pick<@react-md/autocomplete.@react-md/autocomplete/types/types.AutoCompleteProps, 'onAutoComplete' | 'disableShowOnFocus'> */
-  @js.native
   trait OptionalAutoCompleteProps extends StObject {
     
-    var disableShowOnFocus: js.UndefOr[Boolean] = js.native
+    var disableShowOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var onAutoComplete: js.UndefOr[AutoCompleteHandler] = js.native
+    var onAutoComplete: js.UndefOr[AutoCompleteHandler] = js.undefined
   }
   object OptionalAutoCompleteProps {
     
@@ -242,24 +242,23 @@ object useAutoCompleteMod {
   }
   
   /* Inlined std.Required<std.Pick<@react-md/autocomplete.@react-md/autocomplete/types/types.AutoCompleteProps, 'data' | 'filter' | 'filterOptions' | 'filterOnNoValue' | 'valueKey' | 'getResultId' | 'getResultValue' | 'clearOnAutoComplete'>> */
-  @js.native
   trait RequiredAutoCompleteProps extends StObject {
     
-    var clearOnAutoComplete: Boolean = js.native
+    var clearOnAutoComplete: Boolean
     
-    var data: js.Array[AutoCompleteData] = js.native
+    var data: js.Array[AutoCompleteData]
     
-    var filter: AutoCompleteFilterFunction[js.Object] = js.native
+    var filter: AutoCompleteFilterFunction[js.Object]
     
-    var filterOnNoValue: Boolean = js.native
+    var filterOnNoValue: Boolean
     
-    var filterOptions: FilterFunctionOptions = js.native
+    var filterOptions: FilterFunctionOptions
     
-    var getResultId: js.Function2[/* id */ String, /* index */ Double, String] = js.native
+    var getResultId: js.Function2[/* id */ String, /* index */ Double, String]
     
-    var getResultValue: js.Function2[/* datum */ AutoCompleteData, /* valueKey */ String, String] = js.native
+    var getResultValue: js.Function2[/* datum */ AutoCompleteData, /* valueKey */ String, String]
     
-    var valueKey: String = js.native
+    var valueKey: String
   }
   object RequiredAutoCompleteProps {
     

@@ -3,13 +3,11 @@ package typings.iitc.hooksMod.global
 import typings.iitc.iitctypesMod.IITC.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventLinkAdded extends StObject {
   
-  var link: Link = js.native
+  var link: Link
 }
 object EventLinkAdded {
   

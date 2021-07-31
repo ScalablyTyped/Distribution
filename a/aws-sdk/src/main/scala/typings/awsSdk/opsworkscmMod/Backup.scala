@@ -2,131 +2,129 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backup extends StObject {
   
   /**
     * The ARN of the backup. 
     */
-  var BackupArn: js.UndefOr[String] = js.native
+  var BackupArn: js.UndefOr[String] = js.undefined
   
   /**
     *  The generated ID of the backup. Example: myServerName-yyyyMMddHHmmssSSS 
     */
-  var BackupId: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupId] = js.native
+  var BackupId: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupId] = js.undefined
   
   /**
     *  The backup type. Valid values are automated or manual. 
     */
-  var BackupType: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupType] = js.native
+  var BackupType: js.UndefOr[typings.awsSdk.opsworkscmMod.BackupType] = js.undefined
   
   /**
     *  The time stamp when the backup was created in the database. Example: 2016-07-29T13:38:47.520Z 
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  A user-provided description for a manual backup. This field is empty for automated backups. 
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     *  The engine type that is obtained from the server when the backup is created. 
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     *  The engine model that is obtained from the server when the backup is created. 
     */
-  var EngineModel: js.UndefOr[String] = js.native
+  var EngineModel: js.UndefOr[String] = js.undefined
   
   /**
     *  The engine version that is obtained from the server when the backup is created. 
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     *  The EC2 instance profile ARN that is obtained from the server when the backup is created. Because this value is stored, you are not required to provide the InstanceProfileArn again if you restore a backup. 
     */
-  var InstanceProfileArn: js.UndefOr[String] = js.native
+  var InstanceProfileArn: js.UndefOr[String] = js.undefined
   
   /**
     *  The instance type that is obtained from the server when the backup is created. 
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     *  The key pair that is obtained from the server when the backup is created. 
     */
-  var KeyPair: js.UndefOr[String] = js.native
+  var KeyPair: js.UndefOr[String] = js.undefined
   
   /**
     *  The preferred backup period that is obtained from the server when the backup is created. 
     */
-  var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.native
+  var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
   
   /**
     *  The preferred maintenance period that is obtained from the server when the backup is created. 
     */
-  var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
   
   /**
     *  This field is deprecated and is no longer used. 
     */
-  var S3DataSize: js.UndefOr[Integer] = js.native
+  var S3DataSize: js.UndefOr[Integer] = js.undefined
   
   /**
     *  This field is deprecated and is no longer used. 
     */
-  var S3DataUrl: js.UndefOr[String] = js.native
+  var S3DataUrl: js.UndefOr[String] = js.undefined
   
   /**
     *  The Amazon S3 URL of the backup's log file. 
     */
-  var S3LogUrl: js.UndefOr[String] = js.native
+  var S3LogUrl: js.UndefOr[String] = js.undefined
   
   /**
     *  The security group IDs that are obtained from the server when the backup is created. 
     */
-  var SecurityGroupIds: js.UndefOr[Strings] = js.native
+  var SecurityGroupIds: js.UndefOr[Strings] = js.undefined
   
   /**
     *  The name of the server from which the backup was made. 
     */
-  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.native
+  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.undefined
   
   /**
     *  The service role ARN that is obtained from the server when the backup is created. 
     */
-  var ServiceRoleArn: js.UndefOr[String] = js.native
+  var ServiceRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of a backup while in progress. 
     */
-  var Status: js.UndefOr[BackupStatus] = js.native
+  var Status: js.UndefOr[BackupStatus] = js.undefined
   
   /**
     *  An informational message about backup status. 
     */
-  var StatusDescription: js.UndefOr[String] = js.native
+  var StatusDescription: js.UndefOr[String] = js.undefined
   
   /**
     *  The subnet IDs that are obtained from the server when the backup is created. 
     */
-  var SubnetIds: js.UndefOr[Strings] = js.native
+  var SubnetIds: js.UndefOr[Strings] = js.undefined
   
   /**
     *  The version of AWS OpsWorks CM-specific tools that is obtained from the server when the backup is created. 
     */
-  var ToolsVersion: js.UndefOr[String] = js.native
+  var ToolsVersion: js.UndefOr[String] = js.undefined
   
   /**
     *  The IAM user ARN of the requester for manual backups. This field is empty for automated backups. 
     */
-  var UserArn: js.UndefOr[String] = js.native
+  var UserArn: js.UndefOr[String] = js.undefined
 }
 object Backup {
   

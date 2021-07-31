@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryObjectsReturnType extends StObject {
   
   /**
     * Array with objects.
     */
-  var objects: RemoteObject = js.native
+  var objects: RemoteObject
 }
 object QueryObjectsReturnType {
   

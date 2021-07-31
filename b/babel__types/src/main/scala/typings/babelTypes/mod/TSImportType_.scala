@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSImportType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSImportType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSImportType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var argument: StringLiteral_ = js.native
+  var argument: StringLiteral_
   
-  var qualifier: TSEntityName | Null = js.native
+  var qualifier: TSEntityName | Null
   
-  var typeParameters: TSTypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TSImportType_ : TSImportType = js.native
+  var type_TSImportType_ : TSImportType
 }
 object TSImportType_ {
   
   @scala.inline
-  def apply(argument: StringLiteral_, `type`: TSImportType): TSImportType_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: StringLiteral_): TSImportType_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, qualifier = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSImportType")
     __obj.asInstanceOf[TSImportType_]
   }
   

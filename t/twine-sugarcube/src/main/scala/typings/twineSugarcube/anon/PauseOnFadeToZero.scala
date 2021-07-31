@@ -2,10 +2,8 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PauseOnFadeToZero extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PauseOnFadeToZero extends StObject {
     * @example
     * Config.audio.pauseOnFadeToZero = false;
     */
-  var pauseOnFadeToZero: Boolean = js.native
+  var pauseOnFadeToZero: Boolean
   
   /**
     * Determines whether the audio subsystem attempts to preload track metadata—meaning information about the track
@@ -27,7 +25,7 @@ trait PauseOnFadeToZero extends StObject {
     * @example
     * Config.audio.preloadMetadata = false;
     */
-  var preloadMetadata: Boolean = js.native
+  var preloadMetadata: Boolean
 }
 object PauseOnFadeToZero {
   

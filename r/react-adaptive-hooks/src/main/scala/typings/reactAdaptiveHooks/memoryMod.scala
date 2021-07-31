@@ -4,34 +4,34 @@ import typings.reactAdaptiveHooks.anon.Unsupported
 import typings.reactAdaptiveHooks.anon.unsupportedfalseMemorySta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryMod {
   
-  @JSImport("react-adaptive-hooks/memory", "useMemoryStatus")
+  @JSImport("react-adaptive-hooks/memory", JSImport.Namespace)
   @js.native
-  def useMemoryStatus[T](): (Unsupported with T) | unsupportedfalseMemorySta = js.native
-  @JSImport("react-adaptive-hooks/memory", "useMemoryStatus")
-  @js.native
-  def useMemoryStatus[T](initialMemoryStatus: T): (Unsupported with T) | unsupportedfalseMemorySta = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useMemoryStatus[T](): (Unsupported & T) | unsupportedfalseMemorySta = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemoryStatus")().asInstanceOf[(Unsupported & T) | unsupportedfalseMemorySta]
+  @scala.inline
+  def useMemoryStatus[T](initialMemoryStatus: T): (Unsupported & T) | unsupportedfalseMemorySta = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemoryStatus")(initialMemoryStatus.asInstanceOf[js.Any]).asInstanceOf[(Unsupported & T) | unsupportedfalseMemorySta]
+  
   trait MemoryStatus extends StObject {
     
-    var deviceMemory: Double = js.native
+    var deviceMemory: Double
     
-    var jsHeapSizeLimit: Double | Null = js.native
+    var jsHeapSizeLimit: Double | Null
     
-    var totalJSHeapSize: Double | Null = js.native
+    var totalJSHeapSize: Double | Null
     
-    var usedJSHeapSize: Double | Null = js.native
+    var usedJSHeapSize: Double | Null
   }
   object MemoryStatus {
     
     @scala.inline
     def apply(deviceMemory: Double): MemoryStatus = {
-      val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any], jsHeapSizeLimit = null, totalJSHeapSize = null, usedJSHeapSize = null)
       __obj.asInstanceOf[MemoryStatus]
     }
     

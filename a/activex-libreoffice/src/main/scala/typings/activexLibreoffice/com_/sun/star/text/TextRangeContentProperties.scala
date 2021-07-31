@@ -3,49 +3,47 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.com_.sun.star.table.XCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the structural properties to retrieve text contents.
   * @since OOo 3.3
   */
-@js.native
 trait TextRangeContentProperties extends StObject {
   
   /** may contain a table cell. */
-  var Cell: XCell = js.native
+  var Cell: XCell
   
   /** may contain a document index. */
-  var DocumentIndex: XDocumentIndex = js.native
+  var DocumentIndex: XDocumentIndex
   
   /** may contain a document index mark. */
-  var DocumentIndexMark: XDocumentIndexMark = js.native
+  var DocumentIndexMark: XDocumentIndexMark
   
   /** may contain a endnote. */
-  var Endnote: XFootnote = js.native
+  var Endnote: XFootnote
   
   /** may contain a footnote. */
-  var Footnote: XFootnote = js.native
+  var Footnote: XFootnote
   
   /**
     * may contain a nested text content.
     *
     * For example, may contain an {@link InContentMetadata} or a {@link com.sun.star.text.textfield.MetadataField} .
     */
-  var NestedTextContent: XTextContent = js.native
+  var NestedTextContent: XTextContent
   
   /** may contain a reference mark. */
-  var ReferenceMark: XTextContent = js.native
+  var ReferenceMark: XTextContent
   
   /** may contain a text frame. */
-  var TextFrame: XTextFrame = js.native
+  var TextFrame: XTextFrame
   
   /** may contain a text section. */
-  var TextSection: XTextSection = js.native
+  var TextSection: XTextSection
   
   /** may contain a text table. */
-  var TextTable: XTextTable = js.native
+  var TextTable: XTextTable
 }
 object TextRangeContentProperties {
   

@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLoaderSettings extends StObject {
   
-  var autoDetectLocale: js.UndefOr[Boolean] = js.native
+  var autoDetectLocale: js.UndefOr[Boolean] = js.undefined
   
-  var cssPath: String = js.native
+  var cssPath: String
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var localePath: js.UndefOr[String] = js.native
+  var localePath: js.UndefOr[String] = js.undefined
   
-  var preinit: js.UndefOr[js.Function] = js.native
+  var preinit: js.UndefOr[js.Function] = js.undefined
   
-  var ready: js.UndefOr[js.Function] = js.native
+  var ready: js.UndefOr[js.Function] = js.undefined
   
-  var regional: js.UndefOr[String] = js.native
+  var regional: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[String] = js.native
+  var resources: js.UndefOr[String] = js.undefined
   
-  var scriptPath: String = js.native
+  var scriptPath: String
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object IgLoaderSettings {
   

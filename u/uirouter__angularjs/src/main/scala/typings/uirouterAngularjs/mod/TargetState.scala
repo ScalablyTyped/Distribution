@@ -5,7 +5,6 @@ import typings.uirouterCore.stateInterfaceMod.StateOrName
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "TargetState")
@@ -35,7 +34,7 @@ class TargetState protected ()
   def this(
     _stateRegistry: typings.uirouterCore.stateRegistryMod.StateRegistry,
     _identifier: StateOrName,
-    _params: js.UndefOr[scala.Nothing],
+    _params: Unit,
     _options: TransitionOptions
   ) = this()
   def this(
@@ -48,8 +47,11 @@ class TargetState protected ()
 /* static members */
 object TargetState {
   
-  /** Returns true if the object has a state property that might be a state or state name */
-  @JSImport("@uirouter/angularjs", "TargetState.isDef")
+  @JSImport("@uirouter/angularjs", "TargetState")
   @js.native
-  def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /** Returns true if the object has a state property that might be a state or state name */
+  @scala.inline
+  def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
 }

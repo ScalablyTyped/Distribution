@@ -2,7 +2,6 @@ package typings.azureSb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionresultMod {
@@ -13,26 +12,25 @@ object subscriptionresultMod {
       
       object Results {
         
-        @js.native
         trait SubscriptionProperties extends StObject {
           
-          var AutoDeleteOnIdle: Boolean = js.native
+          var AutoDeleteOnIdle: Boolean
           
-          var DeadLetteringOnFilterEvaluationExceptions: String = js.native
+          var DeadLetteringOnFilterEvaluationExceptions: String
           
-          var DeadLetteringOnMessageExpiration: String = js.native
+          var DeadLetteringOnMessageExpiration: String
           
-          var DefaultMessageTimeToLive: String = js.native
+          var DefaultMessageTimeToLive: String
           
-          var EnableBatchedOperations: Boolean = js.native
+          var EnableBatchedOperations: Boolean
           
-          var LockDuration: String = js.native
+          var LockDuration: String
           
-          var MaxDeliveryCount: Double = js.native
+          var MaxDeliveryCount: Double
           
-          var MessageCount: Double = js.native
+          var MessageCount: Double
           
-          var RequiresSession: Boolean = js.native
+          var RequiresSession: Boolean
         }
         object SubscriptionProperties {
           
@@ -84,12 +82,11 @@ object subscriptionresultMod {
           }
         }
         
-        @js.native
         trait SubscriptionResult extends StObject {
           
-          def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+          def parse(xml: js.Object): js.Object | js.Array[js.Object]
           
-          def serialize(resource: SubscriptionProperties): String = js.native
+          def serialize(resource: SubscriptionProperties): String
         }
         object SubscriptionResult {
           

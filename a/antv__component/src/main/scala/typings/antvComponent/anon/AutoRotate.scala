@@ -2,23 +2,21 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoRotate extends StObject {
   
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
-  var content: js.Any = js.native
+  var content: js.Any
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var position: String = js.native
+  var position: String
   
-  var style: LineWidth = js.native
+  var style: LineWidth
 }
 object AutoRotate {
   

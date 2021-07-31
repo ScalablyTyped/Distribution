@@ -2,15 +2,13 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseMapController extends StObject {
   
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
-  def handleEvent(event: MapControlEvent): Unit = js.native
+  def handleEvent(event: MapControlEvent): Unit
 }
 object BaseMapController {
   

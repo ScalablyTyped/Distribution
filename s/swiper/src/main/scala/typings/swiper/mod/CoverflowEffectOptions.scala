@@ -2,21 +2,19 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverflowEffectOptions extends StObject {
   
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
-  var modifier: js.UndefOr[Double] = js.native
+  var modifier: js.UndefOr[Double] = js.undefined
   
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
   
-  var slideShadows: js.UndefOr[Boolean] = js.native
+  var slideShadows: js.UndefOr[Boolean] = js.undefined
   
-  var stretch: js.UndefOr[Double] = js.native
+  var stretch: js.UndefOr[Double] = js.undefined
 }
 object CoverflowEffectOptions {
   

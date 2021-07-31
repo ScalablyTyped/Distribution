@@ -10,9 +10,9 @@ React port of slick carousel
 | ------------------ | :-------------: |
 | Full name          | react-slick |
 | Keywords           | slick, carousel, Image slider, orbit, slider, react-component |
-| # releases         | 20 |
-| # dependents       | 634 |
-| # downloads        | 31776423 |
+| # releases         | 23 |
+| # dependents       | 680 |
+| # downloads        | 35179438 |
 | # stars            | 20 |
 
 ## Links

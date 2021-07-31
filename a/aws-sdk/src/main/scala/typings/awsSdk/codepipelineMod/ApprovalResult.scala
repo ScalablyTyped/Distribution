@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalResult extends StObject {
   
   /**
     * The response submitted by a reviewer assigned to an approval action request.
     */
-  var status: ApprovalStatus = js.native
+  var status: ApprovalStatus
   
   /**
     * The summary of the current status of the approval request.
     */
-  var summary: ApprovalSummary = js.native
+  var summary: ApprovalSummary
 }
 object ApprovalResult {
   

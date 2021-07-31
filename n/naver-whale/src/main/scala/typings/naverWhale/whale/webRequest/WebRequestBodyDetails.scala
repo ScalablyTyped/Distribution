@@ -2,18 +2,17 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebRequestBodyDetails
-  extends typings.chrome.chrome.webRequest.WebRequestDetails {
+  extends StObject
+     with typings.chrome.chrome.webRequest.WebRequestDetails {
   
   /**
     * Contains the HTTP request body data. Only provided if extraInfoSpec contains 'requestBody'.
     * @since Chrome 23.
     */
-  var requestBody: typings.chrome.chrome.webRequest.WebRequestBody = js.native
+  var requestBody: typings.chrome.chrome.webRequest.WebRequestBody
 }
 object WebRequestBodyDetails {
   

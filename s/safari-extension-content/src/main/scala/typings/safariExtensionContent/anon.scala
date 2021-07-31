@@ -2,23 +2,22 @@ package typings.safariExtensionContent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeofsafari extends StObject {
     
-    var extension: SafariContentExtension = js.native
+    var `extension`: SafariContentExtension
     
-    var self: SafariContentWebPage = js.native
+    var self: SafariContentWebPage
   }
   object Typeofsafari {
     
     @scala.inline
-    def apply(extension: SafariContentExtension, self: SafariContentWebPage): Typeofsafari = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
+    def apply(`extension`: SafariContentExtension, self: SafariContentWebPage): Typeofsafari = {
+      val __obj = js.Dynamic.literal(self = self.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofsafari]
     }
     

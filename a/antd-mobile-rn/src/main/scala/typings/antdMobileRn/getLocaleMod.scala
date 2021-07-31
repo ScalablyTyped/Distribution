@@ -2,16 +2,17 @@ package typings.antdMobileRn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocaleMod {
   
-  @JSImport("antd-mobile-rn/lib/_util/getLocale", "getComponentLocale")
+  @JSImport("antd-mobile-rn/lib/_util/getLocale", JSImport.Namespace)
   @js.native
-  def getComponentLocale(props: js.Any, context: js.Any, componentName: String, getDefaultLocale: js.Function0[_]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd-mobile-rn/lib/_util/getLocale", "getLocaleCode")
-  @js.native
-  def getLocaleCode(context: js.Any): js.Any = js.native
+  @scala.inline
+  def getComponentLocale(props: js.Any, context: js.Any, componentName: String, getDefaultLocale: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentLocale")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getLocaleCode(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCode")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

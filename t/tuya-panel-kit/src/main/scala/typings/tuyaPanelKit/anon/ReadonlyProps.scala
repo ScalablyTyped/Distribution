@@ -8,26 +8,24 @@ import typings.tuyaPanelKit.stackTypesMod.StackHeaderMode
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationHelpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/views/Stack/StackView.Props> */
-@js.native
 trait ReadonlyProps extends StObject {
   
-  val descriptors: StackDescriptorMap = js.native
+  val descriptors: StackDescriptorMap
   
-  val detachInactiveScreens: js.UndefOr[Boolean] = js.native
+  val detachInactiveScreens: js.UndefOr[Boolean] = js.undefined
   
-  val headerMode: js.UndefOr[StackHeaderMode] = js.native
+  val headerMode: js.UndefOr[StackHeaderMode] = js.undefined
   
-  val keyboardHandlingEnabled: js.UndefOr[Boolean] = js.native
+  val keyboardHandlingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val mode: js.UndefOr[StackCardMode] = js.native
+  val mode: js.UndefOr[StackCardMode] = js.undefined
   
-  val navigation: StackNavigationHelpers = js.native
+  val navigation: StackNavigationHelpers
   
-  val state: StackNavigationState[ParamListBase] = js.native
+  val state: StackNavigationState[ParamListBase]
 }
 object ReadonlyProps {
   

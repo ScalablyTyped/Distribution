@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Bookmarks are only valid in the scope of the current result set and are not interchangeable between result sets. A bookmark could be a complex data
   * structure, so it could not be compared in a safe way. Because of that, a provider has to implement the compare method for bookmarks.
   */
-@js.native
-trait XRowLocate extends XInterface {
+trait XRowLocate
+  extends StObject
+     with XInterface {
   
   /**
     * returns the bookmark of the current row of a result set.
     * @returns the current bookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Bookmark: js.Any = js.native
+  val Bookmark: js.Any
   
   /**
     * compares two bookmarks and returns an indication of their relative values.
@@ -34,14 +34,14 @@ trait XRowLocate extends XInterface {
     * @see com.sun.star.sdbcx.CompareBookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def compareBookmarks(first: js.Any, second: js.Any): Double = js.native
+  def compareBookmarks(first: js.Any, second: js.Any): Double
   
   /**
     * returns the bookmark of the current row of a result set.
     * @returns the current bookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBookmark(): js.Any = js.native
+  def getBookmark(): js.Any
   
   /**
     * determines whether the bookmarks of a result set are ordered or not.
@@ -49,7 +49,7 @@ trait XRowLocate extends XInterface {
     * @see com.sun.star.sdbcx.CompareBookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def hasOrderedBookmarks(): Boolean = js.native
+  def hasOrderedBookmarks(): Boolean
   
   /**
     * returns the hash value for a specified bookmark.
@@ -57,7 +57,7 @@ trait XRowLocate extends XInterface {
     * @returns the hashed value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def hashBookmark(bookmark: js.Any): Double = js.native
+  def hashBookmark(bookmark: js.Any): Double
   
   /**
     * moves the cursor a relative number of rows, either positive or negative starting at a given bookmark position.
@@ -69,7 +69,7 @@ trait XRowLocate extends XInterface {
     * @returns `TRUE` if successful
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def moveRelativeToBookmark(bookmark: js.Any, rows: Double): Boolean = js.native
+  def moveRelativeToBookmark(bookmark: js.Any, rows: Double): Boolean
   
   /**
     * moves the cursor to the row identified by an valid bookmark.
@@ -80,7 +80,7 @@ trait XRowLocate extends XInterface {
     * @returns `TRUE` if successful
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def moveToBookmark(bookmark: js.Any): Boolean = js.native
+  def moveToBookmark(bookmark: js.Any): Boolean
 }
 object XRowLocate {
   

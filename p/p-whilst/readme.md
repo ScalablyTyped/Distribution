@@ -11,8 +11,8 @@ While a condition returns true, calls a function repeatedly, and then resolves t
 | Full name          | p-whilst |
 | Keywords           | promise, whilst, while, loop, wait, condition, conditional, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 228071 |
+| # dependents       | 21 |
+| # downloads        | 325552 |
 | # stars            | 1 |
 
 ## Links

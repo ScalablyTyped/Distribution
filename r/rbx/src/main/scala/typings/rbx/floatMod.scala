@@ -8,17 +8,18 @@ import typings.rbx.rbxStrings.left
 import typings.rbx.rbxStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatMod {
   
-  @JSImport("rbx/base/helpers/float", "makePropTypes")
+  @JSImport("rbx/base/helpers/float", JSImport.Namespace)
   @js.native
-  def makePropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/float", "makePropTypes")
-  @js.native
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/float", "makeValidatingTransform")
   @js.native
@@ -28,12 +29,11 @@ object floatMod {
   @js.native
   val transform: TransformFunction[FloatHelpersProps, js.Object] = js.native
   
-  @js.native
   trait FloatHelpersProps extends StObject {
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
   }
   object FloatHelpersProps {
     

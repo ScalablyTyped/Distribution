@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnionOrIntersectionType extends Type {
+trait UnionOrIntersectionType
+  extends StObject
+     with Type {
   
-  var types: js.Array[Type] = js.native
+  var types: js.Array[Type]
 }
 object UnionOrIntersectionType {
   

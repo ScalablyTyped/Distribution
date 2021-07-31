@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,29 +13,43 @@ object LoggingOpcode extends StObject {
   
   /** An informational event. */
   @js.native
-  sealed trait info extends LoggingOpcode
+  sealed trait info
+    extends StObject
+       with LoggingOpcode
   
   /** A reply event. */
   @js.native
-  sealed trait reply extends LoggingOpcode
+  sealed trait reply
+    extends StObject
+       with LoggingOpcode
   
   /** An event that represents an activity resuming after being suspended. */
   @js.native
-  sealed trait resume extends LoggingOpcode
+  sealed trait resume
+    extends StObject
+       with LoggingOpcode
   
   /** An event that represents transferring activity to another component. */
   @js.native
-  sealed trait send extends LoggingOpcode
+  sealed trait send
+    extends StObject
+       with LoggingOpcode
   
   /** An event that represents the start of an activity. */
   @js.native
-  sealed trait start extends LoggingOpcode
+  sealed trait start
+    extends StObject
+       with LoggingOpcode
   
   /** An event that represents the end of an activity. The event corresponds to the last unpaired Start event. */
   @js.native
-  sealed trait stop extends LoggingOpcode
+  sealed trait stop
+    extends StObject
+       with LoggingOpcode
   
   /** An event that represents the activity being suspended pending another activity's completion. */
   @js.native
-  sealed trait suspend extends LoggingOpcode
+  sealed trait suspend
+    extends StObject
+       with LoggingOpcode
 }

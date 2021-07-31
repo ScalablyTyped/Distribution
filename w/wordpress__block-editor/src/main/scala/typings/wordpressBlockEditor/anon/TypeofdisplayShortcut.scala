@@ -2,31 +2,29 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdisplayShortcut extends StObject {
   
-  def access(character: String): String = js.native
+  def access(character: String): String
   
-  def alt(character: String): String = js.native
+  def alt(character: String): String
   
-  def ctrl(character: String): String = js.native
+  def ctrl(character: String): String
   
-  def ctrlShift(character: String): String = js.native
+  def ctrlShift(character: String): String
   
-  def primary(character: String): String = js.native
+  def primary(character: String): String
   
-  def primaryAlt(character: String): String = js.native
+  def primaryAlt(character: String): String
   
-  def primaryShift(character: String): String = js.native
+  def primaryShift(character: String): String
   
-  def secondary(character: String): String = js.native
+  def secondary(character: String): String
   
-  def shift(character: String): String = js.native
+  def shift(character: String): String
   
-  def shiftAlt(character: String): String = js.native
+  def shiftAlt(character: String): String
 }
 object TypeofdisplayShortcut {
   

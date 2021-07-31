@@ -2,32 +2,27 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait AssemblyCall
-  extends AssemblyExpression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyExpression {
   
-  var arguments: js.Array[AssemblyExpression] = js.native
+  var arguments: js.Array[AssemblyExpression]
   
-  var functionName: String = js.native
+  var functionName: String
   
   @JSName("type")
-  var type_AssemblyCall: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall = js.native
+  var type_AssemblyCall: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall
 }
 object AssemblyCall {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[AssemblyExpression],
-    functionName: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall
-  ): AssemblyCall = {
+  def apply(arguments: js.Array[AssemblyExpression], functionName: String): AssemblyCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyCall")
     __obj.asInstanceOf[AssemblyCall]
   }
   

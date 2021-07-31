@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCrawlerScheduleRequest extends StObject {
   
   /**
     * The name of the crawler whose schedule to update.
     */
-  var CrawlerName: NameString = js.native
+  var CrawlerName: NameString
   
   /**
     * The updated cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
     */
-  var Schedule: js.UndefOr[CronExpression] = js.native
+  var Schedule: js.UndefOr[CronExpression] = js.undefined
 }
 object UpdateCrawlerScheduleRequest {
   

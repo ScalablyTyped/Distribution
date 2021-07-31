@@ -10,12 +10,15 @@ a special purpose fast memoizing way to resolve a node modules package.json
 | ------------------ | :-------------: |
 | Full name          | resolve-package-path |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 12 |
-| # downloads        | 10002699 |
+| # releases         | 27 |
+| # dependents       | 23 |
+| # downloads        | 13332769 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/stefanpenner/resolve-package-path#readme)
+- [Bugs](https://github.com/stefanpenner/resolve-package-path/issues)
+- [Repository](https://github.com/stefanpenner/resolve-package-path)
 - [Npm](https://www.npmjs.com/package/resolve-package-path)
     
 

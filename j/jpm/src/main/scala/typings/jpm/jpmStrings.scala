@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.pageModMod.attachmentMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jpmStrings {
@@ -74,12 +73,16 @@ object jpmStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait existing extends attachmentMode
+  sealed trait existing
+    extends StObject
+       with attachmentMode
   @scala.inline
   def existing: existing = "existing".asInstanceOf[existing]
   
   @js.native
-  sealed trait frame extends attachmentMode
+  sealed trait frame
+    extends StObject
+       with attachmentMode
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   
@@ -169,7 +172,9 @@ object jpmStrings {
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait top extends attachmentMode
+  sealed trait top
+    extends StObject
+       with attachmentMode
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

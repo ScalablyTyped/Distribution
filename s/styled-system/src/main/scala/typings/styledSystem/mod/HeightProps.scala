@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends S
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
     */
-  var height: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var height: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object HeightProps {
   
@@ -25,7 +23,7 @@ object HeightProps {
   }
   
   @scala.inline
-  implicit class HeightPropsMutableBuilder[Self <: HeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (HeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class HeightPropsMutableBuilder[Self <: HeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (HeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

@@ -5,41 +5,41 @@ import typings.antvGBase.typesMod.Point
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcAnnotationCfg extends GroupComponentCfg {
+trait ArcAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 圆心
     * @type {Point}
     */
-  var center: js.UndefOr[Point] = js.native
+  var center: js.UndefOr[Point] = js.undefined
   
   /**
     * 结束角度
     * @type {number}
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * 半径
     * @type {number}
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * 其实角度
     * @type {number}
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * 区域的样式
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object ArcAnnotationCfg {
   

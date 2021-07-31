@@ -10,9 +10,9 @@ Javascript library for Firebase Auth SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth |
 | Keywords           | - |
-| # releases         | 1167 |
-| # dependents       | 26 |
-| # downloads        | 31255834 |
+| # releases         | 1348 |
+| # dependents       | 31 |
+| # downloads        | 36085755 |
 | # stars            | 1 |
 
 ## Links

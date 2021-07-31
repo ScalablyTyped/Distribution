@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.graphicsUtils.BatchPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait GraphicsGeometry extends BatchGeometry {
+trait GraphicsGeometry
+  extends StObject
+     with BatchGeometry {
   
   /**
     * Cached bounds.
@@ -215,7 +216,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @member {object[]} PIXI.GraphicsGeometry#drawCalls
     * @protected
     */
-  var drawCalls: js.Array[_] = js.native
+  var drawCalls: js.Array[js.Any] = js.native
   
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.

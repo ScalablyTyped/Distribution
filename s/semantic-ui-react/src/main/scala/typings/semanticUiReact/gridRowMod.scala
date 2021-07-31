@@ -13,7 +13,6 @@ import typings.semanticUiReact.gridGridMod.GridReversedProp
 import typings.semanticUiReact.semanticUiReactStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridRowMod extends Shortcut {
@@ -22,9 +21,9 @@ object gridRowMod extends Shortcut {
   @js.native
   val default: StatelessComponent[GridRowProps] = js.native
   
-  @js.native
   trait GridRowProps
-    extends StrictGridRowProps
+    extends StObject
+       with StrictGridRowProps
        with /* key */ StringDictionary[js.Any]
   object GridRowProps {
     
@@ -35,44 +34,43 @@ object gridRowMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictGridRowProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A row can have its columns centered. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A grid row can be colored. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Represents column count per line in Row. */
-    var columns: js.UndefOr[SemanticWIDTHS | equal] = js.native
+    var columns: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
     
     /** A row can have dividers between its columns. */
-    var divided: js.UndefOr[Boolean] = js.native
+    var divided: js.UndefOr[Boolean] = js.undefined
     
     /** A row can appear only for a specific device, or screen sizes. */
-    var only: js.UndefOr[GridOnlyProp] = js.native
+    var only: js.UndefOr[GridOnlyProp] = js.undefined
     
     /** A  row can specify that its columns should reverse order at different device sizes. */
-    var reversed: js.UndefOr[GridReversedProp] = js.native
+    var reversed: js.UndefOr[GridReversedProp] = js.undefined
     
     /** An can stretch its contents to take up the entire column height. */
-    var stretched: js.UndefOr[Boolean] = js.native
+    var stretched: js.UndefOr[Boolean] = js.undefined
     
     /** A row can specify its text alignment. */
-    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.native
+    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
     
     /** A row can specify its vertical alignment to have all its columns vertically centered. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictGridRowProps {
     

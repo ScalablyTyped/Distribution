@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait ShapeCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextDescription: js.UndefOr[Boolean] = js.native
+  var altTextDescription: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextTitle: js.UndefOr[Boolean] = js.native
+  var altTextTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var connectionSiteCount: js.UndefOr[Boolean] = js.native
+  var connectionSiteCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[ShapeFillLoadOptions] = js.native
+  var fill: js.UndefOr[ShapeFillLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.native
+  var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var geometricShapeType: js.UndefOr[Boolean] = js.native
+  var geometricShapeType: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var group: js.UndefOr[ShapeGroupLoadOptions] = js.native
+  var group: js.UndefOr[ShapeGroupLoadOptions] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var image: js.UndefOr[ImageLoadOptions] = js.native
+  var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var level: js.UndefOr[Boolean] = js.native
+  var level: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -124,7 +122,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var line: js.UndefOr[LineLoadOptions] = js.native
+  var line: js.UndefOr[LineLoadOptions] = js.undefined
   
   /**
     *
@@ -132,7 +130,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.native
+  var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -140,7 +138,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -148,7 +146,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -156,7 +154,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var parentGroup: js.UndefOr[ShapeLoadOptions] = js.native
+  var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var placement: js.UndefOr[Boolean] = js.native
+  var placement: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -172,7 +170,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rotation: js.UndefOr[Boolean] = js.native
+  var rotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -180,7 +178,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var textFrame: js.UndefOr[TextFrameLoadOptions] = js.native
+  var textFrame: js.UndefOr[TextFrameLoadOptions] = js.undefined
   
   /**
     *
@@ -189,7 +187,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -197,7 +195,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -205,7 +203,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -214,7 +212,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -222,7 +220,7 @@ trait ShapeCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var zOrderPosition: js.UndefOr[Boolean] = js.native
+  var zOrderPosition: js.UndefOr[Boolean] = js.undefined
 }
 object ShapeCollectionLoadOptions {
   

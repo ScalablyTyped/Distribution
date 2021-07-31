@@ -2,22 +2,20 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidAttributeNameMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidAttributeNameDetails> * / any */ @js.native
-  trait InvalidAttributeName extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidAttributeNameDetails> * / any */ trait InvalidAttributeName extends StObject {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName
   }
   object InvalidAttributeName {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName): InvalidAttributeName = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidAttributeName = {
+      val __obj = js.Dynamic.literal(name = "InvalidAttributeName")
       __obj.asInstanceOf[InvalidAttributeName]
     }
     
@@ -29,6 +27,5 @@ object typesInvalidAttributeNameMod {
     }
   }
   
-  @js.native
   trait InvalidAttributeNameDetails extends StObject
 }

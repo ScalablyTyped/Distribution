@@ -2,36 +2,34 @@ package typings.toastr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastMap extends StObject {
   
   /**
     * The toast icon class.
     */
-  var iconClass: String = js.native
+  var iconClass: String
   
   /**
     * The toast message.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Any override options specified when the toast was created.
     */
-  var optionsOverride: js.UndefOr[ToastrOptions] = js.native
+  var optionsOverride: js.UndefOr[ToastrOptions] = js.undefined
   
   /**
     * The toast title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The toast type.
     */
-  var `type`: ToastrType = js.native
+  var `type`: ToastrType
 }
 object ToastMap {
   

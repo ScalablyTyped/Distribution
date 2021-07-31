@@ -6,45 +6,43 @@ import typings.wegameApi.wegameApiStrings.arraybuffer
 import typings.wegameApi.wegameApiStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 请求的参数
     */
-  var data: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
   
   /**
     * 返回的数据格式
     */
-  var dataType: js.UndefOr[json | arraybuffer] = js.native
+  var dataType: js.UndefOr[json | arraybuffer] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 设置请求的 header，header 中不能设置 Referer
     */
-  var header: js.UndefOr[StringDictionary[String]] = js.native
+  var header: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * HTTP 请求方法
     */
-  var method: js.UndefOr[RequestMethod] = js.native
+  var method: js.UndefOr[RequestMethod] = js.undefined
   
   /**
     * res.data usually can be string or ArrayBuffer
     */
-  var success: js.UndefOr[js.Function1[/* res */ Header, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Header, Unit]] = js.undefined
   
   /**
     * 开发者服务器接口地址
     */
-  var url: String = js.native
+  var url: String
 }
 object RequestParams {
   

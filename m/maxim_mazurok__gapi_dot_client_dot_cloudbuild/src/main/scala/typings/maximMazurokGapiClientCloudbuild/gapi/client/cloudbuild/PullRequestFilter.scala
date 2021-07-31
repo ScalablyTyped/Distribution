@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequestFilter extends StObject {
   
   /** Regex of branches to match. The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax */
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
   /** Configure builds to run whether a repository owner or collaborator need to comment `/gcbrun`. */
-  var commentControl: js.UndefOr[String] = js.native
+  var commentControl: js.UndefOr[String] = js.undefined
   
   /** If true, branches that do NOT match the git_ref will trigger a build. */
-  var invertRegex: js.UndefOr[Boolean] = js.native
+  var invertRegex: js.UndefOr[Boolean] = js.undefined
 }
 object PullRequestFilter {
   

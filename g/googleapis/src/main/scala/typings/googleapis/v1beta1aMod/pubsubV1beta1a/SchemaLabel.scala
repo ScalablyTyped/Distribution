@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A key-value pair applied to a given object.
   */
-@js.native
 trait SchemaLabel extends StObject {
   
   /**
@@ -26,17 +24,17 @@ trait SchemaLabel extends StObject {
     * &quot;alphadigit&quot; are defined as in RFC 1738.  Example key:
     * spanner.google.com/universe
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * An integer value.
     */
-  var numValue: js.UndefOr[String] = js.native
+  var numValue: js.UndefOr[String] = js.undefined
   
   /**
     * A string value.
     */
-  var strValue: js.UndefOr[String] = js.native
+  var strValue: js.UndefOr[String] = js.undefined
 }
 object SchemaLabel {
   

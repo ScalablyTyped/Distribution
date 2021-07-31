@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Zones$Clusters")
@@ -31,7 +30,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def addons(): GaxiosPromise[SchemaOperation] = js.native
   def addons(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addons(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addons(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addons(params: ParamsResourceProjectsZonesClustersAddons): GaxiosPromise[SchemaOperation] = js.native
   def addons(params: ParamsResourceProjectsZonesClustersAddons, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addons(
@@ -63,7 +62,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def completeIpRotation(): GaxiosPromise[SchemaOperation] = js.native
   def completeIpRotation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def completeIpRotation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def completeIpRotation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def completeIpRotation(params: ParamsResourceProjectsZonesClustersCompleteiprotation): GaxiosPromise[SchemaOperation] = js.native
   def completeIpRotation(
     params: ParamsResourceProjectsZonesClustersCompleteiprotation,
@@ -107,7 +106,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsZonesClustersCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsZonesClustersCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -143,7 +142,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceProjectsZonesClustersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceProjectsZonesClustersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -175,7 +174,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
   def get(params: ParamsResourceProjectsZonesClustersGet): GaxiosPromise[SchemaCluster] = js.native
   def get(params: ParamsResourceProjectsZonesClustersGet, callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
   def get(
@@ -207,7 +206,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def legacyAbac(): GaxiosPromise[SchemaOperation] = js.native
   def legacyAbac(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def legacyAbac(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def legacyAbac(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def legacyAbac(params: ParamsResourceProjectsZonesClustersLegacyabac): GaxiosPromise[SchemaOperation] = js.native
   def legacyAbac(
     params: ParamsResourceProjectsZonesClustersLegacyabac,
@@ -242,7 +241,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClustersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(params: ParamsResourceProjectsZonesClustersList): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(
     params: ParamsResourceProjectsZonesClustersList,
@@ -277,7 +276,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def locations(): GaxiosPromise[SchemaOperation] = js.native
   def locations(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def locations(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def locations(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def locations(params: ParamsResourceProjectsZonesClustersLocations): GaxiosPromise[SchemaOperation] = js.native
   def locations(
     params: ParamsResourceProjectsZonesClustersLocations,
@@ -312,7 +311,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def logging(): GaxiosPromise[SchemaOperation] = js.native
   def logging(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def logging(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def logging(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def logging(params: ParamsResourceProjectsZonesClustersLogging): GaxiosPromise[SchemaOperation] = js.native
   def logging(
     params: ParamsResourceProjectsZonesClustersLogging,
@@ -347,7 +346,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def master(): GaxiosPromise[SchemaOperation] = js.native
   def master(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def master(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def master(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def master(params: ParamsResourceProjectsZonesClustersMaster): GaxiosPromise[SchemaOperation] = js.native
   def master(params: ParamsResourceProjectsZonesClustersMaster, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def master(
@@ -379,7 +378,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def monitoring(): GaxiosPromise[SchemaOperation] = js.native
   def monitoring(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def monitoring(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def monitoring(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def monitoring(params: ParamsResourceProjectsZonesClustersMonitoring): GaxiosPromise[SchemaOperation] = js.native
   def monitoring(
     params: ParamsResourceProjectsZonesClustersMonitoring,
@@ -416,7 +415,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def resourceLabels(): GaxiosPromise[SchemaOperation] = js.native
   def resourceLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def resourceLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def resourceLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resourceLabels(params: ParamsResourceProjectsZonesClustersResourcelabels): GaxiosPromise[SchemaOperation] = js.native
   def resourceLabels(
     params: ParamsResourceProjectsZonesClustersResourcelabels,
@@ -451,7 +450,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def setMaintenancePolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setMaintenancePolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setMaintenancePolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setMaintenancePolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMaintenancePolicy(params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy): GaxiosPromise[SchemaOperation] = js.native
   def setMaintenancePolicy(
     params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy,
@@ -489,7 +488,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def setMasterAuth(): GaxiosPromise[SchemaOperation] = js.native
   def setMasterAuth(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setMasterAuth(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setMasterAuth(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMasterAuth(params: ParamsResourceProjectsZonesClustersSetmasterauth): GaxiosPromise[SchemaOperation] = js.native
   def setMasterAuth(
     params: ParamsResourceProjectsZonesClustersSetmasterauth,
@@ -524,7 +523,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def setNetworkPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setNetworkPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setNetworkPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setNetworkPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setNetworkPolicy(params: ParamsResourceProjectsZonesClustersSetnetworkpolicy): GaxiosPromise[SchemaOperation] = js.native
   def setNetworkPolicy(
     params: ParamsResourceProjectsZonesClustersSetnetworkpolicy,
@@ -559,7 +558,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def startIpRotation(): GaxiosPromise[SchemaOperation] = js.native
   def startIpRotation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def startIpRotation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def startIpRotation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def startIpRotation(params: ParamsResourceProjectsZonesClustersStartiprotation): GaxiosPromise[SchemaOperation] = js.native
   def startIpRotation(
     params: ParamsResourceProjectsZonesClustersStartiprotation,
@@ -594,7 +593,7 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceProjectsZonesClustersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceProjectsZonesClustersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

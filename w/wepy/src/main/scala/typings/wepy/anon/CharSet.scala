@@ -2,19 +2,17 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharSet extends StObject {
   
-  var charSet: String = js.native
+  var charSet: String
   
-  var path: String = js.native
+  var path: String
   
-  var result: String = js.native
+  var result: String
   
-  var scanType: String = js.native
+  var scanType: String
 }
 object CharSet {
   

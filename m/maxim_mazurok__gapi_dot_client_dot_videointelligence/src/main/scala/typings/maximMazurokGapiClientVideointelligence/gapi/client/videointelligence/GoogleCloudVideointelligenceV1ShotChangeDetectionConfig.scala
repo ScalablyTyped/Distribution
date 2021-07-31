@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1ShotChangeDetectionConfig extends StObject {
   
   /** Model to use for shot change detection. Supported values: "builtin/stable" (the default if unset) and "builtin/latest". */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1ShotChangeDetectionConfig {
   

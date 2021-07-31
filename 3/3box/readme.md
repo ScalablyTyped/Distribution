@@ -10,9 +10,9 @@ Interact with user data
 | ------------------ | :-------------: |
 | Full name          | 3box |
 | Keywords           | - |
-| # releases         | 130 |
+| # releases         | 96 |
 | # dependents       | 19 |
-| # downloads        | 73940 |
+| # downloads        | 81536 |
 | # stars            | 0 |
 
 ## Links

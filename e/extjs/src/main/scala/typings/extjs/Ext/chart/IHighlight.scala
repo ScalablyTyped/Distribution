@@ -3,25 +3,25 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IHighlight extends IBase {
+trait IHighlight
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean/Object) */
-  var highlight: js.UndefOr[js.Any] = js.native
+  var highlight: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var highlightCfg: js.UndefOr[js.Any] = js.native
+  var highlightCfg: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Highlight the given series item
     * @param item Object Info about the item; same format as returned by #getItemForPoint.
     */
-  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Un highlight any existing highlights */
-  var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.native
+  var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IHighlight {
   

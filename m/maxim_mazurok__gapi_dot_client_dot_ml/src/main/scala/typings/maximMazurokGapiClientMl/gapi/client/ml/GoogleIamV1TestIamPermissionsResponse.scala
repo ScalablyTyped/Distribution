@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleIamV1TestIamPermissionsResponse extends StObject {
   
   /** A subset of `TestPermissionsRequest.permissions` that the caller is allowed. */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleIamV1TestIamPermissionsResponse {
   

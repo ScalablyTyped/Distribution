@@ -2,33 +2,33 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Product extends GraphModel {
+trait Product
+  extends StObject
+     with GraphModel {
   
   /**
     * A product description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Product unique ID
     */
-  var id: String | Double = js.native
+  var id: String | Double
   
   /**
     * An Array of Objects that contain meta data about an image including src of the images.
     */
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
   /**
     * Get an array of Product Options. Product Options can be used to define
     * the currently selectedVariant from which you can get a checkout url (ProductVariant.checkoutUrl)
     * or can be added to a cart (Cart.createLineItemsFromVariants).
     */
-  var options: js.Array[Option] = js.native
+  var options: js.Array[Option]
   
   /**
     * Retrieve variant for currently selected options. By default the first value in each option is selected
@@ -36,32 +36,32 @@ trait Product extends GraphModel {
     * create checkout url (ProductVariant.checkoutUrl) or
     * it can be added to a cart (Cart.createLineItemsFromVariants).
     */
-  var selectedVariant: ProductVariant = js.native
+  var selectedVariant: ProductVariant
   
   /**
     * Retrieve image for currently selected variantImage.
     */
-  var selectedVariantImage: Image = js.native
+  var selectedVariantImage: Image
   
   /**
     * A read only Array of Strings represented currently selected option values. eg. ["Large", "Red"]
     */
-  var selections: js.Array[String] = js.native
+  var selections: js.Array[String]
   
   /**
     * The product title
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * All variants of a product.
     */
-  var variants: js.Array[ProductVariant] = js.native
+  var variants: js.Array[ProductVariant]
   
   /**
     * The product’s vendor name
     */
-  var vendor: String = js.native
+  var vendor: String
 }
 object Product {
   

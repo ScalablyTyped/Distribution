@@ -4,37 +4,38 @@ import typings.textClipper.textClipperBooleans.`false`
 import typings.textClipper.textClipperBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("text-clipper", JSImport.Default)
+  @JSImport("text-clipper", JSImport.Namespace)
   @js.native
-  def default(string: String, maxLength: Double): String = js.native
-  @JSImport("text-clipper", JSImport.Default)
-  @js.native
-  def default(string: String, maxLength: Double, options: ClipOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(string: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(string: String, maxLength: Double, options: ClipOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ClipHtmlOptions
-    extends CommonClipOptions
+    extends StObject
+       with CommonClipOptions
        with ClipOptions {
     
     @JSName("html")
-    var html_ClipHtmlOptions: `true` = js.native
+    var html_ClipHtmlOptions: `true`
     
     /**
       * The amount of characters to assume for images. This is used whenever an image is encountered,
       * but also for SVG and MathML content. Default: `2`.
       */
-    var imageWeight: js.UndefOr[Double] = js.native
+    var imageWeight: js.UndefOr[Double] = js.undefined
   }
   object ClipHtmlOptions {
     
     @scala.inline
-    def apply(html: `true`): ClipHtmlOptions = {
-      val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
+    def apply(): ClipHtmlOptions = {
+      val __obj = js.Dynamic.literal(html = true)
       __obj.asInstanceOf[ClipHtmlOptions]
     }
     
@@ -60,8 +61,8 @@ object mod {
   object ClipOptions {
     
     @scala.inline
-    def ClipHtmlOptions(html: `true`): typings.textClipper.mod.ClipHtmlOptions = {
-      val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
+    def ClipHtmlOptions(): typings.textClipper.mod.ClipHtmlOptions = {
+      val __obj = js.Dynamic.literal(html = true)
       __obj.asInstanceOf[typings.textClipper.mod.ClipHtmlOptions]
     }
     
@@ -72,13 +73,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ClipPlainTextOptions
-    extends CommonClipOptions
+    extends StObject
+       with CommonClipOptions
        with ClipOptions {
     
     @JSName("html")
-    var html_ClipPlainTextOptions: js.UndefOr[`false`] = js.native
+    var html_ClipPlainTextOptions: js.UndefOr[`false`] = js.undefined
   }
   object ClipPlainTextOptions {
     
@@ -99,31 +100,30 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonClipOptions extends StObject {
     
     /**
       * By default, we try to break only at word boundaries. Set to true if this is undesired.
       */
-    var breakWords: js.UndefOr[Boolean] = js.native
+    var breakWords: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true` if the string is HTML-encoded. If so, this method will take extra care to make
       * sure the HTML-encoding is correctly maintained.
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The string to insert to indicate clipping. Default: "…".
       */
-    var indicator: js.UndefOr[String] = js.native
+    var indicator: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum amount of lines allowed. If given, the string will be clipped either at the moment
       * the maximum amount of characters is exceeded or the moment maxLines newlines are discovered,
       * whichever comes first.
       */
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
   }
   object CommonClipOptions {
     

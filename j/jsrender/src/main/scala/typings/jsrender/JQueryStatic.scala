@@ -10,15 +10,13 @@ import typings.jsrender.JsViews.Templates
 import typings.jsrender.JsViews.Views
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ********************************** JsRender **********************************
-@js.native
 trait JQueryStatic extends StObject {
   
   /* var htmlString = $.render.templateName(data, myHelpersObject); // Render named template */
-  var render: StringDictionary[TemplateRender] = js.native
+  var render: StringDictionary[TemplateRender]
   
   /**
   	 * Additional $.templates() signature for compiling unnamed template
@@ -38,20 +36,42 @@ trait JQueryStatic extends StObject {
   	 * @param {Template}      [parentTmpl] For item being registered as private resource of template
   	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
   	 */
-  def templates(markupOrSelectorOrOptions: String): Template = js.native
-  def templates(markupOrSelectorOrOptions: String, parentTmpl: Template): Template = js.native
-  def templates(markupOrSelectorOrOptions: TemplateOptions): Template = js.native
-  def templates(markupOrSelectorOrOptions: TemplateOptions, parentTmpl: Template): Template = js.native
+  def templates(markupOrSelectorOrOptions: String): Template
+  def templates(markupOrSelectorOrOptions: String, parentTmpl: Template): Template
+  def templates(markupOrSelectorOrOptions: TemplateOptions): Template
+  def templates(markupOrSelectorOrOptions: TemplateOptions, parentTmpl: Template): Template
   // named item
   /* $.templates(...) or $.templates.templateName: Compile/get template */
-  def templates(namedItems: Hash[TemplateSetter]): Views = js.native
-  def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views = js.native
-  def templates(name: String, item: js.UndefOr[TemplateSetter], parentTmpl: Template): Template = js.native
-  def templates(name: String, item: TemplateSetter): Template = js.native
+  def templates(namedItems: Hash[TemplateSetter]): Views
+  def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views
+  def templates(name: String, item: Unit, parentTmpl: Template): Template
+  def templates(name: String, item: TemplateSetter): Template
+  def templates(name: String, item: TemplateSetter, parentTmpl: Template): Template
   /* $.templates(...) or $.templates.templateName: Compile/get template */
   @JSName("templates")
-  var templates_Original: Templates = js.native
+  var templates_Original: Templates
   
   /* $.views.xxx ... // JsRender/JsViews APIs */
-  var views: Views = js.native
+  var views: Views
+}
+object JQueryStatic {
+  
+  @scala.inline
+  def apply(render: StringDictionary[TemplateRender], templates: Templates, views: Views): JQueryStatic = {
+    val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  @scala.inline
+  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRender(value: StringDictionary[TemplateRender]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTemplates(value: Templates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setViews(value: Views): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+  }
 }

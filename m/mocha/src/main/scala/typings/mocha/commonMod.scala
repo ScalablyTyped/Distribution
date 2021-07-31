@@ -7,14 +7,16 @@ import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
+  @scala.inline
+  def apply(suites: js.Array[Suite], context: MochaGlobals, mocha: Mocha): CommonFunctions = (^.asInstanceOf[js.Dynamic].apply(suites.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mocha.asInstanceOf[js.Any])).asInstanceOf[CommonFunctions]
+  
   @JSImport("mocha/lib/interfaces/common", JSImport.Namespace)
   @js.native
-  def apply(suites: js.Array[Suite], context: MochaGlobals, mocha: Mocha): CommonFunctions = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait CommonFunctions extends StObject {
@@ -82,23 +84,22 @@ object commonMod {
     var test: TestFunctions = js.native
   }
   
-  @js.native
   trait CreateOptions extends StObject {
     
     /** Filepath where this Suite resides */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /** Suite function */
-    var fn: js.UndefOr[js.ThisFunction0[/* this */ Suite, Unit]] = js.native
+    var fn: js.UndefOr[js.ThisFunction0[/* this */ Suite, Unit]] = js.undefined
     
     /** Is suite exclusive? */
-    var isOnly: js.UndefOr[Boolean] = js.native
+    var isOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Is suite pending? */
-    var pending: js.UndefOr[Boolean] = js.native
+    var pending: js.UndefOr[Boolean] = js.undefined
     
     /** Title of suite */
-    var title: String = js.native
+    var title: String
   }
   object CreateOptions {
     
@@ -140,23 +141,22 @@ object commonMod {
     }
   }
   
-  @js.native
   trait SuiteFunctions extends StObject {
     
     /**
       * Creates a suite.
       */
-    def create(opts: CreateOptions): Suite = js.native
+    def create(opts: CreateOptions): Suite
     
     /**
       * Create an exclusive Suite; convenience function
       */
-    def only(opts: CreateOptions): Suite = js.native
+    def only(opts: CreateOptions): Suite
     
     /**
       * Create a Suite, but skip it; convenience function
       */
-    def skip(opts: CreateOptions): Suite = js.native
+    def skip(opts: CreateOptions): Suite
   }
   object SuiteFunctions {
     
@@ -180,23 +180,22 @@ object commonMod {
     }
   }
   
-  @js.native
   trait TestFunctions extends StObject {
     
     /**
       * Exclusive test-case.
       */
-    def only(mocha: Mocha, test: Test): Test = js.native
+    def only(mocha: Mocha, test: Test): Test
     
     /**
       * Number of retry attempts
       */
-    def retries(n: Double): Unit = js.native
+    def retries(n: Double): Unit
     
     /**
       * Pending test case.
       */
-    def skip(title: String): Unit = js.native
+    def skip(title: String): Unit
   }
   object TestFunctions {
     

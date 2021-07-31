@@ -7,7 +7,6 @@ import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
 import typings.postmark.supportingTypesMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
@@ -63,18 +62,19 @@ object messageMod {
     var TrackOpens: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
-  trait MessageSendingResponse extends DefaultResponse {
+  trait MessageSendingResponse
+    extends StObject
+       with DefaultResponse {
     
-    var Bcc: js.UndefOr[String] = js.native
+    var Bcc: js.UndefOr[String] = js.undefined
     
-    var Cc: js.UndefOr[String] = js.native
+    var Cc: js.UndefOr[String] = js.undefined
     
-    var MessageID: js.UndefOr[String] = js.native
+    var MessageID: js.UndefOr[String] = js.undefined
     
-    var SubmittedAt: String = js.native
+    var SubmittedAt: String
     
-    var To: js.UndefOr[String] = js.native
+    var To: js.UndefOr[String] = js.undefined
   }
   object MessageSendingResponse {
     

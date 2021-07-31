@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a completed package update request for the current app. */
-@js.native
 trait StorePackageUpdateResult extends StObject {
   
   /** Gets the state of the completed package update request. */
-  var overallState: StorePackageUpdateState = js.native
+  var overallState: StorePackageUpdateState
   
   /** Gets info about the status of each of the package updates that are associated with the completed request. */
-  var storePackageUpdateStatuses: IVectorView[StorePackageUpdateStatus] = js.native
+  var storePackageUpdateStatuses: IVectorView[StorePackageUpdateStatus]
 }
 object StorePackageUpdateResult {
   

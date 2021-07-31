@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.ICompareFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bstreekvMod {
@@ -46,25 +45,26 @@ object bstreekvMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[K, V /* <: K */] () extends BSTreeKV[K, V] {
+  class default[K, V /* <: K */] ()
+    extends StObject
+       with BSTreeKV[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
-  }
-  
-  @js.native
-  trait BSTreeKV[K, V /* <: K */] extends StObject {
     
     /**
       * Adds the specified element to this tree if it is not already present.
       * @param {Object} element the element to insert.
       * @return {boolean} true if this tree did not already contain the specified element.
       */
-    def add(element: V): Boolean = js.native
+    /* CompleteClass */
+    override def add(element: V): Boolean = js.native
     
     /**
       * Removes all of the elements from this tree.
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
+    /* CompleteClass */
     var compare: js.Any = js.native
     
     /**
@@ -73,12 +73,14 @@ object bstreekvMod {
       * @return {boolean} true if this tree contains the specified element,
       * false otherwise.
       */
-    def contains(element: K): Boolean = js.native
+    /* CompleteClass */
+    override def contains(element: K): Boolean = js.native
     
     /**
       * @private
       */
-    /* private */ def createNode(element: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def createNode(element: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in inorder.
@@ -87,18 +89,21 @@ object bstreekvMod {
       * invoked with one argument: the element value, to break the iteration you can
       * optionally return false.
       */
-    def forEach(callback: ILoopFunction[V]): Unit = js.native
+    /* CompleteClass */
+    override def forEach(callback: ILoopFunction[V]): Unit = js.native
     
     /**
       * Returns the height of this tree.
       * @return {number} the height of this tree or -1 if is empty.
       */
-    def height(): Double = js.native
+    /* CompleteClass */
+    override def height(): Double = js.native
     
     /**
       * @private
       */
-    /* private */ def heightAux(node: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def heightAux(node: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in
@@ -106,20 +111,24 @@ object bstreekvMod {
       * @param {function(Object):*} callback function to execute, it is invoked with one
       * argument: the element value, to break the iteration you can optionally return false.
       */
-    def inorderTraversal(callback: ILoopFunction[V]): Unit = js.native
+    /* CompleteClass */
+    override def inorderTraversal(callback: ILoopFunction[V]): Unit = js.native
     
     /**
       * @private
       */
-    /* private */ def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
-    /* private */ def insertNode(node: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def insertNode(node: js.Any): js.Any = js.native
     
     /**
       * Returns true if this tree contains no elements.
       * @return {boolean} true if this tree contains no elements.
       */
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in
@@ -127,37 +136,44 @@ object bstreekvMod {
       * @param {function(Object):*} callback function to execute, it is invoked with one
       * argument: the element value, to break the iteration you can optionally return false.
       */
-    def levelTraversal(callback: ILoopFunction[V]): Unit = js.native
+    /* CompleteClass */
+    override def levelTraversal(callback: ILoopFunction[V]): Unit = js.native
     
     /**
       * @private
       */
-    /* private */ def levelTraversalAux(node: js.Any, callback: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def levelTraversalAux(node: js.Any, callback: js.Any): js.Any = js.native
     
     /**
       * Returns the maximum element of this tree.
       * @return {*} the maximum element of this tree or undefined if this tree is
       * is empty.
       */
-    def maximum(): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def maximum(): js.UndefOr[V] = js.native
     
     /**
       * @private
       */
-    /* private */ def maximumAux(node: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def maximumAux(node: js.Any): js.Any = js.native
     
     /**
       * Returns the minimum element of this tree.
       * @return {*} the minimum element of this tree or undefined if this tree is
       * is empty.
       */
-    def minimum(): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def minimum(): js.UndefOr[V] = js.native
     
     /**
       * @private
       */
-    /* private */ def minimumAux(node: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def minimumAux(node: js.Any): js.Any = js.native
     
+    /* CompleteClass */
     var nElements: js.Any = js.native
     
     /**
@@ -165,36 +181,43 @@ object bstreekvMod {
       * @param {function(Object):*} callback function to execute, it is invoked with one
       * argument: the element value, to break the iteration you can optionally return false.
       */
-    def postorderTraversal(callback: ILoopFunction[V]): Unit = js.native
+    /* CompleteClass */
+    override def postorderTraversal(callback: ILoopFunction[V]): Unit = js.native
     
     /**
       * @private
       */
-    /* private */ def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in pre-order.
       * @param {function(Object):*} callback function to execute, it is invoked with one
       * argument: the element value, to break the iteration you can optionally return false.
       */
-    def preorderTraversal(callback: ILoopFunction[V]): Unit = js.native
+    /* CompleteClass */
+    override def preorderTraversal(callback: ILoopFunction[V]): Unit = js.native
     
     /**
       * @private
       */
-    /* private */ def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
     /**
       * Removes the specified element from this tree if it is present.
       * @return {boolean} true if this tree contained the specified element.
       */
-    def remove(element: K): Boolean = js.native
+    /* CompleteClass */
+    override def remove(element: K): Boolean = js.native
     
     /**
       * @private
       */
-    /* private */ def removeNode(node: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def removeNode(node: js.Any): js.Any = js.native
     
+    /* CompleteClass */
     var root: js.Any = js.native
     
     /**
@@ -202,29 +225,210 @@ object bstreekvMod {
       * @param {Object} element The key to look for
       * @return {Object} The value found or undefined if it was not found.
       */
-    def search(element: K): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def search(element: K): js.UndefOr[V] = js.native
     
     /**
       * @private
       */
-    /* private */ def searchNode(node: js.Any, element: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def searchNode(node: js.Any, element: js.Any): js.Any = js.native
     
     /**
       * Returns the number of elements in this tree.
       * @return {number} the number of elements in this tree.
       */
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
     
     /**
       * Returns an array containing all of the elements in this tree in in-order.
       * @return {Array} an array containing all of the elements in this tree in in-order.
       */
-    def toArray(): js.Array[V] = js.native
+    /* CompleteClass */
+    override def toArray(): js.Array[V] = js.native
     
     /**
       * @private
       */
-    /* private */ def transplant(n1: js.Any, n2: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def transplant(n1: js.Any, n2: js.Any): js.Any = js.native
+  }
+  
+  trait BSTreeKV[K, V /* <: K */] extends StObject {
+    
+    /**
+      * Adds the specified element to this tree if it is not already present.
+      * @param {Object} element the element to insert.
+      * @return {boolean} true if this tree did not already contain the specified element.
+      */
+    def add(element: V): Boolean
+    
+    /**
+      * Removes all of the elements from this tree.
+      */
+    def clear(): Unit
+    
+    var compare: js.Any
+    
+    /**
+      * Returns true if this tree contains the specified element.
+      * @param {Object} element element to search for.
+      * @return {boolean} true if this tree contains the specified element,
+      * false otherwise.
+      */
+    def contains(element: K): Boolean
+    
+    /**
+      * @private
+      */
+    /* private */ def createNode(element: js.Any): js.Any
+    
+    /**
+      * Executes the provided function once for each element present in this tree in inorder.
+      * Equivalent to inorderTraversal.
+      * @param {function(Object):*} callback function to execute, it is
+      * invoked with one argument: the element value, to break the iteration you can
+      * optionally return false.
+      */
+    def forEach(callback: ILoopFunction[V]): Unit
+    
+    /**
+      * Returns the height of this tree.
+      * @return {number} the height of this tree or -1 if is empty.
+      */
+    def height(): Double
+    
+    /**
+      * @private
+      */
+    /* private */ def heightAux(node: js.Any): js.Any
+    
+    /**
+      * Executes the provided function once for each element present in this tree in
+      * in-order.
+      * @param {function(Object):*} callback function to execute, it is invoked with one
+      * argument: the element value, to break the iteration you can optionally return false.
+      */
+    def inorderTraversal(callback: ILoopFunction[V]): Unit
+    
+    /**
+      * @private
+      */
+    /* private */ def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    
+    /* private */ def insertNode(node: js.Any): js.Any
+    
+    /**
+      * Returns true if this tree contains no elements.
+      * @return {boolean} true if this tree contains no elements.
+      */
+    def isEmpty(): Boolean
+    
+    /**
+      * Executes the provided function once for each element present in this tree in
+      * level-order.
+      * @param {function(Object):*} callback function to execute, it is invoked with one
+      * argument: the element value, to break the iteration you can optionally return false.
+      */
+    def levelTraversal(callback: ILoopFunction[V]): Unit
+    
+    /**
+      * @private
+      */
+    /* private */ def levelTraversalAux(node: js.Any, callback: js.Any): js.Any
+    
+    /**
+      * Returns the maximum element of this tree.
+      * @return {*} the maximum element of this tree or undefined if this tree is
+      * is empty.
+      */
+    def maximum(): js.UndefOr[V]
+    
+    /**
+      * @private
+      */
+    /* private */ def maximumAux(node: js.Any): js.Any
+    
+    /**
+      * Returns the minimum element of this tree.
+      * @return {*} the minimum element of this tree or undefined if this tree is
+      * is empty.
+      */
+    def minimum(): js.UndefOr[V]
+    
+    /**
+      * @private
+      */
+    /* private */ def minimumAux(node: js.Any): js.Any
+    
+    var nElements: js.Any
+    
+    /**
+      * Executes the provided function once for each element present in this tree in post-order.
+      * @param {function(Object):*} callback function to execute, it is invoked with one
+      * argument: the element value, to break the iteration you can optionally return false.
+      */
+    def postorderTraversal(callback: ILoopFunction[V]): Unit
+    
+    /**
+      * @private
+      */
+    /* private */ def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    
+    /**
+      * Executes the provided function once for each element present in this tree in pre-order.
+      * @param {function(Object):*} callback function to execute, it is invoked with one
+      * argument: the element value, to break the iteration you can optionally return false.
+      */
+    def preorderTraversal(callback: ILoopFunction[V]): Unit
+    
+    /**
+      * @private
+      */
+    /* private */ def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    
+    /**
+      * Removes the specified element from this tree if it is present.
+      * @return {boolean} true if this tree contained the specified element.
+      */
+    def remove(element: K): Boolean
+    
+    /**
+      * @private
+      */
+    /* private */ def removeNode(node: js.Any): js.Any
+    
+    var root: js.Any
+    
+    /**
+      * Looks for the value with the provided search key.
+      * @param {Object} element The key to look for
+      * @return {Object} The value found or undefined if it was not found.
+      */
+    def search(element: K): js.UndefOr[V]
+    
+    /**
+      * @private
+      */
+    /* private */ def searchNode(node: js.Any, element: js.Any): js.Any
+    
+    /**
+      * Returns the number of elements in this tree.
+      * @return {number} the number of elements in this tree.
+      */
+    def size(): Double
+    
+    /**
+      * Returns an array containing all of the elements in this tree in in-order.
+      * @return {Array} an array containing all of the elements in this tree in in-order.
+      */
+    def toArray(): js.Array[V]
+    
+    /**
+      * @private
+      */
+    /* private */ def transplant(n1: js.Any, n2: js.Any): js.Any
   }
   object BSTreeKV {
     
@@ -267,7 +471,7 @@ object bstreekvMod {
     }
     
     @scala.inline
-    implicit class BSTreeKVMutableBuilder[Self <: BSTreeKV[_, _], K, V /* <: K */] (val x: Self with (BSTreeKV[K, V])) extends AnyVal {
+    implicit class BSTreeKVMutableBuilder[Self <: BSTreeKV[?, ?], K, V /* <: K */] (val x: Self & (BSTreeKV[K, V])) extends AnyVal {
       
       @scala.inline
       def setAdd(value: V => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

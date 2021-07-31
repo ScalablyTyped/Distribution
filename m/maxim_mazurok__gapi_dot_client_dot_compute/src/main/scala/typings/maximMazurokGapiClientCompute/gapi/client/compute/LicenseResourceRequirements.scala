@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseResourceRequirements extends StObject {
   
   /** Minimum number of guest cpus required to use the Instance. Enforced at Instance creation and Instance start. */
-  var minGuestCpuCount: js.UndefOr[Double] = js.native
+  var minGuestCpuCount: js.UndefOr[Double] = js.undefined
   
   /** Minimum memory required to use the Instance. Enforced at Instance creation and Instance start. */
-  var minMemoryMb: js.UndefOr[Double] = js.native
+  var minMemoryMb: js.UndefOr[Double] = js.undefined
 }
 object LicenseResourceRequirements {
   

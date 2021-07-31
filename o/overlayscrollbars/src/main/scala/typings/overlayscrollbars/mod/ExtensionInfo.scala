@@ -2,17 +2,15 @@ package typings.overlayscrollbars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionInfo extends StObject {
   
-  var defaultOptions: js.UndefOr[js.Object] = js.native
+  var defaultOptions: js.UndefOr[js.Object] = js.undefined
   
-  def extensionFactory(defaultOptions: js.Object, compatibility: Compatibility, framework: js.Any): Extension = js.native
+  def extensionFactory(defaultOptions: js.Object, compatibility: Compatibility, framework: js.Any): Extension
   
-  var name: String = js.native
+  var name: String
 }
 object ExtensionInfo {
   

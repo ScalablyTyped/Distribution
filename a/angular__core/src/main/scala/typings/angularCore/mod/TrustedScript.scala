@@ -2,19 +2,17 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedScript extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TrustedScript = js.native
+  var __brand__ : typings.angularCore.angularCoreStrings.TrustedScript
 }
 object TrustedScript {
   
   @scala.inline
-  def apply(__brand__ : typings.angularCore.angularCoreStrings.TrustedScript): TrustedScript = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
+  def apply(): TrustedScript = {
+    val __obj = js.Dynamic.literal(__brand__ = "TrustedScript")
     __obj.asInstanceOf[TrustedScript]
   }
   

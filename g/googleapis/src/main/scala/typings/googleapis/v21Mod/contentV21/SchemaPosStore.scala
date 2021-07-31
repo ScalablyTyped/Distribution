@@ -2,30 +2,28 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Store resource.
   */
-@js.native
 trait SchemaPosStore extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#posStore&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The street address of the store.
     */
-  var storeAddress: js.UndefOr[String] = js.native
+  var storeAddress: js.UndefOr[String] = js.undefined
   
   /**
     * A store identifier that is unique for the given merchant.
     */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
 }
 object SchemaPosStore {
   

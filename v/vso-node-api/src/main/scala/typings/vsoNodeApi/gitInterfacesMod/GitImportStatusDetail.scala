@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportStatusDetail extends StObject {
   
   /**
     * All valid steps for the import process
     */
-  var allSteps: js.Array[String] = js.native
+  var allSteps: js.Array[String]
   
   /**
     * Index into AllSteps for the current step
     */
-  var currentStep: Double = js.native
+  var currentStep: Double
   
   /**
     * Error message if the operation failed.
     */
-  var errorMessage: String = js.native
+  var errorMessage: String
 }
 object GitImportStatusDetail {
   

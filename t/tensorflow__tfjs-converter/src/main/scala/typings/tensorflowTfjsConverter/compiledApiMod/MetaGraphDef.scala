@@ -2,32 +2,30 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MetaGraphDef {
   
   /** Properties of a MetaInfoDef. */
-  @js.native
   trait IMetaInfoDef extends StObject {
     
     /** MetaInfoDef anyInfo */
-    var anyInfo: js.UndefOr[IAny | Null] = js.native
+    var anyInfo: js.UndefOr[IAny | Null] = js.undefined
     
     /** MetaInfoDef metaGraphVersion */
-    var metaGraphVersion: js.UndefOr[String | Null] = js.native
+    var metaGraphVersion: js.UndefOr[String | Null] = js.undefined
     
     /** MetaInfoDef strippedOpList */
-    var strippedOpList: js.UndefOr[IOpList | Null] = js.native
+    var strippedOpList: js.UndefOr[IOpList | Null] = js.undefined
     
     /** MetaInfoDef tags */
-    var tags: js.UndefOr[js.Array[String] | Null] = js.native
+    var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** MetaInfoDef tensorflowGitVersion */
-    var tensorflowGitVersion: js.UndefOr[String | Null] = js.native
+    var tensorflowGitVersion: js.UndefOr[String | Null] = js.undefined
     
     /** MetaInfoDef tensorflowVersion */
-    var tensorflowVersion: js.UndefOr[String | Null] = js.native
+    var tensorflowVersion: js.UndefOr[String | Null] = js.undefined
   }
   object IMetaInfoDef {
     

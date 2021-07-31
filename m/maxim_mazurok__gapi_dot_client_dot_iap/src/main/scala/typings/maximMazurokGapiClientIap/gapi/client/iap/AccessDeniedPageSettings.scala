@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessDeniedPageSettings extends StObject {
   
   /** The URI to be redirected to when access is denied. */
-  var accessDeniedPageUri: js.UndefOr[String] = js.native
+  var accessDeniedPageUri: js.UndefOr[String] = js.undefined
 }
 object AccessDeniedPageSettings {
   

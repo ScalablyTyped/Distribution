@@ -5,7 +5,6 @@ import typings.firefoxWebextBrowser.browser.alarms.Alarm
 import typings.firefoxWebextBrowser.browser.alarms.CreateAlarmInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,54 +14,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object alarms {
   
+  @JSGlobal("browser.alarms")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Clears the alarm with the given name.
     * @param [name] The name of the alarm to clear. Defaults to the empty string.
     */
-  @JSGlobal("browser.alarms.clear")
-  @js.native
-  def clear(): js.Promise[Boolean] = js.native
-  @JSGlobal("browser.alarms.clear")
-  @js.native
-  def clear(name: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def clear(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def clear(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /** Clears all alarms. */
-  @JSGlobal("browser.alarms.clearAll")
-  @js.native
-  def clearAll(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def clearAll(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[js.Promise[Boolean]]
   
   /* alarms functions */
   /**
     * Creates an alarm. After the delay is expired, the onAlarm event is fired. If there is another alarm with the same name (or no name if none is specified), it will be cancelled and replaced by this alarm.
     * @param alarmInfo Details about the alarm. The alarm first fires either at 'when' milliseconds past the epoch (if 'when' is provided), after 'delayInMinutes' minutes from the current time (if 'delayInMinutes' is provided instead), or after 'periodInMinutes' minutes from the current time (if only 'periodInMinutes' is provided). Users should never provide both 'when' and 'delayInMinutes'. If 'periodInMinutes' is provided, then the alarm recurs repeatedly after that many minutes.
     */
-  @JSGlobal("browser.alarms.create")
-  @js.native
-  def create(alarmInfo: CreateAlarmInfo): Unit = js.native
+  @scala.inline
+  def create(alarmInfo: CreateAlarmInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(alarmInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Creates an alarm. After the delay is expired, the onAlarm event is fired. If there is another alarm with the same name (or no name if none is specified), it will be cancelled and replaced by this alarm.
     * @param name Optional name to identify this alarm. Defaults to the empty string.
     * @param alarmInfo Details about the alarm. The alarm first fires either at 'when' milliseconds past the epoch (if 'when' is provided), after 'delayInMinutes' minutes from the current time (if 'delayInMinutes' is provided instead), or after 'periodInMinutes' minutes from the current time (if only 'periodInMinutes' is provided). Users should never provide both 'when' and 'delayInMinutes'. If 'periodInMinutes' is provided, then the alarm recurs repeatedly after that many minutes.
     */
-  @JSGlobal("browser.alarms.create")
-  @js.native
-  def create(name: String, alarmInfo: CreateAlarmInfo): Unit = js.native
+  @scala.inline
+  def create(name: String, alarmInfo: CreateAlarmInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], alarmInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves details about the specified alarm.
     * @param [name] The name of the alarm to get. Defaults to the empty string.
     */
-  @JSGlobal("browser.alarms.get")
-  @js.native
-  def get(): js.Promise[js.UndefOr[Alarm]] = js.native
-  @JSGlobal("browser.alarms.get")
-  @js.native
-  def get(name: String): js.Promise[js.UndefOr[Alarm]] = js.native
+  @scala.inline
+  def get(): js.Promise[js.UndefOr[Alarm]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.UndefOr[Alarm]]]
+  @scala.inline
+  def get(name: String): js.Promise[js.UndefOr[Alarm]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Alarm]]]
   
   /** Gets an array of all the alarms. */
-  @JSGlobal("browser.alarms.getAll")
-  @js.native
-  def getAll(): js.Promise[js.Array[Alarm]] = js.native
+  @scala.inline
+  def getAll(): js.Promise[js.Array[Alarm]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[js.Array[Alarm]]]
   
   /* alarms events */
   /**

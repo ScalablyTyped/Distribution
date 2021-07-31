@@ -2,13 +2,11 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the configuration for a replica in a cluster.
   */
-@js.native
 trait SchemaGoogleCloudMlV1ReplicaConfig extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaGoogleCloudMlV1ReplicaConfig extends StObject {
     * [Learn about restrictions on accelerator configurations for
     * training.](/ml-engine/docs/tensorflow/using-gpus#compute-engine-machine-types-with-gpu)
     */
-  var acceleratorConfig: js.UndefOr[SchemaGoogleCloudMlV1AcceleratorConfig] = js.native
+  var acceleratorConfig: js.UndefOr[SchemaGoogleCloudMlV1AcceleratorConfig] = js.undefined
   
   /**
     * The Docker image to run on the replica. This image must be in Container
     * Registry. Learn more about [configuring custom
     * containers](/ml-engine/docs/distributed-training-containers).
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1ReplicaConfig {
   

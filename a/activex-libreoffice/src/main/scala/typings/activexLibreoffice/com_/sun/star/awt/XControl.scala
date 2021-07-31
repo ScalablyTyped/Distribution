@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,58 +17,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the implementation of the control does not distinguish between model, view and controller, it must allow to set a new {@link XGraphics} in the
   * view, so that the control can be printed.
   */
-@js.native
-trait XControl extends XComponent {
+trait XControl
+  extends StObject
+     with XComponent {
   
   /** gets the context of the control. */
-  var Context: XInterface = js.native
+  var Context: XInterface
   
   /** returns the model for this control. */
-  var Model: XControlModel = js.native
+  var Model: XControlModel
   
   /** returns the peer which was previously created or set. */
-  val Peer: XWindowPeer = js.native
+  val Peer: XWindowPeer
   
   /** returns the view of this control. */
-  val View: XView = js.native
+  val View: XView
   
   /**
     * creates a "child" window on the screen.
     *
     * If the parent is NULL, then the desktop window of the toolkit is the parent.
     */
-  def createPeer(Toolkit: XToolkit, Parent: XWindowPeer): Unit = js.native
+  def createPeer(Toolkit: XToolkit, Parent: XWindowPeer): Unit
   
   /** gets the context of the control. */
-  def getContext(): XInterface = js.native
+  def getContext(): XInterface
   
   /** returns the model for this control. */
-  def getModel(): XControlModel = js.native
+  def getModel(): XControlModel
   
   /** returns the peer which was previously created or set. */
-  def getPeer(): XWindowPeer = js.native
+  def getPeer(): XWindowPeer
   
   /** returns the view of this control. */
-  def getView(): XView = js.native
+  def getView(): XView
   
   /** returns `TRUE` if the control is in design mode, `FALSE` otherwise. */
-  def isDesignMode(): Boolean = js.native
+  def isDesignMode(): Boolean
   
   /** returns `TRUE` if the control is transparent, `FALSE` otherwise. */
-  def isTransparent(): Boolean = js.native
+  def isTransparent(): Boolean
   
   /** sets the context of the control. */
-  def setContext(Context: XInterface): Unit = js.native
+  def setContext(Context: XInterface): Unit
   
   /**
     * sets the design mode for use in a design editor.
     *
     * Normally the control will be painted directly without a peer.
     */
-  def setDesignMode(bOn: Boolean): Unit = js.native
+  def setDesignMode(bOn: Boolean): Unit
   
   /** sets a model for the control. */
-  def setModel(Model: XControlModel): Boolean = js.native
+  def setModel(Model: XControlModel): Boolean
 }
 object XControl {
   

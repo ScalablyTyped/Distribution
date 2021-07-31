@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericFilter extends StObject {
   
   /** The operation type for this filter. */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /** A numeric value or a date value. */
-  var value: js.UndefOr[NumericValue] = js.native
+  var value: js.UndefOr[NumericValue] = js.undefined
 }
 object NumericFilter {
   

@@ -3,12 +3,12 @@ package typings.kendoUi.kendo.dataviz.drawing
 import typings.kendoUi.kendo.geometry.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LinearGradient
-  extends typings.kendoUi.kendo.drawing.Gradient {
+  extends StObject
+     with typings.kendoUi.kendo.drawing.Gradient {
   
   def end(): Point = js.native
   def end(end: js.Any): Unit = js.native

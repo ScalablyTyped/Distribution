@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `PrimitiveTransformation`s to each finding, where the transformation is
   * applied to only values that were identified as a specific info_type.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InfoTypeTransformations extends StObject {
   
   /**
     * Transformation for each infoType. Cannot specify more than one for a
     * given infoType. [required]
     */
-  var transformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoTypeTransformation]] = js.native
+  var transformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoTypeTransformation]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InfoTypeTransformations {
   

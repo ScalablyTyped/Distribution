@@ -2,27 +2,25 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This message wraps a location affected by a vulnerability and its
   * associated fix (if one is available).
   */
-@js.native
 trait SchemaPackageIssue extends StObject {
   
   /**
     * The location of the vulnerability.
     */
-  var affectedLocation: js.UndefOr[SchemaVulnerabilityLocation] = js.native
+  var affectedLocation: js.UndefOr[SchemaVulnerabilityLocation] = js.undefined
   
   /**
     * The location of the available fix for vulnerability.
     */
-  var fixedLocation: js.UndefOr[SchemaVulnerabilityLocation] = js.native
+  var fixedLocation: js.UndefOr[SchemaVulnerabilityLocation] = js.undefined
   
-  var severityName: js.UndefOr[String] = js.native
+  var severityName: js.UndefOr[String] = js.undefined
 }
 object SchemaPackageIssue {
   

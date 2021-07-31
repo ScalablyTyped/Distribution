@@ -2,61 +2,59 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activity extends StObject {
   
   /**
     * The settings for a custom message activity. This type of activity calls an AWS Lambda function or web hook that sends messages to participants.
     */
-  var CUSTOM: js.UndefOr[CustomMessageActivity] = js.native
+  var CUSTOM: js.UndefOr[CustomMessageActivity] = js.undefined
   
   /**
     * The settings for a yes/no split activity. This type of activity sends participants down one of two paths in a journey, based on conditions that you specify.
     */
-  var ConditionalSplit: js.UndefOr[ConditionalSplitActivity] = js.native
+  var ConditionalSplit: js.UndefOr[ConditionalSplitActivity] = js.undefined
   
   /**
     * The custom description of the activity.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The settings for an email activity. This type of activity sends an email message to participants.
     */
-  var EMAIL: js.UndefOr[EmailMessageActivity] = js.native
+  var EMAIL: js.UndefOr[EmailMessageActivity] = js.undefined
   
   /**
     * The settings for a holdout activity. This type of activity stops a journey for a specified percentage of participants.
     */
-  var Holdout: js.UndefOr[HoldoutActivity] = js.native
+  var Holdout: js.UndefOr[HoldoutActivity] = js.undefined
   
   /**
     * The settings for a multivariate split activity. This type of activity sends participants down one of as many as five paths (including a default Else path) in a journey, based on conditions that you specify.
     */
-  var MultiCondition: js.UndefOr[MultiConditionalSplitActivity] = js.native
+  var MultiCondition: js.UndefOr[MultiConditionalSplitActivity] = js.undefined
   
   /**
     * The settings for a push notification activity. This type of activity sends a push notification to participants.
     */
-  var PUSH: js.UndefOr[PushMessageActivity] = js.native
+  var PUSH: js.UndefOr[PushMessageActivity] = js.undefined
   
   /**
     * The settings for a random split activity. This type of activity randomly sends specified percentages of participants down one of as many as five paths in a journey, based on conditions that you specify.
     */
-  var RandomSplit: js.UndefOr[RandomSplitActivity] = js.native
+  var RandomSplit: js.UndefOr[RandomSplitActivity] = js.undefined
   
   /**
     * The settings for an SMS activity. This type of activity sends a text message to participants.
     */
-  var SMS: js.UndefOr[SMSMessageActivity] = js.native
+  var SMS: js.UndefOr[SMSMessageActivity] = js.undefined
   
   /**
     * The settings for a wait activity. This type of activity waits for a certain amount of time or until a specific date and time before moving participants to the next activity in a journey.
     */
-  var Wait: js.UndefOr[WaitActivity] = js.native
+  var Wait: js.UndefOr[WaitActivity] = js.undefined
 }
 object Activity {
   

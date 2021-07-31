@@ -12,7 +12,7 @@ Koa(v2)/Express middleware for handle multipart form
 | Keywords           | express, koa, multipart, form, parse, busboy |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1509 |
+| # downloads        | 1117 |
 | # stars            | 0 |
 
 ## Links

@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IGenericMeasureListProperties
   */
-@js.native
-trait IGenericMeasureListProperties extends IGenericProperties {
+trait IGenericMeasureListProperties
+  extends StObject
+     with IGenericProperties {
   
   @JSName("qInfo")
-  var qInfo_IGenericMeasureListProperties: IGenericMeassureListNxInfo = js.native
+  var qInfo_IGenericMeasureListProperties: IGenericMeassureListNxInfo
   
-  var qMeasureListDef: IMeasureListDef = js.native
+  var qMeasureListDef: IMeasureListDef
 }
 object IGenericMeasureListProperties {
   

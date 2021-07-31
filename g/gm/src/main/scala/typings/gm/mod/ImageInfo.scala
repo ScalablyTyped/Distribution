@@ -3,81 +3,79 @@ package typings.gm.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInfo extends StObject {
   
-  var `Background Color`: String = js.native
+  var `Background Color`: String
   
-  var `Border Color`: String = js.native
+  var `Border Color`: String
   
-  var `Channel Depths`: ChannelInfo[String] = js.native
+  var `Channel Depths`: ChannelInfo[String]
   
-  var `Channel Statistics`: ChannelInfo[ColorStatistics] = js.native
+  var `Channel Statistics`: ChannelInfo[ColorStatistics]
   
-  var Class: String = js.native
+  var Class: String
   
-  var Compose: String = js.native
+  var Compose: String
   
-  var Compression: String = js.native
+  var Compression: String
   
-  var Depth: String = js.native
+  var Depth: String
   
-  var Dispose: String = js.native
+  var Dispose: String
   
-  var Filesize: String = js.native
+  var Filesize: String
   
-  var Format: String = js.native
+  var Format: String
   
-  var Geometry: String = js.native
+  var Geometry: String
   
-  var Interlace: String = js.native
+  var Interlace: String
   
-  var Iterations: String = js.native
+  var Iterations: String
   
-  var `JPEG-Colorspace`: js.UndefOr[String] = js.native
+  var `JPEG-Colorspace`: js.UndefOr[String] = js.undefined
   
-  var `JPEG-Colorspace-Name`: js.UndefOr[String] = js.native
+  var `JPEG-Colorspace-Name`: js.UndefOr[String] = js.undefined
   
-  var `JPEG-Quality`: js.UndefOr[String] = js.native
+  var `JPEG-Quality`: js.UndefOr[String] = js.undefined
   
-  var `JPEG-Sampling-factors`: js.UndefOr[String] = js.native
+  var `JPEG-Sampling-factors`: js.UndefOr[String] = js.undefined
   
-  var `Matte Color`: String = js.native
+  var `Matte Color`: String
   
-  var Orientation: String = js.native
+  var Orientation: String
   
-  var `Page geometry`: String = js.native
+  var `Page geometry`: String
   
-  var `Profile-EXIF`: js.UndefOr[StringDictionary[String]] = js.native
+  var `Profile-EXIF`: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var `Profile-XMP`: js.UndefOr[String] = js.native
+  var `Profile-XMP`: js.UndefOr[String] = js.undefined
   
-  var `Profile-color`: js.UndefOr[String] = js.native
+  var `Profile-color`: js.UndefOr[String] = js.undefined
   
-  var `Profile-iptc`: js.UndefOr[StringDictionary[String]] = js.native
+  var `Profile-iptc`: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Resolution: js.UndefOr[String] = js.native
+  var Resolution: js.UndefOr[String] = js.undefined
   
-  var Signature: String = js.native
+  var Signature: String
   
-  var Software: String = js.native
+  var Software: String
   
-  var Tainted: String = js.native
+  var Tainted: String
   
-  var Type: String = js.native
+  var Type: String
   
-  var color: Double = js.native
+  var color: Double
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var format: String = js.native
+  var format: String
   
-  var path: String = js.native
+  var path: String
   
-  var size: Dimensions = js.native
+  var size: Dimensions
 }
 object ImageInfo {
   

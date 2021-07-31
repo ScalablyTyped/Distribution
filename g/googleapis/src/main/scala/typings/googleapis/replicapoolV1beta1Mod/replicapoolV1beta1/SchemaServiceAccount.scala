@@ -2,26 +2,24 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Compute Engine service account, identical to the Compute Engine resource.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * The service account email address, for example:
     * 123845678986@project.gserviceaccount.com
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The list of OAuth2 scopes to obtain for the service account, for example:
     * https://www.googleapis.com/auth/devstorage.full_control
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServiceAccount {
   

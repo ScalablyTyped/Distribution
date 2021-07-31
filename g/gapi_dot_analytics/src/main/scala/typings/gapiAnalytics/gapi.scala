@@ -2,7 +2,6 @@ package typings.gapiAnalytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,20 +14,19 @@ object gapi {
         
         object parameters {
           
-          @js.native
           trait AnalyticsParameter extends StObject {
             
-            var default: js.UndefOr[String] = js.native
+            var default: js.UndefOr[String] = js.undefined
             
-            var description: js.UndefOr[String] = js.native
+            var description: js.UndefOr[String] = js.undefined
             
-            var enum: js.UndefOr[js.Array[String]] = js.native
+            var `enum`: js.UndefOr[js.Array[String]] = js.undefined
             
-            var enumDescriptions: js.UndefOr[js.Array[String]] = js.native
+            var enumDescriptions: js.UndefOr[js.Array[String]] = js.undefined
             
-            var location: js.UndefOr[String] = js.native
+            var location: js.UndefOr[String] = js.undefined
             
-            var `type`: js.UndefOr[String] = js.native
+            var `type`: js.UndefOr[String] = js.undefined
           }
           object AnalyticsParameter {
             

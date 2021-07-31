@@ -3,15 +3,13 @@ package typings.vscodeLanguageclient.mod
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildProcessInfo extends StObject {
   
-  var detached: Boolean = js.native
+  var detached: Boolean
   
-  var process: ChildProcess = js.native
+  var process: ChildProcess
 }
 object ChildProcessInfo {
   

@@ -6,14 +6,15 @@ import typings.heremaps.H.util.ICapturable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class encapsulates map UI functionality.
   */
 @js.native
-trait UI extends ICapturable {
+trait UI
+  extends StObject
+     with ICapturable {
   
   /**
     * This method adds an info bubble to the UI.
@@ -98,24 +99,23 @@ object UI {
     * or a string one of following 'en-US', 'de-DE', 'es-ES', 'fi-FI', 'fr-FR', 'it-IT', 'nl-NL', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'tr-TR', 'zh-CN'. If not defined ui will use 'en-US'
     * by default
     */
-  @js.native
   trait Options extends StObject {
     
-    var distancemeasurement: js.UndefOr[typings.heremaps.H.ui.DistanceMeasurement.Options | Boolean] = js.native
+    var distancemeasurement: js.UndefOr[typings.heremaps.H.ui.DistanceMeasurement.Options | Boolean] = js.undefined
     
-    var locale: js.UndefOr[Localization | String] = js.native
+    var locale: js.UndefOr[Localization | String] = js.undefined
     
-    var mapsettings: js.UndefOr[typings.heremaps.H.ui.MapSettingsControl.Options | Boolean] = js.native
+    var mapsettings: js.UndefOr[typings.heremaps.H.ui.MapSettingsControl.Options | Boolean] = js.undefined
     
-    var panorama: js.UndefOr[typings.heremaps.H.ui.Pano.Options | Boolean] = js.native
+    var panorama: js.UndefOr[typings.heremaps.H.ui.Pano.Options | Boolean] = js.undefined
     
-    var scalebar: js.UndefOr[typings.heremaps.H.ui.ScaleBar.Options | Boolean] = js.native
+    var scalebar: js.UndefOr[typings.heremaps.H.ui.ScaleBar.Options | Boolean] = js.undefined
     
-    var unitSystem: js.UndefOr[UnitSystem] = js.native
+    var unitSystem: js.UndefOr[UnitSystem] = js.undefined
     
-    var zoom: js.UndefOr[typings.heremaps.H.ui.ZoomControl.Options | Boolean] = js.native
+    var zoom: js.UndefOr[typings.heremaps.H.ui.ZoomControl.Options | Boolean] = js.undefined
     
-    var zoomrectangle: js.UndefOr[typings.heremaps.H.ui.ZoomRectangle.Options | Boolean] = js.native
+    var zoomrectangle: js.UndefOr[typings.heremaps.H.ui.ZoomRectangle.Options | Boolean] = js.undefined
   }
   object Options {
     

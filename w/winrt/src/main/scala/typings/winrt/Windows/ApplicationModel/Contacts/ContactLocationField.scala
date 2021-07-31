@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContactLocationField extends IContactLocationField
+trait ContactLocationField
+  extends StObject
+     with IContactLocationField
 object ContactLocationField {
   
   @scala.inline

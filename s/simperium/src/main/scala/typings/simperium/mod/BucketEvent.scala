@@ -3,21 +3,21 @@ package typings.simperium.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BucketEvent[T] extends SimperiumEvent {
+trait BucketEvent[T]
+  extends StObject
+     with SimperiumEvent {
   
-  def error(err: Error, change: Change[T]): Unit = js.native
+  def error(err: Error, change: Change[T]): Unit
   
-  def index(cv: ChangeVersion): Unit = js.native
+  def index(cv: ChangeVersion): Unit
   
-  def indexing(): Unit = js.native
+  def indexing(): Unit
   
-  def remove(entityId: EntityId): Unit = js.native
+  def remove(entityId: EntityId): Unit
   
-  def update(entityId: EntityId, updatedEntity: T, remoteInfo: RemoteInfo[T]): Unit = js.native
+  def update(entityId: EntityId, updatedEntity: T, remoteInfo: RemoteInfo[T]): Unit
 }
 object BucketEvent {
   
@@ -34,7 +34,7 @@ object BucketEvent {
   }
   
   @scala.inline
-  implicit class BucketEventMutableBuilder[Self <: BucketEvent[_], T] (val x: Self with BucketEvent[T]) extends AnyVal {
+  implicit class BucketEventMutableBuilder[Self <: BucketEvent[?], T] (val x: Self & BucketEvent[T]) extends AnyVal {
     
     @scala.inline
     def setError(value: (Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))

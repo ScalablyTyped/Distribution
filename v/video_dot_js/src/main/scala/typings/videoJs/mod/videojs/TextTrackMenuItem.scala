@@ -3,14 +3,15 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The specific menu item type for selecting a language within a text track kind
   */
 @js.native
-trait TextTrackMenuItem extends MenuItem {
+trait TextTrackMenuItem
+  extends StObject
+     with MenuItem {
   
   /**
     * Handle selected language change

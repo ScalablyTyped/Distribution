@@ -3,15 +3,14 @@ package typings.arangodb.ArangoDB
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectWithKey
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[js.Any]
      with DocumentLike {
   
-  var _key: String = js.native
+  var _key: String
 }
 object ObjectWithKey {
   

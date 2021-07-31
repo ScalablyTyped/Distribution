@@ -2,36 +2,34 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFloatOptions extends StObject {
   
   /**
     * greater than
     */
-  var gt: js.UndefOr[Double] = js.native
+  var gt: js.UndefOr[Double] = js.undefined
   
   /**
     * FloatLocale
     */
-  var locale: js.UndefOr[FloatLocale] = js.native
+  var locale: js.UndefOr[FloatLocale] = js.undefined
   
   /**
     * less than
     */
-  var lt: js.UndefOr[Double] = js.native
+  var lt: js.UndefOr[Double] = js.undefined
   
   /**
     * greater or equal
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * less or equal
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
 }
 object IsFloatOptions {
   

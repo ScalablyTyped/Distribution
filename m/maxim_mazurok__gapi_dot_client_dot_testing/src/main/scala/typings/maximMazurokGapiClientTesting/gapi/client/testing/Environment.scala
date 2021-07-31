@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /** An Android device which must be used with an Android test. */
-  var androidDevice: js.UndefOr[AndroidDevice] = js.native
+  var androidDevice: js.UndefOr[AndroidDevice] = js.undefined
   
   /** An iOS device which must be used with an iOS test. */
-  var iosDevice: js.UndefOr[IosDevice] = js.native
+  var iosDevice: js.UndefOr[IosDevice] = js.undefined
 }
 object Environment {
   

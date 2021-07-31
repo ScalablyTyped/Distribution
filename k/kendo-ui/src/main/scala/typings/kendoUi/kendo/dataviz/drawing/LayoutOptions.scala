@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.dataviz.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutOptions extends StObject {
   
-  var alignContent: js.UndefOr[String] = js.native
+  var alignContent: js.UndefOr[String] = js.undefined
   
-  var alignItems: js.UndefOr[String] = js.native
+  var alignItems: js.UndefOr[String] = js.undefined
   
-  var justifyContent: js.UndefOr[String] = js.native
+  var justifyContent: js.UndefOr[String] = js.undefined
   
-  var lineSpacing: js.UndefOr[Double] = js.native
+  var lineSpacing: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object LayoutOptions {
   

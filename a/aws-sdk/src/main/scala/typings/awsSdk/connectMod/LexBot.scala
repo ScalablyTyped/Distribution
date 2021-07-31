@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LexBot extends StObject {
   
   /**
     * The Region the Amazon Lex bot was created in.
     */
-  var LexRegion: js.UndefOr[typings.awsSdk.connectMod.LexRegion] = js.native
+  var LexRegion: js.UndefOr[typings.awsSdk.connectMod.LexRegion] = js.undefined
   
   /**
     * The name of the Amazon Lex bot.
     */
-  var Name: js.UndefOr[BotName] = js.native
+  var Name: js.UndefOr[BotName] = js.undefined
 }
 object LexBot {
   

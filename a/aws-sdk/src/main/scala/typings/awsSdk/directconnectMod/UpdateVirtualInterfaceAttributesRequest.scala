@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVirtualInterfaceAttributesRequest extends StObject {
   
   /**
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
-  var mtu: js.UndefOr[MTU] = js.native
+  var mtu: js.UndefOr[MTU] = js.undefined
   
   /**
     * The ID of the virtual private interface.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object UpdateVirtualInterfaceAttributesRequest {
   

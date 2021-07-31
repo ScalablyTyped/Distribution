@@ -2,29 +2,27 @@ package typings.meteor.meteorMod.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Error **/
 /** Method **/
-@js.native
 trait MethodThisType extends StObject {
   
-  var connection: Connection | Null = js.native
+  var connection: Connection | Null
   
-  var isSimulation: Boolean = js.native
+  var isSimulation: Boolean
   
-  def setUserId(userId: String): Unit = js.native
+  def setUserId(userId: String): Unit
   
-  def unblock(): Unit = js.native
+  def unblock(): Unit
   
-  var userId: String | Null = js.native
+  var userId: String | Null
 }
 object MethodThisType {
   
   @scala.inline
   def apply(isSimulation: Boolean, setUserId: String => Unit, unblock: () => Unit): MethodThisType = {
-    val __obj = js.Dynamic.literal(isSimulation = isSimulation.asInstanceOf[js.Any], setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock))
+    val __obj = js.Dynamic.literal(isSimulation = isSimulation.asInstanceOf[js.Any], setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock), connection = null, userId = null)
     __obj.asInstanceOf[MethodThisType]
   }
   

@@ -2,20 +2,18 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results for a product search request.
   */
-@js.native
 trait SchemaProductSearchResults extends StObject {
   
   /**
     * Timestamp of the index which provided these results. Changes made after
     * this time are not reflected in the current results.
     */
-  var indexTime: js.UndefOr[String] = js.native
+  var indexTime: js.UndefOr[String] = js.undefined
   
   /**
     * List of results grouped by products detected in the query image. Each
@@ -23,12 +21,12 @@ trait SchemaProductSearchResults extends StObject {
     * contains the matching products specific to that region. There may be
     * duplicate product matches in the union of all the per-product results.
     */
-  var productGroupedResults: js.UndefOr[js.Array[SchemaGroupedResult]] = js.native
+  var productGroupedResults: js.UndefOr[js.Array[SchemaGroupedResult]] = js.undefined
   
   /**
     * List of results, one for each product match.
     */
-  var results: js.UndefOr[js.Array[SchemaResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaResult]] = js.undefined
 }
 object SchemaProductSearchResults {
   

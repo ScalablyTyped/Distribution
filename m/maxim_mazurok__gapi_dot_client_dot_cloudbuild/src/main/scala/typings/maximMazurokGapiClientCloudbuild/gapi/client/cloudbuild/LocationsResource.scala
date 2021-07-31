@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationsResource extends StObject {
   
-  var builds: BuildsResource = js.native
+  var builds: BuildsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object LocationsResource {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionDefinitionVersionResponse extends StObject {
   
   /**
     * The ARN of the function definition version.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the function definition version was created.
     */
-  var CreationTimestamp: js.UndefOr[string] = js.native
+  var CreationTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * Information on the definition.
     */
-  var Definition: js.UndefOr[FunctionDefinitionVersion] = js.native
+  var Definition: js.UndefOr[FunctionDefinitionVersion] = js.undefined
   
   /**
     * The ID of the function definition version.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The token for the next set of results, or ''null'' if there are no additional results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The version of the function definition version.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
 }
 object GetFunctionDefinitionVersionResponse {
   

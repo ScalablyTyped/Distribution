@@ -5,17 +5,18 @@ import typings.agentBase.mod.AgentOptions
 import typings.socksProxyAgent.agentMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def apply(opts: SocksProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  
   @JSImport("socks-proxy-agent", JSImport.Namespace)
   @js.native
-  def apply(opts: String): default = js.native
-  @JSImport("socks-proxy-agent", JSImport.Namespace)
-  @js.native
-  def apply(opts: SocksProxyAgentOptions): default = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("socks-proxy-agent", "SocksProxyAgent")
   @js.native
@@ -30,12 +31,11 @@ object mod {
     def this(_opts: SocksProxyAgentOptions) = this()
   }
   
-  @js.native
   trait BaseSocksProxyAgentOptions extends StObject {
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var port: js.UndefOr[String | Double | Null] = js.native
+    var port: js.UndefOr[String | Double | Null] = js.undefined
   }
   object BaseSocksProxyAgentOptions {
     
@@ -69,9 +69,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Omit<node.url.Url & socks.socks/typings/common/constants.SocksProxy, 'host' | 'port'> ]:? std.Omit<node.url.Url & socks.socks/typings/common/constants.SocksProxy, 'host' | 'port'>[P]} */ @js.native
-  trait SocksProxyAgentOptions
-    extends AgentOptions
+  - Dropped {[ P in keyof std.Omit<node.url.Url & socks.socks/typings/common/constants.SocksProxy, 'host' | 'port'> ]:? std.Omit<node.url.Url & socks.socks/typings/common/constants.SocksProxy, 'host' | 'port'>[P]} */ trait SocksProxyAgentOptions
+    extends StObject
+       with AgentOptions
        with BaseSocksProxyAgentOptions
   object SocksProxyAgentOptions {
     

@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxFormLayout object.
   */
-@js.native
-trait ASPxClientFormLayout extends ASPxClientControl {
+trait ASPxClientFormLayout
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Allows you not to render the control to perform required operations on the client side until you call the EndUpdate method.
     */
-  def BeginUpdate(): Unit = js.native
+  def BeginUpdate(): Unit
   
   /**
     * Allows the control to be re-rendered after you call the BeginUpdate method and perform the required operations on the client side. This method also forces an immediate control's re-rendering.
     */
-  def EndUpdate(): Unit = js.native
+  def EndUpdate(): Unit
   
   /**
     * Returns an item specified by its name. An ASPxClientLayoutItem object that represents the item with the specified name.
     * @param name A string value specifying the name of the item.
     */
-  def GetItemByName(name: String): ASPxClientLayoutItem = js.native
+  def GetItemByName(name: String): ASPxClientLayoutItem
 }
 object ASPxClientFormLayout {
   

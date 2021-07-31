@@ -3,13 +3,11 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThetaProperty extends StObject {
   
-  var theta: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var theta: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 object ThetaProperty {
   
@@ -29,6 +27,6 @@ object ThetaProperty {
     def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
     @scala.inline
-    def setThetaVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
+    def setThetaVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
   }
 }

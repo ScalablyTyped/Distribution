@@ -3,21 +3,19 @@ package typings.openpgp.mod
 import typings.openpgp.mod.enums.reasonForRevocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait revokeReasonForRevocation extends StObject {
   
   /**
     * optional, flag indicating the reason for revocation
     */
-  var flag: reasonForRevocation = js.native
+  var flag: reasonForRevocation
   
   /**
     * optional, string explaining the reason for revocation
     */
-  var string: String = js.native
+  var string: String
 }
 object revokeReasonForRevocation {
   

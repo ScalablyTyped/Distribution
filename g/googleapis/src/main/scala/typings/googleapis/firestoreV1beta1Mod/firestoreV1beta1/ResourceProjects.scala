@@ -3,7 +3,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta1", "firestore_v1beta1.Resource$Projects")

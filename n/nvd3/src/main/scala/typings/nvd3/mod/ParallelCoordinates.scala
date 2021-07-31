@@ -2,11 +2,12 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelCoordinates extends Nvd3Element {
+trait ParallelCoordinates
+  extends StObject
+     with Nvd3Element {
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native

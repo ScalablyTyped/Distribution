@@ -5,13 +5,13 @@ import typings.senchaTouch.Ext.data.IModel
 import typings.senchaTouch.Ext.util.IHashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.ModelMgr")
 @js.native
 class ModelMgr ()
-  extends typings.senchaTouch.Ext.ModelMgr
+  extends StObject
+     with typings.senchaTouch.Ext.ModelMgr
 /* static members */
 object ModelMgr {
   
@@ -37,34 +37,28 @@ object ModelMgr {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  @JSGlobal("Ext.ModelMgr.callOverridden")
-  @js.native
-  def callOverridden(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.callOverridden")
-  @js.native
-  def callOverridden(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+  @scala.inline
+  def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  @JSGlobal("Ext.ModelMgr.callParent")
-  @js.native
-  def callParent(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.callParent")
-  @js.native
-  def callParent(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+  @scala.inline
+  def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  @JSGlobal("Ext.ModelMgr.callSuper")
-  @js.native
-  def callSuper(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.callSuper")
-  @js.native
-  def callSuper(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+  @scala.inline
+  def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Creates a new instance of a Model using the given data
     * @param data Object Data to initialize the Model's fields with.
@@ -72,30 +66,22 @@ object ModelMgr {
     * @param id Number Unique id of the Model instance (see Ext.data.Model).
     * @returns Object
     */
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], id: Double): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.UndefOr[scala.Nothing], name: java.lang.String): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.UndefOr[scala.Nothing], name: java.lang.String, id: Double): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.Any): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.Any, name: js.UndefOr[scala.Nothing], id: Double): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.Any, name: java.lang.String): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.create")
-  @js.native
-  def create(data: js.Any, name: java.lang.String, id: Double): js.Any = js.native
+  @scala.inline
+  def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: js.Any, name: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: js.Any, name: java.lang.String, id: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: js.Any, name: Unit, id: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: Unit, name: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: Unit, name: java.lang.String, id: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(data: Unit, name: Unit, id: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Property] (Object) */
   @JSGlobal("Ext.ModelMgr.defaultProxyType")
@@ -105,146 +91,116 @@ object ModelMgr {
   def defaultProxyType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProxyType")(x.asInstanceOf[js.Any])
   
   /** [Method]  */
-  @JSGlobal("Ext.ModelMgr.destroy")
-  @js.native
-  def destroy(): Unit = js.native
+  @scala.inline
+  def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
   
   /** [Method] Executes the specified function once for each item in the collection
     * @param fn Function The function to execute.
     * @param scope Object The scope to execute in.
     */
-  @JSGlobal("Ext.ModelMgr.each")
-  @js.native
-  def each(): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.each")
-  @js.native
-  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.each")
-  @js.native
-  def each(fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.each")
-  @js.native
-  def each(fn: js.Any, scope: js.Any): Unit = js.native
+  @scala.inline
+  def each(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("each")().asInstanceOf[Unit]
+  @scala.inline
+  def each(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def each(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def each(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Returns an item by id
     * @param id String The id of the item.
     * @returns Object The item, undefined if not found.
     */
-  @JSGlobal("Ext.ModelMgr.get")
-  @js.native
-  def get(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.get")
-  @js.native
-  def get(id: java.lang.String): js.Any = js.native
+  @scala.inline
+  def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
+  @scala.inline
+  def get(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Gets the number of items in the collection
     * @returns Number The number of items in the collection.
     */
-  @JSGlobal("Ext.ModelMgr.getCount")
-  @js.native
-  def getCount(): Double = js.native
+  @scala.inline
+  def getCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")().asInstanceOf[Double]
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  @JSGlobal("Ext.ModelMgr.getInitialConfig")
-  @js.native
-  def getInitialConfig(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.getInitialConfig")
-  @js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  @scala.inline
+  def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Returns the Ext data Model for a given model name
     * @param id String/Object The id of the model or the model instance.
     * @returns Ext.data.Model A model class.
     */
-  @JSGlobal("Ext.ModelMgr.getModel")
-  @js.native
-  def getModel(): IModel = js.native
-  @JSGlobal("Ext.ModelMgr.getModel")
-  @js.native
-  def getModel(id: js.Any): IModel = js.native
+  @scala.inline
+  def getModel(): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")().asInstanceOf[IModel]
+  @scala.inline
+  def getModel(id: js.Any): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(id.asInstanceOf[js.Any]).asInstanceOf[IModel]
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  @JSGlobal("Ext.ModelMgr.initConfig")
-  @js.native
-  def initConfig(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.initConfig")
-  @js.native
-  def initConfig(instanceConfig: js.Any): js.Any = js.native
+  @scala.inline
+  def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Checks if an item type is registered
     * @param type String The mnemonic string by which the class may be looked up.
     * @returns Boolean Whether the type is registered.
     */
-  @JSGlobal("Ext.ModelMgr.isRegistered")
-  @js.native
-  def isRegistered(): Boolean = js.native
-  @JSGlobal("Ext.ModelMgr.isRegistered")
-  @js.native
-  def isRegistered(`type`: java.lang.String): Boolean = js.native
+  @scala.inline
+  def isRegistered(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistered")().asInstanceOf[Boolean]
+  @scala.inline
+  def isRegistered(`type`: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistered")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Method] Registers a function that will be called when an item with the specified id is added to the manager
     * @param id String The item id.
     * @param fn Function The callback function. Called with a single parameter, the item.
     * @param scope Object The scope (this reference) in which the callback is executed. Defaults to the item.
     */
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: java.lang.String): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: java.lang.String, fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.onAvailable")
-  @js.native
-  def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  @scala.inline
+  def onAvailable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")().asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: java.lang.String, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: java.lang.String, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onAvailable(id: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAvailable")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Registers an item to be managed
     * @param item Object The item to register.
     */
-  @JSGlobal("Ext.ModelMgr.register")
-  @js.native
-  def register(): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.register")
-  @js.native
-  def register(item: js.Any): Unit = js.native
+  @scala.inline
+  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+  @scala.inline
+  def register(item: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Registers a model definition
     * @param name String
     * @param config Object
     * @returns Object
     */
-  @JSGlobal("Ext.ModelMgr.registerType")
-  @js.native
-  def registerType(): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.registerType")
-  @js.native
-  def registerType(name: js.UndefOr[scala.Nothing], config: js.Any): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.registerType")
-  @js.native
-  def registerType(name: java.lang.String): js.Any = js.native
-  @JSGlobal("Ext.ModelMgr.registerType")
-  @js.native
-  def registerType(name: java.lang.String, config: js.Any): js.Any = js.native
+  @scala.inline
+  def registerType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("registerType")().asInstanceOf[js.Any]
+  @scala.inline
+  def registerType(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def registerType(name: java.lang.String, config: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def registerType(name: Unit, config: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.ModelMgr.self")
@@ -256,17 +212,14 @@ object ModelMgr {
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
     */
-  @JSGlobal("Ext.ModelMgr.statics")
-  @js.native
-  def statics(): IClass = js.native
+  @scala.inline
+  def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   
   /** [Method] Unregisters an item by removing it from this manager
     * @param item Object The item to unregister.
     */
-  @JSGlobal("Ext.ModelMgr.unregister")
-  @js.native
-  def unregister(): Unit = js.native
-  @JSGlobal("Ext.ModelMgr.unregister")
-  @js.native
-  def unregister(item: js.Any): Unit = js.native
+  @scala.inline
+  def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+  @scala.inline
+  def unregister(item: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

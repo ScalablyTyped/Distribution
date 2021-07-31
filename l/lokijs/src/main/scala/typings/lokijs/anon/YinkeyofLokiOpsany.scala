@@ -2,111 +2,109 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ Y in keyof lokijs.LokiOps ]:? any} */
-@js.native
 trait YinkeyofLokiOpsany extends StObject {
   
   @JSName("$aeq")
-  var $aeq: js.UndefOr[js.Any] = js.native
+  var $aeq: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$and")
-  var $and: js.UndefOr[js.Any] = js.native
+  var $and: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$between")
-  var $between: js.UndefOr[js.Any] = js.native
+  var $between: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$contains")
-  var $contains: js.UndefOr[js.Any] = js.native
+  var $contains: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$containsAny")
-  var $containsAny: js.UndefOr[js.Any] = js.native
+  var $containsAny: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$containsNone")
-  var $containsNone: js.UndefOr[js.Any] = js.native
+  var $containsNone: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$containsString")
-  var $containsString: js.UndefOr[js.Any] = js.native
+  var $containsString: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$definedin")
-  var $definedin: js.UndefOr[js.Any] = js.native
+  var $definedin: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$dteq")
-  var $dteq: js.UndefOr[js.Any] = js.native
+  var $dteq: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$eq")
-  var $eq: js.UndefOr[js.Any] = js.native
+  var $eq: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$finite")
-  var $finite: js.UndefOr[js.Any] = js.native
+  var $finite: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$gt")
-  var $gt: js.UndefOr[js.Any] = js.native
+  var $gt: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$gte")
-  var $gte: js.UndefOr[js.Any] = js.native
+  var $gte: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$in")
-  var $in: js.UndefOr[js.Any] = js.native
+  var $in: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$jbetween")
-  var $jbetween: js.UndefOr[js.Any] = js.native
+  var $jbetween: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$jgt")
-  var $jgt: js.UndefOr[js.Any] = js.native
+  var $jgt: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$jgte")
-  var $jgte: js.UndefOr[js.Any] = js.native
+  var $jgte: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$jlt")
-  var $jlt: js.UndefOr[js.Any] = js.native
+  var $jlt: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$jlte")
-  var $jlte: js.UndefOr[js.Any] = js.native
+  var $jlte: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$keyin")
-  var $keyin: js.UndefOr[js.Any] = js.native
+  var $keyin: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$len")
-  var $len: js.UndefOr[js.Any] = js.native
+  var $len: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$lt")
-  var $lt: js.UndefOr[js.Any] = js.native
+  var $lt: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$lte")
-  var $lte: js.UndefOr[js.Any] = js.native
+  var $lte: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$ne")
-  var $ne: js.UndefOr[js.Any] = js.native
+  var $ne: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$nin")
-  var $nin: js.UndefOr[js.Any] = js.native
+  var $nin: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$nkeyin")
-  var $nkeyin: js.UndefOr[js.Any] = js.native
+  var $nkeyin: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$not")
-  var $not: js.UndefOr[js.Any] = js.native
+  var $not: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$or")
-  var $or: js.UndefOr[js.Any] = js.native
+  var $or: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$regex")
-  var $regex: js.UndefOr[js.Any] = js.native
+  var $regex: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[js.Any] = js.native
+  var $size: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$type")
-  var $type: js.UndefOr[js.Any] = js.native
+  var $type: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$undefinedin")
-  var $undefinedin: js.UndefOr[js.Any] = js.native
+  var $undefinedin: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$where")
-  var $where: js.UndefOr[js.Any] = js.native
+  var $where: js.UndefOr[js.Any] = js.undefined
 }
 object YinkeyofLokiOpsany {
   

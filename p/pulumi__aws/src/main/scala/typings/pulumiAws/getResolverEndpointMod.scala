@@ -4,25 +4,23 @@ import typings.pulumiAws.inputMod.route53.GetResolverEndpointFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResolverEndpointMod {
   
-  @JSImport("@pulumi/aws/route53/getResolverEndpoint", "getResolverEndpoint")
+  @JSImport("@pulumi/aws/route53/getResolverEndpoint", JSImport.Namespace)
   @js.native
-  def getResolverEndpoint(): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverEndpoint", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverEndpoint", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: GetResolverEndpointArgs): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverEndpoint", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: GetResolverEndpointArgs, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getResolverEndpoint(): js.Promise[GetResolverEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")().asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: Unit, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: GetResolverEndpointArgs): js.Promise[GetResolverEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: GetResolverEndpointArgs, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  
   trait GetResolverEndpointArgs extends StObject {
     
     /**
@@ -30,12 +28,12 @@ object getResolverEndpointMod {
       * several valid keys, for a full reference, check out
       * [Route53resolver Filter value in the AWS API reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetResolverEndpointFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetResolverEndpointFilter]] = js.undefined
     
     /**
       * The ID of the Route53 Resolver Endpoint.
       */
-    val resolverEndpointId: js.UndefOr[String] = js.native
+    val resolverEndpointId: js.UndefOr[String] = js.undefined
   }
   object GetResolverEndpointArgs {
     
@@ -65,29 +63,28 @@ object getResolverEndpointMod {
     }
   }
   
-  @js.native
   trait GetResolverEndpointResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val direction: String = js.native
+    val direction: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.route53.GetResolverEndpointFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.route53.GetResolverEndpointFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val ipAddresses: js.Array[String] = js.native
+    val ipAddresses: js.Array[String]
     
-    val name: String = js.native
+    val name: String
     
-    val resolverEndpointId: js.UndefOr[String] = js.native
+    val resolverEndpointId: js.UndefOr[String] = js.undefined
     
-    val status: String = js.native
+    val status: String
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetResolverEndpointResult {
     

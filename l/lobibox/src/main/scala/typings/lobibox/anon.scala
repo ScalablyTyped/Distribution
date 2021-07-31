@@ -12,15 +12,13 @@ import typings.lobibox.LobiboxModule.PromptOptions
 import typings.lobibox.LobiboxModule.WindowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
   }
   object `0` {
     
@@ -68,16 +66,15 @@ object anon {
     var DEFAULTS: ConfirmOptions = js.native
   }
   
-  @js.native
   trait Cancel extends StObject {
     
-    var cancel: js.UndefOr[Class] = js.native
+    var cancel: js.UndefOr[Class] = js.undefined
     
-    var no: js.UndefOr[Class] = js.native
+    var no: js.UndefOr[Class] = js.undefined
     
-    var ok: js.UndefOr[Class] = js.native
+    var ok: js.UndefOr[Class] = js.undefined
     
-    var yes: js.UndefOr[Class] = js.native
+    var yes: js.UndefOr[Class] = js.undefined
   }
   object Cancel {
     
@@ -116,14 +113,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Class {
     
@@ -156,26 +152,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Confirm extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var confirm: js.UndefOr[String] = js.native
+    var confirm: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var progress: js.UndefOr[String] = js.native
+    var progress: js.UndefOr[String] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
     
-    var window: js.UndefOr[String] = js.native
+    var window: js.UndefOr[String] = js.undefined
   }
   object Confirm {
     
@@ -244,12 +239,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DEFAULTS extends StObject {
     
-    var DEFAULTS: MessageBoxesDefault = js.native
+    var DEFAULTS: MessageBoxesDefault
     
-    var OPTIONS: MessageBoxesOptions = js.native
+    var OPTIONS: MessageBoxesOptions
   }
   object DEFAULTS {
     
@@ -286,16 +280,15 @@ object anon {
     var DEFAULTS: WindowOptions = js.native
   }
   
-  @js.native
   trait Icon extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Icon {
     
@@ -334,12 +327,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IconClass extends StObject {
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IconClass {
     
@@ -377,10 +369,9 @@ object anon {
     var OPTIONS: js.UndefOr[NotifyOptions] = js.native
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Width {
     

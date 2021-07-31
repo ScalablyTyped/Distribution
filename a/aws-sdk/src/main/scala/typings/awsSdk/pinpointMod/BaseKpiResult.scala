@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseKpiResult extends StObject {
   
   /**
     * An array of objects that provides the results of a query that retrieved the data for a standard metric that applies to an application, campaign, or journey.
     */
-  var Rows: ListOfResultRow = js.native
+  var Rows: ListOfResultRow
 }
 object BaseKpiResult {
   

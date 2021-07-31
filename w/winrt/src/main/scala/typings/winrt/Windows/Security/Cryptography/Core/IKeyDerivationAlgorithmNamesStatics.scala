@@ -2,41 +2,39 @@ package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeyDerivationAlgorithmNamesStatics extends StObject {
   
-  var pbkdf2Md5: String = js.native
+  var pbkdf2Md5: String
   
-  var pbkdf2Sha1: String = js.native
+  var pbkdf2Sha1: String
   
-  var pbkdf2Sha256: String = js.native
+  var pbkdf2Sha256: String
   
-  var pbkdf2Sha384: String = js.native
+  var pbkdf2Sha384: String
   
-  var pbkdf2Sha512: String = js.native
+  var pbkdf2Sha512: String
   
-  var sp800108CtrHmacMd5: String = js.native
+  var sp800108CtrHmacMd5: String
   
-  var sp800108CtrHmacSha1: String = js.native
+  var sp800108CtrHmacSha1: String
   
-  var sp800108CtrHmacSha256: String = js.native
+  var sp800108CtrHmacSha256: String
   
-  var sp800108CtrHmacSha384: String = js.native
+  var sp800108CtrHmacSha384: String
   
-  var sp800108CtrHmacSha512: String = js.native
+  var sp800108CtrHmacSha512: String
   
-  var sp80056aConcatMd5: String = js.native
+  var sp80056aConcatMd5: String
   
-  var sp80056aConcatSha1: String = js.native
+  var sp80056aConcatSha1: String
   
-  var sp80056aConcatSha256: String = js.native
+  var sp80056aConcatSha256: String
   
-  var sp80056aConcatSha384: String = js.native
+  var sp80056aConcatSha384: String
   
-  var sp80056aConcatSha512: String = js.native
+  var sp80056aConcatSha512: String
 }
 object IKeyDerivationAlgorithmNamesStatics {
   

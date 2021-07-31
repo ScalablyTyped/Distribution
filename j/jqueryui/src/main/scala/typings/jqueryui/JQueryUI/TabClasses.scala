@@ -2,27 +2,25 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabClasses extends StObject {
   
-  var `ui-tabs`: js.UndefOr[String] = js.native
+  var `ui-tabs`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-active`: js.UndefOr[String] = js.native
+  var `ui-tabs-active`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-anchor`: js.UndefOr[String] = js.native
+  var `ui-tabs-anchor`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-collapsible`: js.UndefOr[String] = js.native
+  var `ui-tabs-collapsible`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-loading`: js.UndefOr[String] = js.native
+  var `ui-tabs-loading`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-nav`: js.UndefOr[String] = js.native
+  var `ui-tabs-nav`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-panel`: js.UndefOr[String] = js.native
+  var `ui-tabs-panel`: js.UndefOr[String] = js.undefined
   
-  var `ui-tabs-tab`: js.UndefOr[String] = js.native
+  var `ui-tabs-tab`: js.UndefOr[String] = js.undefined
 }
 object TabClasses {
   

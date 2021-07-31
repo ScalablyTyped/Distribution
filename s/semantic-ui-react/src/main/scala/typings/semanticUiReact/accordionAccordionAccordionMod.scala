@@ -15,7 +15,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionAccordionAccordionMod extends Shortcut {
@@ -32,9 +31,9 @@ object accordionAccordionAccordionMod extends Shortcut {
   @js.native
   val default: ComponentClass[AccordionAccordionProps, ComponentState] = js.native
   
-  @js.native
   trait AccordionAccordionProps
-    extends StrictAccordionAccordionProps
+    extends StObject
+       with StrictAccordionAccordionProps
        with /* key */ StringDictionary[js.Any]
   object AccordionAccordionProps {
     
@@ -45,26 +44,25 @@ object accordionAccordionAccordionMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictAccordionAccordionProps extends StObject {
     
     /** Index of the currently active panel. */
-    var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+    var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Initial activeIndex value. */
-    var defaultActiveIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+    var defaultActiveIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /** Only allow one panel open at a time. */
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called when a panel title is clicked.
@@ -78,10 +76,10 @@ object accordionAccordionAccordionMod extends Shortcut {
           /* data */ AccordionTitleProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Shorthand array of props for Accordion. */
-    var panels: js.UndefOr[SemanticShorthandCollection[AccordionPanelProps]] = js.native
+    var panels: js.UndefOr[SemanticShorthandCollection[AccordionPanelProps]] = js.undefined
   }
   object StrictAccordionAccordionProps {
     

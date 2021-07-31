@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderReportDisbursement extends StObject {
   
   /** The disbursement amount. */
-  var disbursementAmount: js.UndefOr[Price] = js.native
+  var disbursementAmount: js.UndefOr[Price] = js.undefined
   
   /** The disbursement date, in ISO 8601 format. */
-  var disbursementCreationDate: js.UndefOr[String] = js.native
+  var disbursementCreationDate: js.UndefOr[String] = js.undefined
   
   /** The date the disbursement was initiated, in ISO 8601 format. */
-  var disbursementDate: js.UndefOr[String] = js.native
+  var disbursementDate: js.UndefOr[String] = js.undefined
   
   /** The ID of the disbursement. */
-  var disbursementId: js.UndefOr[String] = js.native
+  var disbursementId: js.UndefOr[String] = js.undefined
   
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object OrderReportDisbursement {
   

@@ -2,86 +2,84 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskSnapshot extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the disk snapshot.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date when the disk snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source disk from which the disk snapshot was created.
     */
-  var fromDiskArn: js.UndefOr[NonEmptyString] = js.native
+  var fromDiskArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The unique name of the source disk from which the disk snapshot was created.
     */
-  var fromDiskName: js.UndefOr[ResourceName] = js.native
+  var fromDiskName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source instance from which the disk (system volume) snapshot was created.
     */
-  var fromInstanceArn: js.UndefOr[NonEmptyString] = js.native
+  var fromInstanceArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The unique name of the source instance from which the disk (system volume) snapshot was created.
     */
-  var fromInstanceName: js.UndefOr[ResourceName] = js.native
+  var fromInstanceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * A Boolean value indicating whether the snapshot was created from an automatic snapshot.
     */
-  var isFromAutoSnapshot: js.UndefOr[Boolean] = js.native
+  var isFromAutoSnapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The AWS Region and Availability Zone where the disk snapshot was created.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the disk snapshot (e.g., my-disk-snapshot).
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The progress of the disk snapshot operation.
     */
-  var progress: js.UndefOr[String] = js.native
+  var progress: js.UndefOr[String] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., DiskSnapshot).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The size of the disk in GB.
     */
-  var sizeInGb: js.UndefOr[integer] = js.native
+  var sizeInGb: js.UndefOr[integer] = js.undefined
   
   /**
     * The status of the disk snapshot operation.
     */
-  var state: js.UndefOr[DiskSnapshotState] = js.native
+  var state: js.UndefOr[DiskSnapshotState] = js.undefined
   
   /**
     * The support code. Include this code in your email to support when you have questions about an instance or another resource in Lightsail. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object DiskSnapshot {
   

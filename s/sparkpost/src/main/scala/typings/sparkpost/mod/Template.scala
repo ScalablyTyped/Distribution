@@ -3,17 +3,15 @@ package typings.sparkpost.mod
 import typings.sparkpost.anon.Emailrfc822
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
-  var content: TemplateContent | Emailrfc822 = js.native
+  var content: TemplateContent | Emailrfc822
   
   /** Detailed description of the template  no  Maximum length - 1024 bytes */
-  var description: String = js.native
+  var description: String
   
   /**
     * Short, unique, alphanumeric ID used to reference the template.
@@ -22,22 +20,22 @@ trait Template extends StObject {
     * After a template has been created, this property cannot be changed. Maximum length - 64 bytes
     *
     */
-  var id: String = js.native
+  var id: String
   
   /** The “last_update_time” is the time the template was last updated, for both draft and published versions */
-  var last_update_time: String = js.native
+  var last_update_time: String
   
   /** The “last_use” time represents the last time any version of this template was used (draft or published). */
-  var last_use: js.UndefOr[String] = js.native
+  var last_use: js.UndefOr[String] = js.undefined
   
   /** Editable display name  At a minimum, id or name is required upon creation.  The name does not have to be unique. Maximum length - 1024 bytes */
-  var name: String = js.native
+  var name: String
   
   /** JSON object in which template options are defined  no  For a full description, see the Options Attributes. */
-  var options: TemplateOptions = js.native
+  var options: TemplateOptions
   
   /** Whether the template is published or is a draft version  no - defaults to false  A template cannot be changed from published to draft. */
-  var published: Boolean = js.native
+  var published: Boolean
 }
 object Template {
   

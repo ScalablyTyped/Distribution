@@ -6,40 +6,38 @@ import typings.mangopay2NodejsSdk.mod.address.AddressData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserNaturalData, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserNaturalData | 'Address' | 'Occupation' | 'IncomeRange' | 'Tag'> */
-@js.native
 trait BaseUserNaturalData extends StObject {
   
-  var Address: js.UndefOr[String | AddressData] = js.native
+  var Address: js.UndefOr[String | AddressData] = js.undefined
   
-  var Birthday: js.UndefOr[Timestamp] = js.native
+  var Birthday: js.UndefOr[Timestamp] = js.undefined
   
-  var CountryOfResidence: js.UndefOr[CountryISO] = js.native
+  var CountryOfResidence: js.UndefOr[CountryISO] = js.undefined
   
-  var Email: js.UndefOr[String] = js.native
+  var Email: js.UndefOr[String] = js.undefined
   
-  var FirstName: js.UndefOr[String] = js.native
+  var FirstName: js.UndefOr[String] = js.undefined
   
-  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.native
+  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.undefined
   
-  var LastName: js.UndefOr[String] = js.native
+  var LastName: js.UndefOr[String] = js.undefined
   
-  var Nationality: js.UndefOr[CountryISO] = js.native
+  var Nationality: js.UndefOr[CountryISO] = js.undefined
   
-  var Occupation: js.UndefOr[String] = js.native
+  var Occupation: js.UndefOr[String] = js.undefined
   
-  var PersonType: NATURAL = js.native
+  var PersonType: NATURAL
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object BaseUserNaturalData {
   
   @scala.inline
-  def apply(PersonType: NATURAL): BaseUserNaturalData = {
-    val __obj = js.Dynamic.literal(PersonType = PersonType.asInstanceOf[js.Any])
+  def apply(): BaseUserNaturalData = {
+    val __obj = js.Dynamic.literal(PersonType = "NATURAL")
     __obj.asInstanceOf[BaseUserNaturalData]
   }
   

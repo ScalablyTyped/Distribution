@@ -3,20 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a single AdjustmentValue */
-@js.native
 trait EnhancedCustomShapeAdjustmentValue extends StObject {
   
   /** optional name, used by pptx import/export for custom shape presets */
-  var Name: String = js.native
+  var Name: String
   
-  var State: PropertyState = js.native
+  var State: PropertyState
   
   /** the any can be of type long or double */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object EnhancedCustomShapeAdjustmentValue {
   

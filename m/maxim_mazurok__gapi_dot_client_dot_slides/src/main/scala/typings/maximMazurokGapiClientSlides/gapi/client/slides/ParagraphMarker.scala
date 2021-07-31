@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphMarker extends StObject {
   
   /** The bullet for this paragraph. If not present, the paragraph does not belong to a list. */
-  var bullet: js.UndefOr[Bullet] = js.native
+  var bullet: js.UndefOr[Bullet] = js.undefined
   
   /** The paragraph's style */
-  var style: js.UndefOr[ParagraphStyle] = js.native
+  var style: js.UndefOr[ParagraphStyle] = js.undefined
 }
 object ParagraphMarker {
   

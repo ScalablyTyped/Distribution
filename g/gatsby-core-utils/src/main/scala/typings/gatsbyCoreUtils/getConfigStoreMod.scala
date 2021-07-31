@@ -1,14 +1,15 @@
 package typings.gatsbyCoreUtils
 
-import typings.configstore.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getConfigStoreMod {
   
-  @JSImport("gatsby-core-utils/dist/get-config-store", "getConfigStore")
+  @JSImport("gatsby-core-utils/dist/get-config-store", JSImport.Namespace)
   @js.native
-  def getConfigStore(): ^ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getConfigStore(): typings.configstore.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigStore")().asInstanceOf[typings.configstore.mod.^]
 }

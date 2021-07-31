@@ -43,7 +43,6 @@ import typings.smartFoxServer.SFS2X.Requests.System.SubscribeRoomGroupRequest
 import typings.smartFoxServer.SFS2X.Requests.System.UnsubscribeRoomGroupRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -70,13 +69,13 @@ trait SmartFox extends StObject {
     * @param {boolean} [useSSL] Use an encrypted SSL connection.
     */
   def connect(): Unit = js.native
-  def connect(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], useSSL: Boolean): Unit = js.native
-  def connect(host: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
-  def connect(host: js.UndefOr[scala.Nothing], port: Double, useSSL: Boolean): Unit = js.native
   def connect(host: String): Unit = js.native
-  def connect(host: String, port: js.UndefOr[scala.Nothing], useSSL: Boolean): Unit = js.native
   def connect(host: String, port: Double): Unit = js.native
   def connect(host: String, port: Double, useSSL: Boolean): Unit = js.native
+  def connect(host: String, port: Unit, useSSL: Boolean): Unit = js.native
+  def connect(host: Unit, port: Double): Unit = js.native
+  def connect(host: Unit, port: Double, useSSL: Boolean): Unit = js.native
+  def connect(host: Unit, port: Unit, useSSL: Boolean): Unit = js.native
   
   /** @type {boolean} Indicates whether the client-server messages console debug is enabled or not. */
   var debug: Boolean = js.native
@@ -93,9 +92,9 @@ trait SmartFox extends StObject {
     * @param {number}  [queueSize=10] The amount of values stored temporarily and used to calculate the average lag.
     */
   def enableLagMonitor(enabled: Boolean): Unit = js.native
-  def enableLagMonitor(enabled: Boolean, interval: js.UndefOr[scala.Nothing], queueSize: Double): Unit = js.native
   def enableLagMonitor(enabled: Boolean, interval: Double): Unit = js.native
   def enableLagMonitor(enabled: Boolean, interval: Double, queueSize: Double): Unit = js.native
+  def enableLagMonitor(enabled: Boolean, interval: Unit, queueSize: Double): Unit = js.native
   
   /**
     * Returns a list of SFSRoom objects representing the Rooms currently joined by the client.

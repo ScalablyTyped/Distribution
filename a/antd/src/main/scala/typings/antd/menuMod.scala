@@ -11,7 +11,6 @@ import typings.react.mod.Component
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -38,18 +37,18 @@ object menuMod {
     
     @JSImport("antd/lib/menu", "default.ItemGroup")
     @js.native
-    def ItemGroup: TypeofItemGroup with Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
+    def ItemGroup: TypeofItemGroup & Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
     @scala.inline
-    def ItemGroup_=(x: TypeofItemGroup with Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+    def ItemGroup_=(x: TypeofItemGroup & Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
     
     @scala.inline
     def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/menu", "default.SubMenu")
     @js.native
-    def SubMenu: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu = js.native
+    def SubMenu: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu = js.native
     @scala.inline
-    def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
+    def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -82,15 +81,15 @@ object menuMod {
     def `vertical-right`: typings.antd.antdStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.antd.antdStrings.`vertical-right`]
   }
   
-  @js.native
   trait MenuProps
-    extends typings.rcMenu.menuMod.MenuProps {
+    extends StObject
+       with typings.rcMenu.menuMod.MenuProps {
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var inlineIndent: js.UndefOr[Double] = js.native
+    var inlineIndent: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[MenuTheme] = js.native
+    var theme: js.UndefOr[MenuTheme] = js.undefined
   }
   object MenuProps {
     

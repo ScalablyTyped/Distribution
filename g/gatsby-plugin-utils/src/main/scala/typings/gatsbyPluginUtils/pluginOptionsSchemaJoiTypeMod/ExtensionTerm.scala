@@ -5,23 +5,21 @@ import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.single
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionTerm extends StObject {
   
-  var init: js.Array[_] | Null = js.native
+  var init: js.Array[js.Any] | Null
   
-  var manifest: js.UndefOr[Record[String, schema | single | ExtensionTermManifest]] = js.native
+  var manifest: js.UndefOr[Record[String, schema | single | ExtensionTermManifest]] = js.undefined
   
-  var register: js.UndefOr[js.Any] = js.native
+  var register: js.UndefOr[js.Any] = js.undefined
 }
 object ExtensionTerm {
   
   @scala.inline
   def apply(): ExtensionTerm = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(init = null)
     __obj.asInstanceOf[ExtensionTerm]
   }
   
@@ -29,7 +27,7 @@ object ExtensionTerm {
   implicit class ExtensionTermMutableBuilder[Self <: ExtensionTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInit(value: js.Array[_]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    def setInit(value: js.Array[js.Any]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInitNull: Self = StObject.set(x, "init", null)

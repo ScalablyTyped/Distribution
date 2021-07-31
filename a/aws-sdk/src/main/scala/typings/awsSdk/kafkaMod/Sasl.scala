@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sasl extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Sasl extends StObject {
     Details for SASL/SCRAM client authentication.
     
     */
-  var Scram: js.UndefOr[typings.awsSdk.kafkaMod.Scram] = js.native
+  var Scram: js.UndefOr[typings.awsSdk.kafkaMod.Scram] = js.undefined
 }
 object Sasl {
   

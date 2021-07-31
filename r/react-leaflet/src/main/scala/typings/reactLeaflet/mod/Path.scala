@@ -4,7 +4,6 @@ import typings.leaflet.mod.PathOptions
 import typings.reactLeaflet.anon.PopupContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-leaflet", "Path")

@@ -3,13 +3,11 @@ package typings.ckeditorCkeditor5Engine.anon
 import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var priority: PriorityString | Double = js.native
+  var priority: PriorityString | Double
 }
 object `0` {
   

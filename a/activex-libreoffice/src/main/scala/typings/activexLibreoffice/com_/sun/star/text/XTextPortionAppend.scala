@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows inserting and appending formatted text portions. */
-@js.native
-trait XTextPortionAppend extends XInterface {
+trait XTextPortionAppend
+  extends StObject
+     with XInterface {
   
   /**
     * appends a new text portion to the paragraph at the end of the text. <p> The sequence can contain all the properties defined by the service
@@ -18,7 +18,7 @@ trait XTextPortionAppend extends XInterface {
     * @param Text contains the text to be appended.
     * @param CharacterAndParagraphProperties can contain all the properties defined by the service {@link Paragraph} .
     */
-  def appendTextPortion(Text: String, CharacterAndParagraphProperties: PropertyValues): XTextRange = js.native
+  def appendTextPortion(Text: String, CharacterAndParagraphProperties: PropertyValues): XTextRange
   
   /**
     * inserts a new text portion to the paragraph at a given position. <p> The sequence can contain all the properties defined by the service TextPortion.
@@ -27,7 +27,7 @@ trait XTextPortionAppend extends XInterface {
     * @param TextRange specifies the position of the insert.
     * @since LibreOffice 4.0
     */
-  def insertTextPortion(Text: String, CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange = js.native
+  def insertTextPortion(Text: String, CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange
 }
 object XTextPortionAppend {
   

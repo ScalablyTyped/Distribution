@@ -1,13 +1,18 @@
 package typings.globPromise
 
 import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StringDictionary
+import typings.glob.anon.IsDirectory
+import typings.glob.globBooleans.`false`
+import typings.glob.globStrings.DIR
+import typings.glob.globStrings.FILE
 import typings.glob.mod.IGlob
 import typings.glob.mod.IGlobStatic
 import typings.glob.mod.IOptions
+import typings.minimatch.mod.IMinimatch
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,6 +33,30 @@ object mod extends Shortcut {
       options: IOptions,
       cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
     ) = this()
+    
+    /* CompleteClass */
+    var aborted: Boolean = js.native
+    
+    /* CompleteClass */
+    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
+    
+    /* CompleteClass */
+    var found: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var minimatch: IMinimatch = js.native
+    
+    /* CompleteClass */
+    var options: IOptions = js.native
+    
+    /* CompleteClass */
+    var realpathCache: StringDictionary[String] = js.native
+    
+    /* CompleteClass */
+    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
+    
+    /* CompleteClass */
+    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
   }
   
   @js.native

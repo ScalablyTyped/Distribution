@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,7 +11,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("async-cache", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Cache[T] {
+  class ^[T] protected ()
+    extends StObject
+       with Cache[T] {
     def this(options: Options[T]) = this()
   }
   @JSImport("async-cache", JSImport.Namespace)
@@ -21,7 +22,8 @@ object mod extends Shortcut {
   
   @js.native
   trait AsyncCacheFactory
-    extends Instantiable1[/* options */ Options[js.Object], Cache[js.Object]] {
+    extends StObject
+       with Instantiable1[/* options */ Options[js.Object], Cache[js.Object]] {
     
     def apply[T](options: Options[T]): Cache[T] = js.native
   }
@@ -47,14 +49,14 @@ object mod extends Shortcut {
     def set(key: String, value: T, maxAge: Double): Boolean = js.native
   }
   
-  @js.native
   trait Options[T]
-    extends typings.lruCache.mod.Options[String, T] {
+    extends StObject
+       with typings.lruCache.mod.Options[String, T] {
     
     def load(
       key: String,
       callback: js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Options {
     
@@ -67,7 +69,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setLoad(

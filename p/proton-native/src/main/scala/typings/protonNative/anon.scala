@@ -35,21 +35,19 @@ import typings.protonNative.protonNativeStrings.ultraHeavy
 import typings.protonNative.protonNativeStrings.ultraLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object A {
     
@@ -76,66 +74,65 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundColor extends StObject {
     
     /**
       * The background color, specified as a CSS color string.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * The text color, specified as a CSS color string.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * The font family (only if available on the system).
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * The font size (in pt).
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether an italic font should be used.
       */
-    var fontStyle: js.UndefOr[normal | oblique | italic] = js.native
+    var fontStyle: js.UndefOr[normal | oblique | italic] = js.undefined
     
     /**
       * Whether a bold font should be used (and the amount).
       */
     var fontWeight: js.UndefOr[
         minimum | thin | ultraLight | light | book | normal | medium | semiBold | bold | ultraBold | heavy | ultraHeavy | maximum | Double
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Wheter the text should be aligned to the left, center or right.
       *
       * **Works only on a top level text component, not it's children!**
       */
-    var textAlign: js.UndefOr[left | center | right] = js.native
+    var textAlign: js.UndefOr[left | center | right] = js.undefined
     
     /**
       * How wide or narrow the characters should be.
       */
     var textStretch: js.UndefOr[
         ultraCondensed | extraCondensed | condensed | semiCondensed | normal | semiExpanded | expanded | extraExpanded | ultraExpanded
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The text underline style.
       */
-    var textUnderline: js.UndefOr[none | single | double | suggestion] = js.native
+    var textUnderline: js.UndefOr[none | single | double | suggestion] = js.undefined
     
     /**
       * The text underline color.
       *
       * A color string | 'spelling' | 'grammar' | 'auxiliary'
       */
-    var textUnderlineColor: js.UndefOr[spelling | grammar | auxiliary | String] = js.native
+    var textUnderlineColor: js.UndefOr[spelling | grammar | auxiliary | String] = js.undefined
   }
   object BackgroundColor {
     
@@ -214,18 +211,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Buttons extends StObject {
     
-    var buttons: js.Array[String] = js.native
+    var buttons: js.Array[String]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Buttons {
     
@@ -258,12 +254,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object Description {
     
@@ -287,12 +282,11 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var h: Boolean = js.native
+    var h: Boolean
     
-    var v: Boolean = js.native
+    var v: Boolean
   }
   object H {
     
@@ -313,12 +307,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Title extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Title {
     
@@ -342,12 +335,11 @@ object anon {
     }
   }
   
-  @js.native
   trait W extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object W {
     
@@ -368,12 +360,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -394,12 +385,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Y {
     

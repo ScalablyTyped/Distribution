@@ -3,43 +3,41 @@ package typings.raygun.typesMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaygunOptions extends StObject {
   
-  var apiKey: String = js.native
+  var apiKey: String
   
-  var batch: js.UndefOr[Boolean] = js.native
+  var batch: js.UndefOr[Boolean] = js.undefined
   
-  var batchFrequency: js.UndefOr[Double] = js.native
+  var batchFrequency: js.UndefOr[Double] = js.undefined
   
-  var filters: js.UndefOr[js.Array[String]] = js.native
+  var filters: js.UndefOr[js.Array[String]] = js.undefined
   
-  var groupingKey: js.UndefOr[Hook[String]] = js.native
+  var groupingKey: js.UndefOr[Hook[String]] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var innerErrorFieldName: js.UndefOr[String] = js.native
+  var innerErrorFieldName: js.UndefOr[String] = js.undefined
   
-  var isOffline: js.UndefOr[Boolean] = js.native
+  var isOffline: js.UndefOr[Boolean] = js.undefined
   
-  var offlineStorage: js.UndefOr[IOfflineStorage] = js.native
+  var offlineStorage: js.UndefOr[IOfflineStorage] = js.undefined
   
-  var offlineStorageOptions: js.UndefOr[OfflineStorageOptions] = js.native
+  var offlineStorageOptions: js.UndefOr[OfflineStorageOptions] = js.undefined
   
-  var onBeforeSend: js.UndefOr[Hook[Message]] = js.native
+  var onBeforeSend: js.UndefOr[Hook[Message]] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var reportColumnNumbers: js.UndefOr[Boolean] = js.native
+  var reportColumnNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   
-  var useHumanStringForObject: js.UndefOr[Boolean] = js.native
+  var useHumanStringForObject: js.UndefOr[Boolean] = js.undefined
   
-  var useSSL: js.UndefOr[Boolean] = js.native
+  var useSSL: js.UndefOr[Boolean] = js.undefined
 }
 object RaygunOptions {
   

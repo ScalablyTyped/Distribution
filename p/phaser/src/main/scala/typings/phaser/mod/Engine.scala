@@ -1,10 +1,10 @@
 package typings.phaser.mod
 
 import typings.phaser.MatterJS.IEngineDefinition
+import typings.phaser.MatterJS.IEngineTimingOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +19,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Engine")
 @js.native
 class Engine ()
-  extends typings.phaser.MatterJS.Engine
+  extends StObject
+     with typings.phaser.MatterJS.Engine {
+  
+  /**
+    * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
+    *
+    * @property broadphase
+    * @type grid
+    * @default a Matter.Grid instance
+    */
+  /* CompleteClass */
+  var broadphase: typings.phaser.MatterJS.Grid = js.native
+  
+  /**
+    * An integer `Number` that specifies the number of constraint iterations to perform each update.
+    * The higher the value, the higher quality the simulation will be at the expense of performance.
+    * The default value of `2` is usually very adequate.
+    *
+    * @property constraintIterations
+    * @type number
+    * @default 2
+    */
+  /* CompleteClass */
+  var constraintIterations: Double = js.native
+  
+  /**
+    * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
+    * Sleeping can improve stability and performance, but often at the expense of accuracy.
+    *
+    * @property enableSleeping
+    * @type boolean
+    * @default false
+    */
+  /* CompleteClass */
+  var enableSleeping: Boolean = js.native
+  
+  /**
+    * A flag that specifies whether the engine is running or not.
+    */
+  /* CompleteClass */
+  var enabled: Boolean = js.native
+  
+  /**
+    * Collision pair set for this `Engine`.
+    */
+  /* CompleteClass */
+  var pairs: js.Any = js.native
+  
+  /**
+    * An integer `Number` that specifies the number of position iterations to perform each update.
+    * The higher the value, the higher quality the simulation will be at the expense of performance.
+    *
+    * @property positionIterations
+    * @type number
+    * @default 6
+    */
+  /* CompleteClass */
+  var positionIterations: Double = js.native
+  
+  /**
+    * An `Object` containing properties regarding the timing systems of the engine.
+    *
+    * @property timing
+    * @type object
+    */
+  /* CompleteClass */
+  var timing: IEngineTimingOptions = js.native
+  
+  /**
+    * An integer `Number` that specifies the number of velocity iterations to perform each update.
+    * The higher the value, the higher quality the simulation will be at the expense of performance.
+    *
+    * @property velocityIterations
+    * @type number
+    * @default 4
+    */
+  /* CompleteClass */
+  var velocityIterations: Double = js.native
+  
+  /**
+    * A `World` composite object that will contain all simulated bodies and constraints.
+    *
+    * @property world
+    * @type world
+    * @default a Matter.World instance
+    */
+  /* CompleteClass */
+  var world: typings.phaser.MatterJS.World = js.native
+}
 object Engine {
+  
+  @JSImport("matter", "Engine")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Clears the engine including the world, pairs and broadphase.
@@ -28,9 +120,8 @@ object Engine {
     * @param {engine} engine
     */
   /* static member */
-  @JSImport("matter", "Engine.clear")
-  @js.native
-  def clear(engine: typings.phaser.MatterJS.Engine): Unit = js.native
+  @scala.inline
+  def clear(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -52,24 +143,18 @@ object Engine {
     * @return {engine} engine
     * @deprecated
     */
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(element: HTMLElement): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.create")
-  @js.native
-  def create(element: HTMLElement, options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
+  @scala.inline
+  def create(): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def create(element: Unit, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def create(element: HTMLElement): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def create(element: HTMLElement, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
   
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
@@ -78,9 +163,8 @@ object Engine {
     * @param {engine} engineB
     */
   /* static member */
-  @JSImport("matter", "Engine.merge")
-  @js.native
-  def merge(engineA: typings.phaser.MatterJS.Engine, engineB: typings.phaser.MatterJS.Engine): Unit = js.native
+  @scala.inline
+  def merge(engineA: typings.phaser.MatterJS.Engine, engineB: typings.phaser.MatterJS.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * An alias for `Runner.run`, see `Matter.Runner` for more information.
@@ -88,9 +172,8 @@ object Engine {
     * @param {engine} engine
     */
   /* static member */
-  @JSImport("matter", "Engine.run")
-  @js.native
-  def run(engine: typings.phaser.MatterJS.Engine): Unit = js.native
+  @scala.inline
+  def run(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Moves the simulation forward in time by `delta` ms.
@@ -108,16 +191,12 @@ object Engine {
     * @param {number} [correction=1]
     */
   /* static member */
-  @JSImport("matter", "Engine.update")
-  @js.native
-  def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.update")
-  @js.native
-  def update(engine: typings.phaser.MatterJS.Engine, delta: js.UndefOr[scala.Nothing], correction: Double): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.update")
-  @js.native
-  def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = js.native
-  @JSImport("matter", "Engine.update")
-  @js.native
-  def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = js.native
+  @scala.inline
+  def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  @scala.inline
+  def update(engine: typings.phaser.MatterJS.Engine, delta: Unit, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
 }

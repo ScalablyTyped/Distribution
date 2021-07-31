@@ -5,21 +5,21 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataRegionAnnotationCfg extends GroupComponentCfg {
+trait DataRegionAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 位置点信息
     * @type {Point}
     */
-  var points: js.Array[Point] = js.native
+  var points: js.Array[Point]
   
-  var region: js.UndefOr[`1`] = js.native
+  var region: js.UndefOr[`1`] = js.undefined
   
-  var text: EnhancedTextCfg = js.native
+  var text: EnhancedTextCfg
 }
 object DataRegionAnnotationCfg {
   

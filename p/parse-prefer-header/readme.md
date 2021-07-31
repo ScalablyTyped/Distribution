@@ -11,8 +11,8 @@ parses an http prefer header, aka rfc7240
 | Full name          | parse-prefer-header |
 | Keywords           | prefer, rfc7240, 7240 |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 199324 |
+| # dependents       | 7 |
+| # downloads        | 533649 |
 | # stars            | 0 |
 
 ## Links

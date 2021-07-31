@@ -3,34 +3,32 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateParameters extends StObject {
   
   /** The runtime environment for the job. */
-  var environment: js.UndefOr[RuntimeEnvironment] = js.native
+  var environment: js.UndefOr[RuntimeEnvironment] = js.undefined
   
   /** Required. The job name to use for the created job. */
-  var jobName: js.UndefOr[String] = js.native
+  var jobName: js.UndefOr[String] = js.undefined
   
   /** The runtime parameters to pass to the job. */
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Only applicable when updating a pipeline. Map of transform name prefixes of the job to be replaced to the corresponding name prefixes of the new job. */
   var transformNameMapping: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
+  ] = js.undefined
   
   /** If set, replace the existing pipeline with the name specified by jobName with this pipeline, preserving state. */
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchTemplateParameters {
   
@@ -59,7 +57,7 @@ object LaunchTemplateParameters {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -69,7 +67,7 @@ object LaunchTemplateParameters {
     def setTransformNameMapping(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "transformNameMapping", value.asInstanceOf[js.Any])
     
     @scala.inline

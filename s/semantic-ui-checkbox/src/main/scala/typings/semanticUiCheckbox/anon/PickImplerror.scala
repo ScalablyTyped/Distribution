@@ -3,14 +3,12 @@ package typings.semanticUiCheckbox.anon
 import typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'error'> */
-@js.native
 trait PickImplerror extends StObject {
   
-  var error: ErrorSettings = js.native
+  var error: ErrorSettings
 }
 object PickImplerror {
   

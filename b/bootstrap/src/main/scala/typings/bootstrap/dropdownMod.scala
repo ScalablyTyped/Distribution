@@ -10,33 +10,68 @@ import typings.popperJs.mod.PopperOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
   
   @JSImport("bootstrap/js/dist/dropdown", JSImport.Default)
   @js.native
-  class default protected () extends Dropdown {
+  class default protected ()
+    extends StObject
+       with Dropdown {
     def this(element: Element) = this()
     def this(element: Element, options: PartialOptionsBoundary) = this()
+    
+    /**
+      * Destroys an element's dropdown.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Hides the dropdown menu of a given navbar or tabbed navigation.
+      */
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /**
+      * Shows the dropdown menu of a given navbar or tabbed navigation.
+      */
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /**
+      * Toggles the dropdown menu of a given navbar or tabbed navigation.
+      */
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
+    
+    /**
+      * Updates the position of an element's dropdown.
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/dropdown", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/dropdown", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.dropdownMod.Dropdown.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.dropdownMod.Dropdown.Events & String] = js.native
       
-      /* "hidden.bs.dropdown" */ val hidden: typings.bootstrap.dropdownMod.Dropdown.Events.hidden with String = js.native
+      /* "hidden.bs.dropdown" */ val hidden: typings.bootstrap.dropdownMod.Dropdown.Events.hidden & String = js.native
       
-      /* "hide.bs.dropdown" */ val hide: typings.bootstrap.dropdownMod.Dropdown.Events.hide with String = js.native
+      /* "hide.bs.dropdown" */ val hide: typings.bootstrap.dropdownMod.Dropdown.Events.hide & String = js.native
       
-      /* "show.bs.dropdown" */ val show: typings.bootstrap.dropdownMod.Dropdown.Events.show with String = js.native
+      /* "show.bs.dropdown" */ val show: typings.bootstrap.dropdownMod.Dropdown.Events.show & String = js.native
       
-      /* "shown.bs.dropdown" */ val shown: typings.bootstrap.dropdownMod.Dropdown.Events.shown with String = js.native
+      /* "shown.bs.dropdown" */ val shown: typings.bootstrap.dropdownMod.Dropdown.Events.shown & String = js.native
     }
     
     /**
@@ -44,41 +79,38 @@ object dropdownMod {
       * with a DOM element.
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/dropdown", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Dropdown = js.native
-    @JSImport("bootstrap/js/dist/dropdown", "default.getInstance")
-    @js.native
-    def getInstance(element: Element, options: PartialOptionsBoundary): Dropdown = js.native
+    @scala.inline
+    def getInstance(element: Element): Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Dropdown]
+    @scala.inline
+    def getInstance(element: Element, options: PartialOptionsBoundary): Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dropdown]
   }
   
-  @js.native
   trait Dropdown extends StObject {
     
     /**
       * Destroys an element's dropdown.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Hides the dropdown menu of a given navbar or tabbed navigation.
       */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**
       * Shows the dropdown menu of a given navbar or tabbed navigation.
       */
-    def show(): Unit = js.native
+    def show(): Unit
     
     /**
       * Toggles the dropdown menu of a given navbar or tabbed navigation.
       */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
     
     /**
       * Updates the position of an element's dropdown.
       */
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Dropdown {
     
@@ -99,26 +131,34 @@ object dropdownMod {
         * CSS transitions have completed.
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * Fires immediately when the hide instance method has been called.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * Fires immediately when the show instance method is called.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * Fired when the dropdown has been made visible to the user and CSS
         * transitions have completed.
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
     @scala.inline
@@ -140,7 +180,6 @@ object dropdownMod {
       def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -152,7 +191,7 @@ object dropdownMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..preventOverflow.boundariesElement}
         * @default "scrollParent"
         */
-      var boundary: Boundary | Element = js.native
+      var boundary: Boundary | Element
       
       /**
         * By default, we use Popper.js for dynamic positioning. Disable this
@@ -160,7 +199,7 @@ object dropdownMod {
         *
         * @default "dynamic"
         */
-      var display: dynamic | static = js.native
+      var display: dynamic | static
       
       /**
         * Allow Dropdown to flip in case of an overlapping on the reference
@@ -169,7 +208,7 @@ object dropdownMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..flip.enabled}
         * @default true
         */
-      var flip: Boolean = js.native
+      var flip: Boolean
       
       /**
         * Offset of the dropdown relative to its target.
@@ -184,7 +223,7 @@ object dropdownMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..offset.offset}
         * @default 0
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * To change Bootstrap's default Popper.js config, see Popper.js's
@@ -193,7 +232,7 @@ object dropdownMod {
         * @see {@link https://popper.js.org/docs/v1/#Popper.Defaults}
         * @default null
         */
-      var popperConfig: PopperOptions | Null = js.native
+      var popperConfig: PopperOptions | Null
       
       /**
         * Reference element of the dropdown menu. Accepts the values of
@@ -203,7 +242,7 @@ object dropdownMod {
         * @see {@link https://popper.js.org/docs/v1/#referenceObject}
         * @default "toggle"
         */
-      var reference: toggle | parent | Element = js.native
+      var reference: toggle | parent | Element
     }
     object Options {
       
@@ -215,7 +254,7 @@ object dropdownMod {
         offset: Double,
         reference: toggle | parent | Element
       ): Options = {
-        val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], flip = flip.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], flip = flip.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], popperConfig = null)
         __obj.asInstanceOf[Options]
       }
       

@@ -2,31 +2,29 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCodeBindingRequest extends StObject {
   
   /**
     * The language of the code binding.
     */
-  var Language: string = js.native
+  var Language: string
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
   
   /**
     * The name of the schema.
     */
-  var SchemaName: string = js.native
+  var SchemaName: string
   
   /**
     * Specifying this limits the results to only this schema version.
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
 }
 object DescribeCodeBindingRequest {
   

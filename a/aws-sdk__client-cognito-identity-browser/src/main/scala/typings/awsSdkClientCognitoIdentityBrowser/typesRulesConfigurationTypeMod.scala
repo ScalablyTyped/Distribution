@@ -5,18 +5,16 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesMappingRuleMod.Unmarshall
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRulesConfigurationTypeMod {
   
-  @js.native
   trait RulesConfigurationType extends StObject {
     
     /**
       * <p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>
       */
-    var Rules: js.Array[MappingRule] | Iterable[MappingRule] = js.native
+    var Rules: js.Array[MappingRule] | Iterable[MappingRule]
   }
   object RulesConfigurationType {
     
@@ -37,14 +35,15 @@ object typesRulesConfigurationTypeMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRulesConfigurationType extends RulesConfigurationType {
+  trait UnmarshalledRulesConfigurationType
+    extends StObject
+       with RulesConfigurationType {
     
     /**
       * <p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>
       */
     @JSName("Rules")
-    var Rules_UnmarshalledRulesConfigurationType: js.Array[UnmarshalledMappingRule] = js.native
+    var Rules_UnmarshalledRulesConfigurationType: js.Array[UnmarshalledMappingRule]
   }
   object UnmarshalledRulesConfigurationType {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudMapServiceDiscovery extends StObject {
   
   /**
     * A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
     */
-  var attributes: js.UndefOr[AwsCloudMapInstanceAttributes] = js.native
+  var attributes: js.UndefOr[AwsCloudMapInstanceAttributes] = js.undefined
   
   /**
     * The name of the AWS Cloud Map namespace to use.
     */
-  var namespaceName: AwsCloudMapName = js.native
+  var namespaceName: AwsCloudMapName
   
   /**
     * The name of the AWS Cloud Map service to use.
     */
-  var serviceName: AwsCloudMapName = js.native
+  var serviceName: AwsCloudMapName
 }
 object AwsCloudMapServiceDiscovery {
   

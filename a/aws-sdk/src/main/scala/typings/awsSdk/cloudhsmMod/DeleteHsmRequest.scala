@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHsmRequest extends StObject {
   
   /**
     * The ARN of the HSM to delete.
     */
-  var HsmArn: typings.awsSdk.cloudhsmMod.HsmArn = js.native
+  var HsmArn: typings.awsSdk.cloudhsmMod.HsmArn
 }
 object DeleteHsmRequest {
   

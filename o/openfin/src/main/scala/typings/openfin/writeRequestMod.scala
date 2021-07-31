@@ -3,17 +3,15 @@ package typings.openfin
 import typings.openfin.anon.Html
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writeRequestMod {
   
-  @js.native
   trait WriteAnyRequestType extends StObject {
     
-    var data: Html = js.native
+    var data: Html
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WriteAnyRequestType {
     
@@ -37,12 +35,11 @@ object writeRequestMod {
     }
   }
   
-  @js.native
   trait WriteRequestType extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WriteRequestType {
     

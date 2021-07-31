@@ -2,7 +2,6 @@ package typings.twilsock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
@@ -12,9 +11,12 @@ object metadataMod {
   class Metadata () extends StObject
   object Metadata {
     
-    /* static member */
-    @JSImport("twilsock/lib/metadata", "Metadata.getMetadata")
+    @JSImport("twilsock/lib/metadata", "Metadata")
     @js.native
-    def getMetadata(options: js.Any): js.Object = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getMetadata(options: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
 }

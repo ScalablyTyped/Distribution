@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxTitleIndex object.
   */
-@js.native
-trait ASPxClientTitleIndex extends ASPxClientControl {
+trait ASPxClientTitleIndex
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTitleIndex]] = js.native
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTitleIndex]]
   
   /**
     * Fires on the client if any server error occurs during server-side processing of a callback sent by the ASPxClientTitleIndex.
     */
-  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTitleIndex]] = js.native
+  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTitleIndex]]
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTitleIndex]] = js.native
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTitleIndex]]
   
   /**
     * Fires after an item has been clicked.
     */
-  var ItemClick: ASPxClientEvent[ASPxClientTitleIndexItemEventHandler[ASPxClientTitleIndex]] = js.native
+  var ItemClick: ASPxClientEvent[ASPxClientTitleIndexItemEventHandler[ASPxClientTitleIndex]]
 }
 object ASPxClientTitleIndex {
   

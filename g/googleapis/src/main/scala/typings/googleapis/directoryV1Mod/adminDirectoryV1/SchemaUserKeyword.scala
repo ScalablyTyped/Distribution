@@ -2,19 +2,17 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a keyword entry.
   */
-@js.native
 trait SchemaUserKeyword extends StObject {
   
   /**
     * Custom Type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard type of that entry.
@@ -23,12 +21,12 @@ trait SchemaUserKeyword extends StObject {
     * name. Such types should have the CUSTOM value as type and also have a
     * customType value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Keyword.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaUserKeyword {
   

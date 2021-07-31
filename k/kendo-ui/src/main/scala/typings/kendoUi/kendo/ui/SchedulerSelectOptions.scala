@@ -3,21 +3,19 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerSelectOptions extends StObject {
   
-  var end: js.UndefOr[Date] = js.native
+  var end: js.UndefOr[Date] = js.undefined
   
-  var events: js.UndefOr[js.Array[_ | SchedulerEvent]] = js.native
+  var events: js.UndefOr[js.Array[js.Any | SchedulerEvent]] = js.undefined
   
-  var isAllDay: js.UndefOr[Boolean] = js.native
+  var isAllDay: js.UndefOr[Boolean] = js.undefined
   
-  var resources: js.UndefOr[js.Array[_]] = js.native
+  var resources: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var start: js.UndefOr[Date] = js.native
+  var start: js.UndefOr[Date] = js.undefined
 }
 object SchedulerSelectOptions {
   
@@ -37,7 +35,7 @@ object SchedulerSelectOptions {
     def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setEvents(value: js.Array[_ | SchedulerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[js.Any | SchedulerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -52,7 +50,7 @@ object SchedulerSelectOptions {
     def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
     @scala.inline
-    def setResources(value: js.Array[_]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)

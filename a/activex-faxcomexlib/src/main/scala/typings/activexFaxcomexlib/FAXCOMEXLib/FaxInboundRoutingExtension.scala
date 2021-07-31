@@ -3,48 +3,46 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxInboundRoutingExtension Class */
-@js.native
 trait FaxInboundRoutingExtension extends StObject {
   
   /** Is extension built in debug environment */
-  val Debug: Boolean = js.native
+  val Debug: Boolean
   
   @JSName("FAXCOMEXLib.FaxInboundRoutingExtension_typekey")
-  var FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: FaxInboundRoutingExtension = js.native
+  var FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: FaxInboundRoutingExtension
   
   /** Extension's friendly name */
-  val FriendlyName: String = js.native
+  val FriendlyName: String
   
   /** Full path and file name of the extension DLL */
-  val ImageName: String = js.native
+  val ImageName: String
   
   /** Last error code at load or initialization */
-  val InitErrorCode: Double = js.native
+  val InitErrorCode: Double
   
   /** The major part of extension's build number */
-  val MajorBuild: Double = js.native
+  val MajorBuild: Double
   
   /** The major part of extension's version number */
-  val MajorVersion: Double = js.native
+  val MajorVersion: Double
   
   /** Array of methods exposed by extension */
-  val Methods: SafeArray[String] = js.native
+  val Methods: SafeArray[String]
   
   /** The minor part of extension's build number */
-  val MinorBuild: Double = js.native
+  val MinorBuild: Double
   
   /** The minor part of extension's version number */
-  val MinorVersion: Double = js.native
+  val MinorVersion: Double
   
   /** Load and initialization status of the extension */
-  val Status: FAX_PROVIDER_STATUS_ENUM = js.native
+  val Status: FAX_PROVIDER_STATUS_ENUM
   
   /** Extension's unique name */
-  val UniqueName: String = js.native
+  val UniqueName: String
 }
 object FaxInboundRoutingExtension {
   

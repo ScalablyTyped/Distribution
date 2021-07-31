@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartDataLabelFormat extends Entity {
+trait WorkbookChartDataLabelFormat
+  extends StObject
+     with Entity {
   
   // Represents the fill format of the current chart data label. Read-only.
-  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.native
+  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.undefined
   
   // Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
-  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.native
+  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.undefined
 }
 object WorkbookChartDataLabelFormat {
   

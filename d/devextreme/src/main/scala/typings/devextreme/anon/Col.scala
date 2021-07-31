@@ -2,21 +2,19 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Col extends StObject {
   
-  var col: js.UndefOr[Double] = js.native
+  var col: js.UndefOr[Double] = js.undefined
   
-  var colspan: js.UndefOr[Double] = js.native
+  var colspan: js.UndefOr[Double] = js.undefined
   
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
   
-  var rowspan: js.UndefOr[Double] = js.native
+  var rowspan: js.UndefOr[Double] = js.undefined
   
-  var screen: js.UndefOr[String] = js.native
+  var screen: js.UndefOr[String] = js.undefined
 }
 object Col {
   

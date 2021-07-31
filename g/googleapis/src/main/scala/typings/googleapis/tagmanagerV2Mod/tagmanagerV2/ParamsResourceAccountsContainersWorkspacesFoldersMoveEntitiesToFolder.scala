@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsContainersWorkspacesFoldersMoveEntitiesToFolder extends StandardParameters {
+trait ParamsResourceAccountsContainersWorkspacesFoldersMoveEntitiesToFolder
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * GTM Folder's API relative path. Example:
     * accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}/folders/{folder_id}
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFolder] = js.native
+  var requestBody: js.UndefOr[SchemaFolder] = js.undefined
   
   /**
     * The tags to be moved to the folder.
     */
-  var tagId: js.UndefOr[js.Array[String]] = js.native
+  var tagId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The triggers to be moved to the folder.
     */
-  var triggerId: js.UndefOr[js.Array[String]] = js.native
+  var triggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The variables to be moved to the folder.
     */
-  var variableId: js.UndefOr[js.Array[String]] = js.native
+  var variableId: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceAccountsContainersWorkspacesFoldersMoveEntitiesToFolder {
   

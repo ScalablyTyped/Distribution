@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSchemaResponse extends StObject {
   
   /**
     * The requested schema.
     */
-  var schema: js.UndefOr[DatasetSchema] = js.native
+  var schema: js.UndefOr[DatasetSchema] = js.undefined
 }
 object DescribeSchemaResponse {
   

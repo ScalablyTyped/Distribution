@@ -3,14 +3,15 @@ package typings.mendixmodelsdk.pagesMod.pages
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://docs.mendix.com/refguide/snippet relevant section in reference guide}
   */
 @js.native
-trait ISnippet extends IFormBase {
+trait ISnippet
+  extends StObject
+     with IFormBase {
   
   val entity: IEntity | Null = js.native
   

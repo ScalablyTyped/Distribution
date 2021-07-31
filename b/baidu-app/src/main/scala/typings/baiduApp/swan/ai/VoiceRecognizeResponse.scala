@@ -2,13 +2,11 @@ package typings.baiduApp.swan.ai
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceRecognizeResponse extends StObject {
   
-  var result: String = js.native
+  var result: String
 }
 object VoiceRecognizeResponse {
   

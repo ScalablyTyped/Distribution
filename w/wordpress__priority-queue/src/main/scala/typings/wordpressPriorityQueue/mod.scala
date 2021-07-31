@@ -2,32 +2,33 @@ package typings.wordpressPriorityQueue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/priority-queue", "createQueue")
+  @JSImport("@wordpress/priority-queue", JSImport.Namespace)
   @js.native
-  def createQueue(): WPPriorityQueue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createQueue(): WPPriorityQueue = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueue")().asInstanceOf[WPPriorityQueue]
+  
   trait WPPriorityQueue extends StObject {
     
     /**
       * Add callback to queue for context.
       */
-    def add(element: js.Object, item: js.Function0[Unit]): Unit = js.native
+    def add(element: js.Object, item: js.Function0[Unit]): Unit
     
     /**
       * Flush queue for context.
       */
-    def flush(element: js.Object): Boolean = js.native
+    def flush(element: js.Object): Boolean
     
     /**
       * Reset queue.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object WPPriorityQueue {
     

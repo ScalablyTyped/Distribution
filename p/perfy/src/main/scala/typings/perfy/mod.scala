@@ -3,7 +3,6 @@ package typings.perfy
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -85,41 +84,40 @@ object mod extends Shortcut {
     def start(name: String, autoDestroy: Boolean): this.type = js.native
   }
   
-  @js.native
   trait PerfyResult extends StObject {
     
     /** UTC end time of the execution (low-resolution). e.g. 1533302466486 */
-    val endTime: Double = js.native
+    val endTime: Double
     
     /** Float representation of full elapsed time in milliseconds. e.g. 1235.125 */
-    val fullMilliseconds: Double = js.native
+    val fullMilliseconds: Double
     
     /** Float representation of full elapsed time in nanoseconds. e.g. 1235125283 */
-    val fullNanoseconds: Double = js.native
+    val fullNanoseconds: Double
     
     /** Alias of `time` */
-    val fullSeconds: Double = js.native
+    val fullSeconds: Double
     
     /** Nanoseconds portion converted to milliseconds. 235.125283 */
-    val milliseconds: Double = js.native
+    val milliseconds: Double
     
     /** Initialized name of the performance instance */
-    val name: String = js.native
+    val name: String
     
     /** Nanoseconds portion of the elapsed time. e.g. 235125283 */
-    val nanoseconds: Double = js.native
+    val nanoseconds: Double
     
     /** Seconds portion of the elapsed time. e.g. 1 */
-    val seconds: Double = js.native
+    val seconds: Double
     
     /** UTC start time of the execution (low-resolution). e.g. 1533302465251 */
-    val startTime: Double = js.native
+    val startTime: Double
     
     /** Text summary shorthand for elapsed time */
-    val summary: String = js.native
+    val summary: String
     
     /** Number — Float representation of full elapsed time in seconds. e.g. 1.235 */
-    val time: Double = js.native
+    val time: Double
   }
   object PerfyResult {
     

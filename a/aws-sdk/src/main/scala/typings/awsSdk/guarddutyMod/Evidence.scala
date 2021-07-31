@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Evidence extends StObject {
   
   /**
     * A list of threat intelligence details related to the evidence.
     */
-  var ThreatIntelligenceDetails: js.UndefOr[typings.awsSdk.guarddutyMod.ThreatIntelligenceDetails] = js.native
+  var ThreatIntelligenceDetails: js.UndefOr[typings.awsSdk.guarddutyMod.ThreatIntelligenceDetails] = js.undefined
 }
 object Evidence {
   

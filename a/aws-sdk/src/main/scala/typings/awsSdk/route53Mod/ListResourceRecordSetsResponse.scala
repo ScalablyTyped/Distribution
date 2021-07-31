@@ -2,41 +2,39 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceRecordSetsResponse extends StObject {
   
   /**
     * A flag that indicates whether more resource record sets remain to be listed. If your results were truncated, you can make a follow-up pagination request by using the NextRecordName element.
     */
-  var IsTruncated: PageTruncated = js.native
+  var IsTruncated: PageTruncated
   
   /**
     * The maximum number of records you requested.
     */
-  var MaxItems: PageMaxItems = js.native
+  var MaxItems: PageMaxItems
   
   /**
     *  Resource record sets that have a routing policy other than simple: If results were truncated for a given DNS name and type, the value of SetIdentifier for the next resource record set that has the current DNS name and type. For information about routing policies, see Choosing a Routing Policy in the Amazon Route 53 Developer Guide.
     */
-  var NextRecordIdentifier: js.UndefOr[ResourceRecordSetIdentifier] = js.native
+  var NextRecordIdentifier: js.UndefOr[ResourceRecordSetIdentifier] = js.undefined
   
   /**
     * If the results were truncated, the name of the next record in the list. This element is present only if IsTruncated is true. 
     */
-  var NextRecordName: js.UndefOr[DNSName] = js.native
+  var NextRecordName: js.UndefOr[DNSName] = js.undefined
   
   /**
     * If the results were truncated, the type of the next record in the list. This element is present only if IsTruncated is true. 
     */
-  var NextRecordType: js.UndefOr[RRType] = js.native
+  var NextRecordType: js.UndefOr[RRType] = js.undefined
   
   /**
     * Information about multiple resource record sets.
     */
-  var ResourceRecordSets: typings.awsSdk.route53Mod.ResourceRecordSets = js.native
+  var ResourceRecordSets: typings.awsSdk.route53Mod.ResourceRecordSets
 }
 object ListResourceRecordSetsResponse {
   

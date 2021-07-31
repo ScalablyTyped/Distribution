@@ -10,25 +10,29 @@ import typings.blessed.mod.Widgets.Types.TAlign
 import typings.blessed.mod.Widgets.Types.TMouseAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blessedStrings {
   
   @js.native
   sealed trait action
-    extends ListElementEventType
+    extends StObject
+       with ListElementEventType
        with TextareaElementEventType
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait `add item` extends ListElementEventType
+  sealed trait `add item`
+    extends StObject
+       with ListElementEventType
   @scala.inline
   def `add item`: `add item` = ("add item").asInstanceOf[`add item`]
   
   @js.native
-  sealed trait adopt extends NodeEventType
+  sealed trait adopt
+    extends StObject
+       with NodeEventType
   @scala.inline
   def adopt: adopt = "adopt".asInstanceOf[adopt]
   
@@ -38,7 +42,9 @@ object blessedStrings {
   def ansi: ansi = "ansi".asInstanceOf[ansi]
   
   @js.native
-  sealed trait attach extends NodeEventType
+  sealed trait attach
+    extends StObject
+       with NodeEventType
   @scala.inline
   def attach: attach = "attach".asInstanceOf[attach]
   
@@ -53,7 +59,9 @@ object blessedStrings {
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait blur extends NodeScreenEventType
+  sealed trait blur
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
@@ -64,7 +72,8 @@ object blessedStrings {
   
   @js.native
   sealed trait cancel
-    extends ListElementEventType
+    extends StObject
+       with ListElementEventType
        with TextareaElementEventType
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
@@ -75,12 +84,16 @@ object blessedStrings {
   def cd: cd = "cd".asInstanceOf[cd]
   
   @js.native
-  sealed trait center extends TAlign
+  sealed trait center
+    extends StObject
+       with TAlign
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait click extends NodeScreenEventType
+  sealed trait click
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   
@@ -95,42 +108,58 @@ object blessedStrings {
   def cpu: cpu = "cpu".asInstanceOf[cpu]
   
   @js.native
-  sealed trait `create item` extends ListElementEventType
+  sealed trait `create item`
+    extends StObject
+       with ListElementEventType
   @scala.inline
   def `create item`: `create item` = ("create item").asInstanceOf[`create item`]
   
   @js.native
-  sealed trait destroy extends NodeGenericEventType
+  sealed trait destroy
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait detach extends NodeEventType
+  sealed trait detach
+    extends StObject
+       with NodeEventType
   @scala.inline
   def detach: detach = "detach".asInstanceOf[detach]
   
   @js.native
-  sealed trait `element click` extends NodeScreenEventType
+  sealed trait `element click`
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def `element click`: `element click` = ("element click").asInstanceOf[`element click`]
   
   @js.native
-  sealed trait `element mouseout` extends NodeScreenEventType
+  sealed trait `element mouseout`
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def `element mouseout`: `element mouseout` = ("element mouseout").asInstanceOf[`element mouseout`]
   
   @js.native
-  sealed trait `element mouseover` extends NodeScreenEventType
+  sealed trait `element mouseover`
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def `element mouseover`: `element mouseover` = ("element mouseover").asInstanceOf[`element mouseover`]
   
   @js.native
-  sealed trait `element mouseup` extends NodeScreenEventType
+  sealed trait `element mouseup`
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def `element mouseup`: `element mouseup` = ("element mouseup").asInstanceOf[`element mouseup`]
   
   @js.native
-  sealed trait error extends TextareaElementEventType
+  sealed trait error
+    extends StObject
+       with TextareaElementEventType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -140,7 +169,9 @@ object blessedStrings {
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait focus extends NodeScreenEventType
+  sealed trait focus
+    extends StObject
+       with NodeScreenEventType
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   
@@ -150,7 +181,9 @@ object blessedStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hide extends NodeGenericEventType
+  sealed trait hide
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   
@@ -170,7 +203,9 @@ object blessedStrings {
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   
   @js.native
-  sealed trait `insert item` extends ListElementEventType
+  sealed trait `insert item`
+    extends StObject
+       with ListElementEventType
   @scala.inline
   def `insert item`: `insert item` = ("insert item").asInstanceOf[`insert item`]
   
@@ -180,7 +215,9 @@ object blessedStrings {
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait left extends TAlign
+  sealed trait left
+    extends StObject
+       with TAlign
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -200,48 +237,61 @@ object blessedStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait mouse extends NodeMouseEventType
+  sealed trait mouse
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait mousedown
-    extends NodeMouseEventType
+    extends StObject
+       with NodeMouseEventType
        with TMouseAction
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
   sealed trait mousemove
-    extends NodeMouseEventType
+    extends StObject
+       with NodeMouseEventType
        with TMouseAction
   @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait mouseout extends NodeMouseEventType
+  sealed trait mouseout
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   
   @js.native
-  sealed trait mouseover extends NodeMouseEventType
+  sealed trait mouseover
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   
   @js.native
   sealed trait mouseup
-    extends NodeMouseEventType
+    extends StObject
+       with NodeMouseEventType
        with TMouseAction
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait mousewheel extends NodeMouseEventType
+  sealed trait mousewheel
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
   
   @js.native
-  sealed trait move extends NodeGenericEventType
+  sealed trait move
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
@@ -251,12 +301,16 @@ object blessedStrings {
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait `parsed content` extends NodeGenericEventType
+  sealed trait `parsed content`
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def `parsed content`: `parsed content` = ("parsed content").asInstanceOf[`parsed content`]
   
   @js.native
-  sealed trait prerender extends NodeGenericEventType
+  sealed trait prerender
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def prerender: prerender = "prerender".asInstanceOf[prerender]
   
@@ -271,22 +325,30 @@ object blessedStrings {
   def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait remove extends NodeEventType
+  sealed trait remove
+    extends StObject
+       with NodeEventType
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait `remove item` extends ListElementEventType
+  sealed trait `remove item`
+    extends StObject
+       with ListElementEventType
   @scala.inline
   def `remove item`: `remove item` = ("remove item").asInstanceOf[`remove item`]
   
   @js.native
-  sealed trait render extends NodeGenericEventType
+  sealed trait render
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def render: render = "render".asInstanceOf[render]
   
   @js.native
-  sealed trait reparent extends NodeEventType
+  sealed trait reparent
+    extends StObject
+       with NodeEventType
   @scala.inline
   def reparent: reparent = "reparent".asInstanceOf[reparent]
   
@@ -296,12 +358,16 @@ object blessedStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait resize extends NodeGenericEventType
+  sealed trait resize
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait right extends TAlign
+  sealed trait right
+    extends StObject
+       with TAlign
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -326,22 +392,30 @@ object blessedStrings {
   def `select tab`: `select tab` = ("select tab").asInstanceOf[`select tab`]
   
   @js.native
-  sealed trait `set content` extends NodeGenericEventType
+  sealed trait `set content`
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def `set content`: `set content` = ("set content").asInstanceOf[`set content`]
   
   @js.native
-  sealed trait `set items` extends ListElementEventType
+  sealed trait `set items`
+    extends StObject
+       with ListElementEventType
   @scala.inline
   def `set items`: `set items` = ("set items").asInstanceOf[`set items`]
   
   @js.native
-  sealed trait show extends NodeGenericEventType
+  sealed trait show
+    extends StObject
+       with NodeGenericEventType
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait submit extends TextareaElementEventType
+  sealed trait submit
+    extends StObject
+       with TextareaElementEventType
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   
@@ -371,12 +445,16 @@ object blessedStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wheeldown extends NodeMouseEventType
+  sealed trait wheeldown
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def wheeldown: wheeldown = "wheeldown".asInstanceOf[wheeldown]
   
   @js.native
-  sealed trait wheelup extends NodeMouseEventType
+  sealed trait wheelup
+    extends StObject
+       with NodeMouseEventType
   @scala.inline
   def wheelup: wheelup = "wheelup".asInstanceOf[wheelup]
 }

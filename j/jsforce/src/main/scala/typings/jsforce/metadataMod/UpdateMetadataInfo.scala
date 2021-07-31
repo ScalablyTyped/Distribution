@@ -2,15 +2,13 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMetadataInfo extends StObject {
   
-  var currentName: String = js.native
+  var currentName: String
   
-  var metadata: MetadataInfo = js.native
+  var metadata: MetadataInfo
 }
 object UpdateMetadataInfo {
   

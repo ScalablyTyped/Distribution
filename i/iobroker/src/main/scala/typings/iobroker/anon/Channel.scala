@@ -2,17 +2,15 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var device: String = js.native
+  var device: String
   
-  var state: String = js.native
+  var state: String
 }
 object Channel {
   

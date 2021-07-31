@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDominantLanguageDetectionJobResponse extends StObject {
   
   /**
     * The identifier of the dominant language detection job to stop.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.undefined
   
   /**
     * Either STOP_REQUESTED if the job is currently running, or STOPPED if the job was previously stopped with the StopDominantLanguageDetectionJob operation.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.undefined
 }
 object StopDominantLanguageDetectionJobResponse {
   

@@ -2,17 +2,15 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclECCBasic extends StObject {
   
-  def generateKeys(cn: String): SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey] = js.native
+  def generateKeys(cn: String): SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]
   
-  var publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey] = js.native
+  var publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey]
   
-  var secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey] = js.native
+  var secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
 }
 object SjclECCBasic {
   

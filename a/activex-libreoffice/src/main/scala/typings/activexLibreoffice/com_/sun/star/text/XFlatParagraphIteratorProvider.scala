@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to ...
   * @since OOo 3.0
   */
-@js.native
-trait XFlatParagraphIteratorProvider extends XInterface {
+trait XFlatParagraphIteratorProvider
+  extends StObject
+     with XInterface {
   
   /**
     * get {@link XFlatParagraphIterator}
@@ -21,7 +21,7 @@ trait XFlatParagraphIteratorProvider extends XInterface {
     * @returns the iterator.
     * @throws IllegalArgumentException if any argument is wrong.
     */
-  def getFlatParagraphIterator(nType: Double, bAutomatic: Boolean): XFlatParagraphIterator = js.native
+  def getFlatParagraphIterator(nType: Double, bAutomatic: Boolean): XFlatParagraphIterator
 }
 object XFlatParagraphIteratorProvider {
   

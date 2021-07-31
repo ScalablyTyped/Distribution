@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteScalingPolicyInput extends StObject {
   
   /**
     * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
   
   /**
     * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
     */
-  var Name: NonZeroAndMaxString = js.native
+  var Name: NonZeroAndMaxString
 }
 object DeleteScalingPolicyInput {
   

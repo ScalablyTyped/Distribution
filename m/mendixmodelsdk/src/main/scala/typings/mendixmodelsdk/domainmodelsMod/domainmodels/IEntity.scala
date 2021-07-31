@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.instancesMod.IList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait IEntity
-  extends IElement
+  extends StObject
+     with IElement
      with IByNameReferrable {
   
   val attributes: IList[IAttribute] = js.native

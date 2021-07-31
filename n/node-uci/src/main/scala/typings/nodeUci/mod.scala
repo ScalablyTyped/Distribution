@@ -3,7 +3,6 @@ package typings.nodeUci
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -68,30 +67,29 @@ object mod {
     def ucinewgame(): EngineChain = js.native
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
-    var binc: js.UndefOr[Double] = js.native
+    var binc: js.UndefOr[Double] = js.undefined
     
-    var btime: js.UndefOr[Double] = js.native
+    var btime: js.UndefOr[Double] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var mate: js.UndefOr[Double] = js.native
+    var mate: js.UndefOr[Double] = js.undefined
     
-    var movestogo: js.UndefOr[Double] = js.native
+    var movestogo: js.UndefOr[Double] = js.undefined
     
-    var movetime: js.UndefOr[Double] = js.native
+    var movetime: js.UndefOr[Double] = js.undefined
     
-    var nodes: js.UndefOr[Double] = js.native
+    var nodes: js.UndefOr[Double] = js.undefined
     
-    var ponder: js.UndefOr[Boolean] = js.native
+    var ponder: js.UndefOr[Boolean] = js.undefined
     
-    var searchmoves: js.UndefOr[js.Array[String]] = js.native
+    var searchmoves: js.UndefOr[js.Array[String]] = js.undefined
     
-    var winc: js.UndefOr[Double] = js.native
+    var winc: js.UndefOr[Double] = js.undefined
     
-    var wtime: js.UndefOr[Double] = js.native
+    var wtime: js.UndefOr[Double] = js.undefined
   }
   object SearchOptions {
     
@@ -175,12 +173,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchResult extends StObject {
     
-    var bestmove: String = js.native
+    var bestmove: String
     
-    var info: js.Array[String] = js.native
+    var info: js.Array[String]
   }
   object SearchResult {
     

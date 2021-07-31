@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It is normally represented by a sequence of {@link com.sun.star.beans.PropertyValues} .
   */
-@js.native
 trait NumberingRule
-  extends NumberingAlignment
+  extends StObject
+     with NumberingAlignment
      with NumberingLevel
 object NumberingRule {
   

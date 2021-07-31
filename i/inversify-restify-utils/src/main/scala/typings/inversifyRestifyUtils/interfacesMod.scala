@@ -7,7 +7,6 @@ import typings.std.PropertyKey
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -16,17 +15,15 @@ object interfacesMod {
     
     type ConfigFunction = js.Function1[/* app */ Server, Unit]
     
-    @js.native
     trait Controller extends StObject
     
-    @js.native
     trait ControllerMetadata extends StObject {
       
-      var middleware: js.Array[Middleware] = js.native
+      var middleware: js.Array[Middleware]
       
-      var path: String = js.native
+      var path: String
       
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object ControllerMetadata {
       
@@ -53,18 +50,17 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait ControllerMethodMetadata extends StObject {
       
-      var key: String = js.native
+      var key: String
       
-      var method: String = js.native
+      var method: String
       
-      var middleware: js.Array[Middleware] = js.native
+      var middleware: js.Array[Middleware]
       
-      var options: RouteOptions = js.native
+      var options: RouteOptions
       
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object ControllerMethodMetadata {
       
@@ -114,11 +110,11 @@ object interfacesMod {
     */
     type RouteOptions = _RouteOptions | StrOrRegex
     
-    @js.native
     trait ServerOptions
-      extends typings.restify.mod.ServerOptions {
+      extends StObject
+         with typings.restify.mod.ServerOptions {
       
-      var defaultRoot: js.UndefOr[String] = js.native
+      var defaultRoot: js.UndefOr[String] = js.undefined
     }
     object ServerOptions {
       

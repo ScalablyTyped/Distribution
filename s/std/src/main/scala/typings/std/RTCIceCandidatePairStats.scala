@@ -2,37 +2,37 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCIceCandidatePairStats extends RTCStats {
+trait RTCIceCandidatePairStats
+  extends StObject
+     with RTCStats {
   
-  var availableIncomingBitrate: js.UndefOr[Double] = js.native
+  var availableIncomingBitrate: js.UndefOr[Double] = js.undefined
   
-  var availableOutgoingBitrate: js.UndefOr[Double] = js.native
+  var availableOutgoingBitrate: js.UndefOr[Double] = js.undefined
   
-  var bytesReceived: js.UndefOr[Double] = js.native
+  var bytesReceived: js.UndefOr[Double] = js.undefined
   
-  var bytesSent: js.UndefOr[Double] = js.native
+  var bytesSent: js.UndefOr[Double] = js.undefined
   
-  var localCandidateId: js.UndefOr[java.lang.String] = js.native
+  var localCandidateId: js.UndefOr[java.lang.String] = js.undefined
   
-  var nominated: js.UndefOr[scala.Boolean] = js.native
+  var nominated: js.UndefOr[scala.Boolean] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var readable: js.UndefOr[scala.Boolean] = js.native
+  var readable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var remoteCandidateId: js.UndefOr[java.lang.String] = js.native
+  var remoteCandidateId: js.UndefOr[java.lang.String] = js.undefined
   
-  var roundTripTime: js.UndefOr[Double] = js.native
+  var roundTripTime: js.UndefOr[Double] = js.undefined
   
-  var state: js.UndefOr[RTCStatsIceCandidatePairState] = js.native
+  var state: js.UndefOr[RTCStatsIceCandidatePairState] = js.undefined
   
-  var transportId: js.UndefOr[java.lang.String] = js.native
+  var transportId: js.UndefOr[java.lang.String] = js.undefined
   
-  var writable: js.UndefOr[scala.Boolean] = js.native
+  var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 object RTCIceCandidatePairStats {
   

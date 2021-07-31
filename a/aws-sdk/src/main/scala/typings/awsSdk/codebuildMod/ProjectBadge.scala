@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectBadge extends StObject {
   
   /**
     * Set this to true to generate a publicly accessible URL for your project's build badge.
     */
-  var badgeEnabled: js.UndefOr[Boolean] = js.native
+  var badgeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The publicly-accessible URL through which you can access the build badge for your project.  The publicly accessible URL through which you can access the build badge for your project. 
     */
-  var badgeRequestUrl: js.UndefOr[String] = js.native
+  var badgeRequestUrl: js.UndefOr[String] = js.undefined
 }
 object ProjectBadge {
   

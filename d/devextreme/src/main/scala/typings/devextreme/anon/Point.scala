@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.viz.chartPointObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
-  var point: js.UndefOr[chartPointObject] = js.native
+  var point: js.UndefOr[chartPointObject] = js.undefined
   
-  var value: js.UndefOr[typings.std.Date | Double | String] = js.native
+  var value: js.UndefOr[typings.std.Date | Double | String] = js.undefined
   
-  var valueText: js.UndefOr[String] = js.native
+  var valueText: js.UndefOr[String] = js.undefined
 }
 object Point {
   

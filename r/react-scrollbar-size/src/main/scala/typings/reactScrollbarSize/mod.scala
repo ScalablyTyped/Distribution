@@ -3,7 +3,6 @@ package typings.reactScrollbarSize
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,11 @@ object mod {
   class default ()
     extends Component[ScrollbarSizeProps, js.Object, js.Any]
   
-  @js.native
   trait Measurement extends StObject {
     
-    var scrollbarHeight: Double = js.native
+    var scrollbarHeight: Double
     
-    var scrollbarWidth: Double = js.native
+    var scrollbarWidth: Double
   }
   object Measurement {
     
@@ -41,12 +39,11 @@ object mod {
   
   type ScrollbarSize = Component[ScrollbarSizeProps, js.Object, js.Any]
   
-  @js.native
   trait ScrollbarSizeProps extends StObject {
     
-    var onChange: js.UndefOr[js.Function1[/* measurement */ Measurement, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* measurement */ Measurement, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* measurement */ Measurement, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* measurement */ Measurement, Unit]] = js.undefined
   }
   object ScrollbarSizeProps {
     

@@ -2,31 +2,29 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefinementControl extends StObject {
   
-  var alternateRenderContext: js.Any = js.native
+  var alternateRenderContext: js.Any
   
-  var alternateRenderer: js.Any = js.native
+  var alternateRenderer: js.Any
   
-  var containerId: String = js.native
+  var containerId: String
   
-  var countDisplay: String = js.native
+  var countDisplay: String
   
-  var deepHits: Double = js.native
+  var deepHits: Double
   
-  var overrideDisplayName: String = js.native
+  var overrideDisplayName: String
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var renderTemplateId: String = js.native
+  var renderTemplateId: String
   
-  var spec: String = js.native
+  var spec: String
   
-  var useDefaultDateIntervals: Boolean = js.native
+  var useDefaultDateIntervals: Boolean
 }
 object RefinementControl {
   

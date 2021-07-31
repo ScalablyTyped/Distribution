@@ -3,21 +3,19 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionStatusHistory extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var status: TransactionStatus = js.native
+  var status: TransactionStatus
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
-  var transactionsource: TransactionSource = js.native
+  var transactionsource: TransactionSource
   
-  var user: String = js.native
+  var user: String
 }
 object TransactionStatusHistory {
   

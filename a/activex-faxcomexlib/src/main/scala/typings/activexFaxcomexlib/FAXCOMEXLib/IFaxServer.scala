@@ -3,66 +3,64 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxServer interface */
-@js.native
 trait IFaxServer extends StObject {
   
   /** Version of the fax server API */
-  val APIVersion: FAX_SERVER_APIVERSION_ENUM = js.native
+  val APIVersion: FAX_SERVER_APIVERSION_ENUM
   
   /** The fax server activity status object */
-  val Activity: FaxActivity = js.native
+  val Activity: FaxActivity
   
   /** Connect to the fax server */
-  def Connect(bstrServerName: String): Unit = js.native
+  def Connect(bstrServerName: String): Unit
   
   /** Is fax server built in debug environment */
-  val Debug: Boolean = js.native
+  val Debug: Boolean
   
   /** Disconnect from the fax server */
-  def Disconnect(): Unit = js.native
+  def Disconnect(): Unit
   
   /** The fax folders object */
-  val Folders: FaxFolders = js.native
+  val Folders: FaxFolders
   
   /** The collection of device providers */
-  def GetDeviceProviders(): FaxDeviceProviders = js.native
+  def GetDeviceProviders(): FaxDeviceProviders
   
   /** The collection of all available devices */
-  def GetDevices(): FaxDevices = js.native
+  def GetDevices(): FaxDevices
   
   /** Return server level extention property */
-  def GetExtensionProperty(bstrGUID: String): js.Any = js.native
+  def GetExtensionProperty(bstrGUID: String): js.Any
   
   /** The inbound routing configuration object */
-  val InboundRouting: FaxInboundRouting = js.native
+  val InboundRouting: FaxInboundRouting
   
   /** Set bit-wise combination of events the fax server listens to */
-  def ListenToServerEvents(EventTypes: FAX_SERVER_EVENTS_TYPE_ENUM): Unit = js.native
+  def ListenToServerEvents(EventTypes: FAX_SERVER_EVENTS_TYPE_ENUM): Unit
   
   /** The logging options configuration object */
-  val LoggingOptions: FaxLoggingOptions = js.native
+  val LoggingOptions: FaxLoggingOptions
   
   /** The major part of the fax server's build number */
-  val MajorBuild: Double = js.native
+  val MajorBuild: Double
   
   /** The major part of the fax server's version number */
-  val MajorVersion: Double = js.native
+  val MajorVersion: Double
   
   /** The minor part of the fax server's build number */
-  val MinorBuild: Double = js.native
+  val MinorBuild: Double
   
   /** The minor part of the fax server's version number */
-  val MinorVersion: Double = js.native
+  val MinorVersion: Double
   
   /** The outbound routing configuration object */
-  val OutboundRouting: FaxOutboundRouting = js.native
+  val OutboundRouting: FaxOutboundRouting
   
   /** The receipt options configuration object */
-  val ReceiptOptions: FaxReceiptOptions = js.native
+  val ReceiptOptions: FaxReceiptOptions
   
   /** Register device provider */
   def RegisterDeviceProvider(
@@ -71,28 +69,28 @@ trait IFaxServer extends StObject {
     bstrImageName: String,
     TspName: String,
     lFSPIVersion: Double
-  ): Unit = js.native
+  ): Unit
   
   /** Register inbound routing extension */
-  def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: js.Any): Unit = js.native
+  def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: js.Any): Unit
   
   /** Events the fax Server is listening to */
-  val RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM = js.native
+  val RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM
   
   /** The security configuration object */
-  val Security: FaxSecurity = js.native
+  val Security: FaxSecurity
   
   /** The name of the fax server */
-  val ServerName: String = js.native
+  val ServerName: String
   
   /** Set server level extention property */
-  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[_]): Unit = js.native
+  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit
   
   /** Unregister device provider */
-  def UnregisterDeviceProvider(bstrUniqueName: String): Unit = js.native
+  def UnregisterDeviceProvider(bstrUniqueName: String): Unit
   
   /** Unregister inbound routing extension */
-  def UnregisterInboundRoutingExtension(bstrExtensionUniqueName: String): Unit = js.native
+  def UnregisterInboundRoutingExtension(bstrExtensionUniqueName: String): Unit
 }
 object IFaxServer {
   
@@ -121,7 +119,7 @@ object IFaxServer {
     RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM,
     Security: FaxSecurity,
     ServerName: String,
-    SetExtensionProperty: (String, SafeArray[_]) => Unit,
+    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
     UnregisterDeviceProvider: String => Unit,
     UnregisterInboundRoutingExtension: String => Unit
   ): IFaxServer = {
@@ -202,7 +200,7 @@ object IFaxServer {
     def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
+    def setSetExtensionProperty(value: (String, SafeArray[js.Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     @scala.inline
     def setUnregisterDeviceProvider(value: String => Unit): Self = StObject.set(x, "UnregisterDeviceProvider", js.Any.fromFunction1(value))

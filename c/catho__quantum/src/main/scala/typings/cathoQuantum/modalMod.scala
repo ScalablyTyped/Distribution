@@ -14,7 +14,6 @@ import typings.std.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -62,18 +61,17 @@ object modalMod {
   
   type ModalHeader = ComponentType[StaticProps]
   
-  @js.native
   trait ModalProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var theme: js.UndefOr[BreakpointsColors] = js.native
+    var theme: js.UndefOr[BreakpointsColors] = js.undefined
   }
   object ModalProps {
     
@@ -121,10 +119,9 @@ object modalMod {
     }
   }
   
-  @js.native
   trait StaticProps extends StObject {
     
-    var theme: js.UndefOr[`1`] = js.native
+    var theme: js.UndefOr[`1`] = js.undefined
   }
   object StaticProps {
     

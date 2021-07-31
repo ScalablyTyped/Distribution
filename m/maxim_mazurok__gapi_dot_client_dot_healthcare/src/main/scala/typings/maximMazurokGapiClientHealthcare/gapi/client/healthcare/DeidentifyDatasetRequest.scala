@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeidentifyDatasetRequest extends StObject {
   
   /** Deidentify configuration. */
-  var config: js.UndefOr[DeidentifyConfig] = js.native
+  var config: js.UndefOr[DeidentifyConfig] = js.undefined
   
   /**
     * The name of the dataset resource to create and write the redacted data to. * The destination dataset must not exist. * The destination dataset must be in the same project and
     * location as the source dataset. De-identifying data across multiple projects or locations is not supported.
     */
-  var destinationDataset: js.UndefOr[String] = js.native
+  var destinationDataset: js.UndefOr[String] = js.undefined
 }
 object DeidentifyDatasetRequest {
   

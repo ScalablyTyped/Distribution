@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSNonNullExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `95` extends StObject {
   
-  var `type`: TSNonNullExpression = js.native
+  var `type`: TSNonNullExpression
 }
 object `95` {
   
   @scala.inline
-  def apply(`type`: TSNonNullExpression): `95` = {
+  def apply(): `95` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[`95`]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedAdvisorResourcesSummary extends StObject {
   
   /**
     * The number of AWS resources that were flagged (listed) by the Trusted Advisor check.
     */
-  var resourcesFlagged: Long = js.native
+  var resourcesFlagged: Long
   
   /**
     * The number of AWS resources ignored by Trusted Advisor because information was unavailable.
     */
-  var resourcesIgnored: Long = js.native
+  var resourcesIgnored: Long
   
   /**
     * The number of AWS resources that were analyzed by the Trusted Advisor check.
     */
-  var resourcesProcessed: Long = js.native
+  var resourcesProcessed: Long
   
   /**
     * The number of AWS resources ignored by Trusted Advisor because they were marked as suppressed by the user.
     */
-  var resourcesSuppressed: Long = js.native
+  var resourcesSuppressed: Long
 }
 object TrustedAdvisorResourcesSummary {
   

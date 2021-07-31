@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Collectdtimeseries")
@@ -77,7 +76,7 @@ class ResourceProjectsCollectdtimeseries protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(params: ParamsResourceProjectsCollectdtimeseriesCreate): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(
     params: ParamsResourceProjectsCollectdtimeseriesCreate,

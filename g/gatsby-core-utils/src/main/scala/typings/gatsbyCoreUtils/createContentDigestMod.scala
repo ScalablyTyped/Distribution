@@ -3,18 +3,18 @@ package typings.gatsbyCoreUtils
 import typings.node.cryptoMod.BinaryLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createContentDigestMod {
   
-  @JSImport("gatsby-core-utils/dist/create-content-digest", "createContentDigest")
+  @JSImport("gatsby-core-utils/dist/create-content-digest", JSImport.Namespace)
   @js.native
-  def createContentDigest(input: String): String = js.native
-  @JSImport("gatsby-core-utils/dist/create-content-digest", "createContentDigest")
-  @js.native
-  def createContentDigest(input: js.Any): String = js.native
-  @JSImport("gatsby-core-utils/dist/create-content-digest", "createContentDigest")
-  @js.native
-  def createContentDigest(input: BinaryLike): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createContentDigest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createContentDigest(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createContentDigest(input: BinaryLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

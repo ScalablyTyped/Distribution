@@ -3,15 +3,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetailsHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DetailsHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var onToggle: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onToggle: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
 }
 object DetailsHTMLAttributes {
   
@@ -22,7 +22,7 @@ object DetailsHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DetailsHTMLAttributesMutableBuilder[Self <: DetailsHTMLAttributes[_], T] (val x: Self with DetailsHTMLAttributes[T]) extends AnyVal {
+  implicit class DetailsHTMLAttributesMutableBuilder[Self <: DetailsHTMLAttributes[?], T] (val x: Self & DetailsHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setOnToggle(value: /* event */ Event => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))

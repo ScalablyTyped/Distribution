@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleInformation extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait ScheduleInformation extends StObject {
     * Availability during each time slot is indicated with: 0= free, 1= tentative, 2= busy, 3= out of office, 4= working
     * elsewhere.
     */
-  var availabilityView: js.UndefOr[NullableOption[String]] = js.native
+  var availabilityView: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Error information from attempting to get the availability of the user, distribution list, or resource.
-  var error: js.UndefOr[NullableOption[FreeBusyError]] = js.native
+  var error: js.UndefOr[NullableOption[FreeBusyError]] = js.undefined
   
   // An SMTP address of the user, distribution list, or resource, identifying an instance of scheduleInformation.
-  var scheduleId: js.UndefOr[NullableOption[String]] = js.native
+  var scheduleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Contains the items that describe the availability of the user or resource.
-  var scheduleItems: js.UndefOr[NullableOption[js.Array[ScheduleItem]]] = js.native
+  var scheduleItems: js.UndefOr[NullableOption[js.Array[ScheduleItem]]] = js.undefined
   
   /**
     * The days of the week and hours in a specific time zone that the user works. These are set as part of the user's
     * mailboxSettings.
     */
-  var workingHours: js.UndefOr[NullableOption[WorkingHours]] = js.native
+  var workingHours: js.UndefOr[NullableOption[WorkingHours]] = js.undefined
 }
 object ScheduleInformation {
   

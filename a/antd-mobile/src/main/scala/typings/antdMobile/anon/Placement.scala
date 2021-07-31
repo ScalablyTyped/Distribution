@@ -2,19 +2,17 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placement extends StObject {
   
-  var align: Overflow = js.native
+  var align: Overflow
   
-  var placement: String = js.native
+  var placement: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var trigger: js.Array[String] = js.native
+  var trigger: js.Array[String]
 }
 object Placement {
   

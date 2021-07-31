@@ -3,27 +3,25 @@ package typings.vsoNodeApi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributedTaskCommonInterfacesMod {
   
-  @js.native
   trait DataSourceBindingBase extends StObject {
     
-    var dataSourceName: String = js.native
+    var dataSourceName: String
     
-    var endpointId: String = js.native
+    var endpointId: String
     
-    var endpointUrl: String = js.native
+    var endpointUrl: String
     
-    var parameters: StringDictionary[String] = js.native
+    var parameters: StringDictionary[String]
     
-    var resultSelector: String = js.native
+    var resultSelector: String
     
-    var resultTemplate: String = js.native
+    var resultTemplate: String
     
-    var target: String = js.native
+    var target: String
   }
   object DataSourceBindingBase {
     
@@ -67,14 +65,13 @@ object distributedTaskCommonInterfacesMod {
     }
   }
   
-  @js.native
   trait ProcessParameters extends StObject {
     
-    var dataSourceBindings: js.Array[DataSourceBindingBase] = js.native
+    var dataSourceBindings: js.Array[DataSourceBindingBase]
     
-    var inputs: js.Array[TaskInputDefinitionBase] = js.native
+    var inputs: js.Array[TaskInputDefinitionBase]
     
-    var sourceDefinitions: js.Array[TaskSourceDefinitionBase] = js.native
+    var sourceDefinitions: js.Array[TaskSourceDefinitionBase]
   }
   object ProcessParameters {
     
@@ -111,28 +108,27 @@ object distributedTaskCommonInterfacesMod {
     }
   }
   
-  @js.native
   trait TaskInputDefinitionBase extends StObject {
     
-    var defaultValue: String = js.native
+    var defaultValue: String
     
-    var groupName: String = js.native
+    var groupName: String
     
-    var helpMarkDown: String = js.native
+    var helpMarkDown: String
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
     
-    var options: StringDictionary[String] = js.native
+    var options: StringDictionary[String]
     
-    var properties: StringDictionary[String] = js.native
+    var properties: StringDictionary[String]
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var visibleRule: String = js.native
+    var visibleRule: String
   }
   object TaskInputDefinitionBase {
     
@@ -189,18 +185,17 @@ object distributedTaskCommonInterfacesMod {
     }
   }
   
-  @js.native
   trait TaskSourceDefinitionBase extends StObject {
     
-    var authKey: String = js.native
+    var authKey: String
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var keySelector: String = js.native
+    var keySelector: String
     
-    var selector: String = js.native
+    var selector: String
     
-    var target: String = js.native
+    var target: String
   }
   object TaskSourceDefinitionBase {
     

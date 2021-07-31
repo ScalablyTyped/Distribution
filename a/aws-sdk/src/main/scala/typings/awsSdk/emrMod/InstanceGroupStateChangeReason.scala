@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupStateChangeReason extends StObject {
   
   /**
     * The programmable code for the state change reason.
     */
-  var Code: js.UndefOr[InstanceGroupStateChangeReasonCode] = js.native
+  var Code: js.UndefOr[InstanceGroupStateChangeReasonCode] = js.undefined
   
   /**
     * The status change reason description.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object InstanceGroupStateChangeReason {
   

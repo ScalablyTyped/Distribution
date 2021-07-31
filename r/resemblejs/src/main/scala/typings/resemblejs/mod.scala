@@ -6,7 +6,6 @@ import typings.resemblejs.anon.Height
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,30 +13,30 @@ object mod {
   /**
     * Retrieve basic analysis for a single image (add compareTo to compare with another).
     */
+  @scala.inline
+  def apply(image: String): ResembleAnalysis = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[ResembleAnalysis]
+  @scala.inline
+  def apply(image: ImageData): ResembleAnalysis = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[ResembleAnalysis]
+  
   @JSImport("resemblejs", JSImport.Namespace)
   @js.native
-  def apply(image: String): ResembleAnalysis = js.native
-  @JSImport("resemblejs", JSImport.Namespace)
-  @js.native
-  def apply(image: ImageData): ResembleAnalysis = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Set the resemblance image output style
     */
-  @JSImport("resemblejs", "outputSettings")
-  @js.native
-  def outputSettings(settings: OutputSettings_): js.Any = js.native
+  @scala.inline
+  def outputSettings(settings: OutputSettings_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait OutputSettings_ extends StObject {
     
-    var errorColor: Blue = js.native
+    var errorColor: Blue
     
-    var errorType: String = js.native
+    var errorType: String
     
-    var largeImageThreshold: Double = js.native
+    var largeImageThreshold: Double
     
-    var transparency: Double = js.native
+    var transparency: Double
   }
   object OutputSettings_ {
     
@@ -79,16 +78,15 @@ object mod {
     def onComplete(callback: js.Function1[/* result */ ResembleAnalysisResult, Unit]): Unit = js.native
   }
   
-  @js.native
   trait ResembleAnalysisResult extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var brightness: Double = js.native
+    var brightness: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object ResembleAnalysisResult {
     
@@ -115,21 +113,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ResembleComparison extends StObject {
     
-    def ignoreAntialiasing(): ResembleComparison = js.native
+    def ignoreAntialiasing(): ResembleComparison
     
-    def ignoreColors(): ResembleComparison = js.native
+    def ignoreColors(): ResembleComparison
     
-    def ignoreNothing(): ResembleComparison = js.native
+    def ignoreNothing(): ResembleComparison
     
     /**
       * Run the analysis and get the comparison result
       */
-    def onComplete(callback: js.Function1[/* result */ ResembleComparisonResult, Unit]): Unit = js.native
+    def onComplete(callback: js.Function1[/* result */ ResembleComparisonResult, Unit]): Unit
     
-    def repaint(): ResembleComparison = js.native
+    def repaint(): ResembleComparison
   }
   object ResembleComparison {
     
@@ -165,32 +162,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ResembleComparisonResult extends StObject {
     
-    var analysisTime: Double = js.native
+    var analysisTime: Double
     
-    var diffBounds: Bottom = js.native
+    var diffBounds: Bottom
     
     /**
       * The difference in width and height between the dimensions of the two compared images
       */
-    var dimensionDifference: Height = js.native
+    var dimensionDifference: Height
     
     /**
       * Get a data URL for the comparison image
       */
-    def getImageDataUrl(): String = js.native
+    def getImageDataUrl(): String
     
     /**
       * Do the two images have the same dimensions?
       */
-    var isSameDimensions: Boolean = js.native
+    var isSameDimensions: Boolean
     
     /**
       * The percentage of pixels which do not match between the images
       */
-    var misMatchPercentage: Double = js.native
+    var misMatchPercentage: Double
   }
   object ResembleComparisonResult {
     

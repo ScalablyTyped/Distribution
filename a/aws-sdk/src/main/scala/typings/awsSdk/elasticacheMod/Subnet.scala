@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subnet extends StObject {
   
   /**
     * The Availability Zone associated with the subnet.
     */
-  var SubnetAvailabilityZone: js.UndefOr[AvailabilityZone] = js.native
+  var SubnetAvailabilityZone: js.UndefOr[AvailabilityZone] = js.undefined
   
   /**
     * The unique identifier for the subnet.
     */
-  var SubnetIdentifier: js.UndefOr[String] = js.native
+  var SubnetIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The outpost ARN of the subnet.
     */
-  var SubnetOutpost: js.UndefOr[typings.awsSdk.elasticacheMod.SubnetOutpost] = js.native
+  var SubnetOutpost: js.UndefOr[typings.awsSdk.elasticacheMod.SubnetOutpost] = js.undefined
 }
 object Subnet {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserSettingsResponse extends StObject {
   
   /**
     * The user settings.
     */
-  var UserSettings: js.UndefOr[typings.awsSdk.chimeMod.UserSettings] = js.native
+  var UserSettings: js.UndefOr[typings.awsSdk.chimeMod.UserSettings] = js.undefined
 }
 object GetUserSettingsResponse {
   

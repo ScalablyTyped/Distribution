@@ -2,14 +2,13 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OTransaction")
 @js.native
 class OTransaction () extends StObject {
   
-  def commit(): js.Promise[_] = js.native
+  def commit(): js.Promise[js.Any] = js.native
   
   def create(record: ORecord): OTransaction = js.native
   

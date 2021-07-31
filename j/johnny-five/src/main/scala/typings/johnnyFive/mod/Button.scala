@@ -7,7 +7,6 @@ import typings.johnnyFive.johnnyFiveStrings.release
 import typings.johnnyFive.johnnyFiveStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Button")

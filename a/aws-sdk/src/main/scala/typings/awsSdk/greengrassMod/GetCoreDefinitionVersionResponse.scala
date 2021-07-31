@@ -2,41 +2,39 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCoreDefinitionVersionResponse extends StObject {
   
   /**
     * The ARN of the core definition version.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the core definition version was created.
     */
-  var CreationTimestamp: js.UndefOr[string] = js.native
+  var CreationTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * Information about the core definition version.
     */
-  var Definition: js.UndefOr[CoreDefinitionVersion] = js.native
+  var Definition: js.UndefOr[CoreDefinitionVersion] = js.undefined
   
   /**
     * The ID of the core definition version.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The token for the next set of results, or ''null'' if there are no additional results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The version of the core definition version.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
 }
 object GetCoreDefinitionVersionResponse {
   

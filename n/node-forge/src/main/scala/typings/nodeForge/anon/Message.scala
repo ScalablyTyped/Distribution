@@ -5,13 +5,13 @@ import typings.nodeForge.mod.pki.ed25519.ToNativeBufferParameters
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Message extends ToNativeBufferParameters {
+trait Message
+  extends StObject
+     with ToNativeBufferParameters {
   
-  var message: NativeBuffer | ByteBuffer = js.native
+  var message: NativeBuffer | ByteBuffer
 }
 object Message {
   

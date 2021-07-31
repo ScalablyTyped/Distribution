@@ -2,26 +2,24 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestModel extends StObject {
   
   /**
     * The number of documents that were found to match the query string.
     */
-  var found: js.UndefOr[Long] = js.native
+  var found: js.UndefOr[Long] = js.undefined
   
   /**
     * The query string specified in the suggest request.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * The documents that match the query string.
     */
-  var suggestions: js.UndefOr[Suggestions] = js.native
+  var suggestions: js.UndefOr[Suggestions] = js.undefined
 }
 object SuggestModel {
   

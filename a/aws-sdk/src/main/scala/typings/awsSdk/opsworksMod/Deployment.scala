@@ -2,71 +2,69 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /**
     * The app ID.
     */
-  var AppId: js.UndefOr[String] = js.native
+  var AppId: js.UndefOr[String] = js.undefined
   
   /**
     * Used to specify a stack or deployment command.
     */
-  var Command: js.UndefOr[DeploymentCommand] = js.native
+  var Command: js.UndefOr[DeploymentCommand] = js.undefined
   
   /**
     * A user-defined comment.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * Date when the deployment completed.
     */
-  var CompletedAt: js.UndefOr[DateTime] = js.native
+  var CompletedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Date when the deployment was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A string that contains user-defined custom JSON. It can be used to override the corresponding default stack configuration attribute values for stack or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information on custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
     */
-  var CustomJson: js.UndefOr[String] = js.native
+  var CustomJson: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment ID.
     */
-  var DeploymentId: js.UndefOr[String] = js.native
+  var DeploymentId: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment duration.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The user's IAM ARN.
     */
-  var IamUserArn: js.UndefOr[String] = js.native
+  var IamUserArn: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the target instances.
     */
-  var InstanceIds: js.UndefOr[Strings] = js.native
+  var InstanceIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment status:   running   successful   failed  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object Deployment {
   

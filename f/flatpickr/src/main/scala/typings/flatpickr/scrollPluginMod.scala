@@ -3,12 +3,14 @@ package typings.flatpickr
 import typings.flatpickr.optionsMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollPluginMod {
   
-  @JSImport("flatpickr/dist/plugins/scrollPlugin", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/scrollPlugin", JSImport.Namespace)
   @js.native
-  def default(): Plugin[js.Object] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
 }

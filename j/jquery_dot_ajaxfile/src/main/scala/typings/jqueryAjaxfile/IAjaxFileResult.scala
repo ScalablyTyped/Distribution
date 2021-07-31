@@ -2,17 +2,15 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAjaxFileResult[T] extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var status: js.UndefOr[IResponseStatus] = js.native
+  var status: js.UndefOr[IResponseStatus] = js.undefined
 }
 object IAjaxFileResult {
   
@@ -23,7 +21,7 @@ object IAjaxFileResult {
   }
   
   @scala.inline
-  implicit class IAjaxFileResultMutableBuilder[Self <: IAjaxFileResult[_], T] (val x: Self with IAjaxFileResult[T]) extends AnyVal {
+  implicit class IAjaxFileResultMutableBuilder[Self <: IAjaxFileResult[?], T] (val x: Self & IAjaxFileResult[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

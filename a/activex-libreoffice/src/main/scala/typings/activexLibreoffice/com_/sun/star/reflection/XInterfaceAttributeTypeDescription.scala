@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The type class of this type is TypeClass_INTERFACE_ATTRIBUTE.
   */
-@js.native
-trait XInterfaceAttributeTypeDescription extends XInterfaceMemberTypeDescription {
+trait XInterfaceAttributeTypeDescription
+  extends StObject
+     with XInterfaceMemberTypeDescription {
   
   /**
     * Returns the type of the attribute.
     * @returns type of attribute
     */
-  val Type: XTypeDescription = js.native
+  val Type: XTypeDescription
   
   /**
     * Returns the type of the attribute.
     * @returns type of attribute
     */
-  def getType(): XTypeDescription = js.native
+  def getType(): XTypeDescription
   
   /**
     * Returns true, if this attribute is read-only.
     * @returns true, if attribute is read-only
     */
-  def isReadOnly(): Boolean = js.native
+  def isReadOnly(): Boolean
 }
 object XInterfaceAttributeTypeDescription {
   

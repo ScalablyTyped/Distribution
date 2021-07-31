@@ -23,7 +23,6 @@ import typings.jose.joseStrings.unspecified
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errors {
@@ -38,9 +37,17 @@ object errors {
   
   @JSImport("jose", "errors.JOSEError")
   @js.native
-  class JOSEError[T] () extends Error {
+  class JOSEError[T] ()
+    extends StObject
+       with Error {
     
     var code: T = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("jose", "errors.JOSEInvalidEncoding")
@@ -91,12 +98,12 @@ object errors {
   @js.native
   class JWTClaimInvalid[T] () extends JOSEError[T] {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: String) = this()
     def this(message: String, claim: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: js.UndefOr[scala.Nothing], reason: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: String, reason: String) = this()
-    def this(message: String, claim: js.UndefOr[scala.Nothing], reason: String) = this()
+    def this(message: Unit, claim: String) = this()
     def this(message: String, claim: String, reason: String) = this()
+    def this(message: String, claim: Unit, reason: String) = this()
+    def this(message: Unit, claim: String, reason: String) = this()
+    def this(message: Unit, claim: Unit, reason: String) = this()
     
     var claim: String = js.native
     
@@ -107,12 +114,12 @@ object errors {
   @js.native
   class JWTExpired () extends JWTClaimInvalid[ERR_JWT_EXPIRED] {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: String) = this()
     def this(message: String, claim: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: js.UndefOr[scala.Nothing], reason: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], claim: String, reason: String) = this()
-    def this(message: String, claim: js.UndefOr[scala.Nothing], reason: String) = this()
+    def this(message: Unit, claim: String) = this()
     def this(message: String, claim: String, reason: String) = this()
+    def this(message: String, claim: Unit, reason: String) = this()
+    def this(message: Unit, claim: String, reason: String) = this()
+    def this(message: Unit, claim: Unit, reason: String) = this()
   }
   
   @JSImport("jose", "errors.JWTMalformed")

@@ -16,7 +16,6 @@ import typings.activexOffice.Office.SoftEdgeFormat
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -74,7 +73,7 @@ trait Shape extends StObject {
   def Copy(): Unit = js.native
   
   def CopyPicture(): Unit = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Unit = js.native
   

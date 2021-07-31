@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCloudFrontOriginAccessIdentitiesResult extends StObject {
   
   /**
     * The CloudFrontOriginAccessIdentityList type. 
     */
-  var CloudFrontOriginAccessIdentityList: js.UndefOr[typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityList] = js.native
+  var CloudFrontOriginAccessIdentityList: js.UndefOr[typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityList] = js.undefined
 }
 object ListCloudFrontOriginAccessIdentitiesResult {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLayerVersionsRequest extends StObject {
   
   /**
     * A runtime identifier. For example, go1.x.
     */
-  var CompatibleRuntime: js.UndefOr[Runtime] = js.native
+  var CompatibleRuntime: js.UndefOr[Runtime] = js.undefined
   
   /**
     * The name or Amazon Resource Name (ARN) of the layer.
     */
-  var LayerName: typings.awsSdk.lambdaMod.LayerName = js.native
+  var LayerName: typings.awsSdk.lambdaMod.LayerName
   
   /**
     * A pagination token returned by a previous call.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of versions to return.
     */
-  var MaxItems: js.UndefOr[MaxLayerListItems] = js.native
+  var MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
 }
 object ListLayerVersionsRequest {
   

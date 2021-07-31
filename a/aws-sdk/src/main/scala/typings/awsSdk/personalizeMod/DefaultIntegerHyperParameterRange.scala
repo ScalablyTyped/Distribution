@@ -2,31 +2,29 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultIntegerHyperParameterRange extends StObject {
   
   /**
     * Indicates whether the hyperparameter is tunable.
     */
-  var isTunable: js.UndefOr[Tunable] = js.native
+  var isTunable: js.UndefOr[Tunable] = js.undefined
   
   /**
     * The maximum allowable value for the hyperparameter.
     */
-  var maxValue: js.UndefOr[IntegerMaxValue] = js.native
+  var maxValue: js.UndefOr[IntegerMaxValue] = js.undefined
   
   /**
     * The minimum allowable value for the hyperparameter.
     */
-  var minValue: js.UndefOr[IntegerMinValue] = js.native
+  var minValue: js.UndefOr[IntegerMinValue] = js.undefined
   
   /**
     * The name of the hyperparameter.
     */
-  var name: js.UndefOr[ParameterName] = js.native
+  var name: js.UndefOr[ParameterName] = js.undefined
 }
 object DefaultIntegerHyperParameterRange {
   

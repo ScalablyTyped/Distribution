@@ -4,32 +4,32 @@ import typings.ecmarkup.ecmarkupStrings.raw
 import typings.ecmarkup.specMod.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Column extends Warning {
+trait Column
+  extends StObject
+     with Warning {
   
-  var column: Double = js.native
+  var column: Double
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var line: Double = js.native
+  var line: Double
   
-  var message: String = js.native
+  var message: String
   
-  var ruleId: String = js.native
+  var ruleId: String
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: raw = js.native
+  var `type`: raw
 }
 object Column {
   
   @scala.inline
-  def apply(column: Double, line: Double, message: String, ruleId: String, `type`: raw): Column = {
+  def apply(column: Double, line: Double, message: String, ruleId: String): Column = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("raw")
     __obj.asInstanceOf[Column]
   }
   

@@ -2,17 +2,15 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnlineAcceptanceMandate extends StObject {
   
-  var date: Double = js.native
+  var date: Double
   
-  var ip: String = js.native
+  var ip: String
   
-  var user_agent: String = js.native
+  var user_agent: String
 }
 object OnlineAcceptanceMandate {
   

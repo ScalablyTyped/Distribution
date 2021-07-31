@@ -5,7 +5,6 @@ import typings.q.mod.Promise
 import typings.seleniumWebdriver.mod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driverProvidersMod {
@@ -44,14 +43,17 @@ object driverProvidersMod {
   /* static members */
   object DriverProvider {
     
+    @JSImport("protractor/built/driverProviders", "DriverProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Quits an array of drivers and returns a q promise instead of a webdriver one
       *
       * @param drivers {webdriver.WebDriver[]} The webdriver instances
       */
-    @JSImport("protractor/built/driverProviders", "DriverProvider.quitDrivers")
-    @js.native
-    def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
+    @scala.inline
+    def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   }
   
   @JSImport("protractor/built/driverProviders", "Hosted")

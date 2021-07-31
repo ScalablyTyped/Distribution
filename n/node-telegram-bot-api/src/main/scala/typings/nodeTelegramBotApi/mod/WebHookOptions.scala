@@ -3,27 +3,25 @@ package typings.nodeTelegramBotApi.mod
 import typings.node.httpsMod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebHookOptions extends StObject {
   
-  var autoOpen: js.UndefOr[Boolean] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.undefined
   
-  var cert: js.UndefOr[String] = js.native
+  var cert: js.UndefOr[String] = js.undefined
   
-  var healthEndpoint: js.UndefOr[String] = js.native
+  var healthEndpoint: js.UndefOr[String] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var https: js.UndefOr[ServerOptions] = js.native
+  var https: js.UndefOr[ServerOptions] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var pfx: js.UndefOr[String] = js.native
+  var pfx: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object WebHookOptions {
   

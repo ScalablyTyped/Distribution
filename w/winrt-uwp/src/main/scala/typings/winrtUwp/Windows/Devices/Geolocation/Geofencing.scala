@@ -10,7 +10,6 @@ import typings.winrtUwp.winrtUwpStrings.geofencestatechanged
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A geofence is a virtual area around a geographical point. The geofencing APIs enable applications to provide geographically contextual experiences in a timely manner without the need for the app to be continuously running and consuming device resources. Geofencing enables scenarios like popping up a reminder for a user when they are leaving work or home or displaying coupons when the user gets within range of a store. */
@@ -25,27 +24,39 @@ object Geofencing {
     
     /** Access to location is denied. */
     @js.native
-    sealed trait disabled extends GeofenceMonitorStatus
+    sealed trait disabled
+      extends StObject
+         with GeofenceMonitorStatus
     
     /** The monitor is in the process of initializing. */
     @js.native
-    sealed trait initializing extends GeofenceMonitorStatus
+    sealed trait initializing
+      extends StObject
+         with GeofenceMonitorStatus
     
     /** There is no data on the status of the monitor. */
     @js.native
-    sealed trait noData extends GeofenceMonitorStatus
+    sealed trait noData
+      extends StObject
+         with GeofenceMonitorStatus
     
     /** The geofence monitor is not available. */
     @js.native
-    sealed trait notAvailable extends GeofenceMonitorStatus
+    sealed trait notAvailable
+      extends StObject
+         with GeofenceMonitorStatus
     
     /** The geofence monitor has not been initialized. */
     @js.native
-    sealed trait notInitialized extends GeofenceMonitorStatus
+    sealed trait notInitialized
+      extends StObject
+         with GeofenceMonitorStatus
     
     /** The monitor is ready and active. */
     @js.native
-    sealed trait ready extends GeofenceMonitorStatus
+    sealed trait ready
+      extends StObject
+         with GeofenceMonitorStatus
   }
   
   @js.native
@@ -57,11 +68,15 @@ object Geofencing {
     
     /** The duration of the geofence has expired. */
     @js.native
-    sealed trait expired extends GeofenceRemovalReason
+    sealed trait expired
+      extends StObject
+         with GeofenceRemovalReason
     
     /** The geofence event was triggered and the geofence was used. */
     @js.native
-    sealed trait used extends GeofenceRemovalReason
+    sealed trait used
+      extends StObject
+         with GeofenceRemovalReason
   }
   
   @js.native
@@ -73,19 +88,27 @@ object Geofencing {
     
     /** The device has entered the geofence area. */
     @js.native
-    sealed trait entered extends GeofenceState
+    sealed trait entered
+      extends StObject
+         with GeofenceState
     
     /** The device has left the geofence area. */
     @js.native
-    sealed trait exited extends GeofenceState
+    sealed trait exited
+      extends StObject
+         with GeofenceState
     
     /** No flag is set. */
     @js.native
-    sealed trait none extends GeofenceState
+    sealed trait none
+      extends StObject
+         with GeofenceState
     
     /** The geofence was removed. */
     @js.native
-    sealed trait removed extends GeofenceState
+    sealed trait removed
+      extends StObject
+         with GeofenceState
   }
   
   @js.native
@@ -97,45 +120,52 @@ object Geofencing {
     
     /** The device has entered a geofence area. */
     @js.native
-    sealed trait entered extends MonitoredGeofenceStates
+    sealed trait entered
+      extends StObject
+         with MonitoredGeofenceStates
     
     /** The device has left a geofence area. */
     @js.native
-    sealed trait exited extends MonitoredGeofenceStates
+    sealed trait exited
+      extends StObject
+         with MonitoredGeofenceStates
     
     /** No flag is set. */
     @js.native
-    sealed trait none extends MonitoredGeofenceStates
+    sealed trait none
+      extends StObject
+         with MonitoredGeofenceStates
     
     /** The geofence has been removed. */
     @js.native
-    sealed trait removed extends MonitoredGeofenceStates
+    sealed trait removed
+      extends StObject
+         with MonitoredGeofenceStates
   }
   
   /** Contains the information to define a geofence, an area of interest, to monitor. */
-  @js.native
   trait Geofence extends StObject {
     
     /** Gets the time window, beginning after the StartTime , during which the Geofence is monitored. */
-    var duration: Double = js.native
+    var duration: Double
     
     /** The minimum time that a position has to be inside or outside of the Geofence in order for the notification to be triggered. */
-    var dwellTime: Double = js.native
+    var dwellTime: Double
     
     /** The shape of the geofence region. */
-    var geoshape: IGeoshape = js.native
+    var geoshape: IGeoshape
     
     /** The id of the Geofence . */
-    var id: String = js.native
+    var id: String
     
     /** Indicates the states that the Geofence is being monitored for. */
-    var monitoredStates: MonitoredGeofenceStates = js.native
+    var monitoredStates: MonitoredGeofenceStates
     
     /** Indicates whether the Geofence should be triggered once or multiple times. */
-    var singleUse: Boolean = js.native
+    var singleUse: Boolean
     
     /** The time to start monitoring the Geofence . */
-    var startTime: Date = js.native
+    var startTime: Date
   }
   object Geofence {
     
@@ -183,11 +213,11 @@ object Geofencing {
   @js.native
   trait GeofenceMonitor extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, _]): Unit = js.native
+    def addEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, _]): Unit = js.native
+    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
     
     /** Returns a vector of the app's Geofence objects currently registered with the system wide GeofenceMonitor . */
     var geofences: IVector[Geofence] = js.native
@@ -196,16 +226,16 @@ object Geofencing {
     var lastKnownGeoposition: Geoposition = js.native
     
     /** Raised when the state of one or more Geofence objects in the Geofences collection of the GeofenceMonitor has changed */
-    def ongeofencestatechanged(ev: js.Any with WinRTEvent[GeofenceMonitor]): Unit = js.native
+    def ongeofencestatechanged(ev: js.Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
     /** Raised when the state of one or more Geofence objects in the Geofences collection of the GeofenceMonitor has changed */
     @JSName("ongeofencestatechanged")
-    var ongeofencestatechanged_Original: TypedEventHandler[GeofenceMonitor, _] = js.native
+    var ongeofencestatechanged_Original: TypedEventHandler[GeofenceMonitor, js.Any] = js.native
     
     /** Raised when the status of the GeofenceMonitor has changed. */
-    def onstatuschanged(ev: js.Any with WinRTEvent[GeofenceMonitor]): Unit = js.native
+    def onstatuschanged(ev: js.Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
     /** Raised when the status of the GeofenceMonitor has changed. */
     @JSName("onstatuschanged")
-    var onstatuschanged_Original: TypedEventHandler[GeofenceMonitor, _] = js.native
+    var onstatuschanged_Original: TypedEventHandler[GeofenceMonitor, js.Any] = js.native
     
     /**
       * Gets a collection of status changes to the Geofence objects in the Geofences collection of the GeofenceMonitor .
@@ -213,31 +243,30 @@ object Geofencing {
       */
     def readReports(): IVectorView[GeofenceStateChangeReport] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, _]): Unit = js.native
+    def removeEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, _]): Unit = js.native
+    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
     
     /** Indicates the current state of the GeofenceMonitor . */
     var status: GeofenceMonitorStatus = js.native
   }
   
   /** Contains the information about the state changes for a Geofence . */
-  @js.native
   trait GeofenceStateChangeReport extends StObject {
     
     /** The Geofence object whose state has changed. */
-    var geofence: Geofence = js.native
+    var geofence: Geofence
     
     /** The position of the Geofence object whose state has changed. */
-    var geoposition: Geoposition = js.native
+    var geoposition: Geoposition
     
     /** The new state of the Geofence object whose state has changed. */
-    var newState: GeofenceState = js.native
+    var newState: GeofenceState
     
     /** Indicates the reason a Geofence was removed. */
-    var removalReason: GeofenceRemovalReason = js.native
+    var removalReason: GeofenceRemovalReason
   }
   object GeofenceStateChangeReport {
     

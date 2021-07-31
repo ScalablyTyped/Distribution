@@ -10,9 +10,9 @@ A framework for building native apps using React
 | ------------------ | :-------------: |
 | Full name          | react-native |
 | Keywords           | - |
-| # releases         | 231 |
-| # dependents       | 2209 |
-| # downloads        | 19372368 |
+| # releases         | 270 |
+| # dependents       | 2356 |
+| # downloads        | 21155784 |
 | # stars            | 93 |
 
 ## Links

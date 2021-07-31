@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.lex
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntentFulfillmentActivity extends StObject {
   
   /**
     * A description of the Lambda function that is run to fulfill the intent.
     * Required if type is CodeHook. Attributes are documented under code_hook.
     */
-  var codeHook: js.UndefOr[Input[IntentFulfillmentActivityCodeHook]] = js.native
+  var codeHook: js.UndefOr[Input[IntentFulfillmentActivityCodeHook]] = js.undefined
   
   /**
     * How the intent should be fulfilled, either by running a Lambda function or by
     * returning the slot data to the client application.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object IntentFulfillmentActivity {
   

@@ -2,25 +2,23 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.dialog.select()
-@js.native
 trait DialogSelectConfig extends StObject {
   
-  var buttons: js.UndefOr[js.Array[_]] = js.native
+  var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   // TODO interface for buttons
-  var list: js.Array[DialogSelectConfigItem] = js.native
+  var list: js.Array[DialogSelectConfigItem]
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var multiselect: js.UndefOr[Boolean] = js.native
+  var multiselect: js.UndefOr[Boolean] = js.undefined
   
-  var quickfind: js.UndefOr[Boolean] = js.native
+  var quickfind: js.UndefOr[Boolean] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object DialogSelectConfig {
   
@@ -34,7 +32,7 @@ object DialogSelectConfig {
   implicit class DialogSelectConfigMutableBuilder[Self <: DialogSelectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)

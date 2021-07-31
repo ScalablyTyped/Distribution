@@ -2,31 +2,29 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeDetails extends StObject {
   
   /**
     * Base address.
     */
-  var base: NativePointer = js.native
+  var base: NativePointer
   
   /**
     * File mapping details, if available.
     */
-  var file: js.UndefOr[FileMapping] = js.native
+  var file: js.UndefOr[FileMapping] = js.undefined
   
   /**
     * Protection.
     */
-  var protection: PageProtection = js.native
+  var protection: PageProtection
   
   /**
     * Size in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object RangeDetails {
   

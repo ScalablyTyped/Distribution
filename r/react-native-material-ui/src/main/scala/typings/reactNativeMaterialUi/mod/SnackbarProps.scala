@@ -3,29 +3,27 @@ package typings.reactNativeMaterialUi.mod
 import typings.reactNativeMaterialUi.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnackbarProps extends StObject {
   
-  var actionText: js.UndefOr[String] = js.native
+  var actionText: js.UndefOr[String] = js.undefined
   
-  var bottomNavigation: Boolean = js.native
+  var bottomNavigation: Boolean
   
-  var button: js.UndefOr[ButtonProps] = js.native
+  var button: js.UndefOr[ButtonProps] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var onActionPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onActionPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  def onRequestClose(): Unit = js.native
+  def onRequestClose(): Unit
   
-  var style: js.UndefOr[Message] = js.native
+  var style: js.UndefOr[Message] = js.undefined
   
-  var timeout: Double = js.native
+  var timeout: Double
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object SnackbarProps {
   

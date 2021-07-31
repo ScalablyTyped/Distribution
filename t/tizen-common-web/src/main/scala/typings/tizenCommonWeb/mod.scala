@@ -51,7 +51,6 @@ import typings.tizenCommonWeb.tvwindowMod.TVWindowManager
 import typings.tizenCommonWeb.websettingMod.WebSettingManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -96,7 +95,7 @@ object mod extends Shortcut {
     def this(attributeName: String, matchFlag: FULLSTRING) = this()
     def this(attributeName: String, matchFlag: STARTSWITH) = this()
     def this(attributeName: String, matchFlag: FilterMatchFlag) = this()
-    def this(attributeName: String, matchFlag: js.UndefOr[scala.Nothing], matchValue: js.Any) = this()
+    def this(attributeName: String, matchFlag: Unit, matchValue: js.Any) = this()
     def this(attributeName: String, matchFlag: CONTAINS, matchValue: js.Any) = this()
     def this(attributeName: String, matchFlag: ENDSWITH, matchValue: js.Any) = this()
     def this(attributeName: String, matchFlag: EXACTLY, matchValue: js.Any) = this()
@@ -113,8 +112,8 @@ object mod extends Shortcut {
     extends typings.tizenCommonWeb.tizenMod.AttributeRangeFilter {
     def this(attributeName: String) = this()
     def this(attributeName: String, initialValue: js.Any) = this()
-    def this(attributeName: String, initialValue: js.UndefOr[scala.Nothing], endValue: js.Any) = this()
     def this(attributeName: String, initialValue: js.Any, endValue: js.Any) = this()
+    def this(attributeName: String, initialValue: Unit, endValue: js.Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -160,120 +159,55 @@ object mod extends Shortcut {
       */
     def this(url: String) = this()
     def this(url: String, destination: String) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String) = this()
     def this(url: String, destination: String, fileName: String) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: ALL
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: CELLULAR
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: WIFI
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: String,
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: ALL) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: CELLULAR) = this()
-    def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: WIFI) = this()
-    def this(
-      url: String,
-      destination: String,
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType
-    ) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: ALL) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: CELLULAR) = this()
-    def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: String) = this()
     def this(url: String, destination: String, fileName: String, networkType: DownloadNetworkType) = this()
     def this(url: String, destination: String, fileName: String, networkType: ALL) = this()
     def this(url: String, destination: String, fileName: String, networkType: CELLULAR) = this()
     def this(url: String, destination: String, fileName: String, networkType: WIFI) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: ALL) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: CELLULAR) = this()
+    def this(url: String, destination: String, fileName: Unit, networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: ALL) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: CELLULAR) = this()
+    def this(url: String, destination: Unit, fileName: String, networkType: WIFI) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: DownloadNetworkType) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: ALL) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: CELLULAR) = this()
+    def this(url: String, destination: Unit, fileName: Unit, networkType: WIFI) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: js.UndefOr[scala.Nothing],
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: DownloadNetworkType,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: ALL,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: CELLULAR,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: WIFI,
-      httpHeader: DownloadHTTPHeaderFields
-    ) = this()
-    def this(
-      url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
-      networkType: js.UndefOr[scala.Nothing],
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: js.UndefOr[scala.Nothing],
+      destination: String,
       fileName: String,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
@@ -281,70 +215,105 @@ object mod extends Shortcut {
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
-      networkType: js.UndefOr[scala.Nothing],
+      fileName: Unit,
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
       destination: String,
-      fileName: js.UndefOr[scala.Nothing],
+      fileName: Unit,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
-      networkType: js.UndefOr[scala.Nothing],
+      networkType: Unit,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: DownloadNetworkType,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: ALL,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
       networkType: CELLULAR,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
     def this(
       url: String,
-      destination: String,
+      destination: Unit,
       fileName: String,
+      networkType: WIFI,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: Unit,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: DownloadNetworkType,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: ALL,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
+      networkType: CELLULAR,
+      httpHeader: DownloadHTTPHeaderFields
+    ) = this()
+    def this(
+      url: String,
+      destination: Unit,
+      fileName: Unit,
       networkType: WIFI,
       httpHeader: DownloadHTTPHeaderFields
     ) = this()
@@ -379,100 +348,16 @@ object mod extends Shortcut {
   class TZDate ()
     extends typings.tizenCommonWeb.timeMod.TZDate {
     def this(datetime: Date) = this()
-    def this(datetime: js.UndefOr[scala.Nothing], timezone: String) = this()
+    def this(datetime: Unit, timezone: String) = this()
     def this(datetime: Date, timezone: String) = this()
     def this(year: Double, month: Double, day: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double) = this()
-    def this(year: Double, month: Double, day: Double, hours: js.UndefOr[scala.Nothing], minutes: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double) = this()
     def this(
       year: Double,
       month: Double,
@@ -486,77 +371,70 @@ object mod extends Shortcut {
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Double,
       minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
+      seconds: Unit,
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
+      hours: Double,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Double,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
       minutes: Double,
       seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
       minutes: Double,
       seconds: Double,
       milliseconds: Double,
@@ -567,29 +445,9 @@ object mod extends Shortcut {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
+      minutes: Double,
       seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
@@ -597,8 +455,8 @@ object mod extends Shortcut {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
+      minutes: Double,
+      seconds: Unit,
       milliseconds: Double,
       timezone: String
     ) = this()
@@ -608,8 +466,8 @@ object mod extends Shortcut {
       day: Double,
       hours: Double,
       minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
@@ -617,8 +475,28 @@ object mod extends Shortcut {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
+      minutes: Unit,
+      seconds: Unit,
       milliseconds: Double,
       timezone: String
     ) = this()
@@ -627,19 +505,89 @@ object mod extends Shortcut {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: Double,
-      seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: Double,
+      hours: Unit,
       minutes: Double,
       seconds: Double,
       milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
   }
@@ -696,7 +644,7 @@ object mod extends Shortcut {
         def this(attributeName: String, matchFlag: FULLSTRING) = this()
         def this(attributeName: String, matchFlag: STARTSWITH) = this()
         def this(attributeName: String, matchFlag: FilterMatchFlag) = this()
-        def this(attributeName: String, matchFlag: js.UndefOr[scala.Nothing], matchValue: js.Any) = this()
+        def this(attributeName: String, matchFlag: Unit, matchValue: js.Any) = this()
         def this(attributeName: String, matchFlag: CONTAINS, matchValue: js.Any) = this()
         def this(attributeName: String, matchFlag: ENDSWITH, matchValue: js.Any) = this()
         def this(attributeName: String, matchFlag: EXACTLY, matchValue: js.Any) = this()
@@ -713,8 +661,8 @@ object mod extends Shortcut {
         extends typings.tizenCommonWeb.tizenMod.AttributeRangeFilter {
         def this(attributeName: String) = this()
         def this(attributeName: String, initialValue: js.Any) = this()
-        def this(attributeName: String, initialValue: js.UndefOr[scala.Nothing], endValue: js.Any) = this()
         def this(attributeName: String, initialValue: js.Any, endValue: js.Any) = this()
+        def this(attributeName: String, initialValue: Unit, endValue: js.Any) = this()
       }
       
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -760,120 +708,55 @@ object mod extends Shortcut {
           */
         def this(url: String) = this()
         def this(url: String, destination: String) = this()
-        def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String) = this()
         def this(url: String, destination: String, fileName: String) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: DownloadNetworkType
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: ALL
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: CELLULAR
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: WIFI
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: String,
-          networkType: DownloadNetworkType
-        ) = this()
-        def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: ALL) = this()
-        def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: CELLULAR) = this()
-        def this(url: String, destination: js.UndefOr[scala.Nothing], fileName: String, networkType: WIFI) = this()
-        def this(
-          url: String,
-          destination: String,
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: DownloadNetworkType
-        ) = this()
-        def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: ALL) = this()
-        def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: CELLULAR) = this()
-        def this(url: String, destination: String, fileName: js.UndefOr[scala.Nothing], networkType: WIFI) = this()
+        def this(url: String, destination: Unit, fileName: String) = this()
         def this(url: String, destination: String, fileName: String, networkType: DownloadNetworkType) = this()
         def this(url: String, destination: String, fileName: String, networkType: ALL) = this()
         def this(url: String, destination: String, fileName: String, networkType: CELLULAR) = this()
         def this(url: String, destination: String, fileName: String, networkType: WIFI) = this()
+        def this(url: String, destination: String, fileName: Unit, networkType: DownloadNetworkType) = this()
+        def this(url: String, destination: String, fileName: Unit, networkType: ALL) = this()
+        def this(url: String, destination: String, fileName: Unit, networkType: CELLULAR) = this()
+        def this(url: String, destination: String, fileName: Unit, networkType: WIFI) = this()
+        def this(url: String, destination: Unit, fileName: String, networkType: DownloadNetworkType) = this()
+        def this(url: String, destination: Unit, fileName: String, networkType: ALL) = this()
+        def this(url: String, destination: Unit, fileName: String, networkType: CELLULAR) = this()
+        def this(url: String, destination: Unit, fileName: String, networkType: WIFI) = this()
+        def this(url: String, destination: Unit, fileName: Unit, networkType: DownloadNetworkType) = this()
+        def this(url: String, destination: Unit, fileName: Unit, networkType: ALL) = this()
+        def this(url: String, destination: Unit, fileName: Unit, networkType: CELLULAR) = this()
+        def this(url: String, destination: Unit, fileName: Unit, networkType: WIFI) = this()
         def this(
           url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: js.UndefOr[scala.Nothing],
-          httpHeader: DownloadHTTPHeaderFields
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: DownloadNetworkType,
-          httpHeader: DownloadHTTPHeaderFields
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: ALL,
-          httpHeader: DownloadHTTPHeaderFields
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: CELLULAR,
-          httpHeader: DownloadHTTPHeaderFields
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: WIFI,
-          httpHeader: DownloadHTTPHeaderFields
-        ) = this()
-        def this(
-          url: String,
-          destination: js.UndefOr[scala.Nothing],
+          destination: String,
           fileName: String,
-          networkType: js.UndefOr[scala.Nothing],
+          networkType: Unit,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: js.UndefOr[scala.Nothing],
+          destination: String,
           fileName: String,
           networkType: DownloadNetworkType,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: js.UndefOr[scala.Nothing],
+          destination: String,
           fileName: String,
           networkType: ALL,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: js.UndefOr[scala.Nothing],
+          destination: String,
           fileName: String,
           networkType: CELLULAR,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: js.UndefOr[scala.Nothing],
+          destination: String,
           fileName: String,
           networkType: WIFI,
           httpHeader: DownloadHTTPHeaderFields
@@ -881,70 +764,105 @@ object mod extends Shortcut {
         def this(
           url: String,
           destination: String,
-          fileName: js.UndefOr[scala.Nothing],
-          networkType: js.UndefOr[scala.Nothing],
+          fileName: Unit,
+          networkType: Unit,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
           destination: String,
-          fileName: js.UndefOr[scala.Nothing],
+          fileName: Unit,
           networkType: DownloadNetworkType,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
           destination: String,
-          fileName: js.UndefOr[scala.Nothing],
+          fileName: Unit,
           networkType: ALL,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
           destination: String,
-          fileName: js.UndefOr[scala.Nothing],
+          fileName: Unit,
           networkType: CELLULAR,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
           destination: String,
-          fileName: js.UndefOr[scala.Nothing],
+          fileName: Unit,
           networkType: WIFI,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: String,
+          destination: Unit,
           fileName: String,
-          networkType: js.UndefOr[scala.Nothing],
+          networkType: Unit,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: String,
+          destination: Unit,
           fileName: String,
           networkType: DownloadNetworkType,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: String,
+          destination: Unit,
           fileName: String,
           networkType: ALL,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: String,
+          destination: Unit,
           fileName: String,
           networkType: CELLULAR,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
         def this(
           url: String,
-          destination: String,
+          destination: Unit,
           fileName: String,
+          networkType: WIFI,
+          httpHeader: DownloadHTTPHeaderFields
+        ) = this()
+        def this(
+          url: String,
+          destination: Unit,
+          fileName: Unit,
+          networkType: Unit,
+          httpHeader: DownloadHTTPHeaderFields
+        ) = this()
+        def this(
+          url: String,
+          destination: Unit,
+          fileName: Unit,
+          networkType: DownloadNetworkType,
+          httpHeader: DownloadHTTPHeaderFields
+        ) = this()
+        def this(
+          url: String,
+          destination: Unit,
+          fileName: Unit,
+          networkType: ALL,
+          httpHeader: DownloadHTTPHeaderFields
+        ) = this()
+        def this(
+          url: String,
+          destination: Unit,
+          fileName: Unit,
+          networkType: CELLULAR,
+          httpHeader: DownloadHTTPHeaderFields
+        ) = this()
+        def this(
+          url: String,
+          destination: Unit,
+          fileName: Unit,
           networkType: WIFI,
           httpHeader: DownloadHTTPHeaderFields
         ) = this()
@@ -979,100 +897,16 @@ object mod extends Shortcut {
       class TZDate ()
         extends typings.tizenCommonWeb.timeMod.TZDate {
         def this(datetime: Date) = this()
-        def this(datetime: js.UndefOr[scala.Nothing], timezone: String) = this()
+        def this(datetime: Unit, timezone: String) = this()
         def this(datetime: Date, timezone: String) = this()
         def this(year: Double, month: Double, day: Double) = this()
         def this(year: Double, month: Double, day: Double, hours: Double) = this()
-        def this(year: Double, month: Double, day: Double, hours: js.UndefOr[scala.Nothing], minutes: Double) = this()
         def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: Double,
-          seconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double
-        ) = this()
+        def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double) = this()
         def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double,
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: Double,
-          seconds: Double,
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double,
-          milliseconds: Double
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double
-        ) = this()
+        def this(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double) = this()
+        def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double) = this()
+        def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double) = this()
         def this(
           year: Double,
           month: Double,
@@ -1086,77 +920,70 @@ object mod extends Shortcut {
           year: Double,
           month: Double,
           day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: js.UndefOr[scala.Nothing],
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double,
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double,
-          milliseconds: js.UndefOr[scala.Nothing],
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double,
-          milliseconds: Double,
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: js.UndefOr[scala.Nothing],
+          hours: Double,
           minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: js.UndefOr[scala.Nothing],
-          timezone: String
+          seconds: Unit,
+          milliseconds: Double
         ) = this()
         def this(
           year: Double,
           month: Double,
           day: Double,
-          hours: js.UndefOr[scala.Nothing],
-          minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double,
-          timezone: String
+          hours: Double,
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Double
         ) = this()
         def this(
           year: Double,
           month: Double,
           day: Double,
-          hours: js.UndefOr[scala.Nothing],
+          hours: Double,
+          minutes: Unit,
+          seconds: Unit,
+          milliseconds: Double
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
           minutes: Double,
           seconds: Double,
-          milliseconds: js.UndefOr[scala.Nothing],
-          timezone: String
+          milliseconds: Double
         ) = this()
         def this(
           year: Double,
           month: Double,
           day: Double,
-          hours: js.UndefOr[scala.Nothing],
+          hours: Unit,
+          minutes: Double,
+          seconds: Unit,
+          milliseconds: Double
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Double
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Unit,
+          milliseconds: Double
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Double,
           minutes: Double,
           seconds: Double,
           milliseconds: Double,
@@ -1167,29 +994,9 @@ object mod extends Shortcut {
           month: Double,
           day: Double,
           hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: js.UndefOr[scala.Nothing],
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: Double,
-          timezone: String
-        ) = this()
-        def this(
-          year: Double,
-          month: Double,
-          day: Double,
-          hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
+          minutes: Double,
           seconds: Double,
-          milliseconds: js.UndefOr[scala.Nothing],
+          milliseconds: Unit,
           timezone: String
         ) = this()
         def this(
@@ -1197,8 +1004,8 @@ object mod extends Shortcut {
           month: Double,
           day: Double,
           hours: Double,
-          minutes: js.UndefOr[scala.Nothing],
-          seconds: Double,
+          minutes: Double,
+          seconds: Unit,
           milliseconds: Double,
           timezone: String
         ) = this()
@@ -1208,8 +1015,8 @@ object mod extends Shortcut {
           day: Double,
           hours: Double,
           minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
-          milliseconds: js.UndefOr[scala.Nothing],
+          seconds: Unit,
+          milliseconds: Unit,
           timezone: String
         ) = this()
         def this(
@@ -1217,8 +1024,28 @@ object mod extends Shortcut {
           month: Double,
           day: Double,
           hours: Double,
-          minutes: Double,
-          seconds: js.UndefOr[scala.Nothing],
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Double,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Double,
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Unit,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Double,
+          minutes: Unit,
+          seconds: Unit,
           milliseconds: Double,
           timezone: String
         ) = this()
@@ -1227,19 +1054,89 @@ object mod extends Shortcut {
           month: Double,
           day: Double,
           hours: Double,
-          minutes: Double,
-          seconds: Double,
-          milliseconds: js.UndefOr[scala.Nothing],
+          minutes: Unit,
+          seconds: Unit,
+          milliseconds: Unit,
           timezone: String
         ) = this()
         def this(
           year: Double,
           month: Double,
           day: Double,
-          hours: Double,
+          hours: Unit,
           minutes: Double,
           seconds: Double,
           milliseconds: Double,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Double,
+          seconds: Double,
+          milliseconds: Unit,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Double,
+          seconds: Unit,
+          milliseconds: Double,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Double,
+          seconds: Unit,
+          milliseconds: Unit,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Double,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Double,
+          milliseconds: Unit,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Unit,
+          milliseconds: Double,
+          timezone: String
+        ) = this()
+        def this(
+          year: Double,
+          month: Double,
+          day: Double,
+          hours: Unit,
+          minutes: Unit,
+          seconds: Unit,
+          milliseconds: Unit,
           timezone: String
         ) = this()
       }
@@ -1258,14 +1155,13 @@ object mod extends Shortcut {
       override def _to: Tizen = ^
     }
     
-    @js.native
     trait Window extends StObject {
       
-      var WebAPIError: WebAPIException = js.native
+      var WebAPIError: WebAPIException
       
-      var WebAPIException: typings.tizenCommonWeb.tizenMod.WebAPIException = js.native
+      var WebAPIException: typings.tizenCommonWeb.tizenMod.WebAPIException
       
-      var tizen: Tizen = js.native
+      var tizen: Tizen
     }
     object Window {
       
@@ -1290,55 +1186,54 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Tizen extends StObject {
     
-    var ApplicationControl: ApplicationControlConstructor = js.native
+    var ApplicationControl: ApplicationControlConstructor
     
-    var ApplicationControlData: ApplicationControlDataConstructor = js.native
+    var ApplicationControlData: ApplicationControlDataConstructor
     
-    var AttributeFilter: AttributeFilterConstructor = js.native
+    var AttributeFilter: AttributeFilterConstructor
     
-    var AttributeRangeFilter: AttributeRangeFilterConstructor = js.native
+    var AttributeRangeFilter: AttributeRangeFilterConstructor
     
-    var Bundle: BundleConstructor = js.native
+    var Bundle: BundleConstructor
     
-    var CompositeFilter: CompositeFilterConstructor = js.native
+    var CompositeFilter: CompositeFilterConstructor
     
-    var DownloadRequest: DownloadRequestConstructor = js.native
+    var DownloadRequest: DownloadRequestConstructor
     
-    var SimpleCoordinates: SimpleCoordinatesConstructor = js.native
+    var SimpleCoordinates: SimpleCoordinatesConstructor
     
-    var SortMode: SortModeConstructor = js.native
+    var SortMode: SortModeConstructor
     
-    var TZDate: TZDateConstructor = js.native
+    var TZDate: TZDateConstructor
     
-    var TimeDuration: TimeDurationConstructor = js.native
+    var TimeDuration: TimeDurationConstructor
     
     @JSName("package")
-    var _package: PackageManager = js.native
+    var _package: PackageManager
     
-    var application: ApplicationManager = js.native
+    var application: ApplicationManager
     
-    var download: DownloadManager = js.native
+    var download: DownloadManager
     
-    var filesystem: FilesystemManager = js.native
+    var filesystem: FilesystemManager
     
-    var systeminfo: SystemInfoManager = js.native
+    var systeminfo: SystemInfoManager
     
-    var time: TimeUtil = js.native
+    var time: TimeUtil
     
-    var tvaudiocontrol: TVAudioControlManager = js.native
+    var tvaudiocontrol: TVAudioControlManager
     
-    var tvdisplaycontrol: TVDisplayControlManager = js.native
+    var tvdisplaycontrol: TVDisplayControlManager
     
-    var tvinfo: TVInfoManager = js.native
+    var tvinfo: TVInfoManager
     
-    var tvinputdevice: TVInputDeviceManager = js.native
+    var tvinputdevice: TVInputDeviceManager
     
-    var tvwindow: TVWindowManager = js.native
+    var tvwindow: TVWindowManager
     
-    var websetting: WebSettingManager = js.native
+    var websetting: WebSettingManager
   }
   object Tizen {
     

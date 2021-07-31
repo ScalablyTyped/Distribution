@@ -10,9 +10,9 @@ Tooltip and Popover Positioning Engine
 | ------------------ | :-------------: |
 | Full name          | @popperjs/core |
 | Keywords           | tooltip, popover, dropdown, popup, popper, positioning engine |
-| # releases         | 46 |
-| # dependents       | 325 |
-| # downloads        | 13425185 |
+| # releases         | 57 |
+| # dependents       | 599 |
+| # downloads        | 45823101 |
 | # stars            | 0 |
 
 ## Links

@@ -5,21 +5,19 @@ import typings.antdMobile.antdMobileStrings.link
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeBarPropsTypeMod {
   
-  @js.native
   trait NoticeBarPropsType extends StObject {
     
-    var action: js.UndefOr[ReactElement] = js.native
+    var action: js.UndefOr[ReactElement] = js.undefined
     
-    var icon: js.UndefOr[ReactElement | Null] = js.native
+    var icon: js.UndefOr[ReactElement | Null] = js.undefined
     
-    var mode: js.UndefOr[closable | link] = js.native
+    var mode: js.UndefOr[closable | link] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object NoticeBarPropsType {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPermissionsFailureEntry extends StObject {
   
   /**
     * An error message that applies to the failure of the entry.
     */
-  var Error: js.UndefOr[ErrorDetail] = js.native
+  var Error: js.UndefOr[ErrorDetail] = js.undefined
   
   /**
     * An identifier for an entry of the batch request.
     */
-  var RequestEntry: js.UndefOr[BatchPermissionsRequestEntry] = js.native
+  var RequestEntry: js.UndefOr[BatchPermissionsRequestEntry] = js.undefined
 }
 object BatchPermissionsFailureEntry {
   

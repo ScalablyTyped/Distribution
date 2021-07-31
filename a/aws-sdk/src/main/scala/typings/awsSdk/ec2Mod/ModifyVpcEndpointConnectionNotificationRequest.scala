@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpcEndpointConnectionNotificationRequest extends StObject {
   
   /**
     * One or more events for the endpoint. Valid values are Accept, Connect, Delete, and Reject.
     */
-  var ConnectionEvents: js.UndefOr[ValueStringList] = js.native
+  var ConnectionEvents: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ARN for the SNS topic for the notification.
     */
-  var ConnectionNotificationArn: js.UndefOr[String] = js.native
+  var ConnectionNotificationArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the notification.
     */
-  var ConnectionNotificationId: typings.awsSdk.ec2Mod.ConnectionNotificationId = js.native
+  var ConnectionNotificationId: typings.awsSdk.ec2Mod.ConnectionNotificationId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
 }
 object ModifyVpcEndpointConnectionNotificationRequest {
   

@@ -4,7 +4,6 @@ import typings.historyJs.anon.HashChange
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Since History is defined in lib.d.ts as well
@@ -38,9 +37,9 @@ trait Historyjs extends StObject {
   def getRootUrl(): String = js.native
   
   def getState(): HistoryState = js.native
-  def getState(friendly: js.UndefOr[scala.Nothing], create: Boolean): HistoryState = js.native
   def getState(friendly: Boolean): HistoryState = js.native
   def getState(friendly: Boolean, create: Boolean): HistoryState = js.native
+  def getState(friendly: Unit, create: Boolean): HistoryState = js.native
   
   def getStateById(id: String): HistoryState = js.native
   

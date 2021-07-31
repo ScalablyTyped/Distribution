@@ -2,10 +2,8 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundTokenizer extends StObject {
   
   /**
@@ -13,44 +11,44 @@ trait BackgroundTokenizer extends StObject {
     * @param firstRow The starting row region
     * @param lastRow The final row region
     **/
-  def fireUpdateEvent(firstRow: Double, lastRow: Double): Unit = js.native
+  def fireUpdateEvent(firstRow: Double, lastRow: Double): Unit
   
   /**
     * [Returns the state of tokenization at the end of a row.]{: #BackgroundTokenizer.getState}
     * @param row The row to get state at
     **/
-  def getState(row: Double): String = js.native
+  def getState(row: Double): String
   
   /**
     * Gives list of tokens of the row. (tokens are cached)
     * @param row The row to get tokens at
     **/
-  def getTokens(row: Double): js.Array[TokenInfo] = js.native
+  def getTokens(row: Double): js.Array[TokenInfo]
   
   /**
     * Sets a new document to associate with this object.
     * @param doc The new document to associate with
     **/
-  def setDocument(doc: Document): Unit = js.native
+  def setDocument(doc: Document): Unit
   
   /**
     * Sets a new tokenizer for this object.
     * @param tokenizer The new tokenizer to use
     **/
-  def setTokenizer(tokenizer: Tokenizer): Unit = js.native
+  def setTokenizer(tokenizer: Tokenizer): Unit
   
   /**
     * Starts tokenizing at the row indicated.
     * @param startRow The row to start at
     **/
-  def start(startRow: Double): Unit = js.native
+  def start(startRow: Double): Unit
   
-  var states: js.Array[_] = js.native
+  var states: js.Array[js.Any]
   
   /**
     * Stops tokenizing.
     **/
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object BackgroundTokenizer {
   
@@ -62,7 +60,7 @@ object BackgroundTokenizer {
     setDocument: Document => Unit,
     setTokenizer: Tokenizer => Unit,
     start: Double => Unit,
-    states: js.Array[_],
+    states: js.Array[js.Any],
     stop: () => Unit
   ): BackgroundTokenizer = {
     val __obj = js.Dynamic.literal(fireUpdateEvent = js.Any.fromFunction2(fireUpdateEvent), getState = js.Any.fromFunction1(getState), getTokens = js.Any.fromFunction1(getTokens), setDocument = js.Any.fromFunction1(setDocument), setTokenizer = js.Any.fromFunction1(setTokenizer), start = js.Any.fromFunction1(start), states = states.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
@@ -91,7 +89,7 @@ object BackgroundTokenizer {
     def setStart(value: Double => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStates(value: js.Array[_]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    def setStates(value: js.Array[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatesVarargs(value: js.Any*): Self = StObject.set(x, "states", js.Array(value :_*))

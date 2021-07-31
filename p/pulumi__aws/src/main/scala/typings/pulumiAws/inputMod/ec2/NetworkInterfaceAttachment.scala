@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterfaceAttachment extends StObject {
   
-  var attachmentId: js.UndefOr[Input[String]] = js.native
+  var attachmentId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Integer to define the devices index.
     */
-  var deviceIndex: Input[Double] = js.native
+  var deviceIndex: Input[Double]
   
   /**
     * ID of the instance to attach to.
     */
-  var instance: Input[String] = js.native
+  var instance: Input[String]
 }
 object NetworkInterfaceAttachment {
   

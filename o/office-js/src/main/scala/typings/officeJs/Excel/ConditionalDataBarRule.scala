@@ -10,7 +10,6 @@ import typings.officeJs.officeJsStrings.Percent
 import typings.officeJs.officeJsStrings.Percentile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalDataBarRule extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait ConditionalDataBarRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait ConditionalDataBarRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile = js.native
+  var `type`: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile
 }
 object ConditionalDataBarRule {
   

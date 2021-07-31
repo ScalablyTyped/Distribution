@@ -2,20 +2,18 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for form triggers.
   */
-@js.native
 trait FormTriggerBuilder extends StObject {
   
-  def create(): Trigger = js.native
+  def create(): Trigger
   
-  def onFormSubmit(): FormTriggerBuilder = js.native
+  def onFormSubmit(): FormTriggerBuilder
   
-  def onOpen(): FormTriggerBuilder = js.native
+  def onOpen(): FormTriggerBuilder
 }
 object FormTriggerBuilder {
   

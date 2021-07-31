@@ -3,7 +3,6 @@ package typings.p5.mod
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,8 +32,8 @@ trait MediaElement extends StObject {
     *   @return id ID of this cue, useful for
     *   removeCue(id)
     */
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _], value: js.Object): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any], value: js.Object): Double = js.native
   
   /**
     *   Set HTML5 media element to autoplay or not.
@@ -109,7 +108,7 @@ trait MediaElement extends StObject {
     *   passed in as the argument to the callback.
     *   @chainable
     */
-  def onended(callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def onended(callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
   
   /**
     *   Pauses an HTML5 media element.

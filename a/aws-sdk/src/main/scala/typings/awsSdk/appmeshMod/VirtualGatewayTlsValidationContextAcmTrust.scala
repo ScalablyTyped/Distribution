@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayTlsValidationContextAcmTrust extends StObject {
   
   /**
     * One or more ACM Amazon Resource Name (ARN)s.
     */
-  var certificateAuthorityArns: VirtualGatewayCertificateAuthorityArns = js.native
+  var certificateAuthorityArns: VirtualGatewayCertificateAuthorityArns
 }
 object VirtualGatewayTlsValidationContextAcmTrust {
   

@@ -10,9 +10,9 @@ Web3 module to generate Ethereum accounts and sign data and transactions.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-accounts |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 28 |
-| # downloads        | 5740667 |
+| # releases         | 43 |
+| # dependents       | 32 |
+| # downloads        | 7029643 |
 | # stars            | 0 |
 
 ## Links

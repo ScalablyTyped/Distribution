@@ -2,17 +2,15 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contributors extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var id_str: String = js.native
+  var id_str: String
   
-  var screen_name: String = js.native
+  var screen_name: String
 }
 object Contributors {
   

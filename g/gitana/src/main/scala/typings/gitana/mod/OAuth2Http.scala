@@ -2,7 +2,6 @@ package typings.gitana.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "OAuth2Http")
@@ -44,9 +43,8 @@ object OAuth2Http {
   def PASSWORD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.Storage")
-  @js.native
-  def Storage(scope: js.Any): js.Any = js.native
+  @scala.inline
+  def Storage(scope: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Storage")(scope.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.TICKET")
@@ -70,27 +68,22 @@ object OAuth2Http {
   def TOKEN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN_METHOD")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.extend")
-  @js.native
-  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.forEach")
-  @js.native
-  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
+  @scala.inline
+  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.implement")
-  @js.native
-  def implement(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.toString")
-  @js.native
-  def toString_(): js.Any = js.native
+  @scala.inline
+  def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "OAuth2Http.valueOf")
-  @js.native
-  def valueOf_(`type`: js.Any): js.Any = js.native
+  @scala.inline
+  def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

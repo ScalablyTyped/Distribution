@@ -10,9 +10,9 @@ Routing and navigation for your React Native apps
 | ------------------ | :-------------: |
 | Full name          | react-navigation |
 | Keywords           | - |
-| # releases         | 111 |
-| # dependents       | 369 |
-| # downloads        | 10952324 |
+| # releases         | 60 |
+| # dependents       | 392 |
+| # downloads        | 9683025 |
 | # stars            | 16 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsVpcPeeredResult extends StObject {
   
   /**
     * Returns true if the Lightsail VPC is peered; otherwise, false.
     */
-  var isPeered: js.UndefOr[Boolean] = js.native
+  var isPeered: js.UndefOr[Boolean] = js.undefined
 }
 object IsVpcPeeredResult {
   

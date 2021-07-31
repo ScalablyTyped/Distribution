@@ -2,17 +2,16 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenTicketDetailOptions2
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var partnerId: String = js.native
+  var partnerId: String
   
   // 商户编号（如果传入了passId则不需要传入partnerId）
-  var serialNumber: String = js.native
+  var serialNumber: String
 }
 object OpenTicketDetailOptions2 {
   

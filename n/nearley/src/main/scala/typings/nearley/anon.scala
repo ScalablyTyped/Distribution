@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nearley.mod.LexerState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var lexerState: LexerState = js.native
+    var lexerState: LexerState
   }
   object Dictkey {
     
@@ -31,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

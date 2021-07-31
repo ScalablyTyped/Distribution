@@ -5,22 +5,20 @@ import typings.mangopay2NodejsSdk.anon.PartialHeaders
 import typings.mangopay2NodejsSdk.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
-  var headers: PartialHeaders = js.native
+  var headers: PartialHeaders
   
   /**
     * Path options are replacing the ${placeholders} from apiMethods
     */
-  var path: ApiVersion = js.native
+  var path: ApiVersion
   
-  var requestConfig: Timeout = js.native
+  var requestConfig: Timeout
   
-  var responseConfig: Timeout = js.native
+  var responseConfig: Timeout
 }
 object RequestOptions {
   

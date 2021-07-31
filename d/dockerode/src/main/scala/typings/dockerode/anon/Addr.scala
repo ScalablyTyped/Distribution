@@ -2,25 +2,23 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Addr extends StObject {
   
-  var Addr: String = js.native
+  var Addr: String
   
-  var Cpus: Double = js.native
+  var Cpus: Double
   
-  var ID: String = js.native
+  var ID: String
   
-  var IP: String = js.native
+  var IP: String
   
-  var Labels: js.Any = js.native
+  var Labels: js.Any
   
-  var Memory: Double = js.native
+  var Memory: Double
   
-  var Name: String = js.native
+  var Name: String
 }
 object Addr {
   

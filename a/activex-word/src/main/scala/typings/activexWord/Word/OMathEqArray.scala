@@ -2,32 +2,30 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathEqArray extends StObject {
   
-  var Align: WdOMathVertAlignType = js.native
+  var Align: WdOMathVertAlignType
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMathArgs = js.native
+  val E: OMathArgs
   
-  var MaxDist: Boolean = js.native
+  var MaxDist: Boolean
   
-  var ObjDist: Boolean = js.native
+  var ObjDist: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RowSpacing: Double = js.native
+  var RowSpacing: Double
   
-  var RowSpacingRule: WdOMathSpacingRule = js.native
+  var RowSpacingRule: WdOMathSpacingRule
   
   @JSName("Word.OMathEqArray_typekey")
-  var WordDotOMathEqArray_typekey: OMathEqArray = js.native
+  var WordDotOMathEqArray_typekey: OMathEqArray
 }
 object OMathEqArray {
   

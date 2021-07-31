@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayPart extends StObject {
   
   /** The day of the week to target. If unspecified, applicable to all days. */
-  var dayOfWeek: js.UndefOr[String] = js.native
+  var dayOfWeek: js.UndefOr[String] = js.undefined
   
   /** The ending time of the day for the ad to show (minute level granularity). The end time is exclusive. This field is not available for filtering in PQL queries. */
-  var endTime: js.UndefOr[TimeOfDay] = js.native
+  var endTime: js.UndefOr[TimeOfDay] = js.undefined
   
   /** The starting time of day for the ad to show (minute level granularity). The start time is inclusive. This field is not available for filtering in PQL queries. */
-  var startTime: js.UndefOr[TimeOfDay] = js.native
+  var startTime: js.UndefOr[TimeOfDay] = js.undefined
 }
 object DayPart {
   

@@ -12,12 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.singletenant
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Portal
-  extends Accessor
+  extends StObject
+     with Accessor
      with Loadable {
   
   /**
@@ -257,17 +257,17 @@ trait Portal
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchBasemaps)
     */
   def fetchBasemaps(): js.Promise[js.Array[Basemap]] = js.native
-  def fetchBasemaps(basemapGalleryGroupQuery: js.UndefOr[scala.Nothing], options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
+  def fetchBasemaps(basemapGalleryGroupQuery: Unit, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
   
   /**
     * If present, fetches the organization's category schema.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchCategorySchema)
     */
-  def fetchCategorySchema(): js.Promise[js.Array[_]] = js.native
-  def fetchCategorySchema(options: PortalFetchCategorySchemaOptions): js.Promise[js.Array[_]] = js.native
+  def fetchCategorySchema(): js.Promise[js.Array[js.Any]] = js.native
+  def fetchCategorySchema(options: PortalFetchCategorySchemaOptions): js.Promise[js.Array[js.Any]] = js.native
   
   /**
     * Fetches the featured groups in the Portal.
@@ -282,8 +282,8 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchRegions)
     */
-  def fetchRegions(): js.Promise[js.Array[_]] = js.native
-  def fetchRegions(options: PortalFetchRegionsOptions): js.Promise[js.Array[_]] = js.native
+  def fetchRegions(): js.Promise[js.Array[js.Any]] = js.native
+  def fetchRegions(options: PortalFetchRegionsOptions): js.Promise[js.Array[js.Any]] = js.native
   
   /**
     * The query that identifies the group containing features items for the gallery.
@@ -474,7 +474,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#rotatorPanels)
     */
-  var rotatorPanels: js.Array[_] = js.native
+  var rotatorPanels: js.Array[js.Any] = js.native
   
   /**
     * Indicates whether the description of your organization displays on the home page.

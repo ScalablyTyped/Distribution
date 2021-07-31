@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.ICompareFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object priorityQueueMod {
@@ -35,24 +34,24 @@ object priorityQueueMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[T] () extends PriorityQueue[T] {
+  class default[T] ()
+    extends StObject
+       with PriorityQueue[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
-  }
-  
-  @js.native
-  trait PriorityQueue[T] extends StObject {
     
     /**
       * Inserts the specified element into this priority queue.
       * @param {Object} element the element to insert.
       * @return {boolean} true if the element was inserted, or false if it is undefined.
       */
-    def add(element: T): Boolean = js.native
+    /* CompleteClass */
+    override def add(element: T): Boolean = js.native
     
     /**
       * Removes all of the elements from this priority queue.
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * Returns true if this priority queue contains the specified element.
@@ -60,21 +59,24 @@ object priorityQueueMod {
       * @return {boolean} true if this priority queue contains the specified element,
       * false otherwise.
       */
-    def contains(element: T): Boolean = js.native
+    /* CompleteClass */
+    override def contains(element: T): Boolean = js.native
     
     /**
       * Retrieves and removes the highest priority element of this queue.
       * @return {*} the the highest priority element of this queue,
       *  or undefined if this queue is empty.
       */
-    def dequeue(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def dequeue(): js.UndefOr[T] = js.native
     
     /**
       * Inserts the specified element into this priority queue.
       * @param {Object} element the element to insert.
       * @return {boolean} true if the element was inserted, or false if it is undefined.
       */
-    def enqueue(element: T): Boolean = js.native
+    /* CompleteClass */
+    override def enqueue(element: T): Boolean = js.native
     
     /**
       * Executes the provided function once for each element present in this queue in
@@ -83,8 +85,10 @@ object priorityQueueMod {
       * invoked with one argument: the element value, to break the iteration you can
       * optionally return false.
       */
-    def forEach(callback: ILoopFunction[T]): Unit = js.native
+    /* CompleteClass */
+    override def forEach(callback: ILoopFunction[T]): Unit = js.native
     
+    /* CompleteClass */
     var heap: js.Any = js.native
     
     /**
@@ -92,19 +96,89 @@ object priorityQueueMod {
       * @return {boolean} true if and only if this priority queue contains no items; false
       * otherwise.
       */
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
     /**
       * Retrieves, but does not remove, the highest priority element of this queue.
       * @return {*} the highest priority element of this queue, or undefined if this queue is empty.
       */
-    def peek(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def peek(): js.UndefOr[T] = js.native
     
     /**
       * Returns the number of elements in this priority queue.
       * @return {number} the number of elements in this priority queue.
       */
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
+  }
+  
+  trait PriorityQueue[T] extends StObject {
+    
+    /**
+      * Inserts the specified element into this priority queue.
+      * @param {Object} element the element to insert.
+      * @return {boolean} true if the element was inserted, or false if it is undefined.
+      */
+    def add(element: T): Boolean
+    
+    /**
+      * Removes all of the elements from this priority queue.
+      */
+    def clear(): Unit
+    
+    /**
+      * Returns true if this priority queue contains the specified element.
+      * @param {Object} element element to search for.
+      * @return {boolean} true if this priority queue contains the specified element,
+      * false otherwise.
+      */
+    def contains(element: T): Boolean
+    
+    /**
+      * Retrieves and removes the highest priority element of this queue.
+      * @return {*} the the highest priority element of this queue,
+      *  or undefined if this queue is empty.
+      */
+    def dequeue(): js.UndefOr[T]
+    
+    /**
+      * Inserts the specified element into this priority queue.
+      * @param {Object} element the element to insert.
+      * @return {boolean} true if the element was inserted, or false if it is undefined.
+      */
+    def enqueue(element: T): Boolean
+    
+    /**
+      * Executes the provided function once for each element present in this queue in
+      * no particular order.
+      * @param {function(Object):*} callback function to execute, it is
+      * invoked with one argument: the element value, to break the iteration you can
+      * optionally return false.
+      */
+    def forEach(callback: ILoopFunction[T]): Unit
+    
+    var heap: js.Any
+    
+    /**
+      * Checks if this priority queue is empty.
+      * @return {boolean} true if and only if this priority queue contains no items; false
+      * otherwise.
+      */
+    def isEmpty(): Boolean
+    
+    /**
+      * Retrieves, but does not remove, the highest priority element of this queue.
+      * @return {*} the highest priority element of this queue, or undefined if this queue is empty.
+      */
+    def peek(): js.UndefOr[T]
+    
+    /**
+      * Returns the number of elements in this priority queue.
+      * @return {number} the number of elements in this priority queue.
+      */
+    def size(): Double
   }
   object PriorityQueue {
     
@@ -126,7 +200,7 @@ object priorityQueueMod {
     }
     
     @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[_], T] (val x: Self with PriorityQueue[T]) extends AnyVal {
+    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

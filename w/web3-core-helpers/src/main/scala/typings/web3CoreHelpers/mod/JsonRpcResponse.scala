@@ -2,19 +2,17 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonRpcResponse extends StObject {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var jsonrpc: String = js.native
+  var jsonrpc: String
   
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
 }
 object JsonRpcResponse {
   

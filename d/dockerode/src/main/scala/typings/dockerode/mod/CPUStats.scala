@@ -4,19 +4,17 @@ import typings.dockerode.anon.Percpuusage
 import typings.dockerode.anon.Periods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPUStats extends StObject {
   
-  var cpu_usage: Percpuusage = js.native
+  var cpu_usage: Percpuusage
   
-  var online_cpus: Double = js.native
+  var online_cpus: Double
   
-  var system_cpu_usage: Double = js.native
+  var system_cpu_usage: Double
   
-  var throttling_data: Periods = js.native
+  var throttling_data: Periods
 }
 object CPUStats {
   

@@ -12,7 +12,7 @@ Nice and simple notifications for Electron apps
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3189 |
+| # downloads        | 2539 |
 | # stars            | 1 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFunctionEventInvokeConfigsResponse extends StObject {
   
   /**
     * A list of configurations.
     */
-  var FunctionEventInvokeConfigs: js.UndefOr[FunctionEventInvokeConfigList] = js.native
+  var FunctionEventInvokeConfigs: js.UndefOr[FunctionEventInvokeConfigList] = js.undefined
   
   /**
     * The pagination token that's included if more results are available.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListFunctionEventInvokeConfigsResponse {
   

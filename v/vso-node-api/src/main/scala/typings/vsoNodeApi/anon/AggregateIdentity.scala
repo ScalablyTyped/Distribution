@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateIdentity extends StObject {
   
-  var aggregateIdentity: scala.Double = js.native
+  var aggregateIdentity: scala.Double
   
-  var importedIdentity: scala.Double = js.native
+  var importedIdentity: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var serviceIdentity: scala.Double = js.native
+  var serviceIdentity: scala.Double
 }
 object AggregateIdentity {
   

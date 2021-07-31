@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionConfig extends StObject {
   
   /**
     * The provisioned storage, in bytes, per partition. If the number of bytes stored in any of the topic's partitions grows beyond this value, older messages will be dropped to make room
     * for newer ones, regardless of the value of `period`.
     */
-  var perPartitionBytes: js.UndefOr[String] = js.native
+  var perPartitionBytes: js.UndefOr[String] = js.undefined
   
   /** How long a published message is retained. If unset, messages will be retained as long as the bytes retained for each partition is below `per_partition_bytes`. */
-  var period: js.UndefOr[String] = js.native
+  var period: js.UndefOr[String] = js.undefined
 }
 object RetentionConfig {
   

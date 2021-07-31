@@ -3,13 +3,11 @@ package typings.sketchapp
 import typings.sketchapp.anon.PageListCollapsed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSUserDocument extends StObject {
   
-  var document: PageListCollapsed = js.native
+  var document: PageListCollapsed
 }
 object SketchMSUserDocument {
   

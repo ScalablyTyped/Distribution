@@ -4,17 +4,17 @@ import typings.kendoUi.kendo.dataviz.map.layer.Shape
 import typings.kendoUi.kendo.drawing.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapShapeMouseLeaveEvent extends MapEvent {
+trait MapShapeMouseLeaveEvent
+  extends StObject
+     with MapEvent {
   
-  var layer: js.UndefOr[Shape] = js.native
+  var layer: js.UndefOr[Shape] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var shape: js.UndefOr[Element] = js.native
+  var shape: js.UndefOr[Element] = js.undefined
 }
 object MapShapeMouseLeaveEvent {
   

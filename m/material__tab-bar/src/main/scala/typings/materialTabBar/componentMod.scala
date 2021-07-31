@@ -7,7 +7,6 @@ import typings.materialTabScroller.componentMod.MDCTabScrollerFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   @JSImport("@material/tab-bar/component", "MDCTabBar")
   @js.native
   class MDCTabBar protected () extends MDCComponent[MDCTabBarFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTabBarFoundation, args: js.Any*) = this()
     
     /**
@@ -27,7 +26,7 @@ object componentMod {
     def focusOnActivate_=(focusOnActivate: Boolean): Unit = js.native
     
     def initialize(): Unit = js.native
-    def initialize(tabFactory: js.UndefOr[scala.Nothing], tabScrollerFactory: MDCTabScrollerFactory): Unit = js.native
+    def initialize(tabFactory: Unit, tabScrollerFactory: MDCTabScrollerFactory): Unit = js.native
     def initialize(tabFactory: MDCTabFactory): Unit = js.native
     def initialize(tabFactory: MDCTabFactory, tabScrollerFactory: MDCTabScrollerFactory): Unit = js.native
     
@@ -42,8 +41,11 @@ object componentMod {
   /* static members */
   object MDCTabBar {
     
-    @JSImport("@material/tab-bar/component", "MDCTabBar.attachTo")
+    @JSImport("@material/tab-bar/component", "MDCTabBar")
     @js.native
-    def attachTo(root: Element): MDCTabBar = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBar]
   }
 }

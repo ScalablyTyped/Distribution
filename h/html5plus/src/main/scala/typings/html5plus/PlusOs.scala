@@ -6,7 +6,6 @@ import typings.html5plus.html5plusStrings.Google
 import typings.html5plus.html5plusStrings.iOS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
-@js.native
 trait PlusOs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusOs extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * 系统的名称
@@ -37,7 +35,7 @@ trait PlusOs extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var name: js.UndefOr[iOS | Android] = js.native
+  var name: js.UndefOr[iOS | Android] = js.undefined
   
   /**
     * 系统的供应商信息
@@ -51,7 +49,7 @@ trait PlusOs extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var vendor: js.UndefOr[Apple | Google] = js.native
+  var vendor: js.UndefOr[Apple | Google] = js.undefined
   
   /**
     * 系统版本信息
@@ -59,7 +57,7 @@ trait PlusOs extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object PlusOs {
   

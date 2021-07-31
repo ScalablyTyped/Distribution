@@ -11,8 +11,8 @@ Convert text to SVG path without native dependence.
 | Full name          | text-to-svg |
 | Keywords           | fonts, glyph, graphics, SVG, text, vector |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 125484 |
+| # dependents       | 23 |
+| # downloads        | 150959 |
 | # stars            | 8 |
 
 ## Links

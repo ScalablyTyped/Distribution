@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardingRuleInfo extends StObject {
   
   /** Name of a Compute Engine forwarding rule. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Port range defined in the forwarding rule that matches the test. */
-  var matchedPortRange: js.UndefOr[String] = js.native
+  var matchedPortRange: js.UndefOr[String] = js.undefined
   
   /** Protocol defined in the forwarding rule that matches the test. */
-  var matchedProtocol: js.UndefOr[String] = js.native
+  var matchedProtocol: js.UndefOr[String] = js.undefined
   
   /** Network URI. Only valid for Internal Load Balancer. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Target type of the forwarding rule. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine forwarding rule. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /** VIP of the forwarding rule. */
-  var vip: js.UndefOr[String] = js.native
+  var vip: js.UndefOr[String] = js.undefined
 }
 object ForwardingRuleInfo {
   

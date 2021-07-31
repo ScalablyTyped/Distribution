@@ -3,15 +3,13 @@ package typings.typeorm.anon
 import typings.typeorm.metadataArgsEmbeddedMetadataArgsMod.EmbeddedMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgsEmbeddedMetadataArgs extends StObject {
   
-  var args: EmbeddedMetadataArgs = js.native
+  var args: EmbeddedMetadataArgs
   
-  var entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 }
 object ArgsEmbeddedMetadataArgs {
   

@@ -2,23 +2,21 @@ package typings.primereact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipOptionsMod {
   
-  @js.native
   trait TooltipOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var hideDelay: js.UndefOr[Double] = js.native
+    var hideDelay: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var showDelay: js.UndefOr[Double] = js.native
+    var showDelay: js.UndefOr[Double] = js.undefined
   }
   object TooltipOptions {
     

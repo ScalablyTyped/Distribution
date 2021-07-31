@@ -4,20 +4,18 @@ import typings.tslint.ruleMod.IDisabledInterval
 import typings.tslint.ruleMod.RuleSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<tslint.tslint/lib/language/rule/rule.IOptions> */
-@js.native
 trait PartialIOptions extends StObject {
   
-  var disabledIntervals: js.UndefOr[js.Array[IDisabledInterval]] = js.native
+  var disabledIntervals: js.UndefOr[js.Array[IDisabledInterval]] = js.undefined
   
-  var ruleArguments: js.UndefOr[js.Array[_]] = js.native
+  var ruleArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var ruleName: js.UndefOr[String] = js.native
+  var ruleName: js.UndefOr[String] = js.undefined
   
-  var ruleSeverity: js.UndefOr[RuleSeverity] = js.native
+  var ruleSeverity: js.UndefOr[RuleSeverity] = js.undefined
 }
 object PartialIOptions {
   
@@ -40,7 +38,7 @@ object PartialIOptions {
     def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
     
     @scala.inline
-    def setRuleArguments(value: js.Array[_]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+    def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRuleArgumentsUndefined: Self = StObject.set(x, "ruleArguments", js.undefined)

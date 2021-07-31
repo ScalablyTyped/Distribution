@@ -2,13 +2,11 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional arguments to enable specific features of builds.
   */
-@js.native
 trait SchemaBuildOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaBuildOptions extends StObject {
     * 1000GB; builds that request more than the maximum are rejected with an
     * error.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * A list of global environment variable definitions that will exist for all
@@ -29,28 +27,28 @@ trait SchemaBuildOptions extends StObject {
     * elements are of the form &quot;KEY=VALUE&quot; for the environment
     * variable &quot;KEY&quot; being given the value &quot;VALUE&quot;.
     */
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Option to define build log streaming behavior to Google Cloud Storage.
     */
-  var logStreamingOption: js.UndefOr[String] = js.native
+  var logStreamingOption: js.UndefOr[String] = js.undefined
   
   /**
     * Option to specify the logging mode, which determines where the logs are
     * stored.
     */
-  var logging: js.UndefOr[String] = js.native
+  var logging: js.UndefOr[String] = js.undefined
   
   /**
     * Compute Engine machine type on which to run the build.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Requested verifiability options.
     */
-  var requestedVerifyOption: js.UndefOr[String] = js.native
+  var requestedVerifyOption: js.UndefOr[String] = js.undefined
   
   /**
     * A list of global environment variables, which are encrypted using a Cloud
@@ -58,18 +56,18 @@ trait SchemaBuildOptions extends StObject {
     * build&#39;s `Secret`. These variables will be available to all build
     * steps in this build.
     */
-  var secretEnv: js.UndefOr[js.Array[String]] = js.native
+  var secretEnv: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Requested hash for SourceProvenance.
     */
-  var sourceProvenanceHash: js.UndefOr[js.Array[String]] = js.native
+  var sourceProvenanceHash: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Option to specify behavior when there is an error in the substitution
     * checks.
     */
-  var substitutionOption: js.UndefOr[String] = js.native
+  var substitutionOption: js.UndefOr[String] = js.undefined
   
   /**
     * Global list of volumes to mount for ALL build steps  Each volume is
@@ -79,14 +77,14 @@ trait SchemaBuildOptions extends StObject {
     * step.  Using a global volume in a build with only one step is not valid
     * as it is indicative of a build request with an incorrect configuration.
     */
-  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
   
   /**
     * Option to specify a `WorkerPool` for the build. User specifies the pool
     * with the format &quot;[WORKERPOOL_PROJECT_ID]/[WORKERPOOL_NAME]&quot;.
     * This is an experimental field.
     */
-  var workerPool: js.UndefOr[String] = js.native
+  var workerPool: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildOptions {
   

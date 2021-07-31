@@ -2,39 +2,37 @@ package typings.webcola
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handledisconnectedMod {
   
-  @JSImport("webcola/dist/src/handledisconnected", "applyPacking")
+  @JSImport("webcola/dist/src/handledisconnected", JSImport.Namespace)
   @js.native
-  def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any): Unit = js.native
-  @JSImport("webcola/dist/src/handledisconnected", "applyPacking")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def applyPacking(graphs: js.Array[js.Any], w: js.Any, h: js.Any, node_size: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPacking")(graphs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], node_size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyPacking(graphs: js.Array[js.Any], w: js.Any, h: js.Any, node_size: js.Any, desired_ratio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPacking")(graphs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], node_size.asInstanceOf[js.Any], desired_ratio.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def applyPacking(
-    graphs: js.Array[_],
-    w: js.Any,
-    h: js.Any,
-    node_size: js.Any,
-    desired_ratio: js.UndefOr[scala.Nothing],
-    centerGraph: Boolean
-  ): Unit = js.native
-  @JSImport("webcola/dist/src/handledisconnected", "applyPacking")
-  @js.native
-  def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any, desired_ratio: Double): Unit = js.native
-  @JSImport("webcola/dist/src/handledisconnected", "applyPacking")
-  @js.native
-  def applyPacking(
-    graphs: js.Array[_],
+    graphs: js.Array[js.Any],
     w: js.Any,
     h: js.Any,
     node_size: js.Any,
     desired_ratio: Double,
     centerGraph: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPacking")(graphs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], node_size.asInstanceOf[js.Any], desired_ratio.asInstanceOf[js.Any], centerGraph.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyPacking(
+    graphs: js.Array[js.Any],
+    w: js.Any,
+    h: js.Any,
+    node_size: js.Any,
+    desired_ratio: Unit,
+    centerGraph: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPacking")(graphs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], node_size.asInstanceOf[js.Any], desired_ratio.asInstanceOf[js.Any], centerGraph.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("webcola/dist/src/handledisconnected", "separateGraphs")
-  @js.native
-  def separateGraphs(nodes: js.Any, links: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def separateGraphs(nodes: js.Any, links: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("separateGraphs")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

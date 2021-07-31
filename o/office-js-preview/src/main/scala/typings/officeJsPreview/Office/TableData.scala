@@ -2,13 +2,11 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the data in a table or an {@link Office.TableBinding}.
   */
-@js.native
 trait TableData extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait TableData extends StObject {
     *
     * - If you overwrite or update an existing table, the existing headers are not altered.
     */
-  var headers: js.Array[_] = js.native
+  var headers: js.Array[js.Any]
   
   /**
     * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table.
@@ -44,12 +42,12 @@ trait TableData extends StObject {
     *
     * - If you overwrite or update an existing table, the existing rows are not altered.
     */
-  var rows: js.Array[js.Array[_]] = js.native
+  var rows: js.Array[js.Array[js.Any]]
 }
 object TableData {
   
   @scala.inline
-  def apply(headers: js.Array[_], rows: js.Array[js.Array[_]]): TableData = {
+  def apply(headers: js.Array[js.Any], rows: js.Array[js.Array[js.Any]]): TableData = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
@@ -58,13 +56,13 @@ object TableData {
   implicit class TableDataMutableBuilder[Self <: TableData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))

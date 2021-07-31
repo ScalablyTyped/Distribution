@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAMLIdp extends StObject {
   
   /**
     * The unique Entity ID of the application in SAML Identity Provider.
     */
-  var EntityId: SAMLEntityId = js.native
+  var EntityId: SAMLEntityId
   
   /**
     * The Metadata of the SAML application in xml format.
     */
-  var MetadataContent: SAMLMetadata = js.native
+  var MetadataContent: SAMLMetadata
 }
 object SAMLIdp {
   

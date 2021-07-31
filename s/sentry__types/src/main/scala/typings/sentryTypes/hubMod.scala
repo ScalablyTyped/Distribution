@@ -23,7 +23,6 @@ import typings.sentryTypes.transactionMod.TransactionContext
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hubMod {
@@ -78,7 +77,7 @@ object hubMod {
       * @returns The generated eventId.
       */
     def captureMessage(message: String): String = js.native
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): String = js.native
+    def captureMessage(message: String, level: Unit, hint: EventHint): String = js.native
     def captureMessage(message: String, level: Severity): String = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint): String = js.native
     

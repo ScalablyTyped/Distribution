@@ -2,36 +2,34 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAMLOptionsOutput extends StObject {
   
   /**
     * True if SAML is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes the SAML Identity Provider's information.
     */
-  var Idp: js.UndefOr[SAMLIdp] = js.native
+  var Idp: js.UndefOr[SAMLIdp] = js.undefined
   
   /**
     * The key used for matching the SAML Roles attribute.
     */
-  var RolesKey: js.UndefOr[String] = js.native
+  var RolesKey: js.UndefOr[String] = js.undefined
   
   /**
     * The duration, in minutes, after which a user session becomes inactive.
     */
-  var SessionTimeoutMinutes: js.UndefOr[IntegerClass] = js.native
+  var SessionTimeoutMinutes: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     * The key used for matching the SAML Subject attribute.
     */
-  var SubjectKey: js.UndefOr[String] = js.native
+  var SubjectKey: js.UndefOr[String] = js.undefined
 }
 object SAMLOptionsOutput {
   

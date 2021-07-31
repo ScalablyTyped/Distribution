@@ -2,13 +2,11 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animator extends StObject {
   
-  var actions: js.Array[AnimationAction] = js.native
+  var actions: js.Array[AnimationAction]
 }
 object Animator {
   

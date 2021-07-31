@@ -2,24 +2,23 @@ package typings.ltx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object escapeMod {
   
-  @JSImport("ltx/lib/escape", "escapeXML")
+  @JSImport("ltx/lib/escape", JSImport.Namespace)
   @js.native
-  def escapeXML(s: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ltx/lib/escape", "escapeXMLText")
-  @js.native
-  def escapeXMLText(s: String): String = js.native
+  @scala.inline
+  def escapeXML(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ltx/lib/escape", "unescapeXML")
-  @js.native
-  def unescapeXML(s: String): String = js.native
+  @scala.inline
+  def escapeXMLText(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXMLText")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ltx/lib/escape", "unescapeXMLText")
-  @js.native
-  def unescapeXMLText(s: String): String = js.native
+  @scala.inline
+  def unescapeXML(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeXML")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def unescapeXMLText(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeXMLText")(s.asInstanceOf[js.Any]).asInstanceOf[String]
 }

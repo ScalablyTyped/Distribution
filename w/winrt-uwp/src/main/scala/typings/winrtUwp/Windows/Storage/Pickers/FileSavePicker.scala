@@ -7,48 +7,46 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file picker that lets the user choose the file name, extension, and storage location for a file. */
-@js.native
 trait FileSavePicker extends StObject {
   
   /** Gets or sets the label text of the commit button in the file picker UI. */
-  var commitButtonText: String = js.native
+  var commitButtonText: String
   
   /** Gets a set of values to be populated by the app before a PickSaveFileAndContinue operation that deactivates the app in order to provide context when the app is activated. (Windows Phone Store apps) */
-  var continuationData: ValueSet = js.native
+  var continuationData: ValueSet
   
   /** Gets or sets the default file name extension that the fileSavePicker gives to files to be saved. */
-  var defaultFileExtension: String = js.native
+  var defaultFileExtension: String
   
   /** Gets or sets an ID that specifies the enterprise that owns the file. */
-  var enterpriseId: String = js.native
+  var enterpriseId: String
   
   /** Gets the collection of valid file types that the user can choose to assign to a file. */
-  var fileTypeChoices: IMap[String, IVector[String]] = js.native
+  var fileTypeChoices: IMap[String, IVector[String]]
   
   /** Shows the file picker so that the user can save a file, deactivating and the app and reactivating it when the operation is complete. (Windows Phone Store apps) */
-  def pickSaveFileAndContinue(): Unit = js.native
+  def pickSaveFileAndContinue(): Unit
   
   /**
     * Shows the file picker so that the user can save a file and set the file name, extension, and location of the file to be saved. (Windows Store apps)
     * @return When the call to this method completes successfully, it returns a storageFile object that was created to represent the saved file. The file name, extension, and location of this storageFile match those specified by the user, but the file has no content.
     */
-  def pickSaveFileAsync(): IPromiseWithIAsyncOperation[StorageFile] = js.native
+  def pickSaveFileAsync(): IPromiseWithIAsyncOperation[StorageFile]
   
   /** Gets or sets the settings identifier associated with the current FileSavePicker instance. */
-  var settingsIdentifier: String = js.native
+  var settingsIdentifier: String
   
   /** Gets or sets the file name that the file save picker suggests to the user. */
-  var suggestedFileName: String = js.native
+  var suggestedFileName: String
   
   /** Gets or sets the storageFile that the file picker suggests to the user for saving a file. */
-  var suggestedSaveFile: StorageFile = js.native
+  var suggestedSaveFile: StorageFile
   
   /** Gets or sets the location that the file save picker suggests to the user as the location to save a file. */
-  var suggestedStartLocation: PickerLocationId = js.native
+  var suggestedStartLocation: PickerLocationId
 }
 object FileSavePicker {
   

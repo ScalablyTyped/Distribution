@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the possibility to write changes made on a result set back to database. */
-@js.native
-trait XResultSetUpdate extends XInterface {
+trait XResultSetUpdate
+  extends StObject
+     with XInterface {
   
   /**
     * cancels the updates made to a row.
@@ -18,25 +18,25 @@ trait XResultSetUpdate extends XInterface {
     * the updates made to a row. If no updates have been made or `updateRow` has already been called, then this method has no effect.
     * @throws SQLException if a database access error occurs.
     */
-  def cancelRowUpdates(): Unit = js.native
+  def cancelRowUpdates(): Unit
   
   /**
     * deletes the current row from the result set and the underlying database. Cannot be called when on the insert row.
     * @throws SQLException if a database access error occurs.
     */
-  def deleteRow(): Unit = js.native
+  def deleteRow(): Unit
   
   /**
     * inserts the contents of the insert row into the result set and the database. Must be on the insert row when this method is called.
     * @throws SQLException if a database access error occurs.
     */
-  def insertRow(): Unit = js.native
+  def insertRow(): Unit
   
   /**
     * moves the cursor to the remembered cursor position, usually the current row. This method has no effect if the cursor is not on the insert row.
     * @throws SQLException if a database access error occurs.
     */
-  def moveToCurrentRow(): Unit = js.native
+  def moveToCurrentRow(): Unit
   
   /**
     * moves the cursor to the insert row. The current cursor position is remembered while the cursor is positioned on the insert row.
@@ -49,13 +49,13 @@ trait XResultSetUpdate extends XInterface {
     * be called before a `getXXX` method can be called on a column value.
     * @throws SQLException if a database access error occurs.
     */
-  def moveToInsertRow(): Unit = js.native
+  def moveToInsertRow(): Unit
   
   /**
     * updates the underlying database with the new contents of the current row. Cannot be called when on the insert row.
     * @throws SQLException if a database access error occurs.
     */
-  def updateRow(): Unit = js.native
+  def updateRow(): Unit
 }
 object XResultSetUpdate {
   

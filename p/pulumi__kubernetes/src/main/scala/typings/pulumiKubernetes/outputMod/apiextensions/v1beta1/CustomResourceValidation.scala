@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.apiextensions.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CustomResourceValidation is a list of validation methods for CustomResources.
   */
-@js.native
 trait CustomResourceValidation extends StObject {
   
   /**
     * openAPIV3Schema is the OpenAPI v3 schema to use for validation and pruning.
     */
-  var openAPIV3Schema: JSONSchemaProps = js.native
+  var openAPIV3Schema: JSONSchemaProps
 }
 object CustomResourceValidation {
   

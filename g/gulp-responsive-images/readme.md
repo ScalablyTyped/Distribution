@@ -10,9 +10,9 @@ Resize/rename images for responsive designs.
 | ------------------ | :-------------: |
 | Full name          | gulp-responsive-images |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 16103 |
+| # downloads        | 14142 |
 | # stars            | 1 |
 
 ## Links

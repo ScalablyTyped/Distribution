@@ -2,7 +2,6 @@ package typings.activexVbide.VBIDE
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,18 +14,13 @@ trait Property extends StObject {
   val Collection_Original: Properties = js.native
   
   def IndexedValue(Index1: js.Any): js.Any = js.native
-  def IndexedValue(
-    Index1: js.Any,
-    Index2: js.UndefOr[scala.Nothing],
-    Index3: js.UndefOr[scala.Nothing],
-    Index4: js.Any
-  ): js.Any = js.native
-  def IndexedValue(Index1: js.Any, Index2: js.UndefOr[scala.Nothing], Index3: js.Any): js.Any = js.native
-  def IndexedValue(Index1: js.Any, Index2: js.UndefOr[scala.Nothing], Index3: js.Any, Index4: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any): js.Any = js.native
-  def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.UndefOr[scala.Nothing], Index4: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.Any, Index4: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: Unit, Index4: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: Unit, Index3: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: Unit, Index3: js.Any, Index4: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: Unit, Index3: Unit, Index4: js.Any): js.Any = js.native
   
   val Name: String = js.native
   

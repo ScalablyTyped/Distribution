@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasemapToggleVisibleElements extends Object {
+trait BasemapToggleVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to the title will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#VisibleElements)
     */
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
 }
 object BasemapToggleVisibleElements {
   

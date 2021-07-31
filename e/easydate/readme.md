@@ -12,7 +12,7 @@ get date and/or time by pattern
 | Keywords           | datetime, dateformat, formatting, date, time |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 26033 |
+| # downloads        | 20683 |
 | # stars            | 4 |
 
 ## Links

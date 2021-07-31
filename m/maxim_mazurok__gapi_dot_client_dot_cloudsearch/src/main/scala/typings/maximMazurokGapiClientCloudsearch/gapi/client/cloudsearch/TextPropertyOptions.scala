@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextPropertyOptions extends StObject {
   
   /** If set, describes how the property should be used as a search operator. */
-  var operatorOptions: js.UndefOr[TextOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[TextOperatorOptions] = js.undefined
   
   /** Indicates the search quality importance of the tokens within the field when used for retrieval. */
-  var retrievalImportance: js.UndefOr[RetrievalImportance] = js.native
+  var retrievalImportance: js.UndefOr[RetrievalImportance] = js.undefined
 }
 object TextPropertyOptions {
   

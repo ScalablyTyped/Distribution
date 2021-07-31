@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.networking.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IngressServiceBackend references a Kubernetes Service as a Backend.
   */
-@js.native
 trait IngressServiceBackend extends StObject {
   
   /**
     * Name is the referenced service. The service must exist in the same namespace as the Ingress object.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Port of the referenced service. A port name or port number is required for a IngressServiceBackend.
     */
-  var port: ServiceBackendPort = js.native
+  var port: ServiceBackendPort
 }
 object IngressServiceBackend {
   

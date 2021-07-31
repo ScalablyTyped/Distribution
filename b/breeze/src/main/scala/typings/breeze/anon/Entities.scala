@@ -5,15 +5,13 @@ import typings.breeze.breeze.Entity
 import typings.breeze.breeze.EntityKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entities extends StObject {
   
-  var entities: js.Array[Entity] = js.native
+  var entities: js.Array[Entity]
   
-  var tempKeyMapping: StringDictionary[EntityKey] = js.native
+  var tempKeyMapping: StringDictionary[EntityKey]
 }
 object Entities {
   

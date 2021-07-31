@@ -15,7 +15,6 @@ import typings.tizenTvWebapis.webapisMod.WebAPIException
 import typings.tizenTvWebapis.widgetdataMod.WidgetDataManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,10 +29,9 @@ object mod extends Shortcut {
     @js.native
     val webapis: Webapis = js.native
     
-    @js.native
     trait Window extends StObject {
       
-      var webapis: Webapis = js.native
+      var webapis: Webapis
     }
     object Window {
       
@@ -52,32 +50,31 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Webapis extends StObject {
     
-    var WebAPIException: typings.tizenTvWebapis.webapisMod.WebAPIException = js.native
+    var WebAPIException: typings.tizenTvWebapis.webapisMod.WebAPIException
     
-    var adinfo: AdInfoManager = js.native
+    var adinfo: AdInfoManager
     
-    var appcommon: AppCommonManager = js.native
+    var appcommon: AppCommonManager
     
-    var avinfo: AVInfoManager = js.native
+    var avinfo: AVInfoManager
     
-    var avplay: AVPlayManager = js.native
+    var avplay: AVPlayManager
     
-    var avplaystore: AVPlayStoreManager = js.native
+    var avplaystore: AVPlayStoreManager
     
-    var billing: BillingManager = js.native
+    var billing: BillingManager
     
-    var network: NetworkManager = js.native
+    var network: NetworkManager
     
-    var productinfo: ProductInfoManager = js.native
+    var productinfo: ProductInfoManager
     
-    var sso: SsoManager = js.native
+    var sso: SsoManager
     
-    var tvinfo: TvInfoManager = js.native
+    var tvinfo: TvInfoManager
     
-    var widgetdata: WidgetDataManager = js.native
+    var widgetdata: WidgetDataManager
   }
   object Webapis {
     

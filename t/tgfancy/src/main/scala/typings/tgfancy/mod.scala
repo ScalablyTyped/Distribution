@@ -3,7 +3,6 @@ package typings.tgfancy
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,11 +29,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait ConstructorOptions
-    extends typings.nodeTelegramBotApi.mod.ConstructorOptions {
+    extends StObject
+       with typings.nodeTelegramBotApi.mod.ConstructorOptions {
     
-    var tgfancy: js.UndefOr[TgfancyOptions] = js.native
+    var tgfancy: js.UndefOr[TgfancyOptions] = js.undefined
   }
   object ConstructorOptions {
     
@@ -55,10 +54,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EmojificationOptions extends StObject {
     
-    def emojify(text: String): String = js.native
+    def emojify(text: String): String
   }
   object EmojificationOptions {
     
@@ -76,17 +74,16 @@ object mod {
     }
   }
   
-  @js.native
   trait RatelimitingOptions extends StObject {
     
-    var maxBackoff: js.UndefOr[Double] = js.native
+    var maxBackoff: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
     @JSName("notify")
-    var notify_FRatelimitingOptions: js.UndefOr[js.Function2[/* methodName */ String, /* repeated */ js.Any, Unit]] = js.native
+    var notify_FRatelimitingOptions: js.UndefOr[js.Function2[/* methodName */ String, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RatelimitingOptions {
     
@@ -125,16 +122,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ResolvedChat extends StObject {
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var username: String = js.native
+    var username: String
     
-    var when: String = js.native
+    var when: String
   }
   object ResolvedChat {
     
@@ -162,10 +158,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ResolvedGroupOrChannel extends ResolvedChat {
+  trait ResolvedGroupOrChannel
+    extends StObject
+       with ResolvedChat {
     
-    var title: String = js.native
+    var title: String
   }
   object ResolvedGroupOrChannel {
     
@@ -184,12 +181,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait ResolvedUser extends ResolvedChat {
+  trait ResolvedUser
+    extends StObject
+       with ResolvedChat {
     
-    var first_name: String = js.native
+    var first_name: String
     
-    var last_name: js.UndefOr[String] = js.native
+    var last_name: js.UndefOr[String] = js.undefined
   }
   object ResolvedUser {
     
@@ -218,7 +216,7 @@ object mod {
   trait Tgfancy
     extends typings.nodeTelegramBotApi.mod.^ {
     
-    def closeWebSocket(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def closeWebSocket(): js.Promise[Unit] = js.native
     
     def hasOpenWebSocket(): Boolean = js.native
     
@@ -229,29 +227,28 @@ object mod {
     def kickChatMember(chatId: Double, userId: Double): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: Double, userId: Double, ban: Boolean): js.Promise[Boolean] = js.native
     
-    def openWebSocket(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def openWebSocket(): js.Promise[Unit] = js.native
     
     def resolveChatId(chatId: String): js.Promise[ResolvedChat] = js.native
   }
   
-  @js.native
   trait TgfancyOptions extends StObject {
     
-    var chatIdResolution: js.UndefOr[Boolean | ChatIdResolutionOptions] = js.native
+    var chatIdResolution: js.UndefOr[Boolean | ChatIdResolutionOptions] = js.undefined
     
-    var emojification: js.UndefOr[Boolean | EmojificationOptions] = js.native
+    var emojification: js.UndefOr[Boolean | EmojificationOptions] = js.undefined
     
-    var kickWithoutBan: js.UndefOr[Boolean] = js.native
+    var kickWithoutBan: js.UndefOr[Boolean] = js.undefined
     
-    var openshiftWebHook: js.UndefOr[Boolean] = js.native
+    var openshiftWebHook: js.UndefOr[Boolean] = js.undefined
     
-    var orderedSending: js.UndefOr[Boolean] = js.native
+    var orderedSending: js.UndefOr[Boolean] = js.undefined
     
-    var ratelimiting: js.UndefOr[Boolean | RatelimitingOptions] = js.native
+    var ratelimiting: js.UndefOr[Boolean | RatelimitingOptions] = js.undefined
     
-    var textPaging: js.UndefOr[Boolean] = js.native
+    var textPaging: js.UndefOr[Boolean] = js.undefined
     
-    var webSocket: js.UndefOr[Boolean | WebSocketOptions] = js.native
+    var webSocket: js.UndefOr[Boolean | WebSocketOptions] = js.undefined
   }
   object TgfancyOptions {
     
@@ -314,12 +311,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WebSocketOptions extends StObject {
     
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object WebSocketOptions {
     

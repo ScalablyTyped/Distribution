@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Destination extends StObject {
   
   /**
     * The name of the bucket.
     */
-  var bucketName: string = js.native
+  var bucketName: string
   
   /**
     * The path prefix to use in the path to the location in the bucket. This prefix specifies where to store classification results in the bucket.
     */
-  var keyPrefix: js.UndefOr[string] = js.native
+  var keyPrefix: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use for encryption of the results. This must be the ARN of an existing CMK that's in the same AWS Region as the bucket.
     */
-  var kmsKeyArn: string = js.native
+  var kmsKeyArn: string
 }
 object S3Destination {
   

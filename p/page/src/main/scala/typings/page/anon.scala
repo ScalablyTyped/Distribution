@@ -2,24 +2,22 @@ package typings.page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<page.PageJS.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var click: js.UndefOr[Boolean] = js.native
+    var click: js.UndefOr[Boolean] = js.undefined
     
-    var decodeURLComponents: js.UndefOr[Boolean] = js.native
+    var decodeURLComponents: js.UndefOr[Boolean] = js.undefined
     
-    var dispatch: js.UndefOr[Boolean] = js.native
+    var dispatch: js.UndefOr[Boolean] = js.undefined
     
-    var hashbang: js.UndefOr[Boolean] = js.native
+    var hashbang: js.UndefOr[Boolean] = js.undefined
     
-    var popstate: js.UndefOr[Boolean] = js.native
+    var popstate: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Update job request.
   */
-@js.native
 trait SchemaUpdateJobRequest extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaUpdateJobRequest extends StObject {
     * processing_options is set.  Optional.  If set to `true`, the service does
     * not attempt resolve a more precise address for the job.
     */
-  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.native
+  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  The Job to be updated.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * Optional.  Options for job processing.
     * UpdateJobRequest.disable_street_address_resolution is ignored if this
     * flag is set.
     */
-  var processingOptions: js.UndefOr[SchemaJobProcessingOptions] = js.native
+  var processingOptions: js.UndefOr[SchemaJobProcessingOptions] = js.undefined
   
   /**
     * Optional but strongly recommended to be provided for the best service
@@ -43,7 +41,7 @@ trait SchemaUpdateJobRequest extends StObject {
     * * region * expiryDate (deprecated) * filterableCustomFields (deprecated)
     * * unindexedCustomFields (deprecated)
     */
-  var updateJobFields: js.UndefOr[String] = js.native
+  var updateJobFields: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateJobRequest {
   

@@ -3,33 +3,30 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.borderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSBorderOptions extends StObject {
   
-  var _class: borderOptions = js.native
+  var _class: borderOptions
   
-  var dashPattern: js.Array[Double] = js.native
+  var dashPattern: js.Array[Double]
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var lineCapStyle: SketchMSBorderLineCapStyle = js.native
+  var lineCapStyle: SketchMSBorderLineCapStyle
   
-  var lineJoinStyle: SketchMSBorderLineJoinStyle = js.native
+  var lineJoinStyle: SketchMSBorderLineJoinStyle
 }
 object SketchMSBorderOptions {
   
   @scala.inline
   def apply(
-    _class: borderOptions,
     dashPattern: js.Array[Double],
     isEnabled: Boolean,
     lineCapStyle: SketchMSBorderLineCapStyle,
     lineJoinStyle: SketchMSBorderLineJoinStyle
   ): SketchMSBorderOptions = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], dashPattern = dashPattern.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], lineCapStyle = lineCapStyle.asInstanceOf[js.Any], lineJoinStyle = lineJoinStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "borderOptions", dashPattern = dashPattern.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], lineCapStyle = lineCapStyle.asInstanceOf[js.Any], lineJoinStyle = lineJoinStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSBorderOptions]
   }
   

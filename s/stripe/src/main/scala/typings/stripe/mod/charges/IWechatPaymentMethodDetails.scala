@@ -3,20 +3,20 @@ package typings.stripe.mod.charges
 import typings.stripe.stripeStrings.wechat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWechatPaymentMethodDetails extends IPaymentMethodDetails {
+trait IWechatPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var `type`: wechat = js.native
+  var `type`: wechat
 }
 object IWechatPaymentMethodDetails {
   
   @scala.inline
-  def apply(`type`: wechat): IWechatPaymentMethodDetails = {
+  def apply(): IWechatPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("wechat")
     __obj.asInstanceOf[IWechatPaymentMethodDetails]
   }
   

@@ -2,15 +2,12 @@ package typings.cordovaPluginCamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * iOS-only parameters that specify the anchor element location and arrow direction
   * of the popover when selecting images from an iPad's library or album.
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CameraPopoverOptions * / any */ @js.native
 trait CameraPopoverOptions extends StObject {
   
   /**
@@ -22,19 +19,19 @@ trait CameraPopoverOptions extends StObject {
     *      ARROW_RIGHT : 8,
     *      ARROW_ANY : 15
     */
-  var arrowDir: Double = js.native
+  var arrowDir: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var popoverHeight: Double = js.native
+  var popoverHeight: Double
   
-  var popoverWidth: Double = js.native
+  var popoverWidth: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object CameraPopoverOptions {
   

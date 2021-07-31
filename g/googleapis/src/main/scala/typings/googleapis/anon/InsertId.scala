@@ -3,15 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaJsonObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertId extends StObject {
   
-  var insertId: js.UndefOr[String] = js.native
+  var insertId: js.UndefOr[String] = js.undefined
   
-  var json: js.UndefOr[SchemaJsonObject] = js.native
+  var json: js.UndefOr[SchemaJsonObject] = js.undefined
 }
 object InsertId {
   

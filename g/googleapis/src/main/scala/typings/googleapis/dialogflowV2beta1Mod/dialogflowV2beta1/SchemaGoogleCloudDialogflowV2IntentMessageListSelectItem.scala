@@ -2,34 +2,32 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An item in the list.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem extends StObject {
   
   /**
     * Optional. The main text describing the item.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The image to display.
     */
-  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /**
     * Required. Additional information about this option.
     */
-  var info: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo] = js.native
+  var info: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo] = js.undefined
   
   /**
     * Required. The title of the list item.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem {
   

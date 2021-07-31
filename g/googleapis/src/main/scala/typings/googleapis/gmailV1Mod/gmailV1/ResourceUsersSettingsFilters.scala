@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Filters")
@@ -31,7 +30,7 @@ class ResourceUsersSettingsFilters protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaFilter] = js.native
   def create(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def create(params: ParamsResourceUsersSettingsFiltersCreate): GaxiosPromise[SchemaFilter] = js.native
   def create(params: ParamsResourceUsersSettingsFiltersCreate, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def create(
@@ -61,7 +60,7 @@ class ResourceUsersSettingsFilters protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsFiltersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsFiltersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -91,7 +90,7 @@ class ResourceUsersSettingsFilters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFilter] = js.native
   def get(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceUsersSettingsFiltersGet): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceUsersSettingsFiltersGet, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def get(
@@ -120,7 +119,7 @@ class ResourceUsersSettingsFilters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFiltersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFiltersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(params: ParamsResourceUsersSettingsFiltersList): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsFiltersList,

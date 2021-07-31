@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Config extends StObject {
   
   /**
     * The Amazon S3 bucket to access. This bucket is used as a parameter in the CreateLocationS3 operation. 
     */
-  var BucketAccessRoleArn: IamRoleArn = js.native
+  var BucketAccessRoleArn: IamRoleArn
 }
 object S3Config {
   

@@ -2,27 +2,25 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
-  var additional_inheritable_classes: js.UndefOr[js.Array[String]] = js.native
+  var additional_inheritable_classes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var append_to: js.UndefOr[String] = js.native
+  var append_to: js.UndefOr[String] = js.undefined
   
-  var disable_for_touch: js.UndefOr[Boolean] = js.native
+  var disable_for_touch: js.UndefOr[Boolean] = js.undefined
   
-  var hover_delay: js.UndefOr[Double] = js.native
+  var hover_delay: js.UndefOr[Double] = js.undefined
   
-  var show_on: js.UndefOr[String] = js.native
+  var show_on: js.UndefOr[String] = js.undefined
   
-  var tip_template: js.UndefOr[js.Function2[/* selector */ String, /* content */ String, String]] = js.native
+  var tip_template: js.UndefOr[js.Function2[/* selector */ String, /* content */ String, String]] = js.undefined
   
-  var tooltip_class: js.UndefOr[String] = js.native
+  var tooltip_class: js.UndefOr[String] = js.undefined
   
-  var touch_close_text: js.UndefOr[String] = js.native
+  var touch_close_text: js.UndefOr[String] = js.undefined
 }
 object TooltipOptions {
   

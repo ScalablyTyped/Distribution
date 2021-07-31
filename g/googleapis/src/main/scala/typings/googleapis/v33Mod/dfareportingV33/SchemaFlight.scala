@@ -2,34 +2,32 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Flight
   */
-@js.native
 trait SchemaFlight extends StObject {
   
   /**
     * Inventory item flight end date.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Rate or cost of this flight.
     */
-  var rateOrCost: js.UndefOr[String] = js.native
+  var rateOrCost: js.UndefOr[String] = js.undefined
   
   /**
     * Inventory item flight start date.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * Units of this flight.
     */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object SchemaFlight {
   

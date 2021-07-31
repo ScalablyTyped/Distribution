@@ -6,7 +6,6 @@ import typings.agGrid.iFilterMod.SerializedFilter
 import typings.agGrid.textFilterMod.INumberFilterParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberFilterMod {
@@ -69,14 +68,15 @@ object numberFilterMod {
     def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait SerializedNumberFilter extends SerializedFilter {
+  trait SerializedNumberFilter
+    extends StObject
+       with SerializedFilter {
     
-    var filter: Double = js.native
+    var filter: Double
     
-    var filterTo: Double = js.native
+    var filterTo: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SerializedNumberFilter {
     

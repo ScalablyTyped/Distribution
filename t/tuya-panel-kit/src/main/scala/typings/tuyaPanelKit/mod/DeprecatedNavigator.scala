@@ -2,37 +2,35 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeprecatedNavigator extends StObject {
   
-  def getCurrentRoutes(): js.Array[DeprecatedNavigatorRoute] = js.native
+  def getCurrentRoutes(): js.Array[DeprecatedNavigatorRoute]
   
-  def immediatelyResetRouteStack(nextRouteStack: js.Array[DeprecatedNavigatorRoute]): Unit = js.native
+  def immediatelyResetRouteStack(nextRouteStack: js.Array[DeprecatedNavigatorRoute]): Unit
   
-  def jumpBack(): Unit = js.native
+  def jumpBack(): Unit
   
-  def jumpForward(): Unit = js.native
+  def jumpForward(): Unit
   
-  def jumpTo(route: DeprecatedNavigatorRoute): Unit = js.native
+  def jumpTo(route: DeprecatedNavigatorRoute): Unit
   
-  def pop(): Unit = js.native
+  def pop(): Unit
   
-  def popN(n: Double): Unit = js.native
+  def popN(n: Double): Unit
   
-  def popToRoute(route: DeprecatedNavigatorRoute): Unit = js.native
+  def popToRoute(route: DeprecatedNavigatorRoute): Unit
   
-  def popToTop(): Unit = js.native
+  def popToTop(): Unit
   
-  def push(route: DeprecatedNavigatorRoute): Unit = js.native
+  def push(route: DeprecatedNavigatorRoute): Unit
   
-  def replace(route: DeprecatedNavigatorRoute): Unit = js.native
+  def replace(route: DeprecatedNavigatorRoute): Unit
   
-  def replaceAtIndex(route: DeprecatedNavigatorRoute, index: Double): Unit = js.native
+  def replaceAtIndex(route: DeprecatedNavigatorRoute, index: Double): Unit
   
-  def replacePrevious(route: DeprecatedNavigatorRoute): Unit = js.native
+  def replacePrevious(route: DeprecatedNavigatorRoute): Unit
 }
 object DeprecatedNavigator {
   

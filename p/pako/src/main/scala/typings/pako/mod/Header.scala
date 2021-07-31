@@ -2,25 +2,23 @@ package typings.pako.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var extra: js.UndefOr[js.Array[Double]] = js.native
+  var extra: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var hcrc: js.UndefOr[Boolean] = js.native
+  var hcrc: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var os: js.UndefOr[Double] = js.native
+  var os: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
   
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
 }
 object Header {
   

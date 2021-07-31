@@ -2,13 +2,13 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatumFieldRef extends _Field {
+trait DatumFieldRef
+  extends StObject
+     with _Field {
   
-  var datum: Field = js.native
+  var datum: Field
 }
 object DatumFieldRef {
   

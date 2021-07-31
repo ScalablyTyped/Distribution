@@ -2,17 +2,15 @@ package typings.passportSpotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: Null = js.native
+    var `type`: Null
     
-    var value: String = js.native
+    var value: String
   }
   object Type {
     

@@ -2,7 +2,6 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,37 +9,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cell. Exactly one of noShipping, flatRate, pricePercentage,
   * carrierRateName, subtableName must be set.
   */
-@js.native
 trait SchemaValue extends StObject {
   
   /**
     * The name of a carrier rate referring to a carrier rate defined in the
     * same rate group. Can only be set if all other fields are not set.
     */
-  var carrierRateName: js.UndefOr[String] = js.native
+  var carrierRateName: js.UndefOr[String] = js.undefined
   
   /**
     * A flat rate. Can only be set if all other fields are not set.
     */
-  var flatRate: js.UndefOr[SchemaPrice] = js.native
+  var flatRate: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * If true, then the product can&#39;t ship. Must be true when set, can only
     * be set if all other fields are not set.
     */
-  var noShipping: js.UndefOr[Boolean] = js.native
+  var noShipping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A percentage of the price represented as a number in decimal notation
     * (e.g., &quot;5.4&quot;). Can only be set if all other fields are not set.
     */
-  var pricePercentage: js.UndefOr[String] = js.native
+  var pricePercentage: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a subtable. Can only be set in table cells (i.e., not for
     * single values), and only if all other fields are not set.
     */
-  var subtableName: js.UndefOr[String] = js.native
+  var subtableName: js.UndefOr[String] = js.undefined
 }
 object SchemaValue {
   

@@ -10,7 +10,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -341,11 +340,9 @@ object constantsMod {
   @scala.inline
   def SEP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEP")(x.asInstanceOf[js.Any])
   
-  @JSImport("picomatch/constants", "extGlobChars")
-  @js.native
-  def extGlobChars(chars: STAR): Record[String, Close] = js.native
+  @scala.inline
+  def extGlobChars(chars: STAR): Record[String, Close] = ^.asInstanceOf[js.Dynamic].applyDynamic("extGlobChars")(chars.asInstanceOf[js.Any]).asInstanceOf[Record[String, Close]]
   
-  @JSImport("picomatch/constants", "globChars")
-  @js.native
-  def globChars[T /* <: Boolean */](win32: T): DOTSSLASH | DOTLITERAL = js.native
+  @scala.inline
+  def globChars[T /* <: Boolean */](win32: T): DOTSSLASH | DOTLITERAL = ^.asInstanceOf[js.Dynamic].applyDynamic("globChars")(win32.asInstanceOf[js.Any]).asInstanceOf[DOTSSLASH | DOTLITERAL]
 }

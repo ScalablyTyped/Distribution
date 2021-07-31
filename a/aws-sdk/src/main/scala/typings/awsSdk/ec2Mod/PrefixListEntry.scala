@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixListEntry extends StObject {
   
   /**
     * The CIDR block.
     */
-  var Cidr: js.UndefOr[String] = js.native
+  var Cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The description.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
 }
 object PrefixListEntry {
   

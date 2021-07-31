@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#lane-object
   */
-@js.native
 trait Lane extends StObject {
   
-  var indications: js.Array[Indication] = js.native
+  var indications: js.Array[Indication]
   
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object Lane {
   

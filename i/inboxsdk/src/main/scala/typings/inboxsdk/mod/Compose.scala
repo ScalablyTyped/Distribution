@@ -34,17 +34,15 @@ import typings.std.Blob
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Compose {
   
-  @js.native
   trait ComposeButtonClickEvent extends StObject {
     
-    var composeView: ComposeView = js.native
+    var composeView: ComposeView
     
-    var dropdown: DropdownView = js.native
+    var dropdown: DropdownView
   }
   object ComposeButtonClickEvent {
     
@@ -65,24 +63,23 @@ object Compose {
     }
   }
   
-  @js.native
   trait ComposeButtonDescriptor extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var hasDropdown: js.UndefOr[Boolean] = js.native
+    var hasDropdown: js.UndefOr[Boolean] = js.undefined
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    def onClick(event: ComposeButtonClickEvent): Unit = js.native
+    def onClick(event: ComposeButtonClickEvent): Unit
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: js.UndefOr[MODIFIER | SEND_ACTION] = js.native
+    var `type`: js.UndefOr[MODIFIER | SEND_ACTION] = js.undefined
   }
   object ComposeButtonDescriptor {
     
@@ -139,12 +136,11 @@ object Compose {
     }
   }
   
-  @js.native
   trait ComposeInstance extends StObject {
     
-    def openNewComposeView(): js.Promise[ComposeView] = js.native
+    def openNewComposeView(): js.Promise[ComposeView]
     
-    def registerComposeViewHandler(handler: js.Function1[/* composeView */ ComposeView, Unit]): js.Function0[Unit] = js.native
+    def registerComposeViewHandler(handler: js.Function1[/* composeView */ ComposeView, Unit]): js.Function0[Unit]
   }
   object ComposeInstance {
     
@@ -168,10 +164,9 @@ object Compose {
     }
   }
   
-  @js.native
   trait ComposeNoticeDescriptor extends StObject {
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
   }
   object ComposeNoticeDescriptor {
     
@@ -325,14 +320,13 @@ object Compose {
     def setToRecipients(emails: js.Array[String]): Unit = js.native
   }
   
-  @js.native
   trait RecipientsChangedEvent extends StObject {
     
-    var bcc: Added = js.native
+    var bcc: Added
     
-    var cc: Added = js.native
+    var cc: Added
     
-    var to: Added = js.native
+    var to: Added
   }
   object RecipientsChangedEvent {
     
@@ -356,10 +350,9 @@ object Compose {
     }
   }
   
-  @js.native
   trait SendOptions extends StObject {
     
-    var sendAndArchive: js.UndefOr[Boolean] = js.native
+    var sendAndArchive: js.UndefOr[Boolean] = js.undefined
   }
   object SendOptions {
     
@@ -380,12 +373,11 @@ object Compose {
     }
   }
   
-  @js.native
   trait StatusBarDescriptor extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var orderHint: js.UndefOr[Double] = js.native
+    var orderHint: js.UndefOr[Double] = js.undefined
   }
   object StatusBarDescriptor {
     
@@ -412,10 +404,11 @@ object Compose {
     }
   }
   
-  @js.native
-  trait StatusBarView extends SimpleElementView {
+  trait StatusBarView
+    extends StObject
+       with SimpleElementView {
     
-    def setHeight(height: Double): Unit = js.native
+    def setHeight(height: Double): Unit
   }
   object StatusBarView {
     

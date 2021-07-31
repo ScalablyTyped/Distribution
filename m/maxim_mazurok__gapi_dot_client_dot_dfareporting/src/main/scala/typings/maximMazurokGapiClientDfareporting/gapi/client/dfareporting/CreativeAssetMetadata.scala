@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeAssetMetadata extends StObject {
   
   /** ID of the creative asset. This is a required field. */
-  var assetIdentifier: js.UndefOr[CreativeAssetId] = js.native
+  var assetIdentifier: js.UndefOr[CreativeAssetId] = js.undefined
   
   /** List of detected click tags for assets. This is a read-only, auto-generated field. This field is empty for a rich media asset. */
-  var clickTags: js.UndefOr[js.Array[ClickTag]] = js.native
+  var clickTags: js.UndefOr[js.Array[ClickTag]] = js.undefined
   
   /** List of counter events configured for the asset. This is a read-only, auto-generated field and only applicable to a rich media asset. */
-  var counterCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+  var counterCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
   
   /**
     * List of feature dependencies for the creative asset that are detected by Campaign Manager. Feature dependencies are features that a browser must be able to support in order to
     * render your HTML5 creative correctly. This is a read-only, auto-generated field.
     */
-  var detectedFeatures: js.UndefOr[js.Array[String]] = js.native
+  var detectedFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of exit events configured for the asset. This is a read-only, auto-generated field and only applicable to a rich media asset. */
-  var exitCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+  var exitCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
   
   /** Numeric ID of the asset. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the numeric ID of the asset. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#creativeAssetMetadata". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** True if the uploaded asset is a rich media asset. This is a read-only, auto-generated field. */
-  var richMedia: js.UndefOr[Boolean] = js.native
+  var richMedia: js.UndefOr[Boolean] = js.undefined
   
   /** List of timer events configured for the asset. This is a read-only, auto-generated field and only applicable to a rich media asset. */
-  var timerCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+  var timerCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
   
   /**
     * Rules validated during code generation that generated a warning. This is a read-only, auto-generated field. Possible values are: - "ADMOB_REFERENCED" -
@@ -48,7 +46,7 @@ trait CreativeAssetMetadata extends StObject {
     * "GWD_PROPERTIES_INVALID" - "HTML5_FEATURE_UNSUPPORTED" - "LINKED_FILE_NOT_FOUND" - "MAX_FLASH_VERSION_11" - "MRAID_REFERENCED" - "NOT_SSL_COMPLIANT" - "ORPHANED_ASSET" -
     * "PRIMARY_HTML_MISSING" - "SVG_INVALID" - "ZIP_INVALID"
     */
-  var warnedValidationRules: js.UndefOr[js.Array[String]] = js.native
+  var warnedValidationRules: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CreativeAssetMetadata {
   

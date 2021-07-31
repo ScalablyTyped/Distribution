@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
   /**
     * A descriptive or arbitrary ID for the subscription. This value must be unique within the subscription definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The source of the subscription. Can be a thing ARN, a Lambda function ARN, a connector ARN, 'cloud' (which represents the AWS IoT cloud), or 'GGShadowService'.
     */
-  var Source: string = js.native
+  var Source: string
   
   /**
     * The MQTT topic used to route the message.
     */
-  var Subject: string = js.native
+  var Subject: string
   
   /**
     * Where the message is sent to. Can be a thing ARN, a Lambda function ARN, a connector ARN, 'cloud' (which represents the AWS IoT cloud), or 'GGShadowService'.
     */
-  var Target: string = js.native
+  var Target: string
 }
 object Subscription {
   

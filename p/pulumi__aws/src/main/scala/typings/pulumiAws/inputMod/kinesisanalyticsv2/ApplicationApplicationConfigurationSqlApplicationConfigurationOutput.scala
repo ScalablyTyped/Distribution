@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput exten
     */
   var destinationSchema: Input[
     ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
-  ] = js.native
+  ]
   
   /**
     * Identifies a [Kinesis Data Firehose delivery stream](https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html) as the destination.
@@ -23,7 +21,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput exten
     Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Identifies a [Kinesis data stream](https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html) as the destination.
@@ -32,21 +30,21 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput exten
     Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Identifies a [Lambda function](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) as the destination.
     */
   var lambdaOutput: js.UndefOr[
     Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the in-application stream.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
-  var outputId: js.UndefOr[Input[String]] = js.native
+  var outputId: js.UndefOr[Input[String]] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
   

@@ -2,49 +2,47 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of email signIn.
   */
-@js.native
 trait SchemaEmailLinkSigninResponse extends StObject {
   
   /**
     * The user&#39;s email.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Expiration time of STS id token in seconds.
     */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /**
     * The STS id token to login the newly signed in user.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the user is new.
     */
-  var isNewUser: js.UndefOr[Boolean] = js.native
+  var isNewUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#EmailLinkSigninResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The RP local ID of the user.
     */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /**
     * The refresh token for the signed in user.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object SchemaEmailLinkSigninResponse {
   

@@ -3,7 +3,6 @@ package typings.countdown
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countdown {
@@ -12,32 +11,21 @@ object countdown {
   trait CountdownStatic extends StObject {
     
     def apply(start: DateTime): Timespan | Double = js.native
-    def apply(
-      start: DateTime,
-      end: js.UndefOr[DateTime],
-      units: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      digits: Double
-    ): Timespan | Double = js.native
-    def apply(start: DateTime, end: js.UndefOr[DateTime], units: js.UndefOr[scala.Nothing], max: Double): Timespan | Double = js.native
-    def apply(
-      start: DateTime,
-      end: js.UndefOr[DateTime],
-      units: js.UndefOr[scala.Nothing],
-      max: Double,
-      digits: Double
-    ): Timespan | Double = js.native
-    def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double): Timespan | Double = js.native
-    def apply(
-      start: DateTime,
-      end: js.UndefOr[DateTime],
-      units: Double,
-      max: js.UndefOr[scala.Nothing],
-      digits: Double
-    ): Timespan | Double = js.native
-    def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double, max: Double): Timespan | Double = js.native
-    def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double, max: Double, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Double, max: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Double, max: Double, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Double, max: Unit, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Unit, max: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Unit, max: Double, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: Unit, units: Unit, max: Unit, digits: Double): Timespan | Double = js.native
     def apply(start: DateTime, end: DateTime): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Double, max: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Double, max: Double, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Double, max: Unit, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Unit, max: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Unit, max: Double, digits: Double): Timespan | Double = js.native
+    def apply(start: DateTime, end: DateTime, units: Unit, max: Unit, digits: Double): Timespan | Double = js.native
     
     var ALL: Double = js.native
     
@@ -86,22 +74,21 @@ object countdown {
   
   type DateTime = js.UndefOr[Double | Date | DateFunction | Null]
   
-  @js.native
   trait Format extends StObject {
     
-    var delim: js.UndefOr[String] = js.native
+    var delim: js.UndefOr[String] = js.undefined
     
-    var empty: js.UndefOr[String] = js.native
+    var empty: js.UndefOr[String] = js.undefined
     
-    var formatNumber: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
+    var formatNumber: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
     
-    var formatter: js.UndefOr[js.Function2[/* value */ Double, /* unit */ Double, String]] = js.native
+    var formatter: js.UndefOr[js.Function2[/* value */ Double, /* unit */ Double, String]] = js.undefined
     
-    var last: js.UndefOr[String] = js.native
+    var last: js.UndefOr[String] = js.undefined
     
-    var plural: js.UndefOr[String | js.Array[String]] = js.native
+    var plural: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var singular: js.UndefOr[String | js.Array[String]] = js.native
+    var singular: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Format {
     
@@ -190,9 +177,9 @@ object countdown {
     var start: js.UndefOr[Date] = js.native
     
     def toHTML(): String = js.native
-    def toHTML(tagName: js.UndefOr[scala.Nothing], label: String): String = js.native
     def toHTML(tagName: String): String = js.native
     def toHTML(tagName: String, label: String): String = js.native
+    def toHTML(tagName: Unit, label: String): String = js.native
     
     def toString(label: String): String = js.native
     

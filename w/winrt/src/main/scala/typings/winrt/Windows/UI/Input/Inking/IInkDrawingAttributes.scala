@@ -4,21 +4,19 @@ import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkDrawingAttributes extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
-  var fitToCurve: Boolean = js.native
+  var fitToCurve: Boolean
   
-  var ignorePressure: Boolean = js.native
+  var ignorePressure: Boolean
   
-  var penTip: PenTipShape = js.native
+  var penTip: PenTipShape
   
-  var size: Size = js.native
+  var size: Size
 }
 object IInkDrawingAttributes {
   

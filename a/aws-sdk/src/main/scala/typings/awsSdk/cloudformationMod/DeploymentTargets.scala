@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentTargets extends StObject {
   
   /**
     * The names of one or more AWS accounts for which you want to deploy stack set updates.
     */
-  var Accounts: js.UndefOr[AccountList] = js.native
+  var Accounts: js.UndefOr[AccountList] = js.undefined
   
   /**
     * The organization root ID or organizational unit (OU) IDs to which StackSets deploys.
     */
-  var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.native
+  var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.undefined
 }
 object DeploymentTargets {
   

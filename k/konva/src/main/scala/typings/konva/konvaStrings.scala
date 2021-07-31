@@ -5,13 +5,14 @@ import typings.konva.shapeMod.LineCap
 import typings.konva.shapeMod.LineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object konvaStrings {
   
   @js.native
-  sealed trait _empty extends globalCompositeOperationType
+  sealed trait _empty
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -51,7 +52,9 @@ object konvaStrings {
   def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
-  sealed trait bevel extends LineJoin
+  sealed trait bevel
+    extends StObject
+       with LineJoin
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
@@ -66,7 +69,9 @@ object konvaStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait butt extends LineCap
+  sealed trait butt
+    extends StObject
+       with LineCap
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -101,17 +106,23 @@ object konvaStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait color extends globalCompositeOperationType
+  sealed trait color
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait `color-burn` extends globalCompositeOperationType
+  sealed trait `color-burn`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `color-burn`: `color-burn` = "color-burn".asInstanceOf[`color-burn`]
   
   @js.native
-  sealed trait `color-dodge` extends globalCompositeOperationType
+  sealed trait `color-dodge`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
   
@@ -121,7 +132,9 @@ object konvaStrings {
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait copy extends globalCompositeOperationType
+  sealed trait copy
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   
@@ -131,7 +144,9 @@ object konvaStrings {
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
-  sealed trait darken extends globalCompositeOperationType
+  sealed trait darken
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def darken: darken = "darken".asInstanceOf[darken]
   
@@ -141,27 +156,37 @@ object konvaStrings {
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
-  sealed trait `destination-atop` extends globalCompositeOperationType
+  sealed trait `destination-atop`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `destination-atop`: `destination-atop` = "destination-atop".asInstanceOf[`destination-atop`]
   
   @js.native
-  sealed trait `destination-in` extends globalCompositeOperationType
+  sealed trait `destination-in`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `destination-in`: `destination-in` = "destination-in".asInstanceOf[`destination-in`]
   
   @js.native
-  sealed trait `destination-out` extends globalCompositeOperationType
+  sealed trait `destination-out`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `destination-out`: `destination-out` = "destination-out".asInstanceOf[`destination-out`]
   
   @js.native
-  sealed trait `destination-over` extends globalCompositeOperationType
+  sealed trait `destination-over`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `destination-over`: `destination-over` = "destination-over".asInstanceOf[`destination-over`]
   
   @js.native
-  sealed trait difference extends globalCompositeOperationType
+  sealed trait difference
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def difference: difference = "difference".asInstanceOf[difference]
   
@@ -231,7 +256,9 @@ object konvaStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait exclusion extends globalCompositeOperationType
+  sealed trait exclusion
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   
@@ -256,12 +283,16 @@ object konvaStrings {
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   
   @js.native
-  sealed trait `hard-light` extends globalCompositeOperationType
+  sealed trait `hard-light`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   
   @js.native
-  sealed trait hue extends globalCompositeOperationType
+  sealed trait hue
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def hue: hue = "hue".asInstanceOf[hue]
   
@@ -296,12 +327,16 @@ object konvaStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lighten extends globalCompositeOperationType
+  sealed trait lighten
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   
   @js.native
-  sealed trait lighter extends globalCompositeOperationType
+  sealed trait lighter
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   
@@ -331,12 +366,16 @@ object konvaStrings {
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
   @js.native
-  sealed trait luminosity extends globalCompositeOperationType
+  sealed trait luminosity
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
   @js.native
-  sealed trait miter extends LineJoin
+  sealed trait miter
+    extends StObject
+       with LineJoin
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
@@ -376,12 +415,16 @@ object konvaStrings {
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait multiply extends globalCompositeOperationType
+  sealed trait multiply
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
-  sealed trait overlay extends globalCompositeOperationType
+  sealed trait overlay
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   
@@ -472,18 +515,23 @@ object konvaStrings {
   
   @js.native
   sealed trait round
-    extends LineCap
+    extends StObject
+       with LineCap
        with LineJoin
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait saturation extends globalCompositeOperationType
+  sealed trait saturation
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def saturation: saturation = "saturation".asInstanceOf[saturation]
   
   @js.native
-  sealed trait screen extends globalCompositeOperationType
+  sealed trait screen
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   
@@ -523,32 +571,44 @@ object konvaStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
-  sealed trait `soft-light` extends globalCompositeOperationType
+  sealed trait `soft-light`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
   
   @js.native
-  sealed trait `source-atop` extends globalCompositeOperationType
+  sealed trait `source-atop`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `source-atop`: `source-atop` = "source-atop".asInstanceOf[`source-atop`]
   
   @js.native
-  sealed trait `source-in` extends globalCompositeOperationType
+  sealed trait `source-in`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `source-in`: `source-in` = "source-in".asInstanceOf[`source-in`]
   
   @js.native
-  sealed trait `source-out` extends globalCompositeOperationType
+  sealed trait `source-out`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `source-out`: `source-out` = "source-out".asInstanceOf[`source-out`]
   
   @js.native
-  sealed trait `source-over` extends globalCompositeOperationType
+  sealed trait `source-over`
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def `source-over`: `source-over` = "source-over".asInstanceOf[`source-over`]
   
   @js.native
-  sealed trait square extends LineCap
+  sealed trait square
+    extends StObject
+       with LineCap
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
@@ -643,7 +703,9 @@ object konvaStrings {
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   
   @js.native
-  sealed trait xor extends globalCompositeOperationType
+  sealed trait xor
+    extends StObject
+       with globalCompositeOperationType
   @scala.inline
   def xor: xor = "xor".asInstanceOf[xor]
 }

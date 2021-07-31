@@ -4,34 +4,34 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables the object to be a member of a chain. */
-@js.native
-trait XChainable extends XInterface {
+trait XChainable
+  extends StObject
+     with XInterface {
   
   /** @returns the previous object in this chain or NULL, if this is the first object of this chain. */
-  val Predecessor: XChainable = js.native
+  val Predecessor: XChainable
   
   /** @returns the next object in this chain or NULL, if this is the last object in this chain. */
-  var Successor: XChainable = js.native
+  var Successor: XChainable
   
   /** @returns the previous object in this chain or NULL, if this is the first object of this chain. */
-  def getPredecessor(): XChainable = js.native
+  def getPredecessor(): XChainable
   
   /** @returns the next object in this chain or NULL, if this is the last object in this chain. */
-  def getSuccessor(): XChainable = js.native
+  def getSuccessor(): XChainable
   
   /** checks if the specified object can be linked to this. */
-  def isChainable(xChainable: XChainable): Boolean = js.native
+  def isChainable(xChainable: XChainable): Boolean
   
   /**
     * connects the specified object to this object as the successor in a chain.
     *
     * This implies that this object will become the predecessor of **xChainable** .
     */
-  def setSuccessor(xChainable: XChainable): Unit = js.native
+  def setSuccessor(xChainable: XChainable): Unit
 }
 object XChainable {
   

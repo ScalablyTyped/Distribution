@@ -2,7 +2,6 @@ package typings.tabulator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,18 +9,30 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("tabulator", JSImport.Namespace)
   @js.native
-  class ^ () extends Tabulator
+  class ^ ()
+    extends StObject
+       with Tabulator {
+    
+    // myMethod(opts: Tabulator.chartType): number;
+    /* CompleteClass */
+    var defaultShowAttribute: String = js.native
+    
+    /* CompleteClass */
+    override def toHtmlTable(matrix: js.Object): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toMatrix(datum: js.Object): js.Object = js.native
+  }
   
   /*~ Write your module's methods and properties in this class */
-  @js.native
   trait Tabulator extends StObject {
     
     // myMethod(opts: Tabulator.chartType): number;
-    var defaultShowAttribute: String = js.native
+    var defaultShowAttribute: String
     
-    def toHtmlTable(matrix: js.Object): js.Any = js.native
+    def toHtmlTable(matrix: js.Object): js.Any
     
-    def toMatrix(datum: js.Object): js.Object = js.native
+    def toMatrix(datum: js.Object): js.Object
   }
   object Tabulator {
     

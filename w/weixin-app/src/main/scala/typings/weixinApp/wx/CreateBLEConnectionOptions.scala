@@ -2,20 +2,19 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBLEConnectionOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 蓝牙设备 id，参考 getDevices 接口
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   @JSName("success")
-  def success_MCreateBLEConnectionOptions(res: ErrMsgResponse): Unit = js.native
+  def success_MCreateBLEConnectionOptions(res: ErrMsgResponse): Unit
 }
 object CreateBLEConnectionOptions {
   

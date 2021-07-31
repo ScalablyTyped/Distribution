@@ -2,7 +2,6 @@ package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait DayOfWeekFormat extends StObject
 object DayOfWeekFormat extends StObject {
   
   @js.native
-  sealed trait default extends DayOfWeekFormat
+  sealed trait default
+    extends StObject
+       with DayOfWeekFormat
   
   @js.native
-  sealed trait abbreviated extends DayOfWeekFormat
+  sealed trait abbreviated
+    extends StObject
+       with DayOfWeekFormat
   
   @js.native
-  sealed trait full extends DayOfWeekFormat
+  sealed trait full
+    extends StObject
+       with DayOfWeekFormat
   
   @js.native
-  sealed trait none extends DayOfWeekFormat
+  sealed trait none
+    extends StObject
+       with DayOfWeekFormat
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTransitGatewayVpcAttachmentRequestOptions extends StObject {
   
   /**
     * Enable or disable support for appliance mode. If enabled, a traffic flow between a source and destination uses the same Availability Zone for the VPC attachment for the lifetime of that flow. The default is disable.
     */
-  var ApplianceModeSupport: js.UndefOr[ApplianceModeSupportValue] = js.native
+  var ApplianceModeSupport: js.UndefOr[ApplianceModeSupportValue] = js.undefined
   
   /**
     * Enable or disable DNS support. The default is enable.
     */
-  var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
+  var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
   
   /**
     * Enable or disable IPv6 support. The default is enable.
     */
-  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.native
+  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
 }
 object ModifyTransitGatewayVpcAttachmentRequestOptions {
   

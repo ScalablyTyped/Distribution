@@ -4,15 +4,13 @@ import typings.lunr.mod.Token
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var boost: js.UndefOr[Double] = js.native
+    var boost: js.UndefOr[Double] = js.undefined
   }
   object `0` {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Boost extends StObject {
     
-    var boost: js.UndefOr[Double] = js.native
+    var boost: js.UndefOr[Double] = js.undefined
     
-    var extractor: js.UndefOr[js.Function1[/* doc */ js.Object, String | js.Object | js.Array[js.Object]]] = js.native
+    var extractor: js.UndefOr[js.Function1[/* doc */ js.Object, String | js.Object | js.Array[js.Object]]] = js.undefined
   }
   object Boost {
     

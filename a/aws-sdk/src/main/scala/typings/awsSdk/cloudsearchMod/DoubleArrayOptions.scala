@@ -2,36 +2,34 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleArrayOptions extends StObject {
   
   /**
     * A value to use for the field if the field isn't specified for a document.
     */
-  var DefaultValue: js.UndefOr[Double] = js.native
+  var DefaultValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether facet information can be returned for the field.
     */
-  var FacetEnabled: js.UndefOr[Boolean] = js.native
+  var FacetEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the contents of the field can be returned in the search results.
     */
-  var ReturnEnabled: js.UndefOr[Boolean] = js.native
+  var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the contents of the field are searchable.
     */
-  var SearchEnabled: js.UndefOr[Boolean] = js.native
+  var SearchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of source fields to map to the field. 
     */
-  var SourceFields: js.UndefOr[FieldNameCommaList] = js.native
+  var SourceFields: js.UndefOr[FieldNameCommaList] = js.undefined
 }
 object DoubleArrayOptions {
   

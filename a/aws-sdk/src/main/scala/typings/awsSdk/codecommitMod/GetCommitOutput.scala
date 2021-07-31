@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommitOutput extends StObject {
   
   /**
     * A commit data type object that contains information about the specified commit.
     */
-  var commit: Commit = js.native
+  var commit: Commit
 }
 object GetCommitOutput {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Condition extends StObject {
   
   /** Required. Field within the record this condition is evaluated against. */
-  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** Required. Operator used to compare the field or infoType to the value. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /** Value to compare against. [Mandatory, except for `EXISTS` tests.] */
-  var value: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var value: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
 }
 object GooglePrivacyDlpV2Condition {
   

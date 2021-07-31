@@ -2,17 +2,15 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.degreeCentrality
   */
-@js.native
 trait SearchDegreeCentralityResultUndirected extends StObject {
   
   /** the degree centrality of the root node */
-  var degree: Double = js.native
+  var degree: Double
 }
 object SearchDegreeCentralityResultUndirected {
   

@@ -2,19 +2,17 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffer extends StObject {
   
-  var buffer: String = js.native
+  var buffer: String
   
-  var stride: Double = js.native
+  var stride: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object Buffer {
   

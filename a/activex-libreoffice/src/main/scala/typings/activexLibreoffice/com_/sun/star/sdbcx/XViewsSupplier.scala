@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides for access to a container of views, typically used for a database definition object. */
-@js.native
-trait XViewsSupplier extends XInterface {
+trait XViewsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of views.
     * @returns the views
     */
-  val Views: XNameAccess = js.native
+  val Views: XNameAccess
   
   /**
     * returns the container of views.
     * @returns the views
     */
-  def getViews(): XNameAccess = js.native
+  def getViews(): XNameAccess
 }
 object XViewsSupplier {
   

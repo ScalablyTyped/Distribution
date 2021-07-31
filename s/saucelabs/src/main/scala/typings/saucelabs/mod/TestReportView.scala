@@ -10,16 +10,15 @@ import typings.saucelabs.saucelabsStrings.UNKNOWN
 import typings.saucelabs.saucelabsStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestReportView
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var reportId: js.UndefOr[Id] = js.native
+  var reportId: js.UndefOr[Id] = js.undefined
   
-  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.native
+  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.undefined
 }
 object TestReportView {
   

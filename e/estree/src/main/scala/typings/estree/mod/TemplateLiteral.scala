@@ -2,31 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateLiteral
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var expressions: js.Array[Expression] = js.native
+  var expressions: js.Array[Expression]
   
-  var quasis: js.Array[TemplateElement] = js.native
+  var quasis: js.Array[TemplateElement]
   
   @JSName("type")
-  var type_TemplateLiteral: typings.estree.estreeStrings.TemplateLiteral = js.native
+  var type_TemplateLiteral: typings.estree.estreeStrings.TemplateLiteral
 }
 object TemplateLiteral {
   
   @scala.inline
-  def apply(
-    expressions: js.Array[Expression],
-    quasis: js.Array[TemplateElement],
-    `type`: typings.estree.estreeStrings.TemplateLiteral
-  ): TemplateLiteral = {
+  def apply(expressions: js.Array[Expression], quasis: js.Array[TemplateElement]): TemplateLiteral = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TemplateLiteral")
     __obj.asInstanceOf[TemplateLiteral]
   }
   

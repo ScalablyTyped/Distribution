@@ -2,55 +2,55 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnlineMeeting extends Entity {
+trait OnlineMeeting
+  extends StObject
+     with Entity {
   
   // Specifies who can be a presenter in a meeting. Possible values are listed in the following table.
-  var allowedPresenters: js.UndefOr[NullableOption[OnlineMeetingPresenters]] = js.native
+  var allowedPresenters: js.UndefOr[NullableOption[OnlineMeetingPresenters]] = js.undefined
   
   // The phone access (dial-in) information for an online meeting. Read-only.
-  var audioConferencing: js.UndefOr[NullableOption[AudioConferencing]] = js.native
+  var audioConferencing: js.UndefOr[NullableOption[AudioConferencing]] = js.undefined
   
   // The chat information associated with this online meeting.
-  var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.native
+  var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.undefined
   
   // The meeting creation time in UTC. Read-only.
-  var creationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var creationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The meeting end time in UTC.
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not to announce when callers join or leave.
-  var isEntryExitAnnounced: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isEntryExitAnnounced: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * The join information in the language and locale variant specified in the Accept-Language request HTTP header.
     * Read-only.
     */
-  var joinInformation: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var joinInformation: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   // The join URL of the online meeting. Read-only.
-  var joinWebUrl: js.UndefOr[NullableOption[String]] = js.native
+  var joinWebUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies which participants can bypass the meeting lobby.
-  var lobbyBypassSettings: js.UndefOr[NullableOption[LobbyBypassSettings]] = js.native
+  var lobbyBypassSettings: js.UndefOr[NullableOption[LobbyBypassSettings]] = js.undefined
   
   // The participants associated with the online meeting. This includes the organizer and the attendees.
-  var participants: js.UndefOr[NullableOption[MeetingParticipants]] = js.native
+  var participants: js.UndefOr[NullableOption[MeetingParticipants]] = js.undefined
   
   // The meeting start time in UTC.
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The subject of the online meeting.
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The video teleconferencing ID. Read-only.
-  var videoTeleconferenceId: js.UndefOr[NullableOption[String]] = js.native
+  var videoTeleconferenceId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnlineMeeting {
   

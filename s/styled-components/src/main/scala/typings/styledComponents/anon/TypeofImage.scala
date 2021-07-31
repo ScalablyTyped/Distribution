@@ -10,11 +10,12 @@ import typings.styledComponents.styledComponentsStrings.diskSlashmemory
 import typings.styledComponents.styledComponentsStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofImage extends Instantiable0[Image] {
+trait TypeofImage
+  extends StObject
+     with Instantiable0[Image] {
   
   var abortPrefetch: js.UndefOr[js.Function1[/* requestId */ Double, Unit]] = js.native
   

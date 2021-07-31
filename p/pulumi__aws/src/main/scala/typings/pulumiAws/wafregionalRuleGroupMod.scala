@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafregionalRuleGroupMod {
@@ -55,6 +54,10 @@ object wafregionalRuleGroupMod {
   /* static members */
   object RuleGroup {
     
+    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,29 +67,23 @@ object wafregionalRuleGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RuleGroup = js.native
-    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RuleGroup = js.native
-    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState): RuleGroup = js.native
-    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): RuleGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
     
     /**
       * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ruleGroup.RuleGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ruleGroup.RuleGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/ruleGroup.RuleGroup */ Boolean]
   }
   
-  @js.native
   trait RuleGroupArgs extends StObject {
     
     /**
@@ -94,22 +91,22 @@ object wafregionalRuleGroupMod {
       */
     val activatedRules: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.RuleGroupActivatedRule]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A friendly name for the metrics from the rule group
       */
-    val metricName: Input[String] = js.native
+    val metricName: Input[String]
     
     /**
       * A friendly name of the rule group
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleGroupArgs {
     
@@ -148,7 +145,6 @@ object wafregionalRuleGroupMod {
     }
   }
   
-  @js.native
   trait RuleGroupState extends StObject {
     
     /**
@@ -156,27 +152,27 @@ object wafregionalRuleGroupMod {
       */
     val activatedRules: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.RuleGroupActivatedRule]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the WAF Regional Rule Group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name for the metrics from the rule group
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the rule group
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleGroupState {
     

@@ -2,25 +2,23 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDataRepositoryTasksRequest extends StObject {
   
   /**
     * (Optional) You can use filters to narrow the DescribeDataRepositoryTasks response to include just tasks for specific file systems, or tasks in a specific lifecycle state.
     */
-  var Filters: js.UndefOr[DataRepositoryTaskFilters] = js.native
+  var Filters: js.UndefOr[DataRepositoryTaskFilters] = js.undefined
   
-  var MaxResults: js.UndefOr[typings.awsSdk.fsxMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.fsxMod.MaxResults] = js.undefined
   
-  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
   
   /**
     * (Optional) IDs of the tasks whose descriptions you want to retrieve (String).
     */
-  var TaskIds: js.UndefOr[typings.awsSdk.fsxMod.TaskIds] = js.native
+  var TaskIds: js.UndefOr[typings.awsSdk.fsxMod.TaskIds] = js.undefined
 }
 object DescribeDataRepositoryTasksRequest {
   

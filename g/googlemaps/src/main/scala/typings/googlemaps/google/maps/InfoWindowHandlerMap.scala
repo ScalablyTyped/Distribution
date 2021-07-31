@@ -2,10 +2,8 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow.closeclick Maps JavaScript API}
     * @see {@link InfoWindow#close}
     */
-  def closeclick(): Unit = js.native
+  def closeclick(): Unit
   
   /**
     * This event is fired when the content property changes.
@@ -22,14 +20,14 @@ trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
     * @see {@link InfoWindow#getContent}
     * @see {@link InfoWindow#setContent}
     */
-  def content_changed(): Unit = js.native
+  def content_changed(): Unit
   
   /**
     * This event is fired when the `<div>` containing the {@link InfoWindow}'s content is attached to the DOM. You
     * may wish to monitor this event if you are building out your info window content dynamically.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow.domready Maps JavaScript API}
     */
-  def domready(): Unit = js.native
+  def domready(): Unit
   
   /**
     * This event is fired when the position property changes.
@@ -38,7 +36,7 @@ trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
     * @see {@link InfoWindow#getPosition}
     * @see {@link InfoWindow#setPosition}
     */
-  def position_changed(): Unit = js.native
+  def position_changed(): Unit
   
   /**
     * This event is fired when the InfoWindow's zIndex changes.
@@ -47,7 +45,7 @@ trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
     * @see {@link InfoWindow#getZIndex}
     * @see {@link InfoWindow#setZIndex}
     */
-  def zindex_changed(): Unit = js.native
+  def zindex_changed(): Unit
 }
 object InfoWindowHandlerMap {
   
@@ -64,7 +62,7 @@ object InfoWindowHandlerMap {
   }
   
   @scala.inline
-  implicit class InfoWindowHandlerMapMutableBuilder[Self <: InfoWindowHandlerMap[_], T /* <: InfoWindow */] (val x: Self with InfoWindowHandlerMap[T]) extends AnyVal {
+  implicit class InfoWindowHandlerMapMutableBuilder[Self <: InfoWindowHandlerMap[?], T /* <: InfoWindow */] (val x: Self & InfoWindowHandlerMap[T]) extends AnyVal {
     
     @scala.inline
     def setCloseclick(value: () => Unit): Self = StObject.set(x, "closeclick", js.Any.fromFunction0(value))

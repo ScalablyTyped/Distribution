@@ -6,20 +6,19 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnackbarProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var onActionClick: js.UndefOr[MouseEventHandler[Snackbar]] = js.native
+  var onActionClick: js.UndefOr[MouseEventHandler[Snackbar]] = js.undefined
   
-  def onTimeout(): js.Any = js.native
+  def onTimeout(): js.Any
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object SnackbarProps {
   

@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Language extends StObject {
   
   /**
     * The language associated with the value.
     */
-  var language: String = js.native
+  var language: String
   
   /**
     * The property value for a specified language.
     */
-  var value: String = js.native
+  var value: String
 }
 object Language {
   

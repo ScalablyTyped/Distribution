@@ -3,20 +3,18 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.EventFilter.FilterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventFilter extends StObject {
   
   /** EventFilter filterType */
-  var filterType: js.UndefOr[FilterType | Null] = js.native
+  var filterType: js.UndefOr[FilterType | Null] = js.undefined
   
   /** EventFilter key */
-  var key: js.UndefOr[String | Null] = js.native
+  var key: js.UndefOr[String | Null] = js.undefined
   
   /** EventFilter matchString */
-  var matchString: js.UndefOr[String | Null] = js.native
+  var matchString: js.UndefOr[String | Null] = js.undefined
 }
 object IEventFilter {
   

@@ -2,7 +2,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,43 +9,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration object will be generated first by the native configuration object, if set and then will be overridden if passed in JS.
   * That is, all of the following key/value pairs are optional if the native configuration is set.
   */
-@js.native
 trait configurationOptions extends StObject {
   
   /**
     * default ""
     * The secret iOS API key used for authenticating requests from our app
     */
-  var APIKey: js.UndefOr[String] = js.native
+  var APIKey: js.UndefOr[String] = js.undefined
   
   /**
     * default  ""
     * The Project number from the Google Developer's console used to configure Google Cloud Messaging
     */
-  var GCMSenderID: js.UndefOr[String] = js.native
+  var GCMSenderID: js.UndefOr[String] = js.undefined
   
   /**
     * default ""
     * The Android client ID used in Google AppInvite when an iOS app has it's android version
     */
-  var androidClientID: js.UndefOr[String] = js.native
+  var androidClientID: js.UndefOr[String] = js.undefined
   
   /**
     * Default from app [NSBundle mainBundle]  The bundle ID for the app to be bundled with
     */
-  var bundleID: js.UndefOr[String] = js.native
+  var bundleID: js.UndefOr[String] = js.undefined
   
   /**
     * default ""
     * The OAuth2 client ID for iOS application used to authenticate Google Users for signing in with Google
     */
-  var clientID: js.UndefOr[String] = js.native
+  var clientID: js.UndefOr[String] = js.undefined
   
   /**
     * default ""
     * The database root (i.e. https://my-app.firebaseio.com)
     */
-  var databaseURL: js.UndefOr[String] = js.native
+  var databaseURL: js.UndefOr[String] = js.undefined
   
   /**
     *  default false
@@ -54,37 +52,37 @@ trait configurationOptions extends StObject {
     * @usage
     * firebase.on('debug', msg => console.log('Received debug message', msg))
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * default ""
     * URL scheme to set up durable deep link service
     */
-  var deepLinkURLScheme: js.UndefOr[String] = js.native
+  var deepLinkURLScheme: js.UndefOr[String] = js.undefined
   
   /**
     * default ""
     * The Google App ID that is used to uniquely identify an instance of an app.
     */
-  var googleAppID: js.UndefOr[String] = js.native
+  var googleAppID: js.UndefOr[String] = js.undefined
   
   /**
     * default false
     * When set to true, database persistence will be enabled.
     */
-  var persistence: js.UndefOr[Boolean] = js.native
+  var persistence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * default ""
     * The Google Cloud storage bucket name
     */
-  var storageBucket: js.UndefOr[String] = js.native
+  var storageBucket: js.UndefOr[String] = js.undefined
   
   /**
     * default ""
     * The tracking ID for Google Analytics
     */
-  var trackingID: js.UndefOr[String] = js.native
+  var trackingID: js.UndefOr[String] = js.undefined
 }
 object configurationOptions {
   

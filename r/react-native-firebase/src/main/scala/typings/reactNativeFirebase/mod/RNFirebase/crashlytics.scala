@@ -2,7 +2,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crashlytics {
@@ -72,18 +71,17 @@ object crashlytics {
     def setUserName(userName: String): Unit = js.native
   }
   
-  @js.native
   trait customError extends StObject {
     
-    var additional: js.UndefOr[js.Object] = js.native
+    var additional: js.UndefOr[js.Object] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
   }
   object customError {
     

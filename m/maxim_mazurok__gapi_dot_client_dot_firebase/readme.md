@@ -10,9 +10,9 @@ TypeScript typings for Firebase Management API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebase |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 48 |
 | # dependents       | 1 |
-| # downloads        | 159 |
+| # downloads        | 3380 |
 | # stars            | 0 |
 
 ## Links

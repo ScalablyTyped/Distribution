@@ -3,24 +3,22 @@ package typings.hapiHapi.anon
 import typings.hapiHapi.mod.RouteExtObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @hapi/hapi.@hapi/hapi.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi.RouteExtObject | std.Array<@hapi/hapi.@hapi/hapi.RouteExtObject>} */
-@js.native
 trait keyinRouteRequestExtTypeR extends StObject {
   
-  var onCredentials: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onCredentials: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
   
-  var onPostAuth: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onPostAuth: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
   
-  var onPostHandler: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onPostHandler: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
   
-  var onPreAuth: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onPreAuth: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
   
-  var onPreHandler: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onPreHandler: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
   
-  var onPreResponse: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
+  var onPreResponse: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.undefined
 }
 object keyinRouteRequestExtTypeR {
   

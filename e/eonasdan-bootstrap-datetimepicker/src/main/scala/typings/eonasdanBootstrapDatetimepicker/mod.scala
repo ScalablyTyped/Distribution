@@ -25,13 +25,14 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait ChangeEventObject extends JQueryEventObject {
+  trait ChangeEventObject
+    extends StObject
+       with JQueryEventObject {
     
     /**
       * Date the picker changed to. Type: moment object (clone)
@@ -583,7 +584,9 @@ object mod {
   }
   
   @js.native
-  trait ErrorEventObject extends JQueryEventObject {
+  trait ErrorEventObject
+    extends StObject
+       with JQueryEventObject {
     
     /**
       * The invalid date. Type: moment object (clone)
@@ -593,8 +596,9 @@ object mod {
   
   type FromTo = js.Tuple2[Moment, Moment]
   
-  @js.native
-  trait GetOptions extends OptionsBase {
+  trait GetOptions
+    extends StObject
+       with OptionsBase {
     
     /**
       * Disables selection of dates in the array, e.g. holidays
@@ -603,7 +607,7 @@ object mod {
       * disabledDates = ["2010-10-10"]; -> disabledDated will be { "2010-01-01": true }
       * Default: false
       */
-    var disabledDates: js.UndefOr[IndexedDates | Boolean] = js.native
+    var disabledDates: js.UndefOr[IndexedDates | Boolean] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -612,7 +616,7 @@ object mod {
       * disabledHours = [0, 1]; -> disabledHours will be { "0": true, "1": true }
       * Default: false
       */
-    var disabledHours: js.UndefOr[IndexedHours | Boolean] = js.native
+    var disabledHours: js.UndefOr[IndexedHours | Boolean] = js.undefined
     
     /**
       * Enables selection of dates NOT in the array, e.g. holidays
@@ -621,7 +625,7 @@ object mod {
       * enabledDates = ["2010-10-10"]; -> enabledDated will be { "2010-01-01": true }
       * Default: false
       */
-    var enabledDates: js.UndefOr[IndexedDates | Boolean] = js.native
+    var enabledDates: js.UndefOr[IndexedDates | Boolean] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -630,7 +634,7 @@ object mod {
       * enabledHours = [0, 1]; -> enabledHours will be { "0": true, "1": true }
       * Default: false
       */
-    var enabledHours: js.UndefOr[IndexedHours | Boolean] = js.native
+    var enabledHours: js.UndefOr[IndexedHours | Boolean] = js.undefined
   }
   object GetOptions {
     
@@ -670,7 +674,9 @@ object mod {
   }
   
   @js.native
-  trait HideEventObject extends JQueryEventObject {
+  trait HideEventObject
+    extends StObject
+       with JQueryEventObject {
     
     /**
       * The currently set date. Type: moment object (clone)
@@ -678,53 +684,52 @@ object mod {
     var date: Moment = js.native
   }
   
-  @js.native
   trait Icons extends StObject {
     
     /**
       * Default: "glyphicon glyphicon-trash"
       */
-    var clear: js.UndefOr[String] = js.native
+    var clear: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-remove"
       */
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-calendar"
       */
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-time"
       */
-    var down: js.UndefOr[String] = js.native
+    var down: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-chevron-left"
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-screenshot"
       */
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-chevron-right"
       */
-    var time: js.UndefOr[String] = js.native
+    var time: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-chevron-down"
       */
-    var today: js.UndefOr[String] = js.native
+    var today: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "glyphicon glyphicon-chevron-up"
       */
-    var up: js.UndefOr[String] = js.native
+    var up: js.UndefOr[String] = js.undefined
   }
   object Icons {
     
@@ -797,34 +802,33 @@ object mod {
   
   type IndexedHours = StringDictionary[Boolean]
   
-  @js.native
   trait KeyBinds extends StObject {
     
-    var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, _]] = js.native
+    var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, js.Any]] = js.undefined
     
-    var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var delete: js.UndefOr[js.Function0[_]] = js.native
+    var delete: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var enter: js.UndefOr[js.Function0[_]] = js.native
+    var enter: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var escape: js.UndefOr[js.Function0[_]] = js.native
+    var escape: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
     
-    var t: js.UndefOr[js.Function0[_]] = js.native
+    var t: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+    var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
   }
   object KeyBinds {
     
@@ -838,135 +842,134 @@ object mod {
     implicit class KeyBindsMutableBuilder[Self <: KeyBinds] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def `setControl down`(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "control down", js.Any.fromFunction1(value))
+      def `setControl down`(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "control down", js.Any.fromFunction1(value))
       
       @scala.inline
       def `setControl downUndefined`: Self = StObject.set(x, "control down", js.undefined)
       
       @scala.inline
-      def `setControl space`(value: /* widget */ JQuery => _): Self = StObject.set(x, "control space", js.Any.fromFunction1(value))
+      def `setControl space`(value: /* widget */ JQuery => js.Any): Self = StObject.set(x, "control space", js.Any.fromFunction1(value))
       
       @scala.inline
       def `setControl spaceUndefined`: Self = StObject.set(x, "control space", js.undefined)
       
       @scala.inline
-      def `setControl up`(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "control up", js.Any.fromFunction1(value))
+      def `setControl up`(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "control up", js.Any.fromFunction1(value))
       
       @scala.inline
       def `setControl upUndefined`: Self = StObject.set(x, "control up", js.undefined)
       
       @scala.inline
-      def setDelete(value: () => _): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
       @scala.inline
       def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
       @scala.inline
-      def setDown(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      def setDown(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
       @scala.inline
-      def setEnter(value: () => _): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+      def setEnter(value: () => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
       @scala.inline
-      def setEscape(value: () => _): Self = StObject.set(x, "escape", js.Any.fromFunction0(value))
+      def setEscape(value: () => js.Any): Self = StObject.set(x, "escape", js.Any.fromFunction0(value))
       
       @scala.inline
       def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       @scala.inline
-      def setLeft(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      def setLeft(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
       @scala.inline
-      def setPageDown(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "pageDown", js.Any.fromFunction1(value))
+      def setPageDown(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "pageDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPageDownUndefined: Self = StObject.set(x, "pageDown", js.undefined)
       
       @scala.inline
-      def setPageUp(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "pageUp", js.Any.fromFunction1(value))
+      def setPageUp(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "pageUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPageUpUndefined: Self = StObject.set(x, "pageUp", js.undefined)
       
       @scala.inline
-      def setRight(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      def setRight(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
       @scala.inline
-      def setT(value: () => _): Self = StObject.set(x, "t", js.Any.fromFunction0(value))
+      def setT(value: () => js.Any): Self = StObject.set(x, "t", js.Any.fromFunction0(value))
       
       @scala.inline
       def setTUndefined: Self = StObject.set(x, "t", js.undefined)
       
       @scala.inline
-      def setUp(value: /* widget */ JQuery | Boolean => _): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      def setUp(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     }
   }
   
-  @js.native
   trait OptionsBase extends StObject {
     
     /**
       * If true, the picker will show on textbox focus and icon click when used in a button group
       * Default: false
       */
-    var allowInputToggle: js.UndefOr[Boolean] = js.native
+    var allowInputToggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the week of the year to the left of first day of the week.
       * Default: false
       */
-    var calendarWeeks: js.UndefOr[Boolean] = js.native
+    var calendarWeeks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Using a Bootstraps collapse to switch between date/time pickers.
       * Default: true
       */
-    var collapse: js.UndefOr[Boolean] = js.native
+    var collapse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: ".datepickerinput"
       */
-    var datepickerInput: js.UndefOr[String] = js.native
+    var datepickerInput: js.UndefOr[String] = js.undefined
     
     /**
       * Changes the heading of the datepicker when in "days" view.
       * Default: "MMMM YYYY"
       */
-    var dayViewHeaderFormat: js.UndefOr[String] = js.native
+    var dayViewHeaderFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Accepts: array of numbers from 0-6
       * Disables the section of days of the week, e.g. weekends.
       * Default: false
       */
-    var daysOfWeekDisabled: js.UndefOr[js.Array[DayOfWeek] | Boolean] = js.native
+    var daysOfWeekDisabled: js.UndefOr[js.Array[DayOfWeek] | Boolean] = js.undefined
     
     /**
       * Will cause the date picker to stay open after a blur event.
       * Default: false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the picker default date/time. Overrides useCurrent
       * Default: false
       */
-    var defaultDate: js.UndefOr[DateComparable | Boolean] = js.native
+    var defaultDate: js.UndefOr[DateComparable | Boolean] = js.undefined
     
     /**
       * Disables time selection between the given moments.
@@ -974,25 +977,25 @@ object mod {
       * [[moment({ h: 0 }), moment({ h: 8 })], [moment({ h: 18 }), moment({ h: 24 })]]
       * Default: false
       */
-    var disabledTimeIntervals: js.UndefOr[Boolean | js.Array[FromTo]] = js.native
+    var disabledTimeIntervals: js.UndefOr[Boolean | js.Array[FromTo]] = js.undefined
     
     /**
       * Allows for several input formats to be valid.
       * Default: false
       */
-    var extraFormats: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var extraFormats: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
     /**
       * If false, the textbox will not be given focus when the picker is shown
       * Default: true
       */
-    var focusOnShow: js.UndefOr[Boolean] = js.native
+    var focusOnShow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * See momentjs' docs for valid formats. Format also dictates what components are shown, e.g. MM/dd/YYYY will not display the time picker.
       * Default: false
       */
-    var format: js.UndefOr[String | Boolean] = js.native
+    var format: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Change the default icons for the pickers functions
@@ -1008,31 +1011,31 @@ object mod {
       *              close: "glyphicon glyphicon-remove"
       *          }
       */
-    var icons: js.UndefOr[Icons] = js.native
+    var icons: js.UndefOr[Icons] = js.undefined
     
     /**
       * Allow date picker show event to fire even when the associated input element has the readonly="readonly" property.
       * Default: false
       */
-    var ignoreReadonly: js.UndefOr[Boolean] = js.native
+    var ignoreReadonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will display the picker inline without the need of a input field. This will also hide borders and shadows.
       * Default: false
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will cause the date picker to not revert or overwrite invalid dates.
       * Default: false
       */
-    var keepInvalid: js.UndefOr[Boolean] = js.native
+    var keepInvalid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will cause the date picker to stay open after selecting a date if no time components are being used.
       * Default: false
       */
-    var keepOpen: js.UndefOr[Boolean] = js.native
+    var keepOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows for custom events to fire on keyboard press.
@@ -1114,79 +1117,79 @@ object mod {
       *          }
       *       }
       */
-    var keyBinds: js.UndefOr[KeyBinds] = js.native
+    var keyBinds: js.UndefOr[KeyBinds] = js.undefined
     
     /**
       * See momentjs for valid locales.
       * You must include moment-with-locales.js or a local js file.
       * Default: moment.locale()
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
       * Prevents date/time selections after this date.
       * maxDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
       * Default: false
       */
-    var maxDate: js.UndefOr[DateComparable | Boolean] = js.native
+    var maxDate: js.UndefOr[DateComparable | Boolean] = js.undefined
     
     /**
       * Prevents date/time selections before this date.
       * minDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
       * Default: false
       */
-    var minDate: js.UndefOr[DateComparable | Boolean] = js.native
+    var minDate: js.UndefOr[DateComparable | Boolean] = js.undefined
     
     /**
       * Allows custom input formatting.
       * For example:
       * The user can enter "yesterday" or "30 days ago".
       */
-    var parseInputDate: js.UndefOr[ParseInputDateFunction] = js.native
+    var parseInputDate: js.UndefOr[ParseInputDateFunction] = js.undefined
     
     /**
       * Show the "Clear" button in the icon toolbar.
       * Clicking the "Clear" button will set the calendar to null.
       * Default: false
       */
-    var showClear: js.UndefOr[Boolean] = js.native
+    var showClear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the "Close" button in the icon toolbar.
       * Clicking the "Close" button will call hide()
       * Default: false
       */
-    var showClose: js.UndefOr[Boolean] = js.native
+    var showClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the "Today" button in the icon toolbar.
       * Clicking the "Today" button will set the calendar view and set the date to now.
       * Default: false
       */
-    var showTodayButton: js.UndefOr[Boolean] = js.native
+    var showTodayButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the picker side by side when using the time and date together.
       * Default: false
       */
-    var sideBySide: js.UndefOr[Boolean] = js.native
+    var sideBySide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of minutes the up/down arrow's will move the minutes value in the time picker.
       * Default: 1
       */
-    var stepping: js.UndefOr[Double] = js.native
+    var stepping: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: "Etc/UTC"
       */
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
     /**
       * Changes the placement of the icon toolbar.
       * Default: "default"
       */
-    var toolbarPlacement: js.UndefOr[ToolbarPlacement] = js.native
+    var toolbarPlacement: js.UndefOr[ToolbarPlacement] = js.undefined
     
     /**
       * This will change the tooltips over each icon to a custom string
@@ -1207,38 +1210,38 @@ object mod {
       *              nextCentury: "Next Century"
       *          }
       */
-    var tooltips: js.UndefOr[Tooltips] = js.native
+    var tooltips: js.UndefOr[Tooltips] = js.undefined
     
     /**
       * On show, will set the picker to the current date/time
       * Default: true
       */
-    var useCurrent: js.UndefOr[Boolean | UseCurrent] = js.native
+    var useCurrent: js.UndefOr[Boolean | UseCurrent] = js.undefined
     
     /**
       * Defines if moment should use strict date parsing when considering a date to be valid
       * Default: false
       */
-    var useStrict: js.UndefOr[Boolean] = js.native
+    var useStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This will change the viewDate without changing or setting the selected date.
       * Default: false
       */
-    var viewDate: js.UndefOr[DateComparable | Boolean] = js.native
+    var viewDate: js.UndefOr[DateComparable | Boolean] = js.undefined
     
     /**
       * The default view to display when the picker is shown.
       * Note: To limit the picker to selecting, for instance the year and month, use format: MM/YYYY
       * Default: "days"
       */
-    var viewMode: js.UndefOr[ViewMode] = js.native
+    var viewMode: js.UndefOr[ViewMode] = js.undefined
     
     /**
       * On picker show, places the widget at the identifier (string) or jQuery object if the element has css position: "relative"
       * Default: null
       */
-    var widgetParent: js.UndefOr[String | JQuery] = js.native
+    var widgetParent: js.UndefOr[String | JQuery] = js.undefined
     
     /**
       * Accepts: object with the all or one of the parameters above
@@ -1249,7 +1252,7 @@ object mod {
       *              vertical: 'auto'
       *          }
       */
-    var widgetPositioning: js.UndefOr[WidgetPositioning] = js.native
+    var widgetPositioning: js.UndefOr[WidgetPositioning] = js.undefined
   }
   object OptionsBase {
     
@@ -1491,8 +1494,9 @@ object mod {
   
   type ParseInputDateFunction = js.Function1[/* inputDate */ String, Moment]
   
-  @js.native
-  trait SetOptions extends OptionsBase {
+  trait SetOptions
+    extends StObject
+       with OptionsBase {
     
     /**
       * Disables selection of dates in the array, e.g. holidays
@@ -1501,7 +1505,7 @@ object mod {
       * disabledDates = ["2010-10-10"]; -> disabledDated will be { "2010-01-01": true }
       * Default: false
       */
-    var disabledDates: js.UndefOr[js.Array[DateComparable] | Boolean] = js.native
+    var disabledDates: js.UndefOr[js.Array[DateComparable] | Boolean] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -1510,7 +1514,7 @@ object mod {
       * disabledHours = [0, 1]; -> disabledHours will be { "0": true, "1": true }
       * Default: false
       */
-    var disabledHours: js.UndefOr[js.Array[Double] | Boolean] = js.native
+    var disabledHours: js.UndefOr[js.Array[Double] | Boolean] = js.undefined
     
     /**
       * Enables selection of dates NOT in the array, e.g. holidays
@@ -1519,7 +1523,7 @@ object mod {
       * enabledDates = ["2010-10-10"]; -> enabledDated will be { "2010-01-01": true }
       * Default: false
       */
-    var enabledDates: js.UndefOr[js.Array[DateComparable] | Boolean] = js.native
+    var enabledDates: js.UndefOr[js.Array[DateComparable] | Boolean] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -1528,7 +1532,7 @@ object mod {
       * enabledHours = [0, 1]; -> enabledHours will be { "0": true, "1": true }
       * Default: false
       */
-    var enabledHours: js.UndefOr[js.Array[Double] | Boolean] = js.native
+    var enabledHours: js.UndefOr[js.Array[Double] | Boolean] = js.undefined
   }
   object SetOptions {
     
@@ -1597,133 +1601,132 @@ object mod {
     def top: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.top = "top".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.top]
   }
   
-  @js.native
   trait Tooltips extends StObject {
     
     /**
       * Default: "Clear selection"
       */
-    var clear: js.UndefOr[String] = js.native
+    var clear: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Close the picker"
       */
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Decrement Hour"
       */
-    var decrementHour: js.UndefOr[String] = js.native
+    var decrementHour: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Decrement Minute"
       */
-    var decrementMinute: js.UndefOr[String] = js.native
+    var decrementMinute: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Decrement Second"
       */
-    var decrementSecond: js.UndefOr[String] = js.native
+    var decrementSecond: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Increment Hour"
       */
-    var incrementHour: js.UndefOr[String] = js.native
+    var incrementHour: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Increment Minute"
       */
-    var incrementMinute: js.UndefOr[String] = js.native
+    var incrementMinute: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Increment Second"
       */
-    var incrementSecond: js.UndefOr[String] = js.native
+    var incrementSecond: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Next Century"
       */
-    var nextCentury: js.UndefOr[String] = js.native
+    var nextCentury: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Next Decade"
       */
-    var nextDecade: js.UndefOr[String] = js.native
+    var nextDecade: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Next Month"
       */
-    var nextMonth: js.UndefOr[String] = js.native
+    var nextMonth: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Next Year"
       */
-    var nextYear: js.UndefOr[String] = js.native
+    var nextYear: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Pick Hour"
       */
-    var pickHour: js.UndefOr[String] = js.native
+    var pickHour: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Pick Minute"
       */
-    var pickMinute: js.UndefOr[String] = js.native
+    var pickMinute: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Pick Second"
       */
-    var pickSecond: js.UndefOr[String] = js.native
+    var pickSecond: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Previous Century"
       */
-    var prevCentury: js.UndefOr[String] = js.native
+    var prevCentury: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Previous Decade"
       */
-    var prevDecade: js.UndefOr[String] = js.native
+    var prevDecade: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Previous Month"
       */
-    var prevMonth: js.UndefOr[String] = js.native
+    var prevMonth: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Previous Year"
       */
-    var prevYear: js.UndefOr[String] = js.native
+    var prevYear: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Select Decade"
       */
-    var selectDecade: js.UndefOr[String] = js.native
+    var selectDecade: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Select Month"
       */
-    var selectMonth: js.UndefOr[String] = js.native
+    var selectMonth: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Select Time"
       */
-    var selectTime: js.UndefOr[String] = js.native
+    var selectTime: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Select Year"
       */
-    var selectYear: js.UndefOr[String] = js.native
+    var selectYear: js.UndefOr[String] = js.undefined
     
     /**
       * Default: "Go to today"
       */
-    var today: js.UndefOr[String] = js.native
+    var today: js.UndefOr[String] = js.undefined
     
     /**
       * Default:  "Toggle Period"
       */
-    var togglePeriod: js.UndefOr[String] = js.native
+    var togglePeriod: js.UndefOr[String] = js.undefined
   }
   object Tooltips {
     
@@ -1889,7 +1892,9 @@ object mod {
   }
   
   @js.native
-  trait UpdateEventObject extends JQueryEventObject {
+  trait UpdateEventObject
+    extends StObject
+       with JQueryEventObject {
     
     /**
       * Change type as a momentjs format token. string e.g. yyyy on year change
@@ -1950,12 +1955,11 @@ object mod {
     def years: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.years = "years".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.years]
   }
   
-  @js.native
   trait WidgetPositioning extends StObject {
     
-    var horizontal: js.UndefOr[auto | left | right] = js.native
+    var horizontal: js.UndefOr[auto | left | right] = js.undefined
     
-    var vertical: js.UndefOr[auto | top | bottom] = js.native
+    var vertical: js.UndefOr[auto | top | bottom] = js.undefined
   }
   object WidgetPositioning {
     
@@ -1996,84 +2000,96 @@ object mod {
       @JSName("off")
       def off_dpchange(events: dpDotchange): JQuery = js.native
       @JSName("off")
-      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEventObject, _]): JQuery = js.native
-      @JSName("off")
-      def off_dpchange(
-        events: dpDotchange,
-        selector: js.UndefOr[scala.Nothing],
-        handler: js.Function1[/* eventobject */ ChangeEventObject, _]
-      ): JQuery = js.native
+      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]): JQuery = js.native
       @JSName("off")
       def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
       @JSName("off")
       def off_dpchange(
         events: dpDotchange,
         selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, _]
+        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
+      ): JQuery = js.native
+      @JSName("off")
+      def off_dpchange(
+        events: dpDotchange,
+        selector: Unit,
+        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
       ): JQuery = js.native
       @JSName("off")
       def off_dperror(events: dpDoterror): JQuery = js.native
       @JSName("off")
-      def off_dperror(events: dpDoterror, handler: js.Function1[/* eventobject */ ErrorEventObject, _]): JQuery = js.native
-      @JSName("off")
-      def off_dperror(
-        events: dpDoterror,
-        selector: js.UndefOr[scala.Nothing],
-        handler: js.Function1[/* eventobject */ ErrorEventObject, _]
-      ): JQuery = js.native
+      def off_dperror(events: dpDoterror, handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]): JQuery = js.native
       @JSName("off")
       def off_dperror(events: dpDoterror, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dperror(events: dpDoterror, selector: String, handler: js.Function1[/* eventobject */ ErrorEventObject, _]): JQuery = js.native
+      def off_dperror(
+        events: dpDoterror,
+        selector: String,
+        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+      ): JQuery = js.native
+      @JSName("off")
+      def off_dperror(
+        events: dpDoterror,
+        selector: Unit,
+        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("off")
       def off_dphide(events: dpDothide): JQuery = js.native
       @JSName("off")
-      def off_dphide(events: dpDothide, handler: js.Function1[/* eventobject */ HideEventObject, _]): JQuery = js.native
-      @JSName("off")
-      def off_dphide(
-        events: dpDothide,
-        selector: js.UndefOr[scala.Nothing],
-        handler: js.Function1[/* eventobject */ HideEventObject, _]
-      ): JQuery = js.native
+      def off_dphide(events: dpDothide, handler: js.Function1[/* eventobject */ HideEventObject, js.Any]): JQuery = js.native
       @JSName("off")
       def off_dphide(events: dpDothide, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dphide(events: dpDothide, selector: String, handler: js.Function1[/* eventobject */ HideEventObject, _]): JQuery = js.native
+      def off_dphide(
+        events: dpDothide,
+        selector: String,
+        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
+      ): JQuery = js.native
+      @JSName("off")
+      def off_dphide(
+        events: dpDothide,
+        selector: Unit,
+        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("off")
       def off_dpshow(events: dpDotshow): JQuery = js.native
       @JSName("off")
-      def off_dpshow(events: dpDotshow, handler: js.Function1[/* eventobject */ JQueryEventObject, _]): JQuery = js.native
-      @JSName("off")
-      def off_dpshow(
-        events: dpDotshow,
-        selector: js.UndefOr[scala.Nothing],
-        handler: js.Function1[/* eventobject */ JQueryEventObject, _]
-      ): JQuery = js.native
+      def off_dpshow(events: dpDotshow, handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]): JQuery = js.native
       @JSName("off")
       def off_dpshow(events: dpDotshow, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dpshow(events: dpDotshow, selector: String, handler: js.Function1[/* eventobject */ JQueryEventObject, _]): JQuery = js.native
+      def off_dpshow(
+        events: dpDotshow,
+        selector: String,
+        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+      ): JQuery = js.native
+      @JSName("off")
+      def off_dpshow(
+        events: dpDotshow,
+        selector: Unit,
+        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate): JQuery = js.native
       @JSName("off")
-      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEventObject, _]): JQuery = js.native
-      @JSName("off")
-      def off_dpupdate(
-        events: dpDotupdate,
-        selector: js.UndefOr[scala.Nothing],
-        handler: js.Function1[/* eventobject */ UpdateEventObject, _]
-      ): JQuery = js.native
+      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
       @JSName("off")
       def off_dpupdate(
         events: dpDotupdate,
         selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, _]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
+      ): JQuery = js.native
+      @JSName("off")
+      def off_dpupdate(
+        events: dpDotupdate,
+        selector: Unit,
+        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
       ): JQuery = js.native
       
       @JSName("on")
-      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEventObject, _]): JQuery = js.native
+      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEventObject, js.Any]): JQuery = js.native
       @JSName("on")
       def on_dpchange(events: dpDotchange, selector: String, data: js.Any): JQuery = js.native
       @JSName("on")
@@ -2081,16 +2097,16 @@ object mod {
         events: dpDotchange,
         selector: String,
         data: js.Any,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, _]
+        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
       def on_dpchange(
         events: dpDotchange,
         selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, _]
+        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dperror(events: dpDoterror, handler: js.Function1[/* eventObject */ ErrorEventObject, _]): JQuery = js.native
+      def on_dperror(events: dpDoterror, handler: js.Function1[/* eventObject */ ErrorEventObject, js.Any]): JQuery = js.native
       @JSName("on")
       def on_dperror(events: dpDoterror, selector: String, data: js.Any): JQuery = js.native
       @JSName("on")
@@ -2098,12 +2114,16 @@ object mod {
         events: dpDoterror,
         selector: String,
         data: js.Any,
-        handler: js.Function1[/* eventobject */ ErrorEventObject, _]
+        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dperror(events: dpDoterror, selector: String, handler: js.Function1[/* eventobject */ ErrorEventObject, _]): JQuery = js.native
+      def on_dperror(
+        events: dpDoterror,
+        selector: String,
+        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("on")
-      def on_dphide(events: dpDothide, handler: js.Function1[/* eventObject */ HideEventObject, _]): JQuery = js.native
+      def on_dphide(events: dpDothide, handler: js.Function1[/* eventObject */ HideEventObject, js.Any]): JQuery = js.native
       @JSName("on")
       def on_dphide(events: dpDothide, selector: String, data: js.Any): JQuery = js.native
       @JSName("on")
@@ -2111,12 +2131,16 @@ object mod {
         events: dpDothide,
         selector: String,
         data: js.Any,
-        handler: js.Function1[/* eventobject */ HideEventObject, _]
+        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dphide(events: dpDothide, selector: String, handler: js.Function1[/* eventobject */ HideEventObject, _]): JQuery = js.native
+      def on_dphide(
+        events: dpDothide,
+        selector: String,
+        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("on")
-      def on_dpshow(events: dpDotshow, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+      def on_dpshow(events: dpDotshow, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
       @JSName("on")
       def on_dpshow(events: dpDotshow, selector: String, data: js.Any): JQuery = js.native
       @JSName("on")
@@ -2124,12 +2148,16 @@ object mod {
         events: dpDotshow,
         selector: String,
         data: js.Any,
-        handler: js.Function1[/* eventobject */ JQueryEventObject, _]
+        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dpshow(events: dpDotshow, selector: String, handler: js.Function1[/* eventobject */ JQueryEventObject, _]): JQuery = js.native
+      def on_dpshow(
+        events: dpDotshow,
+        selector: String,
+        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+      ): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEventObject, _]): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEventObject, js.Any]): JQuery = js.native
       @JSName("on")
       def on_dpupdate(events: dpDotupdate, selector: String, data: js.Any): JQuery = js.native
       @JSName("on")
@@ -2137,13 +2165,13 @@ object mod {
         events: dpDotupdate,
         selector: String,
         data: js.Any,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, _]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
       ): JQuery = js.native
       @JSName("on")
       def on_dpupdate(
         events: dpDotupdate,
         selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, _]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
       ): JQuery = js.native
     }
   }

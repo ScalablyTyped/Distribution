@@ -10,143 +10,105 @@ import typings.std.Window
 import typings.testingLibraryUserEvent.anon.InitialSelectionEnd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("@testing-library/user-event", "default.clear")
+    @JSImport("@testing-library/user-event", JSImport.Default)
     @js.native
-    def clear(element: TargetElement): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@testing-library/user-event", "default.click")
-    @js.native
-    def click(element: TargetElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.click")
-    @js.native
-    def click(element: TargetElement, init: js.UndefOr[scala.Nothing], options: IClickOptions): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.click")
-    @js.native
-    def click(element: TargetElement, init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.click")
-    @js.native
-    def click(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = js.native
+    @scala.inline
+    def clear(element: TargetElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: TargetElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: TargetElement, init: js.UndefOr[scala.Nothing], options: IClickOptions): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: TargetElement, init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = js.native
+    @scala.inline
+    def click(element: TargetElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def click(element: TargetElement, init: Unit, options: IClickOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def click(element: TargetElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def click(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: String): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: String, init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: js.Array[HTMLElement | String]): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: js.Array[HTMLElement | String], init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: HTMLElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.deselectOptions")
-    @js.native
-    def deselectOptions(element: TargetElement, values: HTMLElement, init: MouseEventInit): Unit = js.native
+    @scala.inline
+    def dblClick(element: TargetElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def dblClick(element: TargetElement, init: Unit, options: IClickOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def dblClick(element: TargetElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def dblClick(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.hover")
-    @js.native
-    def hover(element: TargetElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.hover")
-    @js.native
-    def hover(element: TargetElement, init: MouseEventInit): Unit = js.native
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: String, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: js.Array[HTMLElement | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: js.Array[HTMLElement | String], init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deselectOptions(element: TargetElement, values: HTMLElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deselectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.paste")
-    @js.native
-    def paste(element: TargetElement, text: String): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.paste")
-    @js.native
-    def paste(
-      element: TargetElement,
-      text: String,
-      init: js.UndefOr[scala.Nothing],
-      pasteOptions: InitialSelectionEnd
-    ): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.paste")
-    @js.native
-    def paste(element: TargetElement, text: String, init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.paste")
-    @js.native
-    def paste(element: TargetElement, text: String, init: MouseEventInit, pasteOptions: InitialSelectionEnd): Unit = js.native
+    @scala.inline
+    def hover(element: TargetElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def hover(element: TargetElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hover")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: String): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: String, init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: js.Array[HTMLElement | String]): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: js.Array[HTMLElement | String], init: MouseEventInit): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: HTMLElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: TargetElement, values: HTMLElement, init: MouseEventInit): Unit = js.native
+    @scala.inline
+    def paste(element: TargetElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def paste(element: TargetElement, text: String, init: Unit, pasteOptions: InitialSelectionEnd): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], init.asInstanceOf[js.Any], pasteOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def paste(element: TargetElement, text: String, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def paste(element: TargetElement, text: String, init: MouseEventInit, pasteOptions: InitialSelectionEnd): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], init.asInstanceOf[js.Any], pasteOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.tab")
-    @js.native
-    def tab(): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.tab")
-    @js.native
-    def tab(userOpts: ITabUserOptions): Unit = js.native
+    @scala.inline
+    def selectOptions(element: TargetElement, values: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: TargetElement, values: String, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: TargetElement, values: js.Array[HTMLElement | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: TargetElement, values: js.Array[HTMLElement | String], init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: TargetElement, values: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: TargetElement, values: HTMLElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.unhover")
-    @js.native
-    def unhover(element: TargetElement): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.unhover")
-    @js.native
-    def unhover(element: TargetElement, init: MouseEventInit): Unit = js.native
+    @scala.inline
+    def tab(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")().asInstanceOf[Unit]
+    @scala.inline
+    def tab(userOpts: ITabUserOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")(userOpts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@testing-library/user-event", "default.upload")
-    @js.native
-    def upload(element: TargetElement, files: FilesArgument): Unit = js.native
-    @JSImport("@testing-library/user-event", "default.upload")
-    @js.native
-    def upload(element: TargetElement, files: FilesArgument, init: UploadInitArgument): Unit = js.native
+    @scala.inline
+    def `type`[T /* <: ITypeOpts */](element: TargetElement, text: String): Unit | js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[Unit]]
+    @scala.inline
+    def `type`[T /* <: ITypeOpts */](element: TargetElement, text: String, userOpts: T): Unit | js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], userOpts.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[Unit]]
     
-    @JSImport("@testing-library/user-event", "default.type")
-    @js.native
-    def `type`[T /* <: ITypeOpts */](element: TargetElement, text: String): Unit | js.Promise[Unit] = js.native
-    @JSImport("@testing-library/user-event", "default.type")
-    @js.native
-    def `type`[T /* <: ITypeOpts */](element: TargetElement, text: String, userOpts: T): Unit | js.Promise[Unit] = js.native
+    @scala.inline
+    def unhover(element: TargetElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unhover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def unhover(element: TargetElement, init: MouseEventInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhover")(element.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def upload(element: TargetElement, files: FilesArgument): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(element.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def upload(element: TargetElement, files: FilesArgument, init: UploadInitArgument): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(element.asInstanceOf[js.Any], files.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   type FilesArgument = File | js.Array[File]
   
-  @js.native
   trait IClickOptions extends StObject {
     
-    var clickCount: js.UndefOr[Double] = js.native
+    var clickCount: js.UndefOr[Double] = js.undefined
     
-    var skipHover: js.UndefOr[Boolean] = js.native
+    var skipHover: js.UndefOr[Boolean] = js.undefined
   }
   object IClickOptions {
     
@@ -173,12 +135,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ITabUserOptions extends StObject {
     
-    var focusTrap: js.UndefOr[Document | Element] = js.native
+    var focusTrap: js.UndefOr[Document | Element] = js.undefined
     
-    var shift: js.UndefOr[Boolean] = js.native
+    var shift: js.UndefOr[Boolean] = js.undefined
   }
   object ITabUserOptions {
     
@@ -205,18 +166,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ITypeOpts extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var initialSelectionEnd: js.UndefOr[Double] = js.native
+    var initialSelectionEnd: js.UndefOr[Double] = js.undefined
     
-    var initialSelectionStart: js.UndefOr[Double] = js.native
+    var initialSelectionStart: js.UndefOr[Double] = js.undefined
     
-    var skipAutoClose: js.UndefOr[Boolean] = js.native
+    var skipAutoClose: js.UndefOr[Boolean] = js.undefined
     
-    var skipClick: js.UndefOr[Boolean] = js.native
+    var skipClick: js.UndefOr[Boolean] = js.undefined
   }
   object ITypeOpts {
     
@@ -263,12 +223,11 @@ object mod {
   
   type TargetElement = Element | Window
   
-  @js.native
   trait UploadInitArgument extends StObject {
     
-    var changeInit: js.UndefOr[Event] = js.native
+    var changeInit: js.UndefOr[Event] = js.undefined
     
-    var clickInit: js.UndefOr[MouseEventInit] = js.native
+    var clickInit: js.UndefOr[MouseEventInit] = js.undefined
   }
   object UploadInitArgument {
     

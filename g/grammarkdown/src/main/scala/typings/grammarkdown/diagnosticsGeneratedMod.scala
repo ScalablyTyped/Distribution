@@ -3,7 +3,6 @@ package typings.grammarkdown
 import typings.grammarkdown.diagnosticsMod.Diagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagnosticsGeneratedMod {
@@ -13,6 +12,14 @@ object diagnosticsGeneratedMod {
     @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics._0_expected")
+    @js.native
+    val `0Expected`: Diagnostic = js.native
+    
+    @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics._0_or_1_")
+    @js.native
+    val `0Or1`: Diagnostic = js.native
     
     @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics.Argument_0_cannot_be_specified_multiple_times")
     @js.native
@@ -139,13 +146,5 @@ object diagnosticsGeneratedMod {
     
     @scala.inline
     def UnterminatedStringLiteral_=(x: Diagnostic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_string_literal")(x.asInstanceOf[js.Any])
-    
-    @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics._0_expected")
-    @js.native
-    val `0Expected`: Diagnostic = js.native
-    
-    @JSImport("grammarkdown/dist/diagnostics.generated", "Diagnostics._0_or_1_")
-    @js.native
-    val `0Or1`: Diagnostic = js.native
   }
 }

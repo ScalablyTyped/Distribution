@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XrangePointPartialFillOptionsObject extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait XrangePointPartialFillOptionsObject extends StObject {
     * filled. Values can be 0-1 and are converted to percentages in the default
     * data label formatter.
     */
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The fill color to be used for partial
     * fills. Defaults to a darker shade of the point color.
     */
-  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
 }
 object XrangePointPartialFillOptionsObject {
   

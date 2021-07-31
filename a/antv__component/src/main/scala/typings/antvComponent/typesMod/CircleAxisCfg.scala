@@ -4,35 +4,35 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleAxisCfg extends AxisBaseCfg {
+trait CircleAxisCfg
+  extends StObject
+     with AxisBaseCfg {
   
   /**
     * 中心点, x, y
     * @type {Point}
     */
-  var center: Point = js.native
+  var center: Point
   
   /**
     * 结束弧度
     * @type {number}
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * 半径
     * @type {number}
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * 开始弧度
     * @type {number}
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object CircleAxisCfg {
   

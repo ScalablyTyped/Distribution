@@ -2,32 +2,30 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined} */
-@js.native
 trait PickDateTimeFormatOptions extends StObject {
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var era: js.UndefOr[String] = js.native
+  var era: js.UndefOr[String] = js.undefined
   
-  var hour: js.UndefOr[String] = js.native
+  var hour: js.UndefOr[String] = js.undefined
   
-  var hour12: js.UndefOr[Boolean] = js.native
+  var hour12: js.UndefOr[Boolean] = js.undefined
   
-  var minute: js.UndefOr[String] = js.native
+  var minute: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var second: js.UndefOr[String] = js.native
+  var second: js.UndefOr[String] = js.undefined
   
-  var timeZoneName: js.UndefOr[String] = js.native
+  var timeZoneName: js.UndefOr[String] = js.undefined
   
-  var weekday: js.UndefOr[String] = js.native
+  var weekday: js.UndefOr[String] = js.undefined
   
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object PickDateTimeFormatOptions {
   

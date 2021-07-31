@@ -24,7 +24,6 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bilinear
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.nearest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendMod {
@@ -64,7 +63,8 @@ object backendMod {
   @JSImport("@tensorflow/tfjs-core/dist/backends/backend", "KernelBackend")
   @js.native
   class KernelBackend ()
-    extends TensorStorage
+    extends StObject
+       with TensorStorage
        with Backend
        with BackendTimer {
     
@@ -188,6 +188,9 @@ object backendMod {
     
     def dispose(): Unit = js.native
     
+    /* CompleteClass */
+    override def disposeData(dataId: DataId): Unit = js.native
+    
     def elu[T /* <: Tensor[Rank] */](x: T): T = js.native
     
     def eluDer[T /* <: Tensor[Rank] */](dy: T, y: T): T = js.native
@@ -287,11 +290,17 @@ object backendMod {
     
     def maximum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     
+    /* CompleteClass */
+    override def memory(): Unreliable = js.native
+    
     def min(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
     
     def minimum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     
     def mod(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+    
+    /* CompleteClass */
+    override def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit = js.native
     
     def multinomial(logits: Tensor2D, normalized: Boolean, numSamples: Double, seed: Double): Tensor2D = js.native
     
@@ -310,6 +319,10 @@ object backendMod {
     
     def notEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     
+    /** Returns number of data ids currently in the storage. */
+    /* CompleteClass */
+    override def numDataIds(): Double = js.native
+    
     def oneHot(indices: Tensor1D, depth: Double, onValue: Double, offValue: Double): Tensor2D = js.native
     
     def onesLike[R /* <: Rank */](x: Tensor[R]): Tensor[R] = js.native
@@ -321,6 +334,12 @@ object backendMod {
     def prelu[T /* <: Tensor[Rank] */](x: T, a: T): T = js.native
     
     def prod(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
+    
+    /* CompleteClass */
+    override def read(dataId: DataId): js.Promise[BackendValues] = js.native
+    
+    /* CompleteClass */
+    override def readSync(dataId: DataId): BackendValues = js.native
     
     def real[T /* <: Tensor[Rank] */](input: T): T = js.native
     
@@ -406,6 +425,9 @@ object backendMod {
     
     def tile[T /* <: Tensor[Rank] */](x: T, reps: js.Array[Double]): T = js.native
     
+    /* CompleteClass */
+    override def time(f: js.Function0[Unit]): js.Promise[BackendTimingInfo] = js.native
+    
     def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): js.Tuple2[T, T] = js.native
     
     def transpose[T /* <: Tensor[Rank] */](x: T, perm: js.Array[Double]): T = js.native
@@ -416,13 +438,15 @@ object backendMod {
     
     def where(condition: Tensor[Rank]): Tensor2D = js.native
     
+    /* CompleteClass */
+    override def write(values: BackendValues, shape: js.Array[Double], dtype: DataType): DataId = js.native
+    
     def zerosLike[R /* <: Rank */](x: Tensor[R]): Tensor[R] = js.native
   }
   
-  @js.native
   trait BackendTimer extends StObject {
     
-    def time(f: js.Function0[Unit]): js.Promise[BackendTimingInfo] = js.native
+    def time(f: js.Function0[Unit]): js.Promise[BackendTimingInfo]
   }
   object BackendTimer {
     
@@ -440,12 +464,11 @@ object backendMod {
     }
   }
   
-  @js.native
   trait BackendTimingInfo extends StObject {
     
-    var getExtraProfileInfo: js.UndefOr[js.Function0[String]] = js.native
+    var getExtraProfileInfo: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var kernelMs: Double | Error = js.native
+    var kernelMs: Double | Error
   }
   object BackendTimingInfo {
     
@@ -469,7 +492,6 @@ object backendMod {
     }
   }
   
-  @js.native
   trait DataMover extends StObject {
     
     /**
@@ -477,7 +499,7 @@ object backendMod {
       * Upon calling this method, the mover will fetch the tensor from another
       * backend and register it with the current active backend.
       */
-    def moveData(backend: KernelBackend, dataId: DataId): Unit = js.native
+    def moveData(backend: KernelBackend, dataId: DataId): Unit
   }
   object DataMover {
     
@@ -495,23 +517,22 @@ object backendMod {
     }
   }
   
-  @js.native
   trait TensorStorage extends StObject {
     
-    def disposeData(dataId: DataId): Unit = js.native
+    def disposeData(dataId: DataId): Unit
     
-    def memory(): Unreliable = js.native
+    def memory(): Unreliable
     
-    def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit = js.native
+    def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit
     
     /** Returns number of data ids currently in the storage. */
-    def numDataIds(): Double = js.native
+    def numDataIds(): Double
     
-    def read(dataId: DataId): js.Promise[BackendValues] = js.native
+    def read(dataId: DataId): js.Promise[BackendValues]
     
-    def readSync(dataId: DataId): BackendValues = js.native
+    def readSync(dataId: DataId): BackendValues
     
-    def write(values: BackendValues, shape: js.Array[Double], dtype: DataType): DataId = js.native
+    def write(values: BackendValues, shape: js.Array[Double], dtype: DataType): DataId
   }
   object TensorStorage {
     

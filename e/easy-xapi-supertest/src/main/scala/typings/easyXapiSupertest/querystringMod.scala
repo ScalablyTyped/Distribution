@@ -3,54 +3,43 @@ package typings.easyXapiSupertest
 import typings.easyXapiSupertest.anon.MaxKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object querystringMod {
   
-  @JSImport("querystring", "escape")
+  @JSImport("querystring", JSImport.Namespace)
   @js.native
-  def escape(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: js.UndefOr[scala.Nothing], eq: js.UndefOr[scala.Nothing], options: MaxKeys): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: js.UndefOr[scala.Nothing], eq: String): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: js.UndefOr[scala.Nothing], eq: String, options: MaxKeys): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: String): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: String, eq: js.UndefOr[scala.Nothing], options: MaxKeys): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: String, eq: String): js.Any = js.native
-  @JSImport("querystring", "parse")
-  @js.native
-  def parse(str: String, sep: String, eq: String, options: MaxKeys): js.Any = js.native
+  @scala.inline
+  def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("querystring", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
-  @JSImport("querystring", "stringify")
-  @js.native
-  def stringify(obj: js.Any, sep: js.UndefOr[scala.Nothing], eq: String): String = js.native
-  @JSImport("querystring", "stringify")
-  @js.native
-  def stringify(obj: js.Any, sep: String): String = js.native
-  @JSImport("querystring", "stringify")
-  @js.native
-  def stringify(obj: js.Any, sep: String, eq: String): String = js.native
+  @scala.inline
+  def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: String, eq: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: String, eq: String, options: MaxKeys): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: String, eq: Unit, options: MaxKeys): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: Unit, eq: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: Unit, eq: String, options: MaxKeys): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String, sep: Unit, eq: Unit, options: MaxKeys): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("querystring", "unescape")
-  @js.native
-  def unescape(str: String): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, sep: String, eq: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, sep: Unit, eq: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], sep.asInstanceOf[js.Any], eq.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

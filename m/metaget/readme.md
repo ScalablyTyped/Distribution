@@ -12,7 +12,7 @@ A Node.js module to fetch HTML meta tags (including Open Graph) from a remote UR
 | Keywords           | metatags, metadata, fetch, meta, remote, meta, tags, html, parse, opengraph, open graph |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 5469 |
+| # downloads        | 8790 |
 | # stars            | 2 |
 
 ## Links

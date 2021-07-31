@@ -2,7 +2,6 @@ package typings.previewEmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,19 +12,20 @@ object mod {
     * The function `previewEmail` returns a `Promise` which resolves with a URL.
     * We automatically open the browser to this URL unless you specify options.open as false
     */
-  @JSImport("preview-email", JSImport.Namespace)
-  @js.native
-  def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = js.native
-  @JSImport("preview-email", JSImport.Namespace)
-  @js.native
-  def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = js.native
+  @scala.inline
+  def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  @JSImport("preview-email", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait OpenOptions extends StObject {
     
     /** @default false */
     @JSName("wait")
-    var wait_FOpenOptions: js.UndefOr[Boolean] = js.native
+    var wait_FOpenOptions: js.UndefOr[Boolean] = js.undefined
   }
   object OpenOptions {
     
@@ -46,18 +46,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       *  a path to a directory for saving the generated email previews (defaults to `os.tmpdir()`)
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * a unique ID for the file name created for the preview in dir (defaults to `uuid.v4()` from `uuid`)
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * an options object that is passed to open (defaults to `{ wait: false }`).
@@ -65,20 +64,20 @@ object mod {
       * and if set to true then it will default to `{ wait: false }`
       * @default { wait: false }
       */
-    var open: js.UndefOr[OpenOptions | Boolean] = js.native
+    var open: js.UndefOr[OpenOptions | Boolean] = js.undefined
     
     /**
       *  file path to a pug template file (defaults to preview-email's `template.pug` by default)
       * - this is where you can pass a custom template for rendering email previews, e.g. your own stylesheet
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * a function to build preview url from file path
       * - this is where you can customize the opened path to handle WSL to Windows transformation or build a http url if dir is served.
       * @default (path) => 'file://[file path]'
       */
-    var urlTransform: js.UndefOr[UrlTransform] = js.native
+    var urlTransform: js.UndefOr[UrlTransform] = js.undefined
   }
   object Options {
     

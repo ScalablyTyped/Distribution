@@ -9,7 +9,6 @@ import typings.pulumiAws.logSubscriptionFilterMod.LogSubscriptionFilter
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logGroupMixinsMod {
@@ -28,7 +27,7 @@ object logGroupMixinsMod {
       name: String,
       logGroup: LogGroup,
       handler: LogGroupEventHandler,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       opts: ComponentResourceOptions
     ) = this()
     def this(
@@ -44,20 +43,19 @@ object logGroupMixinsMod {
     val logSubscriptionFilter: LogSubscriptionFilter = js.native
   }
   
-  @js.native
   trait DecodedLogGroupEvent extends StObject {
     
-    var logEvents: js.Array[LogGroupEventRecord] = js.native
+    var logEvents: js.Array[LogGroupEventRecord]
     
-    var logGroup: String = js.native
+    var logGroup: String
     
-    var logStream: String = js.native
+    var logStream: String
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var owner: String = js.native
+    var owner: String
     
-    var subscriptionFilters: js.Array[String] = js.native
+    var subscriptionFilters: js.Array[String]
   }
   object DecodedLogGroupEvent {
     
@@ -103,10 +101,9 @@ object logGroupMixinsMod {
     }
   }
   
-  @js.native
   trait LogGroupEvent extends StObject {
     
-    var awslogs: Data = js.native
+    var awslogs: Data
   }
   object LogGroupEvent {
     
@@ -126,14 +123,13 @@ object logGroupMixinsMod {
   
   type LogGroupEventHandler = EventHandler[LogGroupEvent, Unit]
   
-  @js.native
   trait LogGroupEventRecord extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object LogGroupEventRecord {
     
@@ -157,14 +153,13 @@ object logGroupMixinsMod {
     }
   }
   
-  @js.native
   trait LogGroupEventSubscriptionArgs extends StObject {
     
     /**
       * A valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events. If
       * not provided, the empty-string pattern will be used.
       */
-    var filterPattern: js.UndefOr[String] = js.native
+    var filterPattern: js.UndefOr[String] = js.undefined
   }
   object LogGroupEventSubscriptionArgs {
     
@@ -203,7 +198,7 @@ object logGroupMixinsMod {
       def onDecodedEvent(
         name: String,
         callback: Callback[DecodedLogGroupEvent, Unit],
-        args: js.UndefOr[scala.Nothing],
+        args: Unit,
         opts: ComponentResourceOptions
       ): LogGroupEventSubscription = js.native
       def onDecodedEvent(name: String, callback: Callback[DecodedLogGroupEvent, Unit], args: LogGroupEventSubscriptionArgs): LogGroupEventSubscription = js.native
@@ -221,12 +216,7 @@ object logGroupMixinsMod {
         * The events will be produced in raw (gzipped + base64 encoded) form.
         */
       def onEvent(name: String, handler: LogGroupEventHandler): LogGroupEventSubscription = js.native
-      def onEvent(
-        name: String,
-        handler: LogGroupEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): LogGroupEventSubscription = js.native
+      def onEvent(name: String, handler: LogGroupEventHandler, args: Unit, opts: ComponentResourceOptions): LogGroupEventSubscription = js.native
       def onEvent(name: String, handler: LogGroupEventHandler, args: LogGroupEventSubscriptionArgs): LogGroupEventSubscription = js.native
       def onEvent(
         name: String,

@@ -4,9 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import typings.cashDom.anon.Left
 import typings.cashDom.cashDomBooleans.`true`
+import typings.std.AddEventListenerOptions
 import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import typings.std.Node
@@ -15,23 +18,25 @@ import typings.std.Record
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("cash-dom", JSImport.Default)
   @js.native
-  val default: (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) with CashStatic = js.native
+  val default: (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic = js.native
   
   @JSImport("cash-dom", "Cash")
   @js.native
   class Cash ()
-    extends /* index */ NumberDictionary[js.UndefOr[EleLoose]]
+    extends StObject
+       with /* index */ NumberDictionary[js.UndefOr[EleLoose]]
        with _Selector {
     def this(selector: Selector) = this()
-    def this(selector: js.UndefOr[Selector], context: Cash) = this()
-    def this(selector: js.UndefOr[Selector], context: Context) = this()
+    def this(selector: Unit, context: Cash) = this()
+    def this(selector: Unit, context: Context) = this()
+    def this(selector: Selector, context: Cash) = this()
+    def this(selector: Selector, context: Context) = this()
     
     def add(selector: Selector): Cash = js.native
     def add(selector: Selector, context: Context): Cash = js.native
@@ -44,7 +49,7 @@ object mod extends Shortcut {
     
     def appendTo(selector: Selector): this.type = js.native
     
-    def attr(): js.UndefOr[scala.Nothing] = js.native
+    def attr(): Unit = js.native
     def attr(attrs: String): String | Null = js.native
     def attr(attrs: String, value: String): this.type = js.native
     def attr(attrs: Record[String, String]): this.type = js.native
@@ -64,8 +69,8 @@ object mod extends Shortcut {
     def css(prop: String, value: Double): this.type = js.native
     def css(props: Record[String, Double | String]): this.type = js.native
     
-    def data(): js.UndefOr[Record[String, _]] = js.native
-    def data(datas: Record[String, _]): this.type = js.native
+    def data(): js.UndefOr[Record[String, js.Any]] = js.native
+    def data(datas: Record[String, js.Any]): this.type = js.native
     def data(name: String): js.Any = js.native
     def data(name: String, value: js.Any): this.type = js.native
     
@@ -78,7 +83,7 @@ object mod extends Shortcut {
     
     def eq(index: Double): Cash = js.native
     
-    def extend(plugins: Record[_, _]): this.type = js.native
+    def extend(plugins: Record[js.Any, js.Any]): this.type = js.native
     
     def filter(): Cash = js.native
     def filter(comparator: Comparator): Cash = js.native
@@ -108,9 +113,11 @@ object mod extends Shortcut {
     def index(selector: Selector): Double = js.native
     
     def init(): Cash = js.native
-    def init(selector: js.UndefOr[Selector], context: Cash): Cash = js.native
-    def init(selector: js.UndefOr[Selector], context: Context): Cash = js.native
+    def init(selector: Unit, context: Cash): Cash = js.native
+    def init(selector: Unit, context: Context): Cash = js.native
     def init(selector: Selector): Cash = js.native
+    def init(selector: Selector, context: Cash): Cash = js.native
+    def init(selector: Selector, context: Context): Cash = js.native
     
     def innerHeight(): js.UndefOr[Double] = js.native
     
@@ -130,17 +137,21 @@ object mod extends Shortcut {
     def map(callback: MapCallback[EleLoose]): Cash = js.native
     
     def next(): Cash = js.native
-    def next(comparator: js.UndefOr[Comparator], _all: js.UndefOr[scala.Nothing], _until: Comparator): Cash = js.native
-    def next(comparator: js.UndefOr[Comparator], _all: Boolean): Cash = js.native
-    def next(comparator: js.UndefOr[Comparator], _all: Boolean, _until: Comparator): Cash = js.native
+    def next(comparator: Unit, _all: Boolean): Cash = js.native
+    def next(comparator: Unit, _all: Boolean, _until: Comparator): Cash = js.native
+    def next(comparator: Unit, _all: Unit, _until: Comparator): Cash = js.native
     def next(comparator: Comparator): Cash = js.native
+    def next(comparator: Comparator, _all: Boolean): Cash = js.native
+    def next(comparator: Comparator, _all: Boolean, _until: Comparator): Cash = js.native
+    def next(comparator: Comparator, _all: Unit, _until: Comparator): Cash = js.native
     
     def nextAll(): Cash = js.native
     def nextAll(comparator: Comparator): Cash = js.native
     
     def nextUntil(): Cash = js.native
-    def nextUntil(until: js.UndefOr[Comparator], comparator: Comparator): Cash = js.native
+    def nextUntil(until: Unit, comparator: Comparator): Cash = js.native
     def nextUntil(until: Comparator): Cash = js.native
+    def nextUntil(until: Comparator, comparator: Comparator): Cash = js.native
     
     def not(): Cash = js.native
     def not(comparator: Comparator): Cash = js.native
@@ -157,38 +168,32 @@ object mod extends Shortcut {
     
     def on(events: String, callback: EventCallback): this.type = js.native
     def on(events: String, data: js.Any, callback: EventCallback): this.type = js.native
-    def on(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any, callback: EventCallback): this.type = js.native
-    def on(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      callback: EventCallback,
-      _one: Boolean
-    ): this.type = js.native
     def on(events: String, selector: String, callback: EventCallback): this.type = js.native
     def on(events: String, selector: String, data: js.Any, callback: EventCallback): this.type = js.native
     def on(events: String, selector: String, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
     def on(events: String, selector: Null, data: js.Any, callback: EventCallback): this.type = js.native
     def on(events: String, selector: Null, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
+    def on(events: String, selector: Unit, data: js.Any, callback: EventCallback): this.type = js.native
+    def on(events: String, selector: Unit, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
     def on(events: Record[String, EventCallback]): this.type = js.native
     def on(events: Record[String, EventCallback], data: js.Any): this.type = js.native
-    def on(events: Record[String, EventCallback], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
     def on(events: Record[String, EventCallback], selector: String): this.type = js.native
     def on(events: Record[String, EventCallback], selector: String, data: js.Any): this.type = js.native
     def on(events: Record[String, EventCallback], selector: Null, data: js.Any): this.type = js.native
+    def on(events: Record[String, EventCallback], selector: Unit, data: js.Any): this.type = js.native
     
     def one(events: String, callback: EventCallback): this.type = js.native
     def one(events: String, data: js.Any, callback: EventCallback): this.type = js.native
-    def one(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any, callback: EventCallback): this.type = js.native
     def one(events: String, selector: String, callback: EventCallback): this.type = js.native
     def one(events: String, selector: String, data: js.Any, callback: EventCallback): this.type = js.native
     def one(events: String, selector: Null, data: js.Any, callback: EventCallback): this.type = js.native
+    def one(events: String, selector: Unit, data: js.Any, callback: EventCallback): this.type = js.native
     def one(events: Record[String, EventCallback]): this.type = js.native
     def one(events: Record[String, EventCallback], data: js.Any): this.type = js.native
-    def one(events: Record[String, EventCallback], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
     def one(events: Record[String, EventCallback], selector: String): this.type = js.native
     def one(events: Record[String, EventCallback], selector: String, data: js.Any): this.type = js.native
     def one(events: Record[String, EventCallback], selector: Null, data: js.Any): this.type = js.native
+    def one(events: Record[String, EventCallback], selector: Unit, data: js.Any): this.type = js.native
     
     def outerHeight(): Double = js.native
     def outerHeight(includeMargins: Boolean): Double = js.native
@@ -200,12 +205,14 @@ object mod extends Shortcut {
     def parent(comparator: Comparator): Cash = js.native
     
     def parents(): Cash = js.native
-    def parents(comparator: js.UndefOr[Comparator], _until: Comparator): Cash = js.native
+    def parents(comparator: Unit, _until: Comparator): Cash = js.native
     def parents(comparator: Comparator): Cash = js.native
+    def parents(comparator: Comparator, _until: Comparator): Cash = js.native
     
     def parentsUntil(): Cash = js.native
-    def parentsUntil(until: js.UndefOr[Comparator], comparator: Comparator): Cash = js.native
+    def parentsUntil(until: Unit, comparator: Comparator): Cash = js.native
     def parentsUntil(until: Comparator): Cash = js.native
+    def parentsUntil(until: Comparator, comparator: Comparator): Cash = js.native
     
     def position(): js.UndefOr[Left] = js.native
     
@@ -214,21 +221,25 @@ object mod extends Shortcut {
     def prependTo(selector: Selector): this.type = js.native
     
     def prev(): Cash = js.native
-    def prev(comparator: js.UndefOr[Comparator], _all: js.UndefOr[scala.Nothing], _until: Comparator): Cash = js.native
-    def prev(comparator: js.UndefOr[Comparator], _all: Boolean): Cash = js.native
-    def prev(comparator: js.UndefOr[Comparator], _all: Boolean, _until: Comparator): Cash = js.native
+    def prev(comparator: Unit, _all: Boolean): Cash = js.native
+    def prev(comparator: Unit, _all: Boolean, _until: Comparator): Cash = js.native
+    def prev(comparator: Unit, _all: Unit, _until: Comparator): Cash = js.native
     def prev(comparator: Comparator): Cash = js.native
+    def prev(comparator: Comparator, _all: Boolean): Cash = js.native
+    def prev(comparator: Comparator, _all: Boolean, _until: Comparator): Cash = js.native
+    def prev(comparator: Comparator, _all: Unit, _until: Comparator): Cash = js.native
     
     def prevAll(): Cash = js.native
     def prevAll(comparator: Comparator): Cash = js.native
     
     def prevUntil(): Cash = js.native
-    def prevUntil(until: js.UndefOr[Comparator], comparator: Comparator): Cash = js.native
+    def prevUntil(until: Unit, comparator: Comparator): Cash = js.native
     def prevUntil(until: Comparator): Cash = js.native
+    def prevUntil(until: Comparator, comparator: Comparator): Cash = js.native
     
     def prop(prop: String): js.Any = js.native
     def prop(prop: String, value: js.Any): this.type = js.native
-    def prop(props: Record[String, _]): this.type = js.native
+    def prop(props: Record[String, js.Any]): this.type = js.native
     
     def ready(callback: js.Function): this.type = js.native
     
@@ -254,9 +265,9 @@ object mod extends Shortcut {
     def siblings(comparator: Comparator): Cash = js.native
     
     def slice(): Cash = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): Cash = js.native
     def slice(start: Double): Cash = js.native
     def slice(start: Double, end: Double): Cash = js.native
+    def slice(start: Unit, end: Double): Cash = js.native
     
     def splice(start: Double): js.Array[EleLoose] = js.native
     def splice(start: Double, deleteCount: Double): js.Array[EleLoose] = js.native
@@ -303,7 +314,7 @@ object mod extends Shortcut {
     def each[T](obj: PlainObject[T], callback: EachObjectCallback[T]): Unit = js.native
     
     def extend(): js.Any = js.native
-    def extend(target: js.Any): (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) with CashStatic = js.native
+    def extend(target: js.Any): (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic = js.native
     def extend(target: js.Any, sources: js.Any*): js.Any = js.native
     @JSName("extend")
     def extend_true(deep: `true`, target: js.Any, sources: js.Any*): js.Any = js.native
@@ -337,26 +348,43 @@ object mod extends Shortcut {
   
   type Ele = Window | Document | HTMLElement | Element | Node
   
-  type EleLoose = HTMLElement with Element with Node
-  
   @js.native
+  trait EleLoose
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+  }
+  
   trait Event extends StObject {
     
-    var ___cd: js.UndefOr[Boolean] = js.native
+    var ___cd: js.UndefOr[Boolean] = js.undefined
     
-    var ___iblur: js.UndefOr[Boolean] = js.native
+    var ___iblur: js.UndefOr[Boolean] = js.undefined
     
-    var ___ifocus: js.UndefOr[Boolean] = js.native
+    var ___ifocus: js.UndefOr[Boolean] = js.undefined
     
-    var ___ot: js.UndefOr[String] = js.native
+    var ___ot: js.UndefOr[String] = js.undefined
     
-    var ___td: js.UndefOr[Boolean] = js.native
+    var ___td: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var relatedTarget: js.UndefOr[Node | Null] = js.native
+    var relatedTarget: js.UndefOr[Node | Null] = js.undefined
   }
   object Event {
     
@@ -446,15 +474,17 @@ object mod extends Shortcut {
   
   trait _Selector extends StObject
   
-  type _To = (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) with CashStatic
+  type _To = (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic
   
-  trait _falsy extends _Selector
+  trait _falsy
+    extends StObject
+       with _Selector
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) with CashStatic = default
+  override def _to: (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic = default
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.cashDom.cashDomBooleans.`false`
     - typings.cashDom.cashDomNumbers.`0`

@@ -3,25 +3,24 @@ package typings.oauth2Server.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface representing the client and associated data
   */
-@js.native
 trait Client
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var accessTokenLifetime: js.UndefOr[Double] = js.native
+  var accessTokenLifetime: js.UndefOr[Double] = js.undefined
   
-  var grants: String | js.Array[String] = js.native
+  var grants: String | js.Array[String]
   
-  var id: String = js.native
+  var id: String
   
-  var redirectUris: js.UndefOr[String | js.Array[String]] = js.native
+  var redirectUris: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var refreshTokenLifetime: js.UndefOr[Double] = js.native
+  var refreshTokenLifetime: js.UndefOr[Double] = js.undefined
 }
 object Client {
   

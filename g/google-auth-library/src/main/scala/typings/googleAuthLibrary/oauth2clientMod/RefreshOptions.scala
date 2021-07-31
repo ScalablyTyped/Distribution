@@ -2,15 +2,13 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshOptions extends StObject {
   
-  var eagerRefreshThresholdMillis: js.UndefOr[Double] = js.native
+  var eagerRefreshThresholdMillis: js.UndefOr[Double] = js.undefined
   
-  var forceRefreshOnFailure: js.UndefOr[Boolean] = js.native
+  var forceRefreshOnFailure: js.UndefOr[Boolean] = js.undefined
 }
 object RefreshOptions {
   

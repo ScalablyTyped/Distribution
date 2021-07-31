@@ -2,7 +2,6 @@ package typings.easyXHeaders
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mimeMod {
@@ -17,26 +16,21 @@ object mimeMod {
   @scala.inline
   def charsets_=(x: Charsets_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charsets")(x.asInstanceOf[js.Any])
   
-  @JSImport("mime", "define")
-  @js.native
-  def define(mimes: js.Object): Unit = js.native
+  @scala.inline
+  def define(mimes: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mime", "extension")
-  @js.native
-  def extension(mime: String): String = js.native
+  @scala.inline
+  def `extension`(mime: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(mime.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mime", "load")
-  @js.native
-  def load(filepath: String): Unit = js.native
+  @scala.inline
+  def load(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mime", "lookup")
-  @js.native
-  def lookup(path: String): String = js.native
+  @scala.inline
+  def lookup(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Charsets_ extends StObject {
     
-    def lookup(mime: String): String = js.native
+    def lookup(mime: String): String
   }
   object Charsets_ {
     

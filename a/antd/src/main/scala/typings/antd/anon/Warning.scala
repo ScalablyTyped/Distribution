@@ -3,19 +3,17 @@ package typings.antd.anon
 import typings.react.mod.ForwardRefExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Warning extends StObject {
   
-  var error: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var error: ForwardRefExoticComponent[PickAntdIconPropschildren]
   
-  var info: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var info: ForwardRefExoticComponent[PickAntdIconPropschildren]
   
-  var success: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var success: ForwardRefExoticComponent[PickAntdIconPropschildren]
   
-  var warning: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var warning: ForwardRefExoticComponent[PickAntdIconPropschildren]
 }
 object Warning {
   

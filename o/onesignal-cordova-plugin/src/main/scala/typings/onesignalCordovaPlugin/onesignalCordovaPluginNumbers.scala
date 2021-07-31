@@ -9,19 +9,21 @@ import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSNotificationPermi
 import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSNotificationPermissionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onesignalCordovaPluginNumbers {
   
   @js.native
-  sealed trait `-1` extends OSLockScreenVisibility
+  sealed trait `-1`
+    extends StObject
+       with OSLockScreenVisibility
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `0`
-    extends OSActionType
+    extends StObject
+       with OSActionType
        with OSDisplayType
        with OSInFocusDisplayOption
        with OSLockScreenVisibility
@@ -32,7 +34,8 @@ object onesignalCordovaPluginNumbers {
   
   @js.native
   sealed trait `1`
-    extends OSActionType
+    extends StObject
+       with OSActionType
        with OSDisplayType
        with OSInFocusDisplayOption
        with OSLockScreenVisibility
@@ -44,7 +47,8 @@ object onesignalCordovaPluginNumbers {
   
   @js.native
   sealed trait `2`
-    extends OSDisplayType
+    extends StObject
+       with OSDisplayType
        with OSInFocusDisplayOption
        with OSLogLevel
        with OSNotificationPermission
@@ -53,22 +57,30 @@ object onesignalCordovaPluginNumbers {
   def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
-  sealed trait `3` extends OSLogLevel
+  sealed trait `3`
+    extends StObject
+       with OSLogLevel
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `4` extends OSLogLevel
+  sealed trait `4`
+    extends StObject
+       with OSLogLevel
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
-  sealed trait `5` extends OSLogLevel
+  sealed trait `5`
+    extends StObject
+       with OSLogLevel
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
-  sealed trait `6` extends OSLogLevel
+  sealed trait `6`
+    extends StObject
+       with OSLogLevel
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
 }

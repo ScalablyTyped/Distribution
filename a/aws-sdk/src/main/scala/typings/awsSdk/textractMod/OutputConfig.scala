@@ -2,21 +2,19 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputConfig extends StObject {
   
   /**
     * The name of the bucket your output will go to.
     */
-  var S3Bucket: typings.awsSdk.textractMod.S3Bucket = js.native
+  var S3Bucket: typings.awsSdk.textractMod.S3Bucket
   
   /**
     * The prefix of the object key that the output will be saved to. When not enabled, the prefix will be “textract_output".
     */
-  var S3Prefix: js.UndefOr[S3ObjectName] = js.native
+  var S3Prefix: js.UndefOr[S3ObjectName] = js.undefined
 }
 object OutputConfig {
   

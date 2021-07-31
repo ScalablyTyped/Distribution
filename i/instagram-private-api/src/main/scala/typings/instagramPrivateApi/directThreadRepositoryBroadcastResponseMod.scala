@@ -2,23 +2,21 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadRepositoryBroadcastResponseMod {
   
-  @js.native
   trait DirectThreadRepositoryBroadcastResponseMessageMetadata extends StObject {
     
-    var client_context: String = js.native
+    var client_context: String
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var participant_ids: js.Array[String] = js.native
+    var participant_ids: js.Array[String]
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object DirectThreadRepositoryBroadcastResponseMessageMetadata {
     
@@ -57,16 +55,15 @@ object directThreadRepositoryBroadcastResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryBroadcastResponsePayload extends StObject {
     
-    var client_context: String = js.native
+    var client_context: String
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object DirectThreadRepositoryBroadcastResponsePayload {
     
@@ -93,18 +90,17 @@ object directThreadRepositoryBroadcastResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryBroadcastResponseRootObject extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var message_metadata: js.Array[DirectThreadRepositoryBroadcastResponseMessageMetadata] = js.native
+    var message_metadata: js.Array[DirectThreadRepositoryBroadcastResponseMessageMetadata]
     
-    var payload: DirectThreadRepositoryBroadcastResponsePayload = js.native
+    var payload: DirectThreadRepositoryBroadcastResponsePayload
     
-    var status: String = js.native
+    var status: String
     
-    var status_code: String = js.native
+    var status_code: String
   }
   object DirectThreadRepositoryBroadcastResponseRootObject {
     

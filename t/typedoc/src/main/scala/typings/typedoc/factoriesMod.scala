@@ -16,44 +16,37 @@ import typings.typescript.mod.Symbol
 import typings.typescript.mod.TypeParameterDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object factoriesMod {
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createComment")
+  @JSImport("typedoc/dist/lib/converter/factories", JSImport.Namespace)
   @js.native
-  def createComment(node: Node): js.UndefOr[Comment] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createDeclaration")
-  @js.native
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = js.native
-  @JSImport("typedoc/dist/lib/converter/factories", "createDeclaration")
-  @js.native
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = js.native
+  @scala.inline
+  def createComment(node: Node): js.UndefOr[Comment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComment")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Comment]]
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createParameter")
-  @js.native
-  def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = js.native
+  @scala.inline
+  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
+  @scala.inline
+  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createReferenceType")
-  @js.native
-  def createReferenceType(context: Context): js.UndefOr[ReferenceType] = js.native
-  @JSImport("typedoc/dist/lib/converter/factories", "createReferenceType")
-  @js.native
-  def createReferenceType(context: Context, symbol: js.UndefOr[scala.Nothing], includeParent: Boolean): js.UndefOr[ReferenceType] = js.native
-  @JSImport("typedoc/dist/lib/converter/factories", "createReferenceType")
-  @js.native
-  def createReferenceType(context: Context, symbol: Symbol): js.UndefOr[ReferenceType] = js.native
-  @JSImport("typedoc/dist/lib/converter/factories", "createReferenceType")
-  @js.native
-  def createReferenceType(context: Context, symbol: Symbol, includeParent: Boolean): js.UndefOr[ReferenceType] = js.native
+  @scala.inline
+  def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createSignature")
-  @js.native
-  def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = js.native
+  @scala.inline
+  def createReferenceType(context: Context): js.UndefOr[ReferenceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReferenceType]]
+  @scala.inline
+  def createReferenceType(context: Context, symbol: Unit, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  @scala.inline
+  def createReferenceType(context: Context, symbol: Symbol): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  @scala.inline
+  def createReferenceType(context: Context, symbol: Symbol, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
   
-  @JSImport("typedoc/dist/lib/converter/factories", "createTypeParameter")
-  @js.native
-  def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = js.native
+  @scala.inline
+  def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignature")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[SignatureReflection]
+  
+  @scala.inline
+  def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TypeParameterType]]
 }

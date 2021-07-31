@@ -14,7 +14,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.utf16le
 import typings.wechatMiniprogram.wechatMiniprogramStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -603,34 +602,7 @@ trait FileSystemManager extends StObject {
     * - 'utf-8': ;
     * - 'utf8': ;
     * - 'latin1': ; */
-  encoding: js.UndefOr[scala.Nothing],
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
-    /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  length: String
-  ): String | ArrayBuffer = js.native
-  def readFileSync(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: js.UndefOr[scala.Nothing],
+  encoding: Unit,
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -653,11 +625,38 @@ trait FileSystemManager extends StObject {
     * - 'utf-8': ;
     * - 'utf8': ;
     * - 'latin1': ; */
-  encoding: js.UndefOr[scala.Nothing],
+  encoding: Unit,
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
   position: String,
+    /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  length: String
+  ): String | ArrayBuffer = js.native
+  def readFileSync(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: Unit,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -705,7 +704,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_ascii(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: ascii,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -733,31 +756,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_ascii(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: ascii,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -805,7 +804,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_base64(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: base64,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -833,31 +856,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_base64(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: base64,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -905,7 +904,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_binary(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: binary,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -933,31 +956,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_binary(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: binary,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1005,7 +1004,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_hex(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: hex,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1033,31 +1056,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_hex(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: hex,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1105,7 +1104,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_latin1(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: latin1,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1133,31 +1156,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_latin1(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: latin1,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1205,7 +1204,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_ucs2(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: `ucs-2`,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1233,31 +1256,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_ucs2(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: `ucs-2`,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1305,7 +1304,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_ucs2(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: ucs2,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1333,31 +1356,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_ucs2(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: ucs2,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1405,7 +1404,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_utf16le(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: `utf-16le`,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1433,31 +1456,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_utf16le(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: `utf-16le`,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1505,7 +1504,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_utf16le(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: utf16le,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1533,31 +1556,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_utf16le(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: utf16le,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1605,7 +1604,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_utf8(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: `utf-8`,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1633,31 +1656,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_utf8(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: `utf-8`,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1705,7 +1704,31 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: js.UndefOr[scala.Nothing],
+  position: String
+  ): String | ArrayBuffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_utf8(
+    /** 要读取的文件的路径 (本地路径) */
+  filePath: String,
+    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
+    *
+    * 参数 encoding 可选值：
+    * - 'ascii': ;
+    * - 'base64': ;
+    * - 'binary': ;
+    * - 'hex': ;
+    * - 'ucs2': 以小端序读取;
+    * - 'ucs-2': 以小端序读取;
+    * - 'utf16le': 以小端序读取;
+    * - 'utf-16le': 以小端序读取;
+    * - 'utf-8': ;
+    * - 'utf8': ;
+    * - 'latin1': ; */
+  encoding: utf8,
+    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
+    *
+    * 最低基础库： `2.10.0` */
+  position: String,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
@@ -1733,31 +1756,7 @@ trait FileSystemManager extends StObject {
     /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  position: String
-  ): String | ArrayBuffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_utf8(
-    /** 要读取的文件的路径 (本地路径) */
-  filePath: String,
-    /** 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
-    *
-    * 参数 encoding 可选值：
-    * - 'ascii': ;
-    * - 'base64': ;
-    * - 'binary': ;
-    * - 'hex': ;
-    * - 'ucs2': 以小端序读取;
-    * - 'ucs-2': 以小端序读取;
-    * - 'utf16le': 以小端序读取;
-    * - 'utf-16le': 以小端序读取;
-    * - 'utf-8': ;
-    * - 'utf8': ;
-    * - 'latin1': ; */
-  encoding: utf8,
-    /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
-    *
-    * 最低基础库： `2.10.0` */
-  position: String,
+  position: Unit,
     /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */

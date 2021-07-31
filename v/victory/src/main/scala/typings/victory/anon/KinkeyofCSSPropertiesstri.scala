@@ -2,1566 +2,1564 @@ package typings.victory.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof react.react.CSSProperties ]: string | number | (tick : any | undefined): string | number} */
-@js.native
 trait KinkeyofCSSPropertiesstri extends StObject {
   
-  var KhtmlBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var KhtmlUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var KhtmlUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozAppearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozAppearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBackfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBackfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBackgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBackgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBackgroundInlinePolicy: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBackgroundInlinePolicy: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBackgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBackgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBinding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBinding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderBottomColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderBottomColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderLeftColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderLeftColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRadiusBottomleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRadiusBottomleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRadiusBottomright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRadiusBottomright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRadiusTopleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRadiusTopleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRadiusTopright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRadiusTopright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderRightColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderRightColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBorderTopColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBorderTopColors: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozBoxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozBoxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozContextProperties: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozContextProperties: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozFloatEdge: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozFloatEdge: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozFontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozFontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozFontLanguageOverride: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozFontLanguageOverride: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozForceBrokenImageIcon: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozForceBrokenImageIcon: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozImageRegion: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozImageRegion: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozMarginEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozMarginEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozMarginStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozMarginStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOsxFontSmoothing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOsxFontSmoothing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineRadiusBottomleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineRadiusBottomleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineRadiusBottomright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineRadiusBottomright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineRadiusTopleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineRadiusTopleft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineRadiusTopright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineRadiusTopright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozOutlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozOutlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozPaddingEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozPaddingEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozPaddingStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozPaddingStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozPerspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozPerspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozPerspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozPerspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozStackSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozStackSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextAlignLast: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextAlignLast: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextBlink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextBlink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTextSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTextSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozUserFocus: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozUserFocus: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozUserInput: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozUserInput: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozUserModify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozUserModify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozWindowDragging: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozWindowDragging: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var MozWindowShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var MozWindowShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OObjectFit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OObjectFit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OObjectPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OObjectPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTextOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTextOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var OTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var OTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAlignContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAlignContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAlignItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAlignItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAlignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAlignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAnimationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitAppearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitAppearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBackdropFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBackdropFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBackfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBackfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBackgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBackgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBackgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBackgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBackgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBeforeColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBeforeColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBeforeStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBeforeStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBeforeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBeforeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBottomLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBottomLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderBottomRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderBottomRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderImageSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderImageSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderTopLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderTopLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBorderTopRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBorderTopRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxDecorationBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxDecorationBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxReflect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxReflect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitBoxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitBoxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitClipPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitClipPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnSpan: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnSpan: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexBasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexBasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexGrow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexGrow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexShrink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexShrink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFlexWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFlexWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFontKerning: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFontKerning: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFontSmoothing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFontSmoothing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitFontVariantLigatures: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitFontVariantLigatures: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitJustifyContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitJustifyContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitLineClamp: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitLineClamp: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMarginEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMarginEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMarginStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMarginStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMask: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMask: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskAttachment: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskAttachment: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskComposite: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskComposite: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskPositionX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskPositionX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskPositionY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskPositionY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskRepeatX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskRepeatX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskRepeatY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskRepeatY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaskSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaskSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitMaxInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitMaxInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitOverflowScrolling: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitOverflowScrolling: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitPaddingEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitPaddingEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitPaddingStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitPaddingStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitPerspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitPerspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitPerspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitPerspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitPrintColorAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitPrintColorAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitRubyPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitRubyPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitScrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitScrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitScrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitScrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitScrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitScrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitShapeMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitShapeMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTapHighlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTapHighlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextCombine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextCombine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextDecorationSkip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextDecorationSkip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextEmphasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextEmphasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextEmphasisColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextEmphasisColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextEmphasisPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextEmphasisPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextEmphasisStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextEmphasisStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextFillColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextFillColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextStroke: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextStroke: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextStrokeColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextStrokeColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextStrokeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextStrokeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTextUnderlinePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTextUnderlinePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTouchCallout: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTouchCallout: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitUserModify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitUserModify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var WebkitWritingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var WebkitWritingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var alignContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var alignContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var alignItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var alignItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var alignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var alignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var alignTracks: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var alignTracks: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var alignmentBaseline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var alignmentBaseline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var all: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var all: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationFillMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationIterationCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationName: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationPlayState: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var animationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var animationTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var appearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var appearance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var aspectRatio: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var aspectRatio: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var azimuth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var azimuth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backdropFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backdropFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backfaceVisibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var background: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var background: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundAttachment: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundAttachment: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundBlendMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundBlendMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundPositionX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundPositionX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundPositionY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundPositionY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var backgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var backgroundSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var baselineShift: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var baselineShift: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var blockOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var blockOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var blockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var blockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var border: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var border: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockStartWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockStartWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBlockWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBlockWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottomColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottomColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottomLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottomRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottomStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottomStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderBottomWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderCollapse: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderCollapse: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderEndEndRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderEndEndRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderEndStartRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderEndStartRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImageOutset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImageOutset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImageRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImageRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImageSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImageSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImageSource: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImageSource: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderImageWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderImageWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineEndColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineEndStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineEndWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineStartColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineStartStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineStartWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineStartWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderInlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderInlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderLeftColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderLeftColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderLeftStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderLeftStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderLeftWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderRightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderRightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderRightStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderRightStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderRightWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderRightWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderStartEndRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderStartEndRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderStartStartRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderStartStartRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTopColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTopColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTopLeftRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTopRightRadius: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTopStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTopStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderTopWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderTopWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var borderWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var borderWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var bottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var bottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxDecorationBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxDecorationBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxFlexGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxOrdinalGroup: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxOrient: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxPack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var boxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var boxSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var breakAfter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var breakAfter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var breakBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var breakBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var breakInside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var breakInside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var captionSide: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var captionSide: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var caretColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var caretColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var clear: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var clear: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var clip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var clip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var clipPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var clipPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var clipRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var clipRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var color: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var color: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var colorAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var colorAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var colorInterpolation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var colorInterpolation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var colorRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var colorRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnCount: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnFill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnRuleColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnRuleStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnRuleWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnSpan: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnSpan: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columnWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var columns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var columns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var contain: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var contain: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var content: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var content: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var counterIncrement: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var counterIncrement: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var counterReset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var counterReset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var counterSet: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var counterSet: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var cursor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var cursor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var direction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var direction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var display: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var display: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var dominantBaseline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var dominantBaseline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var emptyCells: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var emptyCells: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fill: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fillOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fillOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fillRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fillRule: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var filter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var filter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexBasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexBasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexGrow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexGrow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexShrink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexShrink: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var flexWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var flexWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var float: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var float: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var floodColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var floodColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var floodOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var floodOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var font: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var font: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontFamily: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontFamily: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontFeatureSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontKerning: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontKerning: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontLanguageOverride: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontLanguageOverride: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontOpticalSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontOpticalSizing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontSmooth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontSmooth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontStretch: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontStretch: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontSynthesis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontSynthesis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariant: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariant: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantAlternates: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantAlternates: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantCaps: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantCaps: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantEastAsian: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantEastAsian: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantLigatures: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantLigatures: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantNumeric: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantNumeric: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariantPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariantPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontVariationSettings: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var fontWeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var fontWeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var glyphOrientationVertical: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var grid: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var grid: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridArea: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridArea: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridAutoColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridAutoColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridAutoFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridAutoFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridAutoRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridAutoRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridColumn: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridColumn: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridColumnEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridColumnEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridColumnGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridColumnStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridColumnStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridRow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridRow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridRowEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridRowEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridRowGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridRowGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridRowStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridRowStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridTemplate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridTemplate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridTemplateAreas: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridTemplateAreas: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridTemplateColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridTemplateColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var gridTemplateRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var gridTemplateRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var hack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var hack: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var hangingPunctuation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var hangingPunctuation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var height: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var height: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var hyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var hyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var imageOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var imageOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var imageRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var imageRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var imageResolution: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var imageResolution: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var imeMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var imeMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var initialLetter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var initialLetter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var inlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var inlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var inset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var inset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var insetInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var insetInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var isolation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var isolation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var justifyContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var justifyContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var justifyItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var justifyItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var justifySelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var justifySelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var justifyTracks: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var justifyTracks: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var left: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var left: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var letterSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var letterSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var lightingColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var lightingColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var lineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var lineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var lineClamp: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var lineClamp: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var lineHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var lineHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var lineHeightStep: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var lineHeightStep: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var listStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var listStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var listStyleImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var listStyleImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var listStylePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var listStylePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var listStyleType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var listStyleType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var margin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var margin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var marker: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var marker: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var markerEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var markerEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var markerMid: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var markerMid: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var markerStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var markerStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var mask: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var mask: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderOutset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderOutset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderSlice: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderSource: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderSource: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskBorderWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskBorderWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskClip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskComposite: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskComposite: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskImage: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskRepeat: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maskType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maskType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var masonryAutoFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var masonryAutoFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var mathStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var mathStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maxBlockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maxBlockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maxHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maxHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maxInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maxInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maxLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var maxWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var maxWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var minBlockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var minBlockSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var minHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var minHeight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var minInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var minInlineSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var minWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var minWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var mixBlendMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var mixBlendMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var motion: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var motion: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var motionDistance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var motionDistance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var motionPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var motionPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var motionRotation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var motionRotation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msAccelerator: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msAccelerator: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msAlignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msAlignSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msBlockProgression: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msBlockProgression: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomChaining: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomChaining: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomLimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomLimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomLimitMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomLimitMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomLimitMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomLimitMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomSnap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomSnap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomSnapPoints: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomSnapPoints: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZoomSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZoomSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msContentZooming: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msContentZooming: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFilter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFlex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFlexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFlexDirection: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFlexPositive: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFlexPositive: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFlowFrom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFlowFrom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msFlowInto: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msFlowInto: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msGridColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msGridColumns: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msGridRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msGridRows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msHighContrastAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msHighContrastAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msHyphenateLimitChars: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msHyphenateLimitChars: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msHyphenateLimitLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msHyphenateLimitLines: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msHyphenateLimitZone: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msHyphenateLimitZone: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msHyphens: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msImeAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msImeAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msImeMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msImeMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msJustifySelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msJustifySelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msLineBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msOverflowStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msOverflowStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msOverflowX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msOverflowX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msOverflowY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msOverflowY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollChaining: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollChaining: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollLimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollLimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollLimitXMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollLimitXMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollLimitXMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollLimitXMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollLimitYMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollLimitYMax: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollLimitYMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollLimitYMin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollRails: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollRails: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollSnapX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollSnapX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollSnapY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollSnapY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollTranslation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollTranslation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbar3dlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbar3dlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarArrowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarArrowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarBaseColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarBaseColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarDarkshadowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarDarkshadowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarFaceColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarFaceColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarHighlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarHighlightColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarShadowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarShadowColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msScrollbarTrackColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msScrollbarTrackColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTextAutospace: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTextAutospace: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTextCombineHorizontal: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTextCombineHorizontal: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTextOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTextOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTouchAction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTouchAction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTouchSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTouchSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msTransitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msUserSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msWordBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msWordBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msWrapFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msWrapFlow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msWrapMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msWrapMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msWrapThrough: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msWrapThrough: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var msWritingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var msWritingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var objectFit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var objectFit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var objectPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var objectPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetDistance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetDistance: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetPath: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetRotate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetRotate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var offsetRotation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var offsetRotation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var opacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var opacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var order: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var order: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var orphans: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var orphans: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var outline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var outline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var outlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var outlineColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var outlineOffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var outlineOffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var outlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var outlineStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var outlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var outlineWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowClipBox: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowClipBox: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overflowY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overflowY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overscrollBehavior: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overscrollBehavior: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overscrollBehaviorBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overscrollBehaviorBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overscrollBehaviorInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overscrollBehaviorInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overscrollBehaviorX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overscrollBehaviorX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var overscrollBehaviorY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var overscrollBehaviorY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var padding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var padding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paddingTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paddingTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var pageBreakAfter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var pageBreakAfter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var pageBreakBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var pageBreakBefore: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var pageBreakInside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var pageBreakInside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var paintOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var paintOrder: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var perspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var perspective: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var perspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var perspectiveOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var placeContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var placeContent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var placeItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var placeItems: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var placeSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var placeSelf: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var pointerEvents: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var pointerEvents: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var position: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var position: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var quotes: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var quotes: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var resize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var resize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var right: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var right: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var rotate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var rotate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var rowGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var rowGap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var rubyAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var rubyAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var rubyMerge: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var rubyMerge: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var rubyPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var rubyPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scale: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scale: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollBehavior: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollBehavior: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollMarginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollMarginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPadding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPadding: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingBlock: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingBlockEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingBlockStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingInline: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingInlineEnd: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingInlineStart: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollPaddingTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollPaddingTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapCoordinate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapCoordinate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapDestination: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapDestination: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapMarginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapMarginBottom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapMarginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapMarginLeft: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapMarginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapMarginRight: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapMarginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapMarginTop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapPointsX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapPointsY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapStop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapStop: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapType: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapTypeX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapTypeX: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollSnapTypeY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollSnapTypeY: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollbarColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollbarColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollbarGutter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollbarGutter: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollbarTrackColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollbarTrackColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var scrollbarWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var scrollbarWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var shapeImageThreshold: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var shapeImageThreshold: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var shapeMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var shapeMargin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var shapeOutside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var shapeOutside: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var shapeRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var shapeRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var stopColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var stopColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var stopOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var stopOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var stroke: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var stroke: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeDasharray: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeDasharray: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeDashoffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeLinecap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeLinecap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeLinejoin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeMiterlimit: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeOpacity: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var strokeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var strokeWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var tabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var tabSize: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var tableLayout: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var tableLayout: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textAlignLast: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textAlignLast: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textAnchor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textCombineHorizontal: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textCombineHorizontal: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textCombineUpright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textCombineUpright: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecoration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecoration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationLine: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationSkip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationSkip: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationSkipInk: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationSkipInk: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationThickness: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationThickness: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textDecorationWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textDecorationWidth: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textEmphasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textEmphasis: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textEmphasisColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textEmphasisColor: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textEmphasisPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textEmphasisPosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textEmphasisStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textEmphasisStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textIndent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textIndent: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textJustify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textJustify: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textOrientation: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textOverflow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textRendering: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textShadow: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textSizeAdjust: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textTransform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textUnderlineOffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textUnderlineOffset: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var textUnderlinePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var textUnderlinePosition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var top: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var top: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var touchAction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var touchAction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transform: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transformBox: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transformBox: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transformOrigin: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transformStyle: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transition: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transitionDelay: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transitionDuration: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transitionProperty: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var transitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var transitionTimingFunction: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var translate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var translate: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var unicodeBidi: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var unicodeBidi: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var userSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var userSelect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var vectorEffect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var vectorEffect: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var verticalAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var verticalAlign: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var visibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var visibility: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var whiteSpace: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var whiteSpace: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var widows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var widows: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var width: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var width: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var willChange: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var willChange: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var wordBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var wordBreak: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var wordSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var wordSpacing: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var wordWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var wordWrap: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var writingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var writingMode: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var zIndex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var zIndex: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
   
-  var zoom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.native
+  var zoom: js.UndefOr[String | Double | (js.Function1[/* tick */ js.UndefOr[js.Any], String | Double])] = js.undefined
 }
 object KinkeyofCSSPropertiesstri {
   

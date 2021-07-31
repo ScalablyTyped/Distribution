@@ -2,55 +2,53 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfigurationQuery extends StObject {
   
-  var allowLargeResults: js.UndefOr[Boolean] = js.native
+  var allowLargeResults: js.UndefOr[Boolean] = js.undefined
   
-  var clustering: js.UndefOr[Clustering] = js.native
+  var clustering: js.UndefOr[Clustering] = js.undefined
   
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
-  var defaultDataset: js.UndefOr[DatasetReference] = js.native
+  var defaultDataset: js.UndefOr[DatasetReference] = js.undefined
   
-  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
-  var destinationTable: js.UndefOr[TableReference] = js.native
+  var destinationTable: js.UndefOr[TableReference] = js.undefined
   
-  var flattenResults: js.UndefOr[Boolean] = js.native
+  var flattenResults: js.UndefOr[Boolean] = js.undefined
   
-  var maximumBillingTier: js.UndefOr[Double] = js.native
+  var maximumBillingTier: js.UndefOr[Double] = js.undefined
   
-  var maximumBytesBilled: js.UndefOr[String] = js.native
+  var maximumBytesBilled: js.UndefOr[String] = js.undefined
   
-  var parameterMode: js.UndefOr[String] = js.native
+  var parameterMode: js.UndefOr[String] = js.undefined
   
-  var preserveNulls: js.UndefOr[Boolean] = js.native
+  var preserveNulls: js.UndefOr[Boolean] = js.undefined
   
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
   
-  var rangePartitioning: js.UndefOr[RangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
   
-  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.native
+  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tableDefinitions: js.UndefOr[js.Object] = js.native
+  var tableDefinitions: js.UndefOr[js.Object] = js.undefined
   
-  var timePartitioning: js.UndefOr[TimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
-  var useQueryCache: js.UndefOr[Boolean] = js.native
+  var useQueryCache: js.UndefOr[Boolean] = js.undefined
   
-  var userDefinedFunctionResources: js.UndefOr[js.Array[UserDefinedFunctionResource]] = js.native
+  var userDefinedFunctionResources: js.UndefOr[js.Array[UserDefinedFunctionResource]] = js.undefined
   
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object JobConfigurationQuery {
   

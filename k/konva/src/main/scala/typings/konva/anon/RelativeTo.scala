@@ -5,19 +5,17 @@ import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeTo extends StObject {
   
-  var relativeTo: js.UndefOr[Container[Node[NodeConfig]]] = js.native
+  var relativeTo: js.UndefOr[Container[Node[NodeConfig]]] = js.undefined
   
-  var skipShadow: js.UndefOr[Boolean] = js.native
+  var skipShadow: js.UndefOr[Boolean] = js.undefined
   
-  var skipStroke: js.UndefOr[Boolean] = js.native
+  var skipStroke: js.UndefOr[Boolean] = js.undefined
   
-  var skipTransform: js.UndefOr[Boolean] = js.native
+  var skipTransform: js.UndefOr[Boolean] = js.undefined
 }
 object RelativeTo {
   

@@ -3,25 +3,23 @@ package typings.node.inspectorMod.Profiler
 import typings.node.inspectorMod.Debugger.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsoleProfileFinishedEventDataType extends StObject {
   
-  var id: String = js.native
+  var id: String
   
   /**
     * Location of console.profileEnd().
     */
-  var location: Location = js.native
+  var location: Location
   
-  var profile: Profile = js.native
+  var profile: Profile
   
   /**
     * Profile title passed as an argument to console.profile().
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ConsoleProfileFinishedEventDataType {
   

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,14 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.DBASEConnectionProperties
   * @see com.sun.star.sdbc.FLATConnectionProperties
   */
-@js.native
 trait ConnectionProperties extends StObject {
   
   /** the password */
-  var password: String = js.native
+  var password: String
   
   /** the username */
-  var user: String = js.native
+  var user: String
 }
 object ConnectionProperties {
   

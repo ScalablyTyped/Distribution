@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsTabConfiguration extends StObject {
   
   // Url used for rendering tab contents in Teams. Required.
-  var contentUrl: js.UndefOr[NullableOption[String]] = js.native
+  var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identifier for the entity hosted by the tab provider.
-  var entityId: js.UndefOr[NullableOption[String]] = js.native
+  var entityId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Url called by Teams client when a Tab is removed using the Teams Client.
-  var removeUrl: js.UndefOr[NullableOption[String]] = js.native
+  var removeUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Url for showing tab contents outside of Teams.
-  var websiteUrl: js.UndefOr[NullableOption[String]] = js.native
+  var websiteUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TeamsTabConfiguration {
   

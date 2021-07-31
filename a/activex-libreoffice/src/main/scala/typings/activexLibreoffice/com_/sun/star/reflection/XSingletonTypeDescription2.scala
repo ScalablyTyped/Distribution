@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type supersedes {@link XSingletonTypeDescription} , which only supports obsolete, service-based singletons.
   * @since OOo 2.0
   */
-@js.native
-trait XSingletonTypeDescription2 extends XSingletonTypeDescription {
+trait XSingletonTypeDescription2
+  extends StObject
+     with XSingletonTypeDescription {
   
   /**
     * Returns the interface type associated with the singleton.
     * @returns the reflection of the interface type associated with the singleton (of type {@link com.sun.star.reflection.XInterfaceTypeDescription} or, in case
     */
-  val Interface: XTypeDescription = js.native
+  val Interface: XTypeDescription
   
   /**
     * Returns the interface type associated with the singleton.
     * @returns the reflection of the interface type associated with the singleton (of type {@link com.sun.star.reflection.XInterfaceTypeDescription} or, in case
     */
-  def getInterface(): XTypeDescription = js.native
+  def getInterface(): XTypeDescription
   
   /**
     * Returns whether this object reflects an interface-based singleton.
     * @returns `TRUE` if this object reflects an interface-based singleton, and `FALSE` if this object reflects an obsolete, service-based singleton
     */
-  def isInterfaceBased(): Boolean = js.native
+  def isInterfaceBased(): Boolean
 }
 object XSingletonTypeDescription2 {
   

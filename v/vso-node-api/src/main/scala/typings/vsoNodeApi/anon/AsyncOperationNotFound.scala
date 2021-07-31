@@ -2,31 +2,29 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncOperationNotFound extends StObject {
   
-  var asyncOperationNotFound: scala.Double = js.native
+  var asyncOperationNotFound: scala.Double
   
-  var createBranchPermissionRequired: scala.Double = js.native
+  var createBranchPermissionRequired: scala.Double
   
-  var gitObjectTooLarge: scala.Double = js.native
+  var gitObjectTooLarge: scala.Double
   
-  var invalidRefName: scala.Double = js.native
+  var invalidRefName: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var operationIndentityNotFound: scala.Double = js.native
+  var operationIndentityNotFound: scala.Double
   
-  var other: scala.Double = js.native
+  var other: scala.Double
   
-  var refNameConflict: scala.Double = js.native
+  var refNameConflict: scala.Double
   
-  var targetBranchDeleted: scala.Double = js.native
+  var targetBranchDeleted: scala.Double
   
-  var writePermissionRequired: scala.Double = js.native
+  var writePermissionRequired: scala.Double
 }
 object AsyncOperationNotFound {
   

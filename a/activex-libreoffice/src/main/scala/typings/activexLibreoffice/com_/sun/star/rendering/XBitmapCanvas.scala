@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are provided.
   * @since OOo 2.0
   */
-@js.native
-trait XBitmapCanvas extends XCanvas {
+trait XBitmapCanvas
+  extends StObject
+     with XCanvas {
   
   /**
     * This method copies a rectangular area from a place of one canvas to a place on another.
@@ -47,7 +47,7 @@ trait XBitmapCanvas extends XCanvas {
     destRect: RealRectangle2D,
     destViewState: ViewState,
     destRenderState: RenderState
-  ): Unit = js.native
+  ): Unit
 }
 object XBitmapCanvas {
   

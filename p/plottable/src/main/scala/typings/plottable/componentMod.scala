@@ -16,7 +16,6 @@ import typings.plottable.plottableStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -124,7 +123,7 @@ object componentMod {
       * @param {d3.Selection} selection.
       * @returns {Component} The calling Component.
       */
-    def anchor(selection: Selection_[HTMLElement, _, _, _]): this.type = js.native
+    def anchor(selection: Selection_[HTMLElement, js.Any, js.Any, js.Any]): this.type = js.native
     
     /**
       * Gets the Selection containing the <g> behind the visual elements of the Component.
@@ -153,17 +152,13 @@ object componentMod {
       * @returns {Component} The calling Component.
       */
     def computeLayout(): this.type = js.native
-    def computeLayout(
-      origin: js.UndefOr[scala.Nothing],
-      availableWidth: js.UndefOr[scala.Nothing],
-      availableHeight: Double
-    ): this.type = js.native
-    def computeLayout(origin: js.UndefOr[scala.Nothing], availableWidth: Double): this.type = js.native
-    def computeLayout(origin: js.UndefOr[scala.Nothing], availableWidth: Double, availableHeight: Double): this.type = js.native
+    def computeLayout(origin: Unit, availableWidth: Double): this.type = js.native
+    def computeLayout(origin: Unit, availableWidth: Double, availableHeight: Double): this.type = js.native
+    def computeLayout(origin: Unit, availableWidth: Unit, availableHeight: Double): this.type = js.native
     def computeLayout(origin: Point): this.type = js.native
-    def computeLayout(origin: Point, availableWidth: js.UndefOr[scala.Nothing], availableHeight: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double, availableHeight: Double): this.type = js.native
+    def computeLayout(origin: Point, availableWidth: Unit, availableHeight: Double): this.type = js.native
     
     /**
       * Gets the SVG that holds the visual elements of the Component.
@@ -191,7 +186,7 @@ object componentMod {
     /**
       * Returns the HTML Element at the root of this component's DOM tree.
       */
-    def element(): Selection_[HTMLElement, _, _, _] = js.native
+    def element(): Selection_[HTMLElement, js.Any, js.Any, js.Any] = js.native
     
     /**
       * Checks if the Component has a fixed height or if it grows to fill available space.
@@ -343,7 +338,7 @@ object componentMod {
       * @returns {Component} The calling Component.
       */
     def renderTo(element: String): this.type = js.native
-    def renderTo(element: Selection_[HTMLElement, _, _, _]): this.type = js.native
+    def renderTo(element: Selection_[HTMLElement, js.Any, js.Any, js.Any]): this.type = js.native
     def renderTo(element: HTMLElement): this.type = js.native
     
     /**
@@ -384,9 +379,9 @@ object componentMod {
       * @param {number} [originY] top offset in pixels
       */
     def setBounds(width: Double, height: Double): this.type = js.native
-    def setBounds(width: Double, height: Double, originX: js.UndefOr[scala.Nothing], originY: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double, originY: Double): this.type = js.native
+    def setBounds(width: Double, height: Double, originX: Unit, originY: Double): this.type = js.native
     
     /**
       * Gets the width of the Component in pixels.

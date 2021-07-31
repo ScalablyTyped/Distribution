@@ -9,21 +9,21 @@ import typings.storybookReactNative.anon.PartialParams
 import typings.storybookReactNative.anon.StoryId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
   
   @JSImport("@storybook/react-native/dist/preview", JSImport.Default)
   @js.native
-  class default () extends Preview
+  class default ()
+    extends StObject
+       with Preview
   
-  @js.native
   trait AsyncStorage extends StObject {
     
-    def getItem(key: String): js.Promise[String | Null] = js.native
+    def getItem(key: String): js.Promise[String | Null]
     
-    def setItem(key: String, value: String): js.Promise[Unit] = js.native
+    def setItem(key: String, value: String): js.Promise[Unit]
   }
   object AsyncStorage {
     
@@ -44,38 +44,37 @@ object previewMod {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var asyncStorage: js.UndefOr[AsyncStorage | Null] = js.native
+    var asyncStorage: js.UndefOr[AsyncStorage | Null] = js.undefined
     
-    var disableWebsockets: Boolean = js.native
+    var disableWebsockets: Boolean
     
-    var host: String = js.native
+    var host: String
     
-    var initialSelection: js.Any = js.native
+    var initialSelection: js.Any
     
-    var isUIHidden: Boolean = js.native
+    var isUIHidden: Boolean
     
-    var keyboardAvoidingViewVerticalOffset: Double = js.native
+    var keyboardAvoidingViewVerticalOffset: Double
     
-    var onDeviceUI: Boolean = js.native
+    var onDeviceUI: Boolean
     
-    var port: Double = js.native
+    var port: Double
     
-    var query: String = js.native
+    var query: String
     
-    var resetStorybook: Boolean = js.native
+    var resetStorybook: Boolean
     
-    var secured: Boolean = js.native
+    var secured: Boolean
     
-    var shouldDisableKeyboardAvoidingView: Boolean = js.native
+    var shouldDisableKeyboardAvoidingView: Boolean
     
-    var shouldPersistSelection: Boolean = js.native
+    var shouldPersistSelection: Boolean
     
-    var tabOpen: Double = js.native
+    var tabOpen: Double
     
-    var theme: BackgroundColor = js.native
+    var theme: BackgroundColor
   }
   object Params {
     
@@ -169,7 +168,7 @@ object previewMod {
     
     var _clientApi: ClientApi = js.native
     
-    var _decorators: js.Array[_] = js.native
+    var _decorators: js.Array[js.Any] = js.native
     
     def _getInitialStory(initialSelection: js.Any): js.Function0[js.Promise[StoreItem]] = js.native
     def _getInitialStory(initialSelection: js.Any, shouldPersistSelection: Boolean): js.Function0[js.Promise[StoreItem]] = js.native

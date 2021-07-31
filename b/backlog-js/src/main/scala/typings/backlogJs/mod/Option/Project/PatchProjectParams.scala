@@ -2,25 +2,23 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchProjectParams extends StObject {
   
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
-  var chartEnabled: js.UndefOr[Boolean] = js.native
+  var chartEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var projectLeaderCanEditProjectLeader: js.UndefOr[Boolean] = js.native
+  var projectLeaderCanEditProjectLeader: js.UndefOr[Boolean] = js.undefined
   
-  var subtaskingEnabled: js.UndefOr[Boolean] = js.native
+  var subtaskingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var textFormattingRule: js.UndefOr[TextFormattingRule] = js.native
+  var textFormattingRule: js.UndefOr[TextFormattingRule] = js.undefined
 }
 object PatchProjectParams {
   

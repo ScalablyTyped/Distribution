@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The data is stored integer-valued.
   * @since OOo 2.0
   */
-@js.native
 trait IntegerSize2D extends StObject {
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object IntegerSize2D {
   

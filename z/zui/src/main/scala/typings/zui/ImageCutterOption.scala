@@ -2,32 +2,30 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * image cutter
   */
-@js.native
 trait ImageCutterOption extends StObject {
   
-  var coverColor: js.UndefOr[String] = js.native
+  var coverColor: js.UndefOr[String] = js.undefined
   
-  var coverOpacity: js.UndefOr[Double] = js.native
+  var coverOpacity: js.UndefOr[Double] = js.undefined
   
-  var defaultHeight: js.UndefOr[Double] = js.native
+  var defaultHeight: js.UndefOr[Double] = js.undefined
   
-  var defaultWidth: js.UndefOr[Double] = js.native
+  var defaultWidth: js.UndefOr[Double] = js.undefined
   
-  var fixedRatio: js.UndefOr[Boolean] = js.native
+  var fixedRatio: js.UndefOr[Boolean] = js.undefined
   
-  var get: js.UndefOr[String] = js.native
+  var get: js.UndefOr[String] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var post: js.UndefOr[String] = js.native
+  var post: js.UndefOr[String] = js.undefined
 }
 object ImageCutterOption {
   

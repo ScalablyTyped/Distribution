@@ -2,19 +2,17 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var options: TimeoutNumber = js.native
+  var options: TimeoutNumber
   
-  var port: Double = js.native
+  var port: Double
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var slashes: Boolean = js.native
+  var slashes: Boolean
 }
 object Options {
   

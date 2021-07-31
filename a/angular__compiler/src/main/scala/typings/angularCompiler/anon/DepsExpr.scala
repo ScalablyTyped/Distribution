@@ -3,19 +3,17 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.coreMod.NodeFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepsExpr extends StObject {
   
-  var depsExpr: typings.angularCompiler.outputAstMod.Expression = js.native
+  var depsExpr: typings.angularCompiler.outputAstMod.Expression
   
-  var flags: NodeFlags = js.native
+  var flags: NodeFlags
   
-  var providerExpr: typings.angularCompiler.outputAstMod.Expression = js.native
+  var providerExpr: typings.angularCompiler.outputAstMod.Expression
   
-  var tokenExpr: typings.angularCompiler.outputAstMod.Expression = js.native
+  var tokenExpr: typings.angularCompiler.outputAstMod.Expression
 }
 object DepsExpr {
   

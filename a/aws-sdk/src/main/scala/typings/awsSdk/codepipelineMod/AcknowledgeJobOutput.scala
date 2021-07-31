@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcknowledgeJobOutput extends StObject {
   
   /**
     * Whether the job worker has received the specified job.
     */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
 }
 object AcknowledgeJobOutput {
   

@@ -1,15 +1,17 @@
 package typings.msRestAzure.mod
 
 import typings.msRest.mod.ServiceClientCredentials
+import typings.msRest.mod.WebResource
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "ApplicationTokenCredentials")
 @js.native
-class ApplicationTokenCredentials protected () extends ServiceClientCredentials {
+class ApplicationTokenCredentials protected ()
+  extends StObject
+     with ServiceClientCredentials {
   def this(clientId: String, domain: String, secret: String) = this()
   def this(clientId: String, domain: String, secret: String, options: AzureTokenCredentialsOptions) = this()
   
@@ -21,4 +23,13 @@ class ApplicationTokenCredentials protected () extends ServiceClientCredentials 
     *                       {object} [tokenResponse] The tokenResponse (tokenType and accessToken are the two important properties). 
     */
   def getToken(callback: js.Function2[/* err */ Error, /* result */ TokenResponse, Unit]): Unit = js.native
+  
+  /**
+    * Signs a request with the Authentication header.
+    *
+    * @param {WebResource} The WebResource to be signed.
+    * @param {function(error)}  callback  The callback function.
+    */
+  /* CompleteClass */
+  override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }

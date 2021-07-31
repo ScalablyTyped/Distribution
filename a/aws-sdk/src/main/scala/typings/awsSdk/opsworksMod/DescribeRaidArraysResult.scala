@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRaidArraysResult extends StObject {
   
   /**
     * A RaidArrays object that describes the specified RAID arrays.
     */
-  var RaidArrays: js.UndefOr[typings.awsSdk.opsworksMod.RaidArrays] = js.native
+  var RaidArrays: js.UndefOr[typings.awsSdk.opsworksMod.RaidArrays] = js.undefined
 }
 object DescribeRaidArraysResult {
   

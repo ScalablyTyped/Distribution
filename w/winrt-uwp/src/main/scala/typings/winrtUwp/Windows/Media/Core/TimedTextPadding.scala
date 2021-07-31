@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the size of padding around a timed text region. */
-@js.native
 trait TimedTextPadding extends StObject {
   
   /** The padding after the timed text region. */
-  var after: Double = js.native
+  var after: Double
   
   /** The padding before the timed text region. */
-  var before: Double = js.native
+  var before: Double
   
   /** The padding towards the end of the timed text. */
-  var end: Double = js.native
+  var end: Double
   
   /** The padding towards the start of the timed text. */
-  var start: Double = js.native
+  var start: Double
   
   /** The units in which the other members of the structure are expressed. */
-  var unit: TimedTextUnit = js.native
+  var unit: TimedTextUnit
 }
 object TimedTextPadding {
   

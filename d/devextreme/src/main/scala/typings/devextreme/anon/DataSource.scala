@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
-  var component: js.UndefOr[js.Any] = js.native
+  var component: js.UndefOr[js.Any] = js.undefined
   
-  var dataSource: js.UndefOr[DataSourceOptions] = js.native
+  var dataSource: js.UndefOr[DataSourceOptions] = js.undefined
 }
 object DataSource {
   

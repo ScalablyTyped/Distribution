@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way for the application to asynchronously report that it has completed retrieving the MediaStreamSample . */
-@js.native
 trait MediaStreamSourceSampleRequestDeferral extends StObject {
   
   /** Reports that the application has completed retrieving the MediaStreamSample . */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object MediaStreamSourceSampleRequestDeferral {
   

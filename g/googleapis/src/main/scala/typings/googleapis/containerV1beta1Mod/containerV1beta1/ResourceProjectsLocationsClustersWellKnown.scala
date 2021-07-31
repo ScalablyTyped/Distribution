@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Locations$Clusters$WellKnown")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsClustersWellKnown protected () extends StObject {
     */
   def getOpenidConfiguration(): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(callback: BodyResponseCallback[SchemaGetOpenIDConfigResponse]): Unit = js.native
-  def getOpenidConfiguration(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
+  def getOpenidConfiguration(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(params: ParamsResourceProjectsLocationsClustersWellKnownGetopenidconfiguration): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(
     params: ParamsResourceProjectsLocationsClustersWellKnownGetopenidconfiguration,

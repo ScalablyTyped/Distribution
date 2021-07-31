@@ -11,8 +11,8 @@ Create C "array" instances on top of Buffers
 | Full name          | ref-array-di |
 | Keywords           | array, ref |
 | # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 79855 |
+| # dependents       | 24 |
+| # downloads        | 93311 |
 | # stars            | 0 |
 
 ## Links

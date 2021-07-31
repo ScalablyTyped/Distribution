@@ -2,35 +2,33 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spring extends StObject {
   
-  def applyForce(): Unit = js.native
+  def applyForce(): Unit
   
-  var bodyA: Body = js.native
+  var bodyA: Body
   
-  var bodyB: Body = js.native
+  var bodyB: Body
   
-  var damping: Double = js.native
+  var damping: Double
   
-  def getWorldAnchorA(result: Vec3): Unit = js.native
+  def getWorldAnchorA(result: Vec3): Unit
   
-  def getWorldAnchorB(result: Vec3): Unit = js.native
+  def getWorldAnchorB(result: Vec3): Unit
   
-  var localAnchorA: Vec3 = js.native
+  var localAnchorA: Vec3
   
-  var localAnchorB: Vec3 = js.native
+  var localAnchorB: Vec3
   
-  var restLength: Double = js.native
+  var restLength: Double
   
-  def setWorldAnchorA(worldAnchorA: Vec3): Unit = js.native
+  def setWorldAnchorA(worldAnchorA: Vec3): Unit
   
-  def setWorldAnchorB(worldAnchorB: Vec3): Unit = js.native
+  def setWorldAnchorB(worldAnchorB: Vec3): Unit
   
-  var stffness: Double = js.native
+  var stffness: Double
 }
 object Spring {
   

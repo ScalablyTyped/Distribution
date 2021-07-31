@@ -22,7 +22,6 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libBuildMod {
@@ -93,7 +92,9 @@ object libBuildMod {
   
   @JSImport("ionic/lib/build", "BuildRunner")
   @js.native
-  abstract class BuildRunner[T /* <: BuildOptions[_] */] () extends Runner[T, Unit] {
+  abstract class BuildRunner[T /* <: BuildOptions[js.Any] */] ()
+    extends StObject
+       with Runner[T, Unit] {
     
     def afterBuild(options: T): js.Promise[Unit] = js.native
     
@@ -112,6 +113,9 @@ object libBuildMod {
     def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
     
     def getPkgManagerBuildCLI(): PkgManagerBuildCLI = js.native
+    
+    /* CompleteClass */
+    override def run(options: T): js.Promise[Unit] = js.native
   }
   
   @JSImport("ionic/lib/build", "COMMON_BUILD_COMMAND_OPTIONS")
@@ -126,22 +130,48 @@ object libBuildMod {
   @js.native
   class YarnBuildCLI () extends PkgManagerBuildCLI
   
-  @js.native
   trait BuildRunnerDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val project: IProject = js.native
+    val project: IProject
     
-    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox] = js.native
-    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm] = js.native
-    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther] = js.native
+    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox]
+    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm]
+    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther]
     @JSName("prompt")
-    val prompt_Original: PromptModule = js.native
+    val prompt_Original: PromptModule
     
-    val shell: IShell = js.native
+    val shell: IShell
+  }
+  object BuildRunnerDeps {
+    
+    @scala.inline
+    def apply(config: IConfig, log: ILogger, project: IProject, prompt: PromptModule, shell: IShell): BuildRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BuildRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class BuildRunnerDepsMutableBuilder[Self <: BuildRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native

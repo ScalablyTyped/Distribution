@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the CrosshairFreePosition class.
   */
-@js.native
-trait ASPxClientCrosshairFreePosition extends ASPxClientCrosshairPosition {
+trait ASPxClientCrosshairFreePosition
+  extends StObject
+     with ASPxClientCrosshairPosition {
   
   /**
     * Gets a string containing information on a crosshair label's dock position when the crosshair cursor is in the free position mode.
     */
-  var dockPosition: String = js.native
+  var dockPosition: String
   
   /**
     * Gets a Pane's ID when the crosshair cursor is in the free position mode.
     */
-  var paneID: Double = js.native
+  var paneID: Double
 }
 object ASPxClientCrosshairFreePosition {
   

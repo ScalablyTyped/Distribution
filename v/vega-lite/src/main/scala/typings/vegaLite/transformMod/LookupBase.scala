@@ -3,22 +3,20 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupBase extends StObject {
   
   /**
     * Fields in foreign data or selection to lookup.
     * If not specified, the entire object is queried.
     */
-  var fields: js.UndefOr[js.Array[FieldName]] = js.native
+  var fields: js.UndefOr[js.Array[FieldName]] = js.undefined
   
   /**
     * Key in data to lookup.
     */
-  var key: FieldName = js.native
+  var key: FieldName
 }
 object LookupBase {
   

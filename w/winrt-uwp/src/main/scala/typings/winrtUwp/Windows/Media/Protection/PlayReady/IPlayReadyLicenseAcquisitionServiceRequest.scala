@@ -5,18 +5,18 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Performs a license acquisition process. */
-@js.native
-trait IPlayReadyLicenseAcquisitionServiceRequest extends IPlayReadyServiceRequest {
+trait IPlayReadyLicenseAcquisitionServiceRequest
+  extends StObject
+     with IPlayReadyServiceRequest {
   
   /** Gets the current content header property. */
-  var contentHeader: PlayReadyContentHeader = js.native
+  var contentHeader: PlayReadyContentHeader
   
   /** Gets the current domain service identifier property that overrides a service identifier in the content header. */
-  var domainServiceId: String = js.native
+  var domainServiceId: String
 }
 object IPlayReadyLicenseAcquisitionServiceRequest {
   

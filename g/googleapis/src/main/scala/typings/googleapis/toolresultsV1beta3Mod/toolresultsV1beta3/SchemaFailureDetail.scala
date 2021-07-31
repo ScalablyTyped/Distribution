@@ -2,38 +2,36 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFailureDetail extends StObject {
   
   /**
     * If the failure was severe because the system (app) under test crashed.
     */
-  var crashed: js.UndefOr[Boolean] = js.native
+  var crashed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If an app is not installed and thus no test can be run with the app. This
     * might be caused by trying to run a test on an unsupported platform.
     */
-  var notInstalled: js.UndefOr[Boolean] = js.native
+  var notInstalled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If a native process (including any other than the app) crashed.
     */
-  var otherNativeCrash: js.UndefOr[Boolean] = js.native
+  var otherNativeCrash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the test overran some time limit, and that is why it failed.
     */
-  var timedOut: js.UndefOr[Boolean] = js.native
+  var timedOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the robo was unable to crawl the app; perhaps because the app did not
     * start.
     */
-  var unableToCrawl: js.UndefOr[Boolean] = js.native
+  var unableToCrawl: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaFailureDetail {
   

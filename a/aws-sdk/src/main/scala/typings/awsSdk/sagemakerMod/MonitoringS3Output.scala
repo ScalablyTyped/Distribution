@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringS3Output extends StObject {
   
   /**
     * The local path to the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job. LocalPath is an absolute path for the output data.
     */
-  var LocalPath: ProcessingLocalPath = js.native
+  var LocalPath: ProcessingLocalPath
   
   /**
     * Whether to upload the results of the monitoring job continuously or after the job completes.
     */
-  var S3UploadMode: js.UndefOr[ProcessingS3UploadMode] = js.native
+  var S3UploadMode: js.UndefOr[ProcessingS3UploadMode] = js.undefined
   
   /**
     * A URI that identifies the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job.
     */
-  var S3Uri: MonitoringS3Uri = js.native
+  var S3Uri: MonitoringS3Uri
 }
 object MonitoringS3Output {
   

@@ -10,13 +10,13 @@ log4javascript
 | ------------------ | :-------------: |
 | Full name          | log4javascript |
 | Keywords           | log4javascript, logging, js, json |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 181843 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 219602 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Ritzlgrmft/log4javascript)
+- [Homepage](https://github.com/Ritzlgrmft/log4javascript#readme)
 - [Bugs](https://github.com/Ritzlgrmft/log4javascript/issues)
 - [Repository](https://github.com/Ritzlgrmft/log4javascript)
 - [Npm](https://www.npmjs.com/package/log4javascript)

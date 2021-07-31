@@ -18,7 +18,6 @@ import typings.three.vector3Mod.Vector3
 import typings.three.vector4Mod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometryMod {
@@ -160,7 +159,7 @@ object geometryMod {
     def lookAt(vector: Vector3): Unit = js.native
     
     def merge(geometry: Geometry): Unit = js.native
-    def merge(geometry: Geometry, matrix: js.UndefOr[scala.Nothing], materialIndexOffset: Double): Unit = js.native
+    def merge(geometry: Geometry, matrix: Unit, materialIndexOffset: Double): Unit = js.native
     def merge(geometry: Geometry, matrix: Matrix): Unit = js.native
     def merge(geometry: Geometry, matrix: Matrix, materialIndexOffset: Double): Unit = js.native
     
@@ -259,12 +258,11 @@ object geometryMod {
     var verticesNeedUpdate: Boolean = js.native
   }
   
-  @js.native
   trait MorphColor extends StObject {
     
-    var colors: js.Array[Color] = js.native
+    var colors: js.Array[Color]
     
-    var name: String = js.native
+    var name: String
   }
   object MorphColor {
     
@@ -288,12 +286,11 @@ object geometryMod {
     }
   }
   
-  @js.native
   trait MorphNormals extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var normals: js.Array[Vector3] = js.native
+    var normals: js.Array[Vector3]
   }
   object MorphNormals {
     
@@ -317,12 +314,11 @@ object geometryMod {
     }
   }
   
-  @js.native
   trait MorphTarget extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var vertices: js.Array[Vector3] = js.native
+    var vertices: js.Array[Vector3]
   }
   object MorphTarget {
     

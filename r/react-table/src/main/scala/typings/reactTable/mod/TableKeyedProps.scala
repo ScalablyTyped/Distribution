@@ -3,13 +3,13 @@ package typings.reactTable.mod
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableKeyedProps extends TableCommonProps {
+trait TableKeyedProps
+  extends StObject
+     with TableCommonProps {
   
-  var key: Key = js.native
+  var key: Key
 }
 object TableKeyedProps {
   

@@ -3,15 +3,14 @@ package typings.actionsOnGoogle.v1Mod
 import typings.actionsOnGoogle.actionsOnGoogleNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageText
-  extends DialogflowV1BaseMessage[`0`]
+  extends StObject
+     with DialogflowV1BaseMessage[`0`]
      with DialogflowV1Message {
   
-  var speech: js.UndefOr[String] = js.native
+  var speech: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageText {
   

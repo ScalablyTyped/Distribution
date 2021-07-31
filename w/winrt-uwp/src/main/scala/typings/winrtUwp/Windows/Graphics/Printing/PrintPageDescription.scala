@@ -4,24 +4,22 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the data that describes a document page. */
-@js.native
 trait PrintPageDescription extends StObject {
   
   /** The resolution in dots per inch (DPI) for the X dimension of the page. */
-  var dpiX: Double = js.native
+  var dpiX: Double
   
   /** The resolution in dots per inch (DPI) for the Y dimension of the page. */
-  var dpiY: Double = js.native
+  var dpiY: Double
   
   /** The Rect within the page size on which content may actually be printed. Content outside of the ImageableRect, whether less or greater than the page size, will be cropped by the print target. The ImageableRect is specified in device independent pixels (DIPs). */
-  var imageableRect: Rect = js.native
+  var imageableRect: Rect
   
   /** The page size in device independent pixels (DIPs). */
-  var pageSize: Size = js.native
+  var pageSize: Size
 }
 object PrintPageDescription {
   

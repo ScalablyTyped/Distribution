@@ -2,43 +2,43 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Cart extends GraphModel {
+trait Cart
+  extends StObject
+     with GraphModel {
   
   /**
     * Get checkout URL for current cart
     */
-  var checkoutUrl: String = js.native
+  var checkoutUrl: String
   
   /**
     * Get completed at date.
     */
-  var completedAt: String | Null = js.native
+  var completedAt: String | Null
   
   /**
     * get ID for current cart
     */
-  var id: String | Double = js.native
+  var id: String | Double
   
   /**
     * Gets the total quantity of all line items. Example: you've added two variants
     * with quantities 3 and 2. lineItemCount will be 5.
     */
-  var lineItemCount: Double = js.native
+  var lineItemCount: Double
   
   /**
     * Get an Array of CartLineItemModel's
     */
-  var lineItems: js.Array[LineItem] = js.native
+  var lineItems: js.Array[LineItem]
   
   /**
     * Get current subtotal price for all line items, before shipping, taxes, and discounts.
     * Example: two items have been added to the cart that cost $1.25 then the subtotal will be 2.50
     */
-  var subtotalPrice: String = js.native
+  var subtotalPrice: String
 }
 object Cart {
   
@@ -50,7 +50,7 @@ object Cart {
     lineItems: js.Array[LineItem],
     subtotalPrice: String
   ): Cart = {
-    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any], completedAt = null)
     __obj.asInstanceOf[Cart]
   }
   

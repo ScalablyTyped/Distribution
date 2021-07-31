@@ -8,7 +8,6 @@ import typings.chrome.chrome.management.ManagementUninstalledEvent
 import typings.chrome.chrome.management.UninstallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -25,61 +24,45 @@ object management {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.management.createAppShortcut")
-  @js.native
-  def createAppShortcut(id: String): Unit = js.native
-  @JSGlobal("chrome.management.createAppShortcut")
-  @js.native
-  def createAppShortcut(id: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def createAppShortcut(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppShortcut")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createAppShortcut(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppShortcut")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.generateAppForLink")
-  @js.native
-  def generateAppForLink(url: String, title: String): Unit = js.native
-  @JSGlobal("chrome.management.generateAppForLink")
-  @js.native
-  def generateAppForLink(url: String, title: String, callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = js.native
+  @scala.inline
+  def generateAppForLink(url: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAppForLink")(url.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def generateAppForLink(url: String, title: String, callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAppForLink")(url.asInstanceOf[js.Any], title.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.get")
-  @js.native
-  def get(id: String): Unit = js.native
-  @JSGlobal("chrome.management.get")
-  @js.native
-  def get(id: String, callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = js.native
+  @scala.inline
+  def get(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.getAll")
-  @js.native
-  def getAll(): Unit = js.native
-  @JSGlobal("chrome.management.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* result */ js.Array[ExtensionInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[Unit]
+  @scala.inline
+  def getAll(callback: js.Function1[/* result */ js.Array[ExtensionInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.getPermissionWarningsById")
-  @js.native
-  def getPermissionWarningsById(id: String): Unit = js.native
-  @JSGlobal("chrome.management.getPermissionWarningsById")
-  @js.native
-  def getPermissionWarningsById(id: String, callback: js.Function1[/* permissionWarnings */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def getPermissionWarningsById(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsById")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getPermissionWarningsById(id: String, callback: js.Function1[/* permissionWarnings */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.getPermissionWarningsByManifest")
-  @js.native
-  def getPermissionWarningsByManifest(manifestStr: String): Unit = js.native
-  @JSGlobal("chrome.management.getPermissionWarningsByManifest")
-  @js.native
-  def getPermissionWarningsByManifest(manifestStr: String, callback: js.Function1[/* permissionwarnings */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def getPermissionWarningsByManifest(manifestStr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsByManifest")(manifestStr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getPermissionWarningsByManifest(manifestStr: String, callback: js.Function1[/* permissionwarnings */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionWarningsByManifest")(manifestStr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.getSelf")
-  @js.native
-  def getSelf(): Unit = js.native
-  @JSGlobal("chrome.management.getSelf")
-  @js.native
-  def getSelf(callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = js.native
+  @scala.inline
+  def getSelf(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelf")().asInstanceOf[Unit]
+  @scala.inline
+  def getSelf(callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelf")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.launchApp")
-  @js.native
-  def launchApp(id: String): Unit = js.native
-  @JSGlobal("chrome.management.launchApp")
-  @js.native
-  def launchApp(id: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def launchApp(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("launchApp")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def launchApp(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("launchApp")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.management.onDisabled")
   @js.native
@@ -105,49 +88,35 @@ object management {
   @scala.inline
   def onUninstalled_=(x: ManagementUninstalledEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUninstalled")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.management.setEnabled")
-  @js.native
-  def setEnabled(id: String, enabled: Boolean): Unit = js.native
-  @JSGlobal("chrome.management.setEnabled")
-  @js.native
-  def setEnabled(id: String, enabled: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setEnabled(id: String, enabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(id.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setEnabled(id: String, enabled: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(id.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.setLaunchType")
-  @js.native
-  def setLaunchType(id: String, launchType: String): Unit = js.native
-  @JSGlobal("chrome.management.setLaunchType")
-  @js.native
-  def setLaunchType(id: String, launchType: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setLaunchType(id: String, launchType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLaunchType")(id.asInstanceOf[js.Any], launchType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLaunchType(id: String, launchType: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLaunchType")(id.asInstanceOf[js.Any], launchType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.uninstall")
-  @js.native
-  def uninstall(id: String): Unit = js.native
-  @JSGlobal("chrome.management.uninstall")
-  @js.native
-  def uninstall(id: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.management.uninstall")
-  @js.native
-  def uninstall(id: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.management.uninstall")
-  @js.native
-  def uninstall(id: String, options: UninstallOptions): Unit = js.native
-  @JSGlobal("chrome.management.uninstall")
-  @js.native
-  def uninstall(id: String, options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def uninstall(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def uninstall(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uninstall(id: String, options: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uninstall(id: String, options: UninstallOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uninstall(id: String, options: UninstallOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: UninstallOptions): Unit = js.native
-  @JSGlobal("chrome.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def uninstallSelf(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")().asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: UninstallOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

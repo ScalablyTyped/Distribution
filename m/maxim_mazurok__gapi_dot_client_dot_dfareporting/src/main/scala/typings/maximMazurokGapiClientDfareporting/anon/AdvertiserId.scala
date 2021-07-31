@@ -2,128 +2,126 @@ package typings.maximMazurokGapiClientDfareporting.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserId extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Select only active ads. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Select only ads with this advertiser ID. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Select only archived ads. */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** Select only ads with these audience segment IDs. */
-  var audienceSegmentIds: js.UndefOr[String | js.Array[String]] = js.native
+  var audienceSegmentIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these campaign IDs. */
-  var campaignIds: js.UndefOr[String | js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on
     * mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video
     * ads developed with the VAST standard.
     */
-  var compatibility: js.UndefOr[String] = js.native
+  var compatibility: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these creative IDs assigned. */
-  var creativeIds: js.UndefOr[String | js.Array[String]] = js.native
+  var creativeIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Select only ads with these creative optimization configuration IDs. */
-  var creativeOptimizationConfigurationIds: js.UndefOr[String | js.Array[String]] = js.native
+  var creativeOptimizationConfigurationIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static click trackers. Leave unset
     * to select both.
     */
-  var dynamicClickTracker: js.UndefOr[Boolean] = js.native
+  var dynamicClickTracker: js.UndefOr[Boolean] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these IDs. */
-  var ids: js.UndefOr[String | js.Array[String]] = js.native
+  var ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these landing page IDs. */
-  var landingPageIds: js.UndefOr[String | js.Array[String]] = js.native
+  var landingPageIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Maximum number of results to return. */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Select only ads with this event tag override ID. */
-  var overriddenEventTagId: js.UndefOr[String] = js.native
+  var overriddenEventTagId: js.UndefOr[String] = js.undefined
   
   /** Value of the nextPageToken from the previous result page. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these placement IDs assigned. */
-  var placementIds: js.UndefOr[String | js.Array[String]] = js.native
+  var placementIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** User profile ID associated with this request. */
-  var profileId: String = js.native
+  var profileId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Select only ads whose list targeting expression use these remarketing list IDs. */
-  var remarketingListIds: js.UndefOr[String | js.Array[String]] = js.native
+  var remarketingListIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "ad*2015" will return objects with names like "ad June 2015", "ad April 2015", or simply "ad
     * 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "ad" will match objects with name "my
     * ad", "ad 2015", or simply "ad".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /** Select only ads with these size IDs. */
-  var sizeIds: js.UndefOr[String | js.Array[String]] = js.native
+  var sizeIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Field by which to sort the list. */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /** Order of sorted results. */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /** Select only ads that are SSL-compliant. */
-  var sslCompliant: js.UndefOr[Boolean] = js.native
+  var sslCompliant: js.UndefOr[Boolean] = js.undefined
   
   /** Select only ads that require SSL. */
-  var sslRequired: js.UndefOr[Boolean] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.undefined
   
   /** Select only ads with these types. */
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object AdvertiserId {
   

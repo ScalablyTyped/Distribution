@@ -2,15 +2,13 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option[T] extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var option: T = js.native
+  var option: T
 }
 object Option {
   
@@ -21,7 +19,7 @@ object Option {
   }
   
   @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option[_], T] (val x: Self with Option[T]) extends AnyVal {
+  implicit class OptionMutableBuilder[Self <: Option[?], T] (val x: Self & Option[T]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

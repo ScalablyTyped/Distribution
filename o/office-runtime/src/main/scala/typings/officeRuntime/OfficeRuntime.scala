@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OfficeRuntime {
@@ -53,7 +52,6 @@ object OfficeRuntime {
   /**
     * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
     */
-  @js.native
   trait AuthOptions extends StObject {
     
     /**
@@ -62,19 +60,19 @@ object OfficeRuntime {
       * If set to `true`, Office will show an interactive consent UI after it fails to silently get an access token.
       * The prompt will only allow consent to the AAD profile scope, not to any Microsoft Graph scopes.
       */
-    var allowConsentPrompt: js.UndefOr[Boolean] = js.native
+    var allowConsentPrompt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows Office to get an access token silently provided consent is present or show interactive UI to sign in the user. Default value is `false`.
       * If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error.
       * If set to `true`, Office will show an interactive sign-in UI after it fails to silently get an access token.
       */
-    var allowSignInPrompt: js.UndefOr[Boolean] = js.native
+    var allowSignInPrompt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.native
+    var asyncContext: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor
@@ -83,21 +81,21 @@ object OfficeRuntime {
       * call of `getAccessToken` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should
       * be used with the `authChallenge` option.
       */
-    var authChallenge: js.UndefOr[String] = js.native
+    var authChallenge: js.UndefOr[String] = js.undefined
     
     /**
       * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`.
       * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development.
       * Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.
       */
-    var forMSGraphAccess: js.UndefOr[Boolean] = js.native
+    var forMSGraphAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.
       *
       * @deprecated Use `allowSignInPrompt` instead.
       */
-    var forceAddAccount: js.UndefOr[Boolean] = js.native
+    var forceAddAccount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has
@@ -105,7 +103,7 @@ object OfficeRuntime {
       *
       * @deprecated Use `allowConsentPrompt` instead.
       */
-    var forceConsent: js.UndefOr[Boolean] = js.native
+    var forceConsent: js.UndefOr[Boolean] = js.undefined
   }
   object AuthOptions {
     
@@ -163,7 +161,6 @@ object OfficeRuntime {
   }
   
   /** Object representing the dialog box. */
-  @js.native
   trait Dialog extends StObject {
     
     /**
@@ -172,7 +169,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
   }
   object Dialog {
     
@@ -191,7 +188,6 @@ object OfficeRuntime {
   }
   
   /** Provides display options and actions a dialog box may take. */
-  @js.native
   trait DisplayWebDialogOptions extends StObject {
     
     /**
@@ -201,7 +197,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var displayInIFrame: js.UndefOr[Boolean] = js.native
+    var displayInIFrame: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional parameter that defines the height of the dialog box as a percentage of the current display.
@@ -210,7 +206,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback that runs when the dialog box is closed.
@@ -218,7 +214,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional callback that runs when the dialog box sends a message to its parent.
@@ -226,7 +222,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var onMessage: js.UndefOr[js.Function2[/* message */ String, /* dialog */ js.UndefOr[Dialog], Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function2[/* message */ String, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
     
     /**
       * Optional callback that runs when the dialog box sends an error.
@@ -234,7 +230,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var onRuntimeError: js.UndefOr[js.Function2[/* error */ Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.native
+    var onRuntimeError: js.UndefOr[js.Function2[/* error */ Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
     
     /**
       * Optional parameter that defines the width of dialog as a percentage of window.
@@ -243,7 +239,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object DisplayWebDialogOptions {
     
@@ -302,7 +298,6 @@ object OfficeRuntime {
     * @remarks
     * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
     */
-  @js.native
   trait Storage extends StObject {
     
     /**
@@ -313,7 +308,7 @@ object OfficeRuntime {
       *
       * @param key Key of item to be retrieved. Must be a string.
       */
-    def getItem(key: String): js.Promise[String | Null] = js.native
+    def getItem(key: String): js.Promise[String | Null]
     
     /**
       * Retrieves multiple items from storage based on their key.
@@ -323,7 +318,7 @@ object OfficeRuntime {
       *
       * @param keys Keys of items to be removed. Must be an array of strings.
       */
-    def getItems(keys: js.Array[String]): js.Promise[StringDictionary[String | Null]] = js.native
+    def getItems(keys: js.Array[String]): js.Promise[StringDictionary[String | Null]]
     
     /**
       * Retrieves an array of all keys from storage.
@@ -332,7 +327,7 @@ object OfficeRuntime {
       * [Api set: SharedRuntime 1.1]
       *
       */
-    def getKeys(): js.Promise[js.Array[String]] = js.native
+    def getKeys(): js.Promise[js.Array[String]]
     
     /**
       * Removes an item from storage based on its key.
@@ -342,7 +337,7 @@ object OfficeRuntime {
       *
       * @param key Key of item to be removed. Must be a string.
       */
-    def removeItem(key: String): js.Promise[Unit] = js.native
+    def removeItem(key: String): js.Promise[Unit]
     
     /**
       * Removes multiple items from storage.
@@ -352,7 +347,7 @@ object OfficeRuntime {
       *
       * @param keys Keys of items to be removed. Must be an array of strings.
       */
-    def removeItems(keys: js.Array[String]): js.Promise[Unit] = js.native
+    def removeItems(keys: js.Array[String]): js.Promise[Unit]
     
     /**
       * Sets a key-value pair into storage or updates an existing key-value pair.
@@ -363,7 +358,7 @@ object OfficeRuntime {
       * @param key Key of item to be set. Must be a string.
       * @param value Must be a string.
       */
-    def setItem(key: String, value: String): js.Promise[Unit] = js.native
+    def setItem(key: String, value: String): js.Promise[Unit]
     
     /**
       * Sets multiple items into storage or updates multiple items within storage.
@@ -373,7 +368,7 @@ object OfficeRuntime {
       *
       * @param keyValues Key-value pairs to be set. Must be strings.
       */
-    def setItems(keyValues: StringDictionary[String]): js.Promise[Unit] = js.native
+    def setItems(keyValues: StringDictionary[String]): js.Promise[Unit]
   }
   object Storage {
     

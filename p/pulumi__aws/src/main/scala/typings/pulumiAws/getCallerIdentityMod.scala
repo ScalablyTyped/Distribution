@@ -3,40 +3,40 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCallerIdentityMod {
   
-  @JSImport("@pulumi/aws/getCallerIdentity", "getCallerIdentity")
+  @JSImport("@pulumi/aws/getCallerIdentity", JSImport.Namespace)
   @js.native
-  def getCallerIdentity(): js.Promise[GetCallerIdentityResult] = js.native
-  @JSImport("@pulumi/aws/getCallerIdentity", "getCallerIdentity")
-  @js.native
-  def getCallerIdentity(opts: InvokeOptions): js.Promise[GetCallerIdentityResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCallerIdentity(): js.Promise[GetCallerIdentityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallerIdentity")().asInstanceOf[js.Promise[GetCallerIdentityResult]]
+  @scala.inline
+  def getCallerIdentity(opts: InvokeOptions): js.Promise[GetCallerIdentityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallerIdentity")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCallerIdentityResult]]
+  
   trait GetCallerIdentityResult extends StObject {
     
     /**
       * The AWS Account ID number of the account that owns or contains the calling entity.
       */
-    val accountId: String = js.native
+    val accountId: String
     
     /**
       * The AWS ARN associated with the calling entity.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The unique identifier of the calling entity.
       */
-    val userId: String = js.native
+    val userId: String
   }
   object GetCallerIdentityResult {
     

@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Cloud Storage location.
   */
-@js.native
 trait SchemaGcsDataLocation extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaGcsDataLocation extends StObject {
     * supported at the end of a path and with no other wildcards.   &#39;?&#39;
     * to match 1 character.
     */
-  var gcsUri: js.UndefOr[String] = js.native
+  var gcsUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGcsDataLocation {
   

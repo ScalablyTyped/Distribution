@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessPlatforms extends StObject {
   
   // Possible values are: android, iOS, windows, windowsPhone, macOS, unknownFutureValue.
-  var excludePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.native
+  var excludePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.undefined
   
   // Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue.
-  var includePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.native
+  var includePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.undefined
 }
 object ConditionalAccessPlatforms {
   

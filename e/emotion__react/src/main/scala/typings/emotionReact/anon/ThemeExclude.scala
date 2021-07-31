@@ -3,18 +3,16 @@ package typings.emotionReact.anon
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeExclude extends StObject {
   
-  var theme: Exclude[_, js.UndefOr[scala.Nothing]] = js.native
+  var theme: Exclude[js.Any, Unit]
 }
 object ThemeExclude {
   
   @scala.inline
-  def apply(theme: Exclude[_, js.UndefOr[scala.Nothing]]): ThemeExclude = {
+  def apply(theme: Exclude[js.Any, Unit]): ThemeExclude = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeExclude]
   }
@@ -23,6 +21,6 @@ object ThemeExclude {
   implicit class ThemeExcludeMutableBuilder[Self <: ThemeExclude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setTheme(value: Exclude[_, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    def setTheme(value: Exclude[js.Any, Unit]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

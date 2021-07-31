@@ -3,19 +3,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the result of conversational query or event processing.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
   
   /**
     * The action name from the matched intent.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * This field is set to: - `false` if the matched intent has required
@@ -23,32 +21,32 @@ trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
     * collected. - `true` if all required parameter values have been collected,
     * or if the    matched intent doesn&#39;t contain any required parameters.
     */
-  var allRequiredParamsPresent: js.UndefOr[Boolean] = js.native
+  var allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The free-form diagnostic info. For example, this field could contain
     * webhook call latency. The string keys of the Struct&#39;s fields map can
     * change without notice.
     */
-  var diagnosticInfo: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var diagnosticInfo: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The collection of rich messages to present to the user.
     */
-  var fulfillmentMessages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
   /**
     * The text to be pronounced to the user or shown on the screen. Note: This
     * is a legacy field, `fulfillment_messages` should be preferred.
     */
-  var fulfillmentText: js.UndefOr[String] = js.native
+  var fulfillmentText: js.UndefOr[String] = js.undefined
   
   /**
     * The intent that matched the conversational query. Some, not all fields
     * are filled in this message, including but not limited to: `name`,
     * `display_name` and `webhook_state`.
     */
-  var intent: js.UndefOr[SchemaGoogleCloudDialogflowV2Intent] = js.native
+  var intent: js.UndefOr[SchemaGoogleCloudDialogflowV2Intent] = js.undefined
   
   /**
     * The intent detection confidence. Values range from 0.0 (completely
@@ -56,14 +54,14 @@ trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
     * knowledge_answers` messages, this value is set to the greatest
     * `knowledgeAnswers.match_confidence` value in the list.
     */
-  var intentDetectionConfidence: js.UndefOr[Double] = js.native
+  var intentDetectionConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The language that was triggered during intent detection. See [Language
     * Support](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
     * for a list of the currently supported language codes.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The collection of output contexts. If applicable,
@@ -71,12 +69,12 @@ trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
     * name&gt;.original` containing the original parameter values before the
     * query.
     */
-  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.undefined
   
   /**
     * The collection of extracted parameters.
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The original conversational query text: - If natural language text was
@@ -86,13 +84,13 @@ trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
     * multiple alternatives, a particular one is picked. - If an event was
     * provided as input, `query_text` is not set.
     */
-  var queryText: js.UndefOr[String] = js.native
+  var queryText: js.UndefOr[String] = js.undefined
   
   /**
     * The sentiment analysis result, which depends on the
     * `sentiment_analysis_request_config` specified in the request.
     */
-  var sentimentAnalysisResult: js.UndefOr[SchemaGoogleCloudDialogflowV2SentimentAnalysisResult] = js.native
+  var sentimentAnalysisResult: js.UndefOr[SchemaGoogleCloudDialogflowV2SentimentAnalysisResult] = js.undefined
   
   /**
     * The Speech recognition confidence between 0.0 and 1.0. A higher number
@@ -103,19 +101,19 @@ trait SchemaGoogleCloudDialogflowV2QueryResult extends StObject {
     * since the streaming endpoint has separate confidence estimates per
     * portion of the audio in StreamingRecognitionResult.
     */
-  var speechRecognitionConfidence: js.UndefOr[Double] = js.native
+  var speechRecognitionConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * If the query was fulfilled by a webhook call, this field is set to the
     * value of the `payload` field returned in the webhook response.
     */
-  var webhookPayload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var webhookPayload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * If the query was fulfilled by a webhook call, this field is set to the
     * value of the `source` field returned in the webhook response.
     */
-  var webhookSource: js.UndefOr[String] = js.native
+  var webhookSource: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2QueryResult {
   

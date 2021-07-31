@@ -30,13 +30,12 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a view of a spreadsheet document. */
-@js.native
 trait SpreadsheetView
-  extends Controller
+  extends StObject
+     with Controller
      with SpreadsheetViewSettings
      with SpreadsheetViewPane
      with XSpreadsheetView

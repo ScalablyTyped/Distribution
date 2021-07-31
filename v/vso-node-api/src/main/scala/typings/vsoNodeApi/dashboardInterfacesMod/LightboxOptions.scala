@@ -2,26 +2,24 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightboxOptions extends StObject {
   
   /**
     * Height of desired lightbox, in pixels
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * True to allow lightbox resizing, false to disallow lightbox resizing, defaults to false.
     */
-  var resizable: Boolean = js.native
+  var resizable: Boolean
   
   /**
     * Width of desired lightbox, in pixels
     */
-  var width: Double = js.native
+  var width: Double
 }
 object LightboxOptions {
   

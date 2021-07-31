@@ -3,17 +3,15 @@ package typings.phoenix
 import typings.phoenix.mod.BinaryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Diff extends StObject {
     
-    var diff: String = js.native
+    var diff: String
     
-    var state: String = js.native
+    var state: String
   }
   object Diff {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Joins extends StObject {
     
-    var joins: js.Object = js.native
+    var joins: js.Object
     
-    var leaves: js.Object = js.native
+    var leaves: js.Object
   }
   object Joins {
     
@@ -61,14 +58,13 @@ object anon {
   }
   
   /* Inlined std.Partial<phoenix.phoenix.SocketConnectOption> */
-  @js.native
   trait PartialSocketConnectOptio extends StObject {
     
-    var binaryType: js.UndefOr[BinaryType] = js.native
+    var binaryType: js.UndefOr[BinaryType] = js.undefined
     
     var decode: js.UndefOr[
         js.Function2[/* payload */ String, /* callback */ js.Function1[/* decoded */ js.Any, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var encode: js.UndefOr[
         js.Function2[
@@ -76,25 +72,25 @@ object anon {
           /* callback */ js.Function1[/* encoded */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var heartbeatIntervalMs: js.UndefOr[Double] = js.native
+    var heartbeatIntervalMs: js.UndefOr[Double] = js.undefined
     
-    var logger: js.UndefOr[js.Function3[/* kind */ String, /* message */ String, /* data */ js.Any, Unit]] = js.native
+    var logger: js.UndefOr[js.Function3[/* kind */ String, /* message */ String, /* data */ js.Any, Unit]] = js.undefined
     
-    var longpollerTimeout: js.UndefOr[Double] = js.native
+    var longpollerTimeout: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Object | js.Function0[js.Object]] = js.native
+    var params: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
     
-    var reconnectAfterMs: js.UndefOr[js.Function1[/* tries */ Double, Double]] = js.native
+    var reconnectAfterMs: js.UndefOr[js.Function1[/* tries */ Double, Double]] = js.undefined
     
-    var rejoinAfterMs: js.UndefOr[js.Function1[/* tries */ Double, Double]] = js.native
+    var rejoinAfterMs: js.UndefOr[js.Function1[/* tries */ Double, Double]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
     
-    var vsn: js.UndefOr[String] = js.native
+    var vsn: js.UndefOr[String] = js.undefined
   }
   object PartialSocketConnectOptio {
     

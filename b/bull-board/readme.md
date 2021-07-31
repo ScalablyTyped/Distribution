@@ -9,16 +9,16 @@ Bull queue UI for inspecting jobs
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bull-board |
-| Keywords           | bull, redis, queue |
-| # releases         | 31 |
-| # dependents       | 13 |
-| # downloads        | 727561 |
+| Keywords           | bull, redis, queue, monitoring |
+| # releases         | 39 |
+| # dependents       | 17 |
+| # downloads        | 1030016 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/vcapretz/bull-board#readme)
-- [Bugs](https://github.com/vcapretz/bull-board/issues)
-- [Repository](https://github.com/vcapretz/bull-board)
+- [Homepage](https://github.com/felixmosh/bull-board#readme)
+- [Bugs](https://github.com/felixmosh/bull-board/issues)
+- [Repository](https://github.com/felixmosh/bull-board)
 - [Npm](https://www.npmjs.com/package/bull-board)
     
 

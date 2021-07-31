@@ -12,7 +12,7 @@ find outliers in a dataset
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 29177 |
+| # downloads        | 31724 |
 | # stars            | 1 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueInfo extends StObject {
   
   /**
     * The ID of the ongoing ingestion. The queued ingestion is waiting for the ongoing ingestion to complete.
     */
-  var QueuedIngestion: java.lang.String = js.native
+  var QueuedIngestion: java.lang.String
   
   /**
     * The ID of the queued ingestion.
     */
-  var WaitingOnIngestion: java.lang.String = js.native
+  var WaitingOnIngestion: java.lang.String
 }
 object QueueInfo {
   

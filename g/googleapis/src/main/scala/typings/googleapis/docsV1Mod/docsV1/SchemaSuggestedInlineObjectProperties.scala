@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A suggested change to InlineObjectProperties.
   */
-@js.native
 trait SchemaSuggestedInlineObjectProperties extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaSuggestedInlineObjectProperties extends StObject {
     * inline_object_properties_suggestion_state to see which fields have
     * changed and their new values.
     */
-  var inlineObjectProperties: js.UndefOr[SchemaInlineObjectProperties] = js.native
+  var inlineObjectProperties: js.UndefOr[SchemaInlineObjectProperties] = js.undefined
   
   /**
     * A mask that indicates which of the fields on the base
     * InlineObjectProperties have been changed in this suggestion.
     */
-  var inlineObjectPropertiesSuggestionState: js.UndefOr[SchemaInlineObjectPropertiesSuggestionState] = js.native
+  var inlineObjectPropertiesSuggestionState: js.UndefOr[SchemaInlineObjectPropertiesSuggestionState] = js.undefined
 }
 object SchemaSuggestedInlineObjectProperties {
   

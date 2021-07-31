@@ -2,31 +2,43 @@ package typings.linearGradient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("linear-gradient", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Gradient {
+  class ^ protected ()
+    extends StObject
+       with Gradient {
     def this(colors: js.Array[Color]) = this()
+    
+    /**
+      * the input value should be normalized to the range between 0 and 1
+      */
+    /* CompleteClass */
+    override def calcArray(normalizedPercent: Double): Color = js.native
+    
+    /**
+      * the input value should be normalized to the range between 0 and 1
+      */
+    /* CompleteClass */
+    override def calcHex(normalizedPrecent: Double): String = js.native
   }
   
   type Color = js.Tuple3[Double, Double, Double]
   
-  @js.native
   trait Gradient extends StObject {
     
     /**
       * the input value should be normalized to the range between 0 and 1
       */
-    def calcArray(normalizedPercent: Double): Color = js.native
+    def calcArray(normalizedPercent: Double): Color
     
     /**
       * the input value should be normalized to the range between 0 and 1
       */
-    def calcHex(normalizedPrecent: Double): String = js.native
+    def calcHex(normalizedPrecent: Double): String
   }
   object Gradient {
     

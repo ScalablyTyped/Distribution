@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMemberDetectorsResponse extends StObject {
   
   /**
     * An object that describes which data sources are enabled for a member account.
     */
-  var MemberDataSourceConfigurations: typings.awsSdk.guarddutyMod.MemberDataSourceConfigurations = js.native
+  var MemberDataSourceConfigurations: typings.awsSdk.guarddutyMod.MemberDataSourceConfigurations
   
   /**
     * A list of member account IDs that were unable to be processed along with an explanation for why they were not processed.
     */
-  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts = js.native
+  var UnprocessedAccounts: typings.awsSdk.guarddutyMod.UnprocessedAccounts
 }
 object GetMemberDetectorsResponse {
   

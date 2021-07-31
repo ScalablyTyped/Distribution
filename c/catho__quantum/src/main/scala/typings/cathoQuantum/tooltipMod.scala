@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -21,20 +20,19 @@ object tooltipMod {
   
   type Tooltip = Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
   trait TooltipProps extends StObject {
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
-    var placement: js.UndefOr[top | right | bottom | left] = js.native
+    var placement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var theme: js.UndefOr[BaseFontSizeColors] = js.native
+    var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object TooltipProps {
     

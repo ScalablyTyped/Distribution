@@ -4,7 +4,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.panelPropsMod.IPanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelViewMod {
@@ -23,36 +22,35 @@ object panelViewMod {
     var maybeRenderHeader: js.Any = js.native
   }
   
-  @js.native
   trait IPanelViewProps extends StObject {
     
     /**
       * Callback invoked when the user presses the back button or a panel invokes
       * the `closePanel()` injected prop method.
       */
-    def onClose(removedPanel: IPanel[_]): Unit = js.native
+    def onClose(removedPanel: IPanel[js.Any]): Unit
     
     /**
       * Callback invoked when a panel invokes the `openPanel(panel)` injected
       * prop method.
       */
-    def onOpen(addedPanel: IPanel[_]): Unit = js.native
+    def onOpen(addedPanel: IPanel[js.Any]): Unit
     
     /** The panel to be displayed. */
-    var panel: IPanel[js.Object] = js.native
+    var panel: IPanel[js.Object]
     
     /** The previous panel in the stack, for rendering the "back" button. */
-    var previousPanel: js.UndefOr[IPanel[js.Object]] = js.native
+    var previousPanel: js.UndefOr[IPanel[js.Object]] = js.undefined
     
     /** Whether to show the header with the "back" button. */
-    var showHeader: Boolean = js.native
+    var showHeader: Boolean
   }
   object IPanelViewProps {
     
     @scala.inline
     def apply(
-      onClose: IPanel[_] => Unit,
-      onOpen: IPanel[_] => Unit,
+      onClose: IPanel[js.Any] => Unit,
+      onOpen: IPanel[js.Any] => Unit,
       panel: IPanel[js.Object],
       showHeader: Boolean
     ): IPanelViewProps = {
@@ -64,10 +62,10 @@ object panelViewMod {
     implicit class IPanelViewPropsMutableBuilder[Self <: IPanelViewProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnClose(value: IPanel[_] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      def setOnClose(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnOpen(value: IPanel[_] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      def setOnOpen(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPanel(value: IPanel[js.Object]): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])

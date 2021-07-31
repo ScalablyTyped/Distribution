@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobDataAttributes extends StObject {
   
   /**
     * Declares that your content is free of personally identifiable information or adult content. Amazon SageMaker may restrict the Amazon Mechanical Turk workers that can view your task based on this information.
     */
-  var ContentClassifiers: js.UndefOr[typings.awsSdk.sagemakerMod.ContentClassifiers] = js.native
+  var ContentClassifiers: js.UndefOr[typings.awsSdk.sagemakerMod.ContentClassifiers] = js.undefined
 }
 object LabelingJobDataAttributes {
   

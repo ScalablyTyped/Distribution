@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -88,11 +87,7 @@ trait Time extends StObject {
     *               type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(dateTime: Date): Unit = js.native
-  def setAsync(
-    dateTime: Date,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setAsync(dateTime: Date, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(dateTime: Date, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     dateTime: Date,

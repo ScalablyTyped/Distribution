@@ -2,21 +2,19 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcItemDescriptor extends StObject {
   
-  var path: String = js.native
+  var path: String
   
-  var recursionLevel: VersionControlRecursionType = js.native
+  var recursionLevel: VersionControlRecursionType
   
-  var version: String = js.native
+  var version: String
   
-  var versionOption: TfvcVersionOption = js.native
+  var versionOption: TfvcVersionOption
   
-  var versionType: TfvcVersionType = js.native
+  var versionType: TfvcVersionType
 }
 object TfvcItemDescriptor {
   

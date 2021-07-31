@@ -4,20 +4,22 @@ import typings.asyncPolling.anon.On
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("async-polling", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Result](
     pollingFunc: js.Function1[
-      /* end */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[Result], _], 
-      _
+      /* end */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[Result], js.Any], 
+      js.Any
     ],
     delay: Double
-  ): On = js.native
+  ): On = (^.asInstanceOf[js.Dynamic].apply(pollingFunc.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[On]
+  
+  @JSImport("async-polling", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.asyncPolling.asyncPollingStrings.run

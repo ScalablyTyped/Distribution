@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReceiptRuleSetsResponse extends StObject {
   
   /**
     * A token indicating that there are additional receipt rule sets available to be listed. Pass this token to successive calls of ListReceiptRuleSets to retrieve up to 100 receipt rule sets at a time.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.undefined
   
   /**
     * The metadata for the currently active receipt rule set. The metadata consists of the rule set name and the timestamp of when the rule set was created.
     */
-  var RuleSets: js.UndefOr[ReceiptRuleSetsLists] = js.native
+  var RuleSets: js.UndefOr[ReceiptRuleSetsLists] = js.undefined
 }
 object ListReceiptRuleSetsResponse {
   

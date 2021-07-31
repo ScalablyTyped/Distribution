@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDatabaseRegistrations
   * @since OOo 3.3
   */
-@js.native
-trait XDatabaseRegistrationsListener extends XEventListener {
+trait XDatabaseRegistrationsListener
+  extends StObject
+     with XEventListener {
   
   /**
     * called when a the location of a registered database changed
@@ -22,13 +22,13 @@ trait XDatabaseRegistrationsListener extends XEventListener {
     * Note that this talks about registration data only. That is, if the actual file denoted by the database registration is moved, this is in no way
     * monitored or reported. Only (successful) calls to {@link XDatabaseRegistrations.changeDatabaseLocation()} are reported here.
     */
-  def changedDatabaseLocation(Event: DatabaseRegistrationEvent): Unit = js.native
+  def changedDatabaseLocation(Event: DatabaseRegistrationEvent): Unit
   
   /** called when a database has been registered */
-  def registeredDatabaseLocation(Event: DatabaseRegistrationEvent): Unit = js.native
+  def registeredDatabaseLocation(Event: DatabaseRegistrationEvent): Unit
   
   /** called when a database registration has been revoked */
-  def revokedDatabaseLocation(Event: DatabaseRegistrationEvent): Unit = js.native
+  def revokedDatabaseLocation(Event: DatabaseRegistrationEvent): Unit
 }
 object XDatabaseRegistrationsListener {
   

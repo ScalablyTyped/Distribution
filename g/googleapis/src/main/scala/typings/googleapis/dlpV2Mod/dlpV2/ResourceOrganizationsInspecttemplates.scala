@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Organizations$Inspecttemplates")
@@ -33,7 +32,7 @@ class ResourceOrganizationsInspecttemplates protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(params: ParamsResourceOrganizationsInspecttemplatesCreate): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(
     params: ParamsResourceOrganizationsInspecttemplatesCreate,
@@ -66,7 +65,7 @@ class ResourceOrganizationsInspecttemplates protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsInspecttemplatesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceOrganizationsInspecttemplatesDelete,
@@ -99,7 +98,7 @@ class ResourceOrganizationsInspecttemplates protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(params: ParamsResourceOrganizationsInspecttemplatesGet): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(
     params: ParamsResourceOrganizationsInspecttemplatesGet,
@@ -135,7 +134,7 @@ class ResourceOrganizationsInspecttemplates protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(params: ParamsResourceOrganizationsInspecttemplatesList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsInspecttemplatesList,
@@ -169,7 +168,7 @@ class ResourceOrganizationsInspecttemplates protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(params: ParamsResourceOrganizationsInspecttemplatesPatch): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(
     params: ParamsResourceOrganizationsInspecttemplatesPatch,

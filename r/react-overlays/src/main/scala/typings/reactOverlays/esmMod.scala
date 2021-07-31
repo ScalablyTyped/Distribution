@@ -29,19 +29,24 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmMod {
+  
+  @JSImport("react-overlays/esm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Dropdown {
     
     /**
       * @displayName Dropdown
       */
-    @JSImport("react-overlays/esm", "Dropdown")
-    @js.native
-    def apply(hasDropAlignEndDefaultShowShowOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps): Element = js.native
+    @scala.inline
+    def apply(
+      hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-overlays/esm", "Dropdown")
     @js.native
     val ^ : js.Any = js.native
@@ -55,9 +60,9 @@ object esmMod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      @JSImport("react-overlays/esm", "Dropdown.Menu")
-      @js.native
-      def apply(hasChildrenOptions: DropdownMenuProps): Element = js.native
+      @scala.inline
+      def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      
       @JSImport("react-overlays/esm", "Dropdown.Menu")
       @js.native
       val ^ : js.Any = js.native
@@ -183,9 +188,9 @@ object esmMod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      @JSImport("react-overlays/esm", "Dropdown.Toggle")
-      @js.native
-      def apply(hasChildren: DropdownToggleProps): Element = js.native
+      @scala.inline
+      def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      
       @JSImport("react-overlays/esm", "Dropdown.Toggle")
       @js.native
       val ^ : js.Any = js.native
@@ -344,9 +349,9 @@ object esmMod {
     /**
       * **NOTE**: Exotic components are not callable.
       */
-    @JSImport("react-overlays/esm", "Modal")
-    @js.native
-    def apply(props: ModalProps with RefAttributes[ModalHandle]): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: ModalProps & RefAttributes[ModalHandle]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("react-overlays/esm", "Modal")
     @js.native
     val ^ : js.Any = js.native
@@ -400,16 +405,16 @@ object esmMod {
     */
   @JSImport("react-overlays/esm", "Overlay")
   @js.native
-  val Overlay: ForwardRefExoticComponent[OverlayProps with RefAttributes[HTMLElement]] = js.native
+  val Overlay: ForwardRefExoticComponent[OverlayProps & RefAttributes[HTMLElement]] = js.native
   
   /**
     * @public
     */
   object Portal {
     
-    @JSImport("react-overlays/esm", "Portal")
-    @js.native
-    def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = js.native
+    @scala.inline
+    def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    
     @JSImport("react-overlays/esm", "Portal")
     @js.native
     val ^ : js.Any = js.native
@@ -427,37 +432,30 @@ object esmMod {
     def propTypes_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-overlays/esm", "useDropdownMenu")
-  @js.native
-  def useDropdownMenu(): UseDropdownMenuValue = js.native
-  @JSImport("react-overlays/esm", "useDropdownMenu")
-  @js.native
-  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = js.native
+  @scala.inline
+  def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
+  @scala.inline
+  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
   
-  @JSImport("react-overlays/esm", "useDropdownToggle")
-  @js.native
-  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = js.native
+  @scala.inline
+  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
   
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
-  def useRootClose(ref: js.UndefOr[scala.Nothing], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
-  def useRootClose(
-    ref: js.UndefOr[scala.Nothing],
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
-  def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
+  @scala.inline
+  def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def useRootClose(
     ref: Null,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRootClose(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRootClose(
+    ref: Unit,
+    onRootClose: js.Function1[/* e */ Event, Unit],
+    hasDisabledClickTrigger: RootCloseOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * The `useRootClose` hook registers your callback on the document
     * when rendered. Powers the `<Overlay/>` component. This is used achieve modal
@@ -470,24 +468,20 @@ object esmMod {
     * @param {boolean=} options.disabled
     * @param {string=}  options.clickTrigger The DOM event name (click, mousedown, etc) to attach listeners on
     */
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
-  def useRootClose(ref: RefObject[typings.std.Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
+  @scala.inline
+  def useRootClose(ref: RefObject[typings.std.Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def useRootClose(
     ref: RefObject[typings.std.Element],
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
-  def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/esm", "useRootClose")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def useRootClose(
     ref: typings.std.Element,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

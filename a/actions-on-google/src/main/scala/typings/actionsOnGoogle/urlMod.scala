@@ -3,23 +3,23 @@ package typings.actionsOnGoogle
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsOpenUrlAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/url", "OpenUrlAction")
   @js.native
-  class OpenUrlAction protected () extends GoogleActionsV2UiElementsOpenUrlAction {
+  class OpenUrlAction protected ()
+    extends StObject
+       with GoogleActionsV2UiElementsOpenUrlAction {
     /** @public */
     def this(options: OpenUrlActionOptions) = this()
   }
   
-  @js.native
   trait OpenUrlActionOptions extends StObject {
     
     /** @public */
-    var url: String = js.native
+    var url: String
   }
   object OpenUrlActionOptions {
     

@@ -10,9 +10,9 @@ Favicon generator for Node.js
 | ------------------ | :-------------: |
 | Full name          | favicons |
 | Keywords           | favicon, ico, generator, node, realfavicongenerator, gulpfriendly |
-| # releases         | 9 |
-| # dependents       | 66 |
-| # downloads        | 5025493 |
+| # releases         | 6 |
+| # dependents       | 76 |
+| # downloads        | 5297805 |
 | # stars            | 26 |
 
 ## Links

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NamedScaleRange extends Object {
+trait NamedScaleRange
+  extends StObject
+     with Object {
   
   /**
     * The named scale range, such as "room" or "metropolitan area".
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html#NamedScaleRange)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The maximum scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html#NamedScaleRange)
     */
-  var maxScale: Double = js.native
+  var maxScale: Double
   
   /**
     * The minimum scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html#NamedScaleRange)
     */
-  var minScale: Double = js.native
+  var minScale: Double
 }
 object NamedScaleRange {
   

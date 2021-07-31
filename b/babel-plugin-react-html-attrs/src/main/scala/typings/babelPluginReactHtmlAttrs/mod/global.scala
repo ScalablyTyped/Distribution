@@ -116,7 +116,6 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -125,10 +124,8 @@ object global {
     
     type Element = typings.react.mod.ReactElement
     
-    @js.native
     trait ElementAttributesProperty extends StObject
     
-    @js.native
     trait ElementChildrenAttribute extends StObject
     
     @js.native
@@ -139,368 +136,367 @@ object global {
     
     type IntrinsicClassAttributes[T] = typings.react.mod.ClassAttributes[T]
     
-    @js.native
     trait IntrinsicElements extends StObject {
       
       // HTML
-      var a: typings.react.mod.DetailedHTMLProps[typings.react.mod.AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement] = js.native
+      var a: typings.react.mod.DetailedHTMLProps[typings.react.mod.AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]
       
-      var abbr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var abbr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var address: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var address: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var animate: typings.react.mod.SVGProps[SVGElement] = js.native
+      var animate: typings.react.mod.SVGProps[SVGElement]
       
       // TODO: It is SVGAnimateElement but is not in TypeScript's lib.dom.d.ts for now.
-      var animateMotion: typings.react.mod.SVGProps[SVGElement] = js.native
+      var animateMotion: typings.react.mod.SVGProps[SVGElement]
       
-      var animateTransform: typings.react.mod.SVGProps[SVGElement] = js.native
+      var animateTransform: typings.react.mod.SVGProps[SVGElement]
       
-      var area: typings.react.mod.DetailedHTMLProps[typings.react.mod.AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement] = js.native
+      var area: typings.react.mod.DetailedHTMLProps[typings.react.mod.AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]
       
-      var article: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var article: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var aside: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var aside: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var audio: typings.react.mod.DetailedHTMLProps[typings.react.mod.AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement] = js.native
+      var audio: typings.react.mod.DetailedHTMLProps[typings.react.mod.AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]
       
-      var b: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var b: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var base: typings.react.mod.DetailedHTMLProps[typings.react.mod.BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement] = js.native
+      var base: typings.react.mod.DetailedHTMLProps[typings.react.mod.BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]
       
-      var bdi: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var bdi: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var bdo: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var bdo: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var big: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var big: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var blockquote: typings.react.mod.DetailedHTMLProps[typings.react.mod.BlockquoteHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var blockquote: typings.react.mod.DetailedHTMLProps[typings.react.mod.BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
       
-      var body: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBodyElement], HTMLBodyElement] = js.native
+      var body: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
       
-      var br: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBRElement], HTMLBRElement] = js.native
+      var br: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBRElement], HTMLBRElement]
       
-      var button: typings.react.mod.DetailedHTMLProps[typings.react.mod.ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement] = js.native
+      var button: typings.react.mod.DetailedHTMLProps[typings.react.mod.ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
       
-      var canvas: typings.react.mod.DetailedHTMLProps[typings.react.mod.CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement] = js.native
+      var canvas: typings.react.mod.DetailedHTMLProps[typings.react.mod.CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]
       
-      var caption: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var caption: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
       // TODO: It is SVGAnimateTransformElement but is not in TypeScript's lib.dom.d.ts for now.
-      var circle: typings.react.mod.SVGProps[SVGCircleElement] = js.native
+      var circle: typings.react.mod.SVGProps[SVGCircleElement]
       
-      var cite: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var cite: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var clipPath: typings.react.mod.SVGProps[SVGClipPathElement] = js.native
+      var clipPath: typings.react.mod.SVGProps[SVGClipPathElement]
       
-      var code: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var code: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var col: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+      var col: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
       
-      var colgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+      var colgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
       
-      var data: typings.react.mod.DetailedHTMLProps[typings.react.mod.DataHTMLAttributes[HTMLDataElement], HTMLDataElement] = js.native
+      var data: typings.react.mod.DetailedHTMLProps[typings.react.mod.DataHTMLAttributes[HTMLDataElement], HTMLDataElement]
       
-      var datalist: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDataListElement], HTMLDataListElement] = js.native
+      var datalist: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
       
-      var dd: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var dd: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var defs: typings.react.mod.SVGProps[SVGDefsElement] = js.native
+      var defs: typings.react.mod.SVGProps[SVGDefsElement]
       
-      var del: typings.react.mod.DetailedHTMLProps[typings.react.mod.DelHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var del: typings.react.mod.DetailedHTMLProps[typings.react.mod.DelHTMLAttributes[HTMLElement], HTMLElement]
       
-      var desc: typings.react.mod.SVGProps[SVGDescElement] = js.native
+      var desc: typings.react.mod.SVGProps[SVGDescElement]
       
-      var details: typings.react.mod.DetailedHTMLProps[typings.react.mod.DetailsHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var details: typings.react.mod.DetailedHTMLProps[typings.react.mod.DetailsHTMLAttributes[HTMLElement], HTMLElement]
       
-      var dfn: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var dfn: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var dialog: typings.react.mod.DetailedHTMLProps[typings.react.mod.DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement] = js.native
+      var dialog: typings.react.mod.DetailedHTMLProps[typings.react.mod.DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]
       
-      var div: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
+      var div: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDivElement], HTMLDivElement]
       
-      var dl: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDListElement], HTMLDListElement] = js.native
+      var dl: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDListElement], HTMLDListElement]
       
-      var dt: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var dt: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ellipse: typings.react.mod.SVGProps[SVGEllipseElement] = js.native
+      var ellipse: typings.react.mod.SVGProps[SVGEllipseElement]
       
-      var em: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var em: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var embed: typings.react.mod.DetailedHTMLProps[typings.react.mod.EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement] = js.native
+      var embed: typings.react.mod.DetailedHTMLProps[typings.react.mod.EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]
       
-      var feBlend: typings.react.mod.SVGProps[SVGFEBlendElement] = js.native
+      var feBlend: typings.react.mod.SVGProps[SVGFEBlendElement]
       
-      var feColorMatrix: typings.react.mod.SVGProps[SVGFEColorMatrixElement] = js.native
+      var feColorMatrix: typings.react.mod.SVGProps[SVGFEColorMatrixElement]
       
-      var feComponentTransfer: typings.react.mod.SVGProps[SVGFEComponentTransferElement] = js.native
+      var feComponentTransfer: typings.react.mod.SVGProps[SVGFEComponentTransferElement]
       
-      var feComposite: typings.react.mod.SVGProps[SVGFECompositeElement] = js.native
+      var feComposite: typings.react.mod.SVGProps[SVGFECompositeElement]
       
-      var feConvolveMatrix: typings.react.mod.SVGProps[SVGFEConvolveMatrixElement] = js.native
+      var feConvolveMatrix: typings.react.mod.SVGProps[SVGFEConvolveMatrixElement]
       
-      var feDiffuseLighting: typings.react.mod.SVGProps[SVGFEDiffuseLightingElement] = js.native
+      var feDiffuseLighting: typings.react.mod.SVGProps[SVGFEDiffuseLightingElement]
       
-      var feDisplacementMap: typings.react.mod.SVGProps[SVGFEDisplacementMapElement] = js.native
+      var feDisplacementMap: typings.react.mod.SVGProps[SVGFEDisplacementMapElement]
       
-      var feDistantLight: typings.react.mod.SVGProps[SVGFEDistantLightElement] = js.native
+      var feDistantLight: typings.react.mod.SVGProps[SVGFEDistantLightElement]
       
-      var feDropShadow: typings.react.mod.SVGProps[SVGFEDropShadowElement] = js.native
+      var feDropShadow: typings.react.mod.SVGProps[SVGFEDropShadowElement]
       
-      var feFlood: typings.react.mod.SVGProps[SVGFEFloodElement] = js.native
+      var feFlood: typings.react.mod.SVGProps[SVGFEFloodElement]
       
-      var feFuncA: typings.react.mod.SVGProps[SVGFEFuncAElement] = js.native
+      var feFuncA: typings.react.mod.SVGProps[SVGFEFuncAElement]
       
-      var feFuncB: typings.react.mod.SVGProps[SVGFEFuncBElement] = js.native
+      var feFuncB: typings.react.mod.SVGProps[SVGFEFuncBElement]
       
-      var feFuncG: typings.react.mod.SVGProps[SVGFEFuncGElement] = js.native
+      var feFuncG: typings.react.mod.SVGProps[SVGFEFuncGElement]
       
-      var feFuncR: typings.react.mod.SVGProps[SVGFEFuncRElement] = js.native
+      var feFuncR: typings.react.mod.SVGProps[SVGFEFuncRElement]
       
-      var feGaussianBlur: typings.react.mod.SVGProps[SVGFEGaussianBlurElement] = js.native
+      var feGaussianBlur: typings.react.mod.SVGProps[SVGFEGaussianBlurElement]
       
-      var feImage: typings.react.mod.SVGProps[SVGFEImageElement] = js.native
+      var feImage: typings.react.mod.SVGProps[SVGFEImageElement]
       
-      var feMerge: typings.react.mod.SVGProps[SVGFEMergeElement] = js.native
+      var feMerge: typings.react.mod.SVGProps[SVGFEMergeElement]
       
-      var feMergeNode: typings.react.mod.SVGProps[SVGFEMergeNodeElement] = js.native
+      var feMergeNode: typings.react.mod.SVGProps[SVGFEMergeNodeElement]
       
-      var feMorphology: typings.react.mod.SVGProps[SVGFEMorphologyElement] = js.native
+      var feMorphology: typings.react.mod.SVGProps[SVGFEMorphologyElement]
       
-      var feOffset: typings.react.mod.SVGProps[SVGFEOffsetElement] = js.native
+      var feOffset: typings.react.mod.SVGProps[SVGFEOffsetElement]
       
-      var fePointLight: typings.react.mod.SVGProps[SVGFEPointLightElement] = js.native
+      var fePointLight: typings.react.mod.SVGProps[SVGFEPointLightElement]
       
-      var feSpecularLighting: typings.react.mod.SVGProps[SVGFESpecularLightingElement] = js.native
+      var feSpecularLighting: typings.react.mod.SVGProps[SVGFESpecularLightingElement]
       
-      var feSpotLight: typings.react.mod.SVGProps[SVGFESpotLightElement] = js.native
+      var feSpotLight: typings.react.mod.SVGProps[SVGFESpotLightElement]
       
-      var feTile: typings.react.mod.SVGProps[SVGFETileElement] = js.native
+      var feTile: typings.react.mod.SVGProps[SVGFETileElement]
       
-      var feTurbulence: typings.react.mod.SVGProps[SVGFETurbulenceElement] = js.native
+      var feTurbulence: typings.react.mod.SVGProps[SVGFETurbulenceElement]
       
-      var fieldset: typings.react.mod.DetailedHTMLProps[typings.react.mod.FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement] = js.native
+      var fieldset: typings.react.mod.DetailedHTMLProps[typings.react.mod.FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]
       
-      var figcaption: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var figcaption: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var figure: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var figure: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var filter: typings.react.mod.SVGProps[SVGFilterElement] = js.native
+      var filter: typings.react.mod.SVGProps[SVGFilterElement]
       
-      var footer: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var footer: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var foreignObject: typings.react.mod.SVGProps[SVGForeignObjectElement] = js.native
+      var foreignObject: typings.react.mod.SVGProps[SVGForeignObjectElement]
       
-      var form: typings.react.mod.DetailedHTMLProps[typings.react.mod.FormHTMLAttributes[HTMLFormElement], HTMLFormElement] = js.native
+      var form: typings.react.mod.DetailedHTMLProps[typings.react.mod.FormHTMLAttributes[HTMLFormElement], HTMLFormElement]
       
-      var g: typings.react.mod.SVGProps[SVGGElement] = js.native
+      var g: typings.react.mod.SVGProps[SVGGElement]
       
-      var h1: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h1: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h2: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h2: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h3: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h3: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h4: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h4: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h5: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h5: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h6: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+      var h6: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var head: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadElement], HTMLHeadElement] = js.native
+      var head: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadElement], HTMLHeadElement]
       
-      var header: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var header: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var hgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var hgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var hr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHRElement], HTMLHRElement] = js.native
+      var hr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHRElement], HTMLHRElement]
       
-      var html: typings.react.mod.DetailedHTMLProps[typings.react.mod.HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement] = js.native
+      var html: typings.react.mod.DetailedHTMLProps[typings.react.mod.HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]
       
-      var i: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var i: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var iframe: typings.react.mod.DetailedHTMLProps[typings.react.mod.IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement] = js.native
+      var iframe: typings.react.mod.DetailedHTMLProps[typings.react.mod.IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]
       
-      var image: typings.react.mod.SVGProps[SVGImageElement] = js.native
+      var image: typings.react.mod.SVGProps[SVGImageElement]
       
-      var img: typings.react.mod.DetailedHTMLProps[typings.react.mod.ImgHTMLAttributes[HTMLImageElement], HTMLImageElement] = js.native
+      var img: typings.react.mod.DetailedHTMLProps[typings.react.mod.ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
       
-      var input: typings.react.mod.DetailedHTMLProps[typings.react.mod.InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+      var input: typings.react.mod.DetailedHTMLProps[typings.react.mod.InputHTMLAttributes[HTMLInputElement], HTMLInputElement]
       
-      var ins: typings.react.mod.DetailedHTMLProps[typings.react.mod.InsHTMLAttributes[HTMLModElement], HTMLModElement] = js.native
+      var ins: typings.react.mod.DetailedHTMLProps[typings.react.mod.InsHTMLAttributes[HTMLModElement], HTMLModElement]
       
-      var kbd: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var kbd: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var keygen: typings.react.mod.DetailedHTMLProps[typings.react.mod.KeygenHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var keygen: typings.react.mod.DetailedHTMLProps[typings.react.mod.KeygenHTMLAttributes[HTMLElement], HTMLElement]
       
-      var label: typings.react.mod.DetailedHTMLProps[typings.react.mod.LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement] = js.native
+      var label: typings.react.mod.DetailedHTMLProps[typings.react.mod.LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]
       
-      var legend: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLLegendElement], HTMLLegendElement] = js.native
+      var legend: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLLegendElement], HTMLLegendElement]
       
-      var li: typings.react.mod.DetailedHTMLProps[typings.react.mod.LiHTMLAttributes[HTMLLIElement], HTMLLIElement] = js.native
+      var li: typings.react.mod.DetailedHTMLProps[typings.react.mod.LiHTMLAttributes[HTMLLIElement], HTMLLIElement]
       
-      var line: typings.react.mod.SVGProps[SVGLineElement] = js.native
+      var line: typings.react.mod.SVGProps[SVGLineElement]
       
-      var linearGradient: typings.react.mod.SVGProps[SVGLinearGradientElement] = js.native
+      var linearGradient: typings.react.mod.SVGProps[SVGLinearGradientElement]
       
-      var link: typings.react.mod.DetailedHTMLProps[typings.react.mod.LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement] = js.native
+      var link: typings.react.mod.DetailedHTMLProps[typings.react.mod.LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
       
-      var main: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var main: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var map: typings.react.mod.DetailedHTMLProps[typings.react.mod.MapHTMLAttributes[HTMLMapElement], HTMLMapElement] = js.native
+      var map: typings.react.mod.DetailedHTMLProps[typings.react.mod.MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
       
-      var mark: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var mark: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var marker: typings.react.mod.SVGProps[SVGMarkerElement] = js.native
+      var marker: typings.react.mod.SVGProps[SVGMarkerElement]
       
-      var mask: typings.react.mod.SVGProps[SVGMaskElement] = js.native
+      var mask: typings.react.mod.SVGProps[SVGMaskElement]
       
-      var menu: typings.react.mod.DetailedHTMLProps[typings.react.mod.MenuHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var menu: typings.react.mod.DetailedHTMLProps[typings.react.mod.MenuHTMLAttributes[HTMLElement], HTMLElement]
       
-      var menuitem: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var menuitem: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var meta: typings.react.mod.DetailedHTMLProps[typings.react.mod.MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement] = js.native
+      var meta: typings.react.mod.DetailedHTMLProps[typings.react.mod.MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
       
-      var metadata: typings.react.mod.SVGProps[SVGMetadataElement] = js.native
+      var metadata: typings.react.mod.SVGProps[SVGMetadataElement]
       
-      var meter: typings.react.mod.DetailedHTMLProps[typings.react.mod.MeterHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var meter: typings.react.mod.DetailedHTMLProps[typings.react.mod.MeterHTMLAttributes[HTMLElement], HTMLElement]
       
-      var mpath: typings.react.mod.SVGProps[SVGElement] = js.native
+      var mpath: typings.react.mod.SVGProps[SVGElement]
       
-      var nav: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var nav: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var noindex: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var noindex: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var noscript: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var noscript: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var `object`: typings.react.mod.DetailedHTMLProps[typings.react.mod.ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement] = js.native
+      var `object`: typings.react.mod.DetailedHTMLProps[typings.react.mod.ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]
       
-      var ol: typings.react.mod.DetailedHTMLProps[typings.react.mod.OlHTMLAttributes[HTMLOListElement], HTMLOListElement] = js.native
+      var ol: typings.react.mod.DetailedHTMLProps[typings.react.mod.OlHTMLAttributes[HTMLOListElement], HTMLOListElement]
       
-      var optgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement] = js.native
+      var optgroup: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]
       
-      var option: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement] = js.native
+      var option: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
       
-      var output: typings.react.mod.DetailedHTMLProps[typings.react.mod.OutputHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var output: typings.react.mod.DetailedHTMLProps[typings.react.mod.OutputHTMLAttributes[HTMLElement], HTMLElement]
       
-      var p: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement] = js.native
+      var p: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
       
-      var param: typings.react.mod.DetailedHTMLProps[typings.react.mod.ParamHTMLAttributes[HTMLParamElement], HTMLParamElement] = js.native
+      var param: typings.react.mod.DetailedHTMLProps[typings.react.mod.ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]
       
-      var path: typings.react.mod.SVGProps[SVGPathElement] = js.native
+      var path: typings.react.mod.SVGProps[SVGPathElement]
       
-      var pattern: typings.react.mod.SVGProps[SVGPatternElement] = js.native
+      var pattern: typings.react.mod.SVGProps[SVGPatternElement]
       
-      var picture: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var picture: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var polygon: typings.react.mod.SVGProps[SVGPolygonElement] = js.native
+      var polygon: typings.react.mod.SVGProps[SVGPolygonElement]
       
-      var polyline: typings.react.mod.SVGProps[SVGPolylineElement] = js.native
+      var polyline: typings.react.mod.SVGProps[SVGPolylineElement]
       
-      var pre: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLPreElement], HTMLPreElement] = js.native
+      var pre: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLPreElement], HTMLPreElement]
       
-      var progress: typings.react.mod.DetailedHTMLProps[typings.react.mod.ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement] = js.native
+      var progress: typings.react.mod.DetailedHTMLProps[typings.react.mod.ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]
       
-      var q: typings.react.mod.DetailedHTMLProps[typings.react.mod.QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement] = js.native
+      var q: typings.react.mod.DetailedHTMLProps[typings.react.mod.QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
       
-      var radialGradient: typings.react.mod.SVGProps[SVGRadialGradientElement] = js.native
+      var radialGradient: typings.react.mod.SVGProps[SVGRadialGradientElement]
       
-      var rect: typings.react.mod.SVGProps[SVGRectElement] = js.native
+      var rect: typings.react.mod.SVGProps[SVGRectElement]
       
-      var rp: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var rp: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var rt: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var rt: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ruby: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var ruby: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var s: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var s: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var samp: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var samp: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var script: typings.react.mod.DetailedHTMLProps[typings.react.mod.ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement] = js.native
+      var script: typings.react.mod.DetailedHTMLProps[typings.react.mod.ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]
       
-      var section: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var section: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var select: typings.react.mod.DetailedHTMLProps[typings.react.mod.SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement] = js.native
+      var select: typings.react.mod.DetailedHTMLProps[typings.react.mod.SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
       
-      var slot: typings.react.mod.DetailedHTMLProps[typings.react.mod.SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement] = js.native
+      var slot: typings.react.mod.DetailedHTMLProps[typings.react.mod.SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]
       
-      var small: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var small: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var source: typings.react.mod.DetailedHTMLProps[typings.react.mod.SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement] = js.native
+      var source: typings.react.mod.DetailedHTMLProps[typings.react.mod.SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]
       
-      var span: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLSpanElement], HTMLSpanElement] = js.native
+      var span: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLSpanElement], HTMLSpanElement]
       
-      var stop: typings.react.mod.SVGProps[SVGStopElement] = js.native
+      var stop: typings.react.mod.SVGProps[SVGStopElement]
       
-      var strong: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var strong: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var style: typings.react.mod.DetailedHTMLProps[typings.react.mod.StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement] = js.native
+      var style: typings.react.mod.DetailedHTMLProps[typings.react.mod.StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]
       
-      var sub: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var sub: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var summary: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var summary: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var sup: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var sup: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
       // SVG
-      var svg: typings.react.mod.SVGProps[SVGSVGElement] = js.native
+      var svg: typings.react.mod.SVGProps[SVGSVGElement]
       
-      var switch: typings.react.mod.SVGProps[SVGSwitchElement] = js.native
+      var switch: typings.react.mod.SVGProps[SVGSwitchElement]
       
-      var symbol: typings.react.mod.SVGProps[SVGSymbolElement] = js.native
+      var symbol: typings.react.mod.SVGProps[SVGSymbolElement]
       
-      var table: typings.react.mod.DetailedHTMLProps[typings.react.mod.TableHTMLAttributes[HTMLTableElement], HTMLTableElement] = js.native
+      var table: typings.react.mod.DetailedHTMLProps[typings.react.mod.TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
       
-      var tbody: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+      var tbody: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
       var td: typings.react.mod.DetailedHTMLProps[
             typings.react.mod.TdHTMLAttributes[HTMLTableDataCellElement], 
             HTMLTableDataCellElement
-          ] = js.native
+          ]
       
-      var template: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement] = js.native
+      var template: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]
       
-      var text: typings.react.mod.SVGProps[SVGTextElement] = js.native
+      var text: typings.react.mod.SVGProps[SVGTextElement]
       
-      var textPath: typings.react.mod.SVGProps[SVGTextPathElement] = js.native
+      var textPath: typings.react.mod.SVGProps[SVGTextPathElement]
       
-      var textarea: typings.react.mod.DetailedHTMLProps[typings.react.mod.TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement] = js.native
+      var textarea: typings.react.mod.DetailedHTMLProps[typings.react.mod.TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]
       
-      var tfoot: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+      var tfoot: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
       var th: typings.react.mod.DetailedHTMLProps[
             typings.react.mod.ThHTMLAttributes[HTMLTableHeaderCellElement], 
             HTMLTableHeaderCellElement
-          ] = js.native
+          ]
       
-      var thead: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+      var thead: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
-      var time: typings.react.mod.DetailedHTMLProps[typings.react.mod.TimeHTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var time: typings.react.mod.DetailedHTMLProps[typings.react.mod.TimeHTMLAttributes[HTMLElement], HTMLElement]
       
-      var title: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTitleElement], HTMLTitleElement] = js.native
+      var title: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
       
-      var tr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement] = js.native
+      var tr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]
       
-      var track: typings.react.mod.DetailedHTMLProps[typings.react.mod.TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement] = js.native
+      var track: typings.react.mod.DetailedHTMLProps[typings.react.mod.TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]
       
-      var tspan: typings.react.mod.SVGProps[SVGTSpanElement] = js.native
+      var tspan: typings.react.mod.SVGProps[SVGTSpanElement]
       
-      var u: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var u: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ul: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLUListElement], HTMLUListElement] = js.native
+      var ul: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLUListElement], HTMLUListElement]
       
-      var use: typings.react.mod.SVGProps[SVGUseElement] = js.native
+      var use: typings.react.mod.SVGProps[SVGUseElement]
       
-      var `var`: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var `var`: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var video: typings.react.mod.DetailedHTMLProps[typings.react.mod.VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement] = js.native
+      var video: typings.react.mod.DetailedHTMLProps[typings.react.mod.VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]
       
-      var view: typings.react.mod.SVGProps[SVGViewElement] = js.native
+      var view: typings.react.mod.SVGProps[SVGViewElement]
       
-      var wbr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement] = js.native
+      var wbr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var webview: typings.react.mod.DetailedHTMLProps[typings.react.mod.WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement] = js.native
+      var webview: typings.react.mod.DetailedHTMLProps[typings.react.mod.WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]
     }
     object IntrinsicElements {
       

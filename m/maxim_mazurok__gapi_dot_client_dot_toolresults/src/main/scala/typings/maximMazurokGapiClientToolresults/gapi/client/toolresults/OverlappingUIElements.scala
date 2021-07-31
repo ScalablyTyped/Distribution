@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlappingUIElements extends StObject {
   
   /** Resource names of the overlapping screen elements */
-  var resourceName: js.UndefOr[js.Array[String]] = js.native
+  var resourceName: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The screen id of the elements */
-  var screenId: js.UndefOr[String] = js.native
+  var screenId: js.UndefOr[String] = js.undefined
 }
 object OverlappingUIElements {
   

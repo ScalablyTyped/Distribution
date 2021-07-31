@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppSpecification extends StObject {
   
   /**
     * The arguments for a container used to run a processing job.
     */
-  var ContainerArguments: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerArguments] = js.native
+  var ContainerArguments: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerArguments] = js.undefined
   
   /**
     * The entrypoint for a container used to run a processing job.
     */
-  var ContainerEntrypoint: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerEntrypoint] = js.native
+  var ContainerEntrypoint: js.UndefOr[typings.awsSdk.sagemakerMod.ContainerEntrypoint] = js.undefined
   
   /**
     * The container image to be run by the processing job.
     */
-  var ImageUri: typings.awsSdk.sagemakerMod.ImageUri = js.native
+  var ImageUri: typings.awsSdk.sagemakerMod.ImageUri
 }
 object AppSpecification {
   

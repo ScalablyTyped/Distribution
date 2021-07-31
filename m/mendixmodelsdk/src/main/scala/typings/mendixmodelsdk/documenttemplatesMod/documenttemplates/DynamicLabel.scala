@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.pages.FormattingInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object DynamicLabel {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.create")
-  @js.native
-  def create(model: IModel): DynamicLabel = js.native
+  @scala.inline
+  def create(model: IModel): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /**
     * Creates and returns a new DynamicLabel instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object DynamicLabel {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.createInDocumentTemplateUnderToplevels")
-  @js.native
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DynamicLabel = js.native
+  @scala.inline
+  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /**
     * Creates and returns a new DynamicLabel instance in the SDK and on the server.
@@ -69,9 +66,8 @@ object DynamicLabel {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.createInDropZoneUnderWidget")
-  @js.native
-  def createInDropZoneUnderWidget(container: DropZone): DynamicLabel = js.native
+  @scala.inline
+  def createInDropZoneUnderWidget(container: DropZone): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.structureTypeName")

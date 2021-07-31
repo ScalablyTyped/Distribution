@@ -2,13 +2,11 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportApiResponse extends StObject {
   
-  var body: js.UndefOr[ExportedApi] = js.native
+  var body: js.UndefOr[ExportedApi] = js.undefined
 }
 object ExportApiResponse {
   

@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.diagram.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramClickEvent extends DiagramEvent {
+trait DiagramClickEvent
+  extends StObject
+     with DiagramEvent {
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var point: js.UndefOr[Point] = js.native
+  var point: js.UndefOr[Point] = js.undefined
 }
 object DiagramClickEvent {
   

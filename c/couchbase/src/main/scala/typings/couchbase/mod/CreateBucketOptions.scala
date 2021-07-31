@@ -2,24 +2,22 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBucketOptions extends StObject {
   
-  var authType: js.UndefOr[String] = js.native
+  var authType: js.UndefOr[String] = js.undefined
   
-  var bucketType: js.UndefOr[String] = js.native
+  var bucketType: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var ramQuotaMB: js.UndefOr[Double] = js.native
+  var ramQuotaMB: js.UndefOr[Double] = js.undefined
   
-  var replicaNumber: js.UndefOr[Double] = js.native
+  var replicaNumber: js.UndefOr[Double] = js.undefined
 }
 object CreateBucketOptions {
   

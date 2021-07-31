@@ -3,22 +3,21 @@ package typings.kendoUi.kendo.data
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSchemaModelFieldValidation
-  extends /* index */ StringDictionary[js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[js.Any] {
   
-  var max: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[js.Any] = js.undefined
   
-  var maxLength: js.UndefOr[js.Any] = js.native
+  var maxLength: js.UndefOr[js.Any] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.native
+  var min: js.UndefOr[js.Any] = js.undefined
   
-  var minLength: js.UndefOr[js.Any] = js.native
+  var minLength: js.UndefOr[js.Any] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object DataSourceSchemaModelFieldValidation {
   

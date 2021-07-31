@@ -2,19 +2,18 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandsAttributesObject extends StObject {
   
-  var extension: CommandsAttributesExtensionObject = js.native
+  var `extension`: CommandsAttributesExtensionObject
 }
 object CommandsAttributesObject {
   
   @scala.inline
-  def apply(extension: CommandsAttributesExtensionObject): CommandsAttributesObject = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
+  def apply(`extension`: CommandsAttributesExtensionObject): CommandsAttributesObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsAttributesObject]
   }
   

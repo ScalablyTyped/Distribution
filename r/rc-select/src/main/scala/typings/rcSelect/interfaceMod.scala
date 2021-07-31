@@ -9,21 +9,19 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait FlattenOptionData extends StObject {
     
-    var data: OptionData | OptionGroupData = js.native
+    var data: OptionData | OptionGroupData
     
-    var group: js.UndefOr[Boolean] = js.native
+    var group: js.UndefOr[Boolean] = js.undefined
     
-    var groupOption: js.UndefOr[Boolean] = js.native
+    var groupOption: js.UndefOr[Boolean] = js.undefined
     
-    var key: String | Double = js.native
+    var key: String | Double
   }
   object FlattenOptionData {
     
@@ -76,25 +74,24 @@ object interfaceMod {
   
   type OnActiveValue = js.Function3[/* active */ RawValueType, /* index */ Double, /* info */ js.UndefOr[Source], Unit]
   
-  @js.native
   trait OptionCoreData extends StObject {
     
     /** @deprecated Only works when use `children` as option data */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var value: Key = js.native
+    var value: Key
   }
   object OptionCoreData {
     
@@ -154,9 +151,9 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait OptionData
-    extends OptionCoreData
+    extends StObject
+       with OptionCoreData
        with /** Save for customize data */
   /* prop */ StringDictionary[js.Any]
   object OptionData {
@@ -168,20 +165,20 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait OptionGroupData
-    extends /** Save for customize data */
+    extends StObject
+       with /** Save for customize data */
   /* prop */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var options: js.Array[OptionData] = js.native
+    var options: js.Array[OptionData]
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object OptionGroupData {
     

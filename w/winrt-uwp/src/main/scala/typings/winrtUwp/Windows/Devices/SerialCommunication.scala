@@ -9,7 +9,6 @@ import typings.winrtUwp.winrtUwpStrings.errorreceived
 import typings.winrtUwp.winrtUwpStrings.pinchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Devices.SerialCommunication namespace defines Windows Runtime classes that a Windows store app can use to communicate with a device that exposes a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states. */
@@ -24,23 +23,33 @@ object SerialCommunication {
     
     /** A character-buffer overrun has occurred. The next character is lost. */
     @js.native
-    sealed trait bufferOverrun extends SerialError
+    sealed trait bufferOverrun
+      extends StObject
+         with SerialError
     
     /** The hardware detected a framing error. */
     @js.native
-    sealed trait frame extends SerialError
+    sealed trait frame
+      extends StObject
+         with SerialError
     
     /** An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character. */
     @js.native
-    sealed trait receiveFull extends SerialError
+    sealed trait receiveFull
+      extends StObject
+         with SerialError
     
     /** The hardware detected a parity error. */
     @js.native
-    sealed trait receiveParity extends SerialError
+    sealed trait receiveParity
+      extends StObject
+         with SerialError
     
     /** The application tried to transmit a character, but the output buffer was full. */
     @js.native
-    sealed trait transmitFull extends SerialError
+    sealed trait transmitFull
+      extends StObject
+         with SerialError
   }
   
   @js.native
@@ -52,19 +61,27 @@ object SerialCommunication {
     
     /** No protocol is used for the handshake. */
     @js.native
-    sealed trait none extends SerialHandshake
+    sealed trait none
+      extends StObject
+         with SerialHandshake
     
     /** When the port is receiving data and if the read buffer is full, the Request-to-Send (RTS) line is set to false. When buffer is available, the line is set to true. When the serial port is transmitting data, CTS line is set to false and the port does not send data until there is room in the write buffer. */
     @js.native
-    sealed trait requestToSend extends SerialHandshake
+    sealed trait requestToSend
+      extends StObject
+         with SerialHandshake
     
     /** Both RequestToSend and XOnXOff controls are used for flow control. */
     @js.native
-    sealed trait requestToSendXOnXOff extends SerialHandshake
+    sealed trait requestToSendXOnXOff
+      extends StObject
+         with SerialHandshake
     
     /** The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform the sender that the port is now ready to receive data. */
     @js.native
-    sealed trait xonXOff extends SerialHandshake
+    sealed trait xonXOff
+      extends StObject
+         with SerialHandshake
   }
   
   @js.native
@@ -76,23 +93,33 @@ object SerialCommunication {
     
     /** Sets the parity bit so that the total count of data bits set is an even number. */
     @js.native
-    sealed trait even extends SerialParity
+    sealed trait even
+      extends StObject
+         with SerialParity
     
     /** Leaves the parity bit set to 1. */
     @js.native
-    sealed trait mark extends SerialParity
+    sealed trait mark
+      extends StObject
+         with SerialParity
     
     /** No parity check occurs. */
     @js.native
-    sealed trait none extends SerialParity
+    sealed trait none
+      extends StObject
+         with SerialParity
     
     /** Sets the parity bit so that the total count of data bits set is an odd number. */
     @js.native
-    sealed trait odd extends SerialParity
+    sealed trait odd
+      extends StObject
+         with SerialParity
     
     /** Leaves the parity bit set to 0. */
     @js.native
-    sealed trait space extends SerialParity
+    sealed trait space
+      extends StObject
+         with SerialParity
   }
   
   @js.native
@@ -104,23 +131,33 @@ object SerialCommunication {
     
     /** Change in the break signal state. */
     @js.native
-    sealed trait breakSignal extends SerialPinChange
+    sealed trait breakSignal
+      extends StObject
+         with SerialPinChange
     
     /** Change in the Carrier Detect line for the port. */
     @js.native
-    sealed trait carrierDetect extends SerialPinChange
+    sealed trait carrierDetect
+      extends StObject
+         with SerialPinChange
     
     /** Change in the Clear-to-Send line for the port. */
     @js.native
-    sealed trait clearToSend extends SerialPinChange
+    sealed trait clearToSend
+      extends StObject
+         with SerialPinChange
     
     /** Change in the state of the Data Set Ready (DSR) signal. */
     @js.native
-    sealed trait dataSetReady extends SerialPinChange
+    sealed trait dataSetReady
+      extends StObject
+         with SerialPinChange
     
     /** Change in the ring indicator state. */
     @js.native
-    sealed trait ringIndicator extends SerialPinChange
+    sealed trait ringIndicator
+      extends StObject
+         with SerialPinChange
   }
   
   @js.native
@@ -132,23 +169,28 @@ object SerialCommunication {
     
     /** One stop bit is used. */
     @js.native
-    sealed trait one extends SerialStopBitCount
+    sealed trait one
+      extends StObject
+         with SerialStopBitCount
     
     /** 1.5 stop bits are used. */
     @js.native
-    sealed trait onePointFive extends SerialStopBitCount
+    sealed trait onePointFive
+      extends StObject
+         with SerialStopBitCount
     
     /** Two stop bits are used. */
     @js.native
-    sealed trait two extends SerialStopBitCount
+    sealed trait two
+      extends StObject
+         with SerialStopBitCount
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when error occurs on the serial port. */
-  @js.native
   trait ErrorReceivedEventArgs extends StObject {
     
     /** Gets the character type received that caused the event on the serial port. */
-    var error: SerialError = js.native
+    var error: SerialError
   }
   object ErrorReceivedEventArgs {
     
@@ -167,11 +209,10 @@ object SerialCommunication {
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the state of a signal line changes on the serial port. */
-  @js.native
   trait PinChangedEventArgs extends StObject {
     
     /** Gets the type of signal change that caused the event on the serial port. */
-    var pinChange: SerialPinChange = js.native
+    var pinChange: SerialPinChange
   }
   object PinChangedEventArgs {
     
@@ -193,7 +234,7 @@ object SerialCommunication {
   @js.native
   trait SerialDevice extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_errorreceived(`type`: errorreceived, listener: TypedEventHandler[SerialDevice, ErrorReceivedEventArgs]): Unit = js.native
     @JSName("addEventListener")
@@ -236,13 +277,13 @@ object SerialCommunication {
     var isRequestToSendEnabled: Boolean = js.native
     
     /** Event handler that is invoked when error occurs on the serial port. */
-    def onerrorreceived(ev: ErrorReceivedEventArgs with WinRTEvent[SerialDevice]): Unit = js.native
+    def onerrorreceived(ev: ErrorReceivedEventArgs & WinRTEvent[SerialDevice]): Unit = js.native
     /** Event handler that is invoked when error occurs on the serial port. */
     @JSName("onerrorreceived")
     var onerrorreceived_Original: TypedEventHandler[SerialDevice, ErrorReceivedEventArgs] = js.native
     
     /** Event handler that is invoked when the state of a signal or line changes on the serial port. */
-    def onpinchanged(ev: PinChangedEventArgs with WinRTEvent[SerialDevice]): Unit = js.native
+    def onpinchanged(ev: PinChangedEventArgs & WinRTEvent[SerialDevice]): Unit = js.native
     /** Event handler that is invoked when the state of a signal or line changes on the serial port. */
     @JSName("onpinchanged")
     var onpinchanged_Original: TypedEventHandler[SerialDevice, PinChangedEventArgs] = js.native
@@ -259,7 +300,7 @@ object SerialCommunication {
     /** Gets or sets the time-out value for a read operation. */
     var readTimeout: Double = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_errorreceived(`type`: errorreceived, listener: TypedEventHandler[SerialDevice, ErrorReceivedEventArgs]): Unit = js.native
     @JSName("removeEventListener")

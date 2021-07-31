@@ -6,28 +6,26 @@ import typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.NONE
 import typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.UPDATING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionConfigMod {
   
-  @js.native
   trait EncryptionConfig extends StObject {
     
     /**
       * <p>The ID of the customer master key (CMK) used for encryption, if applicable.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The encryption status. While the status is <code>UPDATING</code>, X-Ray may encrypt data with a combination of the new and old settings.</p>
       */
-    var Status: js.UndefOr[UPDATING | ACTIVE | String] = js.native
+    var Status: js.UndefOr[UPDATING | ACTIVE | String] = js.undefined
     
     /**
       * <p>The type of encryption. Set to <code>KMS</code> for encryption with CMKs. Set to <code>NONE</code> for default encryption.</p>
       */
-    var Type: js.UndefOr[NONE | KMS | String] = js.native
+    var Type: js.UndefOr[NONE | KMS | String] = js.undefined
   }
   object EncryptionConfig {
     

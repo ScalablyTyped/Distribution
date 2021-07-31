@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAcceleratorTypesResponse extends StObject {
   
   /** The listed nodes. */
-  var acceleratorTypes: js.UndefOr[js.Array[AcceleratorType]] = js.native
+  var acceleratorTypes: js.UndefOr[js.Array[AcceleratorType]] = js.undefined
   
   /** The next page token or empty if none. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListAcceleratorTypesResponse {
   

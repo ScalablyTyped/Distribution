@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceEntry extends StObject {
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var isWriteAccess: Boolean = js.native
+  var isWriteAccess: Boolean
   
-  var limChar: Double = js.native
+  var limChar: Double
   
-  var minChar: Double = js.native
+  var minChar: Double
 }
 object ReferenceEntry {
   

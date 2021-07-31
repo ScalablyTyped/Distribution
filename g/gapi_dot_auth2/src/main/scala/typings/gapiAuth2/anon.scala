@@ -3,12 +3,10 @@ package typings.gapiAuth2
 import typings.gapiAuth2.gapi.auth2.GoogleUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Apppackagename extends StObject {
     
     /**
@@ -16,42 +14,42 @@ object anon {
       * <a href="https://developers.google.com/identity/sign-in/web/android-app-installs">Android app installs from your web site</a>.
       * Optional. (default: none)
       */
-    var app_package_name: js.UndefOr[String] = js.native
+    var app_package_name: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the button in pixels (default: 36).
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Display long labels such as "Sign in with Google" rather than "Sign in" (default: false).
       */
-    var longtitle: js.UndefOr[Boolean] = js.native
+    var longtitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The callback function to call when sign-in fails (default: none).
       */
-    var onfailure: js.UndefOr[js.Function1[/* reason */ Error, Unit]] = js.native
+    var onfailure: js.UndefOr[js.Function1[/* reason */ Error, Unit]] = js.undefined
     
     /**
       * The callback function to call when a user successfully signs in (default: none).
       */
-    var onsuccess: js.UndefOr[js.Function1[/* user */ GoogleUser, Unit]] = js.native
+    var onsuccess: js.UndefOr[js.Function1[/* user */ GoogleUser, Unit]] = js.undefined
     
     /**
       * The auth scope or scopes to authorize. Auth scopes for individual APIs can be found in their documentation.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /**
       * The color theme of the button: either light or dark (default: light).
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the button in pixels (default: 120).
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Apppackagename {
     
@@ -114,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
   }
   object Code {
     
@@ -135,12 +132,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Details extends StObject {
     
-    var details: String = js.native
+    var details: String
     
-    var error: String = js.native
+    var error: String
   }
   object Details {
     
@@ -161,10 +157,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: String = js.native
+    var error: String
   }
   object Error {
     

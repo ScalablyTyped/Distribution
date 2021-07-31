@@ -70,246 +70,253 @@ import typings.semanticUiProgress.semanticUiProgressStrings.value
 import typings.semanticUiProgress.semanticUiProgressStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def progress(): JQuery = js.native
-  def progress(behavior: setting, name: autoSuccess, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: autoSuccess, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def progress(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def progress(behavior: setting, name: label, value: js.UndefOr[scala.Nothing]): percent | ratio = js.native
-  def progress(behavior: setting, name: label, value: percent): JQuery = js.native
-  def progress(behavior: setting, name: label, value: ratio): JQuery = js.native
-  def progress(behavior: setting, name: limitValues, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: limitValues, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def progress(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def progress(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def progress(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def progress(behavior: setting, name: name, value: String): JQuery = js.native
-  def progress(behavior: setting, name: onActive, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def progress(): JQuery
+  def progress(behavior: setting, name: autoSuccess, value: Boolean): JQuery
+  def progress(behavior: setting, name: autoSuccess, value: Unit): Boolean
+  def progress(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def progress(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def progress(behavior: setting, name: debug, value: Boolean): JQuery
+  def progress(behavior: setting, name: debug, value: Unit): Boolean
+  def progress(behavior: setting, name: error, value: Unit): ErrorSettings
+  def progress(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def progress(behavior: setting, name: label, value: Unit): percent | ratio
+  def progress(behavior: setting, name: label, value: percent): JQuery
+  def progress(behavior: setting, name: label, value: ratio): JQuery
+  def progress(behavior: setting, name: limitValues, value: Boolean): JQuery
+  def progress(behavior: setting, name: limitValues, value: Unit): Boolean
+  def progress(behavior: setting, name: metadata, value: Unit): MetadataSettings
+  def progress(behavior: setting, name: metadata, value: MetadataSettings): JQuery
+  def progress(behavior: setting, name: namespace, value: String): JQuery
+  def progress(behavior: setting, name: namespace, value: Unit): String
+  def progress(behavior: setting, name: name, value: String): JQuery
+  def progress(behavior: setting, name: name, value: Unit): String
   def progress(
     behavior: setting,
     name: onActive,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ): JQuery = js.native
-  def progress(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
+  ): JQuery
+  def progress(behavior: setting, name: onActive, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   def progress(
     behavior: setting,
     name: onChange,
     value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
-  ): JQuery = js.native
-  def progress(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  ): JQuery
+  def progress(behavior: setting, name: onChange, value: Unit): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
   def progress(
     behavior: setting,
     name: onError,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ): JQuery = js.native
-  def progress(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
+  ): JQuery
+  def progress(behavior: setting, name: onError, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   def progress(
     behavior: setting,
     name: onSuccess,
     value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
-  ): JQuery = js.native
-  def progress(behavior: setting, name: onWarning, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  ): JQuery
+  def progress(behavior: setting, name: onSuccess, value: Unit): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
   def progress(
     behavior: setting,
     name: onWarning,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ): JQuery = js.native
-  def progress(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: precision, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def progress(behavior: setting, name: precision, value: Double): JQuery = js.native
-  def progress(behavior: setting, name: random, value: RandomSettings): JQuery = js.native
-  def progress(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
-  def progress(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def progress(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def progress(behavior: setting, name: showActivity, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: showActivity, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def progress(behavior: setting, name: text, value: js.UndefOr[scala.Nothing]): TextSettings = js.native
-  def progress(behavior: setting, name: total, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
-  def progress(behavior: setting, name: total, value: Double): JQuery = js.native
-  def progress(behavior: setting, name: total, value: `false`): JQuery = js.native
-  def progress(behavior: setting, name: value, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
-  def progress(behavior: setting, name: value, value: Double): JQuery = js.native
-  def progress(behavior: setting, name: value, value: `false`): JQuery = js.native
-  def progress(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def progress(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def progress(settings: ProgressSettings): JQuery = js.native
+  ): JQuery
+  def progress(behavior: setting, name: onWarning, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
+  def progress(behavior: setting, name: performance, value: Boolean): JQuery
+  def progress(behavior: setting, name: performance, value: Unit): Boolean
+  def progress(behavior: setting, name: precision, value: Double): JQuery
+  def progress(behavior: setting, name: precision, value: Unit): Double
+  def progress(behavior: setting, name: random, value: Unit): RandomSettings
+  def progress(behavior: setting, name: random, value: RandomSettings): JQuery
+  def progress(behavior: setting, name: regExp, value: Unit): RegExpSettings
+  def progress(behavior: setting, name: regExp, value: RegExpSettings): JQuery
+  def progress(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def progress(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def progress(behavior: setting, name: showActivity, value: Boolean): JQuery
+  def progress(behavior: setting, name: showActivity, value: Unit): Boolean
+  def progress(behavior: setting, name: silent, value: Boolean): JQuery
+  def progress(behavior: setting, name: silent, value: Unit): Boolean
+  def progress(behavior: setting, name: text, value: Unit): TextSettings
+  def progress(behavior: setting, name: text, value: TextSettings): JQuery
+  def progress(behavior: setting, name: total, value: Double): JQuery
+  def progress(behavior: setting, name: total, value: Unit): `false` | Double
+  def progress(behavior: setting, name: total, value: `false`): JQuery
+  def progress(behavior: setting, name: value, value: Double): JQuery
+  def progress(behavior: setting, name: value, value: Unit): `false` | Double
+  def progress(behavior: setting, name: value, value: `false`): JQuery
+  def progress(behavior: setting, name: verbose, value: Boolean): JQuery
+  def progress(behavior: setting, name: verbose, value: Unit): Boolean
+  def progress(settings: ProgressSettings): JQuery
   @JSName("progress")
-  def progress_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  @JSName("progress")
-  def progress_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  @JSName("progress")
-  def progress_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  @JSName("progress")
-  def progress_JQuery(behavior: setting, name: text, value: TextSettings): JQuery = js.native
-  @JSName("progress")
-  def progress_MetadataSettings(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-  @JSName("progress")
-  var progress_Original: Progress = js.native
-  @JSName("progress")
-  def progress_RandomSettings(behavior: setting, name: random, value: js.UndefOr[scala.Nothing]): RandomSettings = js.native
+  var progress_Original: Progress
   /**
     * Finishes progress and sets loaded to 100%
     */
   @JSName("progress")
-  def progress_complete(behavior: complete): JQuery = js.native
+  def progress_complete(behavior: complete): JQuery
   /**
     * Decrements progress by decrement value, if not passed a value will use random amount specified in settings
     */
   @JSName("progress")
-  def progress_decrement(behavior: decrement): JQuery = js.native
+  def progress_decrement(behavior: decrement): JQuery
   @JSName("progress")
-  def progress_decrement(behavior: decrement, decrementValue: Double): JQuery = js.native
+  def progress_decrement(behavior: decrement, decrementValue: Double): JQuery
   @JSName("progress")
-  def progress_destroy(behavior: destroy): JQuery = js.native
+  def progress_destroy(behavior: destroy): JQuery
   /**
     * Returns normalized value inside acceptable range specified by total.
     */
   @JSName("progress")
-  def progress_getnormalizedvalue(behavior: `get normalized value`, value: Double): Double = js.native
+  def progress_getnormalizedvalue(behavior: `get normalized value`, value: Double): Double
   /**
     * Returns percent as last specified
     */
   @JSName("progress")
-  def progress_getpercent(behavior: `get percent`): Double = js.native
+  def progress_getpercent(behavior: `get percent`): Double
   /**
     * Replaces templated string with value, total, percent left and percent.
     */
   @JSName("progress")
-  def progress_gettext(behavior: `get text`, text: String): String = js.native
+  def progress_gettext(behavior: `get text`, text: String): String
   /**
     * Returns total
     */
   @JSName("progress")
-  def progress_gettotal(behavior: `get total`): Double = js.native
+  def progress_gettotal(behavior: `get total`): Double
   /**
     * Returns current progress value
     */
   @JSName("progress")
-  def progress_getvalue(behavior: `get value`): Double = js.native
+  def progress_getvalue(behavior: `get value`): Double
   /**
     * Increments progress by increment value, if not passed a value will use random amount specified in settings
     */
   @JSName("progress")
-  def progress_increment(behavior: increment): JQuery = js.native
+  def progress_increment(behavior: increment): JQuery
   @JSName("progress")
-  def progress_increment(behavior: increment, incrementValue: Double): JQuery = js.native
+  def progress_increment(behavior: increment, incrementValue: Double): JQuery
   /**
     * Returns whether progress is in active state
     */
   @JSName("progress")
-  def progress_isactive(behavior: `is active`): Boolean = js.native
+  def progress_isactive(behavior: `is active`): Boolean
   /**
     * Returns whether progress is completed
     */
   @JSName("progress")
-  def progress_iscomplete(behavior: `is complete`): Boolean = js.native
+  def progress_iscomplete(behavior: `is complete`): Boolean
   /**
     * Returns whether progress is in error state
     */
   @JSName("progress")
-  def progress_iserror(behavior: `is error`): Boolean = js.native
+  def progress_iserror(behavior: `is error`): Boolean
   /**
     * Returns whether progress was a success
     */
   @JSName("progress")
-  def progress_issuccess(behavior: `is success`): Boolean = js.native
+  def progress_issuccess(behavior: `is success`): Boolean
   /**
     * Returns whether progress is in warning state
     */
   @JSName("progress")
-  def progress_iswarning(behavior: `is warning`): Boolean = js.native
+  def progress_iswarning(behavior: `is warning`): Boolean
   /**
     * Removes progress to active state
     */
   @JSName("progress")
-  def progress_removeactive(behavior: `remove active`): JQuery = js.native
+  def progress_removeactive(behavior: `remove active`): JQuery
   /**
     * Removes progress to error state
     */
   @JSName("progress")
-  def progress_removeerror(behavior: `remove error`): JQuery = js.native
+  def progress_removeerror(behavior: `remove error`): JQuery
   /**
     * Removes progress to success state
     */
   @JSName("progress")
-  def progress_removesuccess(behavior: `remove success`): JQuery = js.native
+  def progress_removesuccess(behavior: `remove success`): JQuery
   /**
     * Removes progress to warning state
     */
   @JSName("progress")
-  def progress_removewarning(behavior: `remove warning`): JQuery = js.native
+  def progress_removewarning(behavior: `remove warning`): JQuery
   /**
     * Resets progress to zero
     */
   @JSName("progress")
-  def progress_reset(behavior: reset): JQuery = js.native
+  def progress_reset(behavior: reset): JQuery
   /**
     * Sets progress to active state
     */
   @JSName("progress")
-  def progress_setactive(behavior: `set active`): JQuery = js.native
+  def progress_setactive(behavior: `set active`): JQuery
   /**
     * Sets progress bar label to text
     */
   @JSName("progress")
-  def progress_setbarlabel(behavior: `set bar label`, text: String): JQuery = js.native
+  def progress_setbarlabel(behavior: `set bar label`, text: String): JQuery
   /**
     * Changes progress animation speed
     */
   @JSName("progress")
-  def progress_setduration(behavior: `set duration`, value: Double): JQuery = js.native
+  def progress_setduration(behavior: `set duration`, value: Double): JQuery
   /**
     * Sets progress to error state
     */
   @JSName("progress")
-  def progress_seterror(behavior: `set error`): JQuery = js.native
+  def progress_seterror(behavior: `set error`): JQuery
   /**
     * Sets progress exterior label to text
     */
   @JSName("progress")
-  def progress_setlabel(behavior: `set label`, text: String): JQuery = js.native
+  def progress_setlabel(behavior: `set label`, text: String): JQuery
   /**
     * Sets current percent of progress to value. If using a total will convert from percent to estimated value.
     */
   @JSName("progress")
-  def progress_setpercent(behavior: `set percent`, percent: Double): JQuery = js.native
+  def progress_setpercent(behavior: `set percent`, percent: Double): JQuery
   /**
     * Sets progress to specified value. Will automatically calculate percent from total.
     */
   @JSName("progress")
-  def progress_setprogress(behavior: `set progress`, value: Double): JQuery = js.native
+  def progress_setprogress(behavior: `set progress`, value: Double): JQuery
   /**
     * Sets progress to success state
     */
   @JSName("progress")
-  def progress_setsuccess(behavior: `set success`): JQuery = js.native
+  def progress_setsuccess(behavior: `set success`): JQuery
   @JSName("progress")
-  def progress_setting(behavior: setting, value: ProgressSettings): JQuery = js.native
+  def progress_setting(behavior: setting, value: ProgressSettings): JQuery
   /**
     * Set total to a new value
     */
   @JSName("progress")
-  def progress_settotal(behavior: `set total`, total: Double): JQuery = js.native
+  def progress_settotal(behavior: `set total`, total: Double): JQuery
   /**
     * Sets progress to warning state
     */
   @JSName("progress")
-  def progress_setwarning(behavior: `set warning`): JQuery = js.native
+  def progress_setwarning(behavior: `set warning`): JQuery
   /**
     * Immediately updates progress to value, ignoring progress animation interval delays
     */
   @JSName("progress")
-  def progress_updateprogress(behavior: `update progress`, value: Double): JQuery = js.native
+  def progress_updateprogress(behavior: `update progress`, value: Double): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(progress: Progress): JQuery = {
+    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setProgress(value: Progress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+  }
 }

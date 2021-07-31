@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupPlan extends StObject {
   
   /**
     * Contains a list of BackupOptions for each resource type.
     */
-  var AdvancedBackupSettings: js.UndefOr[typings.awsSdk.backupMod.AdvancedBackupSettings] = js.native
+  var AdvancedBackupSettings: js.UndefOr[typings.awsSdk.backupMod.AdvancedBackupSettings] = js.undefined
   
   /**
     * The display name of a backup plan.
     */
-  var BackupPlanName: typings.awsSdk.backupMod.BackupPlanName = js.native
+  var BackupPlanName: typings.awsSdk.backupMod.BackupPlanName
   
   /**
     * An array of BackupRule objects, each of which specifies a scheduled task that is used to back up a selection of resources. 
     */
-  var Rules: BackupRules = js.native
+  var Rules: BackupRules
 }
 object BackupPlan {
   

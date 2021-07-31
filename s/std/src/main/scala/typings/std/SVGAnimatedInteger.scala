@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of basic type <integer> which can be animated. */
-@js.native
 trait SVGAnimatedInteger extends StObject {
   
-  val animVal: Double = js.native
+  val animVal: Double
   
-  var baseVal: Double = js.native
+  var baseVal: Double
 }
 object SVGAnimatedInteger {
   

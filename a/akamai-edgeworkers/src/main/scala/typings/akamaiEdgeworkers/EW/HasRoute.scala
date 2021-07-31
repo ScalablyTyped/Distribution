@@ -2,10 +2,8 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasRoute extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HasRoute extends StObject {
     *
     * @param destination Object holding properties that will control route
     */
-  def route(destination: Destination): Unit = js.native
+  def route(destination: Destination): Unit
 }
 object HasRoute {
   

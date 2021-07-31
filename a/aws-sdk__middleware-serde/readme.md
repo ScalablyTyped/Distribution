@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/@aws-sdk/middleware-serde/rc.svg)](https://www.npmjs.com/package/@aws-sdk/@aws-sdk/middleware-serde) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/@aws-sdk/middleware-serde.svg)](https://www
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-serde/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-serde) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-serde.svg)](https://www.npmjs.com/package/@aws
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-serde |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 235 |
-| # downloads        | 3517360 |
+| # releases         | 35 |
+| # dependents       | 247 |
+| # downloads        | 6725428 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/middleware-serde)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-serde)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmiddleware-serde)

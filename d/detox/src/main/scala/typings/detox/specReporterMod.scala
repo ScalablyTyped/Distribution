@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.detox.mod.global.Detox_.CircusTestEventListenerBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specReporterMod extends Shortcut {
@@ -13,17 +12,18 @@ object specReporterMod extends Shortcut {
   @js.native
   val ^ : SpecReporter = js.native
   
-  @js.native
-  trait SpecReporter extends CircusTestEventListenerBase {
+  trait SpecReporter
+    extends StObject
+       with CircusTestEventListenerBase {
     
-    def specDone(): Unit = js.native
+    def specDone(): Unit
     
-    def specStarted(): Unit = js.native
+    def specStarted(): Unit
     
-    def suiteDone(): Unit = js.native
+    def suiteDone(): Unit
     
     // These are not publicly used, but are defined in order to overlap with the jasmine.CustomReporter interface (which is a weak interface)
-    def suiteStarted(): Unit = js.native
+    def suiteStarted(): Unit
   }
   object SpecReporter {
     

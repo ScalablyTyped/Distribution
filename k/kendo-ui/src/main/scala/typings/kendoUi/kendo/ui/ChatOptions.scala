@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatOptions extends StObject {
   
-  var actionClick: js.UndefOr[js.Function1[/* e */ ChatActionClickEvent, Unit]] = js.native
+  var actionClick: js.UndefOr[js.Function1[/* e */ ChatActionClickEvent, Unit]] = js.undefined
   
-  var messages: js.UndefOr[ChatMessages] = js.native
+  var messages: js.UndefOr[ChatMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var post: js.UndefOr[js.Function1[/* e */ ChatPostEvent, Unit]] = js.native
+  var post: js.UndefOr[js.Function1[/* e */ ChatPostEvent, Unit]] = js.undefined
   
-  var sendMessage: js.UndefOr[js.Function1[/* e */ ChatSendMessageEvent, Unit]] = js.native
+  var sendMessage: js.UndefOr[js.Function1[/* e */ ChatSendMessageEvent, Unit]] = js.undefined
   
-  var typingEnd: js.UndefOr[js.Function1[/* e */ ChatTypingEndEvent, Unit]] = js.native
+  var typingEnd: js.UndefOr[js.Function1[/* e */ ChatTypingEndEvent, Unit]] = js.undefined
   
-  var typingStart: js.UndefOr[js.Function1[/* e */ ChatTypingStartEvent, Unit]] = js.native
+  var typingStart: js.UndefOr[js.Function1[/* e */ ChatTypingStartEvent, Unit]] = js.undefined
   
-  var user: js.UndefOr[ChatUser] = js.native
+  var user: js.UndefOr[ChatUser] = js.undefined
 }
 object ChatOptions {
   

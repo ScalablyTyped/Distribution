@@ -12,7 +12,7 @@ A regular expression to match hashtag identifiers as per the Unicode Standard.
 | Keywords           | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji, hashtag, hashtags |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 143468 |
+| # downloads        | 150588 |
 | # stars            | 0 |
 
 ## Links

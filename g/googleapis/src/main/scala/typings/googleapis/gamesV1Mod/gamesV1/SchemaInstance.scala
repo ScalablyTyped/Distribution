@@ -2,62 +2,60 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the Instance resource.
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
     * URI which shows where a user can acquire this instance.
     */
-  var acquisitionUri: js.UndefOr[String] = js.native
+  var acquisitionUri: js.UndefOr[String] = js.undefined
   
   /**
     * Platform dependent details for Android.
     */
-  var androidInstance: js.UndefOr[SchemaInstanceAndroidDetails] = js.native
+  var androidInstance: js.UndefOr[SchemaInstanceAndroidDetails] = js.undefined
   
   /**
     * Platform dependent details for iOS.
     */
-  var iosInstance: js.UndefOr[SchemaInstanceIosDetails] = js.native
+  var iosInstance: js.UndefOr[SchemaInstanceIosDetails] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#instance.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Localized display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The platform type. Possible values are:   - &quot;ANDROID&quot; -
     * Instance is for Android.  - &quot;IOS&quot; - Instance is for iOS  -
     * &quot;WEB_APP&quot; - Instance is for Web App.
     */
-  var platformType: js.UndefOr[String] = js.native
+  var platformType: js.UndefOr[String] = js.undefined
   
   /**
     * Flag to show if this game instance supports realtime play.
     */
-  var realtimePlay: js.UndefOr[Boolean] = js.native
+  var realtimePlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to show if this game instance supports turn based play.
     */
-  var turnBasedPlay: js.UndefOr[Boolean] = js.native
+  var turnBasedPlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Platform dependent details for Web.
     */
-  var webInstance: js.UndefOr[SchemaInstanceWebDetails] = js.native
+  var webInstance: js.UndefOr[SchemaInstanceWebDetails] = js.undefined
 }
 object SchemaInstance {
   

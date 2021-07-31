@@ -5,7 +5,6 @@ import typings.officeJs.officeJsStrings.Local
 import typings.officeJs.officeJsStrings.Remote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait CommentDeletedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait CommentDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var commentDetails: js.Array[CommentDetail] = js.native
+  var commentDetails: js.Array[CommentDetail]
   
   /**
     *
@@ -31,7 +29,7 @@ trait CommentDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -39,7 +37,7 @@ trait CommentDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var `type`: CommentDeleted = js.native
+  var `type`: CommentDeleted
   
   /**
     *
@@ -47,19 +45,14 @@ trait CommentDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object CommentDeletedEventArgs {
   
   @scala.inline
-  def apply(
-    commentDetails: js.Array[CommentDetail],
-    source: EventSource | Local | Remote,
-    `type`: CommentDeleted,
-    worksheetId: String
-  ): CommentDeletedEventArgs = {
+  def apply(commentDetails: js.Array[CommentDetail], source: EventSource | Local | Remote, worksheetId: String): CommentDeletedEventArgs = {
     val __obj = js.Dynamic.literal(commentDetails = commentDetails.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CommentDeleted")
     __obj.asInstanceOf[CommentDeletedEventArgs]
   }
   

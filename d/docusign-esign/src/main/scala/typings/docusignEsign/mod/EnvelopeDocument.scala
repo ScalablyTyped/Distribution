@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeDocument extends StObject {
   
   /**
     * If recipients were added by converting form fields into tabs, their ids appear here. Read only.
     */
-  var addedRecipientIds: js.UndefOr[js.Array[String]] = js.native
+  var addedRecipientIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If this document is an attachment to another document in the envelope, this is the id of the attachment tab it is associated with on the other document.
     */
-  var attachmentTabId: js.UndefOr[String] = js.native
+  var attachmentTabId: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, marks all of the documents in the envelope as authoritative copies.
@@ -24,23 +22,23 @@ trait EnvelopeDocument extends StObject {
     * **Note**: You can override this value for a specific document. For example, you can set the `authoritativeCopy` property to **true** at the envelope level,
     * but turn it off for a single document by setting the `authoritativeCopy` property for the document to **false**.
     */
-  var authoritativeCopy: js.UndefOr[String] = js.native
+  var authoritativeCopy: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `authoritativeCopy` property. Not applicable for template documents.
     */
-  var authoritativeCopyMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var authoritativeCopyMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   var availableDocumentTypes: js.UndefOr[
     js.Array[
       /* This object contains information about the type of signature. */ SignatureType
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the document has editable form fields that are made available through a PDF format.
     */
-  var containsPdfFormFields: js.UndefOr[String] = js.native
+  var containsPdfFormFields: js.UndefOr[String] = js.undefined
   
   /**
     * This string sets the display and behavior properties of
@@ -61,12 +59,12 @@ trait EnvelopeDocument extends StObject {
     *   but is the default value for all other documents.
     *
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `display` property. Not applicable for template documents.
     */
-  var displayMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var displayMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An object containing information about the custom fields on the document.
@@ -75,24 +73,24 @@ trait EnvelopeDocument extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The id of the document that the tab is placed on. This value must refer to the id of an existing document.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID of the document.
     */
-  var documentIdGuid: js.UndefOr[String] = js.native
+  var documentIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**,
@@ -100,24 +98,24 @@ trait EnvelopeDocument extends StObject {
     * The default value is **true**.
     *
     */
-  var includeInDownload: js.UndefOr[String] = js.native
+  var includeInDownload: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `includeInDowload` property. Not applicable for template documents.
     */
-  var includeInDownloadMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var includeInDownloadMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The document's file name.
     *
     * Example: `Q1-Report.docx`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `name` property. Not applicable for template documents.
     */
-  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * (Optional) The order in which to sort the results.
@@ -128,12 +126,12 @@ trait EnvelopeDocument extends StObject {
     * * `asc`: Ascending order.
     * * `desc`: Descending order.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * An array of page objects that contain information about the pages in the document.
     */
-  var pages: js.UndefOr[js.Array[/* Description of a page of a document. */ Page]] = js.native
+  var pages: js.UndefOr[js.Array[/* Description of a page of a document. */ Page]] = js.undefined
   
   /**
     * Sets how the signer interacts with the supplemental document.
@@ -153,31 +151,31 @@ trait EnvelopeDocument extends StObject {
     *
     *
     */
-  var signerMustAcknowledge: js.UndefOr[String] = js.native
+  var signerMustAcknowledge: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `signerMustAcknowledge` property. Not applicable for template documents.
     */
-  var signerMustAcknowledgeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var signerMustAcknowledgeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.
     */
-  var templateLocked: js.UndefOr[String] = js.native
+  var templateLocked: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.
     */
-  var templateRequired: js.UndefOr[String] = js.native
+  var templateRequired: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving the document.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object EnvelopeDocument {
   

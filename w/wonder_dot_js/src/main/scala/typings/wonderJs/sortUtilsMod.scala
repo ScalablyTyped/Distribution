@@ -1,31 +1,37 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/utils/SortUtils", JSImport.Namespace)
-@js.native
-object sortUtilsMod extends js.Object {
-  @js.native
-  class SortUtils () extends js.Object
+object sortUtilsMod {
   
+  @JSImport("wonder.js/dist/es2015/utils/SortUtils", "SortUtils")
+  @js.native
+  class SortUtils () extends StObject
   /* static members */
-  @js.native
-  object SortUtils extends js.Object {
-    def insertSort(targetArr: js.Array[_], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[_] = js.native
+  object SortUtils {
+    
+    @JSImport("wonder.js/dist/es2015/utils/SortUtils", "SortUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def insertSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
     def insertSort(
-      targetArr: js.Array[_],
+      targetArr: js.Array[js.Any],
       compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean],
       isChangeSelf: Boolean
-    ): js.Array[_] = js.native
-    def quickSort(targetArr: js.Array[_], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[_] = js.native
+    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any], isChangeSelf.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    
+    @scala.inline
+    def quickSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
     def quickSort(
-      targetArr: js.Array[_],
+      targetArr: js.Array[js.Any],
       compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean],
       isChangeSelf: Boolean
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any], isChangeSelf.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   }
-  
 }
-

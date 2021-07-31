@@ -2,10 +2,8 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerializerOptions extends StObject {
   
   /***
@@ -13,7 +11,7 @@ trait SerializerOptions extends StObject {
     *
     * **Default:** `treeAdapters.default`
     */
-  var treeAdapter: js.UndefOr[TreeAdapter] = js.native
+  var treeAdapter: js.UndefOr[TreeAdapter] = js.undefined
 }
 object SerializerOptions {
   

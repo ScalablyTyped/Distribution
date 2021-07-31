@@ -2,23 +2,21 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entities extends StObject {
   
-  var hashtags: js.Array[HashtagEntity] = js.native
+  var hashtags: js.Array[HashtagEntity]
   
-  var media: js.Array[MediaEntity] = js.native
+  var media: js.Array[MediaEntity]
   
-  var polls: js.Array[PollEntity] = js.native
+  var polls: js.Array[PollEntity]
   
-  var symbols: js.Array[SymbolEntity] = js.native
+  var symbols: js.Array[SymbolEntity]
   
-  var urls: js.Array[UrlEntity] = js.native
+  var urls: js.Array[UrlEntity]
   
-  var user_mentions: js.Array[UserMentionEntity] = js.native
+  var user_mentions: js.Array[UserMentionEntity]
 }
 object Entities {
   

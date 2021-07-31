@@ -2,76 +2,74 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceConfiguration extends StObject {
   
   /**
     * Indicates whether requests from other AWS accounts to create an endpoint to the service must first be accepted.
     */
-  var AcceptanceRequired: js.UndefOr[Boolean] = js.native
+  var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Availability Zones in which the service is available.
     */
-  var AvailabilityZones: js.UndefOr[ValueStringList] = js.native
+  var AvailabilityZones: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The DNS names for the service.
     */
-  var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.native
+  var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the Gateway Load Balancers for the service.
     */
-  var GatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var GatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Indicates whether the service manages its VPC endpoints. Management of the service VPC endpoints using the VPC endpoint API is restricted.
     */
-  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.native
+  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the Network Load Balancers for the service.
     */
-  var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The private DNS name for the service.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the endpoint service private DNS name configuration.
     */
-  var PrivateDnsNameConfiguration: js.UndefOr[typings.awsSdk.ec2Mod.PrivateDnsNameConfiguration] = js.native
+  var PrivateDnsNameConfiguration: js.UndefOr[typings.awsSdk.ec2Mod.PrivateDnsNameConfiguration] = js.undefined
   
   /**
     * The ID of the service.
     */
-  var ServiceId: js.UndefOr[String] = js.native
+  var ServiceId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service.
     */
-  var ServiceName: js.UndefOr[String] = js.native
+  var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The service state.
     */
-  var ServiceState: js.UndefOr[typings.awsSdk.ec2Mod.ServiceState] = js.native
+  var ServiceState: js.UndefOr[typings.awsSdk.ec2Mod.ServiceState] = js.undefined
   
   /**
     * The type of service.
     */
-  var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.native
+  var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.undefined
   
   /**
     * Any tags assigned to the service.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ServiceConfiguration {
   

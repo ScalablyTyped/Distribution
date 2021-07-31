@@ -2,25 +2,23 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access the existing BigQuery data source specification. To create a new data source
   * specification, use SpreadsheetApp.newDataSourceSpec().
   */
-@js.native
 trait BigQueryDataSourceSpec extends StObject {
   
-  def copy(): DataSourceSpecBuilder = js.native
+  def copy(): DataSourceSpecBuilder
   
-  def getParameters(): js.Array[DataSourceParameter] = js.native
+  def getParameters(): js.Array[DataSourceParameter]
   
-  def getProjectId(): String = js.native
+  def getProjectId(): String
   
-  def getRawQuery(): String = js.native
+  def getRawQuery(): String
   
-  def getType(): DataSourceType = js.native
+  def getType(): DataSourceType
 }
 object BigQueryDataSourceSpec {
   

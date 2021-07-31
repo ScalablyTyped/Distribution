@@ -4,14 +4,16 @@ import typings.arangodb.anon.Granttype
 import typings.arangodb.anon.Responsetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth2Mod {
   
+  @scala.inline
+  def apply(options: OAuth2Options): OAuth2Client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OAuth2Client]
+  
   @JSImport("@arangodb/foxx/oauth2", JSImport.Namespace)
   @js.native
-  def apply(options: OAuth2Options): OAuth2Client = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait OAuth2Client extends StObject {
@@ -25,20 +27,19 @@ object oauth2Mod {
     def getAuthUrl(redirect_uri: String, options: Responsetype): String = js.native
   }
   
-  @js.native
   trait OAuth2Options extends StObject {
     
-    var activeUserEndpoint: js.UndefOr[String] = js.native
+    var activeUserEndpoint: js.UndefOr[String] = js.undefined
     
-    var authEndpoint: String = js.native
+    var authEndpoint: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var refreshEndpoint: js.UndefOr[String] = js.native
+    var refreshEndpoint: js.UndefOr[String] = js.undefined
     
-    var tokenEndpoint: String = js.native
+    var tokenEndpoint: String
   }
   object OAuth2Options {
     

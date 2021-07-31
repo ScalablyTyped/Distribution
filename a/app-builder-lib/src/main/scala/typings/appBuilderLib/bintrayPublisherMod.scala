@@ -6,7 +6,6 @@ import typings.electronPublish.mod.PublishContext
 import typings.electronPublish.mod.PublishOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bintrayPublisherMod {

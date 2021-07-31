@@ -4,51 +4,51 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to ...
   * @since OOo 3.0
   */
-@js.native
-trait XFlatParagraphIterator extends XInterface {
+trait XFlatParagraphIterator
+  extends StObject
+     with XInterface {
   
   /**
     * get the first flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
     * @returns the paragraph.
     */
-  val FirstPara: XFlatParagraph = js.native
+  val FirstPara: XFlatParagraph
   
   /**
     * get the last flat paragraph
     * @returns the paragraph.
     */
-  val LastPara: XFlatParagraph = js.native
+  val LastPara: XFlatParagraph
   
   /**
     * get the next flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
     * @returns the paragraph.
     */
-  val NextPara: XFlatParagraph = js.native
+  val NextPara: XFlatParagraph
   
   /**
     * get the first flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
     * @returns the paragraph.
     */
-  def getFirstPara(): XFlatParagraph = js.native
+  def getFirstPara(): XFlatParagraph
   
   /**
     * get the last flat paragraph
     * @returns the paragraph.
     */
-  def getLastPara(): XFlatParagraph = js.native
+  def getLastPara(): XFlatParagraph
   
   /**
     * get the next flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
     * @returns the paragraph.
     */
-  def getNextPara(): XFlatParagraph = js.native
+  def getNextPara(): XFlatParagraph
   
   /**
     * get the flat paragraph just following this one
@@ -56,7 +56,7 @@ trait XFlatParagraphIterator extends XInterface {
     * @returns the flat paragraph.
     * @throws IllegalArgumentException if any argument is wrong.
     */
-  def getParaAfter(xPara: XFlatParagraph): XFlatParagraph = js.native
+  def getParaAfter(xPara: XFlatParagraph): XFlatParagraph
   
   /**
     * get the flat paragraph before this one
@@ -64,7 +64,7 @@ trait XFlatParagraphIterator extends XInterface {
     * @returns the flat paragraph.
     * @throws IllegalArgumentException if any argument is wrong.
     */
-  def getParaBefore(xPara: XFlatParagraph): XFlatParagraph = js.native
+  def getParaBefore(xPara: XFlatParagraph): XFlatParagraph
 }
 object XFlatParagraphIterator {
   

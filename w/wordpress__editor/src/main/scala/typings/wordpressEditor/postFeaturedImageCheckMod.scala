@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressEditor.postFeaturedImageCheckMod.PostFeaturedImageCheck.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postFeaturedImageCheckMod {
@@ -25,12 +24,11 @@ object postFeaturedImageCheckMod {
   
   object PostFeaturedImageCheck {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var supportKeys: js.UndefOr[String | js.Array[String]] = js.native
+      var supportKeys: js.UndefOr[String | js.Array[String]] = js.undefined
     }
     object Props {
       

@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLMediaError extends StObject {
   
   @JSName("MSHTML.IHTMLMediaError_typekey")
-  var MSHTMLDotIHTMLMediaError_typekey: IHTMLMediaError = js.native
+  var MSHTMLDotIHTMLMediaError_typekey: IHTMLMediaError
   
-  val code: Double = js.native
+  val code: Double
 }
 object IHTMLMediaError {
   

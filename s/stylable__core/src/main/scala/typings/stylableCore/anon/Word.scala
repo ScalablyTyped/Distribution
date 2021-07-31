@@ -2,13 +2,11 @@ package typings.stylableCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Word extends StObject {
   
-  var word: String = js.native
+  var word: String
 }
 object Word {
   

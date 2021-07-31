@@ -3,7 +3,6 @@ package typings.ddTrace.mod.plugins
 import typings.ddTrace.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,31 +18,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.ddTrace.mod.plugins.Integration because Already inherited
 - typings.ddTrace.mod.plugins.Instrumentation because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
-- typings.ddTrace.mod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined middleware */ @js.native
-trait http extends HttpClient {
+- typings.ddTrace.mod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined middleware */ trait http
+  extends StObject
+     with HttpClient {
   
   /**
     * Configuration for HTTP clients.
     */
-  var client: js.UndefOr[HttpClient] = js.native
+  var client: js.UndefOr[HttpClient] = js.undefined
   
   /**
     * Hooks to run before spans are finished.
     */
   @JSName("hooks")
-  var hooks_http: js.UndefOr[`2`] = js.native
+  var hooks_http: js.UndefOr[`2`] = js.undefined
   
   /**
     * Whether to enable instrumention of <plugin>.middleware spans
     *
     * @default true
     */
-  var middleware: js.UndefOr[Boolean] = js.native
+  var middleware: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configuration for HTTP servers.
     */
-  var server: js.UndefOr[HttpServer] = js.native
+  var server: js.UndefOr[HttpServer] = js.undefined
 }
 object http {
   

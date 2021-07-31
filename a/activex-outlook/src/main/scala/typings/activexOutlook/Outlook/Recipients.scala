@@ -2,32 +2,30 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recipients extends StObject {
   
-  def Add(Name: String): Recipient = js.native
+  def Add(Name: String): Recipient
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Recipient = js.native
+  def Item(Index: js.Any): Recipient
   
   @JSName("Outlook.Recipients_typekey")
-  var OutlookDotRecipients_typekey: Recipients = js.native
+  var OutlookDotRecipients_typekey: Recipients
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
   
-  def ResolveAll(): Boolean = js.native
+  def ResolveAll(): Boolean
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Recipients {
   

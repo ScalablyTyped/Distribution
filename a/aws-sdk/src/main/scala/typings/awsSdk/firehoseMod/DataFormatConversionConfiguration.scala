@@ -2,31 +2,29 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataFormatConversionConfiguration extends StObject {
   
   /**
     * Defaults to true. Set it to false if you want to disable format conversion while preserving the configuration details.
     */
-  var Enabled: js.UndefOr[BooleanObject] = js.native
+  var Enabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. This parameter is required if Enabled is set to true.
     */
-  var InputFormatConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.InputFormatConfiguration] = js.native
+  var InputFormatConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.InputFormatConfiguration] = js.undefined
   
   /**
     * Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. This parameter is required if Enabled is set to true.
     */
-  var OutputFormatConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.OutputFormatConfiguration] = js.native
+  var OutputFormatConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.OutputFormatConfiguration] = js.undefined
   
   /**
     * Specifies the AWS Glue Data Catalog table that contains the column information. This parameter is required if Enabled is set to true.
     */
-  var SchemaConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.SchemaConfiguration] = js.native
+  var SchemaConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.SchemaConfiguration] = js.undefined
 }
 object DataFormatConversionConfiguration {
   

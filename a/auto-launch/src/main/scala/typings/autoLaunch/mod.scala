@@ -3,34 +3,52 @@ package typings.autoLaunch
 import typings.autoLaunch.anon.UseLaunchAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("auto-launch", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AutoLaunch {
+  class ^ protected ()
+    extends StObject
+       with AutoLaunch {
     def this(options: AutoLaunchOptions) = this()
+    
+    /**
+      * Disables auto-launch at start up.
+      */
+    /* CompleteClass */
+    override def disable(): js.Promise[Unit] = js.native
+    
+    /**
+      * Enables auto-launch at start up.
+      */
+    /* CompleteClass */
+    override def enable(): js.Promise[Unit] = js.native
+    
+    /**
+      * Returns true if auto-launch is enabled.
+      */
+    /* CompleteClass */
+    override def isEnabled(): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait AutoLaunch extends StObject {
     
     /**
       * Disables auto-launch at start up.
       */
-    def disable(): js.Promise[Unit] = js.native
+    def disable(): js.Promise[Unit]
     
     /**
       * Enables auto-launch at start up.
       */
-    def enable(): js.Promise[Unit] = js.native
+    def enable(): js.Promise[Unit]
     
     /**
       * Returns true if auto-launch is enabled.
       */
-    def isEnabled(): js.Promise[Boolean] = js.native
+    def isEnabled(): js.Promise[Boolean]
   }
   object AutoLaunch {
     
@@ -58,28 +76,27 @@ object mod {
     }
   }
   
-  @js.native
   trait AutoLaunchOptions extends StObject {
     
     /**
       * Hidden on launch. Default is `false`.
       */
-    var isHidden: js.UndefOr[Boolean] = js.native
+    var isHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * For Mac-only options.
       */
-    var mac: js.UndefOr[UseLaunchAgent] = js.native
+    var mac: js.UndefOr[UseLaunchAgent] = js.undefined
     
     /**
       * Application name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Path to application. Default is `process.execPath`.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object AutoLaunchOptions {
     

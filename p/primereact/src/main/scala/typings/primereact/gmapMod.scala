@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gmapMod {
@@ -22,32 +21,31 @@ object gmapMod {
     def this(props: GMapProps, context: js.Any) = this()
   }
   
-  @js.native
   trait GMapProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onMapClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onMapClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onMapDragEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMapDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onMapReady: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.native
+    var onMapReady: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
     
-    var onOverlayClick: js.UndefOr[js.Function1[/* e */ Map, Unit]] = js.native
+    var onOverlayClick: js.UndefOr[js.Function1[/* e */ Map, Unit]] = js.undefined
     
-    var onOverlayDrag: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onOverlayDrag: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onOverlayDragEnd: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onOverlayDragEnd: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onOverlayDragStart: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onOverlayDragStart: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onZoomChanged: js.UndefOr[js.Function0[Unit]] = js.native
+    var onZoomChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var overlays: js.UndefOr[js.Array[_]] = js.native
+    var overlays: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object GMapProps {
     
@@ -121,7 +119,7 @@ object gmapMod {
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setOverlays(value: js.Array[_]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)

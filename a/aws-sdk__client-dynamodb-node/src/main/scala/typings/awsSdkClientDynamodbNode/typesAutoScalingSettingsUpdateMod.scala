@@ -4,38 +4,36 @@ import typings.awsSdkClientDynamodbNode.typesAutoScalingPolicyUpdateMod.AutoScal
 import typings.awsSdkClientDynamodbNode.typesAutoScalingPolicyUpdateMod.UnmarshalledAutoScalingPolicyUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAutoScalingSettingsUpdateMod {
   
-  @js.native
   trait AutoScalingSettingsUpdate extends StObject {
     
     /**
       * <p>Disabled autoscaling for this global table or global secondary index.</p>
       */
-    var AutoScalingDisabled: js.UndefOr[Boolean] = js.native
+    var AutoScalingDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>Role ARN used for configuring autoscaling policy.</p>
       */
-    var AutoScalingRoleArn: js.UndefOr[String] = js.native
+    var AutoScalingRoleArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The maximum capacity units that a global table or global secondary index should be scaled up to.</p>
       */
-    var MaximumUnits: js.UndefOr[Double] = js.native
+    var MaximumUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The minimum capacity units that a global table or global secondary index should be scaled down to.</p>
       */
-    var MinimumUnits: js.UndefOr[Double] = js.native
+    var MinimumUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The scaling policy to apply for scaling target global table or global secondary index capacity units.</p>
       */
-    var ScalingPolicyUpdate: js.UndefOr[AutoScalingPolicyUpdate] = js.native
+    var ScalingPolicyUpdate: js.UndefOr[AutoScalingPolicyUpdate] = js.undefined
   }
   object AutoScalingSettingsUpdate {
     
@@ -80,14 +78,15 @@ object typesAutoScalingSettingsUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAutoScalingSettingsUpdate extends AutoScalingSettingsUpdate {
+  trait UnmarshalledAutoScalingSettingsUpdate
+    extends StObject
+       with AutoScalingSettingsUpdate {
     
     /**
       * <p>The scaling policy to apply for scaling target global table or global secondary index capacity units.</p>
       */
     @JSName("ScalingPolicyUpdate")
-    var ScalingPolicyUpdate_UnmarshalledAutoScalingSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingPolicyUpdate] = js.native
+    var ScalingPolicyUpdate_UnmarshalledAutoScalingSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingPolicyUpdate] = js.undefined
   }
   object UnmarshalledAutoScalingSettingsUpdate {
     

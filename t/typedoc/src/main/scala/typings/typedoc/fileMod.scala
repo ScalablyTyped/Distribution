@@ -5,7 +5,6 @@ import typings.typedoc.directoryMod.SourceDirectory
 import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileMod {
@@ -30,18 +29,17 @@ object fileMod {
     var url: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait SourceReference extends StObject {
     
-    var character: Double = js.native
+    var character: Double
     
-    var file: js.UndefOr[SourceFile] = js.native
+    var file: js.UndefOr[SourceFile] = js.undefined
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object SourceReference {
     

@@ -2,18 +2,17 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveVideoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var filePath: String = js.native
+  var filePath: String
   
   // 视频文件路径，可以是临时文件路径也可以是永久文件路径
   @JSName("success")
-  def success_MSaveVideoOptions(errMsg: String): Unit = js.native
+  def success_MSaveVideoOptions(errMsg: String): Unit
 }
 object SaveVideoOptions {
   

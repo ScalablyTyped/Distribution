@@ -3,13 +3,11 @@ package typings.frctlFractal.anon
 import typings.frctlFractal.mod.Fractal_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fractal extends StObject {
   
-  var fractal: Fractal_ = js.native
+  var fractal: Fractal_
 }
 object Fractal {
   

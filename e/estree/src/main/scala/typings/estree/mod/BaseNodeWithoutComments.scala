@@ -2,20 +2,18 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseNodeWithoutComments extends StObject {
   
-  var loc: js.UndefOr[SourceLocation | Null] = js.native
+  var loc: js.UndefOr[SourceLocation | Null] = js.undefined
   
-  var range: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
   // Every leaf interface that extends BaseNode must specify a type property.
   // The type property should be a string literal. For example, Identifier
   // has: `type: "Identifier"`
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseNodeWithoutComments {
   

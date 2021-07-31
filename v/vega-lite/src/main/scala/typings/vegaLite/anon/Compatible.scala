@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compatible extends StObject {
   
-  var compatible: Boolean = js.native
+  var compatible: Boolean
   
-  var warning: js.UndefOr[String] = js.native
+  var warning: js.UndefOr[String] = js.undefined
 }
 object Compatible {
   

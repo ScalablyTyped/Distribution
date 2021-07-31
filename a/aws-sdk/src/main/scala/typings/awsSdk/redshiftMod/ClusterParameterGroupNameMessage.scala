@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterParameterGroupNameMessage extends StObject {
   
   /**
     * The name of the cluster parameter group.
     */
-  var ParameterGroupName: js.UndefOr[String] = js.native
+  var ParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the parameter group. For example, if you made a change to a parameter group name-value pair, then the change could be pending a reboot of an associated cluster.
     */
-  var ParameterGroupStatus: js.UndefOr[String] = js.native
+  var ParameterGroupStatus: js.UndefOr[String] = js.undefined
 }
 object ClusterParameterGroupNameMessage {
   

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for the ChatMessageStoreChanged event. */
-@js.native
 trait ChatMessageStoreChangedEventArgs extends StObject {
   
   /** Gets the ID of the object that changed. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the type of change that happened. */
-  var kind: ChatStoreChangedEventKind = js.native
+  var kind: ChatStoreChangedEventKind
 }
 object ChatMessageStoreChangedEventArgs {
   

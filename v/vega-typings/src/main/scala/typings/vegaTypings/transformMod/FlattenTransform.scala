@@ -4,26 +4,26 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.flatten
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlattenTransform extends _Transforms {
+trait FlattenTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
-  var fields: js.Array[FieldRef] | SignalRef = js.native
+  var fields: js.Array[FieldRef] | SignalRef
   
-  var index: js.UndefOr[String | SignalRef] = js.native
+  var index: js.UndefOr[String | SignalRef] = js.undefined
   
-  var `type`: flatten = js.native
+  var `type`: flatten
 }
 object FlattenTransform {
   
   @scala.inline
-  def apply(fields: js.Array[FieldRef] | SignalRef, `type`: flatten): FlattenTransform = {
+  def apply(fields: js.Array[FieldRef] | SignalRef): FlattenTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("flatten")
     __obj.asInstanceOf[FlattenTransform]
   }
   

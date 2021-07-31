@@ -2,21 +2,19 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabelsToolbar extends StObject {
   
-  var downloadCsv: String = js.native
+  var downloadCsv: String
   
-  var filterTable: String = js.native
+  var filterTable: String
   
-  var print: String = js.native
+  var print: String
   
-  var search: String = js.native
+  var search: String
   
-  var viewColumns: String = js.native
+  var viewColumns: String
 }
 object MUIDataTableTextLabelsToolbar {
   

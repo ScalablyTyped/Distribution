@@ -2,18 +2,18 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#dictdef-federatedcredentialdata}
   */
-@js.native
-trait FederatedCredentialData extends SiteBoundCredentialData {
+trait FederatedCredentialData
+  extends StObject
+     with SiteBoundCredentialData {
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var provider: String = js.native
+  var provider: String
 }
 object FederatedCredentialData {
   

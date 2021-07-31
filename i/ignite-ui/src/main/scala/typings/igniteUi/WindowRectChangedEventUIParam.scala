@@ -2,56 +2,54 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowRectChangedEventUIParam extends StObject {
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new height value.
     */
-  var newHeight: js.UndefOr[js.Any] = js.native
+  var newHeight: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new left value.
     */
-  var newLeft: js.UndefOr[js.Any] = js.native
+  var newLeft: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new top value.
     */
-  var newTop: js.UndefOr[js.Any] = js.native
+  var newTop: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new top value.
     */
-  var newWidth: js.UndefOr[js.Any] = js.native
+  var newWidth: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old height value.
     */
-  var oldHeight: js.UndefOr[js.Any] = js.native
+  var oldHeight: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old left value.
     */
-  var oldLeft: js.UndefOr[js.Any] = js.native
+  var oldLeft: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old top value.
     */
-  var oldTop: js.UndefOr[js.Any] = js.native
+  var oldTop: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old top value.
     */
-  var oldWidth: js.UndefOr[js.Any] = js.native
+  var oldWidth: js.UndefOr[js.Any] = js.undefined
 }
 object WindowRectChangedEventUIParam {
   

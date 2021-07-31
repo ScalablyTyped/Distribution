@@ -10,7 +10,6 @@ import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xyzMod {
@@ -21,50 +20,49 @@ object xyzMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var attributionsCollapsible: js.UndefOr[Boolean] = js.native
+    var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opaque: js.UndefOr[Boolean] = js.native
+    var opaque: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.native
+    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
     
-    var tileLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var tilePixelRatio: js.UndefOr[Double] = js.native
+    var tilePixelRatio: js.UndefOr[Double] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
     
-    var tileUrlFunction: js.UndefOr[UrlFunction] = js.native
+    var tileUrlFunction: js.UndefOr[UrlFunction] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
     
-    var zDirection: js.UndefOr[Double] = js.native
+    var zDirection: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

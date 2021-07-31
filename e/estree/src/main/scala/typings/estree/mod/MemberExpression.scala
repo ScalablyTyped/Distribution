@@ -2,40 +2,33 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with ChainElement
      with Expression
      with Pattern {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var `object`: Expression | Super = js.native
+  var `object`: Expression | Super
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var property: Expression = js.native
+  var property: Expression
   
   @JSName("type")
-  var type_MemberExpression: typings.estree.estreeStrings.MemberExpression = js.native
+  var type_MemberExpression: typings.estree.estreeStrings.MemberExpression
 }
 object MemberExpression {
   
   @scala.inline
-  def apply(
-    computed: Boolean,
-    `object`: Expression | Super,
-    optional: Boolean,
-    property: Expression,
-    `type`: typings.estree.estreeStrings.MemberExpression
-  ): MemberExpression = {
+  def apply(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression]
   }
   

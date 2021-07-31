@@ -2,38 +2,36 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssetRequest extends StObject {
   
   /**
     * The unique identifier for the Asset.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The ID of the PackagingGroup for the Asset.
     */
-  var PackagingGroupId: string = js.native
+  var PackagingGroupId: string
   
   /**
     * The resource ID to include in SPEKE key requests.
     */
-  var ResourceId: js.UndefOr[string] = js.native
+  var ResourceId: js.UndefOr[string] = js.undefined
   
   /**
     * ARN of the source object in S3.
     */
-  var SourceArn: string = js.native
+  var SourceArn: string
   
   /**
     * The IAM role ARN used to access the source S3 bucket.
     */
-  var SourceRoleArn: string = js.native
+  var SourceRoleArn: string
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.undefined
 }
 object CreateAssetRequest {
   

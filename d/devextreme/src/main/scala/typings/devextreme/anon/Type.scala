@@ -6,13 +6,11 @@ import typings.devextreme.devextremeStrings.odata
 import typings.devextreme.devextremeStrings.xmla
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: js.UndefOr[array | local | odata | xmla] = js.native
+  var `type`: js.UndefOr[array | local | odata | xmla] = js.undefined
 }
 object Type {
   

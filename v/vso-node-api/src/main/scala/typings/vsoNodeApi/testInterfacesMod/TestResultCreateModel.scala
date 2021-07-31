@@ -3,63 +3,61 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultCreateModel extends StObject {
   
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
-  var associatedWorkItems: js.Array[Double] = js.native
+  var associatedWorkItems: js.Array[Double]
   
-  var automatedTestId: String = js.native
+  var automatedTestId: String
   
-  var automatedTestName: String = js.native
+  var automatedTestName: String
   
-  var automatedTestStorage: String = js.native
+  var automatedTestStorage: String
   
-  var automatedTestType: String = js.native
+  var automatedTestType: String
   
-  var automatedTestTypeId: String = js.native
+  var automatedTestTypeId: String
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: String = js.native
+  var completedDate: String
   
-  var computerName: String = js.native
+  var computerName: String
   
-  var configuration: ShallowReference = js.native
+  var configuration: ShallowReference
   
-  var customFields: js.Array[CustomTestField] = js.native
+  var customFields: js.Array[CustomTestField]
   
-  var durationInMs: String = js.native
+  var durationInMs: String
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var failureType: String = js.native
+  var failureType: String
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var resolutionState: String = js.native
+  var resolutionState: String
   
-  var runBy: IdentityRef = js.native
+  var runBy: IdentityRef
   
-  var stackTrace: String = js.native
+  var stackTrace: String
   
-  var startedDate: String = js.native
+  var startedDate: String
   
-  var state: String = js.native
+  var state: String
   
-  var testCase: ShallowReference = js.native
+  var testCase: ShallowReference
   
-  var testCasePriority: String = js.native
+  var testCasePriority: String
   
-  var testCaseTitle: String = js.native
+  var testCaseTitle: String
   
-  var testPoint: ShallowReference = js.native
+  var testPoint: ShallowReference
 }
 object TestResultCreateModel {
   

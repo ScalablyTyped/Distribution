@@ -4,12 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
   
-  @js.native
   trait Widget[TElement] extends StObject {
     
     /**
@@ -32,12 +30,12 @@ object widgetMod {
       config: TablesorterConfigurationStore[TElement],
       widgetOptions: StringDictionary[js.Any],
       initializing: Boolean
-    ): Unit = js.native
+    ): Unit
     
     /**
       * The identification of the widget.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Initializes the widget.
@@ -59,17 +57,17 @@ object widgetMod {
       thisWidget: this.type,
       config: TablesorterConfigurationStore[TElement],
       widgetOptions: StringDictionary[js.Any]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * The default options of the widget.
       */
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[js.Any]
     
     /**
       * The priority of the widget.
       */
-    var priority: Double = js.native
+    var priority: Double
     
     /**
       * Removes the widget from the table.
@@ -91,7 +89,7 @@ object widgetMod {
       config: TablesorterConfigurationStore[TElement],
       widgetOptions: StringDictionary[js.Any],
       refreshing: Boolean
-    ): Unit = js.native
+    ): Unit
   }
   object Widget {
     
@@ -109,7 +107,7 @@ object widgetMod {
     }
     
     @scala.inline
-    implicit class WidgetMutableBuilder[Self <: Widget[_], TElement] (val x: Self with Widget[TElement]) extends AnyVal {
+    implicit class WidgetMutableBuilder[Self <: Widget[?], TElement] (val x: Self & Widget[TElement]) extends AnyVal {
       
       @scala.inline
       def setFormat(

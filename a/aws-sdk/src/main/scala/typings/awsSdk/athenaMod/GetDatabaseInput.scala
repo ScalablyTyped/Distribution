@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDatabaseInput extends StObject {
   
   /**
     * The name of the data catalog that contains the database to return.
     */
-  var CatalogName: CatalogNameString = js.native
+  var CatalogName: CatalogNameString
   
   /**
     * The name of the database to return.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
 }
 object GetDatabaseInput {
   

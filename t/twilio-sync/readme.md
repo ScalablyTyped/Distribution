@@ -10,9 +10,9 @@ Twilio Sync client library
 | ------------------ | :-------------: |
 | Full name          | twilio-sync |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 54 |
 | # dependents       | 10 |
-| # downloads        | 2801938 |
+| # downloads        | 3339392 |
 | # stars            | 0 |
 
 ## Links

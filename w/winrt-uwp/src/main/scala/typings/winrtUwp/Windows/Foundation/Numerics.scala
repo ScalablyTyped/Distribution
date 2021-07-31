@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a set of graphics-oriented math types. */
 object Numerics {
   
   /** Describes a 3*2 floating point matrix. */
-  @js.native
   trait Matrix3x2 extends StObject {
     
     /** The row one and column one element of the matrix. */
-    var m11: Double = js.native
+    var m11: Double
     
     /** The row one and column two element of the matrix. */
-    var m12: Double = js.native
+    var m12: Double
     
     /** The row two and column one element of the matrix. */
-    var m21: Double = js.native
+    var m21: Double
     
     /** The row two and column two element of the matrix. */
-    var m22: Double = js.native
+    var m22: Double
     
     /** The row three and column one element of the matrix. */
-    var m31: Double = js.native
+    var m31: Double
     
     /** The row three and column two element of the matrix. */
-    var m32: Double = js.native
+    var m32: Double
   }
   object Matrix3x2 {
     
@@ -62,56 +60,55 @@ object Numerics {
   }
   
   /** Describes a 4*4 floating point matrix. */
-  @js.native
   trait Matrix4x4 extends StObject {
     
     /** The row one and column one element of the matrix. */
-    var m11: Double = js.native
+    var m11: Double
     
     /** The row one and column two element of the matrix. */
-    var m12: Double = js.native
+    var m12: Double
     
     /** The row one and column three element of the matrix. */
-    var m13: Double = js.native
+    var m13: Double
     
     /** The row one and column four element of the matrix. */
-    var m14: Double = js.native
+    var m14: Double
     
     /** The row two and column one element of the matrix. */
-    var m21: Double = js.native
+    var m21: Double
     
     /** The row two and column two element of the matrix. */
-    var m22: Double = js.native
+    var m22: Double
     
     /** The row two and column three element of the matrix. */
-    var m23: Double = js.native
+    var m23: Double
     
     /** The row two and column four element of the matrix. */
-    var m24: Double = js.native
+    var m24: Double
     
     /** The row three and column one element of the matrix. */
-    var m31: Double = js.native
+    var m31: Double
     
     /** The row three and column two element of the matrix. */
-    var m32: Double = js.native
+    var m32: Double
     
     /** The row three and column three element of the matrix. */
-    var m33: Double = js.native
+    var m33: Double
     
     /** The row three and column four element of the matrix. */
-    var m34: Double = js.native
+    var m34: Double
     
     /** The row four and column one element of the matrix. */
-    var m41: Double = js.native
+    var m41: Double
     
     /** The row four and column two element of the matrix. */
-    var m42: Double = js.native
+    var m42: Double
     
     /** The row four and column three element of the matrix. */
-    var m43: Double = js.native
+    var m43: Double
     
     /** The row four and column four element of the matrix. */
-    var m44: Double = js.native
+    var m44: Double
   }
   object Matrix4x4 {
     
@@ -192,20 +189,19 @@ object Numerics {
   }
   
   /** Describes a quaternion (an axis about which a rotation occurs and a rotation amount about that axis). */
-  @js.native
   trait Quaternion extends StObject {
     
     /** The w component that represents a rotation amount about the axis that is defined by the X, Y, and Z fields. */
-    var w: Double = js.native
+    var w: Double
     
     /** The x component of the vector that represents the axis about which a rotation occurs. */
-    var x: Double = js.native
+    var x: Double
     
     /** The y component of the vector that represents the axis about which a rotation occurs. */
-    var y: Double = js.native
+    var y: Double
     
     /** The z component of the vector that represents the axis about which a rotation occurs. */
-    var z: Double = js.native
+    var z: Double
   }
   object Quaternion {
     
@@ -233,14 +229,13 @@ object Numerics {
   }
   
   /** Describes a vector of two floating-point components. */
-  @js.native
   trait Vector2 extends StObject {
     
     /** The x component of the vector. */
-    var x: Double = js.native
+    var x: Double
     
     /** The y component of the vector. */
-    var y: Double = js.native
+    var y: Double
   }
   object Vector2 {
     
@@ -262,17 +257,16 @@ object Numerics {
   }
   
   /** Describes a vector of three floating-point components. */
-  @js.native
   trait Vector3 extends StObject {
     
     /** The x component of the vector. */
-    var x: Double = js.native
+    var x: Double
     
     /** The y component of the vector. */
-    var y: Double = js.native
+    var y: Double
     
     /** The z component of the vector. */
-    var z: Double = js.native
+    var z: Double
   }
   object Vector3 {
     

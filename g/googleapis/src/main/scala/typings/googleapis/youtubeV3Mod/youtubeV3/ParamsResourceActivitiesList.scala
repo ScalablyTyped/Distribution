@@ -6,47 +6,47 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceActivitiesList extends StandardParameters {
+trait ParamsResourceActivitiesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The channelId parameter specifies a unique YouTube channel ID. The API
     * will then return a list of that channel's activities.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve the activity feed that
     * displays on the YouTube home page for the currently authenticated user.
     */
-  var home: js.UndefOr[Boolean] = js.native
+  var home: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve a feed of the
     * authenticated user's activities.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken and
     * prevPageToken properties identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -58,7 +58,7 @@ trait ParamsResourceActivitiesList extends StandardParameters {
     * you set part=snippet, the API response will also contain all of those
     * nested properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The publishedAfter parameter specifies the earliest date and time that an
@@ -67,7 +67,7 @@ trait ParamsResourceActivitiesList extends StandardParameters {
     * any activities that occurred that day will be included in the result set.
     * The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAfter: js.UndefOr[String] = js.native
+  var publishedAfter: js.UndefOr[String] = js.undefined
   
   /**
     * The publishedBefore parameter specifies the date and time before which an
@@ -76,7 +76,7 @@ trait ParamsResourceActivitiesList extends StandardParameters {
     * any activities that occurred that day will be excluded from the result
     * set. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedBefore: js.UndefOr[String] = js.native
+  var publishedBefore: js.UndefOr[String] = js.undefined
   
   /**
     * The regionCode parameter instructs the API to return results for the
@@ -85,7 +85,7 @@ trait ParamsResourceActivitiesList extends StandardParameters {
     * activity on YouTube does not provide enough information to generate the
     * activity feed.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceActivitiesList {
   

@@ -2,23 +2,22 @@ package typings.tinyLru
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tiny-lru", JSImport.Default)
+  @JSImport("tiny-lru", JSImport.Namespace)
   @js.native
-  def default[T](): Lru[T] = js.native
-  @JSImport("tiny-lru", JSImport.Default)
-  @js.native
-  def default[T](max: js.UndefOr[scala.Nothing], ttl: Double): Lru[T] = js.native
-  @JSImport("tiny-lru", JSImport.Default)
-  @js.native
-  def default[T](max: Double): Lru[T] = js.native
-  @JSImport("tiny-lru", JSImport.Default)
-  @js.native
-  def default[T](max: Double, ttl: Double): Lru[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Lru[T]]
+  @scala.inline
+  def default[T](max: Double): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any]).asInstanceOf[Lru[T]]
+  @scala.inline
+  def default[T](max: Double, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
+  @scala.inline
+  def default[T](max: Unit, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
   
   @js.native
   trait Lru[T] extends StObject {

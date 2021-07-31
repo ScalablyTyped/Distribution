@@ -6,27 +6,25 @@ import typings.std.ClientRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ANCHOR extends StObject {
     
-    var ANCHOR: String = js.native
+    var ANCHOR: String
     
-    var ANIMATING_CLOSED: String = js.native
+    var ANIMATING_CLOSED: String
     
-    var ANIMATING_OPEN: String = js.native
+    var ANIMATING_OPEN: String
     
-    var FIXED: String = js.native
+    var FIXED: String
     
-    var IS_OPEN_BELOW: String = js.native
+    var IS_OPEN_BELOW: String
     
-    var OPEN: String = js.native
+    var OPEN: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object ANCHOR {
     
@@ -70,16 +68,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ANCHORTOMENUSURFACEWIDTHRATIO extends StObject {
     
-    var ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
+    var ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double
     
-    var MARGIN_TO_EDGE: Double = js.native
+    var MARGIN_TO_EDGE: Double
     
-    var TRANSITION_CLOSE_DURATION: Double = js.native
+    var TRANSITION_CLOSE_DURATION: Double
     
-    var TRANSITION_OPEN_DURATION: Double = js.native
+    var TRANSITION_OPEN_DURATION: Double
   }
   object ANCHORTOMENUSURFACEWIDTHRATIO {
     
@@ -111,14 +108,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CLOSEDEVENT extends StObject {
     
-    var CLOSED_EVENT: String = js.native
+    var CLOSED_EVENT: String
     
-    var FOCUSABLE_ELEMENTS: String = js.native
+    var FOCUSABLE_ELEMENTS: String
     
-    var OPENED_EVENT: String = js.native
+    var OPENED_EVENT: String
   }
   object CLOSEDEVENT {
     
@@ -143,16 +139,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/menu-surface.@material/menu-surface/types.MDCMenuDistance> */
-  @js.native
   trait PartialMDCMenuDistance extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object PartialMDCMenuDistance {
     
@@ -192,46 +187,45 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/menu-surface.@material/menu-surface/adapter.MDCMenuSurfaceAdapter> */
-  @js.native
   trait PartialMDCMenuSurfaceAdap extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getAnchorDimensions: js.UndefOr[js.Function0[ClientRect | Null]] = js.native
+    var getAnchorDimensions: js.UndefOr[js.Function0[ClientRect | Null]] = js.undefined
     
-    var getBodyDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.native
+    var getBodyDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
     
-    var getInnerDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.native
+    var getInnerDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
     
-    var getWindowDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.native
+    var getWindowDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
     
-    var getWindowScroll: js.UndefOr[js.Function0[MDCMenuPoint]] = js.native
+    var getWindowScroll: js.UndefOr[js.Function0[MDCMenuPoint]] = js.undefined
     
-    var hasAnchor: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasAnchor: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var isElementInContainer: js.UndefOr[js.Function1[/* el */ Element, Boolean]] = js.native
+    var isElementInContainer: js.UndefOr[js.Function1[/* el */ Element, Boolean]] = js.undefined
     
-    var isFocused: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isFocused: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isRtl: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRtl: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var restoreFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var restoreFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var saveFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var saveFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setMaxHeight: js.UndefOr[js.Function1[/* height */ String, Unit]] = js.native
+    var setMaxHeight: js.UndefOr[js.Function1[/* height */ String, Unit]] = js.undefined
     
-    var setPosition: js.UndefOr[js.Function1[/* position */ PartialMDCMenuDistance, Unit]] = js.native
+    var setPosition: js.UndefOr[js.Function1[/* position */ PartialMDCMenuDistance, Unit]] = js.undefined
     
-    var setTransformOrigin: js.UndefOr[js.Function1[/* origin */ String, Unit]] = js.native
+    var setTransformOrigin: js.UndefOr[js.Function1[/* origin */ String, Unit]] = js.undefined
   }
   object PartialMDCMenuSurfaceAdap {
     

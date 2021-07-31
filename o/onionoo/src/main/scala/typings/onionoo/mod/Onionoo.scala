@@ -30,21 +30,20 @@ import typings.onionoo.onionooStrings.uptime
 import typings.onionoo.onionooStrings.weights
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Onionoo
-  extends Instantiable0[Instance with Endpoints]
+  extends StObject
+     with Instantiable0[Instance & Endpoints]
      with Instantiable1[
       (/* options */ Options) | (/* options */ OptionsWithEndpoints), 
-      (Instance with Endpoints) | InstancePartialEndpoints
+      (Instance & Endpoints) | InstancePartialEndpoints
     ]
 object Onionoo {
   
   type Bandwidth = Response[NodeBandwidth, NodeBandwidth]
   
-  @js.native
   trait Bridge extends StObject {
     
     /**
@@ -52,38 +51,38 @@ object Onionoo {
       * is the minimum of `bandwidth_rate`, `bandwidth_burst`, and `observed_bandwidth`.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var advertised_bandwidth: js.UndefOr[Double] = js.native
+    var advertised_bandwidth: js.UndefOr[Double] = js.undefined
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when this bridge was first seen in a bridge network status.
       */
-    var first_seen: String = js.native
+    var first_seen: String
     
     /**
       * Array of relay flags that the bridge authority assigned to this bridge. May be omitted if empty.
       */
-    var flags: js.UndefOr[js.Array[String]] = js.native
+    var flags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * SHA-1 hash of the bridge fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var hashed_fingerprint: String = js.native
+    var hashed_fingerprint: String
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when the bridge was last (re-)started.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var last_restarted: js.UndefOr[String] = js.native
+    var last_restarted: js.UndefOr[String] = js.undefined
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when this bridge was last seen in a bridge network status.
       */
-    var last_seen: String = js.native
+    var last_seen: String
     
     /**
       * Bridge nickname consisting of 1–19 alphanumerical characters.
       */
-    var nickname: String = js.native
+    var nickname: String
     
     /**
       * Array of sanitized IPv4 or IPv6 addresses and TCP ports or port lists where the bridge accepts
@@ -94,37 +93,37 @@ object Onionoo {
       * Sanitized IP addresses always change on the 1st of every month at 00:00:00 UTC, regardless of the bridge
       * actually changing its IP address. TCP ports are not sanitized.
       */
-    var or_addresses: js.Array[String] = js.native
+    var or_addresses: js.Array[String]
     
     /**
       * Platform string containing operating system and Tor version details.
       * Omitted if not provided by the bridge or if descriptor containing this information cannot be found.
       */
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean field saying whether the Tor software version of this bridge is recommended by the directory
       * authorities or not. Uses the bridge version in the bridge network status. Omitted if either the directory
       * authorities did not recommend versions, or the bridge did not report which version it runs.
       */
-    var recommended_version: js.UndefOr[Boolean] = js.native
+    var recommended_version: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean field saying whether this bridge was listed as running in the last bridge network status.
       */
-    var running: Boolean = js.native
+    var running: Boolean
     
     /**
       * Array of (pluggable) transport names supported by this bridge.
       */
-    var transports: js.UndefOr[js.Array[String]] = js.native
+    var transports: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Tor software version without leading "Tor" as reported by the bridge in the "platform" line of its server
       * descriptor. Omitted if not provided by the bridge, if the descriptor containing this information cannot
       * be found, or if the bridge runs an alternative Tor implementation.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
     /**
       * Status of the Tor software version of this bridge based on the versions recommended by the directory authorities.
@@ -135,7 +134,7 @@ object Onionoo {
       * `unrecommended` if none of the above conditions hold. Omitted if either the directory authorities did not
       * recommend versions, or the bridge did not report which version it runs.
       */
-    var version_status: js.UndefOr[recommended | experimental | obsolete | (`new in series`) | unrecommended] = js.native
+    var version_status: js.UndefOr[recommended | experimental | obsolete | (`new in series`) | unrecommended] = js.undefined
   }
   object Bridge {
     
@@ -232,7 +231,6 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait BridgeClients extends StObject {
     
     /**
@@ -244,12 +242,12 @@ object Onionoo {
       * data resolution. The unit is number of clients. Contained graph history objects may contain null values
       * if the bridge did not report client statistics for at least 50% of a given time period.
       */
-    var average_clients: js.UndefOr[PartialRecord6months1year] = js.native
+    var average_clients: js.UndefOr[PartialRecord6months1year] = js.undefined
     
     /**
       * SHA-1 hash of the bridge fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
   }
   object BridgeClients {
     
@@ -273,23 +271,22 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait BridgeSummary extends StObject {
     
     /**
       * SHA-1 hash of the bridge fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var h: String = js.native
+    var h: String
     
     /**
       * Bridge nickname consisting of 1–19 alphanumerical characters.
       */
-    var n: String = js.native
+    var n: String
     
     /**
       * Boolean field saying whether this bridge was listed as running in the last bridge network status.
       */
-    var r: Boolean = js.native
+    var r: Boolean
   }
   object BridgeSummary {
     
@@ -313,19 +310,18 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait BridgeUptime extends StObject {
     
     /**
       * SHA-1 hash of the bridge fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * Object containing uptime history objects for different time periods. The specification of uptime history
       * objects is similar to those in the `uptime` field of `RelayUptime`.
       */
-    var uptime: js.UndefOr[PartialRecord1week1month6] = js.native
+    var uptime: js.UndefOr[PartialRecord1week1month6] = js.undefined
   }
   object BridgeUptime {
     
@@ -349,7 +345,7 @@ object Onionoo {
     }
   }
   
-  type Clients = Response[js.UndefOr[scala.Nothing], BridgeClients]
+  type Clients = Response[Unit, BridgeClients]
   
   type Details = Response[Relay, Bridge]
   
@@ -375,20 +371,19 @@ object Onionoo {
     def weights(query: QueryParameters): GotPromise[Weights] = js.native
   }
   
-  @js.native
   trait Histogram extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var factor: Double = js.native
+    var factor: Double
     
-    var first: String = js.native
+    var first: String
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var last: String = js.native
+    var last: String
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object Histogram {
     
@@ -460,19 +455,18 @@ object Onionoo {
     def get_weights(endpoint: weights, query: QueryParameters): GotPromise[Weights] = js.native
   }
   
-  @js.native
   trait NodeBandwidth extends StObject {
     
     /**
       * Node fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * Object containing graph history objects with read bytes for different time periods. The specification
       * of graph history objects is similar to those in the `write_history` field.
       */
-    var read_history: js.UndefOr[PartialRecord3days1week1m] = js.native
+    var read_history: js.UndefOr[PartialRecord3days1week1m] = js.undefined
     
     /**
       * Object containing graph history objects with written bytes for different time periods. Keys are string
@@ -485,7 +479,7 @@ object Onionoo {
       * graph history objects may contain null values if the node did not provide any bandwidth data or only data
       * for less than 20% of a given time period.
       */
-    var write_history: js.UndefOr[PartialRecord3days1week1m] = js.native
+    var write_history: js.UndefOr[PartialRecord3days1week1m] = js.undefined
   }
   object NodeBandwidth {
     
@@ -515,20 +509,19 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * String to use as the base url for all API requests.
       * @default 'https://onionoo.torproject.org'
       */
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Storage adapter instance for storing cached data.
       * @default false
       */
-    var cache: js.UndefOr[Cache | `false`] = js.native
+    var cache: js.UndefOr[Cache | `false`] = js.undefined
   }
   object Options {
     
@@ -555,14 +548,15 @@ object Onionoo {
     }
   }
   
-  @js.native
-  trait OptionsWithEndpoints extends Options {
+  trait OptionsWithEndpoints
+    extends StObject
+       with Options {
     
     /**
       * Array of endpoints to be returned as methods on the `Onionoo` instance.
       * @default ['summary', 'details', 'bandwidth', 'weights', 'clients', 'uptime']
       */
-    var endpoints: js.Array[summary | details | bandwidth | weights | clients | uptime] = js.native
+    var endpoints: js.Array[summary | details | bandwidth | weights | clients | uptime]
   }
   object OptionsWithEndpoints {
     
@@ -583,7 +577,6 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait QueryParameters extends StObject {
     
     /**
@@ -592,7 +585,7 @@ object Onionoo {
       * Filtering by AS number is case-insensitive. The special AS number 0 can be used for relays that were
       * not found in the GeoIP database.
       */
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays with the parameter value matching (part of) the autonomous system (AS) name they are
@@ -601,7 +594,7 @@ object Onionoo {
       * value, some of which need to be percent-encoded (# as %23, % as %25, & as %26, + as %2B, and / as %2F).
       * Comparisons are case-insensitive.
       */
-    var as_name: js.UndefOr[String] = js.native
+    var as_name: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays with the parameter value matching (part of) the contact line. If the parameter value
@@ -609,14 +602,14 @@ object Onionoo {
       * Only printable ASCII characters are permitted in the parameter value, some of which need to be
       * percent-encoded (# as %23, % as %25, & as %26, + as %2B, and / as %2F). Comparisons are case-insensitive.
       */
-    var contact: js.UndefOr[String] = js.native
+    var contact: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays which are located in the given country as identified by a two-letter country code.
       * Filtering by country code is case-insensitive. The special country code xz can be used for relays that
       * were not found in the GeoIP database.
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * Return only the relay whose fingerprint matches the parameter value and all relays that this relay has
@@ -626,7 +619,7 @@ object Onionoo {
       * consist of 40 hex characters where case does not matter, and it must not be hashed using SHA-1.
       * Bridges are not contained in the result, regardless of whether they define a family.
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * Response documents can be reduced in size by requesting only a subset of contained fields.
@@ -635,27 +628,27 @@ object Onionoo {
       * If the fields parameter is provided, all other fields which are not contained in the provided list
       * will be removed from the result.
       */
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Return only relays or bridges which have first been seen during the given range of days ago. A parameter
       * value "x-y" with x <= y returns relays or bridges that have first been seen at least x and at most y days ago.
       * Accepted short forms are "x", "x-", and "-y" which are interpreted as "x-x", "x-infinity", and "0-y".
       */
-    var first_seen_days: js.UndefOr[String] = js.native
+    var first_seen_days: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays which have the given relay flag assigned by the directory authorities.
       * Filtering by flag is case-insensitive.
       */
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays with a domain name ending in the given (partial) host name. Searches for subdomains
       * of a specific domain should ideally be prefixed with a period, for example: ".csail.mit.edu". Non-ASCII
       * host name characters must be encoded as punycode. Filtering by host name is case-insensitive.
       */
-    var host_name: js.UndefOr[String] = js.native
+    var host_name: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays or bridges which have last been seen during the given range of days ago. A parameter
@@ -664,14 +657,14 @@ object Onionoo {
       * Note that relays and bridges that haven't been running in the past week are not included in results,
       * so that setting x to 8 or higher will lead to an empty result set.
       */
-    var last_seen_days: js.UndefOr[String] = js.native
+    var last_seen_days: js.UndefOr[String] = js.undefined
     
     /**
       * Limit result to the given number of relays and/or bridges. Relays are kept first, then bridges.
       * Non-positive `limit` values are treated as zero and lead to an empty result. When used together with `offset`,
       * the offsetting step precedes the limiting step.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Return only the relay with the parameter value matching the fingerprint or the bridge with the parameter
@@ -680,13 +673,13 @@ object Onionoo {
       * Lookups only work for full fingerprints or hashed fingerprints consisting of 40 hex characters.
       * Lookups are case-insensitive.
       */
-    var lookup: js.UndefOr[String] = js.native
+    var lookup: js.UndefOr[String] = js.undefined
     
     /**
       * Skip the given number of relays and/or bridges. Relays are skipped first, then bridges.
       * Non-positive `offset` values are treated as zero and don't change the result.
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Re-order results by a comma-separated list of fields in ascending or descending order. Results are first
@@ -698,25 +691,25 @@ object Onionoo {
       * document type and does not require the ordering field to be contained in the document. If no `order`
       * parameter is given, ordering of results is undefined.
       */
-    var order: js.UndefOr[String] = js.native
+    var order: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays or bridges running on an operating system that starts with the parameter value.
       * Searches are case-insensitive.
       */
-    var os: js.UndefOr[String] = js.native
+    var os: js.UndefOr[String] = js.undefined
     
     /**
       * Return only relays and bridges running a Tor software version that is recommended (`true`) or not
       * recommended by the directory authorities (`false`). Uses the version in the consensus or bridge network status.
       * Relays and bridges are not contained in either result, if the version they are running is not known.
       */
-    var recommended_version: js.UndefOr[Boolean] = js.native
+    var recommended_version: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return only running (`true`) or only non-running relays and/or bridges (`false`).
       */
-    var running: js.UndefOr[Boolean] = js.native
+    var running: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return only (1) relays with the parameter value matching (part of a) nickname, (possibly $-prefixed)
@@ -737,12 +730,12 @@ object Onionoo {
       * internally be passed to that parameter. If a qualified search term for a given "key" is specified
       * more than once, only the first "value" is considered.
       */
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
     /**
       * Return only `relay` or only `bridge` documents.
       */
-    var `type`: js.UndefOr[relay | bridge] = js.native
+    var `type`: js.UndefOr[relay | bridge] = js.undefined
     
     /**
       * Return only relays or bridges running either Tor version from a list or range given in the parameter value.
@@ -750,7 +743,7 @@ object Onionoo {
       * comma-separated list (","), as a range separated by two dots (".."), or as a list of ranges.
       * Provided versions are parsed and matched by parsed dotted numbers, rather than by string prefix.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object QueryParameters {
     
@@ -888,7 +881,6 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait Relay extends StObject {
     
     /**
@@ -896,84 +888,84 @@ object Onionoo {
       * value is the minimum of `bandwidth_rate`, `bandwidth_burst`, and `observed_bandwidth`.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var advertised_bandwidth: js.UndefOr[Double] = js.native
+    var advertised_bandwidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of fingerprints of relays that are not in an effective, mutual family relationship with this relay.
       * These relays are part of this relay's family but they don't consider this relay to be part of their family.
       * Omitted if empty or if descriptor containing this information cannot be found.
       */
-    var alleged_family: js.UndefOr[js.Array[String]] = js.native
+    var alleged_family: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * AS number as found in an AS database by resolving the relay's first onion-routing IP address.
       * AS number strings start with "AS", followed directly by the AS number. Omitted if the relay IP
       * address could not be found in the AS database.
       */
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
     /**
       * AS name as found in an AS database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the AS database.
       */
-    var as_name: js.UndefOr[String] = js.native
+    var as_name: js.UndefOr[String] = js.undefined
     
     /**
       * Bandwidth in bytes per second that this relay is willing to sustain in very short intervals.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var bandwidth_burst: js.UndefOr[Double] = js.native
+    var bandwidth_burst: js.UndefOr[Double] = js.undefined
     
     /**
       * Average bandwidth in bytes per second that this relay is willing to sustain over long periods.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var bandwidth_rate: js.UndefOr[Double] = js.native
+    var bandwidth_rate: js.UndefOr[Double] = js.undefined
     
     /**
       * City name as found in a GeoIP database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the GeoIP database, or if the GeoIP database
       * did not contain a city name.
       */
-    var city_name: js.UndefOr[String] = js.native
+    var city_name: js.UndefOr[String] = js.undefined
     
     /**
       * Weight assigned to this relay by the directory authorities that clients use in their path selection algorithm.
       * The unit is arbitrary; currently it's kilobytes per second, but that might change in the future.
       */
-    var consensus_weight: Double = js.native
+    var consensus_weight: Double
     
     /**
       * Fraction of this relay's consensus weight compared to the sum of all consensus weights in the network.
       * This fraction is a very rough approximation of the probability of this relay to be selected by clients.
       * Omitted if the relay is not running.
       */
-    var consensus_weight_fraction: js.UndefOr[Double] = js.native
+    var consensus_weight_fraction: js.UndefOr[Double] = js.undefined
     
     /**
       * Contact address of the relay operator. Omitted if empty or if descriptor containing this information
       * cannot be found.
       */
-    var contact: js.UndefOr[String] = js.native
+    var contact: js.UndefOr[String] = js.undefined
     
     /**
       * Two-letter lower-case country code as found in a GeoIP database by resolving the relay's first
       * onion-routing IP address. Omitted if the relay IP address could not be found in the GeoIP database.
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * Country name as found in a GeoIP database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the GeoIP database, or if the GeoIP database
       * did not contain a country name.
       */
-    var country_name: js.UndefOr[String] = js.native
+    var country_name: js.UndefOr[String] = js.undefined
     
     /**
       * IPv4 address and TCP port where the relay accepts directory connections.
       * Omitted if the relay does not accept directory connections.
       */
-    var dir_address: js.UndefOr[String] = js.native
+    var dir_address: js.UndefOr[String] = js.undefined
     
     /**
       * Array of fingerprints of relays that are in an effective, mutual family relationship with this relay.
@@ -981,21 +973,21 @@ object Onionoo {
       * Always contains the relay's own fingerprint. Omitted if the descriptor containing this information
       * cannot be found.
       */
-    var effective_family: js.UndefOr[js.Array[String]] = js.native
+    var effective_family: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Array of IPv4 addresses that the relay used to exit to the Internet in the past 24 hours. Omitted if
       * array is empty. Includes all exit addresses, regardless of whether they are used as onion-routing addresses
       * or not.
       */
-    var exit_addresses: js.UndefOr[js.Array[String]] = js.native
+    var exit_addresses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Array of exit-policy lines. Missing if router descriptor containing this information cannot be found.
       * May contradict the `exit_policy_summary` field in a rare edge case: this happens when the relay changes
       * its exit policy after the directory authorities summarized the previous exit policy.
       */
-    var exit_policy: js.UndefOr[js.Array[String]] = js.native
+    var exit_policy: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Summary version of the relay's exit policy containing a dictionary with either an `accept` or a `reject` element.
@@ -1004,7 +996,7 @@ object Onionoo {
       * `exit_policy` field in a rare edge case: this happens when the relay changes its exit policy after
       * the directory authorities summarized the previous exit policy.
       */
-    var exit_policy_summary: js.UndefOr[Accept] = js.native
+    var exit_policy_summary: js.UndefOr[Accept] = js.undefined
     
     /**
       * Summary version of the relay's IPv6 exit policy containing a dictionary with either an `accept` or a `reject`
@@ -1014,7 +1006,7 @@ object Onionoo {
       * this happens when the relay changes its exit policy after the directory authorities summarized the previous
       * exit policy.
       */
-    var exit_policy_v6_summary: js.UndefOr[Accept] = js.native
+    var exit_policy_v6_summary: js.UndefOr[Accept] = js.undefined
     
     /**
       * Probability of this relay to be selected for the exit position. This probability is calculated based on
@@ -1022,22 +1014,22 @@ object Onionoo {
       * factors, so that this probability can only be an approximation. Omitted if the relay is not running,
       * or the consensus does not contain bandwidth weights.
       */
-    var exit_probability: js.UndefOr[Double] = js.native
+    var exit_probability: js.UndefOr[Double] = js.undefined
     
     /**
       * Relay fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when this relay was first seen in a network status consensus.
       */
-    var first_seen: String = js.native
+    var first_seen: String
     
     /**
       * Array of relay flags that the directory authorities assigned to this relay. May be omitted if empty.
       */
-    var flags: js.UndefOr[js.Array[String]] = js.native
+    var flags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Probability of this relay to be selected for the guard position. This probability is calculated based on
@@ -1045,7 +1037,7 @@ object Onionoo {
       * factors, so that this probability can only be an approximation. Omitted if the relay is not running,
       * or the consensus does not contain bandwidth weights.
       */
-    var guard_probability: js.UndefOr[Double] = js.native
+    var guard_probability: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean field saying whether this relay indicated that it is hibernating in its last known server descriptor.
@@ -1053,7 +1045,7 @@ object Onionoo {
       * accounting limit and has not dropped out of the network for another, unknown reason. Omitted if either
       * the relay is not hibernating, or if no information is available about the hibernation status of the relay.
       */
-    var hibernating: js.UndefOr[Boolean] = js.native
+    var hibernating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Host name as found in a reverse DNS lookup of the relay's primary IP address. This field is updated at most
@@ -1061,51 +1053,51 @@ object Onionoo {
       * if no lookup request was successful yet, or if no A record was found matching the PTR record.
       * @deprecated
       */
-    var host_name: js.UndefOr[String] = js.native
+    var host_name: js.UndefOr[String] = js.undefined
     
     /**
       * Array of fingerprints of relays that are not in an effective, mutual family relationship with this relay
       * but that can be reached by following effective, mutual family relationships starting at this relay.
       * Omitted if empty or if descriptor containing this information cannot be found.
       */
-    var indirect_family: js.UndefOr[js.Array[String]] = js.native
+    var indirect_family: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when this relay last stopped announcing an IPv4 or IPv6 address or
       * TCP port where it previously accepted onion-routing or directory connections. This timestamp can serve
       * as indicator whether this relay would be a suitable fallback directory.
       */
-    var last_changed_address_or_port: String = js.native
+    var last_changed_address_or_port: String
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when the relay was last (re-)started.
       * Missing if router descriptor containing this information cannot be found.
       */
-    var last_restarted: js.UndefOr[String] = js.native
+    var last_restarted: js.UndefOr[String] = js.undefined
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when this relay was last seen in a network status consensus.
       */
-    var last_seen: String = js.native
+    var last_seen: String
     
     /**
       * Latitude as found in a GeoIP database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the GeoIP database.
       */
-    var latitude: js.UndefOr[Double] = js.native
+    var latitude: js.UndefOr[Double] = js.undefined
     
     /**
       * Longitude as found in a GeoIP database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the GeoIP database.
       */
-    var longitude: js.UndefOr[Double] = js.native
+    var longitude: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean field saying whether the consensus weight of this relay is based on a threshold of 3 or more
       * measurements by Tor bandwidth authorities. Omitted if the network status consensus containing this
       * relay does not contain measurement information.
       */
-    var measured: js.UndefOr[Boolean] = js.native
+    var measured: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Probability of this relay to be selected for the middle position. This probability is calculated based on
@@ -1113,12 +1105,12 @@ object Onionoo {
       * factors, so that this probability can only be an approximation. Omitted if the relay is not running,
       * or the consensus does not contain bandwidth weights.
       */
-    var middle_probability: js.UndefOr[Double] = js.native
+    var middle_probability: js.UndefOr[Double] = js.undefined
     
     /**
       * Relay nickname consisting of 1–19 alphanumerical characters.
       */
-    var nickname: String = js.native
+    var nickname: String
     
     /**
       * Bandwidth estimate in bytes per second of the capacity this relay can handle. The relay remembers
@@ -1126,39 +1118,39 @@ object Onionoo {
       * sustained input. The `observed_bandwidth` value is the lesser of these two numbers. Missing if
       * router descriptor containing this information cannot be found.
       */
-    var observed_bandwidth: js.UndefOr[Double] = js.native
+    var observed_bandwidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of IPv4 or IPv6 addresses and TCP ports or port lists where the relay accepts onion-routing connections.
       * The first address is the primary onion-routing address that the relay used to register in the network,
       * subsequent addresses are in arbitrary order. IPv6 hex characters are all lower-case.
       */
-    var or_addresses: js.Array[String] = js.native
+    var or_addresses: js.Array[String]
     
     /**
       * Platform string containing operating system and Tor version details. Omitted if empty or if descriptor
       * containing this information cannot be found.
       */
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean field saying whether the Tor software version of this relay is recommended by the directory
       * authorities or not. Uses the relay version in the consensus. Omitted if either the directory authorities
       * did not recommend versions, or the relay did not report which version it runs.
       */
-    var recommended_version: js.UndefOr[Boolean] = js.native
+    var recommended_version: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Region name as found in a GeoIP database by resolving the relay's first onion-routing IP address.
       * Omitted if the relay IP address could not be found in the GeoIP database, or if the GeoIP database
       * did not contain a region name.
       */
-    var region_name: js.UndefOr[String] = js.native
+    var region_name: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean field saying whether this relay was listed as running in the last relay network status consensus.
       */
-    var running: Boolean = js.native
+    var running: Boolean
     
     /**
       * Array of IPv4 or IPv6 addresses and TCP ports or port lists where the relay claims in its descriptor to
@@ -1171,7 +1163,7 @@ object Onionoo {
       * to the processing, relays with unreachable addresses will be included here. Addresses are in arbitrary order.
       * IPv6 hex characters are all lower-case. Omitted if empty.
       */
-    var unreachable_or_addresses: js.UndefOr[js.Array[String]] = js.native
+    var unreachable_or_addresses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Host names as found in a reverse DNS lookup of the relay's primary IP address that for which a matching
@@ -1181,7 +1173,7 @@ object Onionoo {
       * A DNSSEC validating resolver is used for these lookups. Failure to validate DNSSEC signatures will prevent
       * those names from appearing in this field.
       */
-    var unverified_host_names: js.UndefOr[js.Array[String]] = js.native
+    var unverified_host_names: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Host names as found in a reverse DNS lookup of the relay's primary IP address for which a matching A record
@@ -1191,14 +1183,14 @@ object Onionoo {
       * of the PTR records). A DNSSEC validating resolver is used for these lookups. Failure to validate
       * DNSSEC signatures will prevent those names from appearing in this field.
       */
-    var verified_host_names: js.UndefOr[js.Array[String]] = js.native
+    var verified_host_names: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Tor software version without leading "Tor" as reported by the directory authorities in the "v" line of
       * the consensus. Omitted if either the directory authorities or the relay did not report which version
       * the relay runs or if the relay runs an alternative Tor implementation.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
     /**
       * Status of the Tor software version of this relay based on the versions recommended by the directory authorities.
@@ -1209,7 +1201,7 @@ object Onionoo {
       * `unrecommended` if none of the above conditions hold. Omitted if either the directory authorities did not
       * recommend versions, or the relay did not report which version it runs.
       */
-    var version_status: js.UndefOr[recommended | experimental | obsolete | (`new in series`) | unrecommended] = js.native
+    var version_status: js.UndefOr[recommended | experimental | obsolete | (`new in series`) | unrecommended] = js.undefined
   }
   object Relay {
     
@@ -1509,7 +1501,6 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait RelaySummary extends StObject {
     
     /**
@@ -1518,22 +1509,22 @@ object Onionoo {
       * that the relay used to register in the network, subsequent addresses are in arbitrary order. IPv6 hex
       * characters are all lower-case.
       */
-    var a: js.Array[String] = js.native
+    var a: js.Array[String]
     
     /**
       * Relay fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var f: String = js.native
+    var f: String
     
     /**
       * Relay nickname consisting of 1–19 alphanumerical characters.
       */
-    var n: String = js.native
+    var n: String
     
     /**
       * Boolean field saying whether this relay was listed as running in the last relay network status consensus.
       */
-    var r: Boolean = js.native
+    var r: Boolean
   }
   object RelaySummary {
     
@@ -1563,20 +1554,19 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait RelayUptime extends StObject {
     
     /**
       * Relay fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * Object containing fractional times of this relay having relay flags assigned. Keys are flag names like
       * `Running` or `Exit`, values are objects similar to the uptime field above, again with keys like
       * `1_week` etc. If a relay never had a given relay flag assigned, no object is included for that flag.
       */
-    var flags: js.UndefOr[StringDictionary[PartialRecord1week1month6]] = js.native
+    var flags: js.UndefOr[StringDictionary[PartialRecord1week1month6]] = js.undefined
     
     /**
       * Object containing graph history objects with the fractional uptime of this relay. Keys are string
@@ -1588,7 +1578,7 @@ object Onionoo {
       * Contained graph history objects may contain null values if less than 20% of network statuses have been
       * processed for a given time period.
       */
-    var uptime: js.UndefOr[PartialRecord1week1month6] = js.native
+    var uptime: js.UndefOr[PartialRecord1week1month6] = js.undefined
   }
   object RelayUptime {
     
@@ -1618,14 +1608,13 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait RelayWeights extends StObject {
     
     /**
       * History object containing the absolute consensus weight of this relay. The specification of this history
       * object is similar to that in the `consensus_weight_fraction` field above.
       */
-    var consensus_weight: js.UndefOr[PartialRecord1week1month6] = js.native
+    var consensus_weight: js.UndefOr[PartialRecord1week1month6] = js.undefined
     
     /**
       * History object containing the fraction of this relay's consensus weight compared to the sum of all consensus
@@ -1637,7 +1626,7 @@ object Onionoo {
       * time period and higher data resolution. The unit is path-selection probability. Contained graph history objects
       * may contain null values if the relay was running less than 20% of a given time period.
       */
-    var consensus_weight_fraction: js.UndefOr[PartialRecord1week1month6] = js.native
+    var consensus_weight_fraction: js.UndefOr[PartialRecord1week1month6] = js.undefined
     
     /**
       * History object containing the probability of this relay to be selected for the exit position.
@@ -1645,12 +1634,12 @@ object Onionoo {
       * Path selection depends on more factors, so that this probability can only be an approximation.
       * The specification of this history object is similar to that in the `consensus_weight_fraction` field above.
       */
-    var exit_probability: js.UndefOr[PartialRecord1week1month6] = js.native
+    var exit_probability: js.UndefOr[PartialRecord1week1month6] = js.undefined
     
     /**
       * Node fingerprint consisting of 40 upper-case hexadecimal characters.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * History object containing the probability of this relay to be selected for the guard position.
@@ -1658,7 +1647,7 @@ object Onionoo {
       * Path selection depends on more factors, so that this probability can only be an approximation.
       * The specification of this history object is similar to that in the `consensus_weight_fraction` field above.
       */
-    var guard_probability: js.UndefOr[PartialRecord1week1month6] = js.native
+    var guard_probability: js.UndefOr[PartialRecord1week1month6] = js.undefined
     
     /**
       * History object containing the probability of this relay to be selected for the middle position.
@@ -1666,7 +1655,7 @@ object Onionoo {
       * Path selection depends on more factors, so that this probability can only be an approximation.
       * The specification of this history object is similar to that in the `consensus_weight_fraction` field above.
       */
-    var middle_probability: js.UndefOr[PartialRecord1week1month6] = js.native
+    var middle_probability: js.UndefOr[PartialRecord1week1month6] = js.undefined
   }
   object RelayWeights {
     
@@ -1714,60 +1703,59 @@ object Onionoo {
     }
   }
   
-  @js.native
   trait Response[TRelay, TBridge] extends StObject {
     
-    var bridges: js.Array[TBridge] = js.native
+    var bridges: js.Array[TBridge]
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when the last known bridge network status was published.
       * Indicates how recent the bridge objects in this document are.
       */
-    var bridges_published: String = js.native
+    var bridges_published: String
     
     /**
       * Number of skipped bridges as requested by a positive `offset` parameter value. Omitted if zero.
       */
-    var bridges_skipped: js.UndefOr[Double] = js.native
+    var bridges_skipped: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of truncated bridges as requested by a positive `limit` parameter value. Omitted if zero.
       */
-    var bridges_truncated: js.UndefOr[Double] = js.native
+    var bridges_truncated: js.UndefOr[Double] = js.undefined
     
     /**
       * Git revision of the Onionoo instance's software used to write this response, which will be omitted if unknown.
       */
-    var build_revision: js.UndefOr[String] = js.native
+    var build_revision: js.UndefOr[String] = js.undefined
     
     /**
       * UTC date (YYYY-MM-DD) when the next major protocol version is scheduled to be deployed. Omitted if no major
       * protocol changes are planned.
       */
-    var next_major_version_scheduled: js.UndefOr[String] = js.native
+    var next_major_version_scheduled: js.UndefOr[String] = js.undefined
     
-    var relays: js.Array[TRelay] = js.native
+    var relays: js.Array[TRelay]
     
     /**
       * UTC timestamp (YYYY-MM-DD hh:mm:ss) when the last known relay network status consensus started being valid.
       * Indicates how recent the relay objects in this document are.
       */
-    var relays_published: String = js.native
+    var relays_published: String
     
     /**
       * Number of skipped relays as requested by a positive "offset" parameter value. Omitted if zero.
       */
-    var relays_skipped: js.UndefOr[Double] = js.native
+    var relays_skipped: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of truncated relays as requested by a positive "limit" parameter value. Omitted if zero.
       */
-    var relays_truncated: js.UndefOr[Double] = js.native
+    var relays_truncated: js.UndefOr[Double] = js.undefined
     
     /**
       * Onionoo protocol version string.
       */
-    var version: String = js.native
+    var version: String
   }
   object Response {
     
@@ -1784,7 +1772,7 @@ object Onionoo {
     }
     
     @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[_, _], TRelay, TBridge] (val x: Self with (Response[TRelay, TBridge])) extends AnyVal {
+    implicit class ResponseMutableBuilder[Self <: Response[?, ?], TRelay, TBridge] (val x: Self & (Response[TRelay, TBridge])) extends AnyVal {
       
       @scala.inline
       def setBridges(value: js.Array[TBridge]): Self = StObject.set(x, "bridges", value.asInstanceOf[js.Any])
@@ -1849,5 +1837,5 @@ object Onionoo {
   
   type Uptime = Response[RelayUptime, BridgeUptime]
   
-  type Weights = Response[RelayWeights, js.UndefOr[scala.Nothing]]
+  type Weights = Response[RelayWeights, Unit]
 }

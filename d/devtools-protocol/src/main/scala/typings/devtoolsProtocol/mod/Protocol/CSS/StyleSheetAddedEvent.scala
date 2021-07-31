@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleSheetAddedEvent extends StObject {
   
   /**
     * Added stylesheet metainfo.
     */
-  var header: CSSStyleSheetHeader = js.native
+  var header: CSSStyleSheetHeader
 }
 object StyleSheetAddedEvent {
   

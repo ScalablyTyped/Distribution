@@ -7,7 +7,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`32512`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeAttribute {

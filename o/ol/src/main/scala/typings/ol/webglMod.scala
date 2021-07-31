@@ -4,10 +4,13 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webglMod {
+  
+  @JSImport("ol/webgl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/webgl", "ARRAY_BUFFER")
   @js.native
@@ -45,14 +48,11 @@ object webglMod {
   @js.native
   val UNSIGNED_SHORT: Double = js.native
   
-  @JSImport("ol/webgl", "getContext")
-  @js.native
-  def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = js.native
-  @JSImport("ol/webgl", "getContext")
-  @js.native
-  def getContext(canvas: HTMLCanvasElement, opt_attributes: js.Any): WebGLRenderingContext = js.native
+  @scala.inline
+  def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
+  @scala.inline
+  def getContext(canvas: HTMLCanvasElement, opt_attributes: js.Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], opt_attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
   
-  @JSImport("ol/webgl", "getSupportedExtensions")
-  @js.native
-  def getSupportedExtensions(): js.Array[String] = js.native
+  @scala.inline
+  def getSupportedExtensions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String]]
 }

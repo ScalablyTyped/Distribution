@@ -2,21 +2,19 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTypeProvidersListTypesResponse extends StObject {
   
   /**
     * A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A list of resource type info.
     */
-  var types: js.UndefOr[js.Array[SchemaTypeInfo]] = js.native
+  var types: js.UndefOr[js.Array[SchemaTypeInfo]] = js.undefined
 }
 object SchemaTypeProvidersListTypesResponse {
   

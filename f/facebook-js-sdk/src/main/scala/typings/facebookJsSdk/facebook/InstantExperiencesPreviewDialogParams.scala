@@ -4,24 +4,24 @@ import typings.facebookJsSdk.facebookJsSdkStrings.canvas_preview
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstantExperiencesPreviewDialogParams extends DialogParams {
+trait InstantExperiencesPreviewDialogParams
+  extends StObject
+     with DialogParams {
   
-  var canvas_id: String = js.native
+  var canvas_id: String
   
   @JSName("display")
-  var display_InstantExperiencesPreviewDialogParams: popup = js.native
+  var display_InstantExperiencesPreviewDialogParams: popup
   
-  var method: canvas_preview = js.native
+  var method: canvas_preview
 }
 object InstantExperiencesPreviewDialogParams {
   
   @scala.inline
-  def apply(canvas_id: String, display: popup, method: canvas_preview): InstantExperiencesPreviewDialogParams = {
-    val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  def apply(canvas_id: String): InstantExperiencesPreviewDialogParams = {
+    val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = "popup", method = "canvas_preview")
     __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
   }
   

@@ -2,53 +2,51 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var color: js.Any = js.native
+  var color: js.Any
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var end: js.Any = js.native
+  var end: js.Any
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var shape: js.Array[_] = js.native
+  var shape: js.Array[js.Any]
   
-  var start: js.Any = js.native
+  var start: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Color {
   
@@ -70,7 +68,7 @@ object Color {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    shape: js.Array[_],
+    shape: js.Array[js.Any],
     start: js.Any,
     `type`: String,
     updateAutoRender: Boolean,
@@ -133,7 +131,7 @@ object Color {
     def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: js.Array[_]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    def setShape(value: js.Array[js.Any]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setShapeVarargs(value: js.Any*): Self = StObject.set(x, "shape", js.Array(value :_*))

@@ -3,13 +3,13 @@ package typings.miniprogram
 import typings.miniprogram.anon.ApFilePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SaveFileArgs extends AsyncCallback[ApFilePath] {
+trait SaveFileArgs
+  extends StObject
+     with AsyncCallback[ApFilePath] {
   
-  var apFilePath: String = js.native
+  var apFilePath: String
 }
 object SaveFileArgs {
   

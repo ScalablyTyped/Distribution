@@ -2,30 +2,28 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a single (undoable) action on a document
   * @since OOo 3.4
   */
-@js.native
 trait XUndoAction extends StObject {
   
   /** is the human-readable, localized description of the action. */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * repeats the action represented by the instance, after it had previously been reverted.
     * @throws UndoFailedException if repeating the action failed. In this case, the caller should assume that this is a permanent failure, and take appropriate
     */
-  def redo(): Unit = js.native
+  def redo(): Unit
   
   /**
     * reverts the action represented by the instance
     * @throws UndoFailedException if reverting the action failed. In this case, the caller should assume that this is a permanent failure, and take appropriate
     */
-  def undo(): Unit = js.native
+  def undo(): Unit
 }
 object XUndoAction {
   

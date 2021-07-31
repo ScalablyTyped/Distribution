@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reason extends StObject {
   
   /**
     * The reason that the resource is recommended to the user.
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * The resourceId object contains information that identifies the recommended resource.
     */
-  var resourceId: ChannelIdKind = js.native
+  var resourceId: ChannelIdKind
   
   /**
     * The seedResourceId object contains information about the resource that caused the recommendation.
     */
-  var seedResourceId: KindPlaylistId = js.native
+  var seedResourceId: KindPlaylistId
 }
 object Reason {
   

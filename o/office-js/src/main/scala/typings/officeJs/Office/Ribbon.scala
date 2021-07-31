@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Requirement set**: Ribbon 1.1
   */
-@js.native
 trait Ribbon extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait Ribbon extends StObject {
   		 *
     * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
     */
-  def requestUpdate(input: RibbonUpdaterData): js.Promise[Unit] = js.native
+  def requestUpdate(input: RibbonUpdaterData): js.Promise[Unit]
 }
 object Ribbon {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ldap {
@@ -19,11 +18,12 @@ object ldap {
     * Generic exception occurring during access to an LDAP server. The actual LDAP error code is provided for more refined error management.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait LdapGenericException extends Exception {
+  trait LdapGenericException
+    extends StObject
+       with Exception {
     
     /** LDAP error code, see LDAP SDK documentation for complete list of possible values and their meaning. */
-    var ErrorCode: Double = js.native
+    var ErrorCode: Double
   }
   object LdapGenericException {
     

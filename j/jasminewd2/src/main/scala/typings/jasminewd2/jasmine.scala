@@ -4,30 +4,24 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.jasmine.jasmine.ArrayLike
 import typings.jasmine.jasmine.CustomEqualityTester
-import typings.jasmine.jasmine.Expected
 import typings.jasmine.jasmine.MatchersUtil
 import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
   
   @js.native
-  trait ArrayLikeMatchers[T] extends Matchers[ArrayLike[T]] {
+  trait ArrayLikeMatchers[T]
+    extends StObject
+       with Matchers[ArrayLike[T]] {
     
     var not: ArrayLikeMatchers[T] = js.native
     
-    def toBe(expected: Expected[ArrayLike[T]]): js.Promise[Unit] = js.native
-    def toBe(expected: Expected[ArrayLike[T]], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    
     def toContain(expected: T): js.Promise[Unit] = js.native
     def toContain(expected: T, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    
-    def toEqual(expected: Expected[ArrayLike[T]]): js.Promise[Unit] = js.native
-    def toEqual(expected: Expected[ArrayLike[T]], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   }
   
   @js.native
@@ -45,12 +39,11 @@ object jasmine {
     AsyncCustomMatcher
   ]
   
-  @js.native
   trait AsyncCustomMatcherResult extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var pass: Boolean | js.Promise[Boolean] = js.native
+    var pass: Boolean | js.Promise[Boolean]
   }
   object AsyncCustomMatcherResult {
     
@@ -74,10 +67,9 @@ object jasmine {
     }
   }
   
-  @js.native
   trait Env extends StObject {
     
-    def addMatchers(matchers: AsyncCustomMatcherFactories): Unit = js.native
+    def addMatchers(matchers: AsyncCustomMatcherFactories): Unit
   }
   object Env {
     
@@ -99,8 +91,9 @@ object jasmine {
   // Even though library is not compatible with jasmine v3, there is no suitable way to configure that now here.
   // See for more detail: https://github.com/microsoft/dtslint/issues/253
   @js.native
-  trait FunctionMatchers[Fn /* <: js.Function1[/* repeated */ js.Any, _] */]
-    extends Matchers[js.Any] {
+  trait FunctionMatchers[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+    extends StObject
+       with Matchers[js.Any] {
     
     @JSName("toHaveBeenCalledWith")
     def toHaveBeenCalledWith_Promise(params: js.Any*): js.Promise[Unit] = js.native
@@ -113,13 +106,13 @@ object jasmine {
     def toBe(expected: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
     
     def toBeCloseTo(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: js.Promise[Double], precision: js.UndefOr[scala.Nothing], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: js.Promise[Double], precision: js.Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: js.Promise[Double], precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: js.Promise[Double], precision: Unit, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: Double): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: Double, precision: js.UndefOr[scala.Nothing], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: Double, precision: js.Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: Double, precision: Unit, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
     
     def toBeDefined(): js.Promise[Unit] = js.native
     def toBeDefined(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
@@ -182,9 +175,6 @@ object jasmine {
     def toThrow(expected: js.Any): js.Promise[Unit] = js.native
     
     def toThrowError(): js.Promise[Unit] = js.native
-    def toThrowError(expected: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
-    def toThrowError(expected: js.UndefOr[scala.Nothing], message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
-    def toThrowError(expected: js.UndefOr[scala.Nothing], message: RegExp): js.Promise[Unit] = js.native
     def toThrowError(
       expected: Instantiable1[
           /* args (repeated) */ js.Any, 
@@ -212,15 +202,17 @@ object jasmine {
         ],
       message: RegExp
     ): js.Promise[Unit] = js.native
+    def toThrowError(expected: Unit, message: String): js.Promise[Unit] = js.native
+    def toThrowError(expected: Unit, message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
+    def toThrowError(expected: Unit, message: RegExp): js.Promise[Unit] = js.native
     def toThrowError(message: String): js.Promise[Unit] = js.native
     def toThrowError(message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
     def toThrowError(message: RegExp): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Spec extends StObject {
     
-    def addMatchers(matchers: AsyncCustomMatcherFactories): Unit = js.native
+    def addMatchers(matchers: AsyncCustomMatcherFactories): Unit
   }
   object Spec {
     

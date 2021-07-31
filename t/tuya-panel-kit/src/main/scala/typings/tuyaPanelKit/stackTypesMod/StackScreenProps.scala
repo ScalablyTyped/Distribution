@@ -4,15 +4,13 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.RouteProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackScreenProps[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var navigation: StackNavigationProp[ParamList, RouteName] = js.native
+  var navigation: StackNavigationProp[ParamList, RouteName]
   
-  var route: RouteProp[ParamList, RouteName] = js.native
+  var route: RouteProp[ParamList, RouteName]
 }
 object StackScreenProps {
   
@@ -23,7 +21,7 @@ object StackScreenProps {
   }
   
   @scala.inline
-  implicit class StackScreenPropsMutableBuilder[Self <: StackScreenProps[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (StackScreenProps[ParamList, RouteName])) extends AnyVal {
+  implicit class StackScreenPropsMutableBuilder[Self <: StackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (StackScreenProps[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
     def setNavigation(value: StackNavigationProp[ParamList, RouteName]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

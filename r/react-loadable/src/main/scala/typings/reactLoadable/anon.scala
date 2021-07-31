@@ -3,15 +3,13 @@ package typings.reactLoadable
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default[Props] extends StObject {
     
-    var default: ComponentType[Props] = js.native
+    var default: ComponentType[Props]
   }
   object Default {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[_], Props] (val x: Self with Default[Props]) extends AnyVal {
+    implicit class DefaultMutableBuilder[Self <: Default[?], Props] (val x: Self & Default[Props]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: ComponentType[Props]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

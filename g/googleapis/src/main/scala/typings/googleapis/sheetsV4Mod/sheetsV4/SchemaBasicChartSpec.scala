@@ -2,36 +2,34 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The specification for a basic chart.  See BasicChartType for the list of
   * charts this supports.
   */
-@js.native
 trait SchemaBasicChartSpec extends StObject {
   
   /**
     * The axis on the chart.
     */
-  var axis: js.UndefOr[js.Array[SchemaBasicChartAxis]] = js.native
+  var axis: js.UndefOr[js.Array[SchemaBasicChartAxis]] = js.undefined
   
   /**
     * The type of the chart.
     */
-  var chartType: js.UndefOr[String] = js.native
+  var chartType: js.UndefOr[String] = js.undefined
   
   /**
     * The behavior of tooltips and data highlighting when hovering on data and
     * chart area.
     */
-  var compareMode: js.UndefOr[String] = js.native
+  var compareMode: js.UndefOr[String] = js.undefined
   
   /**
     * The domain of data this is charting. Only a single domain is supported.
     */
-  var domains: js.UndefOr[js.Array[SchemaBasicChartDomain]] = js.native
+  var domains: js.UndefOr[js.Array[SchemaBasicChartDomain]] = js.undefined
   
   /**
     * The number of rows or columns in the data that are &quot;headers&quot;.
@@ -39,41 +37,41 @@ trait SchemaBasicChartSpec extends StObject {
     * the data.  (Note that BasicChartAxis.title may override the axis title
     * inferred from the header values.)
     */
-  var headerCount: js.UndefOr[Double] = js.native
+  var headerCount: js.UndefOr[Double] = js.undefined
   
   /**
     * If some values in a series are missing, gaps may appear in the chart
     * (e.g, segments of lines in a line chart will be missing).  To eliminate
     * these gaps set this to true. Applies to Line, Area, and Combo charts.
     */
-  var interpolateNulls: js.UndefOr[Boolean] = js.native
+  var interpolateNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The position of the chart legend.
     */
-  var legendPosition: js.UndefOr[String] = js.native
+  var legendPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Gets whether all lines should be rendered smooth or straight by default.
     * Applies to Line charts.
     */
-  var lineSmoothing: js.UndefOr[Boolean] = js.native
+  var lineSmoothing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data this chart is visualizing.
     */
-  var series: js.UndefOr[js.Array[SchemaBasicChartSeries]] = js.native
+  var series: js.UndefOr[js.Array[SchemaBasicChartSeries]] = js.undefined
   
   /**
     * The stacked type for charts that support vertical stacking. Applies to
     * Area, Bar, Column, Combo, and Stepped Area charts.
     */
-  var stackedType: js.UndefOr[String] = js.native
+  var stackedType: js.UndefOr[String] = js.undefined
   
   /**
     * True to make the chart 3D. Applies to Bar and Column charts.
     */
-  var threeDimensional: js.UndefOr[Boolean] = js.native
+  var threeDimensional: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBasicChartSpec {
   

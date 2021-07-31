@@ -2,18 +2,16 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXEntityResolver interface */
-@js.native
 trait IVBSAXEntityResolver extends StObject {
   
   @JSName("MSXML2.IVBSAXEntityResolver_typekey")
-  var MSXML2DotIVBSAXEntityResolver_typekey: IVBSAXEntityResolver = js.native
+  var MSXML2DotIVBSAXEntityResolver_typekey: IVBSAXEntityResolver
   
   /** Allow the application to resolve external entities. */
-  def resolveEntity(strPublicId: String, strSystemId: String): js.Any = js.native
+  def resolveEntity(strPublicId: String, strSystemId: String): js.Any
 }
 object IVBSAXEntityResolver {
   

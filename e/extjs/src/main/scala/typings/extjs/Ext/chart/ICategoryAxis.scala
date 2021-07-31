@@ -2,18 +2,17 @@ package typings.extjs.Ext.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICategoryAxis
-  extends typings.extjs.Ext.chart.axis.IAxis {
+  extends StObject
+     with typings.extjs.Ext.chart.axis.IAxis {
   
   /** [Config Option] (Boolean) */
-  var calculateCategoryCount: js.UndefOr[Boolean] = js.native
+  var calculateCategoryCount: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var categoryNames: js.UndefOr[String] = js.native
+  var categoryNames: js.UndefOr[String] = js.undefined
 }
 object ICategoryAxis {
   

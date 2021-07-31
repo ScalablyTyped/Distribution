@@ -12,7 +12,7 @@ Utility library for converting between Kanji, Hiragana, Katakana, and Romaji
 | Keywords           | english, japanese, hiragana, katakana, kana, romaji, conversion, transliteration, input, ime, wanikani |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 73023 |
+| # downloads        | 116877 |
 | # stars            | 3 |
 
 ## Links

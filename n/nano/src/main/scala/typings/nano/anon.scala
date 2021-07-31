@@ -8,22 +8,20 @@ import typings.nano.mod.MangoSelector
 import typings.nano.mod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
     // The size of live data inside the database, in bytes.
-    var active: Double = js.native
+    var active: Double
     
     // The uncompressed size of database contents in bytes.
-    var external: Double = js.native
+    var external: Double
     
     // The size of the database file on disk in bytes. Views indexes
-    var file: Double = js.native
+    var file: Double
   }
   object Active {
     
@@ -60,18 +58,17 @@ object anon {
     def query(id: String, opts0: js.Object, callback0: Callback[DatabaseGetResponse]): js.Promise[DatabaseGetResponse] = js.native
   }
   
-  @js.native
   trait Doc[V] extends StObject {
     
-    var doc: js.UndefOr[V] = js.native
+    var doc: js.UndefOr[V] = js.undefined
     
-    var fields: js.Object = js.native
+    var fields: js.Object
     
-    var id: String = js.native
+    var id: String
     
-    var key: String = js.native
+    var key: String
     
-    var order: js.Array[Double] = js.native
+    var order: js.Array[Double]
   }
   object Doc {
     
@@ -82,7 +79,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DocMutableBuilder[Self <: Doc[_], V] (val x: Self with Doc[V]) extends AnyVal {
+    implicit class DocMutableBuilder[Self <: Doc[?], V] (val x: Self & Doc[V]) extends AnyVal {
       
       @scala.inline
       def setDoc(value: V): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
@@ -107,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait External extends StObject {
     
-    var active: Double = js.native
+    var active: Double
     
-    var external: Double = js.native
+    var external: Double
   }
   object External {
     
@@ -133,14 +129,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     // Array of field names following the sort syntax.
-    var fields: js.Array[SortOrder] = js.native
+    var fields: js.Array[SortOrder]
     
     // A selector to apply to documents at indexing time, creating a partial index.
-    var partial_filter_selector: js.UndefOr[MangoSelector] = js.native
+    var partial_filter_selector: js.UndefOr[MangoSelector] = js.undefined
   }
   object Fields {
     
@@ -167,16 +162,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Id[V, D] extends StObject {
     
-    var doc: js.UndefOr[D with Document] = js.native
+    var doc: js.UndefOr[D & Document] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var key: String = js.native
+    var key: String
     
-    var value: V = js.native
+    var value: V
   }
   object Id {
     
@@ -187,10 +181,10 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[_, _], V, D] (val x: Self with (Id[V, D])) extends AnyVal {
+    implicit class IdMutableBuilder[Self <: Id[?, ?], V, D] (val x: Self & (Id[V, D])) extends AnyVal {
       
       @scala.inline
-      def setDoc(value: D with Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
@@ -206,12 +200,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IdRev extends StObject {
     
-    var _id: String = js.native
+    var _id: String
     
-    var _rev: String = js.native
+    var _rev: String
   }
   object IdRev {
     
@@ -232,10 +225,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -253,10 +245,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rev extends StObject {
     
-    var rev: String = js.native
+    var rev: String
   }
   object Rev {
     

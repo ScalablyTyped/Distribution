@@ -2,17 +2,15 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSettings extends StObject {
   
-  var access: js.UndefOr[js.Array[AccessSetting]] = js.native
+  var access: js.UndefOr[js.Array[AccessSetting]] = js.undefined
   
-  var mode: AuthMode = js.native
+  var mode: AuthMode
   
-  var strategies: js.Array[String] = js.native
+  var strategies: js.Array[String]
 }
 object AuthSettings {
   

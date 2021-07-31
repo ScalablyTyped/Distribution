@@ -10,46 +10,45 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var allowAllCanceled: js.UndefOr[Boolean] = js.native
+  var allowAllCanceled: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
+  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   // useHtml 为true时生效
-  var containerTpl: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.undefined
   
   // 自定义混合图例
-  var custom: js.UndefOr[Boolean] = js.native
+  var custom: js.UndefOr[Boolean] = js.undefined
   
-  var `g2-legend`: js.UndefOr[CSSProperties] = js.native
+  var `g2-legend`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-legend-item`: js.UndefOr[CSSProperties] = js.native
+  var `g2-legend-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-legend-list-item`: js.UndefOr[CSSProperties] = js.native
+  var `g2-legend-list-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-legend-marker`: js.UndefOr[CSSProperties] = js.native
+  var `g2-legend-marker`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-legend-text`: js.UndefOr[CSSProperties] = js.native
+  var `g2-legend-text`: js.UndefOr[CSSProperties] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
-  var itemFormatter: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], String | Double]] = js.native
+  var itemFormatter: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], String | Double]] = js.undefined
   
-  var itemGap: js.UndefOr[Double] = js.native
+  var itemGap: js.UndefOr[Double] = js.undefined
   
-  var itemMarginBottom: js.UndefOr[Double] = js.native
+  var itemMarginBottom: js.UndefOr[Double] = js.undefined
   
   var itemTpl: js.UndefOr[
     String | (js.Function4[
@@ -59,13 +58,13 @@ trait LegendProps
       /* index */ js.UndefOr[Double], 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var itemWidth: js.UndefOr[Double] = js.native
+  var itemWidth: js.UndefOr[Double] = js.undefined
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var layout: js.UndefOr[LegendLayoutType] = js.native
+  var layout: js.UndefOr[LegendLayoutType] = js.undefined
   
   var marker: js.UndefOr[
     String | MarkerType | (js.Function4[
@@ -75,38 +74,38 @@ trait LegendProps
       /* ctx */ js.UndefOr[CanvasRenderingContext2D], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   
-  var position: js.UndefOr[LegendPositionType] = js.native
+  var position: js.UndefOr[LegendPositionType] = js.undefined
   
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
   
-  var selectedMode: js.UndefOr[single | multiple] = js.native
+  var selectedMode: js.UndefOr[single | multiple] = js.undefined
   
   // 连续图例
-  var slidable: js.UndefOr[Boolean] = js.native
+  var slidable: js.UndefOr[Boolean] = js.undefined
   
-  var textStyle: js.UndefOr[text] = js.native
+  var textStyle: js.UndefOr[text] = js.undefined
   
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
   
-  var unChecked: js.UndefOr[String] = js.native
+  var unChecked: js.UndefOr[String] = js.undefined
   
-  var useHtml: js.UndefOr[Boolean] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LegendProps {
   
@@ -241,7 +240,7 @@ object LegendProps {
     def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

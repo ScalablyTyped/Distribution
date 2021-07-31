@@ -16,49 +16,47 @@ import typings.reactNativeSensorManager.reactNativeSensorManagerStrings.StepCoun
 import typings.reactNativeSensorManager.reactNativeSensorManagerStrings.Thermometer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait SensorManager extends StObject {
     
-    def startAccelerometer(delay: Double): Unit = js.native
+    def startAccelerometer(delay: Double): Unit
     
-    def startGyroscope(delay: Double): Unit = js.native
+    def startGyroscope(delay: Double): Unit
     
-    def startLightSensor(delay: Double): Unit = js.native
+    def startLightSensor(delay: Double): Unit
     
-    def startMagnetometer(delay: Double): Unit = js.native
+    def startMagnetometer(delay: Double): Unit
     
-    def startMotionValue(delay: Double): Unit = js.native
+    def startMotionValue(delay: Double): Unit
     
-    def startOrientation(delay: Double): Unit = js.native
+    def startOrientation(delay: Double): Unit
     
-    def startProximity(delay: Double): Unit = js.native
+    def startProximity(delay: Double): Unit
     
-    def startStepCounter(delay: Double): Unit = js.native
+    def startStepCounter(delay: Double): Unit
     
-    def startThermometer(delay: Double): Unit = js.native
+    def startThermometer(delay: Double): Unit
     
-    def stopAccelerometer(): Unit = js.native
+    def stopAccelerometer(): Unit
     
-    def stopGyroscope(): Unit = js.native
+    def stopGyroscope(): Unit
     
-    def stopLightSensor(): Unit = js.native
+    def stopLightSensor(): Unit
     
-    def stopMagnetometer(): Unit = js.native
+    def stopMagnetometer(): Unit
     
-    def stopMotionValue(): Unit = js.native
+    def stopMotionValue(): Unit
     
-    def stopOrientation(): Unit = js.native
+    def stopOrientation(): Unit
     
-    def stopProximity(): Unit = js.native
+    def stopProximity(): Unit
     
-    def stopStepCounter(): Unit = js.native
+    def stopStepCounter(): Unit
     
-    def stopThermometer(): Unit = js.native
+    def stopThermometer(): Unit
   }
   object SensorManager {
     
@@ -169,10 +167,9 @@ object mod {
       def addListener_Thermometer(event: Thermometer, callback: js.Function1[/* data */ Temp, Unit]): js.Any = js.native
     }
     
-    @js.native
     trait NativeModulesStatic extends StObject {
       
-      var SensorManager: typings.reactNativeSensorManager.mod.SensorManager = js.native
+      var SensorManager: typings.reactNativeSensorManager.mod.SensorManager
     }
     object NativeModulesStatic {
       

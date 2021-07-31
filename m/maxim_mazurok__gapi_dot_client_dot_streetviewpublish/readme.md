@@ -10,9 +10,9 @@ TypeScript typings for Street View Publish API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.streetviewpublish |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 53 |
 | # dependents       | 1 |
-| # downloads        | 130 |
+| # downloads        | 3519 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationReportingSettings extends StObject {
   
   /** Whether removed apps are included in application reports. */
-  var includeRemovedApps: js.UndefOr[Boolean] = js.native
+  var includeRemovedApps: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationReportingSettings {
   

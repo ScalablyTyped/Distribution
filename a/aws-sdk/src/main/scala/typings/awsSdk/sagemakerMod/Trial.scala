@@ -2,57 +2,55 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trial extends StObject {
   
-  var CreatedBy: js.UndefOr[UserContext] = js.native
+  var CreatedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the trial was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the trial as displayed. If DisplayName isn't specified, TrialName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The name of the experiment the trial is part of.
     */
-  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
-  var LastModifiedBy: js.UndefOr[UserContext] = js.native
+  var LastModifiedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * Who last modified the trial.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
-  var Source: js.UndefOr[TrialSource] = js.native
+  var Source: js.UndefOr[TrialSource] = js.undefined
   
   /**
     * The list of tags that are associated with the trial. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial.
     */
-  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.native
+  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.undefined
   
   /**
     * A list of the components associated with the trial. For each component, a summary of the component's properties is included.
     */
-  var TrialComponentSummaries: js.UndefOr[TrialComponentSimpleSummaries] = js.native
+  var TrialComponentSummaries: js.UndefOr[TrialComponentSimpleSummaries] = js.undefined
   
   /**
     * The name of the trial.
     */
-  var TrialName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialName: js.UndefOr[ExperimentEntityName] = js.undefined
 }
 object Trial {
   

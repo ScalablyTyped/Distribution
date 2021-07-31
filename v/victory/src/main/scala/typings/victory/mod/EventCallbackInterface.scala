@@ -2,13 +2,11 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return value for eventHandlers values
   */
-@js.native
 trait EventCallbackInterface[TTarget, TEventKey] extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait EventCallbackInterface[TTarget, TEventKey] extends StObject {
     * - VictoryChart
     * - VictoryStack
     */
-  var childName: js.UndefOr[String] = js.native
+  var childName: js.UndefOr[String] = js.undefined
   
-  var eventKey: js.UndefOr[TEventKey] = js.native
+  var eventKey: js.UndefOr[TEventKey] = js.undefined
   
   /**
     * Will be called with the calculated props for the individual selected element and result will override
     * props of selected element via object assignment
     * @param props
     */
-  def mutation(props: js.Any): js.Any = js.native
+  def mutation(props: js.Any): js.Any
   
-  var target: js.UndefOr[TTarget] = js.native
+  var target: js.UndefOr[TTarget] = js.undefined
 }
 object EventCallbackInterface {
   
@@ -38,7 +36,7 @@ object EventCallbackInterface {
   }
   
   @scala.inline
-  implicit class EventCallbackInterfaceMutableBuilder[Self <: EventCallbackInterface[_, _], TTarget, TEventKey] (val x: Self with (EventCallbackInterface[TTarget, TEventKey])) extends AnyVal {
+  implicit class EventCallbackInterfaceMutableBuilder[Self <: EventCallbackInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventCallbackInterface[TTarget, TEventKey])) extends AnyVal {
     
     @scala.inline
     def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])

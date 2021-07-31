@@ -2,15 +2,13 @@ package typings.rcSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Combobox extends StObject {
   
-  var combobox: Boolean = js.native
+  var combobox: Boolean
   
-  var labelInValue: Boolean = js.native
+  var labelInValue: Boolean
 }
 object Combobox {
   

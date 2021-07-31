@@ -2,15 +2,15 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDtdNotation extends IXmlNode {
+trait IDtdNotation
+  extends StObject
+     with IXmlNode {
   
-  var publicId: js.Any = js.native
+  var publicId: js.Any
   
-  var systemId: js.Any = js.native
+  var systemId: js.Any
 }
 object IDtdNotation {
   

@@ -2,7 +2,6 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object EndpointType extends StObject {
   
   /** An endpoint pointing to an agent in the same instance. */
   @js.native
-  sealed trait AGENT extends EndpointType
+  sealed trait AGENT
+    extends StObject
+       with EndpointType
   
   /** An endpoint pointing to a phone number. */
   @js.native
-  sealed trait PHONE_NUMBER extends EndpointType
+  sealed trait PHONE_NUMBER
+    extends StObject
+       with EndpointType
   
   /** An endpoint pointing to a queue call flow in the same instance. */
   @js.native
-  sealed trait QUEUE extends EndpointType
+  sealed trait QUEUE
+    extends StObject
+       with EndpointType
 }

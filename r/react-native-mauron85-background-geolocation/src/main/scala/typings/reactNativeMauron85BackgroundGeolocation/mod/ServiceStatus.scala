@@ -2,10 +2,8 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceStatus extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait ServiceStatus extends StObject {
     * @example
     * if (authorization == BackgroundGeolocation.NOT_AUTHORIZED) {...}
     */
-  var authorization: AuthorizationStatus = js.native
+  var authorization: AuthorizationStatus
   
   /** TRUE if service is running. */
-  var isRunning: Boolean = js.native
+  var isRunning: Boolean
   
   /** TRUE if location services are enabled */
-  var locationServicesEnabled: Boolean = js.native
+  var locationServicesEnabled: Boolean
 }
 object ServiceStatus {
   

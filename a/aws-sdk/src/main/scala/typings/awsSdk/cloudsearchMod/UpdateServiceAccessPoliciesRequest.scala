@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateServiceAccessPoliciesRequest extends StObject {
   
   /**
     * The access rules you want to configure. These rules replace any existing rules. 
     */
-  var AccessPolicies: PolicyDocument = js.native
+  var AccessPolicies: PolicyDocument
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
 }
 object UpdateServiceAccessPoliciesRequest {
   

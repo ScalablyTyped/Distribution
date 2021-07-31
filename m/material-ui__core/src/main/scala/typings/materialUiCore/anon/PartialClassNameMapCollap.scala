@@ -2,20 +2,18 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey>> */
-@js.native
 trait PartialClassNameMapCollap extends StObject {
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var entered: js.UndefOr[String] = js.native
+  var entered: js.UndefOr[String] = js.undefined
   
-  var wrapper: js.UndefOr[String] = js.native
+  var wrapper: js.UndefOr[String] = js.undefined
   
-  var wrapperInner: js.UndefOr[String] = js.native
+  var wrapperInner: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapCollap {
   

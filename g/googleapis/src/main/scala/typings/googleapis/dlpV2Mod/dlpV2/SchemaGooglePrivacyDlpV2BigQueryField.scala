@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message defining a field of a BigQuery table.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2BigQueryField extends StObject {
   
   /**
     * Designated field in the BigQuery table.
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * Source table of the field.
     */
-  var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.native
+  var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2BigQueryField {
   

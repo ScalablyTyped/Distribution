@@ -5,22 +5,21 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerHostTypesMod {
   
-  @js.native
   trait ILayerHost extends StObject
   
-  @js.native
-  trait ILayerHostProps extends HTMLAttributes[HTMLElement] {
+  trait ILayerHostProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Optional callback to access the ILayerHost interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ILayerHost]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ILayerHost]] = js.undefined
   }
   object ILayerHostProps {
     

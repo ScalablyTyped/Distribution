@@ -2,15 +2,13 @@ package typings.firebaseRemoteConfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HttpStatus extends StObject {
     
-    var httpStatus: Double = js.native
+    var httpStatus: Double
   }
   object HttpStatus {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OriginalErrorMessage extends StObject {
     
-    var originalErrorMessage: js.UndefOr[String] = js.native
+    var originalErrorMessage: js.UndefOr[String] = js.undefined
   }
   object OriginalErrorMessage {
     
@@ -52,10 +49,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OriginalErrorMessageString extends StObject {
     
-    var originalErrorMessage: String = js.native
+    var originalErrorMessage: String
   }
   object OriginalErrorMessageString {
     
@@ -73,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ThrottleEndTimeMillis extends StObject {
     
-    var throttleEndTimeMillis: Double = js.native
+    var throttleEndTimeMillis: Double
   }
   object ThrottleEndTimeMillis {
     

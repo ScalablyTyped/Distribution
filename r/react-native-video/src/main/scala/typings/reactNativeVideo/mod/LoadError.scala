@@ -3,13 +3,11 @@ package typings.reactNativeVideo.mod
 import typings.reactNativeVideo.anon._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadError extends StObject {
   
-  var error: _empty = js.native
+  var error: _empty
 }
 object LoadError {
   

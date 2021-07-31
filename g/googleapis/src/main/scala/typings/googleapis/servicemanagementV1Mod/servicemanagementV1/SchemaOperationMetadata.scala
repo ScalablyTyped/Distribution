@@ -2,35 +2,33 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata associated with a long running operation resource.
   */
-@js.native
 trait SchemaOperationMetadata extends StObject {
   
   /**
     * Percentage of completion of this operation, ranging from 0 to 100.
     */
-  var progressPercentage: js.UndefOr[Double] = js.native
+  var progressPercentage: js.UndefOr[Double] = js.undefined
   
   /**
     * The full name of the resources that this operation is directly associated
     * with.
     */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.native
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The start time of the operation.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Detailed status information for each step. The order is undetermined.
     */
-  var steps: js.UndefOr[js.Array[SchemaStep]] = js.native
+  var steps: js.UndefOr[js.Array[SchemaStep]] = js.undefined
 }
 object SchemaOperationMetadata {
   

@@ -2,33 +2,31 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Histogram results that match HistogramFacets specified in
   * SearchJobsRequest.
   */
-@js.native
 trait SchemaHistogramResults extends StObject {
   
   /**
     * Specifies compensation field-based histogram results that match
     * HistogramFacets.compensation_histogram_requests.
     */
-  var compensationHistogramResults: js.UndefOr[js.Array[SchemaCompensationHistogramResult]] = js.native
+  var compensationHistogramResults: js.UndefOr[js.Array[SchemaCompensationHistogramResult]] = js.undefined
   
   /**
     * Specifies histogram results for custom attributes that match
     * HistogramFacets.custom_attribute_histogram_facets.
     */
-  var customAttributeHistogramResults: js.UndefOr[js.Array[SchemaCustomAttributeHistogramResult]] = js.native
+  var customAttributeHistogramResults: js.UndefOr[js.Array[SchemaCustomAttributeHistogramResult]] = js.undefined
   
   /**
     * Specifies histogram results that matches
     * HistogramFacets.simple_histogram_facets.
     */
-  var simpleHistogramResults: js.UndefOr[js.Array[SchemaHistogramResult]] = js.native
+  var simpleHistogramResults: js.UndefOr[js.Array[SchemaHistogramResult]] = js.undefined
 }
 object SchemaHistogramResults {
   

@@ -2,35 +2,33 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ADDEVENTLISTENERSTR extends StObject {
     
-    var ADD_EVENT_LISTENER_STR: String = js.native
+    var ADD_EVENT_LISTENER_STR: String
     
-    var FALSE_STR: String = js.native
+    var FALSE_STR: String
     
-    var REMOVE_EVENT_LISTENER_STR: String = js.native
+    var REMOVE_EVENT_LISTENER_STR: String
     
-    var TRUE_STR: String = js.native
+    var TRUE_STR: String
     
-    var ZONE_SYMBOL_PREFIX: String = js.native
+    var ZONE_SYMBOL_PREFIX: String
     
-    var eventNames: js.Array[String] = js.native
+    var eventNames: js.Array[String]
     
-    var globalSources: js.Any = js.native
+    var globalSources: js.Any
     
-    var isBrowser: Boolean = js.native
+    var isBrowser: Boolean
     
-    var isMix: Boolean = js.native
+    var isMix: Boolean
     
-    var isNode: Boolean = js.native
+    var isNode: Boolean
     
-    var zoneSymbolEventNames: js.Any = js.native
+    var zoneSymbolEventNames: js.Any
   }
   object ADDEVENTLISTENERSTR {
     

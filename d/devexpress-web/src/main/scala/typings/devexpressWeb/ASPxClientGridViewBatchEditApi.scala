@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -124,9 +123,9 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param columnFieldNameOrId A string value that identifies the column by the name of the data source field to which the column is bound, or by the column's name.
     */
   def HasChanges(): Boolean = js.native
-  def HasChanges(visibleIndex: js.UndefOr[scala.Nothing], columnFieldNameOrId: String): Boolean = js.native
   def HasChanges(visibleIndex: Double): Boolean = js.native
   def HasChanges(visibleIndex: Double, columnFieldNameOrId: String): Boolean = js.native
+  def HasChanges(visibleIndex: Unit, columnFieldNameOrId: String): Boolean = js.native
   
   /**
     * Returns a value that indicates whether the specified data cell's data has been changed. true, if the cell has changed data; otherwise, false.
@@ -212,19 +211,19 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(
-    visibleIndex: Double,
-    columnFieldNameOrId: String,
-    value: js.Any,
-    displayText: js.UndefOr[scala.Nothing],
-    cancelCellHighlighting: Boolean
-  ): Unit = js.native
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
     value: js.Any,
     displayText: String,
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
+  def SetCellValue(
+    visibleIndex: Double,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   
@@ -237,19 +236,19 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValueByKey(
-    key: js.Any,
-    columnFieldNameOrId: String,
-    value: js.Any,
-    displayText: js.UndefOr[scala.Nothing],
-    cancelCellHighlighting: Boolean
-  ): Unit = js.native
   def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValueByKey(
     key: js.Any,
     columnFieldNameOrId: String,
     value: js.Any,
     displayText: String,
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
+  def SetCellValueByKey(
+    key: js.Any,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   
@@ -290,7 +289,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param validateOnCurrentPageOnly true, to validate rows that are located only on the current page; otherwise, false.
     */
   def ValidateRows(): Boolean = js.native
-  def ValidateRows(validateOnlyModified: js.UndefOr[scala.Nothing], validateOnCurrentPageOnly: Boolean): Boolean = js.native
   def ValidateRows(validateOnlyModified: Boolean): Boolean = js.native
   def ValidateRows(validateOnlyModified: Boolean, validateOnCurrentPageOnly: Boolean): Boolean = js.native
+  def ValidateRows(validateOnlyModified: Unit, validateOnCurrentPageOnly: Boolean): Boolean = js.native
 }

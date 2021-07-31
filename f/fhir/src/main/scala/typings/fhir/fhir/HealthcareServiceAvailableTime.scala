@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Times the Service Site is available
   */
-@js.native
-trait HealthcareServiceAvailableTime extends BackboneElement {
+trait HealthcareServiceAvailableTime
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'allDay'.
     */
-  var _allDay: js.UndefOr[Element] = js.native
+  var _allDay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'availableEndTime'.
     */
-  var _availableEndTime: js.UndefOr[Element] = js.native
+  var _availableEndTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'availableStartTime'.
     */
-  var _availableStartTime: js.UndefOr[Element] = js.native
+  var _availableStartTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'daysOfWeek'.
     */
-  var _daysOfWeek: js.UndefOr[js.Array[Element]] = js.native
+  var _daysOfWeek: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Always available? e.g. 24 hour service
     */
-  var allDay: js.UndefOr[Boolean] = js.native
+  var allDay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Closing time of day (ignored if allDay = true)
     */
-  var availableEndTime: js.UndefOr[time] = js.native
+  var availableEndTime: js.UndefOr[time] = js.undefined
   
   /**
     * Opening time of day (ignored if allDay = true)
     */
-  var availableStartTime: js.UndefOr[time] = js.native
+  var availableStartTime: js.UndefOr[time] = js.undefined
   
   /**
     * mon | tue | wed | thu | fri | sat | sun
     */
-  var daysOfWeek: js.UndefOr[js.Array[code]] = js.native
+  var daysOfWeek: js.UndefOr[js.Array[code]] = js.undefined
 }
 object HealthcareServiceAvailableTime {
   

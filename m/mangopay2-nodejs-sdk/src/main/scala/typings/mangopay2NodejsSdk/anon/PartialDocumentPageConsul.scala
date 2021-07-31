@@ -3,16 +3,14 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.disputeDocument.DocumentPageConsult> */
-@js.native
 trait PartialDocumentPageConsul extends StObject {
   
-  var ExpirationDate: js.UndefOr[Timestamp] = js.native
+  var ExpirationDate: js.UndefOr[Timestamp] = js.undefined
   
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
 }
 object PartialDocumentPageConsul {
   

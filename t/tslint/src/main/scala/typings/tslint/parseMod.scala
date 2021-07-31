@@ -3,32 +3,29 @@ package typings.tslint
 import typings.tslint.lintErrorMod.LintError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("tslint/lib/verify/parse", "createMarkupFromErrors")
+  @JSImport("tslint/lib/verify/parse", JSImport.Namespace)
   @js.native
-  def createMarkupFromErrors(fileName: String, code: String, lintErrors: js.Array[LintError]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslint/lib/verify/parse", "getNormalizedTypescriptVersion")
-  @js.native
-  def getNormalizedTypescriptVersion(): String = js.native
+  @scala.inline
+  def createMarkupFromErrors(fileName: String, code: String, lintErrors: js.Array[LintError]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMarkupFromErrors")(fileName.asInstanceOf[js.Any], code.asInstanceOf[js.Any], lintErrors.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("tslint/lib/verify/parse", "getTypescriptVersionRequirement")
-  @js.native
-  def getTypescriptVersionRequirement(text: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getNormalizedTypescriptVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedTypescriptVersion")().asInstanceOf[String]
   
-  @JSImport("tslint/lib/verify/parse", "parseErrorsFromMarkup")
-  @js.native
-  def parseErrorsFromMarkup(text: String): js.Array[LintError] = js.native
+  @scala.inline
+  def getTypescriptVersionRequirement(text: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypescriptVersionRequirement")(text.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("tslint/lib/verify/parse", "preprocessDirectives")
-  @js.native
-  def preprocessDirectives(text: String): String = js.native
+  @scala.inline
+  def parseErrorsFromMarkup(text: String): js.Array[LintError] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseErrorsFromMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[LintError]]
   
-  @JSImport("tslint/lib/verify/parse", "removeErrorMarkup")
-  @js.native
-  def removeErrorMarkup(text: String): String = js.native
+  @scala.inline
+  def preprocessDirectives(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("preprocessDirectives")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def removeErrorMarkup(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeErrorMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

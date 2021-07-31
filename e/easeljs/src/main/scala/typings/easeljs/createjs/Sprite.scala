@@ -2,11 +2,12 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sprite extends DisplayObject {
+trait Sprite
+  extends StObject
+     with DisplayObject {
   
   // methods
   def advance(): Unit = js.native

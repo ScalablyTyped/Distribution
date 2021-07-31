@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * given input. Outputs a base64 encoded representation of the encrypted
   * output. Uses AES-SIV based on the RFC https://tools.ietf.org/html/rfc5297.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
   
   /**
@@ -28,12 +26,12 @@ trait SchemaGooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
     * `InfoTypeTransformation` is applied to both structured and non-structured
     * `ContentItem`s.
     */
-  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * The key used by the encryption function.
     */
-  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**
     * The custom info type to annotate the surrogate with. This annotation will
@@ -58,7 +56,7 @@ trait SchemaGooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
     * regular ASCII keyboard, the symbol with the hex code point 29DD might be
     * used like so: ⧝MY_TOKEN_TYPE
     */
-  var surrogateInfoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var surrogateInfoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CryptoDeterministicConfig {
   

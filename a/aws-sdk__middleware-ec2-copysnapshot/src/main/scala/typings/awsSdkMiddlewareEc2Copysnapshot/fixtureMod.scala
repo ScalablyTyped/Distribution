@@ -9,10 +9,13 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fixtureMod {
+  
+  @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "MockSha256")
   @js.native
@@ -31,13 +34,11 @@ object fixtureMod {
   @js.native
   val context: HandlerExecutionContext = js.native
   
-  @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "credentials")
-  @js.native
-  def credentials(): js.Promise[AccessKeyId] = js.native
+  @scala.inline
+  def credentials(): js.Promise[AccessKeyId] = ^.asInstanceOf[js.Dynamic].applyDynamic("credentials")().asInstanceOf[js.Promise[AccessKeyId]]
   
-  @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "endpoint")
-  @js.native
-  def endpoint(): js.Promise[Hostname] = js.native
+  @scala.inline
+  def endpoint(): js.Promise[Hostname] = ^.asInstanceOf[js.Dynamic].applyDynamic("endpoint")().asInstanceOf[js.Promise[Hostname]]
   
   @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "fromUtf8")
   @js.native
@@ -47,9 +48,8 @@ object fixtureMod {
   @js.native
   val nextHandler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<Promise<void>> */ js.Any = js.native
   
-  @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "region")
-  @js.native
-  def region(): js.Promise[String] = js.native
+  @scala.inline
+  def region(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")().asInstanceOf[js.Promise[String]]
   
   @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "toBase64")
   @js.native

@@ -3,57 +3,57 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.chart.axis.IAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAxis extends IAbstract {
+trait IAxis
+  extends StObject
+     with IAbstract {
   
   /** [Config Option] (Boolean) */
-  var adjustEnd: js.UndefOr[Boolean] = js.native
+  var adjustEnd: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var dashSize: js.UndefOr[Double] = js.native
+  var dashSize: js.UndefOr[Double] = js.undefined
   
   /** [Method] Renders the axis into the screen and updates its position
     * @param init Object
     */
-  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.native
+  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Renders an horizontal and or vertical grid into the Surface  */
-  var drawGrid: js.UndefOr[js.Function0[Unit]] = js.native
+  var drawGrid: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Renders the labels in the axes  */
-  var drawLabel: js.UndefOr[js.Function0[Unit]] = js.native
+  var drawLabel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var majorTickSteps: js.UndefOr[Double] = js.native
+  var majorTickSteps: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minorTickSteps: js.UndefOr[Double] = js.native
+  var minorTickSteps: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /** [Method] Updates the title of this axis
     * @param title String
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IAxis {
   

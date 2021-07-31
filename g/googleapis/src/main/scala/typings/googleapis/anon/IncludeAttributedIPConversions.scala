@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeAttributedIPConversions extends StObject {
   
-  var includeAttributedIPConversions: js.UndefOr[Boolean] = js.native
+  var includeAttributedIPConversions: js.UndefOr[Boolean] = js.undefined
   
-  var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.native
+  var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.undefined
   
-  var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.native
+  var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeAttributedIPConversions {
   

@@ -10,32 +10,30 @@ import typings.rockset.rocksetStrings.TRIAL
 import typings.rockset.rocksetStrings.TRIAL_EXPIRED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Organization extends StObject {
   
   // name of the company
-  var company_name: js.UndefOr[String] = js.native
+  var company_name: js.UndefOr[String] = js.undefined
   
   // ISO-8601 date
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // name of the organization
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
   // unique identifier for the organization
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   // number of QCUs
-  var qcu: js.UndefOr[Double] = js.native
+  var qcu: js.UndefOr[Double] = js.undefined
   
   // org state
-  var state: js.UndefOr[ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED] = js.native
+  var state: js.UndefOr[ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED] = js.undefined
   
   // pricing tier
-  var tier: js.UndefOr[FREE | BASIC | PRO | ENTERPRISE] = js.native
+  var tier: js.UndefOr[FREE | BASIC | PRO | ENTERPRISE] = js.undefined
 }
 object Organization {
   

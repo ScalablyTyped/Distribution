@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,20 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the `resolveOutputStream` method can be used to transform the binary data, represented through the {@link com.sun.star.io.XOutputStream} interface, to
   * an URL.
   */
-@js.native
-trait XBinaryStreamResolver extends XInterface {
+trait XBinaryStreamResolver
+  extends StObject
+     with XInterface {
   
   /**
     * creates an output stream, to which binary data can be written. After writing, an URL can be retrieved by a call to {@link
     * XBinaryStreamResolver.resolveOutputStream()} .
     */
-  def createOutputStream(): XOutputStream = js.native
+  def createOutputStream(): XOutputStream
   
   /** converts the given URL from the source URL namespace to an input stream, from which binary data can be read */
-  def getInputStream(aURL: String): XInputStream = js.native
+  def getInputStream(aURL: String): XInputStream
   
   /** converts the output stream, data has been written to, to an URL in source URL namespace. */
-  def resolveOutputStream(aBinaryStream: XOutputStream): String = js.native
+  def resolveOutputStream(aBinaryStream: XOutputStream): String
 }
 object XBinaryStreamResolver {
   

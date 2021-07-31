@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportGroupMod {
@@ -60,6 +59,10 @@ object reportGroupMod {
   /* static members */
   object ReportGroup {
     
+    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReportGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,50 +72,44 @@ object reportGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReportGroup = js.native
-    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReportGroup = js.native
-    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportGroupState): ReportGroup = js.native
-    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportGroupState, opts: CustomResourceOptions): ReportGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportGroupState): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportGroupState, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
     
     /**
       * Returns true if the given object is an instance of ReportGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codebuild/reportGroup", "ReportGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean]
   }
   
-  @js.native
   trait ReportGroupArgs extends StObject {
     
     /**
       * Information about the destination where the raw data of this Report Group is exported. see Export Config documented below.
       */
-    val exportConfig: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig] = js.native
+    val exportConfig: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]
     
     /**
       * The name of a Report Group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The export configuration type. Valid values are `S3` and `NO_EXPORT`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object ReportGroupArgs {
     
@@ -149,38 +146,37 @@ object reportGroupMod {
     }
   }
   
-  @js.native
   trait ReportGroupState extends StObject {
     
     /**
       * The ARN of Report Group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date and time this Report Group was created.
       */
-    val created: js.UndefOr[Input[String]] = js.native
+    val created: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the destination where the raw data of this Report Group is exported. see Export Config documented below.
       */
-    val exportConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]] = js.native
+    val exportConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]] = js.undefined
     
     /**
       * The name of a Report Group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The export configuration type. Valid values are `S3` and `NO_EXPORT`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object ReportGroupState {
     

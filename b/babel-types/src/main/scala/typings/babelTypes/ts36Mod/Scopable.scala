@@ -1,21 +1,5 @@
 package typings.babelTypes.ts36Mod
 
-import typings.babelTypes.babelTypesStrings.ArrowFunctionExpression
-import typings.babelTypes.babelTypesStrings.BlockStatement
-import typings.babelTypes.babelTypesStrings.CatchClause
-import typings.babelTypes.babelTypesStrings.ClassDeclaration
-import typings.babelTypes.babelTypesStrings.ClassExpression
-import typings.babelTypes.babelTypesStrings.ClassMethod
-import typings.babelTypes.babelTypesStrings.DoWhileStatement
-import typings.babelTypes.babelTypesStrings.ForInStatement
-import typings.babelTypes.babelTypesStrings.ForOfStatement
-import typings.babelTypes.babelTypesStrings.ForStatement
-import typings.babelTypes.babelTypesStrings.FunctionDeclaration
-import typings.babelTypes.babelTypesStrings.FunctionExpression
-import typings.babelTypes.babelTypesStrings.ObjectMethod
-import typings.babelTypes.babelTypesStrings.Program
-import typings.babelTypes.babelTypesStrings.SwitchStatement
-import typings.babelTypes.babelTypesStrings.WhileStatement
 import typings.babelTypes.babelTypesStrings.constructor
 import typings.babelTypes.babelTypesStrings.get
 import typings.babelTypes.babelTypesStrings.method
@@ -24,7 +8,6 @@ import typings.babelTypes.babelTypesStrings.script
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -58,32 +41,24 @@ object Scopable {
     id: Identifier_,
     loc: SourceLocation,
     params: js.Array[LVal],
-    start: Double,
-    `type`: ArrowFunctionExpression
+    start: Double
   ): typings.babelTypes.ts36Mod.ArrowFunctionExpression_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ArrowFunctionExpression_]
   }
   
   @scala.inline
-  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double, `type`: BlockStatement): typings.babelTypes.ts36Mod.BlockStatement_ = {
+  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BlockStatement_]
   }
   
   @scala.inline
-  def CatchClause_(
-    body: BlockStatement_,
-    end: Double,
-    loc: SourceLocation,
-    param: Identifier_,
-    start: Double,
-    `type`: CatchClause
-  ): typings.babelTypes.ts36Mod.CatchClause_ = {
+  def CatchClause_(body: BlockStatement_, end: Double, loc: SourceLocation, param: Identifier_, start: Double): typings.babelTypes.ts36Mod.CatchClause_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.CatchClause_]
   }
   
@@ -94,11 +69,10 @@ object Scopable {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    superClass: Expression,
-    `type`: ClassDeclaration
+    superClass: Expression
   ): typings.babelTypes.ts36Mod.ClassDeclaration_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassDeclaration_]
   }
   
@@ -109,11 +83,10 @@ object Scopable {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    superClass: Expression,
-    `type`: ClassExpression
+    superClass: Expression
   ): typings.babelTypes.ts36Mod.ClassExpression_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassExpression_]
   }
   
@@ -131,25 +104,17 @@ object Scopable {
     loc: SourceLocation,
     params: js.Array[LVal],
     start: Double,
-    static: Boolean,
-    `type`: ClassMethod
+    static: Boolean
   ): typings.babelTypes.ts36Mod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassMethod")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassMethod_]
   }
   
   @scala.inline
-  def DoWhileStatement_(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: DoWhileStatement
-  ): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
+  def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DoWhileStatement_]
   }
   
@@ -160,11 +125,10 @@ object Scopable {
     left: VariableDeclaration_ | LVal,
     loc: SourceLocation,
     right: Expression,
-    start: Double,
-    `type`: ForInStatement
+    start: Double
   ): typings.babelTypes.ts36Mod.ForInStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForInStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
@@ -175,11 +139,10 @@ object Scopable {
     left: VariableDeclaration_ | LVal,
     loc: SourceLocation,
     right: Expression,
-    start: Double,
-    `type`: ForOfStatement
+    start: Double
   ): typings.babelTypes.ts36Mod.ForOfStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
@@ -191,11 +154,10 @@ object Scopable {
     loc: SourceLocation,
     start: Double,
     test: Expression,
-    `type`: ForStatement,
     update: Expression
   ): typings.babelTypes.ts36Mod.ForStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForStatement_]
   }
   
@@ -208,11 +170,10 @@ object Scopable {
     id: Identifier_,
     loc: SourceLocation,
     params: js.Array[LVal],
-    start: Double,
-    `type`: FunctionDeclaration
+    start: Double
   ): typings.babelTypes.ts36Mod.FunctionDeclaration_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionDeclaration_]
   }
   
@@ -225,11 +186,10 @@ object Scopable {
     id: Identifier_,
     loc: SourceLocation,
     params: js.Array[LVal],
-    start: Double,
-    `type`: FunctionExpression
+    start: Double
   ): typings.babelTypes.ts36Mod.FunctionExpression_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionExpression_]
   }
   
@@ -247,11 +207,10 @@ object Scopable {
     params: js.Array[LVal],
     shorthand: Boolean,
     start: Double,
-    `type`: ObjectMethod,
     value: Expression
   ): typings.babelTypes.ts36Mod.ObjectMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectMethod")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectMethod_]
   }
   
@@ -261,11 +220,10 @@ object Scopable {
     end: Double,
     loc: SourceLocation,
     sourceType: script | module,
-    start: Double,
-    `type`: Program
+    start: Double
   ): typings.babelTypes.ts36Mod.Program_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Program")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.Program_]
   }
   
@@ -275,25 +233,17 @@ object Scopable {
     discriminant: Expression,
     end: Double,
     loc: SourceLocation,
-    start: Double,
-    `type`: SwitchStatement
+    start: Double
   ): typings.babelTypes.ts36Mod.SwitchStatement_ = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.SwitchStatement_]
   }
   
   @scala.inline
-  def WhileStatement_(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: WhileStatement
-  ): typings.babelTypes.ts36Mod.WhileStatement_ = {
+  def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.WhileStatement_]
   }
 }

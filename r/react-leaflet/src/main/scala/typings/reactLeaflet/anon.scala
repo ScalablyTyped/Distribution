@@ -8,21 +8,19 @@ import typings.reactLeaflet.mod.AddLayerHandler
 import typings.reactLeaflet.mod.RemoveLayerHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddBaseLayer extends StObject {
     
-    var addBaseLayer: AddLayerHandler = js.native
+    var addBaseLayer: AddLayerHandler
     
-    var addOverlay: AddLayerHandler = js.native
+    var addOverlay: AddLayerHandler
     
-    var removeLayer: RemoveLayerHandler = js.native
+    var removeLayer: RemoveLayerHandler
     
-    var removeLayerControl: RemoveLayerHandler = js.native
+    var removeLayerControl: RemoveLayerHandler
   }
   object AddBaseLayer {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
   }
   object ClassName {
     
@@ -86,10 +83,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Popup[E /* <: Popup_ */] extends StObject {
     
-    var popup: E = js.native
+    var popup: E
   }
   object Popup {
     
@@ -100,17 +96,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class PopupMutableBuilder[Self <: Popup[_], E /* <: Popup_ */] (val x: Self with Popup[E]) extends AnyVal {
+    implicit class PopupMutableBuilder[Self <: Popup[?], E /* <: Popup_ */] (val x: Self & Popup[E]) extends AnyVal {
       
       @scala.inline
       def setPopup(value: E): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PopupContainer[E /* <: Path */] extends StObject {
     
-    var popupContainer: E = js.native
+    var popupContainer: E
   }
   object PopupContainer {
     
@@ -121,17 +116,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class PopupContainerMutableBuilder[Self <: PopupContainer[_], E /* <: Path */] (val x: Self with PopupContainer[E]) extends AnyVal {
+    implicit class PopupContainerMutableBuilder[Self <: PopupContainer[?], E /* <: Path */] (val x: Self & PopupContainer[E]) extends AnyVal {
       
       @scala.inline
       def setPopupContainer(value: E): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Tooltip[E /* <: Tooltip_ */] extends StObject {
     
-    var tooltip: E = js.native
+    var tooltip: E
   }
   object Tooltip {
     
@@ -142,7 +136,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TooltipMutableBuilder[Self <: Tooltip[_], E /* <: Tooltip_ */] (val x: Self with Tooltip[E]) extends AnyVal {
+    implicit class TooltipMutableBuilder[Self <: Tooltip[?], E /* <: Tooltip_ */] (val x: Self & Tooltip[E]) extends AnyVal {
       
       @scala.inline
       def setTooltip(value: E): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])

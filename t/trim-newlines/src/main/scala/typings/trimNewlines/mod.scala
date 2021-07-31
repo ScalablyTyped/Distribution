@@ -2,7 +2,6 @@ package typings.trimNewlines
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,9 +15,12 @@ object mod {
   	//=> '🦄'
   	```
   	*/
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("trim-newlines", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Trim from the end of a string.
@@ -29,9 +31,8 @@ object mod {
   	//=> '\n🦄'
   	```
   	*/
-  @JSImport("trim-newlines", "end")
-  @js.native
-  def end(string: String): String = js.native
+  @scala.inline
+  def end(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Trim from the start of a string.
@@ -42,7 +43,6 @@ object mod {
   	//=> '🦄\r\n'
   	```
   	*/
-  @JSImport("trim-newlines", "start")
-  @js.native
-  def start(string: String): String = js.native
+  @scala.inline
+  def start(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }

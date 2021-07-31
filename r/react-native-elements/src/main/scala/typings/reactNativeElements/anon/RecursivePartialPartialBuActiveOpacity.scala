@@ -9,62 +9,60 @@ import typings.reactNativeElements.mod.InnerBorderStyleProperty
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ButtonGroupProps>> */
-@js.native
 trait RecursivePartialPartialBuActiveOpacity extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[_]]]] = js.native
+  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[js.Any]]]] = js.undefined
   
-  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var buttonContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var buttonContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var buttonStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var buttonStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var buttons: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]] = js.native
+  var buttons: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]] = js.undefined
   
-  var containerBorderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var containerBorderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | js.Array[Double]]]] = js.native
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | js.Array[Double]]]] = js.undefined
   
-  var disabledSelectedStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var disabledSelectedStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var disabledSelectedTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var disabledSelectedTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var disabledStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var disabledStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var disabledTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var disabledTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var innerBorderStyle: js.UndefOr[RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]] = js.native
+  var innerBorderStyle: js.UndefOr[RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]] = js.undefined
   
-  var onHideUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onHideUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]] = js.undefined
   
-  var onShowUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onShowUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var selectMultiple: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var selectMultiple: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var selectedButtonStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var selectedButtonStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var selectedIndex: js.UndefOr[RecursivePartial[js.UndefOr[Double | Null]]] = js.native
+  var selectedIndex: js.UndefOr[RecursivePartial[js.UndefOr[Double | Null]]] = js.undefined
   
-  var selectedIndexes: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[Double]]]] = js.native
+  var selectedIndexes: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[Double]]]] = js.undefined
   
-  var selectedTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var selectedTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var setOpacityTo: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.native
+  var setOpacityTo: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.undefined
   
-  var textStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var textStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var underlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var underlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var vertical: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var vertical: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
 }
 object RecursivePartialPartialBuActiveOpacity {
   
@@ -102,7 +100,7 @@ object RecursivePartialPartialBuActiveOpacity {
     def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def setComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    def setComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)

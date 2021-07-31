@@ -2,19 +2,17 @@ package typings.angularUiBootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Date extends StObject {
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var `datetime-local`: js.UndefOr[String] = js.native
+    var `datetime-local`: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
   }
   object Date {
     

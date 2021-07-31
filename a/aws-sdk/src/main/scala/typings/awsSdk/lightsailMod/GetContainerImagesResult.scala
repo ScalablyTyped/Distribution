@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContainerImagesResult extends StObject {
   
   /**
     * An array of objects that describe container images that are registered to the container service.
     */
-  var containerImages: js.UndefOr[ContainerImageList] = js.native
+  var containerImages: js.UndefOr[ContainerImageList] = js.undefined
 }
 object GetContainerImagesResult {
   

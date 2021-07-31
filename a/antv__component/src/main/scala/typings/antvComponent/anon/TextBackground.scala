@@ -2,17 +2,15 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBackground extends StObject {
   
-  var line: StyleStroke = js.native
+  var line: StyleStroke
   
-  var text: Offset = js.native
+  var text: Offset
   
-  var textBackground: Padding = js.native
+  var textBackground: Padding
 }
 object TextBackground {
   

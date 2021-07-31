@@ -3,7 +3,6 @@ package typings.ol
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomMod {
@@ -14,24 +13,23 @@ object zoomMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var delta: js.UndefOr[Double] = js.native
+    var delta: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var zoomInLabel: js.UndefOr[String | HTMLElement] = js.native
+    var zoomInLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var zoomInTipLabel: js.UndefOr[String] = js.native
+    var zoomInTipLabel: js.UndefOr[String] = js.undefined
     
-    var zoomOutLabel: js.UndefOr[String | HTMLElement] = js.native
+    var zoomOutLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var zoomOutTipLabel: js.UndefOr[String] = js.native
+    var zoomOutTipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

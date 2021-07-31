@@ -6,37 +6,37 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the actual window implementation on the device. */
-@js.native
-trait XWindowPeer extends XComponent {
+trait XWindowPeer
+  extends StObject
+     with XComponent {
   
   /** returns the toolkit which created this object. */
-  val Toolkit: XToolkit = js.native
+  val Toolkit: XToolkit
   
   /** returns the toolkit which created this object. */
-  def getToolkit(): XToolkit = js.native
+  def getToolkit(): XToolkit
   
   /**
     * invalidates the whole window with the specified {@link InvalidateStyle} .
     * @param Flags see {@link com.sun.star.awt.InvalidateStyle}
     */
-  def invalidate(Flags: Double): Unit = js.native
+  def invalidate(Flags: Double): Unit
   
   /**
     * invalidates a rectangular area of the window with the specified {@link InvalidateStyle} .
     * @param Rect the area to invalidate.
     * @param Flags see {@link com.sun.star.awt.InvalidateStyle}
     */
-  def invalidateRect(Rect: Rectangle, Flags: Double): Unit = js.native
+  def invalidateRect(Rect: Rectangle, Flags: Double): Unit
   
   /** sets the background color. */
-  def setBackground(Color: Color): Unit = js.native
+  def setBackground(Color: Color): Unit
   
   /** sets the mouse pointer. */
-  def setPointer(Pointer: XPointer): Unit = js.native
+  def setPointer(Pointer: XPointer): Unit
 }
 object XWindowPeer {
   

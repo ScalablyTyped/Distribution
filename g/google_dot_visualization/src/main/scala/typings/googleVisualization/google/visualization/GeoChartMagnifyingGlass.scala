@@ -2,15 +2,13 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoChartMagnifyingGlass extends StObject {
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var zoomFactor: js.UndefOr[Double] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.undefined
 }
 object GeoChartMagnifyingGlass {
   

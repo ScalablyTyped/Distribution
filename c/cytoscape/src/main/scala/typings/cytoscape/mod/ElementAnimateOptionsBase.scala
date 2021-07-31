@@ -4,32 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cytoscape.mod.Css.TransitionTimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/animation
   */
-@js.native
 trait ElementAnimateOptionsBase extends StObject {
   
   /** A function to call when the animation is done. */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** The duration of the animation in milliseconds. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** A transition-timing-function easing style string that shapes the animation progress curve. */
-  var easing: js.UndefOr[TransitionTimingFunction] = js.native
+  var easing: js.UndefOr[TransitionTimingFunction] = js.undefined
   
   /** A boolean indicating whether to queue the animation. */
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
   /** A function to call each time the animation steps. */
-  var step: js.UndefOr[js.Function0[Unit]] = js.native
+  var step: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object ElementAnimateOptionsBase {
   

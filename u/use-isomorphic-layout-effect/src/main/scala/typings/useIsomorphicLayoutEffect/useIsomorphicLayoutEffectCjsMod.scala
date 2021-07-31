@@ -4,10 +4,13 @@ import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useIsomorphicLayoutEffectCjsMod {
+  
+  @JSImport("use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.cjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
@@ -23,11 +26,9 @@ object useIsomorphicLayoutEffectCjsMod {
     * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
     */
   /* was `typeof useLayoutEffect` */
-  @JSImport("use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.cjs", JSImport.Default)
-  @js.native
-  def default(effect: EffectCallback): Unit = js.native
+  @scala.inline
+  def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /* was `typeof useLayoutEffect` */
-  @JSImport("use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.cjs", JSImport.Default)
-  @js.native
-  def default(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  @scala.inline
+  def default(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

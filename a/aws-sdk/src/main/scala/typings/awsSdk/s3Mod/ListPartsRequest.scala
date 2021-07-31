@@ -2,43 +2,41 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartsRequest extends StObject {
   
   /**
     * The name of the bucket to which the parts are being uploaded.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Object key for which the multipart upload was initiated.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * Sets the maximum number of parts to return.
     */
-  var MaxParts: js.UndefOr[typings.awsSdk.s3Mod.MaxParts] = js.native
+  var MaxParts: js.UndefOr[typings.awsSdk.s3Mod.MaxParts] = js.undefined
   
   /**
     * Specifies the part after which listing should begin. Only parts with higher part numbers will be listed.
     */
-  var PartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.PartNumberMarker] = js.native
+  var PartNumberMarker: js.UndefOr[typings.awsSdk.s3Mod.PartNumberMarker] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
   
   /**
     * Upload ID identifying the multipart upload whose parts are being listed.
     */
-  var UploadId: MultipartUploadId = js.native
+  var UploadId: MultipartUploadId
 }
 object ListPartsRequest {
   

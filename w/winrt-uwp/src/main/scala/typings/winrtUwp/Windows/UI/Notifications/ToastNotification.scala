@@ -10,16 +10,15 @@ import typings.winrtUwp.winrtUwpStrings.dismissed
 import typings.winrtUwp.winrtUwpStrings.failed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the content, associated metadata and events, and expiration time of a toast notification. */
 @js.native
 trait ToastNotification extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_activated(`type`: activated, listener: TypedEventHandler[ToastNotification, _]): Unit = js.native
+  def addEventListener_activated(`type`: activated, listener: TypedEventHandler[ToastNotification, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[ToastNotification, ToastDismissedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -35,26 +34,26 @@ trait ToastNotification extends StObject {
   var group: String = js.native
   
   /** Occurs when user activates a toast notification through a click or touch. Apps that are running subscribe to this event. */
-  def onactivated(ev: js.Any with WinRTEvent[ToastNotification]): Unit = js.native
+  def onactivated(ev: js.Any & WinRTEvent[ToastNotification]): Unit = js.native
   /** Occurs when user activates a toast notification through a click or touch. Apps that are running subscribe to this event. */
   @JSName("onactivated")
-  var onactivated_Original: TypedEventHandler[ToastNotification, _] = js.native
+  var onactivated_Original: TypedEventHandler[ToastNotification, js.Any] = js.native
   
   /** Occurs when a toast notification leaves the screen, either by expiring or being explicitly dismissed by the user. Apps that are running subscribe to this event. */
-  def ondismissed(ev: ToastDismissedEventArgs with WinRTEvent[ToastNotification]): Unit = js.native
+  def ondismissed(ev: ToastDismissedEventArgs & WinRTEvent[ToastNotification]): Unit = js.native
   /** Occurs when a toast notification leaves the screen, either by expiring or being explicitly dismissed by the user. Apps that are running subscribe to this event. */
   @JSName("ondismissed")
   var ondismissed_Original: TypedEventHandler[ToastNotification, ToastDismissedEventArgs] = js.native
   
   /** Occurs when an error is caused when Windows attempts to raise a toast notification. Apps that are running subscribe to this event. */
-  def onfailed(ev: ToastFailedEventArgs with WinRTEvent[ToastNotification]): Unit = js.native
+  def onfailed(ev: ToastFailedEventArgs & WinRTEvent[ToastNotification]): Unit = js.native
   /** Occurs when an error is caused when Windows attempts to raise a toast notification. Apps that are running subscribe to this event. */
   @JSName("onfailed")
   var onfailed_Original: TypedEventHandler[ToastNotification, ToastFailedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_activated(`type`: activated, listener: TypedEventHandler[ToastNotification, _]): Unit = js.native
+  def removeEventListener_activated(`type`: activated, listener: TypedEventHandler[ToastNotification, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[ToastNotification, ToastDismissedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

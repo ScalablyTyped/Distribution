@@ -13,7 +13,6 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbItemMod extends Shortcut {
@@ -23,25 +22,26 @@ object breadcrumbItemMod extends Shortcut {
   val default: BreadcrumbItemInterface = js.native
   
   @js.native
-  trait BreadcrumbItemInterface extends FunctionComponent[BreadcrumbItemProps] {
+  trait BreadcrumbItemInterface
+    extends StObject
+       with FunctionComponent[BreadcrumbItemProps] {
     
     var __ANT_BREADCRUMB_ITEM: Boolean = js.native
   }
   
-  @js.native
   trait BreadcrumbItemProps extends StObject {
     
-    var dropdownProps: js.UndefOr[DropDownProps] = js.native
+    var dropdownProps: js.UndefOr[DropDownProps] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement | HTMLSpanElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement | HTMLSpanElement]] = js.undefined
     
-    var overlay: js.UndefOr[ReactElement | OverlayFunc] = js.native
+    var overlay: js.UndefOr[ReactElement | OverlayFunc] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
   }
   object BreadcrumbItemProps {
     

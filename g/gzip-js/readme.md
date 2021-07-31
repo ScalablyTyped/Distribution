@@ -11,8 +11,8 @@ GZIP in pure JavaScript (works in the browser)
 | Full name          | gzip-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 584641 |
+| # dependents       | 40 |
+| # downloads        | 799825 |
 | # stars            | 5 |
 
 ## Links

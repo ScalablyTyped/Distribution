@@ -2,15 +2,13 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait xjsfl extends StObject {
   
-  def init(_this: js.Any): Unit = js.native
+  def init(_this: js.Any): Unit
   
-  var uri: String = js.native
+  var uri: String
 }
 object xjsfl {
   

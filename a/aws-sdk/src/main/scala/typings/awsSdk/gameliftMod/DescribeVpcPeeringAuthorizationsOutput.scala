@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcPeeringAuthorizationsOutput extends StObject {
   
   /**
     * A collection of objects that describe all valid VPC peering operations for the current AWS account.
     */
-  var VpcPeeringAuthorizations: js.UndefOr[VpcPeeringAuthorizationList] = js.native
+  var VpcPeeringAuthorizations: js.UndefOr[VpcPeeringAuthorizationList] = js.undefined
 }
 object DescribeVpcPeeringAuthorizationsOutput {
   

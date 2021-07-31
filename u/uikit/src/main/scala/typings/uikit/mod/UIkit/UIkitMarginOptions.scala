@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitMarginOptions extends StObject {
   
-  var `first-column`: js.UndefOr[String] = js.native
+  var `first-column`: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
 }
 object UIkitMarginOptions {
   

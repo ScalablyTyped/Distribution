@@ -2,24 +2,22 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for Instances.ListInstances.
   */
-@js.native
 trait SchemaListInstancesResponse extends StObject {
   
   /**
     * The instances belonging to the requested version.
     */
-  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListInstancesResponse {
   

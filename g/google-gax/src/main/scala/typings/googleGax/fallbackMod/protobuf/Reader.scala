@@ -4,7 +4,6 @@ import typings.protobufjs.mod.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax/build/src/fallback", "protobuf.Reader")
@@ -20,13 +19,16 @@ class Reader protected ()
 /* static members */
 object Reader {
   
+  @JSImport("google-gax/build/src/fallback", "protobuf.Reader")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new reader using the specified buffer.
     * @param buffer Buffer to read from
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
-  @JSImport("google-gax/build/src/fallback", "protobuf.Reader.create")
-  @js.native
-  def create(buffer: Buffer | Uint8Array): typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader = js.native
+  @scala.inline
+  def create(buffer: Buffer | Uint8Array): typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader]
 }

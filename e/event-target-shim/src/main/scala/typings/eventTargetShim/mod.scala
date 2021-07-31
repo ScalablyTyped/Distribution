@@ -15,10 +15,13 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("event-target-shim", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined event-target-shim.event-target-shim.EventTargetConstructor<{}, {}, 'loose'> & {new <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(): event-target-shim.event-target-shim.EventTarget<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(events : std.Array<string>): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(event0 : string, events : ...string): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>} */
   object default {
@@ -36,9 +39,8 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @JSImport("event-target-shim", JSImport.Default)
-    @js.native
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = js.native
+    @scala.inline
+    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     /**
       * Define an `EventTarget` constructor with attribute events and detailed event definition.
       *
@@ -52,14 +54,19 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @JSImport("event-target-shim", JSImport.Default)
-    @js.native
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = js.native
+    @scala.inline
+    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("event-target-shim", JSImport.Default)
     @js.native
-    class ^ () extends EventTargetloose
+    class ^ ()
+      extends StObject
+         with EventTargetloose
+    
+    @JSImport("event-target-shim", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
   }
   
   /* Inlined event-target-shim.event-target-shim.EventTargetConstructor<{}, {}, 'loose'> & {new <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(): event-target-shim.event-target-shim.EventTarget<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(events : std.Array<string>): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(event0 : string, events : ...string): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>} */
@@ -78,9 +85,8 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @JSImport("event-target-shim", "EventTarget")
-    @js.native
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = js.native
+    @scala.inline
+    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     /**
       * Define an `EventTarget` constructor with attribute events and detailed event definition.
       *
@@ -94,29 +100,35 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @JSImport("event-target-shim", "EventTarget")
-    @js.native
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = js.native
+    @scala.inline
+    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("event-target-shim", "EventTarget")
     @js.native
-    class ^ () extends EventTargetloose
+    class ^ ()
+      extends StObject
+         with EventTargetloose
     
+    @JSImport("event-target-shim", "EventTarget")
     @js.native
-    trait AddOptions extends RemoveOptions {
+    val ^ : js.Any = js.native
+    
+    trait AddOptions
+      extends StObject
+         with RemoveOptions {
       
       /**
         * The flag to indicate that the listener will be removed on the first
         * event.
         */
-      var once: js.UndefOr[Boolean] = js.native
+      var once: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The flag to indicate that the listener doesn't support
         * `event.preventDefault()` operation.
         */
-      var passive: js.UndefOr[Boolean] = js.native
+      var passive: js.UndefOr[Boolean] = js.undefined
     }
     object AddOptions {
       
@@ -145,7 +157,7 @@ object mod {
     
     type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
-      */ typings.eventTargetShim.eventTargetShimStrings.EventAttributes with TopLevel[TEventAttributes]
+      */ typings.eventTargetShim.eventTargetShimStrings.EventAttributes & TopLevel[TEventAttributes]
     
     /* Rewritten from type alias, can be one of: 
       - typings.eventTargetShim.mod.Event
@@ -155,7 +167,7 @@ object mod {
     typings.std.Exclude[
       / * import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] * / js.Any, 
       typings.eventTargetShim.mod.EventTarget.OmittableEventKeys
-    ]]) with typings.eventTargetShim.anon.PartialPickEventOmittable[TEvents]
+    ]]) & typings.eventTargetShim.anon.PartialPickEventOmittable[TEvents]
     */
     type EventData[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((Pick[
         /* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any, 
@@ -163,7 +175,7 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] */ js.Any, 
           OmittableEventKeys
         ]
-      ]) with PartialPickEventOmittable[TEvents])
+      ]) & PartialPickEventOmittable[TEvents])
     
     type EventDefinition = StringDictionary[Event]
     
@@ -191,12 +203,12 @@ object mod {
       def strict: typings.eventTargetShim.eventTargetShimStrings.strict = "strict".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.strict]
     }
     
-    @js.native
     trait NonStandardEvent
-      extends /* key */ StringDictionary[js.Any]
+      extends StObject
+         with /* key */ StringDictionary[js.Any]
          with _EventData[js.Any, js.Any, js.Any] {
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object NonStandardEvent {
       
@@ -215,10 +227,9 @@ object mod {
       }
     }
     
-    @js.native
     trait ObjectListener[TEvent] extends StObject {
       
-      def handleEvent(event: TEvent): Unit = js.native
+      def handleEvent(event: TEvent): Unit
     }
     object ObjectListener {
       
@@ -229,7 +240,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ObjectListenerMutableBuilder[Self <: ObjectListener[_], TEvent] (val x: Self with ObjectListener[TEvent]) extends AnyVal {
+      implicit class ObjectListenerMutableBuilder[Self <: ObjectListener[?], TEvent] (val x: Self & ObjectListener[TEvent]) extends AnyVal {
         
         @scala.inline
         def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
@@ -329,13 +340,12 @@ object mod {
     
     type PickEvent[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */] = Event | (/* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any)
     
-    @js.native
     trait RemoveOptions extends StObject {
       
       /**
         * The flag to indicate that the listener is for the capturing phase.
         */
-      var capture: js.UndefOr[Boolean] = js.native
+      var capture: js.UndefOr[Boolean] = js.undefined
     }
     object RemoveOptions {
       
@@ -358,15 +368,15 @@ object mod {
     
     trait _EventData[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */, TMode /* <: Mode */] extends StObject
   }
-  type EventTarget[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */] = EventAttributes[TEventAttributes] with (AddEventListener[TEvents, TMode])
+  type EventTarget[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */] = EventAttributes[TEventAttributes] & (AddEventListener[TEvents, TMode])
   
-  @JSImport("event-target-shim", "defineEventAttribute")
-  @js.native
-  def defineEventAttribute(prototype: EventTargetloose, eventName: String): Unit = js.native
+  @scala.inline
+  def defineEventAttribute(prototype: EventTargetloose, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEventAttribute")(prototype.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Event
-    extends _EventData[js.Any, js.Any, js.Any] {
+    extends StObject
+       with _EventData[js.Any, js.Any, js.Any] {
     
     /**
       * Constant of AT_TARGET.
@@ -434,9 +444,9 @@ object mod {
       * @deprecated
       */
     def initEvent(`type`: String): Unit = js.native
-    def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
     
     /**
       * Indicates whether the event was dispatched by the user agent.
@@ -487,12 +497,13 @@ object mod {
   }
   
   @js.native
-  trait EventTargetConstructor[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */] extends Instantiable0[EventTarget[TEvents, TEventAttributes, TMode]]
+  trait EventTargetConstructor[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */]
+    extends StObject
+       with Instantiable0[EventTarget[TEvents, TEventAttributes, TMode]]
   
-  @js.native
   trait Type[T /* <: String */] extends StObject {
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Type {
     
@@ -504,7 +515,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[_], T /* <: String */] (val x: Self with Type[T]) extends AnyVal {
+    implicit class TypeMutableBuilder[Self <: Type[?], T /* <: String */] (val x: Self & Type[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

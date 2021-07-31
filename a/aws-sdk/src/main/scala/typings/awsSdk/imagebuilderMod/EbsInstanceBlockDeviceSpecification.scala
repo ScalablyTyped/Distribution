@@ -2,46 +2,44 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EbsInstanceBlockDeviceSpecification extends StObject {
   
   /**
     * Use to configure delete on termination of the associated device.
     */
-  var deleteOnTermination: js.UndefOr[NullableBoolean] = js.native
+  var deleteOnTermination: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Use to configure device encryption.
     */
-  var encrypted: js.UndefOr[NullableBoolean] = js.native
+  var encrypted: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Use to configure device IOPS.
     */
-  var iops: js.UndefOr[EbsIopsInteger] = js.native
+  var iops: js.UndefOr[EbsIopsInteger] = js.undefined
   
   /**
     * Use to configure the KMS key to use when encrypting the device.
     */
-  var kmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The snapshot that defines the device contents.
     */
-  var snapshotId: js.UndefOr[NonEmptyString] = js.native
+  var snapshotId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Use to override the device's volume size.
     */
-  var volumeSize: js.UndefOr[EbsVolumeSizeInteger] = js.native
+  var volumeSize: js.UndefOr[EbsVolumeSizeInteger] = js.undefined
   
   /**
     * Use to override the device's volume type.
     */
-  var volumeType: js.UndefOr[EbsVolumeType] = js.native
+  var volumeType: js.UndefOr[EbsVolumeType] = js.undefined
 }
 object EbsInstanceBlockDeviceSpecification {
   

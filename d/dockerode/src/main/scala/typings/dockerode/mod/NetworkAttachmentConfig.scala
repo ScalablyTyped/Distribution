@@ -3,17 +3,15 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAttachmentConfig extends StObject {
   
-  var Aliases: js.UndefOr[js.Array[String]] = js.native
+  var Aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var DriverOpts: js.UndefOr[StringDictionary[String]] = js.native
+  var DriverOpts: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Target: js.UndefOr[String] = js.native
+  var Target: js.UndefOr[String] = js.undefined
 }
 object NetworkAttachmentConfig {
   

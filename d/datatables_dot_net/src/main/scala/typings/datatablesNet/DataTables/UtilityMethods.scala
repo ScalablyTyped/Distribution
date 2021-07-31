@@ -3,7 +3,6 @@ package typings.datatablesNet.DataTables
 import typings.datatablesNet.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "state-methods"
@@ -87,7 +86,7 @@ trait UtilityMethods extends StObject {
     *
     * @param fn Callback function which is called for each item in the API instance result set. The callback is called with three parameters.
     */
-  def map(fn: js.Function3[/* value */ js.Any, /* index */ Double, /* dt */ Api, _]): Api = js.native
+  def map(fn: js.Function3[/* value */ js.Any, /* index */ Double, /* dt */ Api, js.Any]): Api = js.native
   
   def pluck(property: String): Api = js.native
   /**
@@ -155,7 +154,6 @@ trait UtilityMethods extends StObject {
   def sort(): Api = js.native
   def sort(fn: js.Function2[/* value1 */ js.Any, /* value2 */ js.Any, Double]): Api = js.native
   
-  def splice(index: Double, howMany: Double, value_1: js.UndefOr[scala.Nothing], value_2: js.Any*): js.Array[_] = js.native
   /**
     * Modify the contents of an Api instance's result set, adding or removing items from it as required.
     *
@@ -163,7 +161,8 @@ trait UtilityMethods extends StObject {
     * @param howMany Number of elements to remove from the result set.
     * @param value_1 Item to add to the result set at the index specified by the first parameter.
     */
-  def splice(index: Double, howMany: Double, value_1: js.Any, value_2: js.Any*): js.Array[_] = js.native
+  def splice(index: Double, howMany: Double, value_1: js.Any, value_2: js.Any*): js.Array[js.Any] = js.native
+  def splice(index: Double, howMany: Double, value_1: Unit, value_2: js.Any*): js.Array[js.Any] = js.native
   
   /**
     * Convert the API instance to a jQuery object, with the objects from the instance's result set in the jQuery result set.
@@ -174,7 +173,7 @@ trait UtilityMethods extends StObject {
   /**
     * Create a native Javascript array object from an API instance.
     */
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any] = js.native
   
   /**
     * Convert the API instance to a jQuery object, with the objects from the instance's result set in the jQuery result set.

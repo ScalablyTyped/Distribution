@@ -2,23 +2,21 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetEnableDebugOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetEnableDebugCompleteCallback] = js.native
+  var complete: js.UndefOr[SetEnableDebugCompleteCallback] = js.undefined
   
   /** 是否打开调试 */
-  var enableDebug: Boolean = js.native
+  var enableDebug: Boolean
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetEnableDebugFailCallback] = js.native
+  var fail: js.UndefOr[SetEnableDebugFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetEnableDebugSuccessCallback] = js.native
+  var success: js.UndefOr[SetEnableDebugSuccessCallback] = js.undefined
 }
 object SetEnableDebugOption {
   

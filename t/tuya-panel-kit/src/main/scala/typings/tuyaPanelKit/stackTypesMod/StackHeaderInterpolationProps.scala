@@ -4,27 +4,25 @@ import typings.tuyaPanelKit.anon.Header
 import typings.tuyaPanelKit.anon.Progress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackHeaderInterpolationProps extends StObject {
   
   /**
     * Values for the current screen (the screen which owns this header).
     */
-  var current: Progress = js.native
+  var current: Progress
   
   /**
     * Layout measurements for various items we use for animation.
     */
-  var layouts: Header = js.native
+  var layouts: Header
   
   /**
     * Values for the current screen the screen after this one in the stack.
     * This can be `undefined` in case the screen animating is the last one.
     */
-  var next: js.UndefOr[Progress] = js.native
+  var next: js.UndefOr[Progress] = js.undefined
 }
 object StackHeaderInterpolationProps {
   

@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a conditional format rule at the given index. All subsequent
   * rules&#39; indexes are decremented.
   */
-@js.native
 trait SchemaDeleteConditionalFormatRuleRequest extends StObject {
   
   /**
     * The zero-based index of the rule to be deleted.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The sheet the rule is being deleted from.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeleteConditionalFormatRuleRequest {
   

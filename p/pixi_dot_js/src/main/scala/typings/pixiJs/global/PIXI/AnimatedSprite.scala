@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.PIXI.AnimatedSprite.FrameObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,11 +41,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.AnimatedSprite")
 @js.native
 class AnimatedSprite protected ()
-  extends typings.pixiJs.PIXI.AnimatedSprite {
+  extends StObject
+     with typings.pixiJs.PIXI.AnimatedSprite {
   def this(textures: js.Array[FrameObject | typings.pixiJs.PIXI.Texture]) = this()
   def this(textures: js.Array[FrameObject | typings.pixiJs.PIXI.Texture], autoUpdate: Boolean) = this()
 }
 object AnimatedSprite {
+  
+  @JSGlobal("PIXI.AnimatedSprite")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A short hand way of creating an AnimatedSprite from an array of frame ids.
@@ -56,9 +60,8 @@ object AnimatedSprite {
     * @return {PIXI.AnimatedSprite} The new animated sprite with the specified frames.
     */
   /* static member */
-  @JSGlobal("PIXI.AnimatedSprite.fromFrames")
-  @js.native
-  def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
+  @scala.inline
+  def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
   
   /**
     * A short hand way of creating an AnimatedSprite from an array of image ids.
@@ -68,7 +71,6 @@ object AnimatedSprite {
     * @return {PIXI.AnimatedSprite} The new animate sprite with the specified images as frames.
     */
   /* static member */
-  @JSGlobal("PIXI.AnimatedSprite.fromImages")
-  @js.native
-  def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
+  @scala.inline
+  def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImages")(images.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
 }

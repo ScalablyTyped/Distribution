@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of color materials used in the 3D model. */
-@js.native
 trait Printing3DColorMaterialGroup extends StObject {
   
   /** Gets a group of color materials used in the 3D model. */
-  var colors: IVector[Printing3DColorMaterial] = js.native
+  var colors: IVector[Printing3DColorMaterial]
   
   /** Gets the identifier (ID) for the color material group. */
-  var materialGroupId: Double = js.native
+  var materialGroupId: Double
 }
 object Printing3DColorMaterialGroup {
   

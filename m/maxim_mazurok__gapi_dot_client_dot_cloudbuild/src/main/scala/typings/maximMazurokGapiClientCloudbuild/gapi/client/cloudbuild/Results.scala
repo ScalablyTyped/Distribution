@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Results extends StObject {
   
   /** Path to the artifact manifest. Only populated when artifacts are uploaded. */
-  var artifactManifest: js.UndefOr[String] = js.native
+  var artifactManifest: js.UndefOr[String] = js.undefined
   
   /** Time to push all non-container artifacts. */
-  var artifactTiming: js.UndefOr[TimeSpan] = js.native
+  var artifactTiming: js.UndefOr[TimeSpan] = js.undefined
   
   /** List of build step digests, in the order corresponding to build step indices. */
-  var buildStepImages: js.UndefOr[js.Array[String]] = js.native
+  var buildStepImages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of build step outputs, produced by builder images, in the order corresponding to build step indices. [Cloud Builders](https://cloud.google.com/cloud-build/docs/cloud-builders)
     * can produce this output by writing to `$BUILDER_OUTPUT/output`. Only the first 4KB of data is stored.
     */
-  var buildStepOutputs: js.UndefOr[js.Array[String]] = js.native
+  var buildStepOutputs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Container images that were built as a part of the build. */
-  var images: js.UndefOr[js.Array[BuiltImage]] = js.native
+  var images: js.UndefOr[js.Array[BuiltImage]] = js.undefined
   
   /** Number of artifacts uploaded. Only populated when artifacts are uploaded. */
-  var numArtifacts: js.UndefOr[String] = js.native
+  var numArtifacts: js.UndefOr[String] = js.undefined
 }
 object Results {
   

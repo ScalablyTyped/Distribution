@@ -12,7 +12,7 @@ Loading mask plugin for jQuery.
 | Keywords           | jquery-plugin, jquery, loading, spinner, mask, plugins |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 886 |
+| # downloads        | 1048 |
 | # stars            | 1 |
 
 ## Links

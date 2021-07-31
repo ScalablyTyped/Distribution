@@ -7,13 +7,14 @@ import typings.dockerode.mod.MountType
 import typings.dockerode.mod.UpdateState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dockerodeStrings {
   
   @js.native
-  sealed trait default extends MountConsistency
+  sealed trait default
+    extends StObject
+       with MountConsistency
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -23,17 +24,23 @@ object dockerodeStrings {
   def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
-  sealed trait awslogs extends LoggingDriverType
+  sealed trait awslogs
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
   
   @js.native
-  sealed trait bind extends MountType
+  sealed trait bind
+    extends StObject
+       with MountType
   @scala.inline
   def bind: bind = "bind".asInstanceOf[bind]
   
   @js.native
-  sealed trait cached extends MountConsistency
+  sealed trait cached
+    extends StObject
+       with MountConsistency
   @scala.inline
   def cached: cached = "cached".asInstanceOf[cached]
   
@@ -43,7 +50,9 @@ object dockerodeStrings {
   def cfssl: cfssl = "cfssl".asInstanceOf[cfssl]
   
   @js.native
-  sealed trait completed extends UpdateState
+  sealed trait completed
+    extends StObject
+       with UpdateState
   @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
   
@@ -53,7 +62,9 @@ object dockerodeStrings {
   def config: config = "config".asInstanceOf[config]
   
   @js.native
-  sealed trait consistent extends MountConsistency
+  sealed trait consistent
+    extends StObject
+       with MountConsistency
   @scala.inline
   def consistent: consistent = "consistent".asInstanceOf[consistent]
   
@@ -68,22 +79,30 @@ object dockerodeStrings {
   def daemon: daemon = "daemon".asInstanceOf[daemon]
   
   @js.native
-  sealed trait delegated extends MountConsistency
+  sealed trait delegated
+    extends StObject
+       with MountConsistency
   @scala.inline
   def delegated: delegated = "delegated".asInstanceOf[delegated]
   
   @js.native
-  sealed trait etwlogs extends LoggingDriverType
+  sealed trait etwlogs
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def etwlogs: etwlogs = "etwlogs".asInstanceOf[etwlogs]
   
   @js.native
-  sealed trait fluentd extends LoggingDriverType
+  sealed trait fluentd
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   
   @js.native
-  sealed trait gelf extends LoggingDriverType
+  sealed trait gelf
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
   
@@ -118,12 +137,16 @@ object dockerodeStrings {
   def ingress: ingress = "ingress".asInstanceOf[ingress]
   
   @js.native
-  sealed trait journald extends LoggingDriverType
+  sealed trait journald
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def journald: journald = "journald".asInstanceOf[journald]
   
   @js.native
-  sealed trait `json-file` extends LoggingDriverType
+  sealed trait `json-file`
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def `json-file`: `json-file` = "json-file".asInstanceOf[`json-file`]
   
@@ -148,7 +171,9 @@ object dockerodeStrings {
   def node: node = "node".asInstanceOf[node]
   
   @js.native
-  sealed trait none extends LoggingDriverType
+  sealed trait none
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -158,7 +183,9 @@ object dockerodeStrings {
   def `not-running`: `not-running` = "not-running".asInstanceOf[`not-running`]
   
   @js.native
-  sealed trait paused extends UpdateState
+  sealed trait paused
+    extends StObject
+       with UpdateState
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
   
@@ -168,7 +195,9 @@ object dockerodeStrings {
   def plugin: plugin = "plugin".asInstanceOf[plugin]
   
   @js.native
-  sealed trait `private` extends MountPropagation
+  sealed trait `private`
+    extends StObject
+       with MountPropagation
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
@@ -183,32 +212,44 @@ object dockerodeStrings {
   def replicated: replicated = "replicated".asInstanceOf[replicated]
   
   @js.native
-  sealed trait rollback_completed extends UpdateState
+  sealed trait rollback_completed
+    extends StObject
+       with UpdateState
   @scala.inline
   def rollback_completed: rollback_completed = "rollback_completed".asInstanceOf[rollback_completed]
   
   @js.native
-  sealed trait rollback_paused extends UpdateState
+  sealed trait rollback_paused
+    extends StObject
+       with UpdateState
   @scala.inline
   def rollback_paused: rollback_paused = "rollback_paused".asInstanceOf[rollback_paused]
   
   @js.native
-  sealed trait rollback_started extends UpdateState
+  sealed trait rollback_started
+    extends StObject
+       with UpdateState
   @scala.inline
   def rollback_started: rollback_started = "rollback_started".asInstanceOf[rollback_started]
   
   @js.native
-  sealed trait rprivate extends MountPropagation
+  sealed trait rprivate
+    extends StObject
+       with MountPropagation
   @scala.inline
   def rprivate: rprivate = "rprivate".asInstanceOf[rprivate]
   
   @js.native
-  sealed trait rshared extends MountPropagation
+  sealed trait rshared
+    extends StObject
+       with MountPropagation
   @scala.inline
   def rshared: rshared = "rshared".asInstanceOf[rshared]
   
   @js.native
-  sealed trait rslave extends MountPropagation
+  sealed trait rslave
+    extends StObject
+       with MountPropagation
   @scala.inline
   def rslave: rslave = "rslave".asInstanceOf[rslave]
   
@@ -228,17 +269,23 @@ object dockerodeStrings {
   def service: service = "service".asInstanceOf[service]
   
   @js.native
-  sealed trait shared extends MountPropagation
+  sealed trait shared
+    extends StObject
+       with MountPropagation
   @scala.inline
   def shared: shared = "shared".asInstanceOf[shared]
   
   @js.native
-  sealed trait slave extends MountPropagation
+  sealed trait slave
+    extends StObject
+       with MountPropagation
   @scala.inline
   def slave: slave = "slave".asInstanceOf[slave]
   
   @js.native
-  sealed trait splunk extends LoggingDriverType
+  sealed trait splunk
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
   
@@ -253,7 +300,9 @@ object dockerodeStrings {
   def swarm: swarm = "swarm".asInstanceOf[swarm]
   
   @js.native
-  sealed trait syslog extends LoggingDriverType
+  sealed trait syslog
+    extends StObject
+       with LoggingDriverType
   @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
   
@@ -263,7 +312,9 @@ object dockerodeStrings {
   def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
-  sealed trait tmpfs extends MountType
+  sealed trait tmpfs
+    extends StObject
+       with MountType
   @scala.inline
   def tmpfs: tmpfs = "tmpfs".asInstanceOf[tmpfs]
   
@@ -273,12 +324,16 @@ object dockerodeStrings {
   def udp: udp = "udp".asInstanceOf[udp]
   
   @js.native
-  sealed trait updating extends UpdateState
+  sealed trait updating
+    extends StObject
+       with UpdateState
   @scala.inline
   def updating: updating = "updating".asInstanceOf[updating]
   
   @js.native
-  sealed trait volume extends MountType
+  sealed trait volume
+    extends StObject
+       with MountType
   @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
 }

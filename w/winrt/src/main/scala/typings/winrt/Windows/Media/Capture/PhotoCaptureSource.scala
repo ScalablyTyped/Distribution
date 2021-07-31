@@ -2,7 +2,6 @@ package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait PhotoCaptureSource extends StObject
 object PhotoCaptureSource extends StObject {
   
   @js.native
-  sealed trait auto extends PhotoCaptureSource
+  sealed trait auto
+    extends StObject
+       with PhotoCaptureSource
   
   @js.native
-  sealed trait photo extends PhotoCaptureSource
+  sealed trait photo
+    extends StObject
+       with PhotoCaptureSource
   
   @js.native
-  sealed trait videoPreview extends PhotoCaptureSource
+  sealed trait videoPreview
+    extends StObject
+       with PhotoCaptureSource
 }

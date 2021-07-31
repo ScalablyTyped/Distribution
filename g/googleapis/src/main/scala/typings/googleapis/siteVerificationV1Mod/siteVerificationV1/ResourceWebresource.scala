@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/siteVerification/v1", "siteVerification_v1.Resource$Webresource")
@@ -30,7 +29,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceWebresourceDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceWebresourceDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def get(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def get(params: ParamsResourceWebresourceGet): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def get(
     params: ParamsResourceWebresourceGet,
@@ -91,7 +90,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def getToken(): GaxiosPromise[SchemaSiteVerificationWebResourceGettokenResponse] = js.native
   def getToken(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceGettokenResponse]): Unit = js.native
-  def getToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceGettokenResponse] = js.native
+  def getToken(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceGettokenResponse] = js.native
   def getToken(params: ParamsResourceWebresourceGettoken): GaxiosPromise[SchemaSiteVerificationWebResourceGettokenResponse] = js.native
   def getToken(
     params: ParamsResourceWebresourceGettoken,
@@ -124,7 +123,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def insert(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def insert(params: ParamsResourceWebresourceInsert): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def insert(
     params: ParamsResourceWebresourceInsert,
@@ -155,7 +154,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSiteVerificationWebResourceListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceListResponse] = js.native
   def list(params: ParamsResourceWebresourceList): GaxiosPromise[SchemaSiteVerificationWebResourceListResponse] = js.native
   def list(
     params: ParamsResourceWebresourceList,
@@ -189,7 +188,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def patch(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def patch(params: ParamsResourceWebresourcePatch): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def patch(
     params: ParamsResourceWebresourcePatch,
@@ -222,7 +221,7 @@ class ResourceWebresource protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def update(callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def update(params: ParamsResourceWebresourceUpdate): GaxiosPromise[SchemaSiteVerificationWebResourceResource] = js.native
   def update(
     params: ParamsResourceWebresourceUpdate,

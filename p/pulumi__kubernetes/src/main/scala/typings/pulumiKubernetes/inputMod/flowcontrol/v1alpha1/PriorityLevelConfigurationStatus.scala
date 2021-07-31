@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PriorityLevelConfigurationStatus represents the current state of a "request-priority".
   */
-@js.native
 trait PriorityLevelConfigurationStatus extends StObject {
   
   /**
     * `conditions` is the current state of "request-priority".
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[PriorityLevelConfigurationCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[PriorityLevelConfigurationCondition]]]] = js.undefined
 }
 object PriorityLevelConfigurationStatus {
   

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionInTransit extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait EncryptionInTransit extends StObject {
     The default value is TLS_PLAINTEXT.
     
     */
-  var ClientBroker: js.UndefOr[typings.awsSdk.kafkaMod.ClientBroker] = js.native
+  var ClientBroker: js.UndefOr[typings.awsSdk.kafkaMod.ClientBroker] = js.undefined
   
   /**
     * 
@@ -28,7 +26,7 @@ trait EncryptionInTransit extends StObject {
     The default value is true.
     
     */
-  var InCluster: js.UndefOr[boolean] = js.native
+  var InCluster: js.UndefOr[boolean] = js.undefined
 }
 object EncryptionInTransit {
   

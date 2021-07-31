@@ -4,22 +4,22 @@ import typings.reactNativeNavigation.optionsMod.Interpolation
 import typings.reactNativeNavigation.reactNativeNavigationStrings.overshoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tension extends Interpolation {
+trait Tension
+  extends StObject
+     with Interpolation {
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
   
-  var `type`: overshoot = js.native
+  var `type`: overshoot
 }
 object Tension {
   
   @scala.inline
-  def apply(`type`: overshoot): Tension = {
+  def apply(): Tension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("overshoot")
     __obj.asInstanceOf[Tension]
   }
   

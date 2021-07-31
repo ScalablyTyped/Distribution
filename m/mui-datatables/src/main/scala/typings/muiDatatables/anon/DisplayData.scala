@@ -2,13 +2,11 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayData extends StObject {
   
-  var displayData: typings.muiDatatables.mod.DisplayData = js.native
+  var displayData: typings.muiDatatables.mod.DisplayData
 }
 object DisplayData {
   

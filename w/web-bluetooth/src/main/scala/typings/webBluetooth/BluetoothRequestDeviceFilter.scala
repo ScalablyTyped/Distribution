@@ -2,21 +2,19 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothRequestDeviceFilter extends StObject {
   
-  var manufacturerId: js.UndefOr[Double] = js.native
+  var manufacturerId: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namePrefix: js.UndefOr[String] = js.native
+  var namePrefix: js.UndefOr[String] = js.undefined
   
-  var serviceDataUUID: js.UndefOr[BluetoothServiceUUID] = js.native
+  var serviceDataUUID: js.UndefOr[BluetoothServiceUUID] = js.undefined
   
-  var services: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.native
+  var services: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
 }
 object BluetoothRequestDeviceFilter {
   

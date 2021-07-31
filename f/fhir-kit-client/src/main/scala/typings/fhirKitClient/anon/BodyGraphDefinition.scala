@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.GraphDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyGraphDefinition extends StObject {
   
-  var body: GraphDefinition = js.native
+  var body: GraphDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.GraphDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.GraphDefinition
 }
 object BodyGraphDefinition {
   
   @scala.inline
-  def apply(body: GraphDefinition, resourceType: typings.fhirKitClient.fhirKitClientStrings.GraphDefinition): BodyGraphDefinition = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: GraphDefinition): BodyGraphDefinition = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "GraphDefinition")
     __obj.asInstanceOf[BodyGraphDefinition]
   }
   

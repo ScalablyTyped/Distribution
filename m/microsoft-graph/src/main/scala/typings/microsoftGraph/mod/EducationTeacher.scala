@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EducationTeacher extends StObject {
   
   // ID of the teacher in the source system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Teacher number.
-  var teacherNumber: js.UndefOr[NullableOption[String]] = js.native
+  var teacherNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EducationTeacher {
   

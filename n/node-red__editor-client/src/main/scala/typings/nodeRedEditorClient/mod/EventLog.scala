@@ -2,19 +2,17 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventLog extends StObject {
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def log(id: js.Any, payload: js.Object): Unit = js.native
+  def log(id: js.Any, payload: js.Object): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  def startEvent(name: String): Unit = js.native
+  def startEvent(name: String): Unit
 }
 object EventLog {
   

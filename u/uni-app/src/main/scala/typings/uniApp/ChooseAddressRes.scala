@@ -2,56 +2,54 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseAddressRes extends StObject {
   
   /**
     * 国标收货地址第二级地址
     */
-  var cityName: js.UndefOr[String] = js.native
+  var cityName: js.UndefOr[String] = js.undefined
   
   /**
     * 国标收货地址第三级地址
     */
-  var countyName: js.UndefOr[String] = js.native
+  var countyName: js.UndefOr[String] = js.undefined
   
   /**
     * 详细收货地址信息
     */
-  var detailInfo: js.UndefOr[String] = js.native
+  var detailInfo: js.UndefOr[String] = js.undefined
   
   /**
     * 调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 收货地址国家码
     */
-  var nationalCode: js.UndefOr[String] = js.native
+  var nationalCode: js.UndefOr[String] = js.undefined
   
   /**
     * 邮编
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * 国标收货地址第一级地址
     */
-  var provinceName: js.UndefOr[String] = js.native
+  var provinceName: js.UndefOr[String] = js.undefined
   
   /**
     * 收货人手机号码
     */
-  var telNumber: js.UndefOr[String] = js.native
+  var telNumber: js.UndefOr[String] = js.undefined
   
   /**
     * 收货人姓名
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object ChooseAddressRes {
   

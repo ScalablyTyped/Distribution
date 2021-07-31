@@ -2,19 +2,17 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPointProto extends StObject {
   
-  var latE7: js.UndefOr[Double] = js.native
+  var latE7: js.UndefOr[Double] = js.undefined
   
-  var lngE7: js.UndefOr[Double] = js.native
+  var lngE7: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[SchemaFieldMetadataProto] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadataProto] = js.undefined
   
-  var temporaryData: js.UndefOr[SchemaMessageSet] = js.native
+  var temporaryData: js.UndefOr[SchemaMessageSet] = js.undefined
 }
 object SchemaPointProto {
   

@@ -7,14 +7,15 @@ import typings.nodemailer.anon.Key
 import typings.nodemailer.nodemailerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dkimMod {
   
   @JSImport("nodemailer/lib/dkim", JSImport.Namespace)
   @js.native
-  class ^ () extends DKIM {
+  class ^ ()
+    extends StObject
+       with DKIM {
     def this(options: Options) = this()
   }
   
@@ -33,13 +34,13 @@ object dkimMod {
     def sign(input: Readable, extraOptions: Options): PassThrough = js.native
   }
   
-  @js.native
   trait MultipleKeysOptions
-    extends OptionalOptions
+    extends StObject
+       with OptionalOptions
        with Options {
     
     /** is an optional array of key objects (domainName, keySelector, privateKey) if you want to add more than one signature to the message. If this value is set then the default key values are ignored */
-    var keys: js.Array[SingleKeyOptions] = js.native
+    var keys: js.Array[SingleKeyOptions]
   }
   object MultipleKeysOptions {
     
@@ -60,23 +61,22 @@ object dkimMod {
     }
   }
   
-  @js.native
   trait OptionalOptions extends StObject {
     
     /** optional location for cached messages. If not set then caching is not used. */
-    var cacheDir: js.UndefOr[String | `false`] = js.native
+    var cacheDir: js.UndefOr[String | `false`] = js.undefined
     
     /** optional size in bytes, if message is larger than this treshold it gets cached to disk (assuming cacheDir is set and writable). Defaults to 131072 (128 kB). */
-    var cacheTreshold: js.UndefOr[Double] = js.native
+    var cacheTreshold: js.UndefOr[Double] = js.undefined
     
     /** optional algorithm for the body hash, defaults to ‘sha256’ */
-    var hashAlgo: js.UndefOr[String] = js.native
+    var hashAlgo: js.UndefOr[String] = js.undefined
     
     /** an optional colon separated list of header keys to sign (eg. message-id:date:from:to...') */
-    var headerFieldNames: js.UndefOr[String] = js.native
+    var headerFieldNames: js.UndefOr[String] = js.undefined
     
     /** optional colon separated list of header keys not to sign. This is useful if you want to sign all the relevant keys but your provider changes some values, ie Message-ID and Date. In this case you should use 'message-id:date' to prevent signing these values. */
-    var skipFields: js.UndefOr[String] = js.native
+    var skipFields: js.UndefOr[String] = js.undefined
   }
   object OptionalOptions {
     
@@ -141,19 +141,19 @@ object dkimMod {
     }
   }
   
-  @js.native
   trait SingleKeyOptions
-    extends OptionalOptions
+    extends StObject
+       with OptionalOptions
        with Options {
     
     /** is the domain name to use in the signature */
-    var domainName: String = js.native
+    var domainName: String
     
     /** is the DKIM key selector */
-    var keySelector: String = js.native
+    var keySelector: String
     
     /** is the private key for the selector in PEM format */
-    var privateKey: String | Key = js.native
+    var privateKey: String | Key
   }
   object SingleKeyOptions {
     

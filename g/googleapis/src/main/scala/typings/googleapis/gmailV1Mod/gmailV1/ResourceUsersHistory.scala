@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$History")
@@ -36,7 +35,7 @@ class ResourceUsersHistory protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListHistoryResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListHistoryResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(params: ParamsResourceUsersHistoryList): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(params: ParamsResourceUsersHistoryList, callback: BodyResponseCallback[SchemaListHistoryResponse]): Unit = js.native
   def list(

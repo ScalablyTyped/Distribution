@@ -2,21 +2,19 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSnapshot extends StObject {
   
-  var bindings: Lookup[Binding[_]] = js.native
+  var bindings: Lookup[Binding[js.Any]]
   
-  var middleware: Next | Null = js.native
+  var middleware: Next | Null
 }
 object ContainerSnapshot {
   
   @scala.inline
-  def apply(bindings: Lookup[Binding[_]]): ContainerSnapshot = {
-    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any])
+  def apply(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = {
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], middleware = null)
     __obj.asInstanceOf[ContainerSnapshot]
   }
   
@@ -24,7 +22,7 @@ object ContainerSnapshot {
   implicit class ContainerSnapshotMutableBuilder[Self <: ContainerSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBindings(value: Lookup[Binding[_]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    def setBindings(value: Lookup[Binding[js.Any]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMiddleware(value: /* args */ NextArgs => js.Any | js.Array[js.Any]): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))

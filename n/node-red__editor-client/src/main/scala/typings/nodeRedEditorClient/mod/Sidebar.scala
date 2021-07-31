@@ -3,33 +3,31 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.EnableOnEdit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sidebar extends StObject {
   
-  def addTab(options: EnableOnEdit): Unit = js.native
+  def addTab(options: EnableOnEdit): Unit
   
-  var config: SidebarConfig = js.native
+  var config: SidebarConfig
   
-  def containsTab(id: String): Boolean = js.native
+  def containsTab(id: String): Boolean
   
-  var context: SidebarContext = js.native
+  var context: SidebarContext
   
-  var help: SidebarHelp = js.native
+  var help: SidebarHelp
   
-  var info: SidebarInfo = js.native
+  var info: SidebarInfo
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def removeTab(id: String): Unit = js.native
+  def removeTab(id: String): Unit
   
-  def show(id: String): Unit = js.native
+  def show(id: String): Unit
   
-  def toggleSidebar(state: Boolean): Unit = js.native
+  def toggleSidebar(state: Boolean): Unit
   
-  var versionControl: SidebarVersionControl = js.native
+  var versionControl: SidebarVersionControl
 }
 object Sidebar {
   

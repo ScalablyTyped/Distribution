@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflicts extends StObject {
   
-  def AcceptAll(): Unit = js.native
+  def AcceptAll(): Unit
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): Conflict = js.native
+  def Item(Index: Double): Conflict
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def RejectAll(): Unit = js.native
+  def RejectAll(): Unit
   
   @JSName("Word.Conflicts_typekey")
-  var WordDotConflicts_typekey: Conflicts = js.native
+  var WordDotConflicts_typekey: Conflicts
 }
 object Conflicts {
   

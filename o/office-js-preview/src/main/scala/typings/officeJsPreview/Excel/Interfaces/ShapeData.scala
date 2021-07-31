@@ -12,11 +12,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.TwoCell
 import typings.officeJsPreview.officeJsPreviewStrings.Unsupported
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shape.toJSON()`. */
-@js.native
 trait ShapeData extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextDescription: js.UndefOr[String] = js.native
+  var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextTitle: js.UndefOr[String] = js.native
+  var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var connectionSiteCount: js.UndefOr[Double] = js.native
+  var connectionSiteCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[ShapeFillData] = js.native
+  var fill: js.UndefOr[ShapeFillData] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait ShapeData extends StObject {
     */
   var geometricShapeType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lineFormat: js.UndefOr[ShapeLineFormatData] = js.native
+  var lineFormat: js.UndefOr[ShapeLineFormatData] = js.undefined
   
   /**
     *
@@ -109,7 +107,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -125,7 +123,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.native
+  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
   
   /**
     *
@@ -133,7 +131,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -142,7 +140,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -150,7 +148,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[ShapeType | Unsupported | Image | GeometricShape | Group | Line] = js.native
+  var `type`: js.UndefOr[ShapeType | Unsupported | Image | GeometricShape | Group | Line] = js.undefined
   
   /**
     *
@@ -158,7 +156,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -167,7 +165,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -175,7 +173,7 @@ trait ShapeData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var zOrderPosition: js.UndefOr[Double] = js.native
+  var zOrderPosition: js.UndefOr[Double] = js.undefined
 }
 object ShapeData {
   

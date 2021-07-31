@@ -2,27 +2,25 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagRepositorySectionResponseMod {
   
-  @js.native
   trait TagRepositorySectionResponseRootObject extends StObject {
     
-    var auto_load_more_enabled: Boolean = js.native
+    var auto_load_more_enabled: Boolean
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var next_media_ids: js.Array[String] = js.native
+    var next_media_ids: js.Array[String]
     
-    var next_page: Double = js.native
+    var next_page: Double
     
-    var sections: js.Array[TagRepositorySectionResponsesectionsItem] = js.native
+    var sections: js.Array[TagRepositorySectionResponsesectionsItem]
     
-    var status: String = js.native
+    var status: String
   }
   object TagRepositorySectionResponseRootObject {
     
@@ -72,16 +70,15 @@ object tagRepositorySectionResponseMod {
     }
   }
   
-  @js.native
   trait TagRepositorySectionResponsesectionsItem extends StObject {
     
-    var explore_item_info: js.Array[String] = js.native
+    var explore_item_info: js.Array[String]
     
-    var feed_type: String = js.native
+    var feed_type: String
     
-    var layout_content: js.Array[String] = js.native
+    var layout_content: js.Array[String]
     
-    var layout_type: String = js.native
+    var layout_type: String
   }
   object TagRepositorySectionResponsesectionsItem {
     

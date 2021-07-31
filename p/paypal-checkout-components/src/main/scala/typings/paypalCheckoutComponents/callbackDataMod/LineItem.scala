@@ -2,51 +2,49 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineItem extends StObject {
   
   /**
     * Item description. Maximum 127 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the line item is a debit (sale) or credit (refund) to the customer. Accepted values: `debit` and `credit`.
     */
-  var kind: LineItemKind = js.native
+  var kind: LineItemKind
   
   /**
     * Item name. Maximum 127 characters.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Product or UPC code for the item. Maximum 127 characters.
     */
-  var productCode: js.UndefOr[String] = js.native
+  var productCode: js.UndefOr[String] = js.undefined
   
   /**
     * Number of units of the item purchased. This value must be a whole number and can't be negative or zero.
     */
-  var quantity: String = js.native
+  var quantity: String
   
   /**
     * Per-unit price of the item. Can include up to 2 decimal places. This value can't be negative or zero.
     */
-  var unitAmount: String = js.native
+  var unitAmount: String
   
   /**
     * Per-unit tax price of the item. Can include up to 2 decimal places. This value can't be negative or zero.
     */
-  var unitTaxAmount: js.UndefOr[String] = js.native
+  var unitTaxAmount: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to product information.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object LineItem {
   

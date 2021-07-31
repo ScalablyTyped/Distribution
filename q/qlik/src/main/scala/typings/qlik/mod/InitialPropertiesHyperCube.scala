@@ -3,15 +3,14 @@ package typings.qlik.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialPropertiesHyperCube
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[js.Any]
      with InitialProperties {
   
-  var qHyperCubeDef: HyperCubeDef = js.native
+  var qHyperCubeDef: HyperCubeDef
 }
 object InitialPropertiesHyperCube {
   

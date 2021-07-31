@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NegativeBarFormat extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val BorderColor: FormatColor = js.native
+  val BorderColor: FormatColor
   
-  var BorderColorType: XlDataBarNegativeColorType = js.native
+  var BorderColorType: XlDataBarNegativeColorType
   
-  val Color: FormatColor = js.native
+  val Color: FormatColor
   
-  var ColorType: XlDataBarNegativeColorType = js.native
+  var ColorType: XlDataBarNegativeColorType
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.NegativeBarFormat_typekey")
-  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat = js.native
+  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object NegativeBarFormat {
   

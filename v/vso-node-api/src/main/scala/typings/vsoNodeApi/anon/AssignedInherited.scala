@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedInherited extends StObject {
   
-  var assigned: scala.Double = js.native
+  var assigned: scala.Double
   
-  var inherited: scala.Double = js.native
+  var inherited: scala.Double
 }
 object AssignedInherited {
   

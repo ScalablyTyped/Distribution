@@ -10,9 +10,9 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | libp2p-noise |
 | Keywords           | libp2p, noise, crypto |
-| # releases         | 19 |
-| # dependents       | 5 |
-| # downloads        | 33494 |
+| # releases         | 20 |
+| # dependents       | 17 |
+| # downloads        | 146968 |
 | # stars            | 0 |
 
 ## Links

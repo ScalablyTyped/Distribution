@@ -5,21 +5,39 @@ import typings.wonderJs.ebuffertypeMod.EBufferType
 import typings.wonderJs.ebufferusageMod.EBufferUsage
 import typings.wonderJs.gameObjectMod.GameObject
 import typings.wonderJs.geometryDataMod.GeometryData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/component/geometry/data/BufferContainer", JSImport.Namespace)
-@js.native
-object bufferContainerMod extends js.Object {
+object bufferContainerMod {
+  
+  @JSImport("wonder.js/dist/es2015/component/geometry/data/BufferContainer", "BufferContainer")
   @js.native
-  abstract class BufferContainer protected () extends js.Object {
+  abstract class BufferContainer protected () extends StObject {
     def this(entityObject: GameObject) = this()
+    
     var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
-    var entityObject: GameObject = js.native
-    var geometryData: GeometryData = js.native
+    
     def createBuffersFromGeometryData(): Unit = js.native
+    
     /* protected */ def createOnlyOnceAndUpdateArrayBuffer(bufferAttriName: String, data: js.Array[Double], size: Double): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateArrayBuffer(bufferAttriName: String, data: js.Array[Double], size: Double, `type`: Unit, offset: Double): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateArrayBuffer(
+      bufferAttriName: String,
+      data: js.Array[Double],
+      size: Double,
+      `type`: Unit,
+      offset: Double,
+      usage: EBufferUsage
+    ): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateArrayBuffer(
+      bufferAttriName: String,
+      data: js.Array[Double],
+      size: Double,
+      `type`: Unit,
+      offset: Unit,
+      usage: EBufferUsage
+    ): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateArrayBuffer(bufferAttriName: String, data: js.Array[Double], size: Double, `type`: EBufferType): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateArrayBuffer(bufferAttriName: String, data: js.Array[Double], size: Double, `type`: EBufferType, offset: Double): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateArrayBuffer(
@@ -30,7 +48,19 @@ object bufferContainerMod extends js.Object {
       offset: Double,
       usage: EBufferUsage
     ): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateArrayBuffer(
+      bufferAttriName: String,
+      data: js.Array[Double],
+      size: Double,
+      `type`: EBufferType,
+      offset: Unit,
+      usage: EBufferUsage
+    ): Unit = js.native
+    
     /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double]): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double], `type`: Unit, offset: Double): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double], `type`: Unit, offset: Double, usage: EBufferUsage): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double], `type`: Unit, offset: Unit, usage: EBufferUsage): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double], `type`: EBufferType): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateElememntBuffer(bufferAttriName: String, data: js.Array[Double], `type`: EBufferType, offset: Double): Unit = js.native
     /* protected */ def createOnlyOnceAndUpdateElememntBuffer(
@@ -40,16 +70,31 @@ object bufferContainerMod extends js.Object {
       offset: Double,
       usage: EBufferUsage
     ): Unit = js.native
+    /* protected */ def createOnlyOnceAndUpdateElememntBuffer(
+      bufferAttriName: String,
+      data: js.Array[Double],
+      `type`: EBufferType,
+      offset: Unit,
+      usage: EBufferUsage
+    ): Unit = js.native
+    
     def dispose(): Unit = js.native
+    
+    var entityObject: GameObject = js.native
+    
+    var geometryData: GeometryData = js.native
+    
     def getChild(`type`: EBufferDataType): js.Any = js.native
     def getChild(`type`: EBufferDataType, dataName: String): js.Any = js.native
+    
     /* protected */ def getVertice(`type`: EBufferDataType): js.Any = js.native
+    
     /* protected */ def hasData(): Boolean = js.native
     /* protected */ def hasData(data: js.Array[Double]): Boolean = js.native
+    
     def init(): Unit = js.native
+    
     def removeCache(name: String): js.Any = js.native
     def removeCache(`type`: EBufferDataType): js.Any = js.native
   }
-  
 }
-

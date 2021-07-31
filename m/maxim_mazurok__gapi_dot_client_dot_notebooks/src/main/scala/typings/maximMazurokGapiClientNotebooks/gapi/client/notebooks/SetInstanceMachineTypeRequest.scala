@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInstanceMachineTypeRequest extends StObject {
   
   /** Required. The [Compute Engine machine type](https://cloud.google.com/compute/docs/machine-types). */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
 }
 object SetInstanceMachineTypeRequest {
   

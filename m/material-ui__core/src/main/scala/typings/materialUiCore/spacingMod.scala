@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spacingMod extends Shortcut {
@@ -12,10 +11,9 @@ object spacingMod extends Shortcut {
   @js.native
   val default: Spacing = js.native
   
-  @js.native
   trait Spacing extends StObject {
     
-    var unit: Double = js.native
+    var unit: Double
   }
   object Spacing {
     
@@ -34,10 +32,9 @@ object spacingMod extends Shortcut {
   }
   
   /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/spacing.Spacing> */
-  @js.native
   trait SpacingOptions extends StObject {
     
-    var unit: js.UndefOr[Double] = js.native
+    var unit: js.UndefOr[Double] = js.undefined
   }
   object SpacingOptions {
     

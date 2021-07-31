@@ -2,76 +2,74 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCompilationJobResponse extends StObject {
   
   /**
     * The time when the model compilation job on a compilation job instance ended. For a successful or stopped job, this is when the job's model artifacts have finished uploading. For a failed job, this is when Amazon SageMaker detected that the job failed. 
     */
-  var CompilationEndTime: js.UndefOr[Timestamp] = js.native
+  var CompilationEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker assumes to perform the model compilation job.
     */
-  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn = js.native
+  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn
   
   /**
     * The name of the model compilation job.
     */
-  var CompilationJobName: EntityName = js.native
+  var CompilationJobName: EntityName
   
   /**
     * The status of the model compilation job.
     */
-  var CompilationJobStatus: typings.awsSdk.sagemakerMod.CompilationJobStatus = js.native
+  var CompilationJobStatus: typings.awsSdk.sagemakerMod.CompilationJobStatus
   
   /**
     * The time when the model compilation job started the CompilationJob instances.  You are billed for the time between this timestamp and the timestamp in the DescribeCompilationJobResponse$CompilationEndTime field. In Amazon CloudWatch Logs, the start time might be later than this time. That's because it takes time to download the compilation job, which depends on the size of the compilation job container. 
     */
-  var CompilationStartTime: js.UndefOr[Timestamp] = js.native
+  var CompilationStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time that the model compilation job was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * If a model compilation job failed, the reason it failed. 
     */
-  var FailureReason: typings.awsSdk.sagemakerMod.FailureReason = js.native
+  var FailureReason: typings.awsSdk.sagemakerMod.FailureReason
   
   /**
     * Information about the location in Amazon S3 of the input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
     */
-  var InputConfig: typings.awsSdk.sagemakerMod.InputConfig = js.native
+  var InputConfig: typings.awsSdk.sagemakerMod.InputConfig
   
   /**
     * The time that the status of the model compilation job was last modified.
     */
-  var LastModifiedTime: typings.awsSdk.sagemakerMod.LastModifiedTime = js.native
+  var LastModifiedTime: typings.awsSdk.sagemakerMod.LastModifiedTime
   
   /**
     * Information about the location in Amazon S3 that has been configured for storing the model artifacts used in the compilation job.
     */
-  var ModelArtifacts: typings.awsSdk.sagemakerMod.ModelArtifacts = js.native
+  var ModelArtifacts: typings.awsSdk.sagemakerMod.ModelArtifacts
   
   /**
     * Information about the output location for the compiled model and the target device that the model runs on.
     */
-  var OutputConfig: typings.awsSdk.sagemakerMod.OutputConfig = js.native
+  var OutputConfig: typings.awsSdk.sagemakerMod.OutputConfig
   
   /**
     * The Amazon Resource Name (ARN) of the model compilation job.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * Specifies a limit to how long a model compilation job can run. When the job reaches the time limit, Amazon SageMaker ends the compilation job. Use this API to cap model training costs.
     */
-  var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition = js.native
+  var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition
 }
 object DescribeCompilationJobResponse {
   

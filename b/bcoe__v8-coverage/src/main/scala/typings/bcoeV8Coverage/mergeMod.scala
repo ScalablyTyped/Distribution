@@ -5,20 +5,20 @@ import typings.bcoeV8Coverage.typesMod.ProcessCov
 import typings.bcoeV8Coverage.typesMod.ScriptCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeMod {
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/merge", "mergeFunctionCovs")
+  @JSImport("@bcoe/v8-coverage/dist/lib/merge", JSImport.Namespace)
   @js.native
-  def mergeFunctionCovs(funcCovs: js.Array[FunctionCov]): js.UndefOr[FunctionCov] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/merge", "mergeProcessCovs")
-  @js.native
-  def mergeProcessCovs(processCovs: js.Array[ProcessCov]): ProcessCov = js.native
+  @scala.inline
+  def mergeFunctionCovs(funcCovs: js.Array[FunctionCov]): js.UndefOr[FunctionCov] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeFunctionCovs")(funcCovs.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[FunctionCov]]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/merge", "mergeScriptCovs")
-  @js.native
-  def mergeScriptCovs(scriptCovs: js.Array[ScriptCov]): js.UndefOr[ScriptCov] = js.native
+  @scala.inline
+  def mergeProcessCovs(processCovs: js.Array[ProcessCov]): ProcessCov = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProcessCovs")(processCovs.asInstanceOf[js.Any]).asInstanceOf[ProcessCov]
+  
+  @scala.inline
+  def mergeScriptCovs(scriptCovs: js.Array[ScriptCov]): js.UndefOr[ScriptCov] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeScriptCovs")(scriptCovs.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ScriptCov]]
 }

@@ -3,30 +3,28 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.ImageStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native-ratings.react-native-ratings.AirbnbRatingProps> */
-@js.native
 trait ReadonlyAirbnbRatingProps extends StObject {
   
-  val count: js.UndefOr[Double] = js.native
+  val count: js.UndefOr[Double] = js.undefined
   
-  val defaultRating: js.UndefOr[Double] = js.native
+  val defaultRating: js.UndefOr[Double] = js.undefined
   
-  val isDisabled: js.UndefOr[Boolean] = js.native
+  val isDisabled: js.UndefOr[Boolean] = js.undefined
   
-  val onFinishRating: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  val onFinishRating: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  val reviews: js.UndefOr[js.Array[String]] = js.native
+  val reviews: js.UndefOr[js.Array[String]] = js.undefined
   
-  val selectedColor: js.UndefOr[String] = js.native
+  val selectedColor: js.UndefOr[String] = js.undefined
   
-  val showRating: js.UndefOr[Boolean] = js.native
+  val showRating: js.UndefOr[Boolean] = js.undefined
   
-  val size: js.UndefOr[Double] = js.native
+  val size: js.UndefOr[Double] = js.undefined
   
-  val starStyle: js.UndefOr[ImageStyle] = js.native
+  val starStyle: js.UndefOr[ImageStyle] = js.undefined
 }
 object ReadonlyAirbnbRatingProps {
   

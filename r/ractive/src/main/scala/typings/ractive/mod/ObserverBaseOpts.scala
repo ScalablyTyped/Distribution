@@ -2,26 +2,24 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserverBaseOpts extends StObject {
   
   /**
   	 * The context to be used for the callback.
   	 */
-  var context: js.UndefOr[js.Any] = js.native
+  var context: js.UndefOr[js.Any] = js.undefined
   
   /**
   	 * Whether or not to defer calling the callback until after the DOM has been updated.
   	 */
-  var defer: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Whether or not to call the callback with the initial value.
   	 */
-  var init: js.UndefOr[Boolean] = js.native
+  var init: js.UndefOr[Boolean] = js.undefined
 }
 object ObserverBaseOpts {
   

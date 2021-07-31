@@ -6,15 +6,13 @@ import typings.word.wordStrings.s
 import typings.word.wordStrings.t
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait WJSDoc extends StObject {
     
-    var p: js.Array[WJSPara] = js.native
+    var p: js.Array[WJSPara]
   }
   object WJSDoc {
     
@@ -35,11 +33,10 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WJSPara extends StObject {
     
     /** Children */
-    var elts: js.Array[WJSParaElement] = js.native
+    var elts: js.Array[WJSParaElement]
   }
   object WJSPara {
     
@@ -68,31 +65,32 @@ object typesMod {
   object WJSParaElement {
     
     @scala.inline
-    def WJSTable(r: js.Array[WJSTableRow], t: t): typings.word.typesMod.WJSTable = {
-      val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    def WJSTable(r: js.Array[WJSTableRow]): typings.word.typesMod.WJSTable = {
+      val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], t = "t")
       __obj.asInstanceOf[typings.word.typesMod.WJSTable]
     }
     
     @scala.inline
-    def WJSTextRun(t: s, v: String): typings.word.typesMod.WJSTextRun = {
-      val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    def WJSTextRun(v: String): typings.word.typesMod.WJSTextRun = {
+      val __obj = js.Dynamic.literal(t = "s", v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.word.typesMod.WJSTextRun]
     }
   }
   
-  @js.native
-  trait WJSTable extends WJSParaElement {
+  trait WJSTable
+    extends StObject
+       with WJSParaElement {
     
     /** Rows */
-    var r: js.Array[WJSTableRow] = js.native
+    var r: js.Array[WJSTableRow]
     
-    var t: typings.word.wordStrings.t = js.native
+    var t: typings.word.wordStrings.t
   }
   object WJSTable {
     
     @scala.inline
-    def apply(r: js.Array[WJSTableRow], t: t): WJSTable = {
-      val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    def apply(r: js.Array[WJSTableRow]): WJSTable = {
+      val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], t = "t")
       __obj.asInstanceOf[WJSTable]
     }
     
@@ -110,19 +108,18 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WJSTableCell extends StObject {
     
     /** Body */
-    var p: js.Array[WJSPara] = js.native
+    var p: js.Array[WJSPara]
     
-    var t: c = js.native
+    var t: c
   }
   object WJSTableCell {
     
     @scala.inline
-    def apply(p: js.Array[WJSPara], t: c): WJSTableCell = {
-      val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    def apply(p: js.Array[WJSPara]): WJSTableCell = {
+      val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], t = "c")
       __obj.asInstanceOf[WJSTableCell]
     }
     
@@ -140,19 +137,18 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WJSTableRow extends StObject {
     
     /** Cells */
-    var c: js.Array[WJSTableCell] = js.native
+    var c: js.Array[WJSTableCell]
     
-    var t: r = js.native
+    var t: r
   }
   object WJSTableRow {
     
     @scala.inline
-    def apply(c: js.Array[WJSTableCell], t: r): WJSTableRow = {
-      val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    def apply(c: js.Array[WJSTableCell]): WJSTableRow = {
+      val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], t = "r")
       __obj.asInstanceOf[WJSTableRow]
     }
     
@@ -170,19 +166,20 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait WJSTextRun extends WJSParaElement {
+  trait WJSTextRun
+    extends StObject
+       with WJSParaElement {
     
-    var t: s = js.native
+    var t: s
     
     /** Text content */
-    var v: String = js.native
+    var v: String
   }
   object WJSTextRun {
     
     @scala.inline
-    def apply(t: s, v: String): WJSTextRun = {
-      val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    def apply(v: String): WJSTextRun = {
+      val __obj = js.Dynamic.literal(t = "s", v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[WJSTextRun]
     }
     

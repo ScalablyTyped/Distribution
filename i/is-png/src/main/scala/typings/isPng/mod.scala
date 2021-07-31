@@ -4,14 +4,12 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-png", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer): Boolean = js.native
+  @scala.inline
+  def apply(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   /**
   Check if a Buffer/Uint8Array is a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) image.
   @param buffer - The buffer to check. It only needs the first 8 bytes.
@@ -33,7 +31,10 @@ object mod {
   })();
   ```
   */
+  @scala.inline
+  def apply(buffer: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   @JSImport("is-png", JSImport.Namespace)
   @js.native
-  def apply(buffer: Uint8Array): Boolean = js.native
+  val ^ : js.Any = js.native
 }

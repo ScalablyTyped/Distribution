@@ -4,23 +4,21 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object effects {
   
-  @js.native
   trait Effect extends StObject {
     
-    def add(effect: Effect): Effect = js.native
+    def add(effect: Effect): Effect
     
-    def duration(value: Double): Effect = js.native
+    def duration(value: Double): Effect
     
-    def play(): JQueryPromise[_] = js.native
+    def play(): JQueryPromise[js.Any]
     
-    def reverse(): JQueryPromise[_] = js.native
+    def reverse(): JQueryPromise[js.Any]
     
-    def stop(): Effect = js.native
+    def stop(): Effect
   }
   object Effect {
     
@@ -28,8 +26,8 @@ object effects {
     def apply(
       add: Effect => Effect,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): Effect = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -46,70 +44,69 @@ object effects {
       def setDuration(value: Double => Effect): Self = StObject.set(x, "duration", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setPlay(value: () => JQueryPromise[_]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      def setPlay(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setReverse(value: () => JQueryPromise[_]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      def setReverse(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
       @scala.inline
       def setStop(value: () => Effect): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    def expand(direction: String): Expand = js.native
+    def expand(direction: String): Expand
     
-    def expandHorizontal(): Expand = js.native
+    def expandHorizontal(): Expand
     
-    def expandVertical(): Expand = js.native
+    def expandVertical(): Expand
     
-    def fade(direction: String): Fade = js.native
+    def fade(direction: String): Fade
     
-    def fadeIn(): Fade = js.native
+    def fadeIn(): Fade
     
-    def fadeOut(): Fade = js.native
+    def fadeOut(): Fade
     
-    def flip(axis: String, face: JQuery, back: JQuery): Flip = js.native
+    def flip(axis: String, face: JQuery, back: JQuery): Flip
     
-    def flipHorizontal(face: JQuery, back: JQuery): Flip = js.native
+    def flipHorizontal(face: JQuery, back: JQuery): Flip
     
-    def flipVertical(face: JQuery, back: JQuery): Flip = js.native
+    def flipVertical(face: JQuery, back: JQuery): Flip
     
-    def pageturn(axis: String, face: JQuery, back: JQuery): PageTurn = js.native
+    def pageturn(axis: String, face: JQuery, back: JQuery): PageTurn
     
-    def pageturnHorizontal(face: JQuery, back: JQuery): PageTurn = js.native
+    def pageturnHorizontal(face: JQuery, back: JQuery): PageTurn
     
-    def pageturnVertical(face: JQuery, back: JQuery): PageTurn = js.native
+    def pageturnVertical(face: JQuery, back: JQuery): PageTurn
     
-    def slideIn(direction: String): SlideIn = js.native
+    def slideIn(direction: String): SlideIn
     
-    def slideInDown(): SlideIn = js.native
+    def slideInDown(): SlideIn
     
-    def slideInLeft(): SlideIn = js.native
+    def slideInLeft(): SlideIn
     
-    def slideInRight(): SlideIn = js.native
+    def slideInRight(): SlideIn
     
-    def slideInUp(): SlideIn = js.native
+    def slideInUp(): SlideIn
     
-    def tile(direction: String, previous: JQuery): Tile = js.native
+    def tile(direction: String, previous: JQuery): Tile
     
-    def tileDown(previous: JQuery): Tile = js.native
+    def tileDown(previous: JQuery): Tile
     
-    def tileLeft(previous: JQuery): Tile = js.native
+    def tileLeft(previous: JQuery): Tile
     
-    def tileRight(previous: JQuery): Tile = js.native
+    def tileRight(previous: JQuery): Tile
     
-    def tileUp(previous: JQuery): Tile = js.native
+    def tileUp(previous: JQuery): Tile
     
-    def transfer(target: JQuery): Transfer = js.native
+    def transfer(target: JQuery): Transfer
     
-    def zoom(direction: String): Zoom = js.native
+    def zoom(direction: String): Zoom
     
-    def zoomIn(): Zoom = js.native
+    def zoomIn(): Zoom
     
-    def zoomOut(): Zoom = js.native
+    def zoomOut(): Zoom
   }
   object Element {
     
@@ -229,10 +226,11 @@ object effects {
     }
   }
   
-  @js.native
-  trait Expand extends Effect {
+  trait Expand
+    extends StObject
+       with Effect {
     
-    def direction(value: String): Expand = js.native
+    def direction(value: String): Expand
   }
   object Expand {
     
@@ -241,8 +239,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Expand,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): Expand = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -257,14 +255,15 @@ object effects {
     }
   }
   
-  @js.native
-  trait Fade extends Effect {
+  trait Fade
+    extends StObject
+       with Effect {
     
-    def direction(value: String): Fade = js.native
+    def direction(value: String): Fade
     
-    def endValue(value: Double): Fade = js.native
+    def endValue(value: Double): Fade
     
-    def startValue(value: Double): Fade = js.native
+    def startValue(value: Double): Fade
   }
   object Fade {
     
@@ -274,8 +273,8 @@ object effects {
       direction: String => Fade,
       duration: Double => Effect,
       endValue: Double => Fade,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       startValue: Double => Fade,
       stop: () => Effect
     ): Fade = {
@@ -297,10 +296,11 @@ object effects {
     }
   }
   
-  @js.native
-  trait Flip extends Effect {
+  trait Flip
+    extends StObject
+       with Effect {
     
-    def direction(value: String): Flip = js.native
+    def direction(value: String): Flip
   }
   object Flip {
     
@@ -309,8 +309,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Flip,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): Flip = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -325,10 +325,11 @@ object effects {
     }
   }
   
-  @js.native
-  trait PageTurn extends Effect {
+  trait PageTurn
+    extends StObject
+       with Effect {
     
-    def direction(value: String): PageTurn = js.native
+    def direction(value: String): PageTurn
   }
   object PageTurn {
     
@@ -337,8 +338,8 @@ object effects {
       add: Effect => Effect,
       direction: String => PageTurn,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): PageTurn = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -353,10 +354,11 @@ object effects {
     }
   }
   
-  @js.native
-  trait SlideIn extends Effect {
+  trait SlideIn
+    extends StObject
+       with Effect {
     
-    def direction(value: String): SlideIn = js.native
+    def direction(value: String): SlideIn
   }
   object SlideIn {
     
@@ -365,8 +367,8 @@ object effects {
       add: Effect => Effect,
       direction: String => SlideIn,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): SlideIn = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -381,10 +383,11 @@ object effects {
     }
   }
   
-  @js.native
-  trait Tile extends Effect {
+  trait Tile
+    extends StObject
+       with Effect {
     
-    def direction(value: String): Tile = js.native
+    def direction(value: String): Tile
   }
   object Tile {
     
@@ -393,8 +396,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Tile,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): Tile = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -409,16 +412,17 @@ object effects {
     }
   }
   
-  @js.native
-  trait Transfer extends Effect
+  trait Transfer
+    extends StObject
+       with Effect
   object Transfer {
     
     @scala.inline
     def apply(
       add: Effect => Effect,
       duration: Double => Effect,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       stop: () => Effect
     ): Transfer = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -426,14 +430,15 @@ object effects {
     }
   }
   
-  @js.native
-  trait Zoom extends Effect {
+  trait Zoom
+    extends StObject
+       with Effect {
     
-    def direction(value: String): Zoom = js.native
+    def direction(value: String): Zoom
     
-    def endValue(value: Double): Zoom = js.native
+    def endValue(value: Double): Zoom
     
-    def startValue(value: Double): Zoom = js.native
+    def startValue(value: Double): Zoom
   }
   object Zoom {
     
@@ -443,8 +448,8 @@ object effects {
       direction: String => Zoom,
       duration: Double => Effect,
       endValue: Double => Zoom,
-      play: () => JQueryPromise[_],
-      reverse: () => JQueryPromise[_],
+      play: () => JQueryPromise[js.Any],
+      reverse: () => JQueryPromise[js.Any],
       startValue: Double => Zoom,
       stop: () => Effect
     ): Zoom = {

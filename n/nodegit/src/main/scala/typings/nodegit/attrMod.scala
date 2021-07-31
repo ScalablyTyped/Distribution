@@ -7,7 +7,6 @@ import typings.nodegit.nodegitNumbers.`3`
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attrMod {
@@ -18,13 +17,15 @@ object attrMod {
   /* static members */
   object Attr {
     
-    @JSImport("nodegit/attr", "Attr.addMacro")
+    @JSImport("nodegit/attr", "Attr")
     @js.native
-    def addMacro(repo: Repository, name: String, values: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/attr", "Attr.cacheFlush")
-    @js.native
-    def cacheFlush(repo: Repository): Unit = js.native
+    @scala.inline
+    def addMacro(repo: Repository, name: String, values: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addMacro")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def cacheFlush(repo: Repository): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheFlush")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @param repo - The repository containing the path.
@@ -34,9 +35,8 @@ object attrMod {
       * @param name - The name of the attribute to look up.
       * @returns - Output of the value of the attribute. Use the GIT_ATTR_...
       */
-    @JSImport("nodegit/attr", "Attr.get")
-    @js.native
-    def get(repo: Repository, flags: Double, path: String, name: String): js.Promise[String] = js.native
+    @scala.inline
+    def get(repo: Repository, flags: Double, path: String, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     /**
       * @param repo - The repository containing the path.
@@ -46,17 +46,15 @@ object attrMod {
       * @param numAttr - The number of attributes being looked up
       * @param names - An array of num_attr strings containing attribute names.
       */
-    @JSImport("nodegit/attr", "Attr.getMany")
-    @js.native
-    def getMany(repo: Repository, flags: Double, path: String, numAttr: Double, names: String): js.Array[_] = js.native
+    @scala.inline
+    def getMany(repo: Repository, flags: Double, path: String, numAttr: Double, names: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], numAttr.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       * @param attr - The attribute
       * @returns - the value type for the attribute
       */
-    @JSImport("nodegit/attr", "Attr.value")
-    @js.native
-    def value(attr: String): Double = js.native
+    @scala.inline
+    def value(attr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(attr.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

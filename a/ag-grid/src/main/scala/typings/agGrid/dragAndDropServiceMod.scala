@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragAndDropServiceMod {
@@ -193,19 +192,25 @@ object dragAndDropServiceMod {
   object DragSourceType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DragSourceType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DragSourceType & Double] = js.native
     
     @js.native
-    sealed trait HeaderCell extends DragSourceType
-    /* 1 */ val HeaderCell: typings.agGrid.dragAndDropServiceMod.DragSourceType.HeaderCell with Double = js.native
+    sealed trait HeaderCell
+      extends StObject
+         with DragSourceType
+    /* 1 */ val HeaderCell: typings.agGrid.dragAndDropServiceMod.DragSourceType.HeaderCell & Double = js.native
     
     @js.native
-    sealed trait RowDrag extends DragSourceType
-    /* 2 */ val RowDrag: typings.agGrid.dragAndDropServiceMod.DragSourceType.RowDrag with Double = js.native
+    sealed trait RowDrag
+      extends StObject
+         with DragSourceType
+    /* 2 */ val RowDrag: typings.agGrid.dragAndDropServiceMod.DragSourceType.RowDrag & Double = js.native
     
     @js.native
-    sealed trait ToolPanel extends DragSourceType
-    /* 0 */ val ToolPanel: typings.agGrid.dragAndDropServiceMod.DragSourceType.ToolPanel with Double = js.native
+    sealed trait ToolPanel
+      extends StObject
+         with DragSourceType
+    /* 0 */ val ToolPanel: typings.agGrid.dragAndDropServiceMod.DragSourceType.ToolPanel & Double = js.native
   }
   
   @js.native
@@ -215,15 +220,19 @@ object dragAndDropServiceMod {
   object HDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[HDirection & Double] = js.native
     
     @js.native
-    sealed trait Left extends HDirection
-    /* 0 */ val Left: typings.agGrid.dragAndDropServiceMod.HDirection.Left with Double = js.native
+    sealed trait Left
+      extends StObject
+         with HDirection
+    /* 0 */ val Left: typings.agGrid.dragAndDropServiceMod.HDirection.Left & Double = js.native
     
     @js.native
-    sealed trait Right extends HDirection
-    /* 1 */ val Right: typings.agGrid.dragAndDropServiceMod.HDirection.Right with Double = js.native
+    sealed trait Right
+      extends StObject
+         with HDirection
+    /* 1 */ val Right: typings.agGrid.dragAndDropServiceMod.HDirection.Right & Double = js.native
   }
   
   @js.native
@@ -233,25 +242,28 @@ object dragAndDropServiceMod {
   object VDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[VDirection & Double] = js.native
     
     @js.native
-    sealed trait Down extends VDirection
-    /* 1 */ val Down: typings.agGrid.dragAndDropServiceMod.VDirection.Down with Double = js.native
+    sealed trait Down
+      extends StObject
+         with VDirection
+    /* 1 */ val Down: typings.agGrid.dragAndDropServiceMod.VDirection.Down & Double = js.native
     
     @js.native
-    sealed trait Up extends VDirection
-    /* 0 */ val Up: typings.agGrid.dragAndDropServiceMod.VDirection.Up with Double = js.native
+    sealed trait Up
+      extends StObject
+         with VDirection
+    /* 0 */ val Up: typings.agGrid.dragAndDropServiceMod.VDirection.Up & Double = js.native
   }
   
-  @js.native
   trait DragItem extends StObject {
     
-    var columns: js.UndefOr[js.Array[Column]] = js.native
+    var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var rowNode: js.UndefOr[RowNode] = js.native
+    var rowNode: js.UndefOr[RowNode] = js.undefined
     
-    var visibleState: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var visibleState: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   }
   object DragItem {
     
@@ -287,34 +299,33 @@ object dragAndDropServiceMod {
     }
   }
   
-  @js.native
   trait DragSource extends StObject {
     
     /** If eElement is dragged, then the dragItem is the object that gets passed around. */
-    def dragItemCallback(): DragItem = js.native
+    def dragItemCallback(): DragItem
     
     /** This name appears in the ghost icon when dragging */
-    var dragItemName: String = js.native
+    var dragItemName: String
     
     /** The drop target associated with this dragSource. So when dragging starts, this target does not get
       * onDragEnter event. */
-    var dragSourceDropTarget: js.UndefOr[DropTarget] = js.native
+    var dragSourceDropTarget: js.UndefOr[DropTarget] = js.undefined
     
     /** After how many pixels of dragging should the drag operation start. Default is 4px. */
-    var dragStartPixels: js.UndefOr[Double] = js.native
+    var dragStartPixels: js.UndefOr[Double] = js.undefined
     
     /** Callback for drag started */
-    var dragStarted: js.UndefOr[js.Function0[Unit]] = js.native
+    var dragStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Callback for drag stopped */
-    var dragStopped: js.UndefOr[js.Function0[Unit]] = js.native
+    var dragStopped: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Element which, when dragged, will kick off the DnD process */
-    var eElement: HTMLElement = js.native
+    var eElement: HTMLElement
     
     /** So the drop target knows what type of event it is, useful for columns,
       * we we re-ordering or moving dropping from toolPanel */
-    var `type`: DragSourceType = js.native
+    var `type`: DragSourceType
   }
   object DragSource {
     
@@ -371,24 +382,23 @@ object dragAndDropServiceMod {
     }
   }
   
-  @js.native
   trait DraggingEvent extends StObject {
     
-    var dragItem: DragItem = js.native
+    var dragItem: DragItem
     
-    var dragSource: DragSource = js.native
+    var dragSource: DragSource
     
-    var event: MouseEvent = js.native
+    var event: MouseEvent
     
-    var fromNudge: Boolean = js.native
+    var fromNudge: Boolean
     
-    var hDirection: HDirection = js.native
+    var hDirection: HDirection
     
-    var vDirection: VDirection = js.native
+    var vDirection: VDirection
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object DraggingEvent {
     
@@ -436,32 +446,31 @@ object dragAndDropServiceMod {
     }
   }
   
-  @js.native
   trait DropTarget extends StObject {
     
     /** The main container that will get the drop. */
-    def getContainer(): HTMLElement = js.native
+    def getContainer(): HTMLElement
     
     /** Icon to show when drag is over*/
-    var getIconName: js.UndefOr[js.Function0[String]] = js.native
+    var getIconName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** If any secondary containers. For example when moving columns in ag-Grid, we listen for drops
       * in the header as well as the body (main rows and pinned rows) of the grid. */
-    var getSecondaryContainers: js.UndefOr[js.Function0[js.Array[HTMLElement]]] = js.native
+    var getSecondaryContainers: js.UndefOr[js.Function0[js.Array[HTMLElement]]] = js.undefined
     
-    def isInterestedIn(`type`: DragSourceType): Boolean = js.native
+    def isInterestedIn(`type`: DragSourceType): Boolean
     
     /** Callback for when drag enters */
-    var onDragEnter: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.native
+    var onDragEnter: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.undefined
     
     /** Callback for when drag leaves */
-    var onDragLeave: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.native
+    var onDragLeave: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.undefined
     
     /** Callback for when drag stops */
-    var onDragStop: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.native
+    var onDragStop: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.undefined
     
     /** Callback for when dragging */
-    var onDragging: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.native
+    var onDragging: js.UndefOr[js.Function1[/* params */ DraggingEvent, Unit]] = js.undefined
   }
   object DropTarget {
     

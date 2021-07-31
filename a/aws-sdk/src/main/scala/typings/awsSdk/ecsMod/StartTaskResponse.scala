@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTaskResponse extends StObject {
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[Failures] = js.native
+  var failures: js.UndefOr[Failures] = js.undefined
   
   /**
     * A full description of the tasks that were started. Each task that was successfully placed on your container instances is described.
     */
-  var tasks: js.UndefOr[Tasks] = js.native
+  var tasks: js.UndefOr[Tasks] = js.undefined
 }
 object StartTaskResponse {
   

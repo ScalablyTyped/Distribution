@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies how to parse data in the buffer. */
-@js.native
 trait Printing3DBufferDescription extends StObject {
   
   /** Specifies the format used by the buffer. */
-  var format: Printing3DBufferFormat = js.native
+  var format: Printing3DBufferFormat
   
   /** Specifies how far to move the pointer forward to find the next unit of data. */
-  var stride: Double = js.native
+  var stride: Double
 }
 object Printing3DBufferDescription {
   

@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,9 +20,9 @@ trait Framebuffer extends StObject {
     * @param {PIXI.BaseTexture} [texture] - Texture to add to the array
     */
   def addColorTexture(): Unit = js.native
-  def addColorTexture(index: js.UndefOr[scala.Nothing], texture: BaseTexture): Unit = js.native
   def addColorTexture(index: Double): Unit = js.native
   def addColorTexture(index: Double, texture: BaseTexture): Unit = js.native
+  def addColorTexture(index: Unit, texture: BaseTexture): Unit = js.native
   
   /**
     * Add a depth texture to the frame buffer

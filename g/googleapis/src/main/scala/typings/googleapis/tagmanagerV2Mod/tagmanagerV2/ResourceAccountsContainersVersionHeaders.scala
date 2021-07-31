@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Version_headers")
@@ -30,7 +29,7 @@ class ResourceAccountsContainersVersionHeaders protected () extends StObject {
     */
   def latest(): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(callback: BodyResponseCallback[SchemaContainerVersionHeader]): Unit = js.native
-  def latest(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersionHeader] = js.native
+  def latest(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(params: ParamsResourceAccountsContainersVersionHeadersLatest): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(
     params: ParamsResourceAccountsContainersVersionHeadersLatest,
@@ -64,7 +63,7 @@ class ResourceAccountsContainersVersionHeaders protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListContainerVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(params: ParamsResourceAccountsContainersVersionHeadersList): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersVersionHeadersList,

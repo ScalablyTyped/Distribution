@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`. */
-@js.native
 trait WorkbookUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WorkbookUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var chartDataPointTrack: js.UndefOr[Boolean] = js.native
+  var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -25,7 +23,7 @@ trait WorkbookUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isDirty: js.UndefOr[Boolean] = js.native
+  var isDirty: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait WorkbookUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.native
+  var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait WorkbookUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.native
+  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookUpdateData {
   

@@ -4,24 +4,22 @@ import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.plotlyJsStrings.data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var array: js.Array[Datum] = js.native
+  var array: js.Array[Datum]
   
-  var arrayminus: js.UndefOr[js.Array[Datum]] = js.native
+  var arrayminus: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var `type`: data = js.native
+  var `type`: data
 }
 object Array {
   
   @scala.inline
-  def apply(array: js.Array[Datum], `type`: data): Array = {
+  def apply(array: js.Array[Datum]): Array = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("data")
     __obj.asInstanceOf[Array]
   }
   

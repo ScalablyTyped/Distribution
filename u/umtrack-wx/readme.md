@@ -10,9 +10,9 @@ Typings are for version 2.3
 | ------------------ | :-------------: |
 | Full name          | umtrack-wx |
 | Keywords           | umeng, weixin, wx |
-| # releases         | 20 |
-| # dependents       | 0 |
-| # downloads        | 3780 |
+| # releases         | 31 |
+| # dependents       | 1 |
+| # downloads        | 7365 |
 | # stars            | 0 |
 
 ## Links

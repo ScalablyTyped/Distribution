@@ -3,15 +3,13 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipEvents extends StObject {
   
-  var close: js.UndefOr[TooltipEvent] = js.native
+  var close: js.UndefOr[TooltipEvent] = js.undefined
   
-  var open: js.UndefOr[TooltipEvent] = js.native
+  var open: js.UndefOr[TooltipEvent] = js.undefined
 }
 object TooltipEvents {
   

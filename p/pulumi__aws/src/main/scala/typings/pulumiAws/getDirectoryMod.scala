@@ -6,30 +6,30 @@ import typings.pulumiAws.outputMod.directoryservice.GetDirectoryVpcSetting
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDirectoryMod {
   
-  @JSImport("@pulumi/aws/directoryservice/getDirectory", "getDirectory")
+  @JSImport("@pulumi/aws/directoryservice/getDirectory", JSImport.Namespace)
   @js.native
-  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = js.native
-  @JSImport("@pulumi/aws/directoryservice/getDirectory", "getDirectory")
-  @js.native
-  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectoryResult]]
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectoryResult]]
+  
   trait GetDirectoryArgs extends StObject {
     
     /**
       * The ID of the directory.
       */
-    val directoryId: String = js.native
+    val directoryId: String
     
     /**
       * A map of tags assigned to the directory/connector.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetDirectoryArgs {
     
@@ -53,79 +53,78 @@ object getDirectoryMod {
     }
   }
   
-  @js.native
   trait GetDirectoryResult extends StObject {
     
     /**
       * The access URL for the directory/connector, such as http://alias.awsapps.com.
       */
-    val accessUrl: String = js.native
+    val accessUrl: String
     
     /**
       * The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
       */
-    val alias: String = js.native
+    val alias: String
     
-    val connectSettings: js.Array[GetDirectoryConnectSetting] = js.native
+    val connectSettings: js.Array[GetDirectoryConnectSetting]
     
     /**
       * A textual description for the directory/connector.
       */
-    val description: String = js.native
+    val description: String
     
-    val directoryId: String = js.native
+    val directoryId: String
     
     /**
       * A list of IP addresses of the DNS servers for the directory/connector.
       */
-    val dnsIpAddresses: js.Array[String] = js.native
+    val dnsIpAddresses: js.Array[String]
     
     /**
       * (for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
       */
-    val edition: String = js.native
+    val edition: String
     
     /**
       * The directory/connector single-sign on status.
       */
-    val enableSso: Boolean = js.native
+    val enableSso: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The fully qualified name for the directory/connector.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The ID of the security group created by the directory/connector.
       */
-    val securityGroupId: String = js.native
+    val securityGroupId: String
     
     /**
       * The short name of the directory/connector, such as `CORP`.
       */
-    val shortName: String = js.native
+    val shortName: String
     
     /**
       * (for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
       */
-    val size: String = js.native
+    val size: String
     
     /**
       * A map of tags assigned to the directory/connector.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
       */
-    val `type`: String = js.native
+    val `type`: String
     
-    val vpcSettings: js.Array[GetDirectoryVpcSetting] = js.native
+    val vpcSettings: js.Array[GetDirectoryVpcSetting]
   }
   object GetDirectoryResult {
     

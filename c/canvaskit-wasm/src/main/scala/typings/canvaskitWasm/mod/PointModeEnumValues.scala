@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointModeEnumValues extends EmbindEnum {
+trait PointModeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Lines: PointMode = js.native
+  var Lines: PointMode
   
-  var Points: PointMode = js.native
+  var Points: PointMode
   
-  var Polygon: PointMode = js.native
+  var Polygon: PointMode
 }
 object PointModeEnumValues {
   

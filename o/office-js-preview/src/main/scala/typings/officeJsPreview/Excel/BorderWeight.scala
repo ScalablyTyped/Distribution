@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait BorderWeight extends StObject
 object BorderWeight extends StObject {
   
   @js.native
-  sealed trait hairline extends BorderWeight
+  sealed trait hairline
+    extends StObject
+       with BorderWeight
   
   @js.native
-  sealed trait medium extends BorderWeight
+  sealed trait medium
+    extends StObject
+       with BorderWeight
   
   @js.native
-  sealed trait thick extends BorderWeight
+  sealed trait thick
+    extends StObject
+       with BorderWeight
   
   @js.native
-  sealed trait thin extends BorderWeight
+  sealed trait thin
+    extends StObject
+       with BorderWeight
 }

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The extracted subject from the sentence. */
-@js.native
 trait SemanticRolesResultSubject extends StObject {
   
   /** An array of extracted entities. */
-  var entities: js.UndefOr[js.Array[SemanticRolesEntity]] = js.native
+  var entities: js.UndefOr[js.Array[SemanticRolesEntity]] = js.undefined
   
   /** An array of extracted keywords. */
-  var keywords: js.UndefOr[js.Array[SemanticRolesKeyword]] = js.native
+  var keywords: js.UndefOr[js.Array[SemanticRolesKeyword]] = js.undefined
   
   /** Text that corresponds to the subject role. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SemanticRolesResultSubject {
   

@@ -4,17 +4,15 @@ import typings.naudiodon.mod.AudioOptions
 import typings.naudiodon.mod.HostAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultHostAPI extends StObject {
     
-    var HostAPIs: js.Array[HostAPI] = js.native
+    var HostAPIs: js.Array[HostAPI]
     
-    var defaultHostAPI: Double = js.native
+    var defaultHostAPI: Double
   }
   object DefaultHostAPI {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait InOptions extends StObject {
     
-    var inOptions: AudioOptions = js.native
+    var inOptions: AudioOptions
   }
   object InOptions {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InOptionsOutOptions extends StObject {
     
-    var inOptions: AudioOptions = js.native
+    var inOptions: AudioOptions
     
-    var outOptions: AudioOptions = js.native
+    var outOptions: AudioOptions
   }
   object InOptionsOutOptions {
     
@@ -85,10 +81,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OutOptions extends StObject {
     
-    var outOptions: AudioOptions = js.native
+    var outOptions: AudioOptions
   }
   object OutOptions {
     

@@ -10,9 +10,9 @@ Web based JavaScript HTML WYSIWYG editor control.
 | ------------------ | :-------------: |
 | Full name          | tinymce |
 | Keywords           | editor, wysiwyg, tinymce, richtext, javascript, html |
-| # releases         | 48 |
-| # dependents       | 380 |
-| # downloads        | 5484678 |
+| # releases         | 46 |
+| # dependents       | 416 |
+| # downloads        | 6234189 |
 | # stars            | 8 |
 
 ## Links

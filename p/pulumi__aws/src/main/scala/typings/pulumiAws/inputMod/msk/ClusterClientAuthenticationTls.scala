@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.msk
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterClientAuthenticationTls extends StObject {
   
   /**
     * List of ACM Certificate Authority Amazon Resource Names (ARNs).
     */
-  var certificateAuthorityArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var certificateAuthorityArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object ClusterClientAuthenticationTls {
   

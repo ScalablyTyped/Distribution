@@ -3,13 +3,11 @@ package typings.msRest.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
-  var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object RequestOptions {
   

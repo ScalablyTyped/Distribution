@@ -3,15 +3,15 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Call extends Node {
+trait Call
+  extends StObject
+     with Node {
   
-  var args: Expression = js.native
+  var args: Expression
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
 }
 object Call {
   

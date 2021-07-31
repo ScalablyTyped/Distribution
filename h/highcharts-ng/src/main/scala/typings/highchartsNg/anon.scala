@@ -2,19 +2,17 @@ package typings.highchartsNg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrentMax extends StObject {
     
-    var currentMax: js.UndefOr[Double] = js.native
+    var currentMax: js.UndefOr[Double] = js.undefined
     
-    var currentMin: js.UndefOr[Double] = js.native
+    var currentMin: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[Text] = js.native
+    var title: js.UndefOr[Text] = js.undefined
   }
   object CurrentMax {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -79,10 +76,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Text {
     

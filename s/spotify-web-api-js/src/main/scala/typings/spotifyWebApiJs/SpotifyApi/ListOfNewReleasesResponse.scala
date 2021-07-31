@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/browse/new-releases
   * https://developer.spotify.com/web-api/get-list-new-releases/
   */
-@js.native
 trait ListOfNewReleasesResponse extends StObject {
   
-  var albums: PagingObject[AlbumObjectSimplified] = js.native
+  var albums: PagingObject[AlbumObjectSimplified]
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object ListOfNewReleasesResponse {
   

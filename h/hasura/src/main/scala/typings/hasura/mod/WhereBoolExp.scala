@@ -3,11 +3,10 @@ package typings.hasura.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WhereBoolExp[T /* <: Record[String, _] */] extends StObject {
+trait WhereBoolExp[T /* <: Record[String, js.Any] */] extends StObject {
   
   var _and: js.UndefOr[js.Array[WhereBoolExp[T]]] = js.native
   

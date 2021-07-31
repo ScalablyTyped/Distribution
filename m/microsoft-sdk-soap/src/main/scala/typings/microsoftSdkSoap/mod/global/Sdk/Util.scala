@@ -2,34 +2,34 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Util {
+  
+  @JSGlobal("Sdk.Util")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates an entity from XML.
     * @param The serialized entity returned from the SOAP service as XML.
     */
-  @JSGlobal("Sdk.Util.createEntityFromNode")
-  @js.native
-  def createEntityFromNode(node: java.lang.String): Unit = js.native
+  @scala.inline
+  def createEntityFromNode(node: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createEntityFromNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Formats a string with the arguments from an array.
     * @param string The string containing placeholders for items in the array.
     * @param args An array of strings to replace the placeholders.
     */
-  @JSGlobal("Sdk.Util.format")
-  @js.native
-  def format(string: java.lang.String, args: js.Array[java.lang.String]): java.lang.String = js.native
+  @scala.inline
+  def format(string: java.lang.String, args: js.Array[java.lang.String]): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(string.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   /**
     * Returns the clinent URL.
     */
-  @JSGlobal("Sdk.Util.getClientUrl")
-  @js.native
-  def getClientUrl(): java.lang.String = js.native
+  @scala.inline
+  def getClientUrl(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientUrl")().asInstanceOf[java.lang.String]
   
   /**
     * Verifies the parameter is a valid enum value.
@@ -39,45 +39,39 @@ object Util {
   /**
     * Returns an empty GUID.
     */
-  @JSGlobal("Sdk.Util.getEmptyGuid")
-  @js.native
-  def getEmptyGuid(): java.lang.String = js.native
+  @scala.inline
+  def getEmptyGuid(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyGuid")().asInstanceOf[java.lang.String]
   
   /**
     *
     */
-  @JSGlobal("Sdk.Util.getError")
-  @js.native
-  def getError(resp: js.Any): java.lang.String = js.native
+  @scala.inline
+  def getError(resp: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(resp.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     *
     */
-  @JSGlobal("Sdk.Util.getXMLHttpRequest")
-  @js.native
-  def getXMLHttpRequest(action: java.lang.String, async: scala.Boolean): js.Any = js.native
+  @scala.inline
+  def getXMLHttpRequest(action: java.lang.String, async: scala.Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getXMLHttpRequest")(action.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Verifies the parameter is a string formatted as a GUID.
     * @param value The value to check.
     */
-  @JSGlobal("Sdk.Util.isGuid")
-  @js.native
-  def isGuid(value: java.lang.String): scala.Boolean = js.native
+  @scala.inline
+  def isGuid(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGuid")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   /**
     * Verifies the parameter is a string formatted as a GUID or null.
     * @param value The value to check.
     */
-  @JSGlobal("Sdk.Util.isGuidOrNull")
-  @js.native
-  def isGuidOrNull(value: java.lang.String): scala.Boolean = js.native
+  @scala.inline
+  def isGuidOrNull(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGuidOrNull")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   /**
     * Provides a way to override the client Url when a client-side context is not available.
     * @param url The client URL to use instead of the default.
     */
-  @JSGlobal("Sdk.Util.setClientUrl")
-  @js.native
-  def setClientUrl(url: java.lang.String): Unit = js.native
+  @scala.inline
+  def setClientUrl(url: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

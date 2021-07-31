@@ -10,17 +10,18 @@ import typings.std.Error
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("megajs", JSImport.Default)
+  @JSImport("megajs", JSImport.Namespace)
   @js.native
-  def default(options: StorageOptions): Storage = js.native
-  @JSImport("megajs", JSImport.Default)
-  @js.native
-  def default(options: StorageOptions, cb: js.Any): Storage = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(options: StorageOptions): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  @scala.inline
+  def default(options: StorageOptions, cb: js.Any): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Storage]
   
   @JSImport("megajs", "File")
   @js.native
@@ -35,7 +36,7 @@ object mod {
     var directory: Boolean = js.native
     
     def download(): Readable = js.native
-    def download(options: js.UndefOr[scala.Nothing], cb: js.Any): Readable = js.native
+    def download(options: Unit, cb: js.Any): Readable = js.native
     def download(options: DownloadOptions): Readable = js.native
     def download(options: DownloadOptions, cb: js.Any): Readable = js.native
     
@@ -57,16 +58,17 @@ object mod {
   /* static members */
   object File {
     
-    @JSImport("megajs", "File.fromURL")
+    @JSImport("megajs", "File")
     @js.native
-    def fromURL(options: String): File = js.native
-    @JSImport("megajs", "File.fromURL")
-    @js.native
-    def fromURL(options: FileOptions): File = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("megajs", "File.unpackAttributes")
-    @js.native
-    def unpackAttributes(at: js.Any): JSON = js.native
+    @scala.inline
+    def fromURL(options: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
+    @scala.inline
+    def fromURL(options: FileOptions): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
+    
+    @scala.inline
+    def unpackAttributes(at: js.Any): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackAttributes")(at.asInstanceOf[js.Any]).asInstanceOf[JSON]
   }
   
   @JSImport("megajs", "MutableFile")
@@ -75,17 +77,14 @@ object mod {
     def this(options: String, storage: Storage) = this()
     def this(options: FileOptions, storage: Storage) = this()
     
-    def delete(permanent: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def delete(permanent: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
     @JSName("delete")
     def delete_true(permanent: `true`, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
     
     def importFile(file: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
     def importFile(file: File, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
     
-    def link(
-      options: js.UndefOr[scala.Nothing],
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
-    ): Readable = js.native
+    def link(options: Unit, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
     def link(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
     
     def mkdir(options: String): Readable = js.native
@@ -104,29 +103,26 @@ object mod {
     
     def setLabel(label: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
     
-    def shareFolder(
-      options: js.UndefOr[scala.Nothing],
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
-    ): Readable = js.native
+    def shareFolder(options: Unit, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
     def shareFolder(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
     
     def upload(options: String): Writable = js.native
-    def upload(options: String, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Unit, cb: js.Any): Writable = js.native
     def upload(options: String, buffer: Buffer): Writable = js.native
     def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native
     def upload(options: UploadOptions): Writable = js.native
-    def upload(options: UploadOptions, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Unit, cb: js.Any): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer, cb: js.Any): Writable = js.native
     
     def uploadAttribute(`type`: String): Readable = js.native
-    def uploadAttribute(`type`: String, opt: js.UndefOr[scala.Nothing], cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: String, opt: Unit, cb: js.Any): Readable = js.native
     def uploadAttribute(`type`: String, opt: Buffer): Readable = js.native
     def uploadAttribute(`type`: String, opt: Buffer, cb: js.Any): Readable = js.native
     def uploadAttribute(`type`: String, opt: Stream): Readable = js.native
     def uploadAttribute(`type`: String, opt: Stream, cb: js.Any): Readable = js.native
     def uploadAttribute(`type`: Double): Readable = js.native
-    def uploadAttribute(`type`: Double, opt: js.UndefOr[scala.Nothing], cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: Double, opt: Unit, cb: js.Any): Readable = js.native
     def uploadAttribute(`type`: Double, opt: Buffer): Readable = js.native
     def uploadAttribute(`type`: Double, opt: Buffer, cb: js.Any): Readable = js.native
     def uploadAttribute(`type`: Double, opt: Stream): Readable = js.native
@@ -141,7 +137,7 @@ object mod {
     
     var files: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ id in string ]: megajs.megajs.MutableFile}
-      */ typings.megajs.megajsStrings.Storage with TopLevel[js.Any] = js.native
+      */ typings.megajs.megajsStrings.Storage & TopLevel[js.Any] = js.native
     
     def getAccountInfo(cb: js.Any): AccountInfo = js.native
     
@@ -172,38 +168,40 @@ object mod {
     var trash: MutableFile = js.native
     
     def upload(options: String): Writable = js.native
-    def upload(options: String, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Unit, cb: js.Any): Writable = js.native
     def upload(options: String, buffer: Buffer): Writable = js.native
     def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native
     def upload(options: UploadOptions): Writable = js.native
-    def upload(options: UploadOptions, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Unit, cb: js.Any): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer, cb: js.Any): Writable = js.native
   }
   /* static members */
   object Storage {
     
-    @JSImport("megajs", "Storage.fromJSON")
+    @JSImport("megajs", "Storage")
     @js.native
-    def fromJSON(json: JSON): Storage = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromJSON(json: JSON): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Storage]
   }
   
-  @js.native
   trait AccountInfo extends StObject {
     
-    var downloadBandwidthTotal: Double = js.native
+    var downloadBandwidthTotal: Double
     
-    var downloadBandwidthUsed: Double = js.native
+    var downloadBandwidthUsed: Double
     
-    var sharedBandwidthLimit: Double = js.native
+    var sharedBandwidthLimit: Double
     
-    var sharedBandwidthUsed: Double = js.native
+    var sharedBandwidthUsed: Double
     
-    var spaceTotal: Double = js.native
+    var spaceTotal: Double
     
-    var spaceUsed: Double = js.native
+    var spaceUsed: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object AccountInfo {
     
@@ -248,22 +246,21 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloadOptions extends StObject {
     
-    var chunkSizeIncrement: js.UndefOr[Double] = js.native
+    var chunkSizeIncrement: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[js.Any] = js.native
+    var end: js.UndefOr[js.Any] = js.undefined
     
-    var initialChunkSize: js.UndefOr[Double] = js.native
+    var initialChunkSize: js.UndefOr[Double] = js.undefined
     
-    var maxChunkSize: js.UndefOr[Double] = js.native
+    var maxChunkSize: js.UndefOr[Double] = js.undefined
     
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
-    var returnCiphertext: js.UndefOr[Boolean] = js.native
+    var returnCiphertext: js.UndefOr[Boolean] = js.undefined
     
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
   }
   object DownloadOptions {
     
@@ -320,14 +317,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var downloadId: String = js.native
+    var downloadId: String
     
-    var key: String = js.native
+    var key: String
   }
   object FileOptions {
     
@@ -354,12 +350,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LinkOptions extends StObject {
     
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
-    var noKey: js.UndefOr[Boolean] = js.native
+    var noKey: js.UndefOr[Boolean] = js.undefined
   }
   object LinkOptions {
     
@@ -386,14 +381,13 @@ object mod {
     }
   }
   
-  @js.native
   trait MakeDirectoryOptions extends StObject {
     
-    var attributes: js.UndefOr[js.Object] = js.native
+    var attributes: js.UndefOr[js.Object] = js.undefined
     
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object MakeDirectoryOptions {
     
@@ -423,18 +417,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StorageOptions extends StObject {
     
-    var autoload: js.UndefOr[Boolean] = js.native
+    var autoload: js.UndefOr[Boolean] = js.undefined
     
-    var autologin: js.UndefOr[Boolean] = js.native
+    var autologin: js.UndefOr[Boolean] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var keepalive: js.UndefOr[Boolean] = js.native
+    var keepalive: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
   }
   object StorageOptions {
     
@@ -473,18 +466,17 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadOptions extends StObject {
     
-    var attributes: js.UndefOr[js.Object] = js.native
+    var attributes: js.UndefOr[js.Object] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var previewImage: js.UndefOr[Buffer | Readable] = js.native
+    var previewImage: js.UndefOr[Buffer | Readable] = js.undefined
     
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
-    var thumbnailImage: js.UndefOr[Buffer | Readable] = js.native
+    var thumbnailImage: js.UndefOr[Buffer | Readable] = js.undefined
   }
   object UploadOptions {
     

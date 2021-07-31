@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexMediaConnectOutputDestinationSettings extends StObject {
   
   /**
     * The MediaConnect entitlement ARN available as a Flow source.
     */
-  var EntitlementArn: js.UndefOr[stringMin1] = js.native
+  var EntitlementArn: js.UndefOr[stringMin1] = js.undefined
 }
 object MultiplexMediaConnectOutputDestinationSettings {
   

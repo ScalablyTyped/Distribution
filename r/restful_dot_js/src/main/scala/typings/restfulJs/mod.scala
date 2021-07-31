@@ -4,17 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.restfulJs.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("restful.js", JSImport.Default)
+  @JSImport("restful.js", JSImport.Namespace)
   @js.native
-  def default(endpoint: String): Api = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(endpoint: String): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any]).asInstanceOf[Api]
   
   @js.native
-  trait Api extends Endpoint[Api] {
+  trait Api
+    extends StObject
+       with Endpoint[Api] {
     
     def all(name: String): CollectionEndpoint = js.native
     
@@ -41,7 +45,9 @@ object mod {
   }
   
   @js.native
-  trait CollectionEndpoint extends Endpoint[CollectionEndpoint] {
+  trait CollectionEndpoint
+    extends StObject
+       with Endpoint[CollectionEndpoint] {
     
     /**
       * Delete a member in a collection. Returns a promise with the response.
@@ -50,26 +56,26 @@ object mod {
       * @param headers
       */
     def delete[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](id: js.Any, data: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def delete[T](id: js.Any, data: js.Any): js.Promise[MemberResponse[T]] = js.native
     def delete[T](id: js.Any, data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](id: js.Any, data: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Get a member in a collection. Returns a promise with an entity.
       * @param id
       */
     def get[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def get[T](id: js.Any, params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def get[T](id: js.Any, params: js.Any): js.Promise[MemberResponse[T]] = js.native
     def get[T](id: js.Any, params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def get[T](id: js.Any, params: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Get a full collection. Returns a promise with an array of entities.
       */
     def getAll[T](): js.Promise[CollectionResponse[T]] = js.native
-    def getAll[T](params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[CollectionResponse[T]] = js.native
     def getAll[T](params: js.Any): js.Promise[CollectionResponse[T]] = js.native
     def getAll[T](params: js.Any, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
+    def getAll[T](params: Unit, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
     
     /**
       * Perform a HEAD request on a member in a collection. Returns a promise with the response.
@@ -105,57 +111,58 @@ object mod {
   }
   
   @js.native
-  trait CollectionResponse[T] extends ResponseBase {
+  trait CollectionResponse[T]
+    extends StObject
+       with ResponseBase {
     
     def apply(): typings.restfulJs.anon.Headers[T] = js.native
     
     def body(): js.Array[ResponseBody[T]] = js.native
   }
   
-  @js.native
   trait Endpoint[Self] extends StObject {
     
     /**
       * Add a full request interceptor. You can alter params, headers, data, method and url.
       */
-    def addFullRequestInterceptor(interceptor: FullRequestInterceptor): Self = js.native
+    def addFullRequestInterceptor(interceptor: FullRequestInterceptor): Self
     
     /**
       * Add a full response interceptor. You can alter data and headers.
       */
-    def addFullResponseInterceptor(interceptor: ResponseInterceptor): Self = js.native
+    def addFullResponseInterceptor(interceptor: ResponseInterceptor): Self
     
     /**
       * Add a request interceptor.
       */
-    def addRequestInterceptor(interceptor: RequestInterceptor): Self = js.native
+    def addRequestInterceptor(interceptor: RequestInterceptor): Self
     
     /**
       * Add a response interceptor. You can only alter data and headers.
       */
-    def addResponseInterceptor(interceptor: ResponseInterceptor): Self = js.native
+    def addResponseInterceptor(interceptor: ResponseInterceptor): Self
     
-    def fullRequestInterceptors(): js.Array[FullRequestInterceptor] = js.native
+    def fullRequestInterceptors(): js.Array[FullRequestInterceptor]
     
-    def fullResponseInterceptors(): js.Array[ResponseInterceptor] = js.native
+    def fullResponseInterceptors(): js.Array[ResponseInterceptor]
     
     /**
       * Add a header.
       * @param name
       * @param value
       */
-    def header(name: String, value: js.Any): Self = js.native
+    def header(name: String, value: js.Any): Self
     
-    def headers(): Headers = js.native
+    def headers(): Headers
     
-    def requestInterceptors(): js.Array[RequestInterceptor] = js.native
+    def requestInterceptors(): js.Array[RequestInterceptor]
     
-    def responseInterceptors(): js.Array[ResponseInterceptor] = js.native
+    def responseInterceptors(): js.Array[ResponseInterceptor]
     
     /**
       * Get the url.
       */
-    def url(): String = js.native
+    def url(): String
   }
   object Endpoint {
     
@@ -178,7 +185,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EndpointMutableBuilder[Self_ <: Endpoint[_], Self] (val x: Self_ with Endpoint[Self]) extends AnyVal {
+    implicit class EndpointMutableBuilder[Self_ <: Endpoint[?], Self] (val x: Self_ & Endpoint[Self]) extends AnyVal {
       
       @scala.inline
       def setAddFullRequestInterceptor(value: FullRequestInterceptor => Self): Self_ = StObject.set(x, "addFullRequestInterceptor", js.Any.fromFunction1(value))
@@ -224,18 +231,17 @@ object mod {
     FullRequestInterceptorReturnValue
   ]
   
-  @js.native
   trait FullRequestInterceptorReturnValue extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object FullRequestInterceptorReturnValue {
     
@@ -283,7 +289,9 @@ object mod {
   type Headers = StringDictionary[js.Any]
   
   @js.native
-  trait MemberEndpoint extends Endpoint[MemberEndpoint] {
+  trait MemberEndpoint
+    extends StObject
+       with Endpoint[MemberEndpoint] {
     
     /**
       * Target a child collection name.
@@ -302,9 +310,9 @@ object mod {
       * @param headers
       */
     def delete[T](): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](data: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def delete[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
     def delete[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](data: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Get a member. Returns a promise with an entity.
@@ -312,9 +320,9 @@ object mod {
       * @param headers
       */
     def get[T](): js.Promise[MemberResponse[T]] = js.native
-    def get[T](params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def get[T](params: js.Any): js.Promise[MemberResponse[T]] = js.native
     def get[T](params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def get[T](params: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Perform a HEAD request on a member. Returns a promise with the response.
@@ -350,7 +358,9 @@ object mod {
   }
   
   @js.native
-  trait MemberResponse[T] extends ResponseBase {
+  trait MemberResponse[T]
+    extends StObject
+       with ResponseBase {
     
     def apply(): Data[T] = js.native
     
@@ -359,14 +369,13 @@ object mod {
   
   type RequestInterceptor = js.Function4[/* data */ js.Any, /* headers */ Headers, /* method */ String, /* url */ String, js.Any]
   
-  @js.native
   trait ResponseBase extends StObject {
     
-    def config(): js.Any = js.native
+    def config(): js.Any
     
-    def headers(): Headers = js.native
+    def headers(): Headers
     
-    def status(): Double = js.native
+    def status(): Double
   }
   object ResponseBase {
     
@@ -445,16 +454,15 @@ object mod {
     ResponseInterceptorReturnValue
   ]
   
-  @js.native
   trait ResponseInterceptorReturnValue extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ResponseInterceptorReturnValue {
     

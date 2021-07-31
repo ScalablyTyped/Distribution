@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagDescription extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: js.UndefOr[AccessPointName] = js.native
+  var LoadBalancerName: js.UndefOr[AccessPointName] = js.undefined
   
   /**
     * The tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object TagDescription {
   

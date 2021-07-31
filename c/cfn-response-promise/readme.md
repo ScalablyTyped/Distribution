@@ -11,8 +11,8 @@ wrap cfn-response in promise to support await/async style lambda in cloudformati
 | Full name          | cfn-response-promise |
 | Keywords           | cfn-response, cloudformation, aws, promise |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 65694 |
+| # dependents       | 2 |
+| # downloads        | 109392 |
 | # stars            | 0 |
 
 ## Links

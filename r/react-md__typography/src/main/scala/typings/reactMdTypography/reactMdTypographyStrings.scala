@@ -10,7 +10,6 @@ import typings.reactMdTypography.textMod.TextTypes
 import typings.reactMdTypography.textMod.TextWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdTypographyStrings {
@@ -66,7 +65,9 @@ object reactMdTypographyStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait auto extends TextContainerSize
+  sealed trait auto
+    extends StObject
+       with TextContainerSize
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -96,7 +97,9 @@ object reactMdTypographyStrings {
   def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait black extends TextWeight
+  sealed trait black
+    extends StObject
+       with TextWeight
   @scala.inline
   def black: black = "black".asInstanceOf[black]
   
@@ -111,17 +114,23 @@ object reactMdTypographyStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait `body-1` extends TextTypes
+  sealed trait `body-1`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `body-1`: `body-1` = "body-1".asInstanceOf[`body-1`]
   
   @js.native
-  sealed trait `body-2` extends TextTypes
+  sealed trait `body-2`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `body-2`: `body-2` = "body-2".asInstanceOf[`body-2`]
   
   @js.native
-  sealed trait bold extends TextWeight
+  sealed trait bold
+    extends StObject
+       with TextWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
@@ -136,7 +145,9 @@ object reactMdTypographyStrings {
   def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait button extends TextTypes
+  sealed trait button
+    extends StObject
+       with TextTypes
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   
@@ -146,17 +157,23 @@ object reactMdTypographyStrings {
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait capitalize extends TextTransform
+  sealed trait capitalize
+    extends StObject
+       with TextTransform
   @scala.inline
   def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
   
   @js.native
-  sealed trait caption extends TextTypes
+  sealed trait caption
+    extends StObject
+       with TextTypes
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait center extends TextAlign
+  sealed trait center
+    extends StObject
+       with TextAlign
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -221,7 +238,9 @@ object reactMdTypographyStrings {
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait desktop extends TextContainerSize
+  sealed trait desktop
+    extends StObject
+       with TextContainerSize
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
   
@@ -476,32 +495,44 @@ object reactMdTypographyStrings {
   def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait `headline-1` extends TextTypes
+  sealed trait `headline-1`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-1`: `headline-1` = "headline-1".asInstanceOf[`headline-1`]
   
   @js.native
-  sealed trait `headline-2` extends TextTypes
+  sealed trait `headline-2`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-2`: `headline-2` = "headline-2".asInstanceOf[`headline-2`]
   
   @js.native
-  sealed trait `headline-3` extends TextTypes
+  sealed trait `headline-3`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-3`: `headline-3` = "headline-3".asInstanceOf[`headline-3`]
   
   @js.native
-  sealed trait `headline-4` extends TextTypes
+  sealed trait `headline-4`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-4`: `headline-4` = "headline-4".asInstanceOf[`headline-4`]
   
   @js.native
-  sealed trait `headline-5` extends TextTypes
+  sealed trait `headline-5`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-5`: `headline-5` = "headline-5".asInstanceOf[`headline-5`]
   
   @js.native
-  sealed trait `headline-6` extends TextTypes
+  sealed trait `headline-6`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `headline-6`: `headline-6` = "headline-6".asInstanceOf[`headline-6`]
   
@@ -511,7 +542,9 @@ object reactMdTypographyStrings {
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait hint extends TextColor
+  sealed trait hint
+    extends StObject
+       with TextColor
   @scala.inline
   def hint: hint = "hint".asInstanceOf[hint]
   
@@ -561,7 +594,9 @@ object reactMdTypographyStrings {
   def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
-  sealed trait italic extends FontStyle
+  sealed trait italic
+    extends StObject
+       with FontStyle
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   
@@ -581,7 +616,9 @@ object reactMdTypographyStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait left extends TextAlign
+  sealed trait left
+    extends StObject
+       with TextAlign
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -596,7 +633,9 @@ object reactMdTypographyStrings {
   def li: li = "li".asInstanceOf[li]
   
   @js.native
-  sealed trait light extends TextWeight
+  sealed trait light
+    extends StObject
+       with TextWeight
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -606,7 +645,9 @@ object reactMdTypographyStrings {
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait `line-through` extends TextDecoration
+  sealed trait `line-through`
+    extends StObject
+       with TextDecoration
   @scala.inline
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
@@ -621,7 +662,9 @@ object reactMdTypographyStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait lowercase extends TextTransform
+  sealed trait lowercase
+    extends StObject
+       with TextTransform
   @scala.inline
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   
@@ -651,7 +694,9 @@ object reactMdTypographyStrings {
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait medium extends TextWeight
+  sealed trait medium
+    extends StObject
+       with TextWeight
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -681,7 +726,9 @@ object reactMdTypographyStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait mobile extends TextContainerSize
+  sealed trait mobile
+    extends StObject
+       with TextContainerSize
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   
@@ -706,7 +753,9 @@ object reactMdTypographyStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends FontStyle
+  sealed trait normal
+    extends StObject
+       with FontStyle
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -721,7 +770,9 @@ object reactMdTypographyStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait oblique extends FontStyle
+  sealed trait oblique
+    extends StObject
+       with FontStyle
   @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   
@@ -747,7 +798,8 @@ object reactMdTypographyStrings {
   
   @js.native
   sealed trait overline
-    extends TextDecoration
+    extends StObject
+       with TextDecoration
        with TextTypes
   @scala.inline
   def overline: overline = "overline".asInstanceOf[overline]
@@ -813,12 +865,16 @@ object reactMdTypographyStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait regular extends TextWeight
+  sealed trait regular
+    extends StObject
+       with TextWeight
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait right extends TextAlign
+  sealed trait right
+    extends StObject
+       with TextAlign
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -853,7 +909,9 @@ object reactMdTypographyStrings {
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait secondary extends TextColor
+  sealed trait secondary
+    extends StObject
+       with TextColor
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
@@ -868,7 +926,9 @@ object reactMdTypographyStrings {
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait `semi-bold` extends TextWeight
+  sealed trait `semi-bold`
+    extends StObject
+       with TextWeight
   @scala.inline
   def `semi-bold`: `semi-bold` = "semi-bold".asInstanceOf[`semi-bold`]
   
@@ -913,12 +973,16 @@ object reactMdTypographyStrings {
   def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
-  sealed trait `subtitle-1` extends TextTypes
+  sealed trait `subtitle-1`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `subtitle-1`: `subtitle-1` = "subtitle-1".asInstanceOf[`subtitle-1`]
   
   @js.native
-  sealed trait `subtitle-2` extends TextTypes
+  sealed trait `subtitle-2`
+    extends StObject
+       with TextTypes
   @scala.inline
   def `subtitle-2`: `subtitle-2` = "subtitle-2".asInstanceOf[`subtitle-2`]
   
@@ -998,27 +1062,37 @@ object reactMdTypographyStrings {
   def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
-  sealed trait `theme-error` extends TextColor
+  sealed trait `theme-error`
+    extends StObject
+       with TextColor
   @scala.inline
   def `theme-error`: `theme-error` = "theme-error".asInstanceOf[`theme-error`]
   
   @js.native
-  sealed trait `theme-primary` extends TextColor
+  sealed trait `theme-primary`
+    extends StObject
+       with TextColor
   @scala.inline
   def `theme-primary`: `theme-primary` = "theme-primary".asInstanceOf[`theme-primary`]
   
   @js.native
-  sealed trait `theme-secondary` extends TextColor
+  sealed trait `theme-secondary`
+    extends StObject
+       with TextColor
   @scala.inline
   def `theme-secondary`: `theme-secondary` = "theme-secondary".asInstanceOf[`theme-secondary`]
   
   @js.native
-  sealed trait `theme-warning` extends TextColor
+  sealed trait `theme-warning`
+    extends StObject
+       with TextColor
   @scala.inline
   def `theme-warning`: `theme-warning` = "theme-warning".asInstanceOf[`theme-warning`]
   
   @js.native
-  sealed trait thin extends TextWeight
+  sealed trait thin
+    extends StObject
+       with TextWeight
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   
@@ -1063,12 +1137,16 @@ object reactMdTypographyStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait underline extends TextDecoration
+  sealed trait underline
+    extends StObject
+       with TextDecoration
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait uppercase extends TextTransform
+  sealed trait uppercase
+    extends StObject
+       with TextTransform
   @scala.inline
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   

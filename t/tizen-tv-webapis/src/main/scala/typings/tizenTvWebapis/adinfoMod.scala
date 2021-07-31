@@ -2,12 +2,10 @@ package typings.tizenTvWebapis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adinfoMod {
   
-  @js.native
   trait AdInfoManager extends StObject {
     
     /**
@@ -28,7 +26,7 @@ object adinfoMod {
       * @throw WebAPIException SecurityError, InvalidStateError
       * @since 2.4
       */
-    def getTIFA(): String = js.native
+    def getTIFA(): String
     
     /**
       * Retrieves the plugin version number.
@@ -38,7 +36,7 @@ object adinfoMod {
       * @throw WebAPIException SecurityError
       * @since 2.4
       */
-    def getVersion(): String = js.native
+    def getVersion(): String
     
     /**
       * Checks whether the device has limited ad tracking.
@@ -50,7 +48,7 @@ object adinfoMod {
       * @throw WebAPIException SecurityError, InvalidStateError
       * @since 2.4
       */
-    def isLATEnabled(): Boolean = js.native
+    def isLATEnabled(): Boolean
   }
   object AdInfoManager {
     

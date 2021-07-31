@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDistributionBundleRequest extends StObject {
   
   /**
     * The bundle ID of the new bundle to apply to your distribution. Use the GetDistributionBundles action to get a list of distribution bundle IDs that you can specify.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the distribution for which to update the bundle. Use the GetDistributions action to get a list of distribution names that you can specify.
     */
-  var distributionName: js.UndefOr[ResourceName] = js.native
+  var distributionName: js.UndefOr[ResourceName] = js.undefined
 }
 object UpdateDistributionBundleRequest {
   

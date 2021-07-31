@@ -10,9 +10,9 @@ Javascript module template.
 | ------------------ | :-------------: |
 | Full name          | cross-domain-utils |
 | Keywords           | template |
-| # releases         | 19 |
-| # dependents       | 23 |
-| # downloads        | 2176984 |
+| # releases         | 11 |
+| # dependents       | 24 |
+| # downloads        | 2525707 |
 | # stars            | 0 |
 
 ## Links

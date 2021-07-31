@@ -3,11 +3,11 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PickerClosingOperation extends IPickerClosingOperation
+trait PickerClosingOperation
+  extends StObject
+     with IPickerClosingOperation
 object PickerClosingOperation {
   
   @scala.inline

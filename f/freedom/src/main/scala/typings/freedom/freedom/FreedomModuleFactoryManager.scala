@@ -2,7 +2,6 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // A Freedom module sub is both a function and an object with members. The

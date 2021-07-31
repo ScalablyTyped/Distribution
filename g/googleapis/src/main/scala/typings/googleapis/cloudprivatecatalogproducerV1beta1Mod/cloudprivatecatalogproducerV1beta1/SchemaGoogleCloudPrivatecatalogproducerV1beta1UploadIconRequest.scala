@@ -2,10 +2,8 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest extends St
     * dimensions are 130x130 pixels and the maximum dimensions are 10000x10000
     * pixels. Required.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest {
   

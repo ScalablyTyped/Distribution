@@ -5,32 +5,32 @@ import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayMockPayloadGeneratorMod {
   
-  @JSImport("relay-test-utils/lib/RelayMockPayloadGenerator", "generate")
+  @JSImport("relay-test-utils/lib/RelayMockPayloadGenerator", JSImport.Namespace)
   @js.native
-  def generate(operation: OperationDescriptor): GraphQLResponse = js.native
-  @JSImport("relay-test-utils/lib/RelayMockPayloadGenerator", "generate")
-  @js.native
-  def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def generate(operation: OperationDescriptor): GraphQLResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any]).asInstanceOf[GraphQLResponse]
+  @scala.inline
+  def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any])).asInstanceOf[GraphQLResponse]
   
   type MockResolver = js.Function2[/* context */ MockResolverContext, /* generateId */ js.Function0[Double], js.Any]
   
-  @js.native
   trait MockResolverContext extends StObject {
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var args: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parentType: js.UndefOr[String] = js.native
+    var parentType: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[js.Array[String]] = js.native
+    var path: js.UndefOr[js.Array[String]] = js.undefined
   }
   object MockResolverContext {
     

@@ -2,27 +2,25 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pictureInPictureTypesMod {
   
-  @js.native
   trait IPictureInPicture extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disablePictureInPicture(): Unit = js.native
+    def disablePictureInPicture(): Unit
     
-    def enablePictureInPicture(): Unit = js.native
+    def enablePictureInPicture(): Unit
     
-    def enterPictureInPicture(): Unit = js.native
+    def enterPictureInPicture(): Unit
     
-    def exitPictureInPicture(): Unit = js.native
+    def exitPictureInPicture(): Unit
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    var isInPictureInPicture: Boolean = js.native
+    var isInPictureInPicture: Boolean
   }
   object IPictureInPicture {
     
@@ -66,18 +64,17 @@ object pictureInPictureTypesMod {
     }
   }
   
-  @js.native
   trait IPictureInPictureAPI extends StObject {
     
-    var disablePictureInPicture: js.UndefOr[js.Function0[Unit]] = js.native
+    var disablePictureInPicture: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enablePictureInPicture: js.UndefOr[js.Function0[Unit]] = js.native
+    var enablePictureInPicture: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var enterPictureInPicture: js.UndefOr[js.Function0[Unit]] = js.native
+    var enterPictureInPicture: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var exitPictureInPicture: js.UndefOr[js.Function0[Unit]] = js.native
+    var exitPictureInPicture: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var isInPictureInPicture: js.UndefOr[Boolean] = js.native
+    var isInPictureInPicture: js.UndefOr[Boolean] = js.undefined
   }
   object IPictureInPictureAPI {
     
@@ -122,18 +119,17 @@ object pictureInPictureTypesMod {
     }
   }
   
-  @js.native
   trait IPictureInPictureHelper extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def exit(): Unit = js.native
+    def exit(): Unit
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    var isInPictureInPicture: Boolean = js.native
+    var isInPictureInPicture: Boolean
     
-    def request(): Unit = js.native
+    def request(): Unit
   }
   object IPictureInPictureHelper {
     

@@ -2,7 +2,6 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,18 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.ddTrace.mod.plugins.Integration because Already inherited
 - typings.ddTrace.mod.plugins.Instrumentation because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
-- typings.ddTrace.mod.plugins.Http2Server because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined  */ @js.native
-trait http2 extends Http2Client {
+- typings.ddTrace.mod.plugins.Http2Server because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined  */ trait http2
+  extends StObject
+     with Http2Client {
   
   /**
     * Configuration for HTTP clients.
     */
-  var client: js.UndefOr[Http2Client] = js.native
+  var client: js.UndefOr[Http2Client] = js.undefined
   
   /**
     * Configuration for HTTP servers.
     */
-  var server: js.UndefOr[Http2Server] = js.native
+  var server: js.UndefOr[Http2Server] = js.undefined
 }
 object http2 {
   

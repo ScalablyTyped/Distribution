@@ -2,16 +2,14 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetCustomerIndexStatsResponse extends StObject {
   
   /**
     * Summary of indexed item counts, one for each day in the requested range.
     */
-  var stats: js.UndefOr[js.Array[SchemaCustomerIndexStats]] = js.native
+  var stats: js.UndefOr[js.Array[SchemaCustomerIndexStats]] = js.undefined
 }
 object SchemaGetCustomerIndexStatsResponse {
   

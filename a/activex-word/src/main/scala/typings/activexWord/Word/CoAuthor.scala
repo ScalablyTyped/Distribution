@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoAuthor extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val EmailAddress: String = js.native
+  val EmailAddress: String
   
-  val ID: String = js.native
+  val ID: String
   
-  val IsMe: Boolean = js.native
+  val IsMe: Boolean
   
-  val Locks: CoAuthLocks = js.native
+  val Locks: CoAuthLocks
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.CoAuthor_typekey")
-  var WordDotCoAuthor_typekey: CoAuthor = js.native
+  var WordDotCoAuthor_typekey: CoAuthor
 }
 object CoAuthor {
   

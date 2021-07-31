@@ -2,7 +2,6 @@ package typings.webgme.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmeUtil {
@@ -11,9 +10,8 @@ object GmeUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("GmeUtil.ASSERT")
-  @js.native
-  def ASSERT(condition: Boolean): scala.Nothing = js.native
+  @scala.inline
+  def ASSERT(condition: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("ASSERT")(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   @JSGlobal("GmeUtil.CANON")
   @js.native
@@ -25,5 +23,13 @@ object GmeUtil {
   @JSGlobal("GmeUtil.Canon")
   @js.native
   class Canon ()
-    extends typings.webgme.GmeUtil.Canon
+    extends StObject
+       with typings.webgme.GmeUtil.Canon {
+    
+    /* CompleteClass */
+    override def parse(thing: js.Any): String = js.native
+    
+    /* CompleteClass */
+    override def stringify(thing: js.Any): String = js.native
+  }
 }

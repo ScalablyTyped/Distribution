@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxForm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormData extends StObject {
   
-  var component: js.UndefOr[dxForm] = js.native
+  var component: js.UndefOr[dxForm] = js.undefined
   
-  var formData: js.UndefOr[js.Any] = js.native
+  var formData: js.UndefOr[js.Any] = js.undefined
 }
 object FormData {
   

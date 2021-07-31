@@ -11,31 +11,29 @@ import typings.mqttPacket.mod.QoS
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AuthenticationData extends StObject {
     
-    var authenticationData: js.UndefOr[Buffer] = js.native
+    var authenticationData: js.UndefOr[Buffer] = js.undefined
     
-    var authenticationMethod: js.UndefOr[String] = js.native
+    var authenticationMethod: js.UndefOr[String] = js.undefined
     
-    var maximumPacketSize: js.UndefOr[Double] = js.native
+    var maximumPacketSize: js.UndefOr[Double] = js.undefined
     
-    var receiveMaximum: js.UndefOr[Double] = js.native
+    var receiveMaximum: js.UndefOr[Double] = js.undefined
     
-    var requestProblemInformation: js.UndefOr[Boolean] = js.native
+    var requestProblemInformation: js.UndefOr[Boolean] = js.undefined
     
-    var requestResponseInformation: js.UndefOr[Boolean] = js.native
+    var requestResponseInformation: js.UndefOr[Boolean] = js.undefined
     
-    var sessionExpiryInterval: js.UndefOr[Double] = js.native
+    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var topicAliasMaximum: js.UndefOr[Double] = js.native
+    var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object AuthenticationData {
     
@@ -104,22 +102,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var correlationData: js.UndefOr[Buffer] = js.native
+    var correlationData: js.UndefOr[Buffer] = js.undefined
     
-    var messageExpiryInterval: js.UndefOr[Double] = js.native
+    var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Boolean] = js.native
+    var payloadFormatIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var responseTopic: js.UndefOr[String] = js.native
+    var responseTopic: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
     
-    var willDelayInterval: js.UndefOr[Double] = js.native
+    var willDelayInterval: js.UndefOr[Double] = js.undefined
   }
   object ContentType {
     
@@ -176,24 +173,23 @@ object anon {
     }
   }
   
-  @js.native
   trait CorrelationData extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var correlationData: js.UndefOr[Buffer] = js.native
+    var correlationData: js.UndefOr[Buffer] = js.undefined
     
-    var messageExpiryInterval: js.UndefOr[Double] = js.native
+    var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Double] = js.native
+    var payloadFormatIndicator: js.UndefOr[Double] = js.undefined
     
-    var responseTopic: js.UndefOr[String] = js.native
+    var responseTopic: js.UndefOr[String] = js.undefined
     
-    var subscriptionIdentifier: js.UndefOr[Double] = js.native
+    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
     
-    var topicAlias: js.UndefOr[String] = js.native
+    var topicAlias: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object CorrelationData {
     
@@ -256,14 +252,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs] = js.native
+    var protocol: js.UndefOr[wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs] = js.undefined
   }
   object Host {
     
@@ -290,16 +285,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Nl extends StObject {
     
-    var nl: js.UndefOr[Boolean] = js.native
+    var nl: js.UndefOr[Boolean] = js.undefined
     
-    var qos: QoS = js.native
+    var qos: QoS
     
-    var rap: js.UndefOr[Boolean] = js.native
+    var rap: js.UndefOr[Boolean] = js.undefined
     
-    var rh: js.UndefOr[Double] = js.native
+    var rh: js.UndefOr[Double] = js.undefined
   }
   object Nl {
     
@@ -335,33 +329,32 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
     /**
       * the message to publish
       */
-    var payload: Buffer | String = js.native
+    var payload: Buffer | String
     
     /*
       *  properies object of will
       * */
-    var properties: js.UndefOr[ContentType] = js.native
+    var properties: js.UndefOr[ContentType] = js.undefined
     
     /**
       * the QoS
       */
-    var qos: QoS = js.native
+    var qos: QoS
     
     /**
       * the retain flag
       */
-    var retain: Boolean = js.native
+    var retain: Boolean
     
     /**
       * the topic to publish
       */
-    var topic: String = js.native
+    var topic: String
   }
   object Payload {
     

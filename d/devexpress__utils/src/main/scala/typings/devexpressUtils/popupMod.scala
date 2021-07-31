@@ -3,7 +3,6 @@ package typings.devexpressUtils
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupMod {
@@ -14,8 +13,11 @@ object popupMod {
   /* static members */
   object PopupUtils {
     
-    @JSImport("@devexpress/utils/lib/utils/popup", "PopupUtils.preventContextMenu")
+    @JSImport("@devexpress/utils/lib/utils/popup", "PopupUtils")
     @js.native
-    def preventContextMenu(evt: MouseEvent): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def preventContextMenu(evt: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventContextMenu")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

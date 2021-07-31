@@ -8,7 +8,6 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxNativeMod {
@@ -54,12 +53,13 @@ object checkboxNativeMod {
     def handleClick(): Unit = js.native
   }
   
-  @js.native
-  trait ICheckboxNativeProps extends CheckboxPropsType {
+  trait ICheckboxNativeProps
+    extends StObject
+       with CheckboxPropsType {
     
-    var style: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var styles: js.UndefOr[ICheckboxStyle] = js.native
+    var styles: js.UndefOr[ICheckboxStyle] = js.undefined
   }
   object ICheckboxNativeProps {
     

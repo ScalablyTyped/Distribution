@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.EndDragNode event.
   */
-@js.native
-trait ASPxClientTreeListEndDragNodeEventArgs extends ASPxClientTreeListNodeEventArgs {
+trait ASPxClientTreeListEndDragNodeEventArgs
+  extends StObject
+     with ASPxClientTreeListNodeEventArgs {
   
   /**
     * Gets the target element.
     */
-  var targetElement: js.Any = js.native
+  var targetElement: js.Any
 }
 object ASPxClientTreeListEndDragNodeEventArgs {
   

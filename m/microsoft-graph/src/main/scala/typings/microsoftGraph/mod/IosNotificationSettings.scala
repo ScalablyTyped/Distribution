@@ -2,38 +2,36 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosNotificationSettings extends StObject {
   
   // Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
-  var alertType: js.UndefOr[IosNotificationAlertType] = js.native
+  var alertType: js.UndefOr[IosNotificationAlertType] = js.undefined
   
   // Application name to be associated with the bundleID.
-  var appName: js.UndefOr[NullableOption[String]] = js.native
+  var appName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether badges are allowed for this app.
-  var badgesEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var badgesEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Bundle id of app to which to apply these notification settings.
-  var bundleID: js.UndefOr[String] = js.native
+  var bundleID: js.UndefOr[String] = js.undefined
   
   // Indicates whether notifications are allowed for this app.
-  var enabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Publisher to be associated with the bundleID.
-  var publisher: js.UndefOr[NullableOption[String]] = js.native
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether notifications can be shown in notification center.
-  var showInNotificationCenter: js.UndefOr[NullableOption[Boolean]] = js.native
+  var showInNotificationCenter: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether notifications can be shown on the lock screen.
-  var showOnLockScreen: js.UndefOr[NullableOption[Boolean]] = js.native
+  var showOnLockScreen: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether sounds are allowed for this app.
-  var soundsEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var soundsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object IosNotificationSettings {
   

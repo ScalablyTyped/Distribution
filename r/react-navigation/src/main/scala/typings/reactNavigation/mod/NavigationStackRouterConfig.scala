@@ -2,19 +2,17 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationStackRouterConfig extends StObject {
   
-  var initialRouteKey: js.UndefOr[String] = js.native
+  var initialRouteKey: js.UndefOr[String] = js.undefined
   
-  var initialRouteName: js.UndefOr[String] = js.native
+  var initialRouteName: js.UndefOr[String] = js.undefined
   
-  var initialRouteParams: js.UndefOr[NavigationParams] = js.native
+  var initialRouteParams: js.UndefOr[NavigationParams] = js.undefined
   
-  var paths: js.UndefOr[NavigationPathsConfig] = js.native
+  var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
 }
 object NavigationStackRouterConfig {
   

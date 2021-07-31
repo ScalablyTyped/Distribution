@@ -2,23 +2,21 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolTip extends StObject {
   
   /*The delay (in milliseconds) before the tooltop is cleared after the mouse moves out of the maction element.*/
-  var delayClear: Double = js.native
+  var delayClear: Double
   
   /*The delay (in milliseconds) before the tooltip is posted after the mouse is moved over the maction element.*/
-  var delayPost: Double = js.native
+  var delayPost: Double
   
   /*The X offset from the mouse position (in pixels) where the tooltip will be placed.*/
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /*The Y offset from the mouse position (in pixels) where the tooltip will be placed.*/
-  var offsetY: Double = js.native
+  var offsetY: Double
 }
 object ToolTip {
   

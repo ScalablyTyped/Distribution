@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownBars extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexWord.Word.Interior = js.native
+  val Interior: typings.activexWord.Word.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
   @JSName("Word.DownBars_typekey")
-  var WordDotDownBars_typekey: DownBars = js.native
+  var WordDotDownBars_typekey: DownBars
 }
 object DownBars {
   

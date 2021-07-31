@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessPointPolicyResult extends StObject {
   
   /**
     * The access point policy associated with the specified access point.
     */
-  var Policy: js.UndefOr[typings.awsSdk.s3controlMod.Policy] = js.native
+  var Policy: js.UndefOr[typings.awsSdk.s3controlMod.Policy] = js.undefined
 }
 object GetAccessPointPolicyResult {
   

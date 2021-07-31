@@ -2,21 +2,19 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotInfo extends StObject {
   
-  var firmwareVersion: Version = js.native
+  var firmwareVersion: Version
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var hardwareVersion: Version = js.native
+  var hardwareVersion: Version
   
-  var manufacturerID: String = js.native
+  var manufacturerID: String
   
-  var slotDescription: String = js.native
+  var slotDescription: String
 }
 object SlotInfo {
   

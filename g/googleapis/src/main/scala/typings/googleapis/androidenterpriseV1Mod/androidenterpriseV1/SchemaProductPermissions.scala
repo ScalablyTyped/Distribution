@@ -2,32 +2,30 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the permissions required by a specific app and whether
   * they have been accepted by the enterprise.
   */
-@js.native
 trait SchemaProductPermissions extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#productPermissions&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The permissions required by the app.
     */
-  var permission: js.UndefOr[js.Array[SchemaProductPermission]] = js.native
+  var permission: js.UndefOr[js.Array[SchemaProductPermission]] = js.undefined
   
   /**
     * The ID of the app that the permissions relate to, e.g.
     * &quot;app:com.google.android.gm&quot;.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaProductPermissions {
   

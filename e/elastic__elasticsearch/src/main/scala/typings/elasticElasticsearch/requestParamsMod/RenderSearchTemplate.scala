@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderSearchTemplate[T] extends Generic {
+trait RenderSearchTemplate[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object RenderSearchTemplate {
   
@@ -21,7 +21,7 @@ object RenderSearchTemplate {
   }
   
   @scala.inline
-  implicit class RenderSearchTemplateMutableBuilder[Self <: RenderSearchTemplate[_], T] (val x: Self with RenderSearchTemplate[T]) extends AnyVal {
+  implicit class RenderSearchTemplateMutableBuilder[Self <: RenderSearchTemplate[?], T] (val x: Self & RenderSearchTemplate[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

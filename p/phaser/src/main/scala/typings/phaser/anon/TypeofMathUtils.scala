@@ -2,53 +2,51 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMathUtils extends StObject {
   
   /* static member */
-  var PI: Double = js.native
+  var PI: Double
   
   /* static member */
-  var PI2: Double = js.native
+  var PI2: Double
   
   /* static member */
-  def cbrt(x: Double): Double = js.native
+  def cbrt(x: Double): Double
   
   /* static member */
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
+  def clamp(value: Double, min: Double, max: Double): Double
   
   /* static member */
-  def cosDeg(degrees: Double): Double = js.native
+  def cosDeg(degrees: Double): Double
   
   /* static member */
-  var degRad: Double = js.native
+  var degRad: Double
   
   /* static member */
-  var degreesToRadians: Double = js.native
+  var degreesToRadians: Double
   
   /* static member */
-  var radDeg: Double = js.native
+  var radDeg: Double
   
   /* static member */
-  var radiansToDegrees: Double = js.native
+  var radiansToDegrees: Double
   
   /* static member */
-  def randomTriangular(min: Double, max: Double): Double = js.native
+  def randomTriangular(min: Double, max: Double): Double
   
   /* static member */
-  def randomTriangularWith(min: Double, max: Double, mode: Double): Double = js.native
+  def randomTriangularWith(min: Double, max: Double, mode: Double): Double
   
   /* static member */
-  def signum(value: Double): Double = js.native
+  def signum(value: Double): Double
   
   /* static member */
-  def sinDeg(degrees: Double): Double = js.native
+  def sinDeg(degrees: Double): Double
   
   /* static member */
-  def toInt(x: Double): Double = js.native
+  def toInt(x: Double): Double
 }
 object TypeofMathUtils {
   

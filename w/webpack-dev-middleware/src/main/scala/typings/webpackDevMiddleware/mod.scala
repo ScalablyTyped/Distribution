@@ -2,7 +2,6 @@ package typings.webpackDevMiddleware
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.connect.mod.NextHandleFunction
-import typings.memoryFs.mod.^
 import typings.webpackDevMiddleware.webpackDevMiddlewareBooleans.`false`
 import typings.webpackDevMiddleware.webpackDevMiddlewareStrings.debug
 import typings.webpackDevMiddleware.webpackDevMiddlewareStrings.error
@@ -12,103 +11,103 @@ import typings.webpackDevMiddleware.webpackDevMiddlewareStrings.trace
 import typings.webpackDevMiddleware.webpackDevMiddlewareStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-dev-middleware", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any
-  ): WebpackDevMiddleware with NextHandleFunction = js.native
-  @JSImport("webpack-dev-middleware", JSImport.Namespace)
-  @js.native
+  ): WebpackDevMiddleware & NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[WebpackDevMiddleware & NextHandleFunction]
+  @scala.inline
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any,
     options: Options
-  ): WebpackDevMiddleware with NextHandleFunction = js.native
+  ): WebpackDevMiddleware & NextHandleFunction = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebpackDevMiddleware & NextHandleFunction]
+  
+  @JSImport("webpack-dev-middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type Logger = typings.loglevel.mod.Logger
   
   type MimeTypeMap = StringDictionary[js.Array[String]]
   
-  @js.native
   trait Options extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Set the default file system which will be used by webpack as primary destination of generated files
       */
-    var fs: js.UndefOr[^] = js.native
+    var fs: js.UndefOr[typings.memoryFs.mod.^] = js.undefined
     
     /** This property allows a user to pass custom HTTP headers on each request. eg. { "X-Custom-Header": "yes" } */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The index path for web server, defaults to "index.html".
       * If falsy (but not undefined), the server will not respond to requests to the root URL.
       */
-    var index: js.UndefOr[String | Boolean] = js.native
+    var index: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * This option instructs the module to operate in 'lazy' mode,
       * meaning that it won't recompile when files change, but rather on each request.
       */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /** This property defines the level of messages that the module will log */
-    var logLevel: js.UndefOr[info | warn | error | trace | debug | silent] = js.native
+    var logLevel: js.UndefOr[info | warn | error | trace | debug | silent] = js.undefined
     
     /**
       * If true the log output of the module will be prefixed by a timestamp in the HH:mm:ss format.
       * @default false
       */
-    var logTime: js.UndefOr[Boolean] = js.native
+    var logTime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In the rare event that a user would like to provide a custom logging interface,
       * this property allows the user to assign one
       */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /**
       * This property allows a user to pass the list of HTTP request methods accepted by the server.
       * @default [ 'GET', 'HEAD' ]
       */
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * This property allows a user to register custom mime types or extension mappings
       * @default null
       */
-    var mimeTypes: js.UndefOr[MimeTypeMap | OverrideMimeTypeMap | Null] = js.native
+    var mimeTypes: js.UndefOr[MimeTypeMap | OverrideMimeTypeMap | Null] = js.undefined
     
     /** The public path that the middleware is bound to */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /** Allows users to provide a custom reporter to handle logging within the module */
-    var reporter: js.UndefOr[Reporter | Null] = js.native
+    var reporter: js.UndefOr[Reporter | Null] = js.undefined
     
     /** Instructs the module to enable or disable the server-side rendering mode */
-    var serverSideRender: js.UndefOr[Boolean] = js.native
+    var serverSideRender: js.UndefOr[Boolean] = js.undefined
     
     /** Options for formatting statistics displayed during and after compile */
     var stats: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** The module accepts an Object containing options for file watching, which is passed directly to the compiler provided */
     var watchOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.WatchOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, the option will instruct the module to write files to the configured location on disk as specified in your webpack config file
       * This option also accepts a Function value, which can be used to filter which files are written to disk
       */
-    var writeToDisk: js.UndefOr[Boolean | (js.Function1[/* filename */ String, Boolean])] = js.native
+    var writeToDisk: js.UndefOr[Boolean | (js.Function1[/* filename */ String, Boolean])] = js.undefined
   }
   object Options {
     
@@ -128,7 +127,7 @@ object mod {
       def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
       @scala.inline
-      def setFs(value: ^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
@@ -235,12 +234,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OverrideMimeTypeMap extends StObject {
     
-    var force: Boolean = js.native
+    var force: Boolean
     
-    var typeMap: MimeTypeMap = js.native
+    var typeMap: MimeTypeMap
   }
   object OverrideMimeTypeMap {
     
@@ -263,16 +261,15 @@ object mod {
   
   type Reporter = js.Function2[/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions, Unit]
   
-  @js.native
   trait ReporterOptions extends StObject {
     
-    var log: Logger = js.native
+    var log: Logger
     
-    var state: Boolean = js.native
+    var state: Boolean
     
     var stats: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ReporterOptions {
     
@@ -308,7 +305,7 @@ object mod {
     def close(): Unit = js.native
     def close(callback: js.Function0[Unit]): Unit = js.native
     
-    var fileSystem: ^ = js.native
+    var fileSystem: typings.memoryFs.mod.^ = js.native
     
     def getFilenameFromUrl(url: String): String | `false` = js.native
     

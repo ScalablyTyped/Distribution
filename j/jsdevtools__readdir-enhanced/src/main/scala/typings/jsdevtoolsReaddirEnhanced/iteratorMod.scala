@@ -6,18 +6,18 @@ import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats
 import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iteratorMod {
   
-  @JSImport("@jsdevtools/readdir-enhanced/lib/iterator", "readdirIterator")
+  @JSImport("@jsdevtools/readdir-enhanced/lib/iterator", JSImport.Namespace)
   @js.native
-  def readdirIterator(dir: String): AsyncIterableIterator[String] = js.native
-  @JSImport("@jsdevtools/readdir-enhanced/lib/iterator", "readdirIterator")
-  @js.native
-  def readdirIterator(dir: String, options: Optionsstatsfalseundefine): AsyncIterableIterator[String] = js.native
-  @JSImport("@jsdevtools/readdir-enhanced/lib/iterator", "readdirIterator")
-  @js.native
-  def readdirIterator(dir: String, options: Optionsstatstrue): AsyncIterableIterator[Stats] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def readdirIterator(dir: String): AsyncIterableIterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirIterator")(dir.asInstanceOf[js.Any]).asInstanceOf[AsyncIterableIterator[String]]
+  @scala.inline
+  def readdirIterator(dir: String, options: Optionsstatsfalseundefine): AsyncIterableIterator[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirIterator")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[String]]
+  @scala.inline
+  def readdirIterator(dir: String, options: Optionsstatstrue): AsyncIterableIterator[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirIterator")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[Stats]]
 }

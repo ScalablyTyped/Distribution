@@ -13,38 +13,29 @@ import typings.vegaLite.unitMod.UnitModel
 import typings.vegaLite.utilMod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionParseMod {
   
-  @JSImport("vega-lite/build/src/compile/selection/parse", "materializeSelections")
+  @JSImport("vega-lite/build/src/compile/selection/parse", JSImport.Namespace)
   @js.native
-  def materializeSelections(model: UnitModel, main: OutputNode): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseSelectionBinExtent")
-  @js.native
-  def parseSelectionBinExtent(selCmpt: SelectionComponent[SelectionType], extent: SelectionExtent): String = js.native
+  @scala.inline
+  def materializeSelections(model: UnitModel, main: OutputNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeSelections")(model.asInstanceOf[js.Any], main.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseSelectionPredicate")
-  @js.native
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String]): String = js.native
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseSelectionPredicate")
-  @js.native
-  def parseSelectionPredicate(
-    model: Model,
-    selections: LogicalComposition[String],
-    dfnode: js.UndefOr[scala.Nothing],
-    datum: String
-  ): String = js.native
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseSelectionPredicate")
-  @js.native
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode): String = js.native
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseSelectionPredicate")
-  @js.native
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode, datum: String): String = js.native
+  @scala.inline
+  def parseSelectionBinExtent(selCmpt: SelectionComponent[SelectionType], extent: SelectionExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionBinExtent")(selCmpt.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/selection/parse", "parseUnitSelection")
-  @js.native
-  def parseUnitSelection(model: UnitModel, selDefs: Dict[SelectionDef]): Record[String, SelectionComponent[_]] = js.native
+  @scala.inline
+  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: Unit, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def parseUnitSelection(model: UnitModel, selDefs: Dict[SelectionDef]): Record[String, SelectionComponent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitSelection")(model.asInstanceOf[js.Any], selDefs.asInstanceOf[js.Any])).asInstanceOf[Record[String, SelectionComponent[js.Any]]]
 }

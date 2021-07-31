@@ -2,251 +2,249 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * The AMI launch index, which can be used to find this instance in the launch group.
     */
-  var AmiLaunchIndex: js.UndefOr[Integer] = js.native
+  var AmiLaunchIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The architecture of the image.
     */
-  var Architecture: js.UndefOr[ArchitectureValues] = js.native
+  var Architecture: js.UndefOr[ArchitectureValues] = js.undefined
   
   /**
     * Any block device mapping entries for the instance.
     */
-  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
   
   /**
     * The ID of the Capacity Reservation.
     */
-  var CapacityReservationId: js.UndefOr[String] = js.native
+  var CapacityReservationId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the Capacity Reservation targeting option.
     */
-  var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecificationResponse] = js.native
+  var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecificationResponse] = js.undefined
   
   /**
     * The idempotency token you provided when you launched the instance, if applicable.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The CPU options for the instance.
     */
-  var CpuOptions: js.UndefOr[typings.awsSdk.ec2Mod.CpuOptions] = js.native
+  var CpuOptions: js.UndefOr[typings.awsSdk.ec2Mod.CpuOptions] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance.
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Elastic GPU associated with the instance.
     */
-  var ElasticGpuAssociations: js.UndefOr[ElasticGpuAssociationList] = js.native
+  var ElasticGpuAssociations: js.UndefOr[ElasticGpuAssociationList] = js.undefined
   
   /**
     *  The elastic inference accelerator associated with the instance.
     */
-  var ElasticInferenceAcceleratorAssociations: js.UndefOr[ElasticInferenceAcceleratorAssociationList] = js.native
+  var ElasticInferenceAcceleratorAssociations: js.UndefOr[ElasticInferenceAcceleratorAssociationList] = js.undefined
   
   /**
     * Specifies whether enhanced networking with ENA is enabled.
     */
-  var EnaSupport: js.UndefOr[Boolean] = js.native
+  var EnaSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the instance is enabled for AWS Nitro Enclaves.
     */
-  var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.native
+  var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.undefined
   
   /**
     * Indicates whether the instance is enabled for hibernation.
     */
-  var HibernationOptions: js.UndefOr[typings.awsSdk.ec2Mod.HibernationOptions] = js.native
+  var HibernationOptions: js.UndefOr[typings.awsSdk.ec2Mod.HibernationOptions] = js.undefined
   
   /**
     * The hypervisor type of the instance. The value xen is used for both Xen and Nitro hypervisors.
     */
-  var Hypervisor: js.UndefOr[HypervisorType] = js.native
+  var Hypervisor: js.UndefOr[HypervisorType] = js.undefined
   
   /**
     * The IAM instance profile associated with the instance, if applicable.
     */
-  var IamInstanceProfile: js.UndefOr[typings.awsSdk.ec2Mod.IamInstanceProfile] = js.native
+  var IamInstanceProfile: js.UndefOr[typings.awsSdk.ec2Mod.IamInstanceProfile] = js.undefined
   
   /**
     * The ID of the AMI used to launch the instance.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether this is a Spot Instance or a Scheduled Instance.
     */
-  var InstanceLifecycle: js.UndefOr[InstanceLifecycleType] = js.native
+  var InstanceLifecycle: js.UndefOr[InstanceLifecycleType] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The kernel associated with this instance, if applicable.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the key pair, if this instance was launched with an associated key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The time the instance was launched.
     */
-  var LaunchTime: js.UndefOr[DateTime] = js.native
+  var LaunchTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The license configurations.
     */
-  var Licenses: js.UndefOr[LicenseList] = js.native
+  var Licenses: js.UndefOr[LicenseList] = js.undefined
   
   /**
     * The metadata options for the instance.
     */
-  var MetadataOptions: js.UndefOr[InstanceMetadataOptionsResponse] = js.native
+  var MetadataOptions: js.UndefOr[InstanceMetadataOptionsResponse] = js.undefined
   
   /**
     * The monitoring for the instance.
     */
-  var Monitoring: js.UndefOr[typings.awsSdk.ec2Mod.Monitoring] = js.native
+  var Monitoring: js.UndefOr[typings.awsSdk.ec2Mod.Monitoring] = js.undefined
   
   /**
     * [EC2-VPC] The network interfaces for the instance.
     */
-  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceList] = js.native
+  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The location where the instance launched, if applicable.
     */
-  var Placement: js.UndefOr[typings.awsSdk.ec2Mod.Placement] = js.native
+  var Placement: js.UndefOr[typings.awsSdk.ec2Mod.Placement] = js.undefined
   
   /**
     * The value is Windows for Windows instances; otherwise blank.
     */
-  var Platform: js.UndefOr[PlatformValues] = js.native
+  var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
     * (IPv4 only) The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state.  [EC2-VPC] The Amazon-provided DNS server resolves Amazon-provided private DNS hostnames if you've enabled DNS resolution and DNS hostnames in your VPC. If you are not using the Amazon-provided DNS server in your VPC, your custom domain name servers must resolve the hostname as appropriate.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The private IPv4 address assigned to the instance.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The product codes attached to this instance, if applicable.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * (IPv4 only) The public DNS name assigned to the instance. This name is not available until the instance enters the running state. For EC2-VPC, this name is only available if you've enabled DNS hostnames for your VPC.
     */
-  var PublicDnsName: js.UndefOr[String] = js.native
+  var PublicDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The public IPv4 address, or the Carrier IP address assigned to the instance, if applicable. A Carrier IP address only applies to an instance launched in a subnet associated with a Wavelength Zone.
     */
-  var PublicIpAddress: js.UndefOr[String] = js.native
+  var PublicIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The RAM disk associated with this instance, if applicable.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
     * The device name of the root device volume (for example, /dev/sda1).
     */
-  var RootDeviceName: js.UndefOr[String] = js.native
+  var RootDeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The root device type used by the AMI. The AMI can use an EBS volume or an instance store volume.
     */
-  var RootDeviceType: js.UndefOr[DeviceType] = js.native
+  var RootDeviceType: js.UndefOr[DeviceType] = js.undefined
   
   /**
     * The security groups for the instance.
     */
-  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.native
+  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * Specifies whether to enable an instance launched in a VPC to perform NAT. This controls whether source/destination checking is enabled on the instance. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform NAT. For more information, see NAT Instances in the Amazon Virtual Private Cloud User Guide.
     */
-  var SourceDestCheck: js.UndefOr[Boolean] = js.native
+  var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the request is a Spot Instance request, the ID of the request.
     */
-  var SpotInstanceRequestId: js.UndefOr[String] = js.native
+  var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
     */
-  var SriovNetSupport: js.UndefOr[String] = js.native
+  var SriovNetSupport: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the instance.
     */
-  var State: js.UndefOr[InstanceState] = js.native
+  var State: js.UndefOr[InstanceState] = js.undefined
   
   /**
     * The reason for the most recent state transition.
     */
-  var StateReason: js.UndefOr[typings.awsSdk.ec2Mod.StateReason] = js.native
+  var StateReason: js.UndefOr[typings.awsSdk.ec2Mod.StateReason] = js.undefined
   
   /**
     * The reason for the most recent state transition. This might be an empty string.
     */
-  var StateTransitionReason: js.UndefOr[String] = js.native
+  var StateTransitionReason: js.UndefOr[String] = js.undefined
   
   /**
     * [EC2-VPC] The ID of the subnet in which the instance is running.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the instance.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The virtualization type of the instance.
     */
-  var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.native
+  var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.undefined
   
   /**
     * [EC2-VPC] The ID of the VPC in which the instance is running.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object Instance {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logServiceMod {
@@ -38,6 +37,10 @@ object logServiceMod {
   /* static members */
   object LogService {
     
+    @JSImport("@pulumi/aws/directoryservice/logService", "LogService")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogService resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object logServiceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directoryservice/logService", "LogService.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogService = js.native
-    @JSImport("@pulumi/aws/directoryservice/logService", "LogService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogService = js.native
-    @JSImport("@pulumi/aws/directoryservice/logService", "LogService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogServiceState): LogService = js.native
-    @JSImport("@pulumi/aws/directoryservice/logService", "LogService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogServiceState, opts: CustomResourceOptions): LogService = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogServiceState): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogServiceState, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
     
     /**
       * Returns true if the given object is an instance of LogService.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directoryservice/logService", "LogService.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean]
   }
   
-  @js.native
   trait LogServiceArgs extends StObject {
     
     /**
       * The id of directory.
       */
-    val directoryId: Input[String] = js.native
+    val directoryId: Input[String]
     
     /**
       * Name of the cloudwatch log group to which the logs should be published. The log group should be already created and the directory service principal should be provided with required permission to create stream and publish logs. Changing this value would delete the current subscription and create a new one. A directory can only have one log subscription at a time.
       */
-    val logGroupName: Input[String] = js.native
+    val logGroupName: Input[String]
   }
   object LogServiceArgs {
     
@@ -101,18 +98,17 @@ object logServiceMod {
     }
   }
   
-  @js.native
   trait LogServiceState extends StObject {
     
     /**
       * The id of directory.
       */
-    val directoryId: js.UndefOr[Input[String]] = js.native
+    val directoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the cloudwatch log group to which the logs should be published. The log group should be already created and the directory service principal should be provided with required permission to create stream and publish logs. Changing this value would delete the current subscription and create a new one. A directory can only have one log subscription at a time.
       */
-    val logGroupName: js.UndefOr[Input[String]] = js.native
+    val logGroupName: js.UndefOr[Input[String]] = js.undefined
   }
   object LogServiceState {
     

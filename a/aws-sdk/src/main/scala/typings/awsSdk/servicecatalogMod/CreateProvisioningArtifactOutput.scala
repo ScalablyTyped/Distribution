@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProvisioningArtifactOutput extends StObject {
   
   /**
     * The URL of the CloudFormation template in Amazon S3, in JSON format.
     */
-  var Info: js.UndefOr[ProvisioningArtifactInfo] = js.native
+  var Info: js.UndefOr[ProvisioningArtifactInfo] = js.undefined
   
   /**
     * Information about the provisioning artifact.
     */
-  var ProvisioningArtifactDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactDetail] = js.native
+  var ProvisioningArtifactDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactDetail] = js.undefined
   
   /**
     * The status of the current request.
     */
-  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.servicecatalogMod.Status] = js.undefined
 }
 object CreateProvisioningArtifactOutput {
   

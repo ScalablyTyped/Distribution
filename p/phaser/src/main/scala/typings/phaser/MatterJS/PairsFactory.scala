@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PairsFactory extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait PairsFactory extends StObject {
     * @param {pairs} pairs
     * @return {pairs} pairs
     */
-  def clear(pairs: js.Any): js.Any = js.native
+  def clear(pairs: js.Any): js.Any
 }
 object PairsFactory {
   

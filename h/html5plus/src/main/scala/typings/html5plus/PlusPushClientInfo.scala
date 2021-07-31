@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
   */
-@js.native
 trait PlusPushClientInfo extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusPushClientInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
   /**
     * 第三方推送服务器的应用键值
@@ -27,7 +25,7 @@ trait PlusPushClientInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var appkey: js.UndefOr[String] = js.native
+  var appkey: js.UndefOr[String] = js.undefined
   
   /**
     * 推送服务令牌（设备唯一标识），用于标识推送信息接收者身份
@@ -36,14 +34,14 @@ trait PlusPushClientInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var clientid: js.UndefOr[String] = js.native
+  var clientid: js.UndefOr[String] = js.undefined
   
   /**
     * 设备令牌（iOS设备唯一标识），用于APNS服务推送中标识设备的身份
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object PlusPushClientInfo {
   

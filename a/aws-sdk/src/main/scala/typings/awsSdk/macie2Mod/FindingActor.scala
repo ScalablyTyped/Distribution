@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingActor extends StObject {
   
   /**
     * The domain name of the device that the entity used to perform the action on the affected resource.
     */
-  var domainDetails: js.UndefOr[DomainDetails] = js.native
+  var domainDetails: js.UndefOr[DomainDetails] = js.undefined
   
   /**
     * The IP address of the device that the entity used to perform the action on the affected resource. This object also provides information such as the owner and geographic location for the IP address.
     */
-  var ipAddressDetails: js.UndefOr[IpAddressDetails] = js.native
+  var ipAddressDetails: js.UndefOr[IpAddressDetails] = js.undefined
   
   /**
     * The type and other characteristics of the entity that performed the action on the affected resource.
     */
-  var userIdentity: js.UndefOr[UserIdentity] = js.native
+  var userIdentity: js.UndefOr[UserIdentity] = js.undefined
 }
 object FindingActor {
   

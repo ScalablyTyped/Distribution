@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFlowSourcesResponse extends StObject {
   
   /**
     * The ARN of the flow that these sources were added to.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * The details of the newly added sources.
     */
-  var Sources: js.UndefOr[listOfSource] = js.native
+  var Sources: js.UndefOr[listOfSource] = js.undefined
 }
 object AddFlowSourcesResponse {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportAssetToSignedUrlRequestDetails extends StObject {
   
   /**
     * The unique identifier for the asset that is exported to a signed URL.
     */
-  var AssetId: Id = js.native
+  var AssetId: Id
   
   /**
     * The unique identifier for the data set associated with this export job.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * The unique identifier for the revision associated with this export request.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
 }
 object ExportAssetToSignedUrlRequestDetails {
   

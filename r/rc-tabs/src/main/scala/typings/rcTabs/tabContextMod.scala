@@ -5,7 +5,6 @@ import typings.rcTabs.interfaceMod.Tab
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabContextMod extends Shortcut {
@@ -14,12 +13,11 @@ object tabContextMod extends Shortcut {
   @js.native
   val default: Context[TabContextProps] = js.native
   
-  @js.native
   trait TabContextProps extends StObject {
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var tabs: js.Array[Tab] = js.native
+    var tabs: js.Array[Tab]
   }
   object TabContextProps {
     

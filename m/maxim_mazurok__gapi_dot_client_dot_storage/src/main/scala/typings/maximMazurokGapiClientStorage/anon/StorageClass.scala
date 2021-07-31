@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageClass extends StObject {
   
   /** Target storage class. Required iff the type of the action is SetStorageClass. */
-  var storageClass: js.UndefOr[String] = js.native
+  var storageClass: js.UndefOr[String] = js.undefined
   
   /** Type of the action. Currently, only Delete and SetStorageClass are supported. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object StorageClass {
   

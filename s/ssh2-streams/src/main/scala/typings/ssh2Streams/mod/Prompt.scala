@@ -2,15 +2,13 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prompt extends StObject {
   
-  var echo: js.UndefOr[Boolean] = js.native
+  var echo: js.UndefOr[Boolean] = js.undefined
   
-  var prompt: String = js.native
+  var prompt: String
 }
 object Prompt {
   

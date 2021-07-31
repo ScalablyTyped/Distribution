@@ -2,31 +2,29 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDeployPhase extends StObject {
   
-  var deploymentJobs: js.Array[DeploymentJob] = js.native
+  var deploymentJobs: js.Array[DeploymentJob]
   
-  var errorLog: String = js.native
+  var errorLog: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var manualInterventions: js.Array[ManualIntervention] = js.native
+  var manualInterventions: js.Array[ManualIntervention]
   
-  var name: String = js.native
+  var name: String
   
-  var phaseId: String = js.native
+  var phaseId: String
   
-  var phaseType: DeployPhaseTypes = js.native
+  var phaseType: DeployPhaseTypes
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var runPlanId: String = js.native
+  var runPlanId: String
   
-  var status: DeployPhaseStatus = js.native
+  var status: DeployPhaseStatus
 }
 object ReleaseDeployPhase {
   

@@ -4,10 +4,8 @@ import typings.cytoscape.cytoscapeStrings.auto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CytoscapeOptions extends StObject {
   
   /**
@@ -15,28 +13,28 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var autolock: js.UndefOr[Boolean] = js.native
+  var autolock: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether nodes should be ungrabified (not grabbable by user) by default (if true, overrides individual node state).
     *
     * The default value is false.
     */
-  var autoungrabify: js.UndefOr[Boolean] = js.native
+  var autoungrabify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether nodes should be unselectified (immutable selection state) by default (if true, overrides individual element state).
     *
     * The default value is false.
     */
-  var autounselectify: js.UndefOr[Boolean] = js.native
+  var autounselectify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether box selection (i.e. drag a box overlay around, and release it to select) is enabled. If enabled, the user must taphold to pan the graph.
     *
     * The default value is false.
     */
-  var boxSelectionEnabled: js.UndefOr[Boolean] = js.native
+  var boxSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   ///////////////////////////////////////
   // very commonly used options:
@@ -46,7 +44,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default is undefined.
     */
-  var container: js.UndefOr[HTMLElement | Null] = js.native
+  var container: js.UndefOr[HTMLElement | Null] = js.undefined
   
   /**
     * A nonnegative integer that indicates the maximum allowable distance that a user may move during a tap gesture,
@@ -59,14 +57,14 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 4.
     */
-  var desktopTapThreshold: js.UndefOr[Double] = js.native
+  var desktopTapThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of [[Elements]] specified as plain objects. For convenience, this option can alternatively be specified as a promise that resolves to the elements JSON.
     */
   var elements: js.UndefOr[
     ElementsDefinition | js.Array[ElementDefinition] | (js.Promise[js.Array[ElementDefinition] | ElementsDefinition])
-  ] = js.native
+  ] = js.undefined
   
   ///////////////////////////////////////
   // rendering options:
@@ -77,7 +75,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var headless: js.UndefOr[Boolean] = js.native
+  var headless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true, the renderer does not render edges while the viewport is being manipulated.
@@ -85,7 +83,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var hideEdgesOnViewport: js.UndefOr[Boolean] = js.native
+  var hideEdgesOnViewport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when set to true, the renderer does not render labels while the viewport is being manipulated.
@@ -93,7 +91,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var hideLabelsOnViewport: js.UndefOr[Boolean] = js.native
+  var hideLabelsOnViewport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A plain object that specifies layout options.
@@ -104,14 +102,14 @@ trait CytoscapeOptions extends StObject {
     * leaving your nodes in their current positions
     * (e.g. specified in options.elements at initialisation time)
     */
-  var layout: js.UndefOr[LayoutOptions] = js.native
+  var layout: js.UndefOr[LayoutOptions] = js.undefined
   
   /**
     * A maximum bound on the zoom level of the graph. The viewport can not be scaled larger than this zoom level.
     *
     * The default value is 1e50.
     */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   ///////////////////////////////////////
   // interaction options?:
@@ -120,7 +118,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 1e-50.
     */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * When set to true, the renderer will use a motion blur effect to make the transition between frames seem smoother.
@@ -128,7 +126,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var motionBlur: js.UndefOr[Boolean] = js.native
+  var motionBlur: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When motionBlur: true, this value controls the opacity of motion blur frames.
@@ -136,20 +134,20 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 0.2.
     */
-  var motionBlurOpacity: js.UndefOr[Double] = js.native
+  var motionBlurOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The initial panning position of the graph. Make sure to disable viewport manipulation options, such as fit,
     * in your layout so that it is not overridden when the layout is applied.
     */
-  var pan: js.UndefOr[Position] = js.native
+  var pan: js.UndefOr[Position] = js.undefined
   
   /**
     * Whether panning the graph is enabled, both by user events and programmatically.
     *
     * The default value is true.
     */
-  var panningEnabled: js.UndefOr[Boolean] = js.native
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overrides the screen pixel ratio with a manually set value (1.0 or 0.666 recommended, if set).
@@ -158,7 +156,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 1.
     */
-  var pixelRatio: js.UndefOr[Double | auto] = js.native
+  var pixelRatio: js.UndefOr[Double | auto] = js.undefined
   
   /**
     * A string indicating the selection behaviour from user input.
@@ -168,12 +166,12 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is (isTouchDevice ? 'additive' : 'single').
     */
-  var selectionType: js.UndefOr[SelectionType] = js.native
+  var selectionType: js.UndefOr[SelectionType] = js.undefined
   
   /**
     * The [[Stylesheet]] used to style the graph. For convenience, this option can alternatively be specified as a promise that resolves to the stylesheet.
     */
-  var style: js.UndefOr[js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]]] = js.native
+  var style: js.UndefOr[js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]]] = js.undefined
   
   /**
     * A boolean that indicates whether styling should be used.
@@ -184,7 +182,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is true.
     */
-  var styleEnabled: js.UndefOr[Boolean] = js.native
+  var styleEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true, the renderer uses a texture (if supported) during panning and zooming instead of drawing the elements,
@@ -192,7 +190,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is false.
     */
-  var textureOnViewport: js.UndefOr[Boolean] = js.native
+  var textureOnViewport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A nonnegative integer that indicates the maximum allowable distance that a user may move during a tap gesture,
@@ -204,21 +202,21 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is is 8.
     */
-  var touchTapThreshold: js.UndefOr[Double] = js.native
+  var touchTapThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether user events (e.g. dragging the graph background) are allowed to pan the graph. Programmatic changes to pan are unaffected by this option.
     *
     * The default value is true.
     */
-  var userPanningEnabled: js.UndefOr[Boolean] = js.native
+  var userPanningEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether user events (e.g. mouse wheel, pinch-to-zoom) are allowed to zoom the graph. Programmatic changes to zoom are unaffected by this option.
     *
     * The default value is true.
     */
-  var userZoomingEnabled: js.UndefOr[Boolean] = js.native
+  var userZoomingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Changes the scroll wheel sensitivity when zooming. This is a multiplicative modifier.
@@ -226,7 +224,7 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 1.
     */
-  var wheelSensitivity: js.UndefOr[Double] = js.native
+  var wheelSensitivity: js.UndefOr[Double] = js.undefined
   
   ///////////////////////////////////////
   // initial viewport state:
@@ -237,14 +235,14 @@ trait CytoscapeOptions extends StObject {
     *
     * The default value is 1.
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether zooming the graph is enabled, both by user events and programmatically.
     *
     * The default value is true.
     */
-  var zoomingEnabled: js.UndefOr[Boolean] = js.native
+  var zoomingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object CytoscapeOptions {
   

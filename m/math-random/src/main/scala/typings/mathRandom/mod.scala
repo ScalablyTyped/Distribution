@@ -3,14 +3,12 @@ package typings.mathRandom
 import typings.mathRandom.mathRandomBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("math-random", JSImport.Namespace)
-  @js.native
-  def apply(): Double = js.native
+  @scala.inline
+  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
   
   @JSImport("math-random", JSImport.Namespace)
   @js.native

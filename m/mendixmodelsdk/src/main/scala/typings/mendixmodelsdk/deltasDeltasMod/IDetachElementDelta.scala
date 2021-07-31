@@ -3,21 +3,20 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.DETACH_ELEMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDetachElementDelta
-  extends IElementDelta
+  extends StObject
+     with IElementDelta
      with Delta {
   
-  var deltaType: DETACH_ELEMENT = js.native
+  var deltaType: DETACH_ELEMENT
 }
 object IDetachElementDelta {
   
   @scala.inline
-  def apply(deltaType: DETACH_ELEMENT, elementId: String, unitId: String): IDetachElementDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def apply(elementId: String, unitId: String): IDetachElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "DETACH_ELEMENT", elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetachElementDelta]
   }
   

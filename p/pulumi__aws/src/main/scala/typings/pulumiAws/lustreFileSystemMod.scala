@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lustreFileSystemMod {
@@ -144,6 +143,10 @@ object lustreFileSystemMod {
   /* static members */
   object LustreFileSystem {
     
+    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LustreFileSystem resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -153,115 +156,109 @@ object lustreFileSystemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LustreFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LustreFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LustreFileSystemState): LustreFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): LustreFileSystem = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LustreFileSystemState): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
     
     /**
       * Returns true if the given object is an instance of LustreFileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/fsx/lustreFileSystem", "LustreFileSystem.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean]
   }
   
-  @js.native
   trait LustreFileSystemArgs extends StObject {
     
     /**
       * How Amazon FSx keeps your file and directory listings up to date as you add or modify objects in your linked S3 bucket. see [Auto Import Data Repo](https://docs.aws.amazon.com/fsx/latest/LustreGuide/autoimport-data-repo.html) for more details.
       */
-    val autoImportPolicy: js.UndefOr[Input[String]] = js.native
+    val autoImportPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days. only valid for `PERSISTENT_1` deployment_type.
       */
-    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.native
+    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A boolean flag indicating whether tags for the file system should be copied to backups. Applicable for `PERSISTENT_1` deployment_type. The default value is false.
       */
-    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. only valid for `PERSISTENT_1` deployment_type. Requires `automaticBackupRetentionDays` to be set.
       */
-    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.native
+    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - The filesystem deployment type. One of: `SCRATCH_1`, `SCRATCH_2`, `PERSISTENT_1`.
       */
-    val deploymentType: js.UndefOr[Input[String]] = js.native
+    val deploymentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - The type of drive cache used by `PERSISTENT_1` filesystems that are provisioned with `HDD` storage_type. Required for `HDD` storage_type, set to either `READ` or `NONE`.
       */
-    val driveCacheType: js.UndefOr[Input[String]] = js.native
+    val driveCacheType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 URI (with optional prefix) where the root of your Amazon FSx file system is exported. Can only be specified with `importPath` argument and the path must use the same Amazon S3 bucket as specified in `importPath`. Set equal to `importPath` to overwrite files on export. Defaults to `s3://{IMPORT BUCKET}/FSxLustre{CREATION TIMESTAMP}`.
       */
-    val exportPath: js.UndefOr[Input[String]] = js.native
+    val exportPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 URI (with optional prefix) that you're using as the data repository for your FSx for Lustre file system. For example, `s3://example-bucket/optional-prefix/`.
       */
-    val importPath: js.UndefOr[Input[String]] = js.native
+    val importPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * For files imported from a data repository, this value determines the stripe count and maximum amount of data per file (in MiB) stored on a single physical disk. Can only be specified with `importPath` argument. Defaults to `1024`. Minimum of `1` and maximum of `512000`.
       */
-    val importedFileChunkSize: js.UndefOr[Input[Double]] = js.native
+    val importedFileChunkSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ARN for the KMS Key to encrypt the file system at rest, applicable for `PERSISTENT_1` deployment_type. Defaults to an AWS managed KMS Key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - Describes the amount of read and write throughput for each 1 tebibyte of storage, in MB/s/TiB, required for the `PERSISTENT_1` deployment_type. Valid values for `SSD` storageType are 50, 100, 200. Valid values for `HDD` storageType are 12, 40.
       */
-    val perUnitStorageThroughput: js.UndefOr[Input[Double]] = js.native
+    val perUnitStorageThroughput: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The storage capacity (GiB) of the file system. Minimum of `1200`. Storage capacity is provisioned in increments of 3,600 GiB.
       */
-    val storageCapacity: Input[Double] = js.native
+    val storageCapacity: Input[Double]
     
     /**
       * - The filesystem storage type. Either `SSD` or `HDD`, defaults to `SSD`. `HDD` is only supported on `PERSISTENT_1` deployment types.
       */
-    val storageType: js.UndefOr[Input[String]] = js.native
+    val storageType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the subnets that the file system will be accessible from. File systems currently support only one subnet. The file server is also launched in that subnet's Availability Zone.
       */
-    val subnetIds: Input[String] = js.native
+    val subnetIds: Input[String]
     
     /**
       * A map of tags to assign to the file system.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
       */
-    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.native
+    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.undefined
   }
   object LustreFileSystemArgs {
     
@@ -375,123 +372,122 @@ object lustreFileSystemMod {
     }
   }
   
-  @js.native
   trait LustreFileSystemState extends StObject {
     
     /**
       * Amazon Resource Name of the file system.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How Amazon FSx keeps your file and directory listings up to date as you add or modify objects in your linked S3 bucket. see [Auto Import Data Repo](https://docs.aws.amazon.com/fsx/latest/LustreGuide/autoimport-data-repo.html) for more details.
       */
-    val autoImportPolicy: js.UndefOr[Input[String]] = js.native
+    val autoImportPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days. only valid for `PERSISTENT_1` deployment_type.
       */
-    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.native
+    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A boolean flag indicating whether tags for the file system should be copied to backups. Applicable for `PERSISTENT_1` deployment_type. The default value is false.
       */
-    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. only valid for `PERSISTENT_1` deployment_type. Requires `automaticBackupRetentionDays` to be set.
       */
-    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.native
+    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - The filesystem deployment type. One of: `SCRATCH_1`, `SCRATCH_2`, `PERSISTENT_1`.
       */
-    val deploymentType: js.UndefOr[Input[String]] = js.native
+    val deploymentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DNS name for the file system, e.g. `fs-12345678.fsx.us-west-2.amazonaws.com`
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - The type of drive cache used by `PERSISTENT_1` filesystems that are provisioned with `HDD` storage_type. Required for `HDD` storage_type, set to either `READ` or `NONE`.
       */
-    val driveCacheType: js.UndefOr[Input[String]] = js.native
+    val driveCacheType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 URI (with optional prefix) where the root of your Amazon FSx file system is exported. Can only be specified with `importPath` argument and the path must use the same Amazon S3 bucket as specified in `importPath`. Set equal to `importPath` to overwrite files on export. Defaults to `s3://{IMPORT BUCKET}/FSxLustre{CREATION TIMESTAMP}`.
       */
-    val exportPath: js.UndefOr[Input[String]] = js.native
+    val exportPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 URI (with optional prefix) that you're using as the data repository for your FSx for Lustre file system. For example, `s3://example-bucket/optional-prefix/`.
       */
-    val importPath: js.UndefOr[Input[String]] = js.native
+    val importPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * For files imported from a data repository, this value determines the stripe count and maximum amount of data per file (in MiB) stored on a single physical disk. Can only be specified with `importPath` argument. Defaults to `1024`. Minimum of `1` and maximum of `512000`.
       */
-    val importedFileChunkSize: js.UndefOr[Input[Double]] = js.native
+    val importedFileChunkSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ARN for the KMS Key to encrypt the file system at rest, applicable for `PERSISTENT_1` deployment_type. Defaults to an AWS managed KMS Key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value to be used when mounting the filesystem.
       */
-    val mountName: js.UndefOr[Input[String]] = js.native
+    val mountName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of Elastic Network Interface identifiers from which the file system is accessible. As explained in the [documentation](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-on-premises.html), the first network interface returned is the primary network interface.
       */
-    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * AWS account identifier that created the file system.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - Describes the amount of read and write throughput for each 1 tebibyte of storage, in MB/s/TiB, required for the `PERSISTENT_1` deployment_type. Valid values for `SSD` storageType are 50, 100, 200. Valid values for `HDD` storageType are 12, 40.
       */
-    val perUnitStorageThroughput: js.UndefOr[Input[Double]] = js.native
+    val perUnitStorageThroughput: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The storage capacity (GiB) of the file system. Minimum of `1200`. Storage capacity is provisioned in increments of 3,600 GiB.
       */
-    val storageCapacity: js.UndefOr[Input[Double]] = js.native
+    val storageCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * - The filesystem storage type. Either `SSD` or `HDD`, defaults to `SSD`. `HDD` is only supported on `PERSISTENT_1` deployment types.
       */
-    val storageType: js.UndefOr[Input[String]] = js.native
+    val storageType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the subnets that the file system will be accessible from. File systems currently support only one subnet. The file server is also launched in that subnet's Availability Zone.
       */
-    val subnetIds: js.UndefOr[Input[String]] = js.native
+    val subnetIds: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the file system.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Identifier of the Virtual Private Cloud for the file system.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
       */
-    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.native
+    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.undefined
   }
   object LustreFileSystemState {
     

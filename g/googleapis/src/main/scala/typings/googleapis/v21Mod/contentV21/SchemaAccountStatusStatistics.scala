@@ -2,31 +2,29 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusStatistics extends StObject {
   
   /**
     * Number of active offers.
     */
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
   /**
     * Number of disapproved offers.
     */
-  var disapproved: js.UndefOr[String] = js.native
+  var disapproved: js.UndefOr[String] = js.undefined
   
   /**
     * Number of expiring offers.
     */
-  var expiring: js.UndefOr[String] = js.native
+  var expiring: js.UndefOr[String] = js.undefined
   
   /**
     * Number of pending offers.
     */
-  var pending: js.UndefOr[String] = js.native
+  var pending: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountStatusStatistics {
   

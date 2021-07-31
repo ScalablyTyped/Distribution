@@ -2,25 +2,23 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
-  var architecture: String = js.native
+  var architecture: String
   
-  var availablePhysicalMemory: Double = js.native
+  var availablePhysicalMemory: Double
   
-  var cpu: js.UndefOr[String] = js.native
+  var cpu: js.UndefOr[String] = js.undefined
   
-  var osVersion: String = js.native
+  var osVersion: String
   
-  var processorCount: js.UndefOr[Double] = js.native
+  var processorCount: js.UndefOr[Double] = js.undefined
   
-  var totalPhysicalMemory: Double = js.native
+  var totalPhysicalMemory: Double
   
-  var utcOffset: Double = js.native
+  var utcOffset: Double
 }
 object Environment {
   

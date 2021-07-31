@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.anon.Disabled
 import typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ButtonGridCell")

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.MaskedTextBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMaskedTextBox extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): MaskedTextBox = js.native
+  def extend(proto: js.Object): MaskedTextBox
   
   /* static member */
-  var fn: MaskedTextBox = js.native
+  var fn: MaskedTextBox
 }
 object TypeofMaskedTextBox {
   

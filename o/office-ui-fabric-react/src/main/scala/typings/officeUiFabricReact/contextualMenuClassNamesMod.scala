@@ -7,13 +7,15 @@ import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuSubComp
 import typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuClassNamesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.classNames", "getItemClassNames")
+  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.classNames", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getItemClassNames(
     theme: ITheme,
     disabled: Boolean,
@@ -27,30 +29,27 @@ object contextualMenuClassNamesMod {
     subMenuClassName: js.UndefOr[String],
     primaryDisabled: js.UndefOr[Boolean],
     className: js.UndefOr[String]
-  ): IContextualMenuItemStyles = js.native
+  ): IContextualMenuItemStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemClassNames")(theme.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], isAnchorLink.asInstanceOf[js.Any], knownIcon.asInstanceOf[js.Any], itemClassName.asInstanceOf[js.Any], dividerClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], subMenuClassName.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[IContextualMenuItemStyles]
   
-  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.classNames", "getItemStyles")
-  @js.native
-  def getItemStyles(props: IContextualMenuItemStyleProps): IContextualMenuItemStyles = js.native
+  @scala.inline
+  def getItemStyles(props: IContextualMenuItemStyleProps): IContextualMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IContextualMenuItemStyles]
   
-  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.classNames", "getSplitButtonVerticalDividerClassNames")
-  @js.native
-  def getSplitButtonVerticalDividerClassNames(theme: ITheme): IVerticalDividerClassNames = js.native
+  @scala.inline
+  def getSplitButtonVerticalDividerClassNames(theme: ITheme): IVerticalDividerClassNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonVerticalDividerClassNames")(theme.asInstanceOf[js.Any]).asInstanceOf[IVerticalDividerClassNames]
   
-  @js.native
   trait IContextualMenuClassNames extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var header: String = js.native
+    var header: String
     
-    var list: String = js.native
+    var list: String
     
-    var root: String = js.native
+    var root: String
     
-    var subComponentStyles: js.UndefOr[IContextualMenuSubComponentStyles] = js.native
+    var subComponentStyles: js.UndefOr[IContextualMenuSubComponentStyles] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object IContextualMenuClassNames {
     
@@ -86,34 +85,33 @@ object contextualMenuClassNamesMod {
     }
   }
   
-  @js.native
   trait IMenuItemClassNames extends StObject {
     
-    var checkmarkIcon: String = js.native
+    var checkmarkIcon: String
     
-    var divider: String = js.native
+    var divider: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var item: String = js.native
+    var item: String
     
-    var label: String = js.native
+    var label: String
     
-    var linkContent: String = js.native
+    var linkContent: String
     
-    var linkContentMenu: String = js.native
+    var linkContentMenu: String
     
-    var root: String = js.native
+    var root: String
     
-    var secondaryText: String = js.native
+    var secondaryText: String
     
-    var splitContainer: String = js.native
+    var splitContainer: String
     
-    var splitMenu: String = js.native
+    var splitMenu: String
     
-    var splitPrimary: String = js.native
+    var splitPrimary: String
     
-    var subMenuIcon: String = js.native
+    var subMenuIcon: String
   }
   object IMenuItemClassNames {
     

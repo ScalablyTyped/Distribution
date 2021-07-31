@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelClassRequest extends StObject {
   
   /**
     * The channel class that you wish to update this channel to use.
     */
-  var ChannelClass: typings.awsSdk.medialiveMod.ChannelClass = js.native
+  var ChannelClass: typings.awsSdk.medialiveMod.ChannelClass
   
   /**
     * Channel Id of the channel whose class should be updated.
     */
-  var ChannelId: string = js.native
+  var ChannelId: string
   
   /**
     * A list of output destinations for this channel.
     */
-  var Destinations: js.UndefOr[listOfOutputDestination] = js.native
+  var Destinations: js.UndefOr[listOfOutputDestination] = js.undefined
 }
 object UpdateChannelClassRequest {
   

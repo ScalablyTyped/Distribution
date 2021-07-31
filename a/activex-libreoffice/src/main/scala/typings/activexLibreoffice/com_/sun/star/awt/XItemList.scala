@@ -4,24 +4,22 @@ import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides convenient access to the list of items in a list box */
-@js.native
 trait XItemList extends StObject {
   
   /** retrieves the texts and images of all items in the list */
-  val AllItems: SafeArray[Pair[String, String]] = js.native
+  val AllItems: SafeArray[Pair[String, String]]
   
   /** is the number of items in the list */
-  var ItemCount: Double = js.native
+  var ItemCount: Double
   
   /** registers a listener which is notified about changes in the item list. */
-  def addItemListListener(Listener: XItemListListener): Unit = js.native
+  def addItemListListener(Listener: XItemListListener): Unit
   
   /** retrieves the texts and images of all items in the list */
-  def getAllItems(): SafeArray[Pair[String, String]] = js.native
+  def getAllItems(): SafeArray[Pair[String, String]]
   
   /**
     * retrieves the implementation dependent value associated with the given list item.
@@ -29,28 +27,28 @@ trait XItemList extends StObject {
     * @see setItemData
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def getItemData(Position: Double): js.Any = js.native
+  def getItemData(Position: Double): js.Any
   
   /**
     * retrieves the URL of the image of an existing item
     * @param Position the position of the item whose image should be retrieved. Must be greater or equal to 0, and lesser than {@link ItemCount} .
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def getItemImage(Position: Double): String = js.native
+  def getItemImage(Position: Double): String
   
   /**
     * retrieves the text of an existing item
     * @param Position the position of the item whose text should be retrieved. Must be greater or equal to 0, and lesser than {@link ItemCount} .
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def getItemText(Position: Double): String = js.native
+  def getItemText(Position: Double): String
   
   /**
     * retrieves both the text and the image URL of an existing item
     * @param Position the position of the item whose text and image should be retrieved. Must be greater or equal to 0, and lesser than {@link ItemCount} .
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def getItemTextAndImage(Position: Double): Pair[String, String] = js.native
+  def getItemTextAndImage(Position: Double): Pair[String, String]
   
   /**
     * inserts a new item into the list
@@ -59,7 +57,7 @@ trait XItemList extends StObject {
     * @param ItemImageURL the URL of the image to display for the item
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def insertItem(Position: Double, ItemText: String, ItemImageURL: String): Unit = js.native
+  def insertItem(Position: Double, ItemText: String, ItemImageURL: String): Unit
   
   /**
     * inserts an item which has only an image, but no text
@@ -67,7 +65,7 @@ trait XItemList extends StObject {
     * @param ItemImageURL the URL of the image to display for the item
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def insertItemImage(Position: Double, ItemImageURL: String): Unit = js.native
+  def insertItemImage(Position: Double, ItemImageURL: String): Unit
   
   /**
     * inserts an item which has only a text, but no image
@@ -75,20 +73,20 @@ trait XItemList extends StObject {
     * @param ItemText the text of the item to be inserted.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def insertItemText(Position: Double, ItemText: String): Unit = js.native
+  def insertItemText(Position: Double, ItemText: String): Unit
   
   /** removes all items from the list */
-  def removeAllItems(): Unit = js.native
+  def removeAllItems(): Unit
   
   /**
     * removes an item from the list
     * @param Position the position of the item which should be removed. Must be greater or equal to 0, and lesser than {@link ItemCount} .
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def removeItem(Position: Double): Unit = js.native
+  def removeItem(Position: Double): Unit
   
   /** revokes a listener which is notified about changes in the item list. */
-  def removeItemListListener(Listener: XItemListListener): Unit = js.native
+  def removeItemListListener(Listener: XItemListListener): Unit
   
   /**
     * associates an implementation dependent value with the given list item.
@@ -100,7 +98,7 @@ trait XItemList extends StObject {
     * @see getItemData
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def setItemData(Position: Double, ItemData: js.Any): Unit = js.native
+  def setItemData(Position: Double, ItemData: js.Any): Unit
   
   /**
     * sets a new image for an existing item
@@ -108,7 +106,7 @@ trait XItemList extends StObject {
     * @param ItemImageURL the new URL of the image to display for the item
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def setItemImage(Position: Double, ItemImageURL: String): Unit = js.native
+  def setItemImage(Position: Double, ItemImageURL: String): Unit
   
   /**
     * sets a new text for an existing item
@@ -116,7 +114,7 @@ trait XItemList extends StObject {
     * @param ItemText the new text of the item
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def setItemText(Position: Double, ItemText: String): Unit = js.native
+  def setItemText(Position: Double, ItemText: String): Unit
   
   /**
     * sets both a new position and text for an existing item
@@ -125,7 +123,7 @@ trait XItemList extends StObject {
     * @param ItemImageURL the new URL of the image to display for the item
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def setItemTextAndImage(Position: Double, ItemText: String, ItemImageURL: String): Unit = js.native
+  def setItemTextAndImage(Position: Double, ItemText: String, ItemImageURL: String): Unit
 }
 object XItemList {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartitionCursorsResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The partition cursors from this request. */
-  var partitionCursors: js.UndefOr[js.Array[PartitionCursor]] = js.native
+  var partitionCursors: js.UndefOr[js.Array[PartitionCursor]] = js.undefined
 }
 object ListPartitionCursorsResponse {
   

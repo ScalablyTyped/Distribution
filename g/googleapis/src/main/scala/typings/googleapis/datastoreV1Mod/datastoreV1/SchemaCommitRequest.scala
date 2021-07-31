@@ -2,19 +2,17 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Datastore.Commit.
   */
-@js.native
 trait SchemaCommitRequest extends StObject {
   
   /**
     * The type of commit to perform. Defaults to `TRANSACTIONAL`.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * The mutations to perform.  When mode is `TRANSACTIONAL`, mutations
@@ -25,14 +23,14 @@ trait SchemaCommitRequest extends StObject {
     * When mode is `NON_TRANSACTIONAL`, no two mutations may affect a single
     * entity.
     */
-  var mutations: js.UndefOr[js.Array[SchemaMutation]] = js.native
+  var mutations: js.UndefOr[js.Array[SchemaMutation]] = js.undefined
   
   /**
     * The identifier of the transaction associated with the commit. A
     * transaction identifier is returned by a call to
     * Datastore.BeginTransaction.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaCommitRequest {
   

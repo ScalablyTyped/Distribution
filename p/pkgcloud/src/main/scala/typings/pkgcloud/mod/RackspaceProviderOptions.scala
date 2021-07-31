@@ -3,27 +3,25 @@ package typings.pkgcloud.mod
 import typings.pkgcloud.pkgcloudStrings.rackspace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RackspaceProviderOptions extends StObject {
   
-  var apiKey: String = js.native
+  var apiKey: String
   
-  var provider: rackspace = js.native
+  var provider: rackspace
   
-  var region: RackspaceRegions = js.native
+  var region: RackspaceRegions
   
-  var useInternal: js.UndefOr[Boolean] = js.native
+  var useInternal: js.UndefOr[Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object RackspaceProviderOptions {
   
   @scala.inline
-  def apply(apiKey: String, provider: rackspace, region: RackspaceRegions, username: String): RackspaceProviderOptions = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  def apply(apiKey: String, region: RackspaceRegions, username: String): RackspaceProviderOptions = {
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], provider = "rackspace", region = region.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RackspaceProviderOptions]
   }
   

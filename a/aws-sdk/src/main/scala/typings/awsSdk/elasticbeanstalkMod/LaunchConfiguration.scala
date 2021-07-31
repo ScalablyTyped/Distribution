@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchConfiguration extends StObject {
   
   /**
     * The name of the launch configuration.
     */
-  var Name: js.UndefOr[ResourceId] = js.native
+  var Name: js.UndefOr[ResourceId] = js.undefined
 }
 object LaunchConfiguration {
   

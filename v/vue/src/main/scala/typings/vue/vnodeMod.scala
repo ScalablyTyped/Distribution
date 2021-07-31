@@ -8,7 +8,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vnodeMod {
@@ -21,7 +20,8 @@ object vnodeMod {
   
   @js.native
   trait ScopedSlotReturnArray
-    extends Array[ScopedSlotReturnValue]
+    extends StObject
+       with Array[ScopedSlotReturnValue]
        with _ScopedSlotReturnValue
   
   /* Rewritten from type alias, can be one of: 
@@ -29,43 +29,44 @@ object vnodeMod {
     - java.lang.String
     - scala.Boolean
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.vue.vnodeMod.ScopedSlotReturnArray
   */
   type ScopedSlotReturnValue = js.UndefOr[_ScopedSlotReturnValue | String | Boolean | Null]
   
-  @js.native
-  trait VNode extends _ScopedSlotReturnValue {
+  trait VNode
+    extends StObject
+       with _ScopedSlotReturnValue {
     
-    var children: js.UndefOr[js.Array[VNode]] = js.native
+    var children: js.UndefOr[js.Array[VNode]] = js.undefined
     
-    var componentInstance: js.UndefOr[Vue] = js.native
+    var componentInstance: js.UndefOr[Vue] = js.undefined
     
-    var componentOptions: js.UndefOr[VNodeComponentOptions] = js.native
+    var componentOptions: js.UndefOr[VNodeComponentOptions] = js.undefined
     
-    var context: js.UndefOr[Vue] = js.native
+    var context: js.UndefOr[Vue] = js.undefined
     
-    var data: js.UndefOr[VNodeData] = js.native
+    var data: js.UndefOr[VNodeData] = js.undefined
     
-    var elm: js.UndefOr[Node] = js.native
+    var elm: js.UndefOr[Node] = js.undefined
     
-    var isComment: Boolean = js.native
+    var isComment: Boolean
     
-    var isRootInsert: Boolean = js.native
+    var isRootInsert: Boolean
     
-    var isStatic: js.UndefOr[Boolean] = js.native
+    var isStatic: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var ns: js.UndefOr[String] = js.native
+    var ns: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[VNode] = js.native
+    var parent: js.UndefOr[VNode] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object VNode {
     
@@ -170,20 +171,21 @@ object vnodeMod {
   type VNodeChildren = js.UndefOr[VNodeChildrenArrayContents | js.Array[ScopedSlot] | String | Boolean | Null]
   
   @js.native
-  trait VNodeChildrenArrayContents extends Array[VNodeChildren | VNode]
+  trait VNodeChildrenArrayContents
+    extends StObject
+       with Array[VNodeChildren | VNode]
   
-  @js.native
   trait VNodeComponentOptions extends StObject {
     
-    var Ctor: VueConstructor[Vue] = js.native
+    var Ctor: VueConstructor[Vue]
     
-    var children: js.UndefOr[js.Array[VNode]] = js.native
+    var children: js.UndefOr[js.Array[VNode]] = js.undefined
     
-    var listeners: js.UndefOr[js.Object] = js.native
+    var listeners: js.UndefOr[js.Object] = js.undefined
     
-    var propsData: js.UndefOr[js.Object] = js.native
+    var propsData: js.UndefOr[js.Object] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object VNodeComponentOptions {
     
@@ -228,50 +230,49 @@ object vnodeMod {
     }
   }
   
-  @js.native
   trait VNodeData extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var `class`: js.UndefOr[js.Any] = js.native
+    var `class`: js.UndefOr[js.Any] = js.undefined
     
-    var directives: js.UndefOr[js.Array[VNodeDirective]] = js.native
+    var directives: js.UndefOr[js.Array[VNodeDirective]] = js.undefined
     
-    var domProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var domProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var hook: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var hook: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var inlineTemplate: js.UndefOr[Render] = js.native
+    var inlineTemplate: js.UndefOr[Render] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var nativeOn: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.native
+    var nativeOn: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.undefined
     
-    var on: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.native
+    var on: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.undefined
     
-    var props: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var props: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var ref: js.UndefOr[String] = js.native
+    var ref: js.UndefOr[String] = js.undefined
     
-    var refInFor: js.UndefOr[Boolean] = js.native
+    var refInFor: js.UndefOr[Boolean] = js.undefined
     
-    var scopedSlots: js.UndefOr[StringDictionary[js.UndefOr[ScopedSlot]]] = js.native
+    var scopedSlots: js.UndefOr[StringDictionary[js.UndefOr[ScopedSlot]]] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var staticClass: js.UndefOr[String] = js.native
+    var staticClass: js.UndefOr[String] = js.undefined
     
-    var staticStyle: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var staticStyle: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[js.Object] | js.Object] = js.native
+    var style: js.UndefOr[String | js.Array[js.Object] | js.Object] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var transition: js.UndefOr[js.Object] = js.native
+    var transition: js.UndefOr[js.Object] = js.undefined
   }
   object VNodeData {
     
@@ -418,22 +419,21 @@ object vnodeMod {
     }
   }
   
-  @js.native
   trait VNodeDirective extends StObject {
     
-    var arg: js.UndefOr[String] = js.native
+    var arg: js.UndefOr[String] = js.undefined
     
-    var expression: js.UndefOr[js.Any] = js.native
+    var expression: js.UndefOr[js.Any] = js.undefined
     
-    var modifiers: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var modifiers: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var oldArg: js.UndefOr[String] = js.native
+    var oldArg: js.UndefOr[String] = js.undefined
     
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object VNodeDirective {
     

@@ -3,13 +3,13 @@ package typings.bmapgl.BMapGL
 import typings.bmapgl.anon.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomLayer extends TileLayer {
+trait CustomLayer
+  extends StObject
+     with TileLayer {
   
-  def onhotspotclick(event: Content): Unit = js.native
+  def onhotspotclick(event: Content): Unit
 }
 object CustomLayer {
   

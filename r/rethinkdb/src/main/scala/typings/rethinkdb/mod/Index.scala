@@ -2,18 +2,16 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var index: String = js.native
+  var index: String
   
-  var left_bound: js.UndefOr[String] = js.native
+  var left_bound: js.UndefOr[String] = js.undefined
   
   // 'closed'
-  var right_bound: js.UndefOr[String] = js.native
+  var right_bound: js.UndefOr[String] = js.undefined
 }
 object Index {
   

@@ -6,68 +6,36 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emscriptenFsMod {
   
   @JSImport("browserfs/dist/node/generic/emscripten_fs", JSImport.Default)
   @js.native
-  class default () extends BFSEmscriptenFS {
+  class default ()
+    extends StObject
+       with BFSEmscriptenFS {
     def this(_FS: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.UndefOr[scala.Nothing], _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.UndefOr[scala.Nothing], _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.Any, _PATH: js.UndefOr[scala.Nothing], _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.Any,
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.Any,
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.UndefOr[scala.Nothing],
-      _PATH: js.Any,
-      _ERRNO_CODES: js.Any,
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.Any,
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.Any,
-      _PATH: js.UndefOr[scala.Nothing],
-      _ERRNO_CODES: js.Any,
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
-    def this(
-      _FS: js.Any,
-      _PATH: js.Any,
-      _ERRNO_CODES: js.UndefOr[scala.Nothing],
-      nodefs: typings.browserfs.fSMod.default
-    ) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
     def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
   }
   
   @js.native
-  trait BFSEmscriptenFS extends EmscriptenFS {
+  trait BFSEmscriptenFS
+    extends StObject
+       with EmscriptenFS {
     
     var ERRNO_CODES: js.Any = js.native
     
@@ -111,20 +79,19 @@ object emscriptenFsMod {
     var stream_ops: EmscriptenStreamOps = js.native
   }
   
-  @js.native
   trait EmscriptenFSNode extends StObject {
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mount: Opts = js.native
+    var mount: Opts
     
-    var name: String = js.native
+    var name: String
     
-    var node_ops: EmscriptenNodeOps = js.native
+    var node_ops: EmscriptenNodeOps
     
-    var parent: EmscriptenFSNode = js.native
+    var parent: EmscriptenFSNode
     
-    var stream_ops: EmscriptenStreamOps = js.native
+    var stream_ops: EmscriptenStreamOps
   }
   object EmscriptenFSNode {
     
@@ -164,28 +131,27 @@ object emscriptenFsMod {
     }
   }
   
-  @js.native
   trait EmscriptenNodeOps extends StObject {
     
-    def getattr(node: EmscriptenFSNode): Stats = js.native
+    def getattr(node: EmscriptenFSNode): Stats
     
-    def lookup(parent: EmscriptenFSNode, name: String): EmscriptenFSNode = js.native
+    def lookup(parent: EmscriptenFSNode, name: String): EmscriptenFSNode
     
-    def mknod(parent: EmscriptenFSNode, name: String, mode: Double, dev: js.Any): EmscriptenFSNode = js.native
+    def mknod(parent: EmscriptenFSNode, name: String, mode: Double, dev: js.Any): EmscriptenFSNode
     
-    def readdir(node: EmscriptenFSNode): js.Array[String] = js.native
+    def readdir(node: EmscriptenFSNode): js.Array[String]
     
-    def readlink(node: EmscriptenFSNode): String = js.native
+    def readlink(node: EmscriptenFSNode): String
     
-    def rename(oldNode: EmscriptenFSNode, newDir: EmscriptenFSNode, newName: String): Unit = js.native
+    def rename(oldNode: EmscriptenFSNode, newDir: EmscriptenFSNode, newName: String): Unit
     
-    def rmdir(parent: EmscriptenFSNode, name: String): Unit = js.native
+    def rmdir(parent: EmscriptenFSNode, name: String): Unit
     
-    def setattr(node: EmscriptenFSNode, attr: Stats): Unit = js.native
+    def setattr(node: EmscriptenFSNode, attr: Stats): Unit
     
-    def symlink(parent: EmscriptenFSNode, newName: String, oldPath: String): Unit = js.native
+    def symlink(parent: EmscriptenFSNode, newName: String, oldPath: String): Unit
     
-    def unlink(parent: EmscriptenFSNode, name: String): Unit = js.native
+    def unlink(parent: EmscriptenFSNode, name: String): Unit
   }
   object EmscriptenNodeOps {
     
@@ -241,16 +207,15 @@ object emscriptenFsMod {
     }
   }
   
-  @js.native
   trait EmscriptenStream extends StObject {
     
-    var flags: String = js.native
+    var flags: String
     
-    var nfd: js.Any = js.native
+    var nfd: js.Any
     
-    var node: EmscriptenFSNode = js.native
+    var node: EmscriptenFSNode
     
-    var position: Double = js.native
+    var position: Double
   }
   object EmscriptenStream {
     
@@ -277,18 +242,17 @@ object emscriptenFsMod {
     }
   }
   
-  @js.native
   trait EmscriptenStreamOps extends StObject {
     
-    def close(stream: EmscriptenStream): Unit = js.native
+    def close(stream: EmscriptenStream): Unit
     
-    def llseek(stream: EmscriptenStream, offset: Double, whence: Double): Double = js.native
+    def llseek(stream: EmscriptenStream, offset: Double, whence: Double): Double
     
-    def open(stream: EmscriptenStream): Unit = js.native
+    def open(stream: EmscriptenStream): Unit
     
-    def read(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double = js.native
+    def read(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double
     
-    def write(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double = js.native
+    def write(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double
   }
   object EmscriptenStreamOps {
     
@@ -324,36 +288,35 @@ object emscriptenFsMod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var atime: Date = js.native
+    var atime: Date
     
-    var blksize: Double = js.native
+    var blksize: Double
     
-    var blocks: Double = js.native
+    var blocks: Double
     
-    var ctime: Date = js.native
+    var ctime: Date
     
-    var dev: Double = js.native
+    var dev: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var ino: Double = js.native
+    var ino: Double
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var nlink: Double = js.native
+    var nlink: Double
     
-    var rdev: Double = js.native
+    var rdev: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Stats {
     

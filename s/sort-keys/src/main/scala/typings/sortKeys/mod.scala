@@ -3,7 +3,6 @@ package typings.sortKeys
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,32 +27,31 @@ object mod {
   //=> [{a: 2, b: 0}]
   ```
   */
-  @JSImport("sort-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = js.native
-  @JSImport("sort-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](`object`: T, options: Options): T = js.native
-  @JSImport("sort-keys", JSImport.Namespace)
-  @js.native
-  def apply[T](`object`: js.Array[T]): js.Array[T] = js.native
-  @JSImport("sort-keys", JSImport.Namespace)
-  @js.native
-  def apply[T](`object`: js.Array[T], options: Options): js.Array[T] = js.native
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](`object`: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def apply[T](`object`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def apply[T](`object`: js.Array[T], options: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
+  @JSImport("sort-keys", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		[Compare function.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
     		*/
-    val compare: js.UndefOr[js.Function2[/* left */ String, /* right */ String, Double]] = js.native
+    val compare: js.UndefOr[js.Function2[/* left */ String, /* right */ String, Double]] = js.undefined
     
     /**
     		Recursively sort keys, including keys of objects inside arrays.
     		@default false
     		*/
-    val deep: js.UndefOr[Boolean] = js.native
+    val deep: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

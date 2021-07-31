@@ -4,21 +4,31 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("task-worklet", JSImport.Namespace)
   @js.native
-  class ^[T /* <: TaskDescriptor */] () extends TaskQueue[T] {
+  class ^[T /* <: TaskDescriptor */] ()
+    extends StObject
+       with TaskQueue[T] {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def addModule(moduleURL: String): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    @JSName("postTask")
+    override def postTask_name[U /* <: T */](
+      taskName: /* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<U> is not an array type */ args: Parameters[U]
+    ): Task[ReturnType[U]] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -65,14 +75,13 @@ object mod {
     def scheduled: typings.taskWorklet.taskWorkletStrings.scheduled = "scheduled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.scheduled]
   }
   
-  @js.native
   trait Task[T] extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var result: js.Promise[T] = js.native
+    var result: js.Promise[T]
     
-    var state: State = js.native
+    var state: State
   }
   object Task {
     
@@ -83,7 +92,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task[_], T] (val x: Self with Task[T]) extends AnyVal {
+    implicit class TaskMutableBuilder[Self <: Task[?], T] (val x: Self & Task[T]) extends AnyVal {
       
       @scala.inline
       def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -106,16 +115,15 @@ object mod {
     var name: String = js.native
   }
   
-  @js.native
   trait TaskQueue[T /* <: TaskDescriptor */] extends StObject {
     
-    def addModule(moduleURL: String): js.Promise[Unit] = js.native
+    def addModule(moduleURL: String): js.Promise[Unit]
     
     @JSName("postTask")
     def postTask_name[U /* <: T */](
       taskName: /* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<U> is not an array type */ args: Parameters[U]
-    ): Task[ReturnType[U]] = js.native
+    ): Task[ReturnType[U]]
   }
   object TaskQueue {
     
@@ -129,7 +137,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TaskQueueMutableBuilder[Self <: TaskQueue[_], T /* <: TaskDescriptor */] (val x: Self with TaskQueue[T]) extends AnyVal {
+    implicit class TaskQueueMutableBuilder[Self <: TaskQueue[?], T /* <: TaskDescriptor */] (val x: Self & TaskQueue[T]) extends AnyVal {
       
       @scala.inline
       def setAddModule(value: String => js.Promise[Unit]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))

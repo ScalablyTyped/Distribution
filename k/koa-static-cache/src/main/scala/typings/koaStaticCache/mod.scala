@@ -6,76 +6,66 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, options: Unit, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, options: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, options: Files, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, options: Options, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options, options: Unit, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options, options: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options, options: Files, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: Options, options: Options, files: Files): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-static-cache", JSImport.Namespace)
   @js.native
-  def apply(dir: String): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: js.UndefOr[scala.Nothing], files: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Files, files: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Options): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Options, files: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options, options: js.UndefOr[scala.Nothing], files: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options, options: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options, options: Files, files: Files): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options, options: Options): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-static-cache", JSImport.Namespace)
-  @js.native
-  def apply(dir: Options, options: Options, files: Files): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   type Files = StringDictionary[Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var alias: js.UndefOr[js.Object] = js.native
+    var alias: js.UndefOr[js.Object] = js.undefined
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var cacheControl: js.UndefOr[String] = js.native
+    var cacheControl: js.UndefOr[String] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
-    var files: js.UndefOr[Files] = js.native
+    var files: js.UndefOr[Files] = js.undefined
     
-    var filter: js.UndefOr[(js.Function1[/* path */ String, Boolean]) | js.Array[String]] = js.native
+    var filter: js.UndefOr[(js.Function1[/* path */ String, Boolean]) | js.Array[String]] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var preload: js.UndefOr[Boolean] = js.native
+    var preload: js.UndefOr[Boolean] = js.undefined
     
-    var usePrecompiledGzip: js.UndefOr[Boolean] = js.native
+    var usePrecompiledGzip: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,39 +3,39 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISorter extends IBase {
+trait ISorter
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
   /** [Method] Set the sorting direction for this sorter
     * @param direction String The direction to sort in. Should be either 'ASC' or 'DESC'.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var sorterFn: js.UndefOr[js.Any] = js.native
+  var sorterFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Toggles the sorting direction for this sorter  */
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.native
+  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var transform: js.UndefOr[js.Any] = js.native
+  var transform: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Update the sort function for this sorter
     * @param fn Function A new sorter function for this sorter. If not specified it will use the default sorting function.
     */
-  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
+  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object ISorter {
   

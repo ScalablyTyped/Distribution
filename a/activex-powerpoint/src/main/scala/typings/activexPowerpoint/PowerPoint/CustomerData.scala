@@ -3,26 +3,24 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.CustomXMLPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerData extends StObject {
   
-  def Add(): CustomXMLPart = js.native
+  def Add(): CustomXMLPart
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Delete(Id: String): Unit = js.native
+  def Delete(Id: String): Unit
   
-  def Item(Id: String): CustomXMLPart = js.native
+  def Item(Id: String): CustomXMLPart
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.CustomerData_typekey")
-  var PowerPointDotCustomerData_typekey: CustomerData = js.native
+  var PowerPointDotCustomerData_typekey: CustomerData
 }
 object CustomerData {
   

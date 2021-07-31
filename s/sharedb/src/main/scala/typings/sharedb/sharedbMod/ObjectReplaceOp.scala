@@ -2,17 +2,17 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectReplaceOp extends Op {
+trait ObjectReplaceOp
+  extends StObject
+     with Op {
   
-  var od: js.Any = js.native
+  var od: js.Any
   
-  var oi: js.Any = js.native
+  var oi: js.Any
   
-  var p: Path = js.native
+  var p: Path
 }
 object ObjectReplaceOp {
   

@@ -10,25 +10,23 @@ import typings.vegaLite.srcStackMod.StackProperties
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
-  var channel: typings.vegaLite.channelMod.Channel = js.native
+  var channel: typings.vegaLite.channelMod.Channel
   
-  var config: typings.vegaLite.srcConfigMod.Config[SignalRef] = js.native
+  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
   
-  var fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) = js.native
+  var fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
-  var fieldDef2: js.UndefOr[SecondaryChannelDef[String]] = js.native
+  var fieldDef2: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
-  var isMidPoint: js.UndefOr[Boolean] = js.native
+  var isMidPoint: js.UndefOr[Boolean] = js.undefined
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef] = js.native
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]
   
-  var stack: StackProperties = js.native
+  var stack: StackProperties
 }
 object Channel {
   
@@ -36,7 +34,7 @@ object Channel {
   def apply(
     channel: typings.vegaLite.channelMod.Channel,
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
-    fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
     markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef],
     stack: StackProperties
   ): Channel = {
@@ -55,7 +53,7 @@ object Channel {
     
     @scala.inline
     def setFieldDef(
-      value: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+      value: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
     @scala.inline

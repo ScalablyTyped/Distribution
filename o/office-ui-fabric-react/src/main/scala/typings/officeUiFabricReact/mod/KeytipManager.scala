@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "KeytipManager")
@@ -27,7 +26,6 @@ object KeytipManager {
     *
     * @returns Singleton KeytipManager instance
     */
-  @JSImport("office-ui-fabric-react", "KeytipManager.getInstance")
-  @js.native
-  def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = js.native
+  @scala.inline
+  def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.keytipManagerMod.KeytipManager]
 }

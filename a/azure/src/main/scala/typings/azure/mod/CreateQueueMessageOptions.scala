@@ -2,15 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateQueueMessageOptions extends TimeoutIntervalOptions {
+trait CreateQueueMessageOptions
+  extends StObject
+     with TimeoutIntervalOptions {
   
-  var messagettl: js.UndefOr[Double] = js.native
+  var messagettl: js.UndefOr[Double] = js.undefined
   
-  var visibilitytimeout: js.UndefOr[Double] = js.native
+  var visibilitytimeout: js.UndefOr[Double] = js.undefined
 }
 object CreateQueueMessageOptions {
   

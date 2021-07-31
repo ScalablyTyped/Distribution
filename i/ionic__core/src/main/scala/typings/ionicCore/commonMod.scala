@@ -5,38 +5,35 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "isFocused")
+  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", JSImport.Namespace)
   @js.native
-  def isFocused(input: HTMLInputElement): Boolean = js.native
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "isFocused")
-  @js.native
-  def isFocused(input: HTMLTextAreaElement): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "relocateInput")
-  @js.native
-  def relocateInput(componentEl: HTMLElement, inputEl: HTMLInputElement, shouldRelocate: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "relocateInput")
-  @js.native
+  @scala.inline
+  def isFocused(input: HTMLInputElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFocused(input: HTMLTextAreaElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def relocateInput(componentEl: HTMLElement, inputEl: HTMLInputElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def relocateInput(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     shouldRelocate: Boolean,
     inputRelativeY: Double
-  ): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "relocateInput")
-  @js.native
-  def relocateInput(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, shouldRelocate: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/common", "relocateInput")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any], inputRelativeY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def relocateInput(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def relocateInput(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     shouldRelocate: Boolean,
     inputRelativeY: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any], inputRelativeY.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

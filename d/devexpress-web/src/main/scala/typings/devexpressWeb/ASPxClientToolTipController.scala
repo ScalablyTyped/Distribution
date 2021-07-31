@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ChartToolTipController class.
   */
-@js.native
-trait ASPxClientToolTipController extends ASPxClientWebChartElement {
+trait ASPxClientToolTipController
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets a value that defines the position of an image within a tooltip.
     */
-  var imagePosition: String = js.native
+  var imagePosition: String
   
   /**
     * Gets a value that defines when tooltips should be invoked.
     */
-  var openMode: String = js.native
+  var openMode: String
   
   /**
     * Gets a value indicating whether an image should be shown in tooltips.
     */
-  var showImage: Boolean = js.native
+  var showImage: Boolean
   
   /**
     * Gets a value indicating whether it is necessary to show text in tooltips.
     */
-  var showText: Boolean = js.native
+  var showText: Boolean
 }
 object ASPxClientToolTipController {
   

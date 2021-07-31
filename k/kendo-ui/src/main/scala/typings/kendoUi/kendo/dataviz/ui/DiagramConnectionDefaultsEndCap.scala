@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramConnectionDefaultsEndCap extends StObject {
   
-  var fill: js.UndefOr[String | DiagramConnectionDefaultsEndCapFill] = js.native
+  var fill: js.UndefOr[String | DiagramConnectionDefaultsEndCapFill] = js.undefined
   
-  var stroke: js.UndefOr[String | DiagramConnectionDefaultsEndCapStroke] = js.native
+  var stroke: js.UndefOr[String | DiagramConnectionDefaultsEndCapStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DiagramConnectionDefaultsEndCap {
   

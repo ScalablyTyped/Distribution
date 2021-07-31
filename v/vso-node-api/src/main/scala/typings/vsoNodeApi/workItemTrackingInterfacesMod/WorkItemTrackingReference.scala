@@ -2,21 +2,21 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemTrackingReference extends WorkItemTrackingResource {
+trait WorkItemTrackingReference
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * The name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The reference name.
     */
-  var referenceName: String = js.native
+  var referenceName: String
 }
 object WorkItemTrackingReference {
   

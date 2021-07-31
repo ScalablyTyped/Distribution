@@ -2,24 +2,22 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Callback information for a passed message */
-@js.native
 trait MessageCallbackInfo extends StObject {
   
   // ???
-  var ack: Boolean = js.native
+  var ack: Boolean
   
   /** ID of this callback */
-  var id: Double = js.native
+  var id: Double
   
   /** The original message payload */
-  var message: MessagePayload = js.native
+  var message: MessagePayload
   
   /** Timestamp of this message */
-  var time: Double = js.native
+  var time: Double
 }
 object MessageCallbackInfo {
   

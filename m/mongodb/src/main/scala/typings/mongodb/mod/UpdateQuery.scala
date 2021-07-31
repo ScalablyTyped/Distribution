@@ -10,61 +10,57 @@ import typings.mongodb.mongodbStrings._empty
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateQuery[TSchema] extends StObject {
   
   /** https://docs.mongodb.com/manual/reference/operator/update-array/ */
   @JSName("$addToSet")
-  var $addToSet: js.UndefOr[SetFields[TSchema]] = js.native
+  var $addToSet: js.UndefOr[SetFields[TSchema]] = js.undefined
   
   /** https://docs.mongodb.com/manual/reference/operator/update-bitwise/ */
   @JSName("$bit")
-  var $bit: js.UndefOr[
-    StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]]
-  ] = js.native
+  var $bit: js.UndefOr[StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery & TopLevel[js.Any]]] = js.undefined
   
   /** https://docs.mongodb.com/manual/reference/operator/update-field/ */
   @JSName("$currentDate")
-  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | Type]] = js.native
+  var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | Type]] = js.undefined
   
   @JSName("$inc")
-  var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]] = js.native
+  var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]] = js.undefined
   
   @JSName("$max")
-  var $max: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
+  var $max: js.UndefOr[MatchKeysAndValues[TSchema]] = js.undefined
   
   @JSName("$min")
-  var $min: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
+  var $min: js.UndefOr[MatchKeysAndValues[TSchema]] = js.undefined
   
   @JSName("$mul")
-  var $mul: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]] = js.native
+  var $mul: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]] = js.undefined
   
   @JSName("$pop")
-  var $pop: js.UndefOr[OnlyFieldsOfType[TSchema, js.Array[_], `1` | `-1`]] = js.native
+  var $pop: js.UndefOr[OnlyFieldsOfType[TSchema, js.Array[js.Any], `1` | `-1`]] = js.undefined
   
   @JSName("$pull")
-  var $pull: js.UndefOr[PullOperator[TSchema]] = js.native
+  var $pull: js.UndefOr[PullOperator[TSchema]] = js.undefined
   
   @JSName("$pullAll")
-  var $pullAll: js.UndefOr[PullAllOperator[TSchema]] = js.native
+  var $pullAll: js.UndefOr[PullAllOperator[TSchema]] = js.undefined
   
   @JSName("$push")
-  var $push: js.UndefOr[PushOperator[TSchema]] = js.native
+  var $push: js.UndefOr[PushOperator[TSchema]] = js.undefined
   
   @JSName("$rename")
-  var $rename: js.UndefOr[StringDictionary[String]] = js.native
+  var $rename: js.UndefOr[StringDictionary[String]] = js.undefined
   
   @JSName("$set")
-  var $set: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
+  var $set: js.UndefOr[MatchKeysAndValues[TSchema]] = js.undefined
   
   @JSName("$setOnInsert")
-  var $setOnInsert: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
+  var $setOnInsert: js.UndefOr[MatchKeysAndValues[TSchema]] = js.undefined
   
   @JSName("$unset")
-  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`]] = js.native
+  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, js.Any, _empty | `1` | `true`]] = js.undefined
 }
 object UpdateQuery {
   
@@ -75,7 +71,7 @@ object UpdateQuery {
   }
   
   @scala.inline
-  implicit class UpdateQueryMutableBuilder[Self <: UpdateQuery[_], TSchema] (val x: Self with UpdateQuery[TSchema]) extends AnyVal {
+  implicit class UpdateQueryMutableBuilder[Self <: UpdateQuery[?], TSchema] (val x: Self & UpdateQuery[TSchema]) extends AnyVal {
     
     @scala.inline
     def set$addToSet(value: SetFields[TSchema]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
@@ -84,7 +80,7 @@ object UpdateQuery {
     def set$addToSetUndefined: Self = StObject.set(x, "$addToSet", js.undefined)
     
     @scala.inline
-    def set$bit(value: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]]): Self = StObject.set(x, "$bit", value.asInstanceOf[js.Any])
+    def set$bit(value: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery & TopLevel[js.Any]]): Self = StObject.set(x, "$bit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$bitUndefined: Self = StObject.set(x, "$bit", js.undefined)
@@ -120,7 +116,7 @@ object UpdateQuery {
     def set$mulUndefined: Self = StObject.set(x, "$mul", js.undefined)
     
     @scala.inline
-    def set$pop(value: OnlyFieldsOfType[TSchema, js.Array[_], `1` | `-1`]): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
+    def set$pop(value: OnlyFieldsOfType[TSchema, js.Array[js.Any], `1` | `-1`]): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
@@ -162,7 +158,7 @@ object UpdateQuery {
     def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
     
     @scala.inline
-    def set$unset(value: OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
+    def set$unset(value: OnlyFieldsOfType[TSchema, js.Any, _empty | `1` | `true`]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$unsetUndefined: Self = StObject.set(x, "$unset", js.undefined)

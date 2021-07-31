@@ -3,15 +3,13 @@ package typings.i18nextKo
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Translation extends StObject {
     
-    var translation: StringDictionary[String] = js.native
+    var translation: StringDictionary[String]
   }
   object Translation {
     

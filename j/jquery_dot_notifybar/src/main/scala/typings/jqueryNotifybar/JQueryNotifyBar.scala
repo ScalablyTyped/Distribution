@@ -4,12 +4,10 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryNotifyBar {
   
-  @js.native
   trait NotifyBarOptions extends StObject {
     
     /**
@@ -17,72 +15,72 @@ object JQueryNotifyBar {
       *
       * Default: "normal"
       */
-    var animationSpeed: js.UndefOr[String | Double] = js.native
+    var animationSpeed: js.UndefOr[String | Double] = js.undefined
     
     /**
       * If set to true close button will be displayed.
       */
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If enabled, user can hide notify bar just by click on it.
       */
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If enabled, user can hide notify bar just by moving mouse cursor on it.
       */
-    var closeOnOver: js.UndefOr[Boolean] = js.native
+    var closeOnOver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the text to close button.
       */
-    var closeText: js.UndefOr[String] = js.native
+    var closeText: js.UndefOr[String] = js.undefined
     
     /**
       * You can define own CSS class for Notify bar. There are too premade classes "error", "warning" and "success".
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * How long bar will be delayed, doesn't count animation time.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * What text will be inside bar. Can be HTML or just text.
       */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /**
       * Custom jQuery object for notify bar.
       */
-    var jqObject: js.UndefOr[JQuery[HTMLElement]] = js.native
+    var jqObject: js.UndefOr[JQuery[HTMLElement]] = js.undefined
     
     /**
       * Callback on before hide.
       */
-    var onBeforeHide: js.UndefOr[js.Function0[_]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Callback on before show.
       */
-    var onBeforeShow: js.UndefOr[js.Function0[_]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Callback on hide.
       */
-    var onHide: js.UndefOr[js.Function0[_]] = js.native
+    var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Callback on show.
       */
-    var onShow: js.UndefOr[js.Function0[_]] = js.native
+    var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Set the position of notify bar. Possible values are "top", "bottom".
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
   }
   object NotifyBarOptions {
     
@@ -150,25 +148,25 @@ object JQueryNotifyBar {
       def setJqObjectUndefined: Self = StObject.set(x, "jqObject", js.undefined)
       
       @scala.inline
-      def setOnBeforeHide(value: () => _): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
+      def setOnBeforeHide(value: () => js.Any): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
       
       @scala.inline
-      def setOnBeforeShow(value: () => _): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
+      def setOnBeforeShow(value: () => js.Any): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
       
       @scala.inline
-      def setOnHide(value: () => _): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
       @scala.inline
-      def setOnShow(value: () => _): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
@@ -181,14 +179,15 @@ object JQueryNotifyBar {
     }
   }
   
-  @js.native
-  trait NotifyBarOptionsForAnimationSpeedNumber extends NotifyBarOptions {
+  trait NotifyBarOptionsForAnimationSpeedNumber
+    extends StObject
+       with NotifyBarOptions {
     
     /**
       * How long this bar will be slided up and down.
       */
     @JSName("animationSpeed")
-    var animationSpeed_NotifyBarOptionsForAnimationSpeedNumber: js.UndefOr[Double] = js.native
+    var animationSpeed_NotifyBarOptionsForAnimationSpeedNumber: js.UndefOr[Double] = js.undefined
   }
   object NotifyBarOptionsForAnimationSpeedNumber {
     
@@ -209,14 +208,15 @@ object JQueryNotifyBar {
     }
   }
   
-  @js.native
-  trait NotifyBarOptionsForAnimationSpeedString extends NotifyBarOptions {
+  trait NotifyBarOptionsForAnimationSpeedString
+    extends StObject
+       with NotifyBarOptions {
     
     /**
       * How long this bar will be slided up and down. Possible values are "slow", "default", "normal", "fast".
       */
     @JSName("animationSpeed")
-    var animationSpeed_NotifyBarOptionsForAnimationSpeedString: js.UndefOr[String] = js.native
+    var animationSpeed_NotifyBarOptionsForAnimationSpeedString: js.UndefOr[String] = js.undefined
   }
   object NotifyBarOptionsForAnimationSpeedString {
     

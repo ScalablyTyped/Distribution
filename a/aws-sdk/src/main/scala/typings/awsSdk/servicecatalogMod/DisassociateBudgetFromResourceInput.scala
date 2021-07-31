@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateBudgetFromResourceInput extends StObject {
   
   /**
     * The name of the budget you want to disassociate.
     */
-  var BudgetName: typings.awsSdk.servicecatalogMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.servicecatalogMod.BudgetName
   
   /**
     * The resource identifier you want to disassociate from. Either a portfolio-id or a product-id.
     */
-  var ResourceId: Id = js.native
+  var ResourceId: Id
 }
 object DisassociateBudgetFromResourceInput {
   

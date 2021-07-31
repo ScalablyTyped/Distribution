@@ -2,29 +2,27 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Limited information about user address for developer callbacks.
   */
-@js.native
 trait IntermediateAddress extends StObject {
   
   /**
     * The administrative area (e.g. state or province).
     */
-  var administrativeArea: String = js.native
+  var administrativeArea: String
   
   /**
     * The two-letter ISO-3166 country code.
     */
-  var countryCode: String = js.native
+  var countryCode: String
   
   /**
     * The locality (e.g. city or town).
     */
-  var locality: String = js.native
+  var locality: String
   
   /**
     * The postal code (also known in some places as ZIP code).
@@ -37,7 +35,7 @@ trait IntermediateAddress extends StObject {
     * the first three characters. For US, the this contain the first five
     * digits.
     */
-  var postalCode: String = js.native
+  var postalCode: String
 }
 object IntermediateAddress {
   

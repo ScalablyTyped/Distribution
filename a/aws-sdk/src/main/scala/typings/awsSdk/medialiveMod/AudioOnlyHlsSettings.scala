@@ -2,22 +2,20 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioOnlyHlsSettings extends StObject {
   
   /**
     * Specifies the group to which the audio Rendition belongs.
     */
-  var AudioGroupId: js.UndefOr[string] = js.native
+  var AudioGroupId: js.UndefOr[string] = js.undefined
   
   /**
     * Optional. Specifies the .jpg or .png image to use as the cover art for an audio-only output. We recommend a low bit-size file because the image increases the output audio bandwidth.
   The image is attached to the audio as an ID3 tag, frame type APIC, picture type 0x10, as per the "ID3 tag version 2.4.0 - Native Frames" standard.
     */
-  var AudioOnlyImage: js.UndefOr[InputLocation] = js.native
+  var AudioOnlyImage: js.UndefOr[InputLocation] = js.undefined
   
   /**
     * Four types of audio-only tracks are supported:
@@ -30,12 +28,12 @@ trait AudioOnlyHlsSettings extends StObject {
   Alternate Audio, not Auto Select
   Alternate rendition that the client will not try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=NO
     */
-  var AudioTrackType: js.UndefOr[AudioOnlyHlsTrackType] = js.native
+  var AudioTrackType: js.UndefOr[AudioOnlyHlsTrackType] = js.undefined
   
   /**
     * Specifies the segment type.
     */
-  var SegmentType: js.UndefOr[AudioOnlyHlsSegmentType] = js.native
+  var SegmentType: js.UndefOr[AudioOnlyHlsSegmentType] = js.undefined
 }
 object AudioOnlyHlsSettings {
   

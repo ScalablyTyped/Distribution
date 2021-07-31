@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSigningJobParameter extends StObject {
   
   /**
     * The location to write the code-signed file.
     */
-  var destination: js.UndefOr[Destination] = js.native
+  var destination: js.UndefOr[Destination] = js.undefined
   
   /**
     * The code-signing profile name.
     */
-  var signingProfileName: js.UndefOr[SigningProfileName] = js.native
+  var signingProfileName: js.UndefOr[SigningProfileName] = js.undefined
   
   /**
     * Describes the code-signing profile.
     */
-  var signingProfileParameter: js.UndefOr[SigningProfileParameter] = js.native
+  var signingProfileParameter: js.UndefOr[SigningProfileParameter] = js.undefined
 }
 object StartSigningJobParameter {
   

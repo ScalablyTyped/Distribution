@@ -4,60 +4,58 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentAttempt extends StObject {
   
-  var attempt: Double = js.native
+  var attempt: Double
   
-  var deploymentId: Double = js.native
+  var deploymentId: Double
   
   /**
     * Error log to show any unexpected error that occurred during executing deploy step
     */
-  var errorLog: String = js.native
+  var errorLog: String
   
   /**
     * Specifies whether deployment has started or not
     */
-  var hasStarted: Boolean = js.native
+  var hasStarted: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * All the issues related to the deployment
     */
-  var issues: js.Array[Issue] = js.native
+  var issues: js.Array[Issue]
   
-  var job: ReleaseTask = js.native
+  var job: ReleaseTask
   
-  var lastModifiedBy: IdentityRef = js.native
+  var lastModifiedBy: IdentityRef
   
-  var lastModifiedOn: Date = js.native
+  var lastModifiedOn: Date
   
-  var operationStatus: DeploymentOperationStatus = js.native
+  var operationStatus: DeploymentOperationStatus
   
-  var postDeploymentGates: ReleaseGates = js.native
+  var postDeploymentGates: ReleaseGates
   
-  var preDeploymentGates: ReleaseGates = js.native
+  var preDeploymentGates: ReleaseGates
   
-  var queuedOn: Date = js.native
+  var queuedOn: Date
   
-  var reason: DeploymentReason = js.native
+  var reason: DeploymentReason
   
-  var releaseDeployPhases: js.Array[ReleaseDeployPhase] = js.native
+  var releaseDeployPhases: js.Array[ReleaseDeployPhase]
   
-  var requestedBy: IdentityRef = js.native
+  var requestedBy: IdentityRef
   
-  var requestedFor: IdentityRef = js.native
+  var requestedFor: IdentityRef
   
-  var runPlanId: String = js.native
+  var runPlanId: String
   
-  var status: DeploymentStatus = js.native
+  var status: DeploymentStatus
   
-  var tasks: js.Array[ReleaseTask] = js.native
+  var tasks: js.Array[ReleaseTask]
 }
 object DeploymentAttempt {
   

@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookIcon extends StObject {
   
   // Represents the index of the icon in the given set.
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray,
@@ -17,7 +15,7 @@ trait WorkbookIcon extends StObject {
     * FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters,
     * ThreeStars, ThreeTriangles, FiveBoxes.
     */
-  var set: js.UndefOr[String] = js.native
+  var set: js.UndefOr[String] = js.undefined
 }
 object WorkbookIcon {
   

@@ -18,10 +18,13 @@ import typings.hdrHistogramJs.histogramLogWriterMod.Writable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("hdr-histogram-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hdr-histogram-js", "AbstractHistogram")
   @js.native
@@ -63,13 +66,15 @@ object mod {
   }
   object ByteBuffer {
     
+    @JSImport("hdr-histogram-js", "ByteBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("hdr-histogram-js", "ByteBuffer.allocate")
-    @js.native
-    def allocate(): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = js.native
-    @JSImport("hdr-histogram-js", "ByteBuffer.allocate")
-    @js.native
-    def allocate(size: Double): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = js.native
+    @scala.inline
+    def allocate(): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
+    @scala.inline
+    def allocate(size: Double): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
   }
   
   @JSImport("hdr-histogram-js", "Float64Histogram")
@@ -272,24 +277,12 @@ object mod {
   class Recorder ()
     extends typings.hdrHistogramJs.recorderMod.default {
     def this(numberOfSignificantValueDigits: Double) = this()
-    def this(numberOfSignificantValueDigits: js.UndefOr[scala.Nothing], packed: Boolean) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean) = this()
-    def this(
-      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
-      packed: js.UndefOr[scala.Nothing],
-      clock: js.Function0[Double]
-    ) = this()
-    def this(
-      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
-      packed: Boolean,
-      clock: js.Function0[Double]
-    ) = this()
-    def this(
-      numberOfSignificantValueDigits: Double,
-      packed: js.UndefOr[scala.Nothing],
-      clock: js.Function0[Double]
-    ) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Boolean) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Double, packed: Unit, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Boolean, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Unit, clock: js.Function0[Double]) = this()
   }
   object Recorder {
     
@@ -316,50 +309,36 @@ object mod {
     ) = this()
   }
   
-  @JSImport("hdr-histogram-js", "build")
-  @js.native
-  def build(): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js", "build")
-  @js.native
-  def build(request: BuildRequest): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
+  @scala.inline
+  def build(): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  @scala.inline
+  def build(request: BuildRequest): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(request.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
   
-  @JSImport("hdr-histogram-js", "decodeFromCompressedBase64")
-  @js.native
-  def decodeFromCompressedBase64(base64String: String): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js", "decodeFromCompressedBase64")
-  @js.native
-  def decodeFromCompressedBase64(
-    base64String: String,
-    histogramConstr: js.UndefOr[scala.Nothing],
-    minBarForHighestTrackableValue: Double
-  ): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js", "decodeFromCompressedBase64")
-  @js.native
-  def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js", "decodeFromCompressedBase64")
-  @js.native
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String, histogramConstr: Unit, minBarForHighestTrackableValue: Double): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  @scala.inline
   def decodeFromCompressedBase64(
     base64String: String,
     histogramConstr: HistogramConstructor,
     minBarForHighestTrackableValue: Double
-  ): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = js.native
+  ): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
   
   @JSImport("hdr-histogram-js", "defaultRequest")
   @js.native
   val defaultRequest: BuildRequest = js.native
   
-  @JSImport("hdr-histogram-js", "encodeIntoBase64String")
-  @js.native
-  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram): String = js.native
-  @JSImport("hdr-histogram-js", "encodeIntoBase64String")
-  @js.native
-  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram, compressionLevel: Double): String = js.native
+  @scala.inline
+  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram, compressionLevel: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any], compressionLevel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("hdr-histogram-js", "listTags")
-  @js.native
-  def listTags(content: String): js.Array[String] = js.native
+  @scala.inline
+  def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait BuildRequest extends StObject {
     
     /**
@@ -367,20 +346,20 @@ object mod {
       * highestTrackableValue
       * Default value is true
       */
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The size in bit of each count bucket
       * Default value is 32
       */
-    var bitBucketSize: js.UndefOr[`8` | `16` | `32` | `64` | packed | sparse_array] = js.native
+    var bitBucketSize: js.UndefOr[`8` | `16` | `32` | `64` | packed | sparse_array] = js.undefined
     
     /**
       * The highest value to be tracked by the histogram. Must be a positive
       * integer that is {@literal >=} (2 * lowestDiscernibleValue).
       * Default value is Number.MAX_SAFE_INTEGER
       */
-    var highestTrackableValue: js.UndefOr[Double] = js.native
+    var highestTrackableValue: js.UndefOr[Double] = js.undefined
     
     /**
       * The lowest value that can be discerned (distinguished from 0) by the histogram.
@@ -388,7 +367,7 @@ object mod {
       * down to nearest power of 2.
       * Default value is 1
       */
-    var lowestDiscernibleValue: js.UndefOr[Double] = js.native
+    var lowestDiscernibleValue: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of significant decimal digits to which the histogram will
@@ -396,7 +375,7 @@ object mod {
       * integer between 0 and 5.
       * Default value is 3
       */
-    var numberOfSignificantValueDigits: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
+    var numberOfSignificantValueDigits: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   }
   object BuildRequest {
     

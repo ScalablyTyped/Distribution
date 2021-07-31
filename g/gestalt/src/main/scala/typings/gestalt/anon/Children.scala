@@ -6,23 +6,21 @@ import typings.gestalt.mod.Icons
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var icon: js.UndefOr[Icons] = js.native
+  var icon: js.UndefOr[Icons] = js.undefined
   
-  var iconAccessibilityLabel: js.UndefOr[String] = js.native
+  var iconAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var summary: js.UndefOr[js.Array[String]] = js.native
+  var summary: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: js.UndefOr[info | error] = js.native
+  var `type`: js.UndefOr[info | error] = js.undefined
 }
 object Children {
   

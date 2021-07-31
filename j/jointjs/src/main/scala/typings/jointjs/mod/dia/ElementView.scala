@@ -6,7 +6,6 @@ import typings.jointjs.mod.dia.ElementView.InteractivityOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.ElementView")
@@ -47,18 +46,17 @@ class ElementView () extends CellViewGeneric[Element] {
   def setInteractivity(value: InteractivityOptions): Unit = js.native
   
   def update(): Unit = js.native
-  def update(element: js.UndefOr[scala.Nothing], renderingOnlyAttrs: StringDictionary[js.Any]): Unit = js.native
+  def update(element: Unit, renderingOnlyAttrs: StringDictionary[js.Any]): Unit = js.native
   def update(element: Element): Unit = js.native
   def update(element: Element, renderingOnlyAttrs: StringDictionary[js.Any]): Unit = js.native
 }
 object ElementView {
   
-  @js.native
   trait InteractivityOptions extends StObject {
     
-    var addLinkFromMagnet: js.UndefOr[Boolean] = js.native
+    var addLinkFromMagnet: js.UndefOr[Boolean] = js.undefined
     
-    var elementMove: js.UndefOr[Boolean] = js.native
+    var elementMove: js.UndefOr[Boolean] = js.undefined
   }
   object InteractivityOptions {
     

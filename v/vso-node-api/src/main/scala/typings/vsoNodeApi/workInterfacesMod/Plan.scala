@@ -4,71 +4,69 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plan extends StObject {
   
   /**
     * Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
     */
-  var createdByIdentity: IdentityRef = js.native
+  var createdByIdentity: IdentityRef
   
   /**
     * Date when the plan was created
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * Description of the plan
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Id of the plan
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
     */
-  var modifiedByIdentity: IdentityRef = js.native
+  var modifiedByIdentity: IdentityRef
   
   /**
     * Date when the plan was last modified. Default to CreatedDate when the plan is first created.
     */
-  var modifiedDate: Date = js.native
+  var modifiedDate: Date
   
   /**
     * Name of the plan
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The PlanPropertyCollection instance associated with the plan. These are dependent on the type of the plan. For example, DeliveryTimelineView, it would be of type DeliveryViewPropertyCollection.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Revision of the plan. Used to safeguard users from overwriting each other's changes.
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Type of the plan
     */
-  var `type`: PlanType = js.native
+  var `type`: PlanType
   
   /**
     * The resource url to locate the plan via rest api
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Bit flag indicating set of permissions a user has to the plan.
     */
-  var userPermissions: PlanUserPermissions = js.native
+  var userPermissions: PlanUserPermissions
 }
 object Plan {
   

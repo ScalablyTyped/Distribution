@@ -4,19 +4,17 @@ import typings.reactNavigationCore.reactNavigationCoreStrings.beforeRemove
 import typings.reactNavigationCore.reactNavigationCoreStrings.getState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyedListeners extends StObject {
   
   def addKeyedListener[T /* <: beforeRemove | getState */](
     `type`: T,
     key: String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap[T] */ js.Any
-  ): js.Function0[Unit] = js.native
+  ): js.Function0[Unit]
   
-  var keyedListeners: BeforeRemove = js.native
+  var keyedListeners: BeforeRemove
 }
 object KeyedListeners {
   

@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rippleMod {
@@ -20,6 +19,5 @@ object rippleMod {
     def this(props: RippleProps, context: js.Any) = this()
   }
   
-  @js.native
   trait RippleProps extends StObject
 }

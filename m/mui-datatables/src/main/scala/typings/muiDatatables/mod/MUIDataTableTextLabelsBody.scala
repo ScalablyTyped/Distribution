@@ -3,17 +3,15 @@ package typings.muiDatatables.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabelsBody extends StObject {
   
-  def columnHeaderTooltip(column: MUIDataTableColumn): String = js.native
+  def columnHeaderTooltip(column: MUIDataTableColumn): String
   
-  var noMatch: String | ReactNode = js.native
+  var noMatch: String | ReactNode
   
-  var toolTip: String = js.native
+  var toolTip: String
 }
 object MUIDataTableTextLabelsBody {
   

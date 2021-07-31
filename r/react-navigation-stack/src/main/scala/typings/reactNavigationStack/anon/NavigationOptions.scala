@@ -9,10 +9,8 @@ import typings.reactNavigationStack.vendorTypesMod.StackNavigationOptions
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOptions[Params, ScreenProps] extends StObject {
   
   var navigationOptions: js.UndefOr[
@@ -21,7 +19,7 @@ trait NavigationOptions[Params, ScreenProps] extends StObject {
       StackNavigationProp[NavigationRoute[NavigationParams], Params], 
       ScreenProps
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object NavigationOptions {
   
@@ -32,7 +30,7 @@ object NavigationOptions {
   }
   
   @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions[_, _], Params, ScreenProps] (val x: Self with (NavigationOptions[Params, ScreenProps])) extends AnyVal {
+  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions[?, ?], Params, ScreenProps] (val x: Self & (NavigationOptions[Params, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setNavigationOptions(
@@ -45,7 +43,7 @@ object NavigationOptions {
     
     @scala.inline
     def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[StackNavigationProp[NavigationRoute[NavigationParams], Params], ScreenProps]) with NavigationOptionsOptions[StackNavigationOptions] => StackNavigationOptions
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[StackNavigationProp[NavigationRoute[NavigationParams], Params], ScreenProps]) & NavigationOptionsOptions[StackNavigationOptions] => StackNavigationOptions
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline

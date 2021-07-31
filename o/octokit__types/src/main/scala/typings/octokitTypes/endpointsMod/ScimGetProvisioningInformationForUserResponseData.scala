@@ -5,27 +5,25 @@ import typings.octokitTypes.anon.FamilyName
 import typings.octokitTypes.anon.Primary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScimGetProvisioningInformationForUserResponseData extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var emails: js.Array[Primary] = js.native
+  var emails: js.Array[Primary]
   
-  var externalId: String = js.native
+  var externalId: String
   
-  var id: String = js.native
+  var id: String
   
-  var meta: Created = js.native
+  var meta: Created
   
-  var name: FamilyName = js.native
+  var name: FamilyName
   
-  var schemas: js.Array[String] = js.native
+  var schemas: js.Array[String]
   
-  var userName: String = js.native
+  var userName: String
 }
 object ScimGetProvisioningInformationForUserResponseData {
   

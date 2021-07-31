@@ -2,13 +2,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Read-replica configuration for connecting to the master.
   */
-@js.native
 trait SchemaReplicaConfiguration extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaReplicaConfiguration extends StObject {
     * master instance. Only one replica can be specified as failover target,
     * and the replica has to be in different zone with the master instance.
     */
-  var failoverTarget: js.UndefOr[Boolean] = js.native
+  var failoverTarget: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always sql#replicaConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * MySQL specific configuration when replicating from a MySQL on-premises
@@ -33,7 +31,7 @@ trait SchemaReplicaConfiguration extends StObject {
     * connection and is stored by MySQL in a file named master.info in the data
     * directory.
     */
-  var mysqlReplicaConfiguration: js.UndefOr[SchemaMySqlReplicaConfiguration] = js.native
+  var mysqlReplicaConfiguration: js.UndefOr[SchemaMySqlReplicaConfiguration] = js.undefined
 }
 object SchemaReplicaConfiguration {
   

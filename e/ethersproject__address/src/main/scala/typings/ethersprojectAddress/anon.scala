@@ -3,17 +3,15 @@ package typings.ethersprojectAddress
 import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var nonce: BigNumberish = js.native
+    var nonce: BigNumberish
   }
   object From {
     

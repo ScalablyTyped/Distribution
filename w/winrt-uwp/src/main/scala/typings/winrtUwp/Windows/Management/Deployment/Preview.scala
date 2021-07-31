@@ -2,21 +2,18 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Preview {
   
-  @js.native
   trait ClassicAppManager extends StObject
   
-  @js.native
   trait InstalledClassicAppInfo extends StObject {
     
-    var displayName: js.Any = js.native
+    var displayName: js.Any
     
     /* unmapped type */
-    var displayVersion: js.Any = js.native
+    var displayVersion: js.Any
   }
   object InstalledClassicAppInfo {
     

@@ -2,51 +2,49 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackStatusDetail extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of comformance pack.
     */
-  var ConformancePackArn: typings.awsSdk.configserviceMod.ConformancePackArn = js.native
+  var ConformancePackArn: typings.awsSdk.configserviceMod.ConformancePackArn
   
   /**
     * ID of the conformance pack.
     */
-  var ConformancePackId: typings.awsSdk.configserviceMod.ConformancePackId = js.native
+  var ConformancePackId: typings.awsSdk.configserviceMod.ConformancePackId
   
   /**
     * Name of the conformance pack.
     */
-  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName = js.native
+  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName
   
   /**
     * Indicates deployment status of conformance pack. AWS Config sets the state of the conformance pack to:   CREATE_IN_PROGRESS when a conformance pack creation is in progress for an account.   CREATE_COMPLETE when a conformance pack has been successfully created in your account.   CREATE_FAILED when a conformance pack creation failed in your account.   DELETE_IN_PROGRESS when a conformance pack deletion is in progress.    DELETE_FAILED when a conformance pack deletion failed in your account.  
     */
-  var ConformancePackState: typings.awsSdk.configserviceMod.ConformancePackState = js.native
+  var ConformancePackState: typings.awsSdk.configserviceMod.ConformancePackState
   
   /**
     * The reason of conformance pack creation failure.
     */
-  var ConformancePackStatusReason: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackStatusReason] = js.native
+  var ConformancePackStatusReason: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackStatusReason] = js.undefined
   
   /**
     * Last time when conformation pack creation and update was successful.
     */
-  var LastUpdateCompletedTime: js.UndefOr[Date] = js.native
+  var LastUpdateCompletedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Last time when conformation pack creation and update was requested.
     */
-  var LastUpdateRequestedTime: Date = js.native
+  var LastUpdateRequestedTime: Date
   
   /**
     * Amazon Resource Name (ARN) of AWS CloudFormation stack. 
     */
-  var StackArn: typings.awsSdk.configserviceMod.StackArn = js.native
+  var StackArn: typings.awsSdk.configserviceMod.StackArn
 }
 object ConformancePackStatusDetail {
   

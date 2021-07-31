@@ -2,125 +2,123 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Person extends StObject {
   
   /** The person's street addresses. */
-  var addresses: js.UndefOr[js.Array[Address]] = js.native
+  var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   
   /** Output only. **DEPRECATED** (Please use `person.ageRanges` instead) The person's age range. */
-  var ageRange: js.UndefOr[String] = js.native
+  var ageRange: js.UndefOr[String] = js.undefined
   
   /** Output only. The person's age ranges. */
-  var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.native
+  var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.undefined
   
   /** The person's biographies. This field is a singleton for contact sources. */
-  var biographies: js.UndefOr[js.Array[Biography]] = js.native
+  var biographies: js.UndefOr[js.Array[Biography]] = js.undefined
   
   /** The person's birthdays. This field is a singleton for contact sources. */
-  var birthdays: js.UndefOr[js.Array[Birthday]] = js.native
+  var birthdays: js.UndefOr[js.Array[Birthday]] = js.undefined
   
   /** **DEPRECATED**: No data will be returned The person's bragging rights. */
-  var braggingRights: js.UndefOr[js.Array[BraggingRights]] = js.native
+  var braggingRights: js.UndefOr[js.Array[BraggingRights]] = js.undefined
   
   /** The person's calendar URLs. */
-  var calendarUrls: js.UndefOr[js.Array[CalendarUrl]] = js.native
+  var calendarUrls: js.UndefOr[js.Array[CalendarUrl]] = js.undefined
   
   /** The person's client data. */
-  var clientData: js.UndefOr[js.Array[ClientData]] = js.native
+  var clientData: js.UndefOr[js.Array[ClientData]] = js.undefined
   
   /** Output only. The person's cover photos. */
-  var coverPhotos: js.UndefOr[js.Array[CoverPhoto]] = js.native
+  var coverPhotos: js.UndefOr[js.Array[CoverPhoto]] = js.undefined
   
   /** The person's email addresses. */
-  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   
   /** The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the resource. Used for web cache validation. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The person's events. */
-  var events: js.UndefOr[js.Array[Event]] = js.native
+  var events: js.UndefOr[js.Array[Event]] = js.undefined
   
   /** The person's external IDs. */
-  var externalIds: js.UndefOr[js.Array[ExternalId]] = js.native
+  var externalIds: js.UndefOr[js.Array[ExternalId]] = js.undefined
   
   /** The person's file-ases. */
-  var fileAses: js.UndefOr[js.Array[FileAs]] = js.native
+  var fileAses: js.UndefOr[js.Array[FileAs]] = js.undefined
   
   /** The person's genders. This field is a singleton for contact sources. */
-  var genders: js.UndefOr[js.Array[Gender]] = js.native
+  var genders: js.UndefOr[js.Array[Gender]] = js.undefined
   
   /** The person's instant messaging clients. */
-  var imClients: js.UndefOr[js.Array[ImClient]] = js.native
+  var imClients: js.UndefOr[js.Array[ImClient]] = js.undefined
   
   /** The person's interests. */
-  var interests: js.UndefOr[js.Array[Interest]] = js.native
+  var interests: js.UndefOr[js.Array[Interest]] = js.undefined
   
   /** The person's locale preferences. */
-  var locales: js.UndefOr[js.Array[Locale]] = js.native
+  var locales: js.UndefOr[js.Array[Locale]] = js.undefined
   
   /** The person's locations. */
-  var locations: js.UndefOr[js.Array[Location]] = js.native
+  var locations: js.UndefOr[js.Array[Location]] = js.undefined
   
   /** The person's group memberships. */
-  var memberships: js.UndefOr[js.Array[Membership]] = js.native
+  var memberships: js.UndefOr[js.Array[Membership]] = js.undefined
   
   /** Output only. Metadata about the person. */
-  var metadata: js.UndefOr[PersonMetadata] = js.native
+  var metadata: js.UndefOr[PersonMetadata] = js.undefined
   
   /** The person's miscellaneous keywords. */
-  var miscKeywords: js.UndefOr[js.Array[MiscKeyword]] = js.native
+  var miscKeywords: js.UndefOr[js.Array[MiscKeyword]] = js.undefined
   
   /** The person's names. This field is a singleton for contact sources. */
-  var names: js.UndefOr[js.Array[Name]] = js.native
+  var names: js.UndefOr[js.Array[Name]] = js.undefined
   
   /** The person's nicknames. */
-  var nicknames: js.UndefOr[js.Array[Nickname]] = js.native
+  var nicknames: js.UndefOr[js.Array[Nickname]] = js.undefined
   
   /** The person's occupations. */
-  var occupations: js.UndefOr[js.Array[Occupation]] = js.native
+  var occupations: js.UndefOr[js.Array[Occupation]] = js.undefined
   
   /** The person's past or current organizations. */
-  var organizations: js.UndefOr[js.Array[Organization]] = js.native
+  var organizations: js.UndefOr[js.Array[Organization]] = js.undefined
   
   /** The person's phone numbers. */
-  var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.native
+  var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
   
   /** Output only. The person's photos. */
-  var photos: js.UndefOr[js.Array[Photo]] = js.native
+  var photos: js.UndefOr[js.Array[Photo]] = js.undefined
   
   /** The person's relations. */
-  var relations: js.UndefOr[js.Array[Relation]] = js.native
+  var relations: js.UndefOr[js.Array[Relation]] = js.undefined
   
   /** Output only. **DEPRECATED**: No data will be returned The person's relationship interests. */
-  var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.native
+  var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.undefined
   
   /** Output only. **DEPRECATED**: No data will be returned The person's relationship statuses. */
-  var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.native
+  var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.undefined
   
   /** **DEPRECATED**: (Please use `person.locations` instead) The person's residences. */
-  var residences: js.UndefOr[js.Array[Residence]] = js.native
+  var residences: js.UndefOr[js.Array[Residence]] = js.undefined
   
   /** The resource name for the person, assigned by the server. An ASCII string with a max length of 27 characters, in the form of `people/{person_id}`. */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /** The person's SIP addresses. */
-  var sipAddresses: js.UndefOr[js.Array[SipAddress]] = js.native
+  var sipAddresses: js.UndefOr[js.Array[SipAddress]] = js.undefined
   
   /** The person's skills. */
-  var skills: js.UndefOr[js.Array[Skill]] = js.native
+  var skills: js.UndefOr[js.Array[Skill]] = js.undefined
   
   /** Output only. **DEPRECATED**: No data will be returned The person's taglines. */
-  var taglines: js.UndefOr[js.Array[Tagline]] = js.native
+  var taglines: js.UndefOr[js.Array[Tagline]] = js.undefined
   
   /** The person's associated URLs. */
-  var urls: js.UndefOr[js.Array[Url]] = js.native
+  var urls: js.UndefOr[js.Array[Url]] = js.undefined
   
   /** The person's user defined data. */
-  var userDefined: js.UndefOr[js.Array[UserDefined]] = js.native
+  var userDefined: js.UndefOr[js.Array[UserDefined]] = js.undefined
 }
 object Person {
   

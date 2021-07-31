@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioGroup extends StObject {
   
   /**
     * For conditional fields this is the `tabLabel` of the parent tab that controls this tab's visibility.
     */
-  var conditionalParentLabel: js.UndefOr[String] = js.native
+  var conditionalParentLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `conditionalParentLabel` property is editable.
     */
-  var conditionalParentLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var conditionalParentLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * For conditional fields, this is the value of the parent tab that controls the tab's visibility.
@@ -24,131 +22,131 @@ trait RadioGroup extends StObject {
     * If the parent tab is a Checkbox, Radio button, Optional Signature, or Optional Initial use "on" as the value to show that the parent tab is active.
     *
     */
-  var conditionalParentValue: js.UndefOr[String] = js.native
+  var conditionalParentValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `conditionalParentValue` property is editable.
     */
-  var conditionalParentValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var conditionalParentValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The `documentId` is set by the API client. It is an integer that falls between `1` and 2,147,483,647. The value is encoded as a string without commas.
     * The values `1`, `2`, `3`, and so on are typically used to identify the first few documents in an envelope. Tab definitions include a `documentId`
     * property that specifies the document on which to place the tab.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `documentId` property is editable.
     */
-  var documentIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var documentIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The name of the group. The search_text provided in the call automatically performs a wild card search on group_name.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `groupName` property is editable.
     */
-  var groupNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var groupNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the locations and status for radio buttons that are grouped together.
     */
-  var radios: js.UndefOr[js.Array[Radio]] = js.native
+  var radios: js.UndefOr[js.Array[Radio]] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId` must be unique,
     * but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The globally-unique identifier (GUID) for a specific recipient on a specific envelope. If the same recipient is associated with multiple envelopes,
     * they will have a different GUID for each one. Read only.
     */
-  var recipientIdGuid: js.UndefOr[String] = js.native
+  var recipientIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipientIdGuid` property is editable.
     */
-  var recipientIdGuidMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipientIdGuidMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipientId` property is editable.
     */
-  var recipientIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipientIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true** and shared is true, information must be entered in this field to complete the envelope.
     */
-  var requireAll: js.UndefOr[String] = js.native
+  var requireAll: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `requireAll` property is editable.
     */
-  var requireAllMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requireAllMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Optional element for field markup. When set to **true**, the signer is required to initial when they modify a shared field.
     */
-  var requireInitialOnSharedChange: js.UndefOr[String] = js.native
+  var requireInitialOnSharedChange: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `requireInitialOnSharedChange` property is editable.
     */
-  var requireInitialOnSharedChangeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requireInitialOnSharedChangeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, this custom tab is shared.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `shared` property is editable.
     */
-  var sharedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var sharedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Indicates the type of tab (for example, `signHere` or `initialHere`).
     */
-  var tabType: js.UndefOr[String] = js.native
+  var tabType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabType` property is editable.
     */
-  var tabTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.
     */
-  var templateLocked: js.UndefOr[String] = js.native
+  var templateLocked: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `templateLocked` property is editable.
     */
-  var templateLockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var templateLockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.
     */
-  var templateRequired: js.UndefOr[String] = js.native
+  var templateRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `templateRequired` property is editable.
     */
-  var templateRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var templateRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The text of a tooltip that appears when a user hovers over a form field or tab.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tooltip` property is editable.
     */
-  var tooltipMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tooltipMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object RadioGroup {
   

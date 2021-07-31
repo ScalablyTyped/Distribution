@@ -2,15 +2,13 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _FILETIME extends StObject {
   
-  val dwHighDateTime: Double = js.native
+  val dwHighDateTime: Double
   
-  val dwLowDateTime: Double = js.native
+  val dwLowDateTime: Double
 }
 object _FILETIME {
   

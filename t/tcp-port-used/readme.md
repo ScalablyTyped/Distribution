@@ -11,8 +11,8 @@ A simple Node.js module to check if a TCP port is already bound.
 | Full name          | tcp-port-used |
 | Keywords           | tcp, port, available, free, check, networking |
 | # releases         | 2 |
-| # dependents       | 137 |
-| # downloads        | 24377912 |
+| # dependents       | 154 |
+| # downloads        | 31614387 |
 | # stars            | 2 |
 
 ## Links

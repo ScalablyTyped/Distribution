@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDocumentContentRequest extends StObject {
   
   /**
     * Frame id to set HTML for.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * HTML content to set.
     */
-  var html: String = js.native
+  var html: String
 }
 object SetDocumentContentRequest {
   

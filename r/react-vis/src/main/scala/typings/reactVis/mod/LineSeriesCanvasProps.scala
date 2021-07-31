@@ -2,13 +2,13 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineSeriesCanvasProps extends AbstractSeriesProps[LineSeriesPoint] {
+trait LineSeriesCanvasProps
+  extends StObject
+     with AbstractSeriesProps[LineSeriesPoint] {
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object LineSeriesCanvasProps {
   

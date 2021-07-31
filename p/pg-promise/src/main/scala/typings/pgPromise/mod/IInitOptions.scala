@@ -3,45 +3,43 @@ package typings.pgPromise.mod
 import typings.pgPromise.pgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Library's Initialization Options
 // API: http://vitaly-t.github.io/pg-promise/module-pg-promise.html
-@js.native
 trait IInitOptions[Ext, C /* <: IClient */] extends StObject {
   
-  var capSQL: js.UndefOr[Boolean] = js.native
+  var capSQL: js.UndefOr[Boolean] = js.undefined
   
-  var connect: js.UndefOr[js.Function3[/* client */ C, /* dc */ js.Any, /* useCount */ Double, Unit]] = js.native
+  var connect: js.UndefOr[js.Function3[/* client */ C, /* dc */ js.Any, /* useCount */ Double, Unit]] = js.undefined
   
-  var disconnect: js.UndefOr[js.Function2[/* client */ C, /* dc */ js.Any, Unit]] = js.native
+  var disconnect: js.UndefOr[js.Function2[/* client */ C, /* dc */ js.Any, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ IEventContext[C], Unit]] = js.native
+  var error: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ IEventContext[C], Unit]] = js.undefined
   
-  var extend: js.UndefOr[js.Function2[/* obj */ (IDatabase[Ext, C]) with Ext, /* dc */ js.Any, Unit]] = js.native
+  var extend: js.UndefOr[js.Function2[/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ js.Any, Unit]] = js.undefined
   
-  var noLocking: js.UndefOr[Boolean] = js.native
+  var noLocking: js.UndefOr[Boolean] = js.undefined
   
-  var noWarnings: js.UndefOr[Boolean] = js.native
+  var noWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var pgFormatting: js.UndefOr[Boolean] = js.native
+  var pgFormatting: js.UndefOr[Boolean] = js.undefined
   
-  var pgNative: js.UndefOr[Boolean] = js.native
+  var pgNative: js.UndefOr[Boolean] = js.undefined
   
-  var promiseLib: js.UndefOr[js.Any] = js.native
+  var promiseLib: js.UndefOr[js.Any] = js.undefined
   
-  var query: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.native
+  var query: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.undefined
   
   var receive: js.UndefOr[
-    js.Function3[/* data */ js.Array[_], /* result */ IResultExt, /* e */ IEventContext[C], Unit]
-  ] = js.native
+    js.Function3[/* data */ js.Array[js.Any], /* result */ IResultExt, /* e */ IEventContext[C], Unit]
+  ] = js.undefined
   
-  var schema: js.UndefOr[ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])] = js.native
+  var schema: js.UndefOr[ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])] = js.undefined
   
-  var task: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.native
+  var task: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.undefined
   
-  var transact: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.native
+  var transact: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.undefined
 }
 object IInitOptions {
   
@@ -52,7 +50,7 @@ object IInitOptions {
   }
   
   @scala.inline
-  implicit class IInitOptionsMutableBuilder[Self <: IInitOptions[_, _], Ext, C /* <: IClient */] (val x: Self with (IInitOptions[Ext, C])) extends AnyVal {
+  implicit class IInitOptionsMutableBuilder[Self <: IInitOptions[?, ?], Ext, C /* <: IClient */] (val x: Self & (IInitOptions[Ext, C])) extends AnyVal {
     
     @scala.inline
     def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
@@ -79,7 +77,7 @@ object IInitOptions {
     def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setExtend(value: (/* obj */ (IDatabase[Ext, C]) with Ext, /* dc */ js.Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    def setExtend(value: (/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ js.Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
@@ -121,7 +119,7 @@ object IInitOptions {
     def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def setReceive(value: (/* data */ js.Array[_], /* result */ IResultExt, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
+    def setReceive(value: (/* data */ js.Array[js.Any], /* result */ IResultExt, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
     
     @scala.inline
     def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)

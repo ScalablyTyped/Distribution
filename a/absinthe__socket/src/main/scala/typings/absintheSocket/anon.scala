@@ -6,7 +6,6 @@ import typings.absintheSocket.mod.Observer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -21,7 +20,7 @@ object anon {
     def unsubscribe(absintheSocket: AbsintheSocket[js.Object]): Unit = js.native
     def unsubscribe(
       absintheSocket: AbsintheSocket[js.Object],
-      notifier: js.UndefOr[scala.Nothing],
+      notifier: Unit,
       observer: Observer[Variables, js.Object]
     ): Unit = js.native
     def unsubscribe(absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[Variables, js.Object]): Unit = js.native

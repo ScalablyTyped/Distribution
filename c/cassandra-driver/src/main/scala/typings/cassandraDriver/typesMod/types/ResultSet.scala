@@ -6,12 +6,12 @@ import typings.std.AsyncIterable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResultSet
-  extends Iterable[Row]
+  extends StObject
+     with Iterable[Row]
      with AsyncIterable[Row] {
   
   var columns: js.Array[Type] = js.native

@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,9 +59,8 @@ object EndEvent {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent.create")
-  @js.native
-  def create(model: IModel): EndEvent = js.native
+  @scala.inline
+  def create(model: IModel): EndEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EndEvent]
   
   /**
     * Creates and returns a new EndEvent instance in the SDK and on the server.
@@ -70,9 +68,8 @@ object EndEvent {
     * of the parent MicroflowObjectCollection element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent.createIn")
-  @js.native
-  def createIn(container: MicroflowObjectCollection): EndEvent = js.native
+  @scala.inline
+  def createIn(container: MicroflowObjectCollection): EndEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EndEvent]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent.structureTypeName")

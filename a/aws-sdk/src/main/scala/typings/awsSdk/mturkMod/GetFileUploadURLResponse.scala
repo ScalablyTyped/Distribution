@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileUploadURLResponse extends StObject {
   
   /**
     *  A temporary URL for the file that the Worker uploaded for the answer. 
     */
-  var FileUploadURL: js.UndefOr[String] = js.native
+  var FileUploadURL: js.UndefOr[String] = js.undefined
 }
 object GetFileUploadURLResponse {
   

@@ -2,18 +2,16 @@ package typings.materialTextfield
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object characterCounterAdapterMod {
   
-  @js.native
   trait MDCTextFieldCharacterCounterAdapter extends StObject {
     
     /**
       * Sets the text content of character counter element.
       */
-    def setContent(content: String): Unit = js.native
+    def setContent(content: String): Unit
   }
   object MDCTextFieldCharacterCounterAdapter {
     

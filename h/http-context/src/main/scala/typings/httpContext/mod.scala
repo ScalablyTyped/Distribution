@@ -10,18 +10,21 @@ import typings.node.httpMod.OutgoingMessage
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Context = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Context]
+  
   @JSImport("http-context", JSImport.Namespace)
   @js.native
-  def apply(): Context = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Context
-    extends RequestDelegate
+    extends StObject
+       with RequestDelegate
        with ResponseDelegate {
     
     var request: Request = js.native
@@ -30,7 +33,9 @@ object mod {
   }
   
   @js.native
-  trait Request extends RequestDelegate {
+  trait Request
+    extends StObject
+       with RequestDelegate {
     
     var accept: Accepts = js.native
     
@@ -100,14 +105,13 @@ object mod {
     var url: String = js.native
   }
   
-  @js.native
   trait RequestJSON extends StObject {
     
-    var header: IncomingHttpHeaders = js.native
+    var header: IncomingHttpHeaders
     
-    var method: String = js.native
+    var method: String
     
-    var url: String = js.native
+    var url: String
   }
   object RequestJSON {
     
@@ -132,7 +136,9 @@ object mod {
   }
   
   @js.native
-  trait Response extends ResponseDelegate {
+  trait Response
+    extends StObject
+       with ResponseDelegate {
     
     def get(field: String): String = js.native
     
@@ -183,14 +189,13 @@ object mod {
     var writable: Boolean = js.native
   }
   
-  @js.native
   trait ResponseJSON extends StObject {
     
-    var header: OutgoingHttpHeaders = js.native
+    var header: OutgoingHttpHeaders
     
-    var message: String = js.native
+    var message: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object ResponseJSON {
     

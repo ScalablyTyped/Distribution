@@ -6,50 +6,50 @@ import typings.startServerWebpackPlugin.startServerWebpackPluginStrings.SIGUSR2
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("start-server-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: String) = this()
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Arguments for the script.
       * Default: `[]`.
       */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Allow typing 'rs' to restart the server.
       * Default: 'true' if in 'development' mode, 'false' otherwise.
       */
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the server to start (built asset from webpack).
       * If not provided, the plugin will tell you the available names.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Arguments for node.
       * Default: `[]`.
       */
-    var nodeArgs: js.UndefOr[js.Array[String]] = js.native
+    var nodeArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Signal to send for HMR.
       * Default: 'false'.
       */
-    var signal: js.UndefOr[`false` | `true` | SIGUSR2] = js.native
+    var signal: js.UndefOr[`false` | `true` | SIGUSR2] = js.undefined
   }
   object Options {
     

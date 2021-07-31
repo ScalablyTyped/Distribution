@@ -14,54 +14,58 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createPopperMod {
   
-  @JSImport("@popperjs/core/lib/createPopper", "createPopper")
+  @JSImport("@popperjs/core/lib/createPopper", JSImport.Namespace)
   @js.native
-  def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement): Instance = js.native
-  @JSImport("@popperjs/core/lib/createPopper", "createPopper")
-  @js.native
-  def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = js.native
-  @JSImport("@popperjs/core/lib/createPopper", "createPopper")
-  @js.native
-  def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement): Instance = js.native
-  @JSImport("@popperjs/core/lib/createPopper", "createPopper")
-  @js.native
-  def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@popperjs/core/lib/createPopper", "detectOverflow")
-  @js.native
-  def detectOverflow(state: State): SideObject = js.native
-  @JSImport("@popperjs/core/lib/createPopper", "detectOverflow")
-  @js.native
-  def detectOverflow(state: State, options: PartialOptions): SideObject = js.native
+  @scala.inline
+  def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  @scala.inline
+  def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  @scala.inline
+  def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  @scala.inline
+  def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
   
-  @JSImport("@popperjs/core/lib/createPopper", "popperGenerator")
-  @js.native
+  @scala.inline
+  def detectOverflow(state: State): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[SideObject]
+  @scala.inline
+  def detectOverflow(state: State, options: PartialOptions): SideObject = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SideObject]
+  
+  @scala.inline
   def popperGenerator(): js.Function3[
     /* reference */ Element | VirtualElement, 
     /* popper */ HTMLElement, 
     /* options */ js.UndefOr[Partial[OptionsGeneric[PartialModifieranyany]]], 
     Instance
-  ] = js.native
-  @JSImport("@popperjs/core/lib/createPopper", "popperGenerator")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("popperGenerator")().asInstanceOf[js.Function3[
+    /* reference */ Element | VirtualElement, 
+    /* popper */ HTMLElement, 
+    /* options */ js.UndefOr[Partial[OptionsGeneric[PartialModifieranyany]]], 
+    Instance
+  ]]
+  @scala.inline
   def popperGenerator(generatorOptions: PopperGeneratorArgs): js.Function3[
     /* reference */ Element | VirtualElement, 
     /* popper */ HTMLElement, 
     /* options */ js.UndefOr[Partial[OptionsGeneric[PartialModifieranyany]]], 
     Instance
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("popperGenerator")(generatorOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* reference */ Element | VirtualElement, 
+    /* popper */ HTMLElement, 
+    /* options */ js.UndefOr[Partial[OptionsGeneric[PartialModifieranyany]]], 
+    Instance
+  ]]
   
-  @js.native
   trait PopperGeneratorArgs extends StObject {
     
-    var defaultModifiers: js.UndefOr[js.Array[Modifier[_, _]]] = js.native
+    var defaultModifiers: js.UndefOr[js.Array[Modifier[js.Any, js.Any]]] = js.undefined
     
-    var defaultOptions: js.UndefOr[PartialOptionsGenericany] = js.native
+    var defaultOptions: js.UndefOr[PartialOptionsGenericany] = js.undefined
   }
   object PopperGeneratorArgs {
     
@@ -75,7 +79,7 @@ object createPopperMod {
     implicit class PopperGeneratorArgsMutableBuilder[Self <: PopperGeneratorArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDefaultModifiers(value: js.Array[Modifier[_, _]]): Self = StObject.set(x, "defaultModifiers", value.asInstanceOf[js.Any])
+      def setDefaultModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "defaultModifiers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultModifiersUndefined: Self = StObject.set(x, "defaultModifiers", js.undefined)

@@ -8,60 +8,59 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCompleteMultipartUploadOutputMod {
   
-  @js.native
   trait CompleteMultipartUploadOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _BucketName shape
       */
-    var Bucket: js.UndefOr[String] = js.native
+    var Bucket: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Entity tag of the object.</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If the object expiration is configured, this will contain the expiration date (expiry-date) and rule ID (rule-id). The value of rule-id is URL encoded.</p>
       */
-    var Expiration: js.UndefOr[String] = js.native
+    var Expiration: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectKey shape
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * _Location shape
       */
-    var Location: js.UndefOr[String] = js.native
+    var Location: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.</p>
       */
-    var SSEKMSKeyId: js.UndefOr[String] = js.native
+    var SSEKMSKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).</p>
       */
-    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.native
+    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.undefined
     
     /**
       * <p>Version of the object.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object CompleteMultipartUploadOutput {
     

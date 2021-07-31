@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerReportDialogBase extends StObject {
   
-  var buttons: js.Array[_] = js.native
+  var buttons: js.Array[js.Any]
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  def customize(template: String, model: ASPxDesignerDialogModel): Unit = js.native
+  def customize(template: String, model: ASPxDesignerDialogModel): Unit
   
-  var height: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any = js.native
+  var height: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
   
-  var model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerDialogModel> */ js.Any = js.native
+  var model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerDialogModel> */ js.Any
   
-  def show(tab: ASPxDesignerNavigateTab): Unit = js.native
+  def show(tab: ASPxDesignerNavigateTab): Unit
   
-  var tab: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerNavigateTab> */ js.Any = js.native
+  var tab: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerNavigateTab> */ js.Any
   
-  var template: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any = js.native
+  var template: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
   
-  var title: String = js.native
+  var title: String
   
-  var visible: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var visible: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
   
-  var width: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any = js.native
+  var width: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
 }
 object ASPxDesignerReportDialogBase {
   
   @scala.inline
   def apply(
-    buttons: js.Array[_],
+    buttons: js.Array[js.Any],
     cancel: () => Unit,
     customize: (String, ASPxDesignerDialogModel) => Unit,
     height: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any,
@@ -54,7 +52,7 @@ object ASPxDesignerReportDialogBase {
   implicit class ASPxDesignerReportDialogBaseMutableBuilder[Self <: ASPxDesignerReportDialogBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))

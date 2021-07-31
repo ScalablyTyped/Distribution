@@ -3,41 +3,41 @@ package typings.vsoNodeApi.coreInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebApiConnectedService extends WebApiConnectedServiceRef {
+trait WebApiConnectedService
+  extends StObject
+     with WebApiConnectedServiceRef {
   
   /**
     * The user who did the OAuth authentication to created this service
     */
-  var authenticatedBy: IdentityRef = js.native
+  var authenticatedBy: IdentityRef
   
   /**
     * Extra description on the service.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Friendly Name of service connection
     */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /**
     * The kind of service.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * The project associated with this service
     */
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
   /**
     * Optional uri to connect directly to the service such as https://windows.azure.com
     */
-  var serviceUri: String = js.native
+  var serviceUri: String
 }
 object WebApiConnectedService {
   

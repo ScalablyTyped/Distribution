@@ -2,17 +2,15 @@ package typings.swPrecacheWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChunkName extends StObject {
     
-    var chunkName: js.UndefOr[String] = js.native
+    var chunkName: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object ChunkName {
     

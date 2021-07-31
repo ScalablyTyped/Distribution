@@ -2,65 +2,63 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Widget extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Refers to the allowed sizes for the widget. This gets populated when user wants to configure the widget
     */
-  var allowedSizes: js.Array[WidgetSize] = js.native
+  var allowedSizes: js.Array[WidgetSize]
   
   /**
     * Refers to unique identifier of a feature artifact. Used for pinning+unpinning a specific artifact.
     */
-  var artifactId: String = js.native
+  var artifactId: String
   
-  var configurationContributionId: String = js.native
+  var configurationContributionId: String
   
-  var configurationContributionRelativeId: String = js.native
+  var configurationContributionRelativeId: String
   
-  var contentUri: String = js.native
+  var contentUri: String
   
   /**
     * The id of the underlying contribution defining the supplied Widget Configuration.
     */
-  var contributionId: String = js.native
+  var contributionId: String
   
   /**
     * Optional partial dashboard content, to support exchanging dashboard-level version ETag for widget-level APIs
     */
-  var dashboard: Dashboard = js.native
+  var dashboard: Dashboard
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var id: String = js.native
+  var id: String
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var isNameConfigurable: Boolean = js.native
+  var isNameConfigurable: Boolean
   
-  var lightboxOptions: LightboxOptions = js.native
+  var lightboxOptions: LightboxOptions
   
-  var loadingImageUrl: String = js.native
+  var loadingImageUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var position: WidgetPosition = js.native
+  var position: WidgetPosition
   
-  var settings: String = js.native
+  var settings: String
   
-  var settingsVersion: SemanticVersion = js.native
+  var settingsVersion: SemanticVersion
   
-  var size: WidgetSize = js.native
+  var size: WidgetSize
   
-  var typeId: String = js.native
+  var typeId: String
   
-  var url: String = js.native
+  var url: String
 }
 object Widget {
   

@@ -4,7 +4,6 @@ import typings.awsSdk.accessanalyzerMod.ClientConfiguration
 import typings.awsSdk.accessanalyzerMod.apiVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configServicePlaceholdersMod {
@@ -488,482 +487,481 @@ object configServicePlaceholdersMod {
     var xray: js.UndefOr[typings.awsSdk.xrayMod.ClientConfiguration] = js.native
   }
   
-  @js.native
   trait ConfigurationServiceApiVersions extends StObject {
     
-    var accessanalyzer: js.UndefOr[apiVersion] = js.native
+    var accessanalyzer: js.UndefOr[apiVersion] = js.undefined
     
-    var acm: js.UndefOr[typings.awsSdk.acmMod.apiVersion] = js.native
+    var acm: js.UndefOr[typings.awsSdk.acmMod.apiVersion] = js.undefined
     
-    var acmpca: js.UndefOr[typings.awsSdk.acmpcaMod.apiVersion] = js.native
+    var acmpca: js.UndefOr[typings.awsSdk.acmpcaMod.apiVersion] = js.undefined
     
-    var alexaforbusiness: js.UndefOr[typings.awsSdk.alexaforbusinessMod.apiVersion] = js.native
+    var alexaforbusiness: js.UndefOr[typings.awsSdk.alexaforbusinessMod.apiVersion] = js.undefined
     
-    var amplify: js.UndefOr[typings.awsSdk.amplifyMod.apiVersion] = js.native
+    var amplify: js.UndefOr[typings.awsSdk.amplifyMod.apiVersion] = js.undefined
     
-    var apigateway: js.UndefOr[typings.awsSdk.apigatewayMod.apiVersion] = js.native
+    var apigateway: js.UndefOr[typings.awsSdk.apigatewayMod.apiVersion] = js.undefined
     
-    var apigatewaymanagementapi: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.apiVersion] = js.native
+    var apigatewaymanagementapi: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.apiVersion] = js.undefined
     
-    var apigatewayv2: js.UndefOr[typings.awsSdk.apigatewayv2Mod.apiVersion] = js.native
+    var apigatewayv2: js.UndefOr[typings.awsSdk.apigatewayv2Mod.apiVersion] = js.undefined
     
-    var appconfig: js.UndefOr[typings.awsSdk.appconfigMod.apiVersion] = js.native
+    var appconfig: js.UndefOr[typings.awsSdk.appconfigMod.apiVersion] = js.undefined
     
-    var appflow: js.UndefOr[typings.awsSdk.appflowMod.apiVersion] = js.native
+    var appflow: js.UndefOr[typings.awsSdk.appflowMod.apiVersion] = js.undefined
     
-    var applicationautoscaling: js.UndefOr[typings.awsSdk.applicationautoscalingMod.apiVersion] = js.native
+    var applicationautoscaling: js.UndefOr[typings.awsSdk.applicationautoscalingMod.apiVersion] = js.undefined
     
-    var applicationinsights: js.UndefOr[typings.awsSdk.applicationinsightsMod.apiVersion] = js.native
+    var applicationinsights: js.UndefOr[typings.awsSdk.applicationinsightsMod.apiVersion] = js.undefined
     
-    var appmesh: js.UndefOr[typings.awsSdk.appmeshMod.apiVersion] = js.native
+    var appmesh: js.UndefOr[typings.awsSdk.appmeshMod.apiVersion] = js.undefined
     
-    var appstream: js.UndefOr[typings.awsSdk.appstreamMod.apiVersion] = js.native
+    var appstream: js.UndefOr[typings.awsSdk.appstreamMod.apiVersion] = js.undefined
     
-    var appsync: js.UndefOr[typings.awsSdk.appsyncMod.apiVersion] = js.native
+    var appsync: js.UndefOr[typings.awsSdk.appsyncMod.apiVersion] = js.undefined
     
-    var athena: js.UndefOr[typings.awsSdk.athenaMod.apiVersion] = js.native
+    var athena: js.UndefOr[typings.awsSdk.athenaMod.apiVersion] = js.undefined
     
-    var augmentedairuntime: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.apiVersion] = js.native
+    var augmentedairuntime: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.apiVersion] = js.undefined
     
-    var autoscaling: js.UndefOr[typings.awsSdk.autoscalingMod.apiVersion] = js.native
+    var autoscaling: js.UndefOr[typings.awsSdk.autoscalingMod.apiVersion] = js.undefined
     
-    var autoscalingplans: js.UndefOr[typings.awsSdk.autoscalingplansMod.apiVersion] = js.native
+    var autoscalingplans: js.UndefOr[typings.awsSdk.autoscalingplansMod.apiVersion] = js.undefined
     
-    var backup: js.UndefOr[typings.awsSdk.backupMod.apiVersion] = js.native
+    var backup: js.UndefOr[typings.awsSdk.backupMod.apiVersion] = js.undefined
     
-    var batch: js.UndefOr[typings.awsSdk.batchMod.apiVersion] = js.native
+    var batch: js.UndefOr[typings.awsSdk.batchMod.apiVersion] = js.undefined
     
-    var braket: js.UndefOr[typings.awsSdk.braketMod.apiVersion] = js.native
+    var braket: js.UndefOr[typings.awsSdk.braketMod.apiVersion] = js.undefined
     
-    var budgets: js.UndefOr[typings.awsSdk.budgetsMod.apiVersion] = js.native
+    var budgets: js.UndefOr[typings.awsSdk.budgetsMod.apiVersion] = js.undefined
     
-    var chime: js.UndefOr[typings.awsSdk.chimeMod.apiVersion] = js.native
+    var chime: js.UndefOr[typings.awsSdk.chimeMod.apiVersion] = js.undefined
     
-    var cloud9: js.UndefOr[typings.awsSdk.cloud9Mod.apiVersion] = js.native
+    var cloud9: js.UndefOr[typings.awsSdk.cloud9Mod.apiVersion] = js.undefined
     
-    var clouddirectory: js.UndefOr[typings.awsSdk.clouddirectoryMod.apiVersion] = js.native
+    var clouddirectory: js.UndefOr[typings.awsSdk.clouddirectoryMod.apiVersion] = js.undefined
     
-    var cloudformation: js.UndefOr[typings.awsSdk.cloudformationMod.apiVersion] = js.native
+    var cloudformation: js.UndefOr[typings.awsSdk.cloudformationMod.apiVersion] = js.undefined
     
-    var cloudfront: js.UndefOr[typings.awsSdk.cloudfrontMod.apiVersion] = js.native
+    var cloudfront: js.UndefOr[typings.awsSdk.cloudfrontMod.apiVersion] = js.undefined
     
-    var cloudhsm: js.UndefOr[typings.awsSdk.cloudhsmMod.apiVersion] = js.native
+    var cloudhsm: js.UndefOr[typings.awsSdk.cloudhsmMod.apiVersion] = js.undefined
     
-    var cloudhsmv2: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.apiVersion] = js.native
+    var cloudhsmv2: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.apiVersion] = js.undefined
     
-    var cloudsearch: js.UndefOr[typings.awsSdk.cloudsearchMod.apiVersion] = js.native
+    var cloudsearch: js.UndefOr[typings.awsSdk.cloudsearchMod.apiVersion] = js.undefined
     
-    var cloudsearchdomain: js.UndefOr[typings.awsSdk.cloudsearchdomainMod.apiVersion] = js.native
+    var cloudsearchdomain: js.UndefOr[typings.awsSdk.cloudsearchdomainMod.apiVersion] = js.undefined
     
-    var cloudtrail: js.UndefOr[typings.awsSdk.cloudtrailMod.apiVersion] = js.native
+    var cloudtrail: js.UndefOr[typings.awsSdk.cloudtrailMod.apiVersion] = js.undefined
     
-    var cloudwatch: js.UndefOr[typings.awsSdk.cloudwatchMod.apiVersion] = js.native
+    var cloudwatch: js.UndefOr[typings.awsSdk.cloudwatchMod.apiVersion] = js.undefined
     
-    var cloudwatchevents: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.apiVersion] = js.native
+    var cloudwatchevents: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.apiVersion] = js.undefined
     
-    var cloudwatchlogs: js.UndefOr[typings.awsSdk.cloudwatchlogsMod.apiVersion] = js.native
+    var cloudwatchlogs: js.UndefOr[typings.awsSdk.cloudwatchlogsMod.apiVersion] = js.undefined
     
-    var codeartifact: js.UndefOr[typings.awsSdk.codeartifactMod.apiVersion] = js.native
+    var codeartifact: js.UndefOr[typings.awsSdk.codeartifactMod.apiVersion] = js.undefined
     
-    var codebuild: js.UndefOr[typings.awsSdk.codebuildMod.apiVersion] = js.native
+    var codebuild: js.UndefOr[typings.awsSdk.codebuildMod.apiVersion] = js.undefined
     
-    var codecommit: js.UndefOr[typings.awsSdk.codecommitMod.apiVersion] = js.native
+    var codecommit: js.UndefOr[typings.awsSdk.codecommitMod.apiVersion] = js.undefined
     
-    var codedeploy: js.UndefOr[typings.awsSdk.codedeployMod.apiVersion] = js.native
+    var codedeploy: js.UndefOr[typings.awsSdk.codedeployMod.apiVersion] = js.undefined
     
-    var codeguruprofiler: js.UndefOr[typings.awsSdk.codeguruprofilerMod.apiVersion] = js.native
+    var codeguruprofiler: js.UndefOr[typings.awsSdk.codeguruprofilerMod.apiVersion] = js.undefined
     
-    var codegurureviewer: js.UndefOr[typings.awsSdk.codegurureviewerMod.apiVersion] = js.native
+    var codegurureviewer: js.UndefOr[typings.awsSdk.codegurureviewerMod.apiVersion] = js.undefined
     
-    var codepipeline: js.UndefOr[typings.awsSdk.codepipelineMod.apiVersion] = js.native
+    var codepipeline: js.UndefOr[typings.awsSdk.codepipelineMod.apiVersion] = js.undefined
     
-    var codestar: js.UndefOr[typings.awsSdk.codestarMod.apiVersion] = js.native
+    var codestar: js.UndefOr[typings.awsSdk.codestarMod.apiVersion] = js.undefined
     
-    var codestarconnections: js.UndefOr[typings.awsSdk.codestarconnectionsMod.apiVersion] = js.native
+    var codestarconnections: js.UndefOr[typings.awsSdk.codestarconnectionsMod.apiVersion] = js.undefined
     
-    var codestarnotifications: js.UndefOr[typings.awsSdk.codestarnotificationsMod.apiVersion] = js.native
+    var codestarnotifications: js.UndefOr[typings.awsSdk.codestarnotificationsMod.apiVersion] = js.undefined
     
-    var cognitoidentity: js.UndefOr[typings.awsSdk.cognitoidentityMod.apiVersion] = js.native
+    var cognitoidentity: js.UndefOr[typings.awsSdk.cognitoidentityMod.apiVersion] = js.undefined
     
-    var cognitoidentityserviceprovider: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion] = js.native
+    var cognitoidentityserviceprovider: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion] = js.undefined
     
-    var cognitosync: js.UndefOr[typings.awsSdk.cognitosyncMod.apiVersion] = js.native
+    var cognitosync: js.UndefOr[typings.awsSdk.cognitosyncMod.apiVersion] = js.undefined
     
-    var comprehend: js.UndefOr[typings.awsSdk.comprehendMod.apiVersion] = js.native
+    var comprehend: js.UndefOr[typings.awsSdk.comprehendMod.apiVersion] = js.undefined
     
-    var comprehendmedical: js.UndefOr[typings.awsSdk.comprehendmedicalMod.apiVersion] = js.native
+    var comprehendmedical: js.UndefOr[typings.awsSdk.comprehendmedicalMod.apiVersion] = js.undefined
     
-    var computeoptimizer: js.UndefOr[typings.awsSdk.computeoptimizerMod.apiVersion] = js.native
+    var computeoptimizer: js.UndefOr[typings.awsSdk.computeoptimizerMod.apiVersion] = js.undefined
     
-    var configservice: js.UndefOr[typings.awsSdk.configserviceMod.apiVersion] = js.native
+    var configservice: js.UndefOr[typings.awsSdk.configserviceMod.apiVersion] = js.undefined
     
-    var connect: js.UndefOr[typings.awsSdk.connectMod.apiVersion] = js.native
+    var connect: js.UndefOr[typings.awsSdk.connectMod.apiVersion] = js.undefined
     
-    var connectparticipant: js.UndefOr[typings.awsSdk.connectparticipantMod.apiVersion] = js.native
+    var connectparticipant: js.UndefOr[typings.awsSdk.connectparticipantMod.apiVersion] = js.undefined
     
-    var costexplorer: js.UndefOr[typings.awsSdk.costexplorerMod.apiVersion] = js.native
+    var costexplorer: js.UndefOr[typings.awsSdk.costexplorerMod.apiVersion] = js.undefined
     
-    var cur: js.UndefOr[typings.awsSdk.curMod.apiVersion] = js.native
+    var cur: js.UndefOr[typings.awsSdk.curMod.apiVersion] = js.undefined
     
-    var databrew: js.UndefOr[typings.awsSdk.databrewMod.apiVersion] = js.native
+    var databrew: js.UndefOr[typings.awsSdk.databrewMod.apiVersion] = js.undefined
     
-    var dataexchange: js.UndefOr[typings.awsSdk.dataexchangeMod.apiVersion] = js.native
+    var dataexchange: js.UndefOr[typings.awsSdk.dataexchangeMod.apiVersion] = js.undefined
     
-    var datapipeline: js.UndefOr[typings.awsSdk.datapipelineMod.apiVersion] = js.native
+    var datapipeline: js.UndefOr[typings.awsSdk.datapipelineMod.apiVersion] = js.undefined
     
-    var datasync: js.UndefOr[typings.awsSdk.datasyncMod.apiVersion] = js.native
+    var datasync: js.UndefOr[typings.awsSdk.datasyncMod.apiVersion] = js.undefined
     
-    var dax: js.UndefOr[typings.awsSdk.daxMod.apiVersion] = js.native
+    var dax: js.UndefOr[typings.awsSdk.daxMod.apiVersion] = js.undefined
     
-    var detective: js.UndefOr[typings.awsSdk.detectiveMod.apiVersion] = js.native
+    var detective: js.UndefOr[typings.awsSdk.detectiveMod.apiVersion] = js.undefined
     
-    var devicefarm: js.UndefOr[typings.awsSdk.devicefarmMod.apiVersion] = js.native
+    var devicefarm: js.UndefOr[typings.awsSdk.devicefarmMod.apiVersion] = js.undefined
     
-    var directconnect: js.UndefOr[typings.awsSdk.directconnectMod.apiVersion] = js.native
+    var directconnect: js.UndefOr[typings.awsSdk.directconnectMod.apiVersion] = js.undefined
     
-    var directoryservice: js.UndefOr[typings.awsSdk.directoryserviceMod.apiVersion] = js.native
+    var directoryservice: js.UndefOr[typings.awsSdk.directoryserviceMod.apiVersion] = js.undefined
     
-    var discovery: js.UndefOr[typings.awsSdk.discoveryMod.apiVersion] = js.native
+    var discovery: js.UndefOr[typings.awsSdk.discoveryMod.apiVersion] = js.undefined
     
-    var dlm: js.UndefOr[typings.awsSdk.dlmMod.apiVersion] = js.native
+    var dlm: js.UndefOr[typings.awsSdk.dlmMod.apiVersion] = js.undefined
     
-    var dms: js.UndefOr[typings.awsSdk.dmsMod.apiVersion] = js.native
+    var dms: js.UndefOr[typings.awsSdk.dmsMod.apiVersion] = js.undefined
     
-    var docdb: js.UndefOr[typings.awsSdk.docdbMod.apiVersion] = js.native
+    var docdb: js.UndefOr[typings.awsSdk.docdbMod.apiVersion] = js.undefined
     
-    var dynamodb: js.UndefOr[typings.awsSdk.dynamodbMod.apiVersion] = js.native
+    var dynamodb: js.UndefOr[typings.awsSdk.dynamodbMod.apiVersion] = js.undefined
     
-    var dynamodbstreams: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.apiVersion] = js.native
+    var dynamodbstreams: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.apiVersion] = js.undefined
     
-    var ebs: js.UndefOr[typings.awsSdk.ebsMod.apiVersion] = js.native
+    var ebs: js.UndefOr[typings.awsSdk.ebsMod.apiVersion] = js.undefined
     
-    var ec2: js.UndefOr[typings.awsSdk.ec2Mod.apiVersion] = js.native
+    var ec2: js.UndefOr[typings.awsSdk.ec2Mod.apiVersion] = js.undefined
     
-    var ec2instanceconnect: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.apiVersion] = js.native
+    var ec2instanceconnect: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.apiVersion] = js.undefined
     
-    var ecr: js.UndefOr[typings.awsSdk.ecrMod.apiVersion] = js.native
+    var ecr: js.UndefOr[typings.awsSdk.ecrMod.apiVersion] = js.undefined
     
-    var ecs: js.UndefOr[typings.awsSdk.ecsMod.apiVersion] = js.native
+    var ecs: js.UndefOr[typings.awsSdk.ecsMod.apiVersion] = js.undefined
     
-    var efs: js.UndefOr[typings.awsSdk.efsMod.apiVersion] = js.native
+    var efs: js.UndefOr[typings.awsSdk.efsMod.apiVersion] = js.undefined
     
-    var eks: js.UndefOr[typings.awsSdk.eksMod.apiVersion] = js.native
+    var eks: js.UndefOr[typings.awsSdk.eksMod.apiVersion] = js.undefined
     
-    var elasticache: js.UndefOr[typings.awsSdk.elasticacheMod.apiVersion] = js.native
+    var elasticache: js.UndefOr[typings.awsSdk.elasticacheMod.apiVersion] = js.undefined
     
-    var elasticbeanstalk: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.apiVersion] = js.native
+    var elasticbeanstalk: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.apiVersion] = js.undefined
     
-    var elasticinference: js.UndefOr[typings.awsSdk.elasticinferenceMod.apiVersion] = js.native
+    var elasticinference: js.UndefOr[typings.awsSdk.elasticinferenceMod.apiVersion] = js.undefined
     
-    var elastictranscoder: js.UndefOr[typings.awsSdk.elastictranscoderMod.apiVersion] = js.native
+    var elastictranscoder: js.UndefOr[typings.awsSdk.elastictranscoderMod.apiVersion] = js.undefined
     
-    var elb: js.UndefOr[typings.awsSdk.elbMod.apiVersion] = js.native
+    var elb: js.UndefOr[typings.awsSdk.elbMod.apiVersion] = js.undefined
     
-    var elbv2: js.UndefOr[typings.awsSdk.elbv2Mod.apiVersion] = js.native
+    var elbv2: js.UndefOr[typings.awsSdk.elbv2Mod.apiVersion] = js.undefined
     
-    var emr: js.UndefOr[typings.awsSdk.emrMod.apiVersion] = js.native
+    var emr: js.UndefOr[typings.awsSdk.emrMod.apiVersion] = js.undefined
     
-    var es: js.UndefOr[typings.awsSdk.esMod.apiVersion] = js.native
+    var es: js.UndefOr[typings.awsSdk.esMod.apiVersion] = js.undefined
     
-    var eventbridge: js.UndefOr[typings.awsSdk.eventbridgeMod.apiVersion] = js.native
+    var eventbridge: js.UndefOr[typings.awsSdk.eventbridgeMod.apiVersion] = js.undefined
     
-    var firehose: js.UndefOr[typings.awsSdk.firehoseMod.apiVersion] = js.native
+    var firehose: js.UndefOr[typings.awsSdk.firehoseMod.apiVersion] = js.undefined
     
-    var fms: js.UndefOr[typings.awsSdk.fmsMod.apiVersion] = js.native
+    var fms: js.UndefOr[typings.awsSdk.fmsMod.apiVersion] = js.undefined
     
-    var forecastqueryservice: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.apiVersion] = js.native
+    var forecastqueryservice: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.apiVersion] = js.undefined
     
-    var forecastservice: js.UndefOr[typings.awsSdk.forecastserviceMod.apiVersion] = js.native
+    var forecastservice: js.UndefOr[typings.awsSdk.forecastserviceMod.apiVersion] = js.undefined
     
-    var frauddetector: js.UndefOr[typings.awsSdk.frauddetectorMod.apiVersion] = js.native
+    var frauddetector: js.UndefOr[typings.awsSdk.frauddetectorMod.apiVersion] = js.undefined
     
-    var fsx: js.UndefOr[typings.awsSdk.fsxMod.apiVersion] = js.native
+    var fsx: js.UndefOr[typings.awsSdk.fsxMod.apiVersion] = js.undefined
     
-    var gamelift: js.UndefOr[typings.awsSdk.gameliftMod.apiVersion] = js.native
+    var gamelift: js.UndefOr[typings.awsSdk.gameliftMod.apiVersion] = js.undefined
     
-    var glacier: js.UndefOr[typings.awsSdk.glacierMod.apiVersion] = js.native
+    var glacier: js.UndefOr[typings.awsSdk.glacierMod.apiVersion] = js.undefined
     
-    var globalaccelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.apiVersion] = js.native
+    var globalaccelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.apiVersion] = js.undefined
     
-    var glue: js.UndefOr[typings.awsSdk.glueMod.apiVersion] = js.native
+    var glue: js.UndefOr[typings.awsSdk.glueMod.apiVersion] = js.undefined
     
-    var greengrass: js.UndefOr[typings.awsSdk.greengrassMod.apiVersion] = js.native
+    var greengrass: js.UndefOr[typings.awsSdk.greengrassMod.apiVersion] = js.undefined
     
-    var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.apiVersion] = js.native
+    var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.apiVersion] = js.undefined
     
-    var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.apiVersion] = js.native
+    var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.apiVersion] = js.undefined
     
-    var health: js.UndefOr[typings.awsSdk.healthMod.apiVersion] = js.native
+    var health: js.UndefOr[typings.awsSdk.healthMod.apiVersion] = js.undefined
     
-    var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.apiVersion] = js.native
+    var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.apiVersion] = js.undefined
     
-    var iam: js.UndefOr[typings.awsSdk.iamMod.apiVersion] = js.native
+    var iam: js.UndefOr[typings.awsSdk.iamMod.apiVersion] = js.undefined
     
-    var identitystore: js.UndefOr[typings.awsSdk.identitystoreMod.apiVersion] = js.native
+    var identitystore: js.UndefOr[typings.awsSdk.identitystoreMod.apiVersion] = js.undefined
     
-    var imagebuilder: js.UndefOr[typings.awsSdk.imagebuilderMod.apiVersion] = js.native
+    var imagebuilder: js.UndefOr[typings.awsSdk.imagebuilderMod.apiVersion] = js.undefined
     
-    var importexport: js.UndefOr[typings.awsSdk.importexportMod.apiVersion] = js.native
+    var importexport: js.UndefOr[typings.awsSdk.importexportMod.apiVersion] = js.undefined
     
-    var inspector: js.UndefOr[typings.awsSdk.inspectorMod.apiVersion] = js.native
+    var inspector: js.UndefOr[typings.awsSdk.inspectorMod.apiVersion] = js.undefined
     
-    var iot: js.UndefOr[typings.awsSdk.iotMod.apiVersion] = js.native
+    var iot: js.UndefOr[typings.awsSdk.iotMod.apiVersion] = js.undefined
     
-    var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.apiVersion] = js.native
+    var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.apiVersion] = js.undefined
     
-    var iot1clickprojects: js.UndefOr[typings.awsSdk.iot1clickprojectsMod.apiVersion] = js.native
+    var iot1clickprojects: js.UndefOr[typings.awsSdk.iot1clickprojectsMod.apiVersion] = js.undefined
     
-    var iotanalytics: js.UndefOr[typings.awsSdk.iotanalyticsMod.apiVersion] = js.native
+    var iotanalytics: js.UndefOr[typings.awsSdk.iotanalyticsMod.apiVersion] = js.undefined
     
-    var iotdata: js.UndefOr[typings.awsSdk.iotdataMod.apiVersion] = js.native
+    var iotdata: js.UndefOr[typings.awsSdk.iotdataMod.apiVersion] = js.undefined
     
-    var iotevents: js.UndefOr[typings.awsSdk.ioteventsMod.apiVersion] = js.native
+    var iotevents: js.UndefOr[typings.awsSdk.ioteventsMod.apiVersion] = js.undefined
     
-    var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.apiVersion] = js.native
+    var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.apiVersion] = js.undefined
     
-    var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.apiVersion] = js.native
+    var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.apiVersion] = js.undefined
     
-    var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.apiVersion] = js.native
+    var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.apiVersion] = js.undefined
     
-    var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.apiVersion] = js.native
+    var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.apiVersion] = js.undefined
     
-    var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.apiVersion] = js.native
+    var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.apiVersion] = js.undefined
     
-    var ivs: js.UndefOr[typings.awsSdk.ivsMod.apiVersion] = js.native
+    var ivs: js.UndefOr[typings.awsSdk.ivsMod.apiVersion] = js.undefined
     
-    var kafka: js.UndefOr[typings.awsSdk.kafkaMod.apiVersion] = js.native
+    var kafka: js.UndefOr[typings.awsSdk.kafkaMod.apiVersion] = js.undefined
     
-    var kendra: js.UndefOr[typings.awsSdk.kendraMod.apiVersion] = js.native
+    var kendra: js.UndefOr[typings.awsSdk.kendraMod.apiVersion] = js.undefined
     
-    var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.apiVersion] = js.native
+    var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.apiVersion] = js.undefined
     
-    var kinesisanalytics: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.apiVersion] = js.native
+    var kinesisanalytics: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.apiVersion] = js.undefined
     
-    var kinesisanalyticsv2: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.apiVersion] = js.native
+    var kinesisanalyticsv2: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.apiVersion] = js.undefined
     
-    var kinesisvideo: js.UndefOr[typings.awsSdk.kinesisvideoMod.apiVersion] = js.native
+    var kinesisvideo: js.UndefOr[typings.awsSdk.kinesisvideoMod.apiVersion] = js.undefined
     
-    var kinesisvideoarchivedmedia: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion] = js.native
+    var kinesisvideoarchivedmedia: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion] = js.undefined
     
-    var kinesisvideomedia: js.UndefOr[typings.awsSdk.kinesisvideomediaMod.apiVersion] = js.native
+    var kinesisvideomedia: js.UndefOr[typings.awsSdk.kinesisvideomediaMod.apiVersion] = js.undefined
     
-    var kinesisvideosignalingchannels: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion] = js.native
+    var kinesisvideosignalingchannels: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion] = js.undefined
     
-    var kms: js.UndefOr[typings.awsSdk.kmsMod.apiVersion] = js.native
+    var kms: js.UndefOr[typings.awsSdk.kmsMod.apiVersion] = js.undefined
     
-    var lakeformation: js.UndefOr[typings.awsSdk.lakeformationMod.apiVersion] = js.native
+    var lakeformation: js.UndefOr[typings.awsSdk.lakeformationMod.apiVersion] = js.undefined
     
-    var lambda: js.UndefOr[typings.awsSdk.lambdaMod.apiVersion] = js.native
+    var lambda: js.UndefOr[typings.awsSdk.lambdaMod.apiVersion] = js.undefined
     
-    var lexmodelbuildingservice: js.UndefOr[typings.awsSdk.lexmodelbuildingserviceMod.apiVersion] = js.native
+    var lexmodelbuildingservice: js.UndefOr[typings.awsSdk.lexmodelbuildingserviceMod.apiVersion] = js.undefined
     
-    var lexruntime: js.UndefOr[typings.awsSdk.lexruntimeMod.apiVersion] = js.native
+    var lexruntime: js.UndefOr[typings.awsSdk.lexruntimeMod.apiVersion] = js.undefined
     
-    var licensemanager: js.UndefOr[typings.awsSdk.licensemanagerMod.apiVersion] = js.native
+    var licensemanager: js.UndefOr[typings.awsSdk.licensemanagerMod.apiVersion] = js.undefined
     
-    var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.apiVersion] = js.native
+    var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.apiVersion] = js.undefined
     
-    var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.apiVersion] = js.native
+    var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.apiVersion] = js.undefined
     
-    var macie: js.UndefOr[typings.awsSdk.macieMod.apiVersion] = js.native
+    var macie: js.UndefOr[typings.awsSdk.macieMod.apiVersion] = js.undefined
     
-    var macie2: js.UndefOr[typings.awsSdk.macie2Mod.apiVersion] = js.native
+    var macie2: js.UndefOr[typings.awsSdk.macie2Mod.apiVersion] = js.undefined
     
-    var managedblockchain: js.UndefOr[typings.awsSdk.managedblockchainMod.apiVersion] = js.native
+    var managedblockchain: js.UndefOr[typings.awsSdk.managedblockchainMod.apiVersion] = js.undefined
     
-    var marketplacecatalog: js.UndefOr[typings.awsSdk.marketplacecatalogMod.apiVersion] = js.native
+    var marketplacecatalog: js.UndefOr[typings.awsSdk.marketplacecatalogMod.apiVersion] = js.undefined
     
-    var marketplacecommerceanalytics: js.UndefOr[typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion] = js.native
+    var marketplacecommerceanalytics: js.UndefOr[typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion] = js.undefined
     
-    var marketplaceentitlementservice: js.UndefOr[typings.awsSdk.marketplaceentitlementserviceMod.apiVersion] = js.native
+    var marketplaceentitlementservice: js.UndefOr[typings.awsSdk.marketplaceentitlementserviceMod.apiVersion] = js.undefined
     
-    var marketplacemetering: js.UndefOr[typings.awsSdk.marketplacemeteringMod.apiVersion] = js.native
+    var marketplacemetering: js.UndefOr[typings.awsSdk.marketplacemeteringMod.apiVersion] = js.undefined
     
-    var mediaconnect: js.UndefOr[typings.awsSdk.mediaconnectMod.apiVersion] = js.native
+    var mediaconnect: js.UndefOr[typings.awsSdk.mediaconnectMod.apiVersion] = js.undefined
     
-    var mediaconvert: js.UndefOr[typings.awsSdk.mediaconvertMod.apiVersion] = js.native
+    var mediaconvert: js.UndefOr[typings.awsSdk.mediaconvertMod.apiVersion] = js.undefined
     
-    var medialive: js.UndefOr[typings.awsSdk.medialiveMod.apiVersion] = js.native
+    var medialive: js.UndefOr[typings.awsSdk.medialiveMod.apiVersion] = js.undefined
     
-    var mediapackage: js.UndefOr[typings.awsSdk.mediapackageMod.apiVersion] = js.native
+    var mediapackage: js.UndefOr[typings.awsSdk.mediapackageMod.apiVersion] = js.undefined
     
-    var mediapackagevod: js.UndefOr[typings.awsSdk.mediapackagevodMod.apiVersion] = js.native
+    var mediapackagevod: js.UndefOr[typings.awsSdk.mediapackagevodMod.apiVersion] = js.undefined
     
-    var mediastore: js.UndefOr[typings.awsSdk.mediastoreMod.apiVersion] = js.native
+    var mediastore: js.UndefOr[typings.awsSdk.mediastoreMod.apiVersion] = js.undefined
     
-    var mediastoredata: js.UndefOr[typings.awsSdk.mediastoredataMod.apiVersion] = js.native
+    var mediastoredata: js.UndefOr[typings.awsSdk.mediastoredataMod.apiVersion] = js.undefined
     
-    var mediatailor: js.UndefOr[typings.awsSdk.mediatailorMod.apiVersion] = js.native
+    var mediatailor: js.UndefOr[typings.awsSdk.mediatailorMod.apiVersion] = js.undefined
     
-    var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.apiVersion] = js.native
+    var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.apiVersion] = js.undefined
     
-    var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.apiVersion] = js.native
+    var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.apiVersion] = js.undefined
     
-    var mobile: js.UndefOr[typings.awsSdk.mobileMod.apiVersion] = js.native
+    var mobile: js.UndefOr[typings.awsSdk.mobileMod.apiVersion] = js.undefined
     
-    var mobileanalytics: js.UndefOr[typings.awsSdk.mobileanalyticsMod.apiVersion] = js.native
+    var mobileanalytics: js.UndefOr[typings.awsSdk.mobileanalyticsMod.apiVersion] = js.undefined
     
-    var mq: js.UndefOr[typings.awsSdk.mqMod.apiVersion] = js.native
+    var mq: js.UndefOr[typings.awsSdk.mqMod.apiVersion] = js.undefined
     
-    var mturk: js.UndefOr[typings.awsSdk.mturkMod.apiVersion] = js.native
+    var mturk: js.UndefOr[typings.awsSdk.mturkMod.apiVersion] = js.undefined
     
-    var neptune: js.UndefOr[typings.awsSdk.neptuneMod.apiVersion] = js.native
+    var neptune: js.UndefOr[typings.awsSdk.neptuneMod.apiVersion] = js.undefined
     
-    var networkfirewall: js.UndefOr[typings.awsSdk.networkfirewallMod.apiVersion] = js.native
+    var networkfirewall: js.UndefOr[typings.awsSdk.networkfirewallMod.apiVersion] = js.undefined
     
-    var networkmanager: js.UndefOr[typings.awsSdk.networkmanagerMod.apiVersion] = js.native
+    var networkmanager: js.UndefOr[typings.awsSdk.networkmanagerMod.apiVersion] = js.undefined
     
-    var opsworks: js.UndefOr[typings.awsSdk.opsworksMod.apiVersion] = js.native
+    var opsworks: js.UndefOr[typings.awsSdk.opsworksMod.apiVersion] = js.undefined
     
-    var opsworkscm: js.UndefOr[typings.awsSdk.opsworkscmMod.apiVersion] = js.native
+    var opsworkscm: js.UndefOr[typings.awsSdk.opsworkscmMod.apiVersion] = js.undefined
     
-    var organizations: js.UndefOr[typings.awsSdk.organizationsMod.apiVersion] = js.native
+    var organizations: js.UndefOr[typings.awsSdk.organizationsMod.apiVersion] = js.undefined
     
-    var outposts: js.UndefOr[typings.awsSdk.outpostsMod.apiVersion] = js.native
+    var outposts: js.UndefOr[typings.awsSdk.outpostsMod.apiVersion] = js.undefined
     
-    var personalize: js.UndefOr[typings.awsSdk.personalizeMod.apiVersion] = js.native
+    var personalize: js.UndefOr[typings.awsSdk.personalizeMod.apiVersion] = js.undefined
     
-    var personalizeevents: js.UndefOr[typings.awsSdk.personalizeeventsMod.apiVersion] = js.native
+    var personalizeevents: js.UndefOr[typings.awsSdk.personalizeeventsMod.apiVersion] = js.undefined
     
-    var personalizeruntime: js.UndefOr[typings.awsSdk.personalizeruntimeMod.apiVersion] = js.native
+    var personalizeruntime: js.UndefOr[typings.awsSdk.personalizeruntimeMod.apiVersion] = js.undefined
     
-    var pi: js.UndefOr[typings.awsSdk.piMod.apiVersion] = js.native
+    var pi: js.UndefOr[typings.awsSdk.piMod.apiVersion] = js.undefined
     
-    var pinpoint: js.UndefOr[typings.awsSdk.pinpointMod.apiVersion] = js.native
+    var pinpoint: js.UndefOr[typings.awsSdk.pinpointMod.apiVersion] = js.undefined
     
-    var pinpointemail: js.UndefOr[typings.awsSdk.pinpointemailMod.apiVersion] = js.native
+    var pinpointemail: js.UndefOr[typings.awsSdk.pinpointemailMod.apiVersion] = js.undefined
     
-    var pinpointsmsvoice: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.apiVersion] = js.native
+    var pinpointsmsvoice: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.apiVersion] = js.undefined
     
-    var polly: js.UndefOr[typings.awsSdk.pollyMod.apiVersion] = js.native
+    var polly: js.UndefOr[typings.awsSdk.pollyMod.apiVersion] = js.undefined
     
-    var pricing: js.UndefOr[typings.awsSdk.pricingMod.apiVersion] = js.native
+    var pricing: js.UndefOr[typings.awsSdk.pricingMod.apiVersion] = js.undefined
     
-    var qldb: js.UndefOr[typings.awsSdk.qldbMod.apiVersion] = js.native
+    var qldb: js.UndefOr[typings.awsSdk.qldbMod.apiVersion] = js.undefined
     
-    var qldbsession: js.UndefOr[typings.awsSdk.qldbsessionMod.apiVersion] = js.native
+    var qldbsession: js.UndefOr[typings.awsSdk.qldbsessionMod.apiVersion] = js.undefined
     
-    var quicksight: js.UndefOr[typings.awsSdk.quicksightMod.apiVersion] = js.native
+    var quicksight: js.UndefOr[typings.awsSdk.quicksightMod.apiVersion] = js.undefined
     
-    var ram: js.UndefOr[typings.awsSdk.ramMod.apiVersion] = js.native
+    var ram: js.UndefOr[typings.awsSdk.ramMod.apiVersion] = js.undefined
     
-    var rds: js.UndefOr[typings.awsSdk.rdsMod.apiVersion] = js.native
+    var rds: js.UndefOr[typings.awsSdk.rdsMod.apiVersion] = js.undefined
     
-    var rdsdataservice: js.UndefOr[typings.awsSdk.rdsdataserviceMod.apiVersion] = js.native
+    var rdsdataservice: js.UndefOr[typings.awsSdk.rdsdataserviceMod.apiVersion] = js.undefined
     
-    var redshift: js.UndefOr[typings.awsSdk.redshiftMod.apiVersion] = js.native
+    var redshift: js.UndefOr[typings.awsSdk.redshiftMod.apiVersion] = js.undefined
     
-    var redshiftdata: js.UndefOr[typings.awsSdk.redshiftdataMod.apiVersion] = js.native
+    var redshiftdata: js.UndefOr[typings.awsSdk.redshiftdataMod.apiVersion] = js.undefined
     
-    var rekognition: js.UndefOr[typings.awsSdk.rekognitionMod.apiVersion] = js.native
+    var rekognition: js.UndefOr[typings.awsSdk.rekognitionMod.apiVersion] = js.undefined
     
-    var resourcegroups: js.UndefOr[typings.awsSdk.resourcegroupsMod.apiVersion] = js.native
+    var resourcegroups: js.UndefOr[typings.awsSdk.resourcegroupsMod.apiVersion] = js.undefined
     
-    var resourcegroupstaggingapi: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.apiVersion] = js.native
+    var resourcegroupstaggingapi: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.apiVersion] = js.undefined
     
-    var robomaker: js.UndefOr[typings.awsSdk.robomakerMod.apiVersion] = js.native
+    var robomaker: js.UndefOr[typings.awsSdk.robomakerMod.apiVersion] = js.undefined
     
-    var route53: js.UndefOr[typings.awsSdk.route53Mod.apiVersion] = js.native
+    var route53: js.UndefOr[typings.awsSdk.route53Mod.apiVersion] = js.undefined
     
-    var route53domains: js.UndefOr[typings.awsSdk.route53domainsMod.apiVersion] = js.native
+    var route53domains: js.UndefOr[typings.awsSdk.route53domainsMod.apiVersion] = js.undefined
     
-    var route53resolver: js.UndefOr[typings.awsSdk.route53resolverMod.apiVersion] = js.native
+    var route53resolver: js.UndefOr[typings.awsSdk.route53resolverMod.apiVersion] = js.undefined
     
-    var s3: js.UndefOr[typings.awsSdk.s3Mod.apiVersion] = js.native
+    var s3: js.UndefOr[typings.awsSdk.s3Mod.apiVersion] = js.undefined
     
-    var s3control: js.UndefOr[typings.awsSdk.s3controlMod.apiVersion] = js.native
+    var s3control: js.UndefOr[typings.awsSdk.s3controlMod.apiVersion] = js.undefined
     
-    var s3outposts: js.UndefOr[typings.awsSdk.s3outpostsMod.apiVersion] = js.native
+    var s3outposts: js.UndefOr[typings.awsSdk.s3outpostsMod.apiVersion] = js.undefined
     
-    var sagemaker: js.UndefOr[typings.awsSdk.sagemakerMod.apiVersion] = js.native
+    var sagemaker: js.UndefOr[typings.awsSdk.sagemakerMod.apiVersion] = js.undefined
     
-    var sagemakerruntime: js.UndefOr[typings.awsSdk.sagemakerruntimeMod.apiVersion] = js.native
+    var sagemakerruntime: js.UndefOr[typings.awsSdk.sagemakerruntimeMod.apiVersion] = js.undefined
     
-    var savingsplans: js.UndefOr[typings.awsSdk.savingsplansMod.apiVersion] = js.native
+    var savingsplans: js.UndefOr[typings.awsSdk.savingsplansMod.apiVersion] = js.undefined
     
-    var schemas: js.UndefOr[typings.awsSdk.schemasMod.apiVersion] = js.native
+    var schemas: js.UndefOr[typings.awsSdk.schemasMod.apiVersion] = js.undefined
     
-    var secretsmanager: js.UndefOr[typings.awsSdk.secretsmanagerMod.apiVersion] = js.native
+    var secretsmanager: js.UndefOr[typings.awsSdk.secretsmanagerMod.apiVersion] = js.undefined
     
-    var securityhub: js.UndefOr[typings.awsSdk.securityhubMod.apiVersion] = js.native
+    var securityhub: js.UndefOr[typings.awsSdk.securityhubMod.apiVersion] = js.undefined
     
-    var serverlessapplicationrepository: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion] = js.native
+    var serverlessapplicationrepository: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion] = js.undefined
     
-    var servicecatalog: js.UndefOr[typings.awsSdk.servicecatalogMod.apiVersion] = js.native
+    var servicecatalog: js.UndefOr[typings.awsSdk.servicecatalogMod.apiVersion] = js.undefined
     
-    var servicecatalogappregistry: js.UndefOr[typings.awsSdk.servicecatalogappregistryMod.apiVersion] = js.native
+    var servicecatalogappregistry: js.UndefOr[typings.awsSdk.servicecatalogappregistryMod.apiVersion] = js.undefined
     
-    var servicediscovery: js.UndefOr[typings.awsSdk.servicediscoveryMod.apiVersion] = js.native
+    var servicediscovery: js.UndefOr[typings.awsSdk.servicediscoveryMod.apiVersion] = js.undefined
     
-    var servicequotas: js.UndefOr[typings.awsSdk.servicequotasMod.apiVersion] = js.native
+    var servicequotas: js.UndefOr[typings.awsSdk.servicequotasMod.apiVersion] = js.undefined
     
-    var ses: js.UndefOr[typings.awsSdk.sesMod.apiVersion] = js.native
+    var ses: js.UndefOr[typings.awsSdk.sesMod.apiVersion] = js.undefined
     
-    var sesv2: js.UndefOr[typings.awsSdk.sesv2Mod.apiVersion] = js.native
+    var sesv2: js.UndefOr[typings.awsSdk.sesv2Mod.apiVersion] = js.undefined
     
-    var shield: js.UndefOr[typings.awsSdk.shieldMod.apiVersion] = js.native
+    var shield: js.UndefOr[typings.awsSdk.shieldMod.apiVersion] = js.undefined
     
-    var signer: js.UndefOr[typings.awsSdk.signerMod.apiVersion] = js.native
+    var signer: js.UndefOr[typings.awsSdk.signerMod.apiVersion] = js.undefined
     
-    var simpledb: js.UndefOr[typings.awsSdk.simpledbMod.apiVersion] = js.native
+    var simpledb: js.UndefOr[typings.awsSdk.simpledbMod.apiVersion] = js.undefined
     
-    var sms: js.UndefOr[typings.awsSdk.smsMod.apiVersion] = js.native
+    var sms: js.UndefOr[typings.awsSdk.smsMod.apiVersion] = js.undefined
     
-    var snowball: js.UndefOr[typings.awsSdk.snowballMod.apiVersion] = js.native
+    var snowball: js.UndefOr[typings.awsSdk.snowballMod.apiVersion] = js.undefined
     
-    var sns: js.UndefOr[typings.awsSdk.snsMod.apiVersion] = js.native
+    var sns: js.UndefOr[typings.awsSdk.snsMod.apiVersion] = js.undefined
     
-    var sqs: js.UndefOr[typings.awsSdk.sqsMod.apiVersion] = js.native
+    var sqs: js.UndefOr[typings.awsSdk.sqsMod.apiVersion] = js.undefined
     
-    var ssm: js.UndefOr[typings.awsSdk.ssmMod.apiVersion] = js.native
+    var ssm: js.UndefOr[typings.awsSdk.ssmMod.apiVersion] = js.undefined
     
-    var sso: js.UndefOr[typings.awsSdk.ssoMod.apiVersion] = js.native
+    var sso: js.UndefOr[typings.awsSdk.ssoMod.apiVersion] = js.undefined
     
-    var ssoadmin: js.UndefOr[typings.awsSdk.ssoadminMod.apiVersion] = js.native
+    var ssoadmin: js.UndefOr[typings.awsSdk.ssoadminMod.apiVersion] = js.undefined
     
-    var ssooidc: js.UndefOr[typings.awsSdk.ssooidcMod.apiVersion] = js.native
+    var ssooidc: js.UndefOr[typings.awsSdk.ssooidcMod.apiVersion] = js.undefined
     
-    var stepfunctions: js.UndefOr[typings.awsSdk.stepfunctionsMod.apiVersion] = js.native
+    var stepfunctions: js.UndefOr[typings.awsSdk.stepfunctionsMod.apiVersion] = js.undefined
     
-    var storagegateway: js.UndefOr[typings.awsSdk.storagegatewayMod.apiVersion] = js.native
+    var storagegateway: js.UndefOr[typings.awsSdk.storagegatewayMod.apiVersion] = js.undefined
     
-    var sts: js.UndefOr[typings.awsSdk.stsMod.apiVersion] = js.native
+    var sts: js.UndefOr[typings.awsSdk.stsMod.apiVersion] = js.undefined
     
-    var support: js.UndefOr[typings.awsSdk.supportMod.apiVersion] = js.native
+    var support: js.UndefOr[typings.awsSdk.supportMod.apiVersion] = js.undefined
     
-    var swf: js.UndefOr[typings.awsSdk.swfMod.apiVersion] = js.native
+    var swf: js.UndefOr[typings.awsSdk.swfMod.apiVersion] = js.undefined
     
-    var synthetics: js.UndefOr[typings.awsSdk.syntheticsMod.apiVersion] = js.native
+    var synthetics: js.UndefOr[typings.awsSdk.syntheticsMod.apiVersion] = js.undefined
     
-    var textract: js.UndefOr[typings.awsSdk.textractMod.apiVersion] = js.native
+    var textract: js.UndefOr[typings.awsSdk.textractMod.apiVersion] = js.undefined
     
-    var timestreamquery: js.UndefOr[typings.awsSdk.timestreamqueryMod.apiVersion] = js.native
+    var timestreamquery: js.UndefOr[typings.awsSdk.timestreamqueryMod.apiVersion] = js.undefined
     
-    var timestreamwrite: js.UndefOr[typings.awsSdk.timestreamwriteMod.apiVersion] = js.native
+    var timestreamwrite: js.UndefOr[typings.awsSdk.timestreamwriteMod.apiVersion] = js.undefined
     
-    var transcribeservice: js.UndefOr[typings.awsSdk.transcribeserviceMod.apiVersion] = js.native
+    var transcribeservice: js.UndefOr[typings.awsSdk.transcribeserviceMod.apiVersion] = js.undefined
     
-    var transfer: js.UndefOr[typings.awsSdk.transferMod.apiVersion] = js.native
+    var transfer: js.UndefOr[typings.awsSdk.transferMod.apiVersion] = js.undefined
     
-    var translate: js.UndefOr[typings.awsSdk.translateMod.apiVersion] = js.native
+    var translate: js.UndefOr[typings.awsSdk.translateMod.apiVersion] = js.undefined
     
-    var waf: js.UndefOr[typings.awsSdk.wafMod.apiVersion] = js.native
+    var waf: js.UndefOr[typings.awsSdk.wafMod.apiVersion] = js.undefined
     
-    var wafregional: js.UndefOr[typings.awsSdk.wafregionalMod.apiVersion] = js.native
+    var wafregional: js.UndefOr[typings.awsSdk.wafregionalMod.apiVersion] = js.undefined
     
-    var wafv2: js.UndefOr[typings.awsSdk.wafv2Mod.apiVersion] = js.native
+    var wafv2: js.UndefOr[typings.awsSdk.wafv2Mod.apiVersion] = js.undefined
     
-    var workdocs: js.UndefOr[typings.awsSdk.workdocsMod.apiVersion] = js.native
+    var workdocs: js.UndefOr[typings.awsSdk.workdocsMod.apiVersion] = js.undefined
     
-    var worklink: js.UndefOr[typings.awsSdk.worklinkMod.apiVersion] = js.native
+    var worklink: js.UndefOr[typings.awsSdk.worklinkMod.apiVersion] = js.undefined
     
-    var workmail: js.UndefOr[typings.awsSdk.workmailMod.apiVersion] = js.native
+    var workmail: js.UndefOr[typings.awsSdk.workmailMod.apiVersion] = js.undefined
     
-    var workmailmessageflow: js.UndefOr[typings.awsSdk.workmailmessageflowMod.apiVersion] = js.native
+    var workmailmessageflow: js.UndefOr[typings.awsSdk.workmailmessageflowMod.apiVersion] = js.undefined
     
-    var workspaces: js.UndefOr[typings.awsSdk.workspacesMod.apiVersion] = js.native
+    var workspaces: js.UndefOr[typings.awsSdk.workspacesMod.apiVersion] = js.undefined
     
-    var xray: js.UndefOr[typings.awsSdk.xrayMod.apiVersion] = js.native
+    var xray: js.UndefOr[typings.awsSdk.xrayMod.apiVersion] = js.undefined
   }
   object ConfigurationServiceApiVersions {
     

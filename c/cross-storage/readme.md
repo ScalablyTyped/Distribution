@@ -11,8 +11,8 @@ Cross domain local storage
 | Full name          | cross-storage |
 | Keywords           | local, storage, cross, domain |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 389208 |
+| # dependents       | 19 |
+| # downloads        | 445119 |
 | # stars            | 5 |
 
 ## Links

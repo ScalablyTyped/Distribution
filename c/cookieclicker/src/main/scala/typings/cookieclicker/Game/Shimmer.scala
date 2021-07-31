@@ -4,35 +4,33 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shimmer[N /* <: String */, C /* <: js.Object */] extends StObject {
   
-  def die(): Unit = js.native
+  def die(): Unit
   
-  var forceObj: C = js.native
+  var forceObj: C
   
-  var id: Double = js.native
+  var id: Double
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  var l: HTMLElement = js.native
+  var l: HTMLElement
   
-  var noCount: Boolean = js.native
+  var noCount: Boolean
   
-  def pop(event: MouseEvent): Unit = js.native
+  def pop(event: MouseEvent): Unit
   
-  var spawnLead: Double = js.native
+  var spawnLead: Double
   
-  var `type`: N = js.native
+  var `type`: N
   
-  def update(): Unit = js.native
+  def update(): Unit
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Shimmer {
   
@@ -57,7 +55,7 @@ object Shimmer {
   }
   
   @scala.inline
-  implicit class ShimmerMutableBuilder[Self <: Shimmer[_, _], N /* <: String */, C /* <: js.Object */] (val x: Self with (Shimmer[N, C])) extends AnyVal {
+  implicit class ShimmerMutableBuilder[Self <: Shimmer[?, ?], N /* <: String */, C /* <: js.Object */] (val x: Self & (Shimmer[N, C])) extends AnyVal {
     
     @scala.inline
     def setDie(value: () => Unit): Self = StObject.set(x, "die", js.Any.fromFunction0(value))

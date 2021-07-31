@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameNavigatedEvent extends StObject {
   
   /**
     * Frame object.
     */
-  var frame: Frame = js.native
+  var frame: Frame
 }
 object FrameNavigatedEvent {
   

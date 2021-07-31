@@ -3,7 +3,6 @@ package typings.twilioSync
 import typings.twilioSync.subscriptionsMod.Subscriptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicesMod {
@@ -38,24 +37,23 @@ object servicesMod {
     def this(token: String, productId: String, options: js.Any) = this()
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var backoffConfig: js.Any = js.native
+    var backoffConfig: js.Any
     
-    var documentsUri: String = js.native
+    var documentsUri: String
     
-    var insightsUri: String = js.native
+    var insightsUri: String
     
-    var listsUri: String = js.native
+    var listsUri: String
     
-    var mapsUri: String = js.native
+    var mapsUri: String
     
-    var sessionStorageEnabled: Boolean = js.native
+    var sessionStorageEnabled: Boolean
     
-    var streamsUri: String = js.native
+    var streamsUri: String
     
-    var subscriptionsUri: String = js.native
+    var subscriptionsUri: String
   }
   object Configuration {
     
@@ -111,19 +109,18 @@ object servicesMod {
     def get(uri: String): js.Any = js.native
     
     def post(uri: String, body: js.Object): js.Any = js.native
-    def post(uri: String, body: js.Object, revision: js.UndefOr[scala.Nothing], retryWhenThrottled: Boolean): js.Any = js.native
     def post(uri: String, body: js.Object, revision: String): js.Any = js.native
     def post(uri: String, body: js.Object, revision: String, retryWhenThrottled: Boolean): js.Any = js.native
+    def post(uri: String, body: js.Object, revision: Unit, retryWhenThrottled: Boolean): js.Any = js.native
     
     def put(uri: String, body: js.Object, revision: String): js.Any = js.native
   }
   
-  @js.native
   trait Notifications extends StObject {
     
-    var connectionState: js.Any = js.native
+    var connectionState: js.Any
     
-    def updateToken(token: String): js.Promise[Notifications] = js.native
+    def updateToken(token: String): js.Promise[Notifications]
   }
   object Notifications {
     
@@ -144,22 +141,21 @@ object servicesMod {
     }
   }
   
-  @js.native
   trait Services extends StObject {
     
-    var config: Configuration = js.native
+    var config: Configuration
     
-    var network: Network = js.native
+    var network: Network
     
-    var notifications: Notifications = js.native
+    var notifications: Notifications
     
-    var router: typings.twilioSync.routerMod.Router = js.native
+    var router: typings.twilioSync.routerMod.Router
     
-    var storage: Storage = js.native
+    var storage: Storage
     
-    var subscriptions: Subscriptions = js.native
+    var subscriptions: Subscriptions
     
-    var twilsock: typings.twilsock.mod.Twilsock = js.native
+    var twilsock: typings.twilsock.mod.Twilsock
   }
   object Services {
     
@@ -203,18 +199,17 @@ object servicesMod {
     }
   }
   
-  @js.native
   trait Storage extends StObject {
     
-    def read(`type`: String, id: String): js.Object = js.native
+    def read(`type`: String, id: String): js.Object
     
-    def remove(`type`: String, sid: String, uniqueName: String): js.Any = js.native
+    def remove(`type`: String, sid: String, uniqueName: String): js.Any
     
-    def store(`type`: String, id: String, value: js.Object): js.Any = js.native
+    def store(`type`: String, id: String, value: js.Object): js.Any
     
-    def update(`type`: String, id: String, uniqueName: String, patch: js.Object): js.Any = js.native
+    def update(`type`: String, id: String, uniqueName: String, patch: js.Object): js.Any
     
-    def updateStorageId(storageId: String): js.Any = js.native
+    def updateStorageId(storageId: String): js.Any
   }
   object Storage {
     

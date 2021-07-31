@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ListCollectionsResponse. */
-@js.native
 trait ListCollectionsResponse extends StObject {
   
   /** An array containing information about each collection in the environment. */
-  var collections: js.UndefOr[js.Array[Collection]] = js.native
+  var collections: js.UndefOr[js.Array[Collection]] = js.undefined
 }
 object ListCollectionsResponse {
   

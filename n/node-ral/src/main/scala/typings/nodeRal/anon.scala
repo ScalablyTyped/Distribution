@@ -3,21 +3,19 @@ package typings.nodeRal
 import typings.nodeRal.mod.RalLogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait App extends StObject {
     
-    var app: String = js.native
+    var app: String
     
-    var format_wf: String = js.native
+    var format_wf: String
     
-    var logInstance: RalLogger = js.native
+    var logInstance: RalLogger
     
-    var log_path: String = js.native
+    var log_path: String
   }
   object App {
     

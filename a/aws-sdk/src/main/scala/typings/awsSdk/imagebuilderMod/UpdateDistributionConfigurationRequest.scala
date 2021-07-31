@@ -2,31 +2,29 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDistributionConfigurationRequest extends StObject {
   
   /**
     * The idempotency token of the distribution configuration. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The description of the distribution configuration. 
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration that you want to update. 
     */
-  var distributionConfigurationArn: DistributionConfigurationArn = js.native
+  var distributionConfigurationArn: DistributionConfigurationArn
   
   /**
     * The distributions of the distribution configuration. 
     */
-  var distributions: DistributionList = js.native
+  var distributions: DistributionList
 }
 object UpdateDistributionConfigurationRequest {
   

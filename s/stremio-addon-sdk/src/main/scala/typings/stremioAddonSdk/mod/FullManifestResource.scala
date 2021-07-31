@@ -2,10 +2,8 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullManifestResource extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait FullManifestResource extends StObject {
     *
     * For example, if you set this to ["yt_id:", "tt"], your addon will only be called for id values that start with 'yt_id:' or 'tt'.
     */
-  var idPrefixes: js.UndefOr[js.Array[String]] = js.native
+  var idPrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Resource name.
     */
-  var name: ShortManifestResource = js.native
+  var name: ShortManifestResource
   
   /**
     * Supported types.
     */
-  var types: js.Array[ContentType] = js.native
+  var types: js.Array[ContentType]
 }
 object FullManifestResource {
   

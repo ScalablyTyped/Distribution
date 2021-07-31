@@ -2,39 +2,35 @@ package typings.survicateReactNativeSurvicate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("@survicate/react-native-survicate", "default.enterScreen")
+    @JSImport("@survicate/react-native-survicate", JSImport.Default)
     @js.native
-    def enterScreen(screenName: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@survicate/react-native-survicate", "default.initialize")
-    @js.native
-    def initialize(): Unit = js.native
+    @scala.inline
+    def enterScreen(screenName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enterScreen")(screenName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@survicate/react-native-survicate", "default.invokeEvent")
-    @js.native
-    def invokeEvent(eventName: String): Unit = js.native
+    @scala.inline
+    def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
     
-    @JSImport("@survicate/react-native-survicate", "default.leaveScreen")
-    @js.native
-    def leaveScreen(screenName: String): Unit = js.native
+    @scala.inline
+    def invokeEvent(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@survicate/react-native-survicate", "default.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def leaveScreen(screenName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("leaveScreen")(screenName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@survicate/react-native-survicate", "default.setUserId")
-    @js.native
-    def setUserId(screenName: String): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @JSImport("@survicate/react-native-survicate", "default.setUserTrait")
-    @js.native
-    def setUserTrait(traitName: String, traitValue: String): Unit = js.native
+    @scala.inline
+    def setUserId(screenName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(screenName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setUserTrait(traitName: String, traitValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserTrait")(traitName.asInstanceOf[js.Any], traitValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

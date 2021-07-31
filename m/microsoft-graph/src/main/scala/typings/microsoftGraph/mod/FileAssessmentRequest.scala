@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileAssessmentRequest extends ThreatAssessmentRequest {
+trait FileAssessmentRequest
+  extends StObject
+     with ThreatAssessmentRequest {
   
   // Base64 encoded file content. The file content cannot fetch back because it isn't stored.
-  var contentData: js.UndefOr[String] = js.native
+  var contentData: js.UndefOr[String] = js.undefined
   
   // The file name.
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
 }
 object FileAssessmentRequest {
   

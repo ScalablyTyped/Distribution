@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryStageExecutionInput extends StObject {
   
   /**
     * The ID of the pipeline execution in the failed stage to be retried. Use the GetPipelineState action to retrieve the current pipelineExecutionId of the failed stage
     */
-  var pipelineExecutionId: PipelineExecutionId = js.native
+  var pipelineExecutionId: PipelineExecutionId
   
   /**
     * The name of the pipeline that contains the failed stage.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * The scope of the retry attempt. Currently, the only supported value is FAILED_ACTIONS.
     */
-  var retryMode: StageRetryMode = js.native
+  var retryMode: StageRetryMode
   
   /**
     * The name of the failed stage to be retried.
     */
-  var stageName: StageName = js.native
+  var stageName: StageName
 }
 object RetryStageExecutionInput {
   

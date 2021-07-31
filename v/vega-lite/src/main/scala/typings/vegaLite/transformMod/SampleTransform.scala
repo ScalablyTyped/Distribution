@@ -2,18 +2,18 @@ package typings.vegaLite.transformMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SampleTransform extends Transform {
+trait SampleTransform
+  extends StObject
+     with Transform {
   
   /**
     * The maximum number of data objects to include in the sample.
     *
     * __Default value:__ `1000`
     */
-  var sample: Double = js.native
+  var sample: Double
 }
 object SampleTransform {
   

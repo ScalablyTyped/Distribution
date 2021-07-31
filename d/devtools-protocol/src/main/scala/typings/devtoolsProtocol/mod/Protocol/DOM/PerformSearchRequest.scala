@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformSearchRequest extends StObject {
   
   /**
     * True to search in user agent shadow DOM.
     */
-  var includeUserAgentShadowDOM: js.UndefOr[Boolean] = js.native
+  var includeUserAgentShadowDOM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Plain text or query selector or XPath search query.
     */
-  var query: String = js.native
+  var query: String
 }
 object PerformSearchRequest {
   

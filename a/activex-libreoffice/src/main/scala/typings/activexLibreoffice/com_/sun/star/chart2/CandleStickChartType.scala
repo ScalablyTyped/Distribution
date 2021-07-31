@@ -9,13 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** chart type service for candlestick charts. */
-@js.native
 trait CandleStickChartType
-  extends typings.activexLibreoffice.com_.sun.star.chart2.ChartType {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.chart2.ChartType {
   
   /**
     * If the candlestick chart shows Japanese candlesticks, that is the property {@link Japanese} is `TRUE` , the property set given here contains the
@@ -24,7 +23,7 @@ trait CandleStickChartType
     * The {@link com.sun.star.beans.XPropertySet} given here must support the services {@link com.sun.star.drawing.FillProperties} and {@link
     * com.sun.star.drawing.LineProperties} .
     */
-  var BlackDay: XPropertySet = js.native
+  var BlackDay: XPropertySet
   
   /**
     * If this property is `TRUE` , the candlesticks are shown as Japanese candlesticks. This implies that the property {@link ShowFirst} is also `TRUE` .
@@ -36,7 +35,7 @@ trait CandleStickChartType
     * @see WhiteDay
     * @see BlackDay
     */
-  var Japanese: Boolean = js.native
+  var Japanese: Boolean
   
   /**
     * If this property is `TRUE` , the first value (which would be the opening course in a stock chart) is shown in the chart. This also makes the role
@@ -46,14 +45,14 @@ trait CandleStickChartType
     *
     * Default is `FALSE` .
     */
-  var ShowFirst: Boolean = js.native
+  var ShowFirst: Boolean
   
   /**
     * If this property is `TRUE` , the low and high values are shown in the chart. This also makes the roles "values-min" and "values-max" mandatory.
     *
     * Default is `TRUE` .
     */
-  var ShowHighLow: Boolean = js.native
+  var ShowHighLow: Boolean
   
   /**
     * If the candlestick chart shows Japanese candlesticks, that is the property {@link Japanese} is `TRUE` , the property set given here contains the
@@ -62,7 +61,7 @@ trait CandleStickChartType
     * The {@link com.sun.star.beans.XPropertySet} given here must support the services {@link com.sun.star.drawing.FillProperties} and {@link
     * com.sun.star.drawing.LineProperties} .
     */
-  var WhiteDay: XPropertySet = js.native
+  var WhiteDay: XPropertySet
 }
 object CandleStickChartType {
   

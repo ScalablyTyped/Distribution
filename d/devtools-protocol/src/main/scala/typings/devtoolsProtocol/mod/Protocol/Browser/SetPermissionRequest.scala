@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPermissionRequest extends StObject {
   
   /**
     * Context to override. When omitted, default browser context is used.
     */
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
   
   /**
     * Origin the permission applies to, all origins if not specified.
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /**
     * Descriptor of permission to override.
     */
-  var permission: PermissionDescriptor = js.native
+  var permission: PermissionDescriptor
   
   /**
     * Setting of the permission.
     */
-  var setting: PermissionSetting = js.native
+  var setting: PermissionSetting
 }
 object SetPermissionRequest {
   

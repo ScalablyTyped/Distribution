@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSExportAssignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSExportAssignment_
-  extends Statement
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSExportAssignment_
+  extends StObject
+     with BaseNode
+     with Statement {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_TSExportAssignment_ : TSExportAssignment = js.native
+  var type_TSExportAssignment_ : TSExportAssignment
 }
 object TSExportAssignment_ {
   
   @scala.inline
-  def apply(expression: Expression, `type`: TSExportAssignment): TSExportAssignment_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression): TSExportAssignment_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSExportAssignment")
     __obj.asInstanceOf[TSExportAssignment_]
   }
   

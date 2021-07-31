@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.anon.Fragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "BatchPluginFactory")
 @js.native
 class BatchPluginFactory ()
-  extends typings.pixiJs.PIXI.BatchPluginFactory
+  extends StObject
+     with typings.pixiJs.PIXI.BatchPluginFactory
 object BatchPluginFactory {
+  
+  @JSImport("pixi.js", "BatchPluginFactory")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a new BatchRenderer plugin for Renderer. this convenience can provide an easy way
@@ -47,12 +51,10 @@ object BatchPluginFactory {
     * @return {*} New batch renderer plugin
     */
   /* static member */
-  @JSImport("pixi.js", "BatchPluginFactory.create")
-  @js.native
-  def create(): js.Any = js.native
-  @JSImport("pixi.js", "BatchPluginFactory.create")
-  @js.native
-  def create(options: Fragment): js.Any = js.native
+  @scala.inline
+  def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+  @scala.inline
+  def create(options: Fragment): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * The default fragment shader source

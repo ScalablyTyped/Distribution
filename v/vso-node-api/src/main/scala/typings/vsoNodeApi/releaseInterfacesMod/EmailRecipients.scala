@@ -2,15 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailRecipients extends StObject {
   
-  var emailAddresses: js.Array[String] = js.native
+  var emailAddresses: js.Array[String]
   
-  var tfsIds: js.Array[String] = js.native
+  var tfsIds: js.Array[String]
 }
 object EmailRecipients {
   

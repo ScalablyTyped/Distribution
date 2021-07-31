@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base64Encoded extends StObject {
   
-  var base64Encoded: scala.Double = js.native
+  var base64Encoded: scala.Double
   
-  var rawText: scala.Double = js.native
+  var rawText: scala.Double
 }
 object Base64Encoded {
   

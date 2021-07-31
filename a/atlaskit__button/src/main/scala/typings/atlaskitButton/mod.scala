@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -77,14 +76,13 @@ object mod {
     def warning: typings.atlaskitButton.atlaskitButtonStrings.warning = "warning".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.warning]
   }
   
-  @js.native
   trait ButtonGroupProps extends StObject {
     
     /** The appearance to apply to all buttons. */
-    val appearance: js.UndefOr[ButtonAppearances] = js.native
+    val appearance: js.UndefOr[ButtonAppearances] = js.undefined
     
     /** The buttons to render. */
-    val children: ReactNode = js.native
+    val children: ReactNode
   }
   object ButtonGroupProps {
     
@@ -111,71 +109,70 @@ object mod {
     }
   }
   
-  @js.native
   trait ButtonProps extends StObject {
     
     /** The base styling to apply to the button. */
-    val appearance: js.UndefOr[ButtonAppearances] = js.native
+    val appearance: js.UndefOr[ButtonAppearances] = js.undefined
     
     /** Pass aria-controls to underlying html button. */
-    val ariaControls: js.UndefOr[String] = js.native
+    val ariaControls: js.UndefOr[String] = js.undefined
     
     /** Pass aria-expanded to underlying html button. */
-    val ariaExpanded: js.UndefOr[Boolean] = js.native
+    val ariaExpanded: js.UndefOr[Boolean] = js.undefined
     
     /** Pass aria-haspopup to underlying html button. */
-    val ariaHaspopup: js.UndefOr[Boolean] = js.native
+    val ariaHaspopup: js.UndefOr[Boolean] = js.undefined
     
     /** This button's child nodes. */
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
     /** Add a classname to the button. */
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
     /** A custom component to use instead of the default button. */
-    val component: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
+    val component: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
     
     /** Name property of a linked form that the button submits when clicked. */
-    val form: js.UndefOr[String] = js.native
+    val form: js.UndefOr[String] = js.undefined
     
     /** Provides a url for buttons being used as a link. */
-    val href: js.UndefOr[String] = js.native
+    val href: js.UndefOr[String] = js.undefined
     
     /** Places an icon within the button, after the button's text. */
-    val iconAfter: js.UndefOr[ReactElement] = js.native
+    val iconAfter: js.UndefOr[ReactElement] = js.undefined
     
     /** Places an icon within the button, before the button's text. */
-    val iconBefore: js.UndefOr[ReactElement] = js.native
+    val iconBefore: js.UndefOr[ReactElement] = js.undefined
     
     /** Provide a unique id to the button. */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /** Pass a reference on to the styled component */
-    val innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, Unit]] = js.native
+    val innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, Unit]] = js.undefined
     
     /** Set if the button is disabled. */
-    val isDisabled: js.UndefOr[Boolean] = js.native
+    val isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** Change the style to indicate the button is selected. */
-    val isSelected: js.UndefOr[Boolean] = js.native
+    val isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Handler to be called on click. */
-    val onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    val onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
     /** Option to fit button width to its parent width */
-    val shouldFitContainer: js.UndefOr[Boolean] = js.native
+    val shouldFitContainer: js.UndefOr[Boolean] = js.undefined
     
     /** Set the amount of padding in the button. */
-    val spacing: js.UndefOr[ButtonSpacing] = js.native
+    val spacing: js.UndefOr[ButtonSpacing] = js.undefined
     
     /** Assign specific tabIndex order to the underlying html button. */
-    val tabIndex: js.UndefOr[Double] = js.native
+    val tabIndex: js.UndefOr[Double] = js.undefined
     
     /** Pass target down to a link within the button component, if a href is provided. */
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
     /** Set whether it is a button or a form submission. */
-    val `type`: js.UndefOr[ButtonType] = js.native
+    val `type`: js.UndefOr[ButtonType] = js.undefined
   }
   object ButtonProps {
     
@@ -225,7 +222,7 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setComponent(value: ComponentClass[_, ComponentState]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -334,14 +331,13 @@ object mod {
     def none: typings.atlaskitButton.atlaskitButtonStrings.none = "none".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.none]
   }
   
-  @js.native
   trait ButtonState extends StObject {
     
-    val isActive: Boolean = js.native
+    val isActive: Boolean
     
-    val isFocus: Boolean = js.native
+    val isFocus: Boolean
     
-    val isHover: Boolean = js.native
+    val isHover: Boolean
   }
   object ButtonState {
     

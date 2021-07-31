@@ -2,7 +2,6 @@ package typings.sylvester
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,7 +67,7 @@ trait Vector extends StObject {
     *
     * @param {Function} fn The function to apply to each element (x, i) => {}.
     */
-  def each(fn: js.Function2[/* x */ Double, /* i */ Double, _]): Unit = js.native
+  def each(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Unit = js.native
   
   /**
     * Gets an array containing the vector's elements.
@@ -135,7 +134,7 @@ trait Vector extends StObject {
     *
     * @param {Function} fn The function to apply to each element (x, i) => {}.
     */
-  def map(fn: js.Function2[/* x */ Double, /* i */ Double, _]): Vector = js.native
+  def map(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Vector = js.native
   
   /**
     * Returns the (absolute) largest element of the vector.

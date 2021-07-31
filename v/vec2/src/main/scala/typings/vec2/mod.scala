@@ -3,14 +3,15 @@ package typings.vec2
 import typings.vec2.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vec2", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Vec2 {
+  class ^ protected ()
+    extends StObject
+       with Vec2 {
     def this(xy: js.Array[Double]) = this()
     def this(x: Double, y: Double) = this()
   }
@@ -47,7 +48,7 @@ object mod {
       * this function returns the passed `fn`
       */
     def change(): Vec2 = js.native
-    def change(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, _]): Vec2 = js.native
+    def change(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, js.Any]): Vec2 = js.native
     
     /**
       * Clamp the coordinates of this vector to the high/low of the incoming vec2s.  If `returnNew` apply the result to the new vector and return.
@@ -95,7 +96,7 @@ object mod {
       * Pass a `fn` to remove it from the observers list. Calling this function without a `fn` will remove all observers.
       */
     def ignore(): Vec2 = js.native
-    def ignore(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, _]): Vec2 = js.native
+    def ignore(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, js.Any]): Vec2 = js.native
     
     /**
       * Where `start` and `end` are vec2-like (e.g. `start.x` and `start.y`)
@@ -177,9 +178,9 @@ object mod {
       * `returnNew` - causes the result to be applied to a new `Vec2`, otherwise the result is applied to `this`
       */
     def rotate(radians: Double): Vec2 = js.native
-    def rotate(radians: Double, inverse: js.UndefOr[scala.Nothing], returnNew: Boolean): Vec2 = js.native
     def rotate(radians: Double, inverse: Double): Vec2 = js.native
     def rotate(radians: Double, inverse: Double, returnNew: Boolean): Vec2 = js.native
+    def rotate(radians: Double, inverse: Unit, returnNew: Boolean): Vec2 = js.native
     
     /**
       * Sets the `x` and `y` coordinates of this vector.  If `false` is passed for `notify`, none of the observers will be called.

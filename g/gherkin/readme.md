@@ -10,9 +10,9 @@ Gherkin parser
 | ------------------ | :-------------: |
 | Full name          | gherkin |
 | Keywords           | gherkin, cucumber |
-| # releases         | 19 |
-| # dependents       | 101 |
-| # downloads        | 22364193 |
+| # releases         | 12 |
+| # dependents       | 107 |
+| # downloads        | 29179414 |
 | # stars            | 2 |
 
 ## Links

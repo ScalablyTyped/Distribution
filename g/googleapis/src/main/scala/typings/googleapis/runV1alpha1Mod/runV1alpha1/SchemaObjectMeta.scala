@@ -3,14 +3,12 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ObjectMeta is metadata that all persisted resources must have, which
   * includes all objects users must create.
   */
-@js.native
 trait SchemaObjectMeta extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaObjectMeta extends StObject {
     * They are not queryable and should be preserved when modifying objects.
     * More info: http://kubernetes.io/docs/user-guide/annotations +optional
     */
-  var annotations: js.UndefOr[StringDictionary[String]] = js.native
+  var annotations: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Not currently supported by Cloud Run.  The name of the cluster which the
@@ -28,7 +26,7 @@ trait SchemaObjectMeta extends StObject {
     * now and apiserver is going to ignore it if set in create or update
     * request. +optional
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * CreationTimestamp is a timestamp representing the server time when this
@@ -39,7 +37,7 @@ trait SchemaObjectMeta extends StObject {
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     * +optional
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Not currently supported by Cloud Run.  Number of seconds allowed for this
@@ -47,7 +45,7 @@ trait SchemaObjectMeta extends StObject {
     * Only set when deletionTimestamp is also set. May only be shortened.
     * Read-only. +optional
     */
-  var deletionGracePeriodSeconds: js.UndefOr[Double] = js.native
+  var deletionGracePeriodSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * DeletionTimestamp is RFC 3339 date and time at which this resource will
@@ -71,7 +69,7 @@ trait SchemaObjectMeta extends StObject {
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     * +optional
     */
-  var deletionTimestamp: js.UndefOr[String] = js.native
+  var deletionTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Not currently supported by Cloud Run.  Must be empty before the object is
@@ -80,7 +78,7 @@ trait SchemaObjectMeta extends StObject {
     * deletionTimestamp of the object is non-nil, entries in this list can only
     * be removed. +optional +patchStrategy=merge
     */
-  var finalizers: js.UndefOr[js.Array[String]] = js.native
+  var finalizers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Not currently supported by Cloud Run.  GenerateName is an optional
@@ -99,13 +97,13 @@ trait SchemaObjectMeta extends StObject {
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
     * +optional  string generateName = 2;
     */
-  var generateName: js.UndefOr[String] = js.native
+  var generateName: js.UndefOr[String] = js.undefined
   
   /**
     * A sequence number representing a specific generation of the desired
     * state. Populated by the system. Read-only. +optional
     */
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
   /**
     * Not currently supported by Cloud Run.  An initializer is a controller
@@ -119,7 +117,7 @@ trait SchemaObjectMeta extends StObject {
     * users may set or modify this list. Once it is empty, it may not be
     * modified further by any user.
     */
-  var initializers: js.UndefOr[SchemaInitializers] = js.native
+  var initializers: js.UndefOr[SchemaInitializers] = js.undefined
   
   /**
     * Map of string keys and values that can be used to organize and categorize
@@ -127,7 +125,7 @@ trait SchemaObjectMeta extends StObject {
     * controllers and routes. More info:
     * http://kubernetes.io/docs/user-guide/labels +optional
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Name must be unique within a namespace, within a Cloud Run region. Is
@@ -137,20 +135,20 @@ trait SchemaObjectMeta extends StObject {
     * definition. Cannot be updated. More info:
     * http://kubernetes.io/docs/user-guide/identifiers#names +optional
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Namespace defines the space within each name must be unique, within a
     * Cloud Run region. In Cloud Run the namespace must be equal to either the
     * project ID or project number.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * List of objects that own this object. If ALL objects in the list have
     * been deleted, this object will be garbage collected. +optional
     */
-  var ownerReferences: js.UndefOr[js.Array[SchemaOwnerReference]] = js.native
+  var ownerReferences: js.UndefOr[js.Array[SchemaOwnerReference]] = js.undefined
   
   /**
     * An opaque value that represents the internal version of this object that
@@ -164,13 +162,13 @@ trait SchemaObjectMeta extends StObject {
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
     * +optional
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /**
     * SelfLink is a URL representing this object. Populated by the system.
     * Read-only. +optional  string selfLink = 4;
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * UID is the unique in time and space value for this object. It is
@@ -179,7 +177,7 @@ trait SchemaObjectMeta extends StObject {
     * Read-only. More info:
     * http://kubernetes.io/docs/user-guide/identifiers#uids +optional
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object SchemaObjectMeta {
   

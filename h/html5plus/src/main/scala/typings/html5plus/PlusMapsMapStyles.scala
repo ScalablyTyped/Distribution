@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsMapStyles extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var center: js.UndefOr[PlusMapsPoint] = js.native
+  var center: js.UndefOr[PlusMapsPoint] = js.undefined
   
   /**
     * 地图控件的高度
@@ -31,7 +29,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 地图控件左上角的水平偏移量
@@ -43,7 +41,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * 地图控件在Webview窗口的布局模式
@@ -54,7 +52,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * 地图控件左上角的垂直偏移量
@@ -65,7 +63,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * 地图的是否显示交通信息
@@ -73,7 +71,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var traffic: js.UndefOr[Boolean] = js.native
+  var traffic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 地图的视图类型
@@ -81,7 +79,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var `type`: js.UndefOr[PlusMapsMapType] = js.native
+  var `type`: js.UndefOr[PlusMapsMapType] = js.undefined
   
   /**
     * 地图控件的宽度
@@ -92,7 +90,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
   
   /**
     * 地图的缩放级别
@@ -100,7 +98,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否显示地图的内置缩放控件
@@ -108,7 +106,7 @@ trait PlusMapsMapStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var zoomControls: js.UndefOr[Boolean] = js.native
+  var zoomControls: js.UndefOr[Boolean] = js.undefined
 }
 object PlusMapsMapStyles {
   

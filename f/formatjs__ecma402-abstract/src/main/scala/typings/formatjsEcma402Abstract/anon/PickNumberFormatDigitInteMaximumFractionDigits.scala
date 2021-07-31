@@ -3,24 +3,22 @@ package typings.formatjsEcma402Abstract.anon
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatRoundingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatDigitInternalSlots, 'roundingType' | 'minimumSignificantDigits' | 'maximumSignificantDigits' | 'minimumIntegerDigits' | 'minimumFractionDigits' | 'maximumFractionDigits'> */
-@js.native
 trait PickNumberFormatDigitInteMaximumFractionDigits extends StObject {
   
-  var maximumFractionDigits: js.UndefOr[Double] = js.native
+  var maximumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: js.UndefOr[Double] = js.native
+  var minimumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumIntegerDigits: Double = js.native
+  var minimumIntegerDigits: Double
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var roundingType: NumberFormatRoundingType = js.native
+  var roundingType: NumberFormatRoundingType
 }
 object PickNumberFormatDigitInteMaximumFractionDigits {
   

@@ -3,22 +3,22 @@ package typings.facebookJsSdk.facebook
 import typings.facebookJsSdk.facebookJsSdkStrings.pagetab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddPageTabDialogParams extends DialogParams {
+trait AddPageTabDialogParams
+  extends StObject
+     with DialogParams {
   
-  var method: pagetab = js.native
+  var method: pagetab
   
   @JSName("redirect_uri")
-  var redirect_uri_AddPageTabDialogParams: String = js.native
+  var redirect_uri_AddPageTabDialogParams: String
 }
 object AddPageTabDialogParams {
   
   @scala.inline
-  def apply(method: pagetab, redirect_uri: String): AddPageTabDialogParams = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])
+  def apply(redirect_uri: String): AddPageTabDialogParams = {
+    val __obj = js.Dynamic.literal(method = "pagetab", redirect_uri = redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPageTabDialogParams]
   }
   

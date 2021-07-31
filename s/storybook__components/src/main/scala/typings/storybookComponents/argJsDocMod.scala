@@ -10,7 +10,6 @@ import typings.storybookComponents.typesMod.JsDocTags
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argJsDocMod {
@@ -27,10 +26,9 @@ object argJsDocMod {
     Theme
   ] = js.native
   
-  @js.native
   trait ArgJsDocArgs extends StObject {
     
-    var tags: JsDocTags = js.native
+    var tags: JsDocTags
   }
   object ArgJsDocArgs {
     

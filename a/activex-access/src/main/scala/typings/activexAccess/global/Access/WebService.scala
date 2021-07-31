@@ -1,11 +1,32 @@
 package typings.activexAccess.global.Access
 
+import typings.activexAccess.Access.Entities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Access.WebService")
 @js.native
 class WebService protected ()
-  extends typings.activexAccess.Access.WebService
+  extends StObject
+     with typings.activexAccess.Access.WebService {
+  
+  /* CompleteClass */
+  @JSName("Access.WebService_typekey")
+  var AccessDotWebService_typekey: typings.activexAccess.Access.WebService = js.native
+  
+  /* CompleteClass */
+  override def Entities(Index: js.Any): typings.activexAccess.Access.Entity = js.native
+  /* CompleteClass */
+  @JSName("Entities")
+  override val Entities_Original: Entities = js.native
+  
+  /* CompleteClass */
+  override def IsMemberSafe(dispid: Double): Boolean = js.native
+  
+  /* CompleteClass */
+  override val Name: String = js.native
+  
+  /* CompleteClass */
+  override val Parent: js.Any = js.native
+}

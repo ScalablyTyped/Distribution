@@ -3,111 +3,107 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Event is a report of an event somewhere in the cluster.
   */
-@js.native
 trait Event extends StObject {
   
   /**
     * What action was taken/failed regarding to the Regarding object.
     */
-  var action: String = js.native
+  var action: String
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1 = js.native
+  var apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1
   
   /**
     * The number of times this event has occurred.
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Time when this Event was first observed.
     */
-  var eventTime: String = js.native
+  var eventTime: String
   
   /**
     * The time at which the event was first recorded. (Time of server receipt is in TypeMeta.)
     */
-  var firstTimestamp: String = js.native
+  var firstTimestamp: String
   
   /**
     * The object that this event is about.
     */
-  var involvedObject: ObjectReference = js.native
+  var involvedObject: ObjectReference
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Event = js.native
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Event
   
   /**
     * The time at which the most recent occurrence of this event was recorded.
     */
-  var lastTimestamp: String = js.native
+  var lastTimestamp: String
   
   /**
     * A human-readable description of the status of this operation.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: ObjectMeta = js.native
+  var metadata: ObjectMeta
   
   /**
     * This should be a short, machine understandable string that gives the reason for the transition into the object's current status.
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Optional secondary object for more complex actions.
     */
-  var related: ObjectReference = js.native
+  var related: ObjectReference
   
   /**
     * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
     */
-  var reportingComponent: String = js.native
+  var reportingComponent: String
   
   /**
     * ID of the controller instance, e.g. `kubelet-xyzf`.
     */
-  var reportingInstance: String = js.native
+  var reportingInstance: String
   
   /**
     * Data about the Event series this event represents or nil if it's a singleton Event.
     */
-  var series: EventSeries = js.native
+  var series: EventSeries
   
   /**
     * The component reporting this event. Should be a short machine understandable string.
     */
-  var source: EventSource = js.native
+  var source: EventSource
   
   /**
     * Type of this event (Normal, Warning), new types could be added in the future
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Event {
   
   @scala.inline
   def apply(
     action: String,
-    apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1,
     count: Double,
     eventTime: String,
     firstTimestamp: String,
     involvedObject: ObjectReference,
-    kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Event,
     lastTimestamp: String,
     message: String,
     metadata: ObjectMeta,
@@ -119,7 +115,7 @@ object Event {
     source: EventSource,
     `type`: String
   ): Event = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], eventTime = eventTime.asInstanceOf[js.Any], firstTimestamp = firstTimestamp.asInstanceOf[js.Any], involvedObject = involvedObject.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], lastTimestamp = lastTimestamp.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], reportingComponent = reportingComponent.asInstanceOf[js.Any], reportingInstance = reportingInstance.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], apiVersion = "v1", count = count.asInstanceOf[js.Any], eventTime = eventTime.asInstanceOf[js.Any], firstTimestamp = firstTimestamp.asInstanceOf[js.Any], involvedObject = involvedObject.asInstanceOf[js.Any], kind = "Event", lastTimestamp = lastTimestamp.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], reportingComponent = reportingComponent.asInstanceOf[js.Any], reportingInstance = reportingInstance.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }

@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptBootstrapActionConfig extends StObject {
   
   /**
     * A list of command line arguments to pass to the bootstrap action script.
     */
-  var Args: js.UndefOr[XmlStringList] = js.native
+  var Args: js.UndefOr[XmlStringList] = js.undefined
   
   /**
     * Location of the script to run during a bootstrap action. Can be either a location in Amazon S3 or on a local file system.
     */
-  var Path: XmlString = js.native
+  var Path: XmlString
 }
 object ScriptBootstrapActionConfig {
   

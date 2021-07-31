@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Processing errors
   */
-@js.native
-trait EligibilityResponseError extends BackboneElement {
+trait EligibilityResponseError
+  extends StObject
+     with BackboneElement {
   
   /**
     * Error code detailing processing issues
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
 }
 object EligibilityResponseError {
   

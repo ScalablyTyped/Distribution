@@ -7,7 +7,6 @@ import typings.seleniumWebdriver.commandMod.Command
 import typings.seleniumWebdriver.httpMod.Executor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebDriver")
@@ -395,25 +394,25 @@ class WebDriver protected () extends StObject {
     * @template T
     */
   def wait(condition: WebElementCondition): WebElementPromise = js.native
-  def wait(condition: WebElementCondition, opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double, opt_message: String): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: Unit, opt_message: String): WebElementPromise = js.native
   def wait[T](condition: js.Function): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]]): js.Promise[T] = js.native
-  def wait[T](
-    condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
-    opt_timeout: js.UndefOr[scala.Nothing],
-    opt_message: String
-  ): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](
     condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
     opt_timeout: Double,
     opt_message: String
   ): js.Promise[T] = js.native
-  def wait[T](condition: js.Function, opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
+    opt_timeout: Unit,
+    opt_message: String
+  ): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
   /**
     * Schedules a command to wait for a condition to hold. The condition may be
     * specified by a {@link webdriver.Condition}, as a custom function, or
@@ -465,16 +464,20 @@ class WebDriver protected () extends StObject {
     * @template T
     */
   def wait[T](condition: js.Thenable[T]): js.Promise[T] = js.native
-  def wait[T](condition: js.Thenable[T], opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: js.Thenable[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Thenable[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: js.Thenable[T], opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: Condition[T]): js.Promise[T] = js.native
-  def wait[T](condition: Condition[T], opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
 }
 /* static members */
 object WebDriver {
+  
+  @JSImport("selenium-webdriver", "WebDriver")
+  @js.native
+  val ^ : js.Any = js.native
   
   // endregion
   // region StaticMethods
@@ -537,7 +540,6 @@ object WebDriver {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  @JSImport("selenium-webdriver", "WebDriver.createSession")
-  @js.native
-  def createSession(var_args: js.Any*): WebDriver = js.native
+  @scala.inline
+  def createSession(var_args: js.Any*): WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[WebDriver]
 }

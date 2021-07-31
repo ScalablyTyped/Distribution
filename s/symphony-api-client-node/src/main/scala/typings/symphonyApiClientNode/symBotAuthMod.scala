@@ -3,27 +3,28 @@ package typings.symphonyApiClientNode
 import typings.symphonyApiClientNode.usersClientMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symBotAuthMod {
   
-  @JSImport("symphony-api-client-node/SymBotAuth", "getBotUser")
+  @JSImport("symphony-api-client-node/SymBotAuth", JSImport.Namespace)
   @js.native
-  def getBotUser(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("symphony-api-client-node/SymBotAuth", "oboAuthenticateByUserId")
-  @js.native
-  def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = js.native
+  @scala.inline
+  def getBotUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotUser")().asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node/SymBotAuth", "verifyJwt")
-  @js.native
-  def verifyJwt(jwt: String): js.Promise[String] = js.native
+  @scala.inline
+  def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboAuthenticateByUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token]]
   
-  @js.native
-  trait BotUser extends User {
+  @scala.inline
+  def verifyJwt(jwt: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyJwt")(jwt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  trait BotUser
+    extends StObject
+       with User {
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
   }
   object BotUser {
     
@@ -51,14 +52,13 @@ object symBotAuthMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object Token {
     

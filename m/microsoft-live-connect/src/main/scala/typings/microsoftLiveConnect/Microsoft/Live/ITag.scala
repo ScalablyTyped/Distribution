@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,37 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Tag objects that are associated with any photos that other users have
   * shared with the user.
   */
-@js.native
 trait ITag extends StObject {
   
   /**
     * The time, in ISO 8601 format, at which the tag was created.
     */
-  var created_time: String = js.native
+  var created_time: String
   
   /**
     * The Tag object's ID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The user object for the tagged person.
     */
-  var user: IUserInfo = js.native
+  var user: IUserInfo
   
   /**
     * The center of the tag's horizontal position, measured as a
     * floating-point percentage from 0 to 100, from the left edge of the
     * photo. This value is not returned for Video objects.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The center of the tag's vertical position, measured as a
     * floating-point percentage from 0 to 100, from the top edge of the
     * photo. This value is not returned for Video objects.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object ITag {
   

@@ -5,27 +5,25 @@ import typings.mfiles.MFiles.MFContentType
 import typings.mfiles.MFiles.MFDataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValueForDisplay extends StObject {
   
-  def Clone(): IPropertyValueForDisplay = js.native
+  def Clone(): IPropertyValueForDisplay
   
-  val ContentType: MFContentType = js.native
+  val ContentType: MFContentType
   
-  val DataType: MFDataType = js.native
+  val DataType: MFDataType
   
-  val DisplayValue: String = js.native
+  val DisplayValue: String
   
-  val PropertyDef: MFBuiltInPropertyDef | Double = js.native
+  val PropertyDef: MFBuiltInPropertyDef | Double
   
-  val PropertyDefName: String = js.native
+  val PropertyDefName: String
   
-  val PropertyValue: IPropertyValue = js.native
+  val PropertyValue: IPropertyValue
   
-  val ReadOnly: Boolean = js.native
+  val ReadOnly: Boolean
 }
 object IPropertyValueForDisplay {
   

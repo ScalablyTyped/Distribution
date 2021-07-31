@@ -4,23 +4,24 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devToolsMiddlewareMod {
   
-  @JSImport("@react-native-community/cli-server-api/build/devToolsMiddleware", JSImport.Default)
+  @JSImport("@react-native-community/cli-server-api/build/devToolsMiddleware", JSImport.Namespace)
   @js.native
-  def default(options: LaunchDevToolsOptions, isDebuggerConnected: js.Function0[Boolean]): js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(options: LaunchDevToolsOptions, isDebuggerConnected: js.Function0[Boolean]): js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], isDebuggerConnected.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit]]
+  
   trait LaunchDevToolsOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var watchFolders: js.Array[String] = js.native
+    var watchFolders: js.Array[String]
   }
   object LaunchDevToolsOptions {
     

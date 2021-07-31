@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePhotoGet extends StandardParameters {
+trait ParamsResourcePhotoGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
@@ -24,18 +24,18 @@ trait ParamsResourcePhotoGet extends StandardParameters {
     * language_code is unspecified, the user's language preference for Google
     * services is used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. ID of the Photo.
     */
-  var photoId: js.UndefOr[String] = js.native
+  var photoId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if a download URL for the photo bytes should be returned in the
     * Photo response.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePhotoGet {
   

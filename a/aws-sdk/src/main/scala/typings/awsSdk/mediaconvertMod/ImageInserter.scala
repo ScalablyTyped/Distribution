@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInserter extends StObject {
   
   /**
     * Specify the images that you want to overlay on your video. The images must be PNG or TGA files.
     */
-  var InsertableImages: js.UndefOr[listOfInsertableImage] = js.native
+  var InsertableImages: js.UndefOr[listOfInsertableImage] = js.undefined
 }
 object ImageInserter {
   

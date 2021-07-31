@@ -6,23 +6,22 @@ import typings.shot.anon.Req
 import typings.shot.mod.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerInjectResponse
-  extends typings.shot.mod.ResponseObject {
+  extends StObject
+     with typings.shot.mod.ResponseObject {
   
   /**
     * the request object.
     */
-  var request: Request = js.native
+  var request: Request
   
   /**
     * the raw handler response (e.g. when not a stream or a view) before it is serialized for transmission. If not available, the value is set to payload. Useful for inspection and reuse of the
     * internal objects returned (instead of parsing the response string).
     */
-  var result: js.UndefOr[js.Object] = js.native
+  var result: js.UndefOr[js.Object] = js.undefined
 }
 object ServerInjectResponse {
   

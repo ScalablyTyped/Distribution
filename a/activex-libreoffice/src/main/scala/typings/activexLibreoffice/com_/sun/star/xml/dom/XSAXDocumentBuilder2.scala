@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link SAXDocumentBuilder} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XSAXDocumentBuilder2
-  extends XSAXDocumentBuilder
+  extends StObject
+     with XSAXDocumentBuilder
      with XDocumentHandler
 object XSAXDocumentBuilder2 {
   

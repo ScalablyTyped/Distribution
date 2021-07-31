@@ -6,14 +6,15 @@ import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Array<string> & {  primary :string | undefined} */
   @js.native
-  trait Arraystringprimarystringu extends /* n */ NumberDictionary[String] {
+  trait Arraystringprimarystringu
+    extends StObject
+       with /* n */ NumberDictionary[String] {
     
     /**
       * Combines two or more arrays.
@@ -46,9 +47,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def every(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
     def every(
-      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any]
+    ): Boolean = js.native
+    def every(
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any],
       thisArg: js.Any
     ): Boolean = js.native
     /**
@@ -88,18 +91,20 @@ object anon {
       * length+end.
       */
     def fill(value: String): this.type = js.native
-    def fill(value: String, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def fill(value: String, start: Double): this.type = js.native
     def fill(value: String, start: Double, end: Double): this.type = js.native
+    def fill(value: String, start: Unit, end: Double): this.type = js.native
     
     /**
       * Returns the elements of an array that meet the condition specified in a callback function.
       * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
-    def filter(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): js.Array[String] = js.native
     def filter(
-      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any]
+    ): js.Array[String] = js.native
+    def filter(
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any],
       thisArg: js.Any
     ): js.Array[String] = js.native
     /**
@@ -127,9 +132,11 @@ object anon {
       thisArg: js.Any
     ): js.Array[S] = js.native
     
-    def find(predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _]): js.UndefOr[String] = js.native
     def find(
-      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _],
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], js.Any]
+    ): js.UndefOr[String] = js.native
+    def find(
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], js.Any],
       thisArg: js.Any
     ): js.UndefOr[String] = js.native
     /**
@@ -170,9 +177,11 @@ object anon {
       * @param thisArg If provided, it will be used as the this value for each invocation of
       * predicate. If it is not provided, undefined is used instead.
       */
-    def findIndex(predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _]): Double = js.native
     def findIndex(
-      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _],
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], js.Any]
+    ): Double = js.native
+    def findIndex(
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], js.Any],
       thisArg: js.Any
     ): Double = js.native
     
@@ -393,9 +402,9 @@ object anon {
       * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
       */
     def slice(): js.Array[String] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[String] = js.native
     def slice(start: Double): js.Array[String] = js.native
     def slice(start: Double, end: Double): js.Array[String] = js.native
+    def slice(start: Unit, end: Double): js.Array[String] = js.native
     
     /**
       * Determines whether the specified callback function returns true for any element of an array.
@@ -405,9 +414,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def some(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
     def some(
-      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any]
+    ): Boolean = js.native
+    def some(
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], js.Any],
       thisArg: js.Any
     ): Boolean = js.native
     

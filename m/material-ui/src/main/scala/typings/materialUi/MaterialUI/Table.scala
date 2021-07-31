@@ -7,7 +7,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Table {
@@ -16,49 +15,48 @@ object Table {
   
   type TableBody = Component[TableBodyProps, js.Object, js.Any]
   
-  @js.native
   trait TableBodyProps extends StObject {
     
     /** @deprecated Instead, use property on Table */
-    var allRowsSelected: js.UndefOr[Boolean] = js.native
+    var allRowsSelected: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var deselectOnClickaway: js.UndefOr[Boolean] = js.native
+    var deselectOnClickaway: js.UndefOr[Boolean] = js.undefined
     
-    var displayRowCheckbox: js.UndefOr[Boolean] = js.native
-    
-    /** @deprecated Instead, use property on Table */
-    var multiSelectable: js.UndefOr[Boolean] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onCellClick: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onCellHover: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onCellHoverExit: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onRowHover: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onRowHoverExit: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | String, Unit]] = js.native
-    
-    var preScanRows: js.UndefOr[Boolean] = js.native
+    var displayRowCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Instead, use property on Table */
-    var selectable: js.UndefOr[Boolean] = js.native
+    var multiSelectable: js.UndefOr[Boolean] = js.undefined
     
-    var showRowHover: js.UndefOr[Boolean] = js.native
+    /** @deprecated Instead, use event handler on Table */
+    var onCellClick: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
     
-    var stripedRows: js.UndefOr[Boolean] = js.native
+    /** @deprecated Instead, use event handler on Table */
+    var onCellHover: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    /** @deprecated Instead, use event handler on Table */
+    var onCellHoverExit: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
+    
+    /** @deprecated Instead, use event handler on Table */
+    var onRowHover: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
+    
+    /** @deprecated Instead, use event handler on Table */
+    var onRowHoverExit: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
+    
+    /** @deprecated Instead, use event handler on Table */
+    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | String, Unit]] = js.undefined
+    
+    var preScanRows: js.UndefOr[Boolean] = js.undefined
+    
+    /** @deprecated Instead, use property on Table */
+    var selectable: js.UndefOr[Boolean] = js.undefined
+    
+    var showRowHover: js.UndefOr[Boolean] = js.undefined
+    
+    var stripedRows: js.UndefOr[Boolean] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableBodyProps {
     
@@ -171,15 +169,14 @@ object Table {
   
   type TableFooter = Component[TableFooterProps, js.Object, js.Any]
   
-  @js.native
   trait TableFooterProps extends StObject {
     
     // <tfoot/> is element that get the 'other' properties
-    var adjustForCheckbox: js.UndefOr[Boolean] = js.native
+    var adjustForCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableFooterProps {
     
@@ -216,30 +213,29 @@ object Table {
   
   type TableHeaderColumn = Component[TableHeaderColumnProps, js.Object, js.Any]
   
-  @js.native
   trait TableHeaderColumnProps extends StObject {
     
     // <th/> is element that get the 'other' properties
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     // useful attributes passed to <th/>
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
-    var tooltipStyle: js.UndefOr[CSSProperties] = js.native
+    var tooltipStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableHeaderColumnProps {
     
@@ -308,24 +304,23 @@ object Table {
     }
   }
   
-  @js.native
   trait TableHeaderProps extends StObject {
     
-    var adjustForCheckbox: js.UndefOr[Boolean] = js.native
+    var adjustForCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var displaySelectAll: js.UndefOr[Boolean] = js.native
+    var displaySelectAll: js.UndefOr[Boolean] = js.undefined
     
-    var enableSelectAll: js.UndefOr[Boolean] = js.native
-    
-    /** @deprecated Instead, use event handler on Table */
-    var onSelectAll: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+    var enableSelectAll: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
-    var selectAllSelected: js.UndefOr[Boolean] = js.native
+    var onSelectAll: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    /** @deprecated Instead, use event handler on Table */
+    var selectAllSelected: js.UndefOr[Boolean] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableHeaderProps {
     
@@ -382,44 +377,43 @@ object Table {
     }
   }
   
-  @js.native
   trait TableProps extends StObject {
     
-    var allRowsSelected: js.UndefOr[Boolean] = js.native
+    var allRowsSelected: js.UndefOr[Boolean] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fixedFooter: js.UndefOr[Boolean] = js.native
+    var fixedFooter: js.UndefOr[Boolean] = js.undefined
     
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var footerStyle: js.UndefOr[CSSProperties] = js.native
+    var footerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var headerStyle: js.UndefOr[CSSProperties] = js.native
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var multiSelectable: js.UndefOr[Boolean] = js.native
+    var multiSelectable: js.UndefOr[Boolean] = js.undefined
     
-    var onCellClick: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
+    var onCellClick: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
     
-    var onCellHover: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
+    var onCellHover: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
     
-    var onCellHoverExit: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.native
+    var onCellHoverExit: js.UndefOr[js.Function2[/* row */ Double, /* column */ Double, Unit]] = js.undefined
     
-    var onRowHover: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.native
+    var onRowHover: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
     
-    var onRowHoverExit: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.native
+    var onRowHoverExit: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
     
-    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | all, Unit]] = js.native
+    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | all, Unit]] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var wrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableProps {
     
@@ -546,39 +540,38 @@ object Table {
   
   type TableRowColumn = Component[TableRowColumnProps, js.Object, js.Any]
   
-  @js.native
   trait TableRowColumnProps extends StObject {
     
     // <td/> is element that get the 'other' properties
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     // useful attributes passed to <td/>
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onClick: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onHover: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onHoverExit: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableRowColumnProps {
     
@@ -653,17 +646,16 @@ object Table {
     }
   }
   
-  @js.native
   trait TableRowProps extends StObject {
     
     // <tr/> is element that get the 'other' properties
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var displayBorder: js.UndefOr[Boolean] = js.native
+    var displayBorder: js.UndefOr[Boolean] = js.undefined
     
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
-    var hovered: js.UndefOr[Boolean] = js.native
+    var hovered: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onCellClick: js.UndefOr[
@@ -673,7 +665,7 @@ object Table {
           /* column */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onCellHover: js.UndefOr[
@@ -683,7 +675,7 @@ object Table {
           /* column */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onCellHoverExit: js.UndefOr[
@@ -693,32 +685,32 @@ object Table {
           /* column */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onRowClick: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onRowHover: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** @deprecated Instead, use event handler on Table */
     var onRowHoverExit: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rowNumber: js.UndefOr[Double] = js.native
+    var rowNumber: js.UndefOr[Double] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableRowProps {
     

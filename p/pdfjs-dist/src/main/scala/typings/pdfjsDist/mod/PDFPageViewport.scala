@@ -2,29 +2,27 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFPageViewport extends StObject {
   
-  def clone(options: PDFPageViewportOptions): PDFPageViewport = js.native
+  def clone(options: PDFPageViewportOptions): PDFPageViewport
   
   // [x1, y1, x2, y2]
-  def convertToPdfPoint(x: Double, y: Double): js.Array[Double] = js.native
+  def convertToPdfPoint(x: Double, y: Double): js.Array[Double]
   
-  def convertToViewportPoint(x: Double, y: Double): js.Array[Double] = js.native
+  def convertToViewportPoint(x: Double, y: Double): js.Array[Double]
   
   // [x, y]
-  def convertToViewportRectangle(rect: js.Array[Double]): js.Array[Double] = js.native
+  def convertToViewportRectangle(rect: js.Array[Double]): js.Array[Double]
   
-  var height: Double = js.native
+  var height: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var transforms: js.Array[Double] = js.native
+  var transforms: js.Array[Double]
   
-  var width: Double = js.native
+  var width: Double
 }
 object PDFPageViewport {
   

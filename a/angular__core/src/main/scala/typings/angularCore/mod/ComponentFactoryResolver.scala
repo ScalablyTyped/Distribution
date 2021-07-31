@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ComponentFactoryResolver")
@@ -13,7 +12,7 @@ abstract class ComponentFactoryResolver () extends StObject {
     * Retrieves the factory object that creates a component of the given type.
     * @param component The component type.
     */
-  def resolveComponentFactory[T](component: typings.angularCore.mod.Type[T]): ComponentFactory[T] = js.native
+  def resolveComponentFactory[T](component: Type[T]): ComponentFactory[T] = js.native
 }
 /* static members */
 object ComponentFactoryResolver {

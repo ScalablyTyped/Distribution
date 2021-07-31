@@ -5,7 +5,6 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,20 +16,19 @@ object mod {
   
   type FileInput = Component[FileInputProps, js.Object, js.Any]
   
-  @js.native
   trait FileInputProps extends StObject {
     
-    var accept: String = js.native
+    var accept: String
     
-    var className: String = js.native
+    var className: String
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    def onChange(event: SyntheticEvent[_, Event]): Unit = js.native
+    def onChange(event: SyntheticEvent[js.Any, Event]): Unit
     
-    var placeholder: String = js.native
+    var placeholder: String
   }
   object FileInputProps {
     
@@ -39,7 +37,7 @@ object mod {
       accept: String,
       className: String,
       name: String,
-      onChange: SyntheticEvent[_, Event] => Unit,
+      onChange: SyntheticEvent[js.Any, Event] => Unit,
       placeholder: String
     ): FileInputProps = {
       val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), placeholder = placeholder.asInstanceOf[js.Any])
@@ -65,7 +63,7 @@ object mod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnChange(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])

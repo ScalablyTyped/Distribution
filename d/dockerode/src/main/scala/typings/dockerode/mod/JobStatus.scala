@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatus extends StObject {
   
-  var JobIteration: Version = js.native
+  var JobIteration: Version
   
-  var LastExecution: js.UndefOr[String] = js.native
+  var LastExecution: js.UndefOr[String] = js.undefined
 }
 object JobStatus {
   

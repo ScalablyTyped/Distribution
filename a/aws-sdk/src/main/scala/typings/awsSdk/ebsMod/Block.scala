@@ -2,21 +2,19 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block extends StObject {
   
   /**
     * The block index.
     */
-  var BlockIndex: js.UndefOr[typings.awsSdk.ebsMod.BlockIndex] = js.native
+  var BlockIndex: js.UndefOr[typings.awsSdk.ebsMod.BlockIndex] = js.undefined
   
   /**
     * The block token for the block index.
     */
-  var BlockToken: js.UndefOr[typings.awsSdk.ebsMod.BlockToken] = js.native
+  var BlockToken: js.UndefOr[typings.awsSdk.ebsMod.BlockToken] = js.undefined
 }
 object Block {
   

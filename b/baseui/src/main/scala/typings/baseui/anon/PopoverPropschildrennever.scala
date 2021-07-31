@@ -24,70 +24,68 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/popover.PopoverProps & {  children :never} */
-@js.native
 trait PopoverPropschildrennever extends StObject {
   
-  var accessibilityType: js.UndefOr[none | menu | tooltip] = js.native
+  var accessibilityType: js.UndefOr[none | menu | tooltip] = js.undefined
   
-  var animateOutTime: js.UndefOr[Double] = js.native
+  var animateOutTime: js.UndefOr[Double] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var content: ReactNode | js.Function0[ReactNode] = js.native
+  var content: ReactNode | js.Function0[ReactNode]
   
-  var `data-baseweb`: js.UndefOr[String] = js.native
+  var `data-baseweb`: js.UndefOr[String] = js.undefined
   
-  var focusLock: js.UndefOr[Boolean] = js.native
+  var focusLock: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var ignoreBoundary: js.UndefOr[Boolean] = js.native
+  var ignoreBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var mountNode: js.UndefOr[HTMLElement] = js.native
+  var mountNode: js.UndefOr[HTMLElement] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function0[_]] = js.native
+  var onBlur: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* e */ typings.std.Event, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ typings.std.Event, js.Any]] = js.undefined
   
-  var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent, _]] = js.native
+  var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent, js.Any]] = js.undefined
   
-  var onEsc: js.UndefOr[js.Function0[_]] = js.native
+  var onEsc: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function0[_]] = js.native
+  var onFocus: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function0[_]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onMouseEnterDelay: js.UndefOr[Double] = js.native
+  var onMouseEnterDelay: js.UndefOr[Double] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Function0[_]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onMouseLeaveDelay: js.UndefOr[Double] = js.native
+  var onMouseLeaveDelay: js.UndefOr[Double] = js.undefined
   
-  var overrides: js.UndefOr[PopoverOverrides] = js.native
+  var overrides: js.UndefOr[PopoverOverrides] = js.undefined
   
   var placement: js.UndefOr[
     topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-  ] = js.native
+  ] = js.undefined
   
-  var popoverMargin: js.UndefOr[Double] = js.native
+  var popoverMargin: js.UndefOr[Double] = js.undefined
   
-  var popperOptions: js.UndefOr[js.Any] = js.native
+  var popperOptions: js.UndefOr[js.Any] = js.undefined
   
-  var renderAll: js.UndefOr[Boolean] = js.native
+  var renderAll: js.UndefOr[Boolean] = js.undefined
   
-  var returnFocus: js.UndefOr[Boolean] = js.native
+  var returnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var showArrow: js.UndefOr[Boolean] = js.native
+  var showArrow: js.UndefOr[Boolean] = js.undefined
   
-  var triggerType: js.UndefOr[click | hover] = js.native
+  var triggerType: js.UndefOr[click | hover] = js.undefined
 }
 object PopoverPropschildrennever {
   
@@ -167,16 +165,16 @@ object PopoverPropschildrennever {
     def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: () => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+    def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* e */ typings.std.Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClickOutside(value: /* event */ MouseEvent => _): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+    def setOnClickOutside(value: /* event */ MouseEvent => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
@@ -185,19 +183,19 @@ object PopoverPropschildrennever {
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnEsc(value: () => _): Self = StObject.set(x, "onEsc", js.Any.fromFunction0(value))
+    def setOnEsc(value: () => js.Any): Self = StObject.set(x, "onEsc", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: () => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+    def setOnFocus(value: () => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: () => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
+    def setOnMouseEnter(value: () => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnMouseEnterDelay(value: Double): Self = StObject.set(x, "onMouseEnterDelay", value.asInstanceOf[js.Any])
@@ -209,7 +207,7 @@ object PopoverPropschildrennever {
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: () => _): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
+    def setOnMouseLeave(value: () => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnMouseLeaveDelay(value: Double): Self = StObject.set(x, "onMouseLeaveDelay", value.asInstanceOf[js.Any])

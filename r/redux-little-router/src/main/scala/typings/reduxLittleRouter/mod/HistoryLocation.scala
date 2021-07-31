@@ -2,21 +2,19 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryLocation extends StObject {
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var pathname: js.UndefOr[String] = js.native
+  var pathname: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[ObjectLiteral[_]] = js.native
+  var state: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
 }
 object HistoryLocation {
   
@@ -54,7 +52,7 @@ object HistoryLocation {
     def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def setState(value: ObjectLiteral[_]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    def setState(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStateUndefined: Self = StObject.set(x, "state", js.undefined)

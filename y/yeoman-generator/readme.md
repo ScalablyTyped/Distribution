@@ -10,9 +10,9 @@ Rails-inspired generator system that provides scaffolding for your apps
 | ------------------ | :-------------: |
 | Full name          | yeoman-generator |
 | Keywords           | development, dev, build, tool, cli, scaffold, scaffolding, generate, generator, yeoman, app |
-| # releases         | 21 |
-| # dependents       | 10692 |
-| # downloads        | 16985790 |
+| # releases         | 25 |
+| # dependents       | 11117 |
+| # downloads        | 22587855 |
 | # stars            | 52 |
 
 ## Links

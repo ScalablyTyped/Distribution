@@ -9,26 +9,30 @@ import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.UriEndpointState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kurentoClientStrings {
   
   @js.native
-  sealed trait AUDIO extends MediaType
+  sealed trait AUDIO
+    extends StObject
+       with MediaType
   @scala.inline
   def AUDIO: AUDIO = "AUDIO".asInstanceOf[AUDIO]
   
   @js.native
   sealed trait CONNECTED
-    extends ConnectionState
+    extends StObject
+       with ConnectionState
        with IceComponentState
        with MediaState
   @scala.inline
   def CONNECTED: CONNECTED = "CONNECTED".asInstanceOf[CONNECTED]
   
   @js.native
-  sealed trait CONNECTING extends IceComponentState
+  sealed trait CONNECTING
+    extends StObject
+       with IceComponentState
   @scala.inline
   def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
   
@@ -39,7 +43,8 @@ object kurentoClientStrings {
   
   @js.native
   sealed trait DISCONNECTED
-    extends ConnectionState
+    extends StObject
+       with ConnectionState
        with IceComponentState
        with MediaState
   @scala.inline
@@ -71,17 +76,23 @@ object kurentoClientStrings {
   def EndOfStream: EndOfStream = "EndOfStream".asInstanceOf[EndOfStream]
   
   @js.native
-  sealed trait FAILED extends IceComponentState
+  sealed trait FAILED
+    extends StObject
+       with IceComponentState
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
-  sealed trait FLOWING extends MediaFlowState
+  sealed trait FLOWING
+    extends StObject
+       with MediaFlowState
   @scala.inline
   def FLOWING: FLOWING = "FLOWING".asInstanceOf[FLOWING]
   
   @js.native
-  sealed trait GATHERING extends IceComponentState
+  sealed trait GATHERING
+    extends StObject
+       with IceComponentState
   @scala.inline
   def GATHERING: GATHERING = "GATHERING".asInstanceOf[GATHERING]
   
@@ -131,12 +142,16 @@ object kurentoClientStrings {
   def MediaTranscodingStateChange: MediaTranscodingStateChange = "MediaTranscodingStateChange".asInstanceOf[MediaTranscodingStateChange]
   
   @js.native
-  sealed trait NOT_FLOWING extends MediaFlowState
+  sealed trait NOT_FLOWING
+    extends StObject
+       with MediaFlowState
   @scala.inline
   def NOT_FLOWING: NOT_FLOWING = "NOT_FLOWING".asInstanceOf[NOT_FLOWING]
   
   @js.native
-  sealed trait NOT_TRANSCODING extends MediaTranscodingState
+  sealed trait NOT_TRANSCODING
+    extends StObject
+       with MediaTranscodingState
   @scala.inline
   def NOT_TRANSCODING: NOT_TRANSCODING = "NOT_TRANSCODING".asInstanceOf[NOT_TRANSCODING]
   
@@ -161,7 +176,9 @@ object kurentoClientStrings {
   def OnIceCandidate: OnIceCandidate = "OnIceCandidate".asInstanceOf[OnIceCandidate]
   
   @js.native
-  sealed trait PAUSE extends UriEndpointState
+  sealed trait PAUSE
+    extends StObject
+       with UriEndpointState
   @scala.inline
   def PAUSE: PAUSE = "PAUSE".asInstanceOf[PAUSE]
   
@@ -176,7 +193,9 @@ object kurentoClientStrings {
   def PlayerEndpoint: PlayerEndpoint = "PlayerEndpoint".asInstanceOf[PlayerEndpoint]
   
   @js.native
-  sealed trait READY extends IceComponentState
+  sealed trait READY
+    extends StObject
+       with IceComponentState
   @scala.inline
   def READY: READY = "READY".asInstanceOf[READY]
   
@@ -191,17 +210,23 @@ object kurentoClientStrings {
   def Recording: Recording = "Recording".asInstanceOf[Recording]
   
   @js.native
-  sealed trait START extends UriEndpointState
+  sealed trait START
+    extends StObject
+       with UriEndpointState
   @scala.inline
   def START: START = "START".asInstanceOf[START]
   
   @js.native
-  sealed trait STOP extends UriEndpointState
+  sealed trait STOP
+    extends StObject
+       with UriEndpointState
   @scala.inline
   def STOP: STOP = "STOP".asInstanceOf[STOP]
   
   @js.native
-  sealed trait SpaceDATA extends MediaType
+  sealed trait SpaceDATA
+    extends StObject
+       with MediaType
   @scala.inline
   def SpaceDATA: SpaceDATA = (" DATA").asInstanceOf[SpaceDATA]
   
@@ -211,7 +236,9 @@ object kurentoClientStrings {
   def Stopped: Stopped = "Stopped".asInstanceOf[Stopped]
   
   @js.native
-  sealed trait TRANSCODING extends MediaTranscodingState
+  sealed trait TRANSCODING
+    extends StObject
+       with MediaTranscodingState
   @scala.inline
   def TRANSCODING: TRANSCODING = "TRANSCODING".asInstanceOf[TRANSCODING]
   
@@ -221,7 +248,9 @@ object kurentoClientStrings {
   def UriEndpointStateChanged: UriEndpointStateChanged = "UriEndpointStateChanged".asInstanceOf[UriEndpointStateChanged]
   
   @js.native
-  sealed trait VIDEO extends MediaType
+  sealed trait VIDEO
+    extends StObject
+       with MediaType
   @scala.inline
   def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
   

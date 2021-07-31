@@ -2,20 +2,18 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information related to tracking the progress on resolving the error.
   */
-@js.native
 trait SchemaTrackingIssue extends StObject {
   
   /**
     * A URL pointing to a related entry in an issue tracking system. Example:
     * https://github.com/user/project/issues/4
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaTrackingIssue {
   

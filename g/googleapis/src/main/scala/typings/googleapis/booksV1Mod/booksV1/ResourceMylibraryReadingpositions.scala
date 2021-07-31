@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Readingpositions")
@@ -32,7 +31,7 @@ class ResourceMylibraryReadingpositions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaReadingPosition] = js.native
   def get(callback: BodyResponseCallback[SchemaReadingPosition]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReadingPosition] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReadingPosition] = js.native
   def get(params: ParamsResourceMylibraryReadingpositionsGet): GaxiosPromise[SchemaReadingPosition] = js.native
   def get(
     params: ParamsResourceMylibraryReadingpositionsGet,
@@ -70,7 +69,7 @@ class ResourceMylibraryReadingpositions protected () extends StObject {
     */
   def setPosition(): GaxiosPromise[Unit] = js.native
   def setPosition(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def setPosition(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def setPosition(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def setPosition(params: ParamsResourceMylibraryReadingpositionsSetposition): GaxiosPromise[Unit] = js.native
   def setPosition(params: ParamsResourceMylibraryReadingpositionsSetposition, callback: BodyResponseCallback[Unit]): Unit = js.native
   def setPosition(

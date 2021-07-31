@@ -3,18 +3,16 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobOption extends StObject {
   
-  var data: StringDictionary[String] = js.native
+  var data: StringDictionary[String]
   
   /**
     * Gets the id of the option.
     */
-  var id: String = js.native
+  var id: String
 }
 object JobOption {
   

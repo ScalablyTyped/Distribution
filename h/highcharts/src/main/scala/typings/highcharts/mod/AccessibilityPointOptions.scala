@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityPointOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait AccessibilityPointOptions extends StObject {
     *
     * For an overview of the replacement codes, see dateFormat.
     */
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter function to determine
@@ -25,7 +23,7 @@ trait AccessibilityPointOptions extends StObject {
     * the point to describe. Should return a date format string compatible with
     * dateFormat.
     */
-  var dateFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.native
+  var dateFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter function to use
@@ -40,13 +38,13 @@ trait AccessibilityPointOptions extends StObject {
     * possible, as default functionality such as describing annotations will be
     * preserved.
     */
-  var descriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.native
+  var descriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Decimals to use for the values
     * in the point descriptions. Uses tooltip.valueDecimals if not defined.
     */
-  var valueDecimals: js.UndefOr[Double] = js.native
+  var valueDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format to use for describing the
@@ -57,19 +55,19 @@ trait AccessibilityPointOptions extends StObject {
     * `point.accessibility.description` is added by default if relevant. To
     * override this, use the accessibility.point.descriptionFormatter option.
     */
-  var valueDescriptionFormat: js.UndefOr[String] = js.native
+  var valueDescriptionFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Prefix to add to the values in
     * the point descriptions. Uses tooltip.valuePrefix if not defined.
     */
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Suffix to add to the values in
     * the point descriptions. Uses tooltip.valueSuffix if not defined.
     */
-  var valueSuffix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.undefined
 }
 object AccessibilityPointOptions {
   

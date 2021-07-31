@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchItems extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait LaunchItems extends StObject {
     *
     * @platform win32
     */
-  var args: js.Array[String] = js.native
+  var args: js.Array[String]
   
   /**
     * `true` if the app registry key is startup approved and therefore shows as
@@ -21,21 +19,21 @@ trait LaunchItems extends StObject {
     *
     * @platform win32
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * name value of a registry entry.
     *
     * @platform win32
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The executable to an app that corresponds to a registry entry.
     *
     * @platform win32
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * one of `user` or `machine`. Indicates whether the registry entry is under
@@ -43,7 +41,7 @@ trait LaunchItems extends StObject {
     *
     * @platform win32
     */
-  var scope: String = js.native
+  var scope: String
 }
 object LaunchItems {
   

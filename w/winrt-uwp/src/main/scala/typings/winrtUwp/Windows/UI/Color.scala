@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a color in terms of alpha, red, green, and blue channels. */
-@js.native
 trait Color extends StObject {
   
   /** Gets or sets the sRGB alpha channel value of the color. */
-  var a: Double = js.native
+  var a: Double
   
   /** Gets or sets the sRGB blue channel value of the color. */
-  var b: Double = js.native
+  var b: Double
   
   /** Gets or sets the sRGB green channel value of the color. */
-  var g: Double = js.native
+  var g: Double
   
   /** Gets or sets the sRGB red channel value of the color. */
-  var r: Double = js.native
+  var r: Double
 }
 object Color {
   

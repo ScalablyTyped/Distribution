@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.FilterCriteria
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `filter.toJSON()`. */
-@js.native
 trait FilterData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait FilterData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var criteria: js.UndefOr[FilterCriteria] = js.native
+  var criteria: js.UndefOr[FilterCriteria] = js.undefined
 }
 object FilterData {
   

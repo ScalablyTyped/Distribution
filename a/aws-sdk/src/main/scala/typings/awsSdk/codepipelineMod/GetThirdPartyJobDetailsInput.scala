@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetThirdPartyJobDetailsInput extends StObject {
   
   /**
     * The clientToken portion of the clientId and clientToken pair used to verify that the calling entity is allowed access to the job and its details.
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The unique system-generated ID used for identifying the job.
     */
-  var jobId: ThirdPartyJobId = js.native
+  var jobId: ThirdPartyJobId
 }
 object GetThirdPartyJobDetailsInput {
   

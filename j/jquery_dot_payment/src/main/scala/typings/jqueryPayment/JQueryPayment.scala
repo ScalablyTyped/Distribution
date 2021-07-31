@@ -3,49 +3,47 @@ package typings.jqueryPayment
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryPayment {
   
-  @js.native
   trait CardInfo extends StObject {
     
     /**
       * Array of valid card CVC lengths.
       */
-    var cvcLength: js.UndefOr[js.Array[Double]] = js.native
+    var cvcLength: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Regex used to format the card number. Each match is joined with a space.
       */
-    var format: js.UndefOr[RegExp] = js.native
+    var format: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Array of valid card number lengths.
       */
-    var length: js.UndefOr[js.Array[Double]] = js.native
+    var length: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Boolean indicating whether a valid card number should satisfy the Luhn check.
       */
-    var luhn: js.UndefOr[Boolean] = js.native
+    var luhn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Regex used to identify the card type. For the best experience, this should be
       * the shortest pattern that can guarantee the card is of a particular type.
       */
-    var pattern: js.UndefOr[RegExp] = js.native
+    var pattern: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Array of prefixes used to identify the card type.
       */
-    var patterns: js.UndefOr[js.Array[Double]] = js.native
+    var patterns: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Card type
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardInfo {
     
@@ -111,12 +109,11 @@ object JQueryPayment {
     }
   }
   
-  @js.native
   trait ExpiryInfo extends StObject {
     
-    var month: Double = js.native
+    var month: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object ExpiryInfo {
     

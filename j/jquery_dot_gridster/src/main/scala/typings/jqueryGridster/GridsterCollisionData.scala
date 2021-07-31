@@ -3,23 +3,21 @@ package typings.jqueryGridster
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridsterCollisionData extends StObject {
   
-  var area: Double = js.native
+  var area: Double
   
-  var area_coords: GridsterCoords = js.native
+  var area_coords: GridsterCoords
   
-  var coords: GridsterCoords = js.native
+  var coords: GridsterCoords
   
-  var el: HTMLElement = js.native
+  var el: HTMLElement
   
-  var player_coords: GridsterCoords = js.native
+  var player_coords: GridsterCoords
   
-  var region: String = js.native
+  var region: String
 }
 object GridsterCollisionData {
   

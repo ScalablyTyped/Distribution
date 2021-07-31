@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpEndpointRequestConfiguration extends StObject {
   
   /**
     * Describes the metadata sent to the HTTP endpoint destination.
     */
-  var CommonAttributes: js.UndefOr[HttpEndpointCommonAttributesList] = js.native
+  var CommonAttributes: js.UndefOr[HttpEndpointCommonAttributesList] = js.undefined
   
   /**
     * Kinesis Data Firehose uses the content encoding to compress the body of a request before sending the request to the destination. For more information, see Content-Encoding in MDN Web Docs, the official Mozilla documentation.
     */
-  var ContentEncoding: js.UndefOr[typings.awsSdk.firehoseMod.ContentEncoding] = js.native
+  var ContentEncoding: js.UndefOr[typings.awsSdk.firehoseMod.ContentEncoding] = js.undefined
 }
 object HttpEndpointRequestConfiguration {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCompanyRequest extends StObject {
   
   /** Required. The company resource to replace the current resource in the system. */
-  var company: js.UndefOr[Company] = js.native
+  var company: js.UndefOr[Company] = js.undefined
   
   /**
     * Optional but strongly recommended for the best service experience. If update_mask is provided, only the specified fields in company are updated. Otherwise all the fields are
     * updated. A field mask to specify the company fields to be updated. Only top level fields of Company are supported.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateCompanyRequest {
   

@@ -3,23 +3,21 @@ package typings.awsLambda.anon
 import typings.awsLambda.codepipelineMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionConfiguration extends StObject {
   
-  var actionConfiguration: Configuration = js.native
+  var actionConfiguration: Configuration
   
-  var artifactCredentials: Credentials = js.native
+  var artifactCredentials: Credentials
   
-  var continuationToken: js.UndefOr[String] = js.native
+  var continuationToken: js.UndefOr[String] = js.undefined
   
-  var encryptionKey: js.UndefOr[EncryptionKeytypeKMS] = js.native
+  var encryptionKey: js.UndefOr[EncryptionKeytypeKMS] = js.undefined
   
-  var inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact] = js.native
+  var inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
   
-  var outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact] = js.native
+  var outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
 }
 object ActionConfiguration {
   

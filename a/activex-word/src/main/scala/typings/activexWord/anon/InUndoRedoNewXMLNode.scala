@@ -2,15 +2,13 @@ package typings.activexWord.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InUndoRedoNewXMLNode extends StObject {
   
-  val InUndoRedo: Boolean = js.native
+  val InUndoRedo: Boolean
   
-  val NewXMLNode: typings.activexWord.Word.XMLNode = js.native
+  val NewXMLNode: typings.activexWord.Word.XMLNode
 }
 object InUndoRedoNewXMLNode {
   

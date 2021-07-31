@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVocabularyFilterResponse extends StObject {
   
   /**
     * The URI of the list of words in the vocabulary filter. You can use this URI to get the list of words.
     */
-  var DownloadUri: js.UndefOr[Uri] = js.native
+  var DownloadUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The language code of the words in the vocabulary filter.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
     * The date and time that the contents of the vocabulary filter were updated.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.native
+  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the vocabulary filter.
     */
-  var VocabularyFilterName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilterName] = js.native
+  var VocabularyFilterName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilterName] = js.undefined
 }
 object GetVocabularyFilterResponse {
   

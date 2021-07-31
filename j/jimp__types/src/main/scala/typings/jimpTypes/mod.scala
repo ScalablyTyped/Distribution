@@ -8,14 +8,16 @@ import typings.jimpTiff.mod.Tiff
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/types", JSImport.Default)
+  @JSImport("@jimp/types", JSImport.Namespace)
   @js.native
-  def default(): Types = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Types = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Types]
   
   type BmpRet = ReturnType[js.Function0[Bmp]]
   

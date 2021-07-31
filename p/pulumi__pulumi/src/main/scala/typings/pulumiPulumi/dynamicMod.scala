@@ -6,7 +6,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamicMod {
@@ -27,18 +26,17 @@ object dynamicMod {
     def this(provider: ResourceProvider, name: String, props: Inputs, opts: CustomResourceOptions) = this()
   }
   
-  @js.native
   trait CheckFailure extends StObject {
     
     /**
       * The property that failed validation.
       */
-    val property: String = js.native
+    val property: String
     
     /**
       * The reason that the property failed validation.
       */
-    val reason: String = js.native
+    val reason: String
   }
   object CheckFailure {
     
@@ -59,18 +57,17 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait CheckResult extends StObject {
     
     /**
       * Any validation failures that occurred.
       */
-    val failures: js.UndefOr[js.Array[CheckFailure]] = js.native
+    val failures: js.UndefOr[js.Array[CheckFailure]] = js.undefined
     
     /**
       * The inputs to use, if any.
       */
-    val inputs: js.UndefOr[js.Any] = js.native
+    val inputs: js.UndefOr[js.Any] = js.undefined
   }
   object CheckResult {
     
@@ -100,18 +97,17 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait CreateResult extends StObject {
     
     /**
       * The ID of the created resource.
       */
-    val id: ID = js.native
+    val id: ID
     
     /**
       * Any properties that were computed during creation.
       */
-    val outs: js.UndefOr[js.Any] = js.native
+    val outs: js.UndefOr[js.Any] = js.undefined
   }
   object CreateResult {
     
@@ -135,29 +131,28 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait DiffResult extends StObject {
     
     /**
       * If true, this diff detected changes and suggests an update.
       */
-    val changes: js.UndefOr[Boolean] = js.native
+    val changes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, and a replacement occurs, the resource will first be deleted before being recreated.  This is to
       * void potential side-by-side issues with the default create before delete behavior.
       */
-    val deleteBeforeReplace: js.UndefOr[Boolean] = js.native
+    val deleteBeforeReplace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this update requires a replacement, the set of properties triggering it.
       */
-    val replaces: js.UndefOr[js.Array[String]] = js.native
+    val replaces: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional list of properties that will not ever change.
       */
-    val stables: js.UndefOr[js.Array[String]] = js.native
+    val stables: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DiffResult {
     
@@ -202,18 +197,17 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait ReadResult extends StObject {
     
     /**
       * The ID of the resource ready back (or blank if missing).
       */
-    val id: js.UndefOr[ID] = js.native
+    val id: js.UndefOr[ID] = js.undefined
     
     /**
       * The current property state read from the live environment.
       */
-    val props: js.UndefOr[js.Any] = js.native
+    val props: js.UndefOr[js.Any] = js.undefined
   }
   object ReadResult {
     
@@ -240,7 +234,6 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait ResourceProvider extends StObject {
     
     /**
@@ -249,7 +242,7 @@ object dynamicMod {
       * @param olds The old input properties to use for validation.
       * @param news The new input properties to use for validation.
       */
-    var check: js.UndefOr[js.Function2[/* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]]] = js.native
+    var check: js.UndefOr[js.Function2[/* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]]] = js.undefined
     
     /**
       * Create allocates a new instance of the provided resource and returns its unique ID afterwards.
@@ -257,7 +250,7 @@ object dynamicMod {
       *
       * @param inputs The properties to set during creation.
       */
-    def create(inputs: js.Any): js.Promise[CreateResult] = js.native
+    def create(inputs: js.Any): js.Promise[CreateResult]
     
     /**
       * Delete tears down an existing resource with the given ID.  If it fails, the resource is assumed to still exist.
@@ -265,7 +258,7 @@ object dynamicMod {
       * @param id The ID of the resource to delete.
       * @param props The current properties on the resource.
       */
-    var delete: js.UndefOr[js.Function2[/* id */ ID, /* props */ js.Any, js.Promise[Unit]]] = js.native
+    var delete: js.UndefOr[js.Function2[/* id */ ID, /* props */ js.Any, js.Promise[Unit]]] = js.undefined
     
     /**
       * Diff checks what impacts a hypothetical update will have on the resource's properties.
@@ -276,7 +269,7 @@ object dynamicMod {
       */
     var diff: js.UndefOr[
         js.Function3[/* id */ ID, /* olds */ js.Any, /* news */ js.Any, js.Promise[DiffResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Reads the current live state associated with a resource.  Enough state must be included in the inputs to uniquely
@@ -284,7 +277,7 @@ object dynamicMod {
       */
     var read: js.UndefOr[
         js.Function2[/* id */ ID, /* props */ js.UndefOr[js.Any], js.Promise[ReadResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Update updates an existing resource with new values.
@@ -295,7 +288,7 @@ object dynamicMod {
       */
     var update: js.UndefOr[
         js.Function3[/* id */ ID, /* olds */ js.Any, /* news */ js.Any, js.Promise[UpdateResult]]
-      ] = js.native
+      ] = js.undefined
   }
   object ResourceProvider {
     
@@ -343,13 +336,12 @@ object dynamicMod {
     }
   }
   
-  @js.native
   trait UpdateResult extends StObject {
     
     /**
       * Any properties that were computed during updating.
       */
-    val outs: js.UndefOr[js.Any] = js.native
+    val outs: js.UndefOr[js.Any] = js.undefined
   }
   object UpdateResult {
     

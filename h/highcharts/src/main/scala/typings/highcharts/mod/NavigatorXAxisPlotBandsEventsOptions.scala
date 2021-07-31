@@ -2,32 +2,30 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorXAxisPlotBandsEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Click event on a plot band.
     */
-  var click: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
+  var click: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Mouse move event on a plot band.
     */
-  var mousemove: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
+  var mousemove: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Mouse out event on the corner of a plot
     * band.
     */
-  var mouseout: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
+  var mouseout: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Mouse over event on a plot band.
     */
-  var mouseover: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
+  var mouseover: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
 }
 object NavigatorXAxisPlotBandsEventsOptions {
   

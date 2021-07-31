@@ -3,19 +3,17 @@ package typings.googleapis.tpuV1Mod.tpuV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TPU instance.
   */
-@js.native
 trait SchemaNode extends StObject {
   
   /**
     * The type of hardware accelerators associated with this node. Required.
     */
-  var acceleratorType: js.UndefOr[String] = js.native
+  var acceleratorType: js.UndefOr[String] = js.undefined
   
   /**
     * The CIDR block that the TPU node will use when selecting an IP address.
@@ -27,44 +25,44 @@ trait SchemaNode extends StObject {
     * or the provided network is peered with another network that is using that
     * CIDR block. Required.
     */
-  var cidrBlock: js.UndefOr[String] = js.native
+  var cidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the node was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user-supplied description of the TPU. Maximum of 512 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The health status of the TPU node.
     */
-  var health: js.UndefOr[String] = js.native
+  var health: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If this field is populated, it contains a description of why
     * the TPU Node is unhealthy.
     */
-  var healthDescription: js.UndefOr[String] = js.native
+  var healthDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. DEPRECATED! Use network_endpoints instead. The network
     * address for the TPU Node as visible to Compute Engine instances.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Resource labels to represent user-provided metadata.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The immutable name of the TPU
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a network they wish to peer the TPU node to. It must be a
@@ -72,22 +70,22 @@ trait SchemaNode extends StObject {
     * API has been activated. If none is provided, &quot;default&quot; will be
     * used.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The network endpoints where TPU workers can be accessed and
     * sent work. It is recommended that Tensorflow clients of the node reach
     * out to the 0th entry in this map first.
     */
-  var networkEndpoints: js.UndefOr[js.Array[SchemaNetworkEndpoint]] = js.native
+  var networkEndpoints: js.UndefOr[js.Array[SchemaNetworkEndpoint]] = js.undefined
   
   /**
     * Output only. DEPRECATED! Use network_endpoints instead. The network port
     * for the TPU Node as visible to Compute Engine instances.
     */
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
-  var schedulingConfig: js.UndefOr[SchemaSchedulingConfig] = js.native
+  var schedulingConfig: js.UndefOr[SchemaSchedulingConfig] = js.undefined
   
   /**
     * Output only. The service account used to run the tensor flow services
@@ -95,17 +93,17 @@ trait SchemaNode extends StObject {
     * with the Tensorflow job running in the Node, this account must have
     * permissions to that data.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current state for the TPU Node.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The version of Tensorflow running in the Node. Required.
     */
-  var tensorflowVersion: js.UndefOr[String] = js.native
+  var tensorflowVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaNode {
   

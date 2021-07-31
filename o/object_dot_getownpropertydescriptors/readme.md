@@ -11,8 +11,8 @@ ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in 
 | Full name          | object.getownpropertydescriptors |
 | Keywords           | Object.getOwnPropertyDescriptors, descriptor, property descriptor, ES8, ES2017, shim, polyfill, getOwnPropertyDescriptor, es-shim API |
 | # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 494759890 |
+| # dependents       | 70 |
+| # downloads        | 595222882 |
 | # stars            | 0 |
 
 ## Links

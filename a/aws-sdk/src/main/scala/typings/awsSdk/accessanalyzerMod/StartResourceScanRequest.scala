@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartResourceScanRequest extends StObject {
   
   /**
     * The ARN of the analyzer to use to scan the policies applied to the specified resource.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * The ARN of the resource to scan.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
 }
 object StartResourceScanRequest {
   

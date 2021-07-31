@@ -2,16 +2,14 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disposable extends StObject {
   
   /**
     * Performs tasks associated with freeing, releasing, or resetting resources.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object Disposable {
   

@@ -4,22 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.relayConcreteNodeMod.GeneratedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizationSplitOperation
-  extends GeneratedNode
+  extends StObject
+     with GeneratedNode
      with NormalizationSelectableNode {
   
-  val kind: String = js.native
+  val kind: String
   
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
   // 'SplitOperation';
-  val name: String = js.native
+  val name: String
   
-  val selections: js.Array[NormalizationSelection] = js.native
+  val selections: js.Array[NormalizationSelection]
 }
 object NormalizationSplitOperation {
   

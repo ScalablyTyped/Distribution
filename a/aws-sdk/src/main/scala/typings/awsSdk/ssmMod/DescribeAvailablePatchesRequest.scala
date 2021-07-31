@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAvailablePatchesRequest extends StObject {
   
   /**
     * Filters used to scope down the returned patches.
     */
-  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.native
+  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.undefined
   
   /**
     * The maximum number of patches to return (per page).
     */
-  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.native
+  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeAvailablePatchesRequest {
   

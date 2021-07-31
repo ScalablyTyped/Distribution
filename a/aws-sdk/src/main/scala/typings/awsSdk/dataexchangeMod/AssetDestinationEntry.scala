@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetDestinationEntry extends StObject {
   
   /**
     * The unique identifier for the asset.
     */
-  var AssetId: Id = js.native
+  var AssetId: Id
   
   /**
     * The S3 bucket that is the destination for the asset.
     */
-  var Bucket: string = js.native
+  var Bucket: string
   
   /**
     * The name of the object in Amazon S3 for the asset.
     */
-  var Key: js.UndefOr[string] = js.native
+  var Key: js.UndefOr[string] = js.undefined
 }
 object AssetDestinationEntry {
   

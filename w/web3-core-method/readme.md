@@ -10,9 +10,9 @@ Creates the methods on the web3 modules. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-method |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 49 |
-| # downloads        | 5974816 |
+| # releases         | 43 |
+| # dependents       | 62 |
+| # downloads        | 7313186 |
 | # stars            | 0 |
 
 ## Links

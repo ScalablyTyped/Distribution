@@ -3,11 +3,12 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.Flow.Renderer.LineEndType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringNumber extends Modifier {
+trait StringNumber
+  extends StObject
+     with Modifier {
   
   def setDashed(dashed: Boolean): StringNumber = js.native
   

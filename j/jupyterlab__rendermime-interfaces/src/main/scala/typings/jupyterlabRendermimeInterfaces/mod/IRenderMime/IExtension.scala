@@ -4,29 +4,27 @@ import typings.jupyterlabRendermimeInterfaces.jupyterlabRendermimeInterfacesStri
 import typings.jupyterlabRendermimeInterfaces.jupyterlabRendermimeInterfacesStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface for using a RenderMime.IRenderer for output and read-only documents.
   */
-@js.native
 trait IExtension extends StObject {
   
   /**
     * Preferred data type from the model.  Defaults to `string`.
     */
-  val dataType: js.UndefOr[string | json] = js.native
+  val dataType: js.UndefOr[string | json] = js.undefined
   
   /**
     * The options used to open a document with the renderer factory.
     */
-  val documentWidgetFactoryOptions: js.UndefOr[IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]] = js.native
+  val documentWidgetFactoryOptions: js.UndefOr[IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]] = js.undefined
   
   /**
     * The optional file type associated with the extension.
     */
-  val fileTypes: js.UndefOr[js.Array[IFileType]] = js.native
+  val fileTypes: js.UndefOr[js.Array[IFileType]] = js.undefined
   
   /**
     * The ID of the extension.
@@ -36,23 +34,23 @@ trait IExtension extends StObject {
     * name followed by a colon and a unique string token, e.g.
     * `'@jupyterlab/apputils-extension:settings'` or `'foo-extension:bar'`.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The rank passed to `RenderMime.addFactory`.  If not given,
     * defaults to the `defaultRank` of the factory.
     */
-  val rank: js.UndefOr[Double] = js.native
+  val rank: js.UndefOr[Double] = js.undefined
   
   /**
     * The timeout after user activity to re-render the data.
     */
-  val renderTimeout: js.UndefOr[Double] = js.native
+  val renderTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * A renderer factory to be registered to render the MIME type.
     */
-  val rendererFactory: IRendererFactory = js.native
+  val rendererFactory: IRendererFactory
 }
 object IExtension {
   

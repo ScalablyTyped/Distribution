@@ -3,36 +3,36 @@ package typings.urlMetadata
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("url-metadata", JSImport.Namespace)
-  @js.native
-  def apply(url: String): js.Promise[Result] = js.native
-  @JSImport("url-metadata", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): js.Promise[Result] = js.native
+  @scala.inline
+  def apply(url: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(url: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
+  @JSImport("url-metadata", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var descriptionLength: js.UndefOr[Double] = js.native
+    var descriptionLength: js.UndefOr[Double] = js.undefined
     
-    var encode: js.UndefOr[js.Function0[Unit]] = js.native
+    var encode: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ensureSecureImageRequest: js.UndefOr[Boolean] = js.native
+    var ensureSecureImageRequest: js.UndefOr[Boolean] = js.undefined
     
-    var fromEmail: js.UndefOr[String] = js.native
+    var fromEmail: js.UndefOr[String] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var sourceMap: js.UndefOr[StringDictionary[String]] = js.native
+    var sourceMap: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -95,99 +95,98 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     @JSName("article:author")
-    var articleColonauthor: js.UndefOr[String] = js.native
+    var articleColonauthor: js.UndefOr[String] = js.undefined
     
     @JSName("article:expiration_time")
-    var articleColonexpiration_time: js.UndefOr[String] = js.native
+    var articleColonexpiration_time: js.UndefOr[String] = js.undefined
     
     @JSName("article:modified_time")
-    var articleColonmodified_time: js.UndefOr[String] = js.native
+    var articleColonmodified_time: js.UndefOr[String] = js.undefined
     
     @JSName("article:published_time")
-    var articleColonpublished_time: js.UndefOr[String] = js.native
+    var articleColonpublished_time: js.UndefOr[String] = js.undefined
     
     @JSName("article:section")
-    var articleColonsection: js.UndefOr[String] = js.native
+    var articleColonsection: js.UndefOr[String] = js.undefined
     
     @JSName("article:tag")
-    var articleColontag: js.UndefOr[String] = js.native
+    var articleColontag: js.UndefOr[String] = js.undefined
     
-    var author: String = js.native
+    var author: String
     
-    var canonical: String = js.native
+    var canonical: String
     
-    var description: String = js.native
+    var description: String
     
-    var image: String = js.native
+    var image: String
     
-    var keywords: String = js.native
+    var keywords: String
     
     @JSName("og:article:author")
-    var ogColonarticleColonauthor: js.UndefOr[String] = js.native
+    var ogColonarticleColonauthor: js.UndefOr[String] = js.undefined
     
     @JSName("og:article:expiration_time")
-    var ogColonarticleColonexpiration_time: js.UndefOr[String] = js.native
+    var ogColonarticleColonexpiration_time: js.UndefOr[String] = js.undefined
     
     @JSName("og:article:modified_time")
-    var ogColonarticleColonmodified_time: js.UndefOr[String] = js.native
+    var ogColonarticleColonmodified_time: js.UndefOr[String] = js.undefined
     
     @JSName("og:article:published_time")
-    var ogColonarticleColonpublished_time: js.UndefOr[String] = js.native
+    var ogColonarticleColonpublished_time: js.UndefOr[String] = js.undefined
     
     @JSName("og:article:section")
-    var ogColonarticleColonsection: js.UndefOr[String] = js.native
+    var ogColonarticleColonsection: js.UndefOr[String] = js.undefined
     
     @JSName("og:article:tag")
-    var ogColonarticleColontag: js.UndefOr[String] = js.native
+    var ogColonarticleColontag: js.UndefOr[String] = js.undefined
     
     @JSName("og:description")
-    var ogColondescription: String = js.native
+    var ogColondescription: String
     
     @JSName("og:determiner")
-    var ogColondeterminer: String = js.native
+    var ogColondeterminer: String
     
     @JSName("og:image")
-    var ogColonimage: String = js.native
+    var ogColonimage: String
     
     @JSName("og:image:height")
-    var ogColonimageColonheight: String = js.native
+    var ogColonimageColonheight: String
     
     @JSName("og:image:secure_url")
-    var ogColonimageColonsecure_url: String = js.native
+    var ogColonimageColonsecure_url: String
     
     @JSName("og:image:type")
-    var ogColonimageColontype: String = js.native
+    var ogColonimageColontype: String
     
     @JSName("og:image:width")
-    var ogColonimageColonwidth: String = js.native
+    var ogColonimageColonwidth: String
     
     @JSName("og:locale")
-    var ogColonlocale: String = js.native
+    var ogColonlocale: String
     
     @JSName("og:locale:alternate")
-    var ogColonlocaleColonalternate: String = js.native
+    var ogColonlocaleColonalternate: String
     
     @JSName("og:site_name")
-    var ogColonsite_name: String = js.native
+    var ogColonsite_name: String
     
     @JSName("og:title")
-    var ogColontitle: String = js.native
+    var ogColontitle: String
     
     @JSName("og:type")
-    var ogColontype: String = js.native
+    var ogColontype: String
     
     @JSName("og:url")
-    var ogColonurl: String = js.native
+    var ogColonurl: String
     
-    var source: String = js.native
+    var source: String
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object Result {
     

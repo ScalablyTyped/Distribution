@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,14 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * strokes
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleKeyBinding extends XInterface {
+trait XAccessibleKeyBinding
+  extends StObject
+     with XInterface {
   
   /**
     * Return the number of available key bindings.
     * @returns The returned value may be 0 to indicate that there are no key bindings or the positive number of the available key bindings.
     */
-  val AccessibleKeyBindingCount: Double = js.native
+  val AccessibleKeyBindingCount: Double
   
   /**
     * The returned sequence of key strokes describes one method to invoke the associated action (the one from which you obtained the object at which you
@@ -37,13 +37,13 @@ trait XAccessibleKeyBinding extends XInterface {
     * @returns The returned sequence of key strokes specifies one way to invoke the associated action. The sequence may be empty (but should not be; better not
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is not valid.
     */
-  def getAccessibleKeyBinding(nIndex: Double): SafeArray[KeyStroke] = js.native
+  def getAccessibleKeyBinding(nIndex: Double): SafeArray[KeyStroke]
   
   /**
     * Return the number of available key bindings.
     * @returns The returned value may be 0 to indicate that there are no key bindings or the positive number of the available key bindings.
     */
-  def getAccessibleKeyBindingCount(): Double = js.native
+  def getAccessibleKeyBindingCount(): Double
 }
 object XAccessibleKeyBinding {
   

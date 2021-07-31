@@ -27,136 +27,134 @@ import typings.vegaLite.vegaLiteStrings.subtitlePadding
 import typings.vegaLite.vegaLiteStrings.zindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<keyof vega-lite.vega-lite/build/src/header.CoreHeader<vega.vega.SignalRef>, keyof vega.vega.TitleConfig>> */
-@js.native
 trait PartialRecordkeyofCoreHea extends StObject {
   
   var format: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var formatType: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelAlign: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelAnchor: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelAngle: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelBaseline: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelColor: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelExpr: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelFont: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelFontSize: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelFontStyle: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelFontWeight: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelLimit: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelLineHeight: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelOrient: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labelPadding: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var labels: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var orient: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | typings.vegaLite.vegaLiteStrings.orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleAlign: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleAnchor: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleAngle: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleBaseline: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleColor: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleFont: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleFontSize: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleFontStyle: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleFontWeight: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleLimit: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleLineHeight: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titleOrient: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
   
   var titlePadding: js.UndefOr[
     subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
-  ] = js.native
+  ] = js.undefined
 }
 object PartialRecordkeyofCoreHea {
   

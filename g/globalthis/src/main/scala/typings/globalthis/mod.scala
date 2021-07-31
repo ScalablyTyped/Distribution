@@ -3,25 +3,30 @@ package typings.globalthis
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  
   @JSImport("globalthis", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the `globalThis` object.
     */
-  @JSImport("globalthis", "getPolyfill")
-  @js.native
+  @scala.inline
   def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolyfill")().asInstanceOf[ReturnType[
+    js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
+    ]
+  ]]
   
   /**
     * The `globalThis` object.
@@ -33,11 +38,14 @@ object mod {
   /**
     * Installs the `globalThis` property onto the global object.
     */
-  @JSImport("globalthis", "shim")
-  @js.native
+  @scala.inline
   def shim(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[ReturnType[
+    js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
+    ]
+  ]]
 }

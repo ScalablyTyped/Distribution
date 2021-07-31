@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides for access to a container of keys, typically used for a table definition object. */
-@js.native
-trait XKeysSupplier extends XInterface {
+trait XKeysSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of keys.
     * @returns the keys
     */
-  val Keys: XIndexAccess = js.native
+  val Keys: XIndexAccess
   
   /**
     * returns the container of keys.
     * @returns the keys
     */
-  def getKeys(): XIndexAccess = js.native
+  def getKeys(): XIndexAccess
 }
 object XKeysSupplier {
   

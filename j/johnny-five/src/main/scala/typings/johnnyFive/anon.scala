@@ -2,23 +2,21 @@ package typings.johnnyFive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Abbr extends StObject {
     
-    var abbr: String = js.native
+    var abbr: String
     
-    var heading: Double = js.native
+    var heading: Double
     
-    var high: Double = js.native
+    var high: Double
     
-    var low: Double = js.native
+    var low: Double
     
-    var name: String = js.native
+    var name: String
   }
   object Abbr {
     

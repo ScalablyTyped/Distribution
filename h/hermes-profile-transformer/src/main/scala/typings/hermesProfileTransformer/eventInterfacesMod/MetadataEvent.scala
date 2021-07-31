@@ -3,16 +3,15 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.METADATA_EVENTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataEvent
-  extends SharedEventProperties
+  extends StObject
+     with SharedEventProperties
      with Event {
   
   @JSName("ph")
-  var ph_MetadataEvent: METADATA_EVENTS = js.native
+  var ph_MetadataEvent: METADATA_EVENTS
 }
 object MetadataEvent {
   

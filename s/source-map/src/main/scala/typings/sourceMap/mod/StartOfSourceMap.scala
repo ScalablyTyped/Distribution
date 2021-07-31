@@ -2,17 +2,15 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOfSourceMap extends StObject {
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var skipValidation: js.UndefOr[Boolean] = js.native
+  var skipValidation: js.UndefOr[Boolean] = js.undefined
   
-  var sourceRoot: js.UndefOr[String] = js.native
+  var sourceRoot: js.UndefOr[String] = js.undefined
 }
 object StartOfSourceMap {
   

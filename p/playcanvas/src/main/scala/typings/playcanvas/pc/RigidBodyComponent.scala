@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The entity this component is attached to.
   */
 @js.native
-trait RigidBodyComponent extends Component {
+trait RigidBodyComponent
+  extends StObject
+     with Component {
   
   /**
     * Forcibly activate the rigid body simulation. Only affects rigid bodies of
@@ -155,9 +156,9 @@ trait RigidBodyComponent extends Component {
   ): Unit = js.native
   
   def applyTorque(x: Double): Unit = js.native
-  def applyTorque(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorque(x: Double, y: Double): Unit = js.native
   def applyTorque(x: Double, y: Double, z: Double): Unit = js.native
+  def applyTorque(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Apply torque (rotational force) to the body. This function has two valid signatures.
     * You can either specify the torque force with a 3D-vector or with 3 numbers.
@@ -174,14 +175,14 @@ trait RigidBodyComponent extends Component {
     * @param [z] - The z-component of the torque force in world-space.
     */
   def applyTorque(x: Vec3): Unit = js.native
-  def applyTorque(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorque(x: Vec3, y: Double): Unit = js.native
   def applyTorque(x: Vec3, y: Double, z: Double): Unit = js.native
+  def applyTorque(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def applyTorqueImpulse(x: Double): Unit = js.native
-  def applyTorqueImpulse(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorqueImpulse(x: Double, y: Double): Unit = js.native
   def applyTorqueImpulse(x: Double, y: Double, z: Double): Unit = js.native
+  def applyTorqueImpulse(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Apply a torque impulse (rotational force applied instantaneously) to the body.
     * This function has two valid signatures. You can either specify the torque force with a 3D-vector
@@ -199,9 +200,9 @@ trait RigidBodyComponent extends Component {
     * @param [z] - The z-component of the torque impulse in world-space.
     */
   def applyTorqueImpulse(x: Vec3): Unit = js.native
-  def applyTorqueImpulse(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorqueImpulse(x: Vec3, y: Double): Unit = js.native
   def applyTorqueImpulse(x: Vec3, y: Double, z: Double): Unit = js.native
+  def applyTorqueImpulse(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   /**
     * The friction value used when contacts occur between two bodies. A higher

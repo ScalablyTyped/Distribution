@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFlowResponse extends StObject {
   
   /**
     * Indicates the current status of the flow. 
     */
-  var flowStatus: js.UndefOr[FlowStatus] = js.native
+  var flowStatus: js.UndefOr[FlowStatus] = js.undefined
 }
 object UpdateFlowResponse {
   

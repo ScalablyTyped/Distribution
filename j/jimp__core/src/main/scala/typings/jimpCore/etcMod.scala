@@ -10,19 +10,17 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object etcMod {
   
-  @js.native
   trait Bitmap extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bitmap {
     
@@ -46,14 +44,13 @@ object etcMod {
     }
   }
   
-  @js.native
   trait BlendMode extends StObject {
     
-    var mode: String = js.native
+    var mode: String
     
-    var opacityDest: Double = js.native
+    var opacityDest: Double
     
-    var opacitySource: Double = js.native
+    var opacitySource: Double
   }
   object BlendMode {
     
@@ -101,10 +98,9 @@ object etcMod {
   
   type GenericCallback[T, U, TThis] = js.ThisFunction2[/* this */ TThis, /* err */ Error | Null, /* value */ T, U]
   
-  @js.native
   trait Image extends StObject {
     
-    var bitmap: Bitmap = js.native
+    var bitmap: Bitmap
   }
   object Image {
     
@@ -186,14 +182,13 @@ object etcMod {
     }
   }
   
-  @js.native
   trait RGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB {
     
@@ -217,16 +212,15 @@ object etcMod {
     }
   }
   
-  @js.native
   trait RGBA extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGBA {
     
@@ -253,14 +247,13 @@ object etcMod {
     }
   }
   
-  @js.native
   trait URLOptions extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
     
-    var url: String = js.native
+    var url: String
   }
   object URLOptions {
     

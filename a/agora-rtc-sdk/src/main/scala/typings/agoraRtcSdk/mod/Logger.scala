@@ -7,7 +7,6 @@ import typings.agoraRtcSdk.agoraRtcSdkNumbers.`3`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Logger {
   
+  @JSImport("agora-rtc-sdk", "Logger")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Disables Log Upload
     *
@@ -25,9 +28,8 @@ object Logger {
     * By default, the log-upload function is disabled. If you have used {@link enableLogUpload}, call this method when you need to stop uploading the log.
     * @example `AgoraRTC.Logger.disableLogUpload();`
     */
-  @JSImport("agora-rtc-sdk", "Logger.disableLogUpload")
-  @js.native
-  def disableLogUpload(): Unit = js.native
+  @scala.inline
+  def disableLogUpload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableLogUpload")().asInstanceOf[Unit]
   
   /**
     * Enables Log Upload
@@ -41,9 +43,8 @@ object Logger {
     * If the user fails to join the channel, the log information is not available on Agora’s server.
     * @example `AgoraRTC.Logger.enableLogUpload();`
     */
-  @JSImport("agora-rtc-sdk", "Logger.enableLogUpload")
-  @js.native
-  def enableLogUpload(): Unit = js.native
+  @scala.inline
+  def enableLogUpload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogUpload")().asInstanceOf[Unit]
   
   /**
     * Sets the Log Level
@@ -54,21 +55,16 @@ object Logger {
     * For example, if you set the log level as `AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);`, then you can see logs in levels INFO, ERROR, and WARNING.
     * @param level The output log level. The default value is {@link DEBUG}.
     */
-  @JSImport("agora-rtc-sdk", "Logger.setLogLevel")
-  @js.native
-  def setLogLevel(level: DEBUG): Unit = js.native
-  @JSImport("agora-rtc-sdk", "Logger.setLogLevel")
-  @js.native
-  def setLogLevel(level: ERROR): Unit = js.native
-  @JSImport("agora-rtc-sdk", "Logger.setLogLevel")
-  @js.native
-  def setLogLevel(level: INFO): Unit = js.native
-  @JSImport("agora-rtc-sdk", "Logger.setLogLevel")
-  @js.native
-  def setLogLevel(level: NONE): Unit = js.native
-  @JSImport("agora-rtc-sdk", "Logger.setLogLevel")
-  @js.native
-  def setLogLevel(level: WARNING): Unit = js.native
+  @scala.inline
+  def setLogLevel(level: DEBUG): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: ERROR): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: INFO): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: NONE): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setLogLevel(level: WARNING): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Outputs all logs. */
   type DEBUG = `0`

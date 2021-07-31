@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DeviceRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDeviceRequest extends StObject {
   
-  var body: DeviceRequest = js.native
+  var body: DeviceRequest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceRequest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceRequest
 }
 object BodyDeviceRequest {
   
   @scala.inline
-  def apply(body: DeviceRequest, resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceRequest): BodyDeviceRequest = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DeviceRequest): BodyDeviceRequest = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "DeviceRequest")
     __obj.asInstanceOf[BodyDeviceRequest]
   }
   

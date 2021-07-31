@@ -2,25 +2,23 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderClasses extends StObject {
   
-  var `ui-slider`: js.UndefOr[String] = js.native
+  var `ui-slider`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-handle`: js.UndefOr[String] = js.native
+  var `ui-slider-handle`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-horizontal`: js.UndefOr[String] = js.native
+  var `ui-slider-horizontal`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-range`: js.UndefOr[String] = js.native
+  var `ui-slider-range`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-range-max`: js.UndefOr[String] = js.native
+  var `ui-slider-range-max`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-range-min`: js.UndefOr[String] = js.native
+  var `ui-slider-range-min`: js.UndefOr[String] = js.undefined
   
-  var `ui-slider-vertical`: js.UndefOr[String] = js.native
+  var `ui-slider-vertical`: js.UndefOr[String] = js.undefined
 }
 object SliderClasses {
   

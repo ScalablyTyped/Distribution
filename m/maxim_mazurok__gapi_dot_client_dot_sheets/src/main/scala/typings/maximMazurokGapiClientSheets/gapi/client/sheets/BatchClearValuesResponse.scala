@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchClearValuesResponse extends StObject {
   
   /**
     * The ranges that were cleared, in A1 notation. If the requests are for an unbounded range or a ranger larger than the bounds of the sheet, this is the actual ranges that were
     * cleared, bounded to the sheet's limits.
     */
-  var clearedRanges: js.UndefOr[js.Array[String]] = js.native
+  var clearedRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The spreadsheet the updates were applied to. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object BatchClearValuesResponse {
   

@@ -2,23 +2,21 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationBatteryUsage extends StObject {
   
   /**
     * An attribute storing ID of an application.
     */
-  val appId: ApplicationId = js.native
+  val appId: ApplicationId
   
   /**
     * An attribute which stores information about battery usage of an application with ApplicationId `appId`.
     * Battery usage is a ratio of battery consumption of the application with ApplicationId `appId` to the total battery consumption of all applications.
     * The attribute value scales from ***0*** to ***1***, the higher value, the more battery is consumed.
     */
-  val batteryUsage: Double = js.native
+  val batteryUsage: Double
 }
 object ApplicationBatteryUsage {
   

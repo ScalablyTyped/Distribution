@@ -3,61 +3,59 @@ package typings.uiGrid.mod
 import typings.uiGrid.anon.PaginationChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagination {
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
       * Enables pagination, defaults to true
       * @default true
       */
-    var enablePagination: js.UndefOr[Boolean] = js.native
+    var enablePagination: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables the paginator at the bottom of the grid. Turn this off, if you want to implement your own
       * controls outside the grid
       */
-    var enablePaginationControls: js.UndefOr[Boolean] = js.native
+    var enablePaginationControls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Current page number, defaults to 1
       * @default 1
       */
-    var paginationCurrentPage: js.UndefOr[Double] = js.native
+    var paginationCurrentPage: js.UndefOr[Double] = js.undefined
     
     /**
       * Page size, defaults to the first item in paginationPageSizes, or 0 if paginationPageSizes is empty
       */
-    var paginationPageSize: js.UndefOr[Double] = js.native
+    var paginationPageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of page sizes, defaults to [250, 500, 1000]
       * @default [250, 500, 1000]
       */
-    var paginationPageSizes: js.UndefOr[js.Array[Double]] = js.native
+    var paginationPageSizes: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * A custom template for the pager, defaults to ui-grid/pagination
       * @default 'ui-grid/pagination'
       */
-    var paginationTemplate: js.UndefOr[String] = js.native
+    var paginationTemplate: js.UndefOr[String] = js.undefined
     
     /**
       * Total number of items, set automatically when client side pagination,
       * needs set by user for server side pagination
       */
-    var totalItems: js.UndefOr[Double] = js.native
+    var totalItems: js.UndefOr[Double] = js.undefined
     
     /**
       * Disables client side pagination. When true, handle the paginationChanged event and set data and
       * totalItems, defaults to false
       * @default false
       */
-    var useExternalPagination: js.UndefOr[Boolean] = js.native
+    var useExternalPagination: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -123,7 +121,6 @@ object pagination {
     }
   }
   
-  @js.native
   trait IGridPaginationApi extends StObject {
     
     // Methods
@@ -131,32 +128,32 @@ object pagination {
       * Get the current page
       * @returns {number} the number of the current page
       */
-    def getPage(): Double = js.native
+    def getPage(): Double
     
     /**
       * Get the total number of pages
       * @returns {number} the total number of pages
       */
-    def getTotalPages(): Double = js.native
+    def getTotalPages(): Double
     
     /**
       * Moves to the next page if possible
       */
-    def nextPage(): Unit = js.native
+    def nextPage(): Unit
     
     // Events
-    var on: PaginationChanged = js.native
+    var on: PaginationChanged
     
     /**
       * Moves to the previous page if we're not on the first page.
       */
-    def previousPage(): Unit = js.native
+    def previousPage(): Unit
     
     /**
       * Moves to the requested page
       * @param {number} page The number of the page that should be displayed
       */
-    def seek(page: Double): Unit = js.native
+    def seek(page: Double): Unit
   }
   object IGridPaginationApi {
     

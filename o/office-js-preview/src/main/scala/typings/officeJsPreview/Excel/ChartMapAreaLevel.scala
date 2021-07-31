@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,26 +17,42 @@ sealed trait ChartMapAreaLevel extends StObject
 object ChartMapAreaLevel extends StObject {
   
   @js.native
-  sealed trait automatic extends ChartMapAreaLevel
+  sealed trait automatic
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait city extends ChartMapAreaLevel
+  sealed trait city
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait continent extends ChartMapAreaLevel
+  sealed trait continent
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait country extends ChartMapAreaLevel
+  sealed trait country
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait county extends ChartMapAreaLevel
+  sealed trait county
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait dataOnly extends ChartMapAreaLevel
+  sealed trait dataOnly
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait state extends ChartMapAreaLevel
+  sealed trait state
+    extends StObject
+       with ChartMapAreaLevel
   
   @js.native
-  sealed trait world extends ChartMapAreaLevel
+  sealed trait world
+    extends StObject
+       with ChartMapAreaLevel
 }

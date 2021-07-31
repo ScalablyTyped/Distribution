@@ -2,29 +2,25 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait ElementaryTypeNameExpression
-  extends PrimaryExpression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with PrimaryExpression {
   
-  var typeName: ElementaryTypeName = js.native
+  var typeName: ElementaryTypeName
   
   @JSName("type")
-  var type_ElementaryTypeNameExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression = js.native
+  var type_ElementaryTypeNameExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression
 }
 object ElementaryTypeNameExpression {
   
   @scala.inline
-  def apply(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
-    typeName: ElementaryTypeName
-  ): ElementaryTypeNameExpression = {
+  def apply(typeName: ElementaryTypeName): ElementaryTypeNameExpression = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementaryTypeNameExpression")
     __obj.asInstanceOf[ElementaryTypeNameExpression]
   }
   

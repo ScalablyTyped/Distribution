@@ -2,31 +2,29 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseConfigurationAssociation extends StObject {
   
   /**
     * Time when the license configuration was associated with the resource.
     */
-  var AssociationTime: js.UndefOr[DateTime] = js.native
+  var AssociationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: js.UndefOr[String] = js.native
+  var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the AWS account that owns the resource consuming licenses.
     */
-  var ResourceOwnerId: js.UndefOr[String] = js.native
+  var ResourceOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of server resource.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.undefined
 }
 object LicenseConfigurationAssociation {
   

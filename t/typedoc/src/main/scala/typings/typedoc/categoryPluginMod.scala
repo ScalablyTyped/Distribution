@@ -6,7 +6,6 @@ import typings.typedoc.modelsMod.Reflection
 import typings.typedoc.reflectionCategoryMod.ReflectionCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryPluginMod {
@@ -54,16 +53,13 @@ object categoryPluginMod {
     @scala.inline
     def defaultCategory_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCategory")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CategoryPlugin", "CategoryPlugin.getCategory")
-    @js.native
-    def getCategory(reflection: Reflection): String = js.native
+    @scala.inline
+    def getCategory(reflection: Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCategory")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CategoryPlugin", "CategoryPlugin.getReflectionCategories")
-    @js.native
-    def getReflectionCategories(reflections: js.Array[Reflection]): js.Array[ReflectionCategory] = js.native
+    @scala.inline
+    def getReflectionCategories(reflections: js.Array[Reflection]): js.Array[ReflectionCategory] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReflectionCategories")(reflections.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReflectionCategory]]
     
-    @JSImport("typedoc/dist/lib/converter/plugins/CategoryPlugin", "CategoryPlugin.sortCatCallback")
-    @js.native
-    def sortCatCallback(a: ReflectionCategory, b: ReflectionCategory): Double = js.native
+    @scala.inline
+    def sortCatCallback(a: ReflectionCategory, b: ReflectionCategory): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortCatCallback")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

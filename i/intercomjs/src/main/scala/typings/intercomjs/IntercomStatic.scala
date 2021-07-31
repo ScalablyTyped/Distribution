@@ -3,22 +3,20 @@ package typings.intercomjs
 import typings.intercomjs.intercom.Intercom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntercomStatic extends StObject {
   
   /**
     * Removes all data associated with intercom from localStorage.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns an instance of Intercom. If one doesn't exist, it will be instantiated.
     * @return an instance of Intercom.
     */
-  def getInstance(): Intercom = js.native
+  def getInstance(): Intercom
 }
 object IntercomStatic {
   

@@ -2,13 +2,11 @@ package typings.reactNavigationStack.vendorTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionCallbackProps extends StObject {
   
-  var closing: Boolean = js.native
+  var closing: Boolean
 }
 object TransitionCallbackProps {
   

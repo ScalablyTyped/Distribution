@@ -2,59 +2,57 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audio extends StObject {
   
   // The title of the album for this audio file.
-  var album: js.UndefOr[NullableOption[String]] = js.native
+  var album: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The artist named on the album for the audio file.
-  var albumArtist: js.UndefOr[NullableOption[String]] = js.native
+  var albumArtist: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The performing artist for the audio file.
-  var artist: js.UndefOr[NullableOption[String]] = js.native
+  var artist: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Bitrate expressed in kbps.
-  var bitrate: js.UndefOr[NullableOption[Double]] = js.native
+  var bitrate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The name of the composer of the audio file.
-  var composers: js.UndefOr[NullableOption[String]] = js.native
+  var composers: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Copyright information for the audio file.
-  var copyright: js.UndefOr[NullableOption[String]] = js.native
+  var copyright: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The number of the disc this audio file came from.
-  var disc: js.UndefOr[NullableOption[Double]] = js.native
+  var disc: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The total number of discs in this album.
-  var discCount: js.UndefOr[NullableOption[Double]] = js.native
+  var discCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Duration of the audio file, expressed in milliseconds
-  var duration: js.UndefOr[NullableOption[Double]] = js.native
+  var duration: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The genre of this audio file.
-  var genre: js.UndefOr[NullableOption[String]] = js.native
+  var genre: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates if the file is protected with digital rights management.
-  var hasDrm: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasDrm: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates if the file is encoded with a variable bitrate.
-  var isVariableBitrate: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isVariableBitrate: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The title of the audio file.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The number of the track on the original disc for this audio file.
-  var track: js.UndefOr[NullableOption[Double]] = js.native
+  var track: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The total number of tracks on the original disc for this audio file.
-  var trackCount: js.UndefOr[NullableOption[Double]] = js.native
+  var trackCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The year the audio file was recorded.
-  var year: js.UndefOr[NullableOption[Double]] = js.native
+  var year: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Audio {
   

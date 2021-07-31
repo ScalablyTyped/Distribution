@@ -10,9 +10,9 @@ Auth0 Lock
 | ------------------ | :-------------: |
 | Full name          | auth0-lock |
 | Keywords           | auth0, auth, openid, authentication, passwordless, browser, jwt |
-| # releases         | 49 |
-| # dependents       | 51 |
-| # downloads        | 1592147 |
+| # releases         | 44 |
+| # dependents       | 53 |
+| # downloads        | 1673740 |
 | # stars            | 5 |
 
 ## Links

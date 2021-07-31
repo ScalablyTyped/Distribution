@@ -2,23 +2,21 @@ package typings.twoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructorParams extends StObject {
   
-  var autostart: js.UndefOr[Boolean] = js.native
+  var autostart: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Types] = js.native
+  var `type`: js.UndefOr[Types] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ConstructorParams {
   

@@ -1,11 +1,15 @@
 package typings.ibmMobilefirst
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ibmMobilefirst.WL.App.ActionReceiverCallback
 import typings.ibmMobilefirst.WL.App.BackgroundHandler.Handler
 import typings.ibmMobilefirst.WL.App.Callback
 import typings.ibmMobilefirst.WL.App.Data
 import typings.ibmMobilefirst.WL.App.KeepAliveInBackgroundOptions
 import typings.ibmMobilefirst.WL.App.OpenURLOptions
+import typings.ibmMobilefirst.WL.Client.ChallengeHandlerAuthenticationOptions
+import typings.ibmMobilefirst.WL.Client.ChallengeHandlerSubmitLoginFormOptions
+import typings.ibmMobilefirst.WL.Client.ChallengehandlerInvocationData
 import typings.ibmMobilefirst.WL.Client.ConnectOptions
 import typings.ibmMobilefirst.WL.Client.EventTransmissionPolicy
 import typings.ibmMobilefirst.WL.Client.InitOptions
@@ -19,6 +23,7 @@ import typings.ibmMobilefirst.WL.Geo.Circle
 import typings.ibmMobilefirst.WL.Geo.Coordinate
 import typings.ibmMobilefirst.WL.Geo.DistanceOptions
 import typings.ibmMobilefirst.WL.Geo.InsideOutsideOptions
+import typings.ibmMobilefirst.WL.Headers
 import typings.ibmMobilefirst.WL.Options
 import typings.ibmMobilefirst.WL.ResponseHandler
 import typings.ibmMobilefirst.WL.SecurityUtils.DecryptOptions
@@ -31,7 +36,6 @@ import typings.ibmMobilefirst.WLAuthorizationManager.RequestObject
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -44,35 +48,37 @@ object global {
     
     object Analytics {
       
-      @JSGlobal("WL.Analytics.disable")
+      @JSGlobal("WL.Analytics")
       @js.native
-      def disable(): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("WL.Analytics.enable")
-      @js.native
-      def enable(): Unit = js.native
+      @scala.inline
+      def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Analytics.log")
-      @js.native
-      def log(message: String, name: String): Unit = js.native
+      @scala.inline
+      def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+      
+      @scala.inline
+      def log(message: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * @deprecated since version 6.2. WL.Analytics.restart is now a NOP.
         */
-      @JSGlobal("WL.Analytics.restart")
-      @js.native
-      def restart(): Unit = js.native
+      @scala.inline
+      def restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Analytics.send")
-      @js.native
-      def send(): Unit = js.native
+      @scala.inline
+      def send(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Analytics.state")
-      @js.native
-      def state(): Unit = js.native
+      @scala.inline
+      def state(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("state")().asInstanceOf[Unit]
     }
     
     object App {
+      
+      @JSGlobal("WL.App")
+      @js.native
+      val ^ : js.Any = js.native
       
       object BackgroundHandler {
         
@@ -101,93 +107,72 @@ object global {
         @scala.inline
         def hideView_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideView")(x.asInstanceOf[js.Any])
         
-        @JSGlobal("WL.App.BackgroundHandler.setOnAppEnteringBackground")
-        @js.native
-        def setOnAppEnteringBackground(handler: Handler): Unit = js.native
+        @scala.inline
+        def setOnAppEnteringBackground(handler: Handler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnAppEnteringBackground")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
-      @JSGlobal("WL.App.addActionReceiver")
-      @js.native
-      def addActionReceiver(id: String, callback: ActionReceiverCallback): Unit = js.native
+      @scala.inline
+      def addActionReceiver(id: String, callback: ActionReceiverCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addActionReceiver")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * @deprecate Deprecated.
         */
-      @JSGlobal("WL.App.close")
-      @js.native
-      def close(): Unit = js.native
+      @scala.inline
+      def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.copyToClipboard")
-      @js.native
-      def copyToClipboard(stringToCopy: String): Unit = js.native
-      @JSGlobal("WL.App.copyToClipboard")
-      @js.native
-      def copyToClipboard(stringToCopy: String, callback: Callback): Unit = js.native
+      @scala.inline
+      def copyToClipboard(stringToCopy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyToClipboard")(stringToCopy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def copyToClipboard(stringToCopy: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyToClipboard")(stringToCopy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.getDeviceLanguage")
-      @js.native
-      def getDeviceLanguage(): String = js.native
+      @scala.inline
+      def getDeviceLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceLanguage")().asInstanceOf[String]
       
-      @JSGlobal("WL.App.getDeviceLocale")
-      @js.native
-      def getDeviceLocale(): String = js.native
+      @scala.inline
+      def getDeviceLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceLocale")().asInstanceOf[String]
       
       /**
         * TODO: declare exception type. (Exceptions that are thrown by the IBM® Worklight® client runtime framework)
         */
-      @JSGlobal("WL.App.getErrorMessage")
-      @js.native
-      def getErrorMessage(exception: js.Any): String = js.native
+      @scala.inline
+      def getErrorMessage(exception: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorMessage")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("WL.App.hideSplashScreen")
-      @js.native
-      def hideSplashScreen(): Unit = js.native
+      @scala.inline
+      def hideSplashScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideSplashScreen")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.openURL")
-      @js.native
-      def openURL(url: String): Unit = js.native
-      @JSGlobal("WL.App.openURL")
-      @js.native
-      def openURL(url: String, target: js.UndefOr[scala.Nothing], options: OpenURLOptions): Unit = js.native
-      @JSGlobal("WL.App.openURL")
-      @js.native
-      def openURL(url: String, target: String): Unit = js.native
-      @JSGlobal("WL.App.openURL")
-      @js.native
-      def openURL(url: String, target: String, options: OpenURLOptions): Unit = js.native
+      @scala.inline
+      def openURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def openURL(url: String, target: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def openURL(url: String, target: String, options: OpenURLOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def openURL(url: String, target: Unit, options: OpenURLOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.overrideBackButton")
-      @js.native
-      def overrideBackButton(callback: Callback): Unit = js.native
+      @scala.inline
+      def overrideBackButton(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideBackButton")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.removeActionReceiver")
-      @js.native
-      def removeActionReceiver(id: String): Unit = js.native
+      @scala.inline
+      def removeActionReceiver(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeActionReceiver")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * @deprecated since version 6.0.0
         */
-      @JSGlobal("WL.App.resetBackButton")
-      @js.native
-      def resetBackButton(): Unit = js.native
+      @scala.inline
+      def resetBackButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBackButton")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.sendActionToNative")
-      @js.native
-      def sendActionToNative(action: String): Unit = js.native
-      @JSGlobal("WL.App.sendActionToNative")
-      @js.native
-      def sendActionToNative(action: String, data: Data): Unit = js.native
+      @scala.inline
+      def sendActionToNative(action: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendActionToNative")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def sendActionToNative(action: String, data: Data): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendActionToNative")(action.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.setKeepAliveInBackground")
-      @js.native
-      def setKeepAliveInBackground(enabled: Boolean): Unit = js.native
-      @JSGlobal("WL.App.setKeepAliveInBackground")
-      @js.native
-      def setKeepAliveInBackground(enabled: Boolean, options: KeepAliveInBackgroundOptions): Unit = js.native
+      @scala.inline
+      def setKeepAliveInBackground(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeepAliveInBackground")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def setKeepAliveInBackground(enabled: Boolean, options: KeepAliveInBackgroundOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeepAliveInBackground")(enabled.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.App.showSplashScreen")
-      @js.native
-      def showSplashScreen(): Unit = js.native
+      @scala.inline
+      def showSplashScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showSplashScreen")().asInstanceOf[Unit]
     }
     
     object AppProperty {
@@ -261,238 +246,231 @@ object global {
     
     object Badge {
       
-      @JSGlobal("WL.Badge.setNumber")
+      @JSGlobal("WL.Badge")
       @js.native
-      def setNumber(badgeNumber: Double): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def setNumber(badgeNumber: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNumber")(badgeNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     @JSGlobal("WL.BusyIndicator")
     @js.native
     class BusyIndicator ()
-      extends typings.ibmMobilefirst.WL.BusyIndicator {
+      extends StObject
+         with typings.ibmMobilefirst.WL.BusyIndicator {
       def this(containerId: String) = this()
-      def this(containerId: js.UndefOr[scala.Nothing], options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
       def this(containerId: String, options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
+      def this(containerId: Unit, options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
+      
+      /* CompleteClass */
+      override def hide(): Unit = js.native
+      
+      /* CompleteClass */
+      override def show(): Unit = js.native
     }
     
     object Client {
       
+      @JSGlobal("WL.Client")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSGlobal("WL.Client.AbstractChallengeHandler")
       @js.native
       class AbstractChallengeHandler ()
-        extends typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler
+        extends StObject
+           with typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler {
+        
+        /* CompleteClass */
+        override def handleChallenge(challenge: js.Any): Boolean = js.native
+        
+        /* CompleteClass */
+        override def isCustomResponse(transport: js.Any): Boolean = js.native
+        
+        /* CompleteClass */
+        override def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit = js.native
+        
+        /* CompleteClass */
+        override def submitFailure(error: String): Unit = js.native
+        
+        /* CompleteClass */
+        override def submitLoginForm(
+          reqURL: String,
+          options: ChallengeHandlerSubmitLoginFormOptions,
+          submitLoginFormCallback: js.Function1[/* transport */ js.Any, Unit]
+        ): Unit = js.native
+        
+        /* CompleteClass */
+        override def submitSuccess(): Unit = js.native
+      }
       
-      @JSGlobal("WL.Client.addGlobalHeader")
-      @js.native
-      def addGlobalHeader(headerName: String, headerValue: String): Unit = js.native
+      @scala.inline
+      def addGlobalHeader(headerName: String, headerValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalHeader")(headerName.asInstanceOf[js.Any], headerValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.checkForDirectUpdate")
-      @js.native
-      def checkForDirectUpdate(options: Options): Unit = js.native
+      @scala.inline
+      def checkForDirectUpdate(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForDirectUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.clearSharedToken")
-      @js.native
-      def clearSharedToken(`object`: SharedTokenObject): JQueryDeferred[_] = js.native
+      @scala.inline
+      def clearSharedToken(`object`: SharedTokenObject): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
       
-      @JSGlobal("WL.Client.close")
-      @js.native
-      def close(): Unit = js.native
+      @scala.inline
+      def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.connect")
-      @js.native
-      def connect(): Unit = js.native
-      @JSGlobal("WL.Client.connect")
-      @js.native
-      def connect(options: ConnectOptions): Unit = js.native
+      @scala.inline
+      def connect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Unit]
+      @scala.inline
+      def connect(options: ConnectOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.createChallengeHandler")
-      @js.native
-      def createChallengeHandler(realmName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = js.native
+      @scala.inline
+      def createChallengeHandler(realmName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createChallengeHandler")(realmName.asInstanceOf[js.Any]).asInstanceOf[typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler]
       
-      @JSGlobal("WL.Client.createProvisioningChallengeHandler")
-      @js.native
-      def createProvisioningChallengeHandler(realmName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = js.native
+      @scala.inline
+      def createProvisioningChallengeHandler(realmName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createProvisioningChallengeHandler")(realmName.asInstanceOf[js.Any]).asInstanceOf[typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler]
       
-      @JSGlobal("WL.Client.createWLChallengeHandler")
-      @js.native
-      def createWLChallengeHandler(realName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = js.native
+      @scala.inline
+      def createWLChallengeHandler(realName: String): typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createWLChallengeHandler")(realName.asInstanceOf[js.Any]).asInstanceOf[typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler]
       
-      @JSGlobal("WL.Client.deleteUserPref")
-      @js.native
-      def deleteUserPref(key: String): Unit = js.native
-      @JSGlobal("WL.Client.deleteUserPref")
-      @js.native
-      def deleteUserPref(key: String, options: Options): Unit = js.native
+      @scala.inline
+      def deleteUserPref(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def deleteUserPref(key: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUserPref")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * See WL.AppProperty for possible results
         */
-      @JSGlobal("WL.Client.getAppProperty")
-      @js.native
-      def getAppProperty(property: js.Any): js.Any = js.native
+      @scala.inline
+      def getAppProperty(property: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppProperty")(property.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /**
         * See WL.Environment for possible results
         */
-      @JSGlobal("WL.Client.getEnvironment")
-      @js.native
-      def getEnvironment(): String = js.native
+      @scala.inline
+      def getEnvironment(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironment")().asInstanceOf[String]
       
-      @JSGlobal("WL.Client.getLanguage")
-      @js.native
-      def getLanguage(): String = js.native
+      @scala.inline
+      def getLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String]
       
-      @JSGlobal("WL.Client.getLastAccessToken")
-      @js.native
-      def getLastAccessToken(): String = js.native
-      @JSGlobal("WL.Client.getLastAccessToken")
-      @js.native
-      def getLastAccessToken(scope: String): String = js.native
+      @scala.inline
+      def getLastAccessToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastAccessToken")().asInstanceOf[String]
+      @scala.inline
+      def getLastAccessToken(scope: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastAccessToken")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("WL.Client.getLoginName")
-      @js.native
-      def getLoginName(realmName: String): String = js.native
+      @scala.inline
+      def getLoginName(realmName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoginName")(realmName.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * @deprecated since version 7.0
         */
-      @JSGlobal("WL.Client.getRequiredAccessTokenScope")
-      @js.native
-      def getRequiredAccessTokenScope(status: Double, header: String): String = js.native
+      @scala.inline
+      def getRequiredAccessTokenScope(status: Double, header: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredAccessTokenScope")(status.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSGlobal("WL.Client.getSharedToken")
-      @js.native
-      def getSharedToken(`object`: SharedTokenObject): JQueryDeferred[_] = js.native
+      @scala.inline
+      def getSharedToken(`object`: SharedTokenObject): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
       
-      @JSGlobal("WL.Client.getUserInfo")
-      @js.native
-      def getUserInfo(realm: String, key: String): js.Any = js.native
+      @scala.inline
+      def getUserInfo(realm: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserInfo")(realm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("WL.Client.getUserName")
-      @js.native
-      def getUserName(realm: js.Any): String = js.native
+      @scala.inline
+      def getUserName(realm: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserName")(realm.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("WL.Client.getUserPref")
-      @js.native
-      def getUserPref(key: js.Any): js.Any = js.native
+      @scala.inline
+      def getUserPref(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @JSGlobal("WL.Client.hasUserPref")
-      @js.native
-      def hasUserPref(key: js.Any): Boolean = js.native
+      @scala.inline
+      def hasUserPref(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("WL.Client.init")
-      @js.native
-      def init(options: InitOptions): Unit = js.native
+      @scala.inline
+      def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.invokeProcedure")
-      @js.native
-      def invokeProcedure(invocationData: ProcedureInvocationData): JQueryDeferred[typings.ibmMobilefirst.WL.Response] = js.native
-      @JSGlobal("WL.Client.invokeProcedure")
-      @js.native
-      def invokeProcedure(invocationData: ProcedureInvocationData, options: ProcedureInvocationOptions): JQueryDeferred[typings.ibmMobilefirst.WL.Response] = js.native
+      @scala.inline
+      def invokeProcedure(invocationData: ProcedureInvocationData): JQueryDeferred[typings.ibmMobilefirst.WL.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeProcedure")(invocationData.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[typings.ibmMobilefirst.WL.Response]]
+      @scala.inline
+      def invokeProcedure(invocationData: ProcedureInvocationData, options: ProcedureInvocationOptions): JQueryDeferred[typings.ibmMobilefirst.WL.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeProcedure")(invocationData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[typings.ibmMobilefirst.WL.Response]]
       
       /**
         * @deprecated since version 4.1.3. Use WL.Device.getNetworkInfo instead.
         */
-      @JSGlobal("WL.Client.isConnected")
-      @js.native
-      def isConnected(): Unit = js.native
+      @scala.inline
+      def isConnected(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isConnected")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.isUserAuthenticated")
-      @js.native
-      def isUserAuthenticated(realm: String): Boolean = js.native
+      @scala.inline
+      def isUserAuthenticated(realm: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserAuthenticated")(realm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * @deprecated since version 7.0. Use WL.Logger instead.
         */
-      @JSGlobal("WL.Client.logActivity")
-      @js.native
-      def logActivity(activityType: String): Unit = js.native
+      @scala.inline
+      def logActivity(activityType: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logActivity")(activityType.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.login")
-      @js.native
-      def login(realm: String): Unit = js.native
-      @JSGlobal("WL.Client.login")
-      @js.native
-      def login(realm: String, options: Options): Unit = js.native
+      @scala.inline
+      def login(realm: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(realm.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def login(realm: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(realm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.logout")
-      @js.native
-      def logout(realm: String): Unit = js.native
-      @JSGlobal("WL.Client.logout")
-      @js.native
-      def logout(realm: String, options: Options): Unit = js.native
+      @scala.inline
+      def logout(realm: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(realm.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def logout(realm: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(realm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.minimize")
-      @js.native
-      def minimize(): Unit = js.native
+      @scala.inline
+      def minimize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minimize")().asInstanceOf[Unit]
       
       /**
         * @deprecated since version 7.0
         */
-      @JSGlobal("WL.Client.obtainAccessToken")
-      @js.native
+      @scala.inline
       def obtainAccessToken(
         scope: String,
         onSuccess: ResponseHandler[typings.ibmMobilefirst.WL.Response],
         onFailure: ResponseHandler[typings.ibmMobilefirst.WL.FailureResponse]
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obtainAccessToken")(scope.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.purgeEventTransmissionBuffer")
-      @js.native
-      def purgeEventTransmissionBuffer(): Unit = js.native
+      @scala.inline
+      def purgeEventTransmissionBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeEventTransmissionBuffer")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.reloadApp")
-      @js.native
-      def reloadApp(): Unit = js.native
+      @scala.inline
+      def reloadApp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadApp")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.removeGlobalHeader")
-      @js.native
-      def removeGlobalHeader(headerName: String): Unit = js.native
+      @scala.inline
+      def removeGlobalHeader(headerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeGlobalHeader")(headerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.setEventTransmissionPolicy")
-      @js.native
-      def setEventTransmissionPolicy(policy: EventTransmissionPolicy): Unit = js.native
+      @scala.inline
+      def setEventTransmissionPolicy(policy: EventTransmissionPolicy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEventTransmissionPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.setHeartBeatInterval")
-      @js.native
-      def setHeartBeatInterval(interval: Double): Unit = js.native
+      @scala.inline
+      def setHeartBeatInterval(interval: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeartBeatInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.setSharedToken")
-      @js.native
-      def setSharedToken(token: SharedTokenObject): Unit = js.native
+      @scala.inline
+      def setSharedToken(token: SharedTokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSharedToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.setUserPref")
-      @js.native
-      def setUserPref(key: String, value: String): Unit = js.native
-      @JSGlobal("WL.Client.setUserPref")
-      @js.native
-      def setUserPref(key: String, value: String, options: Options): Unit = js.native
+      @scala.inline
+      def setUserPref(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserPref")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def setUserPref(key: String, value: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserPref")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.setUserPrefs")
-      @js.native
-      def setUserPrefs(userPrefsHash: UserPreferences): Unit = js.native
-      @JSGlobal("WL.Client.setUserPrefs")
-      @js.native
-      def setUserPrefs(userPrefsHash: UserPreferences, options: Options): Unit = js.native
+      @scala.inline
+      def setUserPrefs(userPrefsHash: UserPreferences): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserPrefs")(userPrefsHash.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def setUserPrefs(userPrefsHash: UserPreferences, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserPrefs")(userPrefsHash.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.transmitEvent")
-      @js.native
-      def transmitEvent(event: js.Any): Unit = js.native
-      @JSGlobal("WL.Client.transmitEvent")
-      @js.native
-      def transmitEvent(event: js.Any, immediate: Boolean): Unit = js.native
+      @scala.inline
+      def transmitEvent(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def transmitEvent(event: js.Any, immediate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.Client.updateUserInfo")
-      @js.native
-      def updateUserInfo(options: Options): Unit = js.native
+      @scala.inline
+      def updateUserInfo(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateUserInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     object Device {
       
-      @JSGlobal("WL.Device.getNetworkInfo")
+      @JSGlobal("WL.Device")
       @js.native
-      def getNetworkInfo(callback: js.Function1[/* networkInfo */ NetworkInfo, Unit]): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def getNetworkInfo(callback: js.Function1[/* networkInfo */ NetworkInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     object EncryptedCache {
@@ -591,34 +569,28 @@ object global {
       @scala.inline
       def OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("WL.EncryptedCache.close")
-      @js.native
-      def close(successHandler: StatusHandler, failureHandler: StatusHandler): Unit = js.native
+      @scala.inline
+      def close(successHandler: StatusHandler, failureHandler: StatusHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.EncryptedCache.destroy")
-      @js.native
-      def destroy(successHandler: StatusHandler, failureHandler: StatusHandler): Unit = js.native
+      @scala.inline
+      def destroy(successHandler: StatusHandler, failureHandler: StatusHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.EncryptedCache.open")
-      @js.native
+      @scala.inline
       def open(
         credentials: String,
         createIfNone: Boolean,
         successHandler: StatusHandler,
         failureHandler: StatusHandler
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(credentials.asInstanceOf[js.Any], createIfNone.asInstanceOf[js.Any], successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.EncryptedCache.read")
-      @js.native
-      def read(key: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = js.native
+      @scala.inline
+      def read(key: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(key.asInstanceOf[js.Any], successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.EncryptedCache.remove")
-      @js.native
-      def remove(key: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = js.native
+      @scala.inline
+      def remove(key: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("WL.EncryptedCache.write")
-      @js.native
-      def write(key: String, value: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = js.native
+      @scala.inline
+      def write(key: String, value: String, successHandler: StatusHandler, failureHandler: StatusHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], successHandler.asInstanceOf[js.Any], failureHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     object Environment {
@@ -704,111 +676,250 @@ object global {
     @JSGlobal("WL.FailureResponse")
     @js.native
     class FailureResponse ()
-      extends typings.ibmMobilefirst.WL.ResponseBase
+      extends StObject
+         with typings.ibmMobilefirst.WL.ResponseBase {
+      
+      /* CompleteClass */
+      var errorCode: Double = js.native
+      
+      /* CompleteClass */
+      var errorMsg: String = js.native
+      
+      /* CompleteClass */
+      var headerJSON: StringDictionary[js.Any] = js.native
+      
+      /* CompleteClass */
+      var invocationContext: js.Any = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var readyState: Double = js.native
+      
+      /* CompleteClass */
+      var request: js.Any = js.native
+      
+      /* CompleteClass */
+      var responseJSON: StringDictionary[js.Any] = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var responseText: String = js.native
+      
+      /* CompleteClass */
+      var responseXML: String = js.native
+      
+      /* CompleteClass */
+      var status: Double = js.native
+      
+      /* CompleteClass */
+      var statusText: String = js.native
+    }
     
     object Geo {
       
-      @JSGlobal("WL.Geo.getDistanceBetweenCoordinates")
+      @JSGlobal("WL.Geo")
       @js.native
-      def getDistanceBetweenCoordinates(coordinate1: Coordinate, coordinate2: Coordinate): Double = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("WL.Geo.getDistanceToCircle")
-      @js.native
-      def getDistanceToCircle(coordinate: Coordinate, circle: Circle, options: DistanceOptions): Double = js.native
+      @scala.inline
+      def getDistanceBetweenCoordinates(coordinate1: Coordinate, coordinate2: Coordinate): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenCoordinates")(coordinate1.asInstanceOf[js.Any], coordinate2.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("WL.Geo.getDistanceToPolygon")
-      @js.native
-      def getDistanceToPolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: DistanceOptions): Double = js.native
+      @scala.inline
+      def getDistanceToCircle(coordinate: Coordinate, circle: Circle, options: DistanceOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceToCircle")(coordinate.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("WL.Geo.isInsideCircle")
-      @js.native
-      def isInsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): Boolean = js.native
+      @scala.inline
+      def getDistanceToPolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: DistanceOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceToPolygon")(coordinate.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("WL.Geo.isInsidePolygon")
-      @js.native
-      def isInsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): Boolean = js.native
+      @scala.inline
+      def isInsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInsideCircle")(coordinate.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("WL.Geo.isOutsideCircle")
-      @js.native
-      def isOutsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): Boolean = js.native
+      @scala.inline
+      def isInsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInsidePolygon")(coordinate.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("WL.Geo.isOutsidePolygon")
-      @js.native
-      def isOutsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): Boolean = js.native
+      @scala.inline
+      def isOutsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOutsideCircle")(coordinate.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
+      @scala.inline
+      def isOutsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOutsidePolygon")(coordinate.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
     
     @JSGlobal("WL.Item")
     @js.native
     class Item ()
-      extends typings.ibmMobilefirst.WL.Item
+      extends StObject
+         with typings.ibmMobilefirst.WL.Item {
+      
+      /* CompleteClass */
+      override def setEnabled(isEnable: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setImagePath(imagePath: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setTitle(title: String): Unit = js.native
+    }
     
     object JSONStore {
+      
+      @JSGlobal("WL.JSONStore")
+      @js.native
+      val ^ : js.Any = js.native
       
       @JSGlobal("WL.JSONStore.JSONStoreInstance")
       @js.native
       class JSONStoreInstance ()
-        extends typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance
+        extends StObject
+           with typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance
       
       /**
         * Creates a query for advanced find. See WL.JSONStore.QueryPart for more information.
         */
-      @JSGlobal("WL.JSONStore.QueryPart")
-      @js.native
-      def QueryPart(): typings.ibmMobilefirst.WL.JSONStore.QueryPartObj = js.native
+      @scala.inline
+      def QueryPart(): typings.ibmMobilefirst.WL.JSONStore.QueryPartObj = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryPart")().asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.QueryPartObj]
       
       @JSGlobal("WL.JSONStore.QueryPartObj")
       @js.native
       class QueryPartObj ()
-        extends typings.ibmMobilefirst.WL.JSONStore.QueryPartObj
+        extends StObject
+           with typings.ibmMobilefirst.WL.JSONStore.QueryPartObj {
+        
+        /**
+          * Add a between clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def between(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add an equal to clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def equal(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a greater or equal thanclause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def greaterOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a greater than clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def greaterThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add an in clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def inside(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a left clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def leftLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a less or equal than clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def lessOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a less than clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def lessThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a like clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def like(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not between clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notBetween(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not equal to clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notEqual(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not in clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notInside(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not left clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notLeftLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not like clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a not right clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def notRightLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        
+        /**
+          * Add a right clause to a query for advanced find.
+          */
+        /* CompleteClass */
+        override def rightLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+      }
       
       /**
         * Changes the password for the internal storage. You must have an initialized collection before calling WL.JSONStore.changePassword.
         */
-      @JSGlobal("WL.JSONStore.changePassword")
-      @js.native
-      def changePassword(oldPassword: String, newPassword: String, username: String, options: Options): JQueryDeferred[_] = js.native
+      @scala.inline
+      def changePassword(oldPassword: String, newPassword: String, username: String, options: Options): JQueryDeferred[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[js.Any]]
       
       /**
         * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
         */
-      @JSGlobal("WL.JSONStore.clearPassword")
-      @js.native
-      def clearPassword(): Boolean = js.native
+      @scala.inline
+      def clearPassword(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPassword")().asInstanceOf[Boolean]
       
       /**
         * Locks access to all the collections until WL.JSONStore.init is called.
         */
-      @JSGlobal("WL.JSONStore.closeAll")
-      @js.native
-      def closeAll(): JQueryDeferred[_] = js.native
-      @JSGlobal("WL.JSONStore.closeAll")
-      @js.native
-      def closeAll(options: Options): JQueryDeferred[_] = js.native
+      @scala.inline
+      def closeAll(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[JQueryDeferred[js.Any]]
+      @scala.inline
+      def closeAll(options: Options): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
       
       /**
         * Commit a transaction.
         */
-      @JSGlobal("WL.JSONStore.commitTransaction")
-      @js.native
-      def commitTransaction(): JQueryDeferred[Double] = js.native
+      @scala.inline
+      def commitTransaction(): JQueryDeferred[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("commitTransaction")().asInstanceOf[JQueryDeferred[Double]]
       
       /**
         * Completely wipes data for all users, destroys the internal storage, and clears security artifacts.
         * @parameters options is @deprecated
         */
-      @JSGlobal("WL.JSONStore.destroy")
-      @js.native
-      def destroy(username: String): JQueryDeferred[Double] = js.native
-      @JSGlobal("WL.JSONStore.destroy")
-      @js.native
-      def destroy(username: String, options: Options): JQueryDeferred[Double] = js.native
+      @scala.inline
+      def destroy(username: String): JQueryDeferred[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(username.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Double]]
+      @scala.inline
+      def destroy(username: String, options: Options): JQueryDeferred[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[Double]]
       
       /**
         * @deprecated since version 6.2.0.
         */
-      @JSGlobal("WL.JSONStore.documentify")
-      @js.native
-      def documentify(id: Double, data: js.Any): js.Any = js.native
+      @scala.inline
+      def documentify(id: Double, data: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("documentify")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Returns information about the file that is used to persist data in the store. The following key value pairs are returned:
@@ -816,81 +927,71 @@ object global {
         * size - the total size, in bytes, of the store
         * isEncrypted - boolean that is true when encrypted and false otherwise.
         */
-      @JSGlobal("WL.JSONStore.fileInfo")
-      @js.native
-      def fileInfo(): JQueryDeferred[_] = js.native
+      @scala.inline
+      def fileInfo(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")().asInstanceOf[JQueryDeferred[js.Any]]
       
       /**
         * Provides an accessor to the collection if the collection exists, otherwise it returns undefined.
         */
-      @JSGlobal("WL.JSONStore.get")
-      @js.native
-      def get(collectionName: String): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = js.native
+      @scala.inline
+      def get(collectionName: String): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(collectionName.asInstanceOf[js.Any]).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
       
       /**
         * Returns the message that is associated with a JSONStore error code.
         */
-      @JSGlobal("WL.JSONStore.getErrorMessage")
-      @js.native
-      def getErrorMessage(errorCode: Double): String = js.native
+      @scala.inline
+      def getErrorMessage(errorCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorMessage")(errorCode.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("WL.JSONStore.init")
-      @js.native
-      def init(collections: js.Any): JQueryDeferred[_] = js.native
-      @JSGlobal("WL.JSONStore.init")
-      @js.native
-      def init(collections: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): JQueryDeferred[_] = js.native
+      @scala.inline
+      def init(collections: js.Any): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+      @scala.inline
+      def init(collections: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): JQueryDeferred[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[js.Any]]
       
       /**
         * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
         */
-      @JSGlobal("WL.JSONStore.initCollection")
-      @js.native
-      def initCollection(name: String, searchFields: js.Any): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = js.native
-      @JSGlobal("WL.JSONStore.initCollection")
-      @js.native
-      def initCollection(name: String, searchFields: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = js.native
+      @scala.inline
+      def initCollection(name: String, searchFields: js.Any): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
+      @scala.inline
+      def initCollection(name: String, searchFields: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
       
       /**
         * Roll back a transaction
         */
-      @JSGlobal("WL.JSONStore.rollbackTransaction")
-      @js.native
-      def rollbackTransaction(): JQueryDeferred[Double] = js.native
+      @scala.inline
+      def rollbackTransaction(): JQueryDeferred[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("rollbackTransaction")().asInstanceOf[JQueryDeferred[Double]]
       
       /**
         * Initiates a transaction
         */
-      @JSGlobal("WL.JSONStore.startTransaction")
-      @js.native
-      def startTransaction(): JQueryDeferred[Double] = js.native
+      @scala.inline
+      def startTransaction(): JQueryDeferred[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")().asInstanceOf[JQueryDeferred[Double]]
       
       /**
         * Sets the password that is used to generate keys to encrypt data that is stored locally on the device.
         * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
         */
-      @JSGlobal("WL.JSONStore.usePassword")
-      @js.native
-      def usePassword(pwd: String): Boolean = js.native
+      @scala.inline
+      def usePassword(pwd: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("usePassword")(pwd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     object LocalStorage {
       
-      @JSGlobal("WL.LocalStorage.clear")
+      @JSGlobal("WL.LocalStorage")
       @js.native
-      def clear(key: String): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("WL.LocalStorage.clearAll")
-      @js.native
-      def clearAll(): Unit = js.native
+      @scala.inline
+      def clear(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.LocalStorage.getValue")
-      @js.native
-      def getValue(key: String): String = js.native
+      @scala.inline
+      def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.LocalStorage.setValue")
-      @js.native
-      def setValue(key: String, value: String): Unit = js.native
+      @scala.inline
+      def getValue(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      @scala.inline
+      def setValue(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**
@@ -900,7 +1001,27 @@ object global {
     @JSGlobal("WL.LogInstance")
     @js.native
     class LogInstance ()
-      extends typings.ibmMobilefirst.WL.LogInstance
+      extends StObject
+         with typings.ibmMobilefirst.WL.LogInstance {
+      
+      /* CompleteClass */
+      override def debug(message: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def error(message: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def fatal(message: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def info(message: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def trace(message: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def warn(message: String): Unit = js.native
+    }
     
     @JSGlobal("WL.Logger")
     @js.native
@@ -912,148 +1033,237 @@ object global {
     @JSGlobal("WL.LoggerObject")
     @js.native
     class LoggerObject ()
-      extends typings.ibmMobilefirst.WL.LoggerObject
+      extends StObject
+         with typings.ibmMobilefirst.WL.LoggerObject
     
     @scala.inline
     def Logger_=(x: typings.ibmMobilefirst.WL.LoggerObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Logger")(x.asInstanceOf[js.Any])
     
     object NativePage {
       
-      @JSGlobal("WL.NativePage.show")
+      @JSGlobal("WL.NativePage")
       @js.native
-      def show(className: String, callback: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def show(className: String, callback: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(className.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("WL.Response")
     @js.native
     class Response ()
-      extends typings.ibmMobilefirst.WL.Response
+      extends StObject
+         with typings.ibmMobilefirst.WL.Response {
+      
+      /* CompleteClass */
+      var errorCode: Double = js.native
+      
+      /* CompleteClass */
+      var errorMsg: String = js.native
+      
+      /* CompleteClass */
+      override def getAllHeaders(): Headers = js.native
+      
+      /* CompleteClass */
+      override def getHeader(name: js.Any): String = js.native
+      
+      /* CompleteClass */
+      override def getHeaderNames(): js.Array[String] = js.native
+      
+      /* CompleteClass */
+      var headerJSON: StringDictionary[js.Any] = js.native
+      
+      /* CompleteClass */
+      var invocationContext: js.Any = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var readyState: Double = js.native
+      
+      /* CompleteClass */
+      var request: js.Any = js.native
+      
+      /* CompleteClass */
+      var responseJSON: StringDictionary[js.Any] = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var responseText: String = js.native
+      
+      /* CompleteClass */
+      var responseXML: String = js.native
+      
+      /* CompleteClass */
+      var status: Double = js.native
+      
+      /* CompleteClass */
+      var statusText: String = js.native
+    }
     
     @JSGlobal("WL.ResponseBase")
     @js.native
     class ResponseBase ()
-      extends typings.ibmMobilefirst.WL.ResponseBase
+      extends StObject
+         with typings.ibmMobilefirst.WL.ResponseBase {
+      
+      /* CompleteClass */
+      var errorCode: Double = js.native
+      
+      /* CompleteClass */
+      var errorMsg: String = js.native
+      
+      /* CompleteClass */
+      var headerJSON: StringDictionary[js.Any] = js.native
+      
+      /* CompleteClass */
+      var invocationContext: js.Any = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var readyState: Double = js.native
+      
+      /* CompleteClass */
+      var request: js.Any = js.native
+      
+      /* CompleteClass */
+      var responseJSON: StringDictionary[js.Any] = js.native
+      
+      // JSON Object
+      /* CompleteClass */
+      var responseText: String = js.native
+      
+      /* CompleteClass */
+      var responseXML: String = js.native
+      
+      /* CompleteClass */
+      var status: Double = js.native
+      
+      /* CompleteClass */
+      var statusText: String = js.native
+    }
     
     object SecurityUtils {
       
-      @JSGlobal("WL.SecurityUtils.base64Decode")
+      @JSGlobal("WL.SecurityUtils")
       @js.native
-      def base64Decode(input: String): JQueryDeferred[String] = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("WL.SecurityUtils.base64Encode")
-      @js.native
-      def base64Encode(input: String): JQueryDeferred[String] = js.native
+      @scala.inline
+      def base64Decode(input: String): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(input.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
       
-      @JSGlobal("WL.SecurityUtils.decrypt")
-      @js.native
-      def decrypt(options: DecryptOptions): JQueryDeferred[String] = js.native
+      @scala.inline
+      def base64Encode(input: String): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(input.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
       
-      @JSGlobal("WL.SecurityUtils.encrypt")
-      @js.native
-      def encrypt(options: EncryptOptions): JQueryDeferred[String] = js.native
+      @scala.inline
+      def decrypt(options: DecryptOptions): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
       
-      @JSGlobal("WL.SecurityUtils.keygen")
-      @js.native
-      def keygen(options: KeygenOptions): JQueryDeferred[String] = js.native
+      @scala.inline
+      def encrypt(options: EncryptOptions): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
       
-      @JSGlobal("WL.SecurityUtils.localRandomString")
-      @js.native
-      def localRandomString(): JQueryDeferred[String] = js.native
-      @JSGlobal("WL.SecurityUtils.localRandomString")
-      @js.native
-      def localRandomString(bytes: Double): JQueryDeferred[String] = js.native
+      @scala.inline
+      def keygen(options: KeygenOptions): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
       
-      @JSGlobal("WL.SecurityUtils.remoteRandomString")
-      @js.native
-      def remoteRandomString(): JQueryDeferred[String] = js.native
-      @JSGlobal("WL.SecurityUtils.remoteRandomString")
-      @js.native
-      def remoteRandomString(bytes: Double): JQueryDeferred[String] = js.native
+      @scala.inline
+      def localRandomString(): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("localRandomString")().asInstanceOf[JQueryDeferred[String]]
+      @scala.inline
+      def localRandomString(bytes: Double): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("localRandomString")(bytes.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
+      
+      @scala.inline
+      def remoteRandomString(): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteRandomString")().asInstanceOf[JQueryDeferred[String]]
+      @scala.inline
+      def remoteRandomString(bytes: Double): JQueryDeferred[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteRandomString")(bytes.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[String]]
     }
     
     object SimpleDialog {
       
-      @JSGlobal("WL.SimpleDialog.show")
+      @JSGlobal("WL.SimpleDialog")
       @js.native
-      def show(title: String, text: String, buttons: js.Array[Button]): Unit = js.native
-      @JSGlobal("WL.SimpleDialog.show")
-      @js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def show(title: String, text: String, buttons: js.Array[Button]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(title.asInstanceOf[js.Any], text.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
       def show(
         title: String,
         text: String,
         buttons: js.Array[Button],
         options: typings.ibmMobilefirst.WL.SimpleDialog.Options
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(title.asInstanceOf[js.Any], text.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     object TabBar {
       
-      @JSGlobal("WL.TabBar.RemoveAllItems")
+      @JSGlobal("WL.TabBar")
       @js.native
-      def RemoveAllItems(): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("WL.TabBar.addItem")
-      @js.native
-      def addItem(id: String, callback: js.Function, title: String, options: ItemOptions): typings.ibmMobilefirst.WL.TabBarItem = js.native
+      @scala.inline
+      def RemoveAllItems(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAllItems")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.TabBar.init")
-      @js.native
-      def init(): Unit = js.native
+      @scala.inline
+      def addItem(id: String, callback: js.Function, title: String, options: ItemOptions): typings.ibmMobilefirst.WL.TabBarItem = (^.asInstanceOf[js.Dynamic].applyDynamic("addItem")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.TabBarItem]
       
-      @JSGlobal("WL.TabBar.isVisible")
-      @js.native
-      def isVisible(): Boolean = js.native
+      @scala.inline
+      def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
       
-      @JSGlobal("WL.TabBar.setEnabled")
-      @js.native
-      def setEnabled(isEnabled: Boolean): Unit = js.native
+      @scala.inline
+      def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
+      
+      @scala.inline
+      def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * @deprecated
         */
-      @JSGlobal("WL.TabBar.setParentDivId")
-      @js.native
-      def setParentDivId(parentId: String): Unit = js.native
+      @scala.inline
+      def setParentDivId(parentId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setParentDivId")(parentId.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.TabBar.setSelectedItem")
-      @js.native
-      def setSelectedItem(id: String): Unit = js.native
+      @scala.inline
+      def setSelectedItem(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectedItem")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("WL.TabBar.setVisible")
-      @js.native
-      def setVisible(isVisible: Boolean): Unit = js.native
+      @scala.inline
+      def setVisible(isVisible: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVisible")(isVisible.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     @JSGlobal("WL.TabBarItem")
     @js.native
     class TabBarItem ()
-      extends typings.ibmMobilefirst.WL.TabBarItem
+      extends StObject
+         with typings.ibmMobilefirst.WL.TabBarItem
     
     object Toast {
       
-      @JSGlobal("WL.Toast.show")
+      @JSGlobal("WL.Toast")
       @js.native
-      def show(): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
     }
     
     object Trusteer {
       
-      @JSGlobal("WL.Trusteer.getRiskAssessment")
+      @JSGlobal("WL.Trusteer")
       @js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
       def getRiskAssessment(
         onSuccess: ResponseHandler[typings.ibmMobilefirst.WL.Response],
         onFailure: ResponseHandler[typings.ibmMobilefirst.WL.FailureResponse]
-      ): AssetmentRisks = js.native
+      ): AssetmentRisks = (^.asInstanceOf[js.Dynamic].applyDynamic("getRiskAssessment")(onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[AssetmentRisks]
     }
     
     object UserAuth {
       
-      @JSGlobal("WL.UserAuth.deleteCertificate")
+      @JSGlobal("WL.UserAuth")
       @js.native
-      def deleteCertificate(): JQueryDeferred[Unit] = js.native
-      @JSGlobal("WL.UserAuth.deleteCertificate")
-      @js.native
-      def deleteCertificate(provisioningEntity: String): JQueryDeferred[Unit] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def deleteCertificate(): JQueryDeferred[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCertificate")().asInstanceOf[JQueryDeferred[Unit]]
+      @scala.inline
+      def deleteCertificate(provisioningEntity: String): JQueryDeferred[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCertificate")(provisioningEntity.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Unit]]
     }
   }
   
@@ -1078,62 +1288,54 @@ object global {
     @scala.inline
     def NEVER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEVER")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("WLAuthorizationManager.addCachedAuthorizationHeader")
-    @js.native
-    def addCachedAuthorizationHeader(request: RequestObject): JQueryDeferred[RequestObject] = js.native
+    @scala.inline
+    def addCachedAuthorizationHeader(request: RequestObject): JQueryDeferred[RequestObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("addCachedAuthorizationHeader")(request.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[RequestObject]]
     
-    @JSGlobal("WLAuthorizationManager.getAppIdentity")
-    @js.native
-    def getAppIdentity(): JQueryDeferred[_] = js.native
+    @scala.inline
+    def getAppIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
     
-    @JSGlobal("WLAuthorizationManager.getAuthorizationScope")
-    @js.native
-    def getAuthorizationScope(responseAuthenticationHeader: String): String = js.native
+    @scala.inline
+    def getAuthorizationScope(responseAuthenticationHeader: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationScope")(responseAuthenticationHeader.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    @JSGlobal("WLAuthorizationManager.getCachedAuthorizationHeader")
-    @js.native
-    def getCachedAuthorizationHeader(): JQueryDeferred[_] = js.native
+    @scala.inline
+    def getCachedAuthorizationHeader(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachedAuthorizationHeader")().asInstanceOf[JQueryDeferred[js.Any]]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    @JSGlobal("WLAuthorizationManager.getDeviceIdentity")
-    @js.native
-    def getDeviceIdentity(): JQueryDeferred[_] = js.native
+    @scala.inline
+    def getDeviceIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    @JSGlobal("WLAuthorizationManager.getUserIdentity")
-    @js.native
-    def getUserIdentity(): JQueryDeferred[_] = js.native
+    @scala.inline
+    def getUserIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
     
-    @JSGlobal("WLAuthorizationManager.isAuthorizationRequired")
-    @js.native
-    def isAuthorizationRequired(responseStatus: Double, responseAuthenticationHeader: String): Boolean = js.native
+    @scala.inline
+    def isAuthorizationRequired(responseStatus: Double, responseAuthenticationHeader: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationRequired")(responseStatus.asInstanceOf[js.Any], responseAuthenticationHeader.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<header, error>()
       */
-    @JSGlobal("WLAuthorizationManager.obtainAuthorizationHeader")
-    @js.native
-    def obtainAuthorizationHeader(scope: String): JQueryDeferred[_] = js.native
+    @scala.inline
+    def obtainAuthorizationHeader(scope: String): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("obtainAuthorizationHeader")(scope.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
     
     /**
       * See WLAuthorizarionManager.NEVER and WLAuthorizarionManager.ALWAYS
       */
-    @JSGlobal("WLAuthorizationManager.setAuthorizationPersistencePolicy")
-    @js.native
-    def setAuthorizationPersistencePolicy(authorizationPersistencePolicy: String): Unit = js.native
+    @scala.inline
+    def setAuthorizationPersistencePolicy(authorizationPersistencePolicy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAuthorizationPersistencePolicy")(authorizationPersistencePolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("WLResourceRequest")
   @js.native
   class WLResourceRequest protected ()
-    extends typings.ibmMobilefirst.WLResourceRequest {
+    extends StObject
+       with typings.ibmMobilefirst.WLResourceRequest {
     def this(url: String, method: String) = this()
     def this(url: String, method: String, timeout: Double) = this()
   }

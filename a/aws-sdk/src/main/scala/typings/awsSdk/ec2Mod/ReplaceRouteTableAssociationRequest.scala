@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceRouteTableAssociationRequest extends StObject {
   
   /**
     * The association ID.
     */
-  var AssociationId: RouteTableAssociationId = js.native
+  var AssociationId: RouteTableAssociationId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the new route table to associate with the subnet.
     */
-  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId
 }
 object ReplaceRouteTableAssociationRequest {
   

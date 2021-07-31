@@ -3,19 +3,17 @@ package typings.xmlbuilder
 import typings.xmlbuilder.mod.XMLAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[java.lang.String] = js.native
+    var encoding: js.UndefOr[java.lang.String] = js.undefined
     
-    var standalone: js.UndefOr[Boolean] = js.native
+    var standalone: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[java.lang.String] = js.native
+    var version: js.UndefOr[java.lang.String] = js.undefined
   }
   object Encoding {
     
@@ -48,14 +46,13 @@ object anon {
     }
   }
   
-  @js.native
   trait NData extends StObject {
     
-    var nData: js.UndefOr[java.lang.String] = js.native
+    var nData: js.UndefOr[java.lang.String] = js.undefined
     
-    var pubID: js.UndefOr[java.lang.String] = js.native
+    var pubID: js.UndefOr[java.lang.String] = js.undefined
     
-    var sysID: js.UndefOr[java.lang.String] = js.native
+    var sysID: js.UndefOr[java.lang.String] = js.undefined
   }
   object NData {
     
@@ -88,12 +85,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PubID extends StObject {
     
-    var pubID: js.UndefOr[java.lang.String] = js.native
+    var pubID: js.UndefOr[java.lang.String] = js.undefined
     
-    var sysID: js.UndefOr[java.lang.String] = js.native
+    var sysID: js.UndefOr[java.lang.String] = js.undefined
   }
   object PubID {
     
@@ -120,10 +116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait String extends StObject {
     
-    var string: XMLAttribute = js.native
+    var string: XMLAttribute
   }
   object String {
     

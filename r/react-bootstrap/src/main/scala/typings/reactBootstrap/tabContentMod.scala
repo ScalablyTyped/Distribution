@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabContentMod {
@@ -19,18 +18,19 @@ object tabContentMod {
   trait TabContent
     extends Component[TabContentProps, js.Object, js.Any]
   
-  @js.native
-  trait TabContentProps extends HTMLProps[TabContent] {
+  trait TabContentProps
+    extends StObject
+       with HTMLProps[TabContent] {
     
-    var animation: js.UndefOr[Boolean | ReactType[_]] = js.native
+    var animation: js.UndefOr[Boolean | ReactType[js.Any]] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object TabContentProps {
     
@@ -44,7 +44,7 @@ object tabContentMod {
     implicit class TabContentPropsMutableBuilder[Self <: TabContentProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnimation(value: Boolean | ReactType[_]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      def setAnimation(value: Boolean | ReactType[js.Any]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
@@ -56,7 +56,7 @@ object tabContentMod {
       def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

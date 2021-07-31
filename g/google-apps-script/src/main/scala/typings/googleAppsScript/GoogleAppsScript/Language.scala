@@ -4,16 +4,14 @@ import typings.googleAppsScript.googleAppsScriptStrings.html
 import typings.googleAppsScript.googleAppsScriptStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Language {
   
-  @js.native
   trait LanguageAdvancedParameters extends StObject {
     
     /** the content type of the text; supported values are 'text' (default) and 'html' */
-    var contentType: js.UndefOr[html | text] = js.native
+    var contentType: js.UndefOr[html | text] = js.undefined
   }
   object LanguageAdvancedParameters {
     

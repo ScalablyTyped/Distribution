@@ -7,42 +7,42 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFilesUpdate extends StandardParameters {
+trait ParamsResourceFilesUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Comma-separated list of parent IDs to add.
     */
-  var addParents: js.UndefOr[String] = js.native
+  var addParents: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * This parameter is deprecated and has no function.
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the file to update.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Determines the behavior in which modifiedDate is updated. This overrides
     * setModifiedDate.
     */
-  var modifiedDateBehavior: js.UndefOr[String] = js.native
+  var modifiedDateBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * Whether a blob upload should create a new revision. If false, the blob
@@ -53,34 +53,34 @@ trait ParamsResourceFilesUpdate extends StandardParameters {
     * revisions. For details on how revisions are retained, see the Drive Help
     * Center.
     */
-  var newRevision: js.UndefOr[Boolean] = js.native
+  var newRevision: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.
     */
-  var ocr: js.UndefOr[Boolean] = js.native
+  var ocr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If ocr is true, hints at the language to use. Valid values are BCP 47
     * codes.
     */
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to pin the new revision. A file can have a maximum of 200 pinned
     * revisions.
     */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comma-separated list of parent IDs to remove.
     */
-  var removeParents: js.UndefOr[String] = js.native
+  var removeParents: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFile] = js.native
+  var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * Whether to set the modified date using the value supplied in the request
@@ -89,32 +89,32 @@ trait ParamsResourceFilesUpdate extends StandardParameters {
     * modifiedDateBehavior=now. To prevent any changes to the modified date set
     * modifiedDateBehavior=noChange.
     */
-  var setModifiedDate: js.UndefOr[Boolean] = js.native
+  var setModifiedDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The language of the timed text.
     */
-  var timedTextLanguage: js.UndefOr[String] = js.native
+  var timedTextLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The timed text track name.
     */
-  var timedTextTrackName: js.UndefOr[String] = js.native
+  var timedTextTrackName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to update the view date after successfully updating the file.
     */
-  var updateViewedDate: js.UndefOr[Boolean] = js.native
+  var updateViewedDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to use the content as indexable text.
     */
-  var useContentAsIndexableText: js.UndefOr[Boolean] = js.native
+  var useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceFilesUpdate {
   

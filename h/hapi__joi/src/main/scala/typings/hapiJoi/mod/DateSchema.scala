@@ -6,12 +6,13 @@ import typings.hapiJoi.hapiJoiStrings.unix
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.hapiJoi.mod._Schema because Already inherited */ @js.native
-trait DateSchema extends AnySchema {
+trait DateSchema
+  extends StObject
+     with AnySchema {
   
   def greater(date: String): this.type = js.native
   def greater(date: Double): this.type = js.native

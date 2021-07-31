@@ -2,13 +2,11 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespaceLocateOptions extends StObject {
   
-  var useAliases: js.UndefOr[Boolean] = js.native
+  var useAliases: js.UndefOr[Boolean] = js.undefined
 }
 object NamespaceLocateOptions {
   

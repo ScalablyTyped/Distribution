@@ -5,7 +5,6 @@ import typings.reactFns.typesMod.SharedRenderProps
 import typings.std.DeviceOrientationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceOrientationDeviceOrientationMod {
@@ -30,22 +29,21 @@ object deviceOrientationDeviceOrientationMod {
     def handleDeviceOrientation(e: DeviceOrientationEvent): Unit = js.native
   }
   
-  @js.native
   trait DeviceOrientationProps extends StObject {
     
-    var absolute: Boolean = js.native
+    var absolute: Boolean
     
-    var alpha: Double | Null = js.native
+    var alpha: Double | Null
     
-    var beta: Double | Null = js.native
+    var beta: Double | Null
     
-    var gamma: Double | Null = js.native
+    var gamma: Double | Null
   }
   object DeviceOrientationProps {
     
     @scala.inline
     def apply(absolute: Boolean): DeviceOrientationProps = {
-      val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], alpha = null, beta = null, gamma = null)
       __obj.asInstanceOf[DeviceOrientationProps]
     }
     

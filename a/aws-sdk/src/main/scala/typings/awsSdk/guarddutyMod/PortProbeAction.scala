@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortProbeAction extends StObject {
   
   /**
     * Indicates whether EC2 blocked the port probe to the instance, such as with an ACL.
     */
-  var Blocked: js.UndefOr[Boolean] = js.native
+  var Blocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of objects related to port probe details.
     */
-  var PortProbeDetails: js.UndefOr[typings.awsSdk.guarddutyMod.PortProbeDetails] = js.native
+  var PortProbeDetails: js.UndefOr[typings.awsSdk.guarddutyMod.PortProbeDetails] = js.undefined
 }
 object PortProbeAction {
   

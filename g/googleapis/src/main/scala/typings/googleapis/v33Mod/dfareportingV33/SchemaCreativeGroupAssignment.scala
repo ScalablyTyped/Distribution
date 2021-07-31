@@ -2,24 +2,22 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Group Assignment.
   */
-@js.native
 trait SchemaCreativeGroupAssignment extends StObject {
   
   /**
     * ID of the creative group to be assigned.
     */
-  var creativeGroupId: js.UndefOr[String] = js.native
+  var creativeGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Creative group number of the creative group assignment.
     */
-  var creativeGroupNumber: js.UndefOr[String] = js.native
+  var creativeGroupNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeGroupAssignment {
   

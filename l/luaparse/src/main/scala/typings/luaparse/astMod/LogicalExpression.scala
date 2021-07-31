@@ -4,31 +4,25 @@ import typings.luaparse.luaparseStrings.and
 import typings.luaparse.luaparseStrings.or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogicalExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.LogicalExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.LogicalExpression]
+     with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: or | and = js.native
+  var operator: or | and
   
-  var right: Expression = js.native
+  var right: Expression
 }
 object LogicalExpression {
   
   @scala.inline
-  def apply(
-    left: Expression,
-    operator: or | and,
-    right: Expression,
-    `type`: typings.luaparse.luaparseStrings.LogicalExpression
-  ): LogicalExpression = {
+  def apply(left: Expression, operator: or | and, right: Expression): LogicalExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[LogicalExpression]
   }
   

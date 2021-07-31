@@ -146,7 +146,6 @@ import typings.activexShdocvw.anon.PpDisp
 import typings.activexShdocvw.anon.SzProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,15 +2,13 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileTokenMetadata extends StObject {
   
-  var identifier: js.UndefOr[CompileIdentifierMetadata | CompileTypeMetadata] = js.native
+  var identifier: js.UndefOr[CompileIdentifierMetadata | CompileTypeMetadata] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CompileTokenMetadata {
   

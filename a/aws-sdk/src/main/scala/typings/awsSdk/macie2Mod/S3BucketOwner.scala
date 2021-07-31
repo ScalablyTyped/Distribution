@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3BucketOwner extends StObject {
   
   /**
     * The display name of the user who owns the bucket.
     */
-  var displayName: js.UndefOr[string] = js.native
+  var displayName: js.UndefOr[string] = js.undefined
   
   /**
     * The AWS account ID for the user who owns the bucket.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
 }
 object S3BucketOwner {
   

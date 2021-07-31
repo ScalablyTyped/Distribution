@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryHighlightsTrayResponseFriendshipStatus extends StObject {
   
-  var blocking: js.UndefOr[Boolean] = js.native
+  var blocking: js.UndefOr[Boolean] = js.undefined
   
-  var followed_by: js.UndefOr[Boolean] = js.native
+  var followed_by: js.UndefOr[Boolean] = js.undefined
   
-  var following: Boolean = js.native
+  var following: Boolean
   
-  var incoming_request: js.UndefOr[Boolean] = js.native
+  var incoming_request: js.UndefOr[Boolean] = js.undefined
   
-  var is_bestie: Boolean = js.native
+  var is_bestie: Boolean
   
-  var is_private: js.UndefOr[Boolean] = js.native
+  var is_private: js.UndefOr[Boolean] = js.undefined
   
-  var is_restricted: Boolean = js.native
+  var is_restricted: Boolean
   
-  var muting: js.UndefOr[Boolean] = js.native
+  var muting: js.UndefOr[Boolean] = js.undefined
   
-  var outgoing_request: Boolean = js.native
+  var outgoing_request: Boolean
 }
 object HighlightsRepositoryHighlightsTrayResponseFriendshipStatus {
   

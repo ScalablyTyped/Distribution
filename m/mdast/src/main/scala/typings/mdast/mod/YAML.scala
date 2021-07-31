@@ -3,21 +3,21 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.yaml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAML extends Literal {
+trait YAML
+  extends StObject
+     with Literal {
   
   @JSName("type")
-  var type_YAML: yaml = js.native
+  var type_YAML: yaml
 }
 object YAML {
   
   @scala.inline
-  def apply(`type`: yaml, value: js.Any): YAML = {
+  def apply(value: js.Any): YAML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("yaml")
     __obj.asInstanceOf[YAML]
   }
   

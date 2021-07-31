@@ -3,13 +3,14 @@ package typings.fromjs
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FromJS {
   
   @js.native
-  trait IOrderedQueryable[T] extends IQueryable[T] {
+  trait IOrderedQueryable[T]
+    extends StObject
+       with IQueryable[T] {
     
     def thenBy[TResult](item: js.Function1[/* item */ T, TResult]): IOrderedQueryable[T] = js.native
     

@@ -13,144 +13,144 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait typeCreateRendererParams extends Object {
+trait typeCreateRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var colorMixMode: js.UndefOr[String] = js.native
+  var colorMixMode: js.UndefOr[String] = js.undefined
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.native
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to add edges to the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var edgesType: js.UndefOr[solid | none] = js.native
+  var edgesType: js.UndefOr[solid | none] = js.undefined
   
   /**
     * The name of the field from which to extract unique values that will be used for the basis of the data-driven visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The layer for which the renderer is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Provides options for setting a title to a field that will override the field alias defined in the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var legendOptions: js.UndefOr[typeCreateRendererParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[typeCreateRendererParamsLegendOptions] = js.undefined
   
   /**
     * The number of types (or categories) displayed by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var numTypes: js.UndefOr[Double] = js.native
+  var numTypes: js.UndefOr[Double] = js.undefined
   
   /**
     * For polygon layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that all domain codes should be returned if the given field has domain values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var returnAllCodedValues: js.UndefOr[Boolean] = js.native
+  var returnAllCodedValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * For point and polyline layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var sortBy: js.UndefOr[count | value] = js.native
+  var sortBy: js.UndefOr[count | value] = js.undefined
   
   /**
     * A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var statistics: js.UndefOr[UniqueValuesResult] = js.native
+  var statistics: js.UndefOr[UniqueValuesResult] = js.undefined
   
   /**
     * The type of symbol to generate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.native
+  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined type scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var typeScheme: js.UndefOr[TypeScheme] = js.native
+  var typeScheme: js.UndefOr[TypeScheme] = js.undefined
   
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number or a string.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var valueExpression: js.UndefOr[String] = js.native
+  var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Text describing the value returned from the `valueExpression`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var valueExpressionTitle: js.UndefOr[String] = js.native
+  var valueExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
 }
 object typeCreateRendererParams {
   

@@ -3,21 +3,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CreateSnapshotRequest. */
-@js.native
 trait ICreateSnapshotRequest extends StObject {
   
   /** CreateSnapshotRequest labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** CreateSnapshotRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** CreateSnapshotRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object ICreateSnapshotRequest {
   

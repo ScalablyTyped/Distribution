@@ -2,40 +2,38 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMPrimitiveOverride extends StObject {
   
   /**
     * The expression.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The primitive name this override applies to.
     */
-  var primitiveName: js.UndefOr[String] = js.native
+  var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
     * The property name in the primitive this override applies to.
     */
-  var propertyName: js.UndefOr[String] = js.native
+  var propertyName: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride
   
   /**
     * ExpressionInfo that contains the Arcade expression that returns value as a number or a string depending on the PropertyName.
     */
-  var valueExpressionInfo: js.UndefOr[CIMExpressionInfo] = js.native
+  var valueExpressionInfo: js.UndefOr[CIMExpressionInfo] = js.undefined
 }
 object CIMPrimitiveOverride {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride): CIMPrimitiveOverride = {
+  def apply(): CIMPrimitiveOverride = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMPrimitiveOverride")
     __obj.asInstanceOf[CIMPrimitiveOverride]
   }
   

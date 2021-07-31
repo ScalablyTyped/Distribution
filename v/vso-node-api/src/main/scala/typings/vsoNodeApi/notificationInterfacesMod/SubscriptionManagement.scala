@@ -2,15 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionManagement extends StObject {
   
-  var serviceInstanceType: String = js.native
+  var serviceInstanceType: String
   
-  var url: String = js.native
+  var url: String
 }
 object SubscriptionManagement {
   

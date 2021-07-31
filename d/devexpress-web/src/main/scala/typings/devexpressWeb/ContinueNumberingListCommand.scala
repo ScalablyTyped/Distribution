@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to continue the list's numbering.
   */
-@js.native
-trait ContinueNumberingListCommand extends CommandWithSimpleStateBase {
+trait ContinueNumberingListCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ContinueNumberingListCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ContinueNumberingListCommand {
   

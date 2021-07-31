@@ -2,17 +2,15 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Details extends StObject {
   
-  var Details: ApiVersion = js.native
+  var Details: ApiVersion
   
-  var Name: String = js.native
+  var Name: String
   
-  var Version: String = js.native
+  var Version: String
 }
 object Details {
   

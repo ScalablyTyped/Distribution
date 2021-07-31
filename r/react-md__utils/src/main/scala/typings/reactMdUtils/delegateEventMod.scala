@@ -7,65 +7,60 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delegateEventMod {
   
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
+  @JSImport("@react-md/utils/types/events/delegateEvent", JSImport.Namespace)
   @js.native
-  def delegateEvent(eventType: String): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: js.UndefOr[scala.Nothing],
-    options: Boolean
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: js.UndefOr[scala.Nothing],
-    options: AddEventListenerOptions
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(eventType: String, eventTarget: js.UndefOr[DelegatedEventTarget], throttle: Boolean): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: Boolean,
-    options: Boolean
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(
-    eventType: String,
-    eventTarget: js.UndefOr[DelegatedEventTarget],
-    throttle: Boolean,
-    options: AddEventListenerOptions
-  ): DelegatedEventHandler = js.native
-  @JSImport("@react-md/utils/types/events/delegateEvent", "delegateEvent")
-  @js.native
-  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def delegateEvent(eventType: String): DelegatedEventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any]).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(
+    eventType: String,
+    eventTarget: DelegatedEventTarget,
+    throttle: Boolean,
+    options: AddEventListenerOptions
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  @scala.inline
+  def delegateEvent(
+    eventType: String,
+    eventTarget: DelegatedEventTarget,
+    throttle: Unit,
+    options: AddEventListenerOptions
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  
   trait DelegatableEvent extends StObject {
     
-    var handler: DelegatedEventHandler = js.native
+    var handler: DelegatedEventHandler
     
-    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.native
+    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.undefined
     
-    var target: DelegatedEventTarget = js.native
+    var target: DelegatedEventTarget
     
-    var throttle: Boolean = js.native
+    var throttle: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object DelegatableEvent {
     
@@ -99,18 +94,17 @@ object delegateEventMod {
     }
   }
   
-  @js.native
   trait DelegatedEventHandler extends StObject {
     
     /**
       * Adds the provided callback to the throttled event listener.
       */
-    def add(callback: EventListener): Unit = js.native
+    def add(callback: EventListener): Unit
     
     /**
       * Attempts to remove the provided callback from the throttled event listener.
       */
-    def remove(callback: EventListener): Unit = js.native
+    def remove(callback: EventListener): Unit
   }
   object DelegatedEventHandler {
     

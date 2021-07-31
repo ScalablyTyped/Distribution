@@ -11,31 +11,31 @@ import typings.materialUiCore.createPaletteMod.Palette
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createTypographyMod {
   
-  @JSImport("@material-ui/core/styles/createTypography", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createTypography", JSImport.Namespace)
   @js.native
-  def default(palette: Palette, typography: js.Function1[/* palette */ Palette, TypographyOptions]): Typography = js.native
-  @JSImport("@material-ui/core/styles/createTypography", JSImport.Default)
-  @js.native
-  def default(palette: Palette, typography: TypographyOptions): Typography = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(palette: Palette, typography: js.Function1[/* palette */ Palette, TypographyOptions]): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
+  @scala.inline
+  def default(palette: Palette, typography: TypographyOptions): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
   
   /* Inlined parent std.Required<{  fontFamily :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontFamily'],   fontSize :number,   fontWeightLight :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightRegular :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightMedium :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight']}> */
-  @js.native
   trait FontStyle extends StObject {
     
-    var fontFamily: FontFamilyProperty = js.native
+    var fontFamily: FontFamilyProperty
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var fontWeightLight: FontWeightProperty = js.native
+    var fontWeightLight: FontWeightProperty
     
-    var fontWeightMedium: FontWeightProperty = js.native
+    var fontWeightMedium: FontWeightProperty
     
-    var fontWeightRegular: FontWeightProperty = js.native
+    var fontWeightRegular: FontWeightProperty
   }
   object FontStyle {
     
@@ -72,24 +72,23 @@ object createTypographyMod {
   }
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createTypography.FontStyle> */
-  @js.native
   trait FontStyleOptions extends StObject {
     
-    var allVariants: js.UndefOr[CSSProperties] = js.native
+    var allVariants: js.UndefOr[CSSProperties] = js.undefined
     
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var htmlFontSize: js.UndefOr[Double] = js.native
+    var htmlFontSize: js.UndefOr[Double] = js.undefined
     
-    var useNextVariants: js.UndefOr[Boolean] = js.native
+    var useNextVariants: js.UndefOr[Boolean] = js.undefined
   }
   object FontStyleOptions {
     
@@ -241,60 +240,59 @@ object createTypographyMod {
   /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
   /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.FontStyle */
   /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.TypographyUtils */
-  @js.native
   trait Typography extends StObject {
     
-    var body1: TypographyStyle = js.native
+    var body1: TypographyStyle
     
-    var body2: TypographyStyle = js.native
+    var body2: TypographyStyle
     
-    var button: TypographyStyle = js.native
+    var button: TypographyStyle
     
-    var caption: TypographyStyle = js.native
+    var caption: TypographyStyle
     
-    var display1: TypographyStyle = js.native
+    var display1: TypographyStyle
     
-    var display2: TypographyStyle = js.native
+    var display2: TypographyStyle
     
-    var display3: TypographyStyle = js.native
+    var display3: TypographyStyle
     
-    var display4: TypographyStyle = js.native
+    var display4: TypographyStyle
     
-    var fontFamily: FontFamilyProperty = js.native
+    var fontFamily: FontFamilyProperty
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var fontWeightLight: FontWeightProperty = js.native
+    var fontWeightLight: FontWeightProperty
     
-    var fontWeightMedium: FontWeightProperty = js.native
+    var fontWeightMedium: FontWeightProperty
     
-    var fontWeightRegular: FontWeightProperty = js.native
+    var fontWeightRegular: FontWeightProperty
     
-    var h1: TypographyStyle = js.native
+    var h1: TypographyStyle
     
-    var h2: TypographyStyle = js.native
+    var h2: TypographyStyle
     
-    var h3: TypographyStyle = js.native
+    var h3: TypographyStyle
     
-    var h4: TypographyStyle = js.native
+    var h4: TypographyStyle
     
-    var h5: TypographyStyle = js.native
+    var h5: TypographyStyle
     
-    var h6: TypographyStyle = js.native
+    var h6: TypographyStyle
     
-    var headline: TypographyStyle = js.native
+    var headline: TypographyStyle
     
-    var overline: TypographyStyle = js.native
+    var overline: TypographyStyle
     
-    def pxToRem(px: Double): String = js.native
+    def pxToRem(px: Double): String
     
-    var subheading: TypographyStyle = js.native
+    var subheading: TypographyStyle
     
-    var subtitle1: TypographyStyle = js.native
+    var subtitle1: TypographyStyle
     
-    var subtitle2: TypographyStyle = js.native
+    var subtitle2: TypographyStyle
     
-    var title: TypographyStyle = js.native
+    var title: TypographyStyle
   }
   object Typography {
     
@@ -415,64 +413,63 @@ object createTypographyMod {
   }
   
   /* Inlined parent std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyleOptions> & @material-ui/core.@material-ui/core/styles/createTypography.FontStyleOptions> */
-  @js.native
   trait TypographyOptions extends StObject {
     
-    var allVariants: js.UndefOr[CSSProperties] = js.native
+    var allVariants: js.UndefOr[CSSProperties] = js.undefined
     
-    var body1: js.UndefOr[TypographyStyleOptions] = js.native
+    var body1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var body2: js.UndefOr[TypographyStyleOptions] = js.native
+    var body2: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var button: js.UndefOr[TypographyStyleOptions] = js.native
+    var button: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var caption: js.UndefOr[TypographyStyleOptions] = js.native
+    var caption: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var display1: js.UndefOr[TypographyStyleOptions] = js.native
+    var display1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var display2: js.UndefOr[TypographyStyleOptions] = js.native
+    var display2: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var display3: js.UndefOr[TypographyStyleOptions] = js.native
+    var display3: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var display4: js.UndefOr[TypographyStyleOptions] = js.native
+    var display4: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var h1: js.UndefOr[TypographyStyleOptions] = js.native
+    var h1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var h2: js.UndefOr[TypographyStyleOptions] = js.native
+    var h2: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var h3: js.UndefOr[TypographyStyleOptions] = js.native
+    var h3: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var h4: js.UndefOr[TypographyStyleOptions] = js.native
+    var h4: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var h5: js.UndefOr[TypographyStyleOptions] = js.native
+    var h5: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var h6: js.UndefOr[TypographyStyleOptions] = js.native
+    var h6: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var headline: js.UndefOr[TypographyStyleOptions] = js.native
+    var headline: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var htmlFontSize: js.UndefOr[Double] = js.native
+    var htmlFontSize: js.UndefOr[Double] = js.undefined
     
-    var overline: js.UndefOr[TypographyStyleOptions] = js.native
+    var overline: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var subheading: js.UndefOr[TypographyStyleOptions] = js.native
+    var subheading: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var subtitle1: js.UndefOr[TypographyStyleOptions] = js.native
+    var subtitle1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var subtitle2: js.UndefOr[TypographyStyleOptions] = js.native
+    var subtitle2: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var title: js.UndefOr[TypographyStyleOptions] = js.native
+    var title: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var useNextVariants: js.UndefOr[Boolean] = js.native
+    var useNextVariants: js.UndefOr[Boolean] = js.undefined
   }
   object TypographyOptions {
     
@@ -656,22 +653,21 @@ object createTypographyMod {
   }
   
   /* Inlined std.Required<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'fontFamily' | 'fontSize' | 'fontWeight' | 'color'>> & std.Partial<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'letterSpacing' | 'lineHeight' | 'textTransform'>> */
-  @js.native
   trait TypographyStyle extends StObject {
     
-    var color: ColorProperty = js.native
+    var color: ColorProperty
     
-    var fontFamily: FontFamilyProperty = js.native
+    var fontFamily: FontFamilyProperty
     
-    var fontSize: FontSizeProperty[Double | String] = js.native
+    var fontSize: FontSizeProperty[Double | String]
     
-    var fontWeight: FontWeightProperty = js.native
+    var fontWeight: FontWeightProperty
     
-    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.native
+    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
     
-    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.native
+    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
     
-    var textTransform: js.UndefOr[TextTransformProperty] = js.native
+    var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
   }
   object TypographyStyle {
     
@@ -722,22 +718,21 @@ object createTypographyMod {
   }
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
-  @js.native
   trait TypographyStyleOptions extends StObject {
     
-    var color: js.UndefOr[ColorProperty] = js.native
+    var color: js.UndefOr[ColorProperty] = js.undefined
     
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
     
-    var fontSize: js.UndefOr[FontSizeProperty[Double | String]] = js.native
+    var fontSize: js.UndefOr[FontSizeProperty[Double | String]] = js.undefined
     
-    var fontWeight: js.UndefOr[FontWeightProperty] = js.native
+    var fontWeight: js.UndefOr[FontWeightProperty] = js.undefined
     
-    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.native
+    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
     
-    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.native
+    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
     
-    var textTransform: js.UndefOr[TextTransformProperty] = js.native
+    var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
   }
   object TypographyStyleOptions {
     
@@ -794,10 +789,9 @@ object createTypographyMod {
     }
   }
   
-  @js.native
   trait TypographyUtils extends StObject {
     
-    def pxToRem(px: Double): String = js.native
+    def pxToRem(px: Double): String
   }
   object TypographyUtils {
     

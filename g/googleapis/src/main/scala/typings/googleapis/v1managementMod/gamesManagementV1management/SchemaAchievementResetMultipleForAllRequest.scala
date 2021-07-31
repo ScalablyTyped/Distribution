@@ -2,25 +2,23 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for multiple achievements reset all request.
   */
-@js.native
 trait SchemaAchievementResetMultipleForAllRequest extends StObject {
   
   /**
     * The IDs of achievements to reset.
     */
-  var achievement_ids: js.UndefOr[js.Array[String]] = js.native
+  var achievement_ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesManagement#achievementResetMultipleForAllRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAchievementResetMultipleForAllRequest {
   

@@ -1,13 +1,10 @@
-package typings
+package typings.arcgisJsApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object arcgisJsApi {
-  
-  type HashMap[T] = typings.std.Record[java.lang.String, T]
-  
-  type IPromise[T] = js.Promise[T]
-}
+
+type HashMap[T] = typings.std.Record[java.lang.String, T]
+
+type IPromise[T] = js.Promise[T]

@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** broadcasts message in case transacted object is committed or reverted. */
-@js.native
-trait XTransactionBroadcaster extends XInterface {
+trait XTransactionBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive events about commits and reverts. */
-  def addTransactionListener(aListener: XTransactionListener): Unit = js.native
+  def addTransactionListener(aListener: XTransactionListener): Unit
   
   /** removes the specified listener. */
-  def removeTransactionListener(aListener: XTransactionListener): Unit = js.native
+  def removeTransactionListener(aListener: XTransactionListener): Unit
 }
 object XTransactionBroadcaster {
   

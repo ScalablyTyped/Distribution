@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostReservationPurchasePreviewRequest extends StObject {
   
   /**
     * The IDs of the Dedicated Hosts with which the reservation is associated.
     */
-  var HostIdSet: RequestHostIdSet = js.native
+  var HostIdSet: RequestHostIdSet
   
   /**
     * The offering ID of the reservation.
     */
-  var OfferingId: typings.awsSdk.ec2Mod.OfferingId = js.native
+  var OfferingId: typings.awsSdk.ec2Mod.OfferingId
 }
 object GetHostReservationPurchasePreviewRequest {
   

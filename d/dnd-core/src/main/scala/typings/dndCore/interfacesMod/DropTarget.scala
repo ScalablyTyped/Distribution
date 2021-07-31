@@ -2,17 +2,15 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropTarget extends StObject {
   
-  def canDrop(monitor: DragDropMonitor, targetId: Identifier): Boolean = js.native
+  def canDrop(monitor: DragDropMonitor, targetId: Identifier): Boolean
   
-  def drop(monitor: DragDropMonitor, targetId: Identifier): js.Any = js.native
+  def drop(monitor: DragDropMonitor, targetId: Identifier): js.Any
   
-  def hover(monitor: DragDropMonitor, targetId: Identifier): Unit = js.native
+  def hover(monitor: DragDropMonitor, targetId: Identifier): Unit
 }
 object DropTarget {
   

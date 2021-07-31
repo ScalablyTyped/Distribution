@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberFormat extends Object {
+trait NumberFormat
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the number should be formatted with a thousands separator.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
     */
-  var digitSeparator: js.UndefOr[Boolean] = js.native
+  var digitSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the number of decimal places that should appear in the formatted number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
     */
-  var places: js.UndefOr[Double] = js.native
+  var places: js.UndefOr[Double] = js.undefined
 }
 object NumberFormat {
   

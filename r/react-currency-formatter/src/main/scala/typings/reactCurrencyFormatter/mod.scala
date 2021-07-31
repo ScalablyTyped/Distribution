@@ -6,7 +6,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,24 +20,23 @@ object mod extends Shortcut {
   }
   @JSImport("react-currency-formatter", JSImport.Namespace)
   @js.native
-  val ^ : ComponentClass[CurrencyFormatterProps, ComponentState] = js.native
+  val ^ : js.Object & (ComponentClass[CurrencyFormatterProps, ComponentState]) = js.native
   
-  @js.native
   trait CurrencyFormatterProps extends StObject {
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var symbol: js.UndefOr[String] = js.native
+    var symbol: js.UndefOr[String] = js.undefined
   }
   object CurrencyFormatterProps {
     
@@ -92,8 +90,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = ComponentClass[CurrencyFormatterProps, ComponentState]
+  type _To = js.Object & (ComponentClass[CurrencyFormatterProps, ComponentState])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ComponentClass[CurrencyFormatterProps, ComponentState] = ^
+  override def _to: js.Object & (ComponentClass[CurrencyFormatterProps, ComponentState]) = ^
 }

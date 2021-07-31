@@ -2,17 +2,15 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackParameterName extends StObject {
   
-  var callbackParameterName: js.UndefOr[String] = js.native
+  var callbackParameterName: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[js.Any] = js.native
+  var parameters: js.UndefOr[js.Any] = js.undefined
   
-  var proxy: js.UndefOr[js.Any] = js.native
+  var proxy: js.UndefOr[js.Any] = js.undefined
 }
 object CallbackParameterName {
   

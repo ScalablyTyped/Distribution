@@ -2,33 +2,31 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Usage extends StObject {
   
   /**
     * The ending date of the usage data.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * The usage data, as daily logs of used and remaining quotas, over the specified time interval indexed over the API keys in a usage plan. For example, {..., "values" : { "{api_key}" : [ [0, 100], [10, 90], [100, 10]]}, where {api_key} stands for an API key value and the daily log entry is of the format [used quota, remaining quota].
     */
-  var items: js.UndefOr[MapOfKeyUsages] = js.native
+  var items: js.UndefOr[MapOfKeyUsages] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * The starting date of the usage data.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * The plan Id associated with this usage data.
     */
-  var usagePlanId: js.UndefOr[String] = js.native
+  var usagePlanId: js.UndefOr[String] = js.undefined
 }
 object Usage {
   

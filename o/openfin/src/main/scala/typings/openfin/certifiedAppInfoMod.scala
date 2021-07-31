@@ -2,23 +2,21 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certifiedAppInfoMod {
   
-  @js.native
   trait CertifiedAppInfo extends StObject {
     
-    var isCertified: js.UndefOr[Boolean] = js.native
+    var isCertified: js.UndefOr[Boolean] = js.undefined
     
-    var isOptedIntoCertfiedApp: js.UndefOr[Boolean] = js.native
+    var isOptedIntoCertfiedApp: js.UndefOr[Boolean] = js.undefined
     
-    var isPresentInAppDirectory: js.UndefOr[Boolean] = js.native
+    var isPresentInAppDirectory: js.UndefOr[Boolean] = js.undefined
     
-    var isRunning: Boolean = js.native
+    var isRunning: Boolean
     
-    var isSSLCertified: js.UndefOr[Boolean] = js.native
+    var isSSLCertified: js.UndefOr[Boolean] = js.undefined
   }
   object CertifiedAppInfo {
     

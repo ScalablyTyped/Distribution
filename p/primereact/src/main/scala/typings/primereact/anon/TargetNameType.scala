@@ -2,17 +2,15 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetNameType extends StObject {
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
   
-  var target: NameType = js.native
+  var target: NameType
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object TargetNameType {
   

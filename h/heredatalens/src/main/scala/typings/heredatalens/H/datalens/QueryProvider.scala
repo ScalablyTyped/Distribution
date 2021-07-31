@@ -2,7 +2,6 @@ package typings.heredatalens.H.datalens
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that this provider must be used only for non-tiled queries.
   */
 @js.native
-trait QueryProvider extends Provider {
+trait QueryProvider
+  extends StObject
+     with Provider {
   
   /**
     * Fetches new data from the Data Lens REST API.
@@ -41,14 +42,13 @@ object QueryProvider {
     * Configures source query and data accessibility parameters for QueryProvider
     * Specifies the query credentials and dynamic parameters required for fetching query data with the Data Lens REST API. Other options from Provider.Options are available.
     */
-  @js.native
   trait Options extends StObject {
     
     /** The ID of the Data Lens REST API query */
-    var queryId: String = js.native
+    var queryId: String
     
     /** The query's dynamic parameters. The dynamic parameters can be used to filter data provided by the query. */
-    var queryParams: js.UndefOr[js.Any] = js.native
+    var queryParams: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

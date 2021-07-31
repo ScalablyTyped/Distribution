@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncrementPos extends StObject {
   
-  var incrementPos: js.Any = js.native
+  var incrementPos: js.Any
   
-  var matchedString: js.Any = js.native
+  var matchedString: js.Any
   
-  var pos: js.Any = js.native
+  var pos: js.Any
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object IncrementPos {
   

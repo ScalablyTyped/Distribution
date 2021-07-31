@@ -4,16 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers tooling to interpret different data sources in a structural and chart-type-dependent way. */
-@js.native
 trait InterpretedData extends StObject {
   
-  var Categories: XLabeledDataSequence = js.native
+  var Categories: XLabeledDataSequence
   
-  var Series: SafeArray[SafeArray[XDataSeries]] = js.native
+  var Series: SafeArray[SafeArray[XDataSeries]]
 }
 object InterpretedData {
   

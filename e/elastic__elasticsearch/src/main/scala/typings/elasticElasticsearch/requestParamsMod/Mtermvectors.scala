@@ -6,41 +6,41 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.force
 import typings.elasticElasticsearch.elasticElasticsearchStrings.internal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Mtermvectors[T] extends Generic {
+trait Mtermvectors[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var field_statistics: js.UndefOr[Boolean] = js.native
+  var field_statistics: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var ids: js.UndefOr[String | js.Array[String]] = js.native
+  var ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var offsets: js.UndefOr[Boolean] = js.native
+  var offsets: js.UndefOr[Boolean] = js.undefined
   
-  var payloads: js.UndefOr[Boolean] = js.native
+  var payloads: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.UndefOr[Boolean] = js.native
+  var positions: js.UndefOr[Boolean] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var realtime: js.UndefOr[Boolean] = js.native
+  var realtime: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var term_statistics: js.UndefOr[Boolean] = js.native
+  var term_statistics: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var version_type: js.UndefOr[internal | external | external_gte | force] = js.native
+  var version_type: js.UndefOr[internal | external | external_gte | force] = js.undefined
 }
 object Mtermvectors {
   
@@ -51,7 +51,7 @@ object Mtermvectors {
   }
   
   @scala.inline
-  implicit class MtermvectorsMutableBuilder[Self <: Mtermvectors[_], T] (val x: Self with Mtermvectors[T]) extends AnyVal {
+  implicit class MtermvectorsMutableBuilder[Self <: Mtermvectors[?], T] (val x: Self & Mtermvectors[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

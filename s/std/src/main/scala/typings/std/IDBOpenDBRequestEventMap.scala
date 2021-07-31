@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDBOpenDBRequestEventMap extends IDBRequestEventMap {
+trait IDBOpenDBRequestEventMap
+  extends StObject
+     with IDBRequestEventMap {
   
-  var blocked: Event = js.native
+  var blocked: Event
   
-  var upgradeneeded: IDBVersionChangeEvent = js.native
+  var upgradeneeded: IDBVersionChangeEvent
 }
 object IDBOpenDBRequestEventMap {
   

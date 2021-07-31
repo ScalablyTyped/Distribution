@@ -7,7 +7,6 @@ import typings.googleapis.v31Mod.dfareportingV31.Dfareporting
 import typings.googleapis.v31Mod.dfareportingV31.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

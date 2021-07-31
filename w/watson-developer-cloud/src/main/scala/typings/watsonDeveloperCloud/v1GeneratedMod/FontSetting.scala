@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FontSetting. */
-@js.native
 trait FontSetting extends StObject {
   
   /** When `true`, the font is matched if it is bold. */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /** When `true`, the font is matched if it is italic. */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /** The HTML heading level that any content with the matching font will be converted to. */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /** The maximum size of the font to match. */
-  var max_size: js.UndefOr[Double] = js.native
+  var max_size: js.UndefOr[Double] = js.undefined
   
   /** The minimum size of the font to match. */
-  var min_size: js.UndefOr[Double] = js.native
+  var min_size: js.UndefOr[Double] = js.undefined
   
   /** The name of the font. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object FontSetting {
   

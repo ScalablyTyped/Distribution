@@ -32,23 +32,21 @@ import typings.chrome.chrome.cast.media.TvShowMediaMetadata
 import typings.chrome.chrome.cast.media.VolumeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofmedia extends StObject {
   
-  var DEFAULT_MEDIA_RECEIVER_APP_ID: String = js.native
+  var DEFAULT_MEDIA_RECEIVER_APP_ID: String
   
   var EditTracksInfoRequest: Instantiable2[
     /* activeTrackIds */ js.UndefOr[js.Array[Double]], 
     /* textTrackStyle */ js.UndefOr[TextTrackStyle], 
     typings.chrome.chrome.cast.media.EditTracksInfoRequest
-  ] = js.native
+  ]
   
-  var GenericMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.GenericMediaMetadata] = js.native
+  var GenericMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.GenericMediaMetadata]
   
-  var GetStatusRequest: Instantiable0[typings.chrome.chrome.cast.media.GetStatusRequest] = js.native
+  var GetStatusRequest: Instantiable0[typings.chrome.chrome.cast.media.GetStatusRequest]
   
   var LiveSeekableRange: Instantiable4[
     /* start */ js.UndefOr[Double], 
@@ -56,77 +54,77 @@ trait Typeofmedia extends StObject {
     /* isMovingWindow */ js.UndefOr[Boolean], 
     /* isLiveDone */ js.UndefOr[Boolean], 
     typings.chrome.chrome.cast.media.LiveSeekableRange
-  ] = js.native
+  ]
   
-  var LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.LoadRequest] = js.native
+  var LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.LoadRequest]
   
   var Media: Instantiable2[
     /* sessionId */ String, 
     /* mediaSessionId */ Double, 
     typings.chrome.chrome.cast.media.Media
-  ] = js.native
+  ]
   
   var MediaInfo: Instantiable2[
     /* contentId */ String, 
     /* contentType */ String, 
     typings.chrome.chrome.cast.media.MediaInfo
-  ] = js.native
+  ]
   
-  var MovieMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MovieMediaMetadata] = js.native
+  var MovieMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MovieMediaMetadata]
   
-  var MusicTrackMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MusicTrackMediaMetadata] = js.native
+  var MusicTrackMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MusicTrackMediaMetadata]
   
-  var PauseRequest: Instantiable0[typings.chrome.chrome.cast.media.PauseRequest] = js.native
+  var PauseRequest: Instantiable0[typings.chrome.chrome.cast.media.PauseRequest]
   
-  var PhotoMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.PhotoMediaMetadata] = js.native
+  var PhotoMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.PhotoMediaMetadata]
   
-  var PlayRequest: Instantiable0[typings.chrome.chrome.cast.media.PlayRequest] = js.native
+  var PlayRequest: Instantiable0[typings.chrome.chrome.cast.media.PlayRequest]
   
   var QueueInsertItemsRequest: Instantiable1[
     /* itemsToInsert */ js.Array[QueueItem], 
     typings.chrome.chrome.cast.media.QueueInsertItemsRequest
-  ] = js.native
+  ]
   
-  var QueueItem: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.QueueItem] = js.native
+  var QueueItem: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.QueueItem]
   
-  var QueueLoadRequest: Instantiable1[/* items */ js.Array[QueueItem], typings.chrome.chrome.cast.media.QueueLoadRequest] = js.native
+  var QueueLoadRequest: Instantiable1[/* items */ js.Array[QueueItem], typings.chrome.chrome.cast.media.QueueLoadRequest]
   
   var QueueRemoveItemsRequest: Instantiable1[
     /* itemIdsToRemove */ js.Array[Double], 
     typings.chrome.chrome.cast.media.QueueRemoveItemsRequest
-  ] = js.native
+  ]
   
   var QueueReorderItemsRequest: Instantiable1[
     /* itemIdsToReorder */ js.Array[Double], 
     typings.chrome.chrome.cast.media.QueueReorderItemsRequest
-  ] = js.native
+  ]
   
   var QueueUpdateItemsRequest: Instantiable1[
     /* itemsToUpdate */ js.Array[QueueItem], 
     typings.chrome.chrome.cast.media.QueueUpdateItemsRequest
-  ] = js.native
+  ]
   
-  var SeekRequest: Instantiable0[typings.chrome.chrome.cast.media.SeekRequest] = js.native
+  var SeekRequest: Instantiable0[typings.chrome.chrome.cast.media.SeekRequest]
   
-  var StopRequest: Instantiable0[typings.chrome.chrome.cast.media.StopRequest] = js.native
+  var StopRequest: Instantiable0[typings.chrome.chrome.cast.media.StopRequest]
   
-  var TextTrackStyle: Instantiable0[typings.chrome.chrome.cast.media.TextTrackStyle] = js.native
+  var TextTrackStyle: Instantiable0[typings.chrome.chrome.cast.media.TextTrackStyle]
   
   var Track: Instantiable2[
     /* trackId */ Double, 
     /* trackType */ TrackType, 
     typings.chrome.chrome.cast.media.Track
-  ] = js.native
+  ]
   
-  var TvShowMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.TvShowMediaMetadata] = js.native
+  var TvShowMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.TvShowMediaMetadata]
   
-  var VolumeRequest: Instantiable1[/* volume */ Volume, typings.chrome.chrome.cast.media.VolumeRequest] = js.native
+  var VolumeRequest: Instantiable1[/* volume */ Volume, typings.chrome.chrome.cast.media.VolumeRequest]
   
   /**
     * @namespace
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
     */
-  val timeout: Typeoftimeout = js.native
+  val timeout: Typeoftimeout
 }
 object Typeofmedia {
   

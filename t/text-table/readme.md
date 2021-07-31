@@ -11,8 +11,8 @@ borderless text tables with alignment
 | Full name          | text-table |
 | Keywords           | text, table, align, ascii, rows, tabular |
 | # releases         | 0 |
-| # dependents       | 714 |
-| # downloads        | 424457164 |
+| # dependents       | 777 |
+| # downloads        | 534684726 |
 | # stars            | 19 |
 
 ## Links

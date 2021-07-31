@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait nlobjResponse
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
@@ -113,41 +113,17 @@ Instantiable0[js.Any] {
     * @return
     */
   def sendRedirect(`type`: String, subtype: String): js.Any = js.native
-  def sendRedirect(
-    `type`: String,
-    subtype: String,
-    id: js.UndefOr[scala.Nothing],
-    pagemode: js.UndefOr[scala.Nothing],
-    parameters: js.Any
-  ): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: js.UndefOr[scala.Nothing], pagemode: Boolean): js.Any = js.native
-  def sendRedirect(
-    `type`: String,
-    subtype: String,
-    id: js.UndefOr[scala.Nothing],
-    pagemode: Boolean,
-    parameters: js.Any
-  ): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: String): js.Any = js.native
-  def sendRedirect(
-    `type`: String,
-    subtype: String,
-    id: String,
-    pagemode: js.UndefOr[scala.Nothing],
-    parameters: js.Any
-  ): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean, parameters: js.Any): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Unit, parameters: js.Any): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: Double): js.Any = js.native
-  def sendRedirect(
-    `type`: String,
-    subtype: String,
-    id: Double,
-    pagemode: js.UndefOr[scala.Nothing],
-    parameters: js.Any
-  ): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean, parameters: js.Any): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Unit, parameters: js.Any): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Boolean): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Boolean, parameters: js.Any): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Unit, parameters: js.Any): js.Any = js.native
   
   /**
     * sets the content type for the response (and an optional filename for binary output).
@@ -166,9 +142,9 @@ Instantiable0[js.Any] {
     * @return
     */
   def setContentType(`type`: String): Unit = js.native
-  def setContentType(`type`: String, name: js.UndefOr[scala.Nothing], disposition: String): Unit = js.native
   def setContentType(`type`: String, name: String): Unit = js.native
   def setContentType(`type`: String, name: String, disposition: String): Unit = js.native
+  def setContentType(`type`: String, name: Unit, disposition: String): Unit = js.native
   
   /**
     * sets the character encoding for the response.

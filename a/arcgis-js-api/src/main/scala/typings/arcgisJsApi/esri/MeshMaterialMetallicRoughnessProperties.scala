@@ -5,18 +5,18 @@ import typings.std.HTMLImageElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshMaterialMetallicRoughnessProperties extends MeshMaterialProperties {
+trait MeshMaterialMetallicRoughnessProperties
+  extends StObject
+     with MeshMaterialProperties {
   
   /**
     * Specifies a single, uniform emissive color for the [MeshComponent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#emissiveColor)
     */
-  var emissiveColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var emissiveColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Specifies a texture from which to get emissive color information.
@@ -25,14 +25,14 @@ trait MeshMaterialMetallicRoughnessProperties extends MeshMaterialProperties {
     */
   var emissiveTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies how much the material behaves like a metal.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#metallic)
     */
-  var metallic: js.UndefOr[Double] = js.native
+  var metallic: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a texture from which to get the combined metallic/roughness information.
@@ -41,7 +41,7 @@ trait MeshMaterialMetallicRoughnessProperties extends MeshMaterialProperties {
     */
   var metallicRoughnessTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows to specify a texture to get the occlusion information from.
@@ -50,14 +50,14 @@ trait MeshMaterialMetallicRoughnessProperties extends MeshMaterialProperties {
     */
   var occlusionTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates how rough the surface of the material is.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#roughness)
     */
-  var roughness: js.UndefOr[Double] = js.native
+  var roughness: js.UndefOr[Double] = js.undefined
 }
 object MeshMaterialMetallicRoughnessProperties {
   

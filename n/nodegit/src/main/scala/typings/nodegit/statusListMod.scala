@@ -5,7 +5,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.statusOptionsMod.StatusOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusListMod {
@@ -23,11 +22,13 @@ object statusListMod {
   /* static members */
   object StatusList {
     
-    @JSImport("nodegit/status-list", "StatusList.create")
+    @JSImport("nodegit/status-list", "StatusList")
     @js.native
-    def create(repo: Repository): js.Promise[StatusList] = js.native
-    @JSImport("nodegit/status-list", "StatusList.create")
-    @js.native
-    def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(repo: Repository): js.Promise[StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatusList]]
+    @scala.inline
+    def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatusList]]
   }
 }

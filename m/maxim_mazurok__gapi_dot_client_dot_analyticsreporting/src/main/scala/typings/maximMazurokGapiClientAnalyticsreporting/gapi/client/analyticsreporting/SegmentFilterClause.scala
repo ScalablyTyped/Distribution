@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentFilterClause extends StObject {
   
   /** Dimension Filter for the segment definition. */
-  var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.native
+  var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.undefined
   
   /** Metric Filter for the segment definition. */
-  var metricFilter: js.UndefOr[SegmentMetricFilter] = js.native
+  var metricFilter: js.UndefOr[SegmentMetricFilter] = js.undefined
   
   /** Matches the complement (`!`) of the filter. */
-  var not: js.UndefOr[Boolean] = js.native
+  var not: js.UndefOr[Boolean] = js.undefined
 }
 object SegmentFilterClause {
   

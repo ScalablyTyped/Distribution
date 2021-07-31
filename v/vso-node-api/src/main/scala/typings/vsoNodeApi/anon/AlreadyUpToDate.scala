@@ -2,29 +2,27 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlreadyUpToDate extends StObject {
   
-  var alreadyUpToDate: scala.Double = js.native
+  var alreadyUpToDate: scala.Double
   
-  var inlineUpdateReceived: scala.Double = js.native
+  var inlineUpdateReceived: scala.Double
   
-  var installed: scala.Double = js.native
+  var installed: scala.Double
   
-  var preinstalled: scala.Double = js.native
+  var preinstalled: scala.Double
   
-  var receivedInstallOrUpdate: scala.Double = js.native
+  var receivedInstallOrUpdate: scala.Double
   
-  var receivedUninstall: scala.Double = js.native
+  var receivedUninstall: scala.Double
   
-  var requestedUpdate: scala.Double = js.native
+  var requestedUpdate: scala.Double
   
-  var uninstalled: scala.Double = js.native
+  var uninstalled: scala.Double
   
-  var updated: scala.Double = js.native
+  var updated: scala.Double
 }
 object AlreadyUpToDate {
   

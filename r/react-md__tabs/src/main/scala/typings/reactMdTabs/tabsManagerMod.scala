@@ -6,88 +6,88 @@ import typings.react.mod.ReactNode
 import typings.reactMdTabs.typesMod.TabConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsManagerMod {
   
-  @JSImport("@react-md/tabs/types/TabsManager", "TabsManager")
+  @JSImport("@react-md/tabs/types/TabsManager", JSImport.Namespace)
   @js.native
-  def TabsManager(
-    hasTabsIdDefaultActiveIndexActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
-  ): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/tabs/types/TabsManager", "useTabs")
-  @js.native
-  def useTabs(): InitializedTabsManagerContext = js.native
+  @scala.inline
+  def TabsManager(
+    hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TabsManager")(hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  @scala.inline
+  def useTabs(): InitializedTabsManagerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabs")().asInstanceOf[InitializedTabsManagerContext]
   
   /* Inlined @react-md/tabs.@react-md/tabs/types/types.TabConfig & std.Required<std.Pick<@react-md/tabs.@react-md/tabs/types/types.TabConfig, 'id'>> */
-  @js.native
   trait InitializedTabConfig extends StObject {
     
     /**
       * The children to display in the tab. This is required and should normally
       * just be text or an icon.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the tab.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * An optional className to apply to the `<span>` surrounding the `children`
       * of the `Tab`. You _probably_ won't need to use this.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the `<span>` surrounding the `children` of
       * the `Tab`. You _probably_ won't need to use this.
       */
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Boolean if the tab should be disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional icon to render in the `Tab` along with the normal text. If you
       * want to have an icon only tab, you should not use this prop and instead
       * just provide the icon as the tab's children.
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the icon should appear after the text instead of before. When
       * the `stacked` prop is also enabled, it will cause the icon to appear below
       * the text instead of above.
       */
-    var iconAfter: js.UndefOr[Boolean] = js.native
+    var iconAfter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional id to use for the tab if the default generated ids are not to
       * your liking.
       */
-    var id: js.UndefOr[String] with String = js.native
+    var id: js.UndefOr[String] & String
     
     /**
       * Boolean if the icon and text should be stacked instead of rendered inline.
       * This is only valid when the `icon` prop has been provided.
       */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to apply to the tab.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object InitializedTabConfig {
     
     @scala.inline
-    def apply(id: js.UndefOr[String] with String): InitializedTabConfig = {
+    def apply(id: js.UndefOr[String] & String): InitializedTabConfig = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitializedTabConfig]
     }
@@ -138,7 +138,7 @@ object tabsManagerMod {
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
       @scala.inline
-      def setId(value: js.UndefOr[String] with String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
@@ -155,16 +155,15 @@ object tabsManagerMod {
   }
   
   /* Inlined std.Required<@react-md/tabs.@react-md/tabs/types/TabsManager.TabsManagerContext> */
-  @js.native
   trait InitializedTabsManagerContext extends StObject {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var onActiveIndexChange: js.Function1[/* activeIndex */ Double, Unit] = js.native
+    var onActiveIndexChange: js.Function1[/* activeIndex */ Double, Unit]
     
-    var tabs: js.Array[InitializedTabConfig] = js.native
+    var tabs: js.Array[InitializedTabConfig]
     
-    var tabsId: String = js.native
+    var tabsId: String
   }
   object InitializedTabsManagerContext {
     
@@ -199,25 +198,24 @@ object tabsManagerMod {
     }
   }
   
-  @js.native
   trait TabsManagerContext extends StObject {
     
     /**
       * The current active tab index to determine which tabs to animate in and out
       * of view.
       */
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
     /**
       * A function to call when the `activeIndex` should change due to keyboard
       * movement or clicking on a tab.
       */
-    def onActiveIndexChange(activeIndex: Double): Unit = js.native
+    def onActiveIndexChange(activeIndex: Double): Unit
     
     /**
       * The list of tabs that should be controlled by the tabs manager.
       */
-    var tabs: js.Array[InitializedTabConfig] = js.native
+    var tabs: js.Array[InitializedTabConfig]
     
     /**
       * This is an id prefix to use for all the child Tab, TabList, and TabPanel
@@ -229,7 +227,7 @@ object tabsManagerMod {
       *    - panelId={active && `${id}-panel-${index + 1}`}
       * - `TabPanel` -> id={`${id}-panel-${index + 1}`}
       */
-    var tabsId: String = js.native
+    var tabsId: String
   }
   object TabsManagerContext {
     
@@ -265,7 +263,6 @@ object tabsManagerMod {
   }
   
   /* Inlined parent std.Omit<@react-md/tabs.@react-md/tabs/types/TabsManager.TabsManagerContext, 'activeIndex' | 'onActiveIndexChange' | 'tabs'> */
-  @js.native
   trait TabsManagerProps extends StObject {
     
     /**
@@ -275,19 +272,19 @@ object tabsManagerMod {
       * `onActiveIndexChange` so that keyboard functionality and tab changing
       * behavior can still be used.
       */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * The children to render that should eventually have the `Tabs` component and
       * the `TabContent` for matching specific tabs.
       */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * The index of the tab that should be active by default. This is ignored if
       * the `activeIndex` prop is defined.
       */
-    var defaultActiveIndex: js.UndefOr[Double] = js.native
+    var defaultActiveIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean if the icon should appear after the text instead of before for all
@@ -299,14 +296,14 @@ object tabsManagerMod {
       * the `stacked` attribute enabled defined, it will be used instead of this
       * value.
       */
-    var iconAfter: js.UndefOr[Boolean] = js.native
+    var iconAfter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional function to call when the active index changes when the
       * `activeIndex` prop is not provided. If the `activeIndex` prop is provided,
       * this is **required** for keyboard accessibility.
       */
-    var onActiveIndexChange: js.UndefOr[js.Function1[/* activeIndex */ Double, Unit]] = js.native
+    var onActiveIndexChange: js.UndefOr[js.Function1[/* activeIndex */ Double, Unit]] = js.undefined
     
     /**
       * Boolean if all the `tabs` that have icons should be stacked instead of
@@ -317,14 +314,14 @@ object tabsManagerMod {
       * the `stacked` attribute enabled defined, it will be used instead of this
       * value.
       */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of tabs that should be controlled by the tabs manager.
       */
-    var tabs: js.Array[TabConfig | ReactElement | String] = js.native
+    var tabs: js.Array[TabConfig | ReactElement | String]
     
-    var tabsId: String = js.native
+    var tabsId: String
   }
   object TabsManagerProps {
     

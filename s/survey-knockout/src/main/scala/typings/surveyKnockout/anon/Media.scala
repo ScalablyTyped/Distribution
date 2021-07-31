@@ -2,15 +2,13 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
-  var media: String = js.native
+  var media: String
   
-  var style: String = js.native
+  var style: String
 }
 object Media {
   

@@ -2,15 +2,13 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apikey extends StObject {
   
-  var api_key: String = js.native
+  var api_key: String
   
-  var id: String = js.native
+  var id: String
 }
 object Apikey {
   

@@ -6,29 +6,29 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardSubtitleMod {
   
   @JSImport("@react-md/card/types/CardSubtitle", "CardSubtitle")
   @js.native
-  val CardSubtitle: ForwardRefExoticComponent[CardSubtitleProps with RefAttributes[HTMLHeadingElement]] = js.native
+  val CardSubtitle: ForwardRefExoticComponent[CardSubtitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
-  @js.native
-  trait CardSubtitleProps extends HTMLAttributes[HTMLHeadingElement] {
+  trait CardSubtitleProps
+    extends StObject
+       with HTMLAttributes[HTMLHeadingElement] {
     
     /**
       * Boolean if the subtitle should no longer use the secondary text color
       * within cards.
       */
-    var disableSecondaryColor: js.UndefOr[Boolean] = js.native
+    var disableSecondaryColor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the title should not be able to line-wrap and will ellipsis long
       * text.
       */
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
   }
   object CardSubtitleProps {
     

@@ -6,7 +6,6 @@ import typings.superstruct.anon.PartialFailure
 import typings.superstruct.structMod.Struct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typingsMod {
@@ -16,14 +15,14 @@ object typingsMod {
   @js.native
   trait Context extends StObject {
     
-    var branch: js.Array[_] = js.native
+    var branch: js.Array[js.Any] = js.native
     
     def check[T, S](value: js.Any, struct: Struct[T, S]): Iterable[Failure] = js.native
-    def check[T, S](value: js.Any, struct: Struct[T, S], parent: js.UndefOr[scala.Nothing], key: String): Iterable[Failure] = js.native
-    def check[T, S](value: js.Any, struct: Struct[T, S], parent: js.UndefOr[scala.Nothing], key: Double): Iterable[Failure] = js.native
     def check[T, S](value: js.Any, struct: Struct[T, S], parent: js.Any): Iterable[Failure] = js.native
     def check[T, S](value: js.Any, struct: Struct[T, S], parent: js.Any, key: String): Iterable[Failure] = js.native
     def check[T, S](value: js.Any, struct: Struct[T, S], parent: js.Any, key: Double): Iterable[Failure] = js.native
+    def check[T, S](value: js.Any, struct: Struct[T, S], parent: Unit, key: String): Iterable[Failure] = js.native
+    def check[T, S](value: js.Any, struct: Struct[T, S], parent: Unit, key: Double): Iterable[Failure] = js.native
     
     def fail(): Failure = js.native
     def fail(props: PartialFailure): Failure = js.native
@@ -37,25 +36,25 @@ object typingsMod {
     var value: js.Any = js.native
   }
   
-  @js.native
   trait Failure
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var branch: js.Array[_] = js.native
+    var branch: js.Array[js.Any]
     
-    var path: js.Array[String | Double] = js.native
+    var path: js.Array[String | Double]
     
-    var refinement: js.UndefOr[String] = js.native
+    var refinement: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any = js.native
+    var value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any
   }
   object Failure {
     
     @scala.inline
     def apply(
-      branch: js.Array[_],
+      branch: js.Array[js.Any],
       path: js.Array[String | Double],
       `type`: String,
       value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any
@@ -69,7 +68,7 @@ object typingsMod {
     implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
@@ -96,7 +95,7 @@ object typingsMod {
     }
   }
   
-  type Infer[T /* <: Struct[_, _] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['TYPE'] */ js.Any
+  type Infer[T /* <: Struct[js.Any, js.Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['TYPE'] */ js.Any
   
   type Refiner[T] = js.Function2[/* value */ T, /* context */ Context, Result]
   

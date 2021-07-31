@@ -3,7 +3,6 @@ package typings.reactNativeFabric
 import typings.reactNativeFabric.mod.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -70,18 +69,13 @@ object anon {
       * https://docs.fabric.io/android/answers/answers-events.html#content-view
       */
     def logContentView(name: String): Unit = js.native
-    def logContentView(
-      name: String,
-      `type`: js.UndefOr[scala.Nothing],
-      id: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logContentView(name: String, `type`: js.UndefOr[scala.Nothing], id: String): Unit = js.native
-    def logContentView(name: String, `type`: js.UndefOr[scala.Nothing], id: String, attributes: Attributes): Unit = js.native
     def logContentView(name: String, `type`: String): Unit = js.native
-    def logContentView(name: String, `type`: String, id: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logContentView(name: String, `type`: String, id: String): Unit = js.native
     def logContentView(name: String, `type`: String, id: String, attributes: Attributes): Unit = js.native
+    def logContentView(name: String, `type`: String, id: Unit, attributes: Attributes): Unit = js.native
+    def logContentView(name: String, `type`: Unit, id: String): Unit = js.native
+    def logContentView(name: String, `type`: Unit, id: String, attributes: Attributes): Unit = js.native
+    def logContentView(name: String, `type`: Unit, id: Unit, attributes: Attributes): Unit = js.native
     
     /**
       * Send a custom tracking event with the given name.
@@ -102,9 +96,9 @@ object anon {
       * @param attributes Any additional user-defined attributes to be logged.
       */
     def logInvite(): Unit = js.native
-    def logInvite(method: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logInvite(method: String): Unit = js.native
     def logInvite(method: String, attributes: Attributes): Unit = js.native
+    def logInvite(method: Unit, attributes: Attributes): Unit = js.native
     
     /**
       * Sends the Log In tracking event.
@@ -118,13 +112,13 @@ object anon {
       * @param attributes Any additional user-defined attributes to be logged.
       */
     def logLogin(): Unit = js.native
-    def logLogin(method: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
-    def logLogin(method: js.UndefOr[scala.Nothing], success: Boolean): Unit = js.native
-    def logLogin(method: js.UndefOr[scala.Nothing], success: Boolean, attributes: Attributes): Unit = js.native
     def logLogin(method: String): Unit = js.native
-    def logLogin(method: String, success: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logLogin(method: String, success: Boolean): Unit = js.native
     def logLogin(method: String, success: Boolean, attributes: Attributes): Unit = js.native
+    def logLogin(method: String, success: Unit, attributes: Attributes): Unit = js.native
+    def logLogin(method: Unit, success: Boolean): Unit = js.native
+    def logLogin(method: Unit, success: Boolean, attributes: Attributes): Unit = js.native
+    def logLogin(method: Unit, success: Unit, attributes: Attributes): Unit = js.native
     
     /**
       * Sends the Purchase tracking event.
@@ -176,145 +170,9 @@ object anon {
       * @param attributes Any additional user-defined attributes to be logged.
       */
     def logShare(): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: js.UndefOr[scala.Nothing], contentName: js.UndefOr[scala.Nothing], contentType: String): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: String,
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: String,
-      contentId: String
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: String,
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: js.UndefOr[scala.Nothing], contentName: String): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: String,
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: String,
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String
-    ): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: String,
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: js.UndefOr[scala.Nothing], contentName: String, contentType: String): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: String,
-      contentType: String,
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: js.UndefOr[scala.Nothing], contentName: String, contentType: String, contentId: String): Unit = js.native
-    def logShare(
-      method: js.UndefOr[scala.Nothing],
-      contentName: String,
-      contentType: String,
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
     def logShare(method: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String
-    ): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: String, contentName: js.UndefOr[scala.Nothing], contentType: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: String,
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: String, contentName: js.UndefOr[scala.Nothing], contentType: String, contentId: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: js.UndefOr[scala.Nothing],
-      contentType: String,
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
     def logShare(method: String, contentName: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: String,
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
-    def logShare(method: String, contentName: String, contentType: js.UndefOr[scala.Nothing], contentId: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: String,
-      contentType: js.UndefOr[scala.Nothing],
-      contentId: String,
-      attributes: Attributes
-    ): Unit = js.native
     def logShare(method: String, contentName: String, contentType: String): Unit = js.native
-    def logShare(
-      method: String,
-      contentName: String,
-      contentType: String,
-      contentId: js.UndefOr[scala.Nothing],
-      attributes: Attributes
-    ): Unit = js.native
     def logShare(method: String, contentName: String, contentType: String, contentId: String): Unit = js.native
     def logShare(
       method: String,
@@ -323,6 +181,32 @@ object anon {
       contentId: String,
       attributes: Attributes
     ): Unit = js.native
+    def logShare(method: String, contentName: String, contentType: String, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: String, contentType: Unit, contentId: String): Unit = js.native
+    def logShare(method: String, contentName: String, contentType: Unit, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: String, contentType: Unit, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: String): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: String, contentId: String): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: String, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: String, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: Unit, contentId: String): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: Unit, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: String, contentName: Unit, contentType: Unit, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: String): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: String): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: String, contentId: String): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: String, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: String, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: Unit, contentId: String): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: Unit, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: String, contentType: Unit, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: String): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: String, contentId: String): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: String, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: String, contentId: Unit, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: Unit, contentId: String): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: Unit, contentId: String, attributes: Attributes): Unit = js.native
+    def logShare(method: Unit, contentName: Unit, contentType: Unit, contentId: Unit, attributes: Attributes): Unit = js.native
     
     /**
       * Sends the Sign Up tracking event.
@@ -336,12 +220,12 @@ object anon {
       * @param attributes Any additional user-defined attributes to be logged.
       */
     def logSignUp(): Unit = js.native
-    def logSignUp(method: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
-    def logSignUp(method: js.UndefOr[scala.Nothing], success: Boolean): Unit = js.native
-    def logSignUp(method: js.UndefOr[scala.Nothing], success: Boolean, attributes: Attributes): Unit = js.native
     def logSignUp(method: String): Unit = js.native
-    def logSignUp(method: String, success: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logSignUp(method: String, success: Boolean): Unit = js.native
     def logSignUp(method: String, success: Boolean, attributes: Attributes): Unit = js.native
+    def logSignUp(method: String, success: Unit, attributes: Attributes): Unit = js.native
+    def logSignUp(method: Unit, success: Boolean): Unit = js.native
+    def logSignUp(method: Unit, success: Boolean, attributes: Attributes): Unit = js.native
+    def logSignUp(method: Unit, success: Unit, attributes: Attributes): Unit = js.native
   }
 }

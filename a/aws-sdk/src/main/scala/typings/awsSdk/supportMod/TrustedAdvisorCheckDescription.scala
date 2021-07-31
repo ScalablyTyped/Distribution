@@ -2,36 +2,34 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedAdvisorCheckDescription extends StObject {
   
   /**
     * The category of the Trusted Advisor check.
     */
-  var category: String = js.native
+  var category: String
   
   /**
     * The description of the Trusted Advisor check, which includes the alert criteria and recommended operations (contains HTML markup).
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The unique identifier for the Trusted Advisor check.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The column headings for the data returned by the Trusted Advisor check. The order of the headings corresponds to the order of the data in the Metadata element of the TrustedAdvisorResourceDetail for the check. Metadata contains all the data that is shown in the Excel download, even in those cases where the UI shows just summary data. 
     */
-  var metadata: StringList = js.native
+  var metadata: StringList
   
   /**
     * The display name for the Trusted Advisor check.
     */
-  var name: String = js.native
+  var name: String
 }
 object TrustedAdvisorCheckDescription {
   

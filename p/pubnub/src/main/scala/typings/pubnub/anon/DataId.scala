@@ -4,24 +4,22 @@ import typings.pubnub.pubnubStrings.delete
 import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataId extends StObject {
   
-  var data: Id = js.native
+  var data: Id
   
-  var event: delete = js.native
+  var event: delete
   
-  var `type`: uuid = js.native
+  var `type`: uuid
 }
 object DataId {
   
   @scala.inline
-  def apply(data: Id, event: delete, `type`: uuid): DataId = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(data: Id): DataId = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
+    __obj.updateDynamic("type")("uuid")
     __obj.asInstanceOf[DataId]
   }
   

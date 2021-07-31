@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("osrm", JSImport.Namespace)
 @js.native
-class ^ protected () extends OSRM {
+class ^ protected ()
+  extends StObject
+     with OSRM {
   def this(name: String) = this()
 }
 @JSImport("osrm", JSImport.Namespace)

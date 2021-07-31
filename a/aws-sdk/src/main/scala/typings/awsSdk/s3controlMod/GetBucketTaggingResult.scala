@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketTaggingResult extends StObject {
   
   /**
     * The tags set of the Outposts bucket.
     */
-  var TagSet: S3TagSet = js.native
+  var TagSet: S3TagSet
 }
 object GetBucketTaggingResult {
   

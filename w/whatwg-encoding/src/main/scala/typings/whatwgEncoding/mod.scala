@@ -3,24 +3,23 @@ package typings.whatwgEncoding
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("whatwg-encoding", "decode")
+  @JSImport("whatwg-encoding", JSImport.Namespace)
   @js.native
-  def decode(buffer: Buffer, fallbackEncodingName: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("whatwg-encoding", "getBOMEncoding")
-  @js.native
-  def getBOMEncoding(buffer: Buffer): String | Null = js.native
+  @scala.inline
+  def decode(buffer: Buffer, fallbackEncodingName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], fallbackEncodingName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("whatwg-encoding", "isSupported")
-  @js.native
-  def isSupported(name: String): Boolean = js.native
+  @scala.inline
+  def getBOMEncoding(buffer: Buffer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBOMEncoding")(buffer.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("whatwg-encoding", "labelToName")
-  @js.native
-  def labelToName(label: String): String | Null = js.native
+  @scala.inline
+  def isSupported(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def labelToName(label: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("labelToName")(label.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

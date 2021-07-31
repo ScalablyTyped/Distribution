@@ -2,20 +2,18 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON request template for moving ChromeOs Device to given OU in Directory
   * Devices API.
   */
-@js.native
 trait SchemaChromeOsMoveDevicesToOu extends StObject {
   
   /**
     * ChromeOs Devices to be moved to OU
     */
-  var deviceIds: js.UndefOr[js.Array[String]] = js.native
+  var deviceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaChromeOsMoveDevicesToOu {
   

@@ -3,24 +3,23 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.managed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedStarterTemplate
-  extends BaseStarterTemplate
+  extends StObject
+     with BaseStarterTemplate
      with StarterTemplate {
   
-  var id: String = js.native
+  var id: String
   
-  var `type`: managed = js.native
+  var `type`: managed
 }
 object ManagedStarterTemplate {
   
   @scala.inline
-  def apply(id: String, name: String, projectType: ProjectType, `type`: managed): ManagedStarterTemplate = {
+  def apply(id: String, name: String, projectType: ProjectType): ManagedStarterTemplate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("managed")
     __obj.asInstanceOf[ManagedStarterTemplate]
   }
   

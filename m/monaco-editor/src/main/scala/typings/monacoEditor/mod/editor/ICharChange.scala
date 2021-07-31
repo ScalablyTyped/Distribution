@@ -2,19 +2,19 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICharChange extends IChange {
+trait ICharChange
+  extends StObject
+     with IChange {
   
-  val modifiedEndColumn: Double = js.native
+  val modifiedEndColumn: Double
   
-  val modifiedStartColumn: Double = js.native
+  val modifiedStartColumn: Double
   
-  val originalEndColumn: Double = js.native
+  val originalEndColumn: Double
   
-  val originalStartColumn: Double = js.native
+  val originalStartColumn: Double
 }
 object ICharChange {
   

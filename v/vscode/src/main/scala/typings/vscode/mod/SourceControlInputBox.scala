@@ -2,26 +2,24 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceControlInputBox extends StObject {
   
   /**
     * A string to show as placeholder in the input box to guide the user.
     */
-  var placeholder: String = js.native
+  var placeholder: String
   
   /**
     * Setter and getter for the contents of the input box.
     */
-  var value: String = js.native
+  var value: String
   
   /**
     * Controls whether the input box is visible (default is `true`).
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object SourceControlInputBox {
   

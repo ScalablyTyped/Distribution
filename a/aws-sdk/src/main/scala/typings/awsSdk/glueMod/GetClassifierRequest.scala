@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClassifierRequest extends StObject {
   
   /**
     * Name of the classifier to retrieve.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object GetClassifierRequest {
   

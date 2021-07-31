@@ -12,35 +12,33 @@ import typings.std.Array
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("cli-table2", JSImport.Namespace)
   @js.native
-  val ^ : CliTable2 = js.native
+  val ^ : js.Object & CliTable2 = js.native
   
   type Cell = CellValue | CellOptions
   
-  @js.native
   trait CellOptions extends StObject {
     
-    var chars: js.UndefOr[PartialRecordCharNamestri] = js.native
+    var chars: js.UndefOr[PartialRecordCharNamestri] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var content: CellValue = js.native
+    var content: CellValue
     
-    var hAlign: js.UndefOr[HorizontalAlignment] = js.native
+    var hAlign: js.UndefOr[HorizontalAlignment] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[Head] = js.native
+    var style: js.UndefOr[Head] = js.undefined
     
-    var truncate: js.UndefOr[String] = js.native
+    var truncate: js.UndefOr[String] = js.undefined
     
-    var vAlign: js.UndefOr[VerticalAlignment] = js.native
+    var vAlign: js.UndefOr[VerticalAlignment] = js.undefined
   }
   object CellOptions {
     
@@ -176,7 +174,8 @@ object mod extends Shortcut {
   
   @js.native
   trait CliTable2
-    extends Instantiable0[Table]
+    extends StObject
+       with Instantiable0[Table]
        with Instantiable1[/* options */ TableConstructorOptions, Table]
   
   type CrossTable = GenericTable[CrossTableRow]
@@ -184,7 +183,9 @@ object mod extends Shortcut {
   type CrossTableRow = StringDictionary[js.Array[Cell]]
   
   @js.native
-  trait GenericTable[T] extends Array[T] {
+  trait GenericTable[T]
+    extends StObject
+       with Array[T] {
     
     var options: TableInstanceOptions = js.native
     
@@ -216,26 +217,25 @@ object mod extends Shortcut {
   type Table = HorizontalTable | VerticalTable | CrossTable
   
   /* Inlined parent std.Partial<cli-table2.cli-table2.TableOptions> */
-  @js.native
   trait TableConstructorOptions extends StObject {
     
-    var chars: js.UndefOr[PartialRecordCharNamestri] = js.native
+    var chars: js.UndefOr[PartialRecordCharNamestri] = js.undefined
     
-    var colAligns: js.UndefOr[js.Array[HorizontalAlignment]] = js.native
+    var colAligns: js.UndefOr[js.Array[HorizontalAlignment]] = js.undefined
     
-    var colWidths: js.UndefOr[js.Array[Double | Null]] = js.native
+    var colWidths: js.UndefOr[js.Array[Double | Null]] = js.undefined
     
-    var head: js.UndefOr[js.Array[Cell]] = js.native
+    var head: js.UndefOr[js.Array[Cell]] = js.undefined
     
-    var rowAligns: js.UndefOr[js.Array[VerticalAlignment]] = js.native
+    var rowAligns: js.UndefOr[js.Array[VerticalAlignment]] = js.undefined
     
-    var rowHeights: js.UndefOr[js.Array[Double | Null]] = js.native
+    var rowHeights: js.UndefOr[js.Array[Double | Null]] = js.undefined
     
-    var style: js.UndefOr[Partial[Border]] = js.native
+    var style: js.UndefOr[Partial[Border]] = js.undefined
     
-    var truncate: js.UndefOr[String] = js.native
+    var truncate: js.UndefOr[String] = js.undefined
     
-    var wordWrap: js.UndefOr[Boolean] = js.native
+    var wordWrap: js.UndefOr[Boolean] = js.undefined
   }
   object TableConstructorOptions {
     
@@ -319,12 +319,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait TableInstanceOptions extends TableOptions {
+  trait TableInstanceOptions
+    extends StObject
+       with TableOptions {
     
-    var chars: RecordCharNamestring = js.native
+    var chars: RecordCharNamestring
     
-    var style: Border = js.native
+    var style: Border
   }
   object TableInstanceOptions {
     
@@ -355,22 +356,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TableOptions extends StObject {
     
-    var colAligns: js.Array[HorizontalAlignment] = js.native
+    var colAligns: js.Array[HorizontalAlignment]
     
-    var colWidths: js.Array[Double | Null] = js.native
+    var colWidths: js.Array[Double | Null]
     
-    var head: js.Array[Cell] = js.native
+    var head: js.Array[Cell]
     
-    var rowAligns: js.Array[VerticalAlignment] = js.native
+    var rowAligns: js.Array[VerticalAlignment]
     
-    var rowHeights: js.Array[Double | Null] = js.native
+    var rowHeights: js.Array[Double | Null]
     
-    var truncate: String = js.native
+    var truncate: String
     
-    var wordWrap: Boolean = js.native
+    var wordWrap: Boolean
   }
   object TableOptions {
     
@@ -451,8 +451,8 @@ object mod extends Shortcut {
   
   type VerticalTableRow = StringDictionary[Cell]
   
-  type _To = CliTable2
+  type _To = js.Object & CliTable2
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CliTable2 = ^
+  override def _to: js.Object & CliTable2 = ^
 }

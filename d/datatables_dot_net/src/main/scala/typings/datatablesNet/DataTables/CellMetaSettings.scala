@@ -2,17 +2,15 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellMetaSettings extends StObject {
   
-  var col: Double = js.native
+  var col: Double
   
-  var row: Double = js.native
+  var row: Double
   
-  var settings: Settings = js.native
+  var settings: Settings
 }
 object CellMetaSettings {
   

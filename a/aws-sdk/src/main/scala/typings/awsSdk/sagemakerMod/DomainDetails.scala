@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDetails extends StObject {
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * The domain's Amazon Resource Name (ARN).
     */
-  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.native
+  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.undefined
   
   /**
     * The domain ID.
     */
-  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
+  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.undefined
   
   /**
     * The domain name.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.sagemakerMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.sagemakerMod.DomainName] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[DomainStatus] = js.native
+  var Status: js.UndefOr[DomainStatus] = js.undefined
   
   /**
     * The domain's URL.
     */
-  var Url: js.UndefOr[String1024] = js.native
+  var Url: js.UndefOr[String1024] = js.undefined
 }
 object DomainDetails {
   

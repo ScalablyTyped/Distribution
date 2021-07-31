@@ -6,37 +6,64 @@ import typings.storybookAddonKnobs.typesMod.KnobType
 import typings.storybookChannels.mod.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object knobManagerMod {
   
   @JSImport("@storybook/addon-knobs/dist/KnobManager", JSImport.Default)
   @js.native
-  class default () extends KnobManager
-  
-  @js.native
-  trait KnobManager extends StObject {
+  class default ()
+    extends StObject
+       with KnobManager {
     
-    def _mayCallChannel(): Unit = js.native
+    /* CompleteClass */
+    override def _mayCallChannel(): Unit = js.native
     
+    /* CompleteClass */
     var calling: Boolean = js.native
     
-    var channel: js.UndefOr[Channel] = js.native
+    /* CompleteClass */
+    override def getKnobValue(hasValue: Knob[js.Any]): js.Any = js.native
     
-    def getKnobValue(hasValue: Knob[_]): js.Any = js.native
-    
-    def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
+    /* CompleteClass */
+    override def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
         /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
       ] = js.native
     
+    /* CompleteClass */
     var knobStore: typings.storybookAddonKnobs.knobStoreMod.default = js.native
     
+    /* CompleteClass */
     var options: KnobManagerOptions = js.native
     
-    def setChannel(channel: Channel): Unit = js.native
+    /* CompleteClass */
+    override def setChannel(channel: Channel): Unit = js.native
     
-    def setOptions(options: KnobManagerOptions): Unit = js.native
+    /* CompleteClass */
+    override def setOptions(options: KnobManagerOptions): Unit = js.native
+  }
+  
+  trait KnobManager extends StObject {
+    
+    def _mayCallChannel(): Unit
+    
+    var calling: Boolean
+    
+    var channel: js.UndefOr[Channel] = js.undefined
+    
+    def getKnobValue(hasValue: Knob[js.Any]): js.Any
+    
+    def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
+        /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
+      ]
+    
+    var knobStore: typings.storybookAddonKnobs.knobStoreMod.default
+    
+    var options: KnobManagerOptions
+    
+    def setChannel(channel: Channel): Unit
+    
+    def setOptions(options: KnobManagerOptions): Unit
   }
   object KnobManager {
     
@@ -44,7 +71,7 @@ object knobManagerMod {
     def apply(
       _mayCallChannel: () => Unit,
       calling: Boolean,
-      getKnobValue: Knob[_] => js.Any,
+      getKnobValue: Knob[js.Any] => js.Any,
       knob: (String, Knob[js.Any]) => Mutable[
           /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
         ],
@@ -70,7 +97,7 @@ object knobManagerMod {
       def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
       @scala.inline
-      def setGetKnobValue(value: Knob[_] => js.Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
+      def setGetKnobValue(value: Knob[js.Any] => js.Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setKnob(
@@ -96,14 +123,13 @@ object knobManagerMod {
     }
   }
   
-  @js.native
   trait KnobManagerOptions extends StObject {
     
-    var disableDebounce: js.UndefOr[Boolean] = js.native
+    var disableDebounce: js.UndefOr[Boolean] = js.undefined
     
-    var disableForceUpdate: js.UndefOr[Boolean] = js.native
+    var disableForceUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var escapeHTML: js.UndefOr[Boolean] = js.native
+    var escapeHTML: js.UndefOr[Boolean] = js.undefined
   }
   object KnobManagerOptions {
     

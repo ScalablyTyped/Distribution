@@ -4,15 +4,13 @@ import typings.atom.atomStrings.Cursor
 import typings.atom.atomStrings.Word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `21` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: Word | Cursor = js.native
+  var value: Word | Cursor
 }
 object `21` {
   

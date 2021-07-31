@@ -5,28 +5,28 @@ import typings.marked.markedStrings.indented
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Code extends Token {
+trait Code
+  extends StObject
+     with Token {
   
-  var codeBlockStyle: js.UndefOr[indented] = js.native
+  var codeBlockStyle: js.UndefOr[indented] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: code = js.native
+  var `type`: code
 }
 object Code {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: code): Code = {
+  def apply(raw: String, text: String): Code = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Code]
   }
   

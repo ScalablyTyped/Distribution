@@ -2,11 +2,12 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Feature extends KVO {
+trait Feature
+  extends StObject
+     with KVO {
   
   def forEachOverlay(callback: forEachOverlayCallback): Unit = js.native
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestResult extends StObject {
   
   /** This is present when the suggestion indicates a person. It contains more information about the person - like their email ID, name etc. */
-  var peopleSuggestion: js.UndefOr[PeopleSuggestion] = js.native
+  var peopleSuggestion: js.UndefOr[PeopleSuggestion] = js.undefined
   
   /** This field will be present if the suggested query is a word/phrase completion. */
-  var querySuggestion: js.UndefOr[js.Any] = js.native
+  var querySuggestion: js.UndefOr[js.Any] = js.undefined
   
   /** The source of the suggestion. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /** The suggested query that will be used for search, when the user clicks on the suggestion */
-  var suggestedQuery: js.UndefOr[String] = js.native
+  var suggestedQuery: js.UndefOr[String] = js.undefined
 }
 object SuggestResult {
   

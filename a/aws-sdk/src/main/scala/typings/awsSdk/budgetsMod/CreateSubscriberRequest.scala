@@ -2,31 +2,29 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSubscriberRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget that you want to create a subscriber for.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The name of the budget that you want to subscribe to. Budget names must be unique within an account.
     */
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
     * The notification that you want to create a subscriber for.
     */
-  var Notification: typings.awsSdk.budgetsMod.Notification = js.native
+  var Notification: typings.awsSdk.budgetsMod.Notification
   
   /**
     * The subscriber that you want to associate with a budget notification.
     */
-  var Subscriber: typings.awsSdk.budgetsMod.Subscriber = js.native
+  var Subscriber: typings.awsSdk.budgetsMod.Subscriber
 }
 object CreateSubscriberRequest {
   

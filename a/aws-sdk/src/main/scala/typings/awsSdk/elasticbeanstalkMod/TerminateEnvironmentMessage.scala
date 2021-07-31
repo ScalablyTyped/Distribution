@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateEnvironmentMessage extends StObject {
   
   /**
     * The ID of the environment to terminate.  Condition: You must specify either this or an EnvironmentName, or both. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
     */
-  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.native
+  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.undefined
   
   /**
     * The name of the environment to terminate.  Condition: You must specify either this or an EnvironmentId, or both. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * Terminates the target environment even if another environment in the same group is dependent on it.
     */
-  var ForceTerminate: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ForceTerminate] = js.native
+  var ForceTerminate: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ForceTerminate] = js.undefined
   
   /**
     * Indicates whether the associated AWS resources should shut down when the environment is terminated:    true: The specified environment as well as the associated AWS resources, such as Auto Scaling group and LoadBalancer, are terminated.    false: AWS Elastic Beanstalk resource management is removed from the environment, but the AWS resources continue to operate.    For more information, see the  AWS Elastic Beanstalk User Guide.    Default: true   Valid Values: true | false 
     */
-  var TerminateResources: js.UndefOr[TerminateEnvironmentResources] = js.native
+  var TerminateResources: js.UndefOr[TerminateEnvironmentResources] = js.undefined
 }
 object TerminateEnvironmentMessage {
   

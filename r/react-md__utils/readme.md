@@ -10,9 +10,9 @@ General utils for react-md.
 | ------------------ | :-------------: |
 | Full name          | @react-md/utils |
 | Keywords           | accessibility, a11y, react-md, utils, throttled events, rtl, right to left websites, safari scroll fix |
-| # releases         | 28 |
+| # releases         | 34 |
 | # dependents       | 30 |
-| # downloads        | 12120 |
+| # downloads        | 30736 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.ydnDb.DatabaseSchemaJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Storage extends DbOperator {
+trait Storage
+  extends StObject
+     with DbOperator {
   
   def addEventListener(`type`: js.Array[EventType], handler: js.Function1[/* event */ js.Any, Unit]): js.Any = js.native
   def addEventListener(`type`: js.Array[EventType], handler: js.Function1[/* event */ js.Any, Unit], capture: Boolean): js.Any = js.native
@@ -46,9 +47,9 @@ trait Storage extends DbOperator {
   ): Request = js.native
   
   def search(catalog_name: String, query: String): Request = js.native
-  def search(catalog_name: String, query: String, limit: js.UndefOr[scala.Nothing], threshold: Double): Request = js.native
   def search(catalog_name: String, query: String, limit: Double): Request = js.native
   def search(catalog_name: String, query: String, limit: Double, threshold: Double): Request = js.native
+  def search(catalog_name: String, query: String, limit: Unit, threshold: Double): Request = js.native
   
   def setName(name: String): js.Any = js.native
   

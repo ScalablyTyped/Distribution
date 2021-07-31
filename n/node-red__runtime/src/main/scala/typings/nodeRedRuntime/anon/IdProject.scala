@@ -3,19 +3,17 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.mod.ProjectUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdProject extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var project: js.Object = js.native
+  var project: js.Object
   
-  var req: js.UndefOr[js.Object] = js.native
+  var req: js.UndefOr[js.Object] = js.undefined
   
-  var user: js.UndefOr[ProjectUser] = js.native
+  var user: js.UndefOr[ProjectUser] = js.undefined
 }
 object IdProject {
   

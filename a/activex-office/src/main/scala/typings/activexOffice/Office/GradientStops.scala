@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,9 +24,9 @@ trait GradientStops extends StObject {
     * @param Index [Index=-1]
     */
   def Insert(RGB: Double, Position: Double): Unit = js.native
-  def Insert(RGB: Double, Position: Double, Transparency: js.UndefOr[scala.Nothing], Index: Double): Unit = js.native
   def Insert(RGB: Double, Position: Double, Transparency: Double): Unit = js.native
   def Insert(RGB: Double, Position: Double, Transparency: Double, Index: Double): Unit = js.native
+  def Insert(RGB: Double, Position: Double, Transparency: Unit, Index: Double): Unit = js.native
   
   /**
     * @param Transparency [Transparency=0]
@@ -35,31 +34,13 @@ trait GradientStops extends StObject {
     * @param Brightness [Brightness=0]
     */
   def Insert2(RGB: Double, Position: Double): Unit = js.native
-  def Insert2(
-    RGB: Double,
-    Position: Double,
-    Transparency: js.UndefOr[scala.Nothing],
-    Index: js.UndefOr[scala.Nothing],
-    Brightness: Double
-  ): Unit = js.native
-  def Insert2(RGB: Double, Position: Double, Transparency: js.UndefOr[scala.Nothing], Index: Double): Unit = js.native
-  def Insert2(
-    RGB: Double,
-    Position: Double,
-    Transparency: js.UndefOr[scala.Nothing],
-    Index: Double,
-    Brightness: Double
-  ): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double): Unit = js.native
-  def Insert2(
-    RGB: Double,
-    Position: Double,
-    Transparency: Double,
-    Index: js.UndefOr[scala.Nothing],
-    Brightness: Double
-  ): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double, Index: Double): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double, Index: Double, Brightness: Double): Unit = js.native
+  def Insert2(RGB: Double, Position: Double, Transparency: Double, Index: Unit, Brightness: Double): Unit = js.native
+  def Insert2(RGB: Double, Position: Double, Transparency: Unit, Index: Double): Unit = js.native
+  def Insert2(RGB: Double, Position: Double, Transparency: Unit, Index: Double, Brightness: Double): Unit = js.native
+  def Insert2(RGB: Double, Position: Double, Transparency: Unit, Index: Unit, Brightness: Double): Unit = js.native
   
   def Item(Index: Double): GradientStop = js.native
 }

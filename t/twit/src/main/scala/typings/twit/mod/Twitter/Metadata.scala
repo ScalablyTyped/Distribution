@@ -2,29 +2,27 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var completed_in: js.UndefOr[Double] = js.native
+  var completed_in: js.UndefOr[Double] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var max_id: js.UndefOr[Double] = js.native
+  var max_id: js.UndefOr[Double] = js.undefined
   
-  var max_id_str: js.UndefOr[String] = js.native
+  var max_id_str: js.UndefOr[String] = js.undefined
   
-  var next_results: js.UndefOr[String] = js.native
+  var next_results: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var refresh_url: js.UndefOr[String] = js.native
+  var refresh_url: js.UndefOr[String] = js.undefined
   
-  var since_id: js.UndefOr[Double] = js.native
+  var since_id: js.UndefOr[Double] = js.undefined
   
-  var since_id_str: js.UndefOr[String] = js.native
+  var since_id_str: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

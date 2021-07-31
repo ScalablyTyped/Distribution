@@ -10,9 +10,9 @@ Sometimes you want to reload your app bundle during app runtime. This package wi
 | ------------------ | :-------------: |
 | Full name          | react-native-restart |
 | Keywords           | react-native, ios, android |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 1100407 |
+| # releases         | 13 |
+| # dependents       | 6 |
+| # downloads        | 1284623 |
 | # stars            | 3 |
 
 ## Links

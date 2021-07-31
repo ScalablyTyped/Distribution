@@ -2,17 +2,15 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionChannelWithAddress extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var useCustomAddress: Boolean = js.native
+  var useCustomAddress: Boolean
 }
 object SubscriptionChannelWithAddress {
   

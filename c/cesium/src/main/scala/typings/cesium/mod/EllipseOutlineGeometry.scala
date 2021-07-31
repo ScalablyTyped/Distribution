@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.NumberOfVerticalLines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EllipseOutlineGeometry")
@@ -13,22 +12,21 @@ class EllipseOutlineGeometry protected () extends Packable {
 }
 object EllipseOutlineGeometry {
   
-  /* static member */
-  @JSImport("cesium", "EllipseOutlineGeometry.createGeometry")
+  @JSImport("cesium", "EllipseOutlineGeometry")
   @js.native
-  def createGeometry(ellipseGeometry: EllipseOutlineGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "EllipseOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): EllipseOutlineGeometry = js.native
-  @JSImport("cesium", "EllipseOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: EllipseOutlineGeometry): EllipseOutlineGeometry = js.native
-  @JSImport("cesium", "EllipseOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): EllipseOutlineGeometry = js.native
-  @JSImport("cesium", "EllipseOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: EllipseOutlineGeometry): EllipseOutlineGeometry = js.native
+  @scala.inline
+  def createGeometry(ellipseGeometry: EllipseOutlineGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(ellipseGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): EllipseOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[EllipseOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): EllipseOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[EllipseOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: EllipseOutlineGeometry): EllipseOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[EllipseOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: EllipseOutlineGeometry): EllipseOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[EllipseOutlineGeometry]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPhoneNumbersOptedOutResponse extends StObject {
   
   /**
     * A NextToken string is returned when you call the ListPhoneNumbersOptedOut action if additional records are available after the first page of results.
     */
-  var nextToken: js.UndefOr[java.lang.String] = js.native
+  var nextToken: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * A list of phone numbers that are opted out of receiving SMS messages. The list is paginated, and each page can contain up to 100 phone numbers.
     */
-  var phoneNumbers: js.UndefOr[PhoneNumberList] = js.native
+  var phoneNumbers: js.UndefOr[PhoneNumberList] = js.undefined
 }
 object ListPhoneNumbersOptedOutResponse {
   

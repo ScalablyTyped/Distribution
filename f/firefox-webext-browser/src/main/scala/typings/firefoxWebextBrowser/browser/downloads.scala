@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object downloads {
   
-  @js.native
   trait BooleanDelta extends StObject {
     
-    var current: js.UndefOr[Boolean] = js.native
+    var current: js.UndefOr[Boolean] = js.undefined
     
-    var previous: js.UndefOr[Boolean] = js.native
+    var previous: js.UndefOr[Boolean] = js.undefined
   }
   object BooleanDelta {
     
@@ -97,12 +95,11 @@ object downloads {
     def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
   }
   
-  @js.native
   trait DoubleDelta extends StObject {
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var previous: js.UndefOr[Double] = js.native
+    var previous: js.UndefOr[Double] = js.undefined
   }
   object DoubleDelta {
     
@@ -129,62 +126,61 @@ object downloads {
     }
   }
   
-  @js.native
   trait DownloadItem extends StObject {
     
-    var byExtensionId: js.UndefOr[String] = js.native
+    var byExtensionId: js.UndefOr[String] = js.undefined
     
-    var byExtensionName: js.UndefOr[String] = js.native
+    var byExtensionName: js.UndefOr[String] = js.undefined
     
     /** Number of bytes received so far from the host, without considering file compression. */
-    var bytesReceived: Double = js.native
+    var bytesReceived: Double
     
-    var canResume: Boolean = js.native
+    var canResume: Boolean
     
     /** Indication of whether this download is thought to be safe or known to be suspicious. */
-    var danger: DangerType = js.native
+    var danger: DangerType
     
     /** Number of milliseconds between the unix epoch and when this download ended. */
-    var endTime: js.UndefOr[String] = js.native
+    var endTime: js.UndefOr[String] = js.undefined
     
     /** Number indicating why a download was interrupted. */
-    var error: js.UndefOr[InterruptReason] = js.native
+    var error: js.UndefOr[InterruptReason] = js.undefined
     
-    var estimatedEndTime: js.UndefOr[String] = js.native
+    var estimatedEndTime: js.UndefOr[String] = js.undefined
     
-    var exists: Boolean = js.native
+    var exists: Boolean
     
     /** Number of bytes in the whole file post-decompression, or -1 if unknown. */
-    var fileSize: Double = js.native
+    var fileSize: Double
     
     /** Absolute local path. */
-    var filename: String = js.native
+    var filename: String
     
     /** An identifier that is persistent across browser sessions. */
-    var id: Double = js.native
+    var id: Double
     
     /** False if this download is recorded in the history, true if it is not recorded. */
-    var incognito: Boolean = js.native
+    var incognito: Boolean
     
     /** The file's MIME type. */
-    var mime: js.UndefOr[String] = js.native
+    var mime: js.UndefOr[String] = js.undefined
     
     /** True if the download has stopped reading data from the host, but kept the connection open. */
-    var paused: Boolean = js.native
+    var paused: Boolean
     
-    var referrer: js.UndefOr[String] = js.native
+    var referrer: js.UndefOr[String] = js.undefined
     
     /** Number of milliseconds between the unix epoch and when this download began. */
-    var startTime: String = js.native
+    var startTime: String
     
     /** Indicates whether the download is progressing, interrupted, or complete. */
-    var state: State = js.native
+    var state: State
     
     /** Number of bytes in the whole file, without considering file compression, or -1 if unknown. */
-    var totalBytes: Double = js.native
+    var totalBytes: Double
     
     /** Absolute URL. */
-    var url: String = js.native
+    var url: String
   }
   object DownloadItem {
     
@@ -295,40 +291,39 @@ object downloads {
   }
   
   /** What to download and how. */
-  @js.native
   trait DownloadOptions extends StObject {
     
     /**
       * When this flag is set to `true`, then the browser will allow downloads to proceed after encountering HTTP errors such as `404 Not Found`.
       */
-    var allowHttpErrors: js.UndefOr[Boolean] = js.native
+    var allowHttpErrors: js.UndefOr[Boolean] = js.undefined
     
     /** Post body. */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var conflictAction: js.UndefOr[FilenameConflictAction] = js.native
+    var conflictAction: js.UndefOr[FilenameConflictAction] = js.undefined
     
     /** A file path relative to the Downloads directory to contain the downloaded file. */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Extra HTTP headers to send with the request if the URL uses the HTTP[s] protocol. Each header is represented as a dictionary containing the keys `name` and either `value` or `binaryValue`, restricted to those allowed by XMLHttpRequest.
       */
-    var headers: js.UndefOr[js.Array[DownloadOptionsHeaders]] = js.native
+    var headers: js.UndefOr[js.Array[DownloadOptionsHeaders]] = js.undefined
     
     /** Whether to associate the download with a private browsing session. */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
     
     /** The HTTP method to use if the URL uses the HTTP[S] protocol. */
-    var method: js.UndefOr[DownloadOptionsMethod] = js.native
+    var method: js.UndefOr[DownloadOptionsMethod] = js.undefined
     
     /**
       * Use a file-chooser to allow the user to select a filename. If the option is not specified, the file chooser will be shown only if the Firefox "Always ask you where to save files" option is enabled (i.e. the pref `browser.download.useDownloadDir` is set to `false`).
       */
-    var saveAs: js.UndefOr[Boolean] = js.native
+    var saveAs: js.UndefOr[Boolean] = js.undefined
     
     /** The URL to download. */
-    var url: String = js.native
+    var url: String
   }
   object DownloadOptions {
     
@@ -397,14 +392,13 @@ object downloads {
     }
   }
   
-  @js.native
   trait DownloadOptionsHeaders extends StObject {
     
     /** Name of the HTTP header. */
-    var name: String = js.native
+    var name: String
     
     /** Value of the HTTP header. */
-    var value: String = js.native
+    var value: String
   }
   object DownloadOptionsHeaders {
     
@@ -443,85 +437,84 @@ object downloads {
   /**
     * Parameters that combine to specify a predicate that can be used to select a set of downloads. Used for example in search() and erase()
     */
-  @js.native
   trait DownloadQuery extends StObject {
     
     /** Number of bytes received so far from the host, without considering file compression. */
-    var bytesReceived: js.UndefOr[Double] = js.native
+    var bytesReceived: js.UndefOr[Double] = js.undefined
     
     /** Indication of whether this download is thought to be safe or known to be suspicious. */
-    var danger: js.UndefOr[DangerType] = js.native
+    var danger: js.UndefOr[DangerType] = js.undefined
     
-    var endTime: js.UndefOr[String] = js.native
+    var endTime: js.UndefOr[String] = js.undefined
     
     /** Limits results to downloads that ended after the given ms since the epoch. */
-    var endedAfter: js.UndefOr[DownloadTime] = js.native
+    var endedAfter: js.UndefOr[DownloadTime] = js.undefined
     
     /** Limits results to downloads that ended before the given ms since the epoch. */
-    var endedBefore: js.UndefOr[DownloadTime] = js.native
+    var endedBefore: js.UndefOr[DownloadTime] = js.undefined
     
     /** Why a download was interrupted. */
-    var error: js.UndefOr[InterruptReason] = js.native
+    var error: js.UndefOr[InterruptReason] = js.undefined
     
-    var exists: js.UndefOr[Boolean] = js.native
+    var exists: js.UndefOr[Boolean] = js.undefined
     
     /** Number of bytes in the whole file post-decompression, or -1 if unknown. */
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
     /** Absolute local path. */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Limits results to DownloadItems whose `filename` matches the given regular expression. */
-    var filenameRegex: js.UndefOr[String] = js.native
+    var filenameRegex: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
     /**
       * Setting this integer limits the number of results. Otherwise, all matching DownloadItems will be returned.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /** The file's MIME type. */
-    var mime: js.UndefOr[String] = js.native
+    var mime: js.UndefOr[String] = js.undefined
     
     /**
       * Setting elements of this array to DownloadItem properties in order to sort the search results. For example, setting `orderBy='startTime'` sorts the DownloadItems by their start time in ascending order. To specify descending order, prefix `orderBy` with a hyphen: '-startTime'.
       */
-    var orderBy: js.UndefOr[js.Array[String]] = js.native
+    var orderBy: js.UndefOr[js.Array[String]] = js.undefined
     
     /** True if the download has stopped reading data from the host, but kept the connection open. */
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This array of search terms limits results to DownloadItems whose `filename` or `url` contain all of the search terms that do not begin with a dash '-' and none of the search terms that do begin with a dash.
       */
-    var query: js.UndefOr[js.Array[String]] = js.native
+    var query: js.UndefOr[js.Array[String]] = js.undefined
     
-    var startTime: js.UndefOr[String] = js.native
+    var startTime: js.UndefOr[String] = js.undefined
     
     /** Limits results to downloads that started after the given ms since the epoch. */
-    var startedAfter: js.UndefOr[DownloadTime] = js.native
+    var startedAfter: js.UndefOr[DownloadTime] = js.undefined
     
     /** Limits results to downloads that started before the given ms since the epoch. */
-    var startedBefore: js.UndefOr[DownloadTime] = js.native
+    var startedBefore: js.UndefOr[DownloadTime] = js.undefined
     
     /** Indicates whether the download is progressing, interrupted, or complete. */
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
     
     /** Number of bytes in the whole file, without considering file compression, or -1 if unknown. */
-    var totalBytes: js.UndefOr[Double] = js.native
+    var totalBytes: js.UndefOr[Double] = js.undefined
     
     /** Limits results to downloads whose totalBytes is greater than the given integer. */
-    var totalBytesGreater: js.UndefOr[Double] = js.native
+    var totalBytesGreater: js.UndefOr[Double] = js.undefined
     
     /** Limits results to downloads whose totalBytes is less than the given integer. */
-    var totalBytesLess: js.UndefOr[Double] = js.native
+    var totalBytesLess: js.UndefOr[Double] = js.undefined
     
     /** Absolute URL. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Limits results to DownloadItems whose `url` matches the given regular expression. */
-    var urlRegex: js.UndefOr[String] = js.native
+    var urlRegex: js.UndefOr[String] = js.undefined
   }
   object DownloadQuery {
     
@@ -716,13 +709,12 @@ object downloads {
     def uniquify: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify = "uniquify".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify]
   }
   
-  @js.native
   trait GetFileIconOptions extends StObject {
     
     /**
       * The size of the icon. The returned icon will be square with dimensions size * size pixels. The default size for the icon is 32x32 pixels.
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object GetFileIconOptions {
     
@@ -845,48 +837,47 @@ object downloads {
     def USER_SHUTDOWN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN = "USER_SHUTDOWN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN]
   }
   
-  @js.native
   trait OnChangedDownloadDelta extends StObject {
     
-    var canResume: js.UndefOr[BooleanDelta] = js.native
+    var canResume: js.UndefOr[BooleanDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `danger`. */
-    var danger: js.UndefOr[StringDelta] = js.native
+    var danger: js.UndefOr[StringDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `endTime`. */
-    var endTime: js.UndefOr[StringDelta] = js.native
+    var endTime: js.UndefOr[StringDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `error`. */
-    var error: js.UndefOr[StringDelta] = js.native
+    var error: js.UndefOr[StringDelta] = js.undefined
     
-    var exists: js.UndefOr[BooleanDelta] = js.native
+    var exists: js.UndefOr[BooleanDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `fileSize`. */
-    var fileSize: js.UndefOr[DoubleDelta] = js.native
+    var fileSize: js.UndefOr[DoubleDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `filename`. */
-    var filename: js.UndefOr[StringDelta] = js.native
+    var filename: js.UndefOr[StringDelta] = js.undefined
     
     /** The `id` of the DownloadItem that changed. */
-    var id: Double = js.native
+    var id: Double
     
     /** Describes a change in a DownloadItem's `mime`. */
-    var mime: js.UndefOr[StringDelta] = js.native
+    var mime: js.UndefOr[StringDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `paused`. */
-    var paused: js.UndefOr[BooleanDelta] = js.native
+    var paused: js.UndefOr[BooleanDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `startTime`. */
-    var startTime: js.UndefOr[StringDelta] = js.native
+    var startTime: js.UndefOr[StringDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `state`. */
-    var state: js.UndefOr[StringDelta] = js.native
+    var state: js.UndefOr[StringDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `totalBytes`. */
-    var totalBytes: js.UndefOr[DoubleDelta] = js.native
+    var totalBytes: js.UndefOr[DoubleDelta] = js.undefined
     
     /** Describes a change in a DownloadItem's `url`. */
-    var url: js.UndefOr[StringDelta] = js.native
+    var url: js.UndefOr[StringDelta] = js.undefined
   }
   object OnChangedDownloadDelta {
     
@@ -1010,12 +1001,11 @@ object downloads {
     def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = "interrupted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted]
   }
   
-  @js.native
   trait StringDelta extends StObject {
     
-    var current: js.UndefOr[String] = js.native
+    var current: js.UndefOr[String] = js.undefined
     
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
   }
   object StringDelta {
     

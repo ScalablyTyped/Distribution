@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlServerUserDetails extends StObject {
   
   /** If the user has been disabled */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** The server roles for this user */
-  var serverRoles: js.UndefOr[js.Array[String]] = js.native
+  var serverRoles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SqlServerUserDetails {
   

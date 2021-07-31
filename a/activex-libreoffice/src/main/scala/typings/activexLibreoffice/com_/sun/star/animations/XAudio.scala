@@ -6,16 +6,16 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAudio extends XAnimationNode {
+trait XAudio
+  extends StObject
+     with XAnimationNode {
   
   /** This attribute specifies the source element that contains the audio. */
-  var Source: js.Any = js.native
+  var Source: js.Any
   
-  var Volume: Double = js.native
+  var Volume: Double
 }
 object XAudio {
   

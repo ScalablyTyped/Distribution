@@ -3,13 +3,13 @@ package typings.sharepoint.SP.JsGrid.EventArgs
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnRowEscape extends IEventArgs {
+trait OnRowEscape
+  extends StObject
+     with IEventArgs {
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object OnRowEscape {
   

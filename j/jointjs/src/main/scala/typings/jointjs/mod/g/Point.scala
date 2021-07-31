@@ -2,17 +2,18 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Point")
 @js.native
-class Point () extends PlainPoint {
+class Point ()
+  extends StObject
+     with PlainPoint {
   def this(p: String) = this()
   def this(p: PlainPoint) = this()
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
   
   def adhereToRect(r: Rect): this.type = js.native
   
@@ -28,9 +29,9 @@ class Point () extends PlainPoint {
   def cross(p1: PlainPoint, p2: PlainPoint): Double = js.native
   
   def difference(): Point = js.native
-  def difference(dx: js.UndefOr[scala.Nothing], dy: Double): Point = js.native
   def difference(dx: Double): Point = js.native
   def difference(dx: Double, dy: Double): Point = js.native
+  def difference(dx: Unit, dy: Double): Point = js.native
   def difference(p: PlainPoint): Point = js.native
   
   def distance(p: String): Double = js.native
@@ -52,9 +53,9 @@ class Point () extends PlainPoint {
   def normalize(length: Double): this.type = js.native
   
   def offset(): this.type = js.native
-  def offset(dx: js.UndefOr[scala.Nothing], dy: Double): this.type = js.native
   def offset(dx: Double): this.type = js.native
   def offset(dx: Double, dy: Double): this.type = js.native
+  def offset(dx: Unit, dy: Double): this.type = js.native
   def offset(p: PlainPoint): this.type = js.native
   
   def reflection(ref: String): Point = js.native
@@ -88,33 +89,39 @@ class Point () extends PlainPoint {
   def toPolar(origin: PlainPoint): this.type = js.native
   
   def translate(): this.type = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): this.type = js.native
   def translate(tx: Double): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
+  def translate(tx: Unit, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
   
   def update(): this.type = js.native
-  def update(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def update(x: Double): this.type = js.native
   def update(x: Double, y: Double): this.type = js.native
+  def update(x: Unit, y: Double): this.type = js.native
   
   def vectorAngle(p: PlainPoint): Double = js.native
+  
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /* CompleteClass */
+  var y: Double = js.native
 }
 object Point {
   
-  /* static member */
-  @JSImport("jointjs", "g.Point.fromPolar")
+  @JSImport("jointjs", "g.Point")
   @js.native
-  def fromPolar(distance: Double, angle: Double): Point = js.native
-  @JSImport("jointjs", "g.Point.fromPolar")
-  @js.native
-  def fromPolar(distance: Double, angle: Double, origin: String): Point = js.native
-  @JSImport("jointjs", "g.Point.fromPolar")
-  @js.native
-  def fromPolar(distance: Double, angle: Double, origin: PlainPoint): Point = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("jointjs", "g.Point.random")
-  @js.native
-  def random(x1: Double, x2: Double, y1: Double, y2: Double): Point = js.native
+  @scala.inline
+  def fromPolar(distance: Double, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
+  def fromPolar(distance: Double, angle: Double, origin: String): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
+  def fromPolar(distance: Double, angle: Double, origin: PlainPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
+  
+  /* static member */
+  @scala.inline
+  def random(x1: Double, x2: Double, y1: Double, y2: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(x1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Point]
 }

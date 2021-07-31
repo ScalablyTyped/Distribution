@@ -2,17 +2,15 @@ package typings.w3cImageCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaSettingsRange extends StObject {
   
-  val max: Double = js.native
+  val max: Double
   
-  val min: Double = js.native
+  val min: Double
   
-  val step: Double = js.native
+  val step: Double
 }
 object MediaSettingsRange {
   

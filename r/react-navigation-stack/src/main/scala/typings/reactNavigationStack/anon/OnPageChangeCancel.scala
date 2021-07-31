@@ -2,17 +2,15 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPageChangeCancel extends StObject {
   
-  def onPageChangeCancel(): Unit = js.native
+  def onPageChangeCancel(): Unit
   
-  def onPageChangeConfirm(force: Boolean): Unit = js.native
+  def onPageChangeConfirm(force: Boolean): Unit
   
-  def onPageChangeStart(): Unit = js.native
+  def onPageChangeStart(): Unit
 }
 object OnPageChangeCancel {
   

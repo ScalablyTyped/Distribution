@@ -11,7 +11,6 @@ import typings.winrtUwp.winrtUwpStrings.credentialsverificationrequested
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a connection to the underlying communication pipeline (transport agnostic) that AllJoyn uses to communicate with other endpoints regardless of the transport. */
@@ -21,7 +20,7 @@ trait AllJoynBusAttachment extends StObject {
   /** This property returns an AllJoynAboutData object containing the descriptive data that the platform may advertise on behalf of the app. */
   var aboutData: AllJoynAboutData = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_authenticationcomplete(
     `type`: authenticationcomplete,
@@ -56,25 +55,25 @@ trait AllJoynBusAttachment extends StObject {
   def disconnect(): Unit = js.native
   
   /** Occurs when verification of supplied credentials is complete. */
-  def onauthenticationcomplete(ev: AllJoynAuthenticationCompleteEventArgs with WinRTEvent[AllJoynBusAttachment]): Unit = js.native
+  def onauthenticationcomplete(ev: AllJoynAuthenticationCompleteEventArgs & WinRTEvent[AllJoynBusAttachment]): Unit = js.native
   /** Occurs when verification of supplied credentials is complete. */
   @JSName("onauthenticationcomplete")
   var onauthenticationcomplete_Original: TypedEventHandler[AllJoynBusAttachment, AllJoynAuthenticationCompleteEventArgs] = js.native
   
   /** Occurs when credentials are requested for authentication. */
-  def oncredentialsrequested(ev: AllJoynCredentialsRequestedEventArgs with WinRTEvent[AllJoynBusAttachment]): Unit = js.native
+  def oncredentialsrequested(ev: AllJoynCredentialsRequestedEventArgs & WinRTEvent[AllJoynBusAttachment]): Unit = js.native
   /** Occurs when credentials are requested for authentication. */
   @JSName("oncredentialsrequested")
   var oncredentialsrequested_Original: TypedEventHandler[AllJoynBusAttachment, AllJoynCredentialsRequestedEventArgs] = js.native
   
   /** Occurs when credentials have been provided by a remote Consumer for verification. */
-  def oncredentialsverificationrequested(ev: AllJoynCredentialsVerificationRequestedEventArgs with WinRTEvent[AllJoynBusAttachment]): Unit = js.native
+  def oncredentialsverificationrequested(ev: AllJoynCredentialsVerificationRequestedEventArgs & WinRTEvent[AllJoynBusAttachment]): Unit = js.native
   /** Occurs when credentials have been provided by a remote Consumer for verification. */
   @JSName("oncredentialsverificationrequested")
   var oncredentialsverificationrequested_Original: TypedEventHandler[AllJoynBusAttachment, AllJoynCredentialsVerificationRequestedEventArgs] = js.native
   
   /** Occurs when the state of the bus attachment changes. The AllJoynBusAttachmentState enumeration defines the possible state values. */
-  def onstatechanged(ev: AllJoynBusAttachmentStateChangedEventArgs with WinRTEvent[AllJoynBusAttachment]): Unit = js.native
+  def onstatechanged(ev: AllJoynBusAttachmentStateChangedEventArgs & WinRTEvent[AllJoynBusAttachment]): Unit = js.native
   /** Occurs when the state of the bus attachment changes. The AllJoynBusAttachmentState enumeration defines the possible state values. */
   @JSName("onstatechanged")
   var onstatechanged_Original: TypedEventHandler[AllJoynBusAttachment, AllJoynBusAttachmentStateChangedEventArgs] = js.native
@@ -86,7 +85,7 @@ trait AllJoynBusAttachment extends StObject {
     */
   def pingAsync(uniqueName: String): IPromiseWithIAsyncOperation[Double] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_authenticationcomplete(
     `type`: authenticationcomplete,

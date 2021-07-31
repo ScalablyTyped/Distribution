@@ -6,12 +6,12 @@ import typings.elasticApmNode.mod.AwsLambda.Handler
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Agent
-  extends Taggable
+  extends StObject
+     with Taggable
      with StartSpanFn {
   
   def addErrorFilter(fn: FilterFn): Unit = js.native
@@ -30,22 +30,18 @@ trait Agent
   
   def captureError(err: String): Unit = js.native
   def captureError(err: String, callback: CaptureErrorCallback): Unit = js.native
-  def captureError(err: String, options: js.UndefOr[scala.Nothing], callback: CaptureErrorCallback): Unit = js.native
+  def captureError(err: String, options: Unit, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: String, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: String, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: ParameterizedMessageObject): Unit = js.native
   def captureError(err: ParameterizedMessageObject, callback: CaptureErrorCallback): Unit = js.native
-  def captureError(
-    err: ParameterizedMessageObject,
-    options: js.UndefOr[scala.Nothing],
-    callback: CaptureErrorCallback
-  ): Unit = js.native
+  def captureError(err: ParameterizedMessageObject, options: Unit, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   // Errors
   def captureError(err: Error): Unit = js.native
   def captureError(err: Error, callback: CaptureErrorCallback): Unit = js.native
-  def captureError(err: Error, options: js.UndefOr[scala.Nothing], callback: CaptureErrorCallback): Unit = js.native
+  def captureError(err: Error, options: Unit, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   
@@ -64,11 +60,11 @@ trait Agent
   def destroy(): Unit = js.native
   
   def endTransaction(): Unit = js.native
-  def endTransaction(result: js.UndefOr[scala.Nothing], endTime: Double): Unit = js.native
   def endTransaction(result: String): Unit = js.native
   def endTransaction(result: String, endTime: Double): Unit = js.native
   def endTransaction(result: Double): Unit = js.native
   def endTransaction(result: Double, endTime: Double): Unit = js.native
+  def endTransaction(result: Unit, endTime: Double): Unit = js.native
   
   def flush(): Unit = js.native
   def flush(callback: js.Function): Unit = js.native
@@ -78,8 +74,8 @@ trait Agent
   
   def isStarted(): Boolean = js.native
   
-  def lambda(handler: Handler[_, _]): Handler[_, _] = js.native
-  def lambda(`type`: String, handler: Handler[_, _]): Handler[_, _] = js.native
+  def lambda(handler: Handler[js.Any, js.Any]): Handler[js.Any, js.Any] = js.native
+  def lambda(`type`: String, handler: Handler[js.Any, js.Any]): Handler[js.Any, js.Any] = js.native
   
   // Utils
   var logger: Logger = js.native
@@ -110,7 +106,6 @@ trait Agent
   
   // Transactions
   def startTransaction(): Transaction | Null = js.native
-  def startTransaction(name: js.UndefOr[scala.Nothing], options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: String): Transaction | Null = js.native
   def startTransaction(name: String, options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: String, `type`: String): Transaction | Null = js.native
@@ -156,4 +151,5 @@ trait Agent
   def startTransaction(name: Null, `type`: Null, subtype: Null, action: String, options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: Null, `type`: Null, subtype: Null, action: Null, options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: Null, `type`: Null, subtype: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Unit, options: TransactionOptions): Transaction | Null = js.native
 }

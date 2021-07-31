@@ -2,11 +2,12 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reverb extends Effect {
+trait Reverb
+  extends StObject
+     with Effect {
   
   /**
     *   Connect a source to the reverb, and assign reverb
@@ -21,18 +22,13 @@ trait Reverb extends Effect {
     *   forwards.
     */
   def process(src: js.Object): Unit = js.native
-  def process(
-    src: js.Object,
-    seconds: js.UndefOr[scala.Nothing],
-    decayRate: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): Unit = js.native
-  def process(src: js.Object, seconds: js.UndefOr[scala.Nothing], decayRate: Double): Unit = js.native
-  def process(src: js.Object, seconds: js.UndefOr[scala.Nothing], decayRate: Double, reverse: Boolean): Unit = js.native
   def process(src: js.Object, seconds: Double): Unit = js.native
-  def process(src: js.Object, seconds: Double, decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Double, decayRate: Unit, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Double): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Double, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Unit, reverse: Boolean): Unit = js.native
   
   /**
     *   Set the reverb settings. Similar to .process(),
@@ -45,11 +41,11 @@ trait Reverb extends Effect {
     *   forwards.
     */
   def set(): Unit = js.native
-  def set(seconds: js.UndefOr[scala.Nothing], decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
-  def set(seconds: js.UndefOr[scala.Nothing], decayRate: Double): Unit = js.native
-  def set(seconds: js.UndefOr[scala.Nothing], decayRate: Double, reverse: Boolean): Unit = js.native
   def set(seconds: Double): Unit = js.native
-  def set(seconds: Double, decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
   def set(seconds: Double, decayRate: Double): Unit = js.native
   def set(seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
+  def set(seconds: Double, decayRate: Unit, reverse: Boolean): Unit = js.native
+  def set(seconds: Unit, decayRate: Double): Unit = js.native
+  def set(seconds: Unit, decayRate: Double, reverse: Boolean): Unit = js.native
+  def set(seconds: Unit, decayRate: Unit, reverse: Boolean): Unit = js.native
 }

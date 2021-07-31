@@ -2,38 +2,38 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlOverlay extends KmlFeature {
+trait KmlOverlay
+  extends StObject
+     with KmlFeature {
   
   /**
     * Specifies the color values.
     */
-  def getColor(): KmlColor = js.native
+  def getColor(): KmlColor
   
   /**
     * Defines the stacking order for the images in overlapping overlays.
     * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
     */
-  def getDrawOrder(): Double = js.native
+  def getDrawOrder(): Double
   
   /**
     * Defines the image associated with the Overlay.
     */
-  def getIcon(): KmlIcon = js.native
+  def getIcon(): KmlIcon
   
   /**
     * Defines the stacking order for the images in overlapping overlays.
     * Overlays with higher drawOrder values are drawn on top of overlays with lower drawOrder values.
     */
-  def setDrawOrder(drawOrder: Double): Unit = js.native
+  def setDrawOrder(drawOrder: Double): Unit
   
   /**
     * Defines the image associated with the Overlay.
     */
-  def setIcon(icon: KmlIcon): Unit = js.native
+  def setIcon(icon: KmlIcon): Unit
 }
 object KmlOverlay {
   

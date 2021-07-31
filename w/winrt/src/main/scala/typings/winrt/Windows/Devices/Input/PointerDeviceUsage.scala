@@ -2,27 +2,25 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointerDeviceUsage extends StObject {
   
-  var maxLogical: Double = js.native
+  var maxLogical: Double
   
-  var maxPhysical: Double = js.native
+  var maxPhysical: Double
   
-  var minLogical: Double = js.native
+  var minLogical: Double
   
-  var minPhysical: Double = js.native
+  var minPhysical: Double
   
-  var physicalMultiplier: Double = js.native
+  var physicalMultiplier: Double
   
-  var unit: Double = js.native
+  var unit: Double
   
-  var usage: Double = js.native
+  var usage: Double
   
-  var usagePage: Double = js.native
+  var usagePage: Double
 }
 object PointerDeviceUsage {
   

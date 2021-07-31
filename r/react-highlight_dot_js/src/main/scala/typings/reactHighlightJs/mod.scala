@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,18 +26,17 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[HighlightProps, ComponentState] = js.native
   
-  @js.native
   trait HighlightProps extends StObject {
     
     /**
       * Content that will be highlighted
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Language name to use as a class to signal type to highlight.js.
       */
-    var language: String = js.native
+    var language: String
   }
   object HighlightProps {
     

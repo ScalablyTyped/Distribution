@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRangeRequest extends StObject {
   
   /** The range of cells to delete. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
   
   /**
     * The dimension from which deleted cells will be replaced with. If ROWS, existing cells will be shifted upward to replace the deleted cells. If COLUMNS, existing cells will be shifted
     * left to replace the deleted cells.
     */
-  var shiftDimension: js.UndefOr[String] = js.native
+  var shiftDimension: js.UndefOr[String] = js.undefined
 }
 object DeleteRangeRequest {
   

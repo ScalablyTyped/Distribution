@@ -6,20 +6,19 @@ import typings.reactNative.reactNativeStrings.middle
 import typings.reactNative.reactNativeStrings.tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextProps
-  extends AccessibilityProps
+  extends StObject
      with TextPropsIOS
-     with TextPropsAndroid {
+     with TextPropsAndroid
+     with AccessibilityProps {
   
   /**
     * Specifies whether fonts should scale to respect Text Size accessibility settings.
     * The default is `true`.
     */
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This can be one of the following values:
@@ -38,13 +37,13 @@ trait TextProps
     *
     * > `clip` is working only for iOS
     */
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   /**
     * Line Break mode. Works only with numberOfLines.
     * clip is working only for iOS
     */
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   /**
     * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -52,12 +51,12 @@ trait TextProps
     * - 0: no max, ignore parent/global default
     * - >= 1: sets the maxFontSizeMultiplier of this node to this value
     */
-  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
     */
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
   /**
     * Used to truncate the text with an ellipsis after computing the text
@@ -66,41 +65,41 @@ trait TextProps
     *
     * This prop is commonly used with `ellipsizeMode`.
     */
-  var numberOfLines: js.UndefOr[Double] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.undefined
   
   /**
     * Invoked on mount and layout changes with
     *
     * {nativeEvent: { layout: {x, y, width, height}}}.
     */
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     * This function is called on long press.
     * e.g., `onLongPress={this.increaseSize}>``
     */
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * This function is called on press.
     * Text intrinsically supports press handling with a default highlight state (which can be disabled with suppressHighlighting).
     */
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * Invoked on Text layout
     */
-  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.native
+  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
   
   /**
     * @see https://reactnative.dev/docs/text#style
     */
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object TextProps {
   

@@ -6,30 +6,31 @@ import typings.node.Buffer
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object streams {
     
-    @JSImport("imagemagick-native", "streams.convert")
+    @JSImport("imagemagick-native", "streams")
     @js.native
-    def convert(options: IStreamConvertOptions): Transform = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def convert(options: IStreamConvertOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   }
   
-  @js.native
   trait ICompositeOptions extends StObject {
     
-    var compositeData: Buffer = js.native
+    var compositeData: Buffer
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var gravity: js.UndefOr[String] = js.native
+    var gravity: js.UndefOr[String] = js.undefined
     
-    var ignoreWarnings: js.UndefOr[Boolean] = js.native
+    var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var srcData: Buffer = js.native
+    var srcData: Buffer
   }
   object ICompositeOptions {
     
@@ -68,16 +69,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IConstPixelsItem extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object IConstPixelsItem {
     
@@ -104,18 +104,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IConstPixelsOptions extends StObject {
     
-    var columns: Double = js.native
+    var columns: Double
     
-    var rows: Double = js.native
+    var rows: Double
     
-    var srcData: Buffer = js.native
+    var srcData: Buffer
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IConstPixelsOptions {
     
@@ -145,44 +144,43 @@ object mod {
     }
   }
   
-  @js.native
   trait IConvertOptions extends StObject {
     
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var density: js.UndefOr[Double] = js.native
+    var density: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gravity: js.UndefOr[String] = js.native
+    var gravity: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var ignoreWarnings: js.UndefOr[Boolean] = js.native
+    var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var resizeStyle: js.UndefOr[String] = js.native
+    var resizeStyle: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var srcData: Buffer = js.native
+    var srcData: Buffer
     
-    var srcFormat: js.UndefOr[String] = js.native
+    var srcFormat: js.UndefOr[String] = js.undefined
     
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var trimFuzz: js.UndefOr[Double] = js.native
+    var trimFuzz: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IConvertOptions {
     
@@ -302,14 +300,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IIdentifyOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreWarnings: js.UndefOr[Boolean] = js.native
+    var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var srcData: Buffer = js.native
+    var srcData: Buffer
   }
   object IIdentifyOptions {
     
@@ -339,20 +336,19 @@ object mod {
     }
   }
   
-  @js.native
   trait IIdentifyResult extends StObject {
     
-    var density: Height = js.native
+    var density: Height
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var exif: Orientation = js.native
+    var exif: Orientation
     
-    var format: String = js.native
+    var format: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IIdentifyResult {
     
@@ -385,16 +381,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IQuantizeColorsItem extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var hex: String = js.native
+    var hex: String
     
-    var r: Double = js.native
+    var r: Double
   }
   object IQuantizeColorsItem {
     
@@ -421,16 +416,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IQuantizeColorsOptions extends StObject {
     
-    var colors: Double = js.native
+    var colors: Double
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreWarnings: js.UndefOr[Boolean] = js.native
+    var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var srcData: Buffer = js.native
+    var srcData: Buffer
   }
   object IQuantizeColorsOptions {
     
@@ -463,42 +457,41 @@ object mod {
     }
   }
   
-  @js.native
   trait IStreamConvertOptions extends StObject {
     
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var density: js.UndefOr[Double] = js.native
+    var density: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gravity: js.UndefOr[String] = js.native
+    var gravity: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var ignoreWarnings: js.UndefOr[Boolean] = js.native
+    var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var resizeStyle: js.UndefOr[String] = js.native
+    var resizeStyle: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var srcFormat: js.UndefOr[String] = js.native
+    var srcFormat: js.UndefOr[String] = js.undefined
     
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var trimFuzz: js.UndefOr[Double] = js.native
+    var trimFuzz: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IStreamConvertOptions {
     

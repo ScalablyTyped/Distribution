@@ -5,7 +5,6 @@ import typings.onChange.anon.OptionspathAsArrayfalseun
 import typings.onChange.anon.OptionspathAsArraytrue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -95,8 +94,7 @@ object mod {
   	// Callback isn't called
   	```
   	*/
-  @JSImport("on-change", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
@@ -107,9 +105,8 @@ object mod {
       /* name */ String, 
       Unit
     ]
-  ): ObjectType = js.native
-  @JSImport("on-change", JSImport.Namespace)
-  @js.native
+  ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
+  @scala.inline
   def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
@@ -121,10 +118,9 @@ object mod {
       Unit
     ],
     options: OptionspathAsArrayfalseun
-  ): ObjectType = js.native
+  ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
   // Overload that returns an Array as path when pathAsArray is true
-  @JSImport("on-change", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
@@ -136,15 +132,18 @@ object mod {
       Unit
     ],
     options: OptionspathAsArraytrue
-  ): ObjectType = js.native
+  ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
+  
+  @JSImport("on-change", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	@param object - Object that is already being watched for changes.
   	@returns The original unwatched object.
   	*/
-  @JSImport("on-change", "target")
-  @js.native
-  def target[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = js.native
+  @scala.inline
+  def target[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   // eslint-disable-line @typescript-eslint/method-signature-style
   /**
@@ -152,11 +151,9 @@ object mod {
   	@param object - Object that is already being watched for changes.
   	@returns The original unwatched object.
   	*/
-  @JSImport("on-change", "unsubscribe")
-  @js.native
-  def unsubscribe[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = js.native
+  @scala.inline
+  def unsubscribe[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -181,31 +178,31 @@ object mod {
     		```
     		*/
     @JSName("equals")
-    var equals_FOptions: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.native
+    var equals_FOptions: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.undefined
     
     /**
     		Ignore changes to objects that become detached from the watched object.
     		@default false
     		*/
-    var ignoreDetached: js.UndefOr[Boolean] = js.native
+    var ignoreDetached: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties in this array won't trigger the callback.
     		@default undefined
     		*/
-    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.native
+    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
     
     /**
     		Setting properties as `Symbol` won't trigger the callback.
     		@default false
     		*/
-    var ignoreSymbols: js.UndefOr[Boolean] = js.native
+    var ignoreSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties with an underscore as the first character won't trigger the callback.
     		@default false
     		*/
-    var ignoreUnderscores: js.UndefOr[Boolean] = js.native
+    var ignoreUnderscores: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Deep changes will not trigger the callback. Only changes to the immediate properties of the original object.
@@ -228,13 +225,13 @@ object mod {
     		//=> 'Object changed: 1'
     		```
     		*/
-    var isShallow: js.UndefOr[Boolean] = js.native
+    var isShallow: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The path will be provided as an array of keys instead of a delimited string.
     		@default false
     		*/
-    var pathAsArray: js.UndefOr[Boolean] = js.native
+    var pathAsArray: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

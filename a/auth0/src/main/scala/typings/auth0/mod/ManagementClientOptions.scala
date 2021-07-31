@@ -2,27 +2,25 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagementClientOptions extends StObject {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var domain: String = js.native
+  var domain: String
   
-  var retry: js.UndefOr[RetryOptions] = js.native
+  var retry: js.UndefOr[RetryOptions] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var tokenProvider: js.UndefOr[TokenProvider] = js.native
+  var tokenProvider: js.UndefOr[TokenProvider] = js.undefined
 }
 object ManagementClientOptions {
   

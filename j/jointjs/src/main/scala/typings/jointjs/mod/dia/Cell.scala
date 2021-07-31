@@ -19,7 +19,6 @@ import typings.jointjs.mod.util.interpolate.InterpolateFunction
 import typings.jointjs.mod.util.timing.TimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.Cell")
@@ -27,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Cell ()
   extends Model[js.Any, ModelSetOptions, js.Object] {
   def this(attributes: Attributes) = this()
-  def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+  def this(attributes: Unit, opt: Options) = this()
   def this(attributes: Attributes, opt: Options) = this()
   
   def addTo(graph: Graph): this.type = js.native
@@ -112,9 +111,9 @@ class Cell ()
   def stopBatch(name: String, opt: Options): this.type = js.native
   
   def stopTransitions(): this.type = js.native
-  def stopTransitions(path: js.UndefOr[scala.Nothing], delim: String): this.type = js.native
   def stopTransitions(path: String): this.type = js.native
   def stopTransitions(path: String, delim: String): this.type = js.native
+  def stopTransitions(path: Unit, delim: String): this.type = js.native
   
   def toBack(): this.type = js.native
   def toBack(opt: EmbeddableOptions): this.type = js.native
@@ -125,52 +124,44 @@ class Cell ()
   def toJSON(): js.Any = js.native
   
   def transition(path: String): Double = js.native
-  def transition(path: String, value: js.UndefOr[scala.Nothing], opt: js.UndefOr[scala.Nothing], delim: String): Double = js.native
-  def transition(path: String, value: js.UndefOr[scala.Nothing], opt: TransitionOptions): Double = js.native
-  def transition(path: String, value: js.UndefOr[scala.Nothing], opt: TransitionOptions, delim: String): Double = js.native
   def transition(path: String, value: js.Any): Double = js.native
-  def transition(path: String, value: js.Any, opt: js.UndefOr[scala.Nothing], delim: String): Double = js.native
+  def transition(path: String, value: js.Any, opt: Unit, delim: String): Double = js.native
   def transition(path: String, value: js.Any, opt: TransitionOptions): Double = js.native
   def transition(path: String, value: js.Any, opt: TransitionOptions, delim: String): Double = js.native
+  def transition(path: String, value: Unit, opt: Unit, delim: String): Double = js.native
+  def transition(path: String, value: Unit, opt: TransitionOptions): Double = js.native
+  def transition(path: String, value: Unit, opt: TransitionOptions, delim: String): Double = js.native
   
   def unembed(cell: Cell): this.type = js.native
   def unembed(cell: Cell, opt: Options): this.type = js.native
 }
 object Cell {
   
-  /* static member */
-  @JSImport("jointjs", "dia.Cell.define")
+  @JSImport("jointjs", "dia.Cell")
   @js.native
-  def define(`type`: String): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(
-    `type`: String,
-    defaults: js.UndefOr[scala.Nothing],
-    protoProps: js.UndefOr[scala.Nothing],
-    staticProps: js.Any
-  ): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.UndefOr[scala.Nothing], staticProps: js.Any): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Cell] = js.native
-  @JSImport("jointjs", "dia.Cell.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Attributes extends GenericAttributes[Selectors]
+  /* static member */
+  @scala.inline
+  def define(`type`: String): Constructor[Cell] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  
+  trait Attributes
+    extends StObject
+       with GenericAttributes[Selectors]
   object Attributes {
     
     @scala.inline
@@ -181,30 +172,26 @@ object Cell {
   }
   
   @js.native
-  trait Constructor[T /* <: Model[_, ModelSetOptions, js.Object] */]
-    extends Instantiable0[T]
+  trait Constructor[T /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+    extends StObject
+       with Instantiable0[T]
        with Instantiable1[/* opt */ Id, T] {
     
     def define(`type`: String): Constructor[T] = js.native
-    def define(
-      `type`: String,
-      defaults: js.UndefOr[scala.Nothing],
-      protoProps: js.UndefOr[scala.Nothing],
-      staticProps: js.Any
-    ): Constructor[T] = js.native
-    def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any): Constructor[T] = js.native
-    def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any, staticProps: js.Any): Constructor[T] = js.native
     def define(`type`: String, defaults: js.Any): Constructor[T] = js.native
-    def define(`type`: String, defaults: js.Any, protoProps: js.UndefOr[scala.Nothing], staticProps: js.Any): Constructor[T] = js.native
     def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[T] = js.native
     def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[T] = js.native
+    def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[T] = js.native
+    def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[T] = js.native
+    def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[T] = js.native
+    def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[T] = js.native
   }
   
-  @js.native
   trait DisconnectableOptions
-    extends typings.jointjs.mod.dia.Cell.Options {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.Options {
     
-    var disconnectLinks: js.UndefOr[Boolean] = js.native
+    var disconnectLinks: js.UndefOr[Boolean] = js.undefined
   }
   object DisconnectableOptions {
     
@@ -225,11 +212,11 @@ object Cell {
     }
   }
   
-  @js.native
   trait EmbeddableOptions
-    extends typings.jointjs.mod.dia.Cell.Options {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.Options {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
   }
   object EmbeddableOptions {
     
@@ -250,13 +237,13 @@ object Cell {
     }
   }
   
-  @js.native
   trait GenericAttributes[T]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var attrs: js.UndefOr[T] = js.native
+    var attrs: js.UndefOr[T] = js.undefined
     
-    var z: js.UndefOr[Double] = js.native
+    var z: js.UndefOr[Double] = js.undefined
   }
   object GenericAttributes {
     
@@ -267,7 +254,7 @@ object Cell {
     }
     
     @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[_], T] (val x: Self with GenericAttributes[T]) extends AnyVal {
+    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setAttrs(value: T): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
@@ -287,17 +274,17 @@ object Cell {
   
   type Selectors = StringDictionary[js.UndefOr[SVGAttributes]]
   
-  @js.native
   trait TransitionOptions
-    extends typings.jointjs.mod.dia.Cell.Options {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.Options {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var timingFunction: js.UndefOr[TimingFunction] = js.native
+    var timingFunction: js.UndefOr[TimingFunction] = js.undefined
     
-    var valueFunction: js.UndefOr[InterpolateFunction[_]] = js.native
+    var valueFunction: js.UndefOr[InterpolateFunction[js.Any]] = js.undefined
   }
   object TransitionOptions {
     
@@ -329,7 +316,7 @@ object Cell {
       def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
       
       @scala.inline
-      def setValueFunction(value: (_, _) => js.Function1[/* time */ Double, _]): Self = StObject.set(x, "valueFunction", js.Any.fromFunction2(value))
+      def setValueFunction(value: (js.Any, js.Any) => js.Function1[/* time */ Double, js.Any]): Self = StObject.set(x, "valueFunction", js.Any.fromFunction2(value))
       
       @scala.inline
       def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)

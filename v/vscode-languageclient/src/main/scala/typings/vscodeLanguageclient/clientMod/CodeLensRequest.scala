@@ -5,7 +5,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CodeLensRequest {

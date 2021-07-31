@@ -2,31 +2,29 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoricalMetric extends StObject {
   
   /**
     * The name of the metric.
     */
-  var Name: js.UndefOr[HistoricalMetricName] = js.native
+  var Name: js.UndefOr[HistoricalMetricName] = js.undefined
   
   /**
     * The statistic for the metric.
     */
-  var Statistic: js.UndefOr[typings.awsSdk.connectMod.Statistic] = js.native
+  var Statistic: js.UndefOr[typings.awsSdk.connectMod.Statistic] = js.undefined
   
   /**
     * The threshold for the metric, used with service level metrics.
     */
-  var Threshold: js.UndefOr[typings.awsSdk.connectMod.Threshold] = js.native
+  var Threshold: js.UndefOr[typings.awsSdk.connectMod.Threshold] = js.undefined
   
   /**
     * The unit for the metric.
     */
-  var Unit: js.UndefOr[typings.awsSdk.connectMod.Unit] = js.native
+  var Unit: js.UndefOr[typings.awsSdk.connectMod.Unit] = js.undefined
 }
 object HistoricalMetric {
   

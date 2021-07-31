@@ -2,71 +2,69 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The search API response.
   */
-@js.native
 trait SchemaSearchResponse extends StObject {
   
   /**
     * Debugging information about the response.
     */
-  var debugInfo: js.UndefOr[SchemaResponseDebugInfo] = js.native
+  var debugInfo: js.UndefOr[SchemaResponseDebugInfo] = js.undefined
   
   /**
     * Error information about the response.
     */
-  var errorInfo: js.UndefOr[SchemaErrorInfo] = js.native
+  var errorInfo: js.UndefOr[SchemaErrorInfo] = js.undefined
   
   /**
     * Repeated facet results.
     */
-  var facetResults: js.UndefOr[js.Array[SchemaFacetResult]] = js.native
+  var facetResults: js.UndefOr[js.Array[SchemaFacetResult]] = js.undefined
   
   /**
     * Whether there are more search results matching the query.
     */
-  var hasMoreResults: js.UndefOr[Boolean] = js.native
+  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Query interpretation result for user query. Empty if query interpretation
     * is disabled.
     */
-  var queryInterpretation: js.UndefOr[SchemaQueryInterpretation] = js.native
+  var queryInterpretation: js.UndefOr[SchemaQueryInterpretation] = js.undefined
   
   /**
     * The estimated result count for this query.
     */
-  var resultCountEstimate: js.UndefOr[String] = js.native
+  var resultCountEstimate: js.UndefOr[String] = js.undefined
   
   /**
     * The exact result count for this query.
     */
-  var resultCountExact: js.UndefOr[String] = js.native
+  var resultCountExact: js.UndefOr[String] = js.undefined
   
   /**
     * Expanded result count information.
     */
-  var resultCounts: js.UndefOr[SchemaResultCounts] = js.native
+  var resultCounts: js.UndefOr[SchemaResultCounts] = js.undefined
   
   /**
     * Results from a search query.
     */
-  var results: js.UndefOr[js.Array[SchemaSearchResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaSearchResult]] = js.undefined
   
   /**
     * Suggested spelling for the query.
     */
-  var spellResults: js.UndefOr[js.Array[SchemaSpellResult]] = js.native
+  var spellResults: js.UndefOr[js.Array[SchemaSpellResult]] = js.undefined
   
   /**
     * Structured results for the user query. These results are not counted
     * against the page_size.
     */
-  var structuredResults: js.UndefOr[js.Array[SchemaStructuredResult]] = js.native
+  var structuredResults: js.UndefOr[js.Array[SchemaStructuredResult]] = js.undefined
 }
 object SchemaSearchResponse {
   

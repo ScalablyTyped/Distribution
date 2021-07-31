@@ -2,15 +2,13 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boundInstrumentMod {
   
-  @js.native
   trait BoundBaseObserver extends StObject {
     
-    def update(value: Double): Unit = js.native
+    def update(value: Double): Unit
   }
   object BoundBaseObserver {
     
@@ -28,14 +26,13 @@ object boundInstrumentMod {
     }
   }
   
-  @js.native
   trait BoundCounter extends StObject {
     
     /**
       * Adds the given value to the current value. Values cannot be negative.
       * @param value the value to add.
       */
-    def add(value: Double): Unit = js.native
+    def add(value: Double): Unit
   }
   object BoundCounter {
     
@@ -53,14 +50,13 @@ object boundInstrumentMod {
     }
   }
   
-  @js.native
   trait BoundValueRecorder extends StObject {
     
     /**
       * Records the given value to this value recorder.
       * @param value to record.
       */
-    def record(value: Double): Unit = js.native
+    def record(value: Double): Unit
   }
   object BoundValueRecorder {
     

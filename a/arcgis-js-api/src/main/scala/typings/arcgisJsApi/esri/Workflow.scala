@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.create
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workflow extends Accessor {
+trait Workflow
+  extends StObject
+     with Accessor {
   
   /**
     * Cancels the active workflow.

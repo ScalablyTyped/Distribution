@@ -5,23 +5,21 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ci extends StObject {
     
-    var ci: js.UndefOr[Boolean] = js.native
+    var ci: js.UndefOr[Boolean] = js.undefined
     
-    var errorStream: js.UndefOr[WritableStream] = js.native
+    var errorStream: js.UndefOr[WritableStream] = js.undefined
     
-    var inputStream: js.UndefOr[ReadableStream] = js.native
+    var inputStream: js.UndefOr[ReadableStream] = js.undefined
     
-    var outputStream: js.UndefOr[WritableStream] = js.native
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
-    var writeLevel: js.UndefOr[WriteLevel] = js.native
+    var writeLevel: js.UndefOr[WriteLevel] = js.undefined
   }
   object Ci {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logging extends StObject {
   
   /**
     * The cluster control plane logging configuration for your cluster.
     */
-  var clusterLogging: js.UndefOr[LogSetups] = js.native
+  var clusterLogging: js.UndefOr[LogSetups] = js.undefined
 }
 object Logging {
   

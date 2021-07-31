@@ -9,10 +9,13 @@ import typings.jsonPatch.jsonPatchStrings.test
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("json-patch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("json-patch", "InvalidPatchError")
   @js.native
@@ -20,11 +23,29 @@ object mod {
   
   @JSImport("json-patch", "InvalidPointerError")
   @js.native
-  class InvalidPointerError () extends Error
+  class InvalidPointerError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("json-patch", "JSONPatchError")
   @js.native
-  class JSONPatchError () extends Error
+  class JSONPatchError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("json-patch", "PatchConflictError")
   @js.native
@@ -32,30 +53,37 @@ object mod {
   
   @JSImport("json-patch", "PatchTestFailed")
   @js.native
-  class PatchTestFailed () extends Error
+  class PatchTestFailed ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @JSImport("json-patch", "apply")
-  @js.native
-  def apply(document: js.Any, patches: js.Array[OpPatch]): js.Any = js.native
+  @scala.inline
+  def apply(document: js.Any, patches: js.Array[OpPatch]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(document.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("json-patch", "compile")
-  @js.native
-  def compile(patches: js.Array[OpPatch]): js.Function1[/* document */ js.Any, _] = js.native
+  @scala.inline
+  def compile(patches: js.Array[OpPatch]): js.Function1[/* document */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(patches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* document */ js.Any, js.Any]]
   
-  @js.native
   trait AddPatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var op: add = js.native
+    var op: add
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object AddPatch {
     
     @scala.inline
-    def apply(op: add, path: String, value: js.Any): AddPatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): AddPatch = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddPatch]
     }
     
@@ -70,20 +98,20 @@ object mod {
     }
   }
   
-  @js.native
   trait CopyPatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var from: String = js.native
+    var from: String
     
-    var op: copy = js.native
+    var op: copy
   }
   object CopyPatch {
     
     @scala.inline
-    def apply(from: String, op: copy, path: String): CopyPatch = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: String, path: String): CopyPatch = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyPatch]
     }
     
@@ -98,20 +126,20 @@ object mod {
     }
   }
   
-  @js.native
   trait MovePatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var from: String = js.native
+    var from: String
     
-    var op: move = js.native
+    var op: move
   }
   object MovePatch {
     
     @scala.inline
-    def apply(from: String, op: move, path: String): MovePatch = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: String, path: String): MovePatch = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MovePatch]
     }
     
@@ -138,46 +166,45 @@ object mod {
   object OpPatch {
     
     @scala.inline
-    def AddPatch(op: add, path: String, value: js.Any): typings.jsonPatch.mod.AddPatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def AddPatch(path: String, value: js.Any): typings.jsonPatch.mod.AddPatch = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.AddPatch]
     }
     
     @scala.inline
-    def CopyPatch(from: String, op: copy, path: String): typings.jsonPatch.mod.CopyPatch = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def CopyPatch(from: String, path: String): typings.jsonPatch.mod.CopyPatch = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.CopyPatch]
     }
     
     @scala.inline
-    def MovePatch(from: String, op: move, path: String): typings.jsonPatch.mod.MovePatch = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def MovePatch(from: String, path: String): typings.jsonPatch.mod.MovePatch = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.MovePatch]
     }
     
     @scala.inline
-    def RemovePatch(op: remove, path: String): typings.jsonPatch.mod.RemovePatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def RemovePatch(path: String): typings.jsonPatch.mod.RemovePatch = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.RemovePatch]
     }
     
     @scala.inline
-    def ReplacePatch(op: replace, path: String, value: js.Any): typings.jsonPatch.mod.ReplacePatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def ReplacePatch(path: String, value: js.Any): typings.jsonPatch.mod.ReplacePatch = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.ReplacePatch]
     }
     
     @scala.inline
-    def TestPatch(op: test, path: String, value: js.Any): typings.jsonPatch.mod.TestPatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def TestPatch(path: String, value: js.Any): typings.jsonPatch.mod.TestPatch = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonPatch.mod.TestPatch]
     }
   }
   
-  @js.native
   trait Patch extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Patch {
     
@@ -195,18 +222,18 @@ object mod {
     }
   }
   
-  @js.native
   trait RemovePatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var op: remove = js.native
+    var op: remove
   }
   object RemovePatch {
     
     @scala.inline
-    def apply(op: remove, path: String): RemovePatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): RemovePatch = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemovePatch]
     }
     
@@ -218,20 +245,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ReplacePatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var op: replace = js.native
+    var op: replace
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ReplacePatch {
     
     @scala.inline
-    def apply(op: replace, path: String, value: js.Any): ReplacePatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): ReplacePatch = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplacePatch]
     }
     
@@ -246,20 +273,20 @@ object mod {
     }
   }
   
-  @js.native
   trait TestPatch
-    extends Patch
+    extends StObject
+       with Patch
        with OpPatch {
     
-    var op: test = js.native
+    var op: test
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object TestPatch {
     
     @scala.inline
-    def apply(op: test, path: String, value: js.Any): TestPatch = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): TestPatch = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestPatch]
     }
     

@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.reportupdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for detailed battery information. For more info, see Get battery information. */
@@ -17,9 +16,9 @@ object Power {
   @js.native
   trait Battery extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, _]): Unit = js.native
+    def addEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, js.Any]): Unit = js.native
     
     /** Gets the identifier (ID) for an individual battery controller. */
     var deviceId: String = js.native
@@ -31,34 +30,33 @@ object Power {
     def getReport(): BatteryReport = js.native
     
     /** Occurs when the charge, capacity, or status of a battery changes. */
-    def onreportupdated(ev: js.Any with WinRTEvent[Battery]): Unit = js.native
+    def onreportupdated(ev: js.Any & WinRTEvent[Battery]): Unit = js.native
     /** Occurs when the charge, capacity, or status of a battery changes. */
     @JSName("onreportupdated")
-    var onreportupdated_Original: TypedEventHandler[Battery, _] = js.native
+    var onreportupdated_Original: TypedEventHandler[Battery, js.Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, _]): Unit = js.native
+    def removeEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, js.Any]): Unit = js.native
   }
   
   /** Provides properties that indicate the charge, capacity, and status of the battery. For more info, see Get battery information. */
-  @js.native
   trait BatteryReport extends StObject {
     
     /** Gets the rate that the battery is charging. */
-    var chargeRateInMilliwatts: Double = js.native
+    var chargeRateInMilliwatts: Double
     
     /** Gets the estimated energy capacity of a new battery of this type. */
-    var designCapacityInMilliwattHours: Double = js.native
+    var designCapacityInMilliwattHours: Double
     
     /** Gets the fully-charged energy capacity of the battery. */
-    var fullChargeCapacityInMilliwattHours: Double = js.native
+    var fullChargeCapacityInMilliwattHours: Double
     
     /** Gets the remaining power capacity of the battery. */
-    var remainingCapacityInMilliwattHours: Double = js.native
+    var remainingCapacityInMilliwattHours: Double
     
     /** Gets a BatteryStatus enumeration that indicates the status of the battery. */
-    var status: BatteryStatus = js.native
+    var status: BatteryStatus
   }
   object BatteryReport {
     

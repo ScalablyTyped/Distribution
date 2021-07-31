@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,26 +18,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLocaleData for links to DTD of XML locale data files.
   * @since LibreOffice 3.5
   */
-@js.native
 trait Calendar2 extends StObject {
   
-  var Days: SafeArray[CalendarItem2] = js.native
+  var Days: SafeArray[CalendarItem2]
   
-  var Default: Boolean = js.native
+  var Default: Boolean
   
-  var Eras: SafeArray[CalendarItem2] = js.native
+  var Eras: SafeArray[CalendarItem2]
   
-  var GenitiveMonths: SafeArray[CalendarItem2] = js.native
+  var GenitiveMonths: SafeArray[CalendarItem2]
   
-  var MinimumNumberOfDaysForFirstWeek: Double = js.native
+  var MinimumNumberOfDaysForFirstWeek: Double
   
-  var Months: SafeArray[CalendarItem2] = js.native
+  var Months: SafeArray[CalendarItem2]
   
-  var Name: String = js.native
+  var Name: String
   
-  var PartitiveMonths: SafeArray[CalendarItem2] = js.native
+  var PartitiveMonths: SafeArray[CalendarItem2]
   
-  var StartOfWeek: String = js.native
+  var StartOfWeek: String
 }
 object Calendar2 {
   

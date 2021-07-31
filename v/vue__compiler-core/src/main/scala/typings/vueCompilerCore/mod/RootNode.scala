@@ -3,36 +3,35 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RootNode
-  extends Node2
+  extends StObject
+     with Node2
      with ParentNode2 {
   
-  var cached: Double = js.native
+  var cached: Double
   
-  var children: js.Array[TemplateChildNode] = js.native
+  var children: js.Array[TemplateChildNode]
   
-  var codegenNode: js.UndefOr[TemplateChildNode | JSChildNode | BlockStatement] = js.native
+  var codegenNode: js.UndefOr[TemplateChildNode | JSChildNode | BlockStatement] = js.undefined
   
-  var components: js.Array[String] = js.native
+  var components: js.Array[String]
   
-  var directives: js.Array[String] = js.native
+  var directives: js.Array[String]
   
-  var helpers: js.Array[js.Symbol] = js.native
+  var helpers: js.Array[js.Symbol]
   
-  var hoists: js.Array[JSChildNode | Null] = js.native
+  var hoists: js.Array[JSChildNode | Null]
   
-  var imports: js.Array[ImportItem] = js.native
+  var imports: js.Array[ImportItem]
   
-  var ssrHelpers: js.UndefOr[js.Array[js.Symbol]] = js.native
+  var ssrHelpers: js.UndefOr[js.Array[js.Symbol]] = js.undefined
   
-  var temps: Double = js.native
+  var temps: Double
   
   @JSName("type")
-  var type_RootNode: `0` = js.native
+  var type_RootNode: `0`
 }
 object RootNode {
   
@@ -46,11 +45,10 @@ object RootNode {
     hoists: js.Array[JSChildNode | Null],
     imports: js.Array[ImportItem],
     loc: SourceLocation,
-    temps: Double,
-    `type`: `0`
+    temps: Double
   ): RootNode = {
     val __obj = js.Dynamic.literal(cached = cached.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], hoists = hoists.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], temps = temps.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0)
     __obj.asInstanceOf[RootNode]
   }
   

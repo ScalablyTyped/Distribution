@@ -2,29 +2,27 @@ package typings.jqueryAlertable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertableOptions extends StObject {
   
-  var cancelButton: js.UndefOr[String] = js.native
+  var cancelButton: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var hide: js.UndefOr[js.Function] = js.native
+  var hide: js.UndefOr[js.Function] = js.undefined
   
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
-  var modal: js.UndefOr[String] = js.native
+  var modal: js.UndefOr[String] = js.undefined
   
-  var okButton: js.UndefOr[String] = js.native
+  var okButton: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function] = js.native
+  var show: js.UndefOr[js.Function] = js.undefined
 }
 object AlertableOptions {
   

@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginInlineStyles extends PluginConfig {
+trait PluginInlineStyles
+  extends StObject
+     with PluginConfig {
   
-  var inlineStyles: Boolean | js.Object = js.native
+  var inlineStyles: Boolean | js.Object
 }
 object PluginInlineStyles {
   

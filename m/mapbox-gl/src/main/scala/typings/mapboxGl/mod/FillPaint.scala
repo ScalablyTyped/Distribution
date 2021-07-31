@@ -4,35 +4,35 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FillPaint extends AnyPaint {
+trait FillPaint
+  extends StObject
+     with AnyPaint {
   
-  var `fill-antialias`: js.UndefOr[Boolean | Expression] = js.native
+  var `fill-antialias`: js.UndefOr[Boolean | Expression] = js.undefined
   
-  var `fill-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `fill-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `fill-color-transition`: js.UndefOr[Transition] = js.native
+  var `fill-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `fill-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `fill-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `fill-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-outline-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `fill-outline-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `fill-outline-color-transition`: js.UndefOr[Transition] = js.native
+  var `fill-outline-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-pattern`: js.UndefOr[String | Expression] = js.native
+  var `fill-pattern`: js.UndefOr[String | Expression] = js.undefined
   
-  var `fill-pattern-transition`: js.UndefOr[Transition] = js.native
+  var `fill-pattern-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `fill-translate`: js.UndefOr[js.Array[Double]] = js.native
+  var `fill-translate`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `fill-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `fill-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
   
-  var `fill-translate-transition`: js.UndefOr[Transition] = js.native
+  var `fill-translate-transition`: js.UndefOr[Transition] = js.undefined
 }
 object FillPaint {
   

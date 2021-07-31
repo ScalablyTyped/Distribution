@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Resource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an Amazon S3 bucket.
     */
-  var BucketArn: js.UndefOr[ResourceARN] = js.native
+  var BucketArn: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * For export jobs, you can provide an optional KeyRange within a specific Amazon S3 bucket. The length of the range is defined at job creation, and has either an inclusive BeginMarker, an inclusive EndMarker, or both. Ranges are UTF-8 binary sorted.
     */
-  var KeyRange: js.UndefOr[typings.awsSdk.snowballMod.KeyRange] = js.native
+  var KeyRange: js.UndefOr[typings.awsSdk.snowballMod.KeyRange] = js.undefined
 }
 object S3Resource {
   

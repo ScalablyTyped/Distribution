@@ -3,22 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.listRepositoriesExceptionsUnionMod.ListRepositoriesExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidOrderExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidOrderExceptionDetails> * / any */ @js.native
-  trait InvalidOrderException extends ListRepositoriesExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidOrderExceptionDetails> * / any */ trait InvalidOrderException
+    extends StObject
+       with ListRepositoriesExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException
   }
   object InvalidOrderException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException): InvalidOrderException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidOrderException = {
+      val __obj = js.Dynamic.literal(name = "InvalidOrderException")
       __obj.asInstanceOf[InvalidOrderException]
     }
     
@@ -30,6 +30,5 @@ object typesInvalidOrderExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidOrderExceptionDetails extends StObject
 }

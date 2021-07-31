@@ -2,113 +2,111 @@ package typings.maximMazurokGapiClientDfareporting.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignIds extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Select only placement groups that belong to these advertisers. */
-  var advertiserIds: js.UndefOr[String | js.Array[String]] = js.native
+  var advertiserIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Select only archived placements. Don't set this field to select both archived and non-archived placements. */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Select only placement groups that belong to these campaigns. */
-  var campaignIds: js.UndefOr[String | js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Select only placement groups that are associated with these content categories. */
-  var contentCategoryIds: js.UndefOr[String | js.Array[String]] = js.native
+  var contentCategoryIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Select only placement groups that are associated with these directory sites. */
-  var directorySiteIds: js.UndefOr[String | js.Array[String]] = js.native
+  var directorySiteIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Select only placement groups with these IDs. */
-  var ids: js.UndefOr[String | js.Array[String]] = js.native
+  var ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as "yyyy-MM-dd". */
-  var maxEndDate: js.UndefOr[String] = js.native
+  var maxEndDate: js.UndefOr[String] = js.undefined
   
   /** Maximum number of results to return. */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** Select only placements or placement groups whose start date is on or before the specified maxStartDate. The date should be formatted as "yyyy-MM-dd". */
-  var maxStartDate: js.UndefOr[String] = js.native
+  var maxStartDate: js.UndefOr[String] = js.undefined
   
   /** Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as "yyyy-MM-dd". */
-  var minEndDate: js.UndefOr[String] = js.native
+  var minEndDate: js.UndefOr[String] = js.undefined
   
   /** Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as "yyyy-MM-dd". */
-  var minStartDate: js.UndefOr[String] = js.native
+  var minStartDate: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Value of the nextPageToken from the previous result page. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a
     * group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its
     * assigned placements to be marked as primary for reporting.
     */
-  var placementGroupType: js.UndefOr[String] = js.native
+  var placementGroupType: js.UndefOr[String] = js.undefined
   
   /** Select only placement groups that are associated with these placement strategies. */
-  var placementStrategyIds: js.UndefOr[String | js.Array[String]] = js.native
+  var placementStrategyIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Select only placement groups with these pricing types. */
-  var pricingTypes: js.UndefOr[String | js.Array[String]] = js.native
+  var pricingTypes: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** User profile ID associated with this request. */
-  var profileId: String = js.native
+  var profileId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for placement groups by name or ID. Wildcards (*) are allowed. For example, "placement*2015" will return placement groups with names like "placement group June
     * 2015", "placement group May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a
     * search string of "placementgroup" will match placement groups with name "my placementgroup", "placementgroup 2015", or simply "placementgroup".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /** Select only placement groups that are associated with these sites. */
-  var siteIds: js.UndefOr[String | js.Array[String]] = js.native
+  var siteIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Field by which to sort the list. */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /** Order of sorted results. */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object CampaignIds {
   

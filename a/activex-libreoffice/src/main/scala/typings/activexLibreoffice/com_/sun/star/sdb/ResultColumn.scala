@@ -7,53 +7,52 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a column of a result set. */
-@js.native
 trait ResultColumn
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.Column
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.Column
      with ColumnSettings {
   
   /** gets a column's table's catalog name. */
-  var CatalogName: String = js.native
+  var CatalogName: String
   
   /** indicates the column's normal max width in chars. */
-  var DisplaySize: Double = js.native
+  var DisplaySize: Double
   
   /** indicates that a column is case sensitive. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
   
   /** indicates whether a write on the column will definitely succeed. */
-  var IsDefinitelyWritable: Boolean = js.native
+  var IsDefinitelyWritable: Boolean
   
   /** indicates whether a column is definitely, not writable. */
-  var IsReadOnly: Boolean = js.native
+  var IsReadOnly: Boolean
   
   /** indicates whether the column can be used in a Where clause. */
-  var IsSearchable: Boolean = js.native
+  var IsSearchable: Boolean
   
   /** indicates whether values in the column are signed numbers. */
-  var IsSigned: Boolean = js.native
+  var IsSigned: Boolean
   
   /** indicates whether it is possible for a write on the column to succeed. */
-  var IsWritable: Boolean = js.native
+  var IsWritable: Boolean
   
   /** gets the suggested column title for use in printouts and displays. */
-  var Label: String = js.native
+  var Label: String
   
   /** gets a column's schema name. */
-  var SchemaName: String = js.native
+  var SchemaName: String
   
   /**
     * returns the fully-qualified name of the service whose instances are manufactured if the method {@link com.sun.star.sdbc.XRow.getObject} )= is called
     * to retrieve a value from the column.
     */
-  var ServiceName: String = js.native
+  var ServiceName: String
   
   /** gets a column's table name. */
-  var TableName: String = js.native
+  var TableName: String
 }
 object ResultColumn {
   

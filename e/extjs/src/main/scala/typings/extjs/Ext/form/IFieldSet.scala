@@ -5,69 +5,75 @@ import typings.extjs.Ext.container.IContainer
 import typings.extjs.Ext.panel.ITool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ @js.native
-trait IFieldSet extends IContainer {
+- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFieldSet
+  extends StObject
+     with IContainer {
   
   /** [Property] (Ext.form.field.Checkbox) */
-  var checkboxCmp: js.UndefOr[typings.extjs.Ext.form.field.ICheckbox] = js.native
+  var checkboxCmp: js.UndefOr[typings.extjs.Ext.form.field.ICheckbox] = js.undefined
   
   /** [Config Option] (String) */
-  var checkboxName: js.UndefOr[String] = js.native
+  var checkboxName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var checkboxToggle: js.UndefOr[Boolean] = js.native
+  var checkboxToggle: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Collapses the fieldset
     * @returns Ext.form.FieldSet this
     */
-  var collapse: js.UndefOr[js.Function0[this.type]] = js.native
+  var collapse: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Creates the checkbox component
     * @returns Ext.Component
     */
-  var createCheckboxCmp: js.UndefOr[js.Function0[IComponent]] = js.native
+  var createCheckboxCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Creates the legend title component
     * @returns Ext.Component
     */
-  var createTitleCmp: js.UndefOr[js.Function0[IComponent]] = js.native
+  var createTitleCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Creates the toggle button component
     * @returns Ext.Component
     */
-  var createToggleCmp: js.UndefOr[js.Function0[IComponent]] = js.native
+  var createToggleCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Expands the fieldset
     * @returns Ext.form.FieldSet this
     */
-  var expand: js.UndefOr[js.Function0[this.type]] = js.native
+  var expand: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.native
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Method] The supplied default state gathering method for the AbstractComponent class
+    * @returns Object
+    */
+  @JSName("getState")
+  var getState_IFieldSet: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
-  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.native
+  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Ext.Component) */
-  var legend: js.UndefOr[IComponent] = js.native
+  var legend: js.UndefOr[IComponent] = js.undefined
   
   /** [Method] Fired when the error message of any field within the container changes
     * @param field Ext.form.Labelable The sub-field whose active error changed
     * @param error String The new active error message
     */
-  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.native
+  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Fired when the validity of any field within the container changes
     * @param field Ext.form.field.Field The sub-field whose validity changed
@@ -75,25 +81,25 @@ trait IFieldSet extends IContainer {
     */
   var onFieldValidityChange: js.UndefOr[
     js.Function2[js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the title of this fieldset
     * @param title String The new title.
     * @returns Ext.form.FieldSet this
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], this.type]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** [Method] Toggle the fieldset s collapsed state to the opposite of what it is currently  */
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.native
+  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Ext.panel.Tool) */
-  var toggleCmp: js.UndefOr[ITool] = js.native
+  var toggleCmp: js.UndefOr[ITool] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var toggleOnTitleClick: js.UndefOr[Boolean] = js.native
+  var toggleOnTitleClick: js.UndefOr[Boolean] = js.undefined
 }
 object IFieldSet {
   
@@ -171,6 +177,12 @@ object IFieldSet {
     
     @scala.inline
     def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
+    
+    @scala.inline
+    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
     def setInitFieldAncestor(value: () => Unit): Self = StObject.set(x, "initFieldAncestor", js.Any.fromFunction0(value))

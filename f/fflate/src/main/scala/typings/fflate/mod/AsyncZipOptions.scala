@@ -16,19 +16,17 @@ import typings.fflate.fflateNumbers.`9`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent fflate.fflate.AsyncDeflateOptions */
 /* Inlined parent std.Pick<fflate.fflate.AsyncGzipOptions, 'mtime'> */
-@js.native
 trait AsyncZipOptions extends StObject {
   
   /**
     * Whether or not to "consume" the source data. This will make the typed array/buffer you pass in
     * unusable but will increase performance and reduce memory usage.
     */
-  var consume: js.UndefOr[Boolean] = js.native
+  var consume: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The level of compression to use, ranging from 0-9.
@@ -45,7 +43,7 @@ trait AsyncZipOptions extends StObject {
     * - become 400 kB with level 1 in 10ms
     * - become 320 kB with level 9 in 100ms
     */
-  var level: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+  var level: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
   
   /**
     * The memory level to use, ranging from 0-12. Increasing this increases speed and compression ratio at the cost of memory.
@@ -56,9 +54,9 @@ trait AsyncZipOptions extends StObject {
     *
     * The default value is automatically determined based on the size of the input data.
     */
-  var mem: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`] = js.native
+  var mem: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`] = js.undefined
   
-  var mtime: js.UndefOr[Date | String | Double] = js.native
+  var mtime: js.UndefOr[Date | String | Double] = js.undefined
 }
 object AsyncZipOptions {
   

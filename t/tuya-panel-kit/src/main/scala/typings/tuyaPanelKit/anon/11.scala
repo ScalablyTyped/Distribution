@@ -3,15 +3,13 @@ package typings.tuyaPanelKit.anon
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `11`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
   
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object `11` {
   
@@ -22,7 +20,7 @@ object `11` {
   }
   
   @scala.inline
-  implicit class `11MutableBuilder`[Self <: `11`[_], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self with `11`[EventName]) extends AnyVal {
+  implicit class `11MutableBuilder`[Self <: `11`[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & `11`[EventName]) extends AnyVal {
     
     @scala.inline
     def setData(

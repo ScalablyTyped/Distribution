@@ -3,17 +3,15 @@ package typings.linq4js
 import typings.linq4js.Linq4JS.OrderEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GroupValue extends StObject {
     
-    var GroupValue: js.Any = js.native
+    var GroupValue: js.Any
     
-    var Order: Array[OrderEntry] = js.native
+    var Order: Array[OrderEntry]
   }
   object GroupValue {
     

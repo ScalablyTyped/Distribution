@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterInfoPixelSize extends Object {
+trait RasterInfoPixelSize
+  extends StObject
+     with Object {
   
   /**
     * Pixel size along the x axis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Pixel size along the y axis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var y: Double = js.native
+  var y: Double
 }
 object RasterInfoPixelSize {
   

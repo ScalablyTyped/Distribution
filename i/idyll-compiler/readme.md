@@ -10,9 +10,9 @@ Compiler for idyll
 | ------------------ | :-------------: |
 | Full name          | idyll-compiler |
 | Keywords           | idyll, compiler |
-| # releases         | 18 |
+| # releases         | 23 |
 | # dependents       | 3 |
-| # downloads        | 5005 |
+| # downloads        | 5621 |
 | # stars            | 0 |
 
 ## Links

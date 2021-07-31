@@ -2,15 +2,13 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocodingEvent extends StObject {
   
-  var waypoint: Waypoint_ = js.native
+  var waypoint: Waypoint_
   
-  var waypointIndex: Double = js.native
+  var waypointIndex: Double
 }
 object GeocodingEvent {
   

@@ -2,21 +2,19 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ServiceDescriptorProto. */
-@js.native
 trait IServiceDescriptorProto extends StObject {
   
   /** ServiceDescriptorProto method */
-  var method: js.UndefOr[js.Array[IMethodDescriptorProto] | Null] = js.native
+  var method: js.UndefOr[js.Array[IMethodDescriptorProto] | Null] = js.undefined
   
   /** ServiceDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** ServiceDescriptorProto options */
-  var options: js.UndefOr[IServiceOptions | Null] = js.native
+  var options: js.UndefOr[IServiceOptions | Null] = js.undefined
 }
 object IServiceDescriptorProto {
   

@@ -7,7 +7,6 @@ import typings.materialSelect.anon.PartialMDCSelectIconAdapt
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,15 +15,18 @@ object mod {
   @js.native
   class MDCSelect protected ()
     extends typings.materialSelect.componentMod.MDCSelect {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialSelect.foundationMod.MDCSelectFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCSelect {
     
-    @JSImport("@material/select", "MDCSelect.attachTo")
+    @JSImport("@material/select", "MDCSelect")
     @js.native
-    def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.componentMod.MDCSelect]
   }
   
   @JSImport("@material/select", "MDCSelectFoundation")
@@ -36,7 +38,7 @@ object mod {
   class MDCSelectFoundation ()
     extends typings.materialSelect.foundationMod.MDCSelectFoundation {
     def this(adapter: PartialMDCSelectAdapter) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCSelectFoundatio) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
   }
   
@@ -44,7 +46,7 @@ object mod {
   @js.native
   class MDCSelectHelperText protected ()
     extends typings.materialSelect.indexMod.MDCSelectHelperText {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation,
@@ -54,9 +56,12 @@ object mod {
   /* static members */
   object MDCSelectHelperText {
     
-    @JSImport("@material/select", "MDCSelectHelperText.attachTo")
+    @JSImport("@material/select", "MDCSelectHelperText")
     @js.native
-    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.helperTextComponentMod.MDCSelectHelperText]
   }
   
   @JSImport("@material/select", "MDCSelectHelperTextFoundation")
@@ -70,7 +75,7 @@ object mod {
   @js.native
   class MDCSelectIcon protected ()
     extends typings.materialSelect.iconIndexMod.MDCSelectIcon {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation,
@@ -80,9 +85,12 @@ object mod {
   /* static members */
   object MDCSelectIcon {
     
-    @JSImport("@material/select", "MDCSelectIcon.attachTo")
+    @JSImport("@material/select", "MDCSelectIcon")
     @js.native
-    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.iconComponentMod.MDCSelectIcon]
   }
   
   @JSImport("@material/select", "MDCSelectIconFoundation")

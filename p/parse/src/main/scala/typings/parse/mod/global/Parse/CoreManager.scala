@@ -2,7 +2,6 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object CoreManager {
   
-  @JSGlobal("Parse.CoreManager.get")
+  @JSGlobal("Parse.CoreManager")
   @js.native
-  def get(key: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Parse.CoreManager.set")
-  @js.native
-  def set(key: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def get(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def set(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

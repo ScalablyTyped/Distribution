@@ -2,12 +2,12 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowChart
-  extends CapMixin[RowChart]
+  extends StObject
+     with CapMixin[RowChart]
      with MarginMixin[RowChart]
      with ColorMixin[RowChart]
      with BaseMixin[RowChart] {
@@ -57,7 +57,7 @@ trait RowChart
   ): RowChart = js.native
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
     RowChart
   ] = js.native
   

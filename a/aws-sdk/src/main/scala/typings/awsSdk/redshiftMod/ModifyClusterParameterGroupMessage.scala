@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterParameterGroupMessage extends StObject {
   
   /**
     * The name of the parameter group to be modified.
     */
-  var ParameterGroupName: String = js.native
+  var ParameterGroupName: String
   
   /**
     * An array of parameters to be modified. A maximum of 20 parameters can be modified in a single request. For each parameter to be modified, you must supply at least the parameter name and parameter value; other name-value pairs of the parameter are optional. For the workload management (WLM) configuration, you must supply all the name-value pairs in the wlm_json_configuration parameter.
     */
-  var Parameters: ParametersList = js.native
+  var Parameters: ParametersList
 }
 object ModifyClusterParameterGroupMessage {
   

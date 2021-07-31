@@ -2,27 +2,25 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentLink extends StObject {
   
   /**
     * A data entry field that is preserved on a document link between a
     * DocumentLinkRequest and a DocumentLinkResolveRequest.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The range this link applies to.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The uri this link points to.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * The tooltip text when you hover over this link.
@@ -33,7 +31,7 @@ trait DocumentLink extends StObject {
     *
     * @since 3.15.0
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object DocumentLink {
   
@@ -43,28 +41,27 @@ object DocumentLink {
     __obj.asInstanceOf[DocumentLink]
   }
   
+  @JSImport("vscode-languageserver-types", "DocumentLink")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DocumentLink literal.
     */
-  @JSImport("vscode-languageserver-types", "DocumentLink.create")
-  @js.native
-  def create(range: Range): DocumentLink = js.native
-  @JSImport("vscode-languageserver-types", "DocumentLink.create")
-  @js.native
-  def create(range: Range, target: js.UndefOr[scala.Nothing], data: js.Any): DocumentLink = js.native
-  @JSImport("vscode-languageserver-types", "DocumentLink.create")
-  @js.native
-  def create(range: Range, target: String): DocumentLink = js.native
-  @JSImport("vscode-languageserver-types", "DocumentLink.create")
-  @js.native
-  def create(range: Range, target: String, data: js.Any): DocumentLink = js.native
+  @scala.inline
+  def create(range: Range): DocumentLink = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentLink]
+  @scala.inline
+  def create(range: Range, target: String): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
+  @scala.inline
+  def create(range: Range, target: String, data: js.Any): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
+  @scala.inline
+  def create(range: Range, target: Unit, data: js.Any): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
   
   /**
     * Checks whether the given literal conforms to the [DocumentLink](#DocumentLink) interface.
     */
-  @JSImport("vscode-languageserver-types", "DocumentLink.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean]
   
   @scala.inline
   implicit class DocumentLinkMutableBuilder[Self <: DocumentLink] (val x: Self) extends AnyVal {

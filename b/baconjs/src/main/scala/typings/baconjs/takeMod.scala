@@ -7,19 +7,19 @@ import typings.baconjs.replyMod.Reply
 import typings.baconjs.typesMod.EventSink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object takeMod {
   
-  @JSImport("baconjs/types/take", "take")
+  @JSImport("baconjs/types/take", JSImport.Namespace)
   @js.native
-  def take[V](count: Double, src: default[V]): default[V] = js.native
-  @JSImport("baconjs/types/take", "take")
-  @js.native
-  def take[V](count: Double, src: default[V], desc: Desc): default[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/take", "takeT")
-  @js.native
-  def takeT[V](count: Double): js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply] = js.native
+  @scala.inline
+  def take[V](count: Double, src: default[V]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  @scala.inline
+  def take[V](count: Double, src: default[V], desc: Desc): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any], src.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  
+  @scala.inline
+  def takeT[V](count: Double): js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeT")(count.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply]]
 }

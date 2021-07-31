@@ -3,34 +3,34 @@ package typings.mergeImages
 import typings.mergeImages.anon.Opacity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sources: js.Array[ImageSource]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(sources: js.Array[ImageSource], options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   @JSImport("merge-images", JSImport.Namespace)
   @js.native
-  def apply(sources: js.Array[ImageSource]): js.Promise[String] = js.native
-  @JSImport("merge-images", JSImport.Namespace)
-  @js.native
-  def apply(sources: js.Array[ImageSource], options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   type ImageSource = String | Opacity
   
-  @js.native
   trait Options extends StObject {
     
-    var Canvas: js.UndefOr[js.Any] = js.native
+    var Canvas: js.UndefOr[js.Any] = js.undefined
     
-    var Image: js.UndefOr[js.Any] = js.native
+    var Image: js.UndefOr[js.Any] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

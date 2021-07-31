@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.rotate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationToggleViewModel extends Accessor {
+trait NavigationToggleViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view).

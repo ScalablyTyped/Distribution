@@ -3,25 +3,23 @@ package typings.officeUiFabricReact.detailsListTypesMod
 import typings.fluentuiTheme.ithemeMod.ITheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'className'> & {  isHorizontalConstrained :boolean | undefined,   compact :boolean | undefined,   isFixed :boolean | undefined} */
-@js.native
 trait IDetailsListStyleProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** Whether the list is in compact mode */
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the list is fixed in size */
-  var isFixed: js.UndefOr[Boolean] = js.native
+  var isFixed: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the list is horizontally constrained */
-  var isHorizontalConstrained: js.UndefOr[Boolean] = js.native
+  var isHorizontalConstrained: js.UndefOr[Boolean] = js.undefined
   
-  var theme: ITheme = js.native
+  var theme: ITheme
 }
 object IDetailsListStyleProps {
   

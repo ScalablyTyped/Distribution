@@ -11,8 +11,8 @@ A tiny JavaScript library that simplifies cookies.
 | Full name          | cookie_js |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 103929 |
+| # dependents       | 10 |
+| # downloads        | 115608 |
 | # stars            | 0 |
 
 ## Links

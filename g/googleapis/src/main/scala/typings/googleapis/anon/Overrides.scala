@@ -3,15 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.calendarV3Mod.calendarV3.SchemaEventReminder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overrides extends StObject {
   
-  var overrides: js.UndefOr[js.Array[SchemaEventReminder]] = js.native
+  var overrides: js.UndefOr[js.Array[SchemaEventReminder]] = js.undefined
   
-  var useDefault: js.UndefOr[Boolean] = js.native
+  var useDefault: js.UndefOr[Boolean] = js.undefined
 }
 object Overrides {
   

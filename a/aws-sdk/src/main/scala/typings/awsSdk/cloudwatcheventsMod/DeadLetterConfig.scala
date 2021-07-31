@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeadLetterConfig extends StObject {
   
   /**
     * The ARN of the SQS queue specified as the target for the dead-letter queue.
     */
-  var Arn: js.UndefOr[ResourceArn] = js.native
+  var Arn: js.UndefOr[ResourceArn] = js.undefined
 }
 object DeadLetterConfig {
   

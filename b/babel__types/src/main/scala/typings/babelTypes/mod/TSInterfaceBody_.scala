@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSInterfaceBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSInterfaceBody_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var body: js.Array[TSTypeElement] = js.native
+  var body: js.Array[TSTypeElement]
   
   @JSName("type")
-  var type_TSInterfaceBody_ : TSInterfaceBody = js.native
+  var type_TSInterfaceBody_ : TSInterfaceBody
 }
 object TSInterfaceBody_ {
   
   @scala.inline
-  def apply(body: js.Array[TSTypeElement], `type`: TSInterfaceBody): TSInterfaceBody_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: js.Array[TSTypeElement]): TSInterfaceBody_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSInterfaceBody")
     __obj.asInstanceOf[TSInterfaceBody_]
   }
   

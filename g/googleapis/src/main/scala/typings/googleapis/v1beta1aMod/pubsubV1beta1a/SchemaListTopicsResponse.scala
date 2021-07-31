@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the ListTopics method.
   */
-@js.native
 trait SchemaListTopicsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListTopicsResponse extends StObject {
     * request, and this value should be passed to the next
     * &lt;code&gt;ListTopicsRequest&lt;/code&gt; to continue.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The resulting topics.
     */
-  var topic: js.UndefOr[js.Array[SchemaTopic]] = js.native
+  var topic: js.UndefOr[js.Array[SchemaTopic]] = js.undefined
 }
 object SchemaListTopicsResponse {
   

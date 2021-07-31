@@ -3,10 +3,10 @@ package typings.storybookUi
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
+import typings.storybookApi.modulesStoriesMod.ViewMode
 import typings.storybookUi.anon.InitialActive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobileMod {
@@ -36,34 +36,33 @@ object mobileMod {
     def sidebar: typings.storybookUi.storybookUiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookUi.storybookUiStrings.sidebar]
   }
   
-  @js.native
   trait MobileProps extends StObject {
     
-    var Notifications: ComponentType[_] = js.native
+    var Notifications: ComponentType[js.Any]
     
-    var Panel: ComponentType[_] = js.native
+    var Panel: ComponentType[js.Any]
     
-    var Preview: ComponentType[_] = js.native
+    var Preview: ComponentType[js.Any]
     
-    var Sidebar: ComponentType[_] = js.native
+    var Sidebar: ComponentType[js.Any]
     
-    var options: InitialActive = js.native
+    var options: InitialActive
     
-    var pages: js.Array[Page] = js.native
+    var pages: js.Array[Page]
     
-    var viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any = js.native
+    var viewMode: ViewMode & js.UndefOr[String]
   }
   object MobileProps {
     
     @scala.inline
     def apply(
-      Notifications: ComponentType[_],
-      Panel: ComponentType[_],
-      Preview: ComponentType[_],
-      Sidebar: ComponentType[_],
+      Notifications: ComponentType[js.Any],
+      Panel: ComponentType[js.Any],
+      Preview: ComponentType[js.Any],
+      Sidebar: ComponentType[js.Any],
       options: InitialActive,
       pages: js.Array[Page],
-      viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
+      viewMode: ViewMode & js.UndefOr[String]
     ): MobileProps = {
       val __obj = js.Dynamic.literal(Notifications = Notifications.asInstanceOf[js.Any], Panel = Panel.asInstanceOf[js.Any], Preview = Preview.asInstanceOf[js.Any], Sidebar = Sidebar.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[MobileProps]
@@ -73,7 +72,7 @@ object mobileMod {
     implicit class MobilePropsMutableBuilder[Self <: MobileProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNotifications(value: ComponentType[_]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+      def setNotifications(value: ComponentType[js.Any]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptions(value: InitialActive): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
@@ -85,25 +84,22 @@ object mobileMod {
       def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
       @scala.inline
-      def setPanel(value: ComponentType[_]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
+      def setPanel(value: ComponentType[js.Any]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview(value: ComponentType[_]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
+      def setPreview(value: ComponentType[js.Any]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSidebar(value: ComponentType[_]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
+      def setSidebar(value: ComponentType[js.Any]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setViewMode(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-      ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait MobileState extends StObject {
     
-    var active: ActiveTabsType = js.native
+    var active: ActiveTabsType
   }
   object MobileState {
     
@@ -121,14 +117,13 @@ object mobileMod {
     }
   }
   
-  @js.native
   trait Page extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var render: FunctionComponent[js.Object] = js.native
+    var render: FunctionComponent[js.Object]
     
-    var route: FunctionComponent[js.Object] = js.native
+    var route: FunctionComponent[js.Object]
   }
   object Page {
     

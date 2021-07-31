@@ -2,7 +2,6 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,41 +11,67 @@ sealed trait SystemTriggerType extends StObject
 object SystemTriggerType extends StObject {
   
   @js.native
-  sealed trait controlChannelReset extends SystemTriggerType
+  sealed trait controlChannelReset
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait internetAvailable extends SystemTriggerType
+  sealed trait internetAvailable
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait invalid extends SystemTriggerType
+  sealed trait invalid
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait lockScreenApplicationAdded extends SystemTriggerType
+  sealed trait lockScreenApplicationAdded
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait lockScreenApplicationRemoved extends SystemTriggerType
+  sealed trait lockScreenApplicationRemoved
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait networkStateChange extends SystemTriggerType
+  sealed trait networkStateChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait onlineIdConnectedStateChange extends SystemTriggerType
+  sealed trait onlineIdConnectedStateChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait servicingComplete extends SystemTriggerType
+  sealed trait servicingComplete
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait sessionConnected extends SystemTriggerType
+  sealed trait sessionConnected
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait smsReceived extends SystemTriggerType
+  sealed trait smsReceived
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait timeZoneChange extends SystemTriggerType
+  sealed trait timeZoneChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait userAway extends SystemTriggerType
+  sealed trait userAway
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait userPresent extends SystemTriggerType
+  sealed trait userPresent
+    extends StObject
+       with SystemTriggerType
 }

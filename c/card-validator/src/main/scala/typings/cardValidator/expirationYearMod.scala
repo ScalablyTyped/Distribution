@@ -3,28 +3,28 @@ package typings.cardValidator
 import typings.cardValidator.typesMod.Verification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expirationYearMod {
   
-  @JSImport("card-validator/dist/expiration-year", "expirationYear")
+  @JSImport("card-validator/dist/expiration-year", JSImport.Namespace)
   @js.native
-  def expirationYear(value: String): ExpirationYearVerification = js.native
-  @JSImport("card-validator/dist/expiration-year", "expirationYear")
-  @js.native
-  def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = js.native
-  @JSImport("card-validator/dist/expiration-year", "expirationYear")
-  @js.native
-  def expirationYear(value: js.Any): ExpirationYearVerification = js.native
-  @JSImport("card-validator/dist/expiration-year", "expirationYear")
-  @js.native
-  def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ExpirationYearVerification extends Verification {
+  @scala.inline
+  def expirationYear(value: String): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: js.Any): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
+  
+  trait ExpirationYearVerification
+    extends StObject
+       with Verification {
     
-    var isCurrentYear: Boolean = js.native
+    var isCurrentYear: Boolean
   }
   object ExpirationYearVerification {
     

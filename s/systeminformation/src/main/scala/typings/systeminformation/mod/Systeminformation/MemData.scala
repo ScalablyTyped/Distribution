@@ -2,35 +2,33 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemData extends StObject {
   
-  var active: Double = js.native
+  var active: Double
   
-  var available: Double = js.native
+  var available: Double
   
-  var buffcache: Double = js.native
+  var buffcache: Double
   
-  var buffers: Double = js.native
+  var buffers: Double
   
-  var cached: Double = js.native
+  var cached: Double
   
-  var free: Double = js.native
+  var free: Double
   
-  var slab: Double = js.native
+  var slab: Double
   
-  var swapfree: Double = js.native
+  var swapfree: Double
   
-  var swaptotal: Double = js.native
+  var swaptotal: Double
   
-  var swapused: Double = js.native
+  var swapused: Double
   
-  var total: Double = js.native
+  var total: Double
   
-  var used: Double = js.native
+  var used: Double
 }
 object MemData {
   

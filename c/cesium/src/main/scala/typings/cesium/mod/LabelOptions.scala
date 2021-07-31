@@ -2,51 +2,49 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var backgroundPadding: js.UndefOr[Cartesian2] = js.native
+  var backgroundPadding: js.UndefOr[Cartesian2] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.native
+  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.undefined
   
-  var eyeOffset: js.UndefOr[Cartesian3] = js.native
+  var eyeOffset: js.UndefOr[Cartesian3] = js.undefined
   
-  var fillColor: js.UndefOr[Color] = js.native
+  var fillColor: js.UndefOr[Color] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var heightReference: js.UndefOr[HeightReference] = js.native
+  var heightReference: js.UndefOr[HeightReference] = js.undefined
   
-  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.native
+  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.undefined
   
-  var outlineColor: js.UndefOr[Color] = js.native
+  var outlineColor: js.UndefOr[Color] = js.undefined
   
-  var outlineWidth: js.UndefOr[Double] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.undefined
   
-  var pixelOffset: js.UndefOr[Cartesian2] = js.native
+  var pixelOffset: js.UndefOr[Cartesian2] = js.undefined
   
-  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.undefined
   
-  var position: js.UndefOr[Cartesian3] = js.native
+  var position: js.UndefOr[Cartesian3] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var showBackground: js.UndefOr[Boolean] = js.native
+  var showBackground: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[LabelStyle] = js.native
+  var style: js.UndefOr[LabelStyle] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.native
+  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.undefined
   
-  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.native
+  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.undefined
 }
 object LabelOptions {
   

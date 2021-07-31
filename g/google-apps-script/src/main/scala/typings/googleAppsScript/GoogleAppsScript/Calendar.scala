@@ -48,114 +48,112 @@ import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Settings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendar extends StObject {
   
-  var Acl: js.UndefOr[AclCollection] = js.native
+  var Acl: js.UndefOr[AclCollection] = js.undefined
   
-  var CalendarList: js.UndefOr[CalendarListCollection] = js.native
+  var CalendarList: js.UndefOr[CalendarListCollection] = js.undefined
   
-  var Calendars: js.UndefOr[CalendarsCollection] = js.native
+  var Calendars: js.UndefOr[CalendarsCollection] = js.undefined
   
-  var Channels: js.UndefOr[ChannelsCollection] = js.native
+  var Channels: js.UndefOr[ChannelsCollection] = js.undefined
   
-  var Colors: js.UndefOr[ColorsCollection] = js.native
+  var Colors: js.UndefOr[ColorsCollection] = js.undefined
   
-  var Events: js.UndefOr[EventsCollection] = js.native
+  var Events: js.UndefOr[EventsCollection] = js.undefined
   
-  var Freebusy: js.UndefOr[FreebusyCollection] = js.native
+  var Freebusy: js.UndefOr[FreebusyCollection] = js.undefined
   
-  var Settings: js.UndefOr[SettingsCollection] = js.native
+  var Settings: js.UndefOr[SettingsCollection] = js.undefined
   
   // Create a new instance of AclRule
-  def newAclRule(): AclRule = js.native
+  def newAclRule(): AclRule
   
   // Create a new instance of AclRuleScope
-  def newAclRuleScope(): AclRuleScope = js.native
+  def newAclRuleScope(): AclRuleScope
   
   // Create a new instance of Calendar
-  def newCalendar(): typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar = js.native
+  def newCalendar(): typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar
   
   // Create a new instance of CalendarListEntry
-  def newCalendarListEntry(): CalendarListEntry = js.native
+  def newCalendarListEntry(): CalendarListEntry
   
   // Create a new instance of CalendarListEntryNotificationSettings
-  def newCalendarListEntryNotificationSettings(): CalendarListEntryNotificationSettings = js.native
+  def newCalendarListEntryNotificationSettings(): CalendarListEntryNotificationSettings
   
   // Create a new instance of CalendarNotification
-  def newCalendarNotification(): CalendarNotification = js.native
+  def newCalendarNotification(): CalendarNotification
   
   // Create a new instance of Channel
-  def newChannel(): Channel = js.native
+  def newChannel(): Channel
   
   // Create a new instance of ConferenceData
-  def newConferenceData(): typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData = js.native
+  def newConferenceData(): typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData
   
   // Create a new instance of ConferenceParameters
-  def newConferenceParameters(): ConferenceParameters = js.native
+  def newConferenceParameters(): ConferenceParameters
   
   // Create a new instance of ConferenceParametersAddOnParameters
-  def newConferenceParametersAddOnParameters(): ConferenceParametersAddOnParameters = js.native
+  def newConferenceParametersAddOnParameters(): ConferenceParametersAddOnParameters
   
   // Create a new instance of ConferenceProperties
-  def newConferenceProperties(): ConferenceProperties = js.native
+  def newConferenceProperties(): ConferenceProperties
   
   // Create a new instance of ConferenceRequestStatus
-  def newConferenceRequestStatus(): ConferenceRequestStatus = js.native
+  def newConferenceRequestStatus(): ConferenceRequestStatus
   
   // Create a new instance of ConferenceSolution
-  def newConferenceSolution(): ConferenceSolution = js.native
+  def newConferenceSolution(): ConferenceSolution
   
   // Create a new instance of ConferenceSolutionKey
-  def newConferenceSolutionKey(): ConferenceSolutionKey = js.native
+  def newConferenceSolutionKey(): ConferenceSolutionKey
   
   // Create a new instance of CreateConferenceRequest
-  def newCreateConferenceRequest(): CreateConferenceRequest = js.native
+  def newCreateConferenceRequest(): CreateConferenceRequest
   
   // Create a new instance of EntryPoint
-  def newEntryPoint(): EntryPoint = js.native
+  def newEntryPoint(): EntryPoint
   
   // Create a new instance of Event
-  def newEvent(): Event = js.native
+  def newEvent(): Event
   
   // Create a new instance of EventAttachment
-  def newEventAttachment(): EventAttachment = js.native
+  def newEventAttachment(): EventAttachment
   
   // Create a new instance of EventAttendee
-  def newEventAttendee(): EventAttendee = js.native
+  def newEventAttendee(): EventAttendee
   
   // Create a new instance of EventCreator
-  def newEventCreator(): EventCreator = js.native
+  def newEventCreator(): EventCreator
   
   // Create a new instance of EventDateTime
-  def newEventDateTime(): EventDateTime = js.native
+  def newEventDateTime(): EventDateTime
   
   // Create a new instance of EventExtendedProperties
-  def newEventExtendedProperties(): EventExtendedProperties = js.native
+  def newEventExtendedProperties(): EventExtendedProperties
   
   // Create a new instance of EventGadget
-  def newEventGadget(): EventGadget = js.native
+  def newEventGadget(): EventGadget
   
   // Create a new instance of EventOrganizer
-  def newEventOrganizer(): EventOrganizer = js.native
+  def newEventOrganizer(): EventOrganizer
   
   // Create a new instance of EventReminder
-  def newEventReminder(): EventReminder = js.native
+  def newEventReminder(): EventReminder
   
   // Create a new instance of EventReminders
-  def newEventReminders(): EventReminders = js.native
+  def newEventReminders(): EventReminders
   
   // Create a new instance of EventSource
-  def newEventSource(): EventSource = js.native
+  def newEventSource(): EventSource
   
   // Create a new instance of FreeBusyRequest
-  def newFreeBusyRequest(): FreeBusyRequest = js.native
+  def newFreeBusyRequest(): FreeBusyRequest
   
   // Create a new instance of FreeBusyRequestItem
-  def newFreeBusyRequestItem(): FreeBusyRequestItem = js.native
+  def newFreeBusyRequestItem(): FreeBusyRequestItem
 }
 object Calendar {
   
@@ -205,67 +203,109 @@ object Calendar {
   object Color extends StObject {
     
     @js.native
-    sealed trait BLUE extends Color
+    sealed trait BLUE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait BROWN extends Color
+    sealed trait BROWN
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait CHARCOAL extends Color
+    sealed trait CHARCOAL
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait CHESTNUT extends Color
+    sealed trait CHESTNUT
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait GRAY extends Color
+    sealed trait GRAY
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait GREEN extends Color
+    sealed trait GREEN
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait INDIGO extends Color
+    sealed trait INDIGO
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait LIME extends Color
+    sealed trait LIME
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait MUSTARD extends Color
+    sealed trait MUSTARD
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait OLIVE extends Color
+    sealed trait OLIVE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait ORANGE extends Color
+    sealed trait ORANGE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait PINK extends Color
+    sealed trait PINK
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait PLUM extends Color
+    sealed trait PLUM
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait PURPLE extends Color
+    sealed trait PURPLE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait RED extends Color
+    sealed trait RED
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait RED_ORANGE extends Color
+    sealed trait RED_ORANGE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait SEA_BLUE extends Color
+    sealed trait SEA_BLUE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait SLATE extends Color
+    sealed trait SLATE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait TEAL extends Color
+    sealed trait TEAL
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait TURQOISE extends Color
+    sealed trait TURQOISE
+      extends StObject
+         with Color
     
     @js.native
-    sealed trait YELLOW extends Color
+    sealed trait YELLOW
+      extends StObject
+         with Color
   }
   
   @js.native
@@ -278,37 +318,59 @@ object Calendar {
   object EventColor extends StObject {
     
     @js.native
-    sealed trait BLUE extends EventColor
+    sealed trait BLUE
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait CYAN extends EventColor
+    sealed trait CYAN
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait GRAY extends EventColor
+    sealed trait GRAY
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait GREEN extends EventColor
+    sealed trait GREEN
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait MAUVE extends EventColor
+    sealed trait MAUVE
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait ORANGE extends EventColor
+    sealed trait ORANGE
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait PALE_BLUE extends EventColor
+    sealed trait PALE_BLUE
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait PALE_GREEN extends EventColor
+    sealed trait PALE_GREEN
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait PALE_RED extends EventColor
+    sealed trait PALE_RED
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait RED extends EventColor
+    sealed trait RED
+      extends StObject
+         with EventColor
     
     @js.native
-    sealed trait YELLOW extends EventColor
+    sealed trait YELLOW
+      extends StObject
+         with EventColor
   }
   
   @js.native
@@ -321,19 +383,29 @@ object Calendar {
   object GuestStatus extends StObject {
     
     @js.native
-    sealed trait INVITED extends GuestStatus
+    sealed trait INVITED
+      extends StObject
+         with GuestStatus
     
     @js.native
-    sealed trait MAYBE extends GuestStatus
+    sealed trait MAYBE
+      extends StObject
+         with GuestStatus
     
     @js.native
-    sealed trait NO extends GuestStatus
+    sealed trait NO
+      extends StObject
+         with GuestStatus
     
     @js.native
-    sealed trait OWNER extends GuestStatus
+    sealed trait OWNER
+      extends StObject
+         with GuestStatus
     
     @js.native
-    sealed trait YES extends GuestStatus
+    sealed trait YES
+      extends StObject
+         with GuestStatus
   }
   
   @js.native
@@ -346,16 +418,24 @@ object Calendar {
   object Visibility extends StObject {
     
     @js.native
-    sealed trait CONFIDENTIAL extends Visibility
+    sealed trait CONFIDENTIAL
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait DEFAULT extends Visibility
+    sealed trait DEFAULT
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait PRIVATE extends Visibility
+    sealed trait PRIVATE
+      extends StObject
+         with Visibility
     
     @js.native
-    sealed trait PUBLIC extends Visibility
+    sealed trait PUBLIC
+      extends StObject
+         with Visibility
   }
   
   /**
@@ -1175,18 +1255,17 @@ object Calendar {
   /**
     * Represents a guest of an event.
     */
-  @js.native
   trait EventGuest extends StObject {
     
-    def getAdditionalGuests(): Integer = js.native
+    def getAdditionalGuests(): Integer
     
-    def getEmail(): String = js.native
+    def getEmail(): String
     
-    def getGuestStatus(): GuestStatus = js.native
+    def getGuestStatus(): GuestStatus
     
-    def getName(): String = js.native
+    def getName(): String
     
-    /** @deprecated DO NOT USE */ def getStatus(): String = js.native
+    /** @deprecated DO NOT USE */ def getStatus(): String
   }
   object EventGuest {
     
@@ -1225,30 +1304,29 @@ object Calendar {
   /**
     * Represents the recurrence settings for an event series.
     */
-  @js.native
   trait EventRecurrence extends StObject {
     
-    def addDailyExclusion(): RecurrenceRule = js.native
+    def addDailyExclusion(): RecurrenceRule
     
-    def addDailyRule(): RecurrenceRule = js.native
+    def addDailyRule(): RecurrenceRule
     
-    def addDate(date: Date): EventRecurrence = js.native
+    def addDate(date: Date): EventRecurrence
     
-    def addDateExclusion(date: Date): EventRecurrence = js.native
+    def addDateExclusion(date: Date): EventRecurrence
     
-    def addMonthlyExclusion(): RecurrenceRule = js.native
+    def addMonthlyExclusion(): RecurrenceRule
     
-    def addMonthlyRule(): RecurrenceRule = js.native
+    def addMonthlyRule(): RecurrenceRule
     
-    def addWeeklyExclusion(): RecurrenceRule = js.native
+    def addWeeklyExclusion(): RecurrenceRule
     
-    def addWeeklyRule(): RecurrenceRule = js.native
+    def addWeeklyRule(): RecurrenceRule
     
-    def addYearlyExclusion(): RecurrenceRule = js.native
+    def addYearlyExclusion(): RecurrenceRule
     
-    def addYearlyRule(): RecurrenceRule = js.native
+    def addYearlyRule(): RecurrenceRule
     
-    def setTimeZone(timeZone: String): EventRecurrence = js.native
+    def setTimeZone(timeZone: String): EventRecurrence
   }
   object EventRecurrence {
     
@@ -1319,58 +1397,57 @@ object Calendar {
     * times(times)
     * interval(interval)
     */
-  @js.native
   trait RecurrenceRule extends StObject {
     
-    def addDailyExclusion(): RecurrenceRule = js.native
+    def addDailyExclusion(): RecurrenceRule
     
-    def addDailyRule(): RecurrenceRule = js.native
+    def addDailyRule(): RecurrenceRule
     
-    def addDate(date: Date): EventRecurrence = js.native
+    def addDate(date: Date): EventRecurrence
     
-    def addDateExclusion(date: Date): EventRecurrence = js.native
+    def addDateExclusion(date: Date): EventRecurrence
     
-    def addMonthlyExclusion(): RecurrenceRule = js.native
+    def addMonthlyExclusion(): RecurrenceRule
     
-    def addMonthlyRule(): RecurrenceRule = js.native
+    def addMonthlyRule(): RecurrenceRule
     
-    def addWeeklyExclusion(): RecurrenceRule = js.native
+    def addWeeklyExclusion(): RecurrenceRule
     
-    def addWeeklyRule(): RecurrenceRule = js.native
+    def addWeeklyRule(): RecurrenceRule
     
-    def addYearlyExclusion(): RecurrenceRule = js.native
+    def addYearlyExclusion(): RecurrenceRule
     
-    def addYearlyRule(): RecurrenceRule = js.native
+    def addYearlyRule(): RecurrenceRule
     
-    def interval(interval: Integer): RecurrenceRule = js.native
+    def interval(interval: Integer): RecurrenceRule
     
-    def onlyInMonth(month: Month): RecurrenceRule = js.native
+    def onlyInMonth(month: Month): RecurrenceRule
     
-    def onlyInMonths(months: js.Array[Month]): RecurrenceRule = js.native
+    def onlyInMonths(months: js.Array[Month]): RecurrenceRule
     
-    def onlyOnMonthDay(day: Integer): RecurrenceRule = js.native
+    def onlyOnMonthDay(day: Integer): RecurrenceRule
     
-    def onlyOnMonthDays(days: js.Array[Integer]): RecurrenceRule = js.native
+    def onlyOnMonthDays(days: js.Array[Integer]): RecurrenceRule
     
-    def onlyOnWeek(week: Integer): RecurrenceRule = js.native
+    def onlyOnWeek(week: Integer): RecurrenceRule
     
-    def onlyOnWeekday(day: Weekday): RecurrenceRule = js.native
+    def onlyOnWeekday(day: Weekday): RecurrenceRule
     
-    def onlyOnWeekdays(days: js.Array[Weekday]): RecurrenceRule = js.native
+    def onlyOnWeekdays(days: js.Array[Weekday]): RecurrenceRule
     
-    def onlyOnWeeks(weeks: js.Array[Integer]): RecurrenceRule = js.native
+    def onlyOnWeeks(weeks: js.Array[Integer]): RecurrenceRule
     
-    def onlyOnYearDay(day: Integer): RecurrenceRule = js.native
+    def onlyOnYearDay(day: Integer): RecurrenceRule
     
-    def onlyOnYearDays(days: js.Array[Integer]): RecurrenceRule = js.native
+    def onlyOnYearDays(days: js.Array[Integer]): RecurrenceRule
     
-    def setTimeZone(timeZone: String): EventRecurrence = js.native
+    def setTimeZone(timeZone: String): EventRecurrence
     
-    def times(times: Integer): RecurrenceRule = js.native
+    def times(times: Integer): RecurrenceRule
     
-    def until(endDate: Date): RecurrenceRule = js.native
+    def until(endDate: Date): RecurrenceRule
     
-    def weekStartsOn(day: Weekday): RecurrenceRule = js.native
+    def weekStartsOn(day: Weekday): RecurrenceRule
   }
   object RecurrenceRule {
     
@@ -1488,18 +1565,17 @@ object Calendar {
   
   object Schema {
     
-    @js.native
     trait Acl extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[AclRule]] = js.native
+      var items: js.UndefOr[js.Array[AclRule]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
     }
     object Acl {
       
@@ -1547,18 +1623,17 @@ object Calendar {
       }
     }
     
-    @js.native
     trait AclRule extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[AclRuleScope] = js.native
+      var scope: js.UndefOr[AclRuleScope] = js.undefined
     }
     object AclRule {
       
@@ -1603,12 +1678,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait AclRuleScope extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object AclRuleScope {
       
@@ -1635,24 +1709,23 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Calendar extends StObject {
       
-      var conferenceProperties: js.UndefOr[ConferenceProperties] = js.native
+      var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var summary: js.UndefOr[String] = js.native
+      var summary: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
     }
     object Calendar {
       
@@ -1715,18 +1788,17 @@ object Calendar {
       }
     }
     
-    @js.native
     trait CalendarList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[CalendarListEntry]] = js.native
+      var items: js.UndefOr[js.Array[CalendarListEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
     }
     object CalendarList {
       
@@ -1774,46 +1846,45 @@ object Calendar {
       }
     }
     
-    @js.native
     trait CalendarListEntry extends StObject {
       
-      var accessRole: js.UndefOr[String] = js.native
+      var accessRole: js.UndefOr[String] = js.undefined
       
-      var backgroundColor: js.UndefOr[String] = js.native
+      var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var colorId: js.UndefOr[String] = js.native
+      var colorId: js.UndefOr[String] = js.undefined
       
-      var conferenceProperties: js.UndefOr[ConferenceProperties] = js.native
+      var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
       
-      var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.native
+      var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var foregroundColor: js.UndefOr[String] = js.native
+      var foregroundColor: js.UndefOr[String] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var notificationSettings: js.UndefOr[CalendarListEntryNotificationSettings] = js.native
+      var notificationSettings: js.UndefOr[CalendarListEntryNotificationSettings] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var selected: js.UndefOr[Boolean] = js.native
+      var selected: js.UndefOr[Boolean] = js.undefined
       
-      var summary: js.UndefOr[String] = js.native
+      var summary: js.UndefOr[String] = js.undefined
       
-      var summaryOverride: js.UndefOr[String] = js.native
+      var summaryOverride: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
     }
     object CalendarListEntry {
       
@@ -1945,10 +2016,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait CalendarListEntryNotificationSettings extends StObject {
       
-      var notifications: js.UndefOr[js.Array[CalendarNotification]] = js.native
+      var notifications: js.UndefOr[js.Array[CalendarNotification]] = js.undefined
     }
     object CalendarListEntryNotificationSettings {
       
@@ -1972,12 +2042,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait CalendarNotification extends StObject {
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CalendarNotification {
       
@@ -2004,28 +2073,27 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Channel extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
-      var payload: js.UndefOr[Boolean] = js.native
+      var payload: js.UndefOr[Boolean] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceUri: js.UndefOr[String] = js.native
+      var resourceUri: js.UndefOr[String] = js.undefined
       
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Channel {
       
@@ -2100,12 +2168,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ColorDefinition extends StObject {
       
-      var background: js.UndefOr[String] = js.native
+      var background: js.UndefOr[String] = js.undefined
       
-      var foreground: js.UndefOr[String] = js.native
+      var foreground: js.UndefOr[String] = js.undefined
     }
     object ColorDefinition {
       
@@ -2132,16 +2199,15 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Colors extends StObject {
       
-      var calendar: js.UndefOr[js.Object] = js.native
+      var calendar: js.UndefOr[js.Object] = js.undefined
       
-      var event: js.UndefOr[js.Object] = js.native
+      var event: js.UndefOr[js.Object] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object Colors {
       
@@ -2180,22 +2246,21 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceData extends StObject {
       
-      var conferenceId: js.UndefOr[String] = js.native
+      var conferenceId: js.UndefOr[String] = js.undefined
       
-      var conferenceSolution: js.UndefOr[ConferenceSolution] = js.native
+      var conferenceSolution: js.UndefOr[ConferenceSolution] = js.undefined
       
-      var createRequest: js.UndefOr[CreateConferenceRequest] = js.native
+      var createRequest: js.UndefOr[CreateConferenceRequest] = js.undefined
       
-      var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.native
+      var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var parameters: js.UndefOr[ConferenceParameters] = js.native
+      var parameters: js.UndefOr[ConferenceParameters] = js.undefined
       
-      var signature: js.UndefOr[String] = js.native
+      var signature: js.UndefOr[String] = js.undefined
     }
     object ConferenceData {
       
@@ -2255,10 +2320,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceParameters extends StObject {
       
-      var addOnParameters: js.UndefOr[ConferenceParametersAddOnParameters] = js.native
+      var addOnParameters: js.UndefOr[ConferenceParametersAddOnParameters] = js.undefined
     }
     object ConferenceParameters {
       
@@ -2279,10 +2343,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceParametersAddOnParameters extends StObject {
       
-      var parameters: js.UndefOr[Record[String, String]] = js.native
+      var parameters: js.UndefOr[Record[String, String]] = js.undefined
     }
     object ConferenceParametersAddOnParameters {
       
@@ -2303,10 +2366,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceProperties extends StObject {
       
-      var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.native
+      var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ConferenceProperties {
       
@@ -2330,10 +2392,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceRequestStatus extends StObject {
       
-      var statusCode: js.UndefOr[String] = js.native
+      var statusCode: js.UndefOr[String] = js.undefined
     }
     object ConferenceRequestStatus {
       
@@ -2354,14 +2415,13 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceSolution extends StObject {
       
-      var iconUri: js.UndefOr[String] = js.native
+      var iconUri: js.UndefOr[String] = js.undefined
       
-      var key: js.UndefOr[ConferenceSolutionKey] = js.native
+      var key: js.UndefOr[ConferenceSolutionKey] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ConferenceSolution {
       
@@ -2394,10 +2454,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait ConferenceSolutionKey extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ConferenceSolutionKey {
       
@@ -2418,14 +2477,13 @@ object Calendar {
       }
     }
     
-    @js.native
     trait CreateConferenceRequest extends StObject {
       
-      var conferenceSolutionKey: js.UndefOr[ConferenceSolutionKey] = js.native
+      var conferenceSolutionKey: js.UndefOr[ConferenceSolutionKey] = js.undefined
       
-      var requestId: js.UndefOr[String] = js.native
+      var requestId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[ConferenceRequestStatus] = js.native
+      var status: js.UndefOr[ConferenceRequestStatus] = js.undefined
     }
     object CreateConferenceRequest {
       
@@ -2458,28 +2516,27 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EntryPoint extends StObject {
       
-      var accessCode: js.UndefOr[String] = js.native
+      var accessCode: js.UndefOr[String] = js.undefined
       
-      var entryPointFeatures: js.UndefOr[js.Array[String]] = js.native
+      var entryPointFeatures: js.UndefOr[js.Array[String]] = js.undefined
       
-      var entryPointType: js.UndefOr[String] = js.native
+      var entryPointType: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var meetingCode: js.UndefOr[String] = js.native
+      var meetingCode: js.UndefOr[String] = js.undefined
       
-      var passcode: js.UndefOr[String] = js.native
+      var passcode: js.UndefOr[String] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var pin: js.UndefOr[String] = js.native
+      var pin: js.UndefOr[String] = js.undefined
       
-      var regionCode: js.UndefOr[String] = js.native
+      var regionCode: js.UndefOr[String] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
     }
     object EntryPoint {
       
@@ -2557,12 +2614,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Error extends StObject {
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object Error {
       
@@ -2589,84 +2645,83 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Event extends StObject {
       
-      var anyoneCanAddSelf: js.UndefOr[Boolean] = js.native
+      var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
       
-      var attachments: js.UndefOr[js.Array[EventAttachment]] = js.native
+      var attachments: js.UndefOr[js.Array[EventAttachment]] = js.undefined
       
-      var attendees: js.UndefOr[js.Array[EventAttendee]] = js.native
+      var attendees: js.UndefOr[js.Array[EventAttendee]] = js.undefined
       
-      var attendeesOmitted: js.UndefOr[Boolean] = js.native
+      var attendeesOmitted: js.UndefOr[Boolean] = js.undefined
       
-      var colorId: js.UndefOr[String] = js.native
+      var colorId: js.UndefOr[String] = js.undefined
       
-      var conferenceData: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData] = js.native
+      var conferenceData: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var creator: js.UndefOr[EventCreator] = js.native
+      var creator: js.UndefOr[EventCreator] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var end: js.UndefOr[EventDateTime] = js.native
+      var end: js.UndefOr[EventDateTime] = js.undefined
       
-      var endTimeUnspecified: js.UndefOr[Boolean] = js.native
+      var endTimeUnspecified: js.UndefOr[Boolean] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var extendedProperties: js.UndefOr[EventExtendedProperties] = js.native
+      var extendedProperties: js.UndefOr[EventExtendedProperties] = js.undefined
       
-      var gadget: js.UndefOr[EventGadget] = js.native
+      var gadget: js.UndefOr[EventGadget] = js.undefined
       
-      var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native
+      var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
       
-      var guestsCanModify: js.UndefOr[Boolean] = js.native
+      var guestsCanModify: js.UndefOr[Boolean] = js.undefined
       
-      var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.native
+      var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
       
-      var hangoutLink: js.UndefOr[String] = js.native
+      var hangoutLink: js.UndefOr[String] = js.undefined
       
-      var htmlLink: js.UndefOr[String] = js.native
+      var htmlLink: js.UndefOr[String] = js.undefined
       
-      var iCalUID: js.UndefOr[String] = js.native
+      var iCalUID: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var locked: js.UndefOr[Boolean] = js.native
+      var locked: js.UndefOr[Boolean] = js.undefined
       
-      var organizer: js.UndefOr[EventOrganizer] = js.native
+      var organizer: js.UndefOr[EventOrganizer] = js.undefined
       
-      var originalStartTime: js.UndefOr[EventDateTime] = js.native
+      var originalStartTime: js.UndefOr[EventDateTime] = js.undefined
       
-      var privateCopy: js.UndefOr[Boolean] = js.native
+      var privateCopy: js.UndefOr[Boolean] = js.undefined
       
-      var recurrence: js.UndefOr[js.Array[String]] = js.native
+      var recurrence: js.UndefOr[js.Array[String]] = js.undefined
       
-      var recurringEventId: js.UndefOr[String] = js.native
+      var recurringEventId: js.UndefOr[String] = js.undefined
       
-      var reminders: js.UndefOr[EventReminders] = js.native
+      var reminders: js.UndefOr[EventReminders] = js.undefined
       
-      var sequence: js.UndefOr[Double] = js.native
+      var sequence: js.UndefOr[Double] = js.undefined
       
-      var source: js.UndefOr[EventSource] = js.native
+      var source: js.UndefOr[EventSource] = js.undefined
       
-      var start: js.UndefOr[EventDateTime] = js.native
+      var start: js.UndefOr[EventDateTime] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var summary: js.UndefOr[String] = js.native
+      var summary: js.UndefOr[String] = js.undefined
       
-      var transparency: js.UndefOr[String] = js.native
+      var transparency: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var visibility: js.UndefOr[String] = js.native
+      var visibility: js.UndefOr[String] = js.undefined
     }
     object Event {
       
@@ -2918,18 +2973,17 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventAttachment extends StObject {
       
-      var fileId: js.UndefOr[String] = js.native
+      var fileId: js.UndefOr[String] = js.undefined
       
-      var fileUrl: js.UndefOr[String] = js.native
+      var fileUrl: js.UndefOr[String] = js.undefined
       
-      var iconLink: js.UndefOr[String] = js.native
+      var iconLink: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object EventAttachment {
       
@@ -2974,28 +3028,27 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventAttendee extends StObject {
       
-      var additionalGuests: js.UndefOr[Double] = js.native
+      var additionalGuests: js.UndefOr[Double] = js.undefined
       
-      var comment: js.UndefOr[String] = js.native
+      var comment: js.UndefOr[String] = js.undefined
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var optional: js.UndefOr[Boolean] = js.native
+      var optional: js.UndefOr[Boolean] = js.undefined
       
-      var organizer: js.UndefOr[Boolean] = js.native
+      var organizer: js.UndefOr[Boolean] = js.undefined
       
-      var resource: js.UndefOr[Boolean] = js.native
+      var resource: js.UndefOr[Boolean] = js.undefined
       
-      var responseStatus: js.UndefOr[String] = js.native
+      var responseStatus: js.UndefOr[String] = js.undefined
       
-      var self: js.UndefOr[Boolean] = js.native
+      var self: js.UndefOr[Boolean] = js.undefined
     }
     object EventAttendee {
       
@@ -3070,16 +3123,15 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventCreator extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var self: js.UndefOr[Boolean] = js.native
+      var self: js.UndefOr[Boolean] = js.undefined
     }
     object EventCreator {
       
@@ -3118,14 +3170,13 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventDateTime extends StObject {
       
-      var date: js.UndefOr[String] = js.native
+      var date: js.UndefOr[String] = js.undefined
       
-      var dateTime: js.UndefOr[String] = js.native
+      var dateTime: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
     }
     object EventDateTime {
       
@@ -3158,12 +3209,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventExtendedProperties extends StObject {
       
-      var `private`: js.UndefOr[Record[String, String]] = js.native
+      var `private`: js.UndefOr[Record[String, String]] = js.undefined
       
-      var shared: js.UndefOr[Record[String, String]] = js.native
+      var shared: js.UndefOr[Record[String, String]] = js.undefined
     }
     object EventExtendedProperties {
       
@@ -3190,24 +3240,23 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventGadget extends StObject {
       
-      var display: js.UndefOr[String] = js.native
+      var display: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var iconLink: js.UndefOr[String] = js.native
+      var iconLink: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
-      var preferences: js.UndefOr[js.Object] = js.native
+      var preferences: js.UndefOr[js.Object] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object EventGadget {
       
@@ -3270,16 +3319,15 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventOrganizer extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var self: js.UndefOr[Boolean] = js.native
+      var self: js.UndefOr[Boolean] = js.undefined
     }
     object EventOrganizer {
       
@@ -3318,12 +3366,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventReminder extends StObject {
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var minutes: js.UndefOr[Double] = js.native
+      var minutes: js.UndefOr[Double] = js.undefined
     }
     object EventReminder {
       
@@ -3350,12 +3397,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventReminders extends StObject {
       
-      var overrides: js.UndefOr[js.Array[EventReminder]] = js.native
+      var overrides: js.UndefOr[js.Array[EventReminder]] = js.undefined
       
-      var useDefault: js.UndefOr[Boolean] = js.native
+      var useDefault: js.UndefOr[Boolean] = js.undefined
     }
     object EventReminders {
       
@@ -3385,12 +3431,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait EventSource extends StObject {
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object EventSource {
       
@@ -3417,30 +3462,29 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Events extends StObject {
       
-      var accessRole: js.UndefOr[String] = js.native
+      var accessRole: js.UndefOr[String] = js.undefined
       
-      var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.native
+      var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Event]] = js.native
+      var items: js.UndefOr[js.Array[Event]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
       
-      var summary: js.UndefOr[String] = js.native
+      var summary: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object Events {
       
@@ -3527,12 +3571,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait FreeBusyCalendar extends StObject {
       
-      var busy: js.UndefOr[js.Array[TimePeriod]] = js.native
+      var busy: js.UndefOr[js.Array[TimePeriod]] = js.undefined
       
-      var errors: js.UndefOr[js.Array[Error]] = js.native
+      var errors: js.UndefOr[js.Array[Error]] = js.undefined
     }
     object FreeBusyCalendar {
       
@@ -3565,12 +3608,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait FreeBusyGroup extends StObject {
       
-      var calendars: js.UndefOr[js.Array[String]] = js.native
+      var calendars: js.UndefOr[js.Array[String]] = js.undefined
       
-      var errors: js.UndefOr[js.Array[Error]] = js.native
+      var errors: js.UndefOr[js.Array[Error]] = js.undefined
     }
     object FreeBusyGroup {
       
@@ -3603,20 +3645,19 @@ object Calendar {
       }
     }
     
-    @js.native
     trait FreeBusyRequest extends StObject {
       
-      var calendarExpansionMax: js.UndefOr[Double] = js.native
+      var calendarExpansionMax: js.UndefOr[Double] = js.undefined
       
-      var groupExpansionMax: js.UndefOr[Double] = js.native
+      var groupExpansionMax: js.UndefOr[Double] = js.undefined
       
-      var items: js.UndefOr[js.Array[FreeBusyRequestItem]] = js.native
+      var items: js.UndefOr[js.Array[FreeBusyRequestItem]] = js.undefined
       
-      var timeMax: js.UndefOr[String] = js.native
+      var timeMax: js.UndefOr[String] = js.undefined
       
-      var timeMin: js.UndefOr[String] = js.native
+      var timeMin: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
     }
     object FreeBusyRequest {
       
@@ -3670,10 +3711,9 @@ object Calendar {
       }
     }
     
-    @js.native
     trait FreeBusyRequestItem extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object FreeBusyRequestItem {
       
@@ -3694,18 +3734,17 @@ object Calendar {
       }
     }
     
-    @js.native
     trait FreeBusyResponse extends StObject {
       
-      var calendars: js.UndefOr[js.Object] = js.native
+      var calendars: js.UndefOr[js.Object] = js.undefined
       
-      var groups: js.UndefOr[js.Object] = js.native
+      var groups: js.UndefOr[js.Object] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var timeMax: js.UndefOr[String] = js.native
+      var timeMax: js.UndefOr[String] = js.undefined
       
-      var timeMin: js.UndefOr[String] = js.native
+      var timeMin: js.UndefOr[String] = js.undefined
     }
     object FreeBusyResponse {
       
@@ -3750,16 +3789,15 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Setting extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Setting {
       
@@ -3798,18 +3836,17 @@ object Calendar {
       }
     }
     
-    @js.native
     trait Settings extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Setting]] = js.native
+      var items: js.UndefOr[js.Array[Setting]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
     }
     object Settings {
       
@@ -3857,12 +3894,11 @@ object Calendar {
       }
     }
     
-    @js.native
     trait TimePeriod extends StObject {
       
-      var end: js.UndefOr[String] = js.native
+      var end: js.UndefOr[String] = js.undefined
       
-      var start: js.UndefOr[String] = js.native
+      var start: js.UndefOr[String] = js.undefined
     }
     object TimePeriod {
       

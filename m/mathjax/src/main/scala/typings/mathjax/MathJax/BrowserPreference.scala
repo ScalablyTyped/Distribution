@@ -2,23 +2,21 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserPreference extends StObject {
   
-  var Chrome: js.UndefOr[String] = js.native
+  var Chrome: js.UndefOr[String] = js.undefined
   
-  var Firefox: js.UndefOr[String] = js.native
+  var Firefox: js.UndefOr[String] = js.undefined
   
-  var MSIE: js.UndefOr[String] = js.native
+  var MSIE: js.UndefOr[String] = js.undefined
   
-  var Opera: js.UndefOr[String] = js.native
+  var Opera: js.UndefOr[String] = js.undefined
   
-  var Safari: js.UndefOr[String] = js.native
+  var Safari: js.UndefOr[String] = js.undefined
   
-  var other: js.UndefOr[String] = js.native
+  var other: js.UndefOr[String] = js.undefined
 }
 object BrowserPreference {
   

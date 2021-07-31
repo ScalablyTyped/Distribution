@@ -65,349 +65,347 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrinsicElements extends StObject {
   
-  var a: AnchorHTMLAttributes[HTMLAnchorElement] = js.native
+  var a: AnchorHTMLAttributes[HTMLAnchorElement]
   
-  var abbr: HTMLAttributes[HTMLElement] = js.native
+  var abbr: HTMLAttributes[HTMLElement]
   
-  var address: HTMLAttributes[HTMLElement] = js.native
+  var address: HTMLAttributes[HTMLElement]
   
-  var animate: SVGAttributes[SVGElement] = js.native
+  var animate: SVGAttributes[SVGElement]
   
-  var area: AreaHTMLAttributes[HTMLAreaElement] = js.native
+  var area: AreaHTMLAttributes[HTMLAreaElement]
   
-  var article: HTMLAttributes[HTMLElement] = js.native
+  var article: HTMLAttributes[HTMLElement]
   
-  var aside: HTMLAttributes[HTMLElement] = js.native
+  var aside: HTMLAttributes[HTMLElement]
   
-  var audio: AudioHTMLAttributes[HTMLAudioElement] = js.native
+  var audio: AudioHTMLAttributes[HTMLAudioElement]
   
-  var b: HTMLAttributes[HTMLElement] = js.native
+  var b: HTMLAttributes[HTMLElement]
   
-  var base: BaseHTMLAttributes[HTMLBaseElement] = js.native
+  var base: BaseHTMLAttributes[HTMLBaseElement]
   
-  var bdi: HTMLAttributes[HTMLElement] = js.native
+  var bdi: HTMLAttributes[HTMLElement]
   
-  var bdo: HTMLAttributes[HTMLElement] = js.native
+  var bdo: HTMLAttributes[HTMLElement]
   
-  var big: HTMLAttributes[HTMLElement] = js.native
+  var big: HTMLAttributes[HTMLElement]
   
-  var blockquote: BlockquoteHTMLAttributes[HTMLQuoteElement] = js.native
+  var blockquote: BlockquoteHTMLAttributes[HTMLQuoteElement]
   
-  var body: HTMLAttributes[HTMLBodyElement] = js.native
+  var body: HTMLAttributes[HTMLBodyElement]
   
-  var br: HTMLAttributes[HTMLBRElement] = js.native
+  var br: HTMLAttributes[HTMLBRElement]
   
-  var button: ButtonHTMLAttributes[HTMLButtonElement] = js.native
+  var button: ButtonHTMLAttributes[HTMLButtonElement]
   
-  var canvas: CanvasHTMLAttributes[HTMLCanvasElement] = js.native
+  var canvas: CanvasHTMLAttributes[HTMLCanvasElement]
   
-  var caption: HTMLAttributes[HTMLTableCaptionElement] = js.native
+  var caption: HTMLAttributes[HTMLTableCaptionElement]
   
-  var circle: SVGAttributes[SVGElement] = js.native
+  var circle: SVGAttributes[SVGElement]
   
-  var cite: HTMLAttributes[HTMLElement] = js.native
+  var cite: HTMLAttributes[HTMLElement]
   
-  var clipPath: SVGAttributes[SVGElement] = js.native
+  var clipPath: SVGAttributes[SVGElement]
   
-  var code: HTMLAttributes[HTMLElement] = js.native
+  var code: HTMLAttributes[HTMLElement]
   
-  var col: ColHTMLAttributes[HTMLTableColElement] = js.native
+  var col: ColHTMLAttributes[HTMLTableColElement]
   
-  var colgroup: ColgroupHTMLAttributes[HTMLTableColElement] = js.native
+  var colgroup: ColgroupHTMLAttributes[HTMLTableColElement]
   
-  var data: HTMLAttributes[HTMLDataElement] = js.native
+  var data: HTMLAttributes[HTMLDataElement]
   
-  var datalist: HTMLAttributes[HTMLDataListElement] = js.native
+  var datalist: HTMLAttributes[HTMLDataListElement]
   
-  var dd: HTMLAttributes[HTMLElement] = js.native
+  var dd: HTMLAttributes[HTMLElement]
   
-  var defs: SVGAttributes[SVGElement] = js.native
+  var defs: SVGAttributes[SVGElement]
   
-  var del: DelHTMLAttributes[HTMLModElement] = js.native
+  var del: DelHTMLAttributes[HTMLModElement]
   
-  var desc: SVGAttributes[SVGElement] = js.native
+  var desc: SVGAttributes[SVGElement]
   
-  var details: DetailsHTMLAttributes[HTMLElement] = js.native
+  var details: DetailsHTMLAttributes[HTMLElement]
   
-  var dfn: HTMLAttributes[HTMLElement] = js.native
+  var dfn: HTMLAttributes[HTMLElement]
   
-  var dialog: DialogHTMLAttributes[HTMLDialogElement] = js.native
+  var dialog: DialogHTMLAttributes[HTMLDialogElement]
   
-  var div: HTMLAttributes[HTMLDivElement] = js.native
+  var div: HTMLAttributes[HTMLDivElement]
   
-  var dl: HTMLAttributes[HTMLDListElement] = js.native
+  var dl: HTMLAttributes[HTMLDListElement]
   
-  var dt: HTMLAttributes[HTMLElement] = js.native
+  var dt: HTMLAttributes[HTMLElement]
   
-  var ellipse: SVGAttributes[SVGElement] = js.native
+  var ellipse: SVGAttributes[SVGElement]
   
-  var em: HTMLAttributes[HTMLElement] = js.native
+  var em: HTMLAttributes[HTMLElement]
   
-  var embed: EmbedHTMLAttributes[HTMLEmbedElement] = js.native
+  var embed: EmbedHTMLAttributes[HTMLEmbedElement]
   
-  var feBlend: SVGAttributes[SVGElement] = js.native
+  var feBlend: SVGAttributes[SVGElement]
   
-  var feColorMatrix: SVGAttributes[SVGElement] = js.native
+  var feColorMatrix: SVGAttributes[SVGElement]
   
-  var feComponentTransfer: SVGAttributes[SVGElement] = js.native
+  var feComponentTransfer: SVGAttributes[SVGElement]
   
-  var feComposite: SVGAttributes[SVGElement] = js.native
+  var feComposite: SVGAttributes[SVGElement]
   
-  var feConvolveMatrix: SVGAttributes[SVGElement] = js.native
+  var feConvolveMatrix: SVGAttributes[SVGElement]
   
-  var feDiffuseLighting: SVGAttributes[SVGElement] = js.native
+  var feDiffuseLighting: SVGAttributes[SVGElement]
   
-  var feDisplacementMap: SVGAttributes[SVGElement] = js.native
+  var feDisplacementMap: SVGAttributes[SVGElement]
   
-  var feDistantLight: SVGAttributes[SVGElement] = js.native
+  var feDistantLight: SVGAttributes[SVGElement]
   
-  var feDropShadow: SVGAttributes[SVGElement] = js.native
+  var feDropShadow: SVGAttributes[SVGElement]
   
-  var feFlood: SVGAttributes[SVGElement] = js.native
+  var feFlood: SVGAttributes[SVGElement]
   
-  var feFuncA: SVGAttributes[SVGElement] = js.native
+  var feFuncA: SVGAttributes[SVGElement]
   
-  var feFuncB: SVGAttributes[SVGElement] = js.native
+  var feFuncB: SVGAttributes[SVGElement]
   
-  var feFuncG: SVGAttributes[SVGElement] = js.native
+  var feFuncG: SVGAttributes[SVGElement]
   
-  var feFuncR: SVGAttributes[SVGElement] = js.native
+  var feFuncR: SVGAttributes[SVGElement]
   
-  var feGaussianBlur: SVGAttributes[SVGElement] = js.native
+  var feGaussianBlur: SVGAttributes[SVGElement]
   
-  var feImage: SVGAttributes[SVGElement] = js.native
+  var feImage: SVGAttributes[SVGElement]
   
-  var feMerge: SVGAttributes[SVGElement] = js.native
+  var feMerge: SVGAttributes[SVGElement]
   
-  var feMergeNode: SVGAttributes[SVGElement] = js.native
+  var feMergeNode: SVGAttributes[SVGElement]
   
-  var feMorphology: SVGAttributes[SVGElement] = js.native
+  var feMorphology: SVGAttributes[SVGElement]
   
-  var feOffset: SVGAttributes[SVGElement] = js.native
+  var feOffset: SVGAttributes[SVGElement]
   
-  var fePointLight: SVGAttributes[SVGElement] = js.native
+  var fePointLight: SVGAttributes[SVGElement]
   
-  var feSpecularLighting: SVGAttributes[SVGElement] = js.native
+  var feSpecularLighting: SVGAttributes[SVGElement]
   
-  var feSpotLight: SVGAttributes[SVGElement] = js.native
+  var feSpotLight: SVGAttributes[SVGElement]
   
-  var feTile: SVGAttributes[SVGElement] = js.native
+  var feTile: SVGAttributes[SVGElement]
   
-  var feTurbulence: SVGAttributes[SVGElement] = js.native
+  var feTurbulence: SVGAttributes[SVGElement]
   
-  var fieldset: FieldsetHTMLAttributes[HTMLFieldSetElement] = js.native
+  var fieldset: FieldsetHTMLAttributes[HTMLFieldSetElement]
   
-  var figcaption: HTMLAttributes[HTMLElement] = js.native
+  var figcaption: HTMLAttributes[HTMLElement]
   
-  var figure: HTMLAttributes[HTMLElement] = js.native
+  var figure: HTMLAttributes[HTMLElement]
   
-  var filter: SVGAttributes[SVGElement] = js.native
+  var filter: SVGAttributes[SVGElement]
   
-  var footer: HTMLAttributes[HTMLElement] = js.native
+  var footer: HTMLAttributes[HTMLElement]
   
-  var foreignObject: SVGAttributes[SVGElement] = js.native
+  var foreignObject: SVGAttributes[SVGElement]
   
-  var form: FormHTMLAttributes[HTMLFormElement] = js.native
+  var form: FormHTMLAttributes[HTMLFormElement]
   
-  var g: SVGAttributes[SVGElement] = js.native
+  var g: SVGAttributes[SVGElement]
   
-  var h1: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h1: HTMLAttributes[HTMLHeadingElement]
   
-  var h2: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h2: HTMLAttributes[HTMLHeadingElement]
   
-  var h3: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h3: HTMLAttributes[HTMLHeadingElement]
   
-  var h4: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h4: HTMLAttributes[HTMLHeadingElement]
   
-  var h5: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h5: HTMLAttributes[HTMLHeadingElement]
   
-  var h6: HTMLAttributes[HTMLHeadingElement] = js.native
+  var h6: HTMLAttributes[HTMLHeadingElement]
   
-  var head: HTMLAttributes[HTMLHeadElement] = js.native
+  var head: HTMLAttributes[HTMLHeadElement]
   
-  var header: HTMLAttributes[HTMLElement] = js.native
+  var header: HTMLAttributes[HTMLElement]
   
-  var hgroup: HTMLAttributes[HTMLElement] = js.native
+  var hgroup: HTMLAttributes[HTMLElement]
   
-  var hr: HTMLAttributes[HTMLHRElement] = js.native
+  var hr: HTMLAttributes[HTMLHRElement]
   
-  var html: HTMLAttributes[HTMLHtmlElement] = js.native
+  var html: HTMLAttributes[HTMLHtmlElement]
   
-  var i: HTMLAttributes[HTMLElement] = js.native
+  var i: HTMLAttributes[HTMLElement]
   
-  var iframe: IframeHTMLAttributes[HTMLIFrameElement] = js.native
+  var iframe: IframeHTMLAttributes[HTMLIFrameElement]
   
-  var image: SVGAttributes[SVGElement] = js.native
+  var image: SVGAttributes[SVGElement]
   
-  var img: ImgHTMLAttributes[HTMLImageElement] = js.native
+  var img: ImgHTMLAttributes[HTMLImageElement]
   
-  var input: InputHTMLAttributes[HTMLInputElement] = js.native
+  var input: InputHTMLAttributes[HTMLInputElement]
   
-  var ins: InsHTMLAttributes[HTMLModElement] = js.native
+  var ins: InsHTMLAttributes[HTMLModElement]
   
-  var kbd: HTMLAttributes[HTMLElement] = js.native
+  var kbd: HTMLAttributes[HTMLElement]
   
-  var keygen: KeygenHTMLAttributes[HTMLElement] = js.native
+  var keygen: KeygenHTMLAttributes[HTMLElement]
   
-  var label: LabelHTMLAttributes[HTMLLabelElement] = js.native
+  var label: LabelHTMLAttributes[HTMLLabelElement]
   
-  var legend: HTMLAttributes[HTMLLegendElement] = js.native
+  var legend: HTMLAttributes[HTMLLegendElement]
   
-  var li: LiHTMLAttributes[HTMLLIElement] = js.native
+  var li: LiHTMLAttributes[HTMLLIElement]
   
-  var line: SVGAttributes[SVGElement] = js.native
+  var line: SVGAttributes[SVGElement]
   
-  var linearGradient: SVGAttributes[SVGElement] = js.native
+  var linearGradient: SVGAttributes[SVGElement]
   
-  var link: LinkHTMLAttributes[HTMLLinkElement] = js.native
+  var link: LinkHTMLAttributes[HTMLLinkElement]
   
-  var main: HTMLAttributes[HTMLElement] = js.native
+  var main: HTMLAttributes[HTMLElement]
   
-  var map: MapHTMLAttributes[HTMLMapElement] = js.native
+  var map: MapHTMLAttributes[HTMLMapElement]
   
-  var mark: HTMLAttributes[HTMLElement] = js.native
+  var mark: HTMLAttributes[HTMLElement]
   
-  var marker: SVGAttributes[SVGElement] = js.native
+  var marker: SVGAttributes[SVGElement]
   
-  var mask: SVGAttributes[SVGElement] = js.native
+  var mask: SVGAttributes[SVGElement]
   
-  var menu: MenuHTMLAttributes[HTMLMenuElement] = js.native
+  var menu: MenuHTMLAttributes[HTMLMenuElement]
   
-  var menuitem: HTMLAttributes[HTMLElement] = js.native
+  var menuitem: HTMLAttributes[HTMLElement]
   
-  var meta: MetaHTMLAttributes[HTMLMetaElement] = js.native
+  var meta: MetaHTMLAttributes[HTMLMetaElement]
   
-  var metadata: SVGAttributes[SVGElement] = js.native
+  var metadata: SVGAttributes[SVGElement]
   
-  var meter: MeterHTMLAttributes[HTMLMeterElement] = js.native
+  var meter: MeterHTMLAttributes[HTMLMeterElement]
   
-  var nav: HTMLAttributes[HTMLElement] = js.native
+  var nav: HTMLAttributes[HTMLElement]
   
-  var noscript: HTMLAttributes[HTMLElement] = js.native
+  var noscript: HTMLAttributes[HTMLElement]
   
-  var `object`: ObjectHTMLAttributes[HTMLObjectElement] = js.native
+  var `object`: ObjectHTMLAttributes[HTMLObjectElement]
   
-  var ol: OlHTMLAttributes[HTMLOListElement] = js.native
+  var ol: OlHTMLAttributes[HTMLOListElement]
   
-  var optgroup: OptgroupHTMLAttributes[HTMLOptGroupElement] = js.native
+  var optgroup: OptgroupHTMLAttributes[HTMLOptGroupElement]
   
-  var option: OptionHTMLAttributes[HTMLOptionElement] = js.native
+  var option: OptionHTMLAttributes[HTMLOptionElement]
   
-  var output: OutputHTMLAttributes[HTMLOutputElement] = js.native
+  var output: OutputHTMLAttributes[HTMLOutputElement]
   
-  var p: HTMLAttributes[HTMLParagraphElement] = js.native
+  var p: HTMLAttributes[HTMLParagraphElement]
   
-  var param: ParamHTMLAttributes[HTMLParamElement] = js.native
+  var param: ParamHTMLAttributes[HTMLParamElement]
   
-  var path: SVGAttributes[SVGElement] = js.native
+  var path: SVGAttributes[SVGElement]
   
-  var pattern: SVGAttributes[SVGElement] = js.native
+  var pattern: SVGAttributes[SVGElement]
   
-  var picture: HTMLAttributes[HTMLPictureElement] = js.native
+  var picture: HTMLAttributes[HTMLPictureElement]
   
-  var polygon: SVGAttributes[SVGElement] = js.native
+  var polygon: SVGAttributes[SVGElement]
   
-  var polyline: SVGAttributes[SVGElement] = js.native
+  var polyline: SVGAttributes[SVGElement]
   
-  var pre: HTMLAttributes[HTMLPreElement] = js.native
+  var pre: HTMLAttributes[HTMLPreElement]
   
-  var progress: ProgressHTMLAttributes[HTMLProgressElement] = js.native
+  var progress: ProgressHTMLAttributes[HTMLProgressElement]
   
-  var q: QuoteHTMLAttributes[HTMLQuoteElement] = js.native
+  var q: QuoteHTMLAttributes[HTMLQuoteElement]
   
-  var radialGradient: SVGAttributes[SVGElement] = js.native
+  var radialGradient: SVGAttributes[SVGElement]
   
-  var rect: SVGAttributes[SVGElement] = js.native
+  var rect: SVGAttributes[SVGElement]
   
-  var rp: HTMLAttributes[HTMLElement] = js.native
+  var rp: HTMLAttributes[HTMLElement]
   
-  var rt: HTMLAttributes[HTMLElement] = js.native
+  var rt: HTMLAttributes[HTMLElement]
   
-  var ruby: HTMLAttributes[HTMLElement] = js.native
+  var ruby: HTMLAttributes[HTMLElement]
   
-  var s: HTMLAttributes[HTMLElement] = js.native
+  var s: HTMLAttributes[HTMLElement]
   
-  var samp: HTMLAttributes[HTMLElement] = js.native
+  var samp: HTMLAttributes[HTMLElement]
   
-  var script: ScriptHTMLAttributes[HTMLScriptElement] = js.native
+  var script: ScriptHTMLAttributes[HTMLScriptElement]
   
-  var section: HTMLAttributes[HTMLElement] = js.native
+  var section: HTMLAttributes[HTMLElement]
   
-  var select: SelectHTMLAttributes[HTMLSelectElement] = js.native
+  var select: SelectHTMLAttributes[HTMLSelectElement]
   
-  var slot: SlotAttributes = js.native
+  var slot: SlotAttributes
   
-  var small: HTMLAttributes[HTMLElement] = js.native
+  var small: HTMLAttributes[HTMLElement]
   
-  var source: SourceHTMLAttributes[HTMLSourceElement] = js.native
+  var source: SourceHTMLAttributes[HTMLSourceElement]
   
-  var span: HTMLAttributes[HTMLSpanElement] = js.native
+  var span: HTMLAttributes[HTMLSpanElement]
   
-  var stop: SVGAttributes[SVGElement] = js.native
+  var stop: SVGAttributes[SVGElement]
   
-  var strong: HTMLAttributes[HTMLElement] = js.native
+  var strong: HTMLAttributes[HTMLElement]
   
-  var style: StyleHTMLAttributes[HTMLStyleElement] = js.native
+  var style: StyleHTMLAttributes[HTMLStyleElement]
   
-  var sub: HTMLAttributes[HTMLElement] = js.native
+  var sub: HTMLAttributes[HTMLElement]
   
-  var summary: HTMLAttributes[HTMLElement] = js.native
+  var summary: HTMLAttributes[HTMLElement]
   
-  var sup: HTMLAttributes[HTMLElement] = js.native
+  var sup: HTMLAttributes[HTMLElement]
   
-  var svg: SVGAttributes[SVGElement] = js.native
+  var svg: SVGAttributes[SVGElement]
   
-  var switch: SVGAttributes[SVGElement] = js.native
+  var switch: SVGAttributes[SVGElement]
   
-  var symbol: SVGAttributes[SVGElement] = js.native
+  var symbol: SVGAttributes[SVGElement]
   
-  var table: TableHTMLAttributes[HTMLTableElement] = js.native
+  var table: TableHTMLAttributes[HTMLTableElement]
   
-  var tbody: HTMLAttributes[HTMLTableSectionElement] = js.native
+  var tbody: HTMLAttributes[HTMLTableSectionElement]
   
-  var td: TdHTMLAttributes[HTMLTableDataCellElement] = js.native
+  var td: TdHTMLAttributes[HTMLTableDataCellElement]
   
-  var text: SVGAttributes[SVGElement] = js.native
+  var text: SVGAttributes[SVGElement]
   
-  var textPath: SVGAttributes[SVGElement] = js.native
+  var textPath: SVGAttributes[SVGElement]
   
-  var textarea: TextareaHTMLAttributes[HTMLTextAreaElement] = js.native
+  var textarea: TextareaHTMLAttributes[HTMLTextAreaElement]
   
-  var tfoot: HTMLAttributes[HTMLTableSectionElement] = js.native
+  var tfoot: HTMLAttributes[HTMLTableSectionElement]
   
-  var th: ThHTMLAttributes[HTMLTableHeaderCellElement] = js.native
+  var th: ThHTMLAttributes[HTMLTableHeaderCellElement]
   
-  var thead: HTMLAttributes[HTMLTableSectionElement] = js.native
+  var thead: HTMLAttributes[HTMLTableSectionElement]
   
-  var time: TimeHTMLAttributes[HTMLTimeElement] = js.native
+  var time: TimeHTMLAttributes[HTMLTimeElement]
   
-  var title: HTMLAttributes[HTMLTitleElement] = js.native
+  var title: HTMLAttributes[HTMLTitleElement]
   
-  var tr: HTMLAttributes[HTMLTableRowElement] = js.native
+  var tr: HTMLAttributes[HTMLTableRowElement]
   
-  var track: TrackHTMLAttributes[HTMLTrackElement] = js.native
+  var track: TrackHTMLAttributes[HTMLTrackElement]
   
-  var tspan: SVGAttributes[SVGElement] = js.native
+  var tspan: SVGAttributes[SVGElement]
   
-  var u: HTMLAttributes[HTMLElement] = js.native
+  var u: HTMLAttributes[HTMLElement]
   
-  var ul: HTMLAttributes[HTMLUListElement] = js.native
+  var ul: HTMLAttributes[HTMLUListElement]
   
-  var use: SVGAttributes[SVGElement] = js.native
+  var use: SVGAttributes[SVGElement]
   
-  var `var`: HTMLAttributes[HTMLElement] = js.native
+  var `var`: HTMLAttributes[HTMLElement]
   
-  var video: VideoHTMLAttributes[HTMLVideoElement] = js.native
+  var video: VideoHTMLAttributes[HTMLVideoElement]
   
-  var view: SVGAttributes[SVGElement] = js.native
+  var view: SVGAttributes[SVGElement]
   
-  var wbr: HTMLAttributes[HTMLElement] = js.native
+  var wbr: HTMLAttributes[HTMLElement]
 }
 object IntrinsicElements {
   

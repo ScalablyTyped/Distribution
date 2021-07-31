@@ -3,26 +3,26 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelCallerId extends Event {
+trait ChannelCallerId
+  extends StObject
+     with Event {
   
   /**
     * The integer representation of the Caller Presentation value.
     */
-  var caller_presentation: Double = js.native
+  var caller_presentation: Double
   
   /**
     * The text representation of the Caller Presentation value.
     */
-  var caller_presentation_txt: String = js.native
+  var caller_presentation_txt: String
   
   /**
     * The channel that changed Caller ID.
     */
-  var channel: Channel = js.native
+  var channel: Channel
 }
 object ChannelCallerId {
   

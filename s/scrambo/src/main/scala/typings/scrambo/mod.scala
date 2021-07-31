@@ -2,14 +2,15 @@ package typings.scrambo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("scrambo", JSImport.Namespace)
   @js.native
-  class ^ () extends Scrambo
+  class ^ ()
+    extends StObject
+       with Scrambo
   
   /* Rewritten from type alias, can be one of: 
     - typings.scrambo.scramboStrings.`222`

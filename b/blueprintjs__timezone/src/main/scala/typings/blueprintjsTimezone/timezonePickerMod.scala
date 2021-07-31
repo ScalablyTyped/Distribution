@@ -16,7 +16,6 @@ import typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayForma
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timezonePickerMod {
@@ -102,28 +101,29 @@ object timezonePickerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ITimezonePickerProps extends IProps {
+  trait ITimezonePickerProps
+    extends StObject
+       with IProps {
     
     /**
       * Props to spread to the target `Button`.
       * This prop will be ignored if `children` is provided.
       */
-    var buttonProps: js.UndefOr[PartialIButtonProps] = js.native
+    var buttonProps: js.UndefOr[PartialIButtonProps] = js.undefined
     
     /**
       * The date to use when formatting timezone offsets.
       * An offset date is necessary to account for DST, but typically the default value of `now` will be sufficient.
       * @default now
       */
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
     /**
       * Whether this component is non-interactive.
       * This prop will be ignored if `children` is provided.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Props to spread to the filter `InputGroup`.
@@ -131,41 +131,41 @@ object timezonePickerMod {
       * If you want to control the filter input, you can pass `value` and `onChange` here
       * to override `Select`'s own behavior.
       */
-    var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.undefined
     
     /**
       * Callback invoked when the user selects a timezone.
       */
-    def onChange(timezone: String): Unit = js.native
+    def onChange(timezone: String): Unit
     
     /**
       * Text to show when no timezone has been selected (`value === undefined`).
       * This prop will be ignored if `children` is provided.
       * @default "Select timezone..."
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
     
     /**
       * Whether to show the local timezone at the top of the list of initial timezone suggestions.
       * @default true
       */
-    var showLocalTimezone: js.UndefOr[Boolean] = js.native
+    var showLocalTimezone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The currently selected timezone UTC identifier, e.g. "Pacific/Honolulu".
       * See https://www.iana.org/time-zones for more information.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /**
       * Format to use when displaying the selected (or default) timezone within the target element.
       * This prop will be ignored if `children` is provided.
       * @default TimezoneDisplayFormat.OFFSET
       */
-    var valueDisplayFormat: js.UndefOr[TimezoneDisplayFormat] = js.native
+    var valueDisplayFormat: js.UndefOr[TimezoneDisplayFormat] = js.undefined
   }
   object ITimezonePickerProps {
     
@@ -197,7 +197,7 @@ object timezonePickerMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setInputProps(value: IInputGroupProps with HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      def setInputProps(value: IInputGroupProps & HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
@@ -237,10 +237,9 @@ object timezonePickerMod {
     }
   }
   
-  @js.native
   trait ITimezonePickerState extends StObject {
     
-    var query: String = js.native
+    var query: String
   }
   object ITimezonePickerState {
     

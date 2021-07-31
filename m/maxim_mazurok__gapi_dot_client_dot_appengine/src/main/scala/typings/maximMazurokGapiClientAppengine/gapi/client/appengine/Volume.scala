@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volume extends StObject {
   
   /** Unique name for the volume. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Volume size in gigabytes. */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
   
   /** Underlying volume type, e.g. 'tmpfs'. */
-  var volumeType: js.UndefOr[String] = js.native
+  var volumeType: js.UndefOr[String] = js.undefined
 }
 object Volume {
   

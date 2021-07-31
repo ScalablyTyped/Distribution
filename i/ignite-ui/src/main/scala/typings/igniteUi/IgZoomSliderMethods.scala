@@ -2,27 +2,25 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgZoomSliderMethods extends StObject {
   
   /**
     * Destroys widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Flushes the gauge.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
-  def notifySizeChanged(): Unit = js.native
+  def notifySizeChanged(): Unit
   
-  def onAttachedToUI(): Unit = js.native
+  def onAttachedToUI(): Unit
   
-  def onDetachedFromUI(): Unit = js.native
+  def onDetachedFromUI(): Unit
 }
 object IgZoomSliderMethods {
   

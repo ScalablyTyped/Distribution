@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppSync extends Service {
   
   @JSName("config")
-  var config_AppSync: ConfigBase with ClientConfiguration = js.native
+  var config_AppSync: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a cache for the GraphQL API.

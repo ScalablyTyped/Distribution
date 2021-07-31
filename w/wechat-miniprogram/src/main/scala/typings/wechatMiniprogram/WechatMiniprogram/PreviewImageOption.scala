@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewImageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[PreviewImageCompleteCallback] = js.native
+  var complete: js.UndefOr[PreviewImageCompleteCallback] = js.undefined
   
   /** 当前显示图片的链接 */
-  var current: js.UndefOr[String] = js.native
+  var current: js.UndefOr[String] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[PreviewImageFailCallback] = js.native
+  var fail: js.UndefOr[PreviewImageFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[PreviewImageSuccessCallback] = js.native
+  var success: js.UndefOr[PreviewImageSuccessCallback] = js.undefined
   
   /** 需要预览的图片链接列表。[2.2.3](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起支持云文件ID。 */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object PreviewImageOption {
   

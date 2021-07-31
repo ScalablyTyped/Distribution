@@ -5,22 +5,20 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  onClick :react-bootstrap-table-next.react-bootstrap-table-next.RowEventHandler<T>,   onDoubleClick :react-bootstrap-table-next.react-bootstrap-table-next.RowEventHandler<T>,   onMouseEnter :react-bootstrap-table-next.react-bootstrap-table-next.RowEventHandler<T>,   onMouseLeave :react-bootstrap-table-next.react-bootstrap-table-next.RowEventHandler<T>,   onContextMenu :react-bootstrap-table-next.react-bootstrap-table-next.RowEventHandler<T>}> */
-@js.native
 trait RowEventHandlerProps[T] extends StObject {
   
-  var onClick: js.UndefOr[RowEventHandler[T]] = js.native
+  var onClick: js.UndefOr[RowEventHandler[T]] = js.undefined
   
-  var onContextMenu: js.UndefOr[RowEventHandler[T]] = js.native
+  var onContextMenu: js.UndefOr[RowEventHandler[T]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[RowEventHandler[T]] = js.native
+  var onDoubleClick: js.UndefOr[RowEventHandler[T]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[RowEventHandler[T]] = js.native
+  var onMouseEnter: js.UndefOr[RowEventHandler[T]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[RowEventHandler[T]] = js.native
+  var onMouseLeave: js.UndefOr[RowEventHandler[T]] = js.undefined
 }
 object RowEventHandlerProps {
   
@@ -31,7 +29,7 @@ object RowEventHandlerProps {
   }
   
   @scala.inline
-  implicit class RowEventHandlerPropsMutableBuilder[Self <: RowEventHandlerProps[_], T] (val x: Self with RowEventHandlerProps[T]) extends AnyVal {
+  implicit class RowEventHandlerPropsMutableBuilder[Self <: RowEventHandlerProps[?], T] (val x: Self & RowEventHandlerProps[T]) extends AnyVal {
     
     @scala.inline
     def setOnClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))

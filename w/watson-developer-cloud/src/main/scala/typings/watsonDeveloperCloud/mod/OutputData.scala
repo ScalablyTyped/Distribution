@@ -3,29 +3,28 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An output object that includes the response to the user, the dialog nodes that were triggered, and messages from the log. */
-@js.native
 trait OutputData
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** Output intended for any channel. It is the responsibility of the client application to implement the supported response types. */
-  var generic: js.UndefOr[js.Array[DialogRuntimeResponseGeneric]] = js.native
+  var generic: js.UndefOr[js.Array[DialogRuntimeResponseGeneric]] = js.undefined
   
   /** An array of up to 50 messages logged with the request. */
-  var log_messages: js.Array[LogMessage] = js.native
+  var log_messages: js.Array[LogMessage]
   
   /** An array of the nodes that were triggered to create the response, in the order in which they were visited. This information is useful for debugging and for tracing the path taken through the node tree. */
-  var nodes_visited: js.UndefOr[js.Array[String]] = js.native
+  var nodes_visited: js.UndefOr[js.Array[String]] = js.undefined
   
   /** An array of objects containing detailed diagnostic information about the nodes that were triggered during processing of the input message. Included only if **nodes_visited_details** is set to `true` in the message request. */
-  var nodes_visited_details: js.UndefOr[js.Array[DialogNodeVisitedDetails]] = js.native
+  var nodes_visited_details: js.UndefOr[js.Array[DialogNodeVisitedDetails]] = js.undefined
   
   /** An array of responses to the user. */
-  var text: js.Array[String] = js.native
+  var text: js.Array[String]
 }
 object OutputData {
   

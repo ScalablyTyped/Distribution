@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorSizeSliderViewModelStopInfo extends Object {
+trait ColorSizeSliderViewModelStopInfo
+  extends StObject
+     with Object {
   
   /**
     * The color of the stop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider-ColorSizeSliderViewModel.html#StopInfo)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The offset of the stop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider-ColorSizeSliderViewModel.html#StopInfo)
     */
-  var offset: Double = js.native
+  var offset: Double
 }
 object ColorSizeSliderViewModelStopInfo {
   

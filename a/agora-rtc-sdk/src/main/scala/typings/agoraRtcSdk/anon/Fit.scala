@@ -4,10 +4,8 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.contain
 import typings.agoraRtcSdk.agoraRtcSdkStrings.cover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fit extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait Fit extends StObject {
     *
     * For local streams, by default the cover mode is used for video playing and the contain mode is used for screen sharing; for remote streams, by default the cover mode is used.
     */
-  var fit: js.UndefOr[cover | contain] = js.native
+  var fit: js.UndefOr[cover | contain] = js.undefined
   
   /**
     * Sets whether to mute the playing stream.
@@ -33,7 +31,7 @@ trait Fit extends StObject {
     *
     * For more information, see [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes).
     */
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
 }
 object Fit {
   

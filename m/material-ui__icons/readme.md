@@ -10,9 +10,9 @@ Material Design Svg Icons converted to Material-UI React components.
 | ------------------ | :-------------: |
 | Full name          | @material-ui/icons |
 | Keywords           | react, react-component, material design, material-ui, icons |
-| # releases         | 18 |
-| # dependents       | 1945 |
-| # downloads        | 38630933 |
+| # releases         | 29 |
+| # dependents       | 2357 |
+| # downloads        | 48750968 |
 | # stars            | 0 |
 
 ## Links

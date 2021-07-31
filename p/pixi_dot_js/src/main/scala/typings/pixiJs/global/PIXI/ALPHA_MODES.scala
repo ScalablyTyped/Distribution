@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,17 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ALPHA_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ALPHA_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ALPHA_MODES & Double] = js.native
   
-  /* 0 */ val NO_PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.NO_PREMULTIPLIED_ALPHA with Double = js.native
+  /* 0 */ val NO_PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.NO_PREMULTIPLIED_ALPHA & Double = js.native
   
-  /* 3 */ val NPM: typings.pixiJs.PIXI.ALPHA_MODES.NPM with Double = js.native
+  /* 3 */ val NPM: typings.pixiJs.PIXI.ALPHA_MODES.NPM & Double = js.native
   
-  /* 5 */ val PMA: typings.pixiJs.PIXI.ALPHA_MODES.PMA with Double = js.native
+  /* 5 */ val PMA: typings.pixiJs.PIXI.ALPHA_MODES.PMA & Double = js.native
   
-  /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLIED_ALPHA with Double = js.native
+  /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLIED_ALPHA & Double = js.native
   
-  /* 1 */ val PREMULTIPLY_ON_UPLOAD: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLY_ON_UPLOAD with Double = js.native
+  /* 1 */ val PREMULTIPLY_ON_UPLOAD: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLY_ON_UPLOAD & Double = js.native
   
-  /* 4 */ val UNPACK: typings.pixiJs.PIXI.ALPHA_MODES.UNPACK with Double = js.native
+  /* 4 */ val UNPACK: typings.pixiJs.PIXI.ALPHA_MODES.UNPACK & Double = js.native
 }

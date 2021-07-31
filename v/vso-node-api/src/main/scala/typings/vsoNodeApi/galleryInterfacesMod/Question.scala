@@ -3,16 +3,16 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Question extends QnAItem {
+trait Question
+  extends StObject
+     with QnAItem {
   
   /**
     * List of answers in for the question / thread
     */
-  var responses: js.Array[Response] = js.native
+  var responses: js.Array[Response]
 }
 object Question {
   

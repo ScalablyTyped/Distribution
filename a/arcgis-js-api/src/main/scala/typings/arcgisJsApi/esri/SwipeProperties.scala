@@ -4,81 +4,81 @@ import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwipeProperties extends WidgetProperties {
+trait SwipeProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The direction the Swipe widget moves across the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#direction)
     */
-  var direction: js.UndefOr[horizontal | vertical] = js.native
+  var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text that shows in a tooltip when hovering over the handle of the Swipe widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#dragLabel)
     */
-  var dragLabel: js.UndefOr[String] = js.native
+  var dragLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the left or top side of the Swipe widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#leadingLayers)
     */
-  var leadingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.native
+  var leadingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.undefined
   
   /**
     * The position of the Swipe widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#position)
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the right or bottom side of the Swipe widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#trailingLayers)
     */
-  var trailingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.native
+  var trailingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#viewModel)
     */
-  var viewModel: js.UndefOr[SwipeViewModelProperties] = js.native
+  var viewModel: js.UndefOr[SwipeViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[widgetsSwipeVisibleElements] = js.native
+  var visibleElements: js.UndefOr[widgetsSwipeVisibleElements] = js.undefined
 }
 object SwipeProperties {
   

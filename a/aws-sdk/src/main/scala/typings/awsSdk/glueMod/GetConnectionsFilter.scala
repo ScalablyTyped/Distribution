@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionsFilter extends StObject {
   
   /**
     * The type of connections to return. Currently, SFTP is not supported.
     */
-  var ConnectionType: js.UndefOr[typings.awsSdk.glueMod.ConnectionType] = js.native
+  var ConnectionType: js.UndefOr[typings.awsSdk.glueMod.ConnectionType] = js.undefined
   
   /**
     * A criteria string that must match the criteria recorded in the connection definition for that connection definition to be returned.
     */
-  var MatchCriteria: js.UndefOr[typings.awsSdk.glueMod.MatchCriteria] = js.native
+  var MatchCriteria: js.UndefOr[typings.awsSdk.glueMod.MatchCriteria] = js.undefined
 }
 object GetConnectionsFilter {
   

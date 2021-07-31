@@ -2,41 +2,39 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetSummary extends StObject {
   
   /**
     * A list of DataActionSummary objects.
     */
-  var actions: js.UndefOr[DatasetActionSummaries] = js.native
+  var actions: js.UndefOr[DatasetActionSummaries] = js.undefined
   
   /**
     * The time the data set was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the data set.
     */
-  var datasetName: js.UndefOr[DatasetName] = js.native
+  var datasetName: js.UndefOr[DatasetName] = js.undefined
   
   /**
     * The last time the data set was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the data set.
     */
-  var status: js.UndefOr[DatasetStatus] = js.native
+  var status: js.UndefOr[DatasetStatus] = js.undefined
   
   /**
     * A list of triggers. A trigger causes data set content to be populated at a specified time interval or when another data set is populated. The list of triggers can be empty or contain up to five DataSetTrigger objects
     */
-  var triggers: js.UndefOr[DatasetTriggers] = js.native
+  var triggers: js.UndefOr[DatasetTriggers] = js.undefined
 }
 object DatasetSummary {
   

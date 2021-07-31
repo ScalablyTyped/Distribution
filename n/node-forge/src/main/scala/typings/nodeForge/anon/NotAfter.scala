@@ -3,15 +3,13 @@ package typings.nodeForge.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotAfter extends StObject {
   
-  var notAfter: Date = js.native
+  var notAfter: Date
   
-  var notBefore: Date = js.native
+  var notBefore: Date
 }
 object NotAfter {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLunaClientResponse extends StObject {
   
   /**
     * The certificate installed on the HSMs used by this client.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.cloudhsmMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.cloudhsmMod.Certificate] = js.undefined
   
   /**
     * The certificate fingerprint.
     */
-  var CertificateFingerprint: js.UndefOr[typings.awsSdk.cloudhsmMod.CertificateFingerprint] = js.native
+  var CertificateFingerprint: js.UndefOr[typings.awsSdk.cloudhsmMod.CertificateFingerprint] = js.undefined
   
   /**
     * The ARN of the client.
     */
-  var ClientArn: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientArn] = js.native
+  var ClientArn: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientArn] = js.undefined
   
   /**
     * The label of the client.
     */
-  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.native
+  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.undefined
   
   /**
     * The date and time the client was last modified.
     */
-  var LastModifiedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object DescribeLunaClientResponse {
   

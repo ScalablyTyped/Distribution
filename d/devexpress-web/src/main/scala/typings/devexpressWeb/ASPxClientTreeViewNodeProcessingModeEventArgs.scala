@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events concerned with node processing, and that allow the event's processing to be passed to the server side.
   */
-@js.native
-trait ASPxClientTreeViewNodeProcessingModeEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTreeViewNodeProcessingModeEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets a node object related to the event.
     */
-  var node: ASPxClientTreeViewNode = js.native
+  var node: ASPxClientTreeViewNode
 }
 object ASPxClientTreeViewNodeProcessingModeEventArgs {
   

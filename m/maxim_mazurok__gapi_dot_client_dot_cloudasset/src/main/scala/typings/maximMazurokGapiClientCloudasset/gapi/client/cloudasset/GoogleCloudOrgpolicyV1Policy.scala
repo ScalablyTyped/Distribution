@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudOrgpolicyV1Policy extends StObject {
   
   /** For boolean `Constraints`, whether to enforce the `Constraint` or not. */
-  var booleanPolicy: js.UndefOr[GoogleCloudOrgpolicyV1BooleanPolicy] = js.native
+  var booleanPolicy: js.UndefOr[GoogleCloudOrgpolicyV1BooleanPolicy] = js.undefined
   
   /**
     * The name of the `Constraint` the `Policy` is configuring, for example, `constraints/serviceuser.services`. A [list of available
     * constraints](/resource-manager/docs/organization-policy/org-policy-constraints) is available. Immutable after creation.
     */
-  var constraint: js.UndefOr[String] = js.native
+  var constraint: js.UndefOr[String] = js.undefined
   
   /**
     * An opaque tag indicating the current version of the `Policy`, used for concurrency control. When the `Policy` is returned from either a `GetPolicy` or a `ListOrgPolicy` request,
@@ -23,22 +21,22 @@ trait GoogleCloudOrgpolicyV1Policy extends StObject {
     * `etag` will be unset. When the `Policy` is used in a `SetOrgPolicy` method, use the `etag` value that was returned from a `GetOrgPolicy` request as part of a read-modify-write loop
     * for concurrency control. Not setting the `etag`in a `SetOrgPolicy` request will result in an unconditional write of the `Policy`.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** List of values either allowed or disallowed. */
-  var listPolicy: js.UndefOr[GoogleCloudOrgpolicyV1ListPolicy] = js.native
+  var listPolicy: js.UndefOr[GoogleCloudOrgpolicyV1ListPolicy] = js.undefined
   
   /** Restores the default behavior of the constraint; independent of `Constraint` type. */
-  var restoreDefault: js.UndefOr[js.Any] = js.native
+  var restoreDefault: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The time stamp the `Policy` was previously updated. This is set by the server, not specified by the caller, and represents the last time a call to `SetOrgPolicy` was made for that
     * `Policy`. Any value set by the client will be ignored.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Version of the `Policy`. Default version is 0; */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudOrgpolicyV1Policy {
   

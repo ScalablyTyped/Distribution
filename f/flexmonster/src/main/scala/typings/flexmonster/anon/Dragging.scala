@@ -2,39 +2,37 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dragging extends StObject {
   
-  var dragging: js.UndefOr[Boolean] = js.native
+  var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var drillThroughMaxRows: js.UndefOr[Double] = js.native
+  var drillThroughMaxRows: js.UndefOr[Double] = js.undefined
   
-  var grandTotalsPosition: js.UndefOr[String] = js.native
+  var grandTotalsPosition: js.UndefOr[String] = js.undefined
   
-  var showAutoCalculationBar: js.UndefOr[Boolean] = js.native
+  var showAutoCalculationBar: js.UndefOr[Boolean] = js.undefined
   
-  var showEmptyValues: js.UndefOr[Boolean] = js.native
+  var showEmptyValues: js.UndefOr[Boolean] = js.undefined
   
-  var showFilter: js.UndefOr[Boolean] = js.native
+  var showFilter: js.UndefOr[Boolean] = js.undefined
   
-  var showGrandTotals: js.UndefOr[String] = js.native
+  var showGrandTotals: js.UndefOr[String] = js.undefined
   
-  var showHeaders: js.UndefOr[Boolean] = js.native
+  var showHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var showHierarchies: js.UndefOr[Boolean] = js.native
+  var showHierarchies: js.UndefOr[Boolean] = js.undefined
   
-  var showHierarchyCaptions: js.UndefOr[Boolean] = js.native
+  var showHierarchyCaptions: js.UndefOr[Boolean] = js.undefined
   
-  var showReportFiltersArea: js.UndefOr[Boolean] = js.native
+  var showReportFiltersArea: js.UndefOr[Boolean] = js.undefined
   
-  var showTotals: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Dragging {
   

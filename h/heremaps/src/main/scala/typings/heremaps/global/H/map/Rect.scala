@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Spatial.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Rect")
 @js.native
 class Rect protected ()
-  extends typings.heremaps.H.map.Rect {
+  extends StObject
+     with typings.heremaps.H.map.Rect {
   /**
     * Constructor
     * @param boundingBox {H.geo.Rect} - The geographical bounding box for this rectangle

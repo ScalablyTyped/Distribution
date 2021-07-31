@@ -2,7 +2,6 @@ package typings.xmlCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlMod {
@@ -26,78 +25,114 @@ object xmlMod {
   object XmlNodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[XmlNodeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[XmlNodeType & Double] = js.native
     
     @js.native
-    sealed trait Attribute extends XmlNodeType
-    /* 2 */ val Attribute: typings.xmlCore.xmlMod.XmlNodeType.Attribute with Double = js.native
+    sealed trait Attribute
+      extends StObject
+         with XmlNodeType
+    /* 2 */ val Attribute: typings.xmlCore.xmlMod.XmlNodeType.Attribute & Double = js.native
     
     @js.native
-    sealed trait CDATA extends XmlNodeType
-    /* 4 */ val CDATA: typings.xmlCore.xmlMod.XmlNodeType.CDATA with Double = js.native
+    sealed trait CDATA
+      extends StObject
+         with XmlNodeType
+    /* 4 */ val CDATA: typings.xmlCore.xmlMod.XmlNodeType.CDATA & Double = js.native
     
     @js.native
-    sealed trait Comment extends XmlNodeType
-    /* 8 */ val Comment: typings.xmlCore.xmlMod.XmlNodeType.Comment with Double = js.native
+    sealed trait Comment
+      extends StObject
+         with XmlNodeType
+    /* 8 */ val Comment: typings.xmlCore.xmlMod.XmlNodeType.Comment & Double = js.native
     
     @js.native
-    sealed trait Document extends XmlNodeType
-    /* 9 */ val Document: typings.xmlCore.xmlMod.XmlNodeType.Document with Double = js.native
+    sealed trait Document
+      extends StObject
+         with XmlNodeType
+    /* 9 */ val Document: typings.xmlCore.xmlMod.XmlNodeType.Document & Double = js.native
     
     @js.native
-    sealed trait DocumentFragment extends XmlNodeType
-    /* 11 */ val DocumentFragment: typings.xmlCore.xmlMod.XmlNodeType.DocumentFragment with Double = js.native
+    sealed trait DocumentFragment
+      extends StObject
+         with XmlNodeType
+    /* 11 */ val DocumentFragment: typings.xmlCore.xmlMod.XmlNodeType.DocumentFragment & Double = js.native
     
     @js.native
-    sealed trait DocumentType extends XmlNodeType
-    /* 10 */ val DocumentType: typings.xmlCore.xmlMod.XmlNodeType.DocumentType with Double = js.native
+    sealed trait DocumentType
+      extends StObject
+         with XmlNodeType
+    /* 10 */ val DocumentType: typings.xmlCore.xmlMod.XmlNodeType.DocumentType & Double = js.native
     
     @js.native
-    sealed trait Element extends XmlNodeType
-    /* 1 */ val Element: typings.xmlCore.xmlMod.XmlNodeType.Element with Double = js.native
+    sealed trait Element
+      extends StObject
+         with XmlNodeType
+    /* 1 */ val Element: typings.xmlCore.xmlMod.XmlNodeType.Element & Double = js.native
     
     @js.native
-    sealed trait EndElement extends XmlNodeType
-    /* 15 */ val EndElement: typings.xmlCore.xmlMod.XmlNodeType.EndElement with Double = js.native
+    sealed trait EndElement
+      extends StObject
+         with XmlNodeType
+    /* 15 */ val EndElement: typings.xmlCore.xmlMod.XmlNodeType.EndElement & Double = js.native
     
     @js.native
-    sealed trait EndEntity extends XmlNodeType
-    /* 16 */ val EndEntity: typings.xmlCore.xmlMod.XmlNodeType.EndEntity with Double = js.native
+    sealed trait EndEntity
+      extends StObject
+         with XmlNodeType
+    /* 16 */ val EndEntity: typings.xmlCore.xmlMod.XmlNodeType.EndEntity & Double = js.native
     
     @js.native
-    sealed trait Entity extends XmlNodeType
-    /* 6 */ val Entity: typings.xmlCore.xmlMod.XmlNodeType.Entity with Double = js.native
+    sealed trait Entity
+      extends StObject
+         with XmlNodeType
+    /* 6 */ val Entity: typings.xmlCore.xmlMod.XmlNodeType.Entity & Double = js.native
     
     @js.native
-    sealed trait EntityReference extends XmlNodeType
-    /* 5 */ val EntityReference: typings.xmlCore.xmlMod.XmlNodeType.EntityReference with Double = js.native
+    sealed trait EntityReference
+      extends StObject
+         with XmlNodeType
+    /* 5 */ val EntityReference: typings.xmlCore.xmlMod.XmlNodeType.EntityReference & Double = js.native
     
     @js.native
-    sealed trait None extends XmlNodeType
-    /* 0 */ val None: typings.xmlCore.xmlMod.XmlNodeType.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with XmlNodeType
+    /* 0 */ val None: typings.xmlCore.xmlMod.XmlNodeType.None & Double = js.native
     
     @js.native
-    sealed trait Notation extends XmlNodeType
-    /* 12 */ val Notation: typings.xmlCore.xmlMod.XmlNodeType.Notation with Double = js.native
+    sealed trait Notation
+      extends StObject
+         with XmlNodeType
+    /* 12 */ val Notation: typings.xmlCore.xmlMod.XmlNodeType.Notation & Double = js.native
     
     @js.native
-    sealed trait ProcessingInstruction extends XmlNodeType
-    /* 7 */ val ProcessingInstruction: typings.xmlCore.xmlMod.XmlNodeType.ProcessingInstruction with Double = js.native
+    sealed trait ProcessingInstruction
+      extends StObject
+         with XmlNodeType
+    /* 7 */ val ProcessingInstruction: typings.xmlCore.xmlMod.XmlNodeType.ProcessingInstruction & Double = js.native
     
     @js.native
-    sealed trait SignificantWhitespace extends XmlNodeType
-    /* 14 */ val SignificantWhitespace: typings.xmlCore.xmlMod.XmlNodeType.SignificantWhitespace with Double = js.native
+    sealed trait SignificantWhitespace
+      extends StObject
+         with XmlNodeType
+    /* 14 */ val SignificantWhitespace: typings.xmlCore.xmlMod.XmlNodeType.SignificantWhitespace & Double = js.native
     
     @js.native
-    sealed trait Text extends XmlNodeType
-    /* 3 */ val Text: typings.xmlCore.xmlMod.XmlNodeType.Text with Double = js.native
+    sealed trait Text
+      extends StObject
+         with XmlNodeType
+    /* 3 */ val Text: typings.xmlCore.xmlMod.XmlNodeType.Text & Double = js.native
     
     @js.native
-    sealed trait Whitespace extends XmlNodeType
-    /* 13 */ val Whitespace: typings.xmlCore.xmlMod.XmlNodeType.Whitespace with Double = js.native
+    sealed trait Whitespace
+      extends StObject
+         with XmlNodeType
+    /* 13 */ val Whitespace: typings.xmlCore.xmlMod.XmlNodeType.Whitespace & Double = js.native
     
     @js.native
-    sealed trait XmlDeclaration extends XmlNodeType
-    /* 17 */ val XmlDeclaration: typings.xmlCore.xmlMod.XmlNodeType.XmlDeclaration with Double = js.native
+    sealed trait XmlDeclaration
+      extends StObject
+         with XmlNodeType
+    /* 17 */ val XmlDeclaration: typings.xmlCore.xmlMod.XmlNodeType.XmlDeclaration & Double = js.native
   }
 }

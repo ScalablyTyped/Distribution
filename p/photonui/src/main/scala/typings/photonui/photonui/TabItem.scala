@@ -5,17 +5,17 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait TabItem extends Container {
+trait TabItem
+  extends StObject
+     with Container {
   
-  var tabHtml: HTMLElement = js.native
+  var tabHtml: HTMLElement
   
   // readonly
-  var title: String = js.native
+  var title: String
 }
 object TabItem {
   

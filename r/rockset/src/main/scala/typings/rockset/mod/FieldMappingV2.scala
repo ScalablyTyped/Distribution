@@ -2,20 +2,18 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldMappingV2 extends StObject {
   
   // A List of InputField for this mapping
-  var input_fields: js.UndefOr[js.Array[InputField]] = js.native
+  var input_fields: js.UndefOr[js.Array[InputField]] = js.undefined
   
   // A user specified string that is a name for this mapping
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // An OutputField for this mapping
-  var output_field: js.UndefOr[OutputField] = js.native
+  var output_field: js.UndefOr[OutputField] = js.undefined
 }
 object FieldMappingV2 {
   

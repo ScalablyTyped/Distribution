@@ -7,7 +7,6 @@ import typings.angularStrap.anon.Hide
 import typings.angularStrap.anon.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -16,17 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object tooltip {
   
-  @js.native
   trait ITooltip extends StObject {
     
     @JSName("$promise")
-    var $promise: IPromise[Unit] = js.native
+    var $promise: IPromise[Unit]
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object ITooltip {
     
@@ -53,44 +51,43 @@ object tooltip {
     }
   }
   
-  @js.native
   trait ITooltipOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* tooltip */ ITooltip, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var prefixEvent: js.UndefOr[String] = js.native
+    var prefixEvent: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String | IAugmentedJQuery | Boolean] = js.native
+    var target: js.UndefOr[String | IAugmentedJQuery | Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleTemplate: js.UndefOr[String] = js.native
+    var titleTemplate: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var viewport: js.UndefOr[String | Padding] = js.native
+    var viewport: js.UndefOr[String | Padding] = js.undefined
   }
   object ITooltipOptions {
     
@@ -213,10 +210,9 @@ object tooltip {
     }
   }
   
-  @js.native
   trait ITooltipProvider extends StObject {
     
-    var defaults: ITooltipOptions = js.native
+    var defaults: ITooltipOptions
   }
   object ITooltipProvider {
     
@@ -235,7 +231,9 @@ object tooltip {
   }
   
   @js.native
-  trait ITooltipScope extends IRootScopeService {
+  trait ITooltipScope
+    extends StObject
+       with IRootScopeService {
     
     @JSName("$hide")
     def $hide(): Unit = js.native

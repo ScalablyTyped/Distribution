@@ -2,16 +2,16 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PublisherAdvertisement extends Advertisement {
+trait PublisherAdvertisement
+  extends StObject
+     with Advertisement {
   
   /**
     * Event types that a Publisher can publish.
     */
-  var broadcasts: js.UndefOr[js.Array[String]] = js.native
+  var broadcasts: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PublisherAdvertisement {
   

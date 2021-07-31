@@ -2,31 +2,31 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlBalloonStyle extends KmlObject {
+trait KmlBalloonStyle
+  extends StObject
+     with KmlObject {
   
   /**
     * Background color of the balloon (optional).
     */
-  def getBgColor(): KmlColor = js.native
+  def getBgColor(): KmlColor
   
   /**
     * The text contained in the balloon. 
     */
-  def getText(): String = js.native
+  def getText(): String
   
   /**
     * Foreground color for text. The default is black (ff000000).
     */
-  def getTextColor(): KmlColor = js.native
+  def getTextColor(): KmlColor
   
   /**
     * The text contained in the balloon. 
     */
-  def setText(text: String): Unit = js.native
+  def setText(text: String): Unit
 }
 object KmlBalloonStyle {
   

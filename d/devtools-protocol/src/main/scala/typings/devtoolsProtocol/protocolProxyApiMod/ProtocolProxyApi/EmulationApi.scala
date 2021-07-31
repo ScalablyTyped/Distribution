@@ -25,140 +25,138 @@ import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVirtualTimePolicyRespo
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVisibleSizeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmulationApi extends StObject {
   
   /**
     * Tells whether emulation is supported.
     */
-  def canEmulate(): js.Promise[CanEmulateResponse] = js.native
+  def canEmulate(): js.Promise[CanEmulateResponse]
   
   /**
     * Clears the overriden device metrics.
     */
-  def clearDeviceMetricsOverride(): js.Promise[Unit] = js.native
+  def clearDeviceMetricsOverride(): js.Promise[Unit]
   
   /**
     * Clears the overriden Geolocation Position and Error.
     */
-  def clearGeolocationOverride(): js.Promise[Unit] = js.native
+  def clearGeolocationOverride(): js.Promise[Unit]
   
   /**
     * Clears Idle state overrides.
     */
-  def clearIdleOverride(): js.Promise[Unit] = js.native
+  def clearIdleOverride(): js.Promise[Unit]
   
   /**
     * Notification sent after the virtual time budget for the current VirtualTimePolicy has run out.
     */
   @JSName("on")
-  def on_virtualTimeBudgetExpired(event: virtualTimeBudgetExpired, listener: js.Function0[Unit]): Unit = js.native
+  def on_virtualTimeBudgetExpired(event: virtualTimeBudgetExpired, listener: js.Function0[Unit]): Unit
   
   /**
     * Requests that page scale factor is reset to initial values.
     */
-  def resetPageScaleFactor(): js.Promise[Unit] = js.native
+  def resetPageScaleFactor(): js.Promise[Unit]
   
   /**
     * Enables CPU throttling to emulate slow CPUs.
     */
-  def setCPUThrottlingRate(params: SetCPUThrottlingRateRequest): js.Promise[Unit] = js.native
+  def setCPUThrottlingRate(params: SetCPUThrottlingRateRequest): js.Promise[Unit]
   
   /**
     * Sets or clears an override of the default background color of the frame. This override is used
     * if the content does not specify one.
     */
-  def setDefaultBackgroundColorOverride(params: SetDefaultBackgroundColorOverrideRequest): js.Promise[Unit] = js.native
+  def setDefaultBackgroundColorOverride(params: SetDefaultBackgroundColorOverrideRequest): js.Promise[Unit]
   
   /**
     * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
     * window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media
     * query results).
     */
-  def setDeviceMetricsOverride(params: SetDeviceMetricsOverrideRequest): js.Promise[Unit] = js.native
+  def setDeviceMetricsOverride(params: SetDeviceMetricsOverrideRequest): js.Promise[Unit]
   
-  def setDocumentCookieDisabled(params: SetDocumentCookieDisabledRequest): js.Promise[Unit] = js.native
+  def setDocumentCookieDisabled(params: SetDocumentCookieDisabledRequest): js.Promise[Unit]
   
-  def setEmitTouchEventsForMouse(params: SetEmitTouchEventsForMouseRequest): js.Promise[Unit] = js.native
+  def setEmitTouchEventsForMouse(params: SetEmitTouchEventsForMouseRequest): js.Promise[Unit]
   
   /**
     * Emulates the given media type or media feature for CSS media queries.
     */
-  def setEmulatedMedia(params: SetEmulatedMediaRequest): js.Promise[Unit] = js.native
+  def setEmulatedMedia(params: SetEmulatedMediaRequest): js.Promise[Unit]
   
   /**
     * Emulates the given vision deficiency.
     */
-  def setEmulatedVisionDeficiency(params: SetEmulatedVisionDeficiencyRequest): js.Promise[Unit] = js.native
+  def setEmulatedVisionDeficiency(params: SetEmulatedVisionDeficiencyRequest): js.Promise[Unit]
   
   /**
     * Enables or disables simulating a focused and active page.
     */
-  def setFocusEmulationEnabled(params: SetFocusEmulationEnabledRequest): js.Promise[Unit] = js.native
+  def setFocusEmulationEnabled(params: SetFocusEmulationEnabledRequest): js.Promise[Unit]
   
   /**
     * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
     * unavailable.
     */
-  def setGeolocationOverride(params: SetGeolocationOverrideRequest): js.Promise[Unit] = js.native
+  def setGeolocationOverride(params: SetGeolocationOverrideRequest): js.Promise[Unit]
   
   /**
     * Overrides the Idle state.
     */
-  def setIdleOverride(params: SetIdleOverrideRequest): js.Promise[Unit] = js.native
+  def setIdleOverride(params: SetIdleOverrideRequest): js.Promise[Unit]
   
   /**
     * Overrides default host system locale with the specified one.
     */
-  def setLocaleOverride(params: SetLocaleOverrideRequest): js.Promise[Unit] = js.native
+  def setLocaleOverride(params: SetLocaleOverrideRequest): js.Promise[Unit]
   
   /**
     * Overrides value returned by the javascript navigator object.
     */
-  def setNavigatorOverrides(params: SetNavigatorOverridesRequest): js.Promise[Unit] = js.native
+  def setNavigatorOverrides(params: SetNavigatorOverridesRequest): js.Promise[Unit]
   
   /**
     * Sets a specified page scale factor.
     */
-  def setPageScaleFactor(params: SetPageScaleFactorRequest): js.Promise[Unit] = js.native
+  def setPageScaleFactor(params: SetPageScaleFactorRequest): js.Promise[Unit]
   
   /**
     * Switches script execution in the page.
     */
-  def setScriptExecutionDisabled(params: SetScriptExecutionDisabledRequest): js.Promise[Unit] = js.native
+  def setScriptExecutionDisabled(params: SetScriptExecutionDisabledRequest): js.Promise[Unit]
   
-  def setScrollbarsHidden(params: SetScrollbarsHiddenRequest): js.Promise[Unit] = js.native
+  def setScrollbarsHidden(params: SetScrollbarsHiddenRequest): js.Promise[Unit]
   
   /**
     * Overrides default host system timezone with the specified one.
     */
-  def setTimezoneOverride(params: SetTimezoneOverrideRequest): js.Promise[Unit] = js.native
+  def setTimezoneOverride(params: SetTimezoneOverrideRequest): js.Promise[Unit]
   
   /**
     * Enables touch on platforms which do not support them.
     */
-  def setTouchEmulationEnabled(params: SetTouchEmulationEnabledRequest): js.Promise[Unit] = js.native
+  def setTouchEmulationEnabled(params: SetTouchEmulationEnabledRequest): js.Promise[Unit]
   
   /**
     * Allows overriding user agent with the given string.
     */
-  def setUserAgentOverride(params: SetUserAgentOverrideRequest): js.Promise[Unit] = js.native
+  def setUserAgentOverride(params: SetUserAgentOverrideRequest): js.Promise[Unit]
   
   /**
     * Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets
     * the current virtual time policy.  Note this supersedes any previous time budget.
     */
-  def setVirtualTimePolicy(params: SetVirtualTimePolicyRequest): js.Promise[SetVirtualTimePolicyResponse] = js.native
+  def setVirtualTimePolicy(params: SetVirtualTimePolicyRequest): js.Promise[SetVirtualTimePolicyResponse]
   
   /**
     * Resizes the frame/viewport of the page. Note that this does not affect the frame's container
     * (e.g. browser window). Can be used to produce screenshots of the specified size. Not supported
     * on Android.
     */
-  def setVisibleSize(params: SetVisibleSizeRequest): js.Promise[Unit] = js.native
+  def setVisibleSize(params: SetVisibleSizeRequest): js.Promise[Unit]
 }
 object EmulationApi {
   

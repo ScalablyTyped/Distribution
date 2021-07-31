@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object InsertShiftDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.InsertShiftDirection with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.InsertShiftDirection & String] = js.native
   
-  /* "Down" */ val down: typings.officeJsPreview.Excel.InsertShiftDirection.down with String = js.native
+  /* "Down" */ val down: typings.officeJsPreview.Excel.InsertShiftDirection.down & String = js.native
   
-  /* "Right" */ val right: typings.officeJsPreview.Excel.InsertShiftDirection.right with String = js.native
+  /* "Right" */ val right: typings.officeJsPreview.Excel.InsertShiftDirection.right & String = js.native
 }

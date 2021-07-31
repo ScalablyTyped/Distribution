@@ -3,27 +3,25 @@ package typings.tuyaPanelKit.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateFormat extends StObject {
   
-  def dateFormat(fmt: String, date: Date): Double = js.native
+  def dateFormat(fmt: String, date: Date): Double
   
-  def dateToTimer(timeStr: String): Double = js.native
+  def dateToTimer(timeStr: String): Double
   
-  def parseHour12(second: Double): String = js.native
+  def parseHour12(second: Double): String
   
-  def parseSecond(time: Double, n: Double): js.Array[String] = js.native
+  def parseSecond(time: Double, n: Double): js.Array[String]
   
-  def parseTimer(second: Double): String = js.native
+  def parseTimer(second: Double): String
   
-  def parseTimers(second: Double): String = js.native
+  def parseTimers(second: Double): String
   
-  def stringToSecond(timeStr: String): Double = js.native
+  def stringToSecond(timeStr: String): Double
   
-  def timezone(): String = js.native
+  def timezone(): String
 }
 object DateFormat {
   

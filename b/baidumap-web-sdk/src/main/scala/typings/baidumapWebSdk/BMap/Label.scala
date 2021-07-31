@@ -4,55 +4,55 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.baidumapWebSdk.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Label extends Overlay {
+trait Label
+  extends StObject
+     with Overlay {
   
-  def addEventListener(event: String, handler: Callback): Unit = js.native
+  def addEventListener(event: String, handler: Callback): Unit
   
-  def disableMassClear(): Unit = js.native
+  def disableMassClear(): Unit
   
-  def enableMassClear(): Unit = js.native
+  def enableMassClear(): Unit
   
-  def getMap(): Map = js.native
+  def getMap(): Map
   
-  def getOffset(): Size = js.native
+  def getOffset(): Size
   
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def onclick(event: Target): Unit = js.native
+  def onclick(event: Target): Unit
   
-  def ondblclick(event: Target): Unit = js.native
+  def ondblclick(event: Target): Unit
   
-  def onmousedown(event: Target): Unit = js.native
+  def onmousedown(event: Target): Unit
   
-  def onmouseout(event: Target): Unit = js.native
+  def onmouseout(event: Target): Unit
   
-  def onmouseover(event: Target): Unit = js.native
+  def onmouseover(event: Target): Unit
   
-  def onmouseup(event: Target): Unit = js.native
+  def onmouseup(event: Target): Unit
   
-  def onremove(event: Target): Unit = js.native
+  def onremove(event: Target): Unit
   
-  def onrightclick(event: Target): Unit = js.native
+  def onrightclick(event: Target): Unit
   
-  def removeEventListener(event: String, handler: Callback): Unit = js.native
+  def removeEventListener(event: String, handler: Callback): Unit
   
-  def setContent(content: String): Unit = js.native
+  def setContent(content: String): Unit
   
-  def setOffset(offset: Size): Unit = js.native
+  def setOffset(offset: Size): Unit
   
-  def setPosition(position: Point): Unit = js.native
+  def setPosition(position: Point): Unit
   
-  def setStyle(styles: StringDictionary[String | Double]): Unit = js.native
+  def setStyle(styles: StringDictionary[String | Double]): Unit
   
-  def setTitle(title: String): Unit = js.native
+  def setTitle(title: String): Unit
   
-  def setZIndex(zIndex: Double): Unit = js.native
+  def setZIndex(zIndex: Double): Unit
 }
 object Label {
   

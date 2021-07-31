@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactRouter.mod.RouteProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizedRouteMod {
@@ -16,10 +15,11 @@ object authorizedRouteMod {
   
   type AuthorizedRoute = Component[IAuthorizedRouteProps, js.Any, js.Any]
   
-  @js.native
-  trait IAuthorizedRouteProps extends RouteProps {
+  trait IAuthorizedRouteProps
+    extends StObject
+       with RouteProps {
     
-    var authority: typings.antDesignPro.authorizedRouteMod.authority = js.native
+    var authority: typings.antDesignPro.authorizedRouteMod.authority
   }
   object IAuthorizedRouteProps {
     

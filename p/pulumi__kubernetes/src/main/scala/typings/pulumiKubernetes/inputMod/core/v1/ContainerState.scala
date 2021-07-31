@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
   */
-@js.native
 trait ContainerState extends StObject {
   
   /**
     * Details about a running container
     */
-  var running: js.UndefOr[Input[ContainerStateRunning]] = js.native
+  var running: js.UndefOr[Input[ContainerStateRunning]] = js.undefined
   
   /**
     * Details about a terminated container
     */
-  var terminated: js.UndefOr[Input[ContainerStateTerminated]] = js.native
+  var terminated: js.UndefOr[Input[ContainerStateTerminated]] = js.undefined
   
   /**
     * Details about a waiting container
     */
-  var waiting: js.UndefOr[Input[ContainerStateWaiting]] = js.native
+  var waiting: js.UndefOr[Input[ContainerStateWaiting]] = js.undefined
 }
 object ContainerState {
   

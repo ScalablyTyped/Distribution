@@ -2,36 +2,34 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDetectorModelRequest extends StObject {
   
   /**
     * Information that defines how a detector operates.
     */
-  var detectorModelDefinition: DetectorModelDefinition = js.native
+  var detectorModelDefinition: DetectorModelDefinition
   
   /**
     * A brief description of the detector model.
     */
-  var detectorModelDescription: js.UndefOr[DetectorModelDescription] = js.native
+  var detectorModelDescription: js.UndefOr[DetectorModelDescription] = js.undefined
   
   /**
     * The name of the detector model that is updated.
     */
-  var detectorModelName: DetectorModelName = js.native
+  var detectorModelName: DetectorModelName
   
   /**
     * Information about the order in which events are evaluated and how actions are executed. 
     */
-  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.native
+  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.undefined
   
   /**
     * The ARN of the role that grants permission to AWS IoT Events to perform its operations.
     */
-  var roleArn: AmazonResourceName = js.native
+  var roleArn: AmazonResourceName
 }
 object UpdateDetectorModelRequest {
   

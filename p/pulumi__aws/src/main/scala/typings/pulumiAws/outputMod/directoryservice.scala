@@ -2,40 +2,38 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directoryservice {
   
-  @js.native
   trait DirectoryConnectSettings extends StObject {
     
-    var availabilityZones: js.Array[String] = js.native
+    var availabilityZones: js.Array[String]
     
     /**
       * The IP addresses of the AD Connector servers.
       */
-    var connectIps: js.Array[String] = js.native
+    var connectIps: js.Array[String]
     
     /**
       * The DNS IP addresses of the domain to connect to.
       */
-    var customerDnsIps: js.Array[String] = js.native
+    var customerDnsIps: js.Array[String]
     
     /**
       * The username corresponding to the password provided.
       */
-    var customerUsername: String = js.native
+    var customerUsername: String
     
     /**
       * The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: js.Array[String] = js.native
+    var subnetIds: js.Array[String]
     
     /**
       * The identifier of the VPC that the directory is in.
       */
-    var vpcId: String = js.native
+    var vpcId: String
   }
   object DirectoryConnectSettings {
     
@@ -87,20 +85,19 @@ object directoryservice {
     }
   }
   
-  @js.native
   trait DirectoryVpcSettings extends StObject {
     
-    var availabilityZones: js.Array[String] = js.native
+    var availabilityZones: js.Array[String]
     
     /**
       * The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: js.Array[String] = js.native
+    var subnetIds: js.Array[String]
     
     /**
       * The identifier of the VPC that the directory is in.
       */
-    var vpcId: String = js.native
+    var vpcId: String
   }
   object DirectoryVpcSettings {
     
@@ -130,35 +127,34 @@ object directoryservice {
     }
   }
   
-  @js.native
   trait GetDirectoryConnectSetting extends StObject {
     
-    var availabilityZones: js.Array[String] = js.native
+    var availabilityZones: js.Array[String]
     
     /**
       * The IP addresses of the AD Connector servers.
       */
-    var connectIps: js.Array[String] = js.native
+    var connectIps: js.Array[String]
     
     /**
       * The DNS IP addresses of the domain to connect to.
       */
-    var customerDnsIps: js.Array[String] = js.native
+    var customerDnsIps: js.Array[String]
     
     /**
       * The username corresponding to the password provided.
       */
-    var customerUsername: String = js.native
+    var customerUsername: String
     
     /**
       * The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: js.Array[String] = js.native
+    var subnetIds: js.Array[String]
     
     /**
       * The ID of the VPC that the connector is in.
       */
-    var vpcId: String = js.native
+    var vpcId: String
   }
   object GetDirectoryConnectSetting {
     
@@ -210,20 +206,19 @@ object directoryservice {
     }
   }
   
-  @js.native
   trait GetDirectoryVpcSetting extends StObject {
     
-    var availabilityZones: js.Array[String] = js.native
+    var availabilityZones: js.Array[String]
     
     /**
       * The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: js.Array[String] = js.native
+    var subnetIds: js.Array[String]
     
     /**
       * The ID of the VPC that the connector is in.
       */
-    var vpcId: String = js.native
+    var vpcId: String
   }
   object GetDirectoryVpcSetting {
     

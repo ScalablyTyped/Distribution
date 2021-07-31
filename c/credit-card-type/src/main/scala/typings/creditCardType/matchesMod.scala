@@ -2,18 +2,18 @@ package typings.creditCardType
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchesMod {
   
-  @JSImport("credit-card-type/dist/lib/matches", "matches")
+  @JSImport("credit-card-type/dist/lib/matches", JSImport.Namespace)
   @js.native
-  def matches(cardNumber: String, pattern: String): Boolean = js.native
-  @JSImport("credit-card-type/dist/lib/matches", "matches")
-  @js.native
-  def matches(cardNumber: String, pattern: js.Array[Double | String]): Boolean = js.native
-  @JSImport("credit-card-type/dist/lib/matches", "matches")
-  @js.native
-  def matches(cardNumber: String, pattern: Double): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def matches(cardNumber: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(cardNumber.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matches(cardNumber: String, pattern: js.Array[Double | String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(cardNumber.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matches(cardNumber: String, pattern: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(cardNumber.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

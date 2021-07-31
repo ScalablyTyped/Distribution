@@ -2,19 +2,17 @@ package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overlay extends StObject {
   
-  var overlay: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[String] = js.undefined
   
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Overlay {
   

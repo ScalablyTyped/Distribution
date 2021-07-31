@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMitigationActionRequest extends StObject {
   
   /**
     * The name of the mitigation action that you want to delete.
     */
-  var actionName: MitigationActionName = js.native
+  var actionName: MitigationActionName
 }
 object DeleteMitigationActionRequest {
   

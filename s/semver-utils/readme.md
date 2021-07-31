@@ -10,9 +10,9 @@ Tools for manipulating semver strings and objects
 | ------------------ | :-------------: |
 | Full name          | semver-utils |
 | Keywords           | semver, parse, parseRange, range |
-| # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 6212284 |
+| # releases         | 0 |
+| # dependents       | 56 |
+| # downloads        | 7577814 |
 | # stars            | 1 |
 
 ## Links

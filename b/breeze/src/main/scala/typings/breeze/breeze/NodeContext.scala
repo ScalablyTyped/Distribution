@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeContext extends StObject {
   
-  var nodeType: String = js.native
+  var nodeType: String
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object NodeContext {
   

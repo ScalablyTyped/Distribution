@@ -8,7 +8,6 @@ import typings.std.Event
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ajaxMod {
@@ -21,8 +20,35 @@ object ajaxMod {
   @JSImport("rxjs/ajax", "AjaxError")
   @js.native
   class AjaxErrorCls protected ()
-    extends typings.rxjs.ajaxObservableMod.AjaxError {
+    extends StObject
+       with typings.rxjs.ajaxObservableMod.AjaxError {
     def this(message: String, xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
   @JSImport("rxjs/ajax", "AjaxResponse")
@@ -40,8 +66,35 @@ object ajaxMod {
   @JSImport("rxjs/ajax", "AjaxTimeoutError")
   @js.native
   class AjaxTimeoutErrorCls protected ()
-    extends typings.rxjs.ajaxObservableMod.AjaxError {
+    extends StObject
+       with typings.rxjs.ajaxObservableMod.AjaxError {
     def this(xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
   @JSImport("rxjs/ajax", "ajax")

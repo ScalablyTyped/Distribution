@@ -9,31 +9,25 @@ import typings.openfin.openfinStrings.unknown
 import typings.openfin.openfinStrings.unlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionChangedEvent extends StObject {
   
   /**
     * the action that triggered this event:
     */
-  var reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown = js.native
+  var reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown
   
-  var topic: system = js.native
+  var topic: system
   
-  var `type`: `session-changed` = js.native
+  var `type`: `session-changed`
 }
 object SessionChangedEvent {
   
   @scala.inline
-  def apply(
-    reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown,
-    topic: system,
-    `type`: `session-changed`
-  ): SessionChangedEvent = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): SessionChangedEvent = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], topic = "system")
+    __obj.updateDynamic("type")("session-changed")
     __obj.asInstanceOf[SessionChangedEvent]
   }
   

@@ -2,17 +2,15 @@ package typings.lineReader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineReaderOptions extends StObject {
   
-  var bufferSize: js.UndefOr[Double] = js.native
+  var bufferSize: js.UndefOr[Double] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var separator: js.UndefOr[js.Any] = js.native
+  var separator: js.UndefOr[js.Any] = js.undefined
 }
 object LineReaderOptions {
   

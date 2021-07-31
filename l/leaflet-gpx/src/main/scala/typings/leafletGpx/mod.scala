@@ -7,7 +7,6 @@ import typings.leafletGpx.anon.ParseElements
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -105,18 +104,17 @@ object mod {
     def to_miles(kilometers: Double): Double = js.native
   }
   
-  @js.native
   trait GPXOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var gpx_options: js.UndefOr[ParseElements] = js.native
+    var gpx_options: js.UndefOr[ParseElements] = js.undefined
     
-    var marker_options: js.UndefOr[MarkerOptions] = js.native
+    var marker_options: js.UndefOr[MarkerOptions] = js.undefined
     
-    var max_point_interval: js.UndefOr[Double] = js.native
+    var max_point_interval: js.UndefOr[Double] = js.undefined
     
-    var polyline_options: js.UndefOr[PolylineOptions] = js.native
+    var polyline_options: js.UndefOr[PolylineOptions] = js.undefined
   }
   object GPXOptions {
     

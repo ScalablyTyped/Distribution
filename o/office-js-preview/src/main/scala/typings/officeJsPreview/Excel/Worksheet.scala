@@ -18,7 +18,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.VeryHidden
 import typings.officeJsPreview.officeJsPreviewStrings.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait Worksheet extends ClientObject {
+trait Worksheet
+  extends StObject
+     with ClientObject {
   
   /**
     * Activate the worksheet in the Excel UI.
@@ -85,7 +86,7 @@ trait Worksheet extends ClientObject {
     * @returns The newly created worksheet.
     */
   def copy(): Worksheet = js.native
-  def copy(positionType: js.UndefOr[scala.Nothing], relativeTo: Worksheet): Worksheet = js.native
+  def copy(positionType: Unit, relativeTo: Worksheet): Worksheet = js.native
   def copy(positionType: WorksheetPositionType): Worksheet = js.native
   def copy(positionType: WorksheetPositionType, relativeTo: Worksheet): Worksheet = js.native
   @JSName("copy")

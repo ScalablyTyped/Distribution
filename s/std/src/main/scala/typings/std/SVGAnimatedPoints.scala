@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedPoints extends StObject {
   
-  val animatedPoints: SVGPointList = js.native
+  val animatedPoints: SVGPointList
   
-  val points: SVGPointList = js.native
+  val points: SVGPointList
 }
 object SVGAnimatedPoints {
   

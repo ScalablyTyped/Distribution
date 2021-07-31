@@ -10,10 +10,13 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peoplePickerMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "BasePeoplePicker")
   @js.native
@@ -99,18 +102,16 @@ object peoplePickerMod {
     def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "createGenericItem")
-  @js.native
-  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = js.native
+  @scala.inline
+  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]
   
-  @js.native
   trait IGenericItem extends StObject {
     
-    var ValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState = js.native
+    var ValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState
     
-    var imageInitials: String = js.native
+    var imageInitials: String
     
-    var primaryText: String = js.native
+    var primaryText: String
   }
   object IGenericItem {
     

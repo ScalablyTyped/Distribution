@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailPhishing extends StObject {
   
   /** The domain ID. */
-  var domainId: js.UndefOr[DomainId] = js.native
+  var domainId: js.UndefOr[DomainId] = js.undefined
   
   /** If `true`, the email originated from within the organization. */
-  var isInternal: js.UndefOr[Boolean] = js.native
+  var isInternal: js.UndefOr[Boolean] = js.undefined
   
   /** The entity whose actions triggered a Gmail phishing alert. */
-  var maliciousEntity: js.UndefOr[MaliciousEntity] = js.native
+  var maliciousEntity: js.UndefOr[MaliciousEntity] = js.undefined
   
   /** The list of messages contained by this alert. */
-  var messages: js.UndefOr[js.Array[GmailMessageInfo]] = js.native
+  var messages: js.UndefOr[js.Array[GmailMessageInfo]] = js.undefined
   
   /** System actions on the messages. */
-  var systemActionType: js.UndefOr[String] = js.native
+  var systemActionType: js.UndefOr[String] = js.undefined
 }
 object MailPhishing {
   

@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Data Layer
 @js.native
-trait Data extends KVO {
+trait Data
+  extends StObject
+     with KVO {
   
   def addFeature(feature: Feature, autoStyle: Boolean): Unit = js.native
   

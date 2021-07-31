@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.Animated.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sheetMod {
@@ -22,12 +21,11 @@ object sheetMod {
     def UNSAFE_componentWillReceiveProps_MSheet(newProps: SheetProps): Unit = js.native
   }
   
-  @js.native
   trait SheetProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object SheetProps {
     
@@ -51,10 +49,9 @@ object sheetMod {
     }
   }
   
-  @js.native
   trait SheetState extends StObject {
     
-    var bottom: Value = js.native
+    var bottom: Value
   }
   object SheetState {
     

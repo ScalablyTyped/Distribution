@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computeMod {
+  
+  @JSImport("googleapis/build/src/apis/compute", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -118,9 +121,12 @@ object computeMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/compute", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/compute", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -164,22 +170,19 @@ object computeMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute(options: Options): Compute = js.native
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = js.native
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute_alpha(version: alpha): Compute = js.native
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = js.native
-  @JSImport("googleapis/build/src/apis/compute", "compute")
-  @js.native
-  def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
+  @scala.inline
+  def compute(options: Options): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[Compute]
+  @scala.inline
+  def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
+  @scala.inline
+  def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
+  
+  @scala.inline
+  def compute_alpha(version: alpha): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[Compute]
+  
+  @scala.inline
+  def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
+  
+  @scala.inline
+  def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
 }

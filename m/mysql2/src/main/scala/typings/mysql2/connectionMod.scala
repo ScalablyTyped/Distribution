@@ -14,7 +14,6 @@ import typings.mysql2.rowDataPacketMod.RowDataPacket
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -22,48 +21,63 @@ object connectionMod {
   @JSImport("mysql2/typings/mysql/lib/Connection", JSImport.Namespace)
   @js.native
   class ^ () extends Connection
+  @JSImport("mysql2/typings/mysql/lib/Connection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
+  @scala.inline
+  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
   def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
-    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
-  ): typings.mysql2.queryMod.^ = js.native
+    callback: js.Function3[
+      /* err */ QueryError | Null, 
+      /* result */ T, 
+      /* fields */ js.Array[FieldPacket], 
+      js.Any
+    ]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   /* static member */
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
+  @scala.inline
+  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
   def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     values: js.Any,
-    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
-  ): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
+    callback: js.Function3[
+      /* err */ QueryError | Null, 
+      /* result */ T, 
+      /* fields */ js.Array[FieldPacket], 
+      js.Any
+    ]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
+  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
   def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
-    values: js.Array[_],
-    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
-  ): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
-  @JSImport("mysql2/typings/mysql/lib/Connection", "createQuery")
-  @js.native
+    values: js.Array[js.Any],
+    callback: js.Function3[
+      /* err */ QueryError | Null, 
+      /* result */ T, 
+      /* fields */ js.Array[FieldPacket], 
+      js.Any
+    ]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
+  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  @scala.inline
   def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     values: StringDictionary[js.Any],
-    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
-  ): typings.mysql2.queryMod.^ = js.native
+    callback: js.Function3[
+      /* err */ QueryError | Null, 
+      /* result */ T, 
+      /* fields */ js.Array[FieldPacket], 
+      js.Any
+    ]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   
   @js.native
   trait Connection extends EventEmitter {
@@ -95,7 +109,7 @@ object connectionMod {
     
     def format(sql: String): String = js.native
     def format(sql: String, values: js.Any): String = js.native
-    def format(sql: String, values: js.Array[_]): String = js.native
+    def format(sql: String, values: js.Array[js.Any]): String = js.native
     def format(sql: String, values: StringDictionary[js.Any]): String = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
@@ -109,49 +123,84 @@ object connectionMod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          _
+          js.Any
         ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
       values: js.Any,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[_],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      values: js.Array[js.Any],
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
       values: StringDictionary[js.Any],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
       values: js.Any,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[_],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      values: js.Array[js.Any],
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
       values: StringDictionary[js.Any],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     
     def resume(): Unit = js.native
@@ -161,7 +210,6 @@ object connectionMod {
     var threadId: Double = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
     /**
@@ -172,24 +220,24 @@ object connectionMod {
       * (which happens when they exceed the [-2^53, +2^53] range), otherwise they will be returned as Number objects.
       * This option is ignored if supportBigNumbers is disabled.
       */
-    var bigNumberStrings: js.UndefOr[Boolean] = js.native
+    var bigNumberStrings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The charset for the connection. This is called 'collation' in the SQL-level of MySQL (like utf8_general_ci).
       * If a SQL-level charset is specified (like utf8mb4) then the default collation for that charset is used.
       * (Default: 'UTF8_GENERAL_CI')
       */
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
     /**
       * The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10 seconds)
       */
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of the database to use for this connection
       */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
     /**
       * Force date types (TIMESTAMP, DATETIME, DATE) to be returned as strings rather then inflated into JavaScript Date
@@ -197,7 +245,7 @@ object connectionMod {
       *
       * (Default: false)
       */
-    var dateStrings: js.UndefOr[Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])] = js.native
+    var dateStrings: js.UndefOr[Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])] = js.undefined
     
     /**
       * This will print all incoming and outgoing packets on stdout.
@@ -205,79 +253,79 @@ object connectionMod {
       *
       * (Default: false)
       */
-    var debug: js.UndefOr[js.Any] = js.native
+    var debug: js.UndefOr[js.Any] = js.undefined
     
     /**
       * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
       */
-    var flags: js.UndefOr[js.Array[String]] = js.native
+    var flags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The hostname of the database you are connecting to. (Default: localhost)
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Allow connecting to MySQL instances that ask for the old (insecure) authentication method. (Default: false)
       */
-    var insecureAuth: js.UndefOr[Boolean] = js.native
+    var insecureAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The source IP address to use for TCP connection
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Allow multiple mysql statements per query. Be careful with this, it exposes you to SQL injection attacks. (Default: false)
       */
-    var multipleStatements: js.UndefOr[Boolean] = js.native
+    var multipleStatements: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The password of that MySQL user
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * The port number to connect to. (Default: 3306)
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * A custom query format function
       */
-    var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, Unit]] = js.native
+    var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, Unit]] = js.undefined
     
     /**
       * The path to a unix domain socket to connect to. When used host and port are ignored
       */
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
     /**
       * object with ssl parameters or a string containing name of ssl profile
       */
-    var ssl: js.UndefOr[String | SslOptions] = js.native
+    var ssl: js.UndefOr[String | SslOptions] = js.undefined
     
     /**
       * Stringify objects instead of converting to values. (Default: 'false')
       */
-    var stringifyObjects: js.UndefOr[Boolean] = js.native
+    var stringifyObjects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When dealing with big numbers (BIGINT and DECIMAL columns) in the database, you should enable this option
       * (Default: false)
       */
-    var supportBigNumbers: js.UndefOr[Boolean] = js.native
+    var supportBigNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timezone used to store local dates. (Default: 'local')
       */
-    var timezone: js.UndefOr[String | local] = js.native
+    var timezone: js.UndefOr[String | local] = js.undefined
     
     /**
       * Generates stack traces on Error to include call site of library entrance ('long stack traces'). Slight
       * performance penalty for most calls. (Default: true)
       */
-    var trace: js.UndefOr[Boolean] = js.native
+    var trace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
@@ -299,12 +347,14 @@ object connectionMod {
       *
       * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
       */
-    var typeCast: js.UndefOr[Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], _])] = js.native
+    var typeCast: js.UndefOr[
+        Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])
+      ] = js.undefined
     
     /**
       * The MySQL user to authenticate as
       */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object ConnectionOptions {
     
@@ -444,10 +494,10 @@ object connectionMod {
       def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
       @scala.inline
-      def setTypeCast(value: Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], _])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+      def setTypeCast(value: Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeCastFunction2(value: (/* field */ js.Any, /* next */ js.Function0[Unit]) => _): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+      def setTypeCastFunction2(value: (/* field */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
@@ -460,48 +510,47 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait SslOptions extends StObject {
     
     /**
       * Either a string or list of strings of PEM encoded CA certificates to trust.
       */
-    var ca: js.UndefOr[String | js.Array[String]] = js.native
+    var ca: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * A string holding the PEM encoded certificate
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /**
       * A string describing the ciphers to use or exclude
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /**
       * Either a string or list of strings of PEM encoded CRLs (Certificate Revocation List)
       */
-    var crl: js.UndefOr[String | js.Array[String]] = js.native
+    var crl: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * A string holding the PEM encoded private key
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * A string of passphrase for the private key or pfx
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * A string or buffer holding the PFX or PKCS12 encoded private key, certificate and CA certificates
       */
-    var pfx: js.UndefOr[String] = js.native
+    var pfx: js.UndefOr[String] = js.undefined
     
     /**
       * You can also connect to a MySQL server without properly providing the appropriate CA to trust. You should not do this.
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object SslOptions {
     

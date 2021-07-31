@@ -2,17 +2,15 @@ package typings.firebase.mod.firebase.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettingsOptions extends StObject {
   
   /** Sets custom name for `dataLayer` array used by gtag. */
-  var dataLayerName: js.UndefOr[String] = js.native
+  var dataLayerName: js.UndefOr[String] = js.undefined
   
   /** Sets custom name for `gtag` function. */
-  var gtagName: js.UndefOr[String] = js.native
+  var gtagName: js.UndefOr[String] = js.undefined
 }
 object SettingsOptions {
   

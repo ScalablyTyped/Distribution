@@ -5,7 +5,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -58,34 +57,33 @@ object mod {
     var width: Double = js.native
   }
   
-  @js.native
   trait Frame extends StObject {
     
-    var data_length: Double = js.native
+    var data_length: Double
     
-    var data_offset: Double = js.native
+    var data_offset: Double
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var disposal: Double = js.native
+    var disposal: Double
     
-    var has_local_palette: Boolean = js.native
+    var has_local_palette: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var interlaced: Boolean = js.native
+    var interlaced: Boolean
     
-    var palette_offset: Double | Null = js.native
+    var palette_offset: Double | Null
     
-    var palette_size: Double | Null = js.native
+    var palette_size: Double | Null
     
-    var transparent_index: Double | Null = js.native
+    var transparent_index: Double | Null
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Frame {
     
@@ -102,7 +100,7 @@ object mod {
       x: Double,
       y: Double
     ): Frame = {
-      val __obj = js.Dynamic.literal(data_length = data_length.asInstanceOf[js.Any], data_offset = data_offset.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], disposal = disposal.asInstanceOf[js.Any], has_local_palette = has_local_palette.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlaced = interlaced.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data_length = data_length.asInstanceOf[js.Any], data_offset = data_offset.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], disposal = disposal.asInstanceOf[js.Any], has_local_palette = has_local_palette.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlaced = interlaced.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], palette_offset = null, palette_size = null, transparent_index = null)
       __obj.asInstanceOf[Frame]
     }
     
@@ -159,16 +157,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FrameOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var disposal: js.UndefOr[Double] = js.native
+    var disposal: js.UndefOr[Double] = js.undefined
     
-    var palette: js.UndefOr[js.Array[Double] | Null] = js.native
+    var palette: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
-    var transparent: js.UndefOr[Double] = js.native
+    var transparent: js.UndefOr[Double] = js.undefined
   }
   object FrameOptions {
     
@@ -213,14 +210,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GifOptions extends StObject {
     
-    var background: js.UndefOr[Double] = js.native
+    var background: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Double] = js.native
+    var loop: js.UndefOr[Double] = js.undefined
     
-    var palette: js.UndefOr[js.Array[Double]] = js.native
+    var palette: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object GifOptions {
     

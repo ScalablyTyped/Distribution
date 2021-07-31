@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepositorySupplier
   * @since OOo 3.0
   */
-@js.native
-trait Repository extends XRepository {
+trait Repository
+  extends StObject
+     with XRepository {
   
   /** constructs repository with in-memory storage. */
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object Repository {
   

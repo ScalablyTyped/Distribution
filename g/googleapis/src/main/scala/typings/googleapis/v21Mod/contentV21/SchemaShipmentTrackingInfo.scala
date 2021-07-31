@@ -2,15 +2,13 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaShipmentTrackingInfo extends StObject {
   
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
-  var trackingNumber: js.UndefOr[String] = js.native
+  var trackingNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaShipmentTrackingInfo {
   

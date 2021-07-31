@@ -5,16 +5,15 @@ import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait AttributeMap
-    extends /* attributeName */ StringDictionary[js.UndefOr[StateValue]] {
+    extends StObject
+       with /* attributeName */ StringDictionary[js.UndefOr[StateValue]] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object AttributeMap {
     
@@ -35,11 +34,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait InheritedAttributes
-    extends /* props */ StringDictionary[js.Any] {
+    extends StObject
+       with /* props */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object InheritedAttributes {
     
@@ -73,17 +72,16 @@ object typesMod {
     def update(stylesheet: I, node: O): O = js.native
   }
   
-  @js.native
   trait RenderableStylesheet extends StObject {
     
     @JSName("$css")
-    var $css: js.UndefOr[String] = js.native
+    var $css: js.UndefOr[String] = js.undefined
     
     @JSName("$depth")
-    var $depth: Double = js.native
+    var $depth: Double
     
     @JSName("$id")
-    var $id: String | Double = js.native
+    var $id: String | Double
   }
   object RenderableStylesheet {
     
@@ -110,49 +108,84 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RuntimeStylesheet
-    extends StylableExports
+    extends StObject
+       with StylableExports
        with RenderableStylesheet {
     
-    def cssStates(stateMap: StateMap): String = js.native
+    def cssStates(stateMap: StateMap): String
     
-    var namespace: String = js.native
+    var namespace: String
     
-    def st(context: String, stateOrClass: js.UndefOr[scala.Nothing], classes: js.UndefOr[String]*): String = js.native
-    def st(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String = js.native
-    def st(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String = js.native
+    def st(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String
+    def st(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String
+    def st(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
     @JSName("st")
-    var st_Original: STFunction = js.native
+    var st_Original: STFunction
     
-    def style(context: String, stateOrClass: js.UndefOr[scala.Nothing], classes: js.UndefOr[String]*): String = js.native
-    def style(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String = js.native
-    def style(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String = js.native
+    def style(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String
+    def style(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String
+    def style(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
     @JSName("style")
-    var style_Original: STFunction = js.native
+    var style_Original: STFunction
+  }
+  object RuntimeStylesheet {
+    
+    @scala.inline
+    def apply(
+      $depth: Double,
+      $id: String | Double,
+      classes: Record[String, String],
+      cssStates: StateMap => String,
+      keyframes: Record[String, String],
+      namespace: String,
+      st: STFunction,
+      stVars: Record[String, String],
+      style: STFunction,
+      vars: Record[String, String]
+    ): RuntimeStylesheet = {
+      val __obj = js.Dynamic.literal($depth = $depth.asInstanceOf[js.Any], $id = $id.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], cssStates = js.Any.fromFunction1(cssStates), keyframes = keyframes.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], stVars = stVars.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RuntimeStylesheet]
+    }
+    
+    @scala.inline
+    implicit class RuntimeStylesheetMutableBuilder[Self <: RuntimeStylesheet] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCssStates(value: StateMap => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSt(value: STFunction): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStyle(value: STFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    }
   }
   
-  type STFunction = js.Function3[
-    /* context */ String, 
-    /* stateOrClass */ js.UndefOr[String | StateMap], 
-    /* repeated */ js.UndefOr[String], 
-    String
-  ]
+  @js.native
+  trait STFunction extends StObject {
+    
+    def apply(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String = js.native
+    def apply(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String = js.native
+    def apply(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String = js.native
+  }
   
   type StateMap = StringDictionary[StateValue]
   
   type StateValue = Boolean | Double | String
   
-  @js.native
   trait StylableExports extends StObject {
     
-    var classes: Record[String, String] = js.native
+    var classes: Record[String, String]
     
-    var keyframes: Record[String, String] = js.native
+    var keyframes: Record[String, String]
     
-    var stVars: Record[String, String] = js.native
+    var stVars: Record[String, String]
     
-    var vars: Record[String, String] = js.native
+    var vars: Record[String, String]
   }
   object StylableExports {
     

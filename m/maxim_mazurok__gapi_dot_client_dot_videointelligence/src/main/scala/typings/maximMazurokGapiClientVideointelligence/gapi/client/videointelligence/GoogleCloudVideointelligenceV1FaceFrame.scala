@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1FaceFrame extends StObject {
   
   /** Normalized Bounding boxes in a frame. There can be more than one boxes if the same face is detected in multiple locations within the current frame. */
-  var normalizedBoundingBoxes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1NormalizedBoundingBox]] = js.native
+  var normalizedBoundingBoxes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1NormalizedBoundingBox]] = js.undefined
   
   /** Time-offset, relative to the beginning of the video, corresponding to the video frame for this location. */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1FaceFrame {
   

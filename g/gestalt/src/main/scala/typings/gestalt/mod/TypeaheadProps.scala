@@ -8,33 +8,31 @@ import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeaheadProps extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var noResultText: String = js.native
+  var noResultText: String
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ EventValueString, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* args */ EventValueString, Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* args */ EventSyntheticEventValueString, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* args */ EventSyntheticEventValueString, Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ EventFocusEvent, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* args */ EventFocusEvent, Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* args */ Item, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* args */ Item, Unit]] = js.undefined
   
-  var options: js.Array[typings.gestalt.anon.Label] = js.native
+  var options: js.Array[typings.gestalt.anon.Label]
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TypeaheadProps {
   

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JmxExporterInfo extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait JmxExporterInfo extends StObject {
     Indicates whether you want to enable or disable the JMX Exporter.
     
     */
-  var EnabledInBroker: boolean = js.native
+  var EnabledInBroker: boolean
 }
 object JmxExporterInfo {
   

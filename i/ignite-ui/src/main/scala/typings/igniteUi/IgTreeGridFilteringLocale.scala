@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridFilteringLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -23,7 +22,7 @@ trait IgTreeGridFilteringLocale
     * ${recordCount} (paging)
     *
     */
-  var filterSummaryInPagerTemplate: js.UndefOr[String] = js.native
+  var filterSummaryInPagerTemplate: js.UndefOr[String] = js.undefined
 }
 object IgTreeGridFilteringLocale {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeModelVersionsRequest extends StObject {
   
   /**
     * The maximum number of results to return.
     */
-  var maxResults: js.UndefOr[modelsMaxPageSize] = js.native
+  var maxResults: js.UndefOr[modelsMaxPageSize] = js.undefined
   
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[modelIdentifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.undefined
   
   /**
     * The model type.
     */
-  var modelType: js.UndefOr[ModelTypeEnum] = js.native
+  var modelType: js.UndefOr[ModelTypeEnum] = js.undefined
   
   /**
     * The model version number.
     */
-  var modelVersionNumber: js.UndefOr[floatVersionString] = js.native
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.undefined
   
   /**
     * The next token from the previous results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeModelVersionsRequest {
   

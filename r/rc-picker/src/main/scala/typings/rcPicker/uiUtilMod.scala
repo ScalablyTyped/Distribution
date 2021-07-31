@@ -9,10 +9,13 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uiUtilMod {
+  
+  @JSImport("rc-picker/es/utils/uiUtil", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Record<rc-picker.rc-picker/es/interface.PickerMode, (next : rc-picker.rc-picker/es/interface.PanelMode): rc-picker.rc-picker/es/interface.PanelMode | null> */
   object PickerModeMap {
@@ -58,288 +61,173 @@ object uiUtilMod {
     def year_=(x: (js.Function1[/* next */ PanelMode, PanelMode]) | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("year")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("rc-picker/es/utils/uiUtil", "addGlobalMouseDownEvent")
-  @js.native
-  def addGlobalMouseDownEvent(callback: ClickEventHandler): js.Function0[Unit] = js.native
+  @scala.inline
+  def addGlobalMouseDownEvent(callback: ClickEventHandler): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalMouseDownEvent")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "createKeyDownHandler")
-  @js.native
+  @scala.inline
   def createKeyDownHandler(
     event: KeyboardEvent[HTMLElement],
     hasOnLeftRightOnCtrlLeftRightOnUpDownOnPageUpDownOnEnter: KeyboardConfig
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyDownHandler")(event.asInstanceOf[js.Any], hasOnLeftRightOnCtrlLeftRightOnUpDownOnPageUpDownOnEnter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "elementsContains")
-  @js.native
-  def elementsContains(elements: js.Array[js.UndefOr[HTMLElement | Null]], target: HTMLElement): Boolean = js.native
+  @scala.inline
+  def elementsContains(elements: js.Array[js.UndefOr[HTMLElement | Null]], target: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementsContains")(elements.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  @scala.inline
+  def getDefaultFormat[DateType](): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")().asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any]).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: Unit, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: Unit, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: Unit, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: Unit, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: Unit, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]]): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any]).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: Unit, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
-    format: js.UndefOr[scala.Nothing],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.UndefOr[scala.Nothing],
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: js.UndefOr[scala.Nothing], showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.UndefOr[scala.Nothing],
-    picker: js.UndefOr[scala.Nothing],
+    format: js.Array[String | CustomFormat[DateType]],
+    picker: Unit,
     showTime: js.Object,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: js.UndefOr[scala.Nothing], showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: Unit, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
-    format: js.UndefOr[scala.Nothing],
-    picker: js.UndefOr[scala.Nothing],
+    format: js.Array[String | CustomFormat[DateType]],
+    picker: Unit,
     showTime: Boolean,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.UndefOr[scala.Nothing],
-    picker: PickerMode,
-    showTime: js.UndefOr[scala.Nothing],
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.UndefOr[scala.Nothing], picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: String,
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.UndefOr[scala.Nothing],
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: js.UndefOr[scala.Nothing], showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: js.UndefOr[scala.Nothing], showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: js.UndefOr[scala.Nothing], showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: js.UndefOr[scala.Nothing], showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: js.UndefOr[scala.Nothing], use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: String, picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]]): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
     format: js.Array[String | CustomFormat[DateType]],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.UndefOr[scala.Nothing],
+    picker: Unit,
+    showTime: Unit,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.Array[String | CustomFormat[DateType]],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.Object
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.Array[String | CustomFormat[DateType]],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.Object,
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.Array[String | CustomFormat[DateType]],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.Array[String | CustomFormat[DateType]],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: Boolean,
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: js.Array[String | CustomFormat[DateType]],
-    picker: PickerMode,
-    showTime: js.UndefOr[scala.Nothing],
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
     format: js.Array[String | CustomFormat[DateType]],
     picker: PickerMode,
     showTime: js.Object,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: js.Array[String | CustomFormat[DateType]], picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
     format: js.Array[String | CustomFormat[DateType]],
     picker: PickerMode,
     showTime: Boolean,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType]): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
   def getDefaultFormat[DateType](
-    format: CustomFormat[DateType],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.UndefOr[scala.Nothing],
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: js.UndefOr[scala.Nothing], showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: CustomFormat[DateType],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: js.Object,
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: js.UndefOr[scala.Nothing], showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: CustomFormat[DateType],
-    picker: js.UndefOr[scala.Nothing],
-    showTime: Boolean,
-    use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](
-    format: CustomFormat[DateType],
+    format: js.Array[String | CustomFormat[DateType]],
     picker: PickerMode,
-    showTime: js.UndefOr[scala.Nothing],
+    showTime: Unit,
     use12Hours: Boolean
-  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getDefaultFormat")
-  @js.native
-  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = js.native
+  ): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: Unit, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: Unit, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: Unit, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: Unit, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: Unit, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: Unit, picker: PickerMode, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType]): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any]).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: Unit, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: Unit, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: Unit, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: Unit, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: Unit, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: js.Object): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: js.Object, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: Boolean, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
+  @scala.inline
+  def getDefaultFormat[DateType](format: CustomFormat[DateType], picker: PickerMode, showTime: Unit, use12Hours: Boolean): String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormat")(format.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], showTime.asInstanceOf[js.Any], use12Hours.asInstanceOf[js.Any])).asInstanceOf[String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "getInputSize")
-  @js.native
-  def getInputSize[DateType](picker: js.UndefOr[scala.Nothing], format: String, generateConfig: GenerateConfig[DateType]): Double = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getInputSize")
-  @js.native
-  def getInputSize[DateType](
-    picker: js.UndefOr[scala.Nothing],
-    format: CustomFormat[DateType],
-    generateConfig: GenerateConfig[DateType]
-  ): Double = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getInputSize")
-  @js.native
-  def getInputSize[DateType](picker: PickerMode, format: String, generateConfig: GenerateConfig[DateType]): Double = js.native
-  @JSImport("rc-picker/es/utils/uiUtil", "getInputSize")
-  @js.native
-  def getInputSize[DateType](picker: PickerMode, format: CustomFormat[DateType], generateConfig: GenerateConfig[DateType]): Double = js.native
+  @scala.inline
+  def getInputSize[DateType](picker: Unit, format: String, generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getInputSize[DateType](picker: Unit, format: CustomFormat[DateType], generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getInputSize[DateType](picker: PickerMode, format: String, generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getInputSize[DateType](picker: PickerMode, format: CustomFormat[DateType], generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "scrollTo")
-  @js.native
-  def scrollTo(element: HTMLElement, to: Double, duration: Double): Unit = js.native
+  @scala.inline
+  def scrollTo(element: HTMLElement, to: Double, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-picker/es/utils/uiUtil", "waitElementReady")
-  @js.native
-  def waitElementReady(element: HTMLElement, callback: js.Function0[Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def waitElementReady(element: HTMLElement, callback: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitElementReady")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   type ClickEventHandler = js.Function1[/* event */ MouseEvent, Unit]
   
-  @js.native
   trait KeyboardConfig extends StObject {
     
-    var onCtrlLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+    var onCtrlLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onEnter: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+    var onLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
     
-    var onPageUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+    var onPageUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
     
-    var onUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+    var onUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
   }
   object KeyboardConfig {
     

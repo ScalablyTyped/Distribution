@@ -2,46 +2,44 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricDatapoint extends StObject {
   
   /**
     * The average.
     */
-  var average: js.UndefOr[double] = js.native
+  var average: js.UndefOr[double] = js.undefined
   
   /**
     * The maximum.
     */
-  var maximum: js.UndefOr[double] = js.native
+  var maximum: js.UndefOr[double] = js.undefined
   
   /**
     * The minimum.
     */
-  var minimum: js.UndefOr[double] = js.native
+  var minimum: js.UndefOr[double] = js.undefined
   
   /**
     * The sample count.
     */
-  var sampleCount: js.UndefOr[double] = js.native
+  var sampleCount: js.UndefOr[double] = js.undefined
   
   /**
     * The sum.
     */
-  var sum: js.UndefOr[double] = js.native
+  var sum: js.UndefOr[double] = js.undefined
   
   /**
     * The timestamp (e.g., 1479816991.349).
     */
-  var timestamp: js.UndefOr[typings.awsSdk.lightsailMod.timestamp] = js.native
+  var timestamp: js.UndefOr[typings.awsSdk.lightsailMod.timestamp] = js.undefined
   
   /**
     * The unit. 
     */
-  var unit: js.UndefOr[MetricUnit] = js.native
+  var unit: js.UndefOr[MetricUnit] = js.undefined
 }
 object MetricDatapoint {
   

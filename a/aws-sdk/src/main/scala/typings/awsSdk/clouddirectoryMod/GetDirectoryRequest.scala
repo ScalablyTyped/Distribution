@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDirectoryRequest extends StObject {
   
   /**
     * The ARN of the directory.
     */
-  var DirectoryArn: typings.awsSdk.clouddirectoryMod.DirectoryArn = js.native
+  var DirectoryArn: typings.awsSdk.clouddirectoryMod.DirectoryArn
 }
 object GetDirectoryRequest {
   

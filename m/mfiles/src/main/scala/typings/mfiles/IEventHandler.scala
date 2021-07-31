@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFEventHandlerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventHandler extends StObject {
   
-  var Active: Boolean = js.native
+  var Active: Boolean
   
-  def Clone(): IEventHandler = js.native
+  def Clone(): IEventHandler
   
-  var Description: String = js.native
+  var Description: String
   
-  var EventType: MFEventHandlerType = js.native
+  var EventType: MFEventHandlerType
   
-  val GUID: String = js.native
+  val GUID: String
   
-  def GetID(): Double = js.native
+  def GetID(): Double
   
-  var VBScript: String = js.native
+  var VBScript: String
 }
 object IEventHandler {
   

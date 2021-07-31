@@ -2,20 +2,18 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorSegment extends StObject {
   
-  val end: Double = js.native
+  val end: Double
   
-  val start: Double = js.native
+  val start: Double
   
   // Defaults to { x: 0, y: 0 }
-  val tangentEnd: js.UndefOr[Vector] = js.native
+  val tangentEnd: js.UndefOr[Vector] = js.undefined
   
-  val tangentStart: js.UndefOr[Vector] = js.native
+  val tangentStart: js.UndefOr[Vector] = js.undefined
 }
 object VectorSegment {
   

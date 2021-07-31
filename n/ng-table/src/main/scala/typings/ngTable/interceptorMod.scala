@@ -3,17 +3,15 @@ package typings.ngTable
 import typings.ngTable.ngTableParamsMod.NgTableParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interceptorMod {
   
-  @js.native
   trait IInterceptor[T] extends StObject {
     
-    var response: js.UndefOr[js.Function2[/* data */ js.Any, /* params */ NgTableParams[T], _]] = js.native
+    var response: js.UndefOr[js.Function2[/* data */ js.Any, /* params */ NgTableParams[T], js.Any]] = js.undefined
     
-    var responseError: js.UndefOr[js.Function2[/* reason */ js.Any, /* params */ NgTableParams[T], _]] = js.native
+    var responseError: js.UndefOr[js.Function2[/* reason */ js.Any, /* params */ NgTableParams[T], js.Any]] = js.undefined
   }
   object IInterceptor {
     
@@ -24,13 +22,13 @@ object interceptorMod {
     }
     
     @scala.inline
-    implicit class IInterceptorMutableBuilder[Self <: IInterceptor[_], T] (val x: Self with IInterceptor[T]) extends AnyVal {
+    implicit class IInterceptorMutableBuilder[Self <: IInterceptor[?], T] (val x: Self & IInterceptor[T]) extends AnyVal {
       
       @scala.inline
-      def setResponse(value: (/* data */ js.Any, /* params */ NgTableParams[T]) => _): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+      def setResponse(value: (/* data */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setResponseError(value: (/* reason */ js.Any, /* params */ NgTableParams[T]) => _): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
+      def setResponseError(value: (/* reason */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
       
       @scala.inline
       def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)

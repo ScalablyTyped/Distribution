@@ -12,20 +12,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface allows access to a single automatic style. */
-@js.native
 trait XAutoStyle
-  extends XMultiPropertySet
+  extends StObject
+     with XMultiPropertySet
      with XMultiPropertyStates {
   
   /** returns a sequence of all properties that are set in the style */
-  val Properties: PropertyValues = js.native
+  val Properties: PropertyValues
   
   /** returns a sequence of all properties that are set in the style */
-  def getProperties(): PropertyValues = js.native
+  def getProperties(): PropertyValues
 }
 object XAutoStyle {
   
@@ -37,16 +36,16 @@ object XAutoStyle {
     addPropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getProperties: () => PropertyValues,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removePropertiesChangeListener: XPropertiesChangeListener => Unit,
     setAllPropertiesToDefault: () => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): XAutoStyle = {
     val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getProperties = js.Any.fromFunction0(getProperties), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValues = js.Any.fromFunction1(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[XAutoStyle]

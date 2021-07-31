@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3Money extends StObject {
   
   /**
     * Amount in micros.
     * For example, this field should be set as 1990000 for $1.99.
     */
-  var amountInMicros: js.UndefOr[String] = js.native
+  var amountInMicros: js.UndefOr[String] = js.undefined
   
   /**
     * The 3-letter currency code defined in ISO 4217.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3Money {
   

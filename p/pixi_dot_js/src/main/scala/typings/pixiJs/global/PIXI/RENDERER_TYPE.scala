@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,11 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RENDERER_TYPE extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.RENDERER_TYPE with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.RENDERER_TYPE & Double] = js.native
   
-  /* 2 */ val CANVAS: typings.pixiJs.PIXI.RENDERER_TYPE.CANVAS with Double = js.native
+  /* 2 */ val CANVAS: typings.pixiJs.PIXI.RENDERER_TYPE.CANVAS & Double = js.native
   
-  /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.RENDERER_TYPE.UNKNOWN with Double = js.native
+  /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.RENDERER_TYPE.UNKNOWN & Double = js.native
   
-  /* 1 */ val WEBGL: typings.pixiJs.PIXI.RENDERER_TYPE.WEBGL with Double = js.native
+  /* 1 */ val WEBGL: typings.pixiJs.PIXI.RENDERER_TYPE.WEBGL & Double = js.native
 }

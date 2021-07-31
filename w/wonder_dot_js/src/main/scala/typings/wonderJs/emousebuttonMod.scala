@@ -1,39 +1,36 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/object/EMouseButton", JSImport.Namespace)
-@js.native
-object emousebuttonMod extends js.Object {
-  @js.native
-  sealed trait EMouseButton extends js.Object
+object emousebuttonMod {
   
   @js.native
-  object EMouseButton extends js.Object {
-    @js.native
-    sealed trait CENTER extends EMouseButton
-    
-    @js.native
-    sealed trait LEFT extends EMouseButton
-    
-    @js.native
-    sealed trait RIGHT extends EMouseButton
+  sealed trait EMouseButton extends StObject
+  @JSImport("wonder.js/dist/es2015/event/object/EMouseButton", "EMouseButton")
+  @js.native
+  object EMouseButton extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EMouseButton with Double] = js.native
-    /* 2 */ @js.native
-    object CENTER extends TopLevel[CENTER with Double]
+    def apply(value: Double): js.UndefOr[EMouseButton & Double] = js.native
     
-    /* 0 */ @js.native
-    object LEFT extends TopLevel[LEFT with Double]
+    @js.native
+    sealed trait CENTER
+      extends StObject
+         with EMouseButton
+    /* 2 */ val CENTER: typings.wonderJs.emousebuttonMod.EMouseButton.CENTER & Double = js.native
     
-    /* 1 */ @js.native
-    object RIGHT extends TopLevel[RIGHT with Double]
+    @js.native
+    sealed trait LEFT
+      extends StObject
+         with EMouseButton
+    /* 0 */ val LEFT: typings.wonderJs.emousebuttonMod.EMouseButton.LEFT & Double = js.native
     
+    @js.native
+    sealed trait RIGHT
+      extends StObject
+         with EMouseButton
+    /* 1 */ val RIGHT: typings.wonderJs.emousebuttonMod.EMouseButton.RIGHT & Double = js.native
   }
-  
 }
-

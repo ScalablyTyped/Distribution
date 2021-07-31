@@ -3,27 +3,25 @@ package typings.angularCompiler.coreMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Directive extends StObject {
   
-  var exportAs: js.UndefOr[String] = js.native
+  var exportAs: js.UndefOr[String] = js.undefined
   
-  var guards: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var guards: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var host: js.UndefOr[StringDictionary[String]] = js.native
+  var host: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[String]] = js.native
+  var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var outputs: js.UndefOr[js.Array[String]] = js.native
+  var outputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var providers: js.UndefOr[js.Array[Provider]] = js.native
+  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
   
-  var queries: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var queries: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object Directive {
   

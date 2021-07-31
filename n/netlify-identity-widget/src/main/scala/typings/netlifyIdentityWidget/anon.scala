@@ -3,19 +3,17 @@ package typings.netlifyIdentityWidget
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApiURL extends StObject {
     
-    var _sameOrigin: js.UndefOr[Boolean] = js.native
+    var _sameOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var apiURL: String = js.native
+    var apiURL: String
     
-    var defaultHeaders: StringDictionary[js.UndefOr[String | js.Array[String]]] = js.native
+    var defaultHeaders: StringDictionary[js.UndefOr[String | js.Array[String]]]
   }
   object ApiURL {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Avatarurl extends StObject {
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var full_name: String = js.native
+    var full_name: String
   }
   object Avatarurl {
     
@@ -68,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
-    var provider: String = js.native
+    var provider: String
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
   }
   object Provider {
     

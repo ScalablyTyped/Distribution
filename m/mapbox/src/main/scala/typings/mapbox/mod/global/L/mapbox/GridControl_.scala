@@ -2,26 +2,24 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control * / any */ @js.native
-trait GridControl_ extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control * / any */ trait GridControl_ extends StObject {
   
   /**
     * If a tooltip is currently shown by the gridControl, hide and close it.
     */
-  def hide(): js.Any = js.native
+  def hide(): js.Any
   
-  def onAdd(map: Map_): js.Any = js.native
+  def onAdd(map: Map_): js.Any
   
-  def onRemove(map: Map_): js.Any = js.native
+  def onRemove(map: Map_): js.Any
   
   /**
     * Change the Mustache template used to transform the UTFGrid data in the map's interactivity into HTML for display.
     */
-  def setTemplate(template: String): js.Any = js.native
+  def setTemplate(template: String): js.Any
 }
 object GridControl_ {
   

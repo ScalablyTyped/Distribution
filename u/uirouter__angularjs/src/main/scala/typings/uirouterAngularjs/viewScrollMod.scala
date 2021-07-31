@@ -2,12 +2,10 @@ package typings.uirouterAngularjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewScrollMod {
   
-  @js.native
   trait UIViewScrollProvider extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object viewScrollMod {
       * Reverts [[$uiViewScroll]] back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
       * service for scrolling based on the url anchor.
       */
-    def useAnchorScroll(): Unit = js.native
+    def useAnchorScroll(): Unit
   }
   object UIViewScrollProvider {
     

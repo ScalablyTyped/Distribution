@@ -5,52 +5,51 @@ import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.streamMod.Writable
 import typings.node.tlsMod.TlsOptions
-import typings.nodemailer.cookiesMod.^
 import typings.nodemailer.nodemailerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
   
+  @scala.inline
+  def apply(url: String): WritableResponse = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[WritableResponse]
+  @scala.inline
+  def apply(url: String, options: Options): WritableResponse = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WritableResponse]
+  
   @JSImport("nodemailer/lib/fetch", JSImport.Namespace)
   @js.native
-  def apply(url: String): WritableResponse = js.native
-  @JSImport("nodemailer/lib/fetch", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): WritableResponse = js.native
+  val ^ : js.Any = js.native
   
-  type Cookies = ^
+  type Cookies = typings.nodemailer.cookiesMod.^
   
-  @js.native
   trait Options extends StObject {
     
-    var allowErrorResponse: js.UndefOr[Boolean] = js.native
+    var allowErrorResponse: js.UndefOr[Boolean] = js.undefined
     
-    var body: js.UndefOr[Buffer | String | StringDictionary[String]] = js.native
+    var body: js.UndefOr[Buffer | String | StringDictionary[String]] = js.undefined
     
-    var contentType: js.UndefOr[String | `false`] = js.native
+    var contentType: js.UndefOr[String | `false`] = js.undefined
     
-    var cookie: js.UndefOr[String] = js.native
+    var cookie: js.UndefOr[String] = js.undefined
     
-    var cookies: js.UndefOr[Cookies] = js.native
+    var cookies: js.UndefOr[Cookies] = js.undefined
     
-    var fetchRes: js.UndefOr[Writable] = js.native
+    var fetchRes: js.UndefOr[Writable] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[ms] = js.native
+    var timeout: js.UndefOr[ms] = js.undefined
     
-    var tls: js.UndefOr[TlsOptions] = js.native
+    var tls: js.UndefOr[TlsOptions] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides status info for a package that is associated with a download or installation request. */
-@js.native
 trait StorePackageUpdateStatus extends StObject {
   
   /** The number of bytes that have been downloaded. */
-  var packageBytesDownloaded: Double = js.native
+  var packageBytesDownloaded: Double
   
   /** The download (or download and install) progress of the current package, represented by a value from 0.0 to 1.0. When you use RequestDownloadStorePackageUpdatesAsync to download packages, this value increases from 0.0 to 1.0 during the download of each package. When you use RequestDownloadAndInstallStorePackageUpdatesAsync to download and install packages in a single operation, this value increases from 0.0 to 0.8 during the download of each package, and then it increases from 0.8 to 1.0 during the install phase. */
-  var packageDownloadProgress: Double = js.native
+  var packageDownloadProgress: Double
   
   /** The size of the package that is being downloaded, in bytes. This is an estimate, and it might change during the download process. */
-  var packageDownloadSizeInBytes: Double = js.native
+  var packageDownloadSizeInBytes: Double
   
   /** The family name of the package that is being downloaded or installed. */
-  var packageFamilyName: String = js.native
+  var packageFamilyName: String
   
   /** A StorePackageUpdateState value that indicates the state of the package that is being downloaded or installed. */
-  var packageUpdateState: StorePackageUpdateState = js.native
+  var packageUpdateState: StorePackageUpdateState
   
   /** The current progress of all package downloads in the request, represented by a value from 0.0 to 1.0. */
-  var totalDownloadProgress: Double = js.native
+  var totalDownloadProgress: Double
 }
 object StorePackageUpdateStatus {
   

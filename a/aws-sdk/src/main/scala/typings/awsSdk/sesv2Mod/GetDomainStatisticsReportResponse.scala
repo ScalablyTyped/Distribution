@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainStatisticsReportResponse extends StObject {
   
   /**
     * An object that contains deliverability metrics for the domain that you specified. This object contains data for each day, starting on the StartDate and ending on the EndDate.
     */
-  var DailyVolumes: typings.awsSdk.sesv2Mod.DailyVolumes = js.native
+  var DailyVolumes: typings.awsSdk.sesv2Mod.DailyVolumes
   
   /**
     * An object that contains deliverability metrics for the domain that you specified. The data in this object is a summary of all of the data that was collected from the StartDate to the EndDate.
     */
-  var OverallVolume: typings.awsSdk.sesv2Mod.OverallVolume = js.native
+  var OverallVolume: typings.awsSdk.sesv2Mod.OverallVolume
 }
 object GetDomainStatisticsReportResponse {
   

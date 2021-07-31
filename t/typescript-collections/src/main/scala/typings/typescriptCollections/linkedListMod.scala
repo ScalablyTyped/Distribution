@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkedListMod {
@@ -17,25 +16,26 @@ object linkedListMod {
     * which together represent a sequence.
     * @constructor
     */
-  class default[T] () extends LinkedList[T]
+  class default[T] ()
+    extends StObject
+       with LinkedList[T]
   
-  @js.native
   trait ILinkedListNode[T] extends StObject {
     
-    var element: T = js.native
+    var element: T
     
-    var next: ILinkedListNode[T] | Null = js.native
+    var next: ILinkedListNode[T] | Null
   }
   object ILinkedListNode {
     
     @scala.inline
     def apply[T](element: T): ILinkedListNode[T] = {
-      val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[ILinkedListNode[T]]
     }
     
     @scala.inline
-    implicit class ILinkedListNodeMutableBuilder[Self <: ILinkedListNode[_], T] (val x: Self with ILinkedListNode[T]) extends AnyVal {
+    implicit class ILinkedListNodeMutableBuilder[Self <: ILinkedListNode[?], T] (val x: Self & ILinkedListNode[T]) extends AnyVal {
       
       @scala.inline
       def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])

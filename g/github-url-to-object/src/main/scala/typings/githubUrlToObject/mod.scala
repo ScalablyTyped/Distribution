@@ -3,28 +3,26 @@ package typings.githubUrlToObject
 import typings.githubUrlToObject.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("github-url-to-object", JSImport.Namespace)
-  @js.native
-  def apply(url: String): Result | Null = js.native
-  @JSImport("github-url-to-object", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): Result | Null = js.native
-  @JSImport("github-url-to-object", JSImport.Namespace)
-  @js.native
-  def apply(url: Url): Result | Null = js.native
-  @JSImport("github-url-to-object", JSImport.Namespace)
-  @js.native
-  def apply(url: Url, options: Options): Result | Null = js.native
+  @scala.inline
+  def apply(url: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(url: String, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(url: Url): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(url: Url, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
   
+  @JSImport("github-url-to-object", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var enterprise: js.UndefOr[Boolean] = js.native
+    var enterprise: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -45,26 +43,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var api_url: String = js.native
+    var api_url: String
     
-    var branch: String = js.native
+    var branch: String
     
-    var clone_url: String = js.native
+    var clone_url: String
     
-    var https_url: String = js.native
+    var https_url: String
     
-    var repo: String = js.native
+    var repo: String
     
-    var tarball_url: String = js.native
+    var tarball_url: String
     
-    var travis_url: String = js.native
+    var travis_url: String
     
-    var user: String = js.native
+    var user: String
     
-    var zip_url: String = js.native
+    var zip_url: String
   }
   object Result {
     

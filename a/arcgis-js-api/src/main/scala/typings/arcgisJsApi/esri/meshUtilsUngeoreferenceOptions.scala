@@ -15,18 +15,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait meshUtilsUngeoreferenceOptions extends Object {
+trait meshUtilsUngeoreferenceOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether the coordinates are georeferenced relative to the globe or the projected coordinate system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#ungeoreference)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the unit of the resulting data.
@@ -35,7 +35,7 @@ trait meshUtilsUngeoreferenceOptions extends Object {
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
-  ] = js.native
+  ] = js.undefined
 }
 object meshUtilsUngeoreferenceOptions {
   

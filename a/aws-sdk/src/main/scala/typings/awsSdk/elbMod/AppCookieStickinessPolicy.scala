@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppCookieStickinessPolicy extends StObject {
   
   /**
     * The name of the application cookie used for stickiness.
     */
-  var CookieName: js.UndefOr[typings.awsSdk.elbMod.CookieName] = js.native
+  var CookieName: js.UndefOr[typings.awsSdk.elbMod.CookieName] = js.undefined
   
   /**
     * The mnemonic name for the policy being created. The name must be unique within a set of policies for this load balancer.
     */
-  var PolicyName: js.UndefOr[typings.awsSdk.elbMod.PolicyName] = js.native
+  var PolicyName: js.UndefOr[typings.awsSdk.elbMod.PolicyName] = js.undefined
 }
 object AppCookieStickinessPolicy {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationVersionDescriptionsMessage extends StObject {
   
   /**
     * List of ApplicationVersionDescription objects sorted in order of creation.
     */
-  var ApplicationVersions: js.UndefOr[ApplicationVersionDescriptionList] = js.native
+  var ApplicationVersions: js.UndefOr[ApplicationVersionDescriptionList] = js.undefined
   
   /**
     * In a paginated request, the token that you can pass in a subsequent request to get the next response page.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ApplicationVersionDescriptionsMessage {
   

@@ -2,17 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanInsideOptions extends StObject {
   
-  var padding: js.UndefOr[PointExpression] = js.native
+  var padding: js.UndefOr[PointExpression] = js.undefined
   
-  var paddingBottomRight: js.UndefOr[PointExpression] = js.native
+  var paddingBottomRight: js.UndefOr[PointExpression] = js.undefined
   
-  var paddingTopLeft: js.UndefOr[PointExpression] = js.native
+  var paddingTopLeft: js.UndefOr[PointExpression] = js.undefined
 }
 object PanInsideOptions {
   

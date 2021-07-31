@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resolution extends StObject {
   
   /**
     * The screen resolution's height, expressed in pixels.
     */
-  var height: js.UndefOr[Integer] = js.native
+  var height: js.UndefOr[Integer] = js.undefined
   
   /**
     * The screen resolution's width, expressed in pixels.
     */
-  var width: js.UndefOr[Integer] = js.native
+  var width: js.UndefOr[Integer] = js.undefined
 }
 object Resolution {
   

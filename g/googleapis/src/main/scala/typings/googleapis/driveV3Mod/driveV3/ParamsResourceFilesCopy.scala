@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFilesCopy extends StandardParameters {
+trait ParamsResourceFilesCopy
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to ignore the domain's default visibility settings for the
@@ -28,28 +28,28 @@ trait ParamsResourceFilesCopy extends StandardParameters {
     * visible to the domain by default; this parameter bypasses that behavior
     * for the request. Permissions are still inherited from parent folders.
     */
-  var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.native
+  var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to set the 'keepForever' field in the new head revision. This is
     * only applicable to files with binary content in Drive.
     */
-  var keepRevisionForever: js.UndefOr[Boolean] = js.native
+  var keepRevisionForever: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A language hint for OCR processing during image import (ISO 639-1 code).
     */
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFile] = js.native
+  var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceFilesCopy {
   

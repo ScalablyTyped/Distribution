@@ -2,26 +2,24 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNotificationSettingsRequest extends StObject {
   
   /**
     *  Specifies whether notifications are sent for HITs of this HIT type, according to the notification specification. You must specify either the Notification parameter or the Active parameter for the call to UpdateNotificationSettings to succeed. 
     */
-  var Active: js.UndefOr[Boolean] = js.native
+  var Active: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  The ID of the HIT type whose notification specification is being updated. 
     */
-  var HITTypeId: EntityId = js.native
+  var HITTypeId: EntityId
   
   /**
     *  The notification specification for the HIT type. 
     */
-  var Notification: js.UndefOr[NotificationSpecification] = js.native
+  var Notification: js.UndefOr[NotificationSpecification] = js.undefined
 }
 object UpdateNotificationSettingsRequest {
   

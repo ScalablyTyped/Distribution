@@ -4,28 +4,26 @@ import typings.awsSdkClientDynamodbNode.typesAutoScalingSettingsUpdateMod.AutoSc
 import typings.awsSdkClientDynamodbNode.typesAutoScalingSettingsUpdateMod.UnmarshalledAutoScalingSettingsUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaGlobalSecondaryIndexSettingsUpdateMod {
   
-  @js.native
   trait ReplicaGlobalSecondaryIndexSettingsUpdate extends StObject {
     
     /**
       * <p>The name of the global secondary index. The name must be unique among all other indexes on this table.</p>
       */
-    var IndexName: String = js.native
+    var IndexName: String
     
     /**
       * <p>Autoscaling settings for managing a global secondary index replica's read capacity units.</p>
       */
-    var ProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+    var ProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
     
     /**
       * <p>The maximum number of strongly consistent reads consumed per second before DynamoDB returns a <code>ThrottlingException</code>.</p>
       */
-    var ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.native
+    var ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object ReplicaGlobalSecondaryIndexSettingsUpdate {
     
@@ -55,14 +53,15 @@ object typesReplicaGlobalSecondaryIndexSettingsUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate extends ReplicaGlobalSecondaryIndexSettingsUpdate {
+  trait UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate
+    extends StObject
+       with ReplicaGlobalSecondaryIndexSettingsUpdate {
     
     /**
       * <p>Autoscaling settings for managing a global secondary index replica's read capacity units.</p>
       */
     @JSName("ProvisionedReadCapacityAutoScalingSettingsUpdate")
-    var ProvisionedReadCapacityAutoScalingSettingsUpdate_UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.native
+    var ProvisionedReadCapacityAutoScalingSettingsUpdate_UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.undefined
   }
   object UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate {
     

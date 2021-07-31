@@ -2,26 +2,24 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsStartForAuthenticatedUserEndpoint extends StObject {
   
   /**
     * Does not include attachments uploaded to GitHub.com in the migration data when set to `true`. Excluding attachments will reduce the migration archive file size.
     */
-  var exclude_attachments: js.UndefOr[Boolean] = js.native
+  var exclude_attachments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Locks the `repositories` to prevent changes during the migration when set to `true`.
     */
-  var lock_repositories: js.UndefOr[Boolean] = js.native
+  var lock_repositories: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of repositories to include in the migration.
     */
-  var repositories: js.Array[String] = js.native
+  var repositories: js.Array[String]
 }
 object MigrationsStartForAuthenticatedUserEndpoint {
   

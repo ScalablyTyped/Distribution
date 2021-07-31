@@ -2,21 +2,19 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicensingOverride extends StObject {
   
   /**
     * How the inclusion of this contribution should change based on licensing
     */
-  var behavior: ContributionLicensingBehaviorType = js.native
+  var behavior: ContributionLicensingBehaviorType
   
   /**
     * Fully qualified contribution id which we want to define licensing behavior for
     */
-  var id: String = js.native
+  var id: String
 }
 object LicensingOverride {
   

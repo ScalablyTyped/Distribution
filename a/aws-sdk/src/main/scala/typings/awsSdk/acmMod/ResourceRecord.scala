@@ -2,26 +2,24 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRecord extends StObject {
   
   /**
     * The name of the DNS record to create in your domain. This is supplied by ACM.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The type of DNS record. Currently this can be CNAME.
     */
-  var Type: RecordType = js.native
+  var Type: RecordType
   
   /**
     * The value of the CNAME record to add to your DNS database. This is supplied by ACM.
     */
-  var Value: String = js.native
+  var Value: String
 }
 object ResourceRecord {
   

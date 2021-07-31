@@ -10,9 +10,9 @@ Cordova Network Information Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-network-information |
 | Keywords           | cordova, network, information, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 1579512 |
+| # releases         | 1 |
+| # dependents       | 34 |
+| # downloads        | 1695840 |
 | # stars            | 19 |
 
 ## Links

@@ -5,19 +5,19 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Label extends Widget {
+trait Label
+  extends StObject
+     with Widget {
   
-  var forInput: Field | CheckBox = js.native
+  var forInput: Field | CheckBox
   
-  var forInputName: String = js.native
+  var forInputName: String
   
-  var text: String = js.native
+  var text: String
   
-  var textAlign: String = js.native
+  var textAlign: String
 }
 object Label {
   

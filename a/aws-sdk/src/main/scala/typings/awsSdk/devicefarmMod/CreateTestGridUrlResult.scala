@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTestGridUrlResult extends StObject {
   
   /**
     * The number of seconds the URL from CreateTestGridUrlResult$url stays active.
     */
-  var expires: js.UndefOr[DateTime] = js.native
+  var expires: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A signed URL, expiring in CreateTestGridUrlRequest$expiresInSeconds seconds, to be passed to a RemoteWebDriver. 
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CreateTestGridUrlResult {
   

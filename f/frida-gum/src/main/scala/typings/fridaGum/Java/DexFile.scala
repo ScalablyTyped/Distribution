@@ -2,21 +2,19 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DexFile extends StObject {
   
   /**
     * Determines available class names.
     */
-  def getClassNames(): js.Array[String] = js.native
+  def getClassNames(): js.Array[String]
   
   /**
     * Loads the contained classes into the VM.
     */
-  def load(): Unit = js.native
+  def load(): Unit
 }
 object DexFile {
   

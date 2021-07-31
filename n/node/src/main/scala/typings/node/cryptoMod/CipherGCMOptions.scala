@@ -3,13 +3,13 @@ package typings.node.cryptoMod
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CipherGCMOptions extends TransformOptions {
+trait CipherGCMOptions
+  extends StObject
+     with TransformOptions {
   
-  var authTagLength: js.UndefOr[Double] = js.native
+  var authTagLength: js.UndefOr[Double] = js.undefined
 }
 object CipherGCMOptions {
   

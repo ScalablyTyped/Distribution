@@ -4,7 +4,6 @@ import typings.chrome.chrome.webstore.DownloadProgressEvent
 import typings.chrome.chrome.webstore.InstallationStageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -20,41 +19,33 @@ object webstore {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(successCallback: js.Function): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
+  @scala.inline
+  def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  @scala.inline
+  def install(failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(failureCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def install(successCallback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(successCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def install(
     successCallback: js.Function,
     failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(url: String): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(
-    url: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
-  def install(url: String, successCallback: js.Function): Unit = js.native
-  @JSGlobal("chrome.webstore.install")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def install(url: String, successCallback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(url.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def install(
     url: String,
     successCallback: js.Function,
     failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(url.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(
+    url: String,
+    successCallback: Unit,
+    failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(url.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.webstore.onDownloadProgress")
   @js.native

@@ -2,11 +2,11 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppRoleAssignment extends DirectoryObject {
+trait AppRoleAssignment
+  extends StObject
+     with DirectoryObject {
   
   /**
     * The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles
@@ -14,36 +14,36 @@ trait AppRoleAssignment extends DirectoryObject {
     * app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal
     * is assigned to the resource app without any specific app roles. Required on create. Does not support $filter.
     */
-  var appRoleId: js.UndefOr[String] = js.native
+  var appRoleId: js.UndefOr[String] = js.undefined
   
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The display name of the user, group, or service principal that was granted the app role assignment. Read-only. Supports
     * $filter (eq and startswith).
     */
-  var principalDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var principalDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The unique identifier (id) for the user, group or service principal being granted the app role. Required on create.
     * Does not support $filter.
     */
-  var principalId: js.UndefOr[NullableOption[String]] = js.native
+  var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of the assigned principal. This can either be 'User', 'Group' or 'ServicePrincipal'. Read-only. Does not
     * support $filter.
     */
-  var principalType: js.UndefOr[NullableOption[String]] = js.native
+  var principalType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name of the resource app's service principal to which the assignment is made. Does not support $filter.
-  var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The unique identifier (id) for the resource service principal for which the assignment is made. Required on create.
     * Supports $filter (eq only).
     */
-  var resourceId: js.UndefOr[NullableOption[String]] = js.native
+  var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AppRoleAssignment {
   

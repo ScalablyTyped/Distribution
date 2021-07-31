@@ -2,13 +2,11 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpItemsOptions extends StObject {
   
-  var triggerReason: js.UndefOr[SignatureHelpTriggerReason] = js.native
+  var triggerReason: js.UndefOr[SignatureHelpTriggerReason] = js.undefined
 }
 object SignatureHelpItemsOptions {
   

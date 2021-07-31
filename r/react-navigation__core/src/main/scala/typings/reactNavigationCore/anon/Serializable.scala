@@ -3,19 +3,17 @@ package typings.reactNavigationCore.anon
 import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Serializable extends StObject {
   
-  var serializable: `true` = js.native
+  var serializable: `true`
 }
 object Serializable {
   
   @scala.inline
-  def apply(serializable: `true`): Serializable = {
-    val __obj = js.Dynamic.literal(serializable = serializable.asInstanceOf[js.Any])
+  def apply(): Serializable = {
+    val __obj = js.Dynamic.literal(serializable = true)
     __obj.asInstanceOf[Serializable]
   }
   

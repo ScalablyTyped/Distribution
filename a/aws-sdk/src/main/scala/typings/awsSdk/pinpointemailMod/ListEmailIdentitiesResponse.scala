@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEmailIdentitiesResponse extends StObject {
   
   /**
     * An array that includes all of the identities associated with your Amazon Pinpoint account.
     */
-  var EmailIdentities: js.UndefOr[IdentityInfoList] = js.native
+  var EmailIdentities: js.UndefOr[IdentityInfoList] = js.undefined
   
   /**
     * A token that indicates that there are additional configuration sets to list. To view additional configuration sets, issue another request to ListEmailIdentities, and pass this token in the NextToken parameter.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.undefined
 }
 object ListEmailIdentitiesResponse {
   

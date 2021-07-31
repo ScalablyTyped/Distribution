@@ -2,46 +2,44 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Host extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the host.
     */
-  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.undefined
   
   /**
     * The name of the host.
     */
-  var Name: js.UndefOr[HostName] = js.native
+  var Name: js.UndefOr[HostName] = js.undefined
   
   /**
     * The endpoint of the infrastructure where your provider type is installed.
     */
-  var ProviderEndpoint: js.UndefOr[Url] = js.native
+  var ProviderEndpoint: js.UndefOr[Url] = js.undefined
   
   /**
     * The name of the installed provider to be associated with your connection. The host resource represents the infrastructure where your provider type is installed. The valid provider type is GitHub Enterprise Server.
     */
-  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
+  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
   
   /**
     * The status of the host, such as PENDING, AVAILABLE, VPC_CONFIG_DELETING, VPC_CONFIG_INITIALIZING, and VPC_CONFIG_FAILED_INITIALIZATION.
     */
-  var Status: js.UndefOr[HostStatus] = js.native
+  var Status: js.UndefOr[HostStatus] = js.undefined
   
   /**
     * The status description for the host.
     */
-  var StatusMessage: js.UndefOr[HostStatusMessage] = js.native
+  var StatusMessage: js.UndefOr[HostStatusMessage] = js.undefined
   
   /**
     * The VPC configuration provisioned for the host.
     */
-  var VpcConfiguration: js.UndefOr[typings.awsSdk.codestarconnectionsMod.VpcConfiguration] = js.native
+  var VpcConfiguration: js.UndefOr[typings.awsSdk.codestarconnectionsMod.VpcConfiguration] = js.undefined
 }
 object Host {
   

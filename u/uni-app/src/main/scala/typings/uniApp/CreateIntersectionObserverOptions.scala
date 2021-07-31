@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIntersectionObserverOptions extends StObject {
   
   /**
     * 初始的相交比例
     */
-  var initialRatio: js.UndefOr[Double] = js.native
+  var initialRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否同时观测多个参照节点（而非一个）
     */
-  var selectAll: js.UndefOr[Boolean] = js.native
+  var selectAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 所有阈值
     */
-  var thresholds: js.UndefOr[js.Array[_]] = js.native
+  var thresholds: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object CreateIntersectionObserverOptions {
   
@@ -47,7 +45,7 @@ object CreateIntersectionObserverOptions {
     def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
     
     @scala.inline
-    def setThresholds(value: js.Array[_]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    def setThresholds(value: js.Array[js.Any]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)

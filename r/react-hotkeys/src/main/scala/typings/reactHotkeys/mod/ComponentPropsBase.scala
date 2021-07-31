@@ -2,26 +2,24 @@ package typings.reactHotkeys.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentPropsBase extends StObject {
   
   /**
     * Function to bind to root node, in order for react-hotkeys to work
     */
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
   /**
     * Function to bind to root node, in order for react-hotkeys to work
     */
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
   /**
     * The value of the HTML tabindex attribute the root node will have
     */
-  var tabIndex: TabIndex = js.native
+  var tabIndex: TabIndex
 }
 object ComponentPropsBase {
   

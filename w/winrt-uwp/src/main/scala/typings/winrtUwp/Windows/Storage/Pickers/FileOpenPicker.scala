@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a UI element that lets the user choose and open files. */
@@ -30,7 +29,7 @@ trait FileOpenPicker extends StObject {
     * Shows the file picker so that the user can pick multiple files. (Windows Store apps)
     * @return When the call to this method completes successfully, it returns a filePickerSelectedFilesArray object that contains all the files that were picked by the user. Picked files in this array are represented by storageFile objects.
     */
-  def pickMultipleFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def pickMultipleFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /** Shows the file picker so that the user can pick one file, potentially deactivating the app and reactivating it when the operation is complete. (Windows Phone Store apps) */
   def pickSingleFileAndContinue(): Unit = js.native

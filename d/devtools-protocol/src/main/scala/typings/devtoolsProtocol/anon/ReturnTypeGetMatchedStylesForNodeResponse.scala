@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetMatchedStylesForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetMatchedStylesForNodeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetMatchedStylesForNodeResponse extends StObject {
   
-  var paramsType: js.Array[GetMatchedStylesForNodeRequest] = js.native
+  var paramsType: js.Array[GetMatchedStylesForNodeRequest]
   
-  var returnType: GetMatchedStylesForNodeResponse = js.native
+  var returnType: GetMatchedStylesForNodeResponse
 }
 object ReturnTypeGetMatchedStylesForNodeResponse {
   

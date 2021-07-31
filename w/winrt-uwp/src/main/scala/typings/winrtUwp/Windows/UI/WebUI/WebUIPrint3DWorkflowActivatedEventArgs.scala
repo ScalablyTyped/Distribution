@@ -6,27 +6,25 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.Devices.Printers.Extensions.Print3DWorkflow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the arguments related to activating a 3D print workflow. */
-@js.native
 trait WebUIPrint3DWorkflowActivatedEventArgs extends StObject {
   
   /** Gets the activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the kind of activation. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the previous execution state. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the print workflow. */
-  var workflow: Print3DWorkflow = js.native
+  var workflow: Print3DWorkflow
 }
 object WebUIPrint3DWorkflowActivatedEventArgs {
   

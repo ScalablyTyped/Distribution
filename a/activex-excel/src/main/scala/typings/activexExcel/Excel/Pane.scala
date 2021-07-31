@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,26 +19,21 @@ trait Pane extends StObject {
   val Index: Double = js.native
   
   def LargeScroll(): js.Any = js.native
-  def LargeScroll(
-    Down: js.UndefOr[scala.Nothing],
-    Up: js.UndefOr[scala.Nothing],
-    ToRight: js.UndefOr[scala.Nothing],
-    ToLeft: Double
-  ): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
   
   val Parent: js.Any = js.native
   
@@ -55,26 +49,21 @@ trait Pane extends StObject {
   var ScrollRow: Double = js.native
   
   def SmallScroll(): js.Any = js.native
-  def SmallScroll(
-    Down: js.UndefOr[scala.Nothing],
-    Up: js.UndefOr[scala.Nothing],
-    ToRight: js.UndefOr[scala.Nothing],
-    ToLeft: Double
-  ): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
   
   def VisibleRange(Address: String): Range = js.native
   def VisibleRange(RowIndex: Double): Range = js.native

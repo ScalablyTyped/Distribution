@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Accounts")
@@ -34,7 +33,7 @@ class ResourceAccounts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def get(
@@ -64,7 +63,7 @@ class ResourceAccounts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAccounts] = js.native
   def list(callback: BodyResponseCallback[SchemaAccounts]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccounts] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccounts] = js.native
   def list(params: ParamsResourceAccountsList): GaxiosPromise[SchemaAccounts] = js.native
   def list(params: ParamsResourceAccountsList, callback: BodyResponseCallback[SchemaAccounts]): Unit = js.native
   def list(

@@ -2,13 +2,13 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASPxClientChartDesignerCustomizeMenuActionsEventArgs extends ASPxClientEventArgs {
+trait ASPxClientChartDesignerCustomizeMenuActionsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
-  var actions: js.Array[ASPxClientChartDesignerMenuAction] = js.native
+  var actions: js.Array[ASPxClientChartDesignerMenuAction]
 }
 object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
   

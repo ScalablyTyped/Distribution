@@ -3,24 +3,22 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/CardHeader.CardHeaderClassKey>> */
-@js.native
 trait PartialStyleRulesCardHead extends StObject {
   
-  var action: js.UndefOr[CSSProperties] = js.native
+  var action: js.UndefOr[CSSProperties] = js.undefined
   
-  var avatar: js.UndefOr[CSSProperties] = js.native
+  var avatar: js.UndefOr[CSSProperties] = js.undefined
   
-  var content: js.UndefOr[CSSProperties] = js.native
+  var content: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var subheader: js.UndefOr[CSSProperties] = js.native
+  var subheader: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesCardHead {
   

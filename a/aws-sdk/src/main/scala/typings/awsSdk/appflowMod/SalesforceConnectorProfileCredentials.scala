@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceConnectorProfileCredentials extends StObject {
   
   /**
     *  The credentials used to access protected Salesforce resources. 
     */
-  var accessToken: js.UndefOr[AccessToken] = js.native
+  var accessToken: js.UndefOr[AccessToken] = js.undefined
   
   /**
     *  The secret manager ARN, which contains the client ID and client secret of the connected app. 
     */
-  var clientCredentialsArn: js.UndefOr[ClientCredentialsArn] = js.native
+  var clientCredentialsArn: js.UndefOr[ClientCredentialsArn] = js.undefined
   
   /**
     *  The OAuth requirement needed to request security tokens from the connector endpoint. 
     */
-  var oAuthRequest: js.UndefOr[ConnectorOAuthRequest] = js.native
+  var oAuthRequest: js.UndefOr[ConnectorOAuthRequest] = js.undefined
   
   /**
     *  The credentials used to acquire new access tokens. 
     */
-  var refreshToken: js.UndefOr[RefreshToken] = js.native
+  var refreshToken: js.UndefOr[RefreshToken] = js.undefined
 }
 object SalesforceConnectorProfileCredentials {
   

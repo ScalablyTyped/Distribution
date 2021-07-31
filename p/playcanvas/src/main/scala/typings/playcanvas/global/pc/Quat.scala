@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,35 +14,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Quat")
 @js.native
 class Quat ()
-  extends typings.playcanvas.pc.Quat {
+  extends StObject
+     with typings.playcanvas.pc.Quat {
   def this(x: js.Array[Double]) = this()
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: js.Array[Double], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-  def this(x: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: js.Array[Double], y: Double, z: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: js.Array[Double], y: Unit, z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
-  def this(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    z: js.UndefOr[scala.Nothing],
-    w: Double
-  ) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-  def this(x: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   def this(x: js.Array[Double], y: Double, z: Double, w: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-  def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: js.Array[Double], y: Double, z: Unit, w: Double) = this()
+  def this(x: js.Array[Double], y: Unit, z: Double, w: Double) = this()
+  def this(x: js.Array[Double], y: Unit, z: Unit, w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: Unit, w: Double) = this()
+  def this(x: Double, y: Unit, z: Double, w: Double) = this()
+  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Double, z: Double, w: Double) = this()
+  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
 }
 object Quat {
   

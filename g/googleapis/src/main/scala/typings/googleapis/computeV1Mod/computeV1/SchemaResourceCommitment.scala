@@ -2,14 +2,12 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Commitment for a particular resource (a Commitment is composed of one or
   * more of these).
   */
-@js.native
 trait SchemaResourceCommitment extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaResourceCommitment extends StObject {
     * provided in MB. Memory must be a multiple of 256 MB, with up to 6.5GB of
     * memory per every vCPU.
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * Type of resource for which this commitment applies. Possible values are
     * VCPU and MEMORY
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceCommitment {
   

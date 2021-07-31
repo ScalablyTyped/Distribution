@@ -2,19 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CalendarSharingMessage extends Message {
+trait CalendarSharingMessage
+  extends StObject
+     with Message {
   
-  var canAccept: js.UndefOr[NullableOption[Boolean]] = js.native
+  var canAccept: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var sharingMessageAction: js.UndefOr[NullableOption[CalendarSharingMessageAction]] = js.native
+  var sharingMessageAction: js.UndefOr[NullableOption[CalendarSharingMessageAction]] = js.undefined
   
-  var sharingMessageActions: js.UndefOr[NullableOption[js.Array[CalendarSharingMessageAction]]] = js.native
+  var sharingMessageActions: js.UndefOr[NullableOption[js.Array[CalendarSharingMessageAction]]] = js.undefined
   
-  var suggestedCalendarName: js.UndefOr[NullableOption[String]] = js.native
+  var suggestedCalendarName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object CalendarSharingMessage {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeSigning extends StObject {
   
   /**
     * The ID of the AWSSignerJob which was created to sign the file.
     */
-  var awsSignerJobId: js.UndefOr[SigningJobId] = js.native
+  var awsSignerJobId: js.UndefOr[SigningJobId] = js.undefined
   
   /**
     * A custom method for code signing a file.
     */
-  var customCodeSigning: js.UndefOr[CustomCodeSigning] = js.native
+  var customCodeSigning: js.UndefOr[CustomCodeSigning] = js.undefined
   
   /**
     * Describes the code-signing job.
     */
-  var startSigningJobParameter: js.UndefOr[StartSigningJobParameter] = js.native
+  var startSigningJobParameter: js.UndefOr[StartSigningJobParameter] = js.undefined
 }
 object CodeSigning {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstanceConfigsResponse extends StObject {
   
   /** The list of requested instance configurations. */
-  var instanceConfigs: js.UndefOr[js.Array[InstanceConfig]] = js.native
+  var instanceConfigs: js.UndefOr[js.Array[InstanceConfig]] = js.undefined
   
   /** `next_page_token` can be sent in a subsequent ListInstanceConfigs call to fetch more of the matching instance configurations. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListInstanceConfigsResponse {
   

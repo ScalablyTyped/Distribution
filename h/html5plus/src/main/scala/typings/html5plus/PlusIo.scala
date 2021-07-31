@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -186,29 +185,21 @@ trait PlusIo extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def requestFileSystem(): Unit = js.native
-  def requestFileSystem(
-    `type`: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def requestFileSystem(`type`: js.UndefOr[scala.Nothing], succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
-  def requestFileSystem(
-    `type`: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def requestFileSystem(`type`: Double): Unit = js.native
-  def requestFileSystem(
-    `type`: Double,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def requestFileSystem(`type`: Double, succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
   def requestFileSystem(
     `type`: Double,
     succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def requestFileSystem(`type`: Double, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestFileSystem(`type`: Unit, succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
+  def requestFileSystem(
+    `type`: Unit,
+    succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def requestFileSystem(`type`: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 通过URL参数获取目录对象或文件对象
@@ -219,23 +210,19 @@ trait PlusIo extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def resolveLocalFileSystemURL(): Unit = js.native
-  def resolveLocalFileSystemURL(
-    url: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def resolveLocalFileSystemURL(url: js.UndefOr[scala.Nothing], succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
-  def resolveLocalFileSystemURL(
-    url: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def resolveLocalFileSystemURL(url: String): Unit = js.native
-  def resolveLocalFileSystemURL(url: String, succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(url: String, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(
     url: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def resolveLocalFileSystemURL(url: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def resolveLocalFileSystemURL(url: Unit, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
+  def resolveLocalFileSystemURL(
+    url: Unit,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def resolveLocalFileSystemURL(url: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

@@ -2,7 +2,6 @@ package typings.awsSdkClientKmsBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createKeyExceptionsUnionMod {
@@ -20,46 +19,44 @@ object createKeyExceptionsUnionMod {
   object CreateKeyExceptionsUnion {
     
     @scala.inline
-    def DependencyTimeoutException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException): typings.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def DependencyTimeoutException(): typings.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
+      val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException]
     }
     
     @scala.inline
-    def InvalidArnException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidArnException): typings.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidArnException(): typings.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException]
     }
     
     @scala.inline
-    def KMSInternalException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def KMSInternalException(): typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException]
     }
     
     @scala.inline
-    def LimitExceededException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.LimitExceededException): typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def LimitExceededException(): typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
     @scala.inline
-    def MalformedPolicyDocumentException(
-      name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.MalformedPolicyDocumentException
-    ): typings.awsSdkClientKmsBrowser.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def MalformedPolicyDocumentException(): typings.awsSdkClientKmsBrowser.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException = {
+      val __obj = js.Dynamic.literal(name = "MalformedPolicyDocumentException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException]
     }
     
     @scala.inline
-    def TagException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException): typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def TagException(): typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException = {
+      val __obj = js.Dynamic.literal(name = "TagException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException]
     }
     
     @scala.inline
-    def UnsupportedOperationException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.UnsupportedOperationException): typings.awsSdkClientKmsBrowser.typesUnsupportedOperationExceptionMod.UnsupportedOperationException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def UnsupportedOperationException(): typings.awsSdkClientKmsBrowser.typesUnsupportedOperationExceptionMod.UnsupportedOperationException = {
+      val __obj = js.Dynamic.literal(name = "UnsupportedOperationException")
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesUnsupportedOperationExceptionMod.UnsupportedOperationException]
     }
   }

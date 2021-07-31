@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "GraphNode")
 @js.native
 class GraphNode ()
-  extends typings.playcanvas.pc.GraphNode {
+  extends StObject
+     with typings.playcanvas.pc.GraphNode {
   def this(name: String) = this()
 }

@@ -2,33 +2,31 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateQuery extends StObject {
   
-  var after: js.UndefOr[String] = js.native
+  var after: js.UndefOr[String] = js.undefined
   
-  var after_equal: js.UndefOr[String] = js.native
+  var after_equal: js.UndefOr[String] = js.undefined
   
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
   
-  var before_equal: js.UndefOr[String] = js.native
+  var before_equal: js.UndefOr[String] = js.undefined
   
-  var between: js.UndefOr[js.Array[String]] = js.native
+  var between: js.UndefOr[js.Array[String]] = js.undefined
   
-  var current: js.UndefOr[String] = js.native
+  var current: js.UndefOr[String] = js.undefined
   
-  var equal: js.UndefOr[String] = js.native
+  var equal: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var not_between: js.UndefOr[js.Array[String]] = js.native
+  var not_between: js.UndefOr[js.Array[String]] = js.undefined
   
-  var not_equal: js.UndefOr[String] = js.native
+  var not_equal: js.UndefOr[String] = js.undefined
 }
 object DateQuery {
   

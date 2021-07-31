@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Androidrelease extends StObject {
   
-  var android_release: String = js.native
+  var android_release: String
   
-  var android_version: String = js.native
+  var android_version: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: String = js.native
+  var model: String
 }
 object Androidrelease {
   

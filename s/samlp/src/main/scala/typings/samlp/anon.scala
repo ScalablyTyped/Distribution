@@ -2,17 +2,15 @@ package typings.samlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Post extends StObject {
     
-    var post: js.UndefOr[String] = js.native
+    var post: js.UndefOr[String] = js.undefined
     
-    var redirect: js.UndefOr[String] = js.native
+    var redirect: js.UndefOr[String] = js.undefined
   }
   object Post {
     

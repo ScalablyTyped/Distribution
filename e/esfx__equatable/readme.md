@@ -11,8 +11,8 @@ A low-level API for defining equality.
 | Full name          | @esfx/equatable |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 12 |
-| # downloads        | 29652 |
+| # dependents       | 26 |
+| # downloads        | 22942 |
 | # stars            | 0 |
 
 ## Links

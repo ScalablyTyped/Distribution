@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactToastr.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

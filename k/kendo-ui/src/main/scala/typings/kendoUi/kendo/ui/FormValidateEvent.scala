@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormValidateEvent extends FormEvent {
+trait FormValidateEvent
+  extends StObject
+     with FormEvent {
   
-  var errors: js.UndefOr[js.Array[_]] = js.native
+  var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
   
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object FormValidateEvent {
   
@@ -27,7 +27,7 @@ object FormValidateEvent {
   implicit class FormValidateEventMutableBuilder[Self <: FormValidateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)

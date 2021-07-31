@@ -10,9 +10,9 @@ Wait for multiple callback
 | ------------------ | :-------------: |
 | Full name          | @hapi/teamwork |
 | Keywords           | async, flow control, callback |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 8 |
-| # downloads        | 10986151 |
+| # downloads        | 14952211 |
 | # stars            | 0 |
 
 ## Links

@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.min
 import typings.polished.polishedStrings.minBackslashb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Func extends StObject {
   
-  var func: FNotationPrecedence = js.native
+  var func: FNotationPrecedence
   
-  var regSymbol: minBackslashb = js.native
+  var regSymbol: minBackslashb
   
-  var symbol: min = js.native
+  var symbol: min
 }
 object Func {
   
   @scala.inline
-  def apply(func: FNotationPrecedence, regSymbol: minBackslashb, symbol: min): Func = {
-    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(func: FNotationPrecedence): Func = {
+    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "min\\b", symbol = "min")
     __obj.asInstanceOf[Func]
   }
   

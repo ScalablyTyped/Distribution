@@ -6,7 +6,6 @@ import typings.html5plus.html5plusStrings.gcj02
 import typings.html5plus.html5plusStrings.wgs84
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsGeocodeOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusMapsGeocodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * 源数据的坐标系类型
@@ -37,7 +35,7 @@ trait PlusMapsGeocodeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var coordType: js.UndefOr[wgs84 | gcj02 | bd09 | bd09ll] = js.native
+  var coordType: js.UndefOr[wgs84 | gcj02 | bd09 | bd09ll] = js.undefined
 }
 object PlusMapsGeocodeOptions {
   

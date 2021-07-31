@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameClientCapabilities extends StObject {
   
   /**
     * Whether rename supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports testing for validity of rename operations
@@ -19,7 +17,7 @@ trait RenameClientCapabilities extends StObject {
     *
     * @since version 3.12.0
     */
-  var prepareSupport: js.UndefOr[Boolean] = js.native
+  var prepareSupport: js.UndefOr[Boolean] = js.undefined
 }
 object RenameClientCapabilities {
   

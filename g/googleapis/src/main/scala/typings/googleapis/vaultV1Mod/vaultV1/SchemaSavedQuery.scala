@@ -2,42 +2,40 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of the saved query.
   */
-@js.native
 trait SchemaSavedQuery extends StObject {
   
   /**
     * Output only. The server generated timestamp at which saved query was
     * created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the saved query.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The matter id of the associated matter. The server does not
     * look at this field during create and always uses matter id in the URL.
     */
-  var matterId: js.UndefOr[String] = js.native
+  var matterId: js.UndefOr[String] = js.undefined
   
   /**
     * The underlying Query object which contains all the information of the
     * saved query.
     */
-  var query: js.UndefOr[SchemaQuery] = js.native
+  var query: js.UndefOr[SchemaQuery] = js.undefined
   
   /**
     * A unique identifier for the saved query.
     */
-  var savedQueryId: js.UndefOr[String] = js.native
+  var savedQueryId: js.UndefOr[String] = js.undefined
 }
 object SchemaSavedQuery {
   

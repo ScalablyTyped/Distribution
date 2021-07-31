@@ -13,7 +13,6 @@ import typings.gitlab.requestHelperMod.Sudo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commitsMod {
@@ -39,13 +38,6 @@ object commitsMod {
     def comments(projectId: Double, sha: String, options: Sudo): js.Promise[GetResponse] = js.native
     
     def create(projectId: String, branch: String, message: String): js.Promise[js.Object] = js.native
-    def create(
-      projectId: String,
-      branch: String,
-      message: String,
-      actions: js.UndefOr[scala.Nothing],
-      options: BaseRequestOptions
-    ): js.Promise[js.Object] = js.native
     def create(projectId: String, branch: String, message: String, actions: js.Array[CommitAction]): js.Promise[js.Object] = js.native
     def create(
       projectId: String,
@@ -54,14 +46,8 @@ object commitsMod {
       actions: js.Array[CommitAction],
       options: BaseRequestOptions
     ): js.Promise[js.Object] = js.native
+    def create(projectId: String, branch: String, message: String, actions: Unit, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def create(projectId: Double, branch: String, message: String): js.Promise[js.Object] = js.native
-    def create(
-      projectId: Double,
-      branch: String,
-      message: String,
-      actions: js.UndefOr[scala.Nothing],
-      options: BaseRequestOptions
-    ): js.Promise[js.Object] = js.native
     def create(projectId: Double, branch: String, message: String, actions: js.Array[CommitAction]): js.Promise[js.Object] = js.native
     def create(
       projectId: Double,
@@ -70,6 +56,7 @@ object commitsMod {
       actions: js.Array[CommitAction],
       options: BaseRequestOptions
     ): js.Promise[js.Object] = js.native
+    def create(projectId: Double, branch: String, message: String, actions: Unit, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def createComment(projectId: String, sha: String, note: String): js.Promise[js.Object] = js.native
     def createComment(projectId: String, sha: String, note: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -107,26 +94,25 @@ object commitsMod {
     def status(projectId: Double, sha: String, options: BaseRequestOptions): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait CommitAction extends StObject {
     
     /** The action to perform */
-    var action: create | delete | move | update = js.native
+    var action: create | delete | move | update
     
     /** File content, required for all except delete. Optional for move */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** text or base64. text is default. */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** Full path to the file. Ex. lib/class.rb */
-    var filePath: String = js.native
+    var filePath: String
     
     /** Last known file commit id. Will be only considered in update, move and delete actions. */
-    var lastCommitId: js.UndefOr[String] = js.native
+    var lastCommitId: js.UndefOr[String] = js.undefined
     
     /** Original full path to the file being moved.Ex.lib / class1.rb */
-    var previousPath: js.UndefOr[String] = js.native
+    var previousPath: js.UndefOr[String] = js.undefined
   }
   object CommitAction {
     
@@ -171,32 +157,31 @@ object commitsMod {
     }
   }
   
-  @js.native
   trait CommitSchema extends StObject {
     
-    var author_email: String = js.native
+    var author_email: String
     
-    var author_name: String = js.native
+    var author_name: String
     
-    var authored_date: js.UndefOr[Date] = js.native
+    var authored_date: js.UndefOr[Date] = js.undefined
     
-    var committed_date: js.UndefOr[Date] = js.native
+    var committed_date: js.UndefOr[Date] = js.undefined
     
-    var committer_email: js.UndefOr[String] = js.native
+    var committer_email: js.UndefOr[String] = js.undefined
     
-    var committer_name: js.UndefOr[String] = js.native
+    var committer_name: js.UndefOr[String] = js.undefined
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
     
-    var parent_ids: js.UndefOr[js.Array[String]] = js.native
+    var parent_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var short_id: String = js.native
+    var short_id: String
     
-    var title: String = js.native
+    var title: String
   }
   object CommitSchema {
     

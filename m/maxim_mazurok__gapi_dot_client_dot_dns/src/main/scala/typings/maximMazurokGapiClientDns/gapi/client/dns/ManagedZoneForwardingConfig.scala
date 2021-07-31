@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZoneForwardingConfig extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** List of target name servers to forward to. Cloud DNS will select the best available name server if more than one target is given. */
-  var targetNameServers: js.UndefOr[js.Array[ManagedZoneForwardingConfigNameServerTarget]] = js.native
+  var targetNameServers: js.UndefOr[js.Array[ManagedZoneForwardingConfigNameServerTarget]] = js.undefined
 }
 object ManagedZoneForwardingConfig {
   

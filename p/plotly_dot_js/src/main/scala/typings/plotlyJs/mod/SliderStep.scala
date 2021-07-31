@@ -4,17 +4,15 @@ import typings.plotlyJs.plotlyJsStrings.animate
 import typings.plotlyJs.plotlyJsStrings.skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderStep extends StObject {
   
   /**
     * Sets the arguments values to be passed to the Plotly
     * method set in `method` on slide.
     */
-  var args: js.Array[_] = js.native
+  var args: js.Array[js.Any]
   
   /**
     * When true, the API method is executed. When false, all other behaviors are the same
@@ -23,12 +21,12 @@ trait SliderStep extends StObject {
     * the benefit of the slider automatically binding to the state of the plot through the
     * specification of `method` and `args`.
     */
-  var execute: Boolean = js.native
+  var execute: Boolean
   
   /**
     * Sets the text label to appear on the slider
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Sets the Plotly method to be called when the slider value is changed.
@@ -37,24 +35,24 @@ trait SliderStep extends StObject {
     * updates. This may be used to create a component interface and attach to
     * slider events manually via JavaScript.
     */
-  var method: animate | typings.plotlyJs.plotlyJsStrings.relayout | typings.plotlyJs.plotlyJsStrings.restyle | skip | typings.plotlyJs.plotlyJsStrings.update = js.native
+  var method: animate | typings.plotlyJs.plotlyJsStrings.relayout | typings.plotlyJs.plotlyJsStrings.restyle | skip | typings.plotlyJs.plotlyJsStrings.update
   
   /**
     * Sets the value of the slider step, used to refer to the step programatically.
     * Defaults to the slider label if not provided.
     */
-  var value: String = js.native
+  var value: String
   
   /**
     * Determines whether or not this step is included in the slider.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object SliderStep {
   
   @scala.inline
   def apply(
-    args: js.Array[_],
+    args: js.Array[js.Any],
     execute: Boolean,
     label: String,
     method: animate | typings.plotlyJs.plotlyJsStrings.relayout | typings.plotlyJs.plotlyJsStrings.restyle | skip | typings.plotlyJs.plotlyJsStrings.update,
@@ -69,7 +67,7 @@ object SliderStep {
   implicit class SliderStepMutableBuilder[Self <: SliderStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

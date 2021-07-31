@@ -2,19 +2,17 @@ package typings.karmaJsonToFileReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * see {@link https://www.npmjs.com/package/karma-json-to-file-reporter#config}
       */
-    var jsonToFileReporter: js.UndefOr[JsonToFileReporterOptions] = js.native
+    var jsonToFileReporter: js.UndefOr[JsonToFileReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -39,7 +37,6 @@ object mod {
     * JSON messages logged via console.log(_) will be filtered
     * and saved to local json file you specified in config.
     */
-  @js.native
   trait JsonToFileReporterOptions extends StObject {
     
     /**
@@ -48,22 +45,22 @@ object mod {
       * `*index*` - for log entry index: 1, 2, 3, etc.
       * @default 'logFile_start-timestamp.json'
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * Filter for json objects. This option can be:
       * - string - filter JSONs by field on the root level
       * - predicate function
       */
-    var filter: js.UndefOr[String | (js.Function1[/* obj */ js.Object, Boolean])] = js.native
+    var filter: js.UndefOr[String | (js.Function1[/* obj */ js.Object, Boolean])] = js.undefined
     
     /** Path for your json output file. By default it will save your files in the root of your project. */
-    var outputPath: js.UndefOr[String] = js.native
+    var outputPath: js.UndefOr[String] = js.undefined
     
     /**
       * Set it true to overwrite files if it already exists. If false, log entries will be added to the end
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object JsonToFileReporterOptions {
     

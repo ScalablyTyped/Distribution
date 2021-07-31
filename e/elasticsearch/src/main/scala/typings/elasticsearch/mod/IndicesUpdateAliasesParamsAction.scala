@@ -4,17 +4,15 @@ import typings.elasticsearch.anon.Alias
 import typings.elasticsearch.anon.IndexString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndicesUpdateAliasesParamsAction extends StObject {
   
-  var add: js.UndefOr[Alias] = js.native
+  var add: js.UndefOr[Alias] = js.undefined
   
-  var remove: js.UndefOr[typings.elasticsearch.anon.Indices] = js.native
+  var remove: js.UndefOr[typings.elasticsearch.anon.Indices] = js.undefined
   
-  var remove_index: js.UndefOr[IndexString] = js.native
+  var remove_index: js.UndefOr[IndexString] = js.undefined
 }
 object IndicesUpdateAliasesParamsAction {
   

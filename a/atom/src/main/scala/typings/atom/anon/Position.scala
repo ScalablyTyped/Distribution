@@ -3,17 +3,15 @@ package typings.atom.anon
 import typings.atom.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
   /** The path to the file being referenced. */
-  var file: String = js.native
+  var file: String
   
   /** The point being referenced in that file. */
-  var position: js.UndefOr[Point] = js.native
+  var position: js.UndefOr[Point] = js.undefined
 }
 object Position {
   

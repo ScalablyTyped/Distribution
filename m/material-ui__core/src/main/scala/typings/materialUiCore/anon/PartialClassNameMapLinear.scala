@@ -2,48 +2,46 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/LinearProgress/LinearProgress.LinearProgressClassKey>> */
-@js.native
 trait PartialClassNameMapLinear extends StObject {
   
-  var bar: js.UndefOr[String] = js.native
+  var bar: js.UndefOr[String] = js.undefined
   
-  var bar1Buffer: js.UndefOr[String] = js.native
+  var bar1Buffer: js.UndefOr[String] = js.undefined
   
-  var bar1Determinate: js.UndefOr[String] = js.native
+  var bar1Determinate: js.UndefOr[String] = js.undefined
   
-  var bar1Indeterminate: js.UndefOr[String] = js.native
+  var bar1Indeterminate: js.UndefOr[String] = js.undefined
   
-  var bar2Buffer: js.UndefOr[String] = js.native
+  var bar2Buffer: js.UndefOr[String] = js.undefined
   
-  var bar2Indeterminate: js.UndefOr[String] = js.native
+  var bar2Indeterminate: js.UndefOr[String] = js.undefined
   
-  var barColorPrimary: js.UndefOr[String] = js.native
+  var barColorPrimary: js.UndefOr[String] = js.undefined
   
-  var barColorSecondary: js.UndefOr[String] = js.native
+  var barColorSecondary: js.UndefOr[String] = js.undefined
   
-  var buffer: js.UndefOr[String] = js.native
+  var buffer: js.UndefOr[String] = js.undefined
   
-  var colorPrimary: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
-  var colorSecondary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.undefined
   
-  var dashed: js.UndefOr[String] = js.native
+  var dashed: js.UndefOr[String] = js.undefined
   
-  var dashedColorPrimary: js.UndefOr[String] = js.native
+  var dashedColorPrimary: js.UndefOr[String] = js.undefined
   
-  var dashedColorSecondary: js.UndefOr[String] = js.native
+  var dashedColorSecondary: js.UndefOr[String] = js.undefined
   
-  var determinate: js.UndefOr[String] = js.native
+  var determinate: js.UndefOr[String] = js.undefined
   
-  var indeterminate: js.UndefOr[String] = js.native
+  var indeterminate: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapLinear {
   

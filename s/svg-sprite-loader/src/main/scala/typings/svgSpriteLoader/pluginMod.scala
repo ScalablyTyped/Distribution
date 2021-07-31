@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
   @JSImport("svg-sprite-loader/plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Render plain sprite without styles and usages */
-    var plainSprite: js.UndefOr[Boolean] = js.native
+    var plainSprite: js.UndefOr[Boolean] = js.undefined
     
     /** Custom tag attributes for the svg */
-    var spriteAttrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var spriteAttrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object Options {
     

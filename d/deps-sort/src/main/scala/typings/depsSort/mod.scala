@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,33 +11,34 @@ object mod {
   /**
     * Return a new through stream that should get written module-deps objects and will output sorted objects.
     */
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("deps-sort", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("deps-sort", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Input objects are file objects in the module-deps shape. They must at least have these properties:
     */
-  @js.native
   trait InputRow extends StObject {
     
     /**
       * dependencies for this file, mapping strings as used in require() to row IDs
       */
-    var deps: js.Array[String] = js.native
+    var deps: js.Array[String]
     
     /**
       * a unique identifier for the file
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * the file contents
       */
-    var source: String = js.native
+    var source: String
   }
   object InputRow {
     
@@ -68,27 +68,27 @@ object mod {
   /**
     * module-deps constructor options
     */
-  @js.native
   trait Options
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
     /**
       * Set 'row.dedupe' for files that match existing contents. Sets 'row.dedupeIndex' when 'index' is enabled.
       * When 'row.dedupe' is set, 'row.sameDeps' will be set to a boolean of whether the dependencies at the dedupe target match (true) or just the source content (false).
       */
-    var dedupe: js.UndefOr[Boolean] = js.native
+    var dedupe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * array of names or object mapping names to true not to mangle with integer indexes when 'index' is turned on.
       * If 'expose' maps names to strings, those strings will be used to resolve the indexed references.
       */
-    var expose: js.UndefOr[js.Array[String] | (StringDictionary[Boolean | String])] = js.native
+    var expose: js.UndefOr[js.Array[String] | (StringDictionary[Boolean | String])] = js.undefined
     
     /**
       * When true, for each module-deps row, insert 'row.index' with the numeric index and
       * 'row.indexDeps' like 'row.deps' but mapping require strings to row indices
       */
-    var index: js.UndefOr[Boolean] = js.native
+    var index: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -127,28 +127,27 @@ object mod {
   /**
     * All the input properties, and:
     */
-  @js.native
   trait OutputRow extends StObject {
     
     /**
       * when 'opts.dedupe' is true, contains the row ID of a file with identical contents
       */
-    var dedupe: String = js.native
+    var dedupe: String
     
     /**
       * like 'row.dedupe', but contains the 'row.index' instead of 'row.id'
       */
-    var dedupeIndex: Double = js.native
+    var dedupeIndex: Double
     
     /**
       * when 'opts.index' is true, the sorted numeric index of the row
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * like 'row.deps', but mapping to 'row.index' instead of 'row.id'
       */
-    var indexDeps: StringDictionary[Double] = js.native
+    var indexDeps: StringDictionary[Double]
   }
   object OutputRow {
     

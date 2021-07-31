@@ -3,17 +3,15 @@ package typings.forgeApis.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiResponse extends StObject {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object ApiResponse {
   

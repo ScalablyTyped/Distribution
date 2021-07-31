@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBotMod {
   
-  @JSImport("@pulumi/aws/lex/getBot", "getBot")
+  @JSImport("@pulumi/aws/lex/getBot", JSImport.Namespace)
   @js.native
-  def getBot(args: GetBotArgs): js.Promise[GetBotResult] = js.native
-  @JSImport("@pulumi/aws/lex/getBot", "getBot")
-  @js.native
-  def getBot(args: GetBotArgs, opts: InvokeOptions): js.Promise[GetBotResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBot(args: GetBotArgs): js.Promise[GetBotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotResult]]
+  @scala.inline
+  def getBot(args: GetBotArgs, opts: InvokeOptions): js.Promise[GetBotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotResult]]
+  
   trait GetBotArgs extends StObject {
     
     /**
       * The name of the bot. The name is case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The version or alias of the bot.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetBotArgs {
     
@@ -50,72 +50,71 @@ object getBotMod {
     }
   }
   
-  @js.native
   trait GetBotResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val checksum: String = js.native
+    val checksum: String
     
     /**
       * Specifies if this Amazon Lex Bot is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA.
       */
-    val childDirected: Boolean = js.native
+    val childDirected: Boolean
     
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * A description of the bot.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * When set to true user utterances are sent to Amazon Comprehend for sentiment analysis.
       */
-    val detectSentiment: Boolean = js.native
+    val detectSentiment: Boolean
     
     /**
       * Set to true if natural language understanding improvements are enabled.
       */
-    val enableModelImprovements: Boolean = js.native
+    val enableModelImprovements: Boolean
     
-    val failureReason: String = js.native
+    val failureReason: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation.
       */
-    val idleSessionTtlInSeconds: Double = js.native
+    val idleSessionTtlInSeconds: Double
     
-    val lastUpdatedDate: String = js.native
+    val lastUpdatedDate: String
     
     /**
       * Specifies the target locale for the bot. Any intent used in the bot must be compatible with the locale of the bot.
       */
-    val locale: String = js.native
+    val locale: String
     
     /**
       * The name of the bot, case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The threshold where Amazon Lex will insert the AMAZON.FallbackIntent, AMAZON.KendraSearchIntent, or both when returning alternative intents in a PostContent or PostText response. AMAZON.FallbackIntent and AMAZON.KendraSearchIntent are only inserted if they are configured for the bot.
       */
-    val nluIntentConfidenceThreshold: Double = js.native
+    val nluIntentConfidenceThreshold: Double
     
-    val status: String = js.native
+    val status: String
     
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon Polly voice ID that the Amazon Lex Bot uses for voice interactions with the user.
       */
-    val voiceId: String = js.native
+    val voiceId: String
   }
   object GetBotResult {
     

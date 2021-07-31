@@ -3,15 +3,15 @@ package typings.ionic.definitionsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMultiProjectConfig extends ProjectFile {
+trait IMultiProjectConfig
+  extends StObject
+     with ProjectFile {
   
-  var defaultProject: js.UndefOr[String] = js.native
+  var defaultProject: js.UndefOr[String] = js.undefined
   
-  var projects: StringDictionary[js.UndefOr[IProjectConfig]] = js.native
+  var projects: StringDictionary[js.UndefOr[IProjectConfig]]
 }
 object IMultiProjectConfig {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,8 +17,12 @@ sealed trait ChartBoxQuartileCalculation extends StObject
 object ChartBoxQuartileCalculation extends StObject {
   
   @js.native
-  sealed trait exclusive extends ChartBoxQuartileCalculation
+  sealed trait exclusive
+    extends StObject
+       with ChartBoxQuartileCalculation
   
   @js.native
-  sealed trait inclusive extends ChartBoxQuartileCalculation
+  sealed trait inclusive
+    extends StObject
+       with ChartBoxQuartileCalculation
 }

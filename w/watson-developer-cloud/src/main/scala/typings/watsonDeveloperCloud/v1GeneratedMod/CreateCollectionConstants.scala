@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `createCollection` operation. */
@@ -16,50 +15,72 @@ object CreateCollectionConstants {
   object Language extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Language with String] = js.native
+    def apply(value: String): js.UndefOr[Language & String] = js.native
     
     @js.native
-    sealed trait AR extends Language
-    /* "ar" */ val AR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.AR with String = js.native
+    sealed trait AR
+      extends StObject
+         with Language
+    /* "ar" */ val AR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.AR & String = js.native
     
     @js.native
-    sealed trait DE extends Language
-    /* "de" */ val DE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.DE with String = js.native
+    sealed trait DE
+      extends StObject
+         with Language
+    /* "de" */ val DE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.DE & String = js.native
     
     @js.native
-    sealed trait EN extends Language
-    /* "en" */ val EN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.EN with String = js.native
+    sealed trait EN
+      extends StObject
+         with Language
+    /* "en" */ val EN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.EN & String = js.native
     
     @js.native
-    sealed trait ES extends Language
-    /* "es" */ val ES: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ES with String = js.native
+    sealed trait ES
+      extends StObject
+         with Language
+    /* "es" */ val ES: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ES & String = js.native
     
     @js.native
-    sealed trait FR extends Language
-    /* "fr" */ val FR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.FR with String = js.native
+    sealed trait FR
+      extends StObject
+         with Language
+    /* "fr" */ val FR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.FR & String = js.native
     
     @js.native
-    sealed trait IT extends Language
-    /* "it" */ val IT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.IT with String = js.native
+    sealed trait IT
+      extends StObject
+         with Language
+    /* "it" */ val IT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.IT & String = js.native
     
     @js.native
-    sealed trait JA extends Language
-    /* "ja" */ val JA: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.JA with String = js.native
+    sealed trait JA
+      extends StObject
+         with Language
+    /* "ja" */ val JA: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.JA & String = js.native
     
     @js.native
-    sealed trait KO extends Language
-    /* "ko" */ val KO: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.KO with String = js.native
+    sealed trait KO
+      extends StObject
+         with Language
+    /* "ko" */ val KO: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.KO & String = js.native
     
     @js.native
-    sealed trait NL extends Language
-    /* "nl" */ val NL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.NL with String = js.native
+    sealed trait NL
+      extends StObject
+         with Language
+    /* "nl" */ val NL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.NL & String = js.native
     
     @js.native
-    sealed trait PT extends Language
-    /* "pt" */ val PT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.PT with String = js.native
+    sealed trait PT
+      extends StObject
+         with Language
+    /* "pt" */ val PT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.PT & String = js.native
     
     @js.native
-    sealed trait ZH_CN extends Language
-    /* "zh-CN" */ val ZH_CN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ZH_CN with String = js.native
+    sealed trait ZH_CN
+      extends StObject
+         with Language
+    /* "zh-CN" */ val ZH_CN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ZH_CN & String = js.native
   }
 }

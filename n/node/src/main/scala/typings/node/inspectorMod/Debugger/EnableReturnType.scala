@@ -3,17 +3,15 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.UniqueDebuggerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableReturnType extends StObject {
   
   /**
     * Unique identifier of the debugger.
     * @experimental
     */
-  var debuggerId: UniqueDebuggerId = js.native
+  var debuggerId: UniqueDebuggerId
 }
 object EnableReturnType {
   

@@ -12,7 +12,7 @@ A 2D rectangular bin packing data structure that uses the Shelf Best Height Fit 
 | Keywords           | bin packing, sprite |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 1513081 |
+| # downloads        | 1091912 |
 | # stars            | 0 |
 
 ## Links

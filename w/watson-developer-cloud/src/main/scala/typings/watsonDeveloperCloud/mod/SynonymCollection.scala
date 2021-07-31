@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SynonymCollection. */
-@js.native
 trait SynonymCollection extends StObject {
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
   
   /** An array of synonyms. */
-  var synonyms: js.Array[Synonym] = js.native
+  var synonyms: js.Array[Synonym]
 }
 object SynonymCollection {
   

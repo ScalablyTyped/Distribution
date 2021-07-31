@@ -19,7 +19,6 @@ import typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -190,8 +189,8 @@ object mod {
       * The promise will reject if the command throws an exception,
       * or if the command is not registered.
       */
-    def execute(id: String): js.Promise[_] = js.native
-    def execute(id: String, args: ReadonlyPartialJSONObject): js.Promise[_] = js.native
+    def execute(id: String): js.Promise[js.Any] = js.native
+    def execute(id: String, args: ReadonlyPartialJSONObject): js.Promise[js.Any] = js.native
     
     /**
       * Test whether a specific command is registered.
@@ -380,12 +379,15 @@ object mod {
   }
   object CommandRegistry {
     
+    @JSImport("@lumino/commands", "CommandRegistry")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Format a keystroke for display on the local system.
       */
-    @JSImport("@lumino/commands", "CommandRegistry.formatKeystroke")
-    @js.native
-    def formatKeystroke(keystroke: String): String = js.native
+    @scala.inline
+    def formatKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Create a normalized keystroke for a `'keydown'` event.
@@ -395,9 +397,8 @@ object mod {
       * @returns A normalized keystroke, or an empty string if the event
       *   does not represent a valid keystroke for the given layout.
       */
-    @JSImport("@lumino/commands", "CommandRegistry.keystrokeForKeydownEvent")
-    @js.native
-    def keystrokeForKeydownEvent(event: KeyboardEvent): String = js.native
+    @scala.inline
+    def keystrokeForKeydownEvent(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keystrokeForKeydownEvent")(event.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the platform-specific normalized keys for an options object.
@@ -406,9 +407,8 @@ object mod {
       *
       * @returns Array of combined, normalized keys.
       */
-    @JSImport("@lumino/commands", "CommandRegistry.normalizeKeys")
-    @js.native
-    def normalizeKeys(options: IKeyBindingOptions): js.Array[String] = js.native
+    @scala.inline
+    def normalizeKeys(options: IKeyBindingOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeys")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Normalize a keystroke into a canonical representation.
@@ -423,9 +423,8 @@ object mod {
       *
       * The `Cmd` modifier is ignored on non-Mac platforms.
       */
-    @JSImport("@lumino/commands", "CommandRegistry.normalizeKeystroke")
-    @js.native
-    def normalizeKeystroke(keystroke: String): String = js.native
+    @scala.inline
+    def normalizeKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a keystroke into its constituent components.
@@ -449,9 +448,8 @@ object mod {
       *   - The keystroke parts should be separated by whitespace.
       *   - The keystroke is case sensitive.
       */
-    @JSImport("@lumino/commands", "CommandRegistry.parseKeystroke")
-    @js.native
-    def parseKeystroke(keystroke: String): IKeystrokeParts = js.native
+    @scala.inline
+    def parseKeystroke(keystroke: String): IKeystrokeParts = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[IKeystrokeParts]
     
     /**
       * A type alias for a user-defined command function.
@@ -466,7 +464,6 @@ object mod {
     /**
       * An arguments object for the `commandChanged` signal.
       */
-    @js.native
     trait ICommandChangedArgs extends StObject {
       
       /**
@@ -474,12 +471,12 @@ object mod {
         *
         * This will be `undefined` when the type is `'many-changed'`.
         */
-      val id: js.UndefOr[String] = js.native
+      val id: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the command was added, removed, or changed.
         */
-      val `type`: added | removed | changed | `many-changed` = js.native
+      val `type`: added | removed | changed | `many-changed`
     }
     object ICommandChangedArgs {
       
@@ -507,28 +504,27 @@ object mod {
     /**
       * An arguments object for the `commandExecuted` signal.
       */
-    @js.native
     trait ICommandExecutedArgs extends StObject {
       
       /**
         * The arguments object passed to the command.
         */
-      val args: ReadonlyPartialJSONObject = js.native
+      val args: ReadonlyPartialJSONObject
       
       /**
         * The id of the associated command.
         */
-      val id: String = js.native
+      val id: String
       
       /**
         * The promise which resolves with the result of the command.
         */
-      val result: js.Promise[_] = js.native
+      val result: js.Promise[js.Any]
     }
     object ICommandExecutedArgs {
       
       @scala.inline
-      def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[_]): ICommandExecutedArgs = {
+      def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[js.Any]): ICommandExecutedArgs = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICommandExecutedArgs]
       }
@@ -543,7 +539,7 @@ object mod {
         def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setResult(value: js.Promise[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        def setResult(value: js.Promise[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
@@ -559,7 +555,6 @@ object mod {
       * registry will always invoke the command functions with a `thisArg`
       * which is `undefined`.
       */
-    @js.native
     trait ICommandOptions extends StObject {
       
       /**
@@ -575,7 +570,7 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var caption: js.UndefOr[String | CommandFunc[String]] = js.native
+      var caption: js.UndefOr[String | CommandFunc[String]] = js.undefined
       
       /**
         * The general class name for the command.
@@ -591,7 +586,7 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var className: js.UndefOr[String | CommandFunc[String]] = js.native
+      var className: js.UndefOr[String | CommandFunc[String]] = js.undefined
       
       /**
         * The dataset for the command.
@@ -605,7 +600,7 @@ object mod {
         *
         * The default value is an empty dataset.
         */
-      var dataset: js.UndefOr[Dataset | CommandFunc[Dataset]] = js.native
+      var dataset: js.UndefOr[Dataset | CommandFunc[Dataset]] = js.undefined
       
       /**
         * The function to invoke when the command is executed.
@@ -618,7 +613,7 @@ object mod {
         *
         * This may be invoked even when `isEnabled` returns `false`.
         */
-      def execute(args: ReadonlyPartialJSONObject): js.Any | js.Promise[_] = js.native
+      def execute(args: ReadonlyPartialJSONObject): js.Any | js.Promise[js.Any]
       /**
         * The function to invoke when the command is executed.
         *
@@ -631,7 +626,7 @@ object mod {
         * This may be invoked even when `isEnabled` returns `false`.
         */
       @JSName("execute")
-      var execute_Original: CommandFunc[_ | js.Promise[_]] = js.native
+      var execute_Original: CommandFunc[js.Any | js.Promise[js.Any]]
       
       /**
         * The icon renderer for the command.
@@ -645,7 +640,7 @@ object mod {
         * DEPRECATED: if set to a string value, the .icon field will function as
         * an alias for the .iconClass field, for backwards compatibility
         */
-      var icon: js.UndefOr[IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])] = js.native
+      var icon: js.UndefOr[IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])] = js.undefined
       
       /**
         * The icon class for the command.
@@ -661,7 +656,7 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var iconClass: js.UndefOr[String | CommandFunc[String]] = js.native
+      var iconClass: js.UndefOr[String | CommandFunc[String]] = js.undefined
       
       /**
         * The icon label for the command.
@@ -675,7 +670,7 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var iconLabel: js.UndefOr[String | CommandFunc[String]] = js.native
+      var iconLabel: js.UndefOr[String | CommandFunc[String]] = js.undefined
       
       /**
         * A function which indicates whether the command is enabled.
@@ -686,7 +681,7 @@ object mod {
         *
         * The default value is `() => true`.
         */
-      var isEnabled: js.UndefOr[CommandFunc[Boolean]] = js.native
+      var isEnabled: js.UndefOr[CommandFunc[Boolean]] = js.undefined
       
       /**
         * A function which indicates whether the command is toggled.
@@ -698,7 +693,7 @@ object mod {
         *
         * The default value is `() => false`.
         */
-      var isToggled: js.UndefOr[CommandFunc[Boolean]] = js.native
+      var isToggled: js.UndefOr[CommandFunc[Boolean]] = js.undefined
       
       /**
         * A function which indicates whether the command is visible.
@@ -709,7 +704,7 @@ object mod {
         *
         * The default value is `() => true`.
         */
-      var isVisible: js.UndefOr[CommandFunc[Boolean]] = js.native
+      var isVisible: js.UndefOr[CommandFunc[Boolean]] = js.undefined
       
       /**
         * The label for the command.
@@ -722,7 +717,7 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var label: js.UndefOr[String | CommandFunc[String]] = js.native
+      var label: js.UndefOr[String | CommandFunc[String]] = js.undefined
       
       /**
         * The index of the mnemonic character in the command's label.
@@ -737,7 +732,7 @@ object mod {
         *
         * The default value is `-1`.
         */
-      var mnemonic: js.UndefOr[Double | CommandFunc[Double]] = js.native
+      var mnemonic: js.UndefOr[Double | CommandFunc[Double]] = js.undefined
       
       /**
         * The usage text for the command.
@@ -753,7 +748,121 @@ object mod {
         *
         * The default value is an empty string.
         */
-      var usage: js.UndefOr[String | CommandFunc[String]] = js.native
+      var usage: js.UndefOr[String | CommandFunc[String]] = js.undefined
+    }
+    object ICommandOptions {
+      
+      @scala.inline
+      def apply(execute: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): ICommandOptions = {
+        val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
+        __obj.asInstanceOf[ICommandOptions]
+      }
+      
+      @scala.inline
+      implicit class ICommandOptionsMutableBuilder[Self <: ICommandOptions] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setCaption(value: String | CommandFunc[String]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setCaptionFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+        
+        @scala.inline
+        def setClassName(value: String | CommandFunc[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setClassNameFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        
+        @scala.inline
+        def setDataset(value: Dataset | CommandFunc[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDatasetFunction1(value: /* args */ ReadonlyPartialJSONObject => Dataset): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+        
+        @scala.inline
+        def setExecute(value: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIcon(value: IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setIconClass(value: String | CommandFunc[String]): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setIconClassFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconClass", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        
+        @scala.inline
+        def setIconFunction1(value: /* args */ ReadonlyPartialJSONObject => js.UndefOr[IRenderer | String]): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIconLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setIconLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconLabel", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+        
+        @scala.inline
+        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        
+        @scala.inline
+        def setIsEnabled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+        
+        @scala.inline
+        def setIsToggled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isToggled", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIsToggledUndefined: Self = StObject.set(x, "isToggled", js.undefined)
+        
+        @scala.inline
+        def setIsVisible(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+        
+        @scala.inline
+        def setLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        
+        @scala.inline
+        def setMnemonic(value: Double | CommandFunc[Double]): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setMnemonicFunction1(value: /* args */ ReadonlyPartialJSONObject => Double): Self = StObject.set(x, "mnemonic", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
+        
+        @scala.inline
+        def setUsage(value: String | CommandFunc[String]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUsageFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      }
     }
     
     /**
@@ -762,28 +871,27 @@ object mod {
       * #### Notes
       * A key binding is an immutable object created by a registry.
       */
-    @js.native
     trait IKeyBinding extends StObject {
       
       /**
         * The arguments for the command.
         */
-      val args: ReadonlyPartialJSONObject = js.native
+      val args: ReadonlyPartialJSONObject
       
       /**
         * The command executed when the binding is matched.
         */
-      val command: String = js.native
+      val command: String
       
       /**
         * The key sequence for the binding.
         */
-      val keys: js.Array[String] = js.native
+      val keys: js.Array[String]
       
       /**
         * The CSS selector for the binding.
         */
-      val selector: String = js.native
+      val selector: String
     }
     object IKeyBinding {
       
@@ -816,18 +924,17 @@ object mod {
     /**
       * An arguments object for the `keyBindingChanged` signal.
       */
-    @js.native
     trait IKeyBindingChangedArgs extends StObject {
       
       /**
         * The key binding which was changed.
         */
-      val binding: IKeyBinding = js.native
+      val binding: IKeyBinding
       
       /**
         * Whether the key binding was added or removed.
         */
-      val `type`: added | removed = js.native
+      val `type`: added | removed
     }
     object IKeyBindingChangedArgs {
       
@@ -852,7 +959,6 @@ object mod {
     /**
       * An options object for creating a key binding.
       */
-    @js.native
     trait IKeyBindingOptions extends StObject {
       
       /**
@@ -860,12 +966,12 @@ object mod {
         *
         * The default value is an empty object.
         */
-      var args: js.UndefOr[ReadonlyPartialJSONObject] = js.native
+      var args: js.UndefOr[ReadonlyPartialJSONObject] = js.undefined
       
       /**
         * The id of the command to execute when the binding is matched.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * The default key sequence for the key binding.
@@ -889,21 +995,21 @@ object mod {
         *
         * **Examples:** `['Accel C']`, `['Shift F11']`, `['D', 'D']`
         */
-      var keys: js.Array[String] = js.native
+      var keys: js.Array[String]
       
       /**
         * The key sequence to use when running on Linux.
         *
         * If provided, this will override `keys` on Linux platforms.
         */
-      var linuxKeys: js.UndefOr[js.Array[String]] = js.native
+      var linuxKeys: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The key sequence to use when running on Mac.
         *
         * If provided, this will override `keys` on Mac platforms.
         */
-      var macKeys: js.UndefOr[js.Array[String]] = js.native
+      var macKeys: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The CSS selector for the key binding.
@@ -914,14 +1020,14 @@ object mod {
         *
         * The selector must not contain commas.
         */
-      var selector: String = js.native
+      var selector: String
       
       /**
         * The key sequence to use when running on Windows.
         *
         * If provided, this will override `keys` on Windows platforms.
         */
-      var winKeys: js.UndefOr[js.Array[String]] = js.native
+      var winKeys: js.UndefOr[js.Array[String]] = js.undefined
     }
     object IKeyBindingOptions {
       
@@ -984,33 +1090,32 @@ object mod {
     /**
       * An object which holds the results of parsing a keystroke.
       */
-    @js.native
     trait IKeystrokeParts extends StObject {
       
       /**
         * Whether `'Alt'` appears in the keystroke.
         */
-      var alt: Boolean = js.native
+      var alt: Boolean
       
       /**
         * Whether `'Cmd'` appears in the keystroke.
         */
-      var cmd: Boolean = js.native
+      var cmd: Boolean
       
       /**
         * Whether `'Ctrl'` appears in the keystroke.
         */
-      var ctrl: Boolean = js.native
+      var ctrl: Boolean
       
       /**
         * The primary key for the keystroke.
         */
-      var key: String = js.native
+      var key: String
       
       /**
         * Whether `'Shift'` appears in the keystroke.
         */
-      var shift: Boolean = js.native
+      var shift: Boolean
     }
     object IKeystrokeParts {
       

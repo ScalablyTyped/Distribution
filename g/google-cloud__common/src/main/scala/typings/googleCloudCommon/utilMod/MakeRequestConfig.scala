@@ -3,10 +3,8 @@ package typings.googleCloudCommon.utilMod
 import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeRequestConfig extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait MakeRequestConfig extends StObject {
     * certain intermittent server errors. We will exponentially backoff
     * subsequent requests by default. (default: true)
     */
-  var autoRetry: js.UndefOr[Boolean] = js.native
+  var autoRetry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of automatic retries attempted before returning the error.
     * (default: 3)
     */
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var retries: js.UndefOr[Double] = js.native
+  var retries: js.UndefOr[Double] = js.undefined
   
-  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response[_]], Boolean]] = js.native
+  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response[js.Any]], Boolean]] = js.undefined
   
-  var stream: js.UndefOr[Duplexify] = js.native
+  var stream: js.UndefOr[Duplexify] = js.undefined
 }
 object MakeRequestConfig {
   
@@ -58,7 +56,7 @@ object MakeRequestConfig {
     def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
     @scala.inline
-    def setShouldRetryFn(value: /* response */ js.UndefOr[Response[_]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
+    def setShouldRetryFn(value: /* response */ js.UndefOr[Response[js.Any]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)

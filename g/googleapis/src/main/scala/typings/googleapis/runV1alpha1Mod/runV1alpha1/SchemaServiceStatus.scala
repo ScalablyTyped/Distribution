@@ -2,48 +2,46 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current state of the Service. Output only.
   */
-@js.native
 trait SchemaServiceStatus extends StObject {
   
   /**
     * From RouteStatus. Similar to domain, information on where the service is
     * available on HTTP.
     */
-  var address: js.UndefOr[SchemaAddressable] = js.native
+  var address: js.UndefOr[SchemaAddressable] = js.undefined
   
   /**
     * Conditions communicates information about ongoing/complete reconciliation
     * processes that bring the &quot;spec&quot; inline with the observed state
     * of the world.
     */
-  var conditions: js.UndefOr[js.Array[SchemaServiceCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaServiceCondition]] = js.undefined
   
   /**
     * From RouteStatus. Domain holds the top-level domain that will distribute
     * traffic over the provided targets. It generally has the form
     * https://{route-hash}-{project-hash}-{cluster-level-suffix}.a.run.app
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * From ConfigurationStatus. LatestCreatedRevisionName is the last revision
     * that was created from this Service&#39;s Configuration. It might not be
     * ready yet, for that use LatestReadyRevisionName.
     */
-  var latestCreatedRevisionName: js.UndefOr[String] = js.native
+  var latestCreatedRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * From ConfigurationStatus. LatestReadyRevisionName holds the name of the
     * latest Revision stamped out from this Service&#39;s Configuration that
     * has had its &quot;Ready&quot; condition become &quot;True&quot;.
     */
-  var latestReadyRevisionName: js.UndefOr[String] = js.native
+  var latestReadyRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the &#39;Generation&#39; of the Route that was last
@@ -51,7 +49,7 @@ trait SchemaServiceStatus extends StObject {
     * reconciliation should poll until observedGeneration = metadata.generation
     * and the Ready condition&#39;s status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /**
     * From RouteStatus. Traffic holds the configured traffic distribution.
@@ -59,7 +57,7 @@ trait SchemaServiceStatus extends StObject {
     * ConfigurationName appears in the spec, this will hold the
     * LatestReadyRevisionName that we last observed.
     */
-  var traffic: js.UndefOr[js.Array[SchemaTrafficTarget]] = js.native
+  var traffic: js.UndefOr[js.Array[SchemaTrafficTarget]] = js.undefined
 }
 object SchemaServiceStatus {
   

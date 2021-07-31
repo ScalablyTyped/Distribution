@@ -2,15 +2,13 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorArgs extends StObject {
   
-  var details: Dict = js.native
+  var details: Dict
   
-  var error: String = js.native
+  var error: String
 }
 object ErrorArgs {
   

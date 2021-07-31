@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PhotoImportContentType extends StObject {
   
   /** The item is an image. */
   @js.native
-  sealed trait image extends PhotoImportContentType
+  sealed trait image
+    extends StObject
+       with PhotoImportContentType
   
   /** The content type is unknown. */
   @js.native
-  sealed trait unknown extends PhotoImportContentType
+  sealed trait unknown
+    extends StObject
+       with PhotoImportContentType
   
   /** The item is a video. */
   @js.native
-  sealed trait video extends PhotoImportContentType
+  sealed trait video
+    extends StObject
+       with PhotoImportContentType
 }

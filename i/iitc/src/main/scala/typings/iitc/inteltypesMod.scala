@@ -7,7 +7,6 @@ import typings.iitc.iitcStrings.TEXT
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inteltypesMod {
@@ -15,10 +14,9 @@ object inteltypesMod {
   object Intel {
     
     // CHAT
-    @js.native
     trait ChatCallback extends StObject {
       
-      var result: js.Array[ChatLine] = js.native
+      var result: js.Array[ChatLine]
     }
     object ChatCallback {
       
@@ -47,12 +45,11 @@ object inteltypesMod {
     
     type MarkUpPlayer = js.Tuple2[PLAYER, MarkUpPlayerType]
     
-    @js.native
     trait MarkUpPlayerType extends StObject {
       
-      var plain: String = js.native
+      var plain: String
       
-      var team: String = js.native
+      var team: String
     }
     object MarkUpPlayerType {
       
@@ -75,20 +72,19 @@ object inteltypesMod {
     
     type MarkUpPortal = js.Tuple2[PORTAL, MarkUpPortalType]
     
-    @js.native
     trait MarkUpPortalType extends StObject {
       
-      var address: String = js.native
+      var address: String
       
-      var latE6: Double = js.native
+      var latE6: Double
       
-      var lngE6: Double = js.native
+      var lngE6: Double
       
-      var name: String = js.native
+      var name: String
       
-      var plain: String = js.native
+      var plain: String
       
-      var team: String = js.native
+      var team: String
     }
     object MarkUpPortalType {
       
@@ -123,10 +119,9 @@ object inteltypesMod {
     
     type MarkUpText = js.Tuple2[TEXT, MarkUpTextType]
     
-    @js.native
     trait MarkUpTextType extends StObject {
       
-      var plain: String = js.native
+      var plain: String
     }
     object MarkUpTextType {
       
@@ -145,30 +140,29 @@ object inteltypesMod {
     }
     
     // PLAYER
-    @js.native
     trait PlayerInfo extends StObject {
       
-      var ap: String = js.native
+      var ap: String
       
-      var available_invites: Double = js.native
+      var available_invites: Double
       
-      var energy: Double = js.native
+      var energy: Double
       
-      var level: Double = js.native
+      var level: Double
       
-      var min_ap_for_current_level: String = js.native
+      var min_ap_for_current_level: String
       
-      var min_ap_for_next_level: String = js.native
+      var min_ap_for_next_level: String
       
-      var nickMatcher: RegExp = js.native
+      var nickMatcher: RegExp
       
-      var nickname: String = js.native
+      var nickname: String
       
-      var team: String = js.native
+      var team: String
       
-      var verified_level: Double = js.native
+      var verified_level: Double
       
-      var xm_capacity: String = js.native
+      var xm_capacity: String
     }
     object PlayerInfo {
       
@@ -228,10 +222,9 @@ object inteltypesMod {
       }
     }
     
-    @js.native
     trait PlextContainer extends StObject {
       
-      var plext: Markup = js.native
+      var plext: Markup
     }
     object PlextContainer {
       

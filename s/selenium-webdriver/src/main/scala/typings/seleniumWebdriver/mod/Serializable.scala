@@ -2,10 +2,8 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Serializable[T] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Serializable[T] extends StObject {
     *
     * @return {!(T|IThenable.<!T>)} This instance's serialized wire format.
     */
-  def serialize(): T | js.Promise[T] = js.native
+  def serialize(): T | js.Promise[T]
 }
 object Serializable {
   
@@ -28,7 +26,7 @@ object Serializable {
   }
   
   @scala.inline
-  implicit class SerializableMutableBuilder[Self <: Serializable[_], T] (val x: Self with Serializable[T]) extends AnyVal {
+  implicit class SerializableMutableBuilder[Self <: Serializable[?], T] (val x: Self & Serializable[T]) extends AnyVal {
     
     @scala.inline
     def setSerialize(value: () => T | js.Promise[T]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))

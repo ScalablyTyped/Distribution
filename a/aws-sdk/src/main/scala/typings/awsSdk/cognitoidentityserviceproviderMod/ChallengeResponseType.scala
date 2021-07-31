@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChallengeResponseType extends StObject {
   
   /**
     * The challenge name
     */
-  var ChallengeName: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeName] = js.native
+  var ChallengeName: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeName] = js.undefined
   
   /**
     * The challenge response.
     */
-  var ChallengeResponse: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeResponse] = js.native
+  var ChallengeResponse: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeResponse] = js.undefined
 }
 object ChallengeResponseType {
   

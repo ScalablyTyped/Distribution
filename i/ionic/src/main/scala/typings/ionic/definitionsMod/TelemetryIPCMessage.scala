@@ -4,22 +4,22 @@ import typings.ionic.anon.Args
 import typings.ionic.ionicStrings.telemetry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TelemetryIPCMessage extends IPCMessage {
+trait TelemetryIPCMessage
+  extends StObject
+     with IPCMessage {
   
-  var data: Args = js.native
+  var data: Args
   
-  var `type`: telemetry = js.native
+  var `type`: telemetry
 }
 object TelemetryIPCMessage {
   
   @scala.inline
-  def apply(data: Args, `type`: telemetry): TelemetryIPCMessage = {
+  def apply(data: Args): TelemetryIPCMessage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("telemetry")
     __obj.asInstanceOf[TelemetryIPCMessage]
   }
   

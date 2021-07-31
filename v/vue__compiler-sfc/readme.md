@@ -10,9 +10,9 @@ Typings are for version 3.0.2
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-sfc |
 | Keywords           | vue |
-| # releases         | 56 |
-| # dependents       | 78 |
-| # downloads        | 2772476 |
+| # releases         | 58 |
+| # dependents       | 139 |
+| # downloads        | 7924354 |
 | # stars            | 0 |
 
 ## Links

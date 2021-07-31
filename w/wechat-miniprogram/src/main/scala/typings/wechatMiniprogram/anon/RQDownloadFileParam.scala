@@ -3,18 +3,16 @@ package typings.wechatMiniprogram.anon
 import typings.wechatMiniprogram.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.RQ<wechat-miniprogram.ICloud.DownloadFileParam> */
-@js.native
 trait RQDownloadFileParam extends StObject {
   
-  var cloudPath: js.UndefOr[String] = js.native
+  var cloudPath: js.UndefOr[String] = js.undefined
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var fileID: String = js.native
+  var fileID: String
 }
 object RQDownloadFileParam {
   

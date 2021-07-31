@@ -2,20 +2,18 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragonAura extends StObject {
   
   /**
     * Description of the aura, in HTML text
     */
-  var desc: String = js.native
+  var desc: String
   
-  var name: String = js.native
+  var name: String
   
-  var pic: Icon = js.native
+  var pic: Icon
 }
 object DragonAura {
   

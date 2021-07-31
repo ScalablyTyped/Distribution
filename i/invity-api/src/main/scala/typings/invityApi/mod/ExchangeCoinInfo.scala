@@ -2,22 +2,20 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeCoinInfo extends StObject {
   
   // Bitcoin
-  var category: String = js.native
+  var category: String
   
   // BTC
-  var name: String = js.native
+  var name: String
   
-  var ticker: String = js.native
+  var ticker: String
   
   // popular
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object ExchangeCoinInfo {
   

@@ -2,15 +2,13 @@ package typings.nodeForge.mod.pki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPair extends StObject {
   
-  var privateKey: PrivateKey = js.native
+  var privateKey: PrivateKey
   
-  var publicKey: PublicKey = js.native
+  var publicKey: PublicKey
 }
 object KeyPair {
   

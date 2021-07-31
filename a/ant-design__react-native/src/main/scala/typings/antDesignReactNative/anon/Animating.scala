@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animating extends StObject {
   
-  var animating: Boolean = js.native
+  var animating: Boolean
   
-  var color: String = js.native
+  var color: String
   
-  var size: String = js.native
+  var size: String
   
-  var toast: Boolean = js.native
+  var toast: Boolean
 }
 object Animating {
   

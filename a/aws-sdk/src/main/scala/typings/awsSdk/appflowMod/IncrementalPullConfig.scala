@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncrementalPullConfig extends StObject {
   
   /**
     *  A field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source. 
     */
-  var datetimeTypeFieldName: js.UndefOr[DatetimeTypeFieldName] = js.native
+  var datetimeTypeFieldName: js.UndefOr[DatetimeTypeFieldName] = js.undefined
 }
 object IncrementalPullConfig {
   

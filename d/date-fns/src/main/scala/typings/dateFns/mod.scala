@@ -23,1764 +23,1257 @@ import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Exported Type Aliases
 // Regular Functions
 object mod {
   
-  @JSImport("date-fns", "add")
+  @JSImport("date-fns", JSImport.Namespace)
   @js.native
-  def add(date: Double, duration: typings.dateFns.mod.Duration): Date = js.native
-  @JSImport("date-fns", "add")
-  @js.native
-  def add(date: Date, duration: typings.dateFns.mod.Duration): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("date-fns", "addBusinessDays")
-  @js.native
-  def addBusinessDays(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addBusinessDays")
-  @js.native
-  def addBusinessDays(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def add(date: Double, duration: typings.dateFns.mod.Duration): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def add(date: Date, duration: typings.dateFns.mod.Duration): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addDays")
-  @js.native
-  def addDays(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addDays")
-  @js.native
-  def addDays(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addBusinessDays(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addBusinessDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addBusinessDays(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addBusinessDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addHours")
-  @js.native
-  def addHours(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addHours")
-  @js.native
-  def addHours(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addDays(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addDays(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addISOWeekYears")
-  @js.native
-  def addISOWeekYears(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addISOWeekYears")
-  @js.native
-  def addISOWeekYears(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addHours(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addHours")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addHours(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addHours")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addMilliseconds")
-  @js.native
-  def addMilliseconds(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addMilliseconds")
-  @js.native
-  def addMilliseconds(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addISOWeekYears(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addISOWeekYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addISOWeekYears(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addISOWeekYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addMinutes")
-  @js.native
-  def addMinutes(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addMinutes")
-  @js.native
-  def addMinutes(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addMilliseconds(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMilliseconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addMilliseconds(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMilliseconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addMonths")
-  @js.native
-  def addMonths(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addMonths")
-  @js.native
-  def addMonths(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addMinutes(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMinutes")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addMinutes(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMinutes")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addQuarters")
-  @js.native
-  def addQuarters(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addQuarters")
-  @js.native
-  def addQuarters(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addMonths(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addMonths(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addSeconds")
-  @js.native
-  def addSeconds(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addSeconds")
-  @js.native
-  def addSeconds(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addQuarters(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuarters")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addQuarters(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuarters")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addWeeks")
-  @js.native
-  def addWeeks(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addWeeks")
-  @js.native
-  def addWeeks(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addSeconds(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addSeconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addSeconds(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addSeconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "addYears")
-  @js.native
-  def addYears(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "addYears")
-  @js.native
-  def addYears(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def addWeeks(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeeks")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addWeeks(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeeks")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "areIntervalsOverlapping")
-  @js.native
-  def areIntervalsOverlapping(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Boolean = js.native
-  @JSImport("date-fns", "areIntervalsOverlapping")
-  @js.native
+  @scala.inline
+  def addYears(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def addYears(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
+  @scala.inline
+  def areIntervalsOverlapping(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntervalsOverlapping")(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def areIntervalsOverlapping(
     intervalLeft: typings.dateFns.mod.Interval,
     intervalRight: typings.dateFns.mod.Interval,
     options: Inclusive
-  ): Boolean = js.native
-  
-  @JSImport("date-fns", "closestIndexTo")
-  @js.native
-  def closestIndexTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Double = js.native
-  @JSImport("date-fns", "closestIndexTo")
-  @js.native
-  def closestIndexTo(dateToCompare: Date, datesArray: js.Array[Date | Double]): Double = js.native
-  
-  @JSImport("date-fns", "closestTo")
-  @js.native
-  def closestTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = js.native
-  @JSImport("date-fns", "closestTo")
-  @js.native
-  def closestTo(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = js.native
-  
-  @JSImport("date-fns", "compareAsc")
-  @js.native
-  def compareAsc(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "compareAsc")
-  @js.native
-  def compareAsc(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "compareAsc")
-  @js.native
-  def compareAsc(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "compareAsc")
-  @js.native
-  def compareAsc(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "compareDesc")
-  @js.native
-  def compareDesc(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "compareDesc")
-  @js.native
-  def compareDesc(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "compareDesc")
-  @js.native
-  def compareDesc(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "compareDesc")
-  @js.native
-  def compareDesc(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInBusinessDays")
-  @js.native
-  def differenceInBusinessDays(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInBusinessDays")
-  @js.native
-  def differenceInBusinessDays(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInBusinessDays")
-  @js.native
-  def differenceInBusinessDays(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInBusinessDays")
-  @js.native
-  def differenceInBusinessDays(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarDays")
-  @js.native
-  def differenceInCalendarDays(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarDays")
-  @js.native
-  def differenceInCalendarDays(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarDays")
-  @js.native
-  def differenceInCalendarDays(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarDays")
-  @js.native
-  def differenceInCalendarDays(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarISOWeekYears")
-  @js.native
-  def differenceInCalendarISOWeekYears(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeekYears")
-  @js.native
-  def differenceInCalendarISOWeekYears(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeekYears")
-  @js.native
-  def differenceInCalendarISOWeekYears(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeekYears")
-  @js.native
-  def differenceInCalendarISOWeekYears(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarISOWeeks")
-  @js.native
-  def differenceInCalendarISOWeeks(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeeks")
-  @js.native
-  def differenceInCalendarISOWeeks(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeeks")
-  @js.native
-  def differenceInCalendarISOWeeks(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarISOWeeks")
-  @js.native
-  def differenceInCalendarISOWeeks(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarMonths")
-  @js.native
-  def differenceInCalendarMonths(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarMonths")
-  @js.native
-  def differenceInCalendarMonths(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarMonths")
-  @js.native
-  def differenceInCalendarMonths(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarMonths")
-  @js.native
-  def differenceInCalendarMonths(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarQuarters")
-  @js.native
-  def differenceInCalendarQuarters(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarQuarters")
-  @js.native
-  def differenceInCalendarQuarters(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarQuarters")
-  @js.native
-  def differenceInCalendarQuarters(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarQuarters")
-  @js.native
-  def differenceInCalendarQuarters(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarWeeks")
-  @js.native
-  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Double = js.native
-  
-  @JSImport("date-fns", "differenceInCalendarYears")
-  @js.native
-  def differenceInCalendarYears(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarYears")
-  @js.native
-  def differenceInCalendarYears(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarYears")
-  @js.native
-  def differenceInCalendarYears(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInCalendarYears")
-  @js.native
-  def differenceInCalendarYears(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInDays")
-  @js.native
-  def differenceInDays(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInDays")
-  @js.native
-  def differenceInDays(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInDays")
-  @js.native
-  def differenceInDays(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInDays")
-  @js.native
-  def differenceInDays(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInHours")
-  @js.native
-  def differenceInHours(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInHours")
-  @js.native
-  def differenceInHours(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInHours")
-  @js.native
-  def differenceInHours(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInHours")
-  @js.native
-  def differenceInHours(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInISOWeekYears")
-  @js.native
-  def differenceInISOWeekYears(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInISOWeekYears")
-  @js.native
-  def differenceInISOWeekYears(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInISOWeekYears")
-  @js.native
-  def differenceInISOWeekYears(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInISOWeekYears")
-  @js.native
-  def differenceInISOWeekYears(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInMilliseconds")
-  @js.native
-  def differenceInMilliseconds(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMilliseconds")
-  @js.native
-  def differenceInMilliseconds(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInMilliseconds")
-  @js.native
-  def differenceInMilliseconds(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMilliseconds")
-  @js.native
-  def differenceInMilliseconds(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInMinutes")
-  @js.native
-  def differenceInMinutes(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMinutes")
-  @js.native
-  def differenceInMinutes(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInMinutes")
-  @js.native
-  def differenceInMinutes(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMinutes")
-  @js.native
-  def differenceInMinutes(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInMonths")
-  @js.native
-  def differenceInMonths(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMonths")
-  @js.native
-  def differenceInMonths(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInMonths")
-  @js.native
-  def differenceInMonths(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInMonths")
-  @js.native
-  def differenceInMonths(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInQuarters")
-  @js.native
-  def differenceInQuarters(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInQuarters")
-  @js.native
-  def differenceInQuarters(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInQuarters")
-  @js.native
-  def differenceInQuarters(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInQuarters")
-  @js.native
-  def differenceInQuarters(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInSeconds")
-  @js.native
-  def differenceInSeconds(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInSeconds")
-  @js.native
-  def differenceInSeconds(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInSeconds")
-  @js.native
-  def differenceInSeconds(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInSeconds")
-  @js.native
-  def differenceInSeconds(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInWeeks")
-  @js.native
-  def differenceInWeeks(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInWeeks")
-  @js.native
-  def differenceInWeeks(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInWeeks")
-  @js.native
-  def differenceInWeeks(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInWeeks")
-  @js.native
-  def differenceInWeeks(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "differenceInYears")
-  @js.native
-  def differenceInYears(dateLeft: Double, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInYears")
-  @js.native
-  def differenceInYears(dateLeft: Double, dateRight: Date): Double = js.native
-  @JSImport("date-fns", "differenceInYears")
-  @js.native
-  def differenceInYears(dateLeft: Date, dateRight: Double): Double = js.native
-  @JSImport("date-fns", "differenceInYears")
-  @js.native
-  def differenceInYears(dateLeft: Date, dateRight: Date): Double = js.native
-  
-  @JSImport("date-fns", "eachDayOfInterval")
-  @js.native
-  def eachDayOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  @JSImport("date-fns", "eachDayOfInterval")
-  @js.native
-  def eachDayOfInterval(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachHourOfInterval")
-  @js.native
-  def eachHourOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  @JSImport("date-fns", "eachHourOfInterval")
-  @js.native
-  def eachHourOfInterval(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachMonthOfInterval")
-  @js.native
-  def eachMonthOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachQuarterOfInterval")
-  @js.native
-  def eachQuarterOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachWeekOfInterval")
-  @js.native
-  def eachWeekOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  @JSImport("date-fns", "eachWeekOfInterval")
-  @js.native
-  def eachWeekOfInterval(interval: typings.dateFns.mod.Interval, options: typings.dateFns.anon.Locale): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachWeekendOfInterval")
-  @js.native
-  def eachWeekendOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachWeekendOfMonth")
-  @js.native
-  def eachWeekendOfMonth(date: Double): js.Array[Date] = js.native
-  @JSImport("date-fns", "eachWeekendOfMonth")
-  @js.native
-  def eachWeekendOfMonth(date: Date): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachWeekendOfYear")
-  @js.native
-  def eachWeekendOfYear(date: Double): js.Array[Date] = js.native
-  @JSImport("date-fns", "eachWeekendOfYear")
-  @js.native
-  def eachWeekendOfYear(date: Date): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "eachYearOfInterval")
-  @js.native
-  def eachYearOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
-  
-  @JSImport("date-fns", "endOfDay")
-  @js.native
-  def endOfDay(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfDay")
-  @js.native
-  def endOfDay(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfDecade")
-  @js.native
-  def endOfDecade(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfDecade")
-  @js.native
-  def endOfDecade(date: Double, options: AdditionalDigits): Date = js.native
-  @JSImport("date-fns", "endOfDecade")
-  @js.native
-  def endOfDecade(date: Date): Date = js.native
-  @JSImport("date-fns", "endOfDecade")
-  @js.native
-  def endOfDecade(date: Date, options: AdditionalDigits): Date = js.native
-  
-  @JSImport("date-fns", "endOfHour")
-  @js.native
-  def endOfHour(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfHour")
-  @js.native
-  def endOfHour(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfISOWeek")
-  @js.native
-  def endOfISOWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfISOWeek")
-  @js.native
-  def endOfISOWeek(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfISOWeekYear")
-  @js.native
-  def endOfISOWeekYear(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfISOWeekYear")
-  @js.native
-  def endOfISOWeekYear(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfMinute")
-  @js.native
-  def endOfMinute(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfMinute")
-  @js.native
-  def endOfMinute(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfMonth")
-  @js.native
-  def endOfMonth(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfMonth")
-  @js.native
-  def endOfMonth(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfQuarter")
-  @js.native
-  def endOfQuarter(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfQuarter")
-  @js.native
-  def endOfQuarter(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfSecond")
-  @js.native
-  def endOfSecond(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfSecond")
-  @js.native
-  def endOfSecond(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfToday")
-  @js.native
-  def endOfToday(): Date = js.native
-  
-  @JSImport("date-fns", "endOfTomorrow")
-  @js.native
-  def endOfTomorrow(): Date = js.native
-  
-  @JSImport("date-fns", "endOfWeek")
-  @js.native
-  def endOfWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfWeek")
-  @js.native
-  def endOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = js.native
-  @JSImport("date-fns", "endOfWeek")
-  @js.native
-  def endOfWeek(date: Date): Date = js.native
-  @JSImport("date-fns", "endOfWeek")
-  @js.native
-  def endOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = js.native
-  
-  @JSImport("date-fns", "endOfYear")
-  @js.native
-  def endOfYear(date: Double): Date = js.native
-  @JSImport("date-fns", "endOfYear")
-  @js.native
-  def endOfYear(date: Date): Date = js.native
-  
-  @JSImport("date-fns", "endOfYesterday")
-  @js.native
-  def endOfYesterday(): Date = js.native
-  
-  @JSImport("date-fns", "format")
-  @js.native
-  def format(date: Double, format: String): String = js.native
-  @JSImport("date-fns", "format")
-  @js.native
-  def format(date: Double, format: String, options: FirstWeekContainsDate): String = js.native
-  @JSImport("date-fns", "format")
-  @js.native
-  def format(date: Date, format: String): String = js.native
-  @JSImport("date-fns", "format")
-  @js.native
-  def format(date: Date, format: String, options: FirstWeekContainsDate): String = js.native
-  
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Double, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Double, baseDate: Double, options: AddSuffix): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Double, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Double, baseDate: Date, options: AddSuffix): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Date, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Date, baseDate: Double, options: AddSuffix): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Date, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatDistance")
-  @js.native
-  def formatDistance(date: Date, baseDate: Date, options: AddSuffix): String = js.native
-  
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Double, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Double, baseDate: Double, options: RoundingMethod): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Double, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Double, baseDate: Date, options: RoundingMethod): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Date, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Date, baseDate: Double, options: RoundingMethod): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Date, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatDistanceStrict")
-  @js.native
-  def formatDistanceStrict(date: Date, baseDate: Date, options: RoundingMethod): String = js.native
-  
-  @JSImport("date-fns", "formatDistanceToNow")
-  @js.native
-  def formatDistanceToNow(date: Double): String = js.native
-  @JSImport("date-fns", "formatDistanceToNow")
-  @js.native
-  def formatDistanceToNow(date: Double, options: AddSuffix): String = js.native
-  @JSImport("date-fns", "formatDistanceToNow")
-  @js.native
-  def formatDistanceToNow(date: Date): String = js.native
-  @JSImport("date-fns", "formatDistanceToNow")
-  @js.native
-  def formatDistanceToNow(date: Date, options: AddSuffix): String = js.native
-  
-  @JSImport("date-fns", "formatDistanceToNowStrict")
-  @js.native
-  def formatDistanceToNowStrict(date: Double): String = js.native
-  @JSImport("date-fns", "formatDistanceToNowStrict")
-  @js.native
-  def formatDistanceToNowStrict(date: Double, options: RoundingMethod): String = js.native
-  @JSImport("date-fns", "formatDistanceToNowStrict")
-  @js.native
-  def formatDistanceToNowStrict(date: Date): String = js.native
-  @JSImport("date-fns", "formatDistanceToNowStrict")
-  @js.native
-  def formatDistanceToNowStrict(date: Date, options: RoundingMethod): String = js.native
-  
-  @JSImport("date-fns", "formatDuration")
-  @js.native
-  def formatDuration(duration: typings.dateFns.mod.Duration): String = js.native
-  @JSImport("date-fns", "formatDuration")
-  @js.native
-  def formatDuration(duration: typings.dateFns.mod.Duration, options: Delimiter): String = js.native
-  
-  @JSImport("date-fns", "formatISO")
-  @js.native
-  def formatISO(date: Double): String = js.native
-  @JSImport("date-fns", "formatISO")
-  @js.native
-  def formatISO(date: Double, options: Representation): String = js.native
-  @JSImport("date-fns", "formatISO")
-  @js.native
-  def formatISO(date: Date): String = js.native
-  @JSImport("date-fns", "formatISO")
-  @js.native
-  def formatISO(date: Date, options: Representation): String = js.native
-  
-  @JSImport("date-fns", "formatISO9075")
-  @js.native
-  def formatISO9075(date: Double): String = js.native
-  @JSImport("date-fns", "formatISO9075")
-  @js.native
-  def formatISO9075(date: Double, options: Representation): String = js.native
-  @JSImport("date-fns", "formatISO9075")
-  @js.native
-  def formatISO9075(date: Date): String = js.native
-  @JSImport("date-fns", "formatISO9075")
-  @js.native
-  def formatISO9075(date: Date, options: Representation): String = js.native
-  
-  @JSImport("date-fns", "formatISODuration")
-  @js.native
-  def formatISODuration(duration: typings.dateFns.mod.Duration): String = js.native
-  
-  @JSImport("date-fns", "formatRFC3339")
-  @js.native
-  def formatRFC3339(date: Double): String = js.native
-  @JSImport("date-fns", "formatRFC3339")
-  @js.native
-  def formatRFC3339(date: Double, options: FractionDigits): String = js.native
-  @JSImport("date-fns", "formatRFC3339")
-  @js.native
-  def formatRFC3339(date: Date): String = js.native
-  @JSImport("date-fns", "formatRFC3339")
-  @js.native
-  def formatRFC3339(date: Date, options: FractionDigits): String = js.native
-  
-  @JSImport("date-fns", "formatRFC7231")
-  @js.native
-  def formatRFC7231(date: Double): String = js.native
-  @JSImport("date-fns", "formatRFC7231")
-  @js.native
-  def formatRFC7231(date: Date): String = js.native
-  
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Double, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Double, baseDate: Double, options: typings.dateFns.anon.Locale): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Double, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Double, baseDate: Date, options: typings.dateFns.anon.Locale): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Date, baseDate: Double): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Date, baseDate: Double, options: typings.dateFns.anon.Locale): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Date, baseDate: Date): String = js.native
-  @JSImport("date-fns", "formatRelative")
-  @js.native
-  def formatRelative(date: Date, baseDate: Date, options: typings.dateFns.anon.Locale): String = js.native
-  
-  @JSImport("date-fns", "fromUnixTime")
-  @js.native
-  def fromUnixTime(unixTime: Double): Date = js.native
-  
-  @JSImport("date-fns", "getDate")
-  @js.native
-  def getDate(date: Double): Double = js.native
-  @JSImport("date-fns", "getDate")
-  @js.native
-  def getDate(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getDay")
-  @js.native
-  def getDay(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
-  @JSImport("date-fns", "getDay")
-  @js.native
-  def getDay(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
-  
-  @JSImport("date-fns", "getDayOfYear")
-  @js.native
-  def getDayOfYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getDayOfYear")
-  @js.native
-  def getDayOfYear(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getDaysInMonth")
-  @js.native
-  def getDaysInMonth(date: Double): Double = js.native
-  @JSImport("date-fns", "getDaysInMonth")
-  @js.native
-  def getDaysInMonth(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getDaysInYear")
-  @js.native
-  def getDaysInYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getDaysInYear")
-  @js.native
-  def getDaysInYear(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getDecade")
-  @js.native
-  def getDecade(date: Double): Double = js.native
-  @JSImport("date-fns", "getDecade")
-  @js.native
-  def getDecade(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getHours")
-  @js.native
-  def getHours(date: Double): Double = js.native
-  @JSImport("date-fns", "getHours")
-  @js.native
-  def getHours(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getISODay")
-  @js.native
-  def getISODay(date: Double): Double = js.native
-  @JSImport("date-fns", "getISODay")
-  @js.native
-  def getISODay(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getISOWeek")
-  @js.native
-  def getISOWeek(date: Double): Double = js.native
-  @JSImport("date-fns", "getISOWeek")
-  @js.native
-  def getISOWeek(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getISOWeekYear")
-  @js.native
-  def getISOWeekYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getISOWeekYear")
-  @js.native
-  def getISOWeekYear(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getISOWeeksInYear")
-  @js.native
-  def getISOWeeksInYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getISOWeeksInYear")
-  @js.native
-  def getISOWeeksInYear(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getMilliseconds")
-  @js.native
-  def getMilliseconds(date: Double): Double = js.native
-  @JSImport("date-fns", "getMilliseconds")
-  @js.native
-  def getMilliseconds(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getMinutes")
-  @js.native
-  def getMinutes(date: Double): Double = js.native
-  @JSImport("date-fns", "getMinutes")
-  @js.native
-  def getMinutes(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getMonth")
-  @js.native
-  def getMonth(date: Double): Double = js.native
-  @JSImport("date-fns", "getMonth")
-  @js.native
-  def getMonth(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getOverlappingDaysInIntervals")
-  @js.native
-  def getOverlappingDaysInIntervals(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Double = js.native
-  
-  @JSImport("date-fns", "getQuarter")
-  @js.native
-  def getQuarter(date: Double): Double = js.native
-  @JSImport("date-fns", "getQuarter")
-  @js.native
-  def getQuarter(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getSeconds")
-  @js.native
-  def getSeconds(date: Double): Double = js.native
-  @JSImport("date-fns", "getSeconds")
-  @js.native
-  def getSeconds(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getTime")
-  @js.native
-  def getTime(date: Double): Double = js.native
-  @JSImport("date-fns", "getTime")
-  @js.native
-  def getTime(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getUnixTime")
-  @js.native
-  def getUnixTime(date: Double): Double = js.native
-  @JSImport("date-fns", "getUnixTime")
-  @js.native
-  def getUnixTime(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "getWeek")
-  @js.native
-  def getWeek(date: Double): Double = js.native
-  @JSImport("date-fns", "getWeek")
-  @js.native
-  def getWeek(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-  @JSImport("date-fns", "getWeek")
-  @js.native
-  def getWeek(date: Date): Double = js.native
-  @JSImport("date-fns", "getWeek")
-  @js.native
-  def getWeek(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-  
-  @JSImport("date-fns", "getWeekOfMonth")
-  @js.native
-  def getWeekOfMonth(date: Double): Double = js.native
-  @JSImport("date-fns", "getWeekOfMonth")
-  @js.native
-  def getWeekOfMonth(date: Double, options: typings.dateFns.anon.Locale): Double = js.native
-  @JSImport("date-fns", "getWeekOfMonth")
-  @js.native
-  def getWeekOfMonth(date: Date): Double = js.native
-  @JSImport("date-fns", "getWeekOfMonth")
-  @js.native
-  def getWeekOfMonth(date: Date, options: typings.dateFns.anon.Locale): Double = js.native
-  
-  @JSImport("date-fns", "getWeekYear")
-  @js.native
-  def getWeekYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getWeekYear")
-  @js.native
-  def getWeekYear(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-  @JSImport("date-fns", "getWeekYear")
-  @js.native
-  def getWeekYear(date: Date): Double = js.native
-  @JSImport("date-fns", "getWeekYear")
-  @js.native
-  def getWeekYear(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-  
-  @JSImport("date-fns", "getWeeksInMonth")
-  @js.native
-  def getWeeksInMonth(date: Double): Double = js.native
-  @JSImport("date-fns", "getWeeksInMonth")
-  @js.native
-  def getWeeksInMonth(date: Double, options: typings.dateFns.anon.Locale): Double = js.native
-  @JSImport("date-fns", "getWeeksInMonth")
-  @js.native
-  def getWeeksInMonth(date: Date): Double = js.native
-  @JSImport("date-fns", "getWeeksInMonth")
-  @js.native
-  def getWeeksInMonth(date: Date, options: typings.dateFns.anon.Locale): Double = js.native
-  
-  @JSImport("date-fns", "getYear")
-  @js.native
-  def getYear(date: Double): Double = js.native
-  @JSImport("date-fns", "getYear")
-  @js.native
-  def getYear(date: Date): Double = js.native
-  
-  @JSImport("date-fns", "intervalToDuration")
-  @js.native
-  def intervalToDuration(interval: typings.dateFns.mod.Interval): typings.dateFns.mod.Duration = js.native
-  
-  @JSImport("date-fns", "isAfter")
-  @js.native
-  def isAfter(date: Double, dateToCompare: Double): Boolean = js.native
-  @JSImport("date-fns", "isAfter")
-  @js.native
-  def isAfter(date: Double, dateToCompare: Date): Boolean = js.native
-  @JSImport("date-fns", "isAfter")
-  @js.native
-  def isAfter(date: Date, dateToCompare: Double): Boolean = js.native
-  @JSImport("date-fns", "isAfter")
-  @js.native
-  def isAfter(date: Date, dateToCompare: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isBefore")
-  @js.native
-  def isBefore(date: Double, dateToCompare: Double): Boolean = js.native
-  @JSImport("date-fns", "isBefore")
-  @js.native
-  def isBefore(date: Double, dateToCompare: Date): Boolean = js.native
-  @JSImport("date-fns", "isBefore")
-  @js.native
-  def isBefore(date: Date, dateToCompare: Double): Boolean = js.native
-  @JSImport("date-fns", "isBefore")
-  @js.native
-  def isBefore(date: Date, dateToCompare: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isDate")
-  @js.native
-  def isDate(value: js.Any): Boolean = js.native
-  
-  @JSImport("date-fns", "isEqual")
-  @js.native
-  def isEqual(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isEqual")
-  @js.native
-  def isEqual(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isEqual")
-  @js.native
-  def isEqual(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isEqual")
-  @js.native
-  def isEqual(dateLeft: Date, dateRight: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isExists")
-  @js.native
-  def isExists(year: Double, month: Double, day: Double): Boolean = js.native
-  
-  @JSImport("date-fns", "isFirstDayOfMonth")
-  @js.native
-  def isFirstDayOfMonth(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isFirstDayOfMonth")
-  @js.native
-  def isFirstDayOfMonth(date: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isFriday")
-  @js.native
-  def isFriday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isFriday")
-  @js.native
-  def isFriday(date: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isFuture")
-  @js.native
-  def isFuture(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isFuture")
-  @js.native
-  def isFuture(date: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isLastDayOfMonth")
-  @js.native
-  def isLastDayOfMonth(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isLastDayOfMonth")
-  @js.native
-  def isLastDayOfMonth(date: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isLeapYear")
-  @js.native
-  def isLeapYear(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isLeapYear")
-  @js.native
-  def isLeapYear(date: Date): Boolean = js.native
-  
-  @JSImport("date-fns", "isMatch")
-  @js.native
-  def isMatch(dateString: String, formatString: String): Boolean = js.native
-  @JSImport("date-fns", "isMatch")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntervalsOverlapping")(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def closestIndexTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("closestIndexTo")(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def closestIndexTo(dateToCompare: Date, datesArray: js.Array[Date | Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("closestIndexTo")(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def closestTo(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("closestTo")(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def closestTo(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("closestTo")(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
+  @scala.inline
+  def compareAsc(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareAsc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareAsc(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareAsc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareAsc(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareAsc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareAsc(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareAsc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def compareDesc(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDesc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareDesc(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDesc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareDesc(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDesc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareDesc(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDesc")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInBusinessDays(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInBusinessDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInBusinessDays(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInBusinessDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInBusinessDays(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInBusinessDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInBusinessDays(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInBusinessDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarDays(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarDays(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarDays(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarDays(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarISOWeekYears(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeekYears(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeekYears(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeekYears(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarISOWeeks(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeeks(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeeks(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarISOWeeks(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarISOWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarMonths(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarMonths(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarMonths(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarMonths(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarQuarters(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarQuarters(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarQuarters(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarQuarters(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarWeeks(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInCalendarYears(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarYears(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarYears(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInCalendarYears(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInCalendarYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInDays(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInDays(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInDays(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInDays(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInDays")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInHours(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInHours")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInHours(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInHours")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInHours(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInHours")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInHours(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInHours")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInISOWeekYears(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInISOWeekYears(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInISOWeekYears(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInISOWeekYears(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInISOWeekYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInMilliseconds(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMilliseconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMilliseconds(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMilliseconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMilliseconds(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMilliseconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMilliseconds(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMilliseconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInMinutes(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMinutes")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMinutes(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMinutes")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMinutes(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMinutes")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMinutes(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMinutes")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInMonths(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMonths(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMonths(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInMonths(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInMonths")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInQuarters(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInQuarters(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInQuarters(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInQuarters(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInQuarters")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInSeconds(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInSeconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInSeconds(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInSeconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInSeconds(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInSeconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInSeconds(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInSeconds")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInWeeks(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInWeeks(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInWeeks(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInWeeks(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInWeeks")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def differenceInYears(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInYears(dateLeft: Double, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInYears(dateLeft: Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def differenceInYears(dateLeft: Date, dateRight: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("differenceInYears")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def eachDayOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachDayOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def eachDayOfInterval(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("eachDayOfInterval")(interval.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachHourOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachHourOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def eachHourOfInterval(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("eachHourOfInterval")(interval.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachMonthOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachMonthOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachQuarterOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachQuarterOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachWeekOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def eachWeekOfInterval(interval: typings.dateFns.mod.Interval, options: typings.dateFns.anon.Locale): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekOfInterval")(interval.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachWeekendOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekendOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachWeekendOfMonth(date: Double): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekendOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def eachWeekendOfMonth(date: Date): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekendOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachWeekendOfYear(date: Double): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekendOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def eachWeekendOfYear(date: Date): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachWeekendOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def eachYearOfInterval(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("eachYearOfInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def endOfDay(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfDay(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfDecade(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfDecade(date: Double, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOfDecade")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def endOfDecade(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfDecade(date: Date, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOfDecade")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfHour(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfHour(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfISOWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfISOWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfISOWeekYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfISOWeekYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfMinute(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfMinute(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfMonth(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfQuarter(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfQuarter(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfSecond(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfSecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfToday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfToday")().asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfTomorrow(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfTomorrow")().asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def endOfWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def endOfYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def endOfYesterday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("endOfYesterday")().asInstanceOf[Date]
+  
+  @scala.inline
+  def format(date: Double, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(date: Double, format: String, options: FirstWeekContainsDate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(date: Date, format: String, options: FirstWeekContainsDate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatDistance(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Double, baseDate: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Double, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Double, baseDate: Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Date, baseDate: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Date, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistance(date: Date, baseDate: Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistance")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatDistanceStrict(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Double, baseDate: Double, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Double, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Double, baseDate: Date, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Date, baseDate: Double, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Date, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceStrict(date: Date, baseDate: Date, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceStrict")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatDistanceToNow(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNow")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNow(date: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNow")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNow(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNow")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNow(date: Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNow")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatDistanceToNowStrict(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNowStrict")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNowStrict(date: Double, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNowStrict")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNowStrict(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNowStrict")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatDistanceToNowStrict(date: Date, options: RoundingMethod): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDistanceToNowStrict")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatDuration(duration: typings.dateFns.mod.Duration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDuration")(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatDuration(duration: typings.dateFns.mod.Duration, options: Delimiter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDuration")(duration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatISO(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISO")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatISO(date: Double, options: Representation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatISO")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatISO(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISO")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatISO(date: Date, options: Representation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatISO")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatISO9075(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISO9075")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatISO9075(date: Double, options: Representation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatISO9075")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatISO9075(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISO9075")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatISO9075(date: Date, options: Representation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatISO9075")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatISODuration(duration: typings.dateFns.mod.Duration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISODuration")(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def formatRFC3339(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC3339")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatRFC3339(date: Double, options: FractionDigits): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC3339")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRFC3339(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC3339")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatRFC3339(date: Date, options: FractionDigits): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC3339")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def formatRFC7231(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC7231")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatRFC7231(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatRFC7231")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def formatRelative(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Double, baseDate: Double, options: typings.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Double, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Double, baseDate: Date, options: typings.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Date, baseDate: Double, options: typings.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Date, baseDate: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatRelative(date: Date, baseDate: Date, options: typings.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRelative")(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def fromUnixTime(unixTime: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnixTime")(unixTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  @scala.inline
+  def getDate(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDate(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getDay(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].applyDynamic("getDay")(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+  @scala.inline
+  def getDay(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].applyDynamic("getDay")(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+  
+  @scala.inline
+  def getDayOfYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDayOfYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getDaysInMonth(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDaysInMonth(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getDaysInYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDaysInYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getDecade(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDecade(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getHours(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHours")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getHours(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHours")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getISODay(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISODay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getISODay(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISODay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getISOWeek(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getISOWeek(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getISOWeekYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getISOWeekYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getISOWeeksInYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeeksInYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getISOWeeksInYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getISOWeeksInYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getMilliseconds(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMilliseconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getMilliseconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMilliseconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getMinutes(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinutes")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getMinutes(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinutes")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getMonth(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getMonth(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getOverlappingDaysInIntervals(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverlappingDaysInIntervals")(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getQuarter(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getQuarter(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getSeconds(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getSeconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getTime(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTime")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getTime(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTime")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getUnixTime(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnixTime")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getUnixTime(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnixTime")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getWeek(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeek(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getWeek(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeek(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getWeekOfMonth(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeekOfMonth(date: Double, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekOfMonth")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getWeekOfMonth(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeekOfMonth(date: Date, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekOfMonth")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getWeekYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeekYear(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekYear")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getWeekYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeekYear(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekYear")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getWeeksInMonth(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeeksInMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeeksInMonth(date: Double, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeeksInMonth")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getWeeksInMonth(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeeksInMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWeeksInMonth(date: Date, options: typings.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeeksInMonth")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getYear(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getYear(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYear")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def intervalToDuration(interval: typings.dateFns.mod.Interval): typings.dateFns.mod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("intervalToDuration")(interval.asInstanceOf[js.Any]).asInstanceOf[typings.dateFns.mod.Duration]
+  
+  @scala.inline
+  def isAfter(date: Double, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfter")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isAfter(date: Double, dateToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfter")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isAfter(date: Date, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfter")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isAfter(date: Date, dateToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfter")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBefore(date: Double, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBefore(date: Double, dateToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBefore(date: Date, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBefore(date: Date, dateToCompare: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEqual(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isEqual(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isEqual(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isEqual(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isExists(year: Double, month: Double, day: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isExists")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFirstDayOfMonth(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFirstDayOfMonth(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFriday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFriday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFriday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFriday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFuture(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFuture")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFuture(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFuture")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLastDayOfMonth(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLastDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isLastDayOfMonth(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLastDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLeapYear(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isLeapYear(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMatch(dateString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def isMatch(
     dateString: String,
     formatString: String,
     options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isMonday")
-  @js.native
-  def isMonday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isMonday")
-  @js.native
-  def isMonday(date: Date): Boolean = js.native
+  @scala.inline
+  def isMonday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMonday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMonday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMonday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isPast")
-  @js.native
-  def isPast(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isPast")
-  @js.native
-  def isPast(date: Date): Boolean = js.native
+  @scala.inline
+  def isPast(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPast")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isPast(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPast")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameDay")
-  @js.native
-  def isSameDay(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameDay")
-  @js.native
-  def isSameDay(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameDay")
-  @js.native
-  def isSameDay(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameDay")
-  @js.native
-  def isSameDay(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameDay(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameDay(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameDay(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameDay(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameHour")
-  @js.native
-  def isSameHour(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameHour")
-  @js.native
-  def isSameHour(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameHour")
-  @js.native
-  def isSameHour(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameHour")
-  @js.native
-  def isSameHour(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameHour(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameHour")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameHour(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameHour")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameHour(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameHour")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameHour(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameHour")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameISOWeek")
-  @js.native
-  def isSameISOWeek(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeek")
-  @js.native
-  def isSameISOWeek(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeek")
-  @js.native
-  def isSameISOWeek(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeek")
-  @js.native
-  def isSameISOWeek(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameISOWeek(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeek(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeek(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeek(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameISOWeekYear")
-  @js.native
-  def isSameISOWeekYear(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeekYear")
-  @js.native
-  def isSameISOWeekYear(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeekYear")
-  @js.native
-  def isSameISOWeekYear(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameISOWeekYear")
-  @js.native
-  def isSameISOWeekYear(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameISOWeekYear(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeekYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeekYear(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeekYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeekYear(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeekYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameISOWeekYear(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameISOWeekYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameMinute")
-  @js.native
-  def isSameMinute(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameMinute")
-  @js.native
-  def isSameMinute(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameMinute")
-  @js.native
-  def isSameMinute(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameMinute")
-  @js.native
-  def isSameMinute(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameMinute(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMinute")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMinute(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMinute")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMinute(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMinute")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMinute(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMinute")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameMonth")
-  @js.native
-  def isSameMonth(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameMonth")
-  @js.native
-  def isSameMonth(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameMonth")
-  @js.native
-  def isSameMonth(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameMonth")
-  @js.native
-  def isSameMonth(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameMonth(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMonth(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMonth(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameMonth(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameQuarter")
-  @js.native
-  def isSameQuarter(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameQuarter")
-  @js.native
-  def isSameQuarter(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameQuarter")
-  @js.native
-  def isSameQuarter(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameQuarter")
-  @js.native
-  def isSameQuarter(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameQuarter(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameQuarter")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameQuarter(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameQuarter")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameQuarter(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameQuarter")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameQuarter(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameQuarter")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameSecond")
-  @js.native
-  def isSameSecond(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameSecond")
-  @js.native
-  def isSameSecond(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameSecond")
-  @js.native
-  def isSameSecond(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameSecond")
-  @js.native
-  def isSameSecond(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameSecond(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameSecond")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameSecond(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameSecond")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameSecond(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameSecond")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameSecond(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameSecond")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Date, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameWeek")
-  @js.native
-  def isSameWeek(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
+  @scala.inline
+  def isSameWeek(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameWeek(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSameYear")
-  @js.native
-  def isSameYear(dateLeft: Double, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameYear")
-  @js.native
-  def isSameYear(dateLeft: Double, dateRight: Date): Boolean = js.native
-  @JSImport("date-fns", "isSameYear")
-  @js.native
-  def isSameYear(dateLeft: Date, dateRight: Double): Boolean = js.native
-  @JSImport("date-fns", "isSameYear")
-  @js.native
-  def isSameYear(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @scala.inline
+  def isSameYear(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameYear(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameYear(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameYear(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSaturday")
-  @js.native
-  def isSaturday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isSaturday")
-  @js.native
-  def isSaturday(date: Date): Boolean = js.native
+  @scala.inline
+  def isSaturday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSaturday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSaturday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSaturday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isSunday")
-  @js.native
-  def isSunday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isSunday")
-  @js.native
-  def isSunday(date: Date): Boolean = js.native
+  @scala.inline
+  def isSunday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSunday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSunday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSunday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisHour")
-  @js.native
-  def isThisHour(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisHour")
-  @js.native
-  def isThisHour(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisHour(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisHour")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisHour(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisHour")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisISOWeek")
-  @js.native
-  def isThisISOWeek(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisISOWeek")
-  @js.native
-  def isThisISOWeek(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisISOWeek(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisISOWeek(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisMinute")
-  @js.native
-  def isThisMinute(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisMinute")
-  @js.native
-  def isThisMinute(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisMinute(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisMinute(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisMonth")
-  @js.native
-  def isThisMonth(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisMonth")
-  @js.native
-  def isThisMonth(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisMonth(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisMonth(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisQuarter")
-  @js.native
-  def isThisQuarter(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisQuarter")
-  @js.native
-  def isThisQuarter(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisQuarter(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisQuarter(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisSecond")
-  @js.native
-  def isThisSecond(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisSecond")
-  @js.native
-  def isThisSecond(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisSecond(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisSecond(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisWeek")
-  @js.native
-  def isThisWeek(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisWeek")
-  @js.native
-  def isThisWeek(date: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
-  @JSImport("date-fns", "isThisWeek")
-  @js.native
-  def isThisWeek(date: Date): Boolean = js.native
-  @JSImport("date-fns", "isThisWeek")
-  @js.native
-  def isThisWeek(date: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
+  @scala.inline
+  def isThisWeek(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisWeek(date: Double, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThisWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisWeek(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisWeek(date: Date, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThisWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThisYear")
-  @js.native
-  def isThisYear(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThisYear")
-  @js.native
-  def isThisYear(date: Date): Boolean = js.native
+  @scala.inline
+  def isThisYear(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisYear")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThisYear(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisYear")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isThursday")
-  @js.native
-  def isThursday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isThursday")
-  @js.native
-  def isThursday(date: Date): Boolean = js.native
+  @scala.inline
+  def isThursday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThursday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isThursday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThursday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isToday")
-  @js.native
-  def isToday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isToday")
-  @js.native
-  def isToday(date: Date): Boolean = js.native
+  @scala.inline
+  def isToday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isToday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isTomorrow")
-  @js.native
-  def isTomorrow(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isTomorrow")
-  @js.native
-  def isTomorrow(date: Date): Boolean = js.native
+  @scala.inline
+  def isTomorrow(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTomorrow")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isTomorrow(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTomorrow")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isTuesday")
-  @js.native
-  def isTuesday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isTuesday")
-  @js.native
-  def isTuesday(date: Date): Boolean = js.native
+  @scala.inline
+  def isTuesday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTuesday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isTuesday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTuesday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isValid")
-  @js.native
-  def isValid(date: js.Any): Boolean = js.native
+  @scala.inline
+  def isValid(date: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isWednesday")
-  @js.native
-  def isWednesday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isWednesday")
-  @js.native
-  def isWednesday(date: Date): Boolean = js.native
+  @scala.inline
+  def isWednesday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWednesday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isWednesday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWednesday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isWeekend")
-  @js.native
-  def isWeekend(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isWeekend")
-  @js.native
-  def isWeekend(date: Date): Boolean = js.native
+  @scala.inline
+  def isWeekend(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekend")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isWeekend(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekend")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isWithinInterval")
-  @js.native
-  def isWithinInterval(date: Double, interval: typings.dateFns.mod.Interval): Boolean = js.native
-  @JSImport("date-fns", "isWithinInterval")
-  @js.native
-  def isWithinInterval(date: Date, interval: typings.dateFns.mod.Interval): Boolean = js.native
+  @scala.inline
+  def isWithinInterval(date: Double, interval: typings.dateFns.mod.Interval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWithinInterval")(date.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isWithinInterval(date: Date, interval: typings.dateFns.mod.Interval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWithinInterval")(date.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "isYesterday")
-  @js.native
-  def isYesterday(date: Double): Boolean = js.native
-  @JSImport("date-fns", "isYesterday")
-  @js.native
-  def isYesterday(date: Date): Boolean = js.native
+  @scala.inline
+  def isYesterday(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isYesterday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isYesterday(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isYesterday")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-fns", "lastDayOfDecade")
-  @js.native
-  def lastDayOfDecade(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfDecade")
-  @js.native
-  def lastDayOfDecade(date: Date): Date = js.native
+  @scala.inline
+  def lastDayOfDecade(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfDecade(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfISOWeek")
-  @js.native
-  def lastDayOfISOWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfISOWeek")
-  @js.native
-  def lastDayOfISOWeek(date: Date): Date = js.native
+  @scala.inline
+  def lastDayOfISOWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfISOWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfISOWeekYear")
-  @js.native
-  def lastDayOfISOWeekYear(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfISOWeekYear")
-  @js.native
-  def lastDayOfISOWeekYear(date: Date): Date = js.native
+  @scala.inline
+  def lastDayOfISOWeekYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfISOWeekYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfMonth")
-  @js.native
-  def lastDayOfMonth(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfMonth")
-  @js.native
-  def lastDayOfMonth(date: Date): Date = js.native
+  @scala.inline
+  def lastDayOfMonth(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfQuarter")
-  @js.native
-  def lastDayOfQuarter(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfQuarter")
-  @js.native
-  def lastDayOfQuarter(date: Double, options: AdditionalDigits): Date = js.native
-  @JSImport("date-fns", "lastDayOfQuarter")
-  @js.native
-  def lastDayOfQuarter(date: Date): Date = js.native
-  @JSImport("date-fns", "lastDayOfQuarter")
-  @js.native
-  def lastDayOfQuarter(date: Date, options: AdditionalDigits): Date = js.native
+  @scala.inline
+  def lastDayOfQuarter(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfQuarter(date: Double, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfQuarter")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfQuarter(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfQuarter(date: Date, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfQuarter")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfWeek")
-  @js.native
-  def lastDayOfWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfWeek")
-  @js.native
-  def lastDayOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = js.native
-  @JSImport("date-fns", "lastDayOfWeek")
-  @js.native
-  def lastDayOfWeek(date: Date): Date = js.native
-  @JSImport("date-fns", "lastDayOfWeek")
-  @js.native
-  def lastDayOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = js.native
+  @scala.inline
+  def lastDayOfWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lastDayOfYear")
-  @js.native
-  def lastDayOfYear(date: Double): Date = js.native
-  @JSImport("date-fns", "lastDayOfYear")
-  @js.native
-  def lastDayOfYear(date: Date): Date = js.native
+  @scala.inline
+  def lastDayOfYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def lastDayOfYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "lightFormat")
-  @js.native
-  def lightFormat(date: Double, format: String): String = js.native
-  @JSImport("date-fns", "lightFormat")
-  @js.native
-  def lightFormat(date: Date, format: String): String = js.native
+  @scala.inline
+  def lightFormat(date: Double, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lightFormat")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def lightFormat(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lightFormat")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("date-fns", "max")
-  @js.native
-  def max(datesArray: js.Array[Date | Double]): Date = js.native
+  @scala.inline
+  def max(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
   
   @JSImport("date-fns", "maxTime")
   @js.native
   val maxTime: Double = js.native
   
-  @JSImport("date-fns", "min")
-  @js.native
-  def min(datesArray: js.Array[Date | Double]): Date = js.native
+  @scala.inline
+  def min(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
   
   @JSImport("date-fns", "minTime")
   @js.native
   val minTime: Double = js.native
   
-  @JSImport("date-fns", "parse")
-  @js.native
-  def parse(dateString: String, formatString: String, referenceDate: Double): Date = js.native
-  @JSImport("date-fns", "parse")
-  @js.native
+  @scala.inline
+  def parse(dateString: String, formatString: String, referenceDate: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], referenceDate.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
   def parse(
     dateString: String,
     formatString: String,
     referenceDate: Double,
     options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
-  ): Date = js.native
-  @JSImport("date-fns", "parse")
-  @js.native
-  def parse(dateString: String, formatString: String, referenceDate: Date): Date = js.native
-  @JSImport("date-fns", "parse")
-  @js.native
+  ): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], referenceDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def parse(dateString: String, formatString: String, referenceDate: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], referenceDate.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
   def parse(
     dateString: String,
     formatString: String,
     referenceDate: Date,
     options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
-  ): Date = js.native
+  ): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], referenceDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "parseISO")
-  @js.native
-  def parseISO(argument: String): Date = js.native
-  @JSImport("date-fns", "parseISO")
-  @js.native
-  def parseISO(argument: String, options: AdditionalDigits): Date = js.native
+  @scala.inline
+  def parseISO(argument: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseISO")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def parseISO(argument: String, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseISO")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "parseJSON")
-  @js.native
-  def parseJSON(argument: String): Date = js.native
-  @JSImport("date-fns", "parseJSON")
-  @js.native
-  def parseJSON(argument: Double): Date = js.native
-  @JSImport("date-fns", "parseJSON")
-  @js.native
-  def parseJSON(argument: Date): Date = js.native
+  @scala.inline
+  def parseJSON(argument: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def parseJSON(argument: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def parseJSON(argument: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "roundToNearestMinutes")
-  @js.native
-  def roundToNearestMinutes(date: Double): Date = js.native
-  @JSImport("date-fns", "roundToNearestMinutes")
-  @js.native
-  def roundToNearestMinutes(date: Double, options: NearestTo): Date = js.native
-  @JSImport("date-fns", "roundToNearestMinutes")
-  @js.native
-  def roundToNearestMinutes(date: Date): Date = js.native
-  @JSImport("date-fns", "roundToNearestMinutes")
-  @js.native
-  def roundToNearestMinutes(date: Date, options: NearestTo): Date = js.native
+  @scala.inline
+  def roundToNearestMinutes(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("roundToNearestMinutes")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def roundToNearestMinutes(date: Double, options: NearestTo): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("roundToNearestMinutes")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def roundToNearestMinutes(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("roundToNearestMinutes")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def roundToNearestMinutes(date: Date, options: NearestTo): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("roundToNearestMinutes")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "set")
-  @js.native
-  def set(date: Double, values: Hours): Date = js.native
-  @JSImport("date-fns", "set")
-  @js.native
-  def set(date: Date, values: Hours): Date = js.native
+  @scala.inline
+  def set(date: Double, values: Hours): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def set(date: Date, values: Hours): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setDate")
-  @js.native
-  def setDate(date: Double, dayOfMonth: Double): Date = js.native
-  @JSImport("date-fns", "setDate")
-  @js.native
-  def setDate(date: Date, dayOfMonth: Double): Date = js.native
+  @scala.inline
+  def setDate(date: Double, dayOfMonth: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDate")(date.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setDate(date: Date, dayOfMonth: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDate")(date.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setDay")
-  @js.native
-  def setDay(date: Double, day: Double): Date = js.native
-  @JSImport("date-fns", "setDay")
-  @js.native
-  def setDay(date: Double, day: Double, options: typings.dateFns.anon.Locale): Date = js.native
-  @JSImport("date-fns", "setDay")
-  @js.native
-  def setDay(date: Date, day: Double): Date = js.native
-  @JSImport("date-fns", "setDay")
-  @js.native
-  def setDay(date: Date, day: Double, options: typings.dateFns.anon.Locale): Date = js.native
+  @scala.inline
+  def setDay(date: Double, day: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setDay(date: Double, day: Double, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setDay(date: Date, day: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setDay(date: Date, day: Double, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setDayOfYear")
-  @js.native
-  def setDayOfYear(date: Double, dayOfYear: Double): Date = js.native
-  @JSImport("date-fns", "setDayOfYear")
-  @js.native
-  def setDayOfYear(date: Date, dayOfYear: Double): Date = js.native
+  @scala.inline
+  def setDayOfYear(date: Double, dayOfYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDayOfYear")(date.asInstanceOf[js.Any], dayOfYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setDayOfYear(date: Date, dayOfYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setDayOfYear")(date.asInstanceOf[js.Any], dayOfYear.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setHours")
-  @js.native
-  def setHours(date: Double, hours: Double): Date = js.native
-  @JSImport("date-fns", "setHours")
-  @js.native
-  def setHours(date: Date, hours: Double): Date = js.native
+  @scala.inline
+  def setHours(date: Double, hours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setHours")(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setHours(date: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setHours")(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setISODay")
-  @js.native
-  def setISODay(date: Double, day: Double): Date = js.native
-  @JSImport("date-fns", "setISODay")
-  @js.native
-  def setISODay(date: Date, day: Double): Date = js.native
+  @scala.inline
+  def setISODay(date: Double, day: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISODay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setISODay(date: Date, day: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISODay")(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setISOWeek")
-  @js.native
-  def setISOWeek(date: Double, isoWeek: Double): Date = js.native
-  @JSImport("date-fns", "setISOWeek")
-  @js.native
-  def setISOWeek(date: Date, isoWeek: Double): Date = js.native
+  @scala.inline
+  def setISOWeek(date: Double, isoWeek: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISOWeek")(date.asInstanceOf[js.Any], isoWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setISOWeek(date: Date, isoWeek: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISOWeek")(date.asInstanceOf[js.Any], isoWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setISOWeekYear")
-  @js.native
-  def setISOWeekYear(date: Double, isoWeekYear: Double): Date = js.native
-  @JSImport("date-fns", "setISOWeekYear")
-  @js.native
-  def setISOWeekYear(date: Date, isoWeekYear: Double): Date = js.native
+  @scala.inline
+  def setISOWeekYear(date: Double, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISOWeekYear")(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setISOWeekYear(date: Date, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setISOWeekYear")(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setMilliseconds")
-  @js.native
-  def setMilliseconds(date: Double, milliseconds: Double): Date = js.native
-  @JSImport("date-fns", "setMilliseconds")
-  @js.native
-  def setMilliseconds(date: Date, milliseconds: Double): Date = js.native
+  @scala.inline
+  def setMilliseconds(date: Double, milliseconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMilliseconds")(date.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setMilliseconds(date: Date, milliseconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMilliseconds")(date.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setMinutes")
-  @js.native
-  def setMinutes(date: Double, minutes: Double): Date = js.native
-  @JSImport("date-fns", "setMinutes")
-  @js.native
-  def setMinutes(date: Date, minutes: Double): Date = js.native
+  @scala.inline
+  def setMinutes(date: Double, minutes: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinutes")(date.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setMinutes(date: Date, minutes: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinutes")(date.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setMonth")
-  @js.native
-  def setMonth(date: Double, month: Double): Date = js.native
-  @JSImport("date-fns", "setMonth")
-  @js.native
-  def setMonth(date: Date, month: Double): Date = js.native
+  @scala.inline
+  def setMonth(date: Double, month: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMonth")(date.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setMonth(date: Date, month: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMonth")(date.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setQuarter")
-  @js.native
-  def setQuarter(date: Double, quarter: Double): Date = js.native
-  @JSImport("date-fns", "setQuarter")
-  @js.native
-  def setQuarter(date: Date, quarter: Double): Date = js.native
+  @scala.inline
+  def setQuarter(date: Double, quarter: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setQuarter")(date.asInstanceOf[js.Any], quarter.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setQuarter(date: Date, quarter: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setQuarter")(date.asInstanceOf[js.Any], quarter.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setSeconds")
-  @js.native
-  def setSeconds(date: Double, seconds: Double): Date = js.native
-  @JSImport("date-fns", "setSeconds")
-  @js.native
-  def setSeconds(date: Date, seconds: Double): Date = js.native
+  @scala.inline
+  def setSeconds(date: Double, seconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setSeconds")(date.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setSeconds(date: Date, seconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setSeconds")(date.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setWeek")
-  @js.native
-  def setWeek(date: Double, week: Double): Date = js.native
-  @JSImport("date-fns", "setWeek")
-  @js.native
-  def setWeek(date: Double, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
-  @JSImport("date-fns", "setWeek")
-  @js.native
-  def setWeek(date: Date, week: Double): Date = js.native
-  @JSImport("date-fns", "setWeek")
-  @js.native
-  def setWeek(date: Date, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+  @scala.inline
+  def setWeek(date: Double, week: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeek")(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeek(date: Double, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeek")(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeek(date: Date, week: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeek")(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeek(date: Date, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeek")(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setWeekYear")
-  @js.native
-  def setWeekYear(date: Double, weekYear: Double): Date = js.native
-  @JSImport("date-fns", "setWeekYear")
-  @js.native
-  def setWeekYear(date: Double, weekYear: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
-  @JSImport("date-fns", "setWeekYear")
-  @js.native
-  def setWeekYear(date: Date, weekYear: Double): Date = js.native
-  @JSImport("date-fns", "setWeekYear")
-  @js.native
-  def setWeekYear(date: Date, weekYear: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+  @scala.inline
+  def setWeekYear(date: Double, weekYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeekYear")(date.asInstanceOf[js.Any], weekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeekYear(date: Double, weekYear: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeekYear")(date.asInstanceOf[js.Any], weekYear.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeekYear(date: Date, weekYear: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeekYear")(date.asInstanceOf[js.Any], weekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setWeekYear(date: Date, weekYear: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setWeekYear")(date.asInstanceOf[js.Any], weekYear.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "setYear")
-  @js.native
-  def setYear(date: Double, year: Double): Date = js.native
-  @JSImport("date-fns", "setYear")
-  @js.native
-  def setYear(date: Date, year: Double): Date = js.native
+  @scala.inline
+  def setYear(date: Double, year: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setYear")(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def setYear(date: Date, year: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setYear")(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfDay")
-  @js.native
-  def startOfDay(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfDay")
-  @js.native
-  def startOfDay(date: Date): Date = js.native
+  @scala.inline
+  def startOfDay(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfDay(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfDecade")
-  @js.native
-  def startOfDecade(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfDecade")
-  @js.native
-  def startOfDecade(date: Date): Date = js.native
+  @scala.inline
+  def startOfDecade(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfDecade(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfDecade")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfHour")
-  @js.native
-  def startOfHour(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfHour")
-  @js.native
-  def startOfHour(date: Date): Date = js.native
+  @scala.inline
+  def startOfHour(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfHour(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfISOWeek")
-  @js.native
-  def startOfISOWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfISOWeek")
-  @js.native
-  def startOfISOWeek(date: Date): Date = js.native
+  @scala.inline
+  def startOfISOWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfISOWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfISOWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfISOWeekYear")
-  @js.native
-  def startOfISOWeekYear(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfISOWeekYear")
-  @js.native
-  def startOfISOWeekYear(date: Date): Date = js.native
+  @scala.inline
+  def startOfISOWeekYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfISOWeekYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfISOWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfMinute")
-  @js.native
-  def startOfMinute(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfMinute")
-  @js.native
-  def startOfMinute(date: Date): Date = js.native
+  @scala.inline
+  def startOfMinute(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfMinute(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfMonth")
-  @js.native
-  def startOfMonth(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfMonth")
-  @js.native
-  def startOfMonth(date: Date): Date = js.native
+  @scala.inline
+  def startOfMonth(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfQuarter")
-  @js.native
-  def startOfQuarter(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfQuarter")
-  @js.native
-  def startOfQuarter(date: Date): Date = js.native
+  @scala.inline
+  def startOfQuarter(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfQuarter(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfQuarter")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfSecond")
-  @js.native
-  def startOfSecond(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfSecond")
-  @js.native
-  def startOfSecond(date: Date): Date = js.native
+  @scala.inline
+  def startOfSecond(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfSecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfToday")
-  @js.native
-  def startOfToday(): Date = js.native
+  @scala.inline
+  def startOfToday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfToday")().asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfTomorrow")
-  @js.native
-  def startOfTomorrow(): Date = js.native
+  @scala.inline
+  def startOfTomorrow(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfTomorrow")().asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfWeek")
-  @js.native
-  def startOfWeek(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfWeek")
-  @js.native
-  def startOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = js.native
-  @JSImport("date-fns", "startOfWeek")
-  @js.native
-  def startOfWeek(date: Date): Date = js.native
-  @JSImport("date-fns", "startOfWeek")
-  @js.native
-  def startOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = js.native
+  @scala.inline
+  def startOfWeek(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeek(date: Double, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeek(date: Date, options: typings.dateFns.anon.Locale): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeek")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfWeekYear")
-  @js.native
-  def startOfWeekYear(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfWeekYear")
-  @js.native
-  def startOfWeekYear(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
-  @JSImport("date-fns", "startOfWeekYear")
-  @js.native
-  def startOfWeekYear(date: Date): Date = js.native
-  @JSImport("date-fns", "startOfWeekYear")
-  @js.native
-  def startOfWeekYear(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
+  @scala.inline
+  def startOfWeekYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeekYear(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeekYear")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeekYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeekYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfWeekYear(date: Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOfWeekYear")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfYear")
-  @js.native
-  def startOfYear(date: Double): Date = js.native
-  @JSImport("date-fns", "startOfYear")
-  @js.native
-  def startOfYear(date: Date): Date = js.native
+  @scala.inline
+  def startOfYear(date: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def startOfYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("date-fns", "startOfYesterday")
-  @js.native
-  def startOfYesterday(): Date = js.native
+  @scala.inline
+  def startOfYesterday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("startOfYesterday")().asInstanceOf[Date]
   
-  @JSImport("date-fns", "sub")
-  @js.native
-  def sub(date: Double, duration: typings.dateFns.mod.Duration): Date = js.native
-  @JSImport("date-fns", "sub")
-  @js.native
-  def sub(date: Date, duration: typings.dateFns.mod.Duration): Date = js.native
+  @scala.inline
+  def sub(date: Double, duration: typings.dateFns.mod.Duration): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def sub(date: Date, duration: typings.dateFns.mod.Duration): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subBusinessDays")
-  @js.native
-  def subBusinessDays(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subBusinessDays")
-  @js.native
-  def subBusinessDays(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subBusinessDays(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subBusinessDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subBusinessDays(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subBusinessDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subDays")
-  @js.native
-  def subDays(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subDays")
-  @js.native
-  def subDays(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subDays(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subDays(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subDays")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subHours")
-  @js.native
-  def subHours(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subHours")
-  @js.native
-  def subHours(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subHours(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subHours")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subHours(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subHours")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subISOWeekYears")
-  @js.native
-  def subISOWeekYears(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subISOWeekYears")
-  @js.native
-  def subISOWeekYears(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subISOWeekYears(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subISOWeekYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subISOWeekYears(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subISOWeekYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subMilliseconds")
-  @js.native
-  def subMilliseconds(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subMilliseconds")
-  @js.native
-  def subMilliseconds(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subMilliseconds(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMilliseconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subMilliseconds(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMilliseconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subMinutes")
-  @js.native
-  def subMinutes(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subMinutes")
-  @js.native
-  def subMinutes(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subMinutes(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMinutes")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subMinutes(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMinutes")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subMonths")
-  @js.native
-  def subMonths(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subMonths")
-  @js.native
-  def subMonths(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subMonths(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMonths")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subMonths(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subMonths")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subQuarters")
-  @js.native
-  def subQuarters(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subQuarters")
-  @js.native
-  def subQuarters(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subQuarters(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subQuarters")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subQuarters(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subQuarters")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subSeconds")
-  @js.native
-  def subSeconds(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subSeconds")
-  @js.native
-  def subSeconds(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subSeconds(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subSeconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subSeconds(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subSeconds")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subWeeks")
-  @js.native
-  def subWeeks(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subWeeks")
-  @js.native
-  def subWeeks(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subWeeks(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subWeeks")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subWeeks(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subWeeks")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "subYears")
-  @js.native
-  def subYears(date: Double, amount: Double): Date = js.native
-  @JSImport("date-fns", "subYears")
-  @js.native
-  def subYears(date: Date, amount: Double): Date = js.native
+  @scala.inline
+  def subYears(date: Double, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def subYears(date: Date, amount: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subYears")(date.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-fns", "toDate")
-  @js.native
-  def toDate(argument: Double): Date = js.native
-  @JSImport("date-fns", "toDate")
-  @js.native
-  def toDate(argument: Date): Date = js.native
+  @scala.inline
+  def toDate(argument: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def toDate(argument: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
   
   type Duration = DurationAliased
   

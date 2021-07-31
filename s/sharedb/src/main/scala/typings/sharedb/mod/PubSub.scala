@@ -3,7 +3,6 @@ package typings.sharedb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", "PubSub")
@@ -49,8 +48,11 @@ abstract class PubSub protected () extends StObject {
 }
 object PubSub {
   
-  /* static member */
-  @JSImport("sharedb", "PubSub.shallowCopy")
+  @JSImport("sharedb", "PubSub")
   @js.native
-  def shallowCopy(obj: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def shallowCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

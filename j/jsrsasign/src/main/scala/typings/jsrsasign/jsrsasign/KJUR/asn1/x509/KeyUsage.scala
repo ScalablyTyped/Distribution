@@ -5,19 +5,19 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * KeyUsage ASN.1 structure class
   * @param params associative array of parameters (ex. {'bin': '11', 'critical': true})
   */
-@js.native
-trait KeyUsage extends Extension {
+trait KeyUsage
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
   
-  def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit = js.native
+  def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit
 }
 object KeyUsage {
   

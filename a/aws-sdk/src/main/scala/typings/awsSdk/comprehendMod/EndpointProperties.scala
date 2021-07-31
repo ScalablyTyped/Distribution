@@ -2,51 +2,49 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointProperties extends StObject {
   
   /**
     * The creation date and time of the endpoint.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The number of inference units currently used by the model using this endpoint.
     */
-  var CurrentInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.native
+  var CurrentInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined
   
   /**
     * The desired number of inference units to be used by the model using this endpoint. Each inference unit represents of a throughput of 100 characters per second.
     */
-  var DesiredInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.native
+  var DesiredInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined
   
   /**
     * The Amazon Resource Number (ARN) of the endpoint.
     */
-  var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.native
+  var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.undefined
   
   /**
     * The date and time that the endpoint was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Specifies a reason for failure in cases of Failed status.
     */
-  var Message: js.UndefOr[AnyLengthString] = js.native
+  var Message: js.UndefOr[AnyLengthString] = js.undefined
   
   /**
     * The Amazon Resource Number (ARN) of the model to which the endpoint is attached.
     */
-  var ModelArn: js.UndefOr[ComprehendModelArn] = js.native
+  var ModelArn: js.UndefOr[ComprehendModelArn] = js.undefined
   
   /**
     * Specifies the status of the endpoint. Because the endpoint updates and creation are asynchronous, so customers will need to wait for the endpoint to be Ready status before making inference requests.
     */
-  var Status: js.UndefOr[EndpointStatus] = js.native
+  var Status: js.UndefOr[EndpointStatus] = js.undefined
 }
 object EndpointProperties {
   

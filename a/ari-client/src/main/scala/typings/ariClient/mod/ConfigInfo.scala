@@ -2,41 +2,39 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigInfo extends StObject {
   
   /**
     * Default language for media playback.
     */
-  var default_language: String = js.native
+  var default_language: String
   
   /**
     * Maximum number of simultaneous channels.
     */
-  var max_channels: js.UndefOr[Double] = js.native
+  var max_channels: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum load avg on system.
     */
-  var max_load: js.UndefOr[Double] = js.native
+  var max_load: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of open file handles (files, sockets).
     */
-  var max_open_files: js.UndefOr[Double] = js.native
+  var max_open_files: js.UndefOr[Double] = js.undefined
   
   /**
     * Asterisk system name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Effective user/group id for running Asterisk.
     */
-  var setid: SetId = js.native
+  var setid: SetId
 }
 object ConfigInfo {
   

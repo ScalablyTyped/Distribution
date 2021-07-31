@@ -12,14 +12,15 @@ import typings.std.Uint8ArrayConstructor
 import typings.std.Uint8ClampedArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("flatbush", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FlatbushClass {
+  class ^ protected ()
+    extends StObject
+       with FlatbushClass {
     /**
       * @param numItems total number of items to be indexed
       * @param nodeSize size of the tree node, experiment with different values for best performance. Default 16.
@@ -27,18 +28,20 @@ object mod {
       */
     def this(numItems: Double) = this()
     def this(numItems: Double, nodeSize: Double) = this()
-    def this(numItems: Double, nodeSize: js.UndefOr[scala.Nothing], arrayType: TypedArrayConstructor) = this()
     def this(numItems: Double, nodeSize: Double, arrayType: TypedArrayConstructor) = this()
+    def this(numItems: Double, nodeSize: Unit, arrayType: TypedArrayConstructor) = this()
   }
+  @JSImport("flatbush", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Recreates a Flatbush index from raw ArrayBuffer data (that's exposed as index.data on a previously indexed Flatbush instance).
     * Very useful for transferring indices between threads or storing them in a file.
     */
   /* static member */
-  @JSImport("flatbush", "from")
-  @js.native
-  def from(data: ArrayBuffer): FlatbushClass = js.native
+  @scala.inline
+  def from(data: ArrayBuffer): FlatbushClass = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[FlatbushClass]
   
   type Flatbush = FlatbushClass
   
@@ -94,35 +97,35 @@ object mod {
       * Returns an array of item indices in order of distance from the given x, y (known as K nearest neighbors, or KNN).
       */
     def neighbors(x: Double, y: Double): js.Array[Double] = js.native
-    def neighbors(
-      x: Double,
-      y: Double,
-      maxResults: js.UndefOr[scala.Nothing],
-      maxDistance: js.UndefOr[scala.Nothing],
-      filter: js.Function1[/* idx */ Double, Boolean]
-    ): js.Array[Double] = js.native
-    def neighbors(x: Double, y: Double, maxResults: js.UndefOr[scala.Nothing], maxDistance: Double): js.Array[Double] = js.native
-    def neighbors(
-      x: Double,
-      y: Double,
-      maxResults: js.UndefOr[scala.Nothing],
-      maxDistance: Double,
-      filter: js.Function1[/* idx */ Double, Boolean]
-    ): js.Array[Double] = js.native
     def neighbors(x: Double, y: Double, maxResults: Double): js.Array[Double] = js.native
-    def neighbors(
-      x: Double,
-      y: Double,
-      maxResults: Double,
-      maxDistance: js.UndefOr[scala.Nothing],
-      filter: js.Function1[/* idx */ Double, Boolean]
-    ): js.Array[Double] = js.native
     def neighbors(x: Double, y: Double, maxResults: Double, maxDistance: Double): js.Array[Double] = js.native
     def neighbors(
       x: Double,
       y: Double,
       maxResults: Double,
       maxDistance: Double,
+      filter: js.Function1[/* idx */ Double, Boolean]
+    ): js.Array[Double] = js.native
+    def neighbors(
+      x: Double,
+      y: Double,
+      maxResults: Double,
+      maxDistance: Unit,
+      filter: js.Function1[/* idx */ Double, Boolean]
+    ): js.Array[Double] = js.native
+    def neighbors(x: Double, y: Double, maxResults: Unit, maxDistance: Double): js.Array[Double] = js.native
+    def neighbors(
+      x: Double,
+      y: Double,
+      maxResults: Unit,
+      maxDistance: Double,
+      filter: js.Function1[/* idx */ Double, Boolean]
+    ): js.Array[Double] = js.native
+    def neighbors(
+      x: Double,
+      y: Double,
+      maxResults: Unit,
+      maxDistance: Unit,
       filter: js.Function1[/* idx */ Double, Boolean]
     ): js.Array[Double] = js.native
     

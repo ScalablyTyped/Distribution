@@ -7,10 +7,13 @@ import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/utils-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/utils-stream", "NullStream")
   @js.native
@@ -70,18 +73,18 @@ object mod {
     def size: Double = js.native
   }
   
-  @JSImport("@ionic/utils-stream", "growBufferForAppendedData")
-  @js.native
-  def growBufferForAppendedData(buf: Buffer, actualsize: Double, appendsize: Double): Buffer = js.native
+  @scala.inline
+  def growBufferForAppendedData(buf: Buffer, actualsize: Double, appendsize: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("growBufferForAppendedData")(buf.asInstanceOf[js.Any], actualsize.asInstanceOf[js.Any], appendsize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @js.native
-  trait ReadableStreamBufferOptions extends ReadableOptions {
+  trait ReadableStreamBufferOptions
+    extends StObject
+       with ReadableOptions {
     
-    var allocSize: js.UndefOr[Double] = js.native
+    var allocSize: js.UndefOr[Double] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var growSize: js.UndefOr[Double] = js.native
+    var growSize: js.UndefOr[Double] = js.undefined
   }
   object ReadableStreamBufferOptions {
     
@@ -114,12 +117,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait WritableStreamBufferOptions extends WritableOptions {
+  trait WritableStreamBufferOptions
+    extends StObject
+       with WritableOptions {
     
-    var allocSize: js.UndefOr[Double] = js.native
+    var allocSize: js.UndefOr[Double] = js.undefined
     
-    var growSize: js.UndefOr[Double] = js.native
+    var growSize: js.UndefOr[Double] = js.undefined
   }
   object WritableStreamBufferOptions {
     

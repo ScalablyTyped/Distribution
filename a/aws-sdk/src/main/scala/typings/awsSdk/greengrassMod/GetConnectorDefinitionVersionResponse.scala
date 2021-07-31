@@ -2,41 +2,39 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectorDefinitionVersionResponse extends StObject {
   
   /**
     * The ARN of the connector definition version.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the connector definition version was created.
     */
-  var CreationTimestamp: js.UndefOr[string] = js.native
+  var CreationTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * Information about the connector definition version.
     */
-  var Definition: js.UndefOr[ConnectorDefinitionVersion] = js.native
+  var Definition: js.UndefOr[ConnectorDefinitionVersion] = js.undefined
   
   /**
     * The ID of the connector definition version.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The token for the next set of results, or ''null'' if there are no additional results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The version of the connector definition version.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
 }
 object GetConnectorDefinitionVersionResponse {
   

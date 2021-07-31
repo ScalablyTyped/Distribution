@@ -3,15 +3,13 @@ package typings.expoConfigureSplashScreen.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceContent extends StObject {
   
-  var replaceContent: String = js.native
+  var replaceContent: String
   
-  var replacePattern: String | RegExp = js.native
+  var replacePattern: String | RegExp
 }
 object ReplaceContent {
   

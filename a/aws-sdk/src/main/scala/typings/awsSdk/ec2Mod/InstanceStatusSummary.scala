@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStatusSummary extends StObject {
   
   /**
     * The system instance health or application instance health.
     */
-  var Details: js.UndefOr[InstanceStatusDetailsList] = js.native
+  var Details: js.UndefOr[InstanceStatusDetailsList] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[SummaryStatus] = js.native
+  var Status: js.UndefOr[SummaryStatus] = js.undefined
 }
 object InstanceStatusSummary {
   

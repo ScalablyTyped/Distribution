@@ -2,31 +2,29 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexPage extends StObject {
   
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
-  var current_url: js.UndefOr[String] = js.native
+  var current_url: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[Double] = js.native
+  var next: js.UndefOr[Double] = js.undefined
   
-  var next_link: js.UndefOr[String] = js.native
+  var next_link: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var posts: js.UndefOr[js.Object] = js.native
+  var posts: js.UndefOr[js.Object] = js.undefined
   
-  var prev: js.UndefOr[Double] = js.native
+  var prev: js.UndefOr[Double] = js.undefined
   
-  var prev_link: js.UndefOr[String] = js.native
+  var prev_link: js.UndefOr[String] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object IndexPage {
   

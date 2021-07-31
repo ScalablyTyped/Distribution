@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,33 +9,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be the same as the registered type for the `name` property in the object
   * definition of `objectType`.
   */
-@js.native
 trait SchemaNamedProperty extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
-  var dateValues: js.UndefOr[SchemaDateValues] = js.native
+  var dateValues: js.UndefOr[SchemaDateValues] = js.undefined
   
-  var doubleValues: js.UndefOr[SchemaDoubleValues] = js.native
+  var doubleValues: js.UndefOr[SchemaDoubleValues] = js.undefined
   
-  var enumValues: js.UndefOr[SchemaEnumValues] = js.native
+  var enumValues: js.UndefOr[SchemaEnumValues] = js.undefined
   
-  var htmlValues: js.UndefOr[SchemaHtmlValues] = js.native
+  var htmlValues: js.UndefOr[SchemaHtmlValues] = js.undefined
   
-  var integerValues: js.UndefOr[SchemaIntegerValues] = js.native
+  var integerValues: js.UndefOr[SchemaIntegerValues] = js.undefined
   
   /**
     * The name of the property.  This name should correspond to the name of the
     * property that was registered for object definition in the schema. The
     * maximum allowable length for this property is 256 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var objectValues: js.UndefOr[SchemaObjectValues] = js.native
+  var objectValues: js.UndefOr[SchemaObjectValues] = js.undefined
   
-  var textValues: js.UndefOr[SchemaTextValues] = js.native
+  var textValues: js.UndefOr[SchemaTextValues] = js.undefined
   
-  var timestampValues: js.UndefOr[SchemaTimestampValues] = js.native
+  var timestampValues: js.UndefOr[SchemaTimestampValues] = js.undefined
 }
 object SchemaNamedProperty {
   

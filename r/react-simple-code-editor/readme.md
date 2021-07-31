@@ -10,9 +10,9 @@ Simple no-frills code editor with syntax highlighting
 | ------------------ | :-------------: |
 | Full name          | react-simple-code-editor |
 | Keywords           | code, editor, react |
-| # releases         | 22 |
-| # dependents       | 56 |
-| # downloads        | 10280537 |
+| # releases         | 15 |
+| # dependents       | 81 |
+| # downloads        | 11576308 |
 | # stars            | 0 |
 
 ## Links

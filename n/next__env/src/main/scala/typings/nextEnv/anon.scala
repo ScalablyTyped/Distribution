@@ -4,17 +4,15 @@ import typings.nextEnv.mod.Env
 import typings.nextEnv.mod.LoadedEnvFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CombinedEnv extends StObject {
     
-    var combinedEnv: Env = js.native
+    var combinedEnv: Env
     
-    var loadedEnvFiles: LoadedEnvFiles = js.native
+    var loadedEnvFiles: LoadedEnvFiles
   }
   object CombinedEnv {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: String = js.native
+    var contents: String
     
-    var path: String = js.native
+    var path: String
   }
   object Contents {
     

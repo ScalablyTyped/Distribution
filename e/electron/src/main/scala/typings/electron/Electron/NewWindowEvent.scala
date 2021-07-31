@@ -8,11 +8,12 @@ import typings.electron.electronStrings.default
 import typings.electron.electronStrings.other
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewWindowEvent extends Event {
+trait NewWindowEvent
+  extends StObject
+     with Event {
   
   /**
     * Can be `default`, `foreground-tab`, `background-tab`, `new-window`,

@@ -10,11 +10,11 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InkStrokeContainer extends IInkStrokeContainer
+trait InkStrokeContainer
+  extends StObject
+     with IInkStrokeContainer
 object InkStrokeContainer {
   
   @scala.inline

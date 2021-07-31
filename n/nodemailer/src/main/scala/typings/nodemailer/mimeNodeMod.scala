@@ -12,7 +12,6 @@ import typings.nodemailer.nodemailerStrings.Q
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mimeNodeMod {
@@ -24,26 +23,27 @@ object mimeNodeMod {
     */
   @JSImport("nodemailer/lib/mime-node", JSImport.Namespace)
   @js.native
-  class ^ () extends MimeNode {
+  class ^ ()
+    extends StObject
+       with MimeNode {
     def this(contentType: String) = this()
-    def this(contentType: js.UndefOr[scala.Nothing], options: Options) = this()
     def this(contentType: String, options: Options) = this()
+    def this(contentType: Unit, options: Options) = this()
   }
   
-  @js.native
   trait Addresses extends StObject {
     
-    var bcc: js.UndefOr[js.Array[String]] = js.native
+    var bcc: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cc: js.UndefOr[js.Array[String]] = js.native
+    var cc: js.UndefOr[js.Array[String]] = js.undefined
     
-    var from: js.UndefOr[js.Array[String]] = js.native
+    var from: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `reply-to`: js.UndefOr[js.Array[String]] = js.native
+    var `reply-to`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sender: js.UndefOr[js.Array[String]] = js.native
+    var sender: js.UndefOr[js.Array[String]] = js.undefined
     
-    var to: js.UndefOr[js.Array[String]] = js.native
+    var to: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Addresses {
     
@@ -112,14 +112,13 @@ object mimeNodeMod {
     }
   }
   
-  @js.native
   trait Envelope extends StObject {
     
     /** includes an address object or is set to false */
-    var from: String | `false` = js.native
+    var from: String | `false`
     
     /** includes an array of address objects */
-    var to: js.Array[String] = js.native
+    var to: js.Array[String]
   }
   object Envelope {
     
@@ -250,29 +249,28 @@ object mimeNodeMod {
     def transform(transform: Transform): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** shared part of the unique multipart boundary */
-    var baseBoundary: js.UndefOr[String] = js.native
+    var baseBoundary: js.UndefOr[String] = js.undefined
     
     /** filename for an attachment node */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** If true, do not exclude Bcc from the generated headers */
-    var keepBcc: js.UndefOr[Boolean] = js.native
+    var keepBcc: js.UndefOr[Boolean] = js.undefined
     
     /** method to normalize header keys for custom caseing */
-    var normalizeHeaderKey: js.UndefOr[js.Function1[/* key */ String, String]] = js.native
+    var normalizeHeaderKey: js.UndefOr[js.Function1[/* key */ String, String]] = js.undefined
     
     /** immediate parent for this node */
-    var parentNode: js.UndefOr[MimeNode] = js.native
+    var parentNode: js.UndefOr[MimeNode] = js.undefined
     
     /** root node for this tree */
-    var rootNode: js.UndefOr[MimeNode] = js.native
+    var rootNode: js.UndefOr[MimeNode] = js.undefined
     
     /** either 'Q' (the default) or 'B' */
-    var textEncoding: js.UndefOr[B | Q] = js.native
+    var textEncoding: js.UndefOr[B | Q] = js.undefined
   }
   object Options {
     

@@ -3,32 +3,46 @@ package typings.atlassianCrowdClient
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
   
   @JSImport("atlassian-crowd-client/lib/models/session", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Session {
+  class ^ protected ()
+    extends StObject
+       with Session {
     def this(token: String, createdAt: Date, expiresAt: Date) = this()
+    
+    /* CompleteClass */
+    override val createdAt: Date = js.native
+    
+    /* CompleteClass */
+    override val expiresAt: Date = js.native
+    
+    /* CompleteClass */
+    override def toCrowd(): SessionObj = js.native
+    
+    /* CompleteClass */
+    override val token: String = js.native
   }
+  @JSImport("atlassian-crowd-client/lib/models/session", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("atlassian-crowd-client/lib/models/session", "fromCrowd")
-  @js.native
-  def fromCrowd(obj: SessionObj): Session = js.native
+  @scala.inline
+  def fromCrowd(obj: SessionObj): Session = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Session]
   
-  @js.native
   trait Session extends StObject {
     
-    val createdAt: Date = js.native
+    val createdAt: Date
     
-    val expiresAt: Date = js.native
+    val expiresAt: Date
     
-    def toCrowd(): SessionObj = js.native
+    def toCrowd(): SessionObj
     
-    val token: String = js.native
+    val token: String
   }
   object Session {
     
@@ -55,14 +69,13 @@ object sessionMod {
     }
   }
   
-  @js.native
   trait SessionObj extends StObject {
     
-    val `created-date`: Double = js.native
+    val `created-date`: Double
     
-    val `expiry-date`: Double = js.native
+    val `expiry-date`: Double
     
-    val token: String = js.native
+    val token: String
   }
   object SessionObj {
     

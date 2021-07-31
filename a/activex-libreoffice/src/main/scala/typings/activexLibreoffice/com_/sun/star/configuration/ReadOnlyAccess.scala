@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This service is still unpublished and unstable.
   * @since LibreOffice 4.0
   */
-@js.native
-trait ReadOnlyAccess extends XHierarchicalNameAccess {
+trait ReadOnlyAccess
+  extends StObject
+     with XHierarchicalNameAccess {
   
   /**
     * Service constructor.
     * @param locale a string representation of the locale to use for localized properties; use `*` for all-locale access
     */
-  def create(locale: String): Unit = js.native
+  def create(locale: String): Unit
 }
 object ReadOnlyAccess {
   

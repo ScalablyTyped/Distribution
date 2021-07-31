@@ -35,7 +35,6 @@ import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Particles {
@@ -147,7 +146,7 @@ object Particles {
       * @param newKey The new key to use for this property, if any.
       */
     def loadConfig(): Unit = js.native
-    def loadConfig(config: js.UndefOr[scala.Nothing], newKey: String): Unit = js.native
+    def loadConfig(config: Unit, newKey: String): Unit = js.native
     def loadConfig(config: ParticleEmitterConfig): Unit = js.native
     def loadConfig(config: ParticleEmitterConfig, newKey: String): Unit = js.native
     
@@ -248,23 +247,22 @@ object Particles {
     * 
     * This simulates the effect of gravity over large distances (as between planets, for example).
     */
-  @js.native
   trait GravityWell extends StObject {
     
     /**
       * The active state of the Gravity Well. An inactive Gravity Well will not influence any particles.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       * The minimum distance for which the gravity force is calculated.
       */
-    var epsilon: Double = js.native
+    var epsilon: Double
     
     /**
       * The strength of the gravity force - larger numbers produce a stronger force.
       */
-    var power: Double = js.native
+    var power: Double
     
     /**
       * Takes a Particle and updates it based on the properties of this Gravity Well.
@@ -272,17 +270,17 @@ object Particles {
       * @param delta The delta time in ms.
       * @param step The delta value divided by 1000.
       */
-    def update(particle: Particle, delta: Double, step: Double): Unit = js.native
+    def update(particle: Particle, delta: Double, step: Double): Unit
     
     /**
       * The x coordinate of the Gravity Well, in world space.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y coordinate of the Gravity Well, in world space.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object GravityWell {
     
@@ -326,33 +324,32 @@ object Particles {
     * A Particle is a simple Game Object controlled by a Particle Emitter and Manager, and rendered by the Manager.
     * It uses its own lightweight physics system, and can interact only with its Emitter's bounds and zones.
     */
-  @js.native
   trait Particle extends StObject {
     
     /**
       * The x acceleration of this Particle.
       */
-    var accelerationX: Double = js.native
+    var accelerationX: Double
     
     /**
       * The y acceleration of this Particle.
       */
-    var accelerationY: Double = js.native
+    var accelerationY: Double
     
     /**
       * The alpha value of this Particle.
       */
-    var alpha: Double = js.native
+    var alpha: Double
     
     /**
       * The angle of this Particle in degrees.
       */
-    var angle: Double = js.native
+    var angle: Double
     
     /**
       * The bounciness, or restitution, of this Particle.
       */
-    var bounce: Double = js.native
+    var bounce: Double
     
     /**
       * Checks if this Particle is still within the bounds defined by the given Emitter.
@@ -360,7 +357,7 @@ object Particles {
       * If not, and depending on the Emitter collision flags, the Particle may either stop or rebound.
       * @param emitter The Emitter to check the bounds against.
       */
-    def checkBounds(emitter: ParticleEmitter): Unit = js.native
+    def checkBounds(emitter: ParticleEmitter): Unit
     
     /**
       * An internal method that calculates the velocity of the Particle.
@@ -369,91 +366,91 @@ object Particles {
       * @param step The delta value divided by 1000.
       * @param processors Particle processors (gravity wells).
       */
-    def computeVelocity(emitter: ParticleEmitter, delta: Double, step: Double, processors: js.Array[_]): Unit = js.native
+    def computeVelocity(emitter: ParticleEmitter, delta: Double, step: Double, processors: js.Array[js.Any]): Unit
     
     /**
       * The data used by the ease equation.
       */
-    var data: js.Object = js.native
+    var data: js.Object
     
     /**
       * The delay applied to this Particle upon emission, in ms.
       */
-    var delayCurrent: Double = js.native
+    var delayCurrent: Double
     
     /**
       * The Emitter to which this Particle belongs.
       * 
       * A Particle can only belong to a single Emitter and is created, updated and destroyed via it.
       */
-    var emitter: ParticleEmitter = js.native
+    var emitter: ParticleEmitter
     
     /**
       * Starts this Particle from the given coordinates.
       * @param x The x coordinate to launch this Particle from.
       * @param y The y coordinate to launch this Particle from.
       */
-    def fire(x: Double, y: Double): Unit = js.native
+    def fire(x: Double, y: Double): Unit
     
     /**
       * The texture frame used to render this Particle.
       */
-    var frame: Frame = js.native
+    var frame: Frame
     
     /**
       * Checks to see if this Particle is alive and updating.
       */
-    def isAlive(): Boolean = js.native
+    def isAlive(): Boolean
     
     /**
       * The lifespan of this Particle in ms.
       */
-    var life: Double = js.native
+    var life: Double
     
     /**
       * The current life of this Particle in ms.
       */
-    var lifeCurrent: Double = js.native
+    var lifeCurrent: Double
     
     /**
       * The normalized lifespan T value, where 0 is the start and 1 is the end.
       */
-    var lifeT: Double = js.native
+    var lifeT: Double
     
     /**
       * The maximum horizontal velocity this Particle can travel at.
       */
-    var maxVelocityX: Double = js.native
+    var maxVelocityX: Double
     
     /**
       * The maximum vertical velocity this Particle can travel at.
       */
-    var maxVelocityY: Double = js.native
+    var maxVelocityY: Double
     
     /**
       * Resets the position of this particle back to zero.
       */
-    def resetPosition(): Unit = js.native
+    def resetPosition(): Unit
     
     /**
       * The angle of this Particle in radians.
       */
-    var rotation: Double = js.native
+    var rotation: Double
     
     /**
       * The horizontal scale of this Particle.
       */
-    var scaleX: Double = js.native
+    var scaleX: Double
     
     /**
       * The vertical scale of this Particle.
       */
-    var scaleY: Double = js.native
+    var scaleY: Double
     
     /**
       * The tint applied to this Particle.
       */
-    var tint: integer = js.native
+    var tint: integer
     
     /**
       * The main update method for this Particle.
@@ -463,27 +460,27 @@ object Particles {
       * @param step The delta value divided by 1000.
       * @param processors An optional array of update processors.
       */
-    def update(delta: Double, step: Double, processors: js.Array[_]): Boolean = js.native
+    def update(delta: Double, step: Double, processors: js.Array[js.Any]): Boolean
     
     /**
       * The x velocity of this Particle.
       */
-    var velocityX: Double = js.native
+    var velocityX: Double
     
     /**
       * The y velocity of this Particle.
       */
-    var velocityY: Double = js.native
+    var velocityY: Double
     
     /**
       * The x coordinate of this Particle.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y coordinate of this Particle.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object Particle {
     
@@ -495,7 +492,7 @@ object Particles {
       angle: Double,
       bounce: Double,
       checkBounds: ParticleEmitter => Unit,
-      computeVelocity: (ParticleEmitter, Double, Double, js.Array[_]) => Unit,
+      computeVelocity: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit,
       data: js.Object,
       delayCurrent: Double,
       emitter: ParticleEmitter,
@@ -512,7 +509,7 @@ object Particles {
       scaleX: Double,
       scaleY: Double,
       tint: integer,
-      update: (Double, Double, js.Array[_]) => Boolean,
+      update: (Double, Double, js.Array[js.Any]) => Boolean,
       velocityX: Double,
       velocityY: Double,
       x: Double,
@@ -544,7 +541,7 @@ object Particles {
       def setCheckBounds(value: ParticleEmitter => Unit): Self = StObject.set(x, "checkBounds", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
+      def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
       
       @scala.inline
       def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -595,7 +592,7 @@ object Particles {
       def setTint(value: integer): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUpdate(value: (Double, Double, js.Array[_]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      def setUpdate(value: (Double, Double, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       @scala.inline
       def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
@@ -617,7 +614,8 @@ object Particles {
     */
   @js.native
   trait ParticleEmitter
-    extends BlendMode
+    extends StObject
+       with BlendMode
        with Mask
        with ScrollFactor
        with Visible {
@@ -777,13 +775,13 @@ object Particles {
       * @param y The y coordinate to emit the Particles from. Default this.x.
       */
     def emitParticle(): Particle = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: Double): Particle = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: Double, y: Double): Particle = js.native
+    def emitParticle(count: Unit, x: Double): Particle = js.native
+    def emitParticle(count: Unit, x: Double, y: Double): Particle = js.native
+    def emitParticle(count: Unit, x: Unit, y: Double): Particle = js.native
     def emitParticle(count: integer): Particle = js.native
-    def emitParticle(count: integer, x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
     def emitParticle(count: integer, x: Double): Particle = js.native
     def emitParticle(count: integer, x: Double, y: Double): Particle = js.native
+    def emitParticle(count: integer, x: Unit, y: Double): Particle = js.native
     
     /**
       * Emits particles at a given position (or the emitter's current position).
@@ -792,13 +790,13 @@ object Particles {
       * @param count The number of Particles to emit. Default this.quantity.
       */
     def emitParticleAt(): Particle = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], count: integer): Particle = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double, count: integer): Particle = js.native
     def emitParticleAt(x: Double): Particle = js.native
-    def emitParticleAt(x: Double, y: js.UndefOr[scala.Nothing], count: integer): Particle = js.native
     def emitParticleAt(x: Double, y: Double): Particle = js.native
     def emitParticleAt(x: Double, y: Double, count: integer): Particle = js.native
+    def emitParticleAt(x: Double, y: Unit, count: integer): Particle = js.native
+    def emitParticleAt(x: Unit, y: Double): Particle = js.native
+    def emitParticleAt(x: Unit, y: Double, count: integer): Particle = js.native
+    def emitParticleAt(x: Unit, y: Unit, count: integer): Particle = js.native
     
     /**
       * An object describing a shape to emit particles from.
@@ -1053,7 +1051,8 @@ object Particles {
       * Sets the opacity of emitted particles.
       * @param value A value between 0 (transparent) and 1 (opaque).
       */
-    def setAlpha(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): this.type = js.native
+    def setAlpha(value: EmitterOpOnEmitType): this.type = js.native
+    def setAlpha(value: EmitterOpOnUpdateType): this.type = js.native
     
     /**
       * Sets the angle of a {@link Phaser.GameObjects.Particles.ParticleEmitter#radial} particle stream.
@@ -1100,27 +1099,27 @@ object Particles {
     def setEmitterAngle(value: EmitterOpOnEmitType): this.type = js.native
     
     def setFrame(frames: String): this.type = js.native
-    def setFrame(frames: String, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
     def setFrame(frames: String, pickRandom: Boolean): this.type = js.native
     def setFrame(frames: String, pickRandom: Boolean, quantity: integer): this.type = js.native
+    def setFrame(frames: String, pickRandom: Unit, quantity: integer): this.type = js.native
     /**
       * Sets a pattern for assigning texture frames to emitted particles.
       * @param frames One or more texture frames, or a configuration object.
       * @param pickRandom Whether frames should be assigned at random from `frames`. Default true.
       * @param quantity The number of consecutive particles that will receive each frame. Default 1.
       */
-    def setFrame(frames: js.Array[_]): this.type = js.native
-    def setFrame(frames: js.Array[_], pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
-    def setFrame(frames: js.Array[_], pickRandom: Boolean): this.type = js.native
-    def setFrame(frames: js.Array[_], pickRandom: Boolean, quantity: integer): this.type = js.native
+    def setFrame(frames: js.Array[js.Any]): this.type = js.native
+    def setFrame(frames: js.Array[js.Any], pickRandom: Boolean): this.type = js.native
+    def setFrame(frames: js.Array[js.Any], pickRandom: Boolean, quantity: integer): this.type = js.native
+    def setFrame(frames: js.Array[js.Any], pickRandom: Unit, quantity: integer): this.type = js.native
     def setFrame(frames: ParticleEmitterFrameConfig): this.type = js.native
-    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
     def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean): this.type = js.native
     def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean, quantity: integer): this.type = js.native
+    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Unit, quantity: integer): this.type = js.native
     def setFrame(frames: integer): this.type = js.native
-    def setFrame(frames: integer, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
     def setFrame(frames: integer, pickRandom: Boolean): this.type = js.native
     def setFrame(frames: integer, pickRandom: Boolean, quantity: integer): this.type = js.native
+    def setFrame(frames: integer, pickRandom: Unit, quantity: integer): this.type = js.native
     
     /**
       * Sets the emitter's {@link Phaser.GameObjects.Particles.ParticleEmitter#frequency}
@@ -1181,19 +1180,22 @@ object Particles {
       * Sets the scale of emitted particles.
       * @param value The scale, relative to 1.
       */
-    def setScale(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): this.type = js.native
+    def setScale(value: EmitterOpOnEmitType): this.type = js.native
+    def setScale(value: EmitterOpOnUpdateType): this.type = js.native
     
     /**
       * Sets the horizontal scale of emitted particles.
       * @param value The scale, relative to 1.
       */
-    def setScaleX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): this.type = js.native
+    def setScaleX(value: EmitterOpOnEmitType): this.type = js.native
+    def setScaleX(value: EmitterOpOnUpdateType): this.type = js.native
     
     /**
       * Sets the vertical scale of emitted particles.
       * @param value The scale, relative to 1.
       */
-    def setScaleY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): this.type = js.native
+    def setScaleY(value: EmitterOpOnEmitType): this.type = js.native
+    def setScaleY(value: EmitterOpOnUpdateType): this.type = js.native
     
     /**
       * Sets the initial radial speed of emitted particles.
@@ -1220,7 +1222,8 @@ object Particles {
       * Sets the color tint of emitted particles.
       * @param value A value between 0 and 0xffffff.
       */
-    def setTint(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): this.type = js.native
+    def setTint(value: EmitterOpOnEmitType): this.type = js.native
+    def setTint(value: EmitterOpOnUpdateType): this.type = js.native
     
     /**
       * The initial horizontal speed of emitted particles, in pixels per second.
@@ -1250,18 +1253,13 @@ object Particles {
       * @param trackVisible Whether the emitter's visible state will track the target's visible state. Default false.
       */
     def startFollow(target: GameObject): this.type = js.native
-    def startFollow(
-      target: GameObject,
-      offsetX: js.UndefOr[scala.Nothing],
-      offsetY: js.UndefOr[scala.Nothing],
-      trackVisible: Boolean
-    ): this.type = js.native
-    def startFollow(target: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): this.type = js.native
-    def startFollow(target: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double, trackVisible: Boolean): this.type = js.native
     def startFollow(target: GameObject, offsetX: Double): this.type = js.native
-    def startFollow(target: GameObject, offsetX: Double, offsetY: js.UndefOr[scala.Nothing], trackVisible: Boolean): this.type = js.native
     def startFollow(target: GameObject, offsetX: Double, offsetY: Double): this.type = js.native
     def startFollow(target: GameObject, offsetX: Double, offsetY: Double, trackVisible: Boolean): this.type = js.native
+    def startFollow(target: GameObject, offsetX: Double, offsetY: Unit, trackVisible: Boolean): this.type = js.native
+    def startFollow(target: GameObject, offsetX: Unit, offsetY: Double): this.type = js.native
+    def startFollow(target: GameObject, offsetX: Unit, offsetY: Double, trackVisible: Boolean): this.type = js.native
+    def startFollow(target: GameObject, offsetX: Unit, offsetY: Unit, trackVisible: Boolean): this.type = js.native
     
     /**
       * Turns {@link Phaser.GameObjects.Particles.ParticleEmitter#on off} the emitter.
@@ -1317,7 +1315,8 @@ object Particles {
     */
   @js.native
   trait ParticleEmitterManager
-    extends GameObject
+    extends StObject
+       with GameObject
        with Depth
        with Mask
        with Pipeline
@@ -1355,13 +1354,13 @@ object Particles {
       * @param y The y-coordinate to to emit particles from. The default is the y-coordinate of the emitter's current location.
       */
     def emitParticle(): this.type = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: Double): this.type = js.native
-    def emitParticle(count: js.UndefOr[scala.Nothing], x: Double, y: Double): this.type = js.native
+    def emitParticle(count: Unit, x: Double): this.type = js.native
+    def emitParticle(count: Unit, x: Double, y: Double): this.type = js.native
+    def emitParticle(count: Unit, x: Unit, y: Double): this.type = js.native
     def emitParticle(count: integer): this.type = js.native
-    def emitParticle(count: integer, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def emitParticle(count: integer, x: Double): this.type = js.native
     def emitParticle(count: integer, x: Double, y: Double): this.type = js.native
+    def emitParticle(count: integer, x: Unit, y: Double): this.type = js.native
     
     /**
       * Emits particles from each active emitter.
@@ -1370,13 +1369,13 @@ object Particles {
       * @param count The number of particles to release from each emitter. The default is the emitter's own {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity}.
       */
     def emitParticleAt(): this.type = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], count: integer): this.type = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double, count: integer): this.type = js.native
     def emitParticleAt(x: Double): this.type = js.native
-    def emitParticleAt(x: Double, y: js.UndefOr[scala.Nothing], count: integer): this.type = js.native
     def emitParticleAt(x: Double, y: Double): this.type = js.native
     def emitParticleAt(x: Double, y: Double, count: integer): this.type = js.native
+    def emitParticleAt(x: Double, y: Unit, count: integer): this.type = js.native
+    def emitParticleAt(x: Unit, y: Double): this.type = js.native
+    def emitParticleAt(x: Unit, y: Double, count: integer): this.type = js.native
+    def emitParticleAt(x: Unit, y: Unit, count: integer): this.type = js.native
     
     /**
       * A list of Emitters being managed by this Emitter Manager.
@@ -1483,26 +1482,25 @@ object Particles {
       * The zone consists of a `source` which could be a Geometric shape, such as a Rectangle or Ellipse, or your own
       * object as long as it includes a `contains` method for which the Particles can be tested against.
       */
-    @js.native
     trait DeathZone extends StObject {
       
       /**
         * Set to `true` if the Particle should be killed if it enters this zone.
         * Set to `false` to kill the Particle if it leaves this zone.
         */
-      var killOnEnter: Boolean = js.native
+      var killOnEnter: Boolean
       
       /**
         * An object instance that has a `contains` method that returns a boolean when given `x` and `y` arguments.
         * This could be a Geometry shape, such as `Phaser.Geom.Circle`, or your own custom object.
         */
-      var source: DeathZoneSource = js.native
+      var source: DeathZoneSource
       
       /**
         * Checks if the given Particle will be killed or not by this zone.
         * @param particle The Particle to be checked against this zone.
         */
-      def willKill(particle: Particle): Boolean = js.native
+      def willKill(particle: Particle): Boolean
     }
     object DeathZone {
       
@@ -1529,50 +1527,49 @@ object Particles {
     /**
       * A zone that places particles on a shape's edges.
       */
-    @js.native
     trait EdgeZone extends StObject {
       
       /**
         * Change the source of the EdgeZone.
         * @param source An object instance with a `getPoints(quantity, stepRate)` method returning an array of points.
         */
-      def changeSource(source: EdgeZoneSource): this.type = js.native
+      def changeSource(source: EdgeZoneSource): this.type
       
       /**
         * The counter used for iterating the EdgeZone's points.
         */
-      var counter: Double = js.native
+      var counter: Double
       
       /**
         * Get the next point in the Zone and set its coordinates on the given Particle.
         * @param particle The Particle.
         */
-      def getPoint(particle: Particle): Unit = js.native
+      def getPoint(particle: Particle): Unit
       
       /**
         * The points placed on the source edge.
         */
-      var points: js.Array[Point] = js.native
+      var points: js.Array[Point]
       
       /**
         * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
         */
-      var quantity: integer = js.native
+      var quantity: integer
       
       /**
         * Whether one endpoint will be removed if it's identical to the other.
         */
-      var seamless: Boolean = js.native
+      var seamless: Boolean
       
       /**
         * An object instance with a `getPoints(quantity, stepRate)` method returning an array of points.
         */
-      var source: EdgeZoneSource | RandomZoneSource = js.native
+      var source: EdgeZoneSource | RandomZoneSource
       
       /**
         * The distance between each particle. When set, `quantity` is implied and should be set to 0.
         */
-      var stepRate: Double = js.native
+      var stepRate: Double
       
       /**
         * Update the {@link Phaser.GameObjects.Particles.Zones.EdgeZone#points} from the EdgeZone's
@@ -1580,12 +1577,12 @@ object Particles {
         * 
         * Also updates internal properties.
         */
-      def updateSource(): this.type = js.native
+      def updateSource(): this.type
       
       /**
         * Whether particles are placed from start to end and then end to start.
         */
-      var yoyo: Boolean = js.native
+      var yoyo: Boolean
     }
     object EdgeZone {
       
@@ -1647,19 +1644,18 @@ object Particles {
     /**
       * A zone that places particles randomly within a shape's area.
       */
-    @js.native
     trait RandomZone extends StObject {
       
       /**
         * Get the next point in the Zone and set its coordinates on the given Particle.
         * @param particle The Particle.
         */
-      def getPoint(particle: Particle): Unit = js.native
+      def getPoint(particle: Particle): Unit
       
       /**
         * An object instance with a `getRandomPoint(point)` method.
         */
-      var source: RandomZoneSource = js.native
+      var source: RandomZoneSource
     }
     object RandomZone {
       

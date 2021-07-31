@@ -2,15 +2,13 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateOptions extends StObject {
   
-  var paramName: js.UndefOr[String] = js.native
+  var paramName: js.UndefOr[String] = js.undefined
   
-  var useWithBlock: js.UndefOr[Boolean] = js.native
+  var useWithBlock: js.UndefOr[Boolean] = js.undefined
 }
 object TemplateOptions {
   

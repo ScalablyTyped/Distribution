@@ -2,28 +2,26 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowShareMenuOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ShowShareMenuCompleteCallback] = js.native
+  var complete: js.UndefOr[ShowShareMenuCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ShowShareMenuFailCallback] = js.native
+  var fail: js.UndefOr[ShowShareMenuFailCallback] = js.undefined
   
   /** 本接口为 Beta 版本，暂只在 Android 平台支持。需要显示的转发按钮名称列表，默认['shareAppMessage']。按钮名称合法值包含 "shareAppMessage"、"shareTimeline" 两种
     *
     * 最低基础库： `2.11.3` */
-  var menus: js.UndefOr[js.Array[String]] = js.native
+  var menus: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ShowShareMenuSuccessCallback] = js.native
+  var success: js.UndefOr[ShowShareMenuSuccessCallback] = js.undefined
   
   /** 是否使用带 shareTicket 的转发[详情](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share.html) */
-  var withShareTicket: js.UndefOr[Boolean] = js.native
+  var withShareTicket: js.UndefOr[Boolean] = js.undefined
 }
 object ShowShareMenuOption {
   

@@ -2,21 +2,19 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsPrimary extends StObject {
   
   /**
     * 该服务是否为主服务
     */
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
   /**
     * 蓝牙设备服务的 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
 }
 object IsPrimary {
   

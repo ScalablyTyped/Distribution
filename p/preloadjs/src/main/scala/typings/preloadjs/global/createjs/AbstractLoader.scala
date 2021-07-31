@@ -2,13 +2,13 @@ package typings.preloadjs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.AbstractLoader")
 @js.native
 class AbstractLoader ()
-  extends typings.preloadjs.createjs.AbstractLoader
+  extends StObject
+     with typings.preloadjs.createjs.AbstractLoader
 /* static members */
 object AbstractLoader {
   

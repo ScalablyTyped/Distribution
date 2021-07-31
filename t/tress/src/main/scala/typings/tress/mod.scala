@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.tress.tressStrings.missing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,38 +23,60 @@ object mod {
     * should be run in parallel. If omitted, the concurrency defaults to 1.
     * If negative - no parallel and delay between worker functions (concurrency -1,000 sets 1 second delay)
     */
-  @JSImport("tress", JSImport.Namespace)
-  @js.native
-  def apply(worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit]): TressStatic = js.native
-  @JSImport("tress", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit]): TressStatic = ^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any]).asInstanceOf[TressStatic]
+  @scala.inline
   def apply(
     worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit],
     concurrency: Double
-  ): TressStatic = js.native
+  ): TressStatic = (^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[TressStatic]
   
+  @JSImport("tress", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait TressJob extends StObject {
     
-    def callback(args: js.Any*): Unit = js.native
+    def callback(args: js.Any*): Unit
     @JSName("callback")
-    var callback_Original: TressJobCallback = js.native
+    var callback_Original: TressJobCallback
     
-    var data: TressJobData = js.native
+    var data: TressJobData
+  }
+  object TressJob {
+    
+    @scala.inline
+    def apply(callback: TressJobCallback, data: TressJobData): TressJob = {
+      val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TressJob]
+    }
+    
+    @scala.inline
+    implicit class TressJobMutableBuilder[Self <: TressJob] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCallback(value: TressJobCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setData(value: TressJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    }
   }
   
-  type TressJobCallback = js.ThisFunction1[/* this */ TressJobData, /* repeated */ js.Any, Unit]
+  @js.native
+  trait TressJobCallback extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   type TressJobData = StringDictionary[js.Object]
   
-  @js.native
   trait TressJobQueues extends StObject {
     
-    var failed: js.Array[TressJobData] = js.native
+    var failed: js.Array[TressJobData]
     
-    var finished: js.Array[TressJobData] = js.native
+    var finished: js.Array[TressJobData]
     
-    var waiting: js.Array[TressJobData] = js.native
+    var waiting: js.Array[TressJobData]
   }
   object TressJobQueues {
     
@@ -252,5 +273,12 @@ object mod {
     def workersList(): js.Array[TressJob] = js.native
   }
   
-  type TressWorkerDoneCallback = js.Function2[/* err */ js.UndefOr[Boolean | Error | Null], /* repeated */ js.Any, Unit]
+  @js.native
+  trait TressWorkerDoneCallback extends StObject {
+    
+    def apply(err: Boolean, args: js.Any*): Unit = js.native
+    def apply(err: Null, args: js.Any*): Unit = js.native
+    def apply(err: Unit, args: js.Any*): Unit = js.native
+    def apply(err: Error, args: js.Any*): Unit = js.native
+  }
 }

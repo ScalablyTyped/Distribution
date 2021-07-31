@@ -2,81 +2,79 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEnvelopeStatus extends StObject {
   
   /**
     * Identifier used to query the status of an individual bulk recipient batch.
     */
-  var batchId: js.UndefOr[String] = js.native
+  var batchId: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the batch being queried.
     */
-  var batchSize: js.UndefOr[String] = js.native
+  var batchSize: js.UndefOr[String] = js.undefined
   
   /**
     * A list of bulk envelope objects.
     */
-  var bulkEnvelopes: js.UndefOr[js.Array[BulkEnvelope]] = js.native
+  var bulkEnvelopes: js.UndefOr[js.Array[BulkEnvelope]] = js.undefined
   
   /**
     * URI at which you can retrieve the batch envelopes.
     */
-  var bulkEnvelopesBatchUri: js.UndefOr[String] = js.native
+  var bulkEnvelopesBatchUri: js.UndefOr[String] = js.undefined
   
   /**
     * The last index position in the result set.
     */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The number of entries with a status of `failed`.
     */
-  var failed: js.UndefOr[String] = js.native
+  var failed: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the next chunk of records based on the search request. It is `null` if this is the last set of results for the search.
     */
-  var nextUri: js.UndefOr[String] = js.native
+  var nextUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the prior chunk of records based on the search request. It is `null` if this is the first set of results for the search.
     */
-  var previousUri: js.UndefOr[String] = js.native
+  var previousUri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of entries with a status of `queued`.
     */
-  var queued: js.UndefOr[String] = js.native
+  var queued: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results in this response. Because you can filter which entries are included in the response, this value is always less than or equal to the `totalSetSize`.
     */
-  var resultSetSize: js.UndefOr[String] = js.native
+  var resultSetSize: js.UndefOr[String] = js.undefined
   
   /**
     * The number of entries with a status of `sent`.
     */
-  var sent: js.UndefOr[String] = js.native
+  var sent: js.UndefOr[String] = js.undefined
   
   /**
     * The starting index position of the current result set.
     */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The date on which the bulk envelope was created.
     */
-  var submittedDate: js.UndefOr[String] = js.native
+  var submittedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the result set. This value is always greater than or equal to the value of `resultSetSize`.
     */
-  var totalSetSize: js.UndefOr[String] = js.native
+  var totalSetSize: js.UndefOr[String] = js.undefined
 }
 object BulkEnvelopeStatus {
   

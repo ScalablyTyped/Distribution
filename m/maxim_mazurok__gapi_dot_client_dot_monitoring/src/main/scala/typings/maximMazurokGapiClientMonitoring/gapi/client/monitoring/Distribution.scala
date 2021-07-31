@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distribution extends StObject {
   
   /**
@@ -14,28 +12,28 @@ trait Distribution extends StObject {
     * any, have numbers 1 through N-2; and the overflow bucket has number N-1. The size of bucket_counts must not be greater than N. If the size is less than N, then the remaining buckets
     * are assigned values of zero.
     */
-  var bucketCounts: js.UndefOr[js.Array[String]] = js.native
+  var bucketCounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required in the Cloud Monitoring API v3. Defines the histogram bucket boundaries. */
-  var bucketOptions: js.UndefOr[BucketOptions] = js.native
+  var bucketOptions: js.UndefOr[BucketOptions] = js.undefined
   
   /** The number of values in the population. Must be non-negative. This value must equal the sum of the values in bucket_counts if a histogram is provided. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** Must be in increasing order of value field. */
-  var exemplars: js.UndefOr[js.Array[Exemplar]] = js.native
+  var exemplars: js.UndefOr[js.Array[Exemplar]] = js.undefined
   
   /** The arithmetic mean of the values in the population. If count is zero then this field must be zero. */
-  var mean: js.UndefOr[Double] = js.native
+  var mean: js.UndefOr[Double] = js.undefined
   
   /** If specified, contains the range of the population values. The field must not be present if the count is zero. This field is presently ignored by the Cloud Monitoring API v3. */
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
   
   /**
     * The sum of squared deviations from the mean of the values in the population. For values x_i this is: Sum[i=1..n]((x_i - mean)^2) Knuth, "The Art of Computer Programming", Vol. 2,
     * page 232, 3rd edition describes Welford's method for accumulating this sum in one pass.If count is zero then this field must be zero.
     */
-  var sumOfSquaredDeviation: js.UndefOr[Double] = js.native
+  var sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
 }
 object Distribution {
   

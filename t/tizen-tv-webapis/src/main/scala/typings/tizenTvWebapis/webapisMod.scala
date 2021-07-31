@@ -31,7 +31,6 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`9999`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webapisMod {
@@ -40,26 +39,25 @@ object webapisMod {
   
   type SuccessCallback = js.Function0[Unit]
   
-  @js.native
   trait WebAPIError extends StObject {
     
     /**
       * Error code
       * @since 2.3
       */
-    val code: Double = js.native
+    val code: Double
     
     /**
       * Detailed error message
       * @since 2.3
       */
-    val message: String = js.native
+    val message: String
     
     /**
       * Error name. The attribute must return the value it was initialized with.
       * @since 2.3
       */
-    val name: String = js.native
+    val name: String
   }
   object WebAPIError {
     
@@ -83,239 +81,205 @@ object webapisMod {
     }
   }
   
-  @js.native
   trait WebAPIException extends StObject {
     
     /**
       * Operation aborted
       * @since 2.3
       */
-    var ABORT_ERR: `20` = js.native
+    var ABORT_ERR: `20`
     
     /**
       * Object cannot be cloned
       * @since 2.3
       */
-    var DATA_CLONE_ERR: `25` = js.native
+    var DATA_CLONE_ERR: `25`
     
     /**
       * Specified text range is too large
       * @since 2.3
       */
-    var DOMSTRING_SIZE_ERR: `2` = js.native
+    var DOMSTRING_SIZE_ERR: `2`
     
     /**
       * Operation yields an incorrect node tree
       * @since 2.3
       */
-    var HIERARCHY_REQUEST_ERR: `3` = js.native
+    var HIERARCHY_REQUEST_ERR: `3`
     
     /**
       * Index is not in the allowed range
       * @since 2.3
       */
-    var INDEX_SIZE_ERR: `1` = js.native
+    var INDEX_SIZE_ERR: `1`
     
     /**
       * Specified attribute already in use
       * @since 2.3
       */
-    var INUSE_ATTRIBUTE_ERR: `10` = js.native
+    var INUSE_ATTRIBUTE_ERR: `10`
     
     /**
       * Object does not support the operation or argument
       * @since 2.3
       */
-    var INVALID_ACCESS_ERR: `15` = js.native
+    var INVALID_ACCESS_ERR: `15`
     
     /**
       * String contains invalid characters
       * @since 2.3
       */
-    var INVALID_CHARACTER_ERR: `5` = js.native
+    var INVALID_CHARACTER_ERR: `5`
     
     /**
       * Object cannot be modified in this way
       * @since 2.3
       */
-    var INVALID_MODIFICATION_ERR: `13` = js.native
+    var INVALID_MODIFICATION_ERR: `13`
     
     /**
       * Supplied node is incorrect or has an incorrect ancestor for this operation
       * @since 2.3
       */
-    var INVALID_NODE_TYPE_ERR: `24` = js.native
+    var INVALID_NODE_TYPE_ERR: `24`
     
     /**
       * Object is in an invalid state
       * @since 2.3
       */
-    var INVALID_STATE_ERR: `11` = js.native
+    var INVALID_STATE_ERR: `11`
     
     /**
       * Input parameter contains an invalid value
       * @since 2.3
       */
-    var INVALID_VALUES_ERR: `26` = js.native
+    var INVALID_VALUES_ERR: `26`
     
     /**
       * IO error
       * @since 2.3
       */
-    var IO_ERR: `27` = js.native
+    var IO_ERR: `27`
     
     /**
       * Operation not allowed in XML namespaces
       * @since 2.3
       */
-    var NAMESPACE_ERR: `14` = js.native
+    var NAMESPACE_ERR: `14`
     
     /**
       * Network error occurred
       * @since 2.3
       */
-    var NETWORK_ERR: `19` = js.native
+    var NETWORK_ERR: `19`
     
     /**
       * Object not found
       * @since 2.3
       */
-    var NOT_FOUND_ERR: `8` = js.native
+    var NOT_FOUND_ERR: `8`
     
     /**
       * Operation not supported
       * @since 2.3
       */
-    var NOT_SUPPORTED_ERR: `9` = js.native
+    var NOT_SUPPORTED_ERR: `9`
     
     /**
       * Data specified for a node that does not support it
       * @since 2.3
       */
-    var NO_DATA_ALLOWED_ERR: `6` = js.native
+    var NO_DATA_ALLOWED_ERR: `6`
     
     /**
       * Object cannot be modified
       * @since 2.3
       */
-    var NO_MODIFICATION_ALLOWED_ERR: `7` = js.native
+    var NO_MODIFICATION_ALLOWED_ERR: `7`
     
     /**
       * Quota exceeded
       * @since 2.3
       */
-    var QUOTA_EXCEEDED_ERR: `22` = js.native
+    var QUOTA_EXCEEDED_ERR: `22`
     
     /**
       * Operation insecure
       * @since 2.3
       */
-    var SECURITY_ERR: `18` = js.native
+    var SECURITY_ERR: `18`
     
     /**
       * Service not available
       * @since 2.3
       */
-    var SERVICE_NOT_AVAILABLE_ERR: `28` = js.native
+    var SERVICE_NOT_AVAILABLE_ERR: `28`
     
     /**
       * String does not match the expected pattern
       * @since 2.3
       */
-    var SYNTAX_ERR: `12` = js.native
+    var SYNTAX_ERR: `12`
     
     /**
       * Operation timed out
       * @since 2.3
       */
-    var TIMEOUT_ERR: `23` = js.native
+    var TIMEOUT_ERR: `23`
     
     /**
       * Object type does not match the expected type
       * @since 2.3
       */
-    var TYPE_MISMATCH_ERR: `17` = js.native
+    var TYPE_MISMATCH_ERR: `17`
     
     /**
       * Unknown error
       * @since 2.3
       */
-    var UNKNOWN_ERR: `9999` = js.native
+    var UNKNOWN_ERR: `9999`
     
     /**
       * URL provided does not match
       * @since 2.3
       */
-    var URL_MISMATCH_ERR: `21` = js.native
+    var URL_MISMATCH_ERR: `21`
     
     /**
       * Operation causes the node to fail validation
       * @since 2.3
       */
-    var VALIDATION_ERR: `16` = js.native
+    var VALIDATION_ERR: `16`
     
     /**
       * Object is in the wrong document
       * @since 2.3
       */
-    var WRONG_DOCUMENT_ERR: `4` = js.native
+    var WRONG_DOCUMENT_ERR: `4`
     
     /**
       * Error code
       * @since 2.3
       */
-    val code: Double = js.native
+    val code: Double
     
     /**
       * Detailed error message
       * @since 2.3
       */
-    val message: String = js.native
+    val message: String
     
     /**
       * Error name. The attribute must return the value it was initialized with.\
       * @since 2.3
       */
-    val name: String = js.native
+    val name: String
   }
   object WebAPIException {
     
     @scala.inline
-    def apply(
-      ABORT_ERR: `20`,
-      DATA_CLONE_ERR: `25`,
-      DOMSTRING_SIZE_ERR: `2`,
-      HIERARCHY_REQUEST_ERR: `3`,
-      INDEX_SIZE_ERR: `1`,
-      INUSE_ATTRIBUTE_ERR: `10`,
-      INVALID_ACCESS_ERR: `15`,
-      INVALID_CHARACTER_ERR: `5`,
-      INVALID_MODIFICATION_ERR: `13`,
-      INVALID_NODE_TYPE_ERR: `24`,
-      INVALID_STATE_ERR: `11`,
-      INVALID_VALUES_ERR: `26`,
-      IO_ERR: `27`,
-      NAMESPACE_ERR: `14`,
-      NETWORK_ERR: `19`,
-      NOT_FOUND_ERR: `8`,
-      NOT_SUPPORTED_ERR: `9`,
-      NO_DATA_ALLOWED_ERR: `6`,
-      NO_MODIFICATION_ALLOWED_ERR: `7`,
-      QUOTA_EXCEEDED_ERR: `22`,
-      SECURITY_ERR: `18`,
-      SERVICE_NOT_AVAILABLE_ERR: `28`,
-      SYNTAX_ERR: `12`,
-      TIMEOUT_ERR: `23`,
-      TYPE_MISMATCH_ERR: `17`,
-      UNKNOWN_ERR: `9999`,
-      URL_MISMATCH_ERR: `21`,
-      VALIDATION_ERR: `16`,
-      WRONG_DOCUMENT_ERR: `4`,
-      code: Double,
-      message: String,
-      name: String
-    ): WebAPIException = {
-      val __obj = js.Dynamic.literal(ABORT_ERR = ABORT_ERR.asInstanceOf[js.Any], DATA_CLONE_ERR = DATA_CLONE_ERR.asInstanceOf[js.Any], DOMSTRING_SIZE_ERR = DOMSTRING_SIZE_ERR.asInstanceOf[js.Any], HIERARCHY_REQUEST_ERR = HIERARCHY_REQUEST_ERR.asInstanceOf[js.Any], INDEX_SIZE_ERR = INDEX_SIZE_ERR.asInstanceOf[js.Any], INUSE_ATTRIBUTE_ERR = INUSE_ATTRIBUTE_ERR.asInstanceOf[js.Any], INVALID_ACCESS_ERR = INVALID_ACCESS_ERR.asInstanceOf[js.Any], INVALID_CHARACTER_ERR = INVALID_CHARACTER_ERR.asInstanceOf[js.Any], INVALID_MODIFICATION_ERR = INVALID_MODIFICATION_ERR.asInstanceOf[js.Any], INVALID_NODE_TYPE_ERR = INVALID_NODE_TYPE_ERR.asInstanceOf[js.Any], INVALID_STATE_ERR = INVALID_STATE_ERR.asInstanceOf[js.Any], INVALID_VALUES_ERR = INVALID_VALUES_ERR.asInstanceOf[js.Any], IO_ERR = IO_ERR.asInstanceOf[js.Any], NAMESPACE_ERR = NAMESPACE_ERR.asInstanceOf[js.Any], NETWORK_ERR = NETWORK_ERR.asInstanceOf[js.Any], NOT_FOUND_ERR = NOT_FOUND_ERR.asInstanceOf[js.Any], NOT_SUPPORTED_ERR = NOT_SUPPORTED_ERR.asInstanceOf[js.Any], NO_DATA_ALLOWED_ERR = NO_DATA_ALLOWED_ERR.asInstanceOf[js.Any], NO_MODIFICATION_ALLOWED_ERR = NO_MODIFICATION_ALLOWED_ERR.asInstanceOf[js.Any], QUOTA_EXCEEDED_ERR = QUOTA_EXCEEDED_ERR.asInstanceOf[js.Any], SECURITY_ERR = SECURITY_ERR.asInstanceOf[js.Any], SERVICE_NOT_AVAILABLE_ERR = SERVICE_NOT_AVAILABLE_ERR.asInstanceOf[js.Any], SYNTAX_ERR = SYNTAX_ERR.asInstanceOf[js.Any], TIMEOUT_ERR = TIMEOUT_ERR.asInstanceOf[js.Any], TYPE_MISMATCH_ERR = TYPE_MISMATCH_ERR.asInstanceOf[js.Any], UNKNOWN_ERR = UNKNOWN_ERR.asInstanceOf[js.Any], URL_MISMATCH_ERR = URL_MISMATCH_ERR.asInstanceOf[js.Any], VALIDATION_ERR = VALIDATION_ERR.asInstanceOf[js.Any], WRONG_DOCUMENT_ERR = WRONG_DOCUMENT_ERR.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(code: Double, message: String, name: String): WebAPIException = {
+      val __obj = js.Dynamic.literal(ABORT_ERR = 20, DATA_CLONE_ERR = 25, DOMSTRING_SIZE_ERR = 2, HIERARCHY_REQUEST_ERR = 3, INDEX_SIZE_ERR = 1, INUSE_ATTRIBUTE_ERR = 10, INVALID_ACCESS_ERR = 15, INVALID_CHARACTER_ERR = 5, INVALID_MODIFICATION_ERR = 13, INVALID_NODE_TYPE_ERR = 24, INVALID_STATE_ERR = 11, INVALID_VALUES_ERR = 26, IO_ERR = 27, NAMESPACE_ERR = 14, NETWORK_ERR = 19, NOT_FOUND_ERR = 8, NOT_SUPPORTED_ERR = 9, NO_DATA_ALLOWED_ERR = 6, NO_MODIFICATION_ALLOWED_ERR = 7, QUOTA_EXCEEDED_ERR = 22, SECURITY_ERR = 18, SERVICE_NOT_AVAILABLE_ERR = 28, SYNTAX_ERR = 12, TIMEOUT_ERR = 23, TYPE_MISMATCH_ERR = 17, UNKNOWN_ERR = 9999, URL_MISMATCH_ERR = 21, VALIDATION_ERR = 16, WRONG_DOCUMENT_ERR = 4, code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebAPIException]
     }
     

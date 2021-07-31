@@ -2,21 +2,21 @@ package typings.baconjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipduplicatesMod {
   
-  @JSImport("baconjs/types/skipduplicates", JSImport.Default)
+  @JSImport("baconjs/types/skipduplicates", JSImport.Namespace)
   @js.native
-  def default[A](src: typings.baconjs.observableMod.default[A]): typings.baconjs.observableMod.default[A] = js.native
-  @JSImport("baconjs/types/skipduplicates", JSImport.Default)
-  @js.native
-  def default[A](src: typings.baconjs.observableMod.default[A], isEqual: Equals[A]): typings.baconjs.observableMod.default[A] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/skipduplicates", "equals")
-  @js.native
-  def equals_[A](a: A, b: A): Boolean = js.native
+  @scala.inline
+  def default[A](src: typings.baconjs.observableMod.default[A]): typings.baconjs.observableMod.default[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[A]]
+  @scala.inline
+  def default[A](src: typings.baconjs.observableMod.default[A], isEqual: Equals[A]): typings.baconjs.observableMod.default[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[A]]
+  
+  @scala.inline
+  def equals_[A](a: A, b: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type Equals[A] = js.Function2[/* left */ A, /* right */ A, Boolean]
 }

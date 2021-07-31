@@ -2,41 +2,39 @@ package typings.dhtmlxscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerLocaleLabels extends StObject {
   
-  var confirm_closing: String = js.native
+  var confirm_closing: String
   
-  var confirm_deleting: String = js.native
+  var confirm_deleting: String
   
-  var day_tab: String = js.native
+  var day_tab: String
   
-  var dhx_cal_today_button: String = js.native
+  var dhx_cal_today_button: String
   
-  var icon_cancel: String = js.native
+  var icon_cancel: String
   
-  var icon_delete: String = js.native
+  var icon_delete: String
   
-  var icon_details: String = js.native
+  var icon_details: String
   
-  var icon_edit: String = js.native
+  var icon_edit: String
   
-  var icon_save: String = js.native
+  var icon_save: String
   
-  var month_tab: String = js.native
+  var month_tab: String
   
-  var new_event: String = js.native
+  var new_event: String
   
-  var section_description: String = js.native
+  var section_description: String
   
-  var section_time: String = js.native
+  var section_time: String
   
-  var unit_tab: String = js.native
+  var unit_tab: String
   
-  var week_tab: String = js.native
+  var week_tab: String
 }
 object SchedulerLocaleLabels {
   

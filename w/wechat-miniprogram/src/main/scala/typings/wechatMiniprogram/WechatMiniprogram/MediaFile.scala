@@ -2,30 +2,28 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 本地临时文件列表 */
-@js.native
 trait MediaFile extends StObject {
   
   /** 视频的时间长度 */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 视频的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 本地临时文件大小，单位 B */
-  var size: Double = js.native
+  var size: Double
   
   /** 本地临时文件路径 (本地路径) */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
   
   /** 视频缩略图临时文件路径 */
-  var thumbTempFilePath: String = js.native
+  var thumbTempFilePath: String
   
   /** 视频的宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object MediaFile {
   

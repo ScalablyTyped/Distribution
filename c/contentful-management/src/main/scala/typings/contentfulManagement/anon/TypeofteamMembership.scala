@@ -7,15 +7,13 @@ import typings.contentfulManagement.teamMembershipMod.TeamMembership
 import typings.contentfulManagement.teamMembershipMod.TeamMembershipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofteamMembership extends StObject {
   
-  def wrapTeamMembership(http: AxiosInstance, data: TeamMembershipProps): TeamMembership = js.native
+  def wrapTeamMembership(http: AxiosInstance, data: TeamMembershipProps): TeamMembership
   
-  def wrapTeamMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamMembershipProps]): Collection[TeamMembership, TeamMembershipProps] = js.native
+  def wrapTeamMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamMembershipProps]): Collection[TeamMembership, TeamMembershipProps]
 }
 object TypeofteamMembership {
   

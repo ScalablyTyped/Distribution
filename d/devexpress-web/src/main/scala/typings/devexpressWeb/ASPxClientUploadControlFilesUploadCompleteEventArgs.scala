@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.FilesUploadComplete client event, which enables you to perform specific actions after all selected files have been uploaded.
   */
-@js.native
-trait ASPxClientUploadControlFilesUploadCompleteEventArgs extends ASPxClientEventArgs {
+trait ASPxClientUploadControlFilesUploadCompleteEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a string that contains specific information (if any) passed from the server side for further client processing.
     */
-  var callbackData: String = js.native
+  var callbackData: String
   
   /**
     * Gets the error text to be displayed within the upload control's error frame.
     */
-  var errorText: String = js.native
+  var errorText: String
 }
 object ASPxClientUploadControlFilesUploadCompleteEventArgs {
   

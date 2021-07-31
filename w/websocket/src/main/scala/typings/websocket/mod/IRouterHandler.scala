@@ -2,19 +2,17 @@ package typings.websocket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouterHandler extends StObject {
   
-  def callback(request: IRouterRequest): Unit = js.native
+  def callback(request: IRouterRequest): Unit
   
-  var path: String = js.native
+  var path: String
   
-  var pathString: String = js.native
+  var pathString: String
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object IRouterHandler {
   

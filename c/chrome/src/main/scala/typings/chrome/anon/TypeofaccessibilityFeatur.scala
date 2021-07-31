@@ -3,37 +3,35 @@ package typings.chrome.anon
 import typings.chrome.chrome.types.ChromeSetting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofaccessibilityFeatur extends StObject {
   
-  var animationPolicy: ChromeSetting = js.native
+  var animationPolicy: ChromeSetting
   
-  var autoclick: ChromeSetting = js.native
+  var autoclick: ChromeSetting
   
-  var caretHighlight: ChromeSetting = js.native
+  var caretHighlight: ChromeSetting
   
-  var cursorHighlight: ChromeSetting = js.native
+  var cursorHighlight: ChromeSetting
   
-  var focusHighlight: ChromeSetting = js.native
+  var focusHighlight: ChromeSetting
   
-  var highContrast: ChromeSetting = js.native
+  var highContrast: ChromeSetting
   
-  var largeCursor: ChromeSetting = js.native
+  var largeCursor: ChromeSetting
   
-  var screenMagnifier: ChromeSetting = js.native
+  var screenMagnifier: ChromeSetting
   
-  var selectToSpeak: ChromeSetting = js.native
+  var selectToSpeak: ChromeSetting
   
-  var spokenFeedback: ChromeSetting = js.native
+  var spokenFeedback: ChromeSetting
   
-  var stickyKeys: ChromeSetting = js.native
+  var stickyKeys: ChromeSetting
   
-  var switchAccess: ChromeSetting = js.native
+  var switchAccess: ChromeSetting
   
-  var virtualKeyboard: ChromeSetting = js.native
+  var virtualKeyboard: ChromeSetting
 }
 object TypeofaccessibilityFeatur {
   

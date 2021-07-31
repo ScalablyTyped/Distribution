@@ -2,13 +2,13 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InfoUnitOptions extends InfoOptions {
+trait InfoUnitOptions
+  extends StObject
+     with InfoOptions {
   
-  var numberingSystem: js.UndefOr[NumberingSystem] = js.native
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
 }
 object InfoUnitOptions {
   

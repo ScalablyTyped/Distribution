@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceAccessDetailsResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about a get instance access request.
     */
-  var accessDetails: js.UndefOr[InstanceAccessDetails] = js.native
+  var accessDetails: js.UndefOr[InstanceAccessDetails] = js.undefined
 }
 object GetInstanceAccessDetailsResult {
   

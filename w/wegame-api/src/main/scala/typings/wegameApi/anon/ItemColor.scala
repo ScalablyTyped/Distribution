@@ -2,27 +2,25 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemColor extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 按钮的文字颜色，默认值#000000
     */
-  var itemColor: js.UndefOr[String] = js.native
+  var itemColor: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮的文字数组，数组长度最大为 6
     */
-  var itemList: js.Array[String] = js.native
+  var itemList: js.Array[String]
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ItemColor {
   

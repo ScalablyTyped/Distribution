@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSitemapsList extends StandardParameters {
+trait ParamsResourceSitemapsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The site's URL, including protocol. For example: http://www.example.com/
     */
-  var siteUrl: js.UndefOr[String] = js.native
+  var siteUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A URL of a site's sitemap index. For example:
     * http://www.example.com/sitemapindex.xml
     */
-  var sitemapIndex: js.UndefOr[String] = js.native
+  var sitemapIndex: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSitemapsList {
   

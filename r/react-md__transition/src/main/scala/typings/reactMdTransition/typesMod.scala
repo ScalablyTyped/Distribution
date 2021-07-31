@@ -7,22 +7,20 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   /* Inlined parent std.Omit<@react-md/transition.@react-md/transition/types/types.TransitionOptions<E>, 'repaint'> */
-  @js.native
   trait CSSTransitionOptions[E /* <: HTMLElement */] extends StObject {
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className that should ge merged with the CSS transition class
       * name based on the current transition stage.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * The transition class names to apply. Unlike in `react-transition-group`, if
@@ -62,31 +60,31 @@ object typesMod {
       * }
       * ```
       */
-    var classNames: CSSTransitionClassNames | String = js.native
+    var classNames: CSSTransitionClassNames | String
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var onEnter: js.UndefOr[EnterHandler[E]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntered: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntering: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onExit: js.UndefOr[ExitHandler[E]] = js.native
+    var onExit: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExited: js.UndefOr[ExitHandler[E]] = js.native
+    var onExited: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExiting: js.UndefOr[ExitHandler[E]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var ref: js.UndefOr[Ref[E]] = js.native
+    var ref: js.UndefOr[Ref[E]] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: TransitionTimeout = js.native
+    var timeout: TransitionTimeout
     
-    var transitionIn: Boolean = js.native
+    var transitionIn: Boolean
   }
   object CSSTransitionOptions {
     
@@ -97,7 +95,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class CSSTransitionOptionsMutableBuilder[Self <: CSSTransitionOptions[_], E /* <: HTMLElement */] (val x: Self with CSSTransitionOptions[E]) extends AnyVal {
+    implicit class CSSTransitionOptionsMutableBuilder[Self <: CSSTransitionOptions[?], E /* <: HTMLElement */] (val x: Self & CSSTransitionOptions[E]) extends AnyVal {
       
       @scala.inline
       def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
@@ -188,14 +186,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait CSSTransitionProvidedProps[E /* <: HTMLElement */] extends StObject {
     
     /**
       * The current class name based on the provided `className` options and the
       * state in the transition.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * A ref that **must** be passed to the element that is triggering a CSS
@@ -203,7 +200,7 @@ object typesMod {
       * the ref is still `null` or the `ref` was passed to a component instance
       * instead of a DOM node.
       */
-    var ref: RefCallback[E] = js.native
+    var ref: RefCallback[E]
   }
   object CSSTransitionProvidedProps {
     
@@ -214,7 +211,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class CSSTransitionProvidedPropsMutableBuilder[Self <: CSSTransitionProvidedProps[_], E /* <: HTMLElement */] (val x: Self with CSSTransitionProvidedProps[E]) extends AnyVal {
+    implicit class CSSTransitionProvidedPropsMutableBuilder[Self <: CSSTransitionProvidedProps[?], E /* <: HTMLElement */] (val x: Self & CSSTransitionProvidedProps[E]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -228,20 +225,19 @@ object typesMod {
   }
   
   /* Inlined parent std.Omit<@react-md/transition.@react-md/transition/types/types.TransitionOptions<E>, 'repaint' | 'transitionIn' | 'timeout'> */
-  @js.native
   trait CollapseOptions[E /* <: HTMLElement */] extends StObject {
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className to merge with the current collapse transition
       * className.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The minimum height that the collapsed element can be which defaults to `0`.
@@ -255,7 +251,7 @@ object typesMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The minimum padding-bottom that the collapsed element can be which defaults
@@ -266,7 +262,7 @@ object typesMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minPaddingBottom: js.UndefOr[Double | String] = js.native
+    var minPaddingBottom: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The minimum padding-top that the collapsed element can be which defaults to
@@ -277,29 +273,29 @@ object typesMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minPaddingTop: js.UndefOr[Double | String] = js.native
+    var minPaddingTop: js.UndefOr[Double | String] = js.undefined
     
-    var onEnter: js.UndefOr[EnterHandler[E]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntered: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntering: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onExit: js.UndefOr[ExitHandler[E]] = js.native
+    var onExit: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExited: js.UndefOr[ExitHandler[E]] = js.native
+    var onExited: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExiting: js.UndefOr[ExitHandler[E]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var ref: js.UndefOr[Ref[E]] = js.native
+    var ref: js.UndefOr[Ref[E]] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timeout for the collapse transition. This will default to 250ms enter
       * and 200ms exit.
       */
-    var timeout: js.UndefOr[TransitionTimeout] = js.native
+    var timeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object CollapseOptions {
     
@@ -310,7 +306,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class CollapseOptionsMutableBuilder[Self <: CollapseOptions[_], E /* <: HTMLElement */] (val x: Self with CollapseOptions[E]) extends AnyVal {
+    implicit class CollapseOptionsMutableBuilder[Self <: CollapseOptions[?], E /* <: HTMLElement */] (val x: Self & CollapseOptions[E]) extends AnyVal {
       
       @scala.inline
       def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
@@ -416,20 +412,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait CollapseTransitionProvidedProps[E /* <: HTMLElement */] extends StObject {
     
     /**
       * The class name to apply that will allow for the element to transition
       * between collapsed states.
       */
-    var className: String = js.native
+    var className: String
     
     /**
       * The `hidden` DOM attribute that will be enabled if the component is fully
       * collapsed with no height and padding but still rendered within the DOM.
       */
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
     /**
       * A ref that **must** be passed to the element that is triggering a CSS
@@ -437,14 +432,14 @@ object typesMod {
       * the ref is still `null` or the `ref` was passed to a component instance
       * instead of a DOM node.
       */
-    var ref: RefCallback[E] = js.native
+    var ref: RefCallback[E]
     
     /**
       * A conditional style that will provide the required `max-height`,
       * `padding-top`, `padding-bottom`, and `transition-duration` styles required
       * for the collapse transition.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CollapseTransitionProvidedProps {
     
@@ -455,7 +450,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class CollapseTransitionProvidedPropsMutableBuilder[Self <: CollapseTransitionProvidedProps[_], E /* <: HTMLElement */] (val x: Self with CollapseTransitionProvidedProps[E]) extends AnyVal {
+    implicit class CollapseTransitionProvidedPropsMutableBuilder[Self <: CollapseTransitionProvidedProps[?], E /* <: HTMLElement */] (val x: Self & CollapseTransitionProvidedProps[E]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -479,7 +474,6 @@ object typesMod {
   type ExitHandler[E /* <: HTMLElement */] = js.Function1[/* node */ E, Unit]
   
   /* Inlined @react-md/transition.@react-md/transition/types/types.OverridableTransitionProps & std.Pick<react-transition-group.react-transition-group/CSSTransition.CSSTransitionProps<undefined>, 'classNames'> */
-  @js.native
   trait OverridableCSSTransitionProps extends StObject {
     
     /**
@@ -489,39 +483,39 @@ object typesMod {
       * as the `<Transition>` mounts. Note: there are no specific "appear" states.
       * appear only adds an additional enter transition.
       */
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
-    var classNames: js.UndefOr[js.Any] = js.native
+    var classNames: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Enable or disable enter transitions.
       */
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable exit transitions.
       */
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.native
+    var in: js.UndefOr[js.Any] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.native
+    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[TransitionTimeout] = js.native
+    var timeout: js.UndefOr[TransitionTimeout] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.native
+    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
   }
   object OverridableCSSTransitionProps {
     
@@ -622,7 +616,6 @@ object typesMod {
   
   /* Inlined parent react-transition-group.react-transition-group/Transition.TransitionActions */
   /* Inlined parent std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @react-md/transition.@react-md/transition/types/types.TransitionKeys> */
-  @js.native
   trait OverridableTransitionProps extends StObject {
     
     /**
@@ -632,37 +625,37 @@ object typesMod {
       * as the `<Transition>` mounts. Note: there are no specific "appear" states.
       * appear only adds an additional enter transition.
       */
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable enter transitions.
       */
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable exit transitions.
       */
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.native
+    var in: js.UndefOr[js.Any] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.native
+    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[TransitionTimeout] = js.native
+    var timeout: js.UndefOr[TransitionTimeout] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.native
+    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
   }
   object OverridableTransitionProps {
     
@@ -755,7 +748,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TransitionCallbacks[E /* <: HTMLElement */] extends StObject {
     
     /**
@@ -765,7 +757,7 @@ object typesMod {
       *
       * This will be fired right after the `transitionIn` is set to `true`.
       */
-    var onEnter: js.UndefOr[EnterHandler[E]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[E]] = js.undefined
     
     /**
       * An optional entered handler that can be used to determine additional
@@ -774,7 +766,7 @@ object typesMod {
       *
       * This will be fired once the transition has finished.
       */
-    var onEntered: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[E]] = js.undefined
     
     /**
       * An optional entering handler that can be used to determine additional
@@ -785,7 +777,7 @@ object typesMod {
       * However, if the `repaint` option was enabled, it will ensure the DOM as
       * been repainted before firing to help with CSS transitions.
       */
-    var onEntering: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[E]] = js.undefined
     
     /**
       * An optional exit handler that can be used to determine additional
@@ -794,7 +786,7 @@ object typesMod {
       *
       * This will be fired right after the `transitionIn` is set to `false`.
       */
-    var onExit: js.UndefOr[ExitHandler[E]] = js.native
+    var onExit: js.UndefOr[ExitHandler[E]] = js.undefined
     
     /**
       * An optional entered handler that can be used to determine additional
@@ -806,7 +798,7 @@ object typesMod {
       * Note: If the `temporary` option was enabled, the `rendered` result will be
       * `false` and the node actually won't exist in the DOM anymore.
       */
-    var onExited: js.UndefOr[ExitHandler[E]] = js.native
+    var onExited: js.UndefOr[ExitHandler[E]] = js.undefined
     
     /**
       * An optional exit handler that can be used to determine additional
@@ -817,7 +809,7 @@ object typesMod {
       * if the `repaint` option was enabled, it will ensure the DOM as been
       * repainted before firing to help with CSS transitions.
       */
-    var onExiting: js.UndefOr[ExitHandler[E]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[E]] = js.undefined
   }
   object TransitionCallbacks {
     
@@ -828,7 +820,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class TransitionCallbacksMutableBuilder[Self <: TransitionCallbacks[_], E /* <: HTMLElement */] (val x: Self with TransitionCallbacks[E]) extends AnyVal {
+    implicit class TransitionCallbacksMutableBuilder[Self <: TransitionCallbacks[?], E /* <: HTMLElement */] (val x: Self & TransitionCallbacks[E]) extends AnyVal {
       
       @scala.inline
       def setOnEnter(value: (E, /* isAppearing */ Boolean) => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
@@ -910,40 +902,41 @@ object typesMod {
     def unmountOnExit: typings.reactMdTransition.reactMdTransitionStrings.unmountOnExit = "unmountOnExit".asInstanceOf[typings.reactMdTransition.reactMdTransitionStrings.unmountOnExit]
   }
   
-  @js.native
-  trait TransitionOptions[E /* <: HTMLElement */] extends TransitionCallbacks[E] {
+  trait TransitionOptions[E /* <: HTMLElement */]
+    extends StObject
+       with TransitionCallbacks[E] {
     
     /**
       * Boolean if the transition should also be triggered immediately once the
       * component mounts. This is generally not recommended for server side
       * rendering/initial page load so it is set to `false` by default.
       */
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the transition should allow for an enter animation once the
       * `transitionIn` booleanis set to `true`.
       */
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the transition should allow for an exit animation once the
       * `transitionIn` booleanis set to `false`.
       */
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional ref that will get merged with the required ref for the
       * transition to work.
       */
-    var ref: js.UndefOr[Ref[E]] = js.native
+    var ref: js.UndefOr[Ref[E]] = js.undefined
     
     /**
       * Boolean if the transition should force a DOM repaint before triggering the
       * next stage. Defaults to `false` since it's only really recommended for DOM
       * and CSS transitions.
       */
-    var repaint: js.UndefOr[Boolean] = js.native
+    var repaint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the component should mount and unmount based on the current
@@ -960,7 +953,7 @@ object typesMod {
       * state, you will need to also change the `key` to get the component to
       * re-mount.
       */
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The transition timeout to use for each stage. Just like in
@@ -976,7 +969,7 @@ object typesMod {
       * `appear` option was enabled for the transition, it will instead default to
       * the `enter` duration.
       */
-    var timeout: TransitionTimeout = js.native
+    var timeout: TransitionTimeout
     
     /**
       * Changing this boolean will trigger a transition between the six stagees:
@@ -994,7 +987,7 @@ object typesMod {
       * Changing from `true` to `false`, the stagees will change in this order:
       * `ENTERED` -> `EXIT` -> `EXITING` -> `EXITED`
       */
-    var transitionIn: Boolean = js.native
+    var transitionIn: Boolean
   }
   object TransitionOptions {
     
@@ -1005,7 +998,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions[_], E /* <: HTMLElement */] (val x: Self with TransitionOptions[E]) extends AnyVal {
+    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions[?], E /* <: HTMLElement */] (val x: Self & TransitionOptions[E]) extends AnyVal {
       
       @scala.inline
       def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])

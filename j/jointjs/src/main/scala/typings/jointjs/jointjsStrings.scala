@@ -20,7 +20,6 @@ import typings.jointjs.mod.routers.RouterArguments
 import typings.jointjs.mod.routers.RouterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jointjsStrings {
@@ -31,17 +30,23 @@ object jointjsStrings {
   def BT: BT = "BT".asInstanceOf[BT]
   
   @js.native
-  sealed trait C extends SegmentType
+  sealed trait C
+    extends StObject
+       with SegmentType
   @scala.inline
   def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait E extends CardinalDirection
+  sealed trait E
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   
   @js.native
-  sealed trait L extends SegmentType
+  sealed trait L
+    extends StObject
+       with SegmentType
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
@@ -51,22 +56,30 @@ object jointjsStrings {
   def LR: LR = "LR".asInstanceOf[LR]
   
   @js.native
-  sealed trait M extends SegmentType
+  sealed trait M
+    extends StObject
+       with SegmentType
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait N extends CardinalDirection
+  sealed trait N
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def N: N = "N".asInstanceOf[N]
   
   @js.native
-  sealed trait NE extends CardinalDirection
+  sealed trait NE
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def NE: NE = "NE".asInstanceOf[NE]
   
   @js.native
-  sealed trait NW extends CardinalDirection
+  sealed trait NW
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def NW: NW = "NW".asInstanceOf[NW]
   
@@ -76,17 +89,23 @@ object jointjsStrings {
   def RL: RL = "RL".asInstanceOf[RL]
   
   @js.native
-  sealed trait S extends CardinalDirection
+  sealed trait S
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait SE extends CardinalDirection
+  sealed trait SE
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
-  sealed trait SW extends CardinalDirection
+  sealed trait SW
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def SW: SW = "SW".asInstanceOf[SW]
   
@@ -96,22 +115,30 @@ object jointjsStrings {
   def TB: TB = "TB".asInstanceOf[TB]
   
   @js.native
-  sealed trait W extends CardinalDirection
+  sealed trait W
+    extends StObject
+       with CardinalDirection
   @scala.inline
   def W: W = "W".asInstanceOf[W]
   
   @js.native
-  sealed trait Z extends SegmentType
+  sealed trait Z
+    extends StObject
+       with SegmentType
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
-  sealed trait addClass extends HighlighterType
+  sealed trait addClass
+    extends StObject
+       with HighlighterType
   @scala.inline
   def addClass: addClass = "addClass".asInstanceOf[addClass]
   
   @js.native
-  sealed trait anchor extends ConnectionPointType
+  sealed trait anchor
+    extends StObject
+       with ConnectionPointType
   @scala.inline
   def anchor: anchor = "anchor".asInstanceOf[anchor]
   
@@ -126,7 +153,9 @@ object jointjsStrings {
   def arc: arc = "arc".asInstanceOf[arc]
   
   @js.native
-  sealed trait attrs extends HighlighterArguments
+  sealed trait attrs
+    extends StObject
+       with HighlighterArguments
   @scala.inline
   def attrs: attrs = "attrs".asInstanceOf[attrs]
   
@@ -136,7 +165,9 @@ object jointjsStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bbox extends ConnectionPointType
+  sealed trait bbox
+    extends StObject
+       with ConnectionPointType
   @scala.inline
   def bbox: bbox = "bbox".asInstanceOf[bbox]
   
@@ -147,7 +178,8 @@ object jointjsStrings {
   
   @js.native
   sealed trait bottom
-    extends AnchorType
+    extends StObject
+       with AnchorType
        with ConnectionPointAlignment
        with Direction
        with OrthogonalDirection
@@ -157,17 +189,23 @@ object jointjsStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-left` extends Direction
+  sealed trait `bottom-left`
+    extends StObject
+       with Direction
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends Direction
+  sealed trait `bottom-right`
+    extends StObject
+       with Direction
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait bottomLeft extends AnchorType
+  sealed trait bottomLeft
+    extends StObject
+       with AnchorType
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
@@ -177,12 +215,16 @@ object jointjsStrings {
   def bottomMiddle: bottomMiddle = "bottomMiddle".asInstanceOf[bottomMiddle]
   
   @js.native
-  sealed trait bottomRight extends AnchorType
+  sealed trait bottomRight
+    extends StObject
+       with AnchorType
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
-  sealed trait boundary extends ConnectionPointType
+  sealed trait boundary
+    extends StObject
+       with ConnectionPointType
   @scala.inline
   def boundary: boundary = "boundary".asInstanceOf[boundary]
   
@@ -197,32 +239,44 @@ object jointjsStrings {
   def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
-  sealed trait center extends AnchorType
+  sealed trait center
+    extends StObject
+       with AnchorType
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait className extends HighlighterArguments
+  sealed trait className
+    extends StObject
+       with HighlighterArguments
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   
   @js.native
-  sealed trait connectionClosest extends AnchorType
+  sealed trait connectionClosest
+    extends StObject
+       with AnchorType
   @scala.inline
   def connectionClosest: connectionClosest = "connectionClosest".asInstanceOf[connectionClosest]
   
   @js.native
-  sealed trait connectionLength extends AnchorType
+  sealed trait connectionLength
+    extends StObject
+       with AnchorType
   @scala.inline
   def connectionLength: connectionLength = "connectionLength".asInstanceOf[connectionLength]
   
   @js.native
-  sealed trait connectionPerpendicular extends AnchorType
+  sealed trait connectionPerpendicular
+    extends StObject
+       with AnchorType
   @scala.inline
   def connectionPerpendicular: connectionPerpendicular = "connectionPerpendicular".asInstanceOf[connectionPerpendicular]
   
   @js.native
-  sealed trait connectionRatio extends AnchorType
+  sealed trait connectionRatio
+    extends StObject
+       with AnchorType
   @scala.inline
   def connectionRatio: connectionRatio = "connectionRatio".asInstanceOf[connectionRatio]
   
@@ -257,47 +311,65 @@ object jointjsStrings {
   def dropShadow: dropShadow = "dropShadow".asInstanceOf[dropShadow]
   
   @js.native
-  sealed trait dx extends AnchorArguments
+  sealed trait dx
+    extends StObject
+       with AnchorArguments
   @scala.inline
   def dx: dx = "dx".asInstanceOf[dx]
   
   @js.native
-  sealed trait dy extends AnchorArguments
+  sealed trait dy
+    extends StObject
+       with AnchorArguments
   @scala.inline
   def dy: dy = "dy".asInstanceOf[dy]
   
   @js.native
-  sealed trait elementPadding extends RouterArguments
+  sealed trait elementPadding
+    extends StObject
+       with RouterArguments
   @scala.inline
   def elementPadding: elementPadding = "elementPadding".asInstanceOf[elementPadding]
   
   @js.native
-  sealed trait endDirections extends RouterArguments
+  sealed trait endDirections
+    extends StObject
+       with RouterArguments
   @scala.inline
   def endDirections: endDirections = "endDirections".asInstanceOf[endDirections]
   
   @js.native
-  sealed trait excludeEnds extends RouterArguments
+  sealed trait excludeEnds
+    extends StObject
+       with RouterArguments
   @scala.inline
   def excludeEnds: excludeEnds = "excludeEnds".asInstanceOf[excludeEnds]
   
   @js.native
-  sealed trait excludeTypes extends RouterArguments
+  sealed trait excludeTypes
+    extends StObject
+       with RouterArguments
   @scala.inline
   def excludeTypes: excludeTypes = "excludeTypes".asInstanceOf[excludeTypes]
   
   @js.native
-  sealed trait extrapolate extends ConnectionPointArguments
+  sealed trait extrapolate
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def extrapolate: extrapolate = "extrapolate".asInstanceOf[extrapolate]
   
   @js.native
-  sealed trait fallbackAt extends AnchorArguments
+  sealed trait fallbackAt
+    extends StObject
+       with AnchorArguments
   @scala.inline
   def fallbackAt: fallbackAt = "fallbackAt".asInstanceOf[fallbackAt]
   
   @js.native
-  sealed trait fixedAt extends AnchorArguments
+  sealed trait fixedAt
+    extends StObject
+       with AnchorArguments
   @scala.inline
   def fixedAt: fixedAt = "fixedAt".asInstanceOf[fixedAt]
   
@@ -327,7 +399,9 @@ object jointjsStrings {
   def hueRotate: hueRotate = "hueRotate".asInstanceOf[hueRotate]
   
   @js.native
-  sealed trait insideout extends ConnectionPointArguments
+  sealed trait insideout
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def insideout: insideout = "insideout".asInstanceOf[insideout]
   
@@ -337,12 +411,16 @@ object jointjsStrings {
   def invert: invert = "invert".asInstanceOf[invert]
   
   @js.native
-  sealed trait jump extends ConnectorArguments
+  sealed trait jump
+    extends StObject
+       with ConnectorArguments
   @scala.inline
   def jump: jump = "jump".asInstanceOf[jump]
   
   @js.native
-  sealed trait jumpover extends ConnectorType
+  sealed trait jumpover
+    extends StObject
+       with ConnectorType
   @scala.inline
   def jumpover: jumpover = "jumpover".asInstanceOf[jumpover]
   
@@ -353,7 +431,8 @@ object jointjsStrings {
   
   @js.native
   sealed trait left
-    extends AnchorType
+    extends StObject
+       with AnchorType
        with ConnectionPointAlignment
        with Direction
        with OrthogonalDirection
@@ -367,7 +446,9 @@ object jointjsStrings {
   def leftMiddle: leftMiddle = "leftMiddle".asInstanceOf[leftMiddle]
   
   @js.native
-  sealed trait length extends AnchorArguments
+  sealed trait length
+    extends StObject
+       with AnchorArguments
   @scala.inline
   def length: length = "length".asInstanceOf[length]
   
@@ -382,17 +463,23 @@ object jointjsStrings {
   def `longest-path`: `longest-path` = "longest-path".asInstanceOf[`longest-path`]
   
   @js.native
-  sealed trait manhattan extends RouterType
+  sealed trait manhattan
+    extends StObject
+       with RouterType
   @scala.inline
   def manhattan: manhattan = "manhattan".asInstanceOf[manhattan]
   
   @js.native
-  sealed trait maxAllowedDirectionChange extends RouterArguments
+  sealed trait maxAllowedDirectionChange
+    extends StObject
+       with RouterArguments
   @scala.inline
   def maxAllowedDirectionChange: maxAllowedDirectionChange = "maxAllowedDirectionChange".asInstanceOf[maxAllowedDirectionChange]
   
   @js.native
-  sealed trait maximumLoops extends RouterArguments
+  sealed trait maximumLoops
+    extends StObject
+       with RouterArguments
   @scala.inline
   def maximumLoops: maximumLoops = "maximumLoops".asInstanceOf[maximumLoops]
   
@@ -402,22 +489,30 @@ object jointjsStrings {
   def mesh: mesh = "mesh".asInstanceOf[mesh]
   
   @js.native
-  sealed trait metro extends RouterType
+  sealed trait metro
+    extends StObject
+       with RouterType
   @scala.inline
   def metro: metro = "metro".asInstanceOf[metro]
   
   @js.native
-  sealed trait midSide extends AnchorType
+  sealed trait midSide
+    extends StObject
+       with AnchorType
   @scala.inline
   def midSide: midSide = "midSide".asInstanceOf[midSide]
   
   @js.native
-  sealed trait middle extends TextVerticalAnchor
+  sealed trait middle
+    extends StObject
+       with TextVerticalAnchor
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait modelCenter extends AnchorType
+  sealed trait modelCenter
+    extends StObject
+       with AnchorType
   @scala.inline
   def modelCenter: modelCenter = "modelCenter".asInstanceOf[modelCenter]
   
@@ -433,23 +528,30 @@ object jointjsStrings {
   
   @js.native
   sealed trait normal
-    extends ConnectorType
+    extends StObject
+       with ConnectorType
        with RouterType
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait offset extends ConnectionPointArguments
+  sealed trait offset
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
-  sealed trait oneSide extends RouterType
+  sealed trait oneSide
+    extends StObject
+       with RouterType
   @scala.inline
   def oneSide: oneSide = "oneSide".asInstanceOf[oneSide]
   
   @js.native
-  sealed trait opacity extends HighlighterType
+  sealed trait opacity
+    extends StObject
+       with HighlighterType
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   
@@ -459,7 +561,9 @@ object jointjsStrings {
   def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
-  sealed trait orthogonal extends RouterType
+  sealed trait orthogonal
+    extends StObject
+       with RouterType
   @scala.inline
   def orthogonal: orthogonal = "orthogonal".asInstanceOf[orthogonal]
   
@@ -470,7 +574,8 @@ object jointjsStrings {
   
   @js.native
   sealed trait padding
-    extends AnchorArguments
+    extends StObject
+       with AnchorArguments
        with HighlighterArguments
        with RouterArguments
   @scala.inline
@@ -478,7 +583,8 @@ object jointjsStrings {
   
   @js.native
   sealed trait perpendicular
-    extends AnchorType
+    extends StObject
+       with AnchorType
        with RouterArguments
   @scala.inline
   def perpendicular: perpendicular = "perpendicular".asInstanceOf[perpendicular]
@@ -489,7 +595,9 @@ object jointjsStrings {
   def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait precision extends ConnectionPointArguments
+  sealed trait precision
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def precision: precision = "precision".asInstanceOf[precision]
   
@@ -504,23 +612,30 @@ object jointjsStrings {
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
-  sealed trait radius extends ConnectorArguments
+  sealed trait radius
+    extends StObject
+       with ConnectorArguments
   @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
   
   @js.native
-  sealed trait raw extends ConnectorArguments
+  sealed trait raw
+    extends StObject
+       with ConnectorArguments
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait rectangle extends ConnectionPointType
+  sealed trait rectangle
+    extends StObject
+       with ConnectionPointType
   @scala.inline
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
   sealed trait right
-    extends AnchorType
+    extends StObject
+       with AnchorType
        with ConnectionPointAlignment
        with Direction
        with OrthogonalDirection
@@ -534,17 +649,23 @@ object jointjsStrings {
   def rightMiddle: rightMiddle = "rightMiddle".asInstanceOf[rightMiddle]
   
   @js.native
-  sealed trait rounded extends ConnectorType
+  sealed trait rounded
+    extends StObject
+       with ConnectorType
   @scala.inline
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   
   @js.native
-  sealed trait rx extends HighlighterArguments
+  sealed trait rx
+    extends StObject
+       with HighlighterArguments
   @scala.inline
   def rx: rx = "rx".asInstanceOf[rx]
   
   @js.native
-  sealed trait ry extends HighlighterArguments
+  sealed trait ry
+    extends StObject
+       with HighlighterArguments
   @scala.inline
   def ry: ry = "ry".asInstanceOf[ry]
   
@@ -554,7 +675,9 @@ object jointjsStrings {
   def saturate: saturate = "saturate".asInstanceOf[saturate]
   
   @js.native
-  sealed trait selector extends ConnectionPointArguments
+  sealed trait selector
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   
@@ -564,49 +687,66 @@ object jointjsStrings {
   def sepia: sepia = "sepia".asInstanceOf[sepia]
   
   @js.native
-  sealed trait side extends RouterArguments
+  sealed trait side
+    extends StObject
+       with RouterArguments
   @scala.inline
   def side: side = "side".asInstanceOf[side]
   
   @js.native
-  sealed trait size extends ConnectorArguments
+  sealed trait size
+    extends StObject
+       with ConnectorArguments
   @scala.inline
   def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait smooth extends ConnectorType
+  sealed trait smooth
+    extends StObject
+       with ConnectorType
   @scala.inline
   def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
-  sealed trait source extends LinkEnd
+  sealed trait source
+    extends StObject
+       with LinkEnd
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   
   @js.native
-  sealed trait startDirections extends RouterArguments
+  sealed trait startDirections
+    extends StObject
+       with RouterArguments
   @scala.inline
   def startDirections: startDirections = "startDirections".asInstanceOf[startDirections]
   
   @js.native
-  sealed trait step extends RouterArguments
+  sealed trait step
+    extends StObject
+       with RouterArguments
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait sticky extends ConnectionPointArguments
+  sealed trait sticky
+    extends StObject
+       with ConnectionPointArguments
   @scala.inline
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   
   @js.native
   sealed trait stroke
-    extends ConnectionPointArguments
+    extends StObject
+       with ConnectionPointArguments
        with HighlighterType
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   
   @js.native
-  sealed trait target extends LinkEnd
+  sealed trait target
+    extends StObject
+       with LinkEnd
   @scala.inline
   def target: target = "target".asInstanceOf[target]
   
@@ -617,7 +757,8 @@ object jointjsStrings {
   
   @js.native
   sealed trait top
-    extends AnchorType
+    extends StObject
+       with AnchorType
        with ConnectionPointAlignment
        with Direction
        with OrthogonalDirection
@@ -627,17 +768,23 @@ object jointjsStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-left` extends Direction
+  sealed trait `top-left`
+    extends StObject
+       with Direction
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right` extends Direction
+  sealed trait `top-right`
+    extends StObject
+       with Direction
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait topLeft extends AnchorType
+  sealed trait topLeft
+    extends StObject
+       with AnchorType
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
@@ -647,12 +794,16 @@ object jointjsStrings {
   def topMiddle: topMiddle = "topMiddle".asInstanceOf[topMiddle]
   
   @js.native
-  sealed trait topRight extends AnchorType
+  sealed trait topRight
+    extends StObject
+       with AnchorType
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
-  sealed trait z_ extends SegmentType
+  sealed trait z_
+    extends StObject
+       with SegmentType
   @scala.inline
   def z_ : z_ = "z".asInstanceOf[z_]
 }

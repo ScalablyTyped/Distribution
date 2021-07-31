@@ -2,17 +2,15 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespaceLocateResult[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
   
-  val args: js.Array[String] = js.native
+  val args: js.Array[String]
   
-  val obj: C | N = js.native
+  val obj: C | N
   
-  val path: js.Array[CommandPathItem[C, N, M, I, O]] = js.native
+  val path: js.Array[CommandPathItem[C, N, M, I, O]]
 }
 object NamespaceLocateResult {
   
@@ -23,7 +21,7 @@ object NamespaceLocateResult {
   }
   
   @scala.inline
-  implicit class NamespaceLocateResultMutableBuilder[Self <: NamespaceLocateResult[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (NamespaceLocateResult[C, N, M, I, O])) extends AnyVal {
+  implicit class NamespaceLocateResultMutableBuilder[Self <: NamespaceLocateResult[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (NamespaceLocateResult[C, N, M, I, O])) extends AnyVal {
     
     @scala.inline
     def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])

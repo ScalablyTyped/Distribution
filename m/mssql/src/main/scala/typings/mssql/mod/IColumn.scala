@@ -2,17 +2,17 @@ package typings.mssql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IColumn extends ISqlType {
+trait IColumn
+  extends StObject
+     with ISqlType {
   
-  var name: String = js.native
+  var name: String
   
-  var nullable: Boolean = js.native
+  var nullable: Boolean
   
-  var primary: Boolean = js.native
+  var primary: Boolean
 }
 object IColumn {
   

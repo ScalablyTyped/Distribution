@@ -3,17 +3,15 @@ package typings.reactMapGl.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapRequest extends StObject {
   
-  var credentials: js.UndefOr[String] = js.native
+  var credentials: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object MapRequest {
   

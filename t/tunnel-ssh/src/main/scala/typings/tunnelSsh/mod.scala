@@ -8,32 +8,30 @@ import typings.tunnelSsh.anon.Cipher
 import typings.tunnelSsh.tunnelSshStrings.force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tunnel-ssh", JSImport.Namespace)
-  @js.native
-  def apply(): Server = js.native
-  @JSImport("tunnel-ssh", JSImport.Namespace)
-  @js.native
-  def apply(config: js.UndefOr[scala.Nothing], cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = js.native
-  @JSImport("tunnel-ssh", JSImport.Namespace)
-  @js.native
-  def apply(config: Config): Server = js.native
-  @JSImport("tunnel-ssh", JSImport.Namespace)
-  @js.native
-  def apply(config: Config, cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = js.native
+  @scala.inline
+  def apply(): Server = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Server]
+  @scala.inline
+  def apply(config: Unit, cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
+  @scala.inline
+  def apply(config: Config): Server = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def apply(config: Config, cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
   
+  @JSImport("tunnel-ssh", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Config extends StObject {
     
-    var agent: js.UndefOr[String] = js.native
+    var agent: js.UndefOr[String] = js.undefined
     
-    var agentForward: js.UndefOr[Boolean] = js.native
+    var agentForward: js.UndefOr[Boolean] = js.undefined
     
-    var algorithms: js.UndefOr[Cipher] = js.native
+    var algorithms: js.UndefOr[Cipher] = js.undefined
     
     var authHandler: js.UndefOr[
         js.Function3[
@@ -42,23 +40,23 @@ object mod {
           /* cb */ js.Function1[/* nextMethod */ String, Unit], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var compress: js.UndefOr[force | Boolean] = js.native
+    var compress: js.UndefOr[force | Boolean] = js.undefined
     
-    var debug: js.UndefOr[js.Function1[/* info */ String, Unit]] = js.native
+    var debug: js.UndefOr[js.Function1[/* info */ String, Unit]] = js.undefined
     
-    var dstHost: js.UndefOr[String] = js.native
+    var dstHost: js.UndefOr[String] = js.undefined
     
-    var dstPort: js.UndefOr[Double] = js.native
+    var dstPort: js.UndefOr[Double] = js.undefined
     
-    var forceIPv4: js.UndefOr[Boolean] = js.native
+    var forceIPv4: js.UndefOr[Boolean] = js.undefined
     
-    var forceIPv6: js.UndefOr[Boolean] = js.native
+    var forceIPv6: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostHast: js.UndefOr[String] = js.native
+    var hostHast: js.UndefOr[String] = js.undefined
     
     var hostVerifier: js.UndefOr[
         js.Function2[
@@ -66,41 +64,41 @@ object mod {
           /* repeated */ js.Function1[/* doContinue */ Boolean, Unit], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var keepaliveCountMax: js.UndefOr[Double] = js.native
+    var keepaliveCountMax: js.UndefOr[Double] = js.undefined
     
-    var keepaliveInterval: js.UndefOr[Double] = js.native
+    var keepaliveInterval: js.UndefOr[Double] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var localHost: js.UndefOr[String] = js.native
+    var localHost: js.UndefOr[String] = js.undefined
     
-    var localHostname: js.UndefOr[String] = js.native
+    var localHostname: js.UndefOr[String] = js.undefined
     
-    var localPort: js.UndefOr[Double] = js.native
+    var localPort: js.UndefOr[Double] = js.undefined
     
-    var localUsername: js.UndefOr[String] = js.native
+    var localUsername: js.UndefOr[String] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var privateKey: js.UndefOr[Buffer | String] = js.native
+    var privateKey: js.UndefOr[Buffer | String] = js.undefined
     
-    var readyTimeout: js.UndefOr[Double] = js.native
+    var readyTimeout: js.UndefOr[Double] = js.undefined
     
-    var sock: js.UndefOr[ReadableStream] = js.native
+    var sock: js.UndefOr[ReadableStream] = js.undefined
     
-    var strictVendor: js.UndefOr[Boolean] = js.native
+    var strictVendor: js.UndefOr[Boolean] = js.undefined
     
-    var tryKeyboard: js.UndefOr[Boolean] = js.native
+    var tryKeyboard: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Config {
     

@@ -3,13 +3,13 @@ package typings.mongodb.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictindex extends /* index */ StringDictionary[Double] {
+trait Dictindex
+  extends StObject
+     with /* index */ StringDictionary[Double] {
   
-  var _id_ : Double = js.native
+  var _id_ : Double
 }
 object Dictindex {
   

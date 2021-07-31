@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMContainerProperties extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait DOMContainerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#container)
     */
-  var container: js.UndefOr[HTMLDivElement | String] = js.native
+  var container: js.UndefOr[HTMLDivElement | String] = js.undefined
   
   /**
     * A Popup object that displays general content or attributes from [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#map).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#popup)
     */
-  var popup: js.UndefOr[PopupProperties] = js.native
+  var popup: js.UndefOr[PopupProperties] = js.undefined
   
   /**
     * Exposes the default widgets available in the view and allows you to toggle them on and off.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#ui)
     */
-  var ui: js.UndefOr[DefaultUIProperties] = js.native
+  var ui: js.UndefOr[DefaultUIProperties] = js.undefined
 }
 object DOMContainerProperties {
   

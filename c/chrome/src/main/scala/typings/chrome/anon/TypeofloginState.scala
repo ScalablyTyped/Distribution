@@ -5,17 +5,15 @@ import typings.chrome.chrome.loginState.SessionState
 import typings.chrome.chrome.loginState.SessionStateChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofloginState extends StObject {
   
-  def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit = js.native
+  def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit
   
-  def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit = js.native
+  def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit
   
-  val onSessionStateChanged: SessionStateChangedEvent = js.native
+  val onSessionStateChanged: SessionStateChangedEvent
 }
 object TypeofloginState {
   

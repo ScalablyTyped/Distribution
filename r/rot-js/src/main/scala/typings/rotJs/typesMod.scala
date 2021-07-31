@@ -7,49 +7,47 @@ import typings.std.HTMLVideoElement
 import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type DisplayData = js.Tuple5[Double, Double, String | js.Array[String] | Null, String, String]
   
-  @js.native
   trait DisplayOptions extends StObject {
     
-    var bg: String = js.native
+    var bg: String
     
-    var border: Double = js.native
+    var border: Double
     
-    var fg: String = js.native
+    var fg: String
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var fontStyle: String = js.native
+    var fontStyle: String
     
-    var forceSquareRatio: Boolean = js.native
+    var forceSquareRatio: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var layout: LayoutType = js.native
+    var layout: LayoutType
     
-    var spacing: Double = js.native
+    var spacing: Double
     
-    var tileColorize: Boolean = js.native
+    var tileColorize: Boolean
     
-    var tileHeight: Double = js.native
+    var tileHeight: Double
     
-    var tileMap: StringDictionary[js.Tuple2[Double, Double]] = js.native
+    var tileMap: StringDictionary[js.Tuple2[Double, Double]]
     
-    var tileSet: Null | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap = js.native
+    var tileSet: Null | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap
     
-    var tileWidth: Double = js.native
+    var tileWidth: Double
     
-    var transpose: Boolean = js.native
+    var transpose: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object DisplayOptions {
     
@@ -72,7 +70,7 @@ object typesMod {
       transpose: Boolean,
       width: Double
     ): DisplayOptions = {
-      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], forceSquareRatio = forceSquareRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], tileColorize = tileColorize.asInstanceOf[js.Any], tileHeight = tileHeight.asInstanceOf[js.Any], tileMap = tileMap.asInstanceOf[js.Any], tileWidth = tileWidth.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], forceSquareRatio = forceSquareRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], tileColorize = tileColorize.asInstanceOf[js.Any], tileHeight = tileHeight.asInstanceOf[js.Any], tileMap = tileMap.asInstanceOf[js.Any], tileWidth = tileWidth.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], tileSet = null)
       __obj.asInstanceOf[DisplayOptions]
     }
     

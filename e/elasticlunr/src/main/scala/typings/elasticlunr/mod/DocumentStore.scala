@@ -2,7 +2,6 @@ package typings.elasticlunr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "DocumentStore")
@@ -30,8 +29,11 @@ class DocumentStore[T] () extends StObject {
 }
 object DocumentStore {
   
-  /* static member */
-  @JSImport("elasticlunr", "DocumentStore.load")
+  @JSImport("elasticlunr", "DocumentStore")
   @js.native
-  def load[T](serialisedData: SerialisedDocumentStore[T]): DocumentStore[T] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def load[T](serialisedData: SerialisedDocumentStore[T]): DocumentStore[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[DocumentStore[T]]
 }

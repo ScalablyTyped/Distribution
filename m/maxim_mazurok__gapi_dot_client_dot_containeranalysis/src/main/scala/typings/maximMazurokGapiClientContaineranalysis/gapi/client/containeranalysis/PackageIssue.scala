@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageIssue extends StObject {
   
   /** Required. The location of the vulnerability. */
-  var affectedLocation: js.UndefOr[VulnerabilityLocation] = js.native
+  var affectedLocation: js.UndefOr[VulnerabilityLocation] = js.undefined
   
   /** The location of the available fix for vulnerability. */
-  var fixedLocation: js.UndefOr[VulnerabilityLocation] = js.native
+  var fixedLocation: js.UndefOr[VulnerabilityLocation] = js.undefined
   
   /** Deprecated, use Details.effective_severity instead The severity (e.g., distro assigned severity) for this vulnerability. */
-  var severityName: js.UndefOr[String] = js.native
+  var severityName: js.UndefOr[String] = js.undefined
 }
 object PackageIssue {
   

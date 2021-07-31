@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,11 +22,17 @@ sealed trait Alignment extends StObject
 object Alignment extends StObject {
   
   @js.native
-  sealed trait CENTER extends Alignment
+  sealed trait CENTER
+    extends StObject
+       with Alignment
   
   @js.native
-  sealed trait LEFT extends Alignment
+  sealed trait LEFT
+    extends StObject
+       with Alignment
   
   @js.native
-  sealed trait RIGHT extends Alignment
+  sealed trait RIGHT
+    extends StObject
+       with Alignment
 }

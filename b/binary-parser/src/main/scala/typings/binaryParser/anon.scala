@@ -2,15 +2,13 @@ package typings.binaryParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Choices extends StObject {
     
-    var choices: /* import warning: importer.ImportType#apply Failed type conversion: infer C */ js.Any = js.native
+    var choices: /* import warning: importer.ImportType#apply Failed type conversion: infer C */ js.Any
   }
   object Choices {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any = js.native
+    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   }
   object Type {
     

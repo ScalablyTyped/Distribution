@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUptimeCheckConfigsResponse extends StObject {
   
   /**
     * This field represents the pagination token to retrieve the next page of results. If the value is empty, it means no further results for the request. To retrieve the next page of
     * results, the value of the next_page_token is passed to the subsequent List method call (in the request message's page_token field).
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The total number of Uptime check configurations for the project, irrespective of any pagination. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /** The returned Uptime check configurations. */
-  var uptimeCheckConfigs: js.UndefOr[js.Array[UptimeCheckConfig]] = js.native
+  var uptimeCheckConfigs: js.UndefOr[js.Array[UptimeCheckConfig]] = js.undefined
 }
 object ListUptimeCheckConfigsResponse {
   

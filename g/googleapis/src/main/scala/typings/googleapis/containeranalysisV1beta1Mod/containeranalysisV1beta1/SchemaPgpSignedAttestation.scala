@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * supports `ATTACHED` signatures, where the payload that is signed is
   * included alongside the signature itself in the same file.
   */
-@js.native
 trait SchemaPgpSignedAttestation extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaPgpSignedAttestation extends StObject {
     * supports, and that the attestation payload is a valid instantiation of
     * that type (for example by validating a JSON schema).
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The cryptographic fingerprint of the key used to generate the signature,
@@ -36,7 +34,7 @@ trait SchemaPgpSignedAttestation extends StObject {
     * fpr:::::::::24FF6481B76AC91E66A00AC657A93A81EF3AE6FB: ``` Above, the
     * fingerprint is `24FF6481B76AC91E66A00AC657A93A81EF3AE6FB`.
     */
-  var pgpKeyId: js.UndefOr[String] = js.native
+  var pgpKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The raw content of the signature, as output by GNU Privacy
@@ -49,7 +47,7 @@ trait SchemaPgpSignedAttestation extends StObject {
     * payload.json` will create the signature content expected in this field in
     * `signature.gpg` for the `payload.json` attestation payload.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object SchemaPgpSignedAttestation {
   

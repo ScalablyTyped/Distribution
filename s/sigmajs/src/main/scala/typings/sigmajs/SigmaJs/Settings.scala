@@ -2,180 +2,178 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   // Animation settings
-  var animationsTime: js.UndefOr[Double] = js.native
+  var animationsTime: js.UndefOr[Double] = js.undefined
   
-  var autoRescale: js.UndefOr[js.Any] = js.native
+  var autoRescale: js.UndefOr[js.Any] = js.undefined
   
   // Global settings
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
   // Batch edge drawing
-  var batchEdgesDrawing: js.UndefOr[Boolean] = js.native
+  var batchEdgesDrawing: js.UndefOr[Boolean] = js.undefined
   
   // hovered node customizations
-  var borderSize: js.UndefOr[Double] = js.native
+  var borderSize: js.UndefOr[Double] = js.undefined
   
-  var canvasEdgesBatchSize: js.UndefOr[Double] = js.native
+  var canvasEdgesBatchSize: js.UndefOr[Double] = js.undefined
   
   // Graph settings
   @JSName("clone")
-  var clone_FSettings: js.UndefOr[Boolean] = js.native
+  var clone_FSettings: js.UndefOr[Boolean] = js.undefined
   
-  var defaultEdgeColor: js.UndefOr[String] = js.native
+  var defaultEdgeColor: js.UndefOr[String] = js.undefined
   
-  var defaultEdgeHoverColor: js.UndefOr[String] = js.native
+  var defaultEdgeHoverColor: js.UndefOr[String] = js.undefined
   
-  var defaultEdgeType: js.UndefOr[String] = js.native
+  var defaultEdgeType: js.UndefOr[String] = js.undefined
   
-  var defaultHoverLabelBGColor: js.UndefOr[String] = js.native
+  var defaultHoverLabelBGColor: js.UndefOr[String] = js.undefined
   
-  var defaultLabelColor: js.UndefOr[String] = js.native
+  var defaultLabelColor: js.UndefOr[String] = js.undefined
   
-  var defaultLabelHoverColor: js.UndefOr[String] = js.native
+  var defaultLabelHoverColor: js.UndefOr[String] = js.undefined
   
-  var defaultLabelSize: js.UndefOr[String] = js.native
+  var defaultLabelSize: js.UndefOr[String] = js.undefined
   
-  var defaultNodeBorderColor: js.UndefOr[String] = js.native
+  var defaultNodeBorderColor: js.UndefOr[String] = js.undefined
   
-  var defaultNodeColor: js.UndefOr[String] = js.native
+  var defaultNodeColor: js.UndefOr[String] = js.undefined
   
-  var defaultNodeHoverColor: js.UndefOr[String] = js.native
+  var defaultNodeHoverColor: js.UndefOr[String] = js.undefined
   
   // Renderers settings
-  var defaultNodeType: js.UndefOr[String] = js.native
+  var defaultNodeType: js.UndefOr[String] = js.undefined
   
-  var doubleClickEnabled: js.UndefOr[Boolean] = js.native
+  var doubleClickEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var doubleClickTimeout: js.UndefOr[Double] = js.native
+  var doubleClickTimeout: js.UndefOr[Double] = js.undefined
   
-  var doubleClickZoomDuration: js.UndefOr[Double] = js.native
+  var doubleClickZoomDuration: js.UndefOr[Double] = js.undefined
   
-  var doubleClickZoomingRatio: js.UndefOr[Double] = js.native
+  var doubleClickZoomingRatio: js.UndefOr[Double] = js.undefined
   
-  var doubleTapTimeout: js.UndefOr[Double] = js.native
+  var doubleTapTimeout: js.UndefOr[Double] = js.undefined
   
-  var dragTimeout: js.UndefOr[Double] = js.native
+  var dragTimeout: js.UndefOr[Double] = js.undefined
   
-  var drawEdges: js.UndefOr[Boolean] = js.native
+  var drawEdges: js.UndefOr[Boolean] = js.undefined
   
   // Draw settings for labels, edges, and nodes
-  var drawLabels: js.UndefOr[Boolean] = js.native
+  var drawLabels: js.UndefOr[Boolean] = js.undefined
   
-  var drawNodes: js.UndefOr[Boolean] = js.native
+  var drawNodes: js.UndefOr[Boolean] = js.undefined
   
-  var edgeColor: js.UndefOr[String] = js.native
+  var edgeColor: js.UndefOr[String] = js.undefined
   
   // hovered edge customizations
-  var edgeHoverColor: js.UndefOr[String] = js.native
+  var edgeHoverColor: js.UndefOr[String] = js.undefined
   
-  var edgeHoverExtremities: js.UndefOr[Boolean] = js.native
+  var edgeHoverExtremities: js.UndefOr[Boolean] = js.undefined
   
-  var edgeHoverPrecision: js.UndefOr[Double] = js.native
+  var edgeHoverPrecision: js.UndefOr[Double] = js.undefined
   
-  var edgeHoverSizeRatio: js.UndefOr[Double] = js.native
+  var edgeHoverSizeRatio: js.UndefOr[Double] = js.undefined
   
-  var edgesPowRatio: js.UndefOr[Double] = js.native
+  var edgesPowRatio: js.UndefOr[Double] = js.undefined
   
-  var enableCamera: js.UndefOr[Boolean] = js.native
+  var enableCamera: js.UndefOr[Boolean] = js.undefined
   
-  var enableEdgeHovering: js.UndefOr[Boolean] = js.native
+  var enableEdgeHovering: js.UndefOr[Boolean] = js.undefined
   
-  var enableHovering: js.UndefOr[Boolean] = js.native
+  var enableHovering: js.UndefOr[Boolean] = js.undefined
   
-  var eventsEnabled: js.UndefOr[Boolean] = js.native
+  var eventsEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var hideEdgesOnMove: js.UndefOr[Boolean] = js.native
+  var hideEdgesOnMove: js.UndefOr[Boolean] = js.undefined
   
-  var hoverFont: js.UndefOr[Double] = js.native
+  var hoverFont: js.UndefOr[Double] = js.undefined
   
-  var hoverFontStyle: js.UndefOr[String] = js.native
+  var hoverFontStyle: js.UndefOr[String] = js.undefined
   
-  var immutable: js.UndefOr[Boolean] = js.native
+  var immutable: js.UndefOr[Boolean] = js.undefined
   
-  var labelAlignment: js.UndefOr[String] = js.native
+  var labelAlignment: js.UndefOr[String] = js.undefined
   
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
-  var labelHoverBGColor: js.UndefOr[String] = js.native
+  var labelHoverBGColor: js.UndefOr[String] = js.undefined
   
-  var labelHoverColor: js.UndefOr[String] = js.native
+  var labelHoverColor: js.UndefOr[String] = js.undefined
   
-  var labelHoverShadow: js.UndefOr[String] = js.native
+  var labelHoverShadow: js.UndefOr[String] = js.undefined
   
-  var labelHoverShadowColor: js.UndefOr[String] = js.native
+  var labelHoverShadowColor: js.UndefOr[String] = js.undefined
   
-  var labelSize: js.UndefOr[String] = js.native
+  var labelSize: js.UndefOr[String] = js.undefined
   
-  var labelSizeRatio: js.UndefOr[String] = js.native
+  var labelSizeRatio: js.UndefOr[String] = js.undefined
   
-  var labelThreshold: js.UndefOr[Double] = js.native
+  var labelThreshold: js.UndefOr[Double] = js.undefined
   
-  var maxEdgeSize: js.UndefOr[Double] = js.native
+  var maxEdgeSize: js.UndefOr[Double] = js.undefined
   
-  var maxNodeSize: js.UndefOr[Double] = js.native
+  var maxNodeSize: js.UndefOr[Double] = js.undefined
   
-  var minArrowSize: js.UndefOr[Double] = js.native
+  var minArrowSize: js.UndefOr[Double] = js.undefined
   
   // max/min node and edge size
-  var minEdgeSize: js.UndefOr[Double] = js.native
+  var minEdgeSize: js.UndefOr[Double] = js.undefined
   
-  var minNodeSize: js.UndefOr[Double] = js.native
+  var minNodeSize: js.UndefOr[Double] = js.undefined
   
-  var mouseEnabled: js.UndefOr[Boolean] = js.native
+  var mouseEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var mouseInertiaDuration: js.UndefOr[Double] = js.native
+  var mouseInertiaDuration: js.UndefOr[Double] = js.undefined
   
-  var mouseInertiaRatio: js.UndefOr[Double] = js.native
+  var mouseInertiaRatio: js.UndefOr[Double] = js.undefined
   
-  var mouseWheelEnabled: js.UndefOr[Boolean] = js.native
+  var mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var mouseZoomDuration: js.UndefOr[Double] = js.native
+  var mouseZoomDuration: js.UndefOr[Double] = js.undefined
   
-  var nodeHoverColor: js.UndefOr[String] = js.native
+  var nodeHoverColor: js.UndefOr[String] = js.undefined
   
   // Camera settings
-  var nodesPowRatio: js.UndefOr[Double] = js.native
+  var nodesPowRatio: js.UndefOr[Double] = js.undefined
   
-  var rescaleIgnoreSize: js.UndefOr[Boolean] = js.native
+  var rescaleIgnoreSize: js.UndefOr[Boolean] = js.undefined
   
   // Rescale settings
-  var scalingMode: js.UndefOr[String] = js.native
+  var scalingMode: js.UndefOr[String] = js.undefined
   
-  var sideMargin: js.UndefOr[Double] = js.native
+  var sideMargin: js.UndefOr[Double] = js.undefined
   
-  var singleHover: js.UndefOr[Boolean] = js.native
+  var singleHover: js.UndefOr[Boolean] = js.undefined
   
-  var skipErrors: js.UndefOr[Boolean] = js.native
+  var skipErrors: js.UndefOr[Boolean] = js.undefined
   
   // Captor settings
-  var touchEnabled: js.UndefOr[Boolean] = js.native
+  var touchEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var touchInertiaDuration: js.UndefOr[Double] = js.native
+  var touchInertiaDuration: js.UndefOr[Double] = js.undefined
   
-  var touchInertiaRatio: js.UndefOr[Double] = js.native
+  var touchInertiaRatio: js.UndefOr[Double] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
   
-  var webglEdgesBatchSize: js.UndefOr[Double] = js.native
+  var webglEdgesBatchSize: js.UndefOr[Double] = js.undefined
   
-  var webglOversamplingRatio: js.UndefOr[Double] = js.native
+  var webglOversamplingRatio: js.UndefOr[Double] = js.undefined
   
-  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMax: js.UndefOr[Double] = js.undefined
   
-  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.undefined
   
-  var zoomingRatio: js.UndefOr[Double] = js.native
+  var zoomingRatio: js.UndefOr[Double] = js.undefined
 }
 object Settings {
   

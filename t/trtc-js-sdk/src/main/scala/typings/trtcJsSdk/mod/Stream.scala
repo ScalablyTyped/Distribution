@@ -7,7 +7,6 @@ import typings.trtcJsSdk.trtcJsSdkStrings.`player-state-changed`
 import typings.trtcJsSdk.trtcJsSdkStrings.`screen-sharing-stopped`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,7 +74,7 @@ trait Stream extends StObject {
   @JSName("on")
   def on_playerstatechanged(event: `player-state-changed`, handler: Callback[State]): Unit = js.native
   @JSName("on")
-  def on_screensharingstopped(event: `screen-sharing-stopped`, handler: Callback[js.UndefOr[scala.Nothing]]): Unit = js.native
+  def on_screensharingstopped(event: `screen-sharing-stopped`, handler: Callback[Unit]): Unit = js.native
   
   /**
     * 播放该音视频流

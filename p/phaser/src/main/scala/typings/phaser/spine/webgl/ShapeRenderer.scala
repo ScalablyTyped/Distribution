@@ -5,25 +5,19 @@ import typings.phaser.spine.Color
 import typings.phaser.spine.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeRenderer extends Disposable {
+trait ShapeRenderer
+  extends StObject
+     with Disposable {
   
   def begin(shader: Shader): Unit = js.native
   
   var check: js.Any = js.native
   
   def circle(filled: Boolean, x: Double, y: Double, radius: Double): Unit = js.native
-  def circle(
-    filled: Boolean,
-    x: Double,
-    y: Double,
-    radius: Double,
-    color: js.UndefOr[scala.Nothing],
-    segments: Double
-  ): Unit = js.native
+  def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Unit, segments: Double): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color, segments: Double): Unit = js.native
   
@@ -95,9 +89,9 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
-    color3: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -110,8 +104,8 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def quad(
@@ -124,8 +118,8 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color,
     color4: Color
   ): Unit = js.native
@@ -139,7 +133,7 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color
   ): Unit = js.native
   def quad(
@@ -152,9 +146,9 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
-    color3: js.UndefOr[scala.Nothing],
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -167,7 +161,7 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color
   ): Unit = js.native
@@ -181,7 +175,7 @@ trait ShapeRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color,
     color4: Color
@@ -209,8 +203,8 @@ trait ShapeRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
-    color3: js.UndefOr[scala.Nothing],
+    color2: Unit,
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -224,7 +218,7 @@ trait ShapeRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def quad(
@@ -238,7 +232,7 @@ trait ShapeRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color,
     color4: Color
   ): Unit = js.native
@@ -267,7 +261,7 @@ trait ShapeRenderer extends Disposable {
     y4: Double,
     color: Color,
     color2: Color,
-    color3: js.UndefOr[scala.Nothing],
+    color3: Unit,
     color4: Color
   ): Unit = js.native
   def quad(
@@ -329,8 +323,8 @@ trait ShapeRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
-    color2: js.UndefOr[scala.Nothing],
+    color: Unit,
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def triangle(
@@ -341,7 +335,7 @@ trait ShapeRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color
   ): Unit = js.native
   def triangle(
@@ -352,7 +346,7 @@ trait ShapeRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     color2: Color,
     color3: Color
   ): Unit = js.native
@@ -375,7 +369,7 @@ trait ShapeRenderer extends Disposable {
     x3: Double,
     y3: Double,
     color: Color,
-    color2: js.UndefOr[scala.Nothing],
+    color2: Unit,
     color3: Color
   ): Unit = js.native
   def triangle(

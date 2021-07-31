@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserRequest extends StObject {
   
   /**
     * The access token returned by the server response to get information about the user.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
 }
 object GetUserRequest {
   

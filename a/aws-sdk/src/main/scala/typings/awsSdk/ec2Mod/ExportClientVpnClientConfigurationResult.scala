@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportClientVpnClientConfigurationResult extends StObject {
   
   /**
     * The contents of the Client VPN endpoint configuration file.
     */
-  var ClientConfiguration: js.UndefOr[String] = js.native
+  var ClientConfiguration: js.UndefOr[String] = js.undefined
 }
 object ExportClientVpnClientConfigurationResult {
   

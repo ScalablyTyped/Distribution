@@ -5,10 +5,13 @@ import typings.awsSdkNodeConfigProvider.configLoaderMod.LocalConfigOptions
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regionConfigMod {
+  
+  @JSImport("@aws-sdk/config-resolver/dist/cjs/RegionConfig", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/config-resolver/dist/cjs/RegionConfig", "NODE_REGION_CONFIG_FILE_OPTIONS")
   @js.native
@@ -26,20 +29,17 @@ object regionConfigMod {
   @js.native
   val REGION_INI_NAME: /* "region" */ String = js.native
   
-  @JSImport("@aws-sdk/config-resolver/dist/cjs/RegionConfig", "resolveRegionConfig")
-  @js.native
-  def resolveRegionConfig[T](input: T with RegionInputConfig with PreviouslyResolved): T with RegionResolvedConfig = js.native
+  @scala.inline
+  def resolveRegionConfig[T](input: T & RegionInputConfig & PreviouslyResolved): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
   
-  @js.native
   trait PreviouslyResolved extends StObject
   
-  @js.native
   trait RegionInputConfig extends StObject {
     
     /**
       * The AWS region to which this client will send requests
       */
-    var region: js.UndefOr[String | Provider[String]] = js.native
+    var region: js.UndefOr[String | Provider[String]] = js.undefined
   }
   object RegionInputConfig {
     
@@ -63,11 +63,25 @@ object regionConfigMod {
     }
   }
   
-  @js.native
   trait RegionResolvedConfig extends StObject {
     
-    def region(): js.Promise[String] = js.native
+    def region(): js.Promise[String]
     @JSName("region")
-    var region_Original: Provider[String] = js.native
+    var region_Original: Provider[String]
+  }
+  object RegionResolvedConfig {
+    
+    @scala.inline
+    def apply(region: () => js.Promise[String]): RegionResolvedConfig = {
+      val __obj = js.Dynamic.literal(region = js.Any.fromFunction0(region))
+      __obj.asInstanceOf[RegionResolvedConfig]
+    }
+    
+    @scala.inline
+    implicit class RegionResolvedConfigMutableBuilder[Self <: RegionResolvedConfig] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+    }
   }
 }

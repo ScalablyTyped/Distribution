@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementTemplate extends StObject {
   
   /**
     * The default attributes (key/value pairs) to be applied to all placements using this template.
     */
-  var defaultAttributes: js.UndefOr[DefaultPlacementAttributeMap] = js.native
+  var defaultAttributes: js.UndefOr[DefaultPlacementAttributeMap] = js.undefined
   
   /**
     * An object specifying the DeviceTemplate for all placements using this (PlacementTemplate) template.
     */
-  var deviceTemplates: js.UndefOr[DeviceTemplateMap] = js.native
+  var deviceTemplates: js.UndefOr[DeviceTemplateMap] = js.undefined
 }
 object PlacementTemplate {
   

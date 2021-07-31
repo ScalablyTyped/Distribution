@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartnersResource extends StObject {
   
-  var customers: CustomersResource = js.native
+  var customers: CustomersResource
   
-  var devices: DevicesResource = js.native
+  var devices: DevicesResource
   
-  var vendors: VendorsResource = js.native
+  var vendors: VendorsResource
 }
 object PartnersResource {
   

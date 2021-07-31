@@ -3,78 +3,76 @@ package typings.jsplumb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointOptions extends StObject {
   
-  var anchor: js.UndefOr[AnchorSpec] = js.native
+  var anchor: js.UndefOr[AnchorSpec] = js.undefined
   
-  var connectionType: js.UndefOr[String] = js.native
+  var connectionType: js.UndefOr[String] = js.undefined
   
-  var connectionsDetachable: js.UndefOr[Boolean] = js.native
+  var connectionsDetachable: js.UndefOr[Boolean] = js.undefined
   
-  var connector: js.UndefOr[ConnectorSpec] = js.native
+  var connector: js.UndefOr[ConnectorSpec] = js.undefined
   
-  var `connector-pointer-events`: js.UndefOr[String] = js.native
+  var `connector-pointer-events`: js.UndefOr[String] = js.undefined
   
-  var connectorClass: js.UndefOr[String] = js.native
+  var connectorClass: js.UndefOr[String] = js.undefined
   
-  var connectorHoverClass: js.UndefOr[String] = js.native
+  var connectorHoverClass: js.UndefOr[String] = js.undefined
   
-  var connectorHoverStyle: js.UndefOr[PaintStyle] = js.native
+  var connectorHoverStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var connectorOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.native
+  var connectorOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   
-  var connectorStyle: js.UndefOr[PaintStyle] = js.native
+  var connectorStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
   //= 1?
-  var dragOptions: js.UndefOr[DragOptions] = js.native
+  var dragOptions: js.UndefOr[DragOptions] = js.undefined
   
-  var dragProxy: js.UndefOr[String | js.Array[String]] = js.native
+  var dragProxy: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var dropOptions: js.UndefOr[DropOptions] = js.native
+  var dropOptions: js.UndefOr[DropOptions] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var endpoint: js.UndefOr[EndpointSpec] = js.native
+  var endpoint: js.UndefOr[EndpointSpec] = js.undefined
   
-  var hoverClass: js.UndefOr[String] = js.native
+  var hoverClass: js.UndefOr[String] = js.undefined
   
-  var hoverPaintStyle: js.UndefOr[PaintStyle] = js.native
+  var hoverPaintStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   //= true
-  var isSource: js.UndefOr[Boolean] = js.native
+  var isSource: js.UndefOr[Boolean] = js.undefined
   
   //= false
-  var isTarget: js.UndefOr[Boolean] = js.native
+  var isTarget: js.UndefOr[Boolean] = js.undefined
   
-  var maxConnections: Double = js.native
+  var maxConnections: Double
   
   // "Dot", etc.
-  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.native
+  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   
   //= true
-  var paintStyle: js.UndefOr[PaintStyle] = js.native
+  var paintStyle: js.UndefOr[PaintStyle] = js.undefined
   
   //= false
-  var parameters: js.UndefOr[Record[String, _]] = js.native
+  var parameters: js.UndefOr[Record[String, js.Any]] = js.undefined
   
   //= false
-  var reattach: js.UndefOr[Boolean] = js.native
+  var reattach: js.UndefOr[Boolean] = js.undefined
   
-  var reattachConnections: js.UndefOr[Boolean] = js.native
+  var reattachConnections: js.UndefOr[Boolean] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object EndpointOptions {
   
@@ -241,7 +239,7 @@ object EndpointOptions {
     def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
     
     @scala.inline
-    def setParameters(value: Record[String, _]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

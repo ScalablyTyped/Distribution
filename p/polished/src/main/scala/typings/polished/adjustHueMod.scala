@@ -2,21 +2,20 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adjustHueMod {
   
-  @JSImport("polished/lib/color/adjustHue", JSImport.Default)
+  @JSImport("polished/lib/color/adjustHue", JSImport.Namespace)
   @js.native
-  def default(degree: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished/lib/color/adjustHue", JSImport.Default)
-  @js.native
-  def default(degree: String, color: String): String = js.native
-  @JSImport("polished/lib/color/adjustHue", JSImport.Default)
-  @js.native
-  def default(degree: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished/lib/color/adjustHue", JSImport.Default)
-  @js.native
-  def default(degree: Double, color: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(degree: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def default(degree: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(degree: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def default(degree: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
 }

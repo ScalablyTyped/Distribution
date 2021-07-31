@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reply to a developer metadata search request.
   */
-@js.native
 trait SchemaSearchDeveloperMetadataResponse extends StObject {
   
   /**
     * The metadata matching the criteria of the search request.
     */
-  var matchedDeveloperMetadata: js.UndefOr[js.Array[SchemaMatchedDeveloperMetadata]] = js.native
+  var matchedDeveloperMetadata: js.UndefOr[js.Array[SchemaMatchedDeveloperMetadata]] = js.undefined
 }
 object SchemaSearchDeveloperMetadataResponse {
   

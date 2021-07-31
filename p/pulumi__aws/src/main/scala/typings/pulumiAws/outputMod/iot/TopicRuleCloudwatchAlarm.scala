@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleCloudwatchAlarm extends StObject {
   
   /**
     * The CloudWatch alarm name.
     */
-  var alarmName: String = js.native
+  var alarmName: String
   
   /**
     * The IAM role ARN that allows access to the CloudWatch alarm.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * The reason for the alarm change.
     */
-  var stateReason: String = js.native
+  var stateReason: String
   
   /**
     * The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
     */
-  var stateValue: String = js.native
+  var stateValue: String
 }
 object TopicRuleCloudwatchAlarm {
   

@@ -8,15 +8,13 @@ import typings.leafletGeosearch.mod.PointTuple
 import typings.leafletGeosearch.mod.SearchResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: City = js.native
+    var address: City
   }
   object Address {
     
@@ -34,22 +32,21 @@ object anon {
     }
   }
   
-  @js.native
   trait AdminDistrict extends StObject {
     
-    var adminDistrict: String = js.native
+    var adminDistrict: String
     
-    var adminDistrict2: String = js.native
+    var adminDistrict2: String
     
-    var countryRegion: String = js.native
+    var countryRegion: String
     
-    var formattedAddress: String = js.native
+    var formattedAddress: String
     
-    var landmark: String = js.native
+    var landmark: String
     
-    var locality: String = js.native
+    var locality: String
     
-    var neighborhood: String = js.native
+    var neighborhood: String
   }
   object AdminDistrict {
     
@@ -94,16 +91,15 @@ object anon {
   }
   
   /* Inlined leaflet-geosearch.leaflet-geosearch.BingProviderResultPoint & {  calculationMethod :string,   usageTypes :std.Array<string>} */
-  @js.native
   trait BingProviderResultPointca extends StObject {
     
-    var calculationMethod: String = js.native
+    var calculationMethod: String
     
-    var coordinates: PointTuple = js.native
+    var coordinates: PointTuple
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var usageTypes: js.Array[String] = js.native
+    var usageTypes: js.Array[String]
   }
   object BingProviderResultPointca {
     
@@ -134,20 +130,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Button extends StObject {
     
-    var button: js.UndefOr[String] = js.native
+    var button: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
-    var form: js.UndefOr[String] = js.native
+    var form: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[String] = js.native
+    var input: js.UndefOr[String] = js.undefined
     
-    var msgbox: js.UndefOr[String] = js.native
+    var msgbox: js.UndefOr[String] = js.undefined
     
-    var resetButton: js.UndefOr[String] = js.native
+    var resetButton: js.UndefOr[String] = js.undefined
   }
   object Button {
     
@@ -198,28 +193,27 @@ object anon {
     }
   }
   
-  @js.native
   trait City extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var country_code: String = js.native
+    var country_code: String
     
-    var county: String = js.native
+    var county: String
     
-    var house_number: String = js.native
+    var house_number: String
     
-    var postcode: String = js.native
+    var postcode: String
     
-    var road: String = js.native
+    var road: String
     
-    var state: String = js.native
+    var state: String
     
-    var state_district: String = js.native
+    var state_district: String
     
-    var town: String = js.native
+    var town: String
   }
   object City {
     
@@ -275,14 +269,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var location: LatLngLiteral = js.native
+    var location: LatLngLiteral
     
-    var location_type: String = js.native
+    var location_type: String
     
-    var viewport: Northeast = js.native
+    var viewport: Northeast
   }
   object Location {
     
@@ -306,12 +299,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Northeast extends StObject {
     
-    var northeast: LatLngLiteral = js.native
+    var northeast: LatLngLiteral
     
-    var southwest: LatLngLiteral = js.native
+    var southwest: LatLngLiteral
   }
   object Northeast {
     
@@ -332,12 +324,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Osmid extends StObject {
     
-    var osm_id: js.UndefOr[Double] = js.native
+    var osm_id: js.UndefOr[Double] = js.undefined
     
-    var osm_type: js.UndefOr[node | way | relation] = js.native
+    var osm_type: js.UndefOr[node | way | relation] = js.undefined
   }
   object Osmid {
     
@@ -364,12 +355,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var query: String = js.native
+    var query: String
     
-    var result: SearchResult[js.Object] = js.native
+    var result: SearchResult[js.Object]
   }
   object Query {
     
@@ -390,10 +380,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Raw extends StObject {
     
-    var raw: Osmid = js.native
+    var raw: Osmid
   }
   object Raw {
     

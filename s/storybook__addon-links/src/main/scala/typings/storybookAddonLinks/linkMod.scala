@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkMod {
@@ -41,14 +40,13 @@ object linkMod {
     def updateHref(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var kind: String = js.native
+    var kind: String
     
-    var story: String = js.native
+    var story: String
   }
   object Props {
     
@@ -75,10 +73,9 @@ object linkMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var href: String = js.native
+    var href: String
   }
   object State {
     

@@ -7,7 +7,6 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -15,7 +14,8 @@ object menuMod {
   @JSImport("@ionic/core/dist/types/components/menu/menu", "Menu")
   @js.native
   class Menu ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with MenuI {
     
     var _isActive: js.Any = js.native
@@ -101,7 +101,7 @@ object menuMod {
     
     var onMove: js.Any = js.native
     
-    def onSplitPaneChanged(ev: CustomEvent[_]): Unit = js.native
+    def onSplitPaneChanged(ev: CustomEvent[js.Any]): Unit = js.native
     
     var onStart: js.Any = js.native
     

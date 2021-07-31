@@ -4,32 +4,30 @@ import typings.reactAutosuggest.reactAutosuggestStrings.click
 import typings.reactAutosuggest.reactAutosuggestStrings.enter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestionSelectedEventData[TSuggestion] extends StObject {
   
-  var method: click | enter = js.native
+  var method: click | enter
   
-  var sectionIndex: Double | Null = js.native
+  var sectionIndex: Double | Null
   
-  var suggestion: TSuggestion = js.native
+  var suggestion: TSuggestion
   
-  var suggestionIndex: Double = js.native
+  var suggestionIndex: Double
   
-  var suggestionValue: String = js.native
+  var suggestionValue: String
 }
 object SuggestionSelectedEventData {
   
   @scala.inline
   def apply[TSuggestion](method: click | enter, suggestion: TSuggestion, suggestionIndex: Double, suggestionValue: String): SuggestionSelectedEventData[TSuggestion] = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], suggestionIndex = suggestionIndex.asInstanceOf[js.Any], suggestionValue = suggestionValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], suggestionIndex = suggestionIndex.asInstanceOf[js.Any], suggestionValue = suggestionValue.asInstanceOf[js.Any], sectionIndex = null)
     __obj.asInstanceOf[SuggestionSelectedEventData[TSuggestion]]
   }
   
   @scala.inline
-  implicit class SuggestionSelectedEventDataMutableBuilder[Self <: SuggestionSelectedEventData[_], TSuggestion] (val x: Self with SuggestionSelectedEventData[TSuggestion]) extends AnyVal {
+  implicit class SuggestionSelectedEventDataMutableBuilder[Self <: SuggestionSelectedEventData[?], TSuggestion] (val x: Self & SuggestionSelectedEventData[TSuggestion]) extends AnyVal {
     
     @scala.inline
     def setMethod(value: click | enter): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])

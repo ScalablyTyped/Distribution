@@ -2,26 +2,24 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusBarItem extends StObject {
   
   /**
     * Accessibility information used when screen reader interacts with this StatusBar item
     */
-  var accessibilityInformation: js.UndefOr[AccessibilityInformation] = js.native
+  var accessibilityInformation: js.UndefOr[AccessibilityInformation] = js.undefined
   
   /**
     * The alignment of this item.
     */
-  val alignment: StatusBarAlignment = js.native
+  val alignment: StatusBarAlignment
   
   /**
     * The foreground color for this entry.
     */
-  var color: js.UndefOr[String | ThemeColor] = js.native
+  var color: js.UndefOr[String | ThemeColor] = js.undefined
   
   /**
     * [`Command`](#Command) or identifier of a command to run on click.
@@ -31,29 +29,29 @@ trait StatusBarItem extends StObject {
     * Note that if this is a [`Command`](#Command) object, only the [`command`](#Command.command) and [`arguments`](#Command.arguments)
     * are used by VS Code.
     */
-  var command: js.UndefOr[String | Command] = js.native
+  var command: js.UndefOr[String | Command] = js.undefined
   
   /**
     * Dispose and free associated resources. Call
     * [hide](#StatusBarItem.hide).
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Hide the entry in the status bar.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * The priority of this item. Higher value means the item should
     * be shown more to the left.
     */
-  val priority: js.UndefOr[Double] = js.native
+  val priority: js.UndefOr[Double] = js.undefined
   
   /**
     * Shows the entry in the status bar.
     */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /**
     * The text to show for the entry. You can embed icons in the text by leveraging the syntax:
@@ -63,12 +61,12 @@ trait StatusBarItem extends StObject {
     * Where the icon-name is taken from the [codicon](https://microsoft.github.io/vscode-codicons/dist/codicon.html) icon set, e.g.
     * `light-bulb`, `thumbsup`, `zap` etc.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The tooltip text when you hover over this entry.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object StatusBarItem {
   

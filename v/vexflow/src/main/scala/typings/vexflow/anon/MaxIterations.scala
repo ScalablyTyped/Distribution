@@ -2,15 +2,13 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxIterations extends StObject {
   
-  var maxIterations: js.UndefOr[Double] = js.native
+  var maxIterations: js.UndefOr[Double] = js.undefined
   
-  var softmaxFactor: js.UndefOr[Double] = js.native
+  var softmaxFactor: js.UndefOr[Double] = js.undefined
 }
 object MaxIterations {
   

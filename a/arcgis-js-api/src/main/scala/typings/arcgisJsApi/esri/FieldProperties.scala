@@ -28,10 +28,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.string
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldProperties extends StObject {
   
   /**
@@ -39,56 +37,56 @@ trait FieldProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * The default value set for the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: js.UndefOr[Double | String | js.Any] = js.native
+  var defaultValue: js.UndefOr[Double | String | js.Any] = js.undefined
   
   /**
     * Contains information describing the purpose of each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The domain associated with the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
     */
-  var domain: js.UndefOr[DomainProperties] = js.native
+  var domain: js.UndefOr[DomainProperties] = js.undefined
   
   /**
     * Indicates whether the field is editable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The field length.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the field can accept `null` values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
     */
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data type of the field.
@@ -97,7 +95,7 @@ trait FieldProperties extends StObject {
     */
   var `type`: js.UndefOr[
     `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The types of values that can be assigned to a field.
@@ -106,7 +104,7 @@ trait FieldProperties extends StObject {
     */
   var valueType: js.UndefOr[
     binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
-  ] = js.native
+  ] = js.undefined
 }
 object FieldProperties {
   

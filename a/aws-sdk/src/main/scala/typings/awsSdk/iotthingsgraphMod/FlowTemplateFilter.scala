@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowTemplateFilter extends StObject {
   
   /**
     * The name of the search filter field.
     */
-  var name: FlowTemplateFilterName = js.native
+  var name: FlowTemplateFilterName
   
   /**
     * An array of string values for the search filter field. Multiple values function as AND criteria in the search.
     */
-  var value: FlowTemplateFilterValues = js.native
+  var value: FlowTemplateFilterValues
 }
 object FlowTemplateFilter {
   

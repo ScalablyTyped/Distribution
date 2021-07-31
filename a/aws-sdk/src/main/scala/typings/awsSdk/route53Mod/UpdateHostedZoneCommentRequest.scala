@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateHostedZoneCommentRequest extends StObject {
   
   /**
     * The new comment for the hosted zone. If you don't specify a value for Comment, Amazon Route 53 deletes the existing value of the Comment element, if any.
     */
-  var Comment: js.UndefOr[ResourceDescription] = js.native
+  var Comment: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * The ID for the hosted zone that you want to update the comment for.
     */
-  var Id: ResourceId = js.native
+  var Id: ResourceId
 }
 object UpdateHostedZoneCommentRequest {
   

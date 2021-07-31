@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFolderRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var FolderId: ResourceIdType = js.native
+  var FolderId: ResourceIdType
   
   /**
     * Set to TRUE to include custom metadata in the response.
     */
-  var IncludeCustomMetadata: js.UndefOr[BooleanType] = js.native
+  var IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
 }
 object GetFolderRequest {
   

@@ -3,36 +3,34 @@ package typings.electron.Electron
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddRepresentationOptions extends StObject {
   
   /**
     * The buffer containing the raw image data.
     */
-  var buffer: js.UndefOr[Buffer] = js.native
+  var buffer: js.UndefOr[Buffer] = js.undefined
   
   /**
     * The data URL containing either a base 64 encoded PNG or JPEG image.
     */
-  var dataURL: js.UndefOr[String] = js.native
+  var dataURL: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to 0. Required if a bitmap buffer is specified as `buffer`.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The scale factor to add the image representation for.
     */
-  var scaleFactor: Double = js.native
+  var scaleFactor: Double
   
   /**
     * Defaults to 0. Required if a bitmap buffer is specified as `buffer`.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AddRepresentationOptions {
   

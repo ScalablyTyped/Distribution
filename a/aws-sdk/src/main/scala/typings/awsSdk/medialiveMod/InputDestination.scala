@@ -2,30 +2,28 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDestination extends StObject {
   
   /**
     * The system-generated static IP address of endpoint.
   It remains fixed for the lifetime of the input.
     */
-  var Ip: js.UndefOr[string] = js.native
+  var Ip: js.UndefOr[string] = js.undefined
   
   /**
     * The port number for the input.
     */
-  var Port: js.UndefOr[string] = js.native
+  var Port: js.UndefOr[string] = js.undefined
   
   /**
     * This represents the endpoint that the customer stream will be
   pushed to.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
   
-  var Vpc: js.UndefOr[InputDestinationVpc] = js.native
+  var Vpc: js.UndefOr[InputDestinationVpc] = js.undefined
 }
 object InputDestination {
   

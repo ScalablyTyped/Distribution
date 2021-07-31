@@ -3,18 +3,17 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
-  var fixedDrawer: js.UndefOr[Boolean] = js.native
+  var fixedDrawer: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
-  var fixedTabs: js.UndefOr[Boolean] = js.native
+  var fixedTabs: js.UndefOr[Boolean] = js.undefined
 }
 object LayoutProps {
   

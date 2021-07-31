@@ -6,69 +6,69 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFilesCopy extends StandardParameters {
+trait ParamsResourceFilesCopy
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether to convert this file to the corresponding Google Docs format.
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the file to copy.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.
     */
-  var ocr: js.UndefOr[Boolean] = js.native
+  var ocr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If ocr is true, hints at the language to use. Valid values are BCP 47
     * codes.
     */
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to pin the head revision of the new copy. A file can have a
     * maximum of 200 pinned revisions.
     */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFile] = js.native
+  var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The language of the timed text.
     */
-  var timedTextLanguage: js.UndefOr[String] = js.native
+  var timedTextLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The timed text track name.
     */
-  var timedTextTrackName: js.UndefOr[String] = js.native
+  var timedTextTrackName: js.UndefOr[String] = js.undefined
   
   /**
     * The visibility of the new file. This parameter is only relevant when the
     * source is not a native Google Doc and convert=false.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceFilesCopy {
   

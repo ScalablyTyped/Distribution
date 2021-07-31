@@ -5,44 +5,42 @@ import typings.cliTable.cliTableStrings.middle
 import typings.cliTable.cliTableStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.Record<'top' | 'top-mid' | 'top-left' | 'top-right' | 'bottom' | 'bottom-mid' | 'bottom-left' | 'bottom-right' | 'left' | 'left-mid' | 'mid' | 'mid-mid' | 'right' | 'right-mid' | 'middle', string>> */
-  @js.native
   trait PartialRecordtoptopmidtop extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var `bottom-left`: js.UndefOr[String] = js.native
+    var `bottom-left`: js.UndefOr[String] = js.undefined
     
-    var `bottom-mid`: js.UndefOr[String] = js.native
+    var `bottom-mid`: js.UndefOr[String] = js.undefined
     
-    var `bottom-right`: js.UndefOr[String] = js.native
+    var `bottom-right`: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var `left-mid`: js.UndefOr[String] = js.native
+    var `left-mid`: js.UndefOr[String] = js.undefined
     
-    var mid: js.UndefOr[String] = js.native
+    var mid: js.UndefOr[String] = js.undefined
     
-    var `mid-mid`: js.UndefOr[String] = js.native
+    var `mid-mid`: js.UndefOr[String] = js.undefined
     
-    var middle: js.UndefOr[String] = js.native
+    var middle: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var `right-mid`: js.UndefOr[String] = js.native
+    var `right-mid`: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var `top-left`: js.UndefOr[String] = js.native
+    var `top-left`: js.UndefOr[String] = js.undefined
     
-    var `top-mid`: js.UndefOr[String] = js.native
+    var `top-mid`: js.UndefOr[String] = js.undefined
     
-    var `top-right`: js.UndefOr[String] = js.native
+    var `top-right`: js.UndefOr[String] = js.undefined
   }
   object PartialRecordtoptopmidtop {
     
@@ -148,22 +146,21 @@ object anon {
   }
   
   /* Inlined std.Partial<cli-table.cli-table.TableOptions> */
-  @js.native
   trait PartialTableOptions extends StObject {
     
-    var chars: js.UndefOr[PartialRecordtoptopmidtop] = js.native
+    var chars: js.UndefOr[PartialRecordtoptopmidtop] = js.undefined
     
-    var colAligns: js.UndefOr[js.Array[left | middle | right]] = js.native
+    var colAligns: js.UndefOr[js.Array[left | middle | right]] = js.undefined
     
-    var colWidths: js.UndefOr[js.Array[Double]] = js.native
+    var colWidths: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
-    var head: js.UndefOr[js.Array[String]] = js.native
+    var head: js.UndefOr[js.Array[String]] = js.undefined
     
-    var style: js.UndefOr[Partialpaddingleftnumberp] = js.native
+    var style: js.UndefOr[Partialpaddingleftnumberp] = js.undefined
     
-    var truncate: js.UndefOr[String] = js.native
+    var truncate: js.UndefOr[String] = js.undefined
   }
   object PartialTableOptions {
     
@@ -230,18 +227,17 @@ object anon {
   }
   
   /* Inlined std.Partial<{  padding-left :number,   padding-right :number,   head :std.Array<string>,   border :std.Array<string>,   compact :boolean}> */
-  @js.native
   trait Partialpaddingleftnumberp extends StObject {
     
-    var border: js.UndefOr[js.Array[String]] = js.native
+    var border: js.UndefOr[js.Array[String]] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var head: js.UndefOr[js.Array[String]] = js.native
+    var head: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `padding-left`: js.UndefOr[Double] = js.native
+    var `padding-left`: js.UndefOr[Double] = js.undefined
     
-    var `padding-right`: js.UndefOr[Double] = js.native
+    var `padding-right`: js.UndefOr[Double] = js.undefined
   }
   object Partialpaddingleftnumberp {
     

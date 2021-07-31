@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GistsUpdateParamsFilesKeyString extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var filename: String = js.native
+  var filename: String
 }
 object GistsUpdateParamsFilesKeyString {
   

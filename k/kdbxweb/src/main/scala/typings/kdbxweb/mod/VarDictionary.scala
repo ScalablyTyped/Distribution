@@ -3,7 +3,6 @@ package typings.kdbxweb.mod
 import typings.kdbxweb.anon.Bool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "VarDictionary")
@@ -33,7 +32,6 @@ object VarDictionary {
   @scala.inline
   def ValueType_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueType")(x.asInstanceOf[js.Any])
   
-  @JSImport("kdbxweb", "VarDictionary.read")
-  @js.native
-  def read(stm: BinaryStream): VarDictionary = js.native
+  @scala.inline
+  def read(stm: BinaryStream): VarDictionary = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any]).asInstanceOf[VarDictionary]
 }

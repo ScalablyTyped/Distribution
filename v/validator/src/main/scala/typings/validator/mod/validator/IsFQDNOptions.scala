@@ -2,26 +2,24 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFQDNOptions extends StObject {
   
   /**
     * @default false
     */
-  var allow_trailing_dot: js.UndefOr[Boolean] = js.native
+  var allow_trailing_dot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_underscores: js.UndefOr[Boolean] = js.native
+  var allow_underscores: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default true
     */
-  var require_tld: js.UndefOr[Boolean] = js.native
+  var require_tld: js.UndefOr[Boolean] = js.undefined
 }
 object IsFQDNOptions {
   

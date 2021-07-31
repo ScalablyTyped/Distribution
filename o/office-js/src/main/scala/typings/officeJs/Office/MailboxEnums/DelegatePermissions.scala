@@ -2,7 +2,6 @@ package typings.officeJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,35 +23,47 @@ object DelegatePermissions extends StObject {
     * Delegate has permission to delete any items.
     */
   @js.native
-  sealed trait DeleteAll extends DelegatePermissions
+  sealed trait DeleteAll
+    extends StObject
+       with DelegatePermissions
   
   /**
     * Delegate has permission to delete only the items they created.
     */
   @js.native
-  sealed trait DeleteOwn extends DelegatePermissions
+  sealed trait DeleteOwn
+    extends StObject
+       with DelegatePermissions
   
   /**
     * Delegate has permission to edit any items.
     */
   @js.native
-  sealed trait EditAll extends DelegatePermissions
+  sealed trait EditAll
+    extends StObject
+       with DelegatePermissions
   
   /**
     * Delegate has permission to edit only they items they created.
     */
   @js.native
-  sealed trait EditOwn extends DelegatePermissions
+  sealed trait EditOwn
+    extends StObject
+       with DelegatePermissions
   
   /**
     * Delegate has permission to read items.
     */
   @js.native
-  sealed trait Read extends DelegatePermissions
+  sealed trait Read
+    extends StObject
+       with DelegatePermissions
   
   /**
     * Delegate has permission to create and write items.
     */
   @js.native
-  sealed trait Write extends DelegatePermissions
+  sealed trait Write
+    extends StObject
+       with DelegatePermissions
 }

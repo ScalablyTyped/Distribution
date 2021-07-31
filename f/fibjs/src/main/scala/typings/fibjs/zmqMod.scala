@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -50,7 +49,9 @@ object zmqMod {
   
   @JSImport("zmq", "Socket")
   @js.native
-  class Socket () extends ClassZmqSocket
+  class Socket ()
+    extends StObject
+       with ClassZmqSocket
   
   @JSImport("zmq", "XPUB")
   @js.native

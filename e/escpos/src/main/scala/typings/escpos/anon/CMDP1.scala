@@ -4,23 +4,21 @@ import typings.escpos.escposStrings.InformationseparatorthreeLeftparenthesisk
 import typings.escpos.escposStrings.`1P0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMDP1 extends StObject {
   
   // Format= CMD_P1{LEN_2BYTE}CMD_P2{DATA}
   // DATA Max Length= 256*256 - 3 (65533)
-  var CMD_P1: InformationseparatorthreeLeftparenthesisk = js.native
+  var CMD_P1: InformationseparatorthreeLeftparenthesisk
   
-  var CMD_P2: `1P0` = js.native
+  var CMD_P2: `1P0`
 }
 object CMDP1 {
   
   @scala.inline
-  def apply(CMD_P1: InformationseparatorthreeLeftparenthesisk, CMD_P2: `1P0`): CMDP1 = {
-    val __obj = js.Dynamic.literal(CMD_P1 = CMD_P1.asInstanceOf[js.Any], CMD_P2 = CMD_P2.asInstanceOf[js.Any])
+  def apply(): CMDP1 = {
+    val __obj = js.Dynamic.literal(CMD_P1 = "\u001D(k", CMD_P2 = "1P0")
     __obj.asInstanceOf[CMDP1]
   }
   

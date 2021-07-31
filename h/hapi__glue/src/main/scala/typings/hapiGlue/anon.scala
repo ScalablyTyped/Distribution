@@ -3,15 +3,13 @@ package typings.hapiGlue
 import typings.hapiGlue.mod.PluginObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.Array[PluginObject | String] = js.native
+    var plugins: js.Array[PluginObject | String]
   }
   object Plugins {
     

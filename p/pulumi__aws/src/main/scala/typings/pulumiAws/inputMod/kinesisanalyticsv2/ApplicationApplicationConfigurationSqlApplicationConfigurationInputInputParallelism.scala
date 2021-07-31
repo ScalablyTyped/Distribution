@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism extends StObject {
   
   /**
     * The number of in-application streams to create.
     */
-  var count: js.UndefOr[Input[Double]] = js.native
+  var count: js.UndefOr[Input[Double]] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism {
   

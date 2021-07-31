@@ -2,26 +2,24 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WINDOWS extends StObject {
   
   /**
     * Total minutes used on macOS runner machines.
     */
-  var MACOS: Double = js.native
+  var MACOS: Double
   
   /**
     * Total minutes used on Ubuntu runner machines.
     */
-  var UBUNTU: Double = js.native
+  var UBUNTU: Double
   
   /**
     * Total minutes used on Windows runner machines.
     */
-  var WINDOWS: Double = js.native
+  var WINDOWS: Double
 }
 object WINDOWS {
   

@@ -5,15 +5,13 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: String = js.native
+    var children: String
   }
   object Children {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Condition extends StObject {
     
-    var children: String = js.native
+    var children: String
     
-    var condition: String = js.native
+    var condition: String
   }
   object Condition {
     
@@ -57,11 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object Dictkey {
     
@@ -82,12 +79,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var html: String = js.native
+    var html: String
   }
   object Errors {
     
@@ -111,12 +107,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Inline extends StObject {
     
-    var children: String = js.native
+    var children: String
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
   }
   object Inline {
     
@@ -140,13 +135,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -170,10 +165,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Src extends StObject {
     
-    var src: String = js.native
+    var src: String
   }
   object Src {
     

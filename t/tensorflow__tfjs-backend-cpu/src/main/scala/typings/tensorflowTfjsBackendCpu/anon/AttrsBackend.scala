@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.BatchMatMulAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.BatchMatMulInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsBackend extends StObject {
   
-  var attrs: BatchMatMulAttrs = js.native
+  var attrs: BatchMatMulAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: BatchMatMulInputs = js.native
+  var inputs: BatchMatMulInputs
 }
 object AttrsBackend {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,38 +17,62 @@ sealed trait ShapeLineDashStyle extends StObject
 object ShapeLineDashStyle extends StObject {
   
   @js.native
-  sealed trait dash extends ShapeLineDashStyle
+  sealed trait dash
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait dashDot extends ShapeLineDashStyle
+  sealed trait dashDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait dashDotDot extends ShapeLineDashStyle
+  sealed trait dashDotDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait longDash extends ShapeLineDashStyle
+  sealed trait longDash
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait longDashDot extends ShapeLineDashStyle
+  sealed trait longDashDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait longDashDotDot extends ShapeLineDashStyle
+  sealed trait longDashDotDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait roundDot extends ShapeLineDashStyle
+  sealed trait roundDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait solid extends ShapeLineDashStyle
+  sealed trait solid
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait squareDot extends ShapeLineDashStyle
+  sealed trait squareDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait systemDash extends ShapeLineDashStyle
+  sealed trait systemDash
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait systemDashDot extends ShapeLineDashStyle
+  sealed trait systemDashDot
+    extends StObject
+       with ShapeLineDashStyle
   
   @js.native
-  sealed trait systemDot extends ShapeLineDashStyle
+  sealed trait systemDot
+    extends StObject
+       with ShapeLineDashStyle
 }

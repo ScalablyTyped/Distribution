@@ -20,7 +20,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,18 +28,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the control is visible and has a valid (loadable) component URL, then the {@link FrameControl.Frame} property is set. Normally this control can be
   * used for preview functionality inside any UI.
   */
-@js.native
-trait FrameControl extends UnoControl {
+trait FrameControl
+  extends StObject
+     with UnoControl {
   
   /** contains the type of the component which is loaded into the frame, or the document which implicitly specifies the type */
-  var ComponentUrl: String = js.native
+  var ComponentUrl: String
   
   /**
     * the frame held by this control
     *
     * The {@link Frame} is created if the control is shown and the {@link ComponentUrl} is set.
     */
-  var Frame: String = js.native
+  var Frame: String
 }
 object FrameControl {
   

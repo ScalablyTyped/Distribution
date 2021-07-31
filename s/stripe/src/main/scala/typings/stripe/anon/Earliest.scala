@@ -4,31 +4,29 @@ import typings.stripe.stripeStrings.exact
 import typings.stripe.stripeStrings.range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Earliest extends StObject {
   
   /**
     * If type is "exact", date will be the expected delivery date in the format YYYY-MM-DD
     */
-  var date: String = js.native
+  var date: String
   
   /**
     * If type is "range", earliest will be be the earliest delivery date in the format YYYY-MM-DD
     */
-  var earliest: String = js.native
+  var earliest: String
   
   /**
     * If type is "range", latest will be the latest delivery date in the format YYYY-MM-DD
     */
-  var latest: String = js.native
+  var latest: String
   
   /**
     * The type of estimate. Must be either "range" or "exact"
     */
-  var `type`: range | exact = js.native
+  var `type`: range | exact
 }
 object Earliest {
   

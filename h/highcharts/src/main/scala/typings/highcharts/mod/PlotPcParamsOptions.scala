@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotPcParamsOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PlotPcParamsOptions extends StObject {
     * number of data points which are taken into account for the indicator
     * calculations.
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
 }
 object PlotPcParamsOptions {
   

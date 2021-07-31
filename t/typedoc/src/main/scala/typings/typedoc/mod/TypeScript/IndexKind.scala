@@ -2,7 +2,6 @@ package typings.typedoc.mod.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.IndexKind")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object IndexKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typescript.mod.IndexKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typescript.mod.IndexKind & Double] = js.native
   
-  /* 1 */ val Number: typings.typescript.mod.IndexKind.Number with Double = js.native
+  /* 1 */ val Number: typings.typescript.mod.IndexKind.Number & Double = js.native
   
-  /* 0 */ val String: typings.typescript.mod.IndexKind.String with Double = js.native
+  /* 0 */ val String: typings.typescript.mod.IndexKind.String & Double = js.native
 }

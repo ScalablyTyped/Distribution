@@ -2,25 +2,23 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptOptions extends StObject {
   
-  var beforePrompt: js.UndefOr[js.Function] = js.native
+  var beforePrompt: js.UndefOr[js.Function] = js.undefined
   
-  var onEndPrompt: js.UndefOr[js.Function] = js.native
+  var onEndPrompt: js.UndefOr[js.Function] = js.undefined
   
-  var onMatch: js.UndefOr[js.Function] = js.native
+  var onMatch: js.UndefOr[js.Function] = js.undefined
   
-  var onStartPrompt: js.UndefOr[js.Function] = js.native
+  var onStartPrompt: js.UndefOr[js.Function] = js.undefined
   
-  var options: js.Any = js.native
+  var options: js.Any
   
-  var question: String = js.native
+  var question: String
   
-  var smart: js.UndefOr[Boolean] = js.native
+  var smart: js.UndefOr[Boolean] = js.undefined
 }
 object PromptOptions {
   

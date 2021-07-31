@@ -4,34 +4,32 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vueComponentCompilerUtils.anon.PostTransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetUrlMod {
   
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/assetUrl", JSImport.Default)
+  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/assetUrl", JSImport.Namespace)
   @js.native
-  def default(): PostTransformNode = js.native
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/assetUrl", JSImport.Default)
-  @js.native
-  def default(userOptions: js.UndefOr[scala.Nothing], transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = js.native
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/assetUrl", JSImport.Default)
-  @js.native
-  def default(userOptions: AssetURLOptions): PostTransformNode = js.native
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/assetUrl", JSImport.Default)
-  @js.native
-  def default(userOptions: AssetURLOptions, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PostTransformNode]
+  @scala.inline
+  def default(userOptions: Unit, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
+  @scala.inline
+  def default(userOptions: AssetURLOptions): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any]).asInstanceOf[PostTransformNode]
+  @scala.inline
+  def default(userOptions: AssetURLOptions, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
   
   type AssetURLOptions = StringDictionary[String | js.Array[String]]
   
-  @js.native
   trait TransformAssetUrlsOptions extends StObject {
     
     /**
       * If base is provided, instead of transforming relative asset urls into
       * imports, they will be directly rewritten to absolute urls.
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
   }
   object TransformAssetUrlsOptions {
     

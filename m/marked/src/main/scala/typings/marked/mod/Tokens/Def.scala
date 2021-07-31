@@ -3,17 +3,17 @@ package typings.marked.mod.Tokens
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Def extends Token {
+trait Def
+  extends StObject
+     with Token {
   
-  var href: String = js.native
+  var href: String
   
-  var raw: String = js.native
+  var raw: String
   
-  var title: String = js.native
+  var title: String
 }
 object Def {
   

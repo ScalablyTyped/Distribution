@@ -2,18 +2,16 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBudgetActionHistoriesResponse extends StObject {
   
   /**
     *  The historical record of the budget action resource. 
     */
-  var ActionHistories: typings.awsSdk.budgetsMod.ActionHistories = js.native
+  var ActionHistories: typings.awsSdk.budgetsMod.ActionHistories
   
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object DescribeBudgetActionHistoriesResponse {
   

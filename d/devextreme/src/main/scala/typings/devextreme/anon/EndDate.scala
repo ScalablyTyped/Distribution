@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndDate extends StObject {
   
-  var endDate: js.UndefOr[typings.std.Date] = js.native
+  var endDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var startDate: js.UndefOr[typings.std.Date] = js.native
+  var startDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object EndDate {
   

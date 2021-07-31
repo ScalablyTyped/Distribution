@@ -3,32 +3,31 @@ package typings.isMobile
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-mobile", JSImport.Default)
+  @JSImport("is-mobile", JSImport.Namespace)
   @js.native
-  def default(): Boolean = js.native
-  @JSImport("is-mobile", JSImport.Default)
-  @js.native
-  def default(opts: IsMobileOptions): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("is-mobile", "isMobile")
-  @js.native
-  def isMobile(): Boolean = js.native
-  @JSImport("is-mobile", "isMobile")
-  @js.native
-  def isMobile(opts: IsMobileOptions): Boolean = js.native
+  @scala.inline
+  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  @scala.inline
+  def default(opts: IsMobileOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
+  @scala.inline
+  def isMobile(opts: IsMobileOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")(opts.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type HttpRequestHeadersInterfaceMock = StringDictionary[js.UndefOr[String | js.Array[String]]]
   
-  @js.native
   trait HttpRequestInterfaceMock
-    extends /* id */ StringDictionary[js.Any] {
+    extends StObject
+       with /* id */ StringDictionary[js.Any] {
     
-    var headers: HttpRequestHeadersInterfaceMock = js.native
+    var headers: HttpRequestHeadersInterfaceMock
   }
   object HttpRequestInterfaceMock {
     
@@ -46,14 +45,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IsMobileOptions extends StObject {
     
-    var featureDetect: js.UndefOr[Boolean] = js.native
+    var featureDetect: js.UndefOr[Boolean] = js.undefined
     
-    var tablet: js.UndefOr[Boolean] = js.native
+    var tablet: js.UndefOr[Boolean] = js.undefined
     
-    var ua: js.UndefOr[String | HttpRequestInterfaceMock] = js.native
+    var ua: js.UndefOr[String | HttpRequestInterfaceMock] = js.undefined
   }
   object IsMobileOptions {
     

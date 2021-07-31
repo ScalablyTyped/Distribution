@@ -2,23 +2,21 @@ package typings.pollyjsCore
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.pollyjsAdapter.mod.default
 import typings.pollyjsCore.mod.Headers
 import typings.pollyjsCore.mod.MatchBy
 import typings.pollyjsCore.mod.Request
-import typings.pollyjsPersister.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApiNamespace extends StObject {
     
-    var apiNamespace: js.UndefOr[String] = js.native
+    var apiNamespace: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
   }
   object ApiNamespace {
     
@@ -45,18 +43,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[Boolean | (MatchBy[_, _])] = js.native
+    var body: js.UndefOr[Boolean | (MatchBy[js.Any, js.Any])] = js.undefined
     
-    var headers: js.UndefOr[Boolean | Exclude | (MatchBy[Headers, Headers])] = js.native
+    var headers: js.UndefOr[Boolean | Exclude | (MatchBy[Headers, Headers])] = js.undefined
     
-    var method: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var method: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var order: js.UndefOr[Boolean] = js.native
+    var order: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[Boolean | (MatchBy[String, String]) | Hash] = js.native
+    var url: js.UndefOr[Boolean | (MatchBy[String, String]) | Hash] = js.undefined
   }
   object Body {
     
@@ -70,10 +67,10 @@ object anon {
     implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: Boolean | (MatchBy[_, _])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: Boolean | (MatchBy[js.Any, js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBodyFunction2(value: (_, /* req */ Request) => _): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
+      def setBodyFunction2(value: (js.Any, /* req */ Request) => js.Any): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
       
       @scala.inline
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -113,10 +110,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
   }
   object Context {
     
@@ -137,15 +133,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var fetch: js.UndefOr[Context] = js.native
+    var fetch: js.UndefOr[Context] = js.undefined
     
-    var puppeteer: js.UndefOr[Page] = js.native
+    var puppeteer: js.UndefOr[Page] = js.undefined
     
-    var xhr: js.UndefOr[Context] = js.native
+    var xhr: js.UndefOr[Context] = js.undefined
   }
   object Dictkey {
     
@@ -178,19 +174,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DisableSortingHarEntries
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var disableSortingHarEntries: js.UndefOr[Boolean] = js.native
+    var disableSortingHarEntries: js.UndefOr[Boolean] = js.undefined
     
-    var fs: js.UndefOr[RecordingsDir] = js.native
+    var fs: js.UndefOr[RecordingsDir] = js.undefined
     
-    var keepUnusedRequests: js.UndefOr[Boolean] = js.native
+    var keepUnusedRequests: js.UndefOr[Boolean] = js.undefined
     
-    var `local-storage`: js.UndefOr[Key] = js.native
+    var `local-storage`: js.UndefOr[Key] = js.undefined
     
-    var rest: js.UndefOr[ApiNamespace] = js.native
+    var rest: js.UndefOr[ApiNamespace] = js.undefined
   }
   object DisableSortingHarEntries {
     
@@ -235,10 +231,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Exclude extends StObject {
     
-    var exclude: js.Array[String] = js.native
+    var exclude: js.Array[String]
   }
   object Exclude {
     
@@ -259,24 +254,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Hash extends StObject {
     
-    var hash: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var hash: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var hostname: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var hostname: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var password: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var password: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var pathname: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var pathname: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var port: js.UndefOr[Boolean | (MatchBy[Double, Double])] = js.native
+    var port: js.UndefOr[Boolean | (MatchBy[Double, Double])] = js.undefined
     
-    var protocol: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var protocol: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var query: js.UndefOr[Boolean | (MatchBy[StringDictionary[_], StringDictionary[_]])] = js.native
+    var query: js.UndefOr[Boolean | (MatchBy[StringDictionary[js.Any], StringDictionary[js.Any]])] = js.undefined
     
-    var username: js.UndefOr[Boolean | (MatchBy[String, String])] = js.native
+    var username: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
   }
   object Hash {
     
@@ -344,10 +338,10 @@ object anon {
       def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       @scala.inline
-      def setQuery(value: Boolean | (MatchBy[StringDictionary[_], StringDictionary[_]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: Boolean | (MatchBy[StringDictionary[js.Any], StringDictionary[js.Any]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setQueryFunction2(value: (StringDictionary[_], /* req */ Request) => StringDictionary[_]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      def setQueryFunction2(value: (StringDictionary[js.Any], /* req */ Request) => StringDictionary[js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -363,12 +357,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -395,12 +388,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Page extends StObject {
     
-    var page: js.UndefOr[js.Any] = js.native
+    var page: js.UndefOr[js.Any] = js.undefined
     
-    var requestResourceTypes: js.UndefOr[js.Array[String]] = js.native
+    var requestResourceTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Page {
     
@@ -430,10 +422,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RecordingsDir extends StObject {
     
-    var recordingsDir: js.UndefOr[String] = js.native
+    var recordingsDir: js.UndefOr[String] = js.undefined
   }
   object RecordingsDir {
     
@@ -455,7 +446,19 @@ object anon {
   }
   
   @js.native
-  trait TypeofPersister extends Instantiable0[default] {
+  trait TypeofAdapter
+    extends StObject
+       with Instantiable0[default] {
+    
+    val id: String = js.native
+    
+    val `type`: String = js.native
+  }
+  
+  @js.native
+  trait TypeofPersister
+    extends StObject
+       with Instantiable0[typings.pollyjsPersister.mod.default] {
     
     val id: String = js.native
     

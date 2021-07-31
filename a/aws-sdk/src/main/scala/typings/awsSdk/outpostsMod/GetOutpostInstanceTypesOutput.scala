@@ -2,19 +2,17 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOutpostInstanceTypesOutput extends StObject {
   
-  var InstanceTypes: js.UndefOr[InstanceTypeListDefinition] = js.native
+  var InstanceTypes: js.UndefOr[InstanceTypeListDefinition] = js.undefined
   
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
-  var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.native
+  var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.undefined
   
-  var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.native
+  var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.undefined
 }
 object GetOutpostInstanceTypesOutput {
   

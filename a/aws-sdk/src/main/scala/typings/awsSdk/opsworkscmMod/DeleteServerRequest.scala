@@ -2,16 +2,14 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteServerRequest extends StObject {
   
   /**
     * The ID of the server to delete.
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
 }
 object DeleteServerRequest {
   

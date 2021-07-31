@@ -2,23 +2,21 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TensorInfo {
   
   /** Properties of a CooSparse. */
-  @js.native
   trait ICooSparse extends StObject {
     
     /** CooSparse denseShapeTensorName */
-    var denseShapeTensorName: js.UndefOr[String | Null] = js.native
+    var denseShapeTensorName: js.UndefOr[String | Null] = js.undefined
     
     /** CooSparse indicesTensorName */
-    var indicesTensorName: js.UndefOr[String | Null] = js.native
+    var indicesTensorName: js.UndefOr[String | Null] = js.undefined
     
     /** CooSparse valuesTensorName */
-    var valuesTensorName: js.UndefOr[String | Null] = js.native
+    var valuesTensorName: js.UndefOr[String | Null] = js.undefined
   }
   object ICooSparse {
     

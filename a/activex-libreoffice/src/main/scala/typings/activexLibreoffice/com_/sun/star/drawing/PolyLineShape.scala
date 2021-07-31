@@ -36,7 +36,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,12 +43,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A polyline has one or more straight lines.
   */
-@js.native
 trait PolyLineShape
-  extends Text
+  extends StObject
      with Shape
      with LineProperties
      with PolyPolygonDescriptor
+     with Text
      with ShadowProperties
      with RotationDescriptor
 object PolyLineShape {
@@ -305,7 +304,7 @@ object PolyLineShape {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPosition: Point => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed],
+    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed],
     setSize: Size => Unit,
     setString: String => Unit
   ): PolyLineShape = {

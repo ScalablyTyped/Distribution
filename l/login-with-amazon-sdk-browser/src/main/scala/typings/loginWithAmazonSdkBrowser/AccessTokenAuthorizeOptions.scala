@@ -3,14 +3,14 @@ package typings.loginWithAmazonSdkBrowser
 import typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccessTokenAuthorizeOptions extends AuthorizeOptions {
+trait AccessTokenAuthorizeOptions
+  extends StObject
+     with AuthorizeOptions {
   
   @JSName("response_type")
-  var response_type_AccessTokenAuthorizeOptions: js.UndefOr[token] = js.native
+  var response_type_AccessTokenAuthorizeOptions: js.UndefOr[token] = js.undefined
 }
 object AccessTokenAuthorizeOptions {
   

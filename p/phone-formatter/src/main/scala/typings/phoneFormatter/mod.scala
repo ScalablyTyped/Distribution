@@ -2,26 +2,25 @@ package typings.phoneFormatter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("phone-formatter", "format")
+  @JSImport("phone-formatter", JSImport.Namespace)
   @js.native
-  def format(digits: String, format: String): String = js.native
-  @JSImport("phone-formatter", "format")
-  @js.native
-  def format(digits: String, format: String, options: FormatOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("phone-formatter", "normalize")
-  @js.native
-  def normalize(digits: String): String = js.native
+  @scala.inline
+  def format(digits: String, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(digits: String, format: String, options: FormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def normalize(digits: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(digits.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait FormatOptions extends StObject {
     
-    var normalize: Boolean = js.native
+    var normalize: Boolean
   }
   object FormatOptions {
     

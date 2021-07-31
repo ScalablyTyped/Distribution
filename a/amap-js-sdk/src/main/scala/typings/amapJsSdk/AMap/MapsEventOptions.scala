@@ -2,22 +2,20 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 此对象用于表示地图、覆盖物、叠加层上的各种鼠标事件返回，包含以下字段：
   */
-@js.native
 trait MapsEventOptions extends StObject {
   
-  var lnglat: LngLat = js.native
+  var lnglat: LngLat
   
-  var pixel: Pixel = js.native
+  var pixel: Pixel
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MapsEventOptions {
   

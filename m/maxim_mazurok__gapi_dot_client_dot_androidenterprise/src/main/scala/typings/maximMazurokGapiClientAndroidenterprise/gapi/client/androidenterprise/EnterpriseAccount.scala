@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAccount extends StObject {
   
   /** The email address of the service account. */
-  var accountEmail: js.UndefOr[String] = js.native
+  var accountEmail: js.UndefOr[String] = js.undefined
 }
 object EnterpriseAccount {
   

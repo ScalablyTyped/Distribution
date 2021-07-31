@@ -3,14 +3,27 @@ package typings.semanticUiVisibility.anon
 import typings.semanticUiVisibility.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'onTopVisible'> */
-@js.native
 trait PickImplonTopVisible extends StObject {
   
-  def onTopVisible(): Unit = js.native
+  def onTopVisible(): Unit
   @JSName("onTopVisible")
-  var onTopVisible_Original: js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  var onTopVisible_Original: js.ThisFunction0[/* this */ JQuery, Unit]
+}
+object PickImplonTopVisible {
+  
+  @scala.inline
+  def apply(onTopVisible: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopVisible = {
+    val __obj = js.Dynamic.literal(onTopVisible = onTopVisible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonTopVisible]
+  }
+  
+  @scala.inline
+  implicit class PickImplonTopVisibleMutableBuilder[Self <: PickImplonTopVisible] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnTopVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopVisible", value.asInstanceOf[js.Any])
+  }
 }

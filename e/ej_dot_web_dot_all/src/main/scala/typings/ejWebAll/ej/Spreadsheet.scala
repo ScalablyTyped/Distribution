@@ -36,11 +36,12 @@ import typings.ejWebAll.ej.datavisualization.Chart.Theme
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spreadsheet extends Widget_ {
+trait Spreadsheet
+  extends StObject
+     with Widget_ {
   
   var XLCFormat: XLCFormat = js.native
   
@@ -113,7 +114,7 @@ trait Spreadsheet extends Widget_ {
     */
   def clearAll(): Unit = js.native
   def clearAll(range: String): Unit = js.native
-  def clearAll(range: js.Array[_]): Unit = js.native
+  def clearAll(range: js.Array[js.Any]): Unit = js.native
   
   /** This property is used to clear all the formats applied in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If range is specified, then it will clear all format in the specified range else it will use the current selected range.
@@ -121,7 +122,7 @@ trait Spreadsheet extends Widget_ {
     */
   def clearAllFormat(): Unit = js.native
   def clearAllFormat(range: String): Unit = js.native
-  def clearAllFormat(range: js.Array[_]): Unit = js.native
+  def clearAllFormat(range: js.Array[js.Any]): Unit = js.native
   
   /** Used to clear the applied border in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If range is specified, then it will clear border in the specified range else it will use the current selected range.
@@ -129,7 +130,7 @@ trait Spreadsheet extends Widget_ {
     */
   def clearBorder(): Unit = js.native
   def clearBorder(range: String): Unit = js.native
-  def clearBorder(range: js.Array[_]): Unit = js.native
+  def clearBorder(range: js.Array[js.Any]): Unit = js.native
   
   /** This property is used to clear the contents in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If the range is specified, then it will clear the content in the specified range else it will use the current selected range.
@@ -137,7 +138,7 @@ trait Spreadsheet extends Widget_ {
     */
   def clearContents(): Unit = js.native
   def clearContents(range: String): Unit = js.native
-  def clearContents(range: js.Array[_]): Unit = js.native
+  def clearContents(range: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to remove only the data in the range denoted by the specified range name.
     * @param {string} Pass the defined rangeSettings property name.
@@ -155,7 +156,7 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def clearRangeData(
-    range: js.UndefOr[js.Array[_] | String],
+    range: js.UndefOr[js.Array[js.Any] | String],
     property: js.UndefOr[String],
     cells: js.UndefOr[HTMLElement],
     skipHiddenRow: js.UndefOr[Boolean],
@@ -294,7 +295,7 @@ trait Spreadsheet extends Widget_ {
     * @param {any} Pass the Object
     * @returns {any[]}
     */
-  def getObjectKeys(obj: js.Any): js.Array[_] = js.native
+  def getObjectKeys(obj: js.Any): js.Array[js.Any] = js.native
   
   /** This method is used to get all cell elements in the specified range.
     * @param {string} Pass the range that you want to get the cells.
@@ -309,8 +310,8 @@ trait Spreadsheet extends Widget_ {
     * @param {any} Optional. Pass the range, property, sheetIdx, valueOnly in options
     * @returns {any[]}
     */
-  def getRangeData(): js.Array[_] = js.native
-  def getRangeData(options: js.Any): js.Array[_] = js.native
+  def getRangeData(): js.Array[js.Any] = js.native
+  def getRangeData(options: js.Any): js.Array[js.Any] = js.native
   
   /** This method is used to get the data as object in the specified range.
     * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
@@ -325,7 +326,7 @@ trait Spreadsheet extends Widget_ {
     * @param {string} Pass the alpha range that you want to get range indices.
     * @returns {any[]}
     */
-  def getRangeIndices(range: String): js.Array[_] = js.native
+  def getRangeIndices(range: String): js.Array[js.Any] = js.native
   
   /** This method is used to get the sheet details based on the given sheet index in Spreadsheet.
     * @param {number} Pass the sheet index to get the sheet object.
@@ -342,7 +343,7 @@ trait Spreadsheet extends Widget_ {
   /** This method is used to get all the sheets in workbook.
     * @returns {any[]}
     */
-  def getSheets(): js.Array[_] = js.native
+  def getSheets(): js.Array[js.Any] = js.native
   
   /** This method is used to get the visible cell details in Spreadsheet.
     * @returns {void}
@@ -445,8 +446,8 @@ trait Spreadsheet extends Widget_ {
     */
   def lockCells(range: String): Unit = js.native
   def lockCells(range: String, isLocked: String): Unit = js.native
-  def lockCells(range: js.Array[_]): Unit = js.native
-  def lockCells(range: js.Array[_], isLocked: String): Unit = js.native
+  def lockCells(range: js.Array[js.Any]): Unit = js.native
+  def lockCells(range: js.Array[js.Any], isLocked: String): Unit = js.native
   
   /** This method is used to merge cells by across in the Spreadsheet.
     * @param {string} Optional. To pass the cell range or selected cells are process.
@@ -454,9 +455,9 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def mergeAcrossCells(): Unit = js.native
-  def mergeAcrossCells(range: js.UndefOr[scala.Nothing], alertStatus: Boolean): Unit = js.native
   def mergeAcrossCells(range: String): Unit = js.native
   def mergeAcrossCells(range: String, alertStatus: Boolean): Unit = js.native
+  def mergeAcrossCells(range: Unit, alertStatus: Boolean): Unit = js.native
   
   /** This method is used to merge the selected cells in the Spreadsheet.
     * @param {string|any[]} Optional. To pass the cell range or selected cells are process.
@@ -464,11 +465,11 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def mergeCells(): Unit = js.native
-  def mergeCells(range: js.UndefOr[scala.Nothing], alertStatus: Boolean): Unit = js.native
   def mergeCells(range: String): Unit = js.native
   def mergeCells(range: String, alertStatus: Boolean): Unit = js.native
-  def mergeCells(range: js.Array[_]): Unit = js.native
-  def mergeCells(range: js.Array[_], alertStatus: Boolean): Unit = js.native
+  def mergeCells(range: js.Array[js.Any]): Unit = js.native
+  def mergeCells(range: js.Array[js.Any], alertStatus: Boolean): Unit = js.native
+  def mergeCells(range: Unit, alertStatus: Boolean): Unit = js.native
   
   @JSName("model")
   var model_Spreadsheet: Model = js.native
@@ -524,99 +525,47 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def removeHyperlink(range: String): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: js.UndefOr[scala.Nothing],
-    cells: js.UndefOr[scala.Nothing],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: js.UndefOr[scala.Nothing],
-    cells: String
-  ): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: js.UndefOr[scala.Nothing],
-    cells: String,
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: js.UndefOr[scala.Nothing],
-    cells: js.Array[_]
-  ): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: js.UndefOr[scala.Nothing],
-    cells: js.Array[_],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: Boolean,
-    cells: js.UndefOr[scala.Nothing],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean, cells: String): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: Boolean,
-    cells: String,
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean, cells: js.Array[_]): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: js.UndefOr[scala.Nothing],
-    status: Boolean,
-    cells: js.Array[_],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Boolean,
-    status: js.UndefOr[scala.Nothing],
-    cells: js.UndefOr[scala.Nothing],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: js.UndefOr[scala.Nothing], cells: String): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Boolean,
-    status: js.UndefOr[scala.Nothing],
-    cells: String,
-    skipHiddenRow: Boolean
-  ): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: js.UndefOr[scala.Nothing], cells: js.Array[_]): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Boolean,
-    status: js.UndefOr[scala.Nothing],
-    cells: js.Array[_],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Boolean,
-    status: Boolean,
-    cells: js.UndefOr[scala.Nothing],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String, skipHiddenRow: Boolean): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[_]): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[_], skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[js.Any]): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: Boolean,
+    cells: js.Array[js.Any],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: String): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: String, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: js.Array[js.Any]): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: Unit,
+    cells: js.Array[js.Any],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: String): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: String, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: js.Array[js.Any]): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Unit,
+    status: Boolean,
+    cells: js.Array[js.Any],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: String): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: String, skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[js.Any]): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[js.Any], skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
   
   /** This method is used to remove the range data and its defined rangeSettings property based on the specified range name.
     * @param {string} Pass the defined rangeSetting property name.
@@ -630,7 +579,7 @@ trait Spreadsheet extends Widget_ {
     */
   def removeReadOnly(): Unit = js.native
   def removeReadOnly(range: String): Unit = js.native
-  def removeReadOnly(range: js.Array[_]): Unit = js.native
+  def removeReadOnly(range: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to save JSON data in Spreadsheet.
     * @returns {any}
@@ -670,7 +619,7 @@ trait Spreadsheet extends Widget_ {
     * @param {any[]|any} Pass the row index and height of the rows.
     * @returns {void}
     */
-  def setHeightToRows(heightColl: js.Array[_]): Unit = js.native
+  def setHeightToRows(heightColl: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to set the hyperlink in selected cells of the current sheet.
     * @param {string|any[]} If range is specified, it will set the hyperlink in range of the cells.
@@ -679,7 +628,7 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def setHyperlink(range: String, link: LinkOptions, sheetIdx: Double): Unit = js.native
-  def setHyperlink(range: js.Array[_], link: LinkOptions, sheetIdx: Double): Unit = js.native
+  def setHyperlink(range: js.Array[js.Any], link: LinkOptions, sheetIdx: Double): Unit = js.native
   
   /** This method is used to set the readonly option for the specified range.
     * @param {string|any[]} Pass the range.
@@ -687,7 +636,7 @@ trait Spreadsheet extends Widget_ {
     */
   def setReadOnly(): Unit = js.native
   def setReadOnly(range: String): Unit = js.native
-  def setReadOnly(range: js.Array[_]): Unit = js.native
+  def setReadOnly(range: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to set the focus to the Spreadsheet.
     * @returns {void}
@@ -701,8 +650,8 @@ trait Spreadsheet extends Widget_ {
     * @param {number} Optional. If sheetIdx is specified, it will set the width for columns to the specified sheet else it will use active sheet.
     * @returns {void}
     */
-  def setWidthToColumns(widthColl: js.Array[_]): Unit = js.native
-  def setWidthToColumns(widthColl: js.Array[_], sheetIndex: Double): Unit = js.native
+  def setWidthToColumns(widthColl: js.Array[js.Any]): Unit = js.native
+  def setWidthToColumns(widthColl: js.Array[js.Any], sheetIndex: Double): Unit = js.native
   
   /** This method is used to rename the active sheet.
     * @param {string} Pass the sheet name that you want to change the current active sheet name.
@@ -764,7 +713,7 @@ trait Spreadsheet extends Widget_ {
     */
   def unWrapText(): Unit = js.native
   def unWrapText(range: String): Unit = js.native
-  def unWrapText(range: js.Array[_]): Unit = js.native
+  def unWrapText(range: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to perform the undo action in Spreadsheet.
     * @returns {void}
@@ -792,7 +741,7 @@ trait Spreadsheet extends Widget_ {
     */
   def updateData(data: DataOptions): Unit = js.native
   def updateData(data: DataOptions, range: String): Unit = js.native
-  def updateData(data: DataOptions, range: js.Array[_]): Unit = js.native
+  def updateData(data: DataOptions, range: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to update the formula bar in the Spreadsheet.
     * @returns {void}
@@ -819,11 +768,11 @@ trait Spreadsheet extends Widget_ {
     * @returns {void}
     */
   def updateUniqueData(data: DataOptions): Unit = js.native
-  def updateUniqueData(data: DataOptions, range: js.UndefOr[scala.Nothing], skipCell: Boolean): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String, skipCell: Boolean): Unit = js.native
-  def updateUniqueData(data: DataOptions, range: js.Array[_]): Unit = js.native
-  def updateUniqueData(data: DataOptions, range: js.Array[_], skipCell: Boolean): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: js.Array[js.Any]): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: js.Array[js.Any], skipCell: Boolean): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: Unit, skipCell: Boolean): Unit = js.native
   
   /** This method is used to wrap the selected range of cells in the Spreadsheet.
     * @param {any[]|string} Optional. If the range is specified, then it will update wrap in the specified  range else it will use the current selected range.
@@ -831,7 +780,7 @@ trait Spreadsheet extends Widget_ {
     */
   def wrapText(): Unit = js.native
   def wrapText(range: String): Unit = js.native
-  def wrapText(range: js.Array[_]): Unit = js.native
+  def wrapText(range: js.Array[js.Any]): Unit = js.native
 }
 object Spreadsheet {
   
@@ -843,23 +792,33 @@ object Spreadsheet {
     
     ///Specifies the CopyCells property in AutoFillOptions.
     @js.native
-    sealed trait CopyCells extends AutoFillOptions
+    sealed trait CopyCells
+      extends StObject
+         with AutoFillOptions
     
     ///Specifies the FillFormattingOnly property in AutoFillOptions.
     @js.native
-    sealed trait FillFormattingOnly extends AutoFillOptions
+    sealed trait FillFormattingOnly
+      extends StObject
+         with AutoFillOptions
     
     ///Specifies the FillSeries property in AutoFillOptions.
     @js.native
-    sealed trait FillSeries extends AutoFillOptions
+    sealed trait FillSeries
+      extends StObject
+         with AutoFillOptions
     
     ///Specifies the FillWithoutFormatting property in AutoFillOptions.
     @js.native
-    sealed trait FillWithoutFormatting extends AutoFillOptions
+    sealed trait FillWithoutFormatting
+      extends StObject
+         with AutoFillOptions
     
     ///Specifies the FlashFill property in AutoFillOptions.
     @js.native
-    sealed trait FlashFill extends AutoFillOptions
+    sealed trait FlashFill
+      extends StObject
+         with AutoFillOptions
   }
   
   @js.native
@@ -870,43 +829,63 @@ object Spreadsheet {
     
     ///To apply all border for the given range of cell.
     @js.native
-    sealed trait AllBorder extends BorderType
+    sealed trait AllBorder
+      extends StObject
+         with BorderType
     
     ///To apply bottom border for the given range of cell.
     @js.native
-    sealed trait Bottom extends BorderType
+    sealed trait Bottom
+      extends StObject
+         with BorderType
     
     ///To apply left border for the given range of cell.
     @js.native
-    sealed trait Left extends BorderType
+    sealed trait Left
+      extends StObject
+         with BorderType
     
     ///To apply outside border for the given range of cell.
     @js.native
-    sealed trait OutSide extends BorderType
+    sealed trait OutSide
+      extends StObject
+         with BorderType
     
     ///To apply right border for the given range of cell.
     @js.native
-    sealed trait Right extends BorderType
+    sealed trait Right
+      extends StObject
+         with BorderType
     
     ///To apply thick bottom border for the given range of cell.
     @js.native
-    sealed trait ThickBottom extends BorderType
+    sealed trait ThickBottom
+      extends StObject
+         with BorderType
     
     ///To apply thick box border for the given range of cell.
     @js.native
-    sealed trait ThickBox extends BorderType
+    sealed trait ThickBox
+      extends StObject
+         with BorderType
     
     ///To apply top border for the given range of cell.
     @js.native
-    sealed trait Top extends BorderType
+    sealed trait Top
+      extends StObject
+         with BorderType
     
     ///To apply top and bottom border for the given range of cell.
     @js.native
-    sealed trait TopandBottom extends BorderType
+    sealed trait TopandBottom
+      extends StObject
+         with BorderType
     
     ///To apply top and thick bottom border for the given range of cell.
     @js.native
-    sealed trait TopandThickBottom extends BorderType
+    sealed trait TopandThickBottom
+      extends StObject
+         with BorderType
   }
   
   @js.native
@@ -917,23 +896,33 @@ object Spreadsheet {
     
     ///Highlights green with dark green text color.
     @js.native
-    sealed trait GreenFillwithDarkGreenText extends CFormatHighlightColor
+    sealed trait GreenFillwithDarkGreenText
+      extends StObject
+         with CFormatHighlightColor
     
     ///Highlights with red fill.
     @js.native
-    sealed trait RedFill extends CFormatHighlightColor
+    sealed trait RedFill
+      extends StObject
+         with CFormatHighlightColor
     
     ///Highlights red with dark red text color.
     @js.native
-    sealed trait RedFillwithDarkRedText extends CFormatHighlightColor
+    sealed trait RedFillwithDarkRedText
+      extends StObject
+         with CFormatHighlightColor
     
     ///Highlights with red text.
     @js.native
-    sealed trait RedText extends CFormatHighlightColor
+    sealed trait RedText
+      extends StObject
+         with CFormatHighlightColor
     
     ///Highlights yellow with dark yellow text color.
     @js.native
-    sealed trait YellowFillwithDarkYellowText extends CFormatHighlightColor
+    sealed trait YellowFillwithDarkYellowText
+      extends StObject
+         with CFormatHighlightColor
   }
   
   @js.native
@@ -944,27 +933,39 @@ object Spreadsheet {
     
     ///To identify in between values in the given range of cells.
     @js.native
-    sealed trait Between extends CFormatRule
+    sealed trait Between
+      extends StObject
+         with CFormatRule
     
     ///To identify the specified date in the range of cells.
     @js.native
-    sealed trait DateOccurs extends CFormatRule
+    sealed trait DateOccurs
+      extends StObject
+         with CFormatRule
     
     ///To identify the equal values in the given range of cells.
     @js.native
-    sealed trait EqualTo extends CFormatRule
+    sealed trait EqualTo
+      extends StObject
+         with CFormatRule
     
     ///To identify greater than values in the given range of cells.
     @js.native
-    sealed trait GreaterThan extends CFormatRule
+    sealed trait GreaterThan
+      extends StObject
+         with CFormatRule
     
     ///To identify less than values in the given range of cells.
     @js.native
-    sealed trait LessThan extends CFormatRule
+    sealed trait LessThan
+      extends StObject
+         with CFormatRule
     
     ///To identify the specified text in the range of cells.
     @js.native
-    sealed trait TextContains extends CFormatRule
+    sealed trait TextContains
+      extends StObject
+         with CFormatRule
   }
   
   @js.native
@@ -975,91 +976,135 @@ object Spreadsheet {
     
     ///Specifies to make the data label center of the chart.
     @js.native
-    sealed trait DataLabelCenter extends ChartProperties
+    sealed trait DataLabelCenter
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the data label inside base of the chart.
     @js.native
-    sealed trait DataLabelInsideBase extends ChartProperties
+    sealed trait DataLabelInsideBase
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the data label inside end of the chart.
     @js.native
-    sealed trait DataLabelInsideEnd extends ChartProperties
+    sealed trait DataLabelInsideEnd
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the data label none of the chart.
     @js.native
-    sealed trait DataLabelNone extends ChartProperties
+    sealed trait DataLabelNone
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the data label outside end of the chart.
     @js.native
-    sealed trait DataLabelOutsideEnd extends ChartProperties
+    sealed trait DataLabelOutsideEnd
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the legends to bottom of the chart.
     @js.native
-    sealed trait LegendsBottom extends ChartProperties
+    sealed trait LegendsBottom
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the legends to left of the chart.
     @js.native
-    sealed trait LegendsLeft extends ChartProperties
+    sealed trait LegendsLeft
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the legends to none of the chart.
     @js.native
-    sealed trait LegendsNone extends ChartProperties
+    sealed trait LegendsNone
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the legends to right of the chart.
     @js.native
-    sealed trait LegendsRight extends ChartProperties
+    sealed trait LegendsRight
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the legends to top of the chart.
     @js.native
-    sealed trait LegendsTop extends ChartProperties
+    sealed trait LegendsTop
+      extends StObject
+         with ChartProperties
     
     ///To set the primary horizontal of the chart.
     @js.native
-    sealed trait PrimaryHorizontal extends ChartProperties
+    sealed trait PrimaryHorizontal
+      extends StObject
+         with ChartProperties
     
     ///To set the primary horizontal axis title of the chart.
     @js.native
-    sealed trait PrimaryHorizontalAxisTitle extends ChartProperties
+    sealed trait PrimaryHorizontalAxisTitle
+      extends StObject
+         with ChartProperties
     
     ///To set the primary major horizontal of the chart.
     @js.native
-    sealed trait PrimaryMajorHorizontal extends ChartProperties
+    sealed trait PrimaryMajorHorizontal
+      extends StObject
+         with ChartProperties
     
     ///To set the primary major vertical of the chart.
     @js.native
-    sealed trait PrimaryMajorVertical extends ChartProperties
+    sealed trait PrimaryMajorVertical
+      extends StObject
+         with ChartProperties
     
     ///To set the primary minor horizontal of the chart.
     @js.native
-    sealed trait PrimaryMinorHorizontal extends ChartProperties
+    sealed trait PrimaryMinorHorizontal
+      extends StObject
+         with ChartProperties
     
     ///To set the primary minor vertical of the chart.
     @js.native
-    sealed trait PrimaryMinorVertical extends ChartProperties
+    sealed trait PrimaryMinorVertical
+      extends StObject
+         with ChartProperties
     
     ///To set the primary vertical of the chart.
     @js.native
-    sealed trait PrimaryVertical extends ChartProperties
+    sealed trait PrimaryVertical
+      extends StObject
+         with ChartProperties
     
     ///To set the primary vertical axis title of the chart.
     @js.native
-    sealed trait PrimaryVerticalAxisTitle extends ChartProperties
+    sealed trait PrimaryVerticalAxisTitle
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the title to center of the chart.
     @js.native
-    sealed trait TitleCenter extends ChartProperties
+    sealed trait TitleCenter
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the title to far of the chart.
     @js.native
-    sealed trait TitleFar extends ChartProperties
+    sealed trait TitleFar
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the title to near of the chart.
     @js.native
-    sealed trait TitleNear extends ChartProperties
+    sealed trait TitleNear
+      extends StObject
+         with ChartProperties
     
     ///Specifies to make the title to none of the chart.
     @js.native
-    sealed trait TitleNone extends ChartProperties
+    sealed trait TitleNone
+      extends StObject
+         with ChartProperties
   }
   
   @js.native
@@ -1070,19 +1115,27 @@ object Spreadsheet {
     
     ///To specify cell Context Menu.
     @js.native
-    sealed trait Cell extends ContextMenuType
+    sealed trait Cell
+      extends StObject
+         with ContextMenuType
     
     ///To specify column header Context Menu.
     @js.native
-    sealed trait ColumnHeader extends ContextMenuType
+    sealed trait ColumnHeader
+      extends StObject
+         with ContextMenuType
     
     ///To specify footer Context Menu.
     @js.native
-    sealed trait Footer extends ContextMenuType
+    sealed trait Footer
+      extends StObject
+         with ContextMenuType
     
     ///To specify row header Context Menu.
     @js.native
-    sealed trait RowHeader extends ContextMenuType
+    sealed trait RowHeader
+      extends StObject
+         with ContextMenuType
   }
   
   @js.native
@@ -1093,19 +1146,27 @@ object Spreadsheet {
     
     ///To insert the Button in cell.
     @js.native
-    sealed trait Button extends CustomCellType
+    sealed trait Button
+      extends StObject
+         with CustomCellType
     
     ///To insert the Checkbox in cell.
     @js.native
-    sealed trait CheckBox extends CustomCellType
+    sealed trait CheckBox
+      extends StObject
+         with CustomCellType
     
     ///To insert the Datepicker in cell.
     @js.native
-    sealed trait DatePicker extends CustomCellType
+    sealed trait DatePicker
+      extends StObject
+         with CustomCellType
     
     ///To insert the Dropdownlist in cell.
     @js.native
-    sealed trait DropDownList extends CustomCellType
+    sealed trait DropDownList
+      extends StObject
+         with CustomCellType
   }
   
   @js.native
@@ -1116,15 +1177,21 @@ object Spreadsheet {
     
     ///Specifies to export the file in Csv format.
     @js.native
-    sealed trait Csv extends ExportType
+    sealed trait Csv
+      extends StObject
+         with ExportType
     
     ///Specifies to export the file in Excel format.
     @js.native
-    sealed trait Excel extends ExportType
+    sealed trait Excel
+      extends StObject
+         with ExportType
     
     ///Specifies to export the file in Pdf format.
     @js.native
-    sealed trait Pdf extends ExportType
+    sealed trait Pdf
+      extends StObject
+         with ExportType
   }
   
   @js.native
@@ -1135,15 +1202,21 @@ object Spreadsheet {
     
     ///To select only Column in Spreadsheet.
     @js.native
-    sealed trait Column extends SelectionType
+    sealed trait Column
+      extends StObject
+         with SelectionType
     
     ///To select both Column/Row in Spreadsheet.
     @js.native
-    sealed trait Default extends SelectionType
+    sealed trait Default
+      extends StObject
+         with SelectionType
     
     ///To select only Row in Spreadsheet.
     @js.native
-    sealed trait Row extends SelectionType
+    sealed trait Row
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -1154,15 +1227,21 @@ object Spreadsheet {
     
     ///To enable MultiRange selection in Spreadsheet
     @js.native
-    sealed trait MultiRange extends SelectionUnit
+    sealed trait MultiRange
+      extends StObject
+         with SelectionUnit
     
     ///To enable Range selection in Spreadsheet
     @js.native
-    sealed trait Range extends SelectionUnit
+    sealed trait Range
+      extends StObject
+         with SelectionUnit
     
     ///To enable Single selection in Spreadsheet
     @js.native
-    sealed trait Single extends SelectionUnit
+    sealed trait Single
+      extends StObject
+         with SelectionUnit
   }
   
   @js.native
@@ -1173,55 +1252,58 @@ object Spreadsheet {
     
     ///To enable Infinite scroll mode for Spreadsheet.
     @js.native
-    sealed trait Infinite extends scrollMode
+    sealed trait Infinite
+      extends StObject
+         with scrollMode
     
     ///To enable Normal scroll mode for Spreadsheet.
     @js.native
-    sealed trait Normal extends scrollMode
+    sealed trait Normal
+      extends StObject
+         with scrollMode
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the applied style format object.
       */
-    var afterFormat: js.UndefOr[js.Any] = js.native
+    var afterFormat: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the applied style format object.
       */
-    var beforeFormat: js.UndefOr[js.Any] = js.native
+    var beforeFormat: js.UndefOr[js.Any] = js.undefined
     
     /** Returns selected columns while sorting or filtering begins.
       */
-    var colSelected: js.UndefOr[Double] = js.native
+    var colSelected: js.UndefOr[Double] = js.undefined
     
     /** Return column name while sorting.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns goto index while paging.
       */
-    var gotoIdx: js.UndefOr[Double] = js.native
+    var gotoIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns boolean value. If create new sheet it returns true.
       */
-    var newSheet: js.UndefOr[Boolean] = js.native
+    var newSheet: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell range.
       */
-    var range: js.UndefOr[js.Array[_]] = js.native
+    var range: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the action format.
       */
-    var reqType: js.UndefOr[String] = js.native
+    var reqType: js.UndefOr[String] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns sort direction while sort action begins.
       */
-    var sortDirection: js.UndefOr[String] = js.native
+    var sortDirection: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -1271,7 +1353,7 @@ object Spreadsheet {
       def setNewSheetUndefined: Self = StObject.set(x, "newSheet", js.undefined)
       
       @scala.inline
-      def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
@@ -1299,32 +1381,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type.
       */
-    var reqType: js.UndefOr[String] = js.native
+    var reqType: js.UndefOr[String] = js.undefined
     
     /** Returns the applied cell format object.
       */
-    var selectedCell: js.UndefOr[js.Array[_] | js.Any] = js.native
+    var selectedCell: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -1356,7 +1437,7 @@ object Spreadsheet {
       def setReqTypeUndefined: Self = StObject.set(x, "reqType", js.undefined)
       
       @scala.inline
-      def setSelectedCell(value: js.Array[_] | js.Any): Self = StObject.set(x, "selectedCell", value.asInstanceOf[js.Any])
+      def setSelectedCell(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "selectedCell", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedCellUndefined: Self = StObject.set(x, "selectedCell", js.undefined)
@@ -1378,40 +1459,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait AutoFillBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns auto fill begin cell range.
       */
-    var dataRange: js.UndefOr[js.Array[_]] = js.native
+    var dataRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns which direction drag the auto fill.
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Returns fill cells range.
       */
-    var fillRange: js.UndefOr[js.Array[_]] = js.native
+    var fillRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the auto fill type.
       */
-    var fillType: js.UndefOr[String] = js.native
+    var fillType: js.UndefOr[String] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AutoFillBeginEventArgs {
     
@@ -1431,7 +1511,7 @@ object Spreadsheet {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setDataRange(value: js.Array[_]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+      def setDataRange(value: js.Array[js.Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
@@ -1446,7 +1526,7 @@ object Spreadsheet {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setFillRange(value: js.Array[_]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
+      def setFillRange(value: js.Array[js.Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFillRangeUndefined: Self = StObject.set(x, "fillRange", js.undefined)
@@ -1480,40 +1560,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait AutoFillCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns auto fill begin cell range.
       */
-    var dataRange: js.UndefOr[js.Array[_]] = js.native
+    var dataRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns which direction to drag the auto fill.
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Returns fill cells range.
       */
-    var fillRange: js.UndefOr[js.Array[_]] = js.native
+    var fillRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the auto fill type.
       */
-    var fillType: js.UndefOr[String] = js.native
+    var fillType: js.UndefOr[String] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AutoFillCompleteEventArgs {
     
@@ -1533,7 +1612,7 @@ object Spreadsheet {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setDataRange(value: js.Array[_]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+      def setDataRange(value: js.Array[js.Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
@@ -1548,7 +1627,7 @@ object Spreadsheet {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setFillRange(value: js.Array[_]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
+      def setFillRange(value: js.Array[js.Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFillRangeUndefined: Self = StObject.set(x, "fillRange", js.undefined)
@@ -1582,24 +1661,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait AutoFillObject extends StObject {
     
     /** Pass the data range to autofill
       */
-    var dataRange: js.UndefOr[String] = js.native
+    var dataRange: js.UndefOr[String] = js.undefined
     
     /** Pass the direction to autofill
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Pass the fill range to autofill
       */
-    var fillRange: js.UndefOr[String] = js.native
+    var fillRange: js.UndefOr[String] = js.undefined
     
     /** Pass the fill type to perform autofill in spreadsheet
       */
-    var fillType: js.UndefOr[String] = js.native
+    var fillType: js.UndefOr[String] = js.undefined
   }
   object AutoFillObject {
     
@@ -1638,18 +1716,17 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait AutoFillSettings extends StObject {
     
     /** This property is used to set fillType unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
       * @Default {ej.Spreadsheet.AutoFillOptions.FillSeries}
       */
-    var fillType: js.UndefOr[AutoFillOptions | String] = js.native
+    var fillType: js.UndefOr[AutoFillOptions | String] = js.undefined
     
     /** Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
       * @Default {true}
       */
-    var showFillOptions: js.UndefOr[Boolean] = js.native
+    var showFillOptions: js.UndefOr[Boolean] = js.undefined
   }
   object AutoFillSettings {
     
@@ -1676,20 +1753,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BackstageOptions extends StObject {
     
     /** Pass the id to added in backstage
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Pass the item type to added in backstage
       */
-    var itemType: js.UndefOr[HTMLElement] = js.native
+    var itemType: js.UndefOr[HTMLElement] = js.undefined
     
     /** Pass the text to added in backstage
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object BackstageOptions {
     
@@ -1722,20 +1798,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeBatchSaveEventArgs extends StObject {
     
     /** Returns the changed record object.
       */
-    var batchChanges: js.UndefOr[js.Any] = js.native
+    var batchChanges: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query, primary key,batch changes for the data Source.
       */
-    var dataSetting: js.UndefOr[js.Any] = js.native
+    var dataSetting: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
   }
   object BeforeBatchSaveEventArgs {
     
@@ -1768,32 +1843,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeCellFormatEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected cells.
       */
-    var cells: js.UndefOr[js.Array[_] | js.Any] = js.native
+    var cells: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
     
     /** Returns the applied style format object.
       */
-    var format: js.UndefOr[js.Any] = js.native
+    var format: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCellFormatEventArgs {
     
@@ -1813,7 +1887,7 @@ object Spreadsheet {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setCells(value: js.Array[_] | js.Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      def setCells(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
@@ -1847,28 +1921,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeCellSelectEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell range.
       */
-    var currRange: js.UndefOr[js.Array[_]] = js.native
+    var currRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the previous cell range.
       */
-    var prevRange: js.UndefOr[js.Array[_]] = js.native
+    var prevRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCellSelectEventArgs {
     
@@ -1888,7 +1961,7 @@ object Spreadsheet {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setCurrRange(value: js.Array[_]): Self = StObject.set(x, "currRange", value.asInstanceOf[js.Any])
+      def setCurrRange(value: js.Array[js.Any]): Self = StObject.set(x, "currRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCurrRangeUndefined: Self = StObject.set(x, "currRange", js.undefined)
@@ -1903,7 +1976,7 @@ object Spreadsheet {
       def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
       @scala.inline
-      def setPrevRange(value: js.Array[_]): Self = StObject.set(x, "prevRange", value.asInstanceOf[js.Any])
+      def setPrevRange(value: js.Array[js.Any]): Self = StObject.set(x, "prevRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrevRangeUndefined: Self = StObject.set(x, "prevRange", js.undefined)
@@ -1919,40 +1992,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeDropEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.native
+    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the cell Overwriting alert option value.
       */
-    var preventAlert: js.UndefOr[Boolean] = js.native
+    var preventAlert: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeDropEventArgs {
     
@@ -2015,36 +2087,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeEditCommentEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the comment cell index.
       */
-    var cellIndex: js.UndefOr[js.Any] = js.native
+    var cellIndex: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the disable option value.
       */
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the value of the comment
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforeEditCommentEventArgs {
     
@@ -2101,24 +2172,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -2157,32 +2227,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BeforePanelOpenEventArgs extends StObject {
     
     /** Returns the activation panel element.
       */
-    var activationPanel: js.UndefOr[js.Any] = js.native
+    var activationPanel: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.native
+    var range: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforePanelOpenEventArgs {
     
@@ -2233,20 +2302,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait BorderOptions extends StObject {
     
     /** Pass the color to set border of the cell
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pass the style to set border of the cell
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** Pass the type to set border of the cell
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BorderOptions {
     
@@ -2279,28 +2347,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CFormatOptions extends StObject {
     
     /** Pass the condition to set the conditional formatting
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Pass the bgColor to set the conditional formatting
       */
-    var bgColor: js.UndefOr[String] = js.native
+    var bgColor: js.UndefOr[String] = js.undefined
     
     /** Pass the color to set the conditional formatting
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pass the inputs to set the conditional formatting
       */
-    var inputs: js.UndefOr[js.Array[_] | String] = js.native
+    var inputs: js.UndefOr[js.Array[js.Any] | String] = js.undefined
     
     /** Pass the range to set the conditional formatting
       */
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
   }
   object CFormatOptions {
     
@@ -2332,7 +2399,7 @@ object Spreadsheet {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setInputs(value: js.Array[_] | String): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      def setInputs(value: js.Array[js.Any] | String): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
@@ -2348,48 +2415,47 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the click cell element.
       */
-    var cell: js.UndefOr[HTMLElement] = js.native
+    var cell: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the column index of clicked cell.
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the column name of clicked cell.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the column information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.native
+    var columnObject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the row index of clicked cell.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the value of the cell.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CellClickEventArgs {
     
@@ -2464,36 +2530,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the click cell element.
       */
-    var cell: js.UndefOr[HTMLElement] = js.native
+    var cell: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the columnName of clicked cell.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the column field information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.native
+    var columnObject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellEditEventArgs {
     
@@ -2550,36 +2615,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellFormattingEventArgs extends StObject {
     
     /** Returns the cell index.
       */
-    var Cell: js.UndefOr[Double] = js.native
+    var Cell: js.UndefOr[Double] = js.undefined
     
     /** Returns the applied style format object
       */
-    var Format: js.UndefOr[js.Any] = js.native
+    var Format: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index
       */
-    var SheetIdx: js.UndefOr[Double] = js.native
+    var SheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the CSS theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellFormattingEventArgs {
     
@@ -2636,24 +2700,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellHoverEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellHoverEventArgs {
     
@@ -2692,16 +2755,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellIndex extends StObject {
     
     /** Pass the column index of the starting cell
       */
-    var colIndex: js.UndefOr[Double] = js.native
+    var colIndex: js.UndefOr[Double] = js.undefined
     
     /** Pass the row index of the starting cell
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object CellIndex {
     
@@ -2728,52 +2790,51 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellSaveEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the save cell element.
       */
-    var cell: js.UndefOr[HTMLElement] = js.native
+    var cell: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the index of the column.
       */
-    var colIndex: js.UndefOr[Double] = js.native
+    var colIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the columnName of clicked cell.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the column field information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.native
+    var columnObject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the cell previous value.
       */
-    var prevValue: js.UndefOr[String] = js.native
+    var prevValue: js.UndefOr[String] = js.undefined
     
     /** Returns the index of the row.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the cell value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CellSaveEventArgs {
     
@@ -2854,32 +2915,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellSelectedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the selected range.
       */
-    var selectedRange: js.UndefOr[js.Array[_]] = js.native
+    var selectedRange: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the active sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -2905,7 +2965,7 @@ object Spreadsheet {
       def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
       @scala.inline
-      def setSelectedRange(value: js.Array[_]): Self = StObject.set(x, "selectedRange", value.asInstanceOf[js.Any])
+      def setSelectedRange(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedRangeUndefined: Self = StObject.set(x, "selectedRange", js.undefined)
@@ -2933,40 +2993,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CellTypeSettings extends StObject {
     
     /** Specifies the button background color of Custom Cell type.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the dropdown list data source range of Custom Cell type.
       */
-    var dataSourceRange: js.UndefOr[String] = js.native
+    var dataSourceRange: js.UndefOr[String] = js.undefined
     
     /** Specifies the dropdown list data source sheet index of Custom Cell type.
       */
-    var dataSourceSheetIndex: js.UndefOr[Double] = js.native
+    var dataSourceSheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the text and value of field in dropdown list.
       */
-    var field: js.UndefOr[js.Any] = js.native
+    var field: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the checkbox is set true or false of Custom Cell type.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the button text of Custom Cell type.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the button type of Custom Cell type.
       */
-    var `type`: js.UndefOr[CustomCellType] = js.native
+    var `type`: js.UndefOr[CustomCellType] = js.undefined
     
     /** Specifies the datepicker of Custom Cell type.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CellTypeSettings {
     
@@ -3029,20 +3088,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ChartOptions extends StObject {
     
     /** Pass the enable3D condition
       */
-    var enable3D: js.UndefOr[Boolean] = js.native
+    var enable3D: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the marker object to change type
       */
-    var marker: js.UndefOr[js.Any] = js.native
+    var marker: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the chart type
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChartOptions {
     
@@ -3075,18 +3133,17 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ChartSettings extends StObject {
     
     /** Gets or sets a value that defines the chart height in Spreadsheet.
       * @Default {220}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that defines the chart width in the Spreadsheet.
       * @Default {440}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ChartSettings {
     
@@ -3113,16 +3170,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ColorOptions extends StObject {
     
     /** Pass the background color to sort the cell
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Pass the color to sort the cell
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object ColorOptions {
     
@@ -3149,48 +3205,47 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ContextMenuClickEventArgs extends StObject {
     
     /** Returns target element Id.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the target element.
       */
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns event information.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Returns target element and event information.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns target element parent Id.
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** Returns target element parent text.
       */
-    var parentText: js.UndefOr[String] = js.native
+    var parentText: js.UndefOr[String] = js.undefined
     
     /** Returns target element text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextMenuClickEventArgs {
     
@@ -3265,20 +3320,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ContextualTabOptions extends StObject {
     
     /** Pass the background color
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Pass the border color
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Pass the tabs object to add in ribbon
       */
-    var tabs: js.UndefOr[js.Any] = js.native
+    var tabs: js.UndefOr[js.Any] = js.undefined
   }
   object ContextualTabOptions {
     
@@ -3311,16 +3365,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait CustomStyleOptions extends StObject {
     
     /** Pass the number format object
       */
-    var NumFormat: js.UndefOr[js.Any] = js.native
+    var NumFormat: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the style object
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object CustomStyleOptions {
     
@@ -3347,20 +3400,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait DataOptions extends StObject {
     
     /** Pass the type to update
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Pass the value to update
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Pass the value2 to update
       */
-    var value2: js.UndefOr[Double] = js.native
+    var value2: js.UndefOr[Double] = js.undefined
   }
   object DataOptions {
     
@@ -3393,36 +3445,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait DragEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.native
+    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragEventArgs {
     
@@ -3479,24 +3530,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait DragShapeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragShapeEventArgs {
     
@@ -3535,36 +3585,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait DragStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.native
+    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStartEventArgs {
     
@@ -3621,36 +3670,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait DropEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.native
+    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DropEventArgs {
     
@@ -3707,28 +3755,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait EditRangeBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.native
+    var range: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object EditRangeBeginEventArgs {
     
@@ -3773,28 +3820,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait EditRangeCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.native
+    var range: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object EditRangeCompleteEventArgs {
     
@@ -3839,39 +3885,38 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
       * @Default {true}
       */
-    var allowExporting: js.UndefOr[Boolean] = js.native
+    var allowExporting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define csvUrl for export to CSV format.
       * @Default {null}
       */
-    var csvUrl: js.UndefOr[String] = js.native
+    var csvUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable formula calculation in Spreadsheet. By enabling this feature, formula calculated while export the Spreadsheet in
       * protected mode.
       * @Default {false}
       */
-    var enableFormulaCalculation: js.UndefOr[Boolean] = js.native
+    var enableFormulaCalculation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define excelUrl for export to excel format.
       * @Default {null}
       */
-    var excelUrl: js.UndefOr[String] = js.native
+    var excelUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define password while export to excel format.
       * @Default {null}
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define pdfUrl for export to PDF format.
       * @Default {null}
       */
-    var pdfUrl: js.UndefOr[String] = js.native
+    var pdfUrl: js.UndefOr[String] = js.undefined
   }
   object ExportSettings {
     
@@ -3922,32 +3967,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait FontOptions extends StObject {
     
     /** Pass the color
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Pass the font family
       */
-    var fontFamily: js.UndefOr[js.Any] = js.native
+    var fontFamily: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the font size
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /** Pass the font style
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Pass the font weight
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Pass the text decoration
       */
-    var textDecoration: js.UndefOr[String] = js.native
+    var textDecoration: js.UndefOr[String] = js.undefined
   }
   object FontOptions {
     
@@ -3998,28 +4042,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait FormatObjectOptions extends StObject {
     
     /** Pass the decimal places in cell
       */
-    var decimalPlaces: js.UndefOr[String] = js.native
+    var decimalPlaces: js.UndefOr[String] = js.undefined
     
     /** Pass the format str in cell
       */
-    var formatStr: js.UndefOr[String] = js.native
+    var formatStr: js.UndefOr[String] = js.undefined
     
     /** Pass the style object in a cell
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the thousand separator in cell
       */
-    var thousandSeparator: js.UndefOr[String] = js.native
+    var thousandSeparator: js.UndefOr[String] = js.undefined
     
     /** Pass the type of cell
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FormatObjectOptions {
     
@@ -4064,24 +4107,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait FormatOptions extends StObject {
     
     /** Pass the border condition
       */
-    var border: js.UndefOr[Boolean] = js.native
+    var border: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the cell style to be removed
       */
-    var cellStyle: js.UndefOr[Boolean] = js.native
+    var cellStyle: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the format
       */
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the table style to be removed
       */
-    var tableStyle: js.UndefOr[Boolean] = js.native
+    var tableStyle: js.UndefOr[Boolean] = js.undefined
   }
   object FormatOptions {
     
@@ -4120,23 +4162,22 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait FormatSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowCellBorder: js.UndefOr[Boolean] = js.native
+    var allowCellBorder: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
       * @Default {true}
       */
-    var allowDecimalPlaces: js.UndefOr[Boolean] = js.native
+    var allowDecimalPlaces: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
       * @Default {true}
       */
-    var allowFontFamily: js.UndefOr[Boolean] = js.native
+    var allowFontFamily: js.UndefOr[Boolean] = js.undefined
   }
   object FormatSettings {
     
@@ -4169,25 +4210,24 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ImportSettings extends StObject {
     
     /** Sets import mapper to perform import feature in Spreadsheet.
       */
-    var importMapper: js.UndefOr[String] = js.native
+    var importMapper: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable import while initial loading.
       * @Default {false}
       */
-    var importOnLoad: js.UndefOr[Boolean] = js.native
+    var importOnLoad: js.UndefOr[Boolean] = js.undefined
     
     /** Sets import URL to access the online files in the Spreadsheet.
       */
-    var importUrl: js.UndefOr[String] = js.native
+    var importUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define password while importing in the Spreadsheet.
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
   }
   object ImportSettings {
     
@@ -4226,28 +4266,27 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ImportingOptions extends StObject {
     
     /** Pass the url to import manually
       */
-    var Url: js.UndefOr[String] = js.native
+    var Url: js.UndefOr[String] = js.undefined
     
     /** Pass the file to import manually
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /** Pass the file stream to import manually
       */
-    var fileStream: js.UndefOr[String] = js.native
+    var fileStream: js.UndefOr[String] = js.undefined
     
     /** Pass the filetype to import manually
       */
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
     /** Pass the password to import manually
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
   }
   object ImportingOptions {
     
@@ -4292,40 +4331,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait KeyDownEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isCommentEdit: js.UndefOr[Boolean] = js.native
+    var isCommentEdit: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isEdit: js.UndefOr[Boolean] = js.native
+    var isEdit: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isSheetRename: js.UndefOr[Boolean] = js.native
+    var isSheetRename: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIndex: js.UndefOr[Double] = js.native
+    var sheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeyDownEventArgs {
     
@@ -4388,40 +4426,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait KeyUpEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isCommentEdit: js.UndefOr[Boolean] = js.native
+    var isCommentEdit: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isEdit: js.UndefOr[Boolean] = js.native
+    var isEdit: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the boolean value.
       */
-    var isSheetRename: js.UndefOr[Boolean] = js.native
+    var isSheetRename: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the sheet index.
       */
-    var sheetIndex: js.UndefOr[Double] = js.native
+    var sheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeyUpEventArgs {
     
@@ -4484,20 +4521,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait LinkOptions extends StObject {
     
     /** Pass the cell address in the cell
       */
-    var cellAddress: js.UndefOr[String] = js.native
+    var cellAddress: js.UndefOr[String] = js.undefined
     
     /** Pass the text address in the cell
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Pass the web address in the cell
       */
-    var webAddress: js.UndefOr[String] = js.native
+    var webAddress: js.UndefOr[String] = js.undefined
   }
   object LinkOptions {
     
@@ -4530,20 +4566,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait LoadCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadCompleteEventArgs {
     
@@ -4576,24 +4611,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the active sheet index.
       */
-    var sheetIndex: js.UndefOr[Double] = js.native
+    var sheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -4632,40 +4666,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait MenuClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns menu click element.
       */
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the event information.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns target element parent Id.
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** Returns target element parent text.
       */
-    var parentText: js.UndefOr[String] = js.native
+    var parentText: js.UndefOr[String] = js.undefined
     
     /** Returns target element text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuClickEventArgs {
     
@@ -4728,24 +4761,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait MenuItemOptions extends StObject {
     
     /** Pass the id to update the menu item
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Pass the parent id to update the menu item
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** Pass the sprite css class to update the menu item
       */
-    var spriteCssClass: js.UndefOr[String] = js.native
+    var spriteCssClass: js.UndefOr[String] = js.undefined
     
     /** Pass the text to update the menu item
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object MenuItemOptions {
     
@@ -4784,477 +4816,476 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered for every action before its starts.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered for every action complete.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an active sheet index in the Spreadsheet. By defining this value, you can specify which sheet should be active in workbook.
       * @Default {1}
       */
-    var activeSheetIndex: js.UndefOr[Double] = js.native
+    var activeSheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto rendering of cell type in the Spreadsheet.
       * @Default {false}
       */
-    var allowAutoCellType: js.UndefOr[Boolean] = js.native
+    var allowAutoCellType: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto fill feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowAutoFill: js.UndefOr[Boolean] = js.native
+    var allowAutoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto sum feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowAutoSum: js.UndefOr[Boolean] = js.native
+    var allowAutoSum: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable cell format feature in the Spreadsheet. By enabling this, you can customize styles and number formats.
       * @Default {true}
       */
-    var allowCellFormatting: js.UndefOr[Boolean] = js.native
+    var allowCellFormatting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable cell type feature in the Spreadsheet.
       * @Default {false}
       */
-    var allowCellType: js.UndefOr[Boolean] = js.native
+    var allowCellType: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable chart feature in the Spreadsheet. By enabling this feature, you can create and customize charts in Spreadsheet.
       * @Default {true}
       */
-    var allowCharts: js.UndefOr[Boolean] = js.native
+    var allowCharts: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable clear feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet. By enabling this feature, you can perform cut/copy and paste operations in
       * Spreadsheet.
       * @Default {true}
       */
-    var allowClipboard: js.UndefOr[Boolean] = js.native
+    var allowClipboard: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable comment feature in the Spreadsheet. By enabling this, you can add/delete/modify comments in Spreadsheet.
       * @Default {true}
       */
-    var allowComments: js.UndefOr[Boolean] = js.native
+    var allowComments: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of
       * cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
       * @Default {true}
       */
-    var allowConditionalFormats: js.UndefOr[Boolean] = js.native
+    var allowConditionalFormats: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable data validation feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowDataValidation: js.UndefOr[Boolean] = js.native
+    var allowDataValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the delete action in the Spreadsheet. By enabling this feature, you can delete existing rows, columns, cells and
       * sheet.
       * @Default {true}
       */
-    var allowDelete: js.UndefOr[Boolean] = js.native
+    var allowDelete: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable drag and drop feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the edit action in the Spreadsheet.
       * @Default {true}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable filtering feature in the Spreadsheet. Filtering can be used to limit the data displayed using required criteria.
       * @Default {true}
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
       * @Default {true}
       */
-    var allowFormatAsTable: js.UndefOr[Boolean] = js.native
+    var allowFormatAsTable: js.UndefOr[Boolean] = js.undefined
     
     /** Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected
       * range and apply it to another range.
       * @Default {true}
       */
-    var allowFormatPainter: js.UndefOr[Boolean] = js.native
+    var allowFormatPainter: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
       * @Default {true}
       */
-    var allowFormulaBar: js.UndefOr[Boolean] = js.native
+    var allowFormulaBar: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. By enabling this feature, you can use freeze top row, freeze first column and
       * freeze panes options.
       * @Default {true}
       */
-    var allowFreezing: js.UndefOr[Boolean] = js.native
+    var allowFreezing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily
       * navigate to the cell reference from one sheet to another or a web page.
       * @Default {true}
       */
-    var allowHyperlink: js.UndefOr[Boolean] = js.native
+    var allowHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents.
       * @Default {true}
       */
-    var allowImport: js.UndefOr[Boolean] = js.native
+    var allowImport: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the insert action in the Spreadsheet. By enabling this feature, you can insert new rows, columns, cells and sheet.
       * @Default {true}
       */
-    var allowInsert: js.UndefOr[Boolean] = js.native
+    var allowInsert: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable keyboard navigation feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable lock cell feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowLockCell: js.UndefOr[Boolean] = js.native
+    var allowLockCell: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable merge feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowMerging: js.UndefOr[Boolean] = js.native
+    var allowMerging: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable overflow feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowOverflow: js.UndefOr[Boolean] = js.native
+    var allowOverflow: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable resizing feature in the Spreadsheet. By enabling this feature, you can change the column width and row height by
       * dragging its header boundaries.
       * @Default {true}
       */
-    var allowResizing: js.UndefOr[Boolean] = js.native
+    var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable find and replace feature in the Spreadsheet. By enabling this, you can easily find and replace a specific value in
       * the sheet or workbook. By using goto behavior, you can select and highlight all cells that contains specific data or data types.
       * @Default {true}
       */
-    var allowSearching: js.UndefOr[Boolean] = js.native
+    var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable selection in the Spreadsheet. By enabling this feature, selected items will be highlighted.
       * @Default {true}
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the sorting feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the sparkline feature in the Spreadsheet.
       * @Default {false}
       */
-    var allowSparkline: js.UndefOr[Boolean] = js.native
+    var allowSparkline: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable undo and redo feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowUndoRedo: js.UndefOr[Boolean] = js.native
+    var allowUndoRedo: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable wrap text feature in the Spreadsheet. By enabling this, cell content can wrap to the next line, if the cell
       * content exceeds the boundary of the cell.
       * @Default {true}
       */
-    var allowWrap: js.UndefOr[Boolean] = js.native
+    var allowWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define the width of the activation panel in Spreadsheet.
       * @Default {300}
       */
-    var apWidth: js.UndefOr[Double] = js.native
+    var apWidth: js.UndefOr[Double] = js.undefined
     
     /** Triggered when the auto fill operation begins.
       */
-    var autoFillBegin: js.UndefOr[js.Function1[/* e */ AutoFillBeginEventArgs, Unit]] = js.native
+    var autoFillBegin: js.UndefOr[js.Function1[/* e */ AutoFillBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered when the auto fill operation completes.
       */
-    var autoFillComplete: js.UndefOr[js.Function1[/* e */ AutoFillCompleteEventArgs, Unit]] = js.native
+    var autoFillComplete: js.UndefOr[js.Function1[/* e */ AutoFillCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to customize the auto fill behavior in the Spreadsheet.
       */
-    var autoFillSettings: js.UndefOr[AutoFillSettings] = js.native
+    var autoFillSettings: js.UndefOr[AutoFillSettings] = js.undefined
     
     /** Triggered before the batch save.
       */
-    var beforeBatchSave: js.UndefOr[js.Function1[/* e */ BeforeBatchSaveEventArgs, Unit]] = js.native
+    var beforeBatchSave: js.UndefOr[js.Function1[/* e */ BeforeBatchSaveEventArgs, Unit]] = js.undefined
     
     /** Triggered before the cells to be formatted.
       */
-    var beforeCellFormat: js.UndefOr[js.Function1[/* e */ BeforeCellFormatEventArgs, Unit]] = js.native
+    var beforeCellFormat: js.UndefOr[js.Function1[/* e */ BeforeCellFormatEventArgs, Unit]] = js.undefined
     
     /** Triggered before the cell selection.
       */
-    var beforeCellSelect: js.UndefOr[js.Function1[/* e */ BeforeCellSelectEventArgs, Unit]] = js.native
+    var beforeCellSelect: js.UndefOr[js.Function1[/* e */ BeforeCellSelectEventArgs, Unit]] = js.undefined
     
     /** Triggered before the selected cells are dropped.
       */
-    var beforeDrop: js.UndefOr[js.Function1[/* e */ BeforeDropEventArgs, Unit]] = js.native
+    var beforeDrop: js.UndefOr[js.Function1[/* e */ BeforeDropEventArgs, Unit]] = js.undefined
     
     /** Triggered while start to edit the comment.
       */
-    var beforeEditComment: js.UndefOr[js.Function1[/* e */ BeforeEditCommentEventArgs, Unit]] = js.native
+    var beforeEditComment: js.UndefOr[js.Function1[/* e */ BeforeEditCommentEventArgs, Unit]] = js.undefined
     
     /** Triggered before the contextmenu is open.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Triggered before the activation panel is open.
       */
-    var beforePanelOpen: js.UndefOr[js.Function1[/* e */ BeforePanelOpenEventArgs, Unit]] = js.native
+    var beforePanelOpen: js.UndefOr[js.Function1[/* e */ BeforePanelOpenEventArgs, Unit]] = js.undefined
     
     /** Triggered when click on sheet cell.
       */
-    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.native
+    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when the cell is edited.
       */
-    var cellEdit: js.UndefOr[js.Function1[/* e */ CellEditEventArgs, Unit]] = js.native
+    var cellEdit: js.UndefOr[js.Function1[/* e */ CellEditEventArgs, Unit]] = js.undefined
     
     /** Triggered while cell is formatting.
       */
-    var cellFormatting: js.UndefOr[js.Function1[/* e */ CellFormattingEventArgs, Unit]] = js.native
+    var cellFormatting: js.UndefOr[js.Function1[/* e */ CellFormattingEventArgs, Unit]] = js.undefined
     
     /** Triggered when mouse hover on cell in sheets.
       */
-    var cellHover: js.UndefOr[js.Function1[/* e */ CellHoverEventArgs, Unit]] = js.native
+    var cellHover: js.UndefOr[js.Function1[/* e */ CellHoverEventArgs, Unit]] = js.undefined
     
     /** Triggered when save the edited cell.
       */
-    var cellSave: js.UndefOr[js.Function1[/* e */ CellSaveEventArgs, Unit]] = js.native
+    var cellSave: js.UndefOr[js.Function1[/* e */ CellSaveEventArgs, Unit]] = js.undefined
     
     /** Triggered when the cell is selected.
       */
-    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.native
+    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to customize the chart behavior in the Spreadsheet.
       */
-    var chartSettings: js.UndefOr[ChartSettings] = js.native
+    var chartSettings: js.UndefOr[ChartSettings] = js.undefined
     
     /** Gets or sets a value that defines the number of columns displayed in the sheet.
       * @Default {21}
       */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define the common width for each column in the Spreadsheet.
       * @Default {64}
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Triggered when click the contextmenu items.
       */
-    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.native
+    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value to add root CSS class for customizing Spreadsheet skins.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates custom formulas in Spreadsheet.
       * @Default {[]}
       */
-    var customFormulas: js.UndefOr[js.Array[_]] = js.native
+    var customFormulas: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggered when the selected cells are being dragged.
       */
-    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.native
+    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.undefined
     
     /** Triggered when you start to drag the picture or chart.
       */
-    var dragShape: js.UndefOr[js.Function1[/* e */ DragShapeEventArgs, Unit]] = js.native
+    var dragShape: js.UndefOr[js.Function1[/* e */ DragShapeEventArgs, Unit]] = js.undefined
     
     /** Triggered when the selected cells are initiated to drag.
       */
-    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.undefined
     
     /** Triggered when the selected cells are dropped.
       */
-    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.undefined
     
     /** Triggered before the range editing starts.
       */
-    var editRangeBegin: js.UndefOr[js.Function1[/* e */ EditRangeBeginEventArgs, Unit]] = js.native
+    var editRangeBegin: js.UndefOr[js.Function1[/* e */ EditRangeBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered after range editing completes.
       */
-    var editRangeComplete: js.UndefOr[js.Function1[/* e */ EditRangeCompleteEventArgs, Unit]] = js.native
+    var editRangeComplete: js.UndefOr[js.Function1[/* e */ EditRangeCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable context menu in the Spreadsheet.
       * @Default {true}
       */
-    var enableContextMenu: js.UndefOr[Boolean] = js.native
+    var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable pivot table in the Spreadsheet.
       * @Default {false}
       */
-    var enablePivotTable: js.UndefOr[Boolean] = js.native
+    var enablePivotTable: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable touch support in the Spreadsheet.
       * @Default {true}
       */
-    var enableTouch: js.UndefOr[Boolean] = js.native
+    var enableTouch: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to customize the exporting behavior in Spreadsheet.
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Gets or sets an object that indicates to customize the format behavior in the Spreadsheet.
       */
-    var formatSettings: js.UndefOr[FormatSettings] = js.native
+    var formatSettings: js.UndefOr[FormatSettings] = js.undefined
     
     /** Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
       */
-    var importSettings: js.UndefOr[ImportSettings] = js.native
+    var importSettings: js.UndefOr[ImportSettings] = js.undefined
     
     /** Gets a value that indicates whether importing or not while loading the sheets in Spreadsheet.
       * @Default {false}
       */
-    var isImport: js.UndefOr[Boolean] = js.native
+    var isImport: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable readonly support in the Spreadsheet.
       * @Default {false}
       */
-    var isReadOnly: js.UndefOr[Boolean] = js.native
+    var isReadOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered when the key is pressed down.
       */
-    var keyDown: js.UndefOr[js.Function1[/* e */ KeyDownEventArgs, Unit]] = js.native
+    var keyDown: js.UndefOr[js.Function1[/* e */ KeyDownEventArgs, Unit]] = js.undefined
     
     /** Triggered when the key is released.
       */
-    var keyUp: js.UndefOr[js.Function1[/* e */ KeyUpEventArgs, Unit]] = js.native
+    var keyUp: js.UndefOr[js.Function1[/* e */ KeyUpEventArgs, Unit]] = js.undefined
     
     /** Triggered before the sheet is loaded.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Triggered after the sheet is loaded.
       */
-    var loadComplete: js.UndefOr[js.Function1[/* e */ LoadCompleteEventArgs, Unit]] = js.native
+    var loadComplete: js.UndefOr[js.Function1[/* e */ LoadCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data (i.e.) in a language and culture specific
       * to a particular country or region.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Triggered every click of the menu item.
       */
-    var menuClick: js.UndefOr[js.Function1[/* e */ MenuClickEventArgs, Unit]] = js.native
+    var menuClick: js.UndefOr[js.Function1[/* e */ MenuClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates name manager in Spreadsheet.
       */
-    var nameManager: js.UndefOr[js.Array[NameManager]] = js.native
+    var nameManager: js.UndefOr[js.Array[NameManager]] = js.undefined
     
     /** Triggered when a file is imported.
       */
-    var onImport: js.UndefOr[js.Function1[/* e */ OnImportEventArgs, Unit]] = js.native
+    var onImport: js.UndefOr[js.Function1[/* e */ OnImportEventArgs, Unit]] = js.undefined
     
     /** Triggered when import sheet is failed to open.
       */
-    var openFailure: js.UndefOr[js.Function1[/* e */ OpenFailureEventArgs, Unit]] = js.native
+    var openFailure: js.UndefOr[js.Function1[/* e */ OpenFailureEventArgs, Unit]] = js.undefined
     
     /** Triggered when pager item is clicked in the Spreadsheet.
       */
-    var pagerClick: js.UndefOr[js.Function1[/* e */ PagerClickEventArgs, Unit]] = js.native
+    var pagerClick: js.UndefOr[js.Function1[/* e */ PagerClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
       */
-    var pictureSettings: js.UndefOr[PictureSettings] = js.native
+    var pictureSettings: js.UndefOr[PictureSettings] = js.undefined
     
     /** Gets or sets an object that indicates to customize the print option in Spreadsheet.
       */
-    var printSettings: js.UndefOr[PrintSettings] = js.native
+    var printSettings: js.UndefOr[PrintSettings] = js.undefined
     
     /** Triggered after end of resizing the chart, picture, row and column.
       */
-    var resizeEnd: js.UndefOr[js.Function1[/* e */ ResizeEndEventArgs, Unit]] = js.native
+    var resizeEnd: js.UndefOr[js.Function1[/* e */ ResizeEndEventArgs, Unit]] = js.undefined
     
     /** Triggered when you start resizing the chart, picture, row and column.
       */
-    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.native
+    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.undefined
     
     /** Triggered when click on the ribbon.
       */
-    var ribbonClick: js.UndefOr[js.Function1[/* e */ RibbonClickEventArgs, Unit]] = js.native
+    var ribbonClick: js.UndefOr[js.Function1[/* e */ RibbonClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to customize the ribbon settings in Spreadsheet.
       */
-    var ribbonSettings: js.UndefOr[RibbonSettings] = js.native
+    var ribbonSettings: js.UndefOr[RibbonSettings] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of rows to be displayed in the sheet.
       * @Default {20}
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define the common height for each row in the sheet.
       * @Default {20}
       */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets an object that indicates to customize the scroll options in the Spreadsheet.
       */
-    var scrollSettings: js.UndefOr[ScrollSettings] = js.native
+    var scrollSettings: js.UndefOr[ScrollSettings] = js.undefined
     
     /** Triggered after end of vertical and horizontal scrolling.
       */
-    var scrollStop: js.UndefOr[js.Function1[/* e */ ScrollStopEventArgs, Unit]] = js.native
+    var scrollStop: js.UndefOr[js.Function1[/* e */ ScrollStopEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to customize the selection options in the Spreadsheet.
       */
-    var selectionSettings: js.UndefOr[SelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[SelectionSettings] = js.undefined
     
     /** Gets or sets a value that indicates to define the number of sheets to be created at the initial load.
       * @Default {1}
       */
-    var sheetCount: js.UndefOr[Double] = js.native
+    var sheetCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets an object that indicates to customize the sheet behavior in Spreadsheet.
       */
-    var sheets: js.UndefOr[js.Array[Sheet]] = js.native
+    var sheets: js.UndefOr[js.Array[Sheet]] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide pager in the Spreadsheet.
       * @Default {true}
       */
-    var showPager: js.UndefOr[Boolean] = js.native
+    var showPager: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide ribbon in the Spreadsheet.
       * @Default {true}
       */
-    var showRibbon: js.UndefOr[Boolean] = js.native
+    var showRibbon: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered when click the ribbon tab.
       */
-    var tabClick: js.UndefOr[js.Function1[/* e */ TabClickEventArgs, Unit]] = js.native
+    var tabClick: js.UndefOr[js.Function1[/* e */ TabClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when select the ribbon tab.
       */
-    var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.native
+    var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.undefined
     
     /** This is used to set the number of undo-redo steps in the Spreadsheet.
       * @Default {20}
       */
-    var undoRedoStep: js.UndefOr[Double] = js.native
+    var undoRedoStep: js.UndefOr[Double] = js.undefined
     
     /** Define the username for the Spreadsheet which is displayed in comment.
       * @Default {User Name}
       */
-    var userName: js.UndefOr[String] = js.native
+    var userName: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -5616,7 +5647,7 @@ object Spreadsheet {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setCustomFormulas(value: js.Array[_]): Self = StObject.set(x, "customFormulas", value.asInstanceOf[js.Any])
+      def setCustomFormulas(value: js.Array[js.Any]): Self = StObject.set(x, "customFormulas", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomFormulasUndefined: Self = StObject.set(x, "customFormulas", js.undefined)
@@ -5890,16 +5921,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait NameManager extends StObject {
     
     /** Specifies the name for the cell or a range.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies the address for the cell or a range.
       */
-    var refersto: js.UndefOr[String] = js.native
+    var refersto: js.UndefOr[String] = js.undefined
   }
   object NameManager {
     
@@ -5926,16 +5956,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait NumberFormatOptions extends StObject {
     
     /** Pass the number format object
       */
-    var NumFormat: js.UndefOr[js.Any] = js.native
+    var NumFormat: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the style object
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object NumberFormatOptions {
     
@@ -5962,24 +5991,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait OnImportEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the imported data.
       */
-    var importData: js.UndefOr[js.Any] = js.native
+    var importData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnImportEventArgs {
     
@@ -6018,32 +6046,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait OpenFailureEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the failure type.
       */
-    var failureType: js.UndefOr[String] = js.native
+    var failureType: js.UndefOr[String] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the status index.
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
     /** Returns the status in text.
       */
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenFailureEventArgs {
     
@@ -6094,36 +6121,35 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait PagerClickEventArgs extends StObject {
     
     /** Returns the active sheet index.
       */
-    var activeSheet: js.UndefOr[Double] = js.native
+    var activeSheet: js.UndefOr[Double] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the new sheet index.
       */
-    var gotoSheet: js.UndefOr[Double] = js.native
+    var gotoSheet: js.UndefOr[Double] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns whether new sheet icon is clicked.
       */
-    var newSheet: js.UndefOr[Boolean] = js.native
+    var newSheet: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PagerClickEventArgs {
     
@@ -6180,23 +6206,22 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait PictureSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
       * @Default {true}
       */
-    var allowPictures: js.UndefOr[Boolean] = js.native
+    var allowPictures: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define height to picture in the Spreadsheet.
       * @Default {220}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define width to picture in the Spreadsheet.
       * @Default {440}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PictureSettings {
     
@@ -6229,24 +6254,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait PivotOptions extends StObject {
     
     /** Pass the column object to create pivot table
       */
-    var columns: js.UndefOr[js.Any] = js.native
+    var columns: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the filter object to create pivot table
       */
-    var filter: js.UndefOr[js.Any] = js.native
+    var filter: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the rows object to create pivot table
       */
-    var rows: js.UndefOr[js.Any] = js.native
+    var rows: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the values to create pivot table
       */
-    var values: js.UndefOr[js.Any] = js.native
+    var values: js.UndefOr[js.Any] = js.undefined
   }
   object PivotOptions {
     
@@ -6285,23 +6309,22 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait PrintSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet.
       * @Default {true}
       */
-    var allowPageSetup: js.UndefOr[Boolean] = js.native
+    var allowPageSetup: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
       * @Default {false}
       */
-    var allowPageSize: js.UndefOr[Boolean] = js.native
+    var allowPageSize: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable print feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowPrinting: js.UndefOr[Boolean] = js.native
+    var allowPrinting: js.UndefOr[Boolean] = js.undefined
   }
   object PrintSettings {
     
@@ -6334,20 +6357,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait RangeOptions extends StObject {
     
     /** Pass the datasource object values as settings
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the showheader condition as settings
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the startcell values as settings
       */
-    var startCell: js.UndefOr[String] = js.native
+    var startCell: js.UndefOr[String] = js.undefined
   }
   object RangeOptions {
     
@@ -6380,48 +6402,47 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ResizeEndEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column index which you resized.
       */
-    var colIndex: js.UndefOr[Double] = js.native
+    var colIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns new height of the row or shape.
       */
-    var newHeight: js.UndefOr[Double] = js.native
+    var newHeight: js.UndefOr[Double] = js.undefined
     
     /** Returns new width of the column or shape.
       */
-    var newWidth: js.UndefOr[Double] = js.native
+    var newWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns old height of the row or shape.
       */
-    var oldHeight: js.UndefOr[Double] = js.native
+    var oldHeight: js.UndefOr[Double] = js.undefined
     
     /** Returns old width of the column or shape.
       */
-    var oldWidth: js.UndefOr[Double] = js.native
+    var oldWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns type of the request.
       */
-    var reqType: js.UndefOr[String] = js.native
+    var reqType: js.UndefOr[String] = js.undefined
     
     /** Returns the row index which you resized.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeEndEventArgs {
     
@@ -6496,32 +6517,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ResizeStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column index which column you start to resize.
       */
-    var colIndex: js.UndefOr[Double] = js.native
+    var colIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns type of the request.
       */
-    var reqType: js.UndefOr[String] = js.native
+    var reqType: js.UndefOr[String] = js.undefined
     
     /** Returns the row index which row you start to resize.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeStartEventArgs {
     
@@ -6572,40 +6592,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait RibbonClickEventArgs extends StObject {
     
     /** Returns element Id.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns isChecked in boolean.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns target information.
       */
-    var prop: js.UndefOr[js.Any] = js.native
+    var prop: js.UndefOr[js.Any] = js.undefined
     
     /** Returns status.
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RibbonClickEventArgs {
     
@@ -6668,12 +6687,11 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait RibbonSettings extends StObject {
     
     /** Gets or sets an object that indicates application tab settings in Spreadsheet.
       */
-    var applicationTab: js.UndefOr[RibbonSettingsApplicationTab] = js.native
+    var applicationTab: js.UndefOr[RibbonSettingsApplicationTab] = js.undefined
   }
   object RibbonSettings {
     
@@ -6694,17 +6712,16 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait RibbonSettingsApplicationTab extends StObject {
     
     /** Gets or sets an object that indicates menu settings for application tab in Spreadsheet.
       */
-    var menuSettings: js.UndefOr[RibbonSettingsApplicationTabMenuSettings] = js.native
+    var menuSettings: js.UndefOr[RibbonSettingsApplicationTabMenuSettings] = js.undefined
     
     /** Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
       * @Default {ej.Ribbon.ApplicationTabType.Backstage}
       */
-    var `type`: js.UndefOr[ApplicationTabType | String] = js.native
+    var `type`: js.UndefOr[ApplicationTabType | String] = js.undefined
   }
   object RibbonSettingsApplicationTab {
     
@@ -6731,18 +6748,17 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait RibbonSettingsApplicationTabMenuSettings extends StObject {
     
     /** Specifies the data source to append in application tab.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable isAppend property in ribbon settings.
       * @Default {false}
       */
-    var isAppend: js.UndefOr[Boolean] = js.native
+    var isAppend: js.UndefOr[Boolean] = js.undefined
   }
   object RibbonSettingsApplicationTabMenuSettings {
     
@@ -6756,7 +6772,7 @@ object Spreadsheet {
     implicit class RibbonSettingsApplicationTabMenuSettingsMutableBuilder[Self <: RibbonSettingsApplicationTabMenuSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -6772,44 +6788,43 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ScrollSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable scrolling in Spreadsheet.
       * @Default {true}
       */
-    var allowScrolling: js.UndefOr[Boolean] = js.native
+    var allowScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable sheet on demand. By enabling this, it render only the active sheet element while paging remaining sheets are
       * created one by one.
       * @Default {false}
       */
-    var allowSheetOnDemand: js.UndefOr[Boolean] = js.native
+    var allowSheetOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
       * @Default {true}
       */
-    var allowVirtualScrolling: js.UndefOr[Boolean] = js.native
+    var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the value that indicates to define the height of spreadsheet.
       * @Default {100%}
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
     /** Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
       * @Default {ej.Spreadsheet.scrollMode.Infinite}
       */
-    var scrollMode: js.UndefOr[typings.ejWebAll.ej.Spreadsheet.scrollMode | String] = js.native
+    var scrollMode: js.UndefOr[typings.ejWebAll.ej.Spreadsheet.scrollMode | String] = js.undefined
     
     /** Gets or sets the value that indicates to define the height of the spreadsheet.
       * @Default {100%}
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ScrollSettings {
     
@@ -6866,32 +6881,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait ScrollStopEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the scrolled position.
       */
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
     /** Returns the request type.
       */
-    var reqType: js.UndefOr[String] = js.native
+    var reqType: js.UndefOr[String] = js.undefined
     
     /** Returns the scrolling data
       */
-    var scrollData: js.UndefOr[js.Any] = js.native
+    var scrollData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ScrollStopEventArgs {
     
@@ -6942,32 +6956,31 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SelectionSettings extends StObject {
     
     /** Gets or sets a value that indicates to define active cell in spreadsheet.
       */
-    var activeCell: js.UndefOr[String] = js.native
+    var activeCell: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
       * @Default {0.001}
       */
-    var animationTime: js.UndefOr[Double] = js.native
+    var animationTime: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to enable or disable animation while selection.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
       * @Default {ej.Spreadsheet.SelectionType.Default}
       */
-    var selectionType: js.UndefOr[SelectionType | String] = js.native
+    var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
       * @Default {ej.Spreadsheet.SelectionUnit.MultiRange}
       */
-    var selectionUnit: js.UndefOr[SelectionUnit | String] = js.native
+    var selectionUnit: js.UndefOr[SelectionUnit | String] = js.undefined
   }
   object SelectionSettings {
     
@@ -7012,122 +7025,121 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait Sheet extends StObject {
     
     /** Specifies the border for the cell in the Spreadsheet.
       * @Default {[]}
       */
-    var border: js.UndefOr[js.Array[SheetsBorder]] = js.native
+    var border: js.UndefOr[js.Array[SheetsBorder]] = js.undefined
     
     /** Specifies the conditional formatting for the range of cell in Spreadsheet.
       * @Default {[]}
       */
-    var cFormatRule: js.UndefOr[js.Array[SheetsCFormatRule]] = js.native
+    var cFormatRule: js.UndefOr[js.Array[SheetsCFormatRule]] = js.undefined
     
     /** Specifies the cell types for a cell or range in Spreadsheet.
       * @Default {[]}
       */
-    var cellTypes: js.UndefOr[js.Array[_]] = js.native
+    var cellTypes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Gets or sets a value that indicates to define column count in the Spreadsheet.
       * @Default {21}
       */
-    var colCount: js.UndefOr[Double] = js.native
+    var colCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define column width in the Spreadsheet.
       * @Default {64}
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets the data to render the Spreadsheet.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
       * @Default {false}
       */
-    var fieldAsColumnHeader: js.UndefOr[Boolean] = js.native
+    var fieldAsColumnHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value to freeze columns in the Spreadsheet.
       * @Default {0}
       */
-    var frozenColumns: js.UndefOr[Double] = js.native
+    var frozenColumns: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value to freeze rows in the Spreadsheet.
       * @Default {0}
       */
-    var frozenRows: js.UndefOr[Double] = js.native
+    var frozenRows: js.UndefOr[Double] = js.undefined
     
     /** Specifies the header styles for the headers in datasource range.
       * @Default {null}
       */
-    var headerStyles: js.UndefOr[js.Any] = js.native
+    var headerStyles: js.UndefOr[js.Any] = js.undefined
     
     /** To hide the specified columns in Spreadsheet.
       * @Default {[]}
       */
-    var hideColumns: js.UndefOr[js.Array[_]] = js.native
+    var hideColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** To hide the specified rows in Spreadsheet.
       * @Default {[]}
       */
-    var hideRows: js.UndefOr[js.Array[_]] = js.native
+    var hideRows: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** To merge specified ranges in Spreadsheet.
       * @Default {[]}
       */
-    var mergeCells: js.UndefOr[js.Array[_]] = js.native
+    var mergeCells: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the primary key for the datasource in Spreadsheet.
       */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Specifies the query for the dataSource in Spreadsheet.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies single range or multiple range settings for a sheet in Spreadsheet.
       * @Default {[]}
       */
-    var rangeSettings: js.UndefOr[js.Array[SheetsRangeSetting]] = js.native
+    var rangeSettings: js.UndefOr[js.Array[SheetsRangeSetting]] = js.undefined
     
     /** Gets or sets a value that indicates to define row count in the Spreadsheet.
       * @Default {20}
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rows for a sheet in Spreadsheet.
       * @Default {[]}
       */
-    var rows: js.UndefOr[js.Array[SheetsRow]] = js.native
+    var rows: js.UndefOr[js.Array[SheetsRow]] = js.undefined
     
     /** Specifies the name for sheet in the Spreadsheet.
       * @Default {string}
       */
-    var sheetName: js.UndefOr[String] = js.native
+    var sheetName: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide grid lines in the Spreadsheet.
       * @Default {true}
       */
-    var showGridlines: js.UndefOr[Boolean] = js.native
+    var showGridlines: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
       * @Default {true}
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide headings in the Spreadsheet.
       * @Default {true}
       */
-    var showHeadings: js.UndefOr[Boolean] = js.native
+    var showHeadings: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the start cell for the datasource range in Spreadsheet.
       * @Default {A1}
       */
-    var startCell: js.UndefOr[String] = js.native
+    var startCell: js.UndefOr[String] = js.undefined
   }
   object Sheet {
     
@@ -7159,7 +7171,7 @@ object Spreadsheet {
       def setCFormatRuleVarargs(value: SheetsCFormatRule*): Self = StObject.set(x, "cFormatRule", js.Array(value :_*))
       
       @scala.inline
-      def setCellTypes(value: js.Array[_]): Self = StObject.set(x, "cellTypes", value.asInstanceOf[js.Any])
+      def setCellTypes(value: js.Array[js.Any]): Self = StObject.set(x, "cellTypes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCellTypesUndefined: Self = StObject.set(x, "cellTypes", js.undefined)
@@ -7210,7 +7222,7 @@ object Spreadsheet {
       def setHeaderStylesUndefined: Self = StObject.set(x, "headerStyles", js.undefined)
       
       @scala.inline
-      def setHideColumns(value: js.Array[_]): Self = StObject.set(x, "hideColumns", value.asInstanceOf[js.Any])
+      def setHideColumns(value: js.Array[js.Any]): Self = StObject.set(x, "hideColumns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHideColumnsUndefined: Self = StObject.set(x, "hideColumns", js.undefined)
@@ -7219,7 +7231,7 @@ object Spreadsheet {
       def setHideColumnsVarargs(value: js.Any*): Self = StObject.set(x, "hideColumns", js.Array(value :_*))
       
       @scala.inline
-      def setHideRows(value: js.Array[_]): Self = StObject.set(x, "hideRows", value.asInstanceOf[js.Any])
+      def setHideRows(value: js.Array[js.Any]): Self = StObject.set(x, "hideRows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHideRowsUndefined: Self = StObject.set(x, "hideRows", js.undefined)
@@ -7228,7 +7240,7 @@ object Spreadsheet {
       def setHideRowsVarargs(value: js.Any*): Self = StObject.set(x, "hideRows", js.Array(value :_*))
       
       @scala.inline
-      def setMergeCells(value: js.Array[_]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      def setMergeCells(value: js.Array[js.Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
@@ -7304,20 +7316,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsBorder extends StObject {
     
     /** Specifies border color for range of cells in Spreadsheet.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** To apply border for the specified range of cell.
       */
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
     
     /** Specifies border type in the Spreadsheet.
       */
-    var `type`: js.UndefOr[BorderType | String] = js.native
+    var `type`: js.UndefOr[BorderType | String] = js.undefined
   }
   object SheetsBorder {
     
@@ -7350,25 +7361,24 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsCFormatRule extends StObject {
     
     /** Specifies the conditions to apply for the range of cells in Spreadsheet.
       */
-    var action: js.UndefOr[CFormatRule | String] = js.native
+    var action: js.UndefOr[CFormatRule | String] = js.undefined
     
     /** Specifies the color to apply for the range of cell while conditional formatting.
       */
-    var color: js.UndefOr[CFormatHighlightColor | String] = js.native
+    var color: js.UndefOr[CFormatHighlightColor | String] = js.undefined
     
     /** Specifies the inputs for conditional formatting in Spreadsheet.
       * @Default {[]}
       */
-    var inputs: js.UndefOr[js.Array[_]] = js.native
+    var inputs: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the range for conditional formatting in Spreadsheet.
       */
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
   }
   object SheetsCFormatRule {
     
@@ -7394,7 +7404,7 @@ object Spreadsheet {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setInputs(value: js.Array[_]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      def setInputs(value: js.Array[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
@@ -7410,37 +7420,36 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRangeSetting extends StObject {
     
     /** Gets or sets the data to render the Spreadsheet.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the header styles for the headers in datasource range.
       * @Default {null}
       */
-    var headerStyles: js.UndefOr[js.Any] = js.native
+    var headerStyles: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the primary key for the datasource in Spreadsheet.
       */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Specifies the query for the datasource in Spreadsheet.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
       * @Default {true}
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the start cell for the datasource range in Spreadsheet.
       * @Default {A1}
       */
-    var startCell: js.UndefOr[String] = js.native
+    var startCell: js.UndefOr[String] = js.undefined
   }
   object SheetsRangeSetting {
     
@@ -7491,23 +7500,22 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRow extends StObject {
     
     /** Specifies the cells of a row in Spreadsheet.
       * @Default {[]}
       */
-    var cells: js.UndefOr[js.Array[SheetsRowsCell]] = js.native
+    var cells: js.UndefOr[js.Array[SheetsRowsCell]] = js.undefined
     
     /** Gets or sets the height of a row in Spreadsheet.
       * @Default {20}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets the index of a row in Spreadsheet.
       * @Default {0}
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
   }
   object SheetsRow {
     
@@ -7543,42 +7551,41 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRowsCell extends StObject {
     
     /** Specifies the comment for a cell in Spreadsheet.
       * @Default {null}
       */
-    var comment: js.UndefOr[SheetsRowsCellsComment] = js.native
+    var comment: js.UndefOr[SheetsRowsCellsComment] = js.undefined
     
     /** Specifies the format of a cell in Spreadsheet.
       * @Default {null}
       */
-    var format: js.UndefOr[SheetsRowsCellsFormat] = js.native
+    var format: js.UndefOr[SheetsRowsCellsFormat] = js.undefined
     
     /** Specifies the hyperlink for a cell in Spreadsheet.
       * @Default {null}
       */
-    var hyperlink: js.UndefOr[SheetsRowsCellsHyperlink] = js.native
+    var hyperlink: js.UndefOr[SheetsRowsCellsHyperlink] = js.undefined
     
     /** Specifies the index of a cell in Spreadsheet.
       * @Default {0}
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether to lock or unlock a particular cell.
       * @Default {false}
       */
-    var isLocked: js.UndefOr[Boolean] = js.native
+    var isLocked: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the styles of a cell in Spreadsheet.
       * @Default {null}
       */
-    var style: js.UndefOr[SheetsRowsCellsStyle] = js.native
+    var style: js.UndefOr[SheetsRowsCellsStyle] = js.undefined
     
     /** Specifies the value for a cell in Spreadsheet.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SheetsRowsCell {
     
@@ -7635,17 +7642,16 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRowsCellsComment extends StObject {
     
     /** Get or sets the value that indicates whether to show or hide comments in Spreadsheet.
       * @Default {false}
       */
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the value for the comment in Spreadsheet.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SheetsRowsCellsComment {
     
@@ -7672,26 +7678,25 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRowsCellsFormat extends StObject {
     
     /** Specifies the number of decimal places for the given input.
       * @Default {2}
       */
-    var decimalPlaces: js.UndefOr[Double] = js.native
+    var decimalPlaces: js.UndefOr[Double] = js.undefined
     
     /** Specifies the string format for the given input.
       */
-    var formatStr: js.UndefOr[String] = js.native
+    var formatStr: js.UndefOr[String] = js.undefined
     
     /** Specifies the thousand separator for the given input.
       * @Default {false}
       */
-    var thousandSeparator: js.UndefOr[Boolean] = js.native
+    var thousandSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of the format in Spreadsheet.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SheetsRowsCellsFormat {
     
@@ -7730,21 +7735,20 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRowsCellsHyperlink extends StObject {
     
     /** Specifies the cell address for the hyperlink of a cell.
       */
-    var cellAddr: js.UndefOr[String] = js.native
+    var cellAddr: js.UndefOr[String] = js.undefined
     
     /** Specifies the sheet index to which the cell is referred.
       * @Default {1}
       */
-    var sheetIndex: js.UndefOr[Double] = js.native
+    var sheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the web address for the hyperlink of a cell.
       */
-    var webAddr: js.UndefOr[String] = js.native
+    var webAddr: js.UndefOr[String] = js.undefined
   }
   object SheetsRowsCellsHyperlink {
     
@@ -7777,20 +7781,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SheetsRowsCellsStyle extends StObject {
     
     /** Specifies the background color of a cell in the Spreadsheet.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the font color of a cell in the Spreadsheet.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the font weight of a cell in the Spreadsheet.
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
   }
   object SheetsRowsCellsStyle {
     
@@ -7823,24 +7826,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait SparklineOptions extends StObject {
     
     /** Pass the high point color to create sparkline
       */
-    var highPointColor: js.UndefOr[String] = js.native
+    var highPointColor: js.UndefOr[String] = js.undefined
     
     /** Pass the marker settings object to create sparkline
       */
-    var markerSettings: js.UndefOr[js.Any] = js.native
+    var markerSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the negative point color to create sparkline
       */
-    var negativePointColor: js.UndefOr[String] = js.native
+    var negativePointColor: js.UndefOr[String] = js.undefined
     
     /** Pass the start point color to create sparkline
       */
-    var startPointColor: js.UndefOr[String] = js.native
+    var startPointColor: js.UndefOr[String] = js.undefined
   }
   object SparklineOptions {
     
@@ -7879,40 +7881,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait TabClickEventArgs extends StObject {
     
     /** Returns active tab header element.
       */
-    var activeHeader: js.UndefOr[js.Any] = js.native
+    var activeHeader: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the active tab index.
       */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns previous active tab header element.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.native
+    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
     
     /** Returns previous active tab index.
       */
-    var prevActiveIndex: js.UndefOr[Double] = js.native
+    var prevActiveIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabClickEventArgs {
     
@@ -7975,24 +7976,23 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait TabOptions extends StObject {
     
     /** Pass the align type
       */
-    var alignType: js.UndefOr[HTMLElement] = js.native
+    var alignType: js.UndefOr[HTMLElement] = js.undefined
     
     /** Pass the content object to be displayed in ribbon tab
       */
-    var contents: js.UndefOr[js.Any] = js.native
+    var contents: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the defaults object to be displayed in ribbon tab
       */
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
     /** Pass the text to displayed in ribbon tab
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object TabOptions {
     
@@ -8031,40 +8031,39 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait TabSelectEventArgs extends StObject {
     
     /** Returns active tab header element.
       */
-    var activeHeader: js.UndefOr[js.Any] = js.native
+    var activeHeader: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the active tab index.
       */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns previous active tab header element.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.native
+    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
     
     /** Returns previous active tab index.
       */
-    var prevActiveIndex: js.UndefOr[Double] = js.native
+    var prevActiveIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabSelectEventArgs {
     
@@ -8127,16 +8126,15 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait TableIDOptions extends StObject {
     
     /** Pass the sheet index
       */
-    var sheetIdx: js.UndefOr[Double] = js.native
+    var sheetIdx: js.UndefOr[Double] = js.undefined
     
     /** Pass the table id
       */
-    var tableId: js.UndefOr[Double] = js.native
+    var tableId: js.UndefOr[Double] = js.undefined
   }
   object TableIDOptions {
     
@@ -8163,20 +8161,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait TableOptions extends StObject {
     
     /** Pass the format name of table
       */
-    var formatName: js.UndefOr[String] = js.native
+    var formatName: js.UndefOr[String] = js.undefined
     
     /** Pass the header boolean condition of table
       */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /** Pass the name of the table
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object TableOptions {
     
@@ -8209,20 +8206,19 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait UndoRedoOptions extends StObject {
     
     /** Pass the action to update undo and redo collection
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Pass the cell to update undo and redo collection
       */
-    var cell: js.UndefOr[HTMLElement] = js.native
+    var cell: js.UndefOr[HTMLElement] = js.undefined
     
     /** Pass the sheet index to update undo and redo collection
       */
-    var sheetIndex: js.UndefOr[Double] = js.native
+    var sheetIndex: js.UndefOr[Double] = js.undefined
   }
   object UndoRedoOptions {
     
@@ -8263,14 +8259,14 @@ object Spreadsheet {
       * @param {any[]|string} Optional. If range is specified, it will clear rules for the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def clearCF(range: js.Array[_]): Unit = js.native
+    def clearCF(range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to get the applied conditional formatting rules as array of objects based on the specified row Index and column Index in the Spreadsheet.
       * @param {number} Pass the row index.
       * @param {number} Pass the column index.
       * @returns {any[]}
       */
-    def getCFRule(rowIdx: Double, colIdx: Double): js.Array[_] = js.native
+    def getCFRule(rowIdx: Double, colIdx: Double): js.Array[js.Any] = js.native
     
     /** This method is used to set the conditional formatting rule in the Spreadsheet.
       * @param {Spreadsheet.CFormatOptions} Pass the Object "CFormatOptions"
@@ -8279,7 +8275,6 @@ object Spreadsheet {
     def setCFRule(rule: CFormatOptions): Unit = js.native
   }
   
-  @js.native
   trait XLCMenu extends StObject {
     
     /** This method is used to dynamically add items in the context menu.
@@ -8289,61 +8284,61 @@ object Spreadsheet {
       * @param {number} Specifies the item index
       * @returns {void}
       */
-    def addItem(target: ContextMenuType, itemColl: js.Array[_], operation: String, itemIdx: Double): Unit = js.native
+    def addItem(target: ContextMenuType, itemColl: js.Array[js.Any], operation: String, itemIdx: Double): Unit
     
     /** This method is used to change data source in the context menu.
       * @param {string} Specifies the context menu type to bind the data source.
       * @param {any[]} Pass the data source to be binded
       * @returns {void}
       */
-    def changeDataSource(target: String, data: js.Array[_]): Unit = js.native
+    def changeDataSource(target: String, data: js.Array[js.Any]): Unit
     
     /** This method is used to disable the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be disabled.
       * @param {any[]} Specifies the Menu Item id collection to be disabled
       * @returns {void}
       */
-    def disableItem(target: String, idxColl: js.Array[_]): Unit = js.native
+    def disableItem(target: String, idxColl: js.Array[js.Any]): Unit
     
     /** This method is used to enable the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be enabled.
       * @param {any[]} Specifies the Menu Item id collection to be enabled
       * @returns {void}
       */
-    def enableItem(target: String, idxColl: js.Array[_]): Unit = js.native
+    def enableItem(target: String, idxColl: js.Array[js.Any]): Unit
     
     /** This method is used to hide the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be hides.
       * @param {any[]} Specifies the Menu Item id collection to be hides
       * @returns {void}
       */
-    def hideItem(cMenuType: String, idxColl: js.Array[_]): Unit = js.native
+    def hideItem(cMenuType: String, idxColl: js.Array[js.Any]): Unit
     
     /** This method is used to remove the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be removed.
       * @param {any[]} Specifies the Menu Item id collection to be removed
       * @returns {void}
       */
-    def removeItem(target: String, idxColl: js.Array[_]): Unit = js.native
+    def removeItem(target: String, idxColl: js.Array[js.Any]): Unit
     
     /** This method is used to show the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be shown.
       * @param {any[]} Specifies the Menu Item id collection to be shown
       * @returns {void}
       */
-    def showItem(cMenuType: String, idxColl: js.Array[_]): Unit = js.native
+    def showItem(cMenuType: String, idxColl: js.Array[js.Any]): Unit
   }
   object XLCMenu {
     
     @scala.inline
     def apply(
-      addItem: (ContextMenuType, js.Array[_], String, Double) => Unit,
-      changeDataSource: (String, js.Array[_]) => Unit,
-      disableItem: (String, js.Array[_]) => Unit,
-      enableItem: (String, js.Array[_]) => Unit,
-      hideItem: (String, js.Array[_]) => Unit,
-      removeItem: (String, js.Array[_]) => Unit,
-      showItem: (String, js.Array[_]) => Unit
+      addItem: (ContextMenuType, js.Array[js.Any], String, Double) => Unit,
+      changeDataSource: (String, js.Array[js.Any]) => Unit,
+      disableItem: (String, js.Array[js.Any]) => Unit,
+      enableItem: (String, js.Array[js.Any]) => Unit,
+      hideItem: (String, js.Array[js.Any]) => Unit,
+      removeItem: (String, js.Array[js.Any]) => Unit,
+      showItem: (String, js.Array[js.Any]) => Unit
     ): XLCMenu = {
       val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction4(addItem), changeDataSource = js.Any.fromFunction2(changeDataSource), disableItem = js.Any.fromFunction2(disableItem), enableItem = js.Any.fromFunction2(enableItem), hideItem = js.Any.fromFunction2(hideItem), removeItem = js.Any.fromFunction2(removeItem), showItem = js.Any.fromFunction2(showItem))
       __obj.asInstanceOf[XLCMenu]
@@ -8353,25 +8348,25 @@ object Spreadsheet {
     implicit class XLCMenuMutableBuilder[Self <: XLCMenu] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddItem(value: (ContextMenuType, js.Array[_], String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction4(value))
+      def setAddItem(value: (ContextMenuType, js.Array[js.Any], String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction4(value))
       
       @scala.inline
-      def setChangeDataSource(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "changeDataSource", js.Any.fromFunction2(value))
+      def setChangeDataSource(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "changeDataSource", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setDisableItem(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
+      def setDisableItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setEnableItem(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
+      def setEnableItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setHideItem(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "hideItem", js.Any.fromFunction2(value))
+      def setHideItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "hideItem", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setRemoveItem(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
+      def setRemoveItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setShowItem(value: (String, js.Array[_]) => Unit): Self = StObject.set(x, "showItem", js.Any.fromFunction2(value))
+      def setShowItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "showItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -8392,7 +8387,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def removeCellTypes(range: String, sheetIdx: Double): Unit = js.native
-    def removeCellTypes(range: js.Array[_], sheetIdx: Double): Unit = js.native
+    def removeCellTypes(range: js.Array[js.Any], sheetIdx: Double): Unit = js.native
   }
   
   @js.native
@@ -8427,7 +8422,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def createChart(range: String, options: ChartOptions): Unit = js.native
-    def createChart(range: js.Array[_], options: ChartOptions): Unit = js.native
+    def createChart(range: js.Array[js.Any], options: ChartOptions): Unit = js.native
     
     /** This method is used to refresh the chart in the Spreadsheet.
       * @param {string} To pass the chart Id.
@@ -8458,23 +8453,22 @@ object Spreadsheet {
     def updateChartElement(chartId: String, value: ChartProperties): Unit = js.native
   }
   
-  @js.native
   trait XLClipboard extends StObject {
     
     /** This method is used to copy the selected cells in the Spreadsheet.
       * @returns {void}
       */
-    def copy(): Unit = js.native
+    def copy(): Unit
     
     /** This method is used to cut the selected cells in the Spreadsheet.
       * @returns {void}
       */
-    def cut(): Unit = js.native
+    def cut(): Unit
     
     /** This method is used to paste the cut or copied cells data in the Spreadsheet.
       * @returns {void}
       */
-    def paste(): Unit = js.native
+    def paste(): Unit
   }
   object XLClipboard {
     
@@ -8508,7 +8502,7 @@ object Spreadsheet {
       * @param {boolean} Optional. Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows data.
       * @returns {void}
       */
-    def deleteComment(range: js.Array[_], sheetIdx: Double, skipHiddenRow: Boolean): Unit = js.native
+    def deleteComment(range: js.Array[js.Any], sheetIdx: Double, skipHiddenRow: Boolean): Unit = js.native
     
     /** This method is used to edit the comment in the target Cell in Spreadsheet.
       * @param {Spreadsheet.CellIndex} Optional.
@@ -8540,7 +8534,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def setComment(range: String, data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
-    def setComment(range: js.Array[_], data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
+    def setComment(range: js.Array[js.Any], data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
     
     /** This method is used to show all the comments in the Spreadsheet.
       * @returns {void}
@@ -8563,35 +8557,34 @@ object Spreadsheet {
       * @returns {void}
       */
     def moveRangeTo(sourceRange: js.Any, destinationRange: js.Any): Unit = js.native
-    def moveRangeTo(sourceRange: js.Any, destinationRange: js.Array[_]): Unit = js.native
-    def moveRangeTo(sourceRange: js.Array[_], destinationRange: js.Any): Unit = js.native
-    def moveRangeTo(sourceRange: js.Array[_], destinationRange: js.Array[_]): Unit = js.native
+    def moveRangeTo(sourceRange: js.Any, destinationRange: js.Array[js.Any]): Unit = js.native
+    def moveRangeTo(sourceRange: js.Array[js.Any], destinationRange: js.Any): Unit = js.native
+    def moveRangeTo(sourceRange: js.Array[js.Any], destinationRange: js.Array[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait XLDragFill extends StObject {
     
     /** This method is used to perform auto fill in Spreadsheet.
       * @param {Spreadsheet.AutoFillObject} Pass Object AutoFillObject.
       * @returns {void}
       */
-    def autoFill(options: AutoFillObject): Unit = js.native
+    def autoFill(options: AutoFillObject): Unit
     
     /** This method is used to hide the auto fill element in the Spreadsheet.
       * @returns {void}
       */
-    def hideAutoFillElement(): Unit = js.native
+    def hideAutoFillElement(): Unit
     
     /** This method is used to hide the auto fill options in the Spreadsheet.
       * @returns {void}
       */
-    def hideAutoFillOptions(): Unit = js.native
+    def hideAutoFillOptions(): Unit
     
     /** This method is used to set position of the auto fill element in the Spreadsheet.
       * @param {boolean} Pass the isDragFill option as {{'`boolean`' | markdownify}} value to show auto fill options in Spreadsheet.
       * @returns {void}
       */
-    def positionAutoFillElement(isDragFill: Boolean): Unit = js.native
+    def positionAutoFillElement(isDragFill: Boolean): Unit
   }
   object XLDragFill {
     
@@ -8655,7 +8648,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the index of the sheet.
       * @returns {any|string|any[]}
       */
-    def getPropertyValue(rowIdx: Double, colIdx: Double, prop: String, sheetIdx: Double): js.Any | String | js.Array[_] = js.native
+    def getPropertyValue(rowIdx: Double, colIdx: Double, prop: String, sheetIdx: Double): js.Any | String | js.Array[js.Any] = js.native
     
     /** This method is used to get the property value in specified cell in Spreadsheet.
       * @param {HTMLElement} Pass the cell element to get property value.
@@ -8665,7 +8658,7 @@ object Spreadsheet {
       * @param {number} Pass the index of sheet.
       * @returns {any|string|any[]}
       */
-    def getPropertyValueByElem(elem: HTMLElement, property: String, sheetIdx: Double): js.Any | String | js.Array[_] = js.native
+    def getPropertyValueByElem(elem: HTMLElement, property: String, sheetIdx: Double): js.Any | String | js.Array[js.Any] = js.native
     
     /** This method is used to save the edited cell value in the Spreadsheet.
       * @returns {void}
@@ -8701,7 +8694,6 @@ object Spreadsheet {
     def updateValue(aRange: String, `val`: Double, formatClass: String, sheetIdx: Double): Unit = js.native
   }
   
-  @js.native
   trait XLExport extends StObject {
     
     /** This method is used to save the sheet data as Excel ,CSV or PDF document (.xls, .xlsx .csv, .pdf) in Spreadsheet.
@@ -8709,18 +8701,19 @@ object Spreadsheet {
       * @param {ej.Spreadsheet.ExportType} Pass the export filename that you want.
       * @returns {void}
       */
-    def export(`type`: String, fileName: ExportType): Unit = js.native
+    def `export`(`type`: String, fileName: ExportType): Unit
     
     /** This method is used to get the export properties in the Spreadsheet.
       * @returns {any}
       */
-    def getExportProps(): js.Any = js.native
+    def getExportProps(): js.Any
   }
   object XLExport {
     
     @scala.inline
-    def apply(export: (String, ExportType) => Unit, getExportProps: () => js.Any): XLExport = {
-      val __obj = js.Dynamic.literal(export = js.Any.fromFunction2(export), getExportProps = js.Any.fromFunction0(getExportProps))
+    def apply(`export`: (String, ExportType) => Unit, getExportProps: () => js.Any): XLExport = {
+      val __obj = js.Dynamic.literal(getExportProps = js.Any.fromFunction0(getExportProps))
+      __obj.updateDynamic("export")(js.Any.fromFunction2(`export`))
       __obj.asInstanceOf[XLExport]
     }
     
@@ -8748,7 +8741,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def filter(range: String): Unit = js.native
-    def filter(range: js.Array[_]): Unit = js.native
+    def filter(range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to apply filter for the column by active cell's value in the Spreadsheet.
       * @returns {void}
@@ -8799,7 +8792,7 @@ object Spreadsheet {
       * @returns {string}
       */
     def createTable(tableObject: TableOptions, range: String): String = js.native
-    def createTable(tableObject: TableOptions, range: js.Array[_]): String = js.native
+    def createTable(tableObject: TableOptions, range: js.Array[js.Any]): String = js.native
     
     /** This method is used to delete the added custom cell style in spreadsheet.
       * @param {string} Pass the cell style name
@@ -8866,7 +8859,7 @@ object Spreadsheet {
       * @param {Spreadsheet.FormatOptions} Optional.
       * @returns {void}
       */
-    def removeStyle(range: js.Array[_], options: FormatOptions): Unit = js.native
+    def removeStyle(range: js.Array[js.Any], options: FormatOptions): Unit = js.native
     
     /** This method is used to remove table with specified tableId in the Spreadsheet.
       * @param {number} Pass the tableId that you want to remove.
@@ -8880,59 +8873,58 @@ object Spreadsheet {
       * @returns {void}
       */
     def updateDecimalPlaces(`type`: String, range: String): Unit = js.native
-    def updateDecimalPlaces(`type`: String, range: js.Array[_]): Unit = js.native
+    def updateDecimalPlaces(`type`: String, range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to update the format for the selected range of cells in the Spreadsheet.
       * @param {Spreadsheet.BorderOptions} Pass Object BorderOptions.
       * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def updateFormat(formatObj: BorderOptions, range: js.Array[_]): Unit = js.native
+    def updateFormat(formatObj: BorderOptions, range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to update the unique format for selected range of cells in the Spreadsheet.
       * @param {string} Pass the unique format class.
       * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def updateUniqueFormat(formatClass: String, range: js.Array[_]): Unit = js.native
+    def updateUniqueFormat(formatClass: String, range: js.Array[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait XLFreeze extends StObject {
     
     /** This method is used to freeze columns upto the specified column index in the Spreadsheet.
       * @param {number} Index of the column to be freeze.
       * @returns {void}
       */
-    def freezeColumns(colIdx: Double): Unit = js.native
+    def freezeColumns(colIdx: Double): Unit
     
     /** This method is used to freeze the first column in the Spreadsheet.
       * @returns {void}
       */
-    def freezeLeftColumn(): Unit = js.native
+    def freezeLeftColumn(): Unit
     
     /** This method is used to freeze rows and columns before the specified cell in the Spreadsheet.
       * @param {number} Index of the row to be freeze.
       * @param {number} Index of the column to be freeze.
       * @returns {void}
       */
-    def freezePanes(rowIdx: Double, colIdx: Double): Unit = js.native
+    def freezePanes(rowIdx: Double, colIdx: Double): Unit
     
     /** This method is used to freeze rows upto the specified row index in the Spreadsheet.
       * @param {number} Index of the row to be freeze.
       * @returns {void}
       */
-    def freezeRows(rowIdx: Double): Unit = js.native
+    def freezeRows(rowIdx: Double): Unit
     
     /** This method is used to freeze the top row in the Spreadsheet.
       * @returns {void}
       */
-    def freezeTopRow(): Unit = js.native
+    def freezeTopRow(): Unit
     
     /** This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
       * @returns {void}
       */
-    def unfreezePanes(): Unit = js.native
+    def unfreezePanes(): Unit
   }
   object XLFreeze {
     
@@ -8972,14 +8964,13 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait XLPivot extends StObject {
     
     /** This property is used to clear the pivot table list in Spreadsheet.
       * @param {string} Pass the name of the pivot table.
       * @returns {void}
       */
-    def clearPivotFieldList(pivotName: String): Unit = js.native
+    def clearPivotFieldList(pivotName: String): Unit
     
     /** This method is used to create pivot table.
       * @param {string} It specifies the range for which the pivot table is created.
@@ -8989,20 +8980,20 @@ object Spreadsheet {
       * @param {any} Pass the pivot range, sheet index, address and data source .
       * @returns {string}
       */
-    def createPivotTable(range: String, location: String, name: String, settings: PivotOptions, pvt: js.Any): String = js.native
+    def createPivotTable(range: String, location: String, name: String, settings: PivotOptions, pvt: js.Any): String
     
     /** This method is used to delete the pivot table which is selected.
       * @param {string} Pass the name of the pivot table.
       * @returns {void}
       */
-    def deletePivotTable(pivotName: String): Unit = js.native
+    def deletePivotTable(pivotName: String): Unit
     
     /** This method is used to refresh data in pivot table.
       * @param {string} Optional. Pass the name of the pivot table.
       * @param {number} Optional. Pass the index of the sheet.
       * @returns {void}
       */
-    def refreshDataSource(name: String, sheetIdx: Double): Unit = js.native
+    def refreshDataSource(name: String, sheetIdx: Double): Unit
   }
   object XLPivot {
     
@@ -9034,18 +9025,17 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait XLPrint extends StObject {
     
     /** This method is used to print the selected contents in the Spreadsheet.
       * @returns {void}
       */
-    def printSelection(): Unit = js.native
+    def printSelection(): Unit
     
     /** This method is used to print the entire contents in the active sheet.
       * @returns {void}
       */
-    def printSheet(): Unit = js.native
+    def printSheet(): Unit
   }
   object XLPrint {
     
@@ -9066,53 +9056,52 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait XLResize extends StObject {
     
     /** This method is used to fit the height of rows in the Spreadsheet.
       * @param {any[]} Optional. Pass row index collection that you want to fit its height.
       * @returns {void}
       */
-    def fitHeight(rowIndexes: js.Array[_]): Unit = js.native
+    def fitHeight(rowIndexes: js.Array[js.Any]): Unit
     
     /** This method is used to fit the width of columns in the Spreadsheet.
       * @param {any[]} Optional. Pass column index collection that you want to fit its width.
       * @returns {void}
       */
-    def fitWidth(colIndexes: js.Array[_]): Unit = js.native
+    def fitWidth(colIndexes: js.Array[js.Any]): Unit
     
     /** This method is used to get the column width of the specified column index in the Spreadsheet.
       * @param {number} Pass the column index.
       * @returns {number}
       */
-    def getColWidth(colIdx: Double): Double = js.native
+    def getColWidth(colIdx: Double): Double
     
     /** This method is used to get the row height of the specified row index in the Spreadsheet.
       * @param {number} Pass the row index which you want to find its height.
       * @returns {number}
       */
-    def getRowHeight(rowIdx: Double): Double = js.native
+    def getRowHeight(rowIdx: Double): Double
     
     /** This method is used to set the column width of the specified column index in the Spreadsheet.
       * @param {number} Pass the column index.
       * @param {number} Pass the width value that you want to set.
       * @returns {void}
       */
-    def setColWidth(colIdx: Double, size: Double): Unit = js.native
+    def setColWidth(colIdx: Double, size: Double): Unit
     
     /** This method is used to set the row height of the specified row index in the Spreadsheet.
       * @param {number} Pass the row index.
       * @param {number} Pass the height value that you want to set.
       * @returns {void}
       */
-    def setRowHeight(rowIdx: Double, size: Double): Unit = js.native
+    def setRowHeight(rowIdx: Double, size: Double): Unit
   }
   object XLResize {
     
     @scala.inline
     def apply(
-      fitHeight: js.Array[_] => Unit,
-      fitWidth: js.Array[_] => Unit,
+      fitHeight: js.Array[js.Any] => Unit,
+      fitWidth: js.Array[js.Any] => Unit,
       getColWidth: Double => Double,
       getRowHeight: Double => Double,
       setColWidth: (Double, Double) => Unit,
@@ -9126,10 +9115,10 @@ object Spreadsheet {
     implicit class XLResizeMutableBuilder[Self <: XLResize] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFitHeight(value: js.Array[_] => Unit): Self = StObject.set(x, "fitHeight", js.Any.fromFunction1(value))
+      def setFitHeight(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "fitHeight", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setFitWidth(value: js.Array[_] => Unit): Self = StObject.set(x, "fitWidth", js.Any.fromFunction1(value))
+      def setFitWidth(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "fitWidth", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetColWidth(value: Double => Double): Self = StObject.set(x, "getColWidth", js.Any.fromFunction1(value))
@@ -9167,7 +9156,7 @@ object Spreadsheet {
       * @param {number} pass the index of the menu item.
       * @returns {void}
       */
-    def addMenuItem(item: js.Array[_], index: Double): Unit = js.native
+    def addMenuItem(item: js.Array[js.Any], index: Double): Unit = js.native
     
     /** This method is used to add a new name in the Spreadsheet name manager.
       * @param {string} Pass the name that you want to define in name manager.
@@ -9185,7 +9174,7 @@ object Spreadsheet {
       * @param {number} pass the index of the tab.
       * @returns {void}
       */
-    def addTab(tabText: String, ribbonGroups: js.Array[_], index: Double): Unit = js.native
+    def addTab(tabText: String, ribbonGroups: js.Array[js.Any], index: Double): Unit = js.native
     
     /** This method is used to dynamically add the tab group in the ribbon.
       * @param {number} Specifies the ribbon tab index.
@@ -9201,7 +9190,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def autoSum(`type`: String, range: String): Unit = js.native
-    def autoSum(`type`: String, range: js.Array[_]): Unit = js.native
+    def autoSum(`type`: String, range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to hide the file menu in the ribbon tab.
       * @returns {void}
@@ -9259,14 +9248,13 @@ object Spreadsheet {
     def updateRibbonIcons(): Unit = js.native
   }
   
-  @js.native
   trait XLScroll extends StObject {
     
     /** This method is used to scroll the sheet content to the specified cell address in the Spreadsheet.
       * @param {string} Pass the cell address that you want to scroll to it.
       * @returns {void}
       */
-    def scrollToCell(range: String): Unit = js.native
+    def scrollToCell(range: String): Unit
   }
   object XLScroll {
     
@@ -9284,7 +9272,6 @@ object Spreadsheet {
     }
   }
   
-  @js.native
   trait XLSearch extends StObject {
     
     /** This method is used to find and replace all data by workbook in the Spreadsheet.
@@ -9294,7 +9281,7 @@ object Spreadsheet {
       * @param {boolean} Pass {{'`true`' | markdownify}}, if you want to match with entire cell contents.
       * @returns {void}
       */
-    def replaceAllByBook(findData: String, replaceData: String, isCSen: Boolean, isEMatch: Boolean): Unit = js.native
+    def replaceAllByBook(findData: String, replaceData: String, isCSen: Boolean, isEMatch: Boolean): Unit
     
     /** This method is used to find and replace all data by sheet in Spreadsheet.
       * @param {string} Pass the search data.
@@ -9303,7 +9290,7 @@ object Spreadsheet {
       * @param {boolean} Pass {{'`true`' | markdownify}}, if you want to match with entire cell contents.
       * @returns {void}
       */
-    def replaceAllBySheet(findData: String, replaceData: String, isCSen: Boolean, isEMatch: Boolean): Unit = js.native
+    def replaceAllBySheet(findData: String, replaceData: String, isCSen: Boolean, isEMatch: Boolean): Unit
   }
   object XLSearch {
     
@@ -9346,7 +9333,7 @@ object Spreadsheet {
       * @param {any[]|string} Optional. Pass range to refresh selection.
       * @returns {void}
       */
-    def refreshSelection(range: js.Array[_]): Unit = js.native
+    def refreshSelection(range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to select a single column in the Spreadsheet.
       * @param {number} Pass the column index value.
@@ -9386,7 +9373,6 @@ object Spreadsheet {
     def selectSheet(): Unit = js.native
   }
   
-  @js.native
   trait XLShape extends StObject {
     
     /** This method is used to set a picture in the Spreadsheet.
@@ -9398,7 +9384,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the left of the image that you want to set.
       * @returns {string}
       */
-    def setPicture(range: String, url: String, width: Double, height: Double, top: Double, left: Double): String = js.native
+    def setPicture(range: String, url: String, width: Double, height: Double, top: Double, left: Double): String
   }
   object XLShape {
     
@@ -9434,10 +9420,9 @@ object Spreadsheet {
       * @param {string} Pass the direction to sort
       * @returns {boolean}
       */
-    def sortByRange(range: js.Array[_], columnName: String, direction: String): Boolean = js.native
+    def sortByRange(range: js.Array[js.Any], columnName: String, direction: String): Boolean = js.native
   }
   
-  @js.native
   trait XLSparkline extends StObject {
     
     /** This method used to change the sparkline color and marker point color in the spreadsheet.
@@ -9446,7 +9431,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the sheet index
       * @returns {void}
       */
-    def changePointColor(sparklineId: String, option: js.Any, sheetIdx: Double): Unit = js.native
+    def changePointColor(sparklineId: String, option: js.Any, sheetIdx: Double): Unit
     
     /** This method used to change the sparkline type in the spreadsheet.
       * @param {string} Pass the sparkline ID
@@ -9454,7 +9439,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the sheet index
       * @returns {void}
       */
-    def changeType(sparklineId: String, `type`: String, sheetIdx: Double): Unit = js.native
+    def changeType(sparklineId: String, `type`: String, sheetIdx: Double): Unit
     
     /** This method used for creating the sparkline chart for specified range in spreadsheet.
       * @param {string} Pass the data range
@@ -9470,7 +9455,7 @@ object Spreadsheet {
       `type`: String,
       options: SparklineOptions,
       sheetIndex: Double
-    ): Unit = js.native
+    ): Unit
   }
   object XLSparkline {
     
@@ -9509,10 +9494,16 @@ object Spreadsheet {
       * @param {boolean} Pass {{'`true`' | markdownify}} if you want to show an error alert.
       * @returns {void}
       */
-    def applyDVRules(range: String, values: js.Array[_], `type`: String, required: Boolean, showErrorAlert: Boolean): Unit = js.native
     def applyDVRules(
-      range: js.Array[_],
-      values: js.Array[_],
+      range: String,
+      values: js.Array[js.Any],
+      `type`: String,
+      required: Boolean,
+      showErrorAlert: Boolean
+    ): Unit = js.native
+    def applyDVRules(
+      range: js.Array[js.Any],
+      values: js.Array[js.Any],
       `type`: String,
       required: Boolean,
       showErrorAlert: Boolean
@@ -9523,13 +9514,13 @@ object Spreadsheet {
       * @returns {void}
       */
     def clearDV(range: String): Unit = js.native
-    def clearDV(range: js.Array[_]): Unit = js.native
+    def clearDV(range: js.Array[js.Any]): Unit = js.native
     
     /** This method is used to highlight invalid data in a specified range of cells in the Spreadsheet.
       * @param {string|any[]} Optional. If range is specified, it will clear rules for the specified range else it will use the current selected range.
       * @returns {void}
       */
     def highlightInvalidData(range: String): Unit = js.native
-    def highlightInvalidData(range: js.Array[_]): Unit = js.native
+    def highlightInvalidData(range: js.Array[js.Any]): Unit = js.native
   }
 }

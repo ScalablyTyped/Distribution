@@ -5,7 +5,6 @@ import typings.ethereumProtocol.mod.AbiType.Fallback
 import typings.ethereumProtocol.mod.AbiType.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ethereumProtocol.mod.ConstructorAbi
   - typings.ethereumProtocol.mod.FallbackAbi
 */
-trait FunctionAbi extends AbiDefinition
+trait FunctionAbi
+  extends StObject
+     with AbiDefinition
 object FunctionAbi {
   
   @scala.inline

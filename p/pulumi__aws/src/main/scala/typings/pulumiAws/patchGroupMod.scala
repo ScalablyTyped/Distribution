@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patchGroupMod {
@@ -38,6 +37,10 @@ object patchGroupMod {
   /* static members */
   object PatchGroup {
     
+    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PatchGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object patchGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PatchGroup = js.native
-    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PatchGroup = js.native
-    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PatchGroupState): PatchGroup = js.native
-    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PatchGroupState, opts: CustomResourceOptions): PatchGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PatchGroupState): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PatchGroupState, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
     
     /**
       * Returns true if the given object is an instance of PatchGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean]
   }
   
-  @js.native
   trait PatchGroupArgs extends StObject {
     
     /**
       * The ID of the patch baseline to register the patch group with.
       */
-    val baselineId: Input[String] = js.native
+    val baselineId: Input[String]
     
     /**
       * The name of the patch group that should be registered with the patch baseline.
       */
-    val patchGroup: Input[String] = js.native
+    val patchGroup: Input[String]
   }
   object PatchGroupArgs {
     
@@ -101,18 +98,17 @@ object patchGroupMod {
     }
   }
   
-  @js.native
   trait PatchGroupState extends StObject {
     
     /**
       * The ID of the patch baseline to register the patch group with.
       */
-    val baselineId: js.UndefOr[Input[String]] = js.native
+    val baselineId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the patch group that should be registered with the patch baseline.
       */
-    val patchGroup: js.UndefOr[Input[String]] = js.native
+    val patchGroup: js.UndefOr[Input[String]] = js.undefined
   }
   object PatchGroupState {
     

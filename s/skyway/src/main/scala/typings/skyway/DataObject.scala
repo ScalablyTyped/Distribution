@@ -2,15 +2,13 @@ package typings.skyway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataObject extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var src: String = js.native
+  var src: String
 }
 object DataObject {
   

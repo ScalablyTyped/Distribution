@@ -2,24 +2,23 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Points {
   
-  @JSImport("seen", "Points.X")
+  @JSImport("seen", "Points")
   @js.native
-  def X(): Point = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("seen", "Points.Y")
-  @js.native
-  def Y(): Point = js.native
+  @scala.inline
+  def X(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("X")().asInstanceOf[Point]
   
-  @JSImport("seen", "Points.Z")
-  @js.native
-  def Z(): Point = js.native
+  @scala.inline
+  def Y(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("Y")().asInstanceOf[Point]
   
-  @JSImport("seen", "Points.ZERO")
-  @js.native
-  def ZERO(): Point = js.native
+  @scala.inline
+  def Z(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("Z")().asInstanceOf[Point]
+  
+  @scala.inline
+  def ZERO(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("ZERO")().asInstanceOf[Point]
 }

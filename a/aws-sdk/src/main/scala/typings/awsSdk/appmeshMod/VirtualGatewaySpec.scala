@@ -2,23 +2,21 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpec extends StObject {
   
   /**
     * A reference to an object that represents the defaults for backends.
     */
-  var backendDefaults: js.UndefOr[VirtualGatewayBackendDefaults] = js.native
+  var backendDefaults: js.UndefOr[VirtualGatewayBackendDefaults] = js.undefined
   
   /**
     * The listeners that the mesh endpoint is expected to receive inbound traffic from. You can specify one listener.
     */
-  var listeners: VirtualGatewayListeners = js.native
+  var listeners: VirtualGatewayListeners
   
-  var logging: js.UndefOr[VirtualGatewayLogging] = js.native
+  var logging: js.UndefOr[VirtualGatewayLogging] = js.undefined
 }
 object VirtualGatewaySpec {
   

@@ -2,20 +2,18 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cache args
   */
-@js.native
 trait ICacheArgs extends StObject {
   
-  var cacheKey: String = js.native
+  var cacheKey: String
   
-  var childrenOf: js.UndefOr[Double] = js.native
+  var childrenOf: js.UndefOr[Double] = js.undefined
   
-  var section: js.UndefOr[String] = js.native
+  var section: js.UndefOr[String] = js.undefined
 }
 object ICacheArgs {
   

@@ -2,101 +2,99 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReservationResponse extends StObject {
   
   /**
     * Unique reservation ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:reservation:1234567'
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * Number of reserved resources
     */
-  var Count: js.UndefOr[integer] = js.native
+  var Count: js.UndefOr[integer] = js.undefined
   
   /**
     * Currency code for usagePrice and fixedPrice in ISO-4217 format, e.g. 'USD'
     */
-  var CurrencyCode: js.UndefOr[string] = js.native
+  var CurrencyCode: js.UndefOr[string] = js.undefined
   
   /**
     * Lease duration, e.g. '12'
     */
-  var Duration: js.UndefOr[integer] = js.native
+  var Duration: js.UndefOr[integer] = js.undefined
   
   /**
     * Units for duration, e.g. 'MONTHS'
     */
-  var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.native
+  var DurationUnits: js.UndefOr[OfferingDurationUnits] = js.undefined
   
   /**
     * Reservation UTC end date and time in ISO-8601 format, e.g. '2019-03-01T00:00:00'
     */
-  var End: js.UndefOr[string] = js.native
+  var End: js.UndefOr[string] = js.undefined
   
   /**
     * One-time charge for each reserved resource, e.g. '0.0' for a NO_UPFRONT offering
     */
-  var FixedPrice: js.UndefOr[double] = js.native
+  var FixedPrice: js.UndefOr[double] = js.undefined
   
   /**
     * User specified reservation name
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Offering description, e.g. 'HD AVC output at 10-20 Mbps, 30 fps, and standard VQ in US West (Oregon)'
     */
-  var OfferingDescription: js.UndefOr[string] = js.native
+  var OfferingDescription: js.UndefOr[string] = js.undefined
   
   /**
     * Unique offering ID, e.g. '87654321'
     */
-  var OfferingId: js.UndefOr[string] = js.native
+  var OfferingId: js.UndefOr[string] = js.undefined
   
   /**
     * Offering type, e.g. 'NO_UPFRONT'
     */
-  var OfferingType: js.UndefOr[typings.awsSdk.medialiveMod.OfferingType] = js.native
+  var OfferingType: js.UndefOr[typings.awsSdk.medialiveMod.OfferingType] = js.undefined
   
   /**
     * AWS region, e.g. 'us-west-2'
     */
-  var Region: js.UndefOr[string] = js.native
+  var Region: js.UndefOr[string] = js.undefined
   
   /**
     * Unique reservation ID, e.g. '1234567'
     */
-  var ReservationId: js.UndefOr[string] = js.native
+  var ReservationId: js.UndefOr[string] = js.undefined
   
   /**
     * Resource configuration details
     */
-  var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.native
+  var ResourceSpecification: js.UndefOr[ReservationResourceSpecification] = js.undefined
   
   /**
     * Reservation UTC start date and time in ISO-8601 format, e.g. '2018-03-01T00:00:00'
     */
-  var Start: js.UndefOr[string] = js.native
+  var Start: js.UndefOr[string] = js.undefined
   
   /**
     * Current state of reservation, e.g. 'ACTIVE'
     */
-  var State: js.UndefOr[ReservationState] = js.native
+  var State: js.UndefOr[ReservationState] = js.undefined
   
   /**
     * A collection of key-value pairs
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
   
   /**
     * Recurring usage charge for each reserved resource, e.g. '157.0'
     */
-  var UsagePrice: js.UndefOr[double] = js.native
+  var UsagePrice: js.UndefOr[double] = js.undefined
 }
 object DeleteReservationResponse {
   

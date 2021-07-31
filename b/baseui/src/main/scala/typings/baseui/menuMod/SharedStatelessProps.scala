@@ -8,35 +8,33 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedStatelessProps extends StObject {
   
-  var activedescendantId: js.UndefOr[String] = js.native
+  var activedescendantId: js.UndefOr[String] = js.undefined
   
-  var focusMenu: js.UndefOr[js.Function1[/* event */ FocusEvent | MouseEvent | KeyboardEvent, _]] = js.native
+  var focusMenu: js.UndefOr[js.Function1[/* event */ FocusEvent | MouseEvent | KeyboardEvent, js.Any]] = js.undefined
   
-  var getRequiredItemProps: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]] = js.native
+  var getRequiredItemProps: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]] = js.undefined
   
-  var handleKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, _]] = js.native
+  var handleKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, js.Any]] = js.undefined
   
-  var highlightedIndex: js.UndefOr[Double] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var items: ItemsT = js.native
+  var items: ItemsT
   
-  var noResultsMsg: js.UndefOr[ReactNode] = js.native
+  var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], js.Any]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], js.Any]] = js.undefined
   
-  var rootRef: js.UndefOr[Ref[_]] = js.native
+  var rootRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var unfocusMenu: js.UndefOr[js.Function0[_]] = js.native
+  var unfocusMenu: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object SharedStatelessProps {
   
@@ -56,7 +54,7 @@ object SharedStatelessProps {
     def setActivedescendantIdUndefined: Self = StObject.set(x, "activedescendantId", js.undefined)
     
     @scala.inline
-    def setFocusMenu(value: /* event */ FocusEvent | MouseEvent | KeyboardEvent => _): Self = StObject.set(x, "focusMenu", js.Any.fromFunction1(value))
+    def setFocusMenu(value: /* event */ FocusEvent | MouseEvent | KeyboardEvent => js.Any): Self = StObject.set(x, "focusMenu", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFocusMenuUndefined: Self = StObject.set(x, "focusMenu", js.undefined)
@@ -68,7 +66,7 @@ object SharedStatelessProps {
     def setGetRequiredItemPropsUndefined: Self = StObject.set(x, "getRequiredItemProps", js.undefined)
     
     @scala.inline
-    def setHandleKeyDown(value: /* event */ KeyboardEvent => _): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
+    def setHandleKeyDown(value: /* event */ KeyboardEvent => js.Any): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHandleKeyDownUndefined: Self = StObject.set(x, "handleKeyDown", js.undefined)
@@ -98,22 +96,22 @@ object SharedStatelessProps {
     def setNoResultsMsgUndefined: Self = StObject.set(x, "noResultsMsg", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setRootRef(value: Ref[_]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+    def setRootRef(value: Ref[js.Any]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
+    def setRootRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRootRefNull: Self = StObject.set(x, "rootRef", null)
@@ -122,7 +120,7 @@ object SharedStatelessProps {
     def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
     
     @scala.inline
-    def setUnfocusMenu(value: () => _): Self = StObject.set(x, "unfocusMenu", js.Any.fromFunction0(value))
+    def setUnfocusMenu(value: () => js.Any): Self = StObject.set(x, "unfocusMenu", js.Any.fromFunction0(value))
     
     @scala.inline
     def setUnfocusMenuUndefined: Self = StObject.set(x, "unfocusMenu", js.undefined)

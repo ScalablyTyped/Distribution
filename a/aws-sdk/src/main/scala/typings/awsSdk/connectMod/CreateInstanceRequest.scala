@@ -2,41 +2,39 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceRequest extends StObject {
   
   /**
     * The idempotency token.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.connectMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.connectMod.ClientToken] = js.undefined
   
   /**
     * The identifier for the directory.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.connectMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.connectMod.DirectoryId] = js.undefined
   
   /**
     * The type of identity management for your Amazon Connect users.
     */
-  var IdentityManagementType: DirectoryType = js.native
+  var IdentityManagementType: DirectoryType
   
   /**
     * Whether your contact center handles incoming contacts.
     */
-  var InboundCallsEnabled: typings.awsSdk.connectMod.InboundCallsEnabled = js.native
+  var InboundCallsEnabled: typings.awsSdk.connectMod.InboundCallsEnabled
   
   /**
     * The name for your instance.
     */
-  var InstanceAlias: js.UndefOr[DirectoryAlias] = js.native
+  var InstanceAlias: js.UndefOr[DirectoryAlias] = js.undefined
   
   /**
     * Whether your contact center allows outbound calls.
     */
-  var OutboundCallsEnabled: typings.awsSdk.connectMod.OutboundCallsEnabled = js.native
+  var OutboundCallsEnabled: typings.awsSdk.connectMod.OutboundCallsEnabled
 }
 object CreateInstanceRequest {
   

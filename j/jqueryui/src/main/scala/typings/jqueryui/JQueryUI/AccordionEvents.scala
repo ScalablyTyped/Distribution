@@ -3,17 +3,15 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccordionEvents extends StObject {
   
-  var activate: js.UndefOr[AccordionEvent] = js.native
+  var activate: js.UndefOr[AccordionEvent] = js.undefined
   
-  var beforeActivate: js.UndefOr[AccordionEvent] = js.native
+  var beforeActivate: js.UndefOr[AccordionEvent] = js.undefined
   
-  var create: js.UndefOr[AccordionEvent] = js.native
+  var create: js.UndefOr[AccordionEvent] = js.undefined
 }
 object AccordionEvents {
   

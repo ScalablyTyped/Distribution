@@ -2,53 +2,51 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultWorkflowOperations extends StObject {
   
-  def AddWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin = js.native
+  def AddWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
   
-  def GetStateTransitionSignatureSettings(FromState: Double, ToState: Double): ISignatureSettings = js.native
+  def GetStateTransitionSignatureSettings(FromState: Double, ToState: Double): ISignatureSettings
   
-  def GetStateTransitionSignatureSettingsByID(StateTransitionID: Double): ISignatureSettings = js.native
+  def GetStateTransitionSignatureSettingsByID(StateTransitionID: Double): ISignatureSettings
   
-  def GetWorkflowAdmin(WorkflowID: Double): IWorkflowAdmin = js.native
+  def GetWorkflowAdmin(WorkflowID: Double): IWorkflowAdmin
   
-  def GetWorkflowForClient(WorkflowID: Double, UpdateFromServer: Boolean): IWorkflow = js.native
+  def GetWorkflowForClient(WorkflowID: Double, UpdateFromServer: Boolean): IWorkflow
   
-  def GetWorkflowIDByAlias(Alias: String): Double = js.native
+  def GetWorkflowIDByAlias(Alias: String): Double
   
-  def GetWorkflowIDByGUID(WorkflowGUID: String): Double = js.native
+  def GetWorkflowIDByGUID(WorkflowGUID: String): Double
   
-  def GetWorkflowStateIDByAlias(Alias: String): Double = js.native
+  def GetWorkflowStateIDByAlias(Alias: String): Double
   
-  def GetWorkflowStateIDByGUID(StateGUID: String): Double = js.native
+  def GetWorkflowStateIDByGUID(StateGUID: String): Double
   
-  def GetWorkflowStateTransitionIDByAlias(Alias: String): Double = js.native
+  def GetWorkflowStateTransitionIDByAlias(Alias: String): Double
   
-  def GetWorkflowStateTransitionIDByGUID(StateTransitionGUID: String): Double = js.native
+  def GetWorkflowStateTransitionIDByGUID(StateTransitionGUID: String): Double
   
-  def GetWorkflowStateTransitions(Workflow: Double, CurrentState: ITypedValue): IStateTransitionsForClient = js.native
+  def GetWorkflowStateTransitions(Workflow: Double, CurrentState: ITypedValue): IStateTransitionsForClient
   
-  def GetWorkflowStateTransitionsAsJSON(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): String = js.native
+  def GetWorkflowStateTransitionsAsJSON(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): String
   
-  def GetWorkflowStateTransitionsEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStateTransitionsForClient = js.native
+  def GetWorkflowStateTransitionsEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStateTransitionsForClient
   
-  def GetWorkflowStates(Workflow: Double, CurrentState: ITypedValue): IStates = js.native
+  def GetWorkflowStates(Workflow: Double, CurrentState: ITypedValue): IStates
   
-  def GetWorkflowStatesEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStates = js.native
+  def GetWorkflowStatesEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStates
   
-  def GetWorkflowsAdmin(): IWorkflowsAdmin = js.native
+  def GetWorkflowsAdmin(): IWorkflowsAdmin
   
-  def GetWorkflowsAsValueListItems(UpdateFromServer: Boolean): IValueListItems = js.native
+  def GetWorkflowsAsValueListItems(UpdateFromServer: Boolean): IValueListItems
   
-  def GetWorkflowsForClient(UpdateFromServer: Boolean): IWorkflows = js.native
+  def GetWorkflowsForClient(UpdateFromServer: Boolean): IWorkflows
   
-  def RemoveWorkflowAdmin(WorkflowID: Double): Unit = js.native
+  def RemoveWorkflowAdmin(WorkflowID: Double): Unit
   
-  def UpdateWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin = js.native
+  def UpdateWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
 }
 object IVaultWorkflowOperations {
   

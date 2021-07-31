@@ -3,23 +3,24 @@ package typings.ink
 import typings.ink.domMod.DOMElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererMod {
   
-  @JSImport("ink/build/renderer", JSImport.Default)
+  @JSImport("ink/build/renderer", JSImport.Namespace)
   @js.native
-  def default(node: DOMElement, terminalWidth: Double): Result = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(node: DOMElement, terminalWidth: Double): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], terminalWidth.asInstanceOf[js.Any])).asInstanceOf[Result]
+  
   trait Result extends StObject {
     
-    var output: String = js.native
+    var output: String
     
-    var outputHeight: Double = js.native
+    var outputHeight: Double
     
-    var staticOutput: String = js.native
+    var staticOutput: String
   }
   object Result {
     

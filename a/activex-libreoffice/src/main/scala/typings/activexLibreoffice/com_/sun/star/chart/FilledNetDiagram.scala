@@ -12,16 +12,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies filled net diagrams.
   * @since OOo 3.2  Net diagrams are also known as radar diagrams.
   */
-@js.native
 trait FilledNetDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with ChartAxisXSupplier
      with ChartAxisYSupplier
      with StackableDiagram

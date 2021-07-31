@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,26 +16,26 @@ trait ParseConfigHost extends StObject {
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.UndefOr[scala.Nothing],
+    excludes: js.Array[java.lang.String],
     includes: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.UndefOr[scala.Nothing],
+    excludes: js.Array[java.lang.String],
     includes: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.Array[java.lang.String],
+    excludes: Unit,
     includes: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.Array[java.lang.String],
+    excludes: Unit,
     includes: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native

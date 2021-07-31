@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invite extends StObject {
   
   /**
     * The email address to which the invite is sent.
     */
-  var EmailAddress: js.UndefOr[typings.awsSdk.chimeMod.EmailAddress] = js.native
+  var EmailAddress: js.UndefOr[typings.awsSdk.chimeMod.EmailAddress] = js.undefined
   
   /**
     * The status of the invite email.
     */
-  var EmailStatus: js.UndefOr[typings.awsSdk.chimeMod.EmailStatus] = js.native
+  var EmailStatus: js.UndefOr[typings.awsSdk.chimeMod.EmailStatus] = js.undefined
   
   /**
     * The invite ID.
     */
-  var InviteId: js.UndefOr[String] = js.native
+  var InviteId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the invite.
     */
-  var Status: js.UndefOr[InviteStatus] = js.native
+  var Status: js.UndefOr[InviteStatus] = js.undefined
 }
 object Invite {
   

@@ -3,44 +3,42 @@ package typings.stripe.mod.paymentIntents
 import typings.stripe.mod.IMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used in checkout session creation
   */
-@js.native
 trait IPaymentIntentSessionSubset extends StObject {
   
   /**
     * The amount of the application fee (if any) that will be applied to the payment and transferred to the application owner’s Stripe account. To use an application fee, the request must be made on behalf of another account, using the `Stripe-Account` header or an OAuth key.
     */
-  var application_fee_amount: js.UndefOr[Double] = js.native
+  var application_fee_amount: js.UndefOr[Double] = js.undefined
   
   /**
     * Capture method of this PaymentIntent, one of automatic or manual.
     */
-  var capture_method: js.UndefOr[PaymentIntentDataCaptureMethodOptions] = js.native
+  var capture_method: js.UndefOr[PaymentIntentDataCaptureMethodOptions] = js.undefined
   
   /**
     * An arbitrary string attached to the object. Often useful for displaying to users. This can be unset by updating the value to null and then saving.
     */
-  var description: js.UndefOr[String | Null] = js.native
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
     */
-  var metadata: js.UndefOr[IMetadata] = js.native
+  var metadata: js.UndefOr[IMetadata] = js.undefined
   
   /**
     * The account (if any) for which the funds of the PaymentIntent are intended. Used with connected accounts.
     */
-  var on_behalf_of: js.UndefOr[String] = js.native
+  var on_behalf_of: js.UndefOr[String] = js.undefined
   
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
-  var receipt_email: js.UndefOr[String] = js.native
+  var receipt_email: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that you intend to make future payments with this PaymentIntent’s payment method.
@@ -48,17 +46,17 @@ trait IPaymentIntentSessionSubset extends StObject {
     * Use on_session if you intend to only reuse the payment method when your customer is present in your checkout flow. Use off_session if your customer may or may not be in your checkout flow. See Saving card details after a payment to learn more.
     * Stripe uses setup_future_usage to dynamically optimize your payment flow and comply with regional legislation and network rules. For example, if your customer is impacted by SCA, using off_session will ensure that they are authenticated while processing this PaymentIntent. You will then be able to collect off-session payments for this customer.
     */
-  var setup_future_usage: js.UndefOr[PaymentIntendDataFutureUsageOptions] = js.native
+  var setup_future_usage: js.UndefOr[PaymentIntendDataFutureUsageOptions] = js.undefined
   
   /**
     * Shipping information for this payment.
     */
-  var shipping: js.UndefOr[IPaymentIntentDataShipping] = js.native
+  var shipping: js.UndefOr[IPaymentIntentDataShipping] = js.undefined
   
   /**
     * The data with which to automatically create a Transfer when the payment is finalized. Used with connected accounts.
     */
-  var transfer_data: js.UndefOr[IPaymentIntentDataTransferDataOptions] = js.native
+  var transfer_data: js.UndefOr[IPaymentIntentDataTransferDataOptions] = js.undefined
 }
 object IPaymentIntentSessionSubset {
   

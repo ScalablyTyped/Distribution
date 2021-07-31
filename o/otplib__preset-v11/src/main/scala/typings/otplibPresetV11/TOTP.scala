@@ -3,34 +3,34 @@ package typings.otplibPresetV11
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TOTP extends HOTP {
+trait TOTP
+  extends StObject
+     with HOTP {
   
-  var TOTP: Instantiable0[typings.otplibPresetV11.TOTP] = js.native
+  var TOTP: Instantiable0[typings.otplibPresetV11.TOTP]
   
-  def check(token: String, secret: String): Boolean = js.native
+  def check(token: String, secret: String): Boolean
   
-  def checkDelta(token: String, secret: String): Double | Null = js.native
+  def checkDelta(token: String, secret: String): Double | Null
   
   @JSName("defaultOptions")
-  var defaultOptions_TOTP: TotpOptionsInterface = js.native
+  var defaultOptions_TOTP: TotpOptionsInterface
   
-  def generate(secret: String): String = js.native
+  def generate(secret: String): String
   
   @JSName("optionsAll")
-  var optionsAll_TOTP: TotpOptionsInterface = js.native
+  var optionsAll_TOTP: TotpOptionsInterface
   
   @JSName("options")
-  var options_TOTP: TotpOptionsInterface = js.native
+  var options_TOTP: TotpOptionsInterface
   
-  def timeRemaining(): Double = js.native
+  def timeRemaining(): Double
   
-  def timeUsed(): Double = js.native
+  def timeUsed(): Double
   
-  def verify(opts: TotpVerifyOptionsInterface): Boolean = js.native
+  def verify(opts: TotpVerifyOptionsInterface): Boolean
 }
 object TOTP {
   

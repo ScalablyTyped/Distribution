@@ -12,53 +12,51 @@ import typings.layuiSrc.layuiSrcStrings.space
 import typings.layuiSrc.layuiSrcStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumnOption extends StObject {
   
-  var LAY_CHECKED: js.UndefOr[Boolean] = js.native
+  var LAY_CHECKED: js.UndefOr[Boolean] = js.undefined
   
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
-  var checkbox: js.UndefOr[Boolean] = js.native
+  var checkbox: js.UndefOr[Boolean] = js.undefined
   
-  var colspan: js.UndefOr[Double] = js.native
+  var colspan: js.UndefOr[Double] = js.undefined
   
-  var edit: js.UndefOr[text | String] = js.native
+  var edit: js.UndefOr[text | String] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var fixed: js.UndefOr[left | right] = js.native
+  var fixed: js.UndefOr[left | right] = js.undefined
   
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var rowspan: js.UndefOr[Double] = js.native
+  var rowspan: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var templet: js.UndefOr[String | (js.Function1[/* d */ js.Any, String])] = js.native
+  var templet: js.UndefOr[String | (js.Function1[/* d */ js.Any, String])] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var toolbar: js.UndefOr[String] = js.native
+  var toolbar: js.UndefOr[String] = js.undefined
   
-  var totalRow: js.UndefOr[Boolean | Experience] = js.native
+  var totalRow: js.UndefOr[Boolean | Experience] = js.undefined
   
-  var totalRowText: js.UndefOr[String] = js.native
+  var totalRowText: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[normal | checkbox | radio | space | numbers] = js.native
+  var `type`: js.UndefOr[normal | checkbox | radio | space | numbers] = js.undefined
   
-  var unresize: js.UndefOr[Boolean] = js.native
+  var unresize: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object TableColumnOption {
   

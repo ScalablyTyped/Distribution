@@ -5,19 +5,17 @@ import typings.devextreme.mod.DevExpress.viz.chartSeriesObject
 import typings.devextreme.mod.DevExpress.viz.dxChart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `22` extends StObject {
   
-  var component: js.UndefOr[dxChart] = js.native
+  var component: js.UndefOr[dxChart] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[chartSeriesObject] = js.native
+  var target: js.UndefOr[chartSeriesObject] = js.undefined
 }
 object `22` {
   

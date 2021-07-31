@@ -3,37 +3,35 @@ package typings.web3Core.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionReceipt extends StObject {
   
-  var blockHash: String = js.native
+  var blockHash: String
   
-  var blockNumber: Double = js.native
+  var blockNumber: Double
   
-  var contractAddress: js.UndefOr[String] = js.native
+  var contractAddress: js.UndefOr[String] = js.undefined
   
-  var cumulativeGasUsed: Double = js.native
+  var cumulativeGasUsed: Double
   
-  var events: js.UndefOr[StringDictionary[EventLog]] = js.native
+  var events: js.UndefOr[StringDictionary[EventLog]] = js.undefined
   
-  var from: String = js.native
+  var from: String
   
-  var gasUsed: Double = js.native
+  var gasUsed: Double
   
-  var logs: js.Array[Log] = js.native
+  var logs: js.Array[Log]
   
-  var logsBloom: String = js.native
+  var logsBloom: String
   
-  var status: Boolean = js.native
+  var status: Boolean
   
-  var to: String = js.native
+  var to: String
   
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var transactionIndex: Double = js.native
+  var transactionIndex: Double
 }
 object TransactionReceipt {
   

@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathRad extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Deg: OMath = js.native
+  val Deg: OMath
   
-  val E: OMath = js.native
+  val E: OMath
   
-  var HideDeg: Boolean = js.native
+  var HideDeg: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.OMathRad_typekey")
-  var WordDotOMathRad_typekey: OMathRad = js.native
+  var WordDotOMathRad_typekey: OMathRad
 }
 object OMathRad {
   

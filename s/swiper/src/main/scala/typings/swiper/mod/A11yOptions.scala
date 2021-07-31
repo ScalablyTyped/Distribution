@@ -2,10 +2,8 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A11yOptions extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait A11yOptions extends StObject {
     *
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Message for screen readers for previous button when swiper is on first slide
     *
     * @default 'This is the first slide'
     */
-  var firstSlideMessage: js.UndefOr[String] = js.native
+  var firstSlideMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Message for screen readers for previous button when swiper is on last slide
     *
     * @default 'This is the last slide'
     */
-  var lastSlideMessage: js.UndefOr[String] = js.native
+  var lastSlideMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Message for screen readers for next button
     *
     * @default 'Next slide'
     */
-  var nextSlideMessage: js.UndefOr[String] = js.native
+  var nextSlideMessage: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class name of a11 notification
     *
     * @default 'swiper-notification'
     */
-  var notificationClass: js.UndefOr[String] = js.native
+  var notificationClass: js.UndefOr[String] = js.undefined
   
   /**
     * Message for screen readers for single pagination bullet
     *
     * @default 'Go to slide {{index}}'
     */
-  var paginationBulletMessage: js.UndefOr[String] = js.native
+  var paginationBulletMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Message for screen readers for previous button
     *
     * @default 'Previous slide'
     */
-  var prevSlideMessage: js.UndefOr[String] = js.native
+  var prevSlideMessage: js.UndefOr[String] = js.undefined
 }
 object A11yOptions {
   

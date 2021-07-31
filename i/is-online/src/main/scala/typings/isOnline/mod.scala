@@ -4,7 +4,6 @@ import typings.isOnline.isOnlineNumbers.`4`
 import typings.isOnline.isOnlineNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,27 +24,28 @@ object mod {
   })();
   ```
   */
-  @JSImport("is-online", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Boolean] = js.native
-  @JSImport("is-online", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Boolean] = js.native
+  @scala.inline
+  def apply(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(options: Options): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
+  @JSImport("is-online", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Internet Protocol version to use. This is an advanced option that is usually not necessary to be set, but it can prove useful to specifically assert IPv6 connectivity.
     		@default 4
     		*/
-    val ipVersion: js.UndefOr[`4` | `6`] = js.native
+    val ipVersion: js.UndefOr[`4` | `6`] = js.undefined
     
     /**
     		Milliseconds to wait for a server to respond.
     		@default 5000
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

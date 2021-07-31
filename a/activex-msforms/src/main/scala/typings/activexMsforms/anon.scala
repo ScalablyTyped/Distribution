@@ -4,21 +4,19 @@ import typings.activexMsforms.MSForms.ReturnBoolean
 import typings.activexMsforms.MSForms.ReturnInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Button extends StObject {
     
-    val Button: Double = js.native
+    val Button: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object Button {
     
@@ -45,10 +43,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Cancel extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
   }
   object Cancel {
     
@@ -66,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CancelIndex extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Index: Double = js.native
+    val Index: Double
   }
   object CancelIndex {
     
@@ -92,10 +88,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Control extends StObject {
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
   }
   object Control {
     
@@ -113,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
     
-    val Index: Double = js.native
+    val Index: Double
   }
   object Index {
     
@@ -139,10 +133,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexNumber extends StObject {
     
-    val Index: Double = js.native
+    val Index: Double
   }
   object IndexNumber {
     
@@ -160,12 +153,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexPercent extends StObject {
     
-    val Index: Double = js.native
+    val Index: Double
     
-    var Percent: Double = js.native
+    var Percent: Double
   }
   object IndexPercent {
     
@@ -186,10 +178,9 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyAscii extends StObject {
     
-    val KeyAscii: ReturnInteger = js.native
+    val KeyAscii: ReturnInteger
   }
   object KeyAscii {
     
@@ -207,12 +198,11 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyCode extends StObject {
     
-    val KeyCode: ReturnInteger = js.native
+    val KeyCode: ReturnInteger
     
-    val Shift: Double = js.native
+    val Shift: Double
   }
   object KeyCode {
     
@@ -233,10 +223,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Percent extends StObject {
     
-    var Percent: Double = js.native
+    var Percent: Double
   }
   object Percent {
     
@@ -254,18 +243,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Shift extends StObject {
     
-    val Button: Double = js.native
+    val Button: Double
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object Shift {
     

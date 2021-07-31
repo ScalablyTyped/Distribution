@@ -2,25 +2,23 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response with the list of the versions for the specified script project.
   */
-@js.native
 trait SchemaListVersionsResponse extends StObject {
   
   /**
     * The token use to fetch the next page of records. if not exist in the
     * response, that means no more versions to list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of versions.
     */
-  var versions: js.UndefOr[js.Array[SchemaVersion]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaVersion]] = js.undefined
 }
 object SchemaListVersionsResponse {
   

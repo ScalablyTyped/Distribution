@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericFieldLayout width extend GenericObjectLayout
   */
-@js.native
-trait IGenericFieldLayout extends IGenericBaseLayout {
+trait IGenericFieldLayout
+  extends StObject
+     with IGenericBaseLayout {
   
   /**
     * FieldListObject...
     */
-  var qFieldListObject: IFieldList = js.native
+  var qFieldListObject: IFieldList
 }
 object IGenericFieldLayout {
   

@@ -2,40 +2,39 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectExtension
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The deflection angle used for the extension. A value of 0 indicates no deflection.
     */
-  var deflection: js.UndefOr[Double] = js.native
+  var deflection: js.UndefOr[Double] = js.undefined
   
   /**
     * The length of the extension that is dynamically created.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The origin of the extension to add to the line. The beginning and end of the line is defined by the direction the line was digitized.
     */
   var origin: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectExtensionOrigin * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectExtension: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension = js.native
+  var type_CIMGeometricEffectExtension: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension
 }
 object CIMGeometricEffectExtension {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): CIMGeometricEffectExtension = {
+  def apply(): CIMGeometricEffectExtension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectExtension")
     __obj.asInstanceOf[CIMGeometricEffectExtension]
   }
   

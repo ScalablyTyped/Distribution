@@ -29,7 +29,6 @@ import typings.chromeApps.chromeAppsStrings.unmanaged
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networking {
@@ -46,6 +45,10 @@ object networking {
     * Use the *networking.config* API to authenticate to captive portals.
     */
   object config {
+    
+    @JSGlobal("chrome.networking.config")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Argument to finishAuthentication indicating the result of the captive portal authentication attempt.
@@ -107,8 +110,7 @@ object networking {
       * @param result The result of the authentication attempt.
       * @param [callback] Called back when this operation is finished.
       */
-    @JSGlobal("chrome.networking.config.finishAuthentication")
-    @js.native
+    @scala.inline
     def finishAuthentication(
       GUID: String,
       result: ToStringLiteral[
@@ -119,9 +121,8 @@ object networking {
             unhandled_ | succeeded_ | rejected_ | failed_
           ]
         ]
-    ): Unit = js.native
-    @JSGlobal("chrome.networking.config.finishAuthentication")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("finishAuthentication")(GUID.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def finishAuthentication(
       GUID: String,
       result: ToStringLiteral[
@@ -133,7 +134,7 @@ object networking {
           ]
         ],
       callback: js.Function0[Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("finishAuthentication")(GUID.asInstanceOf[js.Any], result.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * This event fires everytime a captive portal is detected on a network
@@ -157,9 +158,8 @@ object networking {
       * @param networks Network filters to set. Array of objects with either HexSSID or SSID set.
       * @param callback Called back when this operation is finished.
       */
-    @JSGlobal("chrome.networking.config.setNetworkFilter")
-    @js.native
-    def setNetworkFilter(networks: js.Array[NetworkInfoFilterHexSSID | NetworkInfoFilterSSID], callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def setNetworkFilter(networks: js.Array[NetworkInfoFilterHexSSID | NetworkInfoFilterSSID], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkFilter")(networks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   //////////////////////////////////////
@@ -181,6 +181,10 @@ object networking {
     */
   object onc {
     
+    @JSGlobal("chrome.networking.onc")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new network configuration from properties.
       * If a matching configured network already exists, this will fail.
@@ -191,30 +195,26 @@ object networking {
       * @param properties The properties to configure the new network with.
       * @param [callback] Called with the GUID for the new network configuration once the network has been created.
       */
-    @JSGlobal("chrome.networking.onc.createNetwork")
-    @js.native
-    def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter]): Unit = js.native
-    @JSGlobal("chrome.networking.onc.createNetwork")
-    @js.native
-    def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetwork")(shared.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetwork")(shared.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Disables any devices matching the specified network type.
       * Note, the type might represent multiple network types (e.g. 'Wireless').
       * @param networkType The type of network to disable.
       */
-    @JSGlobal("chrome.networking.onc.disableNetworkType")
-    @js.native
-    def disableNetworkType(networkType: NetworkType): Unit = js.native
+    @scala.inline
+    def disableNetworkType(networkType: NetworkType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableNetworkType")(networkType.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Enables any devices matching the specified network type.
       * Note, the type might represent multiple network types (e.g. 'Wireless').
       * @param networkType The type of network to enable.
       */
-    @JSGlobal("chrome.networking.onc.enableNetworkType")
-    @js.native
-    def enableNetworkType(networkType: NetworkType): Unit = js.native
+    @scala.inline
+    def enableNetworkType(networkType: NetworkType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetworkType")(networkType.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Forgets a network configuration by clearing any configured properties for the network with GUID networkGuid.
@@ -224,37 +224,32 @@ object networking {
       * @param networkGuid The GUID of the network to forget.
       * @param [callback] Called when the operation has completed.
       */
-    @JSGlobal("chrome.networking.onc.forgetNetwork")
-    @js.native
-    def forgetNetwork(networkGuid: String): Unit = js.native
-    @JSGlobal("chrome.networking.onc.forgetNetwork")
-    @js.native
-    def forgetNetwork(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def forgetNetwork(networkGuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forgetNetwork")(networkGuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def forgetNetwork(networkGuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forgetNetwork")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns captive portal status for the network matching 'networkGuid'.
       * @param networkGuid The GUID of the network to get captive portal status for.
       * @param callback A callback function that returns the results of the query for network captive portal status.
       */
-    @JSGlobal("chrome.networking.onc.getCaptivePortalStatus")
-    @js.native
-    def getCaptivePortalStatus(networkGuid: String, callback: js.Function1[/* result */ CaptivePortalStatus, Unit]): Unit = js.native
+    @scala.inline
+    def getCaptivePortalStatus(networkGuid: String, callback: js.Function1[/* result */ CaptivePortalStatus, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCaptivePortalStatus")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns states of available networking devices.
       * @param callback Called with a list of devices and their state.
       */
-    @JSGlobal("chrome.networking.onc.getDeviceStates")
-    @js.native
-    def getDeviceStates(callback: js.Function1[/* result */ js.Array[DeviceStates], Unit]): Unit = js.native
+    @scala.inline
+    def getDeviceStates(callback: js.Function1[/* result */ js.Array[DeviceStates], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceStates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets the global policy properties.
       * These properties are not expected to change during a session.
       */
-    @JSGlobal("chrome.networking.onc.getGlobalPolicy")
-    @js.native
-    def getGlobalPolicy(callback: js.Function1[/* result */ GlobalPolicy, Unit]): Unit = js.native
+    @scala.inline
+    def getGlobalPolicy(callback: js.Function1[/* result */ GlobalPolicy, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalPolicy")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets the merged properties of the network with id networkGuid from the sources:
@@ -262,9 +257,8 @@ object networking {
       * @param networkGuid The GUID of the network to get properties for.
       * @param callback Called with the managed network properties when received.
       */
-    @JSGlobal("chrome.networking.onc.getManagedProperties")
-    @js.native
-    def getManagedProperties(networkGuid: String, callback: js.Function1[/* result */ ManagedProperties, Unit]): Unit = js.native
+    @scala.inline
+    def getManagedProperties(networkGuid: String, callback: js.Function1[/* result */ ManagedProperties, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getManagedProperties")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a list of network objects with the same properties provided by *getState*.
@@ -272,9 +266,8 @@ object networking {
       * Networks are ordered by the system based on their priority, with connected or connecting networks listed first.
       * @param callback Called with a interface of networks and their state properties when received.
       */
-    @JSGlobal("chrome.networking.onc.getNetworks")
-    @js.native
-    def getNetworks(filter: Filter, callback: js.Function1[/* result */ js.Array[NetworkStateProperties], Unit]): Unit = js.native
+    @scala.inline
+    def getNetworks(filter: Filter, callback: js.Function1[/* result */ js.Array[NetworkStateProperties], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworks")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets all the properties of the network with id *networkGuid*.
@@ -282,9 +275,8 @@ object networking {
       * @param networkGuid The GUID of the network to get properties for.
       * @param callback Called with the network properties when received.
       */
-    @JSGlobal("chrome.networking.onc.getProperties")
-    @js.native
-    def getProperties(networkGuid: String, callback: js.Function1[/* result */ NetworkProperties[unmanaged, full], Unit]): Unit = js.native
+    @scala.inline
+    def getProperties(networkGuid: String, callback: js.Function1[/* result */ NetworkProperties[unmanaged, full], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProperties")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the cached read-only properties of the network with id *networkGuid*.
@@ -298,9 +290,8 @@ object networking {
       * @param networkGuid The GUID of the network to get properties for.
       * @param callback Called immediately with the network state properties.
       */
-    @JSGlobal("chrome.networking.onc.getState")
-    @js.native
-    def getState(networkGuid: String, callback: js.Function1[/* result */ NetworkStateProperties, Unit]): Unit = js.native
+    @scala.inline
+    def getState(networkGuid: String, callback: js.Function1[/* result */ NetworkStateProperties, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Fired when the list of devices has changed or any device state properties have changed.
@@ -340,9 +331,8 @@ object networking {
       * This is only a request: the network subsystem can choose to ignore it.
       * If the list is updated, then the *onNetworkListChanged* event will be fired.
       */
-    @JSGlobal("chrome.networking.onc.requestNetworkScan")
-    @js.native
-    def requestNetworkScan(): Unit = js.native
+    @scala.inline
+    def requestNetworkScan(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestNetworkScan")().asInstanceOf[Unit]
     /**
       * Requests that the networking subsystem scan for new networks and update the list returned by *getVisibleNetworks*.
       * This is only a request: the network subsystem can choose to ignore it.
@@ -350,9 +340,8 @@ object networking {
       * @param networkType If provided, requests a scan specific to the type. For Cellular a mobile network scan will be requested if supported.
       * @since Chrome 63.
       */
-    @JSGlobal("chrome.networking.onc.requestNetworkScan")
-    @js.native
-    def requestNetworkScan(networkType: NetworkType): Unit = js.native
+    @scala.inline
+    def requestNetworkScan(networkType: NetworkType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestNetworkScan")(networkType.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sets the properties of the network with id *networkGuid*.
@@ -363,12 +352,10 @@ object networking {
       * @param properties The properties to set.
       * @param [callback] Called when the operation has completed.
       */
-    @JSGlobal("chrome.networking.onc.setProperties")
-    @js.native
-    def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter]): Unit = js.native
-    @JSGlobal("chrome.networking.onc.setProperties")
-    @js.native
-    def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperties")(networkGuid.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperties")(networkGuid.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Starts a connection to the network with networkGuid.
@@ -377,24 +364,20 @@ object networking {
       *                   If a matching configured network already exists, this will fail.
       *                   Otherwise returns the GUID of the new network.
       */
-    @JSGlobal("chrome.networking.onc.startConnect")
-    @js.native
-    def startConnect(networkGuid: String): Unit = js.native
-    @JSGlobal("chrome.networking.onc.startConnect")
-    @js.native
-    def startConnect(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def startConnect(networkGuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startConnect")(networkGuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def startConnect(networkGuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startConnect")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Starts a disconnect from the network with networkGuid.
       * @param networkGuid The GUID of the network to connect to.
       * @param [callback] Called when the disconnect request has been sent. See note for *startConnect*.
       */
-    @JSGlobal("chrome.networking.onc.startDisconnect")
-    @js.native
-    def startDisconnect(networkGuid: String): Unit = js.native
-    @JSGlobal("chrome.networking.onc.startDisconnect")
-    @js.native
-    def startDisconnect(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def startDisconnect(networkGuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDisconnect")(networkGuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def startDisconnect(networkGuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDisconnect")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Partial classes for internal use

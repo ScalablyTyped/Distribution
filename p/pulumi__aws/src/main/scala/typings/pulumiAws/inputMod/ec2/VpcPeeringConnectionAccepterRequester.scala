@@ -3,29 +3,27 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnectionAccepterRequester extends StObject {
   
   /**
     * Indicates whether a local ClassicLink connection can communicate
     * with the peer VPC over the VPC Peering Connection.
     */
-  var allowClassicLinkToRemoteVpc: js.UndefOr[Input[Boolean]] = js.native
+  var allowClassicLinkToRemoteVpc: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Indicates whether a local VPC can resolve public DNS hostnames to
     * private IP addresses when queried from instances in a peer VPC.
     */
-  var allowRemoteVpcDnsResolution: js.UndefOr[Input[Boolean]] = js.native
+  var allowRemoteVpcDnsResolution: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Indicates whether a local VPC can communicate with a ClassicLink
     * connection in the peer VPC over the VPC Peering Connection.
     */
-  var allowVpcToRemoteClassicLink: js.UndefOr[Input[Boolean]] = js.native
+  var allowVpcToRemoteClassicLink: js.UndefOr[Input[Boolean]] = js.undefined
 }
 object VpcPeeringConnectionAccepterRequester {
   

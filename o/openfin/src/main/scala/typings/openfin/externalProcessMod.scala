@@ -2,23 +2,21 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalProcessMod {
   
-  @js.native
   trait CertificationInfo extends StObject {
     
-    var publickey: js.UndefOr[String] = js.native
+    var publickey: js.UndefOr[String] = js.undefined
     
-    var serial: js.UndefOr[String] = js.native
+    var serial: js.UndefOr[String] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var thumbprint: js.UndefOr[String] = js.native
+    var thumbprint: js.UndefOr[String] = js.undefined
     
-    var trusted: js.UndefOr[Boolean] = js.native
+    var trusted: js.UndefOr[Boolean] = js.undefined
   }
   object CertificationInfo {
     
@@ -63,14 +61,13 @@ object externalProcessMod {
     }
   }
   
-  @js.native
   trait ExitCode extends StObject {
     
-    var exitCode: Double = js.native
+    var exitCode: Double
     
-    var topic: String = js.native
+    var topic: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object ExitCode {
     
@@ -94,12 +91,11 @@ object externalProcessMod {
     }
   }
   
-  @js.native
   trait ExternalConnection extends StObject {
     
-    var token: String = js.native
+    var token: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object ExternalConnection {
     
@@ -120,12 +116,11 @@ object externalProcessMod {
     }
   }
   
-  @js.native
   trait ExternalProcessInfo extends StObject {
     
-    var listener: js.UndefOr[LaunchExternalProcessListener] = js.native
+    var listener: js.UndefOr[LaunchExternalProcessListener] = js.undefined
     
-    var pid: Double = js.native
+    var pid: Double
   }
   object ExternalProcessInfo {
     
@@ -149,22 +144,21 @@ object externalProcessMod {
     }
   }
   
-  @js.native
   trait ExternalProcessRequestType extends StObject {
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var arguments: js.UndefOr[String] = js.native
+    var arguments: js.UndefOr[String] = js.undefined
     
-    var certificate: js.UndefOr[CertificationInfo] = js.native
+    var certificate: js.UndefOr[CertificationInfo] = js.undefined
     
-    var lifetime: js.UndefOr[String] = js.native
+    var lifetime: js.UndefOr[String] = js.undefined
     
-    var listener: js.UndefOr[LaunchExternalProcessListener] = js.native
+    var listener: js.UndefOr[LaunchExternalProcessListener] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object ExternalProcessRequestType {
     
@@ -223,12 +217,11 @@ object externalProcessMod {
   
   type LaunchExternalProcessListener = js.Function1[/* code */ ExitCode, Unit]
   
-  @js.native
   trait ServiceConfiguration extends StObject {
     
-    var config: js.Object = js.native
+    var config: js.Object
     
-    var name: String = js.native
+    var name: String
   }
   object ServiceConfiguration {
     
@@ -249,14 +242,13 @@ object externalProcessMod {
     }
   }
   
-  @js.native
   trait TerminateExternalRequestType extends StObject {
     
-    var killTree: Boolean = js.native
+    var killTree: Boolean
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object TerminateExternalRequestType {
     

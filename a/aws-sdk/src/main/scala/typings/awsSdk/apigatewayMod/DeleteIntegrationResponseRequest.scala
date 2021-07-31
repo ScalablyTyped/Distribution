@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIntegrationResponseRequest extends StObject {
   
   /**
     * [Required] Specifies a delete integration response request's HTTP method.
     */
-  var httpMethod: String = js.native
+  var httpMethod: String
   
   /**
     * [Required] Specifies a delete integration response request's resource identifier.
     */
-  var resourceId: String = js.native
+  var resourceId: String
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * [Required] Specifies a delete integration response request's status code.
     */
-  var statusCode: StatusCode = js.native
+  var statusCode: StatusCode
 }
 object DeleteIntegrationResponseRequest {
   

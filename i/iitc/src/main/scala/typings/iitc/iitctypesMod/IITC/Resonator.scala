@@ -2,17 +2,15 @@ package typings.iitc.iitctypesMod.IITC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resonator extends StObject {
   
-  var energy: Double = js.native
+  var energy: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  var owner: String = js.native
+  var owner: String
 }
 object Resonator {
   

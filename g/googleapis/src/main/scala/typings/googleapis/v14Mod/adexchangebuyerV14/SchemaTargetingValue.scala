@@ -2,36 +2,34 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetingValue extends StObject {
   
   /**
     * The creative size value to exclude/include.
     */
-  var creativeSizeValue: js.UndefOr[SchemaTargetingValueCreativeSize] = js.native
+  var creativeSizeValue: js.UndefOr[SchemaTargetingValueCreativeSize] = js.undefined
   
   /**
     * The daypart targeting to include / exclude. Filled in when the key is
     * GOOG_DAYPART_TARGETING.
     */
-  var dayPartTargetingValue: js.UndefOr[SchemaTargetingValueDayPartTargeting] = js.native
+  var dayPartTargetingValue: js.UndefOr[SchemaTargetingValueDayPartTargeting] = js.undefined
   
-  var demogAgeCriteriaValue: js.UndefOr[SchemaTargetingValueDemogAgeCriteria] = js.native
+  var demogAgeCriteriaValue: js.UndefOr[SchemaTargetingValueDemogAgeCriteria] = js.undefined
   
-  var demogGenderCriteriaValue: js.UndefOr[SchemaTargetingValueDemogGenderCriteria] = js.native
+  var demogGenderCriteriaValue: js.UndefOr[SchemaTargetingValueDemogGenderCriteria] = js.undefined
   
   /**
     * The long value to exclude/include.
     */
-  var longValue: js.UndefOr[String] = js.native
+  var longValue: js.UndefOr[String] = js.undefined
   
   /**
     * The string value to exclude/include.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetingValue {
   

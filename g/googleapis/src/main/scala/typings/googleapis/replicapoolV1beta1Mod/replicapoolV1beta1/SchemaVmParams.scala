@@ -2,38 +2,36 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for creating a Compute Engine Instance resource. Most fields are
   * identical to the corresponding Compute Engine resource.
   */
-@js.native
 trait SchemaVmParams extends StObject {
   
   /**
     * Deprecated. Please use baseInstanceName instead.
     */
-  var baseInstanceName: js.UndefOr[String] = js.native
+  var baseInstanceName: js.UndefOr[String] = js.undefined
   
   /**
     * Enables IP Forwarding, which allows this instance to receive packets
     * destined for a different IP address, and send packets with a different
     * source IP. See IP Forwarding for more information.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.native
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional textual description of the instance.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A list of existing Persistent Disk resources to attach to each replica in
     * the pool. Each disk will be attached in read-only mode to every replica.
     */
-  var disksToAttach: js.UndefOr[js.Array[SchemaExistingDisk]] = js.native
+  var disksToAttach: js.UndefOr[js.Array[SchemaExistingDisk]] = js.undefined
   
   /**
     * A list of Disk resources to create and attach to each Replica in the
@@ -41,37 +39,37 @@ trait SchemaVmParams extends StObject {
     * persistent disk. Note that Replica Pool will create a root persistent
     * disk for each replica.
     */
-  var disksToCreate: js.UndefOr[js.Array[SchemaNewDisk]] = js.native
+  var disksToCreate: js.UndefOr[js.Array[SchemaNewDisk]] = js.undefined
   
   /**
     * The machine type for this instance. The resource name (e.g.
     * n1-standard-1).
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs assigned to this instance.
     */
-  var metadata: js.UndefOr[SchemaMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
     * A list of network interfaces for the instance. Currently only one
     * interface is supported by Google Compute Engine, ONE_TO_ONE_NAT.
     */
-  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.native
+  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.undefined
   
-  var onHostMaintenance: js.UndefOr[String] = js.native
+  var onHostMaintenance: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Service Accounts to enable for this instance.
     */
-  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.native
+  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
   /**
     * A list of tags to apply to the Google Compute Engine instance to identify
     * resources.
     */
-  var tags: js.UndefOr[SchemaTag] = js.native
+  var tags: js.UndefOr[SchemaTag] = js.undefined
 }
 object SchemaVmParams {
   

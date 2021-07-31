@@ -2,26 +2,24 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Printer extends StObject {
   
   /**
     * Prints a bundle of source files as-is, without any emit transformations.
     */
-  def printBundle(bundle: Bundle): java.lang.String = js.native
+  def printBundle(bundle: Bundle): java.lang.String
   
   /**
     * Prints a source file as-is, without any emit transformations.
     */
-  def printFile(sourceFile: SourceFile): java.lang.String = js.native
+  def printFile(sourceFile: SourceFile): java.lang.String
   
   /**
     * Prints a list of nodes using the given format flags
     */
-  def printList[T /* <: Node */](format: ListFormat, list: NodeArray[T], sourceFile: SourceFile): java.lang.String = js.native
+  def printList[T /* <: Node */](format: ListFormat, list: NodeArray[T], sourceFile: SourceFile): java.lang.String
   
   /**
     * Print a node and its subtree as-is, without any emit transformations.
@@ -36,7 +34,7 @@ trait Printer extends StObject {
     * the identifiers of the source file are used when generating unique names to avoid
     * collisions.
     */
-  def printNode(hint: EmitHint, node: Node, sourceFile: SourceFile): java.lang.String = js.native
+  def printNode(hint: EmitHint, node: Node, sourceFile: SourceFile): java.lang.String
 }
 object Printer {
   

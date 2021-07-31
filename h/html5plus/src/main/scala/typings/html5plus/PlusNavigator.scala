@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,7 +59,7 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def createShortcut(): Unit = js.native
-  def createShortcut(options: js.UndefOr[scala.Nothing], successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createShortcut(options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def createShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
   def createShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
@@ -117,7 +116,7 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def hasShortcut(): Unit = js.native
-  def hasShortcut(options: js.UndefOr[scala.Nothing], successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def hasShortcut(options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def hasShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
   def hasShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
@@ -192,9 +191,9 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def setCookie(): Unit = js.native
-  def setCookie(url: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def setCookie(url: String): Unit = js.native
   def setCookie(url: String, value: String): Unit = js.native
+  def setCookie(url: Unit, value: String): Unit = js.native
   
   /**
     * 设置应用是否全屏显示
@@ -244,9 +243,9 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def setUserAgent(): Unit = js.native
-  def setUserAgent(useragent: js.UndefOr[scala.Nothing], checkplus: Boolean): Unit = js.native
   def setUserAgent(useragent: String): Unit = js.native
   def setUserAgent(useragent: String, checkplus: Boolean): Unit = js.native
+  def setUserAgent(useragent: Unit, checkplus: Boolean): Unit = js.native
   
   /**
     * 更新程序启动界面

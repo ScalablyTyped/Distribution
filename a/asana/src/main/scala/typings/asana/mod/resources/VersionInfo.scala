@@ -2,21 +2,19 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionInfo extends StObject {
   
-  var language: String = js.native
+  var language: String
   
-  var language_version: String = js.native
+  var language_version: String
   
-  var os: String = js.native
+  var os: String
   
-  var os_version: String = js.native
+  var os_version: String
   
-  var version: String = js.native
+  var version: String
 }
 object VersionInfo {
   

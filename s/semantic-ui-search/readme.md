@@ -12,7 +12,7 @@ Single component release of search
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18077 |
+| # downloads        | 15649 |
 | # stars            | 0 |
 
 ## Links

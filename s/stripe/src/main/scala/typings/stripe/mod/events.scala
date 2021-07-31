@@ -5,7 +5,6 @@ import typings.stripe.anon.Previousattributes
 import typings.stripe.stripeStrings.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
@@ -612,52 +611,53 @@ object events {
     def transferDotupdated: typings.stripe.stripeStrings.transferDotupdated = "transfer.updated".asInstanceOf[typings.stripe.stripeStrings.transferDotupdated]
   }
   
-  @js.native
-  trait IEvent extends IResourceObject {
+  trait IEvent
+    extends StObject
+       with IResourceObject {
     
     /**
       * The connected account that originated the event.
       * CONNECT ONLY
       */
-    var account: js.UndefOr[String] = js.native
+    var account: js.UndefOr[String] = js.undefined
     
     /**
       * The Stripe API version used to render data.
       * Note: this property is populated for events on or after October 31, 2014.
       */
-    var api_version: String = js.native
+    var api_version: String
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Hash containing data associated with the event.
       */
-    var data: Previousattributes = js.native
+    var data: Previousattributes
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Value is "event"
       */
     @JSName("object")
-    var object_IEvent: event = js.native
+    var object_IEvent: event
     
     /**
       * Number of webhooks yet to be delivered successfully (return a 20x response) to the URLs you’ve specified.
       *
       * positive integer or zero
       */
-    var pending_webhooks: Double = js.native
+    var pending_webhooks: Double
     
     /**
       * Information on the API request that instigated the event.
       */
-    var request: Id = js.native
+    var request: Id
     
     /**
       * Description of the event: e.g. invoice.created, charge.refunded, etc.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object IEvent {
     
@@ -668,13 +668,12 @@ object events {
       data: Previousattributes,
       id: String,
       livemode: Boolean,
-      `object`: event,
       pending_webhooks: Double,
       request: Id,
       `type`: String
     ): IEvent = {
       val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], pending_webhooks = pending_webhooks.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("event")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEvent]
     }
@@ -714,15 +713,16 @@ object events {
     }
   }
   
-  @js.native
-  trait IEventListOptions extends IListOptionsCreated {
+  trait IEventListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * A string containing a specific event name, or group of events using * as a
       * wildcard. The list will be filtered to include only events with a matching
       * event property
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object IEventListOptions {
     

@@ -2,10 +2,8 @@ package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlCreationOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait UrlCreationOptions extends StObject {
     * this.router.navigate(['/results'], { fragment: 'top' });
     * ```
     */
-  var fragment: js.UndefOr[String] = js.native
+  var fragment: js.UndefOr[String] = js.undefined
   
   /**
     * When true, preserves the URL fragment for the next navigation
@@ -26,7 +24,7 @@ trait UrlCreationOptions extends StObject {
     * this.router.navigate(['/view'], { preserveFragment: true });
     * ```
     */
-  var preserveFragment: js.UndefOr[Boolean] = js.native
+  var preserveFragment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets query parameters to the URL.
@@ -36,7 +34,7 @@ trait UrlCreationOptions extends StObject {
     * this.router.navigate(['/results'], { queryParams: { page: 1 } });
     * ```
     */
-  var queryParams: js.UndefOr[Params | Null] = js.native
+  var queryParams: js.UndefOr[Params | Null] = js.undefined
   
   /**
     * How to handle query parameters in the router link for the next navigation.
@@ -60,7 +58,7 @@ trait UrlCreationOptions extends StObject {
     * the new value is used.
     *
     */
-  var queryParamsHandling: js.UndefOr[QueryParamsHandling | Null] = js.native
+  var queryParamsHandling: js.UndefOr[QueryParamsHandling | Null] = js.undefined
   
   /**
     * Specifies a root URI to use for relative navigation.
@@ -96,7 +94,7 @@ trait UrlCreationOptions extends StObject {
     *  }
     * ```
     */
-  var relativeTo: js.UndefOr[ActivatedRoute | Null] = js.native
+  var relativeTo: js.UndefOr[ActivatedRoute | Null] = js.undefined
 }
 object UrlCreationOptions {
   

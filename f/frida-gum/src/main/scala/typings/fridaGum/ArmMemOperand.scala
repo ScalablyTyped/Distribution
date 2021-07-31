@@ -4,24 +4,23 @@ import typings.fridaGum.anon.Disp
 import typings.fridaGum.fridaGumStrings.mem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArmMemOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
   
-  var `type`: mem = js.native
+  var `type`: mem
   
-  var value: Disp = js.native
+  var value: Disp
 }
 object ArmMemOperand {
   
   @scala.inline
-  def apply(subtracted: Boolean, `type`: mem, value: Disp): ArmMemOperand = {
+  def apply(subtracted: Boolean, value: Disp): ArmMemOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[ArmMemOperand]
   }
   

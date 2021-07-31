@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,7 +30,7 @@ trait ChartObject extends StObject {
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   

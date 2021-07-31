@@ -2,26 +2,24 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotificationRulesRequest extends StObject {
   
   /**
     * The filters to use to return information by service or resource type. For valid values, see ListNotificationRulesFilter.  A filter with the same name can appear more than once when used with OR statements. Filters with different names should be applied with AND statements. 
     */
-  var Filters: js.UndefOr[ListNotificationRulesFilters] = js.native
+  var Filters: js.UndefOr[ListNotificationRulesFilters] = js.undefined
   
   /**
     * A non-negative integer used to limit the number of returned results. The maximum number of results that can be returned is 100.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.codestarnotificationsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.codestarnotificationsMod.MaxResults] = js.undefined
   
   /**
     * An enumeration token that, when provided in a request, returns the next batch of the results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.NextToken] = js.undefined
 }
 object ListNotificationRulesRequest {
   

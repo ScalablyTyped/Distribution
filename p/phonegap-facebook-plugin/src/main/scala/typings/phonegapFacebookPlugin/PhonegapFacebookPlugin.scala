@@ -3,14 +3,12 @@ package typings.phonegapFacebookPlugin
 import typings.phonegapFacebookPlugin.anon.AccessToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PhonegapFacebookPlugin {
   
   //#endregion
   //#region Method Parameters
-  @js.native
   trait BaseDialogOptions extends StObject {
     
     /**
@@ -24,7 +22,7 @@ object PhonegapFacebookPlugin {
       * share                ShareDialogOptions
       * share_open_graph     ShareOpenGraphDialogOptions
       */
-    var method: String = js.native
+    var method: String
   }
   object BaseDialogOptions {
     
@@ -45,12 +43,11 @@ object PhonegapFacebookPlugin {
   /**
     * The base result type for all showDialog() success callbacks.
     */
-  @js.native
   trait BaseDialogResult extends StObject {
     
-    var error_code: String = js.native
+    var error_code: String
     
-    var error_message: String = js.native
+    var error_message: String
   }
   object BaseDialogResult {
     
@@ -89,18 +86,18 @@ object PhonegapFacebookPlugin {
     def api(
       graphPath: String,
       permissions: js.Array[String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def api(
-      graphPath: String,
-      permissions: js.Array[String],
       successCallback: js.Function1[/* result */ js.Any, Unit]
     ): Unit = js.native
     def api(
       graphPath: String,
       permissions: js.Array[String],
       successCallback: js.Function1[/* result */ js.Any, Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def api(
+      graphPath: String,
+      permissions: js.Array[String],
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -111,15 +108,12 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def getAccessToken(): Unit = js.native
-    def getAccessToken(
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def getAccessToken(successCallback: js.Function1[/* token */ String, Unit]): Unit = js.native
     def getAccessToken(
       successCallback: js.Function1[/* token */ String, Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    def getAccessToken(successCallback: Unit, failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
     
     /**
       * Used to get the login status for the current user.
@@ -128,15 +122,12 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def getLoginStatus(): Unit = js.native
-    def getLoginStatus(
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def getLoginStatus(successCallback: js.Function1[/* status */ LoginResult, Unit]): Unit = js.native
     def getLoginStatus(
       successCallback: js.Function1[/* status */ LoginResult, Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    def getLoginStatus(successCallback: Unit, failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
     
     /**
       * Used to log an event.
@@ -150,82 +141,67 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def logEvent(name: String): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logEvent(name: String, params: js.UndefOr[scala.Nothing], valueToSum: Double): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: Double,
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      valueToSum: Double,
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logEvent(name: String, params: js.Any): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.Any,
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.Any,
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.Any,
-      valueToSum: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
-    def logEvent(
-      name: String,
-      params: js.Any,
-      valueToSum: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logEvent(name: String, params: js.Any, valueToSum: Double, successCallback: js.Function0[Unit]): Unit = js.native
     def logEvent(
       name: String,
       params: js.Any,
       valueToSum: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(
+      name: String,
+      params: js.Any,
+      valueToSum: Double,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(name: String, params: js.Any, valueToSum: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logEvent(
+      name: String,
+      params: js.Any,
+      valueToSum: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(
+      name: String,
+      params: js.Any,
+      valueToSum: Unit,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(name: String, params: Unit, valueToSum: Double): Unit = js.native
+    def logEvent(name: String, params: Unit, valueToSum: Double, successCallback: js.Function0[Unit]): Unit = js.native
+    def logEvent(
+      name: String,
+      params: Unit,
+      valueToSum: Double,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(
+      name: String,
+      params: Unit,
+      valueToSum: Double,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(name: String, params: Unit, valueToSum: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logEvent(
+      name: String,
+      params: Unit,
+      valueToSum: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logEvent(
+      name: String,
+      params: Unit,
+      valueToSum: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -238,17 +214,17 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def logPurchase(value: Double, currency: String): Unit = js.native
-    def logPurchase(
-      value: Double,
-      currency: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logPurchase(value: Double, currency: String, successCallback: js.Function0[Unit]): Unit = js.native
     def logPurchase(
       value: Double,
       currency: String,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logPurchase(
+      value: Double,
+      currency: String,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -261,15 +237,15 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def login(permissions: js.Array[String]): Unit = js.native
-    def login(
-      permissions: js.Array[String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def login(permissions: js.Array[String], successCallback: js.Function1[/* result */ LoginResult, Unit]): Unit = js.native
     def login(
       permissions: js.Array[String],
       successCallback: js.Function1[/* result */ LoginResult, Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def login(
+      permissions: js.Array[String],
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -280,12 +256,9 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def logout(): Unit = js.native
-    def logout(
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logout(successCallback: js.Function0[Unit]): Unit = js.native
     def logout(successCallback: js.Function0[Unit], failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
+    def logout(successCallback: Unit, failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
     
     /**
       * Used to open a Facebook dialog.
@@ -295,15 +268,15 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def showDialog(options: BaseDialogOptions): Unit = js.native
-    def showDialog(
-      options: BaseDialogOptions,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def showDialog(options: BaseDialogOptions, successCallback: js.Function1[/* status */ BaseDialogResult, Unit]): Unit = js.native
     def showDialog(
       options: BaseDialogOptions,
       successCallback: js.Function1[/* status */ BaseDialogResult, Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def showDialog(
+      options: BaseDialogOptions,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
   }
@@ -314,41 +287,42 @@ object PhonegapFacebookPlugin {
     *
     * For use with showDialog() of method type 'feed'.
     */
-  @js.native
-  trait FeedDialogOptions extends BaseDialogOptions {
+  trait FeedDialogOptions
+    extends StObject
+       with BaseDialogOptions {
     
     /**
       * The caption of the link (appears beneath the link name). If not specified, this field is automatically
       * populated with the URL of the link.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * The description of the link (appears beneath the link caption). If not specified, this field is
       * automatically populated by information scraped from the link, typically the title of the page.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the person posting the message. If this is unspecified, it defaults to the current person.
       * If specified, it must be the ID of the person or of a page that the person administers.
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /**
       * The link attached to this post.
       */
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the link attachment.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of a picture attached to this post. The picture must be at least 200px by 200px.
       */
-    var picture: js.UndefOr[String] = js.native
+    var picture: js.UndefOr[String] = js.undefined
     
     /**
       * This argument is a comma-separated list, consisting of at most 5 distinct items, each of length at
@@ -357,19 +331,19 @@ object PhonegapFacebookPlugin {
       * Each category is used in Facebook Insights to help you measure the performance of different types
       * of post.
       */
-    var ref: js.UndefOr[String] = js.native
+    var ref: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of a media file (either SWF or MP3) attached to this post. If SWF, you must also specify
       * 'picture' to provide a thumbnail for the video.
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the profile that this story will be published to. If this is unspecified, it defaults to
       * the value of from. The ID must be a friend who also uses your app.
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object FeedDialogOptions {
     
@@ -441,13 +415,14 @@ object PhonegapFacebookPlugin {
   /**
     * The response object returned from a success callback for showDialog() of type 'feed'.
     */
-  @js.native
-  trait FeedDialogResult extends BaseDialogResult {
+  trait FeedDialogResult
+    extends StObject
+       with BaseDialogResult {
     
     /**
       * The ID of the posted story, if the person chose to publish.
       */
-    var post_id: String = js.native
+    var post_id: String
   }
   object FeedDialogResult {
     
@@ -470,12 +445,11 @@ object PhonegapFacebookPlugin {
   /**
     * Result for the login() and getLoginStatus() success callbacks.
     */
-  @js.native
   trait LoginResult extends StObject {
     
-    var authResponse: AccessToken = js.native
+    var authResponse: AccessToken
     
-    var status: String = js.native
+    var status: String
   }
   object LoginResult {
     
@@ -502,19 +476,20 @@ object PhonegapFacebookPlugin {
     *
     * For use with showDialog() of method type 'send'.
     */
-  @js.native
-  trait SendDialogOptions extends BaseDialogOptions {
+  trait SendDialogOptions
+    extends StObject
+       with BaseDialogOptions {
     
     /**
       * Required parameter. The URL that is being sent in the message.
       */
-    var link: String = js.native
+    var link: String
     
     /**
       * A user ID of a recipient. Once the dialog comes up, the sender can specify additional people, and groups
       * addresses as recipients. Sending content to a Facebook group will post it to the group's wall.
       */
-    var to: String = js.native
+    var to: String
   }
   object SendDialogOptions {
     
@@ -547,14 +522,15 @@ object PhonegapFacebookPlugin {
     *
     * For use with showDialog() of method type 'share'.
     */
-  @js.native
-  trait ShareDialogOptions extends BaseDialogOptions {
+  trait ShareDialogOptions
+    extends StObject
+       with BaseDialogOptions {
     
     /**
       * The link attached to this post. Required when using method share. Include open graph meta tags in the
       * page at this URL to customize the story that is shared.
       */
-    var href: String = js.native
+    var href: String
   }
   object ShareDialogOptions {
     
@@ -575,14 +551,15 @@ object PhonegapFacebookPlugin {
   /**
     * The response object returned from a success callback for showDialog() of type 'share' or 'share_open_graph'.
     */
-  @js.native
-  trait ShareDialogResult extends BaseDialogResult {
+  trait ShareDialogResult
+    extends StObject
+       with BaseDialogResult {
     
     /**
       * Only available if the user is logged into your app using Facebook and has granted publish_actions.
       * If present, this is the ID of the published Open Graph story.
       */
-    var post_id: String = js.native
+    var post_id: String
   }
   object ShareDialogResult {
     
@@ -607,21 +584,22 @@ object PhonegapFacebookPlugin {
     *
     * For use with showDialog() of method type 'share_open_graph'.
     */
-  @js.native
-  trait ShareOpenGraphDialogOptions extends BaseDialogOptions {
+  trait ShareOpenGraphDialogOptions
+    extends StObject
+       with BaseDialogOptions {
     
     /**
       * A JSON object of key/value pairs specifying parameters which correspond to the action_type being used.
       * Valid key/value pairs are the same parameters that can be used when publishing Open Graph Actions using
       * the API.
       */
-    var action_properties: String = js.native
+    var action_properties: String
     
     /**
       * A string specifying which Open Graph action type to publish, e.g., og.likes for the built in like type.
       * The dialog also supports approved custom types.
       */
-    var action_type: String = js.native
+    var action_type: String
   }
   object ShareOpenGraphDialogOptions {
     

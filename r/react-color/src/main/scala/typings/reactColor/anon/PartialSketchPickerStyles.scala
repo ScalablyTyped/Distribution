@@ -3,34 +3,32 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/sketch/Sketch.SketchPickerStylesProps> */
-@js.native
 trait PartialSketchPickerStyles extends StObject {
   
-  var Alpha: js.UndefOr[CSSProperties] = js.native
+  var Alpha: js.UndefOr[CSSProperties] = js.undefined
   
-  var Hue: js.UndefOr[CSSProperties] = js.native
+  var Hue: js.UndefOr[CSSProperties] = js.undefined
   
-  var Saturation: js.UndefOr[CSSProperties] = js.native
+  var Saturation: js.UndefOr[CSSProperties] = js.undefined
   
-  var activeColor: js.UndefOr[CSSProperties] = js.native
+  var activeColor: js.UndefOr[CSSProperties] = js.undefined
   
-  var alpha: js.UndefOr[CSSProperties] = js.native
+  var alpha: js.UndefOr[CSSProperties] = js.undefined
   
-  var color: js.UndefOr[CSSProperties] = js.native
+  var color: js.UndefOr[CSSProperties] = js.undefined
   
-  var controls: js.UndefOr[CSSProperties] = js.native
+  var controls: js.UndefOr[CSSProperties] = js.undefined
   
-  var hue: js.UndefOr[CSSProperties] = js.native
+  var hue: js.UndefOr[CSSProperties] = js.undefined
   
-  var picker: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.undefined
   
-  var saturation: js.UndefOr[CSSProperties] = js.native
+  var saturation: js.UndefOr[CSSProperties] = js.undefined
   
-  var sliders: js.UndefOr[CSSProperties] = js.native
+  var sliders: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialSketchPickerStyles {
   

@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List user permissions response.
   */
-@js.native
 trait SchemaListUserPermissionsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * All GTM UserPermissions of a GTM Account.
     */
-  var userPermission: js.UndefOr[js.Array[SchemaUserPermission]] = js.native
+  var userPermission: js.UndefOr[js.Array[SchemaUserPermission]] = js.undefined
 }
 object SchemaListUserPermissionsResponse {
   

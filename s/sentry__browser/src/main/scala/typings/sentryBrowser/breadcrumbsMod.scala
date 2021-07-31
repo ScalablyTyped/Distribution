@@ -2,10 +2,11 @@ package typings.sentryBrowser
 
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
 import typings.sentryTypes.eventMod.Event
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbsMod {
@@ -15,7 +16,9 @@ object breadcrumbsMod {
   /**
     * @inheritDoc
     */
-  class Breadcrumbs () extends Integration {
+  class Breadcrumbs ()
+    extends StObject
+       with Integration {
     def this(options: PartialBreadcrumbsOptions) = this()
     
     /**
@@ -52,6 +55,12 @@ object breadcrumbsMod {
     def addSentryBreadcrumb(event: Event): Unit = js.native
     
     /**
+      * Returns {@link IntegrationClass.id}
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
       * Instrument browser built-ins w/ breadcrumb capturing
       *  - Console API
       *  - DOM API (click/typing)
@@ -60,6 +69,15 @@ object breadcrumbsMod {
       *  - History API
       */
     def setupOnce(): Unit = js.native
+    /**
+      * Sets the integration up only once.
+      * This takes no options on purpose, options should be passed in the constructor
+      */
+    /* CompleteClass */
+    override def setupOnce(
+      addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
+      getCurrentHub: js.Function0[Hub]
+    ): Unit = js.native
   }
   /* static members */
   object Breadcrumbs {
@@ -79,20 +97,19 @@ object breadcrumbsMod {
   }
   
   /** JSDoc */
-  @js.native
   trait BreadcrumbsOptions extends StObject {
     
-    var console: Boolean = js.native
+    var console: Boolean
     
-    var dom: Boolean = js.native
+    var dom: Boolean
     
-    var fetch: Boolean = js.native
+    var fetch: Boolean
     
-    var history: Boolean = js.native
+    var history: Boolean
     
-    var sentry: Boolean = js.native
+    var sentry: Boolean
     
-    var xhr: Boolean = js.native
+    var xhr: Boolean
   }
   object BreadcrumbsOptions {
     

@@ -5,7 +5,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -36,9 +35,9 @@ object componentMod {
     def getComponents(key: String): js.Array[Component] = js.native
     
     def getEl(): HTMLElement = js.native
-    def getEl(key: js.UndefOr[scala.Nothing], index: Double): HTMLElement = js.native
     def getEl(key: String): HTMLElement = js.native
     def getEl(key: String, index: Double): HTMLElement = js.native
+    def getEl(key: Unit, index: Double): HTMLElement = js.native
     
     def getElId(key: String): String = js.native
     def getElId(key: String, index: Double): String = js.native

@@ -2,27 +2,27 @@ package typings.reactCache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-cache", "unstable_createResource")
+  @JSImport("react-cache", JSImport.Namespace)
   @js.native
-  def unstableCreateResource[Input, Value](fetch: js.Function1[/* input */ Input, js.Thenable[Value]]): Resource[Input, Value] = js.native
-  @JSImport("react-cache", "unstable_createResource")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unstableCreateResource[Input, Value](fetch: js.Function1[/* input */ Input, js.Thenable[Value]]): Resource[Input, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createResource")(fetch.asInstanceOf[js.Any]).asInstanceOf[Resource[Input, Value]]
+  @scala.inline
   def unstableCreateResource[Input, Value](
     fetch: js.Function1[/* input */ Input, js.Thenable[Value]],
     maybeHashInput: js.Function1[/* input */ Input, String | Double]
-  ): Resource[Input, Value] = js.native
+  ): Resource[Input, Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createResource")(fetch.asInstanceOf[js.Any], maybeHashInput.asInstanceOf[js.Any])).asInstanceOf[Resource[Input, Value]]
   
-  @js.native
   trait Resource[Input, Value] extends StObject {
     
-    def preload(key: Input): Unit = js.native
+    def preload(key: Input): Unit
     
-    def read(key: Input): Value = js.native
+    def read(key: Input): Value
   }
   object Resource {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ResourceMutableBuilder[Self <: Resource[_, _], Input, Value] (val x: Self with (Resource[Input, Value])) extends AnyVal {
+    implicit class ResourceMutableBuilder[Self <: Resource[?, ?], Input, Value] (val x: Self & (Resource[Input, Value])) extends AnyVal {
       
       @scala.inline
       def setPreload(value: Input => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))

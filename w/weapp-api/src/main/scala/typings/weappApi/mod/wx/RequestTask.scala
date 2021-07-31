@@ -2,23 +2,21 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 网络请求任务对象
   */
-@js.native
 trait RequestTask extends StObject {
   
   //  中断请求任务
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   //  取消监听 HTTP Response Header 事件
-  def offHeadersReceived(callback: DataResponseCallback): Unit = js.native
+  def offHeadersReceived(callback: DataResponseCallback): Unit
   
   //  监听 HTTP Response Header 事件。会比请求完成事件更早
-  def onHeadersReceived(callback: DataResponseCallback): Unit = js.native
+  def onHeadersReceived(callback: DataResponseCallback): Unit
 }
 object RequestTask {
   

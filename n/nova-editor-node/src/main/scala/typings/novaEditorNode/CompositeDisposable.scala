@@ -2,20 +2,20 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/composite-disposable/
-@js.native
-trait CompositeDisposable extends Disposable {
+trait CompositeDisposable
+  extends StObject
+     with Disposable {
   
-  def add(`object`: Disposable): Unit = js.native
+  def add(`object`: Disposable): Unit
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def delete(`object`: Disposable): Unit = js.native
+  def delete(`object`: Disposable): Unit
   
-  def remove(`object`: Disposable): Unit = js.native
+  def remove(`object`: Disposable): Unit
 }
 object CompositeDisposable {
   

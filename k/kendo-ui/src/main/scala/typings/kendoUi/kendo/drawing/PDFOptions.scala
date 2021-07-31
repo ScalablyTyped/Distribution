@@ -3,29 +3,27 @@ package typings.kendoUi.kendo.drawing
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFOptions extends StObject {
   
-  var creator: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var imgDPI: js.UndefOr[Double] = js.native
+  var imgDPI: js.UndefOr[Double] = js.undefined
   
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
-  var paperSize: js.UndefOr[js.Any] = js.native
+  var paperSize: js.UndefOr[js.Any] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PDFOptions {
   

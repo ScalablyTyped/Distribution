@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceGroupsTaggingAPI extends Service {
   
   @JSName("config")
-  var config_ResourceGroupsTaggingAPI: ConfigBase with ClientConfiguration = js.native
+  var config_ResourceGroupsTaggingAPI: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Describes the status of the StartReportCreation operation.  You can call this operation only from the organization's master account and from the us-east-1 Region.

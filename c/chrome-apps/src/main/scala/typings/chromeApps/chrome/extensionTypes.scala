@@ -6,7 +6,6 @@ import typings.chromeApps.chromeAppsStrings.png
 import typings.chromeApps.chromeAppsStrings.user_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -62,13 +61,14 @@ object extensionTypes {
     }
   }
   
-  @js.native
-  trait ImageDetailsJpeg extends ImageDetails {
+  trait ImageDetailsJpeg
+    extends StObject
+       with ImageDetails {
     
     /**
       * The format of the resulting image.
       */
-    var format: js.UndefOr[png] = js.native
+    var format: js.UndefOr[png] = js.undefined
   }
   object ImageDetailsJpeg {
     
@@ -89,14 +89,15 @@ object extensionTypes {
     }
   }
   
-  @js.native
-  trait ImageDetailsPng extends ImageDetails {
+  trait ImageDetailsPng
+    extends StObject
+       with ImageDetails {
     
     /**
       * The format of the resulting image.
       * @default 'jpeg'
       */
-    var format: js.UndefOr[jpeg] = js.native
+    var format: js.UndefOr[jpeg] = js.undefined
     
     /**
       * Controls the quality of the resulting image.
@@ -104,7 +105,7 @@ object extensionTypes {
       * will have more visual artifacts, and the number
       * of bytes needed to store it will decrease.
       */
-    var quality: js.UndefOr[integer] = js.native
+    var quality: js.UndefOr[integer] = js.undefined
   }
   object ImageDetailsPng {
     
@@ -131,8 +132,9 @@ object extensionTypes {
     }
   }
   
-  @js.native
-  trait InjectCodeDetails extends InjectDetailsBase {
+  trait InjectCodeDetails
+    extends StObject
+       with InjectDetailsBase {
     
     /**
       * JavaScript or CSS code to inject.
@@ -142,7 +144,7 @@ object extensionTypes {
       * to cross site scripting attacks.
       * @see[More information]{@link https://en.wikipedia.org/wiki/Cross-site_scripting}
       */
-    var code: String = js.native
+    var code: String
   }
   object InjectCodeDetails {
     
@@ -160,11 +162,12 @@ object extensionTypes {
     }
   }
   
-  @js.native
-  trait InjectFileDetails extends InjectDetailsBase {
+  trait InjectFileDetails
+    extends StObject
+       with InjectDetailsBase {
     
     /** JavaScript or CSS file to inject. */
-    var file: String = js.native
+    var file: String
   }
   object InjectFileDetails {
     
@@ -215,7 +218,6 @@ object extensionTypes {
       * @see InjectCodeDetails
       * @see InjectFileDetails
       */
-    @js.native
     trait InjectDetailsBase extends StObject {
       
       /**
@@ -224,7 +226,7 @@ object extensionTypes {
         * and is only injected into the top frame. If true and frameId is set,
         * then the code is inserted in the selected frame and all of its child frames.
         */
-      var allFrames: js.UndefOr[Boolean] = js.native
+      var allFrames: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The origin of the CSS to inject.
@@ -232,27 +234,27 @@ object extensionTypes {
         * @default 'author'
         * @since Chrome 66.
         */
-      var cssOrigin: CSSOrigin = js.native
+      var cssOrigin: CSSOrigin
       
       /**
         * The frame where the script or CSS should be injected. Defaults to 0 (the top-level frame).
         * @see[frame ref]{@link https://developer.chrome.com/apps/webNavigation#frame_ids}
         * @since Chrome 50.
         */
-      var frameId: js.UndefOr[integer] = js.native
+      var frameId: js.UndefOr[integer] = js.undefined
       
       /**
         * If matchAboutBlank is true, then the code is also injected in about:blank
         * and about:srcdoc frames if your extension has access to its parent document.
         * Code cannot be inserted in top-level about:-frames. By default it is false.
         */
-      var matchAboutBlank: js.UndefOr[Boolean] = js.native
+      var matchAboutBlank: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The soonest that the JavaScript or CSS will be injected into the tab.
         * @default 'document_idle'
         */
-      var runAt: RunAt = js.native
+      var runAt: RunAt
     }
     object InjectDetailsBase {
       

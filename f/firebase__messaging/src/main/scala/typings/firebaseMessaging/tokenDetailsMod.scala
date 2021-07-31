@@ -2,23 +2,21 @@ package typings.firebaseMessaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenDetailsMod {
   
-  @js.native
   trait SubscriptionOptions extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var p256dh: String = js.native
+    var p256dh: String
     
-    var swScope: String = js.native
+    var swScope: String
     
-    var vapidKey: String = js.native
+    var vapidKey: String
   }
   object SubscriptionOptions {
     
@@ -48,15 +46,14 @@ object tokenDetailsMod {
     }
   }
   
-  @js.native
   trait TokenDetails extends StObject {
     
-    var createTime: Double = js.native
+    var createTime: Double
     
     /** Does not exist in Safari since it's not using Push API. */
-    var subscriptionOptions: js.UndefOr[SubscriptionOptions] = js.native
+    var subscriptionOptions: js.UndefOr[SubscriptionOptions] = js.undefined
     
-    var token: String = js.native
+    var token: String
   }
   object TokenDetails {
     

@@ -3,10 +3,13 @@ package typings.openui5.global.sap.m
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ImageHelper {
+  
+  @JSGlobal("sap.m.ImageHelper")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates or updates an image control.
@@ -19,14 +22,13 @@ object ImageHelper {
     * @param aCssClassesToRemove all css clases that oImageControl has and which are contained in this
     * arrayare removed bevore adding the css classes listed in aCssClassesToAdd.
     */
-  @JSGlobal("sap.m.ImageHelper.getImageControl")
-  @js.native
+  @scala.inline
   def getImageControl(
     sImgId: String,
     oImageControl: typings.openui5.sap.m.Image,
     oParent: Control,
     mProperties: js.Any,
-    aCssClassesToAdd: js.Array[_],
-    aCssClassesToRemove: js.Array[_]
-  ): Unit = js.native
+    aCssClassesToAdd: js.Array[js.Any],
+    aCssClassesToRemove: js.Array[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageControl")(sImgId.asInstanceOf[js.Any], oImageControl.asInstanceOf[js.Any], oParent.asInstanceOf[js.Any], mProperties.asInstanceOf[js.Any], aCssClassesToAdd.asInstanceOf[js.Any], aCssClassesToRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

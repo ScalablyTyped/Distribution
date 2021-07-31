@@ -2,17 +2,15 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
-  var dataSource: js.Array[scala.Nothing] = js.native
+  var dataSource: js.Array[scala.Nothing]
   
-  var showSearch: Boolean = js.native
+  var showSearch: Boolean
   
-  var titleText: String = js.native
+  var titleText: String
 }
 object DataSource {
   

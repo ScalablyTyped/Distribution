@@ -2,51 +2,49 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APNSSandboxChannelRequest extends StObject {
   
   /**
     * The bundle identifier that's assigned to your iOS app. This identifier is used for APNs tokens.
     */
-  var BundleId: js.UndefOr[string] = js.native
+  var BundleId: js.UndefOr[string] = js.undefined
   
   /**
     * The APNs client certificate that you received from Apple, if you want Amazon Pinpoint to communicate with the APNs sandbox environment by using an APNs certificate.
     */
-  var Certificate: js.UndefOr[string] = js.native
+  var Certificate: js.UndefOr[string] = js.undefined
   
   /**
     * The default authentication method that you want Amazon Pinpoint to use when authenticating with the APNs sandbox environment, key or certificate.
     */
-  var DefaultAuthenticationMethod: js.UndefOr[string] = js.native
+  var DefaultAuthenticationMethod: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether to enable the APNs sandbox channel for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * The private key for the APNs client certificate that you want Amazon Pinpoint to use to communicate with the APNs sandbox environment.
     */
-  var PrivateKey: js.UndefOr[string] = js.native
+  var PrivateKey: js.UndefOr[string] = js.undefined
   
   /**
     * The identifier that's assigned to your Apple developer account team. This identifier is used for APNs tokens.
     */
-  var TeamId: js.UndefOr[string] = js.native
+  var TeamId: js.UndefOr[string] = js.undefined
   
   /**
     * The authentication key to use for APNs tokens.
     */
-  var TokenKey: js.UndefOr[string] = js.native
+  var TokenKey: js.UndefOr[string] = js.undefined
   
   /**
     * The key identifier that's assigned to your APNs signing key, if you want Amazon Pinpoint to communicate with the APNs sandbox environment by using APNs tokens.
     */
-  var TokenKeyId: js.UndefOr[string] = js.native
+  var TokenKeyId: js.UndefOr[string] = js.undefined
 }
 object APNSSandboxChannelRequest {
   

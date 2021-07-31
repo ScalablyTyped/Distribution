@@ -3,93 +3,93 @@ package typings.reactMapGl.mod
 import typings.reactMapGl.reactMapGlStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InteractiveMapProps extends StaticMapProps {
+trait InteractiveMapProps
+  extends StObject
+     with StaticMapProps {
   
-  var clickRadius: js.UndefOr[Double] = js.native
+  var clickRadius: js.UndefOr[Double] = js.undefined
   
-  var controller: js.UndefOr[MapController] = js.native
+  var controller: js.UndefOr[MapController] = js.undefined
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dragPan: js.UndefOr[Boolean] = js.native
+  var dragPan: js.UndefOr[Boolean] = js.undefined
   
-  var dragRotate: js.UndefOr[Boolean] = js.native
+  var dragRotate: js.UndefOr[Boolean] = js.undefined
   
-  var getCursor: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.native
+  var getCursor: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.undefined
   
-  var interactiveLayerIds: js.UndefOr[js.Array[String]] = js.native
+  var interactiveLayerIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var maxPitch: js.UndefOr[Double] = js.native
+  var maxPitch: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minPitch: js.UndefOr[Double] = js.native
+  var minPitch: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onDblClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onDblClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onInteractionStateChange: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.native
+  var onInteractionStateChange: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.undefined
   
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onNativeClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onNativeClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTransitionInterrupt: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTransitionInterrupt: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTransitionStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.native
+  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
   
-  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   
-  var onWheel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onWheel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.undefined
   
-  var touchAction: js.UndefOr[String] = js.native
+  var touchAction: js.UndefOr[String] = js.undefined
   
-  var touchRotate: js.UndefOr[Boolean] = js.native
+  var touchRotate: js.UndefOr[Boolean] = js.undefined
   
-  var touchZoom: js.UndefOr[Boolean] = js.native
+  var touchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double | auto] = js.native
+  var transitionDuration: js.UndefOr[Double | auto] = js.undefined
   
-  var transitionEasing: js.UndefOr[EasingFunction] = js.native
+  var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
   
-  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.native
+  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
   
-  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.native
+  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
 }
 object InteractiveMapProps {
   

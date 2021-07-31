@@ -3,28 +3,29 @@ package typings.std
 import typings.std.stdStrings.resourcetimingbufferfull
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API. */
 @js.native
-trait Performance extends EventTarget {
+trait Performance
+  extends StObject
+     with EventTarget {
   
   @JSName("addEventListener")
   def addEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -46,32 +47,32 @@ trait Performance extends EventTarget {
   def mark(markName: java.lang.String): Unit = js.native
   
   def measure(measureName: java.lang.String): Unit = js.native
-  def measure(measureName: java.lang.String, startMark: js.UndefOr[scala.Nothing], endMark: java.lang.String): Unit = js.native
   def measure(measureName: java.lang.String, startMark: java.lang.String): Unit = js.native
   def measure(measureName: java.lang.String, startMark: java.lang.String, endMark: java.lang.String): Unit = js.native
+  def measure(measureName: java.lang.String, startMark: Unit, endMark: java.lang.String): Unit = js.native
   
   /** @deprecated */
   val navigation: PerformanceNavigation = js.native
   
   def now(): Double = js.native
   
-  var onresourcetimingbufferfull: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onresourcetimingbufferfull: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   @JSName("removeEventListener")
   def removeEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resourcetimingbufferfull(
     `type`: resourcetimingbufferfull,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

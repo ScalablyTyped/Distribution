@@ -2,14 +2,12 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of Word conversion settings. */
-@js.native
 trait WordSettings extends StObject {
   
-  var heading: js.UndefOr[WordHeadingDetection] = js.native
+  var heading: js.UndefOr[WordHeadingDetection] = js.undefined
 }
 object WordSettings {
   

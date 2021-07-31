@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPartitionIndexesResponse extends StObject {
   
   /**
     * A continuation token, present if the current list segment is not the last.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of index descriptors.
     */
-  var PartitionIndexDescriptorList: js.UndefOr[typings.awsSdk.glueMod.PartitionIndexDescriptorList] = js.native
+  var PartitionIndexDescriptorList: js.UndefOr[typings.awsSdk.glueMod.PartitionIndexDescriptorList] = js.undefined
 }
 object GetPartitionIndexesResponse {
   

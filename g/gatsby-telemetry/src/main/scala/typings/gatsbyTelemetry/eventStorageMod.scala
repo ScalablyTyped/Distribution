@@ -6,7 +6,6 @@ import typings.gatsbyTelemetry.storeMod.Store
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventStorageMod {
@@ -25,7 +24,7 @@ object eventStorageMod {
     
     var disabled: Boolean = js.native
     
-    def getConfig(key: String): String | Boolean | (Record[String, _]) = js.native
+    def getConfig(key: String): String | Boolean | (Record[String, js.Any]) = js.native
     
     def getUserAgent(): String = js.native
     

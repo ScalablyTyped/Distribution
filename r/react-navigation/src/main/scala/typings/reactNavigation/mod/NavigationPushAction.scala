@@ -3,28 +3,28 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashPUSH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationPushAction extends NavigationStackAction {
+trait NavigationPushAction
+  extends StObject
+     with NavigationStackAction {
   
-  var action: js.UndefOr[NavigationNavigateAction] = js.native
+  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[NavigationParams] = js.native
+  var params: js.UndefOr[NavigationParams] = js.undefined
   
-  var routeName: String = js.native
+  var routeName: String
   
-  var `type`: NavigationSlashPUSH = js.native
+  var `type`: NavigationSlashPUSH
 }
 object NavigationPushAction {
   
   @scala.inline
-  def apply(routeName: String, `type`: NavigationSlashPUSH): NavigationPushAction = {
+  def apply(routeName: String): NavigationPushAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/PUSH")
     __obj.asInstanceOf[NavigationPushAction]
   }
   

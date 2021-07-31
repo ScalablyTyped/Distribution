@@ -3,24 +3,22 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify pivot table filters.
   */
-@js.native
 trait PivotFilter extends StObject {
   
-  def getFilterCriteria(): FilterCriteria = js.native
+  def getFilterCriteria(): FilterCriteria
   
-  def getPivotTable(): PivotTable = js.native
+  def getPivotTable(): PivotTable
   
-  def getSourceDataColumn(): Integer = js.native
+  def getSourceDataColumn(): Integer
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setFilterCriteria(filterCriteria: FilterCriteria): PivotFilter = js.native
+  def setFilterCriteria(filterCriteria: FilterCriteria): PivotFilter
 }
 object PivotFilter {
   

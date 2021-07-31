@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.SlicePlaneConstructor
 import typings.arcgisJsApi.esri.SlicePlaneProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slicePlaneMod extends Shortcut {
   
   @JSImport("esri/widgets/Slice/SlicePlane", JSImport.Namespace)
   @js.native
-  val ^ : SlicePlaneConstructor = js.native
+  val ^ : js.Object & SlicePlaneConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Slice/SlicePlane", JSImport.Namespace)
@@ -23,12 +22,22 @@ object slicePlaneMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html)
     */
-  class Class () extends SlicePlane {
+  class Class ()
+    extends StObject
+       with SlicePlane {
     def this(properties: SlicePlaneProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = SlicePlaneConstructor
+  type _To = js.Object & SlicePlaneConstructor
   
   /* This means you don't have to write `^`, but can instead just say `slicePlaneMod.foo` */
-  override def _to: SlicePlaneConstructor = ^
+  override def _to: js.Object & SlicePlaneConstructor = ^
 }

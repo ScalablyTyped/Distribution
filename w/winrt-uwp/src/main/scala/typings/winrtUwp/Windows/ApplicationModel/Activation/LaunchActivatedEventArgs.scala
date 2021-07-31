@@ -3,36 +3,34 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.winrtUwp.Windows.UI.ViewManagement.ActivationViewSwitcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when an app is launched. */
-@js.native
 trait LaunchActivatedEventArgs extends StObject {
   
   /** Gets the arguments that are passed to the app during its launch activation. */
-  var arguments: String = js.native
+  var arguments: String
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the reason that this app is being activated. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Indicates whether the app was pre-launched. */
-  var prelaunchActivated: Boolean = js.native
+  var prelaunchActivated: Boolean
   
   /** Gets the execution state of the app before this activation. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the ID of the tile that was invoked to launch the app. */
-  var tileId: String = js.native
+  var tileId: String
   
   /** Gets the view switcher object that allows you to set the view for the application. */
-  var viewSwitcher: ActivationViewSwitcher = js.native
+  var viewSwitcher: ActivationViewSwitcher
 }
 object LaunchActivatedEventArgs {
   

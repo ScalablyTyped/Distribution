@@ -4,15 +4,13 @@ import typings.reactNavigationCore.typesMod.RouteProp
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigation[ParamList /* <: ParamListBase */] extends StObject {
   
-  var navigation: js.Any = js.native
+  var navigation: js.Any
   
-  var route: RouteProp[ParamList, /* keyof ParamList */ String] = js.native
+  var route: RouteProp[ParamList, /* keyof ParamList */ String]
 }
 object Navigation {
   
@@ -23,7 +21,7 @@ object Navigation {
   }
   
   @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation[_], ParamList /* <: ParamListBase */] (val x: Self with Navigation[ParamList]) extends AnyVal {
+  implicit class NavigationMutableBuilder[Self <: Navigation[?], ParamList /* <: ParamListBase */] (val x: Self & Navigation[ParamList]) extends AnyVal {
     
     @scala.inline
     def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

@@ -18,7 +18,6 @@ import typings.std.RegExp
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -270,7 +269,7 @@ class Text protected () extends Object {
     * @param {String} [charStyle.fontStyle] Font style (italic|normal)
     */
   def _setTextStyles(ctx: CanvasRenderingContext2D): Unit = js.native
-  def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: js.UndefOr[scala.Nothing], forMeasuring: Boolean): Unit = js.native
+  def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: Unit, forMeasuring: Boolean): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily, forMeasuring: Boolean): Unit = js.native
   
@@ -369,9 +368,9 @@ class Text protected () extends Object {
     * @param {Boolean} [skipWrapping] consider the location for unwrapped lines. usefull to manage styles.
     */
   def get2DCursorLocation(): CharIndex = js.native
-  def get2DCursorLocation(selectionStart: js.UndefOr[scala.Nothing], skipWrapping: Boolean): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double, skipWrapping: Boolean): CharIndex = js.native
+  def get2DCursorLocation(selectionStart: Unit, skipWrapping: Boolean): CharIndex = js.native
   
   /**
     * return a new object that contains all the style property for a character
@@ -421,14 +420,14 @@ class Text protected () extends Object {
     * @param {Boolean} [complete] get full style or not
     * @return {Array} styles an array with one, zero or more Style objects
     */
-  def getSelectionStyles(): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: js.UndefOr[scala.Nothing], complete: Boolean): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: Double, complete: Boolean): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: Double): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: js.UndefOr[scala.Nothing], complete: Boolean): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[_] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[_] = js.native
+  def getSelectionStyles(): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Double): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Unit, complete: Boolean): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Double): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Double, complete: Boolean): js.Array[js.Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Unit, complete: Boolean): js.Array[js.Any] = js.native
   
   /**
     * Retrieves the value of property at given character position
@@ -504,9 +503,9 @@ class Text protected () extends Object {
     * @chainable
     */
   def setSelectionStyles(styles: js.Any): Text = js.native
-  def setSelectionStyles(styles: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double, endIndex: Double): Text = js.native
+  def setSelectionStyles(styles: js.Any, startIndex: Unit, endIndex: Double): Text = js.native
   
   /**
     * Turns the character into an 'inferior figure' (i.e. 'subscript')
@@ -601,18 +600,14 @@ object Text {
     * @param {Function} callback callback function invoked after parsing
     * @param {Object} [options] Options object
     */
-  @JSImport("fabric/fabric-impl", "Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement): Text = js.native
-  @JSImport("fabric/fabric-impl", "Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): Text = js.native
-  @JSImport("fabric/fabric-impl", "Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function): Text = js.native
-  @JSImport("fabric/fabric-impl", "Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = js.native
+  @scala.inline
+  def fromElement(element: SVGElement): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: Unit, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
   
   /**
     * Returns fabric.Text instance from an object representation
@@ -621,10 +616,8 @@ object Text {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */
-  @JSImport("fabric/fabric-impl", "Text.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): Text = js.native
-  @JSImport("fabric/fabric-impl", "Text.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function): Text = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Text]
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
 }

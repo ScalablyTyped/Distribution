@@ -2,19 +2,17 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The workflow graph.
   */
-@js.native
 trait SchemaWorkflowGraph extends StObject {
   
   /**
     * Output only. The workflow nodes.
     */
-  var nodes: js.UndefOr[js.Array[SchemaWorkflowNode]] = js.native
+  var nodes: js.UndefOr[js.Array[SchemaWorkflowNode]] = js.undefined
 }
 object SchemaWorkflowGraph {
   

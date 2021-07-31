@@ -2,24 +2,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ParameterType. */
-@js.native
 trait IParameterType extends StObject {
   
   /** ParameterType name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** ParameterType preferForRegularExpressionMatch */
-  var preferForRegularExpressionMatch: js.UndefOr[Boolean | Null] = js.native
+  var preferForRegularExpressionMatch: js.UndefOr[Boolean | Null] = js.undefined
   
   /** ParameterType regularExpressions */
-  var regularExpressions: js.UndefOr[js.Array[String] | Null] = js.native
+  var regularExpressions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ParameterType useForSnippets */
-  var useForSnippets: js.UndefOr[Boolean | Null] = js.native
+  var useForSnippets: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IParameterType {
   

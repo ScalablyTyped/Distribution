@@ -2,76 +2,62 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textopsx {
   
-  @JSGlobal("KSR.textopsx.append_hf_value")
+  @JSGlobal("KSR.textopsx")
   @js.native
-  def appendHfValue(hexp: String, `val`: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.textopsx.assign_hf_value")
-  @js.native
-  def assignHfValue(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def appendHfValue(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("append_hf_value")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.assign_hf_value2")
-  @js.native
-  def assignHfValue2(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def assignHfValue(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assign_hf_value")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.change_reply_status")
-  @js.native
-  def changeReplyStatus(code: Double, reason: String): Double = js.native
+  @scala.inline
+  def assignHfValue2(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assign_hf_value2")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.exclude_hf_value")
-  @js.native
-  def excludeHfValue(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def changeReplyStatus(code: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("change_reply_status")(code.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.fnmatch")
-  @js.native
-  def fnmatch(`val`: String, `match`: String): Double = js.native
+  @scala.inline
+  def excludeHfValue(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude_hf_value")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.fnmatch_ex")
-  @js.native
-  def fnmatchEx(`val`: String, `match`: String, flags: String): Double = js.native
+  @scala.inline
+  def fnmatch(`val`: String, `match`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnmatch")(`val`.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.hf_value_exists")
-  @js.native
-  def hfValueExists(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def fnmatchEx(`val`: String, `match`: String, flags: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnmatch_ex")(`val`.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.include_hf_value")
-  @js.native
-  def includeHfValue(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def hfValueExists(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hf_value_exists")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.insert_hf_value")
-  @js.native
-  def insertHfValue(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def includeHfValue(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("include_hf_value")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.keep_hf")
-  @js.native
-  def keepHf(): Double = js.native
+  @scala.inline
+  def insertHfValue(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("insert_hf_value")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.keep_hf_re")
-  @js.native
-  def keepHfRe(sre: String): Double = js.native
+  @scala.inline
+  def keepHf(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("keep_hf")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.msg_apply_changes")
-  @js.native
-  def msgApplyChanges(): Double = js.native
+  @scala.inline
+  def keepHfRe(sre: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("keep_hf_re")(sre.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.msg_set_buffer")
-  @js.native
-  def msgSetBuffer(obuf: String): Double = js.native
+  @scala.inline
+  def msgApplyChanges(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("msg_apply_changes")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.remove_body")
-  @js.native
-  def removeBody(): Double = js.native
+  @scala.inline
+  def msgSetBuffer(obuf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("msg_set_buffer")(obuf.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.remove_hf_value")
-  @js.native
-  def removeHfValue(hexp: String): Double = js.native
+  @scala.inline
+  def removeBody(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("remove_body")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.textopsx.remove_hf_value2")
-  @js.native
-  def removeHfValue2(hexp: String, `val`: String): Double = js.native
+  @scala.inline
+  def removeHfValue(hexp: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("remove_hf_value")(hexp.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def removeHfValue2(hexp: String, `val`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_hf_value2")(hexp.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

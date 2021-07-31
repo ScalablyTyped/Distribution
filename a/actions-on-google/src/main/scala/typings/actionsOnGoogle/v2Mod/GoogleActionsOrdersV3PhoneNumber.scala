@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3PhoneNumber extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleActionsOrdersV3PhoneNumber extends StObject {
     * Telecommunication Union (ITU) Recommendation E.164.
     * wiki link: https://en.wikipedia.org/wiki/E.164
     */
-  var e164PhoneNumber: js.UndefOr[String] = js.native
+  var e164PhoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Extension is not standardized in ITU recommendations, except for being
@@ -24,7 +22,7 @@ trait GoogleActionsOrdersV3PhoneNumber extends StObject {
     * characters such as \",\" (indicating a wait) may be stored here.
     * For example, in xxx-xxx-xxxx ext. 123, \"123\" is the extension.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The carrier selection code that is preferred when calling this phone number
@@ -38,7 +36,7 @@ trait GoogleActionsOrdersV3PhoneNumber extends StObject {
     * Note this is the \"preferred\" code, which means other codes may work as
     * well.
     */
-  var preferredDomesticCarrierCode: js.UndefOr[String] = js.native
+  var preferredDomesticCarrierCode: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3PhoneNumber {
   

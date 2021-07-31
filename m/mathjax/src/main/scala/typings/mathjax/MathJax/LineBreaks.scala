@@ -2,16 +2,14 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineBreaks extends StObject {
   
   /*This controls the automatic breaking of expressions: when false, only linebreak="newline" is processed; when
     * true, line breaks are inserted automatically in long expressions.
     */
-  var automatic: js.UndefOr[Boolean] = js.native
+  var automatic: js.UndefOr[Boolean] = js.undefined
   
   /*This controls how wide the lines of mathematics can be.
     * Use an explicit width like "30em" for a fixed width. Use "container" to compute the size from the containing
@@ -19,7 +17,7 @@ trait LineBreaks extends StObject {
     * The container-based widths may be slower, and may not produce the expected results if the layout width changes
     * due to the removal of previews or inclusion of mathematics during typesetting.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object LineBreaks {
   

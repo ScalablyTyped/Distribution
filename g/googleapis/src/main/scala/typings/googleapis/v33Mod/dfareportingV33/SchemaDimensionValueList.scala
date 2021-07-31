@@ -2,29 +2,27 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the list of DimensionValue resources.
   */
-@js.native
 trait SchemaDimensionValueList extends StObject {
   
   /**
     * The eTag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The dimension values returned in this response.
     */
-  var items: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var items: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
   /**
     * The kind of list this is, in this case dfareporting#dimensionValueList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token used to page through dimension values. To retrieve the
@@ -32,7 +30,7 @@ trait SchemaDimensionValueList extends StObject {
     * the value of this field. The page token is only valid for a limited
     * amount of time and should not be persisted.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaDimensionValueList {
   

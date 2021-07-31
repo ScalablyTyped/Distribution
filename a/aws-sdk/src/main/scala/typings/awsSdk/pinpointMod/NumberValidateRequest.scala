@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberValidateRequest extends StObject {
   
   /**
     * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the phone number was originally registered.
     */
-  var IsoCountryCode: js.UndefOr[string] = js.native
+  var IsoCountryCode: js.UndefOr[string] = js.undefined
   
   /**
     * The phone number to retrieve information about. The phone number that you provide should include a valid numeric country code. Otherwise, the operation might result in an error.
     */
-  var PhoneNumber: js.UndefOr[string] = js.native
+  var PhoneNumber: js.UndefOr[string] = js.undefined
 }
 object NumberValidateRequest {
   

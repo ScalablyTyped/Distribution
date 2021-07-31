@@ -3,15 +3,13 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsCreateOrLoadUIParams extends StObject {
   
-  var panel: JQuery = js.native
+  var panel: JQuery
   
-  var tab: JQuery = js.native
+  var tab: JQuery
 }
 object TabsCreateOrLoadUIParams {
   

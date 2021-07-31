@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template to list aliases in Directory API.
   */
-@js.native
 trait SchemaAliases extends StObject {
   
   /**
     * List of alias objects.
     */
-  var aliases: js.UndefOr[js.Array[_]] = js.native
+  var aliases: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAliases {
   
@@ -38,7 +36,7 @@ object SchemaAliases {
   implicit class SchemaAliasesMutableBuilder[Self <: SchemaAliases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAliases(value: js.Array[_]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    def setAliases(value: js.Array[js.Any]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)

@@ -10,9 +10,9 @@ TypeScript typings for Access Context Manager API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.accesscontextmanager |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 51 |
+| # downloads        | 928 |
 | # stars            | 0 |
 
 ## Links

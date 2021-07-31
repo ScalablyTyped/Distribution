@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardSelectionList extends StObject {
   
-  def AutoSelect(identifier: String): Unit = js.native
+  def AutoSelect(identifier: String): Unit
   
-  val Events: IEvents = js.native
+  val Events: IEvents
   
-  val Filter: String = js.native
+  val Filter: String
   
-  val FilteringValue: String = js.native
+  val FilteringValue: String
   
-  val Items: js.Any = js.native
+  val Items: js.Any
   
-  val MoreResults: Boolean = js.native
+  val MoreResults: Boolean
   
-  def SetFilter(Filter: String, token: Double, maxResults: Double): Unit = js.native
+  def SetFilter(Filter: String, token: Double, maxResults: Double): Unit
 }
 object IMetadataCardSelectionList {
   

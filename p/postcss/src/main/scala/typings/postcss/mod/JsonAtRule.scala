@@ -2,22 +2,22 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsonAtRule extends JsonContainer {
+trait JsonAtRule
+  extends StObject
+     with JsonContainer {
   
   /**
     * The identifier that immediately follows the @.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * These are the values that follow the at-rule's name, but precede any {}
     * block. The spec refers to this area as the at-rule's "prelude".
     */
-  var params: js.UndefOr[String] = js.native
+  var params: js.UndefOr[String] = js.undefined
 }
 object JsonAtRule {
   

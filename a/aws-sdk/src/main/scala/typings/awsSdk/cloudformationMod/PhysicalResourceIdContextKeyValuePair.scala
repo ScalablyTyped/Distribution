@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicalResourceIdContextKeyValuePair extends StObject {
   
   /**
     * The resource context key.
     */
-  var Key: typings.awsSdk.cloudformationMod.Key = js.native
+  var Key: typings.awsSdk.cloudformationMod.Key
   
   /**
     * The resource context value.
     */
-  var Value: typings.awsSdk.cloudformationMod.Value = js.native
+  var Value: typings.awsSdk.cloudformationMod.Value
 }
 object PhysicalResourceIdContextKeyValuePair {
   

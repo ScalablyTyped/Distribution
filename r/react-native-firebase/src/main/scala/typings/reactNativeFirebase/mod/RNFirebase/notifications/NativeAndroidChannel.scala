@@ -2,37 +2,35 @@ package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeAndroidChannel extends StObject {
   
-  var bypassDnd: js.UndefOr[Boolean] = js.native
+  var bypassDnd: js.UndefOr[Boolean] = js.undefined
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var importance: Double = js.native
+  var importance: Double
   
-  var lightColor: js.UndefOr[String] = js.native
+  var lightColor: js.UndefOr[String] = js.undefined
   
-  var lightsEnabled: js.UndefOr[Boolean] = js.native
+  var lightsEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var lockScreenVisibility: js.UndefOr[Double] = js.native
+  var lockScreenVisibility: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var showBadge: js.UndefOr[Boolean] = js.native
+  var showBadge: js.UndefOr[Boolean] = js.undefined
   
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
-  var vibrationEnabled: js.UndefOr[Boolean] = js.native
+  var vibrationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var vibrationPattern: js.UndefOr[js.Array[Double]] = js.native
+  var vibrationPattern: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object NativeAndroidChannel {
   

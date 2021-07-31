@@ -5,25 +5,23 @@ import typings.reduxFirstRouter.mod.LocationState
 import typings.reduxFirstRouterRestoreScroll.reduxFirstRouterRestoreScrollStrings.`profile-box`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Manual extends StObject {
     
     /** @default false */
-    var manual: js.UndefOr[Boolean] = js.native
+    var manual: js.UndefOr[Boolean] = js.undefined
     
     /** Use to implement custom scroll positioning. */
     var shouldUpdateScroll: js.UndefOr[
         js.Function2[
-          /* prev */ LocationState[js.Object, _], 
-          /* locationState */ LocationState[js.Object, _], 
+          /* prev */ LocationState[js.Object, js.Any], 
+          /* locationState */ LocationState[js.Object, js.Any], 
           Boolean | `profile-box` | (js.Tuple2[Double, Double])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * To implement a custom backend storage for scroll state, pass a custom
@@ -31,7 +29,7 @@ object anon {
       * by the package `scroll-behavior` as well as a function called setPrevKey
       * that keeps track of the previous key.
       */
-    var stateStorage: js.UndefOr[Read] = js.native
+    var stateStorage: js.UndefOr[Read] = js.undefined
   }
   object Manual {
     
@@ -52,7 +50,7 @@ object anon {
       
       @scala.inline
       def setShouldUpdateScroll(
-        value: (/* prev */ LocationState[js.Object, _], /* locationState */ LocationState[js.Object, _]) => Boolean | `profile-box` | (js.Tuple2[Double, Double])
+        value: (/* prev */ LocationState[js.Object, js.Any], /* locationState */ LocationState[js.Object, js.Any]) => Boolean | `profile-box` | (js.Tuple2[Double, Double])
       ): Self = StObject.set(x, "shouldUpdateScroll", js.Any.fromFunction2(value))
       
       @scala.inline

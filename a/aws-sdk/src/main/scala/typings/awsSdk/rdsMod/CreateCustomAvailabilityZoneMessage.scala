@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomAvailabilityZoneMessage extends StObject {
   
   /**
     * The name of the custom Availability Zone (AZ).
     */
-  var CustomAvailabilityZoneName: String = js.native
+  var CustomAvailabilityZoneName: String
   
   /**
     * The ID of an existing virtual private network (VPN) between the Amazon RDS website and the VMware vSphere cluster.
     */
-  var ExistingVpnId: js.UndefOr[String] = js.native
+  var ExistingVpnId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a new VPN tunnel between the Amazon RDS website and the VMware vSphere cluster. Specify this parameter only if ExistingVpnId isn't specified.
     */
-  var NewVpnTunnelName: js.UndefOr[String] = js.native
+  var NewVpnTunnelName: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address of network traffic from your on-premises data center. A custom AZ receives the network traffic. Specify this parameter only if ExistingVpnId isn't specified.
     */
-  var VpnTunnelOriginatorIP: js.UndefOr[String] = js.native
+  var VpnTunnelOriginatorIP: js.UndefOr[String] = js.undefined
 }
 object CreateCustomAvailabilityZoneMessage {
   

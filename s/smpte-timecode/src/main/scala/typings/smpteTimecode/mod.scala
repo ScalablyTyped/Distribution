@@ -6,36 +6,44 @@ import typings.smpteTimecode.smpteTimecodeNumbers.`59.94`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("smpte-timecode", JSImport.Namespace)
-  @js.native
-  def apply(): TimecodeInstance = js.native
-  @JSImport("smpte-timecode", JSImport.Namespace)
-  @js.native
-  def apply(timecode: js.UndefOr[TIMECODE], frameRate: js.UndefOr[scala.Nothing], dropFrame: Boolean): TimecodeInstance = js.native
-  @JSImport("smpte-timecode", JSImport.Namespace)
-  @js.native
-  def apply(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE): TimecodeInstance = js.native
-  @JSImport("smpte-timecode", JSImport.Namespace)
-  @js.native
-  def apply(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = js.native
-  @JSImport("smpte-timecode", JSImport.Namespace)
-  @js.native
-  def apply(timecode: TIMECODE): TimecodeInstance = js.native
+  @scala.inline
+  def apply(): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: Unit, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: Unit, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: Unit, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: TIMECODE): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any]).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: TIMECODE, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: TIMECODE, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  @scala.inline
+  def apply(timecode: TIMECODE, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("smpte-timecode", JSImport.Namespace)
   @js.native
-  class ^ () extends TimecodeInstance {
+  class ^ ()
+    extends StObject
+       with TimecodeInstance {
     def this(timecode: TIMECODE) = this()
-    def this(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE) = this()
-    def this(timecode: js.UndefOr[TIMECODE], frameRate: js.UndefOr[scala.Nothing], dropFrame: Boolean) = this()
-    def this(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE, dropFrame: Boolean) = this()
+    def this(timecode: Unit, frameRate: FRAMERATE) = this()
+    def this(timecode: TIMECODE, frameRate: FRAMERATE) = this()
+    def this(timecode: Unit, frameRate: Unit, dropFrame: Boolean) = this()
+    def this(timecode: Unit, frameRate: FRAMERATE, dropFrame: Boolean) = this()
+    def this(timecode: TIMECODE, frameRate: Unit, dropFrame: Boolean) = this()
+    def this(timecode: TIMECODE, frameRate: FRAMERATE, dropFrame: Boolean) = this()
   }
+  @JSImport("smpte-timecode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.smpteTimecode.smpteTimecodeNumbers.`23.976`
@@ -81,9 +89,9 @@ object mod {
   trait TimecodeInstance extends StObject {
     
     def add(timecode: TIMECODE): TimecodeInstance = js.native
-    def add(timecode: TIMECODE, negative: js.UndefOr[scala.Nothing], rollOverMaxHours: Double): TimecodeInstance = js.native
     def add(timecode: TIMECODE, negative: Boolean): TimecodeInstance = js.native
     def add(timecode: TIMECODE, negative: Boolean, rollOverMaxHours: Double): TimecodeInstance = js.native
+    def add(timecode: TIMECODE, negative: Unit, rollOverMaxHours: Double): TimecodeInstance = js.native
     
     var dropFrame: Boolean = js.native
     
@@ -107,16 +115,15 @@ object mod {
     def toString(options: String): String = js.native
   }
   
-  @js.native
   trait TimecodeObject extends StObject {
     
-    var frames: Double = js.native
+    var frames: Double
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var minutes: Double = js.native
+    var minutes: Double
     
-    var seconds: Double = js.native
+    var seconds: Double
   }
   object TimecodeObject {
     

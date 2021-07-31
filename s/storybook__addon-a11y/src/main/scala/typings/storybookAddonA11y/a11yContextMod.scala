@@ -5,10 +5,13 @@ import typings.react.mod.Context
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object a11yContextMod {
+  
+  @JSImport("@storybook/addon-a11y/dist/components/A11yContext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/addon-a11y/dist/components/A11yContext", "A11yContext")
   @js.native
@@ -18,14 +21,12 @@ object a11yContextMod {
   @js.native
   val A11yContextProvider: FC[A11yContextProviderProps] = js.native
   
-  @JSImport("@storybook/addon-a11y/dist/components/A11yContext", "useA11yContext")
-  @js.native
-  def useA11yContext(): A11yContextStore = js.native
+  @scala.inline
+  def useA11yContext(): A11yContextStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useA11yContext")().asInstanceOf[A11yContextStore]
   
-  @js.native
   trait A11yContextProviderProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
   }
   object A11yContextProviderProps {
     
@@ -43,22 +44,21 @@ object a11yContextMod {
     }
   }
   
-  @js.native
   trait A11yContextStore extends StObject {
     
-    def clearHighlights(): Unit = js.native
+    def clearHighlights(): Unit
     
-    var highlighted: js.Array[String] = js.native
+    var highlighted: js.Array[String]
     
-    var results: Results = js.native
+    var results: Results
     
-    def setResults(results: Results): Unit = js.native
+    def setResults(results: Results): Unit
     
-    def setTab(index: Double): Unit = js.native
+    def setTab(index: Double): Unit
     
-    var tab: Double = js.native
+    var tab: Double
     
-    def toggleHighlight(target: js.Array[String], highlight: Boolean): Unit = js.native
+    def toggleHighlight(target: js.Array[String], highlight: Boolean): Unit
   }
   object A11yContextStore {
     
@@ -105,14 +105,13 @@ object a11yContextMod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var incomplete: js.Array[Result] = js.native
+    var incomplete: js.Array[Result]
     
-    var passes: js.Array[Result] = js.native
+    var passes: js.Array[Result]
     
-    var violations: js.Array[Result] = js.native
+    var violations: js.Array[Result]
   }
   object Results {
     

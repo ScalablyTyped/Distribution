@@ -3,14 +3,14 @@ package typings.jweixin.mod
 import typings.jweixin.anon.NetworkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IgetNetworkType extends BaseParams {
+trait IgetNetworkType
+  extends StObject
+     with BaseParams {
   
   @JSName("success")
-  def success_MIgetNetworkType(res: NetworkType): Unit = js.native
+  def success_MIgetNetworkType(res: NetworkType): Unit
 }
 object IgetNetworkType {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadingSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to the Shading. */
-  var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+  var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object ShadingSuggestionState {
   

@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * device to maintain the customer&#39;s mobile policies. All the DPCs listed
   * by the API support zero-touch enrollment and are available in Google Play.
   */
-@js.native
 trait SchemaDpc extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaDpc extends StObject {
     * _Google Apps Device Policy_. Useful in an application&#39;s user
     * interface.
     */
-  var dpcName: js.UndefOr[String] = js.native
+  var dpcName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The API resource name in the format
@@ -28,14 +26,14 @@ trait SchemaDpc extends StObject {
     * maintain a reference to a DPC across customer accounts, persist and match
     * the last path component (`DPC_ID`).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The DPC&#39;s Android application ID that looks like a Java
     * package name. Zero-touch enrollment installs the DPC app onto a device
     * using this identifier.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object SchemaDpc {
   

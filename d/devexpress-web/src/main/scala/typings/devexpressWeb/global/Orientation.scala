@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Orientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.Orientation with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.Orientation & Double] = js.native
   
-  /* 0 */ val Landscape: typings.devexpressWeb.Orientation.Landscape with Double = js.native
+  /* 0 */ val Landscape: typings.devexpressWeb.Orientation.Landscape & Double = js.native
   
-  /* 1 */ val Portrait: typings.devexpressWeb.Orientation.Portrait with Double = js.native
+  /* 1 */ val Portrait: typings.devexpressWeb.Orientation.Portrait & Double = js.native
 }

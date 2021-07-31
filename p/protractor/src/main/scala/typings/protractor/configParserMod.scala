@@ -3,7 +3,6 @@ package typings.protractor
 import typings.protractor.configMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configParserMod {
@@ -50,27 +49,26 @@ object configParserMod {
   /* static members */
   object ConfigParser {
     
+    @JSImport("protractor/built/configParser", "ConfigParser")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns only the specs that should run currently based on `config.suite`
       *
       * @return {Array} An array of globs locating the spec files
       */
-    @JSImport("protractor/built/configParser", "ConfigParser.getSpecs")
-    @js.native
-    def getSpecs(config: Config): js.Array[String] = js.native
+    @scala.inline
+    def getSpecs(config: Config): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecs")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: String): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: String, opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
+    @scala.inline
+    def resolveFilePatterns(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any], opt_relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: String, opt_omitWarnings: Unit, opt_relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any], opt_relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     /**
       * Resolve a list of file patterns into a list of individual file paths.
       *
@@ -80,17 +78,13 @@ object configParserMod {
       *
       * @return {Array} The resolved file paths.
       */
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: js.Array[String]): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean): js.Array[String] = js.native
-    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
-    @js.native
-    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
+    @scala.inline
+    def resolveFilePatterns(patterns: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any], opt_relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Unit, opt_relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFilePatterns")(patterns.asInstanceOf[js.Any], opt_omitWarnings.asInstanceOf[js.Any], opt_relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
 }

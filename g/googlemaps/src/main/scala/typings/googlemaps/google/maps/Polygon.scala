@@ -3,11 +3,12 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Polygon extends MVCObject {
+trait Polygon
+  extends StObject
+     with MVCObject {
   
   def getDraggable(): Boolean = js.native
   

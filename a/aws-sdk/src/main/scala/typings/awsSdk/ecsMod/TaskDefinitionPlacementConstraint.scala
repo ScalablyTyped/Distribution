@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionPlacementConstraint extends StObject {
   
   /**
     * A cluster query language expression to apply to the constraint. For more information, see Cluster Query Language in the Amazon Elastic Container Service Developer Guide.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The type of constraint. The MemberOf constraint restricts selection to be from a group of valid candidates.
     */
-  var `type`: js.UndefOr[TaskDefinitionPlacementConstraintType] = js.native
+  var `type`: js.UndefOr[TaskDefinitionPlacementConstraintType] = js.undefined
 }
 object TaskDefinitionPlacementConstraint {
   

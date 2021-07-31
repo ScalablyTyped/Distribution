@@ -2,19 +2,17 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  mobileNumber :string} & jpush-react-native.jpush-react-native.Sequence */
-@js.native
 trait mobileNumberstringSequenc extends StObject {
   
-  var mobileNumber: String = js.native
+  var mobileNumber: String
   
   /**
     * 请求时传入的序列号,会在回调时原样返回
     */
-  var sequence: Double = js.native
+  var sequence: Double
 }
 object mobileNumberstringSequenc {
   

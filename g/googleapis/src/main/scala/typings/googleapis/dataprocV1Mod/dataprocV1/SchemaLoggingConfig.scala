@@ -3,13 +3,11 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The runtime logging config of the job.
   */
-@js.native
 trait SchemaLoggingConfig extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaLoggingConfig extends StObject {
     * &#39;com.google = FATAL&#39;, &#39;root = INFO&#39;, &#39;org.apache =
     * DEBUG&#39;
     */
-  var driverLogLevels: js.UndefOr[StringDictionary[String]] = js.native
+  var driverLogLevels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaLoggingConfig {
   

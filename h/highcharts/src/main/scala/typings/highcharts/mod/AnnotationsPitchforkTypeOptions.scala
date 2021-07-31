@@ -2,40 +2,38 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsPitchforkTypeOptions extends StObject {
   
   /**
     * (Highstock) Inner background options.
     */
-  var innerBackground: js.UndefOr[AnnotationsPitchforkTypeInnerBackgroundOptions] = js.native
+  var innerBackground: js.UndefOr[AnnotationsPitchforkTypeInnerBackgroundOptions] = js.undefined
   
   /**
     * (Highstock) Line options.
     */
-  var line: js.UndefOr[AnnotationsPitchforkTypeLineOptions] = js.native
+  var line: js.UndefOr[AnnotationsPitchforkTypeLineOptions] = js.undefined
   
   /**
     * (Highstock) Outer background options.
     */
-  var outerBackground: js.UndefOr[AnnotationsPitchforkTypeOuterBackgroundOptions] = js.native
+  var outerBackground: js.UndefOr[AnnotationsPitchforkTypeOuterBackgroundOptions] = js.undefined
   
-  var points: js.UndefOr[js.Array[AnnotationsPitchforkTypePointsOptions]] = js.native
+  var points: js.UndefOr[js.Array[AnnotationsPitchforkTypePointsOptions]] = js.undefined
   
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var xAxis: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) This number defines which yAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var yAxis: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsPitchforkTypeOptions {
   

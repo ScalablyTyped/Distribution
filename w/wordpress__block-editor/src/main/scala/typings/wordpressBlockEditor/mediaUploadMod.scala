@@ -6,58 +6,59 @@ import typings.wordpressBlockEditor.anon.Open
 import typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaUploadMod {
   
   object default {
     
+    @scala.inline
+    def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor/components/media-upload", JSImport.Default)
     @js.native
-    def apply[T /* <: Boolean */](props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object MediaUpload {
     
     /* Inlined parent std.Pick<@wordpress/block-editor.@wordpress/block-editor/components/media-placeholder.default.Props<T>, 'addToGallery' | 'allowedTypes' | 'multiple' | 'onSelect' | 'value'> */
-    @js.native
     trait Props[T /* <: Boolean */] extends StObject {
       
-      var addToGallery: js.UndefOr[Boolean] = js.native
+      var addToGallery: js.UndefOr[Boolean] = js.undefined
       
-      var allowedTypes: js.UndefOr[js.Array[String]] = js.native
+      var allowedTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
       /**
         * If `true`, the component will initiate all the states required to represent a gallery. By
         * default, the media modal opens in the gallery edit frame, but that can be changed using
         * the `addToGallery`flag.
         */
-      var gallery: js.UndefOr[Boolean] = js.native
+      var gallery: js.UndefOr[Boolean] = js.undefined
       
       /**
         * CSS class added to the media modal frame.
         */
-      var modalClass: js.UndefOr[String] = js.native
+      var modalClass: js.UndefOr[String] = js.undefined
       
-      var multiple: js.UndefOr[T] = js.native
+      var multiple: js.UndefOr[T] = js.undefined
       
-      var onSelect: js.Function1[/* value */ Dictk | js.Array[Dictk], Unit] = js.native
+      var onSelect: js.Function1[/* value */ Dictk | js.Array[Dictk], Unit]
       
       /**
         * A callback invoked to render the Button opening the media library.
         */
-      def render(props: Open): Element = js.native
+      def render(props: Open): Element
       
       /**
         * Title displayed in the media modal.
         * @defaultValue "Select or Upload Media"
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double | js.Array[Double]] = js.native
+      var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
     }
     object Props {
       
@@ -68,7 +69,7 @@ object mediaUploadMod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], T /* <: Boolean */] (val x: Self with Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Boolean */] (val x: Self & Props[T]) extends AnyVal {
         
         @scala.inline
         def setAddToGallery(value: Boolean): Self = StObject.set(x, "addToGallery", value.asInstanceOf[js.Any])

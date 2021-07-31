@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Node.typesPutBucketAccelerateConfigurationInputMod.
 import typings.awsSdkClientS3Node.typesPutBucketAccelerateConfigurationOutputMod.PutBucketAccelerateConfigurationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object putBucketAccelerateConfigurationCommandMod {
   
   @JSImport("@aws-sdk/client-s3-node/commands/PutBucketAccelerateConfigurationCommand", "PutBucketAccelerateConfigurationCommand")
   @js.native
-  class PutBucketAccelerateConfigurationCommand protected () extends Command[
+  class PutBucketAccelerateConfigurationCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           PutBucketAccelerateConfigurationInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object putBucketAccelerateConfigurationCommandMod {
         ] {
     def this(input: PutBucketAccelerateConfigurationInput) = this()
     
+    /* CompleteClass */
+    override val input: PutBucketAccelerateConfigurationInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[PutBucketAccelerateConfigurationInput, PutBucketAccelerateConfigurationOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[PutBucketAccelerateConfigurationInput, PutBucketAccelerateConfigurationOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[PutBucketAccelerateConfigurationInput, PutBucketAccelerateConfigurationOutput] = js.native
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStorageLensConfigurationsRequest extends StObject {
   
   /**
     * The account ID of the requester.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * A pagination token to request the next page of results.
     */
-  var NextToken: js.UndefOr[ContinuationToken] = js.native
+  var NextToken: js.UndefOr[ContinuationToken] = js.undefined
 }
 object ListStorageLensConfigurationsRequest {
   

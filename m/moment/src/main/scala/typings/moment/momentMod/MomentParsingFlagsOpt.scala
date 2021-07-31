@@ -2,35 +2,33 @@ package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentParsingFlagsOpt extends StObject {
   
-  var charsLeftOver: js.UndefOr[Double] = js.native
+  var charsLeftOver: js.UndefOr[Double] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var invalidFormat: js.UndefOr[Boolean] = js.native
+  var invalidFormat: js.UndefOr[Boolean] = js.undefined
   
-  var invalidMonth: js.UndefOr[String] = js.native
+  var invalidMonth: js.UndefOr[String] = js.undefined
   
-  var iso: js.UndefOr[Boolean] = js.native
+  var iso: js.UndefOr[Boolean] = js.undefined
   
-  var meridiem: js.UndefOr[String | Null] = js.native
+  var meridiem: js.UndefOr[String | Null] = js.undefined
   
-  var nullInput: js.UndefOr[Boolean] = js.native
+  var nullInput: js.UndefOr[Boolean] = js.undefined
   
-  var overflow: js.UndefOr[Double] = js.native
+  var overflow: js.UndefOr[Double] = js.undefined
   
-  var parsedDateParts: js.UndefOr[js.Array[_]] = js.native
+  var parsedDateParts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var unusedInput: js.UndefOr[js.Array[String]] = js.native
+  var unusedInput: js.UndefOr[js.Array[String]] = js.undefined
   
-  var unusedTokens: js.UndefOr[js.Array[String]] = js.native
+  var unusedTokens: js.UndefOr[js.Array[String]] = js.undefined
   
-  var userInvalidated: js.UndefOr[Boolean] = js.native
+  var userInvalidated: js.UndefOr[Boolean] = js.undefined
 }
 object MomentParsingFlagsOpt {
   
@@ -95,7 +93,7 @@ object MomentParsingFlagsOpt {
     def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setParsedDateParts(value: js.Array[_]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
+    def setParsedDateParts(value: js.Array[js.Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParsedDatePartsUndefined: Self = StObject.set(x, "parsedDateParts", js.undefined)

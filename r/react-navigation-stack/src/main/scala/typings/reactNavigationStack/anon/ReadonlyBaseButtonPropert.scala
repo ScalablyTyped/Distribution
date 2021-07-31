@@ -9,48 +9,46 @@ import typings.reactNativeGestureHandler.mod.NativeViewGestureHandlerGestureEven
 import typings.reactNativeGestureHandler.mod.NativeViewGestureHandlerStateChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native-gesture-handler.react-native-gesture-handler.BaseButtonProperties> */
-@js.native
 trait ReadonlyBaseButtonPropert extends StObject {
   
-  val accessibilityLabel: js.UndefOr[String] = js.native
+  val accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  val disallowInterruption: js.UndefOr[Boolean] = js.native
+  val disallowInterruption: js.UndefOr[Boolean] = js.undefined
   
-  val enabled: js.UndefOr[Boolean] = js.native
+  val enabled: js.UndefOr[Boolean] = js.undefined
   
-  val exclusive: js.UndefOr[Boolean] = js.native
+  val exclusive: js.UndefOr[Boolean] = js.undefined
   
   val hitSlop: js.UndefOr[
     Double | typings.reactNativeGestureHandler.anon.Bottom | typings.reactNativeGestureHandler.anon.Left | Right | typings.reactNativeGestureHandler.anon.Height | BottomHeight
-  ] = js.native
+  ] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  val onActiveStateChange: js.UndefOr[js.Function1[/* active */ Boolean, Unit]] = js.native
+  val onActiveStateChange: js.UndefOr[js.Function1[/* active */ Boolean, Unit]] = js.undefined
   
-  val onGestureEvent: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerGestureEvent, Unit]] = js.native
+  val onGestureEvent: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  val onHandlerStateChange: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerStateChangeEvent, Unit]] = js.native
+  val onHandlerStateChange: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerStateChangeEvent, Unit]] = js.undefined
   
-  val onPress: js.UndefOr[js.Function1[/* pointerInside */ Boolean, Unit]] = js.native
+  val onPress: js.UndefOr[js.Function1[/* pointerInside */ Boolean, Unit]] = js.undefined
   
-  val rippleColor: js.UndefOr[String] = js.native
+  val rippleColor: js.UndefOr[String] = js.undefined
   
-  val shouldActivateOnStart: js.UndefOr[Boolean] = js.native
+  val shouldActivateOnStart: js.UndefOr[Boolean] = js.undefined
   
-  val shouldCancelWhenOutside: js.UndefOr[Boolean] = js.native
+  val shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined
   
-  val simultaneousHandlers: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+  val simultaneousHandlers: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
   
-  val style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val testID: js.UndefOr[String] = js.native
+  val testID: js.UndefOr[String] = js.undefined
   
-  val waitFor: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+  val waitFor: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
 }
 object ReadonlyBaseButtonPropert {
   
@@ -144,10 +142,10 @@ object ReadonlyBaseButtonPropert {
     def setShouldCancelWhenOutsideUndefined: Self = StObject.set(x, "shouldCancelWhenOutside", js.undefined)
     
     @scala.inline
-    def setSimultaneousHandlers(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
+    def setSimultaneousHandlers(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimultaneousHandlersFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
+    def setSimultaneousHandlersFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSimultaneousHandlersNull: Self = StObject.set(x, "simultaneousHandlers", null)
@@ -174,10 +172,10 @@ object ReadonlyBaseButtonPropert {
     def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def setWaitFor(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+    def setWaitFor(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+    def setWaitForFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setWaitForNull: Self = StObject.set(x, "waitFor", null)

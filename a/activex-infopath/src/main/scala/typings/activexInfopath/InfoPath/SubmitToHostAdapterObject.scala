@@ -2,24 +2,22 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitToHostAdapterObject extends StObject {
   
   @JSName("InfoPath.SubmitToHostAdapterObject_typekey")
-  var InfoPathDotSubmitToHostAdapterObject_typekey: SubmitToHostAdapterObject = js.native
+  var InfoPathDotSubmitToHostAdapterObject_typekey: SubmitToHostAdapterObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
 }
 object SubmitToHostAdapterObject {
   

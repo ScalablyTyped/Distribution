@@ -3,15 +3,13 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPickerClosingOperation extends StObject {
   
-  var deadline: Date = js.native
+  var deadline: Date
   
-  def getDeferral(): PickerClosingDeferral = js.native
+  def getDeferral(): PickerClosingDeferral
 }
 object IPickerClosingOperation {
   

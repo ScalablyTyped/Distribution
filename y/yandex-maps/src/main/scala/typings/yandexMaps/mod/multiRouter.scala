@@ -8,16 +8,23 @@ import typings.yandexMaps.mod.multiRouter.driving.Route
 import typings.yandexMaps.mod.multiRouter.driving.RouteModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.EditorAddon")
   @js.native
-  class EditorAddon () extends ICustomizable {
+  class EditorAddon ()
+    extends StObject
+       with ICustomizable {
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def isActive(): Boolean = js.native
+    
+    /* CompleteClass */
+    var options: IOptionManager = js.native
     
     def start(state: js.Object): Unit = js.native
     
@@ -28,7 +35,9 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.MultiRoute")
   @js.native
-  class MultiRoute protected () extends IGeoObject[IGeometry] {
+  class MultiRoute protected ()
+    extends StObject
+       with IGeoObject[IGeometry] {
     def this(model: IMultiRouteModelJson) = this()
     def this(model: MultiRouteModel) = this()
     def this(model: IMultiRouteModelJson, options: Dictindex) = this()
@@ -36,9 +45,15 @@ object multiRouter {
     
     var editor: EditorAddon = js.native
     
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
+    
     def getActiveRoute(): Route | typings.yandexMaps.mod.multiRouter.masstransit.Route | Null = js.native
     
     def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+    
+    /* CompleteClass */
+    override def getMap(): Map_ = js.native
     
     def getPixelBounds(): js.Array[js.Array[Double]] | Null = js.native
     
@@ -57,11 +72,16 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.MultiRouteModel")
   @js.native
-  class MultiRouteModel protected () extends IEventEmitter {
+  class MultiRouteModel protected ()
+    extends StObject
+       with IEventEmitter {
     def this(referencePoints: js.Array[IMultiRouteReferencePoint]) = this()
     def this(referencePoints: js.Array[IMultiRouteReferencePoint], params: IMultiRouteParams) = this()
     
     def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def getAllPoints(): js.Array[WayPointModel | ViaPointModel] = js.native
     
@@ -84,27 +104,31 @@ object multiRouter {
     var properties: Manager = js.native
     
     def setParams(params: IMultiRouteParams): Unit = js.native
-    def setParams(params: IMultiRouteParams, extend: js.UndefOr[scala.Nothing], clearRequests: Boolean): Unit = js.native
     def setParams(params: IMultiRouteParams, extend: Boolean): Unit = js.native
     def setParams(params: IMultiRouteParams, extend: Boolean, clearRequests: Boolean): Unit = js.native
+    def setParams(params: IMultiRouteParams, extend: Unit, clearRequests: Boolean): Unit = js.native
     
     def setReferencePoints(referencePoints: js.Array[IMultiRouteReferencePoint]): Unit = js.native
-    def setReferencePoints(
-      referencePoints: js.Array[IMultiRouteReferencePoint],
-      viaIndexes: js.UndefOr[scala.Nothing],
-      clearRequests: Boolean
-    ): Unit = js.native
     def setReferencePoints(referencePoints: js.Array[IMultiRouteReferencePoint], viaIndexes: js.Array[Double]): Unit = js.native
     def setReferencePoints(
       referencePoints: js.Array[IMultiRouteReferencePoint],
       viaIndexes: js.Array[Double],
       clearRequests: Boolean
     ): Unit = js.native
+    def setReferencePoints(referencePoints: js.Array[IMultiRouteReferencePoint], viaIndexes: Unit, clearRequests: Boolean): Unit = js.native
   }
   
   @JSImport("yandex-maps", "multiRouter.ViaPoint")
   @js.native
-  class ViaPoint () extends IGeoObject[IGeometry] {
+  class ViaPoint ()
+    extends StObject
+       with IGeoObject[IGeometry] {
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def getMap(): Map_ = js.native
     
     @JSName("properties")
     var properties_ViaPoint: Manager = js.native
@@ -112,9 +136,14 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.ViaPointModel")
   @js.native
-  class ViaPointModel () extends IEventEmitter {
+  class ViaPointModel ()
+    extends StObject
+       with IEventEmitter {
     
     def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     var geometry: Point = js.native
     
@@ -133,7 +162,15 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.WayPoint")
   @js.native
-  class WayPoint () extends IGeoObject[IGeometry] {
+  class WayPoint ()
+    extends StObject
+       with IGeoObject[IGeometry] {
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def getMap(): Map_ = js.native
     
     var model: WayPointModel = js.native
     
@@ -143,9 +180,14 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.WayPointModel")
   @js.native
-  class WayPointModel () extends IEventEmitter {
+  class WayPointModel ()
+    extends StObject
+       with IEventEmitter {
     
     def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     var geometry: Point = js.native
     
@@ -166,7 +208,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Path")
     @js.native
-    class Path () extends IGeoObject[IGeometry] {
+    class Path ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       def getSegments(): GeoObjectCollection = js.native
       
@@ -178,9 +228,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.PathModel")
     @js.native
-    class PathModel () extends IEventEmitter {
+    class PathModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def getSegments(): js.Array[SegmentModel] = js.native
       
@@ -195,16 +250,29 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Route")
     @js.native
-    class Route () extends IGeoObject[IGeometry] {
+    class Route ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       def getPaths(): GeoObjectCollection = js.native
     }
     
     @JSImport("yandex-maps", "multiRouter.driving.RouteModel")
     @js.native
-    class RouteModel () extends IEventEmitter {
+    class RouteModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def getPaths(): js.Array[PathModel] = js.native
       
@@ -219,7 +287,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Segment")
     @js.native
-    class Segment () extends IGeoObject[IGeometry] {
+    class Segment ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       @JSName("properties")
       var properties_Segment: Manager = js.native
@@ -227,9 +303,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.SegmentModel")
     @js.native
-    class SegmentModel () extends IEventEmitter {
+    class SegmentModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       var geometry: LineString = js.native
       
@@ -247,7 +328,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.Path")
     @js.native
-    class Path () extends IGeoObject[IGeometry] {
+    class Path ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       def getSegmentMarkers(): GeoObjectCollection = js.native
       
@@ -261,9 +350,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.PathModel")
     @js.native
-    class PathModel () extends IEventEmitter {
+    class PathModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def getSegments(): js.Array[TransferSegmentModel | TransportSegmentModel | WalkSegmentModel] = js.native
       
@@ -278,7 +372,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.Route")
     @js.native
-    class Route () extends IGeoObject[IGeometry] {
+    class Route ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       def getPaths(): GeoObjectCollection = js.native
       
@@ -290,9 +392,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.RouteModel")
     @js.native
-    class RouteModel () extends IEventEmitter {
+    class RouteModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def getPaths(): js.Array[PathModel] = js.native
       
@@ -307,7 +414,12 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.StopModel")
     @js.native
-    class StopModel () extends IEventEmitter {
+    class StopModel ()
+      extends StObject
+         with IEventEmitter {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       var geometry: Point = js.native
       
@@ -320,7 +432,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransferSegment")
     @js.native
-    class TransferSegment () extends IGeoObject[IGeometry] {
+    class TransferSegment ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       var model: TransferSegmentModel = js.native
       
@@ -330,9 +450,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransferSegmentModel")
     @js.native
-    class TransferSegmentModel () extends IEventEmitter {
+    class TransferSegmentModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(segmentJson: js.Object): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       var geometry: LineString = js.native
       
@@ -345,7 +470,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransportSegment")
     @js.native
-    class TransportSegment () extends IGeoObject[IGeometry] {
+    class TransportSegment ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       var model: TransportSegmentModel = js.native
       
@@ -355,9 +488,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransportSegmentModel")
     @js.native
-    class TransportSegmentModel () extends IEventEmitter {
+    class TransportSegmentModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       var geometry: LineString = js.native
       
@@ -374,7 +512,15 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.WalkSegment")
     @js.native
-    class WalkSegment () extends IGeoObject[IGeometry] {
+    class WalkSegment ()
+      extends StObject
+         with IGeoObject[IGeometry] {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getMap(): Map_ = js.native
       
       var model: WalkSegmentModel = js.native
       
@@ -384,9 +530,14 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.WalkSegmentModel")
     @js.native
-    class WalkSegmentModel () extends IEventEmitter {
+    class WalkSegmentModel ()
+      extends StObject
+         with IEventEmitter {
       
       def destroy(): Unit = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       var geometry: LineString = js.native
       

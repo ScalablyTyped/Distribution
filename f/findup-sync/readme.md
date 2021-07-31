@@ -10,9 +10,9 @@ Find the first file matching a given pattern in the current directory or the nea
 | ------------------ | :-------------: |
 | Full name          | findup-sync |
 | Keywords           | file, find, find-up, findup, glob, match, pattern, resolve, search |
-| # releases         | 3 |
-| # dependents       | 453 |
-| # downloads        | 323851523 |
+| # releases         | 2 |
+| # dependents       | 465 |
+| # downloads        | 373446795 |
 | # stars            | 11 |
 
 ## Links

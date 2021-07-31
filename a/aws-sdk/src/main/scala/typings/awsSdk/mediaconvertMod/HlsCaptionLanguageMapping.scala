@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsCaptionLanguageMapping extends StObject {
   
   /**
     * Caption channel.
     */
-  var CaptionChannel: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.native
+  var CaptionChannel: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined
   
   /**
     * Specify the language for this captions channel, using the ISO 639-2 or ISO 639-3 three-letter language code
     */
-  var CustomLanguageCode: js.UndefOr[stringMin3Max3PatternAZaZ3] = js.native
+  var CustomLanguageCode: js.UndefOr[stringMin3Max3PatternAZaZ3] = js.undefined
   
   /**
     * Specify the language, using the ISO 639-2 three-letter code listed at https://www.loc.gov/standards/iso639-2/php/code_list.php.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.mediaconvertMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.mediaconvertMod.LanguageCode] = js.undefined
   
   /**
     * Caption language description.
     */
-  var LanguageDescription: js.UndefOr[string] = js.native
+  var LanguageDescription: js.UndefOr[string] = js.undefined
 }
 object HlsCaptionLanguageMapping {
   

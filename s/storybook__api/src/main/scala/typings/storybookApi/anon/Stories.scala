@@ -3,15 +3,13 @@ package typings.storybookApi.anon
 import typings.storybookApi.storiesMod.StoriesRaw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stories extends StObject {
   
-  var stories: StoriesRaw = js.native
+  var stories: StoriesRaw
   
-  var v: js.UndefOr[Double] = js.native
+  var v: js.UndefOr[Double] = js.undefined
 }
 object Stories {
   

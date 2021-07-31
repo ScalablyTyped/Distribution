@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingGroup extends StObject {
   
   /**
     * An Auto Scaling lifecycle event hook name.
     */
-  var hook: js.UndefOr[AutoScalingGroupHook] = js.native
+  var hook: js.UndefOr[AutoScalingGroupHook] = js.undefined
   
   /**
     * The Auto Scaling group name.
     */
-  var name: js.UndefOr[AutoScalingGroupName] = js.native
+  var name: js.UndefOr[AutoScalingGroupName] = js.undefined
 }
 object AutoScalingGroup {
   

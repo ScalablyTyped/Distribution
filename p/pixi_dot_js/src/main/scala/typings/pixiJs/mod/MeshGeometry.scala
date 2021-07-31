@@ -4,7 +4,6 @@ import typings.std.Float32Array
 import typings.std.Uint16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,31 +26,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "MeshGeometry")
 @js.native
 class MeshGeometry ()
-  extends typings.pixiJs.PIXI.MeshGeometry {
+  extends StObject
+     with typings.pixiJs.PIXI.MeshGeometry {
   def this(vertices: js.Array[Double]) = this()
   def this(vertices: Float32Array) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: js.Array[Double]) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: Float32Array) = this()
   def this(vertices: js.Array[Double], uvs: js.Array[Double]) = this()
   def this(vertices: js.Array[Double], uvs: Float32Array) = this()
+  def this(vertices: Unit, uvs: js.Array[Double]) = this()
+  def this(vertices: Unit, uvs: Float32Array) = this()
   def this(vertices: Float32Array, uvs: js.Array[Double]) = this()
   def this(vertices: Float32Array, uvs: Float32Array) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: js.UndefOr[scala.Nothing], index: js.Array[Double]) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: js.UndefOr[scala.Nothing], index: Uint16Array) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: js.UndefOr[scala.Nothing], uvs: Float32Array, index: Uint16Array) = this()
-  def this(vertices: js.Array[Double], uvs: js.UndefOr[scala.Nothing], index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: js.UndefOr[scala.Nothing], index: Uint16Array) = this()
   def this(vertices: js.Array[Double], uvs: js.Array[Double], index: js.Array[Double]) = this()
   def this(vertices: js.Array[Double], uvs: js.Array[Double], index: Uint16Array) = this()
+  def this(vertices: js.Array[Double], uvs: Unit, index: js.Array[Double]) = this()
+  def this(vertices: js.Array[Double], uvs: Unit, index: Uint16Array) = this()
   def this(vertices: js.Array[Double], uvs: Float32Array, index: js.Array[Double]) = this()
   def this(vertices: js.Array[Double], uvs: Float32Array, index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: js.UndefOr[scala.Nothing], index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: js.UndefOr[scala.Nothing], index: Uint16Array) = this()
+  def this(vertices: Unit, uvs: js.Array[Double], index: js.Array[Double]) = this()
+  def this(vertices: Unit, uvs: js.Array[Double], index: Uint16Array) = this()
+  def this(vertices: Unit, uvs: Unit, index: js.Array[Double]) = this()
+  def this(vertices: Unit, uvs: Unit, index: Uint16Array) = this()
+  def this(vertices: Unit, uvs: Float32Array, index: js.Array[Double]) = this()
+  def this(vertices: Unit, uvs: Float32Array, index: Uint16Array) = this()
   def this(vertices: Float32Array, uvs: js.Array[Double], index: js.Array[Double]) = this()
   def this(vertices: Float32Array, uvs: js.Array[Double], index: Uint16Array) = this()
+  def this(vertices: Float32Array, uvs: Unit, index: js.Array[Double]) = this()
+  def this(vertices: Float32Array, uvs: Unit, index: Uint16Array) = this()
   def this(vertices: Float32Array, uvs: Float32Array, index: js.Array[Double]) = this()
   def this(vertices: Float32Array, uvs: Float32Array, index: Uint16Array) = this()
 }

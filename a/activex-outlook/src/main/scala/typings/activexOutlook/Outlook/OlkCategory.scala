@@ -4,28 +4,26 @@ import typings.activexStdole.stdole.OLE_COLOR
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkCategory extends StObject {
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var BackColor: OLE_COLOR = js.native
+  var BackColor: OLE_COLOR
   
-  var BackStyle: OlBackStyle = js.native
+  var BackStyle: OlBackStyle
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var ForeColor: OLE_COLOR = js.native
+  var ForeColor: OLE_COLOR
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkCategory_typekey")
-  var OutlookDotOlkCategory_typekey: OlkCategory = js.native
+  var OutlookDotOlkCategory_typekey: OlkCategory
 }
 object OlkCategory {
   

@@ -3,29 +3,30 @@ package typings.reactDocgenTypescriptLoader
 import typings.reactDocgenTypescript.parserMod.ComponentDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateDocgenCodeBlockMod {
   
-  @JSImport("react-docgen-typescript-loader/dist/generateDocgenCodeBlock", JSImport.Default)
+  @JSImport("react-docgen-typescript-loader/dist/generateDocgenCodeBlock", JSImport.Namespace)
   @js.native
-  def default(options: GeneratorOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(options: GeneratorOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait GeneratorOptions extends StObject {
     
-    var componentDocs: js.Array[ComponentDoc] = js.native
+    var componentDocs: js.Array[ComponentDoc]
     
-    var docgenCollectionName: String | Null = js.native
+    var docgenCollectionName: String | Null
     
-    var filename: String = js.native
+    var filename: String
     
-    var setDisplayName: Boolean = js.native
+    var setDisplayName: Boolean
     
-    var source: String = js.native
+    var source: String
     
-    var typePropName: String = js.native
+    var typePropName: String
   }
   object GeneratorOptions {
     
@@ -37,7 +38,7 @@ object generateDocgenCodeBlockMod {
       source: String,
       typePropName: String
     ): GeneratorOptions = {
-      val __obj = js.Dynamic.literal(componentDocs = componentDocs.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], setDisplayName = setDisplayName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], typePropName = typePropName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(componentDocs = componentDocs.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], setDisplayName = setDisplayName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], typePropName = typePropName.asInstanceOf[js.Any], docgenCollectionName = null)
       __obj.asInstanceOf[GeneratorOptions]
     }
     

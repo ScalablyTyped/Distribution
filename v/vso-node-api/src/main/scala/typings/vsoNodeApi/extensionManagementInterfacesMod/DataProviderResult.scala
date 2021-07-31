@@ -3,46 +3,44 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProviderResult extends StObject {
   
   /**
     * This is the set of data providers that were requested, but either they were defined as client providers, or as remote providers that failed and may be retried by the client.
     */
-  var clientProviders: StringDictionary[ClientDataProviderQuery] = js.native
+  var clientProviders: StringDictionary[ClientDataProviderQuery]
   
   /**
     * Property bag of data keyed off of the data provider contribution id
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
   /**
     * Set of exceptions that occurred resolving the data providers.
     */
-  var exceptions: StringDictionary[DataProviderExceptionDetails] = js.native
+  var exceptions: StringDictionary[DataProviderExceptionDetails]
   
   /**
     * List of data providers resolved in the data-provider query
     */
-  var resolvedProviders: js.Array[ResolvedDataProvider] = js.native
+  var resolvedProviders: js.Array[ResolvedDataProvider]
   
   /**
     * Scope name applied to this data provider result.
     */
-  var scopeName: String = js.native
+  var scopeName: String
   
   /**
     * Scope value applied to this data provider result.
     */
-  var scopeValue: String = js.native
+  var scopeValue: String
   
   /**
     * Property bag of shared data that was contributed to by any of the individual data providers
     */
-  var sharedData: StringDictionary[js.Any] = js.native
+  var sharedData: StringDictionary[js.Any]
 }
 object DataProviderResult {
   

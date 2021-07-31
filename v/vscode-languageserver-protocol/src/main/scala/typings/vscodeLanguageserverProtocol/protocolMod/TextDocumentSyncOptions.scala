@@ -2,41 +2,39 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentSyncOptions extends StObject {
   
   /**
     * Change notifications are sent to the server. See TextDocumentSyncKind.None, TextDocumentSyncKind.Full
     * and TextDocumentSyncKind.Incremental. If omitted it defaults to TextDocumentSyncKind.None.
     */
-  var change: js.UndefOr[TextDocumentSyncKind] = js.native
+  var change: js.UndefOr[TextDocumentSyncKind] = js.undefined
   
   /**
     * Open and close notifications are sent to the server. If omitted open close notification should not
     * be sent.
     */
-  var openClose: js.UndefOr[Boolean] = js.native
+  var openClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If present save notifications are sent to the server. If omitted the notification should not be
     * sent.
     */
-  var save: js.UndefOr[SaveOptions] = js.native
+  var save: js.UndefOr[SaveOptions] = js.undefined
   
   /**
     * If present will save notifications are sent to the server. If omitted the notification should not be
     * sent.
     */
-  var willSave: js.UndefOr[Boolean] = js.native
+  var willSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If present will save wait until requests are sent to the server. If omitted the request should not be
     * sent.
     */
-  var willSaveWaitUntil: js.UndefOr[Boolean] = js.native
+  var willSaveWaitUntil: js.UndefOr[Boolean] = js.undefined
 }
 object TextDocumentSyncOptions {
   

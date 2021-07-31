@@ -4,23 +4,21 @@ import typings.awsSdkClientPinpointBrowser.typesGpscoordinatesMod.GPSCoordinates
 import typings.awsSdkClientPinpointBrowser.typesGpscoordinatesMod.UnmarshalledGPSCoordinates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGpspointdimensionMod {
   
-  @js.native
   trait GPSPointDimension extends StObject {
     
     /**
       * Coordinate to measure distance from.
       */
-    var Coordinates: js.UndefOr[GPSCoordinates] = js.native
+    var Coordinates: js.UndefOr[GPSCoordinates] = js.undefined
     
     /**
       * Range in kilometers from the coordinate.
       */
-    var RangeInKilometers: js.UndefOr[Double] = js.native
+    var RangeInKilometers: js.UndefOr[Double] = js.undefined
   }
   object GPSPointDimension {
     
@@ -47,14 +45,15 @@ object typesGpspointdimensionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGPSPointDimension extends GPSPointDimension {
+  trait UnmarshalledGPSPointDimension
+    extends StObject
+       with GPSPointDimension {
     
     /**
       * Coordinate to measure distance from.
       */
     @JSName("Coordinates")
-    var Coordinates_UnmarshalledGPSPointDimension: js.UndefOr[UnmarshalledGPSCoordinates] = js.native
+    var Coordinates_UnmarshalledGPSPointDimension: js.UndefOr[UnmarshalledGPSCoordinates] = js.undefined
   }
   object UnmarshalledGPSPointDimension {
     

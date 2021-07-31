@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Observation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyObservationHeaders extends StObject {
   
-  var body: Observation = js.native
+  var body: Observation
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Observation = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Observation
 }
 object BodyObservationHeaders {
   
   @scala.inline
-  def apply(
-    body: Observation,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.Observation
-  ): BodyObservationHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Observation, id: String): BodyObservationHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Observation")
     __obj.asInstanceOf[BodyObservationHeaders]
   }
   

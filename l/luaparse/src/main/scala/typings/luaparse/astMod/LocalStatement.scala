@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.LocalStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.LocalStatement]
+     with _Statement {
   
-  var init: js.Array[Expression] = js.native
+  var init: js.Array[Expression]
   
-  var variables: js.Array[Identifier] = js.native
+  var variables: js.Array[Identifier]
 }
 object LocalStatement {
   
   @scala.inline
-  def apply(
-    init: js.Array[Expression],
-    `type`: typings.luaparse.luaparseStrings.LocalStatement,
-    variables: js.Array[Identifier]
-  ): LocalStatement = {
+  def apply(init: js.Array[Expression], variables: js.Array[Identifier]): LocalStatement = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LocalStatement")
     __obj.asInstanceOf[LocalStatement]
   }
   

@@ -2,24 +2,22 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for PartitionQuery or PartitionRead
   */
-@js.native
 trait SchemaPartitionResponse extends StObject {
   
   /**
     * Partitions created by this request.
     */
-  var partitions: js.UndefOr[js.Array[SchemaPartition]] = js.native
+  var partitions: js.UndefOr[js.Array[SchemaPartition]] = js.undefined
   
   /**
     * Transaction created by this request.
     */
-  var transaction: js.UndefOr[SchemaTransaction] = js.native
+  var transaction: js.UndefOr[SchemaTransaction] = js.undefined
 }
 object SchemaPartitionResponse {
   

@@ -9,7 +9,6 @@ import typings.jointjs.mod.dia.CellView
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlighters {
@@ -36,10 +35,9 @@ object highlighters {
   @scala.inline
   def stroke_=(x: GenericHighlighter[stroke]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AddClassHighlighterArguments extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object AddClassHighlighterArguments {
     
@@ -72,12 +70,11 @@ object highlighters {
   
   type GenericHighlighterArguments[K /* <: HighlighterType */] = /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.highlighters.HighlighterArgumentsMap[K] */ js.Any
   
-  @js.native
   trait GenericHighlighterJSON[K /* <: HighlighterType */] extends StObject {
     
-    var name: K = js.native
+    var name: K
     
-    var options: js.UndefOr[GenericHighlighterArguments[K]] = js.native
+    var options: js.UndefOr[GenericHighlighterArguments[K]] = js.undefined
   }
   object GenericHighlighterJSON {
     
@@ -88,7 +85,7 @@ object highlighters {
     }
     
     @scala.inline
-    implicit class GenericHighlighterJSONMutableBuilder[Self <: GenericHighlighterJSON[_], K /* <: HighlighterType */] (val x: Self with GenericHighlighterJSON[K]) extends AnyVal {
+    implicit class GenericHighlighterJSONMutableBuilder[Self <: GenericHighlighterJSON[?], K /* <: HighlighterType */] (val x: Self & GenericHighlighterJSON[K]) extends AnyVal {
       
       @scala.inline
       def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -130,15 +127,15 @@ object highlighters {
     def ry: typings.jointjs.jointjsStrings.ry = "ry".asInstanceOf[typings.jointjs.jointjsStrings.ry]
   }
   
-  @js.native
   trait HighlighterArgumentsMap
-    extends /* key */ StringDictionary[StringDictionary[js.Any]] {
+    extends StObject
+       with /* key */ StringDictionary[StringDictionary[js.Any]] {
     
-    var addClass: AddClassHighlighterArguments = js.native
+    var addClass: AddClassHighlighterArguments
     
-    var opacity: OpacityHighlighterArguments = js.native
+    var opacity: OpacityHighlighterArguments
     
-    var stroke: StrokeHighlighterArguments = js.native
+    var stroke: StrokeHighlighterArguments
   }
   object HighlighterArgumentsMap {
     
@@ -175,19 +172,17 @@ object highlighters {
   */
   trait HighlighterType extends StObject
   
-  @js.native
   trait OpacityHighlighterArguments extends StObject
   
-  @js.native
   trait StrokeHighlighterArguments extends StObject {
     
-    var attrs: js.UndefOr[NativeSVGAttributes] = js.native
+    var attrs: js.UndefOr[NativeSVGAttributes] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
   }
   object StrokeHighlighterArguments {
     

@@ -5,29 +5,27 @@ import typings.std.PropertyDecorator
 import typings.validator.mod.validator.PostalCodeLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isPostalCodeMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsPostalCode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsPostalCode", "IS_POSTAL_CODE")
   @js.native
   val IS_POSTAL_CODE: /* "isPostalCode" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsPostalCode", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsPostalCode", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsPostalCode", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: PostalCodeLocale): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsPostalCode", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: PostalCodeLocale, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPostalCode_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: PostalCodeLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: PostalCodeLocale, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsPostalCode", "isPostalCode")
-  @js.native
-  def isPostalCode(value: js.Any, locale: PostalCodeLocale): Boolean = js.native
+  @scala.inline
+  def isPostalCode(value: js.Any, locale: PostalCodeLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPostalCode")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

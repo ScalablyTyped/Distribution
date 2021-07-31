@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait AnnotationsOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     */
-  var animation: js.UndefOr[Boolean | AnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | AnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's control
@@ -27,105 +25,105 @@ trait AnnotationsOptions extends StObject {
     * object. Options from the controlPointOptions can be overwritten by
     * options in a specific control point.
     */
-  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.native
+  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
   
   /**
     * (Highstock) A crooked line annotation.
     */
-  var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.native
+  var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
     * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
     */
-  var draggable: js.UndefOr[AnnotationDraggableValue] = js.native
+  var draggable: js.UndefOr[AnnotationDraggableValue] = js.undefined
   
   /**
     * (Highstock) An elliott wave annotation.
     */
-  var elliottWave: js.UndefOr[AnnotationsElliottWaveOptions] = js.native
+  var elliottWave: js.UndefOr[AnnotationsElliottWaveOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Events available in annotations.
     */
-  var events: js.UndefOr[AnnotationsEventsOptions] = js.native
+  var events: js.UndefOr[AnnotationsEventsOptions] = js.undefined
   
   /**
     * (Highstock) A fibonacci annotation.
     */
-  var fibonacci: js.UndefOr[AnnotationsFibonacciOptions] = js.native
+  var fibonacci: js.UndefOr[AnnotationsFibonacciOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sets an ID for an annotation.
     * Can be user later when removing an annotation in
     * Chart.removeAnnotation(id) method.
     */
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highstock) An infinity line annotation.
     */
-  var infinityLine: js.UndefOr[AnnotationsInfinityLineOptions] = js.native
+  var infinityLine: js.UndefOr[AnnotationsInfinityLineOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's labels.
     * Each label inherits options from the labelOptions object. An option from
     * the labelOptions can be overwritten by config for a specific label.
     */
-  var labelOptions: js.UndefOr[AnnotationsLabelOptions] = js.native
+  var labelOptions: js.UndefOr[AnnotationsLabelOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of labels for the
     * annotation. For options that apply to multiple labels, they can be added
     * to the labelOptions.
     */
-  var labels: js.UndefOr[js.Array[AnnotationsLabelsOptions]] = js.native
+  var labels: js.UndefOr[js.Array[AnnotationsLabelsOptions]] = js.undefined
   
   /**
     * (Highstock) A measure annotation.
     */
-  var measure: js.UndefOr[AnnotationsMeasureOptions] = js.native
+  var measure: js.UndefOr[AnnotationsMeasureOptions] = js.undefined
   
   /**
     * (Highstock) A pitchfork annotation.
     */
-  var pitchfork: js.UndefOr[AnnotationsPitchforkOptions] = js.native
+  var pitchfork: js.UndefOr[AnnotationsPitchforkOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's shapes.
     * Each shape inherits options from the shapeOptions object. An option from
     * the shapeOptions can be overwritten by config for a specific shape.
     */
-  var shapeOptions: js.UndefOr[AnnotationsShapeOptions] = js.native
+  var shapeOptions: js.UndefOr[AnnotationsShapeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of shapes for the
     * annotation. For options that apply to multiple shapes, then can be added
     * to the shapeOptions.
     */
-  var shapes: js.UndefOr[js.Array[AnnotationsShapesOptions]] = js.native
+  var shapes: js.UndefOr[js.Array[AnnotationsShapesOptions]] = js.undefined
   
   /**
     * (Highstock) A tunnel annotation.
     */
-  var tunnel: js.UndefOr[AnnotationsTunnelOptions] = js.native
+  var tunnel: js.UndefOr[AnnotationsTunnelOptions] = js.undefined
   
   /**
     * (Highstock) A vertical line annotation.
     */
-  var verticalLine: js.UndefOr[AnnotationsVerticalLineOptions] = js.native
+  var verticalLine: js.UndefOr[AnnotationsVerticalLineOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the annotation is
     * visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the annotation.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsOptions {
   

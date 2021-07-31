@@ -2,29 +2,27 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generic specification of a source configuration file
   */
-@js.native
 trait SchemaConfigFile extends StObject {
   
   /**
     * The bytes that constitute the file.
     */
-  var fileContents: js.UndefOr[String] = js.native
+  var fileContents: js.UndefOr[String] = js.undefined
   
   /**
     * The file name of the configuration file (full or relative path).
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * The type of configuration file this represents.
     */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
 }
 object SchemaConfigFile {
   

@@ -2,15 +2,15 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellHyperlinkValue extends _CellValue {
+trait CellHyperlinkValue
+  extends StObject
+     with _CellValue {
   
-  var hyperlink: String = js.native
+  var hyperlink: String
   
-  var text: String = js.native
+  var text: String
 }
 object CellHyperlinkValue {
   

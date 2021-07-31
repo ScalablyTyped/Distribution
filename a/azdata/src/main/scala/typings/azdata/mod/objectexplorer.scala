@@ -4,13 +4,15 @@ import typings.vscode.Thenable
 import typings.vscode.mod.TreeItemCollapsibleState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectexplorer {
   
-  @JSImport("azdata", "objectexplorer.findNodes")
+  @JSImport("azdata", "objectexplorer")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def findNodes(
     connectionId: String,
     `type`: String,
@@ -18,25 +20,23 @@ object objectexplorer {
     name: String,
     database: String,
     parentObjectNames: js.Array[String]
-  ): Thenable[js.Array[ObjectExplorerNode]] = js.native
+  ): Thenable[js.Array[ObjectExplorerNode]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(connectionId.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], database.asInstanceOf[js.Any], parentObjectNames.asInstanceOf[js.Any])).asInstanceOf[Thenable[js.Array[ObjectExplorerNode]]]
   
-  @JSImport("azdata", "objectexplorer.getActiveConnectionNodes")
-  @js.native
-  def getActiveConnectionNodes(): Thenable[js.Array[ObjectExplorerNode]] = js.native
+  @scala.inline
+  def getActiveConnectionNodes(): Thenable[js.Array[ObjectExplorerNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnectionNodes")().asInstanceOf[Thenable[js.Array[ObjectExplorerNode]]]
   
-  @JSImport("azdata", "objectexplorer.getNode")
-  @js.native
-  def getNode(connectionId: String): Thenable[ObjectExplorerNode] = js.native
-  @JSImport("azdata", "objectexplorer.getNode")
-  @js.native
-  def getNode(connectionId: String, nodePath: String): Thenable[ObjectExplorerNode] = js.native
+  @scala.inline
+  def getNode(connectionId: String): Thenable[ObjectExplorerNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ObjectExplorerNode]]
+  @scala.inline
+  def getNode(connectionId: String, nodePath: String): Thenable[ObjectExplorerNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any], nodePath.asInstanceOf[js.Any])).asInstanceOf[Thenable[ObjectExplorerNode]]
   
-  @JSImport("azdata", "objectexplorer.getSessionConnectionProfile")
-  @js.native
-  def getSessionConnectionProfile(sessionId: String): Thenable[IConnectionProfile] = js.native
+  @scala.inline
+  def getSessionConnectionProfile(sessionId: String): Thenable[IConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionConnectionProfile")(sessionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[IConnectionProfile]]
   
   @js.native
-  trait ObjectExplorerNode extends NodeInfo {
+  trait ObjectExplorerNode
+    extends StObject
+       with NodeInfo {
     
     /**
       * The id of the connection that the node exists under

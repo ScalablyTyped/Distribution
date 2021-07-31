@@ -11,8 +11,8 @@ Check if a string is CSS color value
 | Full name          | is-color |
 | Keywords           | css, color |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1378680 |
+| # dependents       | 20 |
+| # downloads        | 717876 |
 | # stars            | 1 |
 
 ## Links

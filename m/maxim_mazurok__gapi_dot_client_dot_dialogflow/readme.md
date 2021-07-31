@@ -4,15 +4,15 @@
 Typings are for version 2.0.20201119
 
 ## Library description:
-TypeScript typings for Dialogflow API v2
+TypeScript typings for Dialogflow API v3
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dialogflow |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 97 |
+| # downloads        | 1541 |
 | # stars            | 0 |
 
 ## Links

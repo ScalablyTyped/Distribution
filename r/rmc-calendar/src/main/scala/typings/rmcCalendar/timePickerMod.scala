@@ -5,7 +5,6 @@ import typings.rmcCalendar.dataTypesMod.Models.Locale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timePickerMod {
@@ -27,28 +26,27 @@ object timePickerMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType extends StObject {
     
-    var clientHeight: js.UndefOr[Double] = js.native
+    var clientHeight: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* time */ Date, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* time */ Date, Unit]] = js.undefined
     
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object PropsType {
     
@@ -120,7 +118,6 @@ object timePickerMod {
     }
   }
   
-  @js.native
   trait StateType extends StObject
   
   @js.native

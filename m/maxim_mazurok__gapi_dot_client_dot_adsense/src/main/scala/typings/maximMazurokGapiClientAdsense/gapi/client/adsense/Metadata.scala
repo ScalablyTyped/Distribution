@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var items: js.UndefOr[js.Array[ReportingMetadataEntry]] = js.native
+  var items: js.UndefOr[js.Array[ReportingMetadataEntry]] = js.undefined
   
   /** Kind of list this is, in this case adsense#metadata. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

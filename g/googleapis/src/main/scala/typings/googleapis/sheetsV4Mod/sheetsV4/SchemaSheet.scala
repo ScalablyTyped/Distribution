@@ -2,40 +2,38 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A sheet in a spreadsheet.
   */
-@js.native
 trait SchemaSheet extends StObject {
   
   /**
     * The banded (alternating colors) ranges on this sheet.
     */
-  var bandedRanges: js.UndefOr[js.Array[SchemaBandedRange]] = js.native
+  var bandedRanges: js.UndefOr[js.Array[SchemaBandedRange]] = js.undefined
   
   /**
     * The filter on this sheet, if any.
     */
-  var basicFilter: js.UndefOr[SchemaBasicFilter] = js.native
+  var basicFilter: js.UndefOr[SchemaBasicFilter] = js.undefined
   
   /**
     * The specifications of every chart on this sheet.
     */
-  var charts: js.UndefOr[js.Array[SchemaEmbeddedChart]] = js.native
+  var charts: js.UndefOr[js.Array[SchemaEmbeddedChart]] = js.undefined
   
   /**
     * All column groups on this sheet, ordered by increasing range start index,
     * then by group depth.
     */
-  var columnGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.native
+  var columnGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.undefined
   
   /**
     * The conditional format rules in this sheet.
     */
-  var conditionalFormats: js.UndefOr[js.Array[SchemaConditionalFormatRule]] = js.native
+  var conditionalFormats: js.UndefOr[js.Array[SchemaConditionalFormatRule]] = js.undefined
   
   /**
     * Data in the grid, if this is a grid sheet. The number of GridData objects
@@ -46,38 +44,38 @@ trait SchemaSheet extends StObject {
     * one will have `startRow 14` (zero-based row 15), and `startColumn 3`
     * (zero-based column D).
     */
-  var data: js.UndefOr[js.Array[SchemaGridData]] = js.native
+  var data: js.UndefOr[js.Array[SchemaGridData]] = js.undefined
   
   /**
     * The developer metadata associated with a sheet.
     */
-  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.undefined
   
   /**
     * The filter views in this sheet.
     */
-  var filterViews: js.UndefOr[js.Array[SchemaFilterView]] = js.native
+  var filterViews: js.UndefOr[js.Array[SchemaFilterView]] = js.undefined
   
   /**
     * The ranges that are merged together.
     */
-  var merges: js.UndefOr[js.Array[SchemaGridRange]] = js.native
+  var merges: js.UndefOr[js.Array[SchemaGridRange]] = js.undefined
   
   /**
     * The properties of the sheet.
     */
-  var properties: js.UndefOr[SchemaSheetProperties] = js.native
+  var properties: js.UndefOr[SchemaSheetProperties] = js.undefined
   
   /**
     * The protected ranges in this sheet.
     */
-  var protectedRanges: js.UndefOr[js.Array[SchemaProtectedRange]] = js.native
+  var protectedRanges: js.UndefOr[js.Array[SchemaProtectedRange]] = js.undefined
   
   /**
     * All row groups on this sheet, ordered by increasing range start index,
     * then by group depth.
     */
-  var rowGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.native
+  var rowGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.undefined
 }
 object SchemaSheet {
   

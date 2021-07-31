@@ -8,23 +8,21 @@ import typings.cassandraDriver.policiesMod.policies.speculativeExecution.Specula
 import typings.cassandraDriver.policiesMod.policies.timestampGeneration.TimestampGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressResolution extends StObject {
   
-  var addressResolution: js.UndefOr[AddressTranslator] = js.native
+  var addressResolution: js.UndefOr[AddressTranslator] = js.undefined
   
-  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.native
+  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.undefined
   
-  var reconnection: js.UndefOr[ReconnectionPolicy] = js.native
+  var reconnection: js.UndefOr[ReconnectionPolicy] = js.undefined
   
-  var retry: js.UndefOr[RetryPolicy] = js.native
+  var retry: js.UndefOr[RetryPolicy] = js.undefined
   
-  var speculativeExecution: js.UndefOr[SpeculativeExecutionPolicy] = js.native
+  var speculativeExecution: js.UndefOr[SpeculativeExecutionPolicy] = js.undefined
   
-  var timestampGeneration: js.UndefOr[TimestampGenerator] = js.native
+  var timestampGeneration: js.UndefOr[TimestampGenerator] = js.undefined
 }
 object AddressResolution {
   

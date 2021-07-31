@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
   /**
     * 推荐单元 id
     */
-  var adUnitId: String = js.native
+  var adUnitId: String
   
   /**
     * 小游戏推荐banner组件样式
     */
-  var style: Left = js.native
+  var style: Left
 }
 object Style {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelEgressEndpoint extends StObject {
   
   /**
     * Public IP of where a channel's output comes from
     */
-  var SourceIp: js.UndefOr[string] = js.native
+  var SourceIp: js.UndefOr[string] = js.undefined
 }
 object ChannelEgressEndpoint {
   

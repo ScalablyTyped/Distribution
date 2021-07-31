@@ -3,17 +3,15 @@ package typings.amapJsApiHeatmap
 import typings.amapJsApiHeatmap.AMap.Heatmap.DataSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var dataParser: js.UndefOr[js.Function1[/* data */ js.Any, DataSet]] = js.native
+    var dataParser: js.UndefOr[js.Function1[/* data */ js.Any, DataSet]] = js.undefined
   }
   object Data {
     
@@ -37,16 +35,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DrawGridLine extends StObject {
     
-    var drawGridLine: js.UndefOr[Boolean] = js.native
+    var drawGridLine: js.UndefOr[Boolean] = js.undefined
     
-    var gridSize: js.UndefOr[Double] = js.native
+    var gridSize: js.UndefOr[Double] = js.undefined
     
-    var heightBezier: js.UndefOr[js.Array[Double]] = js.native
+    var heightBezier: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var heightScale: js.UndefOr[Double] = js.native
+    var heightScale: js.UndefOr[Double] = js.undefined
   }
   object DrawGridLine {
     

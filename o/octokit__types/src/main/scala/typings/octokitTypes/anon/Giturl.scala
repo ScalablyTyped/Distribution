@@ -2,27 +2,25 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Giturl extends StObject {
   
-  var git_url: String = js.native
+  var git_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
   
-  var repository: Blobsurl = js.native
+  var repository: Blobsurl
   
-  var score: Double = js.native
+  var score: Double
   
-  var sha: String = js.native
+  var sha: String
   
-  var url: String = js.native
+  var url: String
 }
 object Giturl {
   

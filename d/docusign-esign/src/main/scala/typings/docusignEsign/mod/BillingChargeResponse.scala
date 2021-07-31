@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingChargeResponse extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var billingChargeItems: js.UndefOr[js.Array[/* Contains information about a billing charge. */ BillingCharge]] = js.native
+  var billingChargeItems: js.UndefOr[js.Array[/* Contains information about a billing charge. */ BillingCharge]] = js.undefined
 }
 object BillingChargeResponse {
   

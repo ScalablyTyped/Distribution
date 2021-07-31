@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebApp extends MobileApp {
+trait WebApp
+  extends StObject
+     with MobileApp {
   
   // The web app URL.
-  var appUrl: js.UndefOr[NullableOption[String]] = js.native
+  var appUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not to use managed browser. This property is only applicable for Android and IOS.
-  var useManagedBrowser: js.UndefOr[Boolean] = js.native
+  var useManagedBrowser: js.UndefOr[Boolean] = js.undefined
 }
 object WebApp {
   

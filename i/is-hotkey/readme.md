@@ -10,9 +10,9 @@ Check whether a browser event matches a hotkey.
 | ------------------ | :-------------: |
 | Full name          | is-hotkey |
 | Keywords           | code, combo, event, hotkey, key, keycode, keycodes, keycombo, keydown, keyup, mousetrap, shortcut, which |
-| # releases         | 4 |
-| # dependents       | 224 |
-| # downloads        | 8902011 |
+| # releases         | 6 |
+| # dependents       | 253 |
+| # downloads        | 11224753 |
 | # stars            | 0 |
 
 ## Links

@@ -8,7 +8,6 @@ import typings.hexRgb.hexRgbStrings.array
 import typings.hexRgb.hexRgbStrings.css
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,20 +38,19 @@ object mod {
   //=> 'rgb(0 0 0)'
   ```
   */
-  @JSImport("hex-rgb", JSImport.Namespace)
-  @js.native
-  def apply(hex: String): RgbaObject = js.native
-  @JSImport("hex-rgb", JSImport.Namespace)
-  @js.native
-  def apply(hex: String, options: Optionsformatarray): RgbaTuple = js.native
-  @JSImport("hex-rgb", JSImport.Namespace)
-  @js.native
-  def apply(hex: String, options: Optionsformatcss): String = js.native
-  @JSImport("hex-rgb", JSImport.Namespace)
-  @js.native
-  def apply(hex: String, options: Optionsformatobject): RgbaObject = js.native
+  @scala.inline
+  def apply(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
+  @scala.inline
+  def apply(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
+  @scala.inline
+  def apply(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
   
+  @JSImport("hex-rgb", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -60,7 +58,7 @@ object mod {
     		Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
     		@default 'object'
     		*/
-    val format: js.UndefOr[`object` | array | css] = js.native
+    val format: js.UndefOr[`object` | array | css] = js.undefined
   }
   object Options {
     
@@ -81,16 +79,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RgbaObject extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RgbaObject {
     

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleImageOptions extends StObject {
   
   /**
@@ -16,34 +14,34 @@ trait ScaleImageOptions extends StObject {
     * Once the resize is complete, your promise must be fulfilled.
     * You may, of course, reject your returned `Promise` is the resize fails in some way.
     */
-  var customResizer: js.UndefOr[CustomResizerCallBack] = js.native
+  var customResizer: js.UndefOr[CustomResizerCallBack] = js.undefined
   
   /**
     * @default `false`
     */
-  var includeExif: js.UndefOr[Boolean] = js.native
+  var includeExif: js.UndefOr[Boolean] = js.undefined
   
   /**
     * required
     */
-  var maxSize: Double = js.native
+  var maxSize: Double
   
   /**
     * @default `true`
     */
-  var orient: js.UndefOr[Boolean] = js.native
+  var orient: js.UndefOr[Boolean] = js.undefined
   
   /**
     * number between `0` and `100`
     *
     * @default `80`
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * defaults to the type of the reference image
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ScaleImageOptions {
   

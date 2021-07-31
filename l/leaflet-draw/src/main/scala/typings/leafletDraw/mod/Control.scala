@@ -13,7 +13,6 @@ import typings.leafletDraw.mod.DrawOptions.PolylineOptions
 import typings.leafletDraw.mod.DrawOptions.RectangleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Control {
@@ -30,7 +29,6 @@ object Control {
     def setDrawingOptions(options: typings.leafletDraw.mod.Control.DrawOptions): Unit = js.native
   }
   
-  @js.native
   trait DrawConstructorOptions extends StObject {
     
     /**
@@ -38,21 +36,21 @@ object Control {
       *
       * @default {}
       */
-    var draw: js.UndefOr[typings.leafletDraw.mod.Control.DrawOptions] = js.native
+    var draw: js.UndefOr[typings.leafletDraw.mod.Control.DrawOptions] = js.undefined
     
     /**
       * The options used to configure the edit toolbar.
       *
       * @default false
       */
-    var edit: js.UndefOr[typings.leafletDraw.mod.Control.EditOptions] = js.native
+    var edit: js.UndefOr[typings.leafletDraw.mod.Control.EditOptions] = js.undefined
     
     /**
       * The initial position of the control (one of the map corners).
       *
       * @default 'topleft'
       */
-    var position: js.UndefOr[ControlPosition] = js.native
+    var position: js.UndefOr[ControlPosition] = js.undefined
   }
   object DrawConstructorOptions {
     
@@ -85,7 +83,6 @@ object Control {
     }
   }
   
-  @js.native
   trait DrawOptions extends StObject {
     
     /**
@@ -93,42 +90,42 @@ object Control {
       *
       * @default {}
       */
-    var circle: js.UndefOr[CircleOptions | `false`] = js.native
+    var circle: js.UndefOr[CircleOptions | `false`] = js.undefined
     
     /**
       * Circle marker draw handler options. Set to false to disable handler.
       *
       * @default {}
       */
-    var circlemarker: js.UndefOr[CircleMarkerOptions | `false`] = js.native
+    var circlemarker: js.UndefOr[CircleMarkerOptions | `false`] = js.undefined
     
     /**
       * Marker draw handler options. Set to false to disable handler.
       *
       * @default {}
       */
-    var marker: js.UndefOr[MarkerOptions | `false`] = js.native
+    var marker: js.UndefOr[MarkerOptions | `false`] = js.undefined
     
     /**
       * Polygon draw handler options. Set to false to disable handler.
       *
       * @default {}
       */
-    var polygon: js.UndefOr[PolygonOptions | `false`] = js.native
+    var polygon: js.UndefOr[PolygonOptions | `false`] = js.undefined
     
     /**
       * Polyline draw handler options. Set to false to disable handler.
       *
       * @default {}
       */
-    var polyline: js.UndefOr[PolylineOptions | `false`] = js.native
+    var polyline: js.UndefOr[PolylineOptions | `false`] = js.undefined
     
     /**
       * Rectangle draw handler options. Set to false to disable handler.
       *
       * @default {}
       */
-    var rectangle: js.UndefOr[RectangleOptions | `false`] = js.native
+    var rectangle: js.UndefOr[RectangleOptions | `false`] = js.undefined
   }
   object DrawOptions {
     
@@ -179,7 +176,6 @@ object Control {
     }
   }
   
-  @js.native
   trait EditOptions extends StObject {
     
     /**
@@ -187,7 +183,7 @@ object Control {
       *
       * @default null
       */
-    var edit: js.UndefOr[EditHandlerOptions | `false`] = js.native
+    var edit: js.UndefOr[EditHandlerOptions | `false`] = js.undefined
     
     /**
       * This is the FeatureGroup that stores all editable shapes.
@@ -195,19 +191,19 @@ object Control {
       *
       * @default null
       */
-    var featureGroup: FeatureGroup_[_] = js.native
+    var featureGroup: FeatureGroup_[js.Any]
     
     /**
       * Delete handler options. Set to false to disable handler.
       *
       * Default value: null
       */
-    var remove: js.UndefOr[Null | `false`] = js.native
+    var remove: js.UndefOr[Null | `false`] = js.undefined
   }
   object EditOptions {
     
     @scala.inline
-    def apply(featureGroup: FeatureGroup_[_]): typings.leafletDraw.mod.Control.EditOptions = {
+    def apply(featureGroup: FeatureGroup_[js.Any]): typings.leafletDraw.mod.Control.EditOptions = {
       val __obj = js.Dynamic.literal(featureGroup = featureGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.leafletDraw.mod.Control.EditOptions]
     }
@@ -222,7 +218,7 @@ object Control {
       def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
       @scala.inline
-      def setFeatureGroup(value: FeatureGroup_[_]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
+      def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemove(value: `false`): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])

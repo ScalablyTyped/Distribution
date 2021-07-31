@@ -8,15 +8,13 @@ import typings.graphqlReact.mod.GraphQLFetchOptionsOverride
 import typings.graphqlReact.mod.GraphQLOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cache extends StObject {
     
-    var cache: js.UndefOr[GraphQLCache] = js.native
+    var cache: js.UndefOr[GraphQLCache] = js.undefined
   }
   object Cache {
     
@@ -37,17 +35,16 @@ object anon {
     }
   }
   
-  @js.native
   trait CacheKey extends StObject {
     
-    var cacheKey: GraphQLCacheKey = js.native
+    var cacheKey: GraphQLCacheKey
     
-    var cacheValue: GraphQLCacheValue[_] = js.native
+    var cacheValue: GraphQLCacheValue[js.Any]
   }
   object CacheKey {
     
     @scala.inline
-    def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[_]): CacheKey = {
+    def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[js.Any]): CacheKey = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValue = cacheValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheKey]
     }
@@ -59,21 +56,20 @@ object anon {
       def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCacheValue(value: GraphQLCacheValue[_]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
+      def setCacheValue(value: GraphQLCacheValue[js.Any]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait CacheValuePromise extends StObject {
     
-    var cacheKey: GraphQLCacheKey = js.native
+    var cacheKey: GraphQLCacheKey
     
-    var cacheValuePromise: js.Promise[GraphQLCacheValue[_]] = js.native
+    var cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]
   }
   object CacheValuePromise {
     
     @scala.inline
-    def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[_]]): CacheValuePromise = {
+    def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]): CacheValuePromise = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheValuePromise]
     }
@@ -85,16 +81,15 @@ object anon {
       def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[_]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
+      def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[js.Any]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -115,10 +110,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ExceptCacheKey extends StObject {
     
-    var exceptCacheKey: GraphQLCacheKey = js.native
+    var exceptCacheKey: GraphQLCacheKey
   }
   object ExceptCacheKey {
     
@@ -136,16 +130,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FetchOptionsOverride[V] extends StObject {
     
-    var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.native
+    var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.undefined
     
-    var operation: GraphQLOperation[V] = js.native
+    var operation: GraphQLOperation[V]
     
-    var reloadOnLoad: js.UndefOr[Boolean] = js.native
+    var reloadOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var resetOnLoad: js.UndefOr[Boolean] = js.native
+    var resetOnLoad: js.UndefOr[Boolean] = js.undefined
   }
   object FetchOptionsOverride {
     
@@ -156,7 +149,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FetchOptionsOverrideMutableBuilder[Self <: FetchOptionsOverride[_], V] (val x: Self with FetchOptionsOverride[V]) extends AnyVal {
+    implicit class FetchOptionsOverrideMutableBuilder[Self <: FetchOptionsOverride[?], V] (val x: Self & FetchOptionsOverride[V]) extends AnyVal {
       
       @scala.inline
       def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
@@ -181,22 +174,21 @@ object anon {
     }
   }
   
-  @js.native
   trait LoadOnMount[V] extends StObject {
     
-    var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.native
+    var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.undefined
     
-    var loadOnMount: js.UndefOr[Boolean] = js.native
+    var loadOnMount: js.UndefOr[Boolean] = js.undefined
     
-    var loadOnReload: js.UndefOr[Boolean] = js.native
+    var loadOnReload: js.UndefOr[Boolean] = js.undefined
     
-    var loadOnReset: js.UndefOr[Boolean] = js.native
+    var loadOnReset: js.UndefOr[Boolean] = js.undefined
     
-    var operation: GraphQLOperation[V] = js.native
+    var operation: GraphQLOperation[V]
     
-    var reloadOnLoad: js.UndefOr[Boolean] = js.native
+    var reloadOnLoad: js.UndefOr[Boolean] = js.undefined
     
-    var resetOnLoad: js.UndefOr[Boolean] = js.native
+    var resetOnLoad: js.UndefOr[Boolean] = js.undefined
   }
   object LoadOnMount {
     
@@ -207,7 +199,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class LoadOnMountMutableBuilder[Self <: LoadOnMount[_], V] (val x: Self with LoadOnMount[V]) extends AnyVal {
+    implicit class LoadOnMountMutableBuilder[Self <: LoadOnMount[?], V] (val x: Self & LoadOnMount[V]) extends AnyVal {
       
       @scala.inline
       def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
@@ -250,14 +242,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Locations extends StObject {
     
-    var locations: js.Array[Column] = js.native
+    var locations: js.Array[Column]
     
-    var message: String = js.native
+    var message: String
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
   }
   object Locations {
     
@@ -287,10 +278,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var query: String = js.native
+    var query: String
   }
   object Query {
     
@@ -308,10 +298,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Variables[V] extends StObject {
     
-    var variables: V = js.native
+    var variables: V
   }
   object Variables {
     
@@ -322,7 +311,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class VariablesMutableBuilder[Self <: Variables[_], V] (val x: Self with Variables[V]) extends AnyVal {
+    implicit class VariablesMutableBuilder[Self <: Variables[?], V] (val x: Self & Variables[V]) extends AnyVal {
       
       @scala.inline
       def setVariables(value: V): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])

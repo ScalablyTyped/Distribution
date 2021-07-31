@@ -6,20 +6,18 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
   
   type DateInput = Double | String | Date
   
-  @js.native
   trait EventSigner extends StObject {
     
     /**
       * Sign the individual event of the event stream.
       */
-    def sign(event: FormattedEvent, options: EventSigningArguments): js.Promise[String] = js.native
+    def sign(event: FormattedEvent, options: EventSigningArguments): js.Promise[String]
   }
   object EventSigner {
     
@@ -37,10 +35,11 @@ object signatureMod {
     }
   }
   
-  @js.native
-  trait EventSigningArguments extends SigningArguments {
+  trait EventSigningArguments
+    extends StObject
+       with SigningArguments {
     
-    var priorSignature: String = js.native
+    var priorSignature: String
   }
   object EventSigningArguments {
     
@@ -58,12 +57,11 @@ object signatureMod {
     }
   }
   
-  @js.native
   trait FormattedEvent extends StObject {
     
-    var headers: Uint8Array = js.native
+    var headers: Uint8Array
     
-    var payload: Uint8Array = js.native
+    var payload: Uint8Array
   }
   object FormattedEvent {
     
@@ -100,13 +98,14 @@ object signatureMod {
     def presign(requestToSign: HttpRequest, options: RequestPresigningArguments): js.Promise[HttpRequest] = js.native
   }
   
-  @js.native
-  trait RequestPresigningArguments extends RequestSigningArguments {
+  trait RequestPresigningArguments
+    extends StObject
+       with RequestSigningArguments {
     
     /**
       * The number of seconds before the presigned URL expires
       */
-    var expiresIn: js.UndefOr[Double] = js.native
+    var expiresIn: js.UndefOr[Double] = js.undefined
   }
   object RequestPresigningArguments {
     
@@ -137,8 +136,9 @@ object signatureMod {
     def sign(requestToSign: HttpRequest, options: RequestSigningArguments): js.Promise[HttpRequest] = js.native
   }
   
-  @js.native
-  trait RequestSigningArguments extends SigningArguments {
+  trait RequestSigningArguments
+    extends StObject
+       with SigningArguments {
     
     /**
       * A set of strings whose members represents headers that should be signed.
@@ -148,14 +148,14 @@ object signatureMod {
       * All headers in the provided request will have their names converted to
       * lower case before signing.
       */
-    var signableHeaders: js.UndefOr[Set[String]] = js.native
+    var signableHeaders: js.UndefOr[Set[String]] = js.undefined
     
     /**
       * A set of strings whose members represents headers that cannot be signed.
       * All headers in the provided request will have their names converted to
       * lower case and then checked for existence in the unsignableHeaders set.
       */
-    var unsignableHeaders: js.UndefOr[Set[String]] = js.native
+    var unsignableHeaders: js.UndefOr[Set[String]] = js.undefined
   }
   object RequestSigningArguments {
     
@@ -182,7 +182,6 @@ object signatureMod {
     }
   }
   
-  @js.native
   trait SigningArguments extends StObject {
     
     /**
@@ -191,19 +190,19 @@ object signatureMod {
       * understood by the JavaScript `Date` constructor.If not supplied, the
       * value returned by `new Date()` will be used.
       */
-    var signingDate: js.UndefOr[DateInput] = js.native
+    var signingDate: js.UndefOr[DateInput] = js.undefined
     
     /**
       * The region name to sign the request. It will override the signing region of the
       * signer in current invocation
       */
-    var signingRegion: js.UndefOr[String] = js.native
+    var signingRegion: js.UndefOr[String] = js.undefined
     
     /**
       * The service signing name. It will override the service name of the signer
       * in current invocation
       */
-    var signingService: js.UndefOr[String] = js.native
+    var signingService: js.UndefOr[String] = js.undefined
   }
   object SigningArguments {
     

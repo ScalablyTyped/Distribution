@@ -2,7 +2,6 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by one project which is the only project that can create attachments under
   * it.
   */
-@js.native
 trait SchemaNamespace extends StObject {
   
   /**
     * Resource name of this namespace. Namespaces names have the format:
     * &lt;code&gt;namespaces/&lt;var&gt;namespace&lt;/var&gt;&lt;/code&gt;.
     */
-  var namespaceName: js.UndefOr[String] = js.native
+  var namespaceName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies what clients may receive attachments under this namespace via
     * `beaconinfo.getforobserved`.
     */
-  var servingVisibility: js.UndefOr[String] = js.native
+  var servingVisibility: js.UndefOr[String] = js.undefined
 }
 object SchemaNamespace {
   

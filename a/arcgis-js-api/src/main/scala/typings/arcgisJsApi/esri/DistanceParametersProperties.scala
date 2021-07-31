@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceParametersProperties extends StObject {
   
   /**
@@ -19,28 +17,28 @@ trait DistanceParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#distanceUnit)
     */
-  var distanceUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var distanceUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
     * When `true`, the geodesic distance between [geometry1](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#geometry1) and [geometry2](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#geometry2) is measured.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#geodesic)
     */
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The geometry from which the distance is to be measured.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#geometry1)
     */
-  var geometry1: js.UndefOr[GeometryProperties] = js.native
+  var geometry1: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * The geometry to which the distance is to be measured.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html#geometry2)
     */
-  var geometry2: js.UndefOr[GeometryProperties] = js.native
+  var geometry2: js.UndefOr[GeometryProperties] = js.undefined
 }
 object DistanceParametersProperties {
   

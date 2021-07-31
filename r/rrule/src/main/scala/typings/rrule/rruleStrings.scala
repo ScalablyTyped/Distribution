@@ -5,68 +5,86 @@ import typings.rrule.typesMod.QueryMethodTypes
 import typings.rrule.weekdayMod.WeekdayStr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rruleStrings {
   
   @js.native
-  sealed trait FR extends WeekdayStr
+  sealed trait FR
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
-  sealed trait MO extends WeekdayStr
+  sealed trait MO
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def MO: MO = "MO".asInstanceOf[MO]
   
   @js.native
-  sealed trait SA extends WeekdayStr
+  sealed trait SA
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
   
   @js.native
-  sealed trait SU extends WeekdayStr
+  sealed trait SU
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def SU: SU = "SU".asInstanceOf[SU]
   
   @js.native
-  sealed trait TH extends WeekdayStr
+  sealed trait TH
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def TH: TH = "TH".asInstanceOf[TH]
   
   @js.native
-  sealed trait TU extends WeekdayStr
+  sealed trait TU
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def TU: TU = "TU".asInstanceOf[TU]
   
   @js.native
-  sealed trait WE extends WeekdayStr
+  sealed trait WE
+    extends StObject
+       with WeekdayStr
   @scala.inline
   def WE: WE = "WE".asInstanceOf[WE]
   
   @js.native
   sealed trait after
-    extends CacheKeys
+    extends StObject
+       with CacheKeys
        with QueryMethodTypes
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait all extends QueryMethodTypes
+  sealed trait all
+    extends StObject
+       with QueryMethodTypes
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait before
-    extends CacheKeys
+    extends StObject
+       with CacheKeys
        with QueryMethodTypes
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait between
-    extends CacheKeys
+    extends StObject
+       with CacheKeys
        with QueryMethodTypes
   @scala.inline
   def between: between = "between".asInstanceOf[between]

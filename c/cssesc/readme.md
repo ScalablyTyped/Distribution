@@ -10,9 +10,9 @@ A JavaScript library for escaping CSS strings and identifiers while generating t
 | ------------------ | :-------------: |
 | Full name          | cssesc |
 | Keywords           | css, escape, identifier, string, tool |
-| # releases         | 2 |
-| # dependents       | 75 |
-| # downloads        | 667919325 |
+| # releases         | 0 |
+| # dependents       | 90 |
+| # downloads        | 751734086 |
 | # stars            | 2 |
 
 ## Links

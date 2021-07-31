@@ -2,31 +2,29 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailabilityZone extends StObject {
   
   /**
     * [Network Load Balancers] If you need static IP addresses for your load balancer, you can specify one Elastic IP address per Availability Zone when you create an internal-facing load balancer. For internal load balancers, you can specify a private IP address from the IPv4 range of the subnet.
     */
-  var LoadBalancerAddresses: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerAddresses] = js.native
+  var LoadBalancerAddresses: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerAddresses] = js.undefined
   
   /**
     * [Application Load Balancers on Outposts] The ID of the Outpost.
     */
-  var OutpostId: js.UndefOr[typings.awsSdk.elbv2Mod.OutpostId] = js.native
+  var OutpostId: js.UndefOr[typings.awsSdk.elbv2Mod.OutpostId] = js.undefined
   
   /**
     * The ID of the subnet. You can specify one subnet per Availability Zone.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.elbv2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.elbv2Mod.SubnetId] = js.undefined
   
   /**
     * The name of the Availability Zone.
     */
-  var ZoneName: js.UndefOr[typings.awsSdk.elbv2Mod.ZoneName] = js.native
+  var ZoneName: js.UndefOr[typings.awsSdk.elbv2Mod.ZoneName] = js.undefined
 }
 object AvailabilityZone {
   

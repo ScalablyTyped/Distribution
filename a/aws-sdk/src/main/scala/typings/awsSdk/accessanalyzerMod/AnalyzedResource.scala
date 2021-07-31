@@ -2,66 +2,64 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzedResource extends StObject {
   
   /**
     * The actions that an external principal is granted permission to use by the policy that generated the finding.
     */
-  var actions: js.UndefOr[ActionList] = js.native
+  var actions: js.UndefOr[ActionList] = js.undefined
   
   /**
     * The time at which the resource was analyzed.
     */
-  var analyzedAt: Timestamp = js.native
+  var analyzedAt: Timestamp
   
   /**
     * The time at which the finding was created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * An error message.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the policy that generated the finding grants public access to the resource.
     */
-  var isPublic: Boolean = js.native
+  var isPublic: Boolean
   
   /**
     * The ARN of the resource that was analyzed.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * The AWS account ID that owns the resource.
     */
-  var resourceOwnerAccount: String = js.native
+  var resourceOwnerAccount: String
   
   /**
     * The type of the resource that was analyzed.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /**
     * Indicates how the access that generated the finding is granted. This is populated for Amazon S3 bucket findings.
     */
-  var sharedVia: js.UndefOr[SharedViaList] = js.native
+  var sharedVia: js.UndefOr[SharedViaList] = js.undefined
   
   /**
     * The current status of the finding generated from the analyzed resource.
     */
-  var status: js.UndefOr[FindingStatus] = js.native
+  var status: js.UndefOr[FindingStatus] = js.undefined
   
   /**
     * The time at which the finding was updated.
     */
-  var updatedAt: Timestamp = js.native
+  var updatedAt: Timestamp
 }
 object AnalyzedResource {
   

@@ -2,15 +2,13 @@ package typings.summernote.mod.global.Summernote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyMapOptions extends StObject {
   
-  var mac: js.UndefOr[KeyMapMacOptions] = js.native
+  var mac: js.UndefOr[KeyMapMacOptions] = js.undefined
   
-  var pc: js.UndefOr[KeyMapPcOptions] = js.native
+  var pc: js.UndefOr[KeyMapPcOptions] = js.undefined
 }
 object KeyMapOptions {
   

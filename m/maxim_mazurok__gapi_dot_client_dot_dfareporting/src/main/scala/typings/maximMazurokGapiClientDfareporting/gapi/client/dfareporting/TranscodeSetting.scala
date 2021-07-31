@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranscodeSetting extends StObject {
   
   /** Allowlist of video formats to be served to this placement. Set this list to null or empty to serve all video formats. */
-  var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.native
+  var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#transcodeSetting". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object TranscodeSetting {
   

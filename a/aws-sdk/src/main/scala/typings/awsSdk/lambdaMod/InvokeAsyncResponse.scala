@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvokeAsyncResponse extends StObject {
   
   /**
     * The status code.
     */
-  var Status: js.UndefOr[HttpStatus] = js.native
+  var Status: js.UndefOr[HttpStatus] = js.undefined
 }
 object InvokeAsyncResponse {
   

@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListDataSourceResponse extends StObject {
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var sources: js.UndefOr[js.Array[SchemaDataSource]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaDataSource]] = js.undefined
 }
 object SchemaListDataSourceResponse {
   

@@ -1,58 +1,43 @@
 package typings.reactNavigationCore
 
-import typings.reactNavigationCore.anon.TargetTypeEventName
-import typings.reactNavigationCore.anon.`10`
-import typings.reactNavigationCore.anon.`11`
+import typings.reactNavigationCore.anon.Type
 import typings.reactNavigationCore.anon.`2`
+import typings.reactNavigationCore.anon.`3`
+import typings.reactNavigationCore.anon.`4`
 import typings.reactNavigationCore.typesMod.EventArg
 import typings.reactNavigationCore.typesMod.EventConsumer
-import typings.std.Extract
+import typings.reactNavigationCore.typesMod.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useEventEmitterMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useEventEmitter", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useEventEmitter", JSImport.Namespace)
   @js.native
-  def default[T /* <: Record[String, _] */](): NavigationEventEmitter[T] = js.native
-  @JSImport("@react-navigation/core/lib/typescript/src/useEventEmitter", JSImport.Default)
-  @js.native
-  def default[T /* <: Record[String, _] */](listen: js.Function1[/* e */ js.Any, Unit]): NavigationEventEmitter[T] = js.native
+  val ^ : js.Any = js.native
   
-  /* Inlined @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventEmitter<T> & {create (target : string): @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventConsumer<T>} */
-  @js.native
-  trait NavigationEventEmitter[T /* <: Record[String, _] */] extends StObject {
+  @scala.inline
+  def default[T /* <: Record[String, js.Any] */](): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NavigationEventEmitter[T]]
+  @scala.inline
+  def default[T /* <: Record[String, js.Any] */](listen: js.Function1[/* e */ js.Any, Unit]): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listen.asInstanceOf[js.Any]).asInstanceOf[NavigationEventEmitter[T]]
+  
+  trait NavigationEventEmitter[T /* <: Record[String, js.Any] */]
+    extends StObject
+       with EventEmitter[T] {
     
-    def create(target: String): EventConsumer[T] = js.native
-    
-    /**
-      * Emit an event to child screens.
-      *
-      * @param options.type Type of the event (e.g. `focus`, `blur`)
-      * @param [options.data] Optional information regarding the event.
-      * @param [options.target] Key of the target route which should receive the event.
-      * If not specified, all routes receive the event.
-      */
-    def emit[EventName /* <: Extract[/* keyof T */ String, String] */](
-      options: (TargetTypeEventName[EventName, T]) with (js.Object | `2`) with ((`11`[T, EventName]) | (`10`[T, EventName]))
-    ): EventArg[
-        EventName, 
-        /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['canPreventDefault'] */ js.Any, 
-        /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['data'] */ js.Any
-      ] = js.native
+    def create(target: String): EventConsumer[T]
   }
   object NavigationEventEmitter {
     
     @scala.inline
-    def apply[T /* <: Record[String, _] */](
+    def apply[T /* <: Record[String, js.Any] */](
       create: String => EventConsumer[T],
-      emit: (TargetTypeEventName[js.Any, T]) with (js.Object | `2`) with ((`11`[T, js.Any]) | (`10`[T, js.Any])) => EventArg[
+      emit: (Type[js.Any, T]) & (js.Object | `2`) & ((`4`[T, js.Any]) | (`3`[T, js.Any])) => EventArg[
           js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['canPreventDefault'] */ js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
         ]
     ): NavigationEventEmitter[T] = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), emit = js.Any.fromFunction1(emit))
@@ -60,19 +45,10 @@ object useEventEmitterMod {
     }
     
     @scala.inline
-    implicit class NavigationEventEmitterMutableBuilder[Self <: NavigationEventEmitter[_], T /* <: Record[String, _] */] (val x: Self with NavigationEventEmitter[T]) extends AnyVal {
+    implicit class NavigationEventEmitterMutableBuilder[Self <: NavigationEventEmitter[?], T /* <: Record[String, js.Any] */] (val x: Self & NavigationEventEmitter[T]) extends AnyVal {
       
       @scala.inline
       def setCreate(value: String => EventConsumer[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setEmit(
-        value: (TargetTypeEventName[js.Any, T]) with (js.Object | `2`) with ((`11`[T, js.Any]) | (`10`[T, js.Any])) => EventArg[
-              js.Any, 
-              /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['canPreventDefault'] */ js.Any, 
-              /* import warning: importer.ImportType#apply Failed type conversion: T[EventName]['data'] */ js.Any
-            ]
-      ): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
     }
   }
 }

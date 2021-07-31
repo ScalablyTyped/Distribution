@@ -2,13 +2,11 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectEnable extends StObject {
   
-  var connectEnable: Boolean = js.native
+  var connectEnable: Boolean
 }
 object ConnectEnable {
   

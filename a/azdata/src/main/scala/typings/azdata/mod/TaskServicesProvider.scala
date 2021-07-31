@@ -3,19 +3,19 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskServicesProvider extends DataProvider {
+trait TaskServicesProvider
+  extends StObject
+     with DataProvider {
   
-  def cancelTask(cancelTaskParams: CancelTaskParams): Thenable[Boolean] = js.native
+  def cancelTask(cancelTaskParams: CancelTaskParams): Thenable[Boolean]
   
-  def getAllTasks(listTasksParams: ListTasksParams): Thenable[ListTasksResponse] = js.native
+  def getAllTasks(listTasksParams: ListTasksParams): Thenable[ListTasksResponse]
   
-  def registerOnTaskCreated(handler: js.Function1[/* response */ TaskInfo, _]): Unit = js.native
+  def registerOnTaskCreated(handler: js.Function1[/* response */ TaskInfo, js.Any]): Unit
   
-  def registerOnTaskStatusChanged(handler: js.Function1[/* response */ TaskProgressInfo, _]): Unit = js.native
+  def registerOnTaskStatusChanged(handler: js.Function1[/* response */ TaskProgressInfo, js.Any]): Unit
 }
 object TaskServicesProvider {
   
@@ -24,8 +24,8 @@ object TaskServicesProvider {
     cancelTask: CancelTaskParams => Thenable[Boolean],
     getAllTasks: ListTasksParams => Thenable[ListTasksResponse],
     providerId: String,
-    registerOnTaskCreated: js.Function1[/* response */ TaskInfo, _] => Unit,
-    registerOnTaskStatusChanged: js.Function1[/* response */ TaskProgressInfo, _] => Unit
+    registerOnTaskCreated: js.Function1[/* response */ TaskInfo, js.Any] => Unit,
+    registerOnTaskStatusChanged: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit
   ): TaskServicesProvider = {
     val __obj = js.Dynamic.literal(cancelTask = js.Any.fromFunction1(cancelTask), getAllTasks = js.Any.fromFunction1(getAllTasks), providerId = providerId.asInstanceOf[js.Any], registerOnTaskCreated = js.Any.fromFunction1(registerOnTaskCreated), registerOnTaskStatusChanged = js.Any.fromFunction1(registerOnTaskStatusChanged))
     __obj.asInstanceOf[TaskServicesProvider]
@@ -41,9 +41,9 @@ object TaskServicesProvider {
     def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = StObject.set(x, "getAllTasks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, _] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
+    def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, _] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
+    def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
   }
 }

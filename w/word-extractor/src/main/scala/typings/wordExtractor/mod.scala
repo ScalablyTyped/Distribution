@@ -2,14 +2,19 @@ package typings.wordExtractor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("word-extractor", JSImport.Namespace)
   @js.native
-  class ^ () extends WordExtractor
+  class ^ ()
+    extends StObject
+       with WordExtractor {
+    
+    /* CompleteClass */
+    override def extract(documentPath: String): js.Promise[Document] = js.native
+  }
   
   @JSImport("word-extractor", "Document")
   @js.native
@@ -26,10 +31,9 @@ object mod {
     def getHeaders(): String = js.native
   }
   
-  @js.native
   trait WordExtractor extends StObject {
     
-    def extract(documentPath: String): js.Promise[Document] = js.native
+    def extract(documentPath: String): js.Promise[Document]
   }
   object WordExtractor {
     

@@ -5,7 +5,6 @@ import typings.react.mod.FunctionComponent
 import typings.reactRouter.mod.RouteProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object privateRouteMod extends Shortcut {
@@ -23,10 +22,11 @@ object privateRouteMod extends Shortcut {
   @js.native
   val default: FunctionComponent[PrivateRouteProps] = js.native
   
-  @js.native
-  trait PrivateRouteProps extends RouteProps {
+  trait PrivateRouteProps
+    extends StObject
+       with RouteProps {
     
-    var loginPath: String = js.native
+    var loginPath: String
   }
   object PrivateRouteProps {
     

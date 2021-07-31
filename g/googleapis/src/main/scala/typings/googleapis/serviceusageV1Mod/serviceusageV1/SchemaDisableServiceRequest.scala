@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for the `DisableService` method.
   */
-@js.native
 trait SchemaDisableServiceRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDisableServiceRequest extends StObject {
     * service, and any enabled services that depend on it, will be disabled
     * together.
     */
-  var disableDependentServices: js.UndefOr[Boolean] = js.native
+  var disableDependentServices: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDisableServiceRequest {
   

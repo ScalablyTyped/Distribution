@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages.typescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExtraLib extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object IExtraLib {
   

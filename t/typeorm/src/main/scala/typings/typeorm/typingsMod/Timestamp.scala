@@ -2,7 +2,6 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp")
@@ -247,27 +246,24 @@ object Timestamp {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromBits")
-  @js.native
-  def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = js.native
+  @scala.inline
+  def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   
   /**
     * Returns a Timestamp representing the given (32-bit) integer value.
     *
     * @param value The 32-bit integer in question.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromInt")
-  @js.native
-  def fromInt(value: scala.Double): Timestamp = js.native
+  @scala.inline
+  def fromInt(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /**
     * Returns a Timestamp representing the given value, provided that it is a finite number. Otherwise, zero is returned.
     *
     * @param value The number in question.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromNumber")
-  @js.native
-  def fromNumber(value: scala.Double): Timestamp = js.native
+  @scala.inline
+  def fromNumber(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /**
     * Returns a Timestamp representation of the given string, written using the given radix.
@@ -275,10 +271,8 @@ object Timestamp {
     * @param str The textual representation of the Timestamp.
     * @param radix The radix in which the text is written.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String): Timestamp = js.native
-  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String, radix: scala.Double): Timestamp = js.native
+  @scala.inline
+  def fromString(str: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  @scala.inline
+  def fromString(str: String, radix: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
 }

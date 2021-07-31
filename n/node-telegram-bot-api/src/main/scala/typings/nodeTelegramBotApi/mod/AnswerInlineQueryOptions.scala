@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnswerInlineQueryOptions extends StObject {
   
-  var cache_time: js.UndefOr[Double] = js.native
+  var cache_time: js.UndefOr[Double] = js.undefined
   
-  var is_personal: js.UndefOr[Boolean] = js.native
+  var is_personal: js.UndefOr[Boolean] = js.undefined
   
-  var next_offset: js.UndefOr[String] = js.native
+  var next_offset: js.UndefOr[String] = js.undefined
   
-  var switch_pm_parameter: js.UndefOr[String] = js.native
+  var switch_pm_parameter: js.UndefOr[String] = js.undefined
   
-  var switch_pm_text: js.UndefOr[String] = js.native
+  var switch_pm_text: js.UndefOr[String] = js.undefined
 }
 object AnswerInlineQueryOptions {
   

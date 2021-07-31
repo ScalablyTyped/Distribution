@@ -6,7 +6,6 @@ import typings.vscodeLanguageclient.vscodeLanguageclientNumbers.`3`
 import typings.vscodeLanguageclient.vscodeLanguageclientNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DiagnosticSeverity {

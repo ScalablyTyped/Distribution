@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSortingEventUIParam extends StObject {
   
   /**
     * Gets the column key.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the sorting direction.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sorting expressions.
     */
-  var newExpressions: js.UndefOr[js.Array[_]] = js.native
+  var newExpressions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to GridSorting.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnSortingEventUIParam {
   
@@ -52,7 +50,7 @@ object ColumnSortingEventUIParam {
     def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setNewExpressions(value: js.Array[_]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
+    def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)

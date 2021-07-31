@@ -2,17 +2,15 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
-  var end: Position2 = js.native
+  var end: Position2
   
-  var source: String = js.native
+  var source: String
   
-  var start: Position2 = js.native
+  var start: Position2
 }
 object SourceLocation {
   

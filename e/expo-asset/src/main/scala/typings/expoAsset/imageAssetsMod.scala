@@ -2,27 +2,27 @@ package typings.expoAsset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageAssetsMod {
   
-  @JSImport("expo-asset/build/ImageAssets", "getImageInfoAsync")
+  @JSImport("expo-asset/build/ImageAssets", JSImport.Namespace)
   @js.native
-  def getImageInfoAsync(url: String): js.Promise[ImageInfo] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-asset/build/ImageAssets", "isImageType")
-  @js.native
-  def isImageType(`type`: String): Boolean = js.native
+  @scala.inline
+  def getImageInfoAsync(url: String): js.Promise[ImageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfoAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageInfo]]
   
-  @js.native
+  @scala.inline
+  def isImageType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait ImageInfo extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var name: String = js.native
+    var name: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImageInfo {
     

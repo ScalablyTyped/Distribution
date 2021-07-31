@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildbotCommandEvents extends StObject {
   
   /** Indicates whether we are using a cached Docker image (true) or had to pull the Docker image (false) for this command. */
-  var dockerCacheHit: js.UndefOr[Boolean] = js.native
+  var dockerCacheHit: js.UndefOr[Boolean] = js.undefined
   
   /** Docker Image name. */
-  var dockerImageName: js.UndefOr[String] = js.native
+  var dockerImageName: js.UndefOr[String] = js.undefined
   
   /** The input cache miss ratio. */
-  var inputCacheMiss: js.UndefOr[Double] = js.native
+  var inputCacheMiss: js.UndefOr[Double] = js.undefined
   
   /** The number of errors reported. */
-  var numErrors: js.UndefOr[String] = js.native
+  var numErrors: js.UndefOr[String] = js.undefined
   
   /** The number of warnings reported. */
-  var numWarnings: js.UndefOr[String] = js.native
+  var numWarnings: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildbotCommandEvents {
   

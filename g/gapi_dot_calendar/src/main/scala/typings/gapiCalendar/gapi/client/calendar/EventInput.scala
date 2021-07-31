@@ -10,57 +10,55 @@ import typings.gapiCalendar.anon.Private
 import typings.gapiCalendar.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventInput extends StObject {
   
   // Optional Properties
-  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.native
+  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
   
   // Required Properties
-  var attachments: js.UndefOr[js.Array[FileUrl]] = js.native
+  var attachments: js.UndefOr[js.Array[FileUrl]] = js.undefined
   
-  var attendees: js.UndefOr[js.Array[AdditionalGuests]] = js.native
+  var attendees: js.UndefOr[js.Array[AdditionalGuests]] = js.undefined
   
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var end: Date = js.native
+  var end: Date
   
-  var extendedProperties: js.UndefOr[Private] = js.native
+  var extendedProperties: js.UndefOr[Private] = js.undefined
   
-  var gadget: js.UndefOr[Display] = js.native
+  var gadget: js.UndefOr[Display] = js.undefined
   
-  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native
+  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   
-  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.native
+  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var originalStartTime: js.UndefOr[DateTime] = js.native
+  var originalStartTime: js.UndefOr[DateTime] = js.undefined
   
-  var recurrence: js.UndefOr[js.Array[String]] = js.native
+  var recurrence: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reminders: js.UndefOr[Overrides] = js.native
+  var reminders: js.UndefOr[Overrides] = js.undefined
   
-  var sequence: js.UndefOr[integer] = js.native
+  var sequence: js.UndefOr[integer] = js.undefined
   
-  var source: js.UndefOr[Title] = js.native
+  var source: js.UndefOr[Title] = js.undefined
   
-  var start: Date = js.native
+  var start: Date
   
-  var status: js.UndefOr[EventStatus] = js.native
+  var status: js.UndefOr[EventStatus] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var transparency: js.UndefOr[EventTransparency] = js.native
+  var transparency: js.UndefOr[EventTransparency] = js.undefined
   
-  var visibility: js.UndefOr[EventVisibility] = js.native
+  var visibility: js.UndefOr[EventVisibility] = js.undefined
 }
 object EventInput {
   

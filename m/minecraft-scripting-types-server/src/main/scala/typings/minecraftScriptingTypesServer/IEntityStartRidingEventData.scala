@@ -3,24 +3,22 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity becomes a rider on another entity.
   */
-@js.native
 trait IEntityStartRidingEventData extends StObject {
   
   /**
     * The rider
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The entity being ridden
     */
-  var ride: IEntity = js.native
+  var ride: IEntity
 }
 object IEntityStartRidingEventData {
   

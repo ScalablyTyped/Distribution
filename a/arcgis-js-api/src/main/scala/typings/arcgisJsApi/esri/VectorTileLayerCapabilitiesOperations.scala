@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VectorTileLayerCapabilitiesOperations extends Object {
+trait VectorTileLayerCapabilitiesOperations
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the tiles from the service can be exported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
     */
-  var supportsExportTiles: Boolean = js.native
+  var supportsExportTiles: Boolean
   
   /**
     * Indicates if the service exposes a tile map that describes the presence of tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
     */
-  var supportsTileMap: Boolean = js.native
+  var supportsTileMap: Boolean
 }
 object VectorTileLayerCapabilitiesOperations {
   

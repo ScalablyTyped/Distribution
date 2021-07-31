@@ -3,32 +3,32 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.argument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Argument extends AbstractBase {
+trait Argument
+  extends StObject
+     with AbstractBase {
   
   /** A default value, absent if there is none. */
-  var default: ValueDescription | Null = js.native
+  var default: ValueDescription | Null
   
   /** An IDL Type describing the type of the argument. */
-  var idlType: IDLTypeDescription = js.native
+  var idlType: IDLTypeDescription
   
   /** The argument's name. */
-  var name: String = js.native
+  var name: String
   
   /** True if the argument is optional. */
-  var optional: Boolean = js.native
+  var optional: Boolean
   
   @JSName("parent")
-  var parent_Argument: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType = js.native
+  var parent_Argument: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType
   
   @JSName("type")
-  var type_Argument: argument = js.native
+  var type_Argument: argument
   
   /** True if the argument is variadic. */
-  var variadic: Boolean = js.native
+  var variadic: Boolean
 }
 object Argument {
   
@@ -39,11 +39,10 @@ object Argument {
     name: String,
     optional: Boolean,
     parent: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType,
-    `type`: argument,
     variadic: Boolean
   ): Argument = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], variadic = variadic.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], variadic = variadic.asInstanceOf[js.Any], default = null)
+    __obj.updateDynamic("type")("argument")
     __obj.asInstanceOf[Argument]
   }
   

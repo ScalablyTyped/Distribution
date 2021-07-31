@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event data for the SystemNavigationManager.BackRequested event. */
-@js.native
 trait BackRequestedEventArgs extends StObject {
   
   /** Gets or sets a value that indicates whether the app performed the requested back-navigation. */
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object BackRequestedEventArgs {
   

@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,9 +21,9 @@ trait Rows extends StObject {
   var Borders: typings.activexWord.Word.Borders = js.native
   
   def ConvertToText(): Range = js.native
-  def ConvertToText(Separator: js.UndefOr[scala.Nothing], NestedTables: js.Any): Range = js.native
   def ConvertToText(Separator: js.Any): Range = js.native
   def ConvertToText(Separator: js.Any, NestedTables: js.Any): Range = js.native
+  def ConvertToText(Separator: Unit, NestedTables: js.Any): Range = js.native
   
   def ConvertToTextOld(): Range = js.native
   def ConvertToTextOld(Separator: js.Any): Range = js.native

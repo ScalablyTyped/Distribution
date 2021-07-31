@@ -5,27 +5,25 @@ import typings.antdMobile.antdMobileStrings.primary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultPropsTypeMod {
   
-  @js.native
   trait ResultPropsType extends StObject {
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var buttonType: js.UndefOr[primary | ghost] = js.native
+    var buttonType: js.UndefOr[primary | ghost] = js.undefined
     
-    var img: js.UndefOr[ReactNode] = js.native
+    var img: js.UndefOr[ReactNode] = js.undefined
     
-    var imgUrl: js.UndefOr[String] = js.native
+    var imgUrl: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[ReactNode] = js.native
+    var message: js.UndefOr[ReactNode] = js.undefined
     
-    var onButtonClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onButtonClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ResultPropsType {
     

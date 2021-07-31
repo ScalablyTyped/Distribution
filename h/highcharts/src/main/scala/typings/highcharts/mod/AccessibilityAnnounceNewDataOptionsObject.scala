@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
   
   /**
@@ -24,13 +22,13 @@ trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
     * user. Return empty string to not announce anything. Return `false` to use
     * the default announcement format.
     */
-  var announcementFormatter: js.UndefOr[AccessibilityAnnouncementFormatter] = js.native
+  var announcementFormatter: js.UndefOr[AccessibilityAnnouncementFormatter] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable announcing new data to
     * screen reader users
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Choose whether or not the
@@ -38,7 +36,7 @@ trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
     * user will be notified once idle. It is recommended not to enable this
     * setting unless there is a specific reason to do so.
     */
-  var interruptUser: js.UndefOr[Boolean] = js.native
+  var interruptUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Minimum interval between
@@ -49,7 +47,7 @@ trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
     * all announcements, but be warned that frequent announcements are
     * disturbing to users.
     */
-  var minAnnounceInterval: js.UndefOr[Double] = js.native
+  var minAnnounceInterval: js.UndefOr[Double] = js.undefined
 }
 object AccessibilityAnnounceNewDataOptionsObject {
   

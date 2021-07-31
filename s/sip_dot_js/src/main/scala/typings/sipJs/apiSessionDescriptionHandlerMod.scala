@@ -3,19 +3,17 @@ package typings.sipJs
 import typings.std.RTCSessionDescriptionInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiSessionDescriptionHandlerMod {
   
-  @js.native
   trait BodyAndContentType extends StObject {
     
     /** Message body content. */
-    var body: String = js.native
+    var body: String
     
     /** Message body content type. */
-    var contentType: String = js.native
+    var contentType: String
   }
   object BodyAndContentType {
     
@@ -53,7 +51,7 @@ object apiSessionDescriptionHandlerMod {
       * is called after close or when close occurs before complete.
       */
     def getDescription(): js.Promise[BodyAndContentType] = js.native
-    def getDescription(options: js.UndefOr[scala.Nothing], modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
+    def getDescription(options: Unit, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
     def getDescription(options: SessionDescriptionHandlerOptions): js.Promise[BodyAndContentType] = js.native
     def getDescription(options: SessionDescriptionHandlerOptions, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
     
@@ -89,11 +87,7 @@ object apiSessionDescriptionHandlerMod {
       * is called after close or when close occurs before complete.
       */
     def setDescription(sdp: String): js.Promise[Unit] = js.native
-    def setDescription(
-      sdp: String,
-      options: js.UndefOr[scala.Nothing],
-      modifiers: js.Array[SessionDescriptionHandlerModifier]
-    ): js.Promise[Unit] = js.native
+    def setDescription(sdp: String, options: Unit, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[Unit] = js.native
     def setDescription(sdp: String, options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
     def setDescription(
       sdp: String,
@@ -107,10 +101,9 @@ object apiSessionDescriptionHandlerMod {
     js.Promise[RTCSessionDescriptionInit]
   ]
   
-  @js.native
   trait SessionDescriptionHandlerOptions extends StObject {
     
-    var constraints: js.UndefOr[js.Object] = js.native
+    var constraints: js.UndefOr[js.Object] = js.undefined
   }
   object SessionDescriptionHandlerOptions {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntityRecognizersRequest extends StObject {
   
   /**
     * Filters the list of entities returned. You can filter on Status, SubmitTimeBefore, or SubmitTimeAfter. You can only set one filter at a time.
     */
-  var Filter: js.UndefOr[EntityRecognizerFilter] = js.native
+  var Filter: js.UndefOr[EntityRecognizerFilter] = js.undefined
   
   /**
     *  The maximum number of results to return on each page. The default is 100.
     */
-  var MaxResults: js.UndefOr[MaxResultsInteger] = js.native
+  var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListEntityRecognizersRequest {
   

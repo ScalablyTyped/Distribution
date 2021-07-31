@@ -2,17 +2,15 @@ package typings.atlassianConnectJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accept extends StObject {
   
-  var Accept: String = js.native
+  var Accept: String
   
-  var `If-Match`: String = js.native
+  var `If-Match`: String
   
-  var `If-None-Match`: String = js.native
+  var `If-None-Match`: String
 }
 object Accept {
   

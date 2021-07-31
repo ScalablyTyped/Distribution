@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookSessionInfo extends StObject {
   
   // Id of the workbook session.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true for persistent session. false for non-persistent session (view mode)
-  var persistChanges: js.UndefOr[NullableOption[Boolean]] = js.native
+  var persistChanges: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object WorkbookSessionInfo {
   

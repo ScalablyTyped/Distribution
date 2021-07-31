@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,48 +25,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSource
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
 trait DataPilotSourceDimension
-  extends XNamed
+  extends StObject
+     with XNamed
      with XHierarchiesSupplier
      with XCloneable
      with XPropertySet {
   
   /** specifies which values are used. */
-  var Filter: SafeArray[TableFilterField] = js.native
+  var Filter: SafeArray[TableFilterField]
   
   /**
     * contains flags that control the usage of the dimension.
     * @see com.sun.star.sheet.DimensionFlags
     */
-  var Flags: Double = js.native
+  var Flags: Double
   
   /** specifies how data are aggregated. */
-  var Function: GeneralFunction = js.native
+  var Function: GeneralFunction
   
   /**
     * specifies how data are aggregated.
     * @since LibreOffice 5.3
     */
-  var Function2: Double = js.native
+  var Function2: Double
   
   /** contains `TRUE` if this is the dimension used to layout the different data dimensions. */
-  var IsDataLayoutDimension: Boolean = js.native
+  var IsDataLayoutDimension: Boolean
   
   /** specifies where the dimension is used. */
-  var Orientation: DataPilotFieldOrientation = js.native
+  var Orientation: DataPilotFieldOrientation
   
   /** returns the name of the dimension from which this dimension was cloned, or `NULL` if it was not cloned. */
-  var Original: XNamed = js.native
+  var Original: XNamed
   
   /** specifies the position of the dimension within its orientation. */
-  var Position: Double = js.native
+  var Position: Double
   
   /**
     * specifies which hierarchy of the dimension is used.
     * @see com.sun.star.sheet.DataPilotSourceHierarchies
     */
-  var UsedHierarchy: Double = js.native
+  var UsedHierarchy: Double
 }
 object DataPilotSourceDimension {
   

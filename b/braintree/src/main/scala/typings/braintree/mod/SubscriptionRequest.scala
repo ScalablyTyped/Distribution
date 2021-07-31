@@ -6,45 +6,43 @@ import typings.braintree.anon.Remove
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionRequest extends StObject {
   
-  var addOns: js.UndefOr[Add] = js.native
+  var addOns: js.UndefOr[Add] = js.undefined
   
-  var billingDayOfMonth: js.UndefOr[Double] = js.native
+  var billingDayOfMonth: js.UndefOr[Double] = js.undefined
   
-  var descriptor: js.UndefOr[Descriptor] = js.native
+  var descriptor: js.UndefOr[Descriptor] = js.undefined
   
-  var discounts: js.UndefOr[Remove] = js.native
+  var discounts: js.UndefOr[Remove] = js.undefined
   
-  var firstBillingDate: js.UndefOr[Date] = js.native
+  var firstBillingDate: js.UndefOr[Date] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var merchantAccountId: js.UndefOr[String] = js.native
+  var merchantAccountId: js.UndefOr[String] = js.undefined
   
-  var neverExpires: js.UndefOr[Boolean] = js.native
+  var neverExpires: js.UndefOr[Boolean] = js.undefined
   
-  var numberOfBillingCycles: js.UndefOr[Double] = js.native
+  var numberOfBillingCycles: js.UndefOr[Double] = js.undefined
   
-  var options: js.UndefOr[DoNotInheritAddOnsOrDiscounts] = js.native
+  var options: js.UndefOr[DoNotInheritAddOnsOrDiscounts] = js.undefined
   
-  var paymentMethodNonce: js.UndefOr[String] = js.native
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
   
-  var paymentMethodToken: String = js.native
+  var paymentMethodToken: String
   
-  var planId: String = js.native
+  var planId: String
   
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
-  var trialDuration: js.UndefOr[Double] = js.native
+  var trialDuration: js.UndefOr[Double] = js.undefined
   
-  var trialDurationUnit: js.UndefOr[String] = js.native
+  var trialDurationUnit: js.UndefOr[String] = js.undefined
   
-  var trialPeriod: js.UndefOr[Boolean] = js.native
+  var trialPeriod: js.UndefOr[Boolean] = js.undefined
 }
 object SubscriptionRequest {
   

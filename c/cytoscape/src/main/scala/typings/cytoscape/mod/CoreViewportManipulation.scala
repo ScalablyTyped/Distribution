@@ -4,7 +4,6 @@ import typings.cytoscape.anon.H
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -111,8 +110,9 @@ trait CoreViewportManipulation extends StObject {
     * @param padding [optional] An amount of padding (in pixels) to have around the graph
     */
   def fit(): this.type = js.native
-  def fit(eles: js.UndefOr[CollectionArgument], padding: Double): this.type = js.native
+  def fit(eles: Unit, padding: Double): this.type = js.native
   def fit(eles: CollectionArgument): this.type = js.native
+  def fit(eles: CollectionArgument, padding: Double): this.type = js.native
   
   /**
     * Force the renderer to redraw (i.e. draw a new frame).

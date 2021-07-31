@@ -2,29 +2,27 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceImage extends StObject {
   
-  var cachedId: js.UndefOr[String] = js.native
+  var cachedId: js.UndefOr[String] = js.undefined
   
-  var ext: String = js.native
+  var ext: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var imageId: js.UndefOr[String] = js.native
+  var imageId: js.UndefOr[String] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var resType: String = js.native
+  var resType: String
   
-  var vector: Boolean = js.native
+  var vector: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object SourceImage {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachTrustRequest extends StObject {
   
   /** Required. The domain trust resource to removed. */
-  var trust: js.UndefOr[Trust] = js.native
+  var trust: js.UndefOr[Trust] = js.undefined
 }
 object DetachTrustRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSegmentDetectionRequest extends StObject {
   
   /**
     * Job identifier for the text detection operation for which you want results returned. You get the job identifer from an initial call to StartSegmentDetection.
     */
-  var JobId: typings.awsSdk.rekognitionMod.JobId = js.native
+  var JobId: typings.awsSdk.rekognitionMod.JobId
   
   /**
     * Maximum number of results to return per paginated call. The largest value you can specify is 1000.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.rekognitionMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.rekognitionMod.MaxResults] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of text.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object GetSegmentDetectionRequest {
   

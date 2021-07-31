@@ -2,45 +2,43 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WizardOptions extends StObject {
   
-  var actionBar: js.UndefOr[Boolean] = js.native
+  var actionBar: js.UndefOr[Boolean] = js.undefined
   
-  var activate: js.UndefOr[js.Function1[/* e */ WizardActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ WizardActivateEvent, Unit]] = js.undefined
   
-  var contentLoad: js.UndefOr[js.Function1[/* e */ WizardContentLoadEvent, Unit]] = js.native
+  var contentLoad: js.UndefOr[js.Function1[/* e */ WizardContentLoadEvent, Unit]] = js.undefined
   
-  var contentPosition: js.UndefOr[String] = js.native
+  var contentPosition: js.UndefOr[String] = js.undefined
   
-  var done: js.UndefOr[js.Function1[/* e */ WizardDoneEvent, Unit]] = js.native
+  var done: js.UndefOr[js.Function1[/* e */ WizardDoneEvent, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ WizardErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ WizardErrorEvent, Unit]] = js.undefined
   
-  var formValidateFailed: js.UndefOr[js.Function1[/* e */ WizardFormValidateFailedEvent, Unit]] = js.native
+  var formValidateFailed: js.UndefOr[js.Function1[/* e */ WizardFormValidateFailedEvent, Unit]] = js.undefined
   
-  var loadOnDemand: js.UndefOr[Boolean] = js.native
+  var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[WizardMessages] = js.native
+  var messages: js.UndefOr[WizardMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pager: js.UndefOr[Boolean] = js.native
+  var pager: js.UndefOr[Boolean] = js.undefined
   
-  var reloadOnSelect: js.UndefOr[Boolean] = js.native
+  var reloadOnSelect: js.UndefOr[Boolean] = js.undefined
   
-  var reset: js.UndefOr[js.Function1[/* e */ WizardResetEvent, Unit]] = js.native
+  var reset: js.UndefOr[js.Function1[/* e */ WizardResetEvent, Unit]] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ WizardSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ WizardSelectEvent, Unit]] = js.undefined
   
-  var stepper: js.UndefOr[WizardStepper] = js.native
+  var stepper: js.UndefOr[WizardStepper] = js.undefined
   
-  var steps: js.UndefOr[js.Array[WizardStep]] = js.native
+  var steps: js.UndefOr[js.Array[WizardStep]] = js.undefined
   
-  var validateForms: js.UndefOr[Boolean] = js.native
+  var validateForms: js.UndefOr[Boolean] = js.undefined
 }
 object WizardOptions {
   

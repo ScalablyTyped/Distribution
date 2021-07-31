@@ -2,7 +2,6 @@ package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait SecondFormat extends StObject
 object SecondFormat extends StObject {
   
   @js.native
-  sealed trait default extends SecondFormat
+  sealed trait default
+    extends StObject
+       with SecondFormat
   
   @js.native
-  sealed trait none extends SecondFormat
+  sealed trait none
+    extends StObject
+       with SecondFormat
 }

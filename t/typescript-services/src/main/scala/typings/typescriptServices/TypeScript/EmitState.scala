@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitState extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var container: EmitContainer = js.native
+  var container: EmitContainer
   
-  var line: Double = js.native
+  var line: Double
 }
 object EmitState {
   

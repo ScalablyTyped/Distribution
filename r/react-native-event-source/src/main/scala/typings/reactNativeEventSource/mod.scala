@@ -2,36 +2,48 @@ package typings.reactNativeEventSource
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("react-native-event-source", JSImport.Default)
   @js.native
-  class default protected () extends RNEventSource {
+  class default protected ()
+    extends StObject
+       with RNEventSource {
     def this(url: String) = this()
     def this(url: String, options: js.Object) = this()
+    
+    /* CompleteClass */
+    override def addEventListener(`type`: String, listener: ListenerCallback): js.Any = js.native
+    
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeAllListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeListener(`type`: String, listener: ListenerCallback): Unit = js.native
   }
   
   type ListenerCallback = js.Function1[/* event */ MessageEvent, Unit]
   
-  @js.native
   trait MessageEvent extends StObject {
     
-    var data: String | Null = js.native
+    var data: String | Null
     
-    var lastEventId: String = js.native
+    var lastEventId: String
     
-    var origin: String = js.native
+    var origin: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MessageEvent {
     
     @scala.inline
     def apply(lastEventId: String, origin: String, `type`: String): MessageEvent = {
-      val __obj = js.Dynamic.literal(lastEventId = lastEventId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(lastEventId = lastEventId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], data = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageEvent]
     }
@@ -56,16 +68,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RNEventSource extends StObject {
     
-    def addEventListener(`type`: String, listener: ListenerCallback): js.Any = js.native
+    def addEventListener(`type`: String, listener: ListenerCallback): js.Any
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def removeAllListeners(): Unit = js.native
+    def removeAllListeners(): Unit
     
-    def removeListener(`type`: String, listener: ListenerCallback): Unit = js.native
+    def removeListener(`type`: String, listener: ListenerCallback): Unit
   }
   object RNEventSource {
     

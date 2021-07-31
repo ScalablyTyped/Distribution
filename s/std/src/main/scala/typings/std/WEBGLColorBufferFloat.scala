@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WEBGLColorBufferFloat extends StObject {
   
-  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: GLenum
   
-  val RGBA32F_EXT: GLenum = js.native
+  val RGBA32F_EXT: GLenum
   
-  val UNSIGNED_NORMALIZED_EXT: GLenum = js.native
+  val UNSIGNED_NORMALIZED_EXT: GLenum
 }
 object WEBGLColorBufferFloat {
   

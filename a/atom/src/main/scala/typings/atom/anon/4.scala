@@ -4,15 +4,13 @@ import typings.atom.atomStrings.default
 import typings.atom.atomStrings.srgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var newValue: default | srgb = js.native
+  var newValue: default | srgb
   
-  var oldValue: js.UndefOr[default | srgb] = js.native
+  var oldValue: js.UndefOr[default | srgb] = js.undefined
 }
 object `4` {
   

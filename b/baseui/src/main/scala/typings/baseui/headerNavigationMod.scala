@@ -7,19 +7,17 @@ import typings.react.mod.Component
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerNavigationMod {
   
-  @js.native
   trait ALIGN extends StObject {
     
-    var center: typings.baseui.baseuiStrings.center = js.native
+    var center: typings.baseui.baseuiStrings.center
     
-    var left: `flex-start` = js.native
+    var left: `flex-start`
     
-    var right: `flex-end` = js.native
+    var right: `flex-end`
   }
   object ALIGN {
     
@@ -65,12 +63,11 @@ object headerNavigationMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait HeaderNavigationOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object HeaderNavigationOverrides {
     
@@ -93,10 +90,9 @@ object headerNavigationMod {
     }
   }
   
-  @js.native
   trait HeaderNavigationProps extends StObject {
     
-    var overrides: js.UndefOr[HeaderNavigationOverrides] = js.native
+    var overrides: js.UndefOr[HeaderNavigationOverrides] = js.undefined
   }
   object HeaderNavigationProps {
     

@@ -2,25 +2,23 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how to attach a disk to a Replica.
   */
-@js.native
 trait SchemaDiskAttachment extends StObject {
   
   /**
     * The device name of this disk.
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * A zero-based index to assign to this disk, where 0 is reserved for the
     * boot disk. If not specified, this is assigned by the server.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object SchemaDiskAttachment {
   

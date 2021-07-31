@@ -2,17 +2,15 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeEmpty extends StObject {
   
-  var calculations: js.UndefOr[js.Array[PropertyName]] = js.native
+  var calculations: js.UndefOr[js.Array[PropertyName]] = js.undefined
   
-  var includeEmpty: js.UndefOr[Boolean] = js.native
+  var includeEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var includeQuestionTypes: js.UndefOr[Boolean] = js.native
+  var includeQuestionTypes: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeEmpty {
   

@@ -6,21 +6,19 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullScreenTypesMod {
   
-  @js.native
   trait IFullScreenControl extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IFullScreenControl {
     
@@ -47,10 +45,9 @@ object fullScreenTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenViewCallbacks extends StObject {
     
-    def onButtonClick(): Unit = js.native
+    def onButtonClick(): Unit
   }
   object IFullScreenViewCallbacks {
     
@@ -68,16 +65,15 @@ object fullScreenTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenViewConfig extends StObject {
     
-    var callbacks: IFullScreenViewCallbacks = js.native
+    var callbacks: IFullScreenViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IFullScreenViewConfig {
     
@@ -109,22 +105,21 @@ object fullScreenTypesMod {
     }
   }
   
-  @js.native
   trait IFullScreenViewStyles extends StObject {
     
-    var enterIcon: String = js.native
+    var enterIcon: String
     
-    var exitIcon: String = js.native
+    var exitIcon: String
     
-    var fullScreenControl: String = js.native
+    var fullScreenControl: String
     
-    var fullScreenToggle: String = js.native
+    var fullScreenToggle: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var inFullScreen: String = js.native
+    var inFullScreen: String
   }
   object IFullScreenViewStyles {
     

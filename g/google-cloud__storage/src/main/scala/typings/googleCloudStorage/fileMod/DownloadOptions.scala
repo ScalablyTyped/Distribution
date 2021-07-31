@@ -2,13 +2,13 @@ package typings.googleCloudStorage.fileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownloadOptions extends CreateReadStreamOptions {
+trait DownloadOptions
+  extends StObject
+     with CreateReadStreamOptions {
   
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
 }
 object DownloadOptions {
   

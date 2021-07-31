@@ -4,16 +4,23 @@ import typings.k6.k6Strings.binary
 import typings.k6.mod.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
+  
+  @JSImport("k6/crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This module provides common hashing functionality available in the GoLang crypto package.
     * https://k6.io/docs/javascript-api/k6-crypto
     */
   object default {
+    
+    @JSImport("k6/crypto", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create an HMAC hashing object.
@@ -27,9 +34,8 @@ object cryptoMod {
       * hasher.update('world!');
       * console.log(hasher.digest('hex'));
       */
-    @JSImport("k6/crypto", "default.createHMAC")
-    @js.native
-    def createHMAC(algorithm: Algorithm, secret: String): Hasher = js.native
+    @scala.inline
+    def createHMAC(algorithm: Algorithm, secret: String): Hasher = (^.asInstanceOf[js.Dynamic].applyDynamic("createHMAC")(algorithm.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[Hasher]
     
     /**
       * Create a hashing object.
@@ -42,9 +48,8 @@ object cryptoMod {
       * hasher.update('world!');
       * console.log(hasher.digest('hex'));
       */
-    @JSImport("k6/crypto", "default.createHash")
-    @js.native
-    def createHash(algorithm: Algorithm): Hasher = js.native
+    @scala.inline
+    def createHash(algorithm: Algorithm): Hasher = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hasher]
     
     /**
       * Produce HMAC.
@@ -57,9 +62,8 @@ object cryptoMod {
       * @example
       * crypto.hmac('sha256', 'mysecret', 'hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.hmac")
-    @js.native
-    def hmac[OE /* <: OutputEncoding */](algorithm: Algorithm, secret: String, data: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def hmac[OE /* <: OutputEncoding */](algorithm: Algorithm, secret: String, data: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], data.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with MD4.
@@ -70,9 +74,8 @@ object cryptoMod {
       * @example
       * crypto.md4('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.md4")
-    @js.native
-    def md4[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def md4[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("md4")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with MD5.
@@ -83,9 +86,8 @@ object cryptoMod {
       * @example
       * crypto.md5("hello world!", "hex")
       */
-    @JSImport("k6/crypto", "default.md5")
-    @js.native
-    def md5[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def md5[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Generate random bytes.
@@ -94,9 +96,8 @@ object cryptoMod {
       * @example
       * crypto.randomBytes(42)
       */
-    @JSImport("k6/crypto", "default.randomBytes")
-    @js.native
-    def randomBytes(size: Double): bytes = js.native
+    @scala.inline
+    def randomBytes(size: Double): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[bytes]
     
     /**
       * Hash with RIPEMD-160.
@@ -107,9 +108,8 @@ object cryptoMod {
       * @example
       * crypto.ripemd160('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.ripemd160")
-    @js.native
-    def ripemd160[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def ripemd160[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-1.
@@ -120,9 +120,8 @@ object cryptoMod {
       * @example
       * crypto.sha1('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha1")
-    @js.native
-    def sha1[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha1[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-256.
@@ -133,9 +132,8 @@ object cryptoMod {
       * @example
       * crypto.sha256('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha256")
-    @js.native
-    def sha256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-384.
@@ -146,9 +144,8 @@ object cryptoMod {
       * @example
       * crypto.sha384('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha384")
-    @js.native
-    def sha384[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha384[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-512.
@@ -159,9 +156,8 @@ object cryptoMod {
       * @example
       * crypto.sha512('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha512")
-    @js.native
-    def sha512[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha512[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-512/224.
@@ -172,9 +168,8 @@ object cryptoMod {
       * @example
       * crypto.sha512_224('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha512_224")
-    @js.native
-    def sha512224[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha512224[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_224")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
     
     /**
       * Hash with SHA-512/256.
@@ -185,9 +180,8 @@ object cryptoMod {
       * @example
       * crypto.sha512_256('hello world!', 'hex')
       */
-    @JSImport("k6/crypto", "default.sha512_256")
-    @js.native
-    def sha512256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+    @scala.inline
+    def sha512256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_256")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   }
   
   @JSImport("k6/crypto", "Hasher")
@@ -220,57 +214,44 @@ object cryptoMod {
     def update(input: String): Unit = js.native
   }
   
-  @JSImport("k6/crypto", "createHMAC")
-  @js.native
-  def createHMAC(algorithm: Algorithm, secret: String): Hasher = js.native
+  @scala.inline
+  def createHMAC(algorithm: Algorithm, secret: String): Hasher = (^.asInstanceOf[js.Dynamic].applyDynamic("createHMAC")(algorithm.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[Hasher]
   
-  @JSImport("k6/crypto", "createHash")
-  @js.native
-  def createHash(algorithm: Algorithm): Hasher = js.native
+  @scala.inline
+  def createHash(algorithm: Algorithm): Hasher = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hasher]
   
-  @JSImport("k6/crypto", "hmac")
-  @js.native
-  def hmac[OE /* <: OutputEncoding */](algorithm: Algorithm, secret: String, data: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def hmac[OE /* <: OutputEncoding */](algorithm: Algorithm, secret: String, data: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], data.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "md4")
-  @js.native
-  def md4[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def md4[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("md4")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "md5")
-  @js.native
-  def md5[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def md5[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double): bytes = js.native
+  @scala.inline
+  def randomBytes(size: Double): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[bytes]
   
-  @JSImport("k6/crypto", "ripemd160")
-  @js.native
-  def ripemd160[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def ripemd160[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha1")
-  @js.native
-  def sha1[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha1[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha256")
-  @js.native
-  def sha256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha384")
-  @js.native
-  def sha384[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha384[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha512")
-  @js.native
-  def sha512[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha512[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha512_224")
-  @js.native
-  def sha512224[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha512224[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_224")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
-  @JSImport("k6/crypto", "sha512_256")
-  @js.native
-  def sha512256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  @scala.inline
+  def sha512256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_256")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.md4

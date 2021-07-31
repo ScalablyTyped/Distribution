@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/speech/v1p1beta1", "speech_v1p1beta1.Resource$Speech")
@@ -35,7 +34,7 @@ class ResourceSpeech protected () extends StObject {
     */
   def longrunningrecognize(): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def longrunningrecognize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def longrunningrecognize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(params: ParamsResourceSpeechLongrunningrecognize): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(params: ParamsResourceSpeechLongrunningrecognize, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def longrunningrecognize(
@@ -65,7 +64,7 @@ class ResourceSpeech protected () extends StObject {
     */
   def recognize(): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(callback: BodyResponseCallback[SchemaRecognizeResponse]): Unit = js.native
-  def recognize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRecognizeResponse] = js.native
+  def recognize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(params: ParamsResourceSpeechRecognize): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(params: ParamsResourceSpeechRecognize, callback: BodyResponseCallback[SchemaRecognizeResponse]): Unit = js.native
   def recognize(

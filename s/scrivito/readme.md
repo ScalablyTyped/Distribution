@@ -10,9 +10,9 @@ Scrivito is a professional, yet easy to use SaaS Enterprise Content Management S
 | ------------------ | :-------------: |
 | Full name          | scrivito |
 | Keywords           | scrivito, saas, cms, react |
-| # releases         | 48 |
+| # releases         | 54 |
 | # dependents       | 0 |
-| # downloads        | 22007 |
+| # downloads        | 63927 |
 | # stars            | 0 |
 
 ## Links

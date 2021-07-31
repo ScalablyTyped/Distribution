@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PositionedObjectPositioning have been changed in this suggestion. For any
   * field set to true, there is a new suggested value.
   */
-@js.native
 trait SchemaPositionedObjectPositioningSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to layout.
     */
-  var layoutSuggested: js.UndefOr[Boolean] = js.native
+  var layoutSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to left_offset.
     */
-  var leftOffsetSuggested: js.UndefOr[Boolean] = js.native
+  var leftOffsetSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to top_offset.
     */
-  var topOffsetSuggested: js.UndefOr[Boolean] = js.native
+  var topOffsetSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPositionedObjectPositioningSuggestionState {
   

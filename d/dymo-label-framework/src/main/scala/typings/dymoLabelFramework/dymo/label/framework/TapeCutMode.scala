@@ -2,7 +2,6 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object TapeCutMode extends StObject {
   
   /** Indicates to cut the tape between labels. */
   @js.native
-  sealed trait AutoCut extends TapeCutMode
+  sealed trait AutoCut
+    extends StObject
+       with TapeCutMode
   
   /** Indicates to print cut marks between labels. */
   @js.native
-  sealed trait ChainMarks extends TapeCutMode
+  sealed trait ChainMarks
+    extends StObject
+       with TapeCutMode
 }

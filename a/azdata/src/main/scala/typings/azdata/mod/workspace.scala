@@ -6,17 +6,18 @@ import typings.vscode.mod.Event
 import typings.vscode.mod.ViewColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspace {
   
-  @JSImport("azdata", "workspace.createModelViewEditor")
+  @JSImport("azdata", "workspace")
   @js.native
-  def createModelViewEditor(title: String): ModelViewEditor = js.native
-  @JSImport("azdata", "workspace.createModelViewEditor")
-  @js.native
-  def createModelViewEditor(title: String, options: ModelViewEditorOptions): ModelViewEditor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createModelViewEditor(title: String): ModelViewEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any]).asInstanceOf[ModelViewEditor]
+  @scala.inline
+  def createModelViewEditor(title: String, options: ModelViewEditorOptions): ModelViewEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModelViewEditor]
   
   @JSImport("azdata", "workspace.onDidChangeToDashboard")
   @js.native
@@ -27,7 +28,9 @@ object workspace {
   val onDidOpenDashboard: Event[DashboardDocument] = js.native
   
   @js.native
-  trait ModelViewEditor extends ModelViewPanel {
+  trait ModelViewEditor
+    extends StObject
+       with ModelViewPanel {
     
     /**
       * `true` if there are unpersisted changes.

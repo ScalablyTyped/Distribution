@@ -2,23 +2,21 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepthFirstSearch[T] extends StObject {
   
-  def dfs(G: Graph, v: Double): Unit = js.native
+  def dfs(G: Graph, v: Double): Unit
   
-  var edgeTo: js.Any = js.native
+  var edgeTo: js.Any
   
-  def hasPathTo(v: Double): Boolean = js.native
+  def hasPathTo(v: Double): Boolean
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  def pathTo(v: Double): js.Array[Double] = js.native
+  def pathTo(v: Double): js.Array[Double]
   
-  var s: js.Any = js.native
+  var s: js.Any
 }
 object DepthFirstSearch {
   
@@ -36,7 +34,7 @@ object DepthFirstSearch {
   }
   
   @scala.inline
-  implicit class DepthFirstSearchMutableBuilder[Self <: DepthFirstSearch[_], T] (val x: Self with DepthFirstSearch[T]) extends AnyVal {
+  implicit class DepthFirstSearchMutableBuilder[Self <: DepthFirstSearch[?], T] (val x: Self & DepthFirstSearch[T]) extends AnyVal {
     
     @scala.inline
     def setDfs(value: (Graph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))

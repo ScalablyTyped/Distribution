@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XXMLOasisBasicImporter
-  extends XImporter
+  extends StObject
+     with XImporter
      with XDocumentHandler
 object XXMLOasisBasicImporter {
   

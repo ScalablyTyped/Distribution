@@ -3,7 +3,6 @@ package typings.convertUnits.mod
 import typings.convertUnits.convertUnitsStrings.mVAR_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Apparent Power

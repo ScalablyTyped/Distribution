@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesLoadOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: js.UndefOr[Boolean] = js.native
+  var address: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var addressLocal: js.UndefOr[Boolean] = js.native
+  var addressLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[CellPropertiesFormatLoadOptions] = js.native
+  var format: js.UndefOr[CellPropertiesFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var hyperlink: js.UndefOr[Boolean] = js.native
+  var hyperlink: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait CellPropertiesLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
 }
 object CellPropertiesLoadOptions {
   

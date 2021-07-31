@@ -2,21 +2,19 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollupBuild extends StObject {
   
-  var cache: js.UndefOr[RollupCache] = js.native
+  var cache: js.UndefOr[RollupCache] = js.undefined
   
-  def generate(outputOptions: OutputOptions): js.Promise[RollupOutput] = js.native
+  def generate(outputOptions: OutputOptions): js.Promise[RollupOutput]
   
-  var getTimings: js.UndefOr[js.Function0[SerializedTimings]] = js.native
+  var getTimings: js.UndefOr[js.Function0[SerializedTimings]] = js.undefined
   
-  var watchFiles: js.Array[String] = js.native
+  var watchFiles: js.Array[String]
   
-  def write(options: OutputOptions): js.Promise[RollupOutput] = js.native
+  def write(options: OutputOptions): js.Promise[RollupOutput]
 }
 object RollupBuild {
   

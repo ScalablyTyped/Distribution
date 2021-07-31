@@ -4,21 +4,21 @@
 Typings are for version 2.1.4
 
 ## Library description:
-MagicSuggest is a multiple selection auto suggest combo box for Bootstrap 3.
+MagicSuggest is a multiple selection auto-suggest input box for Bootstrap 3.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | magicsuggest |
-| Keywords           | - |
-| # releases         | 0 |
+| Keywords           | autocomplete, bootstrap3, JQuery |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 45872 |
+| # downloads        | 37622 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/martin-williams/magicsuggest#readme)
-- [Bugs](https://github.com/martin-williams/magicsuggest/issues)
-- [Repository](https://github.com/martin-williams/magicsuggest)
+- [Homepage](https://github.com/Magicsuggest/magicsuggest#readme)
+- [Bugs](https://github.com/Magicsuggest/magicsuggest/issues)
+- [Repository](https://github.com/Magicsuggest/magicsuggest)
 - [Npm](https://www.npmjs.com/package/magicsuggest)
     
 

@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a factory interface for creating message boxes. */
-@js.native
-trait XMessageBoxFactory extends XInterface {
+trait XMessageBoxFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a message box.
@@ -20,7 +20,7 @@ trait XMessageBoxFactory extends XInterface {
     * @param sMessage specifies text which will be shown by the message box. Line-breaks must be added using 'CR' or 'CR+LF'.
     * @returns the created message box or a null reference if it cannot be created.
     */
-  def createMessageBox(aParent: XWindowPeer, eType: MessageBoxType, nButtons: Double, sTitle: String, sMessage: String): XMessageBox = js.native
+  def createMessageBox(aParent: XWindowPeer, eType: MessageBoxType, nButtons: Double, sTitle: String, sMessage: String): XMessageBox
 }
 object XMessageBoxFactory {
   

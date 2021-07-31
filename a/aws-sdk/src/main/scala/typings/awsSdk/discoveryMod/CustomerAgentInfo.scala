@@ -2,46 +2,44 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerAgentInfo extends StObject {
   
   /**
     * Number of active discovery agents.
     */
-  var activeAgents: Integer = js.native
+  var activeAgents: Integer
   
   /**
     * Number of blacklisted discovery agents.
     */
-  var blackListedAgents: Integer = js.native
+  var blackListedAgents: Integer
   
   /**
     * Number of healthy discovery agents
     */
-  var healthyAgents: Integer = js.native
+  var healthyAgents: Integer
   
   /**
     * Number of discovery agents with status SHUTDOWN.
     */
-  var shutdownAgents: Integer = js.native
+  var shutdownAgents: Integer
   
   /**
     * Total number of discovery agents.
     */
-  var totalAgents: Integer = js.native
+  var totalAgents: Integer
   
   /**
     * Number of unhealthy discovery agents.
     */
-  var unhealthyAgents: Integer = js.native
+  var unhealthyAgents: Integer
   
   /**
     * Number of unknown discovery agents.
     */
-  var unknownAgents: Integer = js.native
+  var unknownAgents: Integer
 }
 object CustomerAgentInfo {
   

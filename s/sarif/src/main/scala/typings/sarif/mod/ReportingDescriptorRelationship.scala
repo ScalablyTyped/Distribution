@@ -2,32 +2,30 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportingDescriptorRelationship extends StObject {
   
   /**
     * A description of the reporting descriptor relationship.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * A set of distinct strings that categorize the relationship. Well-known kinds include 'canPrecede', 'canFollow',
     * 'willPrecede', 'willFollow', 'superset', 'subset', 'equal', 'disjoint', 'relevant', and 'incomparable'.
     */
-  var kinds: js.UndefOr[js.Array[String]] = js.native
+  var kinds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the reporting descriptor reference.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A reference to the related reporting descriptor.
     */
-  var target: ReportingDescriptorReference = js.native
+  var target: ReportingDescriptorReference
 }
 object ReportingDescriptorRelationship {
   

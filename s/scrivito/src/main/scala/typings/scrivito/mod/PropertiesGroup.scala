@@ -2,18 +2,16 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO talk about this with krishan
-@js.native
 trait PropertiesGroup extends StObject {
   
-  var component: js.UndefOr[String] = js.native
+  var component: js.UndefOr[String] = js.undefined
   
-  var properties: js.UndefOr[js.Array[String]] = js.native
+  var properties: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object PropertiesGroup {
   

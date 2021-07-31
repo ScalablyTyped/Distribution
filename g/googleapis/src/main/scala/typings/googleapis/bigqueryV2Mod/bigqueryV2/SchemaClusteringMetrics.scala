@@ -2,24 +2,22 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Evaluation metrics for clustering models.
   */
-@js.native
 trait SchemaClusteringMetrics extends StObject {
   
   /**
     * Davies-Bouldin index.
     */
-  var daviesBouldinIndex: js.UndefOr[Double] = js.native
+  var daviesBouldinIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Mean of squared distances between each sample to its cluster centroid.
     */
-  var meanSquaredDistance: js.UndefOr[Double] = js.native
+  var meanSquaredDistance: js.UndefOr[Double] = js.undefined
 }
 object SchemaClusteringMetrics {
   

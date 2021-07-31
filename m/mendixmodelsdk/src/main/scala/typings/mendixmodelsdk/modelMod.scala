@@ -8,7 +8,6 @@ import typings.mendixmodelsdk.modelSdkClientImplMod.ModelSdkClientImpl
 import typings.mendixmodelsdk.projectsMod.projects.IModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
@@ -31,9 +30,12 @@ object modelMod {
   /* static members */
   object Model {
     
-    @JSImport("mendixmodelsdk/dist/Model", "Model.createSdkClient")
+    @JSImport("mendixmodelsdk/dist/Model", "Model")
     @js.native
-    def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, Model] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSdkClient")(connectionConfig.asInstanceOf[js.Any]).asInstanceOf[ModelSdkClientImpl[IModel, Model]]
   }
   
   type IModel = typings.mendixmodelsdk.baseModelMod.IModel

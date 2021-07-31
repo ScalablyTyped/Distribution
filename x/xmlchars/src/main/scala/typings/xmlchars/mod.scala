@@ -3,7 +3,6 @@ package typings.xmlchars
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,6 +13,10 @@ object mod {
       * Third edition.
       */
     object ED3 {
+      
+      @JSImport("xmlchars", "XMLNS_1_0.ED3")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Regular expression fragments. These fragments are designed to be included
@@ -31,14 +34,12 @@ object mod {
       }
       
       /* was `typeof nsed3.isNCNameChar` */
-      @JSImport("xmlchars", "XMLNS_1_0.ED3.isNCNameChar")
-      @js.native
-      def isNCNameChar(c: Double): Boolean = js.native
+      @scala.inline
+      def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof nsed3.isNCNameStartChar` */
-      @JSImport("xmlchars", "XMLNS_1_0.ED3.isNCNameStartChar")
-      @js.native
-      def isNCNameStartChar(c: Double): Boolean = js.native
+      @scala.inline
+      def isNCNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Regular expression. These correspond to the productions of the same name
@@ -170,6 +171,10 @@ object mod {
       */
     object ED5 {
       
+      @JSImport("xmlchars", "XML_1_0.ED5")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Regular expression fragments. These fragments are designed to be included
         * inside square brackets in a regular expression.
@@ -194,24 +199,20 @@ object mod {
       }
       
       /* was `typeof ed5.isChar` */
-      @JSImport("xmlchars", "XML_1_0.ED5.isChar")
-      @js.native
-      def isChar(c: Double): Boolean = js.native
+      @scala.inline
+      def isChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isNameChar` */
-      @JSImport("xmlchars", "XML_1_0.ED5.isNameChar")
-      @js.native
-      def isNameChar(c: Double): Boolean = js.native
+      @scala.inline
+      def isNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isNameStartChar` */
-      @JSImport("xmlchars", "XML_1_0.ED5.isNameStartChar")
-      @js.native
-      def isNameStartChar(c: Double): Boolean = js.native
+      @scala.inline
+      def isNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isS` */
-      @JSImport("xmlchars", "XML_1_0.ED5.isS")
-      @js.native
-      def isS(c: Double): Boolean = js.native
+      @scala.inline
+      def isS(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isS")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Lists of characters.

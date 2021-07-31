@@ -5,49 +5,47 @@ import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Makes the entity look at another entity. Once applied, if an entity of the specified type is nearby and can be targeted the entity will turn towards it.
   */
-@js.native
 trait ILookAtComponent extends StObject {
   
   /**
     * Defines the entities that can trigger this component
     * @default player
     */
-  var filters: js.UndefOr[MinecraftFilter] = js.native
+  var filters: js.UndefOr[MinecraftFilter] = js.undefined
   
   /**
     * The range for the random amount of time during which the entity is 'cooling down' and won't get angered or look for a target
     * @default [0.0, 0.0]
     */
-  var look_cooldown: Range = js.native
+  var look_cooldown: Range
   
   /**
     * The event identifier to run when the entities specified in filters look at this entity
     */
-  var look_event: MinecraftTrigger | String = js.native
+  var look_event: MinecraftTrigger | String
   
   /**
     * If true, invulnerable entities (e.g. Players in creative mode) are considered valid targets
     * @default false
     */
-  var mAllowInvulnerable: Boolean = js.native
+  var mAllowInvulnerable: Boolean
   
   /**
     * Maximum distance this entity will look for another entity looking at it
     * @default 10.0
     */
-  var searchRadius: Double = js.native
+  var searchRadius: Double
   
   /**
     * If true, this entity will set the attack target as the entity that looked at it
     * @default true
     */
-  var setTarget: Boolean = js.native
+  var setTarget: Boolean
 }
 object ILookAtComponent {
   

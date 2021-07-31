@@ -3,14 +3,12 @@ package typings.semanticUiSidebar.anon
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl, 'mobile'> */
-@js.native
 trait PickImplmobile extends StObject {
   
-  var mobile: MobileSettings = js.native
+  var mobile: MobileSettings
 }
 object PickImplmobile {
   

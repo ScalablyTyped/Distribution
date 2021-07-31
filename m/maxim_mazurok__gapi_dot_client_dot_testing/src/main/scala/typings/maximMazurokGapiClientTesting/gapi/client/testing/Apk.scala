@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apk extends StObject {
   
   /** The path to an APK to be installed on the device before the test begins. */
-  var location: js.UndefOr[FileReference] = js.native
+  var location: js.UndefOr[FileReference] = js.undefined
   
   /** The java package for the APK to be installed. Value is determined by examining the application's manifest. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object Apk {
   

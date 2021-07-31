@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PhotoImportFindItemsResult::SelectionChanged event. */
-@js.native
 trait PhotoImportSelectionChangedEventArgs extends StObject {
   
   /** Gets a value indicating whether no items are selected after the selection has changed. */
-  var isSelectionEmpty: Boolean = js.native
+  var isSelectionEmpty: Boolean
 }
 object PhotoImportSelectionChangedEventArgs {
   

@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Media.PlayTo
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the SourceSelected event. */
-@js.native
 trait PlayToSourceSelectedEventArgs extends StObject {
   
   /** Gets the display name of the selected Play To source. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /** Gets the display icon for the selected Play To source. */
-  var icon: IRandomAccessStreamWithContentType = js.native
+  var icon: IRandomAccessStreamWithContentType
   
   /** Gets a value that indicates whether the selected Play To source supports audio. */
-  var supportsAudio: Boolean = js.native
+  var supportsAudio: Boolean
   
   /** Gets a value that indicates whether the selected Play To source supports displaying images. */
-  var supportsImage: Boolean = js.native
+  var supportsImage: Boolean
   
   /** Gets a value that indicates whether the selected Play To source supports video. */
-  var supportsVideo: Boolean = js.native
+  var supportsVideo: Boolean
 }
 object PlayToSourceSelectedEventArgs {
   

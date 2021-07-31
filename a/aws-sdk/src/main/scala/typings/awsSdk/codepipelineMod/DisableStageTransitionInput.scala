@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableStageTransitionInput extends StObject {
   
   /**
     * The name of the pipeline in which you want to disable the flow of artifacts from one stage to another.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * The reason given to the user that a stage is disabled, such as waiting for manual approval or manual tests. This message is displayed in the pipeline console UI.
     */
-  var reason: DisabledReason = js.native
+  var reason: DisabledReason
   
   /**
     * The name of the stage where you want to disable the inbound or outbound transition of artifacts.
     */
-  var stageName: StageName = js.native
+  var stageName: StageName
   
   /**
     * Specifies whether artifacts are prevented from transitioning into the stage and being processed by the actions in that stage (inbound), or prevented from transitioning from the stage after they have been processed by the actions in that stage (outbound).
     */
-  var transitionType: StageTransitionType = js.native
+  var transitionType: StageTransitionType
 }
 object DisableStageTransitionInput {
   

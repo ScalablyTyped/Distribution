@@ -6,14 +6,16 @@ import typings.std.Error
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(filename: String): js.Promise[JSONFile] = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONFile]]
+  
   @JSImport("json-file-plus", JSImport.Namespace)
   @js.native
-  def apply(filename: String): js.Promise[JSONFile] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("json-file-plus", "JSONData")
   @js.native
@@ -24,7 +26,7 @@ object mod {
     
     var format: Format = js.native
     
-    def get(key: PropertyKey): js.Promise[_] = js.native
+    def get(key: PropertyKey): js.Promise[js.Any] = js.native
     
     def remove(key: PropertyKey): js.Promise[Unit] = js.native
     
@@ -46,16 +48,14 @@ object mod {
     def saveSync(): Unit = js.native
   }
   
-  @JSImport("json-file-plus", "sync")
-  @js.native
-  def sync(filename: String): JSONFile = js.native
+  @scala.inline
+  def sync(filename: String): JSONFile = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any]).asInstanceOf[JSONFile]
   
-  @js.native
   trait Format extends StObject {
     
-    val indent: Double | Charactertabulation = js.native
+    val indent: Double | Charactertabulation
     
-    val trailing: Boolean = js.native
+    val trailing: Boolean
   }
   object Format {
     

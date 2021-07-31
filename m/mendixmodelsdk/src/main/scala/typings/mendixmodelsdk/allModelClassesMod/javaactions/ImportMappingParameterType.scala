@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,9 +40,8 @@ object ImportMappingParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType]
   
   /**
     * Creates and returns a new ImportMappingParameterType instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object ImportMappingParameterType {
     *  7.2.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType.structureTypeName")

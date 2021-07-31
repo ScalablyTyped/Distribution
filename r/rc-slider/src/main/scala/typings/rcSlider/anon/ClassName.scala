@@ -2,31 +2,29 @@ package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: js.Any = js.native
+  var className: js.Any
   
-  var included: js.Any = js.native
+  var included: js.Any
   
-  var lowerBound: js.Any = js.native
+  var lowerBound: js.Any
   
-  var marks: js.Any = js.native
+  var marks: js.Any
   
-  var max: js.Any = js.native
+  var max: js.Any
   
-  var min: js.Any = js.native
+  var min: js.Any
   
-  var onClickLabel: js.Any = js.native
+  var onClickLabel: js.Any
   
-  var reverse: js.Any = js.native
+  var reverse: js.Any
   
-  var upperBound: js.Any = js.native
+  var upperBound: js.Any
   
-  var vertical: js.Any = js.native
+  var vertical: js.Any
 }
 object ClassName {
   

@@ -12,37 +12,35 @@ import typings.readdirp.readdirpStrings.files_directories
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(root: String): ReaddirpStream = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[ReaddirpStream]
+  @scala.inline
+  def apply(root: String, options: ReaddirpOptions): ReaddirpStream = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReaddirpStream]
+  
   @JSImport("readdirp", JSImport.Namespace)
   @js.native
-  def apply(root: String): ReaddirpStream = js.native
-  @JSImport("readdirp", JSImport.Namespace)
-  @js.native
-  def apply(root: String, options: ReaddirpOptions): ReaddirpStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("readdirp", "promise")
-  @js.native
-  def promise(root: String): js.Promise[js.Array[EntryInfo]] = js.native
-  @JSImport("readdirp", "promise")
-  @js.native
-  def promise(root: String, options: ReaddirpOptions): js.Promise[js.Array[EntryInfo]] = js.native
+  @scala.inline
+  def promise(root: String): js.Promise[js.Array[EntryInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[EntryInfo]]]
+  @scala.inline
+  def promise(root: String, options: ReaddirpOptions): js.Promise[js.Array[EntryInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[EntryInfo]]]
   
-  @js.native
   trait EntryInfo extends StObject {
     
-    var basename: String = js.native
+    var basename: String
     
-    var dirent: js.UndefOr[Dirent] = js.native
+    var dirent: js.UndefOr[Dirent] = js.undefined
     
-    var fullPath: String = js.native
+    var fullPath: String
     
-    var path: String = js.native
+    var path: String
     
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
   }
   object EntryInfo {
     
@@ -78,22 +76,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ReaddirpOptions extends StObject {
     
-    var alwaysStat: js.UndefOr[Boolean] = js.native
+    var alwaysStat: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var directoryFilter: js.UndefOr[String | js.Array[String] | (js.Function1[/* entry */ EntryInfo, Boolean])] = js.native
+    var directoryFilter: js.UndefOr[String | js.Array[String] | (js.Function1[/* entry */ EntryInfo, Boolean])] = js.undefined
     
-    var fileFilter: js.UndefOr[String | js.Array[String] | (js.Function1[/* entry */ EntryInfo, Boolean])] = js.native
+    var fileFilter: js.UndefOr[String | js.Array[String] | (js.Function1[/* entry */ EntryInfo, Boolean])] = js.undefined
     
-    var lstat: js.UndefOr[Boolean] = js.native
+    var lstat: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[files | directories | files_directories | all] = js.native
+    var `type`: js.UndefOr[files | directories | files_directories | all] = js.undefined
   }
   object ReaddirpOptions {
     

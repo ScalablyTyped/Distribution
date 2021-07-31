@@ -3,87 +3,85 @@ package typings.winrtUwp.Windows.Media.Audio
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reverberation effect definition supported by the audio graph. */
-@js.native
 trait ReverbEffectDefinition extends StObject {
   
   /** Gets the activatable class ID for the reverberation effect definition object. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets or sets the decay time supported by the reverberation effect definition. */
-  var decayTime: Double = js.native
+  var decayTime: Double
   
   /** Gets or sets the density included in the reverberation effect definition. */
-  var density: Double = js.native
+  var density: Double
   
   /** Gets or sets a value indicating if the reverberation effect disables late fields. */
-  var disableLateField: Boolean = js.native
+  var disableLateField: Boolean
   
   /** Gets or sets the early diffusion value for the reverberation effect definition. */
-  var earlyDiffusion: Double = js.native
+  var earlyDiffusion: Double
   
   /** Gets or sets the high equalization cutoff included in the reverberation effect definition. */
-  var highEQCutoff: Double = js.native
+  var highEQCutoff: Double
   
   /** Gets or sets the high equalization gain included in the reverberation effect definition. */
-  var highEQGain: Double = js.native
+  var highEQGain: Double
   
   /** Gets or sets the late diffusion included in the reverberation effect definition. */
-  var lateDiffusion: Double = js.native
+  var lateDiffusion: Double
   
   /** Gets or sets the low equalization cutoff included in the reverberation effect definition. */
-  var lowEQCutoff: Double = js.native
+  var lowEQCutoff: Double
   
   /** Gets or sets the low equalization gain included in the reverberation effect definition. */
-  var lowEQGain: Double = js.native
+  var lowEQGain: Double
   
   /** Gets or sets the position left included in the reverberation effect definition. */
-  var positionLeft: Double = js.native
+  var positionLeft: Double
   
   /** Gets or sets the matrix position left included in the reverberation effect definition. */
-  var positionMatrixLeft: Double = js.native
+  var positionMatrixLeft: Double
   
   /** Gets or sets the matrix position right included in the reverberation effect definition. */
-  var positionMatrixRight: Double = js.native
+  var positionMatrixRight: Double
   
   /** Gets or sets the position right included in the reverberation effect definition. */
-  var positionRight: Double = js.native
+  var positionRight: Double
   
   /** Gets the properties supported by the reverberation effect definition. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
   /** Gets or sets the rear delay included in the reverberation effect definition. */
-  var rearDelay: Double = js.native
+  var rearDelay: Double
   
   /** Gets or sets the reflections delay included in the reverberation effect definition. */
-  var reflectionsDelay: Double = js.native
+  var reflectionsDelay: Double
   
   /** Gets or sets the reflections gain included in the reverberation effect definition. */
-  var reflectionsGain: Double = js.native
+  var reflectionsGain: Double
   
   /** Gets or sets the reverberation delay included in the reverberation effect definition. */
-  var reverbDelay: Double = js.native
+  var reverbDelay: Double
   
   /** Gets or sets the reverberation gain included in the reverberation effect definition. */
-  var reverbGain: Double = js.native
+  var reverbGain: Double
   
   /** Gets or sets the room filter frequency included in the reverberation effect definition. */
-  var roomFilterFreq: Double = js.native
+  var roomFilterFreq: Double
   
   /** Gets or sets the room filter high frequency included in the reverberation effect definition. */
-  var roomFilterHF: Double = js.native
+  var roomFilterHF: Double
   
   /** Gets or sets the main room filter included in the reverberation effect definition. */
-  var roomFilterMain: Double = js.native
+  var roomFilterMain: Double
   
   /** Gets or sets the room size included in the reverberation effect definition. */
-  var roomSize: Double = js.native
+  var roomSize: Double
   
   /** Gets or sets the wet-dry audio voice mix for the reverberation effect definition. */
-  var wetDryMix: Double = js.native
+  var wetDryMix: Double
 }
 object ReverbEffectDefinition {
   

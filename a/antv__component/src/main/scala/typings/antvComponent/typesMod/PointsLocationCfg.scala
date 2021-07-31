@@ -3,17 +3,17 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointsLocationCfg extends LocationCfg {
+trait PointsLocationCfg
+  extends StObject
+     with LocationCfg {
   
   /**
     * 定位点的集合
     * @type {Point[]}
     */
-  var points: js.UndefOr[js.Array[Point]] = js.native
+  var points: js.UndefOr[js.Array[Point]] = js.undefined
 }
 object PointsLocationCfg {
   

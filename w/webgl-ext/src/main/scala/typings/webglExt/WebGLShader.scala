@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGLShader extends StObject {
   
-  val __WebGLShader: Unit = js.native
+  val __WebGLShader: Unit
 }
 object WebGLShader {
   

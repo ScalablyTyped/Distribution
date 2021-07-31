@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a factory for a typified enumeration through a collection of components. */
-@js.native
-trait XComponentEnumerationAccess extends XEnumerationAccess {
+trait XComponentEnumerationAccess
+  extends StObject
+     with XEnumerationAccess {
   
   /** creates a new instance of enumeration through components. */
-  def createComponentEnumeration(): XComponentEnumeration = js.native
+  def createComponentEnumeration(): XComponentEnumeration
 }
 object XComponentEnumerationAccess {
   

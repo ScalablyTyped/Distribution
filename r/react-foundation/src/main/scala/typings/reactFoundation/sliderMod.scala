@@ -7,7 +7,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
@@ -38,14 +37,13 @@ object sliderMod {
     def componentWillMount_MTwoHandleSlider(): Unit = js.native
   }
   
-  @js.native
   trait SliderCommonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var isVertical: js.UndefOr[Boolean] = js.native
+    var isVertical: js.UndefOr[Boolean] = js.undefined
   }
   object SliderCommonProps {
     
@@ -78,10 +76,9 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait SliderFillProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object SliderFillProps {
     
@@ -105,18 +102,19 @@ object sliderMod {
   type SliderHandleProps = HTMLAttributes[HTMLSpanElement]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactFoundation.sliderMod.SliderCommonProps because var conflicts: className. Inlined isVertical, isDisabled */ @js.native
-  trait SliderProps extends HTMLAttributes[HTMLDivElement] {
+  - typings.reactFoundation.sliderMod.SliderCommonProps because var conflicts: className. Inlined isVertical, isDisabled */ trait SliderProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var fill: js.UndefOr[SliderFillProps] = js.native
+    var fill: js.UndefOr[SliderFillProps] = js.undefined
     
-    var handle: js.UndefOr[SliderHandleProps] = js.native
+    var handle: js.UndefOr[SliderHandleProps] = js.undefined
     
-    var initialStart: js.UndefOr[Double] = js.native
+    var initialStart: js.UndefOr[Double] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var isVertical: js.UndefOr[Boolean] = js.native
+    var isVertical: js.UndefOr[Boolean] = js.undefined
   }
   object SliderProps {
     
@@ -161,10 +159,9 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait SliderState extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object SliderState {
     
@@ -183,22 +180,23 @@ object sliderMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactFoundation.sliderMod.SliderCommonProps because var conflicts: className. Inlined isVertical, isDisabled */ @js.native
-  trait TwoHandleSliderProps extends HTMLAttributes[HTMLDivElement] {
+  - typings.reactFoundation.sliderMod.SliderCommonProps because var conflicts: className. Inlined isVertical, isDisabled */ trait TwoHandleSliderProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var fill: js.UndefOr[SliderFillProps] = js.native
+    var fill: js.UndefOr[SliderFillProps] = js.undefined
     
-    var initialEnd: js.UndefOr[Double] = js.native
+    var initialEnd: js.UndefOr[Double] = js.undefined
     
-    var initialStart: js.UndefOr[Double] = js.native
+    var initialStart: js.UndefOr[Double] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var isVertical: js.UndefOr[Boolean] = js.native
+    var isVertical: js.UndefOr[Boolean] = js.undefined
     
-    var maxHandle: js.UndefOr[SliderHandleProps] = js.native
+    var maxHandle: js.UndefOr[SliderHandleProps] = js.undefined
     
-    var minHandle: js.UndefOr[SliderHandleProps] = js.native
+    var minHandle: js.UndefOr[SliderHandleProps] = js.undefined
   }
   object TwoHandleSliderProps {
     
@@ -255,12 +253,11 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait TwoHandleSliderState extends StObject {
     
-    var maxValue: Double = js.native
+    var maxValue: Double
     
-    var minValue: Double = js.native
+    var minValue: Double
   }
   object TwoHandleSliderState {
     

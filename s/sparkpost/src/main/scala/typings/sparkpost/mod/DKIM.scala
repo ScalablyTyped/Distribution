@@ -2,26 +2,24 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DKIM extends StObject {
   
   /** Header fields to be included in the DKIM signature. This field is currently ignored. */
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
   /** DKIM private key. */
-  var `private`: js.UndefOr[String] = js.native
+  var `private`: js.UndefOr[String] = js.undefined
   
   /** DKIM public key. */
-  var public: String = js.native
+  var public: String
   
   /** DomainKey selector. */
-  var selector: String = js.native
+  var selector: String
   
   /** Signing Domain Identifier (SDID). SparkPost Enterprise API only. */
-  var signing_domain: js.UndefOr[String] = js.native
+  var signing_domain: js.UndefOr[String] = js.undefined
 }
 object DKIM {
   

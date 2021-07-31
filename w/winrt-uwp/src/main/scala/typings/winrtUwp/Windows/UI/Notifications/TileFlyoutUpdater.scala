@@ -2,25 +2,23 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileFlyoutUpdater extends StObject {
   
-  var clear: js.Any = js.native
+  var clear: js.Any
   
   /* unmapped type */
-  var setting: js.Any = js.native
+  var setting: js.Any
   
   /* unmapped type */
-  var startPeriodicUpdate: js.Any = js.native
+  var startPeriodicUpdate: js.Any
   
   /* unmapped type */
-  var stopPeriodicUpdate: js.Any = js.native
+  var stopPeriodicUpdate: js.Any
   
   /* unmapped type */
-  var update: js.Any = js.native
+  var update: js.Any
 }
 object TileFlyoutUpdater {
   

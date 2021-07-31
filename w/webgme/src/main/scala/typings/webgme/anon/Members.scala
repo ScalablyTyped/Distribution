@@ -3,20 +3,18 @@ package typings.webgme.anon
 import typings.webgme.Core.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Members extends StObject {
   
   /** the members of the set of the node in question. */
-  var members: js.UndefOr[js.Array[Node]] = js.native
+  var members: js.UndefOr[js.Array[Node]] = js.undefined
   
   /** the name of the set. */
-  var name: typings.webgme.GmeCommon.Name = js.native
+  var name: typings.webgme.GmeCommon.Name
   
   /** the node in question. */
-  var node: Node = js.native
+  var node: Node
 }
 object Members {
   

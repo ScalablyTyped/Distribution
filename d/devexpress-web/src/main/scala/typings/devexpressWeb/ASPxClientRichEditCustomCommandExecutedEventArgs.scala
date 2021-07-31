@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.CustomCommandExecuted event.
   */
-@js.native
-trait ASPxClientRichEditCustomCommandExecutedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditCustomCommandExecutedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any = js.native
+  var parameter: js.Any
 }
 object ASPxClientRichEditCustomCommandExecutedEventArgs {
   

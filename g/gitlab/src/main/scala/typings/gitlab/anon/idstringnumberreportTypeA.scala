@@ -3,35 +3,34 @@ package typings.gitlab.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  id :string | number,   reportType :std.Array<string>,   scope :string,   severity :std.Array<string>,   confidence :std.Array<string>,   pipelineId :string | number} & gitlab.gitlab/dist/types/core/infrastructure.PaginatedRequestOptions */
-@js.native
 trait idstringnumberreportTypeA
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var confidence: js.Array[String] = js.native
+  var confidence: js.Array[String]
   
-  var id: String | Double = js.native
+  var id: String | Double
   
-  var maxPages: js.UndefOr[Double] = js.native
+  var maxPages: js.UndefOr[Double] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var perPage: js.UndefOr[Double] = js.native
+  var perPage: js.UndefOr[Double] = js.undefined
   
-  var pipelineId: String | Double = js.native
+  var pipelineId: String | Double
   
-  var reportType: js.Array[String] = js.native
+  var reportType: js.Array[String]
   
-  var scope: String = js.native
+  var scope: String
   
-  var severity: js.Array[String] = js.native
+  var severity: js.Array[String]
   
-  var showPagination: js.UndefOr[Boolean] = js.native
+  var showPagination: js.UndefOr[Boolean] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object idstringnumberreportTypeA {
   

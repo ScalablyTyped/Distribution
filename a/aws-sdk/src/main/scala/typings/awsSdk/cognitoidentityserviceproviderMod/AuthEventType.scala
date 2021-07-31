@@ -2,51 +2,49 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthEventType extends StObject {
   
   /**
     * The challenge responses.
     */
-  var ChallengeResponses: js.UndefOr[ChallengeResponseListType] = js.native
+  var ChallengeResponses: js.UndefOr[ChallengeResponseListType] = js.undefined
   
   /**
     * The creation date
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The user context data captured at the time of an event request. It provides additional information about the client from which event the request is received.
     */
-  var EventContextData: js.UndefOr[EventContextDataType] = js.native
+  var EventContextData: js.UndefOr[EventContextDataType] = js.undefined
   
   /**
     * A flag specifying the user feedback captured at the time of an event request is good or bad. 
     */
-  var EventFeedback: js.UndefOr[EventFeedbackType] = js.native
+  var EventFeedback: js.UndefOr[EventFeedbackType] = js.undefined
   
   /**
     * The event ID.
     */
-  var EventId: js.UndefOr[StringType] = js.native
+  var EventId: js.UndefOr[StringType] = js.undefined
   
   /**
     * The event response.
     */
-  var EventResponse: js.UndefOr[EventResponseType] = js.native
+  var EventResponse: js.UndefOr[EventResponseType] = js.undefined
   
   /**
     * The event risk.
     */
-  var EventRisk: js.UndefOr[EventRiskType] = js.native
+  var EventRisk: js.UndefOr[EventRiskType] = js.undefined
   
   /**
     * The event type.
     */
-  var EventType: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.EventType] = js.native
+  var EventType: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.EventType] = js.undefined
 }
 object AuthEventType {
   

@@ -12,7 +12,7 @@ Easy stream-based messaging using RabbitMQ
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 38 |
-| # downloads        | 48304 |
+| # downloads        | 59660 |
 | # stars            | 10 |
 
 ## Links

@@ -2,23 +2,24 @@ package typings.nsApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(conf: Configuration): typings.nsApi.mod.nsApi = ^.asInstanceOf[js.Dynamic].apply(conf.asInstanceOf[js.Any]).asInstanceOf[typings.nsApi.mod.nsApi]
+  
   @JSImport("ns-api", JSImport.Namespace)
   @js.native
-  def apply(conf: Configuration): typings.nsApi.mod.nsApi = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Configuration extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object Configuration {
     

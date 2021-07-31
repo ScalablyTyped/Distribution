@@ -2,16 +2,14 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressUpdateStreamSummary extends StObject {
   
   /**
     * The name of the ProgressUpdateStream. Do not store personal data in this field. 
     */
-  var ProgressUpdateStreamName: js.UndefOr[ProgressUpdateStream] = js.native
+  var ProgressUpdateStreamName: js.UndefOr[ProgressUpdateStream] = js.undefined
 }
 object ProgressUpdateStreamSummary {
   

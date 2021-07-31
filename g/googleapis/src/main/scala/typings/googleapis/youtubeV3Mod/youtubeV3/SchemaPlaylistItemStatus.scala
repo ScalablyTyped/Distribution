@@ -2,19 +2,17 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the playlist item&#39;s privacy status.
   */
-@js.native
 trait SchemaPlaylistItemStatus extends StObject {
   
   /**
     * This resource&#39;s privacy status.
     */
-  var privacyStatus: js.UndefOr[String] = js.native
+  var privacyStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaPlaylistItemStatus {
   

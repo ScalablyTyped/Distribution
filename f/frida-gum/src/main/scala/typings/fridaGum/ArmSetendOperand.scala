@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.setend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArmSetendOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
   
-  var `type`: setend = js.native
+  var `type`: setend
   
-  var value: Endian = js.native
+  var value: Endian
 }
 object ArmSetendOperand {
   
   @scala.inline
-  def apply(subtracted: Boolean, `type`: setend, value: Endian): ArmSetendOperand = {
+  def apply(subtracted: Boolean, value: Endian): ArmSetendOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setend")
     __obj.asInstanceOf[ArmSetendOperand]
   }
   

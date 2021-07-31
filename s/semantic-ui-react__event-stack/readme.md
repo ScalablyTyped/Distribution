@@ -4,15 +4,15 @@
 Typings are for version 3.1.1
 
 ## Library description:
-<!-- Name --> <h1 align="center">Event Stack</h1>
+Issues mentioned in `README` should be solved by other approaches: - `.addEventListener()` is blazing fast and is not a real performance issue  - to solve issues with ordering in case when regular DOM event propogation is not available consider to use thi
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @semantic-ui-react/event-stack |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 6168400 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 7399768 |
 | # stars            | 0 |
 
 ## Links

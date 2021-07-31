@@ -2,16 +2,14 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variable extends StObject {
   
   /**
     * The value of the variable requested.
     */
-  var value: String = js.native
+  var value: String
 }
 object Variable {
   

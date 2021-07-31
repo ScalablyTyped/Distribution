@@ -2,15 +2,13 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreventDefault extends StObject {
   
-  var preventDefault: js.UndefOr[Boolean] = js.native
+  var preventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.undefined
 }
 object PreventDefault {
   

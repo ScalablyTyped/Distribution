@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBackupVaultAccessPolicyInput extends StObject {
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
-  var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName = js.native
+  var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName
   
   /**
     * The backup vault access policy document in JSON format.
     */
-  var Policy: js.UndefOr[IAMPolicy] = js.native
+  var Policy: js.UndefOr[IAMPolicy] = js.undefined
 }
 object PutBackupVaultAccessPolicyInput {
   

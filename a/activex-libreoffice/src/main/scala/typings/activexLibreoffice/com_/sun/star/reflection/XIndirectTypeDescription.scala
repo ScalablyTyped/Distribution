@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reflects a typedef or sequence type. The type class of this description is TypeClass_TYPEDEF or TypeClass_SEQUENCE. */
-@js.native
-trait XIndirectTypeDescription extends XTypeDescription {
+trait XIndirectTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the typedefed type, if the type is a typedef, or the element type, if the type is a sequence.
     * @returns referenced type
     */
-  val ReferencedType: XTypeDescription = js.native
+  val ReferencedType: XTypeDescription
   
   /**
     * Returns the typedefed type, if the type is a typedef, or the element type, if the type is a sequence.
     * @returns referenced type
     */
-  def getReferencedType(): XTypeDescription = js.native
+  def getReferencedType(): XTypeDescription
 }
 object XIndirectTypeDescription {
   

@@ -2,21 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropDownProperties extends ComponentProperties {
+trait DropDownProperties
+  extends StObject
+     with ComponentProperties {
   
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var fireOnTextChange: js.UndefOr[Boolean] = js.native
+  var fireOnTextChange: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String | CategoryValue] = js.native
+  var value: js.UndefOr[String | CategoryValue] = js.undefined
   
-  var values: js.UndefOr[js.Array[CategoryValue | String]] = js.native
+  var values: js.UndefOr[js.Array[CategoryValue | String]] = js.undefined
 }
 object DropDownProperties {
   

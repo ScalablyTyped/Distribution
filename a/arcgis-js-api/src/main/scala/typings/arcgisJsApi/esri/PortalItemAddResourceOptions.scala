@@ -7,25 +7,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalItemAddResourceOptions extends Object {
+trait PortalItemAddResourceOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates the level of access to the resource.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
     */
-  var access: js.UndefOr[inherit | `private`] = js.native
+  var access: js.UndefOr[inherit | `private`] = js.undefined
   
   /**
     * Signal object that can be used to abort the asynchronous task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object PortalItemAddResourceOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Capacity extends StObject {
   
   /**
     * The total number of capacity units consumed on a table or an index.
     */
-  var CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.native
+  var CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
   
   /**
     * The total number of read capacity units consumed on a table or an index.
     */
-  var ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.native
+  var ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
   
   /**
     * The total number of write capacity units consumed on a table or an index.
     */
-  var WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.native
+  var WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
 }
 object Capacity {
   

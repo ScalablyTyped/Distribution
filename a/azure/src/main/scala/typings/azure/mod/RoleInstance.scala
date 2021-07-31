@@ -3,19 +3,17 @@ package typings.azure.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoleInstance extends StObject {
   
-  var endpoints: StringDictionary[RoleInstanceEndpoint] = js.native
+  var endpoints: StringDictionary[RoleInstanceEndpoint]
   
-  var faultDomain: String = js.native
+  var faultDomain: String
   
-  var id: String = js.native
+  var id: String
   
-  var updateDomain: String = js.native
+  var updateDomain: String
 }
 object RoleInstance {
   

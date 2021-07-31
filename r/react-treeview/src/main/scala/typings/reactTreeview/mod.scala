@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,20 +15,21 @@ object mod {
   class ^ ()
     extends Component[TreeProps, js.Any, js.Any]
   
-  @js.native
-  trait TreeProps extends HTMLAttributes[HTMLDivElement] {
+  trait TreeProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var childrenClassName: js.UndefOr[String] = js.native
+    var childrenClassName: js.UndefOr[String] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var defaultCollapsed: js.UndefOr[Boolean] = js.native
+    var defaultCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var itemClassName: js.UndefOr[String] = js.native
+    var itemClassName: js.UndefOr[String] = js.undefined
     
-    var nodeLabel: ReactNode = js.native
+    var nodeLabel: ReactNode
     
-    var treeViewClassName: js.UndefOr[String] = js.native
+    var treeViewClassName: js.UndefOr[String] = js.undefined
   }
   object TreeProps {
     

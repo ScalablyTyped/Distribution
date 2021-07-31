@@ -2,25 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPathSegArcRel extends SVGPathSeg {
+trait SVGPathSegArcRel
+  extends StObject
+     with SVGPathSeg {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var largeArcFlag: scala.Boolean = js.native
+  var largeArcFlag: scala.Boolean
   
-  var r1: Double = js.native
+  var r1: Double
   
-  var r2: Double = js.native
+  var r2: Double
   
-  var sweepFlag: scala.Boolean = js.native
+  var sweepFlag: scala.Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object SVGPathSegArcRel {
   

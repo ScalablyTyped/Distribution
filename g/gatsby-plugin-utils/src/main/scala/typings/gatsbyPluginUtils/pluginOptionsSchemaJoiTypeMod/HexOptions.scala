@@ -2,17 +2,15 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HexOptions extends StObject {
   
   /**
     * hex decoded representation must be byte aligned.
     * @default false
     */
-  var byteAligned: js.UndefOr[Boolean] = js.native
+  var byteAligned: js.UndefOr[Boolean] = js.undefined
 }
 object HexOptions {
   

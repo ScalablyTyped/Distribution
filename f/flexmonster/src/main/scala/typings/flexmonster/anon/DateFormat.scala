@@ -2,19 +2,17 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateFormat extends StObject {
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
-  var liveSearch: js.UndefOr[Boolean] = js.native
+  var liveSearch: js.UndefOr[Boolean] = js.undefined
   
-  var timezoneOffset: js.UndefOr[Double] = js.native
+  var timezoneOffset: js.UndefOr[Double] = js.undefined
   
-  var weekOffset: js.UndefOr[Double] = js.native
+  var weekOffset: js.UndefOr[Double] = js.undefined
 }
 object DateFormat {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLayerVersionPolicyResponse extends StObject {
   
   /**
     * The policy document.
     */
-  var Policy: js.UndefOr[String] = js.native
+  var Policy: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the current revision of the policy.
     */
-  var RevisionId: js.UndefOr[String] = js.native
+  var RevisionId: js.UndefOr[String] = js.undefined
 }
 object GetLayerVersionPolicyResponse {
   

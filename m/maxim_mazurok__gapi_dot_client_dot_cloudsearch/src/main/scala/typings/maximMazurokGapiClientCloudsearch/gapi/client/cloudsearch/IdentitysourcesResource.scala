@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitysourcesResource extends StObject {
   
-  var items: ItemsResource = js.native
+  var items: ItemsResource
   
-  var unmappedids: UnmappedidsResource = js.native
+  var unmappedids: UnmappedidsResource
 }
 object IdentitysourcesResource {
   

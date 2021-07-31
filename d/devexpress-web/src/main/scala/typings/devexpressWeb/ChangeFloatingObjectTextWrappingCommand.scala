@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to modify a floating object's text wrapping settings.
   */
-@js.native
 trait ChangeFloatingObjectTextWrappingCommand extends StObject {
   
   /**
     * Executes the ChangeFloatingObjectTextWrappingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings A FloatingObjectTextWrappingSettings object specifying text wrapping settings.
     */
-  def execute(settings: FloatingObjectTextWrappingSettings): Boolean = js.native
+  def execute(settings: FloatingObjectTextWrappingSettings): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[FloatingObjectTextWrappingSettings] = js.native
+  def getState(): CommandState[FloatingObjectTextWrappingSettings]
 }
 object ChangeFloatingObjectTextWrappingCommand {
   

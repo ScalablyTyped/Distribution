@@ -2,7 +2,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait RewardedVideoAd extends StObject {
   /** [Promise RewardedVideoAd.load()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/RewardedVideoAd.load.html)
     *
     * 加载激励视频广告。 */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /** [RewardedVideoAd.offClose(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/RewardedVideoAd.offClose.html)
     *
@@ -80,5 +79,5 @@ trait RewardedVideoAd extends StObject {
   /** [Promise RewardedVideoAd.show()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/RewardedVideoAd.show.html)
     *
     * 显示激励视频广告。激励视频广告将从屏幕下方推入。 */
-  def show(): js.Promise[_] = js.native
+  def show(): js.Promise[js.Any] = js.native
 }

@@ -2,44 +2,42 @@ package typings.reactDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.CalendarMonthShape, 'enableOutsideDays' | 'horizontalMonthPadding' | 'onDayClick' | 'onDayMouseEnter' | 'onDayMouseLeave' | 'renderCalendarDay' | 'renderDayContents' | 'daySize' | 'focusedDate' | 'isFocused' | 'firstDayOfWeek' | 'setMonthTitleHeight' | 'verticalBorderSpacing' | 'monthFormat' | 'phrases' | 'dayAriaLabelFormat'> */
-@js.native
 trait PickCalendarMonthShapeena extends StObject {
   
-  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.native
+  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.undefined
   
-  var daySize: js.UndefOr[js.Any] = js.native
+  var daySize: js.UndefOr[js.Any] = js.undefined
   
-  var enableOutsideDays: js.UndefOr[js.Any] = js.native
+  var enableOutsideDays: js.UndefOr[js.Any] = js.undefined
   
-  var firstDayOfWeek: js.UndefOr[js.Any] = js.native
+  var firstDayOfWeek: js.UndefOr[js.Any] = js.undefined
   
-  var focusedDate: js.UndefOr[js.Any] = js.native
+  var focusedDate: js.UndefOr[js.Any] = js.undefined
   
-  var horizontalMonthPadding: js.UndefOr[js.Any] = js.native
+  var horizontalMonthPadding: js.UndefOr[js.Any] = js.undefined
   
-  var isFocused: js.UndefOr[js.Any] = js.native
+  var isFocused: js.UndefOr[js.Any] = js.undefined
   
-  var monthFormat: js.UndefOr[js.Any] = js.native
+  var monthFormat: js.UndefOr[js.Any] = js.undefined
   
-  var onDayClick: js.UndefOr[js.Any] = js.native
+  var onDayClick: js.UndefOr[js.Any] = js.undefined
   
-  var onDayMouseEnter: js.UndefOr[js.Any] = js.native
+  var onDayMouseEnter: js.UndefOr[js.Any] = js.undefined
   
-  var onDayMouseLeave: js.UndefOr[js.Any] = js.native
+  var onDayMouseLeave: js.UndefOr[js.Any] = js.undefined
   
-  var phrases: js.UndefOr[js.Any] = js.native
+  var phrases: js.UndefOr[js.Any] = js.undefined
   
-  var renderCalendarDay: js.UndefOr[js.Any] = js.native
+  var renderCalendarDay: js.UndefOr[js.Any] = js.undefined
   
-  var renderDayContents: js.UndefOr[js.Any] = js.native
+  var renderDayContents: js.UndefOr[js.Any] = js.undefined
   
-  var setMonthTitleHeight: js.UndefOr[js.Any] = js.native
+  var setMonthTitleHeight: js.UndefOr[js.Any] = js.undefined
   
-  var verticalBorderSpacing: js.UndefOr[js.Any] = js.native
+  var verticalBorderSpacing: js.UndefOr[js.Any] = js.undefined
 }
 object PickCalendarMonthShapeena {
   

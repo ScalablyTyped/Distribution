@@ -3,7 +3,6 @@ package typings.pReduce
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,19 +33,17 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-reduce", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType]
-  ): js.Promise[ReducedValueType] = js.native
-  @JSImport("p-reduce", JSImport.Namespace)
-  @js.native
+  ): js.Promise[ReducedValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReducedValueType]]
+  @scala.inline
   def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType],
     initialValue: ReducedValueType
-  ): js.Promise[ReducedValueType] = js.native
+  ): js.Promise[ReducedValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReducedValueType]]
   
   @JSImport("p-reduce", JSImport.Namespace)
   @js.native

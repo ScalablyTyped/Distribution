@@ -3,7 +3,6 @@ package typings.zipJs
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,122 +16,128 @@ object global {
     @JSGlobal("zip.BlobReader")
     @js.native
     class BlobReader protected ()
-      extends typings.zipJs.zip.Reader {
+      extends StObject
+         with typings.zipJs.zip.Reader {
       def this(blob: Blob) = this()
     }
     
     @JSGlobal("zip.BlobWriter")
     @js.native
     class BlobWriter protected ()
-      extends typings.zipJs.zip.Writer {
+      extends StObject
+         with typings.zipJs.zip.Writer {
       def this(contentType: String) = this()
     }
     
     @JSGlobal("zip.Data64URIReader")
     @js.native
     class Data64URIReader protected ()
-      extends typings.zipJs.zip.Reader {
+      extends StObject
+         with typings.zipJs.zip.Reader {
       def this(dataURI: String) = this()
     }
     
     @JSGlobal("zip.Data64URIWriter")
     @js.native
     class Data64URIWriter ()
-      extends typings.zipJs.zip.Writer {
+      extends StObject
+         with typings.zipJs.zip.Writer {
       def this(mimeString: String) = this()
     }
     
     @JSGlobal("zip.FileWriter")
     @js.native
     class FileWriter protected ()
-      extends typings.zipJs.zip.Writer {
+      extends StObject
+         with typings.zipJs.zip.Writer {
       def this(fileEntry: FileEntry) = this()
     }
     
     @JSGlobal("zip.HttpReader")
     @js.native
     class HttpReader protected ()
-      extends typings.zipJs.zip.Reader {
+      extends StObject
+         with typings.zipJs.zip.Reader {
       def this(url: String) = this()
     }
     
     @JSGlobal("zip.Reader")
     @js.native
     class Reader ()
-      extends typings.zipJs.zip.Reader
+      extends StObject
+         with typings.zipJs.zip.Reader
     
     @JSGlobal("zip.TextReader")
     @js.native
     class TextReader protected ()
-      extends typings.zipJs.zip.Reader {
+      extends StObject
+         with typings.zipJs.zip.Reader {
       def this(text: String) = this()
     }
     
     @JSGlobal("zip.TextWriter")
     @js.native
     class TextWriter protected ()
-      extends typings.zipJs.zip.Writer {
+      extends StObject
+         with typings.zipJs.zip.Writer {
       def this(encoding: String) = this()
     }
     
     @JSGlobal("zip.Writer")
     @js.native
     class Writer ()
-      extends typings.zipJs.zip.Writer
+      extends StObject
+         with typings.zipJs.zip.Writer
     
     @JSGlobal("zip.ZipReader")
     @js.native
     class ZipReader ()
-      extends typings.zipJs.zip.ZipReader
+      extends StObject
+         with typings.zipJs.zip.ZipReader
     
     @JSGlobal("zip.ZipWriter")
     @js.native
     class ZipWriter ()
-      extends typings.zipJs.zip.ZipWriter
+      extends StObject
+         with typings.zipJs.zip.ZipWriter
     
-    @JSGlobal("zip.createReader")
-    @js.native
+    @scala.inline
     def createReader(
       reader: typings.zipJs.zip.Reader,
       callback: js.Function1[/* zipReader */ typings.zipJs.zip.ZipReader, Unit]
-    ): Unit = js.native
-    @JSGlobal("zip.createReader")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReader")(reader.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createReader(
       reader: typings.zipJs.zip.Reader,
       callback: js.Function1[/* zipReader */ typings.zipJs.zip.ZipReader, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReader")(reader.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("zip.createWriter")
-    @js.native
+    @scala.inline
     def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit]
-    ): Unit = js.native
-    @JSGlobal("zip.createWriter")
-    @js.native
-    def createWriter(
-      writer: typings.zipJs.zip.Writer,
-      callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontDeflate: Boolean
-    ): Unit = js.native
-    @JSGlobal("zip.createWriter")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit]
-    ): Unit = js.native
-    @JSGlobal("zip.createWriter")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit],
       dontDeflate: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontDeflate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createWriter(
+      writer: typings.zipJs.zip.Writer,
+      callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
+      onerror: Unit,
+      dontDeflate: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontDeflate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("zip.useWebWorkers")
     @js.native

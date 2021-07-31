@@ -5,15 +5,13 @@ import typings.preact.mod.ComponentChildren
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[T] extends StObject {
     
-    def children(value: T): ComponentChildren = js.native
+    def children(value: T): ComponentChildren
   }
   object `0` {
     
@@ -24,17 +22,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], T] (val x: Self with `0`[T]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: T => ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ComponentChildren = js.native
+    var children: ComponentChildren
   }
   object Children {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CurrentTarget[Target /* <: EventTarget */] extends StObject {
     
-    val currentTarget: Target = js.native
+    val currentTarget: Target
   }
   object CurrentTarget {
     
@@ -75,17 +71,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class CurrentTargetMutableBuilder[Self <: CurrentTarget[_], Target /* <: EventTarget */] (val x: Self with CurrentTarget[Target]) extends AnyVal {
+    implicit class CurrentTargetMutableBuilder[Self <: CurrentTarget[?], Target /* <: EventTarget */] (val x: Self & CurrentTarget[Target]) extends AnyVal {
       
       @scala.inline
       def setCurrentTarget(value: Target): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait DefaultProps extends StObject {
     
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer Defaults */ js.Any = js.native
+    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer Defaults */ js.Any
   }
   object DefaultProps {
     
@@ -107,10 +102,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var __html: String = js.native
+    var __html: String
   }
   object Html {
     
@@ -128,12 +122,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref[RefType] extends StObject {
     
-    var children: js.UndefOr[ComponentChildren] = js.native
+    var children: js.UndefOr[ComponentChildren] = js.undefined
     
-    var ref: js.UndefOr[typings.preact.mod.Ref[RefType]] = js.native
+    var ref: js.UndefOr[typings.preact.mod.Ref[RefType]] = js.undefined
   }
   object Ref {
     
@@ -144,7 +137,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref[_], RefType] (val x: Self with Ref[RefType]) extends AnyVal {
+    implicit class RefMutableBuilder[Self <: Ref[?], RefType] (val x: Self & Ref[RefType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -170,70 +163,180 @@ object anon {
   }
   
   /* Inlined preact.preact/src/jsx.JSXInternal.TargetedEvent<std.EventTarget, std.Event> */
-  @js.native
   trait TargetedEventEventTargetE extends StObject {
     
-    var AT_TARGET: Double = js.native
+    var AT_TARGET: Double
     
-    var BUBBLING_PHASE: Double = js.native
+    var BUBBLING_PHASE: Double
     
-    var CAPTURING_PHASE: Double = js.native
+    var CAPTURING_PHASE: Double
     
-    var NONE: Double = js.native
+    var NONE: Double
     
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
-    var cancelBubble: Boolean = js.native
+    var cancelBubble: Boolean
     
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
     
-    var composed: Boolean = js.native
+    var composed: Boolean
     
-    def composedPath(): js.Array[EventTarget] = js.native
+    def composedPath(): js.Array[EventTarget]
     @JSName("composedPath")
-    var composedPath_Original: js.Function0[js.Array[EventTarget]] = js.native
+    var composedPath_Original: js.Function0[js.Array[EventTarget]]
     
-    val currentTarget: EventTarget = js.native
+    val currentTarget: EventTarget
     
-    var defaultPrevented: Boolean = js.native
+    var defaultPrevented: Boolean
     
-    var eventPhase: Double = js.native
+    var eventPhase: Double
     
-    def initEvent(`type`: String): Unit = js.native
+    def initEvent(`type`: String): Unit
     @JSName("initEvent")
-    var initEvent_Original: js.Function1[/* type */ String, Unit] = js.native
+    var initEvent_Original: js.Function1[/* type */ String, Unit]
     
-    var isTrusted: Boolean = js.native
+    var isTrusted: Boolean
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     @JSName("preventDefault")
-    var preventDefault_Original: js.Function0[Unit] = js.native
+    var preventDefault_Original: js.Function0[Unit]
     
-    var returnValue: Boolean = js.native
+    var returnValue: Boolean
     
-    var srcElement: js.UndefOr[EventTarget | Null] = js.native
+    var srcElement: js.UndefOr[EventTarget | Null] = js.undefined
     
-    def stopImmediatePropagation(): Unit = js.native
+    def stopImmediatePropagation(): Unit
     @JSName("stopImmediatePropagation")
-    var stopImmediatePropagation_Original: js.Function0[Unit] = js.native
+    var stopImmediatePropagation_Original: js.Function0[Unit]
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     @JSName("stopPropagation")
-    var stopPropagation_Original: js.Function0[Unit] = js.native
+    var stopPropagation_Original: js.Function0[Unit]
     
-    var target: js.UndefOr[EventTarget | Null] = js.native
+    var target: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
+  }
+  object TargetedEventEventTargetE {
+    
+    @scala.inline
+    def apply(
+      AT_TARGET: Double,
+      BUBBLING_PHASE: Double,
+      CAPTURING_PHASE: Double,
+      NONE: Double,
+      bubbles: Boolean,
+      cancelBubble: Boolean,
+      cancelable: Boolean,
+      composed: Boolean,
+      composedPath: () => js.Array[EventTarget],
+      currentTarget: EventTarget,
+      defaultPrevented: Boolean,
+      eventPhase: Double,
+      initEvent: /* type */ String => Unit,
+      isTrusted: Boolean,
+      preventDefault: () => Unit,
+      returnValue: Boolean,
+      stopImmediatePropagation: () => Unit,
+      stopPropagation: () => Unit,
+      timeStamp: Double,
+      `type`: String
+    ): TargetedEventEventTargetE = {
+      val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction1(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TargetedEventEventTargetE]
+    }
+    
+    @scala.inline
+    implicit class TargetedEventEventTargetEMutableBuilder[Self <: TargetedEventEventTargetE] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setComposedPath(value: () => js.Array[EventTarget]): Self = StObject.set(x, "composedPath", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInitEvent(value: /* type */ String => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSrcElement(value: EventTarget): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSrcElementNull: Self = StObject.set(x, "srcElement", null)
+      
+      @scala.inline
+      def setSrcElementUndefined: Self = StObject.set(x, "srcElement", js.undefined)
+      
+      @scala.inline
+      def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTargetNull: Self = StObject.set(x, "target", null)
+      
+      @scala.inline
+      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      
+      @scala.inline
+      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Value[T] extends StObject {
     
-    var children: ComponentChildren = js.native
+    var children: ComponentChildren
     
-    var value: T = js.native
+    var value: T
   }
   object Value {
     
@@ -244,7 +347,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_], T] (val x: Self with Value[T]) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

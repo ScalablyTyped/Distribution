@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoDistanceRangeFilter")
 @js.native
-class GeoDistanceRangeFilter protected () extends Filter {
+class GeoDistanceRangeFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filter results to those which fall within the given distance range of the point of origin.
     */

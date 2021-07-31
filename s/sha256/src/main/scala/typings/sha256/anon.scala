@@ -3,21 +3,19 @@ package typings.sha256
 import typings.sha256.sha256Booleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AsBytes extends StObject {
     
-    var asBytes: `true` = js.native
+    var asBytes: `true`
   }
   object AsBytes {
     
     @scala.inline
-    def apply(asBytes: `true`): AsBytes = {
-      val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
+    def apply(): AsBytes = {
+      val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[AsBytes]
     }
     
@@ -29,16 +27,15 @@ object anon {
     }
   }
   
-  @js.native
   trait AsString extends StObject {
     
-    var asString: `true` = js.native
+    var asString: `true`
   }
   object AsString {
     
     @scala.inline
-    def apply(asString: `true`): AsString = {
-      val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
+    def apply(): AsString = {
+      val __obj = js.Dynamic.literal(asString = true)
       __obj.asInstanceOf[AsString]
     }
     

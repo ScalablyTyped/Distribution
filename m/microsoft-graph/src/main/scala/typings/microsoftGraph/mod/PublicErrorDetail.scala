@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicErrorDetail extends StObject {
   
-  var code: js.UndefOr[NullableOption[String]] = js.native
+  var code: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var target: js.UndefOr[NullableOption[String]] = js.native
+  var target: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PublicErrorDetail {
   

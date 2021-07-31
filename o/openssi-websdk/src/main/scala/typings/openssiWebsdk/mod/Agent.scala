@@ -8,7 +8,6 @@ import typings.openssiWebsdk.openssiWebsdkStrings.trace
 import typings.openssiWebsdk.openssiWebsdkStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openssi-websdk", "Agent")
@@ -46,8 +45,8 @@ class Agent protected () extends StObject {
     * Returns {Promise<Connection>} The connection offer, or the active {Connection} if one is already established.
     */
   def createConnection(): js.Promise[Connection] = js.native
-  def createConnection(to: js.UndefOr[scala.Nothing], properties: Properties): js.Promise[Connection] = js.native
   def createConnection(to: Null, properties: Properties): js.Promise[Connection] = js.native
+  def createConnection(to: Unit, properties: Properties): js.Promise[Connection] = js.native
   def createConnection(to: ConnectionRecipient): js.Promise[Connection] = js.native
   def createConnection(to: ConnectionRecipient, properties: Properties): js.Promise[Connection] = js.native
   
@@ -86,14 +85,9 @@ class Agent protected () extends StObject {
     * Returns {Promise<ProofSchema>} A promise that resolves with the created proof schema.
     */
   def createProofSchema(name: String, version: String): js.Promise[ProofSchema] = js.native
-  def createProofSchema(
-    name: String,
-    version: String,
-    requestedAttributes: js.UndefOr[scala.Nothing],
-    requestedPredicates: js.Any
-  ): js.Promise[ProofSchema] = js.native
   def createProofSchema(name: String, version: String, requestedAttributes: js.Any): js.Promise[ProofSchema] = js.native
   def createProofSchema(name: String, version: String, requestedAttributes: js.Any, requestedPredicates: js.Any): js.Promise[ProofSchema] = js.native
+  def createProofSchema(name: String, version: String, requestedAttributes: Unit, requestedPredicates: js.Any): js.Promise[ProofSchema] = js.native
   
   /**
     * Creates a {Verification} with another agent.  The initial state must be one of 'outbound_proof_request',
@@ -180,7 +174,7 @@ class Agent protected () extends StObject {
     * Returns {Promise<CredentialDefinition[]>} A promise that resolves with a list of credential definitions.
     */
   def getCredentialDefinitions(): js.Promise[js.Array[CredentialDefinition]] = js.native
-  def getCredentialDefinitions(opts: js.UndefOr[scala.Nothing], route: QueryRoute): js.Promise[js.Array[CredentialDefinition]] = js.native
+  def getCredentialDefinitions(opts: Unit, route: QueryRoute): js.Promise[js.Array[CredentialDefinition]] = js.native
   def getCredentialDefinitions(opts: CredentialDefinitionQueryParams): js.Promise[js.Array[CredentialDefinition]] = js.native
   def getCredentialDefinitions(opts: CredentialDefinitionQueryParams, route: QueryRoute): js.Promise[js.Array[CredentialDefinition]] = js.native
   
@@ -200,8 +194,8 @@ class Agent protected () extends StObject {
     * Returns {Promise<CredentialSchema[]>} A promise that resolves with a list of credential schemas.
     */
   def getCredentialSchemas(): js.Promise[js.Array[CredentialSchema]] = js.native
-  def getCredentialSchemas(opts: js.UndefOr[scala.Nothing], route: QueryRoute): js.Promise[js.Array[CredentialSchema]] = js.native
   def getCredentialSchemas(opts: Null, route: QueryRoute): js.Promise[js.Array[CredentialSchema]] = js.native
+  def getCredentialSchemas(opts: Unit, route: QueryRoute): js.Promise[js.Array[CredentialSchema]] = js.native
   def getCredentialSchemas(opts: CredentialSchemaQueryParams): js.Promise[js.Array[CredentialSchema]] = js.native
   def getCredentialSchemas(opts: CredentialSchemaQueryParams, route: QueryRoute): js.Promise[js.Array[CredentialSchema]] = js.native
   
@@ -218,7 +212,7 @@ class Agent protected () extends StObject {
     * Get all devices
     * Returns {object[]} Array of device objects
     */
-  def getDevices(): js.Array[_] = js.native
+  def getDevices(): js.Array[js.Any] = js.native
   
   /**
     * Get this agent's {AgentInfo}.
@@ -230,7 +224,7 @@ class Agent protected () extends StObject {
     * Get all listeners
     * Returns {object[]} Array of listener objects
     */
-  def getListeners(): js.Array[_] = js.native
+  def getListeners(): js.Array[js.Any] = js.native
   
   /**
     * Get the information for a {Verification}.
@@ -364,12 +358,7 @@ class Agent protected () extends StObject {
     * Returns {Promise<Verification>} A Promise that resolves with the updated verification.
     */
   def updateVerification(id: String, state: VerificationState): js.Promise[Verification] = js.native
-  def updateVerification(
-    id: String,
-    state: VerificationState,
-    choices: js.UndefOr[scala.Nothing],
-    self_attested_attributes: js.Any
-  ): js.Promise[Verification] = js.native
+  def updateVerification(id: String, state: VerificationState, choices: Unit, self_attested_attributes: js.Any): js.Promise[Verification] = js.native
   def updateVerification(id: String, state: VerificationState, choices: ProofSelection): js.Promise[Verification] = js.native
   def updateVerification(id: String, state: VerificationState, choices: ProofSelection, self_attested_attributes: js.Any): js.Promise[Verification] = js.native
   
@@ -396,9 +385,9 @@ class Agent protected () extends StObject {
     * Returns {Promise<Connection>} The accepted {Connection}.
     */
   def waitForConnection(id: String): js.Promise[Connection] = js.native
-  def waitForConnection(id: String, retries: js.UndefOr[scala.Nothing], retry_interval: Double): js.Promise[Connection] = js.native
   def waitForConnection(id: String, retries: Double): js.Promise[Connection] = js.native
   def waitForConnection(id: String, retries: Double, retry_interval: Double): js.Promise[Connection] = js.native
+  def waitForConnection(id: String, retries: Unit, retry_interval: Double): js.Promise[Connection] = js.native
   
   /**
     * Waits for a given {Credential} to enter the 'issued' or 'rejected' states.
@@ -408,9 +397,9 @@ class Agent protected () extends StObject {
     * Returns {Promise<Credential>} A promise that resolves with the finished credential.
     */
   def waitForCredential(id: String): js.Promise[Credential] = js.native
-  def waitForCredential(id: String, retries: js.UndefOr[scala.Nothing], retry_interval: Double): js.Promise[Credential] = js.native
   def waitForCredential(id: String, retries: Double): js.Promise[Credential] = js.native
   def waitForCredential(id: String, retries: Double, retry_interval: Double): js.Promise[Credential] = js.native
+  def waitForCredential(id: String, retries: Unit, retry_interval: Double): js.Promise[Credential] = js.native
   
   /**
     * Waits for a given {Verification} to enter the `passed` or `failed` state.
@@ -420,7 +409,7 @@ class Agent protected () extends StObject {
     * Returns {Promise<Verification>} A promise that resolves with the completed verification.
     */
   def waitForVerification(id: String): js.Promise[Verification] = js.native
-  def waitForVerification(id: String, retries: js.UndefOr[scala.Nothing], retry_interval: Double): js.Promise[Verification] = js.native
   def waitForVerification(id: String, retries: Double): js.Promise[Verification] = js.native
   def waitForVerification(id: String, retries: Double, retry_interval: Double): js.Promise[Verification] = js.native
+  def waitForVerification(id: String, retries: Unit, retry_interval: Double): js.Promise[Verification] = js.native
 }

@@ -2,29 +2,27 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `FileNode` represents a single file and associated metadata.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2FileNode extends StObject {
   
   /**
     * The digest of the file&#39;s content.
     */
-  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * True if file is executable, false otherwise.
     */
-  var isExecutable: js.UndefOr[Boolean] = js.native
+  var isExecutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the file.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2FileNode {
   

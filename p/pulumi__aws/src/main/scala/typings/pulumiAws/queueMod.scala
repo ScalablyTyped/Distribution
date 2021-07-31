@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
@@ -26,7 +25,7 @@ object queueMod {
       */
     def this(name: String) = this()
     def this(name: String, args: QueueArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: QueueArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -67,6 +66,10 @@ object queueMod {
   /* static members */
   object Queue {
     
+    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Queue resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -76,60 +79,54 @@ object queueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Queue = js.native
-    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Queue = js.native
-    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueueState): Queue = js.native
-    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueueState): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
     
     /**
       * Returns true if the given object is an instance of Queue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mediaconvert/queue", "Queue.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean]
   }
   
-  @js.native
   trait QueueArgs extends StObject {
     
     /**
       * A description of the queue
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique identifier describing the queue
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the pricing plan for the queue is on-demand or reserved. Valid values are `ON_DEMAND` or `RESERVED`. Default to `ON_DEMAND`.
       */
-    val pricingPlan: js.UndefOr[Input[String]] = js.native
+    val pricingPlan: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A detail pricing plan of the  reserved queue. See below.
       */
-    val reservationPlanSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]] = js.native
+    val reservationPlanSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]] = js.undefined
     
     /**
       * A status of the queue. Valid values are `ACTIVE` or `RESERVED`. Default to `PAUSED`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object QueueArgs {
     
@@ -180,43 +177,42 @@ object queueMod {
     }
   }
   
-  @js.native
   trait QueueState extends StObject {
     
     /**
       * The Arn of the queue
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the queue
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique identifier describing the queue
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the pricing plan for the queue is on-demand or reserved. Valid values are `ON_DEMAND` or `RESERVED`. Default to `ON_DEMAND`.
       */
-    val pricingPlan: js.UndefOr[Input[String]] = js.native
+    val pricingPlan: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A detail pricing plan of the  reserved queue. See below.
       */
-    val reservationPlanSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]] = js.native
+    val reservationPlanSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]] = js.undefined
     
     /**
       * A status of the queue. Valid values are `ACTIVE` or `RESERVED`. Default to `PAUSED`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object QueueState {
     

@@ -14,7 +14,6 @@ import typings.uidGenerator.uidGeneratorStrings.`123456789ABCDEFGHJKLMNPQRSTUVWX
 import typings.uidGenerator.uidGeneratorStrings.`ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,21 +21,28 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("uid-generator", JSImport.Namespace)
   @js.native
-  class ^ () extends UIDGeneratorInstance {
+  class ^ ()
+    extends StObject
+       with UIDGeneratorInstance {
     def this(baseEncoding: String) = this()
     def this(bitSize: Double) = this()
-    def this(bitSize: js.UndefOr[scala.Nothing], baseEncoding: String) = this()
     def this(bitSize: Double, baseEncoding: String) = this()
+    def this(bitSize: Unit, baseEncoding: String) = this()
   }
   @JSImport("uid-generator", JSImport.Namespace)
   @js.native
-  val ^ : UIDGeneratorClass = js.native
+  val ^ : js.Object & UIDGeneratorClass = js.native
   
   @js.native
   trait UIDGeneratorClass
-    extends Instantiable0[UIDGeneratorInstance]
+    extends StObject
+       with Instantiable0[UIDGeneratorInstance]
        with Instantiable1[(/* bitSize */ Double) | (/* baseEncoding */ String), UIDGeneratorInstance]
-       with Instantiable2[js.UndefOr[/* bitSize */ Double], /* baseEncoding */ String, UIDGeneratorInstance] {
+       with Instantiable2[
+          (/* bitSize */ Double) | (/* bitSize */ Unit), 
+          /* baseEncoding */ String, 
+          UIDGeneratorInstance
+        ] {
     
     val BASE16: `0123456789abcdef` = js.native
     
@@ -63,15 +69,15 @@ object mod extends Shortcut {
     val bitSize: Double = js.native
     
     def generate(): js.Promise[String] = js.native
-    def generate(cb: js.Function2[/* error */ Error | Null, /* uid */ String, _]): Unit = js.native
+    def generate(cb: js.Function2[/* error */ Error | Null, /* uid */ String, js.Any]): Unit = js.native
     
     def generateSync(): String = js.native
     
     val uidLength: Double = js.native
   }
   
-  type _To = UIDGeneratorClass
+  type _To = js.Object & UIDGeneratorClass
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: UIDGeneratorClass = ^
+  override def _to: js.Object & UIDGeneratorClass = ^
 }

@@ -3,13 +3,11 @@ package typings.prettier.mod
 import typings.prettier.anon.EndOfLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Printer[T] extends StObject {
   
-  var canAttachComment: js.UndefOr[js.Function1[/* node */ T, Boolean]] = js.native
+  var canAttachComment: js.UndefOr[js.Function1[/* node */ T, Boolean]] = js.undefined
   
   var embed: js.UndefOr[
     js.Function4[
@@ -19,22 +17,24 @@ trait Printer[T] extends StObject {
       /* options */ ParserOptions[T], 
       Doc_ | Null
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var handleComments: js.UndefOr[EndOfLine[T]] = js.native
+  var handleComments: js.UndefOr[EndOfLine[T]] = js.undefined
   
-  var hasPrettierIgnore: js.UndefOr[js.Function1[/* path */ FastPath[T], Boolean]] = js.native
+  var hasPrettierIgnore: js.UndefOr[js.Function1[/* path */ FastPath[T], Boolean]] = js.undefined
   
-  var insertPragma: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+  var insertPragma: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
   
   /**
     * @returns `null` if you want to remove this node
     * @returns `void` if you want to use modified newNode
     * @returns anything if you want to replace the node with it
     */
-  var massageAstNode: js.UndefOr[js.Function3[/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any, _]] = js.native
+  var massageAstNode: js.UndefOr[
+    js.Function3[/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any, js.Any]
+  ] = js.undefined
   
-  def print(path: FastPath[T], options: ParserOptions[T], print: js.Function1[/* path */ FastPath[T], Doc_]): Doc_ = js.native
+  def print(path: FastPath[T], options: ParserOptions[T], print: js.Function1[/* path */ FastPath[T], Doc_]): Doc_
   
   var printComments: js.UndefOr[
     js.Function4[
@@ -44,9 +44,9 @@ trait Printer[T] extends StObject {
       /* needsSemi */ Boolean, 
       Doc_
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var willPrintOwnComments: js.UndefOr[js.Function1[/* path */ FastPath[T], Boolean]] = js.native
+  var willPrintOwnComments: js.UndefOr[js.Function1[/* path */ FastPath[T], Boolean]] = js.undefined
 }
 object Printer {
   
@@ -57,7 +57,7 @@ object Printer {
   }
   
   @scala.inline
-  implicit class PrinterMutableBuilder[Self <: Printer[_], T] (val x: Self with Printer[T]) extends AnyVal {
+  implicit class PrinterMutableBuilder[Self <: Printer[?], T] (val x: Self & Printer[T]) extends AnyVal {
     
     @scala.inline
     def setCanAttachComment(value: /* node */ T => Boolean): Self = StObject.set(x, "canAttachComment", js.Any.fromFunction1(value))
@@ -92,7 +92,7 @@ object Printer {
     def setInsertPragmaUndefined: Self = StObject.set(x, "insertPragma", js.undefined)
     
     @scala.inline
-    def setMassageAstNode(value: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => _): Self = StObject.set(x, "massageAstNode", js.Any.fromFunction3(value))
+    def setMassageAstNode(value: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => js.Any): Self = StObject.set(x, "massageAstNode", js.Any.fromFunction3(value))
     
     @scala.inline
     def setMassageAstNodeUndefined: Self = StObject.set(x, "massageAstNode", js.undefined)

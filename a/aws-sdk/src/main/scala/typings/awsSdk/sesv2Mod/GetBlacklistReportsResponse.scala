@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBlacklistReportsResponse extends StObject {
   
   /**
     * An object that contains information about a blacklist that one of your dedicated IP addresses appears on.
     */
-  var BlacklistReport: typings.awsSdk.sesv2Mod.BlacklistReport = js.native
+  var BlacklistReport: typings.awsSdk.sesv2Mod.BlacklistReport
 }
 object GetBlacklistReportsResponse {
   

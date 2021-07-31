@@ -2,23 +2,21 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScroll extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var direction: String = js.native
+  var direction: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var mouseButton: Double = js.native
+  var mouseButton: Double
   
-  var position: IPoint = js.native
+  var position: IPoint
 }
 object IScroll {
   

@@ -3,19 +3,17 @@ package typings.reactDates.anon
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsVisible extends StObject {
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var month: Moment = js.native
+  var month: Moment
   
-  def onMonthSelect(currentMonth: Moment, newMonthVal: String): Unit = js.native
+  def onMonthSelect(currentMonth: Moment, newMonthVal: String): Unit
   
-  def onYearSelect(currentMonth: Moment, newMonthVal: String): Unit = js.native
+  def onYearSelect(currentMonth: Moment, newMonthVal: String): Unit
 }
 object IsVisible {
   

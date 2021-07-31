@@ -2,19 +2,17 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectOptions extends StObject {
   
-  var redirectFile: js.UndefOr[String] = js.native
+  var redirectFile: js.UndefOr[String] = js.undefined
   
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
-  var rememberUser: js.UndefOr[Boolean] = js.native
+  var rememberUser: js.UndefOr[Boolean] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object RedirectOptions {
   

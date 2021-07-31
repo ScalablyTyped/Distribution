@@ -2,31 +2,29 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geocoder_ extends StObject {
   
-  def getURL(): String = js.native
+  def getURL(): String
   
   /**
     * Queries the geocoder with a query string, and returns its result, if any.
     */
-  def query(queryString: String, callback: js.Function): js.Any = js.native
+  def query(queryString: String, callback: js.Function): js.Any
   
-  def queryURL(url: String): String = js.native
+  def queryURL(url: String): String
   
   /**
     * Queries the geocoder with a location, and returns its result, if any.
     */
-  def reverseQuery(location: js.Any, callback: js.Function): js.Any = js.native
+  def reverseQuery(location: js.Any, callback: js.Function): js.Any
   
-  def setID(id: String): js.Any = js.native
+  def setID(id: String): js.Any
   
-  def setTileJSON(tilejson: js.Any): js.Any = js.native
+  def setTileJSON(tilejson: js.Any): js.Any
   
-  def setURL(url: String): js.Any = js.native
+  def setURL(url: String): js.Any
 }
 object Geocoder_ {
   

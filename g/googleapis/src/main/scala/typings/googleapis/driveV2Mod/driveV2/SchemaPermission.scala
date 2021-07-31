@@ -3,50 +3,48 @@ package typings.googleapis.driveV2Mod.driveV2
 import typings.googleapis.anon.Inherited
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A permission for a file.
   */
-@js.native
 trait SchemaPermission extends StObject {
   
   /**
     * Additional roles for this user. Only commenter is currently allowed,
     * though more may be supported in the future.
     */
-  var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+  var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Deprecated.
     */
-  var authKey: js.UndefOr[String] = js.native
+  var authKey: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the account associated with this permission has been deleted.
     * This field only pertains to user and group permissions.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The domain name of the entity this permission refers to. This is an
     * output-only field which is present when the permission type is user,
     * group or domain.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user or group this permission refers to. This is
     * an output-only field which is present when the permission type is user or
     * group.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The ETag of the permission.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this permission will expire (RFC 3339 date-time).
@@ -55,7 +53,7 @@ trait SchemaPermission extends StObject {
     * The date cannot be more than a year in the future  - The date can only be
     * set on drive.permissions.update or drive.permissions.patch requests
     */
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user this permission refers to, and identical to the
@@ -64,47 +62,47 @@ trait SchemaPermission extends StObject {
     * must be specified unless the permission type is anyone, in which case
     * both id and value are ignored.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#permission.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name for this permission.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the profile photo, if available.
     */
-  var photoLink: js.UndefOr[String] = js.native
+  var photoLink: js.UndefOr[String] = js.undefined
   
   /**
     * The primary role for this user. While new values may be supported in the
     * future, the following are currently allowed:   - owner  - organizer  -
     * fileOrganizer  - writer  - reader
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this permission.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Details of whether the permissions on this Team Drive item are inherited
     * or directly on this item. This is an output-only field which is present
     * only for Team Drive items.
     */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[Inherited]] = js.native
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[Inherited]] = js.undefined
   
   /**
     * The account type. Allowed values are:   - user  - group  - domain  -
     * anyone
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The email address or domain name for the entity. This is used during
@@ -113,12 +111,12 @@ trait SchemaPermission extends StObject {
     * must be specified unless the permission type is anyone, in which case
     * both id and value are ignored.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the link is required for this permission.
     */
-  var withLink: js.UndefOr[Boolean] = js.native
+  var withLink: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPermission {
   

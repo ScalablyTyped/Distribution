@@ -4,15 +4,35 @@ import typings.carbonComponents.anon.Left
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overflowMenuMod {
   
+  @JSImport("carbon-components/components/overflow-menu/overflow-menu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("carbon-components/components/overflow-menu/overflow-menu", JSImport.Default)
   @js.native
-  class default protected () extends OverflowMenu {
+  class default protected ()
+    extends StObject
+       with OverflowMenu {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleDocumentClick(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeyPress(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getCurrentNavigation(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def navigate(direction: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,23 +48,21 @@ object overflowMenuMod {
     def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("carbon-components/components/overflow-menu/overflow-menu", "getMenuOffset")
-  @js.native
-  def getMenuOffset(menuBody: js.Any, direction: js.Any, trigger: js.Any): js.UndefOr[Left] = js.native
+  @scala.inline
+  def getMenuOffset(menuBody: js.Any, direction: js.Any, trigger: js.Any): js.UndefOr[Left] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuOffset")(menuBody.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], trigger.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Left]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait OverflowMenu extends StObject {
+  - Dropped any */ trait OverflowMenu extends StObject {
     
-    def _handleDocumentClick(event: js.Any): Unit = js.native
+    def _handleDocumentClick(event: js.Any): Unit
     
-    def _handleKeyPress(event: js.Any): Unit = js.native
+    def _handleKeyPress(event: js.Any): Unit
     
-    def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
     
-    def getCurrentNavigation(): js.Any = js.native
+    def getCurrentNavigation(): js.Any
     
-    def navigate(direction: js.Any): Unit = js.native
+    def navigate(direction: js.Any): Unit
   }
   object OverflowMenu {
     

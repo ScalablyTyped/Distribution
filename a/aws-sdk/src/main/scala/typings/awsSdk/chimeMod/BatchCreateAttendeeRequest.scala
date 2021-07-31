@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateAttendeeRequest extends StObject {
   
   /**
     * The request containing the attendees to create.
     */
-  var Attendees: CreateAttendeeRequestItemList = js.native
+  var Attendees: CreateAttendeeRequestItemList
   
   /**
     * The Amazon Chime SDK meeting ID.
     */
-  var MeetingId: GuidString = js.native
+  var MeetingId: GuidString
 }
 object BatchCreateAttendeeRequest {
   

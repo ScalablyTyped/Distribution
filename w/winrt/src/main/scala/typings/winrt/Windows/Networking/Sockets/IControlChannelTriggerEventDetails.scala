@@ -2,13 +2,11 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IControlChannelTriggerEventDetails extends StObject {
   
-  var controlChannelTrigger: ControlChannelTrigger = js.native
+  var controlChannelTrigger: ControlChannelTrigger
 }
 object IControlChannelTriggerEventDetails {
   

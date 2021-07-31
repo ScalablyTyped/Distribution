@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectVersionWorkflowState extends StObject {
   
-  var State: IPropertyValue = js.native
+  var State: IPropertyValue
   
-  var VersionComment: IPropertyValue = js.native
+  var VersionComment: IPropertyValue
   
-  var Workflow: IPropertyValue = js.native
+  var Workflow: IPropertyValue
 }
 object IObjectVersionWorkflowState {
   

@@ -2,15 +2,13 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerVolumeMount extends StObject {
   
-  var containerPath: String = js.native
+  var containerPath: String
   
-  var sourceVolume: Volume = js.native
+  var sourceVolume: Volume
 }
 object ContainerVolumeMount {
   

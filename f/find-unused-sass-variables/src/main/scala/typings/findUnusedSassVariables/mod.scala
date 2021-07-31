@@ -2,23 +2,23 @@ package typings.findUnusedSassVariables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("find-unused-sass-variables", "find")
+  @JSImport("find-unused-sass-variables", JSImport.Namespace)
   @js.native
-  def find(dir: String): Results = js.native
-  @JSImport("find-unused-sass-variables", "find")
-  @js.native
-  def find(dir: String, options: Options): Results = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def find(dir: String): Results = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any]).asInstanceOf[Results]
+  @scala.inline
+  def find(dir: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
+  
   trait Options extends StObject {
     
     /** Array of strings of the variables to ignore, e.g. `['$my-var', '$my-second-var']` */
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -42,14 +42,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
     /** he sum of all variables in the files (unused and used ones) */
-    val total: Double = js.native
+    val total: Double
     
     /** the array of unused variables */
-    val unused: js.Array[String] = js.native
+    val unused: js.Array[String]
   }
   object Results {
     

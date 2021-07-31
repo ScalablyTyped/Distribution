@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the result, in the form of a response message, from the PlayReady-ND messenger. */
-@js.native
 trait INDSendResult extends StObject {
   
   /** Gets the response message from a messenger. */
-  var response: Double = js.native
+  var response: Double
 }
 object INDSendResult {
   

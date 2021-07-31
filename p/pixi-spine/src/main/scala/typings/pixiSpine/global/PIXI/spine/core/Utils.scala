@@ -4,13 +4,13 @@ import typings.pixiSpine.PIXI.spine.core.ArrayLike
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.Utils")
 @js.native
 class Utils ()
-  extends typings.pixiSpine.PIXI.spine.core.Utils
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.Utils
 object Utils {
   
   @JSGlobal("PIXI.spine.core.Utils")
@@ -25,67 +25,54 @@ object Utils {
   def SUPPORTS_TYPED_ARRAYS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTS_TYPED_ARRAYS")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.arrayCopy")
-  @js.native
+  @scala.inline
   def arrayCopy[T](
     source: ArrayLike[T],
     sourceStart: Double,
     dest: ArrayLike[T],
     destStart: Double,
     numElements: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayCopy")(source.asInstanceOf[js.Any], sourceStart.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destStart.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.contains")
-  @js.native
-  def contains[T](array: js.Array[T], element: T): Boolean = js.native
-  @JSGlobal("PIXI.spine.core.Utils.contains")
-  @js.native
-  def contains[T](array: js.Array[T], element: T, identity: Boolean): Boolean = js.native
+  @scala.inline
+  def contains[T](array: js.Array[T], element: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains[T](array: js.Array[T], element: T, identity: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], element.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.ensureArrayCapacity")
-  @js.native
-  def ensureArrayCapacity[T](array: js.Array[T], size: Double): js.Array[T] = js.native
-  @JSGlobal("PIXI.spine.core.Utils.ensureArrayCapacity")
-  @js.native
-  def ensureArrayCapacity[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = js.native
+  @scala.inline
+  def ensureArrayCapacity[T](array: js.Array[T], size: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureArrayCapacity")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def ensureArrayCapacity[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureArrayCapacity")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.newArray")
-  @js.native
-  def newArray[T](size: Double, defaultValue: T): js.Array[T] = js.native
+  @scala.inline
+  def newArray[T](size: Double, defaultValue: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("newArray")(size.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.newFloatArray")
-  @js.native
-  def newFloatArray(size: Double): ArrayLike[Double] = js.native
+  @scala.inline
+  def newFloatArray(size: Double): ArrayLike[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("newFloatArray")(size.asInstanceOf[js.Any]).asInstanceOf[ArrayLike[Double]]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.newShortArray")
-  @js.native
-  def newShortArray(size: Double): ArrayLike[Double] = js.native
+  @scala.inline
+  def newShortArray(size: Double): ArrayLike[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("newShortArray")(size.asInstanceOf[js.Any]).asInstanceOf[ArrayLike[Double]]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.setArraySize")
-  @js.native
-  def setArraySize[T](array: js.Array[T], size: Double): js.Array[T] = js.native
-  @JSGlobal("PIXI.spine.core.Utils.setArraySize")
-  @js.native
-  def setArraySize[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = js.native
+  @scala.inline
+  def setArraySize[T](array: js.Array[T], size: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("setArraySize")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def setArraySize[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("setArraySize")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.toFloatArray")
-  @js.native
-  def toFloatArray(array: js.Array[Double]): js.Array[Double] | Float32Array = js.native
+  @scala.inline
+  def toFloatArray(array: js.Array[Double]): js.Array[Double] | Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toFloatArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double] | Float32Array]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.toSinglePrecision")
-  @js.native
-  def toSinglePrecision(value: Double): Double = js.native
+  @scala.inline
+  def toSinglePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSinglePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("PIXI.spine.core.Utils.webkit602BugfixHelper")
-  @js.native
-  def webkit602BugfixHelper(alpha: Double, blend: typings.pixiSpine.PIXI.spine.core.MixBlend): Unit = js.native
+  @scala.inline
+  def webkit602BugfixHelper(alpha: Double, blend: typings.pixiSpine.PIXI.spine.core.MixBlend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("webkit602BugfixHelper")(alpha.asInstanceOf[js.Any], blend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

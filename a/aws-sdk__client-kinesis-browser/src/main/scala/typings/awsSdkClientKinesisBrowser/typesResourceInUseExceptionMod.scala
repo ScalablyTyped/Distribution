@@ -18,15 +18,14 @@ import typings.awsSdkClientKinesisBrowser.stopStreamEncryptionExceptionsUnionMod
 import typings.awsSdkClientKinesisBrowser.updateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceInUseExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceInUseExceptionDetails> * / any */ @js.native
-  trait ResourceInUseException
-    extends AddTagsToStreamExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceInUseExceptionDetails> * / any */ trait ResourceInUseException
+    extends StObject
+       with AddTagsToStreamExceptionsUnion
        with CreateStreamExceptionsUnion
        with DecreaseStreamRetentionPeriodExceptionsUnion
        with DeleteStreamExceptionsUnion
@@ -43,13 +42,13 @@ object typesResourceInUseExceptionMod {
        with StopStreamEncryptionExceptionsUnion
        with UpdateShardCountExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceInUseException = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceInUseException
   }
   object ResourceInUseException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceInUseException): ResourceInUseException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceInUseException = {
+      val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[ResourceInUseException]
     }
     
@@ -61,13 +60,12 @@ object typesResourceInUseExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceInUseExceptionDetails extends StObject {
     
     /**
       * <p>A message that provides information about the error.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ResourceInUseExceptionDetails {
     

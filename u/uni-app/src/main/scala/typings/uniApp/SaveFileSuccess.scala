@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveFileSuccess extends StObject {
   
   /**
     * 文件的保存路径
     */
-  var savedFilePath: js.UndefOr[String] = js.native
+  var savedFilePath: js.UndefOr[String] = js.undefined
 }
 object SaveFileSuccess {
   

@@ -2,36 +2,34 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object App {
   
   type AppConstructor = js.Function1[
-    /* options */ (AppInstance[IAnyObject with AppInstance[js.Object]]) with IAnyObject with AppInstance[js.Object], 
+    /* options */ (AppInstance[IAnyObject & AppInstance[js.Object]]) & IAnyObject & AppInstance[js.Object], 
     Unit
   ]
   
-  @js.native
   trait AppInstance[T /* <: IAnyObject */] extends StObject {
     
     /** 错误监听函数
       *
       * 小程序发生脚本错误，或者 api
       */
-    var onError: js.UndefOr[js.Function1[/* error */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** 生命周期回调—监听小程序隐藏
       *
       * 小程序从前台进入后台时
       */
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 生命周期回调—监听小程序初始化
       *
       * 小程序初始化完成时触发，全局只触发一次。
       */
-    var onLaunch: js.UndefOr[js.Function1[/* options */ js.UndefOr[ILaunchShowOption], Unit]] = js.native
+    var onLaunch: js.UndefOr[js.Function1[/* options */ js.UndefOr[ILaunchShowOption], Unit]] = js.undefined
     
     /** 页面不存在监听函数
       *
@@ -43,13 +41,13 @@ object App {
       *
       * 最低基础库： 1.9.90
       */
-    var onPageNotFound: js.UndefOr[js.Function1[/* options */ js.UndefOr[IPageNotFoundOption], Unit]] = js.native
+    var onPageNotFound: js.UndefOr[js.Function1[/* options */ js.UndefOr[IPageNotFoundOption], Unit]] = js.undefined
     
     /** 生命周期回调—监听小程序显示
       *
       * 小程序启动，或从后台进入前台显示时
       */
-    var onShow: js.UndefOr[js.Function1[/* options */ js.UndefOr[ILaunchShowOption], Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* options */ js.UndefOr[ILaunchShowOption], Unit]] = js.undefined
   }
   object AppInstance {
     
@@ -60,7 +58,7 @@ object App {
     }
     
     @scala.inline
-    implicit class AppInstanceMutableBuilder[Self <: AppInstance[_], T /* <: IAnyObject */] (val x: Self with AppInstance[T]) extends AnyVal {
+    implicit class AppInstanceMutableBuilder[Self <: AppInstance[?], T /* <: IAnyObject */] (val x: Self & AppInstance[T]) extends AnyVal {
       
       @scala.inline
       def setOnError(value: /* error */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
@@ -94,16 +92,15 @@ object App {
     }
   }
   
-  type GetApp = js.Function1[/* opts */ js.UndefOr[IGetAppOption], AppInstance[IAnyObject] with IAnyObject]
+  type GetApp = js.Function1[/* opts */ js.UndefOr[IGetAppOption], AppInstance[IAnyObject] & IAnyObject]
   
-  @js.native
   trait IGetAppOption extends StObject {
     
     /** 在 `App` 未定义时返回默认实现。当App被调用时，默认实现中定义的属性会被覆盖合并到App中。一般用于独立分包
       *
       * 最低基础库： 2.2.4
       */
-    var allowDefault: scala.Boolean = js.native
+    var allowDefault: scala.Boolean
   }
   object IGetAppOption {
     
@@ -121,10 +118,9 @@ object App {
     }
   }
   
-  @js.native
   trait ILaunchOptions extends StObject {
     
-    var query: Double = js.native
+    var query: Double
   }
   object ILaunchOptions {
     
@@ -142,17 +138,16 @@ object App {
     }
   }
   
-  @js.native
   trait ILaunchShowOption extends StObject {
     
     /** 打开小程序的路径 */
-    var path: java.lang.String = js.native
+    var path: java.lang.String
     
     /** 打开小程序的query */
-    var query: IAnyObject = js.native
+    var query: IAnyObject
     
     /** 当场景为由从另一个小程序或公众号或App打开时，返回此字段 */
-    var referrerInfo: js.UndefOr[IReferrerInfo] = js.native
+    var referrerInfo: js.UndefOr[IReferrerInfo] = js.undefined
     
     /** 打开小程序的场景值
       * - 1001: 发现栏小程序主入口，「最近使用」列表（基础库2.2.4版本起包含「我的小程序」列表）
@@ -225,10 +220,10 @@ object App {
       * - 1103: 发现栏小程序主入口，「我的小程序」列表（基础库2.2.4版本起废弃）
       * - 1104: 微信聊天主界面下拉，「我的小程序」栏（基础库2.2.4版本起废弃）
       */
-    var scene: SceneValues = js.native
+    var scene: SceneValues
     
     /** shareTicket，详见 [获取更多转发信息]((转发#获取更多转发信息)) */
-    var shareTicket: java.lang.String = js.native
+    var shareTicket: java.lang.String
   }
   object ILaunchShowOption {
     
@@ -261,17 +256,16 @@ object App {
     }
   }
   
-  @js.native
   trait IPageNotFoundOption extends StObject {
     
     /** 是否本次启动的首个页面（例如从分享等入口进来，首个页面是开发者配置的分享页面） */
-    var isEntryPage: scala.Boolean = js.native
+    var isEntryPage: scala.Boolean
     
     /** 不存在页面的路径 */
-    var path: java.lang.String = js.native
+    var path: java.lang.String
     
     /** 打开不存在页面的 query */
-    var query: IAnyObject = js.native
+    var query: IAnyObject
   }
   object IPageNotFoundOption {
     
@@ -295,7 +289,6 @@ object App {
     }
   }
   
-  @js.native
   trait IReferrerInfo extends StObject {
     
     /** 来源小程序或公众号或App的 appId
@@ -308,10 +301,10 @@ object App {
       * - 1038（从另一个小程序返回）：来源小程序 appId
       * - 1043（公众号模板消息）：来源公众号 appId
       */
-    var appId: java.lang.String = js.native
+    var appId: java.lang.String
     
     /** 来源小程序传过来的数据，scene=1037或1038时支持 */
-    var extraData: js.UndefOr[js.Any] = js.native
+    var extraData: js.UndefOr[js.Any] = js.undefined
   }
   object IReferrerInfo {
     

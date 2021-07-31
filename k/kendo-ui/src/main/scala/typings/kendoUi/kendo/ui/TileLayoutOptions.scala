@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayoutOptions extends StObject {
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var columnsWidth: js.UndefOr[String | Double] = js.native
+  var columnsWidth: js.UndefOr[String | Double] = js.undefined
   
-  var containers: js.UndefOr[js.Array[TileLayoutContainer]] = js.native
+  var containers: js.UndefOr[js.Array[TileLayoutContainer]] = js.undefined
   
-  var gap: js.UndefOr[TileLayoutGap] = js.native
+  var gap: js.UndefOr[TileLayoutGap] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var reorder: js.UndefOr[js.Function1[/* e */ TileLayoutReorderEvent, Unit]] = js.native
+  var reorder: js.UndefOr[js.Function1[/* e */ TileLayoutReorderEvent, Unit]] = js.undefined
   
-  var reorderable: js.UndefOr[Boolean] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ TileLayoutResizeEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ TileLayoutResizeEvent, Unit]] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var rowsHeight: js.UndefOr[String | Double] = js.native
+  var rowsHeight: js.UndefOr[String | Double] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object TileLayoutOptions {
   

@@ -2,10 +2,8 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListPerfSamplesResponse extends StObject {
   
   /**
@@ -13,9 +11,9 @@ trait SchemaListPerfSamplesResponse extends StObject {
     * request (or the default page size, 500, if unspecified). It indicates the
     * last sample timestamp to be used as page_token in subsequent request
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.native
+  var perfSamples: js.UndefOr[js.Array[SchemaPerfSample]] = js.undefined
 }
 object SchemaListPerfSamplesResponse {
   

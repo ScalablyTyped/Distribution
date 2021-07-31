@@ -7,7 +7,6 @@ import typings.stormReactDiagrams.defaultNodeModelMod.DefaultNodeModel
 import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultNodeWidgetMod {
@@ -20,12 +19,13 @@ object defaultNodeWidgetMod {
     def generatePort(port: js.Any): Element = js.native
   }
   
-  @js.native
-  trait DefaultNodeProps extends BaseWidgetProps {
+  trait DefaultNodeProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    var node: DefaultNodeModel = js.native
+    var node: DefaultNodeModel
   }
   object DefaultNodeProps {
     
@@ -46,6 +46,5 @@ object defaultNodeWidgetMod {
     }
   }
   
-  @js.native
   trait DefaultNodeState extends StObject
 }

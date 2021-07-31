@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,9 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.GroupElement A complementary service, for children of a static heterogeneous collection.
   * @see com.sun.star.configuration.ConfigurationProvider Objects provided by a ConfigurationProvider implement this service.
   */
-@js.native
 trait AccessRootElement
-  extends HierarchyElement
+  extends StObject
+     with HierarchyElement
      with XComponent
      with XChangesNotifier
      with XLocalizable

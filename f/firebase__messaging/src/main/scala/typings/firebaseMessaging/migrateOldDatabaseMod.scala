@@ -7,37 +7,38 @@ import typings.std.PushSubscription
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrateOldDatabaseMod {
   
-  @JSImport("@firebase/messaging/dist/helpers/migrate-old-database", "migrateOldDatabase")
+  @JSImport("@firebase/messaging/dist/helpers/migrate-old-database", JSImport.Namespace)
   @js.native
-  def migrateOldDatabase(senderId: String): js.Promise[TokenDetails | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def migrateOldDatabase(senderId: String): js.Promise[TokenDetails | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("migrateOldDatabase")(senderId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TokenDetails | Null]]
+  
   trait V2TokenDetails extends StObject {
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var createTime: js.UndefOr[Double] = js.native
+    var createTime: js.UndefOr[Double] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var fcmPushSet: String = js.native
+    var fcmPushSet: String
     
-    var fcmSenderId: String = js.native
+    var fcmSenderId: String
     
-    var fcmToken: String = js.native
+    var fcmToken: String
     
-    var p256dh: js.UndefOr[String] = js.native
+    var p256dh: js.UndefOr[String] = js.undefined
     
-    var subscription: PushSubscription = js.native
+    var subscription: PushSubscription
     
-    var swScope: String = js.native
+    var swScope: String
     
-    var vapidKey: String | Uint8Array = js.native
+    var vapidKey: String | Uint8Array
   }
   object V2TokenDetails {
     
@@ -101,26 +102,25 @@ object migrateOldDatabaseMod {
     }
   }
   
-  @js.native
   trait V3TokenDetails extends StObject {
     
-    var auth: ArrayBuffer = js.native
+    var auth: ArrayBuffer
     
-    var createTime: Double = js.native
+    var createTime: Double
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var fcmPushSet: String = js.native
+    var fcmPushSet: String
     
-    var fcmSenderId: String = js.native
+    var fcmSenderId: String
     
-    var fcmToken: String = js.native
+    var fcmToken: String
     
-    var p256dh: ArrayBuffer = js.native
+    var p256dh: ArrayBuffer
     
-    var swScope: String = js.native
+    var swScope: String
     
-    var vapidKey: Uint8Array = js.native
+    var vapidKey: Uint8Array
   }
   object V3TokenDetails {
     
@@ -172,24 +172,23 @@ object migrateOldDatabaseMod {
     }
   }
   
-  @js.native
   trait V4TokenDetails extends StObject {
     
-    var auth: ArrayBufferLike = js.native
+    var auth: ArrayBufferLike
     
-    var createTime: Double = js.native
+    var createTime: Double
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var fcmSenderId: String = js.native
+    var fcmSenderId: String
     
-    var fcmToken: String = js.native
+    var fcmToken: String
     
-    var p256dh: ArrayBufferLike = js.native
+    var p256dh: ArrayBufferLike
     
-    var swScope: String = js.native
+    var swScope: String
     
-    var vapidKey: Uint8Array = js.native
+    var vapidKey: Uint8Array
   }
   object V4TokenDetails {
     

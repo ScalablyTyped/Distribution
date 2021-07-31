@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bot, bot alias, or bot channel to tag.
     */
-  var resourceArn: AmazonResourceName = js.native
+  var resourceArn: AmazonResourceName
   
   /**
     * A list of tag keys to add to the resource. If a tag key already exists, the existing value is replaced with the new value.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object TagResourceRequest {
   

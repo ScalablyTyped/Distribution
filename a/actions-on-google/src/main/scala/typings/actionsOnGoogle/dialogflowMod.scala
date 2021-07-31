@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.dialogflowDialogflowMod.Dialogflow_
 import typings.actionsOnGoogle.v1Mod.DialogflowV1Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogflowMod {
@@ -18,8 +17,8 @@ object dialogflowMod {
   class ContextValues[TContexts /* <: Contexts */] ()
     extends typings.actionsOnGoogle.contextMod.ContextValues[TContexts] {
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
-    def this(outputContexts: js.UndefOr[scala.Nothing], _session: String) = this()
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
+    def this(outputContexts: Unit, _session: String) = this()
   }
   
   @JSImport("actions-on-google/dist/service/dialogflow", "DialogflowConversation")

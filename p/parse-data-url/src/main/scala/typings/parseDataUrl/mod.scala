@@ -4,29 +4,30 @@ import typings.node.Buffer
 import typings.parseDataUrl.parseDataUrlBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(s: String): `false` | DataUrl = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[`false` | DataUrl]
+  
   @JSImport("parse-data-url", JSImport.Namespace)
   @js.native
-  def apply(s: String): `false` | DataUrl = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait DataUrl extends StObject {
     
-    var base64: Boolean = js.native
+    var base64: Boolean
     
-    var charset: String = js.native
+    var charset: String
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var data: String = js.native
+    var data: String
     
-    var mediaType: String = js.native
+    var mediaType: String
     
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
   }
   object DataUrl {
     

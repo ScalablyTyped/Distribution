@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAcceleratorsResponse extends StObject {
   
   /**
     * The list of accelerators for a customer account.
     */
-  var Accelerators: js.UndefOr[typings.awsSdk.globalacceleratorMod.Accelerators] = js.native
+  var Accelerators: js.UndefOr[typings.awsSdk.globalacceleratorMod.Accelerators] = js.undefined
   
   /**
     * The token for the next set of results. You receive this token from a previous call.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object ListAcceleratorsResponse {
   

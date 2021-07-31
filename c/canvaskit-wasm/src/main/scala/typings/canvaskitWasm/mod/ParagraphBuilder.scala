@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParagraphBuilder extends EmbindObject[ParagraphBuilder] {
+trait ParagraphBuilder
+  extends StObject
+     with EmbindObject[ParagraphBuilder] {
   
   /**
     * Pushes the information required to leave an open space.
@@ -17,159 +18,13 @@ trait ParagraphBuilder extends EmbindObject[ParagraphBuilder] {
     * @param offset
     */
   def addPlaceholder(): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(width: js.UndefOr[scala.Nothing], height: Double, alignment: PlaceholderAlignment): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: PlaceholderAlignment,
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
   def addPlaceholder(width: Double): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(width: Double, height: js.UndefOr[scala.Nothing], alignment: PlaceholderAlignment): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline
-  ): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    alignment: PlaceholderAlignment,
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
   def addPlaceholder(width: Double, height: Double): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: Double,
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def addPlaceholder(width: Double, height: Double, alignment: js.UndefOr[scala.Nothing], baseline: TextBaseline): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: Double,
-    alignment: js.UndefOr[scala.Nothing],
-    baseline: TextBaseline,
-    offset: Double
-  ): Unit = js.native
+  def addPlaceholder(width: Double, height: Double, alignment: Unit, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Double, height: Double, alignment: Unit, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(width: Double, height: Double, alignment: Unit, baseline: TextBaseline, offset: Double): Unit = js.native
   def addPlaceholder(width: Double, height: Double, alignment: PlaceholderAlignment): Unit = js.native
-  def addPlaceholder(
-    width: Double,
-    height: Double,
-    alignment: PlaceholderAlignment,
-    baseline: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
+  def addPlaceholder(width: Double, height: Double, alignment: PlaceholderAlignment, baseline: Unit, offset: Double): Unit = js.native
   def addPlaceholder(width: Double, height: Double, alignment: PlaceholderAlignment, baseline: TextBaseline): Unit = js.native
   def addPlaceholder(
     width: Double,
@@ -178,6 +33,40 @@ trait ParagraphBuilder extends EmbindObject[ParagraphBuilder] {
     baseline: TextBaseline,
     offset: Double
   ): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: Unit, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: Unit, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: Unit, baseline: TextBaseline, offset: Double): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: PlaceholderAlignment): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: PlaceholderAlignment, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Double, height: Unit, alignment: PlaceholderAlignment, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(
+    width: Double,
+    height: Unit,
+    alignment: PlaceholderAlignment,
+    baseline: TextBaseline,
+    offset: Double
+  ): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: Unit, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: Unit, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: Unit, baseline: TextBaseline, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: PlaceholderAlignment): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: PlaceholderAlignment, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Double, alignment: PlaceholderAlignment, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(
+    width: Unit,
+    height: Double,
+    alignment: PlaceholderAlignment,
+    baseline: TextBaseline,
+    offset: Double
+  ): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: Unit, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: Unit, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: Unit, baseline: TextBaseline, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: PlaceholderAlignment): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: PlaceholderAlignment, baseline: Unit, offset: Double): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: PlaceholderAlignment, baseline: TextBaseline): Unit = js.native
+  def addPlaceholder(width: Unit, height: Unit, alignment: PlaceholderAlignment, baseline: TextBaseline, offset: Double): Unit = js.native
   
   /**
     * Adds text to the builder. Forms the proper runs to use the upper-most style

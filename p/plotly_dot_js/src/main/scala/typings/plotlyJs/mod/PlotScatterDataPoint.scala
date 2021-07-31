@@ -2,27 +2,25 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotScatterDataPoint extends StObject {
   
-  var curveNumber: Double = js.native
+  var curveNumber: Double
   
-  var data: PlotData = js.native
+  var data: PlotData
   
-  var pointIndex: Double = js.native
+  var pointIndex: Double
   
-  var pointNumber: Double = js.native
+  var pointNumber: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var xaxis: LayoutAxis = js.native
+  var xaxis: LayoutAxis
   
-  var y: Double = js.native
+  var y: Double
   
-  var yaxis: LayoutAxis = js.native
+  var yaxis: LayoutAxis
 }
 object PlotScatterDataPoint {
   

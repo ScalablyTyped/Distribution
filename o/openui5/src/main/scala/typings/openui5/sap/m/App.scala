@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends NavContainer {
+trait App
+  extends StObject
+     with NavContainer {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>orientationChange</code> event of this

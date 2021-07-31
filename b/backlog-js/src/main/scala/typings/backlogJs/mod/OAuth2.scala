@@ -7,7 +7,6 @@ import typings.backlogJs.mod.Entity.OAuth2.AccessToken
 import typings.backlogJs.mod.Option.OAuth2.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backlog-js", "OAuth2")

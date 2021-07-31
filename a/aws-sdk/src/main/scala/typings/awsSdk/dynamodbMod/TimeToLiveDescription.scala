@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeToLiveDescription extends StObject {
   
   /**
     *  The name of the TTL attribute for items in the table.
     */
-  var AttributeName: js.UndefOr[TimeToLiveAttributeName] = js.native
+  var AttributeName: js.UndefOr[TimeToLiveAttributeName] = js.undefined
   
   /**
     *  The TTL status for the table.
     */
-  var TimeToLiveStatus: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveStatus] = js.native
+  var TimeToLiveStatus: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveStatus] = js.undefined
 }
 object TimeToLiveDescription {
   

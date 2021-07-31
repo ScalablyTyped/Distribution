@@ -3,23 +3,21 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Devices.Sms.ISmsMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkOperatorNotificationEventDetails extends StObject {
   
-  var encodingType: Double = js.native
+  var encodingType: Double
   
-  var message: String = js.native
+  var message: String
   
-  var networkAccountId: String = js.native
+  var networkAccountId: String
   
-  var notificationType: NetworkOperatorEventMessageType = js.native
+  var notificationType: NetworkOperatorEventMessageType
   
-  var ruleId: String = js.native
+  var ruleId: String
   
-  var smsMessage: ISmsMessage = js.native
+  var smsMessage: ISmsMessage
 }
 object INetworkOperatorNotificationEventDetails {
   

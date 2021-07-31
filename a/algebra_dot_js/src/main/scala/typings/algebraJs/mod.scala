@@ -2,65 +2,75 @@ package typings.algebraJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("algebra.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("algebra.js", "Equation")
   @js.native
   class Equation protected ()
-    extends typings.algebraJs.mod.algebra.js_.Equation {
+    extends StObject
+       with typings.algebraJs.mod.algebra.js_.Equation {
     def this(lhs: typings.algebraJs.mod.algebra.js_.Expression, rhs: Double) = this()
     def this(
       lhs: typings.algebraJs.mod.algebra.js_.Expression,
       rhs: typings.algebraJs.mod.algebra.js_.Expression
     ) = this()
     def this(lhs: typings.algebraJs.mod.algebra.js_.Expression, rhs: typings.algebraJs.mod.algebra.js_.Fraction) = this()
+    
+    /* CompleteClass */
+    var lhs: typings.algebraJs.mod.algebra.js_.Expression = js.native
+    
+    /* CompleteClass */
+    var rhs: typings.algebraJs.mod.algebra.js_.Expression = js.native
+    
+    /* CompleteClass */
+    override def solveFor(variable: String): typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) = js.native
   }
   
   @JSImport("algebra.js", "Expression")
   @js.native
   class Expression ()
-    extends typings.algebraJs.mod.algebra.js_.Expression {
+    extends StObject
+       with typings.algebraJs.mod.algebra.js_.Expression {
     def this(variable: Union) = this()
   }
   
   @JSImport("algebra.js", "Fraction")
   @js.native
   class Fraction protected ()
-    extends typings.algebraJs.mod.algebra.js_.Fraction {
+    extends StObject
+       with typings.algebraJs.mod.algebra.js_.Fraction {
     def this(num: Double, denom: Double) = this()
   }
   
-  @JSImport("algebra.js", "parse")
-  @js.native
-  def parse(input: String): typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression = js.native
+  @scala.inline
+  def parse(input: String): typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression]
   
-  @JSImport("algebra.js", "toTex")
-  @js.native
-  def toTex(input: js.Array[typings.algebraJs.mod.algebra.js_.Fraction | js.Object]): String = js.native
-  @JSImport("algebra.js", "toTex")
-  @js.native
-  def toTex(input: js.Object): String = js.native
-  @JSImport("algebra.js", "toTex")
-  @js.native
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Equation): String = js.native
-  @JSImport("algebra.js", "toTex")
-  @js.native
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Expression): String = js.native
-  @JSImport("algebra.js", "toTex")
-  @js.native
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Fraction): String = js.native
+  @scala.inline
+  def toTex(input: js.Array[typings.algebraJs.mod.algebra.js_.Fraction | js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toTex(input: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toTex(input: typings.algebraJs.mod.algebra.js_.Equation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toTex(input: typings.algebraJs.mod.algebra.js_.Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toTex(input: typings.algebraJs.mod.algebra.js_.Fraction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
-  trait Term extends _Union {
+  trait Term
+    extends StObject
+       with _Union {
     
-    def coefficient(): typings.algebraJs.mod.algebra.js_.Fraction = js.native
+    def coefficient(): typings.algebraJs.mod.algebra.js_.Fraction
     
-    var coefficients: js.Array[typings.algebraJs.mod.algebra.js_.Fraction] = js.native
+    var coefficients: js.Array[typings.algebraJs.mod.algebra.js_.Fraction]
     
-    var variables: js.Array[Variable] = js.native
+    var variables: js.Array[Variable]
   }
   object Term {
     
@@ -102,10 +112,9 @@ object mod {
   */
   type Union = _Union | String | Double
   
-  @js.native
   trait Variable extends StObject {
     
-    var variable: String = js.native
+    var variable: String
   }
   object Variable {
     
@@ -129,14 +138,13 @@ object mod {
     
     object js_ {
       
-      @js.native
       trait Equation extends StObject {
         
-        var lhs: typings.algebraJs.mod.algebra.js_.Expression = js.native
+        var lhs: typings.algebraJs.mod.algebra.js_.Expression
         
-        var rhs: typings.algebraJs.mod.algebra.js_.Expression = js.native
+        var rhs: typings.algebraJs.mod.algebra.js_.Expression
         
-        def solveFor(variable: String): typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) = js.native
+        def solveFor(variable: String): typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
       }
       object Equation {
         
@@ -208,7 +216,9 @@ object mod {
       }
       
       @js.native
-      trait Fraction extends _Union {
+      trait Fraction
+        extends StObject
+           with _Union {
         
         def abs(): typings.algebraJs.mod.algebra.js_.Fraction = js.native
         

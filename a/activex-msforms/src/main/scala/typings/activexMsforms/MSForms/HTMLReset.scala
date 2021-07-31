@@ -2,20 +2,18 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLReset extends StObject {
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLReset_typekey")
-  var MSFormsDotHTMLReset_typekey: HTMLReset = js.native
+  var MSFormsDotHTMLReset_typekey: HTMLReset
 }
 object HTMLReset {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataSetRequest extends StObject {
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
 }
 object GetDataSetRequest {
   

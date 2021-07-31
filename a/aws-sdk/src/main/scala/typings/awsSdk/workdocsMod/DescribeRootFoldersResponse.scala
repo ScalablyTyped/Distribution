@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRootFoldersResponse extends StObject {
   
   /**
     * The user's special folders.
     */
-  var Folders: js.UndefOr[FolderMetadataList] = js.native
+  var Folders: js.UndefOr[FolderMetadataList] = js.undefined
   
   /**
     * The marker for the next set of results.
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
 }
 object DescribeRootFoldersResponse {
   

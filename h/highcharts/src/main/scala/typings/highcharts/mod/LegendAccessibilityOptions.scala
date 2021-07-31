@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendAccessibilityOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable accessibility support for
     * the legend.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for keyboard navigation
     * for the legend.
     */
-  var keyboardNavigation: js.UndefOr[LegendAccessibilityKeyboardNavigationOptions] = js.native
+  var keyboardNavigation: js.UndefOr[LegendAccessibilityKeyboardNavigationOptions] = js.undefined
 }
 object LegendAccessibilityOptions {
   

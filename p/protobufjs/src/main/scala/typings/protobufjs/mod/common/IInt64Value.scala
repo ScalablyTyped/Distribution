@@ -3,14 +3,12 @@ package typings.protobufjs.mod.common
 import typings.protobufjs.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Int64Value message. */
-@js.native
 trait IInt64Value extends StObject {
   
-  var value: js.UndefOr[Double | Long] = js.native
+  var value: js.UndefOr[Double | Long] = js.undefined
 }
 object IInt64Value {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * The name of the configuration set from which to delete the event destination.
     */
-  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName
   
   /**
     * The name of the event destination to delete.
     */
-  var EventDestinationName: typings.awsSdk.sesMod.EventDestinationName = js.native
+  var EventDestinationName: typings.awsSdk.sesMod.EventDestinationName
 }
 object DeleteConfigurationSetEventDestinationRequest {
   

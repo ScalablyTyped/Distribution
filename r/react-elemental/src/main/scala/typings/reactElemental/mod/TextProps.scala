@@ -4,31 +4,29 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextProps extends StObject {
   
-  val bold: js.UndefOr[Boolean] = js.native
+  val bold: js.UndefOr[Boolean] = js.undefined
   
-  val center: js.UndefOr[Boolean] = js.native
+  val center: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
-  val `inline`: js.UndefOr[Boolean] = js.native
+  val `inline`: js.UndefOr[Boolean] = js.undefined
   
-  val right: js.UndefOr[Boolean] = js.native
+  val right: js.UndefOr[Boolean] = js.undefined
   
-  val secondary: js.UndefOr[Boolean] = js.native
+  val secondary: js.UndefOr[Boolean] = js.undefined
   
-  val size: js.UndefOr[String] = js.native
+  val size: js.UndefOr[String] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val uppercase: js.UndefOr[Boolean] = js.native
+  val uppercase: js.UndefOr[Boolean] = js.undefined
 }
 object TextProps {
   

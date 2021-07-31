@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Module extends StObject {
   
-  var module: js.Any = js.native
+  var module: js.Any
   
-  var version: String = js.native
+  var version: String
 }
 object Module {
   

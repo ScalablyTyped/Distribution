@@ -3,7 +3,6 @@ package typings.underscore
 import typings.underscore.mod._AnyFalsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object underscoreStrings {
@@ -39,7 +38,9 @@ object underscoreStrings {
   def _Chain: _Chain = "_Chain".asInstanceOf[_Chain]
   
   @js.native
-  sealed trait _empty extends _AnyFalsy
+  sealed trait _empty
+    extends StObject
+       with _AnyFalsy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
 }

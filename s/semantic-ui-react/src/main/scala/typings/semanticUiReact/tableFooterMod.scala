@@ -6,7 +6,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.tableHeaderMod.StrictTableHeaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableFooterMod extends Shortcut {
@@ -15,8 +14,9 @@ object tableFooterMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TableFooterProps] = js.native
   
-  @js.native
-  trait StrictTableFooterProps extends StrictTableHeaderProps
+  trait StrictTableFooterProps
+    extends StObject
+       with StrictTableHeaderProps
   object StrictTableFooterProps {
     
     @scala.inline
@@ -26,9 +26,9 @@ object tableFooterMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TableFooterProps
-    extends StrictTableFooterProps
+    extends StObject
+       with StrictTableFooterProps
        with /* key */ StringDictionary[js.Any]
   object TableFooterProps {
     

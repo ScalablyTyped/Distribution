@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1Catalog extends StObject {
   
   /** Required. The catalog item level configuration. */
-  var catalogItemLevelConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig] = js.native
+  var catalogItemLevelConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig] = js.undefined
   
   /** Required. The ID of the default event store. */
-  var defaultEventStoreId: js.UndefOr[String] = js.native
+  var defaultEventStoreId: js.UndefOr[String] = js.undefined
   
   /** Required. The catalog display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The fully qualified resource name of the catalog. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1Catalog {
   

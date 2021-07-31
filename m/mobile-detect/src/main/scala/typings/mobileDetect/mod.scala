@@ -6,14 +6,15 @@ import typings.mobileDetect.anon.Oss
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mobile-detect", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MobileDetect {
+  class ^ protected ()
+    extends StObject
+       with MobileDetect {
     def this(userAgent: String) = this()
     def this(userAgent: String, maxPhoneWidth: Double) = this()
   }
@@ -31,12 +32,10 @@ object mod {
   def impl_=(x: MobileDetectImpl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_impl")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mobile-detect", "isPhoneSized")
-  @js.native
-  def isPhoneSized(): Boolean = js.native
-  @JSImport("mobile-detect", "isPhoneSized")
-  @js.native
-  def isPhoneSized(maxPhoneWidth: Double): Boolean = js.native
+  @scala.inline
+  def isPhoneSized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")().asInstanceOf[Boolean]
+  @scala.inline
+  def isPhoneSized(maxPhoneWidth: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")(maxPhoneWidth.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   @JSImport("mobile-detect", "version")

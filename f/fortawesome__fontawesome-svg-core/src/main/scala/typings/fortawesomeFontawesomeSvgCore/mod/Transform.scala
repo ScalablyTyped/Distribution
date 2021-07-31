@@ -2,23 +2,21 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var flipX: js.UndefOr[Boolean] = js.native
+  var flipX: js.UndefOr[Boolean] = js.undefined
   
-  var flipY: js.UndefOr[Boolean] = js.native
+  var flipY: js.UndefOr[Boolean] = js.undefined
   
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Transform {
   

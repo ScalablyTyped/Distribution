@@ -4,7 +4,6 @@ import typings.eggMultipart.anon.AutoFields
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -34,8 +33,8 @@ object mod {
       * @param {MultipartOptions} options
       * @return {Function} return a function which return a Promise
       */
-    def multipart(): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[_]] = js.native
-    def multipart(options: MultipartOptions): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[_]] = js.native
+    def multipart(): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[js.Any]] = js.native
+    def multipart(options: MultipartOptions): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[js.Any]] = js.native
     
     /**
       * save request multipart data and files to `ctx.request`
@@ -44,10 +43,9 @@ object mod {
     def saveRequestFiles(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait EggAppConfig extends StObject {
     
-    var multipart: AutoFields = js.native
+    var multipart: AutoFields
   }
   object EggAppConfig {
     
@@ -67,13 +65,12 @@ object mod {
   
   type MatchItem = String | RegExp | (js.Function1[/* ctx */ Context, Boolean])
   
-  @js.native
   trait Request extends StObject {
     
     /**
       * Files Object Array
       */
-    var files: js.Array[EggFile] = js.native
+    var files: js.Array[EggFile]
   }
   object Request {
     

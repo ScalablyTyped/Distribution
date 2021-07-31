@@ -2,30 +2,28 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothCharacteristicProperties extends StObject {
   
-  val authenticatedSignedWrites: Boolean = js.native
+  val authenticatedSignedWrites: Boolean
   
-  val broadcast: Boolean = js.native
+  val broadcast: Boolean
   
-  val indicate: Boolean = js.native
+  val indicate: Boolean
   
   @JSName("notify")
-  val notify_FBluetoothCharacteristicProperties: Boolean = js.native
+  val notify_FBluetoothCharacteristicProperties: Boolean
   
-  val read: Boolean = js.native
+  val read: Boolean
   
-  val reliableWrite: Boolean = js.native
+  val reliableWrite: Boolean
   
-  val writableAuxiliaries: Boolean = js.native
+  val writableAuxiliaries: Boolean
   
-  val write: Boolean = js.native
+  val write: Boolean
   
-  val writeWithoutResponse: Boolean = js.native
+  val writeWithoutResponse: Boolean
 }
 object BluetoothCharacteristicProperties {
   

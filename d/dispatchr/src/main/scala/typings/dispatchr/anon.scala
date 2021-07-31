@@ -5,19 +5,17 @@ import typings.dispatchr.mod.StoreClass
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActionName extends StObject {
     
-    var actionName: js.UndefOr[String] = js.native
+    var actionName: js.UndefOr[String] = js.undefined
     
-    var error: Error = js.native
+    var error: Error
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
   }
   object ActionName {
     

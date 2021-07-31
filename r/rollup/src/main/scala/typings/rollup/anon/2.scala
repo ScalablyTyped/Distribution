@@ -4,19 +4,19 @@ import typings.rollup.mod.RollupWatcherEvent
 import typings.rollup.rollupStrings.START
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `2` extends RollupWatcherEvent {
+trait `2`
+  extends StObject
+     with RollupWatcherEvent {
   
-  var code: START = js.native
+  var code: START
 }
 object `2` {
   
   @scala.inline
-  def apply(code: START): `2` = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+  def apply(): `2` = {
+    val __obj = js.Dynamic.literal(code = "START")
     __obj.asInstanceOf[`2`]
   }
   

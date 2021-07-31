@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterCACertificateRequest extends StObject {
   
   /**
     * Allows this CA certificate to be used for auto registration of device certificates.
     */
-  var allowAutoRegistration: js.UndefOr[AllowAutoRegistration] = js.native
+  var allowAutoRegistration: js.UndefOr[AllowAutoRegistration] = js.undefined
   
   /**
     * The CA certificate.
     */
-  var caCertificate: CertificatePem = js.native
+  var caCertificate: CertificatePem
   
   /**
     * Information about the registration configuration.
     */
-  var registrationConfig: js.UndefOr[RegistrationConfig] = js.native
+  var registrationConfig: js.UndefOr[RegistrationConfig] = js.undefined
   
   /**
     * A boolean value that specifies if the CA certificate is set to active.
     */
-  var setAsActive: js.UndefOr[SetAsActive] = js.native
+  var setAsActive: js.UndefOr[SetAsActive] = js.undefined
   
   /**
     * Metadata which can be used to manage the CA certificate.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The private key verification certificate.
     */
-  var verificationCertificate: CertificatePem = js.native
+  var verificationCertificate: CertificatePem
 }
 object RegisterCACertificateRequest {
   

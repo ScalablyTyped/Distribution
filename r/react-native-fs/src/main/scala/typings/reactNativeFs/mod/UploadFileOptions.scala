@@ -2,39 +2,37 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileOptions extends StObject {
   
   // deprecated
-  var begin: js.UndefOr[js.Function1[/* res */ UploadBeginCallbackResult, Unit]] = js.native
+  var begin: js.UndefOr[js.Function1[/* res */ UploadBeginCallbackResult, Unit]] = js.undefined
   
   // Default is 'POST', supports 'POST' and 'PUT'
-  var beginCallback: js.UndefOr[js.Function1[/* res */ UploadBeginCallbackResult, Unit]] = js.native
+  var beginCallback: js.UndefOr[js.Function1[/* res */ UploadBeginCallbackResult, Unit]] = js.undefined
   
   // URL to upload file to
-  var binaryStreamOnly: js.UndefOr[Boolean] = js.native
+  var binaryStreamOnly: js.UndefOr[Boolean] = js.undefined
   
   // An object of headers to be passed to the server
-  var fields: js.UndefOr[Fields] = js.native
+  var fields: js.UndefOr[Fields] = js.undefined
   
   // Allow for binary data stream for file to be uploaded without extra headers, Default is 'false'
-  var files: js.Array[UploadFileItem] = js.native
+  var files: js.Array[UploadFileItem]
   
   // An array of objects with the file information to be uploaded.
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
   // An object of fields to be passed to the server
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var progress: js.UndefOr[js.Function1[/* res */ UploadProgressCallbackResult, Unit]] = js.native
+  var progress: js.UndefOr[js.Function1[/* res */ UploadProgressCallbackResult, Unit]] = js.undefined
   
   // deprecated
-  var progressCallback: js.UndefOr[js.Function1[/* res */ UploadProgressCallbackResult, Unit]] = js.native
+  var progressCallback: js.UndefOr[js.Function1[/* res */ UploadProgressCallbackResult, Unit]] = js.undefined
   
-  var toUrl: String = js.native
+  var toUrl: String
 }
 object UploadFileOptions {
   

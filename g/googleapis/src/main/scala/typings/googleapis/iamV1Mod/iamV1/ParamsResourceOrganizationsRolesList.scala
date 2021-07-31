@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsRolesList extends StandardParameters {
+trait ParamsResourceOrganizationsRolesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional limit on the number of roles to include in the response.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional pagination token returned in an earlier ListRolesResponse.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the parent resource in one of the following formats:
     * `` (empty string) -- this refers to curated roles.
     * `organizations/{ORGANIZATION_ID}` `projects/{PROJECT_ID}`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Include Roles that have been deleted.
     */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional view for the returned Role objects. When `FULL` is specified,
@@ -45,7 +45,7 @@ trait ParamsResourceOrganizationsRolesList extends StandardParameters {
     * permissions in the role. The default value is `BASIC`, which does not
     * return the `includedPermissions` field.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsRolesList {
   

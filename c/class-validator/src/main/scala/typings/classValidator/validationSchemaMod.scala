@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.classValidator.anon.Always
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationSchemaMod {
   
-  @js.native
   trait ValidationSchema extends StObject {
     
     /**
       * Schema name. This is required, because we tell validator to validate by this schema using its name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Validated properties.
@@ -23,7 +21,7 @@ object validationSchemaMod {
     var properties: /**
       * Name of the object's property to be validated which holds an array of validation constraints.
       */
-    StringDictionary[js.Array[Always]] = js.native
+    StringDictionary[js.Array[Always]]
   }
   object ValidationSchema {
     

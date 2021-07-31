@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Owner extends StObject {
   
   /** The domain of the Drive item owner. */
-  var domain: js.UndefOr[Domain] = js.native
+  var domain: js.UndefOr[Domain] = js.undefined
   
   /** The drive that owns the item. */
-  var drive: js.UndefOr[DriveReference] = js.native
+  var drive: js.UndefOr[DriveReference] = js.undefined
   
   /** This field is deprecated; please use the `drive` field instead. */
-  var teamDrive: js.UndefOr[TeamDriveReference] = js.native
+  var teamDrive: js.UndefOr[TeamDriveReference] = js.undefined
   
   /** The user that owns the Drive item. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object Owner {
   

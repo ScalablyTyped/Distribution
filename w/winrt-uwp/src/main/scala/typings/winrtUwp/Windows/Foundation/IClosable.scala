@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a method to release allocated resources. */
-@js.native
 trait IClosable extends StObject {
   
   /** Releases system resources that are exposed by a Windows Runtime object. */
-  def close(): Unit = js.native
+  def close(): Unit
 }
 object IClosable {
   

@@ -2,53 +2,51 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelRequest extends StObject {
   
   /**
     * Specification of CDI inputs for this channel
     */
-  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.native
+  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.undefined
   
   /**
     * channel ID
     */
-  var ChannelId: string = js.native
+  var ChannelId: string
   
   /**
     * A list of output destinations for this channel.
     */
-  var Destinations: js.UndefOr[listOfOutputDestination] = js.native
+  var Destinations: js.UndefOr[listOfOutputDestination] = js.undefined
   
   /**
     * The encoder settings for this channel.
     */
-  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.native
+  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.undefined
   
-  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.native
+  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.undefined
   
   /**
     * Specification of network and file inputs for this channel
     */
-  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.native
+  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.undefined
   
   /**
     * The log level to write to CloudWatch Logs.
     */
-  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.native
+  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
     * The name of the channel.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel. If you do not specify this on an update call but the role was previously set that role will be removed.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
 }
 object UpdateChannelRequest {
   

@@ -2,13 +2,13 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TagPage extends IndexPage {
+trait TagPage
+  extends StObject
+     with IndexPage {
   
-  var tag: String = js.native
+  var tag: String
 }
 object TagPage {
   

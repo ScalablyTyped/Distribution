@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 import typings.winrtUwp.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents values to use when verifying a certificate chain. */
-@js.native
 trait ChainValidationParameters extends StObject {
   
   /** Gets or sets the certificate chain policy to use when verifying the certificate chain. */
-  var certificateChainPolicy: CertificateChainPolicy = js.native
+  var certificateChainPolicy: CertificateChainPolicy
   
   /** Gets or sets the server DNS name to use for SSL policy. */
-  var serverDnsName: HostName = js.native
+  var serverDnsName: HostName
 }
 object ChainValidationParameters {
   

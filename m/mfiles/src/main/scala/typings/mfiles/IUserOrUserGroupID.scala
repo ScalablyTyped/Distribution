@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFUserOrUserGroupType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserOrUserGroupID extends StObject {
   
-  def Clone(): IUserOrUserGroupID = js.native
+  def Clone(): IUserOrUserGroupID
   
-  var UserOrGroupID: Double = js.native
+  var UserOrGroupID: Double
   
-  var UserOrGroupType: MFUserOrUserGroupType = js.native
+  var UserOrGroupType: MFUserOrUserGroupType
 }
 object IUserOrUserGroupID {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVoiceConnectorGroupsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the Amazon Chime Voice Connector groups.
     */
-  var VoiceConnectorGroups: js.UndefOr[VoiceConnectorGroupList] = js.native
+  var VoiceConnectorGroups: js.UndefOr[VoiceConnectorGroupList] = js.undefined
 }
 object ListVoiceConnectorGroupsResponse {
   

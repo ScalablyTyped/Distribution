@@ -10,9 +10,9 @@ Injects a fake HTTP request/response into a node HTTP server
 | ------------------ | :-------------: |
 | Full name          | @hapi/shot |
 | Keywords           | utilities, http, debug, test |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 11127376 |
+| # downloads        | 14297698 |
 | # stars            | 0 |
 
 ## Links

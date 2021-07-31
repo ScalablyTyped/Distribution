@@ -2,27 +2,25 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service account key create request.
   */
-@js.native
 trait SchemaCreateServiceAccountKeyRequest extends StObject {
   
   /**
     * Which type of key and algorithm to use for the key. The default is
     * currently a 2K RSA key.  However this may change in the future.
     */
-  var keyAlgorithm: js.UndefOr[String] = js.native
+  var keyAlgorithm: js.UndefOr[String] = js.undefined
   
   /**
     * The output format of the private key. The default value is
     * `TYPE_GOOGLE_CREDENTIALS_FILE`, which is the Google Credentials File
     * format.
     */
-  var privateKeyType: js.UndefOr[String] = js.native
+  var privateKeyType: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateServiceAccountKeyRequest {
   

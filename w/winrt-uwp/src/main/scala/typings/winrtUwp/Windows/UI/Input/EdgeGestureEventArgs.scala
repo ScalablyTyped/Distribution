@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the type of user input that triggered the edge gesture event. */
-@js.native
 trait EdgeGestureEventArgs extends StObject {
   
   /** Gets the type of user input that triggered the edge gesture event. */
-  var kind: EdgeGestureKind = js.native
+  var kind: EdgeGestureKind
 }
 object EdgeGestureEventArgs {
   

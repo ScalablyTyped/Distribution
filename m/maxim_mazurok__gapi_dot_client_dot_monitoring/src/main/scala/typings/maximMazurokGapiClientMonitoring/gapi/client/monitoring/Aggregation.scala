@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aggregation extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Aggregation extends StObject {
     * is returned. If no per-series aligner is specified, or the aligner ALIGN_NONE is specified, then this field is ignored.The maximum value of the alignment_period is 104 weeks (2
     * years) for charts, and 90,000 seconds (25 hours) for alerting policies.
     */
-  var alignmentPeriod: js.UndefOr[String] = js.native
+  var alignmentPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * The reduction operation to be used to combine time series into a single time series, where the value of each data point in the resulting series is a function of all the already
@@ -23,7 +21,7 @@ trait Aggregation extends StObject {
     * in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be specified, and must not be ALIGN_NONE. An alignment_period
     * must also be specified; otherwise, an error is returned.
     */
-  var crossSeriesReducer: js.UndefOr[String] = js.native
+  var crossSeriesReducer: js.UndefOr[String] = js.undefined
   
   /**
     * The set of fields to preserve when cross_series_reducer is specified. The group_by_fields determine how the time series are partitioned into subsets prior to applying the
@@ -32,7 +30,7 @@ trait Aggregation extends StObject {
     * not specified in group_by_fields are aggregated away. If group_by_fields is not specified and all the time series have the same resource type, then the time series are aggregated
     * into a single output time series. If cross_series_reducer is not defined, this field is ignored.
     */
-  var groupByFields: js.UndefOr[js.Array[String]] = js.native
+  var groupByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An Aligner describes how to bring the data points in a single time series into temporal alignment. Except for ALIGN_NONE, all alignments cause all the data points in an
@@ -41,7 +39,7 @@ trait Aggregation extends StObject {
     * value_type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be
     * specified and not equal to ALIGN_NONE and alignment_period must be specified; otherwise, an error is returned.
     */
-  var perSeriesAligner: js.UndefOr[String] = js.native
+  var perSeriesAligner: js.UndefOr[String] = js.undefined
 }
 object Aggregation {
   

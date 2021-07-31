@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnpolicyListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#returnpolicyListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[js.Array[ReturnPolicy]] = js.native
+  var resources: js.UndefOr[js.Array[ReturnPolicy]] = js.undefined
 }
 object ReturnpolicyListResponse {
   

@@ -3,7 +3,6 @@ package typings.materialChips
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipConstantsMod {
@@ -15,15 +14,19 @@ object chipConstantsMod {
   object Direction extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Direction with String] = js.native
+    def apply(value: String): js.UndefOr[Direction & String] = js.native
     
     @js.native
-    sealed trait LEFT extends Direction
-    /* "left" */ val LEFT: typings.materialChips.chipConstantsMod.Direction.LEFT with String = js.native
+    sealed trait LEFT
+      extends StObject
+         with Direction
+    /* "left" */ val LEFT: typings.materialChips.chipConstantsMod.Direction.LEFT & String = js.native
     
     @js.native
-    sealed trait RIGHT extends Direction
-    /* "right" */ val RIGHT: typings.materialChips.chipConstantsMod.Direction.RIGHT with String = js.native
+    sealed trait RIGHT
+      extends StObject
+         with Direction
+    /* "right" */ val RIGHT: typings.materialChips.chipConstantsMod.Direction.RIGHT & String = js.native
   }
   
   @js.native
@@ -33,19 +36,25 @@ object chipConstantsMod {
   object EventSource extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[EventSource with String] = js.native
+    def apply(value: String): js.UndefOr[EventSource & String] = js.native
     
     @js.native
-    sealed trait NONE extends EventSource
-    /* "none" */ val NONE: typings.materialChips.chipConstantsMod.EventSource.NONE with String = js.native
+    sealed trait NONE
+      extends StObject
+         with EventSource
+    /* "none" */ val NONE: typings.materialChips.chipConstantsMod.EventSource.NONE & String = js.native
     
     @js.native
-    sealed trait PRIMARY extends EventSource
-    /* "primary" */ val PRIMARY: typings.materialChips.chipConstantsMod.EventSource.PRIMARY with String = js.native
+    sealed trait PRIMARY
+      extends StObject
+         with EventSource
+    /* "primary" */ val PRIMARY: typings.materialChips.chipConstantsMod.EventSource.PRIMARY & String = js.native
     
     @js.native
-    sealed trait TRAILING extends EventSource
-    /* "trailing" */ val TRAILING: typings.materialChips.chipConstantsMod.EventSource.TRAILING with String = js.native
+    sealed trait TRAILING
+      extends StObject
+         with EventSource
+    /* "trailing" */ val TRAILING: typings.materialChips.chipConstantsMod.EventSource.TRAILING & String = js.native
   }
   
   object cssClasses {

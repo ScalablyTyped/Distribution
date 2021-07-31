@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterBgpPeerBfd extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaRouterBgpPeerBfd extends StObject {
     * determine the interval between BFD control packets. If set, this value
     * must be between 33 and 30000. The default is 300.
     */
-  var minReceiveInterval: js.UndefOr[Double] = js.native
+  var minReceiveInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum interval, in milliseconds, between BFD packets transmitted to
@@ -30,7 +28,7 @@ trait SchemaRouterBgpPeerBfd extends StObject {
     * to determine the interval between BFD control packets. If set, this value
     * must be between 33 and 30000. The default is 300.
     */
-  var minTransmitInterval: js.UndefOr[Double] = js.native
+  var minTransmitInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The BFD session initiation mode for this BGP peer. If set to ACTIVE, the
@@ -39,14 +37,14 @@ trait SchemaRouterBgpPeerBfd extends StObject {
     * BFD session for this BGP peer. If set to DISABLED, BFD is disabled for
     * this BGP peer. The default is PASSIVE.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * The number of consecutive BFD packets that must be missed before BFD
     * declares that a peer is unavailable. If set, the value must be a value
     * between 2 and 16. The default is 3.
     */
-  var multiplier: js.UndefOr[Double] = js.native
+  var multiplier: js.UndefOr[Double] = js.undefined
   
   /**
     * The BFD packet mode for this BGP peer. If set to CONTROL_AND_ECHO, BFD
@@ -59,7 +57,7 @@ trait SchemaRouterBgpPeerBfd extends StObject {
     * is only supported on singlehop connections. The default is
     * CONTROL_AND_ECHO.
     */
-  var packetMode: js.UndefOr[String] = js.native
+  var packetMode: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum interval, in milliseconds, between BFD control packets
@@ -69,7 +67,7 @@ trait SchemaRouterBgpPeerBfd extends StObject {
     * value and the corresponding interval on the other router. If set, this
     * value must be between 1000 and 30000. The default is 5000.
     */
-  var slowTimerInterval: js.UndefOr[Double] = js.native
+  var slowTimerInterval: js.UndefOr[Double] = js.undefined
 }
 object SchemaRouterBgpPeerBfd {
   

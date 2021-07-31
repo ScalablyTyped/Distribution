@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,12 +13,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : ResolveImports = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var icssExports: js.UndefOr[Boolean] = js.native
+    var icssExports: js.UndefOr[Boolean] = js.undefined
     
-    var resolve: js.UndefOr[Resolve] = js.native
+    var resolve: js.UndefOr[Resolve] = js.undefined
   }
   object Options {
     
@@ -46,18 +44,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Resolve extends StObject {
     
-    var alias: js.UndefOr[StringDictionary[String]] = js.native
+    var alias: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var mainFile: js.UndefOr[String] = js.native
+    var mainFile: js.UndefOr[String] = js.undefined
     
-    var modules: js.UndefOr[js.Array[String]] = js.native
+    var modules: js.UndefOr[js.Array[String]] = js.undefined
     
-    var preserveSymlinks: js.UndefOr[Boolean] = js.native
+    var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
   }
   object Resolve {
     

@@ -2,20 +2,18 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request of `GenerateDownloadUrl` method.
   */
-@js.native
 trait SchemaGenerateDownloadUrlRequest extends StObject {
   
   /**
     * The optional version of function. If not set, default, current version is
     * used.
     */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object SchemaGenerateDownloadUrlRequest {
   

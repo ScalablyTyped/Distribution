@@ -2,22 +2,22 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationScalarField extends NormalizationField {
+trait NormalizationScalarField
+  extends StObject
+     with NormalizationField {
   
   // 'ScalarField';
-  val alias: js.UndefOr[String | Null] = js.native
+  val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.native
+  val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
-  val name: String = js.native
+  val name: String
   
-  val storageKey: js.UndefOr[String | Null] = js.native
+  val storageKey: js.UndefOr[String | Null] = js.undefined
 }
 object NormalizationScalarField {
   

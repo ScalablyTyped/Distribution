@@ -6,30 +6,28 @@ import typings.dockerode.dockerodeStrings.global
 import typings.dockerode.dockerodeStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:enable:interface-name */
-@js.native
 trait VolumeInspectInfo extends StObject {
   
-  var Driver: String = js.native
+  var Driver: String
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var Mountpoint: String = js.native
+  var Mountpoint: String
   
-  var Name: String = js.native
+  var Name: String
   
   // Field is always present, but sometimes is null
-  var Options: StringDictionary[String] | Null = js.native
+  var Options: StringDictionary[String] | Null
   
-  var Scope: local | global = js.native
+  var Scope: local | global
   
-  var Status: js.UndefOr[StringDictionary[String]] = js.native
+  var Status: js.UndefOr[StringDictionary[String]] = js.undefined
   
   // Field is sometimes present, and sometimes null
-  var UsageData: js.UndefOr[RefCount | Null] = js.native
+  var UsageData: js.UndefOr[RefCount | Null] = js.undefined
 }
 object VolumeInspectInfo {
   
@@ -41,7 +39,7 @@ object VolumeInspectInfo {
     Name: String,
     Scope: local | global
   ): VolumeInspectInfo = {
-    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mountpoint = Mountpoint.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mountpoint = Mountpoint.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], Options = null)
     __obj.asInstanceOf[VolumeInspectInfo]
   }
   

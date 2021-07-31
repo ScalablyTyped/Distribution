@@ -3,11 +3,11 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GRUCellLayerArgs extends SimpleRNNCellLayerArgs {
+trait GRUCellLayerArgs
+  extends StObject
+     with SimpleRNNCellLayerArgs {
   
   /**
     * Implementation mode, either 1 or 2.
@@ -22,7 +22,7 @@ trait GRUCellLayerArgs extends SimpleRNNCellLayerArgs {
     * Note: For superior performance, TensorFlow.js always uses implementation
     * 2, regardless of the actual value of this configuration field.
     */
-  var implementation: js.UndefOr[Double] = js.native
+  var implementation: js.UndefOr[Double] = js.undefined
   
   /**
     * Activation function to use for the recurrent step.
@@ -31,14 +31,14 @@ trait GRUCellLayerArgs extends SimpleRNNCellLayerArgs {
     *
     * If `null`, no activation is applied.
     */
-  var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.native
+  var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.undefined
   
   /**
     * GRU convention (whether to apply reset gate after or before matrix
     * multiplication). false = "before", true = "after" (only false is
     * supported).
     */
-  var resetAfter: js.UndefOr[Boolean] = js.native
+  var resetAfter: js.UndefOr[Boolean] = js.undefined
 }
 object GRUCellLayerArgs {
   

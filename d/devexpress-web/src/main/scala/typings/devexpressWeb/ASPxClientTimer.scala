@@ -2,41 +2,41 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxTimer object.
   */
-@js.native
-trait ASPxClientTimer extends ASPxClientControl {
+trait ASPxClientTimer
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns a value indicating whether the timer is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Gets the time before the ASPxClientTimer.Tick event is raised relative to the last occurrence of the ASPxClientTimer.Tick event.
     */
-  def GetInterval(): Double = js.native
+  def GetInterval(): Double
   
   /**
     * Enables the timer.
     * @param enabled true to turn the timer on; false, to turn the timer off.
     */
-  def SetEnabled(enabled: Boolean): Unit = js.native
+  def SetEnabled(enabled: Boolean): Unit
   
   /**
     * Specifies the time before the ASPxClientTimer.Tick event is raised relative to the last occurrence of the ASPxClientTimer.Tick event.
     * @param interval An integer value that specifies the number of milliseconds before the Tick event is raised relative to the last occurrence of the Tick event. The value cannot be less than one.
     */
-  def SetInterval(interval: Double): Unit = js.native
+  def SetInterval(interval: Double): Unit
   
   /**
     * Fires on the client side when the specified timer interval has elapsed, and the timer is enabled.
     */
-  var Tick: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimer]] = js.native
+  var Tick: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimer]]
 }
 object ASPxClientTimer {
   

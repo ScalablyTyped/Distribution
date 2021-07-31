@@ -1,10 +1,14 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
+import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.notify
+import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue
+import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus
+import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Devices.Bluetooth.GenericAttributeProfile namespace defines Windows Runtime classes that a Windows Store apps and desktop applications can use to communicate with Bluetooth LE devices. For more information, see Bluetooth. */
@@ -14,8 +18,13 @@ object GenericAttributeProfile {
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
   @js.native
   abstract class GattCharacteristic ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
   object GattCharacteristic {
+    
+    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Converts a Bluetooth SIG defined short Id to a full GATT UUID.
@@ -23,9 +32,8 @@ object GenericAttributeProfile {
       * @return The corresponding 128-bit GATT Characteristic UUID, that uniquely identifies this characteristic.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic.convertShortIdToUuid")
-    @js.native
-    def convertShortIdToUuid(shortId: Double): String = js.native
+    @scala.inline
+    def convertShortIdToUuid(shortId: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertShortIdToUuid")(shortId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Specifies the values for the GATT characteristic properties as well as the GATT Extended Characteristic Properties Descriptor. */
@@ -35,38 +43,39 @@ object GenericAttributeProfile {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties with Double
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties & Double
       ] = js.native
     
-    /* 7 */ val authenticatedSignedWrites: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.authenticatedSignedWrites with Double = js.native
+    /* 7 */ val authenticatedSignedWrites: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.authenticatedSignedWrites & Double = js.native
     
-    /* 1 */ val broadcast: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.broadcast with Double = js.native
+    /* 1 */ val broadcast: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.broadcast & Double = js.native
     
-    /* 8 */ val extendedProperties: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.extendedProperties with Double = js.native
+    /* 8 */ val extendedProperties: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.extendedProperties & Double = js.native
     
-    /* 6 */ val indicate: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.indicate with Double = js.native
+    /* 6 */ val indicate: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.indicate & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.none & Double = js.native
     
     /* 5 */ @JSName("notify")
-    val notify_ : notify with Double = js.native
+    val notify_ : notify & Double = js.native
     
-    /* 2 */ val read: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.read with Double = js.native
+    /* 2 */ val read: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.read & Double = js.native
     
-    /* 9 */ val reliableWrites: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.reliableWrites with Double = js.native
+    /* 9 */ val reliableWrites: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.reliableWrites & Double = js.native
     
-    /* 10 */ val writableAuxiliaries: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writableAuxiliaries with Double = js.native
+    /* 10 */ val writableAuxiliaries: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writableAuxiliaries & Double = js.native
     
-    /* 4 */ val write: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.write with Double = js.native
+    /* 4 */ val write: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.write & Double = js.native
     
-    /* 3 */ val writeWithoutResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writeWithoutResponse with Double = js.native
+    /* 3 */ val writeWithoutResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writeWithoutResponse & Double = js.native
   }
   
   /** Represents an enumeration of the most well known Characteristic UUID values, and provides convenience methods for working with GATT characteristic UUIDs, and static properties providing characteristic UUIDs for common GATT characteristics. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids")
   @js.native
   abstract class GattCharacteristicUuids ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids
   object GattCharacteristicUuids {
     
     @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids")
@@ -732,15 +741,15 @@ object GenericAttributeProfile {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue with Double
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue & Double
       ] = js.native
     
-    /* 2 */ val indicate: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.indicate with Double = js.native
+    /* 2 */ val indicate: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.indicate & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.none & Double = js.native
     
     /* 1 */ @JSName("notify")
-    val notify_ : typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.notify with Double = js.native
+    val notify_ : typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue.notify & Double = js.native
   }
   
   /** Represents the return status of a WinRT GATT API related Async operation. */
@@ -750,20 +759,25 @@ object GenericAttributeProfile {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus with Double
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus & Double
       ] = js.native
     
-    /* 0 */ val success: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus.success with Double = js.native
+    /* 0 */ val success: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus.success & Double = js.native
     
-    /* 1 */ val unreachable: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus.unreachable with Double = js.native
+    /* 1 */ val unreachable: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus.unreachable & Double = js.native
   }
   
   /** Represents a Descriptor of a GATT Characteristic. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor")
   @js.native
   abstract class GattDescriptor ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor
   object GattDescriptor {
+    
+    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Converts a Bluetooth SIG defined short Id to a full GATT UUID.
@@ -771,16 +785,16 @@ object GenericAttributeProfile {
       * @return The corresponding 128-bit GATT Descriptor UUID, that uniquely identifies this descriptor.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor.convertShortIdToUuid")
-    @js.native
-    def convertShortIdToUuid(shortId: Double): String = js.native
+    @scala.inline
+    def convertShortIdToUuid(shortId: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertShortIdToUuid")(shortId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents an enumeration of the most well known Descriptor UUID values, and provides convenience methods for working with GATT descriptor UUIDs, and static properties providing descriptor UUIDs for common GATT descriptors. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids")
   @js.native
   abstract class GattDescriptorUuids ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids
   object GattDescriptorUuids {
     
     @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids")
@@ -840,8 +854,78 @@ object GenericAttributeProfile {
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
   @js.native
   abstract class GattDeviceService ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService {
+    
+    /** Gets the handle used to uniquely identify GATT-based service attributes as declared on the Bluetooth LE device. */
+    /* CompleteClass */
+    var attributeHandle: Double = js.native
+    
+    /** Releases the resources associated with the GattDeviceService class. This allows other apps to access the resources of the GattDeviceService in question. A GattDeviceService object should not be used after Close is invoked, instead a new GattDeviceService object should be instantiated using the FromIdAsync method. */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /** Gets the BluetoothLEDevice object describing the device associated with the current GattDeviceService object. */
+    /* CompleteClass */
+    var device: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice = js.native
+    
+    /** Get the string that represents the GATT service instance path used to instantiate the GattDeviceService. */
+    /* CompleteClass */
+    var deviceId: String = js.native
+    
+    /**
+      * Gets the collection of all characteristics belonging to this GattDeviceService instance.
+      * @return The collection of all characteristics belonging to this GattDeviceService instance.
+      */
+    /* CompleteClass */
+    override def getAllCharacteristics(): IVectorView[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
+      ] = js.native
+    
+    /**
+      * Gets the collection of all included services belonging to this GattDeviceService instance.
+      * @return The collection of all included services belonging to this GattDeviceService instance.
+      */
+    /* CompleteClass */
+    override def getAllIncludedServices(): IVectorView[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
+      ] = js.native
+    
+    /**
+      * Returns a vector of characteristics, that are identified by the specified UUID and belong to this GattDeviceService instance.
+      * @param characteristicUuid The UUID for the characteristics to be retrieved.
+      * @return A vector of GattCharacteristic objects whose UUIDs match characteristicUuid.
+      */
+    /* CompleteClass */
+    override def getCharacteristics(characteristicUuid: String): IVectorView[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
+      ] = js.native
+    
+    /**
+      * Returns a vector of included services, that are identified by the specified UUID and belong to this GattDeviceService instance.
+      * @param serviceUuid The UUID for the included services to be retrieved.
+      * @return A vector of included services whose UUIDs match serviceUuid.
+      */
+    /* CompleteClass */
+    override def getIncludedServices(serviceUuid: String): IVectorView[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
+      ] = js.native
+    
+    /** Gets the read-only list of parent services for this service. */
+    /* CompleteClass */
+    var parentServices: IVectorView[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
+      ] = js.native
+    
+    /** The GATT Service UUID associated with this GattDeviceService. */
+    /* CompleteClass */
+    var uuid: String = js.native
+  }
   object GattDeviceService {
+    
+    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Converts a Bluetooth SIG defined short Id to a full GATT UUID.
@@ -849,9 +933,8 @@ object GenericAttributeProfile {
       * @return The corresponding 128-bit GATT Service UUID, that uniquely identifies this service.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService.convertShortIdToUuid")
-    @js.native
-    def convertShortIdToUuid(shortId: Double): String = js.native
+    @scala.inline
+    def convertShortIdToUuid(shortId: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertShortIdToUuid")(shortId.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Instantiates a new GattDeviceService from the device ID.
@@ -859,11 +942,12 @@ object GenericAttributeProfile {
       * @return The object for managing the asynchronous operation, which, upon completion, returns the newly instantiated GattDeviceService.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService.fromIdAsync")
-    @js.native
+    @scala.inline
     def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[
         typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
+      ]]
     
     /**
       * Creates a suitable AQS Filter string for use with the CreateWatcher method, from a 16-bit Bluetooth GATT Service UUID.
@@ -871,9 +955,8 @@ object GenericAttributeProfile {
       * @return A suitable AQS Selector String which can be passed as a parameter to the CreateWatcher method, in order to retrieve a GATT service instance path
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService.getDeviceSelectorFromShortId")
-    @js.native
-    def getDeviceSelectorFromShortId(serviceShortId: Double): String = js.native
+    @scala.inline
+    def getDeviceSelectorFromShortId(serviceShortId: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromShortId")(serviceShortId.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Creates a suitable AQS Filter string for use with the CreateWatcher method, from a Bluetooth service UUID.
@@ -881,16 +964,37 @@ object GenericAttributeProfile {
       * @return A suitable AQS Selector String which can be passed as a parameter to the CreateWatcher method, in order to retrieve a GATT service instance path.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService.getDeviceSelectorFromUuid")
-    @js.native
-    def getDeviceSelectorFromUuid(serviceUuid: String): String = js.native
+    @scala.inline
+    def getDeviceSelectorFromUuid(serviceUuid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromUuid")(serviceUuid.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents the value of a single Presentation Format GATT Descriptor. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
   @js.native
   abstract class GattPresentationFormat ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat {
+    
+    /** Gets the Description of the GattPresentationFormat object. */
+    /* CompleteClass */
+    var description: Double = js.native
+    
+    /** Gets the Exponent of the GattPresentationFormat object. */
+    /* CompleteClass */
+    var exponent: Double = js.native
+    
+    /** Gets the Format Type of the GattPresentationFormat object. */
+    /* CompleteClass */
+    var formatType: Double = js.native
+    
+    /** Gets the Namespace of the GattPresentationFormat object. */
+    /* CompleteClass */
+    var namespace: Double = js.native
+    
+    /** Gets the Unit of the GattPresentationFormat object. */
+    /* CompleteClass */
+    var unit: Double = js.native
+  }
   object GattPresentationFormat {
     
     @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
@@ -910,7 +1014,8 @@ object GenericAttributeProfile {
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes")
   @js.native
   abstract class GattPresentationFormatTypes ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes
   object GattPresentationFormatTypes {
     
     @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes")
@@ -1144,42 +1249,83 @@ object GenericAttributeProfile {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel with Double
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel & Double
       ] = js.native
     
-    /* 1 */ val authenticationRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.authenticationRequired with Double = js.native
+    /* 1 */ val authenticationRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.authenticationRequired & Double = js.native
     
-    /* 3 */ val encryptionAndAuthenticationRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionAndAuthenticationRequired with Double = js.native
+    /* 3 */ val encryptionAndAuthenticationRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionAndAuthenticationRequired & Double = js.native
     
-    /* 2 */ val encryptionRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionRequired with Double = js.native
+    /* 2 */ val encryptionRequired: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionRequired & Double = js.native
     
-    /* 0 */ val plain: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.plain with Double = js.native
+    /* 0 */ val plain: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.plain & Double = js.native
   }
   
   /** Represents the result of reading a GATT Client CharacteristicConfigurationClientDescriptor value. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult")
   @js.native
   abstract class GattReadClientCharacteristicConfigurationDescriptorResult ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult {
+    
+    /** Gets the result of an asynchronous read operation. */
+    /* CompleteClass */
+    var clientCharacteristicConfigurationDescriptor: GattClientCharacteristicConfigurationDescriptorValue = js.native
+    
+    /** Gets the status of an asynchronous operation. */
+    /* CompleteClass */
+    var status: GattCommunicationStatus = js.native
+  }
   
   /** Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult")
   @js.native
   abstract class GattReadResult ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult {
+    
+    /** Gets the status of an asynchronous operation. */
+    /* CompleteClass */
+    var status: GattCommunicationStatus = js.native
+    
+    /** Gets the value read from the device. */
+    /* CompleteClass */
+    var value: IBuffer = js.native
+  }
   
   /** Performs GATT reliable writes on the Bluetooth LE device, in the form of a transaction write operation. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction")
   @js.native
   /** Creates a new GattReliableWriteTransaction object. */
   class GattReliableWriteTransaction ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction {
+    
+    /**
+      * Performs all the queued writes, in sequence, writing the data to the device. Once a transaction object has been committed, no further operations are possible on the GattReliableWriteTransaction object.
+      * @return The object used to manage the asynchronous operation, which, upon completion, will return the status of the asynchronous operation.
+      */
+    /* CompleteClass */
+    override def commitAsync(): IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
+    
+    /**
+      * Adds a new write operation to the transaction object.
+      * @param characteristic The GattCharacteristic object on which to perform the write operation.
+      * @param value The Characteristic Value to be written to characteristic.
+      */
+    /* CompleteClass */
+    override def writeValue(
+      characteristic: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic,
+      value: IBuffer
+    ): Unit = js.native
+  }
   
   /** Represents an enumeration of the most well known Service UUID values, and provides convenience methods for working with GATT service UUIDs, and static properties providing service UUIDs for common GATT services. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids")
   @js.native
   abstract class GattServiceUuids ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids
   object GattServiceUuids {
     
     @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids")
@@ -1367,7 +1513,17 @@ object GenericAttributeProfile {
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs")
   @js.native
   abstract class GattValueChangedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs {
+    
+    /** Gets the new Characteristic Value. */
+    /* CompleteClass */
+    var characteristicValue: IBuffer = js.native
+    
+    /** Gets the time at which the system was notified of the Characteristic Value change. */
+    /* CompleteClass */
+    var timestamp: Date = js.native
+  }
   
   /** Indicates what type of write operation is to be performed. */
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption")
@@ -1376,11 +1532,11 @@ object GenericAttributeProfile {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption with Double
+        typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption & Double
       ] = js.native
     
-    /* 0 */ val writeWithResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption.writeWithResponse with Double = js.native
+    /* 0 */ val writeWithResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption.writeWithResponse & Double = js.native
     
-    /* 1 */ val writeWithoutResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption.writeWithoutResponse with Double = js.native
+    /* 1 */ val writeWithoutResponse: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption.writeWithoutResponse & Double = js.native
   }
 }

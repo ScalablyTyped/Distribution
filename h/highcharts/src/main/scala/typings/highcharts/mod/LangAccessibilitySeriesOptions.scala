@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilitySeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) User supplied description text.
     * This is added in the point comment description by default if present.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Description for the value of
     * null points.
     */
-  var nullPointValue: js.UndefOr[String] = js.native
+  var nullPointValue: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Description for annotations on a
     * point, as it is made available to assistive technology.
     */
-  var pointAnnotationsDescription: js.UndefOr[String] = js.native
+  var pointAnnotationsDescription: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Lang configuration for the
@@ -37,19 +35,19 @@ trait LangAccessibilitySeriesOptions extends StObject {
     * If a definition does not exist for the specific series type and mode, the
     * 'default' lang definitions are used.
     */
-  var summary: js.UndefOr[LangAccessibilitySeriesSummaryOptions] = js.native
+  var summary: js.UndefOr[LangAccessibilitySeriesSummaryOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) xAxis description for series if
     * there are multiple xAxes in the chart.
     */
-  var xAxisDescription: js.UndefOr[String] = js.native
+  var xAxisDescription: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) yAxis description for series if
     * there are multiple yAxes in the chart.
     */
-  var yAxisDescription: js.UndefOr[String] = js.native
+  var yAxisDescription: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilitySeriesOptions {
   

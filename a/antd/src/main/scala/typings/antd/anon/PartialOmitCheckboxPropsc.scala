@@ -11,48 +11,46 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<antd.antd/lib/checkbox.CheckboxProps, 'checked' | 'defaultChecked'>> */
-@js.native
 trait PartialOmitCheckboxPropsc extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ CheckboxChangeEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ CheckboxChangeEvent, Unit]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object PartialOmitCheckboxPropsc {
   

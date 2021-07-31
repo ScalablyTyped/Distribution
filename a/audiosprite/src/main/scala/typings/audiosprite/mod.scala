@@ -5,21 +5,22 @@ import typings.audiosprite.anon.End
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("audiosprite", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[String], callback: js.Function2[/* error */ Error, /* obj */ Result, Unit]): Unit = js.native
-  @JSImport("audiosprite", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(files: js.Array[String], callback: js.Function2[/* error */ Error, /* obj */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     files: js.Array[String],
     option: Option,
     callback: js.Function2[/* error */ Error, /* obj */ Result, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("audiosprite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.audiosprite.audiospriteNumbers.`1`
@@ -69,14 +70,13 @@ object mod {
     def warning: typings.audiosprite.audiospriteStrings.warning = "warning".asInstanceOf[typings.audiosprite.audiospriteStrings.warning]
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var info: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var info: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   }
   object Logger {
     
@@ -109,43 +109,42 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var autoplay: js.UndefOr[String | Null] = js.native
+    var autoplay: js.UndefOr[String | Null] = js.undefined
     
-    var bitrate: js.UndefOr[Double] = js.native
+    var bitrate: js.UndefOr[Double] = js.undefined
     
-    var channels: js.UndefOr[Channels] = js.native
+    var channels: js.UndefOr[Channels] = js.undefined
     
-    var export: js.UndefOr[String] = js.native
+    var `export`: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[ExportType] = js.native
+    var format: js.UndefOr[ExportType] = js.undefined
     
-    var gap: js.UndefOr[Double] = js.native
+    var gap: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[LogLevel] = js.native
+    var log: js.UndefOr[LogLevel] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var loop: js.UndefOr[js.Array[String]] = js.native
+    var loop: js.UndefOr[js.Array[String]] = js.undefined
     
-    var minlength: js.UndefOr[Double] = js.native
+    var minlength: js.UndefOr[Double] = js.undefined
     
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var rawparts: js.UndefOr[String] = js.native
+    var rawparts: js.UndefOr[String] = js.undefined
     
-    var samplerate: js.UndefOr[Double] = js.native
+    var samplerate: js.UndefOr[Double] = js.undefined
     
-    var silence: js.UndefOr[Double] = js.native
+    var silence: js.UndefOr[Double] = js.undefined
     
-    var vbr: js.UndefOr[VBR] = js.native
+    var vbr: js.UndefOr[VBR] = js.undefined
     
     @JSName("vbr:vorbis")
-    var vbrColonvorbis: js.UndefOr[VBRVorbis] = js.native
+    var vbrColonvorbis: js.UndefOr[VBRVorbis] = js.undefined
   }
   object Option {
     
@@ -271,14 +270,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var autoplay: js.UndefOr[String] = js.native
+    var autoplay: js.UndefOr[String] = js.undefined
     
-    var resources: js.Array[String] = js.native
+    var resources: js.Array[String]
     
-    var spritemap: StringDictionary[End] = js.native
+    var spritemap: StringDictionary[End]
   }
   object Result {
     

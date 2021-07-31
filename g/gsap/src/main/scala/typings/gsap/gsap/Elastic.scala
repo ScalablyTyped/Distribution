@@ -2,13 +2,13 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Elastic extends Ease {
+trait Elastic
+  extends StObject
+     with Ease {
   
-  def config(amplitude: Double, period: Double): Elastic = js.native
+  def config(amplitude: Double, period: Double): Elastic
 }
 object Elastic {
   

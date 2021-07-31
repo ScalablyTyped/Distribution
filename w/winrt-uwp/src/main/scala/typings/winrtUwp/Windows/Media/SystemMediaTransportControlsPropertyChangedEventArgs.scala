@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Occurs when a property is changed on the SystemMediaTransportControls . */
-@js.native
 trait SystemMediaTransportControlsPropertyChangedEventArgs extends StObject {
   
   /** The property that was changed on the SystemMediaTransportControls . */
-  var property: SystemMediaTransportControlsProperty = js.native
+  var property: SystemMediaTransportControlsProperty
 }
 object SystemMediaTransportControlsPropertyChangedEventArgs {
   

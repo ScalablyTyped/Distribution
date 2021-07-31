@@ -2,20 +2,18 @@ package typings.naverWhale.whale.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectInfo extends StObject {
   
   /**
     * Open a port to a specific frame identified by frameId instead of all frames in the tab.
     * @since Chrome 41.
     */
-  var frameId: js.UndefOr[Double] = js.native
+  var frameId: js.UndefOr[Double] = js.undefined
   
   /** Optional. Will be passed into onConnect for content scripts that are listening for the connection event. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ConnectInfo {
   

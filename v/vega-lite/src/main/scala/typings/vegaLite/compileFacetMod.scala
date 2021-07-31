@@ -16,10 +16,13 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compileFacetMod {
+  
+  @JSImport("vega-lite/build/src/compile/facet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/facet", "FacetModel")
   @js.native
@@ -42,7 +45,7 @@ object compileFacetMod {
     
     var facetSortOrder: js.Any = js.native
     
-    def fieldDef(channel: ExtendedChannel): TypedFieldDef[String, _, Boolean | BinParams | binned | Null] = js.native
+    def fieldDef(channel: ExtendedChannel): TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null] = js.native
     
     /**
       * Aggregate cardinality for calculating size
@@ -56,14 +59,12 @@ object compileFacetMod {
     var initFacetFieldDef: js.Any = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/facet", "facetSortFieldName")
-  @js.native
-  def facetSortFieldName(fieldDef: FacetFieldDef[String, ExprRef | SignalRef], sort: EncodingSortField[String]): String = js.native
-  @JSImport("vega-lite/build/src/compile/facet", "facetSortFieldName")
-  @js.native
+  @scala.inline
+  def facetSortFieldName(fieldDef: FacetFieldDef[String, ExprRef | SignalRef], sort: EncodingSortField[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("facetSortFieldName")(fieldDef.asInstanceOf[js.Any], sort.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def facetSortFieldName(
     fieldDef: FacetFieldDef[String, ExprRef | SignalRef],
     sort: EncodingSortField[String],
     opt: FieldRefOption
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("facetSortFieldName")(fieldDef.asInstanceOf[js.Any], sort.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
 }

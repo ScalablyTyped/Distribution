@@ -12,7 +12,7 @@ Date add-ons for Node.js
 | Keywords           | date, utils, date-utils, time |
 | # releases         | 0 |
 | # dependents       | 124 |
-| # downloads        | 12194938 |
+| # downloads        | 17749966 |
 | # stars            | 23 |
 
 ## Links

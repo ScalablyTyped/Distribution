@@ -5,30 +5,25 @@ import typings.jestTypes.circusMod.SyncEvent
 import typings.jestTypes.jestTypesStrings.start_describe_definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncError extends SyncEvent {
+trait AsyncError
+  extends StObject
+     with SyncEvent {
   
-  var asyncError: typings.std.Error = js.native
+  var asyncError: typings.std.Error
   
-  var blockName: typings.jestTypes.circusMod.BlockName = js.native
+  var blockName: typings.jestTypes.circusMod.BlockName
   
-  var mode: BlockMode = js.native
+  var mode: BlockMode
   
-  var name: start_describe_definition = js.native
+  var name: start_describe_definition
 }
 object AsyncError {
   
   @scala.inline
-  def apply(
-    asyncError: typings.std.Error,
-    blockName: typings.jestTypes.circusMod.BlockName,
-    mode: BlockMode,
-    name: start_describe_definition
-  ): AsyncError = {
-    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(asyncError: typings.std.Error, blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): AsyncError = {
+    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "start_describe_definition")
     __obj.asInstanceOf[AsyncError]
   }
   

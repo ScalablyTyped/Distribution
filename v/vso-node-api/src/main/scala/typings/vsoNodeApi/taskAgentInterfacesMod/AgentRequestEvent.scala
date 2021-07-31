@@ -3,23 +3,21 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentRequestEvent extends StObject {
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var planId: String = js.native
+  var planId: String
   
-  var poolId: Double = js.native
+  var poolId: Double
   
-  var reservedAgentId: Double = js.native
+  var reservedAgentId: Double
   
-  var result: TaskResult = js.native
+  var result: TaskResult
   
-  var timeStamp: Date = js.native
+  var timeStamp: Date
 }
 object AgentRequestEvent {
   

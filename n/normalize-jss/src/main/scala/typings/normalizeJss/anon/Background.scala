@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: String = js.native
+  var background: String
   
-  var textDecorationSkip: String = js.native
+  var textDecorationSkip: String
 }
 object Background {
   

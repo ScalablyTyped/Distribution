@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerEditable extends StObject {
   
-  var confirmation: js.UndefOr[Boolean | String] = js.native
+  var confirmation: js.UndefOr[Boolean | String] = js.undefined
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
   
-  var destroy: js.UndefOr[Boolean] = js.native
+  var destroy: js.UndefOr[Boolean] = js.undefined
   
-  var editRecurringMode: js.UndefOr[String] = js.native
+  var editRecurringMode: js.UndefOr[String] = js.undefined
   
-  var move: js.UndefOr[Boolean] = js.native
+  var move: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object SchedulerEditable {
   

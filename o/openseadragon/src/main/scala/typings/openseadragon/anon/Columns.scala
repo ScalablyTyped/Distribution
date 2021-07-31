@@ -4,23 +4,21 @@ import typings.openseadragon.openseadragonStrings.horizontal
 import typings.openseadragon.openseadragonStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var immediately: js.UndefOr[Boolean] = js.native
+  var immediately: js.UndefOr[Boolean] = js.undefined
   
-  var layout: js.UndefOr[horizontal | vertical] = js.native
+  var layout: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var tileMargin: js.UndefOr[Double] = js.native
+  var tileMargin: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
 }
 object Columns {
   

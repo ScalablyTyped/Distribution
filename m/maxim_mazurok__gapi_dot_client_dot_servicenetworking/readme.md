@@ -10,9 +10,9 @@ TypeScript typings for Service Networking API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicenetworking |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 42 |
 | # dependents       | 1 |
-| # downloads        | 160 |
+| # downloads        | 2942 |
 | # stars            | 0 |
 
 ## Links

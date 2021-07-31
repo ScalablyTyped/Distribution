@@ -4,7 +4,6 @@ import typings.reactVirtualized.anon.Disabled
 import typings.reactVirtualized.esArrowKeyStepperMod.ArrowKeyStepperProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowKeyStepperMod {

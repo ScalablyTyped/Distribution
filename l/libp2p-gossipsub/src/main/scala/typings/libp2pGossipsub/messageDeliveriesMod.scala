@@ -4,7 +4,6 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageDeliveriesMod {
@@ -16,35 +15,43 @@ object messageDeliveriesMod {
   object DeliveryRecordStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DeliveryRecordStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[DeliveryRecordStatus & Double] = js.native
     
     /**
       * we were instructed by the validator to ignore the message
       */
     @js.native
-    sealed trait ignored extends DeliveryRecordStatus
-    /* 3 */ val ignored: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.ignored with Double = js.native
+    sealed trait ignored
+      extends StObject
+         with DeliveryRecordStatus
+    /* 3 */ val ignored: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.ignored & Double = js.native
     
     /**
       * we know the message is invalid
       */
     @js.native
-    sealed trait invalid extends DeliveryRecordStatus
-    /* 2 */ val invalid: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.invalid with Double = js.native
+    sealed trait invalid
+      extends StObject
+         with DeliveryRecordStatus
+    /* 2 */ val invalid: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.invalid & Double = js.native
     
     /**
       * we don't know (yet) if the message is valid
       */
     @js.native
-    sealed trait unknown extends DeliveryRecordStatus
-    /* 0 */ val unknown: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.unknown with Double = js.native
+    sealed trait unknown
+      extends StObject
+         with DeliveryRecordStatus
+    /* 0 */ val unknown: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.unknown & Double = js.native
     
     /**
       * we know the message is valid
       */
     @js.native
-    sealed trait valid extends DeliveryRecordStatus
-    /* 1 */ val valid: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.valid with Double = js.native
+    sealed trait valid
+      extends StObject
+         with DeliveryRecordStatus
+    /* 1 */ val valid: typings.libp2pGossipsub.messageDeliveriesMod.DeliveryRecordStatus.valid & Double = js.native
   }
   
   @JSImport("libp2p-gossipsub/src/score/message-deliveries", "MessageDeliveries")
@@ -62,16 +69,15 @@ object messageDeliveriesMod {
     var records: js.Any = js.native
   }
   
-  @js.native
   trait DeliveryRecord extends StObject {
     
-    var firstSeen: Double = js.native
+    var firstSeen: Double
     
-    var peers: Set[String] = js.native
+    var peers: Set[String]
     
-    var status: DeliveryRecordStatus = js.native
+    var status: DeliveryRecordStatus
     
-    var validated: Double = js.native
+    var validated: Double
   }
   object DeliveryRecord {
     

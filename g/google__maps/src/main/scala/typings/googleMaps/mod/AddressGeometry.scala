@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressGeometry extends StObject {
   
   /**
@@ -14,20 +12,20 @@ trait AddressGeometry extends StObject {
     * (For example, San Francisco includes the [Farallon islands](https://en.wikipedia.org/wiki/Farallon_Islands),
     * which are technically part of the city, but probably should not be returned in the viewport.)
     */
-  var bounds: LatLngBounds = js.native
+  var bounds: LatLngBounds
   
   /** contains the geocoded latitude, longitude value. For normal address lookups, this field is typically the most important. */
-  var location: LatLngLiteral = js.native
+  var location: LatLngLiteral
   
   /** stores additional data about the specified location. */
-  var location_type: LocationType = js.native
+  var location_type: LocationType
   
   /**
     * contains the recommended viewport for displaying the returned result, specified as two latitude, longitude values
     * defining the `southwest` and `northeast` corner of the viewport bounding box.
     * Generally the viewport is used to frame a result when displaying it to a user.
     */
-  var viewport: LatLngBounds = js.native
+  var viewport: LatLngBounds
 }
 object AddressGeometry {
   

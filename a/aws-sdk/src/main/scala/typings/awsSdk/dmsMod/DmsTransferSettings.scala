@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DmsTransferSettings extends StObject {
   
   /**
     *  The name of the S3 bucket to use. 
     */
-  var BucketName: js.UndefOr[String] = js.native
+  var BucketName: js.UndefOr[String] = js.undefined
   
   /**
     *  The IAM role that has permission to access the Amazon S3 bucket. 
     */
-  var ServiceAccessRoleArn: js.UndefOr[String] = js.native
+  var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
 }
 object DmsTransferSettings {
   

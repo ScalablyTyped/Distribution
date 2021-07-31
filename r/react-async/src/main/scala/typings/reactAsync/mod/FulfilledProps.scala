@@ -3,15 +3,13 @@ package typings.reactAsync.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FulfilledProps[T] extends StObject {
   
-  var children: js.UndefOr[FulfilledChildren[T]] = js.native
+  var children: js.UndefOr[FulfilledChildren[T]] = js.undefined
   
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
 }
 object FulfilledProps {
   
@@ -22,7 +20,7 @@ object FulfilledProps {
   }
   
   @scala.inline
-  implicit class FulfilledPropsMutableBuilder[Self <: FulfilledProps[_], T] (val x: Self with FulfilledProps[T]) extends AnyVal {
+  implicit class FulfilledPropsMutableBuilder[Self <: FulfilledProps[?], T] (val x: Self & FulfilledProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: FulfilledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

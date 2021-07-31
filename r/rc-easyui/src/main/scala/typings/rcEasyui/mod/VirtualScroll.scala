@@ -3,7 +3,6 @@ package typings.rcEasyui.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "VirtualScroll")
@@ -54,9 +53,12 @@ object VirtualScroll {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.contextTypes.locale
       @JSImport("rc-easyui", "VirtualScroll.contextTypes.locale.isRequired")
@@ -66,9 +68,12 @@ object VirtualScroll {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.contextTypes.t
       @JSImport("rc-easyui", "VirtualScroll.contextTypes.t.isRequired")
@@ -79,9 +84,17 @@ object VirtualScroll {
   
   object defaultProps {
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("rc-easyui", "VirtualScroll.defaultProps.data")
     @js.native
     val data: js.Array[js.Any] = js.native
+    
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.lazy")
+    @js.native
+    val `lazy`: Boolean = js.native
     
     @JSImport("rc-easyui", "VirtualScroll.defaultProps.maxDivHeight")
     @js.native
@@ -91,17 +104,14 @@ object VirtualScroll {
     @js.native
     val maxVisibleHeight: Double = js.native
     
-    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onBodyScroll")
-    @js.native
-    def onBodyScroll(e: js.Any): Unit = js.native
+    @scala.inline
+    def onBodyScroll(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBodyScroll")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onPageChange")
-    @js.native
-    def onPageChange(e: js.Any): Unit = js.native
+    @scala.inline
+    def onPageChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onUpdate")
-    @js.native
-    def onUpdate(e: js.Any): Unit = js.native
+    @scala.inline
+    def onUpdate(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUpdate")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "VirtualScroll.defaultProps.pageNumber")
     @js.native
@@ -118,19 +128,18 @@ object VirtualScroll {
     @JSImport("rc-easyui", "VirtualScroll.defaultProps.total")
     @js.native
     val total: Double = js.native
-    
-    @JSImport("rc-easyui", "VirtualScroll.defaultProps.lazy")
-    @js.native
-    val `lazy`: Boolean = js.native
   }
   
   object propTypes {
     
     object data {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.data")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.data
       @JSImport("rc-easyui", "VirtualScroll.propTypes.data.isRequired")
@@ -138,11 +147,29 @@ object VirtualScroll {
       val isRequired: js.Any = js.native
     }
     
+    object `lazy` {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      // Circular reference from rc_easyui.VirtualScroll.propTypes.lazy
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
     object maxDivHeight {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "VirtualScroll.propTypes.maxDivHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.maxDivHeight
       @JSImport("rc-easyui", "VirtualScroll.propTypes.maxDivHeight.isRequired")
@@ -152,9 +179,12 @@ object VirtualScroll {
     
     object maxVisibleHeight {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.maxVisibleHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.maxVisibleHeight
       @JSImport("rc-easyui", "VirtualScroll.propTypes.maxVisibleHeight.isRequired")
@@ -164,9 +194,12 @@ object VirtualScroll {
     
     object onPageChange {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.onPageChange")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.onPageChange
       @JSImport("rc-easyui", "VirtualScroll.propTypes.onPageChange.isRequired")
@@ -176,9 +209,12 @@ object VirtualScroll {
     
     object onUpdate {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.onUpdate")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.onUpdate
       @JSImport("rc-easyui", "VirtualScroll.propTypes.onUpdate.isRequired")
@@ -188,9 +224,12 @@ object VirtualScroll {
     
     object pageNumber {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.pageNumber")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.pageNumber
       @JSImport("rc-easyui", "VirtualScroll.propTypes.pageNumber.isRequired")
@@ -200,9 +239,12 @@ object VirtualScroll {
     
     object pageSize {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.pageSize")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.pageSize
       @JSImport("rc-easyui", "VirtualScroll.propTypes.pageSize.isRequired")
@@ -212,9 +254,12 @@ object VirtualScroll {
     
     object renderItem {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItem")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.renderItem
       @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItem.isRequired")
@@ -224,9 +269,12 @@ object VirtualScroll {
     
     object renderItems {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItems")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.renderItems
       @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItems.isRequired")
@@ -236,9 +284,12 @@ object VirtualScroll {
     
     object reset {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.reset")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.reset
       @JSImport("rc-easyui", "VirtualScroll.propTypes.reset.isRequired")
@@ -248,9 +299,12 @@ object VirtualScroll {
     
     object rowHeight {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.rowHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.rowHeight
       @JSImport("rc-easyui", "VirtualScroll.propTypes.rowHeight.isRequired")
@@ -260,24 +314,15 @@ object VirtualScroll {
     
     object total {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "VirtualScroll.propTypes.total")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.total
       @JSImport("rc-easyui", "VirtualScroll.propTypes.total.isRequired")
-      @js.native
-      val isRequired: js.Any = js.native
-    }
-    
-    object `lazy` {
-      
-      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy")
-      @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.VirtualScroll.propTypes.lazy
-      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy.isRequired")
       @js.native
       val isRequired: js.Any = js.native
     }

@@ -3,7 +3,6 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYRESOURAlloy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * until it is landed. Incoming nuke cannot be moved or cancelled. Nukes cannot
   * be launched from or to novice rooms.
   */
-@js.native
 trait StructureNuker
-  extends OwnedStructure[STRUCTURE_NUKER]
+  extends StObject
+     with OwnedStructure[STRUCTURE_NUKER]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
@@ -23,42 +22,42 @@ trait StructureNuker
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */
-  var cooldown: Double = js.native
+  var cooldown: Double
   
   /**
     * The amount of energy contained in this structure.
     * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
-  var energy: Double = js.native
+  var energy: Double
   
   /**
     * The total amount of energy this structure can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
-  var energyCapacity: Double = js.native
+  var energyCapacity: Double
   
   /**
     * The amount of energy contained in this structure.
     * @deprecated An alias for .store[RESOURCE_GHODIUM].
     */
-  var ghodium: Double = js.native
+  var ghodium: Double
   
   /**
     * The total amount of energy this structure can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_GHODIUM).
     */
-  var ghodiumCapacity: Double = js.native
+  var ghodiumCapacity: Double
   
   /**
     * Launch a nuke to the specified position.
     * @param pos The target room position.
     */
-  def launchNuke(pos: RoomPosition): ScreepsReturnCode = js.native
+  def launchNuke(pos: RoomPosition): ScreepsReturnCode
   
   /**
     * A Store object that contains cargo of this structure.
     */
-  var store: StoreRESOURCEENERGYRESOURAlloy = js.native
+  var store: StoreRESOURCEENERGYRESOURAlloy
 }
 object StructureNuker {
   

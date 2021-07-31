@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationGetSessionOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait AuthenticationGetSessionOptions extends StObject {
     *
     * Defaults to false.
     */
-  var clearSessionPreference: js.UndefOr[Boolean] = js.native
+  var clearSessionPreference: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether login should be performed if there is no matching session.
@@ -28,7 +26,7 @@ trait AuthenticationGetSessionOptions extends StObject {
     *
     * Defaults to false.
     */
-  var createIfNone: js.UndefOr[Boolean] = js.native
+  var createIfNone: js.UndefOr[Boolean] = js.undefined
 }
 object AuthenticationGetSessionOptions {
   

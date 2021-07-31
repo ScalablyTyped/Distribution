@@ -1,13 +1,18 @@
 package typings.tabris.mod
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
+import typings.tabris.Crypto
+import typings.tabris.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* was `typeof Crypto` */
 @JSImport("tabris", "Crypto")
 @js.native
-object Crypto_
-  extends TopLevel[Instantiable0[typings.tabris.Crypto_]]
-
+class Crypto_ ()
+  extends StObject
+     with Crypto {
+  
+  /* CompleteClass */
+  override def getRandomValues(typedArray: TypedArray): TypedArray = js.native
+}

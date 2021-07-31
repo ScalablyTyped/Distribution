@@ -4,33 +4,31 @@ import typings.ionic.ionicStrings.landscape
 import typings.ionic.ionicStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageResource extends StObject {
   
-  var density: js.UndefOr[String] = js.native
+  var density: js.UndefOr[String] = js.undefined
   
-  var dest: String = js.native
+  var dest: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var imageId: js.UndefOr[String] = js.native
+  var imageId: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var nodeAttributes: js.Array[String] = js.native
+  var nodeAttributes: js.Array[String]
   
-  var nodeName: String = js.native
+  var nodeName: String
   
-  var orientation: js.UndefOr[landscape | portrait] = js.native
+  var orientation: js.UndefOr[landscape | portrait] = js.undefined
   
-  var platform: String = js.native
+  var platform: String
   
-  var resType: String = js.native
+  var resType: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object ImageResource {
   

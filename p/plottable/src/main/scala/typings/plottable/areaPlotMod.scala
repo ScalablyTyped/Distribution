@@ -8,7 +8,6 @@ import typings.plottable.linePlotMod.Line
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object areaPlotMod {
@@ -26,7 +25,7 @@ object areaPlotMod {
     
     var _constantBaselineValueProvider: js.Any = js.native
     
-    /* protected */ def _constructAreaProjector(xProjector: Projector, yProjector: Projector, y0Projector: Projector): js.Function3[/* datum */ js.Array[_], /* index */ Double, /* dataset */ Dataset, String] = js.native
+    /* protected */ def _constructAreaProjector(xProjector: Projector, yProjector: Projector, y0Projector: Projector): js.Function3[/* datum */ js.Array[js.Any], /* index */ Double, /* dataset */ Dataset, String] = js.native
     
     /* protected */ def _coordinateProjectors(): js.Tuple3[Projector, Projector, Projector] = js.native
     

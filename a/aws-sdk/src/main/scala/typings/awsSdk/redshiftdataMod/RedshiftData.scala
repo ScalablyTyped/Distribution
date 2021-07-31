@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait RedshiftData extends Service {
   ): Request[CancelStatementResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_RedshiftData: ConfigBase with ClientConfiguration = js.native
+  var config_RedshiftData: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Describes the details about a specific instance when a query was run by the Amazon Redshift Data API. The information includes when the query started, when it finished, the query status, the number of rows returned, and the SQL statement. 

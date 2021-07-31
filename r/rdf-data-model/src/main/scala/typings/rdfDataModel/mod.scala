@@ -9,52 +9,44 @@ import typings.rdfJs.mod.Term
 import typings.rdfJs.mod.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rdf-data-model", "blankNode")
+  @JSImport("rdf-data-model", JSImport.Namespace)
   @js.native
-  def blankNode(): BlankNode = js.native
-  @JSImport("rdf-data-model", "blankNode")
-  @js.native
-  def blankNode(value: String): BlankNode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rdf-data-model", "defaultGraph")
-  @js.native
-  def defaultGraph(): DefaultGraph = js.native
+  @scala.inline
+  def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
+  @scala.inline
+  def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
+  
+  @scala.inline
+  def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
   
   @JSImport("rdf-data-model", "defaultGraphInstance")
   @js.native
   val defaultGraphInstance: DefaultGraph = js.native
   
-  @JSImport("rdf-data-model", "literal")
-  @js.native
-  def literal(value: String): Literal = js.native
-  @JSImport("rdf-data-model", "literal")
-  @js.native
-  def literal(value: String, languageOrDatatype: String): Literal = js.native
-  @JSImport("rdf-data-model", "literal")
-  @js.native
-  def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = js.native
+  @scala.inline
+  def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+  @scala.inline
+  def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  @scala.inline
+  def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
   
-  @JSImport("rdf-data-model", "namedNode")
-  @js.native
-  def namedNode(value: String): NamedNode[String] = js.native
+  @scala.inline
+  def namedNode(value: String): NamedNode[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[String]]
   
-  @JSImport("rdf-data-model", "quad")
-  @js.native
-  def quad(subject: Term, predicate: Term, `object`: Term): Quad = js.native
-  @JSImport("rdf-data-model", "quad")
-  @js.native
-  def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = js.native
+  @scala.inline
+  def quad(subject: Term, predicate: Term, `object`: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  @scala.inline
+  def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Quad]
   
-  @JSImport("rdf-data-model", "triple")
-  @js.native
-  def triple(subject: Term, predicate: Term, `object`: Term): Quad = js.native
+  @scala.inline
+  def triple(subject: Term, predicate: Term, `object`: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
   
-  @JSImport("rdf-data-model", "variable")
-  @js.native
-  def variable(value: String): Variable = js.native
+  @scala.inline
+  def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
 }

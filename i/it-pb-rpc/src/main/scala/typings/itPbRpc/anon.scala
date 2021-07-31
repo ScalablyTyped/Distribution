@@ -5,15 +5,13 @@ import typings.itPbRpc.mod.LengthDecoderFunction
 import typings.itPbRpc.mod.LengthEncoderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Decode[T] extends StObject {
     
-    def decode(data: Buffer): T = js.native
+    def decode(data: Buffer): T
   }
   object Decode {
     
@@ -24,19 +22,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DecodeMutableBuilder[Self <: Decode[_], T] (val x: Self with Decode[T]) extends AnyVal {
+    implicit class DecodeMutableBuilder[Self <: Decode[?], T] (val x: Self & Decode[T]) extends AnyVal {
       
       @scala.inline
       def setDecode(value: Buffer => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait DecodeEncode[Return] extends StObject {
     
-    def decode(data: Buffer): Return = js.native
+    def decode(data: Buffer): Return
     
-    def encode(data: js.Any): Buffer = js.native
+    def encode(data: js.Any): Buffer
   }
   object DecodeEncode {
     
@@ -47,7 +44,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DecodeEncodeMutableBuilder[Self <: DecodeEncode[_], Return] (val x: Self with DecodeEncode[Return]) extends AnyVal {
+    implicit class DecodeEncodeMutableBuilder[Self <: DecodeEncode[?], Return] (val x: Self & DecodeEncode[Return]) extends AnyVal {
       
       @scala.inline
       def setDecode(value: Buffer => Return): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
@@ -57,10 +54,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Encode extends StObject {
     
-    def encode(data: js.Any): Buffer = js.native
+    def encode(data: js.Any): Buffer
   }
   object Encode {
     
@@ -79,20 +75,19 @@ object anon {
   }
   
   /* Inlined std.Partial<it-pb-rpc.it-pb-rpc.Opts> */
-  @js.native
   trait PartialOpts extends StObject {
     
-    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.native
+    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.undefined
     
-    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.native
+    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.undefined
     
-    var maxDataLength: js.UndefOr[Double] = js.native
+    var maxDataLength: js.UndefOr[Double] = js.undefined
     
-    var maxLengthLength: js.UndefOr[Double] = js.native
+    var maxLengthLength: js.UndefOr[Double] = js.undefined
     
-    var minPoolSize: js.UndefOr[Double] = js.native
+    var minPoolSize: js.UndefOr[Double] = js.undefined
     
-    var poolSize: js.UndefOr[Double] = js.native
+    var poolSize: js.UndefOr[Double] = js.undefined
   }
   object PartialOpts {
     
@@ -143,12 +138,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Read[Return] extends StObject {
     
-    def read(): Return = js.native
+    def read(): Return
     
-    def write(d: Buffer): Unit = js.native
+    def write(d: Buffer): Unit
   }
   object Read {
     
@@ -159,7 +153,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ReadMutableBuilder[Self <: Read[_], Return] (val x: Self with Read[Return]) extends AnyVal {
+    implicit class ReadMutableBuilder[Self <: Read[?], Return] (val x: Self & Read[Return]) extends AnyVal {
       
       @scala.inline
       def setRead(value: () => Return): Self = StObject.set(x, "read", js.Any.fromFunction0(value))

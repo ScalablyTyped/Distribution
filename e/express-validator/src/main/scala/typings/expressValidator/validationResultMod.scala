@@ -7,7 +7,6 @@ import typings.expressValidator.baseMod.ValidationError
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationResultMod {
@@ -35,17 +34,31 @@ object validationResultMod {
   
   @JSImport("express-validator/src/validation-result", "validationResult")
   @js.native
-  val validationResult: ResultFactory[ValidationError] with WithDefaults = js.native
+  val validationResult: ResultFactory[ValidationError] & WithDefaults = js.native
   
   type ErrorFormatter[T] = js.Function1[/* error */ ValidationError, T]
   
   type ResultFactory[T] = js.Function1[/* req */ Request, Result[T]]
   
-  @js.native
   trait ResultFactoryBuilderOptions[T] extends StObject {
     
-    def formatter(error: ValidationError): T = js.native
+    def formatter(error: ValidationError): T
     @JSName("formatter")
-    var formatter_Original: ErrorFormatter[T] = js.native
+    var formatter_Original: ErrorFormatter[T]
+  }
+  object ResultFactoryBuilderOptions {
+    
+    @scala.inline
+    def apply[T](formatter: /* error */ ValidationError => T): ResultFactoryBuilderOptions[T] = {
+      val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter))
+      __obj.asInstanceOf[ResultFactoryBuilderOptions[T]]
+    }
+    
+    @scala.inline
+    implicit class ResultFactoryBuilderOptionsMutableBuilder[Self <: ResultFactoryBuilderOptions[?], T] (val x: Self & ResultFactoryBuilderOptions[T]) extends AnyVal {
+      
+      @scala.inline
+      def setFormatter(value: /* error */ ValidationError => T): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    }
   }
 }

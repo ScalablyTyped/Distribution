@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftwareTokenMfaConfigType extends StObject {
   
   /**
     * Specifies whether software token MFA is enabled.
     */
-  var Enabled: js.UndefOr[BooleanType] = js.native
+  var Enabled: js.UndefOr[BooleanType] = js.undefined
 }
 object SoftwareTokenMfaConfigType {
   

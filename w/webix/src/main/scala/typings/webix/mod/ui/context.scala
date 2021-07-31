@@ -4,13 +4,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.context")
 @js.native
 class context ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$scope")
   var $scope: js.Any = js.native
@@ -23,9 +23,12 @@ class context ()
   
   def attachTo(view: js.Any): Unit = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_context: contextConfig = js.native
@@ -48,13 +51,13 @@ class context ()
   
   def setPosition(x: Double, y: Double): Unit = js.native
   
-  def show(node: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
-  def show(node: js.UndefOr[scala.Nothing], position: js.Any): Unit = js.native
-  def show(node: js.UndefOr[scala.Nothing], position: js.Any, point: String): Unit = js.native
+  def show(node: Unit, position: js.Any): Unit = js.native
+  def show(node: Unit, position: js.Any, point: String): Unit = js.native
+  def show(node: Unit, position: Unit, point: String): Unit = js.native
   def show(node: HTMLElement): Unit = js.native
-  def show(node: HTMLElement, position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
   def show(node: HTMLElement, position: js.Any): Unit = js.native
   def show(node: HTMLElement, position: js.Any, point: String): Unit = js.native
+  def show(node: HTMLElement, position: Unit, point: String): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportFooter extends StObject {
   
   /**
     * Total number of rows that matched the request. Warning: This count does NOT always match the number of rows in the response. Do not make that assumption when processing the
     * response.
     */
-  var matchingRowCount: js.UndefOr[String] = js.native
+  var matchingRowCount: js.UndefOr[String] = js.undefined
   
   /** Warnings associated with generation of the report. */
-  var warnings: js.UndefOr[js.Array[ReportWarning]] = js.native
+  var warnings: js.UndefOr[js.Array[ReportWarning]] = js.undefined
 }
 object ReportFooter {
   

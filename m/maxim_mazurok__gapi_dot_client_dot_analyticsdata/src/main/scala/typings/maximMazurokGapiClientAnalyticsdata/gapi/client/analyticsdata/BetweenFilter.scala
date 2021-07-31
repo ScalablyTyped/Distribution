@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BetweenFilter extends StObject {
   
   /** Begins with this number. */
-  var fromValue: js.UndefOr[NumericValue] = js.native
+  var fromValue: js.UndefOr[NumericValue] = js.undefined
   
   /** Ends with this number. */
-  var toValue: js.UndefOr[NumericValue] = js.native
+  var toValue: js.UndefOr[NumericValue] = js.undefined
 }
 object BetweenFilter {
   

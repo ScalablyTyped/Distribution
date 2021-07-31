@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,248 +14,412 @@ sealed trait ChartType extends StObject
 object ChartType extends StObject {
   
   @js.native
-  sealed trait _3DArea extends ChartType
+  sealed trait _3DArea
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DAreaStacked extends ChartType
+  sealed trait _3DAreaStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DAreaStacked100 extends ChartType
+  sealed trait _3DAreaStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DBarClustered extends ChartType
+  sealed trait _3DBarClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DBarStacked extends ChartType
+  sealed trait _3DBarStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DBarStacked100 extends ChartType
+  sealed trait _3DBarStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DColumn extends ChartType
+  sealed trait _3DColumn
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DColumnClustered extends ChartType
+  sealed trait _3DColumnClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DColumnStacked extends ChartType
+  sealed trait _3DColumnStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DColumnStacked100 extends ChartType
+  sealed trait _3DColumnStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DLine extends ChartType
+  sealed trait _3DLine
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DPie extends ChartType
+  sealed trait _3DPie
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait _3DPieExploded extends ChartType
+  sealed trait _3DPieExploded
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait area extends ChartType
+  sealed trait area
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait areaStacked extends ChartType
+  sealed trait areaStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait areaStacked100 extends ChartType
+  sealed trait areaStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait barClustered extends ChartType
+  sealed trait barClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait barOfPie extends ChartType
+  sealed trait barOfPie
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait barStacked extends ChartType
+  sealed trait barStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait barStacked100 extends ChartType
+  sealed trait barStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait boxwhisker extends ChartType
+  sealed trait boxwhisker
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait bubble extends ChartType
+  sealed trait bubble
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait bubble3DEffect extends ChartType
+  sealed trait bubble3DEffect
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait columnClustered extends ChartType
+  sealed trait columnClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait columnStacked extends ChartType
+  sealed trait columnStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait columnStacked100 extends ChartType
+  sealed trait columnStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneBarClustered extends ChartType
+  sealed trait coneBarClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneBarStacked extends ChartType
+  sealed trait coneBarStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneBarStacked100 extends ChartType
+  sealed trait coneBarStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneCol extends ChartType
+  sealed trait coneCol
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneColClustered extends ChartType
+  sealed trait coneColClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneColStacked extends ChartType
+  sealed trait coneColStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait coneColStacked100 extends ChartType
+  sealed trait coneColStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderBarClustered extends ChartType
+  sealed trait cylinderBarClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderBarStacked extends ChartType
+  sealed trait cylinderBarStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderBarStacked100 extends ChartType
+  sealed trait cylinderBarStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderCol extends ChartType
+  sealed trait cylinderCol
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderColClustered extends ChartType
+  sealed trait cylinderColClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderColStacked extends ChartType
+  sealed trait cylinderColStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait cylinderColStacked100 extends ChartType
+  sealed trait cylinderColStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait doughnut extends ChartType
+  sealed trait doughnut
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait doughnutExploded extends ChartType
+  sealed trait doughnutExploded
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait funnel extends ChartType
+  sealed trait funnel
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait histogram extends ChartType
+  sealed trait histogram
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait invalid extends ChartType
+  sealed trait invalid
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait line extends ChartType
+  sealed trait line
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait lineMarkers extends ChartType
+  sealed trait lineMarkers
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait lineMarkersStacked extends ChartType
+  sealed trait lineMarkersStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait lineMarkersStacked100 extends ChartType
+  sealed trait lineMarkersStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait lineStacked extends ChartType
+  sealed trait lineStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait lineStacked100 extends ChartType
+  sealed trait lineStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pareto extends ChartType
+  sealed trait pareto
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pie extends ChartType
+  sealed trait pie
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pieExploded extends ChartType
+  sealed trait pieExploded
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pieOfPie extends ChartType
+  sealed trait pieOfPie
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidBarClustered extends ChartType
+  sealed trait pyramidBarClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidBarStacked extends ChartType
+  sealed trait pyramidBarStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidBarStacked100 extends ChartType
+  sealed trait pyramidBarStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidCol extends ChartType
+  sealed trait pyramidCol
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidColClustered extends ChartType
+  sealed trait pyramidColClustered
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidColStacked extends ChartType
+  sealed trait pyramidColStacked
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait pyramidColStacked100 extends ChartType
+  sealed trait pyramidColStacked100
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait radar extends ChartType
+  sealed trait radar
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait radarFilled extends ChartType
+  sealed trait radarFilled
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait radarMarkers extends ChartType
+  sealed trait radarMarkers
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait regionMap extends ChartType
+  sealed trait regionMap
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait stockHLC extends ChartType
+  sealed trait stockHLC
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait stockOHLC extends ChartType
+  sealed trait stockOHLC
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait stockVHLC extends ChartType
+  sealed trait stockVHLC
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait stockVOHLC extends ChartType
+  sealed trait stockVOHLC
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait sunburst extends ChartType
+  sealed trait sunburst
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait surface extends ChartType
+  sealed trait surface
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait surfaceTopView extends ChartType
+  sealed trait surfaceTopView
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait surfaceTopViewWireframe extends ChartType
+  sealed trait surfaceTopViewWireframe
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait surfaceWireframe extends ChartType
+  sealed trait surfaceWireframe
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait treemap extends ChartType
+  sealed trait treemap
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait waterfall extends ChartType
+  sealed trait waterfall
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait xyscatter extends ChartType
+  sealed trait xyscatter
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait xyscatterLines extends ChartType
+  sealed trait xyscatterLines
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait xyscatterLinesNoMarkers extends ChartType
+  sealed trait xyscatterLinesNoMarkers
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait xyscatterSmooth extends ChartType
+  sealed trait xyscatterSmooth
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait xyscatterSmoothNoMarkers extends ChartType
+  sealed trait xyscatterSmoothNoMarkers
+    extends StObject
+       with ChartType
 }

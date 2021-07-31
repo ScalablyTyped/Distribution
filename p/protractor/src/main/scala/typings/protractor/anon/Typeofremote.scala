@@ -9,27 +9,25 @@ import typings.seleniumWebdriver.remoteMod.SeleniumServer
 import typings.seleniumWebdriver.remoteMod.ServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofremote extends StObject {
   
   var DriverService: (Instantiable2[
     /* executable */ String, 
     /* options */ ServiceOptions, 
     typings.seleniumWebdriver.remoteMod.DriverService
-  ]) with TypeofDriverService = js.native
+  ]) & TypeofDriverService
   
-  var FileDetector: Instantiable0[typings.seleniumWebdriver.remoteMod.FileDetector] = js.native
+  var FileDetector: Instantiable0[typings.seleniumWebdriver.remoteMod.FileDetector]
   
-  var SeleniumServer: Instantiable1[/* jar */ String, typings.seleniumWebdriver.remoteMod.SeleniumServer] = js.native
+  var SeleniumServer: Instantiable1[/* jar */ String, typings.seleniumWebdriver.remoteMod.SeleniumServer]
 }
 object Typeofremote {
   
   @scala.inline
   def apply(
-    DriverService: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) with TypeofDriverService,
+    DriverService: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService,
     FileDetector: Instantiable0[FileDetector],
     SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer]
   ): Typeofremote = {
@@ -42,7 +40,7 @@ object Typeofremote {
     
     @scala.inline
     def setDriverService(
-      value: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) with TypeofDriverService
+      value: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService
     ): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
     
     @scala.inline

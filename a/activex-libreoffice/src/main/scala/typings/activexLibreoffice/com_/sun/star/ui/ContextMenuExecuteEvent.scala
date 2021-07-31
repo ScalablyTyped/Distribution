@@ -6,24 +6,22 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains all information about the requested context menu. */
-@js.native
 trait ContextMenuExecuteEvent extends StObject {
   
   /** enables the access to the menu content. The implementing object has to support the service {@link com.sun.star.ui.ActionTriggerContainer} ; */
-  var ActionTriggerContainer: XIndexContainer = js.native
+  var ActionTriggerContainer: XIndexContainer
   
   /** contains the position the context menu will be executed at. */
-  var ExecutePosition: Point = js.native
+  var ExecutePosition: Point
   
   /** provides the current selection inside the source window. */
-  var Selection: XSelectionSupplier = js.native
+  var Selection: XSelectionSupplier
   
   /** contains the window where the context menu has been requested */
-  var SourceWindow: XWindow = js.native
+  var SourceWindow: XWindow
 }
 object ContextMenuExecuteEvent {
   

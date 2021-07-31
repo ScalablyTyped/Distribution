@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.DrawerOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.Drawer")
 @js.native
 class Drawer protected ()
-  extends typings.kendoUi.kendo.mobile.ui.Drawer {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.Drawer {
   def this(element: Element) = this()
   def this(element: Element, options: DrawerOptions) = this()
 }
@@ -21,9 +21,8 @@ object Drawer {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.Drawer.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Drawer = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Drawer = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Drawer]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Drawer.fn")

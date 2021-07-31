@@ -2,19 +2,17 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentFetchRevsResponse[D] extends StObject {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var rows: js.Array[DocumentResponseRow[D] | DocumentLookupFailure] = js.native
+  var rows: js.Array[DocumentResponseRow[D] | DocumentLookupFailure]
   
-  var total_rows: Double = js.native
+  var total_rows: Double
   
-  var update_seq: js.UndefOr[Double] = js.native
+  var update_seq: js.UndefOr[Double] = js.undefined
 }
 object DocumentFetchRevsResponse {
   
@@ -25,7 +23,7 @@ object DocumentFetchRevsResponse {
   }
   
   @scala.inline
-  implicit class DocumentFetchRevsResponseMutableBuilder[Self <: DocumentFetchRevsResponse[_], D] (val x: Self with DocumentFetchRevsResponse[D]) extends AnyVal {
+  implicit class DocumentFetchRevsResponseMutableBuilder[Self <: DocumentFetchRevsResponse[?], D] (val x: Self & DocumentFetchRevsResponse[D]) extends AnyVal {
     
     @scala.inline
     def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])

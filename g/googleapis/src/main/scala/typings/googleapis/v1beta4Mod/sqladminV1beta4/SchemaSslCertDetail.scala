@@ -2,25 +2,23 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SslCertDetail.
   */
-@js.native
 trait SchemaSslCertDetail extends StObject {
   
   /**
     * The public information about the cert.
     */
-  var certInfo: js.UndefOr[SchemaSslCert] = js.native
+  var certInfo: js.UndefOr[SchemaSslCert] = js.undefined
   
   /**
     * The private key for the client cert, in pem format. Keep private in order
     * to protect your security.
     */
-  var certPrivateKey: js.UndefOr[String] = js.native
+  var certPrivateKey: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertDetail {
   

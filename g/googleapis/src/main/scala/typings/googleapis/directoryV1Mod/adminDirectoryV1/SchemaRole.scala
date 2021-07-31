@@ -3,54 +3,52 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 import typings.googleapis.anon.PrivilegeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for role resource in Directory API.
   */
-@js.native
 trait SchemaRole extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Returns true if the role is a super admin role.
     */
-  var isSuperAdminRole: js.UndefOr[Boolean] = js.native
+  var isSuperAdminRole: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns true if this is a pre-defined system role.
     */
-  var isSystemRole: js.UndefOr[Boolean] = js.native
+  var isSystemRole: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of the API resource. This is always admin#directory#role.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A short description of the role.
     */
-  var roleDescription: js.UndefOr[String] = js.native
+  var roleDescription: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the role.
     */
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the role.
     */
-  var roleName: js.UndefOr[String] = js.native
+  var roleName: js.UndefOr[String] = js.undefined
   
   /**
     * The set of privileges that are granted to this role.
     */
-  var rolePrivileges: js.UndefOr[js.Array[PrivilegeName]] = js.native
+  var rolePrivileges: js.UndefOr[js.Array[PrivilegeName]] = js.undefined
 }
 object SchemaRole {
   

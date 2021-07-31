@@ -5,18 +5,16 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.Decorator> */
-@js.native
 trait PartialDecorator extends StObject {
   
-  var arguments: js.UndefOr[ModelToObject[js.UndefOr[_]] | js.Any] = js.native
+  var arguments: js.UndefOr[ModelToObject[js.UndefOr[js.Any]] | js.Any] = js.undefined
   
-  var name: js.UndefOr[ModelToObject[String] | String] = js.native
+  var name: js.UndefOr[ModelToObject[String] | String] = js.undefined
   
-  var `type`: js.UndefOr[ModelToObject[js.UndefOr[Type]] | Type] = js.native
+  var `type`: js.UndefOr[ModelToObject[js.UndefOr[Type]] | Type] = js.undefined
 }
 object PartialDecorator {
   
@@ -30,7 +28,7 @@ object PartialDecorator {
   implicit class PartialDecoratorMutableBuilder[Self <: PartialDecorator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArguments(value: ModelToObject[js.UndefOr[_]] | js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    def setArguments(value: ModelToObject[js.UndefOr[js.Any]] | js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)

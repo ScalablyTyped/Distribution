@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfigTrafficRoutingConfigTimeBasedLinear extends StObject {
   
   /**
     * The number of minutes between each incremental traffic shift of a `TimeBasedLinear` deployment.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * The percentage of traffic that is shifted at the start of each increment of a `TimeBasedLinear` deployment.
     */
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
 }
 object DeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertyMod {
@@ -12,9 +11,9 @@ object propertyMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Property with String] = js.native
+    def apply(value: String): js.UndefOr[Property & String] = js.native
     
-    /* "active" */ val ACTIVE: typings.ol.propertyMod.Property.ACTIVE with String = js.native
+    /* "active" */ val ACTIVE: typings.ol.propertyMod.Property.ACTIVE & String = js.native
   }
   
   @js.native
@@ -24,6 +23,8 @@ object propertyMod {
   object Property extends StObject {
     
     @js.native
-    sealed trait ACTIVE extends Property
+    sealed trait ACTIVE
+      extends StObject
+         with Property
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlanOfferingProperty extends StObject {
   
   /**
     * The property name.
     */
-  var name: js.UndefOr[SavingsPlanOfferingPropertyKey] = js.native
+  var name: js.UndefOr[SavingsPlanOfferingPropertyKey] = js.undefined
   
   /**
     * The property value.
     */
-  var value: js.UndefOr[JsonSafeFilterValueString] = js.native
+  var value: js.UndefOr[JsonSafeFilterValueString] = js.undefined
 }
 object SavingsPlanOfferingProperty {
   

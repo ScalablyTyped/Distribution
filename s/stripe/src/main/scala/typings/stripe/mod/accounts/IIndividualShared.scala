@@ -10,84 +10,82 @@ import typings.stripe.stripeStrings.female
 import typings.stripe.stripeStrings.male
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIndividualShared extends StObject {
   
   /**
     * The individual’s primary address.
     */
-  var address: js.UndefOr[IAddress] = js.native
+  var address: js.UndefOr[IAddress] = js.undefined
   
   /**
     * The Kana variation of the the individual’s primary address (Japan only).
     */
-  var address_kana: js.UndefOr[IAddressKana] = js.native
+  var address_kana: js.UndefOr[IAddressKana] = js.undefined
   
   /**
     * The Kanji variation of the the individual’s primary address (Japan only).
     */
-  var address_kanji: js.UndefOr[IAddressKanji] = js.native
+  var address_kanji: js.UndefOr[IAddressKanji] = js.undefined
   
   /**
     * The individual’s date of birth.
     */
-  var dob: js.UndefOr[Day] = js.native
+  var dob: js.UndefOr[Day] = js.undefined
   
   /**
     * The individual's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The individual’s first name.
     * This can be unset by updating the value to null and then saving.
     */
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the the individual’s first name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var first_name_kana: js.UndefOr[String] = js.native
+  var first_name_kana: js.UndefOr[String] = js.undefined
   
   /**
     * The Kanji variation of the individual’s first name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var first_name_kanji: js.UndefOr[String] = js.native
+  var first_name_kanji: js.UndefOr[String] = js.undefined
   
   /**
     * The individual’s gender (International regulations require either “male” or “female”).
     * This can be unset by updating the value to null and then saving.
     */
-  var gender: js.UndefOr[male | female] = js.native
+  var gender: js.UndefOr[male | female] = js.undefined
   
   /**
     * The individual’s last name.
     * This can be unset by updating the value to null and then saving.
     */
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the individual’s last name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var last_name_kana: js.UndefOr[String] = js.native
+  var last_name_kana: js.UndefOr[String] = js.undefined
   
   /**
     * The Kanji variation of the individual’s last name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var last_name_kanji: js.UndefOr[String] = js.native
+  var last_name_kanji: js.UndefOr[String] = js.undefined
   
   /**
     * The individual’s maiden name.
     * This can be unset by updating the value to null and then saving.
     */
-  var maiden_name: js.UndefOr[String] = js.native
+  var maiden_name: js.UndefOr[String] = js.undefined
   
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful
@@ -95,17 +93,17 @@ trait IIndividualShared extends StObject {
     * Individual keys can be unset by posting an empty value to them.
     * All keys can be unset by posting an empty value to metadata.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The individual’s phone number.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * The individual’s verification document information.
     */
-  var verification: js.UndefOr[Details] = js.native
+  var verification: js.UndefOr[Details] = js.undefined
 }
 object IIndividualShared {
   

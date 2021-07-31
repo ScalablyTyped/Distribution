@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryRunTimeline extends StObject {
   
   /**
     * The end time of the run.
     */
-  var Completed: js.UndefOr[Timestamp] = js.native
+  var Completed: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The start time of the run.
     */
-  var Started: js.UndefOr[Timestamp] = js.native
+  var Started: js.UndefOr[Timestamp] = js.undefined
 }
 object CanaryRunTimeline {
   

@@ -3,14 +3,12 @@ package typings.reactNativeFirebase.anon
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofFieldPath extends StObject {
   
   /* static member */
-  def documentId(): FieldPath = js.native
+  def documentId(): FieldPath
 }
 object TypeofFieldPath {
   

@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Default to `REPEATABLE_READ` but you can override the default isolation level by passing
   * `options.isolationLevel` in `new Sequelize`.
   */
-@js.native
 trait TransactionIsolationLevels extends StObject {
   
   // 'READ UNCOMMITTED'
-  var READ_COMMITTED: TransactionIsolationLevelReadCommitted = js.native
+  var READ_COMMITTED: TransactionIsolationLevelReadCommitted
   
-  var READ_UNCOMMITTED: TransactionIsolationLevelReadUncommitted = js.native
+  var READ_UNCOMMITTED: TransactionIsolationLevelReadUncommitted
   
   // 'READ COMMITTED'
-  var REPEATABLE_READ: TransactionIsolationLevelRepeatableRead = js.native
+  var REPEATABLE_READ: TransactionIsolationLevelRepeatableRead
   
   // 'REPEATABLE READ'
-  var SERIALIZABLE: TransactionIsolationLevelSerializable = js.native
+  var SERIALIZABLE: TransactionIsolationLevelSerializable
 }
 object TransactionIsolationLevels {
   

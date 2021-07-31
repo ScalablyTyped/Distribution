@@ -6,7 +6,6 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Management {
@@ -18,26 +17,29 @@ object Management {
   object IndexedResourceType extends StObject {
     
     @js.native
-    sealed trait path extends IndexedResourceType
+    sealed trait path
+      extends StObject
+         with IndexedResourceType
     
     @js.native
-    sealed trait string extends IndexedResourceType
+    sealed trait string
+      extends StObject
+         with IndexedResourceType
   }
   
-  @js.native
   trait IIndexedResourceCandidate extends StObject {
     
-    def getQualifierValue(qualifierName: String): String = js.native
+    def getQualifierValue(qualifierName: String): String
     
-    var metadata: IMapView[String, String] = js.native
+    var metadata: IMapView[String, String]
     
-    var qualifiers: IVectorView[IndexedResourceQualifier] = js.native
+    var qualifiers: IVectorView[IndexedResourceQualifier]
     
-    var `type`: IndexedResourceType = js.native
+    var `type`: IndexedResourceType
     
-    var uri: Uri = js.native
+    var uri: Uri
     
-    var valueAsString: String = js.native
+    var valueAsString: String
   }
   object IIndexedResourceCandidate {
     
@@ -78,12 +80,11 @@ object Management {
     }
   }
   
-  @js.native
   trait IIndexedResourceQualifier extends StObject {
     
-    var qualifierName: String = js.native
+    var qualifierName: String
     
-    var qualifierValue: String = js.native
+    var qualifierValue: String
   }
   object IIndexedResourceQualifier {
     
@@ -104,12 +105,11 @@ object Management {
     }
   }
   
-  @js.native
   trait IResourceIndexer extends StObject {
     
-    def indexFileContentsAsync(file: Uri): IAsyncOperation[IVectorView[IndexedResourceCandidate]] = js.native
+    def indexFileContentsAsync(file: Uri): IAsyncOperation[IVectorView[IndexedResourceCandidate]]
     
-    def indexFilePath(filePath: Uri): IndexedResourceCandidate = js.native
+    def indexFilePath(filePath: Uri): IndexedResourceCandidate
   }
   object IResourceIndexer {
     
@@ -133,10 +133,9 @@ object Management {
     }
   }
   
-  @js.native
   trait IResourceIndexerFactory extends StObject {
     
-    def createResourceIndexer(projectRoot: Uri): ResourceIndexer = js.native
+    def createResourceIndexer(projectRoot: Uri): ResourceIndexer
   }
   object IResourceIndexerFactory {
     
@@ -154,8 +153,9 @@ object Management {
     }
   }
   
-  @js.native
-  trait IndexedResourceCandidate extends IIndexedResourceCandidate
+  trait IndexedResourceCandidate
+    extends StObject
+       with IIndexedResourceCandidate
   object IndexedResourceCandidate {
     
     @scala.inline
@@ -173,8 +173,9 @@ object Management {
     }
   }
   
-  @js.native
-  trait IndexedResourceQualifier extends IIndexedResourceQualifier
+  trait IndexedResourceQualifier
+    extends StObject
+       with IIndexedResourceQualifier
   object IndexedResourceQualifier {
     
     @scala.inline
@@ -184,8 +185,9 @@ object Management {
     }
   }
   
-  @js.native
-  trait ResourceIndexer extends IResourceIndexer
+  trait ResourceIndexer
+    extends StObject
+       with IResourceIndexer
   object ResourceIndexer {
     
     @scala.inline

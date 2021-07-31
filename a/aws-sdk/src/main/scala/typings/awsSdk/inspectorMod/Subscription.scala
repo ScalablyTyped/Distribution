@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
   /**
     * The list of existing event subscriptions.
     */
-  var eventSubscriptions: EventSubscriptionList = js.native
+  var eventSubscriptions: EventSubscriptionList
   
   /**
     * The ARN of the assessment template that is used during the event for which the SNS notification is sent.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The ARN of the Amazon Simple Notification Service (SNS) topic to which the SNS notifications are sent.
     */
-  var topicArn: Arn = js.native
+  var topicArn: Arn
 }
 object Subscription {
   

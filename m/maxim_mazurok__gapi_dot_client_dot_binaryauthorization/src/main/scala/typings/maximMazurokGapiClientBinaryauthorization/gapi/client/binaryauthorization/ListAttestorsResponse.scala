@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAttestorsResponse extends StObject {
   
   /** The list of attestors. */
-  var attestors: js.UndefOr[js.Array[Attestor]] = js.native
+  var attestors: js.UndefOr[js.Array[Attestor]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the ListAttestorsRequest.page_token field in the subsequent call to the `ListAttestors` method to retrieve the next
     * page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAttestorsResponse {
   

@@ -11,8 +11,8 @@ event emitter for antvis.
 | Full name          | @antv/event-emitter |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 457590 |
+| # dependents       | 17 |
+| # downloads        | 769566 |
 | # stars            | 0 |
 
 ## Links

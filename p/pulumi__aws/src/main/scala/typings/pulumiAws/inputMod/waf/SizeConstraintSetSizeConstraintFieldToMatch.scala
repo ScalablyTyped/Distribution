@@ -3,17 +3,15 @@ package typings.pulumiAws.inputMod.waf
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeConstraintSetSizeConstraintFieldToMatch extends StObject {
   
   /**
     * When `type` is `HEADER`, enter the name of the header that you want to search, e.g. `User-Agent` or `Referer`.
     * If `type` is any other value, omit this field.
     */
-  var data: js.UndefOr[Input[String]] = js.native
+  var data: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The part of the web request that you want AWS WAF to search for a specified string.
@@ -21,7 +19,7 @@ trait SizeConstraintSetSizeConstraintFieldToMatch extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_FieldToMatch.html)
     * for all supported values.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object SizeConstraintSetSizeConstraintFieldToMatch {
   

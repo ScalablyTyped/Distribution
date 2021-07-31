@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferSpec extends StObject {
   
   /** An AWS S3 data source. */
-  var awsS3DataSource: js.UndefOr[AwsS3Data] = js.native
+  var awsS3DataSource: js.UndefOr[AwsS3Data] = js.undefined
   
   /** An Azure Blob Storage data source. */
-  var azureBlobStorageDataSource: js.UndefOr[AzureBlobStorageData] = js.native
+  var azureBlobStorageDataSource: js.UndefOr[AzureBlobStorageData] = js.undefined
   
   /** A Cloud Storage data sink. */
-  var gcsDataSink: js.UndefOr[GcsData] = js.native
+  var gcsDataSink: js.UndefOr[GcsData] = js.undefined
   
   /** A Cloud Storage data source. */
-  var gcsDataSource: js.UndefOr[GcsData] = js.native
+  var gcsDataSource: js.UndefOr[GcsData] = js.undefined
   
   /** An HTTP URL data source. */
-  var httpDataSource: js.UndefOr[HttpData] = js.native
+  var httpDataSource: js.UndefOr[HttpData] = js.undefined
   
   /**
     * Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects' "last modification time" do not
     * exclude objects in a data sink.
     */
-  var objectConditions: js.UndefOr[ObjectConditions] = js.native
+  var objectConditions: js.UndefOr[ObjectConditions] = js.undefined
   
   /**
     * If the option delete_objects_unique_in_sink is `true` and time-based object conditions such as 'last modification time' are specified, the request fails with an INVALID_ARGUMENT
     * error.
     */
-  var transferOptions: js.UndefOr[TransferOptions] = js.native
+  var transferOptions: js.UndefOr[TransferOptions] = js.undefined
 }
 object TransferSpec {
   

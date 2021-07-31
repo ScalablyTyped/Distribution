@@ -2,15 +2,13 @@ package typings.refUnion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: typings.ref.mod.Type = js.native
+    var `type`: typings.ref.mod.Type
   }
   object Type {
     

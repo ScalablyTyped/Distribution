@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLogPatternResponse extends StObject {
   
   /**
     * The successfully created log pattern.
     */
-  var LogPattern: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogPattern] = js.native
+  var LogPattern: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogPattern] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.native
+  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
 }
 object CreateLogPatternResponse {
   

@@ -3,16 +3,15 @@ package typings.agGrid.iExcelCreatorMod
 import typings.agGrid.exportParamsMod.ExportParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelExportParams
-  extends ExportParams[js.Array[js.Array[ExcelCell]]] {
+  extends StObject
+     with ExportParams[js.Array[js.Array[ExcelCell]]] {
   
-  var sheetName: js.UndefOr[String] = js.native
+  var sheetName: js.UndefOr[String] = js.undefined
   
-  var suppressTextAsCDATA: js.UndefOr[Boolean] = js.native
+  var suppressTextAsCDATA: js.UndefOr[Boolean] = js.undefined
 }
 object ExcelExportParams {
   

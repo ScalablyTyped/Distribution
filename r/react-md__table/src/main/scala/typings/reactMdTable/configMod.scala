@@ -5,21 +5,24 @@ import typings.reactMdTable.anon.RequiredTableConfig
 import typings.reactMdTable.reactMdTableStrings.padded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
+  
+  @JSImport("@react-md/table/types/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/table/types/config", "TableConfigProvider")
   @js.native
   val TableConfigProvider: Provider[RequiredTableConfig] = js.native
   
-  @JSImport("@react-md/table/types/config", "useTableConfig")
-  @js.native
-  def useTableConfig(options: TableConfig): TableConfigContext = js.native
+  @scala.inline
+  def useTableConfig(options: TableConfig): TableConfigContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTableConfig")(options.asInstanceOf[js.Any]).asInstanceOf[TableConfigContext]
   
-  @js.native
-  trait TableCellConfig extends TableCellConfiguration {
+  trait TableCellConfig
+    extends StObject
+       with TableCellConfiguration {
     
     /**
       * Boolean if all the `TableCell` components should be rendered as a `<th>`
@@ -30,7 +33,7 @@ object configMod {
       *
       * @private
       */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
   }
   object TableCellConfig {
     
@@ -51,7 +54,6 @@ object configMod {
     }
   }
   
-  @js.native
   trait TableCellConfiguration extends StObject {
     
     /**
@@ -59,7 +61,7 @@ object configMod {
       *
       * Note: Table default behavior is to align to the left.
       */
-    var hAlign: js.UndefOr[TableCellHorizontalAlignment] = js.native
+    var hAlign: js.UndefOr[TableCellHorizontalAlignment] = js.undefined
     
     /**
       * Boolean if the `<td>` and `<th>` cells should support line wrapping. This
@@ -69,7 +71,7 @@ object configMod {
       * If this is set to the string `"padded"`, line wrapping will be enabled
       * along with adding some additional vertical padding to each cell.
       */
-    var lineWrap: js.UndefOr[Boolean | padded] = js.native
+    var lineWrap: js.UndefOr[Boolean | padded] = js.undefined
     
     /**
       * The vertical alignment for the content within a cell.
@@ -79,7 +81,7 @@ object configMod {
       * padding can be configured with the `$rmd-table-cell-vertical-padding` or
       * `$rmd-table-cell-vertical-alignments` variables.
       */
-    var vAlign: js.UndefOr[TableCellVerticalAlignment] = js.native
+    var vAlign: js.UndefOr[TableCellVerticalAlignment] = js.undefined
   }
   object TableCellConfiguration {
     
@@ -148,10 +150,10 @@ object configMod {
     def top: typings.reactMdTable.reactMdTableStrings.top = "top".asInstanceOf[typings.reactMdTable.reactMdTableStrings.top]
   }
   
-  @js.native
   trait TableConfig
-    extends TableCellConfig
+    extends StObject
        with TableRowConfiguration
+       with TableCellConfig
   object TableConfig {
     
     @scala.inline
@@ -162,20 +164,19 @@ object configMod {
   }
   
   /* Inlined std.Required<@react-md/table.@react-md/table/types/config.TableConfig> */
-  @js.native
   trait TableConfigContext extends StObject {
     
-    var disableBorders: Boolean = js.native
+    var disableBorders: Boolean
     
-    var disableHover: Boolean = js.native
+    var disableHover: Boolean
     
-    var hAlign: TableCellHorizontalAlignment = js.native
+    var hAlign: TableCellHorizontalAlignment
     
-    var header: Boolean = js.native
+    var header: Boolean
     
-    var lineWrap: Boolean | padded = js.native
+    var lineWrap: Boolean | padded
     
-    var vAlign: TableCellVerticalAlignment = js.native
+    var vAlign: TableCellVerticalAlignment
   }
   object TableConfigContext {
     
@@ -215,16 +216,16 @@ object configMod {
     }
   }
   
-  @js.native
   trait TableConfiguration
-    extends TableRowConfiguration
+    extends StObject
+       with TableRowConfiguration
        with TableCellConfiguration {
     
     /**
       * Boolean if the table should use the dense spec to reduce the height of each
       * cell.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the `<table>` element should span the entire width of the
@@ -233,7 +234,7 @@ object configMod {
       *
       * Note: There will always be horizontal overflow if the table is too wide.
       */
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
   }
   object TableConfiguration {
     
@@ -260,20 +261,19 @@ object configMod {
     }
   }
   
-  @js.native
   trait TableRowConfiguration extends StObject {
     
     /**
       * Boolean if the table should no longer have a border-bottom applied to each
       * row within the `<tbody>`.
       */
-    var disableBorders: js.UndefOr[Boolean] = js.native
+    var disableBorders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the rows should no longer applied a different background color
       * when hovered.
       */
-    var disableHover: js.UndefOr[Boolean] = js.native
+    var disableHover: js.UndefOr[Boolean] = js.undefined
   }
   object TableRowConfiguration {
     

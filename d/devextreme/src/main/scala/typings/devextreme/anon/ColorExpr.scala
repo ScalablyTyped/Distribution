@@ -3,21 +3,19 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorExpr extends StObject {
   
-  var colorExpr: js.UndefOr[String | js.Function] = js.native
+  var colorExpr: js.UndefOr[String | js.Function] = js.undefined
   
   var dataSource: js.UndefOr[
-    js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-  ] = js.native
+    js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
+  ] = js.undefined
   
-  var keyExpr: js.UndefOr[String | js.Function] = js.native
+  var keyExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var textExpr: js.UndefOr[String | js.Function] = js.native
+  var textExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 object ColorExpr {
   
@@ -37,7 +35,7 @@ object ColorExpr {
     def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

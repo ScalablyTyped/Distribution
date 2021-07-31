@@ -4,12 +4,11 @@ import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictionaryRendererProperties
-  extends RendererProperties
+  extends StObject
+     with RendererProperties
      with VisualVariablesMixinProperties {
   
   /**
@@ -17,42 +16,42 @@ trait DictionaryRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#config)
     */
-  var config: js.UndefOr[js.Any] = js.native
+  var config: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Defines a field mapping that maps input fields from the feature to the dictionary symbol style's expected fields for symbols and text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#fieldMap)
     */
-  var fieldMap: js.UndefOr[HashMap[String]] = js.native
+  var fieldMap: js.UndefOr[HashMap[String]] = js.undefined
   
   /**
     * A scaling expression can be set to increase or decrease the size of the dictionary symbols.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression)
     */
-  var scaleExpression: js.UndefOr[String] = js.native
+  var scaleExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpressionTitle)
     */
-  var scaleExpressionTitle: js.UndefOr[String] = js.native
+  var scaleExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#type)
     */
-  var `type`: js.UndefOr[dictionary] = js.native
+  var `type`: js.UndefOr[dictionary] = js.undefined
   
   /**
     * The URL to the dictionary style, e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DictionaryRendererProperties {
   

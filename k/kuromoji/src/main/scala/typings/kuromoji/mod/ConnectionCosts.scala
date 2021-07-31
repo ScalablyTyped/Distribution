@@ -3,19 +3,17 @@ package typings.kuromoji.mod
 import typings.std.Int16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionCosts extends StObject {
   
-  var buffer: Int16Array = js.native
+  var buffer: Int16Array
   
-  def get(forward_id: Double, backward_id: Double): Double = js.native
+  def get(forward_id: Double, backward_id: Double): Double
   
-  def loadConnectionCosts(connection_costs_buffer: Int16Array): Unit = js.native
+  def loadConnectionCosts(connection_costs_buffer: Int16Array): Unit
   
-  def put(forward_id: Double, backward_id: Double, cost: Double): Unit = js.native
+  def put(forward_id: Double, backward_id: Double, cost: Double): Unit
 }
 object ConnectionCosts {
   

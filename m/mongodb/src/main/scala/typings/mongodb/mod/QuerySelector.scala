@@ -4,36 +4,34 @@ import typings.mongodb.anon.Geometry
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySelector[T] extends StObject {
   
   // Array
   // TODO: define better types for $all and $elemMatch
   @JSName("$all")
-  var $all: js.UndefOr[js.Array[_]] = js.native
+  var $all: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   // Bitwise
   @JSName("$bitsAllClear")
-  var $bitsAllClear: js.UndefOr[BitwiseQuery] = js.native
+  var $bitsAllClear: js.UndefOr[BitwiseQuery] = js.undefined
   
   @JSName("$bitsAllSet")
-  var $bitsAllSet: js.UndefOr[BitwiseQuery] = js.native
+  var $bitsAllSet: js.UndefOr[BitwiseQuery] = js.undefined
   
   @JSName("$bitsAnyClear")
-  var $bitsAnyClear: js.UndefOr[BitwiseQuery] = js.native
+  var $bitsAnyClear: js.UndefOr[BitwiseQuery] = js.undefined
   
   @JSName("$bitsAnySet")
-  var $bitsAnySet: js.UndefOr[BitwiseQuery] = js.native
+  var $bitsAnySet: js.UndefOr[BitwiseQuery] = js.undefined
   
   @JSName("$elemMatch")
-  var $elemMatch: js.UndefOr[js.Any] = js.native
+  var $elemMatch: js.UndefOr[js.Any] = js.undefined
   
   // Comparison
   @JSName("$eq")
-  var $eq: js.UndefOr[T] = js.native
+  var $eq: js.UndefOr[T] = js.undefined
   
   // Element
   /**
@@ -41,71 +39,71 @@ trait QuerySelector[T] extends StObject {
     * including documents where the field value is null.
     */
   @JSName("$exists")
-  var $exists: js.UndefOr[Boolean] = js.native
+  var $exists: js.UndefOr[Boolean] = js.undefined
   
   // Evaluation
   @JSName("$expr")
-  var $expr: js.UndefOr[js.Any] = js.native
+  var $expr: js.UndefOr[js.Any] = js.undefined
   
   // Geospatial
   // TODO: define better types for geo queries
   @JSName("$geoIntersects")
-  var $geoIntersects: js.UndefOr[Geometry] = js.native
+  var $geoIntersects: js.UndefOr[Geometry] = js.undefined
   
   @JSName("$geoWithin")
-  var $geoWithin: js.UndefOr[js.Object] = js.native
+  var $geoWithin: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$gt")
-  var $gt: js.UndefOr[T] = js.native
+  var $gt: js.UndefOr[T] = js.undefined
   
   @JSName("$gte")
-  var $gte: js.UndefOr[T] = js.native
+  var $gte: js.UndefOr[T] = js.undefined
   
   @JSName("$in")
-  var $in: js.UndefOr[js.Array[T]] = js.native
+  var $in: js.UndefOr[js.Array[T]] = js.undefined
   
   @JSName("$jsonSchema")
-  var $jsonSchema: js.UndefOr[js.Any] = js.native
+  var $jsonSchema: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$lt")
-  var $lt: js.UndefOr[T] = js.native
+  var $lt: js.UndefOr[T] = js.undefined
   
   @JSName("$lte")
-  var $lte: js.UndefOr[T] = js.native
+  var $lte: js.UndefOr[T] = js.undefined
   
   @JSName("$maxDistance")
-  var $maxDistance: js.UndefOr[scala.Double] = js.native
+  var $maxDistance: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$mod")
-  var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.native
+  var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   
   @JSName("$ne")
-  var $ne: js.UndefOr[T] = js.native
+  var $ne: js.UndefOr[T] = js.undefined
   
   @JSName("$near")
-  var $near: js.UndefOr[js.Object] = js.native
+  var $near: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$nearSphere")
-  var $nearSphere: js.UndefOr[js.Object] = js.native
+  var $nearSphere: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$nin")
-  var $nin: js.UndefOr[js.Array[T]] = js.native
+  var $nin: js.UndefOr[js.Array[T]] = js.undefined
   
   // Logical
   @JSName("$not")
-  var $not: js.UndefOr[QuerySelector[T] | RegExp] = js.native
+  var $not: js.UndefOr[QuerySelector[T] | RegExp] = js.undefined
   
   @JSName("$options")
-  var $options: js.UndefOr[String] = js.native
+  var $options: js.UndefOr[String] = js.undefined
   
   @JSName("$regex")
-  var $regex: js.UndefOr[RegExp | String] = js.native
+  var $regex: js.UndefOr[RegExp | String] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[scala.Double] = js.native
+  var $size: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$type")
-  var $type: js.UndefOr[BSONType | BSONTypeAlias] = js.native
+  var $type: js.UndefOr[BSONType | BSONTypeAlias] = js.undefined
 }
 object QuerySelector {
   
@@ -116,10 +114,10 @@ object QuerySelector {
   }
   
   @scala.inline
-  implicit class QuerySelectorMutableBuilder[Self <: QuerySelector[_], T] (val x: Self with QuerySelector[T]) extends AnyVal {
+  implicit class QuerySelectorMutableBuilder[Self <: QuerySelector[?], T] (val x: Self & QuerySelector[T]) extends AnyVal {
     
     @scala.inline
-    def set$all(value: js.Array[_]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    def set$all(value: js.Array[js.Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)

@@ -5,7 +5,6 @@ import typings.floraColossus.depTypesMod.DepType
 import typings.floraColossus.nativeModuleTypesMod.NativeModuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object walkerMod {
@@ -38,16 +37,15 @@ object walkerMod {
     def walkTree(): js.Promise[js.Array[Module]] = js.native
   }
   
-  @js.native
   trait Module extends StObject {
     
-    var depType: DepType = js.native
+    var depType: DepType
     
-    var name: String = js.native
+    var name: String
     
-    var nativeModuleType: NativeModuleType = js.native
+    var nativeModuleType: NativeModuleType
     
-    var path: String = js.native
+    var path: String
   }
   object Module {
     
@@ -74,16 +72,15 @@ object walkerMod {
     }
   }
   
-  @js.native
   trait PackageJSON extends StObject {
     
-    var dependencies: StringDictionary[VersionRange] = js.native
+    var dependencies: StringDictionary[VersionRange]
     
-    var devDependencies: StringDictionary[VersionRange] = js.native
+    var devDependencies: StringDictionary[VersionRange]
     
-    var name: String = js.native
+    var name: String
     
-    var optionalDependencies: StringDictionary[VersionRange] = js.native
+    var optionalDependencies: StringDictionary[VersionRange]
   }
   object PackageJSON {
     

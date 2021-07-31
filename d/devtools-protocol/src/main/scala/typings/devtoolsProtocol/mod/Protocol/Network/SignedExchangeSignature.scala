@@ -3,56 +3,54 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedExchangeSignature extends StObject {
   
   /**
     * The hex string of signed exchange signature cert sha256.
     */
-  var certSha256: js.UndefOr[String] = js.native
+  var certSha256: js.UndefOr[String] = js.undefined
   
   /**
     * Signed exchange signature cert Url.
     */
-  var certUrl: js.UndefOr[String] = js.native
+  var certUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The encoded certificates.
     */
-  var certificates: js.UndefOr[js.Array[String]] = js.native
+  var certificates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Signed exchange signature date.
     */
-  var date: integer = js.native
+  var date: integer
   
   /**
     * Signed exchange signature expires.
     */
-  var expires: integer = js.native
+  var expires: integer
   
   /**
     * Signed exchange signature integrity.
     */
-  var integrity: String = js.native
+  var integrity: String
   
   /**
     * Signed exchange signature label.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The hex string of signed exchange signature.
     */
-  var signature: String = js.native
+  var signature: String
   
   /**
     * Signed exchange signature validity Url.
     */
-  var validityUrl: String = js.native
+  var validityUrl: String
 }
 object SignedExchangeSignature {
   

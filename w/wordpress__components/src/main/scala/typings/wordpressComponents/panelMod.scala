@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressComponents.panelMod.Panel.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -25,22 +24,21 @@ object panelMod {
   
   object Panel {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * The class that will be added with `components-panel`. If no
         * `className` is passed only `components-panel__body` and `is-opened`
         * is used.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Title of the `Panel`. Text will be rendered inside an `<h2>` tag.
         */
-      var header: js.UndefOr[String] = js.native
+      var header: js.UndefOr[String] = js.undefined
     }
     object Props {
       

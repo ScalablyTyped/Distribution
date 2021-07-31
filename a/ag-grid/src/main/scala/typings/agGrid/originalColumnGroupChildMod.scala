@@ -2,19 +2,17 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object originalColumnGroupChildMod {
   
-  @js.native
   trait OriginalColumnGroupChild extends StObject {
     
-    def getColumnGroupShow(): String = js.native
+    def getColumnGroupShow(): String
     
-    def getId(): String = js.native
+    def getId(): String
     
-    def isVisible(): Boolean = js.native
+    def isVisible(): Boolean
   }
   object OriginalColumnGroupChild {
     

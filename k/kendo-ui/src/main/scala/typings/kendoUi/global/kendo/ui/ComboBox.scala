@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ComboBoxOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.ComboBox")
 @js.native
 class ComboBox protected ()
-  extends typings.kendoUi.kendo.ui.ComboBox {
+  extends StObject
+     with typings.kendoUi.kendo.ui.ComboBox {
   def this(element: Element) = this()
   def this(element: Element, options: ComboBoxOptions) = this()
 }
@@ -21,9 +21,8 @@ object ComboBox {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.ComboBox.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ComboBox = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ComboBox = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ComboBox]
   
   /* static member */
   @JSGlobal("kendo.ui.ComboBox.fn")

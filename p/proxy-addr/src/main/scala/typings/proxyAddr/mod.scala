@@ -3,40 +3,34 @@ package typings.proxyAddr
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("proxy-addr", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, trust: js.Array[Address]): String = js.native
-  @JSImport("proxy-addr", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, trust: js.Function2[/* addr */ String, /* i */ Double, Boolean]): String = js.native
-  @JSImport("proxy-addr", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, trust: Address): String = js.native
+  @scala.inline
+  def apply(req: IncomingMessage, trust: js.Array[Address]): String = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(req: IncomingMessage, trust: js.Function2[/* addr */ String, /* i */ Double, Boolean]): String = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(req: IncomingMessage, trust: Address): String = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("proxy-addr", "all")
+  @JSImport("proxy-addr", JSImport.Namespace)
   @js.native
-  def all(req: IncomingMessage): js.Array[String] = js.native
-  @JSImport("proxy-addr", "all")
-  @js.native
-  def all(req: IncomingMessage, trust: js.Array[Address]): js.Array[String] = js.native
-  @JSImport("proxy-addr", "all")
-  @js.native
-  def all(req: IncomingMessage, trust: js.Function2[/* addr */ String, /* i */ Double, Boolean]): js.Array[String] = js.native
-  @JSImport("proxy-addr", "all")
-  @js.native
-  def all(req: IncomingMessage, trust: Address): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("proxy-addr", "compile")
-  @js.native
-  def compile(`val`: js.Array[Address]): js.Function2[/* addr */ String, /* i */ Double, Boolean] = js.native
-  @JSImport("proxy-addr", "compile")
-  @js.native
-  def compile(`val`: Address): js.Function2[/* addr */ String, /* i */ Double, Boolean] = js.native
+  @scala.inline
+  def all(req: IncomingMessage): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(req.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def all(req: IncomingMessage, trust: js.Array[Address]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def all(req: IncomingMessage, trust: js.Function2[/* addr */ String, /* i */ Double, Boolean]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def all(req: IncomingMessage, trust: Address): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(req.asInstanceOf[js.Any], trust.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def compile(`val`: js.Array[Address]): js.Function2[/* addr */ String, /* i */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* addr */ String, /* i */ Double, Boolean]]
+  @scala.inline
+  def compile(`val`: Address): js.Function2[/* addr */ String, /* i */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* addr */ String, /* i */ Double, Boolean]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.proxyAddr.proxyAddrStrings.loopback

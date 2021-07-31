@@ -4,28 +4,26 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Writes data to a file. */
-@js.native
 trait FileOutputStream extends StObject {
   
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Flushes data asynchronously in a sequential stream.
     * @return The stream flush operation.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Writes data asynchronously to a file.
     * @param buffer The buffer into which the asynchronous writer operation writes.
     * @return The byte writer operation.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object FileOutputStream {
   

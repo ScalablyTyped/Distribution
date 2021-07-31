@@ -3,19 +3,17 @@ package typings.arangodb.Foxx
 import typings.arangodb.arangodbBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentationRouterOptions extends StObject {
   
-  def before(req: Request, res: Response): Unit | `false` = js.native
+  def before(req: Request, res: Response): Unit | `false`
   
-  var indexFile: String = js.native
+  var indexFile: String
   
-  var mount: String = js.native
+  var mount: String
   
-  var swaggerRoot: String = js.native
+  var swaggerRoot: String
 }
 object DocumentationRouterOptions {
   

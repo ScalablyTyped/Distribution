@@ -3,13 +3,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the environment in which a Dataflow Job runs.
   */
-@js.native
 trait SchemaEnvironment extends StObject {
   
   /**
@@ -18,29 +16,29 @@ trait SchemaEnvironment extends StObject {
     * the form of the API service name, e.g.
     * &quot;compute.googleapis.com&quot;.
     */
-  var clusterManagerApiService: js.UndefOr[String] = js.native
+  var clusterManagerApiService: js.UndefOr[String] = js.undefined
   
   /**
     * The dataset for the current project where various workflow related tables
     * are stored.  The supported resource type is:  Google BigQuery:
     * bigquery.googleapis.com/{dataset}
     */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /**
     * The list of experiments to enable.
     */
-  var experiments: js.UndefOr[js.Array[String]] = js.native
+  var experiments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Which Flexible Resource Scheduling mode to run in.
     */
-  var flexResourceSchedulingGoal: js.UndefOr[String] = js.native
+  var flexResourceSchedulingGoal: js.UndefOr[String] = js.undefined
   
   /**
     * Experimental settings.
     */
-  var internalExperiments: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var internalExperiments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The Cloud Dataflow SDK pipeline options specified by the user. These
@@ -48,19 +46,19 @@ trait SchemaEnvironment extends StObject {
     * pipeline options on the worker in a language agnostic and platform
     * independent way.
     */
-  var sdkPipelineOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var sdkPipelineOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Identity to run virtual machines as. Defaults to the default account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * If set, contains the Cloud KMS key identifier used to encrypt data at
     * rest, AKA a Customer Managed Encryption Key (CMEK).  Format:
     * projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY
     */
-  var serviceKmsKeyName: js.UndefOr[String] = js.native
+  var serviceKmsKeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix of the resources the system should use for temporary storage.
@@ -72,24 +70,24 @@ trait SchemaEnvironment extends StObject {
     * type is:  Google Cloud Storage: storage.googleapis.com/{bucket}/{object}
     * bucket.storage.googleapis.com/{object}
     */
-  var tempStoragePrefix: js.UndefOr[String] = js.native
+  var tempStoragePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the process that generated the request.
     */
-  var userAgent: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var userAgent: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * A structure describing which components and their versions of the service
     * are required in order to run the job.
     */
-  var version: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var version: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The worker pools. At least one &quot;harness&quot; worker pool must be
     * specified in order for the job to have workers.
     */
-  var workerPools: js.UndefOr[js.Array[SchemaWorkerPool]] = js.native
+  var workerPools: js.UndefOr[js.Array[SchemaWorkerPool]] = js.undefined
 }
 object SchemaEnvironment {
   

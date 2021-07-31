@@ -2,17 +2,17 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICollection extends IEventEmitter {
+trait ICollection
+  extends StObject
+     with IEventEmitter {
   
-  def add(`object`: js.Object): this.type = js.native
+  def add(`object`: js.Object): this.type
   
-  def getIterator(): IIterator = js.native
+  def getIterator(): IIterator
   
-  def remove(`object`: js.Object): this.type = js.native
+  def remove(`object`: js.Object): this.type
 }
 object ICollection {
   

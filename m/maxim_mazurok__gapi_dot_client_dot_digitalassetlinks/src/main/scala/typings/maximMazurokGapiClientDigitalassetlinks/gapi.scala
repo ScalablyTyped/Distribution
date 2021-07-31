@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientDigitalassetlinks.anon.Accesstoken
 import typings.maximMazurokGapiClientDigitalassetlinks.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,7 +13,6 @@ object gapi {
     
     object digitalassetlinks {
       
-      @js.native
       trait AndroidAppAsset extends StObject {
         
         /**
@@ -24,10 +22,10 @@ object gapi {
           * is rotated, however. (Note that the syntaxes for publishing and querying for statements contain syntactic sugar to easily let you specify apps that are known by multiple
           * certificates.) REQUIRED
           */
-        var certificate: js.UndefOr[CertificateInfo] = js.native
+        var certificate: js.UndefOr[CertificateInfo] = js.undefined
         
         /** Android App assets are naturally identified by their Java package name. For example, the Google Maps app uses the package name `com.google.android.apps.maps`. REQUIRED */
-        var packageName: js.UndefOr[String] = js.native
+        var packageName: js.UndefOr[String] = js.undefined
       }
       object AndroidAppAsset {
         
@@ -54,14 +52,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Asset extends StObject {
         
         /** Set if this is an Android App asset. */
-        var androidApp: js.UndefOr[AndroidAppAsset] = js.native
+        var androidApp: js.UndefOr[AndroidAppAsset] = js.undefined
         
         /** Set if this is a web asset. */
-        var web: js.UndefOr[WebAsset] = js.native
+        var web: js.UndefOr[WebAsset] = js.undefined
       }
       object Asset {
         
@@ -105,7 +102,6 @@ object gapi {
         def check(request: Accesstoken): Request[CheckResponse] = js.native
       }
       
-      @js.native
       trait CertificateInfo extends StObject {
         
         /**
@@ -116,7 +112,7 @@ object gapi {
           * into the DER format, compute the SHA-256 hash of that string and represent the result as a hexstring (that is, uppercase hexadecimal representations of each octet, separated by
           * colons).
           */
-        var sha256Fingerprint: js.UndefOr[String] = js.native
+        var sha256Fingerprint: js.UndefOr[String] = js.undefined
       }
       object CertificateInfo {
         
@@ -137,7 +133,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait CheckResponse extends StObject {
         
         /**
@@ -145,16 +140,16 @@ object gapi {
           * to offer any translations. Please note that no guarantees are made about the contents or format of this string. Any aspect of it may be subject to change without notice. You should
           * not attempt to programmatically parse this data. For programmatic access, use the error_code field below.
           */
-        var debugString: js.UndefOr[String] = js.native
+        var debugString: js.UndefOr[String] = js.undefined
         
         /** Error codes that describe the result of the Check operation. */
-        var errorCode: js.UndefOr[js.Array[String]] = js.native
+        var errorCode: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Set to true if the assets specified in the request are linked by the relation specified in the request. */
-        var linked: js.UndefOr[Boolean] = js.native
+        var linked: js.UndefOr[Boolean] = js.undefined
         
         /** From serving time, how much longer the response should be considered valid barring further updates. REQUIRED */
-        var maxAge: js.UndefOr[String] = js.native
+        var maxAge: js.UndefOr[String] = js.undefined
       }
       object CheckResponse {
         
@@ -196,7 +191,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListResponse extends StObject {
         
         /**
@@ -204,16 +198,16 @@ object gapi {
           * to offer any translations. Please note that no guarantees are made about the contents or format of this string. Any aspect of it may be subject to change without notice. You should
           * not attempt to programmatically parse this data. For programmatic access, use the error_code field below.
           */
-        var debugString: js.UndefOr[String] = js.native
+        var debugString: js.UndefOr[String] = js.undefined
         
         /** Error codes that describe the result of the List operation. */
-        var errorCode: js.UndefOr[js.Array[String]] = js.native
+        var errorCode: js.UndefOr[js.Array[String]] = js.undefined
         
         /** From serving time, how much longer the response should be considered valid barring further updates. REQUIRED */
-        var maxAge: js.UndefOr[String] = js.native
+        var maxAge: js.UndefOr[String] = js.undefined
         
         /** A list of all the matching statements that have been found. */
-        var statements: js.UndefOr[js.Array[Statement]] = js.native
+        var statements: js.UndefOr[js.Array[Statement]] = js.undefined
       }
       object ListResponse {
         
@@ -258,7 +252,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait Statement extends StObject {
         
         /**
@@ -267,13 +260,13 @@ object gapi {
           * that describes the specific use case of the statement. Refer to [our API documentation](/digital-asset-links/v1/relation-strings) for the current list of supported relations.
           * Example: `delegate_permission/common.handle_all_urls` REQUIRED
           */
-        var relation: js.UndefOr[String] = js.native
+        var relation: js.UndefOr[String] = js.undefined
         
         /** Every statement has a source asset. REQUIRED */
-        var source: js.UndefOr[Asset] = js.native
+        var source: js.UndefOr[Asset] = js.undefined
         
         /** Every statement has a target asset. REQUIRED */
-        var target: js.UndefOr[Asset] = js.native
+        var target: js.UndefOr[Asset] = js.undefined
       }
       object Statement {
         
@@ -321,7 +314,6 @@ object gapi {
         def list(request: Alt): Request[ListResponse] = js.native
       }
       
-      @js.native
       trait WebAsset extends StObject {
         
         /**
@@ -332,7 +324,7 @@ object gapi {
           * `https://www.google.com/foo` * `https://www.google.com/foo?bar` * `https://www.google.com/foo#bar` * `https://user@password:www.google.com/` But it does not contain these URLs: *
           * `http://www.google.com/` (wrong scheme) * `https://google.com/` (hostname does not match) * `https://www.google.com:444/` (port does not match) REQUIRED
           */
-        var site: js.UndefOr[String] = js.native
+        var site: js.UndefOr[String] = js.undefined
       }
       object WebAsset {
         

@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpCodecParameters extends StObject {
   
-  var channels: js.UndefOr[Double] = js.native
+  var channels: js.UndefOr[Double] = js.undefined
   
-  var clockRate: Double = js.native
+  var clockRate: Double
   
-  var mimeType: java.lang.String = js.native
+  var mimeType: java.lang.String
   
-  var payloadType: Double = js.native
+  var payloadType: Double
   
-  var sdpFmtpLine: js.UndefOr[java.lang.String] = js.native
+  var sdpFmtpLine: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCRtpCodecParameters {
   

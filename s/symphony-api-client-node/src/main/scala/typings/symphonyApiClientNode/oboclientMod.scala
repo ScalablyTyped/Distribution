@@ -5,10 +5,13 @@ import typings.symphonyApiClientNode.messagesClientMod.Message
 import typings.symphonyApiClientNode.streamsClientMod.UserId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oboclientMod {
+  
+  @JSImport("symphony-api-client-node/OBOClient", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("symphony-api-client-node/OBOClient", "MESSAGEML_FORMAT")
   @js.native
@@ -18,36 +21,31 @@ object oboclientMod {
   @js.native
   val PRESENTATIONML_FORMAT: String = js.native
   
-  @JSImport("symphony-api-client-node/OBOClient", "oboGetAllConnections")
-  @js.native
-  def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetAllConnections")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/OBOClient", "oboGetConnection")
-  @js.native
-  def oboGetConnection(userId: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def oboGetConnection(userId: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetConnection")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node/OBOClient", "oboGetUserIMStreamId")
-  @js.native
-  def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = js.native
+  @scala.inline
+  def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboGetUserIMStreamId")(userToken.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserId]]
   
-  @JSImport("symphony-api-client-node/OBOClient", "oboSendMessage")
-  @js.native
-  def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = js.native
+  @scala.inline
+  def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @js.native
   trait OboUser extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var email: String = js.native
+    var email: String
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var userId: String = js.native
+    var userId: String
     
-    var username: String = js.native
+    var username: String
   }
   object OboUser {
     

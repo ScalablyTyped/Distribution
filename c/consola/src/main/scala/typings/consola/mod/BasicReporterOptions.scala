@@ -3,15 +3,13 @@ package typings.consola.mod
 import typings.node.utilMod.InspectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicReporterOptions extends StObject {
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
-  var formatOptions: js.UndefOr[InspectOptions] = js.native
+  var formatOptions: js.UndefOr[InspectOptions] = js.undefined
 }
 object BasicReporterOptions {
   

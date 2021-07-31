@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +14,11 @@ object mod extends Shortcut {
   
   type GulpHtmlPrettify = js.Function1[/* options */ js.UndefOr[GulpHtmlPrettifyOptions], ReadWriteStream]
   
-  @js.native
   trait GulpHtmlPrettifyOptions extends StObject {
     
-    var indent_char: js.UndefOr[String] = js.native
+    var indent_char: js.UndefOr[String] = js.undefined
     
-    var indent_size: js.UndefOr[Double] = js.native
+    var indent_size: js.UndefOr[Double] = js.undefined
   }
   object GulpHtmlPrettifyOptions {
     

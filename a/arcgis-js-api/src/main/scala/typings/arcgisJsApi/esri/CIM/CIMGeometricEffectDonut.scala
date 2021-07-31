@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectDonut
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
@@ -15,29 +14,29 @@ trait CIMGeometricEffectDonut
     */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectDonutMethod * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The option for the way the symbol handles complex geometries.
     */
   var option: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetOption * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectDonut: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut = js.native
+  var type_CIMGeometricEffectDonut: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut
   
   /**
     * The distance from the edge of the polygon that the fill symbol is to be displayed.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectDonut {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut): CIMGeometricEffectDonut = {
+  def apply(): CIMGeometricEffectDonut = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectDonut")
     __obj.asInstanceOf[CIMGeometricEffectDonut]
   }
   

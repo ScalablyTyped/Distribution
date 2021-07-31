@@ -2,21 +2,19 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewportRange extends StObject {
   
   /**
     * The end of the range.
     */
-  var end: IViewportRangePosition = js.native
+  var end: IViewportRangePosition
   
   /**
     * The start of the range.
     */
-  var start: IViewportRangePosition = js.native
+  var start: IViewportRangePosition
 }
 object IViewportRange {
   

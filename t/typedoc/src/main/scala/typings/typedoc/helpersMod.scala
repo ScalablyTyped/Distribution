@@ -5,7 +5,6 @@ import typings.typedoc.stackMod.ResourceOrigin
 import typings.typedoc.stackMod.ResourceStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
@@ -13,7 +12,7 @@ object helpersMod {
   @JSImport("typedoc/dist/lib/output/utils/resources/helpers", "Helper")
   @js.native
   class Helper protected () extends Resource {
-    def this(origin: ResourceOrigin[_], name: String, fileName: String) = this()
+    def this(origin: ResourceOrigin[js.Any], name: String, fileName: String) = this()
     
     def getHelpers(): js.Any = js.native
     

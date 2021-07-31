@@ -12,7 +12,7 @@ extends the whatwg fetch api, makes it easier to use
 | Keywords           | request, axios, fetch, ajax, http, api |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1455 |
+| # downloads        | 1585 |
 | # stars            | 2 |
 
 ## Links

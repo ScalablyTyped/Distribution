@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbClusterOptionGroupMembership extends StObject {
   
   /**
     * The name of the DB cluster option group.
     */
-  var DbClusterOptionGroupName: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterOptionGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the DB cluster option group.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbClusterOptionGroupMembership {
   

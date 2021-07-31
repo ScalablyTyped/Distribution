@@ -5,17 +5,52 @@ import typings.playable.liveIndicatorTypesMod.ILiveIndicator
 import typings.playable.titleTypesMod.ITitle
 import typings.playable.topBlockTypesMod.ITopBlock
 import typings.playable.topBlockTypesMod.ITopBlockViewConfig
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topBlockMod {
   
   @JSImport("playable/dist/src/modules/ui/top-block/top-block", JSImport.Default)
   @js.native
-  class default protected () extends TopBlock {
+  class default protected ()
+    extends StObject
+       with TopBlock {
     def this(dependencies: IDependencies) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hideContent(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hideLiveIndicator(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hideTitle(): Unit = js.native
+    
+    /* CompleteClass */
+    var isFocused: Boolean = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showContent(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showLiveIndicator(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showTitle(): Unit = js.native
   }
   object default {
     
@@ -53,12 +88,11 @@ object topBlockMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDependencies extends StObject {
     
-    var liveIndicator: ILiveIndicator = js.native
+    var liveIndicator: ILiveIndicator
     
-    var title: ITitle = js.native
+    var title: ITitle
   }
   object IDependencies {
     
@@ -80,7 +114,9 @@ object topBlockMod {
   }
   
   @js.native
-  trait TopBlock extends ITopBlock {
+  trait TopBlock
+    extends StObject
+       with ITopBlock {
     
     var _bindViewCallbacks: js.Any = js.native
     

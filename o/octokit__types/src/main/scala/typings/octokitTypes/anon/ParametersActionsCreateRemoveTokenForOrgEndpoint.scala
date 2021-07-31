@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsCreateRemoveTokenForOrgResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsCreateRemoveTokenForOrgEndpoint extends StObject {
   
-  var parameters: ActionsCreateRemoveTokenForOrgEndpoint = js.native
+  var parameters: ActionsCreateRemoveTokenForOrgEndpoint
   
-  var request: ActionsCreateRemoveTokenForOrgRequestOptions = js.native
+  var request: ActionsCreateRemoveTokenForOrgRequestOptions
   
-  var response: OctokitResponse[ActionsCreateRemoveTokenForOrgResponseData] = js.native
+  var response: OctokitResponse[ActionsCreateRemoveTokenForOrgResponseData]
 }
 object ParametersActionsCreateRemoveTokenForOrgEndpoint {
   

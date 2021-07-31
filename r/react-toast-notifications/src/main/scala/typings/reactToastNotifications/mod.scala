@@ -6,10 +6,13 @@ import typings.reactToastNotifications.anon.Appearance
 import typings.reactToastNotifications.anon.Toast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-toast-notifications", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-toast-notifications", "DefaultToast")
   @js.native
@@ -27,13 +30,11 @@ object mod {
   @js.native
   val ToastProvider: ComponentType[ToastProviderProps] = js.native
   
-  @JSImport("react-toast-notifications", "useToasts")
-  @js.native
-  def useToasts(): typings.reactToastNotifications.anon.AddToast = js.native
+  @scala.inline
+  def useToasts(): typings.reactToastNotifications.anon.AddToast = ^.asInstanceOf[js.Dynamic].applyDynamic("useToasts")().asInstanceOf[typings.reactToastNotifications.anon.AddToast]
   
-  @JSImport("react-toast-notifications", "withToastManager")
-  @js.native
-  def withToastManager(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def withToastManager(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withToastManager")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type AddToast = js.Function3[
     /* content */ ReactNode, 
@@ -64,14 +65,13 @@ object mod {
     def warning: typings.reactToastNotifications.reactToastNotificationsStrings.warning = "warning".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.warning]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var appearance: AppearanceTypes = js.native
+    var appearance: AppearanceTypes
     
-    var autoDismiss: js.UndefOr[Boolean] = js.native
+    var autoDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
   }
   object Options {
     
@@ -135,14 +135,13 @@ object mod {
   
   type RemoveToast = js.Function2[/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
   
-  @js.native
   trait ToastConsumerContext extends StObject {
     
-    var add: AddToast = js.native
+    var add: AddToast
     
-    var remove: RemoveToast = js.native
+    var remove: RemoveToast
     
-    var toasts: js.Array[Appearance] = js.native
+    var toasts: js.Array[Appearance]
   }
   object ToastConsumerContext {
     
@@ -175,10 +174,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ToastConsumerProps extends StObject {
     
-    def children(context: ToastConsumerContext): ReactNode = js.native
+    def children(context: ToastConsumerContext): ReactNode
   }
   object ToastConsumerProps {
     
@@ -196,14 +194,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ToastContainerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var hasToasts: Boolean = js.native
+    var hasToasts: Boolean
     
-    var placement: Placement = js.native
+    var placement: Placement
   }
   object ToastContainerProps {
     
@@ -260,20 +257,19 @@ object mod {
     var transitionState: TransitionState = js.native
   }
   
-  @js.native
   trait ToastProviderProps extends StObject {
     
-    var autoDismiss: js.UndefOr[Boolean | Double] = js.native
+    var autoDismiss: js.UndefOr[Boolean | Double] = js.undefined
     
-    var autoDismissTimeout: js.UndefOr[Double] = js.native
+    var autoDismissTimeout: js.UndefOr[Double] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var components: js.UndefOr[Toast] = js.native
+    var components: js.UndefOr[Toast] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object ToastProviderProps {
     
@@ -346,10 +342,11 @@ object mod {
     def exiting: typings.reactToastNotifications.reactToastNotificationsStrings.exiting = "exiting".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exiting]
   }
   
-  @js.native
-  trait UpdateOptions extends Options {
+  trait UpdateOptions
+    extends StObject
+       with Options {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
   }
   object UpdateOptions {
     

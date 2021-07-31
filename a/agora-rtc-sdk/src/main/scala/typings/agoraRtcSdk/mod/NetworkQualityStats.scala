@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * After joining the channel, the SDK triggers the `"network-quality"` callback once every two seconds and provides the network quality ratings in this interface.
   */
-@js.native
 trait NetworkQualityStats extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait NetworkQualityStats extends StObject {
     *  - "5": The network is so bad that users can hardly communicate.
     *  - "6": The network is down and users cannot communicate at all.
     */
-  val downlinkNetworkQuality: js.UndefOr[String] = js.native
+  val downlinkNetworkQuality: js.UndefOr[String] = js.undefined
   
   /**
     * Uplink network quality rating of the user in terms of the transmission bitrate, packet loss rate, average RTT (Round-Trip Time) and jitter of the uplink network.
@@ -37,7 +35,7 @@ trait NetworkQualityStats extends StObject {
     *  - "5": The network is so bad that users can hardly communicate.
     *  - "6": The network is disconnected and users cannot communicate at all.
     */
-  val uplinkNetworkQuality: js.UndefOr[String] = js.native
+  val uplinkNetworkQuality: js.UndefOr[String] = js.undefined
 }
 object NetworkQualityStats {
   

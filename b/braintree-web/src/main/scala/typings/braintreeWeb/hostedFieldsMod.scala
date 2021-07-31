@@ -7,7 +7,6 @@ import typings.braintreeWeb.coreMod.callback
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostedFieldsMod {
@@ -42,20 +41,19 @@ object hostedFieldsMod {
     def validityChange: typings.braintreeWeb.braintreeWebStrings.validityChange = "validityChange".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.validityChange]
   }
   
-  @js.native
   trait HostedFieldFieldOptions extends StObject {
     
-    var cvv: HostedFieldsField = js.native
+    var cvv: HostedFieldsField
     
-    var expirationDate: js.UndefOr[HostedFieldsField] = js.native
+    var expirationDate: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var expirationMonth: js.UndefOr[HostedFieldsField] = js.native
+    var expirationMonth: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var expirationYear: js.UndefOr[HostedFieldsField] = js.native
+    var expirationYear: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var number: HostedFieldsField = js.native
+    var number: HostedFieldsField
     
-    var postalCode: js.UndefOr[HostedFieldsField] = js.native
+    var postalCode: js.UndefOr[HostedFieldsField] = js.undefined
   }
   object HostedFieldFieldOptions {
     
@@ -118,7 +116,7 @@ object hostedFieldsMod {
       * });
       */
     def addClass(field: String, classname: String): Unit = js.native
-    def addClass(field: String, classname: String, callback: callback[_]): Unit = js.native
+    def addClass(field: String, classname: String, callback: callback[js.Any]): Unit = js.native
     
     /**
       * @example
@@ -134,7 +132,7 @@ object hostedFieldsMod {
       * hostedFieldsInstance.clear('expirationDate');
       */
     def clear(field: String): Unit = js.native
-    def clear(field: String, callback: callback[_]): Unit = js.native
+    def clear(field: String, callback: callback[js.Any]): Unit = js.native
     
     /**
       * braintree.hostedFields.create({
@@ -165,7 +163,7 @@ object hostedFieldsMod {
       * }, callback);
       */
     def create(options: Fields): js.Promise[HostedFields] = js.native
-    def create(options: Fields, callback: callback[_]): Unit = js.native
+    def create(options: Fields, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Returns an {@link HostedFields~stateObject|object} that includes the state of all fields and possible card types.
@@ -194,7 +192,7 @@ object hostedFieldsMod {
       * });
       */
     def removeClass(field: String, classname: String): Unit = js.native
-    def removeClass(field: String, classname: String, callback: callback[_]): Unit = js.native
+    def removeClass(field: String, classname: String, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Sets the placeholder of a {@link module:braintree-web/hosted-fields~field field}.     *
@@ -219,7 +217,7 @@ object hostedFieldsMod {
       * });
       */
     def setPlaceholder(field: String, placeholder: String): Unit = js.native
-    def setPlaceholder(field: String, placeholder: String, callback: callback[_]): Unit = js.native
+    def setPlaceholder(field: String, placeholder: String, callback: callback[js.Any]): Unit = js.native
     
     /**
       * An object that represents CSS that will be applied in each hosted field. This object looks similar to CSS.
@@ -260,7 +258,7 @@ object hostedFieldsMod {
     var styleOptions: js.Any = js.native
     
     def teardown(): Unit = js.native
-    def teardown(callback: callback[_]): Unit = js.native
+    def teardown(callback: callback[js.Any]): Unit = js.native
     @JSName("teardown")
     def teardown_Promise(): js.Promise[Unit] = js.native
     
@@ -300,25 +298,24 @@ object hostedFieldsMod {
       * });
       */
     def tokenize(): js.Promise[HostedFieldsTokenizePayload] = js.native
-    def tokenize(callback: callback[_]): Unit = js.native
+    def tokenize(callback: callback[js.Any]): Unit = js.native
     def tokenize(options: BillingAddress): js.Promise[HostedFieldsTokenizePayload] = js.native
-    def tokenize(options: BillingAddress, callback: callback[_]): Unit = js.native
+    def tokenize(options: BillingAddress, callback: callback[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait HostedFieldsAccountDetails extends StObject {
     
-    var bin: String = js.native
+    var bin: String
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var expirationMonth: String = js.native
+    var expirationMonth: String
     
-    var expirationYear: String = js.native
+    var expirationYear: String
     
-    var lastFour: String = js.native
+    var lastFour: String
     
-    var lastTwo: String = js.native
+    var lastTwo: String
   }
   object HostedFieldsAccountDetails {
     
@@ -358,12 +355,11 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsCardCode extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object HostedFieldsCardCode {
     
@@ -384,30 +380,29 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsField extends StObject {
     
-    var formatInput: js.UndefOr[Boolean] = js.native
+    var formatInput: js.UndefOr[Boolean] = js.undefined
     
-    var maskInput: js.UndefOr[Boolean | HostedFieldsFieldMaskInput] = js.native
+    var maskInput: js.UndefOr[Boolean | HostedFieldsFieldMaskInput] = js.undefined
     
-    var maxCardLength: js.UndefOr[Double] = js.native
+    var maxCardLength: js.UndefOr[Double] = js.undefined
     
-    var maxlength: js.UndefOr[Double] = js.native
+    var maxlength: js.UndefOr[Double] = js.undefined
     
-    var minlength: js.UndefOr[Double] = js.native
+    var minlength: js.UndefOr[Double] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefill: js.UndefOr[String] = js.native
+    var prefill: js.UndefOr[String] = js.undefined
     
-    var rejectUnsupportedCards: js.UndefOr[Boolean] = js.native
+    var rejectUnsupportedCards: js.UndefOr[Boolean] = js.undefined
     
-    var select: js.UndefOr[Boolean | Options] = js.native
+    var select: js.UndefOr[Boolean | Options] = js.undefined
     
-    var selector: String = js.native
+    var selector: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HostedFieldsField {
     
@@ -486,20 +481,19 @@ object hostedFieldsMod {
   }
   
   /* Inlined {[ key in braintree-web.braintree-web/modules/hosted-fields.HostedFieldsHostedFieldsFieldName ]: braintree-web.braintree-web/modules/hosted-fields.HostedFieldsHostedFieldsFieldData} */
-  @js.native
   trait HostedFieldsFieldDataFields extends StObject {
     
-    var cvv: HostedFieldsHostedFieldsFieldData = js.native
+    var cvv: HostedFieldsHostedFieldsFieldData
     
-    var expirationDate: HostedFieldsHostedFieldsFieldData = js.native
+    var expirationDate: HostedFieldsHostedFieldsFieldData
     
-    var expirationMonth: HostedFieldsHostedFieldsFieldData = js.native
+    var expirationMonth: HostedFieldsHostedFieldsFieldData
     
-    var expirationYear: HostedFieldsHostedFieldsFieldData = js.native
+    var expirationYear: HostedFieldsHostedFieldsFieldData
     
-    var number: HostedFieldsHostedFieldsFieldData = js.native
+    var number: HostedFieldsHostedFieldsFieldData
     
-    var postalCode: HostedFieldsHostedFieldsFieldData = js.native
+    var postalCode: HostedFieldsHostedFieldsFieldData
   }
   object HostedFieldsFieldDataFields {
     
@@ -539,19 +533,18 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsFieldMaskInput extends StObject {
     
     /**
       * The character to use when masking the input.
       * @default '•'
       */
-    var character: js.UndefOr[String] = js.native
+    var character: js.UndefOr[String] = js.undefined
     
     /**
       * Only applicable for the credit card field. Whether or not to show the last 4 digits of the card when masking.
       */
-    var showLastFour: js.UndefOr[Boolean] = js.native
+    var showLastFour: js.UndefOr[Boolean] = js.undefined
   }
   object HostedFieldsFieldMaskInput {
     
@@ -578,14 +571,13 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsHostedFieldsCard extends StObject {
     
-    var code: HostedFieldsCardCode = js.native
+    var code: HostedFieldsCardCode
     
-    var niceType: String = js.native
+    var niceType: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object HostedFieldsHostedFieldsCard {
     
@@ -610,18 +602,17 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsHostedFieldsFieldData extends StObject {
     
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
-    var isEmpty: Boolean = js.native
+    var isEmpty: Boolean
     
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
-    var isPotentiallyValid: Boolean = js.native
+    var isPotentiallyValid: Boolean
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object HostedFieldsHostedFieldsFieldData {
     
@@ -687,14 +678,13 @@ object hostedFieldsMod {
     def postalCode: typings.braintreeWeb.braintreeWebStrings.postalCode = "postalCode".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.postalCode]
   }
   
-  @js.native
   trait HostedFieldsStateObject extends StObject {
     
-    var cards: js.Array[HostedFieldsHostedFieldsCard] = js.native
+    var cards: js.Array[HostedFieldsHostedFieldsCard]
     
-    var emittedBy: HostedFieldsHostedFieldsFieldName = js.native
+    var emittedBy: HostedFieldsHostedFieldsFieldName
     
-    var fields: HostedFieldsFieldDataFields = js.native
+    var fields: HostedFieldsFieldDataFields
   }
   object HostedFieldsStateObject {
     
@@ -725,16 +715,15 @@ object hostedFieldsMod {
     }
   }
   
-  @js.native
   trait HostedFieldsTokenizePayload extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var details: HostedFieldsAccountDetails = js.native
+    var details: HostedFieldsAccountDetails
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object HostedFieldsTokenizePayload {
     

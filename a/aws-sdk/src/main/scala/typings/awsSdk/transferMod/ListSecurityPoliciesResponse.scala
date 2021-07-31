@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityPoliciesResponse extends StObject {
   
   /**
     * When you can get additional results from the ListSecurityPolicies operation, a NextToken parameter is returned in the output. In a following command, you can pass in the NextToken parameter to continue listing security policies.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.undefined
   
   /**
     * An array of security policies that were listed.
     */
-  var SecurityPolicyNames: typings.awsSdk.transferMod.SecurityPolicyNames = js.native
+  var SecurityPolicyNames: typings.awsSdk.transferMod.SecurityPolicyNames
 }
 object ListSecurityPoliciesResponse {
   

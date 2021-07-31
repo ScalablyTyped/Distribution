@@ -3,7 +3,6 @@ package typings.nodegit.mod
 import typings.nodegit.stashMod.StashApplyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Stash")
@@ -13,41 +12,36 @@ class Stash ()
 /* static members */
 object Stash {
   
-  @JSImport("nodegit", "Stash.apply")
+  @JSImport("nodegit", "Stash")
   @js.native
-  def apply(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = js.native
-  @JSImport("nodegit", "Stash.apply")
-  @js.native
-  def apply(repo: typings.nodegit.repositoryMod.Repository, index: Double, options: StashApplyOptions): js.Promise[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodegit", "Stash.applyInitOptions")
-  @js.native
-  def applyInitOptions(opts: StashApplyOptions, version: Double): Double = js.native
+  @scala.inline
+  def apply(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def apply(repo: typings.nodegit.repositoryMod.Repository, index: Double, options: StashApplyOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("nodegit", "Stash.drop")
-  @js.native
-  def drop(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = js.native
+  @scala.inline
+  def applyInitOptions(opts: StashApplyOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("applyInitOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("nodegit", "Stash.foreach")
-  @js.native
-  def foreach(repo: typings.nodegit.repositoryMod.Repository): js.Promise[Double] = js.native
-  @JSImport("nodegit", "Stash.foreach")
-  @js.native
-  def foreach(repo: typings.nodegit.repositoryMod.Repository, callback: js.Function): js.Promise[Double] = js.native
+  @scala.inline
+  def drop(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("drop")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("nodegit", "Stash.pop")
-  @js.native
-  def pop(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = js.native
-  @JSImport("nodegit", "Stash.pop")
-  @js.native
-  def pop(repo: typings.nodegit.repositoryMod.Repository, index: Double, options: StashApplyOptions): js.Promise[Double] = js.native
+  @scala.inline
+  def foreach(repo: typings.nodegit.repositoryMod.Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def foreach(repo: typings.nodegit.repositoryMod.Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("nodegit", "Stash.save")
-  @js.native
+  @scala.inline
+  def pop(repo: typings.nodegit.repositoryMod.Repository, index: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pop")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def pop(repo: typings.nodegit.repositoryMod.Repository, index: Double, options: StashApplyOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pop")(repo.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  
+  @scala.inline
   def save(
     repo: typings.nodegit.repositoryMod.Repository,
     stasher: typings.nodegit.signatureMod.Signature,
     message: String,
     flags: Double
-  ): js.Promise[typings.nodegit.oidMod.Oid] = js.native
+  ): js.Promise[typings.nodegit.oidMod.Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(repo.asInstanceOf[js.Any], stasher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.oidMod.Oid]]
 }

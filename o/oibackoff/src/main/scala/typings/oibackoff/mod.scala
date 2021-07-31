@@ -5,29 +5,27 @@ import typings.oibackoff.oibackoffStrings.fibonacci
 import typings.oibackoff.oibackoffStrings.incremental
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("oibackoff", "backoff")
+  @JSImport("oibackoff", JSImport.Namespace)
   @js.native
-  def backoff(): BackoffInstance = js.native
-  @JSImport("oibackoff", "backoff")
-  @js.native
-  def backoff(opts: BackoffOptions): BackoffInstance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("oibackoff", "exponential")
-  @js.native
-  def exponential(n: Double): Double = js.native
+  @scala.inline
+  def backoff(): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")().asInstanceOf[BackoffInstance]
+  @scala.inline
+  def backoff(opts: BackoffOptions): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")(opts.asInstanceOf[js.Any]).asInstanceOf[BackoffInstance]
   
-  @JSImport("oibackoff", "fibonacci")
-  @js.native
-  def fibonacci(n: Double): Double = js.native
+  @scala.inline
+  def exponential(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("oibackoff", "incremental")
-  @js.native
-  def incremental(n: Double): Double = js.native
+  @scala.inline
+  def fibonacci(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def incremental(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("incremental")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait BackoffInstance extends StObject {
@@ -228,16 +226,15 @@ object mod {
   
   type BackoffIntermediate[A] = js.Function3[/* err */ A, /* tries */ Double, /* delay */ Double, Boolean]
   
-  @js.native
   trait BackoffOptions extends StObject {
     
-    var algorithm: js.UndefOr[incremental | exponential | fibonacci] = js.native
+    var algorithm: js.UndefOr[incremental | exponential | fibonacci] = js.undefined
     
-    var delayRatio: js.UndefOr[Double] = js.native
+    var delayRatio: js.UndefOr[Double] = js.undefined
     
-    var maxDelay: js.UndefOr[Double] = js.native
+    var maxDelay: js.UndefOr[Double] = js.undefined
     
-    var maxTries: js.UndefOr[Double] = js.native
+    var maxTries: js.UndefOr[Double] = js.undefined
   }
   object BackoffOptions {
     

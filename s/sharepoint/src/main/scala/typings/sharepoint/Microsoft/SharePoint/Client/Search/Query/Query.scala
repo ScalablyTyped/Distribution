@@ -5,12 +5,13 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**Contains information common to all types of search queries.*/
 @js.native
-trait Query extends ClientObject {
+trait Query
+  extends StObject
+     with ClientObject {
   
   def getQuerySuggestionsWithResults(
     iNumberOfQuerySuggestions: Double,

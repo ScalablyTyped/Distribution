@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropDownTree extends Widget_ {
+trait DropDownTree
+  extends StObject
+     with Widget_ {
   
   /** Checks all the nodes in the DropDownTree.
     * @returns {void}
@@ -19,7 +20,7 @@ trait DropDownTree extends Widget_ {
     */
   def checkNode(element: String): Unit = js.native
   def checkNode(element: js.Any): Unit = js.native
-  def checkNode(element: js.Array[_]): Unit = js.native
+  def checkNode(element: js.Array[js.Any]): Unit = js.native
   
   /** Clears the text in the DropDownTree.
     * @returns {void}
@@ -63,7 +64,7 @@ trait DropDownTree extends Widget_ {
     */
   def removeNode(element: String): Unit = js.native
   def removeNode(element: js.Any): Unit = js.native
-  def removeNode(element: js.Array[_]): Unit = js.native
+  def removeNode(element: js.Array[js.Any]): Unit = js.native
   
   /** Selects all the DropDownTree nodes when allowMultiSelection field is enabled in the treeViewSettings property.
     * @returns {void}
@@ -76,7 +77,7 @@ trait DropDownTree extends Widget_ {
     */
   def selectNode(element: String): Unit = js.native
   def selectNode(element: js.Any): Unit = js.native
-  def selectNode(element: js.Array[_]): Unit = js.native
+  def selectNode(element: js.Array[js.Any]): Unit = js.native
   
   /** Shows the DropDownTree control with the popup.
     * @returns {void}
@@ -94,7 +95,7 @@ trait DropDownTree extends Widget_ {
     */
   def unCheckNode(element: String): Unit = js.native
   def unCheckNode(element: js.Any): Unit = js.native
-  def unCheckNode(element: js.Array[_]): Unit = js.native
+  def unCheckNode(element: js.Array[js.Any]): Unit = js.native
   
   /** Unselects all the DropDownTree nodes when allowMultiSelection field of the treeViewSettings property is enabled.
     * @returns {void}
@@ -107,24 +108,23 @@ trait DropDownTree extends Widget_ {
     */
   def unselectNode(element: String): Unit = js.native
   def unselectNode(element: js.Any): Unit = js.native
-  def unselectNode(element: js.Array[_]): Unit = js.native
+  def unselectNode(element: js.Array[js.Any]): Unit = js.native
 }
 object DropDownTree {
   
-  @js.native
   trait BlurEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BlurEventArgs {
     
@@ -157,40 +157,39 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Selected item's ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Selected item's text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** Selected item's text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Selected item's value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -253,36 +252,35 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait CheckChangeEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Selected item's ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Selected item's text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Selected item's value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CheckChangeEventArgs {
     
@@ -339,28 +337,27 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Selected item's text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Selected item's value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -405,20 +402,19 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -451,20 +447,19 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -497,32 +492,31 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait FilteringEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data items of theDropDownTreeView.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the search string typed in the search box.
       */
-    var searchString: js.UndefOr[String] = js.native
+    var searchString: js.UndefOr[String] = js.undefined
     
     /** Selected item's text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FilteringEventArgs {
     
@@ -573,20 +567,19 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait FocusEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusEventArgs {
     
@@ -619,165 +612,164 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires the action once the DropDownTree is created.
       */
-    var Create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var Create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Uses the keyboard for any action, including opening and closing the drop-down tree; navigating, expanding, and collapsing nodes of the dropdown tree; and more.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Fires the action when the DropDownTree is about to lose focus.
       */
-    var blur: js.UndefOr[js.Function1[/* e */ BlurEventArgs, Unit]] = js.native
+    var blur: js.UndefOr[js.Function1[/* e */ BlurEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the DropDownTree control's value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the list item checkbox value is changed.
       */
-    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.native
+    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.undefined
     
     /** Fires the action once the popup is closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for DropDownTree that allows customization of appearance.
       * @Default {``}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled. When you enter the delimiter value, the text after the delimiter is considered as a
       * separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,), semi-colon (;), or any other special
       * character.
       * @Default {,}
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /** Fires the action when DropDownTree is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The enabled animation property uses the easeOutQuad animation to SlideDown and SlideUp the popup wrapper in 200 and 100 milliseconds, respectively.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to continue the DropDownTree model state in the page using applicable medium, i.e., HTML5 localStorage or cookies.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DropDownTree textbox direction from right to left alignment.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether the DropDownTree control responds to user interaction or not. By default, the control is in the enabled mode and can be disabled by setting this to false.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** When the enableFilterSearch is enabled, the filtering action is fired as soon as you start typing in the DropDownTree.
       */
-    var filtering: js.UndefOr[js.Function1[/* e */ FilteringEventArgs, Unit]] = js.native
+    var filtering: js.UndefOr[js.Function1[/* e */ FilteringEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the DropDownTree is focused.
       */
-    var focus: js.UndefOr[js.Function1[/* e */ FocusEventArgs, Unit]] = js.native
+    var focus: js.UndefOr[js.Function1[/* e */ FocusEventArgs, Unit]] = js.undefined
     
     /** Creates footer with text or HTML elements for the dropdown items.
       * @Default {null}
       */
-    var footerTemplate: js.UndefOr[String] = js.native
+    var footerTemplate: js.UndefOr[String] = js.undefined
     
     /** Serves as a patch of the entries comprising the path (that is set in the entry area) of the selected node.
       * @Default {'/'}
       */
-    var fullPathDelimiter: js.UndefOr[String] = js.native
+    var fullPathDelimiter: js.UndefOr[String] = js.undefined
     
     /** Creates header with text or HTML elements for the dropdown items.
       * @Default {null}
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the DropDownTree textbox.
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Allows you to set a particular country or regional language for the DropDownTree.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Fires the action once the popup is opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Customizes the height and width of the popup wrapper.
       * @Default {{height: '152px',width: 'auto',showPopupOnLoad: false}}
       */
-    var popupSettings: js.UndefOr[PopupSettings] = js.native
+    var popupSettings: js.UndefOr[PopupSettings] = js.undefined
     
     /** Specifies that the DropDownTree textbox values should be read-only.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Fires the action when the list of nodes in the DropDownTree is selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** The DropDownTree's textbox is displayed with rounded corner style.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the targetID for the DropDownTree's items.
       * @Default {null}
       */
-    var targetID: js.UndefOr[String] = js.native
+    var targetID: js.UndefOr[String] = js.undefined
     
     /** Specifies the delimiter between nodes (indicating their hierarchy).
       * @Default {ej.DropDownTree.TextMode.none}
       */
-    var textMode: js.UndefOr[Textmode | String] = js.native
+    var textMode: js.UndefOr[Textmode | String] = js.undefined
     
     /** Defines the popup settings of the DropDownTree widget. You can use any property which are in treeview using this property.
       * @Default {{}}
       */
-    var treeViewSettings: js.UndefOr[js.Any] = js.native
+    var treeViewSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the jQuery validation error message in the DropDownTree.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the jQuery validation rules in the DropDownTree.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownTree control. For the single selection mode, the selected item's value will be returned in its data type, and for
       * MultiSelectMode, returns the selected items values separated by delimiter in string type.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /** Specifies a short hint that describes the expected value of the DropDownTree control.
       * @Default {null}
       */
-    var watermarkText: js.UndefOr[String] = js.native
+    var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DropDownTree textbox.
       * @Default {100%}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -990,28 +982,27 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Selected item's text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Selected item's value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -1056,20 +1047,19 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait PopupSettings extends StObject {
     
     /** Defines the height of the popup wrapper in the DropDownTree control.
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** The DropDownTree control is displayed with the popup.
       */
-    var showPopupOnLoad: js.UndefOr[Boolean] = js.native
+    var showPopupOnLoad: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the width of the popup wrapper in the DropDownTree control.
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object PopupSettings {
     
@@ -1102,36 +1092,35 @@ object DropDownTree {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** If the event has to be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Selected item's ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Selected item's text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Event name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Selected item's value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     

@@ -2,21 +2,19 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColourspaceEnum extends StObject {
   
-  var `b-w`: String = js.native
+  var `b-w`: String
   
-  var bw: String = js.native
+  var bw: String
   
-  var cmyk: String = js.native
+  var cmyk: String
   
-  var multiband: String = js.native
+  var multiband: String
   
-  var srgb: String = js.native
+  var srgb: String
 }
 object ColourspaceEnum {
   

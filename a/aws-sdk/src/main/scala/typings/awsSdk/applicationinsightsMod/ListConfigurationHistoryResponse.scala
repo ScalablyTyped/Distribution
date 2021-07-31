@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationHistoryResponse extends StObject {
   
   /**
     *  The list of configuration events and their corresponding details. 
     */
-  var EventList: js.UndefOr[ConfigurationEventList] = js.native
+  var EventList: js.UndefOr[ConfigurationEventList] = js.undefined
   
   /**
     * The NextToken value to include in a future ListConfigurationHistory request. When the results of a ListConfigurationHistory request exceed MaxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListConfigurationHistoryResponse {
   

@@ -11,8 +11,8 @@ $merge and $patch keywords for Ajv JSON-Schema validator to extend schemas
 | Full name          | ajv-merge-patch |
 | Keywords           | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, $merge, $patch, keyword |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1045276 |
+| # dependents       | 19 |
+| # downloads        | 1349151 |
 | # stars            | 1 |
 
 ## Links

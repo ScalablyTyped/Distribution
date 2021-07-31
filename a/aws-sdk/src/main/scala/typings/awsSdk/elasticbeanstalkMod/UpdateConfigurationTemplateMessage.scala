@@ -2,36 +2,34 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationTemplateMessage extends StObject {
   
   /**
     * The name of the application associated with the configuration template to update.  If no application is found with this name, UpdateConfigurationTemplate returns an InvalidParameterValue error. 
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * A new description for the configuration.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * A list of configuration option settings to update with the new specified option value.
     */
-  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.native
+  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.undefined
   
   /**
     * A list of configuration options to remove from the configuration set.  Constraint: You can remove only UserDefined configuration options. 
     */
-  var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.native
+  var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.undefined
   
   /**
     * The name of the configuration template to update.  If no configuration template is found with this name, UpdateConfigurationTemplate returns an InvalidParameterValue error. 
     */
-  var TemplateName: ConfigurationTemplateName = js.native
+  var TemplateName: ConfigurationTemplateName
 }
 object UpdateConfigurationTemplateMessage {
   

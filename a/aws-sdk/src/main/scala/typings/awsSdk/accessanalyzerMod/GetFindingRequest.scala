@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingRequest extends StObject {
   
   /**
     * The ARN of the analyzer that generated the finding.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * The ID of the finding to retrieve.
     */
-  var id: FindingId = js.native
+  var id: FindingId
 }
 object GetFindingRequest {
   

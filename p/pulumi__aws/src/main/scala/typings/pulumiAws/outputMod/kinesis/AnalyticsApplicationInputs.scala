@@ -2,54 +2,52 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputs extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesisStream`.
     * See Kinesis Firehose below for more details.
     */
-  var kinesisFirehose: js.UndefOr[AnalyticsApplicationInputsKinesisFirehose] = js.native
+  var kinesisFirehose: js.UndefOr[AnalyticsApplicationInputsKinesisFirehose] = js.undefined
   
   /**
     * The Kinesis Stream configuration for the streaming source. Conflicts with `kinesisFirehose`.
     * See Kinesis Stream below for more details.
     */
-  var kinesisStream: js.UndefOr[AnalyticsApplicationInputsKinesisStream] = js.native
+  var kinesisStream: js.UndefOr[AnalyticsApplicationInputsKinesisStream] = js.undefined
   
   /**
     * The Name Prefix to use when creating an in-application stream.
     */
-  var namePrefix: String = js.native
+  var namePrefix: String
   
   /**
     * The number of Parallel in-application streams to create.
     * See Parallelism below for more details.
     */
-  var parallelism: AnalyticsApplicationInputsParallelism = js.native
+  var parallelism: AnalyticsApplicationInputsParallelism
   
   /**
     * The Processing Configuration to transform records as they are received from the stream.
     * See Processing Configuration below for more details.
     */
-  var processingConfiguration: js.UndefOr[AnalyticsApplicationInputsProcessingConfiguration] = js.native
+  var processingConfiguration: js.UndefOr[AnalyticsApplicationInputsProcessingConfiguration] = js.undefined
   
   /**
     * The Schema format of the data in the streaming source. See Source Schema below for more details.
     */
-  var schema: AnalyticsApplicationInputsSchema = js.native
+  var schema: AnalyticsApplicationInputsSchema
   
-  var startingPositionConfigurations: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration] = js.native
+  var startingPositionConfigurations: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration]
   
-  var streamNames: js.Array[String] = js.native
+  var streamNames: js.Array[String]
 }
 object AnalyticsApplicationInputs {
   

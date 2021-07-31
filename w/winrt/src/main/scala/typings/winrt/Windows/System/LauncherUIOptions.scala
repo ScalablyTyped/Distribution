@@ -5,11 +5,11 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.UI.Popups.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LauncherUIOptions extends ILauncherUIOptions
+trait LauncherUIOptions
+  extends StObject
+     with ILauncherUIOptions
 object LauncherUIOptions {
   
   @scala.inline

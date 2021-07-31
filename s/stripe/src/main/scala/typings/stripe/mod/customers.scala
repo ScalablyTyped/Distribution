@@ -20,22 +20,22 @@ import typings.stripe.stripeStrings.reverse
 import typings.stripe.stripeStrings.source
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customers {
   
-  @js.native
-  trait IBankAccountSourceListOptions extends IListOptions {
+  trait IBankAccountSourceListOptions
+    extends StObject
+       with IListOptions {
     
-    var `object`: bank_account = js.native
+    var `object`: bank_account
   }
   object IBankAccountSourceListOptions {
     
     @scala.inline
-    def apply(`object`: bank_account): IBankAccountSourceListOptions = {
+    def apply(): IBankAccountSourceListOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[IBankAccountSourceListOptions]
     }
     
@@ -47,17 +47,18 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICardSourceListOptions extends IListOptions {
+  trait ICardSourceListOptions
+    extends StObject
+       with IListOptions {
     
-    var `object`: card = js.native
+    var `object`: card
   }
   object ICardSourceListOptions {
     
     @scala.inline
-    def apply(`object`: card): ICardSourceListOptions = {
+    def apply(): ICardSourceListOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceListOptions]
     }
     
@@ -74,16 +75,17 @@ object customers {
     * with the same customer. The API allows you to create, delete, and update your customers. You can
     * retrieve individual customers as well as a list of all your customers.
     */
-  @js.native
-  trait ICustomer extends IResourceObject {
+  trait ICustomer
+    extends StObject
+       with IResourceObject {
     
     /**
       * This field has been renamed to balance and will be removed in a future API version.
       * @deprecated
       */
-    var account_balance: js.UndefOr[Double] = js.native
+    var account_balance: js.UndefOr[Double] = js.undefined
     
-    var address: IAddress | Null = js.native
+    var address: IAddress | Null
     
     /**
       * Current balance, if any, being stored on the customer. If negative, the customer has credit
@@ -92,106 +94,106 @@ object customers {
       * takes into account amounts that have yet to be successfully applied to any invoice. This
       * balance is only taken into account as invoices are finalized.
       */
-    var balance: js.UndefOr[Double] = js.native
+    var balance: js.UndefOr[Double] = js.undefined
     
-    var cards: js.UndefOr[CustomerCards] = js.native
+    var cards: js.UndefOr[CustomerCards] = js.undefined
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The currency the customer can be charged in for recurring billing purposes (subscriptions, invoices, invoice items).
       */
-    var currency: String | Null = js.native
+    var currency: String | Null
     
     /**
       * ID of the default source attached to this customer. [Expandable]
       */
-    var default_source: String | IStripeSource | Null = js.native
+    var default_source: String | IStripeSource | Null
     
     /**
       * Whether or not the latest charge for the customer's latest invoice has failed
       */
-    var delinquent: Boolean = js.native
+    var delinquent: Boolean
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Describes the current discount active on the customer, if there is one.
       */
-    var discount: js.UndefOr[IDiscount] = js.native
+    var discount: js.UndefOr[IDiscount] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for the customer used to generate unique invoice numbers.
       */
-    var invoice_prefix: js.UndefOr[String] = js.native
+    var invoice_prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Default invoice settings for this customer.
       */
-    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.native
+    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * The customer’s full name or business name.
       */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Value is 'customer'
       */
     @JSName("object")
-    var object_ICustomer: customer = js.native
+    var object_ICustomer: customer
     
     /**
       * The customer’s phone number.
       */
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     /**
       * The customer’s preferred locales (languages), ordered by preference.
       */
-    var preferred_locales: js.UndefOr[js.Array[String]] = js.native
+    var preferred_locales: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Shipping information associated with the customer.
       */
-    var shipping: IShippingInformation | Null = js.native
+    var shipping: IShippingInformation | Null
     
     /**
       * The customer’s payment sources, if any
       */
-    var sources: js.UndefOr[IList[IStripeSource]] = js.native
+    var sources: js.UndefOr[IList[IStripeSource]] = js.undefined
     
     /**
       * The customer's current subscriptions, if any
       */
-    var subscriptions: ICustomerSubscriptions = js.native
+    var subscriptions: ICustomerSubscriptions
     
     /**
       * Describes the customer’s tax exemption status. One of none, exempt, or reverse.
       * When set to reverse, invoice and receipt PDFs include the text “Reverse charge”.
       */
-    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.native
+    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
     
     /**
       * The customer’s tax IDs.
       */
-    var tax_ids: js.UndefOr[IList[ITaxId]] = js.native
+    var tax_ids: js.UndefOr[IList[ITaxId]] = js.undefined
     
     /**
       * @deprecated
       */
-    var tax_info: js.UndefOr[js.Any] = js.native
+    var tax_info: js.UndefOr[js.Any] = js.undefined
     
     /**
       * @deprecated
       */
-    var tax_info_verification: js.UndefOr[js.Any] = js.native
+    var tax_info_verification: js.UndefOr[js.Any] = js.undefined
   }
   object ICustomer {
     
@@ -202,11 +204,10 @@ object customers {
       id: String,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: customer,
       subscriptions: ICustomerSubscriptions
     ): ICustomer = {
-      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], address = null, currency = null, default_source = null, shipping = null)
+      __obj.updateDynamic("object")("customer")
       __obj.asInstanceOf[ICustomer]
     }
     
@@ -362,11 +363,12 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICustomerBankAccountSourceCreationOptions extends ICustomerSourceCreationOptions {
+  trait ICustomerBankAccountSourceCreationOptions
+    extends StObject
+       with ICustomerSourceCreationOptions {
     
     @JSName("source")
-    var source_ICustomerBankAccountSourceCreationOptions: ISourceCreationOptions = js.native
+    var source_ICustomerBankAccountSourceCreationOptions: ISourceCreationOptions
   }
   object ICustomerBankAccountSourceCreationOptions {
     
@@ -384,11 +386,12 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICustomerCardSourceCreationOptions extends ICustomerSourceCreationOptions {
+  trait ICustomerCardSourceCreationOptions
+    extends StObject
+       with ICustomerSourceCreationOptions {
     
     @JSName("source")
-    var source_ICustomerCardSourceCreationOptions: ICardSourceCreationOptions = js.native
+    var source_ICustomerCardSourceCreationOptions: ICardSourceCreationOptions
   }
   object ICustomerCardSourceCreationOptions {
     
@@ -406,108 +409,109 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
+  trait ICustomerCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * This field has been renamed to balance and will be removed in a future API version.
       * @deprecated
       */
-    var account_balance: js.UndefOr[Double] = js.native
+    var account_balance: js.UndefOr[Double] = js.undefined
     
-    var address: js.UndefOr[IAddress] = js.native
+    var address: js.UndefOr[IAddress] = js.undefined
     
     /***
       * An integer amount in cents that represents the customer’s current balance, which affect the
       * customer’s future invoices. A negative amount represents a credit that decreases the amount
       * due on an invoice; a positive amount increases the amount due on an invoice.
       */
-    var balance: js.UndefOr[Double] = js.native
+    var balance: js.UndefOr[Double] = js.undefined
     
     /**
       * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
       * API will not have the discount.
       */
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
     /**
       * An arbitrary string that you can attach to a customer object. It is displayed alongside the customer in the dashboard. This can
       * be unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Customer's email address. It's displayed alongside the customer in your dashboard and can be useful for searching and tracking.
       * This can be unset by updating the value to null and then saving.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for the customer used to generate unique invoice numbers. Must be 3–12 uppercase letters or numbers.
       */
-    var invoice_prefix: js.UndefOr[String] = js.native
+    var invoice_prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Default invoice settings for this customer.
       */
-    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.native
+    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
     
     /**
       * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the PaymentMethod to attach to the customer.
       */
-    var payment_method: js.UndefOr[String] = js.native
+    var payment_method: js.UndefOr[String] = js.undefined
     
     /**
       * The customer’s phone number. This can be unset by updating the value to null and then saving.
       */
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     /**
       * The identifier of the plan to subscribe the customer to. If provided, the returned customer object will have a list of subscriptions
       * that the customer is currently subscribed to. If you subscribe a customer to a plan without a free trial, the customer must have a
       * valid card as well.
       */
-    var plan: js.UndefOr[String] = js.native
+    var plan: js.UndefOr[String] = js.undefined
     
     /**
       * Customer’s preferred languages, ordered by preference. This can be unset by updating the value to null and then saving.
       */
-    var preferred_locales: js.UndefOr[js.Array[String]] = js.native
+    var preferred_locales: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The quantity you'd like to apply to the subscription you're creating (if you pass in a plan). For example, if your plan is
       * 10 cents/user/month, and your customer has 5 users, you could pass 5 as the quantity to have the customer charged 50 cents
       * (5 x 10 cents) monthly. Defaults to 1 if not set. Only applies when the plan parameter is also provided.
       */
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var shipping: js.UndefOr[IShippingInformation] = js.native
+    var shipping: js.UndefOr[IShippingInformation] = js.undefined
     
     /**
       * The source can either be a token, like the ones returned by our Stripe.js, or
       * a dictionary containing a user’s credit card details.
       */
-    var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.native
+    var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.undefined
     
     /**
       * The customer’s tax exemption. One of none, exempt, or reverse.
       */
-    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.native
+    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
     
     /**
       * The customer’s tax IDs.
       */
-    var tax_id_data: js.UndefOr[js.Array[Type]] = js.native
+    var tax_id_data: js.UndefOr[js.Array[Type]] = js.undefined
     
     /**
       * @deprecated
       */
-    var tax_info: js.UndefOr[js.Any] = js.native
+    var tax_info: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A positive decimal (with at most two decimal places) between 1 and 100.
@@ -516,14 +520,14 @@ object customers {
       * For example, a plan which charges $10/month with a tax_percent of 20.0
       * will charge $12 per invoice. Can only be used if a plan is provided.
       */
-    var tax_percent: js.UndefOr[Double] = js.native
+    var tax_percent: js.UndefOr[Double] = js.undefined
     
     /**
       * Unix timestamp representing the end of the trial period the customer will get before being charged. If set, trial_end will
       * override the default trial period of the plan the customer is being subscribed to. The special value now can be provided to
       * end the customer's trial immediately. Only applies when the plan parameter is also provided.
       */
-    var trial_end: js.UndefOr[Double | now] = js.native
+    var trial_end: js.UndefOr[Double | now] = js.undefined
   }
   object ICustomerCreationOptions {
     
@@ -673,24 +677,23 @@ object customers {
     }
   }
   
-  @js.native
   trait ICustomerInvoiceSettings extends StObject {
     
     /**
       * Default custom fields to be displayed on invoices for this customer.
       */
-    var custom_fields: js.UndefOr[js.Array[Name]] = js.native
+    var custom_fields: js.UndefOr[js.Array[Name]] = js.undefined
     
     /**
       * ID of the default payment method used for subscriptions and invoices for the customer.
       */
-    var default_payment_method: js.UndefOr[String] = js.native
+    var default_payment_method: js.UndefOr[String] = js.undefined
     
     /**
       * Default footer to be displayed on invoices for this customer.
       * This can be unset by updating the value to null and then saving.
       */
-    var footer: js.UndefOr[String] = js.native
+    var footer: js.UndefOr[String] = js.undefined
   }
   object ICustomerInvoiceSettings {
     
@@ -726,13 +729,14 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICustomerListOptions extends IListOptionsCreated {
+  trait ICustomerListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * A filter on the list based on the customer’s email field. The value must be a string.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
   }
   object ICustomerListOptions {
     
@@ -753,8 +757,9 @@ object customers {
     }
   }
   
-  @js.native
-  trait ICustomerSourceCreationOptions extends IDataOptionsWithMetadata {
+  trait ICustomerSourceCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * When adding a card to a customer, the parameter name is source. When
@@ -763,7 +768,7 @@ object customers {
       * dictionary containing a user’s credit card details (with the options shown
       * below). Stripe will automatically validate the card.
       */
-    var source: String | ICardSourceCreationOptions | ISourceCreationOptions = js.native
+    var source: String | ICardSourceCreationOptions | ISourceCreationOptions
   }
   object ICustomerSourceCreationOptions {
     
@@ -786,74 +791,75 @@ object customers {
     extends CustomerSubscriptions
        with IList[ISubscription]
   
-  @js.native
-  trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
+  trait ICustomerUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * This field has been renamed to balance and will be removed in a future API version.
       * @deprecated
       */
-    var account_balance: js.UndefOr[Double] = js.native
+    var account_balance: js.UndefOr[Double] = js.undefined
     
-    var address: js.UndefOr[IAddress] = js.native
+    var address: js.UndefOr[IAddress] = js.undefined
     
     /**
       * An integer amount in cents that represents the customer’s current balance, which affect the
       * customer’s future invoices. A negative amount represents a credit that decreases the amount
       * due on an invoice; a positive amount increases the amount due on an invoice.
       */
-    var balance: js.UndefOr[Double] = js.native
+    var balance: js.UndefOr[Double] = js.undefined
     
     /**
       * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
       * API will not have the discount.
       */
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
     /**
       * ID of source to make the customer’s new default for invoice payments
       */
-    var default_source: js.UndefOr[String] = js.native
+    var default_source: js.UndefOr[String] = js.undefined
     
     /**
       * An arbitrary string that you can attach to a customer object. It is displayed alongside the customer in the dashboard. This can
       * be unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Customer's email address. It's displayed alongside the customer in your dashboard and can be useful for searching and tracking.
       * This can be unset by updating the value to null and then saving.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for the customer used to generate unique invoice numbers.
       */
-    var invoice_prefix: js.UndefOr[String] = js.native
+    var invoice_prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Default invoice settings for this customer.
       */
-    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.native
+    var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
     
     /**
       * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The customer’s phone number. This can be unset by updating the value to null and then saving.
       */
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     /**
       * Customer’s preferred languages, ordered by preference. This can be unset by updating
       * the value to null and then saving.
       */
-    var preferred_locales: js.UndefOr[js.Array[String] | Null] = js.native
+    var preferred_locales: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var shipping: js.UndefOr[IShippingInformation] = js.native
+    var shipping: js.UndefOr[IShippingInformation] = js.undefined
     
     /**
       * The source can either be a token, like the ones returned by our Stripe.js, or
@@ -864,17 +870,17 @@ object customers {
       * default, use the card creation API. Whenever you attach a card to a
       * customer, Stripe will automatically validate the card.
       */
-    var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.native
+    var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.undefined
     
     /**
       * The customer’s tax exemption. One of none, exempt, or reverse.
       */
-    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.native
+    var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
     
     /**
       * @deprecated
       */
-    var tax_info: js.UndefOr[js.Any] = js.native
+    var tax_info: js.UndefOr[js.Any] = js.undefined
   }
   object ICustomerUpdateOptions {
     
@@ -994,17 +1000,18 @@ object customers {
     }
   }
   
-  @js.native
-  trait ISourceListOptions extends IListOptions {
+  trait ISourceListOptions
+    extends StObject
+       with IListOptions {
     
-    var `object`: source = js.native
+    var `object`: source
   }
   object ISourceListOptions {
     
     @scala.inline
-    def apply(`object`: source): ISourceListOptions = {
+    def apply(): ISourceListOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("source")
       __obj.asInstanceOf[ISourceListOptions]
     }
     

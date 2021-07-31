@@ -3,50 +3,48 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaChannelSection extends StObject {
   
   /**
     * The contentDetails object contains details about the channel section
     * content, such as a list of playlists or channels featured in the section.
     */
-  var contentDetails: js.UndefOr[SchemaChannelSectionContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaChannelSectionContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the channel section.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#channelSection&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Localizations for different languages
     */
-  var localizations: js.UndefOr[StringDictionary[SchemaChannelSectionLocalization]] = js.native
+  var localizations: js.UndefOr[StringDictionary[SchemaChannelSectionLocalization]] = js.undefined
   
   /**
     * The snippet object contains basic details about the channel section, such
     * as its type, style and title.
     */
-  var snippet: js.UndefOr[SchemaChannelSectionSnippet] = js.native
+  var snippet: js.UndefOr[SchemaChannelSectionSnippet] = js.undefined
   
   /**
     * The targeting object contains basic targeting settings about the channel
     * section.
     */
-  var targeting: js.UndefOr[SchemaChannelSectionTargeting] = js.native
+  var targeting: js.UndefOr[SchemaChannelSectionTargeting] = js.undefined
 }
 object SchemaChannelSection {
   

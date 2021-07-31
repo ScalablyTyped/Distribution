@@ -2,13 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitResolutionRename1to2 extends GitResolutionMergeContent {
+trait GitResolutionRename1to2
+  extends StObject
+     with GitResolutionMergeContent {
   
-  var action: GitResolutionRename1to2Action = js.native
+  var action: GitResolutionRename1to2Action
 }
 object GitResolutionRename1to2 {
   

@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends Widget_ {
+trait Menu
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -56,7 +57,7 @@ trait Menu extends Widget_ {
     * @returns {void}
     */
   def hideItems(itemID: String): Unit = js.native
-  def hideItems(itemID: js.Array[_]): Unit = js.native
+  def hideItems(itemID: js.Array[js.Any]): Unit = js.native
   
   /** Insert the menu item as child of target node.
     * @param {any} Information about Menu item.
@@ -90,7 +91,7 @@ trait Menu extends Widget_ {
     * @returns {void}
     */
   def remove(target: js.Any): Unit = js.native
-  def remove(target: js.Array[_]): Unit = js.native
+  def remove(target: js.Array[js.Any]): Unit = js.native
   
   /** To show the Menu control.
     * @param {number} x co-ordinate position of context menu.
@@ -106,28 +107,27 @@ trait Menu extends Widget_ {
     * @returns {void}
     */
   def showItems(itemID: String): Unit = js.native
-  def showItems(itemID: js.Array[_]): Unit = js.native
+  def showItems(itemID: js.Array[js.Any]): Unit = js.native
 }
 object Menu {
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -166,32 +166,31 @@ object Menu {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the selected item
       */
-    var selectedItem: js.UndefOr[Double] = js.native
+    var selectedItem: js.UndefOr[Double] = js.undefined
     
     /** returns clicked menu item text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -242,20 +241,19 @@ object Menu {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -288,16 +286,15 @@ object Menu {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -324,16 +321,15 @@ object Menu {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -360,60 +356,59 @@ object Menu {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** It receives the child data for the inner level.
       */
-    var child: js.UndefOr[js.Any] = js.native
+    var child: js.UndefOr[js.Any] = js.undefined
     
     /** It receives datasource as Essential DataManager object and JSON object.
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the HTML attributes to â€œLIâ€ item list.
       */
-    var htmlAttribute: js.UndefOr[String] = js.native
+    var htmlAttribute: js.UndefOr[String] = js.undefined
     
     /** Specifies the id to menu items list
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the image attribute to â€œimgâ€ tag inside items list.
       */
-    var imageAttribute: js.UndefOr[String] = js.native
+    var imageAttribute: js.UndefOr[String] = js.undefined
     
     /** Specifies the image URL to â€œimgâ€ tag inside item list.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Adds custom attributes like &quot;target&quot; to the anchor tag of the menu items.
       */
-    var linkAttribute: js.UndefOr[String] = js.native
+    var linkAttribute: js.UndefOr[String] = js.undefined
     
     /** Specifies the parent id of the table.
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** It receives query to retrieve data from the table (query is same as SQL).
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the sprite CSS class to â€œLIâ€ item list.
       */
-    var spriteCssClass: js.UndefOr[String] = js.native
+    var spriteCssClass: js.UndefOr[String] = js.undefined
     
     /** It receives table name to execute query on the corresponding table.
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
     /** Specifies the text of menu items list.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL to the anchor tag in menu item list.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -506,28 +501,27 @@ object Menu {
     }
   }
   
-  @js.native
   trait KeydownEventArgs extends StObject {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns clicked menu item text
       */
-    var menuText: js.UndefOr[String] = js.native
+    var menuText: js.UndefOr[String] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeydownEventArgs {
     
@@ -572,171 +566,170 @@ object Menu {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** To enable or disable the Animation while hover or click an menu items.See AnimationType
       * @Default {ej.AnimationType.Default}
       */
-    var animationType: js.UndefOr[AnimationType | String] = js.native
+    var animationType: js.UndefOr[AnimationType | String] = js.undefined
     
     /** Fires before context menu gets open.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Fires when mouse click on menu items.
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Fire when context menu on close.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the container element selectors for submenuâ€™s collision. The submenu gets displayed based on spacing available with respect to container element.
       * @Default {null}
       */
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     /** Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
       * @Default {null}
       */
-    var contextMenuTarget: js.UndefOr[String] = js.native
+    var contextMenuTarget: js.UndefOr[String] = js.undefined
     
     /** Fires to create menu items.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires to destroy menu items.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** To enable or disable the Animation effect while hover or click an menu items.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the root menu items to be aligned center in horizontal menu.
       * @Default {false}
       */
-    var enableCenterAlign: js.UndefOr[Boolean] = js.native
+    var enableCenterAlign: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the menu items to be displayed in right to left direction.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When this property sets to false, the menu items is displayed without any separators.
       * @Default {true}
       */
-    var enableSeparator: js.UndefOr[Boolean] = js.native
+    var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Enable / Disable the Menu control.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the target which needs to be excluded. i.e., The context menu will not be displayed in those specified targets.
       * @Default {null}
       */
-    var excludeTarget: js.UndefOr[String] = js.native
+    var excludeTarget: js.UndefOr[String] = js.undefined
     
     /** Fields used to bind the data source and it includes following field members to make data bind easier.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Specifies the height of the root menu.
       * @Default {auto}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to menu control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Enables/disables responsive support for the Menu control during the window resizing time.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when key down on menu items.
       */
-    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.native
+    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.undefined
     
     /** Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu mode.See MenuType
       * @Default {ej.MenuType.NormalMenu}
       */
-    var menuType: js.UndefOr[String | MenuType] = js.native
+    var menuType: js.UndefOr[String | MenuType] = js.undefined
     
     /** Fires when mouse out from menu items.
       */
-    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.native
+    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.undefined
     
     /** Fires when mouse over the Menu items.
       */
-    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
+    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Fires when context menu on open.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the sub menu items to be show or open only on click.
       * @Default {false}
       */
-    var openOnClick: js.UndefOr[Boolean] = js.native
+    var openOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See Orientation
       * @Default {ej.Orientation.Horizontal}
       */
-    var orientation: js.UndefOr[Orientation | String] = js.native
+    var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Fires when overflow popup menu closes.
       */
-    var overflowClose: js.UndefOr[js.Function1[/* e */ OverflowCloseEventArgs, Unit]] = js.native
+    var overflowClose: js.UndefOr[js.Function1[/* e */ OverflowCloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup menu height.
       * @Default {auto}
       */
-    var overflowHeight: js.UndefOr[String | Double] = js.native
+    var overflowHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Fires when overflow popup menu opens.
       */
-    var overflowOpen: js.UndefOr[js.Function1[/* e */ OverflowOpenEventArgs, Unit]] = js.native
+    var overflowOpen: js.UndefOr[js.Function1[/* e */ OverflowOpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup menu width.
       * @Default {auto}
       */
-    var overflowWidth: js.UndefOr[String | Double] = js.native
+    var overflowWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the main menu items arrows only to be shown if it contains child items.
       * @Default {true}
       */
-    var showRootLevelArrows: js.UndefOr[Boolean] = js.native
+    var showRootLevelArrows: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the sub menu items arrows only to be shown if it contains child items.
       * @Default {true}
       */
-    var showSubLevelArrows: js.UndefOr[Boolean] = js.native
+    var showSubLevelArrows: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies position of pull down submenu that will appear on mouse over.See Direction
       * @Default {ej.Direction.Right}
       */
-    var subMenuDirection: js.UndefOr[String | Direction] = js.native
+    var subMenuDirection: js.UndefOr[String | Direction] = js.undefined
     
     /** Specifies the title to responsive menu.
       * @Default {Menu}
       */
-    var titleText: js.UndefOr[String] = js.native
+    var titleText: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the main menu.
       * @Default {auto}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -961,28 +954,27 @@ object Menu {
     }
   }
   
-  @js.native
   trait MouseoutEventArgs extends StObject {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns clicked menu item text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseoutEventArgs {
     
@@ -1027,28 +1019,27 @@ object Menu {
     }
   }
   
-  @js.native
   trait MouseoverEventArgs extends StObject {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns clicked menu item text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseoverEventArgs {
     
@@ -1093,20 +1084,19 @@ object Menu {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -1139,24 +1129,23 @@ object Menu {
     }
   }
   
-  @js.native
   trait OverflowCloseEventArgs extends StObject {
     
     /** if the event should be cancelled ; otherwise ,false
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OverflowCloseEventArgs {
     
@@ -1195,24 +1184,23 @@ object Menu {
     }
   }
   
-  @js.native
   trait OverflowOpenEventArgs extends StObject {
     
     /** if the event should be cancelled ; otherwise ,false
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns the menu model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OverflowOpenEventArgs {
     

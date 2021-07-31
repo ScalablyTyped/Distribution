@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventTopicsResult extends StObject {
   
   /**
     * A list of SNS topic names that receive status messages from the specified Directory ID.
     */
-  var EventTopics: js.UndefOr[typings.awsSdk.directoryserviceMod.EventTopics] = js.native
+  var EventTopics: js.UndefOr[typings.awsSdk.directoryserviceMod.EventTopics] = js.undefined
 }
 object DescribeEventTopicsResult {
   

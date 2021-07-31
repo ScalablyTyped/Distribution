@@ -2,76 +2,74 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMonitoringExecutionsRequest extends StObject {
   
   /**
     * A filter that returns only jobs created after a specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only jobs created before a specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Name of a specific endpoint to fetch jobs for.
     */
-  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.native
+  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.undefined
   
   /**
     * A filter that returns only jobs modified before a specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only jobs modified after a specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of jobs to return in the response. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * Name of a specific schedule to fetch jobs for.
     */
-  var MonitoringScheduleName: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringScheduleName] = js.native
+  var MonitoringScheduleName: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringScheduleName] = js.undefined
   
   /**
     * The token returned if the response is truncated. To retrieve the next set of job executions, use it in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * Filter for jobs scheduled after a specified time.
     */
-  var ScheduledTimeAfter: js.UndefOr[Timestamp] = js.native
+  var ScheduledTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Filter for jobs scheduled before a specified time.
     */
-  var ScheduledTimeBefore: js.UndefOr[Timestamp] = js.native
+  var ScheduledTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Whether to sort results by Status, CreationTime, ScheduledTime field. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[MonitoringExecutionSortKey] = js.native
+  var SortBy: js.UndefOr[MonitoringExecutionSortKey] = js.undefined
   
   /**
     * Whether to sort the results in Ascending or Descending order. The default is Descending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that retrieves only jobs with a specific status.
     */
-  var StatusEquals: js.UndefOr[ExecutionStatus] = js.native
+  var StatusEquals: js.UndefOr[ExecutionStatus] = js.undefined
 }
 object ListMonitoringExecutionsRequest {
   

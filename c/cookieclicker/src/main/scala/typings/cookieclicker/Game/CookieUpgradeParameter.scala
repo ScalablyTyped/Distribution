@@ -2,25 +2,23 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieUpgradeParameter extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var power: Double = js.native
+  var power: Double
   
   /**
     * The name of cookie required to unlock the cookie
     */
-  var require: js.UndefOr[String] = js.native
+  var require: js.UndefOr[String] = js.undefined
   
   /**
     * The season required to unlock the cookie
     */
-  var season: js.UndefOr[String] = js.native
+  var season: js.UndefOr[String] = js.undefined
 }
 object CookieUpgradeParameter {
   

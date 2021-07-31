@@ -3,43 +3,41 @@ package typings.reactNativeElements.mod
 import typings.reactNativeElements.anon.Android
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors_ extends StObject {
   
-  val disabled: String = js.native
+  val disabled: String
   
-  val divider: String = js.native
+  val divider: String
   
-  val error: String = js.native
+  val error: String
   
-  val grey0: String = js.native
+  val grey0: String
   
-  val grey1: String = js.native
+  val grey1: String
   
-  val grey2: String = js.native
+  val grey2: String
   
-  val grey3: String = js.native
+  val grey3: String
   
-  val grey4: String = js.native
+  val grey4: String
   
-  val grey5: String = js.native
+  val grey5: String
   
-  val greyOutline: String = js.native
+  val greyOutline: String
   
-  val platform: Android = js.native
+  val platform: Android
   
-  val primary: String = js.native
+  val primary: String
   
-  val searchBg: String = js.native
+  val searchBg: String
   
-  val secondary: String = js.native
+  val secondary: String
   
-  val success: String = js.native
+  val success: String
   
-  val warning: String = js.native
+  val warning: String
 }
 object Colors_ {
   

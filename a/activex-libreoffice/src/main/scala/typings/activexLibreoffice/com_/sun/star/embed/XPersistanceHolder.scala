@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.io.XStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to disconnect an object from its persistence. */
-@js.native
-trait XPersistanceHolder extends XInterface {
+trait XPersistanceHolder
+  extends StObject
+     with XInterface {
   
   /**
     * connects the object to a persistence.
@@ -18,14 +18,14 @@ trait XPersistanceHolder extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def connectPersistance(xStream: XStream): Unit = js.native
+  def connectPersistance(xStream: XStream): Unit
   
   /**
     * disconnects the object from the persistence.
     * @throws com::sun::star::io::IOException in case of io problems
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def disconnectPersistence(): Unit = js.native
+  def disconnectPersistence(): Unit
 }
 object XPersistanceHolder {
   

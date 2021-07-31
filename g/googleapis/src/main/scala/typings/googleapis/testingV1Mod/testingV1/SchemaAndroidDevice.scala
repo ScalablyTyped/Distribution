@@ -2,38 +2,36 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Android device.
   */
-@js.native
 trait SchemaAndroidDevice extends StObject {
   
   /**
     * Required. The id of the Android device to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var androidModelId: js.UndefOr[String] = js.native
+  var androidModelId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The id of the Android OS version to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var androidVersionId: js.UndefOr[String] = js.native
+  var androidVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The locale the test device used for testing. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Required. How the device is oriented during the test. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
 }
 object SchemaAndroidDevice {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServicePerimetersResponse extends StObject {
   
   /** The pagination token to retrieve the next page of results. If the value is empty, no further results remain. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of the Service Perimeter instances. */
-  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.native
+  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.undefined
 }
 object ListServicePerimetersResponse {
   

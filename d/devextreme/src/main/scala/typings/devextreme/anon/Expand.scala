@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expand extends StObject {
   
-  var expand: js.UndefOr[String | js.Array[String]] = js.native
+  var expand: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var select: js.UndefOr[String | js.Array[String]] = js.native
+  var select: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Expand {
   

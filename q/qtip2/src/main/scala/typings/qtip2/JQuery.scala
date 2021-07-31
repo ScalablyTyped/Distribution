@@ -80,203 +80,216 @@ import typings.qtip2.qtip2Strings.toggle
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def qtip(): JQuery = js.native
-  def qtip(methodName: String): js.Any = js.native
-  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any, p3: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.Any, p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.Any, p2: js.Any): js.Any = js.native
-  def qtip(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
-  def qtip(methodName: option, propertyName: content): Content = js.native
-  def qtip(methodName: option, propertyName: contentDotattr): String = js.native
-  def qtip(methodName: option, propertyName: contentDotattr, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: contentDotbutton): String | JQuery | Boolean = js.native
-  def qtip(methodName: option, propertyName: contentDotbutton, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: contentDotbutton, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: contentDotbutton, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: contentDottext): Text = js.native
-  def qtip(methodName: option, propertyName: contentDottext, value: Text): Api = js.native
-  def qtip(methodName: option, propertyName: contentDottitle): Title = js.native
-  def qtip(methodName: option, propertyName: contentDottitle, value: Title): Api = js.native
-  def qtip(methodName: option, propertyName: contentDottitle, value: typings.qtip2.anon.Text): Api = js.native
-  def qtip(methodName: option, propertyName: content, value: Content): Api = js.native
-  def qtip(methodName: option, propertyName: content, value: Text): Api = js.native
-  def qtip(methodName: option, propertyName: events): Events = js.native
-  def qtip(methodName: option, propertyName: eventsDotblur): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotblur, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDotfocus): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotfocus, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDothidden): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDothidden, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDothide): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDothide, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDotmove): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotmove, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDotrender): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotrender, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDotshow): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotshow, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDottoggle): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDottoggle, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: eventsDotvisible): EventApiFunc = js.native
-  def qtip(methodName: option, propertyName: eventsDotvisible, value: EventApiFunc): Api = js.native
-  def qtip(methodName: option, propertyName: events, value: Events): Api = js.native
-  def qtip(methodName: option, propertyName: hide): Hide = js.native
-  def qtip(methodName: option, propertyName: hideDotdelay): Double = js.native
-  def qtip(methodName: option, propertyName: hideDotdistance): Double | Boolean = js.native
-  def qtip(methodName: option, propertyName: hideDotdistance, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotdistance, value: Double): Api = js.native
-  def qtip(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
-  def qtip(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
-  def qtip(methodName: option, propertyName: hideDoteffect, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotevent): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: hideDotevent, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotevent, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotfixed, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotinactive, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotinactive, value: Double): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotleave): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: hideDotleave, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: hideDotleave, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDottarget): JQuery | Boolean = js.native
-  def qtip(methodName: option, propertyName: hideDottarget, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: hideDottarget, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: hide, value: Hide): Api = js.native
-  def qtip(methodName: option, propertyName: id): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: id, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: id, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: metadata): js.Any = js.native
-  def qtip(methodName: option, propertyName: metadata, value: js.Any): Api = js.native
-  def qtip(methodName: option, propertyName: overwrite): Boolean = js.native
-  def qtip(methodName: option, propertyName: overwrite, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: position): Position = js.native
-  def qtip(methodName: option, propertyName: positionDotadjust): PositionAdjust = js.native
-  def qtip(methodName: option, propertyName: positionDotadjust, value: PositionAdjust): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotat): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: positionDotat, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotat, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotcontainer): JQuery | Boolean = js.native
-  def qtip(methodName: option, propertyName: positionDotcontainer, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotcontainer, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit]) = js.native
+  def qtip(): JQuery
+  def qtip(methodName: String): js.Any
+  def qtip(methodName: String, p1: js.Any): js.Any
+  def qtip(methodName: String, p1: js.Any, p2: js.Any): js.Any
+  def qtip(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any
+  def qtip(methodName: String, p1: js.Any, p2: Unit, p3: js.Any): js.Any
+  def qtip(methodName: String, p1: Unit, p2: js.Any): js.Any
+  def qtip(methodName: String, p1: Unit, p2: js.Any, p3: js.Any): js.Any
+  def qtip(methodName: String, p1: Unit, p2: Unit, p3: js.Any): js.Any
+  def qtip(methodName: option, propertyName: content): Content
+  def qtip(methodName: option, propertyName: contentDotattr): String
+  def qtip(methodName: option, propertyName: contentDotattr, value: String): Api
+  def qtip(methodName: option, propertyName: contentDotbutton): String | JQuery | Boolean
+  def qtip(methodName: option, propertyName: contentDotbutton, value: String): Api
+  def qtip(methodName: option, propertyName: contentDotbutton, value: Boolean): Api
+  def qtip(methodName: option, propertyName: contentDotbutton, value: JQuery): Api
+  def qtip(methodName: option, propertyName: contentDottext): Text
+  def qtip(methodName: option, propertyName: contentDottext, value: Text): Api
+  def qtip(methodName: option, propertyName: contentDottitle): Title
+  def qtip(methodName: option, propertyName: contentDottitle, value: Title): Api
+  def qtip(methodName: option, propertyName: contentDottitle, value: typings.qtip2.anon.Text): Api
+  def qtip(methodName: option, propertyName: content, value: Content): Api
+  def qtip(methodName: option, propertyName: content, value: Text): Api
+  def qtip(methodName: option, propertyName: events): Events
+  def qtip(methodName: option, propertyName: eventsDotblur): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotblur, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDotfocus): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotfocus, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDothidden): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDothidden, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDothide): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDothide, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDotmove): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotmove, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDotrender): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotrender, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDotshow): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotshow, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDottoggle): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDottoggle, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: eventsDotvisible): EventApiFunc
+  def qtip(methodName: option, propertyName: eventsDotvisible, value: EventApiFunc): Api
+  def qtip(methodName: option, propertyName: events, value: Events): Api
+  def qtip(methodName: option, propertyName: hide): Hide
+  def qtip(methodName: option, propertyName: hideDotdelay): Double
+  def qtip(methodName: option, propertyName: hideDotdistance): Double | Boolean
+  def qtip(methodName: option, propertyName: hideDotdistance, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDotdistance, value: Double): Api
+  def qtip(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit])
+  def qtip(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api
+  def qtip(methodName: option, propertyName: hideDoteffect, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDotevent): String | Boolean
+  def qtip(methodName: option, propertyName: hideDotevent, value: String): Api
+  def qtip(methodName: option, propertyName: hideDotevent, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDotfixed, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDotinactive, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDotinactive, value: Double): Api
+  def qtip(methodName: option, propertyName: hideDotleave): String | Boolean
+  def qtip(methodName: option, propertyName: hideDotleave, value: String): Api
+  def qtip(methodName: option, propertyName: hideDotleave, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDottarget): JQuery | Boolean
+  def qtip(methodName: option, propertyName: hideDottarget, value: Boolean): Api
+  def qtip(methodName: option, propertyName: hideDottarget, value: JQuery): Api
+  def qtip(methodName: option, propertyName: hide, value: Hide): Api
+  def qtip(methodName: option, propertyName: id): String | Boolean
+  def qtip(methodName: option, propertyName: id, value: String): Api
+  def qtip(methodName: option, propertyName: id, value: Boolean): Api
+  def qtip(methodName: option, propertyName: metadata): js.Any
+  def qtip(methodName: option, propertyName: metadata, value: js.Any): Api
+  def qtip(methodName: option, propertyName: overwrite): Boolean
+  def qtip(methodName: option, propertyName: overwrite, value: Boolean): Api
+  def qtip(methodName: option, propertyName: position): Position
+  def qtip(methodName: option, propertyName: positionDotadjust): PositionAdjust
+  def qtip(methodName: option, propertyName: positionDotadjust, value: PositionAdjust): Api
+  def qtip(methodName: option, propertyName: positionDotat): String | Boolean
+  def qtip(methodName: option, propertyName: positionDotat, value: String): Api
+  def qtip(methodName: option, propertyName: positionDotat, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDotcontainer): JQuery | Boolean
+  def qtip(methodName: option, propertyName: positionDotcontainer, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDotcontainer, value: JQuery): Api
+  def qtip(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit])
   def qtip(
     methodName: option,
     propertyName: positionDoteffect,
     value: js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit]
-  ): Api = js.native
-  def qtip(methodName: option, propertyName: positionDoteffect, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotmy): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: positionDotmy, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotmy, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDottarget): Target | Boolean = js.native
-  def qtip(methodName: option, propertyName: positionDottarget, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDottarget, value: Target): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotviewport): JQuery | Boolean = js.native
-  def qtip(methodName: option, propertyName: positionDotviewport, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: positionDotviewport, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: position, value: Position): Api = js.native
-  def qtip(methodName: option, propertyName: prerender): Boolean = js.native
-  def qtip(methodName: option, propertyName: prerender, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: show): Show = js.native
-  def qtip(methodName: option, propertyName: showDotdelay): Double = js.native
-  def qtip(methodName: option, propertyName: showDotdelay, value: Double): Api = js.native
-  def qtip(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
-  def qtip(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
-  def qtip(methodName: option, propertyName: showDoteffect, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDotevent): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: showDotevent, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: showDotevent, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDotmodal): Boolean | Modal = js.native
-  def qtip(methodName: option, propertyName: showDotmodal, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDotmodal, value: Modal): Api = js.native
-  def qtip(methodName: option, propertyName: showDotready): Boolean = js.native
-  def qtip(methodName: option, propertyName: showDotready, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDotsolo): JQuery | String | Boolean = js.native
-  def qtip(methodName: option, propertyName: showDotsolo, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: showDotsolo, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDotsolo, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: showDottarget): JQuery | Boolean = js.native
-  def qtip(methodName: option, propertyName: showDottarget, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: showDottarget, value: JQuery): Api = js.native
-  def qtip(methodName: option, propertyName: show, value: Show): Api = js.native
-  def qtip(methodName: option, propertyName: style): Style = js.native
-  def qtip(methodName: option, propertyName: styleDotclasses): String | Boolean = js.native
-  def qtip(methodName: option, propertyName: styleDotclasses, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotclasses, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotdef): Boolean = js.native
-  def qtip(methodName: option, propertyName: styleDotdef, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotheight): String | Double | Boolean = js.native
-  def qtip(methodName: option, propertyName: styleDotheight, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotheight, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotheight, value: Double): Api = js.native
-  def qtip(methodName: option, propertyName: styleDottip): String | Boolean | Tip = js.native
-  def qtip(methodName: option, propertyName: styleDottip, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: styleDottip, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDottip, value: Tip): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotwidget): Boolean = js.native
-  def qtip(methodName: option, propertyName: styleDotwidget, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotwidth): String | Double | Boolean = js.native
-  def qtip(methodName: option, propertyName: styleDotwidth, value: String): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotwidth, value: Boolean): Api = js.native
-  def qtip(methodName: option, propertyName: styleDotwidth, value: Double): Api = js.native
-  def qtip(methodName: option, propertyName: style, value: Style): Api = js.native
-  def qtip(methodName: option, propertyName: suppress): Boolean = js.native
-  def qtip(methodName: option, propertyName: suppress, value: Boolean): Api = js.native
-  def qtip(options: QTipOptions): JQuery = js.native
+  ): Api
+  def qtip(methodName: option, propertyName: positionDoteffect, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDotmy): String | Boolean
+  def qtip(methodName: option, propertyName: positionDotmy, value: String): Api
+  def qtip(methodName: option, propertyName: positionDotmy, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDottarget): Target | Boolean
+  def qtip(methodName: option, propertyName: positionDottarget, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDottarget, value: Target): Api
+  def qtip(methodName: option, propertyName: positionDotviewport): JQuery | Boolean
+  def qtip(methodName: option, propertyName: positionDotviewport, value: Boolean): Api
+  def qtip(methodName: option, propertyName: positionDotviewport, value: JQuery): Api
+  def qtip(methodName: option, propertyName: position, value: Position): Api
+  def qtip(methodName: option, propertyName: prerender): Boolean
+  def qtip(methodName: option, propertyName: prerender, value: Boolean): Api
+  def qtip(methodName: option, propertyName: show): Show
+  def qtip(methodName: option, propertyName: showDotdelay): Double
+  def qtip(methodName: option, propertyName: showDotdelay, value: Double): Api
+  def qtip(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit])
+  def qtip(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api
+  def qtip(methodName: option, propertyName: showDoteffect, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDotevent): String | Boolean
+  def qtip(methodName: option, propertyName: showDotevent, value: String): Api
+  def qtip(methodName: option, propertyName: showDotevent, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDotmodal): Boolean | Modal
+  def qtip(methodName: option, propertyName: showDotmodal, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDotmodal, value: Modal): Api
+  def qtip(methodName: option, propertyName: showDotready): Boolean
+  def qtip(methodName: option, propertyName: showDotready, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDotsolo): JQuery | String | Boolean
+  def qtip(methodName: option, propertyName: showDotsolo, value: String): Api
+  def qtip(methodName: option, propertyName: showDotsolo, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDotsolo, value: JQuery): Api
+  def qtip(methodName: option, propertyName: showDottarget): JQuery | Boolean
+  def qtip(methodName: option, propertyName: showDottarget, value: Boolean): Api
+  def qtip(methodName: option, propertyName: showDottarget, value: JQuery): Api
+  def qtip(methodName: option, propertyName: show, value: Show): Api
+  def qtip(methodName: option, propertyName: style): Style
+  def qtip(methodName: option, propertyName: styleDotclasses): String | Boolean
+  def qtip(methodName: option, propertyName: styleDotclasses, value: String): Api
+  def qtip(methodName: option, propertyName: styleDotclasses, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDotdef): Boolean
+  def qtip(methodName: option, propertyName: styleDotdef, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDotheight): String | Double | Boolean
+  def qtip(methodName: option, propertyName: styleDotheight, value: String): Api
+  def qtip(methodName: option, propertyName: styleDotheight, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDotheight, value: Double): Api
+  def qtip(methodName: option, propertyName: styleDottip): String | Boolean | Tip
+  def qtip(methodName: option, propertyName: styleDottip, value: String): Api
+  def qtip(methodName: option, propertyName: styleDottip, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDottip, value: Tip): Api
+  def qtip(methodName: option, propertyName: styleDotwidget): Boolean
+  def qtip(methodName: option, propertyName: styleDotwidget, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDotwidth): String | Double | Boolean
+  def qtip(methodName: option, propertyName: styleDotwidth, value: String): Api
+  def qtip(methodName: option, propertyName: styleDotwidth, value: Boolean): Api
+  def qtip(methodName: option, propertyName: styleDotwidth, value: Double): Api
+  def qtip(methodName: option, propertyName: style, value: Style): Api
+  def qtip(methodName: option, propertyName: suppress): Boolean
+  def qtip(methodName: option, propertyName: suppress, value: Boolean): Api
+  def qtip(options: QTipOptions): JQuery
   @JSName("qtip")
-  var qtip_Original: Plugin = js.native
+  var qtip_Original: Plugin
   @JSName("qtip")
-  def qtip_api(methodName: api): Api = js.native
+  def qtip_api(methodName: api): Api
   @JSName("qtip")
-  def qtip_blur(methodName: blur): JQuery = js.native
+  def qtip_blur(methodName: blur): JQuery
   @JSName("qtip")
-  def qtip_blur(methodName: blur, event: Event): JQuery = js.native
+  def qtip_blur(methodName: blur, event: Event): JQuery
   @JSName("qtip")
-  def qtip_destroy(methodName: destroy): JQuery = js.native
+  def qtip_destroy(methodName: destroy): JQuery
   @JSName("qtip")
-  def qtip_destroy(methodName: destroy, immediate: Boolean): JQuery = js.native
+  def qtip_destroy(methodName: destroy, immediate: Boolean): JQuery
   @JSName("qtip")
-  def qtip_disable(methodName: disable): JQuery = js.native
+  def qtip_disable(methodName: disable): JQuery
   @JSName("qtip")
-  def qtip_disable(methodName: disable, state: Boolean): JQuery = js.native
+  def qtip_disable(methodName: disable, state: Boolean): JQuery
   @JSName("qtip")
-  def qtip_enable(methodName: enable): JQuery = js.native
+  def qtip_enable(methodName: enable): JQuery
   @JSName("qtip")
-  def qtip_focus(methodName: focus): JQuery = js.native
+  def qtip_focus(methodName: focus): JQuery
   @JSName("qtip")
-  def qtip_focus(methodName: focus, event: Event): JQuery = js.native
+  def qtip_focus(methodName: focus, event: Event): JQuery
   @JSName("qtip")
-  def qtip_hide(methodName: hide): JQuery = js.native
+  def qtip_hide(methodName: hide): JQuery
   @JSName("qtip")
-  def qtip_hide(methodName: hide, event: Event): JQuery = js.native
+  def qtip_hide(methodName: hide, event: Event): JQuery
   @JSName("qtip")
-  def qtip_option(methodName: option, properties: QTipOptions): Api = js.native
+  def qtip_option(methodName: option, properties: QTipOptions): Api
   @JSName("qtip")
-  def qtip_reposition(methodName: reposition): JQuery = js.native
+  def qtip_reposition(methodName: reposition): JQuery
   @JSName("qtip")
-  def qtip_reposition(methodName: reposition, event: js.UndefOr[scala.Nothing], effect: Boolean): JQuery = js.native
+  def qtip_reposition(methodName: reposition, event: Unit, effect: Boolean): JQuery
   @JSName("qtip")
-  def qtip_reposition(methodName: reposition, event: Event): JQuery = js.native
+  def qtip_reposition(methodName: reposition, event: Event): JQuery
   @JSName("qtip")
-  def qtip_reposition(methodName: reposition, event: Event, effect: Boolean): JQuery = js.native
+  def qtip_reposition(methodName: reposition, event: Event, effect: Boolean): JQuery
   @JSName("qtip")
-  def qtip_show(methodName: show): JQuery = js.native
+  def qtip_show(methodName: show): JQuery
   @JSName("qtip")
-  def qtip_show(methodName: show, event: Event): JQuery = js.native
+  def qtip_show(methodName: show, event: Event): JQuery
   @JSName("qtip")
-  def qtip_toggle(methodName: toggle): JQuery = js.native
+  def qtip_toggle(methodName: toggle): JQuery
   @JSName("qtip")
-  def qtip_toggle(methodName: toggle, state: js.UndefOr[scala.Nothing], event: Event): JQuery = js.native
+  def qtip_toggle(methodName: toggle, state: Boolean): JQuery
   @JSName("qtip")
-  def qtip_toggle(methodName: toggle, state: Boolean): JQuery = js.native
+  def qtip_toggle(methodName: toggle, state: Boolean, event: Event): JQuery
   @JSName("qtip")
-  def qtip_toggle(methodName: toggle, state: Boolean, event: Event): JQuery = js.native
+  def qtip_toggle(methodName: toggle, state: Unit, event: Event): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(qtip: Plugin): JQuery = {
+    val __obj = js.Dynamic.literal(qtip = qtip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setQtip(value: Plugin): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
+  }
 }

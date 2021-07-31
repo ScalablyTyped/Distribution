@@ -2,7 +2,6 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,50 +11,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the metric is calculated globally by counting the total number of correctly
   * predicted rows.
   */
-@js.native
 trait SchemaAggregateClassificationMetrics extends StObject {
   
   /**
     * Accuracy is the fraction of predictions given the correct label. For
     * multiclass this is a micro-averaged metric.
     */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * The F1 score is an average of recall and precision. For multiclass this
     * is a macro-averaged metric.
     */
-  var f1Score: js.UndefOr[Double] = js.native
+  var f1Score: js.UndefOr[Double] = js.undefined
   
   /**
     * Logarithmic Loss. For multiclass this is a macro-averaged metric.
     */
-  var logLoss: js.UndefOr[Double] = js.native
+  var logLoss: js.UndefOr[Double] = js.undefined
   
   /**
     * Precision is the fraction of actual positive predictions that had
     * positive actual labels. For multiclass this is a macro-averaged metric
     * treating each class as a binary classifier.
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Recall is the fraction of actual positive labels that were given a
     * positive prediction. For multiclass this is a macro-averaged metric.
     */
-  var recall: js.UndefOr[Double] = js.native
+  var recall: js.UndefOr[Double] = js.undefined
   
   /**
     * Area Under a ROC Curve. For multiclass this is a macro-averaged metric.
     */
-  var rocAuc: js.UndefOr[Double] = js.native
+  var rocAuc: js.UndefOr[Double] = js.undefined
   
   /**
     * Threshold at which the metrics are computed. For binary classification
     * models this is the positive class threshold. For multi-class
     * classfication models this is the confidence threshold.
     */
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object SchemaAggregateClassificationMetrics {
   

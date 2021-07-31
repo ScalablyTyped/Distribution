@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSMBFileShareVisibilityInput extends StObject {
   
   /**
     * The shares on this gateway appear when listing shares.
     */
-  var FileSharesVisible: Boolean = js.native
+  var FileSharesVisible: Boolean
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
 }
 object UpdateSMBFileShareVisibilityInput {
   

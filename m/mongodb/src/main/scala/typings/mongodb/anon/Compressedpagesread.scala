@@ -2,27 +2,25 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compressedpagesread extends StObject {
   
-  var `compressed pages read`: Double = js.native
+  var `compressed pages read`: Double
   
-  var `compressed pages written`: Double = js.native
+  var `compressed pages written`: Double
   
-  var `page written failed to compress`: Double = js.native
+  var `page written failed to compress`: Double
   
-  var `page written was too small to compress`: Double = js.native
+  var `page written was too small to compress`: Double
   
   @JSName("raw compression call failed, additional data available")
-  var `raw compression call failedComma additional data available`: Double = js.native
+  var `raw compression call failedComma additional data available`: Double
   
   @JSName("raw compression call failed, no additional data available")
-  var `raw compression call failedComma no additional data available`: Double = js.native
+  var `raw compression call failedComma no additional data available`: Double
   
-  var `raw compression call succeeded`: Double = js.native
+  var `raw compression call succeeded`: Double
 }
 object Compressedpagesread {
   

@@ -3,25 +3,25 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.ENUM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionEnumType extends IntrospectionType {
+trait IntrospectionEnumType
+  extends StObject
+     with IntrospectionType {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enumValues: js.Array[IntrospectionEnumValue] = js.native
+  var enumValues: js.Array[IntrospectionEnumValue]
   
-  var kind: ENUM = js.native
+  var kind: ENUM
   
-  var name: String = js.native
+  var name: String
 }
 object IntrospectionEnumType {
   
   @scala.inline
-  def apply(enumValues: js.Array[IntrospectionEnumValue], kind: ENUM, name: String): IntrospectionEnumType = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(enumValues: js.Array[IntrospectionEnumValue], name: String): IntrospectionEnumType = {
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = "ENUM", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionEnumType]
   }
   

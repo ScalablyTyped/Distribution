@@ -2,56 +2,54 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indice extends StObject {
   
   /**
     * Index creation date.
     */
-  val createdAt: Double = js.native
+  val createdAt: Double
   
   /**
     * Number of bytes of the index in minified format.
     */
-  val dataSize: Double = js.native
+  val dataSize: Double
   
   /**
     * Number of records contained in the index
     */
-  val entries: Double = js.native
+  val entries: Double
   
   /**
     * Number of bytes of the index binary file.
     */
-  val fileSize: Double = js.native
+  val fileSize: Double
   
   /**
     * Last build time in seconds.
     */
-  val lastBuildTimes: Double = js.native
+  val lastBuildTimes: Double
   
   /**
     * Index name.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * Number of pending indexing operations.
     */
-  val numberOfPendingTasks: Double = js.native
+  val numberOfPendingTasks: Double
   
   /**
     * A boolean which says whether the index has pending tasks.
     */
-  val pendingTask: Boolean = js.native
+  val pendingTask: Boolean
   
   /**
     * Date of last update.
     */
-  val updatedAt: Double = js.native
+  val updatedAt: Double
 }
 object Indice {
   

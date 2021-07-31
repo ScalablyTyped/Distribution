@@ -4,54 +4,44 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("iconv-lite", "decode")
+  @JSImport("iconv-lite", JSImport.Namespace)
   @js.native
-  def decode(buffer: Buffer, encoding: String): String = js.native
-  @JSImport("iconv-lite", "decode")
-  @js.native
-  def decode(buffer: Buffer, encoding: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("iconv-lite", "decodeStream")
-  @js.native
-  def decodeStream(encoding: String): ReadWriteStream = js.native
-  @JSImport("iconv-lite", "decodeStream")
-  @js.native
-  def decodeStream(encoding: String, options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def decode(buffer: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def decode(buffer: Buffer, encoding: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("iconv-lite", "encode")
-  @js.native
-  def encode(content: String, encoding: String): Buffer = js.native
-  @JSImport("iconv-lite", "encode")
-  @js.native
-  def encode(content: String, encoding: String, options: Options): Buffer = js.native
+  @scala.inline
+  def decodeStream(encoding: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def decodeStream(encoding: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
-  @JSImport("iconv-lite", "encodeStream")
-  @js.native
-  def encodeStream(encoding: String): ReadWriteStream = js.native
-  @JSImport("iconv-lite", "encodeStream")
-  @js.native
-  def encodeStream(encoding: String, options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def encode(content: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(content.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def encode(content: String, encoding: String, options: Options): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(content.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("iconv-lite", "encodingExists")
-  @js.native
-  def encodingExists(encoding: String): Boolean = js.native
+  @scala.inline
+  def encodeStream(encoding: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def encodeStream(encoding: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
-  @JSImport("iconv-lite", "getDecoder")
-  @js.native
-  def getDecoder(encoding: String): DecoderStream = js.native
-  @JSImport("iconv-lite", "getDecoder")
-  @js.native
-  def getDecoder(encoding: String, options: Options): DecoderStream = js.native
+  @scala.inline
+  def encodingExists(encoding: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingExists")(encoding.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("iconv-lite", "getEncoder")
-  @js.native
-  def getEncoder(encoding: String): EncoderStream = js.native
-  @JSImport("iconv-lite", "getEncoder")
-  @js.native
-  def getEncoder(encoding: String, options: Options): EncoderStream = js.native
+  @scala.inline
+  def getDecoder(encoding: String): DecoderStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecoder")(encoding.asInstanceOf[js.Any]).asInstanceOf[DecoderStream]
+  @scala.inline
+  def getDecoder(encoding: String, options: Options): DecoderStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getDecoder")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecoderStream]
+  
+  @scala.inline
+  def getEncoder(encoding: String): EncoderStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncoder")(encoding.asInstanceOf[js.Any]).asInstanceOf[EncoderStream]
+  @scala.inline
+  def getEncoder(encoding: String, options: Options): EncoderStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoder")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncoderStream]
 }

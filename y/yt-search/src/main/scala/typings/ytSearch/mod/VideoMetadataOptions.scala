@@ -2,13 +2,11 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoMetadataOptions extends StObject {
   
-  var videoId: String = js.native
+  var videoId: String
 }
 object VideoMetadataOptions {
   

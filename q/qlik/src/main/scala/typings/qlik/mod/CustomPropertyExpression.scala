@@ -8,31 +8,31 @@ import typings.qlik.qlikStrings.expression
 import typings.qlik.qlikStrings.measure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyExpression
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: expression = js.native
+  var component: expression
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var expressionType: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression = js.native
+  var expressionType: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression
   
   @JSName("type")
-  var type_CustomPropertyExpression: js.UndefOr[scala.Nothing] = js.native
+  var type_CustomPropertyExpression: Unit
 }
 object CustomPropertyExpression {
   
   @scala.inline
   def apply(
-    component: expression,
-    expressionType: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression
+    expressionType: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression,
+    `type`: Unit
   ): CustomPropertyExpression = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], expressionType = expressionType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = "expression", expressionType = expressionType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyExpression]
   }
   
@@ -52,5 +52,8 @@ object CustomPropertyExpression {
     def setExpressionType(
       value: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression
     ): Self = StObject.set(x, "expressionType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

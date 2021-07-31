@@ -3,13 +3,11 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for BigtableInstanceAdmin.CreateInstance.
   */
-@js.native
 trait SchemaCreateInstanceRequest extends StObject {
   
   /**
@@ -19,25 +17,25 @@ trait SchemaCreateInstanceRequest extends StObject {
     * marked `OutputOnly` must be left blank. Currently, at most two clusters
     * can be specified.
     */
-  var clusters: js.UndefOr[StringDictionary[SchemaCluster]] = js.native
+  var clusters: js.UndefOr[StringDictionary[SchemaCluster]] = js.undefined
   
   /**
     * The instance to create. Fields marked `OutputOnly` must be left blank.
     */
-  var instance: js.UndefOr[SchemaInstance] = js.native
+  var instance: js.UndefOr[SchemaInstance] = js.undefined
   
   /**
     * The ID to be used when referring to the new instance within its project,
     * e.g., just `myinstance` rather than
     * `projects/myproject/instances/myinstance`.
     */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique name of the project in which to create the new instance.
     * Values are of the form `projects/&lt;project&gt;`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateInstanceRequest {
   

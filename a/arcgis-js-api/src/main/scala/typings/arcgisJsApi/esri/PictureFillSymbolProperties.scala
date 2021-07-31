@@ -2,60 +2,60 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PictureFillSymbolProperties extends FillSymbolProperties {
+trait PictureFillSymbolProperties
+  extends StObject
+     with FillSymbolProperties {
   
   /**
     * The height of the image in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#height)
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The URL to the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the image in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#width)
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The offset on the x-axis in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xoffset)
     */
-  var xoffset: js.UndefOr[Double | String] = js.native
+  var xoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The scale factor on the x axis of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xscale)
     */
-  var xscale: js.UndefOr[Double] = js.native
+  var xscale: js.UndefOr[Double] = js.undefined
   
   /**
     * The offset on the y-axis in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yoffset)
     */
-  var yoffset: js.UndefOr[Double | String] = js.native
+  var yoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The scale factor on the y axis of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yscale)
     */
-  var yscale: js.UndefOr[Double] = js.native
+  var yscale: js.UndefOr[Double] = js.undefined
 }
 object PictureFillSymbolProperties {
   

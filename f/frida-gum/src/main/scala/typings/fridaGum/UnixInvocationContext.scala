@@ -2,17 +2,17 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fridaGum.InvocationContext because Already inherited */ @js.native
-trait UnixInvocationContext extends PortableInvocationContext {
+- typings.fridaGum.InvocationContext because Already inherited */ trait UnixInvocationContext
+  extends StObject
+     with PortableInvocationContext {
   
   /**
     * Current errno value (you may replace it).
     */
-  var errno: Double = js.native
+  var errno: Double
 }
 object UnixInvocationContext {
   

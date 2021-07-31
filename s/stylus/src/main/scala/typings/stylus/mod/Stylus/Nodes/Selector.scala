@@ -3,15 +3,15 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Selector extends Node {
+trait Selector
+  extends StObject
+     with Node {
   
-  var inherits: scala.Boolean = js.native
+  var inherits: scala.Boolean
   
-  var segments: js.Array[Node] = js.native
+  var segments: js.Array[Node]
 }
 object Selector {
   

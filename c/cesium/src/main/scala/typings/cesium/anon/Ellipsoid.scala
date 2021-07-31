@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ellipsoid extends StObject {
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.native
+  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.undefined
   
-  var requestVertexNormals: js.UndefOr[Boolean] = js.native
+  var requestVertexNormals: js.UndefOr[Boolean] = js.undefined
   
-  var requestWaterMask: js.UndefOr[Boolean] = js.native
+  var requestWaterMask: js.UndefOr[Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Ellipsoid {
   

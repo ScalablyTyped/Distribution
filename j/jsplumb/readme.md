@@ -10,9 +10,9 @@ Visual connectivity for webapps
 | ------------------ | :-------------: |
 | Full name          | jsplumb |
 | Keywords           | javascript, svg, visual, connectivity |
-| # releases         | 43 |
-| # dependents       | 57 |
-| # downloads        | 751410 |
+| # releases         | 44 |
+| # dependents       | 67 |
+| # downloads        | 827329 |
 | # stars            | 2 |
 
 ## Links

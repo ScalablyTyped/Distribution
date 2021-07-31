@@ -9,7 +9,6 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.variablesMod.LayerVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "GRUCell")

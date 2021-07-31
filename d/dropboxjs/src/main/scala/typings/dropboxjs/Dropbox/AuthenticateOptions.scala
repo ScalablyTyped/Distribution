@@ -2,14 +2,12 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Options */
-@js.native
 trait AuthenticateOptions extends StObject {
   
-  var interactive: Boolean = js.native
+  var interactive: Boolean
 }
 object AuthenticateOptions {
   

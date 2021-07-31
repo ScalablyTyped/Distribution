@@ -10,9 +10,9 @@ Maps the values yielded by an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-map |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 78402 |
+| # releases         | 6 |
+| # dependents       | 8 |
+| # downloads        | 346035 |
 | # stars            | 0 |
 
 ## Links

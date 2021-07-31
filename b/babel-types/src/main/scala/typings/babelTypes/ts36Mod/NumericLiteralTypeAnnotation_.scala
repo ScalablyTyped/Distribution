@@ -3,24 +3,23 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.NumericLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericLiteralTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
   @JSName("type")
-  var type_NumericLiteralTypeAnnotation_ : NumericLiteralTypeAnnotation = js.native
+  var type_NumericLiteralTypeAnnotation_ : NumericLiteralTypeAnnotation
 }
 object NumericLiteralTypeAnnotation_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: NumericLiteralTypeAnnotation): NumericLiteralTypeAnnotation_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double): NumericLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NumericLiteralTypeAnnotation")
     __obj.asInstanceOf[NumericLiteralTypeAnnotation_]
   }
   

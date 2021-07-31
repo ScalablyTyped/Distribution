@@ -19,7 +19,6 @@ import typings.maximMazurokGapiClientSqladmin.anon.VerifyConnectionOnly
 import typings.maximMazurokGapiClientSqladmin.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,9 +43,9 @@ trait InstancesResource extends StObject {
   /** Demotes the stand-alone instance to be a Cloud SQL read replica for an external database server. */
   def demoteMaster(request: PrettyPrint): Request[Operation] = js.native
   
-  def export(request: Callback, body: InstancesExportRequest): Request[Operation] = js.native
+  def `export`(request: Callback, body: InstancesExportRequest): Request[Operation] = js.native
   /** Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL dump or CSV file. */
-  def export(request: Project): Request[Operation] = js.native
+  def `export`(request: Project): Request[Operation] = js.native
   
   def failover(request: Callback, body: InstancesFailoverRequest): Request[Operation] = js.native
   /** Failover the instance to its failover replica instance. Using this operation might cause your instance to restart. */

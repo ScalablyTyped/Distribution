@@ -4,25 +4,23 @@ import typings.std.WebAssembly.Memory
 import typings.std.WebAssembly.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Abort extends StObject {
     
     var abort: js.UndefOr[
         js.Function4[/* msg */ Double, /* file */ Double, /* line */ Double, /* column */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var memory: js.UndefOr[Memory] = js.native
+    var memory: js.UndefOr[Memory] = js.undefined
     
-    var table: js.UndefOr[Table] = js.native
+    var table: js.UndefOr[Table] = js.undefined
     
     var trace: js.UndefOr[
         js.Function3[/* msg */ Double, /* numArgs */ js.UndefOr[Double], /* repeated */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Abort {
     

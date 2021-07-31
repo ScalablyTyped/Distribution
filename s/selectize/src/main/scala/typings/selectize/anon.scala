@@ -4,17 +4,15 @@ import typings.selectize.selectizeStrings.asc
 import typings.selectize.selectizeStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Direction extends StObject {
     
-    var direction: js.UndefOr[asc | desc] = js.native
+    var direction: js.UndefOr[asc | desc] = js.undefined
     
-    var field: String = js.native
+    var field: String
   }
   object Direction {
     

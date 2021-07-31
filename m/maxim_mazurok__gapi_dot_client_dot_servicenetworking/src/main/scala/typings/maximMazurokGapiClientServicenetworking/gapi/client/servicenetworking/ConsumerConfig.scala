@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumerConfig extends StObject {
   
   /** Export custom routes flag value for peering from consumer to producer. */
-  var consumerExportCustomRoutes: js.UndefOr[Boolean] = js.native
+  var consumerExportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /** Export subnet routes with public ip flag value for peering from consumer to producer. */
-  var consumerExportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.native
+  var consumerExportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /** Import custom routes flag value for peering from consumer to producer. */
-  var consumerImportCustomRoutes: js.UndefOr[Boolean] = js.native
+  var consumerImportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /** Import subnet routes with public ip flag value for peering from consumer to producer. */
-  var consumerImportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.native
+  var consumerImportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /** Export custom routes flag value for peering from producer to consumer. */
-  var producerExportCustomRoutes: js.UndefOr[Boolean] = js.native
+  var producerExportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /** Export subnet routes with public ip flag value for peering from producer to consumer. */
-  var producerExportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.native
+  var producerExportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /** Import custom routes flag value for peering from producer to consumer. */
-  var producerImportCustomRoutes: js.UndefOr[Boolean] = js.native
+  var producerImportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /** Import subnet routes with public ip flag value for peering from producer to consumer. */
-  var producerImportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.native
+  var producerImportSubnetRoutesWithPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. The VPC host network that is used to host managed service instances. In the format, projects/{project}/global/networks/{network} where {project} is the project number
     * e.g. '12345' and {network} is the network name.
     */
-  var producerNetwork: js.UndefOr[String] = js.native
+  var producerNetwork: js.UndefOr[String] = js.undefined
   
   /** Output only. The reserved ranges associated with this private service access connection. */
-  var reservedRanges: js.UndefOr[js.Array[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]] = js.native
+  var reservedRanges: js.UndefOr[js.Array[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]] = js.undefined
 }
 object ConsumerConfig {
   

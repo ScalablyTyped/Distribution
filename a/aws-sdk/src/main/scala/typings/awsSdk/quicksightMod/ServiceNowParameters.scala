@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceNowParameters extends StObject {
   
   /**
     * URL of the base site.
     */
-  var SiteBaseUrl: typings.awsSdk.quicksightMod.SiteBaseUrl = js.native
+  var SiteBaseUrl: typings.awsSdk.quicksightMod.SiteBaseUrl
 }
 object ServiceNowParameters {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyUsage extends StObject {
   
   /**
     * A string value that contains a Key Usage extension name.
     */
-  var Name: js.UndefOr[KeyUsageName] = js.native
+  var Name: js.UndefOr[KeyUsageName] = js.undefined
 }
 object KeyUsage {
   

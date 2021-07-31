@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteTimeoutPerRequest extends StObject {
   
   /**
     * The unit of time. Valid values: `ms`, `s`.
     */
-  var unit: Input[String] = js.native
+  var unit: Input[String]
   
   /**
     * The number of time units. Minimum value of `0`.
     */
-  var value: Input[Double] = js.native
+  var value: Input[Double]
 }
 object RouteSpecHttp2RouteTimeoutPerRequest {
   

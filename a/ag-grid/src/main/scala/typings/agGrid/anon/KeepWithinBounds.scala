@@ -4,29 +4,27 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeepWithinBounds extends StObject {
   
-  var column: typings.agGrid.columnMod.Column = js.native
+  var column: typings.agGrid.columnMod.Column
   
-  var ePopup: HTMLElement = js.native
+  var ePopup: HTMLElement
   
-  var eventSource: HTMLElement = js.native
+  var eventSource: HTMLElement
   
-  var keepWithinBounds: js.UndefOr[Boolean] = js.native
+  var keepWithinBounds: js.UndefOr[Boolean] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var nudgeX: js.UndefOr[Double] = js.native
+  var nudgeX: js.UndefOr[Double] = js.undefined
   
-  var nudgeY: js.UndefOr[Double] = js.native
+  var nudgeY: js.UndefOr[Double] = js.undefined
   
-  var rowNode: RowNode = js.native
+  var rowNode: RowNode
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object KeepWithinBounds {
   

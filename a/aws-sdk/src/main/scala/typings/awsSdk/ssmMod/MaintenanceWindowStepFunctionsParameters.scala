@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowStepFunctionsParameters extends StObject {
   
   /**
     * The inputs for the STEP_FUNCTIONS task.
     */
-  var Input: js.UndefOr[MaintenanceWindowStepFunctionsInput] = js.native
+  var Input: js.UndefOr[MaintenanceWindowStepFunctionsInput] = js.undefined
   
   /**
     * The name of the STEP_FUNCTIONS task.
     */
-  var Name: js.UndefOr[MaintenanceWindowStepFunctionsName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowStepFunctionsName] = js.undefined
 }
 object MaintenanceWindowStepFunctionsParameters {
   

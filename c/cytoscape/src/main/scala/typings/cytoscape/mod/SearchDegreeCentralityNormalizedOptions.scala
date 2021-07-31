@@ -2,13 +2,11 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.degreeCentralityNormalized
   */
-@js.native
 trait SearchDegreeCentralityNormalizedOptions extends StObject {
   
   /**
@@ -18,16 +16,16 @@ trait SearchDegreeCentralityNormalizedOptions extends StObject {
     * disregards number of edges and solely uses the edge weights
     * in the centrality calculation.
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * A boolean indicating whether the directed indegree and outdegree centrality is calculated (true) or
     * whether the undirected centrality is calculated (false, default).
     */
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
   /**  A function that returns the weight for the edge. */
-  def weight(edge: EdgeSingular): Double = js.native
+  def weight(edge: EdgeSingular): Double
 }
 object SearchDegreeCentralityNormalizedOptions {
   

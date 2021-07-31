@@ -2,19 +2,17 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Derivatives extends StObject {
   
-  var derivatives: js.UndefOr[Boolean] = js.native
+  var derivatives: js.UndefOr[Boolean] = js.undefined
   
-  var drawBuffers: js.UndefOr[Boolean] = js.native
+  var drawBuffers: js.UndefOr[Boolean] = js.undefined
   
-  var fragDepth: js.UndefOr[Boolean] = js.native
+  var fragDepth: js.UndefOr[Boolean] = js.undefined
   
-  var shaderTextureLOD: js.UndefOr[Boolean] = js.native
+  var shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
 }
 object Derivatives {
   

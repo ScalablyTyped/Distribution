@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRateBasedRuleResponse extends StObject {
   
   /**
     * Information about the RateBasedRule that you specified in the GetRateBasedRule request.
     */
-  var Rule: js.UndefOr[RateBasedRule] = js.native
+  var Rule: js.UndefOr[RateBasedRule] = js.undefined
 }
 object GetRateBasedRuleResponse {
   

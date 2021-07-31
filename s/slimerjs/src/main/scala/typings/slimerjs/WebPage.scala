@@ -5,7 +5,6 @@ import typings.slimerjs.anon.Format
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -99,9 +98,9 @@ trait WebPage extends StObject {
   def javaScriptAlertSent(msg: String): Unit = js.native
   
   def javaScriptConsoleMessageSent(msg: String): Unit = js.native
-  def javaScriptConsoleMessageSent(msg: String, lineNum: js.UndefOr[scala.Nothing], sourceId: String): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double, sourceId: String): Unit = js.native
+  def javaScriptConsoleMessageSent(msg: String, lineNum: Unit, sourceId: String): Unit = js.native
   
   // :TODO: elaborate this when documentation improves
   var libraryPath: String = js.native
@@ -129,9 +128,9 @@ trait WebPage extends StObject {
   def onConfirm(msg: String): Boolean = js.native
   
   def onConsoleMessage(msg: String): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: js.UndefOr[scala.Nothing], sourceId: String): js.Any = js.native
   def onConsoleMessage(msg: String, lineNum: Double): js.Any = js.native
   def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): js.Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Unit, sourceId: String): js.Any = js.native
   
   def onError(msg: String, trace: js.Array[String]): js.Any = js.native
   
@@ -159,17 +158,17 @@ trait WebPage extends StObject {
   
   // open(url: string): Promise<string>;
   def open(url: String): js.Promise[String] = js.native
-  def open(url: String, callback: js.Function1[/* status */ String, _]): js.Promise[String] = js.native
-  def open(url: String, method: String, callback: js.Function1[/* status */ String, _]): js.Promise[String] = js.native
+  def open(url: String, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
+  def open(url: String, method: String, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
   // maybe data is missing
   def open(url: String, method: String, data: js.Any): js.Promise[String] = js.native
-  def open(url: String, method: String, data: js.Any, callback: js.Function1[/* status */ String, _]): js.Promise[String] = js.native
+  def open(url: String, method: String, data: js.Any, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
   def open(
     url: String,
     method: String,
     data: js.Any,
     headers: js.Any,
-    callback: js.Function1[/* status */ String, _]
+    callback: js.Function1[/* status */ String, js.Any]
   ): js.Promise[String] = js.native
   
   def openUrl(url: String, httpConf: HttpConf, settings: js.Any): js.Promise[String] = js.native
@@ -210,88 +209,42 @@ trait WebPage extends StObject {
   var scrollPosition: TopLeft = js.native
   
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any): Unit = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    keyOrKeys: js.Any,
-    aNull: js.UndefOr[scala.Nothing],
-    bNull: js.UndefOr[scala.Nothing],
-    modifier: Double
-  ): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.UndefOr[scala.Nothing], bNull: js.Any): Unit = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    keyOrKeys: js.Any,
-    aNull: js.UndefOr[scala.Nothing],
-    bNull: js.Any,
-    modifier: Double
-  ): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any): Unit = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    keyOrKeys: js.Any,
-    aNull: js.Any,
-    bNull: js.UndefOr[scala.Nothing],
-    modifier: Double
-  ): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: Unit, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: Unit, modifier: Double): Unit = js.native
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    key: String,
-    null1: js.UndefOr[scala.Nothing],
-    null2: js.UndefOr[scala.Nothing],
-    modifier: Double
-  ): js.Promise[Unit] = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    key: String,
-    null1: js.UndefOr[scala.Nothing],
-    null2: Null,
-    modifier: Double
-  ): js.Promise[Unit] = js.native
-  def sendEvent(
-    keyboardEventType: String,
-    key: String,
-    null1: Null,
-    null2: js.UndefOr[scala.Nothing],
-    modifier: Double
-  ): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Null, modifier: Double): js.Promise[Unit] = js.native
+  def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Unit, modifier: Double): js.Promise[Unit] = js.native
+  def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Null, modifier: Double): js.Promise[Unit] = js.native
+  def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Unit, modifier: Double): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String): Unit = js.native
-  def sendEvent(
-    mouseEventType: String,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: js.UndefOr[scala.Nothing],
-    button: String
-  ): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double, button: String): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Unit, button: String): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Double): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Double, button: String): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Unit, button: String): Unit = js.native
   @JSName("sendEvent")
   def sendEvent_Promise(mouseEventType: String): js.Promise[Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(
-    mouseEventType: String,
-    mouseX: js.UndefOr[scala.Nothing],
-    mouseY: js.UndefOr[scala.Nothing],
-    button: String
-  ): js.Promise[Unit] = js.native
-  @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double): js.Promise[Unit] = js.native
-  @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double, button: String): js.Promise[Unit] = js.native
-  @JSName("sendEvent")
   def sendEvent_Promise(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
-  @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): js.Promise[Unit] = js.native
   @JSName("sendEvent")
   def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
   @JSName("sendEvent")
   def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
+  @JSName("sendEvent")
+  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Unit, button: String): js.Promise[Unit] = js.native
+  @JSName("sendEvent")
+  def sendEvent_Promise(mouseEventType: String, mouseX: Unit, mouseY: Double): js.Promise[Unit] = js.native
+  @JSName("sendEvent")
+  def sendEvent_Promise(mouseEventType: String, mouseX: Unit, mouseY: Double, button: String): js.Promise[Unit] = js.native
+  @JSName("sendEvent")
+  def sendEvent_Promise(mouseEventType: String, mouseX: Unit, mouseY: Unit, button: String): js.Promise[Unit] = js.native
   
   def setContent(content: String, url: String): Unit = js.native
   @JSName("setContent")

@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** HTMLOptionsCollection is an interface representing a collection of HTML option elements (in document order) and offers methods and properties for traversing the list as well as optionally altering its items. This type is returned solely by the "options" property of select. */
 @js.native
-trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
+trait HTMLOptionsCollection
+  extends StObject
+     with HTMLCollectionOf[HTMLOptionElement] {
   
   def add(element: HTMLOptGroupElement): Unit = js.native
   def add(element: HTMLOptGroupElement, before: Double): Unit = js.native

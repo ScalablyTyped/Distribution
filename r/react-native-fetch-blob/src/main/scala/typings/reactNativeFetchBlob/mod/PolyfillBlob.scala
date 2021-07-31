@@ -3,12 +3,13 @@ package typings.reactNativeFetchBlob.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fetch-blob", "PolyfillBlob")
 @js.native
-class PolyfillBlob protected () extends EventTarget {
+class PolyfillBlob protected ()
+  extends StObject
+     with EventTarget {
   /**
     * RNFetchBlob Blob polyfill, create a Blob directly from file path, BASE64
     * encoded data, and string. The conversion is done implicitly according to
@@ -47,7 +48,7 @@ class PolyfillBlob protected () extends EventTarget {
     * Read data of the Blob object, this is not standard method.
     * @param  encoding Read data with encoding
     */
-  def readBlob(encoding: String): js.Promise[_] = js.native
+  def readBlob(encoding: String): js.Promise[js.Any] = js.native
   
   /**
     * Create a Blob object which is sliced from current object
@@ -56,25 +57,26 @@ class PolyfillBlob protected () extends EventTarget {
     * @param  contentType Optional, content type of new Blob object
     */
   def slice(): PolyfillBlob = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): PolyfillBlob = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): PolyfillBlob = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): PolyfillBlob = js.native
   def slice(start: Double): PolyfillBlob = js.native
-  def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): PolyfillBlob = js.native
   def slice(start: Double, end: Double): PolyfillBlob = js.native
   def slice(start: Double, end: Double, contentType: String): PolyfillBlob = js.native
+  def slice(start: Double, end: Unit, contentType: String): PolyfillBlob = js.native
+  def slice(start: Unit, end: Double): PolyfillBlob = js.native
+  def slice(start: Unit, end: Double, contentType: String): PolyfillBlob = js.native
+  def slice(start: Unit, end: Unit, contentType: String): PolyfillBlob = js.native
 }
 object PolyfillBlob {
   
-  @JSImport("react-native-fetch-blob", "PolyfillBlob.build")
+  @JSImport("react-native-fetch-blob", "PolyfillBlob")
   @js.native
-  def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-fetch-blob", "PolyfillBlob.clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
+  @scala.inline
+  def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(data.asInstanceOf[js.Any], cType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PolyfillBlob]]
   
-  @JSImport("react-native-fetch-blob", "PolyfillBlob.setLog")
-  @js.native
-  def setLog(level: Double): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

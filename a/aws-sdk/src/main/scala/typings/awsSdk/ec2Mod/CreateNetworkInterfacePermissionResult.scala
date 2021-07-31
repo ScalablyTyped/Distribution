@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNetworkInterfacePermissionResult extends StObject {
   
   /**
     * Information about the permission for the network interface.
     */
-  var InterfacePermission: js.UndefOr[NetworkInterfacePermission] = js.native
+  var InterfacePermission: js.UndefOr[NetworkInterfacePermission] = js.undefined
 }
 object CreateNetworkInterfacePermissionResult {
   

@@ -4,12 +4,12 @@ import typings.puppeteer.anon.DelayNumber
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FrameBase
-  extends Evalable
+  extends StObject
+     with Evalable
      with JSEvalable[js.Any] {
   
   /**
@@ -140,14 +140,14 @@ trait FrameBase
   def waitFor(selector: String): js.Promise[ElementHandle[Element]] = js.native
   def waitFor(selector: String, options: WaitForSelectorOptions): js.Promise[ElementHandle[Element]] = js.native
   def waitFor(selector: String, options: WaitForSelectorOptionsHidden): js.Promise[ElementHandle[Element] | Null] = js.native
-  def waitFor(selector: EvaluateFn[_], options: js.UndefOr[scala.Nothing], args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
-  def waitFor(selector: EvaluateFn[_], options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
+  def waitFor(selector: EvaluateFn[js.Any], options: Unit, args: SerializableOrJSHandle*): js.Promise[JSHandle[js.Any]] = js.native
+  def waitFor(selector: EvaluateFn[js.Any], options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[js.Any]] = js.native
   
-  def waitForFunction(fn: EvaluateFn[_], options: js.UndefOr[scala.Nothing], args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
+  def waitForFunction(fn: EvaluateFn[js.Any], options: Unit, args: SerializableOrJSHandle*): js.Promise[JSHandle[js.Any]] = js.native
   /**
     * Allows waiting for various conditions.
     */
-  def waitForFunction(fn: EvaluateFn[_], options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
+  def waitForFunction(fn: EvaluateFn[js.Any], options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[js.Any]] = js.native
   
   /**
     * Wait for the page navigation occur.

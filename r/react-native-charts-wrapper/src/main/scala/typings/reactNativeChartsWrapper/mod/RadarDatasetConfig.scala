@@ -2,12 +2,11 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadarDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with LineScatterCandleRadarConfig
      with LineRadarConfig
 object RadarDatasetConfig {

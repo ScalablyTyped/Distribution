@@ -7,55 +7,53 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifySettings extends StObject {
   
-  var allow_dismiss: js.UndefOr[Boolean] = js.native
+  var allow_dismiss: js.UndefOr[Boolean] = js.undefined
   
-  var allow_duplicates: js.UndefOr[Boolean] = js.native
+  var allow_duplicates: js.UndefOr[Boolean] = js.undefined
   
-  var animate: js.UndefOr[Enter] = js.native
+  var animate: js.UndefOr[Enter] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
-  var icon_type: js.UndefOr[String] = js.native
+  var icon_type: js.UndefOr[String] = js.undefined
   
-  var mouse_over: js.UndefOr[String] = js.native
+  var mouse_over: js.UndefOr[String] = js.undefined
   
-  var newest_on_top: js.UndefOr[Boolean] = js.native
+  var newest_on_top: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double | X] = js.native
+  var offset: js.UndefOr[Double | X] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.undefined
   
-  var onClosed: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.native
+  var onClosed: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.undefined
   
-  var onShown: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.native
+  var onShown: js.UndefOr[js.Function1[/* $ele */ JQuery[HTMLElement], Unit]] = js.undefined
   
-  var placement: js.UndefOr[Align] = js.native
+  var placement: js.UndefOr[Align] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var showProgressbar: js.UndefOr[Boolean] = js.native
+  var showProgressbar: js.UndefOr[Boolean] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var timer: js.UndefOr[Double] = js.native
+  var timer: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url_target: js.UndefOr[String] = js.native
+  var url_target: js.UndefOr[String] = js.undefined
   
-  var z_index: js.UndefOr[Double] = js.native
+  var z_index: js.UndefOr[Double] = js.undefined
 }
 object NotifySettings {
   

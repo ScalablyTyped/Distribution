@@ -2,19 +2,19 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VerifyMessageParams extends CommonParams {
+trait VerifyMessageParams
+  extends StObject
+     with CommonParams {
   
-  var address: String = js.native
+  var address: String
   
-  var coin: String = js.native
+  var coin: String
   
-  var message: String = js.native
+  var message: String
   
-  var signature: String = js.native
+  var signature: String
 }
 object VerifyMessageParams {
   

@@ -5,56 +5,55 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var containerTpl: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.undefined
   
-  var crosshairs: js.UndefOr[Style | Boolean] = js.native
+  var crosshairs: js.UndefOr[Style | Boolean] = js.undefined
   
-  var enterable: js.UndefOr[Boolean] = js.native
+  var enterable: js.UndefOr[Boolean] = js.undefined
   
-  var follow: js.UndefOr[Boolean] = js.native
+  var follow: js.UndefOr[Boolean] = js.undefined
   
-  var `g2-tooltip`: js.UndefOr[CSSProperties] = js.native
+  var `g2-tooltip`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-tooltip-list`: js.UndefOr[CSSProperties] = js.native
+  var `g2-tooltip-list`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-tooltip-list-item`: js.UndefOr[CSSProperties] = js.native
+  var `g2-tooltip-list-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-tooltip-marker`: js.UndefOr[CSSProperties] = js.native
+  var `g2-tooltip-marker`: js.UndefOr[CSSProperties] = js.undefined
   
-  var `g2-tooltip-title`: js.UndefOr[CSSProperties] = js.native
+  var `g2-tooltip-title`: js.UndefOr[CSSProperties] = js.undefined
   
-  var hideMarkers: js.UndefOr[Boolean] = js.native
+  var hideMarkers: js.UndefOr[Boolean] = js.undefined
   
   var htmlContent: js.UndefOr[
-    js.Function2[/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]], String]
-  ] = js.native
+    js.Function2[/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[js.Any]], String]
+  ] = js.undefined
   
-  var inPlot: js.UndefOr[Boolean] = js.native
+  var inPlot: js.UndefOr[Boolean] = js.undefined
   
-  var itemTpl: js.UndefOr[String] = js.native
+  var itemTpl: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var shared: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.undefined
   
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var triggerOn: js.UndefOr[triggerOnType] = js.native
+  var triggerOn: js.UndefOr[triggerOnType] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var useHtml: js.UndefOr[Boolean] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.undefined
 }
 object TooltipProps {
   
@@ -128,7 +127,7 @@ object TooltipProps {
     def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
     @scala.inline
-    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
+    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[js.Any]]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
     
     @scala.inline
     def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)

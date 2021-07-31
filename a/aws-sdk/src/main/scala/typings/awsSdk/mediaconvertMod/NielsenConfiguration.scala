@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NielsenConfiguration extends StObject {
   
   /**
     * Nielsen has discontinued the use of breakout code functionality. If you must include this property, set the value to zero.
     */
-  var BreakoutCode: js.UndefOr[integerMin0Max0] = js.native
+  var BreakoutCode: js.UndefOr[integerMin0Max0] = js.undefined
   
   /**
     * Use Distributor ID (DistributorID) to specify the distributor ID that is assigned to your organization by Neilsen.
     */
-  var DistributorId: js.UndefOr[string] = js.native
+  var DistributorId: js.UndefOr[string] = js.undefined
 }
 object NielsenConfiguration {
   

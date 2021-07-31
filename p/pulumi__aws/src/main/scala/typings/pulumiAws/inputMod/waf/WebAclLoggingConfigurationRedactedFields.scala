@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.waf
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclLoggingConfigurationRedactedFields extends StObject {
   
   /**
     * Set of configuration blocks for fields to redact. Detailed below.
     */
-  var fieldToMatches: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]] = js.native
+  var fieldToMatches: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]
 }
 object WebAclLoggingConfigurationRedactedFields {
   

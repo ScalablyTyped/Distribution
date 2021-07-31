@@ -7,14 +7,15 @@ import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@octokit/request-error", "RequestError")
   @js.native
-  class RequestError protected () extends Error {
+  class RequestError protected ()
+    extends StObject
+       with Error {
     def this(message: String, statusCode: Double, options: RequestErrorOptions) = this()
     
     /**
@@ -29,6 +30,11 @@ object mod {
       */
     var headers: ResponseHeaders = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_RequestError: HttpError = js.native
     

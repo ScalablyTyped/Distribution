@@ -21,7 +21,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,17 +31,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that the `DocumentDefinition` does not denote the actual document (i.e. an object supporting the {@link com.sun.star.frame.XModel} interface),
   * but only a shortcut to access and load those actual documents.
   */
-@js.native
 trait DocumentDefinition
-  extends DefinitionContent
+  extends StObject
+     with DefinitionContent
      with XPropertySet
      with XSubDocument {
   
   /** Indicates if the document is to be used as template, for example, if a report is to be filled with data. */
-  var AsTemplate: Boolean = js.native
+  var AsTemplate: Boolean
   
   /** is the name of the document. If the document is part of the container, it is not possible to alter the name. */
-  var Name: String = js.native
+  var Name: String
 }
 object DocumentDefinition {
   

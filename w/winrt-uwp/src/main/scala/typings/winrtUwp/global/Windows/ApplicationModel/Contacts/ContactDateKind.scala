@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the kinds of important dates for a contact. */
@@ -11,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ContactDateKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind & Double] = js.native
   
-  /* 1 */ val anniversary: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.anniversary with Double = js.native
+  /* 1 */ val anniversary: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.anniversary & Double = js.native
   
-  /* 0 */ val birthday: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.birthday with Double = js.native
+  /* 0 */ val birthday: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.birthday & Double = js.native
   
-  /* 2 */ val other: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.other with Double = js.native
+  /* 2 */ val other: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactDateKind.other & Double = js.native
 }

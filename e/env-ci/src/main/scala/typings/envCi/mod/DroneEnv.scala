@@ -1,55 +1,43 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Drone
 import typings.envCi.envCiStrings.drone_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroneEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: String = js.native
+  var branch: String
   
-  var build: String = js.native
+  var build: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var job: String = js.native
+  var job: String
   
-  var name: Drone = js.native
+  var name: Drone
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var service: drone_ = js.native
+  var service: drone_
   
-  var slug: String = js.native
+  var slug: String
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object DroneEnv {
   
   @scala.inline
-  def apply(
-    branch: String,
-    build: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    job: String,
-    name: Drone,
-    service: drone_,
-    slug: String
-  ): DroneEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(branch: String, build: String, commit: String, isPr: Boolean, job: String, slug: String): DroneEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "Drone", service = "drone", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroneEnv]
   }
   

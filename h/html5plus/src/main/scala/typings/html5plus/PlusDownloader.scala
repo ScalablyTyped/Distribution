@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,26 +57,26 @@ trait PlusDownloader extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def createDownload(): PlusDownloaderDownload = js.native
-  def createDownload(
-    url: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
-  ): PlusDownloaderDownload = js.native
-  def createDownload(url: js.UndefOr[scala.Nothing], options: PlusDownloaderDownloadOptions): PlusDownloaderDownload = js.native
-  def createDownload(
-    url: js.UndefOr[scala.Nothing],
-    options: PlusDownloaderDownloadOptions,
-    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
-  ): PlusDownloaderDownload = js.native
   def createDownload(url: String): PlusDownloaderDownload = js.native
   def createDownload(
     url: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
   ): PlusDownloaderDownload = js.native
   def createDownload(url: String, options: PlusDownloaderDownloadOptions): PlusDownloaderDownload = js.native
   def createDownload(
     url: String,
+    options: PlusDownloaderDownloadOptions,
+    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
+  ): PlusDownloaderDownload = js.native
+  def createDownload(
+    url: Unit,
+    options: Unit,
+    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
+  ): PlusDownloaderDownload = js.native
+  def createDownload(url: Unit, options: PlusDownloaderDownloadOptions): PlusDownloaderDownload = js.native
+  def createDownload(
+    url: Unit,
     options: PlusDownloaderDownloadOptions,
     completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
   ): PlusDownloaderDownload = js.native
@@ -89,9 +88,9 @@ trait PlusDownloader extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def enumerate(): Unit = js.native
-  def enumerate(enumCB: js.UndefOr[scala.Nothing], state: PlusDownloaderDownloadState): Unit = js.native
-  def enumerate(enumCB: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
-  def enumerate(enumCB: js.Function1[/* result */ js.Array[_], Unit], state: PlusDownloaderDownloadState): Unit = js.native
+  def enumerate(enumCB: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
+  def enumerate(enumCB: js.Function1[/* result */ js.Array[js.Any], Unit], state: PlusDownloaderDownloadState): Unit = js.native
+  def enumerate(enumCB: Unit, state: PlusDownloaderDownloadState): Unit = js.native
   
   /**
     * 开始所有下载任务

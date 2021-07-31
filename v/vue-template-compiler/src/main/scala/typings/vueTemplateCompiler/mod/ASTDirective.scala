@@ -2,21 +2,19 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASTDirective extends StObject {
   
-  var arg: js.UndefOr[String] = js.native
+  var arg: js.UndefOr[String] = js.undefined
   
-  var modifiers: js.UndefOr[ASTModifiers] = js.native
+  var modifiers: js.UndefOr[ASTModifiers] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var rawName: String = js.native
+  var rawName: String
   
-  var value: String = js.native
+  var value: String
 }
 object ASTDirective {
   

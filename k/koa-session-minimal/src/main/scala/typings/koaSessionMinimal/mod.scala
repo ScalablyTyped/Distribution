@@ -7,27 +7,27 @@ import typings.koaSessionMinimal.anon.Cookie
 import typings.koaSessionMinimal.anon.RegenerateId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(opts: Cookie): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-session-minimal", JSImport.Namespace)
   @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-session-minimal", JSImport.Namespace)
-  @js.native
-  def apply(opts: Cookie): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
-      var session: js.Any = js.native
+      var session: js.Any
       
-      var sessionHandler: RegenerateId = js.native
+      var sessionHandler: RegenerateId
     }
     object Context {
       

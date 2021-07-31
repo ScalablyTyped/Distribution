@@ -2,28 +2,26 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapboxProviderCommonOptions extends StObject {
   
   /**
     * A credit for the data source, which is displayed on the canvas
     */
-  var credit: js.UndefOr[Credit | String] = js.native
+  var credit: js.UndefOr[Credit | String] = js.undefined
   
   /**
     * The ellipsoid.
     * If not specified, the WGS84 ellipsoid is used
     */
-  var ellipsoid: js.UndefOr[Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
   
   /**
     * The maximum level-of-detail supported by the imagery provider, or undefined if there is no limit
     * @default undefined
     */
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum level-of-detail supported by the imagery provider.
@@ -31,13 +29,13 @@ trait MapboxProviderCommonOptions extends StObject {
     * A larger number is likely to result in rendering problems
     * @default 0
     */
-  var minimumLevel: js.UndefOr[Double] = js.native
+  var minimumLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * The rectangle, in radians, covered by the image
     * @defualt Rectangle.MAX_VALUE
     */
-  var rectangle: js.UndefOr[Rectangle] = js.native
+  var rectangle: js.UndefOr[Rectangle] = js.undefined
 }
 object MapboxProviderCommonOptions {
   

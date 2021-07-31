@@ -3,19 +3,17 @@ package typings.reactVis.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[CSSProperties] = js.native
+  var bottom: js.UndefOr[CSSProperties] = js.undefined
   
-  var left: js.UndefOr[CSSProperties] = js.native
+  var left: js.UndefOr[CSSProperties] = js.undefined
   
-  var right: js.UndefOr[CSSProperties] = js.native
+  var right: js.UndefOr[CSSProperties] = js.undefined
   
-  var top: js.UndefOr[CSSProperties] = js.native
+  var top: js.UndefOr[CSSProperties] = js.undefined
 }
 object Bottom {
   

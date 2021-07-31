@@ -3,24 +3,24 @@ package typings.focusWithin
 import typings.std.HTMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("focus-within", JSImport.Namespace)
-  @js.native
-  def apply(document: HTMLDocument): Unit = js.native
-  @JSImport("focus-within", JSImport.Namespace)
-  @js.native
-  def apply(document: HTMLDocument, opts: FocusWithinOpts): Unit = js.native
+  @scala.inline
+  def apply(document: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(document: HTMLDocument, opts: FocusWithinOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("focus-within", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FocusWithinOpts extends StObject {
     
-    var attr: js.UndefOr[Boolean] = js.native
+    var attr: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object FocusWithinOpts {
     

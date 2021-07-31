@@ -2,38 +2,36 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnectionCompletionOptions extends StObject {
   
   /**
     * Save the connection to MRU and settings (only save to setting if profile.saveProfile is set to true)
     * Default is true.
     */
-  var saveConnection: Boolean = js.native
+  var saveConnection: Boolean
   
   /**
     * If undefined / true, open the connection dialog if connection fails.
     * If false, connection dialog won't be opened even if connection fails.
     * Default is true.
     */
-  var showConnectionDialogOnError: js.UndefOr[Boolean] = js.native
+  var showConnectionDialogOnError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, open the dashboard after connection is complete.
     * If undefined / false, dashboard won't be opened after connection completes.
     * Default is false.
     */
-  var showDashboard: js.UndefOr[Boolean] = js.native
+  var showDashboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If undefined / true, open the connection firewall rule dialog if connection fails.
     * If false, connection firewall rule dialog won't be opened even if connection fails.
     * Default is true.
     */
-  var showFirewallRuleOnError: js.UndefOr[Boolean] = js.native
+  var showFirewallRuleOnError: js.UndefOr[Boolean] = js.undefined
 }
 object IConnectionCompletionOptions {
   

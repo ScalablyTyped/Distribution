@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeColor extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.ThemeColor_typekey")
-  var OfficeDotThemeColor_typekey: ThemeColor = js.native
+  var OfficeDotThemeColor_typekey: ThemeColor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RGB: Double = js.native
+  var RGB: Double
   
-  val ThemeColorSchemeIndex: MsoThemeColorSchemeIndex = js.native
+  val ThemeColorSchemeIndex: MsoThemeColorSchemeIndex
 }
 object ThemeColor {
   

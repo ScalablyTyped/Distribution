@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.animationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var animation: js.UndefOr[animationConfig] = js.native
+  var animation: js.UndefOr[animationConfig] = js.undefined
   
-  var device: js.UndefOr[typings.devextreme.mod.DevExpress.Device] = js.native
+  var device: js.UndefOr[typings.devextreme.mod.DevExpress.Device] = js.undefined
 }
 object Animation {
   

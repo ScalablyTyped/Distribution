@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstanceInformationRequest extends StObject {
   
   /**
     * One or more filters. Use a filter to return a more specific list of instances. You can filter based on tags applied to EC2 instances. Use this Filters data type instead of InstanceInformationFilterList, which is deprecated.
     */
-  var Filters: js.UndefOr[InstanceInformationStringFilterList] = js.native
+  var Filters: js.UndefOr[InstanceInformationStringFilterList] = js.undefined
   
   /**
     * This is a legacy method. We recommend that you don't use this method. Instead, use the Filters data type. Filters enables you to return instance information by filtering based on tags applied to managed instances.  Attempting to use InstanceInformationFilterList and Filters leads to an exception error.  
     */
-  var InstanceInformationFilterList: js.UndefOr[typings.awsSdk.ssmMod.InstanceInformationFilterList] = js.native
+  var InstanceInformationFilterList: js.UndefOr[typings.awsSdk.ssmMod.InstanceInformationFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results. 
     */
-  var MaxResults: js.UndefOr[MaxResultsEC2Compatible] = js.native
+  var MaxResults: js.UndefOr[MaxResultsEC2Compatible] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeInstanceInformationRequest {
   

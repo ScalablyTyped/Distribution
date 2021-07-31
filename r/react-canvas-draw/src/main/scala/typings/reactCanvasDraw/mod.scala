@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,44 +39,43 @@ object mod {
     def undo(): Unit = js.native
   }
   
-  @js.native
   trait CanvasDrawProps extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var brushColor: js.UndefOr[String] = js.native
+    var brushColor: js.UndefOr[String] = js.undefined
     
-    var brushRadius: js.UndefOr[Double] = js.native
+    var brushRadius: js.UndefOr[Double] = js.undefined
     
-    var canvasHeight: js.UndefOr[Double | String] = js.native
+    var canvasHeight: js.UndefOr[Double | String] = js.undefined
     
-    var canvasWidth: js.UndefOr[Double | String] = js.native
+    var canvasWidth: js.UndefOr[Double | String] = js.undefined
     
-    var catenaryColor: js.UndefOr[String] = js.native
+    var catenaryColor: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var gridColor: js.UndefOr[String] = js.native
+    var gridColor: js.UndefOr[String] = js.undefined
     
-    var hideGrid: js.UndefOr[Boolean] = js.native
+    var hideGrid: js.UndefOr[Boolean] = js.undefined
     
-    var hideInterface: js.UndefOr[Boolean] = js.native
+    var hideInterface: js.UndefOr[Boolean] = js.undefined
     
-    var imgSrc: js.UndefOr[String] = js.native
+    var imgSrc: js.UndefOr[String] = js.undefined
     
-    var immediateLoading: js.UndefOr[Boolean] = js.native
+    var immediateLoading: js.UndefOr[Boolean] = js.undefined
     
-    var lazyRadius: js.UndefOr[Double] = js.native
+    var lazyRadius: js.UndefOr[Double] = js.undefined
     
-    var loadTimeOffset: js.UndefOr[Double] = js.native
+    var loadTimeOffset: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[(js.Function1[/* canvas */ CanvasDraw, Unit]) | Null] = js.native
+    var onChange: js.UndefOr[(js.Function1[/* canvas */ CanvasDraw, Unit]) | Null] = js.undefined
     
-    var saveData: js.UndefOr[String] = js.native
+    var saveData: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CanvasDrawProps {
     

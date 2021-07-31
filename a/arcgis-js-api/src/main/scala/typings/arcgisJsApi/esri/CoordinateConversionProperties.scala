@@ -7,12 +7,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.live
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoordinateConversionProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -20,63 +19,63 @@ trait CoordinateConversionProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#conversions)
     */
-  var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.native
+  var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.undefined
   
   /**
     * Describes the location of the coordinates currently displayed by the widget as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#currentLocation)
     */
-  var currentLocation: js.UndefOr[PointProperties] = js.native
+  var currentLocation: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html) that the widget is capable of displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#formats)
     */
-  var formats: js.UndefOr[CollectionProperties[FormatProperties]] = js.native
+  var formats: js.UndefOr[CollectionProperties[FormatProperties]] = js.undefined
   
   /**
     * Describes the current mode of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#mode)
     */
-  var mode: js.UndefOr[live | capture] = js.native
+  var mode: js.UndefOr[live | capture] = js.undefined
   
   /**
     * If this property is set to `true`, multiple conversions can be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#multipleConversions)
     */
-  var multipleConversions: js.UndefOr[Boolean] = js.native
+  var multipleConversions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether the widget should expand up or down.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#orientation)
     */
-  var orientation: js.UndefOr[auto | `expand-up` | `expand-down`] = js.native
+  var orientation: js.UndefOr[auto | `expand-up` | `expand-down`] = js.undefined
   
   /**
     * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#requestDelay)
     */
-  var requestDelay: js.UndefOr[Double] = js.native
+  var requestDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#viewModel)
     */
-  var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.native
+  var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.undefined
 }
 object CoordinateConversionProperties {
   

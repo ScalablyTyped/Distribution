@@ -2,7 +2,6 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InformationPolicy {
@@ -10,63 +9,58 @@ object InformationPolicy {
   @JSGlobal("SP.InformationPolicy.ProjectPolicy")
   @js.native
   class ProjectPolicy protected ()
-    extends typings.sharepoint.SP.InformationPolicy.ProjectPolicy {
+    extends StObject
+       with typings.sharepoint.SP.InformationPolicy.ProjectPolicy {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, objectPath: typings.sharepoint.SP.ObjectPath) = this()
   }
   object ProjectPolicy {
     
-    /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.applyProjectPolicy")
+    @JSGlobal("SP.InformationPolicy.ProjectPolicy")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def applyProjectPolicy(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
       projectPolicy: typings.sharepoint.SP.InformationPolicy.ProjectPolicy
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyProjectPolicy")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], projectPolicy.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.closeProject")
-    @js.native
-    def closeProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = js.native
+    @scala.inline
+    def closeProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeProject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.doesProjectHavePolicy")
-    @js.native
-    def doesProjectHavePolicy(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BooleanResult = js.native
+    @scala.inline
+    def doesProjectHavePolicy(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("doesProjectHavePolicy")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.getCurrentlyAppliedProject")
-    @js.native
-    def getCurrentlyAppliedProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.InformationPolicy.ProjectPolicy = js.native
+    @scala.inline
+    def getCurrentlyAppliedProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.InformationPolicy.ProjectPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentlyAppliedProject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.InformationPolicy.ProjectPolicy]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.getProjectCloseDate")
-    @js.native
-    def getProjectCloseDate(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.DateTimeResult = js.native
+    @scala.inline
+    def getProjectCloseDate(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.DateTimeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectCloseDate")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.DateTimeResult]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.getProjectExpirationDate")
-    @js.native
-    def getProjectExpirationDate(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.DateTimeResult = js.native
+    @scala.inline
+    def getProjectExpirationDate(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.DateTimeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectExpirationDate")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.DateTimeResult]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.getProjectPolicies")
-    @js.native
-    def getProjectPolicies(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.InformationPolicy.ProjectPolicy] = js.native
+    @scala.inline
+    def getProjectPolicies(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.InformationPolicy.ProjectPolicy] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectPolicies")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.InformationPolicy.ProjectPolicy]]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.isProjectClosed")
-    @js.native
-    def isProjectClosed(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BooleanResult = js.native
+    @scala.inline
+    def isProjectClosed(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isProjectClosed")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.openProject")
-    @js.native
-    def openProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = js.native
+    @scala.inline
+    def openProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openProject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.InformationPolicy.ProjectPolicy.postponeProject")
-    @js.native
-    def postponeProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = js.native
+    @scala.inline
+    def postponeProject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postponeProject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

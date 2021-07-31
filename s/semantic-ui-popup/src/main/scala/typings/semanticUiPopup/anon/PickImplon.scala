@@ -6,14 +6,12 @@ import typings.semanticUiPopup.semanticUiPopupStrings.hover
 import typings.semanticUiPopup.semanticUiPopupStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'on'> */
-@js.native
 trait PickImplon extends StObject {
   
-  var on: focus | click | hover | manual = js.native
+  var on: focus | click | hover | manual
 }
 object PickImplon {
   

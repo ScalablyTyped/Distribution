@@ -2,59 +2,57 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maps extends StObject {
   
-  var Animation: js.Any = js.native
+  var Animation: js.Any
   
-  var ControlPosition: js.Any = js.native
+  var ControlPosition: js.Any
   
-  var DirectionsStatus: js.Any = js.native
+  var DirectionsStatus: js.Any
   
-  var DirectionsTravelMode: js.Any = js.native
+  var DirectionsTravelMode: js.Any
   
-  var DirectionsUnitSystem: js.Any = js.native
+  var DirectionsUnitSystem: js.Any
   
-  var DistanceMatrixElementStatus: js.Any = js.native
+  var DistanceMatrixElementStatus: js.Any
   
-  var DistanceMatrixStatus: js.Any = js.native
+  var DistanceMatrixStatus: js.Any
   
-  var ElevationStatus: js.Any = js.native
+  var ElevationStatus: js.Any
   
-  var GeocoderLocationType: js.Any = js.native
+  var GeocoderLocationType: js.Any
   
-  var GeocoderStatus: js.Any = js.native
+  var GeocoderStatus: js.Any
   
-  var KmlLayerStats: js.Any = js.native
+  var KmlLayerStats: js.Any
   
-  var MapTypeControlStyle: js.Any = js.native
+  var MapTypeControlStyle: js.Any
   
-  var MapTypeId: js.Any = js.native
+  var MapTypeId: js.Any
   
-  var MaxZoomStatus: js.Any = js.native
+  var MaxZoomStatus: js.Any
   
-  var NavigationControlStyle: js.Any = js.native
+  var NavigationControlStyle: js.Any
   
-  var ScaleControlStyle: js.Any = js.native
+  var ScaleControlStyle: js.Any
   
-  var StreetViewStatus: js.Any = js.native
+  var StreetViewStatus: js.Any
   
-  var StrokePosition: js.Any = js.native
+  var StrokePosition: js.Any
   
-  var SymbolPath: js.Any = js.native
+  var SymbolPath: js.Any
   
-  var TransitMode: js.Any = js.native
+  var TransitMode: js.Any
   
-  var TransitRoutePreference: js.Any = js.native
+  var TransitRoutePreference: js.Any
   
-  var TravelMode: js.Any = js.native
+  var TravelMode: js.Any
   
-  var UnitSystem: js.Any = js.native
+  var UnitSystem: js.Any
   
-  var ZoomControlStyle: js.Any = js.native
+  var ZoomControlStyle: js.Any
 }
 object Maps {
   

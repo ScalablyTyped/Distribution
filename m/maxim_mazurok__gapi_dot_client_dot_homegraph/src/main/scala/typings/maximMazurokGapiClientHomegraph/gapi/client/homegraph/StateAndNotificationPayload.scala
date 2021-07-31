@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateAndNotificationPayload extends StObject {
   
   /** The devices for updating state and sending notifications. */
-  var devices: js.UndefOr[ReportStateAndNotificationDevice] = js.native
+  var devices: js.UndefOr[ReportStateAndNotificationDevice] = js.undefined
 }
 object StateAndNotificationPayload {
   

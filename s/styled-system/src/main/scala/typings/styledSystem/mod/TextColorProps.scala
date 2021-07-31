@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait TextColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
     */
-  var color: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var color: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object TextColorProps {
   
@@ -28,7 +26,7 @@ object TextColorProps {
   }
   
   @scala.inline
-  implicit class TextColorPropsMutableBuilder[Self <: TextColorProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (TextColorProps[ThemeType, TVal])) extends AnyVal {
+  implicit class TextColorPropsMutableBuilder[Self <: TextColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (TextColorProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])

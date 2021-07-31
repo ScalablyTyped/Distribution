@@ -2,35 +2,33 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssocLanguage[T] extends StObject {
   
-  var assocLanguage: js.UndefOr[String] = js.native
+  var assocLanguage: js.UndefOr[String] = js.undefined
   
-  var autoselect: js.UndefOr[Boolean] = js.native
+  var autoselect: js.UndefOr[Boolean] = js.undefined
   
-  var channels: js.UndefOr[String] = js.native
+  var channels: js.UndefOr[String] = js.undefined
   
-  var characteristics: js.UndefOr[String] = js.native
+  var characteristics: js.UndefOr[String] = js.undefined
   
-  var forced: js.UndefOr[Boolean] = js.native
+  var forced: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var instreamId: js.UndefOr[String] = js.native
+  var instreamId: js.UndefOr[String] = js.undefined
   
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: T = js.native
+  var `type`: T
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object AssocLanguage {
   
@@ -42,7 +40,7 @@ object AssocLanguage {
   }
   
   @scala.inline
-  implicit class AssocLanguageMutableBuilder[Self <: AssocLanguage[_], T] (val x: Self with AssocLanguage[T]) extends AnyVal {
+  implicit class AssocLanguageMutableBuilder[Self <: AssocLanguage[?], T] (val x: Self & AssocLanguage[T]) extends AnyVal {
     
     @scala.inline
     def setAssocLanguage(value: String): Self = StObject.set(x, "assocLanguage", value.asInstanceOf[js.Any])

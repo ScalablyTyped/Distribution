@@ -2,17 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoadingComponentBuilder extends ComponentBuilder[LoadingComponent] {
+trait LoadingComponentBuilder
+  extends StObject
+     with ComponentBuilder[LoadingComponent] {
   
   /**
     * Set the component wrapped by the LoadingComponent
     * @param component The component to wrap
     */
-  def withItem(component: Component): LoadingComponentBuilder = js.native
+  def withItem(component: Component): LoadingComponentBuilder
 }
 object LoadingComponentBuilder {
   

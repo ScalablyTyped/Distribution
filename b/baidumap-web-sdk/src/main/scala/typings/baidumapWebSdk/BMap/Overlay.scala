@@ -3,21 +3,19 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overlay extends StObject {
   
-  var draw: js.UndefOr[js.Function0[Unit]] = js.native
+  var draw: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var hide: js.UndefOr[js.Function0[Unit]] = js.native
+  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var initialize: js.UndefOr[js.Function1[/* map */ Map, HTMLElement]] = js.native
+  var initialize: js.UndefOr[js.Function1[/* map */ Map, HTMLElement]] = js.undefined
   
-  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var show: js.UndefOr[js.Function0[Unit]] = js.native
+  var show: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object Overlay {
   

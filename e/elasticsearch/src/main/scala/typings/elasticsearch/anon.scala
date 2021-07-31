@@ -3,15 +3,13 @@ package typings.elasticsearch
 import typings.elasticsearch.mod.IndicesUpdateAliasesParamsAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actions extends StObject {
     
-    var actions: js.Array[IndicesUpdateAliasesParamsAction] = js.native
+    var actions: js.Array[IndicesUpdateAliasesParamsAction]
   }
   object Actions {
     
@@ -32,18 +30,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Alias extends StObject {
     
-    var alias: String = js.native
+    var alias: String
     
-    var filter: js.UndefOr[js.Object] = js.native
+    var filter: js.UndefOr[js.Object] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var indices: js.UndefOr[js.Array[String]] = js.native
+    var indices: js.UndefOr[js.Array[String]] = js.undefined
     
-    var routing: js.UndefOr[String] = js.native
+    var routing: js.UndefOr[String] = js.undefined
   }
   object Alias {
     
@@ -88,12 +85,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Bulk extends StObject {
     
-    var bulk: Double = js.native
+    var bulk: Double
     
-    var search: Double = js.native
+    var search: Double
   }
   object Bulk {
     
@@ -114,16 +110,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Conflicts extends StObject {
     
-    var conflicts: js.UndefOr[String] = js.native
+    var conflicts: js.UndefOr[String] = js.undefined
     
-    var dest: Optype = js.native
+    var dest: Optype
     
-    var script: js.UndefOr[Inline] = js.native
+    var script: js.UndefOr[Inline] = js.undefined
     
-    var source: Index = js.native
+    var source: Index
   }
   object Conflicts {
     
@@ -156,32 +151,31 @@ object anon {
     }
   }
   
-  @js.native
   trait Explanation[T] extends StObject {
     
-    var _explanation: js.UndefOr[typings.elasticsearch.mod.Explanation] = js.native
+    var _explanation: js.UndefOr[typings.elasticsearch.mod.Explanation] = js.undefined
     
-    var _id: String = js.native
+    var _id: String
     
-    var _index: String = js.native
+    var _index: String
     
-    var _score: Double = js.native
+    var _score: Double
     
-    var _source: T = js.native
+    var _source: T
     
-    var _type: String = js.native
+    var _type: String
     
-    var _version: js.UndefOr[Double] = js.native
+    var _version: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[js.Any] = js.native
+    var fields: js.UndefOr[js.Any] = js.undefined
     
-    var highlight: js.UndefOr[js.Any] = js.native
+    var highlight: js.UndefOr[js.Any] = js.undefined
     
-    var inner_hits: js.UndefOr[js.Any] = js.native
+    var inner_hits: js.UndefOr[js.Any] = js.undefined
     
-    var matched_queries: js.UndefOr[js.Array[String]] = js.native
+    var matched_queries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sort: js.UndefOr[js.Array[String]] = js.native
+    var sort: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Explanation {
     
@@ -192,7 +186,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ExplanationMutableBuilder[Self <: Explanation[_], T] (val x: Self with Explanation[T]) extends AnyVal {
+    implicit class ExplanationMutableBuilder[Self <: Explanation[?], T] (val x: Self & Explanation[T]) extends AnyVal {
       
       @scala.inline
       def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -259,14 +253,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Hits[T] extends StObject {
     
-    var hits: js.Array[Explanation[T]] = js.native
+    var hits: js.Array[Explanation[T]]
     
-    var max_score: Double = js.native
+    var max_score: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Hits {
     
@@ -277,7 +270,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HitsMutableBuilder[Self <: Hits[_], T] (val x: Self with Hits[T]) extends AnyVal {
+    implicit class HitsMutableBuilder[Self <: Hits[?], T] (val x: Self & Hits[T]) extends AnyVal {
       
       @scala.inline
       def setHits(value: js.Array[Explanation[T]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
@@ -293,14 +286,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Host {
     
@@ -330,10 +322,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -351,20 +342,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: String | js.Array[String] = js.native
+    var index: String | js.Array[String]
     
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
-    var remote: js.UndefOr[Host] = js.native
+    var remote: js.UndefOr[Host] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.native
+    var sort: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Index {
     
@@ -418,10 +408,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexString extends StObject {
     
-    var index: String = js.native
+    var index: String
   }
   object IndexString {
     
@@ -439,14 +428,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Indices extends StObject {
     
-    var alias: String = js.native
+    var alias: String
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var indices: js.UndefOr[js.Array[String]] = js.native
+    var indices: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Indices {
     
@@ -479,12 +467,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Inline extends StObject {
     
-    var `inline`: String = js.native
+    var `inline`: String
     
-    var lang: String = js.native
+    var lang: String
   }
   object Inline {
     
@@ -506,18 +493,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Optype extends StObject {
     
-    var index: String = js.native
+    var index: String
     
-    var op_type: js.UndefOr[String] = js.native
+    var op_type: js.UndefOr[String] = js.undefined
     
-    var pipeline: js.UndefOr[String] = js.native
+    var pipeline: js.UndefOr[String] = js.undefined
     
-    var routing: js.UndefOr[String] = js.native
+    var routing: js.UndefOr[String] = js.undefined
     
-    var version_type: js.UndefOr[String] = js.native
+    var version_type: js.UndefOr[String] = js.undefined
   }
   object Optype {
     

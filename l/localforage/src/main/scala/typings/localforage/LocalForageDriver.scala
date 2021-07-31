@@ -2,11 +2,12 @@ package typings.localforage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalForageDriver extends LocalForageDriverDbMethods {
+trait LocalForageDriver
+  extends StObject
+     with LocalForageDriverDbMethods {
   
   var _driver: String = js.native
   

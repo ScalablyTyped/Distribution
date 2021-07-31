@@ -2,7 +2,6 @@ package typings.angularCompiler.srcCompilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "InstantiateExpr")
@@ -21,13 +20,13 @@ class InstantiateExpr protected ()
   def this(
     classExpr: typings.angularCompiler.outputAstMod.Expression,
     args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     classExpr: typings.angularCompiler.outputAstMod.Expression,
     args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

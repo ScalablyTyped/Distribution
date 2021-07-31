@@ -2,24 +2,27 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionOriginalEvent extends StObject {
   
-  var direction: String = js.native
+  var direction: String
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
   
-  var source: js.Array[_] = js.native
+  var source: js.Array[js.Any]
   
-  var target: js.Array[_] = js.native
+  var target: js.Array[js.Any]
 }
 object DirectionOriginalEvent {
   
   @scala.inline
-  def apply(direction: String, originalEvent: typings.std.Event, source: js.Array[_], target: js.Array[_]): DirectionOriginalEvent = {
+  def apply(
+    direction: String,
+    originalEvent: typings.std.Event,
+    source: js.Array[js.Any],
+    target: js.Array[js.Any]
+  ): DirectionOriginalEvent = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionOriginalEvent]
   }
@@ -34,13 +37,13 @@ object DirectionOriginalEvent {
     def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: js.Array[_]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def setTarget(value: js.Array[_]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Array[js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTargetVarargs(value: js.Any*): Self = StObject.set(x, "target", js.Array(value :_*))

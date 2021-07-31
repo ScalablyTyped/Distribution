@@ -2,73 +2,71 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWheelInfoOptions extends StObject {
   
-  var axis: js.UndefOr[Vec3] = js.native
+  var axis: js.UndefOr[Vec3] = js.undefined
   
-  var axleLocal: js.UndefOr[Vec3] = js.native
+  var axleLocal: js.UndefOr[Vec3] = js.undefined
   
-  var axleWorld: js.UndefOr[Vec3] = js.native
+  var axleWorld: js.UndefOr[Vec3] = js.undefined
   
-  var body: js.UndefOr[Body] = js.native
+  var body: js.UndefOr[Body] = js.undefined
   
-  var chassisConnectionPointLocal: js.UndefOr[Vec3] = js.native
+  var chassisConnectionPointLocal: js.UndefOr[Vec3] = js.undefined
   
-  var chassisConnectionPointWorld: js.UndefOr[Vec3] = js.native
+  var chassisConnectionPointWorld: js.UndefOr[Vec3] = js.undefined
   
-  var clippedInvContactDotSuspension: js.UndefOr[Double] = js.native
+  var clippedInvContactDotSuspension: js.UndefOr[Double] = js.undefined
   
-  var customSlidingRotationalSpeed: js.UndefOr[Double] = js.native
+  var customSlidingRotationalSpeed: js.UndefOr[Double] = js.undefined
   
-  var dampingCompression: js.UndefOr[Double] = js.native
+  var dampingCompression: js.UndefOr[Double] = js.undefined
   
-  var dampingRelaxation: js.UndefOr[Double] = js.native
+  var dampingRelaxation: js.UndefOr[Double] = js.undefined
   
-  var deltaRotation: js.UndefOr[Double] = js.native
+  var deltaRotation: js.UndefOr[Double] = js.undefined
   
-  var direction: js.UndefOr[Vec3] = js.native
+  var direction: js.UndefOr[Vec3] = js.undefined
   
-  var directionLocal: js.UndefOr[Vec3] = js.native
+  var directionLocal: js.UndefOr[Vec3] = js.undefined
   
-  var directionWorld: js.UndefOr[Vec3] = js.native
+  var directionWorld: js.UndefOr[Vec3] = js.undefined
   
-  var frictionSlip: js.UndefOr[Double] = js.native
+  var frictionSlip: js.UndefOr[Double] = js.undefined
   
-  var isFronmtWheel: js.UndefOr[Boolean] = js.native
+  var isFronmtWheel: js.UndefOr[Boolean] = js.undefined
   
-  var maxSuspensionForce: js.UndefOr[Double] = js.native
+  var maxSuspensionForce: js.UndefOr[Double] = js.undefined
   
-  var maxSuspensionTravel: js.UndefOr[Double] = js.native
+  var maxSuspensionTravel: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[Vec3] = js.native
+  var position: js.UndefOr[Vec3] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var rollInfluence: js.UndefOr[Double] = js.native
+  var rollInfluence: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var skidInfo: js.UndefOr[Double] = js.native
+  var skidInfo: js.UndefOr[Double] = js.undefined
   
-  var steering: js.UndefOr[Double] = js.native
+  var steering: js.UndefOr[Double] = js.undefined
   
-  var suspensionForce: js.UndefOr[Double] = js.native
+  var suspensionForce: js.UndefOr[Double] = js.undefined
   
-  var suspensionLength: js.UndefOr[Double] = js.native
+  var suspensionLength: js.UndefOr[Double] = js.undefined
   
-  var suspensionMaxLength: js.UndefOr[Double] = js.native
+  var suspensionMaxLength: js.UndefOr[Double] = js.undefined
   
-  var suspensionRelativeVelocity: js.UndefOr[Double] = js.native
+  var suspensionRelativeVelocity: js.UndefOr[Double] = js.undefined
   
-  var suspensionRestLength: js.UndefOr[Double] = js.native
+  var suspensionRestLength: js.UndefOr[Double] = js.undefined
   
-  var suspensionStiffness: js.UndefOr[Double] = js.native
+  var suspensionStiffness: js.UndefOr[Double] = js.undefined
   
-  var useCustomSlidingRotationalSpeed: js.UndefOr[Boolean] = js.native
+  var useCustomSlidingRotationalSpeed: js.UndefOr[Boolean] = js.undefined
 }
 object IWheelInfoOptions {
   

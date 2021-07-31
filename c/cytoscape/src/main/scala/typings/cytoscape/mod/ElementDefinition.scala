@@ -4,65 +4,63 @@ import typings.cytoscape.mod.Css.Edge
 import typings.cytoscape.mod.Css.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementDefinition extends StObject {
   
   /**
     * a space separated list of class names that the element has
     */
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
   /**
     * you should only use `style`/`css` for very special cases; use classes instead
     */
-  var css: js.UndefOr[Node | Edge] = js.native
+  var css: js.UndefOr[Node | Edge] = js.undefined
   
-  var data: NodeDataDefinition | EdgeDataDefinition = js.native
+  var data: NodeDataDefinition | EdgeDataDefinition
   
   /**
     * Wether the node can be grabbed and moved by the user
     */
-  var grabbable: js.UndefOr[Boolean] = js.native
+  var grabbable: js.UndefOr[Boolean] = js.undefined
   
-  var group: js.UndefOr[ElementGroup] = js.native
+  var group: js.UndefOr[ElementGroup] = js.undefined
   
   /**
     * When locked a node's position is immutable (default false)
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The model position of the node (optional on init, mandatory after)
     */
-  var position: js.UndefOr[Position] = js.native
+  var position: js.UndefOr[Position] = js.undefined
   
   /**
     * can alternatively specify position in rendered on-screen pixels
     */
-  var renderedPosition: js.UndefOr[Position] = js.native
+  var renderedPosition: js.UndefOr[Position] = js.undefined
   
   /**
     * Scratchpad data (usually temp or nonserialisable data)
     */
-  var scratch: js.UndefOr[Scratchpad] = js.native
+  var scratch: js.UndefOr[Scratchpad] = js.undefined
   
   /**
     * Whether the selection state is mutable (default true)
     */
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the element is selected (default false)
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  CssStyleDeclaration;
     */
-  var style: js.UndefOr[CssStyleDeclaration] = js.native
+  var style: js.UndefOr[CssStyleDeclaration] = js.undefined
 }
 object ElementDefinition {
   

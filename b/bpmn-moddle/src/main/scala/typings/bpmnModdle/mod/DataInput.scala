@@ -2,22 +2,22 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataInput extends ItemAwareElement {
+trait DataInput
+  extends StObject
+     with ItemAwareElement {
   
-  var inputSetRef: InputSet = js.native
+  var inputSetRef: InputSet
   
-  var inputSetWithOptional: InputSet = js.native
+  var inputSetWithOptional: InputSet
   
-  var inputSetWithWhileExecuting: InputSet = js.native
+  var inputSetWithWhileExecuting: InputSet
   
   /** @default false */
-  var isCollection: Boolean = js.native
+  var isCollection: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object DataInput {
   

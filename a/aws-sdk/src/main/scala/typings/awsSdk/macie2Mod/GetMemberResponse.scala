@@ -2,51 +2,49 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMemberResponse extends StObject {
   
   /**
     * The AWS account ID for the account.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the account.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The email address for the account.
     */
-  var email: js.UndefOr[string] = js.native
+  var email: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if a Macie invitation hasn't been sent to the account.
     */
-  var invitedAt: js.UndefOr[timestampIso8601] = js.native
+  var invitedAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The AWS account ID for the master account.
     */
-  var masterAccountId: js.UndefOr[string] = js.native
+  var masterAccountId: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the relationship between the account and the master account.
     */
-  var relationshipStatus: js.UndefOr[RelationshipStatus] = js.native
+  var relationshipStatus: js.UndefOr[RelationshipStatus] = js.undefined
   
   /**
     * A map of key-value pairs that identifies the tags (keys and values) that are associated with the member account in Amazon Macie.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, of the most recent change to the status of the relationship between the account and the master account.
     */
-  var updatedAt: js.UndefOr[timestampIso8601] = js.native
+  var updatedAt: js.UndefOr[timestampIso8601] = js.undefined
 }
 object GetMemberResponse {
   

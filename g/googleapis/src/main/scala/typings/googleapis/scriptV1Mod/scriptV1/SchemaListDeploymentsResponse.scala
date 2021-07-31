@@ -2,26 +2,24 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response with the list of deployments for the specified Apps Script
   * project.
   */
-@js.native
 trait SchemaListDeploymentsResponse extends StObject {
   
   /**
     * The list of deployments.
     */
-  var deployments: js.UndefOr[js.Array[SchemaDeployment]] = js.native
+  var deployments: js.UndefOr[js.Array[SchemaDeployment]] = js.undefined
   
   /**
     * The token that can be used in the next call to get the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListDeploymentsResponse {
   

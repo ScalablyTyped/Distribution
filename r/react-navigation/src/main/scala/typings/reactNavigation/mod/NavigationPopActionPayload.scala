@@ -2,20 +2,18 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationPopActionPayload extends StObject {
   
-  var immediate: js.UndefOr[Boolean] = js.native
+  var immediate: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   // n: the number of routes to pop of the stack
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
-  var prune: js.UndefOr[Boolean] = js.native
+  var prune: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationPopActionPayload {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingOptions extends StObject {
   
   /**
     * If true, logging is enabled for AWS IoT Analytics.
     */
-  var enabled: LoggingEnabled = js.native
+  var enabled: LoggingEnabled
   
   /**
     * The logging level. Currently, only ERROR is supported.
     */
-  var level: LoggingLevel = js.native
+  var level: LoggingLevel
   
   /**
     * The ARN of the role that grants permission to AWS IoT Analytics to perform logging.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object LoggingOptions {
   

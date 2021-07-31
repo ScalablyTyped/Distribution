@@ -2,7 +2,6 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "AuthCredential")
@@ -18,10 +17,12 @@ abstract class AuthCredential () extends StObject {
 /* static members */
 object AuthCredential {
   
-  @JSImport("@firebase/auth-types", "AuthCredential.fromJSON")
+  @JSImport("@firebase/auth-types", "AuthCredential")
   @js.native
-  def fromJSON(json: String): AuthCredential | Null = js.native
-  @JSImport("@firebase/auth-types", "AuthCredential.fromJSON")
-  @js.native
-  def fromJSON(json: js.Object): AuthCredential | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromJSON(json: String): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
+  @scala.inline
+  def fromJSON(json: js.Object): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
 }

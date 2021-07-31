@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.TempImagePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakePhotoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 成像质量，值为high, normal, low，默认normal */
-  var quality: js.UndefOr[String] = js.native
+  var quality: js.UndefOr[String] = js.undefined
   
   @JSName("success")
-  var success_TakePhotoOptions: js.UndefOr[js.Function1[/* res */ TempImagePath, Unit]] = js.native
+  var success_TakePhotoOptions: js.UndefOr[js.Function1[/* res */ TempImagePath, Unit]] = js.undefined
 }
 object TakePhotoOptions {
   

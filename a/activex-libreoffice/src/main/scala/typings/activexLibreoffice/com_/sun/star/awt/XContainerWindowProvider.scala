@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides container windows implementing the {@link com.sun.star.awt.XWindow} interface. */
-@js.native
-trait XContainerWindowProvider extends XInterface {
+trait XContainerWindowProvider
+  extends StObject
+     with XInterface {
   
   /**
     * creates a window for the given URL
@@ -21,7 +21,7 @@ trait XContainerWindowProvider extends XInterface {
     * @see com.sun.star.awt.XContainerWindowEventHandler
     * @throws com::sun::star::lang::IllegalArgumentException if no window for the given URL is found or if the URL is invalid or xParent is null.
     */
-  def createContainerWindow(URL: String, WindowType: String, xParent: XWindowPeer, xHandler: XInterface): XWindow = js.native
+  def createContainerWindow(URL: String, WindowType: String, xParent: XWindowPeer, xHandler: XInterface): XWindow
 }
 object XContainerWindowProvider {
   

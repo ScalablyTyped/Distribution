@@ -3,18 +3,16 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.BillingDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingdetailsCard extends StObject {
   
   /**
     * The billing details associated with the card. [Recommended]
     */
-  var billing_details: js.UndefOr[BillingDetails] = js.native
+  var billing_details: js.UndefOr[BillingDetails] = js.undefined
   
-  var card: js.UndefOr[Token] = js.native
+  var card: js.UndefOr[Token] = js.undefined
 }
 object BillingdetailsCard {
   

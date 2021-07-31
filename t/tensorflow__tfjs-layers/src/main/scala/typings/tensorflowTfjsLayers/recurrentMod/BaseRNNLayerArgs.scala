@@ -3,11 +3,11 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseRNNLayerArgs extends LayerArgs {
+trait BaseRNNLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * A RNN cell instance. A RNN cell is a class that has:
@@ -31,20 +31,20 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * case the cells get stacked on after the other in the RNN, implementing an
     * efficient stacked RNN.
     */
-  var cell: js.UndefOr[RNNCell | js.Array[RNNCell]] = js.native
+  var cell: js.UndefOr[RNNCell | js.Array[RNNCell]] = js.undefined
   
   /**
     * If `true`, process the input sequence backwards and return the reversed
     * sequence (default: `false`).
     */
-  var goBackwards: js.UndefOr[Boolean] = js.native
+  var goBackwards: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Dimensionality of the input (integer).
     *   This option (or alternatively, the option `inputShape`) is required when
     *   this layer is used as the first layer in a model.
     */
-  var inputDim: js.UndefOr[Double] = js.native
+  var inputDim: js.UndefOr[Double] = js.undefined
   
   /**
     * Length of the input sequences, to be specified when it is constant.
@@ -54,18 +54,18 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * your model, you would need to specify the input length at the level of the
     * first layer (e.g., via the `inputShape` option).
     */
-  var inputLength: js.UndefOr[Double] = js.native
+  var inputLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to return the last output in the output sequence, or the full
     * sequence.
     */
-  var returnSequences: js.UndefOr[Boolean] = js.native
+  var returnSequences: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to return the last state in addition to the output.
     */
-  var returnState: js.UndefOr[Boolean] = js.native
+  var returnState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the last state for each sample at index i in a batch will be
@@ -92,7 +92,7 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * To reset the state of your model, call `resetStates()` on either the
     * specific layer or on the entire model.
     */
-  var stateful: js.UndefOr[Boolean] = js.native
+  var stateful: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the network will be unrolled, else a symbolic loop will be
@@ -103,7 +103,7 @@ trait BaseRNNLayerArgs extends LayerArgs {
     *   normal TypeScript control flow. Hence this property is inapplicable and
     *   ignored in tfjs-layers.
     */
-  var unroll: js.UndefOr[Boolean] = js.native
+  var unroll: js.UndefOr[Boolean] = js.undefined
 }
 object BaseRNNLayerArgs {
   

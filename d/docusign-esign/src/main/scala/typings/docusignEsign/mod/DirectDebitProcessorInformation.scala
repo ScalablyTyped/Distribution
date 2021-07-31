@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectDebitProcessorInformation extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DirectDebitProcessorInformation extends StObject {
     *
     * Maximum Length: 10 characters.
     */
-  var bankBranchCode: js.UndefOr[String] = js.native
+  var bankBranchCode: js.UndefOr[String] = js.undefined
   
   /**
     * The check digit or digits in the international bank account number. These digits are used to confirm the validity of the account.
     *
     * Maximum Length: 4 characters.
     */
-  var bankCheckDigit: js.UndefOr[String] = js.native
+  var bankCheckDigit: js.UndefOr[String] = js.undefined
   
   /**
     * The code or number that identifies the bank. This is also known as the sort code.
@@ -29,28 +27,28 @@ trait DirectDebitProcessorInformation extends StObject {
     *
     * Maximum Length: 18 characters.
     */
-  var bankCode: js.UndefOr[String] = js.native
+  var bankCode: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the direct debit bank.
     *
     * Maximum Length: 80 characters.
     */
-  var bankName: js.UndefOr[String] = js.native
+  var bankName: js.UndefOr[String] = js.undefined
   
   /**
     * The name on the direct debit bank account. This field is required for POST and PUT requests.
     *
     * Maximum Length: 60 characters.
     */
-  var bankTransferAccountName: js.UndefOr[String] = js.native
+  var bankTransferAccountName: js.UndefOr[String] = js.undefined
   
   /**
     * The customer's bank account number. This value will be obfuscated. This field is required for POST and PUT requests.
     *
     * Maximum Length: 30 characters.
     */
-  var bankTransferAccountNumber: js.UndefOr[String] = js.native
+  var bankTransferAccountNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of direct debit transfer. The value of this field is dependent on the user's country. This field is required for POST and PUT requests. Possible values are:
@@ -59,28 +57,28 @@ trait DirectDebitProcessorInformation extends StObject {
     * - `DirectEntryAU`
     * - `SEPA`
     */
-  var bankTransferType: js.UndefOr[String] = js.native
+  var bankTransferType: js.UndefOr[String] = js.undefined
   
   /**
     * The user's country. The system populates this value automatically.
     *
     *
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user who is associated with the payment method. This field is required for POST and PUT requests.
     *
     * Maximum Length: 80 characters.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The user's first name. This field is required for POST and PUT requests.
     *
     * Maximum Length: 30 characters.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * The International Bank Account Number (IBAN).
@@ -91,14 +89,14 @@ trait DirectDebitProcessorInformation extends StObject {
     *
     * **Note**: This number will be obfuscated.
     */
-  var iBAN: js.UndefOr[String] = js.native
+  var iBAN: js.UndefOr[String] = js.undefined
   
   /**
     * The user's last name. This field is required for POST and PUT requests.
     *
     * Maximum Length: 70 characters.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
 }
 object DirectDebitProcessorInformation {
   

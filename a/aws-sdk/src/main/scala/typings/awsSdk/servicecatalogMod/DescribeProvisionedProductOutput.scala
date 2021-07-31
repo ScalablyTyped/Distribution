@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisionedProductOutput extends StObject {
   
   /**
     * Any CloudWatch dashboards that were created when provisioning the product.
     */
-  var CloudWatchDashboards: js.UndefOr[typings.awsSdk.servicecatalogMod.CloudWatchDashboards] = js.native
+  var CloudWatchDashboards: js.UndefOr[typings.awsSdk.servicecatalogMod.CloudWatchDashboards] = js.undefined
   
   /**
     * Information about the provisioned product.
     */
-  var ProvisionedProductDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductDetail] = js.native
+  var ProvisionedProductDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductDetail] = js.undefined
 }
 object DescribeProvisionedProductOutput {
   

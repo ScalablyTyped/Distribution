@@ -2,21 +2,19 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeveloperMetadata extends StObject {
   
-  var location: DeveloperMetadataLocation = js.native
+  var location: DeveloperMetadataLocation
   
-  var metadataId: Double = js.native
+  var metadataId: Double
   
-  var metadataKey: String = js.native
+  var metadataKey: String
   
-  var metadataValue: String = js.native
+  var metadataValue: String
   
-  var visibility: DeveloperMetadataVisibility = js.native
+  var visibility: DeveloperMetadataVisibility
 }
 object DeveloperMetadata {
   

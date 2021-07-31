@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RequiredRuleInfo")
@@ -36,9 +35,8 @@ object RequiredRuleInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RequiredRuleInfo.create")
-  @js.native
-  def create(model: IModel): RequiredRuleInfo = js.native
+  @scala.inline
+  def create(model: IModel): RequiredRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RequiredRuleInfo]
   
   /**
     * Creates and returns a new RequiredRuleInfo instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object RequiredRuleInfo {
     * of the parent ValidationRule element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RequiredRuleInfo.createIn")
-  @js.native
-  def createIn(container: ValidationRule): RequiredRuleInfo = js.native
+  @scala.inline
+  def createIn(container: ValidationRule): RequiredRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RequiredRuleInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RequiredRuleInfo.structureTypeName")

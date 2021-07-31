@@ -4,19 +4,17 @@ import typings.relayRuntime.relayStoreTypesMod.OperationLoader
 import typings.relayRuntime.relayStoreTypesMod.Scheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GcReleaseBufferSize extends StObject {
   
-  var gcReleaseBufferSize: js.UndefOr[Double | Null] = js.native
+  var gcReleaseBufferSize: js.UndefOr[Double | Null] = js.undefined
   
-  var gcScheduler: js.UndefOr[Scheduler | Null] = js.native
+  var gcScheduler: js.UndefOr[Scheduler | Null] = js.undefined
   
-  var operationLoader: js.UndefOr[OperationLoader | Null] = js.native
+  var operationLoader: js.UndefOr[OperationLoader | Null] = js.undefined
   
-  var queryCacheExpirationTime: js.UndefOr[Double | Null] = js.native
+  var queryCacheExpirationTime: js.UndefOr[Double | Null] = js.undefined
 }
 object GcReleaseBufferSize {
   

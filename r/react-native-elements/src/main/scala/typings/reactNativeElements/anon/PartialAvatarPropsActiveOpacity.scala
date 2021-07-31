@@ -18,48 +18,46 @@ import typings.reactNativeElements.reactNativeElementsStrings.xlarge
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.AvatarProps> */
-@js.native
 trait PartialAvatarPropsActiveOpacity extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var avatarStyle: js.UndefOr[ImageStyle] = js.native
+  var avatarStyle: js.UndefOr[ImageStyle] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var icon: js.UndefOr[AvatarIcon] = js.native
+  var icon: js.UndefOr[AvatarIcon] = js.undefined
   
-  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var imageProps: js.UndefOr[Partial[ImageProps]] = js.native
+  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var renderPlaceholderContent: js.UndefOr[ReactElement] = js.native
+  var renderPlaceholderContent: js.UndefOr[ReactElement] = js.undefined
   
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[small | medium | large | xlarge | Double] = js.native
+  var size: js.UndefOr[small | medium | large | xlarge | Double] = js.undefined
   
-  var source: js.UndefOr[ImageSourcePropType] = js.native
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object PartialAvatarPropsActiveOpacity {
   

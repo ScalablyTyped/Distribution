@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object GridSearchButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSearchButton.create")
-  @js.native
-  def create(model: IModel): GridSearchButton = js.native
+  @scala.inline
+  def create(model: IModel): GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -52,9 +50,8 @@ object GridSearchButton {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSearchButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): GridSearchButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -62,9 +59,8 @@ object GridSearchButton {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSearchButton.createInControlBarUnderItems")
-  @js.native
-  def createInControlBarUnderItems(container: ControlBar): GridSearchButton = js.native
+  @scala.inline
+  def createInControlBarUnderItems(container: ControlBar): GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarUnderItems")(container.asInstanceOf[js.Any]).asInstanceOf[GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -75,9 +71,8 @@ object GridSearchButton {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSearchButton.createInGridControlBarUnderSearchButton")
-  @js.native
-  def createInGridControlBarUnderSearchButton(container: GridControlBar): GridSearchButton = js.native
+  @scala.inline
+  def createInGridControlBarUnderSearchButton(container: GridControlBar): GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridControlBarUnderSearchButton")(container.asInstanceOf[js.Any]).asInstanceOf[GridSearchButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSearchButton.structureTypeName")

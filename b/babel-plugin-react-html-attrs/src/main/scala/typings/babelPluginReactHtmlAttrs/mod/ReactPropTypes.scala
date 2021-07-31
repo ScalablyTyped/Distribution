@@ -11,55 +11,53 @@ import typings.propTypes.mod.ReactElementLike
 import typings.propTypes.mod.ReactNodeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactPropTypes extends StObject {
   
-  var any: typings.propTypes.mod.Requireable[_] = js.native
+  var any: typings.propTypes.mod.Requireable[js.Any]
   
-  var array: typings.propTypes.mod.Requireable[js.Array[_]] = js.native
+  var array: typings.propTypes.mod.Requireable[js.Array[js.Any]]
   
-  var arrayOf: FnCallType = js.native
+  var arrayOf: FnCallType
   
-  var bool: typings.propTypes.mod.Requireable[Boolean] = js.native
+  var bool: typings.propTypes.mod.Requireable[Boolean]
   
-  var element: typings.propTypes.mod.Requireable[ReactElementLike] = js.native
+  var element: typings.propTypes.mod.Requireable[ReactElementLike]
   
-  var exact: Fn3 = js.native
+  var exact: Fn3
   
-  var func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
+  var func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  var instanceOf: FnCall = js.native
+  var instanceOf: FnCall
   
-  var node: typings.propTypes.mod.Requireable[ReactNodeLike] = js.native
+  var node: typings.propTypes.mod.Requireable[ReactNodeLike]
   
-  var number: typings.propTypes.mod.Requireable[Double] = js.native
+  var number: typings.propTypes.mod.Requireable[Double]
   
-  var `object`: typings.propTypes.mod.Requireable[js.Object] = js.native
+  var `object`: typings.propTypes.mod.Requireable[js.Object]
   
-  var objectOf: Fn1 = js.native
+  var objectOf: Fn1
   
-  var oneOf: FnCallTypes = js.native
+  var oneOf: FnCallTypes
   
-  var oneOfType: Fn0 = js.native
+  var oneOfType: Fn0
   
-  var shape: Fn2 = js.native
+  var shape: Fn2
   
-  var string: typings.propTypes.mod.Requireable[String] = js.native
+  var string: typings.propTypes.mod.Requireable[String]
 }
 object ReactPropTypes {
   
   @scala.inline
   def apply(
-    any: typings.propTypes.mod.Requireable[_],
-    array: typings.propTypes.mod.Requireable[js.Array[_]],
+    any: typings.propTypes.mod.Requireable[js.Any],
+    array: typings.propTypes.mod.Requireable[js.Array[js.Any]],
     arrayOf: FnCallType,
     bool: typings.propTypes.mod.Requireable[Boolean],
     element: typings.propTypes.mod.Requireable[ReactElementLike],
     exact: Fn3,
-    func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ _, _]],
+    func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
     instanceOf: FnCall,
     node: typings.propTypes.mod.Requireable[ReactNodeLike],
     number: typings.propTypes.mod.Requireable[Double],
@@ -79,10 +77,10 @@ object ReactPropTypes {
   implicit class ReactPropTypesMutableBuilder[Self <: ReactPropTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAny(value: typings.propTypes.mod.Requireable[_]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    def setAny(value: typings.propTypes.mod.Requireable[js.Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: typings.propTypes.mod.Requireable[js.Array[_]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    def setArray(value: typings.propTypes.mod.Requireable[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArrayOf(value: FnCallType): Self = StObject.set(x, "arrayOf", value.asInstanceOf[js.Any])
@@ -97,7 +95,7 @@ object ReactPropTypes {
     def setExact(value: Fn3): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInstanceOf(value: FnCall): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])

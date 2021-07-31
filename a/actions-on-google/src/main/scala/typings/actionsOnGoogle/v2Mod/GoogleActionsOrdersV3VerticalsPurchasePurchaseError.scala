@@ -2,38 +2,36 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseError extends StObject {
   
   /**
     * Available quantity now. Applicable in case of AVAILABILITY_CHANGED.
     */
-  var availableQuantity: js.UndefOr[Double] = js.native
+  var availableQuantity: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional error description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Entity Id that corresponds to the error. Example this can correspond to
     * LineItemId / ItemOptionId.
     */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /**
     * Required: This represents the granular reason why an order gets rejected by
     * the merchant.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType] = js.undefined
   
   /**
     * Relevant in case of PRICE_CHANGED / INCORRECT_PRICE error type.
     */
-  var updatedPrice: js.UndefOr[GoogleActionsOrdersV3PriceAttribute] = js.native
+  var updatedPrice: js.UndefOr[GoogleActionsOrdersV3PriceAttribute] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
   

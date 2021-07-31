@@ -6,14 +6,13 @@ import typings.feathersjsAuthenticationClient.anon.Typeofself
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("@feathersjs/authentication-client", JSImport.Default)
   @js.native
-  val default: (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) with Typeofself = js.native
+  val default: (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) & Typeofself = js.native
   
   object defaults {
     
@@ -70,24 +69,23 @@ object mod extends Shortcut {
     def timeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait FeathersAuthClientConfig extends StObject {
     
-    var cookie: js.UndefOr[String] = js.native
+    var cookie: js.UndefOr[String] = js.undefined
     
-    var entity: js.UndefOr[String] = js.native
+    var entity: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var jwtStrategy: js.UndefOr[String] = js.native
+    var jwtStrategy: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
-    var storage: js.UndefOr[Storage] = js.native
+    var storage: js.UndefOr[Storage] = js.undefined
     
-    var storageKey: js.UndefOr[String] = js.native
+    var storageKey: js.UndefOr[String] = js.undefined
   }
   object FeathersAuthClientConfig {
     
@@ -150,11 +148,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FeathersAuthCredentials
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var strategy: String = js.native
+    var strategy: String
   }
   object FeathersAuthCredentials {
     
@@ -182,39 +180,39 @@ object mod extends Shortcut {
     
     def clearCookie(name: String): Null = js.native
     
-    def connected(): js.Promise[_] = js.native
+    def connected(): js.Promise[js.Any] = js.native
     
     def getCookie(name: String): String = js.native
     
-    def getJWT(): js.Promise[_] = js.native
+    def getJWT(): js.Promise[js.Any] = js.native
     
     def getStorage(storage: js.Any): js.Any = js.native
     
-    def logout(): js.Promise[_] = js.native
+    def logout(): js.Promise[js.Any] = js.native
     
-    def logoutSocket(socket: js.Any, emit: js.Any): js.Promise[_] = js.native
+    def logoutSocket(socket: js.Any, emit: js.Any): js.Promise[js.Any] = js.native
     
     def payloadIsValid(payload: String): Boolean = js.native
     
-    def setJWT(data: js.Any): js.Promise[_] = js.native
+    def setJWT(data: js.Any): js.Promise[js.Any] = js.native
     
     def setupSocketListeners(): Unit = js.native
     
-    def verifyJWT(token: String): js.Promise[_] = js.native
+    def verifyJWT(token: String): js.Promise[js.Any] = js.native
   }
   
-  type _To = (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) with Typeofself
+  type _To = (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) & Typeofself
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) with Typeofself = default
+  override def _to: (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) & Typeofself = default
   
   object feathersjsFeathersAugmentingMod {
     
     @js.native
     trait Application[ServiceTypes] extends StObject {
       
-      def authenticate(): js.Promise[_] = js.native
-      def authenticate(options: FeathersAuthCredentials): js.Promise[_] = js.native
+      def authenticate(): js.Promise[js.Any] = js.native
+      def authenticate(options: FeathersAuthCredentials): js.Promise[js.Any] = js.native
       
       def logout(): js.Promise[Unit] = js.native
       

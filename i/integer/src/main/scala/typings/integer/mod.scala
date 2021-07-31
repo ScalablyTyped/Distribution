@@ -5,14 +5,16 @@ import typings.integer.integerNumbers.`0`
 import typings.integer.integerNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`val`: IntLike): IntClass = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[IntClass]
+  
   @JSImport("integer", JSImport.Namespace)
   @js.native
-  def apply(`val`: IntLike): IntClass = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("integer", "IntClass")
   @js.native
@@ -40,10 +42,6 @@ object mod {
     def dividedBy(divisor: IntLike): IntClass = js.native
     
     def doesNotEqual(`val`: IntLike): Boolean = js.native
-    
-    def eq(`val`: IntLike): Boolean = js.native
-    
-    def equals(`val`: IntLike): Boolean = js.native
     
     def greaterThan(`val`: IntLike): Boolean = js.native
     
@@ -164,45 +162,33 @@ object mod {
   @js.native
   val ZERO: IntClass = js.native
   
-  @JSImport("integer", "fromBits")
-  @js.native
-  def fromBits(low: Double): IntClass = js.native
-  @JSImport("integer", "fromBits")
-  @js.native
-  def fromBits(low: Double, high: Double): IntClass = js.native
+  @scala.inline
+  def fromBits(low: Double): IntClass = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(low.asInstanceOf[js.Any]).asInstanceOf[IntClass]
+  @scala.inline
+  def fromBits(low: Double, high: Double): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[IntClass]
   
-  @JSImport("integer", "fromNumber")
-  @js.native
-  def fromNumber(`val`: Double): IntClass = js.native
-  @JSImport("integer", "fromNumber")
-  @js.native
-  def fromNumber(`val`: Double, defaultVal: Double): IntClass = js.native
-  @JSImport("integer", "fromNumber")
-  @js.native
-  def fromNumber(`val`: Double, defaultVal: IntClass): IntClass = js.native
+  @scala.inline
+  def fromNumber(`val`: Double): IntClass = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[IntClass]
+  @scala.inline
+  def fromNumber(`val`: Double, defaultVal: Double): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(`val`.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
+  @scala.inline
+  def fromNumber(`val`: Double, defaultVal: IntClass): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(`val`.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
   
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String): IntClass = js.native
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: String): IntClass = js.native
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: IntClass): IntClass = js.native
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String, radix: Double): IntClass = js.native
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String, radix: Double, defaultVal: String): IntClass = js.native
-  @JSImport("integer", "fromString")
-  @js.native
-  def fromString(`val`: String, radix: Double, defaultVal: IntClass): IntClass = js.native
+  @scala.inline
+  def fromString(`val`: String): IntClass = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any]).asInstanceOf[IntClass]
+  @scala.inline
+  def fromString(`val`: String, radix: Double): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[IntClass]
+  @scala.inline
+  def fromString(`val`: String, radix: Double, defaultVal: String): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any], radix.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
+  @scala.inline
+  def fromString(`val`: String, radix: Double, defaultVal: IntClass): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any], radix.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
+  @scala.inline
+  def fromString(`val`: String, radix: Unit, defaultVal: String): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any], radix.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
+  @scala.inline
+  def fromString(`val`: String, radix: Unit, defaultVal: IntClass): IntClass = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(`val`.asInstanceOf[js.Any], radix.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[IntClass]
   
-  @JSImport("integer", "isInstance")
-  @js.native
-  def isInstance(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isInstance(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type IntLike = Double | String | IntClass
 }

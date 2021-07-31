@@ -15,7 +15,6 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -56,34 +55,26 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("FS.allocate")
-    @js.native
-    def allocate(stream: FSStream, offset: Double, length: Double): Unit = js.native
+    @scala.inline
+    def allocate(stream: FSStream, offset: Double, length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(stream.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.chdir")
-    @js.native
-    def chdir(path: String): Unit = js.native
+    @scala.inline
+    def chdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("FS.chmod")
-    @js.native
-    def chmod(path: String, mode: Double): Unit = js.native
-    @JSGlobal("FS.chmod")
-    @js.native
-    def chmod(path: String, mode: Double, dontFollow: Boolean): Unit = js.native
+    @scala.inline
+    def chmod(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def chmod(path: String, mode: Double, dontFollow: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dontFollow.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.chown")
-    @js.native
-    def chown(path: String, uid: Double, gid: Double): Unit = js.native
-    @JSGlobal("FS.chown")
-    @js.native
-    def chown(path: String, uid: Double, gid: Double, dontFollow: Boolean): Unit = js.native
+    @scala.inline
+    def chown(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def chown(path: String, uid: Double, gid: Double, dontFollow: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], dontFollow.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.close")
-    @js.native
-    def close(stream: FSStream): Unit = js.native
+    @scala.inline
+    def close(stream: FSStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("FS.createDataFile")
-    @js.native
+    @scala.inline
     def createDataFile(
       parent: String,
       name: String,
@@ -91,9 +82,8 @@ object global {
       canRead: Boolean,
       canWrite: Boolean,
       canOwn: Boolean
-    ): FSNode = js.native
-    @JSGlobal("FS.createDataFile")
-    @js.native
+    ): FSNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[FSNode]
+    @scala.inline
     def createDataFile(
       parent: FSNode,
       name: String,
@@ -101,107 +91,16 @@ object global {
       canRead: Boolean,
       canWrite: Boolean,
       canOwn: Boolean
-    ): FSNode = js.native
+    ): FSNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[FSNode]
     
-    @JSGlobal("FS.createLazyFile")
-    @js.native
-    def createLazyFile(parent: String, name: String, url: String, canRead: Boolean, canWrite: Boolean): FSNode = js.native
-    @JSGlobal("FS.createLazyFile")
-    @js.native
-    def createLazyFile(parent: FSNode, name: String, url: String, canRead: Boolean, canWrite: Boolean): FSNode = js.native
+    @scala.inline
+    def createLazyFile(parent: String, name: String, url: String, canRead: Boolean, canWrite: Boolean): FSNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createLazyFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any])).asInstanceOf[FSNode]
+    @scala.inline
+    def createLazyFile(parent: FSNode, name: String, url: String, canRead: Boolean, canWrite: Boolean): FSNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createLazyFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any])).asInstanceOf[FSNode]
     
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(parent: String, name: String, url: String, canRead: Boolean, canWrite: Boolean): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean,
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.Function0[Unit],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.Function0[Unit],
-      dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.Function0[Unit],
-      dontCreateFile: Boolean,
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    @scala.inline
+    def createPreloadedFile(parent: String, name: String, url: String, canRead: Boolean, canWrite: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: String,
       name: String,
@@ -209,47 +108,8 @@ object global {
       canRead: Boolean,
       canWrite: Boolean,
       onload: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean,
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: String,
       name: String,
@@ -258,22 +118,8 @@ object global {
       canWrite: Boolean,
       onload: js.Function0[Unit],
       onerror: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: String,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.Function0[Unit],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: String,
       name: String,
@@ -283,9 +129,8 @@ object global {
       onload: js.Function0[Unit],
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: String,
       name: String,
@@ -296,99 +141,137 @@ object global {
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean,
       canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(parent: FSNode, name: String, url: String, canRead: Boolean, canWrite: Boolean): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: js.UndefOr[scala.Nothing],
+      onload: js.Function0[Unit],
+      onerror: js.Function0[Unit],
+      dontCreateFile: Unit,
       canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
+      onload: js.Function0[Unit],
+      onerror: Unit,
       dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
+      onload: js.Function0[Unit],
+      onerror: Unit,
       dontCreateFile: Boolean,
       canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
+      onload: js.Function0[Unit],
+      onerror: Unit,
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: String,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
       onerror: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
-      onerror: js.Function0[Unit],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: FSNode,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
+      onload: Unit,
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
-      parent: FSNode,
+      parent: String,
       name: String,
       url: String,
       canRead: Boolean,
       canWrite: Boolean,
-      onload: js.UndefOr[scala.Nothing],
+      onload: Unit,
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean,
       canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: String,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: js.Function0[Unit],
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: String,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: String,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Boolean,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: String,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(parent: FSNode, name: String, url: String, canRead: Boolean, canWrite: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: FSNode,
       name: String,
@@ -396,47 +279,8 @@ object global {
       canRead: Boolean,
       canWrite: Boolean,
       onload: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: FSNode,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: FSNode,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: FSNode,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.UndefOr[scala.Nothing],
-      dontCreateFile: Boolean,
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: FSNode,
       name: String,
@@ -445,22 +289,8 @@ object global {
       canWrite: Boolean,
       onload: js.Function0[Unit],
       onerror: js.Function0[Unit]
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
-    def createPreloadedFile(
-      parent: FSNode,
-      name: String,
-      url: String,
-      canRead: Boolean,
-      canWrite: Boolean,
-      onload: js.Function0[Unit],
-      onerror: js.Function0[Unit],
-      dontCreateFile: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: FSNode,
       name: String,
@@ -470,9 +300,8 @@ object global {
       onload: js.Function0[Unit],
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean
-    ): Unit = js.native
-    @JSGlobal("FS.createPreloadedFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def createPreloadedFile(
       parent: FSNode,
       name: String,
@@ -483,26 +312,149 @@ object global {
       onerror: js.Function0[Unit],
       dontCreateFile: Boolean,
       canOwn: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: js.Function0[Unit],
+      onerror: js.Function0[Unit],
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: js.Function0[Unit],
+      onerror: Unit,
+      dontCreateFile: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: js.Function0[Unit],
+      onerror: Unit,
+      dontCreateFile: Boolean,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: js.Function0[Unit],
+      onerror: Unit,
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: js.Function0[Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: js.Function0[Unit],
+      dontCreateFile: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: js.Function0[Unit],
+      dontCreateFile: Boolean,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: js.Function0[Unit],
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Boolean,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createPreloadedFile(
+      parent: FSNode,
+      name: String,
+      url: String,
+      canRead: Boolean,
+      canWrite: Boolean,
+      onload: Unit,
+      onerror: Unit,
+      dontCreateFile: Unit,
+      canOwn: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadedFile")(parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], canRead.asInstanceOf[js.Any], canWrite.asInstanceOf[js.Any], onload.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontCreateFile.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     //
     // module-level FS code
     //
-    @JSGlobal("FS.cwd")
-    @js.native
-    def cwd(): String = js.native
+    @scala.inline
+    def cwd(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cwd")().asInstanceOf[String]
     
-    @JSGlobal("FS.fchmod")
-    @js.native
-    def fchmod(fd: Double, mode: Double): Unit = js.native
+    @scala.inline
+    def fchmod(fd: Double, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.fchown")
-    @js.native
-    def fchown(fd: Double, uid: Double, gid: Double): Unit = js.native
+    @scala.inline
+    def fchown(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.ftruncate")
-    @js.native
-    def ftruncate(fd: Double, len: Double): Unit = js.native
+    @scala.inline
+    def ftruncate(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("FS.genericErrors")
     @js.native
@@ -510,9 +462,8 @@ object global {
     @scala.inline
     def genericErrors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("genericErrors")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("FS.getPath")
-    @js.native
-    def getPath(node: FSNode): String = js.native
+    @scala.inline
+    def getPath(node: FSNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("FS.ignorePermissions")
     @js.native
@@ -520,130 +471,103 @@ object global {
     @scala.inline
     def ignorePermissions_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignorePermissions")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("FS.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: js.Function0[Double | Null]): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: js.Function0[Double | Null], output: js.Function1[/* c */ Double, _]): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(input: js.Function0[Double | Null]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def init(input: js.Function0[Double | Null], output: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def init(
       input: js.Function0[Double | Null],
-      output: js.Function1[/* c */ Double, _],
-      error: js.Function1[/* c */ Double, _]
-    ): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: js.Function0[Double | Null], output: Null, error: js.Function1[/* c */ Double, _]): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: Null, output: js.Function1[/* c */ Double, _]): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: Null, output: js.Function1[/* c */ Double, _], error: js.Function1[/* c */ Double, _]): Unit = js.native
-    @JSGlobal("FS.init")
-    @js.native
-    def init(input: Null, output: Null, error: js.Function1[/* c */ Double, _]): Unit = js.native
+      output: js.Function1[/* c */ Double, js.Any],
+      error: js.Function1[/* c */ Double, js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def init(input: js.Function0[Double | Null], output: Null, error: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def init(input: Null, output: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def init(
+      input: Null,
+      output: js.Function1[/* c */ Double, js.Any],
+      error: js.Function1[/* c */ Double, js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def init(input: Null, output: Null, error: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.ioctl")
-    @js.native
-    def ioctl(stream: FSStream, cmd: js.Any, arg: js.Any): js.Any = js.native
+    @scala.inline
+    def ioctl(stream: FSStream, cmd: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ioctl")(stream.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.isBlkdev")
-    @js.native
-    def isBlkdev(mode: Double): Boolean = js.native
+    @scala.inline
+    def isBlkdev(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlkdev")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.isChrdev")
-    @js.native
-    def isChrdev(mode: Double): Boolean = js.native
+    @scala.inline
+    def isChrdev(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChrdev")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.isDir")
-    @js.native
-    def isDir(mode: Double): Boolean = js.native
+    @scala.inline
+    def isDir(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDir")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.isFIFO")
-    @js.native
-    def isFIFO(mode: Double): Boolean = js.native
+    @scala.inline
+    def isFIFO(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFIFO")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     //
     // nodes
     //
-    @JSGlobal("FS.isFile")
-    @js.native
-    def isFile(mode: Double): Boolean = js.native
+    @scala.inline
+    def isFile(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.isLink")
-    @js.native
-    def isLink(mode: Double): Boolean = js.native
+    @scala.inline
+    def isLink(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLink")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.isSocket")
-    @js.native
-    def isSocket(mode: Double): Boolean = js.native
+    @scala.inline
+    def isSocket(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSocket")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("FS.lchmod")
-    @js.native
-    def lchmod(path: String, mode: Double): Unit = js.native
+    @scala.inline
+    def lchmod(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.lchown")
-    @js.native
-    def lchown(path: String, uid: Double, gid: Double): Unit = js.native
+    @scala.inline
+    def lchown(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.llseek")
-    @js.native
-    def llseek(stream: FSStream, offset: Double, whence: Double): js.Any = js.native
+    @scala.inline
+    def llseek(stream: FSStream, offset: Double, whence: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("llseek")(stream.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     //
     // paths
     //
-    @JSGlobal("FS.lookupPath")
-    @js.native
-    def lookupPath(path: String, opts: js.Any): Lookup = js.native
+    @scala.inline
+    def lookupPath(path: String, opts: js.Any): Lookup = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPath")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Lookup]
     
-    @JSGlobal("FS.lstat")
-    @js.native
-    def lstat(path: String): js.Any = js.native
+    @scala.inline
+    def lstat(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     //
     // devices
     //
-    @JSGlobal("FS.major")
-    @js.native
-    def major(dev: Double): Double = js.native
+    @scala.inline
+    def major(dev: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("major")(dev.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("FS.makedev")
-    @js.native
-    def makedev(ma: Double, mi: Double): Double = js.native
+    @scala.inline
+    def makedev(ma: Double, mi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("makedev")(ma.asInstanceOf[js.Any], mi.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("FS.minor")
-    @js.native
-    def minor(dev: Double): Double = js.native
+    @scala.inline
+    def minor(dev: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minor")(dev.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("FS.mkdev")
-    @js.native
-    def mkdev(path: String): js.Any = js.native
-    @JSGlobal("FS.mkdev")
-    @js.native
-    def mkdev(path: String, mode: js.UndefOr[scala.Nothing], dev: Double): js.Any = js.native
-    @JSGlobal("FS.mkdev")
-    @js.native
-    def mkdev(path: String, mode: Double): js.Any = js.native
-    @JSGlobal("FS.mkdev")
-    @js.native
-    def mkdev(path: String, mode: Double, dev: Double): js.Any = js.native
+    @scala.inline
+    def mkdev(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def mkdev(path: String, mode: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def mkdev(path: String, mode: Double, dev: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def mkdev(path: String, mode: Unit, dev: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.mkdir")
-    @js.native
-    def mkdir(path: String): js.Any = js.native
-    @JSGlobal("FS.mkdir")
-    @js.native
-    def mkdir(path: String, mode: Double): js.Any = js.native
+    @scala.inline
+    def mkdir(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def mkdir(path: String, mode: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.mmap")
-    @js.native
+    @scala.inline
     def mmap(
       stream: FSStream,
       buffer: ArrayBufferView,
@@ -652,106 +576,74 @@ object global {
       position: Double,
       prot: Double,
       flags: Double
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mmap")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], prot.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.mount")
-    @js.native
-    def mount(`type`: FileSystemType, opts: js.Any, mountpoint: String): js.Any = js.native
+    @scala.inline
+    def mount(`type`: FileSystemType, opts: js.Any, mountpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], mountpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(
-      path: String,
-      flags: String,
-      mode: js.UndefOr[scala.Nothing],
-      fd_start: js.UndefOr[scala.Nothing],
-      fd_end: Double
-    ): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: js.UndefOr[scala.Nothing], fd_start: Double): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: js.UndefOr[scala.Nothing], fd_start: Double, fd_end: Double): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: Double): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: Double, fd_start: js.UndefOr[scala.Nothing], fd_end: Double): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: Double, fd_start: Double): FSStream = js.native
-    @JSGlobal("FS.open")
-    @js.native
-    def open(path: String, flags: String, mode: Double, fd_start: Double, fd_end: Double): FSStream = js.native
+    @scala.inline
+    def open(path: String, flags: String): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Double, fd_start: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Double, fd_start: Double, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Double, fd_start: Unit, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Unit, fd_start: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Unit, fd_start: Double, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
+    @scala.inline
+    def open(path: String, flags: String, mode: Unit, fd_start: Unit, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
     
-    @JSGlobal("FS.read")
-    @js.native
-    def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-    @JSGlobal("FS.read")
-    @js.native
-    def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+    @scala.inline
+    def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("FS.readFile")
-    @js.native
-    def readFile(path: String): Uint8Array = js.native
-    @JSGlobal("FS.readFile")
-    @js.native
-    def readFile(path: String, opts: Encoding): Uint8Array = js.native
-    @JSGlobal("FS.readFile")
-    @js.native
-    def readFile(path: String, opts: Flags): String = js.native
-    @JSGlobal("FS.readFile")
-    @js.native
-    def readFile(path: String, opts: `0`): Uint8Array = js.native
+    @scala.inline
+    def readFile(path: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    @scala.inline
+    def readFile(path: String, opts: Encoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def readFile(path: String, opts: Flags): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def readFile(path: String, opts: `0`): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @JSGlobal("FS.readdir")
-    @js.native
-    def readdir(path: String): js.Any = js.native
+    @scala.inline
+    def readdir(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.readlink")
-    @js.native
-    def readlink(path: String): String = js.native
+    @scala.inline
+    def readlink(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("FS.registerDevice")
-    @js.native
-    def registerDevice(dev: Double, ops: js.Any): Unit = js.native
+    @scala.inline
+    def registerDevice(dev: Double, ops: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDevice")(dev.asInstanceOf[js.Any], ops.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.rename")
-    @js.native
-    def rename(old_path: String, new_path: String): Unit = js.native
+    @scala.inline
+    def rename(old_path: String, new_path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(old_path.asInstanceOf[js.Any], new_path.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.rmdir")
-    @js.native
-    def rmdir(path: String): Unit = js.native
+    @scala.inline
+    def rmdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("FS.stat")
-    @js.native
-    def stat(path: String): js.Any = js.native
-    @JSGlobal("FS.stat")
-    @js.native
-    def stat(path: String, dontFollow: Boolean): js.Any = js.native
+    @scala.inline
+    def stat(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def stat(path: String, dontFollow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], dontFollow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.symlink")
-    @js.native
-    def symlink(oldpath: String, newpath: String): js.Any = js.native
+    @scala.inline
+    def symlink(oldpath: String, newpath: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(oldpath.asInstanceOf[js.Any], newpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("FS.syncfs")
-    @js.native
-    def syncfs(callback: js.Function1[/* e */ js.Any, _]): Unit = js.native
-    @JSGlobal("FS.syncfs")
-    @js.native
-    def syncfs(callback: js.Function1[/* e */ js.Any, _], populate: Boolean): Unit = js.native
+    @scala.inline
+    def syncfs(callback: js.Function1[/* e */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def syncfs(callback: js.Function1[/* e */ js.Any, js.Any], populate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any], populate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     //
     // core
     //
-    @JSGlobal("FS.syncfs")
-    @js.native
-    def syncfs(populate: Boolean, callback: js.Function1[/* e */ js.Any, _]): Unit = js.native
+    @scala.inline
+    def syncfs(populate: Boolean, callback: js.Function1[/* e */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(populate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("FS.tracking")
     @js.native
@@ -766,40 +658,23 @@ object global {
     @scala.inline
     def tracking_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracking")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("FS.truncate")
-    @js.native
-    def truncate(path: String, len: Double): Unit = js.native
+    @scala.inline
+    def truncate(path: String, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.unlink")
-    @js.native
-    def unlink(path: String): Unit = js.native
+    @scala.inline
+    def unlink(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("FS.unmount")
-    @js.native
-    def unmount(mountpoint: String): Unit = js.native
+    @scala.inline
+    def unmount(mountpoint: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(mountpoint.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("FS.utime")
-    @js.native
-    def utime(path: String, atime: Double, mtime: Double): Unit = js.native
+    @scala.inline
+    def utime(path: String, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utime")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("FS.write")
-    @js.native
-    def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-    @JSGlobal("FS.write")
-    @js.native
-    def write(
-      stream: FSStream,
-      buffer: ArrayBufferView,
-      offset: Double,
-      length: Double,
-      position: js.UndefOr[scala.Nothing],
-      canOwn: Boolean
-    ): Double = js.native
-    @JSGlobal("FS.write")
-    @js.native
-    def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-    @JSGlobal("FS.write")
-    @js.native
+    @scala.inline
+    def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def write(
       stream: FSStream,
       buffer: ArrayBufferView,
@@ -807,20 +682,25 @@ object global {
       length: Double,
       position: Double,
       canOwn: Boolean
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def write(
+      stream: FSStream,
+      buffer: ArrayBufferView,
+      offset: Double,
+      length: Double,
+      position: Unit,
+      canOwn: Boolean
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("FS.writeFile")
-    @js.native
-    def writeFile(path: String, data: String): Unit = js.native
-    @JSGlobal("FS.writeFile")
-    @js.native
-    def writeFile(path: String, data: String, opts: `0`): Unit = js.native
-    @JSGlobal("FS.writeFile")
-    @js.native
-    def writeFile(path: String, data: ArrayBufferView): Unit = js.native
-    @JSGlobal("FS.writeFile")
-    @js.native
-    def writeFile(path: String, data: ArrayBufferView, opts: `0`): Unit = js.native
+    @scala.inline
+    def writeFile(path: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeFile(path: String, data: String, opts: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeFile(path: String, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeFile(path: String, data: ArrayBufferView, opts: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("IDBFS")
@@ -841,89 +721,66 @@ object global {
   @scala.inline
   def NODEFS_=(x: FileSystemType): Unit = js.Dynamic.global.updateDynamic("NODEFS")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("UTF16ToString")
-  @js.native
-  def UTF16ToString(ptr: Double): String = js.native
+  @scala.inline
+  def UTF16ToString(ptr: Double): String = js.Dynamic.global.applyDynamic("UTF16ToString")(ptr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("UTF32ToString")
-  @js.native
-  def UTF32ToString(ptr: Double): String = js.native
+  @scala.inline
+  def UTF32ToString(ptr: Double): String = js.Dynamic.global.applyDynamic("UTF32ToString")(ptr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("UTF8ToString")
-  @js.native
-  def UTF8ToString(ptr: Double): String = js.native
-  @JSGlobal("UTF8ToString")
-  @js.native
-  def UTF8ToString(ptr: Double, maxBytesToRead: Double): String = js.native
+  @scala.inline
+  def UTF8ToString(ptr: Double): String = js.Dynamic.global.applyDynamic("UTF8ToString")(ptr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def UTF8ToString(ptr: Double, maxBytesToRead: Double): String = (js.Dynamic.global.applyDynamic("UTF8ToString")(ptr.asInstanceOf[js.Any], maxBytesToRead.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("addFunction")
-  @js.native
-  def addFunction(func: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  @JSGlobal("addFunction")
-  @js.native
-  def addFunction(func: js.Function1[/* repeated */ js.Any, _], signature: String): Double = js.native
+  @scala.inline
+  def addFunction(func: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def addFunction(func: js.Function1[/* repeated */ js.Any, js.Any], signature: String): Double = (js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("addRunDependency")
-  @js.native
-  def addRunDependency(id: js.Any): Unit = js.native
+  @scala.inline
+  def addRunDependency(id: js.Any): Unit = js.Dynamic.global.applyDynamic("addRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double, ptr: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: js.Array[Double], types: CType, allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: js.Array[Double], types: CType, allocator: Double, ptr: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: Double, types: js.Array[CType], allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: Double, types: js.Array[CType], allocator: Double, ptr: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: Double, types: CType, allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: Double, types: CType, allocator: Double, ptr: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double, ptr: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: ArrayBufferView, types: CType, allocator: Double): Double = js.native
-  @JSGlobal("allocate")
-  @js.native
-  def allocate(slab: ArrayBufferView, types: CType, allocator: Double, ptr: Double): Double = js.native
+  @scala.inline
+  def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: js.Array[Double], types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: js.Array[Double], types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: Double, types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: Double, types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: Double, types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: Double, types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: ArrayBufferView, types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def allocate(slab: ArrayBufferView, types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("allocateUTF8")
-  @js.native
-  def allocateUTF8(str: String): Double = js.native
+  @scala.inline
+  def allocateUTF8(str: String): Double = js.Dynamic.global.applyDynamic("allocateUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("allocateUTF8OnStack")
-  @js.native
-  def allocateUTF8OnStack(str: String): Double = js.native
+  @scala.inline
+  def allocateUTF8OnStack(str: String): Double = js.Dynamic.global.applyDynamic("allocateUTF8OnStack")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("ccall")
-  @js.native
-  def ccall(ident: String, returnType: Null, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = js.native
-  @JSGlobal("ccall")
-  @js.native
+  @scala.inline
+  def ccall(ident: String, returnType: Null, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def ccall(
     ident: String,
     returnType: Null,
     argTypes: js.Array[JSType],
     args: js.Array[TypeCompatibleWithC],
     opts: CCallOpts
-  ): js.Any = js.native
+  ): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   // Below runtime function/variable declarations are exportable by
   // -s EXTRA_EXPORTED_RUNTIME_METHODS. You can extend or merge
   // EmscriptenModule interface to add runtime functions.
@@ -937,125 +794,93 @@ object global {
   // }
   //
   // See: https://emscripten.org/docs/getting_started/FAQ.html#why-do-i-get-typeerror-module-something-is-not-a-function
-  @JSGlobal("ccall")
-  @js.native
-  def ccall(ident: String, returnType: JSType, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = js.native
-  @JSGlobal("ccall")
-  @js.native
+  @scala.inline
+  def ccall(ident: String, returnType: JSType, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def ccall(
     ident: String,
     returnType: JSType,
     argTypes: js.Array[JSType],
     args: js.Array[TypeCompatibleWithC],
     opts: CCallOpts
-  ): js.Any = js.native
+  ): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("cwrap")
-  @js.native
-  def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSGlobal("cwrap")
-  @js.native
-  def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSGlobal("cwrap")
-  @js.native
-  def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSGlobal("cwrap")
-  @js.native
-  def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, _] = js.native
+  @scala.inline
+  def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  @scala.inline
+  def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  @scala.inline
+  def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  @scala.inline
+  def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @JSGlobal("getValue")
-  @js.native
-  def getValue(ptr: Double, `type`: CType): Double = js.native
-  @JSGlobal("getValue")
-  @js.native
-  def getValue(ptr: Double, `type`: CType, noSafe: Boolean): Double = js.native
+  @scala.inline
+  def getValue(ptr: Double, `type`: CType): Double = (js.Dynamic.global.applyDynamic("getValue")(ptr.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getValue(ptr: Double, `type`: CType, noSafe: Boolean): Double = (js.Dynamic.global.applyDynamic("getValue")(ptr.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], noSafe.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("intArrayFromString")
-  @js.native
-  def intArrayFromString(stringy: String): js.Array[Double] = js.native
-  @JSGlobal("intArrayFromString")
-  @js.native
-  def intArrayFromString(stringy: String, dontAddNull: js.UndefOr[scala.Nothing], length: Double): js.Array[Double] = js.native
-  @JSGlobal("intArrayFromString")
-  @js.native
-  def intArrayFromString(stringy: String, dontAddNull: Boolean): js.Array[Double] = js.native
-  @JSGlobal("intArrayFromString")
-  @js.native
-  def intArrayFromString(stringy: String, dontAddNull: Boolean, length: Double): js.Array[Double] = js.native
+  @scala.inline
+  def intArrayFromString(stringy: String): js.Array[Double] = js.Dynamic.global.applyDynamic("intArrayFromString")(stringy.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def intArrayFromString(stringy: String, dontAddNull: Boolean): js.Array[Double] = (js.Dynamic.global.applyDynamic("intArrayFromString")(stringy.asInstanceOf[js.Any], dontAddNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def intArrayFromString(stringy: String, dontAddNull: Boolean, length: Double): js.Array[Double] = (js.Dynamic.global.applyDynamic("intArrayFromString")(stringy.asInstanceOf[js.Any], dontAddNull.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def intArrayFromString(stringy: String, dontAddNull: Unit, length: Double): js.Array[Double] = (js.Dynamic.global.applyDynamic("intArrayFromString")(stringy.asInstanceOf[js.Any], dontAddNull.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSGlobal("intArrayToString")
-  @js.native
-  def intArrayToString(array: js.Array[Double]): String = js.native
+  @scala.inline
+  def intArrayToString(array: js.Array[Double]): String = js.Dynamic.global.applyDynamic("intArrayToString")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("lengthBytesUTF16")
-  @js.native
-  def lengthBytesUTF16(str: String): Double = js.native
+  @scala.inline
+  def lengthBytesUTF16(str: String): Double = js.Dynamic.global.applyDynamic("lengthBytesUTF16")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("lengthBytesUTF32")
-  @js.native
-  def lengthBytesUTF32(str: String): Double = js.native
+  @scala.inline
+  def lengthBytesUTF32(str: String): Double = js.Dynamic.global.applyDynamic("lengthBytesUTF32")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("lengthBytesUTF8")
-  @js.native
-  def lengthBytesUTF8(str: String): Double = js.native
+  @scala.inline
+  def lengthBytesUTF8(str: String): Double = js.Dynamic.global.applyDynamic("lengthBytesUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("removeFunction")
-  @js.native
-  def removeFunction(funcPtr: Double): Unit = js.native
+  @scala.inline
+  def removeFunction(funcPtr: Double): Unit = js.Dynamic.global.applyDynamic("removeFunction")(funcPtr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("removeRunDependency")
-  @js.native
-  def removeRunDependency(id: js.Any): Unit = js.native
+  @scala.inline
+  def removeRunDependency(id: js.Any): Unit = js.Dynamic.global.applyDynamic("removeRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("setValue")
-  @js.native
-  def setValue(ptr: Double, value: js.Any, `type`: CType): Unit = js.native
-  @JSGlobal("setValue")
-  @js.native
-  def setValue(ptr: Double, value: js.Any, `type`: CType, noSafe: Boolean): Unit = js.native
+  @scala.inline
+  def setValue(ptr: Double, value: js.Any, `type`: CType): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setValue(ptr: Double, value: js.Any, `type`: CType, noSafe: Boolean): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], noSafe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("stackAlloc")
-  @js.native
-  def stackAlloc(size: Double): Double = js.native
+  @scala.inline
+  def stackAlloc(size: Double): Double = js.Dynamic.global.applyDynamic("stackAlloc")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("stackRestore")
-  @js.native
-  def stackRestore(ptr: Double): Unit = js.native
+  @scala.inline
+  def stackRestore(ptr: Double): Unit = js.Dynamic.global.applyDynamic("stackRestore")(ptr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("stackSave")
-  @js.native
-  def stackSave(): Double = js.native
+  @scala.inline
+  def stackSave(): Double = js.Dynamic.global.applyDynamic("stackSave")().asInstanceOf[Double]
   
-  @JSGlobal("stringToUTF16")
-  @js.native
-  def stringToUTF16(str: String, outPtr: Double): Unit = js.native
-  @JSGlobal("stringToUTF16")
-  @js.native
-  def stringToUTF16(str: String, outPtr: Double, maxBytesToRead: Double): Unit = js.native
+  @scala.inline
+  def stringToUTF16(str: String, outPtr: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF16")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def stringToUTF16(str: String, outPtr: Double, maxBytesToRead: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF16")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any], maxBytesToRead.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("stringToUTF32")
-  @js.native
-  def stringToUTF32(str: String, outPtr: Double): Unit = js.native
-  @JSGlobal("stringToUTF32")
-  @js.native
-  def stringToUTF32(str: String, outPtr: Double, maxBytesToRead: Double): Unit = js.native
+  @scala.inline
+  def stringToUTF32(str: String, outPtr: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF32")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def stringToUTF32(str: String, outPtr: Double, maxBytesToRead: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF32")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any], maxBytesToRead.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("stringToUTF8")
-  @js.native
-  def stringToUTF8(str: String, outPtr: Double): Unit = js.native
-  @JSGlobal("stringToUTF8")
-  @js.native
-  def stringToUTF8(str: String, outPtr: Double, maxBytesToRead: Double): Unit = js.native
+  @scala.inline
+  def stringToUTF8(str: String, outPtr: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF8")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def stringToUTF8(str: String, outPtr: Double, maxBytesToRead: Double): Unit = (js.Dynamic.global.applyDynamic("stringToUTF8")(str.asInstanceOf[js.Any], outPtr.asInstanceOf[js.Any], maxBytesToRead.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("writeArrayToMemory")
-  @js.native
-  def writeArrayToMemory(array: js.Array[Double], buffer: Double): Unit = js.native
+  @scala.inline
+  def writeArrayToMemory(array: js.Array[Double], buffer: Double): Unit = (js.Dynamic.global.applyDynamic("writeArrayToMemory")(array.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("writeAsciiToMemory")
-  @js.native
-  def writeAsciiToMemory(str: String, buffer: Double, dontAddNull: Boolean): Unit = js.native
+  @scala.inline
+  def writeAsciiToMemory(str: String, buffer: Double, dontAddNull: Boolean): Unit = (js.Dynamic.global.applyDynamic("writeAsciiToMemory")(str.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], dontAddNull.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("writeStringToMemory")
-  @js.native
-  def writeStringToMemory(str: String, buffer: Double, dontAddNull: Boolean): Unit = js.native
+  @scala.inline
+  def writeStringToMemory(str: String, buffer: Double, dontAddNull: Boolean): Unit = (js.Dynamic.global.applyDynamic("writeStringToMemory")(str.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], dontAddNull.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

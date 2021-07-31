@@ -2,17 +2,15 @@ package typings.storybookComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object Href {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeValue extends StObject {
   
   /**
     * An attribute of type Binary. For example:  "B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk" 
     */
-  var B: js.UndefOr[BinaryAttributeValue] = js.native
+  var B: js.UndefOr[BinaryAttributeValue] = js.undefined
   
   /**
     * An attribute of type Boolean. For example:  "BOOL": true 
     */
-  var BOOL: js.UndefOr[BooleanAttributeValue] = js.native
+  var BOOL: js.UndefOr[BooleanAttributeValue] = js.undefined
   
   /**
     * An attribute of type Binary Set. For example:  "BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="] 
     */
-  var BS: js.UndefOr[BinarySetAttributeValue] = js.native
+  var BS: js.UndefOr[BinarySetAttributeValue] = js.undefined
   
   /**
     * An attribute of type List. For example:  "L": [ {"S": "Cookies"} , {"S": "Coffee"}, {"N", "3.14159"}] 
     */
-  var L: js.UndefOr[ListAttributeValue] = js.native
+  var L: js.UndefOr[ListAttributeValue] = js.undefined
   
   /**
     * An attribute of type Map. For example:  "M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}} 
     */
-  var M: js.UndefOr[MapAttributeValue] = js.native
+  var M: js.UndefOr[MapAttributeValue] = js.undefined
   
   /**
     * An attribute of type Number. For example:  "N": "123.45"  Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
     */
-  var N: js.UndefOr[NumberAttributeValue] = js.native
+  var N: js.UndefOr[NumberAttributeValue] = js.undefined
   
   /**
     * An attribute of type Number Set. For example:  "NS": ["42.2", "-19", "7.5", "3.14"]  Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
     */
-  var NS: js.UndefOr[NumberSetAttributeValue] = js.native
+  var NS: js.UndefOr[NumberSetAttributeValue] = js.undefined
   
   /**
     * An attribute of type Null. For example:  "NULL": true 
     */
-  var NULL: js.UndefOr[NullAttributeValue] = js.native
+  var NULL: js.UndefOr[NullAttributeValue] = js.undefined
   
   /**
     * An attribute of type String. For example:  "S": "Hello" 
     */
-  var S: js.UndefOr[StringAttributeValue] = js.native
+  var S: js.UndefOr[StringAttributeValue] = js.undefined
   
   /**
     * An attribute of type String Set. For example:  "SS": ["Giraffe", "Hippo" ,"Zebra"] 
     */
-  var SS: js.UndefOr[StringSetAttributeValue] = js.native
+  var SS: js.UndefOr[StringSetAttributeValue] = js.undefined
 }
 object AttributeValue {
   

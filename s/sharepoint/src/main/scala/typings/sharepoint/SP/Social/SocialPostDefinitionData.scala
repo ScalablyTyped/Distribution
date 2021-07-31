@@ -5,21 +5,21 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides additional information about server-generated posts.
   This type can only be specified in a server-to-server call. */
-@js.native
-trait SocialPostDefinitionData extends ClientValueObject {
+trait SocialPostDefinitionData
+  extends StObject
+     with ClientValueObject {
   
-  def get_items(): js.Array[SocialPostDefinitionDataItem] = js.native
+  def get_items(): js.Array[SocialPostDefinitionDataItem]
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def set_items(value: js.Array[SocialPostDefinitionDataItem]): js.Array[SocialPostDefinitionDataItem] = js.native
+  def set_items(value: js.Array[SocialPostDefinitionDataItem]): js.Array[SocialPostDefinitionDataItem]
   
-  def set_name(value: String): String = js.native
+  def set_name(value: String): String
 }
 object SocialPostDefinitionData {
   

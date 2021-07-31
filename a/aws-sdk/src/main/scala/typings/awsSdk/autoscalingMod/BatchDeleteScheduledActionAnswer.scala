@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteScheduledActionAnswer extends StObject {
   
   /**
     * The names of the scheduled actions that could not be deleted, including an error message.
     */
-  var FailedScheduledActions: js.UndefOr[FailedScheduledUpdateGroupActionRequests] = js.native
+  var FailedScheduledActions: js.UndefOr[FailedScheduledUpdateGroupActionRequests] = js.undefined
 }
 object BatchDeleteScheduledActionAnswer {
   

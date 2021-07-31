@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "MonthDay")
@@ -43,61 +42,51 @@ class MonthDay protected () extends Temporal {
 }
 object MonthDay {
   
-  /* static member */
-  @JSImport("js-joda", "MonthDay.from")
+  @JSImport("js-joda", "MonthDay")
   @js.native
-  def from(temporal: TemporalAccessor): MonthDay = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.now")
-  @js.native
-  def now(): MonthDay = js.native
-  @JSImport("js-joda", "MonthDay.now")
-  @js.native
-  def now(arg1: Clock): MonthDay = js.native
-  @JSImport("js-joda", "MonthDay.now")
-  @js.native
-  def now(arg1: ZoneId): MonthDay = js.native
-  
-  @JSImport("js-joda", "MonthDay.of")
-  @js.native
-  def of(monthOrNumber: Double): MonthDay = js.native
-  @JSImport("js-joda", "MonthDay.of")
-  @js.native
-  def of(monthOrNumber: Double, number: Double): MonthDay = js.native
-  /* static member */
-  @JSImport("js-joda", "MonthDay.of")
-  @js.native
-  def of(monthOrNumber: Month): MonthDay = js.native
-  @JSImport("js-joda", "MonthDay.of")
-  @js.native
-  def of(monthOrNumber: Month, number: Double): MonthDay = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.ofMonthNumber")
-  @js.native
-  def ofMonthNumber(month: Month, dayOfMonth: Double): MonthDay = js.native
+  @scala.inline
+  def now(): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[MonthDay]
+  @scala.inline
+  def now(arg1: Clock): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  @scala.inline
+  def now(arg1: ZoneId): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  
+  @scala.inline
+  def of(monthOrNumber: Double): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  @scala.inline
+  def of(monthOrNumber: Double, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  /* static member */
+  @scala.inline
+  def of(monthOrNumber: Month): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  @scala.inline
+  def of(monthOrNumber: Month, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.ofNumberNumber")
-  @js.native
-  def ofNumberNumber(month: Double, dayOfMonth: Double): MonthDay = js.native
+  @scala.inline
+  def ofMonthNumber(month: Month, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofMonthNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.parse")
-  @js.native
-  def parse(text: String): MonthDay = js.native
-  @JSImport("js-joda", "MonthDay.parse")
-  @js.native
-  def parse(text: String, formatter: DateTimeFormatter): MonthDay = js.native
+  @scala.inline
+  def ofNumberNumber(month: Double, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofNumberNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.parseString")
-  @js.native
-  def parseString(text: String): MonthDay = js.native
+  @scala.inline
+  def parse(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  @scala.inline
+  def parse(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @JSImport("js-joda", "MonthDay.parseStringFormatter")
-  @js.native
-  def parseStringFormatter(text: String, formatter: DateTimeFormatter): MonthDay = js.native
+  @scala.inline
+  def parseString(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  
+  /* static member */
+  @scala.inline
+  def parseStringFormatter(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringFormatter")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
 }

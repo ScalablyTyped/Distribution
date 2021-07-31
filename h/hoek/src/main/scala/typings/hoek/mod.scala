@@ -3,10 +3,13 @@ package typings.hoek
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("hoek", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hoek", "Bench")
   @js.native
@@ -30,194 +33,145 @@ object mod {
     var ts: Double = js.native
   }
   
-  @JSImport("hoek", "abort")
-  @js.native
-  def abort(message: String): Unit = js.native
-  @JSImport("hoek", "abort")
-  @js.native
-  def abort(message: Error): Unit = js.native
+  @scala.inline
+  def abort(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def abort(message: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hoek", "applyToDefaults")
-  @js.native
-  def applyToDefaults[T1, T2](defaults: T1, options: T2): T1 with T2 = js.native
-  @JSImport("hoek", "applyToDefaults")
-  @js.native
-  def applyToDefaults[T1, T2](defaults: T1, options: T2, isNullOverride: Boolean): T1 with T2 = js.native
+  @scala.inline
+  def applyToDefaults[T1, T2](defaults: T1, options: T2): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToDefaults")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
+  @scala.inline
+  def applyToDefaults[T1, T2](defaults: T1, options: T2, isNullOverride: Boolean): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToDefaults")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isNullOverride.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
   
-  @JSImport("hoek", "applyToDefaultsWithShallow")
-  @js.native
-  def applyToDefaultsWithShallow[T1, T2](defaults: T1, options: T2): T1 with T2 = js.native
-  @JSImport("hoek", "applyToDefaultsWithShallow")
-  @js.native
-  def applyToDefaultsWithShallow[T1, T2](defaults: T1, options: T2, keys: js.Array[String]): T1 with T2 = js.native
+  @scala.inline
+  def applyToDefaultsWithShallow[T1, T2](defaults: T1, options: T2): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToDefaultsWithShallow")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
+  @scala.inline
+  def applyToDefaultsWithShallow[T1, T2](defaults: T1, options: T2, keys: js.Array[String]): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToDefaultsWithShallow")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
   
-  @JSImport("hoek", "assert")
-  @js.native
-  def assert(condition: Boolean, message: String): Unit | Error = js.native
-  @JSImport("hoek", "assert")
-  @js.native
-  def assert(condition: Boolean, message: Error): Unit | Error = js.native
+  @scala.inline
+  def assert(condition: Boolean, message: String): Unit | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit | Error]
+  @scala.inline
+  def assert(condition: Boolean, message: Error): Unit | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit | Error]
   
-  @JSImport("hoek", "base64urlDecode")
-  @js.native
-  def base64urlDecode(value: String): String = js.native
+  @scala.inline
+  def base64urlDecode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlDecode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "base64urlEncode")
-  @js.native
-  def base64urlEncode(value: String): String = js.native
+  @scala.inline
+  def base64urlEncode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "callStack")
-  @js.native
-  def callStack(): js.Array[_] = js.native
-  @JSImport("hoek", "callStack")
-  @js.native
-  def callStack(slice: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def callStack(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callStack")().asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def callStack(slice: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callStack")(slice.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("hoek", "cloneWithShallow")
-  @js.native
-  def cloneWithShallow(obj: js.Any, keys: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def cloneWithShallow(obj: js.Any, keys: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneWithShallow")(obj.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "clone")
-  @js.native
-  def clone_[T](obj: T): T = js.native
+  @scala.inline
+  def clone_[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("hoek", "contain")
-  @js.native
-  def contain(ref: js.Any, values: js.Any): Boolean = js.native
-  @JSImport("hoek", "contain")
-  @js.native
-  def contain(ref: js.Any, values: js.Any, options: ContainOptions): Boolean = js.native
+  @scala.inline
+  def contain(ref: js.Any, values: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contain(ref: js.Any, values: js.Any, options: ContainOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("hoek", "deepEqual")
-  @js.native
-  def deepEqual[T](b: T, a: T): T = js.native
-  @JSImport("hoek", "deepEqual")
-  @js.native
-  def deepEqual[T](b: T, a: T, options: js.Any): T = js.native
+  @scala.inline
+  def deepEqual[T](b: T, a: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def deepEqual[T](b: T, a: T, options: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("hoek", "displayStack")
-  @js.native
-  def displayStack(): js.Array[String] = js.native
-  @JSImport("hoek", "displayStack")
-  @js.native
-  def displayStack(slice: js.Any): js.Array[String] = js.native
+  @scala.inline
+  def displayStack(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("displayStack")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def displayStack(slice: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("displayStack")(slice.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("hoek", "escapeHeaderAttribute")
-  @js.native
-  def escapeHeaderAttribute(attribute: String): String = js.native
+  @scala.inline
+  def escapeHeaderAttribute(attribute: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHeaderAttribute")(attribute.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "escapeHtml")
-  @js.native
-  def escapeHtml(htmlString: String): String = js.native
+  @scala.inline
+  def escapeHtml(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "escapeRegex")
-  @js.native
-  def escapeRegex(regexString: String): String = js.native
+  @scala.inline
+  def escapeRegex(regexString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRegex")(regexString.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "flatten")
-  @js.native
-  def flatten(array: js.Array[_]): js.Array[_] = js.native
-  @JSImport("hoek", "flatten")
-  @js.native
-  def flatten(array: js.Array[_], target: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def flatten(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def flatten(array: js.Array[js.Any], target: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("hoek", "ignore")
-  @js.native
-  def ignore(): Unit = js.native
+  @scala.inline
+  def ignore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignore")().asInstanceOf[Unit]
   
-  @JSImport("hoek", "intersect")
-  @js.native
-  def intersect(array1: js.Array[_], array2: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def intersect(array1: js.Array[js.Any], array2: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "isInteger")
-  @js.native
-  def isInteger(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isInteger(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("hoek", "mapToObject")
-  @js.native
-  def mapToObject(array: js.Array[_]): js.Any = js.native
-  @JSImport("hoek", "mapToObject")
-  @js.native
-  def mapToObject(array: js.Array[_], key: String): js.Any = js.native
+  @scala.inline
+  def mapToObject(array: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapToObject")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def mapToObject(array: js.Array[js.Any], key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapToObject")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "merge")
-  @js.native
-  def merge[T1, T2](target: T1, source: T2): T1 with T2 = js.native
-  @JSImport("hoek", "merge")
-  @js.native
-  def merge[T1, T2](target: T1, source: T2, isNullOverride: js.UndefOr[scala.Nothing], isMergeArrays: Boolean): T1 with T2 = js.native
-  @JSImport("hoek", "merge")
-  @js.native
-  def merge[T1, T2](target: T1, source: T2, isNullOverride: Boolean): T1 with T2 = js.native
-  @JSImport("hoek", "merge")
-  @js.native
-  def merge[T1, T2](target: T1, source: T2, isNullOverride: Boolean, isMergeArrays: Boolean): T1 with T2 = js.native
+  @scala.inline
+  def merge[T1, T2](target: T1, source: T2): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
+  @scala.inline
+  def merge[T1, T2](target: T1, source: T2, isNullOverride: Boolean): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], isNullOverride.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
+  @scala.inline
+  def merge[T1, T2](target: T1, source: T2, isNullOverride: Boolean, isMergeArrays: Boolean): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], isNullOverride.asInstanceOf[js.Any], isMergeArrays.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
+  @scala.inline
+  def merge[T1, T2](target: T1, source: T2, isNullOverride: Unit, isMergeArrays: Boolean): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], isNullOverride.asInstanceOf[js.Any], isMergeArrays.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
   
-  @JSImport("hoek", "nextTick")
-  @js.native
-  def nextTick(fn: js.Function0[Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def nextTick(fn: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("hoek", "once")
-  @js.native
-  def once(fn: js.Function0[Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def once(fn: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("hoek", "reach")
-  @js.native
-  def reach(obj: js.Any, chain: js.Any): js.Any = js.native
-  @JSImport("hoek", "reach")
-  @js.native
-  def reach(obj: js.Any, chain: js.Any, options: ReachOptions): js.Any = js.native
+  @scala.inline
+  def reach(obj: js.Any, chain: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reach")(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def reach(obj: js.Any, chain: js.Any, options: ReachOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reach")(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "reachTemplate")
-  @js.native
-  def reachTemplate(obj: js.Any, template: String): js.Any = js.native
-  @JSImport("hoek", "reachTemplate")
-  @js.native
-  def reachTemplate(obj: js.Any, template: String, options: ReachOptions): js.Any = js.native
+  @scala.inline
+  def reachTemplate(obj: js.Any, template: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reachTemplate")(obj.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def reachTemplate(obj: js.Any, template: String, options: ReachOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reachTemplate")(obj.asInstanceOf[js.Any], template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "shallow")
-  @js.native
-  def shallow(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def shallow(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hoek", "transform")
-  @js.native
-  def transform(obj: js.Any, transform: js.Any): js.Any = js.native
-  @JSImport("hoek", "transform")
-  @js.native
-  def transform(obj: js.Any, transform: js.Any, options: ReachOptions): js.Any = js.native
+  @scala.inline
+  def transform(obj: js.Any, transform: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(obj.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def transform(obj: js.Any, transform: js.Any, options: ReachOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(obj.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("hoek", "unique")
-  @js.native
-  def unique[T](array: js.Array[T]): js.Array[T] = js.native
-  @JSImport("hoek", "unique")
-  @js.native
-  def unique[T](array: js.Array[T], key: String): js.Array[T] = js.native
+  @scala.inline
+  def unique[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def unique[T](array: js.Array[T], key: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("hoek", "uniqueFilename")
-  @js.native
-  def uniqueFilename(path: String): String = js.native
-  @JSImport("hoek", "uniqueFilename")
-  @js.native
-  def uniqueFilename(path: String, extension: String): String = js.native
+  @scala.inline
+  def uniqueFilename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueFilename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def uniqueFilename(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueFilename")(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait ContainOptions extends StObject {
     
     /** Perform a deep comparison of the values? */
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
     /** Allow only one occurrence of each value? */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /** Don't allow values not explicitly listed? */
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
     /** Allow partial match of the values? */
-    var part: js.UndefOr[Boolean] = js.native
+    var part: js.UndefOr[Boolean] = js.undefined
   }
   object ContainOptions {
     
@@ -256,20 +210,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ReachOptions extends StObject {
     
     /** Value to return if the path or value is not present. Default is undefined. */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /** Allow traversing functions for properties? */
-    var functions: js.UndefOr[Boolean] = js.native
+    var functions: js.UndefOr[Boolean] = js.undefined
     
     /** String to split chain path on. Defaults to ".". */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /** Throw an error on missing member? Default is false. */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ReachOptions {
     

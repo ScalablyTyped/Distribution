@@ -6,10 +6,8 @@ import typings.fabric.fabricStrings.anonymous
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPatternOptions extends StObject {
   
   /**
@@ -17,32 +15,32 @@ trait IPatternOptions extends StObject {
     * @see https://developer.mozilla.org/en-US/docs/HTML/CORS_settings_attributes
     * @type String
     */
-  var crossOrigin: js.UndefOr[_empty | anonymous | `use-credentials`] = js.native
+  var crossOrigin: js.UndefOr[_empty | anonymous | `use-credentials`] = js.undefined
   
   /**
     * Pattern horizontal offset from object's left/top corner
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Pattern vertical offset from object's left/top corner
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Transform matrix to change the pattern, imported from svgs
     */
-  var patternTransform: js.UndefOr[js.Array[Double]] = js.native
+  var patternTransform: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Repeat property of a pattern (one of repeat, repeat-x, repeat-y or no-repeat)
     */
-  var repeat: js.UndefOr[String] = js.native
+  var repeat: js.UndefOr[String] = js.undefined
   
   /**
     * The source for the pattern
     */
-  var source: String | HTMLImageElement = js.native
+  var source: String | HTMLImageElement
 }
 object IPatternOptions {
   

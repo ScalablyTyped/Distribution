@@ -2,27 +2,25 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookFilterCriteria extends StObject {
   
-  var color: js.UndefOr[NullableOption[String]] = js.native
+  var color: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var criterion1: js.UndefOr[NullableOption[String]] = js.native
+  var criterion1: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var criterion2: js.UndefOr[NullableOption[String]] = js.native
+  var criterion2: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var dynamicCriteria: js.UndefOr[String] = js.native
+  var dynamicCriteria: js.UndefOr[String] = js.undefined
   
-  var filterOn: js.UndefOr[String] = js.native
+  var filterOn: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[NullableOption[WorkbookIcon]] = js.native
+  var icon: js.UndefOr[NullableOption[WorkbookIcon]] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[NullableOption[_]] = js.native
+  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
 }
 object WorkbookFilterCriteria {
   
@@ -90,7 +88,7 @@ object WorkbookFilterCriteria {
     def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setValues(value: NullableOption[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesNull: Self = StObject.set(x, "values", null)

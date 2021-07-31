@@ -2,30 +2,28 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s past or current residence.
   */
-@js.native
 trait SchemaResidence extends StObject {
   
   /**
     * True if the residence is the person&#39;s current residence; false if the
     * residence is a past residence.
     */
-  var current: js.UndefOr[Boolean] = js.native
+  var current: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Metadata about the residence.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The address of the residence.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaResidence {
   

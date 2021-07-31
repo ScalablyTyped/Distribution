@@ -4,34 +4,32 @@ import typings.domhandler.mod.DomElement
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-html-parser", JSImport.Default)
+  @JSImport("react-html-parser", JSImport.Namespace)
   @js.native
-  def default(html: String): js.Array[ReactElement] = js.native
-  @JSImport("react-html-parser", JSImport.Default)
-  @js.native
-  def default(html: String, options: Options): js.Array[ReactElement] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-html-parser", "convertNodeToElement")
-  @js.native
-  def convertNodeToElement(node: DomElement, index: Double, transform: Transform): ReactElement = js.native
+  @scala.inline
+  def default(html: String): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
+  @scala.inline
+  def default(html: String, options: Options): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
   
-  @JSImport("react-html-parser", "processNodes")
-  @js.native
-  def processNodes(nodes: js.Array[DomElement], transform: Transform): js.Array[ReactElement] = js.native
+  @scala.inline
+  def convertNodeToElement(node: DomElement, index: Double, transform: Transform): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("convertNodeToElement")(node.asInstanceOf[js.Any], index.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @js.native
+  @scala.inline
+  def processNodes(nodes: js.Array[DomElement], transform: Transform): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("processNodes")(nodes.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
+  
   trait Options extends StObject {
     
-    var decodeEntities: js.UndefOr[Boolean] = js.native
+    var decodeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var preprocessNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[DomElement], _]] = js.native
+    var preprocessNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[DomElement], js.Any]] = js.undefined
     
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
   }
   object Options {
     
@@ -51,7 +49,7 @@ object mod {
       def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
       @scala.inline
-      def setPreprocessNodes(value: /* nodes */ js.Array[DomElement] => _): Self = StObject.set(x, "preprocessNodes", js.Any.fromFunction1(value))
+      def setPreprocessNodes(value: /* nodes */ js.Array[DomElement] => js.Any): Self = StObject.set(x, "preprocessNodes", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPreprocessNodesUndefined: Self = StObject.set(x, "preprocessNodes", js.undefined)

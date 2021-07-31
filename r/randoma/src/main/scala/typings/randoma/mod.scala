@@ -4,14 +4,15 @@ import typings.color.mod.ColorParam
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("randoma", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Randoma {
+  class ^ protected ()
+    extends StObject
+       with Randoma {
     /**
     	User-friendly [pseudorandom number generator (PRNG)](https://en.wikipedia.org/wiki/Pseudorandom_number_generator).
     	This is not cryptographically secure.
@@ -31,24 +32,25 @@ object mod {
     	*/
     def this(options: Options) = this()
   }
+  @JSImport("randoma", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	@returns A random seed you could use in the `seed` option if you for some reason don't want deterministic randomness.
   	*/
   /* static member */
-  @JSImport("randoma", "seed")
-  @js.native
-  def seed(): Double = js.native
+  @scala.inline
+  def seed(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")().asInstanceOf[Double]
   
   type Color = typings.color.mod.Color[ColorParam]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		[Initialization seed.](https://en.wikipedia.org/wiki/Random_seed) Multiple instances of `Randoma` with the same seed will generate the same random numbers.
     		*/
-    val seed: String | Double = js.native
+    val seed: String | Double
   }
   object Options {
     

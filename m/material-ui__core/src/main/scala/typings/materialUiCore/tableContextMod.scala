@@ -5,7 +5,6 @@ import typings.materialUiCore.tableTableMod.Padding
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableContextMod extends Shortcut {
@@ -14,10 +13,9 @@ object tableContextMod extends Shortcut {
   @js.native
   val default: Context[js.UndefOr[TableContextProps]] = js.native
   
-  @js.native
   trait TableContextProps extends StObject {
     
-    var padding: Padding = js.native
+    var padding: Padding
   }
   object TableContextProps {
     

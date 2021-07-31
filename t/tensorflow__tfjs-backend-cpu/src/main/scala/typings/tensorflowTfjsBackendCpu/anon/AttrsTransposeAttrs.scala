@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.TransposeAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.TransposeInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsTransposeAttrs extends StObject {
   
-  var attrs: TransposeAttrs = js.native
+  var attrs: TransposeAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: TransposeInputs = js.native
+  var inputs: TransposeInputs
 }
 object AttrsTransposeAttrs {
   

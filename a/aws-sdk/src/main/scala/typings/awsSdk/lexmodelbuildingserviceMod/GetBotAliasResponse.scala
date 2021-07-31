@@ -2,51 +2,49 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotAliasResponse extends StObject {
   
   /**
     * The name of the bot that the alias points to.
     */
-  var botName: js.UndefOr[BotName] = js.native
+  var botName: js.UndefOr[BotName] = js.undefined
   
   /**
     * The version of the bot that the alias points to.
     */
-  var botVersion: js.UndefOr[Version] = js.native
+  var botVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * Checksum of the bot alias.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The settings that determine how Amazon Lex uses conversation logs for the alias.
     */
-  var conversationLogs: js.UndefOr[ConversationLogsResponse] = js.native
+  var conversationLogs: js.UndefOr[ConversationLogsResponse] = js.undefined
   
   /**
     * The date that the bot alias was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the bot alias.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The date that the bot alias was updated. When you create a resource, the creation date and the last updated date are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the bot alias.
     */
-  var name: js.UndefOr[AliasName] = js.native
+  var name: js.UndefOr[AliasName] = js.undefined
 }
 object GetBotAliasResponse {
   

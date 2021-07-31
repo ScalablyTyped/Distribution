@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumber extends StObject {
   
   /**
     * The raw value of the phone number.
     */
-  var Number: RawPhoneNumber = js.native
+  var Number: RawPhoneNumber
   
   /**
     * The type of the phone number.
     */
-  var Type: PhoneNumberType = js.native
+  var Type: PhoneNumberType
 }
 object PhoneNumber {
   

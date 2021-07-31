@@ -8,7 +8,6 @@ import typings.jsonBigint.jsonBigintStrings.ignore
 import typings.jsonBigint.jsonBigintStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,40 +16,39 @@ object mod extends Shortcut {
   @js.native
   val ^ : JSONBigExport = js.native
   
-  type JSONBigExport = (js.Function1[/* options */ js.UndefOr[Options], Parse]) with Stringify
+  type JSONBigExport = (js.Function1[/* options */ js.UndefOr[Options], Parse]) & Stringify
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default false
       */
-    var alwaysParseAsBig: js.UndefOr[Boolean] = js.native
+    var alwaysParseAsBig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 'error'
       */
-    var constructorAction: js.UndefOr[error | ignore | preserve] = js.native
+    var constructorAction: js.UndefOr[error | ignore | preserve] = js.undefined
     
     /**
       * @default 'error'
       */
-    var protoAction: js.UndefOr[error | ignore | preserve] = js.native
+    var protoAction: js.UndefOr[error | ignore | preserve] = js.undefined
     
     /**
       * @default false
       */
-    var storeAsString: js.UndefOr[Boolean] = js.native
+    var storeAsString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       */
-    var useNativeBigInt: js.UndefOr[Boolean] = js.native
+    var useNativeBigInt: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

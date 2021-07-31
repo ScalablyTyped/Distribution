@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,11 +21,15 @@ object AsyncResultStatus extends StObject {
     * The call failed, check the error object.
     */
   @js.native
-  sealed trait Failed extends AsyncResultStatus
+  sealed trait Failed
+    extends StObject
+       with AsyncResultStatus
   
   /**
     * The call succeeded.
     */
   @js.native
-  sealed trait Succeeded extends AsyncResultStatus
+  sealed trait Succeeded
+    extends StObject
+       with AsyncResultStatus
 }

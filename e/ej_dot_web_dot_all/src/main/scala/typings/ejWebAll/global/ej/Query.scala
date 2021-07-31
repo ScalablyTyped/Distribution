@@ -2,13 +2,13 @@ package typings.ejWebAll.global.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Query")
 @js.native
 class Query ()
-  extends typings.ejWebAll.ej.Query
+  extends StObject
+     with typings.ejWebAll.ej.Query
 object Query {
   
   @JSGlobal("ej.Query")
@@ -16,9 +16,8 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("ej.Query.extend")
-  @js.native
-  def extend(prototype: js.Any): typings.ejWebAll.ej.Query = js.native
+  @scala.inline
+  def extend(prototype: js.Any): typings.ejWebAll.ej.Query = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.ejWebAll.ej.Query]
   
   /* static member */
   @JSGlobal("ej.Query.fn")

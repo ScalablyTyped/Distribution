@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEncoderEncodeIntoResult extends StObject {
   
-  var read: js.UndefOr[Double] = js.native
+  var read: js.UndefOr[Double] = js.undefined
   
-  var written: js.UndefOr[Double] = js.native
+  var written: js.UndefOr[Double] = js.undefined
 }
 object TextEncoderEncodeIntoResult {
   

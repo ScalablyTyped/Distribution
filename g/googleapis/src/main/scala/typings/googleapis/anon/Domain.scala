@@ -3,25 +3,23 @@ package typings.googleapis.anon
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTableReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var groupByEmail: js.UndefOr[String] = js.native
+  var groupByEmail: js.UndefOr[String] = js.undefined
   
-  var iamMember: js.UndefOr[String] = js.native
+  var iamMember: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var specialGroup: js.UndefOr[String] = js.native
+  var specialGroup: js.UndefOr[String] = js.undefined
   
-  var userByEmail: js.UndefOr[String] = js.native
+  var userByEmail: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[SchemaTableReference] = js.native
+  var view: js.UndefOr[SchemaTableReference] = js.undefined
 }
 object Domain {
   

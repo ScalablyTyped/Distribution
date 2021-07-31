@@ -27,10 +27,10 @@ import typings.pulumiCloud.timerMod.IntervalRate
 import typings.pulumiCloud.topicMod.Topic
 import typings.pulumiCloud.topicMod.TopicConstructor
 import typings.pulumiPulumi.outputMod.Input
+import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,7 +46,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "API")
   @js.native
-  class APICls protected () extends API {
+  class APICls protected ()
+    extends StObject
+       with API {
     def this(apiName: String) = this()
   }
   
@@ -60,7 +62,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "Bucket")
   @js.native
-  class BucketCls protected () extends Bucket {
+  class BucketCls protected ()
+    extends StObject
+       with Bucket {
     /**
       * Creates a new Bucket.
       *
@@ -81,11 +85,19 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "HostPathVolume")
   @js.native
-  class HostPathVolumeCls protected () extends HostPathVolume {
+  class HostPathVolumeCls protected ()
+    extends StObject
+       with HostPathVolume {
     /**
       * Construct a new Volume with the given unique name.
       */
     def this(path: String) = this()
+    
+    /* CompleteClass */
+    var kind: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = js.native
+    
+    /* CompleteClass */
+    var path: String = js.native
   }
   
   @scala.inline
@@ -98,7 +110,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "HttpEndpoint")
   @js.native
-  class HttpEndpointCls protected () extends API {
+  class HttpEndpointCls protected ()
+    extends StObject
+       with API {
     def this(apiName: String) = this()
   }
   
@@ -112,7 +126,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "HttpServer")
   @js.native
-  class HttpServerCls protected () extends HttpServer {
+  class HttpServerCls protected ()
+    extends StObject
+       with HttpServer {
     /**
       * @param createRequestListener Function that, when called, will produce the [[requestListener]]
       * function that will be called for each http request to the server.  The function will be
@@ -122,6 +138,9 @@ object mod {
       */
     def this(name: String, createRequestListener: RequestListenerFactory) = this()
     def this(name: String, createRequestListener: RequestListenerFactory, opts: ResourceOptions) = this()
+    
+    /* CompleteClass */
+    override val url: Output_[String] = js.native
   }
   
   @scala.inline
@@ -134,7 +153,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "Service")
   @js.native
-  class ServiceCls protected () extends Service {
+  class ServiceCls protected ()
+    extends StObject
+       with Service {
     /**
       * Construct a new Service, which is one or more managed replicas of a group of one or more Containers.
       *
@@ -155,7 +176,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "SharedVolume")
   @js.native
-  class SharedVolumeCls protected () extends SharedVolume {
+  class SharedVolumeCls protected ()
+    extends StObject
+       with SharedVolume {
     /**
       * Construct a new Volume with the given unique name.
       *
@@ -164,6 +187,12 @@ object mod {
       */
     def this(name: String) = this()
     def this(name: String, opts: ResourceOptions) = this()
+    
+    /* CompleteClass */
+    var kind: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @scala.inline
@@ -176,7 +205,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "Table")
   @js.native
-  class TableCls protected () extends Table {
+  class TableCls protected ()
+    extends StObject
+       with Table {
     /**
       * Creates a new Table.
       *
@@ -187,11 +218,15 @@ object mod {
       */
     def this(name: String) = this()
     def this(name: String, primaryKey: Input[String]) = this()
-    def this(name: String, primaryKey: js.UndefOr[Input[String]], primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Input[String], primaryKeyType: Input[PrimaryKeyType]) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Unit, opts: ResourceOptions) = this()
+    def this(name: String, primaryKey: Unit, primaryKeyType: Input[PrimaryKeyType], opts: ResourceOptions) = this()
+    def this(name: String, primaryKey: Input[String], primaryKeyType: Unit, opts: ResourceOptions) = this()
     def this(
       name: String,
-      primaryKey: js.UndefOr[Input[String]],
-      primaryKeyType: js.UndefOr[Input[PrimaryKeyType]],
+      primaryKey: Input[String],
+      primaryKeyType: Input[PrimaryKeyType],
       opts: ResourceOptions
     ) = this()
   }
@@ -206,7 +241,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "Task")
   @js.native
-  class TaskCls protected () extends Task {
+  class TaskCls protected ()
+    extends StObject
+       with Task {
     /**
       * Construct a new Task, which is a Container that can be run many times as individual tasks.
       *
@@ -228,7 +265,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud", "Topic")
   @js.native
-  class TopicCls[T] protected () extends Topic[T] {
+  class TopicCls[T] protected ()
+    extends StObject
+       with Topic[T] {
     /**
       * Allocate a new Topic with a given name.
       *
@@ -237,6 +276,29 @@ object mod {
       */
     def this(name: String) = this()
     def this(name: String, opts: ResourceOptions) = this()
+    
+    /**
+      * Publish an item to this Topic.
+      *
+      * @param item The item to publish.
+      */
+    /* CompleteClass */
+    override def publish(item: T): js.Promise[Unit] = js.native
+    
+    /**
+      * Subscribe to items published to this stream.
+      *
+      * Each subscription receives all items published to the stream. If a
+      * subscription handler returns a failed promise, the subscription handler
+      * may be retried some number of times.  If no retry is successful, the item
+      * will be sent to the global error handler.  Note that as a result,
+      * subscription handlers must ensure they can safely be retried.
+      *
+      * @param name The name of the subscription.
+      * @param handler A callback to handle each item published to the stream.
+      */
+    /* CompleteClass */
+    override def subscribe(name: String, handler: js.Function1[T, js.Promise[Unit]]): Unit = js.native
   }
   
   @scala.inline
@@ -244,44 +306,36 @@ object mod {
   
   object timer {
     
-    @JSImport("@pulumi/cloud", "timer.cron")
+    @JSImport("@pulumi/cloud", "timer")
     @js.native
-    def cron(name: String, cronTab: String, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.cron")
-    @js.native
-    def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@pulumi/cloud", "timer.daily")
-    @js.native
-    def daily(name: String, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.daily")
-    @js.native
-    def daily(name: String, handler: Action, opts: ResourceOptions): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.daily")
-    @js.native
-    def daily(name: String, schedule: DailySchedule, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.daily")
-    @js.native
-    def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = js.native
+    @scala.inline
+    def cron(name: String, cronTab: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pulumi/cloud", "timer.hourly")
-    @js.native
-    def hourly(name: String, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.hourly")
-    @js.native
-    def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.hourly")
-    @js.native
-    def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.hourly")
-    @js.native
-    def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = js.native
+    @scala.inline
+    def daily(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def daily(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def daily(name: String, schedule: DailySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pulumi/cloud", "timer.interval")
-    @js.native
-    def interval(name: String, options: IntervalRate, handler: Action): Unit = js.native
-    @JSImport("@pulumi/cloud", "timer.interval")
-    @js.native
-    def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = js.native
+    @scala.inline
+    def hourly(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def interval(name: String, options: IntervalRate, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

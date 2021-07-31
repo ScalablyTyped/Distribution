@@ -14,7 +14,6 @@ import typings.std.AsyncIterator
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stream {
@@ -27,7 +26,7 @@ object stream {
       def this(input: String, options: PartialWorkbookStreamRead) = this()
       def this(input: Stream, options: PartialWorkbookStreamRead) = this()
       
-      def parse(): AsyncIterator[_, _, js.UndefOr[scala.Nothing]] = js.native
+      def parse(): AsyncIterator[js.Any, js.Any, Unit] = js.native
       
       def read(): js.Promise[Unit] = js.native
     }
@@ -70,23 +69,22 @@ object stream {
       
       def getColumn(c: Double): Column = js.native
       
-      def parse(): AsyncIterator[js.Array[_], _, js.UndefOr[scala.Nothing]] = js.native
+      def parse(): AsyncIterator[js.Array[js.Any], js.Any, Unit] = js.native
       
       def read(): js.Promise[Unit] = js.native
     }
     
-    @js.native
     trait ArchiverZipOptions extends StObject {
       
-      var comment: String = js.native
+      var comment: String
       
-      var forceLocalTime: Boolean = js.native
+      var forceLocalTime: Boolean
       
-      var forceZip64: Boolean = js.native
+      var forceZip64: Boolean
       
-      var store: Boolean = js.native
+      var store: Boolean
       
-      var zlib: PartialZlibOptions = js.native
+      var zlib: PartialZlibOptions
     }
     object ArchiverZipOptions {
       
@@ -122,33 +120,32 @@ object stream {
       }
     }
     
-    @js.native
     trait WorkbookStreamReaderOptions extends StObject {
       
       /**
       			 * @default 'ignore'
       			 */
-      var entries: js.UndefOr[emit | ignore] = js.native
+      var entries: js.UndefOr[emit | ignore] = js.undefined
       
       /**
       			 * @default 'ignore'
       			 */
-      var hyperlinks: js.UndefOr[cache | emit | ignore] = js.native
+      var hyperlinks: js.UndefOr[cache | emit | ignore] = js.undefined
       
       /**
       			 * @default 'cache'
       			 */
-      var sharedStrings: js.UndefOr[cache | emit | ignore] = js.native
+      var sharedStrings: js.UndefOr[cache | emit | ignore] = js.undefined
       
       /**
       			 * @default 'ignore'
       			 */
-      var styles: js.UndefOr[cache | ignore] = js.native
+      var styles: js.UndefOr[cache | ignore] = js.undefined
       
       /**
       			 * @default 'emit'
       			 */
-      var worksheets: js.UndefOr[emit | ignore] = js.native
+      var worksheets: js.UndefOr[emit | ignore] = js.undefined
     }
     object WorkbookStreamReaderOptions {
       
@@ -193,14 +190,15 @@ object stream {
       }
     }
     
-    @js.native
-    trait WorkbookStreamWriterOptions extends WorkbookWriterOptions {
+    trait WorkbookStreamWriterOptions
+      extends StObject
+         with WorkbookWriterOptions {
       
       /**
       			 * Specifies whether to add style information to the workbook.
       			 * Styles can add some performance overhead. Default is false
       			 */
-      var zip: PartialArchiverZipOptions = js.native
+      var zip: PartialArchiverZipOptions
     }
     object WorkbookStreamWriterOptions {
       
@@ -224,29 +222,28 @@ object stream {
       }
     }
     
-    @js.native
     trait WorkbookWriterOptions extends StObject {
       
       /**
       			 * 	If stream not specified, this field specifies the path to a file to write the XLSX workbook to.
       			 */
-      var filename: String = js.native
+      var filename: String
       
       /**
       			 * Specifies a writable stream to write the XLSX workbook to.
       			 */
-      var stream: Stream = js.native
+      var stream: Stream
       
       /**
       			 * 	Specifies whether to use shared strings in the workbook. Default is false
       			 */
-      var useSharedStrings: Boolean = js.native
+      var useSharedStrings: Boolean
       
       /**
       			 * Specifies whether to add style information to the workbook.
       			 * Styles can add some performance overhead. Default is false
       			 */
-      var useStyles: Boolean = js.native
+      var useStyles: Boolean
     }
     object WorkbookWriterOptions {
       
@@ -273,16 +270,15 @@ object stream {
       }
     }
     
-    @js.native
     trait WorksheetReaderOptions extends StObject {
       
-      var entry: Stream = js.native
+      var entry: Stream
       
-      var id: Double = js.native
+      var id: Double
       
-      var options: WorkbookStreamReaderOptions = js.native
+      var options: WorkbookStreamReaderOptions
       
-      var workbook: Workbook = js.native
+      var workbook: Workbook
     }
     object WorksheetReaderOptions {
       
@@ -309,36 +305,35 @@ object stream {
       }
     }
     
-    @js.native
     trait ZlibOptions extends StObject {
       
       /**
       			 * @default 16*1024
       			 */
-      var chunkSize: Double = js.native
+      var chunkSize: Double
       
       // compression only
-      var dictionary: Buffer | TypedArray | DataView | ArrayBuffer = js.native
+      var dictionary: Buffer | TypedArray | DataView | ArrayBuffer
       
       /**
       			 * @default constants.Z_FINISH
       			 */
-      var finishFlush: Double = js.native
+      var finishFlush: Double
       
       /**
       			 * @default constants.Z_NO_FLUSH
       			 */
-      var flush: Double = js.native
+      var flush: Double
       
-      var level: Double = js.native
-      
-      // compression only
-      var memLevel: Double = js.native
+      var level: Double
       
       // compression only
-      var strategy: Double = js.native
+      var memLevel: Double
       
-      var windowBits: Double = js.native
+      // compression only
+      var strategy: Double
+      
+      var windowBits: Double
     }
     object ZlibOptions {
       

@@ -2,26 +2,24 @@ package typings.reactNativeCommunityCliTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyAssets[ProjectConfig, DependencyConfig] extends StObject {
   
-  def copyAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit = js.native
+  def copyAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit
   
-  def isInstalled(projectConfig: ProjectConfig, packageName: String, dependencyConfig: DependencyConfig): Boolean = js.native
+  def isInstalled(projectConfig: ProjectConfig, packageName: String, dependencyConfig: DependencyConfig): Boolean
   
-  def register(name: String, dependencyConfig: DependencyConfig, params: js.Object, projectConfig: ProjectConfig): Unit = js.native
+  def register(name: String, dependencyConfig: DependencyConfig, params: js.Object, projectConfig: ProjectConfig): Unit
   
-  def unlinkAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit = js.native
+  def unlinkAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit
   
   def unregister(
     name: String,
     dependencyConfig: DependencyConfig,
     projectConfig: ProjectConfig,
     otherDependencies: js.Array[DependencyConfig]
-  ): Unit = js.native
+  ): Unit
 }
 object CopyAssets {
   
@@ -38,7 +36,7 @@ object CopyAssets {
   }
   
   @scala.inline
-  implicit class CopyAssetsMutableBuilder[Self <: CopyAssets[_, _], ProjectConfig, DependencyConfig] (val x: Self with (CopyAssets[ProjectConfig, DependencyConfig])) extends AnyVal {
+  implicit class CopyAssetsMutableBuilder[Self <: CopyAssets[?, ?], ProjectConfig, DependencyConfig] (val x: Self & (CopyAssets[ProjectConfig, DependencyConfig])) extends AnyVal {
     
     @scala.inline
     def setCopyAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "copyAssets", js.Any.fromFunction2(value))

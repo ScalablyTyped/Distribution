@@ -4,22 +4,20 @@ import typings.itConcat.itConcatStrings.buffer
 import typings.itConcat.itConcatStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `type`: buffer = js.native
+    var `type`: buffer
   }
   object `0` {
     
     @scala.inline
-    def apply(`type`: buffer): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("buffer")
       __obj.asInstanceOf[`0`]
     }
     
@@ -31,17 +29,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: string): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[Type]
     }
     

@@ -2,36 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the event object used for client-side events.
   */
-@js.native
 trait ASPxClientEvent[T] extends StObject {
   
   /**
     * Dynamically connects the event with an appropriate event handler function.
     * @param handler An object representing the event handling function's content.
     */
-  def AddHandler(handler: T): Unit = js.native
+  def AddHandler(handler: T): Unit
   
   /**
     * Dynamically disconnects the event from all the associated event handler functions.
     */
-  def ClearHandlers(): Unit = js.native
+  def ClearHandlers(): Unit
   
   /**
     * For internal use only.
     */
-  def FireEvent(source: js.Any, e: ASPxClientEventArgs): Unit = js.native
+  def FireEvent(source: js.Any, e: ASPxClientEventArgs): Unit
   
   /**
     * Dynamically disconnects the event from the associated event handler function.
     * @param handler An object representing the event handling function's content.
     */
-  def RemoveHandler(handler: T): Unit = js.native
+  def RemoveHandler(handler: T): Unit
 }
 object ASPxClientEvent {
   
@@ -47,7 +45,7 @@ object ASPxClientEvent {
   }
   
   @scala.inline
-  implicit class ASPxClientEventMutableBuilder[Self <: ASPxClientEvent[_], T] (val x: Self with ASPxClientEvent[T]) extends AnyVal {
+  implicit class ASPxClientEventMutableBuilder[Self <: ASPxClientEvent[?], T] (val x: Self & ASPxClientEvent[T]) extends AnyVal {
     
     @scala.inline
     def setAddHandler(value: T => Unit): Self = StObject.set(x, "AddHandler", js.Any.fromFunction1(value))

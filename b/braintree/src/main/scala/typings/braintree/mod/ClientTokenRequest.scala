@@ -3,19 +3,17 @@ package typings.braintree.mod
 import typings.braintree.anon.FailOnDuplicatePaymentMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientTokenRequest extends StObject {
   
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
-  var merchantAccountId: js.UndefOr[String] = js.native
+  var merchantAccountId: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.native
+  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ClientTokenRequest {
   

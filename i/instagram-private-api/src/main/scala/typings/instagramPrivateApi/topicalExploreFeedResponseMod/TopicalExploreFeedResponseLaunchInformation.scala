@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseLaunchInformation extends StObject {
   
-  var drops_campaign_id: String = js.native
+  var drops_campaign_id: String
   
-  var has_launched: Boolean = js.native
+  var has_launched: Boolean
   
-  var is_ig_exclusive: Boolean = js.native
+  var is_ig_exclusive: Boolean
   
-  var launch_date: Double = js.native
+  var launch_date: Double
 }
 object TopicalExploreFeedResponseLaunchInformation {
   

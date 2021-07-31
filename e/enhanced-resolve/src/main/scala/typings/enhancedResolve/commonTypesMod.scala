@@ -10,7 +10,6 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonTypesMod {
@@ -47,7 +46,7 @@ object commonTypesMod {
         ]
       ] = js.native
     
-    var readJsonSync: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var readJsonSync: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.native
     
     def readdir(path: String, callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]): Unit = js.native
     
@@ -70,14 +69,13 @@ object commonTypesMod {
   
   type ErrorCallback[T] = js.Function2[/* err */ T | Null, /* repeated */ js.Any, js.Any]
   
-  @js.native
   trait LoggingCallbackTools extends StObject {
     
-    var log: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
-    var missing: js.UndefOr[js.Array[String] | Push] = js.native
+    var missing: js.UndefOr[js.Array[String] | Push] = js.undefined
     
-    var stack: js.UndefOr[js.Array[String]] = js.native
+    var stack: js.UndefOr[js.Array[String]] = js.undefined
   }
   object LoggingCallbackTools {
     
@@ -117,17 +115,18 @@ object commonTypesMod {
   }
   
   @js.native
-  trait LoggingCallbackWrapper extends LoggingCallbackTools {
+  trait LoggingCallbackWrapper
+    extends StObject
+       with LoggingCallbackTools {
     
-    def apply(err: js.UndefOr[scala.Nothing], args: js.Any*): js.Any = js.native
     def apply(err: Null, args: js.Any*): js.Any = js.native
+    def apply(err: Unit, args: js.Any*): js.Any = js.native
     def apply(err: Error, args: js.Any*): js.Any = js.native
   }
   
-  @js.native
   trait ResolveContext extends StObject {
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
   }
   object ResolveContext {
     
@@ -148,14 +147,15 @@ object commonTypesMod {
     }
   }
   
-  @js.native
-  trait ResolveError extends Error {
+  trait ResolveError
+    extends StObject
+       with Error {
     
-    var details: String = js.native
+    var details: String
     
-    var missing: js.Array[String] = js.native
+    var missing: js.Array[String]
     
-    var recursion: Boolean = js.native
+    var recursion: Boolean
   }
   object ResolveError {
     
@@ -182,18 +182,17 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait ResolveParseResult extends StObject {
     
-    var directory: Boolean = js.native
+    var directory: Boolean
     
-    var file: Boolean = js.native
+    var file: Boolean
     
-    var module: Boolean = js.native
+    var module: Boolean
     
-    var query: String = js.native
+    var query: String
     
-    var request: String = js.native
+    var request: String
   }
   object ResolveParseResult {
     
@@ -223,34 +222,33 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait ResolverRequest extends StObject {
     
-    var __innerRequest: js.UndefOr[String] = js.native
+    var __innerRequest: js.UndefOr[String] = js.undefined
     
-    var __innerRequest_relativePath: js.UndefOr[String] = js.native
+    var __innerRequest_relativePath: js.UndefOr[String] = js.undefined
     
-    var __innerRequest_request: js.UndefOr[String] = js.native
+    var __innerRequest_request: js.UndefOr[String] = js.undefined
     
-    var context: ResolveContext = js.native
+    var context: ResolveContext
     
-    var descriptionFileData: js.UndefOr[DescriptionFileData] = js.native
+    var descriptionFileData: js.UndefOr[DescriptionFileData] = js.undefined
     
-    var descriptionFilePath: js.UndefOr[String] = js.native
+    var descriptionFilePath: js.UndefOr[String] = js.undefined
     
-    var descriptionFileRoot: js.UndefOr[String] = js.native
+    var descriptionFileRoot: js.UndefOr[String] = js.undefined
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var relativePath: js.UndefOr[String] = js.native
+    var relativePath: js.UndefOr[String] = js.undefined
     
-    var request: String = js.native
+    var request: String
   }
   object ResolverRequest {
     

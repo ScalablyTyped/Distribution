@@ -5,10 +5,13 @@ import typings.ionic.definitionsMod.IAilment
 import typings.ionic.ionicStrings.`viewport-fit-not-set`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ailmentsMod {
+  
+  @JSImport("ionic/lib/doctor/ailments", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/doctor/ailments", "Ailment")
   @js.native
@@ -96,7 +99,6 @@ object ailmentsMod {
     val id_ViewportFitNotSet: `viewport-fit-not-set` = js.native
   }
   
-  @JSImport("ionic/lib/doctor/ailments", "formatAilmentMessage")
-  @js.native
-  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
+  @scala.inline
+  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAilmentMessage")(ailment.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

@@ -2,39 +2,37 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGaugeScale extends StObject {
   
-  var labels: js.UndefOr[LinearGaugeScaleLabels] = js.native
+  var labels: js.UndefOr[LinearGaugeScaleLabels] = js.undefined
   
-  var line: js.UndefOr[LinearGaugeScaleLine] = js.native
+  var line: js.UndefOr[LinearGaugeScaleLine] = js.undefined
   
-  var majorTicks: js.UndefOr[LinearGaugeScaleMajorTicks] = js.native
+  var majorTicks: js.UndefOr[LinearGaugeScaleMajorTicks] = js.undefined
   
-  var majorUnit: js.UndefOr[Double] = js.native
+  var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorTicks: js.UndefOr[LinearGaugeScaleMinorTicks] = js.native
+  var minorTicks: js.UndefOr[LinearGaugeScaleMinorTicks] = js.undefined
   
-  var minorUnit: js.UndefOr[Double] = js.native
+  var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
-  var rangePlaceholderColor: js.UndefOr[String] = js.native
+  var rangePlaceholderColor: js.UndefOr[String] = js.undefined
   
-  var rangeSize: js.UndefOr[Double] = js.native
+  var rangeSize: js.UndefOr[Double] = js.undefined
   
-  var ranges: js.UndefOr[js.Array[LinearGaugeScaleRange]] = js.native
+  var ranges: js.UndefOr[js.Array[LinearGaugeScaleRange]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object LinearGaugeScale {
   

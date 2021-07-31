@@ -3,33 +3,31 @@ package typings.wordpressComponents.anon
 import typings.wordpressComponents.cardMod.Card.CardSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsBorderless[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends StObject {
   
   /**
     * Render as a different element type
     */
-  var as: js.UndefOr[T] = js.native
+  var as: js.UndefOr[T] = js.undefined
   
   /**
     * `className` of the container.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Renders a borderless card.
     */
-  var isBorderless: js.UndefOr[Boolean] = js.native
+  var isBorderless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add visual shading style.
     */
-  var isShady: js.UndefOr[Boolean] = js.native
+  var isShady: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[CardSize] = js.native
+  var size: js.UndefOr[CardSize] = js.undefined
 }
 object IsBorderless {
   
@@ -40,7 +38,7 @@ object IsBorderless {
   }
   
   @scala.inline
-  implicit class IsBorderlessMutableBuilder[Self <: IsBorderless[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self with IsBorderless[T]) extends AnyVal {
+  implicit class IsBorderlessMutableBuilder[Self <: IsBorderless[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & IsBorderless[T]) extends AnyVal {
     
     @scala.inline
     def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

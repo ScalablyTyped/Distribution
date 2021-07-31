@@ -2,13 +2,11 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The multi-factor related user settings for update operations.
   */
-@js.native
 trait MultiFactorUpdateSettings extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait MultiFactorUpdateSettings extends StObject {
     * existing list of second factors.
     * When null is passed, all of the user's existing second factors are removed.
     */
-  var enrolledFactors: js.Array[UpdateMultiFactorInfoRequest] | Null = js.native
+  var enrolledFactors: js.Array[UpdateMultiFactorInfoRequest] | Null
 }
 object MultiFactorUpdateSettings {
   
   @scala.inline
   def apply(): MultiFactorUpdateSettings = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(enrolledFactors = null)
     __obj.asInstanceOf[MultiFactorUpdateSettings]
   }
   

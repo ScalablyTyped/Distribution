@@ -2,14 +2,14 @@ package typings.tcomb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplyCommand extends Command {
+trait ApplyCommand
+  extends StObject
+     with Command {
   
   @JSName("$apply")
-  var $apply: js.Function = js.native
+  var $apply: js.Function
 }
 object ApplyCommand {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataDestination extends StObject {
   
   /**
     * The path to an Amazon Simple Storage Service (Amazon S3) bucket along with the credentials to access the bucket.
     */
-  var S3Config: typings.awsSdk.forecastserviceMod.S3Config = js.native
+  var S3Config: typings.awsSdk.forecastserviceMod.S3Config
 }
 object DataDestination {
   

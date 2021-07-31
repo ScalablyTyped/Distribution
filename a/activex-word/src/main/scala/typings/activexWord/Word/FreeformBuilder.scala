@@ -4,7 +4,6 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,72 +16,6 @@ trait FreeformBuilder extends StObject {
     * @param number [Y3=0]
     */
   def AddNodes(SegmentType: MsoSegmentType, EditingType: MsoEditingType, X1: Double, Y1: Double): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: js.UndefOr[scala.Nothing],
-    X3: js.UndefOr[scala.Nothing],
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: js.UndefOr[scala.Nothing],
-    X3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: js.UndefOr[scala.Nothing],
-    X3: Double,
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: Double,
-    X3: js.UndefOr[scala.Nothing],
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: Double,
-    X3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: js.UndefOr[scala.Nothing],
-    Y2: Double,
-    X3: Double,
-    Y3: Double
-  ): Unit = js.native
   def AddNodes(SegmentType: MsoSegmentType, EditingType: MsoEditingType, X1: Double, Y1: Double, X2: Double): Unit = js.native
   def AddNodes(
     SegmentType: MsoSegmentType,
@@ -90,35 +23,6 @@ trait FreeformBuilder extends StObject {
     X1: Double,
     Y1: Double,
     X2: Double,
-    Y2: js.UndefOr[scala.Nothing],
-    X3: js.UndefOr[scala.Nothing],
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: Double,
-    Y2: js.UndefOr[scala.Nothing],
-    X3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: Double,
-    Y2: js.UndefOr[scala.Nothing],
-    X3: Double,
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: Double,
     Y2: Double
   ): Unit = js.native
   def AddNodes(
@@ -128,16 +32,6 @@ trait FreeformBuilder extends StObject {
     Y1: Double,
     X2: Double,
     Y2: Double,
-    X3: js.UndefOr[scala.Nothing],
-    Y3: Double
-  ): Unit = js.native
-  def AddNodes(
-    SegmentType: MsoSegmentType,
-    EditingType: MsoEditingType,
-    X1: Double,
-    Y1: Double,
-    X2: Double,
-    Y2: Double,
     X3: Double
   ): Unit = js.native
   def AddNodes(
@@ -148,6 +42,111 @@ trait FreeformBuilder extends StObject {
     X2: Double,
     Y2: Double,
     X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Double,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Unit,
     Y3: Double
   ): Unit = js.native
   

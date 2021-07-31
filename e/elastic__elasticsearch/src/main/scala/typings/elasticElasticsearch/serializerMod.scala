@@ -2,32 +2,45 @@ package typings.elasticElasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializerMod {
   
   @JSImport("@elastic/elasticsearch/lib/Serializer", JSImport.Default)
   @js.native
-  class default () extends Serializer
+  class default ()
+    extends StObject
+       with Serializer {
+    
+    /* CompleteClass */
+    override def deserialize(json: String): js.Any = js.native
+    
+    /* CompleteClass */
+    override def ndserialize(array: js.Array[js.Any]): String = js.native
+    
+    /* CompleteClass */
+    override def qserialize(`object`: js.Any): String = js.native
+    
+    /* CompleteClass */
+    override def serialize(`object`: js.Any): String = js.native
+  }
   
-  @js.native
   trait Serializer extends StObject {
     
-    def deserialize(json: String): js.Any = js.native
+    def deserialize(json: String): js.Any
     
-    def ndserialize(array: js.Array[_]): String = js.native
+    def ndserialize(array: js.Array[js.Any]): String
     
-    def qserialize(`object`: js.Any): String = js.native
+    def qserialize(`object`: js.Any): String
     
-    def serialize(`object`: js.Any): String = js.native
+    def serialize(`object`: js.Any): String
   }
   object Serializer {
     
     @scala.inline
     def apply(
       deserialize: String => js.Any,
-      ndserialize: js.Array[_] => String,
+      ndserialize: js.Array[js.Any] => String,
       qserialize: js.Any => String,
       serialize: js.Any => String
     ): Serializer = {
@@ -42,7 +55,7 @@ object serializerMod {
       def setDeserialize(value: String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setNdserialize(value: js.Array[_] => String): Self = StObject.set(x, "ndserialize", js.Any.fromFunction1(value))
+      def setNdserialize(value: js.Array[js.Any] => String): Self = StObject.set(x, "ndserialize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setQserialize(value: js.Any => String): Self = StObject.set(x, "qserialize", js.Any.fromFunction1(value))

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object PageBreak {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.PageBreak.create")
-  @js.native
-  def create(model: IModel): PageBreak = js.native
+  @scala.inline
+  def create(model: IModel): PageBreak = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageBreak]
   
   /**
     * Creates and returns a new PageBreak instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object PageBreak {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.PageBreak.createInDocumentTemplateUnderToplevels")
-  @js.native
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): PageBreak = js.native
+  @scala.inline
+  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): PageBreak = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[PageBreak]
   
   /**
     * Creates and returns a new PageBreak instance in the SDK and on the server.
@@ -59,9 +56,8 @@ object PageBreak {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.PageBreak.createInDropZoneUnderWidget")
-  @js.native
-  def createInDropZoneUnderWidget(container: DropZone): PageBreak = js.native
+  @scala.inline
+  def createInDropZoneUnderWidget(container: DropZone): PageBreak = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[PageBreak]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.PageBreak.structureTypeName")

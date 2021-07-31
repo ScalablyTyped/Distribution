@@ -12,7 +12,7 @@ Secure random numbers of any size in any base
 | Keywords           | crypto, math, random, security |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 7494695 |
+| # downloads        | 8961359 |
 | # stars            | 2 |
 
 ## Links

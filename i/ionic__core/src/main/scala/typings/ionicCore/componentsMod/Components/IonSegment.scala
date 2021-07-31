@@ -5,41 +5,39 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSegment extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the segment.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * If `true`, the segment buttons will overflow and the user can swipe to see them. In addition, this will disable the gesture to drag the indicator between the buttons in order to swipe to see hidden buttons.
     */
-  var scrollable: Boolean = js.native
+  var scrollable: Boolean
   
   /**
     * If `true`, users will be able to swipe between segment buttons to activate them.
     */
-  var swipeGesture: Boolean = js.native
+  var swipeGesture: Boolean
   
   /**
     * the value of the segment.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object IonSegment {
   

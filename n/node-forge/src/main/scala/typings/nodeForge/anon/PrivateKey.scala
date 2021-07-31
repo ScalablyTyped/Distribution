@@ -3,15 +3,13 @@ package typings.nodeForge.anon
 import typings.nodeForge.mod.pki.ed25519.NativeBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateKey extends StObject {
   
-  var privateKey: NativeBuffer = js.native
+  var privateKey: NativeBuffer
   
-  var publicKey: NativeBuffer = js.native
+  var publicKey: NativeBuffer
 }
 object PrivateKey {
   

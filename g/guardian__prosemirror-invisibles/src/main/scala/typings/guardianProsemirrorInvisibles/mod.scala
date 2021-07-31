@@ -7,51 +7,43 @@ import typings.prosemirrorView.mod.Decoration
 import typings.prosemirrorView.mod.DecorationSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@guardian/prosemirror-invisibles", JSImport.Default)
+  @JSImport("@guardian/prosemirror-invisibles", JSImport.Namespace)
   @js.native
-  def default(builders: js.Array[Builder]): Plugin[_, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@guardian/prosemirror-invisibles", "character")
-  @js.native
-  def character(`type`: String): js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder] = js.native
+  @scala.inline
+  def default(builders: js.Array[Builder]): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(builders.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
   
-  @JSImport("@guardian/prosemirror-invisibles", "createDeco")
-  @js.native
-  def createDeco(pos: Double, `type`: String): Decoration[StringDictionary[_]] = js.native
+  @scala.inline
+  def character(`type`: String): js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder] = ^.asInstanceOf[js.Dynamic].applyDynamic("character")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder]]
   
-  @JSImport("@guardian/prosemirror-invisibles", "hardBreak")
-  @js.native
-  def hardBreak(): Builder = js.native
-  @JSImport("@guardian/prosemirror-invisibles", "hardBreak")
-  @js.native
-  def hardBreak(predicate: js.Function1[/* node */ Node[_], Boolean]): Builder = js.native
+  @scala.inline
+  def createDeco(pos: Double, `type`: String): Decoration[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeco")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Decoration[StringDictionary[js.Any]]]
   
-  @JSImport("@guardian/prosemirror-invisibles", "node")
-  @js.native
-  def node(`type`: String, toPosition: js.Function2[/* node */ Node[_], /* pos */ Double, Double]): js.Function1[/* predicate */ js.Function1[/* node */ Node[_], Boolean], Builder] = js.native
+  @scala.inline
+  def hardBreak(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("hardBreak")().asInstanceOf[Builder]
+  @scala.inline
+  def hardBreak(predicate: js.Function1[/* node */ Node[js.Any], Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("hardBreak")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
-  @JSImport("@guardian/prosemirror-invisibles", "paragraph")
-  @js.native
-  def paragraph(): Builder = js.native
-  @JSImport("@guardian/prosemirror-invisibles", "paragraph")
-  @js.native
-  def paragraph(predicate: js.Function1[/* node */ Node[_], Boolean]): Builder = js.native
+  @scala.inline
+  def node(`type`: String, toPosition: js.Function2[/* node */ Node[js.Any], /* pos */ Double, Double]): js.Function1[/* predicate */ js.Function1[/* node */ Node[js.Any], Boolean], Builder] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(`type`.asInstanceOf[js.Any], toPosition.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* predicate */ js.Function1[/* node */ Node[js.Any], Boolean], Builder]]
   
-  @JSImport("@guardian/prosemirror-invisibles", "space")
-  @js.native
-  def space(): Builder = js.native
-  @JSImport("@guardian/prosemirror-invisibles", "space")
-  @js.native
-  def space(predicate: js.Function1[/* char */ String, Boolean]): Builder = js.native
+  @scala.inline
+  def paragraph(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")().asInstanceOf[Builder]
+  @scala.inline
+  def paragraph(predicate: js.Function1[/* node */ Node[js.Any], Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
-  @JSImport("@guardian/prosemirror-invisibles", "textBetween")
-  @js.native
-  def textBetween(from: Double, to: Double, doc: Node[_]): js.Array[TextBetweenPosition] = js.native
+  @scala.inline
+  def space(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("space")().asInstanceOf[Builder]
+  @scala.inline
+  def space(predicate: js.Function1[/* char */ String, Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("space")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  
+  @scala.inline
+  def textBetween(from: Double, to: Double, doc: Node[js.Any]): js.Array[TextBetweenPosition] = (^.asInstanceOf[js.Dynamic].applyDynamic("textBetween")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextBetweenPosition]]
   
   type Builder = js.Function4[
     /* from */ Double, 
@@ -61,12 +53,11 @@ object mod {
     DecorationSet[js.Any]
   ]
   
-  @js.native
   trait TextBetweenPosition extends StObject {
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var text: String = js.native
+    var text: String
   }
   object TextBetweenPosition {
     

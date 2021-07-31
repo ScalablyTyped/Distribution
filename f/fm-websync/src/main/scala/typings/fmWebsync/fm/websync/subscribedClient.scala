@@ -2,21 +2,19 @@ package typings.fmWebsync.fm.websync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait subscribedClient extends StObject {
   
   /**
     * The subscribed client's bound records.
     */
-  var boundRecords: js.Any = js.native
+  var boundRecords: js.Any
   
   /**
     * The subscribed client's unique identifier.
     */
-  var id: String = js.native
+  var id: String
 }
 object subscribedClient {
   

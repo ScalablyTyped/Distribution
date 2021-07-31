@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRateBasedModMod {
   
-  @JSImport("@pulumi/aws/wafregional/getRateBasedMod", "getRateBasedMod")
+  @JSImport("@pulumi/aws/wafregional/getRateBasedMod", JSImport.Namespace)
   @js.native
-  def getRateBasedMod(args: GetRateBasedModArgs): js.Promise[GetRateBasedModResult] = js.native
-  @JSImport("@pulumi/aws/wafregional/getRateBasedMod", "getRateBasedMod")
-  @js.native
-  def getRateBasedMod(args: GetRateBasedModArgs, opts: InvokeOptions): js.Promise[GetRateBasedModResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRateBasedMod(args: GetRateBasedModArgs): js.Promise[GetRateBasedModResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedModResult]]
+  @scala.inline
+  def getRateBasedMod(args: GetRateBasedModArgs, opts: InvokeOptions): js.Promise[GetRateBasedModResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedModResult]]
+  
   trait GetRateBasedModArgs extends StObject {
     
     /**
       * The name of the WAF Regional rate based rule.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetRateBasedModArgs {
     
@@ -39,15 +39,14 @@ object getRateBasedModMod {
     }
   }
   
-  @js.native
   trait GetRateBasedModResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetRateBasedModResult {
     

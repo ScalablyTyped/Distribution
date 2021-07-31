@@ -2,7 +2,6 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * them during pod scheduling. They may also be resized up or down, to
   * accommodate the workload.
   */
-@js.native
 trait SchemaNodePool extends StObject {
   
   /**
     * Autoscaler configuration for this NodePool. Autoscaler is enabled only if
     * a valid configuration is present.
     */
-  var autoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.native
+  var autoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.undefined
   
   /**
     * Which conditions caused the current node pool state.
     */
-  var conditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.undefined
   
   /**
     * The node configuration of the pool.
     */
-  var config: js.UndefOr[SchemaNodeConfig] = js.native
+  var config: js.UndefOr[SchemaNodeConfig] = js.undefined
   
   /**
     * The initial node count for the pool. You must ensure that your Compute
@@ -38,45 +36,45 @@ trait SchemaNodePool extends StObject {
     * quota&lt;/a&gt; is sufficient for this number of instances. You must also
     * have available firewall and routes quota.
     */
-  var initialNodeCount: js.UndefOr[Double] = js.native
+  var initialNodeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output only] The resource URLs of the [managed instance
     * groups](/compute/docs/instance-groups/creating-groups-of-managed-instances)
     * associated with this node pool.
     */
-  var instanceGroupUrls: js.UndefOr[js.Array[String]] = js.native
+  var instanceGroupUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * NodeManagement configuration for this NodePool.
     */
-  var management: js.UndefOr[SchemaNodeManagement] = js.native
+  var management: js.UndefOr[SchemaNodeManagement] = js.undefined
   
   /**
     * The name of the node pool.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The status of the nodes in this pool instance.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Additional information about the current status of this
     * node pool instance, if available.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the Kubernetes of this node.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaNodePool {
   

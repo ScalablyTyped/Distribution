@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.i18nAstMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var i18nNodesByMsgId: StringDictionary[js.Array[Node]] = js.native
+  var i18nNodesByMsgId: StringDictionary[js.Array[Node]]
   
-  var locale: String = js.native
+  var locale: String
 }
 object Locale {
   

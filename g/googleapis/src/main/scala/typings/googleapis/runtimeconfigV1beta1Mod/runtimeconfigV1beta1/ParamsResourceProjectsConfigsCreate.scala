@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsConfigsCreate extends StandardParameters {
+trait ParamsResourceProjectsConfigsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The [project
     * ID](https://support.google.com/cloud/answer/6158840?hl=en&ref_topic=6158848)
     * for this request, in the format `projects/[PROJECT_ID]`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRuntimeConfig] = js.native
+  var requestBody: js.UndefOr[SchemaRuntimeConfig] = js.undefined
   
   /**
     * An optional but recommended unique `request_id`. If the server receives
@@ -37,7 +37,7 @@ trait ParamsResourceProjectsConfigsCreate extends StandardParameters {
     * responsibility of the client to ensure uniqueness of the `request_id`
     * strings.  `request_id` strings are limited to 64 characters.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsConfigsCreate {
   

@@ -8,14 +8,15 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@lumino/dragdrop", "Drag")
   @js.native
-  class Drag protected () extends IDisposable {
+  class Drag protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new drag object.
       *
@@ -104,6 +105,20 @@ object mod {
     var _updateDragScroll: js.Any = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * The drag image element for the drag object.
       */
     val dragImage: HTMLElement | Null = js.native
@@ -119,6 +134,15 @@ object mod {
       * called directly by user code.
       */
     def handleEvent(event: Event): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * The mime data for the drag object.
@@ -172,6 +196,10 @@ object mod {
   }
   object Drag {
     
+    @JSImport("@lumino/dragdrop", "Drag")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Override the cursor icon for the entire document.
       *
@@ -198,14 +226,12 @@ object mod {
       * override.dispose();
       * ```
       */
-    @JSImport("@lumino/dragdrop", "Drag.overrideCursor")
-    @js.native
-    def overrideCursor(cursor: String): IDisposable = js.native
+    @scala.inline
+    def overrideCursor(cursor: String): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
     
     /**
       * An options object for initializing a `Drag` object.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -224,12 +250,12 @@ object mod {
         *
         * The default value is `null`.
         */
-      var dragImage: js.UndefOr[HTMLElement] = js.native
+      var dragImage: js.UndefOr[HTMLElement] = js.undefined
       
       /**
         * The populated mime data for the drag operation.
         */
-      var mimeData: MimeData = js.native
+      var mimeData: MimeData
       
       /**
         * The optional proposed drop action for the drag operation.
@@ -240,7 +266,7 @@ object mod {
         *
         * The default value is `'copy'`.
         */
-      var proposedAction: js.UndefOr[DropAction] = js.native
+      var proposedAction: js.UndefOr[DropAction] = js.undefined
       
       /**
         * An optional object which indicates the source of the drag.
@@ -252,7 +278,7 @@ object mod {
         *
         * The default value is `null`.
         */
-      var source: js.UndefOr[js.Any] = js.native
+      var source: js.UndefOr[js.Any] = js.undefined
       
       /**
         * The drop actions supported by the drag initiator.
@@ -266,7 +292,7 @@ object mod {
         *
         * The default value is `'all'`.
         */
-      var supportedActions: js.UndefOr[SupportedActions] = js.native
+      var supportedActions: js.UndefOr[SupportedActions] = js.undefined
     }
     object IOptions {
       
@@ -332,7 +358,9 @@ object mod {
   }
   
   @js.native
-  trait IDragEvent extends MouseEvent {
+  trait IDragEvent
+    extends StObject
+       with MouseEvent {
     
     /**
       * The drop action supported or taken by the drop target.

@@ -2,30 +2,28 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocodingRequest extends StObject {
   
   /**
     * The street address that you want to geocode, in the format used by the national postal service of the country concerned.
     * Additional address elements such as business names and unit, suite or floor numbers should be avoided.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * The bounding box of the viewport within which to bias geocode results more prominently.
     * This parameter will only influence, not fully restrict, results from the geocoder.
     */
-  var bounds: js.UndefOr[LatLngBounds] = js.native
+  var bounds: js.UndefOr[LatLngBounds] = js.undefined
   
   /**
     * A components filter with elements separated by a pipe (`|`).
     * The components filter is *required* if the request doesn't include an `address`.
     * Each element in the components filter consists of a `component:value` pair, and fully restricts the results from the geocoder.
     */
-  var components: js.UndefOr[GeocodingComponents] = js.native
+  var components: js.UndefOr[GeocodingComponents] = js.undefined
   
   /**
     * The language in which to return results.
@@ -41,13 +39,13 @@ trait GeocodingRequest extends StObject {
     *    such as the abbreviations for street types, or synonyms that may be valid in one language but not in another.
     *    For example, utca and tér are synonyms for street in Hungarian.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The region code, specified as a ccTLD ("top-level domain") two-character value.
     * This parameter will only influence, not fully restrict, results from the geocoder.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object GeocodingRequest {
   

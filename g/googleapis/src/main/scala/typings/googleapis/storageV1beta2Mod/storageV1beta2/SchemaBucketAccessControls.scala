@@ -2,25 +2,23 @@ package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An access-control list.
   */
-@js.native
 trait SchemaBucketAccessControls extends StObject {
   
   /**
     * The list of items.
     */
-  var items: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.native
+  var items: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.undefined
   
   /**
     * The kind of item this is. For lists of bucket access control entries,
     * this is always storage#bucketAccessControls.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBucketAccessControls {
   

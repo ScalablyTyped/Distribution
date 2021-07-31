@@ -2,13 +2,11 @@ package typings.log4js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppenderModule extends StObject {
   
-  var configure: js.Function = js.native
+  var configure: js.Function
 }
 object AppenderModule {
   

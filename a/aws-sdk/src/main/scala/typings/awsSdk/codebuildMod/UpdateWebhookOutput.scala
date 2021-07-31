@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWebhookOutput extends StObject {
   
   /**
     *  Information about a repository's webhook that is associated with a project in AWS CodeBuild. 
     */
-  var webhook: js.UndefOr[Webhook] = js.native
+  var webhook: js.UndefOr[Webhook] = js.undefined
 }
 object UpdateWebhookOutput {
   

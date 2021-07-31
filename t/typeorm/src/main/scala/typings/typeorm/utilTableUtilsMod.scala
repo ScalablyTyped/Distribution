@@ -5,7 +5,6 @@ import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import typings.typeorm.optionsTableColumnOptionsMod.TableColumnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilTableUtilsMod {
@@ -16,8 +15,11 @@ object utilTableUtilsMod {
   /* static members */
   object TableUtils {
     
-    @JSImport("typeorm/schema-builder/util/TableUtils", "TableUtils.createTableColumnOptions")
+    @JSImport("typeorm/schema-builder/util/TableUtils", "TableUtils")
     @js.native
-    def createTableColumnOptions(columnMetadata: ColumnMetadata, driver: Driver): TableColumnOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createTableColumnOptions(columnMetadata: ColumnMetadata, driver: Driver): TableColumnOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createTableColumnOptions")(columnMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[TableColumnOptions]
   }
 }

@@ -3,98 +3,98 @@ package typings.canvaskitWasm.mod
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Particles extends EmbindObject[Particles] {
+trait Particles
+  extends StObject
+     with EmbindObject[Particles] {
   
   /**
     * Draws the current state of the particles on the given canvas.
     * @param canvas
     */
-  def draw(canvas: SkCanvas): Unit = js.native
+  def draw(canvas: SkCanvas): Unit
   
   /**
     * Returns a Float32Array bound to the WASM memory of these uniforms. Changing these
     * floats will change the corresponding uniforms instantly.
     */
-  def effectUniforms(): Float32Array = js.native
+  def effectUniforms(): Float32Array
   
   /**
     * Returns the nth uniform from the effect.
     * @param index
     */
-  def getEffectUniform(index: Double): ParticlesUniform = js.native
+  def getEffectUniform(index: Double): ParticlesUniform
   
   /**
     * Returns the number of uniforms on the effect.
     */
-  def getEffectUniformCount(): Double = js.native
+  def getEffectUniformCount(): Double
   
   /**
     * Returns the number of float uniforms on the effect.
     */
-  def getEffectUniformFloatCount(): Double = js.native
+  def getEffectUniformFloatCount(): Double
   
   /**
     * Returns the name of the nth effect uniform.
     * @param index
     */
-  def getEffectUniformName(index: Double): String = js.native
+  def getEffectUniformName(index: Double): String
   
   /**
     * Returns the nth uniform on the particles.
     * @param index
     */
-  def getParticleUniform(index: Double): ParticlesUniform = js.native
+  def getParticleUniform(index: Double): ParticlesUniform
   
   /**
     * Returns the count of uniforms on the particles.
     */
-  def getParticleUniformCount(): Double = js.native
+  def getParticleUniformCount(): Double
   
   /**
     * Returns the number of float uniforms on the particles.
     */
-  def getParticleUniformFloatCount(): Double = js.native
+  def getParticleUniformFloatCount(): Double
   
   /**
     * Returns the name of the nth particle uniform.
     * @param index
     */
-  def getParticleUniformName(index: Double): String = js.native
+  def getParticleUniformName(index: Double): String
   
   /**
     * Returns a Float32Array bound to the WASM memory of these uniforms. Changing these
     * floats will change the corresponding uniforms instantly.
     */
-  def particleUniforms(): Float32Array = js.native
+  def particleUniforms(): Float32Array
   
   /**
     * Sets the base position of the effect.
     * @param point
     */
-  def setPosition(point: SkPoint): Unit = js.native
+  def setPosition(point: SkPoint): Unit
   
   /**
     * Sets the base rate of the effect.
     * @param rate
     */
-  def setRate(rate: Double): Unit = js.native
+  def setRate(rate: Double): Unit
   
   /**
     * Starts playing the effect.
     * @param now
     * @param looping
     */
-  def start(now: Double, looping: Boolean): Unit = js.native
+  def start(now: Double, looping: Boolean): Unit
   
   /**
     * Updates the effect using the new time.
     * @param now
     */
-  def update(now: Double): Unit = js.native
+  def update(now: Double): Unit
 }
 object Particles {
   

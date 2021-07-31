@@ -4,109 +4,98 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: String): js.Promise[Stat] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: String, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: String, options: StringDictionary[js.Any]): js.Promise[Stat] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(pid: String): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
+  @scala.inline
+  def apply(pid: String, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pid: String, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  @scala.inline
   def apply(
     pid: String,
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
-  ): Unit = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: Double): js.Promise[Stat] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: Double, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pid: Double, options: StringDictionary[js.Any]): js.Promise[Stat] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pid: Double): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
+  @scala.inline
+  def apply(pid: Double, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pid: Double, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  @scala.inline
   def apply(
     pid: Double,
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
-  ): Unit = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pids: js.Array[Double | String]): js.Promise[StringDictionary[Stat]] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pids: js.Array[Double | String]): js.Promise[StringDictionary[Stat]] = ^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StringDictionary[Stat]]]
+  @scala.inline
   def apply(
     pids: js.Array[Double | String],
     callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
-  ): Unit = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
-  def apply(pids: js.Array[Double | String], options: StringDictionary[js.Any]): js.Promise[StringDictionary[Stat]] = js.native
-  @JSImport("pidusage", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pids: js.Array[Double | String], options: StringDictionary[js.Any]): js.Promise[StringDictionary[Stat]] = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stat]]]
+  @scala.inline
   def apply(
     pids: js.Array[Double | String],
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("pidusage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * If needed this function can be used to clear the event loop.
     * Indeed, we're registering an interval to free up the in-memory metrics.
     * By calling this, it will clear this interval and all delete all in-memory data
     */
-  @JSImport("pidusage", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @js.native
   trait Stat extends StObject {
     
     /**
       * percentage (from 0 to 100*vcore)
       */
-    var cpu: Double = js.native
+    var cpu: Double
     
     /**
       * ms user + system time
       */
-    var ctime: Double = js.native
+    var ctime: Double
     
     /**
       * ms since the start of the process
       */
-    var elapsed: Double = js.native
+    var elapsed: Double
     
     /**
       * bytes
       */
-    var memory: Double = js.native
+    var memory: Double
     
     /**
       * PID
       */
-    var pid: Double = js.native
+    var pid: Double
     
     /**
       * PPID
       */
-    var ppid: Double = js.native
+    var ppid: Double
     
     /**
       * ms since epoch
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object Stat {
     

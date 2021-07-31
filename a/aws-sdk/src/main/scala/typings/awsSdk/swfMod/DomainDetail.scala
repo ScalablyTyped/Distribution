@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDetail extends StObject {
   
   /**
     * The domain configuration. Currently, this includes only the domain's retention period.
     */
-  var configuration: DomainConfiguration = js.native
+  var configuration: DomainConfiguration
   
   /**
     * The basic information about a domain, such as its name, status, and description.
     */
-  var domainInfo: DomainInfo = js.native
+  var domainInfo: DomainInfo
 }
 object DomainDetail {
   

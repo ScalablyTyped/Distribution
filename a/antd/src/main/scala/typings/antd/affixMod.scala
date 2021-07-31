@@ -10,7 +10,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object affixMod {
@@ -39,10 +38,14 @@ object affixMod {
   object AffixStatus extends StObject {
     
     @js.native
-    sealed trait None extends AffixStatus
+    sealed trait None
+      extends StObject
+         with AffixStatus
     
     @js.native
-    sealed trait Prepare extends AffixStatus
+    sealed trait Prepare
+      extends StObject
+         with AffixStatus
   }
   
   @js.native
@@ -86,30 +89,29 @@ object affixMod {
     def updatePosition(): Unit = js.native
   }
   
-  @js.native
   trait AffixProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** 距离窗口底部达到指定偏移量后触发 */
-    var offsetBottom: js.UndefOr[Double] = js.native
+    var offsetBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * 距离窗口顶部达到指定偏移量后触发
       */
-    var offsetTop: js.UndefOr[Double] = js.native
+    var offsetTop: js.UndefOr[Double] = js.undefined
     
     /** 固定状态改变时触发的回调函数 */
-    var onChange: js.UndefOr[js.Function1[/* affixed */ js.UndefOr[Boolean], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* affixed */ js.UndefOr[Boolean], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** 设置 Affix 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 */
-    var target: js.UndefOr[js.Function0[Window | HTMLElement | Null]] = js.native
+    var target: js.UndefOr[js.Function0[Window | HTMLElement | Null]] = js.undefined
   }
   object AffixProps {
     
@@ -172,24 +174,23 @@ object affixMod {
     }
   }
   
-  @js.native
   trait AffixState extends StObject {
     
-    var affixStyle: js.UndefOr[CSSProperties] = js.native
+    var affixStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var lastAffix: Boolean = js.native
+    var lastAffix: Boolean
     
-    var placeholderStyle: js.UndefOr[CSSProperties] = js.native
+    var placeholderStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prevTarget: Window | HTMLElement | Null = js.native
+    var prevTarget: Window | HTMLElement | Null
     
-    var status: AffixStatus = js.native
+    var status: AffixStatus
   }
   object AffixState {
     
     @scala.inline
     def apply(lastAffix: Boolean, status: AffixStatus): AffixState = {
-      val __obj = js.Dynamic.literal(lastAffix = lastAffix.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(lastAffix = lastAffix.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], prevTarget = null)
       __obj.asInstanceOf[AffixState]
     }
     

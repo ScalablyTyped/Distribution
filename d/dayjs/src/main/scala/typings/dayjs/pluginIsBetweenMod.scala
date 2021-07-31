@@ -6,7 +6,6 @@ import typings.dayjs.mod.OpUnitType
 import typings.dayjs.mod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginIsBetweenMod extends Shortcut {
@@ -27,8 +26,8 @@ object pluginIsBetweenMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: js.UndefOr[scala.Nothing], d: String): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String): Boolean = js.native
     }

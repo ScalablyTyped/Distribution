@@ -2,51 +2,49 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobResponse extends StObject {
   
   /**
     * The ARN for the job.
     */
-  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
     * The date and time that the job was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Details about the job.
     */
-  var Details: js.UndefOr[ResponseDetails] = js.native
+  var Details: js.UndefOr[ResponseDetails] = js.undefined
   
   /**
     * The errors associated with jobs.
     */
-  var Errors: js.UndefOr[ListOfJobError] = js.native
+  var Errors: js.UndefOr[ListOfJobError] = js.undefined
   
   /**
     * The unique identifier for the job.
     */
-  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
     * The state of the job.
     */
-  var State: js.UndefOr[typings.awsSdk.dataexchangeMod.State] = js.native
+  var State: js.UndefOr[typings.awsSdk.dataexchangeMod.State] = js.undefined
   
   /**
     * The job type.
     */
-  var Type: js.UndefOr[typings.awsSdk.dataexchangeMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.dataexchangeMod.Type] = js.undefined
   
   /**
     * The date and time that the job was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object GetJobResponse {
   

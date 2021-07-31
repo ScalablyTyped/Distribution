@@ -5,48 +5,48 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reflects an enum type. */
-@js.native
-trait XEnumTypeDescription extends XTypeDescription {
+trait XEnumTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the default enum value.
     * @returns default enum value
     */
-  val DefaultEnumValue: Double = js.native
+  val DefaultEnumValue: Double
   
   /**
     * Returns the enum member values.
     * @returns enum member values
     */
-  val EnumNames: SafeArray[String] = js.native
+  val EnumNames: SafeArray[String]
   
   /**
     * Returns the enum member names.
     * @returns enum member names
     */
-  val EnumValues: SafeArray[Double] = js.native
+  val EnumValues: SafeArray[Double]
   
   /**
     * Returns the default enum value.
     * @returns default enum value
     */
-  def getDefaultEnumValue(): Double = js.native
+  def getDefaultEnumValue(): Double
   
   /**
     * Returns the enum member values.
     * @returns enum member values
     */
-  def getEnumNames(): SafeArray[String] = js.native
+  def getEnumNames(): SafeArray[String]
   
   /**
     * Returns the enum member names.
     * @returns enum member names
     */
-  def getEnumValues(): SafeArray[Double] = js.native
+  def getEnumValues(): SafeArray[Double]
 }
 object XEnumTypeDescription {
   

@@ -2,24 +2,22 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about the data source for the element containing it.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
     * The name of the data source.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this data comes from an official government source.
     */
-  var official: js.UndefOr[Boolean] = js.native
+  var official: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSource {
   

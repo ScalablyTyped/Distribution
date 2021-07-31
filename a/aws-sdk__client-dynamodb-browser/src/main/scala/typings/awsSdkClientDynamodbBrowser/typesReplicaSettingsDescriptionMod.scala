@@ -11,50 +11,48 @@ import typings.awsSdkClientDynamodbBrowser.typesReplicaGlobalSecondaryIndexSetti
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaSettingsDescriptionMod {
   
-  @js.native
   trait ReplicaSettingsDescription extends StObject {
     
     /**
       * <p>The region name of the replica.</p>
       */
-    var RegionName: String = js.native
+    var RegionName: String
     
     /**
       * <p>Replica global secondary index settings for the global table.</p>
       */
     var ReplicaGlobalSecondaryIndexSettings: js.UndefOr[
         js.Array[ReplicaGlobalSecondaryIndexSettingsDescription] | Iterable[ReplicaGlobalSecondaryIndexSettingsDescription]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Autoscaling settings for a global table replica's read capacity units.</p>
       */
-    var ReplicaProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+    var ReplicaProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>The maximum number of strongly consistent reads consumed per second before DynamoDB returns a <code>ThrottlingException</code>. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#ProvisionedThroughput">Specifying Read and Write Requirements</a> in the <i>Amazon DynamoDB Developer Guide</i>. </p>
       */
-    var ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.native
+    var ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>AutoScaling settings for a global table replica's write capacity units.</p>
       */
-    var ReplicaProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+    var ReplicaProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>The maximum number of writes consumed per second before DynamoDB returns a <code>ThrottlingException</code>. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#ProvisionedThroughput">Specifying Read and Write Requirements</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
-    var ReplicaProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.native
+    var ReplicaProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The current state of the region:</p> <ul> <li> <p> <code>CREATING</code> - The region is being created.</p> </li> <li> <p> <code>UPDATING</code> - The region is being updated.</p> </li> <li> <p> <code>DELETING</code> - The region is being deleted.</p> </li> <li> <p> <code>ACTIVE</code> - The region is ready for use.</p> </li> </ul>
       */
-    var ReplicaStatus: js.UndefOr[CREATING | UPDATING | DELETING | ACTIVE | String] = js.native
+    var ReplicaStatus: js.UndefOr[CREATING | UPDATING | DELETING | ACTIVE | String] = js.undefined
   }
   object ReplicaSettingsDescription {
     
@@ -113,26 +111,27 @@ object typesReplicaSettingsDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicaSettingsDescription extends ReplicaSettingsDescription {
+  trait UnmarshalledReplicaSettingsDescription
+    extends StObject
+       with ReplicaSettingsDescription {
     
     /**
       * <p>Replica global secondary index settings for the global table.</p>
       */
     @JSName("ReplicaGlobalSecondaryIndexSettings")
-    var ReplicaGlobalSecondaryIndexSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription]] = js.native
+    var ReplicaGlobalSecondaryIndexSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription]] = js.undefined
     
     /**
       * <p>Autoscaling settings for a global table replica's read capacity units.</p>
       */
     @JSName("ReplicaProvisionedReadCapacityAutoScalingSettings")
-    var ReplicaProvisionedReadCapacityAutoScalingSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.native
+    var ReplicaProvisionedReadCapacityAutoScalingSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.undefined
     
     /**
       * <p>AutoScaling settings for a global table replica's write capacity units.</p>
       */
     @JSName("ReplicaProvisionedWriteCapacityAutoScalingSettings")
-    var ReplicaProvisionedWriteCapacityAutoScalingSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.native
+    var ReplicaProvisionedWriteCapacityAutoScalingSettings_UnmarshalledReplicaSettingsDescription: js.UndefOr[UnmarshalledAutoScalingSettingsDescription] = js.undefined
   }
   object UnmarshalledReplicaSettingsDescription {
     

@@ -2,39 +2,37 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagerOption extends StObject {
   
-  var actions: js.UndefOr[js.Array[Action]] = js.native
+  var actions: js.UndefOr[js.Array[Action]] = js.undefined
   
-  var close: js.UndefOr[Boolean] = js.native
+  var close: js.UndefOr[Boolean] = js.undefined
   
-  var contentClass: js.UndefOr[String] = js.native
+  var contentClass: js.UndefOr[String] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var fade: js.UndefOr[Boolean] = js.native
+  var fade: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var onAction: js.UndefOr[OnActionFunc] = js.native
+  var onAction: js.UndefOr[OnActionFunc] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[Boolean] = js.native
+  var scale: js.UndefOr[Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[MessagerTypeEnum | String] = js.native
+  var `type`: js.UndefOr[MessagerTypeEnum | String] = js.undefined
 }
 object MessagerOption {
   

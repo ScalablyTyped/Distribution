@@ -2,7 +2,6 @@ package typings.marked.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "InlineLexer")
@@ -34,17 +33,14 @@ object InlineLexer_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("marked", "InlineLexer.escapes")
-  @js.native
-  def escapes(text: String): String = js.native
+  @scala.inline
+  def escapes(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapes")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("marked", "InlineLexer.output")
-  @js.native
-  def output(src: String, links: js.Array[String]): String = js.native
-  @JSImport("marked", "InlineLexer.output")
-  @js.native
-  def output(src: String, links: js.Array[String], options: MarkedOptions): String = js.native
+  @scala.inline
+  def output(src: String, links: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def output(src: String, links: js.Array[String], options: MarkedOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
   @JSImport("marked", "InlineLexer.rules")

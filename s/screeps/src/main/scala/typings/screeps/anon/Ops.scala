@@ -11,19 +11,17 @@ import typings.screeps.screepsNumbers.`800`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ops extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: `800` = js.native
+  var cooldown: `800`
   
-  var duration: `1000` = js.native
+  var duration: `1000`
   
-  var effect: js.Tuple5[`500000`, `1000000`, `2000000`, `4000000`, `7000000`] = js.native
+  var effect: js.Tuple5[`500000`, `1000000`, `2000000`, `4000000`, `7000000`]
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`0`, 
@@ -31,19 +29,16 @@ trait Ops extends StObject {
     typings.screeps.screepsNumbers.`7`, 
     typings.screeps.screepsNumbers.`14`, 
     typings.screeps.screepsNumbers.`22`
-  ] = js.native
+  ]
   
-  var ops: `100` = js.native
+  var ops: `100`
   
-  var range: typings.screeps.screepsNumbers.`3` = js.native
+  var range: typings.screeps.screepsNumbers.`3`
 }
 object Ops {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: `800`,
-    duration: `1000`,
     effect: js.Tuple5[`500000`, `1000000`, `2000000`, `4000000`, `7000000`],
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`0`, 
@@ -51,11 +46,9 @@ object Ops {
       typings.screeps.screepsNumbers.`7`, 
       typings.screeps.screepsNumbers.`14`, 
       typings.screeps.screepsNumbers.`22`
-    ],
-    ops: `100`,
-    range: typings.screeps.screepsNumbers.`3`
+    ]
   ): Ops = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 800, duration = 1000, effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = 100, range = 3)
     __obj.asInstanceOf[Ops]
   }
   

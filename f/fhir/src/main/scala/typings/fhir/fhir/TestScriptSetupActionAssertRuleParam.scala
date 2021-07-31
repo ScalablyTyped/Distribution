@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rule parameter template
   */
-@js.native
-trait TestScriptSetupActionAssertRuleParam extends BackboneElement {
+trait TestScriptSetupActionAssertRuleParam
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Parameter name matching external assert rule parameter
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Parameter value defined either explicitly or dynamically
     */
-  var value: String = js.native
+  var value: String
 }
 object TestScriptSetupActionAssertRuleParam {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyOnlyConfig extends StObject {
   
   /** Whether or not order ID reporting for pixels is enabled. This value cannot be changed once set to `true`. */
-  var pixelOrderIdReportingEnabled: js.UndefOr[Boolean] = js.native
+  var pixelOrderIdReportingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ThirdPartyOnlyConfig {
   

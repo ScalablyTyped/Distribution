@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents ratios used in media operations. */
-@js.native
 trait MediaRatio extends StObject {
   
   /** The denominator of the MediaRatio. */
-  var denominator: Double = js.native
+  var denominator: Double
   
   /** The numerator of the MediaRatio. */
-  var numerator: Double = js.native
+  var numerator: Double
 }
 object MediaRatio {
   

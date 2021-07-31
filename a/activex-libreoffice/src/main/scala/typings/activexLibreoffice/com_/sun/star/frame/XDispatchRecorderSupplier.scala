@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatchRecorder
   * @since OOo 1.1.2
   */
-@js.native
-trait XDispatchRecorderSupplier extends XInterface {
+trait XDispatchRecorderSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * provides access on the recorder of this supplier
@@ -30,7 +30,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * @returns the dispatch recorder of this supplier
     * @see XDispatchRecorder
     */
-  var DispatchRecorder: XDispatchRecorder = js.native
+  var DispatchRecorder: XDispatchRecorder
   
   /**
     * dispatch given URL and record it if recording is enabled
@@ -42,7 +42,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * XRecordableDispatch} it will be used to dispatch and record all necessary parameters of the whole process.
     * @see XRecordableDispatch
     */
-  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Dispatcher: XDispatch): Unit = js.native
+  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Dispatcher: XDispatch): Unit
   
   /**
     * provides access on the recorder of this supplier
@@ -52,7 +52,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * @returns the dispatch recorder of this supplier
     * @see XDispatchRecorder
     */
-  def getDispatchRecorder(): XDispatchRecorder = js.native
+  def getDispatchRecorder(): XDispatchRecorder
   
   /**
     * set a dispatch recorder on this supplier
@@ -61,7 +61,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * Java, Basic or other formats). Changing between local recording inside one {@link Frame} or global one by using more than ones can be forced too.
     * @param Recorder the new recorder for this supplier
     */
-  def setDispatchRecorder(Recorder: XDispatchRecorder): Unit = js.native
+  def setDispatchRecorder(Recorder: XDispatchRecorder): Unit
 }
 object XDispatchRecorderSupplier {
   

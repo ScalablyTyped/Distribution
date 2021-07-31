@@ -11,8 +11,8 @@ Touch, responsive, flickable carousels
 | Full name          | flickity |
 | Keywords           | touch, responsive, flick, slider, carousel, gallery, DOM, browser |
 | # releases         | 3 |
-| # dependents       | 58 |
-| # downloads        | 2624014 |
+| # dependents       | 61 |
+| # downloads        | 2727531 |
 | # stars            | 13 |
 
 ## Links

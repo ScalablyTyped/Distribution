@@ -2,19 +2,17 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var array: js.Array[Double] = js.native
+  var array: js.Array[Double]
   
-  var itemSize: Double = js.native
+  var itemSize: Double
   
-  var normalized: Boolean = js.native
+  var normalized: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Array {
   

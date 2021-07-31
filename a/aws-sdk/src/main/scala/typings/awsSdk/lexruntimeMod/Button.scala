@@ -2,21 +2,19 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
   /**
     * Text that is visible to the user on the button.
     */
-  var text: ButtonTextStringWithLength = js.native
+  var text: ButtonTextStringWithLength
   
   /**
     * The value sent to Amazon Lex when a user chooses the button. For example, consider button text "NYC." When the user chooses the button, the value sent can be "New York City."
     */
-  var value: ButtonValueStringWithLength = js.native
+  var value: ButtonValueStringWithLength
 }
 object Button {
   

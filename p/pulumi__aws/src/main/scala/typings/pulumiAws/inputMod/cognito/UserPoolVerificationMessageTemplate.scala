@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolVerificationMessageTemplate extends StObject {
   
   /**
     * The default email option. Must be either `CONFIRM_WITH_CODE` or `CONFIRM_WITH_LINK`. Defaults to `CONFIRM_WITH_CODE`.
     */
-  var defaultEmailOption: js.UndefOr[Input[String]] = js.native
+  var defaultEmailOption: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
     */
-  var emailMessage: js.UndefOr[Input[String]] = js.native
+  var emailMessage: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The email message template for sending a confirmation link to the user, it must contain the `{##Click Here##}` placeholder.
     */
-  var emailMessageByLink: js.UndefOr[Input[String]] = js.native
+  var emailMessageByLink: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The subject line for the email message template. Conflicts with `emailVerificationSubject` argument.
     */
-  var emailSubject: js.UndefOr[Input[String]] = js.native
+  var emailSubject: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The subject line for the email message template for sending a confirmation link to the user.
     */
-  var emailSubjectByLink: js.UndefOr[Input[String]] = js.native
+  var emailSubjectByLink: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The SMS message template. Must contain the `{####}` placeholder. Conflicts with `smsVerificationMessage` argument.
     */
-  var smsMessage: js.UndefOr[Input[String]] = js.native
+  var smsMessage: js.UndefOr[Input[String]] = js.undefined
 }
 object UserPoolVerificationMessageTemplate {
   

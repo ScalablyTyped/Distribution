@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPhotosResponse extends StObject {
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of photos. The pageSize field in the request determines the number of items returned. */
-  var photos: js.UndefOr[js.Array[Photo]] = js.native
+  var photos: js.UndefOr[js.Array[Photo]] = js.undefined
 }
 object ListPhotosResponse {
   

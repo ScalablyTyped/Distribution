@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInvitationRequest extends StObject {
   
   /**
     * The ID of the invitation sent from the Security Hub master account.
     */
-  var InvitationId: NonEmptyString = js.native
+  var InvitationId: NonEmptyString
   
   /**
     * The account ID of the Security Hub master account that sent the invitation.
     */
-  var MasterId: NonEmptyString = js.native
+  var MasterId: NonEmptyString
 }
 object AcceptInvitationRequest {
   

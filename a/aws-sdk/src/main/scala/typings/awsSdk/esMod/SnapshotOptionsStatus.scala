@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptionsStatus extends StObject {
   
   /**
     * Specifies the daily snapshot options specified for the Elasticsearch domain.
     */
-  var Options: SnapshotOptions = js.native
+  var Options: SnapshotOptions
   
   /**
     * Specifies the status of a daily automated snapshot.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object SnapshotOptionsStatus {
   

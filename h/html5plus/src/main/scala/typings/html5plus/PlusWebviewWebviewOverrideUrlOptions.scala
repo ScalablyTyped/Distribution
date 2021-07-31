@@ -8,7 +8,6 @@ import typings.html5plus.html5plusStrings.redirect
 import typings.html5plus.html5plusStrings.reject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var effect: js.UndefOr[instant | _empty] = js.native
+  var effect: js.UndefOr[instant | _empty] = js.undefined
   
   /**
     * 排除拦截处理请求类型
@@ -52,7 +50,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var exclude: js.UndefOr[none | redirect] = js.native
+  var exclude: js.UndefOr[none | redirect] = js.undefined
   
   /**
     * 区配是否需要处理的URL请求
@@ -61,7 +59,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `match`: js.UndefOr[String] = js.native
+  var `match`: js.UndefOr[String] = js.undefined
   
   /**
     * 拦截模式
@@ -78,7 +76,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var mode: js.UndefOr[allow | reject] = js.native
+  var mode: js.UndefOr[allow | reject] = js.undefined
 }
 object PlusWebviewWebviewOverrideUrlOptions {
   

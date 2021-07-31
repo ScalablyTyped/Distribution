@@ -12,7 +12,7 @@ Streamlabs authentication strategy for Passport.
 | Keywords           | passport, streamlabs, twitchalerts, auth, oauth, oauth2, authentication, identity |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 149 |
+| # downloads        | 389 |
 | # stars            | 0 |
 
 ## Links

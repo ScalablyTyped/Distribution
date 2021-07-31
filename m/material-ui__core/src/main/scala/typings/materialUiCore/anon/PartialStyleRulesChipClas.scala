@@ -3,56 +3,54 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Chip.ChipClassKey>> */
-@js.native
 trait PartialStyleRulesChipClas extends StObject {
   
-  var avatar: js.UndefOr[CSSProperties] = js.native
+  var avatar: js.UndefOr[CSSProperties] = js.undefined
   
-  var avatarChildren: js.UndefOr[CSSProperties] = js.native
+  var avatarChildren: js.UndefOr[CSSProperties] = js.undefined
   
-  var avatarPrimary: js.UndefOr[CSSProperties] = js.native
+  var avatarPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var avatarSecondary: js.UndefOr[CSSProperties] = js.native
+  var avatarSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var clickable: js.UndefOr[CSSProperties] = js.native
+  var clickable: js.UndefOr[CSSProperties] = js.undefined
   
-  var clickablePrimary: js.UndefOr[CSSProperties] = js.native
+  var clickablePrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var clickableSecondary: js.UndefOr[CSSProperties] = js.native
+  var clickableSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deletable: js.UndefOr[CSSProperties] = js.native
+  var deletable: js.UndefOr[CSSProperties] = js.undefined
   
-  var deletablePrimary: js.UndefOr[CSSProperties] = js.native
+  var deletablePrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deletableSecondary: js.UndefOr[CSSProperties] = js.native
+  var deletableSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deleteIcon: js.UndefOr[CSSProperties] = js.native
+  var deleteIcon: js.UndefOr[CSSProperties] = js.undefined
   
-  var deleteIconOutlinedColorPrimary: js.UndefOr[CSSProperties] = js.native
+  var deleteIconOutlinedColorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deleteIconOutlinedColorSecondary: js.UndefOr[CSSProperties] = js.native
+  var deleteIconOutlinedColorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deleteIconPrimary: js.UndefOr[CSSProperties] = js.native
+  var deleteIconPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var deleteIconSecondary: js.UndefOr[CSSProperties] = js.native
+  var deleteIconSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var label: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.undefined
   
-  var outlined: js.UndefOr[CSSProperties] = js.native
+  var outlined: js.UndefOr[CSSProperties] = js.undefined
   
-  var outlinedPrimary: js.UndefOr[CSSProperties] = js.native
+  var outlinedPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var outlinedSecondary: js.UndefOr[CSSProperties] = js.native
+  var outlinedSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesChipClas {
   

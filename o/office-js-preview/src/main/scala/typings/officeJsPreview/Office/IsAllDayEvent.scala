@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,7 +80,7 @@ trait IsAllDayEvent extends StObject {
   def setAsync(isAllDayEvent: Boolean): Unit = js.native
   def setAsync(
     isAllDayEvent: Boolean,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(isAllDayEvent: Boolean, options: AsyncContextOptions): Unit = js.native

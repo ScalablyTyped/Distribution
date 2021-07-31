@@ -2,20 +2,21 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorSequenceEqualMod {
   
-  @JSImport("rxjs/operator/sequenceEqual", "sequenceEqual")
+  @JSImport("rxjs/operator/sequenceEqual", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def sequenceEqual[T](
     compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/sequenceEqual", "sequenceEqual")
-  @js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def sequenceEqual[T](
     compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     comparor: js.Function2[/* a */ T, /* b */ T, Boolean]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any], comparor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

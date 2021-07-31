@@ -6,7 +6,6 @@ import typings.rcDrawer.idrawerproptypesMod.IDrawerChildProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerChildMod {
@@ -18,18 +17,24 @@ object drawerChildMod {
   }
   object default {
     
+    @JSImport("rc-drawer/es/DrawerChild", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
     object defaultProps {
       
-      @JSImport("rc-drawer/es/DrawerChild", "default.defaultProps.switchScrollingEffect")
+      @JSImport("rc-drawer/es/DrawerChild", "default.defaultProps")
       @js.native
-      def switchScrollingEffect(): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def switchScrollingEffect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchScrollingEffect")().asInstanceOf[Unit]
     }
     
     /* static member */
-    @JSImport("rc-drawer/es/DrawerChild", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: IDrawerChildProps, hasPrevProps_self: PrevProps): PrevPropsIDrawerChildProps = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: IDrawerChildProps, hasPrevProps_self: PrevProps): PrevPropsIDrawerChildProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps_self.asInstanceOf[js.Any])).asInstanceOf[PrevPropsIDrawerChildProps]
   }
   
   @js.native
@@ -96,12 +101,11 @@ object drawerChildMod {
     var transitionEnd: js.Any = js.native
   }
   
-  @js.native
   trait IState extends StObject {
     
-    var _self: DrawerChild = js.native
+    var _self: DrawerChild
     
-    var prevProps: js.UndefOr[IDrawerChildProps] = js.native
+    var prevProps: js.UndefOr[IDrawerChildProps] = js.undefined
   }
   object IState {
     

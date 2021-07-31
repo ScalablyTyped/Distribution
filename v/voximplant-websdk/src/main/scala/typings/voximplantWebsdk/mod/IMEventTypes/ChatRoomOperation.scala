@@ -4,29 +4,29 @@ import typings.voximplantWebsdk.mod.ChatRoomOperationType
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when chat room participant was banned/unbanned
   */
-@js.native
-trait ChatRoomOperation extends VoxImplantIMEvent {
+trait ChatRoomOperation
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * Operation type
     */
-  var operation: ChatRoomOperationType = js.native
+  var operation: ChatRoomOperationType
   
   /**
     * Operation result: true/false - success/failure
     */
-  var result: Boolean = js.native
+  var result: Boolean
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomOperation {
   

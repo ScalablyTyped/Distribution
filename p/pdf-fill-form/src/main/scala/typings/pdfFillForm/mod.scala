@@ -6,59 +6,52 @@ import typings.pdfFillForm.anon.Id
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pdf-fill-form", "read")
+  @JSImport("pdf-fill-form", JSImport.Namespace)
   @js.native
-  def read(sourceFile: String): js.Promise[ReadableFields] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pdf-fill-form", "readBuffer")
-  @js.native
-  def readBuffer(sourceBuffer: Buffer): js.Promise[ReadableFields] = js.native
+  @scala.inline
+  def read(sourceFile: String): js.Promise[ReadableFields] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableFields]]
   
-  @JSImport("pdf-fill-form", "readBufferSync")
-  @js.native
-  def readBufferSync(sourceBuffer: Buffer): ReadableFields = js.native
+  @scala.inline
+  def readBuffer(sourceBuffer: Buffer): js.Promise[ReadableFields] = ^.asInstanceOf[js.Dynamic].applyDynamic("readBuffer")(sourceBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableFields]]
   
-  @JSImport("pdf-fill-form", "readSync")
-  @js.native
-  def readSync(sourceFile: String): ReadableFields = js.native
+  @scala.inline
+  def readBufferSync(sourceBuffer: Buffer): ReadableFields = ^.asInstanceOf[js.Dynamic].applyDynamic("readBufferSync")(sourceBuffer.asInstanceOf[js.Any]).asInstanceOf[ReadableFields]
   
-  @JSImport("pdf-fill-form", "write")
-  @js.native
-  def write(sourceFile: String, fields: WritableFields): js.Promise[Buffer] = js.native
-  @JSImport("pdf-fill-form", "write")
-  @js.native
-  def write(sourceFile: String, fields: WritableFields, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def readSync(sourceFile: String): ReadableFields = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[ReadableFields]
   
-  @JSImport("pdf-fill-form", "writeAsync")
-  @js.native
-  def writeAsync(sourceFile: String, fields: WritableFields, options: Options, callback: WriteAsyncCallback): Unit = js.native
+  @scala.inline
+  def write(sourceFile: String, fields: WritableFields): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(sourceFile.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def write(sourceFile: String, fields: WritableFields, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(sourceFile.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("pdf-fill-form", "writeBuffer")
-  @js.native
-  def writeBuffer(sourceBuffer: Buffer, fields: WritableFields): js.Promise[Buffer] = js.native
-  @JSImport("pdf-fill-form", "writeBuffer")
-  @js.native
-  def writeBuffer(sourceBuffer: Buffer, fields: WritableFields, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def writeAsync(sourceFile: String, fields: WritableFields, options: Options, callback: WriteAsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAsync")(sourceFile.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pdf-fill-form", "writeBufferSync")
-  @js.native
-  def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields): Buffer = js.native
-  @JSImport("pdf-fill-form", "writeBufferSync")
-  @js.native
-  def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields, options: Options): Buffer = js.native
+  @scala.inline
+  def writeBuffer(sourceBuffer: Buffer, fields: WritableFields): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBuffer")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def writeBuffer(sourceBuffer: Buffer, fields: WritableFields, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBuffer")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  
+  @scala.inline
+  def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferSync")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields, options: Options): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferSync")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.pdfFillForm.mod.Options because Already inherited */ @js.native
-  trait ImgPdfOptions extends PdfOptions {
+  - typings.pdfFillForm.mod.Options because Already inherited */ trait ImgPdfOptions
+    extends StObject
+       with PdfOptions {
     
-    var endPage: js.UndefOr[Double] = js.native
+    var endPage: js.UndefOr[Double] = js.undefined
     
-    var startPage: js.UndefOr[Double] = js.native
+    var startPage: js.UndefOr[Double] = js.undefined
   }
   object ImgPdfOptions {
     
@@ -105,16 +98,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait PdfOptions extends Options {
+  trait PdfOptions
+    extends StObject
+       with Options {
     
-    var antialias: js.UndefOr[Boolean] = js.native
+    var antialias: js.UndefOr[Boolean] = js.undefined
     
-    var cores: js.UndefOr[Double] = js.native
+    var cores: js.UndefOr[Double] = js.undefined
     
-    var save: js.UndefOr[String] = js.native
+    var save: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
   }
   object PdfOptions {
     

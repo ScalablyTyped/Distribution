@@ -7,7 +7,6 @@ import typings.jsYaml.jsYamlStrings.sequence
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,30 +59,30 @@ object mod {
   
   @JSImport("js-yaml", "Schema")
   @js.native
-  class Schema protected () extends SchemaDefinition {
+  class Schema protected ()
+    extends StObject
+       with SchemaDefinition {
     def this(definition: SchemaDefinition) = this()
   }
   /* static members */
   object Schema {
     
-    @JSImport("js-yaml", "Schema.create")
+    @JSImport("js-yaml", "Schema")
     @js.native
-    def create(schemas: js.Array[Schema], types: js.Array[Type]): Schema = js.native
-    @JSImport("js-yaml", "Schema.create")
-    @js.native
-    def create(schemas: js.Array[Schema], types: Type): Schema = js.native
-    @JSImport("js-yaml", "Schema.create")
-    @js.native
-    def create(schemas: Schema, types: js.Array[Type]): Schema = js.native
-    @JSImport("js-yaml", "Schema.create")
-    @js.native
-    def create(schemas: Schema, types: Type): Schema = js.native
-    @JSImport("js-yaml", "Schema.create")
-    @js.native
-    def create(types: js.Array[Type]): Schema = js.native
-    @JSImport("js-yaml", "Schema.create")
-    @js.native
-    def create(types: Type): Schema = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(schemas: js.Array[Schema], types: js.Array[Type]): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
+    @scala.inline
+    def create(schemas: js.Array[Schema], types: Type): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
+    @scala.inline
+    def create(schemas: Schema, types: js.Array[Type]): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
+    @scala.inline
+    def create(schemas: Schema, types: Type): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
+    @scala.inline
+    def create(types: js.Array[Type]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(types.asInstanceOf[js.Any]).asInstanceOf[Schema]
+    @scala.inline
+    def create(types: Type): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(types.asInstanceOf[js.Any]).asInstanceOf[Schema]
   }
   
   @JSImport("js-yaml", "Type")
@@ -102,7 +101,7 @@ object mod {
     
     var predicate: (js.Function1[/* data */ js.Object, Boolean]) | Null = js.native
     
-    var represent: (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]]) | Null = js.native
+    var represent: (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]]) | Null = js.native
     
     def resolve(data: js.Any): Boolean = js.native
     
@@ -111,112 +110,101 @@ object mod {
   
   @JSImport("js-yaml", "YAMLException")
   @js.native
-  class YAMLException () extends Error {
+  class YAMLException ()
+    extends StObject
+       with Error {
     def this(reason: js.Any) = this()
-    def this(reason: js.UndefOr[scala.Nothing], mark: js.Any) = this()
     def this(reason: js.Any, mark: js.Any) = this()
+    def this(reason: Unit, mark: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     def toString(compact: Boolean): String = js.native
   }
   
-  @JSImport("js-yaml", "dump")
-  @js.native
-  def dump(obj: js.Any): String = js.native
-  @JSImport("js-yaml", "dump")
-  @js.native
-  def dump(obj: js.Any, opts: DumpOptions): String = js.native
+  @scala.inline
+  def dump(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def dump(obj: js.Any, opts: DumpOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("js-yaml", "load")
-  @js.native
-  def load(str: String): js.Any = js.native
-  @JSImport("js-yaml", "load")
-  @js.native
-  def load(str: String, opts: LoadOptions): js.Any = js.native
+  @scala.inline
+  def load(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def load(str: String, opts: LoadOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("js-yaml", "loadAll")
-  @js.native
-  def loadAll(str: String): js.Array[_] = js.native
-  @JSImport("js-yaml", "loadAll")
-  @js.native
-  def loadAll(str: String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
-  @JSImport("js-yaml", "loadAll")
-  @js.native
-  def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = js.native
-  @JSImport("js-yaml", "loadAll")
-  @js.native
-  def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = js.native
-  @JSImport("js-yaml", "loadAll")
-  @js.native
-  def loadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[_] = js.native
+  @scala.inline
+  def loadAll(str: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def loadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def loadAll(str: String, iterator: Unit, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("js-yaml", "safeDump")
-  @js.native
-  def safeDump(obj: js.Any): String = js.native
-  @JSImport("js-yaml", "safeDump")
-  @js.native
-  def safeDump(obj: js.Any, opts: DumpOptions): String = js.native
+  @scala.inline
+  def safeDump(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDump")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def safeDump(obj: js.Any, opts: DumpOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeDump")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("js-yaml", "safeLoad")
-  @js.native
-  def safeLoad(str: String): js.UndefOr[String | js.Object] = js.native
-  @JSImport("js-yaml", "safeLoad")
-  @js.native
-  def safeLoad(str: String, opts: LoadOptions): js.UndefOr[String | js.Object] = js.native
+  @scala.inline
+  def safeLoad(str: String): js.UndefOr[String | js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoad")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | js.Object]]
+  @scala.inline
+  def safeLoad(str: String, opts: LoadOptions): js.UndefOr[String | js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoad")(str.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | js.Object]]
   
-  @JSImport("js-yaml", "safeLoadAll")
-  @js.native
-  def safeLoadAll(str: String): js.Array[_] = js.native
-  @JSImport("js-yaml", "safeLoadAll")
-  @js.native
-  def safeLoadAll(str: String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
-  @JSImport("js-yaml", "safeLoadAll")
-  @js.native
-  def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = js.native
-  @JSImport("js-yaml", "safeLoadAll")
-  @js.native
-  def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = js.native
-  @JSImport("js-yaml", "safeLoadAll")
-  @js.native
-  def safeLoadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[_] = js.native
+  @scala.inline
+  def safeLoadAll(str: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def safeLoadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def safeLoadAll(str: String, iterator: Unit, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
   trait DumpOptions extends StObject {
     
     /**
       * if true flow sequences will be condensed, omitting the space between `key: value` or `a, b`. Eg. `'[a,b]'` or `{a:{b:c}}`.
       * Can be useful when using yaml for pretty URL query params as spaces are %-encoded. (default: false).
       */
-    var condenseFlow: js.UndefOr[Boolean] = js.native
+    var condenseFlow: js.UndefOr[Boolean] = js.undefined
     
     /** specifies level of nesting, when to switch from block to flow style for collections. -1 means block style everwhere */
-    var flowLevel: js.UndefOr[Double] = js.native
+    var flowLevel: js.UndefOr[Double] = js.undefined
     
     /** indentation width to use (in spaces). */
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
     /** set max line width. (default: 80) */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** when true, will not add an indentation level to array elements */
-    var noArrayIndent: js.UndefOr[Boolean] = js.native
+    var noArrayIndent: js.UndefOr[Boolean] = js.undefined
     
     /** if true don't try to be compatible with older yaml versions. Currently: don't quote "yes", "no" and so on, as required for YAML 1.1 (default: false) */
-    var noCompatMode: js.UndefOr[Boolean] = js.native
+    var noCompatMode: js.UndefOr[Boolean] = js.undefined
     
     /** if true, don't convert duplicate objects into references (default: false) */
-    var noRefs: js.UndefOr[Boolean] = js.native
+    var noRefs: js.UndefOr[Boolean] = js.undefined
     
     /** specifies a schema to use. */
-    var schema: js.UndefOr[SchemaDefinition] = js.native
+    var schema: js.UndefOr[SchemaDefinition] = js.undefined
     
     /** do not throw on invalid types (like function in the safe schema) and skip pairs and single values with such types. */
-    var skipInvalid: js.UndefOr[Boolean] = js.native
+    var skipInvalid: js.UndefOr[Boolean] = js.undefined
     
     /** if true, sort keys when dumping YAML. If a function, use the function to sort the keys. (default: false) */
-    var sortKeys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.native
+    var sortKeys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
     
     /** Each tag may have own set of styles.    - "tag" => "style" map. */
-    var styles: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object DumpOptions {
     
@@ -314,25 +302,24 @@ object mod {
     def open: typings.jsYaml.jsYamlStrings.open = "open".asInstanceOf[typings.jsYaml.jsYamlStrings.open]
   }
   
-  @js.native
   trait LoadOptions extends StObject {
     
     /** string to be used as a file path in error/warning messages. */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** compatibility with JSON.parse behaviour. */
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
     /** listener for parse events */
     var listener: js.UndefOr[
         js.ThisFunction2[/* this */ State, /* eventType */ EventType, /* state */ State, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** function to call on warning messages. */
-    var onWarning: js.UndefOr[js.ThisFunction1[/* this */ Null, /* e */ YAMLException, Unit]] = js.native
+    var onWarning: js.UndefOr[js.ThisFunction1[/* this */ Null, /* e */ YAMLException, Unit]] = js.undefined
     
     /** specifies a schema to use. */
-    var schema: js.UndefOr[SchemaDefinition] = js.native
+    var schema: js.UndefOr[SchemaDefinition] = js.undefined
   }
   object LoadOptions {
     
@@ -377,14 +364,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SchemaDefinition extends StObject {
     
-    var explicit: js.UndefOr[js.Array[Type]] = js.native
+    var explicit: js.UndefOr[js.Array[Type]] = js.undefined
     
-    var `implicit`: js.UndefOr[js.Array[_]] = js.native
+    var `implicit`: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var include: js.UndefOr[js.Array[Schema]] = js.native
+    var include: js.UndefOr[js.Array[Schema]] = js.undefined
   }
   object SchemaDefinition {
     
@@ -407,7 +393,7 @@ object mod {
       def setExplicitVarargs(value: Type*): Self = StObject.set(x, "explicit", js.Array(value :_*))
       
       @scala.inline
-      def setImplicit(value: js.Array[_]): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+      def setImplicit(value: js.Array[js.Any]): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
@@ -426,38 +412,37 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var checkLineBreaks: Boolean = js.native
+    var checkLineBreaks: Boolean
     
-    var filename: String | Null = js.native
+    var filename: String | Null
     
-    var implicitTypes: js.Array[Type] = js.native
+    var implicitTypes: js.Array[Type]
     
-    var input: String = js.native
+    var input: String
     
-    var json: Boolean = js.native
+    var json: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var length: Double = js.native
+    var length: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var lineIndent: Double = js.native
+    var lineIndent: Double
     
-    var lineStart: Double = js.native
+    var lineStart: Double
     
-    def onWarning(e: YAMLException): Unit = js.native
+    def onWarning(e: YAMLException): Unit
     
-    var position: Double = js.native
+    var position: Double
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var schema: SchemaDefinition = js.native
+    var schema: SchemaDefinition
     
-    var version: Null | Double = js.native
+    var version: Null | Double
   }
   object State {
     
@@ -477,7 +462,7 @@ object mod {
       result: js.Any,
       schema: SchemaDefinition
     ): State = {
-      val __obj = js.Dynamic.literal(checkLineBreaks = checkLineBreaks.asInstanceOf[js.Any], implicitTypes = implicitTypes.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineIndent = lineIndent.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], onWarning = js.Any.fromFunction1(onWarning), position = position.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(checkLineBreaks = checkLineBreaks.asInstanceOf[js.Any], implicitTypes = implicitTypes.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineIndent = lineIndent.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], onWarning = js.Any.fromFunction1(onWarning), position = position.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], filename = null, version = null)
       __obj.asInstanceOf[State]
     }
     
@@ -540,26 +525,25 @@ object mod {
     }
   }
   
-  @js.native
   trait TypeConstructorOptions extends StObject {
     
-    var construct: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var construct: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
-    var defaultStyle: js.UndefOr[String] = js.native
+    var defaultStyle: js.UndefOr[String] = js.undefined
     
-    var instanceOf: js.UndefOr[js.Object] = js.native
+    var instanceOf: js.UndefOr[js.Object] = js.undefined
     
-    var kind: js.UndefOr[sequence | scalar | mapping] = js.native
+    var kind: js.UndefOr[sequence | scalar | mapping] = js.undefined
     
-    var predicate: js.UndefOr[js.Function1[/* data */ js.Object, Boolean]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* data */ js.Object, Boolean]] = js.undefined
     
     var represent: js.UndefOr[
-        (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]])
-      ] = js.native
+        (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]])
+      ] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.native
+    var resolve: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.undefined
     
-    var styleAliases: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var styleAliases: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object TypeConstructorOptions {
     
@@ -573,7 +557,7 @@ object mod {
     implicit class TypeConstructorOptionsMutableBuilder[Self <: TypeConstructorOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setConstruct(value: /* data */ js.Any => _): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
+      def setConstruct(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
       
       @scala.inline
       def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
@@ -604,11 +588,11 @@ object mod {
       
       @scala.inline
       def setRepresent(
-        value: (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]])
+        value: (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]])
       ): Self = StObject.set(x, "represent", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRepresentFunction1(value: /* data */ js.Object => _): Self = StObject.set(x, "represent", js.Any.fromFunction1(value))
+      def setRepresentFunction1(value: /* data */ js.Object => js.Any): Self = StObject.set(x, "represent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRepresentUndefined: Self = StObject.set(x, "represent", js.undefined)

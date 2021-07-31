@@ -3,21 +3,19 @@ package typings.pgPromise.mod
 import typings.pgPromise.pgPromiseStrings.after
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQueryFileOptions extends StObject {
   
-  var compress: js.UndefOr[Boolean] = js.native
+  var compress: js.UndefOr[Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var minify: js.UndefOr[Boolean | after] = js.native
+  var minify: js.UndefOr[Boolean | after] = js.undefined
   
-  var noWarnings: js.UndefOr[Boolean] = js.native
+  var noWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object IQueryFileOptions {
   

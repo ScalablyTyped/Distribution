@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to a read-write layer of configuration data for a given component and entity.
   * @since OOo 1.1.2
   */
-@js.native
-trait XUpdatableLayer extends XLayer {
+trait XUpdatableLayer
+  extends StObject
+     with XLayer {
   
   /**
     * Replaces the current layer with the layer given as input parameter.
@@ -23,7 +23,7 @@ trait XUpdatableLayer extends XLayer {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs during the replacement.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the layer contains invalid data.
     */
-  def replaceWith(aNewLayer: XLayer): Unit = js.native
+  def replaceWith(aNewLayer: XLayer): Unit
 }
 object XUpdatableLayer {
   

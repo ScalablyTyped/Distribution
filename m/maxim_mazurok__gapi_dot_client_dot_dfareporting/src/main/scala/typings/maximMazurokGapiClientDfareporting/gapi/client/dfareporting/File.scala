@@ -3,41 +3,39 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 import typings.maximMazurokGapiClientDfareporting.anon.ApiUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /** The date range for which the file has report data. The date range will always be the absolute date range for which the report is run. */
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The filename of the file. */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** The output format of the report. Only available once the file is available. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** The unique ID of this report file. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#file". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The timestamp in milliseconds since epoch when this file was last modified. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /** The ID of the report this file was generated from. */
-  var reportId: js.UndefOr[String] = js.native
+  var reportId: js.UndefOr[String] = js.undefined
   
   /** The status of the report file. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The URLs where the completed report file can be downloaded. */
-  var urls: js.UndefOr[ApiUrl] = js.native
+  var urls: js.UndefOr[ApiUrl] = js.undefined
 }
 object File {
   

@@ -2,22 +2,20 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountRepositoryCurrentUserResponseMod {
   
-  @js.native
   trait AccountRepositoryCurrentUserResponseBiographyWithEntities extends StObject {
     
-    var entities: js.Array[_] = js.native
+    var entities: js.Array[js.Any]
     
-    var raw_text: String = js.native
+    var raw_text: String
   }
   object AccountRepositoryCurrentUserResponseBiographyWithEntities {
     
     @scala.inline
-    def apply(entities: js.Array[_], raw_text: String): AccountRepositoryCurrentUserResponseBiographyWithEntities = {
+    def apply(entities: js.Array[js.Any], raw_text: String): AccountRepositoryCurrentUserResponseBiographyWithEntities = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseBiographyWithEntities]
     }
@@ -26,7 +24,7 @@ object accountRepositoryCurrentUserResponseMod {
     implicit class AccountRepositoryCurrentUserResponseBiographyWithEntitiesMutableBuilder[Self <: AccountRepositoryCurrentUserResponseBiographyWithEntities] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEntities(value: js.Array[_]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
@@ -36,14 +34,13 @@ object accountRepositoryCurrentUserResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo {
     
@@ -67,14 +64,13 @@ object accountRepositoryCurrentUserResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem {
     
@@ -98,12 +94,11 @@ object accountRepositoryCurrentUserResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryCurrentUserResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var user: AccountRepositoryCurrentUserResponseUser = js.native
+    var user: AccountRepositoryCurrentUserResponseUser
   }
   object AccountRepositoryCurrentUserResponseRootObject {
     
@@ -124,56 +119,55 @@ object accountRepositoryCurrentUserResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryCurrentUserResponseUser extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var biography: String = js.native
+    var biography: String
     
-    var biography_with_entities: AccountRepositoryCurrentUserResponseBiographyWithEntities = js.native
+    var biography_with_entities: AccountRepositoryCurrentUserResponseBiographyWithEntities
     
-    var birthday: Null = js.native
+    var birthday: Null
     
-    var can_link_entities_in_bio: Boolean = js.native
+    var can_link_entities_in_bio: Boolean
     
-    var country_code: Double = js.native
+    var country_code: Double
     
-    var email: String = js.native
+    var email: String
     
-    var external_url: String = js.native
+    var external_url: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var gender: Double = js.native
+    var gender: Double
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var has_biography_translation: Boolean = js.native
+    var has_biography_translation: Boolean
     
-    var hd_profile_pic_url_info: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo = js.native
+    var hd_profile_pic_url_info: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo
     
-    var hd_profile_pic_versions: js.Array[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem] = js.native
+    var hd_profile_pic_versions: js.Array[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem]
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var national_number: Double = js.native
+    var national_number: Double
     
-    var phone_number: String = js.native
+    var phone_number: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var show_conversion_edit_entry: Boolean = js.native
+    var show_conversion_edit_entry: Boolean
     
-    var username: String = js.native
+    var username: String
   }
   object AccountRepositoryCurrentUserResponseUser {
     

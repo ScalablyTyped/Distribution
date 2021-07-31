@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberSnippet extends StObject {
   
   /** The id of the channel that's offering memberships. */
-  var creatorChannelId: js.UndefOr[String] = js.native
+  var creatorChannelId: js.UndefOr[String] = js.undefined
   
   /** Details about the member. */
-  var memberDetails: js.UndefOr[ChannelProfileDetails] = js.native
+  var memberDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
   
   /** Details about the user's membership. */
-  var membershipsDetails: js.UndefOr[MembershipsDetails] = js.native
+  var membershipsDetails: js.UndefOr[MembershipsDetails] = js.undefined
 }
 object MemberSnippet {
   

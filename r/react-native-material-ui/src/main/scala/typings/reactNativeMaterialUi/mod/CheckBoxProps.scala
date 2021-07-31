@@ -3,27 +3,25 @@ package typings.reactNativeMaterialUi.mod
 import typings.reactNativeMaterialUi.anon.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckBoxProps extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var checkedIcon: js.UndefOr[String] = js.native
+  var checkedIcon: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  def onCheck(checked: Boolean): Unit = js.native
+  def onCheck(checked: Boolean): Unit
   
-  var style: js.UndefOr[Label] = js.native
+  var style: js.UndefOr[Label] = js.undefined
   
-  var uncheckedIcon: js.UndefOr[String] = js.native
+  var uncheckedIcon: js.UndefOr[String] = js.undefined
   
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object CheckBoxProps {
   

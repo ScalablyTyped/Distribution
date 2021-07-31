@@ -7,21 +7,20 @@ import typings.storybookAddons.storybookAddonsStrings.none_
 import typings.storybookAddons.storybookAddonsStrings.padded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var docsOnly: js.UndefOr[Boolean] = js.native
+  var docsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** The layout property defines basic styles added to the preview body where the story is rendered. If you pass 'none', no styles are applied. */
-  var layout: js.UndefOr[centered | fullscreen | padded | none_] = js.native
+  var layout: js.UndefOr[centered | fullscreen | padded | none_] = js.undefined
   
-  var options: js.UndefOr[OptionsParameter] = js.native
+  var options: js.UndefOr[OptionsParameter] = js.undefined
 }
 object Parameters {
   

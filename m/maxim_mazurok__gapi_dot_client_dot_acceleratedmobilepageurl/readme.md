@@ -10,9 +10,9 @@ TypeScript typings for Accelerated Mobile Pages (AMP) URL API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.acceleratedmobilepageurl |
 | Keywords           | - |
-| # releases         | 40 |
+| # releases         | 44 |
 | # dependents       | 1 |
-| # downloads        | 2557 |
+| # downloads        | 2882 |
 | # stars            | 0 |
 
 ## Links

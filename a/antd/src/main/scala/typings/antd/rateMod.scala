@@ -7,43 +7,41 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rateMod extends Shortcut {
   
   @JSImport("antd/lib/rate", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[RateProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[RateProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
   trait RateProps extends StObject {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var allowHalf: js.UndefOr[Boolean] = js.native
+    var allowHalf: js.UndefOr[Boolean] = js.undefined
     
-    var character: js.UndefOr[ReactNode] = js.native
+    var character: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tooltips: js.UndefOr[js.Array[String]] = js.native
+    var tooltips: js.UndefOr[js.Array[String]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object RateProps {
     
@@ -139,8 +137,8 @@ object rateMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[RateProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[RateProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `rateMod.foo` */
-  override def _to: ForwardRefExoticComponent[RateProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[RateProps & RefAttributes[js.Any]] = default
 }

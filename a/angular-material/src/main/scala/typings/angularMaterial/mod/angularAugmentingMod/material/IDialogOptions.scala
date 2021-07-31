@@ -11,76 +11,74 @@ import typings.std.Element
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDialogOptions extends StObject {
   
-  var autoWrap: js.UndefOr[Boolean] = js.native
+  var autoWrap: js.UndefOr[Boolean] = js.undefined
   
-  var bindToController: js.UndefOr[Boolean] = js.native
-  
-  // default: true
-  var clickOutsideToClose: js.UndefOr[Boolean] = js.native
-  
-  var closeTo: js.UndefOr[js.Any] = js.native
-  
-  var contentElement: js.UndefOr[String | Element] = js.native
+  var bindToController: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
+  var clickOutsideToClose: js.UndefOr[Boolean] = js.undefined
   
-  var controllerAs: js.UndefOr[String] = js.native
+  var closeTo: js.UndefOr[js.Any] = js.undefined
+  
+  var contentElement: js.UndefOr[String | Element] = js.undefined
+  
+  // default: true
+  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
+  
+  var controllerAs: js.UndefOr[String] = js.undefined
   
   // default: false
-  var disableParentScroll: js.UndefOr[Boolean] = js.native
+  var disableParentScroll: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var escapeToClose: js.UndefOr[Boolean] = js.native
+  var escapeToClose: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var focusOnOpen: js.UndefOr[Boolean] = js.native
+  var focusOnOpen: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var hasBackdrop: js.UndefOr[Boolean] = js.native
+  var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.undefined
   
-  var onRemoving: js.UndefOr[js.Function2[/* element */ JQuery, /* removePromise */ IPromise[_], Unit]] = js.native
+  var onRemoving: js.UndefOr[js.Function2[/* element */ JQuery, /* removePromise */ IPromise[js.Any], Unit]] = js.undefined
   
   // default: root node
-  var onShowing: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.native
+  var onShowing: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.undefined
   
-  var openFrom: js.UndefOr[js.Any] = js.native
+  var openFrom: js.UndefOr[js.Any] = js.undefined
   
-  var parent: js.UndefOr[String | Element | JQuery] = js.native
+  var parent: js.UndefOr[String | Element | JQuery] = js.undefined
   
   // default: new child scope
-  var preserveScope: js.UndefOr[Boolean] = js.native
+  var preserveScope: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var resolve: js.UndefOr[ResolveObject] = js.native
+  var resolve: js.UndefOr[ResolveObject] = js.undefined
   
-  var scope: js.UndefOr[IScope] = js.native
+  var scope: js.UndefOr[IScope] = js.undefined
   
-  var skipHide: js.UndefOr[Boolean] = js.native
+  var skipHide: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var targetEvent: js.UndefOr[MouseEvent] = js.native
+  var targetEvent: js.UndefOr[MouseEvent] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
   // default: false
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IDialogOptions {
   
@@ -190,7 +188,7 @@ object IDialogOptions {
     def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def setOnRemoving(value: (/* element */ JQuery, /* removePromise */ IPromise[_]) => Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction2(value))
+    def setOnRemoving(value: (/* element */ JQuery, /* removePromise */ IPromise[js.Any]) => Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)

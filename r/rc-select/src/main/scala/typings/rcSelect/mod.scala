@@ -4,7 +4,6 @@ import typings.rcSelect.optGroupMod.OptionGroupFC
 import typings.rcSelect.optionMod.OptionFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

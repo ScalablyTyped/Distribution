@@ -9,46 +9,41 @@ import typings.ionic.errorsMod.FatalException
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaResMod {
+  
+  @JSImport("ionic/lib/cordova-res", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/cordova-res", "SUPPORTED_PLATFORMS")
   @js.native
   val SUPPORTED_PLATFORMS: js.Array[String] = js.native
   
-  @JSImport("ionic/lib/cordova-res", "checkCordovaRes")
-  @js.native
-  def checkCordovaRes(hasConfig: CheckCordovaResDeps): js.Promise[Unit] = js.native
+  @scala.inline
+  def checkCordovaRes(hasConfig: CheckCordovaResDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCordovaRes")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("ionic/lib/cordova-res", "createCordovaResArgs")
-  @js.native
-  def createCordovaResArgs(hasPlatform: CordovaResSchema, options: CommandLineOptions): js.Array[String] = js.native
+  @scala.inline
+  def createCordovaResArgs(hasPlatform: CordovaResSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResArgs")(hasPlatform.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("ionic/lib/cordova-res", "createCordovaResNotFoundError")
-  @js.native
-  def createCordovaResNotFoundError(npmClient: NpmClient): js.Promise[FatalException] = js.native
+  @scala.inline
+  def createCordovaResNotFoundError(npmClient: NpmClient): js.Promise[FatalException] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResNotFoundError")(npmClient.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FatalException]]
   
-  @JSImport("ionic/lib/cordova-res", "createCordovaResNotFoundMessage")
-  @js.native
-  def createCordovaResNotFoundMessage(npmClient: NpmClient): js.Promise[String] = js.native
+  @scala.inline
+  def createCordovaResNotFoundMessage(npmClient: NpmClient): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResNotFoundMessage")(npmClient.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("ionic/lib/cordova-res", "findCordovaRes")
-  @js.native
-  def findCordovaRes(): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def findCordovaRes(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCordovaRes")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @JSImport("ionic/lib/cordova-res", "runCordovaRes")
-  @js.native
-  def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("ionic/lib/cordova-res", "runCordovaRes")
-  @js.native
-  def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait CheckCordovaResDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
   }
   object CheckCordovaResDeps {
     
@@ -66,10 +61,9 @@ object cordovaResMod {
     }
   }
   
-  @js.native
   trait CordovaResSchema extends StObject {
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
   }
   object CordovaResSchema {
     
@@ -90,14 +84,13 @@ object cordovaResMod {
     }
   }
   
-  @js.native
   trait RunCordovaResDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val shell: IShell = js.native
+    val shell: IShell
   }
   object RunCordovaResDeps {
     

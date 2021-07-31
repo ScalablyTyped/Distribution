@@ -12,22 +12,23 @@ import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.dropZoneMod.DropZone.HoverPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaPlaceholderMod {
   
   object default {
     
+    @scala.inline
+    def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor/components/media-placeholder", JSImport.Default)
     @js.native
-    def apply[T /* <: Boolean */](props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object MediaPlaceholder {
     
     /* Inlined parent std.Pick<@wordpress/components.@wordpress/components.DropZone.Props, 'onHTMLDrop'> */
-    @js.native
     trait Props[T /* <: Boolean */] extends StObject {
       
       /**
@@ -40,7 +41,7 @@ object mediaPlaceholderMod {
         *
         * See: {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#Unique_file_type_specifiers }
         */
-      var accept: js.UndefOr[String] = js.native
+      var accept: js.UndefOr[String] = js.undefined
       
       /**
         * If `true`, and if  `gallery === true` the gallery media modal opens directly in the media
@@ -51,7 +52,7 @@ object mediaPlaceholderMod {
         * on the placeholder the files replace the existing files list.
         * @defaultValue false
         */
-      var addToGallery: js.UndefOr[Boolean] = js.native
+      var addToGallery: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Array with the types of the media to upload/select from the media library.
@@ -65,19 +66,19 @@ object mediaPlaceholderMod {
         * affects the behavior of `MediaUpload` while `accept` affects the behavior
         * `FormFileUpload`.
         */
-      var allowedTypes: js.UndefOr[js.Array[String]] = js.native
+      var allowedTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /** Undocumented. */
-      var dropZoneUIOnly: js.UndefOr[Boolean] = js.native
+      var dropZoneUIOnly: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Icon to display left of the title.
         */
-      var icon: js.UndefOr[Icon | Element] = js.native
+      var icon: js.UndefOr[Icon | Element] = js.undefined
       
       /**
         * If `true`, the property changes the look of the placeholder to be adequate to scenarios
@@ -88,41 +89,41 @@ object mediaPlaceholderMod {
         *
         * @defaultValue false
         */
-      var isAppender: js.UndefOr[Boolean] = js.native
+      var isAppender: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An object that can contain a `title` and `instructions` properties. These properties are
         * passed to the placeholder component as `label` and `instructions` respectively.
         */
-      var labels: js.UndefOr[Instructions] = js.native
+      var labels: js.UndefOr[Instructions] = js.undefined
       
       /** Undocumented. */
-      var mediaPreview: js.UndefOr[Element] = js.native
+      var mediaPreview: js.UndefOr[Element] = js.undefined
       
-      var multiple: js.UndefOr[T] = js.native
+      var multiple: js.UndefOr[T] = js.undefined
       
       /**
         * Optionally pass in `noticeUI` obtained from `withNotices` HOC.
         */
-      var notices: js.UndefOr[Element] = js.native
+      var notices: js.UndefOr[Element] = js.undefined
       
-      var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+      var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+      var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
       
       /**
         * Callback called when an upload error happens.
         */
-      var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+      var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
       
-      var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.native
+      var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.undefined
       
-      var onSelectURL: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.native
+      var onSelectURL: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.undefined
       
       @JSName("onSelect")
-      def onSelect_true(value: Dictk | js.Array[Dictk]): Unit = js.native
+      def onSelect_true(value: Dictk | js.Array[Dictk]): Unit
       
-      var value: js.UndefOr[Double | js.Array[Double]] = js.native
+      var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
     }
     object Props {
       
@@ -133,7 +134,7 @@ object mediaPlaceholderMod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], T /* <: Boolean */] (val x: Self with Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Boolean */] (val x: Self & Props[T]) extends AnyVal {
         
         @scala.inline
         def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])

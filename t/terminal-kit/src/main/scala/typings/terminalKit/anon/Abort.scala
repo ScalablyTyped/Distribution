@@ -2,15 +2,13 @@ package typings.terminalKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Abort extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  var promise: js.UndefOr[js.Promise[Boolean]] = js.native
+  var promise: js.UndefOr[js.Promise[Boolean]] = js.undefined
 }
 object Abort {
   

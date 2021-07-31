@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVirtualNodeOutput extends StObject {
   
   /**
     * The virtual node that was deleted.
     */
-  var virtualNode: VirtualNodeData = js.native
+  var virtualNode: VirtualNodeData
 }
 object DeleteVirtualNodeOutput {
   

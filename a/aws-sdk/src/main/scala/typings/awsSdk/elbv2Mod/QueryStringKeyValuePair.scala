@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryStringKeyValuePair extends StObject {
   
   /**
     * The key. You can omit the key.
     */
-  var Key: js.UndefOr[StringValue] = js.native
+  var Key: js.UndefOr[StringValue] = js.undefined
   
   /**
     * The value.
     */
-  var Value: js.UndefOr[StringValue] = js.native
+  var Value: js.UndefOr[StringValue] = js.undefined
 }
 object QueryStringKeyValuePair {
   

@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Abandoned extends StObject {
   
-  var abandoned: scala.Double = js.native
+  var abandoned: scala.Double
   
-  var canceled: scala.Double = js.native
+  var canceled: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var skipped: scala.Double = js.native
+  var skipped: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
   
-  var succeededWithIssues: scala.Double = js.native
+  var succeededWithIssues: scala.Double
 }
 object Abandoned {
   

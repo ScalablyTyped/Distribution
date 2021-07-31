@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It is derived from {@link com.sun.star.i18n.XInputSequenceChecker} and provides additional functionality to correct input sequence.
   * @since OOo 2.0.1
   */
-@js.native
-trait XExtendedInputSequenceChecker extends XInputSequenceChecker {
+trait XExtendedInputSequenceChecker
+  extends StObject
+     with XInputSequenceChecker {
   
   /**
     * @param aText Text to be checked and corrected.
@@ -22,7 +22,7 @@ trait XExtendedInputSequenceChecker extends XInputSequenceChecker {
     * @param nInputCheckMode One of {@link InputSequenceCheckMode} constants.
     * @returns Next nPos, or length of aText if nothing is corrected.
     */
-  def correctInputSequence(aText: js.Array[String], nPos: Double, cInputChar: String, nInputCheckMode: Double): Double = js.native
+  def correctInputSequence(aText: js.Array[String], nPos: Double, cInputChar: String, nInputCheckMode: Double): Double
 }
 object XExtendedInputSequenceChecker {
   

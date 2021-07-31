@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageCriteria extends StObject {
   
   /**
     * The account IDs to aggregate usage statistics from.
     */
-  var AccountIds: js.UndefOr[typings.awsSdk.guarddutyMod.AccountIds] = js.native
+  var AccountIds: js.UndefOr[typings.awsSdk.guarddutyMod.AccountIds] = js.undefined
   
   /**
     * The data sources to aggregate usage statistics from.
     */
-  var DataSources: DataSourceList = js.native
+  var DataSources: DataSourceList
   
   /**
     * The resources to aggregate usage statistics from. Only accepts exact resource names.
     */
-  var Resources: js.UndefOr[ResourceList] = js.native
+  var Resources: js.UndefOr[ResourceList] = js.undefined
 }
 object UsageCriteria {
   

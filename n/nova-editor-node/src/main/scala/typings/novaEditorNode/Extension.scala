@@ -2,26 +2,24 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/extension/
-@js.native
 trait Extension extends StObject {
   
-  val globalStoragePath: String = js.native
+  val globalStoragePath: String
   
-  val identifier: String = js.native
+  val identifier: String
   
-  val name: String = js.native
+  val name: String
   
-  val path: String = js.native
+  val path: String
   
-  val vendor: String = js.native
+  val vendor: String
   
-  val version: String = js.native
+  val version: String
   
-  val workspaceStoragePath: String = js.native
+  val workspaceStoragePath: String
 }
 object Extension {
   

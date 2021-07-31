@@ -3,11 +3,9 @@ package typings.victory.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Common labable interface
-@js.native
 trait VictoryLabableProps extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait VictoryLabableProps extends StObject {
     * data point, they should be created by composing VictoryArea with VictoryScatter
     * @default <VictoryLabel/>
     */
-  var labelComponent: js.UndefOr[ReactElement] = js.native
+  var labelComponent: js.UndefOr[ReactElement] = js.undefined
 }
 object VictoryLabableProps {
   

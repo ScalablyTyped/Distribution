@@ -2,15 +2,15 @@ package typings.reactBootstrapTypeahead.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuItemProps[T /* <: TypeaheadModel */] extends BaseMenuItemProps {
+trait MenuItemProps[T /* <: TypeaheadModel */]
+  extends StObject
+     with BaseMenuItemProps {
   
-  var option: T = js.native
+  var option: T
   
-  var position: Double = js.native
+  var position: Double
 }
 object MenuItemProps {
   
@@ -21,7 +21,7 @@ object MenuItemProps {
   }
   
   @scala.inline
-  implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps[_], T /* <: TypeaheadModel */] (val x: Self with MenuItemProps[T]) extends AnyVal {
+  implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps[?], T /* <: TypeaheadModel */] (val x: Self & MenuItemProps[T]) extends AnyVal {
     
     @scala.inline
     def setOption(value: T): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])

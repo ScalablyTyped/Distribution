@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.ScaleMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.RenderTexturePool")
 @js.native
 class RenderTexturePool ()
-  extends typings.pixiJs.PIXI.RenderTexturePool {
+  extends StObject
+     with typings.pixiJs.PIXI.RenderTexturePool {
   def this(textureOptions: ScaleMode) = this()
 }
 object RenderTexturePool {

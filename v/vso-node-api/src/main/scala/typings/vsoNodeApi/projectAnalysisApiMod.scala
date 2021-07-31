@@ -10,7 +10,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectAnalysisApiMod {

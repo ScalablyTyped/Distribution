@@ -10,7 +10,6 @@ import typings.reactNativePhoneInput.anon.TypeofTextInput
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,24 +18,23 @@ object mod {
   @js.native
   class default[TextComponentType /* <: ComponentType[js.Object] */] () extends ReactNativePhoneInput[TextComponentType]
   
-  @js.native
   trait CountriesListItem extends StObject {
     
-    var areaCodes: js.Array[String] | Null = js.native
+    var areaCodes: js.Array[String] | Null
     
-    var dialCode: String = js.native
+    var dialCode: String
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var name: String = js.native
+    var name: String
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object CountriesListItem {
     
     @scala.inline
     def apply(dialCode: String, iso2: String, name: String, priority: Double): CountriesListItem = {
-      val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], areaCodes = null)
       __obj.asInstanceOf[CountriesListItem]
     }
     
@@ -66,18 +64,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PickerData extends StObject {
     
-    var dialCode: String = js.native
+    var dialCode: String
     
-    var image: ImageRequireSource = js.native
+    var image: ImageRequireSource
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var key: Double = js.native
+    var key: Double
     
-    var label: String = js.native
+    var label: String
   }
   object PickerData {
     
@@ -169,118 +166,117 @@ object mod {
     def selectCountry(iso2: String): Unit = js.native
   }
   
-  @js.native
   trait ReactNativePhoneInputProps[TextComponentType /* <: ComponentType[js.Object] */] extends StObject {
     
     /**
       * Allow user input 0 after country code
       */
-    var allowZeroAfterCountryCode: js.UndefOr[Boolean] = js.native
+    var allowZeroAfterCountryCode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styles for country picker button
       */
-    var buttonTextStyle: js.UndefOr[TextStyle] = js.native
+    var buttonTextStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * Cancel word
       */
-    var cancelText: js.UndefOr[String] = js.native
+    var cancelText: js.UndefOr[String] = js.undefined
     
     /**
       * Confirm word
       */
-    var confirmText: js.UndefOr[String] = js.native
+    var confirmText: js.UndefOr[String] = js.undefined
     
     /**
       * Custom countries list
       */
-    var countriesList: js.UndefOr[js.Array[CountriesListItem]] = js.native
+    var countriesList: js.UndefOr[js.Array[CountriesListItem]] = js.undefined
     
     /**
       * If true, disable all interaction of this component
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styles for flag image eg. {{width: 50, height: 30, borderWidth:0}}
       */
-    var flagStyle: js.UndefOr[ViewStyle] = js.native
+    var flagStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Initial selected country
       */
-    var initialCountry: js.UndefOr[String] = js.native
+    var initialCountry: js.UndefOr[String] = js.undefined
     
     /**
       * Distance between flag and phone number
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to be invoked when phone number is changed
       */
-    var onChangePhoneNumber: js.UndefOr[js.Function1[/* number */ String, Unit]] = js.native
+    var onChangePhoneNumber: js.UndefOr[js.Function1[/* number */ String, Unit]] = js.undefined
     
     /**
       * Function to be invoked when cancelling country picker selection
       */
-    var onPressCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function to be invoked when confirming country picker selection
       */
-    var onPressConfirm: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressConfirm: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function to be invoked when press on flag image
       */
-    var onPressFlag: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressFlag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function to be invoked when country picker is selected
       */
-    var onSelectCountry: js.UndefOr[js.Function1[/* iso2 */ String, Unit]] = js.native
+    var onSelectCountry: js.UndefOr[js.Function1[/* iso2 */ String, Unit]] = js.undefined
     
     /**
       * Set background color of country picker
       */
-    var pickerBackgroundColor: js.UndefOr[String] = js.native
+    var pickerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Set button color of country picker
       */
-    var pickerButtonColor: js.UndefOr[String] = js.native
+    var pickerButtonColor: js.UndefOr[String] = js.undefined
     
     /**
       * Custom styles for text in country picker eg. {{fontSize: 14}}
       */
-    var pickerItemStyle: js.UndefOr[ViewStyle] = js.native
+    var pickerItemStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Custom styles to be applied if supplied
       */
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * The input component to use
       */
-    var textComponent: js.UndefOr[TextComponentType] = js.native
+    var textComponent: js.UndefOr[TextComponentType] = js.undefined
     
     /**
       * Properties for phone number text input eg. {{placeholder: 'Telephone number'}}
       */
-    var textProps: js.UndefOr[ComponentProps[TextComponentType]] = js.native
+    var textProps: js.UndefOr[ComponentProps[TextComponentType]] = js.undefined
     
     /**
       * Custom styles for phone number text input eg. {{fontSize: 14}}
       */
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * Initial phone number
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ReactNativePhoneInputProps {
     
@@ -291,7 +287,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReactNativePhoneInputPropsMutableBuilder[Self <: ReactNativePhoneInputProps[_], TextComponentType /* <: ComponentType[js.Object] */] (val x: Self with ReactNativePhoneInputProps[TextComponentType]) extends AnyVal {
+    implicit class ReactNativePhoneInputPropsMutableBuilder[Self <: ReactNativePhoneInputProps[?], TextComponentType /* <: ComponentType[js.Object] */] (val x: Self & ReactNativePhoneInputProps[TextComponentType]) extends AnyVal {
       
       @scala.inline
       def setAllowZeroAfterCountryCode(value: Boolean): Self = StObject.set(x, "allowZeroAfterCountryCode", value.asInstanceOf[js.Any])

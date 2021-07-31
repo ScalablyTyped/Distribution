@@ -2,19 +2,17 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsideMenu extends StObject {
   
-  var asideMenu: js.UndefOr[Boolean] = js.native
+  var asideMenu: js.UndefOr[Boolean] = js.undefined
   
-  var bottomMenu: js.UndefOr[Boolean] = js.native
+  var bottomMenu: js.UndefOr[Boolean] = js.undefined
   
-  var header: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[Boolean] = js.undefined
   
-  var topMenu: js.UndefOr[Boolean] = js.native
+  var topMenu: js.UndefOr[Boolean] = js.undefined
 }
 object AsideMenu {
   

@@ -11,7 +11,6 @@ import typings.vision.visionStrings.async
 import typings.vision.visionStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,17 +32,16 @@ object mod extends Shortcut {
   
   type EngineConfigurationObject = js.Object
   
-  @js.native
   trait EnginesConfiguration extends StObject {
     
     /** defines the default filename extension to append to template names when multiple engines are configured and no explicit extension is provided for a given template. No default value. */
-    var defaultExtension: js.UndefOr[String] = js.native
+    var defaultExtension: js.UndefOr[String] = js.undefined
     
     /**
       * Required object where each key is a file extension (e.g. 'html', 'hbr'), mapped to the npm module used for rendering the templates.
       * Alternatively, the extension can be mapped to an object
       */
-    var engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions = js.native
+    var engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions
   }
   object EnginesConfiguration {
     
@@ -71,13 +69,12 @@ object mod extends Shortcut {
     * The npm module used for rendering the templates. The module object must contain the compile() function
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverviewsoptions} > options > engines > module
     */
-  @js.native
   trait NpmModule extends StObject {
     
     /**
       * The rendering function. The required function signature depends on the compileMode settings
       */
-    var compile: ServerViewCompile = js.native
+    var compile: ServerViewCompile
     
     /**
       * Initializes additional engine state.The config object is the engine configuration object allowing updates to be made.
@@ -89,21 +86,21 @@ object mod extends Shortcut {
           /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Registers a helper for use during template rendering.
       * The name is the name that templates should use to reference the helper and helper is the function that will be invoked when the helper is called.
       */
     var registerHelper: js.UndefOr[
-        js.Function2[/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, _], Unit]
-      ] = js.native
+        js.Function2[/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any], Unit]
+      ] = js.undefined
     
     /**
       * Registers a partial for use during template rendering.
       * The name is the partial path that templates should use to reference the partial and src is the uncompiled template string for the partial.
       */
-    var registerPartial: js.UndefOr[js.Function2[/* name */ String, /* src */ String, Unit]] = js.native
+    var registerPartial: js.UndefOr[js.Function2[/* name */ String, /* src */ String, Unit]] = js.undefined
   }
   object NpmModule {
     
@@ -136,7 +133,7 @@ object mod extends Shortcut {
       def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
       
       @scala.inline
-      def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, _]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRegisterHelperUndefined: Self = StObject.set(x, "registerHelper", js.undefined)
@@ -197,9 +194,9 @@ object mod extends Shortcut {
     js.Function2[/* context */ js.Any, /* options */ js.Any, Unit]
   ]
   
-  @js.native
   trait ServerViewsConfiguration
-    extends ViewHandlerOrReplyOptions
+    extends StObject
+       with ViewHandlerOrReplyOptions
        with EnginesConfiguration {
     
     /**
@@ -210,17 +207,17 @@ object mod extends Shortcut {
       * Sub-folders are not supported and are ignored. Defaults to no helpers support (empty path).
       * Note that jade does not support loading helpers this way.
       */
-    var helpersPath: js.UndefOr[String | js.Array[String]] = js.native
+    var helpersPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** if set to false, templates will not be cached (thus will be read from file on every use). Defaults to true. */
-    var isCached: js.UndefOr[Boolean] = js.native
+    var isCached: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The root file path, or array of file paths, where partials are located.
       * Partials are small segments of template code that can be nested and reused throughout other templates.
       * Defaults to no partials support (empty path).
       */
-    var partialsPath: js.UndefOr[String | js.Array[String]] = js.native
+    var partialsPath: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ServerViewsConfiguration {
     
@@ -262,14 +259,15 @@ object mod extends Shortcut {
   /**
     * Includes `module` and any of the views options listed below (@see ServerViewsAdditionalOptions) (except defaultExtension) to override the defaults for a specific engine.
     */
-  @js.native
-  trait ServerViewsEnginesOptions extends ServerViewsConfiguration {
+  trait ServerViewsEnginesOptions
+    extends StObject
+       with ServerViewsConfiguration {
     
     /**
       * The npm module used for rendering the templates. The module object must contain the compile() function
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverviewsoptions} > options > engines > module
       */
-    var module: NpmModule = js.native
+    var module: NpmModule
   }
   object ServerViewsEnginesOptions {
     
@@ -291,23 +289,22 @@ object mod extends Shortcut {
     *
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#the-view-handler} > options for the list of attributes it can not have (isCached, partialsPath, helpersPath)
     */
-  @js.native
   trait ViewHandlerOrReplyOptions extends StObject {
     
     /** if set to true, allows absolute template paths passed to reply.view(). Defaults to false. */
-    var allowAbsolutePaths: js.UndefOr[Boolean] = js.native
+    var allowAbsolutePaths: js.UndefOr[Boolean] = js.undefined
     
     /** if set to true, allows template paths passed to reply.view() to contain '../'. Defaults to false. */
-    var allowInsecureAccess: js.UndefOr[Boolean] = js.native
+    var allowInsecureAccess: js.UndefOr[Boolean] = js.undefined
     
     /** specify whether the engine compile() method is 'sync' or 'async'. Defaults to 'sync'. */
-    var compileMode: js.UndefOr[sync | async] = js.native
+    var compileMode: js.UndefOr[sync | async] = js.undefined
     
     /** options object passed to the engine's compile function. Defaults to empty options {}. */
-    var compileOptions: js.UndefOr[CompileOptions] = js.native
+    var compileOptions: js.UndefOr[CompileOptions] = js.undefined
     
     /** the content type of the engine results. Defaults to 'text/html'. */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * A global context used with all templates.
@@ -317,10 +314,10 @@ object mod extends Shortcut {
       * When rendering views, the global context will be merged with any context object specified on the handler or using reply.view().
       * When multiple context objects are used, values from the global context always have lowest precedence.
       */
-    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request, js.Object])] = js.native
+    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request, js.Object])] = js.undefined
     
     /** the text encoding used by the templates when reading the files and outputting the result. Defaults to 'utf8'. */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true or a layout filename, layout support is enabled.
@@ -330,24 +327,24 @@ object mod extends Shortcut {
       * Disable layout when using Jade as it will handle including any layout files independently.
       * Defaults to false.
       */
-    var layout: js.UndefOr[Boolean | String] = js.native
+    var layout: js.UndefOr[Boolean | String] = js.undefined
     
     /** the key used by the template engine to denote where primary template content should go. Defaults to 'content'. */
-    var layoutKeyword: js.UndefOr[String] = js.native
+    var layoutKeyword: js.UndefOr[String] = js.undefined
     
     /** the root file path, or array of file paths, where layout templates are located (using the relativeTo prefix if present). Defaults to path. */
-    var layoutPath: js.UndefOr[String | js.Array[String]] = js.native
+    var layoutPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** the root file path, or array of file paths, used to resolve and load the templates identified when calling reply.view(). Defaults to current working directory. */
-    var path: js.UndefOr[String | js.Array[String]] = js.native
+    var path: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * a base path used as prefix for path and partialsPath. No default.
       */
-    var relativeTo: js.UndefOr[String] = js.native
+    var relativeTo: js.UndefOr[String] = js.undefined
     
     /** options object passed to the returned function from the compile operation. Defaults to empty options {}. */
-    var runtimeOptions: js.UndefOr[RuntimeOptions] = js.native
+    var runtimeOptions: js.UndefOr[RuntimeOptions] = js.undefined
   }
   object ViewHandlerOrReplyOptions {
     
@@ -453,7 +450,6 @@ object mod extends Shortcut {
     * View Manager
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#view-manager}
     */
-  @js.native
   trait ViewManager extends StObject {
     
     /**
@@ -464,22 +460,45 @@ object mod extends Shortcut {
       * @param helper
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerregisterhelpername-helper}
       */
-    def registerHelper(name: String, helper: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def registerHelper(name: String, helper: js.Function1[/* repeated */ js.Any, js.Any]): Unit
     
     /**
       * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
       */
-    def render(template: String): js.Promise[String] = js.native
-    def render(template: String, context: js.UndefOr[scala.Nothing], options: ServerViewsConfiguration): js.Promise[String] = js.native
-    def render(template: String, context: js.Any): js.Promise[String] = js.native
-    def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String] = js.native
+    def render(template: String): js.Promise[String]
+    def render(template: String, context: js.Any): js.Promise[String]
+    def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+    def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
     /**
       * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
       */
     @JSName("render")
-    var render_Original: RenderMethod = js.native
+    var render_Original: RenderMethod
+  }
+  object ViewManager {
+    
+    @scala.inline
+    def apply(
+      registerHelper: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit,
+      render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+    ): ViewManager = {
+      val __obj = js.Dynamic.literal(registerHelper = js.Any.fromFunction2(registerHelper), render = js.Any.fromFunction3(render))
+      __obj.asInstanceOf[ViewManager]
+    }
+    
+    @scala.inline
+    implicit class ViewManagerMutableBuilder[Self <: ViewManager] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRegisterHelper(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRender(
+        value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+      ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    }
   }
   
   type _To = Plugin[ServerViewsConfiguration]
@@ -490,7 +509,6 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiAugmentingMod {
     
-    @js.native
     trait HandlerDecorations extends StObject {
       
       /**
@@ -502,7 +520,7 @@ object mod extends Shortcut {
         * (these can be overriden by values explicitly set via the options).
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#the-view-handler}
         */
-      var view: js.UndefOr[String | Context] = js.native
+      var view: js.UndefOr[String | Context] = js.undefined
     }
     object HandlerDecorations {
       
@@ -523,7 +541,6 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
       /**
@@ -535,10 +552,10 @@ object mod extends Shortcut {
         * lifecycle and the request.render() method will produce the same limited results server.render() can.
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
         */
-      def render(template: String): js.Promise[String] = js.native
-      def render(template: String, context: js.UndefOr[scala.Nothing], options: ServerViewsConfiguration): js.Promise[String] = js.native
-      def render(template: String, context: js.Any): js.Promise[String] = js.native
-      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String] = js.native
+      def render(template: String): js.Promise[String]
+      def render(template: String, context: js.Any): js.Promise[String]
+      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+      def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
       /**
         * request.render() works the same way as server.render() but is for use inside of request handlers.
         * server.render() does not work inside request handlers when called via request.server.render() if the view manager was created by a plugin.
@@ -549,7 +566,26 @@ object mod extends Shortcut {
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
         */
       @JSName("render")
-      var render_Original: RenderMethod = js.native
+      var render_Original: RenderMethod
+    }
+    object Request {
+      
+      @scala.inline
+      def apply(
+        render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+      ): typings.vision.mod.hapiAugmentingMod.Request = {
+        val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render))
+        __obj.asInstanceOf[typings.vision.mod.hapiAugmentingMod.Request]
+      }
+      
+      @scala.inline
+      implicit class RequestMutableBuilder[Self <: typings.vision.mod.hapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setRender(
+          value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+        ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+      }
     }
     
     @js.native
@@ -566,34 +602,56 @@ object mod extends Shortcut {
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#replyviewtemplate-context-options}
         */
       def view(templatePath: String): ResponseObject = js.native
-      def view(templatePath: String, context: js.UndefOr[scala.Nothing], options: ViewHandlerOrReplyOptions): ResponseObject = js.native
       def view(templatePath: String, context: js.Any): ResponseObject = js.native
       def view(templatePath: String, context: js.Any, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
+      def view(templatePath: String, context: Unit, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
     }
     
-    @js.native
     trait Server extends StObject {
       
       /**
         * Utilizes the server views manager to render a template
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverrendertemplate-context-options-callback}
         */
-      def render(template: String): js.Promise[String] = js.native
-      def render(template: String, context: js.UndefOr[scala.Nothing], options: ServerViewsConfiguration): js.Promise[String] = js.native
-      def render(template: String, context: js.Any): js.Promise[String] = js.native
-      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String] = js.native
+      def render(template: String): js.Promise[String]
+      def render(template: String, context: js.Any): js.Promise[String]
+      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+      def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
       /**
         * Utilizes the server views manager to render a template
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverrendertemplate-context-options-callback}
         */
       @JSName("render")
-      var render_Original: RenderMethod = js.native
+      var render_Original: RenderMethod
       
       /**
         * Initializes the server views manager
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverviewsoptions}
         */
-      def views(options: ServerViewsConfiguration): ViewManager = js.native
+      def views(options: ServerViewsConfiguration): ViewManager
+    }
+    object Server {
+      
+      @scala.inline
+      def apply(
+        render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String],
+        views: ServerViewsConfiguration => ViewManager
+      ): Server = {
+        val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), views = js.Any.fromFunction1(views))
+        __obj.asInstanceOf[Server]
+      }
+      
+      @scala.inline
+      implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setRender(
+          value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+        ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setViews(value: ServerViewsConfiguration => ViewManager): Self = StObject.set(x, "views", js.Any.fromFunction1(value))
+      }
     }
   }
 }

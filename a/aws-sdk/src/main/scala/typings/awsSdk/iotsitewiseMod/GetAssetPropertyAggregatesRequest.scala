@@ -2,66 +2,64 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssetPropertyAggregatesRequest extends StObject {
   
   /**
     * The data aggregating function.
     */
-  var aggregateTypes: AggregateTypes = js.native
+  var aggregateTypes: AggregateTypes
   
   /**
     * The ID of the asset.
     */
-  var assetId: js.UndefOr[ID] = js.native
+  var assetId: js.UndefOr[ID] = js.undefined
   
   /**
     * The inclusive end of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var endDate: Timestamp = js.native
+  var endDate: Timestamp
   
   /**
     * The maximum number of results to be returned per paginated request. Default: 100
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to be used for the next set of paginated results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
     */
-  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.native
+  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
   /**
     * The ID of the asset property.
     */
-  var propertyId: js.UndefOr[ID] = js.native
+  var propertyId: js.UndefOr[ID] = js.undefined
   
   /**
     * The quality by which to filter asset data.
     */
-  var qualities: js.UndefOr[Qualities] = js.native
+  var qualities: js.UndefOr[Qualities] = js.undefined
   
   /**
     * The time interval over which to aggregate data.
     */
-  var resolution: Resolution = js.native
+  var resolution: Resolution
   
   /**
     * The exclusive start of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var startDate: Timestamp = js.native
+  var startDate: Timestamp
   
   /**
     * The chronological sorting order of the requested information. Default: ASCENDING 
     */
-  var timeOrdering: js.UndefOr[TimeOrdering] = js.native
+  var timeOrdering: js.UndefOr[TimeOrdering] = js.undefined
 }
 object GetAssetPropertyAggregatesRequest {
   

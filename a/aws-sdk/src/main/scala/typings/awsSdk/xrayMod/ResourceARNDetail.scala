@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceARNDetail extends StObject {
   
   /**
     * The ARN of a corresponding resource.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
 }
 object ResourceARNDetail {
   

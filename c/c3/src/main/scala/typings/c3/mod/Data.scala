@@ -15,22 +15,20 @@ import typings.std.Record
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
   /**
     * Set y axis the data related to.
     */
-  var axes: js.UndefOr[StringDictionary[AxisName]] = js.native
+  var axes: js.UndefOr[StringDictionary[AxisName]] = js.undefined
   
   /**
     * Set custom data classes for styling.
     * If this option is specified, the element g for the data has an additional class that has the prefix `c3-target-` (e.g. `c3-target-additional-data1-class`).
     */
-  var classes: js.UndefOr[StringDictionary[String]] = js.native
+  var classes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Set color converter function.
@@ -42,7 +40,7 @@ trait Data extends StObject {
       /* d */ String | DataSeries | DataPoint, 
       String | RGBColor | HSLColor
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set color for each data.
@@ -52,24 +50,24 @@ trait Data extends StObject {
     StringDictionary[
       String | RGBColor | HSLColor | (js.Function1[/* d */ String | DataSeries | DataPoint, String | RGBColor | HSLColor])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of columns, where the first element in each column is the ID and the remaining elements are data. If `url`, `json`, or `rows` are provided, this will be ignored.
     */
-  var columns: js.UndefOr[js.Array[Array[String | Primitive]]] = js.native
+  var columns: js.UndefOr[js.Array[Array[String | Primitive]]] = js.undefined
   
   /**
     * Set text displayed when empty data.
     * Defaults to `""`.
     */
-  var empty: js.UndefOr[LabelText] = js.native
+  var empty: js.UndefOr[LabelText] = js.undefined
   
   /**
     * For Stanford charts, specify the key of the epochs data, which maps values to their color.
     * Defaults to `"epochs"`.
     */
-  var epochs: js.UndefOr[String] = js.native
+  var epochs: js.UndefOr[String] = js.undefined
   
   /**
     * Specify a filter function to selectively load data.
@@ -85,56 +83,56 @@ trait Data extends StObject {
       /* allSeries */ js.Array[DataSeries], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set groups for the data for stacking.
     */
-  var groups: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var groups: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     * Specify headers for the data request if `data.url` is provided.
     */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Hide each data when the chart appears.
     * If true specified, all of data will be hidden. If multiple ids specified as an array, those will be hidden.
     */
-  var hide: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var hide: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
     * Convert data IDs with this function before creating chart.
     * @param id The original ID string.
     * @returns The converted ID string.
     */
-  var idConverter: js.UndefOr[js.Function1[/* id */ String, String]] = js.native
+  var idConverter: js.UndefOr[js.Function1[/* id */ String, String]] = js.undefined
   
   /**
     * Parse a JSON object for data. Can be in the column form `{key1: [val1, val2, ...]; ...}` or in the row form `[{key1: val1; key2: val2}, ...]`. If `url` is provided this will be ignored.
     */
-  var json: js.UndefOr[(Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])] = js.native
+  var json: js.UndefOr[(Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])] = js.undefined
   
   /**
     * If `data.json` is provided and is in row form, these keys are used to pull the data from each row.
     */
-  var keys: js.UndefOr[Value] = js.native
+  var keys: js.UndefOr[Value] = js.undefined
   
   /**
     * Show labels on each data points or set formatter function for data labels.
     * Control all labels with a boolean value or `format` function, or control behavior for individual data with a `format` object.
     */
-  var labels: js.UndefOr[Boolean | Format | `1`] = js.native
+  var labels: js.UndefOr[Boolean | Format | `1`] = js.undefined
   
   /**
     * Used if loading JSON via `data.url`.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Set custom data display names.
     */
-  var names: js.UndefOr[StringDictionary[String]] = js.native
+  var names: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Set a callback for click event on each data point.
@@ -143,7 +141,7 @@ trait Data extends StObject {
     */
   var onclick: js.UndefOr[
     js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set a callback for mouseout event on each data point.
@@ -152,7 +150,7 @@ trait Data extends StObject {
     */
   var onmouseout: js.UndefOr[
     js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ js.UndefOr[SVGElement], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set a callback for mouseover event on each data point.
@@ -161,7 +159,7 @@ trait Data extends StObject {
     */
   var onmouseover: js.UndefOr[
     js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ js.UndefOr[SVGElement], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set a callback for data selection.
@@ -170,7 +168,7 @@ trait Data extends StObject {
     */
   var onselected: js.UndefOr[
     js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set a callback for data deselection.
@@ -179,14 +177,14 @@ trait Data extends StObject {
     */
   var onunselected: js.UndefOr[
     js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Define the order of the data.
     * This option changes the order of stacking the data and pieces of pie/donut. If null specified, it will be the order the data loaded. If function specified, it will be used to sort the data
     * and it will recieve the data as argument.
     */
-  var order: js.UndefOr[asc | desc | (js.Function1[/* repeated */ DataSeries, Double]) | Null] = js.native
+  var order: js.UndefOr[asc | desc | (js.Function1[/* repeated */ DataSeries, Double]) | Null] = js.undefined
   
   /**
     * Define regions for each data.
@@ -194,65 +192,65 @@ trait Data extends StObject {
     * end will be the last data point.
     * Currently this option supports only line chart and dashed style. If this option specified, the line will be dashed only in the regions.
     */
-  var regions: js.UndefOr[StringDictionary[js.Array[RegionOptions]]] = js.native
+  var regions: js.UndefOr[StringDictionary[js.Array[RegionOptions]]] = js.undefined
   
   /**
     * A list of rows, where the first row is the column names and the remaining rows are data.  If `url` or `json` are provided this will be ignored.
     */
-  var rows: js.UndefOr[js.Array[PrimitiveArray]] = js.native
+  var rows: js.UndefOr[js.Array[PrimitiveArray]] = js.undefined
   
-  var selection: js.UndefOr[Draggable] = js.native
+  var selection: js.UndefOr[Draggable] = js.undefined
   
-  var stack: js.UndefOr[Normalize] = js.native
+  var stack: js.UndefOr[Normalize] = js.undefined
   
   /**
     * Set chart type at once.
     * If this option is specified, the type will be applied to every data. This setting can be overwritten for individual data by `data.types`.
     */
-  var `type`: js.UndefOr[ChartType] = js.native
+  var `type`: js.UndefOr[ChartType] = js.undefined
   
   /**
     * Set chart type for each data.
     * This setting overwrites the chart-wide `data.type` setting.
     */
-  var types: js.UndefOr[StringDictionary[ChartType]] = js.native
+  var types: js.UndefOr[StringDictionary[ChartType]] = js.undefined
   
   /**
     * Load a CSV or JSON file from a URL. Note that this will not work if loading via the `"file://"` protocol as most browsers with block `XMLHTTPRequests`.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the key of x values in the data.
     * We can show the data with non-index x values by this option. This option is required when the type of x axis is timeseries. If this option is set on category axis, the values of the data
     * on the key will be used for category names.
     */
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
   
   /**
     * Set a format to parse string specifed as x.
     * Default is `"%Y-%m-%d"`.
     * @see https://github.com/d3/d3-time-format#locale_format For a list of valid format specifiers.
     */
-  var xFormat: js.UndefOr[String] = js.native
+  var xFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Set to `true` to parse dates and times as local time.
     * **Experimental.**
     */
-  var xLocaltime: js.UndefOr[Boolean] = js.native
+  var xLocaltime: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to sort x values.
     * **Experimental.**
     */
-  var xSort: js.UndefOr[Boolean] = js.native
+  var xSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify the keys of the x values for each data.
     * This option can be used if we want to show the data that has different x values.
     */
-  var xs: js.UndefOr[StringDictionary[String]] = js.native
+  var xs: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object Data {
   

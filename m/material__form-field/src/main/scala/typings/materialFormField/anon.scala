@@ -4,15 +4,13 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LABELSELECTOR extends StObject {
     
-    var LABEL_SELECTOR: String = js.native
+    var LABEL_SELECTOR: String
   }
   object LABELSELECTOR {
     
@@ -31,20 +29,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/form-field.@material/form-field/adapter.MDCFormFieldAdapter> */
-  @js.native
   trait PartialMDCFormFieldAdapte extends StObject {
     
-    var activateInputRipple: js.UndefOr[js.Function0[Unit]] = js.native
+    var activateInputRipple: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var deactivateInputRipple: js.UndefOr[js.Function0[Unit]] = js.native
+    var deactivateInputRipple: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var deregisterInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var registerInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialMDCFormFieldAdapte {
     
@@ -83,10 +80,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ROOT extends StObject {
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object ROOT {
     

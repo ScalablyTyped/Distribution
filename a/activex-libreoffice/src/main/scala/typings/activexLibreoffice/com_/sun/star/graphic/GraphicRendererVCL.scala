@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,23 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To render a {@link XGraphic} container, just create an instance of this service, set the appropriate properties and use the {@link XGraphicRenderer}
   * interface to initiate the rendering process itself
   */
-@js.native
 trait GraphicRendererVCL
-  extends XGraphicRenderer
+  extends StObject
+     with XGraphicRenderer
      with XPropertySet {
   
   /** Specifies the destination rectangle, into which the graphic content is to be rendered onto the device */
-  var DestinationRect: Rectangle = js.native
+  var DestinationRect: Rectangle
   
   /**
     * Holds the device onto which the {@link XGraphic} container should be rendered
     *
     * In case of using VCL Devices, this property should hold a {@link com.sun.star.awt.XDevice} interface
     */
-  var Device: js.Any = js.native
+  var Device: js.Any
   
   /** Additional properties for rendering, unspecified at the moment */
-  var RenderData: js.Any = js.native
+  var RenderData: js.Any
 }
 object GraphicRendererVCL {
   

@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateRequest extends StObject {
   
   /**
     * Frame id to navigate, if not specified navigates the top frame.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Referrer URL.
     */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /**
     * Referrer-policy used for the navigation.
     */
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   
   /**
     * Intended transition type.
     */
-  var transitionType: js.UndefOr[TransitionType] = js.native
+  var transitionType: js.UndefOr[TransitionType] = js.undefined
   
   /**
     * URL to navigate the page to.
     */
-  var url: String = js.native
+  var url: String
 }
 object NavigateRequest {
   

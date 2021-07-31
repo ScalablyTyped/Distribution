@@ -2,19 +2,17 @@ package typings.wrapAnsi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hard extends StObject {
     
-    var hard: js.UndefOr[Boolean] = js.native
+    var hard: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var wordWrap: js.UndefOr[Boolean] = js.native
+    var wordWrap: js.UndefOr[Boolean] = js.undefined
   }
   object Hard {
     

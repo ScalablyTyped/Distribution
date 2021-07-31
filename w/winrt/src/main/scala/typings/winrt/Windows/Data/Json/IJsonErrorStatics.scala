@@ -2,13 +2,11 @@ package typings.winrt.Windows.Data.Json
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonErrorStatics extends StObject {
   
-  def getStatus(hresult: Double): JsonErrorStatus = js.native
+  def getStatus(hresult: Double): JsonErrorStatus
 }
 object IJsonErrorStatics {
   

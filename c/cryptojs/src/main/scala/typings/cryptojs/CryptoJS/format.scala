@@ -4,17 +4,15 @@ import typings.cryptojs.CryptoJS.lib.CipherParams
 import typings.cryptojs.CryptoJS.lib.CipherParamsData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object format {
   
-  @js.native
   trait FormatStatic extends StObject {
     
-    var Hex: IFormatter = js.native
+    var Hex: IFormatter
     
-    var OpenSSL: IFormatter = js.native
+    var OpenSSL: IFormatter
   }
   object FormatStatic {
     
@@ -35,12 +33,11 @@ object format {
     }
   }
   
-  @js.native
   trait IFormatter extends StObject {
     
-    def parse(s: String): CipherParams = js.native
+    def parse(s: String): CipherParams
     
-    def stringify(cipherParams: CipherParamsData): String = js.native
+    def stringify(cipherParams: CipherParamsData): String
   }
   object IFormatter {
     

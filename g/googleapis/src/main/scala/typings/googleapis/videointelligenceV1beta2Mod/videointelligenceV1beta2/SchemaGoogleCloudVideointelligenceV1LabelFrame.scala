@@ -2,25 +2,23 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video frame level annotation results for label detection.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1LabelFrame extends StObject {
   
   /**
     * Confidence that the label is accurate. Range: [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Time-offset, relative to the beginning of the video, corresponding to the
     * video frame for this location.
     */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1LabelFrame {
   

@@ -2,86 +2,84 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportImageTask extends StObject {
   
   /**
     * The architecture of the virtual machine. Valid values: i386 | x86_64 | arm64 
     */
-  var Architecture: js.UndefOr[String] = js.native
+  var Architecture: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the import task.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the image is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The target hypervisor for the import task. Valid values: xen 
     */
-  var Hypervisor: js.UndefOr[String] = js.native
+  var Hypervisor: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Amazon Machine Image (AMI) of the imported virtual machine.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the import image task.
     */
-  var ImportTaskId: js.UndefOr[String] = js.native
+  var ImportTaskId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted image.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARNs of the license configurations that are associated with the import image task.
     */
-  var LicenseSpecifications: js.UndefOr[ImportImageLicenseSpecificationListResponse] = js.native
+  var LicenseSpecifications: js.UndefOr[ImportImageLicenseSpecificationListResponse] = js.undefined
   
   /**
     * The license type of the virtual machine.
     */
-  var LicenseType: js.UndefOr[String] = js.native
+  var LicenseType: js.UndefOr[String] = js.undefined
   
   /**
     * The description string for the import image task.
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of progress of the import image task.
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the snapshots.
     */
-  var SnapshotDetails: js.UndefOr[SnapshotDetailList] = js.native
+  var SnapshotDetails: js.UndefOr[SnapshotDetailList] = js.undefined
   
   /**
     * A brief status for the import image task.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * A descriptive status message for the import image task.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The tags for the import image task.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ImportImageTask {
   

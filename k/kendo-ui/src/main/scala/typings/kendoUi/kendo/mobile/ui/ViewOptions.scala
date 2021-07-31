@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewOptions extends StObject {
   
-  var afterShow: js.UndefOr[js.Function1[/* e */ ViewAfterShowEvent, Unit]] = js.native
+  var afterShow: js.UndefOr[js.Function1[/* e */ ViewAfterShowEvent, Unit]] = js.undefined
   
-  var beforeHide: js.UndefOr[js.Function1[/* e */ ViewBeforeHideEvent, Unit]] = js.native
+  var beforeHide: js.UndefOr[js.Function1[/* e */ ViewBeforeHideEvent, Unit]] = js.undefined
   
-  var beforeShow: js.UndefOr[js.Function1[/* e */ ViewBeforeShowEvent, Unit]] = js.native
+  var beforeShow: js.UndefOr[js.Function1[/* e */ ViewBeforeShowEvent, Unit]] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ ViewHideEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ ViewHideEvent, Unit]] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ ViewInitEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ ViewInitEvent, Unit]] = js.undefined
   
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var reload: js.UndefOr[Boolean] = js.native
+  var reload: js.UndefOr[Boolean] = js.undefined
   
-  var scroller: js.UndefOr[js.Any] = js.native
+  var scroller: js.UndefOr[js.Any] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ ViewShowEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ ViewShowEvent, Unit]] = js.undefined
   
-  var stretch: js.UndefOr[Boolean] = js.native
+  var stretch: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var transitionEnd: js.UndefOr[js.Function1[/* e */ ViewTransitionEndEvent, Unit]] = js.native
+  var transitionEnd: js.UndefOr[js.Function1[/* e */ ViewTransitionEndEvent, Unit]] = js.undefined
   
-  var transitionStart: js.UndefOr[js.Function1[/* e */ ViewTransitionStartEvent, Unit]] = js.native
+  var transitionStart: js.UndefOr[js.Function1[/* e */ ViewTransitionStartEvent, Unit]] = js.undefined
   
-  var useNativeScrolling: js.UndefOr[Boolean] = js.native
+  var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Boolean] = js.native
+  var zoom: js.UndefOr[Boolean] = js.undefined
 }
 object ViewOptions {
   

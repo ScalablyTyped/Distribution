@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationSet extends StObject {
   
   /** The notifications received, or empty if no notifications are present. */
-  var notification: js.UndefOr[js.Array[Notification]] = js.native
+  var notification: js.UndefOr[js.Array[Notification]] = js.undefined
   
   /** The notification set ID, required to mark the notification as received with the Enterprises.AcknowledgeNotification API. This will be omitted if no notifications are present. */
-  var notificationSetId: js.UndefOr[String] = js.native
+  var notificationSetId: js.UndefOr[String] = js.undefined
 }
 object NotificationSet {
   

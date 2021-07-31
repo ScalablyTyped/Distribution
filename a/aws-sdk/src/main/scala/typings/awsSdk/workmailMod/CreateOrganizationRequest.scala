@@ -2,41 +2,39 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOrganizationRequest extends StObject {
   
   /**
     * The organization alias.
     */
-  var Alias: OrganizationName = js.native
+  var Alias: OrganizationName
   
   /**
     * The idempotency token associated with the request.
     */
-  var ClientToken: js.UndefOr[IdempotencyClientToken] = js.native
+  var ClientToken: js.UndefOr[IdempotencyClientToken] = js.undefined
   
   /**
     * The AWS Directory Service directory ID.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.workmailMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.workmailMod.DirectoryId] = js.undefined
   
   /**
     * The email domains to associate with the organization.
     */
-  var Domains: js.UndefOr[typings.awsSdk.workmailMod.Domains] = js.native
+  var Domains: js.UndefOr[typings.awsSdk.workmailMod.Domains] = js.undefined
   
   /**
     * When true, allows organization interoperability between Amazon WorkMail and Microsoft Exchange. Can only be set to true if an AD Connector directory ID is included in the request.
     */
-  var EnableInteroperability: js.UndefOr[Boolean] = js.native
+  var EnableInteroperability: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of a customer managed master key from AWS KMS.
     */
-  var KmsKeyArn: js.UndefOr[typings.awsSdk.workmailMod.KmsKeyArn] = js.native
+  var KmsKeyArn: js.UndefOr[typings.awsSdk.workmailMod.KmsKeyArn] = js.undefined
 }
 object CreateOrganizationRequest {
   

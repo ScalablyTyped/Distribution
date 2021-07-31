@@ -7,7 +7,6 @@ import typings.tsNkeys.mod.Prefix
 import typings.tsNkeys.utilMod.ToArrayBuffer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codecMod {
@@ -22,54 +21,44 @@ object codecMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ts-nkeys/lib/codec", "Codec._decode")
-    @js.native
-    def _decode(src: Buffer): Buffer = js.native
+    @scala.inline
+    def _decode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("_decode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec._decodePrefix")
-    @js.native
-    def _decodePrefix(raw: Buffer): Uint8Array = js.native
+    @scala.inline
+    def _decodePrefix(raw: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("_decodePrefix")(raw.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec._encode")
-    @js.native
-    def _encode(seed: Boolean, role: Prefix, payload: Buffer): Buffer = js.native
+    @scala.inline
+    def _encode(seed: Boolean, role: Prefix, payload: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_encode")(seed.asInstanceOf[js.Any], role.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec._encodePrefix")
-    @js.native
-    def _encodePrefix(kind: Prefix, role: Prefix): Buffer = js.native
+    @scala.inline
+    def _encodePrefix(kind: Prefix, role: Prefix): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_encodePrefix")(kind.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec.decode")
-    @js.native
-    def decode(expected: Prefix, src: Buffer): Buffer = js.native
+    @scala.inline
+    def decode(expected: Prefix, src: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(expected.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec.decodeSeed")
-    @js.native
-    def decodeSeed(src: Buffer): SeedDecode = js.native
+    @scala.inline
+    def decodeSeed(src: Buffer): SeedDecode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeSeed")(src.asInstanceOf[js.Any]).asInstanceOf[SeedDecode]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec.encode")
-    @js.native
-    def encode(prefix: Prefix, src: Buffer): Buffer = js.native
+    @scala.inline
+    def encode(prefix: Prefix, src: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("ts-nkeys/lib/codec", "Codec.encodeSeed")
-    @js.native
-    def encodeSeed(role: Prefix, src: Buffer): Buffer = js.native
+    @scala.inline
+    def encodeSeed(role: Prefix, src: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeSeed")(role.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
     @JSImport("ts-nkeys/lib/codec", "Codec.toArrayBuffer")
     @js.native
     def toArrayBuffer: ToArrayBuffer_ = js.native
-    @JSImport("ts-nkeys/lib/codec", "Codec.toArrayBuffer")
-    @js.native
-    def toArrayBuffer(buf: Buffer): ArrayBuffer = js.native
+    @scala.inline
+    def toArrayBuffer(buf: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     @scala.inline
     def toArrayBuffer_=(x: ToArrayBuffer_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toArrayBuffer")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait SeedDecode extends StObject {
     
-    var buf: Buffer = js.native
+    var buf: Buffer
     
-    var prefix: Prefix = js.native
+    var prefix: Prefix
   }
   object SeedDecode {
     

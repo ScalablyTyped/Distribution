@@ -6,32 +6,32 @@ import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents something that provides an embedded object. */
-@js.native
-trait XEmbeddedObjectSupplier2 extends XEmbeddedObjectSupplier {
+trait XEmbeddedObjectSupplier2
+  extends StObject
+     with XEmbeddedObjectSupplier {
   
   /** allows to control the aspect of the object. */
-  var Aspect: Double = js.native
+  var Aspect: Double
   
   /**
     * returns the object which is embedded into this object.
     *
     * This method does not return the model that is controlled by the embedded object, but the embedded object itself.
     */
-  val ExtendedControlOverEmbeddedObject: XEmbeddedObject = js.native
+  val ExtendedControlOverEmbeddedObject: XEmbeddedObject
   
   /** allows to get the replacement image of the object. */
-  var ReplacementGraphic: XGraphic = js.native
+  var ReplacementGraphic: XGraphic
   
   /**
     * returns the object which is embedded into this object.
     *
     * This method does not return the model that is controlled by the embedded object, but the embedded object itself.
     */
-  def getExtendedControlOverEmbeddedObject(): XEmbeddedObject = js.native
+  def getExtendedControlOverEmbeddedObject(): XEmbeddedObject
 }
 object XEmbeddedObjectSupplier2 {
   

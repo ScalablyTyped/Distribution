@@ -4,11 +4,9 @@ import typings.mongodb.mod.ClientSession
 import typings.mongodb.mongodbStrings.majority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongodb.mongodb.CommonOptions & {  maxTimeMS :number | undefined} */
-@js.native
 trait CommonOptionsmaxTimeMSnum extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait CommonOptionsmaxTimeMSnum extends StObject {
     * been written to the journal
     * @default false
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
-  var maxTimeMS: js.UndefOr[Double] = js.native
+  var maxTimeMS: js.UndefOr[Double] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
   /**
     * requests acknowledgement that the write operation has
     * propagated to a specified number of mongod hosts
     * @default 1
     */
-  var w: js.UndefOr[Double | majority | String] = js.native
+  var w: js.UndefOr[Double | majority | String] = js.undefined
   
   /**
     * a time limit, in milliseconds, for the write concern
     */
-  var wtimeout: js.UndefOr[Double] = js.native
+  var wtimeout: js.UndefOr[Double] = js.undefined
 }
 object CommonOptionsmaxTimeMSnum {
   

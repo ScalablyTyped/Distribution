@@ -2,15 +2,13 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreErrors extends StObject {
   
-  var ignoreErrors: js.UndefOr[Boolean] = js.native
+  var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreErrors {
   

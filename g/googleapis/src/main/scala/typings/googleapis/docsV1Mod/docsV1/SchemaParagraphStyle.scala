@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,19 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * style does not inherit from a parent, unsetting fields will revert the
   * style to a value matching the defaults in the Docs editor.
   */
-@js.native
 trait SchemaParagraphStyle extends StObject {
   
   /**
     * The text alignment for this paragraph.
     */
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to avoid widows and orphans for the paragraph. If unset, the
     * value is inherited from the parent.
     */
-  var avoidWidowAndOrphan: js.UndefOr[Boolean] = js.native
+  var avoidWidowAndOrphan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The border between this paragraph and the next and previous paragraphs.
@@ -40,7 +38,7 @@ trait SchemaParagraphStyle extends StObject {
     * changes to a paragraph border the new border must be specified in its
     * entirety.
     */
-  var borderBetween: js.UndefOr[SchemaParagraphBorder] = js.native
+  var borderBetween: js.UndefOr[SchemaParagraphBorder] = js.undefined
   
   /**
     * The border at the bottom of this paragraph. If unset, the value is
@@ -49,7 +47,7 @@ trait SchemaParagraphStyle extends StObject {
     * borders cannot be partially updated. When making changes to a paragraph
     * border the new border must be specified in its entirety.
     */
-  var borderBottom: js.UndefOr[SchemaParagraphBorder] = js.native
+  var borderBottom: js.UndefOr[SchemaParagraphBorder] = js.undefined
   
   /**
     * The border to the left of this paragraph. If unset, the value is
@@ -57,7 +55,7 @@ trait SchemaParagraphStyle extends StObject {
     * updated. When making changes to a paragraph border the new border must be
     * specified in its entirety.
     */
-  var borderLeft: js.UndefOr[SchemaParagraphBorder] = js.native
+  var borderLeft: js.UndefOr[SchemaParagraphBorder] = js.undefined
   
   /**
     * The border to the right of this paragraph. If unset, the value is
@@ -65,7 +63,7 @@ trait SchemaParagraphStyle extends StObject {
     * updated. When making changes to a paragraph border the new border must be
     * specified in its entirety.
     */
-  var borderRight: js.UndefOr[SchemaParagraphBorder] = js.native
+  var borderRight: js.UndefOr[SchemaParagraphBorder] = js.undefined
   
   /**
     * The border at the top of this paragraph. If unset, the value is inherited
@@ -74,95 +72,95 @@ trait SchemaParagraphStyle extends StObject {
     * partially updated. When making changes to a paragraph border the new
     * border must be specified in its entirety.
     */
-  var borderTop: js.UndefOr[SchemaParagraphBorder] = js.native
+  var borderTop: js.UndefOr[SchemaParagraphBorder] = js.undefined
   
   /**
     * The text direction of this paragraph. If unset, the value defaults to
     * LEFT_TO_RIGHT since paragraph direction is not inherited.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * The heading ID of the paragraph. If empty, then this paragraph is not a
     * heading. This property is read-only.
     */
-  var headingId: js.UndefOr[String] = js.native
+  var headingId: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of indentation for the paragraph on the side that corresponds
     * to the end of the text, based on the current paragraph direction. If
     * unset, the value is inherited from the parent.
     */
-  var indentEnd: js.UndefOr[SchemaDimension] = js.native
+  var indentEnd: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of indentation for the first line of the paragraph. If unset,
     * the value is inherited from the parent.
     */
-  var indentFirstLine: js.UndefOr[SchemaDimension] = js.native
+  var indentFirstLine: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of indentation for the paragraph on the side that corresponds
     * to the start of the text, based on the current paragraph direction. If
     * unset, the value is inherited from the parent.
     */
-  var indentStart: js.UndefOr[SchemaDimension] = js.native
+  var indentStart: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * Whether all lines of the paragraph should be laid out on the same page or
     * column if possible. If unset, the value is inherited from the parent.
     */
-  var keepLinesTogether: js.UndefOr[Boolean] = js.native
+  var keepLinesTogether: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether at least a part of this paragraph should be laid out on the same
     * page or column as the next paragraph if possible. If unset, the value is
     * inherited from the parent.
     */
-  var keepWithNext: js.UndefOr[Boolean] = js.native
+  var keepWithNext: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The amount of space between lines, as a percentage of normal, where
     * normal is represented as 100.0. If unset, the value is inherited from the
     * parent.
     */
-  var lineSpacing: js.UndefOr[Double] = js.native
+  var lineSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * The named style type of the paragraph.  Since updating the named style
     * type affects other properties within ParagraphStyle, the named style type
     * is applied before the other properties are updated.
     */
-  var namedStyleType: js.UndefOr[String] = js.native
+  var namedStyleType: js.UndefOr[String] = js.undefined
   
   /**
     * The shading of the paragraph. If unset, the value is inherited from the
     * parent.
     */
-  var shading: js.UndefOr[SchemaShading] = js.native
+  var shading: js.UndefOr[SchemaShading] = js.undefined
   
   /**
     * The amount of extra space above the paragraph. If unset, the value is
     * inherited from the parent.
     */
-  var spaceAbove: js.UndefOr[SchemaDimension] = js.native
+  var spaceAbove: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of extra space below the paragraph. If unset, the value is
     * inherited from the parent.
     */
-  var spaceBelow: js.UndefOr[SchemaDimension] = js.native
+  var spaceBelow: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The spacing mode for the paragraph.
     */
-  var spacingMode: js.UndefOr[String] = js.native
+  var spacingMode: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the tab stops for this paragraph. The list of tab stops is not
     * inherited. This property is read-only.
     */
-  var tabStops: js.UndefOr[js.Array[SchemaTabStop]] = js.native
+  var tabStops: js.UndefOr[js.Array[SchemaTabStop]] = js.undefined
 }
 object SchemaParagraphStyle {
   

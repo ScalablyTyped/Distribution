@@ -2,15 +2,13 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableMask extends StObject {
   
-  var enableMask: js.UndefOr[Boolean] = js.native
+  var enableMask: js.UndefOr[Boolean] = js.undefined
   
-  var enableStack: js.UndefOr[Boolean] = js.native
+  var enableStack: js.UndefOr[Boolean] = js.undefined
 }
 object EnableMask {
   

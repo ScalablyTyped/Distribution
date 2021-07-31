@@ -11,8 +11,8 @@ Split a levelup database into sublevels with their own keyspace, encoding and ev
 | Full name          | subleveldown |
 | Keywords           | level |
 | # releases         | 9 |
-| # dependents       | 127 |
-| # downloads        | 874824 |
+| # dependents       | 134 |
+| # downloads        | 1067236 |
 | # stars            | 3 |
 
 ## Links

@@ -2,13 +2,13 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAPISuccessParam extends IAPICompleteParam {
+trait IAPISuccessParam
+  extends StObject
+     with IAPICompleteParam {
   
-  var errMsg: java.lang.String = js.native
+  var errMsg: java.lang.String
 }
 object IAPISuccessParam {
   

@@ -3,19 +3,17 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceTextEdit extends StObject {
   
-  var edit: TextEdit = js.native
+  var edit: TextEdit
   
-  var metadata: js.UndefOr[WorkspaceEditMetadata] = js.native
+  var metadata: js.UndefOr[WorkspaceEditMetadata] = js.undefined
   
-  var modelVersionId: js.UndefOr[Double] = js.native
+  var modelVersionId: js.UndefOr[Double] = js.undefined
   
-  var resource: Uri = js.native
+  var resource: Uri
 }
 object WorkspaceTextEdit {
   

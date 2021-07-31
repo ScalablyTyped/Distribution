@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagUserRequest extends StObject {
   
   /**
     * The list of tags that you want to attach to the user. Each tag consists of a key name and an associated value.
     */
-  var Tags: tagListType = js.native
+  var Tags: tagListType
   
   /**
     * The name of the user that you want to add tags to. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-
     */
-  var UserName: existingUserNameType = js.native
+  var UserName: existingUserNameType
 }
 object TagUserRequest {
   

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSStream extends StObject {
   
-  def msClose(): Unit = js.native
+  def msClose(): Unit
   
-  def msDetachStream(): js.Any = js.native
+  def msDetachStream(): js.Any
   
-  val `type`: java.lang.String = js.native
+  val `type`: java.lang.String
 }
 object MSStream {
   

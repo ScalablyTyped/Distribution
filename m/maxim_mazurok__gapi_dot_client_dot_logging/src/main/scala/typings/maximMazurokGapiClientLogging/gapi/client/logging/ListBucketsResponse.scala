@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketsResponse extends StObject {
   
   /** A list of buckets. */
-  var buckets: js.UndefOr[js.Array[LogBucket]] = js.native
+  var buckets: js.UndefOr[js.Array[LogBucket]] = js.undefined
   
   /**
     * If there might be more results than appear in this response, then nextPageToken is included. To get the next set of results, call the same method again using the value of
     * nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListBucketsResponse {
   

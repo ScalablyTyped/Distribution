@@ -3,21 +3,19 @@ package typings.storybookApi.anon
 import typings.storybookApi.urlMod.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Path extends StObject {
   
-  var path: String = js.native
+  var path: String
   
-  var queryParams: QueryParams = js.native
+  var queryParams: QueryParams
   
-  var storyId: js.UndefOr[String] = js.native
+  var storyId: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var viewMode: js.UndefOr[String] = js.native
+  var viewMode: js.UndefOr[String] = js.undefined
 }
 object Path {
   

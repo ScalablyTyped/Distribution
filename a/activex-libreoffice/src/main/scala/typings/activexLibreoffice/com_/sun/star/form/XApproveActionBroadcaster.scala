@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Usually, a component which supports the {@link XApproveActionBroadcaster} interface implements {@link com.sun.star.awt.XActionListener} as well.
   */
-@js.native
-trait XApproveActionBroadcaster extends XInterface {
+trait XApproveActionBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive the {@link XApproveActionListener.approveAction()} event.
     * @param aListener the listener to be added
     */
-  def addApproveActionListener(aListener: XApproveActionListener): Unit = js.native
+  def addApproveActionListener(aListener: XApproveActionListener): Unit
   
   /**
     * removes the specified listener
     * @param aListener the listener to be removed
     */
-  def removeApproveActionListener(aListener: XApproveActionListener): Unit = js.native
+  def removeApproveActionListener(aListener: XApproveActionListener): Unit
 }
 object XApproveActionBroadcaster {
   

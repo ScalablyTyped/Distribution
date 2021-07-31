@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OLEControl extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  var AltHTML: String = js.native
+  var AltHTML: String
   
-  val Automation: js.Any = js.native
+  val Automation: js.Any
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var Left: Double = js.native
+  var Left: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
   @JSName("Word.OLEControl_typekey")
-  var WordDotOLEControl_typekey: OLEControl = js.native
+  var WordDotOLEControl_typekey: OLEControl
 }
 object OLEControl {
   

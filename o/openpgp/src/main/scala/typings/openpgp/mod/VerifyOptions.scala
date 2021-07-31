@@ -10,41 +10,39 @@ import typings.openpgp.openpgpStrings.web
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyOptions extends StObject {
   
   /**
     * (optional) use the given date for verification instead of the current time
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (cleartext) message object with signatures
     */
-  var message: CleartextMessage | Message = js.native
+  var message: CleartextMessage | Message
   
   /**
     * array of publicKeys or single key, to verify signatures
     */
-  var publicKeys: Key | js.Array[_] = js.native
+  var publicKeys: Key | js.Array[js.Any]
   
   /**
     * (optional) detached signature for verification
     */
-  var signature: js.UndefOr[Signature] = js.native
+  var signature: js.UndefOr[Signature] = js.undefined
   
   /**
     * (optional) whether to return data as a stream. Defaults to the type of stream `message` was created from, if any.
     */
-  var streaming: js.UndefOr[web | node | `false`] = js.native
+  var streaming: js.UndefOr[web | node | `false`] = js.undefined
 }
 object VerifyOptions {
   
   @scala.inline
-  def apply(message: CleartextMessage | Message, publicKeys: Key | js.Array[_]): VerifyOptions = {
+  def apply(message: CleartextMessage | Message, publicKeys: Key | js.Array[js.Any]): VerifyOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], publicKeys = publicKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions]
   }
@@ -62,7 +60,7 @@ object VerifyOptions {
     def setMessage(value: CleartextMessage | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeys(value: Key | js.Array[_]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    def setPublicKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPublicKeysVarargs(value: js.Any*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))

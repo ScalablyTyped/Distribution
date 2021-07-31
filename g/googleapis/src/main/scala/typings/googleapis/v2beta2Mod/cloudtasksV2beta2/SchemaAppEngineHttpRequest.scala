@@ -3,7 +3,6 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * counts. Any other response code or a failure to receive a response before
   * the deadline is a failed attempt.
   */
-@js.native
 trait SchemaAppEngineHttpRequest extends StObject {
   
   /**
@@ -50,7 +48,7 @@ trait SchemaAppEngineHttpRequest extends StObject {
     * app_engine_routing_override is used for all tasks in the queue, no matter
     * what the setting is for the task-level app_engine_routing.
     */
-  var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.native
+  var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.undefined
   
   /**
     * HTTP request headers.  This map contains the header field names and
@@ -78,7 +76,7 @@ trait SchemaAppEngineHttpRequest extends StObject {
     * there is a limit on the maximum size of the Task. For more information,
     * see the CreateTask documentation.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HTTP method to use for the request. The default is POST.  The
@@ -91,7 +89,7 @@ trait SchemaAppEngineHttpRequest extends StObject {
     * is written in e.g. [Python Request
     * Handler](https://cloud.google.com/appengine/docs/python/tools/webapp/requesthandlerclass).
     */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Payload.  The payload will be sent as the HTTP message body. A message
@@ -99,7 +97,7 @@ trait SchemaAppEngineHttpRequest extends StObject {
     * PUT. It is an error to set a data payload on a task with an incompatible
     * HttpMethod.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URL.  The relative URL must begin with &quot;/&quot; and
@@ -108,7 +106,7 @@ trait SchemaAppEngineHttpRequest extends StObject {
     * will be used. No spaces are allowed, and the maximum length allowed is
     * 2083 characters.
     */
-  var relativeUrl: js.UndefOr[String] = js.native
+  var relativeUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaAppEngineHttpRequest {
   

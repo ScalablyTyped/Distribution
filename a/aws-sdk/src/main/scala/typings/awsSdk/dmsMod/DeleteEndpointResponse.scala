@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEndpointResponse extends StObject {
   
   /**
     * The endpoint that was deleted.
     */
-  var Endpoint: js.UndefOr[typings.awsSdk.dmsMod.Endpoint] = js.native
+  var Endpoint: js.UndefOr[typings.awsSdk.dmsMod.Endpoint] = js.undefined
 }
 object DeleteEndpointResponse {
   

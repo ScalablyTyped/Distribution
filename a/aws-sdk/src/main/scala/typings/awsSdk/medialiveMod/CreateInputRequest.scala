@@ -2,65 +2,63 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInputRequest extends StObject {
   
   /**
     * Destination settings for PUSH type inputs.
     */
-  var Destinations: js.UndefOr[listOfInputDestinationRequest] = js.native
+  var Destinations: js.UndefOr[listOfInputDestinationRequest] = js.undefined
   
   /**
     * Settings for the devices.
     */
-  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.native
+  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.undefined
   
   /**
     * A list of security groups referenced by IDs to attach to the input.
     */
-  var InputSecurityGroups: js.UndefOr[listOfString] = js.native
+  var InputSecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A list of the MediaConnect Flows that you want to use in this input. You can specify as few as one
   Flow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a
   separate Availability Zone as this ensures your EML input is redundant to AZ issues.
     */
-  var MediaConnectFlows: js.UndefOr[listOfMediaConnectFlowRequest] = js.native
+  var MediaConnectFlows: js.UndefOr[listOfMediaConnectFlowRequest] = js.undefined
   
   /**
     * Name of the input.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Unique identifier of the request to ensure the request is handled
   exactly once in case of retries.
     */
-  var RequestId: js.UndefOr[string] = js.native
+  var RequestId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
   
   /**
     * The source URLs for a PULL-type input. Every PULL type input needs
   exactly two source URLs for redundancy.
   Only specify sources for PULL type Inputs. Leave Destinations empty.
     */
-  var Sources: js.UndefOr[listOfInputSourceRequest] = js.native
+  var Sources: js.UndefOr[listOfInputSourceRequest] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
   
-  var Type: js.UndefOr[InputType] = js.native
+  var Type: js.UndefOr[InputType] = js.undefined
   
-  var Vpc: js.UndefOr[InputVpcRequest] = js.native
+  var Vpc: js.UndefOr[InputVpcRequest] = js.undefined
 }
 object CreateInputRequest {
   

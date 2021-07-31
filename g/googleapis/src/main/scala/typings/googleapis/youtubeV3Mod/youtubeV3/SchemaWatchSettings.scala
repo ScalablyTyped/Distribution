@@ -2,30 +2,28 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Branding properties for the watch. All deprecated.
   */
-@js.native
 trait SchemaWatchSettings extends StObject {
   
   /**
     * The text color for the video watch page&#39;s branded area.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * An ID that uniquely identifies a playlist that displays next to the video
     * player.
     */
-  var featuredPlaylistId: js.UndefOr[String] = js.native
+  var featuredPlaylistId: js.UndefOr[String] = js.undefined
   
   /**
     * The background color for the video watch page&#39;s branded area.
     */
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object SchemaWatchSettings {
   

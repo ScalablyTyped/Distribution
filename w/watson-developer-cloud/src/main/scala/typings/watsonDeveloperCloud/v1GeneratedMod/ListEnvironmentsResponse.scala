@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ListEnvironmentsResponse. */
-@js.native
 trait ListEnvironmentsResponse extends StObject {
   
   /** An array of [environments] that are available for the service instance. */
-  var environments: js.UndefOr[js.Array[Environment]] = js.native
+  var environments: js.UndefOr[js.Array[Environment]] = js.undefined
 }
 object ListEnvironmentsResponse {
   

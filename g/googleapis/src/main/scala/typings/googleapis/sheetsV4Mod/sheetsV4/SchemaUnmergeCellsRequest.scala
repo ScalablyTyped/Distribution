@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unmerges cells in the given range.
   */
-@js.native
 trait SchemaUnmergeCellsRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaUnmergeCellsRequest extends StObject {
     * multiple merges, all will be unmerged. The range must not partially span
     * any merge.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaUnmergeCellsRequest {
   

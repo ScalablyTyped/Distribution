@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRoutingProfilesResponse extends StObject {
   
   /**
     * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.undefined
   
   /**
     * Information about the routing profiles.
     */
-  var RoutingProfileSummaryList: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileSummaryList] = js.native
+  var RoutingProfileSummaryList: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileSummaryList] = js.undefined
 }
 object ListRoutingProfilesResponse {
   

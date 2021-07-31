@@ -4,29 +4,29 @@ import typings.microsoftAjax.Sys.UI.Control
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttractModeControl extends Control {
+trait AttractModeControl
+  extends StObject
+     with Control {
   
-  var cssAttractMode: String = js.native
+  var cssAttractMode: String
   
-  var cssAttractModeBackground: String = js.native
+  var cssAttractModeBackground: String
   
-  var cssAttractModeCell: String = js.native
+  var cssAttractModeCell: String
   
-  var cssAttractModeIcon: String = js.native
+  var cssAttractModeIcon: String
   
-  var cssAttractModeText: String = js.native
+  var cssAttractModeText: String
   
-  var cssAttractModeWrapper: String = js.native
+  var cssAttractModeWrapper: String
   
-  var defaultAttractModeIcon: String = js.native
+  var defaultAttractModeIcon: String
   
-  def get_imageElement(): js.Any = js.native
+  def get_imageElement(): js.Any
   
-  def get_textElement(): HTMLElement = js.native
+  def get_textElement(): HTMLElement
 }
 object AttractModeControl {
   

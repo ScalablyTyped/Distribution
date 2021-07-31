@@ -3,13 +3,11 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.PropertyPages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pages extends StObject {
   
-  val Pages: PropertyPages = js.native
+  val Pages: PropertyPages
 }
 object Pages {
   

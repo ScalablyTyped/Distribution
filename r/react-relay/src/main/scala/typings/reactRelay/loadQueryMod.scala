@@ -11,71 +11,66 @@ import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadQueryMod {
   
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
+  @JSImport("react-relay/lib/relay-experimental/loadQuery", JSImport.Namespace)
   @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery]
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     environmentProviderOptions: TEnvironmentProviderOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions,
     environmentProviderOptions: TEnvironmentProviderOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](environment: Environment, preloadableRequest: GraphQLTaggedNode, variables: VariablesOf[TQuery]): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](environment: Environment, preloadableRequest: GraphQLTaggedNode, variables: VariablesOf[TQuery]): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
     variables: VariablesOf[TQuery],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     environmentProviderOptions: TEnvironmentProviderOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
-  @JSImport("react-relay/lib/relay-experimental/loadQuery", "loadQuery")
-  @js.native
-  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  @scala.inline
+  def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions,
     environmentProviderOptions: TEnvironmentProviderOptions
-  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
 }

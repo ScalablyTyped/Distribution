@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGGradient interface is a base interface used by SVGLinearGradientElement and SVGRadialGradientElement. */
 @js.native
 trait SVGGradientElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGURIReference {
   
   val SVG_SPREADMETHOD_PAD: Double = js.native

@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupActivatedRule extends StObject {
   
   /**
     * Specifies the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule.
     */
-  var action: RuleGroupActivatedRuleAction = js.native
+  var action: RuleGroupActivatedRuleAction
   
   /**
     * Specifies the order in which the rules are evaluated. Rules with a lower value are evaluated before rules with a higher value.
     */
-  var priority: Double = js.native
+  var priority: Double
   
   /**
     * The ID of a `wafRule`
     */
-  var ruleId: String = js.native
+  var ruleId: String
   
   /**
     * The rule type, either `REGULAR`, `RATE_BASED`, or `GROUP`. Defaults to `REGULAR`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object RuleGroupActivatedRule {
   

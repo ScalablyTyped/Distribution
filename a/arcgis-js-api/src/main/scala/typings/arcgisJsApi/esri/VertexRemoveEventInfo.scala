@@ -5,12 +5,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VertexRemoveEventInfo
-  extends Object
+  extends StObject
+     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -18,21 +17,21 @@ trait VertexRemoveEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
     */
-  var removed: js.Array[Graphic] = js.native
+  var removed: js.Array[Graphic]
   
   /**
     * Type is always `vertex-remove`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
     */
-  var `type`: `vertex-remove` = js.native
+  var `type`: `vertex-remove`
   
   /**
     * Contains the details of the removed vertices to track changes in topology of the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
     */
-  var vertices: js.Array[VertexRemoveEventInfoVertices] = js.native
+  var vertices: js.Array[VertexRemoveEventInfoVertices]
 }
 object VertexRemoveEventInfo {
   
@@ -42,11 +41,10 @@ object VertexRemoveEventInfo {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     removed: js.Array[Graphic],
-    `type`: `vertex-remove`,
     vertices: js.Array[VertexRemoveEventInfoVertices]
   ): VertexRemoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-remove")
     __obj.asInstanceOf[VertexRemoveEventInfo]
   }
   

@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNavigationHistoryResponse extends StObject {
   
   /**
     * Index of the current navigation history entry.
     */
-  var currentIndex: integer = js.native
+  var currentIndex: integer
   
   /**
     * Array of navigation history entries.
     */
-  var entries: js.Array[NavigationEntry] = js.native
+  var entries: js.Array[NavigationEntry]
 }
 object GetNavigationHistoryResponse {
   

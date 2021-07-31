@@ -3,18 +3,17 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaselineValues
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var datetime: js.UndefOr[String] = js.native
+  var datetime: js.UndefOr[String] = js.undefined
   
-  var job_id: js.UndefOr[String] = js.native
+  var job_id: js.UndefOr[String] = js.undefined
   
-  var real_value: js.UndefOr[Double] = js.native
+  var real_value: js.UndefOr[Double] = js.undefined
 }
 object BaselineValues {
   

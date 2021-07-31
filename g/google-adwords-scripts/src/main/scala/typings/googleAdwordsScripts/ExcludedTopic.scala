@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExcludedTopic extends isAdGroupChild {
+trait ExcludedTopic
+  extends StObject
+     with isAdGroupChild {
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getTopicId(): Double = js.native
+  def getTopicId(): Double
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object ExcludedTopic {
   

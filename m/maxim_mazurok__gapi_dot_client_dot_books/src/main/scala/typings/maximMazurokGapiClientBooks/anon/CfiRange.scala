@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientBooks.anon
 import typings.maximMazurokGapiClientBooks.gapi.client.books.BooksAnnotationsRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CfiRange extends StObject {
   
   /** Range in CFI format for this annotation for version above. */
-  var cfiRange: js.UndefOr[BooksAnnotationsRange] = js.native
+  var cfiRange: js.UndefOr[BooksAnnotationsRange] = js.undefined
   
   /** Content version applicable to ranges below. */
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
   /** Range in GB image format for this annotation for version above. */
-  var gbImageRange: js.UndefOr[BooksAnnotationsRange] = js.native
+  var gbImageRange: js.UndefOr[BooksAnnotationsRange] = js.undefined
   
   /** Range in GB text format for this annotation for version above. */
-  var gbTextRange: js.UndefOr[BooksAnnotationsRange] = js.native
+  var gbTextRange: js.UndefOr[BooksAnnotationsRange] = js.undefined
   
   /** Range in image CFI format for this annotation for version above. */
-  var imageCfiRange: js.UndefOr[BooksAnnotationsRange] = js.native
+  var imageCfiRange: js.UndefOr[BooksAnnotationsRange] = js.undefined
 }
 object CfiRange {
   

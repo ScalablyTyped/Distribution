@@ -2,41 +2,40 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePropsBase
-  extends AccessibilityProps
+  extends StObject
      with ImagePropsIOS
-     with ImagePropsAndroid {
+     with ImagePropsAndroid
+     with AccessibilityProps {
   
-  var borderBottomLeftRadius: js.UndefOr[Double] = js.native
+  var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[Double] = js.native
+  var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[Double] = js.native
+  var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[Double] = js.native
+  var borderTopRightRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * A static image to display while downloading the final image off the network.
     */
-  var defaultSource: js.UndefOr[ImageURISource | Double] = js.native
+  var defaultSource: js.UndefOr[ImageURISource | Double] = js.undefined
   
   /**
     * similarly to `source`, this property represents the resource used to render
     * the loading indicator for the image, displayed until image is ready to be
     * displayed, typically after when it got downloaded from network.
     */
-  var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.native
+  var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.undefined
   
   /**
     * Invoked on load error with {nativeEvent: {error}}
     */
-  var onError: js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]] = js.undefined
   
   /**
     * onLayout function
@@ -45,25 +44,25 @@ trait ImagePropsBase
     *
     * {nativeEvent: { layout: {x, y, width, height} }}.
     */
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     * Invoked when load completes successfully
     * { source: { url, height, width } }.
     */
-  var onLoad: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]] = js.undefined
   
   /**
     * Invoked when load either succeeds or fails
     */
-  var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Invoked on load start
     */
-  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var progressiveRenderingEnabled: js.UndefOr[Boolean] = js.native
+  var progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines how to resize the image when the frame doesn't match the raw
@@ -87,7 +86,7 @@ trait ImagePropsBase
     * if bigger than the area of the view.
     * The image will not be scaled up.
     */
-  var resizeMode: js.UndefOr[ImageResizeMode] = js.native
+  var resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
   
   /**
     * The image source (either a remote URL or a local file resource).
@@ -98,12 +97,12 @@ trait ImagePropsBase
     *
     * The currently supported formats are png, jpg, jpeg, bmp, gif, webp (Android only), psd (iOS only).
     */
-  var source: ImageSourcePropType = js.native
+  var source: ImageSourcePropType
   
   /**
     * A unique identifier for this element to be used in UI Automation testing scripts.
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object ImagePropsBase {
   

@@ -15,109 +15,107 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartDataSets extends StObject {
   
-  var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var barPercentage: js.UndefOr[Double] = js.native
+  var barPercentage: js.UndefOr[Double] = js.undefined
   
-  var barThickness: js.UndefOr[Double | flex] = js.native
+  var barThickness: js.UndefOr[Double | flex] = js.undefined
   
-  var borderAlign: js.UndefOr[BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment]] = js.native
+  var borderAlign: js.UndefOr[BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment]] = js.undefined
   
-  var borderCapStyle: js.UndefOr[butt | round | square] = js.native
+  var borderCapStyle: js.UndefOr[butt | round | square] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var borderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var borderDash: js.UndefOr[js.Array[Double]] = js.native
+  var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var borderDashOffset: js.UndefOr[Double] = js.native
+  var borderDashOffset: js.UndefOr[Double] = js.undefined
   
-  var borderJoinStyle: js.UndefOr[bevel | round | miter] = js.native
+  var borderJoinStyle: js.UndefOr[bevel | round | miter] = js.undefined
   
-  var borderSkipped: js.UndefOr[PositionType | js.Array[PositionType] | Scriptable[PositionType]] = js.native
+  var borderSkipped: js.UndefOr[PositionType | js.Array[PositionType] | Scriptable[PositionType]] = js.undefined
   
-  var borderWidth: js.UndefOr[BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth]] = js.native
+  var borderWidth: js.UndefOr[BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth]] = js.undefined
   
-  var categoryPercentage: js.UndefOr[Double] = js.native
+  var categoryPercentage: js.UndefOr[Double] = js.undefined
   
-  var cubicInterpolationMode: js.UndefOr[default | monotone] = js.native
+  var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.UndefOr[js.Array[Double] | ChartPoint | Double | Null]]] = js.native
+  var data: js.UndefOr[js.Array[js.UndefOr[js.Array[Double] | ChartPoint | Double | Null]]] = js.undefined
   
-  var fill: js.UndefOr[Boolean | Double | String] = js.native
+  var fill: js.UndefOr[Boolean | Double | String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var hideInLegendAndTooltip: js.UndefOr[Boolean] = js.native
+  var hideInLegendAndTooltip: js.UndefOr[Boolean] = js.undefined
   
-  var hitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var hitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var hoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var hoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var hoverRadius: js.UndefOr[Double] = js.native
+  var hoverRadius: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var lineTension: js.UndefOr[Double] = js.native
+  var lineTension: js.UndefOr[Double] = js.undefined
   
-  var maxBarThickness: js.UndefOr[Double] = js.native
+  var maxBarThickness: js.UndefOr[Double] = js.undefined
   
-  var minBarLength: js.UndefOr[Double] = js.native
+  var minBarLength: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
-  var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var pointBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var pointHitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointHitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var pointHoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var pointHoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var pointHoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.native
+  var pointHoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   
-  var pointHoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointHoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var pointHoverRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointHoverRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var pointRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var pointRotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var pointRotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
   var pointStyle: js.UndefOr[
     PointStyle | HTMLImageElement | HTMLCanvasElement | (js.Array[PointStyle | HTMLImageElement | HTMLCanvasElement]) | (Scriptable[PointStyle | HTMLImageElement | HTMLCanvasElement])
-  ] = js.native
+  ] = js.undefined
   
-  var radius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var radius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var rotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.native
+  var rotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   
-  var showLine: js.UndefOr[Boolean] = js.native
+  var showLine: js.UndefOr[Boolean] = js.undefined
   
-  var spanGaps: js.UndefOr[Boolean] = js.native
+  var spanGaps: js.UndefOr[Boolean] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var steppedLine: js.UndefOr[before | after | middle | Boolean] = js.native
+  var steppedLine: js.UndefOr[before | after | middle | Boolean] = js.undefined
   
-  var `type`: js.UndefOr[ChartType | String] = js.native
+  var `type`: js.UndefOr[ChartType | String] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
   
-  var xAxisID: js.UndefOr[String] = js.native
+  var xAxisID: js.UndefOr[String] = js.undefined
   
-  var yAxisID: js.UndefOr[String] = js.native
+  var yAxisID: js.UndefOr[String] = js.undefined
 }
 object ChartDataSets {
   

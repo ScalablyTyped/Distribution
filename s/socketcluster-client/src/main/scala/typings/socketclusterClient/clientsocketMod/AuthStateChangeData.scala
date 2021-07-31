@@ -4,19 +4,17 @@ import typings.socketclusterClient.authMod.AuthToken
 import typings.socketclusterClient.authMod.SignedAuthToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthStateChangeData extends StObject {
   
-  var authToken: js.UndefOr[AuthToken] = js.native
+  var authToken: js.UndefOr[AuthToken] = js.undefined
   
-  var newAuthState: AuthStates = js.native
+  var newAuthState: AuthStates
   
-  var oldAuthState: AuthStates = js.native
+  var oldAuthState: AuthStates
   
-  var signedAuthToken: js.UndefOr[SignedAuthToken] = js.native
+  var signedAuthToken: js.UndefOr[SignedAuthToken] = js.undefined
 }
 object AuthStateChangeData {
   

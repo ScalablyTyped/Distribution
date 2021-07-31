@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,12 +15,11 @@ object mod extends Shortcut {
   
   type AsyncValidationCallback = js.Function2[/* isValid */ Boolean, /* error */ ValidationError, Unit]
   
-  @js.native
   trait BaseResult extends StObject {
     
-    var missing: js.Array[String] = js.native
+    var missing: js.Array[String]
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object BaseResult {
     
@@ -49,12 +47,13 @@ object mod extends Shortcut {
   
   type ErrorMap = StringDictionary[String]
   
-  @js.native
-  trait ErrorVar extends ValidationError {
+  trait ErrorVar
+    extends StObject
+       with ValidationError {
     
-    var params: js.Any = js.native
+    var params: js.Any
     
-    var stack: String = js.native
+    var stack: String
   }
   object ErrorVar {
     
@@ -77,36 +76,36 @@ object mod extends Shortcut {
   
   type FormatValidationFunction = js.Function2[/* data */ js.Any, /* schema */ JsonSchema, String]
   
-  @js.native
   trait JsonSchema
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     @JSName("$schema")
-    var $schema: js.UndefOr[String] = js.native
+    var $schema: js.UndefOr[String] = js.undefined
     
-    var additionalProperties: js.UndefOr[Boolean] = js.native
+    var additionalProperties: js.UndefOr[Boolean] = js.undefined
     
-    var definitions: js.UndefOr[js.Any] = js.native
-    
-    // used for humans only, and not used for computation
-    var description: js.UndefOr[String] = js.native
+    var definitions: js.UndefOr[js.Any] = js.undefined
     
     // used for humans only, and not used for computation
-    var id: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Any] = js.native
+    // used for humans only, and not used for computation
+    var id: js.UndefOr[String] = js.undefined
     
-    var patternProperties: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var patternProperties: js.UndefOr[js.Any] = js.undefined
     
-    var required: js.UndefOr[js.Array[String]] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var required: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var title: js.UndefOr[String] = js.undefined
+    
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object JsonSchema {
     
@@ -207,10 +206,11 @@ object mod extends Shortcut {
     String | ValidationError
   ]
   
-  @js.native
-  trait MultiResult extends BaseResult {
+  trait MultiResult
+    extends StObject
+       with BaseResult {
     
-    var errors: js.Array[ValidationError] = js.native
+    var errors: js.Array[ValidationError]
   }
   object MultiResult {
     
@@ -233,10 +233,11 @@ object mod extends Shortcut {
   
   type SchemaMap = StringDictionary[JsonSchema]
   
-  @js.native
-  trait SingleResult extends BaseResult {
+  trait SingleResult
+    extends StObject
+       with BaseResult {
     
-    var error: ValidationError = js.native
+    var error: ValidationError
   }
   object SingleResult {
     
@@ -328,18 +329,17 @@ object mod extends Shortcut {
     def validateResult(data: js.Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): SingleResult = js.native
   }
   
-  @js.native
   trait ValidationError extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var dataPath: js.UndefOr[String] = js.native
+    var dataPath: js.UndefOr[String] = js.undefined
     
-    var message: js.Any = js.native
+    var message: js.Any
     
-    var schemaPath: js.UndefOr[String] = js.native
+    var schemaPath: js.UndefOr[String] = js.undefined
     
-    var subErrors: js.UndefOr[js.Array[ValidationError]] = js.native
+    var subErrors: js.UndefOr[js.Array[ValidationError]] = js.undefined
   }
   object ValidationError {
     

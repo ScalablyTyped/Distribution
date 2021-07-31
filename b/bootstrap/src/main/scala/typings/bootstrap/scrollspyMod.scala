@@ -9,27 +9,46 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollspyMod {
   
   @JSImport("bootstrap/js/dist/scrollspy", JSImport.Default)
   @js.native
-  class default protected () extends ScrollSpy {
+  class default protected ()
+    extends StObject
+       with ScrollSpy {
     def this(element: Element) = this()
     def this(element: Element, options: PartialOptionsMethod) = this()
+    
+    /**
+      * Destroys an element’s scrollspy.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * When using scrollspy in conjunction with adding or removing of
+      * elements from the DOM, you’ll need to call the refresh method like
+      * so:
+      */
+    /* CompleteClass */
+    override def refresh(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/scrollspy", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/scrollspy", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.scrollspyMod.ScrollSpy.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.scrollspyMod.ScrollSpy.Events & String] = js.native
       
-      /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.scrollspyMod.ScrollSpy.Events.activate with String = js.native
+      /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.scrollspyMod.ScrollSpy.Events.activate & String = js.native
     }
     
     /**
@@ -37,28 +56,25 @@ object scrollspyMod {
       * with a DOM element
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/scrollspy", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): ScrollSpy = js.native
-    @JSImport("bootstrap/js/dist/scrollspy", "default.getInstance")
-    @js.native
-    def getInstance(element: Element, options: PartialOptionsMethod): ScrollSpy = js.native
+    @scala.inline
+    def getInstance(element: Element): ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollSpy]
+    @scala.inline
+    def getInstance(element: Element, options: PartialOptionsMethod): ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScrollSpy]
   }
   
-  @js.native
   trait ScrollSpy extends StObject {
     
     /**
       * Destroys an element’s scrollspy.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * When using scrollspy in conjunction with adding or removing of
       * elements from the DOM, you’ll need to call the refresh method like
       * so:
       */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object ScrollSpy {
     
@@ -79,10 +95,11 @@ object scrollspyMod {
         * activated by the scrollspy.
         */
       @js.native
-      sealed trait activate extends Events
+      sealed trait activate
+        extends StObject
+           with Events
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -94,19 +111,19 @@ object scrollspyMod {
         *
         * @default 'auto'
         */
-      var method: auto | offset | position = js.native
+      var method: auto | offset | position
       
       /**
         * Pixels to offset from top when calculating position of scroll.
         *
         * @default 10
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * Specifies element to apply Scrollspy plugin.
         */
-      var target: String | Element | JQuery[HTMLElement] = js.native
+      var target: String | Element | JQuery[HTMLElement]
     }
     object Options {
       

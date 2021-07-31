@@ -2,25 +2,23 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelegationOptions extends StObject {
   
-  var api_type: js.UndefOr[String] = js.native
+  var api_type: js.UndefOr[String] = js.undefined
   
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
-  var grant_type: String = js.native
+  var grant_type: String
   
-  var id_token: js.UndefOr[String] = js.native
+  var id_token: js.UndefOr[String] = js.undefined
   
-  var refresh_token: js.UndefOr[String] = js.native
+  var refresh_token: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object DelegationOptions {
   

@@ -5,10 +5,13 @@ import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withViewportMatchMod {
+  
+  @JSImport("@wordpress/viewport/with-viewport-match", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
@@ -30,7 +33,12 @@ object withViewportMatchMod {
     * ```
     */
   // prettier-ignore
-  @JSImport("@wordpress/viewport/with-viewport-match", JSImport.Default)
-  @js.native
-  def default[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[_], ComponentType[Omit[_, /* keyof T */ String]]] = js.native
+  @scala.inline
+  def default[T /* <: Record[String, String] */](queries: T): js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof T */ String]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof T */ String]]
+  ]]
 }

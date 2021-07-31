@@ -2,24 +2,22 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bounding polygon for the detected image annotation.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1BoundingPoly extends StObject {
   
   /**
     * The bounding polygon normalized vertices.
     */
-  var normalizedVertices: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1NormalizedVertex]] = js.native
+  var normalizedVertices: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1NormalizedVertex]] = js.undefined
   
   /**
     * The bounding polygon vertices.
     */
-  var vertices: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1Vertex]] = js.native
+  var vertices: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1Vertex]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1BoundingPoly {
   

@@ -2,16 +2,16 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericDimensionProperties width extend GenericProperties
   */
-@js.native
-trait IGenericDimensionProperties extends IGenericProperties {
+trait IGenericDimensionProperties
+  extends StObject
+     with IGenericProperties {
   
-  var qDim: INxLibraryDimensionDef = js.native
+  var qDim: INxLibraryDimensionDef
 }
 object IGenericDimensionProperties {
   

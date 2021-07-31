@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreMouseEventsOptions extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IgnoreMouseEventsOptions extends StObject {
     *
     * @platform darwin,win32
     */
-  var forward: js.UndefOr[Boolean] = js.native
+  var forward: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreMouseEventsOptions {
   

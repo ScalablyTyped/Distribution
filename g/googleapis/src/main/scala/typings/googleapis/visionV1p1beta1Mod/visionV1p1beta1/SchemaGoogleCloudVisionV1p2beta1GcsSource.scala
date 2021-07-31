@@ -2,20 +2,18 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Google Cloud Storage location where the input will be read from.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1GcsSource extends StObject {
   
   /**
     * Google Cloud Storage URI for the input file. This must only be a Google
     * Cloud Storage object. Wildcards are not currently supported.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1GcsSource {
   

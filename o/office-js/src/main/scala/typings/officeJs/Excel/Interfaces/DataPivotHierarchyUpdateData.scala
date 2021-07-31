@@ -17,11 +17,9 @@ import typings.officeJs.officeJsStrings.Variance
 import typings.officeJs.officeJsStrings.VarianceP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DataPivotHierarchy object, for use in `dataPivotHierarchy.set({ ... })`. */
-@js.native
 trait DataPivotHierarchyUpdateData extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var field: js.UndefOr[PivotFieldUpdateData] = js.native
+  var field: js.UndefOr[PivotFieldUpdateData] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -62,7 +60,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAs: js.UndefOr[ShowAsRule] = js.native
+  var showAs: js.UndefOr[ShowAsRule] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait DataPivotHierarchyUpdateData extends StObject {
     */
   var summarizeBy: js.UndefOr[
     AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
-  ] = js.native
+  ] = js.undefined
 }
 object DataPivotHierarchyUpdateData {
   

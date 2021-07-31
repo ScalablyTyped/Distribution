@@ -3,42 +3,40 @@ package typings.storybookReactNative.anon
 import typings.storybookReactNative.previewMod.AsyncStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/react-native.@storybook/react-native/dist/preview.Params> */
-@js.native
 trait PartialParams extends StObject {
   
-  var asyncStorage: js.UndefOr[AsyncStorage | Null] = js.native
+  var asyncStorage: js.UndefOr[AsyncStorage | Null] = js.undefined
   
-  var disableWebsockets: js.UndefOr[Boolean] = js.native
+  var disableWebsockets: js.UndefOr[Boolean] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var initialSelection: js.UndefOr[js.Any] = js.native
+  var initialSelection: js.UndefOr[js.Any] = js.undefined
   
-  var isUIHidden: js.UndefOr[Boolean] = js.native
+  var isUIHidden: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardAvoidingViewVerticalOffset: js.UndefOr[Double] = js.native
+  var keyboardAvoidingViewVerticalOffset: js.UndefOr[Double] = js.undefined
   
-  var onDeviceUI: js.UndefOr[Boolean] = js.native
+  var onDeviceUI: js.UndefOr[Boolean] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var resetStorybook: js.UndefOr[Boolean] = js.native
+  var resetStorybook: js.UndefOr[Boolean] = js.undefined
   
-  var secured: js.UndefOr[Boolean] = js.native
+  var secured: js.UndefOr[Boolean] = js.undefined
   
-  var shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.native
+  var shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.undefined
   
-  var shouldPersistSelection: js.UndefOr[Boolean] = js.native
+  var shouldPersistSelection: js.UndefOr[Boolean] = js.undefined
   
-  var tabOpen: js.UndefOr[Double] = js.native
+  var tabOpen: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[BackgroundColor] = js.native
+  var theme: js.UndefOr[BackgroundColor] = js.undefined
 }
 object PartialParams {
   

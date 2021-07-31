@@ -3,36 +3,34 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceTemplate extends StObject {
   
   /**
     * Uri of the associated definition
     */
-  var definitionUri: String = js.native
+  var definitionUri: String
   
   /**
     * The identity that last modified this template
     */
-  var lastModifiedBy: String = js.native
+  var lastModifiedBy: String
   
   /**
     * The last time this template was modified
     */
-  var lastModifiedDate: Date = js.native
+  var lastModifiedDate: Date
   
   /**
     * List of workspace mappings
     */
-  var mappings: js.Array[WorkspaceMapping] = js.native
+  var mappings: js.Array[WorkspaceMapping]
   
   /**
     * Id of the workspace for this template
     */
-  var workspaceId: Double = js.native
+  var workspaceId: Double
 }
 object WorkspaceTemplate {
   

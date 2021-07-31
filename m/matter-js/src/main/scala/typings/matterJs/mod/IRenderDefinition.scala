@@ -5,10 +5,8 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRenderDefinition extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait IRenderDefinition extends StObject {
     * @property bounds
     * @type bounds
     */
-  var bounds: js.UndefOr[Bounds] = js.native
+  var bounds: js.UndefOr[Bounds] = js.undefined
   
   /**
     * The canvas element to render to. If not specified, one will be created if `render.element` has been specified.
@@ -29,7 +27,7 @@ trait IRenderDefinition extends StObject {
     * @type HTMLCanvasElement
     * @default null
     */
-  var canvas: js.UndefOr[HTMLCanvasElement] = js.native
+  var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
   
   /**
     * The 2d rendering context from the `render.canvas` element.
@@ -37,7 +35,7 @@ trait IRenderDefinition extends StObject {
     * @property context
     * @type CanvasRenderingContext2D
     */
-  var context: js.UndefOr[CanvasRenderingContext2D] = js.native
+  var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
   
   /**
     * A back-reference to the `Matter.Render` module.
@@ -45,7 +43,7 @@ trait IRenderDefinition extends StObject {
     * @property controller
     * @type render
     */
-  var controller: js.UndefOr[js.Any] = js.native
+  var controller: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A reference to the element where the canvas is to be inserted (if `render.canvas` has not been specified)
@@ -55,7 +53,7 @@ trait IRenderDefinition extends StObject {
     * @default null
     * @deprecated
     */
-  var element: js.UndefOr[HTMLElement] = js.native
+  var element: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * A reference to the `Matter.Engine` instance to be used.
@@ -63,7 +61,7 @@ trait IRenderDefinition extends StObject {
     * @property engine
     * @type engine
     */
-  var engine: Engine = js.native
+  var engine: Engine
   
   /**
     * The configuration options of the renderer.
@@ -71,7 +69,7 @@ trait IRenderDefinition extends StObject {
     * @property options
     * @type {}
     */
-  var options: js.UndefOr[IRendererOptions] = js.native
+  var options: js.UndefOr[IRendererOptions] = js.undefined
   
   /**
     * The sprite texture cache.
@@ -79,7 +77,7 @@ trait IRenderDefinition extends StObject {
     * @property textures
     * @type {}
     */
-  var textures: js.UndefOr[js.Any] = js.native
+  var textures: js.UndefOr[js.Any] = js.undefined
 }
 object IRenderDefinition {
   

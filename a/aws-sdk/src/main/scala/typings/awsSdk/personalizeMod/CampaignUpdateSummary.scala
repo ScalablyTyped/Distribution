@@ -2,43 +2,41 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignUpdateSummary extends StObject {
   
-  var campaignConfig: js.UndefOr[CampaignConfig] = js.native
+  var campaignConfig: js.UndefOr[CampaignConfig] = js.undefined
   
   /**
     * The date and time (in Unix time) that the campaign update was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * If a campaign update fails, the reason behind the failure.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The date and time (in Unix time) that the campaign update was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Specifies the requested minimum provisioned transactions (recommendations) per second that Amazon Personalize will support.
     */
-  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.native
+  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the deployed solution version.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the campaign update. A campaign update can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object CampaignUpdateSummary {
   

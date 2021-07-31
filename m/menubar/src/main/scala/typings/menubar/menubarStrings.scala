@@ -4,13 +4,14 @@ import typings.menubar.getWindowPositionMod.TaskbarLocation_
 import typings.menubar.getWindowPositionMod.WindowPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menubarStrings {
   
   @js.native
-  sealed trait bottom extends TaskbarLocation_
+  sealed trait bottom
+    extends StObject
+       with TaskbarLocation_
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -25,7 +26,9 @@ object menubarStrings {
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends WindowPosition
+  sealed trait bottomRight
+    extends StObject
+       with WindowPosition
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
@@ -55,7 +58,9 @@ object menubarStrings {
   def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait left extends TaskbarLocation_
+  sealed trait left
+    extends StObject
+       with TaskbarLocation_
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -75,7 +80,9 @@ object menubarStrings {
   def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
   
   @js.native
-  sealed trait right extends TaskbarLocation_
+  sealed trait right
+    extends StObject
+       with TaskbarLocation_
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -105,7 +112,9 @@ object menubarStrings {
   def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait top extends TaskbarLocation_
+  sealed trait top
+    extends StObject
+       with TaskbarLocation_
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -120,7 +129,9 @@ object menubarStrings {
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends WindowPosition
+  sealed trait topRight
+    extends StObject
+       with WindowPosition
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   
@@ -130,12 +141,16 @@ object menubarStrings {
   def tray: tray = "tray".asInstanceOf[tray]
   
   @js.native
-  sealed trait trayBottomCenter extends WindowPosition
+  sealed trait trayBottomCenter
+    extends StObject
+       with WindowPosition
   @scala.inline
   def trayBottomCenter: trayBottomCenter = "trayBottomCenter".asInstanceOf[trayBottomCenter]
   
   @js.native
-  sealed trait trayBottomLeft extends WindowPosition
+  sealed trait trayBottomLeft
+    extends StObject
+       with WindowPosition
   @scala.inline
   def trayBottomLeft: trayBottomLeft = "trayBottomLeft".asInstanceOf[trayBottomLeft]
   
@@ -145,7 +160,9 @@ object menubarStrings {
   def trayBottomRight: trayBottomRight = "trayBottomRight".asInstanceOf[trayBottomRight]
   
   @js.native
-  sealed trait trayCenter extends WindowPosition
+  sealed trait trayCenter
+    extends StObject
+       with WindowPosition
   @scala.inline
   def trayCenter: trayCenter = "trayCenter".asInstanceOf[trayCenter]
   

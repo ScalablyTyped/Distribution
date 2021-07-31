@@ -3,24 +3,23 @@ package typings.jointjs.mod.attributes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeSVGAttributes
-  extends SVGCoreAttributes
+  extends StObject
+     with SVGCoreAttributes
      with SVGPresentationAttributes
      with SVGConditionalProcessingAttributes
      with SVGXLinkAttributes
      with /* key */ StringDictionary[js.Any] {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var externalResourcesRequired: js.UndefOr[Boolean] = js.native
+  var externalResourcesRequired: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
 }
 object NativeSVGAttributes {
   

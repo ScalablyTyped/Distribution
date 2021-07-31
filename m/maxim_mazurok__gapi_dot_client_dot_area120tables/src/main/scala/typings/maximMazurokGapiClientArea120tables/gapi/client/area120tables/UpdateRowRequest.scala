@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRowRequest extends StObject {
   
   /** Required. The row to update. */
-  var row: js.UndefOr[Row] = js.native
+  var row: js.UndefOr[Row] = js.undefined
   
   /** The list of fields to update. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Optional. Column key to use for values in the row. Defaults to user entered name. */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object UpdateRowRequest {
   

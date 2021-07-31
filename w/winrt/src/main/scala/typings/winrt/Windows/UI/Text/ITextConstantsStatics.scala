@@ -3,27 +3,25 @@ package typings.winrt.Windows.UI.Text
 import typings.winrt.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextConstantsStatics extends StObject {
   
-  var autoColor: Color = js.native
+  var autoColor: Color
   
-  var maxUnitCount: Double = js.native
+  var maxUnitCount: Double
   
-  var minUnitCount: Double = js.native
+  var minUnitCount: Double
   
-  var undefinedColor: Color = js.native
+  var undefinedColor: Color
   
-  var undefinedFloatValue: Double = js.native
+  var undefinedFloatValue: Double
   
-  var undefinedFontStretch: FontStretch = js.native
+  var undefinedFontStretch: FontStretch
   
-  var undefinedFontStyle: FontStyle = js.native
+  var undefinedFontStyle: FontStyle
   
-  var undefinedInt32Value: Double = js.native
+  var undefinedInt32Value: Double
 }
 object ITextConstantsStatics {
   

@@ -26,7 +26,6 @@ import typings.activexAccess.activexAccessNumbers.`129`
 import typings.activexAccess.activexAccessNumbers.`130`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

@@ -12,14 +12,14 @@ import typings.activexVbide.VBIDE.vbextWindowState
 import typings.activexVbide.VBIDE.vbextWindowType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexVbideNumbers {
   
   @js.native
   sealed trait `0`
-    extends vbextCodePaneview
+    extends StObject
+       with vbextCodePaneview
        with vbextFileTypes
        with vbextProcKind
        with vbextProjectProtection
@@ -32,7 +32,8 @@ object activexVbideNumbers {
   
   @js.native
   sealed trait `1`
-    extends vbextCodePaneview
+    extends StObject
+       with vbextCodePaneview
        with vbextComponentType
        with vbextFileTypes
        with vbextProcKind
@@ -46,26 +47,31 @@ object activexVbideNumbers {
   
   @js.native
   sealed trait `10`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `100`
-    extends vbextComponentType
+    extends StObject
+       with vbextComponentType
        with vbextProjectType
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
-  sealed trait `101` extends vbextProjectType
+  sealed trait `101`
+    extends StObject
+       with vbextProjectType
   @scala.inline
   def `101`: `101` = 101.asInstanceOf[`101`]
   
   @js.native
   sealed trait `11`
-    extends vbextComponentType
+    extends StObject
+       with vbextComponentType
        with vbextFileTypes
        with vbextWindowType
   @scala.inline
@@ -73,19 +79,23 @@ object activexVbideNumbers {
   
   @js.native
   sealed trait `12`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `15` extends vbextWindowType
+  sealed trait `15`
+    extends StObject
+       with vbextWindowType
   @scala.inline
   def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `2`
-    extends vbextComponentType
+    extends StObject
+       with vbextComponentType
        with vbextFileTypes
        with vbextProcKind
        with vbextVBAMode
@@ -96,7 +106,8 @@ object activexVbideNumbers {
   
   @js.native
   sealed trait `3`
-    extends vbextComponentType
+    extends StObject
+       with vbextComponentType
        with vbextFileTypes
        with vbextProcKind
        with vbextWindowType
@@ -105,42 +116,48 @@ object activexVbideNumbers {
   
   @js.native
   sealed trait `4`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
   sealed trait `9`
-    extends vbextFileTypes
+    extends StObject
+       with vbextFileTypes
        with vbextWindowType
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.oclazyload.oc.IModuleConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,9 +32,9 @@ object mod extends Shortcut {
         * @param configFn Optional configuration function for the module.
         */
       def module(name: String): js.Any = js.native
-      def module(name: String, requires: js.UndefOr[scala.Nothing], configFn: js.Function): js.Any = js.native
       def module(name: String, requires: js.Array[String | IModuleConfig]): js.Any = js.native
       def module(name: String, requires: js.Array[String | IModuleConfig], configFn: js.Function): js.Any = js.native
+      def module(name: String, requires: Unit, configFn: js.Function): js.Any = js.native
     }
   }
 }

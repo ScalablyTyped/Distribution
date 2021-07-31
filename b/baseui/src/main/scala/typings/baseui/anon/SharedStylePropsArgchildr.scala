@@ -10,32 +10,30 @@ import typings.baseui.baseuiStrings.top
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/drawer.SharedStylePropsArg & {  children :react.react.ReactNode} */
-@js.native
 trait SharedStylePropsArgchildr extends StObject {
   
   @JSName("$anchor")
-  var $anchor: js.UndefOr[left | right | top | bottom] = js.native
+  var $anchor: js.UndefOr[left | right | top | bottom] = js.undefined
   
   @JSName("$animating")
-  var $animating: js.UndefOr[Boolean] = js.native
+  var $animating: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$closeable")
-  var $closeable: js.UndefOr[Boolean] = js.native
+  var $closeable: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.native
+  var $isOpen: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isVisible")
-  var $isVisible: js.UndefOr[Boolean] = js.native
+  var $isVisible: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[default_ | full | auto] = js.native
+  var $size: js.UndefOr[default_ | full | auto] = js.undefined
   
-  var children: js.UndefOr[ReactNode] with ReactNode = js.native
+  var children: js.UndefOr[ReactNode] & ReactNode
 }
 object SharedStylePropsArgchildr {
   
@@ -85,7 +83,7 @@ object SharedStylePropsArgchildr {
     def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.UndefOr[ReactNode] with ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)

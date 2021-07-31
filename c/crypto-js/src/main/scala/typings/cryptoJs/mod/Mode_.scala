@@ -2,10 +2,8 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode_ extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Mode_ extends StObject {
     *
     *     mode.processBlock(data.words, offset);
     */
-  def processBlock(words: js.Array[Double], offset: Double): Unit = js.native
+  def processBlock(words: js.Array[Double], offset: Double): Unit
 }
 object Mode_ {
   

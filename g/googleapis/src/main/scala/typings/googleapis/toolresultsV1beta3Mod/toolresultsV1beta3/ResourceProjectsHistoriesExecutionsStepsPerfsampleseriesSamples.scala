@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfsampleseries$Samples")
@@ -41,7 +40,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples protected 
     */
   def batchCreate(): GaxiosPromise[SchemaBatchCreatePerfSamplesResponse] = js.native
   def batchCreate(callback: BodyResponseCallback[SchemaBatchCreatePerfSamplesResponse]): Unit = js.native
-  def batchCreate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchCreatePerfSamplesResponse] = js.native
+  def batchCreate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchCreatePerfSamplesResponse] = js.native
   def batchCreate(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesBatchcreate): GaxiosPromise[SchemaBatchCreatePerfSamplesResponse] = js.native
   def batchCreate(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesBatchcreate,
@@ -93,7 +92,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples protected 
     */
   def list(): GaxiosPromise[SchemaListPerfSamplesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPerfSamplesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPerfSamplesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListPerfSamplesResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesList): GaxiosPromise[SchemaListPerfSamplesResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesList,

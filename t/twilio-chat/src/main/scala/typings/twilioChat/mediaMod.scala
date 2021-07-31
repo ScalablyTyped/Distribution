@@ -3,7 +3,6 @@ package typings.twilioChat
 import typings.twilioMcsClient.mod.McsClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaMod {
@@ -46,10 +45,9 @@ object mediaMod {
     var state: js.Any = js.native
   }
   
-  @js.native
   trait MediaServices extends StObject {
     
-    var mcsClient: McsClient = js.native
+    var mcsClient: McsClient
   }
   object MediaServices {
     
@@ -67,16 +65,15 @@ object mediaMod {
     }
   }
   
-  @js.native
   trait MediaState extends StObject {
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var sid: String = js.native
+    var sid: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object MediaState {
     

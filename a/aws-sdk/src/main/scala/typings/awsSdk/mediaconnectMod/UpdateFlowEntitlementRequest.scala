@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFlowEntitlementRequest extends StObject {
   
   /**
     * A description of the entitlement. This description appears only on the AWS Elemental MediaConnect console and will not be seen by the subscriber or end user.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The type of encryption that will be used on the output associated with this entitlement.
     */
-  var Encryption: js.UndefOr[UpdateEncryption] = js.native
+  var Encryption: js.UndefOr[UpdateEncryption] = js.undefined
   
   /**
     * The ARN of the entitlement that you want to update.
     */
-  var EntitlementArn: string = js.native
+  var EntitlementArn: string
   
   /**
     * An indication of whether you want to enable the entitlement to allow access, or disable it to stop streaming content to the subscriber’s flow temporarily. If you don’t specify the entitlementStatus field in your request, MediaConnect leaves the value unchanged.
     */
-  var EntitlementStatus: js.UndefOr[typings.awsSdk.mediaconnectMod.EntitlementStatus] = js.native
+  var EntitlementStatus: js.UndefOr[typings.awsSdk.mediaconnectMod.EntitlementStatus] = js.undefined
   
   /**
     * The flow that is associated with the entitlement that you want to update.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The AWS account IDs that you want to share your content with. The receiving accounts (subscribers) will be allowed to create their own flow using your content as the source.
     */
-  var Subscribers: js.UndefOr[listOfString] = js.native
+  var Subscribers: js.UndefOr[listOfString] = js.undefined
 }
 object UpdateFlowEntitlementRequest {
   

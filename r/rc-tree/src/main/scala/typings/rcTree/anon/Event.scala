@@ -6,33 +6,25 @@ import typings.rcTree.rcTreeStrings.select
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var event: select = js.native
+  var event: select
   
-  var nativeEvent: MouseEvent = js.native
+  var nativeEvent: MouseEvent
   
-  var node: EventDataNode = js.native
+  var node: EventDataNode
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var selectedNodes: js.Array[DataNode] = js.native
+  var selectedNodes: js.Array[DataNode]
 }
 object Event {
   
   @scala.inline
-  def apply(
-    event: select,
-    nativeEvent: MouseEvent,
-    node: EventDataNode,
-    selected: Boolean,
-    selectedNodes: js.Array[DataNode]
-  ): Event = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedNodes = selectedNodes.asInstanceOf[js.Any])
+  def apply(nativeEvent: MouseEvent, node: EventDataNode, selected: Boolean, selectedNodes: js.Array[DataNode]): Event = {
+    val __obj = js.Dynamic.literal(event = "select", nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedNodes = selectedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   

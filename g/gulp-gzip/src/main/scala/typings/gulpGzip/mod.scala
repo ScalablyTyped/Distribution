@@ -5,7 +5,6 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,36 +15,35 @@ object mod extends Shortcut {
   
   type Gzip = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Appends .gz file extension if true.
       * @default true
       */
-    var append: js.UndefOr[Boolean] = js.native
+    var append: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appends an arbitrary extension to the filename. Disables append and preExtension options.
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * Options object to pass through to zlib.Gzip.
       * See <a href='https://nodejs.org/api/zlib.html#zlib_options'>zlib</a> documentation for more information.
       */
-    var gzipOptions: js.UndefOr[ZlibOptions] = js.native
+    var gzipOptions: js.UndefOr[ZlibOptions] = js.undefined
     
     /**
       * Appends an arbitrary pre-extension to the filename. Disables append and extension options.
       */
-    var preExtension: js.UndefOr[String] = js.native
+    var preExtension: js.UndefOr[String] = js.undefined
     
     /**
       * Minimum size required to compress a file.
       * @default false
       */
-    var threshold: js.UndefOr[Double | String | Boolean] = js.native
+    var threshold: js.UndefOr[Double | String | Boolean] = js.undefined
   }
   object Options {
     

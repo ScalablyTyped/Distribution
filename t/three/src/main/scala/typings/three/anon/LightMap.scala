@@ -3,15 +3,13 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightMap extends StObject {
   
-  var lightMap: IUniform = js.native
+  var lightMap: IUniform
   
-  var lightMapIntensity: IUniform = js.native
+  var lightMapIntensity: IUniform
 }
 object LightMap {
   

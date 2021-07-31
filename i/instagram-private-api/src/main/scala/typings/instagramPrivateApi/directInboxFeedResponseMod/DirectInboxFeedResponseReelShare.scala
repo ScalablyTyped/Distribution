@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseReelShare extends StObject {
   
-  var is_reel_persisted: Boolean = js.native
+  var is_reel_persisted: Boolean
   
-  var media: DirectInboxFeedResponseMedia = js.native
+  var media: DirectInboxFeedResponseMedia
   
-  var reel_owner_id: Double = js.native
+  var reel_owner_id: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object DirectInboxFeedResponseReelShare {
   

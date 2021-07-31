@@ -2,15 +2,13 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextPage extends StObject {
   
-  var nextPage: Double = js.native
+  var nextPage: Double
   
-  var prevPage: Double = js.native
+  var prevPage: Double
 }
 object NextPage {
   

@@ -4,12 +4,12 @@ import typings.yup.yupBooleans.`false`
 import typings.yup.yupBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArraySchema[T, C]
-  extends BasicArraySchema[T, js.Array[T], C] {
+  extends StObject
+     with BasicArraySchema[T, js.Array[T], C] {
   
   def defined(): ArraySchema[T, C] = js.native
   
@@ -27,5 +27,5 @@ trait ArraySchema[T, C]
   def optional(): NotRequiredArraySchema[T, C] = js.native
   
   def required(): ArraySchema[T, C] = js.native
-  def required(message: TestOptionsMessage[js.Object, _]): ArraySchema[T, C] = js.native
+  def required(message: TestOptionsMessage[js.Object, js.Any]): ArraySchema[T, C] = js.native
 }

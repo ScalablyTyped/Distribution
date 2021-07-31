@@ -5,25 +5,25 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.sdbc.XDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is not to be used anymore
   * @deprecated Deprecated
   */
-@js.native
-trait XDatabaseAccess extends XDataSource {
+trait XDatabaseAccess
+  extends StObject
+     with XDataSource {
   
-  def addDatabaseAccessListener(listener: XDatabaseAccessListener): Unit = js.native
+  def addDatabaseAccessListener(listener: XDatabaseAccessListener): Unit
   
-  def getIsolatedConnection(user: String, password: String): XConnection = js.native
+  def getIsolatedConnection(user: String, password: String): XConnection
   
-  def hasConnections(): Boolean = js.native
+  def hasConnections(): Boolean
   
-  def removeDatabaseAccessListener(listener: XDatabaseAccessListener): Unit = js.native
+  def removeDatabaseAccessListener(listener: XDatabaseAccessListener): Unit
   
-  def suspendConnections(): Boolean = js.native
+  def suspendConnections(): Boolean
 }
 object XDatabaseAccess {
   

@@ -12,7 +12,7 @@ Messaging patterns for Backbone applications.
 | Keywords           | backbone, marionette, decoupled, pubsub, publish, subscribe, messaging, architecture, spa |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 873518 |
+| # downloads        | 935553 |
 | # stars            | 4 |
 
 ## Links

@@ -9,23 +9,21 @@ import typings.mapboxGl.mapboxGlStrings.lab
 import typings.mapboxGl.mapboxGlStrings.rgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleFunction extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var base: js.UndefOr[Double] = js.native
+  var base: js.UndefOr[Double] = js.undefined
   
-  var colorSpace: js.UndefOr[rgb | lab | hcl] = js.native
+  var colorSpace: js.UndefOr[rgb | lab | hcl] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
-  var stops: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var stops: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
-  var `type`: js.UndefOr[identity | exponential | interval | categorical] = js.native
+  var `type`: js.UndefOr[identity | exponential | interval | categorical] = js.undefined
 }
 object StyleFunction {
   
@@ -63,7 +61,7 @@ object StyleFunction {
     def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def setStops(value: js.Array[js.Array[_]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    def setStops(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)

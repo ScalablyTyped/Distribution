@@ -7,7 +7,6 @@ import typings.glReact.anon.GlSurface
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gl-react", "Bus")
@@ -21,32 +20,27 @@ class Bus protected ()
     */
   def this(props: BusProps, context: js.Any) = this()
   
-  def capture(): js.Array[_] = js.native
-  def capture(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    w: js.UndefOr[scala.Nothing],
-    h: Double
-  ): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: Double): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double): js.Array[_] = js.native
-  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): js.Array[_] = js.native
-  def capture(x: Double): js.Array[_] = js.native
-  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
-  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
-  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
-  def capture(x: Double, y: Double): js.Array[_] = js.native
-  def capture(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
-  def capture(x: Double, y: Double, w: Double): js.Array[_] = js.native
-  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[_] = js.native
+  def capture(): js.Array[js.Any] = js.native
+  def capture(x: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Double, w: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Unit, w: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Double, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Double, w: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
+  def capture(x: Unit, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
   
   @JSName("context")
   var context_Bus: GlParent = js.native
   
-  var dependents: js.Array[Node | Surface[_]] = js.native
+  var dependents: js.Array[Node | Surface[js.Any]] = js.native
   
   def getChildContext(): GlParentBus = js.native
   

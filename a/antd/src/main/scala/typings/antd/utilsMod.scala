@@ -8,57 +8,49 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("antd/lib/affix/utils", "addObserveTarget")
+  @JSImport("antd/lib/affix/utils", JSImport.Namespace)
   @js.native
-  def addObserveTarget(target: Null, affix: default): Unit = js.native
-  @JSImport("antd/lib/affix/utils", "addObserveTarget")
-  @js.native
-  def addObserveTarget(target: HTMLElement, affix: default): Unit = js.native
-  @JSImport("antd/lib/affix/utils", "addObserveTarget")
-  @js.native
-  def addObserveTarget(target: Window, affix: default): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/affix/utils", "getFixedBottom")
-  @js.native
-  def getFixedBottom(placeholderReact: Rect, targetRect: Rect): js.UndefOr[Double] = js.native
-  @JSImport("antd/lib/affix/utils", "getFixedBottom")
-  @js.native
-  def getFixedBottom(placeholderReact: Rect, targetRect: Rect, offsetBottom: Double): js.UndefOr[Double] = js.native
+  @scala.inline
+  def addObserveTarget(target: Null, affix: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addObserveTarget")(target.asInstanceOf[js.Any], affix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addObserveTarget(target: HTMLElement, affix: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addObserveTarget")(target.asInstanceOf[js.Any], affix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addObserveTarget(target: Window, affix: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addObserveTarget")(target.asInstanceOf[js.Any], affix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("antd/lib/affix/utils", "getFixedTop")
-  @js.native
-  def getFixedTop(placeholderReact: Rect, targetRect: Rect): js.UndefOr[Double] = js.native
-  @JSImport("antd/lib/affix/utils", "getFixedTop")
-  @js.native
-  def getFixedTop(placeholderReact: Rect, targetRect: Rect, offsetTop: Double): js.UndefOr[Double] = js.native
+  @scala.inline
+  def getFixedBottom(placeholderReact: Rect, targetRect: Rect): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedBottom")(placeholderReact.asInstanceOf[js.Any], targetRect.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def getFixedBottom(placeholderReact: Rect, targetRect: Rect, offsetBottom: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedBottom")(placeholderReact.asInstanceOf[js.Any], targetRect.asInstanceOf[js.Any], offsetBottom.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("antd/lib/affix/utils", "getObserverEntities")
-  @js.native
-  def getObserverEntities(): js.Array[ObserverEntity] = js.native
+  @scala.inline
+  def getFixedTop(placeholderReact: Rect, targetRect: Rect): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedTop")(placeholderReact.asInstanceOf[js.Any], targetRect.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def getFixedTop(placeholderReact: Rect, targetRect: Rect, offsetTop: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedTop")(placeholderReact.asInstanceOf[js.Any], targetRect.asInstanceOf[js.Any], offsetTop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("antd/lib/affix/utils", "getTargetRect")
-  @js.native
-  def getTargetRect(target: BindElement): ClientRect = js.native
+  @scala.inline
+  def getObserverEntities(): js.Array[ObserverEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObserverEntities")().asInstanceOf[js.Array[ObserverEntity]]
   
-  @JSImport("antd/lib/affix/utils", "removeObserveTarget")
-  @js.native
-  def removeObserveTarget(affix: default): Unit = js.native
+  @scala.inline
+  def getTargetRect(target: BindElement): ClientRect = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetRect")(target.asInstanceOf[js.Any]).asInstanceOf[ClientRect]
+  
+  @scala.inline
+  def removeObserveTarget(affix: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeObserveTarget")(affix.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type BindElement = js.UndefOr[HTMLElement | Window | Null]
   
-  @js.native
   trait ObserverEntity extends StObject {
     
-    var affixList: js.Array[default] = js.native
+    var affixList: js.Array[default]
     
-    var eventHandlers: StringDictionary[js.Any] = js.native
+    var eventHandlers: StringDictionary[js.Any]
     
-    var target: HTMLElement | Window = js.native
+    var target: HTMLElement | Window
   }
   object ObserverEntity {
     

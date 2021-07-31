@@ -2,7 +2,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * returned for the same logical write or delete, if multiple targets are
   * affected.
   */
-@js.native
 trait SchemaDocumentRemove extends StObject {
   
   /**
     * The resource name of the Document that has gone out of view.
     */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /**
     * The read timestamp at which the remove was observed.  Greater or equal to
     * the `commit_time` of the change/delete/remove.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * A set of target IDs for targets that previously matched this document.
     */
-  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.native
+  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaDocumentRemove {
   

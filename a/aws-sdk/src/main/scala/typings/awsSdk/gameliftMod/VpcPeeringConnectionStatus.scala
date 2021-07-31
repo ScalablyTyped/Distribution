@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnectionStatus extends StObject {
   
   /**
     * Code indicating the status of a VPC peering connection.
     */
-  var Code: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Code: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Additional messaging associated with the connection status. 
     */
-  var Message: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Message: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object VpcPeeringConnectionStatus {
   

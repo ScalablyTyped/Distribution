@@ -5,76 +5,75 @@ import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.`better-sqlite3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object betterSqlite3BetterSqlite3ConnectionOptionsMod {
   
-  @js.native
   trait BetterSqlite3ConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Storage type or path to the storage.
       */
-    val database: String = js.native
+    val database: String
     
     /**
       * If the database does not exist, an Error will be thrown instead of creating a new file.
       * This option does not affect in-memory or readonly database connections.
       * Default: false.
       */
-    val fileMustExist: js.UndefOr[Boolean] = js.native
+    val fileMustExist: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Encryption key for for SQLCipher.
       */
-    val key: js.UndefOr[String] = js.native
+    val key: js.UndefOr[String] = js.undefined
     
     /**
       * Function to run before a database is used in typeorm.
       * You can set pragmas, register plugins or register
       * functions or aggregates in this function.
       */
-    val prepareDatabase: js.UndefOr[js.Function1[/* db */ js.Any, Unit | js.Promise[Unit]]] = js.native
+    val prepareDatabase: js.UndefOr[js.Function1[/* db */ js.Any, Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Open the database connection in readonly mode.
       * Default: false.
       */
-    val readonly: js.UndefOr[Boolean] = js.native
+    val readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Cache size of sqlite statement to speed up queries.
       * Default: 100.
       */
-    val statementCacheSize: js.UndefOr[Double] = js.native
+    val statementCacheSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of milliseconds to wait when executing queries
       * on a locked database, before throwing a SQLITE_BUSY error.
       * Default: 5000.
       */
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_BetterSqlite3ConnectionOptions: `better-sqlite3` = js.native
+    val type_BetterSqlite3ConnectionOptions: `better-sqlite3`
     
     /**
       * Provide a function that gets called with every SQL string executed by the database connection.
       */
-    val verbose: js.UndefOr[js.Function] = js.native
+    val verbose: js.UndefOr[js.Function] = js.undefined
   }
   object BetterSqlite3ConnectionOptions {
     
     @scala.inline
-    def apply(database: String, `type`: `better-sqlite3`): BetterSqlite3ConnectionOptions = {
+    def apply(database: String): BetterSqlite3ConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("better-sqlite3")
       __obj.asInstanceOf[BetterSqlite3ConnectionOptions]
     }
     

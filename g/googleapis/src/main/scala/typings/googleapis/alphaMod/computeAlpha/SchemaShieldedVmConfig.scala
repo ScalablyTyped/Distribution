@@ -2,29 +2,27 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of Shielded VM options.
   */
-@js.native
 trait SchemaShieldedVmConfig extends StObject {
   
   /**
     * Defines whether the instance has integrity monitoring enabled.
     */
-  var enableIntegrityMonitoring: js.UndefOr[Boolean] = js.native
+  var enableIntegrityMonitoring: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines whether the instance has Secure Boot enabled.
     */
-  var enableSecureBoot: js.UndefOr[Boolean] = js.native
+  var enableSecureBoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines whether the instance has the vTPM enabled.
     */
-  var enableVtpm: js.UndefOr[Boolean] = js.native
+  var enableVtpm: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaShieldedVmConfig {
   

@@ -2,39 +2,37 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brand extends StObject {
   
-  var SDKVersion: String = js.native
+  var SDKVersion: String
   
-  var brand: String = js.native
+  var brand: String
   
-  var fontSizeSetting: String = js.native
+  var fontSizeSetting: String
   
-  var language: String = js.native
+  var language: String
   
-  var model: String = js.native
+  var model: String
   
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
-  var platform: String = js.native
+  var platform: String
   
-  var screenHeight: Double = js.native
+  var screenHeight: Double
   
-  var screenWidth: Double = js.native
+  var screenWidth: Double
   
-  var statusBarHeight: Double = js.native
+  var statusBarHeight: Double
   
-  var system: String = js.native
+  var system: String
   
-  var version: String = js.native
+  var version: String
   
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object Brand {
   

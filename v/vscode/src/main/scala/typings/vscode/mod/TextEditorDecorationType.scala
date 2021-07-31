@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorDecorationType extends StObject {
   
   /**
     * Remove this decoration type and all decorations on all text editors using it.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Internal representation of the handle.
     */
-  val key: String = js.native
+  val key: String
 }
 object TextEditorDecorationType {
   

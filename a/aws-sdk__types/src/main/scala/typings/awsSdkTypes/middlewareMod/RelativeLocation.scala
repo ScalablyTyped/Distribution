@@ -2,21 +2,19 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeLocation extends StObject {
   
   /**
     * Specify the relation to be before or after a know middleware.
     */
-  var relation: Relation = js.native
+  var relation: Relation
   
   /**
     * A known middleware name to indicate inserting middleware's location.
     */
-  var toMiddleware: String = js.native
+  var toMiddleware: String
 }
 object RelativeLocation {
   

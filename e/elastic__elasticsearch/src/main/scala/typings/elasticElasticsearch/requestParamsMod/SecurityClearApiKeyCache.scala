@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityClearApiKeyCache extends Generic {
+trait SecurityClearApiKeyCache
+  extends StObject
+     with Generic {
   
-  var ids: String | js.Array[String] = js.native
+  var ids: String | js.Array[String]
 }
 object SecurityClearApiKeyCache {
   

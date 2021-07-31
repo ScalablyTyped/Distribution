@@ -10,7 +10,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinMod {
@@ -21,6 +20,10 @@ object spinMod {
     def this(props: SpinProps) = this()
   }
   object default {
+    
+    @JSImport("antd/lib/spin", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     object defaultProps {
@@ -49,9 +52,8 @@ object spinMod {
     }
     
     /* static member */
-    @JSImport("antd/lib/spin", "default.setDefaultIndicator")
-    @js.native
-    def setDefaultIndicator(indicator: ReactNode): Unit = js.native
+    @scala.inline
+    def setDefaultIndicator(indicator: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultIndicator")(indicator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
@@ -83,26 +85,25 @@ object spinMod {
   
   type SpinIndicator = ReactElement
   
-  @js.native
   trait SpinProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var indicator: js.UndefOr[SpinIndicator] = js.native
+    var indicator: js.UndefOr[SpinIndicator] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[SpinSize] = js.native
+    var size: js.UndefOr[SpinSize] = js.undefined
     
-    var spinning: js.UndefOr[Boolean] = js.native
+    var spinning: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tip: js.UndefOr[String] = js.native
+    var tip: js.UndefOr[String] = js.undefined
     
-    var wrapperClassName: js.UndefOr[String] = js.native
+    var wrapperClassName: js.UndefOr[String] = js.undefined
   }
   object SpinProps {
     
@@ -178,12 +179,11 @@ object spinMod {
   */
   trait SpinSize extends StObject
   
-  @js.native
   trait SpinState extends StObject {
     
-    var notCssAnimationSupported: js.UndefOr[Boolean] = js.native
+    var notCssAnimationSupported: js.UndefOr[Boolean] = js.undefined
     
-    var spinning: js.UndefOr[Boolean] = js.native
+    var spinning: js.UndefOr[Boolean] = js.undefined
   }
   object SpinState {
     

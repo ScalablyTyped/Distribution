@@ -2,19 +2,17 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomReportExpectation extends StObject {
   
-  var matcherName: String = js.native
+  var matcherName: String
   
-  var message: String = js.native
+  var message: String
   
-  var passed: Boolean = js.native
+  var passed: Boolean
   
-  var stack: String = js.native
+  var stack: String
 }
 object CustomReportExpectation {
   

@@ -2,18 +2,16 @@ package typings.zchatBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<zchat-browser.zchat-browser.VisitorInfo> */
-@js.native
 trait PartialVisitorInfo extends StObject {
   
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
 }
 object PartialVisitorInfo {
   

@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a {@link TextRange} which is explicitly marked as an index entry for a {@link DocumentIndex} . */
-@js.native
-trait DocumentIndexMark extends BaseIndexMark {
+trait DocumentIndexMark
+  extends StObject
+     with BaseIndexMark {
   
   /** determines if this entry is a main entry. In a document index this entry will be emphasized by assigning a character style to it. */
-  var IsMainEntry: Boolean = js.native
+  var IsMainEntry: Boolean
   
   /** contains the primary key of the index entry. It is used to build a hierarchical document index. */
-  var PrimaryKey: String = js.native
+  var PrimaryKey: String
   
   /** contains the secondary key of the index entry. It is used to build a hierarchical document index. */
-  var SecondaryKey: String = js.native
+  var SecondaryKey: String
 }
 object DocumentIndexMark {
   

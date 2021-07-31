@@ -2,7 +2,6 @@ package typings.pkgUp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,32 +27,31 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def apply(options: Options): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  
   @JSImport("pkg-up", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[String | Null] = js.native
-  @JSImport("pkg-up", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[String | Null] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously find the closest `package.json` file.
   	@returns The filepath, or `null` if it couldn't be found.
   	*/
-  @JSImport("pkg-up", "sync")
-  @js.native
-  def sync(): String | Null = js.native
-  @JSImport("pkg-up", "sync")
-  @js.native
-  def sync(options: Options): String | Null = js.native
+  @scala.inline
+  def sync(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | Null]
+  @scala.inline
+  def sync(options: Options): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Directory to start from.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
   }
   object Options {
     

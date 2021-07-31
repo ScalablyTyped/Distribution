@@ -2,21 +2,19 @@ package typings.metismenu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetisMenuOptions extends StObject {
   
-  var parentTrigger: js.UndefOr[String] = js.native
+  var parentTrigger: js.UndefOr[String] = js.undefined
   
-  var preventDefault: js.UndefOr[Boolean] = js.native
+  var preventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var subMenu: js.UndefOr[String] = js.native
+  var subMenu: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[Boolean] = js.native
+  var toggle: js.UndefOr[Boolean] = js.undefined
   
-  var triggerElement: js.UndefOr[String] = js.native
+  var triggerElement: js.UndefOr[String] = js.undefined
 }
 object MetisMenuOptions {
   

@@ -11,8 +11,8 @@ Get all but the last element or last n elements of an array.
 | Full name          | array-initial |
 | Keywords           | array, fast, first, initial, javascript, js, last, rest, util, utility, utils |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 37796814 |
+| # dependents       | 3 |
+| # downloads        | 44248662 |
 | # stars            | 0 |
 
 ## Links

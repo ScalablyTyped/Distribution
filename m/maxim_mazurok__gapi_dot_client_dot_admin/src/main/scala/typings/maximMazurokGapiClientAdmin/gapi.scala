@@ -17,7 +17,6 @@ import typings.maximMazurokGapiClientAdmin.anon.Fields
 import typings.maximMazurokGapiClientAdmin.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -26,20 +25,19 @@ object gapi {
     
     object admin {
       
-      @js.native
       trait Activities extends StObject {
         
         /** ETag of the resource. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** Each activity record in the response. */
-        var items: js.UndefOr[js.Array[Activity]] = js.native
+        var items: js.UndefOr[js.Array[Activity]] = js.undefined
         
         /** The type of API resource. For an activity report, the value is reports#activities. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Token for retrieving the follow-on next page of the report. The nextPageToken value is used in the request's pageToken query string. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object Activities {
         
@@ -96,32 +94,31 @@ object gapi {
         def watch(request: ActorIpAddress): Request[Channel] = js.native
       }
       
-      @js.native
       trait Activity extends StObject {
         
         /** User doing the action. */
-        var actor: js.UndefOr[CallerType] = js.native
+        var actor: js.UndefOr[CallerType] = js.undefined
         
         /** ETag of the entry. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** Activity events in the report. */
-        var events: js.UndefOr[js.Array[Name]] = js.native
+        var events: js.UndefOr[js.Array[Name]] = js.undefined
         
         /** Unique identifier for each activity record. */
-        var id: js.UndefOr[ApplicationName] = js.native
+        var id: js.UndefOr[ApplicationName] = js.undefined
         
         /**
           * IP address of the user doing the action. This is the Internet Protocol (IP) address of the user when logging into G Suite which may or may not reflect the user's physical location.
           * For example, the IP address can be the user's proxy server's address or a virtual private network (VPN) address. The API supports IPv4 and IPv6.
           */
-        var ipAddress: js.UndefOr[String] = js.native
+        var ipAddress: js.UndefOr[String] = js.undefined
         
         /** The type of API resource. For an activity report, the value is audit#activity. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** This is the domain that is affected by the report's event. For example domain of Admin console or the Drive application's document owner. */
-        var ownerDomain: js.UndefOr[String] = js.native
+        var ownerDomain: js.UndefOr[String] = js.undefined
       }
       object Activity {
         
@@ -181,42 +178,41 @@ object gapi {
         }
       }
       
-      @js.native
       trait Channel extends StObject {
         
         /** The address where notifications are delivered for this channel. */
-        var address: js.UndefOr[String] = js.native
+        var address: js.UndefOr[String] = js.undefined
         
         /** Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional. */
-        var expiration: js.UndefOr[String] = js.native
+        var expiration: js.UndefOr[String] = js.undefined
         
         /** A UUID or similar unique string that identifies this channel. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** Identifies this as a notification channel used to watch for changes to a resource, which is "api#channel". */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Additional parameters controlling delivery channel behavior. Optional. */
         var params: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[js.Any]
+              ] = js.undefined
         
         /** A Boolean value to indicate whether payload is wanted. Optional. */
-        var payload: js.UndefOr[Boolean] = js.native
+        var payload: js.UndefOr[Boolean] = js.undefined
         
         /** An opaque ID that identifies the resource being watched on this channel. Stable across different API versions. */
-        var resourceId: js.UndefOr[String] = js.native
+        var resourceId: js.UndefOr[String] = js.undefined
         
         /** A version-specific identifier for the watched resource. */
-        var resourceUri: js.UndefOr[String] = js.native
+        var resourceUri: js.UndefOr[String] = js.undefined
         
         /** An arbitrary string delivered to the target address with each notification delivered over this channel. Optional. */
-        var token: js.UndefOr[String] = js.native
+        var token: js.UndefOr[String] = js.undefined
         
         /** The type of delivery mechanism used for this channel. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object Channel {
         
@@ -257,7 +253,7 @@ object gapi {
           def setParams(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[js.Any]
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -325,29 +321,28 @@ object gapi {
         def get(request: EntityKey): Request[UsageReports] = js.native
       }
       
-      @js.native
       trait NestedParameter extends StObject {
         
         /** Boolean value of the parameter. */
-        var boolValue: js.UndefOr[Boolean] = js.native
+        var boolValue: js.UndefOr[Boolean] = js.undefined
         
         /** Integer value of the parameter. */
-        var intValue: js.UndefOr[String] = js.native
+        var intValue: js.UndefOr[String] = js.undefined
         
         /** Multiple boolean values of the parameter. */
-        var multiBoolValue: js.UndefOr[js.Array[Boolean]] = js.native
+        var multiBoolValue: js.UndefOr[js.Array[Boolean]] = js.undefined
         
         /** Multiple integer values of the parameter. */
-        var multiIntValue: js.UndefOr[js.Array[String]] = js.native
+        var multiIntValue: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Multiple string values of the parameter. */
-        var multiValue: js.UndefOr[js.Array[String]] = js.native
+        var multiValue: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The name of the parameter. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** String value of the parameter. */
-        var value: js.UndefOr[String] = js.native
+        var value: js.UndefOr[String] = js.undefined
       }
       object NestedParameter {
         
@@ -413,23 +408,22 @@ object gapi {
         }
       }
       
-      @js.native
       trait UsageReport extends StObject {
         
         /** Output only. The date of the report request. */
-        var date: js.UndefOr[String] = js.native
+        var date: js.UndefOr[String] = js.undefined
         
         /** Output only. Information about the type of the item. */
-        var entity: js.UndefOr[CustomerId] = js.native
+        var entity: js.UndefOr[CustomerId] = js.undefined
         
         /** ETag of the resource. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** The type of API resource. For a usage report, the value is admin#reports#usageReport. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Output only. Parameter value pairs for various applications. For the Customers usage report parameters and values, see the customer usage parameters reference. */
-        var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.native
+        var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.undefined
       }
       object UsageReport {
         
@@ -477,26 +471,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait UsageReports extends StObject {
         
         /** ETag of the resource. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** The type of API resource. For a usage report, the value is admin#reports#usageReports. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * Token to specify next page. A report with multiple pages has a nextPageToken property in the response. For your follow-on requests getting all of the report's pages, enter the
           * nextPageToken value in the pageToken query string.
           */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** Various application parameter records. */
-        var usageReports: js.UndefOr[js.Array[UsageReport]] = js.native
+        var usageReports: js.UndefOr[js.Array[UsageReport]] = js.undefined
         
         /** Warnings, if any. */
-        var warnings: js.UndefOr[js.Array[Code]] = js.native
+        var warnings: js.UndefOr[js.Array[Code]] = js.undefined
       }
       object UsageReports {
         

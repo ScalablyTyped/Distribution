@@ -2,17 +2,15 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events[T] extends StObject {
   
-  var calls: js.Array[EventCall[T]] = js.native
+  var calls: js.Array[EventCall[T]]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def send(targetUrl: EventUrl, body: T): js.Promise[Unit] = js.native
+  def send(targetUrl: EventUrl, body: T): js.Promise[Unit]
 }
 object Events {
   
@@ -23,7 +21,7 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events[_], T] (val x: Self with Events[T]) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events[?], T] (val x: Self & Events[T]) extends AnyVal {
     
     @scala.inline
     def setCalls(value: js.Array[EventCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])

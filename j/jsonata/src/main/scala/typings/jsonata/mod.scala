@@ -5,25 +5,26 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(str: String): Expression = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  
   @JSImport("jsonata", JSImport.Namespace)
   @js.native
-  def apply(str: String): Expression = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Environment extends StObject {
     
-    val async: Boolean = js.native
+    val async: Boolean
     
-    def bind(name: String, value: js.Any): Unit = js.native
+    def bind(name: String, value: js.Any): Unit
     
-    def lookup(name: String): js.Any = js.native
+    def lookup(name: String): js.Any
     
-    val timestamp: Date = js.native
+    val timestamp: Date
   }
   object Environment {
     
@@ -50,22 +51,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ExprNode extends StObject {
     
-    var arguments: js.UndefOr[js.Array[ExprNode]] = js.native
+    var arguments: js.UndefOr[js.Array[ExprNode]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var procedure: js.UndefOr[ExprNode] = js.native
+    var procedure: js.UndefOr[ExprNode] = js.undefined
     
-    var steps: js.UndefOr[js.Array[ExprNode]] = js.native
+    var steps: js.UndefOr[js.Array[ExprNode]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ExprNode {
     
@@ -136,30 +136,29 @@ object mod {
     def evaluate(input: js.Any): js.Any = js.native
     def evaluate(
       input: js.Any,
-      bindings: js.UndefOr[scala.Nothing],
+      bindings: Unit,
       callback: js.Function2[/* err */ JsonataError, /* resp */ js.Any, Unit]
     ): Unit = js.native
-    def evaluate(input: js.Any, bindings: Record[String, _]): js.Any = js.native
+    def evaluate(input: js.Any, bindings: Record[String, js.Any]): js.Any = js.native
     def evaluate(
       input: js.Any,
-      bindings: Record[String, _],
+      bindings: Record[String, js.Any],
       callback: js.Function2[/* err */ JsonataError, /* resp */ js.Any, Unit]
     ): Unit = js.native
     
-    def registerFunction(name: String, implementation: js.ThisFunction1[/* this */ Focus, /* repeated */ js.Any, _]): Unit = js.native
+    def registerFunction(name: String, implementation: js.ThisFunction1[/* this */ Focus, /* repeated */ js.Any, js.Any]): Unit = js.native
     def registerFunction(
       name: String,
-      implementation: js.ThisFunction1[/* this */ Focus, /* repeated */ js.Any, _],
+      implementation: js.ThisFunction1[/* this */ Focus, /* repeated */ js.Any, js.Any],
       signature: String
     ): Unit = js.native
   }
   
-  @js.native
   trait Focus extends StObject {
     
-    val environment: Environment = js.native
+    val environment: Environment
     
-    val input: js.Any = js.native
+    val input: js.Any
   }
   object Focus {
     
@@ -180,14 +179,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait JsonataError extends Error {
+  trait JsonataError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
     
-    var position: Double = js.native
+    var position: Double
     
-    var token: String = js.native
+    var token: String
   }
   object JsonataError {
     

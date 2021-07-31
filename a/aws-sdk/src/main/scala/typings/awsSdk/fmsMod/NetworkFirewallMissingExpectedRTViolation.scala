@@ -2,36 +2,34 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkFirewallMissingExpectedRTViolation extends StObject {
   
   /**
     * The Availability Zone of a violating subnet. 
     */
-  var AvailabilityZone: js.UndefOr[LengthBoundedString] = js.native
+  var AvailabilityZone: js.UndefOr[LengthBoundedString] = js.undefined
   
   /**
     * The resource ID of the current route table that's associated with the subnet, if one is available.
     */
-  var CurrentRouteTable: js.UndefOr[ResourceId] = js.native
+  var CurrentRouteTable: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The resource ID of the route table that should be associated with the subnet.
     */
-  var ExpectedRouteTable: js.UndefOr[ResourceId] = js.native
+  var ExpectedRouteTable: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The resource ID of the VPC associated with a violating subnet.
     */
-  var VPC: js.UndefOr[ResourceId] = js.native
+  var VPC: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The ID of the AWS Network Firewall or VPC resource that's in violation.
     */
-  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.native
+  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
 }
 object NetworkFirewallMissingExpectedRTViolation {
   

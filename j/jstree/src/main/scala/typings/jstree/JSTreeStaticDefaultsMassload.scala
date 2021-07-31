@@ -2,13 +2,11 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsMassload extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     * massload configuration
@@ -30,7 +28,7 @@ trait JSTreeStaticDefaultsMassload extends StObject {
     * @name $.jstree.defaults.massload
     * @plugin massload
     */
-  var url: js.Any = js.native
+  var url: js.Any
 }
 object JSTreeStaticDefaultsMassload {
   

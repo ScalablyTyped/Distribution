@@ -2,15 +2,13 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataReader extends StObject {
   
-  def getConstructorMetadata(constructorFunc: js.Function): ConstructorMetadata = js.native
+  def getConstructorMetadata(constructorFunc: js.Function): ConstructorMetadata
   
-  def getPropertiesMetadata(constructorFunc: js.Function): MetadataMap = js.native
+  def getPropertiesMetadata(constructorFunc: js.Function): MetadataMap
 }
 object MetadataReader {
   

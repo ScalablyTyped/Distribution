@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.Pane
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPane extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Pane = js.native
+  def extend(proto: js.Object): Pane
   
   /* static member */
-  var fn: Pane = js.native
+  var fn: Pane
 }
 object TypeofPane {
   

@@ -3,7 +3,6 @@ package typings.copyTextToClipboard
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,10 @@ object mod {
   	});
   	```
   	*/
-  @JSImport("copy-text-to-clipboard", JSImport.Namespace)
-  @js.native
-  def apply(text: String): Boolean = js.native
-  @JSImport("copy-text-to-clipboard", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): Boolean = js.native
+  @scala.inline
+  def apply(text: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(text: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("copy-text-to-clipboard", JSImport.Namespace)
   @js.native
@@ -43,7 +40,6 @@ object mod {
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof copyTextToClipboard */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -60,7 +56,7 @@ object mod {
     		});
     		```
     		*/
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
   }
   object Options {
     

@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimensions extends StObject {
   
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
 }
 object Dimensions {
   

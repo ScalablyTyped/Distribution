@@ -15,7 +15,6 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyTileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,7 +31,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait TileBody
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with Bounce
      with Collision
      with Friction

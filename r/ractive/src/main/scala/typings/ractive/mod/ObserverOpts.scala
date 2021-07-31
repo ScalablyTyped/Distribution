@@ -2,26 +2,26 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObserverOpts extends ObserverBaseOpts {
+trait ObserverOpts
+  extends StObject
+     with ObserverBaseOpts {
   
   /**
   	 * Whether or not to follow any links when observing.
   	 */
-  var links: js.UndefOr[Boolean] = js.native
+  var links: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * The function called to get an old value for the observer. This can be used to do things like freeze the initial value as the old value for all future callbacks.
   	 */
-  var old: js.UndefOr[ObserverCallback[Ractive[Ractive[_]]]] = js.native
+  var old: js.UndefOr[ObserverCallback[Ractive[Ractive[js.Any]]]] = js.undefined
   
   /**
   	 * Whether or not to use strict equality when checking to see if a value has changed. Defaults to false.
   	 */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object ObserverOpts {
   
@@ -41,7 +41,7 @@ object ObserverOpts {
     def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setOld(value: ObserverCallback[Ractive[Ractive[_]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    def setOld(value: ObserverCallback[Ractive[Ractive[js.Any]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOldUndefined: Self = StObject.set(x, "old", js.undefined)

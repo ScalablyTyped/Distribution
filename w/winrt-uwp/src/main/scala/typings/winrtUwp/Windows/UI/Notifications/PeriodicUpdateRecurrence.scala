@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object PeriodicUpdateRecurrence extends StObject {
   
   /** Poll once a day. */
   @js.native
-  sealed trait daily extends PeriodicUpdateRecurrence
+  sealed trait daily
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   /** Poll every half an hour. */
   @js.native
-  sealed trait halfHour extends PeriodicUpdateRecurrence
+  sealed trait halfHour
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   /** Poll every hour. */
   @js.native
-  sealed trait hour extends PeriodicUpdateRecurrence
+  sealed trait hour
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   /** Poll every 6 hours. */
   @js.native
-  sealed trait sixHours extends PeriodicUpdateRecurrence
+  sealed trait sixHours
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   /** Poll every 12 hours. */
   @js.native
-  sealed trait twelveHours extends PeriodicUpdateRecurrence
+  sealed trait twelveHours
+    extends StObject
+       with PeriodicUpdateRecurrence
 }

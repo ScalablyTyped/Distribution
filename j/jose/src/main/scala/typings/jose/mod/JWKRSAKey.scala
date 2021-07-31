@@ -3,38 +3,37 @@ package typings.jose.mod
 import typings.jose.joseStrings.RSA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JWKRSAKey
-  extends KeyParameters
+  extends StObject
+     with KeyParameters
      with JSONWebKey
      with _ProduceKeyInput {
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var dp: js.UndefOr[String] = js.native
+  var dp: js.UndefOr[String] = js.undefined
   
-  var dq: js.UndefOr[String] = js.native
+  var dq: js.UndefOr[String] = js.undefined
   
-  var e: String = js.native
+  var e: String
   
-  var kty: RSA = js.native
+  var kty: RSA
   
-  var n: String = js.native
+  var n: String
   
-  var p: js.UndefOr[String] = js.native
+  var p: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var qi: js.UndefOr[String] = js.native
+  var qi: js.UndefOr[String] = js.undefined
 }
 object JWKRSAKey {
   
   @scala.inline
-  def apply(e: String, kty: RSA, n: String): JWKRSAKey = {
-    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+  def apply(e: String, n: String): JWKRSAKey = {
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = "RSA", n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKRSAKey]
   }
   

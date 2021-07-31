@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteClusterSnapshotsResult extends StObject {
   
   /**
     * A list of any errors returned.
     */
-  var Errors: js.UndefOr[BatchSnapshotOperationErrorList] = js.native
+  var Errors: js.UndefOr[BatchSnapshotOperationErrorList] = js.undefined
   
   /**
     * A list of the snapshot identifiers that were deleted. 
     */
-  var Resources: js.UndefOr[SnapshotIdentifierList] = js.native
+  var Resources: js.UndefOr[SnapshotIdentifierList] = js.undefined
 }
 object BatchDeleteClusterSnapshotsResult {
   

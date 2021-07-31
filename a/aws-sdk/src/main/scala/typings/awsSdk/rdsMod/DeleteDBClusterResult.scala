@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBClusterResult extends StObject {
   
-  var DBCluster: js.UndefOr[typings.awsSdk.rdsMod.DBCluster] = js.native
+  var DBCluster: js.UndefOr[typings.awsSdk.rdsMod.DBCluster] = js.undefined
 }
 object DeleteDBClusterResult {
   

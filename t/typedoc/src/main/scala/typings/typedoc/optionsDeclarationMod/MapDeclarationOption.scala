@@ -4,20 +4,20 @@ import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapDeclarationOption[T] extends DeclarationOptionBase {
+trait MapDeclarationOption[T]
+  extends StObject
+     with DeclarationOptionBase {
   
-  var defaultValue: T = js.native
+  var defaultValue: T
   
-  var map: (Map[String, T]) | (Record[String | Double, T]) = js.native
+  var map: (Map[String, T]) | (Record[String | Double, T])
   
-  var mapError: js.UndefOr[String] = js.native
+  var mapError: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_MapDeclarationOption: typings.typedoc.optionsDeclarationMod.ParameterType.Map = js.native
+  var type_MapDeclarationOption: typings.typedoc.optionsDeclarationMod.ParameterType.Map
 }
 object MapDeclarationOption {
   
@@ -35,7 +35,7 @@ object MapDeclarationOption {
   }
   
   @scala.inline
-  implicit class MapDeclarationOptionMutableBuilder[Self <: MapDeclarationOption[_], T] (val x: Self with MapDeclarationOption[T]) extends AnyVal {
+  implicit class MapDeclarationOptionMutableBuilder[Self <: MapDeclarationOption[?], T] (val x: Self & MapDeclarationOption[T]) extends AnyVal {
     
     @scala.inline
     def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])

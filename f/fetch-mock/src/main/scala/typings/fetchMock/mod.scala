@@ -18,7 +18,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,16 +27,18 @@ object mod extends Shortcut {
   val ^ : FetchMockStatic = js.native
   
   @js.native
-  trait FetchMockSandbox extends FetchMockStatic {
+  trait FetchMockSandbox
+    extends StObject
+       with FetchMockStatic {
     
     /**
       * Also callable as fetch(). Use `typeof fetch` in your code to define
       * a field that accepts both `fetch()` and a fetch-mock sandbox.
       */
     def apply(): js.Promise[Response] = js.native
-    def apply(input: js.UndefOr[scala.Nothing], init: RequestInit): js.Promise[Response] = js.native
     def apply(input: String): js.Promise[Response] = js.native
     def apply(input: String, init: RequestInit): js.Promise[Response] = js.native
+    def apply(input: Unit, init: RequestInit): js.Promise[Response] = js.native
     def apply(input: Request): js.Promise[Response] = js.native
     def apply(input: Request, init: RequestInit): js.Promise[Response] = js.native
   }
@@ -59,8 +60,9 @@ object mod extends Shortcut {
       * filter the list of calls further.
       */
     def called(): Boolean = js.native
-    def called(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): Boolean = js.native
+    def called(filter: Unit, options: InspectionOptions): Boolean = js.native
     def called(filter: InspectionFilter): Boolean = js.native
+    def called(filter: InspectionFilter, options: InspectionOptions): Boolean = js.native
     
     /**
       * Returns an array of all calls to fetch matching the given filters.
@@ -74,8 +76,9 @@ object mod extends Shortcut {
       * filter the list of calls further.
       */
     def calls(): js.Array[MockCall] = js.native
-    def calls(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.Array[MockCall] = js.native
+    def calls(filter: Unit, options: InspectionOptions): js.Array[MockCall] = js.native
     def calls(filter: InspectionFilter): js.Array[MockCall] = js.native
+    def calls(filter: InspectionFilter, options: InspectionOptions): js.Array[MockCall] = js.native
     
     /**
       * Chainable method that defines how to respond to calls to fetch that
@@ -207,8 +210,9 @@ object mod extends Shortcut {
       * filter the list of calls further.
       */
     def lastCall(): js.UndefOr[MockCall] = js.native
-    def lastCall(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[MockCall] = js.native
+    def lastCall(filter: Unit, options: InspectionOptions): js.UndefOr[MockCall] = js.native
     def lastCall(filter: InspectionFilter): js.UndefOr[MockCall] = js.native
+    def lastCall(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockCall] = js.native
     
     /**
       * Returns the options for the call to fetch matching the given filter.
@@ -221,8 +225,9 @@ object mod extends Shortcut {
       * filter the list of calls further.
       */
     def lastOptions(): js.UndefOr[MockOptions] = js.native
-    def lastOptions(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[MockOptions] = js.native
+    def lastOptions(filter: Unit, options: InspectionOptions): js.UndefOr[MockOptions] = js.native
     def lastOptions(filter: InspectionFilter): js.UndefOr[MockOptions] = js.native
+    def lastOptions(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockOptions] = js.native
     
     /**
       * Returns the url for the last call to fetch matching the given
@@ -235,8 +240,9 @@ object mod extends Shortcut {
       * filter the list of calls further.
       */
     def lastUrl(): js.UndefOr[String] = js.native
-    def lastUrl(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[String] = js.native
+    def lastUrl(filter: Unit, options: InspectionOptions): js.UndefOr[String] = js.native
     def lastUrl(filter: InspectionFilter): js.UndefOr[String] = js.native
+    def lastUrl(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[String] = js.native
     
     /**
       * Replaces fetch() with a stub which records its calls, grouped by
@@ -432,7 +438,8 @@ object mod extends Shortcut {
   
   @js.native
   trait MockCall
-    extends Array[js.UndefOr[String | RequestInit]] {
+    extends StObject
+       with Array[js.UndefOr[String | RequestInit]] {
     
     var `0`: String = js.native
     
@@ -468,39 +475,38 @@ object mod extends Shortcut {
   /**
     * Mock options object
     */
-  @js.native
   trait MockOptions extends StObject {
     
     /**
       * body to match
       */
-    var body: js.UndefOr[String | js.Object] = js.native
+    var body: js.UndefOr[String | js.Object] = js.undefined
     
     /**
       * A function for arbitrary matching
       */
-    var functionMatcher: js.UndefOr[MockMatcherFunction] = js.native
+    var functionMatcher: js.UndefOr[MockMatcherFunction] = js.undefined
     
     /**
       * key/value map of headers to match
       */
-    var headers: js.UndefOr[StringDictionary[String | Double]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
     /**
       * Automatically sets a content-length header on each response.
       * @default true
       */
-    var includeContentLength: js.UndefOr[Boolean] = js.native
+    var includeContentLength: js.UndefOr[Boolean] = js.undefined
     
     /**
       * as specified above
       */
-    var matcher: js.UndefOr[MockMatcher] = js.native
+    var matcher: js.UndefOr[MockMatcher] = js.undefined
     
     /**
       * http method to match
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * A unique string naming the route. Used to subsequently retrieve
@@ -511,24 +517,24 @@ object mod extends Shortcut {
       *  (because names are optional, auto-generated ones may legitimately
       *  clash)
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * This option allows for existing routes in a mock to be overwritten.
       * It’s also possible to define multiple routes with ‘the same’ matcher.
       * Default behaviour is to error
       */
-    var overwriteRoutes: js.UndefOr[Boolean] = js.native
+    var overwriteRoutes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * key/value map of express style path params to match
       */
-    var params: js.UndefOr[StringDictionary[String]] = js.native
+    var params: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * key/value map of query strings to match, in any order
       */
-    var query: js.UndefOr[StringDictionary[String]] = js.native
+    var query: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * integer, n, limiting the number of times the matcher can be used.
@@ -537,12 +543,12 @@ object mod extends Shortcut {
       * any other routes defined (which may eventually result in an error
       * if nothing matches it).
       */
-    var repeat: js.UndefOr[Double] = js.native
+    var repeat: js.UndefOr[Double] = js.undefined
     
     /**
       * as specified above
       */
-    var response: js.UndefOr[MockResponse | MockResponseFunction] = js.native
+    var response: js.UndefOr[MockResponse | MockResponseFunction] = js.undefined
     
     /**
       * Convert objects into JSON before delivering as stub responses. Can
@@ -551,7 +557,7 @@ object mod extends Shortcut {
       * header.
       * @default true
       */
-    var sendAsJson: js.UndefOr[Boolean] = js.native
+    var sendAsJson: js.UndefOr[Boolean] = js.undefined
   }
   object MockOptions {
     
@@ -650,11 +656,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MockOptionsMethodDelete extends MockOptions {
+  trait MockOptionsMethodDelete
+    extends StObject
+       with MockOptions {
     
     @JSName("method")
-    var method_MockOptionsMethodDelete: js.UndefOr[DELETE] = js.native
+    var method_MockOptionsMethodDelete: js.UndefOr[DELETE] = js.undefined
   }
   object MockOptionsMethodDelete {
     
@@ -675,11 +682,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MockOptionsMethodGet extends MockOptions {
+  trait MockOptionsMethodGet
+    extends StObject
+       with MockOptions {
     
     @JSName("method")
-    var method_MockOptionsMethodGet: js.UndefOr[GET] = js.native
+    var method_MockOptionsMethodGet: js.UndefOr[GET] = js.undefined
   }
   object MockOptionsMethodGet {
     
@@ -700,11 +708,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MockOptionsMethodHead extends MockOptions {
+  trait MockOptionsMethodHead
+    extends StObject
+       with MockOptions {
     
     @JSName("method")
-    var method_MockOptionsMethodHead: js.UndefOr[HEAD] = js.native
+    var method_MockOptionsMethodHead: js.UndefOr[HEAD] = js.undefined
   }
   object MockOptionsMethodHead {
     
@@ -725,11 +734,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MockOptionsMethodPost extends MockOptions {
+  trait MockOptionsMethodPost
+    extends StObject
+       with MockOptions {
     
     @JSName("method")
-    var method_MockOptionsMethodPost: js.UndefOr[POST] = js.native
+    var method_MockOptionsMethodPost: js.UndefOr[POST] = js.undefined
   }
   object MockOptionsMethodPost {
     
@@ -750,11 +760,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait MockOptionsMethodPut extends MockOptions {
+  trait MockOptionsMethodPut
+    extends StObject
+       with MockOptions {
     
     @JSName("method")
-    var method_MockOptionsMethodPut: js.UndefOr[PUT] = js.native
+    var method_MockOptionsMethodPut: js.UndefOr[PUT] = js.undefined
   }
   object MockOptionsMethodPut {
     
@@ -797,36 +808,35 @@ object mod extends Shortcut {
   /**
     * Mock response object
     */
-  @js.native
   trait MockResponseObject extends StObject {
     
     /**
       * Set the response body
       */
-    var body: js.UndefOr[String | js.Object] = js.native
+    var body: js.UndefOr[String | js.Object] = js.undefined
     
     /**
       * Set the response headers.
       */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The URL the response should be from (to imitate followed redirects
       *  - will set redirected: true on the response)
       */
-    var redirectUrl: js.UndefOr[String] = js.native
+    var redirectUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Set the response status
       * @default 200
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
     /**
       * If this property is present then a Promise rejected with the value
       * of throws is returned
       */
-    var throws: js.UndefOr[Error] = js.native
+    var throws: js.UndefOr[Error] = js.undefined
   }
   object MockResponseObject {
     

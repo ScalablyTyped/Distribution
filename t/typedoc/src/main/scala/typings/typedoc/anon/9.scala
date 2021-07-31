@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.defaultCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var name: defaultCategory = js.native
+  var name: defaultCategory
 }
 object `9` {
   
   @scala.inline
-  def apply(name: defaultCategory): `9` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `9` = {
+    val __obj = js.Dynamic.literal(name = "defaultCategory")
     __obj.asInstanceOf[`9`]
   }
   

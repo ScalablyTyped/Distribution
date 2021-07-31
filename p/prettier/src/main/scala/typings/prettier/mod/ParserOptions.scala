@@ -19,17 +19,17 @@ import typings.prettier.prettierStrings.preserve
 import typings.prettier.prettierStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParserOptions[T] extends RequiredOptions {
+trait ParserOptions[T]
+  extends StObject
+     with RequiredOptions {
   
-  def locEnd(node: T): Double = js.native
+  def locEnd(node: T): Double
   
-  def locStart(node: T): Double = js.native
+  def locStart(node: T): Double
   
-  var originalText: String = js.native
+  var originalText: String
 }
 object ParserOptions {
   
@@ -49,7 +49,7 @@ object ParserOptions {
     locStart: T => Double,
     originalText: String,
     parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser,
-    plugins: js.Array[String | Plugin[_]],
+    plugins: js.Array[String | Plugin[js.Any]],
     printWidth: Double,
     proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
@@ -68,7 +68,7 @@ object ParserOptions {
   }
   
   @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions[_], T] (val x: Self with ParserOptions[T]) extends AnyVal {
+  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions[?], T] (val x: Self & ParserOptions[T]) extends AnyVal {
     
     @scala.inline
     def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))

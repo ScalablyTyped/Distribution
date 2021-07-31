@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1AddTrialMeasurementRequest extends StObject {
   
   /** Required. The measurement to be added to a trial. */
-  var measurement: js.UndefOr[GoogleCloudMlV1Measurement] = js.native
+  var measurement: js.UndefOr[GoogleCloudMlV1Measurement] = js.undefined
 }
 object GoogleCloudMlV1AddTrialMeasurementRequest {
   

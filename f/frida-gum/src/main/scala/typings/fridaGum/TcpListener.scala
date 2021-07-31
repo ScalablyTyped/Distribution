@@ -2,18 +2,17 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TcpListener
-  extends BaseListener
+  extends StObject
+     with BaseListener
      with SocketListener {
   
   /**
     * IP port being listened on.
     */
-  var port: Double = js.native
+  var port: Double
 }
 object TcpListener {
   

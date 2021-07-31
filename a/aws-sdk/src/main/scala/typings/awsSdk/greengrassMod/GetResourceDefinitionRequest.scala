@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceDefinitionRequest extends StObject {
   
   /**
     * The ID of the resource definition.
     */
-  var ResourceDefinitionId: string = js.native
+  var ResourceDefinitionId: string
 }
 object GetResourceDefinitionRequest {
   

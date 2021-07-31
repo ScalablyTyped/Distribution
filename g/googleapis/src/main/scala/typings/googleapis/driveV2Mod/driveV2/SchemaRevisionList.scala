@@ -2,30 +2,28 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of revisions of a file.
   */
-@js.native
 trait SchemaRevisionList extends StObject {
   
   /**
     * The ETag of the list.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The list of revisions. If nextPageToken is populated, then this list may
     * be incomplete and an additional page of results should be fetched.
     */
-  var items: js.UndefOr[js.Array[SchemaRevision]] = js.native
+  var items: js.UndefOr[js.Array[SchemaRevision]] = js.undefined
   
   /**
     * This is always drive#revisionList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of revisions. This field will be absent
@@ -33,12 +31,12 @@ trait SchemaRevisionList extends StObject {
     * rejected for any reason, it should be discarded and pagination should be
     * restarted from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaRevisionList {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issue extends StObject {
   
   /** List of issues. Applicable only for Collection Edition and Omnibus. */
-  var issue: js.UndefOr[js.Array[IssueDisplayNumber]] = js.native
+  var issue: js.UndefOr[js.Array[IssueDisplayNumber]] = js.undefined
   
   /** The book order number in the series. */
-  var orderNumber: js.UndefOr[Double] = js.native
+  var orderNumber: js.UndefOr[Double] = js.undefined
   
   /** The book type in the context of series. Examples - Single Issue, Collection Edition, etc. */
-  var seriesBookType: js.UndefOr[String] = js.native
+  var seriesBookType: js.UndefOr[String] = js.undefined
   
   /** The series id. */
-  var seriesId: js.UndefOr[String] = js.native
+  var seriesId: js.UndefOr[String] = js.undefined
 }
 object Issue {
   

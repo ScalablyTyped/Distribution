@@ -2,21 +2,19 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigAlg extends StObject {
   
-  var certs: js.Array[String] = js.native
+  var certs: js.Array[String]
   
-  var hashAlg: String = js.native
+  var hashAlg: String
   
-  var sigAlg: String = js.native
+  var sigAlg: String
   
-  var signerCert: String = js.native
+  var signerCert: String
   
-  var signerPrvKey: String = js.native
+  var signerPrvKey: String
 }
 object SigAlg {
   

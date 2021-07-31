@@ -2,37 +2,35 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseSensitive extends StObject {
   
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var extractA: js.UndefOr[String] = js.native
+  var extractA: js.UndefOr[String] = js.undefined
   
-  var extractB: js.UndefOr[String] = js.native
+  var extractB: js.UndefOr[String] = js.undefined
   
-  var fieldA: js.UndefOr[String] = js.native
+  var fieldA: js.UndefOr[String] = js.undefined
   
-  var fieldAIndex: js.UndefOr[Double] = js.native
+  var fieldAIndex: js.UndefOr[Double] = js.undefined
   
-  var fieldARequired: js.UndefOr[Boolean] = js.native
+  var fieldARequired: js.UndefOr[Boolean] = js.undefined
   
-  var fieldB: js.UndefOr[String] = js.native
+  var fieldB: js.UndefOr[String] = js.undefined
   
-  var fieldBIndex: js.UndefOr[Double] = js.native
+  var fieldBIndex: js.UndefOr[Double] = js.undefined
   
-  var fieldBRequired: js.UndefOr[Boolean] = js.native
+  var fieldBRequired: js.UndefOr[Boolean] = js.undefined
   
-  var outputConstructor: js.UndefOr[String] = js.native
+  var outputConstructor: js.UndefOr[String] = js.undefined
   
-  var outputToField: js.UndefOr[String] = js.native
+  var outputToField: js.UndefOr[String] = js.undefined
   
-  var outputToFieldIndex: js.UndefOr[Double] = js.native
+  var outputToFieldIndex: js.UndefOr[Double] = js.undefined
   
-  var overrideOutputField: js.UndefOr[Boolean] = js.native
+  var overrideOutputField: js.UndefOr[Boolean] = js.undefined
 }
 object CaseSensitive {
   

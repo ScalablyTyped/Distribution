@@ -6,15 +6,13 @@ import typings.select2.select2Strings.select
 import typings.select2.select2Strings.unselect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IngParams extends StObject {
   
-  var name: select | open | close | unselect = js.native
+  var name: select | open | close | unselect
   
-  var prevented: Boolean = js.native
+  var prevented: Boolean
 }
 object IngParams {
   

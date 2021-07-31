@@ -5,17 +5,15 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Failinfo extends StObject {
   
-  var failinfo: js.UndefOr[NameParam | IntegerParam] = js.native
+  var failinfo: js.UndefOr[NameParam | IntegerParam] = js.undefined
   
-  var statstr: js.UndefOr[ArrayParam[String]] = js.native
+  var statstr: js.UndefOr[ArrayParam[String]] = js.undefined
   
-  var status: NameParam = js.native
+  var status: NameParam
 }
 object Failinfo {
   

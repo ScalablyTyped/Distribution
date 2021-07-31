@@ -5,21 +5,22 @@ import typings.react.mod.ReactNode
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayEnvironmentProviderMod {
   
-  @JSImport("react-relay/lib/relay-experimental/RelayEnvironmentProvider", "RelayEnvironmentProvider")
+  @JSImport("react-relay/lib/relay-experimental/RelayEnvironmentProvider", JSImport.Namespace)
   @js.native
-  def RelayEnvironmentProvider(props: Props): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def RelayEnvironmentProvider(props: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RelayEnvironmentProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var environment: Environment = js.native
+    var environment: Environment
   }
   object Props {
     

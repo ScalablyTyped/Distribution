@@ -2,39 +2,37 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedDateTimeFormatOptions extends StObject {
   
-  var calendar: String = js.native
+  var calendar: String
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var era: js.UndefOr[String] = js.native
+  var era: js.UndefOr[String] = js.undefined
   
-  var hour: js.UndefOr[String] = js.native
+  var hour: js.UndefOr[String] = js.undefined
   
-  var hour12: js.UndefOr[Boolean] = js.native
+  var hour12: js.UndefOr[Boolean] = js.undefined
   
-  var locale: String = js.native
+  var locale: String
   
-  var minute: js.UndefOr[String] = js.native
+  var minute: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var second: js.UndefOr[String] = js.native
+  var second: js.UndefOr[String] = js.undefined
   
-  var timeZone: String = js.native
+  var timeZone: String
   
-  var timeZoneName: js.UndefOr[String] = js.native
+  var timeZoneName: js.UndefOr[String] = js.undefined
   
-  var weekday: js.UndefOr[String] = js.native
+  var weekday: js.UndefOr[String] = js.undefined
   
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object ResolvedDateTimeFormatOptions {
   

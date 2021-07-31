@@ -5,23 +5,21 @@ import typings.electron.electronStrings.overlay
 import typings.electron.electronStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarButton extends StObject {
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var icon: NativeImage_ = js.native
+  var icon: NativeImage_
   
-  var iconPosition: left | right | overlay = js.native
+  var iconPosition: left | right | overlay
   
-  var label: String = js.native
+  var label: String
 }
 object TouchBarButton {
   

@@ -2,25 +2,23 @@ package typings.googleapis.storageV1Mod.storageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of notification subscriptions.
   */
-@js.native
 trait SchemaNotifications extends StObject {
   
   /**
     * The list of items.
     */
-  var items: js.UndefOr[js.Array[SchemaNotification]] = js.native
+  var items: js.UndefOr[js.Array[SchemaNotification]] = js.undefined
   
   /**
     * The kind of item this is. For lists of notifications, this is always
     * storage#notifications.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaNotifications {
   

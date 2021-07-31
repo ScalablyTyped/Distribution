@@ -3,7 +3,6 @@ package typings.webix.webix
 import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,7 +33,7 @@ trait UIManager extends StObject {
   def hasFocus(id: Double): Boolean = js.native
   
   def removeHotKey(key: String): Unit = js.native
-  def removeHotKey(key: String, handler: js.UndefOr[scala.Nothing], obj: js.Any): Unit = js.native
+  def removeHotKey(key: String, handler: Unit, obj: js.Any): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
   

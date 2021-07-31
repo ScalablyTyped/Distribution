@@ -3,15 +3,13 @@ package typings.rcTable.anon
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentTarget extends StObject {
   
-  var currentTarget: HTMLDivElement = js.native
+  var currentTarget: HTMLDivElement
   
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
 }
 object CurrentTarget {
   

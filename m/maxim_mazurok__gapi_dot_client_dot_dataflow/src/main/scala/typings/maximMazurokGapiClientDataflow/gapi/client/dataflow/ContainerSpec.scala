@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSpec extends StObject {
   
   /** Default runtime environment for the job. */
-  var defaultEnvironment: js.UndefOr[FlexTemplateRuntimeEnvironment] = js.native
+  var defaultEnvironment: js.UndefOr[FlexTemplateRuntimeEnvironment] = js.undefined
   
   /** Name of the docker container image. E.g., gcr.io/project/some-image */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** Metadata describing a template including description and validation rules. */
-  var metadata: js.UndefOr[TemplateMetadata] = js.native
+  var metadata: js.UndefOr[TemplateMetadata] = js.undefined
   
   /** Required. SDK info of the Flex Template. */
-  var sdkInfo: js.UndefOr[SDKInfo] = js.native
+  var sdkInfo: js.UndefOr[SDKInfo] = js.undefined
 }
 object ContainerSpec {
   

@@ -2,17 +2,15 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SanitizeOpts extends StObject {
   
   /** A list of element names to remove from the template. */
-  var elements: js.Array[String] = js.native
+  var elements: js.Array[String]
   
   /** Whether or not to remove DOM event listener attributes, like onclick, from the template. */
-  var eventAttributes: js.UndefOr[Boolean] = js.native
+  var eventAttributes: js.UndefOr[Boolean] = js.undefined
 }
 object SanitizeOpts {
   

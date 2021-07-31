@@ -2,7 +2,6 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,173 +11,257 @@ sealed trait ECurrencyCode extends StObject
 object ECurrencyCode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ECurrencyCode with Double] = js.native
+  def apply(value: Double): js.UndefOr[ECurrencyCode & Double] = js.native
   
   @js.native
-  sealed trait AED extends ECurrencyCode
-  /* 32 */ val AED: typings.steamClient.mod.ECurrencyCode.AED with Double = js.native
+  sealed trait AED
+    extends StObject
+       with ECurrencyCode
+  /* 32 */ val AED: typings.steamClient.mod.ECurrencyCode.AED & Double = js.native
   
   @js.native
-  sealed trait ARS extends ECurrencyCode
-  /* 34 */ val ARS: typings.steamClient.mod.ECurrencyCode.ARS with Double = js.native
+  sealed trait ARS
+    extends StObject
+       with ECurrencyCode
+  /* 34 */ val ARS: typings.steamClient.mod.ECurrencyCode.ARS & Double = js.native
   
   @js.native
-  sealed trait AUD extends ECurrencyCode
-  /* 21 */ val AUD: typings.steamClient.mod.ECurrencyCode.AUD with Double = js.native
+  sealed trait AUD
+    extends StObject
+       with ECurrencyCode
+  /* 21 */ val AUD: typings.steamClient.mod.ECurrencyCode.AUD & Double = js.native
   
   @js.native
-  sealed trait BRL extends ECurrencyCode
-  /* 7 */ val BRL: typings.steamClient.mod.ECurrencyCode.BRL with Double = js.native
+  sealed trait BRL
+    extends StObject
+       with ECurrencyCode
+  /* 7 */ val BRL: typings.steamClient.mod.ECurrencyCode.BRL & Double = js.native
   
   @js.native
-  sealed trait BYN extends ECurrencyCode
-  /* 36 */ val BYN: typings.steamClient.mod.ECurrencyCode.BYN with Double = js.native
+  sealed trait BYN
+    extends StObject
+       with ECurrencyCode
+  /* 36 */ val BYN: typings.steamClient.mod.ECurrencyCode.BYN & Double = js.native
   
   @js.native
-  sealed trait CAD extends ECurrencyCode
-  /* 20 */ val CAD: typings.steamClient.mod.ECurrencyCode.CAD with Double = js.native
+  sealed trait CAD
+    extends StObject
+       with ECurrencyCode
+  /* 20 */ val CAD: typings.steamClient.mod.ECurrencyCode.CAD & Double = js.native
   
   @js.native
-  sealed trait CHF extends ECurrencyCode
-  /* 4 */ val CHF: typings.steamClient.mod.ECurrencyCode.CHF with Double = js.native
+  sealed trait CHF
+    extends StObject
+       with ECurrencyCode
+  /* 4 */ val CHF: typings.steamClient.mod.ECurrencyCode.CHF & Double = js.native
   
   @js.native
-  sealed trait CLP extends ECurrencyCode
-  /* 25 */ val CLP: typings.steamClient.mod.ECurrencyCode.CLP with Double = js.native
+  sealed trait CLP
+    extends StObject
+       with ECurrencyCode
+  /* 25 */ val CLP: typings.steamClient.mod.ECurrencyCode.CLP & Double = js.native
   
   @js.native
-  sealed trait CNY extends ECurrencyCode
-  /* 23 */ val CNY: typings.steamClient.mod.ECurrencyCode.CNY with Double = js.native
+  sealed trait CNY
+    extends StObject
+       with ECurrencyCode
+  /* 23 */ val CNY: typings.steamClient.mod.ECurrencyCode.CNY & Double = js.native
   
   @js.native
-  sealed trait COP extends ECurrencyCode
-  /* 27 */ val COP: typings.steamClient.mod.ECurrencyCode.COP with Double = js.native
+  sealed trait COP
+    extends StObject
+       with ECurrencyCode
+  /* 27 */ val COP: typings.steamClient.mod.ECurrencyCode.COP & Double = js.native
   
   @js.native
-  sealed trait CRC extends ECurrencyCode
-  /* 40 */ val CRC: typings.steamClient.mod.ECurrencyCode.CRC with Double = js.native
+  sealed trait CRC
+    extends StObject
+       with ECurrencyCode
+  /* 40 */ val CRC: typings.steamClient.mod.ECurrencyCode.CRC & Double = js.native
   
   @js.native
-  sealed trait EUR extends ECurrencyCode
-  /* 3 */ val EUR: typings.steamClient.mod.ECurrencyCode.EUR with Double = js.native
+  sealed trait EUR
+    extends StObject
+       with ECurrencyCode
+  /* 3 */ val EUR: typings.steamClient.mod.ECurrencyCode.EUR & Double = js.native
   
   @js.native
-  sealed trait GBP extends ECurrencyCode
-  /* 2 */ val GBP: typings.steamClient.mod.ECurrencyCode.GBP with Double = js.native
+  sealed trait GBP
+    extends StObject
+       with ECurrencyCode
+  /* 2 */ val GBP: typings.steamClient.mod.ECurrencyCode.GBP & Double = js.native
   
   @js.native
-  sealed trait HKD extends ECurrencyCode
-  /* 29 */ val HKD: typings.steamClient.mod.ECurrencyCode.HKD with Double = js.native
+  sealed trait HKD
+    extends StObject
+       with ECurrencyCode
+  /* 29 */ val HKD: typings.steamClient.mod.ECurrencyCode.HKD & Double = js.native
   
   @js.native
-  sealed trait IDR extends ECurrencyCode
-  /* 10 */ val IDR: typings.steamClient.mod.ECurrencyCode.IDR with Double = js.native
+  sealed trait IDR
+    extends StObject
+       with ECurrencyCode
+  /* 10 */ val IDR: typings.steamClient.mod.ECurrencyCode.IDR & Double = js.native
   
   @js.native
-  sealed trait ILS extends ECurrencyCode
-  /* 35 */ val ILS: typings.steamClient.mod.ECurrencyCode.ILS with Double = js.native
+  sealed trait ILS
+    extends StObject
+       with ECurrencyCode
+  /* 35 */ val ILS: typings.steamClient.mod.ECurrencyCode.ILS & Double = js.native
   
   @js.native
-  sealed trait INR extends ECurrencyCode
-  /* 24 */ val INR: typings.steamClient.mod.ECurrencyCode.INR with Double = js.native
+  sealed trait INR
+    extends StObject
+       with ECurrencyCode
+  /* 24 */ val INR: typings.steamClient.mod.ECurrencyCode.INR & Double = js.native
   
   @js.native
-  sealed trait Invalid extends ECurrencyCode
-  /* 0 */ val Invalid: typings.steamClient.mod.ECurrencyCode.Invalid with Double = js.native
+  sealed trait Invalid
+    extends StObject
+       with ECurrencyCode
+  /* 0 */ val Invalid: typings.steamClient.mod.ECurrencyCode.Invalid & Double = js.native
   
   @js.native
-  sealed trait JPY extends ECurrencyCode
-  /* 8 */ val JPY: typings.steamClient.mod.ECurrencyCode.JPY with Double = js.native
+  sealed trait JPY
+    extends StObject
+       with ECurrencyCode
+  /* 8 */ val JPY: typings.steamClient.mod.ECurrencyCode.JPY & Double = js.native
   
   @js.native
-  sealed trait KRW extends ECurrencyCode
-  /* 16 */ val KRW: typings.steamClient.mod.ECurrencyCode.KRW with Double = js.native
+  sealed trait KRW
+    extends StObject
+       with ECurrencyCode
+  /* 16 */ val KRW: typings.steamClient.mod.ECurrencyCode.KRW & Double = js.native
   
   @js.native
-  sealed trait KWD extends ECurrencyCode
-  /* 38 */ val KWD: typings.steamClient.mod.ECurrencyCode.KWD with Double = js.native
+  sealed trait KWD
+    extends StObject
+       with ECurrencyCode
+  /* 38 */ val KWD: typings.steamClient.mod.ECurrencyCode.KWD & Double = js.native
   
   @js.native
-  sealed trait KZT extends ECurrencyCode
-  /* 37 */ val KZT: typings.steamClient.mod.ECurrencyCode.KZT with Double = js.native
+  sealed trait KZT
+    extends StObject
+       with ECurrencyCode
+  /* 37 */ val KZT: typings.steamClient.mod.ECurrencyCode.KZT & Double = js.native
   
   @js.native
-  sealed trait MXN extends ECurrencyCode
-  /* 19 */ val MXN: typings.steamClient.mod.ECurrencyCode.MXN with Double = js.native
+  sealed trait MXN
+    extends StObject
+       with ECurrencyCode
+  /* 19 */ val MXN: typings.steamClient.mod.ECurrencyCode.MXN & Double = js.native
   
   @js.native
-  sealed trait MYR extends ECurrencyCode
-  /* 11 */ val MYR: typings.steamClient.mod.ECurrencyCode.MYR with Double = js.native
+  sealed trait MYR
+    extends StObject
+       with ECurrencyCode
+  /* 11 */ val MYR: typings.steamClient.mod.ECurrencyCode.MYR & Double = js.native
   
   @js.native
-  sealed trait Max extends ECurrencyCode
-  /* 42 */ val Max: typings.steamClient.mod.ECurrencyCode.Max with Double = js.native
+  sealed trait Max
+    extends StObject
+       with ECurrencyCode
+  /* 42 */ val Max: typings.steamClient.mod.ECurrencyCode.Max & Double = js.native
   
   @js.native
-  sealed trait NOK extends ECurrencyCode
-  /* 9 */ val NOK: typings.steamClient.mod.ECurrencyCode.NOK with Double = js.native
+  sealed trait NOK
+    extends StObject
+       with ECurrencyCode
+  /* 9 */ val NOK: typings.steamClient.mod.ECurrencyCode.NOK & Double = js.native
   
   @js.native
-  sealed trait NZD extends ECurrencyCode
-  /* 22 */ val NZD: typings.steamClient.mod.ECurrencyCode.NZD with Double = js.native
+  sealed trait NZD
+    extends StObject
+       with ECurrencyCode
+  /* 22 */ val NZD: typings.steamClient.mod.ECurrencyCode.NZD & Double = js.native
   
   @js.native
-  sealed trait PEN extends ECurrencyCode
-  /* 26 */ val PEN: typings.steamClient.mod.ECurrencyCode.PEN with Double = js.native
+  sealed trait PEN
+    extends StObject
+       with ECurrencyCode
+  /* 26 */ val PEN: typings.steamClient.mod.ECurrencyCode.PEN & Double = js.native
   
   @js.native
-  sealed trait PHP extends ECurrencyCode
-  /* 12 */ val PHP: typings.steamClient.mod.ECurrencyCode.PHP with Double = js.native
+  sealed trait PHP
+    extends StObject
+       with ECurrencyCode
+  /* 12 */ val PHP: typings.steamClient.mod.ECurrencyCode.PHP & Double = js.native
   
   @js.native
-  sealed trait PLN extends ECurrencyCode
-  /* 6 */ val PLN: typings.steamClient.mod.ECurrencyCode.PLN with Double = js.native
+  sealed trait PLN
+    extends StObject
+       with ECurrencyCode
+  /* 6 */ val PLN: typings.steamClient.mod.ECurrencyCode.PLN & Double = js.native
   
   @js.native
-  sealed trait QAR extends ECurrencyCode
-  /* 39 */ val QAR: typings.steamClient.mod.ECurrencyCode.QAR with Double = js.native
+  sealed trait QAR
+    extends StObject
+       with ECurrencyCode
+  /* 39 */ val QAR: typings.steamClient.mod.ECurrencyCode.QAR & Double = js.native
   
   @js.native
-  sealed trait RUB extends ECurrencyCode
-  /* 5 */ val RUB: typings.steamClient.mod.ECurrencyCode.RUB with Double = js.native
+  sealed trait RUB
+    extends StObject
+       with ECurrencyCode
+  /* 5 */ val RUB: typings.steamClient.mod.ECurrencyCode.RUB & Double = js.native
   
   @js.native
-  sealed trait SAR extends ECurrencyCode
-  /* 31 */ val SAR: typings.steamClient.mod.ECurrencyCode.SAR with Double = js.native
+  sealed trait SAR
+    extends StObject
+       with ECurrencyCode
+  /* 31 */ val SAR: typings.steamClient.mod.ECurrencyCode.SAR & Double = js.native
   
   @js.native
-  sealed trait SGD extends ECurrencyCode
-  /* 13 */ val SGD: typings.steamClient.mod.ECurrencyCode.SGD with Double = js.native
+  sealed trait SGD
+    extends StObject
+       with ECurrencyCode
+  /* 13 */ val SGD: typings.steamClient.mod.ECurrencyCode.SGD & Double = js.native
   
   @js.native
-  sealed trait THB extends ECurrencyCode
-  /* 14 */ val THB: typings.steamClient.mod.ECurrencyCode.THB with Double = js.native
+  sealed trait THB
+    extends StObject
+       with ECurrencyCode
+  /* 14 */ val THB: typings.steamClient.mod.ECurrencyCode.THB & Double = js.native
   
   @js.native
-  sealed trait TRY extends ECurrencyCode
-  /* 17 */ val TRY: typings.steamClient.mod.ECurrencyCode.TRY with Double = js.native
+  sealed trait TRY
+    extends StObject
+       with ECurrencyCode
+  /* 17 */ val TRY: typings.steamClient.mod.ECurrencyCode.TRY & Double = js.native
   
   @js.native
-  sealed trait TWD extends ECurrencyCode
-  /* 30 */ val TWD: typings.steamClient.mod.ECurrencyCode.TWD with Double = js.native
+  sealed trait TWD
+    extends StObject
+       with ECurrencyCode
+  /* 30 */ val TWD: typings.steamClient.mod.ECurrencyCode.TWD & Double = js.native
   
   @js.native
-  sealed trait UAH extends ECurrencyCode
-  /* 18 */ val UAH: typings.steamClient.mod.ECurrencyCode.UAH with Double = js.native
+  sealed trait UAH
+    extends StObject
+       with ECurrencyCode
+  /* 18 */ val UAH: typings.steamClient.mod.ECurrencyCode.UAH & Double = js.native
   
   @js.native
-  sealed trait USD extends ECurrencyCode
-  /* 1 */ val USD: typings.steamClient.mod.ECurrencyCode.USD with Double = js.native
+  sealed trait USD
+    extends StObject
+       with ECurrencyCode
+  /* 1 */ val USD: typings.steamClient.mod.ECurrencyCode.USD & Double = js.native
   
   @js.native
-  sealed trait UYU extends ECurrencyCode
-  /* 41 */ val UYU: typings.steamClient.mod.ECurrencyCode.UYU with Double = js.native
+  sealed trait UYU
+    extends StObject
+       with ECurrencyCode
+  /* 41 */ val UYU: typings.steamClient.mod.ECurrencyCode.UYU & Double = js.native
   
   @js.native
-  sealed trait VND extends ECurrencyCode
-  /* 15 */ val VND: typings.steamClient.mod.ECurrencyCode.VND with Double = js.native
+  sealed trait VND
+    extends StObject
+       with ECurrencyCode
+  /* 15 */ val VND: typings.steamClient.mod.ECurrencyCode.VND & Double = js.native
   
   @js.native
-  sealed trait ZAR extends ECurrencyCode
-  /* 28 */ val ZAR: typings.steamClient.mod.ECurrencyCode.ZAR with Double = js.native
+  sealed trait ZAR
+    extends StObject
+       with ECurrencyCode
+  /* 28 */ val ZAR: typings.steamClient.mod.ECurrencyCode.ZAR & Double = js.native
 }

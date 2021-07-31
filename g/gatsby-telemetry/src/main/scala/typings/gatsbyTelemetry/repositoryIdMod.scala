@@ -2,27 +2,27 @@ package typings.gatsbyTelemetry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryIdMod {
   
-  @JSImport("gatsby-telemetry/lib/repository-id", "getRepoMetadata")
+  @JSImport("gatsby-telemetry/lib/repository-id", JSImport.Namespace)
   @js.native
-  def getRepoMetadata(url: String): IRepositoryData | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-telemetry/lib/repository-id", "getRepositoryId")
-  @js.native
-  def getRepositoryId(): IRepositoryId = js.native
+  @scala.inline
+  def getRepoMetadata(url: String): IRepositoryData | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepoMetadata")(url.asInstanceOf[js.Any]).asInstanceOf[IRepositoryData | Null]
   
-  @js.native
+  @scala.inline
+  def getRepositoryId(): IRepositoryId = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryId")().asInstanceOf[IRepositoryId]
+  
   trait IRepositoryData extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var owner: js.UndefOr[String] = js.native
+    var owner: js.UndefOr[String] = js.undefined
     
-    var provider: String = js.native
+    var provider: String
   }
   object IRepositoryData {
     
@@ -52,12 +52,11 @@ object repositoryIdMod {
     }
   }
   
-  @js.native
   trait IRepositoryId extends StObject {
     
-    var repositoryData: js.UndefOr[IRepositoryData | Null] = js.native
+    var repositoryData: js.UndefOr[IRepositoryData | Null] = js.undefined
     
-    var repositoryId: String = js.native
+    var repositoryId: String
   }
   object IRepositoryId {
     

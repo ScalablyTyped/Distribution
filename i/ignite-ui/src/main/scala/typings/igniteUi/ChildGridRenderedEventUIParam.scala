@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildGridRenderedEventUIParam extends StObject {
   
   /**
     * Gets reference to the child grid.
     */
-  var childgrid: js.UndefOr[js.Any] = js.native
+  var childgrid: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the hierarchical grid object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the row element for the row that's about to be populated.
     */
-  var parentrow: js.UndefOr[String] = js.native
+  var parentrow: js.UndefOr[String] = js.undefined
 }
 object ChildGridRenderedEventUIParam {
   

@@ -3,16 +3,16 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StackedRNNCellsArgs extends LayerArgs {
+trait StackedRNNCellsArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * A `Array` of `RNNCell` instances.
     */
-  var cells: js.Array[RNNCell] = js.native
+  var cells: js.Array[RNNCell]
 }
 object StackedRNNCellsArgs {
   

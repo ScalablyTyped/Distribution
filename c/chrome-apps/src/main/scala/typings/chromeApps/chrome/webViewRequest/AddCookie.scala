@@ -2,14 +2,12 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @private
   * @template T Type of cookie
   */
-@js.native
 trait AddCookie[T] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait AddCookie[T] extends StObject {
     * No field may be undefined.
     * The name and value need to be specified.
     */
-  var cookie: T = js.native
+  var cookie: T
 }
 object AddCookie {
   
@@ -28,7 +26,7 @@ object AddCookie {
   }
   
   @scala.inline
-  implicit class AddCookieMutableBuilder[Self <: AddCookie[_], T] (val x: Self with AddCookie[T]) extends AnyVal {
+  implicit class AddCookieMutableBuilder[Self <: AddCookie[?], T] (val x: Self & AddCookie[T]) extends AnyVal {
     
     @scala.inline
     def setCookie(value: T): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])

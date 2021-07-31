@@ -7,21 +7,23 @@ import typings.firebaseInstallations.firebaseInstallationsStrings.`missing-app-c
 import typings.firebaseInstallations.firebaseInstallationsStrings.`not-registered`
 import typings.firebaseInstallations.firebaseInstallationsStrings.`request-failed`
 import typings.firebaseUtil.mod.ErrorFactory
-import typings.std.Record
+import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
+  
+  @JSImport("@firebase/installations/dist/src/util/errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/installations/dist/src/util/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[ErrorCode, ErrorParams] = js.native
   
-  @JSImport("@firebase/installations/dist/src/util/errors", "isServerError")
-  @js.native
-  def isServerError(error: js.Any): /* is @firebase/installations.@firebase/installations/dist/src/util/errors.ServerError */ Boolean = js.native
+  @scala.inline
+  def isServerError(error: js.Any): /* is @firebase/installations.@firebase/installations/dist/src/util/errors.ServerError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isServerError")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/installations.@firebase/installations/dist/src/util/errors.ServerError */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseInstallations.firebaseInstallationsStrings.`missing-app-config-values`
@@ -56,29 +58,20 @@ object errorsMod {
   @js.native
   trait ErrorParams extends StObject
   
-  /* Inlined @firebase/util.@firebase/util.FirebaseError & {  customData :@firebase/installations.@firebase/installations/dist/src/util/errors.ServerErrorData} */
   @js.native
-  trait ServerError extends StObject {
+  trait ServerError extends FirebaseError {
     
-    val code: String = js.native
-    
-    var customData: (js.UndefOr[Record[String, _]]) with ServerErrorData = js.native
-    
-    var message: String = js.native
-    
-    val name: /* "FirebaseError" */ String = js.native
-    
-    var stack: js.UndefOr[String] = js.native
+    @JSName("customData")
+    var customData_ServerError: ServerErrorData = js.native
   }
   
-  @js.native
   trait ServerErrorData extends StObject {
     
-    var serverCode: Double = js.native
+    var serverCode: Double
     
-    var serverMessage: String = js.native
+    var serverMessage: String
     
-    var serverStatus: String = js.native
+    var serverStatus: String
   }
   object ServerErrorData {
     

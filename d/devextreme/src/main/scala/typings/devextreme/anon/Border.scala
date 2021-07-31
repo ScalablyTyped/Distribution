@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
-  var border: js.UndefOr[ColorVisible] = js.native
+  var border: js.UndefOr[ColorVisible] = js.undefined
   
-  var hatching: js.UndefOr[Step] = js.native
+  var hatching: js.UndefOr[Step] = js.undefined
 }
 object Border {
   

@@ -3,17 +3,15 @@ package typings.atom.anon
 import typings.atom.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /** The path to the file to which the message applies. */
-  var file: String = js.native
+  var file: String
   
   /** The range of the message in the editor. */
-  var position: Range = js.native
+  var position: Range
 }
 object File {
   

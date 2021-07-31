@@ -2,16 +2,16 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberFormat extends DefaultFormatter {
+trait NumberFormat
+  extends StObject
+     with DefaultFormatter {
   
   /**
     * Returns the formatted value of a given value. This method does not require a DataTable.
     */
-  def formatValue(value: Double): String = js.native
+  def formatValue(value: Double): String
 }
 object NumberFormat {
   

@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceCompliancePolicy extends Entity {
+trait DeviceCompliancePolicy
+  extends StObject
+     with Entity {
   
   // The collection of assignments for this compliance policy.
-  var assignments: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicyAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicyAssignment]]] = js.undefined
   
   // DateTime the object was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Admin provided description of the Device Configuration.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Compliance Setting State Device Summary
-  var deviceSettingStateSummaries: js.UndefOr[NullableOption[js.Array[SettingStateDeviceSummary]]] = js.native
+  var deviceSettingStateSummaries: js.UndefOr[NullableOption[js.Array[SettingStateDeviceSummary]]] = js.undefined
   
   // Device compliance devices status overview
-  var deviceStatusOverview: js.UndefOr[NullableOption[DeviceComplianceDeviceOverview]] = js.native
+  var deviceStatusOverview: js.UndefOr[NullableOption[DeviceComplianceDeviceOverview]] = js.undefined
   
   // List of DeviceComplianceDeviceStatus.
-  var deviceStatuses: js.UndefOr[NullableOption[js.Array[DeviceComplianceDeviceStatus]]] = js.native
+  var deviceStatuses: js.UndefOr[NullableOption[js.Array[DeviceComplianceDeviceStatus]]] = js.undefined
   
   // Admin provided name of the device configuration.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The list of scheduled action for this rule
-  var scheduledActionsForRule: js.UndefOr[NullableOption[js.Array[DeviceComplianceScheduledActionForRule]]] = js.native
+  var scheduledActionsForRule: js.UndefOr[NullableOption[js.Array[DeviceComplianceScheduledActionForRule]]] = js.undefined
   
   // Device compliance users status overview
-  var userStatusOverview: js.UndefOr[NullableOption[DeviceComplianceUserOverview]] = js.native
+  var userStatusOverview: js.UndefOr[NullableOption[DeviceComplianceUserOverview]] = js.undefined
   
   // List of DeviceComplianceUserStatus.
-  var userStatuses: js.UndefOr[NullableOption[js.Array[DeviceComplianceUserStatus]]] = js.native
+  var userStatuses: js.UndefOr[NullableOption[js.Array[DeviceComplianceUserStatus]]] = js.undefined
   
   // Version of the device configuration.
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DeviceCompliancePolicy {
   

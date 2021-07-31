@@ -3,33 +3,31 @@ package typings.nodeRedEditorClient.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodesRegistry extends StObject {
   
-  def addNodeSet(ns: js.Object): Unit = js.native
+  def addNodeSet(ns: js.Object): Unit
   
-  def disableNodeSet(id: String): Unit = js.native
+  def disableNodeSet(id: String): Unit
   
-  def enableNodeSet(id: String): Unit = js.native
+  def enableNodeSet(id: String): Unit
   
-  def getIconSets(): Record[String, js.Array[String]] = js.native
+  def getIconSets(): Record[String, js.Array[String]]
   
-  def getModule(module: String): js.Object = js.native
+  def getModule(module: String): js.Object
   
-  def getModuleList(): js.Object = js.native
+  def getModuleList(): js.Object
   
-  def getNodeList(): js.Array[js.Object] = js.native
+  def getNodeList(): js.Array[js.Object]
   
-  def getNodeSet(id: String): js.Object = js.native
+  def getNodeSet(id: String): js.Object
   
-  def getNodeSetForType(nodeType: String): js.Object = js.native
+  def getNodeSetForType(nodeType: String): js.Object
   
-  def getNodeType(nt: String): NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties] = js.native
+  def getNodeType(nt: String): NodeDef[NodeProperties, Unit, NodeProperties]
   
-  def getNodeTypes(): js.Array[String] = js.native
+  def getNodeTypes(): js.Array[String]
   
   /**
     * Registers a node with the editor.     *
@@ -39,17 +37,17 @@ trait NodesRegistry extends StObject {
     * @param def The node definition contains all of the information about the node
     * needed by the editor.
     */
-  def registerNodeType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](nt: String, `def`: NodeDef[TProps, TCreds, TInstProps]): Unit = js.native
+  def registerNodeType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](nt: String, `def`: NodeDef[TProps, TCreds, TInstProps]): Unit
   
-  def removeNodeSet[T /* <: js.Object */](ns: T): T = js.native
+  def removeNodeSet[T /* <: js.Object */](ns: T): T
   
-  def removeNodeType(nt: String): Unit = js.native
+  def removeNodeType(nt: String): Unit
   
-  def setIconSets(sets: Record[String, js.Array[String]]): Unit = js.native
+  def setIconSets(sets: Record[String, js.Array[String]]): Unit
   
-  def setModulePendingUpdated(module: String, version: String): Unit = js.native
+  def setModulePendingUpdated(module: String, version: String): Unit
   
-  def setNodeList(list: js.Array[js.Object]): Unit = js.native
+  def setNodeList(list: js.Array[js.Object]): Unit
 }
 object NodesRegistry {
   
@@ -64,7 +62,7 @@ object NodesRegistry {
     getNodeList: () => js.Array[js.Object],
     getNodeSet: String => js.Object,
     getNodeSetForType: String => js.Object,
-    getNodeType: String => NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties],
+    getNodeType: String => NodeDef[NodeProperties, Unit, NodeProperties],
     getNodeTypes: () => js.Array[String],
     registerNodeType: (String, NodeDef[js.Any, js.Any, js.Any]) => Unit,
     removeNodeSet: js.Any => js.Any,
@@ -108,7 +106,7 @@ object NodesRegistry {
     def setGetNodeSetForType(value: String => js.Object): Self = StObject.set(x, "getNodeSetForType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeType(value: String => NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties]): Self = StObject.set(x, "getNodeType", js.Any.fromFunction1(value))
+    def setGetNodeType(value: String => NodeDef[NodeProperties, Unit, NodeProperties]): Self = StObject.set(x, "getNodeType", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetNodeTypes(value: () => js.Array[String]): Self = StObject.set(x, "getNodeTypes", js.Any.fromFunction0(value))

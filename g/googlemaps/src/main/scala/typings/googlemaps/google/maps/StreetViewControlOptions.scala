@@ -2,11 +2,9 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for the rendering of the Street View pegman control on the map. */
-@js.native
 trait StreetViewControlOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait StreetViewControlOptions extends StObject {
     * displayed as part of the navigation controls. Otherwise, it will be
     * displayed separately.
     */
-  var position: js.UndefOr[ControlPosition] = js.native
+  var position: js.UndefOr[ControlPosition] = js.undefined
 }
 object StreetViewControlOptions {
   

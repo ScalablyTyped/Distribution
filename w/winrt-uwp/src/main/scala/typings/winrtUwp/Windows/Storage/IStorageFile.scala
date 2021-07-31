@@ -7,13 +7,13 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file. Provides information about the file and its contents, and ways to manipulate them. */
 @js.native
 trait IStorageFile
-  extends IStorageItem
+  extends StObject
+     with IStorageItem
      with IRandomAccessStreamReference
      with IInputStreamReference {
   

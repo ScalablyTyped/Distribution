@@ -2,21 +2,19 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mozosxfontsmoothing extends StObject {
   
-  var `-moz-osx-font-smoothing`: String = js.native
+  var `-moz-osx-font-smoothing`: String
   
-  var `-webkit-font-smoothing`: String = js.native
+  var `-webkit-font-smoothing`: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontWeight: Double = js.native
+  var fontWeight: Double
   
-  var textRendering: String = js.native
+  var textRendering: String
 }
 object Mozosxfontsmoothing {
   

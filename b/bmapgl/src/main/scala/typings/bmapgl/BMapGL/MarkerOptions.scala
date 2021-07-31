@@ -2,31 +2,29 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerOptions extends StObject {
   
-  var draggingCursor: js.UndefOr[String] = js.native
+  var draggingCursor: js.UndefOr[String] = js.undefined
   
-  var enableClicking: js.UndefOr[Boolean] = js.native
+  var enableClicking: js.UndefOr[Boolean] = js.undefined
   
-  var enableDragging: js.UndefOr[Boolean] = js.native
+  var enableDragging: js.UndefOr[Boolean] = js.undefined
   
-  var enableMassClear: js.UndefOr[Boolean] = js.native
+  var enableMassClear: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Icon] = js.native
+  var icon: js.UndefOr[Icon] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var raiseOnDrag: js.UndefOr[Boolean] = js.native
+  var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var shadow: js.UndefOr[Icon] = js.native
+  var shadow: js.UndefOr[Icon] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object MarkerOptions {
   

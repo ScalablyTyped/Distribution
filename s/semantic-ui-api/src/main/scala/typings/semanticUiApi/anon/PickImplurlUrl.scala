@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.Api.MetadataSettings._Impl, 'url'> */
-@js.native
 trait PickImplurlUrl extends StObject {
   
-  var url: String = js.native
+  var url: String
 }
 object PickImplurlUrl {
   

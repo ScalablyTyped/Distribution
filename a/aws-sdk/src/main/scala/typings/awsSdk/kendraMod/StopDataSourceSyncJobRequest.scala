@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDataSourceSyncJobRequest extends StObject {
   
   /**
     * The identifier of the data source for which to stop the synchronization jobs.
     */
-  var Id: DataSourceId = js.native
+  var Id: DataSourceId
   
   /**
     * The identifier of the index that contains the data source.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
 }
 object StopDataSourceSyncJobRequest {
   

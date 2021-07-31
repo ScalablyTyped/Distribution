@@ -2,29 +2,27 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerProps extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var markerHeight: js.UndefOr[NumberProp] = js.native
+  var markerHeight: js.UndefOr[NumberProp] = js.undefined
   
-  var markerUnits: js.UndefOr[MarkerUnits] = js.native
+  var markerUnits: js.UndefOr[MarkerUnits] = js.undefined
   
-  var markerWidth: js.UndefOr[NumberProp] = js.native
+  var markerWidth: js.UndefOr[NumberProp] = js.undefined
   
-  var orient: js.UndefOr[Orient | NumberProp] = js.native
+  var orient: js.UndefOr[Orient | NumberProp] = js.undefined
   
-  var preserveAspectRatio: js.UndefOr[String] = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.undefined
   
-  var refX: js.UndefOr[NumberProp] = js.native
+  var refX: js.UndefOr[NumberProp] = js.undefined
   
-  var refY: js.UndefOr[NumberProp] = js.native
+  var refY: js.UndefOr[NumberProp] = js.undefined
   
-  var viewBox: js.UndefOr[String] = js.native
+  var viewBox: js.UndefOr[String] = js.undefined
 }
 object MarkerProps {
   

@@ -2,31 +2,29 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parents extends StObject {
   
-  var author: Avatarurl = js.native
+  var author: Avatarurl
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var commit: AuthorCommentcount = js.native
+  var commit: AuthorCommentcount
   
-  var committer: Avatarurl = js.native
+  var committer: Avatarurl
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var parents: js.Array[HtmlurlSha] = js.native
+  var parents: js.Array[HtmlurlSha]
   
-  var repository: Branchesurl = js.native
+  var repository: Branchesurl
   
-  var score: Double = js.native
+  var score: Double
   
-  var sha: String = js.native
+  var sha: String
   
-  var url: String = js.native
+  var url: String
 }
 object Parents {
   

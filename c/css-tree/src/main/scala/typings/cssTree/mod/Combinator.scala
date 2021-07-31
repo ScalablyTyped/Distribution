@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Combinator
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_Combinator: typings.cssTree.cssTreeStrings.Combinator = js.native
+  var type_Combinator: typings.cssTree.cssTreeStrings.Combinator
 }
 object Combinator {
   
   @scala.inline
-  def apply(name: String, `type`: typings.cssTree.cssTreeStrings.Combinator): Combinator = {
+  def apply(name: String): Combinator = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Combinator")
     __obj.asInstanceOf[Combinator]
   }
   

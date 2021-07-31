@@ -2,51 +2,49 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseOperationFailure extends StObject {
   
   /**
     * Error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Failure time.
     */
-  var FailureTime: js.UndefOr[DateTime] = js.native
+  var FailureTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Reserved.
     */
-  var MetadataList: js.UndefOr[typings.awsSdk.licensemanagerMod.MetadataList] = js.native
+  var MetadataList: js.UndefOr[typings.awsSdk.licensemanagerMod.MetadataList] = js.undefined
   
   /**
     * Name of the operation.
     */
-  var OperationName: js.UndefOr[String] = js.native
+  var OperationName: js.UndefOr[String] = js.undefined
   
   /**
     * The requester is "License Manager Automated Discovery".
     */
-  var OperationRequestedBy: js.UndefOr[String] = js.native
+  var OperationRequestedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: js.UndefOr[String] = js.native
+  var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the AWS account that owns the resource.
     */
-  var ResourceOwnerId: js.UndefOr[String] = js.native
+  var ResourceOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.undefined
 }
 object LicenseOperationFailure {
   

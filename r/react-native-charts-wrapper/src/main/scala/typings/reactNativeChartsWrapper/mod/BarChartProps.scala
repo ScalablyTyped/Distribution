@@ -2,19 +2,19 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BarChartProps extends BarLineChartBase {
+trait BarChartProps
+  extends StObject
+     with BarLineChartBase {
   
-  var data: BarData = js.native
+  var data: BarData
   
-  var drawBarShadow: js.UndefOr[Boolean] = js.native
+  var drawBarShadow: js.UndefOr[Boolean] = js.undefined
   
-  var drawValueAboveBar: js.UndefOr[Boolean] = js.native
+  var drawValueAboveBar: js.UndefOr[Boolean] = js.undefined
   
-  var highlightFullBarEnabled: js.UndefOr[Boolean] = js.native
+  var highlightFullBarEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object BarChartProps {
   

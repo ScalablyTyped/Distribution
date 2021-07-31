@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeveloperMetadataLookup extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DeveloperMetadataLookup extends StObject {
     * specified to INTERSECTING, developer metadata associated on intersecting locations is also matched. If left unspecified, this field assumes a default value of INTERSECTING. If this
     * field is specified, a metadataLocation must also be specified.
     */
-  var locationMatchingStrategy: js.UndefOr[String] = js.native
+  var locationMatchingStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to those entries which are associated with locations of the specified type. For example, when this field is specified as ROW this lookup only
@@ -21,28 +19,28 @@ trait DeveloperMetadataLookup extends StObject {
     * locationMatchingStrategy is specified as INTERSECTING or when the metadataLocation is specified as a non-spreadsheet location: spreadsheet metadata cannot intersect any other
     * developer metadata location. This field also must be left unspecified when the locationMatchingStrategy is specified as EXACT.
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /** Limits the selected developer metadata to that which has a matching DeveloperMetadata.metadata_id. */
-  var metadataId: js.UndefOr[Double] = js.native
+  var metadataId: js.UndefOr[Double] = js.undefined
   
   /** Limits the selected developer metadata to that which has a matching DeveloperMetadata.metadata_key. */
-  var metadataKey: js.UndefOr[String] = js.native
+  var metadataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to those entries associated with the specified location. This field either matches exact locations or all intersecting locations according the
     * specified locationMatchingStrategy.
     */
-  var metadataLocation: js.UndefOr[DeveloperMetadataLocation] = js.native
+  var metadataLocation: js.UndefOr[DeveloperMetadataLocation] = js.undefined
   
   /** Limits the selected developer metadata to that which has a matching DeveloperMetadata.metadata_value. */
-  var metadataValue: js.UndefOr[String] = js.native
+  var metadataValue: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to that which has a matching DeveloperMetadata.visibility. If left unspecified, all developer metadata visibile to the requesting project is
     * considered.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object DeveloperMetadataLookup {
   

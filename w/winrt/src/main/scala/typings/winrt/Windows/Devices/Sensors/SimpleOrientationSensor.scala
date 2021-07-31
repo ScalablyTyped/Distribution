@@ -2,11 +2,11 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleOrientationSensor extends ISimpleOrientationSensor
+trait SimpleOrientationSensor
+  extends StObject
+     with ISimpleOrientationSensor
 object SimpleOrientationSensor {
   
   @scala.inline

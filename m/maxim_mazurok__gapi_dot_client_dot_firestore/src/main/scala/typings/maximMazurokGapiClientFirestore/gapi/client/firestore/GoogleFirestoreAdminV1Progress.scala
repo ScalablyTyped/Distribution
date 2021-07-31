@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1Progress extends StObject {
   
   /** The amount of work completed. */
-  var completedWork: js.UndefOr[String] = js.native
+  var completedWork: js.UndefOr[String] = js.undefined
   
   /** The amount of work estimated. */
-  var estimatedWork: js.UndefOr[String] = js.native
+  var estimatedWork: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1Progress {
   

@@ -3,15 +3,13 @@ package typings.wepy.anon
 import typings.wepy.wxEnhancedMod.LagLng
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Northeast extends StObject {
   
-  var northeast: LagLng = js.native
+  var northeast: LagLng
   
-  var southwest: LagLng = js.native
+  var southwest: LagLng
 }
 object Northeast {
   

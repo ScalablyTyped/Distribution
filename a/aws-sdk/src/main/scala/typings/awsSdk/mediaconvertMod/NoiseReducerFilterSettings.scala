@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoiseReducerFilterSettings extends StObject {
   
   /**
     * Relative strength of noise reducing filter. Higher values produce stronger filtering.
     */
-  var Strength: js.UndefOr[integerMin0Max3] = js.native
+  var Strength: js.UndefOr[integerMin0Max3] = js.undefined
 }
 object NoiseReducerFilterSettings {
   

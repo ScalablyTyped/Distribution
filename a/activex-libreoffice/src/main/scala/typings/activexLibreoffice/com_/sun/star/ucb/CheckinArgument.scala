@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,30 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The checkin command is always called on the target private working copy document.
   */
-@js.native
 trait CheckinArgument extends StObject {
   
   /** Tells whether to create a new major or minor version during the checkin. */
-  var MajorVersion: Boolean = js.native
+  var MajorVersion: Boolean
   
   /** contains the Mime-Type of the content to check-in as it may be different from the original one. */
-  var MimeType: String = js.native
+  var MimeType: String
   
   /**
     * contains the title of the transferred object, if it is different from the original one.
     *
     * If this field is filled, for example, a file will be renamed while it is being checked in.
     */
-  var NewTitle: String = js.native
+  var NewTitle: String
   
   /** contains the URL of the source of the action (e.g. the URL of the temporary file to checkin). */
-  var SourceURL: String = js.native
+  var SourceURL: String
   
   /** contains the URL of the private working copy to checkin. */
-  var TargetURL: String = js.native
+  var TargetURL: String
   
   /** Contains the version comment to set during the checkin. */
-  var VersionComment: String = js.native
+  var VersionComment: String
 }
 object CheckinArgument {
   

@@ -2,21 +2,19 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksUpdateParamsOutput extends StObject {
   
-  var annotations: js.UndefOr[js.Array[ChecksUpdateParamsOutputAnnotations]] = js.native
+  var annotations: js.UndefOr[js.Array[ChecksUpdateParamsOutputAnnotations]] = js.undefined
   
-  var images: js.UndefOr[js.Array[ChecksUpdateParamsOutputImages]] = js.native
+  var images: js.UndefOr[js.Array[ChecksUpdateParamsOutputImages]] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ChecksUpdateParamsOutput {
   

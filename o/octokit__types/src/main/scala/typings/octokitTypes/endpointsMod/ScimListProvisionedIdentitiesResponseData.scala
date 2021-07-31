@@ -3,21 +3,19 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Emails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScimListProvisionedIdentitiesResponseData extends StObject {
   
-  var Resources: js.Array[Emails] = js.native
+  var Resources: js.Array[Emails]
   
-  var itemsPerPage: Double = js.native
+  var itemsPerPage: Double
   
-  var schemas: js.Array[String] = js.native
+  var schemas: js.Array[String]
   
-  var startIndex: Double = js.native
+  var startIndex: Double
   
-  var totalResults: Double = js.native
+  var totalResults: Double
 }
 object ScimListProvisionedIdentitiesResponseData {
   

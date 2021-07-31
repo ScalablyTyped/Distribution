@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoBuilder[Media] extends AdWordsBuilder[Media] {
+trait VideoBuilder[Media]
+  extends StObject
+     with AdWordsBuilder[Media] {
   
-  def withYouTubeVideoId(youTubeVideoId: String): VideoBuilder[Media] = js.native
+  def withYouTubeVideoId(youTubeVideoId: String): VideoBuilder[Media]
 }
 object VideoBuilder {
   
@@ -19,7 +19,7 @@ object VideoBuilder {
   }
   
   @scala.inline
-  implicit class VideoBuilderMutableBuilder[Self <: VideoBuilder[_], Media] (val x: Self with VideoBuilder[Media]) extends AnyVal {
+  implicit class VideoBuilderMutableBuilder[Self <: VideoBuilder[?], Media] (val x: Self & VideoBuilder[Media]) extends AnyVal {
     
     @scala.inline
     def setWithYouTubeVideoId(value: String => VideoBuilder[Media]): Self = StObject.set(x, "withYouTubeVideoId", js.Any.fromFunction1(value))

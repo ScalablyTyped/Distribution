@@ -2,41 +2,39 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionListItem extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that id entifies the execution.
     */
-  var executionArn: Arn = js.native
+  var executionArn: Arn
   
   /**
     * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The date the execution started.
     */
-  var startDate: Timestamp = js.native
+  var startDate: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the executed state machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * The current status of the execution.
     */
-  var status: ExecutionStatus = js.native
+  var status: ExecutionStatus
   
   /**
     * If the execution already ended, the date the execution stopped.
     */
-  var stopDate: js.UndefOr[Timestamp] = js.native
+  var stopDate: js.UndefOr[Timestamp] = js.undefined
 }
 object ExecutionListItem {
   

@@ -2,7 +2,6 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,19 +21,19 @@ trait Research extends StObject {
     * @param boolean [LaunchQuery=true]
     */
   def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any): Unit = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.Any,
-    QueryLanguage: js.Any,
-    UseSelection: js.UndefOr[scala.Nothing],
-    LaunchQuery: Boolean
-  ): Unit = js.native
   def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any, UseSelection: Boolean): Unit = js.native
   def Query(
     ServiceID: String,
     QueryString: js.Any,
     QueryLanguage: js.Any,
     UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): Unit = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.Any,
+    QueryLanguage: js.Any,
+    UseSelection: Unit,
     LaunchQuery: Boolean
   ): Unit = js.native
   

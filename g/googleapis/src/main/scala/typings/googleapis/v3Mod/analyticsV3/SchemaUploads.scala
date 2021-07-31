@@ -2,7 +2,6 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Each custom data source can have a set of uploads. Each resource in the
   * upload collection corresponds to a single Analytics data upload.
   */
-@js.native
 trait SchemaUploads extends StObject {
   
   /**
     * A list of uploads.
     */
-  var items: js.UndefOr[js.Array[SchemaUpload]] = js.native
+  var items: js.UndefOr[js.Array[SchemaUpload]] = js.undefined
   
   /**
     * The maximum number of resources the response can contain, regardless of
@@ -24,34 +22,34 @@ trait SchemaUploads extends StObject {
     * with a value of 1000 by default, or otherwise specified by the
     * max-results query parameter.
     */
-  var itemsPerPage: js.UndefOr[Double] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Collection type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Link to next page for this upload collection.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * Link to previous page for this upload collection.
     */
-  var previousLink: js.UndefOr[String] = js.native
+  var previousLink: js.UndefOr[String] = js.undefined
   
   /**
     * The starting index of the resources, which is 1 by default or otherwise
     * specified by the start-index query parameter.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of results for the query, regardless of the number of
     * resources in the result.
     */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object SchemaUploads {
   

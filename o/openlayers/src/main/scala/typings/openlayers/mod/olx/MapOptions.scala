@@ -11,40 +11,38 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the map.
   */
-@js.native
 trait MapOptions extends StObject {
   
-  var controls: js.UndefOr[Collection[Control] | js.Array[Control]] = js.native
+  var controls: js.UndefOr[Collection[Control] | js.Array[Control]] = js.undefined
   
-  var interactions: js.UndefOr[Collection[Interaction] | js.Array[Interaction]] = js.native
+  var interactions: js.UndefOr[Collection[Interaction] | js.Array[Interaction]] = js.undefined
   
-  var keyboardEventTarget: js.UndefOr[Element | Document | String] = js.native
+  var keyboardEventTarget: js.UndefOr[Element | Document | String] = js.undefined
   
-  var layers: js.UndefOr[js.Array[Base] | Collection[Base]] = js.native
+  var layers: js.UndefOr[js.Array[Base] | Collection[Base]] = js.undefined
   
-  var loadTilesWhileAnimating: js.UndefOr[Boolean] = js.native
+  var loadTilesWhileAnimating: js.UndefOr[Boolean] = js.undefined
   
-  var loadTilesWhileInteracting: js.UndefOr[Boolean] = js.native
+  var loadTilesWhileInteracting: js.UndefOr[Boolean] = js.undefined
   
-  var logo: js.UndefOr[Boolean | String | LogoOptions | Element] = js.native
+  var logo: js.UndefOr[Boolean | String | LogoOptions | Element] = js.undefined
   
-  var moveTolerance: js.UndefOr[Double] = js.native
+  var moveTolerance: js.UndefOr[Double] = js.undefined
   
-  var overlays: js.UndefOr[Collection[Overlay] | js.Array[Overlay]] = js.native
+  var overlays: js.UndefOr[Collection[Overlay] | js.Array[Overlay]] = js.undefined
   
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
-  var renderer: js.UndefOr[RendererType | (js.Array[RendererType | String]) | String] = js.native
+  var renderer: js.UndefOr[RendererType | (js.Array[RendererType | String]) | String] = js.undefined
   
-  var target: js.UndefOr[Element | String] = js.native
+  var target: js.UndefOr[Element | String] = js.undefined
   
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
 }
 object MapOptions {
   

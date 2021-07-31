@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RejectedLogEventsInfo extends StObject {
   
   /**
     * The expired log events.
     */
-  var expiredLogEventEndIndex: js.UndefOr[LogEventIndex] = js.native
+  var expiredLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined
   
   /**
     * The log events that are too new.
     */
-  var tooNewLogEventStartIndex: js.UndefOr[LogEventIndex] = js.native
+  var tooNewLogEventStartIndex: js.UndefOr[LogEventIndex] = js.undefined
   
   /**
     * The log events that are too old.
     */
-  var tooOldLogEventEndIndex: js.UndefOr[LogEventIndex] = js.native
+  var tooOldLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined
 }
 object RejectedLogEventsInfo {
   

@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Sys.Res")
 @js.native
 class Res ()
-  extends typings.microsoftAjax.Sys.Res
+  extends StObject
+     with typings.microsoftAjax.Sys.Res
 object Res {
   
   @JSGlobal("Sys.Res")

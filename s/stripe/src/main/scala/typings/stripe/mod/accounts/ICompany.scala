@@ -2,21 +2,21 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICompany extends ICompanyShared {
+trait ICompany
+  extends StObject
+     with ICompanyShared {
   
   /**
     * Whether the company’s business ID number was provided.
     */
-  var tax_id_provided: js.UndefOr[Boolean] = js.native
+  var tax_id_provided: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the company’s business VAT number was provided.
     */
-  var vat_id_provided: js.UndefOr[Boolean] = js.native
+  var vat_id_provided: js.UndefOr[Boolean] = js.undefined
 }
 object ICompany {
   

@@ -9,17 +9,15 @@ import typings.std.RegExp
 import typings.typedRestClient.anon.ArrayFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait IBasicCredentials extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object IBasicCredentials {
     
@@ -40,16 +38,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ICertConfiguration extends StObject {
     
-    var caFile: js.UndefOr[String] = js.native
+    var caFile: js.UndefOr[String] = js.undefined
     
-    var certFile: js.UndefOr[String] = js.native
+    var certFile: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
   }
   object ICertConfiguration {
     
@@ -132,12 +129,11 @@ object interfacesMod {
     def sendStream(verb: String, requestUrl: String, stream: ReadableStream, additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
   }
   
-  @js.native
   trait IHttpClientResponse extends StObject {
     
-    var message: IncomingMessage = js.native
+    var message: IncomingMessage
     
-    def readBody(): js.Promise[String] = js.native
+    def readBody(): js.Promise[String]
   }
   object IHttpClientResponse {
     
@@ -158,16 +154,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IProxyConfiguration extends StObject {
     
-    var proxyBypassHosts: js.UndefOr[js.Array[String]] = js.native
+    var proxyBypassHosts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var proxyPassword: js.UndefOr[String] = js.native
+    var proxyPassword: js.UndefOr[String] = js.undefined
     
-    var proxyUrl: String = js.native
+    var proxyUrl: String
     
-    var proxyUsername: js.UndefOr[String] = js.native
+    var proxyUsername: js.UndefOr[String] = js.undefined
   }
   object IProxyConfiguration {
     
@@ -206,14 +201,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRequestHandler extends StObject {
     
-    def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
+    def canHandleAuthentication(response: IHttpClientResponse): Boolean
     
-    def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
+    def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse]
     
-    def prepareRequest(options: RequestOptions): Unit = js.native
+    def prepareRequest(options: RequestOptions): Unit
   }
   object IRequestHandler {
     
@@ -241,14 +235,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRequestInfo extends StObject {
     
-    var httpModule: js.Any = js.native
+    var httpModule: js.Any
     
-    var options: RequestOptions = js.native
+    var options: RequestOptions
     
-    var parsedUrl: Url = js.native
+    var parsedUrl: Url
   }
   object IRequestInfo {
     
@@ -272,34 +265,33 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRequestOptions extends StObject {
     
-    var allowRedirectDowngrade: js.UndefOr[Boolean] = js.native
+    var allowRedirectDowngrade: js.UndefOr[Boolean] = js.undefined
     
-    var allowRedirects: js.UndefOr[Boolean] = js.native
+    var allowRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var allowRetries: js.UndefOr[Boolean] = js.native
+    var allowRetries: js.UndefOr[Boolean] = js.undefined
     
-    var cert: js.UndefOr[ICertConfiguration] = js.native
+    var cert: js.UndefOr[ICertConfiguration] = js.undefined
     
-    var headers: js.UndefOr[IHeaders] = js.native
+    var headers: js.UndefOr[IHeaders] = js.undefined
     
-    var ignoreSslError: js.UndefOr[Boolean] = js.native
+    var ignoreSslError: js.UndefOr[Boolean] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var presignedUrlPatterns: js.UndefOr[js.Array[RegExp]] = js.native
+    var presignedUrlPatterns: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var proxy: js.UndefOr[IProxyConfiguration] = js.native
+    var proxy: js.UndefOr[IProxyConfiguration] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
   }
   object IRequestOptions {
     
@@ -395,12 +387,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRequestQueryParams extends StObject {
     
-    var options: js.UndefOr[ArrayFormat] = js.native
+    var options: js.UndefOr[ArrayFormat] = js.undefined
     
-    var params: StringDictionary[String | Double | (js.Array[String | Double])] = js.native
+    var params: StringDictionary[String | Double | (js.Array[String | Double])]
   }
   object IRequestQueryParams {
     

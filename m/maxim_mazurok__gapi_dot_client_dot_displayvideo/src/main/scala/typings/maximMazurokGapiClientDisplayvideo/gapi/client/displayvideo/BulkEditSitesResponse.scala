@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditSitesResponse extends StObject {
   
   /** The list of sites that have been successfully created. This list will be absent if empty. */
-  var sites: js.UndefOr[js.Array[Site]] = js.native
+  var sites: js.UndefOr[js.Array[Site]] = js.undefined
 }
 object BulkEditSitesResponse {
   

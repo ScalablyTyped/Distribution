@@ -2,17 +2,15 @@ package typings.uikit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    var cancel: String = js.native
+    var cancel: String
     
-    var ok: String = js.native
+    var ok: String
   }
   object Cancel {
     
@@ -33,15 +31,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Svg extends StObject {
     
-    var svg: js.Promise[_] = js.native
+    var svg: js.Promise[js.Any]
   }
   object Svg {
     
     @scala.inline
-    def apply(svg: js.Promise[_]): Svg = {
+    def apply(svg: js.Promise[js.Any]): Svg = {
       val __obj = js.Dynamic.literal(svg = svg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Svg]
     }
@@ -50,7 +47,7 @@ object anon {
     implicit class SvgMutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setSvg(value: js.Promise[_]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      def setSvg(value: js.Promise[js.Any]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     }
   }
 }

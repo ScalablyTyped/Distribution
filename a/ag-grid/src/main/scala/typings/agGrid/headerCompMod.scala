@@ -8,7 +8,6 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerCompMod {
@@ -91,12 +90,11 @@ object headerCompMod {
     def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IHeader extends StObject
   
-  @js.native
   trait IHeaderComp
-    extends IHeader
+    extends StObject
+       with IHeader
        with IComponent[IHeaderParams]
   object IHeaderComp {
     

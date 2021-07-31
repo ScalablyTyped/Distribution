@@ -3,17 +3,17 @@ package typings.mssql.mod
 import typings.tedious.mod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IOptions extends ConnectionOptions {
+trait IOptions
+  extends StObject
+     with ConnectionOptions {
   
-  var beforeConnect: js.UndefOr[Unit] = js.native
+  var beforeConnect: js.UndefOr[Unit] = js.undefined
   
-  var connectionString: js.UndefOr[String] = js.native
+  var connectionString: js.UndefOr[String] = js.undefined
   
-  var trustedConnection: js.UndefOr[Boolean] = js.native
+  var trustedConnection: js.UndefOr[Boolean] = js.undefined
 }
 object IOptions {
   

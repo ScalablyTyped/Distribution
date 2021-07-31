@@ -11,20 +11,21 @@ import typings.webpackAssetsManifest.webpackAssetsManifestBooleans.`false`
 import typings.webpackAssetsManifest.webpackAssetsManifestStrings.customize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-assets-manifest", JSImport.Namespace)
   @js.native
-  class ^ () extends WebpackAssetsManifest {
+  class ^ ()
+    extends StObject
+       with WebpackAssetsManifest {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait AnyObject
-    extends Object
+    extends StObject
+       with Object
        with /* index */ StringDictionary[js.Any]
   object AnyObject {
     
@@ -39,12 +40,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object Entry {
     
@@ -65,15 +65,14 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** https://github.com/webdeveric/webpack-assets-manifest#apply */
     @JSName("apply")
-    var apply: js.UndefOr[(js.Function1[/* manifest */ WebpackAssetsManifest, Unit]) | Null] = js.native
+    var apply: js.UndefOr[(js.Function1[/* manifest */ WebpackAssetsManifest, Unit]) | Null] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#assets */
-    var assets: js.UndefOr[js.Object] = js.native
+    var assets: js.UndefOr[js.Object] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#customize */
     var customize: js.UndefOr[
@@ -84,41 +83,41 @@ object mod {
           /* asset */ AnyObject, 
           Entry | `false`
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#done */
     var done: js.UndefOr[
         (js.Function2[/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject, Unit]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#entrypoints */
-    var entrypoints: js.UndefOr[Boolean] = js.native
+    var entrypoints: js.UndefOr[Boolean] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#entrypointskey */
-    var entrypointsKey: js.UndefOr[String | `false`] = js.native
+    var entrypointsKey: js.UndefOr[String | `false`] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#fileextregex */
-    var fileExtRegex: js.UndefOr[RegExp | Null | `false`] = js.native
+    var fileExtRegex: js.UndefOr[RegExp | Null | `false`] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#integrity */
-    var integrity: js.UndefOr[Boolean] = js.native
+    var integrity: js.UndefOr[Boolean] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#integrityhashes */
-    var integrityHashes: js.UndefOr[js.Array[String]] = js.native
+    var integrityHashes: js.UndefOr[js.Array[String]] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#integritypropertyname */
-    var integrityPropertyName: js.UndefOr[String] = js.native
+    var integrityPropertyName: js.UndefOr[String] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#merge */
-    var merge: js.UndefOr[Boolean | customize] = js.native
+    var merge: js.UndefOr[Boolean | customize] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#output */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#publicpath */
     var publicPath: js.UndefOr[
         String | Boolean | Null | (js.Function2[/* filename */ String, /* manifest */ WebpackAssetsManifest, String])
-      ] = js.native
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#replacer */
     var replacer: js.UndefOr[
@@ -127,23 +126,23 @@ object mod {
           /* value */ String, 
           js.UndefOr[Double | String | Boolean | Null | js.Object]
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#sortmanifest */
     var sortManifest: js.UndefOr[
         Boolean | (js.ThisFunction2[/* this */ WebpackAssetsManifest, /* a */ String, /* b */ String, Double])
-      ] = js.native
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#space */
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#transform */
     var transform: js.UndefOr[
-        (js.Function2[/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest, _]) | Null
-      ] = js.native
+        (js.Function2[/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest, js.Any]) | Null
+      ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#writetodisk */
-    var writeToDisk: js.UndefOr[Boolean] = js.native
+    var writeToDisk: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -297,7 +296,7 @@ object mod {
       def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
       @scala.inline
-      def setTransform(value: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => _): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      def setTransform(value: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTransformNull: Self = StObject.set(x, "transform", null)
@@ -314,7 +313,9 @@ object mod {
   }
   
   @js.native
-  trait WebpackAssetsManifest extends Plugin {
+  trait WebpackAssetsManifest
+    extends StObject
+       with Plugin {
     
     /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
     var defaultOptions: Options = js.native

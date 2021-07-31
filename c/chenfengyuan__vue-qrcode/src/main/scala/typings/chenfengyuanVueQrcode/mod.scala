@@ -6,7 +6,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,9 @@ object mod extends Shortcut {
   val ^ : QrCodeConstructor = js.native
   
   @js.native
-  trait QrCodeConstructor extends VueConstructor[Vue] {
+  trait QrCodeConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     var methods: QrCodeMethods = js.native
     
@@ -25,11 +26,10 @@ object mod extends Shortcut {
     var watch: QrCodeWatch = js.native
   }
   
-  @js.native
   trait QrCodeMethods extends StObject {
     
     // Generate QR code.
-    def generate(): Unit = js.native
+    def generate(): Unit
   }
   object QrCodeMethods {
     
@@ -47,23 +47,22 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait QrCodePorps extends StObject {
     
     // The options for the QR code generator.
-    var options: Color = js.native
+    var options: Color
     
     // The tag name of the component's root element.
-    var tag: String = js.native
+    var tag: String
     
     // The value of the QR code.
-    var value: String | Null = js.native
+    var value: String | Null
   }
   object QrCodePorps {
     
     @scala.inline
     def apply(options: Color, tag: String): QrCodePorps = {
-      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[QrCodePorps]
     }
     
@@ -84,11 +83,10 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait QrCodeWatch extends StObject {
     
     @JSName("$props")
-    def $props(`val`: js.Any): Unit = js.native
+    def $props(`val`: js.Any): Unit
   }
   object QrCodeWatch {
     

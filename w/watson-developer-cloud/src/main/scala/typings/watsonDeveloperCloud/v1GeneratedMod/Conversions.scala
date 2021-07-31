@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Document conversion settings. */
-@js.native
 trait Conversions extends StObject {
   
   /** A list of HTML conversion settings. */
-  var html: js.UndefOr[HtmlSettings] = js.native
+  var html: js.UndefOr[HtmlSettings] = js.undefined
   
   /** Defines operations that can be used to transform the final output JSON into a normalized form. Operations are executed in the order that they appear in the array. */
-  var json_normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.native
+  var json_normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.undefined
   
   /** A list of PDF conversion settings. */
-  var pdf: js.UndefOr[PdfSettings] = js.native
+  var pdf: js.UndefOr[PdfSettings] = js.undefined
   
   /** A list of Document Segmentation settings. */
-  var segment: js.UndefOr[SegmentSettings] = js.native
+  var segment: js.UndefOr[SegmentSettings] = js.undefined
   
   /** A list of Word conversion settings. */
-  var word: js.UndefOr[WordSettings] = js.native
+  var word: js.UndefOr[WordSettings] = js.undefined
 }
 object Conversions {
   

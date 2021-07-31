@@ -3,14 +3,12 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextAnnotation specifies a text range that includes sensitive
   * information.
   */
-@js.native
 trait SchemaSensitiveTextAnnotation extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaSensitiveTextAnnotation extends StObject {
     * sensitive text findings. For example, Appointment.Narrative text1 --&gt;
     * {findings_1, findings_2, findings_3}
     */
-  var details: js.UndefOr[StringDictionary[SchemaDetail]] = js.native
+  var details: js.UndefOr[StringDictionary[SchemaDetail]] = js.undefined
 }
 object SchemaSensitiveTextAnnotation {
   

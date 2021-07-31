@@ -3,7 +3,6 @@ package typings.globalize
 import typings.globalize.globalizeMod.DateFormatPartTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalizeStrings {
@@ -30,14 +29,16 @@ object globalizeStrings {
   
   @js.native
   sealed trait day
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait dayperiod
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def dayperiod: dayperiod = "dayperiod".asInstanceOf[dayperiod]
@@ -49,7 +50,8 @@ object globalizeStrings {
   
   @js.native
   sealed trait era
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def era: era = "era".asInstanceOf[era]
@@ -66,14 +68,16 @@ object globalizeStrings {
   
   @js.native
   sealed trait hour
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait literal
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
@@ -90,14 +94,16 @@ object globalizeStrings {
   
   @js.native
   sealed trait minute
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait month
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def month: month = "month".asInstanceOf[month]
@@ -129,7 +135,8 @@ object globalizeStrings {
   
   @js.native
   sealed trait second
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def second: second = "second".asInstanceOf[second]
@@ -151,21 +158,24 @@ object globalizeStrings {
   
   @js.native
   sealed trait weekday
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
   sealed trait year
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait zone
-    extends DateFormatPartTypes
+    extends StObject
+       with DateFormatPartTypes
        with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   @scala.inline
   def zone: zone = "zone".asInstanceOf[zone]

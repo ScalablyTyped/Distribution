@@ -10,7 +10,6 @@ import typings.typeorm.anon.MaxTimeMS
 import typings.typeorm.anon.ReadPreference
 import typings.typeorm.anon.Scale
 import typings.typeorm.connectionMod.Connection
-import typings.typeorm.deepPartialMod.DeepPartial
 import typings.typeorm.deleteResultMod.DeleteResult
 import typings.typeorm.entityManagerMod.EntityManager
 import typings.typeorm.entityMetadataMod.EntityMetadata
@@ -54,7 +53,6 @@ import typings.typeorm.typingsMod.UpdateWriteOpResult
 import typings.typeorm.updateResultMod.UpdateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoEntityManagerMod {
@@ -110,13 +108,13 @@ object mongoEntityManagerMod {
     /**
       * Retrieves this collections index info.
       */
-    def collectionIndexInformation[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[_] = js.native
-    def collectionIndexInformation[Entity](entityClassOrName: EntityTarget[Entity], options: Full): js.Promise[_] = js.native
+    def collectionIndexInformation[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[js.Any] = js.native
+    def collectionIndexInformation[Entity](entityClassOrName: EntityTarget[Entity], options: Full): js.Promise[js.Any] = js.native
     
     /**
       * Retrieve all the indexes on the collection.
       */
-    def collectionIndexes[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[_] = js.native
+    def collectionIndexes[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[js.Any] = js.native
     
     /**
       * Converts FindManyOptions to mongodb query.
@@ -147,11 +145,7 @@ object mongoEntityManagerMod {
       */
     /* protected */ def convertMixedCriteria(metadata: EntityMetadata, idMap: js.Any): ObjectLiteral = js.native
     
-    def count[Entity](
-      entityClassOrName: EntityTarget[Entity],
-      query: js.UndefOr[scala.Nothing],
-      options: MongoCountPreferences
-    ): js.Promise[Double] = js.native
+    def count[Entity](entityClassOrName: EntityTarget[Entity], query: Unit, options: MongoCountPreferences): js.Promise[Double] = js.native
     def count[Entity](entityClassOrName: EntityTarget[Entity], query: ObjectLiteral): js.Promise[Double] = js.native
     def count[Entity](entityClassOrName: EntityTarget[Entity], query: ObjectLiteral, options: MongoCountPreferences): js.Promise[Double] = js.native
     
@@ -200,30 +194,24 @@ object mongoEntityManagerMod {
     /**
       * The distinct command returns returns a list of distinct values for the given key across a collection.
       */
-    def distinct[Entity](entityClassOrName: EntityTarget[Entity], key: String, query: ObjectLiteral): js.Promise[_] = js.native
+    def distinct[Entity](entityClassOrName: EntityTarget[Entity], key: String, query: ObjectLiteral): js.Promise[js.Any] = js.native
     def distinct[Entity](
       entityClassOrName: EntityTarget[Entity],
       key: String,
       query: ObjectLiteral,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     /**
       * Drops an index from this collection.
       */
-    def dropCollectionIndex[Entity](entityClassOrName: EntityTarget[Entity], indexName: String): js.Promise[_] = js.native
-    def dropCollectionIndex[Entity](entityClassOrName: EntityTarget[Entity], indexName: String, options: CollectionOptions): js.Promise[_] = js.native
+    def dropCollectionIndex[Entity](entityClassOrName: EntityTarget[Entity], indexName: String): js.Promise[js.Any] = js.native
+    def dropCollectionIndex[Entity](entityClassOrName: EntityTarget[Entity], indexName: String, options: CollectionOptions): js.Promise[js.Any] = js.native
     
     /**
       * Drops all indexes from the collection.
       */
-    def dropCollectionIndexes[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[_] = js.native
-    
-    def find[Entity](entityClassOrName: EntityTarget[Entity], optionsOrConditions: Partial[Entity]): js.Promise[js.Array[Entity]] = js.native
-    
-    def findAndCount[Entity](entityClassOrName: EntityTarget[Entity], optionsOrConditions: Partial[Entity]): js.Promise[js.Tuple2[js.Array[Entity], Double]] = js.native
-    
-    def findByIds[Entity](entityClassOrName: EntityTarget[Entity], ids: js.Array[_], optionsOrConditions: Partial[Entity]): js.Promise[js.Array[Entity]] = js.native
+    def dropCollectionIndexes[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[js.Any] = js.native
     
     def findOne[Entity](
       entityClassOrName: EntityTarget[Entity],
@@ -232,12 +220,6 @@ object mongoEntityManagerMod {
     def findOne[Entity](
       entityClassOrName: EntityTarget[Entity],
       optionsOrConditions: js.Array[Date | Double | ObjectID | String],
-      maybeOptions: FindOneOptions[Entity]
-    ): js.Promise[js.UndefOr[Entity]] = js.native
-    def findOne[Entity](entityClassOrName: EntityTarget[Entity], optionsOrConditions: DeepPartial[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
-    def findOne[Entity](
-      entityClassOrName: EntityTarget[Entity],
-      optionsOrConditions: DeepPartial[Entity],
       maybeOptions: FindOneOptions[Entity]
     ): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne[Entity](
@@ -277,91 +259,91 @@ object mongoEntityManagerMod {
     /**
       * Execute a geo search using a geo haystack index on a collection.
       */
-    def geoHaystackSearch[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double): js.Promise[_] = js.native
-    def geoHaystackSearch[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[_] = js.native
+    def geoHaystackSearch[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double): js.Promise[js.Any] = js.native
+    def geoHaystackSearch[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[js.Any] = js.native
     
     /**
       * Execute the geoNear command to search for items in the collection.
       */
-    def geoNear[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double): js.Promise[_] = js.native
-    def geoNear[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double, options: GeoNearOptions): js.Promise[_] = js.native
+    def geoNear[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double): js.Promise[js.Any] = js.native
+    def geoNear[Entity](entityClassOrName: EntityTarget[Entity], x: Double, y: Double, options: GeoNearOptions): js.Promise[js.Any] = js.native
     
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -370,7 +352,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -380,7 +362,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -389,7 +371,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -399,7 +381,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -408,7 +390,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -418,7 +400,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -427,7 +409,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Function,
@@ -437,7 +419,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     /**
       * Run a group command across a collection.
       */
@@ -449,7 +431,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -459,7 +441,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -468,7 +450,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -478,7 +460,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -487,7 +469,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -497,7 +479,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -506,7 +488,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: js.Object,
@@ -516,7 +498,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -525,7 +507,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -535,7 +517,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -544,7 +526,7 @@ object mongoEntityManagerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -554,7 +536,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -563,7 +545,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -573,7 +555,7 @@ object mongoEntityManagerMod {
       finalize: js.Function,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -582,7 +564,7 @@ object mongoEntityManagerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group[Entity](
       entityClassOrName: EntityTarget[Entity],
       keys: Code,
@@ -592,7 +574,7 @@ object mongoEntityManagerMod {
       finalize: Code,
       command: Boolean,
       options: ReadPreference
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     /**
       * Initiate an In order bulk write operation, operations will be serially executed in the order they are added, creating a new operation for each switch in types.
@@ -625,7 +607,7 @@ object mongoEntityManagerMod {
     /**
       * Returns if the collection is a capped collection.
       */
-    def isCapped[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[_] = js.native
+    def isCapped[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[js.Any] = js.native
     
     /**
       * Get the list of all indexes information for the collection.
@@ -633,32 +615,32 @@ object mongoEntityManagerMod {
     def listCollectionIndexes[Entity](entityClassOrName: EntityTarget[Entity]): CommandCursor = js.native
     def listCollectionIndexes[Entity](entityClassOrName: EntityTarget[Entity], options: BatchSize): CommandCursor = js.native
     
-    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: String): js.Promise[_] = js.native
-    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: String, options: MapReduceOptions): js.Promise[_] = js.native
-    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: js.Function): js.Promise[_] = js.native
+    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: String): js.Promise[js.Any] = js.native
+    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: String, options: MapReduceOptions): js.Promise[js.Any] = js.native
+    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: String, reduce: js.Function): js.Promise[js.Any] = js.native
     def mapReduce[Entity](
       entityClassOrName: EntityTarget[Entity],
       map: String,
       reduce: js.Function,
       options: MapReduceOptions
-    ): js.Promise[_] = js.native
-    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: js.Function, reduce: String): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
+    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: js.Function, reduce: String): js.Promise[js.Any] = js.native
     def mapReduce[Entity](
       entityClassOrName: EntityTarget[Entity],
       map: js.Function,
       reduce: String,
       options: MapReduceOptions
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     /**
       * Run Map Reduce across a collection. Be aware that the inline option for out will return an array of results not a collection.
       */
-    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: js.Function, reduce: js.Function): js.Promise[_] = js.native
+    def mapReduce[Entity](entityClassOrName: EntityTarget[Entity], map: js.Function, reduce: js.Function): js.Promise[js.Any] = js.native
     def mapReduce[Entity](
       entityClassOrName: EntityTarget[Entity],
       map: js.Function,
       reduce: js.Function,
       options: MapReduceOptions
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     /**
       * Return N number of parallel cursors for a collection allowing parallel reading of entire collection.
@@ -676,13 +658,13 @@ object mongoEntityManagerMod {
     /**
       * Reindex all indexes on the collection Warning: reIndex is a blocking operation (indexes are rebuilt in the foreground) and will be slow for large collections.
       */
-    def reIndex[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[_] = js.native
+    def reIndex[Entity](entityClassOrName: EntityTarget[Entity]): js.Promise[js.Any] = js.native
     
     /**
       * Reindex all indexes on the collection Warning: reIndex is a blocking operation (indexes are rebuilt in the foreground) and will be slow for large collections.
       */
-    def rename[Entity](entityClassOrName: EntityTarget[Entity], newName: String): js.Promise[Collection[_]] = js.native
-    def rename[Entity](entityClassOrName: EntityTarget[Entity], newName: String, options: DropTarget): js.Promise[Collection[_]] = js.native
+    def rename[Entity](entityClassOrName: EntityTarget[Entity], newName: String): js.Promise[Collection[js.Any]] = js.native
+    def rename[Entity](entityClassOrName: EntityTarget[Entity], newName: String, options: DropTarget): js.Promise[Collection[js.Any]] = js.native
     
     /**
       * Replace a document on MongoDB.
@@ -725,16 +707,12 @@ object mongoEntityManagerMod {
     ): js.Promise[UpdateWriteOpResult] = js.native
     
     def watch[Entity](entityClassOrName: EntityTarget[Entity]): ChangeStream = js.native
-    def watch[Entity](
-      entityClassOrName: EntityTarget[Entity],
-      pipeline: js.UndefOr[scala.Nothing],
-      options: ChangeStreamOptions
-    ): ChangeStream = js.native
     def watch[Entity](entityClassOrName: EntityTarget[Entity], pipeline: js.Array[js.Object]): ChangeStream = js.native
     def watch[Entity](
       entityClassOrName: EntityTarget[Entity],
       pipeline: js.Array[js.Object],
       options: ChangeStreamOptions
     ): ChangeStream = js.native
+    def watch[Entity](entityClassOrName: EntityTarget[Entity], pipeline: Unit, options: ChangeStreamOptions): ChangeStream = js.native
   }
 }

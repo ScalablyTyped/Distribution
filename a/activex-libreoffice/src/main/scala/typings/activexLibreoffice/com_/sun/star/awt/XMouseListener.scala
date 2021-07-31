@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events from the mouse in a certain window. */
-@js.native
-trait XMouseListener extends XEventListener {
+trait XMouseListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the mouse enters a window. */
-  def mouseEntered(e: MouseEvent): Unit = js.native
+  def mouseEntered(e: MouseEvent): Unit
   
   /** is invoked when the mouse exits a window. */
-  def mouseExited(e: MouseEvent): Unit = js.native
+  def mouseExited(e: MouseEvent): Unit
   
   /**
     * is invoked when a mouse button has been pressed on a window.
@@ -26,10 +26,10 @@ trait XMouseListener extends XEventListener {
     * you will receive one call to {@link mousePressed()} indicating the mouse click, and another one indicating the context menu request. For the latter,
     * the {@link MouseEvent.PopupTrigger} member of the event will be set to `TRUE` .
     */
-  def mousePressed(e: MouseEvent): Unit = js.native
+  def mousePressed(e: MouseEvent): Unit
   
   /** is invoked when a mouse button has been released on a window. */
-  def mouseReleased(e: MouseEvent): Unit = js.native
+  def mouseReleased(e: MouseEvent): Unit
 }
 object XMouseListener {
   

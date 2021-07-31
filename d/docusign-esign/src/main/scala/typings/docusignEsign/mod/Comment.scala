@@ -2,88 +2,86 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /**
     * The Guid of the envelope the comment thread belongs to.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var hmac: js.UndefOr[String] = js.native
+  var hmac: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the comment.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * An array of userIds that are mentioned directly in the body of a comment.
     */
-  var mentions: js.UndefOr[js.Array[String]] = js.native
+  var mentions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When **true**, indicates that the comment was read.
     */
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The email address of the user who created the comment.
     */
-  var sentByEmail: js.UndefOr[String] = js.native
+  var sentByEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The full name of the user who created the comment.
     */
-  var sentByFullName: js.UndefOr[String] = js.native
+  var sentByFullName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var sentByImageId: js.UndefOr[String] = js.native
+  var sentByImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The initials of the user who created the comment.
     */
-  var sentByInitials: js.UndefOr[String] = js.native
+  var sentByInitials: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient id of the user who created the comment.
     */
-  var sentByRecipientId: js.UndefOr[String] = js.native
+  var sentByRecipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The user id of the user who created the comment.
     */
-  var sentByUserId: js.UndefOr[String] = js.native
+  var sentByUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the signing group that can view the comment or that created the comment.
     */
-  var signingGroupId: js.UndefOr[String] = js.native
+  var signingGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the signing group.
     *
     * Maximum Length: 100 characters.
     */
-  var signingGroupName: js.UndefOr[String] = js.native
+  var signingGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The subject of the envelope.
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the tab that represents the comment thread.
     */
-  var tabId: js.UndefOr[String] = js.native
+  var tabId: js.UndefOr[String] = js.undefined
   
   /**
     * The content of the comment, as UTF-8 text.
@@ -92,32 +90,32 @@ trait Comment extends StObject {
     *
     * **Note**: The maximum size allowed for the entire message body is 32 KB.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the comment thread.
     */
-  var threadId: js.UndefOr[String] = js.native
+  var threadId: js.UndefOr[String] = js.undefined
   
   /**
     * The userId of the user who created the thread.
     */
-  var threadOriginatorId: js.UndefOr[String] = js.native
+  var threadOriginatorId: js.UndefOr[String] = js.undefined
   
   /**
     * The time the comment was created, formatted according to the format of the user who created the comment.
     */
-  var timeStampFormatted: js.UndefOr[String] = js.native
+  var timeStampFormatted: js.UndefOr[String] = js.undefined
   
   /**
     * The time the comment was created.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The user ids of the users that the comment is visible to.
     */
-  var visibleTo: js.UndefOr[js.Array[String]] = js.native
+  var visibleTo: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Comment {
   

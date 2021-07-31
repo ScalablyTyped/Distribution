@@ -2,46 +2,44 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOutput extends StObject {
   
   /**
     * The output from validating an application.
     */
-  var appValidationOutput: js.UndefOr[AppValidationOutput] = js.native
+  var appValidationOutput: js.UndefOr[AppValidationOutput] = js.undefined
   
   /**
     * The latest time that the validation was performed.
     */
-  var latestValidationTime: js.UndefOr[Timestamp] = js.native
+  var latestValidationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the validation.
     */
-  var name: js.UndefOr[NonEmptyStringWithMaxLen255] = js.native
+  var name: js.UndefOr[NonEmptyStringWithMaxLen255] = js.undefined
   
   /**
     * The output from validation an instance.
     */
-  var serverValidationOutput: js.UndefOr[ServerValidationOutput] = js.native
+  var serverValidationOutput: js.UndefOr[ServerValidationOutput] = js.undefined
   
   /**
     * The status of the validation.
     */
-  var status: js.UndefOr[ValidationStatus] = js.native
+  var status: js.UndefOr[ValidationStatus] = js.undefined
   
   /**
     * The status message.
     */
-  var statusMessage: js.UndefOr[ValidationStatusMessage] = js.native
+  var statusMessage: js.UndefOr[ValidationStatusMessage] = js.undefined
   
   /**
     * The ID of the validation.
     */
-  var validationId: js.UndefOr[ValidationId] = js.native
+  var validationId: js.UndefOr[ValidationId] = js.undefined
 }
 object ValidationOutput {
   

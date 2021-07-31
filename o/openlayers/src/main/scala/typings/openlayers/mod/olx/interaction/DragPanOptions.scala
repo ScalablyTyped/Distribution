@@ -5,15 +5,13 @@ import typings.openlayers.mod.Kinetic
 import typings.openlayers.mod.MapBrowserEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragPanOptions extends StObject {
   
-  var condition: js.UndefOr[EventsConditionType] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var kinetic: js.UndefOr[Kinetic] = js.native
+  var kinetic: js.UndefOr[Kinetic] = js.undefined
 }
 object DragPanOptions {
   

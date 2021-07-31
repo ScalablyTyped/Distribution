@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasBufferMod {
@@ -17,14 +16,14 @@ object canvasBufferMod {
     def this(screenWidth: Double, screenHeight: Double, devicePixelRatio: Double) = this()
     
     def blit(ctx: CanvasRenderingContext2D): Unit = js.native
-    def blit(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+    def blit(ctx: CanvasRenderingContext2D, x: Unit, y: Double): Unit = js.native
     
     def blitCenter(ctx: CanvasRenderingContext2D): Unit = js.native
-    def blitCenter(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+    def blitCenter(ctx: CanvasRenderingContext2D, x: Unit, y: Double): Unit = js.native
     
     var canvas: HTMLCanvasElement = js.native
     
@@ -63,11 +62,14 @@ object canvasBufferMod {
   /* static members */
   object CanvasBuffer {
     
+    @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
       */
-    @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer.sizePixels")
-    @js.native
-    def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = js.native
+    @scala.inline
+    def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sizePixels")(ctx.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], screenHeight.asInstanceOf[js.Any], devicePixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

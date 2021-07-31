@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateManagedInstanceRoleRequest extends StObject {
   
   /**
     * The IAM role you want to assign or change.
     */
-  var IamRole: typings.awsSdk.ssmMod.IamRole = js.native
+  var IamRole: typings.awsSdk.ssmMod.IamRole
   
   /**
     * The ID of the managed instance where you want to update the role.
     */
-  var InstanceId: ManagedInstanceId = js.native
+  var InstanceId: ManagedInstanceId
 }
 object UpdateManagedInstanceRoleRequest {
   

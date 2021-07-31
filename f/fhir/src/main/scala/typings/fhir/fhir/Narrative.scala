@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A human-readable formatted text, including images
   */
-@js.native
-trait Narrative extends Element {
+trait Narrative
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'div'.
     */
-  var _div: js.UndefOr[Element] = js.native
+  var _div: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Limited xhtml content
     */
-  var div: String = js.native
+  var div: String
   
   /**
     * generated | extensions | additional | empty
     */
-  var status: code = js.native
+  var status: code
 }
 object Narrative {
   

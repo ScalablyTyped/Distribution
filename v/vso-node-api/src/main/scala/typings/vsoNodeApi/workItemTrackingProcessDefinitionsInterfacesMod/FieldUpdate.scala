@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldUpdate extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
 }
 object FieldUpdate {
   

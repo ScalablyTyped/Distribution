@@ -2,19 +2,17 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns when you perform a GET request to /FILE_ID/content.
   */
-@js.native
 trait IFileDownloadLink extends StObject {
   
   /**
     * A URL download link for the file.
     */
-  var location: String = js.native
+  var location: String
 }
 object IFileDownloadLink {
   

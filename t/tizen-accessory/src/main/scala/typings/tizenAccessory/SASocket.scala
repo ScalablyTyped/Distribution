@@ -2,25 +2,23 @@ package typings.tizenAccessory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SASocket extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def isConnected(): Boolean = js.native
+  def isConnected(): Boolean
   
-  val peerAgent: SAPeerAgent = js.native
+  val peerAgent: SAPeerAgent
   
-  def sendData(channelId: Double, data: String): Unit = js.native
+  def sendData(channelId: Double, data: String): Unit
   
-  def sendSecureData(channelId: Double, data: String): Unit = js.native
+  def sendSecureData(channelId: Double, data: String): Unit
   
-  def setDataReceiveListener(dataReceiveCallback: js.Function2[/* channelId */ Double, /* data */ String, Unit]): Unit = js.native
+  def setDataReceiveListener(dataReceiveCallback: js.Function2[/* channelId */ Double, /* data */ String, Unit]): Unit
   
-  def setSocketStatusListener(socketStatusCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  def setSocketStatusListener(socketStatusCallback: js.Function1[/* reason */ String, Unit]): Unit
 }
 object SASocket {
   

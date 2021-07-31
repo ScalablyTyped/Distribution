@@ -2,21 +2,21 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartistFixedScaleAxis extends ILineChartAxis {
+trait IChartistFixedScaleAxis
+  extends StObject
+     with ILineChartAxis {
   
-  var divisor: js.UndefOr[Double] = js.native
+  var divisor: js.UndefOr[Double] = js.undefined
   
-  var high: js.UndefOr[Double] = js.native
+  var high: js.UndefOr[Double] = js.undefined
   
-  var low: js.UndefOr[Double] = js.native
+  var low: js.UndefOr[Double] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[Double | String]] = js.native
+  var ticks: js.UndefOr[js.Array[Double | String]] = js.undefined
   
-  var `type`: js.UndefOr[IFixedScaleAxisStatic] = js.native
+  var `type`: js.UndefOr[IFixedScaleAxisStatic] = js.undefined
 }
 object IChartistFixedScaleAxis {
   

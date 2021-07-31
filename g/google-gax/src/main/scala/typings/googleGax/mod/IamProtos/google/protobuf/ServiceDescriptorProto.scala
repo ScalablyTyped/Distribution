@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ServiceDescriptorProto. */
@@ -24,18 +23,20 @@ class ServiceDescriptorProto ()
 }
 object ServiceDescriptorProto {
   
+  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ServiceDescriptorProto instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ServiceDescriptorProto instance
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.create")
-  @js.native
-  def create(): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.create")
-  @js.native
-  def create(properties: IServiceDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
+  @scala.inline
+  def create(): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
+  @scala.inline
+  def create(properties: IServiceDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
   
   /**
     * Decodes a ServiceDescriptorProto message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object ServiceDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
   
   /**
     * Decodes a ServiceDescriptorProto message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object ServiceDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
   
   /**
     * Encodes the specified ServiceDescriptorProto message. Does not implicitly {@link google.protobuf.ServiceDescriptorProto.verify|verify} messages.
@@ -81,12 +76,10 @@ object ServiceDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.encode")
-  @js.native
-  def encode(message: IServiceDescriptorProto): Writer = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.encode")
-  @js.native
-  def encode(message: IServiceDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IServiceDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IServiceDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ServiceDescriptorProto message, length delimited. Does not implicitly {@link google.protobuf.ServiceDescriptorProto.verify|verify} messages.
@@ -95,12 +88,10 @@ object ServiceDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IServiceDescriptorProto): Writer = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IServiceDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IServiceDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IServiceDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ServiceDescriptorProto message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object ServiceDescriptorProto {
     * @returns ServiceDescriptorProto
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto]
   
   /**
     * Creates a plain object from a ServiceDescriptorProto message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object ServiceDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.toObject")
-  @js.native
-  def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.ServiceDescriptorProto,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ServiceDescriptorProto message.
@@ -135,7 +123,6 @@ object ServiceDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax", "IamProtos.google.protobuf.ServiceDescriptorProto.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

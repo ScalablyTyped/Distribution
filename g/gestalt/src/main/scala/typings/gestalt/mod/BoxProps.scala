@@ -75,175 +75,173 @@ import typings.gestalt.gestaltStrings.white
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxProps extends StObject {
   
-  var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.native
+  var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.undefined
   
-  var alignItems: js.UndefOr[start | end | center | baseline | stretch] = js.native
+  var alignItems: js.UndefOr[start | end | center | baseline | stretch] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.native
+  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.undefined
   
-  var borderStyle: js.UndefOr[sm | lg | shadow | none] = js.native
+  var borderStyle: js.UndefOr[sm | lg | shadow | none] = js.undefined
   
-  var bottom: js.UndefOr[Boolean] = js.native
+  var bottom: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var color: js.UndefOr[
     blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
-  ] = js.native
+  ] = js.undefined
   
-  var column: js.UndefOr[UnsignedUpTo12] = js.native
+  var column: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var dangerouslySetInlineStyle: js.UndefOr[Style] = js.native
+  var dangerouslySetInlineStyle: js.UndefOr[Style] = js.undefined
   
-  var direction: js.UndefOr[row | column] = js.native
+  var direction: js.UndefOr[row | column] = js.undefined
   
-  var display: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.native
+  var display: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   
-  var fit: js.UndefOr[Boolean] = js.native
+  var fit: js.UndefOr[Boolean] = js.undefined
   
-  var flex: js.UndefOr[grow | shrink | none] = js.native
+  var flex: js.UndefOr[grow | shrink | none] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var justifyContent: js.UndefOr[start | end | center | between | around | evenly] = js.native
+  var justifyContent: js.UndefOr[start | end | center | between | around | evenly] = js.undefined
   
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
-  var lgColumn: js.UndefOr[UnsignedUpTo12] = js.native
+  var lgColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var lgDirection: js.UndefOr[row | column] = js.native
+  var lgDirection: js.UndefOr[row | column] = js.undefined
   
-  var lgDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.native
+  var lgDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   
-  var lgMargin: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var lgMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgPadding: js.UndefOr[UnsignedUpTo12] = js.native
+  var lgPadding: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var lgPaddingX: js.UndefOr[UnsignedUpTo12] = js.native
+  var lgPaddingX: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var lgPaddingY: js.UndefOr[UnsignedUpTo12] = js.native
+  var lgPaddingY: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var margin: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var margin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginBottom: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginEnd: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginLeft: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginRight: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginStart: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var marginTop: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var marginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var maxHeight: js.UndefOr[Double | String] = js.native
+  var maxHeight: js.UndefOr[Double | String] = js.undefined
   
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
-  var mdColumn: js.UndefOr[UnsignedUpTo12] = js.native
+  var mdColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var mdDirection: js.UndefOr[row | column] = js.native
+  var mdDirection: js.UndefOr[row | column] = js.undefined
   
-  var mdDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.native
+  var mdDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   
-  var mdMargin: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var mdMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var mdPadding: js.UndefOr[UnsignedUpTo12] = js.native
+  var mdPadding: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var mdPaddingX: js.UndefOr[UnsignedUpTo12] = js.native
+  var mdPaddingX: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var mdPaddingY: js.UndefOr[UnsignedUpTo12] = js.native
+  var mdPaddingY: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var minHeight: js.UndefOr[Double | String] = js.native
+  var minHeight: js.UndefOr[Double | String] = js.undefined
   
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
   var opacity: js.UndefOr[
     `0` | `0.1` | `0.2` | `0.3` | `0.4` | `0.5` | `0.6` | `0.7` | `0.8` | `0.9` | `1`
-  ] = js.native
+  ] = js.undefined
   
-  var overflow: js.UndefOr[visible | hidden | scroll | scrollX | scrollY | auto] = js.native
+  var overflow: js.UndefOr[visible | hidden | scroll | scrollX | scrollY | auto] = js.undefined
   
-  var padding: js.UndefOr[UnsignedUpTo12] = js.native
+  var padding: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var paddingX: js.UndefOr[UnsignedUpTo12] = js.native
+  var paddingX: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var paddingY: js.UndefOr[UnsignedUpTo12] = js.native
+  var paddingY: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var position: js.UndefOr[static | absolute | relative | fixed] = js.native
+  var position: js.UndefOr[static | absolute | relative | fixed] = js.undefined
   
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.native
+  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
   
-  var smColumn: js.UndefOr[UnsignedUpTo12] = js.native
+  var smColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var smDirection: js.UndefOr[row | column] = js.native
+  var smDirection: js.UndefOr[row | column] = js.undefined
   
-  var smDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.native
+  var smDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
   
-  var smMargin: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.native
+  var smMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smPadding: js.UndefOr[UnsignedUpTo12] = js.native
+  var smPadding: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var smPaddingX: js.UndefOr[UnsignedUpTo12] = js.native
+  var smPaddingX: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var smPaddingY: js.UndefOr[UnsignedUpTo12] = js.native
+  var smPaddingY: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
-  var userSelect: js.UndefOr[auto | none] = js.native
+  var userSelect: js.UndefOr[auto | none] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Indexable] = js.native
+  var zIndex: js.UndefOr[Indexable] = js.undefined
 }
 object BoxProps {
   

@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientFirebaseml.anon.Alt
 import typings.maximMazurokGapiClientFirebaseml.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -17,21 +16,18 @@ object gapi {
     object firebaseml {
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait CancelOperationRequest extends StObject
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait ListOperationsResponse extends StObject {
         
         /** The standard List next-page token. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** A list of operations that matches the specified filter in the request. */
-        var operations: js.UndefOr[js.Array[Operation]] = js.native
+        var operations: js.UndefOr[js.Array[Operation]] = js.undefined
       }
       object ListOperationsResponse {
         
@@ -61,13 +57,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait ModelOperationMetadata extends StObject {
         
-        var basicOperationStatus: js.UndefOr[String] = js.native
+        var basicOperationStatus: js.UndefOr[String] = js.undefined
         
         /** The name of the model we are creating/updating The name must have the form `projects/{project_id}/models/{model_id}` */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
       }
       object ModelOperationMetadata {
         
@@ -94,14 +89,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Operation extends StObject {
         
         /** If the value is `false`, it means the operation is still in progress. If `true`, the operation is completed, and either `error` or `response` is available. */
-        var done: js.UndefOr[Boolean] = js.native
+        var done: js.UndefOr[Boolean] = js.undefined
         
         /** The error result of the operation in case of failure or cancellation. */
-        var error: js.UndefOr[Status] = js.native
+        var error: js.UndefOr[Status] = js.undefined
         
         /**
           * Service-specific metadata associated with the operation. It typically contains progress information and common metadata such as create time. Some services might not provide such
@@ -110,14 +104,14 @@ object gapi {
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+              ] = js.undefined
         
         /**
           * The server-assigned name, which is only unique within the same service that originally returns it. If you use the default HTTP mapping, the `name` should be a resource name ending
           * with `operations/{unique_id}`.
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /**
           * The normal response of the operation in case of success. If the original method returns no data on success, such as `Delete`, the response is `google.protobuf.Empty`. If the
@@ -127,8 +121,8 @@ object gapi {
         var response: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+              ] = js.undefined
       }
       object Operation {
         
@@ -157,7 +151,7 @@ object gapi {
           def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -173,7 +167,7 @@ object gapi {
           def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -210,26 +204,25 @@ object gapi {
         def list(request: Callback): Request[ListOperationsResponse] = js.native
       }
       
-      @js.native
       trait Status extends StObject {
         
         /** The status code, which should be an enum value of google.rpc.Code. */
-        var code: js.UndefOr[Double] = js.native
+        var code: js.UndefOr[Double] = js.undefined
         
         /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
         var details: js.UndefOr[
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status with TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any]
                 ]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the google.rpc.Status.details field, or localized by the
           * client.
           */
-        var message: js.UndefOr[String] = js.native
+        var message: js.UndefOr[String] = js.undefined
       }
       object Status {
         
@@ -253,7 +246,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any]
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
@@ -264,7 +257,7 @@ object gapi {
           def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status with TopLevel[js.Any])*
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any])*
           ): Self = StObject.set(x, "details", js.Array(value :_*))
           
           @scala.inline

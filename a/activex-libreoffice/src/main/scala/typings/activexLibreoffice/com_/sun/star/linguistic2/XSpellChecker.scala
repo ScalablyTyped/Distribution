@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * correctly written.
   * @see com.sun.star.linguistic2.XSupportedLocales
   */
-@js.native
-trait XSpellChecker extends XSupportedLocales {
+trait XSpellChecker
+  extends StObject
+     with XSupportedLocales {
   
   /**
     * checks if a word is spelled correctly in a given language.
@@ -27,7 +27,7 @@ trait XSpellChecker extends XSupportedLocales {
     * @returns `TRUE` if the word is spelled correctly using the specified language, `FALSE` otherwise.
     * @see com.sun.star.lang.Locale
     */
-  def isValid(aWord: String, aLocale: Locale, aProperties: PropertyValues): Boolean = js.native
+  def isValid(aWord: String, aLocale: Locale, aProperties: PropertyValues): Boolean
   
   /**
     * This method checks if a word is spelled correctly in a given language.
@@ -38,7 +38,7 @@ trait XSpellChecker extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XSpellAlternatives
     * @see com.sun.star.lang.Locale
     */
-  def spell(aWord: String, aLocale: Locale, aProperties: PropertyValues): XSpellAlternatives = js.native
+  def spell(aWord: String, aLocale: Locale, aProperties: PropertyValues): XSpellAlternatives
 }
 object XSpellChecker {
   

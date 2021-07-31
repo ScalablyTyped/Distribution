@@ -14,45 +14,53 @@ import typings.luminoDatagrid.textrendererMod.TextRenderer.HorizontalAlignment
 import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luminoDatagridStrings {
   
   @js.native
-  sealed trait default extends _EditorOverrideIdentifier
+  sealed trait default
+    extends StObject
+       with _EditorOverrideIdentifier
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait all
-    extends ClearMode
+    extends StObject
+       with ClearMode
        with HeaderVisibility
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait body
-    extends CellRegion
+    extends StObject
+       with CellRegion
        with ColumnRegion
        with RowRegion
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait boolean extends CellDataType
+  sealed trait boolean
+    extends StObject
+       with CellDataType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait bottom
-    extends Placement
+    extends StObject
+       with Placement
        with VerticalAlignment
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait cell extends SelectionMode
+  sealed trait cell
+    extends StObject
+       with SelectionMode
   @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   
@@ -63,21 +71,24 @@ object luminoDatagridStrings {
   
   @js.native
   sealed trait center
-    extends HorizontalAlignment
+    extends StObject
+       with HorizontalAlignment
        with VerticalAlignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait column
-    extends HeaderVisibility
+    extends StObject
+       with HeaderVisibility
        with SelectionMode
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait `column-header`
-    extends CellRegion
+    extends StObject
+       with CellRegion
        with RowRegion
   @scala.inline
   def `column-header`: `column-header` = "column-header".asInstanceOf[`column-header`]
@@ -98,53 +109,72 @@ object luminoDatagridStrings {
   def `columns-removed`: `columns-removed` = "columns-removed".asInstanceOf[`columns-removed`]
   
   @js.native
-  sealed trait `corner-header` extends CellRegion
+  sealed trait `corner-header`
+    extends StObject
+       with CellRegion
   @scala.inline
   def `corner-header`: `corner-header` = "corner-header".asInstanceOf[`corner-header`]
   
   @js.native
-  sealed trait current extends ClearMode
+  sealed trait current
+    extends StObject
+       with ClearMode
   @scala.inline
   def current: current = "current".asInstanceOf[current]
   
   @js.native
-  sealed trait date extends CellDataType
+  sealed trait date
+    extends StObject
+       with CellDataType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `dateColondynamic-option` extends CellDataType
+  sealed trait `dateColondynamic-option`
+    extends StObject
+       with CellDataType
   @scala.inline
   def `dateColondynamic-option`: `dateColondynamic-option` = "date:dynamic-option".asInstanceOf[`dateColondynamic-option`]
   
   @js.native
-  sealed trait dateColonoption extends CellDataType
+  sealed trait dateColonoption
+    extends StObject
+       with CellDataType
   @scala.inline
   def dateColonoption: dateColonoption = "date:option".asInstanceOf[dateColonoption]
   
   @js.native
-  sealed trait down extends CursorMoveDirection
+  sealed trait down
+    extends StObject
+       with CursorMoveDirection
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait integer extends CellDataType
+  sealed trait integer
+    extends StObject
+       with CellDataType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait `integerColondynamic-option` extends CellDataType
+  sealed trait `integerColondynamic-option`
+    extends StObject
+       with CellDataType
   @scala.inline
   def `integerColondynamic-option`: `integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[`integerColondynamic-option`]
   
   @js.native
-  sealed trait integerColonoption extends CellDataType
+  sealed trait integerColonoption
+    extends StObject
+       with CellDataType
   @scala.inline
   def integerColonoption: integerColonoption = "integer:option".asInstanceOf[integerColonoption]
   
   @js.native
   sealed trait left
-    extends CursorMoveDirection
+    extends StObject
+       with CursorMoveDirection
        with HorizontalAlignment
        with Placement
   @scala.inline
@@ -157,30 +187,38 @@ object luminoDatagridStrings {
   
   @js.native
   sealed trait none
-    extends ClearMode
+    extends StObject
+       with ClearMode
        with CursorMoveDirection
        with HeaderVisibility
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends CellDataType
+  sealed trait number
+    extends StObject
+       with CellDataType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `numberColondynamic-option` extends CellDataType
+  sealed trait `numberColondynamic-option`
+    extends StObject
+       with CellDataType
   @scala.inline
   def `numberColondynamic-option`: `numberColondynamic-option` = "number:dynamic-option".asInstanceOf[`numberColondynamic-option`]
   
   @js.native
-  sealed trait numberColonoption extends CellDataType
+  sealed trait numberColonoption
+    extends StObject
+       with CellDataType
   @scala.inline
   def numberColonoption: numberColonoption = "number:option".asInstanceOf[numberColonoption]
   
   @js.native
   sealed trait right
-    extends CursorMoveDirection
+    extends StObject
+       with CursorMoveDirection
        with HorizontalAlignment
        with Placement
   @scala.inline
@@ -188,14 +226,16 @@ object luminoDatagridStrings {
   
   @js.native
   sealed trait row
-    extends HeaderVisibility
+    extends StObject
+       with HeaderVisibility
        with SelectionMode
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait `row-header`
-    extends CellRegion
+    extends StObject
+       with CellRegion
        with ColumnRegion
   @scala.inline
   def `row-header`: `row-header` = "row-header".asInstanceOf[`row-header`]
@@ -216,29 +256,38 @@ object luminoDatagridStrings {
   def `rows-removed`: `rows-removed` = "rows-removed".asInstanceOf[`rows-removed`]
   
   @js.native
-  sealed trait string extends CellDataType
+  sealed trait string
+    extends StObject
+       with CellDataType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait `stringColondynamic-option` extends CellDataType
+  sealed trait `stringColondynamic-option`
+    extends StObject
+       with CellDataType
   @scala.inline
   def `stringColondynamic-option`: `stringColondynamic-option` = "string:dynamic-option".asInstanceOf[`stringColondynamic-option`]
   
   @js.native
-  sealed trait stringColonoption extends CellDataType
+  sealed trait stringColonoption
+    extends StObject
+       with CellDataType
   @scala.inline
   def stringColonoption: stringColonoption = "string:option".asInstanceOf[stringColonoption]
   
   @js.native
   sealed trait top
-    extends Placement
+    extends StObject
+       with Placement
        with VerticalAlignment
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait up extends CursorMoveDirection
+  sealed trait up
+    extends StObject
+       with CursorMoveDirection
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   

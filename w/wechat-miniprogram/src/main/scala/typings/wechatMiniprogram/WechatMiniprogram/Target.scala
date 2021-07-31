@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target[DataSet /* <: IAnyObject */] extends StObject {
   
   /** 事件组件上由 `data-` 开头的自定义属性组成的集合 */
-  var dataset: DataSet = js.native
+  var dataset: DataSet
   
   /** 事件组件的 id */
-  var id: String = js.native
+  var id: String
   
   /** 距离页面左边的偏移量 */
-  var offsetLeft: Double = js.native
+  var offsetLeft: Double
   
   /** 距离页面顶部的偏移量 */
-  var offsetTop: Double = js.native
+  var offsetTop: Double
   
   /** 当前组件的类型 */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object Target {
   
@@ -32,7 +30,7 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target[_], DataSet /* <: IAnyObject */] (val x: Self with Target[DataSet]) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target[?], DataSet /* <: IAnyObject */] (val x: Self & Target[DataSet]) extends AnyVal {
     
     @scala.inline
     def setDataset(value: DataSet): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])

@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientReceiptGetResponse extends StObject {
   
   /** ClientReceiptGetResponse receipts */
-  var receipts: js.UndefOr[js.Array[ITransactionReceipt] | Null] = js.native
+  var receipts: js.UndefOr[js.Array[ITransactionReceipt] | Null] = js.undefined
   
   /** ClientReceiptGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientReceiptGetResponse {
   

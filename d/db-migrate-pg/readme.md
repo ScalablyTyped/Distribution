@@ -9,9 +9,9 @@ A postgresql driver for db-migrate
 | ------------------ | :-------------: |
 | Full name          | db-migrate-pg |
 | Keywords           | db-migrate, migrate, migration, pg, postgres, postgresql, sql, database, db, migrator, driver |
-| # releases         | 8 |
-| # dependents       | 24 |
-| # downloads        | 1715614 |
+| # releases         | 7 |
+| # dependents       | 25 |
+| # downloads        | 1899500 |
 | # stars            | 2 |
 
 ## Links

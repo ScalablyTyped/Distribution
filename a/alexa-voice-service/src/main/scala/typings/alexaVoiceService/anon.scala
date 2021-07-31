@@ -2,31 +2,29 @@ package typings.alexaVoiceService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var boundary: String = js.native
+    var boundary: String
     
-    var headers: String = js.native
+    var headers: String
     
-    var httpVersion: String = js.native
+    var httpVersion: String
     
-    var method: String = js.native
+    var method: String
     
-    var multipart: String = js.native
+    var multipart: String
     
-    var statusCode: String = js.native
+    var statusCode: String
     
-    var statusMessage: String = js.native
+    var statusMessage: String
     
-    var url: String = js.native
+    var url: String
   }
   object Body {
     
@@ -78,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var response: Body = js.native
+    var response: Body
     
-    var xhr: js.Any = js.native
+    var xhr: js.Any
   }
   object Response {
     

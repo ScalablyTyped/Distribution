@@ -1,46 +1,33 @@
 package typings.tuyaPanelKit.mod
 
-import typings.reactNative.mod.ModalBaseProps
-import typings.reactNative.mod.ModalPropsAndroid
-import typings.reactNative.mod.ModalPropsIOS
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
-import typings.tuyaPanelKit.tuyaPanelKitStrings.fade_
-import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalProps
-  extends ViewProps
-     with ModalBaseProps
-     with ModalPropsIOS
-     with ModalPropsAndroid {
+  extends StObject
+     with typings.reactNative.mod.ModalProps {
   
-  var activeIdx: js.UndefOr[Double] = js.native
+  var activeIdx: js.UndefOr[Double] = js.undefined
   
-  var alignContainer: js.UndefOr[top | center | bottom] = js.native
+  var alignContainer: js.UndefOr[top | center | bottom] = js.undefined
   
-  @JSName("animationType")
-  var animationType_ModalProps: js.UndefOr[fade_ | none_] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
   
-  var mask: js.UndefOr[Boolean] = js.native
+  var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var modalChildStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var modalChildStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var onMaskPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMaskPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onlyLastModalVisible: js.UndefOr[Boolean] = js.undefined
   
-  var onlyLastModalVisible: js.UndefOr[Boolean] = js.native
-  
-  var useKeyboardView: js.UndefOr[Boolean] = js.native
+  var useKeyboardView: js.UndefOr[Boolean] = js.undefined
 }
 object ModalProps {
   
@@ -64,12 +51,6 @@ object ModalProps {
     
     @scala.inline
     def setAlignContainerUndefined: Self = StObject.set(x, "alignContainer", js.undefined)
-    
-    @scala.inline
-    def setAnimationType(value: fade_ | none_): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
     @scala.inline
     def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])

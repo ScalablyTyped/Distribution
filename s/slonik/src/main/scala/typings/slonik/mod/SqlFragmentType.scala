@@ -2,15 +2,13 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlFragmentType extends StObject {
   
-  var parameters: js.Array[PrimitiveValueExpressionType] = js.native
+  var parameters: js.Array[PrimitiveValueExpressionType]
   
-  var sql: String = js.native
+  var sql: String
 }
 object SqlFragmentType {
   

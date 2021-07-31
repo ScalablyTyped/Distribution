@@ -2,22 +2,20 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1ListProductsResponse extends StObject {
   
   /**
     * A pagination token returned from a previous call to ListProducts that
     * indicates where the listing should continue from. This field is optional.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The `Product` returned from the list call.
     */
-  var products: js.UndefOr[js.Array[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]] = js.native
+  var products: js.UndefOr[js.Array[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1ListProductsResponse {
   

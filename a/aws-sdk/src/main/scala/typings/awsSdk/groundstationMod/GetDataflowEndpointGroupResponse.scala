@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataflowEndpointGroupResponse extends StObject {
   
   /**
     * ARN of a dataflow endpoint group.
     */
-  var dataflowEndpointGroupArn: js.UndefOr[DataflowEndpointGroupArn] = js.native
+  var dataflowEndpointGroupArn: js.UndefOr[DataflowEndpointGroupArn] = js.undefined
   
   /**
     * UUID of a dataflow endpoint group.
     */
-  var dataflowEndpointGroupId: js.UndefOr[String] = js.native
+  var dataflowEndpointGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Details of a dataflow endpoint.
     */
-  var endpointsDetails: js.UndefOr[EndpointDetailsList] = js.native
+  var endpointsDetails: js.UndefOr[EndpointDetailsList] = js.undefined
   
   /**
     * Tags assigned to a dataflow endpoint group.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object GetDataflowEndpointGroupResponse {
   

@@ -16,29 +16,28 @@ import typings.wordpressBlocks.wordpressBlocksStrings.string
 import typings.wordpressBlocks.wordpressBlocksStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AttributeSource {
   
-  type Attribute = typings.wordpressBlocks.anon.Attribute with (Default | Type | DefaultType)
+  type Attribute = typings.wordpressBlocks.anon.Attribute & (Default | Type | DefaultType)
   
-  @js.native
   trait Children
-    extends _BlockAttribute[js.Any] {
+    extends StObject
+       with _BlockAttribute[js.Any] {
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var source: typings.wordpressBlocks.wordpressBlocksStrings.children = js.native
+    var source: typings.wordpressBlocks.wordpressBlocksStrings.children
     
-    var `type`: array = js.native
+    var `type`: array
   }
   object Children {
     
     @scala.inline
-    def apply(source: typings.wordpressBlocks.wordpressBlocksStrings.children, `type`: array): Children = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): Children = {
+      val __obj = js.Dynamic.literal(source = "children")
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[Children]
     }
     
@@ -59,26 +58,26 @@ object AttributeSource {
     }
   }
   
-  @js.native
   trait HTML
-    extends _BlockAttribute[js.Any] {
+    extends StObject
+       with _BlockAttribute[js.Any] {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var multiline: js.UndefOr[li | p] = js.native
+    var multiline: js.UndefOr[li | p] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var source: html = js.native
+    var source: html
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object HTML {
     
     @scala.inline
-    def apply(source: html, `type`: string): HTML = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): HTML = {
+      val __obj = js.Dynamic.literal(source = "html")
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[HTML]
     }
     
@@ -111,24 +110,24 @@ object AttributeSource {
     }
   }
   
-  @js.native
   trait Meta
-    extends _BlockAttribute[js.Any] {
+    extends StObject
+       with _BlockAttribute[js.Any] {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var meta: String = js.native
+    var meta: String
     
-    var source: meta = js.native
+    var source: meta
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object Meta {
     
     @scala.inline
-    def apply(meta: String, source: meta, `type`: string): Meta = {
-      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(meta: String): Meta = {
+      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], source = "meta")
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[Meta]
     }
     
@@ -152,22 +151,23 @@ object AttributeSource {
     }
   }
   
-  type None = Source with (`1` | Default | Type | DefaultType)
+  type None = Source & (`1` | Default | Type | DefaultType)
   
-  @js.native
-  trait Query[T] extends _BlockAttribute[T] {
+  trait Query[T]
+    extends StObject
+       with _BlockAttribute[T] {
     
-    var default: js.UndefOr[js.Array[_]] = js.native
+    var default: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     var query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query with TopLevel[js.Any] = js.native
+      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any]
     
-    var selector: String = js.native
+    var selector: String
     
-    var source: query_ = js.native
+    var source: query_
     
-    var `type`: array = js.native
+    var `type`: array
   }
   object Query {
     
@@ -175,21 +175,19 @@ object AttributeSource {
     def apply[T](
       query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query with TopLevel[js.Any],
-      selector: String,
-      source: query_,
-      `type`: array
+      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any],
+      selector: String
     ): Query[T] = {
-      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], source = "query")
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[Query[T]]
     }
     
     @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query[_], T] (val x: Self with Query[T]) extends AnyVal {
+    implicit class QueryMutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
       
       @scala.inline
-      def setDefault(value: js.Array[_]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -201,7 +199,7 @@ object AttributeSource {
       def setQuery(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-        */ typings.wordpressBlocks.wordpressBlocksStrings.Query with TopLevel[js.Any]
+        */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any]
       ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -215,24 +213,24 @@ object AttributeSource {
     }
   }
   
-  @js.native
   trait Text
-    extends _BlockAttribute[js.Any] {
+    extends StObject
+       with _BlockAttribute[js.Any] {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var source: text = js.native
+    var source: text
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object Text {
     
     @scala.inline
-    def apply(source: text, `type`: string): Text = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): Text = {
+      val __obj = js.Dynamic.literal(source = "text")
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[Text]
     }
     

@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locations extends StObject {
   
   /**
     * The locations.
     */
-  var locations: js.UndefOr[LocationList] = js.native
+  var locations: js.UndefOr[LocationList] = js.undefined
 }
 object Locations {
   

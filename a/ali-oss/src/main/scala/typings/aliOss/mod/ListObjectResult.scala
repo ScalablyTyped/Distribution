@@ -2,21 +2,19 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectResult extends StObject {
   
-  var isTruncated: Boolean = js.native
+  var isTruncated: Boolean
   
-  var nextMarker: String = js.native
+  var nextMarker: String
   
-  var objects: js.Array[ObjectMeta] = js.native
+  var objects: js.Array[ObjectMeta]
   
-  var prefixes: js.Array[String] = js.native
+  var prefixes: js.Array[String]
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object ListObjectResult {
   

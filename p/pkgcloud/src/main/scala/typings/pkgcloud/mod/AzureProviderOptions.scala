@@ -3,25 +3,23 @@ package typings.pkgcloud.mod
 import typings.pkgcloud.pkgcloudStrings.azure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureProviderOptions extends StObject {
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var provider: azure = js.native
+  var provider: azure
   
-  var storageAccessKey: String = js.native
+  var storageAccessKey: String
   
-  var storageAccount: String = js.native
+  var storageAccount: String
 }
 object AzureProviderOptions {
   
   @scala.inline
-  def apply(provider: azure, storageAccessKey: String, storageAccount: String): AzureProviderOptions = {
-    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], storageAccessKey = storageAccessKey.asInstanceOf[js.Any], storageAccount = storageAccount.asInstanceOf[js.Any])
+  def apply(storageAccessKey: String, storageAccount: String): AzureProviderOptions = {
+    val __obj = js.Dynamic.literal(provider = "azure", storageAccessKey = storageAccessKey.asInstanceOf[js.Any], storageAccount = storageAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureProviderOptions]
   }
   

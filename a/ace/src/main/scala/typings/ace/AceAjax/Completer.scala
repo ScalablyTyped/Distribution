@@ -2,10 +2,8 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Completer extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait Completer extends StObject {
     * @param prefix The prefixing string before the current position
     * @param callback Function to provide the results or error
     */
-  def getCompletions(editor: Editor, session: IEditSession, pos: Position, prefix: String, callback: CompletionCallback): Unit = js.native
+  def getCompletions(editor: Editor, session: IEditSession, pos: Position, prefix: String, callback: CompletionCallback): Unit
   
   /**
     * Provides tooltip information about a completion result.
     * @param item The completion result
     */
-  var getDocTooltip: js.UndefOr[js.Function1[/* item */ Completion, Unit]] = js.native
+  var getDocTooltip: js.UndefOr[js.Function1[/* item */ Completion, Unit]] = js.undefined
 }
 object Completer {
   

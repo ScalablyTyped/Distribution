@@ -13,17 +13,15 @@ import typings.std.ClientRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BeforeDragParams extends StObject {
     
-    var elements: js.Array[Element] = js.native
+    var elements: js.Array[Element]
     
-    var index: Double = js.native
+    var index: Double
   }
   object BeforeDragParams {
     
@@ -47,22 +45,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IItemProps extends StObject {
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Double] = js.native
+    var key: js.UndefOr[Double] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[Element], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[Element], Unit]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* e */ WheelEvent[Element], Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* e */ WheelEvent[Element], Unit]] = js.undefined
     
-    var ref: js.UndefOr[RefObject[_]] = js.native
+    var ref: js.UndefOr[RefObject[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object IItemProps {
     
@@ -100,7 +97,7 @@ object typesMod {
       def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
@@ -119,28 +116,27 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IProps[Value] extends StObject {
     
-    var beforeDrag: js.UndefOr[js.Function1[/* params */ BeforeDragParams, Unit]] = js.native
+    var beforeDrag: js.UndefOr[js.Function1[/* params */ BeforeDragParams, Unit]] = js.undefined
     
-    var container: js.UndefOr[Element | Null] = js.native
+    var container: js.UndefOr[Element | Null] = js.undefined
     
-    var lockVertically: Boolean = js.native
+    var lockVertically: Boolean
     
-    def onChange(meta: OnChangeMeta): Unit = js.native
+    def onChange(meta: OnChangeMeta): Unit
     
-    var removableByMove: Boolean = js.native
+    var removableByMove: Boolean
     
-    def renderItem(params: RenderItemParams[Value]): ReactNode = js.native
+    def renderItem(params: RenderItemParams[Value]): ReactNode
     
-    def renderList(props: RenderListParams): ReactNode = js.native
+    def renderList(props: RenderListParams): ReactNode
     
-    var transitionDuration: Double = js.native
+    var transitionDuration: Double
     
-    var values: js.Array[Value] = js.native
+    var values: js.Array[Value]
     
-    var voiceover: IVoiceover = js.native
+    var voiceover: IVoiceover
   }
   object IProps {
     
@@ -160,7 +156,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class IPropsMutableBuilder[Self <: IProps[_], Value] (val x: Self with IProps[Value]) extends AnyVal {
+    implicit class IPropsMutableBuilder[Self <: IProps[?], Value] (val x: Self & IProps[Value]) extends AnyVal {
       
       @scala.inline
       def setBeforeDrag(value: /* params */ BeforeDragParams => Unit): Self = StObject.set(x, "beforeDrag", js.Any.fromFunction1(value))
@@ -206,18 +202,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IVoiceover extends StObject {
     
-    def canceled(position: Double): String = js.native
+    def canceled(position: Double): String
     
-    def dropped(from: Double, to: Double): String = js.native
+    def dropped(from: Double, to: Double): String
     
-    def item(position: Double): String = js.native
+    def item(position: Double): String
     
-    def lifted(position: Double): String = js.native
+    def lifted(position: Double): String
     
-    def moved(position: Double, up: Boolean): String = js.native
+    def moved(position: Double, up: Boolean): String
   }
   object IVoiceover {
     
@@ -253,14 +248,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OnChangeMeta extends StObject {
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
     
-    var targetRect: ClientRect = js.native
+    var targetRect: ClientRect
   }
   object OnChangeMeta {
     
@@ -284,20 +278,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RenderItemParams[Value] extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var isDragged: Boolean = js.native
+    var isDragged: Boolean
     
-    var isOutOfBounds: Boolean = js.native
+    var isOutOfBounds: Boolean
     
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
-    var props: IItemProps = js.native
+    var props: IItemProps
     
-    var value: Value = js.native
+    var value: Value
   }
   object RenderItemParams {
     
@@ -308,7 +301,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class RenderItemParamsMutableBuilder[Self <: RenderItemParams[_], Value] (val x: Self with RenderItemParams[Value]) extends AnyVal {
+    implicit class RenderItemParamsMutableBuilder[Self <: RenderItemParams[?], Value] (val x: Self & RenderItemParams[Value]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -333,14 +326,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RenderListParams extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var isDragged: Boolean = js.native
+    var isDragged: Boolean
     
-    var props: Ref = js.native
+    var props: Ref
   }
   object RenderListParams {
     

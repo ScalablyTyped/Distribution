@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var files: FilesResource = js.native
+  var files: FilesResource
   
-  var images: ImagesResource = js.native
+  var images: ImagesResource
   
-  var locations: LocationsResource = js.native
+  var locations: LocationsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object ProjectsResource {
   

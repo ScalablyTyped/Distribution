@@ -2,7 +2,6 @@ package typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * containing the user&#39;s data that will remain across sessions. Each user
   * has a single environment with the ID &quot;default&quot;.
   */
-@js.native
 trait SchemaEnvironment extends StObject {
   
   /**
     * Required. Full path to the Docker image used to run this environment,
     * e.g. &quot;gcr.io/dev-con/cloud-devshell:latest&quot;.
     */
-  var dockerImage: js.UndefOr[String] = js.native
+  var dockerImage: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The environment&#39;s identifier, which is always
     * &quot;default&quot;.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Full name of this resource, in the format
@@ -33,7 +31,7 @@ trait SchemaEnvironment extends StObject {
     * `{environment_id}` is the identifier of this environment. For example,
     * `users/someone@example.com/environments/default`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Public keys associated with the environment. Clients can
@@ -42,30 +40,30 @@ trait SchemaEnvironment extends StObject {
     * or removed from the environment using the CreatePublicKey and
     * DeletePublicKey methods.
     */
-  var publicKeys: js.UndefOr[js.Array[SchemaPublicKey]] = js.native
+  var publicKeys: js.UndefOr[js.Array[SchemaPublicKey]] = js.undefined
   
   /**
     * Output only. Host to which clients can connect to initiate SSH sessions
     * with the environment.
     */
-  var sshHost: js.UndefOr[String] = js.native
+  var sshHost: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Port to which clients can connect to initiate SSH sessions
     * with the environment.
     */
-  var sshPort: js.UndefOr[Double] = js.native
+  var sshPort: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. Username that clients should use when initiating SSH
     * sessions with the environment.
     */
-  var sshUsername: js.UndefOr[String] = js.native
+  var sshUsername: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Current execution state of this environment.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaEnvironment {
   

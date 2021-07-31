@@ -9,19 +9,17 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.VariableDeclaratorKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declarations extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declarations: js.Array[VariableDeclaratorKind | IdentifierKind] = js.native
+  var declarations: js.Array[VariableDeclaratorKind | IdentifierKind]
   
-  var kind: `var` | let | const = js.native
+  var kind: `var` | let | const
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object Declarations {
   

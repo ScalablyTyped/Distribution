@@ -3,29 +3,27 @@ package typings.googleCloudKms.mod.v1
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CryptoKeyVersion extends StObject {
   
-  var algorithm: CryptoKeyVersionAlgorithm = js.native
+  var algorithm: CryptoKeyVersionAlgorithm
   
-  var attestation: js.UndefOr[KeyOperationAttestation] = js.native
+  var attestation: js.UndefOr[KeyOperationAttestation] = js.undefined
   
-  var createTime: AsObject = js.native
+  var createTime: AsObject
   
-  var destroyEventTime: js.UndefOr[AsObject] = js.native
+  var destroyEventTime: js.UndefOr[AsObject] = js.undefined
   
-  var destroyTime: js.UndefOr[AsObject] = js.native
+  var destroyTime: js.UndefOr[AsObject] = js.undefined
   
-  var generateTime: AsObject = js.native
+  var generateTime: AsObject
   
-  var name: String = js.native
+  var name: String
   
-  var protectionLevel: ProtectionLevel = js.native
+  var protectionLevel: ProtectionLevel
   
-  var state: CryptoKeyVersionState = js.native
+  var state: CryptoKeyVersionState
 }
 object CryptoKeyVersion {
   

@@ -3,10 +3,13 @@ package typings.mobservable
 import typings.mobservable.interfacesMod.IContextInfoStruct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dnodeMod {
+  
+  @JSImport("mobservable/lib/dnode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobservable/lib/dnode", "DataNode")
   @js.native
@@ -50,19 +53,25 @@ object dnodeMod {
   object NodeState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NodeState with Double] = js.native
+    def apply(value: Double): js.UndefOr[NodeState & Double] = js.native
     
     @js.native
-    sealed trait PENDING extends NodeState
-    /* 1 */ val PENDING: typings.mobservable.dnodeMod.NodeState.PENDING with Double = js.native
+    sealed trait PENDING
+      extends StObject
+         with NodeState
+    /* 1 */ val PENDING: typings.mobservable.dnodeMod.NodeState.PENDING & Double = js.native
     
     @js.native
-    sealed trait READY extends NodeState
-    /* 2 */ val READY: typings.mobservable.dnodeMod.NodeState.READY with Double = js.native
+    sealed trait READY
+      extends StObject
+         with NodeState
+    /* 2 */ val READY: typings.mobservable.dnodeMod.NodeState.READY & Double = js.native
     
     @js.native
-    sealed trait STALE extends NodeState
-    /* 0 */ val STALE: typings.mobservable.dnodeMod.NodeState.STALE with Double = js.native
+    sealed trait STALE
+      extends StObject
+         with NodeState
+    /* 0 */ val STALE: typings.mobservable.dnodeMod.NodeState.STALE & Double = js.native
   }
   
   @JSImport("mobservable/lib/dnode", "ViewNode")
@@ -103,34 +112,26 @@ object dnodeMod {
     def wakeUp(): Unit = js.native
   }
   
-  @JSImport("mobservable/lib/dnode", "checkIfStateIsBeingModifiedDuringView")
-  @js.native
-  def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = js.native
+  @scala.inline
+  def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateIsBeingModifiedDuringView")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobservable/lib/dnode", "isComputingView")
-  @js.native
-  def isComputingView(): Boolean = js.native
+  @scala.inline
+  def isComputingView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingView")().asInstanceOf[Boolean]
   
-  @JSImport("mobservable/lib/dnode", "isInTransaction")
-  @js.native
-  def isInTransaction(): Boolean = js.native
+  @scala.inline
+  def isInTransaction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTransaction")().asInstanceOf[Boolean]
   
-  @JSImport("mobservable/lib/dnode", "runAfterTransaction")
-  @js.native
-  def runAfterTransaction(action: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def runAfterTransaction(action: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAfterTransaction")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobservable/lib/dnode", "stackDepth")
-  @js.native
-  def stackDepth(): js.Any = js.native
+  @scala.inline
+  def stackDepth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stackDepth")().asInstanceOf[js.Any]
   
-  @JSImport("mobservable/lib/dnode", "transaction")
-  @js.native
-  def transaction[T](action: js.Function0[T]): T = js.native
-  @JSImport("mobservable/lib/dnode", "transaction")
-  @js.native
-  def transaction[T](action: js.Function0[T], thisArg: js.Any): T = js.native
+  @scala.inline
+  def transaction[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def transaction[T](action: js.Function0[T], thisArg: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("mobservable/lib/dnode", "untracked")
-  @js.native
-  def untracked[T](action: js.Function0[T]): T = js.native
+  @scala.inline
+  def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
 }

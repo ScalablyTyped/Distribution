@@ -2,27 +2,25 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecorationOptions extends StObject {
   
   /**
     * A message that should be rendered when hovering over the decoration.
     */
-  var hoverMessage: js.UndefOr[MarkedString | js.Array[MarkedString]] = js.native
+  var hoverMessage: js.UndefOr[MarkedString | js.Array[MarkedString]] = js.undefined
   
   /**
     * Range to which this decoration is applied. The range must not be empty.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * Render options applied to the current decoration. For performance reasons, keep the
     * number of decoration specific options small, and use decoration types wherever possible.
     */
-  var renderOptions: js.UndefOr[DecorationInstanceRenderOptions] = js.native
+  var renderOptions: js.UndefOr[DecorationInstanceRenderOptions] = js.undefined
 }
 object DecorationOptions {
   

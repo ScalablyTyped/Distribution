@@ -10,37 +10,35 @@ import typings.go.mod.Size
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Background extends StObject {
     
-    var background: js.UndefOr[BrushLike] = js.native
+    var background: js.UndefOr[BrushLike] = js.undefined
     
-    var details: js.UndefOr[js.Any] = js.native
+    var details: js.UndefOr[js.Any] = js.undefined
     
-    var document: js.UndefOr[typings.std.Document] = js.native
+    var document: js.UndefOr[typings.std.Document] = js.undefined
     
-    var maxSize: js.UndefOr[Size] = js.native
+    var maxSize: js.UndefOr[Size] = js.undefined
     
-    var padding: js.UndefOr[MarginLike] = js.native
+    var padding: js.UndefOr[MarginLike] = js.undefined
     
-    var parts: js.UndefOr[Iterable[Part]] = js.native
+    var parts: js.UndefOr[Iterable[Part]] = js.undefined
     
-    var position: js.UndefOr[Point] = js.native
+    var position: js.UndefOr[Point] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var showGrid: js.UndefOr[Boolean] = js.native
+    var showGrid: js.UndefOr[Boolean] = js.undefined
     
-    var showTemporary: js.UndefOr[Boolean] = js.native
+    var showTemporary: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Background {
     
@@ -127,30 +125,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Document extends StObject {
     
-    var background: js.UndefOr[BrushLike] = js.native
+    var background: js.UndefOr[BrushLike] = js.undefined
     
-    var document: js.UndefOr[typings.std.Document] = js.native
+    var document: js.UndefOr[typings.std.Document] = js.undefined
     
-    var elementFinished: js.UndefOr[js.Function2[/* obj */ GraphObject, /* elt */ SVGElement, Unit]] = js.native
+    var elementFinished: js.UndefOr[js.Function2[/* obj */ GraphObject, /* elt */ SVGElement, Unit]] = js.undefined
     
-    var maxSize: js.UndefOr[Size] = js.native
+    var maxSize: js.UndefOr[Size] = js.undefined
     
-    var padding: js.UndefOr[MarginLike] = js.native
+    var padding: js.UndefOr[MarginLike] = js.undefined
     
-    var parts: js.UndefOr[Iterable[Part]] = js.native
+    var parts: js.UndefOr[Iterable[Part]] = js.undefined
     
-    var position: js.UndefOr[Point] = js.native
+    var position: js.UndefOr[Point] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var showGrid: js.UndefOr[Boolean] = js.native
+    var showGrid: js.UndefOr[Boolean] = js.undefined
     
-    var showTemporary: js.UndefOr[Boolean] = js.native
+    var showTemporary: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object Document {
     
@@ -231,10 +228,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Random extends StObject {
     
-    def random(): Double = js.native
+    def random(): Double
   }
   object Random {
     

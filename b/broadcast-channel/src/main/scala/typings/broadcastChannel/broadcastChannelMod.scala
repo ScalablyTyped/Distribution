@@ -6,10 +6,13 @@ import typings.broadcastChannel.broadcastChannelBooleans.`false`
 import typings.std.MessageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object broadcastChannelMod {
+  
+  @JSImport("broadcast-channel/types/broadcast-channel", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("broadcast-channel/types/broadcast-channel", "BroadcastChannel")
   @js.native
@@ -35,34 +38,29 @@ object broadcastChannelMod {
     val `type`: MethodType = js.native
   }
   
-  @JSImport("broadcast-channel/types/broadcast-channel", "clearNodeFolder")
-  @js.native
-  def clearNodeFolder(): js.Promise[Boolean] = js.native
-  @JSImport("broadcast-channel/types/broadcast-channel", "clearNodeFolder")
-  @js.native
-  def clearNodeFolder(opts: BroadcastChannelOptions): js.Promise[Boolean] = js.native
+  @scala.inline
+  def clearNodeFolder(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")().asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def clearNodeFolder(opts: BroadcastChannelOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("broadcast-channel/types/broadcast-channel", "enforceOptions")
-  @js.native
-  def enforceOptions(): Unit = js.native
-  @JSImport("broadcast-channel/types/broadcast-channel", "enforceOptions")
-  @js.native
-  def enforceOptions(opts: BroadcastChannelOptions): Unit = js.native
-  @JSImport("broadcast-channel/types/broadcast-channel", "enforceOptions")
-  @js.native
-  def enforceOptions_false(opts: `false`): Unit = js.native
+  @scala.inline
+  def enforceOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceOptions")().asInstanceOf[Unit]
+  @scala.inline
+  def enforceOptions(opts: BroadcastChannelOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def enforceOptions_false(opts: `false`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait BroadcastChannelEventMap extends StObject {
     
-    var message: MessageEvent[_] = js.native
+    var message: MessageEvent[js.Any]
     
-    var messageerror: MessageEvent[_] = js.native
+    var messageerror: MessageEvent[js.Any]
   }
   object BroadcastChannelEventMap {
     
     @scala.inline
-    def apply(message: MessageEvent[_], messageerror: MessageEvent[_]): BroadcastChannelEventMap = {
+    def apply(message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): BroadcastChannelEventMap = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
       __obj.asInstanceOf[BroadcastChannelEventMap]
     }
@@ -71,27 +69,26 @@ object broadcastChannelMod {
     implicit class BroadcastChannelEventMapMutableBuilder[Self <: BroadcastChannelEventMap] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMessage(value: MessageEvent[_]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessageerror(value: MessageEvent[_]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+      def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait BroadcastChannelOptions extends StObject {
     
-    var idb: js.UndefOr[FallbackInterval] = js.native
+    var idb: js.UndefOr[FallbackInterval] = js.undefined
     
-    var methods: js.UndefOr[js.Array[BroadcastMethod[js.Object]] | BroadcastMethod[js.Object]] = js.native
+    var methods: js.UndefOr[js.Array[BroadcastMethod[js.Object]] | BroadcastMethod[js.Object]] = js.undefined
     
-    var node: js.UndefOr[Ttl] = js.native
+    var node: js.UndefOr[Ttl] = js.undefined
     
-    var prepareDelay: js.UndefOr[Double] = js.native
+    var prepareDelay: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[MethodType] = js.native
+    var `type`: js.UndefOr[MethodType] = js.undefined
     
-    var webWorkerSupport: js.UndefOr[Boolean] = js.native
+    var webWorkerSupport: js.UndefOr[Boolean] = js.undefined
   }
   object BroadcastChannelOptions {
     
@@ -145,24 +142,23 @@ object broadcastChannelMod {
     }
   }
   
-  @js.native
   trait BroadcastMethod[State] extends StObject {
     
-    def averageResponseTime(): Double = js.native
+    def averageResponseTime(): Double
     
-    def canBeUsed(): Boolean = js.native
+    def canBeUsed(): Boolean
     
-    def close(channelState: State): Unit = js.native
+    def close(channelState: State): Unit
     
-    def create(channelName: String, options: BroadcastChannelOptions): js.Promise[State] | State = js.native
+    def create(channelName: String, options: BroadcastChannelOptions): js.Promise[State] | State
     
-    def microSeconds(): Double = js.native
+    def microSeconds(): Double
     
-    def onMessage(channelState: State, callback: js.Function1[/* args */ js.Any, Unit]): Unit = js.native
+    def onMessage(channelState: State, callback: js.Function1[/* args */ js.Any, Unit]): Unit
     
-    def postMessage(channelState: State, message: js.Any): js.Promise[_] = js.native
+    def postMessage(channelState: State, message: js.Any): js.Promise[js.Any]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BroadcastMethod {
     
@@ -174,7 +170,7 @@ object broadcastChannelMod {
       create: (String, BroadcastChannelOptions) => js.Promise[State] | State,
       microSeconds: () => Double,
       onMessage: (State, js.Function1[/* args */ js.Any, Unit]) => Unit,
-      postMessage: (State, js.Any) => js.Promise[_],
+      postMessage: (State, js.Any) => js.Promise[js.Any],
       `type`: String
     ): BroadcastMethod[State] = {
       val __obj = js.Dynamic.literal(averageResponseTime = js.Any.fromFunction0(averageResponseTime), canBeUsed = js.Any.fromFunction0(canBeUsed), close = js.Any.fromFunction1(close), create = js.Any.fromFunction2(create), microSeconds = js.Any.fromFunction0(microSeconds), onMessage = js.Any.fromFunction2(onMessage), postMessage = js.Any.fromFunction2(postMessage))
@@ -183,7 +179,7 @@ object broadcastChannelMod {
     }
     
     @scala.inline
-    implicit class BroadcastMethodMutableBuilder[Self <: BroadcastMethod[_], State] (val x: Self with BroadcastMethod[State]) extends AnyVal {
+    implicit class BroadcastMethodMutableBuilder[Self <: BroadcastMethod[?], State] (val x: Self & BroadcastMethod[State]) extends AnyVal {
       
       @scala.inline
       def setAverageResponseTime(value: () => Double): Self = StObject.set(x, "averageResponseTime", js.Any.fromFunction0(value))
@@ -204,7 +200,7 @@ object broadcastChannelMod {
       def setOnMessage(value: (State, js.Function1[/* args */ js.Any, Unit]) => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setPostMessage(value: (State, js.Any) => js.Promise[_]): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+      def setPostMessage(value: (State, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
       
       @scala.inline
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

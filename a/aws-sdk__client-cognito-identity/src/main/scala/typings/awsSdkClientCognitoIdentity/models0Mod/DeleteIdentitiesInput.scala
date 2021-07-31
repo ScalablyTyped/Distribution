@@ -2,16 +2,14 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIdentitiesInput extends StObject {
   
   /**
     * <p>A list of 1-60 identities that you want to delete.</p>
     */
-  var IdentityIdsToDelete: js.UndefOr[js.Array[String]] = js.native
+  var IdentityIdsToDelete: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DeleteIdentitiesInput {
   
@@ -21,9 +19,12 @@ object DeleteIdentitiesInput {
     __obj.asInstanceOf[DeleteIdentitiesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "DeleteIdentitiesInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "DeleteIdentitiesInput")
   @js.native
-  def filterSensitiveLog(obj: DeleteIdentitiesInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: DeleteIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class DeleteIdentitiesInputMutableBuilder[Self <: DeleteIdentitiesInput] (val x: Self) extends AnyVal {

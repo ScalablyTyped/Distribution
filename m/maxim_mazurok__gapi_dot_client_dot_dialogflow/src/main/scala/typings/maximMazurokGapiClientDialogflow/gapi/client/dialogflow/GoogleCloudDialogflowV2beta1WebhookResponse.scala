@@ -3,38 +3,36 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1WebhookResponse extends StObject {
   
   /**
     * Optional. Indicates that this intent ends an interaction. Some integrations (e.g., Actions on Google or Dialogflow phone gateway) use this information to close interaction with an
     * end user. Default is false.
     */
-  var endInteraction: js.UndefOr[Boolean] = js.native
+  var endInteraction: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. Invokes the supplied events. When this field is set, Dialogflow ignores the `fulfillment_text`, `fulfillment_messages`, and `payload` fields. */
-  var followupEventInput: js.UndefOr[GoogleCloudDialogflowV2beta1EventInput] = js.native
+  var followupEventInput: js.UndefOr[GoogleCloudDialogflowV2beta1EventInput] = js.undefined
   
   /**
     * Optional. The rich response messages intended for the end-user. When provided, Dialogflow uses this field to populate QueryResult.fulfillment_messages sent to the integration or API
     * caller.
     */
-  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessage]] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessage]] = js.undefined
   
   /**
     * Optional. The text response message intended for the end-user. It is recommended to use `fulfillment_messages.text.text[0]` instead. When provided, Dialogflow uses this field to
     * populate QueryResult.fulfillment_text sent to the integration or API caller.
     */
-  var fulfillmentText: js.UndefOr[String] = js.native
+  var fulfillmentText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of output contexts that will overwrite currently active contexts for the session and reset their lifespans. When provided, Dialogflow uses this field to
     * populate QueryResult.output_contexts sent to the integration or API caller.
     */
-  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1Context]] = js.undefined
   
   /**
     * Optional. This field can be used to pass custom data from your webhook to the integration or API caller. Arbitrary JSON objects are supported. When provided, Dialogflow uses this
@@ -45,20 +43,20 @@ trait GoogleCloudDialogflowV2beta1WebhookResponse extends StObject {
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1WebhookResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1WebhookResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. Additional session entity types to replace or extend developer entity types with. The entity synonyms apply to all languages and persist for the session. Setting this data
     * from a webhook overwrites the session entity types that have been set using `detectIntent`, `streamingDetectIntent` or SessionEntityType management methods.
     */
-  var sessionEntityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1SessionEntityType]] = js.native
+  var sessionEntityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1SessionEntityType]] = js.undefined
   
   /**
     * Optional. A custom field used to identify the webhook source. Arbitrary strings are supported. When provided, Dialogflow uses this field to populate QueryResult.webhook_source sent
     * to the integration or API caller.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1WebhookResponse {
   
@@ -111,7 +109,7 @@ object GoogleCloudDialogflowV2beta1WebhookResponse {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1WebhookResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1WebhookResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline

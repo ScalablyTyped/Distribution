@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes how a single data column is treated when creating subtotals.
   * @see com.sun.star.sheet.SubTotalDescriptor
   */
-@js.native
 trait SubTotalColumn extends StObject {
   
   /** the index of the column inside the source data area. */
-  var Column: Double = js.native
+  var Column: Double
   
   /** specifies what kind of subtotals are calculated. */
-  var Function: GeneralFunction = js.native
+  var Function: GeneralFunction
 }
 object SubTotalColumn {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateElasticIpRequest extends StObject {
   
   /**
     * The Elastic IP address.
     */
-  var ElasticIp: String = js.native
+  var ElasticIp: String
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
 }
 object AssociateElasticIpRequest {
   

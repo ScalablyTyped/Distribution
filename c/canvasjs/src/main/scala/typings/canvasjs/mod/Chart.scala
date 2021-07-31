@@ -3,7 +3,6 @@ package typings.canvasjs.mod
 import typings.canvasjs.anon.FileName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("canvasjs", "Chart")
@@ -28,32 +27,17 @@ class Chart protected () extends StObject {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartAxisXOptions): Unit = js.native
-  def addTo(
-    propertyName: String,
-    options: ChartAxisXOptions,
-    index: js.UndefOr[scala.Nothing],
-    updateChart: Boolean
-  ): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisXOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisXOptions, index: Double, updateChart: Boolean): Unit = js.native
+  def addTo(propertyName: String, options: ChartAxisXOptions, index: Unit, updateChart: Boolean): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions): Unit = js.native
-  def addTo(
-    propertyName: String,
-    options: ChartAxisYOptions,
-    index: js.UndefOr[scala.Nothing],
-    updateChart: Boolean
-  ): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions, index: Double, updateChart: Boolean): Unit = js.native
+  def addTo(propertyName: String, options: ChartAxisYOptions, index: Unit, updateChart: Boolean): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions): Unit = js.native
-  def addTo(
-    propertyName: String,
-    options: ChartDataSeriesOptions,
-    index: js.UndefOr[scala.Nothing],
-    updateChart: Boolean
-  ): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions, index: Double, updateChart: Boolean): Unit = js.native
+  def addTo(propertyName: String, options: ChartDataSeriesOptions, index: Unit, updateChart: Boolean): Unit = js.native
   
   val axisX: js.Array[ChartAxisX] = js.native
   

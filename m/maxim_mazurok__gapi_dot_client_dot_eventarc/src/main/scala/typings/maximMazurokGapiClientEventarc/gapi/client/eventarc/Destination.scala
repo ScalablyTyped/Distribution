@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /** Cloud Run fully-managed service that receives the events. The service should be running in the same project of the trigger. */
-  var cloudRunService: js.UndefOr[CloudRunService] = js.native
+  var cloudRunService: js.UndefOr[CloudRunService] = js.undefined
 }
 object Destination {
   

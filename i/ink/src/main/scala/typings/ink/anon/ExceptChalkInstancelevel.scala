@@ -4,134 +4,132 @@ import typings.chalk.mod.Chalk
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined type-fest.type-fest.Except<chalk.chalk.Chalk, 'Instance' | 'level'> */
-@js.native
 trait ExceptChalkInstancelevel extends StObject {
   
-  var ansi: js.Function1[/* code */ Double, Chalk] = js.native
+  var ansi: js.Function1[/* code */ Double, Chalk]
   
-  var ansi256: js.Function1[/* index */ Double, Chalk] = js.native
+  var ansi256: js.Function1[/* index */ Double, Chalk]
   
-  var bgAnsi: js.Function1[/* code */ Double, Chalk] = js.native
+  var bgAnsi: js.Function1[/* code */ Double, Chalk]
   
-  var bgAnsi256: js.Function1[/* index */ Double, Chalk] = js.native
+  var bgAnsi256: js.Function1[/* index */ Double, Chalk]
   
-  var bgBlack: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgBlack: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgBlackBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgBlackBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgBlue: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgBlue: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgBlueBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgBlueBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgCyan: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgCyan: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgCyanBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgCyanBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgGray: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgGray: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgGreen: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgGreen: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgGreenBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgGreenBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgGrey: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgGrey: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgHex: js.Function1[/* color */ String, Chalk] = js.native
+  var bgHex: js.Function1[/* color */ String, Chalk]
   
-  var bgHsl: js.Function3[/* hue */ Double, /* saturation */ Double, /* lightness */ Double, Chalk] = js.native
+  var bgHsl: js.Function3[/* hue */ Double, /* saturation */ Double, /* lightness */ Double, Chalk]
   
-  var bgHsv: js.Function3[/* hue */ Double, /* saturation */ Double, /* value */ Double, Chalk] = js.native
+  var bgHsv: js.Function3[/* hue */ Double, /* saturation */ Double, /* value */ Double, Chalk]
   
-  var bgHwb: js.Function3[/* hue */ Double, /* whiteness */ Double, /* blackness */ Double, Chalk] = js.native
+  var bgHwb: js.Function3[/* hue */ Double, /* whiteness */ Double, /* blackness */ Double, Chalk]
   
-  var bgKeyword: js.Function1[/* color */ String, Chalk] = js.native
+  var bgKeyword: js.Function1[/* color */ String, Chalk]
   
-  var bgMagenta: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgMagenta: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgMagentaBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgMagentaBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgRed: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgRed: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgRedBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgRedBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgRgb: js.Function3[/* red */ Double, /* green */ Double, /* blue */ Double, Chalk] = js.native
+  var bgRgb: js.Function3[/* red */ Double, /* green */ Double, /* blue */ Double, Chalk]
   
-  var bgWhite: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgWhite: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgWhiteBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgWhiteBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgYellow: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgYellow: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bgYellowBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bgYellowBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var black: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var black: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var blackBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var blackBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var blue: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var blue: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var blueBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var blueBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var bold: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var bold: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var cyan: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var cyan: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var cyanBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var cyanBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var dim: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var dim: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var gray: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var gray: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var green: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var green: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var greenBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var greenBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var grey: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var grey: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var hex: js.Function1[/* color */ String, Chalk] = js.native
+  var hex: js.Function1[/* color */ String, Chalk]
   
-  var hidden: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var hidden: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var hsl: js.Function3[/* hue */ Double, /* saturation */ Double, /* lightness */ Double, Chalk] = js.native
+  var hsl: js.Function3[/* hue */ Double, /* saturation */ Double, /* lightness */ Double, Chalk]
   
-  var hsv: js.Function3[/* hue */ Double, /* saturation */ Double, /* value */ Double, Chalk] = js.native
+  var hsv: js.Function3[/* hue */ Double, /* saturation */ Double, /* value */ Double, Chalk]
   
-  var hwb: js.Function3[/* hue */ Double, /* whiteness */ Double, /* blackness */ Double, Chalk] = js.native
+  var hwb: js.Function3[/* hue */ Double, /* whiteness */ Double, /* blackness */ Double, Chalk]
   
-  var inverse: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var inverse: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var italic: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var italic: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var keyword: js.Function1[/* color */ String, Chalk] = js.native
+  var keyword: js.Function1[/* color */ String, Chalk]
   
-  var magenta: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var magenta: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var magentaBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var magentaBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var red: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var red: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var redBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var redBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var reset: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var reset: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var rgb: js.Function3[/* red */ Double, /* green */ Double, /* blue */ Double, Chalk] = js.native
+  var rgb: js.Function3[/* red */ Double, /* green */ Double, /* blue */ Double, Chalk]
   
-  var strikethrough: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var strikethrough: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var underline: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var underline: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var visible: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var visible: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var white: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var white: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var whiteBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var whiteBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var yellow: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var yellow: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
   
-  var yellowBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String] = js.native
+  var yellowBright: js.Function2[/* text */ TemplateStringsArray, /* repeated */ js.Any, String]
 }
 object ExceptChalkInstancelevel {
   

@@ -2,13 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetUserRolesDataPaged extends GetUserRolesData {
+trait GetUserRolesDataPaged
+  extends StObject
+     with GetUserRolesData {
   
-  var include_totals: Boolean = js.native
+  var include_totals: Boolean
 }
 object GetUserRolesDataPaged {
   

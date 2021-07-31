@@ -4,24 +4,22 @@ import typings.hashring.hashringStrings.hash_ring
 import typings.hashring.hashringStrings.ketama
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<hashring.hashring.HashRingOptions> */
-  @js.native
   trait PartialHashRingOptions extends StObject {
     
-    var compatibility: js.UndefOr[hash_ring | ketama] = js.native
+    var compatibility: js.UndefOr[hash_ring | ketama] = js.undefined
     
-    var `default port`: js.UndefOr[Double] = js.native
+    var `default port`: js.UndefOr[Double] = js.undefined
     
-    var `max cache size`: js.UndefOr[Double] = js.native
+    var `max cache size`: js.UndefOr[Double] = js.undefined
     
-    var replicas: js.UndefOr[Double] = js.native
+    var replicas: js.UndefOr[Double] = js.undefined
     
-    var `vnode count`: js.UndefOr[Double] = js.native
+    var `vnode count`: js.UndefOr[Double] = js.undefined
   }
   object PartialHashRingOptions {
     
@@ -67,12 +65,11 @@ object anon {
   }
   
   /* Inlined std.Partial<hashring.hashring.ServerConfig> */
-  @js.native
   trait PartialServerConfig extends StObject {
     
-    var vnodes: js.UndefOr[Double] = js.native
+    var vnodes: js.UndefOr[Double] = js.undefined
     
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object PartialServerConfig {
     

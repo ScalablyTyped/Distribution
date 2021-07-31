@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterpolationPoint extends StObject {
   
   /** The color this interpolation point should use. */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /** The color this interpolation point should use. If color is also set, this field takes precedence. */
-  var colorStyle: js.UndefOr[ColorStyle] = js.native
+  var colorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** How the value should be interpreted. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The value this interpolation point uses. May be a formula. Unused if type is MIN or MAX. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object InterpolationPoint {
   

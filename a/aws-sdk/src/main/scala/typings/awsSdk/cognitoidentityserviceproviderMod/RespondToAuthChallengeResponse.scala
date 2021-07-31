@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RespondToAuthChallengeResponse extends StObject {
   
   /**
     * The result returned by the server in response to the request to respond to the authentication challenge.
     */
-  var AuthenticationResult: js.UndefOr[AuthenticationResultType] = js.native
+  var AuthenticationResult: js.UndefOr[AuthenticationResultType] = js.undefined
   
   /**
     * The challenge name. For more information, see InitiateAuth.
     */
-  var ChallengeName: js.UndefOr[ChallengeNameType] = js.native
+  var ChallengeName: js.UndefOr[ChallengeNameType] = js.undefined
   
   /**
     * The challenge parameters. For more information, see InitiateAuth.
     */
-  var ChallengeParameters: js.UndefOr[ChallengeParametersType] = js.native
+  var ChallengeParameters: js.UndefOr[ChallengeParametersType] = js.undefined
   
   /**
     * The session which should be passed both ways in challenge-response calls to the service. If the caller needs to go through another challenge, they return a session with other challenge parameters. This session should be passed as it is to the next RespondToAuthChallenge API call.
     */
-  var Session: js.UndefOr[SessionType] = js.native
+  var Session: js.UndefOr[SessionType] = js.undefined
 }
 object RespondToAuthChallengeResponse {
   

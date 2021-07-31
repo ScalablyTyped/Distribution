@@ -4,7 +4,6 @@ import typings.typeorm.anon.Left
 import typings.typeorm.tableTableMod.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object namingStrategyNamingStrategyInterfaceMod {
@@ -25,11 +24,11 @@ object namingStrategyNamingStrategyInterfaceMod {
       */
     def closureJunctionTableName(originalClosureTableName: String): String = js.native
     
-    def columnName(propertyName: String, customName: js.UndefOr[scala.Nothing], embeddedPrefixes: js.Array[String]): String = js.native
     /**
       * Gets the table's column name from the given property name.
       */
     def columnName(propertyName: String, customName: String, embeddedPrefixes: js.Array[String]): String = js.native
+    def columnName(propertyName: String, customName: Unit, embeddedPrefixes: js.Array[String]): String = js.native
     
     def defaultConstraintName(tableOrName: String, columnName: String): String = js.native
     /**
@@ -49,12 +48,6 @@ object namingStrategyNamingStrategyInterfaceMod {
     def exclusionConstraintName(tableOrName: Table, expression: String): String = js.native
     
     def foreignKeyName(tableOrName: String, columnNames: js.Array[String]): String = js.native
-    def foreignKeyName(
-      tableOrName: String,
-      columnNames: js.Array[String],
-      referencedTablePath: js.UndefOr[scala.Nothing],
-      referencedColumnNames: js.Array[String]
-    ): String = js.native
     def foreignKeyName(tableOrName: String, columnNames: js.Array[String], referencedTablePath: String): String = js.native
     def foreignKeyName(
       tableOrName: String,
@@ -62,21 +55,27 @@ object namingStrategyNamingStrategyInterfaceMod {
       referencedTablePath: String,
       referencedColumnNames: js.Array[String]
     ): String = js.native
+    def foreignKeyName(
+      tableOrName: String,
+      columnNames: js.Array[String],
+      referencedTablePath: Unit,
+      referencedColumnNames: js.Array[String]
+    ): String = js.native
     /**
       * Gets the name of the foreign key.
       */
     def foreignKeyName(tableOrName: Table, columnNames: js.Array[String]): String = js.native
-    def foreignKeyName(
-      tableOrName: Table,
-      columnNames: js.Array[String],
-      referencedTablePath: js.UndefOr[scala.Nothing],
-      referencedColumnNames: js.Array[String]
-    ): String = js.native
     def foreignKeyName(tableOrName: Table, columnNames: js.Array[String], referencedTablePath: String): String = js.native
     def foreignKeyName(
       tableOrName: Table,
       columnNames: js.Array[String],
       referencedTablePath: String,
+      referencedColumnNames: js.Array[String]
+    ): String = js.native
+    def foreignKeyName(
+      tableOrName: Table,
+      columnNames: js.Array[String],
+      referencedTablePath: Unit,
       referencedColumnNames: js.Array[String]
     ): String = js.native
     

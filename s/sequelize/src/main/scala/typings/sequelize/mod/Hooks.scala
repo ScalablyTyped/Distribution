@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -133,14 +132,14 @@ trait Hooks[TInstance] extends StObject {
     ]
   ): Unit = js.native
   
-  def afterDefine(fn: js.Function1[/* model */ Model[TInstance, _, _], Unit]): Unit = js.native
+  def afterDefine(fn: js.Function1[/* model */ Model[TInstance, js.Any, js.Any], Unit]): Unit = js.native
   /**
     * A hook that is run after a define call
     *
     * @param name
     * @param fn   A callback function that is called with factory
     */
-  def afterDefine(name: String, fn: js.Function1[/* model */ Model[TInstance, _, _], Unit]): Unit = js.native
+  def afterDefine(name: String, fn: js.Function1[/* model */ Model[TInstance, js.Any, js.Any], Unit]): Unit = js.native
   
   def afterDelete(
     fn: js.Function3[

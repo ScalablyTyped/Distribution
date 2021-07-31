@@ -2,19 +2,17 @@ package typings.psi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Category extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var distributions: js.Array[Max] = js.native
+    var distributions: js.Array[Max]
     
-    var percentile: Double = js.native
+    var percentile: Double
   }
   object Category {
     
@@ -41,14 +39,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var proportion: Double = js.native
+    var proportion: Double
   }
   object Max {
     

@@ -2,17 +2,15 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extract extends StObject {
   
-  var extract: String = js.native
+  var extract: String
   
-  var extractAttribute: String = js.native
+  var extractAttribute: String
   
-  var score: Double = js.native
+  var score: Double
 }
 object Extract {
   

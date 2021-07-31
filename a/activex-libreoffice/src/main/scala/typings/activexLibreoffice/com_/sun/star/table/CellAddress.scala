@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a cell address within a spreadsheet document. */
-@js.native
 trait CellAddress extends StObject {
   
   /** is the index of the column where the cell is located. */
-  var Column: Double = js.native
+  var Column: Double
   
   /** is the index of the row where the cell is located. */
-  var Row: Double = js.native
+  var Row: Double
   
   /** is the index of the sheet that contains the cell. */
-  var Sheet: Double = js.native
+  var Sheet: Double
 }
 object CellAddress {
   

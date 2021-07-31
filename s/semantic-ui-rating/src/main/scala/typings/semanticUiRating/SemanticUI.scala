@@ -47,7 +47,6 @@ import typings.semanticUiRating.semanticUiRatingStrings.silent
 import typings.semanticUiRating.semanticUiRatingStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -77,38 +76,39 @@ object SemanticUI {
       * Enables interactive rating mode
       */
     def apply(behavior: enable): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: clearable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: clearable, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: clearable, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: clearable, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: initialRating, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: fireOnInit, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: initialRating, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: interactive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: initialRating, value: Unit): Double = js.native
     def apply(behavior: setting, name: interactive, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: interactive, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onRate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onRate,
       value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onRate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
     def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: RatingSettings): JQuery = js.native
     def apply(settings: RatingSettings): JQuery = js.native
     
@@ -118,23 +118,22 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'hover'
           */
-        var hover: String = js.native
+        var hover: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
       }
       object Impl {
         
@@ -158,20 +157,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplhover | PickImplloading) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplhover | PickImplloading) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     /* Inlined semantic-ui-rating.SemanticUI.Rating.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var action: String with js.UndefOr[String] = js.native
+      var action: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(action: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(action: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -180,16 +178,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setAction(value: String with js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'You called a rating action that was not defined'
           */
-        var action: String = js.native
+        var action: String
       }
       object Impl {
         
@@ -208,15 +205,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, 'action'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var action: String with js.UndefOr[String] = js.native
+        var action: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(action: String with js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
+        def apply(action: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param]
         }
@@ -225,32 +221,30 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setAction(value: String with js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+          def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
       }
     }
     
     /* Inlined semantic-ui-rating.SemanticUI.Rating.SelectorSettings.Param */
-    @js.native
     trait SelectorSettings extends StObject {
       
-      var icon: String with js.UndefOr[String] = js.native
+      var icon: String & js.UndefOr[String]
     }
     object SelectorSettings {
       
       @scala.inline
-      def apply(icon: String with js.UndefOr[String]): SelectorSettings = {
+      def apply(icon: String & js.UndefOr[String]): SelectorSettings = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
         __obj.asInstanceOf[SelectorSettings]
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.icon'
           */
-        var icon: String = js.native
+        var icon: String
       }
       object Impl {
         
@@ -269,15 +263,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, 'icon'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var icon: String with js.UndefOr[String] = js.native
+        var icon: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(icon: String with js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
+        def apply(icon: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
           val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param]
         }
@@ -286,7 +279,7 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setIcon(value: String with js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+          def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
       }
       
@@ -294,40 +287,39 @@ object SemanticUI {
       implicit class SelectorSettingsMutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setIcon(value: String with js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object RatingSettings {
     
-    @js.native
     trait Impl extends StObject {
       
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * By default a rating will be only clearable if there is 1 icon. Setting to true/false will allow or disallow a user to clear their rating
         *
         * @default 'auto'
         */
-      var clearable: auto | Boolean = js.native
+      var clearable: auto | Boolean
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether callbacks like onRate should fire immediately after initializing with the current value.
         *
         * @default false
         */
-      var fireOnInit: Boolean = js.native
+      var fireOnInit: Boolean
       
       // region Rating Settings
       /**
@@ -335,21 +327,21 @@ object SemanticUI {
         *
         * @default 0
         */
-      var initialRating: Double = js.native
+      var initialRating: Double
       
       /**
         * Whether to enable user's ability to rate
         *
         * @default true
         */
-      var interactive: Boolean = js.native
+      var interactive: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -357,33 +349,33 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // endregion
       // region Callbacks
       /**
         * Is called after user selects a new rating
         */
-      def onRate(value: Double): Unit = js.native
+      def onRate(value: Double): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -455,7 +447,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplinitialRating | PickImplfireOnInit | PickImplclearable | PickImplinteractive | PickImplonRate | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplinitialRating | PickImplfireOnInit | PickImplclearable | PickImplinteractive | PickImplonRate | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/rating.html#/settings}

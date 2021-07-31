@@ -2,21 +2,19 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyle extends StObject {
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var fontStyle: String = js.native
+  var fontStyle: String
   
-  var letterSpacing: String = js.native
+  var letterSpacing: String
   
-  var lineHeight: String = js.native
+  var lineHeight: String
 }
 object FontStyle {
   

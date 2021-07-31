@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Errors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedInstanceLastAttempt extends StObject {
   
   /** [Output Only] Encountered errors during the last attempt to create or delete the instance. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
 }
 object ManagedInstanceLastAttempt {
   

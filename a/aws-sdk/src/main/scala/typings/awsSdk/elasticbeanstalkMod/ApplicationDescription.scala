@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationArn] = js.native
+  var ApplicationArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationArn] = js.undefined
   
   /**
     * The name of the application.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * The names of the configuration templates associated with this application.
     */
-  var ConfigurationTemplates: js.UndefOr[ConfigurationTemplateNamesList] = js.native
+  var ConfigurationTemplates: js.UndefOr[ConfigurationTemplateNamesList] = js.undefined
   
   /**
     * The date when the application was created.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.native
+  var DateCreated: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The date when the application was last modified.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.native
+  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
   
   /**
     * User-defined description of the application.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * The lifecycle settings for the application.
     */
-  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.native
+  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.undefined
   
   /**
     * The names of the versions for this application.
     */
-  var Versions: js.UndefOr[VersionLabelsList] = js.native
+  var Versions: js.UndefOr[VersionLabelsList] = js.undefined
 }
 object ApplicationDescription {
   

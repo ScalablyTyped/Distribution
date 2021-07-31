@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template TChoiceMap
   * The valid choices for the question.
   */
-@js.native
-trait ListQuestionOptionsBase[T, TChoiceMap] extends Question[T] {
+trait ListQuestionOptionsBase[T, TChoiceMap]
+  extends StObject
+     with Question[T] {
   
   /**
     * The choices of the prompt.
     */
-  var choices: js.UndefOr[AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]] = js.native
+  var choices: js.UndefOr[AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]] = js.undefined
   
   /**
     * The number of elements to show on each page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
 }
 object ListQuestionOptionsBase {
   
@@ -36,7 +36,7 @@ object ListQuestionOptionsBase {
   }
   
   @scala.inline
-  implicit class ListQuestionOptionsBaseMutableBuilder[Self <: ListQuestionOptionsBase[_, _], T, TChoiceMap] (val x: Self with (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
+  implicit class ListQuestionOptionsBaseMutableBuilder[Self <: ListQuestionOptionsBase[?, ?], T, TChoiceMap] (val x: Self & (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
     
     @scala.inline
     def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])

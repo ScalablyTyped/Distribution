@@ -2,58 +2,56 @@ package typings.phaser.Phaser.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Time {
   
-  @js.native
   trait TimerEventConfig extends StObject {
     
     /**
       * Additional arguments to be passed to the `callback`.
       */
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The callback which will be called when the Timer Event fires.
       */
-    var callback: js.UndefOr[js.Function] = js.native
+    var callback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The scope (`this` object) with which to invoke the `callback`.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.native
+    var callbackScope: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The delay after which the Timer Event should fire, in milliseconds.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * `true` if the Timer Event should repeat indefinitely.
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `true` if the Timer Event should be paused.
       */
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The total number of times the Timer Event will repeat before finishing.
       */
-    var repeat: js.UndefOr[Double] = js.native
+    var repeat: js.UndefOr[Double] = js.undefined
     
     /**
       * The initial elapsed time in milliseconds. Useful if you want a long duration with repeat, but for the first loop to fire quickly.
       */
-    var startAt: js.UndefOr[Double] = js.native
+    var startAt: js.UndefOr[Double] = js.undefined
     
     /**
       * The scale of the elapsed time.
       */
-    var timeScale: js.UndefOr[Double] = js.native
+    var timeScale: js.UndefOr[Double] = js.undefined
   }
   object TimerEventConfig {
     
@@ -67,7 +65,7 @@ object Time {
     implicit class TimerEventConfigMutableBuilder[Self <: TimerEventConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

@@ -2,7 +2,6 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,125 +11,207 @@ sealed trait PropertyType extends StObject
 object PropertyType extends StObject {
   
   @js.native
-  sealed trait boolean extends PropertyType
+  sealed trait boolean
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait booleanArray extends PropertyType
+  sealed trait booleanArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait char16 extends PropertyType
+  sealed trait char16
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait char16Array extends PropertyType
+  sealed trait char16Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait dateTime extends PropertyType
+  sealed trait dateTime
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait dateTimeArray extends PropertyType
+  sealed trait dateTimeArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait double extends PropertyType
+  sealed trait double
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait doubleArray extends PropertyType
+  sealed trait doubleArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait empty extends PropertyType
+  sealed trait empty
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait guid extends PropertyType
+  sealed trait guid
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait guidArray extends PropertyType
+  sealed trait guidArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait inspectable extends PropertyType
+  sealed trait inspectable
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait inspectableArray extends PropertyType
+  sealed trait inspectableArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int16 extends PropertyType
+  sealed trait int16
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int16Array extends PropertyType
+  sealed trait int16Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int32 extends PropertyType
+  sealed trait int32
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int32Array extends PropertyType
+  sealed trait int32Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int64 extends PropertyType
+  sealed trait int64
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait int64Array extends PropertyType
+  sealed trait int64Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait otherType extends PropertyType
+  sealed trait otherType
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait otherTypeArray extends PropertyType
+  sealed trait otherTypeArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait point extends PropertyType
+  sealed trait point
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait pointArray extends PropertyType
+  sealed trait pointArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait rect extends PropertyType
+  sealed trait rect
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait rectArray extends PropertyType
+  sealed trait rectArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait single extends PropertyType
+  sealed trait single
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait singleArray extends PropertyType
+  sealed trait singleArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait size extends PropertyType
+  sealed trait size
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait sizeArray extends PropertyType
+  sealed trait sizeArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait string extends PropertyType
+  sealed trait string
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait stringArray extends PropertyType
+  sealed trait stringArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait timeSpan extends PropertyType
+  sealed trait timeSpan
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait timeSpanArray extends PropertyType
+  sealed trait timeSpanArray
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt16 extends PropertyType
+  sealed trait uInt16
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt16Array extends PropertyType
+  sealed trait uInt16Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt32 extends PropertyType
+  sealed trait uInt32
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt32Array extends PropertyType
+  sealed trait uInt32Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt64 extends PropertyType
+  sealed trait uInt64
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt64Array extends PropertyType
+  sealed trait uInt64Array
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt8 extends PropertyType
+  sealed trait uInt8
+    extends StObject
+       with PropertyType
   
   @js.native
-  sealed trait uInt8Array extends PropertyType
+  sealed trait uInt8Array
+    extends StObject
+       with PropertyType
 }

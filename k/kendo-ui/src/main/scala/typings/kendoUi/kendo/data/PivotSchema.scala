@@ -2,27 +2,27 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PivotSchema extends DataSourceSchema {
+trait PivotSchema
+  extends StObject
+     with DataSourceSchema {
   
-  var axes: js.UndefOr[js.Any] = js.native
+  var axes: js.UndefOr[js.Any] = js.undefined
   
-  var catalogs: js.UndefOr[js.Any] = js.native
+  var catalogs: js.UndefOr[js.Any] = js.undefined
   
-  var cube: js.UndefOr[js.Any] = js.native
+  var cube: js.UndefOr[js.Any] = js.undefined
   
-  var cubes: js.UndefOr[js.Any] = js.native
+  var cubes: js.UndefOr[js.Any] = js.undefined
   
-  var dimensions: js.UndefOr[js.Any] = js.native
+  var dimensions: js.UndefOr[js.Any] = js.undefined
   
-  var hierarchies: js.UndefOr[js.Any] = js.native
+  var hierarchies: js.UndefOr[js.Any] = js.undefined
   
-  var levels: js.UndefOr[js.Any] = js.native
+  var levels: js.UndefOr[js.Any] = js.undefined
   
-  var measures: js.UndefOr[js.Any] = js.native
+  var measures: js.UndefOr[js.Any] = js.undefined
 }
 object PivotSchema {
   

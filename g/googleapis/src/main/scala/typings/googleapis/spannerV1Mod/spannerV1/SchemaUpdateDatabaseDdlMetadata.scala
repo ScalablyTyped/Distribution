@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata type for the operation returned by UpdateDatabaseDdl.
   */
-@js.native
 trait SchemaUpdateDatabaseDdlMetadata extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaUpdateDatabaseDdlMetadata extends StObject {
     * far, where `commit_timestamps[i]` is the commit timestamp for the
     * statement `statements[i]`.
     */
-  var commitTimestamps: js.UndefOr[js.Array[String]] = js.native
+  var commitTimestamps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The database being modified.
     */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /**
     * For an update this list contains all the statements. For an individual
     * statement, this list contains only that statement.
     */
-  var statements: js.UndefOr[js.Array[String]] = js.native
+  var statements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUpdateDatabaseDdlMetadata {
   

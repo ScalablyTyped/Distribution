@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySourceAssignedTargetingOptionDetails extends StObject {
   
   /** Required. ID of the inventory source. Should refer to the inventory_source_id field of an InventorySource resource. */
-  var inventorySourceId: js.UndefOr[String] = js.native
+  var inventorySourceId: js.UndefOr[String] = js.undefined
 }
 object InventorySourceAssignedTargetingOptionDetails {
   

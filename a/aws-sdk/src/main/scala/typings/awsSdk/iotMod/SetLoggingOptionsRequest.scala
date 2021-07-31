@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetLoggingOptionsRequest extends StObject {
   
   /**
     * The logging options payload.
     */
-  var loggingOptionsPayload: LoggingOptionsPayload = js.native
+  var loggingOptionsPayload: LoggingOptionsPayload
 }
 object SetLoggingOptionsRequest {
   

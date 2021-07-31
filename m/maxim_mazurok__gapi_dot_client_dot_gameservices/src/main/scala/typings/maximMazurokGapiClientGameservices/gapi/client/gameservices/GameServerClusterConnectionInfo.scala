@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameServerClusterConnectionInfo extends StObject {
   
   /** Reference to the GKE cluster where the game servers are installed. */
-  var gkeClusterReference: js.UndefOr[GkeClusterReference] = js.native
+  var gkeClusterReference: js.UndefOr[GkeClusterReference] = js.undefined
   
   /** Namespace designated on the game server cluster where the Agones game server instances will be created. Existence of the namespace will be validated during creation. */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
 }
 object GameServerClusterConnectionInfo {
   

@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeViewNodeProcessingModeEventArgs extends ProcessingModeEventArgs {
+trait TreeViewNodeProcessingModeEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val node: BootstrapTreeViewNode = js.native
+  val node: BootstrapTreeViewNode
 }
 object TreeViewNodeProcessingModeEventArgs {
   

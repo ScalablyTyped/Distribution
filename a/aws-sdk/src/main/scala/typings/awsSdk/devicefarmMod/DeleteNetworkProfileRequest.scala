@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNetworkProfileRequest extends StObject {
   
   /**
     * The ARN of the network profile to delete.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object DeleteNetworkProfileRequest {
   

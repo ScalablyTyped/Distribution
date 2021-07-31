@@ -2,15 +2,13 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRightWidth extends StObject {
   
-  var borderRightWidth: Double = js.native
+  var borderRightWidth: Double
   
-  var height: Double = js.native
+  var height: Double
 }
 object BorderRightWidth {
   

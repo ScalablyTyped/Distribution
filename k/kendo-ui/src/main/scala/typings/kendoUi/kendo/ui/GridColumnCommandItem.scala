@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnCommandItem extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var click: js.UndefOr[js.Function] = js.native
+  var click: js.UndefOr[js.Function] = js.undefined
   
-  var iconClass: js.UndefOr[String | GridColumnCommandItemIconClass] = js.native
+  var iconClass: js.UndefOr[String | GridColumnCommandItemIconClass] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String | GridColumnCommandItemText] = js.native
+  var text: js.UndefOr[String | GridColumnCommandItemText] = js.undefined
   
-  var visible: js.UndefOr[js.Function] = js.native
+  var visible: js.UndefOr[js.Function] = js.undefined
 }
 object GridColumnCommandItem {
   

@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Disabled
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteMarkerReplicationMod {
   
-  @js.native
   trait DeleteMarkerReplication extends StObject {
     
     /**
       * <p>The status of the delete marker replication.</p> <note> <p> In the current implementation, Amazon S3 does not replicate the delete markers. Therefore, the status must be <code>Disabled</code>. </p> </note>
       */
-    var Status: js.UndefOr[Enabled | Disabled | String] = js.native
+    var Status: js.UndefOr[Enabled | Disabled | String] = js.undefined
   }
   object DeleteMarkerReplication {
     

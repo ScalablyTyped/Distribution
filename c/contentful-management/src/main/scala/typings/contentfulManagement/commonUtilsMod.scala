@@ -6,19 +6,19 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonUtilsMod {
   
-  @JSImport("contentful-management/dist/typings/common-utils", "VersionHeader")
+  @JSImport("contentful-management/dist/typings/common-utils", JSImport.Namespace)
   @js.native
-  def VersionHeader(): Headers = js.native
-  @JSImport("contentful-management/dist/typings/common-utils", "VersionHeader")
-  @js.native
-  def VersionHeader(version: Double): Headers = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/common-utils", "wrapCollection")
-  @js.native
-  def wrapCollection[R, T](fn: js.Function2[/* http */ AxiosInstance, /* entity */ T, R]): js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]] = js.native
+  @scala.inline
+  def VersionHeader(): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")().asInstanceOf[Headers]
+  @scala.inline
+  def VersionHeader(version: Double): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")(version.asInstanceOf[js.Any]).asInstanceOf[Headers]
+  
+  @scala.inline
+  def wrapCollection[R, T](fn: js.Function2[/* http */ AxiosInstance, /* entity */ T, R]): js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCollection")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]]]
 }

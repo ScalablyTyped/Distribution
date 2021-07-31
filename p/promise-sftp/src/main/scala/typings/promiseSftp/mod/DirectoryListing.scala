@@ -7,36 +7,34 @@ import typings.promiseSftp.promiseSftpStrings.l
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Output of `PromiseSftp#list()` */
-@js.native
 trait DirectoryListing extends StObject {
   
   /** The last modified date of the entry. */
-  var date: Date = js.native
+  var date: Date
   
   /** The group name or ID that this entry belongs to. *NIX only */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /** The name of the entry. */
-  var name: String = js.native
+  var name: String
   
   /** The user name or ID that this entry belongs to. *NIX only */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /** The various permissions for this entry. *NIX only */
-  var rights: js.UndefOr[Group] = js.native
+  var rights: js.UndefOr[Group] = js.undefined
   
   /** True if the sticky bit is set for this entry */
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
   
   /** For symlink entries, this is the symlink's target. *NIX only */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** `d` for directory, `-` for file, and `l` for symlink only on *NIX. */
-  var `type`: d | `-_` | l = js.native
+  var `type`: d | `-_` | l
 }
 object DirectoryListing {
   

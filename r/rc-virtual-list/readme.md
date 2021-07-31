@@ -10,9 +10,9 @@ React Virtual List Component
 | ------------------ | :-------------: |
 | Full name          | rc-virtual-list |
 | Keywords           | react, react-component, virtual-list |
-| # releases         | 69 |
-| # dependents       | 25 |
-| # downloads        | 5689082 |
+| # releases         | 79 |
+| # dependents       | 30 |
+| # downloads        | 11195364 |
 | # stars            | 0 |
 
 ## Links

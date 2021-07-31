@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,22 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XGraphicProvider
   * @see XGraphicRenderer
   */
-@js.native
-trait XGraphic extends XInterface {
+trait XGraphic
+  extends StObject
+     with XInterface {
   
   /**
     * Get the type of the contained graphic
     * @returns The type of the contained graphic
     * @see GraphicType
     */
-  val Type: Double = js.native
+  val Type: Double
   
   /**
     * Get the type of the contained graphic
     * @returns The type of the contained graphic
     * @see GraphicType
     */
-  def getType(): Double = js.native
+  def getType(): Double
 }
 object XGraphic {
   

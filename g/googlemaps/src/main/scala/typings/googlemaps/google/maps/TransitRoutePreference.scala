@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait TransitRoutePreference extends StObject
 object TransitRoutePreference extends StObject {
   
   @js.native
-  sealed trait FEWER_TRANSFERS extends TransitRoutePreference
+  sealed trait FEWER_TRANSFERS
+    extends StObject
+       with TransitRoutePreference
   
   @js.native
-  sealed trait LESS_WALKING extends TransitRoutePreference
+  sealed trait LESS_WALKING
+    extends StObject
+       with TransitRoutePreference
 }

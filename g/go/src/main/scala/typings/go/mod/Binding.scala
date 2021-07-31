@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,24 +25,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Binding () extends StObject {
   def this(targetprop: String) = this()
-  def this(targetprop: js.UndefOr[scala.Nothing], sourceprop: String) = this()
   def this(targetprop: String, sourceprop: String) = this()
-  def this(
-    targetprop: js.UndefOr[scala.Nothing],
-    sourceprop: js.UndefOr[scala.Nothing],
-    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
-  ) = this()
-  def this(
-    targetprop: js.UndefOr[scala.Nothing],
-    sourceprop: String,
-    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
-  ) = this()
-  def this(
-    targetprop: String,
-    sourceprop: js.UndefOr[scala.Nothing],
-    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
-  ) = this()
-  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]) = this()
+  def this(targetprop: Unit, sourceprop: String) = this()
+  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
+  def this(targetprop: String, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
+  def this(targetprop: Unit, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
+  def this(targetprop: Unit, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
   
   /**
     * Gets or sets a converter function to apply to the GraphObject property value
@@ -93,7 +80,7 @@ class Binding () extends StObject {
     * @param {function(*,*=) | null=} backconv
     */
   def makeTwoWay(): Binding = js.native
-  def makeTwoWay(backconv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]): Binding = js.native
+  def makeTwoWay(backconv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]): Binding = js.native
   
   /**
     * Gets or sets the directions and frequency in which the binding may be evaluated.
@@ -178,9 +165,8 @@ object Binding {
     * @param {EnumValue} defval the default enumerated value to return if it fails to parse the given string.
     */
   /* static member */
-  @JSImport("go", "Binding.parseEnum")
-  @js.native
-  def parseEnum(ctor: Constructor, defval: EnumValue): js.Function1[/* a */ String, EnumValue] = js.native
+  @scala.inline
+  def parseEnum(ctor: Constructor, defval: EnumValue): js.Function1[/* a */ String, EnumValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseEnum")(ctor.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ String, EnumValue]]
   
   /**
     * This static function can be used to convert an object to a string,
@@ -189,7 +175,6 @@ object Binding {
     * @param {*} val
     */
   /* static member */
-  @JSImport("go", "Binding.toString")
-  @js.native
-  def toString_(`val`: js.Any): String = js.native
+  @scala.inline
+  def toString_(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

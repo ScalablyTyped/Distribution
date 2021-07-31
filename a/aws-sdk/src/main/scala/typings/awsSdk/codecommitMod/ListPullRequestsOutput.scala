@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPullRequestsOutput extends StObject {
   
   /**
     * An enumeration token that allows the operation to batch the next results of the operation.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The system-generated IDs of the pull requests.
     */
-  var pullRequestIds: PullRequestIdList = js.native
+  var pullRequestIds: PullRequestIdList
 }
 object ListPullRequestsOutput {
   

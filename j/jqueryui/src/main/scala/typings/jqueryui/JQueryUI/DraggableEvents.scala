@@ -3,19 +3,17 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableEvents extends StObject {
   
-  var create: js.UndefOr[DraggableEvent] = js.native
+  var create: js.UndefOr[DraggableEvent] = js.undefined
   
-  var drag: js.UndefOr[DraggableEvent] = js.native
+  var drag: js.UndefOr[DraggableEvent] = js.undefined
   
-  var start: js.UndefOr[DraggableEvent] = js.native
+  var start: js.UndefOr[DraggableEvent] = js.undefined
   
-  var stop: js.UndefOr[DraggableEvent] = js.native
+  var stop: js.UndefOr[DraggableEvent] = js.undefined
 }
 object DraggableEvents {
   

@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementRuleGroupReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the `aws.wafv2.RuleGroup` resource.
     */
-  var arn: Input[String] = js.native
+  var arn: Input[String]
   
   /**
     * The `rules` whose actions are set to `COUNT` by the web ACL, regardless of the action that is set on the rule. See Excluded Rule below for details.
     */
   var excludedRules: js.UndefOr[
     Input[js.Array[Input[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]]]
-  ] = js.native
+  ] = js.undefined
 }
 object WebAclRuleStatementRuleGroupReferenceStatement {
   

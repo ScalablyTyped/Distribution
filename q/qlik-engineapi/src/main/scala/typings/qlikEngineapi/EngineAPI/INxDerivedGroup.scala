@@ -2,36 +2,34 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxDerivedGroup...
   */
-@js.native
 trait INxDerivedGroup extends StObject {
   
   /**
     * List of the derived fields in the group.
     */
-  var qFieldDefs: js.Array[String] = js.native
+  var qFieldDefs: js.Array[String]
   
   /**
     * Grouping type.
     * The grouping should be either H or C (Grouping is mandatory for derived definitions).
     * >> Is mandatory.
     */
-  var qGrouping: NxGrpType = js.native
+  var qGrouping: NxGrpType
   
   /**
     * Identifier of the group.
     */
-  var qId: String = js.native
+  var qId: String
   
   /**
     * Name of the derived group.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object INxDerivedGroup {
   

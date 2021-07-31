@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A {@link ResultSet} maintains a cursor pointing to its current row of data. Initially the cursor is positioned before the first row. The "next" method
   * moves the cursor to the next row.
   */
-@js.native
-trait XResultSet extends XInterface {
+trait XResultSet
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the current row number. The first row is number 1, the second number 2, and so on.
     * @returns the current position
     * @throws SQLException if a database access error occurs.
     */
-  val Row: Double = js.native
+  val Row: Double
   
   /**
     * returns the {@link Statement} that produced this {@link com.sun.star.sdbc.ResultSet} object. If the result set was generated some other way, such as
@@ -30,7 +30,7 @@ trait XResultSet extends XInterface {
     * @returns the statement object
     * @throws SQLException if a database access error occurs.
     */
-  val Statement: XInterface = js.native
+  val Statement: XInterface
   
   /**
     * moves the cursor to the given row number in the result set.
@@ -46,33 +46,33 @@ trait XResultSet extends XInterface {
     * Note: Calling `absolute(1)` is the same as calling {@link com.sun.star.sdbc.XResultSet.first()} . Calling `moveToPosition(-1)` is the same as calling
     * `moveToLast()` .
     */
-  def absolute(row: Double): Boolean = js.native
+  def absolute(row: Double): Boolean
   
   /**
     * moves the cursor to the end of the result set, just after the last row. Has no effect if the result set contains no rows.
     * @throws SQLException if a database access error occurs.
     */
-  def afterLast(): Unit = js.native
+  def afterLast(): Unit
   
   /**
     * moves the cursor to the front of the result set, just before the first row. Has no effect if the result set contains no rows.
     * @throws SQLException if a database access error occurs.
     */
-  def beforeFirst(): Unit = js.native
+  def beforeFirst(): Unit
   
   /**
     * moves the cursor to the first row in the result set.
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def first(): Boolean = js.native
+  def first(): Boolean
   
   /**
     * retrieves the current row number. The first row is number 1, the second number 2, and so on.
     * @returns the current position
     * @throws SQLException if a database access error occurs.
     */
-  def getRow(): Double = js.native
+  def getRow(): Double
   
   /**
     * returns the {@link Statement} that produced this {@link com.sun.star.sdbc.ResultSet} object. If the result set was generated some other way, such as
@@ -80,28 +80,28 @@ trait XResultSet extends XInterface {
     * @returns the statement object
     * @throws SQLException if a database access error occurs.
     */
-  def getStatement(): XInterface = js.native
+  def getStatement(): XInterface
   
   /**
     * indicates whether the cursor is after the last row in the result set.
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isAfterLast(): Boolean = js.native
+  def isAfterLast(): Boolean
   
   /**
     * indicates whether the cursor is before the first row in the result set.
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isBeforeFirst(): Boolean = js.native
+  def isBeforeFirst(): Boolean
   
   /**
     * indicates whether the cursor is on the first row of the result set.
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isFirst(): Boolean = js.native
+  def isFirst(): Boolean
   
   /**
     * indicates whether the cursor is on the last row of the result set.
@@ -111,14 +111,14 @@ trait XResultSet extends XInterface {
     * @returns `TRUE` if so
     * @throws SQLException if a database access error occurs.
     */
-  def isLast(): Boolean = js.native
+  def isLast(): Boolean
   
   /**
     * moves the cursor to the last row in the result set.
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def last(): Boolean = js.native
+  def last(): Boolean
   
   /**
     * moves the cursor down one row from its current position.
@@ -131,7 +131,7 @@ trait XResultSet extends XInterface {
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def next(): Boolean = js.native
+  def next(): Boolean
   
   /**
     * moves the cursor to the previous row in the result set.
@@ -140,7 +140,7 @@ trait XResultSet extends XInterface {
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def previous(): Boolean = js.native
+  def previous(): Boolean
   
   /**
     * refreshes the current row with its most recent value in the database. Cannot be called when on the insert row. The `refreshRow` method provides a way
@@ -151,7 +151,7 @@ trait XResultSet extends XInterface {
     * are lost. Calling the method `refreshRow` frequently will likely slow performance.
     * @throws SQLException if a database access error occurs.
     */
-  def refreshRow(): Unit = js.native
+  def refreshRow(): Unit
   
   /**
     * moves the cursor a relative number of rows, either positive or negative.
@@ -165,7 +165,7 @@ trait XResultSet extends XInterface {
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def relative(rows: Double): Boolean = js.native
+  def relative(rows: Double): Boolean
   
   /**
     * indicates whether a row has been deleted. A deleted row may leave a visible "hole" in a result set. This method can be used to detect holes in a
@@ -173,21 +173,21 @@ trait XResultSet extends XInterface {
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def rowDeleted(): Boolean = js.native
+  def rowDeleted(): Boolean
   
   /**
     * indicates whether the current row has had an insertion. The value returned depends on whether or not the result set can detect visible inserts.
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def rowInserted(): Boolean = js.native
+  def rowInserted(): Boolean
   
   /**
     * indicates whether the current row has been updated. The value returned depends on whether or not the result set can detect updates.
     * @returns `TRUE` if successful
     * @throws SQLException if a database access error occurs.
     */
-  def rowUpdated(): Boolean = js.native
+  def rowUpdated(): Boolean
 }
 object XResultSet {
   

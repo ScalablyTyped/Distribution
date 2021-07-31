@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchPermission extends StObject {
   
   /**
     * The name of the group.
     */
-  var Group: js.UndefOr[PermissionGroup] = js.native
+  var Group: js.UndefOr[PermissionGroup] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object LaunchPermission {
   

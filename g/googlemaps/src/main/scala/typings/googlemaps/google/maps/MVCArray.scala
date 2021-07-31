@@ -5,14 +5,15 @@ import typings.googlemaps.googlemapsStrings.remove_at
 import typings.googlemaps.googlemapsStrings.set_at
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray Maps JavaScript API}
   */
 @js.native
-trait MVCArray[T] extends MVCObject {
+trait MVCArray[T]
+  extends StObject
+     with MVCObject {
   
   /**
     * @see {@link MVCArrayHandlerMap#insert_at insert_at} event

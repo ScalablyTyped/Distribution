@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2MessageAnnotation extends StObject {
   
   /** Indicates whether the text message contains entities. */
-  var containEntities: js.UndefOr[Boolean] = js.native
+  var containEntities: js.UndefOr[Boolean] = js.undefined
   
   /** The collection of annotated message parts ordered by their position in the message. You can recover the annotated message by concatenating [AnnotatedMessagePart.text]. */
-  var parts: js.UndefOr[js.Array[GoogleCloudDialogflowV2AnnotatedMessagePart]] = js.native
+  var parts: js.UndefOr[js.Array[GoogleCloudDialogflowV2AnnotatedMessagePart]] = js.undefined
 }
 object GoogleCloudDialogflowV2MessageAnnotation {
   

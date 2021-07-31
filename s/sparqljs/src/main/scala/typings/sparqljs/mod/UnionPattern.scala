@@ -3,22 +3,22 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.union
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnionPattern extends BlockPattern {
+trait UnionPattern
+  extends StObject
+     with BlockPattern {
   
-  var patterns: js.Array[Pattern] = js.native
+  var patterns: js.Array[Pattern]
   
-  var `type`: union = js.native
+  var `type`: union
 }
 object UnionPattern {
   
   @scala.inline
-  def apply(patterns: js.Array[Pattern], `type`: union): UnionPattern = {
+  def apply(patterns: js.Array[Pattern]): UnionPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("union")
     __obj.asInstanceOf[UnionPattern]
   }
   

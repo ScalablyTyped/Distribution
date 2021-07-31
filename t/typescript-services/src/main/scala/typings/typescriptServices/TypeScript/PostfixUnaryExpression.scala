@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PostfixUnaryExpression extends AST {
+trait PostfixUnaryExpression
+  extends StObject
+     with AST {
   
-  var _nodeType: js.Any = js.native
+  var _nodeType: js.Any
   
-  var operand: AST = js.native
+  var operand: AST
   
-  def structuralEquals(ast: PostfixUnaryExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: PostfixUnaryExpression, includingPosition: Boolean): Boolean
 }
 object PostfixUnaryExpression {
   

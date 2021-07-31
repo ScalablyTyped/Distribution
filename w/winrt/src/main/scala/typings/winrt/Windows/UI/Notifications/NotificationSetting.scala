@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait NotificationSetting extends StObject
 object NotificationSetting extends StObject {
   
   @js.native
-  sealed trait disabledByGroupPolicy extends NotificationSetting
+  sealed trait disabledByGroupPolicy
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait disabledByManifest extends NotificationSetting
+  sealed trait disabledByManifest
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait disabledForApplication extends NotificationSetting
+  sealed trait disabledForApplication
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait disabledForUser extends NotificationSetting
+  sealed trait disabledForUser
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait enabled extends NotificationSetting
+  sealed trait enabled
+    extends StObject
+       with NotificationSetting
 }

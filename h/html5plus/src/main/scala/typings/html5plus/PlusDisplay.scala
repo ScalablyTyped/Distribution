@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
-@js.native
 trait PlusDisplay extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusDisplay extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var resolutionHeight: js.UndefOr[Double] = js.native
+  var resolutionHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 应用可使用的屏幕宽度逻辑分辨率
@@ -29,7 +27,7 @@ trait PlusDisplay extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var resolutionWidth: js.UndefOr[Double] = js.native
+  var resolutionWidth: js.UndefOr[Double] = js.undefined
 }
 object PlusDisplay {
   

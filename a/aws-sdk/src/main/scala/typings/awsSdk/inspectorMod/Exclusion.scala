@@ -2,41 +2,39 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exclusion extends StObject {
   
   /**
     * The ARN that specifies the exclusion.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The system-defined attributes for the exclusion.
     */
-  var attributes: js.UndefOr[AttributeList] = js.native
+  var attributes: js.UndefOr[AttributeList] = js.undefined
   
   /**
     * The description of the exclusion.
     */
-  var description: Text = js.native
+  var description: Text
   
   /**
     * The recommendation for the exclusion.
     */
-  var recommendation: Text = js.native
+  var recommendation: Text
   
   /**
     * The AWS resources for which the exclusion pertains.
     */
-  var scopes: ScopeList = js.native
+  var scopes: ScopeList
   
   /**
     * The name of the exclusion.
     */
-  var title: Text = js.native
+  var title: Text
 }
 object Exclusion {
   

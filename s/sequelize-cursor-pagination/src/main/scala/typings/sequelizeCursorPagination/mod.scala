@@ -18,47 +18,47 @@ import typings.sequelizeCursorPagination.mod.SequelizeCursorPagination.WithPagin
 import typings.sequelizeCursorPagination.sequelizeCursorPaginationBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[MethodName /* <: String */](): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
+  @scala.inline
+  def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
+  
   @JSImport("sequelize-cursor-pagination", JSImport.Namespace)
   @js.native
-  def apply[MethodName /* <: String */](): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, _, _, _]] = js.native
-  @JSImport("sequelize-cursor-pagination", JSImport.Namespace)
-  @js.native
-  def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, _, _, _]] = js.native
+  val ^ : js.Any = js.native
   
   object SequelizeCursorPagination {
     
-    @js.native
     trait BasicPaginateOptions[T] extends StObject {
       
       // the before cursor
-      var after: js.UndefOr[String] = js.native
+      var after: js.UndefOr[String] = js.undefined
       
-      var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.native
+      var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.undefined
       
       // [default: false]
-      var before: js.UndefOr[String] = js.native
+      var before: js.UndefOr[String] = js.undefined
       
       // limit the number of records returned
-      var desc: js.UndefOr[Boolean] = js.native
+      var desc: js.UndefOr[Boolean] = js.undefined
       
-      var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+      var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
       
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
       // the after cursor
-      var paginationField: js.UndefOr[String] = js.native
+      var paginationField: js.UndefOr[String] = js.undefined
       
       // [default: primaryKeyField]
-      var subQuery: js.UndefOr[Boolean] = js.native
+      var subQuery: js.UndefOr[Boolean] = js.undefined
       
       var where: js.UndefOr[
             WhereOptions[T] | typings.sequelize.mod.where | fn | (js.Array[col | and | or | String])
-          ] = js.native
+          ] = js.undefined
     }
     object BasicPaginateOptions {
       
@@ -69,7 +69,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class BasicPaginateOptionsMutableBuilder[Self <: BasicPaginateOptions[_], T] (val x: Self with BasicPaginateOptions[T]) extends AnyVal {
+      implicit class BasicPaginateOptionsMutableBuilder[Self <: BasicPaginateOptions[?], T] (val x: Self & BasicPaginateOptions[T]) extends AnyVal {
         
         @scala.inline
         def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
@@ -99,7 +99,7 @@ object mod {
         def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
         @scala.inline
-        def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+        def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
@@ -136,22 +136,21 @@ object mod {
       }
     }
     
-    @js.native
     trait Cursors extends StObject {
       
-      var after: String | Null = js.native
+      var after: String | Null
       
-      var before: String | Null = js.native
+      var before: String | Null
       
-      var hasNext: Boolean = js.native
+      var hasNext: Boolean
       
-      var hasPrevious: Boolean = js.native
+      var hasPrevious: Boolean
     }
     object Cursors {
       
       @scala.inline
       def apply(hasNext: Boolean, hasPrevious: Boolean): Cursors = {
-        val __obj = js.Dynamic.literal(hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], after = null, before = null)
         __obj.asInstanceOf[Cursors]
       }
       
@@ -178,10 +177,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait PaginateInstOptions[T] extends BasicPaginateOptions[T] {
+    trait PaginateInstOptions[T]
+      extends StObject
+         with BasicPaginateOptions[T] {
       
-      var raw: js.UndefOr[Boolean] = js.native
+      var raw: js.UndefOr[Boolean] = js.undefined
     }
     object PaginateInstOptions {
       
@@ -192,7 +192,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class PaginateInstOptionsMutableBuilder[Self <: PaginateInstOptions[_], T] (val x: Self with PaginateInstOptions[T]) extends AnyVal {
+      implicit class PaginateInstOptionsMutableBuilder[Self <: PaginateInstOptions[?], T] (val x: Self & PaginateInstOptions[T]) extends AnyVal {
         
         @scala.inline
         def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
@@ -202,36 +202,36 @@ object mod {
       }
     }
     
-    @js.native
-    trait PaginateRawOptions[T] extends BasicPaginateOptions[T] {
+    trait PaginateRawOptions[T]
+      extends StObject
+         with BasicPaginateOptions[T] {
       
-      var raw: `true` = js.native
+      var raw: `true`
     }
     object PaginateRawOptions {
       
       @scala.inline
-      def apply[T](raw: `true`): PaginateRawOptions[T] = {
-        val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+      def apply[T](): PaginateRawOptions[T] = {
+        val __obj = js.Dynamic.literal(raw = true)
         __obj.asInstanceOf[PaginateRawOptions[T]]
       }
       
       @scala.inline
-      implicit class PaginateRawOptionsMutableBuilder[Self <: PaginateRawOptions[_], T] (val x: Self with PaginateRawOptions[T]) extends AnyVal {
+      implicit class PaginateRawOptionsMutableBuilder[Self <: PaginateRawOptions[?], T] (val x: Self & PaginateRawOptions[T]) extends AnyVal {
         
         @scala.inline
         def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
     }
     
-    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model with typings.sequelizeCursorPagination.sequelizeCursorPaginationStrings.WithPaginationModel with TopLevel[js.Any]
+    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model & typings.sequelizeCursorPagination.sequelizeCursorPaginationStrings.WithPaginationModel & TopLevel[js.Any]
     
-    @js.native
     trait WithPaginationOptions[MethodName /* <: String */] extends StObject {
       
-      var methodName: js.UndefOr[MethodName] = js.native
+      var methodName: js.UndefOr[MethodName] = js.undefined
       
       // [default: 'paginate']
-      var primaryKeyField: js.UndefOr[String] = js.native
+      var primaryKeyField: js.UndefOr[String] = js.undefined
     }
     object WithPaginationOptions {
       
@@ -242,7 +242,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class WithPaginationOptionsMutableBuilder[Self <: WithPaginationOptions[_], MethodName /* <: String */] (val x: Self with WithPaginationOptions[MethodName]) extends AnyVal {
+      implicit class WithPaginationOptionsMutableBuilder[Self <: WithPaginationOptions[?], MethodName /* <: String */] (val x: Self & WithPaginationOptions[MethodName]) extends AnyVal {
         
         @scala.inline
         def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])

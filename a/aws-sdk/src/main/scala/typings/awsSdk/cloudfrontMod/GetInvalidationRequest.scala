@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInvalidationRequest extends StObject {
   
   /**
     * The distribution's ID.
     */
-  var DistributionId: String = js.native
+  var DistributionId: String
   
   /**
     * The identifier for the invalidation request, for example, IDFDVBD632BHDS5.
     */
-  var Id: String = js.native
+  var Id: String
 }
 object GetInvalidationRequest {
   

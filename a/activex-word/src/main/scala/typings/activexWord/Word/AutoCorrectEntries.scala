@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCorrectEntries extends StObject {
   
-  def Add(Name: String, Value: String): AutoCorrectEntry = js.native
+  def Add(Name: String, Value: String): AutoCorrectEntry
   
-  def AddRichText(Name: String, Range: Range): AutoCorrectEntry = js.native
+  def AddRichText(Name: String, Range: Range): AutoCorrectEntry
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): AutoCorrectEntry = js.native
+  def Item(Index: js.Any): AutoCorrectEntry
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.AutoCorrectEntries_typekey")
-  var WordDotAutoCorrectEntries_typekey: AutoCorrectEntries = js.native
+  var WordDotAutoCorrectEntries_typekey: AutoCorrectEntries
 }
 object AutoCorrectEntries {
   

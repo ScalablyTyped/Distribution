@@ -10,9 +10,9 @@ Use your Laravel named routes in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | ziggy-js |
 | Keywords           | laravel, routes, ziggy |
-| # releases         | 13 |
-| # dependents       | 0 |
-| # downloads        | 16002 |
+| # releases         | 14 |
+| # dependents       | 1 |
+| # downloads        | 33485 |
 | # stars            | 0 |
 
 ## Links

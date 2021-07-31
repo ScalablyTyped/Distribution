@@ -7,10 +7,8 @@ import typings.googlemaps.google.maps.Marker
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait Cluster extends StObject {
     * @return True if the marker was added.
     * @ignore
     */
-  def addMarker(marker: Marker): Boolean = js.native
+  def addMarker(marker: Marker): Boolean
   
   /**
     * Calculates the extended bounds of the cluster with the grid.
     */
-  def calculateBounds_(): Unit = js.native
+  def calculateBounds_(): Unit
   
   /**
     * Returns the bounds of the cluster.
@@ -33,7 +31,7 @@ trait Cluster extends StObject {
     * @return the cluster bounds.
     * @ignore
     */
-  def getBounds(): LatLngBounds = js.native
+  def getBounds(): LatLngBounds
   
   /**
     * Returns the center of the cluster. You can call this from
@@ -42,7 +40,7 @@ trait Cluster extends StObject {
     *
     * @return The center of the cluster.
     */
-  def getCenter(): LatLng = js.native
+  def getCenter(): LatLng
   
   /**
     * Returns the map with which the cluster is associated.
@@ -50,7 +48,7 @@ trait Cluster extends StObject {
     * @return The map.
     * @ignore
     */
-  def getMap(): Map[Element] = js.native
+  def getMap(): Map[Element]
   
   /**
     * Returns the <code>MarkerClusterer</code> object with which the cluster is associated.
@@ -58,7 +56,7 @@ trait Cluster extends StObject {
     * @return The associated marker clusterer.
     * @ignore
     */
-  def getMarkerClusterer(): MarkerClusterer = js.native
+  def getMarkerClusterer(): MarkerClusterer
   
   /**
     * Returns the array of markers managed by the cluster. You can call this from
@@ -67,7 +65,7 @@ trait Cluster extends StObject {
     *
     * @return The array of markers in the cluster.
     */
-  def getMarkers(): js.Array[Marker] = js.native
+  def getMarkers(): js.Array[Marker]
   
   /**
     * Returns the number of markers managed by the cluster. You can call this from
@@ -76,7 +74,7 @@ trait Cluster extends StObject {
     *
     * @return The number of markers in the cluster.
     */
-  def getSize(): Double = js.native
+  def getSize(): Double
   
   /**
     * Determines if a marker has already been added to the cluster.
@@ -84,7 +82,7 @@ trait Cluster extends StObject {
     * @param marker The marker to check.
     * @return True if the marker has already been added.
     */
-  def isMarkerAlreadyAdded_(marker: Marker): Boolean = js.native
+  def isMarkerAlreadyAdded_(marker: Marker): Boolean
   
   /**
     * Determines if a marker lies within the cluster's bounds.
@@ -93,19 +91,19 @@ trait Cluster extends StObject {
     * @return True if the marker lies in the bounds.
     * @ignore
     */
-  def isMarkerInClusterBounds(marker: Marker): Boolean = js.native
+  def isMarkerInClusterBounds(marker: Marker): Boolean
   
   /**
     * Removes the cluster from the map.
     *
     * @ignore
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   /**
     * Updates the cluster icon.
     */
-  def updateIcon_(): Unit = js.native
+  def updateIcon_(): Unit
 }
 object Cluster {
   

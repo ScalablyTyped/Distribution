@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a window. */
-@js.native
 trait WindowDescriptor extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait WindowDescriptor extends StObject {
     *
     * This member is ignored if the window attribute is {@link com.sun.star.awt.WindowAttribute.FULLSIZE} .
     */
-  var Bounds: Rectangle = js.native
+  var Bounds: Rectangle
   
   /**
     * specifies the parent of the component.
     *
     * If `Parent == 0 && ParentIndex == -1` , then the window is on the desktop.
     */
-  var Parent: XWindowPeer = js.native
+  var Parent: XWindowPeer
   
   /**
     * specifies the index of the parent window, if available.
@@ -29,17 +27,17 @@ trait WindowDescriptor extends StObject {
     * If `Parent == 0` and this struct is a member of an array, then this is the offset from the beginning of the array to the parent. A value of -1 means
     * desktop.
     */
-  var ParentIndex: Double = js.native
+  var ParentIndex: Double
   
   /** specifies the type of window. */
-  var Type: WindowClass = js.native
+  var Type: WindowClass
   
   /**
     * specifies the window attributes.
     *
     * Use one value out of the constant group {@link com.sun.star.awt.WindowAttribute} .
     */
-  var WindowAttributes: Double = js.native
+  var WindowAttributes: Double
   
   /**
     * specifies the name of the component service.
@@ -47,7 +45,7 @@ trait WindowDescriptor extends StObject {
     * A zero length name means that the VCL creates a blank top, a container, or a simple window. The following service names are defined: ;
     * spinbuttonspinfieldsplittersplitwindowstatusbarsystemchildwindowtabcontroltabdialogtabpagetimeboxtimefieldtoolboxtristateboxwarningboxwindowworkwindow
     */
-  var WindowServiceName: String = js.native
+  var WindowServiceName: String
 }
 object WindowDescriptor {
   

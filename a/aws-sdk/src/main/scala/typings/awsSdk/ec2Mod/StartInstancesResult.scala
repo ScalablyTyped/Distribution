@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartInstancesResult extends StObject {
   
   /**
     * Information about the started instances.
     */
-  var StartingInstances: js.UndefOr[InstanceStateChangeList] = js.native
+  var StartingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
 }
 object StartInstancesResult {
   

@@ -2,37 +2,35 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveStreamSnippet extends StObject {
   
   /**
     * The ID that YouTube uses to uniquely identify the channel that is
     * transmitting the stream.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The stream&#39;s description. The value cannot be longer than 10000
     * characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var isDefaultStream: js.UndefOr[Boolean] = js.native
+  var isDefaultStream: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time that the stream was created. The value is specified in
     * ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The stream&#39;s title. The value must be between 1 and 128 characters
     * long.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveStreamSnippet {
   

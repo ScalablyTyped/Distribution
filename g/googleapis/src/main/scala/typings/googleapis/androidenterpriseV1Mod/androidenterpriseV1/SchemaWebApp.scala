@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are published to managed Google Play and can be distributed like other
   * Android apps. On a user&#39;s device, a web app opens its specified URL.
   */
-@js.native
 trait SchemaWebApp extends StObject {
   
   /**
@@ -24,44 +22,44 @@ trait SchemaWebApp extends StObject {
     * page URL, system status bar and back button are not visible, and the web
     * app takes up the entirety of the available display area.
     */
-  var displayMode: js.UndefOr[String] = js.native
+  var displayMode: js.UndefOr[String] = js.undefined
   
   /**
     * A list of icons representing this website. If absent, a default icon (for
     * create) or the current icon (for update) will be used.
     */
-  var icons: js.UndefOr[js.Array[SchemaWebAppIcon]] = js.native
+  var icons: js.UndefOr[js.Array[SchemaWebAppIcon]] = js.undefined
   
   /**
     * A flag whether the app has been published to the Play store yet.
     */
-  var isPublished: js.UndefOr[Boolean] = js.native
+  var isPublished: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The start URL, i.e. the URL that should load when the user opens the
     * application.
     */
-  var startUrl: js.UndefOr[String] = js.native
+  var startUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the web app as displayed to the user (e.g., amongst a list
     * of other applications, or as a label for an icon).
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The current version of the app.   Note that the version can automatically
     * increase during the lifetime of the web app, while Google does internal
     * housekeeping to keep the web app up-to-date.
     */
-  var versionCode: js.UndefOr[String] = js.native
+  var versionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the application. A string of the form &quot;app:&lt;package
     * name&gt;&quot; where the package name always starts with the prefix
     * &quot;com.google.enterprise.webapp.&quot; followed by a random id.
     */
-  var webAppId: js.UndefOr[String] = js.native
+  var webAppId: js.UndefOr[String] = js.undefined
 }
 object SchemaWebApp {
   

@@ -13,45 +13,43 @@ import typings.openlayers.mod.proj.Projection
 import typings.openlayers.mod.tilegrid.TileGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XYZOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var opaque: js.UndefOr[Boolean] = js.native
+  var opaque: js.UndefOr[Boolean] = js.undefined
   
-  var projection: js.UndefOr[ProjectionLike] = js.native
+  var projection: js.UndefOr[ProjectionLike] = js.undefined
   
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   
-  var tileGrid: js.UndefOr[TileGrid] = js.native
+  var tileGrid: js.UndefOr[TileGrid] = js.undefined
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var tilePixelRatio: js.UndefOr[Double] = js.native
+  var tilePixelRatio: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double | Size] = js.native
+  var tileSize: js.UndefOr[Double | Size] = js.undefined
   
-  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.native
+  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object XYZOptions {
   

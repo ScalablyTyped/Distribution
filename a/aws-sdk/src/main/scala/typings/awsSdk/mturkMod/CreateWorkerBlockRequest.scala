@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorkerBlockRequest extends StObject {
   
   /**
     * A message explaining the reason for blocking the Worker. This parameter enables you to keep track of your Workers. The Worker does not see this message.
     */
-  var Reason: String = js.native
+  var Reason: String
   
   /**
     * The ID of the Worker to block.
     */
-  var WorkerId: CustomerId = js.native
+  var WorkerId: CustomerId
 }
 object CreateWorkerBlockRequest {
   

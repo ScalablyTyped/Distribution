@@ -5,10 +5,13 @@ import typings.node.urlMod.URL_
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-url-polyfill", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-native-url-polyfill", "URL")
   @js.native
@@ -29,7 +32,6 @@ object mod {
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }
   
-  @JSImport("react-native-url-polyfill", "setupURLPolyfill")
-  @js.native
-  def setupURLPolyfill(): Unit = js.native
+  @scala.inline
+  def setupURLPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupURLPolyfill")().asInstanceOf[Unit]
 }

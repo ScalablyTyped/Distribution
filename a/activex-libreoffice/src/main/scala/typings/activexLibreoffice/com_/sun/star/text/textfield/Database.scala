@@ -13,34 +13,34 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a database text field which is used as mail merge field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Database extends DependentTextField {
+trait Database
+  extends StObject
+     with DependentTextField {
   
   /** contains the database content that was merged in the last database merge action. Initially it contains the column name in parenthesis (<>). */
-  var Content: String = js.native
+  var Content: String
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /** determines whether the number format is number display format is read from the database settings. */
-  var DataBaseFormat: Boolean = js.native
+  var DataBaseFormat: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
 }
 object Database {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterWebhookWithThirdPartyInput extends StObject {
   
   /**
     * The name of an existing webhook created with PutWebhook to register with a supported third party. 
     */
-  var webhookName: js.UndefOr[WebhookName] = js.native
+  var webhookName: js.UndefOr[WebhookName] = js.undefined
 }
 object RegisterWebhookWithThirdPartyInput {
   

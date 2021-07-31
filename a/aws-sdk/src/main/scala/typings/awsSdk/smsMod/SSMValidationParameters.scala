@@ -2,41 +2,39 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSMValidationParameters extends StObject {
   
   /**
     * The command to run the validation script
     */
-  var command: js.UndefOr[Command] = js.native
+  var command: js.UndefOr[Command] = js.undefined
   
   /**
     * The timeout interval, in seconds.
     */
-  var executionTimeoutSeconds: js.UndefOr[ExecutionTimeoutSeconds] = js.native
+  var executionTimeoutSeconds: js.UndefOr[ExecutionTimeoutSeconds] = js.undefined
   
   /**
     * The ID of the instance. The instance must have the following tag: UserForSMSApplicationValidation=true.
     */
-  var instanceId: js.UndefOr[InstanceId] = js.native
+  var instanceId: js.UndefOr[InstanceId] = js.undefined
   
   /**
     * The name of the S3 bucket for output.
     */
-  var outputS3BucketName: js.UndefOr[BucketName] = js.native
+  var outputS3BucketName: js.UndefOr[BucketName] = js.undefined
   
   /**
     * The type of validation script.
     */
-  var scriptType: js.UndefOr[ScriptType] = js.native
+  var scriptType: js.UndefOr[ScriptType] = js.undefined
   
   /**
     * The location of the validation script.
     */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object SSMValidationParameters {
   

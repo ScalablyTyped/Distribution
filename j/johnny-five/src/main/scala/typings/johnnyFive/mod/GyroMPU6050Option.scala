@@ -2,13 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GyroMPU6050Option extends GyroGeneralOption {
+trait GyroMPU6050Option
+  extends StObject
+     with GyroGeneralOption {
   
-  var sensitivity: Double = js.native
+  var sensitivity: Double
 }
 object GyroMPU6050Option {
   

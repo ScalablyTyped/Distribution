@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedAccount extends StObject {
   
   /** The ID of the linked account. */
-  var linkedAccountId: js.UndefOr[String] = js.native
+  var linkedAccountId: js.UndefOr[String] = js.undefined
   
   /** List of provided services. */
-  var services: js.UndefOr[js.Array[LinkService]] = js.native
+  var services: js.UndefOr[js.Array[LinkService]] = js.undefined
 }
 object LinkedAccount {
   

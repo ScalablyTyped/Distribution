@@ -2,11 +2,12 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILine extends IShape {
+trait ILine
+  extends StObject
+     with IShape {
   
   def getDashArray(): js.Any = js.native
   
@@ -18,5 +19,5 @@ trait ILine extends IShape {
   
   def setLineCap(lineCap: String): js.Any = js.native
   
-  def setPoints(can: js.Array[_]): js.Any = js.native
+  def setPoints(can: js.Array[js.Any]): js.Any = js.native
 }

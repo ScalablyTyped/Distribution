@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of duplicating a sheet.
   */
-@js.native
 trait SchemaDuplicateSheetResponse extends StObject {
   
   /**
     * The properties of the duplicate sheet.
     */
-  var properties: js.UndefOr[SchemaSheetProperties] = js.native
+  var properties: js.UndefOr[SchemaSheetProperties] = js.undefined
 }
 object SchemaDuplicateSheetResponse {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.famous.coreMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domRenderablesMod {
@@ -32,22 +31,21 @@ object domRenderablesMod {
     def setProperty(name: String, value: String): DOMElement = js.native
   }
   
-  @js.native
   trait IDOMElementOptions extends StObject {
     
-    var attributes: js.UndefOr[StringDictionary[String]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var classes: js.UndefOr[js.Array[String]] = js.native
+    var classes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var cutout: js.UndefOr[Boolean] = js.native
+    var cutout: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[String]] = js.native
+    var properties: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
   }
   object IDOMElementOptions {
     

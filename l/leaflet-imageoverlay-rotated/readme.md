@@ -12,7 +12,7 @@ Displays rotated/slanted image overlays in Leaflet
 | Keywords           | leaflet |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 24002 |
+| # downloads        | 34350 |
 | # stars            | 0 |
 
 ## Links

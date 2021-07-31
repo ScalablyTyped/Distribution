@@ -10,9 +10,9 @@ TeamSpeak Server Query API
 | ------------------ | :-------------: |
 | Full name          | ts3-nodejs-library |
 | Keywords           | teamspeak, teamspeak3, ts, ts3, query, serverquery |
-| # releases         | 49 |
-| # dependents       | 0 |
-| # downloads        | 14858 |
+| # releases         | 38 |
+| # dependents       | 1 |
+| # downloads        | 15084 |
 | # stars            | 0 |
 
 ## Links

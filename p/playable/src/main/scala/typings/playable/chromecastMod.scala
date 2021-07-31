@@ -7,15 +7,85 @@ import typings.playable.controlsChromecastTypesMod.IChromecastViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromecastMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/chromecast/chromecast", JSImport.Default)
   @js.native
-  class default protected () extends ChromecastButton {
+  class default protected ()
+    extends StObject
+       with ChromecastButton {
     def this(hasEventEmitterTextMapTooltipServiceThemeChromecastManagerBottomBlock: BottomBlock) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bottomBlock: js.Any = js.native
+    
+    /* CompleteClass */
+    var _callback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _chromecastManager: js.Any = js.native
+    
+    /* CompleteClass */
+    var _connectToPanel: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _interceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _textMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tooltipService: js.Any = js.native
+    
+    /* CompleteClass */
+    var _triggerCallback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setChromecastButtonCallback(callback: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.chromecastViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -43,44 +113,45 @@ object chromecastMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ChromecastButton extends IChromecastButton {
+  trait ChromecastButton
+    extends StObject
+       with IChromecastButton {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _bottomBlock: js.Any = js.native
+    var _bottomBlock: js.Any
     
-    var _callback: js.Any = js.native
+    var _callback: js.Any
     
-    var _chromecastManager: js.Any = js.native
+    var _chromecastManager: js.Any
     
-    var _connectToPanel: js.Any = js.native
+    var _connectToPanel: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _interceptor: js.Any = js.native
+    var _interceptor: js.Any
     
-    var _textMap: js.Any = js.native
+    var _textMap: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: js.Any
     
-    var _triggerCallback: js.Any = js.native
+    var _triggerCallback: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.chromecastViewMod.default = js.native
+    var view: typings.playable.chromecastViewMod.default
   }
   object ChromecastButton {
     

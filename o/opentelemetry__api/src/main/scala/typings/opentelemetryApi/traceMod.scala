@@ -5,7 +5,6 @@ import typings.opentelemetryApi.tracerMod.Tracer
 import typings.opentelemetryApi.tracerProviderMod.TracerProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traceMod {
@@ -54,8 +53,7 @@ object traceMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Trace API */
-    @JSImport("@opentelemetry/api/build/src/api/trace", "TraceAPI.getInstance")
-    @js.native
-    def getInstance(): TraceAPI = js.native
+    @scala.inline
+    def getInstance(): TraceAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[TraceAPI]
   }
 }

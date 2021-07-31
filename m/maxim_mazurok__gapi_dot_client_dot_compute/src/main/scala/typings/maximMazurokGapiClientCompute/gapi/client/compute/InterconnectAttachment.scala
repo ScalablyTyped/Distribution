@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectAttachment extends StObject {
   
   /** Determines whether this Attachment will carry packets. Not present for PARTNER_PROVIDER. */
-  var adminEnabled: js.UndefOr[Boolean] = js.native
+  var adminEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provisioned bandwidth capacity for the interconnect attachment. For attachments of type DEDICATED, the user can set the bandwidth. For attachments of type PARTNER, the Google
@@ -28,29 +26,29 @@ trait InterconnectAttachment extends StObject {
     * - BPS_20G: 20 Gbit/s
     * - BPS_50G: 50 Gbit/s
     */
-  var bandwidth: js.UndefOr[String] = js.native
+  var bandwidth: js.UndefOr[String] = js.undefined
   
   /**
     * Up to 16 candidate prefixes that can be used to restrict the allocation of cloudRouterIpAddress and customerRouterIpAddress for this attachment. All prefixes must be within
     * link-local address space (169.254.0.0/16) and must be /29 or shorter (/28, /27, etc). Google will attempt to select an unused /29 from the supplied candidate prefix(es). The request
     * will fail if all possible /29s are in use on Google's edge. If not supplied, Google will randomly select an unused /29 from all of link-local space.
     */
-  var candidateSubnets: js.UndefOr[js.Array[String]] = js.native
+  var candidateSubnets: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] IPv4 address + prefix length to be configured on Cloud Router Interface for this interconnect attachment. */
-  var cloudRouterIpAddress: js.UndefOr[String] = js.native
+  var cloudRouterIpAddress: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** [Output Only] IPv4 address + prefix length to be configured on the customer router subinterface for this interconnect attachment. */
-  var customerRouterIpAddress: js.UndefOr[String] = js.native
+  var customerRouterIpAddress: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Dataplane version for this InterconnectAttachment. */
-  var dataplaneVersion: js.UndefOr[Double] = js.native
+  var dataplaneVersion: js.UndefOr[Double] = js.undefined
   
   /** An optional description of this resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Desired availability domain for the attachment. Only available for type PARTNER, at creation time, and can take one of the following values:
@@ -59,66 +57,66 @@ trait InterconnectAttachment extends StObject {
     * - AVAILABILITY_DOMAIN_2 For improved reliability, customers should configure a pair of attachments, one per availability domain. The selected availability domain will be provided to
     * the Partner via the pairing key, so that the provisioned circuit will lie in the specified domain. If not specified, the value will default to AVAILABILITY_DOMAIN_ANY.
     */
-  var edgeAvailabilityDomain: js.UndefOr[String] = js.native
+  var edgeAvailabilityDomain: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Google reference ID, to be used when raising support tickets with Google or otherwise to debug backend connectivity issues. [Deprecated] This field is not used. */
-  var googleReferenceId: js.UndefOr[String] = js.native
+  var googleReferenceId: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** URL of the underlying Interconnect object that this attachment's traffic will traverse through. */
-  var interconnect: js.UndefOr[String] = js.native
+  var interconnect: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#interconnectAttachment for interconnect attachments. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The current status of whether or not this interconnect attachment is functional, which can take one of the following values:
     * - OS_ACTIVE: The attachment has been turned up and is ready to use.
     * - OS_UNPROVISIONED: The attachment is not ready to use yet, because turnup is not complete.
     */
-  var operationalStatus: js.UndefOr[String] = js.native
+  var operationalStatus: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only for type PARTNER. Input only for PARTNER_PROVIDER. Not present for DEDICATED]. The opaque identifier of an PARTNER attachment used to initiate provisioning with a
     * selected partner. Of the form "XXXXX/region/domain"
     */
-  var pairingKey: js.UndefOr[String] = js.native
+  var pairingKey: js.UndefOr[String] = js.undefined
   
   /**
     * Optional BGP ASN for the router supplied by a Layer 3 Partner if they configured BGP on behalf of the customer. Output only for PARTNER type, input only for PARTNER_PROVIDER, not
     * available for DEDICATED.
     */
-  var partnerAsn: js.UndefOr[String] = js.native
+  var partnerAsn: js.UndefOr[String] = js.undefined
   
   /** Informational metadata about Partner attachments from Partners to display to customers. Output only for for PARTNER type, mutable for PARTNER_PROVIDER, not available for DEDICATED. */
-  var partnerMetadata: js.UndefOr[InterconnectAttachmentPartnerMetadata] = js.native
+  var partnerMetadata: js.UndefOr[InterconnectAttachmentPartnerMetadata] = js.undefined
   
   /** [Output Only] Information specific to an InterconnectAttachment. This property is populated if the interconnect that this is attached to is of type DEDICATED. */
-  var privateInterconnectInfo: js.UndefOr[InterconnectAttachmentPrivateInfo] = js.native
+  var privateInterconnectInfo: js.UndefOr[InterconnectAttachmentPrivateInfo] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional interconnect attachment resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the
     * request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the Cloud Router to be used for dynamic routing. This router must be in the same region as this InterconnectAttachment. The InterconnectAttachment will automatically connect
     * the Interconnect to the network & region within which the Cloud Router is configured.
     */
-  var router: js.UndefOr[String] = js.native
+  var router: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The current state of this attachment's functionality. Enum values ACTIVE and UNPROVISIONED are shared by DEDICATED/PRIVATE, PARTNER, and PARTNER_PROVIDER interconnect
@@ -132,7 +130,7 @@ trait InterconnectAttachment extends StObject {
     * - DEFUNCT: The attachment was deleted externally and is no longer functional. This could be because the associated Interconnect was removed, or because the other side of a Partner
     * attachment was deleted.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The type of interconnect attachment this is, which can take one of the following values:
@@ -140,10 +138,10 @@ trait InterconnectAttachment extends StObject {
     * - PARTNER: an attachment to a Partner Interconnect, created by the customer.
     * - PARTNER_PROVIDER: an attachment to a Partner Interconnect, created by the partner.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The IEEE 802.1Q VLAN tag for this attachment, in the range 2-4094. Only specified at creation time. */
-  var vlanTag8021q: js.UndefOr[Double] = js.native
+  var vlanTag8021q: js.UndefOr[Double] = js.undefined
 }
 object InterconnectAttachment {
   

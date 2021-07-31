@@ -12,7 +12,7 @@ Gulp plugin to submit code coverage to Codecov
 | Keywords           | gulpplugin, coverage, codecov, gulp-codecov, code-coverage, codecov.io, gulp |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 11675 |
+| # downloads        | 12300 |
 | # stars            | 1 |
 
 ## Links

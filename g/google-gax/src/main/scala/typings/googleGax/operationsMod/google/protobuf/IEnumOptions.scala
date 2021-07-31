@@ -2,21 +2,19 @@ package typings.googleGax.operationsMod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EnumOptions. */
-@js.native
 trait IEnumOptions extends StObject {
   
   /** EnumOptions allowAlias */
-  var allowAlias: js.UndefOr[Boolean | Null] = js.native
+  var allowAlias: js.UndefOr[Boolean | Null] = js.undefined
   
   /** EnumOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** EnumOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IEnumOptions {
   

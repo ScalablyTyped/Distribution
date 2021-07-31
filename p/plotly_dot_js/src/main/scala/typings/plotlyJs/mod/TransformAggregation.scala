@@ -15,19 +15,17 @@ import typings.plotlyJs.plotlyJsStrings.stddev
 import typings.plotlyJs.plotlyJsStrings.sum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformAggregation extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var func: js.UndefOr[count | sum | avg | median | mode | rms | stddev | min | max | first | last] = js.native
+  var func: js.UndefOr[count | sum | avg | median | mode | rms | stddev | min | max | first | last] = js.undefined
   
-  var funcmode: js.UndefOr[sample | population] = js.native
+  var funcmode: js.UndefOr[sample | population] = js.undefined
   
-  var target: String = js.native
+  var target: String
 }
 object TransformAggregation {
   

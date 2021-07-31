@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.3]
   */
 @js.native
-trait RangeViewCollection extends ClientObject {
+trait RangeViewCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -49,7 +50,7 @@ trait RangeViewCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RangeViewCollection = js.native
-  def load(options: RangeViewCollectionLoadOptions with CollectionLoadOptions): RangeViewCollection = js.native
+  def load(options: RangeViewCollectionLoadOptions & CollectionLoadOptions): RangeViewCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): RangeViewCollection = js.native
   def load(propertyNames: String): RangeViewCollection = js.native
   def load(propertyNames: js.Array[String]): RangeViewCollection = js.native

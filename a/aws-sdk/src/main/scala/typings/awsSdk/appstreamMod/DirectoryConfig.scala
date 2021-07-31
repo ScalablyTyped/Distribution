@@ -2,31 +2,29 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryConfig extends StObject {
   
   /**
     * The time the directory configuration was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.native
+  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The fully qualified name of the directory (for example, corp.example.com).
     */
-  var DirectoryName: typings.awsSdk.appstreamMod.DirectoryName = js.native
+  var DirectoryName: typings.awsSdk.appstreamMod.DirectoryName
   
   /**
     * The distinguished names of the organizational units for computer accounts.
     */
-  var OrganizationalUnitDistinguishedNames: js.UndefOr[OrganizationalUnitDistinguishedNamesList] = js.native
+  var OrganizationalUnitDistinguishedNames: js.UndefOr[OrganizationalUnitDistinguishedNamesList] = js.undefined
   
   /**
     * The credentials for the service account used by the fleet or image builder to connect to the directory.
     */
-  var ServiceAccountCredentials: js.UndefOr[typings.awsSdk.appstreamMod.ServiceAccountCredentials] = js.native
+  var ServiceAccountCredentials: js.UndefOr[typings.awsSdk.appstreamMod.ServiceAccountCredentials] = js.undefined
 }
 object DirectoryConfig {
   

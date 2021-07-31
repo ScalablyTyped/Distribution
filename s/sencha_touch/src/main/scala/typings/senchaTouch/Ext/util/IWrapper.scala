@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.util
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWrapper extends IBase
+trait IWrapper
+  extends StObject
+     with IBase
 object IWrapper {
   
   @scala.inline

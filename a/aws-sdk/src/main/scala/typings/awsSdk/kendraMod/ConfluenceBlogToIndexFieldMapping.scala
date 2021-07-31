@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfluenceBlogToIndexFieldMapping extends StObject {
   
   /**
     * The name of the field in the data source. 
     */
-  var DataSourceFieldName: js.UndefOr[ConfluenceBlogFieldName] = js.native
+  var DataSourceFieldName: js.UndefOr[ConfluenceBlogFieldName] = js.undefined
   
   /**
     * The format for date fields in the data source. If the field specified in DataSourceFieldName is a date field you must specify the date format. If the field is not a date field, an exception is thrown.
     */
-  var DateFieldFormat: js.UndefOr[DataSourceDateFieldFormat] = js.native
+  var DateFieldFormat: js.UndefOr[DataSourceDateFieldFormat] = js.undefined
   
   /**
     * The name of the index field to map to the Confluence data source field. The index field type must match the Confluence field type.
     */
-  var IndexFieldName: js.UndefOr[typings.awsSdk.kendraMod.IndexFieldName] = js.native
+  var IndexFieldName: js.UndefOr[typings.awsSdk.kendraMod.IndexFieldName] = js.undefined
 }
 object ConfluenceBlogToIndexFieldMapping {
   

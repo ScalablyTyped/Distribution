@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object WebAccountClientViewType extends StObject {
   
   /** Shows the Id and properties. */
   @js.native
-  sealed trait idAndProperties extends WebAccountClientViewType
+  sealed trait idAndProperties
+    extends StObject
+       with WebAccountClientViewType
   
   /** Shows only the Id. */
   @js.native
-  sealed trait idOnly extends WebAccountClientViewType
+  sealed trait idOnly
+    extends StObject
+       with WebAccountClientViewType
 }

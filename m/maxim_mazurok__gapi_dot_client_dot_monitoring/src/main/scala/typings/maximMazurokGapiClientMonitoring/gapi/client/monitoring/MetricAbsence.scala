@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricAbsence extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait MetricAbsence extends StObject {
     * field is similar to the one in the ListTimeSeries request (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeSeries/list). It is advisable to use the
     * ListTimeSeries method when debugging this field.
     */
-  var aggregations: js.UndefOr[js.Array[Aggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[Aggregation]] = js.undefined
   
   /**
     * The amount of time that a time series must fail to report new data to be considered failing. Currently, only values that are a multiple of a minute--e.g. 60, 120, or 300
     * seconds--are supported. If an invalid value is given, an error will be returned. The Duration.nanos field is ignored.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * A filter (https://cloud.google.com/monitoring/api/v3/filters) that identifies which time series should be compared with the threshold.The filter is similar to the one that is
@@ -28,13 +26,13 @@ trait MetricAbsence extends StObject {
     * retrieved / processed). The filter must specify the metric type and the resource type. Optionally, it can specify resource labels and metric labels. This field must not exceed 2048
     * Unicode characters in length.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The number/percent of time series for which the comparison must hold in order for the condition to trigger. If unspecified, then the condition will trigger if the comparison is true
     * for any of the time series that have been identified by filter and aggregations.
     */
-  var trigger: js.UndefOr[Trigger] = js.native
+  var trigger: js.UndefOr[Trigger] = js.undefined
 }
 object MetricAbsence {
   

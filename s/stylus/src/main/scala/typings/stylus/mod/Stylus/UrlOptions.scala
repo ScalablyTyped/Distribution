@@ -3,15 +3,13 @@ package typings.stylus.mod.Stylus
 import typings.stylus.stylusBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlOptions extends StObject {
   
-  var limit: js.UndefOr[Double | `false` | Null] = js.native
+  var limit: js.UndefOr[Double | `false` | Null] = js.undefined
   
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UrlOptions {
   

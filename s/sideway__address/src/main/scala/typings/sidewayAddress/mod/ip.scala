@@ -3,10 +3,13 @@ package typings.sidewayAddress.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ip {
+  
+  @JSImport("@sideway/address", "ip")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Generates a regular expression used to validate IP addresses.
@@ -15,12 +18,10 @@ object ip {
     * 
     * @returns an object with the regular expression and meta data.
     */
-  @JSImport("@sideway/address", "ip.regex")
-  @js.native
-  def regex(): Expression = js.native
-  @JSImport("@sideway/address", "ip.regex")
-  @js.native
-  def regex(options: Options): Expression = js.native
+  @scala.inline
+  def regex(): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")().asInstanceOf[Expression]
+  @scala.inline
+  def regex(options: Options): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(options.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
   /* Rewritten from type alias, can be one of: 
     - typings.sidewayAddress.sidewayAddressStrings.optional
@@ -40,28 +41,27 @@ object ip {
     def required: typings.sidewayAddress.sidewayAddressStrings.required = "required".asInstanceOf[typings.sidewayAddress.sidewayAddressStrings.required]
   }
   
-  @js.native
   trait Expression extends StObject {
     
     /**
       * The CIDR mode.
       */
-    var cidr: Cidr = js.native
+    var cidr: Cidr
     
     /**
       * The raw regular expression string.
       */
-    var raw: String = js.native
+    var raw: String
     
     /**
       * The regular expression.
       */
-    var regex: RegExp = js.native
+    var regex: RegExp
     
     /**
       * The array of versions allowed.
       */
-    var versions: js.Array[Version] = js.native
+    var versions: js.Array[Version]
   }
   object Expression {
     
@@ -91,7 +91,6 @@ object ip {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -99,14 +98,14 @@ object ip {
       * 
       * @default 'optional'
       */
-    val cidr: js.UndefOr[Cidr] = js.native
+    val cidr: js.UndefOr[Cidr] = js.undefined
     
     /**
       * The allowed versions.
       * 
       * @default ['ipv4', 'ipv6', 'ipvfuture']
       */
-    val version: js.UndefOr[Version | js.Array[Version]] = js.native
+    val version: js.UndefOr[Version | js.Array[Version]] = js.undefined
   }
   object Options {
     

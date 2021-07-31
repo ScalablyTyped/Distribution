@@ -2,17 +2,15 @@ package typings.betterScroll.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseWheelOption extends StObject {
   
-  var easeTime: Double = js.native
+  var easeTime: Double
   
-  var invert: Boolean = js.native
+  var invert: Boolean
   
-  var speed: Double = js.native
+  var speed: Double
 }
 object MouseWheelOption {
   

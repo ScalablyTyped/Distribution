@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applicationloadbalancingListenerRuleMod {
@@ -56,6 +55,10 @@ object applicationloadbalancingListenerRuleMod {
   /* static members */
   object ListenerRule {
     
+    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ListenerRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,29 +68,23 @@ object applicationloadbalancingListenerRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ListenerRule = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerRule = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerRuleState): ListenerRule = js.native
-    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): ListenerRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerRuleState): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
     
     /**
       * Returns true if the given object is an instance of ListenerRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/applicationloadbalancing/listenerRule", "ListenerRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listenerRule.ListenerRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listenerRule.ListenerRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listenerRule.ListenerRule */ Boolean]
   }
   
-  @js.native
   trait ListenerRuleArgs extends StObject {
     
     /**
@@ -95,24 +92,24 @@ object applicationloadbalancingListenerRuleMod {
       */
     val actions: Input[
         js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerRuleAction]]
-      ] = js.native
+      ]
     
     /**
       * A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
       */
     val conditions: Input[
         js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerRuleCondition]]
-      ] = js.native
+      ]
     
     /**
       * The ARN of the listener to which to attach the rule.
       */
-    val listenerArn: Input[String] = js.native
+    val listenerArn: Input[String]
     
     /**
       * The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
   }
   object ListenerRuleArgs {
     
@@ -164,7 +161,6 @@ object applicationloadbalancingListenerRuleMod {
     }
   }
   
-  @js.native
   trait ListenerRuleState extends StObject {
     
     /**
@@ -174,12 +170,12 @@ object applicationloadbalancingListenerRuleMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerRuleAction]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
@@ -188,17 +184,17 @@ object applicationloadbalancingListenerRuleMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.applicationloadbalancing.ListenerRuleCondition]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the listener to which to attach the rule.
       */
-    val listenerArn: js.UndefOr[Input[String]] = js.native
+    val listenerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
   }
   object ListenerRuleState {
     

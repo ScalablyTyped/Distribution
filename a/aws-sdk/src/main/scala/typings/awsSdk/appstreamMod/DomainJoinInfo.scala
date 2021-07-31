@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainJoinInfo extends StObject {
   
   /**
     * The fully qualified name of the directory (for example, corp.example.com).
     */
-  var DirectoryName: js.UndefOr[typings.awsSdk.appstreamMod.DirectoryName] = js.native
+  var DirectoryName: js.UndefOr[typings.awsSdk.appstreamMod.DirectoryName] = js.undefined
   
   /**
     * The distinguished name of the organizational unit for computer accounts.
     */
-  var OrganizationalUnitDistinguishedName: js.UndefOr[typings.awsSdk.appstreamMod.OrganizationalUnitDistinguishedName] = js.native
+  var OrganizationalUnitDistinguishedName: js.UndefOr[typings.awsSdk.appstreamMod.OrganizationalUnitDistinguishedName] = js.undefined
 }
 object DomainJoinInfo {
   

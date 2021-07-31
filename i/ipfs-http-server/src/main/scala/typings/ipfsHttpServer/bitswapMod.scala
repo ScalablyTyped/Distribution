@@ -2,16 +2,18 @@ package typings.ipfsHttpServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitswapMod {
   
   object stat {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "stat.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "stat")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options2 {
       
@@ -37,9 +39,12 @@ object bitswapMod {
   
   object unwant {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "unwant.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "unwant")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options4 {
       
@@ -65,9 +70,12 @@ object bitswapMod {
   
   object wantlist {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "wantlist.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/bitswap", "wantlist")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options {
       

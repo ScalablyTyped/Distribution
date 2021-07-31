@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices extends StObject {
   
   /**
     * The list of APIs usable within the Service Perimeter. Must be empty unless 'enable_restriction' is True. You can specify a list of individual services, as well as include the
     * 'RESTRICTED-SERVICES' value, which automatically includes all of the services protected by the perimeter.
     */
-  var allowedServices: js.UndefOr[js.Array[String]] = js.native
+  var allowedServices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether to restrict API calls within the Service Perimeter to the list of APIs specified in 'allowed_services'. */
-  var enableRestriction: js.UndefOr[Boolean] = js.native
+  var enableRestriction: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices {
   

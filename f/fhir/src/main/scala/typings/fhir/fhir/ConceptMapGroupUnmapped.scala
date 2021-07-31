@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When no match in the mappings
   */
-@js.native
-trait ConceptMapGroupUnmapped extends BackboneElement {
+trait ConceptMapGroupUnmapped
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Fixed code when mode = fixed
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
   
   /**
     * Display for the code
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * provided | fixed | other-map
     */
-  var mode: code = js.native
+  var mode: code
   
   /**
     * Canonical URL for other concept map
     */
-  var url: js.UndefOr[uri] = js.native
+  var url: js.UndefOr[uri] = js.undefined
 }
 object ConceptMapGroupUnmapped {
   

@@ -4,12 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
   
   object URLExt {
+    
+    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Encode the components of a multi-segment url.
@@ -22,9 +25,8 @@ object urlMod {
       * Preserves the `'/'` separators.
       * Should not include the base url, since all parts are escaped.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.encodeParts")
-    @js.native
-    def encodeParts(url: String): String = js.native
+    @scala.inline
+    def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Test whether the url is a local url.
@@ -33,9 +35,8 @@ object urlMod {
       * This function returns `false` for any fully qualified url, including
       * `data:`, `file:`, and `//` protocol URLs.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.isLocal")
-    @js.native
-    def isLocal(url: String): Boolean = js.native
+    @scala.inline
+    def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Join a sequence of url components and normalizes as in node `path.join`.
@@ -44,25 +45,21 @@ object urlMod {
       *
       * @returns the joined url.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.join")
-    @js.native
-    def join(parts: String*): String = js.native
+    @scala.inline
+    def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.normalize")
-    @js.native
-    def normalize(): js.UndefOr[String] = js.native
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.normalize")
-    @js.native
-    def normalize(url: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**
       * Normalize a url.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.normalize")
-    @js.native
-    def normalize(url: String): String = js.native
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.normalize")
-    @js.native
-    def normalize_Union(url: String): js.UndefOr[String] = js.native
+    @scala.inline
+    def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /**
       * Return a serialized object string suitable for a query.
@@ -74,9 +71,8 @@ object urlMod {
       * #### Notes
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.objectToQueryString")
-    @js.native
-    def objectToQueryString(value: PartialJSONObject): String = js.native
+    @scala.inline
+    def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a url into a URL object.
@@ -85,67 +81,64 @@ object urlMod {
       *
       * @returns A URL object.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.parse")
-    @js.native
-    def parse(url: String): IUrl = js.native
+    @scala.inline
+    def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
     
     /**
       * Return a parsed object that represents the values in a query string.
       */
-    @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.queryStringToObject")
-    @js.native
-    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = js.native
+    @scala.inline
+    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
     
     /**
       * The interface for a URL object
       */
-    @js.native
     trait IUrl extends StObject {
       
       /**
         * The "fragment" portion of the URL including the leading ASCII hash
         * `(#)` character
         */
-      var hash: String = js.native
+      var hash: String
       
       /**
         * The full lower-cased host portion of the URL, including the port if
         * specified.
         */
-      var host: String = js.native
+      var host: String
       
       /**
         * The lower-cased host name portion of the host component without the
         * port included.
         */
-      var hostname: String = js.native
+      var hostname: String
       
       /**
         * The full URL string that was parsed with both the protocol and host
         * components converted to lower-case.
         */
-      var href: String = js.native
+      var href: String
       
       /**
         * The entire path section of the URL.
         */
-      var pathname: String = js.native
+      var pathname: String
       
       /**
         * The numeric port portion of the host component.
         */
-      var port: String = js.native
+      var port: String
       
       /**
         * Identifies the URL's lower-cased protocol scheme.
         */
-      var protocol: String = js.native
+      var protocol: String
       
       /**
         * The search element, including leading question mark (`'?'`), if any,
         * of the URL.
         */
-      var search: js.UndefOr[String] = js.native
+      var search: js.UndefOr[String] = js.undefined
     }
     object IUrl {
       

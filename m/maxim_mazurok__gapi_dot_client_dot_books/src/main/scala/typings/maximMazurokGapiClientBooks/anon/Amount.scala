@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amount extends StObject {
   
   /** Amount in the currency listed below. (In LITE projection.) */
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
   /** An ISO 4217, three-letter currency code. (In LITE projection.) */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
 }
 object Amount {
   

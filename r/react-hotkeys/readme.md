@@ -10,9 +10,9 @@ A declarative library for handling hotkeys and focus within a React application
 | ------------------ | :-------------: |
 | Full name          | react-hotkeys |
 | Keywords           | react-component, hotkeys, focus, react |
-| # releases         | 11 |
-| # dependents       | 90 |
-| # downloads        | 61495215 |
+| # releases         | 7 |
+| # dependents       | 103 |
+| # downloads        | 82567710 |
 | # stars            | 4 |
 
 ## Links

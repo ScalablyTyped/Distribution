@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,13 +24,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The component cannot be instantiated at a global service factory, instead it's usually provided by a document instance.
   * @see com.sun.star.document.OfficeDocument
   */
-@js.native
 trait CellValueBinding
-  extends ValueBinding
+  extends StObject
+     with ValueBinding
      with XInitialization {
   
   /** specifies the cell within a document whose value is reflected by the binding. */
-  var BoundCell: CellAddress = js.native
+  var BoundCell: CellAddress
 }
 object CellValueBinding {
   
@@ -52,7 +51,7 @@ object CellValueBinding {
     getPropertyValue: String => js.Any,
     getSupportedValueTypes: () => SafeArray[`type`],
     getValue: `type` => js.Any,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

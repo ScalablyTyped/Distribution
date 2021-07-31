@@ -2,7 +2,6 @@ package typings.isReachable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,27 +23,26 @@ object mod {
   })();
   ```
   */
-  @JSImport("is-reachable", JSImport.Namespace)
-  @js.native
-  def apply(targets: String): js.Promise[Boolean] = js.native
-  @JSImport("is-reachable", JSImport.Namespace)
-  @js.native
-  def apply(targets: String, options: Options): js.Promise[Boolean] = js.native
-  @JSImport("is-reachable", JSImport.Namespace)
-  @js.native
-  def apply(targets: js.Array[String]): js.Promise[Boolean] = js.native
-  @JSImport("is-reachable", JSImport.Namespace)
-  @js.native
-  def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = js.native
+  @scala.inline
+  def apply(targets: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(targets: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(targets: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
+  @JSImport("is-reachable", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Timeout in milliseconds after which a request is considered failed.
     		@default 5000
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

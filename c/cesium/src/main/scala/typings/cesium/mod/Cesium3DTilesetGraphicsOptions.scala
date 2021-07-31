@@ -2,27 +2,25 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cesium3DTilesetGraphicsOptions extends StObject {
   
   /**
     * A number or Property specifying the maximum screen space error used to drive level of detail refinement.
     */
-  var maximumScreenSpaceError: js.UndefOr[Double | Property] = js.native
+  var maximumScreenSpaceError: js.UndefOr[Double | Property] = js.undefined
   
   /**
     * A boolean Property specifying the visibility of the tilese
     * @default true
     */
-  var show: js.UndefOr[Boolean | Property] = js.native
+  var show: js.UndefOr[Boolean | Property] = js.undefined
   
   /**
     * A string or Resource Property specifying the URI of the tileset.
     */
-  var uri: js.UndefOr[String | Property] = js.native
+  var uri: js.UndefOr[String | Property] = js.undefined
 }
 object Cesium3DTilesetGraphicsOptions {
   

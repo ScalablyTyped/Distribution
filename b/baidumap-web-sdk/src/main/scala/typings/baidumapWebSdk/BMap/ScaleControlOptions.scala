@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleControlOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
 }
 object ScaleControlOptions {
   

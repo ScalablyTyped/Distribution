@@ -8,7 +8,6 @@ import typings.reactVirtualized.anon.Index
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esCellMeasurerMod {
@@ -27,7 +26,9 @@ object esCellMeasurerMod {
   
   @JSImport("react-virtualized/dist/es/CellMeasurer", "CellMeasurerCache")
   @js.native
-  class CellMeasurerCache () extends CellMeasurerCacheInterface {
+  class CellMeasurerCache ()
+    extends StObject
+       with CellMeasurerCacheInterface {
     def this(params: CellMeasurerCacheParams) = this()
     
     def clear(rowIndex: Double, columnIndex: Double): Unit = js.native
@@ -61,22 +62,21 @@ object esCellMeasurerMod {
     def set(rowIndex: Double, columnIndex: Double, width: Double, height: Double): Unit = js.native
   }
   
-  @js.native
   trait CellMeasurerCacheParams extends StObject {
     
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
-    var fixedHeight: js.UndefOr[Boolean] = js.native
+    var fixedHeight: js.UndefOr[Boolean] = js.undefined
     
-    var fixedWidth: js.UndefOr[Boolean] = js.native
+    var fixedWidth: js.UndefOr[Boolean] = js.undefined
     
-    var keyMapper: js.UndefOr[KeyMapper] = js.native
+    var keyMapper: js.UndefOr[KeyMapper] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
   }
   object CellMeasurerCacheParams {
     
@@ -133,12 +133,11 @@ object esCellMeasurerMod {
     }
   }
   
-  @js.native
   trait CellMeasurerChildProps extends StObject {
     
-    def measure(): Unit = js.native
+    def measure(): Unit
     
-    var registerChild: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var registerChild: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
   }
   object CellMeasurerChildProps {
     
@@ -162,9 +161,9 @@ object esCellMeasurerMod {
     }
   }
   
-  @js.native
   trait CellMeasurerProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -173,19 +172,19 @@ object esCellMeasurerMod {
     */
   /* key */ StringDictionary[js.Any] {
     
-    var cache: CellMeasurerCacheInterface = js.native
+    var cache: CellMeasurerCacheInterface
     
-    var children: (js.Function1[/* props */ CellMeasurerChildProps, ReactNode]) | ReactNode = js.native
+    var children: (js.Function1[/* props */ CellMeasurerChildProps, ReactNode]) | ReactNode
     
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var parent: MeasuredCellParent = js.native
+    var parent: MeasuredCellParent
     
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CellMeasurerProps {
     
@@ -239,12 +238,11 @@ object esCellMeasurerMod {
     }
   }
   
-  @js.native
   trait CellPosition extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
   }
   object CellPosition {
     
@@ -267,12 +265,11 @@ object esCellMeasurerMod {
   
   type KeyMapper = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, js.Any]
   
-  @js.native
   trait MeasuredCellParent extends StObject {
     
-    var invalidateCellSizeAfterRender: js.UndefOr[js.Function1[/* cell */ CellPosition, Unit]] = js.native
+    var invalidateCellSizeAfterRender: js.UndefOr[js.Function1[/* cell */ CellPosition, Unit]] = js.undefined
     
-    var recomputeGridSize: js.UndefOr[js.Function1[/* cell */ CellPosition, Unit]] = js.native
+    var recomputeGridSize: js.UndefOr[js.Function1[/* cell */ CellPosition, Unit]] = js.undefined
   }
   object MeasuredCellParent {
     

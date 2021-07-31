@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSimpleEmailPartMod {
   
-  @js.native
   trait SimpleEmailPart extends StObject {
     
     /**
       * The character set of the content.
       */
-    var Charset: js.UndefOr[String] = js.native
+    var Charset: js.UndefOr[String] = js.undefined
     
     /**
       * The textual data of the content.
       */
-    var Data: js.UndefOr[String] = js.native
+    var Data: js.UndefOr[String] = js.undefined
   }
   object SimpleEmailPart {
     

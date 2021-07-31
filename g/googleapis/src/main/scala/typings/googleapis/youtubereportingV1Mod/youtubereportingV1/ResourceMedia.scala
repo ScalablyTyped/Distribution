@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Media")
@@ -31,7 +30,7 @@ class ResourceMedia protected () extends StObject {
     */
   def download(): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(callback: BodyResponseCallback[SchemaGdataMedia]): Unit = js.native
-  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGdataMedia] = js.native
+  def download(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(params: ParamsResourceMediaDownload): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(params: ParamsResourceMediaDownload, callback: BodyResponseCallback[SchemaGdataMedia]): Unit = js.native
   def download(

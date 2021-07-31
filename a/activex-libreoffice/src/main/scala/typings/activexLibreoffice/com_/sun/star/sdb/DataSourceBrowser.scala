@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.ui.XContextMenuInterception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,14 +57,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DataSourceBrowser
-  extends FormController
+  extends StObject
+     with FormController
      with XController
      with XInitialization
      with XContextMenuInterception {
   
   /** returns the tab controller model. */
   /* InferMemberOverrides */
-  override def getModel(): XTabControllerModel with XModel = js.native
+  override def getModel(): XTabControllerModel & XModel = js.native
   @JSName("getModel")
   def getModel_XTabControllerModel(): XTabControllerModel = js.native
 }

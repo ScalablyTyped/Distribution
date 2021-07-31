@@ -9,14 +9,13 @@ import typings.typeorm.typeormStrings.pgcrypto
 import typings.typeorm.typeormStrings.postgres
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postgresPostgresConnectionOptionsMod {
   
-  @js.native
   trait PostgresConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with PostgresConnectionCredentialsOptions
        with ConnectionOptions {
     
@@ -24,44 +23,44 @@ object postgresPostgresConnectionOptionsMod {
       * The milliseconds before a timeout occurs during the initial connection to the postgres
       * server. If undefined, or set to 0, there is no timeout. Defaults to undefined.
       */
-    val connectTimeoutMS: js.UndefOr[Double] = js.native
+    val connectTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Include notification messages from Postgres server in client logs
       */
-    val logNotifications: js.UndefOr[Boolean] = js.native
+    val logNotifications: js.UndefOr[Boolean] = js.undefined
     
-    val poolErrorHandler: js.UndefOr[js.Function1[/* err */ js.Any, _]] = js.native
+    val poolErrorHandler: js.UndefOr[js.Function1[/* err */ js.Any, js.Any]] = js.undefined
     
     /**
       * Replication setup.
       */
-    val replication: js.UndefOr[MasterPostgresConnectionCredentialsOptions] = js.native
+    val replication: js.UndefOr[MasterPostgresConnectionCredentialsOptions] = js.undefined
     
     /**
       * Schema name.
       */
-    val schema: js.UndefOr[String] = js.native
+    val schema: js.UndefOr[String] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_PostgresConnectionOptions: postgres = js.native
+    val type_PostgresConnectionOptions: postgres
     
     /**
       * The Postgres extension to use to generate UUID columns. Defaults to uuid-ossp.
       * If pgcrypto is selected, TypeORM will use the gen_random_uuid() function from this extension.
       * If uuid-ossp is selected, TypeORM will use the uuid_generate_v4() function from this extension.
       */
-    val uuidExtension: js.UndefOr[pgcrypto | `uuid-ossp`] = js.native
+    val uuidExtension: js.UndefOr[pgcrypto | `uuid-ossp`] = js.undefined
   }
   object PostgresConnectionOptions {
     
     @scala.inline
-    def apply(`type`: postgres): PostgresConnectionOptions = {
+    def apply(): PostgresConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("postgres")
       __obj.asInstanceOf[PostgresConnectionOptions]
     }
     
@@ -81,7 +80,7 @@ object postgresPostgresConnectionOptionsMod {
       def setLogNotificationsUndefined: Self = StObject.set(x, "logNotifications", js.undefined)
       
       @scala.inline
-      def setPoolErrorHandler(value: /* err */ js.Any => _): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
+      def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)

@@ -8,7 +8,6 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelTypesMod {
@@ -74,12 +73,11 @@ object modelTypesMod {
     def predict(inputs: NamedTensorMap, config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
   }
   
-  @js.native
   trait MetaGraph extends StObject {
     
-    var signatureDefs: SignatureDef = js.native
+    var signatureDefs: SignatureDef
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object MetaGraph {
     
@@ -103,12 +101,11 @@ object modelTypesMod {
     }
   }
   
-  @js.native
   trait MetaGraphInfo extends StObject {
     
-    var signatureDefs: SignatureDefInfo = js.native
+    var signatureDefs: SignatureDefInfo
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object MetaGraphInfo {
     
@@ -132,18 +129,17 @@ object modelTypesMod {
     }
   }
   
-  @js.native
   trait ModelPredictConfig extends StObject {
     
     /**
       * Optional. Batch size (Integer). If unspecified, it will default to 32.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional. Verbosity mode. Defaults to false.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object ModelPredictConfig {
     
@@ -170,16 +166,15 @@ object modelTypesMod {
     }
   }
   
-  @js.native
   trait ModelTensorInfo extends StObject {
     
-    var dtype: DataType = js.native
+    var dtype: DataType
     
-    var name: String = js.native
+    var name: String
     
-    var shape: js.UndefOr[js.Array[Double]] = js.native
+    var shape: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var tfDtype: js.UndefOr[String] = js.native
+    var tfDtype: js.UndefOr[String] = js.undefined
   }
   object ModelTensorInfo {
     
@@ -215,14 +210,13 @@ object modelTypesMod {
     }
   }
   
-  @js.native
   trait SavedModelTensorInfo extends StObject {
     
-    var dtype: String = js.native
+    var dtype: String
     
-    var name: String = js.native
+    var name: String
     
-    var shape: js.Array[Double] = js.native
+    var shape: js.Array[Double]
   }
   object SavedModelTensorInfo {
     
@@ -251,12 +245,11 @@ object modelTypesMod {
   
   type SignatureDef = StringDictionary[SignatureDefEntry]
   
-  @js.native
   trait SignatureDefEntry extends StObject {
     
-    var inputs: StringDictionary[ModelTensorInfo] = js.native
+    var inputs: StringDictionary[ModelTensorInfo]
     
-    var outputs: StringDictionary[ModelTensorInfo] = js.native
+    var outputs: StringDictionary[ModelTensorInfo]
   }
   object SignatureDefEntry {
     

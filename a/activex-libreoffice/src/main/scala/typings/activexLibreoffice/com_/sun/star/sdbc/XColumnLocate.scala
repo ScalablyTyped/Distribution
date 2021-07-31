@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when column names are used in the SQL query. For columns that are NOT explicitly named in the query, it is best to use column numbers. If column names
   * are used, there is no way for the programmer to guarantee that they actually refer to the intended columns.
   */
-@js.native
-trait XColumnLocate extends XInterface {
+trait XColumnLocate
+  extends StObject
+     with XInterface {
   
   /**
     * maps the given {@link ResultSet} column name to its {@link ResultSet} column index.
@@ -26,7 +26,7 @@ trait XColumnLocate extends XInterface {
     * @returns the position of the column
     * @throws SQLException if the column named `columnName` does not exist, or a database access error occurs.
     */
-  def findColumn(columnName: String): Double = js.native
+  def findColumn(columnName: String): Double
 }
 object XColumnLocate {
   

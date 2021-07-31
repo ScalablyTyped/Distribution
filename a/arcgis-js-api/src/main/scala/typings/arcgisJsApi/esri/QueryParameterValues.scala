@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryParameterValues extends Object {
+trait QueryParameterValues
+  extends StObject
+     with Object {
   
   /**
     * The parameter name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Single value or array of values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
     */
-  var value: String | (js.Array[Date | Double | String]) | Double | Date = js.native
+  var value: String | (js.Array[Date | Double | String]) | Double | Date
 }
 object QueryParameterValues {
   

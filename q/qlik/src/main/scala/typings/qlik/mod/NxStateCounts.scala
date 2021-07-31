@@ -2,27 +2,25 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxStateCounts extends StObject {
   
-  var qAlternative: Double = js.native
+  var qAlternative: Double
   
-  var qDeselected: Double = js.native
+  var qDeselected: Double
   
-  var qExcluded: Double = js.native
+  var qExcluded: Double
   
-  var qLocked: Double = js.native
+  var qLocked: Double
   
-  var qLockedExcluded: Double = js.native
+  var qLockedExcluded: Double
   
-  var qOption: Double = js.native
+  var qOption: Double
   
-  var qSelected: Double = js.native
+  var qSelected: Double
   
-  var qSelectedExcluded: Double = js.native
+  var qSelectedExcluded: Double
 }
 object NxStateCounts {
   

@@ -16,7 +16,6 @@ import typings.plottable.plottableStrings.vertical
 import typings.plottable.xyPlotMod.XYPlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object barPlotMod {
@@ -218,7 +217,7 @@ object barPlotMod {
       * The binding associated with bar length. Length is the count or value the bar is trying to show.
       * This is the .y() for a vertical plot and .x() for a horizontal plot.
       */
-    /* protected */ def length(): ITransformableAccessorScaleBinding[_, Double] = js.native
+    /* protected */ def length(): ITransformableAccessorScaleBinding[js.Any, Double] = js.native
     
     /**
       * Gets the orientation of the plot
@@ -231,7 +230,7 @@ object barPlotMod {
       * The binding associated with bar position. Position separates the different bar categories.
       * This is the .x() for a vertical plot and .y() for a horizontal plot.
       */
-    /* protected */ def position(): ITransformableAccessorScaleBinding[_, Double] = js.native
+    /* protected */ def position(): ITransformableAccessorScaleBinding[js.Any, Double] = js.native
   }
   /* static members */
   object Bar {

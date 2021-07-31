@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the orientation-sensor reading-changed event. */
-@js.native
 trait OrientationSensorReadingChangedEventArgs extends StObject {
   
   /** Gets the current reading which includes a Quaternion, a RotationMatrix, and a timestamp. */
-  var reading: OrientationSensorReading = js.native
+  var reading: OrientationSensorReading
 }
 object OrientationSensorReadingChangedEventArgs {
   

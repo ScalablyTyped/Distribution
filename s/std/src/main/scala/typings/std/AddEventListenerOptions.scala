@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddEventListenerOptions extends EventListenerOptions {
+trait AddEventListenerOptions
+  extends StObject
+     with EventListenerOptions {
   
-  var once: js.UndefOr[scala.Boolean] = js.native
+  var once: js.UndefOr[scala.Boolean] = js.undefined
   
-  var passive: js.UndefOr[scala.Boolean] = js.native
+  var passive: js.UndefOr[scala.Boolean] = js.undefined
 }
 object AddEventListenerOptions {
   

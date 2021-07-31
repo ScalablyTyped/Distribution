@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SanitizationWarning extends StObject {
   
   /**
     * The name of the XML attribute that has been sanitized.
     */
-  var AttributeName: js.UndefOr[string] = js.native
+  var AttributeName: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the XML element that has been sanitized.
     */
-  var ElementName: js.UndefOr[string] = js.native
+  var ElementName: js.UndefOr[string] = js.undefined
   
   /**
     * Required. The reason for which the XML elements or attributes were sanitized.
     */
-  var Reason: js.UndefOr[SanitizationWarningReason] = js.native
+  var Reason: js.UndefOr[SanitizationWarningReason] = js.undefined
 }
 object SanitizationWarning {
   

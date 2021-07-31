@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticScaling extends StObject {
   
   /**
@@ -13,43 +11,43 @@ trait AutomaticScaling extends StObject {
     * autoscaler from collecting information when the instance is initializing, during which the collected usage would not be reliable. Only applicable in the App Engine flexible
     * environment.
     */
-  var coolDownPeriod: js.UndefOr[String] = js.native
+  var coolDownPeriod: js.UndefOr[String] = js.undefined
   
   /** Target scaling by CPU usage. */
-  var cpuUtilization: js.UndefOr[CpuUtilization] = js.native
+  var cpuUtilization: js.UndefOr[CpuUtilization] = js.undefined
   
   /** Target scaling by disk usage. */
-  var diskUtilization: js.UndefOr[DiskUtilization] = js.native
+  var diskUtilization: js.UndefOr[DiskUtilization] = js.undefined
   
   /** Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.Defaults to a runtime-specific value. */
-  var maxConcurrentRequests: js.UndefOr[Double] = js.native
+  var maxConcurrentRequests: js.UndefOr[Double] = js.undefined
   
   /** Maximum number of idle instances that should be maintained for this version. */
-  var maxIdleInstances: js.UndefOr[Double] = js.native
+  var maxIdleInstances: js.UndefOr[Double] = js.undefined
   
   /** Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it. */
-  var maxPendingLatency: js.UndefOr[String] = js.native
+  var maxPendingLatency: js.UndefOr[String] = js.undefined
   
   /** Maximum number of instances that should be started to handle requests for this version. */
-  var maxTotalInstances: js.UndefOr[Double] = js.native
+  var maxTotalInstances: js.UndefOr[Double] = js.undefined
   
   /** Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service. */
-  var minIdleInstances: js.UndefOr[Double] = js.native
+  var minIdleInstances: js.UndefOr[Double] = js.undefined
   
   /** Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it. */
-  var minPendingLatency: js.UndefOr[String] = js.native
+  var minPendingLatency: js.UndefOr[String] = js.undefined
   
   /** Minimum number of running instances that should be maintained for this version. */
-  var minTotalInstances: js.UndefOr[Double] = js.native
+  var minTotalInstances: js.UndefOr[Double] = js.undefined
   
   /** Target scaling by network usage. */
-  var networkUtilization: js.UndefOr[NetworkUtilization] = js.native
+  var networkUtilization: js.UndefOr[NetworkUtilization] = js.undefined
   
   /** Target scaling by request utilization. */
-  var requestUtilization: js.UndefOr[RequestUtilization] = js.native
+  var requestUtilization: js.UndefOr[RequestUtilization] = js.undefined
   
   /** Scheduler settings for standard environment. */
-  var standardSchedulerSettings: js.UndefOr[StandardSchedulerSettings] = js.native
+  var standardSchedulerSettings: js.UndefOr[StandardSchedulerSettings] = js.undefined
 }
 object AutomaticScaling {
   

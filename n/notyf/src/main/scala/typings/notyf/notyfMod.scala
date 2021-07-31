@@ -8,14 +8,15 @@ import typings.notyf.notyfModelsMod.NotyfNotification
 import typings.notyf.notyfOptionsMod.INotyfOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notyfMod {
   
   @JSImport("notyf/notyf", JSImport.Default)
   @js.native
-  class default () extends Notyf {
+  class default ()
+    extends StObject
+       with Notyf {
     def this(opts: PartialINotyfOptions) = this()
   }
   

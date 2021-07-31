@@ -11,40 +11,38 @@ import typings.wechatMiniprogram.WechatMiniprogram.Page.IShareAppMessageOption
 import typings.wechatMiniprogram.WechatMiniprogram.Page.ITabItemTapOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> */
-@js.native
 trait PartialILifetime extends StObject {
   
-  var onAddToFavorites: js.UndefOr[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]] = js.native
+  var onAddToFavorites: js.UndefOr[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   
   var onLoad: js.UndefOr[
     js.Function1[/* query */ Record[String, js.UndefOr[String]], Unit | js.Promise[Unit]]
-  ] = js.native
+  ] = js.undefined
   
-  var onPageScroll: js.UndefOr[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]] = js.native
+  var onPageScroll: js.UndefOr[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]] = js.undefined
   
-  var onPullDownRefresh: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onPullDownRefresh: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   
-  var onReachBottom: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onReachBottom: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   
-  var onReady: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onReady: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   
-  var onResize: js.UndefOr[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]] = js.native
+  var onResize: js.UndefOr[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]] = js.undefined
   
-  var onShareAppMessage: js.UndefOr[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]] = js.native
+  var onShareAppMessage: js.UndefOr[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]] = js.undefined
   
-  var onShareTimeline: js.UndefOr[js.Function0[ICustomTimelineContent | Unit]] = js.native
+  var onShareTimeline: js.UndefOr[js.Function0[ICustomTimelineContent | Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   
-  var onTabItemTap: js.UndefOr[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]] = js.native
+  var onTabItemTap: js.UndefOr[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]] = js.undefined
   
-  var onUnload: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onUnload: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
 }
 object PartialILifetime {
   

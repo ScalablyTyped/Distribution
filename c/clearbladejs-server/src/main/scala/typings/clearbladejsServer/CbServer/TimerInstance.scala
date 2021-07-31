@@ -2,19 +2,17 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimerInstance extends StObject {
   
-  def Delete(callback: CbCallback): Unit = js.native
+  def Delete(callback: CbCallback): Unit
   
-  def Update(options: js.Object, callback: CbCallback): Unit = js.native
+  def Update(options: js.Object, callback: CbCallback): Unit
   
-  var name: String = js.native
+  var name: String
   
-  var systemKey: String = js.native
+  var systemKey: String
 }
 object TimerInstance {
   

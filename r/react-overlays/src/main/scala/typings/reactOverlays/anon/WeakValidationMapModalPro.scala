@@ -21,80 +21,78 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> */
-@js.native
 trait WeakValidationMapModalPro extends StObject {
   
-  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var backdrop: js.UndefOr[Validator[js.UndefOr[`true` | `false` | static | Null]]] = js.native
+  var backdrop: js.UndefOr[Validator[js.UndefOr[`true` | `false` | static | Null]]] = js.undefined
   
-  var backdropTransition: js.UndefOr[Validator[js.UndefOr[ModalTransitionComponent | Null]]] = js.native
+  var backdropTransition: js.UndefOr[Validator[js.UndefOr[ModalTransitionComponent | Null]]] = js.undefined
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactElement]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactElement]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var container: js.UndefOr[Validator[js.UndefOr[DOMContainer[HTMLElement] | Null]]] = js.native
+  var container: js.UndefOr[Validator[js.UndefOr[DOMContainer[HTMLElement] | Null]]] = js.undefined
   
-  var containerClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var containerClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var enforceFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var enforceFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.native
+  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.undefined
   
-  var keyboard: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var keyboard: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var manager: js.UndefOr[Validator[js.UndefOr[Null | default]]] = js.native
+  var manager: js.UndefOr[Validator[js.UndefOr[Null | default]]] = js.undefined
   
   var onBackdropClick: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]) | Null]]
-  ] = js.native
+  ] = js.undefined
   
-  var onEnter: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onEnter: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onEntered: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onEntered: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onEntering: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onEntering: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onEscapeKeyDown: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* e */ KeyboardEvent, Unit]) | Null]]] = js.native
+  var onEscapeKeyDown: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* e */ KeyboardEvent, Unit]) | Null]]] = js.undefined
   
-  var onExit: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onExit: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onExited: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onExited: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onExiting: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]] = js.native
+  var onExiting: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
   
-  var onHide: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.native
+  var onHide: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.undefined
   
-  var onShow: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.native
+  var onShow: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.undefined
   
-  var ref: js.UndefOr[Validator[js.UndefOr[Null | typings.react.mod.Ref[ModalHandle]]]] = js.native
+  var ref: js.UndefOr[Validator[js.UndefOr[Null | typings.react.mod.Ref[ModalHandle]]]] = js.undefined
   
   var renderBackdrop: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* props */ RenderModalBackdropProps, ReactNode]) | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var renderDialog: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* props */ RenderModalDialogProps, ReactNode]) | Null]]
-  ] = js.native
+  ] = js.undefined
   
-  var restoreFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var restoreFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var restoreFocusOptions: js.UndefOr[Validator[js.UndefOr[Null | PreventScroll]]] = js.native
+  var restoreFocusOptions: js.UndefOr[Validator[js.UndefOr[Null | PreventScroll]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var show: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var show: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   
-  var transition: js.UndefOr[Validator[js.UndefOr[ModalTransitionComponent | Null]]] = js.native
+  var transition: js.UndefOr[Validator[js.UndefOr[ModalTransitionComponent | Null]]] = js.undefined
 }
 object WeakValidationMapModalPro {
   
@@ -180,19 +178,19 @@ object WeakValidationMapModalPro {
     def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
     @scala.inline
-    def setOnEnter(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    def setOnEnter(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def setOnEntered(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+    def setOnEntered(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
     @scala.inline
-    def setOnEntering(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+    def setOnEntering(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
@@ -204,19 +202,19 @@ object WeakValidationMapModalPro {
     def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
     
     @scala.inline
-    def setOnExit(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+    def setOnExit(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def setOnExited(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+    def setOnExited(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def setOnExiting(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, _]) | Null]]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+    def setOnExiting(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)

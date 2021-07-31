@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AverageComparativeScore extends StObject {
   
   // Average score within specified basis.
-  var averageScore: js.UndefOr[NullableOption[Double]] = js.native
+  var averageScore: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes.
-  var basis: js.UndefOr[NullableOption[String]] = js.native
+  var basis: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AverageComparativeScore {
   

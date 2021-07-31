@@ -7,14 +7,15 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.projMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderFeatureMod {
   
   @JSImport("ol/render/Feature", JSImport.Default)
   @js.native
-  class default protected () extends RenderFeature {
+  class default protected ()
+    extends StObject
+       with RenderFeature {
     def this(
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
@@ -83,7 +84,7 @@ object renderFeatureMod {
     
     def getStride(): Double = js.native
     
-    def getStyleFunction(): js.UndefOr[scala.Nothing] = js.native
+    def getStyleFunction(): Unit = js.native
     
     /**
       * Get the type of this feature's geometry.

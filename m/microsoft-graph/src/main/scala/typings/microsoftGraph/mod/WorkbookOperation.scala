@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookOperation extends Entity {
+trait WorkbookOperation
+  extends StObject
+     with Entity {
   
   // The error returned by the operation.
-  var error: js.UndefOr[NullableOption[WorkbookOperationError]] = js.native
+  var error: js.UndefOr[NullableOption[WorkbookOperationError]] = js.undefined
   
   // The resource URI for the result.
-  var resourceLocation: js.UndefOr[NullableOption[String]] = js.native
+  var resourceLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The current status of the operation. Possible values are: NotStarted, Running, Completed, Failed.
-  var status: js.UndefOr[WorkbookOperationStatus] = js.native
+  var status: js.UndefOr[WorkbookOperationStatus] = js.undefined
 }
 object WorkbookOperation {
   

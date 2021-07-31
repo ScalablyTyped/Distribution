@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LatencyCriteria extends StObject {
   
   /** Good service is defined to be the count of requests made to this service that return in no more than threshold. */
-  var threshold: js.UndefOr[String] = js.native
+  var threshold: js.UndefOr[String] = js.undefined
 }
 object LatencyCriteria {
   

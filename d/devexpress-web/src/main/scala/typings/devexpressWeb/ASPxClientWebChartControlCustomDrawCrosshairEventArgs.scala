@@ -2,51 +2,51 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for a chart control's ASPxClientWebChartControl.CustomDrawCrosshair event.
   */
-@js.native
-trait ASPxClientWebChartControlCustomDrawCrosshairEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientWebChartControlCustomDrawCrosshairEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Provides access to the settings of crosshair elements and crosshair group header elements to customize their appearance.
     */
-  var crosshairElementGroups: js.Array[ASPxClientCrosshairElementGroup] = js.native
+  var crosshairElementGroups: js.Array[ASPxClientCrosshairElementGroup]
   
   /** @deprecated This property is now obsolete. Use the crosshairElementGroup.CrosshairElements property instead. */
   /**
     * Returns crosshair elements settings to custom draw a crosshair cursor.
     */
-  var crosshairElements: js.Array[ASPxClientCrosshairElement] = js.native
+  var crosshairElements: js.Array[ASPxClientCrosshairElement]
   
   /** @deprecated This property is now obsolete. Use the crosshairElementGroup.HeaderElement property instead. */
   /**
     * Returns the crosshair group header elements to customize their appearance.
     */
-  var crosshairGroupHeaderElements: js.Array[ASPxClientCrosshairGroupHeaderElement] = js.native
+  var crosshairGroupHeaderElements: js.Array[ASPxClientCrosshairGroupHeaderElement]
   
   /**
     * Returns the array of indicator elements that the Crosshair Cursor displays in a legend.
     */
-  var crosshairIndicatorLegendElements: js.Array[ASPxClientCrosshairIndicatorLegendElement] = js.native
+  var crosshairIndicatorLegendElements: js.Array[ASPxClientCrosshairIndicatorLegendElement]
   
   /**
     * Returns the crosshair legend elements to custom draw the Crosshair.
     */
-  var crosshairLegendElements: js.Array[ASPxClientCrosshairLegendElement] = js.native
+  var crosshairLegendElements: js.Array[ASPxClientCrosshairLegendElement]
   
   /**
     * Returns the crosshair axis label elements to customize their appearance.
     */
-  var cursorCrosshairAxisLabelElements: js.Array[ASPxClientCrosshairAxisLabelElement] = js.native
+  var cursorCrosshairAxisLabelElements: js.Array[ASPxClientCrosshairAxisLabelElement]
   
   /**
     * Gets crosshair line element settings that are used to custom draw a crosshair cursor.
     */
-  var cursorCrosshairLineElement: ASPxClientCrosshairLineElement = js.native
+  var cursorCrosshairLineElement: ASPxClientCrosshairLineElement
 }
 object ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
   

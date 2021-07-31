@@ -15,7 +15,6 @@ import typings.vivus.vivusStrings.start
 import typings.vivus.vivusStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,9 @@ object mod {
     */
   @JSImport("vivus", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Vivus {
+  class ^ protected ()
+    extends StObject
+       with Vivus {
     /**
       * @param element Dom element of the SVG or id of it
       * @param options Options about the animation
@@ -36,17 +37,9 @@ object mod {
     def this(element: HTMLElement) = this()
     def this(element: String, options: VivusOptions) = this()
     def this(element: HTMLElement, options: VivusOptions) = this()
-    def this(
-      element: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* vivusInstance */ Vivus, Unit]
-    ) = this()
+    def this(element: String, options: Unit, callback: js.Function1[/* vivusInstance */ Vivus, Unit]) = this()
     def this(element: String, options: VivusOptions, callback: js.Function1[/* vivusInstance */ Vivus, Unit]) = this()
-    def this(
-      element: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* vivusInstance */ Vivus, Unit]
-    ) = this()
+    def this(element: HTMLElement, options: Unit, callback: js.Function1[/* vivusInstance */ Vivus, Unit]) = this()
     def this(
       element: HTMLElement,
       options: VivusOptions,
@@ -135,9 +128,9 @@ object mod {
       * @param callback
       */
     def play(callback: js.Function0[Unit]): this.type = js.native
-    def play(speed: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
     def play(speed: Double): this.type = js.native
     def play(speed: Double, callback: js.Function0[Unit]): this.type = js.native
+    def play(speed: Unit, callback: js.Function0[Unit]): this.type = js.native
     
     /**
       * Reinitialises the SVG to the original undrawn state.
@@ -156,7 +149,6 @@ object mod {
     def stop(): this.type = js.native
   }
   
-  @js.native
   trait VivusOptions extends StObject {
     
     /**
@@ -165,7 +157,7 @@ object mod {
       *
       * See the [timing function documentation](https://github.com/maxwellito/vivus#timing-function).
       */
-    var animTimingFunction: js.UndefOr[TimingFunction] = js.native
+    var animTimingFunction: js.UndefOr[TimingFunction] = js.undefined
     
     /**
       * Whitespace extra margin between dashes.
@@ -173,25 +165,25 @@ object mod {
       *
       * (default: `2`)
       */
-    var dashGap: js.UndefOr[Double] = js.native
+    var dashGap: js.UndefOr[Double] = js.undefined
     
     /**
       *     Time between the drawing of first and last path, in frames (only for `delayed` animations).
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Animation duration, in frames.
       * (default: `200`)
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Link to the SVG to animate.
       * If set, Vivus will create an object tag and append it to the DOM element given to the constructor.
       * Be careful, use the `onReady` callback before playing with the Vivus instance.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * Force the browser to re-render all updated path items.
@@ -199,12 +191,12 @@ object mod {
       *
       * See [the troubleshooting documentation for more details](https://github.com/maxwellito/vivus#troubleshoot).
       */
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function called when the instance is ready to play.
       */
-    var onReady: js.UndefOr[js.Function1[/* vivusInstance */ Vivus, Unit]] = js.native
+    var onReady: js.UndefOr[js.Function1[/* vivusInstance */ Vivus, Unit]] = js.undefined
     
     /**
       * Timing animation function for each path element of the SVG.
@@ -212,7 +204,7 @@ object mod {
       *
       * See the [timing function documentation](https://github.com/maxwellito/vivus#timing-function).
       */
-    var pathTimingFunction: js.UndefOr[TimingFunction] = js.native
+    var pathTimingFunction: js.UndefOr[TimingFunction] = js.undefined
     
     /**
       * Reverse the order of execution.
@@ -221,26 +213,26 @@ object mod {
       *
       * (default: `false`)
       */
-    var reverseStack: js.UndefOr[Boolean] = js.native
+    var reverseStack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Removes all extra styling on the SVG, and leaves it as original.
       */
-    var selfDestroy: js.UndefOr[Boolean] = js.native
+    var selfDestroy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically starts the animation.
       * Can be `'inViewport'`, `'manual'`, or `'autostart'`
       * (default: `'inViewport'`)
       */
-    var start: js.UndefOr[inViewport | manual | autostart] = js.native
+    var start: js.UndefOr[inViewport | manual | autostart] = js.undefined
     
     /**
       * Determines if the item must be drawn asynchronously or not.
       * Can be `'delayed'`, `'sync'`, `'oneByOne'`, `'script'`, `'scenario'`, or `'scenario-sync'`.
       * (default: `'delayed'`)
       */
-    var `type`: js.UndefOr[delayed | sync | oneByOne | script | scenario | `scenario-sync`] = js.native
+    var `type`: js.UndefOr[delayed | sync | oneByOne | script | scenario | `scenario-sync`] = js.undefined
   }
   object VivusOptions {
     

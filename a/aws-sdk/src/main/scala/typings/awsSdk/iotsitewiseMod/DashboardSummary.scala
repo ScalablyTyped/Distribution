@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardSummary extends StObject {
   
   /**
     * The date the dashboard was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The dashboard's description.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the dashboard.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The date the dashboard was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the dashboard
     */
-  var name: Name = js.native
+  var name: Name
 }
 object DashboardSummary {
   

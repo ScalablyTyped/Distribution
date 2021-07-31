@@ -43,22 +43,23 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateMod {
   
-  @JSImport("rc-select/lib/generate", JSImport.Default)
+  @JSImport("rc-select/lib/generate", JSImport.Namespace)
   @js.native
-  def default[OptionsType /* <: js.Array[Disabled] */](config: GenerateConfig[OptionsType]): ForwardRefExoticComponent[(SelectProps[OptionsType, DefaultValueType]) with RefAttributes[RefSelectProps]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[OptionsType /* <: js.Array[Disabled] */](config: GenerateConfig[OptionsType]): ForwardRefExoticComponent[(SelectProps[OptionsType, DefaultValueType]) & RefAttributes[RefSelectProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[(SelectProps[OptionsType, DefaultValueType]) & RefAttributes[RefSelectProps]]]
+  
   trait GenerateConfig[OptionsType /* <: js.Array[js.Object] */] extends StObject {
     
-    var components: OptionList[OptionsType] = js.native
+    var components: OptionList[OptionsType]
     
     /** Convert jsx tree into `OptionsType` */
-    def convertChildrenToData(children: ReactNode): OptionsType = js.native
+    def convertChildrenToData(children: ReactNode): OptionsType
     
     var fillOptionsWithMissingValue: js.UndefOr[
         js.Function4[
@@ -68,9 +69,9 @@ object generateMod {
           /* labelInValue */ Boolean, 
           OptionsType
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var filterOptions: FilterOptions[OptionsType] = js.native
+    var filterOptions: FilterOptions[OptionsType]
     
     var findValueOption: (js.Function2[
         /* values */ js.Array[RawValueType], 
@@ -81,22 +82,22 @@ object generateMod {
         /* options */ FlattenOptionsType[OptionsType], 
         /* info */ js.UndefOr[PrevValueOptions[OptionsType]], 
         OptionsType
-      ]) = js.native
+      ])
     
     /** Flatten nest options into raw option list */
-    def flattenOptions(options: OptionsType, props: js.Any): FlattenOptionsType[OptionsType] = js.native
+    def flattenOptions(options: OptionsType, props: js.Any): FlattenOptionsType[OptionsType]
     
     /** Convert single raw value into { label, value } format. Will be called by each value */
-    var getLabeledValue: GetLabeledValue[FlattenOptionsType[OptionsType]] = js.native
+    var getLabeledValue: GetLabeledValue[FlattenOptionsType[OptionsType]]
     
     /** Check if a value is disabled */
-    def isValueDisabled(value: RawValueType, options: FlattenOptionsType[OptionsType]): Boolean = js.native
+    def isValueDisabled(value: RawValueType, options: FlattenOptionsType[OptionsType]): Boolean
     
-    var omitDOMProps: js.UndefOr[js.Function1[/* props */ js.Object, js.Object]] = js.native
+    var omitDOMProps: js.UndefOr[js.Function1[/* props */ js.Object, js.Object]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var warningProps: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.native
+    var warningProps: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
   }
   object GenerateConfig {
     
@@ -125,7 +126,7 @@ object generateMod {
     }
     
     @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with GenerateConfig[OptionsType]) extends AnyVal {
+    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & GenerateConfig[OptionsType]) extends AnyVal {
       
       @scala.inline
       def setComponents(value: OptionList[OptionsType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
@@ -198,12 +199,11 @@ object generateMod {
     }
   }
   
-  @js.native
   trait RefSelectProps extends StObject {
     
-    def blur(): Unit = js.native
+    def blur(): Unit
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object RefSelectProps {
     
@@ -224,46 +224,47 @@ object generateMod {
     }
   }
   
-  @js.native
-  trait SelectProps[OptionsType /* <: js.Array[js.Object] */, ValueType] extends AriaAttributes {
+  trait SelectProps[OptionsType /* <: js.Array[js.Object] */, ValueType]
+    extends StObject
+       with AriaAttributes {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var autoClearSearchValue: js.UndefOr[Boolean] = js.native
+    var autoClearSearchValue: js.UndefOr[Boolean] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backfill: js.UndefOr[Boolean] = js.native
+    var backfill: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var choiceTransitionName: js.UndefOr[String] = js.native
+    var choiceTransitionName: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultActiveFirstOption: js.UndefOr[Boolean] = js.native
+    var defaultActiveFirstOption: js.UndefOr[Boolean] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[ValueType] = js.native
+    var defaultValue: js.UndefOr[ValueType] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownAlign: js.UndefOr[js.Any] = js.native
+    var dropdownAlign: js.UndefOr[js.Any] = js.undefined
     
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.native
+    var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.undefined
     
-    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.native
+    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.undefined
     
-    var dropdownStyle: js.UndefOr[CSSProperties] = js.native
+    var dropdownStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * In Select, `false` means do nothing.
@@ -274,47 +275,47 @@ object generateMod {
         Boolean | (FilterFunc[
           /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var getInputElement: js.UndefOr[js.Function0[Element]] = js.native
+    var getInputElement: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.native
+    var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputIcon: js.UndefOr[RenderNode] = js.native
+    var inputIcon: js.UndefOr[RenderNode] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
     /**
       * Only used in current version for internal event process.
       * Do not use in production environment.
       */
-    var internalProps: js.UndefOr[Mark[OptionsType]] = js.native
+    var internalProps: js.UndefOr[Mark[OptionsType]] = js.undefined
     
-    var labelInValue: js.UndefOr[Boolean] = js.native
+    var labelInValue: js.UndefOr[Boolean] = js.undefined
     
-    var listHeight: js.UndefOr[Double] = js.native
+    var listHeight: js.UndefOr[Double] = js.undefined
     
-    var listItemHeight: js.UndefOr[Double] = js.native
+    var listItemHeight: js.UndefOr[Double] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double] = js.native
+    var maxTagCount: js.UndefOr[Double] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])
-      ] = js.native
+      ] = js.undefined
     
-    var maxTagTextLength: js.UndefOr[Double] = js.native
+    var maxTagTextLength: js.UndefOr[Double] = js.undefined
     
-    var menuItemSelectedIcon: js.UndefOr[RenderNode] = js.native
+    var menuItemSelectedIcon: js.UndefOr[RenderNode] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var notFoundContent: js.UndefOr[ReactNode] = js.native
+    var notFoundContent: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[
@@ -322,11 +323,11 @@ object generateMod {
           /* option */ (/* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any) | OptionsType, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClear: js.UndefOr[OnClear] = js.native
+    var onClear: js.UndefOr[OnClear] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
     var onDeselect: js.UndefOr[
         js.Function2[
@@ -334,27 +335,27 @@ object generateMod {
           /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ /* option */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
+    var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
-    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onPopupScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.native
+    var onPopupScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     var onSelect: js.UndefOr[
         js.Function2[
@@ -362,43 +363,43 @@ object generateMod {
           /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ /* option */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var optionFilterProp: js.UndefOr[String] = js.native
+    var optionFilterProp: js.UndefOr[String] = js.undefined
     
-    var optionLabelProp: js.UndefOr[String] = js.native
+    var optionLabelProp: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[OptionsType] = js.native
+    var options: js.UndefOr[OptionsType] = js.undefined
     
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode] = js.native
+    var removeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var searchValue: js.UndefOr[String] = js.native
+    var searchValue: js.UndefOr[String] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[focus | click]] = js.native
+    var showAction: js.UndefOr[js.Array[focus | click]] = js.undefined
     
-    var showArrow: js.UndefOr[Boolean] = js.native
+    var showArrow: js.UndefOr[Boolean] = js.undefined
     
-    var showSearch: js.UndefOr[Boolean] = js.native
+    var showSearch: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.native
+    var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
     
-    var tokenSeparators: js.UndefOr[js.Array[String]] = js.native
+    var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[ValueType] = js.native
+    var value: js.UndefOr[ValueType] = js.undefined
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object SelectProps {
     
@@ -409,7 +410,7 @@ object generateMod {
     }
     
     @scala.inline
-    implicit class SelectPropsMutableBuilder[Self <: SelectProps[_, _], OptionsType /* <: js.Array[js.Object] */, ValueType] (val x: Self with (SelectProps[OptionsType, ValueType])) extends AnyVal {
+    implicit class SelectPropsMutableBuilder[Self <: SelectProps[?, ?], OptionsType /* <: js.Array[js.Object] */, ValueType] (val x: Self & (SelectProps[OptionsType, ValueType])) extends AnyVal {
       
       @scala.inline
       def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])

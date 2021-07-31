@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "AssociativeArray")
@@ -25,5 +24,5 @@ class AssociativeArray () extends StObject {
   def set(key: String, value: js.Any): Unit = js.native
   def set(key: Double, value: js.Any): Unit = js.native
   
-  var values: js.Array[_] = js.native
+  var values: js.Array[js.Any] = js.native
 }

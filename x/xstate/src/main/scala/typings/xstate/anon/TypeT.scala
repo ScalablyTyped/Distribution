@@ -2,13 +2,11 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeT[T] extends StObject {
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object TypeT {
   
@@ -20,7 +18,7 @@ object TypeT {
   }
   
   @scala.inline
-  implicit class TypeTMutableBuilder[Self <: TypeT[_], T] (val x: Self with TypeT[T]) extends AnyVal {
+  implicit class TypeTMutableBuilder[Self <: TypeT[?], T] (val x: Self & TypeT[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

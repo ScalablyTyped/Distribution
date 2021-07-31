@@ -15,23 +15,21 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandBarTypesMod {
   
-  @js.native
   trait ICommandBar extends StObject {
     
     /**
       * Sets focus to the active command in the list.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /**
       * Remeasures the available space.
       */
-    def remeasure(): Unit = js.native
+    def remeasure(): Unit
   }
   object ICommandBar {
     
@@ -52,44 +50,45 @@ object commandBarTypesMod {
     }
   }
   
-  @js.native
-  trait ICommandBarItemProps extends IContextualMenuItem {
+  trait ICommandBarItemProps
+    extends StObject
+       with IContextualMenuItem {
     
     /**
       * Custom styles for individual button
       */
-    var buttonStyles: js.UndefOr[IButtonStyles] = js.native
+    var buttonStyles: js.UndefOr[IButtonStyles] = js.undefined
     
     /**
       * A custom cache key to be used for this item. If `cacheKey` is changed, the cache will invalidate.
       * Defaults to `key` value.
       */
-    var cacheKey: js.UndefOr[String] = js.native
+    var cacheKey: js.UndefOr[String] = js.undefined
     
     /**
       * Method to override the render of the individual command bar button.
       * Not used when item is rendered in overflow.
       * @defaultvalue CommandBarButton
       */
-    var commandBarButtonAs: js.UndefOr[IComponentAs[ICommandBarItemProps]] = js.native
+    var commandBarButtonAs: js.UndefOr[IComponentAs[ICommandBarItemProps]] = js.undefined
     
     /**
       * Show only an icon for this item, not text.
       * Does not apply if item is in the overflow.
       * @defaultvalue false
       */
-    var iconOnly: js.UndefOr[Boolean] = js.native
+    var iconOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Context under which the item is being rendered.
       * This value is mutated by the CommandBar and is useful for adjusting the `onRender` function.
       */
-    var renderedInOverflow: js.UndefOr[Boolean] = js.native
+    var renderedInOverflow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Props for the tooltip when in `iconOnly` mode.
       */
-    var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.native
+    var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.undefined
   }
   object ICommandBarItemProps {
     
@@ -140,26 +139,27 @@ object commandBarTypesMod {
     }
   }
   
-  @js.native
-  trait ICommandBarProps extends HTMLAttributes[HTMLDivElement] {
+  trait ICommandBarProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Accessibility text to be read by the screen reader when the user's
       * focus enters the command bar. The screen reader will read this text
       * after reading information about the first focusable item in the command bar.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom component for the near and far item buttons. Not used for overflow menu items.
       */
-    var buttonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.native
+    var buttonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
     
     /**
       * Optional callback to access the ICommandBar interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ICommandBar]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ICommandBar]] = js.undefined
     
     /**
       * Function to be called every time data is rendered. It provides the data that was actually rendered.
@@ -167,71 +167,71 @@ object commandBarTypesMod {
       * as a result of `onReduceData`, or to count the number of renders that an implementation of
       * `onReduceData` triggers.
       */
-    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.native
+    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.undefined
     
     /**
       * Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.
       */
-    var farItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.native
+    var farItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.undefined
     
     /**
       * Items to render. ICommandBarItemProps extends IContextualMenuItem.
       */
-    var items: js.Array[ICommandBarItemProps] = js.native
+    var items: js.Array[ICommandBarItemProps]
     
     /**
       * Callback invoked when data has been grown.
       */
-    var onDataGrown: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.native
+    var onDataGrown: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.undefined
     
     /**
       * Callback invoked when data has been reduced.
       */
-    var onDataReduced: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.native
+    var onDataReduced: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.undefined
     
     /**
       * Custom function to grow data if items are too small for the given space.
       * Return `undefined` if no more steps can be taken to avoid infinate loop.
       */
-    var onGrowData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.native
+    var onGrowData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.undefined
     
     /**
       * Custom function to reduce data if items do not fit in given space.
       * Return `undefined` if no more steps can be taken to avoid infinate loop.
       */
-    var onReduceData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.native
+    var onReduceData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.undefined
     
     /**
       * Custom component for the overflow button.
       */
-    var overflowButtonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.native
+    var overflowButtonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
     
     /**
       * Props to be passed to overflow button.
       * If `menuProps` are passed through this prop, any items provided will be prepended to any
       * computed overflow items.
       */
-    var overflowButtonProps: js.UndefOr[IButtonProps] = js.native
+    var overflowButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Default items to have in the overflow menu. ICommandBarItemProps extends IContextualMenuItem.
       */
-    var overflowItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.native
+    var overflowItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.undefined
     
     /**
       * When true, items will be 'shifted' off the front of the array when reduced, and unshifted during grow.
       */
-    var shiftOnReduce: js.UndefOr[Boolean] = js.native
+    var shiftOnReduce: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ICommandBarStyleProps, ICommandBarStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ICommandBarStyleProps, ICommandBarStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ICommandBarProps {
     
@@ -354,12 +354,11 @@ object commandBarTypesMod {
     }
   }
   
-  @js.native
   trait ICommandBarStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ICommandBarStyleProps {
     
@@ -383,14 +382,13 @@ object commandBarTypesMod {
     }
   }
   
-  @js.native
   trait ICommandBarStyles extends StObject {
     
-    var primarySet: js.UndefOr[IStyle] = js.native
+    var primarySet: js.UndefOr[IStyle] = js.undefined
     
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
-    var secondarySet: js.UndefOr[IStyle] = js.native
+    var secondarySet: js.UndefOr[IStyle] = js.undefined
   }
   object ICommandBarStyles {
     

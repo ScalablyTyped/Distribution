@@ -2,15 +2,13 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdStatusText extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var statusText: String = js.native
+  var statusText: String
 }
 object IdStatusText {
   

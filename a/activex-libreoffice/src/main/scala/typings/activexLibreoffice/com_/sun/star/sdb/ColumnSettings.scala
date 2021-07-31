@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the common properties of a database column. */
-@js.native
-trait ColumnSettings extends XPropertySet {
+trait ColumnSettings
+  extends StObject
+     with XPropertySet {
   
   /**
     * specifies the alignment of columns text.
@@ -21,13 +21,13 @@ trait ColumnSettings extends XPropertySet {
     *
     * If the value is `VOID` , a default alignment should be used according to the datatype of the column.
     */
-  var Align: Double = js.native
+  var Align: Double
   
   /** describes the default value which should be displayed by a control when moving to a new row. The default is `NULL` . */
-  var ControlDefault: String = js.native
+  var ControlDefault: String
   
   /** indicates a control model which defines the settings for layouting. The default is `NULL` . */
-  var ControlModel: XPropertySet = js.native
+  var ControlModel: XPropertySet
   
   /**
     * contains the index of the number format that is used for the column.
@@ -36,27 +36,27 @@ trait ColumnSettings extends XPropertySet {
     *
     * If the value is `VOID` , a default number format should be used according to the datatype of the column.
     */
-  var FormatKey: Double = js.native
+  var FormatKey: Double
   
   /** describes an optional help text which can be used by UI components when representing this column. The default is `NULL` . */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** determines whether the column should be displayed or not. */
-  var Hidden: Boolean = js.native
+  var Hidden: Boolean
   
   /**
     * Position of the column within a grid.
     *
     * If the value is `VOID` , the default position should be taken according.
     */
-  var Position: Double = js.native
+  var Position: Double
   
   /**
     * specifies the width of the column displayed in a grid, the unit is 10THMM.
     *
     * If the value is `VOID` , a default width should be used according to the label of the column.
     */
-  var Width: Double = js.native
+  var Width: Double
 }
 object ColumnSettings {
   

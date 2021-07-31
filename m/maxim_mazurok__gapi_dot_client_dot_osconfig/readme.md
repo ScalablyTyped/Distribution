@@ -10,9 +10,9 @@ TypeScript typings for OS Config API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.osconfig |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 76 |
+| # downloads        | 826 |
 | # stars            | 0 |
 
 ## Links

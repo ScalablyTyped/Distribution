@@ -12,7 +12,7 @@ A better typeof for JavaScript.
 | Keywords           | typeof, javascript, typpy |
 | # releases         | 3 |
 | # dependents       | 45 |
-| # downloads        | 2887890 |
+| # downloads        | 7107032 |
 | # stars            | 0 |
 
 ## Links

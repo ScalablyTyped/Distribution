@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFilterViewResponse extends StObject {
   
   /** The newly added filter view. */
-  var filter: js.UndefOr[FilterView] = js.native
+  var filter: js.UndefOr[FilterView] = js.undefined
 }
 object AddFilterViewResponse {
   

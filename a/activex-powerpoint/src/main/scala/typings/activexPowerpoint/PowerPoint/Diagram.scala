@@ -4,34 +4,32 @@ import typings.activexOffice.Office.MsoDiagramType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diagram extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoFormat: MsoTriState = js.native
+  var AutoFormat: MsoTriState
   
-  var AutoLayout: MsoTriState = js.native
+  var AutoLayout: MsoTriState
   
-  def Convert(Type: MsoDiagramType): Unit = js.native
+  def Convert(Type: MsoDiagramType): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def FitText(): Unit = js.native
+  def FitText(): Unit
   
-  val Nodes: DiagramNodes = js.native
+  val Nodes: DiagramNodes
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Diagram_typekey")
-  var PowerPointDotDiagram_typekey: Diagram = js.native
+  var PowerPointDotDiagram_typekey: Diagram
   
-  var Reverse: MsoTriState = js.native
+  var Reverse: MsoTriState
   
-  val Type: MsoDiagramType = js.native
+  val Type: MsoDiagramType
 }
 object Diagram {
   

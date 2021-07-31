@@ -10,9 +10,9 @@ allow file content manipulations
 | ------------------ | :-------------: |
 | Full name          | gulp-change |
 | Keywords           | gulp, change, file, content, modify, static, analysis |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 262249 |
+| # downloads        | 240847 |
 | # stars            | 9 |
 
 ## Links

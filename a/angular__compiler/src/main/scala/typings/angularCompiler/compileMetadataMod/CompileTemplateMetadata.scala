@@ -5,7 +5,6 @@ import typings.angularCompiler.coreMod.ViewEncapsulation
 import typings.angularCompiler.mlParserParserMod.ParseTreeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compile_metadata", "CompileTemplateMetadata")
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CompileTemplateMetadata protected () extends StObject {
   def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: Animations) = this()
   
-  var animations: js.Array[_] = js.native
+  var animations: js.Array[js.Any] = js.native
   
   var encapsulation: ViewEncapsulation | Null = js.native
   

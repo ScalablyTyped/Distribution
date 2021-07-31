@@ -2,17 +2,17 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICreateTopicOptions extends CreateOptions {
+trait ICreateTopicOptions
+  extends StObject
+     with CreateOptions {
   
-  var EnableBatchedOperations: Boolean = js.native
+  var EnableBatchedOperations: Boolean
   
-  var SizeInBytes: Boolean = js.native
+  var SizeInBytes: Boolean
   
-  var SupportOrdering: Boolean = js.native
+  var SupportOrdering: Boolean
 }
 object ICreateTopicOptions {
   

@@ -3,28 +3,26 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendMarkerCfg extends StObject {
   
   /**
     * 图例项 marker 同后面 name 的间距
     * @type {number}
     */
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
   /**
     * 图例项 marker 的配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
   
   /**
     * 图例 marker 形状
     */
-  var symbol: js.UndefOr[String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, _])] = js.native
+  var symbol: js.UndefOr[String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])] = js.undefined
 }
 object LegendMarkerCfg {
   
@@ -50,10 +48,10 @@ object LegendMarkerCfg {
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, _])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => _): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
+    def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => js.Any): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
     
     @scala.inline
     def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)

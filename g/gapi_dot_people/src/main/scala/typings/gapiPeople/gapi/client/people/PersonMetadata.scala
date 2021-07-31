@@ -2,21 +2,19 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonMetadata extends StObject {
   
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
-  var linkedPeopleResourceNames: js.Array[String] = js.native
+  var linkedPeopleResourceNames: js.Array[String]
   
-  var objectType: ObjectType = js.native
+  var objectType: ObjectType
   
-  var previousResourceNames: js.Array[String] = js.native
+  var previousResourceNames: js.Array[String]
   
-  var sources: js.Array[Source] = js.native
+  var sources: js.Array[Source]
 }
 object PersonMetadata {
   

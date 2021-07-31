@@ -2,19 +2,17 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The access controls set on the resource.
   */
-@js.native
 trait SchemaResourceAccessControl extends StObject {
   
   /**
     * The GCP IAM Policy to set on the resource.
     */
-  var gcpIamPolicy: js.UndefOr[String] = js.native
+  var gcpIamPolicy: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceAccessControl {
   

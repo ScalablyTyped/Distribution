@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The date and time that this theme was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The last date and time that this theme was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The latest version number for the theme. 
     */
-  var LatestVersionNumber: js.UndefOr[VersionNumber] = js.native
+  var LatestVersionNumber: js.UndefOr[VersionNumber] = js.undefined
   
   /**
     * the display name for the theme.
     */
-  var Name: js.UndefOr[ThemeName] = js.native
+  var Name: js.UndefOr[ThemeName] = js.undefined
   
   /**
     * The ID of the theme. This ID is unique per AWS Region for each AWS account.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.native
+  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
 }
 object ThemeSummary {
   

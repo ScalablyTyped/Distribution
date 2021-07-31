@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPullRequestOverrideStateOutput extends StObject {
   
   /**
     * A Boolean value that indicates whether a pull request has had its rules set aside (TRUE) or whether all approval rules still apply (FALSE).
     */
-  var overridden: js.UndefOr[Overridden] = js.native
+  var overridden: js.UndefOr[Overridden] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.
     */
-  var overrider: js.UndefOr[Arn] = js.native
+  var overrider: js.UndefOr[Arn] = js.undefined
 }
 object GetPullRequestOverrideStateOutput {
   

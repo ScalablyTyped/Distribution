@@ -2,19 +2,17 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly The app type the restriction applies to for mobile device.
   */
-@js.native
 trait SchemaAppContext extends StObject {
   
   /**
     * The app types this restriction applies to.
     */
-  var appTypes: js.UndefOr[js.Array[String]] = js.native
+  var appTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAppContext {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevocationConfiguration extends StObject {
   
   /**
     * Configuration of the certificate revocation list (CRL), if any, maintained by your private CA.
     */
-  var CrlConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.CrlConfiguration] = js.native
+  var CrlConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.CrlConfiguration] = js.undefined
 }
 object RevocationConfiguration {
   

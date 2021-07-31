@@ -12,7 +12,6 @@ import typings.googleAppsScript.googleAppsScriptStrings.normal
 import typings.googleAppsScript.googleAppsScriptStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -202,7 +201,7 @@ trait Range extends StObject {
   
   def getValue(): js.Any = js.native
   
-  def getValues(): js.Array[js.Array[_]] = js.native
+  def getValues(): js.Array[js.Array[js.Any]] = js.native
   
   def getVerticalAlignment(): String = js.native
   
@@ -293,7 +292,7 @@ trait Range extends StObject {
   def setFontColor(): Range = js.native
   def setFontColor(color: String): Range = js.native
   
-  def setFontColors(colors: js.Array[js.Array[_]]): Range = js.native
+  def setFontColors(colors: js.Array[js.Array[js.Any]]): Range = js.native
   
   def setFontFamilies(fontFamilies: js.Array[js.Array[String | Null]]): Range = js.native
   
@@ -368,7 +367,7 @@ trait Range extends StObject {
   
   def setValue(value: js.Any): Range = js.native
   
-  def setValues(values: js.Array[js.Array[_]]): Range = js.native
+  def setValues(values: js.Array[js.Array[js.Any]]): Range = js.native
   
   def setVerticalAlignment(): Range = js.native
   @JSName("setVerticalAlignment")

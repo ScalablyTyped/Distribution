@@ -6,41 +6,39 @@ import typings.winrtUwp.Windows.Storage.StorageFolder
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties of images to scan. */
-@js.native
 trait ImageScanner extends StObject {
   
   /** Gets and sets the scan settings of the auto-configured scan unit, like the file format, including compression to deliver the scanned data in. This property is ignored if the scanner is not capable of auto-configuration. */
-  var autoConfiguration: ImageScannerAutoConfiguration = js.native
+  var autoConfiguration: ImageScannerAutoConfiguration
   
   /** Gets the default scan source chosen for this scanner device. */
-  var defaultScanSource: ImageScannerScanSource = js.native
+  var defaultScanSource: ImageScannerScanSource
   
   /** Gets the PnP device identifier of this scanner device. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets or sets the scan settings of the Feeder scan unit, like page size, orientation, and scan resolution. */
-  var feederConfiguration: ImageScannerFeederConfiguration = js.native
+  var feederConfiguration: ImageScannerFeederConfiguration
   
   /** Gets and sets the scan settings of the Flatbed scan unit, like scan resolution and color mode. */
-  var flatbedConfiguration: ImageScannerFlatbedConfiguration = js.native
+  var flatbedConfiguration: ImageScannerFlatbedConfiguration
   
   /**
     * Determines if the specified scan source supports scan preview.
     * @param scanSource The scan source.
     * @return Returns True if the specified scan source supports preview; otherwise False.
     */
-  def isPreviewSupported(scanSource: ImageScannerScanSource): Boolean = js.native
+  def isPreviewSupported(scanSource: ImageScannerScanSource): Boolean
   
   /**
     * Determines if the specified scan source is available on the scanner.
     * @param value The scan source.
     * @return True if the scan source, Flatbed or Feeder, is available; otherwise False.
     */
-  def isScanSourceSupported(value: ImageScannerScanSource): Boolean = js.native
+  def isScanSourceSupported(value: ImageScannerScanSource): Boolean
   
   /**
     * Starts a scan job with the specified scan source and writes one or multiple images to one multi-page file like TIFF, XPS, and PDF; or one or multiple single-page files like DIB, PNG, JPG, and TIFF to the specified folder location. Returns the progress of the scan.
@@ -48,7 +46,7 @@ trait ImageScanner extends StObject {
     * @param storageFolder The target folder location of the scanned file.
     * @return The list of scanned image files from ImageScannerScanResult and the progress of the WIA scan job from UInt32, which indicates how many files were transferred to the target folder.
     */
-  def scanFilesToFolderAsync(scanSource: ImageScannerScanSource, storageFolder: StorageFolder): IPromiseWithIAsyncOperationWithProgress[ImageScannerScanResult, Double] = js.native
+  def scanFilesToFolderAsync(scanSource: ImageScannerScanSource, storageFolder: StorageFolder): IPromiseWithIAsyncOperationWithProgress[ImageScannerScanResult, Double]
   
   /**
     * Scans one image from the specified scan source and applies the lowest scan resolution with the selected image file format.
@@ -56,7 +54,7 @@ trait ImageScanner extends StObject {
     * @param targetStream The scanned image file.
     * @return The progress of the scan and the scanned file format.
     */
-  def scanPreviewToStreamAsync(scanSource: ImageScannerScanSource, targetStream: IRandomAccessStream): IPromiseWithIAsyncOperation[ImageScannerPreviewResult] = js.native
+  def scanPreviewToStreamAsync(scanSource: ImageScannerScanSource, targetStream: IRandomAccessStream): IPromiseWithIAsyncOperation[ImageScannerPreviewResult]
 }
 object ImageScanner {
   

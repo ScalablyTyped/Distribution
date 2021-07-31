@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to control a data pilot table which has already been created.
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
-trait XDataPilotTable extends XInterface {
+trait XDataPilotTable
+  extends StObject
+     with XInterface {
   
   /** returns the address of the cell range that contains the data pilot table. */
-  val OutputRange: CellRangeAddress = js.native
+  val OutputRange: CellRangeAddress
   
   /** returns the address of the cell range that contains the data pilot table. */
-  def getOutputRange(): CellRangeAddress = js.native
+  def getOutputRange(): CellRangeAddress
   
   /** recreates the data pilot table with current data from the source cell range. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object XDataPilotTable {
   

@@ -8,29 +8,29 @@ import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SFCScriptBlock extends SFCBlock {
+trait SFCScriptBlock
+  extends StObject
+     with SFCBlock {
   
-  var bindings: js.UndefOr[BindingMetadata] = js.native
+  var bindings: js.UndefOr[BindingMetadata] = js.undefined
   
-  var scriptAst: js.UndefOr[js.Array[Statement]] = js.native
+  var scriptAst: js.UndefOr[js.Array[Statement]] = js.undefined
   
-  var scriptSetupAst: js.UndefOr[js.Array[Statement]] = js.native
+  var scriptSetupAst: js.UndefOr[js.Array[Statement]] = js.undefined
   
-  var setup: js.UndefOr[String | Boolean] = js.native
+  var setup: js.UndefOr[String | Boolean] = js.undefined
   
   @JSName("type")
-  var type_SFCScriptBlock: script = js.native
+  var type_SFCScriptBlock: script
 }
 object SFCScriptBlock {
   
   @scala.inline
-  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation, `type`: script): SFCScriptBlock = {
+  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCScriptBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("script")
     __obj.asInstanceOf[SFCScriptBlock]
   }
   

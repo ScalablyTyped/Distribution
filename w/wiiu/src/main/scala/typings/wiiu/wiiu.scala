@@ -34,7 +34,6 @@ import typings.wiiu.wiiuNumbers.`2`
 import typings.wiiu.wiiuNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wiiu {
@@ -147,14 +146,13 @@ object wiiu {
     def ZR: `0x00000040` = 0x00000040.asInstanceOf[`0x00000040`]
   }
   
-  @js.native
   trait ImageView extends StObject {
     
-    def end(): Boolean = js.native
+    def end(): Boolean
     
-    def getErrorCode(): Double = js.native
+    def getErrorCode(): Double
     
-    var viewMode: Double = js.native
+    var viewMode: Double
   }
   object ImageView {
     
@@ -222,12 +220,11 @@ object wiiu {
     def Y_INVALID: `2` = 2.asInstanceOf[`2`]
   }
   
-  @js.native
   trait VideoPlayer extends StObject {
     
-    def end(): Boolean = js.native
+    def end(): Boolean
     
-    var viewMode: Double = js.native
+    var viewMode: Double
   }
   object VideoPlayer {
     
@@ -248,68 +245,67 @@ object wiiu {
     }
   }
   
-  @js.native
   trait WiiuGamePad extends StObject {
     
-    var accX: Double = js.native
+    var accX: Double
     
-    var accY: Double = js.native
+    var accY: Double
     
-    var accZ: Double = js.native
+    var accZ: Double
     
-    var angleX: Double = js.native
+    var angleX: Double
     
-    var angleY: Double = js.native
+    var angleY: Double
     
-    var angleZ: Double = js.native
+    var angleZ: Double
     
-    var contentX: Double = js.native
+    var contentX: Double
     
-    var contentY: Double = js.native
+    var contentY: Double
     
-    var dirXx: Double = js.native
+    var dirXx: Double
     
-    var dirXy: Double = js.native
+    var dirXy: Double
     
-    var dirXz: Double = js.native
+    var dirXz: Double
     
-    var dirYx: Double = js.native
+    var dirYx: Double
     
-    var dirYy: Double = js.native
+    var dirYy: Double
     
-    var dirYz: Double = js.native
+    var dirYz: Double
     
-    var dirZx: Double = js.native
+    var dirZx: Double
     
-    var dirZy: Double = js.native
+    var dirZy: Double
     
-    var dirZz: Double = js.native
+    var dirZz: Double
     
-    var gyroX: Double = js.native
+    var gyroX: Double
     
-    var gyroY: Double = js.native
+    var gyroY: Double
     
-    var gyroZ: Double = js.native
+    var gyroZ: Double
     
-    var hold: Double = js.native
+    var hold: Double
     
-    var isDataValid: Boolean = js.native
+    var isDataValid: Boolean
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
-    var lStickX: Double = js.native
+    var lStickX: Double
     
-    var lStickY: Double = js.native
+    var lStickY: Double
     
-    var rStickX: Double = js.native
+    var rStickX: Double
     
-    var rStickY: Double = js.native
+    var rStickY: Double
     
-    var tpTouch: Boolean = js.native
+    var tpTouch: Boolean
     
-    var tpValidity: Double = js.native
+    var tpValidity: Double
     
-    def update(): WiiuGamePad = js.native
+    def update(): WiiuGamePad
   }
   object WiiuGamePad {
     

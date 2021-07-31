@@ -23,73 +23,73 @@ import typings.node.fsMod.ReadStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html-pdf", "create")
+  @JSImport("html-pdf", JSImport.Namespace)
   @js.native
-  def create(html: String): CreateResult = js.native
-  @JSImport("html-pdf", "create")
-  @js.native
-  def create(html: String, options: CreateOptions): CreateResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(html: String): CreateResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(html.asInstanceOf[js.Any]).asInstanceOf[CreateResult]
+  @scala.inline
+  def create(html: String, options: CreateOptions): CreateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateResult]
+  
   trait CreateOptions extends StObject {
     
     // Rendering options
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     // Page options
-    var border: js.UndefOr[String | Bottom] = js.native
+    var border: js.UndefOr[String | Bottom] = js.undefined
     
     // To run Node application as Windows service
-    var childProcessOptions: js.UndefOr[Detached] = js.native
+    var childProcessOptions: js.UndefOr[Detached] = js.undefined
     
     // Export options
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[Height] = js.native
+    var footer: js.UndefOr[Height] = js.undefined
     
-    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.native
+    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
     
-    var header: js.UndefOr[Contents] = js.native
+    var header: js.UndefOr[Contents] = js.undefined
     
     // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     // HTTP Cookies that are used for requests
-    var httpCookies: js.UndefOr[js.Array[Domain]] = js.native
+    var httpCookies: js.UndefOr[js.Array[Domain]] = js.undefined
     
     // HTTP Headers that are used for requests
-    var httpHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var paginationOffset: js.UndefOr[Double] = js.native
+    var paginationOffset: js.UndefOr[Double] = js.undefined
     
-    var phantomArgs: js.UndefOr[js.Array[String]] = js.native
+    var phantomArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     // Script options
-    var phantomPath: js.UndefOr[String] = js.native
+    var phantomPath: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[String] = js.native
+    var quality: js.UndefOr[String] = js.undefined
     
     // Time we should wait after window load
-    var renderDelay: js.UndefOr[manual | Double] = js.native
+    var renderDelay: js.UndefOr[manual | Double] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     // File options
-    var `type`: js.UndefOr[png | jpeg | pdf] = js.native
+    var `type`: js.UndefOr[png | jpeg | pdf] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     // Zooming option, can be used to scale images if `options.type` is not pdf
-    var zoomFactor: js.UndefOr[String] = js.native
+    var zoomFactor: js.UndefOr[String] = js.undefined
   }
   object CreateOptions {
     
@@ -243,20 +243,16 @@ object mod {
     
     def toFile(): Unit = js.native
     def toFile(callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
-    def toFile(
-      filename: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]
-    ): Unit = js.native
     def toFile(filename: String): Unit = js.native
     def toFile(filename: String, callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
+    def toFile(filename: Unit, callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
     
     def toStream(callback: js.Function2[/* err */ Error, /* stream */ ReadStream, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
-    var filename: String = js.native
+    var filename: String
   }
   object FileInfo {
     

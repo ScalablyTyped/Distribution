@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the l-diversity computation.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2LDiversityResult extends StObject {
   
   /**
     * Histogram of l-diversity equivalence class sensitive value frequencies.
     */
-  var sensitiveValueFrequencyHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2LDiversityHistogramBucket]] = js.native
+  var sensitiveValueFrequencyHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2LDiversityHistogramBucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LDiversityResult {
   

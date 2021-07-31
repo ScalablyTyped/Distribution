@@ -9,13 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link TextField} is a {@link TextContent} which fades its textual representation into the text range to which it is anchored. */
-@js.native
 trait TextField_
-  extends TextContent
+  extends StObject
+     with TextContent
      with XTextField
      with XPropertySet {
   
@@ -26,7 +25,7 @@ trait TextField_
     * document but get not displayed.
     * @since OOo 2.0.1
     */
-  var IsFieldDisplayed: Boolean = js.native
+  var IsFieldDisplayed: Boolean
   
   /**
     * specifies if the text field is actually used in the document.
@@ -34,7 +33,7 @@ trait TextField_
     * Not all available text fields are used, for example fields that are part of unused styles.
     * @since OOo 2.0.1
     */
-  var IsFieldUsed: Boolean = js.native
+  var IsFieldUsed: Boolean
 }
 object TextField_ {
   

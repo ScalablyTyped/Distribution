@@ -21,10 +21,13 @@ import typings.wordpressData.anon.Storage
 import typings.wordpressData.wordpressDataBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@wordpress/data", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@wordpress/data", "RegistryConsumer")
   @js.native
@@ -34,40 +37,35 @@ object mod {
   @js.native
   val RegistryProvider: Provider[DataRegistry] = js.native
   
-  @JSImport("@wordpress/data", "combineReducers")
-  @js.native
-  def combineReducers[M /* <: ReducersMapObject[_, _] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = js.native
-  @JSImport("@wordpress/data", "combineReducers")
-  @js.native
-  def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[CombinedState[S], AnyAction] = js.native
-  @JSImport("@wordpress/data", "combineReducers")
-  @js.native
-  def combineReducers_SA_ActionWildcard[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = js.native
+  @scala.inline
+  def combineReducers[M /* <: ReducersMapObject[js.Any, js.Any] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]]]
+  @scala.inline
+  def combineReducers[S](reducers: ReducersMapObject[S, js.Any]): Reducer[CombinedState[S], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], AnyAction]]
   
-  @JSImport("@wordpress/data", "createRegistry")
-  @js.native
-  def createRegistry(): DataRegistry = js.native
-  @JSImport("@wordpress/data", "createRegistry")
-  @js.native
-  def createRegistry(storeConfigs: js.UndefOr[scala.Nothing], parent: DataRegistry): DataRegistry = js.native
-  @JSImport("@wordpress/data", "createRegistry")
-  @js.native
-  def createRegistry(storeConfigs: js.Object): DataRegistry = js.native
-  @JSImport("@wordpress/data", "createRegistry")
-  @js.native
-  def createRegistry(storeConfigs: js.Object, parent: DataRegistry): DataRegistry = js.native
+  @scala.inline
+  def combineReducers_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], A]]
   
-  @JSImport("@wordpress/data", "createRegistryControl")
-  @js.native
-  def createRegistryControl[R /* <: DataRegistry */, T](registryControl: js.Function1[/* registry */ R, js.Function1[/* args */ StringDictionary[_], T]]): R = js.native
+  @scala.inline
+  def createRegistry(): DataRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")().asInstanceOf[DataRegistry]
+  @scala.inline
+  def createRegistry(storeConfigs: js.Object): DataRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")(storeConfigs.asInstanceOf[js.Any]).asInstanceOf[DataRegistry]
+  @scala.inline
+  def createRegistry(storeConfigs: js.Object, parent: DataRegistry): DataRegistry = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")(storeConfigs.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[DataRegistry]
+  @scala.inline
+  def createRegistry(storeConfigs: Unit, parent: DataRegistry): DataRegistry = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")(storeConfigs.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[DataRegistry]
   
-  @JSImport("@wordpress/data", "createRegistrySelector")
-  @js.native
-  def createRegistrySelector[S /* <: js.Function1[/* key */ String, SelectorMap] */, T](registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ _, /* repeated */ _, T]]): S = js.native
+  @scala.inline
+  def createRegistryControl[R /* <: DataRegistry */, T](
+    registryControl: js.Function1[/* registry */ R, js.Function1[/* args */ StringDictionary[js.Any], T]]
+  ): R = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistryControl")(registryControl.asInstanceOf[js.Any]).asInstanceOf[R]
   
-  @JSImport("@wordpress/data", "dispatch")
-  @js.native
-  def dispatch(key: String): DispatcherMap = js.native
+  @scala.inline
+  def createRegistrySelector[S /* <: js.Function1[/* key */ String, SelectorMap] */, T](
+    registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ js.Any, /* repeated */ js.Any, T]]
+  ): S = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistrySelector")(registrySelector.asInstanceOf[js.Any]).asInstanceOf[S]
+  
+  @scala.inline
+  def dispatch(key: String): DispatcherMap = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[DispatcherMap]
   
   object plugins {
     
@@ -82,74 +80,66 @@ object mod {
     def persistence_=(x: Plugin[Storage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("persistence")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@wordpress/data", "registerGenericStore")
-  @js.native
-  def registerGenericStore(key: String, config: GenericStoreConfig): Unit = js.native
+  @scala.inline
+  def registerGenericStore(key: String, config: GenericStoreConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGenericStore")(key.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/data", "registerStore")
-  @js.native
-  def registerStore[T](key: String, config: StoreConfig[T]): Store[T, AnyAction] = js.native
+  @scala.inline
+  def registerStore[T](key: String, config: StoreConfig[T]): Store[T, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerStore")(key.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Store[T, AnyAction]]
   
-  @JSImport("@wordpress/data", "select")
-  @js.native
-  def select(key: String): SelectorMap = js.native
+  @scala.inline
+  def select(key: String): SelectorMap = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[SelectorMap]
   
   @JSImport("@wordpress/data", "subscribe")
   @js.native
   val subscribe: Subscriber = js.native
   
-  @JSImport("@wordpress/data", "use")
-  @js.native
-  def use[T](plugin: Plugin[T], options: T): DataRegistry = js.native
+  @scala.inline
+  def use[T](plugin: Plugin[T], options: T): DataRegistry = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DataRegistry]
   
   @JSImport("@wordpress/data", "useDispatch")
   @js.native
-  val useDispatch: (js.Function1[/* key */ String, DispatcherMap]) with (js.Function0[js.Function1[/* key */ String, DispatcherMap]]) = js.native
+  val useDispatch: (js.Function1[/* key */ String, DispatcherMap]) & (js.Function0[js.Function1[/* key */ String, DispatcherMap]]) = js.native
   
-  @JSImport("@wordpress/data", "useRegistry")
-  @js.native
-  def useRegistry(): DataRegistry = js.native
+  @scala.inline
+  def useRegistry(): DataRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("useRegistry")().asInstanceOf[DataRegistry]
   
-  @JSImport("@wordpress/data", "useSelect")
-  @js.native
-  def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ String, SelectorMap], T]): T = js.native
-  @JSImport("@wordpress/data", "useSelect")
-  @js.native
-  def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ String, SelectorMap], T], deps: js.Array[_]): T = js.native
+  @scala.inline
+  def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ String, SelectorMap], T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelect")(mapSelect.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def useSelect[T](
+    mapSelect: js.Function1[/* s */ js.Function1[/* key */ String, SelectorMap], T],
+    deps: js.Array[js.Any]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useSelect")(mapSelect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@wordpress/data", "withDispatch")
-  @js.native
+  @scala.inline
   def withDispatch[DP, P, IP](
     mapDispatchToProps: js.Function3[
       /* disp */ js.Function1[/* key */ String, DispatcherMap], 
-      /* ownProps */ P with IP, 
+      /* ownProps */ P & IP, 
       /* registry */ Select, 
       DP
     ]
-  ): js.Function1[/* component */ ComponentType[P with IP with DP], ComponentType[P]] = js.native
+  ): js.Function1[/* component */ ComponentType[P & IP & DP], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDispatch")(mapDispatchToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P & IP & DP], ComponentType[P]]]
   
-  @JSImport("@wordpress/data", "withRegistry")
-  @js.native
-  def withRegistry[P](component: ComponentType[P]): ComponentType[P with Registry] = js.native
+  @scala.inline
+  def withRegistry[P](component: ComponentType[P]): ComponentType[P & Registry] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRegistry")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P & Registry]]
   
-  @JSImport("@wordpress/data", "withSelect")
-  @js.native
+  @scala.inline
   def withSelect[SP, P, IP](
-    mapSelectToProps: js.Function2[/* sel */ js.Function1[/* key */ String, SelectorMap], /* ownProps */ P with IP, SP]
-  ): js.Function1[/* component */ ComponentType[P with IP with SP], ComponentType[P]] = js.native
+    mapSelectToProps: js.Function2[/* sel */ js.Function1[/* key */ String, SelectorMap], /* ownProps */ P & IP, SP]
+  ): js.Function1[/* component */ ComponentType[P & IP & SP], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSelect")(mapSelectToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P & IP & SP], ComponentType[P]]]
   
-  @js.native
   trait DataRegistry extends StObject {
     
-    var dispatch: js.Function1[/* key */ String, DispatcherMap] = js.native
+    var dispatch: js.Function1[/* key */ String, DispatcherMap]
     
-    var registerGenericStore: js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit] = js.native
+    var registerGenericStore: js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit]
     
-    var registerStore: FnCall = js.native
+    var registerStore: FnCall
     
-    var select: js.Function1[/* key */ String, SelectorMap] = js.native
+    var select: js.Function1[/* key */ String, SelectorMap]
     
-    var subscribe: Subscriber = js.native
+    var subscribe: Subscriber
   }
   object DataRegistry {
     
@@ -187,14 +177,13 @@ object mod {
   
   type DispatcherMap = Record[String, js.Function1[/* repeated */ js.Any, Unit]]
   
-  @js.native
   trait GenericStoreConfig extends StObject {
     
-    def getActions(): DispatcherMap = js.native
+    def getActions(): DispatcherMap
     
-    def getSelectors(): SelectorMap = js.native
+    def getSelectors(): SelectorMap
     
-    var subscribe: Subscriber = js.native
+    var subscribe: Subscriber
   }
   object GenericStoreConfig {
     
@@ -222,18 +211,17 @@ object mod {
     }
   }
   
-  type Plugin[T /* <: Record[String, _] */] = js.Function2[/* registry */ DataRegistry, /* options */ T, PartialDataRegistry]
+  type Plugin[T /* <: Record[String, js.Any] */] = js.Function2[/* registry */ DataRegistry, /* options */ T, PartialDataRegistry]
   
   type SelectorMap = Record[String, js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @js.native
   trait Store[S, A /* <: AnyAction */] extends StObject {
     
-    def dispatch(action: A): A = js.native
+    def dispatch(action: A): A
     
-    def getState(): S = js.native
+    def getState(): S
     
-    var subscribe: Subscriber = js.native
+    var subscribe: Subscriber
   }
   object Store {
     
@@ -248,7 +236,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[_, _], S, A /* <: AnyAction */] (val x: Self with (Store[S, A])) extends AnyVal {
+    implicit class StoreMutableBuilder[Self <: Store[?, ?], S, A /* <: AnyAction */] (val x: Self & (Store[S, A])) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
@@ -261,16 +249,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StoreConfig[S] extends StObject {
     
     var actions: js.UndefOr[
-        StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]]
-      ] = js.native
+        StringDictionary[
+          js.Function1[/* repeated */ js.Any, AnyAction | (Generator[js.Any, js.Any, js.Any])]
+        ]
+      ] = js.undefined
     
-    var controls: js.UndefOr[StringDictionary[js.Function1[/* action */ AnyAction, _]]] = js.native
+    var controls: js.UndefOr[StringDictionary[js.Function1[/* action */ AnyAction, js.Any]]] = js.undefined
     
-    var initialState: js.UndefOr[S] = js.native
+    var initialState: js.UndefOr[S] = js.undefined
     
     /**
       * Use persist with the persistence plugin to persist state.
@@ -290,13 +279,13 @@ object mod {
       *   persist: [ 'state-key-to-persist' ],
       * } );
       */
-    var persist: js.UndefOr[`true` | (js.Array[/* keyof S */ String])] = js.native
+    var persist: js.UndefOr[`true` | (js.Array[/* keyof S */ String])] = js.undefined
     
-    var reducer: Reducer[S, AnyAction] = js.native
+    var reducer: Reducer[S, AnyAction]
     
-    var resolvers: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, _]]] = js.native
+    var resolvers: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
     
-    var selectors: js.UndefOr[StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]]] = js.native
+    var selectors: js.UndefOr[StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, js.Any]]] = js.undefined
   }
   object StoreConfig {
     
@@ -307,16 +296,20 @@ object mod {
     }
     
     @scala.inline
-    implicit class StoreConfigMutableBuilder[Self <: StoreConfig[_], S] (val x: Self with StoreConfig[S]) extends AnyVal {
+    implicit class StoreConfigMutableBuilder[Self <: StoreConfig[?], S] (val x: Self & StoreConfig[S]) extends AnyVal {
       
       @scala.inline
-      def setActions(value: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      def setActions(
+        value: StringDictionary[
+              js.Function1[/* repeated */ js.Any, AnyAction | (Generator[js.Any, js.Any, js.Any])]
+            ]
+      ): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
       @scala.inline
-      def setControls(value: StringDictionary[js.Function1[/* action */ AnyAction, _]]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      def setControls(value: StringDictionary[js.Function1[/* action */ AnyAction, js.Any]]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
@@ -340,13 +333,13 @@ object mod {
       def setReducer(value: (/* state */ js.UndefOr[S], AnyAction) => S): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setResolvers(value: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
+      def setResolvers(value: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
       
       @scala.inline
-      def setSelectors(value: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      def setSelectors(value: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)

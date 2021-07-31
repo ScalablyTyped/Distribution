@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoContent extends StObject {
   
   /** The URL to fetch a video ad. */
-  var videoUrl: js.UndefOr[String] = js.native
+  var videoUrl: js.UndefOr[String] = js.undefined
   
   /** The contents of a VAST document for a video ad. This document should conform to the VAST 2.0 or 3.0 standard. */
-  var videoVastXml: js.UndefOr[String] = js.native
+  var videoVastXml: js.UndefOr[String] = js.undefined
 }
 object VideoContent {
   

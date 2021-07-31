@@ -2,7 +2,6 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Constants")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Constants extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.Constants with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.Constants & Double] = js.native
   
-  /* 1073741823 */ val Max31BitInteger: typings.typescriptServices.TypeScript.Constants.Max31BitInteger with Double = js.native
+  /* 1073741823 */ val Max31BitInteger: typings.typescriptServices.TypeScript.Constants.Max31BitInteger & Double = js.native
   
-  /* -1073741824 */ val Min31BitInteger: typings.typescriptServices.TypeScript.Constants.Min31BitInteger with Double = js.native
+  /* -1073741824 */ val Min31BitInteger: typings.typescriptServices.TypeScript.Constants.Min31BitInteger & Double = js.native
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteThemeAliasRequest extends StObject {
   
   /**
     * The unique name for the theme alias to delete.
     */
-  var AliasName: typings.awsSdk.quicksightMod.AliasName = js.native
+  var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
     * The ID of the AWS account that contains the theme alias to delete.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the theme that the specified alias is for.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
 }
 object DeleteThemeAliasRequest {
   

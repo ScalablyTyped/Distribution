@@ -3,18 +3,16 @@ package typings.angularUiRouter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Globals extends StObject {
     
     /**
       * Currently resolved "resolve" values from the current state
       */
-    var globals: StringDictionary[js.Any] = js.native
+    var globals: StringDictionary[js.Any]
   }
   object Globals {
     

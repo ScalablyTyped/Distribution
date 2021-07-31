@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSnapshotsRequest extends StObject {
   
   /**
     * Copies the tags from the specified volume to corresponding snapshot.
     */
-  var CopyTagsFromSource: js.UndefOr[typings.awsSdk.ec2Mod.CopyTagsFromSource] = js.native
+  var CopyTagsFromSource: js.UndefOr[typings.awsSdk.ec2Mod.CopyTagsFromSource] = js.undefined
   
   /**
     *  A description propagated to every snapshot specified by the instance.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance to specify which volumes should be included in the snapshots.
     */
-  var InstanceSpecification: typings.awsSdk.ec2Mod.InstanceSpecification = js.native
+  var InstanceSpecification: typings.awsSdk.ec2Mod.InstanceSpecification
   
   /**
     * Tags to apply to every snapshot specified by the instance.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object CreateSnapshotsRequest {
   

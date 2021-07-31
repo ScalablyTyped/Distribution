@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsResponse. */
-@js.native
 trait QueryRelationsResponse extends StObject {
   
   /** Array of relationships for the relations query. */
-  var relations: js.UndefOr[js.Array[QueryRelationsRelationship]] = js.native
+  var relations: js.UndefOr[js.Array[QueryRelationsRelationship]] = js.undefined
 }
 object QueryRelationsResponse {
   

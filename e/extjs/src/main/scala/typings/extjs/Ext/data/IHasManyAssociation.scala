@@ -2,30 +2,29 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHasManyAssociation
-  extends typings.extjs.Ext.data.association.IAssociation {
+  extends StObject
+     with typings.extjs.Ext.data.association.IAssociation {
   
   /** [Config Option] (Boolean) */
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var filterProperty: js.UndefOr[String] = js.native
+  var filterProperty: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[String] = js.native
+  var foreignKey: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var storeConfig: js.UndefOr[js.Any] = js.native
+  var storeConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IHasManyAssociation {
   

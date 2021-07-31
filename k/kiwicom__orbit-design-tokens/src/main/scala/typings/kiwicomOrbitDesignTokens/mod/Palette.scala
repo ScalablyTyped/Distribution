@@ -2,29 +2,27 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Palette extends StObject {
   
-  var blue: StatusColor = js.native
+  var blue: StatusColor
   
-  var cloud: CloudColor = js.native
+  var cloud: CloudColor
   
-  var green: StatusColor = js.native
+  var green: StatusColor
   
-  var ink: InkColor = js.native
+  var ink: InkColor
   
-  var orange: StatusColor = js.native
+  var orange: StatusColor
   
-  var product: ProductColor = js.native
+  var product: ProductColor
   
-  var red: StatusColor = js.native
+  var red: StatusColor
   
-  var social: SocialColor = js.native
+  var social: SocialColor
   
-  var white: WhiteColor = js.native
+  var white: WhiteColor
 }
 object Palette {
   

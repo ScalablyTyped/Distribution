@@ -10,9 +10,9 @@ General purpose crypto utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/cryptiles |
 | Keywords           | cryptography, security, utilites |
-| # releases         | 6 |
-| # dependents       | 15 |
-| # downloads        | 11432817 |
+| # releases         | 5 |
+| # dependents       | 17 |
+| # downloads        | 15561474 |
 | # stars            | 0 |
 
 ## Links

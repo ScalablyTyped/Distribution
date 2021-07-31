@@ -5,7 +5,6 @@ import typings.vscodeJsonrpc.messagesMod.Message
 import typings.vscodeJsonrpc.messagesMod.NotificationMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,49 +16,49 @@ trait MessageConnection extends StObject {
   
   def listen(): Unit = js.native
   
-  def onClose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onClose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onClose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   @JSName("onClose")
   var onClose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
   
-  def onDispose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onDispose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onDispose(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ Unit, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   @JSName("onDispose")
   var onDispose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
   
-  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
-  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
     thisArgs: js.Any
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onError(
-    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
     thisArgs: js.Any,
+    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
+  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onError(
+    listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   @JSName("onError")
@@ -153,35 +152,35 @@ trait MessageConnection extends StObject {
     handler: RequestHandler9[P1, P2, P3, P4, P5, P6, P7, P8, P9, R, E]
   ): Unit = js.native
   
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onUnhandledNotification(
-    listener: js.Function1[/* e */ NotificationMessage, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ NotificationMessage, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onUnhandledNotification(
-    listener: js.Function1[/* e */ NotificationMessage, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ NotificationMessage, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   @JSName("onUnhandledNotification")
   var onUnhandledNotification_Original: typings.vscodeJsonrpc.eventsMod.Event[NotificationMessage] = js.native
   
-  def onUnhandledProgress(listener: js.Function1[/* e */ ProgressParams[_], _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledProgress(listener: js.Function1[/* e */ ProgressParams[js.Any], js.Any]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledProgress(listener: js.Function1[/* e */ ProgressParams[js.Any], js.Any], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onUnhandledProgress(
-    listener: js.Function1[/* e */ ProgressParams[_], _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
-  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onUnhandledProgress(listener: js.Function1[/* e */ ProgressParams[_], _], thisArgs: js.Any): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
-  def onUnhandledProgress(
-    listener: js.Function1[/* e */ ProgressParams[_], _],
+    listener: js.Function1[/* e */ ProgressParams[js.Any], js.Any],
     thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onUnhandledProgress(
+    listener: js.Function1[/* e */ ProgressParams[js.Any], js.Any],
+    thisArgs: Unit,
+    disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
+  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   @JSName("onUnhandledProgress")
-  var onUnhandledProgress_Original: typings.vscodeJsonrpc.eventsMod.Event[ProgressParams[_]] = js.native
+  var onUnhandledProgress_Original: typings.vscodeJsonrpc.eventsMod.Event[ProgressParams[js.Any]] = js.native
   
   def sendNotification(method: String, params: js.Any*): Unit = js.native
   def sendNotification[RO](`type`: typings.vscodeJsonrpc.messagesMod.NotificationType0[RO]): Unit = js.native

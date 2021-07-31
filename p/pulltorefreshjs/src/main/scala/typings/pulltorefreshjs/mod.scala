@@ -2,154 +2,152 @@ package typings.pulltorefreshjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pulltorefreshjs", "destroyAll")
+  @JSImport("pulltorefreshjs", JSImport.Namespace)
   @js.native
-  def destroyAll(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pulltorefreshjs", "init")
-  @js.native
-  def init(): PullToRefreshInstance = js.native
-  @JSImport("pulltorefreshjs", "init")
-  @js.native
-  def init(options: Options): PullToRefreshInstance = js.native
+  @scala.inline
+  def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
   
-  @JSImport("pulltorefreshjs", "setPassiveMode")
-  @js.native
-  def setPassiveMode(isPassive: Boolean): Unit = js.native
+  @scala.inline
+  def init(): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[PullToRefreshInstance]
+  @scala.inline
+  def init(options: Options): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[PullToRefreshInstance]
   
-  @js.native
+  @scala.inline
+  def setPassiveMode(isPassive: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPassiveMode")(isPassive.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
     /**
       * What class prefix for the elements?
       * (default: `ptr--`)
       */
-    var classPrefix: js.UndefOr[String] = js.native
+    var classPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * What property will be used to calculate the element's proportions?
       * (default: `min-height`)
       */
-    var cssProp: js.UndefOr[String] = js.native
+    var cssProp: js.UndefOr[String] = js.undefined
     
     /**
       * After which distance should we start pulling.
       * (Default: `0`)
       */
-    var distIgnore: js.UndefOr[Double] = js.native
+    var distIgnore: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum distance possible for the element.
       * (default: `80`)
       */
-    var distMax: js.UndefOr[Double] = js.native
+    var distMax: js.UndefOr[Double] = js.undefined
     
     /**
       * After the `distThreshold` is reached and released, the element will have this height.
       * (default: `50`)
       */
-    var distReload: js.UndefOr[Double] = js.native
+    var distReload: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum distance required to trigger the refresh.
       * (default: `60`)
       */
-    var distThreshold: js.UndefOr[Double] = js.native
+    var distThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * It returns the default HTML for the widget, __PREFIX__ is replaced.
       */
-    var getMarkup: js.UndefOr[js.Function0[String]] = js.native
+    var getMarkup: js.UndefOr[js.Function0[String]] = js.undefined
     
     /**
       * It returns the default CSS for the widget, __PREFIX__ is replaced.
       */
-    var getStyles: js.UndefOr[js.Function0[String]] = js.native
+    var getStyles: js.UndefOr[js.Function0[String]] = js.undefined
     
     /**
       * The icon for both `instructionsPullToRefresh` and `instructionsReleaseToRefresh`
       * (default: `&#8675;`)
       */
-    var iconArrow: js.UndefOr[String] = js.native
+    var iconArrow: js.UndefOr[String] = js.undefined
     
     /**
       * The icon when the refresh is in progress.
       * (default: `&hellip;`)
       */
-    var iconRefreshing: js.UndefOr[String] = js.native
+    var iconRefreshing: js.UndefOr[String] = js.undefined
     
     /**
       * The initial instructions string.
       * (default: `Pull down to refresh`)
       */
-    var instructionsPullToRefresh: js.UndefOr[String] = js.native
+    var instructionsPullToRefresh: js.UndefOr[String] = js.undefined
     
     /**
       * The refreshing text.
       * (default: `Refreshing`)
       */
-    var instructionsRefreshing: js.UndefOr[String] = js.native
+    var instructionsRefreshing: js.UndefOr[String] = js.undefined
     
     /**
       * The instructions string when the `distThreshold` has been reached.
       * (default: `Release to refresh`)
       */
-    var instructionsReleaseToRefresh: js.UndefOr[String] = js.native
+    var instructionsReleaseToRefresh: js.UndefOr[String] = js.undefined
     
     /**
       * Before which element the pull to refresh elements will be?
       * (default: `body`)
       */
-    var mainElement: js.UndefOr[String] = js.native
+    var mainElement: js.UndefOr[String] = js.undefined
     
     /**
       * The initialize function.
       */
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * What will the pull to refresh trigger? You can return a promise.
       *
       * Defaults to `window.location.reload()`
       */
-    var onRefresh: js.UndefOr[js.Function0[js.Thenable[Unit] | Unit]] = js.native
+    var onRefresh: js.UndefOr[js.Function0[js.Thenable[Unit] | Unit]] = js.undefined
     
     /**
       * What class will the main element have?
       * (default: `.ptr`)
       */
-    var ptrElement: js.UndefOr[String] = js.native
+    var ptrElement: js.UndefOr[String] = js.undefined
     
     /**
       * The delay, in milliseconds before the `onRefresh` is triggered.
       * (default: `500`)
       */
-    var refreshTimeout: js.UndefOr[Double] = js.native
+    var refreshTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The resistance function, accepts one parameter, must return a number, capping at 1.
       *
       * Defaults to `t => Math.min(1, t / 2.5)`
       */
-    var resistanceFunction: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.native
+    var resistanceFunction: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.undefined
     
     /**
       * Which condition should be met for pullToRefresh to trigger?
       *
       * Defaults to `!window.scrollY`
       */
-    var shouldPullToRefresh: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldPullToRefresh: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /**
       * Which element should trigger the pull to refresh?
       * (default: `body`)
       */
-    var triggerElement: js.UndefOr[String] = js.native
+    var triggerElement: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -290,10 +288,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PullToRefreshInstance extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object PullToRefreshInstance {
     

@@ -22,27 +22,33 @@ import typings.reactNavigation.mod.NavigationScreenOptionsGetter
 import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigation.mod.NavigationSetParamsAction
 import typings.reactNavigation.mod.NavigationToggleDrawerAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetActionCreators extends js.Object {
-  var getScreenOptions: NavigationScreenOptionsGetter[_] = js.native
+trait GetActionCreators extends StObject {
+  
   def getActionCreators(route: NavigationRoute[NavigationParams], navStateKey: String): CloseDrawer = js.native
+  
   def getActionForPathAndParams(path: String): NavigationInitAction | NavigationNavigateAction | NavigationBackAction | NavigationSetParamsAction | NavigationResetAction | NavigationReplaceAction | NavigationPopAction | NavigationPushAction | NavigationPopToTopAction | NavigationCompleteTransitionAction | NavigationDrawerOpenedAction | NavigationDrawerClosedAction | NavigationOpenDrawerAction | NavigationCloseDrawerAction | NavigationToggleDrawerAction | NavigationJumpToAction | Key | Null = js.native
   def getActionForPathAndParams(path: String, params: NavigationParams): NavigationInitAction | NavigationNavigateAction | NavigationBackAction | NavigationSetParamsAction | NavigationResetAction | NavigationReplaceAction | NavigationPopAction | NavigationPushAction | NavigationPopToTopAction | NavigationCompleteTransitionAction | NavigationDrawerOpenedAction | NavigationDrawerClosedAction | NavigationOpenDrawerAction | NavigationCloseDrawerAction | NavigationToggleDrawerAction | NavigationJumpToAction | Key | Null = js.native
+  
   def getComponentForRouteName(routeName: String): NavigationComponent[
     js.Object, 
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
+  
   def getComponentForState(state: js.Any): NavigationComponent[
     js.Object, 
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
+  
   def getPathAndParamsForState(state: js.Any): Params = js.native
+  
+  var getScreenOptions: NavigationScreenOptionsGetter[js.Any] = js.native
+  
   def getStateForAction(action: NavigationAction): js.Any = js.native
   def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNaviga): js.Any = js.native
   def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNavigaIndex): js.Any = js.native
 }
-

@@ -2,7 +2,6 @@ package typings.develarSchemaUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
@@ -17,7 +16,9 @@ object rangeMod {
     */
   @JSImport("@develar/schema-utils/declarations/util/Range", JSImport.Namespace)
   @js.native
-  class ^ () extends Range
+  class ^ ()
+    extends StObject
+       with Range
   
   /**
     * @typedef {[number, boolean]} RangeValue

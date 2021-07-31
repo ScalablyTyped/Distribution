@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Whether a substitution was performed on the dispense
   */
-@js.native
-trait MedicationDispenseSubstitution extends BackboneElement {
+trait MedicationDispenseSubstitution
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'wasSubstituted'.
     */
-  var _wasSubstituted: js.UndefOr[Element] = js.native
+  var _wasSubstituted: js.UndefOr[Element] = js.undefined
   
   /**
     * Why was substitution made
     */
-  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Who is responsible for the substitution
     */
-  var responsibleParty: js.UndefOr[js.Array[Reference]] = js.native
+  var responsibleParty: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Code signifying whether a different drug was dispensed from what was prescribed
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Whether a substitution was or was not performed on the dispense
     */
-  var wasSubstituted: Boolean = js.native
+  var wasSubstituted: Boolean
 }
 object MedicationDispenseSubstitution {
   

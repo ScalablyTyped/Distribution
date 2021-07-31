@@ -2,7 +2,6 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be removed from any group but they can only be added to a user group or
   * myContacts or starred system groups.
   */
-@js.native
 trait SchemaModifyContactGroupMembersRequest extends StObject {
   
   /**
     * The resource names of the contact people to add in the form of in the
     * form `people/`&lt;var&gt;person_id&lt;/var&gt;.
     */
-  var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.native
+  var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The resource names of the contact people to remove in the form of in the
     * form of `people/`&lt;var&gt;person_id&lt;/var&gt;.
     */
-  var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.native
+  var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaModifyContactGroupMembersRequest {
   

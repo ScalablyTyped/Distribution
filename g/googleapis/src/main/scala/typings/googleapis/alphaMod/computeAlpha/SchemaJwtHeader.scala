@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This message specifies a header location to extract JWT token.
   */
-@js.native
 trait SchemaJwtHeader extends StObject {
   
   /**
     * The HTTP header name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The value prefix. The value format is &quot;value_prefix&quot; For
     * example, for &quot;Authorization: Bearer &quot;,
     * value_prefix=&quot;Bearer &quot; with a space at the end.
     */
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaJwtHeader {
   

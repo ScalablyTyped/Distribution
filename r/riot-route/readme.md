@@ -10,9 +10,9 @@ Simple isomorphic router
 | ------------------ | :-------------: |
 | Full name          | riot-route |
 | Keywords           | riot, router |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 126235 |
+| # downloads        | 185198 |
 | # stars            | 2 |
 
 ## Links

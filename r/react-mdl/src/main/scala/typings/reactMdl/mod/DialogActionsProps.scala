@@ -3,14 +3,13 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogActionsProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
 }
 object DialogActionsProps {
   

@@ -2,13 +2,11 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initializers tracks the progress of initialization.
   */
-@js.native
 trait SchemaInitializers extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaInitializers extends StObject {
     * object is considered as initialized and visible to all clients.
     * +patchMergeKey=name +patchStrategy=merge
     */
-  var pending: js.UndefOr[js.Array[SchemaInitializer]] = js.native
+  var pending: js.UndefOr[js.Array[SchemaInitializer]] = js.undefined
 }
 object SchemaInitializers {
   

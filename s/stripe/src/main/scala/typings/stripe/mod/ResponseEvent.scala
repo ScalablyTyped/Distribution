@@ -2,31 +2,29 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseEvent extends StObject {
   
-  var account: js.UndefOr[String] = js.native
+  var account: js.UndefOr[String] = js.undefined
   
-  var api_version: String = js.native
+  var api_version: String
   
-  var elapsed: Double = js.native
+  var elapsed: Double
   
-  var idempotency_key: js.UndefOr[String] = js.native
+  var idempotency_key: js.UndefOr[String] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var request_end_time: Double = js.native
+  var request_end_time: Double
   
-  var request_id: String = js.native
+  var request_id: String
   
-  var request_start_time: Double = js.native
+  var request_start_time: Double
   
-  var status: Double = js.native
+  var status: Double
 }
 object ResponseEvent {
   

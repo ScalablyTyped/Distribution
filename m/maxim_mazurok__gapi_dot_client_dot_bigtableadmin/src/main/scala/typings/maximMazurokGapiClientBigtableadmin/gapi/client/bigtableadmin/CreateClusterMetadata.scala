@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterMetadata extends StObject {
   
   /** The time at which the operation failed or was completed successfully. */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /** The request that prompted the initiation of this CreateCluster operation. */
-  var originalRequest: js.UndefOr[CreateClusterRequest] = js.native
+  var originalRequest: js.UndefOr[CreateClusterRequest] = js.undefined
   
   /** The time at which the original request was received. */
-  var requestTime: js.UndefOr[String] = js.native
+  var requestTime: js.UndefOr[String] = js.undefined
   
   /**
     * Keys: the full `name` of each table that existed in the instance when CreateCluster was first called, i.e. `projects//instances//tables/`. Any table added to the instance by a later
@@ -25,8 +23,8 @@ trait CreateClusterMetadata extends StObject {
   var tables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[js.Any]
+  ] = js.undefined
 }
 object CreateClusterMetadata {
   
@@ -61,7 +59,7 @@ object CreateClusterMetadata {
     def setTables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline

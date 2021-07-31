@@ -2,68 +2,66 @@ package typings.googleapis.resellerV1Mod.resellerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for address of a customer.
   */
-@js.native
 trait SchemaAddress extends StObject {
   
   /**
     * A customer&#39;s physical address. An address can be composed of one to
     * three lines. The addressline2 and addressLine3 are optional.
     */
-  var addressLine1: js.UndefOr[String] = js.native
+  var addressLine1: js.UndefOr[String] = js.undefined
   
   /**
     * Line 2 of the address.
     */
-  var addressLine2: js.UndefOr[String] = js.native
+  var addressLine2: js.UndefOr[String] = js.undefined
   
   /**
     * Line 3 of the address.
     */
-  var addressLine3: js.UndefOr[String] = js.native
+  var addressLine3: js.UndefOr[String] = js.undefined
   
   /**
     * The customer contact&#39;s name. This is required.
     */
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
   /**
     * For countryCode information, see the ISO 3166 country code elements.
     * Verify that country is approved for resale of Google products. This
     * property is required when creating a new customer.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a customer address. Value: customers#address
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An example of a locality value is the city of San Francisco.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * The company or company division name. This is required.
     */
-  var organizationName: js.UndefOr[String] = js.native
+  var organizationName: js.UndefOr[String] = js.undefined
   
   /**
     * A postalCode example is a postal zip code such as 94043. This property is
     * required when creating a new customer.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * An example of a region value is CA for the state of California.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object SchemaAddress {
   

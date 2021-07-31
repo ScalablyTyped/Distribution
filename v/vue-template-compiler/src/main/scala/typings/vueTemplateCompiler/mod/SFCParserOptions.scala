@@ -5,18 +5,16 @@ import typings.vueTemplateCompiler.vueTemplateCompilerStrings.line
 import typings.vueTemplateCompiler.vueTemplateCompilerStrings.space
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * SFC parser related types
   */
-@js.native
 trait SFCParserOptions extends StObject {
   
-  var deindent: js.UndefOr[Boolean] = js.native
+  var deindent: js.UndefOr[Boolean] = js.undefined
   
-  var pad: js.UndefOr[`true` | line | space] = js.native
+  var pad: js.UndefOr[`true` | line | space] = js.undefined
 }
 object SFCParserOptions {
   

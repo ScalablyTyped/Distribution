@@ -2,32 +2,32 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchPropsIOS extends ViewProps {
+trait SwitchPropsIOS
+  extends StObject
+     with ViewProps {
   
   /**
     * Background color when the switch is turned on.
     *
     * @deprecated use trackColor instead
     */
-  var onTintColor: js.UndefOr[ColorValue] = js.native
+  var onTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Color of the foreground switch grip.
     *
     * @deprecated use thumbColor instead
     */
-  var thumbTintColor: js.UndefOr[ColorValue] = js.native
+  var thumbTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Background color when the switch is turned off.
     *
     * @deprecated use trackColor instead
     */
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object SwitchPropsIOS {
   

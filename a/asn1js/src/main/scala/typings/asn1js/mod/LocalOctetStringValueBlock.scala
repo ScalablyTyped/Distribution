@@ -3,7 +3,6 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "LocalOctetStringValueBlock")
@@ -14,7 +13,7 @@ class LocalOctetStringValueBlock ()
   def this(params: LocalOctetStringValueBlockParams) = this()
   
   /* InferMemberOverrides */
-  override def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Unit with Double = js.native
+  override def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Unit & Double = js.native
   
   var isConstructed: scala.Boolean = js.native
   
@@ -31,5 +30,5 @@ class LocalOctetStringValueBlock ()
     * @memberOf LocalBaseBlock
     */
   /* InferMemberOverrides */
-  override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
+  override def toJSON(): JsonLocalBaseBlock & js.Any = js.native
 }

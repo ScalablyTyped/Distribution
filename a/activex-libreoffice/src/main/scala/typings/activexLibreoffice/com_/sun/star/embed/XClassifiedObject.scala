@@ -6,36 +6,36 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common functionality for embedded objects */
-@js.native
-trait XClassifiedObject extends XInterface {
+trait XClassifiedObject
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves class ID of the object.
     * @returns unique class ID of the object
     */
-  val ClassID: SafeArray[Double] = js.native
+  val ClassID: SafeArray[Double]
   
   /**
     * retrieves symbolic name for the object type to be used in UI.
     * @returns the symbolic name for the object
     */
-  val ClassName: String = js.native
+  val ClassName: String
   
   /**
     * retrieves class ID of the object.
     * @returns unique class ID of the object
     */
-  def getClassID(): SafeArray[Double] = js.native
+  def getClassID(): SafeArray[Double]
   
   /**
     * retrieves symbolic name for the object type to be used in UI.
     * @returns the symbolic name for the object
     */
-  def getClassName(): String = js.native
+  def getClassName(): String
   
   /**
     * sets the class ID and symbolic name to an object.
@@ -43,7 +43,7 @@ trait XClassifiedObject extends XInterface {
     * @param sClassName the new symbolic name
     * @throws com::sun::star::lang::NoSupportException in case changing of class information is not allowed
     */
-  def setClassInfo(aClassID: SeqEquiv[Double], sClassName: String): Unit = js.native
+  def setClassInfo(aClassID: SeqEquiv[Double], sClassName: String): Unit
 }
 object XClassifiedObject {
   

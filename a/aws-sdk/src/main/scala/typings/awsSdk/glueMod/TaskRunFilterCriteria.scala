@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskRunFilterCriteria extends StObject {
   
   /**
     * Filter on task runs started after this date.
     */
-  var StartedAfter: js.UndefOr[Timestamp] = js.native
+  var StartedAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Filter on task runs started before this date.
     */
-  var StartedBefore: js.UndefOr[Timestamp] = js.native
+  var StartedBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current status of the task run.
     */
-  var Status: js.UndefOr[TaskStatusType] = js.native
+  var Status: js.UndefOr[TaskStatusType] = js.undefined
   
   /**
     * The type of task run.
     */
-  var TaskRunType: js.UndefOr[TaskType] = js.native
+  var TaskRunType: js.UndefOr[TaskType] = js.undefined
 }
 object TaskRunFilterCriteria {
   

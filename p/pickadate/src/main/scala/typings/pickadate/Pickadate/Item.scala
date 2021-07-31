@@ -2,16 +2,14 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
   /**
     * The "pick" value used for comparisons.
     */
-  var pick: Double = js.native
+  var pick: Double
 }
 object Item {
   

@@ -6,37 +6,37 @@ import typings.koa.mod.Middleware
 import typings.koaRatelimitLru.anon.Remaining
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-ratelimit-lru", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-ratelimit-lru", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-ratelimit-lru", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    val duration: js.UndefOr[Double] = js.native
+    val duration: js.UndefOr[Double] = js.undefined
     
-    val errorMessage: js.UndefOr[String] = js.native
+    val errorMessage: js.UndefOr[String] = js.undefined
     
-    val headers: js.UndefOr[Remaining] = js.native
+    val headers: js.UndefOr[Remaining] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val max: js.UndefOr[Double] = js.native
+    val max: js.UndefOr[Double] = js.undefined
     
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
     // lru-cache ?
-    val rate: js.UndefOr[Double] = js.native
+    val rate: js.UndefOr[Double] = js.undefined
     
-    val store: js.UndefOr[js.Any] = js.native
+    val store: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

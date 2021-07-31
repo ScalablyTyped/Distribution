@@ -2,19 +2,17 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for leasing tasks using LeaseTasks.
   */
-@js.native
 trait SchemaLeaseTasksResponse extends StObject {
   
   /**
     * The leased tasks.
     */
-  var tasks: js.UndefOr[js.Array[SchemaTask]] = js.native
+  var tasks: js.UndefOr[js.Array[SchemaTask]] = js.undefined
 }
 object SchemaLeaseTasksResponse {
   

@@ -3,19 +3,18 @@ package typings.tern.ternMod
 import typings.tern.ternStrings.definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionQuery
-  extends BaseQueryWithFile
+  extends StObject
+     with BaseQueryWithFile
      with Query {
   
   /** Specify the location of the expression. */
-  var end: Double | Position = js.native
+  var end: Double | Position
   
   /** Specify the location of the expression. */
-  var start: js.UndefOr[Double | Position] = js.native
+  var start: js.UndefOr[Double | Position] = js.undefined
   
   /**
     * Asks for the definition of something. This will try, for a variable or property,
@@ -26,14 +25,14 @@ trait DefinitionQuery
     * it will fail to return useful information.
     */
   @JSName("type")
-  var type_DefinitionQuery: definition = js.native
+  var type_DefinitionQuery: definition
 }
 object DefinitionQuery {
   
   @scala.inline
-  def apply(end: Double | Position, file: String, `type`: definition): DefinitionQuery = {
+  def apply(end: Double | Position, file: String): DefinitionQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("definition")
     __obj.asInstanceOf[DefinitionQuery]
   }
   

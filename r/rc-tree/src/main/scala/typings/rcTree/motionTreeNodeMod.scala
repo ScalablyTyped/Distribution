@@ -19,86 +19,84 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object motionTreeNodeMod extends Shortcut {
   
   @JSImport("rc-tree/es/MotionTreeNode", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[MotionTreeNodeProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[MotionTreeNodeProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Inlined parent std.Omit<rc-tree.rc-tree/es/TreeNode.TreeNodeProps, 'domRef'> */
-  @js.native
   trait MotionTreeNodeProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[DataNode] = js.native
+    var data: js.UndefOr[DataNode] = js.undefined
     
-    var disableCheckbox: js.UndefOr[Boolean] = js.native
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dragOver: js.UndefOr[Boolean] = js.native
+    var dragOver: js.UndefOr[Boolean] = js.undefined
     
-    var dragOverGapBottom: js.UndefOr[Boolean] = js.native
+    var dragOverGapBottom: js.UndefOr[Boolean] = js.undefined
     
-    var dragOverGapTop: js.UndefOr[Boolean] = js.native
+    var dragOverGapTop: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[Key] = js.native
+    var eventKey: js.UndefOr[Key] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var halfChecked: js.UndefOr[Boolean] = js.native
+    var halfChecked: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[IconType] = js.native
+    var icon: js.UndefOr[IconType] = js.undefined
     
-    var isEnd: js.UndefOr[js.Array[Boolean]] = js.native
+    var isEnd: js.UndefOr[js.Array[Boolean]] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var isStart: js.UndefOr[js.Array[Boolean]] = js.native
+    var isStart: js.UndefOr[js.Array[Boolean]] = js.undefined
     
-    var loaded: js.UndefOr[Boolean] = js.native
+    var loaded: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var motion: js.UndefOr[js.Any] = js.native
+    var motion: js.UndefOr[js.Any] = js.undefined
     
-    var motionNodes: js.UndefOr[js.Array[FlattenNode]] = js.native
+    var motionNodes: js.UndefOr[js.Array[FlattenNode]] = js.undefined
     
-    var motionType: js.UndefOr[show | hide] = js.native
+    var motionType: js.UndefOr[show | hide] = js.undefined
     
-    def onMotionEnd(): Unit = js.native
+    def onMotionEnd(): Unit
     
-    def onMotionStart(): Unit = js.native
+    def onMotionStart(): Unit
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var pos: js.UndefOr[String] = js.native
+    var pos: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var switcherIcon: js.UndefOr[IconType] = js.native
+    var switcherIcon: js.UndefOr[IconType] = js.undefined
     
-    var title: js.UndefOr[ReactNode | (js.Function1[/* data */ DataNode, ReactNode])] = js.native
+    var title: js.UndefOr[ReactNode | (js.Function1[/* data */ DataNode, ReactNode])] = js.undefined
     
-    var treeNodeRequiredProps: TreeNodeRequiredProps = js.native
+    var treeNodeRequiredProps: TreeNodeRequiredProps
   }
   object MotionTreeNodeProps {
     
@@ -328,8 +326,8 @@ object motionTreeNodeMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[MotionTreeNodeProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[MotionTreeNodeProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `motionTreeNodeMod.foo` */
-  override def _to: ForwardRefExoticComponent[MotionTreeNodeProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[MotionTreeNodeProps & RefAttributes[HTMLDivElement]] = default
 }

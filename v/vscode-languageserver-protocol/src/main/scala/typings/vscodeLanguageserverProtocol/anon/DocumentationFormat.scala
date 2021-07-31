@@ -3,22 +3,20 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentationFormat extends StObject {
   
   /**
     * Client supports the follow content formats for the documentation
     * property. The order describes the preferred format of the client.
     */
-  var documentationFormat: js.UndefOr[js.Array[MarkupKind]] = js.native
+  var documentationFormat: js.UndefOr[js.Array[MarkupKind]] = js.undefined
   
   /**
     * Client capabilities specific to parameter information.
     */
-  var parameterInformation: js.UndefOr[LabelOffsetSupport] = js.native
+  var parameterInformation: js.UndefOr[LabelOffsetSupport] = js.undefined
 }
 object DocumentationFormat {
   

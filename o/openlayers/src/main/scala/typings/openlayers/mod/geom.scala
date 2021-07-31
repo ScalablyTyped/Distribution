@@ -2,7 +2,6 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geom {
@@ -30,8 +29,8 @@ object geom {
       */
     def this(center: Coordinate_) = this()
     def this(center: Coordinate_, opt_radius: Double) = this()
-    def this(center: Coordinate_, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
     def this(center: Coordinate_, opt_radius: Double, opt_layout: GeometryLayout) = this()
+    def this(center: Coordinate_, opt_radius: Unit, opt_layout: GeometryLayout) = this()
     
     /**
       * Return the center of the circle as {@link ol.Coordinate coordinate}.
@@ -160,9 +159,9 @@ object geom {
       * @api
       */
     def scale(sx: Double): Unit = js.native
-    def scale(sx: Double, opt_sy: js.UndefOr[scala.Nothing], opt_anchor: Coordinate_): Unit = js.native
     def scale(sx: Double, opt_sy: Double): Unit = js.native
     def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate_): Unit = js.native
+    def scale(sx: Double, opt_sy: Unit, opt_anchor: Coordinate_): Unit = js.native
     
     /**
       * Create a simplified version of this geometry.  For linestrings, this uses
@@ -457,9 +456,9 @@ object geom {
       * @api stable
       */
     def getCoordinateAtM(m: Double): Coordinate_ = js.native
-    def getCoordinateAtM(m: Double, opt_extrapolate: js.UndefOr[scala.Nothing], opt_interpolate: Boolean): Coordinate_ = js.native
     def getCoordinateAtM(m: Double, opt_extrapolate: Boolean): Coordinate_ = js.native
     def getCoordinateAtM(m: Double, opt_extrapolate: Boolean, opt_interpolate: Boolean): Coordinate_ = js.native
+    def getCoordinateAtM(m: Double, opt_extrapolate: Unit, opt_interpolate: Boolean): Coordinate_ = js.native
     
     /**
       * Return the coordinates of the multilinestring.
@@ -805,6 +804,10 @@ object geom {
   }
   object Polygon {
     
+    @JSImport("openlayers", "geom.Polygon")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an approximation of a circle on the surface of a sphere.
       * @param sphere The sphere.
@@ -817,12 +820,10 @@ object geom {
       * @api stable
       */
     /* static member */
-    @JSImport("openlayers", "geom.Polygon.circular")
-    @js.native
-    def circular(sphere: Sphere, center: Coordinate_, radius: Double): Polygon = js.native
-    @JSImport("openlayers", "geom.Polygon.circular")
-    @js.native
-    def circular(sphere: Sphere, center: Coordinate_, radius: Double, opt_n: Double): Polygon = js.native
+    @scala.inline
+    def circular(sphere: Sphere, center: Coordinate_, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    @scala.inline
+    def circular(sphere: Sphere, center: Coordinate_, radius: Double, opt_n: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any])).asInstanceOf[Polygon]
     
     /**
       * Create a regular polygon from a circle.
@@ -834,18 +835,14 @@ object geom {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "geom.Polygon.fromCircle")
-    @js.native
-    def fromCircle(circle: Circle): Polygon = js.native
-    @JSImport("openlayers", "geom.Polygon.fromCircle")
-    @js.native
-    def fromCircle(circle: Circle, opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): Polygon = js.native
-    @JSImport("openlayers", "geom.Polygon.fromCircle")
-    @js.native
-    def fromCircle(circle: Circle, opt_sides: Double): Polygon = js.native
-    @JSImport("openlayers", "geom.Polygon.fromCircle")
-    @js.native
-    def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = js.native
+    @scala.inline
+    def fromCircle(circle: Circle): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+    @scala.inline
+    def fromCircle(circle: Circle, opt_sides: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    @scala.inline
+    def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    @scala.inline
+    def fromCircle(circle: Circle, opt_sides: Unit, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
     
     /**
       * Create a polygon from an extent. The layout used is `XY`.
@@ -854,9 +851,8 @@ object geom {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "geom.Polygon.fromExtent")
-    @js.native
-    def fromExtent(extent: Extent_): Polygon = js.native
+    @scala.inline
+    def fromExtent(extent: Extent_): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   }
   
   /**

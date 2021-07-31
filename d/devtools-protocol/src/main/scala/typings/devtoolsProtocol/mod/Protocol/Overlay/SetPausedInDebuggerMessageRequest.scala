@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPausedInDebuggerMessageRequest extends StObject {
   
   /**
     * The message to display, also triggers resume and step over controls.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SetPausedInDebuggerMessageRequest {
   

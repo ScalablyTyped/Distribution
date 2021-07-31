@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyntaxParseParams extends StObject {
   
-  var ownerUri: String = js.native
+  var ownerUri: String
   
-  var query: String = js.native
+  var query: String
 }
 object SyntaxParseParams {
   

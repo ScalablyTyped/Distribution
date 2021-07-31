@@ -4,21 +4,19 @@ import typings.vueCompilerSfc.vueCompilerSfcStrings.line
 import typings.vueCompilerSfc.vueCompilerSfcStrings.space
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCParseOptions extends StObject {
   
-  var compiler: js.UndefOr[TemplateCompiler] = js.native
+  var compiler: js.UndefOr[TemplateCompiler] = js.undefined
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var pad: js.UndefOr[Boolean | line | space] = js.native
+  var pad: js.UndefOr[Boolean | line | space] = js.undefined
   
-  var sourceMap: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
   
-  var sourceRoot: js.UndefOr[String] = js.native
+  var sourceRoot: js.UndefOr[String] = js.undefined
 }
 object SFCParseOptions {
   

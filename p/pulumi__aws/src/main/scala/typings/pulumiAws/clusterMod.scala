@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusterMod {
@@ -80,6 +79,10 @@ object clusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,50 +92,44 @@ object clusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * The type of HSM module in the cluster. Currently, only `hsm1.medium` is supported.
       */
-    val hsmType: Input[String] = js.native
+    val hsmType: Input[String]
     
     /**
       * The id of Cloud HSM v2 cluster backup to be restored.
       */
-    val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.native
+    val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IDs of subnets in which cluster will operate.
       */
-    val subnetIds: Input[js.Array[Input[String]]] = js.native
+    val subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterArgs {
     
@@ -168,7 +165,6 @@ object clusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
@@ -181,47 +177,47 @@ object clusterMod {
       */
     val clusterCertificates: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudhsmv2.ClusterClusterCertificate]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The id of the CloudHSM cluster.
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the CloudHSM cluster.
       */
-    val clusterState: js.UndefOr[Input[String]] = js.native
+    val clusterState: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of HSM module in the cluster. Currently, only `hsm1.medium` is supported.
       */
-    val hsmType: js.UndefOr[Input[String]] = js.native
+    val hsmType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the security group associated with the CloudHSM cluster.
       */
-    val securityGroupId: js.UndefOr[Input[String]] = js.native
+    val securityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of Cloud HSM v2 cluster backup to be restored.
       */
-    val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.native
+    val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IDs of subnets in which cluster will operate.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The id of the VPC that the CloudHSM cluster resides in.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterState {
     

@@ -3,22 +3,20 @@ package typings.zdog.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggerOptions extends StObject {
   
-  val onDragEnd: js.UndefOr[DragEndListener] = js.native
+  val onDragEnd: js.UndefOr[DragEndListener] = js.undefined
   
-  val onDragMove: js.UndefOr[DragMoveListener] = js.native
+  val onDragMove: js.UndefOr[DragMoveListener] = js.undefined
   
-  val onDragStart: js.UndefOr[DragStartListener] = js.native
+  val onDragStart: js.UndefOr[DragStartListener] = js.undefined
   
   /**
     * The element to start dragging on the initial `mousedown`, `pointerdown`, or `touchstart` event.
     */
-  val startElement: js.UndefOr[String | Element] = js.native
+  val startElement: js.UndefOr[String | Element] = js.undefined
 }
 object DraggerOptions {
   

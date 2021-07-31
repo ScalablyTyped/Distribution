@@ -2,34 +2,32 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a cell drag
   */
-@js.native
 trait CellDragEvent extends StObject {
   
   /**
     * The name of the column that was dragged.
     */
-  var cellKey: String = js.native
+  var cellKey: String
   
   /**
     * The row where the drag began.
     */
-  var fromRow: Double = js.native
+  var fromRow: Double
   
   /**
     * The row where the drag ended.
     */
-  var toRow: Double = js.native
+  var toRow: Double
   
   /**
     * The value of the cell that was dragged.
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object CellDragEvent {
   

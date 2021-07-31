@@ -5,7 +5,6 @@ import typings.typeorm.queryBuilderSelectQueryBuilderMod.SelectQueryBuilder
 import typings.typeorm.repositoryRepositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryTreeRepositoryMod {
@@ -14,9 +13,9 @@ object repositoryTreeRepositoryMod {
   @js.native
   class TreeRepository[Entity] () extends Repository[Entity] {
     
-    /* protected */ def buildChildrenEntityTree(entity: js.Any, entities: js.Array[_], relationMaps: js.Array[ParentId]): Unit = js.native
+    /* protected */ def buildChildrenEntityTree(entity: js.Any, entities: js.Array[js.Any], relationMaps: js.Array[ParentId]): Unit = js.native
     
-    /* protected */ def buildParentEntityTree(entity: js.Any, entities: js.Array[_], relationMaps: js.Array[ParentId]): Unit = js.native
+    /* protected */ def buildParentEntityTree(entity: js.Any, entities: js.Array[js.Any], relationMaps: js.Array[ParentId]): Unit = js.native
     
     /**
       * Gets number of ancestors of the entity.
@@ -44,7 +43,7 @@ object repositoryTreeRepositoryMod {
       move(entity: Entity, to: Entity): Promise<void> {
       return Promise.resolve();
       } */
-    /* protected */ def createRelationMaps(alias: String, rawResults: js.Array[_]): js.Array[ParentId] = js.native
+    /* protected */ def createRelationMaps(alias: String, rawResults: js.Array[js.Any]): js.Array[ParentId] = js.native
     
     /**
       * Gets all parents (ancestors) of the given entity. Returns them all in a flat array.

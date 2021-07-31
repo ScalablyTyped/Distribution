@@ -1,27 +1,29 @@
 package typings.tabris.mod
 
-import typings.tabris.AnonImage
-import typings.tabris.AnonStyle
+import typings.tabris.anon.Style
 import typings.tabris.tabrisStrings.cancel
 import typings.tabris.tabrisStrings.default
 import typings.tabris.tabrisStrings.destructive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "ActionSheetItem")
 @js.native
-class ActionSheetItem () extends js.Object {
-  def this(properties: AnonImage) = this()
+class ActionSheetItem () extends StObject {
+  def this(properties: typings.tabris.anon.Image) = this()
+  
   /**
     * An image to be displayed for this item in the `ActionSheet`
     * @constant
     */
   var image: ImageValue = js.native
+  
   /**
     * @constant
     */
-  val jsxAttributes: AnonStyle = js.native
+  val jsxAttributes: Style = js.native
+  
   /**
     * The style of presentation for this item in the `ActionSheet`. With the style `cancel` or
     * `destructive` are displayed in a special way.
@@ -34,10 +36,10 @@ class ActionSheetItem () extends js.Object {
     * @constant
     */
   var style: default | cancel | destructive = js.native
+  
   /**
     * The text to be displayed for this item in the `ActionSheet`.
     * @constant
     */
   var title: String = js.native
 }
-

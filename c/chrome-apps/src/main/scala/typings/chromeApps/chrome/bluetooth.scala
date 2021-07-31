@@ -8,7 +8,6 @@ import typings.chromeApps.chromeAppsStrings.usb_
 import typings.chromeApps.chromeAppsStrings.video_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -26,23 +25,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bluetooth {
   
-  @js.native
   trait AdapterState extends StObject {
     
     /** The address of the adapter, in the format 'XX:XX:XX:XX:XX:XX'. */
-    var address: String = js.native
+    var address: String
     
     /** Indicates whether or not the adapter is available (i.e. enabled). */
-    var available: Boolean = js.native
+    var available: Boolean
     
     /** Indicates whether or not the adapter is currently discovering. */
-    var discovering: Boolean = js.native
+    var discovering: Boolean
     
     /** The human-readable name of the adapter. */
-    var name: String = js.native
+    var name: String
     
     /** Indicates whether or not the adapter has power. */
-    var powered: Boolean = js.native
+    var powered: Boolean
   }
   object AdapterState {
     
@@ -72,10 +70,9 @@ object bluetooth {
     }
   }
   
-  @js.native
   trait BluetoothEvent[T] extends StObject {
     
-    def addListener(callback: js.Function1[/* event */ T, Unit]): Unit = js.native
+    def addListener(callback: js.Function1[/* event */ T, Unit]): Unit
   }
   object BluetoothEvent {
     
@@ -86,65 +83,64 @@ object bluetooth {
     }
     
     @scala.inline
-    implicit class BluetoothEventMutableBuilder[Self <: BluetoothEvent[_], T] (val x: Self with BluetoothEvent[T]) extends AnyVal {
+    implicit class BluetoothEventMutableBuilder[Self <: BluetoothEvent[?], T] (val x: Self & BluetoothEvent[T]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: js.Function1[/* event */ T, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Device extends StObject {
     
     /** The address of the device, in the format 'XX:XX:XX:XX:XX:XX'. */
-    var address: String = js.native
+    var address: String
     
     /**
       * Indicates whether the device is connectable.
       * @since Chrome 48
       */
-    var connectable: js.UndefOr[Boolean] = js.native
+    var connectable: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether the device is currently connected to the system. */
-    var connected: js.UndefOr[Boolean] = js.native
+    var connected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether the device is currently connecting to the system.
       * @since Chrome 48
       */
-    var connecting: js.UndefOr[Boolean] = js.native
+    var connecting: js.UndefOr[Boolean] = js.undefined
     
     /** The class of the device, a bit-field defined by http://www.bluetooth.org/en-us/specification/assigned-numbers/baseband. */
-    var deviceClass: js.UndefOr[integer] = js.native
+    var deviceClass: js.UndefOr[integer] = js.undefined
     
-    var deviceId: js.UndefOr[integer] = js.native
+    var deviceId: js.UndefOr[integer] = js.undefined
     
     /**
       * The received signal strength, in dBm. This field is avaliable and valid only during discovery. Outside of discovery it's value is not specified.
       * @since Chrome 44
       */
-    var inquiryRssi: integer = js.native
+    var inquiryRssi: integer
     
     /**
       * The transmitted power level. This field is avaliable only for LE devices that include this field in AD. It is avaliable and valid only during discovery.
       * @since Chrome 44
       */
-    var inquiryTxPower: integer = js.native
+    var inquiryTxPower: integer
     
     /** The human-readable name of the device. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Indicates whether or not the device is paired with the system. */
-    var paired: js.UndefOr[Boolean] = js.native
+    var paired: js.UndefOr[Boolean] = js.undefined
     
-    var productId: js.UndefOr[integer] = js.native
+    var productId: js.UndefOr[integer] = js.undefined
     
     /**
       * The type of the device, if recognized by Chrome.
       * This is obtained from the |deviceClass| field and only represents a small fraction of the possible device types.
       * When in doubt you should use the |deviceClass| field directly.
       */
-    var `type`: js.UndefOr[DeviceType] = js.native
+    var `type`: js.UndefOr[DeviceType] = js.undefined
     
     /**
       * UUIDs of protocols, profiles and services advertised by the device.
@@ -152,12 +148,12 @@ object bluetooth {
       * For Low Energy devices, this list is obtained from AD and GATT primary services.
       * For dual mode devices this may be obtained from both.
       */
-    var uuids: js.UndefOr[js.Array[String]] = js.native
+    var uuids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var vendorId: js.UndefOr[integer] = js.native
+    var vendorId: js.UndefOr[integer] = js.undefined
     
     /** The Device ID record of the device, where available. */
-    var vendorIdSource: js.UndefOr[DeviceVendorIdSource] = js.native
+    var vendorIdSource: js.UndefOr[DeviceVendorIdSource] = js.undefined
   }
   object Device {
     
@@ -259,14 +255,13 @@ object bluetooth {
   /**
     * Some criteria to filter the list of returned bluetooth devices. If the filter is not set or set to {}, returned device list will contain all bluetooth devices. Right now this is only supported in ChromeOS, for other platforms, a full list is returned.
     */
-  @js.native
   trait DeviceFilter extends StObject {
     
     /** Type of filter to apply to the device list. Default is all. */
-    var filterType: js.UndefOr[DeviceFilterType] = js.native
+    var filterType: js.UndefOr[DeviceFilterType] = js.undefined
     
     /** Maximum number of bluetoth devices to return. Default is 0 (no limit) if unspecified. */
-    var limit: js.UndefOr[integer] = js.native
+    var limit: js.UndefOr[integer] = js.undefined
   }
   object DeviceFilter {
     

@@ -8,7 +8,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passportFacebookToken.passportFacebookTokenBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("passport-facebook-token", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StrategyInstance {
+  class ^ protected ()
+    extends StObject
+       with StrategyInstance {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
   }
@@ -24,15 +25,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : StrategyStatic = js.native
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var gender: String = js.native
+    var gender: String
   }
   object Profile {
     
@@ -59,30 +60,29 @@ object mod extends Shortcut {
   @js.native
   trait StrategyInstance extends StObject {
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Any): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Any): Unit = js.native
     
     var name: String = js.native
   }
   
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var enableProof: js.UndefOr[Boolean] = js.native
+    var enableProof: js.UndefOr[Boolean] = js.undefined
     
-    var fbGraphVersion: js.UndefOr[String] = js.native
+    var fbGraphVersion: js.UndefOr[String] = js.undefined
     
-    var profileFields: js.UndefOr[js.Array[String]] = js.native
+    var profileFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptions {
     
@@ -142,16 +142,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends StrategyOptions {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with StrategyOptions {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -164,16 +165,17 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait StrategyStatic extends Instantiable2[
+  trait StrategyStatic
+    extends StObject
+       with Instantiable2[
           (/* options */ StrategyOptions) | (/* options */ StrategyOptionsWithRequest), 
           (/* verify */ VerifyFunction) | (/* verify */ VerifyFunctionWithRequest), 
           StrategyInstance
         ]
   
-  @js.native
   trait ValueObject extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object ValueObject {
     

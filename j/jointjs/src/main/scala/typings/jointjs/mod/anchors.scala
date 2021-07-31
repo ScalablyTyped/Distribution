@@ -20,7 +20,6 @@ import typings.jointjs.mod.linkAnchors.ConnectionPerpendicularAnchorArguments
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchors {
@@ -130,41 +129,41 @@ object anchors {
     def padding: typings.jointjs.jointjsStrings.padding = "padding".asInstanceOf[typings.jointjs.jointjsStrings.padding]
   }
   
-  @js.native
   trait AnchorArgumentsMap
-    extends /* key */ StringDictionary[StringDictionary[js.Any]] {
+    extends StObject
+       with /* key */ StringDictionary[StringDictionary[js.Any]] {
     
-    var bottom: BBoxAnchorArguments = js.native
+    var bottom: BBoxAnchorArguments
     
-    var bottomLeft: BBoxAnchorArguments = js.native
+    var bottomLeft: BBoxAnchorArguments
     
-    var bottomRight: BBoxAnchorArguments = js.native
+    var bottomRight: BBoxAnchorArguments
     
-    var center: BBoxAnchorArguments = js.native
+    var center: BBoxAnchorArguments
     
-    var connectionClosest: ConnectionClosestAnchorArguments = js.native
+    var connectionClosest: ConnectionClosestAnchorArguments
     
-    var connectionLength: ConnectionLengthAnchorArguments = js.native
+    var connectionLength: ConnectionLengthAnchorArguments
     
-    var connectionPerpendicular: ConnectionPerpendicularAnchorArguments = js.native
+    var connectionPerpendicular: ConnectionPerpendicularAnchorArguments
     
-    var connectionRatio: ConnectionLengthAnchorArguments = js.native
+    var connectionRatio: ConnectionLengthAnchorArguments
     
-    var left: BBoxAnchorArguments = js.native
+    var left: BBoxAnchorArguments
     
-    var midSide: MidSideAnchorArguments = js.native
+    var midSide: MidSideAnchorArguments
     
-    var modelCenter: ModelCenterAnchorArguments = js.native
+    var modelCenter: ModelCenterAnchorArguments
     
-    var perpendicular: PaddingAnchorArguments = js.native
+    var perpendicular: PaddingAnchorArguments
     
-    var right: BBoxAnchorArguments = js.native
+    var right: BBoxAnchorArguments
     
-    var top: BBoxAnchorArguments = js.native
+    var top: BBoxAnchorArguments
     
-    var topLeft: BBoxAnchorArguments = js.native
+    var topLeft: BBoxAnchorArguments
     
-    var topRight: BBoxAnchorArguments = js.native
+    var topRight: BBoxAnchorArguments
   }
   object AnchorArgumentsMap {
     
@@ -266,12 +265,13 @@ object anchors {
   */
   trait AnchorType extends StObject
   
-  @js.native
-  trait BBoxAnchorArguments extends RotateAnchorArguments {
+  trait BBoxAnchorArguments
+    extends StObject
+       with RotateAnchorArguments {
     
-    var dx: js.UndefOr[Double | String] = js.native
+    var dx: js.UndefOr[Double | String] = js.undefined
     
-    var dy: js.UndefOr[Double | String] = js.native
+    var dy: js.UndefOr[Double | String] = js.undefined
   }
   object BBoxAnchorArguments {
     
@@ -308,14 +308,13 @@ object anchors {
   
   type GenericAnchorArguments[K /* <: AnchorType */] = /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
   
-  @js.native
   trait GenericAnchorJSON[K /* <: AnchorType */] extends StObject {
     
     var args: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var name: K = js.native
+    var name: K
   }
   object GenericAnchorJSON {
     
@@ -326,7 +325,7 @@ object anchors {
     }
     
     @scala.inline
-    implicit class GenericAnchorJSONMutableBuilder[Self <: GenericAnchorJSON[_], K /* <: AnchorType */] (val x: Self with GenericAnchorJSON[K]) extends AnyVal {
+    implicit class GenericAnchorJSONMutableBuilder[Self <: GenericAnchorJSON[?], K /* <: AnchorType */] (val x: Self & GenericAnchorJSON[K]) extends AnyVal {
       
       @scala.inline
       def setArgs(
@@ -341,9 +340,9 @@ object anchors {
     }
   }
   
-  @js.native
   trait MidSideAnchorArguments
-    extends RotateAnchorArguments
+    extends StObject
+       with RotateAnchorArguments
        with PaddingAnchorArguments
   object MidSideAnchorArguments {
     
@@ -354,12 +353,11 @@ object anchors {
     }
   }
   
-  @js.native
   trait ModelCenterAnchorArguments extends StObject {
     
-    var dx: js.UndefOr[Double] = js.native
+    var dx: js.UndefOr[Double] = js.undefined
     
-    var dy: js.UndefOr[Double] = js.native
+    var dy: js.UndefOr[Double] = js.undefined
   }
   object ModelCenterAnchorArguments {
     
@@ -386,10 +384,9 @@ object anchors {
     }
   }
   
-  @js.native
   trait PaddingAnchorArguments extends StObject {
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
   }
   object PaddingAnchorArguments {
     
@@ -410,10 +407,9 @@ object anchors {
     }
   }
   
-  @js.native
   trait RotateAnchorArguments extends StObject {
     
-    var rotate: js.UndefOr[Boolean] = js.native
+    var rotate: js.UndefOr[Boolean] = js.undefined
   }
   object RotateAnchorArguments {
     

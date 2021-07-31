@@ -6,37 +6,34 @@ import typings.electronNotify.electronNotifyStrings.close
 import typings.electronNotify.electronNotifyStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-notify", "closeAll")
+  @JSImport("electron-notify", JSImport.Namespace)
   @js.native
-  def closeAll(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-notify", "getTemplatePath")
-  @js.native
-  def getTemplatePath(): String = js.native
+  @scala.inline
+  def closeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[Unit]
   
-  @JSImport("electron-notify", "notify")
-  @js.native
-  def notify_(notification: INotification): Unit = js.native
+  @scala.inline
+  def getTemplatePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplatePath")().asInstanceOf[String]
   
-  @JSImport("electron-notify", "setConfig")
-  @js.native
-  def setConfig(customConfig: ICustomConfig): Unit = js.native
+  @scala.inline
+  def notify_(notification: INotification): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(notification.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("electron-notify", "setTemplatePath")
-  @js.native
-  def setTemplatePath(path: String): Unit = js.native
+  @scala.inline
+  def setConfig(customConfig: ICustomConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(customConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setTemplatePath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplatePath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ICloseNotificationEvent extends StObject {
     
-    var event: close | show | click = js.native
+    var event: close | show | click
     
-    var id: Double = js.native
+    var id: Double
   }
   object ICloseNotificationEvent {
     
@@ -57,42 +54,41 @@ object mod {
     }
   }
   
-  @js.native
   trait ICustomConfig extends StObject {
     
-    var animateInParallel: js.UndefOr[Boolean] = js.native
+    var animateInParallel: js.UndefOr[Boolean] = js.undefined
     
-    var animationStepMs: js.UndefOr[Double] = js.native
+    var animationStepMs: js.UndefOr[Double] = js.undefined
     
-    var animationSteps: js.UndefOr[Double] = js.native
+    var animationSteps: js.UndefOr[Double] = js.undefined
     
-    var appIcon: js.UndefOr[String] = js.native
+    var appIcon: js.UndefOr[String] = js.undefined
     
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
-    var defaultStyleAppIcon: js.UndefOr[js.Any] = js.native
+    var defaultStyleAppIcon: js.UndefOr[js.Any] = js.undefined
     
-    var defaultStyleClose: js.UndefOr[js.Any] = js.native
+    var defaultStyleClose: js.UndefOr[js.Any] = js.undefined
     
-    var defaultStyleContainer: js.UndefOr[js.Any] = js.native
+    var defaultStyleContainer: js.UndefOr[js.Any] = js.undefined
     
-    var defaultStyleImage: js.UndefOr[js.Any] = js.native
+    var defaultStyleImage: js.UndefOr[js.Any] = js.undefined
     
-    var defaultStyleText: js.UndefOr[js.Any] = js.native
+    var defaultStyleText: js.UndefOr[js.Any] = js.undefined
     
-    var defaultWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.native
+    var defaultWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
     
-    var displayTime: js.UndefOr[Double] = js.native
+    var displayTime: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var pathToModule: js.UndefOr[String] = js.native
+    var pathToModule: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ICustomConfig {
     
@@ -209,24 +205,23 @@ object mod {
     }
   }
   
-  @js.native
   trait INotification extends StObject {
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var onClickFunc: js.UndefOr[js.Function1[/* event */ INotificationEvent, Unit]] = js.native
+    var onClickFunc: js.UndefOr[js.Function1[/* event */ INotificationEvent, Unit]] = js.undefined
     
-    var onCloseFunc: js.UndefOr[js.Function1[/* event */ ICloseNotificationEvent, Unit]] = js.native
+    var onCloseFunc: js.UndefOr[js.Function1[/* event */ ICloseNotificationEvent, Unit]] = js.undefined
     
-    var onShowFunc: js.UndefOr[js.Function1[/* event */ INotificationEvent, Unit]] = js.native
+    var onShowFunc: js.UndefOr[js.Function1[/* event */ INotificationEvent, Unit]] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object INotification {
     
@@ -286,10 +281,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait INotificationEvent extends ICloseNotificationEvent {
+  trait INotificationEvent
+    extends StObject
+       with ICloseNotificationEvent {
     
-    def closeNotification(reason: js.Any): Unit = js.native
+    def closeNotification(reason: js.Any): Unit
   }
   object INotificationEvent {
     

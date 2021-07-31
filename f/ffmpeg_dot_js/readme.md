@@ -11,8 +11,8 @@ Port of FFmpeg with Emscripten
 | Full name          | ffmpeg.js |
 | Keywords           | asm.js, emscripten, ffmpeg, video |
 | # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 18527 |
+| # dependents       | 10 |
+| # downloads        | 52868 |
 | # stars            | 4 |
 
 ## Links

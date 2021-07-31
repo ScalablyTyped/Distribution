@@ -3,19 +3,17 @@ package typings.smoothie
 import typings.smoothie.mod.TimeSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var series: TimeSeries = js.native
+    var series: TimeSeries
     
-    var value: Double = js.native
+    var value: Double
   }
   object Index {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LineWidth extends StObject {
     
-    var lineWidth: Double = js.native
+    var lineWidth: Double
     
-    var strokeStyle: String = js.native
+    var strokeStyle: String
   }
   object LineWidth {
     

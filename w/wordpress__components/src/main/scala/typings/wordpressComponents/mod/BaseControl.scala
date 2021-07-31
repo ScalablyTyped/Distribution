@@ -5,16 +5,17 @@ import typings.wordpressComponents.baseControlMod.BaseControl.Props
 import typings.wordpressComponents.baseControlMod.BaseControl.VisualLabelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BaseControl {
   
+  @scala.inline
+  def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("@wordpress/components", "BaseControl")
   @js.native
-  def apply(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/components", "BaseControl.VisualLabel")
-  @js.native
-  def VisualLabel(props: VisualLabelProps): Element = js.native
+  @scala.inline
+  def VisualLabel(props: VisualLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VisualLabel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

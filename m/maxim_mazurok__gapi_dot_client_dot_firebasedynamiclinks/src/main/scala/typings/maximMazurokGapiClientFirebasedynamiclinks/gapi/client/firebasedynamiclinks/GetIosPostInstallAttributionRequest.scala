@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIosPostInstallAttributionRequest extends StObject {
   
   /** App installation epoch time (https://en.wikipedia.org/wiki/Unix_time). This is a client signal for a more accurate weak match. */
-  var appInstallationTime: js.UndefOr[String] = js.native
+  var appInstallationTime: js.UndefOr[String] = js.undefined
   
   /** APP bundle ID. */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /** Device information. */
-  var device: js.UndefOr[DeviceInfo] = js.native
+  var device: js.UndefOr[DeviceInfo] = js.undefined
   
   /** iOS version, ie: 9.3.5. Consider adding "build". */
-  var iosVersion: js.UndefOr[String] = js.native
+  var iosVersion: js.UndefOr[String] = js.undefined
   
   /** App post install attribution retrieval information. Disambiguates mechanism (iSDK or developer invoked) to retrieve payload from clicked link. */
-  var retrievalMethod: js.UndefOr[String] = js.native
+  var retrievalMethod: js.UndefOr[String] = js.undefined
   
   /** Google SDK version. Version takes the form "$major.$minor.$patch" */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Possible unique matched link that server need to check before performing fingerprint match. If passed link is short server need to expand the link. If link is long server need to
     * vslidate the link.
     */
-  var uniqueMatchLinkToCheck: js.UndefOr[String] = js.native
+  var uniqueMatchLinkToCheck: js.UndefOr[String] = js.undefined
   
   /** Strong match page information. Disambiguates between default UI and custom page to present when strong match succeeds/fails to find cookie. */
-  var visualStyle: js.UndefOr[String] = js.native
+  var visualStyle: js.UndefOr[String] = js.undefined
 }
 object GetIosPostInstallAttributionRequest {
   
